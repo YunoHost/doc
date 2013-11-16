@@ -1,3 +1,0 @@
-##YunoHost Installation
-
-Soon...
