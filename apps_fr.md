@@ -41,6 +41,9 @@ $(document).ready(function () {
   $.getJSON('http://app.yunohost.org/list.json', function(app_list) {
     console.log(app_list);
     $.each(app_list, function(app_id, infos) {
+      if (typeof infos.manifest.description.fr === undefined) {
+        infos.manifest.description.fr = infos.manifest.description.en;
+      }
       html = $('#app-template').html()
              .replace(/{app_id}/g, app_id)
              .replace(/{app_name}/g, infos.manifest.name)
