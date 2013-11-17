@@ -48,3 +48,9 @@ Tous les protocoles utilisés par YunoHost sont sécurisés par défaut. Vous di
 Par ailleurs tous les logiciels composant YunoHost sont libres, connus, utilisés, et sont de fait peu vulnérables aux attaques.
 
 Un pare-feu est également déployé dès l'installation, vous protégant contre les connexions indésirables et dangereuses.
+
+---
+
+<div class="text-center">
+<img src="http://pix.toile-libre.org/upload/original/1384701282.png" width=50>
+
