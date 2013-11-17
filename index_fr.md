@@ -1,4 +1,4 @@
-#YunoHost <small> est un système visant à rendre accessible l’usage d’un serveur personnel au plus grand nombre.</small>
+#YunoHost <small> est un système visant à rendre accessible au plus grand nombre l’usage d’un serveur personnel.</small>
 
 <br>
 
