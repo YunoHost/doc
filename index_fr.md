@@ -25,3 +25,11 @@ Il est basé sur [Debian GNU/Linux](http://www.debian.org/index.fr.html) (wheezy
 * [SSOwat](https://github.com/Kloadut/SSOwat)
 
 YunoHost configure tous ces logiciels automatiquement à l'installation, puis l'utilisation se fait via [l'interface admin](#/admin_fr) ou via la [moulinette](#/moulinette_fr) (CLI).
+
+### <blockquote>Sécurité</blockquote>
+
+Tous les protocoles utilisés par YunoHost sont sécurisés par défaut. Vous disposez d'un certificat auto-signé pour chaque domaine géré par votre serveur.
+
+Par ailleurs tous les logiciels composant YunoHost sont libres, connus, utilisés, et sont de fait peu vulnérables aux attaques.
+
+Un pare-feu est également déployé dès l'installation, vous protégant contre les connexions indésirables et dangereuses.
