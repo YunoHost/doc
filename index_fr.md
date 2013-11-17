@@ -1,4 +1,4 @@
-#YunoHost <small> est un système facilitant l'installation et l'utilisation d'un serveur pour le plus grand nombre.</small>
+#YunoHost <small> est un système facilitant l’installation et l’utilisation d’un serveur pour le plus grand nombre.</small>
 
 <br>
 
@@ -20,13 +20,13 @@ border-radius: 5px; border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 5px 15px r
 
 ### <blockquote>Fonctionnalités</blockquote>
 
-YunoHost vous permet par défaut de gérer vos adresses mail et de messagerie instantanée via des interfaces simples d'utilisation et de manière sécurisée. 
+YunoHost vous permet par défaut de gérer vos adresses mail et de messagerie instantanée via des interfaces simples d’utilisation et de manière sécurisée. 
 
 Vous pourrez également étendre les fonctionnalités via des [**apps**](#/apps_fr) installables en un click.
 
 ### <blockquote>Logiciels</blockquote>
 
-Il est basé sur [Debian GNU/Linux](http://www.debian.org/index.fr.html) (wheezy), et se compose des logiciels libres suivant:
+Il est basé sur [Debian GNU/Linux](http://www.debian.org/index.fr.html) (wheezy) et se compose des logiciels libres suivants :
 * [Nginx](http://nginx.org/)
 * [Postfix](http://www.postfix.org/)
 * [Metronome](http://www.lightwitch.org/metronome)
@@ -39,15 +39,15 @@ Il est basé sur [Debian GNU/Linux](http://www.debian.org/index.fr.html) (wheezy
 * [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs)
 * [SSOwat](https://github.com/Kloadut/SSOwat)
 
-YunoHost configure tous ces logiciels automatiquement à l'installation, puis l'utilisation se fait via [l'interface admin](#/admin_fr) ou via la [moulinette](#/moulinette_fr) (CLI).
+YunoHost configure tous ces logiciels automatiquement à l’installation, puis l’utilisation se fait via [l’interface admin](#/admin_fr) ou via la [moulinette](#/moulinette_fr) (CLI).
 
 ### <blockquote>Sécurité</blockquote>
 
-Tous les protocoles utilisés par YunoHost sont sécurisés par défaut. Vous disposez d'un certificat auto-signé pour chaque domaine géré par votre serveur.
+Tous les protocoles utilisés par YunoHost sont sécurisés par défaut. Vous disposez d’un certificat auto-signé pour chaque domaine géré par votre serveur.
 
 Par ailleurs tous les logiciels composant YunoHost sont libres, connus, utilisés, et sont de fait peu vulnérables aux attaques.
 
-Un pare-feu est également déployé dès l'installation, vous protégant contre les connexions indésirables et dangereuses.
+Un pare-feu est également déployé dès l’installation, vous protégeant contre les connexions indésirables et dangereuses.
 
 ---
 
