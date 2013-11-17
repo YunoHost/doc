@@ -14,6 +14,7 @@ border-radius: 5px; border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 5px 15px r
 <div class="text-muted text-center"><small>YunoHost v2 • beta</small></div>
 <br>
 <hr>
+<br>
 
 ### <blockquote>Fonctionnalités</blockquote>
 
