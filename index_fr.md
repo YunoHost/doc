@@ -4,11 +4,11 @@
 
 <div style="width: 100%; height: 290px; overflow: hidden;
 border-radius: 5px; border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 5px 15px rgba(0,0,0,0.15);">
-<img style="width: 100%;" src="http://yunohost.org/wp-content/gallery/screenshots-mod/capture.jpg">
+<img style="width: 100%; min-width: 580px;" src="http://yunohost.org/wp-content/gallery/screenshots-mod/capture.jpg">
 </div>
 
 <br>
-<div class="text-center" style="width: 23%; margin: 0 auto;">
+<div class="text-center" style="width: 23%; min-width: 130px; margin: 0 auto;">
 <a class="btn btn-primary btn-lg btn-block"  style="font-size: 1.5em" href="#/install_fr">Installer</a>
 </div>
 <div class="text-muted text-center"><small>YunoHost v2 • beta</small></div>
