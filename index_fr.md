@@ -1,4 +1,4 @@
-#YunoHost <small> est un système facilitant l’installation et l’utilisation d’un serveur pour le plus grand nombre.</small>
+#YunoHost <small> est un système visant à rendre accessible l'usage d'un serveur personnel au plus grand nombre.</small>
 
 <br>
 
