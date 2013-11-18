@@ -1,4 +1,4 @@
-#YunoHost <small> est un outil qui vous permet d'installer et d'utiliser facilement votre propre serveur.</small>
+#YunoHost <small> est un outil qui vous permet d’installer et d’utiliser facilement votre propre serveur.</small>
 
 <br>
 
