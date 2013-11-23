@@ -41,4 +41,4 @@ Deux paramètres vous seront demandés:
 
 2. **Mot de passe administrateur**: C’est le mot de passe qui vous permettra d’administrer votre instance YunoHost, **choisissez-le avec attention**, il ne doit pas être divulgué ni être devinable, sinon vous pourrez perdre votre système.
 
-La post-install se déroulera ensuite automatiquement et pourrez ensuite accéder à l'interface d'administration via **https://votre-domaine.org/ynhadmin**
+La post-install se déroulera ensuite automatiquement et pourrez accéder à l'interface d'administration via **https://votre-domaine.org/ynhadmin**
