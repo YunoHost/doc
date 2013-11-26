@@ -38,7 +38,7 @@ function timeConverter(UNIX_timestamp) {
 }
 
 $(document).ready(function () {
-  $.getJSON('http://app.yunohost.org/list.json', function(app_list) {
+  $.getJSON('/list.json', function(app_list) {
     console.log(app_list);
     $.each(app_list, function(app_id, infos) {
       if (typeof infos.manifest.description.fr === undefined) {
