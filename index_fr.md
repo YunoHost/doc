@@ -14,9 +14,7 @@ border-radius: 5px; border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 5px 15px r
 </div>
 <p class="text-muted text-center"><small>YunoHost v2 • beta</small></p>
 
-<br>
 <hr>
-<br>
 
 ### <blockquote>Fonctionnalités</blockquote>
 
@@ -48,9 +46,4 @@ Tous les protocoles utilisés par YunoHost sont sécurisés par défaut. Vous di
 Par ailleurs tous les logiciels composant YunoHost sont libres, connus, utilisés, et sont de fait peu vulnérables aux attaques.
 
 Un pare-feu est également déployé dès l’installation, vous protégeant contre les connexions indésirables et dangereuses.
-
----
-
-<div class="text-center">
-<img src="http://pix.toile-libre.org/upload/original/1384701282.png" width=50>
 
