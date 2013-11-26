@@ -8,11 +8,9 @@ Tous les types de machine ci-dessous sont compatibles avec YunoHost. La liste de
 
 * **powerpc** : Principalement les Macinstosh G4/G5 ***[Installation sur Debian](#/install_on_debian_fr) uniquement***
 
-<br>
-
 **Matériel recommandé** : Machine x86 récente, silencieuse et peu consommatrice.
 
-<hr>
+---
 
 ### Configuration minimum
 
