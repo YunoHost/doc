@@ -1,6 +1,7 @@
 #Guide d'installation
 
 Vous disposez de deux moyens pour installer YunoHost:
+
 1. Installation via CD-ROM ou USB (guide ci-dessous)
 2. [Installation sur Debian](/#/install_on_debian_fr)
 
@@ -37,6 +38,7 @@ Vous pouvez alors soit:
 * exécuter la post-installation en ligne de commande en tapant sur la touche entrée sur votre serveur.
 
 Deux paramètres vous seront demandés:
+
 1. **Nom de domaine**: Vous devez choisir un nom de domaine qui pointera vers l'adresse IP de votre instance YunoHost. Si vous choisissez un nom de domaine terminant par **.nohost.me** ou **.noho.st**, l'étape de configuration des DNS se fera automatiquement et vous n'aurez qu'à attendre 3 minutes à la fin de la post-installation. Si vous optez pour pour un autre nom de domaine, vous devrez l’avoir préalablement acheté et [configuré](∕#/dns_fr) pour qu'il pointe vers votre **adresse IP**.
 
 2. **Mot de passe administrateur**: C’est le mot de passe qui vous permettra d’administrer votre instance YunoHost, **choisissez-le avec attention**, il ne doit pas être divulgué ni être devinable, sinon vous pourrez perdre votre système.
