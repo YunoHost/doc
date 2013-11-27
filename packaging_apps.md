@@ -133,7 +133,7 @@ The CLI [moulinette](#/moulinette) provides a few tools to make the packager's w
 sudo yunohost app setting <id> <key> [ -v <value> ]
 ```
 <blockquote>
-This is the most important helper of YunoHost. It allow you to store some settings for a specific app, in order to be either reused afterward or used for YunoHost configuration (**e.g.** for the SSO).
+This is the most important helper of YunoHost. It allows you to store some settings for a specific app, in order to be either reused afterward or used for YunoHost configuration (**e.g.** for the SSO).
 <br><br>
 It sets the value if you append ```-v <value>```, and gets it otherwise.
 </blockquote>
@@ -144,7 +144,7 @@ It sets the value if you append ```-v <value>```, and gets it otherwise.
 sudo yunohost app checkurl <domain><path> -a <id>
 ```
 <blockquote>
-This helper is useful for web apps and allow you to be sure that the web path is not taken by another app. If not, it "reserves" the path.
+This helper is useful for web apps and allows you to be sure that the web path is not taken by another app. If not, it "reserves" the path.
 <br><br>
 **Note** : Do not prepend `http://` or `https://` to the `<domain><path>`.
 </blockquote>
