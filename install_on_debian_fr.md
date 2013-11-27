@@ -6,9 +6,9 @@ Vous disposez de deux moyens pour installer YunoHost:
 2. Installation sur Debian (guide ci-dessous)
 
 ### Prérequis
-Une machine, un VPS, ou un serveur dédié avec:
+Une machine, un VPS, ou un serveur dédié:
 
-* Debian 7 (ou Rasbian) installé
+* Avec Debian 7 (Wheezy, Raspbian, Cubian, etc.) installé
 * Connecté à Internet
 * Accessible en root ou sudoer via SSH
 
