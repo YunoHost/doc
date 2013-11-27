@@ -116,21 +116,17 @@ sudo service nginx reload
 sudo yunohost app ssowatconf
 ```
 
-<br>
-#### Usage
+### Usage
 You have to put everything in the script in order to install your app flawlessly. It means that you have to install dependencies, create required repositories, initialize potential databases, copy sources and configure everything in the single `install` script (and of course do the reverse process in the `remove` script).
 
 **Be careful** : For security reason, the script is executed as **admin** user in YunoHost. Be sure to test it as **admin** and prepend `sudo` to requiring commands.
 
-<br>
-#### Architecture and arguments
+### Architecture and arguments
 Since YunoHost has a unified architecture, you will be able to guess most of the settings you need. But if you need variable ones, like domain or web path to configure your app, you will have to ask the administrator at installation (see `arguments` section in the manifest above).
 
 **Note**: The arguments will be passed in the manifest's order to the script. For example for **roundcube**, the `domain` argument will be referenced as `$1` in the script, and `path` as `$2`.
 
-
-<br>
-#### Helpers
+### Helpers
 The CLI [moulinette](#/moulinette) provides a few tools to make the packager's work easier:
 
 ```bash
@@ -171,8 +167,7 @@ sudo yunohost app ssowatconf
 This helper reloads the SSO configuration. You have to call it at the end of the script when you are packaging a web app.
 </blockquote>
 
-<br>
-#### Test it !
+### Test it !
 In order to test your app package, you can execute your script standalone as `admin` (do not forget to append required arguments):
 ```bash
 su - admin -c "/bin/bash /path/to/my/script my_arg1 my_arg2"
