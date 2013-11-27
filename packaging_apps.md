@@ -128,6 +128,7 @@ Since YunoHost has a unified architecture, you will be able to guess most of the
 
 **Note**: The arguments will be passed in the manifest's order to the script. For example for **roundcube**, the `domain` argument will be referenced as `$1` in the script, and `path` as `$2`.
 
+
 <br>
 #### Helpers
 The CLI [moulinette](#/moulinette) provides a few tools to make the packager's work easier:
@@ -169,3 +170,19 @@ sudo yunohost app ssowatconf
 <blockquote>
 This helper reloads the SSO configuration. You have to call it at the end of the script when you are packaging a web app.
 </blockquote>
+
+<br>
+#### Test it !
+In order to test your app package, you can execute your script standalone as `admin` (do not forget to append required arguments):
+```bash
+su - admin -c "/bin/bash /path/to/my/script my_arg1 my_arg2"
+```
+
+Or you can use the moulinette:
+```bash
+yunohost app install /path/to/my/app/package
+```
+Note that it also works with a Git URL:
+```bash
+yunohost app install https://github.com/author/my_app_package.git
+```
