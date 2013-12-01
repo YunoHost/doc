@@ -1,6 +1,6 @@
 # Packaging d'applications
 
-Il y a peu de choses à connaître si tu veux packager une application pour Yunohost.
+Il quelques petites choses à connaître si vous voulez packager une application pour Yunohost.
 
 ### Contenu
 Un paquet YunoHost ressemble à [ça](https://github.com/Kloadut/roundcube_ynh), et est composé de :
@@ -11,7 +11,7 @@ Un paquet YunoHost ressemble à [ça](https://github.com/Kloadut/roundcube_ynh),
 
 
 ### Manifeste
-Le fichier `manifest.json` défini les constantes de l'application, un ensemble de valeus que YunoHost a besoin pour identifier l'application et l'installer correctement. Ça ressemble à ça :
+Le fichier `manifest.json` défini les constantes de l'application, un ensemble de valeurs dont YunoHost a besoin pour identifier l'application et l'installer correctement. Ça ressemble à ça :
 ```json
 {
     "name": "Roundcube",
@@ -48,24 +48,24 @@ Le fichier `manifest.json` défini les constantes de l'application, un ensemble 
 }
 ```
 
-* **name** : Le nom de l'application. Il n'a pas besoin d'être unique, mais il faut jusqu'à ce qu'il soit le nom qui apparaît pour tous les administrateurs YunoHost dans la liste des applications.
+* **name** : Le nom de l'application. Il n'a pas besoin d'être unique, mais c'est conseillé puisque c'est le nom qui apparaît dans la liste des applications pour tous les administrateurs de serveurs YunoHost.
 
-* **id** : L'identidé unique de l'application. Tu dois t'assurer que cette identité est unique avant de soumettre une demande d'intégration de l'application.
+* **id** : L’identifiant unique de l'application. Vous devez vous assurer qu'il est unique avant de soumettre une demande d'intégration de l'application.
 
-* **description** : La description complète de l'application. Tu peux la détailler comme bon te semble. Seulement `en` est requis jusqu'à présent, mais tu peux traduire la description en faisant précéder le préfixe de la langue.
+* **description** : La description complète de l'application. Vous pouvez la détailler comme bon vous semble. Seulement `en` (English) est requis, mais vous pouvez la traduire en `fr` :)
 
 * **developer** : Quelques informations à propos du mainteneur de l'application.
 
-* **multi_instance** : Ceci défini la possibilité de ton application a être installée plusieurs fois. Quand YunoHost essaie d'installer une seconde fois ton application, il remplaçera `id` dans ton scripts par un `id__2`. Cela signifie que si tu veux être `multi_instance`, tu doit mettre tous les identificateurs dans les scripts.
-<br><br>**Par exemple** Dans mon script roundcube, je dois nommer ma base de donné `roundcube`, mon répertoire d'installation `roundcube` et ma configuration Nginx `roundcube`. De cette manière, la seconde installation de roundcube ne rentrera pas en conflit, et sera installée dans la base de donné `roundcube__2`, dans le répertoire `roundcube__2`, et avec la configuration Nginx `roundcube__2`.
+* **multi_instance** : Défini la possibilité de votre application a être installée plusieurs fois. Quand YunoHost essaie d'installer une seconde fois votre application, il remplaçera `id` dans votre scripts par un `id__2`. Cela signifie que si voulez être `multi_instance`, vous devez mettre toutes les valeurs identifiantes dans les scripts.
+<br><br>**Par exemple**: Dans mon script roundcube, je dois nommer ma base de donnée `roundcube`, mon répertoire d'installation `roundcube` et ma configuration Nginx `roundcube`. De cette manière, la seconde installation de roundcube ne rentrera pas en conflit, et sera installée dans la base de donnée `roundcube__2`, dans le répertoire `roundcube__2`, et avec la configuration Nginx `roundcube__2`.
 
-* **arguments** : Les réglages à demander aux administrateurs de YunoHost lors de l'installation. Tu dois régler un `name` (pour les arguments d'identification), et une question dans `ask` (au minimum en `en`) que tu peux traduire comme dans la description ci-dessus. Tu peux aussi mettre une valeur `default` et un `example` pour aider l'administrateur à remplir la contribution.
+* **arguments** : Les paramètres à demander aux administrateurs du serveur lors de l'installation. `name` est l'identifiant du paramètre, et `ask` la question à poser (au minimum en Anglais -- `en`) que vous pouvez traduire de la même manière que la description ci-dessus. Vous pouvez aussi proposer une valeur par défaut (`default`) et un exemple (`example`) pour aider l'administrateur à remplir le formulaire d’installation.
 
 ## Les scripts
-À présent, un paquet YunoHost doit contenir trois scripts bash : `install`, `remove`, et `upgrade`.
-Ces scripts seront exécuté en tant qu'`admin` sur les serveurs YunoHost.
+Pour le moment, un paquet YunoHost doit contenir trois scripts bash : `install`, `remove`, et `upgrade`.
+Ces scripts seront exécutés en tant qu'`admin` sur les serveurs YunoHost.
 
-Voici un exemple :
+Voici un exemple de script d'`install`:
 ```bash
 # Retrieve arguments
 domain=$1
@@ -116,17 +116,17 @@ sudo yunohost app ssowatconf
 ```
 
 ### Usage
-Tu doit tout mettre dans le script afin d'installer ton application parfaitement. Ça signifie que tu doit installer les dépendances, créer les répertoires requis, initialiser les bases de donnés nécessaires, copier les sources et configurer tout dans l'unique script `install` (et bien sûr coder la procédure inverse dans le script `remove`).
+Vous devez tout mettre dans le script pour que votre application soit entièrement installée. Cela signifie que vous devez installer les dépendances, créer les répertoires requis, initialiser les bases de donnés nécessaires, copier les sources et configurer tout dans l'unique script `install` (et bien sûr faire la procédure inverse dans le script `remove`).
 
-**Attention** : Pour des raisons de sécurité, le script est exécuté en tant qu'**administrateur** dans YunoHost. Soit certain de l'essayer en tant qu'**administrateur** et préfixe de `sudo` les commandes requises.
+**Attention** : Pour des raisons de sécurité, le script est exécuté en tant qu'**admin** dans YunoHost. Assurez-vous de l'essayer en tant qu'**admin** et de préfixer `sudo` aux commandes requises.
 
 ### Architecture et arguments
-Depuis que YunoHost a une architecture unifié, tu sera en position de deviner la plupart des réglages nécessaires. Mais si tu as besoin de réglages variables, comme le nom de domaine ou un chemin web pour configurer ton application, tu devra demander aux administrateurs lors de l'installation (regarde la section `arguments` dans manifeste ci-dessus).
+Comme les instances de YunoHost possèdent une architecture unifié, vous serez capable de deviner la plupart des réglages nécessaires. Mais si vous avez besoin de réglages spécifiques, comme le nom de domaine ou un chemin web pour configurer l’application, vous devrez demander aux administrateurs lors de l'installation (voir la section `arguments` dans **manifeste** ci-dessus).
 
-**Remarque** : Les arguments seront passés dans l'ordre du manifeste dans le script. Par exemple pour **roundcube**, l'argument `domain` sera référencé en tant que `$1` dans le script, et  `path` en tant que `$2`.
+**Remarque** : Les arguments seront passés au script dans l'ordre du manifeste. Par exemple pour **roundcube**, l'argument `domain` sera passé en tant que `$1` dans le script, et  `path` en tant que `$2`.
 
-### Aides
-La CLI [moulinette](#/moulinette) fournis des outils pour rendre le packaging plus facile :
+### Commandes pratiques
+La CLI [moulinette](#/moulinette) fournit quelques outils pour rendre le packaging plus facile :
 
 <br>
 
@@ -134,7 +134,7 @@ La CLI [moulinette](#/moulinette) fournis des outils pour rendre le packaging pl
 sudo yunohost app checkport <port>
 ```
 <blockquote>
-Cette aide vérifie le port et retourne une erreur si le port déjà utilisé.
+Cette commande vérifie le port et retourne une erreur si le port déjà utilisé.
 </blockquote>
 
 <br>
@@ -143,9 +143,9 @@ Cette aide vérifie le port et retourne une erreur si le port déjà utilisé.
 sudo yunohost app setting <id> <key> [ -v <value> ]
 ```
 <blockquote>
-C'est l'aide la plus importante de YunoHost. Il te permet de stocker des réglages pour un application spécifique, afin de ne plus la réutiliser plus tard ou l'utiliser pour la configuration de YunoHost (**par exemple** pour le SSO).
+C'est la commande la plus importante. Elle vous permet de stocker des réglages d'un application spécifique, afin de les réutiliser plus tard ou pour que YunoHost puisse se configurer automatiquement (par exemple pour le SSO).
 <br><br>
-Il régle la valeur si tu ajoute ```-v <value>```, et sinon l'obtient.
+La commande défini la valeur si vous ajoutez ```-v <valeur>```, sinon la récupère.
 </blockquote>
 
 <br>
@@ -154,9 +154,9 @@ Il régle la valeur si tu ajoute ```-v <value>```, et sinon l'obtient.
 sudo yunohost app checkurl <domain><path> -a <id>
 ```
 <blockquote>
-Cette aide est utile pour les applications web et te permet d'être sûr que le chemin n'est pas pris par une autre application, il "réserve" le chemin.
+Cette commande est utile pour les applications Web et vous permet d'être sûr que le chemin n'est pas utilisé par une autre application. Si non, elle « réserve » le chemin.
 <br><br>
-**Remarque** : Ne pas préfixer par `http://` ou par `https://` dans le `<nom de domaine><chemin>`.
+**Remarque** : Ne pas préfixer par `http://` ou par `https://` dans le `<domain><path>`.
 </blockquote>
 
 <br>
@@ -165,7 +165,7 @@ Cette aide est utile pour les applications web et te permet d'être sûr que le 
 sudo yunohost app initdb <db_user> [ -p <db_pwd> ] [ -s <SQL_file> ]
 ```
 <blockquote>
-Cette aide crée une base de donnée MySQL. Si tu n'ajoute pas de mot de passe, il en génère un et te l'affiche. Si tu ajoute un fichier SQL, il initialise ta base de donné avec la déclaration SQL à l'intérieur.
+Cette commande crée une base de donnée MySQL. Si vous ne définissez pas de mot de passe avec `-p`, la commande en génère un et le retourne. Si vous ajoutez un fichier SQL avec `-s`, la commande initialise la base de donnée avec les commandes SQL du fichier.
 </blockquote>
 
 <br>
@@ -174,16 +174,16 @@ Cette aide crée une base de donnée MySQL. Si tu n'ajoute pas de mot de passe, 
 sudo yunohost app ssowatconf
 ```
 <blockquote>
-Cette aide recharge la configuration SSO. Tu dois l'appeler à la fin du script quand tu est en train de packager une application web.
+Cette commande régénère la configuration du SSO. Vous devez l'appeler à la fin des scripts lorsque vous packagez une application Web.
 </blockquote>
 
-### Essaye le !
-Afin d'essayer ton packaging, tu peux exécuter ton script en tant qu'`administrateur` (n'oublie pas d'ajouter les arguments requis) :
+### Essais
+Afin d'essayer votre packaging d'application, vous pouvez exécuter votre script en tant qu'`admin` (n'oubliez pas d'ajouter les arguments requis) :
 ```bash
 su - admin -c "/bin/bash /path/to/my/script my_arg1 my_arg2"
 ```
 
-Ou tu peux utiliser la moulinette :
+Ou vous pouvez utiliser la moulinette :
 ```bash
 yunohost app install /path/to/my/app/package
 ```
