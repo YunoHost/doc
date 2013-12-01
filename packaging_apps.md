@@ -129,6 +129,17 @@ Since YunoHost has a unified architecture, you will be able to guess most of the
 ### Helpers
 The CLI [moulinette](#/moulinette) provides a few tools to make the packager's work easier:
 
+<br>
+
+```bash
+sudo yunohost app checkport <port>
+```
+<blockquote>
+This helper checks the port and return an error if the port is already in use.
+</blockquote>
+
+<br>
+
 ```bash
 sudo yunohost app setting <id> <key> [ -v <value> ]
 ```
