@@ -49,7 +49,6 @@ Moreover, all the softwares used in YunoHost are known free and open-source proj
 
 A firewall is also deployed at installation, protecting you from undesirable and dangerous connections.
 
----
 
-<div class="text-center">
-<img src="http://pix.toile-libre.org/upload/original/1384701282.png" width=50>
+<br>
+<div class="text-center"><img style="width: 300px;" src="http://pix.toile-libre.org/upload/original/1386012810.png" />
