@@ -11,8 +11,8 @@ border-radius: 5px; border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 5px 15px r
 
 <div class="text-center" style="width: 23%; min-width: 130px; margin: 0 auto;">
 <a class="btn btn-primary btn-lg btn-block"  style="font-size: 1.5em" href="#/install_fr">Installer</a>
-</div>
 <p class="text-muted text-center"><small>YunoHost v2 • beta2</small></p>
+</div>
 
 <hr>
 
@@ -21,6 +21,7 @@ border-radius: 5px; border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 5px 15px r
 YunoHost vous permet par défaut de gérer vos adresses mail et de messagerie instantanée via des interfaces simples d’utilisation et de manière sécurisée. 
 
 Vous pourrez également étendre les fonctionnalités via des [**apps**](#/apps_fr) installables en un click.
+
 
 ### <blockquote>Logiciels</blockquote>
 
@@ -47,3 +48,5 @@ Par ailleurs tous les logiciels composant YunoHost sont libres, connus, utilisé
 
 Un pare-feu est également déployé dès l’installation, vous protégeant contre les connexions indésirables et dangereuses.
 
+<br>
+<div class="text-center"><img style="width: 300px" src="http://pix.toile-libre.org/upload/original/1386012810.png" /></div>
