@@ -51,4 +51,4 @@ A firewall is also deployed at installation, protecting you from undesirable and
 
 
 <br>
-<div class="text-center"><img style="width: 300px;" src="http://pix.toile-libre.org/upload/original/1386012810.png" />
+<div class="text-center"><img style="width: 100px;" src="http://pix.toile-libre.org/upload/original/1386012810.png" />

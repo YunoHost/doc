@@ -49,4 +49,4 @@ Par ailleurs tous les logiciels composant YunoHost sont libres, connus, utilisé
 Un pare-feu est également déployé dès l’installation, vous protégeant contre les connexions indésirables et dangereuses.
 
 <br>
-<div class="text-center"><img style="width: 300px" src="http://pix.toile-libre.org/upload/original/1386012810.png" /></div>
+<div class="text-center"><img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" /></div>
