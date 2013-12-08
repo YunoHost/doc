@@ -70,5 +70,6 @@ $(document).ready(function () {
 | Radicale | beudbeud | Testée | https://github.com/abeudin/radicale_ynh |
 | Wordpress | beudbeud | Testée | https://github.com/abeudin/wordpress_ynh |
 | Owncloud | kload | En test | https://github.com/Kloadut/owncloud_ynh |
+| Firefox Sync | beudbeud | En cours | https://github.com/abeudin/firefox-sync_ynh |
 
 
