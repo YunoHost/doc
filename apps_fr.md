@@ -1,5 +1,5 @@
 #Apps
-## Disponible
+## Disponibles
 ---
 
 <div class="panel-group" id="app-accordion"></div>
@@ -63,9 +63,9 @@ $(document).ready(function () {
 ## En cours d'intégration
 ---
 
-| Nom | Packageur | Etat d'avancement | URL du git |
+| Nom | Packageur | État d'avancement | URL du git |
 | --- | --- | --- | --- |
-| Radicale | beudbeud | Testé | https://github.com/abeudin/radicale_ynh |
-| Wordpress | beudbeud | Testé | https://github.com/abeudin/wordpress_ynh |
+| Radicale | beudbeud | Testée | https://github.com/abeudin/radicale_ynh |
+| Wordpress | beudbeud | Testée | https://github.com/abeudin/wordpress_ynh |
 
 
