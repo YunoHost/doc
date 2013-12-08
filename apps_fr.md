@@ -1,6 +1,7 @@
 #Apps
-## Disponibles
 ---
+
+### Disponibles
 
 <div class="panel-group" id="app-accordion"></div>
 
@@ -60,12 +61,14 @@ $(document).ready(function () {
 });
 </script>
 
-## En cours d'intégration
----
+<br>
+
+### En cours d'intégration
 
 | Nom | Packageur | État d'avancement | URL du git |
 | --- | --- | --- | --- |
 | Radicale | beudbeud | Testée | https://github.com/abeudin/radicale_ynh |
 | Wordpress | beudbeud | Testée | https://github.com/abeudin/wordpress_ynh |
+| Owncloud | kload | En test | https://github.com/Kloadut/owncloud_ynh |
 
 
