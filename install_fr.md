@@ -24,6 +24,11 @@ Branchez la machine en **ethernet** sur votre routeur.
 
 Sélectionnez «**Graphical Install**», puis suivez les instructions. Vous aurez à choisir la langue du système ainsi que l’agencement du clavier, puis vous devrez confirmer le formatage **complet** du disque dur.
 
+Si vous faites une installation depuis une clé USB, vous aurez besoin de monter le contenu de la clé dans /cdrom. Pour cela, lancer un shell et :
+```bash
+mount /dev/sdb /cdrom
+```
+
 L'installation se déroulera ensuite toute seule, en téléchargeant automatiquement les paquets requis.
 
 Si cette étape ne se déroule pas correctement, vous avez probablement un problème de connexion. Vérifiez alors que votre connexion Internet fonctionne.
