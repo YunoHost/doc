@@ -126,6 +126,12 @@ Since YunoHost has a unified architecture, you will be able to guess most of the
 
 **Note**: The arguments will be passed in the manifest's order to the script. For example for **roundcube**, the `domain` argument will be referenced as `$1` in the script, and `path` as `$2`.
 
+### Hooks
+YunoHost provides a hook system which consist in packager's script callbacks in the moulinette (CLI).
+The scripts has to be placed in the `hooks` repository at the root of the YunoHost package, and has to be named `priority-hook_name`, for example: `hooks/50-post_user_create` will be executed after each user creation.
+
+Take a look at the [OwnCloud package](https://github.com/Kloadut/owncloud_ynh) for a working example.
+
 ### Helpers
 The CLI [moulinette](#/moulinette) provides a few tools to make the packager's work easier:
 

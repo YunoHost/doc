@@ -69,7 +69,19 @@ $(document).ready(function () {
 | --- | --- | --- | --- |
 | Radicale | beudbeud | Testée | https://github.com/abeudin/radicale_ynh |
 | Wordpress | beudbeud | Testée | https://github.com/abeudin/wordpress_ynh |
-| Owncloud | kload | En test | https://github.com/Kloadut/owncloud_ynh |
+| Owncloud | kload | Testée | https://github.com/Kloadut/owncloud_ynh |
 | Firefox Sync | beudbeud | En cours | https://github.com/abeudin/firefox-sync_ynh |
+
+### À intégrer
+
+* [Etherpad lite](http://etherpad.org/)
+* [Sympa](http://www.sympa.org/)
+* [OpenSondage](https://github.com/framasoft/OpenSondage) (framadate)
+* [Poche](http://www.inthepoche.com/)
+* [Mumble](http://mumble.sourceforge.net/)
+* [Ghost](http://ghost.org)
+* [PluXML](http://www.pluxml.org/)
+* [OpenVPN](http://openvpn.net/)
+* [Piwigo](http://piwigo.org)
 
 
