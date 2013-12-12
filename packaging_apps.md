@@ -130,6 +130,8 @@ Since YunoHost has a unified architecture, you will be able to guess most of the
 YunoHost provides a hook system which consist in packager's script callbacks in the moulinette (CLI).
 The scripts has to be placed in the `hooks` repository at the root of the YunoHost package, and has to be named `priority-hook_name`, for example: `hooks/50-post_user_create` will be executed after each user creation.
 
+**Note**: `priority` is optional, default is `50`.
+
 Take a look at the [OwnCloud package](https://github.com/Kloadut/owncloud_ynh) for a working example.
 
 ### Helpers
