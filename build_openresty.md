@@ -43,11 +43,7 @@ make # Another ~15 minutes
 
 INSTALL=/tmp/openresty
 make install DESTDIR=$INSTALL
-
 mkdir -p $INSTALL/var/lib/nginx
-echo "lua_package_path '/usr/share/lua/5.1/?.lua;;';" > openresty.conf
-echo "lua_package_cpath '/usr/lib/arm-linux-gnueabihf/lua/5.1/?.so;;';" >> openresty.conf
-install -m 0555 -D openresty.conf $INSTALL/etc/nginx/conf.d/openresty.conf
 
 # fpm installation
 apt-get -y install make ruby1.9.1 ruby1.9.1-dev \
@@ -67,6 +63,7 @@ fpm -s dir -t deb -n openresty -v 1.4.3.3 --iteration 1 -C $INSTALL \
 --conflicts nginx-extras \
 --conflicts nginx-full \
 --conflicts nginx-light \
---config-files /etc/nginx/conf.d/openresty.conf \
-etc run usr var
+run usr var
 ```
+
+Inspired from http://brian.akins.org/blog/2013/03/19/building-openresty-on-ubuntu/
