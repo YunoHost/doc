@@ -70,7 +70,7 @@ $(document).ready(function () {
 | Radicale | beudbeud | Testée | https://github.com/abeudin/radicale_ynh |
 | Wordpress | beudbeud | Testée | https://github.com/abeudin/wordpress_ynh |
 | Owncloud | kload | Testée | https://github.com/Kloadut/owncloud_ynh |
-| Firefox Sync | beudbeud | En cours | https://github.com/abeudin/firefox-sync_ynh |
+| Firefox Sync | beudbeud | En cours | https://github.com/abeudin/ffsync_ynh |
 | OpenID | julien | En test | https://github.com/julienmalik/openid-simplesamlphp_ynh |
 
 ### À intégrer
