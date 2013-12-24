@@ -39,7 +39,7 @@ Based on [Debian GNU/Linux](http://www.debian.org/index.en.html) (wheezy), YunoH
 * [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs)
 * [SSOwat](https://github.com/Kloadut/SSOwat)
 
-YunoHost automatically configures all this softwares at installation, unifying their usage through a [web interface](#/admin) or via the command-line interface called "[moulinette](#/moulinette)".
+YunoHost automatically configures all these softwares at installation, unifying their usage through a [web interface](#/admin) or via the command-line interface called "[moulinette](#/moulinette)".
 
 ### <blockquote>Security</blockquote>
 
