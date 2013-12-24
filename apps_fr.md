@@ -70,6 +70,7 @@ $(document).ready(function () {
 | Firefox Sync | beudbeud | En cours | https://github.com/abeudin/ffsync_ynh |
 | OpenID | julien | En test | https://github.com/julienmalik/openid-simplesamlphp_ynh |
 | Shaarli | julien | En test | https://github.com/julienmalik/shaarli_ynh |
+| OpenVPN | Kload | En cours | https://github.com/Kloadut/openvpn_ynh |
 
 ### À intégrer
 
@@ -80,7 +81,6 @@ $(document).ready(function () {
 * [Mumble](http://mumble.sourceforge.net/)
 * [Ghost](http://ghost.org)
 * [PluXML](http://www.pluxml.org/)
-* [OpenVPN](http://openvpn.net/)
 * [Piwigo](http://piwigo.org)
 * [ZeroBin](http://sebsauvage.net/wiki/doku.php?id=php:zerobin)
 
