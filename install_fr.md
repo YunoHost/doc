@@ -39,8 +39,8 @@ Vous pouvez alors soit:
 
 Deux paramètres vous seront demandés:
 
-1. **Nom de domaine**: Vous devez choisir un nom de domaine qui pointera vers l'adresse IP de votre instance YunoHost. Si vous choisissez un nom de domaine terminant par **.nohost.me** ou **.noho.st**, l'étape de configuration des DNS se fera automatiquement et vous n'aurez qu'à attendre 3 minutes à la fin de la post-installation. Si vous optez pour pour un autre nom de domaine, vous devrez l’avoir préalablement acheté et [configuré](#/dns_fr) pour qu'il pointe vers votre **adresse IP**.
+1. **Nom de domaine**: Vous devez choisir un nom de domaine qui pointera vers l'adresse IP de votre instance YunoHost. Si vous choisissez un nom de domaine terminant par **.nohost.me** ou **.noho.st**, l'étape de configuration des DNS se fera automatiquement et vous n'aurez qu'à attendre 3 minutes à la fin de la post-installation. Si vous optez pour un autre nom de domaine, vous devrez l’avoir préalablement acheté et [configuré](#/dns_fr) pour qu'il pointe vers votre **adresse IP**.
 
 2. **Mot de passe administrateur**: C’est le mot de passe qui vous permettra d’administrer votre instance YunoHost, **choisissez-le avec attention**, il ne doit pas être divulgué ni être devinable, sinon vous pourrez perdre votre système.
 
-La post-install se déroulera ensuite automatiquement et pourrez accéder à l'interface d'administration via **https://votre-domaine.org/ynhadmin**
+La post-install se déroulera ensuite automatiquement et vous pourrez accéder à l'interface d'administration via **https://votre-domaine.org/ynhadmin**
