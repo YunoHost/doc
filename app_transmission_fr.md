@@ -1,12 +1,12 @@
 # Doc Transmission
 
-### Téléchargement fichiers téléchargés
+### Téléchargement des fichiers complétés
 
-Avec un navigateur web : https://votre-domaine.org/torrent/downloads/
+Avec un navigateur web, si Transmission est installé sur `https://votre-domaine.org/torrent/` : https://votre-domaine.org/torrent/downloads/
 
 ### Comment télécharger un répertoire entier
 
-Il faut archiver le répertoire. Pour cela il y a : 
+Il faut archiver le répertoire. Pour cela il y a :
 * tar : http://doc.ubuntu-fr.org/tar#utilisation_tar_seulconcatenation_de_fichiers
 * zip : http://doc.ubuntu-fr.org/zip
 
