@@ -5,8 +5,8 @@
 ##yunohost
 
 la command de base est yunohost
-<pre>
-usage: yunohost [-h] [-v]                
+```bash
+usage: yunohost [-h] [-v]
 
 positional arguments:
   {domain,monitor,service,firewall,backup,app,hook,dyndns,user,tools}
@@ -24,19 +24,19 @@ positional arguments:
 optional arguments:
   -h, --help            show this help message and exit
   -v, --version         Display moulinette version
-</pre>
+```
 
 ### domain
-<pre>
+```bash
 yunohost domain [-h] {info,add,list,remove}
     info                Get domain informations
     add                 Create a custom domain
     list                List domains
     remove              Delete domains
-</pre>
+```
 
 ### monitor
-<pre>
+```bash
 yunohost monitor [-h] {enable,network,show-stats,update-stats,disk,system,disable}
     enable              Enable server monitoring
     network             Monitor network interfaces
@@ -45,10 +45,10 @@ yunohost monitor [-h] {enable,network,show-stats,update-stats,disk,system,disabl
     disk                Monitor disk space and usage
     system              Monitor system informations and usage
     disable             Disable server monitoring
-</pre>
+```
 
 ### service
-<pre>
+```bash
 yunohost service [-h] {status,start,enable,log,stop,disable}
     status              Show status information about one or more services
                         (all by default)
@@ -57,10 +57,10 @@ yunohost service [-h] {status,start,enable,log,stop,disable}
     log                 Log every log files of a service
     stop                Stop one or more services
     disable             Disable one or more services
-</pre>
+```
 
 ### firewall
-<pre>
+```bash
 yunohost firewall [-h]{installupnp,checkupnp,list,stop,disallow,reload,allow,removeupnp}
     installupnp         Add upnp cron
     checkupnp           check if UPNP is install or not (0 yes 1 no)
@@ -70,16 +70,16 @@ yunohost firewall [-h]{installupnp,checkupnp,list,stop,disallow,reload,allow,rem
     reload              Reload all firewall rules
     allow               Allow connection port/protocol
     removeupnp          Remove upnp cron
-</pre>
+```
 
 ### backup
-<pre>
+```bash
 yunohost backup [-h] {init} ...
     init      Init Tahoe-LAFS configuration
-</pre>
+```
 
 ### app
-<pre>
+```bash
 yunohost app [-h]
 {map,ssowatconf,install,checkport,listlists,removelist,info,upgrade,service,fetchlist,checkurl,list,remove,removeaccess,setting,initdb,addaccess}
     map                 List apps by domain
@@ -100,42 +100,42 @@ yunohost app [-h]
     initdb              Create database and initialize it with optionnal
                         attached script
     addaccess           Grant access right to users (everyone by default)
-</pre>
+```
 
 ### hook
-<pre>
+```bash
 yunohost hook [-h] {callback,add,check,remove,exec} ...
     callback            Execute all scripts binded to an action
     add                 Store hook script to filesystem
     check               Parse the script file and get arguments
     remove              Remove hook scripts from filesystem
     exec                Execute hook from a file with arguments
-</pre>
+```
 
 ### dyndns
-<pre>
+```bash
 yunohost dyndns [-h] {subscribe,update,installcron,removecron} ...
     subscribe           Subscribe to a DynDNS service
     update              Update IP on DynDNS platform
     installcron         Install IP update cron
     removecron          Remove IP update cron
-</pre>
+```
 
 ### user
-<pre>
+```bash
 yunohost user [-h] {info,create,list,update,delete} ...
     info                Get user informations
     create              Create user
     list                List users
     update              Update user informations
     delete              Delete user
-</pre>
+```
 
 ### tools
-<pre>
+```bash
 yunohost tools [-h] {postinstall,maindomain,ldapinit,adminpw} ...
     postinstall         YunoHost post-install
     maindomain          Main domain change tool
     ldapinit            YunoHost LDAP initialization
     adminpw             Change admin password
-</pre>
+```
