@@ -3,7 +3,7 @@
 You have two ways to install YunoHost:
 
 1. From an USB key or a CD-ROM (below guide)
-2. [On an existing Debian](/#/install_on_debian)
+2. [Trought the install script on an existing Debian](/#/install_on_debian)
 
 ### Pre-requisite
 
