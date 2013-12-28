@@ -1,40 +1,46 @@
-#Installer yunohost sur un server debian via le script d'installation
+# Installation guide on Debian
 
-## Prérequis
+Vous disposez de deux moyens pour installer YunoHost:
+You have two ways to install Yunohost:
 
-Afin de pouvoir récupérer le script install_yunohost, il faut avoir git d'installé sur votre machine.
+1. [From an USB key or a CD-ROM](#/install)
+2. With the install script on an existing Debian (bellow guide)
 
-Pour l'installer sur une distribution Debian:
+### Pre-requisite
+A box, a VPS, or a dedicated server:
+
+* with Debian 7 (Wheezy, Raspbian, Cubian, etc.) installed
+* Connected to Internet
+* root access ou sudoer via SSH
+
+### Installation
+
+1. Connect to your debian system trought ssh
 ```bash
-$ apt-get install git
+ssh root@monserveur.org
 ```
 
-## Récuperation du script
-
-Placez vous tout d'abord dans le répertoire /tmp:
+2. Install git
 ```bash
-$ cd /tmp
+apt-get install git
 ```
 
-Récupérez le script grâce à git:
+3. Clone the Yonuhost install script repository
 ```bash
-$ git clone https://github.com/YunoHost/install_script.git
+git clone https://github.com/YunoHost/install_script /tmp/install_script
 ```
 
-Déplacez vous dans le répertoire Script nouvellement cloné:
+4. Execute the install script
 ```bash
-$ cd install_script/
+cd /tmp/install_script && ./install_yunohostv2
 ```
 
-Rendez le script install_yunohost exécutable:
-```bash
-$ chmod o+x install_yunohost
-```
+### Post-install
 
-## Lancer l'installation
-Exécutez le script d'installation
-```bash
-$ ./install_yunohostv2
-```
+Once the install finished, the script will ask you two parameters to procede the post-install:
 
-Le script va automatiquement lancer l'installation de yunohost sur votre poste ainsi que tous les paquets nécessaires. Répondez simplement aux questions qui vous seront posées.
+1. **domain name**: Please choose the domain name wich will point to your Yunohost IP. You can choose to use a subdomain of **nohost.me** or **noho.st**, in that case the DNS configuration will be automatic, you will just have to wait three min to the end of the post-install. Or you can use your own [well configured domain name](#/dns)
+
+2. **administrator password**: this is the password to administer you yunohost install, **choose it strong** and don't share it, without it you can loose your system.
+
+after the post-install script you will be able to access to your administration [web interface](#/admin) **https://your-domain.org/ynhadmin** or to amdinister your yunohost via the command-line interface called "[moulinette](#/moulinette)".
