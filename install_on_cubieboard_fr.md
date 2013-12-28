@@ -38,7 +38,7 @@ Réglages de /etc/hosts sur l'ordinateur de bureau :
 ```bash
 (sudo) nano /etc/hosts
 ```
-Ajouter une ligne sous la forme :
+Ajouter une ligne de la forme :
 ```bash
 adresse_ip_cubieboard      votre_domaine.org
 ```
