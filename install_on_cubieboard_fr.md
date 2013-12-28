@@ -17,10 +17,12 @@ Avec le logiciel "Disques" présent dans Debian et ses dérivés, sélectionner 
 #### Via la ligne de console
 Repérer le nom de la µ-SD (/dev/…) avec :
 ```bash
-df -h```
+df -h
+```
 Copier l'image à partir du répertoire à laquelle elle se trouve sur la µ-SD :
 ```bash
-(sudo) dd if=/image/debian/ of=/dev/<µ-SD> bs=1M && sync```
+(sudo) dd if=/image/debian/ of=/dev/<µ-SD> bs=1M && sync
+```
 ### Augmentation de la taille de la partition
 À l'aide de GParted redimentionner la partition.
 
@@ -29,30 +31,37 @@ Mettez la µ-SD dans la CubieBoard et démarrer-la.
 
 ### Repérer l'adresse IP locale de votre CubieBoard
 ```bash
-nmap 192.168.0.0/24 ou nmap 192.168.1.0/24```
+nmap 192.168.0.0/24 ou nmap 192.168.1.0/24
+```
 ### Redirection du nom de domaine vers l'adresse IP locale de la CubieBoard
 Réglages de /etc/hosts sur l'ordinateur de bureau :
 ```bash
-(sudo) nano /etc/hosts```
+(sudo) nano /etc/hosts
+```
 Ajouter une ligne sous la forme :
 ```bash
-adresse_ip_cubieboard      votre_domaine.org```
+adresse_ip_cubieboard      votre_domaine.org
+```
 ### Connection ssh
 ```bash
-ssh root@votre_domaine.org```
+ssh root@votre_domaine.org
+```
 ### Installation de YunoHost
 
 1. Installez git
 ```bash
-apt-get install git```
+apt-get install git
+```
 
 2. Clonez le répertoire du script d'installation YunoHost
 ```bash
-git clone https://github.com/YunoHost/install_script /tmp/install_script```
+git clone https://github.com/YunoHost/install_script /tmp/install_script
+```
 
 3. Exécutez le script
 ```bash
-cd /tmp/install_script && ./install_yunohostv2```
+cd /tmp/install_script && ./install_yunohostv2
+```
 
 ### Post-installation
 
@@ -66,11 +75,13 @@ La post-install se déroulera ensuite automatiquement et pourrez accéder à l'i
 
 ### Mettre à jour YunoHost
 ```bash
-apt-get update && apt-get upgrade && apt-get dist-upgrade```
+apt-get update && apt-get upgrade && apt-get dist-upgrade
+```
 ### Ouverture des ports
 Upnp ne fonctionne pas encore, il faut donc ouvrir manuellement les ports sur la box.
 Pour connaître les ports à ouvrir :
 ```bash
-yunohost firewall list```
+yunohost firewall list
+```
 
 
