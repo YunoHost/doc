@@ -12,11 +12,10 @@ border-radius: 5px; border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 5px 15px r
 <div class="text-center" style="width: 23%; min-width: 130px; margin: 0 auto;">
 <a class="btn btn-primary btn-lg btn-block"  style="font-size: 1.5em" href="#/install">Install</a>
 </div>
-<p class="text-muted text-center"><small>YunoHost v2 • beta</small></p>
+<p class="text-muted text-center"><small>YunoHost v2 • beta2</small></p>
+</div>
 
-<br>
 <hr>
-<br>
 
 ### <blockquote>Features</blockquote>
 
