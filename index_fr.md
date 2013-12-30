@@ -4,7 +4,7 @@
 
 <div style="width: 100%; height: 290px; overflow: hidden;
 border-radius: 5px; border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 5px 15px rgba(0,0,0,0.15);">
-<img style="width: 100%; min-width: 580px;" src="http://yunohost.org/wp-content/gallery/screenshots-mod/capture.jpg">
+<img style="width: 100%; min-width: 580px;" src="http://pix.toile-libre.org/upload/original/1388434791.jpg">
 </div>
 
 <br>
