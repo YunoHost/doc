@@ -50,3 +50,18 @@ Un pare-feu est également déployé dès l’installation, vous protégeant con
 
 <br>
 <div class="text-center"><img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" /></div>
+
+<script type="text/javascript">
+    jQuery.ajaxSetup({cache: true});
+    jQuery.getScript("http://jappix.yunohost.org/php/get.php?l=fr&t=js&g=mini.xml", function() {
+      MINI_GROUPCHATS = ["support@conference.yunohost.org"];
+      HOST_ANONYMOUS = "yunohost.org";
+      HOST_MUC = "conference.yunohost.org";
+      HOST_BOSH = "https://doc.yunohost.org/http-bind/";
+      HOST_BOSH_MINI = "https://doc.yunohost.org/http-bind/";
+      LOCK_HOST = 'on';
+      MINI_ANIMATE = true;
+      MINI_ANONYMOUS = true;
+      launchMini(false, true, 'yunohost.org');
+    });
+</script>
