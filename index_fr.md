@@ -64,4 +64,5 @@ Un pare-feu est également déployé dès l’installation, vous protégeant con
       MINI_ANONYMOUS = true;
       launchMini(false, true, 'yunohost.org');
     });
+    $("#edit").hide();
 </script>
