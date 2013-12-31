@@ -25,7 +25,7 @@ Tous les efforts sont faits pour simplifier le déploiement sur le plus d'appare
 
 ### Développement
 
-YunoHost est développé pour être le plus **simple** et le moins intrusif possible pour garder la compatibilité avec Debian. Il propose uniquement un ensemble de configurations automatiques et opère avec via des interfaces accessibles.
+YunoHost est développé pour être le plus **simple** et le moins intrusif possible pour garder la compatibilité avec Debian. Il propose uniquement un ensemble de configurations automatiques et opère via des interfaces accessibles.
 
 Le tout est bien entendu **entièrement libre**. La philosophie de l'auto-hébergement étant à nos yeux incompatible avec tout autre modèle de développement logiciel.
 
