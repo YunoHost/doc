@@ -53,3 +53,19 @@ A firewall is also deployed at installation, protecting you from undesirable and
 <div class="text-center"><img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />
 <p>[Github](https://github.com/YunoHost) <b>/</b> [FAQ](https://ask.yunohost.org) <b>/</b> [Translate](https://translate.yunohost.org/) <b>/</b> [Old Wiki](http://wiki.yunohost.org) </p>
 </div>
+
+<script type="text/javascript">
+    jQuery.ajaxSetup({cache: true});
+    jQuery.getScript("https://doc.yunohost.org/jappix-en.js", function() {
+      MINI_GROUPCHATS = ["support@conference.yunohost.org"];
+      HOST_ANONYMOUS = "yunohost.org";
+      HOST_MUC = "conference.yunohost.org";
+      HOST_BOSH = "https://yunohost.org/http-bind/";
+      HOST_BOSH_MINI = "https://yunohost.org/http-bind/";
+      LOCK_HOST = 'on';
+      MINI_ANIMATE = true;
+      MINI_ANONYMOUS = true;
+      launchMini(false, true, 'yunohost.org');
+    });
+    $("#edit").hide();
+</script>
