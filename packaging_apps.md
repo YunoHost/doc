@@ -1,13 +1,13 @@
 # App packaging
 
-There are few things to know if you want to package an application for YunoHost.
+There are few things you need to know if you want to package an application for YunoHost.
 
 ### Content
 A YunoHost package looks like [this](https://github.com/Kloadut/roundcube_ynh), and is composed of:
 
 * A JSON file `manifest.json`
 * A `scripts` directory, which contains the `install`, `remove` and `upgrade` scripts
-* Optionnal other directories, like `sources` or `conf` if you need them
+* Optional other directories, like `sources` or `conf` if you need them
 
 
 ### Manifest
@@ -48,18 +48,18 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
 }
 ```
 
-* **name** : The name of the app. It does not have to be unique, but it should since it is the shown name to all the YunoHost administrators in the app list.
+* **name** : The name of the app. It does not have to be unique, but it should be, since it is the name shown to all the YunoHost administrators in the app list.
 
 * **id** : The unique ID of the app. You have to ensure that this ID is unique before submit an app integration request.
 
-* **description** : The complete description of the app. You can make it as detailed as you feel it legit. Only `en` is required right now, but you can translate the description by prepending the locale prefix.
+* **description** : The complete description of the app. You can make it as detailed as you feel it should be. Only `en` is required right now, but you can translate the description by prepending the locale prefix.
 
-* **developer** : Some informations about the app maintainer.
+* **developer** : Some information about the app maintainer (you!).
 
-* **multi_instance** : This defines your app's ability to be installed multiple times. When YunoHost tries to install a second instance of your app, it will replace the `id` in your scripts by an `id__2`. It means that if you want to be `multi_instance`, you have to put all the identifiers in the scripts. 
-<br><br>**E.g.** In my roundcube script, I have to call my database `roundcube`, my install directory `roundcube` and my Nginx configuration `roundcube`. This way, the second instance of roundcube will not conflict, and will be installed in the `roundcube__2` database, in the `roundcube__2`directory, and with the `roundcube__2` Nginx configuration.
+* **multi_instance** : This defines your app's ability to be installed multiple times. When YunoHost tries to install a second instance of your app, it will replace the `id` in your scripts by an `id__2`. It means that, if you want to be `multi_instance`, you have to put all the identifiers in the scripts. 
+<br><br>**E.g.** In my roundcube script, I have to call my database `roundcube`, my install directory `roundcube` and my nginx configuration `roundcube`. This way, the second instance of roundcube will not conflict, and will be installed in the `roundcube__2` database, in the `roundcube__2`directory, and with the `roundcube__2` nginx configuration.
 
-* **arguments** : The settings to ask to the YunoHost's administrator at installation. You have to set a `name` (for argument identification), and a question in `ask` (at least in `en`) that you can translate like the description above. You can also set a `default` value and an `example` to help administrator to fill the input.
+* **arguments** : The settings for the YunoHost's administrator to enter at installation. You have to set a `name` (for argument identification), and a question in `ask` (at least in `en`) that you can translate like the description above. You can also set a `default` value and an `example` to help administrator to fill the input.
 
 ## Scripts
 
@@ -111,28 +111,28 @@ sed -i "s@PATHTOCHANGE@$path@g" ../conf/nginx.conf
 sed -i "s@ALIASTOCHANGE@$final_path/@g" ../conf/nginx.conf
 sudo cp ../conf/nginx.conf /etc/nginx/conf.d/$domain.d/roundcube.conf
 
-# Reload Nginx and regenerate SSOwat conf
+# Reload nginx and regenerate SSOwat conf
 sudo service nginx reload
 sudo yunohost app ssowatconf
 ```
 
 ### Usage
-You have to put everything in the script in order to install your app flawlessly. It means that you have to install dependencies, create required repositories, initialize potential databases, copy sources and configure everything in the single `install` script (and of course do the reverse process in the `remove` script).
+You have to put everything in the script in order for the app to install without issue. It means that you have to install dependencies, create required repositories, initialize potential databases, copy sources and configure everything in the single `install` script (and of course do the reverse process in the `remove` script).
 
-**Be careful** : For security reason, the script is executed as **admin** user in YunoHost. Be sure to test it as **admin** and prepend `sudo` to requiring commands.
+**Be careful** : For security reasons, the script is executed as the **admin** user in YunoHost. Be sure to test it as **admin** and prepend `sudo` to commands that require it.
 
 ### Architecture and arguments
-Since YunoHost has a unified architecture, you will be able to guess most of the settings you need. But if you need variable ones, like domain or web path to configure your app, you will have to ask the administrator at installation (see `arguments` section in the manifest above).
+Since YunoHost has a unified architecture, you will be able to guess most of the settings you need. But if you need variable ones, like the domain or web path, you will have to ask the administrator at installation (see `arguments` section in the manifest above).
 
-**Note**: The arguments will be passed in the manifest's order to the script. For example for **roundcube**, the `domain` argument will be referenced as `$1` in the script, and `path` as `$2`.
+**Note**: The arguments will be passed in the order that they appear in the manifest. For example for **roundcube**, the `domain` argument will be referenced as `$1` in the script, and `path` as `$2`.
 
 ### Hooks
-YunoHost provides a hook system which consist in packager's script callbacks in the moulinette (CLI).
-The scripts has to be placed in the `hooks` repository at the root of the YunoHost package, and has to be named `priority-hook_name`, for example: `hooks/50-post_user_create` will be executed after each user creation.
+YunoHost provides a hook system, which is accessible via the packager's script callbacks in moulinette (CLI).
+The scripts have to be placed in the `hooks` repository at the root of the YunoHost package, and must be named `priority-hook_name`, for example: `hooks/50-post_user_create` will be executed after each user creation.
 
 **Note**: `priority` is optional, default is `50`.
 
-Take a look at the [OwnCloud package](https://github.com/Kloadut/owncloud_ynh) for a working example.
+Take a look at the [ownCloud package](https://github.com/Kloadut/owncloud_ynh) for a working example.
 
 ### Helpers
 The CLI [moulinette](#/moulinette) provides a few tools to make the packager's work easier:
@@ -143,7 +143,7 @@ The CLI [moulinette](#/moulinette) provides a few tools to make the packager's w
 sudo yunohost app checkport <port>
 ```
 <blockquote>
-This helper checks the port and return an error if the port is already in use.
+This helper checks the port and returns an error if the port is already in use.
 </blockquote>
 
 <br>
@@ -174,7 +174,7 @@ This helper is useful for web apps and allows you to be sure that the web path i
 sudo yunohost app initdb <db_user> [ -p <db_pwd> ] [ -s <SQL_file> ]
 ```
 <blockquote>
-This helper creates a MySQL database. If you do not append a password, it generates one and returns it. If you append a SQL file, it initializes you database with the SQL statements inside.
+This helper creates a MySQL database. If you do not append a password, it generates one and returns it. If you append a SQL file, it initializes your database with the SQL statements inside.
 </blockquote>
 
 <br>
@@ -186,13 +186,13 @@ sudo yunohost app ssowatconf
 This helper reloads the SSO configuration. You have to call it at the end of the script when you are packaging a web app.
 </blockquote>
 
-### Test it !
-In order to test your app package, you can execute your script standalone as `admin` (do not forget to append required arguments):
+### Test it!
+In order to test your package, you can execute your script standalone as `admin` (do not forget to append required arguments):
 ```bash
 su - admin -c "/bin/bash /path/to/my/script my_arg1 my_arg2"
 ```
 
-Or you can use the moulinette:
+Or you can use moulinette:
 ```bash
 yunohost app install /path/to/my/app/package
 ```

@@ -4,7 +4,7 @@
 
 ##yunohost
 
-la command de base est yunohost
+The command to manage YunoHost from the command line:
 ```bash
 usage: yunohost [-h] [-v]
 
@@ -22,14 +22,14 @@ positional arguments:
     tools               Specific tools
 
 optional arguments:
-  -h, --help            show this help message and exit
+  -h, --help            Show this help message and exit
   -v, --version         Display moulinette version
 ```
 
 ### domain
 ```bash
 yunohost domain [-h] {info,add,list,remove}
-    info                Get domain informations
+    info                Get domain information
     add                 Create a custom domain
     list                List domains
     remove              Delete domains
@@ -43,7 +43,7 @@ yunohost monitor [-h] {enable,network,show-stats,update-stats,disk,system,disabl
     show-stats          Show monitoring statistics
     update-stats        Update monitoring statistics
     disk                Monitor disk space and usage
-    system              Monitor system informations and usage
+    system              Monitor system information and usage
     disable             Disable server monitoring
 ```
 
@@ -54,7 +54,7 @@ yunohost service [-h] {status,start,enable,log,stop,disable}
                         (all by default)
     start               Start one or more services
     enable              Enable one or more services
-    log                 Log every log files of a service
+    log                 Log every log file of a service
     stop                Stop one or more services
     disable             Disable one or more services
 ```
@@ -62,20 +62,20 @@ yunohost service [-h] {status,start,enable,log,stop,disable}
 ### firewall
 ```bash
 yunohost firewall [-h]{installupnp,checkupnp,list,stop,disallow,reload,allow,removeupnp}
-    installupnp         Add upnp cron
-    checkupnp           check if UPNP is install or not (0 yes 1 no)
+    installupnp         Add uPnP cron
+    checkupnp           Check if uPnP is installed or not (0 yes 1 no)
     list                List all firewall rules
     stop                Stop iptables and ip6tables
     disallow            Disallow connection
     reload              Reload all firewall rules
     allow               Allow connection port/protocol
-    removeupnp          Remove upnp cron
+    removeupnp          Remove uPnP cron
 ```
 
 ### backup
 ```bash
 yunohost backup [-h] {init} ...
-    init      Init Tahoe-LAFS configuration
+    init      Initialize Tahoe-LAFS configuration
 ```
 
 ### app
@@ -95,17 +95,17 @@ yunohost app [-h]
     checkurl            Check availability of a web path
     list                List apps
     remove              Remove app
-    removeaccess        Revoke access right to users (everyone by default)
-    setting             Set ou get an app setting value
+    removeaccess        Revoke access rights to users (everyone by default)
+    setting             Set or get an app setting value
     initdb              Create database and initialize it with optionnal
                         attached script
-    addaccess           Grant access right to users (everyone by default)
+    addaccess           Grant access rights to users (everyone by default)
 ```
 
 ### hook
 ```bash
 yunohost hook [-h] {callback,add,check,remove,exec} ...
-    callback            Execute all scripts binded to an action
+    callback            Execute all scripts bound to an action
     add                 Store hook script to filesystem
     check               Parse the script file and get arguments
     remove              Remove hook scripts from filesystem
@@ -116,7 +116,7 @@ yunohost hook [-h] {callback,add,check,remove,exec} ...
 ```bash
 yunohost dyndns [-h] {subscribe,update,installcron,removecron} ...
     subscribe           Subscribe to a DynDNS service
-    update              Update IP on DynDNS platform
+    update              Update IP on a DynDNS platform
     installcron         Install IP update cron
     removecron          Remove IP update cron
 ```
@@ -124,10 +124,10 @@ yunohost dyndns [-h] {subscribe,update,installcron,removecron} ...
 ### user
 ```bash
 yunohost user [-h] {info,create,list,update,delete} ...
-    info                Get user informations
+    info                Get user information
     create              Create user
     list                List users
-    update              Update user informations
+    update              Update user information
     delete              Delete user
 ```
 
