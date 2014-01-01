@@ -19,13 +19,13 @@ border-radius: 5px; border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 5px 15px r
 
 ### <blockquote>Features</blockquote>
 
-By default, YunoHost provides a secure solution to manage your mail & instant messaging addresses with ease, using nice interfaces. 
+By default, YunoHost provides a secure solution to manage your mail & instant messaging addresses with ease, while using nice interfaces. 
 
-You will also be able to extend your server's capabilities by installing [**apps**](#/apps) in one click.
+You will also be able to extend your server's capabilities by installing [**apps**](#/apps) with one click.
 
-### <blockquote>Softwares</blockquote>
+### <blockquote>Software</blockquote>
 
-Based on [Debian GNU/Linux](http://www.debian.org/index.en.html) (wheezy), YunoHost is brought with the following free softwares:
+Based on [Debian GNU/Linux](http://www.debian.org/index.en.html) (wheezy), YunoHost comes with the following free software:
 * [Nginx](http://nginx.org/)
 * [Postfix](http://www.postfix.org/)
 * [Metronome](http://www.lightwitch.org/metronome)
@@ -38,13 +38,13 @@ Based on [Debian GNU/Linux](http://www.debian.org/index.en.html) (wheezy), YunoH
 * [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs)
 * [SSOwat](https://github.com/Kloadut/SSOwat)
 
-YunoHost automatically configures all these softwares at installation, unifying their usage through a [web interface](#/admin) or via the command-line interface called "[moulinette](#/moulinette)".
+YunoHost automatically configures all these of applications at installation, unifying their usage through a [web interface](#/admin) or via the command-line interface called "[moulinette](#/moulinette)".
 
 ### <blockquote>Security</blockquote>
 
 Every protocol used in YunoHost is secured by default. You will get a self-signed certificate automatically for every served domain.
 
-Moreover, all the softwares used in YunoHost are known free and open-source projects, meaning that they are less likely vulnerables to security flaws.
+Moreover, all of the software used in YunoHost is composed of known free and open-source projects, meaning that they are less likely to be vulnerable to security flaws.
 
 A firewall is also deployed at installation, protecting you from undesirable and dangerous connections.
 
