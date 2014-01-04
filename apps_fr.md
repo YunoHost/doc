@@ -84,4 +84,8 @@ $(document).ready(function () {
 * [PluXML](http://www.pluxml.org/)
 * [Piwigo](http://piwigo.org)
 * [phpMyAdmin](http://www.phpmyadmin.net/home_page/index.php)
+* [Leed](http://projet.idleman.fr/leed/)
+* [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
+* [LimeSurvey](http://www.limesurvey.com/)
+* [Movim](http://www.movim.eu/)
 
