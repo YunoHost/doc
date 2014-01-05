@@ -68,11 +68,11 @@ $(document).ready(function () {
 | Nom | Packageur | État d'avancement | URL du git |
 | --- | --- | --- | --- |
 | Firefox Sync | beudbeud | En cours | https://github.com/abeudin/ffsync_ynh |
-| OpenID | julien | En test | https://github.com/julienmalik/openid-simplesamlphp_ynh |
-| Shaarli | julien | En test | https://github.com/julienmalik/shaarli_ynh |
+| OpenID | julien | En cours | https://github.com/julienmalik/openid-simplesamlphp_ynh |
+| Shaarli | julien | En cours | https://github.com/julienmalik/shaarli_ynh |
 | OpenVPN | Kload | En test | https://github.com/Kloadut/openvpn_ynh |
 | ZeroBin | julien | En test | https://github.com/julienmalik/zerobin_ynh |
-| CalDAVZap | julien | En test | https://github.com/julienmalik/caldavzap_ynh |
+| CalDAVZap | julien | En cours | https://github.com/julienmalik/caldavzap_ynh |
 
 ### À intégrer
 
