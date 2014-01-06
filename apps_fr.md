@@ -77,6 +77,7 @@ $(document).ready(function () {
 ### À intégrer
 
 * [Etherpad lite](http://etherpad.org/)
+* [Ethercalc](http://ethercalc.net/) / [Ethersheet](https://ethersheet.org/)
 * [Sympa](http://www.sympa.org/)
 * [OpenSondage](https://github.com/framasoft/OpenSondage) (framadate)
 * [Poche](http://www.inthepoche.com/)
