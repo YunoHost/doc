@@ -89,4 +89,5 @@ $(document).ready(function () {
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
 * [LimeSurvey](http://www.limesurvey.com/)
 * [Movim](http://www.movim.eu/)
+* [KiwiIRC](http://kiwiirc.com/)
 
