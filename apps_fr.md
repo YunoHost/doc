@@ -72,7 +72,7 @@ $(document).ready(function () {
 | Shaarli | julien | En cours | https://github.com/julienmalik/shaarli_ynh |
 | OpenVPN | Kload | En test | https://github.com/Kloadut/openvpn_ynh |
 | ZeroBin | julien | En test | https://github.com/julienmalik/zerobin_ynh |
-| CalDAVZap | julien | En cours | https://github.com/julienmalik/caldavzap_ynh |
+| CalDAVZap | julien | Abandonné | https://github.com/julienmalik/caldavzap_ynh |
 | AgenDAV | julien | En test | https://github.com/julienmalik/agendav_ynh |
 
 ### À intégrer
