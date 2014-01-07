@@ -73,6 +73,7 @@ $(document).ready(function () {
 | OpenVPN | Kload | En test | https://github.com/Kloadut/openvpn_ynh |
 | ZeroBin | julien | En test | https://github.com/julienmalik/zerobin_ynh |
 | CalDAVZap | julien | En cours | https://github.com/julienmalik/caldavzap_ynh |
+| AgenDAV | julien | En test | https://github.com/julienmalik/agendav_ynh |
 
 ### À intégrer
 
@@ -91,5 +92,4 @@ $(document).ready(function () {
 * [LimeSurvey](http://www.limesurvey.com/)
 * [Movim](http://www.movim.eu/)
 * [KiwiIRC](http://kiwiirc.com/)
-* [agendav](http://agendav.org/)
 
