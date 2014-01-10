@@ -92,4 +92,5 @@ $(document).ready(function () {
 * [LimeSurvey](http://www.limesurvey.com/)
 * [Movim](http://www.movim.eu/)
 * [KiwiIRC](http://kiwiirc.com/)
+* [Piwik](http://piwik.org/)
 
