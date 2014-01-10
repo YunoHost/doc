@@ -100,3 +100,5 @@ $(document).ready(function () {
 * [Subsonic](http://www.subsonic.org)
 * [DokuWiki](https://www.dokuwiki.org/dokuwiki)
 * [MediaWiki](http://www.mediawiki.org)
+* [Sick Beard](http://sickbeard.com)
+* [Yourls](http://yourls.org)
