@@ -74,7 +74,7 @@ $(document).ready(function () {
 | ZeroBin | julien | En test | https://github.com/julienmalik/zerobin_ynh |
 | CalDAVZap | julien | Abandonné | https://github.com/julienmalik/caldavzap_ynh |
 | AgenDAV | julien | En test | https://github.com/julienmalik/agendav_ynh |
-| Etherpad-Lite | beudbeudn | En dev | https://github.com/abeudin/etherpadlite_ynh |
+| Etherpad-Lite | beudbeud | En dev | https://github.com/abeudin/etherpadlite_ynh |
 
 ### À intégrer
 
