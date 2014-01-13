@@ -75,6 +75,7 @@ $(document).ready(function () {
 | CalDAVZap | julien | Abandonné | https://github.com/julienmalik/caldavzap_ynh |
 | AgenDAV | julien | En test | https://github.com/julienmalik/agendav_ynh |
 | Etherpad-Lite | beudbeud | En dev | https://github.com/abeudin/etherpadlite_ynh |
+| Jirafeau | julien | En test | https://github.com/julienmalik/jirafeau_ynh |
 
 ### À intégrer
 
