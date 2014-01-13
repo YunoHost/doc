@@ -6,10 +6,11 @@ Avec un navigateur web, si Transmission est installé sur `https://votre-domaine
 
 ### Comment télécharger un répertoire entier
 
-Il faut archiver le répertoire. Pour cela il y a :
-* tar : http://doc.ubuntu-fr.org/tar#utilisation_tar_seulconcatenation_de_fichiers
-* zip : http://doc.ubuntu-fr.org/zip
-
+Pour cela il faut se placer dans le répertoire de téléchargemement et archiver le répertoire :
+```bah
+cd /home/yunohost.transmission/completed
+zip -r votre_archive.zip [dossier]
+```
 ### Transfert de fichier de son ordinateur de bureau vers YunoHost pour partager
 
 Dans YunoHost, les torrent completés sont enregistrer dans :
