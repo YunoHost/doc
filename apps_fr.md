@@ -76,6 +76,7 @@ $(document).ready(function () {
 | AgenDAV | julien | En test | https://github.com/julienmalik/agendav_ynh |
 | Etherpad-Lite | beudbeud | En dev | https://github.com/abeudin/etherpadlite_ynh |
 | Jirafeau | julien | En test | https://github.com/julienmalik/jirafeau_ynh |
+| phpMyAdmin | julien | En cours | https://github.com/julienmalik/phpmyadmin_ynh |
 
 ### À intégrer
 
@@ -87,7 +88,6 @@ $(document).ready(function () {
 * [Ghost](http://ghost.org)
 * [PluXML](http://www.pluxml.org/)
 * [Piwigo](http://piwigo.org) / [openphoto](http://theopenphotoproject.org/)
-* [phpMyAdmin](http://www.phpmyadmin.net/home_page/index.php)
 * [Leed](http://projet.idleman.fr/leed/)
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
 * [LimeSurvey](http://www.limesurvey.com/)
@@ -95,7 +95,6 @@ $(document).ready(function () {
 * [KiwiIRC](http://kiwiirc.com/)
 * [Piwik](http://piwik.org/)
 * [Gitlab](http://gitlab.org/)
-* [Jyraphe](http://home.gna.org/jyraphe/)
 * [FileTea](https://filetea.me)
 * [10er10](https://github.com/dready92/10er10)
 * [Subsonic](http://www.subsonic.org)
