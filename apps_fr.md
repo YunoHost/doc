@@ -103,3 +103,4 @@ $(document).ready(function () {
 * [Sick Beard](http://sickbeard.com)
 * [Yourls](http://yourls.org)
 * FTP
+* [MyCryptoChat](http://mycryptochatphp.codeplex.com/)
