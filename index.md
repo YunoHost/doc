@@ -34,7 +34,6 @@ Based on [Debian GNU/Linux](http://www.debian.org/index.en.html) (wheezy), YunoH
 * [dspam](http://nuclearelephant.com/)
 * [Amavis](http://amavis.org/)
 * [Bind](https://www.isc.org/downloads/bind/)
-* [Samba](http://www.samba.org/)
 * [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs)
 * [SSOwat](https://github.com/Kloadut/SSOwat)
 
