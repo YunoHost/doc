@@ -77,6 +77,7 @@ $(document).ready(function () {
 | Etherpad-Lite | beudbeud | En dev | https://github.com/abeudin/etherpadlite_ynh |
 | Jirafeau | julien | En test | https://github.com/julienmalik/jirafeau_ynh |
 | phpMyAdmin | julien | En cours | https://github.com/julienmalik/phpmyadmin_ynh |
+| proFTPd | beudbeud | En dev | https://github.com/abeudin/proftpd_ynh.git |
 
 ### À intégrer
 
@@ -102,5 +103,4 @@ $(document).ready(function () {
 * [MediaWiki](http://www.mediawiki.org)
 * [Sick Beard](http://sickbeard.com)
 * [Yourls](http://yourls.org)
-* FTP
 * [MyCryptoChat](http://mycryptochatphp.codeplex.com/)
