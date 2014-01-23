@@ -7,11 +7,11 @@ Un paquet YunoHost ressemble à [ça](https://github.com/Kloadut/roundcube_ynh),
 
 * un fichier JSON `manifest.json`
 * un répertoire `scripts`, qui contient les scripts `install`, `remove` et `upgrade`
-* d'autres répertoires optionnels, comme `sources` ou `conf` si tu en a besoin
+* d'autres répertoires optionnels, comme `sources` ou `conf` si tu en as besoin
 
 
 ### Manifeste
-Le fichier `manifest.json` défini les constantes de l'application, un ensemble de valeurs dont YunoHost a besoin pour identifier l'application et l'installer correctement. Ça ressemble à ça :
+Le fichier `manifest.json` définit les constantes de l'application, un ensemble de valeurs dont YunoHost a besoin pour identifier l'application et l'installer correctement. Ça ressemble à ça :
 ```json
 {
     "name": "Roundcube",
@@ -56,7 +56,7 @@ Le fichier `manifest.json` défini les constantes de l'application, un ensemble 
 
 * **developer** : Quelques informations à propos du mainteneur de l'application.
 
-* **multi_instance** : Défini la possibilité de votre application a être installée plusieurs fois. Quand YunoHost essaie d'installer une seconde fois votre application, il remplaçera `id` dans votre scripts par un `id__2`. Cela signifie que si voulez être `multi_instance`, vous devez mettre toutes les valeurs identifiantes dans les scripts.
+* **multi_instance** : Définit la possibilité de votre application à être installée plusieurs fois. Quand YunoHost essaie d'installer une seconde fois votre application, il remplaçera `id` dans votre script par un `id__2`. Cela signifie que si voulez être `multi_instance`, vous devez mettre toutes les valeurs identifiantes dans les scripts.
 <br><br>**Par exemple**: Dans mon script roundcube, je dois nommer ma base de donnée `roundcube`, mon répertoire d'installation `roundcube` et ma configuration Nginx `roundcube`. De cette manière, la seconde installation de roundcube ne rentrera pas en conflit, et sera installée dans la base de donnée `roundcube__2`, dans le répertoire `roundcube__2`, et avec la configuration Nginx `roundcube__2`.
 
 * **arguments** : Les paramètres à demander aux administrateurs du serveur lors de l'installation. `name` est l'identifiant du paramètre, et `ask` la question à poser (au minimum en Anglais -- `en`) que vous pouvez traduire de la même manière que la description ci-dessus. Vous pouvez aussi proposer une valeur par défaut (`default`) et un exemple (`example`) pour aider l'administrateur à remplir le formulaire d’installation.
@@ -121,7 +121,7 @@ Vous devez tout mettre dans le script pour que votre application soit entièreme
 **Attention** : Pour des raisons de sécurité, le script est exécuté en tant qu'**admin** dans YunoHost. Assurez-vous de l'essayer en tant qu'**admin** et de préfixer `sudo` aux commandes requises.
 
 ### Architecture et arguments
-Comme les instances de YunoHost possèdent une architecture unifié, vous serez capable de deviner la plupart des réglages nécessaires. Mais si vous avez besoin de réglages spécifiques, comme le nom de domaine ou un chemin web pour configurer l’application, vous devrez demander aux administrateurs lors de l'installation (voir la section `arguments` dans **manifeste** ci-dessus).
+Comme les instances de YunoHost possèdent une architecture unifiée, vous serez capable de deviner la plupart des réglages nécessaires. Mais si vous avez besoin de réglages spécifiques, comme le nom de domaine ou un chemin web pour configurer l’application, vous devrez les demander aux administrateurs lors de l'installation (voir la section `arguments` dans **manifeste** ci-dessus).
 
 **Remarque** : Les arguments seront passés au script dans l'ordre du manifeste. Par exemple pour **roundcube**, l'argument `domain` sera passé en tant que `$1` dans le script, et  `path` en tant que `$2`.
 
@@ -143,9 +143,9 @@ Cette commande vérifie le port et retourne une erreur si le port déjà utilis�
 sudo yunohost app setting <id> <key> [ -v <value> ]
 ```
 <blockquote>
-C'est la commande la plus importante. Elle vous permet de stocker des réglages d'un application spécifique, afin de les réutiliser plus tard ou pour que YunoHost puisse se configurer automatiquement (par exemple pour le SSO).
+C'est la commande la plus importante. Elle vous permet de stocker des réglages d'une application spécifique, afin de les réutiliser plus tard (typiquement dans le script ```upgrade```) ou pour que YunoHost puisse se configurer automatiquement (par exemple pour le SSO).
 <br><br>
-La commande défini la valeur si vous ajoutez ```-v <valeur>```, sinon la récupère.
+La commande définit la valeur si vous ajoutez ```-v <valeur>```, sinon la récupère.
 </blockquote>
 
 <br>
@@ -154,7 +154,7 @@ La commande défini la valeur si vous ajoutez ```-v <valeur>```, sinon la récup
 sudo yunohost app checkurl <domain><path> -a <id>
 ```
 <blockquote>
-Cette commande est utile pour les applications Web et vous permet d'être sûr que le chemin n'est pas utilisé par une autre application. Si non, elle « réserve » le chemin.
+Cette commande est utile pour les applications Web et vous permet d'être sûr que le chemin n'est pas utilisé par une autre application. Si le chemin est inutilisé, elle le « réserve ».
 <br><br>
 **Remarque** : Ne pas préfixer par `http://` ou par `https://` dans le `<domain><path>`.
 </blockquote>
@@ -162,10 +162,17 @@ Cette commande est utile pour les applications Web et vous permet d'être sûr q
 <br>
 
 ```bash
-sudo yunohost app initdb <db_user> [ -p <db_pwd> ] [ -s <SQL_file> ]
+sudo yunohost app initdb [ -d  <db_name> ]  [ -s <SQL_file> ] [ -p <db_pwd> ] user
+<db_user> [ -p <db_pwd> ] [ -s <SQL_file> ]
 ```
 <blockquote>
-Cette commande crée une base de donnée MySQL. Si vous ne définissez pas de mot de passe avec `-p`, la commande en génère un et le retourne. Si vous ajoutez un fichier SQL avec `-s`, la commande initialise la base de donnée avec les commandes SQL du fichier.
+Cette commande crée une base de donnée `db_name` et un utilisateur `user` associé à cette base, possédant les permissions nécessaires à manipuler la base de donnée.
+<br>
+Si vous ne définissez pas de nom de base de donnée avec `-d <db_name>`, `user` est utilisé comme nom de base de donnée.
+<br>
+Si vous ne définissez pas de mot de passe avec `-p`, la commande en génère un et le retourne.
+<br>
+Si vous ajoutez un fichier SQL avec `-s`, la commande initialise la base de donnée avec les commandes SQL du fichier.
 </blockquote>
 
 <br>
