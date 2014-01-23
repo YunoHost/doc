@@ -1,6 +1,6 @@
 # Packaging d'applications
 
-Il quelques petites choses à connaître si vous voulez packager une application pour Yunohost.
+Il y a quelques petites choses à connaître si vous voulez packager une application pour Yunohost.
 
 ### Contenu
 Un paquet YunoHost ressemble à [ça](https://github.com/Kloadut/roundcube_ynh), et est composé de :
