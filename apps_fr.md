@@ -84,7 +84,7 @@ $(document).ready(function () {
 * [Ethercalc](http://ethercalc.net/) / [Ethersheet](https://ethersheet.org/)
 * [Sympa](http://www.sympa.org/)
 * [OpenSondage](https://github.com/framasoft/OpenSondage) (framadate)
-* [Poche](http://www.inthepoche.com/)
+* [Wallabag (ex-poche)](http://www.wallabag.org/)
 * [Mumble](http://mumble.sourceforge.net/)
 * [Ghost](http://ghost.org)
 * [PluXML](http://www.pluxml.org/)
