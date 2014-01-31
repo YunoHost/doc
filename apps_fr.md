@@ -78,6 +78,7 @@ $(document).ready(function () {
 | Jirafeau | julien | En test | https://github.com/julienmalik/jirafeau_ynh |
 | phpMyAdmin | julien | En cours | https://github.com/julienmalik/phpmyadmin_ynh |
 | proFTPd | beudbeud | En dev | https://github.com/abeudin/proftpd_ynh.git |
+| Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
 
 ### À intégrer
 
@@ -104,4 +105,3 @@ $(document).ready(function () {
 * [Sick Beard](http://sickbeard.com)
 * [Yourls](http://yourls.org)
 * [MyCryptoChat](http://mycryptochatphp.codeplex.com/)
-* [Lychee](http://lychee.electerious.com/)
