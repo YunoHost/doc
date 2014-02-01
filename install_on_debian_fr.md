@@ -19,17 +19,27 @@ Une machine, un VPS, ou un serveur dédié:
 ssh root@monserveur.org
 ```
 
-2. Installez git
+2. /!\ Pour Raspbian uniquement /!\
+
+A priori, le script doit supprimer l'utilisateur root.
+Sur une Raspbian, l'utilisateur root n'est pas activé par défaut.
+Pour ne pas avoir de message d'erreur et poursuivre l'installation de yunohost v2 beta3 sur un Raspberry Pi avec Raspbian, faire ces deux manipulations : activer l'utilisateur root et créez lui un mot de passe.
+```bash
+sudo -i
+passwd root
+```
+
+3. Installez git
 ```bash
 apt-get install git
 ```
 
-3. Clonez le répertoire du script d'installation YunoHost
+4. Clonez le répertoire du script d'installation YunoHost
 ```bash
 git clone https://github.com/YunoHost/install_script /tmp/install_script
 ```
 
-4. Exécutez le script
+5. Exécutez le script
 ```bash
 cd /tmp/install_script && ./install_yunohostv2
 ```
@@ -43,4 +53,3 @@ Lorsque l'installation se finit, le script vous propose de procéder à la post-
 2. **Mot de passe administrateur**: C’est le mot de passe qui vous permettra d’administrer votre instance YunoHost, **choisissez-le avec attention**, il ne doit pas être divulgué ni être devinable, sinon vous pourrez perdre votre système.
 
 La post-install se déroulera ensuite automatiquement et pourrez accéder à l'interface d'administration via **https://votre-domaine.org/ynhadmin**
-
