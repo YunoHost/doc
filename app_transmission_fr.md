@@ -13,7 +13,7 @@ zip -r votre_archive.zip [dossier]
 ```
 ### Transfert de fichier de son ordinateur de bureau vers YunoHost pour partager
 
-Dans YunoHost, les torrent completés sont enregistrer dans :
+Dans YunoHost, les torrent completés sont enregistré dans :
 /home/yunohost.transmission/completed
 
 Pour transferer le fichier entrez la commande suivante :
