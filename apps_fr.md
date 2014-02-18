@@ -85,7 +85,7 @@ $(document).ready(function () {
 * [Ethercalc](http://ethercalc.net/) / [Ethersheet](https://ethersheet.org/)
 * [Sympa](http://www.sympa.org/)
 * [OpenSondage](https://github.com/framasoft/OpenSondage) (framadate)
-* [Wallabag (ex-poche)](http://www.wallabag.org/)
+* [Wallabag](http://www.wallabag.org/)
 * [Mumble](http://mumble.sourceforge.net/)
 * [Ghost](http://ghost.org)
 * [PluXML](http://www.pluxml.org/)
@@ -107,4 +107,5 @@ $(document).ready(function () {
 * [MyCryptoChat](http://mycryptochatphp.codeplex.com/)
 * [Cops](http://blog.slucas.fr/fr/oss/calibre-opds-php-server)
 * [PHProxy](http://sourceforge.net/projects/poxy/)
+* [Coquelicot](https://coquelicot.potager.org/)
 
