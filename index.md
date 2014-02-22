@@ -10,7 +10,7 @@ border-radius: 5px; border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 5px 15px r
 <br>
 
 <div class="text-center" style="width: 23%; min-width: 130px; margin: 0 auto;">
-<a class="btn btn-primary btn-lg btn-block"  style="font-size: 1.5em" href="#/install">Install</a>
+<a class="btn btn-primary btn-lg btn-block"  style="font-size: 1.5em" href="/install">Install</a>
 </div>
 <p class="text-muted text-center"><small>YunoHost v2 • beta3</small></p>
 </div>
@@ -21,7 +21,7 @@ border-radius: 5px; border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 5px 15px r
 
 By default, YunoHost provides a secure solution to manage your mail & instant messaging addresses with ease, while using nice interfaces. 
 
-You will also be able to extend your server's capabilities by installing [**apps**](#/apps) with one click.
+You will also be able to extend your server's capabilities by installing [**apps**](/apps) with one click.
 
 ### <blockquote>Software</blockquote>
 
@@ -37,7 +37,7 @@ Based on [Debian GNU/Linux](http://www.debian.org/index.en.html) (wheezy), YunoH
 * [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs)
 * [SSOwat](https://github.com/Kloadut/SSOwat)
 
-YunoHost automatically configures all these of applications at installation, unifying their usage through a [web interface](#/admin) or via the command-line interface called "[moulinette](#/moulinette)".
+YunoHost automatically configures all these of applications at installation, unifying their usage through a [web interface](/admin) or via the command-line interface called "[moulinette](/moulinette)".
 
 ### <blockquote>Security</blockquote>
 

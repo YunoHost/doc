@@ -67,7 +67,7 @@ cd /tmp/install_script && ./install_yunohostv2
 
 Once the installation is complete, the script will ask you to proceed to the post-install configuration. This will ask you for a few options:
 
-1. **Domain name**: You must choose a domain name that will point at the IP address of your YunoHost instance. If you choose a name that ends with **.nohost.me** or **.noho.st**, the DNS configuration stage will be completed automatically and you will only need to wait for about 3 minutes for the installation to complete. If you opt for another domain name, you will need to have one purchased and [configured](#/dns) so it points at your **IP address**.
+1. **Domain name**: You must choose a domain name that will point at the IP address of your YunoHost instance. If you choose a name that ends with **.nohost.me** or **.noho.st**, the DNS configuration stage will be completed automatically and you will only need to wait for about 3 minutes for the installation to complete. If you opt for another domain name, you will need to have one purchased and [configured](/dns) so it points at your **IP address**.
 
 2. **Administrator password**: This is the password that you will need to administer your YunoHost instance, **choose it carefully**, it should not be given out or easily guessed, or else you might lose control of your system.
 

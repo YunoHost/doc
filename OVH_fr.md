@@ -17,7 +17,7 @@ N'oubliez pas le point à la fin de votre nom de domaine.
 
 Cette partie est à suivre que si votre IP est dynamique.
 
-Pour savoir si votre fournisseur d'accès internet vous fourni une IP dynamique [voir ici](#/isp_fr).
+Pour savoir si votre fournisseur d'accès internet vous fourni une IP dynamique [voir ici](/isp_fr).
 
 Commencez par créer un identifiant DynHost.
 

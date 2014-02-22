@@ -17,7 +17,7 @@
         <p><strong>Last update (UTC)</strong>: {app_update}</p>
         <p><strong>Maintainer</strong>: {app_maintainer} <small class="text-muted">({app_mail})</small></p>
         <p><strong>Git</strong>: {app_git} <small class="text-muted">({app_branch})</small></p>
-        <a href="#/app_{app_id}" target="_blank" class="btn btn-default">Documentation</a>
+        <a href="/app_{app_id}" target="_blank" class="btn btn-default">Documentation</a>
     </div>
   </div>
 </script>

@@ -126,7 +126,7 @@ Comme les instances de YunoHost possèdent une architecture unifiée, vous serez
 **Remarque** : Les arguments seront passés au script dans l'ordre du manifeste. Par exemple pour **roundcube**, l'argument `domain` sera passé en tant que `$1` dans le script, et  `path` en tant que `$2`.
 
 ### Commandes pratiques
-La CLI [moulinette](#/moulinette) fournit quelques outils pour rendre le packaging plus facile :
+La CLI [moulinette](/moulinette) fournit quelques outils pour rendre le packaging plus facile :
 
 <br>
 

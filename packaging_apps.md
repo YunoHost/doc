@@ -135,7 +135,7 @@ The scripts have to be placed in the `hooks` repository at the root of the YunoH
 Take a look at the [ownCloud package](https://github.com/Kloadut/owncloud_ynh) for a working example.
 
 ### Helpers
-The CLI [moulinette](#/moulinette) provides a few tools to make the packager's work easier:
+The CLI [moulinette](/moulinette) provides a few tools to make the packager's work easier:
 
 <br>
 

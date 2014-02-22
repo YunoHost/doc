@@ -10,7 +10,7 @@ border-radius: 5px; border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 5px 15px r
 <br>
 
 <div class="text-center" style="width: 23%; min-width: 130px; margin: 0 auto;">
-<a class="btn btn-primary btn-lg btn-block"  style="font-size: 1.5em" href="#/install_fr">Installer</a>
+<a class="btn btn-primary btn-lg btn-block"  style="font-size: 1.5em" href="/install_fr">Installer</a>
 <p class="text-muted text-center"><small>YunoHost v2 • beta3</small></p>
 </div>
 
@@ -20,7 +20,7 @@ border-radius: 5px; border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 5px 15px r
 
 YunoHost vous permet par défaut de gérer vos adresses mail et de messagerie instantanée via des interfaces simples d’utilisation et de manière sécurisée. 
 
-Vous pourrez également étendre les fonctionnalités via des [**apps**](#/apps_fr) installables en un click.
+Vous pourrez également étendre les fonctionnalités via des [**apps**](/apps_fr) installables en un click.
 
 
 ### <blockquote>Logiciels</blockquote>
@@ -37,7 +37,7 @@ Il est basé sur [Debian GNU/Linux](http://www.debian.org/index.fr.html) (wheezy
 * [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs)
 * [SSOwat](https://github.com/Kloadut/SSOwat)
 
-YunoHost configure tous ces logiciels automatiquement à l’installation, puis l’utilisation se fait via [l’interface admin](#/admin_fr) ou via la [moulinette](#/moulinette_fr) (CLI).
+YunoHost configure tous ces logiciels automatiquement à l’installation, puis l’utilisation se fait via [l’interface admin](/admin_fr) ou via la [moulinette](/moulinette_fr) (CLI).
 
 ### <blockquote>Sécurité</blockquote>
 

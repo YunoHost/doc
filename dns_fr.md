@@ -27,9 +27,9 @@ Plusieurs choix s'offrent à vous. Notez que vous pouvez cumuler ces solutions s
 **C'est la méthode recommandée si vous débutez.**
 
 2. Vous pouvez utiliser le service de DNS de votre **registar** (Gandi, OVH, BookMyName ou autre) pour configurer vos noms de domaine. Veuillez vous référer aux documentations spécifiques :
-    * [OVH](#/OVH_fr)
-    * [Gandi](#/Gandi_fr)
-    * [BookMyName](#/BookMyName_fr)
+    * [OVH](/OVH_fr)
+    * [Gandi](/Gandi_fr)
+    * [BookMyName](/BookMyName_fr)
 <br><br>**Attention**: Si vous choisissez ce mode de fonctionnement, vous aurez plus de flexibilité, mais rien ne sera automatique. Par exemple si vous souhaitez utiliser `webmail.mon-serveur.org`, vous devrez l'ajouter manuellement chez votre registar.
 
 3. Votre instance YunoHost possède un service DNS, ce qui veut dire qu'il configure automatiquement ses enregistrements DNS, et qu'il est possible de lui en déléguer la gestion. Pour ce faire, vous devez indiquer au **registar** que c'est votre instance YunoHost qui est le serveur DNS de votre nom de domaine.

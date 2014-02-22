@@ -2,7 +2,7 @@
 
 You have two ways to install Yunohost:
 
-1. [From a USB key or a CD-ROM](#/install)
+1. [From a USB key or a CD-ROM](/install)
 2. With the install script on an existing Debian system (guide below)
 
 ### Pre-requisite
@@ -38,8 +38,8 @@ cd /tmp/install_script && ./install_yunohostv2
 
 Once the installation is finished, the script will ask you for two options to complete the installation:
 
-1. **domain name**: Please choose the domain name which will point to your Yunohost IP. You can choose to use a subdomain of **nohost.me** or **noho.st**, in that case the DNS configuration will be automatic, you will just have to wait three minutes to the end of the post-install. Or you can use your own [properly configured domain name](#/dns)
+1. **domain name**: Please choose the domain name which will point to your Yunohost IP. You can choose to use a subdomain of **nohost.me** or **noho.st**, in that case the DNS configuration will be automatic, you will just have to wait three minutes to the end of the post-install. Or you can use your own [properly configured domain name](/dns)
 
 2. **administrator password**: this is the password to administer your Yunohost instance, **make it strong** and don't share it, without it you can lose access to your system.
 
-After the installation is complete, you will be able to access your administration [web interface](#/admin) **https://your-domain.org/ynhadmin**, or to administer your Yunohost via the command-line interface called "[moulinette](#/moulinette)".
+After the installation is complete, you will be able to access your administration [web interface](/admin) **https://your-domain.org/ynhadmin**, or to administer your Yunohost via the command-line interface called "[moulinette](/moulinette)".

@@ -2,7 +2,7 @@
 
 La moulinette est l'interface en ligne de commande (CLI) de YunoHost. Elle permet de gérer entièrement YunoHost: utilisateurs, domaines, apps, pare-feu, sauvegardes et monitoring.
 
-L’autre interface est l’[administration Web](#/admin_fr), qui permet de se passer de la ligne de commande.
+L’autre interface est l’[administration Web](/admin_fr), qui permet de se passer de la ligne de commande.
 
 ### Utilisation
 
