@@ -28,4 +28,16 @@ If this step is not successful, you probably have a connection problem. Check th
 
 ### Post Installation
 
-**TODO**
+Your hardware should automatically reboot after installation. At the end of the reboot, your freshly installed YunoHost system should display the IP address of your server and a proposal for post-installation: proceed to post-installation.
+
+You can then either:
+* Login to http://xxxx (xxxx is your IP address) from another machine and follow the instructions post installation.
+* Run the post-installation commandline by typing the enter key on your server.
+
+Two parameters will be required:
+
+1. Domain Name: You must choose a domain name that points to the IP address of your YunoHost instance. If you choose a domain name ending with .nohost.me or .noho.st, the DNS configuration step is automatically done and you'll only have to wait 3 minutes at the end of the post-installation. If you opt for another domain name, you must previously have purchased and configured it to point to your IP address.
+
+2. Administrator Password: This is the password that will allow you to manage your YunoHost instance, **choose it carefully**, it must not be disclosed or be guessable, otherwise you can lose your system.
+
+The post-install process will then be automatic and you will have access to the administration interface via **https://votre-domaine.org/ynhadmin**
