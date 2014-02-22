@@ -1,31 +1,30 @@
 #YunoHost <small>is a server operating system aiming to make self-hosting accessible to everyone.</small>
 
-<br>
+<br />
 
-<div style="width: 100%; height: 290px; overflow: hidden;
-border-radius: 5px; border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 5px 15px rgba(0,0,0,0.15);">
-<img style="width: 100%; min-width: 580px;" src="http://pix.toile-libre.org/upload/original/1388434791.jpg">
+<div style="width: 100%; height: 290px; overflow: hidden; border-radius: 5px; border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 5px 15px rgba(0,0,0,0.15);">
+<img style="width: 100%; min-width: 580px;" src="http://pix.toile-libre.org/upload/original/1388434791.jpg" />
 </div>
 
-<br>
+<br />
 
 <div class="text-center" style="width: 23%; min-width: 130px; margin: 0 auto;">
 <a class="btn btn-primary btn-lg btn-block"  style="font-size: 1.5em" href="/install">Install</a>
-</div>
 <p class="text-muted text-center"><small>YunoHost v2 • beta3</small></p>
 </div>
 
-<hr>
+<hr />
 
-### <blockquote>Features</blockquote>
+<h3><blockquote>Features</blockquote></h3>
 
 By default, YunoHost provides a secure solution to manage your mail & instant messaging addresses with ease, while using nice interfaces. 
 
 You will also be able to extend your server's capabilities by installing [**apps**](/apps) with one click.
 
-### <blockquote>Software</blockquote>
+<h3><blockquote>Software</blockquote></h3>
 
 Based on [Debian GNU/Linux](http://www.debian.org/index.en.html) (wheezy), YunoHost comes with the following free software:
+
 * [Nginx](http://nginx.org/)
 * [Postfix](http://www.postfix.org/)
 * [Metronome](http://www.lightwitch.org/metronome)
@@ -39,7 +38,7 @@ Based on [Debian GNU/Linux](http://www.debian.org/index.en.html) (wheezy), YunoH
 
 YunoHost automatically configures all these of applications at installation, unifying their usage through a [web interface](/admin) or via the command-line interface called "[moulinette](/moulinette)".
 
-### <blockquote>Security</blockquote>
+<h3><blockquote>Security</blockquote></h3>
 
 Every protocol used in YunoHost is secured by default. You will get a self-signed certificate automatically for every served domain.
 
@@ -49,8 +48,13 @@ A firewall is also deployed at installation, protecting you from undesirable and
 
 
 <br>
-<div class="text-center"><img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />
-<p>[Github](https://github.com/YunoHost) <b>/</b> [FAQ](https://ask.yunohost.org) <b>/</b> [Translate](https://translate.yunohost.org/) <b>/</b> [Old Wiki](http://wiki.yunohost.org) </p>
+
+<div class="text-center">
+<img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />
+
+<p markdown="1">
+[Github](https://github.com/YunoHost) **/** [FAQ](https://ask.yunohost.org) **/** [Translate](https://translate.yunohost.org/) **/** [Old Wiki](http://wiki.yunohost.org)
+</p>
 </div>
 
 <script type="text/javascript">

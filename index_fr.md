@@ -1,31 +1,32 @@
-#YunoHost <small> est un outil qui vous permet d’installer et d’utiliser facilement votre propre serveur.</small>
+# YunoHost <small> est un outil qui vous permet d’installer et d’utiliser facilement votre propre serveur.</small>
 
-<br>
+<br />
 
 <div style="width: 100%; height: 290px; overflow: hidden;
 border-radius: 5px; border: 1px solid rgba(0,0,0,0.15); box-shadow: 0 5px 15px rgba(0,0,0,0.15);">
-<img style="width: 100%; min-width: 580px;" src="http://pix.toile-libre.org/upload/original/1388434791.jpg">
+<img style="width: 100%; min-width: 580px;" src="http://pix.toile-libre.org/upload/original/1388434791.jpg" />
 </div>
 
-<br>
+<br />
 
 <div class="text-center" style="width: 23%; min-width: 130px; margin: 0 auto;">
 <a class="btn btn-primary btn-lg btn-block"  style="font-size: 1.5em" href="/install_fr">Installer</a>
 <p class="text-muted text-center"><small>YunoHost v2 • beta3</small></p>
 </div>
 
-<hr>
+<hr />
 
-### <blockquote>Fonctionnalités</blockquote>
+<h3><blockquote>Fonctionnalités</blockquote></h3>
 
-YunoHost vous permet par défaut de gérer vos adresses mail et de messagerie instantanée via des interfaces simples d’utilisation et de manière sécurisée. 
+YunoHost vous permet par défaut de gérer vos adresses mail et de messagerie instantanée via des interfaces simples d’utilisation et de manière sécurisée.
 
 Vous pourrez également étendre les fonctionnalités via des [**apps**](/apps_fr) installables en un click.
 
 
-### <blockquote>Logiciels</blockquote>
+<h3><blockquote>Logiciels</blockquote></h3>
 
 Il est basé sur [Debian GNU/Linux](http://www.debian.org/index.fr.html) (wheezy) et se compose des logiciels libres suivants :
+
 * [Nginx](http://nginx.org/)
 * [Postfix](http://www.postfix.org/)
 * [Metronome](http://www.lightwitch.org/metronome)
@@ -39,7 +40,7 @@ Il est basé sur [Debian GNU/Linux](http://www.debian.org/index.fr.html) (wheezy
 
 YunoHost configure tous ces logiciels automatiquement à l’installation, puis l’utilisation se fait via [l’interface admin](/admin_fr) ou via la [moulinette](/moulinette_fr) (CLI).
 
-### <blockquote>Sécurité</blockquote>
+<h3><blockquote>Sécurité</blockquote></h3>
 
 Tous les protocoles utilisés par YunoHost sont sécurisés par défaut. Vous disposez d’un certificat auto-signé pour chaque domaine géré par votre serveur.
 
@@ -47,9 +48,11 @@ Par ailleurs tous les logiciels composant YunoHost sont libres, connus, utilisé
 
 Un pare-feu est également déployé dès l’installation, vous protégeant contre les connexions indésirables et dangereuses.
 
-<br>
+<br />
 <div class="text-center"><img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />
-<p>[Github](https://github.com/YunoHost) <b>/</b> [FAQ](https://ask.yunohost.org) <b>/</b> [Traduction](https://translate.yunohost.org/) <b>/</b> [Ancien Wiki](http://wiki.yunohost.org) </p>
+<p markdown="1">
+[Github](https://github.com/YunoHost) **/** [FAQ](https://ask.yunohost.org) **/** [Traduction](https://translate.yunohost.org/) **/** [Ancien Wiki](http://wiki.yunohost.org)
+</p>
 </div>
 
 <script type="text/javascript">
