@@ -63,8 +63,8 @@ A firewall is also deployed at installation, protecting you from undesirable and
       MINI_GROUPCHATS = ["support@conference.yunohost.org"];
       HOST_ANONYMOUS = "yunohost.org";
       HOST_MUC = "conference.yunohost.org";
-      HOST_BOSH = "https://yunohost.org/http-bind/";
-      HOST_BOSH_MINI = "https://yunohost.org/http-bind/";
+      HOST_BOSH = "http://yunohost.org/http-bind/";
+      HOST_BOSH_MINI = "http://yunohost.org/http-bind/";
       LOCK_HOST = 'on';
       MINI_ANIMATE = true;
       MINI_ANONYMOUS = true;
