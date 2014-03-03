@@ -75,7 +75,7 @@ $(document).ready(function () {
 | AgenDAV | julien | En test | https://github.com/julienmalik/agendav_ynh |
 | Etherpad-Lite | beudbeud | En dev | https://github.com/abeudin/etherpadlite_ynh |
 | Jirafeau | julien | En test | https://github.com/julienmalik/jirafeau_ynh |
-| phpMyAdmin | julien | En cours | https://github.com/julienmalik/phpmyadmin_ynh |
+| phpMyAdmin | julien | En test | https://github.com/julienmalik/phpmyadmin_ynh |
 | proFTPd | beudbeud | En dev | https://github.com/abeudin/proftpd_ynh.git |
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
 
