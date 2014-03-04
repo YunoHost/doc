@@ -106,4 +106,5 @@ $(document).ready(function () {
 * [MyCryptoChat](http://mycryptochatphp.codeplex.com/)
 * [Cops](http://blog.slucas.fr/fr/oss/calibre-opds-php-server)
 * [PHProxy](http://sourceforge.net/projects/poxy/)
+* [GPodder](https://gpodder.net)
 
