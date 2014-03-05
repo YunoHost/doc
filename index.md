@@ -59,16 +59,27 @@ A firewall is also deployed at installation, protecting you from undesirable and
 
 <script type="text/javascript">
     jQuery.ajaxSetup({cache: true});
-    jQuery.getScript("https://doc.yunohost.org/jappix-en.js", function() {
-      MINI_GROUPCHATS = ["support@conference.yunohost.org"];
-      HOST_ANONYMOUS = "yunohost.org";
-      HOST_MUC = "conference.yunohost.org";
-      HOST_BOSH = "https://yunohost.org/http-bind/";
-      HOST_BOSH_MINI = "https://yunohost.org/http-bind/";
-      LOCK_HOST = 'on';
-      MINI_ANIMATE = true;
-      MINI_ANONYMOUS = true;
-      launchMini(false, true, 'yunohost.org');
+    jQuery.getScript('https://doc.yunohost.org/mini/javascripts/mini.js', function() {
+        JappixMini.launch({
+            connection: {
+              domain: 'anonymous.jappix.com'
+            },
+
+            application: {
+              network: {
+                autoconnect: false
+              },
+
+              interface: {
+                showpane: true,
+                animate: true
+              },
+
+              groupchat: {
+                open: ['support@conference.yunohost.org']
+              }
+            }
+        });
     });
     $("#edit").hide();
 </script>

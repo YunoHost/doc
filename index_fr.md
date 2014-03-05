@@ -50,6 +50,7 @@ Un pare-feu est également déployé dès l’installation, vous protégeant con
 
 <br />
 <div class="text-center"><img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />
+
 <p markdown="1">
 [Github](https://github.com/YunoHost) **/** [FAQ](https://ask.yunohost.org) **/** [Traduction](https://translate.yunohost.org/) **/** [Ancien Wiki](http://wiki.yunohost.org)
 </p>
@@ -57,16 +58,27 @@ Un pare-feu est également déployé dès l’installation, vous protégeant con
 
 <script type="text/javascript">
     jQuery.ajaxSetup({cache: true});
-    jQuery.getScript("https://doc.yunohost.org/jappix-fr.js", function() {
-      MINI_GROUPCHATS = ["support@conference.yunohost.org"];
-      HOST_ANONYMOUS = "yunohost.org";
-      HOST_MUC = "conference.yunohost.org";
-      HOST_BOSH = "https://yunohost.org/http-bind/";
-      HOST_BOSH_MINI = "https://yunohost.org/http-bind/";
-      LOCK_HOST = 'on';
-      MINI_ANIMATE = true;
-      MINI_ANONYMOUS = true;
-      launchMini(false, true, 'yunohost.org');
+    jQuery.getScript('https://doc.yunohost.org/mini/javascripts/mini.js', function() {
+        JappixMini.launch({
+            connection: {
+              domain: 'anonymous.jappix.com'
+            },
+
+            application: {
+              network: {
+                autoconnect: false
+              },
+
+              interface: {
+                showpane: true,
+                animate: true
+              },
+
+              groupchat: {
+                open: ['support@conference.yunohost.org']
+              }
+            }
+        });
     });
     $("#edit").hide();
 </script>
