@@ -58,11 +58,12 @@ A firewall is also deployed at installation, protecting you from undesirable and
 </div>
 
 <script type="text/javascript">
-    jQuery.ajaxSetup({cache: true});
+    jQuery.ajaxSetup({cache: false});
     jQuery.getScript('https://doc.yunohost.org/mini/javascripts/mini.js', function() {
+        HOST_BOSH = 'https://doc.yunohost.org/http-bind/';
         JappixMini.launch({
             connection: {
-              domain: 'anonymous.jappix.com'
+              domain: 'anonymous.yunohost.org'
             },
 
             application: {
