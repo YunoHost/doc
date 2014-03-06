@@ -12,6 +12,7 @@
 * Test and upgrade official apps like Owncloud, Roundcube and Radicale *(packagers)*
 * Add warning in a sample backup view *(opi)*
 * SFTP *(kload)*
+* DNS zone fix *(kload)*
 * Security check and complete patterns
 * Add sexiness and a menu to YunoHost.org frontpage *(kload)*
 * **DOCUMENTATIONNNNNNN** *(everyone <3)*
