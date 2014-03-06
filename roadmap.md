@@ -2,7 +2,7 @@
 
 ---
 
-## v2.0
+## v2.0 RC
 
 * User interface design *(Courgette, opi)*
 * uPnP rework *(kload, titoko)*
@@ -15,9 +15,12 @@
 * DNS zone fix *(kload)*
 * SSOwat stuffs (presistent rules, public root website) *(kload)*
 * Security check and complete patterns
-* Add sexiness and a menu to YunoHost.org frontpage *(kload)*
 * Upgrade function + view *(beudbeud, opi)*
 * I18n *(opi, jerome)*
+
+## v2.0
+
+* Add sexiness and a menu to YunoHost.org frontpage *(kload)*
 * **DOCUMENTATIONNNNNNN** *(everyone <3)*
 
 ## v2.1
