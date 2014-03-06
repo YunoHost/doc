@@ -16,7 +16,8 @@
 * SSOwat stuffs (presistent rules, public root website) *(kload)*
 * Security check and complete patterns
 * Add sexiness and a menu to YunoHost.org frontpage *(kload)*
-* Upgrade function + view (beudbeud, opi)
+* Upgrade function + view *(beudbeud, opi)*
+* I18n *(opi, jerome)*
 * **DOCUMENTATIONNNNNNN** *(everyone <3)*
 
 ## v2.1
