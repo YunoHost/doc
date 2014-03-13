@@ -196,7 +196,7 @@
 </div>
 
 <div class="col-md-7 text-right">
-<h1>Explorez <small>les possibilités de votre serveur, et pourquoi c'est important</small></h1>
+<h1>Explorez <small>les possibilités de votre serveur, et sachez pourquoi c'est important</small></h1>
 <p><br /><a href="/test">Lire la documentation</a></p>
 </div>
 </div>
