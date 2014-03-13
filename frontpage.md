@@ -237,6 +237,7 @@
     randomNumber = Math.floor((Math.random()*jQuery('.yolo').length)+1);
     color = jQuery('.yolo.' + randomNumber).css('color');
     jQuery('.yolo.' + randomNumber).fadeIn();
+    document.title = jQuery('.yolo.' + randomNumber).text();
     jQuery('.colored-bar').css({
       color: color,
       fontWeight: 'bold',
