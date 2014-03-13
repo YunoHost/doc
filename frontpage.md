@@ -137,7 +137,7 @@
 </div>
 
 <div class="col-md-7 text-right">
-<h1>Play <small>with your apps and start using Internet, <strong>for real.</strong></small></h1>
+<h1>Play <small>with your apps and start using Internet, <strong>for real</strong></small></h1>
 <p><br /><a href="/apps">List of available apps</a></p>
 </div>
 </div>
@@ -210,7 +210,7 @@
 <br />
 
 <div class="text-center">
-<h1>Hey ! We are humans !<br /><small> If you have questions, problems or if you are just an enthusiast, come say "Hi" on the chatroom by clicking on the bottom right button &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+<h1>Hey ! We are humans !<br /><small> If you have questions, problems or if you are just an enthusiast, come say "Hi" on our chatroom by clicking on the button below &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
 </div>
 
 <br />
