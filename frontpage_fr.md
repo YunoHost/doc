@@ -132,12 +132,12 @@
   border: 1px solid rgba(0,0,0,0.15); 
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-<img style="width: 100%; min-width: 580px;" src="http://pix.toile-libre.org/upload/original/1394651546.jpg" />
+<img style="width: 100%; min-width: 580px;" src="http://pix.toile-libre.org/upload/original/1394750292.jpg" />
 </div>
 </div>
 
 <div class="col-md-7 text-right">
-<h1>Jouez <small>avec vos applications Web, et utilisez Internet pour de vrai</small></h1>
+<h1>Profitez <small>de vos applications Web, et fabriquez votre coin d'Internet</small></h1>
 <p><br /><a href="/apps">Liste des applications disponibles</a></p>
 </div>
 </div>
@@ -164,7 +164,7 @@
   border: 1px solid rgba(0,0,0,0.15); 
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-<img style="width: 100%; min-width: 310px;" src="http://pix.toile-libre.org/upload/original/1385468349.png" />
+<img style="width: 100%; min-width: 310px;" src="http://pix.toile-libre.org/upload/original/1394749958.jpg" />
 </div>
 </div>
 </div>
@@ -196,7 +196,7 @@
 </div>
 
 <div class="col-md-7 text-right">
-<h1>Explorez <small>les possibilités de votre serveur, et sachez pourquoi c'est important</small></h1>
+<h1>Explorez <small>les possibilités de votre serveur, et apprenez pourquoi c'est important</small></h1>
 <p><br /><a href="/test">Lire la documentation</a></p>
 </div>
 </div>
@@ -210,7 +210,7 @@
 <br />
 
 <div class="text-center">
-<h1>Hey ! Nous sommes des humains<br /><small> Si vous avez une question, un problème, ou que vous êtes tout simplement intéressé, passez dire "Bonjour" sur notre salon de discussion en cliquant sur le bouton en bas &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+<h1>Hey ! Nous sommes des humains !<br /><small> Si vous avez une question, un problème, ou que vous êtes tout simplement intéressé, passez dire "Bonjour" sur notre salon de discussion en cliquant sur le bouton en bas &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
 </div>
 
 <br />
