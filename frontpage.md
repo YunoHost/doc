@@ -132,12 +132,12 @@
   border: 1px solid rgba(0,0,0,0.15); 
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-<img style="width: 100%; min-width: 580px;" src="http://pix.toile-libre.org/upload/original/1394651546.jpg" />
+<img style="width: 100%; min-width: 580px;" src="http://pix.toile-libre.org/upload/original/1394750292.jpg" />
 </div>
 </div>
 
 <div class="col-md-7 text-right">
-<h1>Play <small>with your apps and start using Internet, <strong>for real</strong></small></h1>
+<h1>Enjoy <small>your apps and make your little corner of Internet</h1>
 <p><br /><a href="/apps">List of available apps</a></p>
 </div>
 </div>
@@ -152,7 +152,7 @@
 
 <div class="row">
 <div class="col-md-7">
-<h1>Manage <small>your server the way you want: via Web, mobile or command-line</small></h1>
+<h1>Manage <small>your server the way you like: via Web, mobile or command-line</small></h1>
 <p><br /><a href="/demo">Try the administration</a></p>
 </div>
 <div class="col-md-4">
@@ -164,7 +164,7 @@
   border: 1px solid rgba(0,0,0,0.15); 
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-<img style="width: 100%; min-width: 310px;" src="http://pix.toile-libre.org/upload/original/1385468349.png" />
+<img style="width: 100%; min-width: 310px;" src="http://pix.toile-libre.org/upload/original/1394749958.jpg" />
 </div>
 </div>
 </div>
