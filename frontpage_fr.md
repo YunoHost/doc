@@ -29,18 +29,23 @@
   font-weight: bold; 
   margin: 50px auto 0">
 <p style="font-size: 3em; margin-bottom: 30px">
-<span class="yolo 1" style="color: #FF3399;">Self-hosting for your mom</span>
-<span class="yolo 2" style="color: #6699FF;">Haters gonna host.</span>
-<span class="yolo 3" style="color: #66FF33;">I host myself, b*tches</span>
-<span class="yolo 4" style="color: #00FFCC;">Go host yourself !</span>
-<span class="yolo 5" style="color: #FF5050;">Get off of my cloud</span>
+<span class="yolo 1" style="color: #FF3399;">Viens chez moi, je suis hébergé chez une copine</span>
+<span class="yolo 2" style="color: #6699FF;">Si à 50 ans t'es pas auto-hebergé, t'as raté ta vie</span>
+<span class="yolo 3" style="color: #66FF33;">Hébergez-vous, qu'ils disaient</span>
+<span class="yolo 4" style="color: #00FFCC;">Je bois des bières avec mon hébergeur</span>
+<span class="yolo 5" style="color: #FF5050;">sudo internet --debug</span>
+<span class="yolo 6" style="color: #FF0066;">Ils s'hébergèrent et eurent beaucoup d'enfants</span>
+<span class="yolo 7" style="color: #3366FF;">Internet, lecture et écriture</span>
+<span class="yolo 8" style="color: #FFFFFF;">madame@michu.fr</span>
+<span class="yolo 9" style="color: #CC66FF;">J'ai rien à cacher</span>
+<span class="yolo 10" style="color: #FF6600;">Mon serveur ne m'apporte pas que le café</span>
 </p>
 <button class="btn btn-primary btn-lg btn-block yolobtn"  style="
   min-width: 200px; 
   width: 20%; 
   margin: 0 auto;
   color: #222;
-  font-size: 1.6em">What ?</button>
+  font-size: 1.6em">Pardon ?</button>
 </div>
 
 
@@ -51,14 +56,14 @@
   position: absolute; 
   top: 90%;
   text-align: center;">
-<a style="color: #777" href="/docs">Documentation</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://ask.yunohost.org">FAQ</a> <span class="colored-bar">•</span> <a style="color: #777" href="/contribute">Contribute</a>
+<a style="color: #777" href="/docs">Documentation</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://ask.yunohost.org">FAQ</a> <span class="colored-bar">•</span> <a style="color: #777" href="/contribute">Contribuer</a>
 </div>
 
 </div>
 
 <div class="boring-part" markdown="1">
 
-<h1>YunoHost <small>is a server operating system aiming to make self-hosting accessible to everyone.</small></h1>
+<h1>YunoHost <small>est un outil qui vous permet d’installer et d’utiliser facilement votre propre serveur.</small></h1>
 
 <br />
 
@@ -79,13 +84,134 @@
   width: 23%; 
   min-width: 150px; 
   margin: 40px auto 0;">
-<a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em" href="/install">Try it</a>
+<a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em" href="/install">Essayer</a>
 <p class="text-muted text-center"><small>YunoHost v2 • beta4</small></p>
 </div>
-<br />                                                                                                                                                                                                 
-<h3><blockquote>Features</blockquote></h3>
 
-<p>TO BE Written (with images and stuff)</p>
+<br />
+
+<hr />
+
+<br />
+<br />
+
+<div class="row">
+<div class="col-md-7">
+<h1>Installez <small>votre serveur simplement, vous avez déjà tout ce qu'il faut à la maison</small></h1>
+<p><br /><a href="/requirements">Voir les prérequis</a></p>
+</div>
+<div class="col-md-4">
+<div style="
+  width: 100%; 
+  max-height: 290px; 
+  overflow: hidden; 
+  border-radius: 5px; 
+  border: 1px solid rgba(0,0,0,0.15); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+
+<img style="width: 100%; min-width: 320px;" src="http://pix.toile-libre.org/upload/original/1394722560.png" />
+</div>
+</div>
+</div>
+
+
+<div class="clearfix"></div>
+<br />
+<br />
+<hr />
+<br />
+<br />
+
+<div class="row">
+<div class="col-md-4">
+<div style="
+  width: 100%; 
+  max-height: 290px; 
+  overflow: hidden; 
+  border-radius: 5px; 
+  border: 1px solid rgba(0,0,0,0.15); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+
+<img style="width: 100%; min-width: 580px;" src="http://pix.toile-libre.org/upload/original/1394651546.jpg" />
+</div>
+</div>
+
+<div class="col-md-7 text-right">
+<h1>Jouez <small>avec vos applications Web, et utilisez Internet pour de vrai</small></h1>
+<p><br /><a href="/apps">Liste des applications disponibles</a></p>
+</div>
+</div>
+
+<div class="clearfix"></div>
+
+<br />
+<br />
+<hr />
+<br />
+<br />
+
+<div class="row">
+<div class="col-md-7">
+<h1>Gérez <small>votre serveur comme vous le voulez : via Web, mobile ou en ligne de commande</small></h1>
+<p><br /><a href="/demo">Essayez l'interface d'administration</a></p>
+</div>
+<div class="col-md-4">
+<div style="
+  width: 100%; 
+  max-height: 290px; 
+  overflow: hidden; 
+  border-radius: 5px; 
+  border: 1px solid rgba(0,0,0,0.15); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+
+<img style="width: 100%; min-width: 310px;" src="http://pix.toile-libre.org/upload/original/1385468349.png" />
+</div>
+</div>
+</div>
+
+
+<div class="clearfix"></div>
+<br />
+<br />
+<br />
+<hr />
+<br />
+<br />
+
+<div class="row">
+<div class="col-md-4">
+<div style="
+  width: 100%; 
+  max-height: 290px; 
+  overflow: hidden; 
+  border-radius: 5px; 
+  border: 1px solid rgba(0,0,0,0.15);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<a class="btn btn-lg btn-block btn-primary" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">Documentation utilisateur</a>
+<a class="btn btn-lg btn-block btn-info" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">Guide d'administration</a>
+<a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">Foire aux questions</a>
+<a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">Comment contribuer</a>
+<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">Contactez-nous</a>
+</div>
+</div>
+
+<div class="col-md-7 text-right">
+<h1>Explorez <small>les possibilités de votre serveur, et pourquoi c'est important</small></h1>
+<p><br /><a href="/test">Lire la documentation</a></p>
+</div>
+</div>
+
+<div class="clearfix"></div>
+
+<br />
+<br />
+<hr />
+<br />
+<br />
+
+<div class="text-center">
+<h1>Hey ! Nous sommes des humains<br /><small> Si vous avez une question, un problème, ou que vous êtes tout simplement intéressé, passez dire "Bonjour" sur notre salon de discussion en cliquant sur le bouton en bas &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+</div>
 
 <br />
 <br />
@@ -93,11 +219,8 @@
 <br />
 
 <div class="text-center">
-<img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />
-
-<p markdown="1">
-<a href="/docs">Documentation</a> • <a href="https://ask.yunohost.org">FAQ</a> • <a href="/contribute">Contribute</a>
-</p>
+<!--<img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />-->
+<h5><small>2014 • Datalove <3</small></h5>
 </div>
 
 </div>
@@ -105,15 +228,16 @@
 <script type="text/javascript">
     jQuery('.teasing-part').css({
         marginTop: '0',
-        display: 'block'                                                                                                                                                                          
+        display: 'block'
     });
     jQuery('.boring-part').css({
-        marginTop: jQuery(window).height() + 50
+        marginTop: jQuery(window).height() + 100
     });
     jQuery('.yolo').hide();
-    randomNumber = Math.floor((Math.random()*5)+1);
+    randomNumber = Math.floor((Math.random()*jQuery('.yolo').length)+1);
     color = jQuery('.yolo.' + randomNumber).css('color');
     jQuery('.yolo.' + randomNumber).fadeIn();
+    document.title = jQuery('.yolo.' + randomNumber).text();
     jQuery('.colored-bar').css({
       color: color,
       fontWeight: 'bold',
