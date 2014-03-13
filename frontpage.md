@@ -29,11 +29,16 @@
   font-weight: bold; 
   margin: 50px auto 0">
 <p style="font-size: 3em; margin-bottom: 30px">
-<span class="yolo 1" style="color: #FF3399;">Self-hosting for your mom</span>
-<span class="yolo 2" style="color: #6699FF;">Haters gonna host.</span>
+<span class="yolo 1" style="color: #FF3399;">Self-hosting for you, mom</span>
+<span class="yolo 2" style="color: #6699FF;">Haters gonna host</span>
 <span class="yolo 3" style="color: #66FF33;">I host myself, b*tches</span>
 <span class="yolo 4" style="color: #00FFCC;">Go host yourself !</span>
 <span class="yolo 5" style="color: #FF5050;">Get off of my cloud</span>
+<span class="yolo 6" style="color: #FF0066;">Host me I'm famous</span>
+<span class="yolo 7" style="color: #3366FF;">Try Internet</span>
+<span class="yolo 8" style="color: #FFFFFF;">How I met your server</span>
+<span class="yolo 9" style="color: #CC66FF;">sudo internet --debug</span>
+<span class="yolo 10" style="color: #FF6600;">how_about_no@hotmail.com</span>
 </p>
 <button class="btn btn-primary btn-lg btn-block yolobtn"  style="
   min-width: 200px; 
@@ -111,7 +116,7 @@
         marginTop: jQuery(window).height() + 50
     });
     jQuery('.yolo').hide();
-    randomNumber = Math.floor((Math.random()*5)+1);
+    randomNumber = Math.floor((Math.random()*10)+1);
     color = jQuery('.yolo.' + randomNumber).css('color');
     jQuery('.yolo.' + randomNumber).fadeIn();
     jQuery('.colored-bar').css({
