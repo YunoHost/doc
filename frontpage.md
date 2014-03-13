@@ -210,7 +210,7 @@
 <br />
 
 <div class="text-center">
-<h1>Hey ! We are humans !<br /><small> If you have questions, problems or if you are just an enthusiast, come say "Hi" on our chatroom by clicking on the button below &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+<h1>Hey! We are humans!<br /><small> If you have questions, problems or if you are just an enthusiast, come say "Hi" on our chatroom by clicking on the button below &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
 </div>
 
 <br />
