@@ -87,10 +87,131 @@
 <a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em" href="/install">Try it</a>
 <p class="text-muted text-center"><small>YunoHost v2 • beta4</small></p>
 </div>
-<br />                                                                                                                                                                                                 
-<h3><blockquote>Features</blockquote></h3>
 
-<p>TO BE Written (with images and stuff)</p>
+<br />
+
+<hr />
+
+<br />
+<br />
+
+<div class="row">
+<div class="col-md-7">
+<h1>Install <small>your server with ease, you already have everything at home</small></h1>
+<p><br /><a href="/requirements">See the requirements</a></p>
+</div>
+<div class="col-md-4">
+<div style="
+  width: 100%; 
+  max-height: 290px; 
+  overflow: hidden; 
+  border-radius: 5px; 
+  border: 1px solid rgba(0,0,0,0.15); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+
+<img style="width: 100%; min-width: 320px;" src="http://pix.toile-libre.org/upload/original/1394722560.png" />
+</div>
+</div>
+</div>
+
+
+<div class="clearfix"></div>
+<br />
+<br />
+<hr />
+<br />
+<br />
+
+<div class="row">
+<div class="col-md-4">
+<div style="
+  width: 100%; 
+  max-height: 290px; 
+  overflow: hidden; 
+  border-radius: 5px; 
+  border: 1px solid rgba(0,0,0,0.15); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+
+<img style="width: 100%; min-width: 580px;" src="http://pix.toile-libre.org/upload/original/1394651546.jpg" />
+</div>
+</div>
+
+<div class="col-md-7 text-right">
+<h1>Play <small>with your apps and start using Internet, <strong>for real.</strong></small></h1>
+<p><br /><a href="/apps">List of available apps</a></p>
+</div>
+</div>
+
+<div class="clearfix"></div>
+
+<br />
+<br />
+<hr />
+<br />
+<br />
+
+<div class="row">
+<div class="col-md-7">
+<h1>Manage <small>your server the way you want: via Web, mobile or command-line</small></h1>
+<p><br /><a href="/demo">Try the administration</a></p>
+</div>
+<div class="col-md-4">
+<div style="
+  width: 100%; 
+  max-height: 290px; 
+  overflow: hidden; 
+  border-radius: 5px; 
+  border: 1px solid rgba(0,0,0,0.15); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+
+<img style="width: 100%; min-width: 310px;" src="http://pix.toile-libre.org/upload/original/1385468349.png" />
+</div>
+</div>
+</div>
+
+
+<div class="clearfix"></div>
+<br />
+<br />
+<br />
+<hr />
+<br />
+<br />
+
+<div class="row">
+<div class="col-md-4">
+<div style="
+  width: 100%; 
+  max-height: 290px; 
+  overflow: hidden; 
+  border-radius: 5px; 
+  border: 1px solid rgba(0,0,0,0.15);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<a class="btn btn-lg btn-block btn-primary" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">User documentation</a>
+<a class="btn btn-lg btn-block btn-info" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">Administrator guide</a>
+<a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">Frequently asked questions</a>
+<a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">How to contribute</a>
+<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">Contact us</a>
+</div>
+</div>
+
+<div class="col-md-7 text-right">
+<h1>Explore <small>what you can do with a server, and why it is important</small></h1>
+<p><br /><a href="/test">Read the documentation</a></p>
+</div>
+</div>
+
+<div class="clearfix"></div>
+
+<br />
+<br />
+<hr />
+<br />
+<br />
+
+<div class="text-center">
+<h1>Hey ! We are humans !<br /><small> If you have questions, problems or if you are just an enthusiast, come say "Hi" on the chatroom by clicking on the bottom right button &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+</div>
 
 <br />
 <br />
@@ -98,11 +219,8 @@
 <br />
 
 <div class="text-center">
-<img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />
-
-<p markdown="1">
-<a href="/docs">Documentation</a> • <a href="https://ask.yunohost.org">FAQ</a> • <a href="/contribute">Contribute</a>
-</p>
+<!--<img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />-->
+<h5><small>2014 • Datalove <3</small></h5>
 </div>
 
 </div>
@@ -110,13 +228,13 @@
 <script type="text/javascript">
     jQuery('.teasing-part').css({
         marginTop: '0',
-        display: 'block'                                                                                                                                                                          
+        display: 'block'
     });
     jQuery('.boring-part').css({
-        marginTop: jQuery(window).height() + 50
+        marginTop: jQuery(window).height() + 100
     });
     jQuery('.yolo').hide();
-    randomNumber = Math.floor((Math.random()*10)+1);
+    randomNumber = Math.floor((Math.random()*jQuery('.yolo').length)+1);
     color = jQuery('.yolo.' + randomNumber).css('color');
     jQuery('.yolo.' + randomNumber).fadeIn();
     jQuery('.colored-bar').css({
