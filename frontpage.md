@@ -116,7 +116,7 @@
         marginTop: jQuery(window).height() + 50
     });
     jQuery('.yolo').hide();
-    randomNumber = Math.floor((Math.random()*10)+1);
+    randomNumber = Math.floor((Math.random()*jQuery('.yolo').length)+1);
     color = jQuery('.yolo.' + randomNumber).css('color');
     jQuery('.yolo.' + randomNumber).fadeIn();
     jQuery('.colored-bar').css({
