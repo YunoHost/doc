@@ -48,7 +48,7 @@ Everything is done with the goal of simplifying deployment on as many different 
 ### Name
 
 **YunoHost** comes from the jargon "Y U NO Host". The [Internet meme](https://en.wikipedia.org/wiki/Internet_meme) should illustrate it:
-<div class="text-center"><img src="http://cdn.memegenerator.net/instances/500x/43427997.jpg"></div>
+<div class="text-center"><img style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" src="http://cdn.memegenerator.net/instances/500x/43427997.jpg"></div>
 ### Development
 
 YunoHost is developed to be as **simple** and minimally-intrusive as possible, to retain compatibility with Debian. It merely proposes a package of automatic configurations for existing software, and is configurable via simple interfaces.
