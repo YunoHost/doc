@@ -24,7 +24,7 @@ Additionally, YunoHost comes with an "app" system which is, in other words, **a 
 
 The most interesting thing about this system is that **web applications benefits from the LDAP** through the SSO (Single Sign On), which authenticate server's users in every installed apps at the same time.
 
-You may be interessed in reading the [packaging documentation](/packaging) and the [SSOwat Github page](https://github.com/Kloadut/SSOwat) to go further.
+You may be interessed in reading the [packaging documentation](/packaging_apps) and the [SSOwat Github page](https://github.com/Kloadut/SSOwat) to go further.
 
 ### Origin
 
@@ -60,16 +60,16 @@ Do not hesitate to visit the ["contribute" page](/contribute).
 
 ### Security
 
-All the efforts have been made to keep YunoHost secure, and communications encrypted. You can read more about this subject on the related page :
+All the efforts have been made to keep YunoHost secure, and **communications encrypted**. You can read more about this subject on the related page :
 
 [https://yunohost.org/security](/security)
 
 ### What YunoHost is not ?
 
-Even if YunoHost can handle multiple domains and multiple users, it is not meant to be a mutualized system.
+Even if YunoHost can handle multiple domains and multiple users, it is **not meant to be a mutualized system**.
 
 Firstable, the software is too young, not tested and thus probably not optimized to be put in production for hundreds of users at one time. And with that said, we do not want to lead the software in that direction. Virtualization democratizes, and its usage is recommended since it is a more leaktight way to achieve mutualization than a "full-stack" system like YunoHost.
 
-You can host your friends, your family and your company safely and with ease, but you have to trust your users, and they have to trust you above all. If you do want to provide YunoHost services for unknown persons, a full VPS per user will be just fine.
+You can host your friends, your family and your company safely and with ease, but you have to **trust your users**, and they have to trust you above all. If you do want to provide YunoHost services for unknown persons anyway, a full VPS per user will be just fine.
 
 
