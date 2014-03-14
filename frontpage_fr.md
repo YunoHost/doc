@@ -56,7 +56,7 @@
   position: absolute; 
   top: 90%;
   text-align: center;">
-<a style="color: #777" href="/docs">Documentation</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://ask.yunohost.org">FAQ</a> <span class="colored-bar">•</span> <a style="color: #777" href="/contribute">Contribuer</a>
+<a style="color: #777" href="/news">Dernières nouvelles</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://ask.yunohost.org" target="_blank">FAQ</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs">Documentation</a>
 </div>
 
 </div>
@@ -84,7 +84,7 @@
   width: 23%; 
   min-width: 150px; 
   margin: 40px auto 0;">
-<a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em" href="/install">Essayer</a>
+<a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em" href="/try">Essayer</a>
 <p class="text-muted text-center"><small>YunoHost v2 • beta4</small></p>
 </div>
 
@@ -187,17 +187,17 @@
   border-radius: 5px; 
   border: 1px solid rgba(0,0,0,0.15);
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
-<a class="btn btn-lg btn-block btn-primary" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">Documentation utilisateur</a>
-<a class="btn btn-lg btn-block btn-info" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">Guide d'administration</a>
-<a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">Foire aux questions</a>
-<a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">Comment contribuer</a>
-<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">Contactez-nous</a>
+<a class="btn btn-lg btn-block btn-primary" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/userdoc">Documentation utilisateur</a>
+<a class="btn btn-lg btn-block btn-info" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/admindoc">Guide d'administration</a>
+<a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://ask.yunohost.org" target="_blank">Foire aux questions</a>
+<a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/contribute">Comment contribuer</a>
+<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/news">Dernières nouvelles</a>
 </div>
 </div>
 
 <div class="col-md-7 text-right">
 <h1>Explorez <small>les possibilités de votre serveur, et apprenez pourquoi c'est important</small></h1>
-<p><br /><a href="/test">Lire la documentation</a></p>
+<p><br /><a href="/docs">Lire la documentation</a></p>
 </div>
 </div>
 
@@ -257,4 +257,28 @@
     });
     $(".actions").css('opacity', 0);
     $(".languages").css('opacity', 0);
+    jQuery.ajaxSetup({cache: false});
+    jQuery.getScript('https://doc.yunohost.org/mini/javascripts/mini.js', function() {
+        HOST_BOSH = 'https://doc.yunohost.org/http-bind/';
+        JappixMini.launch({
+            connection: {
+              domain: 'anonymous.yunohost.org'
+            },
+
+            application: {
+              network: {
+                autoconnect: false
+              },
+
+              interface: {
+                showpane: true,
+                animate: true
+              },
+
+              groupchat: {
+                open: ['support@conference.yunohost.org']
+              }
+            }
+        });
+    });
 </script>
