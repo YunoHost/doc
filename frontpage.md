@@ -56,12 +56,12 @@
   position: absolute; 
   top: 90%;
   text-align: center;">
-<a style="color: #777" href="/docs">Documentation</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://ask.yunohost.org">FAQ</a> <span class="colored-bar">•</span> <a style="color: #777" href="/contribute">Contribute</a>
+<a style="color: #777" href="/news">Latest news</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://ask.yunohost.org" target="_blank">FAQ</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs">Documentation</a>
 </div>
 
 </div>
 
-<div class="boring-part" markdown="1">
+<div class="boring-part">
 
 <h1>YunoHost <small>is a server operating system aiming to make self-hosting accessible to everyone.</small></h1>
 
@@ -75,7 +75,6 @@
   border: 1px solid rgba(0,0,0,0.15); 
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-<!--<img style="width: 100%; min-width: 580px;" src="http://pix.toile-libre.org/upload/original/1394651546.jpg" />-->
 <img style="width: 100%; min-width: 580px;" src="http://pix.toile-libre.org/upload/original/1394651972.jpg" />
 </div>
 
@@ -84,7 +83,7 @@
   width: 23%; 
   min-width: 150px; 
   margin: 40px auto 0;">
-<a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em" href="/install">Try it</a>
+<a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em" href="/try">Try it</a>
 <p class="text-muted text-center"><small>YunoHost v2 • beta4</small></p>
 </div>
 
@@ -187,17 +186,17 @@
   border-radius: 5px; 
   border: 1px solid rgba(0,0,0,0.15);
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
-<a class="btn btn-lg btn-block btn-primary" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">User documentation</a>
-<a class="btn btn-lg btn-block btn-info" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">Administrator guide</a>
-<a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">Frequently asked questions</a>
-<a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">How to contribute</a>
-<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/test">Contact us</a>
+<a class="btn btn-lg btn-block btn-primary" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/userdoc">User documentation</a>
+<a class="btn btn-lg btn-block btn-info" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/admindoc">Administrator guide</a>
+<a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://ask.yunohost.org/" target="_blank">Frequently asked questions</a>
+<a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/contribute">How to contribute</a>
+<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/news">Latest news</a>
 </div>
 </div>
 
 <div class="col-md-7 text-right">
 <h1>Explore <small>what you can do with a server, and why it is important</small></h1>
-<p><br /><a href="/test">Read the documentation</a></p>
+<p><br /><a href="/docs">Read the documentation</a></p>
 </div>
 </div>
 
@@ -257,4 +256,28 @@
     });
     $(".actions").css('opacity', 0);
     $(".languages").css('opacity', 0);
+    jQuery.ajaxSetup({cache: false});
+    jQuery.getScript('https://doc.yunohost.org/mini/javascripts/mini.js', function() {
+        HOST_BOSH = 'https://doc.yunohost.org/http-bind/';
+        JappixMini.launch({
+            connection: {
+              domain: 'anonymous.yunohost.org'
+            },
+
+            application: {
+              network: {
+                autoconnect: false
+              },
+
+              interface: {
+                showpane: true,
+                animate: true
+              },
+
+              groupchat: {
+                open: ['support@conference.yunohost.org']
+              }
+            }
+        });
+    });
 </script>
