@@ -56,7 +56,7 @@
   position: absolute; 
   top: 90%;
   text-align: center;">
-<a style="color: #777" href="/news">Dernières nouvelles</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://ask.yunohost.org" target="_blank">FAQ</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs">Documentation</a>
+<a style="color: #777" href="/news_fr">Dernières nouvelles</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://ask.yunohost.org" target="_blank">FAQ</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs_fr">Documentation</a>
 </div>
 
 </div>
@@ -84,7 +84,7 @@
   width: 23%; 
   min-width: 150px; 
   margin: 40px auto 0;">
-<a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em" href="/try">Essayer</a>
+<a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em" href="/try_fr">Essayer</a>
 <p class="text-muted text-center"><small>YunoHost v2 • beta4</small></p>
 </div>
 
@@ -98,7 +98,7 @@
 <div class="row">
 <div class="col-md-7">
 <h1>Installez <small>votre serveur simplement, vous avez déjà tout ce qu'il faut à la maison</small></h1>
-<p><br /><a href="/requirements">Voir les prérequis</a></p>
+<p><br /><a href="/requirements_fr">Voir les prérequis</a></p>
 </div>
 <div class="col-md-4">
 <div style="
@@ -138,7 +138,7 @@
 
 <div class="col-md-7 text-right">
 <h1>Profitez <small>de vos applications Web, et fabriquez votre coin d'Internet</small></h1>
-<p><br /><a href="/apps">Liste des applications disponibles</a></p>
+<p><br /><a href="/apps_fr">Liste des applications disponibles</a></p>
 </div>
 </div>
 
@@ -153,7 +153,7 @@
 <div class="row">
 <div class="col-md-7">
 <h1>Gérez <small>votre serveur comme vous le voulez : via Web, mobile ou en ligne de commande</small></h1>
-<p><br /><a href="/demo">Essayez l'interface d'administration</a></p>
+<p><br /><a href="/demo_fr">Essayez l'interface d'administration</a></p>
 </div>
 <div class="col-md-4">
 <div style="
@@ -187,17 +187,17 @@
   border-radius: 5px; 
   border: 1px solid rgba(0,0,0,0.15);
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
-<a class="btn btn-lg btn-block btn-primary" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/userdoc">Guide d'utilisation</a>
+<a class="btn btn-lg btn-block btn-primary" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/userdoc_fr">Guide d'utilisation</a>
 <a class="btn btn-lg btn-block btn-info" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://ask.yunohost.org" target="_blank">Foire aux questions</a>
-<a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/whatsyunohost">Qu'est-ce que YunoHost ?</a>
-<a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/contribute">Comment contribuer</a>
-<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/news">Dernières nouvelles</a>
+<a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/whatsyunohost_fr">Qu'est-ce que YunoHost ?</a>
+<a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/contribute_fr">Comment contribuer</a>
+<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/news_fr">Dernières nouvelles</a>
 </div>
 </div>
 
 <div class="col-md-7 text-right">
 <h1>Explorez <small>les possibilités de votre serveur, et apprenez pourquoi c'est important</small></h1>
-<p><br /><a href="/docs">Lire la documentation</a></p>
+<p><br /><a href="/docs_fr">Lire la documentation</a></p>
 </div>
 </div>
 
