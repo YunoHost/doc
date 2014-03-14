@@ -1,7 +1,7 @@
 #Documentation
 
 <br />
-YunoHost has 3 documentation sections:
+YunoHost's documentation has 3 different sections:
 
 <br />
 <a class="btn btn-primary" href="/admindoc">Administrator guide</a> &nbsp;
@@ -19,7 +19,6 @@ YunoHost has 3 documentation sections:
 <br />
 And if you want to know more about YunoHost, you may want to check out these pages:
  * [What is YunoHost ?](/whatsyunohost)
- * [History](/history)
  * [Latest news](/news)
  * [Roadmap](/roadmap)
  * [Security](/security)
