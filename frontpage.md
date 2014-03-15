@@ -152,7 +152,7 @@
 <div class="row">
 <div class="col-md-7">
 <h1>Manage <small>your server the way you like: via Web, mobile or command-line</small></h1>
-<p><br /><a href="/demo">Try the administration</a></p>
+<p><br /><a href="/try">Try the administration</a></p>
 </div>
 <div class="col-md-4">
 <div style="
