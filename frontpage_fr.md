@@ -12,7 +12,7 @@
 
 <div style="
   position: absolute;
-  top: 10%;
+  top: 7%;
   width: 100%;
   text-align: center;
   text-align: center">
@@ -23,12 +23,12 @@
 
 <div style="
   position: absolute; 
-  top: 30%; 
+  top: 27%; 
   width: 100%; 
   text-align: center; 
   font-weight: bold; 
   margin: 50px auto 0">
-<p style="font-size: 3em; margin-bottom: 30px">
+<p style="font-size: 3em; margin-bottom: 4%">
 <span class="yolo 1" style="color: #FF3399;">Viens chez moi, je suis hébergé chez une copine</span>
 <span class="yolo 2" style="color: #6699FF;">Si à 50 ans t'es pas auto-hebergé, t'as raté ta vie</span>
 <span class="yolo 3" style="color: #66FF33;">Hébergez-vous, qu'ils disaient</span>
@@ -51,7 +51,7 @@
 
 <br />
 
-<div class="text-center" style="
+<div class="text-center hidden-xs" style="
   width: 100%;
   position: absolute; 
   top: 90%;
@@ -109,7 +109,7 @@
   border: 1px solid rgba(0,0,0,0.15); 
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-<img style="width: 100%; min-width: 320px;" src="http://pix.toile-libre.org/upload/original/1394722560.png" />
+<img style="width: 100%; min-width: 320px; max-width: 635px" src="http://pix.toile-libre.org/upload/original/1394722560.png" />
 </div>
 </div>
 </div>
@@ -132,7 +132,7 @@
   border: 1px solid rgba(0,0,0,0.15); 
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-<img style="width: 100%; min-width: 580px;" src="http://pix.toile-libre.org/upload/original/1394750292.jpg" />
+<img style="width: 100%; min-width: 580px; max-width: 635px" src="http://pix.toile-libre.org/upload/original/1394750292.jpg" />
 </div>
 </div>
 
@@ -164,7 +164,7 @@
   border: 1px solid rgba(0,0,0,0.15); 
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-<img style="width: 100%; min-width: 310px;" src="http://pix.toile-libre.org/upload/original/1394749958.jpg" />
+<img style="width: 100%; min-width: 310px; max-width: 635px" src="http://pix.toile-libre.org/upload/original/1394749958.jpg" />
 </div>
 </div>
 </div>
@@ -182,7 +182,7 @@
 <div class="col-md-4">
 <div style="
   width: 100%; 
-  max-height: 290px; 
+  max-height: 290px;
   overflow: hidden; 
   border-radius: 5px; 
   border: 1px solid rgba(0,0,0,0.15);
