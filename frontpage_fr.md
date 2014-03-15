@@ -228,11 +228,15 @@
 <script type="text/javascript">
     jQuery('.teasing-part').css({
         marginTop: '0',
-        height: jQuery(window).height(),
         display: 'block'
     });
     jQuery('.boring-part').css({
         marginTop: jQuery(window).height() + 100
+    });
+    jQuery( window ).resize(function() {
+        jQuery('.boring-part').css({
+            marginTop: jQuery('.teasing-part').height() + 100
+        });
     });
     jQuery('.yolo').hide();
     randomNumber = Math.floor((Math.random()*jQuery('.yolo').length)+1);
@@ -253,6 +257,7 @@
       }, 500);
     });
     $(".actions").css('opacity', 0);
+    $(".languages").css('opacity', 0);
     jQuery.ajaxSetup({cache: false});
     jQuery.getScript('https://'+ location.host +'/mini/javascripts/mini.js', function() {
         HOST_BOSH = 'https://'+ location.host +'/http-bind/';
