@@ -246,12 +246,8 @@
       background: color,
       borderColor: color
     }).on('click', function() {
-      jQuery('.teasing-part').animate({
-        marginTop: '-' + jQuery(window).height(),
-        height: 0
-      }, 500);
-      jQuery('.boring-part').animate({
-        marginTop: 0
+      jQuery('html, body').animate({
+        scrollTop: jQuery(window).height() + 80
       }, 500);
     });
     $(".actions").css('opacity', 0);
