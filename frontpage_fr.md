@@ -228,6 +228,7 @@
 <script type="text/javascript">
     jQuery('.teasing-part').css({
         marginTop: '0',
+        height: jQuery(window).height(),
         display: 'block'
     });
     jQuery('.boring-part').css({
