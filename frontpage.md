@@ -232,6 +232,11 @@
     jQuery('.boring-part').css({
         marginTop: jQuery(window).height() + 100
     });
+    jQuery( window ).resize(function() {
+        jQuery('.boring-part').css({
+            marginTop: jQuery('.teasing-part').height() + 100
+        });
+    });
     jQuery('.yolo').hide();
     randomNumber = Math.floor((Math.random()*jQuery('.yolo').length)+1);
     color = jQuery('.yolo.' + randomNumber).css('color');
