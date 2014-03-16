@@ -257,7 +257,6 @@
       }, 500);
     });
     $(".actions").css('opacity', 0);
-    $(".languages").css('opacity', 0);
     jQuery.ajaxSetup({cache: false});
     jQuery.getScript('https://'+ location.host +'/mini/javascripts/mini.js', function() {
         HOST_BOSH = 'https://'+ location.host +'/http-bind/';
