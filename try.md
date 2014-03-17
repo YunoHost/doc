@@ -5,11 +5,11 @@
   <div class="row text-center">
     <div class="col-md-6">
       <a href="https://demo.yunohost.org/webmail" class="btn btn-primary">User interface</a>
-      <p class="text-muted">username: demo, password: demo</p>
+      <p class="text-muted">Username: demo<br>Password: demo</p>
     </div>
     <div class="col-md-5">
       <a href="https://demo.yunohost.org/ynhadmin" class="btn btn-danger">Administrator interface</a>
-      <p class="text-muted">password: demo</p>
+      <p class="text-muted">Password: demo</p>
     </div>
   </div>
 
