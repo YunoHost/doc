@@ -12,7 +12,7 @@ La documentation de YunoHost s'articule globalement autour de 3 sections:
 <span class="text-muted">concernant l'usage du serveur au quotidien</span>
 
 <br />
-<a class="btn btn-danger" href="/contribute_fr">Guide du contrbuteur</a> &nbsp;
+<a class="btn btn-danger" href="/contribute_fr">Guide du contributeur</a> &nbsp;
 <span class="text-muted">qui contient tout ce que vous devez savoir à propos de nous et de notre manière de travailler</span>
 
 <br />
