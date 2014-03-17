@@ -14,7 +14,7 @@ Tous les types de machine ci-dessous sont compatibles avec YunoHost. La liste de
 
 ### Configuration minimum
 
-* 128Mo de Ram
+* 256Mo de Ram
 
 * 4Go d'espace de stockage
 
