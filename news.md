@@ -49,7 +49,7 @@ And brace yourselves, there is more incoming:
 For more informations, you can view a non-updated roadmap [here](/roadmap)
 
 And as always, a big virtual hug to all the contributors who have made this release possible. It is so wonderful to work with such a motivated and efficient team:
-<p class="text-muted"><small>opi, ezpen, Ju, courgette, Moul, jerome, titoko, beudbeud, Courgette, TozZ and the others </small></p>
+<p class="text-muted"><small>opi, ezpen, Ju, Moul, jerome, titoko, beudbeud, Courgette, TozZ and the others </small></p>
 
 <div class="pull-right"><span class="label label-default">Release</span> <span class="label label-primary">beta4</span></div>
 <div class="clearfix"></div>
