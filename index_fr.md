@@ -226,9 +226,9 @@
 </div>
 
 <script type="text/javascript">
-    jQuery('.teasing-part').fadeIn('fast');
     jQuery('.teasing-part').css({
-        marginTop: '0'
+        marginTop: '0',
+        display: 'block'
     });
     jQuery('.boring-part').css({
         marginTop: jQuery(window).height() + 100
