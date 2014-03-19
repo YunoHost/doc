@@ -97,7 +97,7 @@
 <div class="row">
 <div class="col-md-7">
 <h1>Install <small>your server with ease, you already have everything at home</small></h1>
-<p><br /><a href="/compatible_hardware">See the requirements</a></p>
+<p><br /><a href="/install">See the requirements</a></p>
 </div>
 <div class="col-md-4">
 <div style="
