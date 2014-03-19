@@ -17,6 +17,6 @@
 
 <div class="text-center">
 
-If it does not work... &nbsp;  <a href="/virtualbox" class="btn btn-success">Install YunoHost on a virtual machine</a>
+If it does not work... &nbsp;  <a href="/install" class="btn btn-success">Install YunoHost</a>
 
 </div>
