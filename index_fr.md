@@ -98,7 +98,7 @@
 <div class="row">
 <div class="col-md-7">
 <h1>Installez <small>votre serveur simplement, vous avez déjà tout ce qu'il faut à la maison</small></h1>
-<p><br /><a href="/compatible_hardware_fr">Voir les prérequis</a></p>
+<p><br /><a href="/install_fr">Voir les prérequis</a></p>
 </div>
 <div class="col-md-4">
 <div style="
