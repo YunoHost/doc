@@ -38,7 +38,8 @@
 <span class="yolo 7" style="color: #3366FF;">Try Internet</span>
 <span class="yolo 8" style="color: #FFFFFF;">How I met your server</span>
 <span class="yolo 9" style="color: #CC66FF;">sudo internet --debug</span>
-<span class="yolo 10" style="color: #FF6600;">how_about_no@hotmail.com</span>
+<span class="yolo 10" style="color: #FF6600;">data@home</span>
+<span class="yolo 11" style="color: #FF3399;">datalove <3</span>
 </p>
 <button class="btn btn-primary btn-lg btn-block yolobtn"  style="
   min-width: 200px; 
