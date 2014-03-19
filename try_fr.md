@@ -1,6 +1,5 @@
 #Essayer YunoHost
 
-<br />
 Vous pouvez essayez YunoHost avant de l'[installer](/install_fr).
 
 Notez que cette plateforme de démonstration tourne sous une **version bêta** du logiciel et va **cesser de fonctionner** de temps en temps.
