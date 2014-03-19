@@ -42,6 +42,7 @@
 <span class="yolo 11" style="color: #FF3399;">datalove <3</span>
 <span class="yolo 12" style="color: #6699FF;">I can haz server?</span>
 <span class="yolo 13" style="color: #FF5050;">dude, Y U NO Host?!</span>
+<span class="yolo 14" style="color: #66FF33;">Keep calm and host yourself</span>
 </p>
 <button class="btn btn-primary btn-lg btn-block yolobtn"  style="
   min-width: 200px; 
