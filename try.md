@@ -1,6 +1,5 @@
 #Try YunoHost
 
-<br />
 You may want to try YunoHost before [installing](/install). 
 
 Note that this demo platform runs a **beta version** of the software and **will fail** from time to time.
