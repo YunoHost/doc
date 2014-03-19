@@ -1,7 +1,5 @@
 #Apps
 
----
-
 <div class="panel-group" id="app-accordion"></div>
 
 <script type="text/template" id="app-template">
