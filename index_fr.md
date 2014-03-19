@@ -76,8 +76,7 @@
   border: 1px solid rgba(0,0,0,0.15); 
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-<!--<img style="width: 100%; min-width: 580px;" src="https://lut.im/ZOn7khN2/h65ri2KA" />-->
-<img style="width: 100%; min-width: 580px;" src="http://pix.toile-libre.org/upload/original/1394651972.jpg" />
+<img style="width: 100%; min-width: 580px;" src="https://lut.im/ZOn7khN2/h65ri2KA" />
 </div>
 
 
