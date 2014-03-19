@@ -1,7 +1,5 @@
 #Apps
 
-### Disponibles
-
 <div class="panel-group" id="app-accordion"></div>
 
 <script type="text/template" id="app-template">
@@ -70,12 +68,7 @@ $(document).ready(function () {
 | OpenID | julien | En cours | https://github.com/julienmalik/openid-simplesamlphp_ynh |
 | Shaarli | julien | En cours | https://github.com/julienmalik/shaarli_ynh |
 | OpenVPN | Kload | En test | https://github.com/Kloadut/openvpn_ynh |
-| ZeroBin | julien | En test | https://github.com/julienmalik/zerobin_ynh |
-| CalDAVZap | julien | Abandonné | https://github.com/julienmalik/caldavzap_ynh |
-| AgenDAV | julien | En test | https://github.com/julienmalik/agendav_ynh |
 | Etherpad-Lite | beudbeud | En dev | https://github.com/abeudin/etherpadlite_ynh |
-| Jirafeau | julien | En test | https://github.com/julienmalik/jirafeau_ynh |
-| phpMyAdmin | julien | En test | https://github.com/julienmalik/phpmyadmin_ynh |
 | proFTPd | beudbeud | En dev | https://github.com/abeudin/proftpd_ynh.git |
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
 
