@@ -71,6 +71,7 @@ $(document).ready(function () {
 | Etherpad-Lite | beudbeud | En dev | https://github.com/abeudin/etherpadlite_ynh |
 | proFTPd | beudbeud | En dev | https://github.com/abeudin/proftpd_ynh.git |
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
+| Baikal | aquaxp | En dev | https://github.com/aquaxp/baikal_ynh |
 
 ### À intégrer
 
