@@ -42,7 +42,7 @@ Et préparez-vous à de nombreux changements en vue de la RC:
 
 * **Règles persistentes** dans SSOwat
 * Une grosse refonte du code de la **moulinette** (déjà bien avancée)
-* Une nouvelle identité visuelle va être intgrée
+* Une nouvelle identité visuelle va être intégrée
 * Une fonction générale d'upgrade du système
 * L'internationalisation de l'interface admin et de la CLI
 
