@@ -2,10 +2,6 @@
 
 ---
 
-## v2.0 beta4
-
-* Validate current test packages
-
 ## v2.0 RC
 
 * User interface design *(Courgette, opi)*
