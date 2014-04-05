@@ -10,7 +10,7 @@ Vous disposez de deux moyens pour installer YunoHost:
 * Une [machine compatible](/compatible_hardware_fr) qui sera dédiée à YunoHost. Vérifiez donc de ne plus avoir de données importantes dessus.
 * Une autre machine pour consulter ce guide et accéder à votre serveur.
 * Une [connexion Internet correcte](/isp_fr), un débit montant raisonnable, et un fournisseur d’accès tolérant l'auto-hébergement.
-* Avoir téléchargé l’image iso de YunoHost en [32bit](http://build.yunohost.org/yunohostv2-beta2-i386.iso) ou [64bit](http://build.yunohost.org/yunohostv2-beta2-amd64.iso) (prenez 32bit dans le doute)
+* Avoir téléchargé l’image iso de YunoHost en [32bit](http://build.yunohost.org/yunohostv2-beta4-i386.iso) ou [64bit](http://build.yunohost.org/yunohostv2-beta4-amd64.iso) (prenez 32bit dans le doute)
 * Avoir gravé l’image iso sur un CD ou copié le contenu sur une clé USB (via [Unetbootin](http://unetbootin.net/more-infos-and-get-it/))
 
 ### Démarrer sur le CD-ROM/la clé USB

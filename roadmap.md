@@ -7,8 +7,8 @@
 * User interface design *(Courgette, opi)*
 * uPnP rework *(kload, titoko)*
 * Moulinette/API refactoring *(jerome)*
-* Mail configuration tests *(beudbeud)*
-* Make pending apps official *(Ju)*
+* <strike>Mail configuration tests *(beudbeud)*</strike>
+* <strike>Make pending apps official *(Ju)*</strike>
 * Test and upgrade official apps like Owncloud, Roundcube and Radicale *(packagers)*
 * Add warning in a sample backup view *(opi)*
 * SFTP *(kload)*
@@ -17,10 +17,11 @@
 * Security check and complete patterns
 * Upgrade function + view *(beudbeud, opi)*
 * I18n *(opi, jerome)*
+* Mail forward configuration *(kload, beudbeud)*
 
 ## v2.0
 
-* Add sexiness and a menu to YunoHost.org frontpage *(kload)*
+* <strike>Add sexiness and a menu to YunoHost.org frontpage *(kload)*</strike>
 * **DOCUMENTATIONNNNNNN** *(everyone <3)*
 
 ## v2.1

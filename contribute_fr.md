@@ -9,7 +9,7 @@ Il existe plusieurs moyens de contribuer à YunoHost:
 * Tester YunoHost et rapporter de nouveaux bugs
 * Aider les utilisateurs de YunoHost sur le FAQ et le salon de support
 * Participer à la rédaction de la documentation
-* Faire le [packaging de nouveaux services/webapps](/packaging_apps_fr.md) pour YunoHost
+* Faire le [packaging de nouveaux services/webapps](/packaging_apps_fr) pour YunoHost
 * S'impliquer dans le développement de YunoHost
 * Donner à l'association YunoHost.org
 
