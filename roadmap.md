@@ -12,7 +12,7 @@
 * Test and upgrade official apps like Owncloud, Roundcube and Radicale *(packagers)*
 * Add warning in a sample backup view *(opi)*
 * SFTP *(kload)*
-* DNS zone fix *(kload)*
+* <strike>DNS zone fix *(kload)*</strike>
 * SSOwat stuffs (presistent rules, public root website) *(ezpen)*
 * Security check and complete patterns
 * Upgrade function + view *(beudbeud, opi)*
