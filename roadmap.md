@@ -4,20 +4,21 @@
 
 ## v2.0 RC
 
-* User interface design *(Courgette, opi)*
-* uPnP rework *(kload, titoko)*
-* Moulinette/API refactoring *(jerome)*
 * <strike>Mail configuration tests *(beudbeud)*</strike>
 * <strike>Make pending apps official *(Ju)*</strike>
-* Test and upgrade official apps like Owncloud, Roundcube and Radicale *(packagers)*
-* Add warning in a sample backup view *(opi)*
 * <strike>SFTP *(kload)*</strike>
 * <strike>DNS zone fix *(kload)*</strike>
 * <strike>SSOwat stuffs (presistent rules, public root website) *(ezpen)*</strike>
+* <strike>Mail forward configuration *(kload, beudbeud)*</strike>
+* User interface design *(Courgette, opi)*
+* uPnP rework *(kload, titoko)*
+* Moulinette/API refactoring *(jerome)*
+* Test and upgrade official apps like Owncloud, Roundcube and Radicale *(packagers)*
+* Add warning in a sample backup view *(opi)*
 * Security check and complete patterns
 * Upgrade function + view *(beudbeud, opi)*
 * I18n *(opi, jerome)*
-* <strike>Mail forward configuration *(kload, beudbeud)*</strike>
+
 
 ## v2.0
 
