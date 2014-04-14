@@ -17,7 +17,7 @@
 * Security check and complete patterns
 * Upgrade function + view *(beudbeud, opi)*
 * I18n *(opi, jerome)*
-* Mail forward configuration *(kload, beudbeud)*
+* <strike>Mail forward configuration *(kload, beudbeud)*</strike>
 
 ## v2.0
 
