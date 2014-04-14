@@ -11,7 +11,7 @@
 * <strike>Make pending apps official *(Ju)*</strike>
 * Test and upgrade official apps like Owncloud, Roundcube and Radicale *(packagers)*
 * Add warning in a sample backup view *(opi)*
-* SFTP *(kload)*
+* <strike>SFTP *(kload)*</strike>
 * <strike>DNS zone fix *(kload)*</strike>
 * <strike>SSOwat stuffs (presistent rules, public root website) *(ezpen)*</strike>
 * Security check and complete patterns
