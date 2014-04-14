@@ -13,7 +13,7 @@
 * Add warning in a sample backup view *(opi)*
 * SFTP *(kload)*
 * <strike>DNS zone fix *(kload)*</strike>
-* SSOwat stuffs (presistent rules, public root website) *(ezpen)*
+* <strike>SSOwat stuffs (presistent rules, public root website) *(ezpen)*</strike>
 * Security check and complete patterns
 * Upgrade function + view *(beudbeud, opi)*
 * I18n *(opi, jerome)*
