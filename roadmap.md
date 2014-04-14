@@ -4,13 +4,13 @@
 
 ## v2.0 RC
 
-* <strike>Mail configuration tests *(beudbeud)*</strike>
-* <strike>Make pending apps official *(Ju)*</strike>
-* <strike>SFTP *(kload)*</strike>
-* <strike>DNS zone fix *(kload)*</strike>
-* <strike>SSOwat stuffs (presistent rules, public root website) *(ezpen)*</strike>
-* <strike>Mail forward configuration *(kload, beudbeud)*</strike>
-* <strike>Test and upgrade official apps like Owncloud, Roundcube and Radicale *(packagers)*</strike>
+* ~~Mail configuration tests *(beudbeud)*~~
+* ~~Make pending apps official *(Ju)*~~
+* ~~SFTP *(kload)*~~
+* ~~DNS zone fix *(kload)*~~
+* ~~SSOwat stuffs (presistent rules, public root website) *(ezpen)*~~
+* ~~Mail forward configuration *(kload, beudbeud)*~~
+* ~~Test and upgrade official apps like Owncloud, Roundcube and Radicale *(packagers)*~~
 * User interface design *(Courgette, opi)*
 * uPnP rework *(kload, titoko)*
 * Moulinette/API refactoring *(jerome)*
