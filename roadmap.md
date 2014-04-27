@@ -12,8 +12,8 @@
 * ~~Mail forward configuration *(kload, beudbeud)*~~
 * ~~Test and upgrade official apps like Owncloud, Roundcube and Radicale *(packagers)*~~
 * ~~Upgrade function~~ + view *(beudbeud, opi)*
+* ~~uPnP rework *(kload, titoko)*~~
 * User interface design *(Courgette, opi)*
-* uPnP rework *(kload, titoko)*
 * Moulinette/API refactoring *(jerome)*
 * Add warning in a sample backup view *(opi)*
 * Security check and complete patterns
