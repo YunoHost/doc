@@ -40,4 +40,4 @@ Two parameters will be required:
 
 2. Administrator Password: This is the password that will allow you to manage your YunoHost instance, **choose it carefully**, it must not be disclosed or be guessable, otherwise you can lose your system.
 
-The post-install process will then be automatic and you will have access to the administration interface via **https://votre-domaine.org/ynhadmin**
+The post-install process will then be automatic and you will have access to the administration interface via **https://votre-domaine.org/yunohost/admin**
