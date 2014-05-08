@@ -72,6 +72,7 @@ $(document).ready(function () {
 | proFTPd | beudbeud | En dev | https://github.com/abeudin/proftpd_ynh.git |
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
 | Baikal | aquaxp | En dev | https://github.com/aquaxp/baikal_ynh |
+| MediaWiki | mrtino | En dev | https://github.com/mrtino/mediawiki_ynh |
 
 ### À intégrer
 
@@ -94,7 +95,6 @@ $(document).ready(function () {
 * [10er10](https://github.com/dready92/10er10)
 * [Subsonic](http://www.subsonic.org)
 * [DokuWiki](https://www.dokuwiki.org/dokuwiki)
-* [MediaWiki](http://www.mediawiki.org)
 * [Sick Beard](http://sickbeard.com)
 * [Yourls](http://yourls.org)
 * [MyCryptoChat](http://mycryptochatphp.codeplex.com/)
