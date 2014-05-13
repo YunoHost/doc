@@ -10,7 +10,7 @@ apt-get install tor
 
 ## Configuring our hidden service
 
-Edit /ect/tor/torrc, and add these lines:
+Edit /etc/tor/torrc, and add these lines:
 
 ```bash
 HiddenServiceDir  /var/lib/tor/hidden_service/
@@ -40,7 +40,7 @@ yunohost domain add random123456789.onion
 
 ## Avoid SSO redirection (optional)
 
-If you want to avoid being redirected to the SSO portal at login, you can deactivate SSOwat for this specific tor domain, by editing the file `/etc/nginx/conf.d/random123456789.onion.conf` and commenting the following line (2 times):
+If you want to avoid being redirected to the SSO portal at login, you can deactivate SSOwat for this specific tor domain, by editing the file `/etc/nginx/conf.d/random123456789.onion.conf` and commenting the following line (two times):
 
 ```bash
 #access_by_lua_file /usr/share/ssowat/access.lua;
