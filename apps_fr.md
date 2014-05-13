@@ -72,6 +72,7 @@ $(document).ready(function () {
 | proFTPd | beudbeud | En dev | https://github.com/abeudin/proftpd_ynh.git |
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
 | Baikal | aquaxp | En dev | https://github.com/aquaxp/baikal_ynh |
+| WebApp + FTP | kload | En test | https://github.com/Kloadut/my_webapp_ynh |
 
 ### À intégrer
 
