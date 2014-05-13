@@ -10,11 +10,11 @@ Notez que nous faisons tout notre possible pour vous fournir une **documentation
 
 ### Twitter
 
-Un tout nouveau compte Twitter est maintenant disponible ( [@yunohost](http://twitter.com/yunohost) ), nous tâcherons de le tenir à jour avec des petites news.
+Un tout nouveau compte Twitter est maintenant disponible ([@yunohost](http://twitter.com/yunohost)), nous tâcherons de le tenir à jour avec des petites news.
 
 ### Démo
 
-Une [plateforme de démonstration](/demo_fr) est disponible pour vous donner un aperçu de l'interface admin et utilisateur. Gardez à l'esprit qu'elle tourne sous la dernière version beta, qui ne supporte pas encore les actions concurrentes... Ça peut donc vous paraître buggé :-)
+Une [plateforme de démonstration](/demo_fr) est disponible pour vous donner un aperçu de l'interface admin et utilisateur. Gardez à l'esprit qu'elle tourne sous la dernière version bêta, qui ne supporte pas encore les actions concurrentes... Ça peut donc vous paraître buggé :-)
 
 
 N'hésitez pas à venir nous laisser un mot sur notre salon de discussion, accessible depuis la [page d'accueil](/index_fr) ou via votre client XMPP favori à [support@conference.yunohost.org](xmpp:support@conference.yunohost.org?join).
@@ -24,11 +24,11 @@ N'hésitez pas à venir nous laisser un mot sur notre salon de discussion, acces
 
 <hr>
 
-#YunoHost v2 beta4
+#YunoHost v2 bêta4
 
-<span class="badge">Publié le 03 mars 2014 à 20h47</span>
+<span class="badge">Publié le 14 mars 2014 à 20h47</span>
 
-Grosse annonce aujourd'hui : nous sortons une nouvelle version beta4 (probablement la **dernière beta** avant la version RC). Un tas de choses ont été améliorées sur et autour du logiciel.
+Grosse annonce aujourd'hui : nous sortons une nouvelle version bêta4 (probablement la **dernière bêta** avant la version RC). Un tas de choses ont été améliorées sur et autour du logiciel.
 
 Comme d'habitude, voici une liste non-exhaustive des changements:
 
@@ -38,7 +38,7 @@ Comme d'habitude, voici une liste non-exhaustive des changements:
 * De nouvelles apps ont été ajoutées: **Zerobin**, **PHPMyAdmin** et **Jirafeau** (et [plus bientôt](/apps_fr) !).
 * L'interception des URLs dans **SSOwat** a été légèrement améliorée.
 
-Et préparez-vous à de nombreux changements en vue de la RC:
+Et préparez-vous à de nombreux changements en vue de la RC :
 
 * **Règles persistentes** dans SSOwat
 * Une grosse refonte du code de la **moulinette** (déjà bien avancée)
