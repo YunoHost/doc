@@ -2,7 +2,7 @@
 
 YunoHost est un projet né en février 2012 à la suite d'à peu près ça :
 
- <blockquote><p>« Merde, j'ai la flemme de me reconfigurer un serveur mail... Beudbeud, comment t'as fait pour configurer ton joli serveur sous LDAP ? »</p>
+ <blockquote><p>« Merde, j'ai la flegme de me reconfigurer un serveur mail... Beudbeud, comment t'as fait pour configurer ton joli serveur sous LDAP ? »</p>
 <small>Kload, février 2012</small></blockquote>
 
 Il ne manquait en fait qu'une interface d’administration au serveur de Beudbeud pour en faire quelque chose d’exploitable, alors Kload a décidé de la développer. Finalement, après l'automatisation de quelques configurations et le packaging de quelques applications Web, YunoHost v1 était sorti.
