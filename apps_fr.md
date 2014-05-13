@@ -73,6 +73,7 @@ $(document).ready(function () {
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
 | Baikal | aquaxp | En dev | https://github.com/aquaxp/baikal_ynh |
 | WebApp + FTP | kload | En test | https://github.com/Kloadut/my_webapp_ynh |
+| MyCryptoChat | mrtino | En dev | https://github.com/mrtino/mycryptochat_ynh |
 
 ### À intégrer
 
@@ -98,7 +99,6 @@ $(document).ready(function () {
 * [MediaWiki](http://www.mediawiki.org)
 * [Sick Beard](http://sickbeard.com)
 * [Yourls](http://yourls.org)
-* [MyCryptoChat](http://mycryptochatphp.codeplex.com/)
 * [Cops](http://blog.slucas.fr/fr/oss/calibre-opds-php-server)
 * [PHProxy](http://sourceforge.net/projects/poxy/)
 * [GPodder](https://gpodder.net)

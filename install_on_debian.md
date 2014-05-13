@@ -42,4 +42,4 @@ Once the installation is finished, the script will ask you for two options to co
 
 2. **administrator password**: this is the password to administer your Yunohost instance, **make it strong** and don't share it, without it you can lose access to your system.
 
-After the installation is complete, you will be able to access your administration [web interface](/admin) **https://your-domain.org/ynhadmin**, or to administer your Yunohost via the command-line interface called "[moulinette](/moulinette)".
+After the installation is complete, you will be able to access your administration [web interface](/admin) **https://your-domain.org/yunohost/admin**, or to administer your Yunohost via the command-line interface called "[moulinette](/moulinette)".
