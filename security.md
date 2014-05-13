@@ -15,7 +15,7 @@ Two things remain important to note:
 
 If your YunoHost server is used in a critical production environment, or if you want to improve its safety, you may want to follow those good practices.
 
-**Attention :** *Following those instructions requires advanced knowledges in system administration.*
+**Attention:** *Following those instructions requires advanced knowledges in system administration.*
 
 ### SSH authentication via key
 
