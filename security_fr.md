@@ -4,7 +4,7 @@ YunoHost a été développé dans l'optique de fournir une sécurité maximale t
 
 Tous les protocoles servis via YunoHost sont **chiffrés**, les mots de passe ne sont pas stockés en clair, et par défaut chaque utilisateur n'accède qu'à son répertoire personnel.
 
-Deux points sont néanmoins importants à noter:
+Deux points sont néanmoins importants à noter :
 
 * L'installation d'applications supplémentaires **augmente le nombre de faille** potentielle. Il est donc conseillé de se renseigner sur chacune d'elle **avant l'installation**, d'en comprendre le fonctionnement et juger ainsi l'impact que provoquerait une potentielle attaque. N'installez **que** les applications qui semblent importantes pour votre usage.
 
