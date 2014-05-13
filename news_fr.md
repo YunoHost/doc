@@ -14,7 +14,7 @@ Un tout nouveau compte Twitter est maintenant disponible ([@yunohost](http://twi
 
 ### Démo
 
-Une [plateforme de démonstration](/demo_fr) est disponible pour vous donner un aperçu de l'interface admin et utilisateur. Gardez à l'esprit qu'elle tourne sous la dernière version béta, qui ne supporte pas encore les actions concurrentes... Ça peut donc vous paraître buggé :-)
+Une [plateforme de démonstration](/demo_fr) est disponible pour vous donner un aperçu de l'interface admin et utilisateur. Gardez à l'esprit qu'elle tourne sous la dernière version bêta, qui ne supporte pas encore les actions concurrentes... Ça peut donc vous paraître buggé :-)
 
 
 N'hésitez pas à venir nous laisser un mot sur notre salon de discussion, accessible depuis la [page d'accueil](/index_fr) ou via votre client XMPP favori à [support@conference.yunohost.org](xmpp:support@conference.yunohost.org?join).
@@ -24,11 +24,11 @@ N'hésitez pas à venir nous laisser un mot sur notre salon de discussion, acces
 
 <hr>
 
-#YunoHost v2 béta4
+#YunoHost v2 bêta4
 
 <span class="badge">Publié le 14 mars 2014 à 20h47</span>
 
-Grosse annonce aujourd'hui : nous sortons une nouvelle version béta4 (probablement la **dernière béta** avant la version RC). Un tas de choses ont été améliorées sur et autour du logiciel.
+Grosse annonce aujourd'hui : nous sortons une nouvelle version bêta4 (probablement la **dernière bêta** avant la version RC). Un tas de choses ont été améliorées sur et autour du logiciel.
 
 Comme d'habitude, voici une liste non-exhaustive des changements:
 
