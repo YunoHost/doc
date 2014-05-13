@@ -21,9 +21,9 @@ ssh root@monserveur.org
 
 2. /!\ Pour Raspbian uniquement /!\
 
-A priori, le script doit supprimer l'utilisateur root.
-Sur une Raspbian, l'utilisateur root n'est pas activé par défaut.
-Pour ne pas avoir de message d'erreur et poursuivre l'installation de yunohost v2 beta3 sur un Raspberry Pi avec Raspbian, faire ces deux manipulations : activer l'utilisateur root et créez lui un mot de passe.
+   A priori, le script doit supprimer l'utilisateur root.
+   Sur une Raspbian, l'utilisateur root n'est pas activé par défaut.
+   Pour ne pas avoir de message d'erreur et poursuivre l'installation de yunohost v2 beta3 sur un Raspberry Pi avec Raspbian, faire ces deux manipulations : activer l'utilisateur root et créez lui un mot de passe.
 ```bash
 sudo -i
 passwd root
