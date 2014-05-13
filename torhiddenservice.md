@@ -1,4 +1,4 @@
-# Using Yunohost as a Tor Hidden Service
+# Using YunoHost as a Tor Hidden Service
 
 See https://www.torproject.org/docs/tor-hidden-service.html.en
 
