@@ -38,3 +38,10 @@ Your domain looks like *random123456789.onion*
 yunohost domain add random123456789.onion
 ```
 
+## Avoid SSO redirection (optional)
+
+If you want to avoid being redirected to the SSO portal at login, you can deactivate SSOwat for this specific tor domain, by editing the file `/etc/nginx/conf.d/random123456789.onion.conf` and commenting the following line (2 times):
+
+```bash
+#access_by_lua_file /usr/share/ssowat/access.lua;
+```
