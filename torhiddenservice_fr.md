@@ -12,7 +12,7 @@ apt-get install tor
 
 Editer le fichier /ect/tor/torrc, et ajouter ces lignes :
 
-```
+```bash
 HiddenServiceDir  /var/lib/tor/hidden_service/
 HiddenServicePort 80 127.0.0.1:80
 HiddenServicePort 443 127.0.0.1:443

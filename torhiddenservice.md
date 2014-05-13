@@ -12,7 +12,7 @@ apt-get install tor
 
 Edit /ect/tor/torrc, and add these lines:
 
-```
+```bash
 HiddenServiceDir  /var/lib/tor/hidden_service/
 HiddenServicePort 80 127.0.0.1:80
 HiddenServicePort 443 127.0.0.1:443
@@ -37,3 +37,4 @@ Your domain looks like *random123456789.onion*
 ```bash
 yunohost domain add random123456789.onion
 ```
+
