@@ -29,7 +29,7 @@
 sudo fdisk -l
 ```
 
-It should be `/dev/diskN`, where `N` is a number, or `/dev/sdX`, where `X` is a number.
+It should be `/dev/diskN`, where `N` is a number, or `/dev/sdX`, where `X` is a letter.
 
 * Copy the image by typing:
 
@@ -39,12 +39,12 @@ sudo dd bs=1M if=/path/to/your/raspberry-latest.img of=/your/device/name
 
 Do not forget to change `/path/to/your/raspberry-latest.img` and `/your/device/name` with the appropriate values.
 
-Your SD card is now ready to be used. **:-)**
+The command may take a few minutes, then your SD card will be ready to use. **:-)**
 
 ## <small>2.</small> Boot up the Raspberry Pi
 
-* Put the SD card in the Raspberry Pi and **plug the Ethernet cable** in.
-* Do not forget to **plug a screen** if you want to see how boot is going, and a keyboard if you want to have a **command-line access** to your Raspberry Pi.
+* Put the SD card in the Raspberry Pi and **plug the Ethernet cable** in
+* Do not forget to **plug a screen** if you want to see how boot is going, and a keyboard if you want to have a **command-line access** to your Raspberry Pi
 * Plug the USB power and wait until you see a big squared `Y`
 
 You should be able to see an `IP address` field on the screen, write it down: It is your Raspberry Pi **local IP address**.
