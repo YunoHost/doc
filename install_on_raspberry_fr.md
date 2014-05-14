@@ -75,4 +75,4 @@ Le mot de passe d'administration et une domaine vous seront demandé.
 
 Vous pouvez obtenir davantage de précisions ici:
 
-**[https://yunohost.org/postinstall](/postinstall_fr)**
+**[yunohost.org/postinstall](/postinstall_fr)**
