@@ -77,4 +77,4 @@ The administration password and a domain will be asked.
 
 You can get more information on the post-installation process here:
 
-**[https://yunohost.org/postinstall](/postinstall)**
+**[yunohost.org/postinstall](/postinstall)**
