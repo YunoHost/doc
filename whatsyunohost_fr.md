@@ -63,7 +63,7 @@ N'hésitez pas à visiter la page « [contribuez](/contribute_fr) ».
 
 Tous les efforts ont été déployés pour sécuriser YunoHost, et **chiffrer tous les protocoles**. Une explication plus détaillée est disponible sur la page appropriée :
 
-[https://yunohost.org/security_fr](/security_fr)
+[yunohost.org/security_fr](/security_fr)
 
 ### Qu'est-ce que YunoHost n'est pas ?
 
