@@ -1,4 +1,4 @@
-# Fournisseur d'accès à Internet
+# Fournisseurs d'accès à Internet
 
 Voici un liste non-exhaustive des fournisseurs d'accès à Internet par pays, contenant les critères de tolérance à l'auto-hébergement.
 
