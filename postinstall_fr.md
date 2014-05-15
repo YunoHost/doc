@@ -12,7 +12,7 @@ C'est le premier nom de domaine qui permettra l'accès à votre serveur, mais é
 
 * Si vous ne possédez pas de nom de domaine ou que vous souhaitez profiter du service de DNS dynamique de YunoHost, optez pour un sous-domaine se terminant en **.nohost.me** ou **.noho.st**. Le domaine sera ainsi automatiquement rattaché à votre serveur YunoHost, et vous n'aurez pas d'étape de configuration supplémentaire.
 
-* Si en revanche vous maîtrisez la notion de **DNS**, vous serez sûrement intéressés d'indiquer ici votre propre nom de domaine. Dans ce cas, référez-vous à la page [yunohost.org/dns](/dns) pour plus d'informations.
+* Si en revanche vous maîtrisez la notion de **DNS**, vous serez sûrement intéressés d'indiquer ici votre propre nom de domaine. Dans ce cas, référez-vous à la page [yunohost.org/dns](/dns_fr) pour plus d'informations.
 
 ### Mot de passe d'administration
 
