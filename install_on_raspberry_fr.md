@@ -74,10 +74,10 @@ Le mot de passe d'administration et une domaine vous seront demandés. Pour plus
 
 ## <small>4.</small> Mise à jour
 
-Il est conseillé de procéder à la mise à jour de YunoHost dès que possible. Pour ce faire, rendez-vous dans l'interface d'administration, en allant sur `https://<votre_domaine.fr>/yunohost/admin`, puis cliquez sur « **Outils** », et « **Mettre à jour le système** ».
+Il est conseillé de procéder à la mise à jour de YunoHost **dès que possible**. Pour ce faire, rendez-vous sur l'interface d'administration Web, en allant sur `https://<votre_domaine.fr>/yunohost/admin` dans un navigateur, puis cliquez sur « **Outils** », et « **Mettre à jour le système** ».
 
 L'opération peut durer quelques minutes, confirmez ensuite la mise à jour des paquets et patientez encore quelques minutes.
 
 ---
 
-#### *Si vous rencontrez des problèmes lors d'une de ces étapes, n'hésitez pas à nous le signaler via [les moyens de support](/support_fr)*
+#### *Si vous rencontrez des problèmes lors de l'une de ces étapes, n'hésitez pas à nous le signaler via [les moyens de support](/support_fr)*
