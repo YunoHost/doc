@@ -51,7 +51,7 @@ Vous devriez être en mesure de voir le champs `IP address` sur l'écran, écriv
 
 ## <small>3.</small> Post-Installation
 
-Vous avez deux manières distinctes de configurer YunoHost, vous n'avez qu'à exécuter l'une d'elles:
+Vous avez deux manières distinctes de configurer YunoHost, vous n'avez besoin d’exécuter que l'une d'entre elles :
 
 ### Web
 
