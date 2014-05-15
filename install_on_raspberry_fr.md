@@ -63,13 +63,13 @@ Vous êtes à présent sur l'écran de post-installation, suivez les instruction
 
 ### Ligne de commande
 
-Si vous choisissez de faire l'opération de post-installation directement depuis votre Raspberry Pi, identifiez-vous sur l'écran de démarrage avec les identifiants **root** / **yunohost**, et exécutez la commande:
+Si vous choisissez de faire l'opération de post-installation directement depuis votre Raspberry Pi, identifiez-vous sur l'écran de démarrage avec l'identidiant **root** et le mot de passe **yunohost**, et exécutez la commande:
 
 ```bash
 yunohost tools postinstall
 ```
 
-Le mot de passe d'administration et une domaine vous seront demandés. Pour plus de précisions, renseignez-vous sur **[la page appropriée](/postinstall_fr)**
+Le mot de passe d'administration et un domaine vous seront demandés. Pour plus de précisions, renseignez-vous sur **[la page appropriée](/postinstall_fr)**
 
 
 ## <small>4.</small> Mise à jour
