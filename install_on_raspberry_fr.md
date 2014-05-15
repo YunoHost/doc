@@ -7,7 +7,7 @@
 * Un Raspberry Pi modèle B *(le modèle A devrait fonctionner, mais n'a jamais été testé)*
 * Une carte SD: une capacité **4Go** (ou plus) et une certification **class10** sont recommandés
 * Un autre ordinateur pour parcourir ce guide et accéder à votre Raspberry Pi
-* Un écran et un clavier sont recommandés pour pouvoir contrôler votre Raspberry Pi si un prblème apparaît
+* Un écran et un clavier sont recommandés pour pouvoir contrôler votre Raspberry Pi si un problème apparaît
 * Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
 * L’**image YunoHost pour Raspberry Pi**, disponible ici:
 
@@ -69,10 +69,15 @@ Si vous choisissez de faire l'opération de post-installation directement depuis
 yunohost tools postinstall
 ```
 
-Le mot de passe d'administration et une domaine vous seront demandé.
+Le mot de passe d'administration et une domaine vous seront demandés. Pour plus de précisions, renseignez-vous sur **[la page appropriée](/postinstall_fr)**
+
+
+## <small>4.</small> Mise à jour
+
+Il est conseillé de procéder à la mise à jour de YunoHost dès que possible. Pour ce faire, rendez-vous dans l'interface d'administration, en allant sur `https://<votre_domaine.fr>/yunohost/admin`, puis cliquez sur « **Outils** », et « **Mettre à jour le système** ».
+
+L'opération peut durer quelques minutes, confirmez ensuite la mise à jour des paquets et patientez encore quelques minutes.
 
 ---
 
-Vous pouvez obtenir davantage de précisions ici:
-
-**[yunohost.org/postinstall](/postinstall_fr)**
+#### *Si vous rencontrez des problèmes lors d'une de ces étapes, n'hésitez pas à nous le signaler via [les moyens de support](/support_fr)*
