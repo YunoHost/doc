@@ -81,5 +81,5 @@ The operation may take a few minutes, then confirm the package upgrade and wait 
 
 ---
 
-#### *If you need help during one of those steps, do not hesitate to use [our support tools](/support).* 
+#### *If you need help during one of these steps, do not hesitate to use [our support tools](/support).* 
 
