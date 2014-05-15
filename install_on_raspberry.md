@@ -71,10 +71,15 @@ If you choose to do the post-installation process directly from your Raspberry P
 yunohost tools postinstall
 ```
 
-The administration password and a domain will be asked.
+The administration password and a domain will be asked. For further precision, refer to the **[post-installation page](/postinstall)**.
+
+## <small>4.</small> System upgrade
+
+It is **wisely recommended** to execute a full system upgrade as soon as possible. To do so, you have to go to the administration interface by entering its URL in a web browser: `https://<your_domain.org>/yunohost/admin`, then click on "**Tools**" and "**System upgrade**".
+
+The operation may take a few minutes, then confirm the package upgrade and wait a few more minutes.
 
 ---
 
-You can get more information on the post-installation process here:
+#### *If you need help during one of those steps, do not hesitate to use [our support tools](/support).* 
 
-**[yunohost.org/postinstall](/postinstall)**
