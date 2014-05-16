@@ -1,30 +1,46 @@
-# Installing YunoHost on CubieBoard
+# Install YunoHost on CubieBoard
+
+*Find other ways to install YunoHost **[here](/install)**.*
 
 ### Requirements
 * CubieBoard & µ-SD of at least 4GB
 * Internet access
 * Access to server administration
+* A Cubieboard Debian 7 image compatible with YunoHost:
+    * [Cubian](http://cubian.org/)
+    * [Cubieez](http://www.cubieforums.com/index.php?topic=442.0)
 
-### Images for Debian 7 Wheezy adapted for CubieBoard 1 and 2:
+## Copy the image to your µ-SD card
 
-* [Cubian](http://cubian.org/)
-* [Cubieez](http://www.cubieforums.com/index.php?topic=442.0)
+#### On Windows
+* Download and install **[Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/)**
+* Plug your µ-SD card in
+* Copy the `raspberry-latest.img` file to your µ-SD card using Win32 Disk Imager.
 
-### Copy the Image to the µ-SD
-#### via the graphical interface (recommended)
-With the "Disks" application in Debian and its derivatives, select the µ-SD and choose "Restore Disk Image".
+#### On GNU/Linux, BSD or Mac OS X
+* Open a terminal
+* Plug your µ-SD card in
+* Identify the device name by typing:
 
-#### via the command line
-Get the device name of the µ-SD (/dev/...) with :
 ```bash
-df -h
+sudo fdisk -l
 ```
-Write the image to disk from the folder you downloaded it to:
+
+It should be `/dev/diskN`, where `N` is a number, or `/dev/sdX`, where `X` is a letter.
+
+* Copy the image by typing:
+
 ```bash
-(sudo) dd if=/image/debian/ of=/dev/<µ-SD> bs=1M && sync
+sudo dd bs=1M if=/path/to/your/raspberry-latest.img of=/your/device/name
 ```
-### Expand the Partition
-Expand the Partition using GParted.
+
+Do not forget to change `/path/to/your/raspberry-latest.img` and `/your/device/name` with the appropriate values.
+
+The command may take a few minutes.
+
+You can also expand the partition using GParted.
+
+---
 
 ### Start
 Put the µ-SD in the CubieBoard and start it up.
@@ -33,6 +49,7 @@ Put the µ-SD in the CubieBoard and start it up.
 ```bash
 nmap 192.168.0.0/24 or nmap 192.168.1.0/24
 ```
+
 ### Redirect your domain name to the local IP address of the CubieBoard
 Edit /etc/hosts on your local computer:
 ```bash
@@ -42,11 +59,13 @@ Add a line in the following format:
 ```bash
 ip_address_of_cubieboard      your_domain.org
 ```
+
 ### SSH connection
 ```bash
 ssh root@votre_domaine.org
 ```
-### Installing YunoHost
+
+### Install YunoHost
 
 1. Install git
 ```bash
@@ -65,23 +84,16 @@ cd /tmp/install_script && ./install_yunohostv2
 
 ### Post-installation
 
-Once the installation is complete, the script will ask you to proceed to the post-install configuration. This will ask you for a few options:
+Once the installation is complete, the script will ask you to proceed to the post-install configuration. You will have to enter a **domain name** and the **administration password**.
 
-1. **Domain name**: You must choose a domain name that will point at the IP address of your YunoHost instance. If you choose a name that ends with **.nohost.me** or **.noho.st**, the DNS configuration stage will be completed automatically and you will only need to wait for about 3 minutes for the installation to complete. If you opt for another domain name, you will need to have one purchased and [configured](/dns) so it points at your **IP address**.
+More information here: [yunohost.org/postinstall](/postinstall)
 
-2. **Administrator password**: This is the password that you will need to administer your YunoHost instance, **choose it carefully**, it should not be given out or easily guessed, or else you might lose control of your system.
+## System upgrade
 
-The post-install configuration will take place after this, and you will be able to access your administration interface with **https://your-domain.org/ynhadmin**
+It is **wisely recommended** to execute a full system upgrade as soon as possible. To do so, you have to go to the administration interface by entering its URL in a web browser: `https://<your_domain.org>/yunohost/admin`, then click on "**Tools**" and "**System upgrade**".
 
-### Updating YunoHost
-```bash
-apt-get update && apt-get upgrade && apt-get dist-upgrade
-```
-### Opening Ports
-uPnP doesn't work just yet, so you will need to manually open the ports on your firewall or router.
+The operation may take a few minutes, then confirm the package upgrade and wait a few more minutes.
 
-To see the ports that need to be opened:
+---
 
-```bash
-yunohost firewall list
-```
+#### *If you need help during one of these steps, do not hesitate to use [our support tools](/support).* 
