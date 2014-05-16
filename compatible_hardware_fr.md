@@ -1,26 +1,29 @@
-# Liste de matériel compatible
+# Matériel
 
-Tous les types de machine ci-dessous sont compatibles avec YunoHost. La liste des machines exactes n'est donc pas exhaustive.
-* **x86** : Tous les ordinateurs personnels avec une architecture x86: PC de bureau, PC portables, Mac Intel (après 2007), netbooks, nettops, etc.
-***[Installation via CD/USB](/install_fr) ou [sur Debian](/install_on_debian_fr)***
+YunoHost est compatible avec tous les types de machine courants.    
+Il est important d'identifier votre type de machine avant de procéder à l'installation.
 
-* **armhf** : Raspberry Pi, Cubox, [Cubieboard](/install_on_cubieboard_fr), etc. ***[Installation sur Debian](/install_on_debian_fr) uniquement***
+*Cliquez sur le guide correspondant à votre matériel.*
 
-* **powerpc** : Principalement les Macinstosh G4/G5 ***[Installation sur Debian](/install_on_debian_fr) uniquement***
+| Type | Exemples de machines | Guide d'installation |
+|------|-----------------------|----------------------|
+| **x86** | PC de bureau, PC portables, Mac Intel (après 2007), netbooks, nettops, etc. | [Installation via CD/USB](/install_iso_fr) |
+| **armhf** | [Raspberry Pi](/install_on_raspberry_fr), [Cubieboard](/install_on_cubieboard_fr), Cubox, Olimex, Beagleboard, etc. | [Installation sur Debian ARM](/compatible_arm_debian_fr) |
+| **powerpc** | Macintosh G4/G5, PS3 |  [Installation sur Debian](/install_on_debian_fr) |
 
-**Matériel recommandé** : Machine x86 récente, silencieuse et peu consommatrice.
 
----
-
-### Configuration minimum
+### Configuration minimale
 
 * 256Mo de Ram
 
-* 4Go d'espace de stockage
+* 4Go d'espace de stockage    
+
 
 ### Configuration recommandée
 
-* 512Mo de RAM, pour pouvoir faire tourner tous les services correctement
+* Machine x86 récente, silencieuse et peu consommatrice.
 
-* 20Go d'espace de stockage, pour pouvoir stocker plus de mails et de documents
+* 512Mo de RAM, pour pouvoir faire tourner tous les services et applications correctement
+
+* 20Go d'espace de stockage, pour pouvoir stocker plus d' emails et de documents
 
