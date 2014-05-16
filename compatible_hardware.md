@@ -1,24 +1,26 @@
-# Compatible hardware
+# Hardware
 
-Every machine kind below are compatible with YunoHost. Consequently, this list is not comprehensive.
-* **x86** : Every personal computer with x86 CPU architecture: Desktop PC, laptop PC, Intel Macintosh, netbooks, nettops, etc.
-***[Install via CD/USB](/install) or [on existing Debian](/install_on_debian)***
+Every commonly used machine kind are compatible with YunoHost.    
+It is important to identify your machine kind before proceeding to the installation.
 
-* **armhf** : Raspberry Pi, Cubox, [Cubieboard](/install_on_cubieboard), etc. ***[Installation on Debian](/install_on_debian) only***
+*Click on the corresponding guide.*
 
-* **powerpc** : Mostly Macinstosh G4/G5 ***[Installation on Debian](/install_on_debian) only***
+| Arch | Hardware examples | Installation guide |
+|------|-----------------------|----------------------|
+| **x86** | PC de bureau, PC portables, Mac Intel (après 2007), netbooks, nettops, etc. | [Install via CD/USB](/install_iso) |
+| **armhf** | [Raspberry Pi](/install_on_raspberry), [Cubieboard](/install_on_cubieboard), Cubox, Olimex, Beagleboard, etc. | [Install on ARM Debian](/compatible_arm_debian) |
+| **powerpc** | Macintosh G4/G5, PS3 |  [Install on Debian](/install_on_debian) |
 
-**Recommended hardware** : Recent x86 computer, silent and low consumption.
 
----
-
-### Minimum requirement
+### Minimum requirements
 
 * 256MB RAM
 
-* 4GB storage
+* 4GB storage space
 
 ### Recommended
+
+* Recent x86 computer, silent and low consumption.
 
 * 512MB RAM in order to run all the services and apps properly
 
