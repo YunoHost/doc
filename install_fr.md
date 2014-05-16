@@ -12,7 +12,7 @@ Cette page liste tous les types d'installations, classés par catégorie.
 
 * [Sur Raspberry Pi](/install_on_raspberry_fr)
 * [Sur Cubieboard](/install_on_cubieboard_fr)
-* [Sur un autre ordinateur](/install_iso_fr)
+* [Sur un autre ordinateur](/hardware_fr)
 
 ## Virtuellement
 
