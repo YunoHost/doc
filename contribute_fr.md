@@ -6,7 +6,7 @@ Il existe plusieurs moyens de contribuer à YunoHost:
 * [Traduire les interfaces](https://www.transifex.com/organization/yunohost/) dans votre langue 
 * [Tester YunoHost](/try_fr) et [rapporter de nouveaux bugs](https://github.com/yunohost/)
 * Aider les utilisateurs de YunoHost sur le [FAQ](https://ask.yunohost.org/) et le [salon de support](/support_fr)
-* Participer à la rédaction de la documentation
+* Participer à la [rédaction de la documentation](/write_documentation)
 * Faire le [packaging de nouveaux services/webapps](/packaging_apps_fr) pour YunoHost
 * S'impliquer dans le développement de YunoHost
 
