@@ -1,30 +1,44 @@
-# Installation de YunoHost sur CubieBoard
+# Installer YunoHost sur CubieBoard
 
 ### Pré-requis
 * CubieBoard & µ-SD de 4Gb minimum
 * Un accès internet
 * Un accès à l'administration de la box
+* Une image Debian 7 pour Cubieboard compatible avec YunoHost:
+    * [Cubian](http://cubian.org/)
+    * [Cubieez](http://www.cubieforums.com/index.php?topic=442.0)
 
-### Images de Debian 7 Wheezy adaptées aux CubieBoard 1 et 2 :
+### Copier l'image sur la carte µ-SD
 
-* [Cubian](http://cubian.org/)
-* [Cubieez](http://www.cubieforums.com/index.php?topic=442.0)
+#### Sur Windows
+* Téléchargez et installez **[Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/)**
+* Insérez votre carte µ-SD
+* Copiez le fichier `raspberry-latest.img` sur votre carte µ-SD en utilisant Win32 Disk Imager
 
-### Copie de l'image sur la µ-SD
-#### Via l'interface graphique (recommandé)
-Avec le logiciel "Disques" présent dans Debian et ses dérivés, sélectionner la µ-SD et faite "restauré l'image disque".
+#### On GNU/Linux, BSD or Mac OS X
+* Ouvrez un terminal
+* Insérez votre carte SD
+* Identifiez le nom système de la carte µ-SD en tapant:
 
-#### Via la ligne de console
-Repérer le nom de la µ-SD (/dev/…) avec :
 ```bash
-df -h
+sudo fdisk -l
 ```
-Copier l'image à partir du répertoire à laquelle elle se trouve sur la µ-SD :
+
+Le nom devrait prendre la forme `/dev/diskN` sous Mac OS X, où `N` est un nombre, ou `/dev/sdX` sous GNU/Linux, ou `X` est une lettre.
+
+* Copiez l'image en tapant:
+
 ```bash
-(sudo) dd if=/image/debian/ of=/dev/<µ-SD> bs=1M && sync
+sudo dd bs=1M if=/chemin/vers/raspberry-latest.img of=/nom/carteSD
 ```
-### Augmentation de la taille de la partition
-À l'aide de GParted redimentionner la partition.
+
+N'oubliez pas de remplacer `/chemin/vers/raspberry-pi.img` et `/nom/carteSD` par les valeurs appropriées.
+
+L'action peut durer quelques minutes.
+
+Vous pouvez également étendre la taille de la partition à l'aide de Gparted.
+
+---
 
 ### Démarrage
 Mettez la µ-SD dans la CubieBoard et démarrer-la.
@@ -65,23 +79,17 @@ cd /tmp/install_script && ./install_yunohostv2
 
 ### Post-installation
 
-Lorsque l'installation se finit, le script vous propose de procéder à la post-installation. Celle-ci vous demandera deux paramètres:
+Lorsque l'installation se finit, le script vous propose de procéder à la post-installation. Celle-ci vous demandera deux paramètres: le **nom de domaine principal** et le **mot de passe d'administration**.
 
-1. **Nom de domaine**: Vous devez choisir un nom de domaine qui pointera vers l'adresse IP de votre instance YunoHost. Si vous choisissez un nom de domaine terminant par **.nohost.me** ou **.noho.st**, l'étape de configuration des DNS se fera automatiquement et vous n'aurez qu'à attendre 3 minutes à la fin de la post-installation. Si vous optez pour pour un autre nom de domaine, vous devrez l’avoir préalablement acheté et [configuré](/dns_fr) pour qu'il pointe vers votre **adresse IP**.
+Plus d'informations ici : [yunohost.org/postinstall](/postinstall_fr)
 
-2. **Mot de passe administrateur**: C’est le mot de passe qui vous permettra d’administrer votre instance YunoHost, **choisissez-le avec attention**, il ne doit pas être divulgué ni être devinable, sinon vous pourrez perdre votre système.
+### Mise à jour
 
-La post-install se déroulera ensuite automatiquement et pourrez accéder à l'interface d'administration via **https://votre-domaine.org/ynhadmin**
+Il est conseillé de procéder à la mise à jour de YunoHost **dès que possible**. Pour ce faire, rendez-vous sur l'interface d'administration Web, en allant sur `https://<votre_domaine.fr>/yunohost/admin` dans un navigateur, puis cliquez sur « **Outils** », et « **Mettre à jour le système** ».
 
-### Mettre à jour YunoHost
-```bash
-apt-get update && apt-get upgrade && apt-get dist-upgrade
-```
-### Ouverture des ports
-Upnp ne fonctionne pas encore, il faut donc ouvrir manuellement les ports sur la box.
-Pour connaître les ports à ouvrir :
-```bash
-yunohost firewall list
-```
+L'opération peut durer quelques minutes, confirmez ensuite la mise à jour des paquets et patientez encore quelques minutes.
 
+---
+
+#### *Si vous rencontrez des problèmes lors de l'une de ces étapes, n'hésitez pas à nous le signaler via [les moyens de support](/support_fr)*
 
