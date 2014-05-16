@@ -1,6 +1,6 @@
 # Rédaction de la documentation
 
-## Directement sur le site
+## Sur le site
 
 Ce site permet d'éditer le contenu directement en ligne.
  
