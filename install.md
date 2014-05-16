@@ -12,7 +12,7 @@ This page lists few installation guides.
 
 * [On a Raspberry Pi](/install_on_raspberry)
 * [On a Cubieboard](/install_on_cubieboard)
-* [On another type of hardware](/install_iso)
+* [On another type of hardware](/hardware)
 
 ## Virtually
 
