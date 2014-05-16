@@ -5,7 +5,7 @@
 There are many ways to contribute to YunoHost:
 
 * Talk about the project to your friends/family/dog
-* Translate the interfaces in your language (not available yet)
+* [Translate the interfaces in your language](https://www.transifex.com/organization/yunohost/)
 * Test YunoHost and report new bugs
 * Help YunoHost's users on the FAQ and on the support chatroom
 * Write new documentation pages
