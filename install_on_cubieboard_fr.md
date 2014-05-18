@@ -4,7 +4,7 @@
 * CubieBoard & µ-SD de 4Gb minimum
 * Un accès internet
 * Un accès à l'administration de la box
-* Une image Debian 7 pour Cubieboard compatible avec YunoHost:
+* Une image Debian 7 pour Cubieboard compatible avec YunoHost :
     * [Cubian](http://cubian.org/)
     * [Cubieez](http://www.cubieforums.com/index.php?topic=442.0)
 
@@ -13,12 +13,12 @@
 #### Sur Windows
 * Téléchargez et installez **[Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/)**
 * Insérez votre carte µ-SD
-* Copiez le fichier `raspberry-latest.img` sur votre carte µ-SD en utilisant Win32 Disk Imager
+* Copiez le fichier `image_CubieBoard.img` sur votre carte µ-SD en utilisant Win32 Disk Imager
 
-#### On GNU/Linux, BSD or Mac OS X
+#### Sur GNU/Linux, BSD or Mac OS X
 * Ouvrez un terminal
 * Insérez votre carte SD
-* Identifiez le nom système de la carte µ-SD en tapant:
+* Identifiez le nom système de la carte µ-SD en tapant :
 
 ```bash
 sudo fdisk -l
@@ -26,13 +26,13 @@ sudo fdisk -l
 
 Le nom devrait prendre la forme `/dev/diskN` sous Mac OS X, où `N` est un nombre, ou `/dev/sdX` sous GNU/Linux, ou `X` est une lettre.
 
-* Copiez l'image en tapant:
+* Copiez l'image en tapant :
 
 ```bash
-sudo dd bs=1M if=/chemin/vers/raspberry-latest.img of=/nom/carteSD
+sudo dd bs=1M if=/chemin/vers/image_CubieBoard.img of=/nom/carteSD
 ```
 
-N'oubliez pas de remplacer `/chemin/vers/raspberry-pi.img` et `/nom/carteSD` par les valeurs appropriées.
+N'oubliez pas de remplacer `/chemin/vers/image_CubieBoard.img` et `/nom/carteSD` par les valeurs appropriées.
 
 L'action peut durer quelques minutes.
 
