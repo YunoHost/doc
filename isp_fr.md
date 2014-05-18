@@ -4,7 +4,7 @@ Voici un liste non-exhaustive des fournisseurs d'accès à Internet par pays, co
 
 Un « **non** » peut entraîner des problèmes d'utilisation de votre serveur ou peut vous obliger à faire des configurations supplémentaires. Le statut entre parenthèse indique le comportement par défaut.
 
-### France
+### France Métropolitaine
 
 | Fournisseur d'accès | Box (modem/routeur) | uPnP activable | port 25 ouvrable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Reverse DNS personnalisable | IP fixe |
 | --- | --- | --- | --- | --- | --- | --- |
