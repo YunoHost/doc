@@ -4,11 +4,11 @@
 
 Ce site permet d'éditer le contenu directement en ligne.
  
-Pour éditer une page, appuyez pour la touche `ESC` ou cliquez sur le bouton "Edit" en bas à droite de la page. Vous pourrez visualiser vos modifications en appuyant de nouveau sur `ESC`, ou en cliquant sur le bouton "Preview" en bas à droite de la page.
+Pour éditer une page, appuyez pour la touche `Échap` ou cliquez sur le bouton "Éditer" en bas à droite de la page. Vous pourrez visualiser vos modifications en appuyant de nouveau sur `Échap`, ou en cliquant sur le bouton "Aperçu" en bas à droite de la page.
 
 Une fois l'édition effectuée, vous pouvez soumettre vos modifications par mail, ou via un [compte](/accounting_fr).
 
-** Note: ** Si vous n'avez pas de compte, vous devrez envoyer vos modifications manuellement.
+** Note : ** Si vous n'avez pas de compte, vous devrez envoyer vos modifications manuellement.
 
 ## Via Github
 
