@@ -5,11 +5,11 @@
 ## Prérequis
 
 * Un Raspberry Pi modèle B *(le modèle A devrait fonctionner, mais n'a jamais été testé)*
-* Une carte SD: une capacité **4Go** (ou plus) et une certification **class10** sont recommandés
+* Une carte SD : une capacité **4Go** (ou plus) et une certification **class10** sont recommandés
 * Un autre ordinateur pour parcourir ce guide et accéder à votre Raspberry Pi
 * Un écran et un clavier sont recommandés pour pouvoir contrôler votre Raspberry Pi si un problème apparaît
 * Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
-* L’**image YunoHost pour Raspberry Pi**, disponible ici:
+* L’**image YunoHost pour Raspberry Pi**, disponible ici :
 
     [http://build.yunohost.org/raspberry-latest.img.gz](http://build.yunohost.org/raspberry-latest.img.gz)
 
@@ -20,10 +20,10 @@
 * Insérez votre carte SD
 * Copiez le fichier `raspberry-latest.img` sur votre carte SD en utilisant Win32 Disk Imager
 
-#### On GNU/Linux, BSD or Mac OS X
+#### Sur GNU/Linux, BSD or Mac OS X
 * Ouvrez un terminal
 * Insérez votre carte SD
-* Identifiez le nom système de la carte SD en tapant:
+* Identifiez le nom système de la carte SD en tapant :
 
 ```bash
 sudo fdisk -l
@@ -31,7 +31,7 @@ sudo fdisk -l
 
 Le nom devrait prendre la forme `/dev/diskN` sous Mac OS X, où `N` est un nombre, ou `/dev/sdX` sous GNU/Linux, ou `X` est une lettre.
 
-* Copiez l'image en tapant:
+* Copiez l'image en tapant :
 
 ```bash
 sudo dd bs=1M if=/chemin/vers/raspberry-latest.img of=/nom/carteSD
@@ -69,7 +69,7 @@ Si vous choisissez de faire l'opération de post-installation directement depuis
 yunohost tools postinstall
 ```
 
-Le mot de passe d'administration et un domaine vous seront demandés. Pour plus de précisions, renseignez-vous sur **[la page appropriée](/postinstall_fr)**
+Le mot de passe d'administration et un nom de domaine vous seront demandés. Pour plus de précisions, renseignez-vous sur **[la page appropriée](/postinstall_fr)**
 
 
 ## <small>4.</small> Mise à jour
