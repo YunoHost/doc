@@ -1,6 +1,6 @@
 #Contribuer
 
-Il existe plusieurs moyens de contribuer à YunoHost:
+Il existe plusieurs moyens de contribuer à YunoHost :
 
 * Parler du projet à votre entourage <3
 * [Traduire les interfaces](https://www.transifex.com/organization/yunohost/) dans votre langue 
