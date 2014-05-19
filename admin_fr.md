@@ -6,6 +6,6 @@ YunoHost est fourni avec une interface Web d’administration. L’autre interfa
 
 ### Accès
 
-L'interface admin est accessible depuis votre instance YunoHost à l'adresse https://votre-domaine.org/ynhadmin (remplacez votre-domaine.org par la bonne valeur)
+L'interface admin est accessible depuis votre instance YunoHost à l'adresse https://votre-domaine.org/yunohost/admin (remplacez votre-domaine.org par la bonne valeur)
 
 <div class="text-center"><img src="http://pix.toile-libre.org/upload/original/1385468349.png"></div>
