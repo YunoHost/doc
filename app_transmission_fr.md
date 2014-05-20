@@ -7,7 +7,7 @@ Avec un navigateur web, si Transmission est installé sur `https://votre-domaine
 ### Comment télécharger un répertoire entier
 
 Pour cela il faut se placer dans le répertoire de téléchargemement et archiver le répertoire :
-```bah
+```bash
 cd /home/yunohost.transmission/completed
 zip -r votre_archive.zip [dossier]
 ```
