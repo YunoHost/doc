@@ -8,4 +8,6 @@ Yunohost has an administrator web interface. The other way to administer your Yu
 
 You can access your administrator web interface at this address: https://your-domain.org/yunohost/admin (replace 'your-domain.org' with your own domain name)
 
-<div class="text-center"><img src="http://pix.toile-libre.org/upload/original/1385468349.png"></div>
+<div class="text-center" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<img src="https://yunohost.org/images/manage_en.png" style="max-width:100%;">
+</div>
