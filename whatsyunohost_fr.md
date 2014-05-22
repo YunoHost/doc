@@ -48,7 +48,7 @@ Tous les efforts sont faits pour simplifier le déploiement sur le plus d'appare
 ### Nom
 
 **YunoHost** vient de l'argot Internet anglais « Y U NO Host » signifiant approximativement « Pourquoi toi ne pas héberger ». Le [mème Internet](http://fr.wikipedia.org/wiki/M%C3%A8me_Internet) qui l'illustre est à peu près celui-ci :
-<div class="text-center"><img style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" src="http://cdn.memegenerator.net/instances/500x/43427997.jpg"></div>
+<div class="text-center"><img style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" src="https://yunohost.org/images/dude_yunohost.jpg"></div>
 
 
 ### Développement
