@@ -140,7 +140,7 @@
 </div>
 
 <div class="col-md-7 text-right">
-<h1>Enjoy <small>your apps and make your little corner of Internet</h1>
+<h1>Enjoy <small>your apps and make your little corner of Internet</small></h1>
 <p><br /><a href="/apps">List of available apps</a></p>
 </div>
 </div>
