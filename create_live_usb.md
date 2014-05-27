@@ -38,7 +38,12 @@ dbus-uuidgen > /var/lib/dbus/machine-id &&
 apt-get update
 ```
 
-6. **chroot** Install the required packages, replace the kernel version if needed.
+6. **chroot** Set the root password to **yunohost**
+```bash
+passwd root
+```
+
+7. **chroot** Install the required packages, replace the kernel version if needed.
 ```bash
 apt-get install --no-install-recommends --yes \
 linux-image-3.2.0-4-486 live-boot \
@@ -48,14 +53,9 @@ pciutils usbutils gparted ntfsprogs hfsprogs rsync dosfstools syslinux partclone
 chromium-browser libnss3-tools openbox
 ```
 
-7. **chroot** NetworkManager can break your network configuration in the chroot environment. You can install it afterward, and CTRL-C during the installation
+8. **chroot** NetworkManager can break your network configuration in the chroot environment. You can install it afterward, and CTRL-C during the installation
 ```bash
 apt-get --no-install-recommends install network-manager
-```
-
-8. **chroot** Set the root password to **yunohost**
-```bash
-passwd root
 ```
 
 9. **chroot** Install YunoHost
