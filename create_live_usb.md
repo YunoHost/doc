@@ -50,7 +50,7 @@ chromium-browser libnss3-tools openbox
 
 7. **chroot** NetworkManager can break your network configuration in the chroot environment. You can install it afterward, and CTRL-C during the installation
 ```bash
-apt-get install network-manager
+apt-get --no-install-recommends install network-manager
 ```
 
 8. **chroot** Set the root password to **yunohost**
