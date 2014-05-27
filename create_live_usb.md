@@ -45,12 +45,12 @@ passwd root
 
 7. **chroot** Install the required packages, replace the kernel version if needed.
 ```bash
-apt-get install --no-install-recommends --yes \
+apt-get install --no-install-recommends \
 linux-image-3.2.0-4-486 live-boot \
 net-tools wireless-tools wpagui tcpdump wget openssh-client \
 xserver-xorg-core xserver-xorg xinit xterm \
 pciutils usbutils gparted ntfsprogs hfsprogs rsync dosfstools syslinux partclone nano pv \
-chromium-browser libnss3-tools openbox
+chromium-browser libnss3-tools openbox git
 ```
 
 8. **chroot** NetworkManager can break your network configuration in the chroot environment. You can install it afterward, and CTRL-C during the installation
