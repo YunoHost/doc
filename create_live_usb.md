@@ -1,6 +1,7 @@
-# Create a YunoHost Live USB key
+# Create a YunoHost Live ISO
 
-Tested on Debian Wheezy (should work on Ubuntu as well). Original tutorial here: http://willhaley.com/blog/create-a-custom-debian-live-environment/
+Tested on Debian Wheezy (should work on Ubuntu as well).    
+Original tutorial here: http://willhaley.com/blog/create-a-custom-debian-live-environment/
 
 **Warning**: I have **highlighted** all the places you should be in the **chroot** environment.
 
