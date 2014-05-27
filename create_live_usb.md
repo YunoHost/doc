@@ -9,9 +9,10 @@ Tested on Debian Wheezy (should work on Ubuntu as well). Original tutorial here:
 sudo apt-get install debootstrap syslinux squashfs-tools genisoimage memtest86+ rsync
 ```
 
-2. Setup the base Debian environment.  I am using wheezy for my distribution and i386 for the architecture.  Please do change your mirror if you are not in the U.S. or know of a mirror close to you.
+2. Setup the base Debian environment.  I am using wheezy for my distribution and i386 for the architecture.  Please do change your mirror if you are not in the Netherlands or know of a mirror close to you.
 ```bash
 mkdir live_boot && cd live_boot
+sudo debootstrap --arch=i386 --variant=minbase wheezy chroot http://ftp.nl.debian.org/debian/
 ```
 
 3. A couple of important steps before we chroot.
