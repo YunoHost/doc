@@ -74,6 +74,7 @@ $(document).ready(function () {
 | Baikal | aquaxp | En dev | https://github.com/aquaxp/baikal_ynh |
 | WebApp + FTP | kload | En test | https://github.com/Kloadut/my_webapp_ynh |
 | MyCryptoChat | mrtino | En dev | https://github.com/mrtino/mycryptochat_ynh |
+| DokuWiki | opi | En test | https://github.com/opi/dokuwiki_ynh |
 
 ### À intégrer
 
@@ -95,7 +96,6 @@ $(document).ready(function () {
 * [FileTea](https://filetea.me)
 * [10er10](https://github.com/dready92/10er10)
 * [Subsonic](http://www.subsonic.org)
-* [DokuWiki](https://www.dokuwiki.org/dokuwiki)
 * [MediaWiki](http://www.mediawiki.org)
 * [Sick Beard](http://sickbeard.com)
 * [Yourls](http://yourls.org)
