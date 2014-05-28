@@ -75,13 +75,14 @@ $(document).ready(function () {
 | WebApp + FTP | kload | En test | https://github.com/Kloadut/my_webapp_ynh |
 | MyCryptoChat | mrtino | En dev | https://github.com/mrtino/mycryptochat_ynh |
 | DokuWiki | opi | En test | https://github.com/opi/dokuwiki_ynh |
+| Wallabag | beudbeud | En test | https://github.com/abeudin/wallabag_ynh |
+| Searx | beudbeud | En test | https://github.com/abeudin/searx_ynh |
 
 ### À intégrer
 
 * [Ethercalc](http://ethercalc.net/) / [Ethersheet](https://ethersheet.org/)
 * [Sympa](http://www.sympa.org/)
 * [OpenSondage](https://github.com/framasoft/OpenSondage) (framadate)
-* [Wallabag (ex-poche)](http://www.wallabag.org/)
 * [Mumble](http://mumble.sourceforge.net/)
 * [Ghost](http://ghost.org)
 * [PluXML](http://www.pluxml.org/)
