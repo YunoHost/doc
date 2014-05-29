@@ -57,7 +57,7 @@ Le fichier `manifest.json` définit les constantes de l'application, un ensemble
 * **developer** : Quelques informations à propos du mainteneur de l'application.
 
 * **multi_instance** : Définit la possibilité de votre application à être installée plusieurs fois. Quand YunoHost essaie d'installer une seconde fois votre application, il remplaçera `id` dans votre script par un `id__2`. Cela signifie que si voulez être `multi_instance`, vous devez mettre toutes les valeurs identifiantes dans les scripts.
-<br><br>**Par exemple**: Dans mon script roundcube, je dois nommer ma base de donnée `roundcube`, mon répertoire d'installation `roundcube` et ma configuration Nginx `roundcube`. De cette manière, la seconde installation de roundcube ne rentrera pas en conflit, et sera installée dans la base de donnée `roundcube__2`, dans le répertoire `roundcube__2`, et avec la configuration Nginx `roundcube__2`.
+<br><br>**Par exemple** : Dans mon script roundcube, je dois nommer ma base de donnée `roundcube`, mon répertoire d'installation `roundcube` et ma configuration Nginx `roundcube`. De cette manière, la seconde installation de roundcube ne rentrera pas en conflit, et sera installée dans la base de donnée `roundcube__2`, dans le répertoire `roundcube__2`, et avec la configuration Nginx `roundcube__2`.
 
 * **arguments** : Les paramètres à demander aux administrateurs du serveur lors de l'installation. `name` est l'identifiant du paramètre, et `ask` la question à poser (au minimum en Anglais -- `en`) que vous pouvez traduire de la même manière que la description ci-dessus. Vous pouvez aussi proposer une valeur par défaut (`default`) et un exemple (`example`) pour aider l'administrateur à remplir le formulaire d’installation.
 
