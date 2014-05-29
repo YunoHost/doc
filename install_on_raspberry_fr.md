@@ -47,7 +47,7 @@ L'action peut durer quelques minutes, votre carte SD sera ensuite prête à êtr
 * N'oubliez pas de **brancher un écran** si vous souhaitez suivre le démarrage, et un clavier si vous souhaitez contrôler votre Raspberry Pi directement
 * Branchez le câble d'alimentation USB et patientez jusqu’à voir apparaître un grand `Y` blanc
 
-Vous devriez être en mesure de voir le champs `IP address` sur l'écran, écrivez cette adresse : C'est l'**adresse IP locale** de votre Raspberry Pi.
+Vous devriez être en mesure de voir le champs `IP address` sur l'écran, écrivez cette adresse : c'est l'**adresse IP locale** de votre Raspberry Pi.
 
 ## <small>3.</small> Post-Installation
 
@@ -55,7 +55,7 @@ Vous avez deux manières distinctes de configurer YunoHost, vous n'avez besoin d
 
 ### Web
 
-Sur votre autre ordinateur, ouvrez un navigateur Web et tapez l'adresse IP locale de votre Raspberry Pi dans la bar d'adresse. Elle devrait ressembler approximativement à `https://192.168.1.3`.
+Sur votre autre ordinateur, ouvrez un navigateur web et tapez l'adresse IP locale de votre Raspberry Pi dans la bar d'adresse. Elle devrait ressembler approximativement à `https://192.168.1.3`.
 
 Un message d'erreur apparaît, ignorez-le en cliquant sur le bouton « **Poursuivre quand même** » ou « **Ajouter une exception** ».
 
@@ -74,7 +74,7 @@ Le mot de passe d'administration et un nom de domaine vous seront demandés. Pou
 
 ## <small>4.</small> Mise à jour
 
-Il est conseillé de procéder à la mise à jour de YunoHost **dès que possible**. Pour ce faire, rendez-vous sur l'interface d'administration Web, en allant sur `https://<votre_domaine.fr>/yunohost/admin` dans un navigateur, puis cliquez sur « **Outils** », et « **Mettre à jour le système** ».
+Il est conseillé de procéder à la mise à jour de YunoHost **dès que possible**. Pour ce faire, rendez-vous sur l'interface d'administration web, en allant sur `https://<votre_domaine.fr>/yunohost/admin` dans un navigateur, puis cliquez sur « **Outils** », et « **Mettre à jour le système** ».
 
 L'opération peut durer quelques minutes, confirmez ensuite la mise à jour des paquets et patientez encore quelques minutes.
 
