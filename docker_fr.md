@@ -1,6 +1,6 @@
 # Docker et YunoHost
 
-Voici une petite page de doc en guise de mémo sur la manière de test/développer YunoHost avec Docker.
+Voici une petite page de documentation en guise de mémo sur la manière de test/développer YunoHost avec Docker.
 
 ---
 
