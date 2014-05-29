@@ -2,7 +2,7 @@
 
 <span class="badge">Publié le 15 mars 2014 à 18h30</span>
 
-Comme vous l'avez sûrement remarqué, nous avons très largement changé notre site Internet et notre plateforme de documentation. Nous utilisons à présent [Simone](https://github.com/Kloadut/Simone), une solution « faite-maison » qui se concentre sur le contenu et la lisibilité. Les pages sont accessibles via [Github](https://github.com/YunoHost/doc), vous pouvez donc faire des **pull requests** ou les éditer directement sur ce site --*essayez `ESC` pour voir* ;-)
+Comme vous l'avez sûrement remarqué, nous avons très largement changé notre site Internet et notre plateforme de documentation. Nous utilisons à présent [Simone](https://github.com/Kloadut/Simone), une solution « faite-maison » qui se concentre sur le contenu et la lisibilité. Les pages sont accessibles via [Github](https://github.com/YunoHost/doc), vous pouvez donc faire des **pull requests** ou les éditer directement sur ce site --*essayez `Échap` pour voir* ;-)
 
 D'autre part, nous vous présentons aujourd’hui notre nouvelle [page d'accueil](/index_fr) ainsi que plusieures autres pages : Vous devriez pouvoir naviguer entre elles sans problème.
 
@@ -30,12 +30,12 @@ N'hésitez pas à venir nous laisser un mot sur notre salon de discussion, acces
 
 Grosse annonce aujourd'hui : nous sortons une nouvelle version bêta4 (probablement la **dernière bêta** avant la version RC). Un tas de choses ont été améliorées sur et autour du logiciel.
 
-Comme d'habitude, voici une liste non-exhaustive des changements:
+Comme d'habitude, voici une liste non-exhaustive des changements :
 
-* De nombreuses fonctionnalités ont été ajoutée à l'**interface d'administration**, en particulier la gestion des droits par app, une vue de monitoring et la gestion des services.
+* De nombreuses fonctionnalités ont été ajoutée à l'**interface d'administration**, en particulier la gestion des droits par applications, une vue de monitoring et la gestion des services.
 * Un **panel utilisateur** minimal a été implémenté dans le SSO. Il sera amélioré rapidement.
 * La **configuration mail** a été simplfiée. Nous gardons finalement le couple **Amavis/SpamAssassin** pour toutes les instances.
-* De nouvelles apps ont été ajoutées: **Zerobin**, **PHPMyAdmin** et **Jirafeau** (et [plus bientôt](/apps_fr) !).
+* De nouvelles applications ont été ajoutées : **Zerobin**, **PHPMyAdmin** et **Jirafeau** (et [plus bientôt](/apps_fr) !).
 * L'interception des URLs dans **SSOwat** a été légèrement améliorée.
 
 Et préparez-vous à de nombreux changements en vue de la RC :
