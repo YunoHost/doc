@@ -42,10 +42,10 @@ Vous pouvez vérifier que le conteneur est bien buildé avec la commande `docker
 ## Démarrer le conteneur
 
 ```bash
-docker run -d -t yunohost/init /sbin/init
+docker run -d -t yunohost:init /sbin/init
 ```
 
-Cette commande lancera un conteneur sur la base de l'image `yunohost/init` que vous venez de créer, vous pourrez ensuite postinstaller tout ça en vous rendant en HTTP sur l'IP du conteneur (le premier conteneur a généralement comme IP 172.17.0.2)
+Cette commande lancera un conteneur sur la base de l'image `yunohost`, tag `init` que vous venez de créer, vous pourrez ensuite postinstaller tout ça en vous rendant en HTTP sur l'IP du conteneur (le premier conteneur a généralement comme IP 172.17.0.2)
 
 **Remarque :** Vous pourrez avoir besoin de forwarder certains ports de votre conteneur docker, pour cela consultez les pages de doc suivantes :
 
