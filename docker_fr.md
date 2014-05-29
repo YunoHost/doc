@@ -32,7 +32,7 @@ sudo pacman -Sy docker
 
 La commande suivante va télécharger une image Debian Wheezy de base, y cloner le script et installer YunoHost.
 ```bash
-docker build -t yunohost/init https://raw.githubusercontent.com/YunoHost/Kremlin/master/docker/Dockerfile
+docker build -t yunohost:init https://raw.githubusercontent.com/YunoHost/Kremlin/master/docker/Dockerfile
 ```
 
 Vous pouvez vérifier que le conteneur est bien buildé avec la commande `docker images`
