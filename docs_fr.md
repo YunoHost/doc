@@ -1,7 +1,7 @@
 #Documentation
 
 <br />
-La documentation de YunoHost s'articule globalement autour de 3 sections:
+La documentation de YunoHost s'articule globalement autour de 3 sections :
 
 <br />
 <a class="btn btn-primary" href="/admindoc_fr">Guide de l'administrateur</a> &nbsp;
@@ -17,7 +17,7 @@ La documentation de YunoHost s'articule globalement autour de 3 sections:
 
 <br />
 <br />
-Et si vous cherchez à en savoir plus sur YunoHost, vous serez peut-être intéressé par ces pages:
+Et si vous cherchez à en savoir plus sur YunoHost, vous serez peut-être intéressé par ces pages :
  * [Qu'est-ce que YunoHost ?](/whatsyunohost_fr)
  * [Dernière nouvelles](/news_fr)
  * [Roadmap](/roadmap_fr)
