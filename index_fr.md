@@ -85,7 +85,7 @@
   min-width: 150px; 
   margin: 40px auto 0;">
 <a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em" href="/try_fr">Essayer</a>
-<p class="text-muted text-center"><small>YunoHost v2 • beta4</small></p>
+<p class="text-muted text-center"><small>YunoHost v2 • bêta4</small></p>
 </div>
 
 <br />
