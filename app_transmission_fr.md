@@ -2,18 +2,18 @@
 
 ### Téléchargement des fichiers complétés
 
-Avec un navigateur web, si Transmission est installé sur `https://votre-domaine.org/torrent/` : https://votre-domaine.org/torrent/downloads/
+Avec un navigateur web, si Transmission est installé sur `https://votre-domaine.org/torrent/` vous pourrez télécharger vos fichiers complétés à l’adresse suivante : https://votre-domaine.org/torrent/downloads/
 
 ### Comment télécharger un répertoire entier
 
-Pour cela il faut se placer dans le répertoire de téléchargemement et archiver le répertoire :
+En ligne de commande, il faut se placer dans le répertoire de téléchargemement et archiver le répertoire :
 ```bash
 cd /home/yunohost.transmission/completed
 zip -r votre_archive.zip [dossier]
 ```
-### Transfert de fichier de son ordinateur de bureau vers YunoHost pour partager
+### Transfert de fichier de son ordinateur de bureau vers YunoHost pour le partage
 #### Avec SFTP
-À partir de gestionnaire de fichier :
+À partir de votre gestionnaire de fichier :
 ```bash
 sftp://<utilisateur>@<votre-domaine.org>/home/yunohost.transmission/completed
 ```
