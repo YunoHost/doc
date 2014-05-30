@@ -8,15 +8,15 @@ Basically YunoHost **automatically installs** and configures some services aroun
 
 It can thus be considered as a distribution, including the following softwares:
 
-* [Nginx](http://nginx.org/)
-* [Postfix](http://www.postfix.org/)
-* [Metronome](http://www.lightwitch.org/metronome)
+* [Nginx](http://nginx.org/) : a web server
+* [Postfix](http://www.postfix.org/) : a SMTP e-mail server
+* [Dovecot](http://www.dovecot.org/) : a IMAP and a POP3 e-mail server
+* [Amavis](http://amavis.org/) : an antispam
+* [Metronome](http://www.lightwitch.org/metronome) : a XMPP server
 * [OpenLDAP](http://www.openldap.org/)
-* [Dovecot](http://www.dovecot.org/)
-* [Amavis](http://amavis.org/)
-* [Bind](https://www.isc.org/downloads/bind/)
-* [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs)
-* [SSOwat](https://github.com/Kloadut/SSOwat)
+* [Bind](https://www.isc.org/downloads/bind/) : a DNS server
+* [SSOwat](https://github.com/Kloadut/SSOwat) : a (SSO) system of web autentification
+* [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs) : a system of backup (not all ready running)
 
 ### App system
 
@@ -24,7 +24,7 @@ Additionally, YunoHost comes with an "app" system which is, in other words, **a 
 
 The most interesting thing about this system is that **web applications benefits from the LDAP** through the SSO (Single Sign On), which authenticate server's users in every installed apps at the same time.
 
-You may be interessed in reading the [packaging documentation](/packaging_apps) and the [SSOwat Github page](https://github.com/Kloadut/SSOwat) to go further.
+You may be interessed in reading the [packaging documentation](/packaging_apps) and the [SSOwat GitHub page](https://github.com/Kloadut/SSOwat) to go further.
 
 ### Origin
 
