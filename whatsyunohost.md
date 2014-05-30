@@ -8,15 +8,15 @@ Basically YunoHost **automatically installs** and configures some services aroun
 
 It can thus be considered as a distribution, including the following softwares:
 
-* [Nginx](http://nginx.org/) : a web server
-* [Postfix](http://www.postfix.org/) : a SMTP e-mail server
-* [Dovecot](http://www.dovecot.org/) : a IMAP and a POP3 e-mail server
-* [Amavis](http://amavis.org/) : an antispam
-* [Metronome](http://www.lightwitch.org/metronome) : a XMPP server
+* [Nginx](http://nginx.org/): a web server
+* [Postfix](http://www.postfix.org/): a SMTP e-mail server
+* [Dovecot](http://www.dovecot.org/): a IMAP and a POP3 e-mail server
+* [Amavis](http://amavis.org/): an antispam
+* [Metronome](http://www.lightwitch.org/metronome): a XMPP server
 * [OpenLDAP](http://www.openldap.org/)
-* [Bind](https://www.isc.org/downloads/bind/) : a DNS server
-* [SSOwat](https://github.com/Kloadut/SSOwat) : a (SSO) system of web autentification
-* [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs) : a system of backup (not all ready running)
+* [Bind](https://www.isc.org/downloads/bind/): a DNS server
+* [SSOwat](https://github.com/Kloadut/SSOwat): a (SSO) system of web autentification
+* [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs): a system of backup (not all ready running)
 
 ### App system
 
