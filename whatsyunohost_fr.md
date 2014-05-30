@@ -6,17 +6,17 @@ YunoHost est un **système d'exploitation serveur** visant à simplifier l'auto-
 
 Concrètement, YunoHost **installe et configure automatiquement** quelques services autour de LDAP, et **fourni des outils** pour les administrer.
 
-On peut donc le considérer comme une distribution, comprenant les logiciels suivant:
+On peut donc le considérer comme une distribution, comprenant les logiciels suivant :
 
-* [Nginx](http://nginx.org/)
-* [Postfix](http://www.postfix.org/)
-* [Metronome](http://www.lightwitch.org/metronome)
+* [Nginx](http://nginx.org/) : un serveur web
+* [Postfix](http://www.postfix.org/) : un serveur de messagerie électronique SMTP
+* [Dovecot](http://www.dovecot.org/) : un serveur de messagerie électronique IMAP et POP3
+* [Amavis](http://amavis.org/) : un antispam
+* [Metronome](http://www.lightwitch.org/metronome) : un serveur XMPP
 * [OpenLDAP](http://www.openldap.org/)
-* [Dovecot](http://www.dovecot.org/)
-* [Amavis](http://amavis.org/)
-* [Bind](https://www.isc.org/downloads/bind/)
-* [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs)
-* [SSOwat](https://github.com/Kloadut/SSOwat)
+* [Bind](https://www.isc.org/downloads/bind/) : un serveur de DNS
+* [SSOwat](https://github.com/Kloadut/SSOwat) : un (SSO) système d’authentification web
+* [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs) : un système de sauvegarde (par encore mis en place)
 
 ### Système d'app
 
@@ -24,7 +24,7 @@ En complément, YunoHost fourni un système d'« app » qui n'est autre qu'un **
 
 La chose la plus intéressante avec ce système est que **les applications web profitent de la base LDAP** via le SSO (Single Sign On), qui authentifie les utilisateur du serveur avec un unique nom d'utilisateur/mot de passe.
 
-Vous serez peut-être intéressé à la lecture de la [documentation sur le packaging](/packaging_apps_fr) et la page Github d'[SSOwat](https://github.com/Kloadut/SSOwat) pour aller plus loin.
+Vous serez peut-être intéressé à la lecture de la [documentation sur le packaging](/packaging_apps_fr) et la page GitHub d'[SSOwat](https://github.com/Kloadut/SSOwat) pour aller plus loin.
 
 ### Origine
 
