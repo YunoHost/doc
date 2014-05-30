@@ -73,10 +73,11 @@ $(document).ready(function () {
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
 | Baikal | aquaxp | En dev | https://github.com/aquaxp/baikal_ynh |
 | WebApp + FTP | kload | En test | https://github.com/Kloadut/my_webapp_ynh |
-| MyCryptoChat | mrtino | En dev | https://github.com/mrtino/mycryptochat_ynh |
+| MyCryptoChat | mrtino | En test | https://github.com/mrtino/mycryptochat_ynh |
 | DokuWiki | opi | En test | https://github.com/opi/dokuwiki_ynh |
 | Wallabag | beudbeud | En test | https://github.com/abeudin/wallabag_ynh |
 | Searx | beudbeud | En test | https://github.com/abeudin/searx_ynh |
+| MediaWiki | kload | En test | https://github.com/kloadut/mediawiki_ynh |
 
 ### À intégrer
 
@@ -97,7 +98,6 @@ $(document).ready(function () {
 * [FileTea](https://filetea.me)
 * [10er10](https://github.com/dready92/10er10)
 * [Subsonic](http://www.subsonic.org)
-* [MediaWiki](http://www.mediawiki.org)
 * [Sick Beard](http://sickbeard.com)
 * [Yourls](http://yourls.org)
 * [Cops](http://blog.slucas.fr/fr/oss/calibre-opds-php-server)
