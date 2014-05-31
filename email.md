@@ -9,7 +9,7 @@ YunoHost provide:
 ###Heavy email client
 You can acces to your emails throud an heavy email client such as Mozilla Thunderbird or Évolution.
 
-You will need the domain name, the user and it’s password.
+You will need your email adress and your password.
 
 Settings:
 
@@ -19,4 +19,5 @@ SMTP  465  SSL/TLS
 
 ###Migration
 
-You will need to move the folder /val/mail/ to your new server YunoHost.
+Your e-mails are saved in the forder /val/mail/.
+You will need to move that folder to your new server YunoHost.
