@@ -15,10 +15,10 @@
 * ~~uPnP rework *(kload, titoko)*~~
 * ~~Add warning in a sample backup view *(opi)*~~
 * ~~User interface design *(Courgette, opi)*~~
-* Moulinette/API refactoring *(jerome)*
+* ~~Moulinette/API refactoring *(jerome)*~~
 * Security check and complete patterns
 * ~~I18n *(opi, jerome)*~~
-* Lack of hairpinning hack *(kload)*
+* ~~Lack of hairpinning hack *(kload)*~~
 
 
 ## v2.0
@@ -28,4 +28,5 @@
 
 ## v2.1
 
-* TO DO
+* Backup system
+* ...
