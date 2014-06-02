@@ -69,7 +69,7 @@ cd /tmp/yunohost_install && ./autoinstall_yunohostv2
 ```bash
 echo "127.0.0.1 yunohost.org" >> /etc/hosts
 echo "chromium --user-data-dir=/root/.config/chromium --app=https://yunohost.org/yunohost/admin/" >> /etc/xdg/openbox/autostart
-echo -e "if [ -z \"\$DISPLAY\" ] && [ $(tty) == /dev/tty1 ]; \nthen \n    startx \nfi" >> /root/.bashrc
+echo -e "if [ -z \"\$DISPLAY\" ] && [ \$(tty) == /dev/tty1 ]; \nthen \n    startx \nfi" >> /root/.bashrc
 certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n YunoHostCA  -i /etc/yunohost/certs/yunohost.org/ca.pem
 certutil -d sql:$HOME/.pki/nssdb -A -t "P,," -n YunoHostCrt -i /etc/yunohost/certs/yunohost.org/crt.pem
 ```
