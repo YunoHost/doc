@@ -78,6 +78,7 @@ $(document).ready(function () {
 | Wallabag | beudbeud | En test | https://github.com/abeudin/wallabag_ynh |
 | Searx | beudbeud | En test | https://github.com/abeudin/searx_ynh |
 | MediaWiki | kload | En test | https://github.com/kloadut/mediawiki_ynh |
+| Linux Dash | opi | en test | https://github.com/opi/linuxdash_ynh |
 
 ### À intégrer
 
