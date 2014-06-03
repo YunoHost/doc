@@ -57,7 +57,7 @@
   position: absolute; 
   top: 90%;
   text-align: center;">
-<a style="color: #777" href="/news_fr">últimas noticias</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://ask.yunohost.org" target="_blank">Preguntas más frecuentes</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs_fr">Documentación</a>
+<a style="color: #777" href="http://news.yunohost.org">últimas noticias</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://ask.yunohost.org" target="_blank">Preguntas más frecuentes</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs_fr">Documentación</a>
 </div>
 
 </div>
@@ -191,7 +191,7 @@
 <a class="btn btn-lg btn-block btn-info" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://ask.yunohost.org" target="_blank">Preguntas más frecuentes</a>
 <a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/whatsyunohost_fr">Que es YunoHost ?</a>
 <a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/contribute_fr">Cómo contribuir</a>
-<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/news_fr">últimas noticias</a>
+<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="http://news.yunohost.org">últimas noticias</a>
 </div>
 </div>
 
@@ -220,7 +220,7 @@
 
 <div class="text-center">
 <!--<img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />-->
-<h5><small>2014 • Datalove <3</small></h5>
+<h5><small>2014 • Datalove <3 • <a href="https://twitter.com/yunohost" style="color:#999">@YunoHost on Twitter</a>
 </div>
 
 </div>
