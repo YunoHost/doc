@@ -223,7 +223,7 @@
 
 <div class="text-center">
 <!--<img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />-->
-<h5><small>2014 • Datalove <3</small></h5>
+<h5><small>2014 • Datalove <3 • <a href="https://twitter.com/yunohost" style="color:#999">@YunoHost on Twitter</a></small></h5>
 </div>
 
 </div>
