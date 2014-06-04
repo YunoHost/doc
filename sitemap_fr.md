@@ -16,7 +16,6 @@
             * [Sur un serveur dédié](/install_on_dedicated_server_fr)
         * [Application](/apps_fr)
 
-
     * [Guide de l'utilisateur](/userdoc_fr)
 
     * [Guide du contributeur](/contribute_fr)
