@@ -22,7 +22,7 @@
 
 <a class="btn btn-lg btn-default" href="/copy_image" target="_blank">1. Copy image to the SD card</a>
 
-<a class="btn btn-lg btn-default" href="/boot_up" target="_blank">2. Plug & boot</a>
+<a class="btn btn-lg btn-default" href="/plug_and_boot" target="_blank">2. Plug & boot</a>
 
 <a class="btn btn-lg btn-default" href="/postinstall" target="_blank">3. Post-install</a>
 
