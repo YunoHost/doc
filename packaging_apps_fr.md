@@ -20,6 +20,7 @@ Le fichier `manifest.json` définit les constantes de l'application, un ensemble
         "en": "Open Source Webmail software",
         "fr": "Webmail Open Source"
     },
+    "license": "GPL-3",
     "developer": {
         "name": "kload",
         "email": "kload@kload.fr",
@@ -53,6 +54,8 @@ Le fichier `manifest.json` définit les constantes de l'application, un ensemble
 * **id** : L’identifiant unique de l'application. Vous devez vous assurer qu'il est unique avant de soumettre une demande d'intégration de l'application.
 
 * **description** : La description complète de l'application. Vous pouvez la détailler comme bon vous semble. Seulement `en` (English) est requis, mais vous pouvez la traduire en `fr` :)
+
+* **license** : La licence avec laquelle l'application est distribuée. Veuillez utiliser le nom abrégé de la licence, par exemple `GPL-3` pour la GNU General Public License version 3. Vous pouvez trouver une liste des abréviations standards ici : https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/#license-field
 
 * **developer** : Quelques informations à propos du mainteneur de l'application.
 
