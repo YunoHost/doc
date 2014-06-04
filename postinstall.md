@@ -14,11 +14,14 @@ The step called "**post-installation**" is actually the initial configuration of
 
 *<p class="text-muted">Preview of the command-line post-installation</p>*
 
----
+<br>
+<br>
+
+<div class="alert alert-warning">
+**Attention**: The post-installation may break your system if you interrupt it, be aware.
+</div>
 
 Two configuration parameters will be asked: the **main domain name** and the **administration password**.
-
-**Attention**: The post-installation may break your system if you interrupt it, be aware.
 
 ### Main domain
 
