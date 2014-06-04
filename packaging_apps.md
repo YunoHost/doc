@@ -20,6 +20,7 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
         "en": "Open Source Webmail software",
         "fr": "Webmail Open Source"
     },
+    "license": "GPL-3",
     "developer": {
         "name": "kload",
         "email": "kload@kload.fr",
@@ -53,6 +54,8 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
 * **id** : The unique ID of the app. You have to ensure that this ID is unique before submit an app integration request.
 
 * **description** : The complete description of the app. You can make it as detailed as you feel it should be. Only `en` is required right now, but you can translate the description by prepending the locale prefix.
+
+* **license** : The license under which the app is distributed. Please use the short name of the license, e.g. `GPL-3` for the GNU General Public License v3. You can find a list of standard abbreviations here: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/#license-short-name
 
 * **developer** : Some information about the app maintainer (you!).
 
