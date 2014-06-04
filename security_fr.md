@@ -12,6 +12,7 @@ Deux points sont néanmoins importants à noter :
 
 *Si vous avez besoin de conseil, n'hésitez pas à [nous demander](/support_fr).*
 
+---
 
 ## Améliorer la sécurtié
 
@@ -42,6 +43,8 @@ PasswordAuthentication no
 ```
 
 Sauvegardez et relancez le démon SSH.
+
+---
 
 ### Désactivation de l'API YunoHost
 
