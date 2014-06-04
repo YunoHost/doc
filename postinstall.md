@@ -2,9 +2,23 @@
 
 The step called "**post-installation**" is actually the initial configuration of YunoHost. It has to be done just after the installation of the system itself.
 
-**Attention**: The post-installation may break your system if you interrupt it, be aware.
+<br>
+
+<img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="https://yunohost.org/images/postinstall.png">
+
+*<p class="text-muted">Preview of the Web post-installation</p>*
+
+<br>
+
+<img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="https://yunohost.org/images/postinstall_cli.png">
+
+*<p class="text-muted">Preview of the command-line post-installation</p>*
+
+---
 
 Two configuration parameters will be asked: the **main domain name** and the **administration password**.
+
+**Attention**: The post-installation may break your system if you interrupt it, be aware.
 
 ### Main domain
 
