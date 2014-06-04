@@ -10,6 +10,7 @@ Two things remain important to note:
 
 *If you need some advises, do not hesitate to [ask us](/support).*
 
+---
 
 ## Improve security
 
@@ -40,6 +41,8 @@ PasswordAuthentication no
 ```
 
 Save and restart SSH daemon.
+
+---
 
 ### Deactivate YunoHost API
 
