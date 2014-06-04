@@ -2,11 +2,17 @@
 
 YunoHost est un **système d'exploitation serveur** visant à simplifier l'auto-hébergement de services Internet. Il est basé et reste totalement compatible avec [Debian GNU/Linux](http://debian.org).
 
+<img src="https://yunohost.org/images/debian-logo.png" width=100>
+
+---
+
 ### Logiciels
 
 Concrètement, YunoHost **installe et configure automatiquement** quelques services autour de LDAP, et **fourni des outils** pour les administrer.
 
 On peut donc le considérer comme une distribution, comprenant les logiciels suivant :
+
+<img src="https://yunohost.org/images/nginx.png"><img src="https://yunohost.org/images/postfix.png"><img src="https://yunohost.org/images/dovecot.png"><img src="https://yunohost.org/images/spamassassin.png">
 
 * [Nginx](http://nginx.org/) : un serveur web
 * [Postfix](http://www.postfix.org/) : un serveur de messagerie électronique SMTP
@@ -18,6 +24,8 @@ On peut donc le considérer comme une distribution, comprenant les logiciels sui
 * [SSOwat](https://github.com/Kloadut/SSOwat) : un (SSO) système d’authentification web
 * [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs) : un système de sauvegarde (par encore mis en place)
 
+---
+
 ### Système d'app
 
 En complément, YunoHost fourni un système d'« app » qui n'est autre qu'un **dépôt communautaire** de scripts aidant à installer des services et applications web supplémentaires.
@@ -25,6 +33,10 @@ En complément, YunoHost fourni un système d'« app » qui n'est autre qu'un **
 La chose la plus intéressante avec ce système est que **les applications web profitent de la base LDAP** via le SSO (Single Sign On), qui authentifie les utilisateur du serveur avec un unique nom d'utilisateur/mot de passe.
 
 Vous serez peut-être intéressé à la lecture de la [documentation sur le packaging](/packaging_apps_fr) et la page GitHub d'[SSOwat](https://github.com/Kloadut/SSOwat) pour aller plus loin.
+
+<img src="https://yunohost.org/images/roundcube.png"><img src="https://yunohost.org/images/ttrss.png"><img src="https://yunohost.org/images/wordpress.png"><img src="https://yunohost.org/images/transmission.png"><img src="https://yunohost.org/images/jappix.png">
+
+---
 
 ### Origine
 
@@ -37,6 +49,7 @@ Il ne manquait en fait qu'une interface d’administration au serveur de Beudbeu
 
 Constatant l'engouement croissant autour de YunoHost et de l'auto-hébergement en général, les développeurs et les nouveaux contributeurs ont alors décidé de prendre le cap d'une version 2, plus accessible, plus extensible, plus puissante, et qui prépare du bon café commerce équitable pour les lutins de Laponie.
 
+---
 
 ### But
 
@@ -44,12 +57,14 @@ Le but de YunoHost est de rendre accessible au plus grand nombre l'installation 
 
 Tous les efforts sont faits pour simplifier le déploiement sur le plus d'appareil possible et dans toutes les conditions (chez soi, sur son serveur dédié ou sur un VPS).
 
+---
 
 ### Nom
 
 **YunoHost** vient de l'argot Internet anglais « Y U NO Host » signifiant approximativement « Pourquoi toi ne pas héberger ». Le [mème Internet](http://fr.wikipedia.org/wiki/M%C3%A8me_Internet) qui l'illustre est à peu près celui-ci :
 <div class="text-center"><img style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" src="https://yunohost.org/images/dude_yunohost.jpg"></div>
 
+---
 
 ### Développement
 
@@ -59,11 +74,15 @@ Le tout est bien entendu **entièrement libre**. La philosophie de l'auto-héber
 
 N'hésitez pas à visiter la page « [contribuez](/contribute_fr) ».
 
+---
+
 ### Sécurité
 
 Tous les efforts ont été déployés pour sécuriser YunoHost, et **chiffrer tous les protocoles**. Une explication plus détaillée est disponible sur la page appropriée :
 
 [yunohost.org/security_fr](/security_fr)
+
+---
 
 ### Qu'est-ce que YunoHost n'est pas ?
 
