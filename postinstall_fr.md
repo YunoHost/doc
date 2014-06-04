@@ -18,6 +18,8 @@ L'étape appelée « **post-installation** » est en fait l'étape de configurat
 
 Deux paramètres vous sont demandés lors de cette étape : le **nom de domaine principal** et le **mot de passe d'administration**.
 
+**Attention**: The post-installation may break your system if you interrupt it, be aware.
+
 ### Domaine principal
 
 C'est le premier nom de domaine qui permettra l'accès à votre serveur, mais également celui qui accueillera le **portail d'authentification** des utilisateurs. Il sera donc **visible par tout le monde**, choisissez-le en conséquence.
