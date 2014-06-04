@@ -81,10 +81,10 @@
 
 
 <div class="text-center" style="
-  width: 23%; 
+  width: auto; 
   min-width: 150px; 
   margin: 40px auto 0;">
-<a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em" href="/try_fr">Intentar</a>
+<a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em;margin-bottom:0.5em;" href="/try">Intentar</a> <a class="btn btn-success btn-lg" style="min-width: 150px; font-size: 1.5em;margin-bottom:0.5em;" href="/whatsyunohost">Obtenga más información</a>
 <p class="text-muted text-center"><small>YunoHost v2 • bêta4</small></p>
 </div>
 
