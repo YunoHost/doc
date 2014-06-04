@@ -14,9 +14,8 @@ L'étape appelée « **post-installation** » est en fait l'étape de configurat
 
 *<p class="text-muted">Aperçu de la post-installation en ligne de commande</p>*
 
----
-
-
+<br>
+<br>
 
 <div class="alert alert-warning">
 **Attention** : Mal exécutée, la post-installation peut casser votre système. Pensez à ne pas l'interrompre inopinément.
