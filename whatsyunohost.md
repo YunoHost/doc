@@ -2,11 +2,17 @@
 
 YunoHost is a **server operating system** aiming to make self-hosting accessible to everyone. It is based on Debian GNU/Linux and is fully compatible with it.
 
+<img src="https://yunohost.org/images/debian-logo.png" width=100>
+
+---
+
 ### Softwares
 
 Basically YunoHost **automatically installs** and configures some services around LDAP, and **provides tools** to administrate them.
 
 It can thus be considered as a distribution, including the following softwares:
+
+<img src="https://yunohost.org/images/nginx.png"><img src="https://yunohost.org/images/postfix.png"><img src="https://yunohost.org/images/dovecot.png"><img src="https://yunohost.org/images/spamassassin.png">
 
 * [Nginx](http://nginx.org/): a web server
 * [Postfix](http://www.postfix.org/): a SMTP e-mail server
@@ -18,6 +24,8 @@ It can thus be considered as a distribution, including the following softwares:
 * [SSOwat](https://github.com/Kloadut/SSOwat): a (SSO) system of web autentification
 * [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs): a system of backup (not all ready running)
 
+---
+
 ### App system
 
 Additionally, YunoHost comes with an "app" system which is, in other words, **a community repository** of validated helper scripts to install further services or web applications.
@@ -25,6 +33,10 @@ Additionally, YunoHost comes with an "app" system which is, in other words, **a 
 The most interesting thing about this system is that **web applications benefits from the LDAP** through the SSO (Single Sign On), which authenticate server's users in every installed apps at the same time.
 
 You may be interessed in reading the [packaging documentation](/packaging_apps) and the [SSOwat GitHub page](https://github.com/Kloadut/SSOwat) to go further.
+
+<img src="https://yunohost.org/images/roundcube.png"><img src="https://yunohost.org/images/ttrss.png"><img src="https://yunohost.org/images/wordpress.png"><img src="https://yunohost.org/images/transmission.png"><img src="https://yunohost.org/images/jappix.png">
+
+---
 
 ### Origin
 
@@ -37,6 +49,7 @@ All that was needed was an administration interface for Beudbeud's server to mak
 
 Noting the growing enthusiasm around YunoHost and around self-hosting in general, the original developers along with new contributors decided to start work on version 2, more extensible, more powerful, more easy-to-use, and one that makes a nice cup of fair-trade coffee for the elves of Lapland.
 
+---
 
 ### Goal
 
@@ -44,11 +57,14 @@ YunoHost's goal is to make installing and administering a server accessible to a
 
 Everything is done with the goal of simplifying deployment on as many different kinds of hardware as possible, and in any condition (at home, on a dedicated server or on a VPS). 
 
+---
 
 ### Name
 
 **YunoHost** comes from the jargon "Y U NO Host". The [Internet meme](https://en.wikipedia.org/wiki/Internet_meme) should illustrate it:
 <div class="text-center"><img style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" src="https://yunohost.org/images/dude_yunohost.jpg"></div>
+
+---
 
 ### Development
 
@@ -58,11 +74,15 @@ YunoHost is **entirely** a free software project. The philosophy of self-hosting
 
 Do not hesitate to visit the ["contribute" page](/contribute).
 
+---
+
 ### Security
 
 All the efforts have been made to keep YunoHost secure, and **communications encrypted**. You can read more about this subject on the related page :
 
 [https://yunohost.org/security](/security)
+
+---
 
 ### What YunoHost is not ?
 
