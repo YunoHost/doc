@@ -18,7 +18,7 @@ L'étape appelée « **post-installation** » est en fait l'étape de configurat
 
 
 
-<div class="alert alert-danger">
+<div class="alert alert-warning">
 **Attention** : Mal exécutée, la post-installation peut casser votre système. Pensez à ne pas l'interrompre inopinément.
 </div>
 
