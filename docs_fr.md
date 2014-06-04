@@ -19,6 +19,6 @@ La documentation de YunoHost s'articule globalement autour de 3 sections :
 <br />
 Et si vous cherchez à en savoir plus sur YunoHost, vous serez peut-être intéressé par ces pages :
  * [Qu'est-ce que YunoHost ?](/whatsyunohost_fr)
- * [Dernière nouvelles](/news_fr)
+ * [Dernière nouvelles](http://news.yunohost.org)
  * [Roadmap](/roadmap_fr)
  * [Sécurité](/security_fr)
