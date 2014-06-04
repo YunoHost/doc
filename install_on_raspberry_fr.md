@@ -4,6 +4,9 @@
 
 ## Prérequis
 
+<img src="https://yunohost.org/images/raspberry-pi-model-b.jpg">
+<img src="https://yunohost.org/images/sdcard.jpg">
+
 * Un Raspberry Pi modèle B *(le modèle A devrait fonctionner, mais n'a jamais été testé)*
 * Une carte SD : une capacité **4Go** (ou plus) et une certification **class10** sont recommandés
 * Un autre ordinateur pour parcourir ce guide et accéder à votre Raspberry Pi
