@@ -4,11 +4,15 @@ The step called "**post-installation**" is actually the initial configuration of
 
 <br>
 
+You can access it graphically by entering your **server's local IP** address in a **web browser** (e.g. `http://192.168.1.7`).
+
 <img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="https://yunohost.org/images/postinstall.png">
 
 *<p class="text-muted">Preview of the Web post-installation</p>*
 
 <br>
+
+Or by running `yunohost tools postinstall` in command-line.
 
 <img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="https://yunohost.org/images/postinstall_cli.png">
 
