@@ -18,7 +18,7 @@ L'étape appelée « **post-installation** » est en fait l'étape de configurat
 
 Deux paramètres vous sont demandés lors de cette étape : le **nom de domaine principal** et le **mot de passe d'administration**.
 
-**Attention**: The post-installation may break your system if you interrupt it, be aware.
+**Attention** : Mal exécutée, la post-installation peut casser votre système. Pensez à ne pas l'interrompre inopinément.
 
 ### Domaine principal
 
