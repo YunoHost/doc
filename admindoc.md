@@ -1,3 +1,11 @@
 #Administrator documentation
 
-To be written...
+*To be written...*
+
+## Installation
+
+[Installation guide](/install)
+
+## Applications
+
+[Applications list](/apps)
