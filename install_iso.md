@@ -12,7 +12,7 @@
 You can reuse any computer with **256MB RAM or more**.
 * Another computer to read this guide and access to your server.
 * A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
-* An **USB key** of at least 1GB capacity **OR** a standard **blank CD**
+* A **USB key** of at least 1GB capacity **OR** a standard **blank CD**
 * The latest **YunoHost ISO image**, available here:
 
     [http://build.yunohost.org/yunohostv2-latest-i386.iso](http://build.yunohost.org/yunohostv2-latest-i386.iso)
