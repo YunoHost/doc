@@ -25,3 +25,7 @@ sudo dd bs=1M if=/path/to/your/raspberry-latest.img of=/your/device/name
 Do not forget to change `/path/to/your/raspberry-latest.img` and `/your/device/name` with the appropriate values.
 
 The command may take a few minutes, then your SD card will be ready to use. **:-)**
+
+## Resize the root partition <small>(optional)</small>
+
+To be written...
