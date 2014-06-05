@@ -74,7 +74,7 @@
 
 <div style="
   width: 100%; 
-  max-height: 350px; 
+  max-height: 300px; 
   overflow: hidden; 
   border-radius: 5px; 
   border: 1px solid rgba(0,0,0,0.15); 
