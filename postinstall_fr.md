@@ -2,7 +2,9 @@
 
 L'étape appelée « **post-installation** » est en fait l'étape de configuration initiale de YunoHost. Elle est exécutable après l'**installation** du système en lui-même.
 
-<br>
+## Accès
+
+Vous pouvez accéder à la post-installation graphique en entrant l'adresse **IP locale de votre serveur** dans un navigateur Web (généralement `192.168.x.x`)
 
 <img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="https://yunohost.org/images/postinstall.png">
 
@@ -10,18 +12,15 @@ L'étape appelée « **post-installation** » est en fait l'étape de configurat
 
 <br>
 
+Ou en entrant la commande `yunohost tools postinstall` directement sur le serveur ou en SSH.
+
 <img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="https://yunohost.org/images/postinstall_cli.png">
 
 *<p class="text-muted">Aperçu de la post-installation en ligne de commande</p>*
 
 <br>
-<br>
 
-<div class="alert alert-warning">
-**Attention** : Mal exécutée, la post-installation peut casser votre système. Pensez à ne pas l'interrompre inopinément.
-</div>
-
-Deux paramètres vous sont demandés lors de cette étape : le **nom de domaine principal** et le **mot de passe d'administration**.
+---
 
 ### Domaine principal
 
@@ -37,8 +36,11 @@ C'est le mot de passe qui vous permettra d'accéder à l'[interface d'administra
 
 De manière générale, c'est la **clé d'entrée à votre système**, pensez donc à la **[choisir attentivement](http://www.commentcamarche.net/faq/8275-choisir-un-bon-mot-de-passe)**.
 
+<br>
 
-### Et après ?
+---
+
+## Et après ?
 
 Une fois l'étape de post-installation exécutée, vérifiez que votre serveur est accessible. Si ce n'est pas le cas, quelques étapes de configurations supplémentaires sont sûrement nécessaires.
 
