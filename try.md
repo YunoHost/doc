@@ -2,10 +2,11 @@
 
 You may want to try YunoHost before [installing](/install). 
 
-Note that this demo platform runs a **beta version** of the software and **will fail** from time to time.
+<div class="alert alert-warning">
+**Note:** This demo platform runs a **beta version** of the software and **will fail** from time to time.
+</div>
 
-<br />
-<br />
+<br>
 
   <div class="row text-center">
     <div class="col-md-6">
@@ -17,3 +18,10 @@ Note that this demo platform runs a **beta version** of the software and **will 
       <p class="text-muted">Password: demo</p>
     </div>
   </div>
+
+<br>
+
+<p class="text-center">
+***This demo platform is gracefully provided by    
+<a href="https://www.web4all.fr/" target="_blank"><img src="https://yunohost.org/images/web4all.png" width=100 style="vertical-align: center"></a>***
+</p>
