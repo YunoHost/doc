@@ -15,7 +15,7 @@ This page lists few installation guides.
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_cubieboard"><p>Live CD/USB</p><img src="https://yunohost.org/images/usb_key.png" width=200></a>
+<a href="/try_at_home"><p>Live CD/USB</p><img src="https://yunohost.org/images/usb_key.png" width=200></a>
 </div>
 
 </div>
