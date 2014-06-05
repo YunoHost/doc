@@ -18,6 +18,8 @@ Or by running `yunohost tools postinstall` in command-line.
 
 *<p class="text-muted">Preview of the command-line post-installation</p>*
 
+<br>
+
 ---
 
 ### Main domain
@@ -31,6 +33,8 @@ This is the first domain name linked to your YunoHost server, but also the one w
 ### Administration password
 
 This password will be used to access to your server's [administration interface](/admin). You would also use it to connect via **SSH** or **SFTP**. In general terms, this is your **system's key**, [choose it carefully](http://www.wikihow.com/Choose-a-Secure-Password).
+
+<br>
 
 ---
 
