@@ -6,7 +6,7 @@ L'étape appelée « **post-installation** » est en fait l'étape de configurat
 
 Vous pouvez accéder à la post-installation graphique en entrant l'adresse **IP locale de votre serveur** dans un navigateur Web (généralement `192.168.x.x`)
 
-<img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="https://yunohost.org/images/postinstall.png">
+<img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="https://yunohost.org/images/postinstall_web.png">
 
 *<p class="text-muted">Aperçu de la post-installation Web</p>*
 
@@ -14,7 +14,7 @@ Vous pouvez accéder à la post-installation graphique en entrant l'adresse **IP
 
 Ou en entrant la commande `yunohost tools postinstall` directement sur le serveur ou en SSH.
 
-<img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="https://yunohost.org/images/postinstall_cli.png">
+<img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="https://yunohost.org/images/postinstall_cli2.png">
 
 *<p class="text-muted">Aperçu de la post-installation en ligne de commande</p>*
 
