@@ -1,6 +1,6 @@
 # Hardware
 
-Every commonly used machine kind are compatible with YunoHost.    
+Every commonly used machine kind is compatible with YunoHost.    
 It is important to identify your machine kind before proceeding to the installation.
 
 *Click on the corresponding guide.*
