@@ -15,7 +15,7 @@ If it does not work, do consider [trying it at home](/try_at_home).
       <p class="text-muted">Username: demo<br>Password: demo</p>
     </div>
     <div class="col-md-5">
-      <a href="https://demo.yunohost.org/yunohost/admin" target="_blank" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-lock"></span> Administrator interface</a>
+      <a href="https://demo.yunohost.org/yunohost/admin" target="_blank" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-lock"></span> Administration interface</a>
       <p class="text-muted">Password: demo</p>
     </div>
   </div>
