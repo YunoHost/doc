@@ -1,6 +1,6 @@
 # Plug and boot your server up
 
-* Plug your server in wired Ethernet **directly to your router**. Do not use a wireless connection or  an intermediate router if you want the configuration to be automatic.
+* Plug your server in wired Ethernet **directly to your router**. Do not use a wireless connection or  an intermediate router if you want the network configuration to be automatic.
 
 * Do not forget to **plug a screen** if you want to see how boot is going, and a keyboard if you want to have a **command-line access** to your server.
 
