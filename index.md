@@ -60,7 +60,7 @@
   position: absolute; 
   top: 90%;
   text-align: center;">
-<a style="color: #777" href="http://news.yunohost.org">Latest news</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://ask.yunohost.org" target="_blank">FAQ</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs">Documentation</a>
+<a style="color: #777" href="http://news.yunohost.org">Latest news</a> <span class="colored-bar">•</span> <a style="color: #777" href="/whatsyunohost">About</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs">Documentation</a>
 </div>
 
 </div>
@@ -73,7 +73,7 @@
 
 <div style="
   width: 100%; 
-  max-height: 350px; 
+  max-height: 300px; 
   overflow: hidden; 
   border-radius: 5px; 
   border: 1px solid rgba(0,0,0,0.15); 
@@ -87,7 +87,7 @@
   width: auto; 
   min-width: 150px; 
   margin: 40px auto 0;">
-<a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em;margin-bottom:0.5em;" href="/try">Try it</a> <a class="btn btn-success btn-lg" style="min-width: 150px; font-size: 1.5em;margin-bottom:0.5em;" href="/whatsyunohost">Learn more</a>
+<a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em;margin-bottom:0.5em;" href="/try">Try it</a> <a class="btn btn-success btn-lg" style="min-width: 150px; font-size: 1.5em;margin-bottom:0.5em;" href="/install">Install</a>
 <p class="text-muted text-center"><small>YunoHost v2 • beta4</small></p>
 </div>
 
