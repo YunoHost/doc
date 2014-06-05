@@ -9,7 +9,7 @@
 
 * A Raspberry Pi model B *-- Model A should work, but remains untested*
 * An SD card: **4GB** capacity (or more) and **class10** speed rate are highly recommended
-* Another computer to read this guide and to access your Raspberry Pi
+* Another computer to read this guide and access to your Raspberry Pi
 * A screen and a keyboard are recommended to control your Raspberry Pi if a problem occurs.
 * A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
 * The **YunoHost Raspberry image**, available here:
