@@ -38,7 +38,7 @@ Cette page liste plusieurs types d'installations, classés par catégorie.
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_iso_fr"><img src="https://yunohost.org/images/laptop.png" height=150 style="vertical-align:bottom">**<p>Sur un autre ordinateur</p>**</a>
+<a href="/install_iso_fr"><img src="https://yunohost.org/images/laptop.png" height=150 style="vertical-align:bottom">**<p>Sur un ordinateur standard</p>**</a>
 </div>
 
 </div>
