@@ -8,7 +8,7 @@ It is important to identify your machine kind before proceeding to the installat
 | Arch | Hardware examples | Installation guide |
 |------|-----------------------|----------------------|
 | **x86** | PC de bureau, PC portables, Mac Intel (après 2007), netbooks, nettops, etc. | [Install via CD/USB](/install_iso) |
-| **armhf** | [Raspberry Pi](/install_on_raspberry), [Cubieboard](/install_on_cubieboard), Cubox, Olimex, Beagleboard, etc. | [Install on ARM Debian](/compatible_arm_debian) |
+| **armhf** | [Raspberry Pi](/install_on_raspberry), [Cubieboard](/install_on_cubieboard), Cubox, Olimex, Beagleboard, etc. | [Install on ARM Debian](/install_on_debian) |
 | **powerpc** | Macintosh G4/G5, PS3 |  [Install on Debian](/install_on_debian) |
 
 
