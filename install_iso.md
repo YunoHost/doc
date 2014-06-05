@@ -1,4 +1,4 @@
-#Installation guide
+# Install on a standard computer
 
 *Find other ways to install YunoHost **[here](/install)**.*
 
