@@ -2,6 +2,8 @@
 
 *Voici une petite page de documentation en guise de mémo sur la manière de tester/développer YunoHost avec Docker.*
 
+*Toutes les autres façons d'installer YunoHost sont listées **[ici](/install_fr)**.*
+
 <img src="https://yunohost.org/images/docker.png" width=250>
 
 ---
