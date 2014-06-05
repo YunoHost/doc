@@ -19,6 +19,10 @@
 <img src="https://yunohost.org/images/ynh_logo_white.png" width="100"/>
 </div>
 
+<a href="https://github.com/YunoHost" target="_blank">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://yunohost.org/images/github_ribbon.png" alt="Fork me on GitHub" data-canonical-src="https://yunohost.org/images/github_ribbon.png">
+</a>
+
 <br />
 
 <div style="
@@ -57,7 +61,7 @@
   position: absolute; 
   top: 90%;
   text-align: center;">
-<a style="color: #777" href="http://news.yunohost.org">Dernières nouvelles</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://ask.yunohost.org" target="_blank">FAQ</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs_fr">Documentation</a>
+<a style="color: #777" href="/whatsyunohost_fr">À propos</a> <span class="colored-bar">•</span> <a style="color: #777" href="http://news.yunohost.org" target="_blank">Dernières nouvelles</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs_fr">Documentation</a>
 </div>
 
 </div>
@@ -187,10 +191,10 @@
   border-radius: 5px; 
   border: 1px solid rgba(0,0,0,0.15);
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
-<a class="btn btn-lg btn-block btn-primary" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/userdoc_fr">Guide d'utilisation</a>
-<a class="btn btn-lg btn-block btn-info" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://ask.yunohost.org" target="_blank">Foire aux questions</a>
-<a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/whatsyunohost_fr">Qu'est-ce que YunoHost ?</a>
-<a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/contribute_fr">Comment contribuer</a>
+<a class="btn btn-lg btn-block btn-primary" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/whatsyunohost_fr">Qu'est-ce que YunoHost ?</a>
+<a class="btn btn-lg btn-block btn-info" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/userdoc_fr">Guide d'utilisation</a>
+<a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/contribute_fr">Comment contribuer</a>
+<a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://ask.yunohost.org" target="_blank">Foire aux questions</a>
 <a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="http://news.yunohost.org">Dernières nouvelles</a>
 </div>
 </div>
