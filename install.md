@@ -6,7 +6,22 @@ This page lists few installation guides.
 
 ---
 
-## At home
+## Give a try
+
+<div class="row">
+
+<div class="col col-md-3 text-center">
+<a href="/try"><p>Demo server</p><img width=150 src="https://yunohost.org/logo.png"></a>
+</div>
+
+<div class="col col-md-3 text-center">
+<a href="/install_on_cubieboard"><p>Live CD/USB</p><img src="https://yunohost.org/images/usb_key.png" width=200></a>
+</div>
+
+</div>
+---
+
+## Install at home
 
 <div class="row">
 
@@ -26,7 +41,7 @@ This page lists few installation guides.
 
 ---
 
-## Virtually
+## Install virtually
 
 <div class="row">
 
@@ -43,7 +58,7 @@ This page lists few installation guides.
 
 ---
 
-## Remotely
+## Install remotely
 
 <div class="row">
 
@@ -59,7 +74,7 @@ This page lists few installation guides.
 
 ---
 
-## On Debian
+## Install on Debian
 
 If you have already installed **Debian 7** (wheezy) on a server, you are able to **[install YunoHost via script](/install_on_debian)**.
 
