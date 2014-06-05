@@ -13,6 +13,7 @@
 * A screen and a keyboard are recommended to control your Cubieboard if a problem occurs
 * A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
 * A Cubieboard Debian 7 image compatible with YunoHost:
+
     * [Cubian](http://cubian.org/)
     * [Cubieez](http://www.cubieforums.com/index.php?topic=442.0)
 
