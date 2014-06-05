@@ -19,6 +19,10 @@
 <img src="https://yunohost.org/images/ynh_logo_white.png" width="100"/>
 </div>
 
+<a href="https://github.com/YunoHost" target="_blank">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://yunohost.org/images/github_ribbon.png" alt="Fork me on GitHub" data-canonical-src="https://yunohost.org/images/github_ribbon.png">
+</a>
+
 <br />
 
 <div style="
