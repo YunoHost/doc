@@ -1,6 +1,6 @@
 # Installation guide
 
-You have several ways to install YunoHost. The process may slightly differs whether it takes place at home or if you want to do it remotely, and regarding the hardware used. 
+You have several ways to install YunoHost. The process may slightly differs whether it takes place at home or if you want to do it remotely, and regarding the hardware used: **[See the requirements](/hardware)**
 
 This page lists few installation guides.
 
@@ -19,7 +19,7 @@ This page lists few installation guides.
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/hardware"><p>On another type of hardware</p><img src="https://yunohost.org/images/laptop.png" width=200></a>
+<a href="/install_iso"><p>On a standard computer</p><img src="https://yunohost.org/images/laptop.png" width=200></a>
 </div>
 
 </div>
