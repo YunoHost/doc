@@ -1,65 +1,90 @@
 # Guide d'installation
 
-Vous avez plusieurs manières d'installer YunoHost. La méthode d'installation diffère légèrement en fonction de l'endroit où vous souhaitez l'installer (chez vous ou à distance), et du matériel utilisé.
+Vous avez plusieurs manières d'installer YunoHost. La méthode d'installation diffère légèrement en fonction de l'endroit où vous souhaitez l'installer (chez vous ou à distance), et du matériel utilisé : **[Voir le matériel compatible](/hardware_fr)**
 
-Cette page liste tous les types d'installations, classés par catégorie.
+Cette page liste plusieurs types d'installations, classés par catégorie.
 
 ---
 
-## À la maison
+<h1 style="font-weight: 100">Essayer</h1>
 
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_raspberry_fr"><p>Sur Raspberry Pi</p><img width=200 src="https://yunohost.org/images/Raspberry_Pi_-_Model_A.jpg"></a>
+<a href="/try_at_home"><img src="https://yunohost.org/images/usb_key.png" height=150 style="vertical-align:bottom">**<p>Live CD/USB</p>**</a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_cubieboard_fr"><p>Sur Cubieboard</p><img src="https://yunohost.org/images/cubieboard2.png" width=200></a>
+<a href="/try"><img height=150 src="https://yunohost.org/logo.png" style="vertical-align:bottom">**<p>Serveur de démo</p>**</a>
 </div>
 
-<div class="col col-md-3 text-center">
-<a href="/hardware_fr"><p>Sur un autre ordinateur</p><img src="https://yunohost.org/images/laptop.png" width=200></a>
-</div>
 
 </div>
+
+<br>
 
 ---
 
-## Virtuellement
+<h1 style="font-weight: 100">Installer @ la maison</h1>
 
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_virtualbox_fr"><p>Sur VirtualBox</p><img width=200 src="https://yunohost.org/images/virtualbox.png"></a>
+<a href="/install_on_raspberry_fr"><img src="https://yunohost.org/images/Raspberry_Pi_-_Model_A.jpg" height=150 style="vertical-align:bottom">**<p>Sur Raspberry Pi</p>**</a>
 </div>
-
 
 <div class="col col-md-3 text-center">
-<a href="/docker_fr"><p>Sur Docker</p><img width=180 src="https://yunohost.org/images/docker.png"></a>
+<a href="/install_on_cubieboard_fr"><img src="https://yunohost.org/images/cubieboard2.png" height=150 style="vertical-align:bottom">**<p>Sur Cubieboard</p>**</a>
+</div>
+
+<div class="col col-md-3 text-center">
+<a href="/install_iso_fr"><img src="https://yunohost.org/images/laptop.png" height=150 style="vertical-align:bottom">**<p>Sur un autre ordinateur</p>**</a>
 </div>
 
 </div>
+
+<br>
 
 ---
 
-## À distance
+<h1 style="font-weight: 100">Virtuellement</h1>
 
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_digitalocean_fr"><p>Sur un conteneur DigitalOcean</p><img width=200 src="https://yunohost.org/images/digitalocean.png"></a>
+<a href="/install_on_virtualbox_fr"><img src="https://yunohost.org/images/virtualbox.png" height=150 style="vertical-align:bottom">**<p>Sur VirtualBox</p>**</a>
 </div>
+
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_dedicated_server_fr"><p>Sur un serveur dédié</p><img width=200 src="https://yunohost.org/images/vps.png"></a>
+<a href="/docker_fr"><img src="https://yunohost.org/images/docker.png" height=150 style="vertical-align:bottom">**<p>Sur Docker</p>**</a>
 </div>
 
 </div>
+
+<br>
 
 ---
 
-## Sur Debian
+<h1 style="font-weight: 100">À distance</h1>
+
+<div class="row">
+
+<div class="col col-md-3 text-center">
+<a href="/install_on_digitalocean_fr"><img src="https://yunohost.org/images/digitalocean.png" height=150 style="vertical-align:bottom">**<p>Sur un conteneur DigitalOcean</p>**</a>
+</div>
+
+<div class="col col-md-3 text-center">
+<a href="/install_on_dedicated_server_fr"><img src="https://yunohost.org/images/vps.png" height=150 style="vertical-align:bottom">**<p>Sur un serveur dédié</p>**</a>
+</div>
+
+</div>
+
+<br>
+
+---
+
+<h1 style="font-weight: 100">Sur Debian</h1>
 
 Si vous disposez déjà d'un serveur ou d'un ordinateur sous **Debian 7** (wheezy), suivez l'**[installation par script](/install_on_debian_fr)**.
 
