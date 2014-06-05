@@ -2,7 +2,7 @@
 
 The step called "**post-installation**" is actually the initial configuration of YunoHost. It has to be done just after the installation of the system itself.
 
-<br>
+## Access
 
 You can access it graphically by entering your **server's local IP** address in a **web browser** (e.g. `http://192.168.1.7`).
 
@@ -18,14 +18,7 @@ Or by running `yunohost tools postinstall` in command-line.
 
 *<p class="text-muted">Preview of the command-line post-installation</p>*
 
-<br>
-<br>
-
-<div class="alert alert-warning">
-**Attention**: The post-installation may break your system if you interrupt it, be aware.
-</div>
-
-Two configuration parameters will be asked: the **main domain name** and the **administration password**.
+---
 
 ### Main domain
 
@@ -39,7 +32,9 @@ This is the first domain name linked to your YunoHost server, but also the one w
 
 This password will be used to access to your server's [administration interface](/admin). You would also use it to connect via **SSH** or **SFTP**. In general terms, this is your **system's key**, [choose it carefully](http://www.wikihow.com/Choose-a-Secure-Password).
 
-### And after ?
+---
+
+## And after ?
 
 Once the post-installation finished, check if you can access to your server with your web-browser. If it is not the case, a few more configuration steps may be required.
 
