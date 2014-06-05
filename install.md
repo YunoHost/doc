@@ -22,7 +22,7 @@ This page lists few installation guides.
 
 ---
 
-## Install at home
+## Install @ home
 
 <div class="row">
 
@@ -42,7 +42,7 @@ This page lists few installation guides.
 
 ---
 
-## Install virtually
+## Virtually
 
 <div class="row">
 
@@ -59,7 +59,7 @@ This page lists few installation guides.
 
 ---
 
-## Install remotely
+## Remotely
 
 <div class="row">
 
@@ -75,7 +75,7 @@ This page lists few installation guides.
 
 ---
 
-## Install on Debian
+## On Debian
 
 If you have already installed **Debian 7** (wheezy) on a server, you are able to **[install YunoHost via script](/install_on_debian)**.
 
