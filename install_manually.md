@@ -23,7 +23,11 @@ cd /tmp/install_script && sudo ./install_yunohostv2
 
 <br>
 
+<p class="text-center">
 <img src="https://yunohost.org/images/install_script.png">
+</p>
+
+---
 
 *Once the installation is finished, you may want to go to the configuration step:*
 
