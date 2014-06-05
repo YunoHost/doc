@@ -1,7 +1,10 @@
 #Try YunoHost
 
 <div class="alert alert-warning">
-**Note:** This demo platform runs a **beta version** of the software and **will fail** from time to time.
+**Note:** This demo platform runs a **beta version** of the software and **will fail** from time to time.    
+<br>
+If it does not work, do consider [trying it at home](/try_at_home).
+
 </div>
 
 <br>
