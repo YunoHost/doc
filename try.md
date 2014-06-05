@@ -1,7 +1,5 @@
 #Try YunoHost
 
-You may want to try YunoHost before [installing](/install). 
-
 <div class="alert alert-warning">
 **Note:** This demo platform runs a **beta version** of the software and **will fail** from time to time.
 </div>
