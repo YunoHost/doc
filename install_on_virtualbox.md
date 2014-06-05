@@ -66,7 +66,7 @@ You will have to select your ISO image `yunohostv2-latest-amd64.iso` here, then 
 
 ## <small>4.</small> Proceed to post-installation
 
-After the reboot, you will see this screen. 
+After the reboot, you will see this screen:
 
 <img src="https://yunohost.org/images/virtualbox_4.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
