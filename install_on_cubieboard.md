@@ -9,11 +9,10 @@
 
 * CubieBoard 1 or 2 (CubieTruck might work as well)
 * An SD card: **4GB** capacity (or more) and **class10** speed rate are highly recommended
-* Another computer to read this guide and to access your Cubieboard
+* Another computer to read this guide and access to your Cubieboard
 * A screen and a keyboard are recommended to control your Cubieboard if a problem occurs
 * A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
 * A Cubieboard Debian 7 image compatible with YunoHost:
-
     * [Cubian](http://cubian.org/)
     * [Cubieez](http://www.cubieforums.com/index.php?topic=442.0)
 
