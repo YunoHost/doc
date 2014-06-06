@@ -7,9 +7,9 @@
 
 * Une CubieBoard 1 ou 2 (le CubieTruck doit fonctionner également)
 * Une carte SD : Capacité de **4GB** (ou plus) et vitesse **class10** fortement recommandé
-* Une autre ordinateur pour lire ce guide et accéder à votre CubieBoard 
-* Un écran et un clavier sont recommandés pour contrôler votre CubieBoard en cas de problème
-* Un [bon FAI](/isp_fr), de préférence avec du haut débit et une bande passante illimitée
+* Un autre ordinateur pour parcourir ce guide et accéder à votre Cubieboard
+* Un écran et un clavier sont recommandés pour pouvoir contrôler votre Cubieboard si un problème apparaît
+* Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
 * Une image Debian 7 pour Cubieboard compatible avec YunoHost :
     * [Cubian](http://cubian.org/)
     * [Cubieez](http://www.cubieforums.com/index.php?topic=442.0)
