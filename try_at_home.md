@@ -14,7 +14,7 @@
     [http://build.yunohost.org/yunohost-live.iso](http://build.yunohost.org/yunohost-live.iso)
 
 <br>
-<div class="alert alert-warning">
+<div class="alert alert-warning" markdown="1">
 **Note:** You have to plug your computer in Ethernet directly behind your main router in order to automatically make the network configuration.
 </div>
 
