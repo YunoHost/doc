@@ -2,7 +2,7 @@
 
 *Find other ways to install YunoHost **[here](/install)**.*
 
-### Pre-requisite
+## Pre-requisite
 
 <img src="https://yunohost.org/images/virtualbox.png" width=200>
 
