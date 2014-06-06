@@ -10,7 +10,7 @@
 
 <div class="text-center"><img src="https://yunohost.org/images/boot_screen.png">
 
-<p>
+<p markdown="1">
 *Write down the `IP address` field visible on the screen: It is your server's **local IP address**.*
 </p>
 
