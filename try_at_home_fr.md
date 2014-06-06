@@ -2,7 +2,7 @@
 
 *Trouvez d'autres moyens d'installer Yunohost **[ici](/install_fr)**.*
 
-### Pré-requis
+## Prérequis
 
 <img src="https://yunohost.org/images/laptop.png" width=200>
 <img src="https://yunohost.org/images/usb_key.png">
