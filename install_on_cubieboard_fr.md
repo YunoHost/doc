@@ -9,7 +9,7 @@
 * Une carte SD : Capacité de **4GB** (ou plus) et vitesse **class10** fortement recommandé
 * Une autre ordinateur pour lire ce guide et accéder à votre CubieBoard 
 * Un écran et un clavier sont recommandés pour contrôler votre CubieBoard en cas de problème
-* Un [FAI](/isp_fr), de préférence avec une bande passante illimitée
+* Un [bon FAI](/isp_fr), de préférence avec du haut débit et une bande passante illimitée
 * Une image Debian 7 pour Cubieboard compatible avec YunoHost :
     * [Cubian](http://cubian.org/)
     * [Cubieez](http://www.cubieforums.com/index.php?topic=442.0)
