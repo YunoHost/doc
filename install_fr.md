@@ -11,11 +11,11 @@ Cette page liste plusieurs types d'installations, classés par catégorie.
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/try_at_home"><img src="https://yunohost.org/images/usb_key.png" height=150 style="vertical-align:bottom"><b><p>Live CD/USB</p></b></a>
+<a href="/try_at_home_fr"><img src="https://yunohost.org/images/usb_key.png" height=150 style="vertical-align:bottom"><b><p>Live CD/USB</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/try"><img height=150 src="https://yunohost.org/logo.png" style="vertical-align:bottom"><b><p>Serveur de démo</p></b></a>
+<a href="/try_fr"><img height=150 src="https://yunohost.org/logo.png" style="vertical-align:bottom"><b><p>Serveur de démo</p></b></a>
 </div>
 
 
