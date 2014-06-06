@@ -7,9 +7,7 @@
 <img src="https://yunohost.org/images/virtualbox.png" width=200>
 
 * An x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine.
-* The latest **YunoHost ISO image**, available here:
-
-    [http://build.yunohost.org/yunohostv2-latest-amd64.iso](http://build.yunohost.org/yunohostv2-latest-amd64.iso)
+* The latest **YunoHost ISO image**, available here: [http://build.yunohost.org/yunohostv2-latest-amd64.iso](http://build.yunohost.org/yunohostv2-latest-amd64.iso)
 
 
 ---
@@ -72,9 +70,7 @@ After the reboot, you will see this screen:
 
 <br>
 
-* You can obtain further precisions on post-installation here:
-
-    **[yunohost.org/postinstall](/postinstall)**
+* You can obtain further precisions on post-installation here: **[yunohost.org/postinstall](/postinstall)**
 
 ---
 
