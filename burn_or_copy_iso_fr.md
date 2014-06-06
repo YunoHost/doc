@@ -9,11 +9,11 @@ Maintenant que vous avez l'image ISO de YunoHost, vous devez la mettre sur un su
 
 ## Clé USB
 
-Télécharger la version d'<a href="http://unetbootin.sourceforge.net/" target="_blank">UnetBootin</a> pour votre système d’exploitation et installez la.
+Téléchargez la version d'<a href="http://unetbootin.sourceforge.net/" target="_blank">UnetBootin</a> pour votre système d’exploitation et installez-la.
 
 <img src="https://yunohost.org/images/unetbootin.png">
 
-Inserez votre clé USB, sélectionnez l'image ISO YunoHost et cliquez sur "OK"
+Insérez votre clé USB, sélectionnez l'image ISO YunoHost et cliquez sur "OK"
 
 
 ---
@@ -26,4 +26,4 @@ Le logiciel à utiliser est différent suivant votre système d'exploitation.
 
 * Sur Mac OS, utilisez [Disk Utility](http://support.apple.com/kb/ph7025)
 
-* Sur GNU/Linux, vous avez beaucoup de choix, comme [Brasero](https://wiki.gnome.org/Apps/Brasero) ou [K3b](http://www.k3b.org/)
+* Sur GNU/Linux, vous avez plusieurs choix, tels que [Brasero](https://wiki.gnome.org/Apps/Brasero) ou [K3b](http://www.k3b.org/)
