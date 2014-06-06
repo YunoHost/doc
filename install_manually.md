@@ -29,6 +29,4 @@ cd /tmp/install_script && sudo ./install_yunohostv2
 
 ---
 
-*Once the installation is finished, you may want to proceed to post-installation:*
-
-**[yunohost.org/postinstall](/postinstall)**
+*Once the installation is finished, you may want to proceed to post-installation: **[yunohost.org/postinstall](/postinstall)** *
