@@ -1,30 +1,29 @@
-# Copy ISO image
+# Copier l'image ISO
 
-Now that you have the ISO image of YunoHost, you have to put it on a physical medium: **USB key** or **CD/DVD**
+Maintenant que vous avez l'image ISO de YunoHost, vous devez la mettre sur un support physique : **Clé USB** ou **CD/DVD**
 
 <img src="https://yunohost.org/images/usb_key.png">
 <img src="https://yunohost.org/images/cd.jpg" width=200>
 
 ---
 
-## USB key
+## Clé USB
 
-Download <a href="http://unetbootin.sourceforge.net/" target="_blank">UnetBootin</a> for your operating system and install it.
-
+Télécharger la version d'<a href="http://unetbootin.sourceforge.net/" target="_blank">UnetBootin</a> pour votre système d’exploitation et installez la.
 
 <img src="https://yunohost.org/images/unetbootin.png">
 
-Put your USB key on, select your YunoHost ISO and click "OK"
+Inserez votre clé USB, sélectionnez l'image ISO YunoHost et cliquez sur "OK"
 
 
 ---
 
 ## CD/DVD
 
-The software to use differs regarding your operating system.
+Le logiciel à utiliser est différent suivant votre système d'exploitation.
 
-* On Windows, use [ImgBurn](http://www.imgburn.com/) to write the image file on the disc
+* Sur Windows, utilisez [ImgBurn](http://www.imgburn.com/) pour écrire l'image sur le disque
 
-* On Mac OS, use [Disk Utility](http://support.apple.com/kb/ph7025)
+* Sur Mac OS, utilisez [Disk Utility](http://support.apple.com/kb/ph7025)
 
-* On GNU/Linux, you have plenty of choices, like [Brasero](https://wiki.gnome.org/Apps/Brasero) or [K3b](http://www.k3b.org/)
+* Sur GNU/Linux, vous avez beaucoup de choix, comme [Brasero](https://wiki.gnome.org/Apps/Brasero) ou [K3b](http://www.k3b.org/)
