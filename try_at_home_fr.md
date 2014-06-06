@@ -7,7 +7,7 @@
 <img src="https://yunohost.org/images/laptop.png" width=200>
 <img src="https://yunohost.org/images/usb_key.png">
 
-* PC de bureau standard x86
+* PC x86 standard
 * Une **Clé USB** avec une capacité minimale de 2GB **OU** un **CD vierge** classique
 * LA dernière **image ISO live YunoHost**, disponible ici: [http://build.yunohost.org/yunohost-live.iso](http://build.yunohost.org/yunohost-live.iso)
 
