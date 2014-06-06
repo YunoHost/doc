@@ -27,7 +27,7 @@ You should see a screen like this:
 
 * If a partition screen appears, confirm.
 
-    <div class="alert alert-danger">**Caution:** This will totally erase the data on your hard drive</div>
+    <div class="alert alert-danger"><b>Caution:</b> This will totally erase the data on your hard drive</div>
 
 
 * Let the installer do the rest, it will download required packages and install them. 
