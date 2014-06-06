@@ -8,7 +8,7 @@
 <img src="https://yunohost.org/images/sdcard.jpg">
 
 * Un Raspberry Pi modèle B *(le modèle A devrait fonctionner, mais n'a jamais été testé)*
-* Une carte SD : une capacité **4Go** (ou plus) et une certification **class10** sont recommandés
+* Une carte SD : une capacité de **4Go** (ou plus) et une certification de vitesse **class10** sont recommandés
 * Un autre ordinateur pour parcourir ce guide et accéder à votre Raspberry Pi
 * Un écran et un clavier sont recommandés pour pouvoir contrôler votre Raspberry Pi si un problème apparaît
 * Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
