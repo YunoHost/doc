@@ -20,10 +20,6 @@
 <img src="https://yunohost.org/images/ynh_logo_white.png" width="100"/>
 </div>
 
-<a href="https://github.com/YunoHost" target="_blank">
-<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://yunohost.org/images/github_ribbon.png" alt="Fork me on GitHub" data-canonical-src="https://yunohost.org/images/github_ribbon.png">
-</a>
-
 <br />
 
 <div style="
@@ -68,6 +64,10 @@
 </div>
 
 <div class="boring-part" markdown="1">
+
+<a href="https://github.com/YunoHost" target="_blank">
+<img style="position: fixed; top: 0; right: 0; border: 0;" src="https://yunohost.org/images/github_ribbon_grey.png" alt="Fork me on GitHub" data-canonical-src="https://yunohost.org/images/github_ribbon_grey.png">
+</a>
 
 <h1>YunoHost <small>est un outil qui vous permet d’installer et d’utiliser facilement votre propre serveur.</small></h1>
 
