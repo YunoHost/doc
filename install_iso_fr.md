@@ -9,8 +9,8 @@
 <img src="https://yunohost.org/images/nettop.jpg">
 
 * An matériel compatible x86 dédié à YunoHost : portable, netbook, ordinateur. Vous pouvez réutiliser n'importe quelle machine avec **256MB de RAM ou plus**
-* Une autre ordinateur pour lire ce guide et accéder à votre machine
-* Un [bon FAI](/isp_fr), de préférence avec du haut débit et une bande passante illimitée
+* Un autre ordinateur pour parcourir ce guide et accéder à votre serveur
+* Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
 * Une **Clé USB** d'une capacité minimale d'1GB **OU** un **CD vierge** standard
 * La dernière **image ISO YunoHost**, disponible ici : [http://build.yunohost.org/yunohostv2-latest-i386.iso](http://build.yunohost.org/yunohostv2-latest-i386.iso)
 
