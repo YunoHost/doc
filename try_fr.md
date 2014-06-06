@@ -3,7 +3,7 @@
 <div class="alert alert-warning" markdown="1">
 **Note :** cette plateforme de démonstration tourne sous une **version bêta** du logiciel et **va cesser de fonctionner** de temps en temps.
 <br>
-Si cela ne fonctionne pas, vous pouvez essayer [essayer chez vous](/try_at_home_fr).
+Si cela ne fonctionne pas, vous pouvez [essayer chez vous](/try_at_home_fr).
 
 </div>
 
