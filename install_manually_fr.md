@@ -6,17 +6,17 @@ Une fois que vous avez accès à votre serveur, directement ou par SSH, vous pou
 <b>Note :</b> La configuration des services sera écrasée, il est donc recommandé d'installer YunoHost sur un système Debian nouvellement installé.
 </div>
 
-1. Installer git
+1. Installez git
 ```bash
 sudo apt-get install git
 ```
 
-2. Cloner le dépot du script d'installation de YunoHost
+2. Clonez le dépôt du script d'installation de YunoHost
 ```bash
 git clone https://github.com/YunoHost/install_script /tmp/install_script
 ```
 
-3. Lancer le script d'installation
+3. Lancez le script d'installation
 ```bash
 cd /tmp/install_script && sudo ./install_yunohostv2
 ```
@@ -29,4 +29,4 @@ cd /tmp/install_script && sudo ./install_yunohostv2
 
 ---
 
-*Une fois l'installation terminée, vous devez procéder à la post-installation : **[yunohost.org/postinstall](/postinstall_fr)** *
+*Une fois l'installation terminée, vous pouvez procéder à la post-installation : **[yunohost.org/postinstall](/postinstall_fr)** *
