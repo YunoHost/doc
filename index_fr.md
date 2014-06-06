@@ -8,6 +8,7 @@
   width: 100%;
   height: 100%;
   box-shadow: 0 5px 15px rgba(0,0,0,0.45);
+  z-index: 1000;
   overflow: hidden">                                                                      
 
 <div style="
