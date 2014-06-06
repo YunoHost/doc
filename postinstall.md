@@ -8,7 +8,7 @@ You can access it graphically by entering your **server's local IP** address in 
 
 <img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="https://yunohost.org/images/postinstall_web.png">
 
-*<p class="text-muted">Preview of the Web post-installation</p>*
+<em><p class="text-muted">Preview of the Web post-installation</p></em>
 
 <br>
 
@@ -16,7 +16,7 @@ Or by running `yunohost tools postinstall` in command-line.
 
 <img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="https://yunohost.org/images/postinstall_cli2.png">
 
-*<p class="text-muted">Preview of the command-line post-installation</p>*
+<em><p class="text-muted">Preview of the command-line post-installation</p></em>
 
 <br>
 
