@@ -7,7 +7,7 @@
 <img src="https://yunohost.org/images/virtualbox.png" width=200>
 
 * Un ordinateur x86 avec VirtualBox installé et assez de RAM disponible pour lancer une petite machine virtuelle.
-* La dernière **image ISO YunoHost**, disponible ici : [http://build.yunohost.org/yunohostv2-latest-i386.iso](http://build.yunohost.org/yunohostv2-latest-i386.iso)
+* La dernière **image ISO YunoHost**, disponible ici : [http://build.yunohost.org/yunohostv2-latest-amd64.iso](http://build.yunohost.org/yunohostv2-latest-amd64.iso)
 
 
 ---
@@ -26,13 +26,13 @@
 
 ## <small>2.</small> Modifier la configuration réseau
 
-Aller dans **Réglages** > **Réseau** :
+Allez dans **Réglages** > **Réseau** :
 
 <img src="https://yunohost.org/images/virtualbox_2.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 <br>
 
-* Sélectionnez `Bridged adapter`
+* Sélectionnez `Accès par pont`
 
 * Choisissez votre interface selon son nom :
 
@@ -42,13 +42,13 @@ Aller dans **Réglages** > **Réseau** :
 
 ## <small>3.</small> Lancer votre machine virtuelle
 
-Démarrer votre machine virtuelle
+Démarrez votre machine virtuelle
 
 <img src="https://yunohost.org/images/virtualbox_2.1.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 <br>
 
-Vous devez sélectionner ici l'image ISO `yunohostv2-latest-amd64.iso`, et vous devez voir l'écran d'accueil YunoHost.
+Vous devez sélectionner ici l'image ISO `yunohostv2-latest-amd64.iso`, puis vous devriez voir cet écran d'accueil YunoHost.
 
 <br>
    
@@ -64,7 +64,7 @@ Vous devez sélectionner ici l'image ISO `yunohostv2-latest-amd64.iso`, et vous 
 
 ## <small>4.</small> Effectuer la post-installation
 
-Après le redémarrage, vous devez voir cet écran :
+Après le redémarrage, vous devriez voir cet écran :
 
 <img src="https://yunohost.org/images/virtualbox_4.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
