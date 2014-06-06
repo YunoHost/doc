@@ -2,7 +2,7 @@
 
 *Trouvez d'autres moyens d'installer Yunohost **[ici](/install_fr)**.*
 
-### Pré-requis
+## Prérequis
 
 <img src="https://yunohost.org/images/vps.png" width=250>
 
