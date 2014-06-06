@@ -11,11 +11,11 @@ Cette page liste plusieurs types d'installations, classés par catégorie.
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/try_at_home"><img src="https://yunohost.org/images/usb_key.png" height=150 style="vertical-align:bottom">**<p>Live CD/USB</p>**</a>
+<a href="/try_at_home"><img src="https://yunohost.org/images/usb_key.png" height=150 style="vertical-align:bottom"><b><p>Live CD/USB</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/try"><img height=150 src="https://yunohost.org/logo.png" style="vertical-align:bottom">**<p>Serveur de démo</p>**</a>
+<a href="/try"><img height=150 src="https://yunohost.org/logo.png" style="vertical-align:bottom"><b><p>Serveur de démo</p></b></a>
 </div>
 
 
@@ -30,15 +30,15 @@ Cette page liste plusieurs types d'installations, classés par catégorie.
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_raspberry_fr"><img src="https://yunohost.org/images/Raspberry_Pi_-_Model_A.jpg" height=150 style="vertical-align:bottom">**<p>Sur Raspberry Pi</p>**</a>
+<a href="/install_on_raspberry_fr"><img src="https://yunohost.org/images/Raspberry_Pi_-_Model_A.jpg" height=150 style="vertical-align:bottom"><b><p>Sur Raspberry Pi</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_cubieboard_fr"><img src="https://yunohost.org/images/cubieboard2.png" height=150 style="vertical-align:bottom">**<p>Sur Cubieboard</p>**</a>
+<a href="/install_on_cubieboard_fr"><img src="https://yunohost.org/images/cubieboard2.png" height=150 style="vertical-align:bottom"><b><p>Sur Cubieboard</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_iso_fr"><img src="https://yunohost.org/images/laptop.png" height=150 style="vertical-align:bottom">**<p>Sur un ordinateur standard</p>**</a>
+<a href="/install_iso_fr"><img src="https://yunohost.org/images/laptop.png" height=150 style="vertical-align:bottom"><b><p>Sur un ordinateur standard</p></b></a>
 </div>
 
 </div>
@@ -52,12 +52,12 @@ Cette page liste plusieurs types d'installations, classés par catégorie.
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_virtualbox_fr"><img src="https://yunohost.org/images/virtualbox.png" height=150 style="vertical-align:bottom">**<p>Sur VirtualBox</p>**</a>
+<a href="/install_on_virtualbox_fr"><img src="https://yunohost.org/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>Sur VirtualBox</p></b></a>
 </div>
 
 
 <div class="col col-md-3 text-center">
-<a href="/docker_fr"><img src="https://yunohost.org/images/docker.png" height=150 style="vertical-align:bottom">**<p>Sur Docker</p>**</a>
+<a href="/docker_fr"><img src="https://yunohost.org/images/docker.png" height=150 style="vertical-align:bottom"><b><p>Sur Docker</p></b></a>
 </div>
 
 </div>
@@ -71,11 +71,11 @@ Cette page liste plusieurs types d'installations, classés par catégorie.
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_digitalocean_fr"><img src="https://yunohost.org/images/digitalocean.png" height=150 style="vertical-align:bottom">**<p>Sur un conteneur DigitalOcean</p>**</a>
+<a href="/install_on_digitalocean_fr"><img src="https://yunohost.org/images/digitalocean.png" height=150 style="vertical-align:bottom"><b><p>Sur un conteneur DigitalOcean</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_dedicated_server_fr"><img src="https://yunohost.org/images/vps.png" height=150 style="vertical-align:bottom">**<p>Sur un serveur dédié</p>**</a>
+<a href="/install_on_dedicated_server_fr"><img src="https://yunohost.org/images/vps.png" height=150 style="vertical-align:bottom"><b><p>Sur un serveur dédié</p></b></a>
 </div>
 
 </div>
