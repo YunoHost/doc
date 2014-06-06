@@ -32,7 +32,7 @@ sudo dd bs=1M if=/chemin/vers/votre/.img of=/nom/du/matériel
 
 <span class="glyphicon glyphicon-warning-sign"></span> N’oubliez pas de changer `/chemin/vers/votre/.img` et `/nom/du/matériel` par les valeurs appropriées.
 
-La commande peut prendre quelques minutes, puis votre carte SD sera prête à être utilisées. **:-)**
+La commande peut prendre quelques minutes, puis votre carte SD sera prête à être utilisée. **:-)**
 
 ## Étendre la partition root <small>(facultatif)</small>
 
