@@ -1,4 +1,4 @@
-# Installation sur un droplet DigitalOcean
+# Installation sur un conteneur DigitalOcean
 
 *Trouvez d'autres moyens d'installer Yunohost **[ici](/install_fr)**.*
 
@@ -7,7 +7,7 @@
 <img src="https://yunohost.org/images/digitalocean.png" width=250>
 
 * Un compte DigitalOcean
-* Un droplet **Debian 7.0 x64** avec au moins **512MB** de RAM
+* Un conteneur **Debian 7.0 x64** avec au moins **512MB** de RAM
 
 
 ---
