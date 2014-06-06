@@ -27,6 +27,7 @@ YunoHost's documentation has 3 different sections:
 ---
 
 And if you want to know more about YunoHost, you may want to check out these pages:
+
  * [What is YunoHost ?](/whatsyunohost)
  * [Latest news](http://news.yunohost.org)
  * [Roadmap](/roadmap)
