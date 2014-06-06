@@ -1,6 +1,6 @@
 #Try YunoHost
 
-<div class="alert alert-warning">
+<div class="alert alert-warning" markdown="1">
 **Note:** This demo server runs a **beta version** of the software and **will fail** from time to time.    
 <br>
 If it does not work, do consider [trying it at home](/try_at_home).
@@ -22,7 +22,7 @@ If it does not work, do consider [trying it at home](/try_at_home).
 
 <br>
 
-<p class="text-center">
+<p class="text-center" markdown="1">
 ***Demo server gracefully provided by    
 <a href="https://www.web4all.fr/" target="_blank"><img src="https://yunohost.org/images/web4all.png" width=100 style="vertical-align: center"></a>***
 </p>
