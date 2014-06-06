@@ -3,7 +3,7 @@
 Once you have access to your server, either directly or by SSH, you can install YunoHost using the install script.
 
 <div class="alert alert-info">
-**Note:** The configuration of your services will be overridden, it is thus recommended to install YunoHost on a newly installed Debian system.
+<b>Note:</b> The configuration of your services will be overridden, it is thus recommended to install YunoHost on a newly installed Debian system.
 </div>
 
 1. Install git
