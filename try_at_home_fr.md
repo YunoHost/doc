@@ -9,11 +9,11 @@
 
 * PC x86 standard
 * Une **Clé USB** avec une capacité minimale de 2GB **OU** un **CD vierge** classique
-* LA dernière **image ISO live YunoHost**, disponible ici : [http://build.yunohost.org/yunohost-live.iso](http://build.yunohost.org/yunohost-live.iso)
+* La dernière **image ISO live YunoHost**, disponible ici : [http://build.yunohost.org/yunohost-live.iso](http://build.yunohost.org/yunohost-live.iso)
 
 <br>
 <div class="alert alert-warning" markdown="1">
-<strong>Note :</strong>  Vous devez connecter votre ordinateur directement en Ethernet à votre routeur principal pour effectuer la configuration réseau automatiquement.
+<strong>Note :</strong>  Vous devez connecter votre ordinateur directement en Ethernet à votre routeur principal pour que la configuration réseau s'effectue automatiquement.
 </div>
 
 ---
