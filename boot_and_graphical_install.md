@@ -4,9 +4,9 @@ Now that your YunoHost install medium, you can start with the installation.
 
 ## <small>1.</small> Plug the network cable
 
-If you want the network configuration to be set up automatically, you have to plug your computer with an **Ethernet** cable **right behind your main router**.
+If you want the network configuration to be set up automatically, you have to plug your server with an **Ethernet** cable **right behind your main router**.
  
-The wireless connections are not supported yet, and if you use intermediate routers, the network ports opening will not be automatic.
+The wireless connections are not supported yet, and if you use intermediate routers, the network ports opening will not be automatic: Your server will not be accessible externally.
 
 
 ## <small>2.</small> Boot on CD / USB key
@@ -25,7 +25,7 @@ You should see a screen like this:
 
 * Select your language, your location and your keyboard layout
 
-* If a partition screen appears, confirm.
+* If a partitionning screen appears, confirm.
 
     <div class="alert alert-danger"><b>Caution:</b> This will totally erase the data on your hard drive</div>
 
@@ -47,7 +47,11 @@ You can proceed to post-installation right away, or access the **IP** address sh
 
 <img src="https://yunohost.org/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-If you encounter this error, click on "**Proceed**" or "**Add an exception**"
+If you encounter this kind of error, click on "**Proceed**" or "**Add an exception**".    
+This means that you have to trust the certificate which secures your server's connections.    
+Since this is your server, you can bypass it serenely here :-)
+
+<br> 
 
 <img src="https://yunohost.org/images/postinstall_web.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
