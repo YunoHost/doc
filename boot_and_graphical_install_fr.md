@@ -47,7 +47,7 @@ Vous pouvez procéder à la post-installation directement, ou accéder à l'adre
 
 Si vous rencontrez une erreur de ce type, cliquez sur "**Poursuivre quand même**" ou "**Ajouter une exception**".    
 Cela signifie que vous devez faire confiance au certificat qui sécurise les connexions avec votre serveur.    
-Comme c'est le votre, vous pouvez le valider sereinement ici.
+Comme c'est le votre, vous pouvez le valider sereinement ici :-)
 
 <br>
 
