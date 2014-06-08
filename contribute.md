@@ -1,7 +1,7 @@
 # Get involved
 
 <p class="lead">
-The success of YunoHost depends exclusively on your participation.
+The success of YunoHost depends exclusively on contributor's participation.
 </p>
 
 ---
