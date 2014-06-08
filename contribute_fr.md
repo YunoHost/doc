@@ -44,7 +44,7 @@ Notre support est communautaire et s'appuie sur des contributeurs comme vous. Ve
 <span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp; Codez
 </div>
 <div class="col col-md-8" markdown="1">
-Vous pouvez vous impliquer dans le développement de YunoHost peu importe votre niveau. Sysadmins, développeurs Web, designers and pythonistes <a href="https://github.com/YunoHost" target="_blank">sont les bienvenus</a>.
+Vous pouvez vous impliquer dans le développement de YunoHost peu importe votre niveau. Sysadmins, développeurs Web, designers et pythonistes <a href="https://github.com/YunoHost" target="_blank">sont les bienvenus</a>.
 </div>
 </div>
 
