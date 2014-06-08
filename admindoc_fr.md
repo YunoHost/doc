@@ -3,6 +3,7 @@
 *En attendant une rédaction plus précise de cette page, voici un index des pages intéressantes pour l'administrateur d'un serveur YunoHost.*
 
 * [Guide d'installation](/install_fr)
+* [Matériel compatible](/hardware_fr)
 * [Liste des applications disponibles](/apps_fr)
 * [Utiliser l'interface d'administration](/admin_fr)
 * [Utiliser l'interface en ligne de commande](/moulinette_fr)
