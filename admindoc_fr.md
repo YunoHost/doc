@@ -1,4 +1,4 @@
-# Guide de l'administrateur
+# Documentation administrateur
 
 *En attendant une rédaction plus précise de cette page, voici un index des pages intéressantes pour l'administrateur d'un serveur YunoHost.*
 
