@@ -20,7 +20,7 @@ YunoHost's documentation has 3 different sections:
 
 <div class="col col-md-5 col-md-offset-3">
 <br />
-<a class="btn btn-danger btn-lg" href="/contribute"><span class="glyphicon glyphicon-heart"></span> Contributor guide</a>
+<a class="btn btn-danger btn-lg" href="/contributordoc"><span class="glyphicon glyphicon-heart"></span> Contributor guide</a>
 <p><small class="text-muted">which contains everything you have to know about us and the way we work</small></p>
 </div>
 
