@@ -1,13 +1,90 @@
-#Contribute
+# Get involved
 
-There are many ways to contribute to YunoHost:
+<p class="lead">
+The success of YunoHost depends exclusively on your participation.
+</p>
 
-* Talk about the project to your friends/family/dog <3
-* [Translate the interfaces in your language](https://www.transifex.com/organization/yunohost/)
-* [Test](/try) YunoHost and [report new bugs](https://github.com/yunohost/)
-* Help YunoHost's users on the [FAQ](https://ask.yunohost.org) and on the [support chatroom](/support)
-* [Write and improve](/write_documentation) documentation pages
-* [Package new services or webapps](/packaging_apps) for YunoHost
-* Involve in YunoHost's development
+---
 
-For every single case, please come to our chatroom (accessible from the [frontpage](/) or down below)
+<div class="row">
+<div class="col col-md-3 lead">
+<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp; Spread the word
+</div>
+<div class="col col-md-8">
+Talk about software freedom, self-hosting and YunoHost to your relatives and at your work. We rely on datalove evangelists like you <3
+</div>
+</div>
+
+---
+
+<div class="row">
+<div class="col col-md-3 lead">
+<span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;&nbsp; Testing
+</div>
+<div class="col col-md-8">
+We need people able to test YunoHost deeply. If you find a bug, try to identify it, and report it on the right <a href="https://github.com/YunoHost" target="_blank">GitHub issue tracker</a>.
+</div>
+</div>
+
+---
+
+<div class="row">
+<div class="col col-md-3 lead">
+<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; Helping users
+</div>
+<div class="col col-md-8">
+Our support relies on contributors like you. Just come to [the XMPP chatroom](/support) and help new users getting started, or pick a question in the <a href="https://ask.yunohost.org/" target="_blank">FAQ</a>.
+</div>
+</div>
+
+---
+
+<div class="row">
+<div class="col col-md-3 lead">
+<span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp; Coding
+</div>
+<div class="col col-md-8">
+You can involve in the YunoHost's development regardless of your skill.    
+Sysadmins, web developers, designers and pythonists <a href="https://github.com/YunoHost" target="_blank">are welcome</a> !
+</div>
+</div>
+
+---
+
+<div class="row">
+<div class="col col-md-3 lead">
+<span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp; Localization
+</div>
+<div class="col col-md-8">
+Get involved by making YunoHost interfaces available in your language.    
+Create a Transifex account and <a href="https://www.transifex.com/organization/yunohost/" target="_blank">get started</a> ! 
+</div>
+</div>
+
+---
+
+<div class="row">
+<div class="col col-md-3 lead">
+<span class="glyphicon glyphicon-edit"></span>&nbsp;&nbsp; Write
+</div>
+<div class="col col-md-8">
+Improve this documentation by [writing new pages](/write_documentation) or translating existing ones to your language.
+</div>
+</div>
+
+---
+
+<div class="row">
+<div class="col col-md-3 lead">
+<span class="glyphicon glyphicon-gift"></span>&nbsp;&nbsp; Packaging
+</div>
+<div class="col col-md-8">
+Extend YunoHost capabilities by [packaging new services and web applications](/packaging_apps).    
+Have a look of [what has been done yet](/apps) !
+</div>
+</div>
+
+---
+
+<br>
+<p class="lead">In any case, please [come to our chatroom](/support) to say how enthusiast you are :-)</p>
