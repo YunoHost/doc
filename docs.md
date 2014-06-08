@@ -1,6 +1,8 @@
 #Documentation
 
+<p class="lead">
 YunoHost's documentation has 3 different sections:
+</p>
 
 <div class="row text-center">
 
@@ -23,12 +25,3 @@ YunoHost's documentation has 3 different sections:
 </div>
 
 </div>
-
----
-
-And if you want to know more about YunoHost, you may want to check out these pages:
-
- * [What is YunoHost ?](/whatsyunohost)
- * [Latest news](http://news.yunohost.org)
- * [Roadmap](/roadmap)
- * [Security](/security)
