@@ -92,7 +92,7 @@
   width: auto; 
   min-width: 150px; 
   margin: 40px auto 0;">
-<a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em;margin-bottom:0.5em;" href="/try">Try it</a> <a class="btn btn-success btn-lg" style="min-width: 150px; font-size: 1.5em;margin-bottom:0.5em;" href="/install">Install</a>
+<a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em;margin-bottom:0.5em;" href="/try">Try it</a> <a class="btn btn-success btn-lg" style="min-width: 150px; font-size: 1.5em;margin-bottom:0.5em;" href="/install">Get started</a>
 <p class="text-muted text-center"><small>YunoHost v2 • beta4</small></p>
 </div>
 
@@ -197,7 +197,7 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 <a class="btn btn-lg btn-block btn-primary" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/whatsyunohost">About YunoHost</a>
 <a class="btn btn-lg btn-block btn-info" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/userdoc">User documentation</a>
-<a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/contribute">How to contribute</a>
+<a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/contribute">Get involved</a>
 <a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://ask.yunohost.org/" target="_blank">Frequently asked questions</a>
 <a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="http://news.yunohost.org">Latest news</a>
 </div>
