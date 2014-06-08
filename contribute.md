@@ -72,7 +72,7 @@ Improve this documentation by [writing new pages](/write_documentation) or trans
 </div>
 </div>
 
----
+<hr>
 
 <div class="row">
 <div class="col col-md-3 lead">
@@ -87,4 +87,4 @@ Have a look of [what has been done yet](/apps) !
 ---
 
 <br>
-<p class="lead">In any case, please [come to our chatroom](/support) to say how enthusiast you are :-)</p>
+<p class="lead" markdown="1">In any case, please [come to our chatroom](/support) to say how enthusiast you are :-)</p>
