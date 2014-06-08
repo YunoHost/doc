@@ -1,7 +1,7 @@
 # Get involved
 
 <p class="lead">
-The success of YunoHost depends exclusively on contributor's participation.
+YunoHost depends exclusively on the participation of people like you.
 </p>
 
 ---
@@ -11,7 +11,7 @@ The success of YunoHost depends exclusively on contributor's participation.
 <span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp; Spread the word
 </div>
 <div class="col col-md-8" markdown="1">
-Talk about software freedom, self-hosting and YunoHost to your relatives and at your work. We rely on datalove evangelists like you <3
+Talk about software freedom, self-hosting and YunoHost to your relatives and at your work. We rely on <a href="http://datalove.me/" target="_blank">Datalove</a> evangelists like you <3
 </div>
 </div>
 
@@ -45,7 +45,7 @@ Our support relies on contributors like you. Just come to [the XMPP chatroom](/s
 </div>
 <div class="col col-md-8" markdown="1">
 You can involve in the YunoHost's development regardless of your skill.    
-Sysadmins, web developers, designers and pythonists <a href="https://github.com/YunoHost" target="_blank">are welcome</a> !
+Sysadmins, web developers, designers and pythonists <a href="https://github.com/YunoHost" target="_blank">are welcome</a>!
 </div>
 </div>
 
@@ -57,7 +57,7 @@ Sysadmins, web developers, designers and pythonists <a href="https://github.com/
 </div>
 <div class="col col-md-8" markdown="1">
 Get involved by making YunoHost interfaces available in your language.    
-Create a Transifex account and <a href="https://www.transifex.com/organization/yunohost/" target="_blank">get started</a> ! 
+Create a Transifex account and <a href="https://www.transifex.com/organization/yunohost/" target="_blank">get started</a>! 
 </div>
 </div>
 
@@ -80,7 +80,7 @@ Improve this documentation by [writing new pages](/write_documentation) or trans
 </div>
 <div class="col col-md-8" markdown="1">
 Extend YunoHost capabilities by [packaging new services and web applications](/packaging_apps).    
-Have a look of [what has been done yet](/apps) !
+Have a look of [what has been done yet](/apps)!
 </div>
 </div>
 
