@@ -1,6 +1,6 @@
 # Essayer YunoHost chez soi
 
-*Trouvez d'autres moyens d'installer Yunohost **[ici](/install_fr)**.*
+*Trouvez d'autres moyens d'installer YunoHhost **[ici](/install_fr)**.*
 
 ## Prérequis
 
