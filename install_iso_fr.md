@@ -1,6 +1,6 @@
-# Install on a standard computer
+# Installation sur un ordinateur standard
 
-*Trouvez d'autres moyens d'installer Yunohost **[ici](/install_fr)**.*
+*Trouvez d'autres moyens d'installer YunoHost **[ici](/install_fr)**.*
 
 ## Prérequis
 
@@ -8,7 +8,7 @@
 <img src="https://yunohost.org/images/desktop.jpg">
 <img src="https://yunohost.org/images/nettop.jpg">
 
-* An matériel compatible x86 dédié à YunoHost : portable, netbook, ordinateur. Vous pouvez réutiliser n'importe quelle machine avec **256MB de RAM ou plus**
+* Un matériel compatible x86 dédié à YunoHost : portable, netbook, ordinateur. Vous pouvez réutiliser n'importe quelle machine avec **256MB de RAM ou plus**
 * Un autre ordinateur pour parcourir ce guide et accéder à votre serveur
 * Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
 * Une **Clé USB** d'une capacité minimale d'1GB **OU** un **CD vierge** standard
