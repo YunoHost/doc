@@ -1,6 +1,6 @@
 # Mise à jour en v2
 
-Si vous disposez déjà d'une version de YunoHost antérieure à la RC (`beta2`, `beta3` ou `beta4`), mettez à jour votre système de la manière suivante :
+Si vous disposez déjà d'une version de YunoHost antérieure à la RC (`bêta2`, `bêta3` ou `bêta4`), mettez à jour votre système de la manière suivante :
 
 ## <small>1.</small> Système
 
