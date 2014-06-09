@@ -8,13 +8,13 @@
     * [Guide de l'administrateur](/admindoc_fr)
         * [Guide d'installation](/install_fr)
             * [Sur Raspberry Pi](/install_on_raspberry_fr)
-            * [Sur Cubieboard](/install_on_cubieboard_fr)
+            * [Sur CubieBoard](/install_on_cubieboard_fr)
             * [Sur un autre ordinateur](/hardware_fr)
             * [Sur VirtualBox](/install_on_virtualbox_fr)
             * [Sur Docker](/install_on_docker_fr)
             * [Sur un conteneur DigitalOcean](/install_on_digitalocean_fr)
             * [Sur un serveur dédié](/install_on_dedicated_server_fr)
-        * [Application](/apps_fr)
+        * [Applications](/apps_fr)
 
     * [Guide de l'utilisateur](/userdoc_fr)
 
