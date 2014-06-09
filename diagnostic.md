@@ -35,7 +35,7 @@ If you do not see your IP address, or if there is red crosses everywhere, then y
 If your DNS is well configured, and your server looks is accessible locally, you may have **network ports blocked** or not forwarded by your router.    
 In order to verify that, try accessing your server with a client outside your local network. For example via another WiFi access point or with your mobile phone in 3G/4G.
 
-If the server is unreachable outside of your local network, then the problem probably comes from your router's configuration.
+If the server is unreachable from outside your local network too, then the problem probably comes from your router's configuration.
 
 <div class="alert alert-info">
 Try to activate uPnP in your router's configuration interface, and check that your server is plugged in Ethernet directly behind it.
