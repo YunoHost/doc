@@ -1,6 +1,6 @@
 # Installation sur Debian
 
-*Trouvez d'autres moyens d'installer Yunohost **[ici](/install_fr)**.*
+*Trouvez d'autres moyens d'installer YunoHost **[ici](/install_fr)**.*
 
 ## Prérequis
 
