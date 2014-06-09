@@ -6,12 +6,12 @@ Maintenant que vous possédez un support YunoHost, vous pouvez procéder à l'in
 
 Si vous souhaitez que la configuration réseau soit configurée automatiquement, vous devez brancher votre serveur avec un câble **Ethernet** directement **derrière votre routeur (ou box) principal**.
 
-Les connexions sans-fil ne sont pas supportées pour le moment, et si vous utilisez des routeurs intermédiaires, l'ouverture des ports réseau ne se fera pas automatiquement : Votre serveur ne sera pas accessible depuis l'extérieur.
+Les connexions sans-fil ne sont pas supportées pour le moment, et si vous utilisez des routeurs intermédiaires, l'ouverture des ports réseau ne se fera pas automatiquement : votre serveur ne sera pas accessible depuis l'extérieur.
 
 ## <small>2.</small> Démarrer sur le CD / la clé USB
 
 Démarrez votre serveur avec la clé USB ou le CD-ROM inséré, et sélectionnez-le comme **périphérique de démarrage** en pressant l'une des touches suivantes (dépendant de votre ordinateur) :    
-```<ESC>```, ```<F8>```, ```<F10>```, ```<F11>```, ```<F12>``` or ```<SUPPR>```
+```<Échap>```, ```<F8>```, ```<F10>```, ```<F11>```, ```<F12>``` or ```<Suppr>```
 
 ## <small>3.</small> Lancer l'installation graphique
 
@@ -41,7 +41,7 @@ Une fois démarré, votre serveur devrait afficher un écran comme celui-ci :
 
 <img src="https://yunohost.org/images/virtualbox_4.png">
 
-Vous pouvez procéder à la post-installation directement, ou accéder à l'adresse **IP** affichée sur cet écran depuis un navigateur Web d'un autre ordinateur (généralement `http://192.168.x.x`)
+Vous pouvez procéder à la post-installation directement, ou accéder à l'adresse **IP** affichée sur cet écran depuis un navigateur web d'un autre ordinateur (généralement `http://192.168.x.x`)
 
 <img src="https://yunohost.org/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
