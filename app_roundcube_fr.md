@@ -36,7 +36,7 @@ Pour l'installer, suivez les indications suivantes.
 
 * Modifiez le début de la ligne en ajoutant l'élément "carddav", de sorte à obtenir ceci : `array('carddav','http_authentication', 'archive', 'new_user_identity'`
 
-* Quiitez nano en tapant Crtl-X sans bien entendu oublier d'enregistrer le fichier modifié.
+* Quittez nano en tapant Crtl-X sans bien entendu oublier d'enregistrer le fichier modifié.
 
 * Pour finir, tapez `cp /var/www/roundcube/plugins/carddav/config.inc.php.dist /var/www/roundcube/plugins/carddav/config.inc.php`
 
