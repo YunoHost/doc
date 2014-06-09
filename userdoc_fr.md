@@ -4,5 +4,6 @@
 
 * [Utiliser la messagerie instantanée XMPP](/XMPP_fr)
 * [Tiny Tiny RSS](/app_ttrss_fr)
+* [Transmission (torrent)](/app_transmission_fr)
 * [Configurer un client email](/email_fr)
 * [Qu'est-ce que YunoHost](/whatsyunohost)
