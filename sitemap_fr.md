@@ -19,10 +19,10 @@
     * [Guide de l'utilisateur](/userdoc_fr)
 
     * [Guide du contributeur](/contribute_fr)
-        * [Ecrire de la documentation](/write_documentation_fr)
+        * [Écrire de la documentation](/write_documentation_fr)
         * [Packager des applications](/packaging_apps_fr)
 
-* [Essayer Yunohost](/try_fr)
+* [Essayer YunoHost](/try_fr)
 
 * [Roadmap](/roadmap_fr)
 
