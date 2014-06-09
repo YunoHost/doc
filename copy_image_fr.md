@@ -16,7 +16,7 @@ Maintenant que vous avez l'image ISO YunoHost, vous devez la copier sur une cart
 
 * Ouvrez un terminal.
 * Insérez votre carte SD.
-* Identifiez votre matériel en tapant:
+* Identifiez votre matériel en tapant :
 
 ```bash
 sudo fdisk -l
