@@ -2,7 +2,7 @@
 
 If you have successfully [installed](/install) YunoHost and passed through the [post-installation](/postinstall), you probably have a **working server**.
 
-## Test it
+### <small>1.</small> Test it
 
 In a web browser, access to your server via the domain name you just entered at the post-installation step.
 
@@ -17,7 +17,9 @@ If you have taken a <b>.nohost.me</b> or a <b>.noho.st</b> domain, you may have 
 
 #### If that does not work...
 
-### <small>1.</small> Have you configured your DNS well ?
+---
+
+### <small>2.</small> Have you configured your DNS well ?
 
 <div class="alert alert-info">
 This step is not necessary if you have a <b>.nohost.me</b> or a <b>.noho.st</b> domain
@@ -28,7 +30,7 @@ If you do not see your IP address, or if there is red crosses everywhere, then y
 
 ---
 
-### <small>2.</small> Do network ports are opened on your router ?
+### <small>3.</small> Do network ports are opened on your router ?
 
 If your DNS is well configured, and your server looks is accessible locally, you may have **network ports blocked** or not forwarded by your router.    
 In order to verify that, try accessing your server with a client outside your local network. For example via another WiFi access point or with your mobile phone in 3G/4G.
@@ -44,7 +46,7 @@ You can also redirect ports manually to your server's local IP address on this r
 
 ---
 
-### <small>3.</small> Do your router has hairpinning ?
+### <small>4.</small> Do your router has hairpinning ?
 
 If the server is accessible from outside your local network, but unreachable with its domain name on the local network, then your router probably lacks of <a href="http://en.wikipedia.org/wiki/Hairpinning" target="_blank">hairpinning</a>.
 
