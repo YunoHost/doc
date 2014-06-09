@@ -15,6 +15,7 @@ sudo apt-get update && sudo apt-get dist-upgrade
 Once upgraded, you can upgrade your applications too:
 
 ```bash
+sudo yunohost app fetchlist
 sudo yunohost app upgrade
 ```
 
