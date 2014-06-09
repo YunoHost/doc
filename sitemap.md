@@ -8,7 +8,7 @@
     * [Administrator guide](/admindoc)
         * [Installation guide](/install)
             * [On a Raspberry Pi](/install_on_raspberry)
-            * [On a CubieBboard](/install_on_cubieboard)
+            * [On a Cubieboard](/install_on_cubieboard)
             * [On another type of hardware](/hardware)
             * [On VirtualBox](/install_on_virtualbox)
             * [On Docker](/install_on_docker)
