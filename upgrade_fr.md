@@ -15,7 +15,7 @@ sudo apt-get update && sudo apt-get dist-upgrade
 Une fois votre système mis à jour, vous pouvez mettre à jour vos applications :
 
 ```bash
-sudo yunohost app fethlist
+sudo yunohost app fetchlist
 sudo yunohost app upgrade
 ```
 
