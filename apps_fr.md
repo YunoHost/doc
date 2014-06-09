@@ -67,16 +67,11 @@ $(document).ready(function () {
 | Firefox Sync | beudbeud | En cours | https://github.com/abeudin/ffsync_ynh |
 | OpenID | julien | En cours | https://github.com/julienmalik/openid-simplesamlphp_ynh |
 | Shaarli | julien | En cours | https://github.com/julienmalik/shaarli_ynh |
-| OpenVPN | Kload | En test | https://github.com/Kloadut/openvpn_ynh |
 | Etherpad-Lite | beudbeud | En dev | https://github.com/abeudin/etherpadlite_ynh |
 | proFTPd | beudbeud | En dev | https://github.com/abeudin/proftpd_ynh.git |
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
 | Baikal | aquaxp | En dev | https://github.com/aquaxp/baikal_ynh |
-| WebApp + FTP | kload | En test | https://github.com/Kloadut/my_webapp_ynh |
 | MyCryptoChat | mrtino | En test | https://github.com/mrtino/mycryptochat_ynh |
-| DokuWiki | opi | En test | https://github.com/opi/dokuwiki_ynh |
-| Wallabag | beudbeud | En test | https://github.com/abeudin/wallabag_ynh |
-| Searx | beudbeud | En test | https://github.com/abeudin/searx_ynh |
 | MediaWiki | kload | En test | https://github.com/kloadut/mediawiki_ynh |
 | Linux Dash | opi | en test | https://github.com/opi/linuxdash_ynh |
 
