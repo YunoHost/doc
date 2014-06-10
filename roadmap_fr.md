@@ -1,3 +1,4 @@
 #Roadmap
 
-Disponible en [anglais](#/roadmap_en)
+<span class="glyphicon glyphicon-arrow-down"></span>
+Disponible en anglais
