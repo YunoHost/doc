@@ -29,4 +29,7 @@
 ## v2.1
 
 * Backup system
+* Firewall in web administration *(opi)*
+* User avatar *(opi)*
+* Install non-official apps from admin *(opi)* 
 * ...
