@@ -17,6 +17,8 @@
         * [Applications](/apps)
 
     * [User guide](/userdoc)
+        * [Configure a mail client](/email)
+        * [Instant messaging usage](/XMPP)
 
     * [Contributor guide](/contribute)
         * [Write documentation](/write_documentation)
