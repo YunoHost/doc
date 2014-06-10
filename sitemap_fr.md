@@ -17,6 +17,10 @@
         * [Applications](/apps_fr)
 
     * [Guide de l'utilisateur](/userdoc_fr)
+        * [Configurer un client email](/email_fr)
+        * [Utiliser la messagerie instantanée XMPP](/XMPP_fr)
+        * [Tiny Tiny RSS](/app_ttrss_fr)
+        * [Transmission (torrent)](/app_transmission_fr)
 
     * [Guide du contributeur](/contribute_fr)
         * [Écrire de la documentation](/write_documentation_fr)
