@@ -14,7 +14,7 @@
 * A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
 * The **YunoHost Raspberry image**, available here:
 
-    [http://build.yunohost.org/raspberry-latest.img.gz](http://build.yunohost.org/raspberry-latest.img.gz)
+    [http://build.yunohost.org/raspberry-pi-test.img.tar.gz](http://build.yunohost.org/raspberry-pi-test.img.tar.gz)
 
 ---
 
