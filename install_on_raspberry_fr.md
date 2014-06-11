@@ -14,7 +14,7 @@
 * Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
 * L’**image YunoHost pour Raspberry Pi**, disponible ici :
 
-    [http://build.yunohost.org/raspberry-latest.img.gz](http://build.yunohost.org/raspberry-latest.img.gz)
+    [http://build.yunohost.org/raspberry-pi-test.img.tar.gz](http://build.yunohost.org/raspberry-pi-test.img.tar.gz)
 
 
 ---
