@@ -12,9 +12,9 @@
 * Un autre ordinateur pour parcourir ce guide et accéder à votre Raspberry Pi
 * Un écran et un clavier sont recommandés pour pouvoir contrôler votre Raspberry Pi si un problème apparaît
 * Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
-* L’**image YunoHost pour Raspberry Pi**, disponible ici :
+* L’**image YunoHost pour Raspberry Pi**, disponible ici (à **dézipper**) :
 
-    [http://build.yunohost.org/raspberry-pi-test.img.tar.gz](http://build.yunohost.org/raspberry-pi-test.img.tar.gz)
+    [http://build.yunohost.org/yunohost-raspberrypi-2014-06-12.zip](http://build.yunohost.org/yunohost-raspberrypi-2014-06-12.zip)
 
 
 ---
