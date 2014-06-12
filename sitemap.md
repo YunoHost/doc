@@ -5,29 +5,58 @@
 * [What's YunoHost](/whatsyunohost)
 
 * [Documentation](/docs)
+
+    * Try YunoHost
+       * [With demo](/try)    
+       * [With live usb](/try_at_home)
+
     * [Administrator guide](/admindoc)
+        * [Hardware compatible](/hardware)
         * [Installation guide](/install)
             * [On a Raspberry Pi](/install_on_raspberry)
             * [On a Cubieboard](/install_on_cubieboard)
-            * [On another type of hardware](/hardware)
+            * [From ISO](/install_iso)
+            * [On Debian](/install_on_debian)
             * [On VirtualBox](/install_on_virtualbox)
             * [On Docker](/install_on_docker)
             * [On a DigitalOcean droplet](/install_on_digitalocean)
             * [On a dedicated or a virtual private server](/install_on_dedicated_server)
+            * Instalation steps
+               * [Burn or copy iso](/burn_or_copy_iso)
+               * [Boot and graphical install](/boot_and_graphical_install)
+               * [Copy YunoHost image on SD card](/copy_image)
+               * [Manual instalation](/install_manually)
+               * [Plug and boot your server](/plug_and_boot)
+               * [Post-instalation](/postinstall)
+               * [Diagnostic](/diagnostic)
+        * [DNS Settings](/dns)
+        * [Internet service provider](/isp)
+        * [Web administration](/admin)
+        * [Command line administration](/moulinette)
         * [Applications](/apps)
+        * [YunoHost Tor Hidden Servicer](/torhiddenservice)
 
     * [User guide](/userdoc)
         * [Configure a mail client](/email)
         * [Instant messaging usage](/XMPP)
+        * [Applications](/apps)
 
     * [Contributor guide](/contribute)
-        * [Write documentation](/write_documentation)
-        * [Package new application](/packaging_apps)
-
-* [Try YunoHost](/try)
+        * Developement
+           * [Package new application](/packaging_apps)
+           * [Create live usb](/create_live_usb)
+           * [Build Openresty](/build_openresty)
+        * Documentation
+           * [Write documentation](/write_documentation)
+           * [Accounting to edit documentation](/accounting)
+        * [Contribution](/contributordoc)
 
 * [Roadmap](/roadmap)
 
 * [Security](/security)
 
-* [Support](/support)
+* [Instant messaging support](/support)
+
+* [Blog](http://news.yunohost.org/)
+
+* [Help](/help)
