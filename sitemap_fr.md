@@ -46,9 +46,11 @@
            * [RoundCube](/app_roundcube_fr) 
 
     * [Guide du contributeur](/contribute_fr)
-        * [Écrire de la documentation](/write_documentation_fr)
-        * [Packager des applications](/packaging_apps_fr)
-        * [Création d’un compte pour l’édition de la documentation](/accounting_fr)
+        * Développement
+           * [Packager des applications](/packaging_apps_fr)
+        * Documentation
+           * [Création d’un compte pour l’édition de la documentation](/accounting_fr)
+           * [Écrire de la documentation](/write_documentation_fr)
         * [Contribution](/contributordoc_fr)
 
 * [Feuille de route](/roadmap_fr)
