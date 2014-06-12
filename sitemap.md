@@ -57,6 +57,8 @@
 
 * [Instant messaging support](/support)
 
+* [Upgrade to v.2 RC](/upgrade)
+
 * [Blog](http://news.yunohost.org/)
 
 * [Help](/help)
