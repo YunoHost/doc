@@ -67,6 +67,7 @@ $(document).ready(function () {
 | Firefox Sync | beudbeud | En cours | https://github.com/abeudin/ffsync_ynh |
 | OpenID | julien | En cours | https://github.com/julienmalik/openid-simplesamlphp_ynh |
 | Shaarli | julien | En cours | https://github.com/julienmalik/shaarli_ynh |
+| Yourls | courgette | En cours | https://github.com/thomaslebeau/yourls_ynh |
 | Etherpad-Lite | beudbeud | En dev | https://github.com/abeudin/etherpadlite_ynh |
 | proFTPd | beudbeud | En dev | https://github.com/abeudin/proftpd_ynh.git |
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
@@ -95,7 +96,6 @@ $(document).ready(function () {
 * [10er10](https://github.com/dready92/10er10)
 * [Subsonic](http://www.subsonic.org)
 * [Sick Beard](http://sickbeard.com)
-* [Yourls](http://yourls.org)
 * [Cops](http://blog.slucas.fr/fr/oss/calibre-opds-php-server)
 * [PHProxy](http://sourceforge.net/projects/poxy/)
 * [GPodder](https://gpodder.net)
