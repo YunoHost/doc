@@ -28,6 +28,7 @@
                * [Installation manuelle](/install_manually_fr)
                * [Brancher et démarrer votre serveur](/plug_and_boot_fr)
                * [Post-installation](/postinstall_fr)
+               * [Diagnostic du bon fonctionnement du YunoHost](/diagnostic_fr)
         * [Configuration DNS](/DNS_fr)
             * [Avec OVH](/OVH_fr)
         * [Fournisseur d’accès à Internet](/isp_fr)
