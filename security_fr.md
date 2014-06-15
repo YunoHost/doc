@@ -14,7 +14,7 @@ Deux points sont néanmoins importants à noter :
 
 ---
 
-## Améliorer la sécurtié
+## Améliorer la sécurité
 
 Si votre serveur YunoHost est dans un environnement de production critique ou que vous souhaitez améliorer sa sécurité, il est bon de suivre quelques bonnes pratiques.
 
