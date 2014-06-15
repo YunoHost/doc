@@ -22,6 +22,6 @@ L'utilitaire de détection automatique de Thunderbird ne marche pas correctement
 
 ###Migration
 
-Tes courriels sont enregistré dans le fichier /val/mail/.
+Tes courriels sont enregistré dans le fichier /var/mail/.
 Tu aura besoin de déplacer ces fichier vers ton nouveau serveur YunoHost.
 
