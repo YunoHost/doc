@@ -19,5 +19,5 @@ SMTP  465  SSL/TLS
 
 ###Migration
 
-Your e-mails are saved in the forder /val/mail/.
+Your e-mails are saved in the forder /var/mail/.
 You will need to move that folder to your new server YunoHost.
