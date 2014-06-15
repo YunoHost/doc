@@ -7,7 +7,7 @@ YunoHost provide:
 * [RoundCube](/apps): a webmail
 
 ###Heavy email client
-You can acces to your emails throud an heavy email client such as Mozilla Thunderbird or Évolution.
+You can acces to your emails thanks to an heavy email client such as Mozilla Thunderbird or Évolution.
 
 You will need your email adress and your password.
 
