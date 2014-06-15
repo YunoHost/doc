@@ -11,14 +11,14 @@ Tu peux accéder à tes courriels grâce à un client lourd de messagerie élect
 
 Tu aura besoin de ta principale adresse mail et de ton mot de passe.
 
-Réglages :
+#####Réglages :
 
-IMAP  993  SSL/TLS
+IMAP | 993 | SSL/TLS
 
-SMTP  465  SSL/TLS
+SMTP | 465 | SSL/TLS
 
 ####Thunderbird
-L'utilitaire de détection automatique de thunderbird ne marche pas correctement avec yunohost donc il faut passer en configuration manuelle
+L'utilitaire de détection automatique de Thunderbird ne marche pas correctement avec YunoHost. Il faut donc passer en configuration manuelle.
 
 ###Migration
 
