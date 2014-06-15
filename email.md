@@ -11,11 +11,15 @@ You can acces to your emails throud an heavy email client such as Mozilla Thunde
 
 You will need your email adress and your password.
 
-Settings:
+#####Settings:
 
-IMAP  993  SSL/TLS
+IMAP | 993 | SSL/TLS
 
-SMTP  465  SSL/TLS
+SMTP | 465 | SSL/TLS
+
+#### Mozilla Thunderbird
+
+The automatic detection tool of Thunderbird doesn’t works with YunoHost. You will need to do it manually.
 
 ###Migration
 
