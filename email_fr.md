@@ -17,6 +17,9 @@ IMAP  993  SSL/TLS
 
 SMTP  465  SSL/TLS
 
+####Thunderbird
+L'utilitaire de détection automatique de thunderbird ne marche pas correctement avec yunohost donc il faut passer en configuration manuelle
+
 ###Migration
 
 Tes courriels sont enregistré dans le fichier /val/mail/.
