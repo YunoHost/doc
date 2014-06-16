@@ -33,6 +33,7 @@
             * [Avec OVH](/OVH_fr)
         * [Fournisseur d’accès à Internet](/isp_fr)
         * [Administration web](/admin_fr)
+        * [Connexion à son serveur en ligne de commande avec SSH](/ssh_fr)
         * [Administration en ligne de commande avec la Moulinette](/moulinette_fr)
         * [Applications](/apps_fr)
         * [YunoHost service caché Tor](/torhiddenservice_fr)
