@@ -25,11 +25,10 @@ You have several choices here. Note that you can mix and match solutions if you 
 1. You can use YunoHost's DNS service, which will automatically configure your DNS for you. You must choose a domain that ends with `.nohost.me` or `noho.st` for this, which may be inconvenient for you (you would then only be able to use an email address like `john@my-server.noho.st`).
 **This is the recommended option if you are just starting out with self-hosting.**
 
-2. You can use the DNS service offered by your **registrar** (Gandi, NameCheap, BookMyName or others) to configure your domain name. Check out these pages for specific documentation:
-    * [OVH](/OVH)
-    * [Gandi](/Gandi)
-    * [BookMyName](/BookMyName)
-<br><br>**Warning**: If you choose this option, you will have more configuration possibilities, but nothing will be done for you. For example, if you want to use `webmail.my-server.org`, you must add it manually to the DNS records with your registrar.
+2. You can use the DNS service offered by your **registrar** (Gandi, NameCheap, BookMyName or others) to configure your domain name. Here is the [standard DNS configuration](/dns_config).    
+You can also check out these pages for specific registrar documentation: [OVH](/OVH), [Gandi](/Gandi), [BookMyName](/BookMyName)
+
+**Warning**: If you choose this option, you will have more configuration possibilities, but nothing will be done for you. For example, if you want to use `webmail.my-server.org`, you must add it manually to the DNS records with your registrar.
 
 3. Your YunoHost instance has its own DNS service, which means it will automatically configure its own DNS records, and that you can leave the setup to the instance itself. To do this, you must explain to your **registrar** that your YunoHost instance is the authoritative DNS server for your domain name.
 
