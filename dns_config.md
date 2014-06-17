@@ -21,3 +21,5 @@ _xmpp-server._tcp 14400 IN SRV 0 5 5269 domain.tld.
 @ 900 IN MX 10 domain.tld.
 @ 900 IN TXT "v=spf1 a mx:domain.tld ~all"
 ```
+
+<div class="alert alert-warning"><b>Warning :</b> Replace domain.tld with your own domain, and update IP sample values with your server IP</div>
