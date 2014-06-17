@@ -32,6 +32,7 @@
         * [DNS Settings](/dns)
         * [Internet service provider](/isp)
         * [Web administration](/admin)
+        * [Connect to your server with SSH](/ssh)
         * [Command line administration](/moulinette)
         * [Applications](/apps)
         * [YunoHost Tor Hidden Servicer](/torhiddenservice)
