@@ -43,8 +43,13 @@ num  target     prot opt source               destination
 2    RETURN     all  --  anywhere             anywhere 
 ```
 
-Il nous indique que l'ip 80.215.197.201 est banni dans la règle fail2ban-yunohost. Pour débloquer cette IP il faut faire la commande
+Il nous indique que l'ip 80.215.197.201 est banni dans la règle fail2ban-yunohost. 
+
+Pour débloquer cette IP il faut faire la commande
+
 iptables -D nom_de_la_regle numéro_de_l'entré
 
 exemple :
+```bash
 iptables -D fail2ban-yunohost 1
+```
