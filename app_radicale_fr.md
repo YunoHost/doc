@@ -1,11 +1,11 @@
 #Radicale
+## Caldav Sync
+url: https://domaine.fr/patch/login/calendar.ics/
+exemple: https://plop.nohost.me/sync/beudbeud/calendar.ics/
 
-Cette page n'existe pas encore, vous pouvez l'éditer en appuyant sur la touche ```<Échap>``` de votre clavier, ou en cliquant sur le bouton "Éditer" en bas à droite de votre écran. Vous pourrez avoir un aperçu de vos changements en appuyant à nouveau sur la touche ```<Échap>``` ou en cliquant sur le bouton "Aperçu".
+## Carddav Sync
+url: https://domaine.fr/patch/login/AddressBook.vcf/
+exemple: https://plop.nohost.me/sync/beudbeud/AddressBook.vcf/
 
-** Note : ** Si vous n'avez pas de compte vous devrez envoyer vos modifications manuellement.
-
-
-### Syntaxe
-Cette page utilise la syntaxe Markdown, veuillez vous référer à la documentation pour plus d'informations :
-
-http://daringfireball.net/projects/markdown/syntax
+##Davdroid
+https://github.com/abeudin/radicale_ynh/pull/4
