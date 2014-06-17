@@ -19,7 +19,7 @@ SMTP | 465 | SSL/TLS
 
 #### Mozilla Thunderbird
 
-The automatic detection tool of Thunderbird doesn’t works with YunoHost. You will need to do it manually.
+The automatic detection tool of Thunderbird doesn’t works with YunoHost. You will need to do it manually. To do so, add the account information, then select SSL/TLS for imap and smtp. Afterwards select 'Normal Password' for Authentication and click on 'Advanced Config'. You will need to accept the certificate exceptions for fetching mails and after you send your first mail.
 
 ###Migration
 
