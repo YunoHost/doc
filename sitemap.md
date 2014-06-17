@@ -40,6 +40,7 @@
         * [Configure a mail client](/email)
         * [Instant messaging usage](/XMPP)
         * [Applications](/apps)
+           * [Radicale](/app_radicale)
 
     * [Contributor guide](/contribute)
         * Developement
