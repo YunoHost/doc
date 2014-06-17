@@ -6,7 +6,7 @@ Un « **non** » peut entraîner des problèmes d'utilisation de votre serveur o
 
 ### France
 
-| Fournisseur d'accès | Box (modem/routeur) | uPnP activable | port 25 ouvrable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Reverse DNS personnalisable | IP fixe |
+| Fournisseur d'accès | Box (modem/routeur) | uPnP activable | Port 25 ouvrable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Reverse DNS personnalisable | IP fixe |
 | --- | --- | --- | --- | --- | --- | --- |
 | [Free](http://free.fr) | Freebox | oui (activé) | oui | oui (désactivé) | oui | oui |
 | [SFR](http://sfr.fr) | Neufbox | oui (activé) | oui | **non** | | oui et non |
@@ -18,7 +18,7 @@ Pour une liste plus complète et précise, référez-vous à la très bonne docu
 
 ### Belgique
 
-| Fournisseur d'accès | Box (modem/routeur) | uPnP activable | port 25 ouvrable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Reverse DNS personnalisable | IP fixe |
+| Fournisseur d'accès | Box (modem/routeur) | uPnP activable | Port 25 ouvrable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Reverse DNS personnalisable | IP fixe |
 | --- | --- | --- | --- | --- | --- | --- |
 | [Belgacom](http://belgacom.be) | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
 | [Scarlet](http://scarlet.be) | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
