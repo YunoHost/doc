@@ -1,9 +1,10 @@
-#Fail2ban
+# Fail2ban
 
-##Débloquer une IP
+Pour diverses raisons, il peut arriver qu'une adresse IP ait été blacklisté. Si vous souhaiter accéder à votre serveur depuis cette IP, il faudra la débloquer.
 
-Tout d'abord on affiche le listing de toute les régles iptables avec la commande :
+## Débloquer une IP
 
+Tout d'abord on affiche le listing de toutes les régles iptables avec la commande :
 
 ```bash
 root@beudi:~# iptables -L --line-numbers
@@ -43,13 +44,13 @@ num  target     prot opt source               destination
 2    RETURN     all  --  anywhere             anywhere 
 ```
 
-Il nous indique que l'ip 80.215.197.201 est banni dans la règle fail2ban-yunohost. 
+Il nous indique que l'IP `80.215.197.201` est bannie dans la règle fail2ban-yunohost. Pour la débloquer :
 
-Pour débloquer cette IP il faut faire la commande
+```bash
+iptables -D nom_de_la_regle numéro_de_l_entrée
+```
 
-iptables -D nom_de_la_regle numéro_de_l'entré
-
-exemple :
+Par exemple :
 ```bash
 iptables -D fail2ban-yunohost 1
 ```
