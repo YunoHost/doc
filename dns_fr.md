@@ -26,11 +26,10 @@ Plusieurs choix s'offrent à vous. Notez que vous pouvez cumuler ces solutions s
 1. Vous pouvez utiliser le service de DNS de YunoHost, qui s'occupera de configurer tout seul les DNS de votre instance YunoHost. Vous devrez en revanche choisir un domaine se terminant par `.nohost.me` ou `.noho.st`, ce qui peut être inconvenant (vous aurez alors des adresses email telles que `jean@mon-serveur.noho.st`).
 **C'est la méthode recommandée si vous débutez.**
 
-2. Vous pouvez utiliser le service de DNS de votre **registar** (Gandi, OVH, BookMyName ou autre) pour configurer vos noms de domaine. Veuillez vous référer aux documentations spécifiques :
-    * [OVH](/OVH_fr)
-    * [Gandi](/Gandi_fr)
-    * [BookMyName](/BookMyName_fr)
-<br><br>**Attention** : Si vous choisissez ce mode de fonctionnement, vous aurez plus de flexibilité, mais rien ne sera automatique. Par exemple si vous souhaitez utiliser `webmail.mon-serveur.org`, vous devrez l'ajouter manuellement chez votre registar.
+2. Vous pouvez utiliser le service de DNS de votre **registar** (Gandi, OVH, BookMyName ou autre) pour configurer vos noms de domaine. Voici la [configuration DNS standard](/dns_config_fr).    
+Vous pouvez également consulter les documentations spécifiques à ces différents registrar : [OVH](/OVH_fr), [Gandi](/Gandi_fr), [BookMyName](/BookMyName_fr).
+
+**Attention** : Si vous choisissez ce mode de fonctionnement, vous aurez plus de flexibilité, mais rien ne sera automatique. Par exemple si vous souhaitez utiliser `webmail.mon-serveur.org`, vous devrez l'ajouter manuellement chez votre registar.
 
 3. Votre instance YunoHost possède un service DNS, ce qui veut dire qu'il configure automatiquement ses enregistrements DNS, et qu'il est possible de lui en déléguer la gestion. Pour ce faire, vous devez indiquer au **registar** que c'est votre instance YunoHost qui est le serveur DNS de votre nom de domaine.
 <br><br>**Attention** : Si vous choisissez ce mode de fonctionnement, toutes les configurations seront automatiques, vous disposerez d'une grande flexibilité, mais la perte de votre serveur entraînera potentiellement beaucoup d'ennuis. **Choisissez cette méthode si vous êtes sûr de vous.**
