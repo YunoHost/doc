@@ -37,6 +37,7 @@
         * [Administration en ligne de commande avec la Moulinette](/moulinette_fr)
         * [Applications](/apps_fr)
         * [YunoHost service caché Tor](/torhiddenservice_fr)
+        * [Débloquer une IP avec Fail2ban](/fail2ban_fr)
 
     * [Guide de l'utilisateur](/userdoc_fr)
         * [Configurer un client email](/email_fr)
