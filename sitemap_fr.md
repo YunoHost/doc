@@ -45,7 +45,8 @@
            * [Tiny Tiny RSS](/app_ttrss_fr)
            * [Transmission (torrent)](/app_transmission_fr)
            * [Jappix](/app_jappix_fr)
-           * [RoundCube](/app_roundcube_fr) 
+           * [RoundCube](/app_roundcube_fr)
+           * [Radicale](/app_radicale_fr)
 
     * [Guide du contributeur](/contribute_fr)
         * Développement
