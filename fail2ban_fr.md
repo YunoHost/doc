@@ -1,6 +1,6 @@
 #Fail2ban
 
-##DéBannir un IP
+##Débloquer une IP
 
 Tout d'abord on affiche le listing de toute les régles iptables avec la commande :
 
