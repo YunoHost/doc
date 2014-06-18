@@ -1,9 +1,9 @@
-#Certificate
+#Certificat
 
-Certificate are used to certify that your server is the good one, not a falsified one.
+Un certificat est utilisé pour certifier qu’un serveur correspond bien à celui que l’on souhaite visiter et qu’il ne s’agit pas d’un serveur falsifié.
 
-YunoHost provide a self-signed certificate.
+YunoHost fournit un certificat auto-signé.
 
-On your clients software, like your web browser, your heavy email client, your heavy XMPP client you will need to add an exception for that self-signed certificate.
+Sur les clients, comme les navigateurs web, les clients lourd mail, les clients lourd XMPP il faudra ajouter une exception pour ce certificat auto-signé. 
 
-You can have a certificate signed by an autority.
+On peut obtenir un certificat signé par une autorité.
