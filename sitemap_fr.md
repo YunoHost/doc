@@ -32,11 +32,12 @@
         * [Configuration DNS](/dns_fr)
             * [Configuration du DNS](/dns_config_fr)
             * [Avec OVH](/OVH_fr)
+        * [Applications](/apps_fr)
         * [Fournisseur d’accès à Internet](/isp_fr)
         * [Administration web](/admin_fr)
         * [Connexion à son serveur en ligne de commande avec SSH](/ssh_fr)
         * [Administration en ligne de commande avec la Moulinette](/moulinette_fr)
-        * [Applications](/apps_fr)
+        * [Gestion du certificat](/certificate_fr)
         * [YunoHost service caché Tor](/torhiddenservice_fr)
         * [Débloquer une IP avec Fail2ban](/fail2ban_fr)
 
