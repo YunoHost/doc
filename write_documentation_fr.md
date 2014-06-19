@@ -16,4 +16,4 @@ La documentation de YunoHost est géré par un [dépot Git](https://github.com/Y
 
 ## Syntaxe
 
-La documenation utilise la syntaxe Markdown. Veuillez vous référer à la [documentation](http://daringfireball.net/projects/markdown/syntax) pour plus d'informations. 
+La documenation utilise la syntaxe Markdown. Veuillez vous référer à la [documentation](http://daringfireball.net/projects/markdown/syntax) pour plus d'informations.
