@@ -73,6 +73,14 @@ ssh=yes
 
 Sauvegardez et relancez le démon SSH.
 
+Ensuite redémarrez le firewall iptables et fermez l’ancien port dans iptables.
+
+```bash
+yunohost firewall reload
+yunohost firewall disallow <votre numéro de port> # port par défaut 22
+yunohost firewall disallow --ipv6 <votre numéro de port> # pour ipv6
+``` 
+
 **Pour les prochaines connexions ssh** il faudra ajouter l'option -p suivit du numéro de port ssh.
 
 **Exemple** :
