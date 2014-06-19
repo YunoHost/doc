@@ -59,6 +59,12 @@ nano /etc/ssh/sshd_config
 Port 22 # a remplacer par exemple par 9777
 ```
 
+Pour éviter que yunohost écrase la configuration du serveur SSH il faut modifier le fichier `/etc/yunohost/yunohost.conf` et passer la ligne ssh à yes
+
+```bash
+ssh=yes
+```
+
 Sauvegardez et relancez le démon SSH.
 
 **Pour les prochaines connexions ssh** il faudra ajouter l'option -p suivit du numéro de port ssh.
