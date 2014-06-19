@@ -64,6 +64,7 @@ $(document).ready(function () {
 
 | Nom | Packageur | État d'avancement | URL du git |
 | --- | --- | --- | --- |
+| OpenSondage | zamentur | En cours | https://github.com/zamentur/opensondage_ynh |
 | Firefox Sync | beudbeud | En cours | https://github.com/abeudin/ffsync_ynh |
 | OpenID | julien | En cours | https://github.com/julienmalik/openid-simplesamlphp_ynh |
 | Shaarli | julien | En cours | https://github.com/julienmalik/shaarli_ynh |
@@ -80,7 +81,6 @@ $(document).ready(function () {
 
 * [Ethercalc](http://ethercalc.net/) / [Ethersheet](https://ethersheet.org/)
 * [Sympa](http://www.sympa.org/)
-* [OpenSondage](https://github.com/framasoft/OpenSondage) (framadate)
 * [Mumble](http://mumble.sourceforge.net/)
 * [Ghost](http://ghost.org)
 * [PluXML](http://www.pluxml.org/)
