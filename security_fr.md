@@ -42,6 +42,12 @@ nano /etc/ssh/sshd_config
 PasswordAuthentication no
 ```
 
+Pour éviter que yunohost écrase la configuration du serveur SSH il faut modifier le fichier `/etc/yunohost/yunohost.conf` et passer la ligne ssh à yes
+
+```bash
+ssh=yes
+```
+
 Sauvegardez et relancez le démon SSH.
 
 ---
