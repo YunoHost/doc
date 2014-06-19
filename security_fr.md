@@ -46,6 +46,31 @@ Sauvegardez et relancez le démon SSH.
 
 ---
 
+### Modifier le port ssh
+
+Pour éviter de tentatives de connexion ssh par des robots qui scan tout internet pour tenter des connexion ssh avec tout serveur accessible on peux modifier le port ssh.
+
+**Sur votre serveur**, éditez le fichier de configuration SSH, pour modifier le port ssh.
+
+```bash
+nano /etc/ssh/sshd_config
+
+# Recherchez la ligne "Port" et remplacez le numéro du port (par défaut 22) par un autre numéro non utilisé
+Port 22 # a remplacer par exemple par 9777
+```
+
+Sauvegardez et relancez le démon SSH.
+
+**Pour les prochaines connexions ssh** il faudra ajouter l'option -p suivit du numéro de port ssh.
+
+**Exemple** :
+
+```bash
+ssh -p <votre_numero_de_port_ssh> admin@<votre_serveur_yunohost>
+``` 
+
+---
+
 ### Désactivation de l'API YunoHost
 
 YunoHost est administrable via une **API HTTP**, servie sur le port 6787 par défaut. Elle permet d'administrer une grande partie de votre serveur, et peut donc être utilisée à des **fins malveillantes**. La meilleure chose à faire si vous êtes habitués aux lignes de commande est de désactiver le service `yunohost-api`, et **utiliser la [moulinette](/moulinette_fr)** en SSH.
