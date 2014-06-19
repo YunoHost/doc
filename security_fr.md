@@ -54,7 +54,7 @@ Sauvegardez et relancez le démon SSH.
 
 ### Modifier le port ssh
 
-Pour éviter de tentatives de connexion ssh par des robots qui scan tout internet pour tenter des connexion ssh avec tout serveur accessible on peux modifier le port ssh.
+Pour éviter de tentatives de connexion ssh par des robots qui scannent tout internet pour tenter des connexion ssh avec tout serveur accessible on peux modifier le port ssh.
 
 **Sur votre serveur**, éditez le fichier de configuration SSH, pour modifier le port ssh.
 
