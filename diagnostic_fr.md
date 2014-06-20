@@ -1,15 +1,15 @@
 # Diagnostic du bon fonctionnement de YunoHost
 
-Si vous avez réussit l’[installation](/install_fr) de YunoHost et passé l’étape de la [post-installation](/postinstall_fr), vous avez probablement un **serveur fonctionnel**.
+Si vous avez réussi l’[installation](/install_fr) de YunoHost et passé l’étape de [post-installation](/postinstall_fr), vous avez probablement un **serveur fonctionnel**.
 
 ### <small>1.</small> Essaye
 
-Dans ton navigateur web, essaye d’accèder à ton serveur grâce au nom de domaine que tu as entré à l’étape de la post-installation.
+Dans ton navigateur web, essayez d’accéder à votre serveur grâce au nom de domaine que vous avez entré à l’étape de post-installation.
 
-Par exemple : `http://mondomaine.com`
+Par exemple : `http://mondomaine.org`
 
 <div class="alert alert-warning">
-Si tu as a pris un nom de domaine en <b>.nohost.me</b> ou un <b>.noho.st</b>, tu devra attendre 5 minutes avant que ton adresse soit atteignable.
+Si vous avez optez pour un nom de domaine se terminant par <b>.nohost.me</b> ou <b>.noho.st</b>, vous devrez patienter 5 minutes avant que l'adresse soit atteignable.
 </div>
 
 ---
@@ -18,34 +18,34 @@ Si tu as a pris un nom de domaine en <b>.nohost.me</b> ou un <b>.noho.st</b>, tu
 
 ---
 
-### <small>2.</small> As-tu bien configuré ton DNS ?
+### <small>2.</small> Avez-vous bien configuré votre DNS ?
 
 <div class="alert alert-info">
-Cette étape n’est pas nécessaire si tu as un nom de domaine en <b>.nohost.me</b> ou un <b>.noho.st</b>
+Cette étape n’est pas nécessaire si vous possédez un nom de domaine en <b>.nohost.me</b> ou un <b>.noho.st</b>
 </div>
 
-Vas sur https://www.whatsmydns.net/, entre ton nom de domaine dans le champ et clique sur `Search`. Si tu ne vois pas ton adresse IP, ou s’il y a des croix rouge partout, cela signifie que tu as probablement mal configuré ton [DNS](/dns_fr).
+Rendez-vous sur https://www.whatsmydns.net/, entrez votre nom de domaine dans le champ prévu à cet et cliquez sur `Search`. Si vous ne voyez pas votre adresse IP, ou s’il y a des croix rouges par endroit, cela signifie que vous avez probablement mal configuré votre [DNS](/dns_fr).
 
 ---
 
-### <small>3.</small> Est-ce que les ports de ton router sont ouverts ?
+### <small>3.</small> Est-ce que les ports de votre box/routeur sont ouverts ?
 
-Si ton DNS est bien configuré, et que ton serveur est accessible localement, tu doit avoir des **ports bloqués** ou non dirigés vers ton serveur.
-Afin de le vérifier, essaye d’accéder à ton serveur avec un client extérieur à ton réseau local. Par exemple grâce à un autre accès Wi-Fi ou avec un smartphone en 3G/4G.
+Si vos DNS sont bien configurés, et que le serveur est accessible localement, vous avez probablement des **ports bloqués** sur votre box/routeur ou non dirigés vers votre serveur.
+Afin de le vérifier, essayez d’accéder à votre serveur avec un client extérieur au réseau local. Par exemple grâce à un autre accès Wi-Fi ou avec un smartphone en 3G/4G.
 
-Si le serveur est inatteignable de l’extérieur de ton réseau local, le problème vient probablement de la configuration de ton routeur.
+Si le serveur est inatteignable depuis l’extérieur du réseau local, le problème vient probablement de la configuration du routeur.
 
 <div class="alert alert-info">
-Essaye d’activer l’uPnP sur l’interface de configuration de ton routeur, et vérifie qu’il est directement connecté à ton serveur en Ethernet.
+Essayez d’activer l’uPnP sur l’interface de configuration de votre box/routeur, et vérifiez que le serveur y est directement connecté en Ethernet.
 <p>
-Tu peux aussi rediriger les ports manuellement vers l’adresse IP locale de ton serveur grâce à l’interface de configuration de ton routeur.
+Vous pouvez également rediriger les ports manuellement vers l'adresse IP locale de votre serveur grâce à l’interface de configuration de votre box/routeur.
 </p>
 </div>
 
 ---
 
-### <small>4.</small> Est-ce que ton routeur fait du hairpinning ?
+### <small>4.</small> Est-ce que votre box/routeur fait du hairpinning ?
 
-Si le serveur est accessible de l’extérieur de ton réseau local, mais inatteignable avec son nom de domaine dans ton réseau local, ton routeur n’a probablement pas de <a href="http://en.wikipedia.org/wiki/Hairpinning" target="_blank">hairpinning</a>.
+Si le serveur est accessible de l’extérieur, mais inatteignable via son nom de domaine dans votre réseau local, votre box/routeur ne fait probablement pas correctement de <a href="http://en.wikipedia.org/wiki/Hairpinning" target="_blank">hairpinning</a>.
 
-Tu peux éviter cela simplement. Si tu sait comment le faire, configure le fichier  `/etc/hosts` de ton client local pour accéder à ton serveur avec son IP locale. Sinon, essaye l’installation avec un nom de domaine en **.nohost.me** ou en **.noho.st**.
+Si vous savez comment faire, ajoutez une entrée dans le fichier `/etc/hosts` du **client** pour indiquer qu'il doit accéder au **serveur** via son IP locale. Sinon, retentez l’installation en prenant cette fois un nom de domaine en **.nohost.me** ou en **.noho.st**.
