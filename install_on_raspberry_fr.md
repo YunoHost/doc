@@ -29,6 +29,9 @@
 
 ---
 
+Pour se connecter en ssh : root@mon-serveur.org | mot de passe : yunohost
+
+---
 ***Si vous avez besoin d'aide lors de ces étapes, n'hésitez pas à utiliser les différents [moyens de support](/support_fr).***
 
 
