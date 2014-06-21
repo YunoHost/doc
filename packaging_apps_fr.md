@@ -149,6 +149,18 @@ sudo yunohost app setting <id> <key> [ -v <value> ]
 C'est la commande la plus importante. Elle vous permet de stocker des réglages d'une application spécifique, afin de les réutiliser plus tard (typiquement dans le script ```upgrade```) ou pour que YunoHost puisse se configurer automatiquement (par exemple pour le SSO).
 <br><br>
 La commande définit la valeur si vous ajoutez ```-v <valeur>```, sinon la récupère.
+<br><br>
+
+** Quelques paramètres pratiques **<br><br>
+```skipped_uris```<br><br>
+Enlève la protection sur la liste d'uris fournies séparées par des virgules.<br><br>
+
+```protected_uris```<br><br>
+Protège la liste d'uris fournies séparées par des virgules. Seul un utilisateur connecté y aura accès.<br><br>
+
+Il existe aussi `skipped_regex`, `protected_regex`, `unprotected_uris`, `unprotected_regex`.<br><br>
+
+**Attention** : Il est nécessaire de lancer `yunohost app ssowatconf` pour appliquer les effets.
 </blockquote>
 
 <br>
