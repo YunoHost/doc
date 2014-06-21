@@ -64,7 +64,6 @@ $(document).ready(function () {
 
 | Nom | Packageur | État d'avancement | URL du git |
 | --- | --- | --- | --- |
-| OpenSondage | zamentur | En cours | https://github.com/zamentur/opensondage_ynh |
 | Firefox Sync | beudbeud | En cours | https://github.com/abeudin/ffsync_ynh |
 | OpenID | julien | En cours | https://github.com/julienmalik/openid-simplesamlphp_ynh |
 | Shaarli | julien | En cours | https://github.com/julienmalik/shaarli_ynh |
@@ -73,6 +72,7 @@ $(document).ready(function () {
 | proFTPd | beudbeud | En dev | https://github.com/abeudin/proftpd_ynh.git |
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
 | Baikal | aquaxp | En dev | https://github.com/aquaxp/baikal_ynh |
+| OpenSondage | zamentur | En test | https://github.com/zamentur/opensondage_ynh |
 | MyCryptoChat | mrtino | En test | https://github.com/mrtino/mycryptochat_ynh |
 | MediaWiki | kload | En test | https://github.com/kloadut/mediawiki_ynh |
 | Linux Dash | opi | en test | https://github.com/opi/linuxdash_ynh |
@@ -100,4 +100,3 @@ $(document).ready(function () {
 * [PHProxy](http://sourceforge.net/projects/poxy/)
 * [GPodder](https://gpodder.net)
 * [Jitsi Meet](https://github.com/jitsi/jitsi-meet)
-
