@@ -99,4 +99,5 @@ $(document).ready(function () {
 * [Cops](http://blog.slucas.fr/fr/oss/calibre-opds-php-server)
 * [PHProxy](http://sourceforge.net/projects/poxy/)
 * [GPodder](https://gpodder.net)
+* [Jitsi Meet](https://github.com/jitsi/jitsi-meet)
 
