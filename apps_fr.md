@@ -64,6 +64,7 @@ $(document).ready(function () {
 
 | Nom | Packageur | État d'avancement | URL du git |
 | --- | --- | --- | --- |
+| LimeSurvey | zamentur | En cours | https://github.com/zamentur/limesurvey_ynh |
 | Firefox Sync | beudbeud | En cours | https://github.com/abeudin/ffsync_ynh |
 | OpenID | julien | En cours | https://github.com/julienmalik/openid-simplesamlphp_ynh |
 | Shaarli | julien | En cours | https://github.com/julienmalik/shaarli_ynh |
