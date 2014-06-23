@@ -58,7 +58,7 @@
   position: absolute; 
   top: 90%;
   text-align: center;">
-<a style="color: #777" href="/whatsyunohost_fr">À propos</a> <span class="colored-bar">•</span> <a style="color: #777" href="http://news.yunohost.org" target="_blank">Dernières nouvelles</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs_fr" target="_blank">Dernières nouvelles</a>
+<a style="color: #777" href="/whatsyunohost_fr">À propos</a> <span class="colored-bar">•</span> <a style="color: #777" href="http://news.yunohost.org" target="_blank">Dernières nouvelles</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs_fr" target="_blank">Documentation</a>
 </div>
 
 </div>
