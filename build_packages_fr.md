@@ -2,7 +2,7 @@
 
 ## Architecture
 
-Les paquets YunoHost se trouvent sur la machine yunohost.org dans le répertoire <code>/home/yunohost/packages.git</code>.
+Les paquets YunoHost se trouvent sur la machine yunohost.org dans le répertoire `/home/yunohost/packages.git`.
 
 Le système de build est basé sur debuild et pbuilder. Le fonctionnement de cet ensemble est de générer un chroot qui va embarquer l'ensemble des dépendances et des outils de build Debian.
 
@@ -10,17 +10,24 @@ La configuration de cette environnement est défini dans le fichier `/etc/pbuild
 
 ## Mise à jour d'un paquet
 
-Pour les paquets moulinette, moulinette-yunohost, ssowat, et yunohost-admin il faut d'abord récupérer les dernière sources.
+Pour les paquets basé sur des sources GitHub (moulinette, moulinette-yunohost, ssowat, et yunohost-admin) il faut d'abord récupérer les dernière modifications :
 
 ```bash
 [yunohost@yunohost] ~/packages.git/moulinette $ cd src
-[yunohost@yunohost] ~/packages.git/moulinette $ git pull
+[yunohost@yunohost] ~/packages.git/moulinette/src $ git pull
 ```
 
-Pour mettre à jour un paquet yunohost-config-* il faut se rendre dans le répertoire faire les modifications sur le paquet puis lancer la commande : 
+Puis lancer le build du paquet (**attention : vous devez la lancer à la racine du répertoire du paquet**)
 
 ```bash
-[yunohost@yunohost] ~/packages.git $ commit-and-build "Message de commit"
+[yunohost@yunohost] ~/packages.git/moulinette/src $ cd ..
+[yunohost@yunohost] ~/packages.git/moulinette $ commit-and-build "Message de commit"
+```
+
+Pour mettre à jour un paquet yunohost-config-* il faut se rendre dans le répertoire, faire les modifications voulues sur le paquet (typiquement modifier un script `debian/postinst`), puis lancer la même commande que pour les paquets avec source : 
+
+```bash
+[yunohost@yunohost] ~/packages.git/yunohost-config-nginx $ commit-and-build "Message de commit"
 ```
 
 Cette commande va mettre à jour le fichier changelog Debian (`debian/changelog`) et lancer la création du paquet. Une fois le paquet créé il est automatiquement ajouté dans le dépôt `test`.
