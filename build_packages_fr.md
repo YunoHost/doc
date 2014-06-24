@@ -8,8 +8,14 @@ Le système de build est basé sur debuild et pbuilder. Le fonctionnement de cet
 
 La configuration de cette environnement est défini dans le fichier `/etc/pbuilder/megusta-amd64` et permet de construire les paquets sans architecture spécifique. 
 
+<div class="alert alert-info">
+**Attention :** Il n'est pas conseillé d'être en root pour exécuter les actions suivantes (sauf celles précédées de `sudo`)
+</div>
+
 ## Mise à jour d'un paquet
 
+<br>
+#### Paquets avec sources externes
 Pour les paquets basés sur des sources GitHub (moulinette, moulinette-yunohost, ssowat, et yunohost-admin) il faut d'abord récupérer les dernière modifications :
 
 ```bash
@@ -24,6 +30,9 @@ Puis lancer la commande de build du paquet (**attention : vous devez la lancer �
 [yunohost@yunohost] ~/packages.git/moulinette $ commit-and-build "Message de commit"
 ```
 
+---
+
+#### Paquets de configuration
 Pour mettre à jour un paquet yunohost-config-* il faut se rendre dans le répertoire, faire les modifications voulues sur le paquet (typiquement modifier un script `debian/postinst`), puis lancer la même commande que pour les paquets avec source : 
 
 ```bash
@@ -32,6 +41,9 @@ Pour mettre à jour un paquet yunohost-config-* il faut se rendre dans le réper
 
 La commande de build va mettre à jour le fichier changelog Debian (`debian/changelog`) et lancer la création du paquet. Une fois le paquet créé il est automatiquement ajouté dans le dépôt `test`.
 
+---
+
+#### Mettre à jour en production
 Pour ajouter le paquet dans le dépôt de `megusta` (stable) il vous faudra exécuter la commande :
 
 ```bash
@@ -46,6 +58,8 @@ Il est possible d'ajouter directement des paquets Debian dans le dépôt, c'est 
 ```bash
 sudo reprepro -Vb /var/www/repo.yunohost.org/ includedeb nom_du_dépôt nom_du_paquet.deb
 ```
+
+`nom_du_dépôt` peut être `test` ou `megusta`.
 
 ## Supprimer un paquet d'un dépot
 
