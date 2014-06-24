@@ -24,7 +24,7 @@
 ## v2.0
 
 * ~~Add sexiness and a menu to YunoHost.org frontpage *(kload)*~~
-* **DOCUMENTATIONNNNNNN** *(everyone <3)*
+* ~~**DOCUMENTATIONNNNNNN** *(everyone <3)*~~
 
 ## v2.1
 
