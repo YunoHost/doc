@@ -29,7 +29,7 @@ On peut donc le considérer comme une distribution, comprenant les logiciels sui
 
 ### Système d'app
 
-En complément, YunoHost fourni un système d'« app » qui n'est autre qu'un **dépôt communautaire** de scripts aidant à installer des services et applications web supplémentaires.
+En complément, YunoHost fournit un système d'« app » qui n'est autre qu'un **dépôt communautaire** de scripts aidant à installer des services et applications web supplémentaires.
 
 La chose la plus intéressante avec ce système est que **les applications web profitent de la base LDAP** via le SSO (Single Sign On), qui authentifie les utilisateur du serveur avec un unique nom d'utilisateur/mot de passe.
 
