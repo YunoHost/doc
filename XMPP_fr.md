@@ -7,7 +7,7 @@ YunoHost fournit :
 
 ##### Client XMPP lourd
 
-Vous pouvez utiliser un client XMPP lourd comme [Pidgin](http://pidgin.im/), [Gajim](http://gajim.org/index.fr.html) ou [Adium](https://adium.im/).
+Vous pouvez utiliser un client XMPP lourd comme [Pidgin](http://pidgin.im/), [Gajim](http://gajim.org/index.fr.html), [Jitsi](http://jitsi.org/) ou [Adium](https://adium.im/).
 
 Voici la liste des clients XMPP : https://fr.wikipedia.org/wiki/Liste_de_clients_XMPP
 
