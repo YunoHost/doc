@@ -16,7 +16,7 @@
 * ~~Add warning in a sample backup view *(opi)*~~
 * ~~User interface design *(Courgette, opi)*~~
 * ~~Moulinette/API refactoring *(jerome)*~~
-* Security check and complete patterns
+* ~~Security check and complete patterns~~
 * ~~I18n *(opi, jerome)*~~
 * ~~Lack of hairpinning hack *(kload)*~~
 
@@ -28,8 +28,14 @@
 
 ## v2.1
 
-* Backup system
-* Firewall in web administration *(opi)*
+* Backup system: friend-to-friend, on a local device, and downloaded (kload)
+* ~~Firewall in web administration *(opi)*~~
+* ~~OpenVPN configuration page + access control (kload)~~
 * User avatar *(opi)*
 * Install non-official apps from admin *(opi)* 
-* ...
+* Fix WebSocket issue for ARM devices (jerome, kload)
+* Warn users about security updates in the webadmin (opi)
+* Add proper upgrade/remove scripts and comment Debian scripts in packages (beudbeud)
+* Clean up moulinette API (jerome)
+* Run automatic tests on moulinette (kload)
+* Migrate to Baikal and deprecate Radicale (ju)
