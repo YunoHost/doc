@@ -55,9 +55,12 @@ This page lists few installation guides.
 <a href="/install_on_virtualbox"><img src="https://yunohost.org/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>On VirtualBox</p></b></a>
 </div>
 
-
 <div class="col col-md-3 text-center">
 <a href="/docker"><img src="https://yunohost.org/images/docker.png" height=150 style="vertical-align:bottom"><b><p>On Docker</p></b></a>
+</div>
+
+<div class="col col-md-3 text-center">
+<a href="/vagrant"><img src="https://yunohost.org/images/vagrant.png" height=150 style="vertical-align:bottom"><b><p>On Vagrant</p></b></a>
 </div>
 
 </div>
