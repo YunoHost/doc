@@ -25,7 +25,7 @@ vagrant init chef/debian-7.4
 
 Décommenter (Supprimer le # devant la ligne) la ligne suivante dans le fichier Vagrantfile nouvellement créé afin d'avoir un accès depuis le système hôte
 ```bash
-  config.vm.network "private_network", ip: "192.168.33.10"
+config.vm.network "private_network", ip: "192.168.33.10"
 ```
 
 Clonez le dépôt du script d'installation de YunoHost
