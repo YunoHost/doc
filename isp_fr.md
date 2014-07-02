@@ -15,7 +15,7 @@ Un « **non** » peut entraîner des problèmes d'utilisation de votre serveur o
 | [Orange](http://orange.fr) | Livebox | oui | **non** | **non** | **non** | **non** (Professionel uniquement) |
 | [Darty](http://dartybox.fr) | Dartybox | oui (activé) | oui | oui | **non** | oui |
 | [Bouygues Télécom](http://www.bouyguestelecom.fr) | Bbox | oui (activé) | oui | oui | **non** | oui |
-| [Numéricable](http://numericable.com/) | … | … | … | … | … | … |
+| [Numéricable](http://numericable.com/) | … | oui | oui | … | **non** | **non** (Pro uniquement ?) |
 Pour une liste plus complète et précise, référez-vous à la très bonne documentation de [wiki.auto-hebergement.fr](http://wiki.auto-hebergement.fr/fournisseurs/fai#d%C3%A9tail_des_fai).
 
 
