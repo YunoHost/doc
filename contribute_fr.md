@@ -90,7 +90,7 @@ Améliorez cette documentation en [proposant de nouvelles pages](/write_document
 <div class="col col-md-8" markdown="1">
 Vous pouvez maintenant nous envoyer des Bitcoins via l'adresse `1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf`
 </br>
-<a href="bitcoin:1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf?amount=0.01"><img src="http://doc.yunohost.org/images/bitcoin.png" width="100" height="100"/></a>
+<img src="http://doc.yunohost.org/images/bitcoin.png" />
 </div>
 </div>
 
