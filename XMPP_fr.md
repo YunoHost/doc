@@ -5,7 +5,7 @@ YunoHost fournit :
 * [Metronome](http://www.lightwitch.org/metronome) : un serveur XMPP
 * [Jappix](/apps_fr) : un client web XMPP
 
-##### Client XMPP lourd
+## Client XMPP lourd
 
 Vous pouvez utiliser un client XMPP lourd comme [Pidgin](http://pidgin.im/), [Gajim](http://gajim.org/index.fr.html), [Jitsi](http://jitsi.org/) ou [Adium](https://adium.im/).
 
