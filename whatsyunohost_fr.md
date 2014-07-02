@@ -9,7 +9,7 @@ Il est basé et reste totalement compatible avec [Debian GNU/Linux](http://debia
 
 ### Logiciels
 
-Concrètement, YunoHost **installe et configure automatiquement** quelques services autour de LDAP, et **fourni des outils** pour les administrer.
+Concrètement, YunoHost **installe et configure automatiquement** quelques services autour de LDAP, et **fournit des outils** pour les administrer.
 
 On peut donc le considérer comme une distribution, comprenant les logiciels suivant :
 
