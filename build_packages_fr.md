@@ -61,7 +61,7 @@ sudo reprepro -Vb /var/www/repo.yunohost.org/ includedeb nom_du_dépôt nom_du_p
 
 `nom_du_dépôt` peut être `test` ou `megusta`.
 
-## Supprimer un paquet d'un dépot
+## Supprimer un paquet d’un dépôt
 
 Il est possible de supprimer des paquets Debian dans un dépôt, par exemple pour vider l'ensemble des paquets du dépôt test.
 
