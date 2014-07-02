@@ -93,7 +93,7 @@ Have a look of [what has been done yet](/apps)!
 <div class="col col-md-8" markdown="1">
 You can now send us Bitcoin at this address: `1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf`
 </br>
-<img src="http://doc.yunohost.org/images/bitcoin.png" />
+<a href="bitcoin:1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf?label=Yunohost"><img src="http://doc.yunohost.org/images/bitcoin.png" /></a>
 </div>
 </div>
 
