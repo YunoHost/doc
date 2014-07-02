@@ -19,6 +19,20 @@ Talk about software freedom, self-hosting and YunoHost to your relatives and at 
 
 <div class="row">
 <div class="col col-md-3 lead">
+<span class="glyphicon glyphicon-euro"></span>&nbsp;&nbsp; Support
+</div>
+Feel free to support us. Here is our Bitcoin address : 
+<div style="text-align: center;">
+``1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf``
+</br>
+<img src="http://doc.yunohost.org/images/bitcoin.png" width="100" height="100"/>
+</div>
+</div>
+
+---
+
+<div class="row">
+<div class="col col-md-3 lead">
 <span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;&nbsp; Testing
 </div>
 <div class="col col-md-8" markdown="1">
