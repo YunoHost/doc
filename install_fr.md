@@ -55,9 +55,12 @@ Cette page liste plusieurs types d'installations, classés par catégorie.
 <a href="/install_on_virtualbox_fr"><img src="https://yunohost.org/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>Sur VirtualBox</p></b></a>
 </div>
 
-
 <div class="col col-md-3 text-center">
 <a href="/docker_fr"><img src="https://yunohost.org/images/docker.png" height=150 style="vertical-align:bottom"><b><p>Sur Docker</p></b></a>
+</div>
+
+<div class="col col-md-3 text-center">
+<a href="/vagrant_fr"><img src="https://yunohost.org/images/vagrant.png" height=150 style="vertical-align:bottom"><b><p>Sur Vagrant</p></b></a>
 </div>
 
 </div>
