@@ -30,6 +30,9 @@
 
 To connect with SSH : root@my-server.org / password : yunohost
 
+
+Upgrade exlorating system: ```apt-get update && apt-get dist-upgrade```
+
 ---
 
 ***If you need help during one of these steps, do not hesitate to use [our support tools](/support).***
