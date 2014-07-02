@@ -19,20 +19,6 @@ Parlez de logiciel libre, d'auto-hébergement, de YunoHost à vos proches et à 
 
 <div class="row">
 <div class="col col-md-3 lead">
-<span class="glyphicon glyphicon-euro"></span>&nbsp;&nbsp; Faire un don
-</div>
-N'hésitez pas à nous soutenir. Voici notre adresse Bitcoin : 
-<div style="text-align: center;">
-``1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf``
-</br>
-<img src="http://doc.yunohost.org/images/bitcoin.png" width="100" height="100"/>
-</div>
-</div>
-
----
-
-<div class="row">
-<div class="col col-md-3 lead">
 <span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;&nbsp; Testez
 </div>
 <div class="col col-md-8" markdown="1">
@@ -84,7 +70,7 @@ Améliorez cette documentation en [proposant de nouvelles pages](/write_document
 </div>
 </div>
 
-<hr>
+---
 
 <div class="row">
 <div class="col col-md-3 lead">
@@ -96,6 +82,17 @@ Améliorez cette documentation en [proposant de nouvelles pages](/write_document
 </div>
 
 ---
+
+<div class="row">
+<div class="col col-md-3 lead">
+<span class="glyphicon glyphicon-euro"></span>&nbsp;&nbsp; Faire un don
+</div>
+<div class="col col-md-8" markdown="1">
+Vous pouvez maintenant nous envoyer des Bitcoins via l'adresse `1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf`
+</br>
+<a href="bitcoin:1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf?amount=0.01"><img src="http://doc.yunohost.org/images/bitcoin.png" width="100" height="100"/></a>
+</div>
+</div>
 
 <br>
 <p class="lead" markdown="1">Dans tous les cas, venez sur notre [salon de discussion](/support_fr) pour exprimer votre enthousiasme :-)</p>
