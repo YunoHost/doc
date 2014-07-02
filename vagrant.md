@@ -6,11 +6,11 @@
 
 <img src="https://yunohost.org/images/vagrant.png" width=250>
 
-**Prérequis** : An x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine.
+**Prerequisite** : An x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine.
 
 ---
 
-## Initialisation
+## Initialization
 
 Create a project folder
 ```bash
@@ -24,7 +24,7 @@ vagrant init chef/debian-7.4
 ```
 
 Uncomment (remove the leading #) the following line in the newly created Vagrantfile to get access from the host system
-```
+```bash
   config.vm.network "private_network", ip: "192.168.33.10"
 ```
 
@@ -42,7 +42,7 @@ Start the virtual machine
 vagrant up
 ```
 
-Connecter to the started virtual machine
+Connect to the started virtual machine
 ```bash
 vagrant ssh
 ```
