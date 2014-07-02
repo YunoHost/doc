@@ -25,7 +25,7 @@ vagrant init chef/debian-7.4
 
 Uncomment (remove the leading #) the following line in the newly created Vagrantfile to get access from the host system
 ```bash
-  config.vm.network "private_network", ip: "192.168.33.10"
+config.vm.network "private_network", ip: "192.168.33.10"
 ```
 
 Clone the Yunohost install script repository
