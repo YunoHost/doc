@@ -6,7 +6,7 @@
 
 <img src="https://yunohost.org/images/vagrant.png" width=250>
 
-**Prerequisite**: a x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine.
+**Prerequisite**: an x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine.
 
 ---
 
