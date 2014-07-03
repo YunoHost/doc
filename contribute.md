@@ -94,6 +94,9 @@ Have a look of [what has been done yet](/apps)!
 You can now send us Bitcoin at this address: `1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf`
 </br>
 <a href="bitcoin:1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf?label=Yunohost"><img src="https://yunohost.org/images/bitcoin.png" /></a>
+<br>
+<br>
+or use Flattr:  <a href="http://flattr.com/thing/3164470/YunoHost-web-site" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
 </div>
 </div>
 
