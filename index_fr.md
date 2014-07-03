@@ -37,7 +37,7 @@
 <span class="yolo 5" style="color: #FF5050;">sudo internet</span>
 <span class="yolo 6" style="color: #FF0066;">Ils s'hébergèrent et eurent beaucoup d'enfants</span>
 <span class="yolo 7" style="color: #3366FF;">Internet, lecture et écriture</span>
-<span class="yolo 8" style="color: #FFFFFF;">madame@michu.fr</span>
+<span class="yolo 8" style="color: #FFFFFF;">monsieur@michu.fr</span>
 <span class="yolo 9" style="color: #CC66FF;">J'ai rien à cacher</span>
 <span class="yolo 10" style="color: #FF6600;">How I met your server</span>
 <span class="yolo 11" style="color: #FF3399;">datalove <3</span>
