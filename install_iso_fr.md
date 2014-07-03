@@ -12,7 +12,7 @@
 * Un autre ordinateur pour parcourir ce guide et accéder à votre serveur
 * Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
 * Une **Clé USB** d'une capacité minimale d'1GB **OU** un **CD vierge** standard
-* Les dernières **images ISO YunoHost**, disponible ici :
+* Une des dernières **images ISO YunoHost**, disponibles ici (dans le doute prenez la première):
  * 32 bits : [http://build.yunohost.org/yunohostv2-latest-i386.iso](http://build.yunohost.org/yunohostv2-latest-i386.iso)
  * 64 bits : [http://build.yunohost.org/yunohostv2-latest-amd64.iso](http://build.yunohost.org/yunohostv2-latest-amd64.iso)
 
