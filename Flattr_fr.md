@@ -1,5 +1,0 @@
-<script id='fbw2tqs'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=YunoHost&url=https%3A%2F%2Fyunohost.org%2F';f.title='Flattr';f.height=70;f.width=80;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbw2tqs');</script>
-
-<script id='fbjldgh'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=YunoHost&button=compact&url=https%3A%2F%2Fyunohost.org%2F';f.title='Flattr';f.height=23;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbjldgh');</script>
-
-<a href="https://flattr.com/submit/auto?user_id=YunoHost&url=https%3A%2F%2Fyunohost.org%2F" target="_blank"><img src="//api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></a>
