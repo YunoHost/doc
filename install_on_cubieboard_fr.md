@@ -3,7 +3,7 @@
 ## Prérequis
 
 <img src="https://yunohost.org/images/cubieboard2.png">
-<img src="https://yunohost.org/images/sdcard.jpg">
+<img src="https://yunohost.org/images/micro-sd-card.jpg">
 
 * Une CubieBoard 1 ou 2 (le CubieTruck doit fonctionner également)
 * Une carte SD : Capacité de **4GB** (ou plus) et vitesse **class10** fortement recommandée
