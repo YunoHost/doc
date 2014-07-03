@@ -91,6 +91,9 @@ Améliorez cette documentation en [proposant de nouvelles pages](/write_document
 Vous pouvez maintenant nous envoyer des Bitcoins via l'adresse `1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf`
 </br>
 <a href="bitcoin:1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf?label=Yunohost"><img src="https://yunohost.org/images/bitcoin.png" /></a>
+<br>
+<br>
+ou utiliser Flattr : <a href="http://flattr.com/thing/3164470/YunoHost-web-site" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
 </div>
 </div>
 
