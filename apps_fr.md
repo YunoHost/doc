@@ -78,6 +78,7 @@ $(document).ready(function () {
 | MediaWiki | kload | En test | https://github.com/kloadut/mediawiki_ynh |
 | Linux Dash | opi | en test | https://github.com/opi/linuxdash_ynh |
 | Ampache | beudbeud | en test | https://github.com/abeudin/ampache_ynh |
+| Piwigo | monsieur-a | en test | https://github.com/monsieur-a/piwigo_ynh |
 
 ### À intégrer
 
