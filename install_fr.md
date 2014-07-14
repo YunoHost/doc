@@ -91,4 +91,4 @@ Cette page liste plusieurs types d'installations, classés par catégorie.
 
 Si vous disposez déjà d'un serveur ou d'un ordinateur sous **Debian 7** (wheezy), suivez l'**[installation par script](/install_on_debian_fr)**.
 
-<a href="/install_on_debian"><img width=100 src="https://yunohost.org/images/debian-logo.png"></a>
+<a href="/install_on_debian_fr"><img width=100 src="https://yunohost.org/images/debian-logo.png"></a>
