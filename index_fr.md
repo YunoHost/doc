@@ -65,7 +65,7 @@
 
 <div class="boring-part" markdown="1">
 
-<a href="https://github.com/YunoHost" target="_blank">
+<a href="https://github.com/YunoHost" target="_blank" class="hidden-xs">
 <img style="position: fixed; top: 0; right: 0; border: 0;" src="https://yunohost.org/images/github_ribbon_grey.png" alt="Fork me on GitHub" data-canonical-src="https://yunohost.org/images/github_ribbon_grey.png">
 </a>
 

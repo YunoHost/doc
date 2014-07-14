@@ -74,6 +74,7 @@ $(document).ready(function () {
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
 | Baikal | aquaxp | En dev | https://github.com/aquaxp/baikal_ynh |
 | OpenSondage | zamentur | En test | https://github.com/zamentur/opensondage_ynh |
+| Strut | zamentur | En test | https://github.com/zamentur/strut_ynh |
 | MyCryptoChat | mrtino | En test | https://github.com/mrtino/mycryptochat_ynh |
 | MediaWiki | kload | En test | https://github.com/kloadut/mediawiki_ynh |
 | Linux Dash | opi | en test | https://github.com/opi/linuxdash_ynh |
@@ -89,7 +90,6 @@ $(document).ready(function () {
 * [Piwigo](http://piwigo.org) / [openphoto](http://theopenphotoproject.org/)
 * [Leed](http://projet.idleman.fr/leed/)
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
-* [LimeSurvey](http://www.limesurvey.com/)
 * [Movim](http://www.movim.eu/)
 * [KiwiIRC](http://kiwiirc.com/)
 * [Piwik](http://piwik.org/)
