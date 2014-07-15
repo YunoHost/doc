@@ -111,12 +111,12 @@ A présent, modifiez la configuration SSH pour autoriser ce nouvel utilisateur �
 ```bash
 sudo nano /etc/ssh/sshd_config
 
-# Recherchez le paragraphe "Authentication" et ajoutez à la fin de celui-ci:
+# Recherchez le paragraphe "Authentication" et ajoutez à la fin de celui-ci :
 AllowUsers nom_utilisateur
 ```
 Seuls les utilisateurs mentionnés dans la directive AllowUsers seront alors autorisés à se connecter via SSH, ce qui exclue donc l'utilisateur admin.
 
-Pour éviter que yunohost écrase la configuration du serveur SSH il faut modifier le fichier `/etc/yunohost/yunohost.conf` et passer la ligne ssh à yes
+Pour éviter que YunoHost écrase la configuration du serveur SSH il faut modifier le fichier `/etc/yunohost/yunohost.conf` et passer la ligne ssh à yes
 
 ```bash
 ssh=yes
