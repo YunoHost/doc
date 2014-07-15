@@ -29,7 +29,7 @@ Par défaut, l'authentification SSH se fait avec le mot de passe d'administratio
 
 ```bash
 ssh-keygen
-ssh-copy-id -i ~/.ssh/id_rsa.pub 
+ssh-copy-id -i ~/.ssh/id_rsa.pub <votre_serveur_yunohost>
 ```
 
 Entrez le mot de passe d'administration et votre clé publique devrait être copiée sur votre serveur.
@@ -78,8 +78,8 @@ Ensuite redémarrez le firewall iptables et fermez l'ancien port dans iptables.
 
 ```bash
 yunohost firewall reload
-yunohost firewall disallow  # port par défaut 22
-yunohost firewall disallow --ipv6  # pour ipv6
+yunohost firewall disallow <votre numéro de port> # port par défaut 22
+yunohost firewall disallow --ipv6 <votre numéro de port> # pour ipv6
 ``` 
 
 **Pour les prochaines connexions ssh** il faudra ajouter l'option -p suivit du numéro de port ssh.
@@ -87,7 +87,7 @@ yunohost firewall disallow --ipv6  # pour ipv6
 **Exemple** :
 
 ```bash
-ssh -p  admin@
+ssh -p <votre_numero_de_port_ssh> admin@<votre_serveur_yunohost>
 ``` 
 
 ---
