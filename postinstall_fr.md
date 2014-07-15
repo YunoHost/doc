@@ -1,10 +1,12 @@
 # Post-Installation
 
-L'étape appelée « **post-installation** » est en fait l'étape de configuration initiale de YunoHost. Elle est exécutable après l'**installation** du système en lui-même.
+L'étape appelée « **post-installation** » est en fait l'étape de configuration initiale de YunoHost. Il faut l'exécuter après l'**installation** du système en lui-même.
 
 ## Accès
 
-Vous pouvez accéder à la post-installation graphique en entrant l'adresse **IP locale de votre serveur** dans un navigateur Web (généralement `192.168.x.x`)
+Vous pouvez accéder à la post-installation graphique en entrant dans un navigateur Web :
+* l'adresse **IP locale de votre serveur** si celui-ci est connecté à votre réseau local (généralement `192.168.x.x`)
+* l'adresse **IP publique de votre serveur** si celui-ci n'est pas connecté à votre réseau local.
 
 <img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="https://yunohost.org/images/postinstall_web.png">
 
@@ -12,7 +14,7 @@ Vous pouvez accéder à la post-installation graphique en entrant l'adresse **IP
 
 <br>
 
-Ou en entrant la commande `yunohost tools postinstall` directement sur le serveur ou en SSH.
+Vous pouvez aussi y accéder en entrant la commande `yunohost tools postinstall` directement sur le serveur ou en SSH.
 
 <img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="https://yunohost.org/images/postinstall_cli2.png">
 
@@ -24,11 +26,11 @@ Ou en entrant la commande `yunohost tools postinstall` directement sur le serveu
 
 ### Domaine principal
 
-C'est le premier nom de domaine qui permettra l'accès à votre serveur, mais également celui qui accueillera le **portail d'authentification** des utilisateurs. Il sera donc **visible par tout le monde**, choisissez-le en conséquence.
+C'est le nom de domaine qui permettra l'accès à votre serveur ainsi qu'au portail d'authentification des utilisateurs. Il sera donc **visible par tout le monde**, choisissez-le en conséquence.
 
-* Si vous ne possédez pas de nom de domaine ou que vous souhaitez profiter du service de DNS dynamique de YunoHost, optez pour un sous-domaine se terminant en **.nohost.me** ou **.noho.st**. Le domaine sera ainsi automatiquement rattaché à votre serveur YunoHost, et vous n'aurez pas d'étape de configuration supplémentaire.
+* Yunohost propose un service de DNS dynamique fournissant des noms de domaine de type *mondomaine.nohost.me* ou *mondomaine.noho.st*. Si vous ne possédez pas de nom de domaine et/ou que vous souhaitez profiter de ce service, choisissez un domaine se terminant en `.nohost.me` ou `.noho.st`. Le domaine sera  automatiquement rattaché à votre serveur YunoHost, et vous n'aurez pas d'étape de configuration supplémentaire.
 
-* Si en revanche vous maîtrisez la notion de **DNS**, vous serez sûrement intéressé d'indiquer ici votre propre nom de domaine. Dans ce cas, référez-vous à la page [yunohost.org/dns](/dns_fr) pour plus d'informations.
+* Si en revanche vous maîtrisez la notion de **DNS**, vous pouvez utiliser votre propre nom de domaine. Dans ce cas, référez-vous à la page [yunohost.org/dns](/dns_fr) pour plus d'informations.
 
 ### Mot de passe d'administration
 
@@ -42,6 +44,6 @@ De manière générale, c'est la **clé d'entrée à votre système**, pensez do
 
 ## Et après ?
 
-Une fois l'étape de post-installation exécutée, vérifiez que votre serveur est accessible. Si ce n'est pas le cas, quelques étapes de configurations supplémentaires sont sûrement nécessaires.
+Une fois l'étape de post-installation exécutée, vérifiez que votre serveur est accessible en tapant le nom de domaine choisi précédement dans votre navigateur web. Si celui-ci n'est pas accessible, quelques étapes de configurations supplémentaires sont sûrement nécessaires.
 
 Rendez-nous visite sur le [salon de support](/support_fr) si vous avez besoin d'aide.
