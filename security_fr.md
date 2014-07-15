@@ -1,3 +1,4 @@
+
 # Securité
 
 YunoHost a été développé dans l'optique de fournir une sécurité maximale tout en restant accessible et facilement installable.
@@ -28,12 +29,12 @@ Par défaut, l'authentification SSH se fait avec le mot de passe d'administratio
 
 ```bash
 ssh-keygen
-ssh-copy-id -i ~/.ssh/id_rsa.pub <votre_serveur_yunohost>
+ssh-copy-id -i ~/.ssh/id_rsa.pub 
 ```
 
-Entrez le mot de passe d’administration et votre clé publique devrait être copiée sur votre serveur.
+Entrez le mot de passe d'administration et votre clé publique devrait être copiée sur votre serveur.
 
-**Sur votre serveur**, éditez le fichier de configuration SSH, pour désactiver l’authentification par mot de passe.
+**Sur votre serveur**, éditez le fichier de configuration SSH, pour désactiver l'authentification par mot de passe.
 
 ```bash
 nano /etc/ssh/sshd_config
@@ -73,12 +74,12 @@ ssh=yes
 
 Sauvegardez et relancez le démon SSH.
 
-Ensuite redémarrez le firewall iptables et fermez l’ancien port dans iptables.
+Ensuite redémarrez le firewall iptables et fermez l'ancien port dans iptables.
 
 ```bash
 yunohost firewall reload
-yunohost firewall disallow <votre numéro de port> # port par défaut 22
-yunohost firewall disallow --ipv6 <votre numéro de port> # pour ipv6
+yunohost firewall disallow  # port par défaut 22
+yunohost firewall disallow --ipv6  # pour ipv6
 ``` 
 
 **Pour les prochaines connexions ssh** il faudra ajouter l'option -p suivit du numéro de port ssh.
@@ -86,8 +87,42 @@ yunohost firewall disallow --ipv6 <votre numéro de port> # pour ipv6
 **Exemple** :
 
 ```bash
-ssh -p <votre_numero_de_port_ssh> admin@<votre_serveur_yunohost>
+ssh -p  admin@
 ``` 
+
+---
+
+### Changer l'utilisateur autorisé à se connecter par ssh
+
+Afin d'éviter de multiples tentative de forçage du login admin par des robots, on peut éventuellement changer l'utilisateur autorisé à se connecter.
+
+**Sur votre serveur**, ajoutez un utilisateur.
+```bash
+sudo adduser nom_utilisateur
+```
+Choisissez un mot de passe fort, puisque c'est l'utilisateur qui sera chargé d'obtenir des droits root.
+Ajoutez l'utilisateur au groupe sudo, afin justement de l'autoriser à effectuer des tâches de maintenance nécessitant les droits root.
+```bash
+sudo adduser nom_utilisateur sudo
+```
+
+A présent, modifiez la configuration SSH pour autoriser ce nouvel utilisateur à se connecter.
+**Sur votre serveur**, éditez le fichier de configuration SSH
+```bash
+sudo nano /etc/ssh/sshd_config
+
+# Recherchez le paragraphe "Authentication" et ajoutez à la fin de celui-ci:
+AllowUsers nom_utilisateur
+```
+Seuls les utilisateurs mentionnés dans la directive AllowUsers seront alors autorisés à se connecter via SSH, ce qui exclue donc l'utilisateur admin.
+
+Pour éviter que yunohost écrase la configuration du serveur SSH il faut modifier le fichier `/etc/yunohost/yunohost.conf` et passer la ligne ssh à yes
+
+```bash
+ssh=yes
+```
+
+Sauvegardez et relancez le démon SSH.
 
 ---
 
