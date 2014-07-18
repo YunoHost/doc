@@ -2,9 +2,20 @@
 
 Tiny Tiny RSS est un lecteur de flux d’actualité utilisant les protocoles RSS et atom.
 
-#####Exportation/importation des flux
+### Exportation/importation des flux
 Il est possible de faire une sauvegarde de ces flux d’actualité en format opml.
 
 Pour cela, il faut aller dans Actions -> Configuration -> onglet flux -> chapitre OPML -> Exporter/Importer en OPML.
 
 [Site de Tiny Tiny RSS](http://tt-rss.org/redmine/projects/tt-rss/wiki)
+
+### Client Android
+
+Il est possible d'utiliser le client Android ttrss-reader pour consulter ces flux :
+
+**[ttrss-reader](https://f-droid.org/repository/browse/?fdfilter=rss&fdid=org.ttrssreader)**
+
+Sur l'interface web, dans Action -> Configuration, cochez "Activer l'accès par API"
+puis dans ttrss-reader sur Android, l'adresse du serveur TTRSS : "https://votredomaine.org/ttrss", nom d'utilisateur, mot de passe. (pas besoin d'utiliser l'authentification HTTP)
+
+**Note** : Vous pouvez avoir besoin de désinstaller, puis re-installer entièrement l'app ttrss via l'administration de YunoHost pour que la connection puisse se faire.
