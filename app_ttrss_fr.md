@@ -15,7 +15,7 @@ Il est possible d'utiliser le client Android ttrss-reader pour consulter ces flu
 
 **[ttrss-reader](https://f-droid.org/repository/browse/?fdfilter=rss&fdid=org.ttrssreader)**
 
-Sur l'interface web, dans Action -> Configuration, cochez "Activer l'accès par API"
+Sur l'interface web, dans Actions -> Configuration, cochez "Activer l'accès par API"
 puis dans ttrss-reader sur Android, l'adresse du serveur TTRSS : "https://votredomaine.org/ttrss", nom d'utilisateur, mot de passe. (pas besoin d'utiliser l'authentification HTTP)
 
-**Note** : Vous pouvez avoir besoin de désinstaller, puis re-installer entièrement l'app ttrss via l'administration de YunoHost pour que la connection puisse se faire.
+**Note** : Vous pouvez avoir besoin de désinstaller, puis re-installer entièrement l'app ttrss via l'administration de YunoHost pour que la connexion puisse se faire.
