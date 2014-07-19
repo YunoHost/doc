@@ -1,4 +1,4 @@
-#XMPP
+# <img src="https://yunohost.org/images/XMPP_logo.png" width=100>
 XMPP, Extensible Messaging and Presence Protocol, is a communication protocol of instant messaging.
 
 YunoHost provide:
