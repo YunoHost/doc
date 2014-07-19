@@ -1,6 +1,6 @@
 # Brancher et démarrer votre serveur
 
-* Branchez votre serveur en Ethernet **directement sur votre routeur principal**. N'utilisez pas de connexion sans-fil ou un routeur intermédiaire si vous voulez que la connexion réseau soit automatique.
+* Branchez votre serveur avec un câble Ethernet (RJ-45) **directement sur votre routeur principal**. N'utilisez pas de connexion sans-fil ou un routeur intermédiaire si vous voulez que la connexion réseau soit automatique.
 
 * N'oubliez pas de **brancher un écran** si vous voulez observer comment se déroule le démarrage, et un clavier si vous souhaitez un accès en **ligne de commande** à votre serveur.
 
