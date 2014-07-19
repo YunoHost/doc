@@ -12,7 +12,7 @@ Basically YunoHost **automatically installs** and configures some services aroun
 
 It can thus be considered as a distribution, including the following softwares:
 
-<img src="https://yunohost.org/images/nginx.png"><img src="https://yunohost.org/images/postfix.png"><img src="https://yunohost.org/images/dovecot.png"><img src="https://yunohost.org/images/spamassassin.png">
+<img src="https://yunohost.org/images/nginx.png"><img src="https://yunohost.org/images/postfix.png"><img src="https://yunohost.org/images/dovecot.png"><img src="https://yunohost.org/images/spamassassin.png"><img src="https://yunohost.org/images/XMPP_logo.png" width=80>
 
 * [Nginx](http://nginx.org/): a web server
 * [Postfix](http://www.postfix.org/): a SMTP e-mail server
