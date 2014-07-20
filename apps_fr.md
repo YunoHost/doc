@@ -68,7 +68,6 @@ $(document).ready(function () {
 | Firefox Sync | beudbeud | En cours | https://github.com/abeudin/ffsync_ynh |
 | OpenID | julien | En cours | https://github.com/julienmalik/openid-simplesamlphp_ynh |
 | Shaarli | julien | En cours | https://github.com/julienmalik/shaarli_ynh |
-| Etherpad-Lite | beudbeud | En dev | https://github.com/abeudin/etherpadlite_ynh |
 | proFTPd | beudbeud | En dev | https://github.com/abeudin/proftpd_ynh.git |
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
 | Baikal | aquaxp | En dev | https://github.com/aquaxp/baikal_ynh |
@@ -80,6 +79,7 @@ $(document).ready(function () {
 | Linux Dash | opi | en test | https://github.com/opi/linuxdash_ynh |
 | Ampache | beudbeud | en test | https://github.com/abeudin/ampache_ynh |
 | Piwigo | monsieur-a | en test | https://github.com/monsieur-a/piwigo_ynh |
+| Etherpad-Lite | beudbeud | En test | https://github.com/abeudin/etherpadlite_ynh |
 
 ### À intégrer
 
