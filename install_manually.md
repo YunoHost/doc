@@ -8,7 +8,7 @@ Once you have access to your server, either directly or by SSH, you can install 
 
 1. Install git
 ```bash
-sudo apt-get install git
+sudo apt-get install git sudo
 ```
 
 2. Clone the Yunohost install script repository
