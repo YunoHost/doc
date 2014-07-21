@@ -22,5 +22,11 @@ Sur une plateforme ARM, un VPS, un serveur dédié, un ordinateur x86 standard, 
 
 ---
 
+Pour se connecter directement sur l’ordinateur ou avec [SSH](/ssh_fr) (uniquement en local) : 
+* Utilisateur : root
+* Mot de passe : yunohost
+
+---
+
 ***Si vous avez besoin d'aide lors de ces étapes, n'hésitez pas à utiliser les différents [moyens de support](/support_fr).***
 
