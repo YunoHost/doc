@@ -22,5 +22,11 @@ An ARM box, a VPS, a dedicated server, a standard x86 computer, an old Macintosh
 
 ---
 
+For connecting directly on your computer or with [SSH](/ssh) (only local): 
+* User: root
+* Password: yunohost
+
+---
+
 ***If you need help during one of these steps, do not hesitate to use [our support tools](/support).***
 
