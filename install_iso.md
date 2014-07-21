@@ -30,4 +30,10 @@ You can reuse any computer with **256MB RAM or more**.
 
 ---
 
+For connecting directly on your computer or with [SSH](/ssh) (only local): 
+* User: root
+* Password: yunohost
+
+---
+
 ***If you need help during one of these steps, do not hesitate to use [our support tools](/support).***
