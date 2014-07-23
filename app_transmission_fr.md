@@ -1,4 +1,4 @@
-# Transmission
+# <img src="https://yunohost.org/images/transmission.png">Transmission
 
 ### Téléchargement des fichiers complétés
 
@@ -30,5 +30,5 @@ scp (-r) /votre/fichier/ root@votre-domaine.org:/home/yunohost.transmission/comp
 ```
 Pour plus de détails sur le transfert de fichier voir ici : http://doc.ubuntu-fr.org/ssh#transfert_-_copie_de_fichiers
 
-[Site de transmission](http://transmissionbt.com/)
+* [Site de transmission](http://transmissionbt.com/)
 
