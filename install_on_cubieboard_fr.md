@@ -1,4 +1,4 @@
-# Installer YunoHost sur CubieBoard
+# Installer YunoHost sur Cubieboard
 
 ## Prérequis
 
@@ -6,7 +6,7 @@
 <img src="https://yunohost.org/images/micro-sd-card.jpg">
 
 * Une CubieBoard 1 ou 2 (le CubieTruck doit fonctionner également)
-* Une carte SD : Capacité de **4GB** (ou plus) et vitesse **class10** fortement recommandée
+* Une carte micro-SD de capacité minimale de **4GB** et vitesse **class10** fortement recommandée
 * Un autre ordinateur pour parcourir ce guide et accéder à votre Cubieboard
 * Un écran et un clavier sont recommandés pour pouvoir contrôler votre Cubieboard si un problème apparaît
 * Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
