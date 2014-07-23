@@ -2,7 +2,7 @@
 
 Maintenant que vous avez l'image ISO YunoHost, vous devez la copier sur une carte SD. Le processus est différent suivant votre système d'exploitation.
 
-<img src="https://yunohost.org/images/sdcard.jpg" width=150>
+<img src="https://yunohost.org/images/sdcard.jpg" width=150><img src="https://yunohost.org/images/micro-sd-card.jpg">
 
 ## Sur Windows
 
