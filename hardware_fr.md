@@ -14,16 +14,16 @@ Il est important d'identifier votre type de machine avant de procéder à l'inst
 
 ### Configuration minimale
 
-* 256Mo de Ram
+* 256 Mo de Ram
 
-* 4Go d'espace de stockage    
+* 4 Go d'espace de stockage    
 
 
 ### Configuration recommandée
 
 * Machine x86 récente, silencieuse et peu consommatrice.
 
-* 512Mo de RAM, pour pouvoir faire tourner tous les services et applications correctement
+* 512 Mo de RAM, pour pouvoir faire tourner tous les services et applications correctement
 
-* 20Go d'espace de stockage, pour pouvoir stocker plus d'emails et de documents
+* 20 Go d'espace de stockage, pour pouvoir stocker plus d'emails et de documents
 
