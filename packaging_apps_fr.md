@@ -49,20 +49,20 @@ Le fichier `manifest.json` définit les constantes de l'application, un ensemble
 }
 ```
 
-* **name** : Le nom de l'application. Il n'a pas besoin d'être unique, mais c'est conseillé puisque c'est le nom qui apparaît dans la liste des applications pour tous les administrateurs de serveurs YunoHost.
+* **name** : le nom de l'application. Il n'a pas besoin d'être unique, mais c'est conseillé puisque c'est le nom qui apparaît dans la liste des applications pour tous les administrateurs de serveurs YunoHost.
 
-* **id** : L’identifiant unique de l'application. Vous devez vous assurer qu'il est unique avant de soumettre une demande d'intégration de l'application.
+* **id** : l’identifiant unique de l'application. Vous devez vous assurer qu'il est unique avant de soumettre une demande d'intégration de l'application.
 
-* **description** : La description complète de l'application. Vous pouvez la détailler comme bon vous semble. Seulement `en` (English) est requis, mais vous pouvez la traduire en `fr` :)
+* **description** : la description complète de l'application. Vous pouvez la détailler comme bon vous semble. Seulement `en` (English) est requis, mais vous pouvez la traduire en `fr` :)
 
-* **license** : La licence avec laquelle l'application est distribuée. Veuillez utiliser le nom abrégé de la licence, par exemple `GPL-3` pour la GNU General Public License version 3. Vous pouvez trouver une liste des abréviations standards ici : https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/#license-field
+* **license** : la licence avec laquelle l'application est distribuée. Veuillez utiliser le nom abrégé de la licence, par exemple `GPL-3` pour la GNU General Public License version 3. Vous pouvez trouver une liste des abréviations standards ici : https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/#license-field
 
-* **developer** : Quelques informations à propos du mainteneur de l'application.
+* **developer** : quelques informations à propos du mainteneur du paquet de l'application.
 
-* **multi_instance** : Définit la possibilité de votre application à être installée plusieurs fois. Quand YunoHost essaie d'installer une seconde fois votre application, il remplaçera `id` dans votre script par un `id__2`. Cela signifie que si voulez être `multi_instance`, vous devez mettre toutes les valeurs identifiantes dans les scripts.
-<br><br>**Par exemple** : Dans mon script roundcube, je dois nommer ma base de donnée `roundcube`, mon répertoire d'installation `roundcube` et ma configuration Nginx `roundcube`. De cette manière, la seconde installation de roundcube ne rentrera pas en conflit, et sera installée dans la base de donnée `roundcube__2`, dans le répertoire `roundcube__2`, et avec la configuration Nginx `roundcube__2`.
+* **multi_instance** : définit la possibilité de votre application à être installée plusieurs fois. Quand YunoHost essaie d'installer une seconde fois votre application, il remplaçera `id` dans votre script par un `id__2`. Cela signifie que si voulez être `multi_instance`, vous devez mettre toutes les valeurs identifiantes dans les scripts.
+<br><br>**Par exemple** : dans mon script roundcube, je dois nommer ma base de donnée `roundcube`, mon répertoire d'installation `roundcube` et ma configuration Nginx `roundcube`. De cette manière, la seconde installation de roundcube ne rentrera pas en conflit, et sera installée dans la base de donnée `roundcube__2`, dans le répertoire `roundcube__2`, et avec la configuration Nginx `roundcube__2`.
 
-* **arguments** : Les paramètres à demander aux administrateurs du serveur lors de l'installation. `name` est l'identifiant du paramètre, et `ask` la question à poser (au minimum en Anglais -- `en`) que vous pouvez traduire de la même manière que la description ci-dessus. Vous pouvez aussi proposer une valeur par défaut (`default`) et un exemple (`example`) pour aider l'administrateur à remplir le formulaire d’installation.
+* **arguments** : les paramètres à demander aux administrateurs du serveur lors de l'installation. `name` est l'identifiant du paramètre, et `ask` la question à poser (au minimum en Anglais -- `en`) que vous pouvez traduire de la même manière que la description ci-dessus. Vous pouvez aussi proposer une valeur par défaut (`default`) et un exemple (`example`) pour aider l'administrateur à remplir le formulaire d’installation.
 
 ## Les scripts
 Pour le moment, un paquet YunoHost doit contenir trois scripts bash : `install`, `remove`, et `upgrade`.
@@ -121,12 +121,12 @@ sudo yunohost app ssowatconf
 ### Usage
 Vous devez tout mettre dans le script pour que votre application soit entièrement installée. Cela signifie que vous devez installer les dépendances, créer les répertoires requis, initialiser les bases de donnés nécessaires, copier les sources et configurer tout dans l'unique script `install` (et bien sûr faire la procédure inverse dans le script `remove`).
 
-**Attention** : Pour des raisons de sécurité, le script est exécuté en tant qu'**admin** dans YunoHost. Assurez-vous de l'essayer en tant qu'**admin** et de préfixer `sudo` aux commandes requises.
+**Attention** : pour des raisons de sécurité, le script est exécuté en tant qu'**admin** dans YunoHost. Assurez-vous de l'essayer en tant qu'**admin** et de préfixer `sudo` aux commandes requises.
 
 ### Architecture et arguments
 Comme les instances de YunoHost possèdent une architecture unifiée, vous serez capable de deviner la plupart des réglages nécessaires. Mais si vous avez besoin de réglages spécifiques, comme le nom de domaine ou un chemin web pour configurer l’application, vous devrez les demander aux administrateurs lors de l'installation (voir la section `arguments` dans **manifeste** ci-dessus).
 
-**Remarque** : Les arguments seront passés au script dans l'ordre du manifeste. Par exemple pour **roundcube**, l'argument `domain` sera passé en tant que `$1` dans le script, et  `path` en tant que `$2`.
+**Remarque** : les arguments seront passés au script dans l'ordre du manifeste. Par exemple pour **roundcube**, l'argument `domain` sera passé en tant que `$1` dans le script, et  `path` en tant que `$2`.
 
 ### Commandes pratiques
 La CLI [moulinette](/moulinette) fournit quelques outils pour rendre le packaging plus facile :
@@ -160,7 +160,7 @@ Protège la liste d'uris fournies séparées par des virgules. Seul un utilisate
 
 Il existe aussi `skipped_regex`, `protected_regex`, `unprotected_uris`, `unprotected_regex`.<br><br>
 
-**Attention** : Il est nécessaire de lancer `yunohost app ssowatconf` pour appliquer les effets.
+**Attention** : il est nécessaire de lancer `yunohost app ssowatconf` pour appliquer les effets.
 </blockquote>
 
 <br>
@@ -171,7 +171,7 @@ sudo yunohost app checkurl <domain><path> -a <id>
 <blockquote>
 Cette commande est utile pour les applications Web et vous permet d'être sûr que le chemin n'est pas utilisé par une autre application. Si le chemin est inutilisé, elle le « réserve ».
 <br><br>
-**Remarque** : Ne pas préfixer par `http://` ou par `https://` dans le `<domain><path>`.
+**Remarque** : ne pas préfixer par `http://` ou par `https://` dans le `<domain><path>`.
 </blockquote>
 
 <br>
@@ -202,14 +202,14 @@ Cette commande régénère la configuration du SSO. Vous devez l'appeler à la f
 ### Essais
 Afin d'essayer votre packaging d'application, vous pouvez exécuter votre script en tant qu'`admin` (n'oubliez pas d'ajouter les arguments requis) :
 ```bash
-su - admin -c "/bin/bash /path/to/my/script my_arg1 my_arg2"
+su - admin -c "/bin/bash /répertoire/de/mon/script my_arg1 my_arg2"
 ```
 
 Ou vous pouvez utiliser la moulinette :
 ```bash
-yunohost app install /path/to/my/app/package
+yunohost app install /répertoire/de/mon/paquet
 ```
 Remarque : ça fonctionne aussi avec une URL Git :
 ```bash
-yunohost app install https://github.com/author/my_app_package.git
+yunohost app install https://github.com/auteur/mon_paquet.git
 ```
