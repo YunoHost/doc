@@ -3,7 +3,7 @@
 Now that you have the YunoHost image, you have to copy its content to an SD card.    
 The process differs regarding your operating system.
 
-<img src="https://yunohost.org/images/sdcard.jpg" width=150>
+<img src="https://yunohost.org/images/sdcard.jpg" width=150><img src="https://yunohost.org/images/micro-sd-card.jpg">
 
 ## On Windows
 
