@@ -10,7 +10,7 @@
 
 ## Installer Docker
 
-**Prérequis** : Une machine x86 qui tourne sous Ubuntu 12.04 ou supérieur, ou alors ArchLinux (sur Debian c'est plus chiant)
+**Prérequis** : une machine x86 qui tourne sous Ubuntu 12.04 ou supérieur, ou alors ArchLinux (sur Debian c'est moins évidant)
 
 Sous ubuntu :
 ```bash
@@ -28,7 +28,7 @@ Sous ArchLinux :
 sudo pacman -Sy docker
 ```
 
-**Remarque :** Vous pourrez avoir besoin de lancer le démon docker (en root : `service docker start`, `systemctl start docker` ou simplement `docker -d`)
+**Remarque :** vous pourrez avoir besoin de lancer le démon docker (en root : `service docker start`, `systemctl start docker` ou simplement `docker -d`)
 
 ---
 
@@ -51,7 +51,7 @@ docker run -d -t yunohost:init /sbin/init
 
 Cette commande lancera un conteneur sur la base de l'image `yunohost`, tag `init` que vous venez de créer, vous pourrez ensuite postinstaller tout ça en vous rendant en HTTP sur l'IP du conteneur (le premier conteneur a généralement comme IP 172.17.0.2)
 
-**Remarque :** Vous pourrez avoir besoin de forwarder certains ports de votre conteneur docker, pour cela consultez les pages de doc suivantes :
+**Remarque :** vous pourrez avoir besoin de forwarder certains ports de votre conteneur docker, pour cela consultez les pages de documentation suivantes :
 
 * http://docs.docker.io/reference/commandline/cli/#run
 * http://docs.docker.io/use/port_redirection/#port-redirection
