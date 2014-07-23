@@ -13,9 +13,9 @@ You will need your email adress and your password.
 
 #####Settings:
 
-IMAP | 993 | SSL/TLS
+`IMAP | 993 | SSL/TLS`
 
-SMTP | 465 | SSL/TLS
+`SMTP | 465 | SSL/TLS`
 
 #### Mozilla Thunderbird
 
