@@ -1,7 +1,5 @@
 #À propos de ce site
 
-Sauf mention contraire, le contenu de ce site est sous licence Creative Common ```CC-By-Sa```.
+Sauf mention contraire, le contenu de ce site est sous [licence Creative Common ```CC-BY-SA```](http://creativecommons.org/licenses/by-sa/3.0/fr/)
 
-http://creativecommons.org/licenses/by-sa/3.0/fr/
-
-Ce wiki est propulsé par [Simone](https://github.com/Kloadut/Simone)
+Ce wiki est propulsé par [Simone](https://github.com/Kloadut/Simone).
