@@ -70,7 +70,7 @@ $(document).ready(function () {
 | Shaarli | julien | En cours | https://github.com/julienmalik/shaarli_ynh |
 | proFTPd | beudbeud | En dev | https://github.com/abeudin/proftpd_ynh.git |
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
-| Baikal | aquaxp | En dev | https://github.com/aquaxp/baikal_ynh |
+| Baïkal | aquaxp | En dev | https://github.com/aquaxp/baikal_ynh |
 | Yourls | courgette | En test | https://github.com/thomaslebeau/yourls_ynh |
 | OpenSondage | zamentur | En test | https://github.com/zamentur/opensondage_ynh |
 | Strut | zamentur | En test | https://github.com/zamentur/strut_ynh |
