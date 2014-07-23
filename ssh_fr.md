@@ -1,6 +1,8 @@
-#SSH - Secure SHell
-Pour se connecter à son serveur en ligne de commande avec le secure Shell :
+#SSH
+**SSH** permit you to command remotly your sever by command line interface (CLI).
 
-ssh admin@mon-serveur.org
+##### To connect to your server:
 
-Mot de passe administrateur
+`ssh admin@my-server.org`
+
+Then, you need to enter your administrator password created at [post-installation step](postinstall).
