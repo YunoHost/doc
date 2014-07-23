@@ -3,7 +3,7 @@
 
 YunoHost a été développé dans l'optique de fournir une sécurité maximale tout en restant accessible et facilement installable.
 
-Tous les protocoles servis via YunoHost sont **chiffrés**, les mots de passe ne sont pas stockés en clair, et par défaut chaque utilisateur n'accède qu'à son répertoire personnel.
+Tous les protocoles que YunoHost utilise sont **chiffrés**, les mots de passe ne sont pas stockés en clair, et par défaut chaque utilisateur n'accède qu'à son répertoire personnel.
 
 Deux points sont néanmoins importants à noter :
 
@@ -19,7 +19,7 @@ Deux points sont néanmoins importants à noter :
 
 Si votre serveur YunoHost est dans un environnement de production critique ou que vous souhaitez améliorer sa sécurité, il est bon de suivre quelques bonnes pratiques.
 
-**Attention :** *L'application des conseils suivants nécessite une connaissance avancée du fonctionnement et de l'administration d'un serveur. Pensez à vous renseigner avant de procéder à cette mise en place.*
+**Attention :** *l'application des conseils suivants nécessite une connaissance avancée du fonctionnement et de l'administration d'un serveur. Pensez à vous renseigner avant de procéder à cette mise en place.*
 
 ### Authentification SSH par clé
 
@@ -43,7 +43,7 @@ nano /etc/ssh/sshd_config
 PasswordAuthentication no
 ```
 
-Pour éviter que yunohost écrase la configuration du serveur SSH il faut modifier le fichier `/etc/yunohost/yunohost.conf` et passer la ligne ssh à yes
+Pour éviter que YunoHost écrase la configuration du serveur SSH il faut modifier le fichier `/etc/yunohost/yunohost.conf` et passer la ligne ssh à yes
 
 ```bash
 ssh=yes
@@ -53,11 +53,11 @@ Sauvegardez et relancez le démon SSH.
 
 ---
 
-### Modifier le port ssh
+### Modifier le port SSH
 
-Pour éviter de tentatives de connexion ssh par des robots qui scannent tout internet pour tenter des connexion ssh avec tout serveur accessible on peux modifier le port ssh.
+Pour éviter de tentatives de connexion SSH par des robots qui scannent tout internet pour tenter des connexion SSH avec tout serveur accessible on peux modifier le port SSH.
 
-**Sur votre serveur**, éditez le fichier de configuration SSH, pour modifier le port ssh.
+**Sur votre serveur**, éditez le fichier de configuration SSH, pour modifier le port SSH.
 
 ```bash
 nano /etc/ssh/sshd_config
@@ -82,7 +82,7 @@ yunohost firewall disallow <votre numéro de port> # port par défaut 22
 yunohost firewall disallow --ipv6 <votre numéro de port> # pour ipv6
 ``` 
 
-**Pour les prochaines connexions ssh** il faudra ajouter l'option -p suivit du numéro de port ssh.
+**Pour les prochaines connexions SSH** il faudra ajouter l'option -p suivit du numéro de port SSH.
 
 **Exemple** :
 
@@ -92,9 +92,9 @@ ssh -p <votre_numero_de_port_ssh> admin@<votre_serveur_yunohost>
 
 ---
 
-### Changer l'utilisateur autorisé à se connecter par ssh
+### Changer l'utilisateur autorisé à se connecter par SSH
 
-Afin d'éviter de multiples tentative de forçage du login admin par des robots, on peut éventuellement changer l'utilisateur autorisé à se connecter.
+Afin d'éviter de multiples tentatives de forçage du login admin par des robots, on peut éventuellement changer l'utilisateur autorisé à se connecter.
 
 **Sur votre serveur**, ajoutez un utilisateur.
 ```bash
