@@ -33,7 +33,7 @@ Nous avons besoin de tester YunoHost profondément. Si vous trouvez un bug, essa
 <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; Aidez les utilisateurs
 </div>
 <div class="col col-md-8" markdown="1">
-Notre support est communautaire et s'appuie sur des contributeurs comme vous. Venez simplement sur le [salon de discussion XMPP](/support_fr), ou tentez de répondre aux questions de la <a href="https://ask.yunohost.org/" target="_blank">FAQ</a>.
+Notre support est communautaire et s'appuie sur des contributeurs comme vous. Venez simplement sur le [salon de discussion XMPP](/support_fr), ou tentez de répondre aux questions de la <a href="https://ask.yunohost.org/" target="_blank">Foire à question (FAQ)</a>.
 </div>
 </div>
 
@@ -44,7 +44,7 @@ Notre support est communautaire et s'appuie sur des contributeurs comme vous. Ve
 <span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp; Codez
 </div>
 <div class="col col-md-8" markdown="1">
-Vous pouvez vous impliquer dans le développement de YunoHost peu importe votre niveau. Sysadmins, développeurs Web, designers et pythonistes <a href="https://github.com/YunoHost" target="_blank">sont les bienvenus</a>.
+Vous pouvez vous impliquer dans le développement de YunoHost peu importe votre niveau. Administrateurs système, développeurs web, designers et pythonistes <a href="https://github.com/YunoHost" target="_blank">sont les bienvenus</a>.
 </div>
 </div>
 
@@ -77,7 +77,7 @@ Améliorez cette documentation en [proposant de nouvelles pages](/write_document
 <span class="glyphicon glyphicon-gift"></span>&nbsp;&nbsp; Packagez
 </div>
 <div class="col col-md-8" markdown="1">
-Étendez les capacités de YunoHost en [packageant de nouveaux services et applications Web](/packaging_apps_fr). Jetez un oeil à [ce qui a déjà été fait](/apps_fr) !
+Étendez les capacités de YunoHost en [packageant de nouveaux services et applications web](/packaging_apps_fr). Jetez un oeil à [ce qui a déjà été fait](/apps_fr) !
 </div>
 </div>
 
