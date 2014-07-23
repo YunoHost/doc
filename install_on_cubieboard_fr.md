@@ -5,7 +5,7 @@
 <img src="https://yunohost.org/images/cubieboard2.png">
 <img src="https://yunohost.org/images/micro-sd-card.jpg">
 
-* Une CubieBoard 1 ou 2 (le CubieTruck doit fonctionner également)
+* Une Cubieboard 1, 2 ou une CubieTruck
 * Une carte micro-SD de capacité minimale de **4GB** et vitesse **class10** fortement recommandée
 * Un autre ordinateur pour parcourir ce guide et accéder à votre Cubieboard
 * Un écran et un clavier sont recommandés pour pouvoir contrôler votre Cubieboard si un problème apparaît
