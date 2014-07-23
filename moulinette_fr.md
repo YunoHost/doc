@@ -16,7 +16,7 @@ Vous pouvez y adjoindre des arguments pour certaines commandes :
 yunohost app install roundcube --label Webmail
 ```
 
-Pour obtenir de l'aide à tout moment sur l'utilisation d'une commande ou d'une sous-commande, vous pouvez ajouter ```-h``` ou ```--help``` à la commande. Essayez par exemple:
+Pour obtenir de l'aide à tout moment sur l'utilisation d'une commande ou d'une sous-commande, vous pouvez ajouter ```-h``` ou ```--help``` à la commande. Essayez par exemple :
 ```bash
 yunohost --help
 yunohost user --help
