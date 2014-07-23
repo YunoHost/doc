@@ -4,7 +4,7 @@ Si vous avez réussi l’[installation](/install_fr) de YunoHost et passé l’�
 
 ### <small>1.</small> Essayer
 
-Dans un navigateur web, essayez d’accéder à votre serveur grâce au nom de domaine que vous avez entrez à l’étape de post-installation.
+Dans un navigateur web, essayez d’accéder à votre serveur grâce au nom de domaine que vous avez entré à l’étape de post-installation.
 
 Par exemple : `http://mondomaine.org`
 
