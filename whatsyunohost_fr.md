@@ -46,7 +46,7 @@ YunoHost est un projet né en février 2012 à la suite d'à peu près ça :
  <blockquote><p>« Merde, j'ai la flemme de me reconfigurer un serveur mail... Beudbeud, comment t'as fait pour configurer ton joli serveur sous LDAP ? »</p>
 <small>Kload, février 2012</small></blockquote>
 
-Il ne manquait en fait qu'une interface d’administration au serveur de Beudbeud pour en faire quelque chose d’exploitable, alors Kload a décidé de la développer. Finalement, après l'automatisation de quelques configurations et le packaging de quelques applications Web, YunoHost v1 était sorti.
+Il ne manquait en fait qu'une interface d’administration au serveur de Beudbeud pour en faire quelque chose d’exploitable, alors Kload a décidé de la développer. Finalement, après l'automatisation de quelques configurations et le packaging de quelques applications web, YunoHost version 1 était sorti.
 
 Constatant l'engouement croissant autour de YunoHost et de l'auto-hébergement en général, les développeurs et les nouveaux contributeurs ont alors décidé de prendre le cap d'une version 2, plus accessible, plus extensible, plus puissante, et qui prépare du bon café commerce équitable pour les lutins de Laponie.
 
@@ -79,9 +79,7 @@ N'hésitez pas à visiter la page « [contribuez](/contribute_fr) ».
 
 ### Sécurité
 
-Tous les efforts ont été déployés pour sécuriser YunoHost, et **chiffrer tous les protocoles**. Une explication plus détaillée est disponible sur la page appropriée :
-
-[yunohost.org/security_fr](/security_fr)
+Tous les efforts ont été déployés pour sécuriser YunoHost, et **chiffrer tous les protocoles**. Une explication plus détaillée est disponible [ici](/security_fr).
 
 ---
 
