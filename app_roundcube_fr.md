@@ -1,20 +1,20 @@
-#Roundcube - Webmail libre
+#<img src="https://yunohost.org/images/roundcube.png">Roundcube - Webmail libre
 
-Roundcube est un logiciel de webmail libre.
+Roundcube est un client web de courrier électronique libre ou webmail.
 
 
 
 ### Installer le support CardDAV pour Roundcube
 
-Roundcube vous permet, via un greffon tiers, de synchroniser vos contacts avec un serveur CardDAV. Utiliser un serveur CardDAV comme Radicale ou l'application "Contacts" d'ownCloud, tous deux disponibles pour Yunohost, a l'avantage de permettre une gestion centralisée de vos contacts. 
+Roundcube vous permet, via un greffon tiers, de synchroniser vos contacts avec un serveur CardDAV. Utiliser un serveur CardDAV comme Radicale ou l'application "Contacts" d'ownCloud, tous deux disponibles pour YunoHost, a l'avantage de permettre une gestion centralisée de vos contacts. 
 
 De la même façon que le protocole IMAP vous permet de synchroniser vos courriels avec votre serveur mail, CardDAV vous permet d'avoir accès à vos contacts depuis une multitude de clients, dont Roundcube. Avec CardDAV, nous n'aurez donc plus besoin d'importer vos contacts dans chaque client.
 
 Le support de CardDAV nécessite l'installation d'un greffon tiers, développé par Christian Putzke.
 
-Pour l'installer, suivez les indications suivantes.
+Pour l'installer, suivez les indications suivantes :
 
-* Accédez à votre serveur physiquement ou loguez-vous à distance par le biais de SSH : `ssh admin@ip_de_votre_serveur`.
+* Accédez à votre serveur physiquement ou connectez-vous à distance par le biais de SSH : `ssh admin@ip_de_votre_serveur`.
 
 * Il vous faudra ensuite obtenir les droits de l'administrateur (utilisateur "root") en tapant `sudo su`.
 
@@ -40,7 +40,7 @@ Pour l'installer, suivez les indications suivantes.
 
 * Pour finir, tapez `cp /var/www/roundcube/plugins/carddav/config.inc.php.dist /var/www/roundcube/plugins/carddav/config.inc.php`
 
-Il vous suffit ensuite de vous connecter à Roundcube via votre panneau Yunohost et de cliquer sur "Paramètres" en haut à droite, puis sur "CardDAV" à gauche.
+Il vous suffit ensuite de vous connecter à Roundcube via votre panneau YunoHost et de cliquer sur "Paramètres" en haut à droite, puis sur "CardDAV" à gauche.
 
 Pour synchroniser vos contacts ownCloud :
 
