@@ -10,7 +10,7 @@
 
 ## Installer Docker
 
-**Prérequis** : une machine x86 qui tourne sous Ubuntu 12.04 ou supérieur, ou alors ArchLinux (sur Debian c'est moins évidant)
+**Prérequis** : une machine x86 qui tourne sous Ubuntu 12.04 ou supérieur, ou alors ArchLinux (sur Debian c'est plus chiant)
 
 Sous ubuntu :
 ```bash
