@@ -4,6 +4,6 @@ Un certificat est utilisé pour certifier qu’un serveur correspond bien à cel
 
 YunoHost fournit un certificat auto-signé.
 
-Sur les clients, comme les navigateurs web, les clients lourd mail, les clients lourd XMPP il faudra ajouter une exception pour ce certificat auto-signé. 
+Sur les clients comme les navigateurs web, les clients lourd de courrier électronique, les clients lourd XMPP il faudra ajouter une exception pour ce certificat auto-signé. 
 
 On peut obtenir un certificat signé par une autorité.
