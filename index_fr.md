@@ -142,7 +142,7 @@
 </div>
 
 <div class="col-md-7 text-right">
-<h1>Profitez <small>de vos applications Web, et fabriquez votre coin d'Internet</small></h1>
+<h1>Profitez <small>de vos applications web, et fabriquez votre coin d'Internet</small></h1>
 <p><br /><a href="/apps_fr">Liste des applications disponibles</a></p>
 </div>
 </div>
@@ -157,7 +157,7 @@
 
 <div class="row">
 <div class="col-md-7">
-<h1>Gérez <small>votre serveur comme vous le voulez : via Web, mobile ou en ligne de commande</small></h1>
+<h1>Gérez <small>votre serveur comme vous le voulez : via web, mobile ou ligne de commande</small></h1>
 <p><br /><a href="/try_fr">Essayez l'interface d'administration</a></p>
 </div>
 <div class="col-md-4">
