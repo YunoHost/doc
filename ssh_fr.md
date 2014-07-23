@@ -1,8 +1,8 @@
 #SSH
-**SSH** permit you to command remotly your sever by command line interface (CLI).
+Le **SSH** permet de commander à distance son serveur en ligne de commande (CLI).
 
-##### To connect to your server:
+##### Pour se connecter à son serveur :
 
-`ssh admin@my-server.org`
+`ssh admin@mon-serveur.org`
 
-Then, you need to enter your administrator password created at [post-installation step](postinstall).
+Puis il faut entrer le mot de passe administrateur, celui créé à [l’étape de post-installation](postinstall_fr).
