@@ -1,6 +1,6 @@
 # <img src="https://yunohost.org/images/XMPP_logo.png" width=100>
 
-XMPP est un protocole de communication de messagerie instantanée, de VoIP (Voix sur IP) et de visioconférence.
+<abbr title="Extensible Messaging and Presence Protocol">XMPP</abbr> est un protocole de communication de messagerie instantanée, de VoIP (Voix sur IP) et de visioconférence.
 
 YunoHost fournit :
 * [Metronome](http://www.lightwitch.org/metronome) : un serveur XMPP
