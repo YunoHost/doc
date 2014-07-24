@@ -80,6 +80,7 @@ $(document).ready(function () {
 | Ampache | beudbeud | en test | https://github.com/abeudin/ampache_ynh |
 | Piwigo | monsieur-a | en test | https://github.com/monsieur-a/piwigo_ynh |
 | Etherpad-Lite | beudbeud | En test | https://github.com/abeudin/etherpadlite_ynh |
+| Webmin | tifred | En dev | https://github.com/drfred1981/webmin_ynh |
 
 ### À intégrer
 
