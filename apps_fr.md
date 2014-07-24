@@ -105,5 +105,5 @@ $(document).ready(function () {
 * [GPodder](https://gpodder.net)
 * [Jitsi Meet](https://github.com/jitsi/jitsi-meet)
 * [Mailman](https://www.gnu.org/software/mailman/)
-* [Dispora*](https://diasporafoundation.org/)
+* [Diaspora](https://diasporafoundation.org/)
 * [MediaGoblin](http://mediagoblin.org/)
