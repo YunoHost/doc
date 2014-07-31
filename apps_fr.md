@@ -80,6 +80,7 @@ $(document).ready(function () {
 | Ampache | beudbeud | En test | https://github.com/abeudin/ampache_ynh |
 | Piwigo | monsieur-a | En test | https://github.com/monsieur-a/piwigo_ynh |
 | Etherpad-Lite | beudbeud | En test | https://github.com/abeudin/etherpadlite_ynh |
+| Webmin | tifred | En dev | https://github.com/drfred1981/webmin_ynh |
 
 ### À intégrer
 
@@ -103,3 +104,6 @@ $(document).ready(function () {
 * [PHProxy](http://sourceforge.net/projects/poxy/)
 * [GPodder](https://gpodder.net)
 * [Jitsi Meet](https://github.com/jitsi/jitsi-meet)
+* [Mailman](https://www.gnu.org/software/mailman/)
+* [Diaspora](https://diasporafoundation.org/)
+* [MediaGoblin](http://mediagoblin.org/)
