@@ -27,6 +27,12 @@ cd /tmp/install_script && sudo ./install_yunohostv2
 <img src="https://yunohost.org/images/install_script.png">
 </p>
 
+<br>
+
+<div class="alert alert-warning">
+<b>Warning:</b> Apache could already be installed by default on your dedicated server. If it's the case the installation script will fail since YunoHost is using Nginx. You will have to remove *apache2.2* package with the command: ``sudo apt-get autoremove apache2.2`` and execute the script again.
+</div>
+
 ---
 
 *Once the installation is finished, you may want to proceed to post-installation: **[yunohost.org/postinstall](/postinstall)** *

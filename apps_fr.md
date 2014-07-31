@@ -76,9 +76,9 @@ $(document).ready(function () {
 | Strut | zamentur | En test | https://github.com/zamentur/strut_ynh |
 | MyCryptoChat | mrtino | En test | https://github.com/mrtino/mycryptochat_ynh |
 | MediaWiki | kload | En test | https://github.com/kloadut/mediawiki_ynh |
-| Linux Dash | opi | en test | https://github.com/opi/linuxdash_ynh |
-| Ampache | beudbeud | en test | https://github.com/abeudin/ampache_ynh |
-| Piwigo | monsieur-a | en test | https://github.com/monsieur-a/piwigo_ynh |
+| Linux Dash | opi | En test | https://github.com/opi/linuxdash_ynh |
+| Ampache | beudbeud | En test | https://github.com/abeudin/ampache_ynh |
+| Piwigo | monsieur-a | En test | https://github.com/monsieur-a/piwigo_ynh |
 | Etherpad-Lite | beudbeud | En test | https://github.com/abeudin/etherpadlite_ynh |
 
 ### À intégrer
@@ -94,7 +94,7 @@ $(document).ready(function () {
 * [Movim](http://www.movim.eu/)
 * [KiwiIRC](http://kiwiirc.com/)
 * [Piwik](http://piwik.org/)
-* [Gitlab](http://gitlab.org/)
+* [GitLab](http://gitlab.org/)
 * [FileTea](https://filetea.me)
 * [10er10](https://github.com/dready92/10er10)
 * [Subsonic](http://www.subsonic.org)
