@@ -81,6 +81,9 @@ $(document).ready(function () {
 | Piwigo | monsieur-a | En test | https://github.com/monsieur-a/piwigo_ynh |
 | Etherpad-Lite | beudbeud | En test | https://github.com/abeudin/etherpadlite_ynh |
 | Webmin | tifred | En dev | https://github.com/drfred1981/webmin_ynh |
+| Webmin | tifred | En dev | https://github.com/drfred1981/webmin_ynh |
+| Custom Webapp (Multi instance) | Maniack Crudelis | En test | https://github.com/maniackcrudelis/my_webapp_ynh |
+| FTP support for webapp | Maniack Crudelis | En test | https://github.com/maniackcrudelis/ftp_support_webapp_ynh |
 
 ### À intégrer
 
