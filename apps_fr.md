@@ -68,7 +68,7 @@ $(document).ready(function () {
 | Firefox Sync | beudbeud | En cours | https://github.com/abeudin/ffsync_ynh |
 | OpenID | julien | En cours | https://github.com/julienmalik/openid-simplesamlphp_ynh |
 | Shaarli | julien | En cours | https://github.com/julienmalik/shaarli_ynh |
-| Shaarli | courgette | En cours | https://github.com/courgette/zomburl_ynh |
+| Zomburl | courgette | En cours | https://github.com/courgette/zomburl_ynh |
 | proFTPd | beudbeud | En dev | https://github.com/abeudin/proftpd_ynh.git |
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
 | Baïkal | aquaxp | En dev | https://github.com/aquaxp/baikal_ynh |
