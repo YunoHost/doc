@@ -33,6 +33,7 @@
            * [DNS Configuration](/dns_config)
         * [Applications](/apps)
         * [Internet service provider](/isp)
+            * [Main configuration box/routeur](/isp_box_config)
         * [Web administration](/admin)
         * [Connect to your server with SSH](/ssh)
         * [Command line administration](/moulinette)

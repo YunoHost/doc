@@ -1,5 +1,7 @@
 # Internet service providers
 
+<a class="btn btn-lg btn-default" href="/isp_box_config_fr"> Main configuration box</a>
+
 Here is a non-comprehensive list of internet service providers by countries, wich contains criteria of tolerance to self-hosting.
 
 A "no" may cause problems of the using of your server or may require you to make additional configurations. Status in brackets indicates the default behavior.

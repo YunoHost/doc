@@ -81,15 +81,15 @@ $(document).ready(function () {
 | Piwigo | monsieur-a | En test | https://github.com/monsieur-a/piwigo_ynh |
 | Etherpad-Lite | beudbeud | En test | https://github.com/abeudin/etherpadlite_ynh |
 | Webmin | tifred | En dev | https://github.com/drfred1981/webmin_ynh |
+| Ghost | julien | En test | https://github.com/julienmalik/ghost_ynh |
+| Sick Beard | julien | En dev |  |
+
 
 ### À intégrer
 
 * [Ethercalc](http://ethercalc.net/) / [Ethersheet](https://ethersheet.org/)
-* [Sympa](http://www.sympa.org/)
 * [Mumble](http://mumble.sourceforge.net/)
-* [Ghost](http://ghost.org)
 * [PluXML](http://www.pluxml.org/)
-* [Piwigo](http://piwigo.org) / [openphoto](http://theopenphotoproject.org/)
 * [Leed](http://projet.idleman.fr/leed/)
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
 * [Movim](http://www.movim.eu/)
@@ -99,11 +99,10 @@ $(document).ready(function () {
 * [FileTea](https://filetea.me)
 * [10er10](https://github.com/dready92/10er10)
 * [Subsonic](http://www.subsonic.org)
-* [Sick Beard](http://sickbeard.com)
 * [Cops](http://blog.slucas.fr/fr/oss/calibre-opds-php-server)
 * [PHProxy](http://sourceforge.net/projects/poxy/)
-* [GPodder](https://gpodder.net)
 * [Jitsi Meet](https://github.com/jitsi/jitsi-meet)
+* [Sympa](http://www.sympa.org/)
 * [Mailman](https://www.gnu.org/software/mailman/)
 * [Diaspora](https://diasporafoundation.org/)
 * [MediaGoblin](http://mediagoblin.org/)

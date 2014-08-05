@@ -34,6 +34,7 @@
             * [Avec OVH](/OVH_fr)
         * [Applications](/apps_fr)
         * [Fournisseurs d’accès à Internet](/isp_fr)
+            * [Configuration générale box/routeur](/isp_box_config_fr)
             * [SFR](/isp_sfr_fr)
             * [Orange](/isp_orange_fr)
         * [Administration web](/admin_fr)

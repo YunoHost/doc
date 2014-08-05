@@ -1,5 +1,7 @@
 # Fournisseurs d'accès à Internet
 
+<a class="btn btn-lg btn-default" href="/isp_box_config_fr"> Configuration générale box</a>
+
 Voici un liste non-exhaustive des fournisseurs d'accès à Internet par pays, contenant les critères de tolérance à l'auto-hébergement.
 
 Un « **non** » peut entraîner des problèmes d'utilisation de votre serveur ou peut vous obliger à faire des configurations supplémentaires. Le statut entre parenthèse indique le comportement par défaut.
@@ -11,7 +13,7 @@ Tous les fournisseurs d'accès à Internet [membres de la Fédération French Da
 | Fournisseur d'accès | Box (modem/routeur) | uPnP activable | Port 25 ouvrable (email) | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Reverse DNS personnalisable | IP fixe |
 | --- | --- | --- | --- | --- | --- | --- |
 | **Free** | Freebox | oui (activé) | oui | oui (désactivé) | oui | oui |
-| **[SFR](/isp_sfr_fr)** | Neufbox | oui (activé) | oui | **non** | … | oui et **non** |
+| **[SFR](/isp_sfr_fr)** | Neufbox | oui (activé) | oui (fermé) | **non** | … | oui et **non** |
 | **[Orange](/isp_orange_fr)** | Livebox | oui | **non** | **non** | **non** | **non** (Professionel uniquement) |
 | **Darty** | Dartybox | oui (activé) | oui | oui | **non** | oui |
 | **Bouygues Télécom** | Bbox | oui (activé) | oui | oui | **non** | oui |
