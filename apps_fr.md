@@ -68,10 +68,11 @@ $(document).ready(function () {
 | Firefox Sync | beudbeud | En cours | https://github.com/abeudin/ffsync_ynh |
 | OpenID | julien | En cours | https://github.com/julienmalik/openid-simplesamlphp_ynh |
 | Shaarli | julien | En cours | https://github.com/julienmalik/shaarli_ynh |
+| Zomburl | courgette | En cours | https://github.com/courgette/zomburl_ynh |
 | proFTPd | beudbeud | En dev | https://github.com/abeudin/proftpd_ynh.git |
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
 | Baïkal | aquaxp | En dev | https://github.com/aquaxp/baikal_ynh |
-| Yourls | courgette | En test | https://github.com/thomaslebeau/yourls_ynh |
+| Yourls | courgette | En test | https://github.com/courgette/yourls_ynh |
 | OpenSondage | zamentur | En test | https://github.com/zamentur/opensondage_ynh |
 | Strut | zamentur | En test | https://github.com/zamentur/strut_ynh |
 | MyCryptoChat | mrtino | En test | https://github.com/mrtino/mycryptochat_ynh |
@@ -83,7 +84,9 @@ $(document).ready(function () {
 | Webmin | tifred | En dev | https://github.com/drfred1981/webmin_ynh |
 | Ghost | julien | En test | https://github.com/julienmalik/ghost_ynh |
 | Sick Beard | julien | En dev |  |
-
+| Webmin | tifred | En dev | https://github.com/drfred1981/webmin_ynh |
+| Custom Webapp (Multi instance) | Maniack Crudelis | En test | https://github.com/maniackcrudelis/my_webapp_ynh |
+| FTP support for webapp | Maniack Crudelis | En test | https://github.com/maniackcrudelis/ftp_support_webapp_ynh |
 
 ### À intégrer
 
