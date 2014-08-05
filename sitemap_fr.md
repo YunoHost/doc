@@ -34,7 +34,7 @@
             * [Avec OVH](/OVH_fr)
         * [Applications](/apps_fr)
         * [Fournisseurs d’accès à Internet](/isp_fr)
-            * [Configuration générale box/routeur](/isp_box_config_fr)
+            * [Configuration générale box](/isp_box_config_fr)
             * [SFR](/isp_sfr_fr)
             * [Orange](/isp_orange_fr)
         * [Administration web](/admin_fr)
@@ -67,8 +67,6 @@
 * [Sécurité](/security_fr)
 
 * [Support](/support_fr)
-
-* [Mise à jour vers la v.2 RC](/upgrade)
 
 * [Blog](http://news.yunohost.org/)
 
