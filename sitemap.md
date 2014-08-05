@@ -19,6 +19,7 @@
             * [On Debian](/install_on_debian)
             * [On VirtualBox](/install_on_virtualbox)
             * [On Docker](/docker)
+            * [On Vagrant](/vagrant)
             * [On a DigitalOcean droplet](/install_on_digitalocean)
             * [On a dedicated or a virtual private server](/install_on_dedicated_server)
             * Instalation steps
