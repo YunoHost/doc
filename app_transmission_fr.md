@@ -1,12 +1,16 @@
 # <img src="https://yunohost.org/images/transmission.png">Transmission
 
-### Téléchargement des fichiers complétés
+### C’est quoi Transmission ?
+Transmission est un logiciel de téléchargement et de partage de fichiers basé sur le protocole BitTorrent.
+* [Site de transmission](http://transmissionbt.com/)
 
-Avec un navigateur web, si Transmission est installé sur `https://votre-domaine.org/torrent/` vous pourrez télécharger vos fichiers complétés à l’adresse suivante : https://votre-domaine.org/torrent/downloads/
+### Comment télécharger des fichiers complétés ?
 
-### Comment télécharger un répertoire entier
+Si vous avez installé Transmission sur `/torrent/`, vous pourrez télécharger vos fichiers complétés à l’adresse suivante : https://votre-domaine.org/torrent/downloads/
 
-En ligne de commande, il faut se placer dans le répertoire de téléchargemement et archiver le répertoire :
+### Comment télécharger un répertoire entier ?
+
+Une fois connecté en [SSH](ssh_fr), placez-vous dans le répertoire de téléchargement et zipper le répertoire :
 ```bash
 cd /home/yunohost.transmission/completed
 zip -r votre_archive.zip [dossier]
@@ -29,6 +33,4 @@ Pour transferer le fichier entrez la commande suivante :
 scp (-r) /votre/fichier/ root@votre-domaine.org:/home/yunohost.transmission/completed
 ```
 Pour plus de détails sur le transfert de fichier voir ici : http://doc.ubuntu-fr.org/ssh#transfert_-_copie_de_fichiers
-
-* [Site de transmission](http://transmissionbt.com/)
 
