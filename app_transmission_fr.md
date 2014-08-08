@@ -8,16 +8,16 @@ Transmission est un logiciel de téléchargement et de partage de fichiers basé
 Si vous avez installé Transmission sur `/torrent/`, vous pourrez télécharger vos fichiers complétés à l’adresse suivante : https://votre-domaine.org/torrent/downloads/
 
 ### Envoi de fichier vers le serveur pour seeder
-Dans YunoHost, les torrents completés sont enregistrés dans : `/home/yunohost.transmission/completed`
+Dans YunoHost, les torrents complétés sont enregistrés dans : `/home/yunohost.transmission/completed`
 
-#### Avec SFTP
+#### Avec SFTP (recommandé)
 À partir de votre [gestionnaire de fichiers](https://fr.wikipedia.org/wiki/Gestionnaire_de_fichier) (sous GNU/Linux) faites `CTRL + L` puis entrez :
 ```bash
 sftp://<utilisateur>@<votre-domaine.org>/home/yunohost.transmission/completed
 ```
 utilisateur = admin ou root
 
-#### Avec SCP
+#### Avec SCP (compliqué)
 Pour transférer le fichier entrez la commande suivante :
 
 ```bash
@@ -25,7 +25,7 @@ scp (-r) /votre/fichier/ root@votre-domaine.org:/home/yunohost.transmission/comp
 ```
 
 ##### Comment télécharger un répertoire entier ?
-Une fois connecté en [SSH](ssh_fr), placez-vous dans le répertoire de téléchargement et zipper le répertoire :
+Une fois connecté en [SSH](ssh_fr), placez-vous dans le répertoire de téléchargement et zippez le répertoire :
 ```bash
 cd /home/yunohost.transmission/completed
 zip -r votre_archive.zip [dossier]
