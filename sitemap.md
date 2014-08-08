@@ -45,6 +45,7 @@
         * [Configure a mail client](/email)
         * [Instant messaging usage](/XMPP)
         * [Applications](/apps)
+           * [Transmission](/app_transmission_en)
            * [Radicale](/app_radicale)
 
     * [Contributor guide](/contribute)
