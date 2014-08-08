@@ -28,9 +28,9 @@
 
 ## v2.1
 
-* Backup system: friend-to-friend, on a local device, and downloaded (kload)
 * ~~Firewall in web administration *(opi)*~~
 * ~~OpenVPN configuration page + access control (kload)~~
+* Backup system: friend-to-friend, on a local device, and downloaded (kload)
 * User avatar *(opi)*
 * Install non-official apps from admin *(opi)* 
 * Fix WebSocket issue for ARM devices (jerome, kload)
@@ -38,4 +38,6 @@
 * Add proper upgrade/remove scripts and comment Debian scripts in packages (beudbeud)
 * Clean up moulinette API (jerome)
 * Run automatic tests on moulinette (kload)
-* Migrate to Baikal and deprecate Radicale (ju)
+* Migrate to Baïkal and deprecate Radicale (ju)
+* Improve documentation (Moul)
+* Add a download files button on Transmission interface (opi)
