@@ -9,7 +9,9 @@
 
 * PC x86 standard
 * Une **Clé USB** avec une capacité minimale de 2GB **OU** un **CD vierge** classique
-* La dernière **image ISO live YunoHost**, disponible ici : [http://build.yunohost.org/yunohost-live.iso](http://build.yunohost.org/yunohost-live.iso)
+* La dernière **image ISO live YunoHost**, disponible ici : 
+ * Avec BitTorrent : [http://build.yunohost.org/yunohost-live.iso.torrent](http://build.yunohost.org/yunohost-live.iso.torrent)
+ * En téléchargement direct : [http://build.yunohost.org/yunohost-live.iso](http://build.yunohost.org/yunohost-live.iso)
 
 <br>
 <div class="alert alert-warning" markdown="1">
