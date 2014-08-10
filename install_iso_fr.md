@@ -13,11 +13,11 @@
 * Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
 * Une **Clé USB** d'une capacité minimale d'1GB **OU** un **CD vierge** standard
 * Une des dernières **images ISO YunoHost**, disponibles ici (dans le doute prenez la 32 bits) :
- * Avec Bittorent :
+ * **Torent** (partagez au moins jusqu’au un ratio de 1 pour assurer la pérennité du torrent) :
    * 32 bits : [http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent)
    * 64 bits : [http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent)
 
- * En téléchargement direct :
+ * **Téléchargement direct** :
    * 32 bits : [http://build.yunohost.org/yunohostv2-latest-i386.iso](http://build.yunohost.org/yunohostv2-latest-i386.iso)
    * 64 bits : [http://build.yunohost.org/yunohostv2-latest-amd64.iso](http://build.yunohost.org/yunohostv2-latest-amd64.iso)
 
