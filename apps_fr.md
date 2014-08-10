@@ -89,6 +89,7 @@ $(document).ready(function () {
 | FTP support for webapp | Maniack Crudelis | En test | https://github.com/maniackcrudelis/ftp_support_webapp_ynh |
 | Jeedom | lunarok | En test | https://github.com/lunarok/jeedom_ynh |
 | COPS | lunarok | En test | https://github.com/lunarok/cops_ynh |
+| PHPSysinfo | lunarok | En test | https://github.com/lunarok/phpsysinfo_ynh |
 
 ### À intégrer
 
