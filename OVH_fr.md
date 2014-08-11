@@ -1,13 +1,34 @@
 #Configuration DNS avec OVH
-Nous allons voir comment configurer le DNS avec [OVH](http://www.ovh.com).
 
-À l'endroit de configuration de la zone DNS, mettez-vous en éditon texte, et utilisez la [configuration DNS standard](/dns_config_fr).
+Nous allons voir comment configurer le DNS avec [OVH](http://www.ovh.com).
+
+Après achat de votre nom de domaine. Sélectionnez votre nom de domaine.
+
+<img src="https://yunohost.org/images/OVH1_domain_select.png" width=400>
+
+Allez dans **Domaine & DNS** :
+
+<img src="https://yunohost.org/images/OVH2_domain_DNS.png" width=250>
+
+Puis, allez dans **Zone DNS** :
+
+<img src="https://yunohost.org/images/OVH3_zoneDNS.png" width=600>
+
+<Voici la page de configuration des zones DNS
+
+OVH4
+
+Avec l’édition texte.
+
+OVH5>
+
+À l'endroit de configuration de la zone DNS, mettez-vous en édition texte, et utilisez la [configuration DNS standard](/dns_config_fr).
 
 ###IP dynamique :
 
-Cette partie est à suivre que si votre IP est dynamique.
+Cette partie est à suivre que si votre IP est dynamique.
 
-Pour savoir si votre fournisseur d'accès internet vous fourni une IP dynamique [voir ici](/isp_fr).
+Pour savoir si votre fournisseur d'accès internet vous fourni une IP dynamique [voir ici](/isp_fr).
 
 Commencez par créer un identifiant DynHost.
 
