@@ -1,12 +1,12 @@
 # Moulinette
 
-**Moulinette** is the command line interface (CLI) of YunoHost administration. It permit to manage entirely YunoHost:
+**Moulinette** is the command line interface (CLI) of YunoHost administration. It allows to manage entirely YunoHost:
 
 users, domains, applications, firewall, backup, monitoring.
 
 The other interface is a [web administration](/admin_fr), which eliminates the need for the command line.
 
-To use Moulinette you need to connect to your server with [SSH](/ssh_en).
+To use Moulinette you need to connect to your server via [SSH](/ssh_en).
 
 ##yunohost
 
