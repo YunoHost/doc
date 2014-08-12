@@ -90,6 +90,7 @@ $(document).ready(function () {
 | Jeedom | lunarok | En test | https://github.com/lunarok/jeedom_ynh |
 | COPS | lunarok | En test | https://github.com/lunarok/cops_ynh |
 | OpenWRT | lunarok | En test | https://github.com/lunarok/openwrt_ynh |
+| PHPSysinfo | lunarok | En test | https://github.com/lunarok/phpsysinfo_ynh |
 
 ### À intégrer
 
