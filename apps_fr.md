@@ -114,3 +114,4 @@ $(document).ready(function () {
 * [Mailman](https://www.gnu.org/software/mailman/)
 * [Diaspora](https://diasporafoundation.org/)
 * [MediaGoblin](http://mediagoblin.org/)
+* [CumulusClips](http://cumulusclips.org/)
