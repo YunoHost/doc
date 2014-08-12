@@ -91,6 +91,7 @@ $(document).ready(function () {
 | COPS | lunarok | En test | https://github.com/lunarok/cops_ynh |
 | OpenWRT | lunarok | En test | https://github.com/lunarok/openwrt_ynh |
 | PHPSysinfo | lunarok | En test | https://github.com/lunarok/phpsysinfo_ynh |
+| HTPC Manager | lunarok | En test | https://github.com/lunarok/htpc_ynh |
 
 ### À intégrer
 
