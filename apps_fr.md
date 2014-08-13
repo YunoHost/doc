@@ -73,6 +73,7 @@ $(document).ready(function () {
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
 | Baïkal | aquaxp | En dev | https://github.com/aquaxp/baikal_ynh |
 | FreshRSS | plopoyop | En dev | https://github.com/plopoyop/freshrss_ynh |
+|Leed | EsKuel | En dev | https://github.com/EsKuel/leed_ynh |
 | Yourls | courgette | En test | https://github.com/courgette/yourls_ynh |
 | OpenSondage | zamentur | En test | https://github.com/zamentur/opensondage_ynh |
 | Strut | zamentur | En test | https://github.com/zamentur/strut_ynh |
@@ -99,7 +100,6 @@ $(document).ready(function () {
 * [Ethercalc](http://ethercalc.net/) / [Ethersheet](https://ethersheet.org/)
 * [Mumble](http://mumble.sourceforge.net/)
 * [PluXML](http://www.pluxml.org/)
-* [Leed](http://projet.idleman.fr/leed/)
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
 * [Movim](http://www.movim.eu/)
 * [KiwiIRC](http://kiwiirc.com/)
