@@ -107,8 +107,6 @@ $(document).ready(function () {
 * [GitLab](http://gitlab.org/)
 * [FileTea](https://filetea.me)
 * [10er10](https://github.com/dready92/10er10)
-* [Subsonic](http://www.subsonic.org)
-* [Cops](http://blog.slucas.fr/fr/oss/calibre-opds-php-server)
 * [PHProxy](http://sourceforge.net/projects/poxy/)
 * [Jitsi Meet](https://github.com/jitsi/jitsi-meet)
 * [Sympa](http://www.sympa.org/)
