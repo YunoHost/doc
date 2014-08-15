@@ -10,10 +10,10 @@ Un « **non** » peut entraîner des problèmes d'utilisation de votre serveur o
 
 Tous les fournisseurs d'accès à Internet [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres) ont une politique favorable à l'auto-hébergement. 
 
-| Fournisseur d'accès | Box (modem/routeur) | uPnP activable | Port 25 ouvrable (email) | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Reverse DNS personnalisable | IP fixe |
+| Fournisseur d'accès | Box (modem/routeur) | uPnP activable | Port 25 ouvrable (email) | [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | Reverse DNS personnalisable | IP fixe |
 | --- | --- | --- | --- | --- | --- | --- |
 | **Free** | Freebox | oui (activé) | oui | oui (désactivé) | oui | oui |
-| **[SFR](/isp_sfr_fr)** | Neufbox | oui (activé) | oui (fermé) | **non** | … | oui et **non** |
+| **[SFR](/isp_sfr_fr)** | Neufbox | oui (activé) | oui (fermé) | oui et **non** | … | oui et **non** |
 | **[Orange](/isp_orange_fr)** | Livebox | oui | **non** | **non** | **non** | **non** (Professionel uniquement) |
 | **Darty** | Dartybox | oui (activé) | oui | oui | **non** | oui |
 | **Bouygues Télécom** | Bbox | oui (activé) | oui | oui | **non** | oui |
@@ -24,7 +24,7 @@ Pour une liste plus complète et précise, référez-vous à la très bonne docu
 
 ### Belgique
 
-| Fournisseur d'accès | Box (modem/routeur) | uPnP activable | Port 25 ouvrable (email) | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Reverse DNS personnalisable | IP fixe |
+| Fournisseur d'accès | Box (modem/routeur) | uPnP activable | Port 25 ouvrable (email) | [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | Reverse DNS personnalisable | IP fixe |
 | --- | --- | --- | --- | --- | --- | --- |
 | **Belgacom** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
 | **Scarlet** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
