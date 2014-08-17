@@ -88,7 +88,18 @@ Have a look of [what has been done yet](/apps)!
 
 <div class="row">
 <div class="col col-md-3 lead">
-<span class="glyphicon glyphicon-euro"></span>&nbsp;&nbsp; Donation
+<span class="glyphicon glyphicon glyphicon-upload"></span>&nbsp;&nbsp; Seed
+</div>
+<div class="col col-md-8" markdown="1">
+Seed (share) YunoHost images with Torrent system: [live](http://build.yunohost.org/yunohost-live.iso.torrent), [32 bits](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent) and [64 bits](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent).
+</div>
+</div>
+
+---
+
+<div class="row">
+<div class="col col-md-3 lead">
+<span class="glyphicon glyphicon-usd"></span>&nbsp;&nbsp; Donation
 </div>
 <div class="col col-md-8" markdown="1">
 You can now send us Bitcoin at this address: `1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf`
