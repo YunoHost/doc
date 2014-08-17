@@ -11,7 +11,7 @@ YunoHost dépend entièrement de la participation de gens comme vous.
 <span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp; Passez le mot
 </div>
 <div class="col col-md-8" markdown="1">
-Parlez de logiciel libre, d'auto-hébergement, de YunoHost à vos proches et à votre travail. Nous comptons sur des évangélistes du <a href="http://datalove.me/" target="_blank">Datalove</a> comme vous <3
+Parlez de logiciel libre, d'[auto-hébergement](/selfhosting_fr), de YunoHost à vos proches et à votre travail. Nous comptons sur des évangélistes du <a href="http://datalove.me/" target="_blank">Datalove</a> comme vous <3
 </div>
 </div>
 
@@ -52,7 +52,7 @@ Vous pouvez vous impliquer dans le développement de YunoHost peu importe votre 
 
 <div class="row">
 <div class="col col-md-3 lead">
-<span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp; Traduction
+<span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp; Traduisez
 </div>
 <div class="col col-md-8" markdown="1">
 Participez en rendant les interfaces de YunoHost disponibles dans votre langue. Créez un compte Transifex et <a href="https://www.transifex.com/organization/yunohost/" target="_blank">lancez-vous</a> !
@@ -85,7 +85,18 @@ Améliorez cette documentation en [proposant de nouvelles pages](/write_document
 
 <div class="row">
 <div class="col col-md-3 lead">
-<span class="glyphicon glyphicon-euro"></span>&nbsp;&nbsp; Faire un don
+<span class="glyphicon glyphicon glyphicon-upload"></span>&nbsp;&nbsp; Seedez
+</div>
+<div class="col col-md-8" markdown="1">
+Seedez (partagez) avec le système de Torrent les images de YunoHost : [live](http://build.yunohost.org/yunohost-live.iso.torrent), [32 bits](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent) et [64 bits](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent).
+</div>
+</div>
+
+---
+
+<div class="row">
+<div class="col col-md-3 lead">
+<span class="glyphicon glyphicon-euro"></span>&nbsp;&nbsp; Donner
 </div>
 <div class="col col-md-8" markdown="1">
 Vous pouvez maintenant nous envoyer des Bitcoins via l'adresse `1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf`
