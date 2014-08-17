@@ -41,3 +41,4 @@
 * Add proper upgrade/remove scripts and comment Debian scripts in packages (beudbeud)
 * Migrate to Baïkal and deprecate Radicale (ju)
 * Improve documentation, by making it more accessible (Moul)
+* Create YunoHost images based on Cubian for Cubieboards 1 and 2 (Moul)
