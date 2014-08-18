@@ -94,6 +94,7 @@ $(document).ready(function () {
 | OpenWRT | lunarok | En test | https://github.com/lunarok/openwrt_ynh |
 | PHPSysinfo | lunarok | En test | https://github.com/lunarok/phpsysinfo_ynh |
 | HTPC Manager | lunarok | En test | https://github.com/lunarok/htpc_ynh |
+| Hextris | opi | En test | https://github.com/opi/hextris_ynh |
 
 ### À intégrer
 
