@@ -115,3 +115,4 @@ $(document).ready(function () {
 * [Diaspora](https://diasporafoundation.org/)
 * [MediaGoblin](http://mediagoblin.org/)
 * [CumulusClips](http://cumulusclips.org/)
+* [RainLoop](http://rainloop.net/)
