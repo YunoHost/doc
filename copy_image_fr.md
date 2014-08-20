@@ -12,7 +12,7 @@ Maintenant que vous avez l'image ISO YunoHost, vous devez la copier sur une cart
 
 <img src="https://yunohost.org/images/win32diskimager.png">
 
-## Sur GNU/Linux, BSD or Mac OS
+## Sur GNU/Linux, BSD ou Mac OS
 
 * Ouvrez un terminal.
 * Insérez votre carte SD.
