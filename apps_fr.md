@@ -64,6 +64,7 @@ $(document).ready(function () {
 
 | Nom | Packageur | État d'avancement | URL du git |
 | --- | --- | --- | --- |
+| EtherCalc | zamentur | En cours | https://github.com/zamentur/ethercalc_ynh |
 | LimeSurvey | zamentur | En cours | https://github.com/zamentur/limesurvey_ynh |
 | Firefox Sync | beudbeud | En cours | https://github.com/abeudin/ffsync_ynh |
 | OpenID | julien | En cours | https://github.com/julienmalik/openid-simplesamlphp_ynh |
@@ -98,7 +99,7 @@ $(document).ready(function () {
 
 ### À intégrer
 
-* [Ethercalc](http://ethercalc.net/) / [Ethersheet](https://ethersheet.org/)
+* [Ethersheet](https://ethersheet.org/)
 * [Mumble](http://mumble.sourceforge.net/)
 * [PluXML](http://www.pluxml.org/)
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
