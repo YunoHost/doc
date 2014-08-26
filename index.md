@@ -38,12 +38,9 @@
 <span class="yolo 6" style="color: #FF0066;">Host me I'm famous</span>
 <span class="yolo 7" style="color: #3366FF;">Try Internet</span>
 <span class="yolo 8" style="color: #FFFFFF;">How I met your server</span>
-<span class="yolo 9" style="color: #CC66FF;">sudo internet</span>
-<span class="yolo 10" style="color: #FF6600;">data@home</span>
-<span class="yolo 11" style="color: #FF3399;">datalove <3</span>
-<span class="yolo 12" style="color: #6699FF;">I can haz server?</span>
-<span class="yolo 13" style="color: #FF5050;">dude, Y U NO Host?!</span>
-<span class="yolo 14" style="color: #66FF33;">Keep calm and host yourself</span>
+<span class="yolo 9" style="color: #FF6600;">john@doe.org</span>
+<span class="yolo 10" style="color: #FF5050;">dude, Y U NO Host?!</span>
+<span class="yolo 11" style="color: #66FF33;">Keep calm and host yourself</span>
 </p>
 <button class="btn btn-primary btn-lg btn-block yolobtn"  style="
   min-width: 200px; 
