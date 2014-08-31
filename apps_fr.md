@@ -113,6 +113,7 @@ $(document).ready(function () {
 * [Jitsi Meet](https://github.com/jitsi/jitsi-meet)
 * [Sympa](http://www.sympa.org/)
 * [Mailman](https://www.gnu.org/software/mailman/)
+* [PHPList](http://www.phplist.com/)
 * [Diaspora](https://diasporafoundation.org/)
 * [MediaGoblin](http://mediagoblin.org/)
 * [CumulusClips](http://cumulusclips.org/)
