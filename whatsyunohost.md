@@ -6,23 +6,23 @@ YunoHost is a **server operating system** aiming to make self-hosting accessible
 
 ---
 
-### Softwares
+### Software
 
 Basically YunoHost **automatically installs** and configures some services around LDAP, and **provides tools** to administrate them.
 
-It can thus be considered as a distribution, including the following softwares:
+It can thus be considered as a distribution, including the following software:
 
 <img src="https://yunohost.org/images/nginx.png"><img src="https://yunohost.org/images/postfix.png"><img src="https://yunohost.org/images/dovecot.png"><img src="https://yunohost.org/images/spamassassin.png"><img src="https://yunohost.org/images/XMPP_logo.png" width=80>
 
 * [Nginx](http://nginx.org/): a web server
-* [Postfix](http://www.postfix.org/): a SMTP e-mail server
-* [Dovecot](http://www.dovecot.org/): a IMAP and a POP3 e-mail server
+* [Postfix](http://www.postfix.org/): an SMTP e-mail server
+* [Dovecot](http://www.dovecot.org/): an IMAP and a POP3 e-mail server
 * [Amavis](http://amavis.org/): an antispam
-* [Metronome](http://www.lightwitch.org/metronome): a XMPP server
+* [Metronome](http://www.lightwitch.org/metronome): an XMPP server
 * [OpenLDAP](http://www.openldap.org/)
 * [Bind](https://www.isc.org/downloads/bind/): a DNS server
-* [SSOwat](https://github.com/Kloadut/SSOwat): a (SSO) system of web autentification
-* [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs): a system of backup (not all ready running)
+* [SSOwat](https://github.com/Kloadut/SSOwat): a Single Sign On (SSO) web authentication system
+* [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs): a backup system (not yet functional)
 
 ---
 
