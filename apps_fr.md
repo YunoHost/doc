@@ -96,6 +96,7 @@ $(document).ready(function () {
 | PHPSysinfo | lunarok | En test | https://github.com/lunarok/phpsysinfo_ynh |
 | HTPC Manager | lunarok | En test | https://github.com/lunarok/htpc_ynh |
 | Hextris | opi | En test | https://github.com/opi/hextris_ynh |
+| Piwik | Maniack Crudelis | En test | https://github.com/maniackcrudelis/piwik_ynh |
 
 ### À intégrer
 
@@ -105,7 +106,6 @@ $(document).ready(function () {
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
 * [Movim](http://www.movim.eu/)
 * [KiwiIRC](http://kiwiirc.com/)
-* [Piwik](http://piwik.org/)
 * [GitLab](http://gitlab.org/)
 * [FileTea](https://filetea.me)
 * [10er10](https://github.com/dready92/10er10)
