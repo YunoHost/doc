@@ -14,7 +14,7 @@ Dans ce cas, il sera nécessaire de remplacer le certificat auto-signé par celu
 Après création du certificat auprès de votre autorité d'enregistrement, vous devez être en possession d'une clé privée, le fichier key et d'un certificat public, le fichier crt.
 > Attention, le fichier key est très sensible, il est strictement personnel et doit être très bien sécurisé.
 
-Ces 2 fichiers doivent être copiés sur le serveur, si ils ne s'y trouvent pas déjà.
+Ces deux fichiers doivent être copiés sur le serveur, si ils ne s'y trouvent pas déjà.
 
 ```bash
 scp -P 22 CERTIFICAT.crt admin@DOMAIN.TLD:ssl.crt
@@ -63,7 +63,7 @@ En fonction de l'autorité d'enregistrement, des certificats intermédiaire et r
 
 Les certificats intermédiaire et root doivent être réuni avec le certificat obtenu pour créer une chaine de certificats unifiés.
 
-En cas d'utilisation d'un certificat racine (StartSSL):
+En cas d'utilisation d'un certificat racine (StartSSL) :
 
 ```bash
 cat ae_certs/ssl.crt ae_certs/intermediate_ca.pem ae_certs/ca.pem | sudo tee crt.pem```
@@ -83,7 +83,7 @@ Afin de s'assurer de la syntaxe des certificats, vérifiez le contenu des fichie
 ```bash
 cat crt.pem key.pem```
 
-Les certificats et la clé privée doivent ressembler à cela:
+Les certificats et la clé privée doivent ressembler à cela :
 
 `-----BEGIN CERTIFICATE-----`
 `MIICVDCCAb0CAQEwDQYJKoZIhvcNAQEEBQAwdDELMAkGA1UEBhMCRlIxFTATBgNV`
