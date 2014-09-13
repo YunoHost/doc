@@ -1,13 +1,17 @@
-#Certificat
+# Certificat
 
-Un certificat est utilisé pour certifier qu’un serveur correspond bien à celui que l’on souhaite visiter et qu’il ne s’agit pas d’un serveur falsifié.
+Un certificat est utilisé pour garantir la confidentialité des échanges entre votre serveur et votre client.
 
-YunoHost fournit un certificat auto-signé.
+YunoHost fournit par défaut un certificat **auto-signé**, ce qui veut dire que c'est votre serveur qui garantit la validité du certificat. C'est suffisant **pour un usage personnel**, car vous pouvez avoir confiance en votre serveur, en revanche cela posera problème si vous comptez ouvrir l'accès à votre serveur à des anonymes, par exemple pour héberger un site web.    
+En effet, les utilisateurs devront passer par un écran de ce type:
 
-Sur les clients comme les navigateurs web, les clients lourd de courrier électronique, les clients lourd XMPP il faudra ajouter une exception pour ce certificat auto-signé. 
+<img src="https://yunohost.org/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-On peut obtenir un certificat signé par une autorité.  
-Dans ce cas, il sera nécessaire de remplacer le certificat auto-signé par celui qui a été reconnu par une autorité de certification.
+Cet écran revient à demander **« Avez-vous confiance au serveur qui héberge ce site ? »**.    
+Cela peut effrayer vos utilisateurs (à juste titre).
+
+Pour éviter cette confusion, il est possible d'obtenir un certificat signé par une autorité « connue » : **Gandi**, **RapidSSL**, **StartSSL**.    
+Dans ce cas, il s’agira de remplacer le certificat auto-signé par celui qui a été reconnu par une autorité de certification, et vos utilisateurs n’auront plus à passer par cet écran d’avertissement.
 
 ### Ajout d'un certificat signé par une autorité
 
@@ -85,7 +89,7 @@ cat crt.pem key.pem```
 
 Les certificats et la clé privée doivent ressembler à cela :
 
-`-----BEGIN CERTIFICATE-----`
+`-----BEGIN CERTIFICATE-----`    
 `MIICVDCCAb0CAQEwDQYJKoZIhvcNAQEEBQAwdDELMAkGA1UEBhMCRlIxFTATBgNV`
 `BAgTDENvcnNlIGR1IFN1ZDEQMA4GA1UEBxMHQWphY2NpbzEMMAoGA1UEChMDTExC`
 `MREwDwYDVQQLEwhCVFMgSU5GTzEbMBkGA1UEAxMSc2VydmV1ci5idHNpbmZvLmZy`
@@ -97,7 +101,7 @@ Les certificats et la clé privée doivent ressembler à cela :
 `BWm5xSqewM5QDYzXFt031DrPX63Fvo+tCKTQoVItdEuJPMahVsXnDyYHeUURRWLW`
 `wc0BzEgFZGGw7wiMF6wt5QIDAQABMA0GCSqGSIb3DQEBBAUAA4GBALD640iwKPMf`
 `pqdYtfvmLnA7CiEuao60i/pzVJE2LIXXXbwYjNAM+7Lov+dFT+b5FcOUGqLymSG3`
-`kSK6OOauBHItgiGI7C87u4EJaHDvGIUxHxQQGsUM0SCIIVGK7Lwm+8e9I2X0G2GP`
+`kSK6OOauBHItgiGI7C87u4EJaHDvGIUxHxQQGsUM0SCIIVGK7Lwm+8e9I2X0G2GP`    
 `9t/rrbdGzXXOCl3up99naL5XAzCIp6r5`  
 `-----END CERTIFICATE-----`
 
@@ -111,7 +115,7 @@ sudo chmod 600 -R ae_certs```
 
 Rechargez la configuration de nginx pour prendre en compte le nouveau certificat.
 ```bash
-sudo /etc/init.d/nginx reload```
+sudo service nginx reload```
 
 
 Votre certificat est prêt à servir. Vous pouvez toutefois vous assurez de sa mise en place en testant le certificat à l'aide du service de <a href="https://www.geocerts.com/ssl_checker" target="_blank">geocerts</a>.
