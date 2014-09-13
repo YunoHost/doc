@@ -3,7 +3,7 @@
 Un certificat est utilisé pour garantir la confidentialité des échanges entre votre serveur et votre client.
 
 YunoHost fournit par défaut un certificat **auto-signé**, ce qui veut dire que c'est votre serveur qui garantit la validité du certificat. C'est suffisant **pour un usage personnel**, car vous pouvez avoir confiance en votre serveur, en revanche cela posera problème si vous comptez ouvrir l'accès à votre serveur à des anonymes, par exemple pour héberger un site web.    
-En effet, les utilisateurs devront passer par un écran de ce type:
+En effet, les utilisateurs devront passer par un écran de ce type :
 
 <img src="https://yunohost.org/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
