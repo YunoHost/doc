@@ -216,4 +216,4 @@ yunohost app install https://github.com/auteur/mon_paquet.git
 
 
 ### Ajouter l'application à la liste officiel
-Si vous le souhaitez vous pouvez proposer l'inclusion de l'application dans les applications officiels. Pour se faire il faut utiliser le bouton "New App Request" sur http://app.yunohost.org.
+Si vous le souhaitez vous pouvez proposer l'inclusion de l'application dans les applications officielles. Pour se faire il faut utiliser le bouton "New App Request" sur http://app.yunohost.org.
