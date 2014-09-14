@@ -19,6 +19,7 @@
             * [On Debian](/install_on_debian)
             * [On VirtualBox](/install_on_virtualbox)
             * [On Docker](/docker)
+            * [On Vagrant](/vagrant)
             * [On a DigitalOcean droplet](/install_on_digitalocean)
             * [On a dedicated or a virtual private server](/install_on_dedicated_server)
             * Instalation steps
@@ -33,6 +34,7 @@
            * [DNS Configuration](/dns_config)
         * [Applications](/apps)
         * [Internet service provider](/isp)
+            * [Main configuration box](/isp_box_config)
         * [Web administration](/admin)
         * [Connect to your server with SSH](/ssh)
         * [Command line administration](/moulinette)
@@ -43,6 +45,7 @@
         * [Configure a mail client](/email)
         * [Instant messaging usage](/XMPP)
         * [Applications](/apps)
+           * [Transmission](/app_transmission_en)
            * [Radicale](/app_radicale)
 
     * [Contributor guide](/contribute)
@@ -60,8 +63,6 @@
 * [Security](/security)
 
 * [Instant messaging support](/support)
-
-* [Upgrade to v.2 RC](/upgrade)
 
 * [Blog](http://news.yunohost.org/)
 

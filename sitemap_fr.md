@@ -11,6 +11,7 @@
        * [Avec un live usb](/try_at_home_fr)
 
     * [Guide de l'administrateur](/admindoc_fr)
+        * [L’auto-hébergement](/selfhosting_fr)
         * [Matériel compatible](/hardware_fr)
         * [Guide d'installation](/install_fr)
             * [Sur Raspberry Pi](/install_on_raspberry_fr)
@@ -19,6 +20,7 @@
             * [Sur Debian](/install_on_debian_fr)
             * [Sur VirtualBox](/install_on_virtualbox_fr)
             * [Sur Docker](/docker_fr)
+            * [Sur Vagrant](/vagrant_fr)
             * [Sur un conteneur DigitalOcean](/install_on_digitalocean_fr)
             * [Sur un serveur dédié](/install_on_dedicated_server_fr)
             * Étapes d’installation
@@ -34,7 +36,9 @@
             * [Avec OVH](/OVH_fr)
         * [Applications](/apps_fr)
         * [Fournisseurs d’accès à Internet](/isp_fr)
+            * [Configuration générale box](/isp_box_config_fr)
             * [SFR](/isp_sfr_fr)
+            * [Orange](/isp_orange_fr)
         * [Administration web](/admin_fr)
         * [Connexion à son serveur en ligne de commande avec SSH](/ssh_fr)
         * [Administration en ligne de commande avec la Moulinette](/moulinette_fr)
@@ -65,8 +69,6 @@
 * [Sécurité](/security_fr)
 
 * [Support](/support_fr)
-
-* [Mise à jour vers la v.2 RC](/upgrade)
 
 * [Blog](http://news.yunohost.org/)
 

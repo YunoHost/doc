@@ -28,14 +28,17 @@
 
 ## v2.1
 
-* Backup system: friend-to-friend, on a local device, and downloaded (kload)
 * ~~Firewall in web administration *(opi)*~~
 * ~~OpenVPN configuration page + access control (kload)~~
-* User avatar *(opi)*
-* Install non-official apps from admin *(opi)* 
-* Fix WebSocket issue for ARM devices (jerome, kload)
+* ~~Install non-official apps from admin *(opi)*~~
 * Warn users about security updates in the webadmin (opi)
-* Add proper upgrade/remove scripts and comment Debian scripts in packages (beudbeud)
-* Clean up moulinette API (jerome)
+* User avatar *(opi)*
+* Add a download files button on Transmission interface (opi)
+* Backup system: friend-to-friend, on a local device, and downloaded (kload)
 * Run automatic tests on moulinette (kload)
-* Migrate to Baikal and deprecate Radicale (ju)
+* Fix WebSocket issue for ARM devices (jerome, kload)
+* Clean up moulinette API (jerome)
+* Add proper upgrade/remove scripts and comment Debian scripts in packages (beudbeud)
+* Migrate to Baïkal and deprecate Radicale (ju)
+* Improve documentation, by making it more accessible (Moul)
+* Create YunoHost images based on Cubian for Cubieboards 1 and 2 (Moul)

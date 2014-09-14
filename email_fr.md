@@ -9,7 +9,7 @@ YunoHost fournit :
 ###Client lourd de messagerie électronique
 Tu peux accéder à tes courriels grâce à un client lourd de messagerie électronique comme Mozilla Thunderbird ou Évolution.
 
-Tu aura besoin de ta principale adresse mail et de ton mot de passe.
+Tu auras besoin de ta principale adresse mail et de ton mot de passe.
 
 #####Réglages :
 
@@ -22,6 +22,9 @@ L'utilitaire de détection automatique de Thunderbird ne marche pas correctement
 
 ###Migration
 
-Tes courriels sont enregistré dans le fichier /var/mail/.
-Tu aura besoin de déplacer ces fichier vers ton nouveau serveur YunoHost.
+Tes courriels sont enregistrés dans le fichier /var/mail/.
+Tu auras besoin de déplacer ces fichier vers ton nouveau serveur YunoHost.
 
+####Aller plus loin
+
+* [Conférence de Benjamin Sonntag - L'email](http://www.iletaitunefoisinternet.fr/lemail-par-benjamin-sonntag/)

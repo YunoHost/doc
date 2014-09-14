@@ -1,5 +1,7 @@
 # Fournisseurs d'accès à Internet
 
+<a class="btn btn-lg btn-default" href="/isp_box_config_fr"> Configuration générale box</a>
+
 Voici un liste non-exhaustive des fournisseurs d'accès à Internet par pays, contenant les critères de tolérance à l'auto-hébergement.
 
 Un « **non** » peut entraîner des problèmes d'utilisation de votre serveur ou peut vous obliger à faire des configurations supplémentaires. Le statut entre parenthèse indique le comportement par défaut.
@@ -8,21 +10,21 @@ Un « **non** » peut entraîner des problèmes d'utilisation de votre serveur o
 
 Tous les fournisseurs d'accès à Internet [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres) ont une politique favorable à l'auto-hébergement. 
 
-| Fournisseur d'accès | Box (modem/routeur) | uPnP activable | Port 25 ouvrable (email) | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Reverse DNS personnalisable | IP fixe |
+| Fournisseur d'accès | Box (modem/routeur) | uPnP activable | Port 25 ouvrable (email) | [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | Reverse DNS personnalisable | IP fixe |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Free](http://free.fr) | Freebox | oui (activé) | oui | oui (désactivé) | oui | oui |
-| [SFR](/isp_sfr_fr) | Neufbox | oui (activé) | oui | **non** | … | oui et **non** |
-| [Orange](http://orange.fr) | Livebox | oui | **non** | **non** | **non** | **non** (Professionel uniquement) |
-| [Darty](http://dartybox.fr) | Dartybox | oui (activé) | oui | oui | **non** | oui |
-| [Bouygues Télécom](http://www.bouyguestelecom.fr) | Bbox | oui (activé) | oui | oui | **non** | oui |
-| [Numéricable](http://numericable.com/) | … | oui | oui | … | **non** | **non** (Pro uniquement ?) |
+| **[Free](/isp_free_fr)** | Freebox | oui (activé) | oui | oui (désactivé) | oui | oui |
+| **[SFR](/isp_sfr_fr)** | Neufbox | oui (activé) | oui (fermé) | oui et **non** | … | oui et **non** |
+| **[Orange](/isp_orange_fr)** | Livebox | oui | **non** | **non** | **non** | **non** (Professionel uniquement) |
+| **Darty** | Dartybox | oui (activé) | oui | oui | **non** | oui |
+| **Bouygues Télécom** | Bbox | oui (activé) | oui | oui | **non** | oui |
+| **Numéricable** | … | oui | oui | … | **non** | **non** (Pro uniquement ?) |
 Pour une liste plus complète et précise, référez-vous à la très bonne documentation de [wiki.auto-hebergement.fr](http://wiki.auto-hebergement.fr/fournisseurs/fai#d%C3%A9tail_des_fai).
 
 **Astuce** : [FDN](http://www.fdn.fr) fournit des [VPN](http://http://www.fdn.fr/-VPN-.html) permettant de rapatrier une (ou plusieures sur demande) IPv4 fixe et un /48 en IPv6 et ainsi "nettoyer" votre connexion si vous êtes chez l'un des FAI *limitant* du tableau ci-dessus.
 
 ### Belgique
 
-| Fournisseur d'accès | Box (modem/routeur) | uPnP activable | Port 25 ouvrable (email) | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Reverse DNS personnalisable | IP fixe |
+| Fournisseur d'accès | Box (modem/routeur) | uPnP activable | Port 25 ouvrable (email) | [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | Reverse DNS personnalisable | IP fixe |
 | --- | --- | --- | --- | --- | --- | --- |
-| [Belgacom](http://belgacom.be) | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
-| [Scarlet](http://scarlet.be) | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
+| **Belgacom** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
+| **Scarlet** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |

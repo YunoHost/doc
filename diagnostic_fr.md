@@ -46,6 +46,6 @@ Vous pouvez également rediriger les ports manuellement vers l'adresse IP locale
 
 ### <small>4.</small> Est-ce que votre box/routeur fait du hairpinning ?
 
-Si le serveur est accessible de l’extérieur, mais inatteignable via son nom de domaine dans votre réseau local, votre box/routeur ne fait probablement pas correctement de <a href="http://en.wikipedia.org/wiki/Hairpinning" target="_blank">hairpinning</a>.
+Si le serveur est accessible de l’extérieur, mais inatteignable via son nom de domaine dans votre réseau local, votre box/routeur ne fait probablement pas correctement de <a href="http://fr.wikipedia.org/wiki/Hairpinning" target="_blank">hairpinning</a>.
 
 Si vous savez comment faire, ajoutez une entrée dans le fichier `/etc/hosts` du **client** pour indiquer qu'il doit accéder au **serveur** via son IP locale. Sinon, retentez l’installation en prenant cette fois un nom de domaine en **.nohost.me** ou en **.noho.st**.

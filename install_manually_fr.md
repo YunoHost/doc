@@ -27,6 +27,12 @@ cd /tmp/install_script && sudo ./install_yunohostv2
 <img src="https://yunohost.org/images/install_script.png">
 </p>
 
+<br>
+
+<div class="alert alert-warning">
+<b>Attention :</b> il se peut qu'Apache soit déjà installé par défaut sur votre serveur dédié. Si c'est le cas, le script d'installation échouera vu que YunoHost utilise Nginx. Vous aurez à désinstaller le paquet *apache2.2* avec la commande : ``sudo apt-get autoremove apache2.2`` et relancer le script.
+</div>
+
 ---
 
 *Une fois l'installation terminée, vous pouvez procéder à la post-installation : **[yunohost.org/postinstall](/postinstall_fr)** *

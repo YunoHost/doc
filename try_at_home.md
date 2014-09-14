@@ -10,8 +10,8 @@
 * A standard x86 computer
 * A **USB key** of at least 2GB capacity **OR** a standard **blank CD**
 * The latest **YunoHost Live ISO image**, available here:
-
-    [http://build.yunohost.org/yunohost-live.iso](http://build.yunohost.org/yunohost-live.iso)
+ * **[Torrent](http://build.yunohost.org/yunohost-live.iso.torrent)**: share at least to ratio 1 to assure torrent sustainability
+ * **[Direct download](http://build.yunohost.org/yunohost-live.iso)**
 
 <br>
 <div class="alert alert-warning" markdown="1">

@@ -1,11 +1,24 @@
-#Transmission
+# <img src="https://yunohost.org/images/transmission.png">Transmission
 
-This page is not created yet, you can edit it by pressing ```<ESC>``` on your keyboard or by clicking the "edit" button on the bottom-right side of your screen. You will be able to preview your changes by pressing ```<ESC>``` again or by clicking the "preview" button.
+### What is  Transmission?
 
-** Note: ** If you don't have any account you will have to send the modifications manually.
+Transmission is a download and share file software based on BitTorent protocol.
+* [Transmission web site](http://transmissionbt.com/)
 
-###Syntax
+### How to download completed files?
 
-This page use the markdown syntax, please refer to the documentation for further informations:
+If Transmission is installed on `/torrent/`, you could download your completed files to the following adress: https://votre-domaine.org/torrent/downloads/
 
-http://daringfireball.net/projects/markdown/syntax
+### Sending files towards server for seeding
+
+In YunoHost, completed files are saved in: `/home/yunohost.transmission/completed`
+
+#### With SFTP
+
+With your [file manager](https://en.wikipedia.org/wiki/File_manager) (under GNU/Linux) do `CTRL + L` then enter:
+
+```bash
+sftp://<user>@<your-domain.org>/home/yunohost.transmission/completed
+```
+user = admin or root
+
