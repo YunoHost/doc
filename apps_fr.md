@@ -72,7 +72,7 @@ $(document).ready(function () {
 | Zomburl | courgette | En cours | https://github.com/courgette/zomburl_ynh |
 | proFTPd | beudbeud | En dev | https://github.com/abeudin/proftpd_ynh.git |
 | Lychee | titoko | En dev | https://github.com/titoko/lychee_ynh.git |
-| Baïkal | aquaxp | En dev | https://github.com/aquaxp/baikal_ynh |
+| Baïkal | julien | En dev | https://github.com/julienmalik/baikal_ynh |
 | FreshRSS | plopoyop | En dev | https://github.com/plopoyop/freshrss_ynh |
 | Yourls | courgette | En test | https://github.com/courgette/yourls_ynh |
 | OpenSondage | zamentur | En test | https://github.com/zamentur/opensondage_ynh |
