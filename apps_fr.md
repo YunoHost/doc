@@ -118,3 +118,4 @@ $(document).ready(function () {
 * [MediaGoblin](http://mediagoblin.org/)
 * [CumulusClips](http://cumulusclips.org/)
 * [RainLoop](http://rainloop.net/)
+* [Mailpile](https://www.mailpile.is)
