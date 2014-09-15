@@ -62,39 +62,39 @@ $(document).ready(function () {
 
 | Name | Packager | State | URL |
 | --- | --- | --- | --- |
-| EtherCalc | zamentur | in progress | https://github.com/zamentur/ethercalc_ynh |
-| LimeSurvey | zamentur | in progress | https://github.com/zamentur/limesurvey_ynh |
-| Firefox Sync | beudbeud | in progress | https://github.com/abeudin/ffsync_ynh |
-| OpenID | julien | in progress | https://github.com/julienmalik/openid-simplesamlphp_ynh |
-| Shaarli | julien | in progress | https://github.com/julienmalik/shaarli_ynh |
-| Zomburl | courgette | in progress | https://github.com/courgette/zomburl_ynh |
-| proFTPd | beudbeud | in progress | https://github.com/abeudin/proftpd_ynh.git |
-| Lychee | titoko | in progress | https://github.com/titoko/lychee_ynh.git |
-| Baïkal | julien | in progress | https://github.com/julienmalik/baikal_ynh |
-| FreshRSS | plopoyop | in progress | https://github.com/plopoyop/freshrss_ynh |
-| Yourls | courgette | ready | https://github.com/courgette/yourls_ynh |
-| OpenSondage | zamentur | ready | https://github.com/zamentur/opensondage_ynh |
-| Strut | zamentur | ready | https://github.com/zamentur/strut_ynh |
-| MyCryptoChat | mrtino | ready | https://github.com/mrtino/mycryptochat_ynh |
-| MediaWiki | kload | ready | https://github.com/kloadut/mediawiki_ynh |
-| Linux Dash | opi | ready | https://github.com/opi/linuxdash_ynh |
-| Ampache | beudbeud | ready | https://github.com/abeudin/ampache_ynh |
-| Piwigo | monsieur-a | ready | https://github.com/monsieur-a/piwigo_ynh |
-| Etherpad-Lite | beudbeud | ready | https://github.com/abeudin/etherpadlite_ynh |
-| Webmin | tifred | in progress | https://github.com/drfred1981/webmin_ynh |
-| Ghost | julien | ready | https://github.com/julienmalik/ghost_ynh |
-| Sick Beard | julien | in progress |  |
-| Subsonic | tifred | in progress | https://github.com/drfred1981/subsonic_ynh |
-|Leed | Maniack Crudelis | ready | https://github.com/maniackcrudelis/leed_ynh |
-| Custom Webapp (Multi instance) | Maniack Crudelis | ready | https://github.com/maniackcrudelis/my_webapp_ynh |
-| FTP support for webapp | Maniack Crudelis | ready | https://github.com/maniackcrudelis/ftp_support_webapp_ynh |
-| Jeedom | lunarok | ready | https://github.com/lunarok/jeedom_ynh |
-| COPS | lunarok | ready | https://github.com/lunarok/cops_ynh |
-| OpenWRT | lunarok | ready | https://github.com/lunarok/openwrt_ynh |
-| PHPSysinfo | lunarok | ready | https://github.com/lunarok/phpsysinfo_ynh |
-| HTPC Manager | lunarok | ready | https://github.com/lunarok/htpc_ynh |
-| Hextris | opi | ready | https://github.com/opi/hextris_ynh |
-| Piwik | Maniack Crudelis | ready | https://github.com/maniackcrudelis/piwik_ynh |
+| EtherCalc | zamentur | <a class="btn btn-small btn-warning disabled" href="#">in progress</a> | https://github.com/zamentur/ethercalc_ynh |
+| LimeSurvey | zamentur | <a class="btn btn-small btn-warning disabled" href="#">in progress</a> | https://github.com/zamentur/limesurvey_ynh |
+| Firefox Sync | beudbeud | <a class="btn btn-small btn-warning disabled" href="#">in progress</a> | https://github.com/abeudin/ffsync_ynh |
+| OpenID | julien | <a class="btn btn-small btn-warning disabled" href="#">in progress</a> | https://github.com/julienmalik/openid-simplesamlphp_ynh |
+| Shaarli | julien | <a class="btn btn-small btn-warning disabled" href="#">in progress</a> | https://github.com/julienmalik/shaarli_ynh |
+| Zomburl | courgette | <a class="btn btn-small btn-warning disabled" href="#">in progress</a> | https://github.com/courgette/zomburl_ynh |
+| proFTPd | beudbeud | <a class="btn btn-small btn-warning disabled" href="#">in progress</a> | https://github.com/abeudin/proftpd_ynh.git |
+| Lychee | titoko | <a class="btn btn-small btn-warning disabled" href="#">in progress</a> | https://github.com/titoko/lychee_ynh.git |
+| Baïkal | julien | <a class="btn btn-small btn-warning disabled" href="#">in progress</a> | https://github.com/julienmalik/baikal_ynh |
+| FreshRSS | plopoyop | <a class="btn btn-small btn-warning disabled" href="#">in progress</a> | https://github.com/plopoyop/freshrss_ynh |
+| Yourls | courgette | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/courgette/yourls_ynh |
+| OpenSondage | zamentur | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/zamentur/opensondage_ynh |
+| Strut | zamentur | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/zamentur/strut_ynh |
+| MyCryptoChat | mrtino | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/mrtino/mycryptochat_ynh |
+| MediaWiki | kload | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/kloadut/mediawiki_ynh |
+| Linux Dash | opi | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/opi/linuxdash_ynh |
+| Ampache | beudbeud | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/abeudin/ampache_ynh |
+| Piwigo | monsieur-a | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/monsieur-a/piwigo_ynh |
+| Etherpad-Lite | beudbeud | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/abeudin/etherpadlite_ynh |
+| Webmin | tifred | <a class="btn btn-small btn-warning disabled" href="#">in progress</a> | https://github.com/drfred1981/webmin_ynh |
+| Ghost | julien | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/julienmalik/ghost_ynh |
+| Sick Beard | julien | <a class="btn btn-small btn-warning disabled" href="#">in progress</a> |  |
+| Subsonic | tifred | <a class="btn btn-small btn-warning disabled" href="#">in progress</a> | https://github.com/drfred1981/subsonic_ynh |
+|Leed | Maniack Crudelis | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/maniackcrudelis/leed_ynh |
+| Custom Webapp (Multi instance) | Maniack Crudelis | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/maniackcrudelis/my_webapp_ynh |
+| FTP support for webapp | Maniack Crudelis | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/maniackcrudelis/ftp_support_webapp_ynh |
+| Jeedom | lunarok | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/lunarok/jeedom_ynh |
+| COPS | lunarok | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/lunarok/cops_ynh |
+| OpenWRT | lunarok | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/lunarok/openwrt_ynh |
+| PHPSysinfo | lunarok | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/lunarok/phpsysinfo_ynh |
+| HTPC Manager | lunarok | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/lunarok/htpc_ynh |
+| Hextris | opi | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/opi/hextris_ynh |
+| Piwik | Maniack Crudelis | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/maniackcrudelis/piwik_ynh |
 
 ### TODO list
 
