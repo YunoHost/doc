@@ -12,7 +12,7 @@
     <div class="panel-collapse collapse app_{app_id}">
       <div class="panel-body">
         <p><strong>Description</strong>: {app_description}</p>
-        <p><strong>Last update (UTC)</strong>: {app_update}</p>
+        <p><strong>Last update (UTC)x</strong>: {app_update}</p>
         <p><strong>Maintainer</strong>: {app_maintainer} <small class="text-muted">({app_mail})</small></p>
         <p><strong>Git</strong>: {app_git} <small class="text-muted">({app_branch})</small></p>
         <a href="#/app_{app_id}" target="_blank" class="btn btn-default">Documentation</a>
@@ -60,6 +60,19 @@ $(document).ready(function () {
 
 ### Work in progress
 
+The following applications are being worked on by a growing number of packagers.
+
+They are <strong>NOT</strong> validated by the packaging team, and as such, no official support is provided for them.
+
+You can test them, at your own risk, by installing them either through the [administration web]("/admin") interface by choosing "Install custom app", or using the [moulinette]("/moulinette") :
+```bash
+yunohost app install https://github.com/<packager>/<app_repository>
+```
+
+The packagers will appreciate your remarks. If you test them and find issues, or have ideas for improvement, do not hesitate to file issues directly on the dedicated GitHub project page.
+
+<br>
+
 | Name | Packager | State | URL |
 | --- | --- | --- | --- |
 | EtherCalc | zamentur | <a class="btn btn-small btn-warning disabled" href="#">in progress</a> | https://github.com/zamentur/ethercalc_ynh |
@@ -96,7 +109,11 @@ $(document).ready(function () {
 | Hextris | opi | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/opi/hextris_ynh |
 | Piwik | Maniack Crudelis | <a class="btn btn-small btn-success disabled" href="#">ready</a> | https://github.com/maniackcrudelis/piwik_ynh |
 
-### TODO list
+### Wishlist
+
+The following list is a compiled wishlist of applications that would be nice-to-have.
+
+You can [edit this list](/write_documentation) to add your own favorite app.
 
 * [Ethersheet](https://ethersheet.org/)
 * [Mumble](http://mumble.sourceforge.net/)
