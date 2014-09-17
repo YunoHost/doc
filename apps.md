@@ -145,3 +145,5 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [RainLoop](http://rainloop.net/)
 * [Mailpile](https://www.mailpile.is)
 * [ZNC](http://wiki.znc.in/ZNC)
+* [Tor relay](https://www.torproject.org/docs/tor-doc-relay.html.en)
+* [uMap](https://umap.openstreetmap.fr/en/)
