@@ -142,3 +142,4 @@ You can [edit this list](/write_documentation) to add your own favorite app.
 * [CumulusClips](http://cumulusclips.org/)
 * [RainLoop](http://rainloop.net/)
 * [Mailpile](https://www.mailpile.is)
+* [ZNC](http://wiki.znc.in/ZNC)

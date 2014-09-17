@@ -60,5 +60,5 @@ $(document).ready(function () {
 
 <br>
 
-Une liste d'application en cours d'intégration est disponible sur la [page anglaise](/apps)
+Une liste d'application en cours d'intégration est disponible sur la [page anglaise](/apps_en)
 
