@@ -116,6 +116,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | HTPC Manager | lunarok | <div class="ready"/> | https://github.com/lunarok/htpc_ynh |
 | Hextris | opi | <div class="ready"/> | https://github.com/opi/hextris_ynh |
 | Piwik | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/piwik_ynh |
+| FileBin | IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/filebin_ynh |
 
 ### Wishlist
 
