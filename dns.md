@@ -10,7 +10,7 @@ DNS stands for "Domain Name Server", and is often used for the configuration of 
 
 **For example**: `yunohost.org` points to the server at `88.191.153.110`.
 
-This system was created to more easily keep track of server addresses. There are DNS registries for Internet names that you must register with. They are called "registrars", which will let you rent certain domain names for a price (between $5 or a few hundred, depending on the root domain and the chosen name). These registrars are private entities authorised by [ICANN](http://fr.wikipedia.org/wiki/ICANN), such as [Gandi](http://gandi.net), [NameCheap](http://namecheap.com) or [BookMyName](http://bookmyname.com).
+This system was created to more easily keep track of server addresses. There are DNS registries for Internet names that you must register with. They are called "registrars", which will let you rent certain domain names for a price (between $5 or a few hundred, depending on the root domain and the chosen name). These registrars are private entities authorised by [ICANN](http://en.wikipedia.org/wiki/ICANN), such as [Gandi](http://gandi.net), [NameCheap](http://namecheap.com) or [BookMyName](http://bookmyname.com).
 
 It is important to note that subdomains do not necessarily have to send you to wherever the principal domain is pointing. If `yunohost.org` sends to `88.191.153.110`, that doesn't mean that `backup.yunohost.org` has to point at the same IP. You must therefore configure **all** of the domains and subdomains that you want to use.
 
