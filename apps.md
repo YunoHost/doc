@@ -91,11 +91,8 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | Zomburl | courgette | <div class="inprogress"/> | https://github.com/courgette/zomburl_ynh |
 | proFTPd | beudbeud | <div class="inprogress"/> | https://github.com/abeudin/proftpd_ynh.git |
 | Lychee | titoko | <div class="inprogress"/> | https://github.com/titoko/lychee_ynh.git |
-| Baïkal | julien | <div class="inprogress"/> | https://github.com/julienmalik/baikal_ynh |
 | FreshRSS | plopoyop | <div class="ready"/> | https://github.com/plopoyop/freshrss_ynh |
 | Yourls | courgette | <div class="ready"/> | https://github.com/courgette/yourls_ynh |
-| OpenSondage | zamentur | <div class="ready"/> | https://github.com/zamentur/opensondage_ynh |
-| Strut | zamentur | <div class="ready"/> | https://github.com/zamentur/strut_ynh |
 | MyCryptoChat | mrtino | <div class="ready"/> | https://github.com/mrtino/mycryptochat_ynh |
 | MediaWiki | kload | <div class="ready"/> | https://github.com/kloadut/mediawiki_ynh |
 | Linux Dash | opi | <div class="ready"/> | https://github.com/opi/linuxdash_ynh |
@@ -104,7 +101,6 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | Etherpad-Lite | beudbeud | <div class="ready"/> | https://github.com/abeudin/etherpadlite_ynh |
 | Webmin | tifred | <div class="inprogress"/> | https://github.com/drfred1981/webmin_ynh |
 | Ghost | julien | <div class="ready"/> | https://github.com/julienmalik/ghost_ynh |
-| Sick Beard | julien | <div class="inprogress"/> |  |
 | Subsonic | tifred | <div class="inprogress"/> | https://github.com/drfred1981/subsonic_ynh |
 |Leed | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/leed_ynh |
 | Custom Webapp (Multi instance) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/my_webapp_ynh |
@@ -114,9 +110,10 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | OpenWRT | lunarok | <div class="ready"/> | https://github.com/lunarok/openwrt_ynh |
 | PHPSysinfo | lunarok | <div class="ready"/> | https://github.com/lunarok/phpsysinfo_ynh |
 | HTPC Manager | lunarok | <div class="ready"/> | https://github.com/lunarok/htpc_ynh |
-| Hextris | opi | <div class="ready"/> | https://github.com/opi/hextris_ynh |
 | Piwik | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/piwik_ynh |
+| KiwiIRC | julien | <div class="ready"/> | https://github.com/julienmalik/kiwiirc_ynh |
 | FileBin | IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/filebin_ynh |
+| Pydio | julienmalik | <div class="inprogress"/> | https://github.com/julienmalik/pydio_ynh |
 
 ### Wishlist
 
@@ -131,7 +128,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [PluXML](http://www.pluxml.org/)
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
 * [Movim](http://www.movim.eu/)
-* [KiwiIRC](http://kiwiirc.com/)
 * [GitLab](http://gitlab.org/)
 * [FileTea](https://filetea.me)
 * [10er10](https://github.com/dready92/10er10)
@@ -140,6 +136,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Sympa](http://www.sympa.org/)
 * [Mailman](https://www.gnu.org/software/mailman/)
 * [PHPList](http://www.phplist.com/)
+* [Shleuder](http://schleuder2.nadir.org/)
 * [Diaspora](https://diasporafoundation.org/)
 * [MediaGoblin](http://mediagoblin.org/)
 * [CumulusClips](http://cumulusclips.org/)
@@ -148,3 +145,9 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [ZNC](http://wiki.znc.in/ZNC)
 * [Tor relay](https://www.torproject.org/docs/tor-doc-relay.html.en)
 * [uMap](https://umap.openstreetmap.fr/en/)
+* [Sickbeard](http://sickbeard.com/)
+* [CouchPotato](https://couchpota.to/)
+* [Headphones](https://github.com/rembo10/headphones)
+* [Sabnzbd](http://sabnzbd.org/)
+* [MediaCrush](https://mediacru.sh/)
+

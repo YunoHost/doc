@@ -23,6 +23,7 @@
 * [DNS - Système de nom de domaine](/dns_fr)
     * [Configuration du DNS chez son registar](/dns_config_fr)
     * [Avec OVH](/OVH_fr)
+    * [Accéder à son domaine depuis le réseau local](/dns_reseau_local_fr)
 * [Administration web](/admin_fr)
     * [Connexion à son serveur en ligne de commande avec SSH](/ssh_fr)
     * [Administration en ligne de commande avec la Moulinette](/moulinette_fr)

@@ -1,4 +1,3 @@
 #Feuille de route
 
-<span class="glyphicon glyphicon-arrow-down"></span>
-Disponible en anglais
+Disponible en [anglais](/roadmap_en).

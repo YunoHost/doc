@@ -13,3 +13,5 @@ Vous pouvez utiliser un client XMPP lourd comme [Pidgin](http://pidgin.im/), [Ga
 Voici la liste des clients XMPP : https://fr.wikipedia.org/wiki/Liste_de_clients_XMPP
 
 Vous aurez besoin de votre JID (correspondant à votre adresse mail principale) et de votre mot de passe.
+
+<img src="https://yunohost.org/images/Pidgin-add-acount.png" width=500>

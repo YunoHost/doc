@@ -20,6 +20,8 @@ Tu auras besoin de ta principale adresse mail et de ton mot de passe.
 ####Thunderbird
 L'utilitaire de détection automatique de Thunderbird ne marche pas correctement avec YunoHost. Il faut donc passer en configuration manuelle.
 
+<img src="https://yunohost.org/images/Thunderbird-conf.png" width=900>
+
 ###Migration
 
 Tes courriels sont enregistrés dans le fichier /var/mail/.

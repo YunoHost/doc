@@ -14,7 +14,7 @@
 * Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
 * L’**image YunoHost pour Raspberry Pi**, disponible ici (à **dézipper**) :
 
-    [http://build.yunohost.org/yunohost-raspberrypi-2014-06-12.zip](http://build.yunohost.org/yunohost-raspberrypi-2014-06-12.zip)
+    [http://build.yunohost.org/yunohost-raspberrypi-2014-09-17.zip](http://build.yunohost.org/yunohost-raspberrypi-2014-09-17.zip)
 
 
 ---
@@ -31,7 +31,7 @@
 
 ### Recommandé après la post-installation
 
-* Se connecter en ssh : **root@mon-serveur.org** (mot de passe : **yunohost**)
+* Se connecter en ssh : **root@yunohost.local** (mot de passe : **yunohost**)
 * Changer le mot de passe root : ```passwd root```
 * Mettre à jour le système d’exploitation : ```apt-get update && apt-get dist-upgrade```
 
