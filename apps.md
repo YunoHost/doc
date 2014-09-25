@@ -92,7 +92,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | proFTPd | beudbeud | <div class="inprogress"/> | https://github.com/abeudin/proftpd_ynh.git |
 | Lychee | titoko | <div class="inprogress"/> | https://github.com/titoko/lychee_ynh.git |
 | Baïkal | julien | <div class="inprogress"/> | https://github.com/julienmalik/baikal_ynh |
-| FreshRSS | plopoyop | <div class="inprogress"/> | https://github.com/plopoyop/freshrss_ynh |
+| FreshRSS | plopoyop | <div class="ready"/> | https://github.com/plopoyop/freshrss_ynh |
 | Yourls | courgette | <div class="ready"/> | https://github.com/courgette/yourls_ynh |
 | OpenSondage | zamentur | <div class="ready"/> | https://github.com/zamentur/opensondage_ynh |
 | Strut | zamentur | <div class="ready"/> | https://github.com/zamentur/strut_ynh |
