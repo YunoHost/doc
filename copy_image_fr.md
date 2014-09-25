@@ -37,7 +37,7 @@ La commande peut prendre quelques minutes, puis votre carte SD sera prête à ê
 ## Étendre la partition root <small>(facultatif)</small>
 
 Par défaut, la partition root de votre carte SD est très petite.   
-Vous pouvez la redimensionner en utilisant un logiciel comme `resize2fs` (ligne de commande) ou `Gparted` (interface graphique).
+Vous pouvez la redimensionner avec un logiciel comme `resize2fs` (ligne de commande) ou `Gparted` (interface graphique) en étendant la partition ext4 au maximum de façon à utiliser tout l'espace non-alloué.
 
 <img src="https://yunohost.org/images/gparted.jpg" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
