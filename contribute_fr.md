@@ -96,15 +96,15 @@ Seedez (partagez) avec le système de Torrent les images de YunoHost : [live](ht
 
 <div class="row">
 <div class="col col-md-3 lead">
-<span class="glyphicon glyphicon-euro"></span>&nbsp;&nbsp; Donner
+<span class="glyphicon glyphicon-euro"></span>&nbsp;&nbsp; Donnez
 </div>
 <div class="col col-md-8" markdown="1">
-Vous pouvez maintenant nous envoyer des Bitcoins via l'adresse `1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf`
+Vous pouvez maintenant nous envoyer des Bitcoins à l'adresse `1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf`
 </br>
 <a href="bitcoin:1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf?label=Yunohost"><img src="https://yunohost.org/images/bitcoin.png" /></a>
 <br>
 <br>
-ou utiliser Flattr : <a href="http://flattr.com/thing/3164470/YunoHost-web-site" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+ou utiliser Flattr : <a href="http://flattr.com/thing/3164470/YunoHost-web-site" target="_blank"><img src="https://yunohost.org/images/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
 </div>
 </div>
 
