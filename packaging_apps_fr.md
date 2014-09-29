@@ -7,7 +7,7 @@ Un paquet YunoHost ressemble à [ça](https://github.com/Kloadut/roundcube_ynh),
 
 * un fichier JSON `manifest.json`
 * un répertoire `scripts`, qui contient les scripts `install`, `remove` et `upgrade`
-* d'autres répertoires optionnels, comme `sources` ou `conf` si tu en as besoin
+* d'autres répertoires optionnels, comme `sources` ou `conf` si nécessaire
 
 
 ### Manifeste
@@ -215,5 +215,5 @@ yunohost app install https://github.com/auteur/mon_paquet.git
 ```
 
 
-### Ajouter l'application à la liste officiel
-Si vous le souhaitez vous pouvez proposer l'inclusion de l'application dans les applications officielles. Pour se faire il faut utiliser le bouton "New App Request" sur http://app.yunohost.org.
+### Ajouter l'application à la liste officielle
+Si vous le souhaitez vous pouvez proposer l'inclusion de l'application dans les applications officielles. Pour ce faire, il faut utiliser le bouton "New App Request" sur http://app.yunohost.org.
