@@ -1,9 +1,12 @@
 #Certificate
 
-Certificate are used to certify that your server is the good one, not a falsified one.
+Certificates are used to certify that your server is the genuine one and not a falsified one.
 
-YunoHost provide a self-signed certificate.
+YunoHost provides a self-signed certificate.
 
-On your clients software, like your web browser, your heavy email client, your heavy XMPP client you will need to add an exception for that self-signed certificate.
+Client software (web browser, email client, XMPP client, etc) typically requires you to manually add an exception for that self-signed certificate.
 
-You can have a certificate signed by an autority.
+You can have a certificate signed by an authority, in which case you must upload the appropriate certificate KEY and CRT files to the following files:
+
+* /etc/yunohost/certs/YourCertifiedDomain/crt.pem
+* /etc/yunohost/certs/YourCertifiedDomain/key.pem
