@@ -13,3 +13,4 @@
 * [DNS understanding](/dns)
 * [What is YunoHost](/whatsyunohost)
 * [Unlock IP in iptables](/fail2ban)
+* [SSL certificate installation](/certificate)
