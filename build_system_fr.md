@@ -48,15 +48,15 @@ push-packages-test -p nom_du_paquet
 
  il est possible d'utiliser l'option -v pour définir la version du paquet
 
-Le script va récuperer les sources du paquet daily puis vous ouvrir le changelog pour y definir la verion mais aussi le changelog
+Le script va récuperer les sources du paquet daily puis il va ouvrir le changelog pour y definir la version mais aussi le changelog
 
-Après avoir rempli le changelog le paquet va etre ajouté la liste des jobs de rebuildd pour etre ajouté au repo test. 
+Après avoir rempli le changelog le paquet va être ajouté la liste des jobs de rebuildd pour etre ajouté au repo test. 
 Attention le nom de version ne doit pas contenir daily sinon le paquet sera ajouté au repo daily.
 
 
 ### Passage de test à stable
 
-le passage du paquet en stable est realisé avec la commande : 
+le passage du paquet en stable est réalisé avec la commande : 
 ```bash
 push-package-stable -p nom_du_paquet
 ```
