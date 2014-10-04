@@ -67,7 +67,8 @@ Le n'est pas rebuildé il est récupéré du repo test est ajouté au repo stabl
 
 ### Suppression d'un paquet
 
-```bashreprepro -V -b /var/www/repo.yunohost.org/nom_du_repo/ remove megusta nom_du_paquet
+```bash
+reprepro -V -b /var/www/repo.yunohost.org/nom_du_repo/ remove megusta nom_du_paquet
 ```
 
 ### Ajout d'un paquet debian dans un repo
