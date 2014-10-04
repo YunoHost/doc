@@ -1,13 +1,13 @@
 #Radicale
 ## CalDAV Sync
-URL : https://domaine.fr/patch/login/calendar.ics/
+URL : https://example.org/patch/login/calendar.ics/
 
-Exemple : https://plop.nohost.me/sync/beudbeud/calendar.ics/
+Exemple : https://plop.example.org/sync/beudbeud/calendar.ics/
 
 ## CardDAV Sync
-URL : https://domaine.fr/patch/login/AddressBook.vcf/
+URL : https://example.org/patch/login/AddressBook.vcf/
 
-Exemple : https://plop.nohost.me/sync/beudbeud/AddressBook.vcf/
+Exemple : https://plop.example.org/sync/beudbeud/AddressBook.vcf/
 
 ##Davdroid
 https://github.com/abeudin/radicale_ynh/pull/4
