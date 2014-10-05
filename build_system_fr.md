@@ -20,11 +20,11 @@ Pour les paquets non yunohost (exemple python-bottle) le paquet ne passe pas par
 ### Daily build
 
 Un cron défini dans l'utilisateur pbuilder se lance tous les jours à 01:00. Ce script va mettre à jours le repo git de packages et des submodule (ssowat, moulinette, moulinette-yunohost, adminjs). 
-Une fois les sources mise à jour le script va rebuilder les paquets qui on était mise à jour la veille.
+Une fois les sources mise à jour le script va rebuilder les paquets qui ont été mis à jour la veille.
 
-Pour se faire un va créé des paquets sources qui va ensuite mettre dans le répertoire /var/www/repo.yunohost.org/daily/incomming
+Pour se faire on va créé des paquets sources qui va ensuite mettre dans le répertoire /var/www/repo.yunohost.org/daily/incomming
 
-Puis lancé l'ajout de ces fichier source au repo se qui va automatiquement lancé un job dans rebuildd (voir configuration du repo daily dans /var/www/repo.yunohost.org/daily/conf/distribustion)
+Puis lancer l'ajout de ces fichier source au repo se qui va automatiquement lancé un job dans rebuildd (voir configuration du repo daily dans /var/www/repo.yunohost.org/daily/conf/distribustion)
 
 Quand les paquets sont terminé d'être buildé, ils sont ajouté au repo daily
 
@@ -46,7 +46,7 @@ Le passage de daily à test se fait avec la commande :
 push-packages-test -p nom_du_paquet
 ```
 
- il est possible d'utiliser l'option -v pour définir la version du paquet
+Il est possible d'utiliser l'option -v pour définir la version du paquet
 
 Le script va récuperer les sources du paquet daily puis il va ouvrir le changelog pour y définir la version mais aussi le changelog
 
