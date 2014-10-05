@@ -22,9 +22,9 @@ Pour les paquets non yunohost (exemple python-bottle) le paquet ne passe pas par
 Un cron défini dans l'utilisateur pbuilder se lance tous les jours à 01:00. Ce script va mettre à jours le repo git de packages et des submodule (ssowat, moulinette, moulinette-yunohost, adminjs). 
 Une fois les sources mise à jour le script va rebuilder les paquets qui ont été mis à jour la veille.
 
-Pour se faire on va créé des paquets sources qui va ensuite mettre dans le répertoire /var/www/repo.yunohost.org/daily/incomming
+Pour ce faire on va créé des paquets sources qui va ensuite mettre dans le répertoire /var/www/repo.yunohost.org/daily/incomming
 
-Puis lancer l'ajout de ces fichier source au repo se qui va automatiquement lancé un job dans rebuildd (voir configuration du repo daily dans /var/www/repo.yunohost.org/daily/conf/distribustion)
+Puis lancer l'ajout de ces fichier source au repo ce qui va automatiquement lancé un job dans rebuildd (voir configuration du repo daily dans /var/www/repo.yunohost.org/daily/conf/distribustion)
 
 Quand les paquets sont terminé d'être buildé, ils sont ajouté au repo daily
 
