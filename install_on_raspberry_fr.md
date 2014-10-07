@@ -16,6 +16,15 @@
 
     [http://build.yunohost.org/yunohost-raspberrypi-2014-09-17.zip](http://build.yunohost.org/yunohost-raspberrypi-2014-09-17.zip)
 
+    <div class="alert alert-warning">
+    <b>Attention :</b> la configuration réseau par défaut configure l'interface nommée *eth0* en DHCP. Il se peut que vous ayez à changer cette configuration pour que votre Raspberry Pi puisse se connecter à votre réseau si l'interface porte un autre nom. Pour se faire :
+    <ul>
+    <li>connectez-vous localement à votre Raspberry Pi</li>
+    <li>repérez le nom de votre interface réseau : `$ ip link` (*lo* correspondant à l'interface de rebouclage, cela peut-être *eth1* par exemple)</li>
+    <li>éditez le fichier de configuration `/etc/network/interfaces` et remplacez *eth0* par le nom de votre interface</li>
+    <li>redémarrez le service réseau : `$ service networking restart`</li>
+    </ul>
+    </div>
 
 ---
 
