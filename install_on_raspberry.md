@@ -16,6 +16,16 @@
 
     [http://build.yunohost.org/yunohost-raspberrypi-2014-09-17.zip](http://build.yunohost.org/yunohost-raspberrypi-2014-09-17.zip)
 
+    <div class="alert alert-warning">
+    <b>Warning:</b> the network device *eth0* is configured to connect by default to DHCP in the system configuration. You could have to change this configuration in order to connect to your local network from your Raspberry Pi if its device has a different name. For that:
+    <ul>
+    <li>connect locally to your Raspberry Pi</li>
+    <li>retrieve your network device's name: `$ ip link` (*lo* corresponds to the loopback device, so it can just be *eth1* for example)</li>
+    <li>edit the configuration file `/etc/network/interfaces` and replace *eth0* by your network device's name</li>
+    <li>restart networking service: `$ service networking restart`</li>
+    </ul>
+    </div>
+
 ---
 
 ## Installation steps
