@@ -154,4 +154,5 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Headphones](https://github.com/rembo10/headphones)
 * [Sabnzbd](http://sabnzbd.org/)
 * [MediaCrush](https://mediacru.sh/)
+* [Lutim](https://github.com/ldidry/lutim)
 
