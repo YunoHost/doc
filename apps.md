@@ -155,4 +155,5 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Sabnzbd](http://sabnzbd.org/)
 * [MediaCrush](https://mediacru.sh/)
 * [Lutim](https://github.com/ldidry/lutim)
+* [jsFiddle](http://jsbin.com/help/2-second-setup)
 
