@@ -39,6 +39,7 @@
         * [Connect to your server with SSH](/ssh)
         * [Command line administration](/moulinette)
         * [Certificates](/certificate)
+            * [Regenerate certificate](/regenerate_certificate_en)
         * [YunoHost Tor Hidden Servicer](/torhiddenservice)
 
     * [User guide](/userdoc)
