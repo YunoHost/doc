@@ -56,7 +56,7 @@ Le script va récuperer les sources du paquet dans `daily` puis ouvrir le change
 **Attention :** le nom de version ne doit pas contenir `daily` sinon le paquet sera ajouté au repo `daily`.
 
 
-### Passage de test à stable
+### Passage de `test` à `stable`
 
 ```bash
 push-package-stable -p nom_du_paquet
