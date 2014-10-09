@@ -45,6 +45,7 @@
         * [Connexion à son serveur en ligne de commande avec SSH](/ssh_fr)
         * [Administration en ligne de commande avec la Moulinette](/moulinette_fr)
         * [Gestion du certificat](/certificate_fr)
+            * [Régénérer un certificat](/regenerate_certificate_fr)
         * [YunoHost service caché Tor](/torhiddenservice_fr)
         * [Débloquer une IP avec Fail2ban](/fail2ban_fr)
 
