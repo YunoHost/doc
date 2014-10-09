@@ -61,6 +61,8 @@
 
 * [Roadmap](/roadmap)
 
+* [Contributors](contribs)
+
 * [Security](/security)
 
 * [Support](/support_en)
