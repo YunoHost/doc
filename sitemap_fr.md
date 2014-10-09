@@ -6,7 +6,7 @@
 
 * [Documentation](/docs_fr)
 
-    * Essaye YunoHost
+    * Essayer YunoHost
        * [Avec la démo](/try_fr)    
        * [Avec un live usb](/try_at_home_fr)
 
