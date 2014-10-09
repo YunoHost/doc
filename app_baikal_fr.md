@@ -3,7 +3,7 @@
 Baikal est un serveur de calendriers et contacts accessible par les protocoles Caldav et Carddav, autorisant ainsi la synchronisation avec de nombreux clients (Thunderbird + Lightning par exemple).
 
 ### Connexion à l'interface d'admin
-Sur le portail SSO, si on clique sur la tuile "Baikal", on tombe sur une page bien peu conviviale qui explique que le service fonctionne. Pour accéder à l'admin, il faut rajouter /admin. Exemple :
+Sur le portail SSO, si on clique sur la tuile "Baikal", on tombe sur une page bien peu conviviale qui explique que le service fonctionne. Pour accéder à l'admin, il faut rajouter `/admin`. Par exemple :
 
 https://domain.org/baikal/admin
 
