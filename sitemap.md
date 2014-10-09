@@ -63,7 +63,7 @@
 
 * [Security](/security)
 
-* [Mutual aid - support](/support_en)
+* [Support](/support_en)
 
 * [Blog](http://news.yunohost.org/)
 
