@@ -72,7 +72,7 @@
 
 * [Sécurité](/security_fr)
 
-* [Support](/support_fr)
+* [Entraide - support](/support_fr)
 
 * [Blog](http://news.yunohost.org/)
 
