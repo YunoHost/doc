@@ -24,6 +24,7 @@ rm $finalpath/{crt.pem,key.pem,openssl.cnf}
 cp $ssldir/openssl.cnf $finalpath/
 
 # Change yunohost.org with your domain in the configuration
+# DO NOT FORGET TO REPLACE example.org !
 sed -i "s/yunohost.org/example.org/g" $finalpath/openssl.cnf
 
 # Generate certificate and key
