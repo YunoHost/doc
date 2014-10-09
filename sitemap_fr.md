@@ -24,7 +24,7 @@
             * [Sur un conteneur DigitalOcean](/install_on_digitalocean_fr)
             * [Sur un serveur dédié](/install_on_dedicated_server_fr)
             * Étapes d’installation
-               * [Grave ou copie l’ISO](/burn_or_copy_iso_fr)
+               * [Graver ou copier l’ISO](/burn_or_copy_iso_fr)
                * [Démarrage et installation graphique](/boot_and_graphical_install_fr)
                * [Copier l’image YunoHost sur une carte SD](/copy_image_fr)
                * [Installation manuelle](/install_manually_fr)
