@@ -1,6 +1,6 @@
 # Support - Entraide
 
-YunoHost profite d'une entraide assurée par la communauté.
+L'entraide autour de YunoHost est assurée par la communauté.
 
 * Le moyen le plus **efficace et rapide** d'obtenir des réponses reste le salon de discussion instantané, accessible en bas à droite de cette page, ou via n'importe quel client de messagerie **compatible XMPP** (tel que [Pidgin](https://pidgin.im/)) à l'adresse suivante :
 
