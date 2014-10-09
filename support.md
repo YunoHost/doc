@@ -1,4 +1,4 @@
-# Support - Mutual aid
+# Support
 
 The YunoHost support is provided by the community members.
 
