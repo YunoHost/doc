@@ -1,77 +1,75 @@
 #Création de paquet Debian
 
-## Architecture du sytème de build
-
-Le système se compose de rebuildd qui est un front-end pour pbuilder, des chroot pbuilder pour i386 et amd64 et reprepro pour le sytème repo debian
+## Architecture
+Le système se compose de rebuildd qui est un front-end pour `pbuilder`, des chroot pbuilder pour i386 et amd64 et de `reprepro` pour le système de repo debian.
 
 ## Workflow
 
-### Pour les paquets YunoHost
+#### Paquets YunoHost
 
-Il existe trois repo (daily, test et stable), les paquets sont tous disponible dans la dernière version du git dans le repo daily. Le repo test permet de mettre en place une nouvelle version d'un paquet qui sera ensuite testé. Une fois le paquet testé et validé il passera dans le repo stable.
+Il existe trois repo (`daily`, `test` et `stable`), les paquets du repo `daily` correspondent à la dernière version du git. Le repo `test` permet de mettre en place une nouvelle version d'un paquet qui sera ensuite testé. Une fois le paquet testé et validé, il est passé manuellement dans le repo  `stable`.
 
-### Pour les paquet non YunoHost
+#### Paquets non YunoHost
 
-Pour les paquets non yunohost (exemple python-bottle) le paquet ne passe pas par le repo daily (TODO)
+Pour les paquets « non-YunoHost » (par exemple `python-bottle`) le paquet ne passe pas par le repo daily, il doit être buildé différement et placé manuellement avec reprepro (TODO)
 
 
 ## Build des paquets
 
-### Daily build
+#### Daily build
 
-Un cron défini dans l'utilisateur pbuilder se lance tous les jours à 01:00. Ce script va mettre à jours le repo git de packages et des submodule (ssowat, moulinette, moulinette-yunohost, adminjs). 
-Une fois les sources mise à jour le script va rebuilder les paquets qui ont été mis à jour la veille.
+Un cron défini pour l'utilisateur `pbuilder` se lance **tous les jours à 01:00**. Ce script va mettre à jour le repo git `packages` et ses submodules (`ssowat`, `moulinette`, `moulinette-yunohost` et `admin_js`). 
+Une fois les sources mises à jour, le script va rebuilder les paquets qui ont été mis à jour la veille.
 
-Pour ce faire on va créer des paquets sources qui va ensuite mettre dans le répertoire /var/www/repo.yunohost.org/daily/incomming
+Pour ce faire on va créer des paquets sources qui vont ensuite être mis dans le répertoire `/var/www/repo.yunohost.org/daily/incomming`.
 
-Puis lancer l'ajout de ces fichier source au repo ce qui va automatiquement lancé un job dans rebuildd (voir configuration du repo daily dans /var/www/repo.yunohost.org/daily/conf/distribustion)
+Lancer ensuite l'ajout de ces fichiers source au repo, ce lancera automatiquement un job dans `rebuildd` (voir configuration du repo daily dans `/var/www/repo.yunohost.org/daily/conf/distribustion`).
 
-Quand les paquets sont terminé d'être buildé, ils sont ajouté au repo daily
+Une fois les paquets buildés, ils sont ajoutés au repo `daily`.
 
-### Rebuild d'un paquet YunoHost
 
-Il est possible de relancer manuellement le rebuild d'un paquet, pour se faire il faut lancer la commande :
+#### (Re)build d'un paquet YunoHost
+
+Il est possible de relancer manuellement le build d'un paquet.
+
 ```bash
 daily_build -p nom_du_paquet
 ```
 
-## Build d'un paquet non YunoHost
+#### Build d'un paquet non YunoHost
 
 TODO
 
-### Passage de daily à test
+### Passage de `daily` à `test`
 
-Le passage de daily à test se fait avec la commande : 
 ```bash
 push-packages-test -p nom_du_paquet
 ```
 
-Il est possible d'utiliser l'option -v pour définir la version du paquet
+Il est possible d'utiliser l'option `-v` pour définir manuellement la version du paquet.
 
-Le script va récuperer les sources du paquet daily puis il va ouvrir le changelog pour y définir la version mais aussi le changelog
+Le script va récuperer les sources du paquet dans `daily` puis ouvrir le changelog pour y définir la version et la liste des changements. Le build paquet sera ensuite ajouté à la liste des jobs de rebuildd qui le passera dans le repo `test`.
 
-Après avoir rempli le changelog le paquet va être ajouté la liste des jobs de rebuildd pour être ajouté au repo test. 
-Attention le nom de version ne doit pas contenir daily sinon le paquet sera ajouté au repo daily.
+**Attention :** le nom de version ne doit pas contenir `daily` sinon le paquet sera ajouté au repo `daily`.
 
 
 ### Passage de test à stable
 
-Le passage du paquet en stable est réalisé avec la commande : 
 ```bash
 push-package-stable -p nom_du_paquet
 ```
 
-Le n'est pas rebuildé il est récupéré du repo test est ajouté au repo stable
+Cette commande passe simplement le paquet du repo `test` à `stable`, sans rebuild.
 
-## Gestion repo
 
-### Suppression d'un paquet
+### Gestion du repo avec `reprepro`
 
+* Suppression d'un paquet
 ```bash
 reprepro -V -b /var/www/repo.yunohost.org/nom_du_repo/ remove megusta nom_du_paquet
 ```
 
-### Ajout d'un paquet debian dans un repo
+* Ajout d'un paquet debian dans un repo
 ```bash
 reprepro -V -b /var/www/repo.yunohost.org/nom_du_repo/ includedeb megusta nom_du_paquet.deb
 ```
