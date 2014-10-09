@@ -23,3 +23,5 @@ _xmpp-server._tcp 14400 IN SRV 0 5 5269 domain.tld.
 ```
 
 <div class="alert alert-warning"><b>Warning :</b> Replace domain.tld with your own domain, and update IP sample values with your server IP</div>
+
+<div class="alert alert-warning"><b>Warning :</b> <b>@</b> is the default domain name currently defined, some registrar (like OVH) does not accept it, so replace @ by your domain name (domain.tld)</div>
