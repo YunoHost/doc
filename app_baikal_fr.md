@@ -7,7 +7,7 @@ Sur le portail SSO, si on clique sur la tuile "Baikal", on tombe sur une page bi
 
 https://domain.org/baikal/admin
 
-Le nom d'utilisateur a spécifier est "admin" suivi du mot de passe de l'utilisateur qui a été indiqué comme administrateur lors de l'installation de Baikal.
+Le nom d'utilisateur a spécifier est "admin" suivi du mot de passe spécifique qui a été choisi lors de l'installation de Baikal.
 
 ### Connexion de Thunderbird + Lightning
 
