@@ -3,6 +3,8 @@
 ## Architecture
 Le système se compose de rebuildd qui est un front-end pour `pbuilder`, des chroot pbuilder pour i386 et amd64 et de `reprepro` pour le système de repo debian.
 
+---
+
 ## Workflow
 
 #### Paquets YunoHost
@@ -13,6 +15,7 @@ Il existe trois repo (`daily`, `test` et `stable`), les paquets du repo `daily` 
 
 Pour les paquets « non-YunoHost » (par exemple `python-bottle`) le paquet ne passe pas par le repo daily, il doit être buildé différement et placé manuellement avec reprepro (TODO)
 
+---
 
 ## Build des paquets
 
