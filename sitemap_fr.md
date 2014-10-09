@@ -70,6 +70,8 @@
 
 * [Feuille de route](/roadmap_fr)
 
+* [Contributeurs](contribs)
+
 * [Sécurité](/security_fr)
 
 * [Entraide - support](/support_fr)
