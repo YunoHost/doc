@@ -1,4 +1,4 @@
-# Support
+# Support - Mutual aid
 
 The YunoHost support is provided by the community members.
 
@@ -14,7 +14,7 @@ The YunoHost support is provided by the community members.
 
 ---
 
-* However, if you want to write specificaly to the Yunohost team, do not hesitate to send us an email. Please note that **we do not provide any support by mail**.
+* However, if you want to write specificaly to the Yunohost team, do not hesitate to send us an email. Please note that **we do not provide any support by email**.
 
     **[yunohost@yunohost.org](mailto:yunohost@yunohost.org)**
 
