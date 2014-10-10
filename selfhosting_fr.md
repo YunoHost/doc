@@ -27,6 +27,7 @@ Si vous vous servez du système de [courrier électronique](/email_fr), et que v
 #### Autres projets d’auto-hébergement
 * [ArkOS](http://arkos.io/)
 * [Cozy](http://cozy.io/)
+* [Host@home](http://yeuxdelibad.net/Programmation/Hostathome.html)
 * [Sovereign](https://github.com/al3x/sovereign)
 * [Sandstorm](https://sandstorm.io/)
 * [FreedomBox](https://fr.wikipedia.org/wiki/FreedomBox)
