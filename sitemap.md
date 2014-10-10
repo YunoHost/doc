@@ -11,6 +11,7 @@
        * [With live usb](/try_at_home)
 
     * [Administrator guide](/admindoc)
+        * [Self-hosting](/selfhosting_en)
         * [Hardware compatible](/hardware)
         * [Installation guide](/install)
             * [On a Raspberry Pi](/install_on_raspberry)
