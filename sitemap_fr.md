@@ -50,6 +50,7 @@
         * [Débloquer une IP avec Fail2ban](/fail2ban_fr)
 
     * [Guide de l'utilisateur](/userdoc_fr)
+        * [Interface utilisateur](user_interface)
         * [Configurer un client email](/email_fr)
         * [Utiliser la messagerie instantanée XMPP](/XMPP_fr)
         * [Applications](/apps_fr)        
