@@ -31,4 +31,10 @@
 
 ---
 
+## See also
+* **Creation of YunoHost images for Cubieboard 1 and 2 with scripts:**
+https://github.com/M5oul/Yunocubian
+
+---
+
 ***If you need help during one of these steps, do not hesitate to use [our support tools](/support).***
