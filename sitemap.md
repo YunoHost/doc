@@ -44,7 +44,8 @@
         * [YunoHost Tor Hidden Servicer](/torhiddenservice)
 
     * [User guide](/userdoc)
-        * [Configure a mail client](/email)
+        * [User interface](user_interface)
+        * [Configure an email client](/email)
         * [Instant messaging usage](/XMPP)
         * [Applications](/apps)
            * [Transmission](/app_transmission_en)
