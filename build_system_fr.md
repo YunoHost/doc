@@ -1,7 +1,7 @@
 #Création de paquet Debian
 
 ## Architecture
-Le système se compose de rebuildd qui est un front-end pour `pbuilder`, des chroot pbuilder pour i386 et amd64 et de `reprepro` pour le système de repo debian.
+Le système se compose de rebuildd qui est un front-end pour `pbuilder`, des chroot pbuilder pour i386, amd64, armhf et de `reprepro` pour le système de repo debian.
 
 ---
 
@@ -13,7 +13,7 @@ Il existe trois repo (`daily`, `test` et `stable`), les paquets du repo `daily` 
 
 #### Paquets non YunoHost
 
-Pour les paquets « non-YunoHost » (par exemple `python-bottle`) le paquet ne passe pas par le repo daily, il doit être buildé différement et placé manuellement avec reprepro (TODO)
+Pour les paquets « non-YunoHost » (par exemple `python-bottle`) le paquet ne passe pas par le repo daily, une fois le les testes effectué sur ce paquet il seront envoyé dans le repo backport
 
 ---
 
@@ -41,7 +41,7 @@ daily_build -p nom_du_paquet
 
 #### Build d'un paquet non YunoHost
 
-TODO
+build_megusta -p path_du_paquet
 
 ### Passage de `daily` à `test`
 
