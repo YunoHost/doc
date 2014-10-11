@@ -10,7 +10,7 @@ Le système se compose de rebuildd qui est un front-end pour `pbuilder`, des chr
 #### Paquets YunoHost
 
 Il existe trois repo (`daily`, `test` et `stable`), les paquets du repo `daily` correspondent à la dernière version du git. Le repo `test` permet de mettre en place une nouvelle version d'un paquet qui sera ensuite testé. Une fois le paquet testé et validé, il est passé manuellement dans le repo  `stable`.
-http://maniatux.fr/index.php?article521/retour-a-caldav-carddav-avec-yunohost
+
 #### Paquets non YunoHost
 
 Pour les paquets « non-YunoHost » (par exemple `python-bottle`) le paquet ne passe pas par le repo `daily`, une fois les tests effectués sur ce paquet, ils devront être envoyés manuellement dans le repo `backport`.
