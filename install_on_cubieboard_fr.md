@@ -26,4 +26,10 @@
 
 ---
 
+## Voir aussi
+* **Scripts de création d’image YunoHost pour Cubieboard 1 et 2 :**
+https://github.com/M5oul/Yunocubian
+
+---
+
 ***Si vous avez besoin d'aide lors de ces étapes, n'hésitez pas à utiliser les différents [moyens de support](/support_fr).***
