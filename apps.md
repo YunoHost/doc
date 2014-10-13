@@ -118,6 +118,8 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | Couchpotato | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/couchpotato_ynh |
 | Sabnzbd | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sabnzbd_ynh |
 | Plexmediaserver | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/plexmediaserver_ynh |
+| BTSync | tifred | <div class="inprogress"/> | https://github.com/drfred1981/btsync_ynh |
+| SCM-Manager | tifred | <div class="inprogress"/> | https://github.com/drfred1981/scm-manager_ynh |
 
 ### Wishlist
 
