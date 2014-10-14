@@ -41,7 +41,8 @@
 ### Recommandé après la post-installation
 
 * Se connecter en ssh : **root@yunohost.local** (mot de passe : **yunohost**)
-* Changer le mot de passe root : ```passwd root```
+* Changer le mot de passe root : ```passwd root``` ou utilisez l’[authentification SSH par clé](security_fr)
+
 * Mettre à jour le système d’exploitation : ```apt-get update && apt-get dist-upgrade && rpi-update```
 
 ---
