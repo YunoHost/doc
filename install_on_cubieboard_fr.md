@@ -6,13 +6,11 @@
 <img src="https://yunohost.org/images/micro-sd-card.jpg">
 
 * Une Cubieboard 1, 2 ou une CubieTruck
-* Une carte micro-SD de capacité minimale de **4GB** et vitesse **class10** fortement recommandée
+* Une carte micro-SD de capacité minimale de **8GB** et vitesse **class10** fortement recommandée
 * Un autre ordinateur pour parcourir ce guide et accéder à votre Cubieboard
 * Un écran et un clavier sont recommandés pour pouvoir contrôler votre Cubieboard si un problème apparaît
 * Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
-* Une image Debian 7 pour Cubieboard compatible avec YunoHost :
-    * [Cubian](http://cubian.org/)
-    * [Cubieez](http://www.cubieforums.com/index.php?topic=442.0)
+* L’**image YunoHost pour Cubieboard**, disponible ici (à **dézipper**) :
 
 ## Étapes d'installation
 
@@ -20,15 +18,23 @@
 
 <a class="btn btn-lg btn-default" href="/plug_and_boot_fr">2. Brancher & démarrer</a>
 
-<a class="btn btn-lg btn-default" href="/install_manually_fr">3. Installer manuellement</a>
-
 <a class="btn btn-lg btn-default" href="/postinstall_fr">4. Post-installation</a>
 
 ---
 
-## Voir aussi
-* **Scripts de création d’image YunoHost pour Cubieboard 1 et 2 :**
-https://github.com/M5oul/Yunocubian
+### Recommandé après la post-installation
+
+* Se connecter en [SSH](ssh_fr) : **root@exemple.tld** (mot de passe : **yunohost**)
+* Changer le mot de passe root : ```passwd root```
+* Mettre à jour le système d’exploitation : ```apt-get update && apt-get dist-upgrade && cubian-update```
+
+---
+
+## Créer une image YunoHost pour Cubieboard 1 et 2
+* **[Scripts pour Cubian](https://github.com/M5oul/Yunocubian)**
+* Une image Debian 7 pour Cubieboard compatible avec YunoHost :
+    * [Cubian](http://cubian.org/)
+    * [Cubieez](http://www.cubieforums.com/index.php?topic=442.0)
 
 ---
 
