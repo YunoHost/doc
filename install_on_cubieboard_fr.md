@@ -12,7 +12,7 @@
 * Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
 * L’**image YunoHost pour Cubieboard**, disponible ici (à **dézipper**) :
 
-## Étapes d'installation
+## Étapes d’installation
 
 <a class="btn btn-lg btn-default" href="/copy_image_fr">1. Copier l'image sur une carte SD</a>
 
@@ -22,7 +22,7 @@
 
 ---
 
-### Recommandé après la post-installation
+## Recommandé après la post-installation
 
 * Se connecter en [SSH](ssh_fr) : **root@exemple.tld** (mot de passe : **yunohost**)
 * Changer le mot de passe root : ```passwd root``` ou utilisez l’[authentification SSH par clé](security_fr)
@@ -30,7 +30,7 @@
 
 ---
 
-## Créer une image YunoHost pour Cubieboard 1 et 2
+### Créer une image YunoHost pour Cubieboard 1 et 2
 * **[Scripts pour Cubian](https://github.com/M5oul/Yunocubian)**
 * Une image Debian 7 pour Cubieboard compatible avec YunoHost :
     * [Cubian](http://cubian.org/)
