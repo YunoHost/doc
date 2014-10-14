@@ -42,7 +42,7 @@
 
 * Se connecter en ssh : **root@yunohost.local** (mot de passe : **yunohost**)
 * Changer le mot de passe root : ```passwd root```
-* Mettre à jour le système d’exploitation : ```apt-get update && apt-get dist-upgrade```
+* Mettre à jour le système d’exploitation : ```apt-get update && apt-get dist-upgrade && rpi-update```
 
 ---
 ***Si vous avez besoin d'aide lors de ces étapes, n'hésitez pas à utiliser les différents [moyens de support](/support_fr).***
