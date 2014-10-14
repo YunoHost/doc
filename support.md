@@ -8,9 +8,9 @@ The YunoHost support is provided by the community members.
 
 ---
 
-* You may also want to visit the **Frequently Asked Question** discussion forum:
+* You may also want to visit the **discussion forum***:
 
-    **[ask.yunohost.org](https://ask.yunohost.org/)**
+    **[forum.yunohost.org](https://forum.yunohost.org/)**
 
 ---
 
