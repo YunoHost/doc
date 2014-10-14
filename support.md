@@ -8,7 +8,7 @@ The YunoHost support is provided by the community members.
 
 ---
 
-* You may also want to visit the **discussion forum***:
+* You may also want to visit the **discussion forum**:
 
     **[forum.yunohost.org](https://forum.yunohost.org/)**
 
