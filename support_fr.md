@@ -8,9 +8,9 @@ L'entraide autour de YunoHost est assurée par la communauté.
 
 ---
 
-* Vous pouvez également vous renseigner et poser vos questions sur **la Foire Aux Question** (en anglais uniquement) :
+* Vous pouvez également vous renseigner et poser vos questions sur **le forum** (en anglais de préférence) :
 
-    **[ask.yunohost.org](https://ask.yunohost.org/)**
+    **[forum.yunohost.org](https://forum.yunohost.org/)**
 
 ---
 
