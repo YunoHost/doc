@@ -26,7 +26,7 @@
 
 ---
 
-### Recommended after post-installation
+## Recommended after post-installation
 
 * Connect via [SSH](ssh): **root@expemple.tld** (password: **yunohost**)
 * Change root password: `passwd root` or use [SSH authentication via key](security)
@@ -34,7 +34,7 @@
 
 ---
 
-## Create a YunoHost image for Cubieboard 1 or 2
+### Create a YunoHost image for Cubieboard 1 or 2
 * **[Scripts for Cubian](https://github.com/M5oul/Yunocubian)**
 * A Cubieboard Debian 7 image compatible with YunoHost:
     * [Cubian](http://cubian.org/)
