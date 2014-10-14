@@ -40,7 +40,7 @@
 
 ### Recommended after post-installation
 
-* Connect via SSH: **root@yunohost.local** (password : **yunohost**)
+* Connect via SSH: **root@yunohost.local** (password: **yunohost**)
 * Change root password: `passwd root`
 * Upgrade system: `apt-get update && apt-get dist-upgrade && rpi-update`
 
