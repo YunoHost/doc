@@ -11,6 +11,7 @@
 * Un écran et un clavier sont recommandés pour pouvoir contrôler votre Cubieboard si un problème apparaît
 * Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
 * L’**image YunoHost pour Cubieboard**, disponible ici (à **dézipper**) :
+  * [Pour Cubieboard 2](http://build.yunohost.org/yunohost-cubieboard-a20-2014-10-14.img.zip)
 
 ## Étapes d’installation
 
