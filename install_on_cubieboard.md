@@ -13,6 +13,7 @@
 * A screen and a keyboard are recommended to control your Cubieboard if a problem occurs
 * A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
 * The **YunoHost Cubieboard image**, available here (to **unzip**):
+  * [For Cubieboard 2](http://build.yunohost.org/yunohost-cubieboard-a20-2014-10-14.img.zip)
 
 ---
 
