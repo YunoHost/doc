@@ -15,6 +15,11 @@ TCP : 22, 25, 53, 80, 443, 465, 993, 5222, 5269, 5290
 #####UPnP
 
 L’UPnP permit opening automatically ports.
+
+In some case, after changing your box configuration (ex: add IPv6, or unlock SMTP ... ) and a reboot. It happens that ports are no onger opened. So you have to reload your firewall configuration :
+
+```sudo yunohost firewall reload```
+
 #####Manual opening ports
 
 In the case that UPnP doesn’t works, manual opening ports are necessary.
