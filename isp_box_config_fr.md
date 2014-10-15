@@ -16,6 +16,10 @@ L’ouverture des ports suivants est nécessaire au fonctionnement des différen
 
 L’UPnP permet d’ouvrir automatiquement les ports. Si ce n'est pas le cas par défaut, vous pouvez l'activer via l'interface d'administration de votre routeur.
 
+Dans certains cas après avoir changé la configuration de votre box (ex: sur Freebox ajout d'IPv6, débloquer le smtp ...) et après l'avoir rebooter. Il se peut que vos ports ne soient plus ouverts. Il faut donc reautorisé ces ports par le firewall:
+
+```sudo yunohost firewall reload```
+
 #### Ouverture manuelle de ports
 
 Dans le cas où l’UPnP ne fonctionne pas l’ouverture manuelle des ports est nécessaire. Encore une fois référez-vous à l'interface d'administration de votre routeur.
