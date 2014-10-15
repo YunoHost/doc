@@ -41,4 +41,4 @@
 * Clean up moulinette API (jerome)
 * Add proper upgrade/remove scripts and comment Debian scripts in packages (beudbeud)
 * Improve documentation, by making it more accessible (Moul)
-* Create YunoHost images based on Cubian for Cubieboards 1 and 2 (Moul)
+* Create YunoHost image based on Cubian for Cubieboard 1 ~~and 2~~ (Moul)
