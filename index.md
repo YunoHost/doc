@@ -195,7 +195,7 @@
 <a class="btn btn-lg btn-block btn-primary" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/whatsyunohost">About YunoHost</a>
 <a class="btn btn-lg btn-block btn-info" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/docs">Documentation</a>
 <a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/contribute">Get involved</a>
-<a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://ask.yunohost.org/" target="_blank">Frequently asked questions</a>
+<a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://forum.yunohost.org/" target="_blank">Frequently asked questions</a>
 <a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="http://news.yunohost.org">Latest news</a>
 </div>
 </div>
@@ -216,14 +216,13 @@
 
 <div class="text-center">
 <h1>Hey! We are humans!<br /><small> If you have questions, problems or if you are just an enthusiast, leave a message on our chatroom by clicking on the button below &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
-</div>
 
 <br />
 <br />
+<a href="http://flattr.com/thing/3164470/YunoHost-web-site" target="_blank"><img src="https://yunohost.org/images/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
 <br />
 <br />
 
-<div class="text-center">
 <!--<img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />-->
 <h5><small>2014 • <a href="https://twitter.com/yunohost" style="color:#999">@YunoHost on Twitter</a>  • <a style="color: #999" href="/sitemap">Sitemap</a> • Datalove <3</small></h5>
 </div>
