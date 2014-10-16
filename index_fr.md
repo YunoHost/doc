@@ -98,7 +98,7 @@
 
 <div class="row">
 <div class="col-md-7">
-<h1>Installez <small>votre serveur simplement, vous avez déjà tout ce qu'il faut à la maison</small></h1>
+<h1>Installez <small>votre serveur simplement, vous avez déjà tout ce qu’il faut à la maison</small></h1>
 <p><br /><a href="/hardware_fr">Voir les prérequis</a></p>
 </div>
 <div class="col-md-4">
@@ -138,7 +138,7 @@
 </div>
 
 <div class="col-md-7 text-right">
-<h1>Profitez <small>de vos applications web, et fabriquez votre coin d'Internet</small></h1>
+<h1>Profitez <small>de vos applications web, et fabriquez votre coin d’Internet</small></h1>
 <p><br /><a href="/apps_fr">Liste des applications disponibles</a></p>
 </div>
 </div>
@@ -188,10 +188,10 @@
   border-radius: 5px; 
   border: 1px solid rgba(0,0,0,0.15);
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
-<a class="btn btn-lg btn-block btn-primary" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/whatsyunohost_fr">Qu'est-ce que YunoHost ?</a>
+<a class="btn btn-lg btn-block btn-primary" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/whatsyunohost_fr">Qu’est-ce que YunoHost ?</a>
 <a class="btn btn-lg btn-block btn-info" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/docs_fr">Documentation</a>
 <a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/contribute_fr">Comment contribuer</a>
-<a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://ask.yunohost.org" target="_blank">Foire aux questions</a>
+<a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://forum.yunohost.org" target="_blank">Foire aux questions</a>
 <a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="http://news.yunohost.org">Dernières nouvelles</a>
 </div>
 </div>
@@ -212,14 +212,14 @@
 
 <div class="text-center">
 <h1>Hey ! Nous sommes des humains !<br /><small> Si vous avez une question, un problème, ou que vous êtes tout simplement intéressé, passez dire "Bonjour" sur notre salon de discussion en cliquant sur le bouton en bas &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
-</div>
 
 <br />
 <br />
+<a href="http://flattr.com/thing/3164470/YunoHost-web-site" target="_blank"><img src="https://yunohost.org/images/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
 <br />
 <br />
 
-<div class="text-center">
+
 <!--<img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />-->
 <h5><small>2014 • <a href="https://twitter.com/yunohost" style="color:#999">@YunoHost on Twitter</a> • <a style="color: #999" href="/sitemap_fr">Plan du site</a> • Datalove <3</small></h5>
 </div>
