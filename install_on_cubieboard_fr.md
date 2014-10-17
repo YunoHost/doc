@@ -17,6 +17,11 @@
 
 <a class="btn btn-lg btn-default" href="/copy_image_fr">1. Copier l'image sur une carte SD</a>
 
+Avant de mettre la carte dans la Cubieboard créer le dossier nginx :
+```bash
+mkdir media/cubieboard/var/log/ngnix
+```
+
 <a class="btn btn-lg btn-default" href="/plug_and_boot_fr">2. Brancher & démarrer</a>
 
 <a class="btn btn-lg btn-default" href="/postinstall_fr">4. Post-installation</a>
