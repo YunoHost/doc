@@ -21,6 +21,11 @@
 
 <a class="btn btn-lg btn-default" href="/copy_image">1. Copy image to the SD card</a>
 
+Before putting SD card on Cubieboard create repository nginx:
+```bash
+mkdir media/cubieboard/var/log/ngnix
+```
+
 <a class="btn btn-lg btn-default" href="/plug_and_boot">2. Plug & boot</a>
 
 <a class="btn btn-lg btn-default" href="/postinstall">4. Post-install</a>
