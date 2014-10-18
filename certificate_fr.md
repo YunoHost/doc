@@ -13,7 +13,7 @@ Cela peut effrayer vos utilisateurs (à juste titre).
 Pour éviter cette confusion, il est possible d'obtenir un certificat signé par une autorité « connue » : **Gandi**, **RapidSSL**, **StartSSL**.    
 Dans ce cas, il s’agira de remplacer le certificat auto-signé par celui qui a été reconnu par une autorité de certification, et vos utilisateurs n’auront plus à passer par cet écran d’avertissement.
 
-### Ajout d'un certificat signé par une autorité
+### Ajout d’un certificat signé par une autorité
 
 Après création du certificat auprès de votre autorité d'enregistrement, vous devez être en possession d'une clé privée, le fichier key et d'un certificat public, le fichier crt.
 > Attention, le fichier key est très sensible, il est strictement personnel et doit être très bien sécurisé.
@@ -21,8 +21,8 @@ Après création du certificat auprès de votre autorité d'enregistrement, vous
 Ces deux fichiers doivent être copiés sur le serveur, si ils ne s'y trouvent pas déjà.
 
 ```bash
-scp -P 22 CERTIFICAT.crt admin@DOMAIN.TLD:ssl.crt
-scp -P 22 CLE.key admin@DOMAIN.TLD:ssl.key
+scp CERTIFICAT.crt admin@DOMAIN.TLD:ssl.crt
+scp CLE.key admin@DOMAIN.TLD:ssl.key
 ```
 
 Depuis Windows, scp est exploitable avec putty, en téléchargeant l'outil [pscp](http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe)
