@@ -9,6 +9,10 @@
 * A DigitalOcean account
 * A **Debian 7.0 x64** droplet with at least **512MB** RAM
 
+    <div class="alert alert-warning">
+    <b>Note :</b> The `root` user **must** have a password properly set. Run `sudo passwd root` to ensure this.
+    </div>
+
 
 ---
 
