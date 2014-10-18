@@ -1,8 +1,6 @@
 #Registar
 
-Here is a list of Registars for domain names by contries:
-
-
+Here is a list of Registrars to book domain names:
 * [OVH](http://ovh.com/)
 * [GoDaddy](https://godaddy.com/)
 * [Gandi](http://gandi.net/)
