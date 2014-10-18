@@ -144,6 +144,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [PHPList](http://www.phplist.com/)
 * [Shleuder](http://schleuder2.nadir.org/)
 * [Diaspora](https://diasporafoundation.org/)
+* [Twister](http://twister.net.co/)
 * [MediaGoblin](http://mediagoblin.org/)
 * [CumulusClips](http://cumulusclips.org/)
 * [RainLoop](http://rainloop.net/)
