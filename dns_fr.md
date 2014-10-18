@@ -37,3 +37,6 @@ Vous pouvez également consulter les documentations spécifiques à ces différe
 
 3. Votre instance YunoHost possède un service DNS, ce qui veut dire qu'il configure automatiquement ses enregistrements DNS, et qu'il est possible de lui en déléguer la gestion. Pour ce faire, vous devez indiquer au **registar** que c'est votre instance YunoHost qui est le serveur DNS de votre nom de domaine en créant un enregistrement glue (souvent appelé **glue record**) pointant vers l'IP de votre instance YunoHost.
 <br><br>**Attention** : Si vous choisissez ce mode de fonctionnement, toutes les configurations seront automatiques, vous disposerez d'une grande flexibilité, mais la perte de votre serveur entraînera potentiellement beaucoup d'ennuis. **Choisissez cette méthode si vous êtes sûr de vous.**
+
+### IP Dynamique
+Si l’IP publique de votre serveur change au cours du temps, suivez ce [tutoriel](https://www.dnsexit.com/Direct.sv?cmd=ipClients).
