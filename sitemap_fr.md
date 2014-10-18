@@ -32,6 +32,7 @@
                * [Post-installation](/postinstall_fr)
                * [Diagnostic du bon fonctionnement du YunoHost](/diagnostic_fr)
         * [DNS - Système de nom de domaine](/dns_fr)
+            * [Bureaux d’enregistrements de nom de domaine - Registrar](registar)
             * [Configuration du DNS chez son registar](/dns_config_fr)
             * [Avec OVH](/OVH_fr)
             * [Accéder à son domaine depuis le réseau local](/dns_reseau_local_fr)
