@@ -32,6 +32,7 @@
                * [Post-instalation](/postinstall)
                * [Diagnostic](/diagnostic)
         * [DNS Settings](/dns)
+           * [Registrar](registar)
            * [DNS Configuration](/dns_config)
         * [Applications](/apps)
         * [Internet service provider](/isp)
