@@ -9,6 +9,9 @@
 * Un compte DigitalOcean
 * Un conteneur **Debian 7.0 x64** avec au moins **512MB** de RAM
 
+    <div class="alert alert-warning">
+    <b>Attention :</b> L'utilisateur `root` doit posséder un mot de passe. Exécutez `sudo passwd root` pour être sûr qu'il est configuré correctement.
+    </div>
 
 ---
 
