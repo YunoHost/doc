@@ -13,7 +13,7 @@ DNS signifie « Domain Name Server » en anglais, et est souvent employé pour d
 
 **Par exemple** : `yunohost.org` renvoie vers `88.191.153.110`.
 
-Ce système a été créé pour pouvoir retenir plus facilement les adresses de serveur. Il existe donc des registres DNS dans lesquels il faut s'inscrire. Ceci peut être fait auprès de **registars** qui vous feront louer ces noms de domaine contre une certaine somme (entre 5 et quelques centaines d'euros). Ces registars sont des entités privées autorisées par l’[ICANN](http://fr.wikipedia.org/wiki/ICANN), telles que [Gandi](http://gandi.net), [OVH](http://ovh.com) ou [BookMyName](http://bookmyname.com).
+Ce système a été créé pour pouvoir retenir plus facilement les adresses de serveur. Il existe donc des registres DNS dans lesquels il faut s'inscrire. Ceci peut être fait auprès de **registars** qui vous feront louer ces noms de domaine contre une certaine somme (entre 5 et quelques centaines d'euros). Ces [registars](registar) sont des entités privées autorisées par l’[ICANN](http://fr.wikipedia.org/wiki/ICANN), telles que [Gandi](http://gandi.net), [OVH](http://ovh.com) ou [BookMyName](http://bookmyname.com).
 
 Il est important de noter que les sous-domaines ne renvoient pas nécessairement au domaine principal.
 Si `yunohost.org` renvoie vers `88.191.153.110`, ça ne signifie pas que `backup.yunohost.org` renvoie vers la même IP. Vous devez donc configurer **tous** les domaines et sous-domaines que vous souhaitez utiliser.
