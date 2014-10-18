@@ -17,8 +17,8 @@ Tu auras besoin de ta principale adresse mail et de ton mot de passe.
 
 `SMTP | 465 | SSL/TLS`
 
-####Thunderbird
-L'utilitaire de détection automatique de Thunderbird ne marche pas correctement avec YunoHost. Il faut donc passer en configuration manuelle.
+####Mozilla Thunderbird
+L'utilitaire de détection automatique de Thunderbird ne marche pas correctement avec YunoHost. Il faut donc passer en configuration manuelle. N’oubliez pas d’enlever le point devant le nom domaine.
 
 <img src="https://yunohost.org/images/Thunderbird-conf.png" width=900>
 
