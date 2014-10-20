@@ -160,4 +160,4 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Lutim](https://github.com/ldidry/lutim)
 * [jsFiddle](http://jsbin.com/help/2-second-setup)
 * [remotestorage-server](http://remotestorage.io/provide/)
-
+* [miniflux](https://github.com/fguillot/miniflux)
