@@ -120,6 +120,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | Plexmediaserver | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/plexmediaserver_ynh |
 | BTSync | tifred | <div class="inprogress"/> | https://github.com/drfred1981/btsync_ynh |
 | SCM-Manager | tifred | <div class="inprogress"/> | https://github.com/drfred1981/scm-manager_ynh |
+| Lutim | Maniack Crudelis | <div class="inprogress"/> | https://github.com/maniackcrudelis/lutim_ynh |
 
 ### Wishlist
 
@@ -159,4 +160,4 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [MediaCrush](https://mediacru.sh/)
 * [jsFiddle](http://jsbin.com/help/2-second-setup)
 * [remotestorage-server](http://remotestorage.io/provide/)
-
+* [miniflux](https://github.com/fguillot/miniflux)
