@@ -5,7 +5,7 @@ Baïkal est un serveur de calendriers et contacts accessible par les protocoles 
 ## Connexion à l'interface d'admin
 Sur le portail SSO, si on clique sur la tuile "Baïkal", on tombe sur une page bien peu conviviale qui explique que le service fonctionne. Pour accéder à l'admin, il faut rajouter `/admin`. Par exemple :
 
-https://domain.org/baikal/admin
+https://example.com/baikal/admin
 
 Le nom d'utilisateur à spécifier est "admin" suivi du mot de passe spécifique que vous avez choisi lors de l'installation de Baïkal.
 
@@ -17,9 +17,9 @@ Ajoutez un nouvel agenda de type "Réseau" puis "CalDAV".
 
 L'URL à entrer est la suivante :
 
-`https://domain.org/baikal/cal.php/calendars/username/default`
+`https://example.com/baikal/cal.php/calendars/username/default`
 
-*En prenant soin de remplacer "domain.org" par votre domaine puis "username" par votre nom d'utilisateur*
+*En prenant soin de remplacer "example.com" par votre domaine puis "username" par votre nom d'utilisateur*
 
 ### Connexion de AgenDAV
 
@@ -39,9 +39,9 @@ Renseigner :
 * Nom du carnet d'adresses : `default`
 * Nom d'utilisateur : `username`
 * Mot de passe : `leMotDePasseAssociéAUsername`
-* URL : `https://domain.org/baikal/card.php/addressbooks/username/default`
+* URL : `https://example.com/baikal/card.php/addressbooks/username/default`
 
-*En prenant soin de remplacer "domain.org" par votre domaine et "username" par votre nom d'utilisateur*
+*En prenant soin de remplacer "example.com" par votre domaine et "username" par votre nom d'utilisateur*
 
 Enregistrer
 
