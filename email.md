@@ -23,6 +23,8 @@ The automatic detection tool of Thunderbird does not work with YunoHost. You wil
 
 <img src="https://yunohost.org/images/Thunderbird-conf.png" width=900>
 
+* [Manage alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
+
 ####For Androïd
 [K-9 Mail](https://en.wikipedia.org/wiki/K-9_Mail) application works.
 
