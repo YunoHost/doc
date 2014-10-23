@@ -121,6 +121,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | BTSync | tifred | <div class="inprogress"/> | https://github.com/drfred1981/btsync_ynh |
 | SCM-Manager | tifred | <div class="inprogress"/> | https://github.com/drfred1981/scm-manager_ynh |
 | Lutim | Maniack Crudelis | <div class="inprogress"/> | https://github.com/maniackcrudelis/lutim_ynh |
+| Kanboard | tostaki | <div class="ready"/> | https://github.com/mbugeia/kanboard_ynh |
 
 ### Wishlist
 
