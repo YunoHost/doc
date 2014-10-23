@@ -54,8 +54,8 @@ En fonction de l'autorité d'enregistrement, des certificats intermédiaire et r
 
 > **StartSSL**
 > ```bash
-> sudo wget http://www.startssl.com/certs/ca.pem -O ae_certs/ca.pem
-> sudo wget http://www.startssl.com/certs/sub.class1.server.ca.pem -O ae_certs/intermediate_ca.pem```
+> sudo wget http://www.startssl.com/certs/ca-sha2.pem -O ae_certs/ca.pem
+> sudo wget http://www.startssl.com/certs/class1/sha2/pem/sub.class1.server.sha2.ca.pem -O ae_certs/intermediate_ca.pem```
 
 > **Gandi**
 > ```bash
