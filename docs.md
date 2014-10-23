@@ -15,7 +15,7 @@ YunoHost's documentation has 3 different sections:
 <div class="col col-md-4 col-md-offset-1">
 <br />
 <a class="btn btn-primary btn-lg" href="/admindoc"><span class="glyphicon glyphicon-lock"></span> Administrator guide</a>
-<p><small class="text-muted">including installation, server management and application gestion</small></p>
+<p><small class="text-muted">including installation, server management and application management</small></p>
 </div>
 
 <div class="col col-md-5 col-md-offset-3">
