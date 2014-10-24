@@ -10,3 +10,5 @@
 Pour pouvoir envoyer des mails, il faut désactiver le filtrage.
 
 <img src="https://yunohost.org/images/sfr-filtrage.png" width=600>
+
+Source : http://assistance.sfr.fr/internet_box-nb4/utiliser-email/desactiver-filtrage-smtp/fc-2491-69602
