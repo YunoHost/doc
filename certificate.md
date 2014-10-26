@@ -10,3 +10,11 @@ You can have a certificate signed by an authority, in which case you must upload
 
 * /etc/yunohost/certs/YourCertifiedDomain/crt.pem
 * /etc/yunohost/certs/YourCertifiedDomain/key.pem
+
+If you are buying your Certificate from a CA that provides you an intermadiate CA, you might need to provide a crt file which is combined from your server crt and the intermidate crt.
+
+`cat /path/to/your/ca.pem /path/to/your/server.pem > /etc/yunohost/certs/YourCertifiedDomain/bundle.pem`
+
+You will need to change nginx crt in /etc/nginx/conf.d/YourCertifiedDomain.conf to:
+
+`ssl_certificate /etc/yunohost/certs/YourCertifiedDomain/bundle.pem;`
