@@ -161,3 +161,4 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [jsFiddle](http://jsbin.com/help/2-second-setup)
 * [remotestorage-server](http://remotestorage.io/provide/)
 * [miniflux](https://github.com/fguillot/miniflux)
+* [Zotero](https://www.zotero.org)
