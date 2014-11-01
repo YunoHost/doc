@@ -22,7 +22,7 @@ Maintenant que vous avez l'image ISO YunoHost, vous devez la copier sur une cart
 sudo fdisk -l
 ```
 
-Ça devrait être `/dev/diskN`, où `N` est un nombre, ou `/dev/sdX`, où `X` est une lettre.
+Ça devrait être `/dev/diskN`, où `N` est un nombre, ou `/dev/sdX`, où `X` est une lettre, ou `/dev/mmcblk0`.
 
 * Copiez l'image en tapant :
 
