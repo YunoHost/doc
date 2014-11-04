@@ -9,7 +9,7 @@ A YunoHost package is composed of:
 * A `scripts` directory, which contains the `install`, `remove` and `upgrade` scripts
 * Optional other directories, like `sources` or `conf` if you need them
 
-An example package is available here : https://github.com/opi/example_ynh, feel free to use it as a framework.
+An example package is available here: https://github.com/opi/example_ynh, feel free to use it as a framework.
 
 
 ### Manifest
