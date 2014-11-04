@@ -42,7 +42,7 @@ daily_build -p nom_du_paquet
 #### Build d'un paquet non YunoHost
 
 ```bash
-build_megusta -p path_du_paquet
+build_deb -p path_du_paquet
 ```
 
 ### Passage de `daily` à `test`
