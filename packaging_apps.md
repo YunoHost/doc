@@ -3,11 +3,13 @@
 There are few things you need to know if you want to package an application for YunoHost.
 
 ### Content
-A YunoHost package looks like [this](https://github.com/Kloadut/roundcube_ynh), and is composed of:
+A YunoHost package is composed of:
 
 * A JSON file `manifest.json`
 * A `scripts` directory, which contains the `install`, `remove` and `upgrade` scripts
 * Optional other directories, like `sources` or `conf` if you need them
+
+An example package is available here : https://github.com/opi/example_ynh, feel free to use it as a framework.
 
 
 ### Manifest
