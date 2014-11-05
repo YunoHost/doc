@@ -11,6 +11,8 @@ Tu peux accéder à tes courriels grâce à un client lourd de messagerie élect
 
 Tu auras besoin de ta principale adresse mail et de ton mot de passe.
 
+Attention: Votre login est votre username SSO et non votre adresse mail ou la partie avant le @ 
+
 #####Réglages :
 
 `IMAP | 993 | SSL/TLS`
