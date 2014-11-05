@@ -11,7 +11,7 @@ You can access your emails via desktop email clients such as Mozilla Thunderbird
 
 You will need your email address and your password.
 
-Attention: Your login is your SSO login and not your email address
+Attention: Your login is your SSO username and not your email address
 
 #####Settings:
 
