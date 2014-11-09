@@ -10,7 +10,7 @@ Une fois l'édition effectuée, vous pouvez soumettre vos modifications par mail
 
 ** Note : ** Si vous n'avez pas de compte, vous devrez envoyer vos modifications manuellement.
 
-## Via Github
+## Via GitHub
 
 La documentation de YunoHost est géré par un [dépot Git](https://github.com/YunoHost/doc). Vous pouvez envoyer des pull-requests. 
 
