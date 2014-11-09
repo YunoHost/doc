@@ -7,7 +7,7 @@
 <img src="https://yunohost.org/images/cubieboard2.png">
 <img src="https://yunohost.org/images/micro-sd-card.jpg">
 
-* CubieBoard 1 or 2 (CubieTruck might work as well)
+* CubieBoard 1, 2 or CubieTruck.
 * A micro-SD card: **8GB** capacity (or more) and **class10** speed rate are highly recommended
 * An other computer to read this guide and access to your Cubieboard
 * A screen and a keyboard are recommended to control your Cubieboard if a problem occurs
@@ -40,10 +40,11 @@ mkdir media/cubieboard/var/log/ngnix
 
 ---
 
-### Create a YunoHost image for Cubieboard 1 or 2
+### Create a YunoHost image for Cubieboard 1, 2 or 3
 * **[Scripts for Cubian](https://github.com/M5oul/Yunocubian)**
 * A Cubieboard Debian 7 image compatible with YunoHost:
     * [Cubian](http://cubian.org/)
+    * [For Cubieboard 2 and 3](http://www.igorpecovnik.com/2013/12/24/cubietruck-debian-wheezy-sd-card-image/)
     * [Cubieez](http://www.cubieforums.com/index.php?topic=442.0)
 
 ---
