@@ -205,3 +205,8 @@ Note that it also works with a Git URL:
 ```bash
 yunohost app install https://github.com/author/my_app_package.git
 ```
+### Add your application to the work in progress list of applications
+You can add your application to the [_Work in progress_ list](https://yunohost.org/#/apps_en).
+
+### Ask integration of your application to the official list
+If you want, you can ask integration of your application to officials applications. To do so, use button "New App Request" on http://app.yunohost.org.
