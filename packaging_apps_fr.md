@@ -215,7 +215,8 @@ Remarque : ça fonctionne aussi avec une URL Git :
 ```bash
 yunohost app install https://github.com/auteur/mon_paquet.git
 ```
+### Ajoutez votre application à la liste des applications en cours d’avancement
+Vous pouvez ajouter votre application à [la liste _Work in progress_](https://yunohost.org/#/apps_en).
 
-
-### Ajouter l'application à la liste officielle
+### Demander l’intégration de son application à la liste officielle
 Si vous le souhaitez vous pouvez proposer l'inclusion de l'application dans les applications officielles. Pour ce faire, il faut utiliser le bouton "New App Request" sur http://app.yunohost.org.
