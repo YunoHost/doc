@@ -2,12 +2,12 @@
 
 ### What is  Transmission?
 
-Transmission is a download and share file software based on BitTorent protocol.
+Transmission is a share software based on BitTorrent protocol.
 * [Transmission web site](http://transmissionbt.com/)
 
 ### How to download completed files?
 
-If Transmission is installed on `/torrent/`, you could download your completed files to the following adress: https://votre-domaine.org/torrent/downloads/
+If Transmission is installed on `/torrent/`, you could download your completed files to the following adress: https://your-domain-name.org/torrent/downloads/
 
 ### Sending files towards server for seeding
 
