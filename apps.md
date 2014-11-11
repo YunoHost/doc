@@ -124,7 +124,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | Kanboard | tostaki | <div class="ready"/> | https://github.com/mbugeia/kanboard_ynh |
 | EmailPoubelle | matlink | <div class="inprogress"/> | https://github.com/matlink/emailpoubelle_ynh |
 | GLPI + FusionInventory | beudbeud | <div class="ready"/> | https://github.com/abeudin/glpi_ynh |
-| Mumble Server | matlink | <div class="inprogress"/> | https://github.com/matlink/mumbleserver_ynh |
+| Mumble Server | matlink | <div class="ready"/> | https://github.com/matlink/mumbleserver_ynh |
 
 ### Wishlist
 
