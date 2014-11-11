@@ -135,7 +135,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 <br>
 
 * [Ethersheet](https://ethersheet.org/)
-* [Mumble](http://mumble.sourceforge.net/)
 * [PluXML](http://www.pluxml.org/)
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
 * [Movim](http://www.movim.eu/)
