@@ -11,7 +11,7 @@
 * ~~SSOwat stuffs (presistent rules, public root website) *(ezpen)*~~
 * ~~Mail forward configuration *(kload, beudbeud)*~~
 * ~~Test and upgrade official apps like Owncloud, Roundcube and Radicale *(packagers)*~~
-* ~~Upgrade function~~ + view *(beudbeud, opi)*
+* ~~Upgrade function + view *(beudbeud, opi)*~~
 * ~~uPnP rework *(kload, titoko)*~~
 * ~~Add warning in a sample backup view *(opi)*~~
 * ~~User interface design *(Courgette, opi)*~~
@@ -30,15 +30,19 @@
 
 * ~~Firewall in web administration *(opi)*~~
 * ~~Install non-official apps from admin *(opi)*~~
-* ~~OpenVPN configuration page + access control (kload)~~
-* ~~Migrate to Baïkal and deprecate Radicale (ju)~~
-* Warn users about security updates in the webadmin (opi)
+* ~~OpenVPN configuration page + access control *(kload)*~~
+* ~~Migrate to Baïkal and deprecate Radicale *(ju)*~~
+* ~~Add a download files button on Transmission interface *(opi)*~~
+* Warn users about security updates in the webadmin *(opi)*
 * User avatar *(opi)*
-* Add a download files button on Transmission interface (opi)
-* Backup system: friend-to-friend, on a local device, and downloaded (kload)
-* Run automatic tests on moulinette (kload)
-* Fix WebSocket issue for Raspberry Pi (jerome, kload)
-* Clean up moulinette API (jerome)
-* Add proper upgrade/remove scripts and comment Debian scripts in packages (beudbeud)
-* Improve documentation, by making it more accessible (Moul)
-* Create YunoHost image based on Cubian for Cubieboard 1 ~~and 2~~ (Moul)
+* Backup system: friend-to-friend, on a local device, and downloaded *(kload)*
+* Run automatic tests on moulinette *(kload)*
+* Fix WebSocket issue for Raspberry Pi *(jerome, kload)*
+* Clean up moulinette API *(jerome)*
+* Add proper upgrade/remove scripts and comment Debian scripts in packages *(beudbeud)*
+* Improve documentation, by making it more accessible *(Moul)*
+* Create YunoHost image based on Cubian for Cubieboard 1 ~~and 2~~ *(Moul)*
+
+## Backlog
+
+* Migrate YunoHost to Debian Jessie 8.0
