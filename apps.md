@@ -125,6 +125,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | EmailPoubelle | matlink | <div class="inprogress"/> | https://github.com/matlink/emailpoubelle_ynh |
 | GLPI + FusionInventory | beudbeud | <div class="ready"/> | https://github.com/abeudin/glpi_ynh |
 | Mumble Server | matlink | <div class="inprogress"/> | https://github.com/matlink/mumbleserver_ynh |
+| PluXml | matlink | <div class="inprogress"/> | https://github.com/matlink/pluxml_ynh |
 
 ### Wishlist
 
@@ -135,7 +136,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 <br>
 
 * [Ethersheet](https://ethersheet.org/)
-* [PluXML](http://www.pluxml.org/)
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
 * [Movim](http://www.movim.eu/)
 * [GitLab](http://gitlab.org/)
