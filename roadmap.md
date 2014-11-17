@@ -49,4 +49,5 @@
 ## v2.2
 
 * Migrate YunoHost to Debian Jessie
+* Use templates to (re)generate configurations instead of packages *(beudbeud, jerome)*
 * Complete and improve backup & restore system *(jerome)*
