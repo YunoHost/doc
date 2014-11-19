@@ -72,7 +72,7 @@
 
 * [Feuille de route](/roadmap_fr)
 
-* [Contributeurs](contribs)
+* [Contributeurs](contribs_fr)
 
 * [Sécurité](/security_fr)
 
