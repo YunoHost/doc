@@ -1,22 +1,22 @@
 #Contributeurs
 
-Liste non exhaustive des principaux contributeurs
+Liste non exhaustive des principaux contributeurs :
 
 * kload
 
 * beudbeud
 
-* jerome: développeur de la [Moulinette](moulinette)
+* jerome : développeur de la [Moulinette](moulinette_fr)
 
-* opi: développeur de la [web admin](admin)
+* opi : développeur de l’[interface d’admininstation web](admin_fr)
 
-* ju: applications
+* ju : applications
 
-* Moul: 
+* Moul : 
   * Documentation
   * Cubieboard
   * moul[at]moul.re
 
-* courgette: design
+* courgette : design
 
 * titoko
