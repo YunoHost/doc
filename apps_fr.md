@@ -37,8 +37,16 @@ function timeConverter(UNIX_timestamp) {
 
 $(document).ready(function () {
   $.getJSON('/list.json', function(app_list) {
-    console.log(app_list);
-    $.each(app_list, function(app_id, infos) {
+    // Cast as array
+    var app_list = $.map(app_list, function(el) { return el; });
+    // Sort alpha
+    app_list.sort(function(a, b){
+      if (a.manifest.id > b.manifest.id) {return 1;}
+      else if (a.manifest.id < b.manifest.id) {return -1;}
+      return 0;
+    });
+    $.each(app_list, function(k, infos) {
+      app_id = infos.manifest.id;
       if (typeof infos.manifest.description.fr === 'undefined') {
         infos.manifest.description.fr = infos.manifest.description.en;
       }
