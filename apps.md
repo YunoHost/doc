@@ -134,6 +134,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | GLPI + FusionInventory | beudbeud | <div class="ready"/> | https://github.com/abeudin/glpi_ynh |
 | Mumble Server | matlink | <div class="inprogress"/> | https://github.com/matlink/mumbleserver_ynh |
 | PluXml | matlink | <div class="inprogress"/> | https://github.com/matlink/pluxml_ynh |
+| OFBiz | julien | <div class="inprogress"/> | https://github.com/nomaka/ofbiz_ynh |
 
 ### Wishlist
 
