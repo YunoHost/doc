@@ -33,7 +33,7 @@ Nous avons besoin de tester YunoHost profondément. Si vous trouvez un bug, essa
 <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; Aidez les utilisateurs
 </div>
 <div class="col col-md-8" markdown="1">
-Notre support est communautaire et s'appuie sur des contributeurs comme vous. Venez simplement sur le [salon de discussion XMPP](/support_fr), ou tentez de répondre aux questions de la <a href="https://ask.yunohost.org/" target="_blank">Foire aux questions (FAQ)</a>.
+Notre support est communautaire et s'appuie sur des contributeurs comme vous. Venez simplement sur le [salon de discussion XMPP](/support_fr), ou tentez de répondre aux questions du <a href="https://forum.yunohost.org/" target="_blank">Forum</a>.
 </div>
 </div>
 
