@@ -121,6 +121,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | Piwik | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/piwik_ynh |
 | KiwiIRC | julien | <div class="ready"/> | https://github.com/julienmalik/kiwiirc_ynh |
 | FileBin | IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/filebin_ynh |
+| [HTML Tools](http://lehollandaisvolant.net/tout/tools/)| IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/htmltools_ynh |
 | Pydio | julienmalik | <div class="inprogress"/> | https://github.com/julienmalik/pydio_ynh |
 | Sickbeard | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sickbeard_ynh |
 | Couchpotato | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/couchpotato_ynh |
