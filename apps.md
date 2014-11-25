@@ -185,3 +185,4 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [adminer](http://www.adminer.org/)
 * [Inbox](https://www.inboxapp.com/)
 * [Pulse](https://ind.ie/pulse/)
+* [Kune](https://en.wikipedia.org/wiki/Kune_%28software%29)
