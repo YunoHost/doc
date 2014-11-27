@@ -136,6 +136,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | Mumble Server | matlink | <div class="inprogress"/> | https://github.com/matlink/mumbleserver_ynh |
 | PluXml | matlink | <div class="inprogress"/> | https://github.com/matlink/pluxml_ynh |
 | OFBiz | julien | <div class="inprogress"/> | https://github.com/nomakaFr/ofbiz_ynh |
+| Adminer | matlink | <div class="inprogress"/> | https://github.com/matlink/adminer_ynh |
 
 ### Wishlist
 
@@ -182,7 +183,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Streisand](https://github.com/jlund/streisand)
 * [Scribbleton](https://scribbleton.com/)
 * [webSync](http://furier.github.io/websync/)
-* [adminer](http://www.adminer.org/)
 * [Inbox](https://www.inboxapp.com/)
 * [Pulse](https://ind.ie/pulse/)
 * [Kune](https://en.wikipedia.org/wiki/Kune_%28software%29)
