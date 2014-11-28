@@ -24,6 +24,6 @@ vjud 1800 IN CNAME @
 
 <div class="alert alert-warning"><b>Warning:</b> replace "domain.tld" with your own domain, and update IP samples values with your server IP address.</div>
 
-<div class="alert alert-warning"><b>To begin:</b> lines with "(Minimal)" are the minimal required DNS entries to make works web, email and XMPP.</div>
+<div class="alert alert-info"><b>To begin:</b> lines with "(Minimal)" are the minimal required DNS entries to make works web, email and XMPP.</div>
 
 <div class="alert alert-warning"><b>Warning:</b> <b>@</b> is the default domain name currently defined, some registrar (like OVH) does not accept it, so replace @ by your domain name (domain.tld).</div>
