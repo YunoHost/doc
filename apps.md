@@ -132,7 +132,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Lutim](https://lut.im/) | Maniack Crudelis | <div class="inprogress"/> | https://github.com/maniackcrudelis/lutim_ynh |anonymous image hosting service |
 | [Kanboard](http://kanboard.net/) | tostaki | <div class=" ready"/> | https://github.com/mbugeia/kanboard_ynh | visual task board |
 | [EmailPoubelle](http://forge.zici.fr/p/emailpoubelle-php/) | matlink | <div class="inprogress"/> | https://github.com/matlink/emailpoubelle_ynh | disposable email |
-| [GLPI + FusionInventory] (http://www.glpi-project.org/?lang=en) | beudbeud | <div class="ready"/> | https://github.com/abeudin/glpi_ynh | IT And Asset managent |
+| [GLPI + FusionInventory](http://www.glpi-project.org/?lang=en) | beudbeud | <div class="ready"/> | https://github.com/abeudin/glpi_ynh | IT And Asset managent |
 | [Mumble Server](http://wiki.mumble.info/wiki/Main_Page) | matlink | <div class="inprogress"/> | https://github.com/matlink/mumbleserver_ynh | voice chat for gaming |
 | [PluXml](http://www.pluxml.org/) | matlink | <div class="inprogress"/> | https://github.com/matlink/pluxml_ynh | blogging platform |
 | [OFBiz](https://ofbiz.apache.org/) | julien | <div class="inprogress"/> | https://github.com/nomakaFr/ofbiz_ynh | ERP |
