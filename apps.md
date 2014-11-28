@@ -188,3 +188,4 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Pulse](https://ind.ie/pulse/)
 * [Kune](https://en.wikipedia.org/wiki/Kune_%28software%29)
 * [racktables](http://racktables.org/)
+* [Known](https://withknown.com/)
