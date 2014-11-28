@@ -8,7 +8,7 @@ Il est important d'identifier votre type de machine avant de procéder à l'inst
 | Type | Exemples de machines | Guide d'installation |
 |------|-----------------------|----------------------|
 | **x86** | PC de bureau, PC portables, Mac Intel (après 2007), netbooks, nettops, etc. | [Installation via CD/USB](/install_iso_fr) |
-| **armhf** | [Raspberry Pi](/install_on_raspberry_fr), [CubieBoard](/install_on_cubieboard_fr), Cubox, Olimex, Beagleboard, etc. | [Installation sur Debian ARM](/compatible_arm_debian_fr) |
+| **armhf** | [Raspberry Pi](/install_on_raspberry_fr), [CubieBoard](/install_on_cubieboard_fr), Cubox, Olimex, Beagleboard, etc. | [Installation sur Debian ARM](/install_on_debian_fr) |
 | **powerpc** | Macintosh G4/G5, PS3 |  [Installation sur Debian](/install_on_debian_fr) |
 
 
