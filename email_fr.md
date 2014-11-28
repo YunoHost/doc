@@ -7,11 +7,11 @@ YunoHost fournit :
 * [RoundCube](/apps) : un webmail
 
 ###Client lourd de messagerie électronique
-Tu peux accéder à tes courriels grâce à un client lourd de messagerie électronique comme Mozilla Thunderbird ou Évolution.
+Il est possible d’accéder à ses courriels grâce à un client lourd de messagerie électronique comme Mozilla Thunderbird ou Évolution.
 
-Tu auras besoin de ta principale adresse mail et de ton mot de passe.
+L’adresse mail principale mail et de ton mot de passe sont nécessaire.
 
-Attention: Votre login est votre username SSO et non votre adresse mail ou la partie avant le @ 
+**Attention:** votre login est votre nom d’utilisateur SSO et non votre adresse mail ou la partie avant le @ 
 
 #####Réglages :
 
@@ -22,7 +22,7 @@ Attention: Votre login est votre username SSO et non votre adresse mail ou la pa
 ####Mozilla Thunderbird
 L'utilitaire de détection automatique de Thunderbird ne marche pas correctement avec YunoHost. Il faut donc passer en configuration manuelle. N’oubliez pas d’enlever le point devant le nom domaine.
 
-<img src="https://yunohost.org/images/Thunderbird-conf.png" width=900>
+<img src="https://yunohost.org/images/thunderbird-config.png" width=900>
 
 * [Gestion des alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
 
