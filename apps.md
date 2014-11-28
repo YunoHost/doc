@@ -145,7 +145,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 
 <br>
 
-* [PPTP PVN](https://packages.debian.org/sv/squeeze/pptpd)
+* [PPTP VPN](https://packages.debian.org/sv/squeeze/pptpd)
 * [Ethersheet](https://ethersheet.org/)
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
 * [Movim](http://www.movim.eu/)
