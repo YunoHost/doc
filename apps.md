@@ -91,51 +91,51 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 
 | Name | Packager | State | URL repositories | Description
 | --- | --- | --- | --- | --- |
-| [EtherCalc](https://ethercalc.org/) | zamentur | <div class="inprogress"/> | https://github.com/zamentur/ethercalc_ynh | Web spreadsheet |
-| [LimeSurvey](http://www.limesurvey.org/en/) | zamentur | <div class="inprogress"/> | https://github.com/zamentur/limesurvey_ynh | Web survey tool |
-| [Firefox Sync](https://www.mozilla.org/en-US/firefox/sync/) | beudbeud | <div class="inprogress"/> |https://github.com/abeudin/ffsync_ynh | Firefox synchronization server |
-| [OpenID](http://openid.net/) | julien | <div class="inprogress"/> | https://github.com/julienmalik/openid-simplesamlphp_ynh | OpenID Identity server |
-| [Shaarli](http://sebsauvage.net/wiki/doku.php?id=php:shaarli) | julien | <div class="inprogress"/> | https://github.com/julienmalik/shaarli_ynh | Delicious clone |
-| [Zomburl](http://cadav.re/) | courgette | <div class="inprogress"/> | https://github.com/courgette/zomburl_ynh | URL Shortening service |
-| [proFTPd](http://www.proftpd.org/) | beudbeud | <div class="inprogress"/> | https://github.com/abeudin/proftpd_ynh.git | FTP server |
-| [Lychee](http://lychee.electerious.com/) | titoko | <div class="inprogress"/> | https://github.com/titoko/lychee_ynh.git | Web photo-management |
-| [FreshRSS](http://freshrss.org/) | plopoyop | <div class="ready"/> | https://github.com/plopoyop/freshrss_ynh | RSS reader |
-| [Yourls](http://yourls.org/) | courgette | <div class="ready"/> | https://github.com/courgette/yourls_ynh | URL Shortening service |
-| [MyCryptoChat](https://github.com/HowTommy/mycryptochat) | mrtino | <div class="ready"/> | https://github.com/mrtino/mycryptochat_ynh | Encrypted chat rooms manager |
-| [MediaWiki](https://mediawiki.org) | kload | <div class="ready"/> | https://github.com/kloadut/mediawiki_ynh | Wiki platform |
-| [Linux Dash](http://linuxdash.afaqtariq.com/) | opi | <div class="ready"/> | https://github.com/opi/linuxdash_ynh | Monitoring web dashboard |
 | [Ampache](http://ampache.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/ampache_ynh | Web based audio/video streaming |
-| [Piwigo](http://piwigo.org) | monsieur-a | <div class="ready"/> | https://github.com/monsieur-a/piwigo_ynh | Web photo gallery |
-| [Etherpad-Lite](http://etherpad.org) | beudbeud | <div class="ready"/> | https://github.com/abeudin/etherpadlite_ynh | Real-time collaborative document editing |
-| [Webmin](http://webmin.com) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/webmin_ynh | Web-based system configuration tool |
-| [Ghost](http://ghost.org) | julien | <div class="ready"/> | https://github.com/julienmalik/ghost_ynh | Blogging platform |
-| [Subsonic](http://subsonic.org) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/subsonic_ynh | Web-based media server |
-| [Leed](http://projet.idleman.fr/leed/) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/leed_ynh | RSS reader |
-| Custom Webapp (Multi instance) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/my_webapp_ynh |Custom Webapp |
-| FTP support for webapp | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/ftp_support_webapp_ynh | FTP support for webapp |
-| [Jeedom](http://jeedom.fr) | lunarok | <div class="ready"/> | https://github.com/lunarok/jeedom_ynh | Home automation |
+| [BTSync](http://www.getsync.com/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/btsync_ynh | File synchronization tool  |
 | [COPS](http://cops.com) | lunarok | <div class="ready"/> | https://github.com/lunarok/cops_ynh | Frontend for Calibre library |
+| [Couchpotato](https://couchpota.to/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/couchpotato_ynh | PVR for Usenet and torrents |
+| Custom Webapp (Multi instance) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/my_webapp_ynh |Custom Webapp |
+| [EmailPoubelle](http://forge.zici.fr/p/emailpoubelle-php/) | matlink | <div class="inprogress"/> | https://github.com/matlink/emailpoubelle_ynh | Disposable email |
+| [EtherCalc](https://ethercalc.org/) | zamentur | <div class="inprogress"/> | https://github.com/zamentur/ethercalc_ynh | Web spreadsheet |
+| [Etherpad-Lite](http://etherpad.org) | beudbeud | <div class="ready"/> | https://github.com/abeudin/etherpadlite_ynh | Real-time collaborative document editing |
+| [FileBin](http://sebsauvage.net/wiki/doku.php?id=php:zerobin) | IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/filebin_ynh | Online filebin |
+| [Firefox Sync](https://www.mozilla.org/en-US/firefox/sync/) | beudbeud | <div class="inprogress"/> |https://github.com/abeudin/ffsync_ynh | Firefox synchronization server |
+| [FreshRSS](http://freshrss.org/) | plopoyop | <div class="ready"/> | https://github.com/plopoyop/freshrss_ynh | RSS reader |
+| FTP support for webapp | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/ftp_support_webapp_ynh | FTP support for webapp |
+| [HTML Tools](http://lehollandaisvolant.net/tout/tools/)| IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/htmltools_ynh | HTML Mini-tools |
+| [HTPC Manager](http://htpc.io) | lunarok | <div class="ready"/> | https://github.com/lunarok/htpc_ynh | Manage your HTPC |
+| [Ghost](http://ghost.org) | julien | <div class="ready"/> | https://github.com/julienmalik/ghost_ynh | Blogging platform |
+| [GLPI + FusionInventory](http://www.glpi-project.org/?lang=en) | beudbeud | <div class="ready"/> | https://github.com/abeudin/glpi_ynh | IT And Asset managent |
+| [Jeedom](http://jeedom.fr) | lunarok | <div class="ready"/> | https://github.com/lunarok/jeedom_ynh | Home automation |
+| [Kanboard](http://kanboard.net/) | tostaki | <div class=" ready"/> | https://github.com/mbugeia/kanboard_ynh | Visual task board |
+| [KiwiIRC](http://kiwiirc.com) | julien | <div class="ready"/> | https://github.com/julienmalik/kiwiirc_ynh | Web IRC client |
+| [Leed](http://projet.idleman.fr/leed/) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/leed_ynh | RSS reader |
+| [LimeSurvey](http://www.limesurvey.org/en/) | zamentur | <div class="inprogress"/> | https://github.com/zamentur/limesurvey_ynh | Web survey tool |
+| [Linux Dash](http://linuxdash.afaqtariq.com/) | opi | <div class="ready"/> | https://github.com/opi/linuxdash_ynh | Monitoring web dashboard |
+| [Lychee](http://lychee.electerious.com/) | titoko | <div class="inprogress"/> | https://github.com/titoko/lychee_ynh.git | Web photo-management |
+| [Lutim](https://lut.im/) | Maniack Crudelis | <div class="inprogress"/> | https://github.com/maniackcrudelis/lutim_ynh | Anonymous image hosting service |
+| [MediaWiki](https://mediawiki.org) | kload | <div class="ready"/> | https://github.com/kloadut/mediawiki_ynh | Wiki platform |
+| [Mumble Server](http://wiki.mumble.info/wiki/Main_Page) | matlink | <div class="inprogress"/> | https://github.com/matlink/mumbleserver_ynh | Voice chat for gaming and meeting |
+| [MyCryptoChat](https://github.com/HowTommy/mycryptochat) | mrtino | <div class="ready"/> | https://github.com/mrtino/mycryptochat_ynh | Encrypted chat rooms manager |
+| [OFBiz](https://ofbiz.apache.org/) | julien | <div class="inprogress"/> | https://github.com/nomakaFr/ofbiz_ynh | ERP |
+| [OpenID](http://openid.net/) | julien | <div class="inprogress"/> | https://github.com/julienmalik/openid-simplesamlphp_ynh | OpenID Identity server |
 | [OpenWRT](http://openwrt.org) | lunarok | <div class="ready"/> | https://github.com/lunarok/openwrt_ynh | Reverse proxy for OpenWRT installation |
 | [PHPSysinfo](https://phpsysinfo.github.io/phpsysinfo/) | lunarok | <div class="ready"/> | https://github.com/lunarok/phpsysinfo_ynh | Informations about your system |
-| [HTPC Manager](http://htpc.io) | lunarok | <div class="ready"/> | https://github.com/lunarok/htpc_ynh | Manage your HTPC |
+| [Piwigo](http://piwigo.org) | monsieur-a | <div class="ready"/> | https://github.com/monsieur-a/piwigo_ynh | Web photo gallery |
 | [Piwik](http://piwik.org) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/piwik_ynh | Web analytics platform |
-| [KiwiIRC](http://kiwiirc.com) | julien | <div class="ready"/> | https://github.com/julienmalik/kiwiirc_ynh | Web IRC client |
-| [FileBin](http://sebsauvage.net/wiki/doku.php?id=php:zerobin) | IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/filebin_ynh | Online filebin |
-| [HTML Tools](http://lehollandaisvolant.net/tout/tools/)| IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/htmltools_ynh | HTML Mini-tools |
-| [Pydio](http://pyd.io) | julienmalik | <div class="inprogress"/> | https://github.com/julienmalik/pydio_ynh | File sharing and synchronization |
-| [Sickbeard](http://sickbeard.com) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sickbeard_ynh | PVR and episode guide that downloads and manages all your TV shows |
-| [Couchpotato](https://couchpota.to/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/couchpotato_ynh | PVR for Usenet and torrents |
-| [Sabnzbd](http://http://sabnzbd.org/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sabnzbd_ynh | Automated Usenet download |
 | [Plexmediaserver](https://plex.tv/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/plexmediaserver_ynh | PlexMediaServer |
-| [BTSync](http://www.getsync.com/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/btsync_ynh | File synchronization tool  |
-| [SCM-Manager](https://www.scm-manager.org/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/scm-manager_ynh | Share and manage repositories over HTTP |
-| [Lutim](https://lut.im/) | Maniack Crudelis | <div class="inprogress"/> | https://github.com/maniackcrudelis/lutim_ynh | Anonymous image hosting service |
-| [Kanboard](http://kanboard.net/) | tostaki | <div class=" ready"/> | https://github.com/mbugeia/kanboard_ynh | Visual task board |
-| [EmailPoubelle](http://forge.zici.fr/p/emailpoubelle-php/) | matlink | <div class="inprogress"/> | https://github.com/matlink/emailpoubelle_ynh | Disposable email |
-| [GLPI + FusionInventory](http://www.glpi-project.org/?lang=en) | beudbeud | <div class="ready"/> | https://github.com/abeudin/glpi_ynh | IT And Asset managent |
-| [Mumble Server](http://wiki.mumble.info/wiki/Main_Page) | matlink | <div class="inprogress"/> | https://github.com/matlink/mumbleserver_ynh | Voice chat for gaming and meeting |
 | [PluXml](http://www.pluxml.org/) | matlink | <div class="inprogress"/> | https://github.com/matlink/pluxml_ynh | Blogging platform |
-| [OFBiz](https://ofbiz.apache.org/) | julien | <div class="inprogress"/> | https://github.com/nomakaFr/ofbiz_ynh | ERP |
+| [proFTPd](http://www.proftpd.org/) | beudbeud | <div class="inprogress"/> | https://github.com/abeudin/proftpd_ynh.git | FTP server |
+| [Pydio](http://pyd.io) | julienmalik | <div class="inprogress"/> | https://github.com/julienmalik/pydio_ynh | File sharing and synchronization |
+| [Sabnzbd](http://http://sabnzbd.org/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sabnzbd_ynh | Automated Usenet download |
+| [SCM-Manager](https://www.scm-manager.org/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/scm-manager_ynh | Share and manage repositories over HTTP |
+| [Shaarli](http://sebsauvage.net/wiki/doku.php?id=php:shaarli) | julien | <div class="inprogress"/> | https://github.com/julienmalik/shaarli_ynh | Delicious clone |
+| [Sickbeard](http://sickbeard.com) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sickbeard_ynh | PVR and episode guide that downloads and manages all your TV shows |
+| [Subsonic](http://subsonic.org) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/subsonic_ynh | Web-based media server |
+| [Webmin](http://webmin.com) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/webmin_ynh | Web-based system configuration tool |
+| [Yourls](http://yourls.org/) | courgette | <div class="ready"/> | https://github.com/courgette/yourls_ynh | URL Shortening service |
+| [Zomburl](http://cadav.re/) | courgette | <div class="inprogress"/> | https://github.com/courgette/zomburl_ynh | URL Shortening service |
 
 ### Wishlist
 
