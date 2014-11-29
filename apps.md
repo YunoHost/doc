@@ -136,7 +136,8 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Mumble Server](http://wiki.mumble.info/wiki/Main_Page) | matlink | <div class="inprogress"/> | https://github.com/matlink/mumbleserver_ynh | Voice chat for gaming and meeting |
 | [PluXml](http://www.pluxml.org/) | matlink | <div class="inprogress"/> | https://github.com/matlink/pluxml_ynh | Blogging platform |
 | [OFBiz](https://ofbiz.apache.org/) | julien | <div class="inprogress"/> | https://github.com/nomakaFr/ofbiz_ynh | ERP |
-
+| [Laverna](https://laverna.cc/) | anaqreon | <div class="inprogress"/> | https://github.com/anaqreon/laverna_ynh | Note taking app |
+| [Red Matrix](https://redmatrix.me/) | anaqreon | <div class="inprogress"/> | https://github.com/anaqreon/redmatrix_ynh | Social network and decentralized identity platform |
 ### Wishlist
 
 The following list is a compiled wishlist of applications that would be nice-to-have.
@@ -177,7 +178,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Fail2web](https://github.com/Sean-Der/fail2web)
 * [Ajenti](http://ajenti.org/)
 * [img.bi](https://img.bi/)
-* [Laverna](https://laverna.cc/)
+* ~~[Laverna](https://github.com/anaqreon/redmatrix_ynh)~~
 * [Streisand](https://github.com/jlund/streisand)
 * [Scribbleton](https://scribbleton.com/)
 * [webSync](http://furier.github.io/websync/)
