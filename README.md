@@ -1,4 +1,4 @@
-doc
+Doc
 ===
 
-Documentation for YunoHost v2
+YunoHost Documentation
