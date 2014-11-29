@@ -27,6 +27,7 @@ If you use the [email system](email_en), and your server is unavailable, emails 
 #### Others Self-hosting projects
 * [ArkOS](http://arkos.io/)
 * [Cozy](http://cozy.io/)
+* [UBOS](http://ubos.net/)
 * [Host@home](http://yeuxdelibad.net/Programmation/Hostathome.html)
 * [Sovereign](https://github.com/al3x/sovereign)
 * [Sandstorm](https://sandstorm.io/)
