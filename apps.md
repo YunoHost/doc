@@ -9,7 +9,7 @@
         <a data-toggle="collapse" data-parent="#app-accordion" href="#app_{app_id}">{app_name} <em><small>({app_id})</small></em></a>
       </div>
     </div>
-    <div class="panel-collapse collapse appp_{app_id}">
+    <div class="panel-collapse collapse app_{app_id}">
       <div class="panel-body">
         <p><strong>Description</strong>: {app_description}</p>
         <p><strong>Last update (UTC)x</strong>: {app_update}</p>
