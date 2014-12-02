@@ -187,3 +187,4 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Kune](https://en.wikipedia.org/wiki/Kune_%28software%29)
 * [racktables](http://racktables.org/)
 * [Known](https://withknown.com/)
+* [Fossil](http://www.fossil-scm.org)
