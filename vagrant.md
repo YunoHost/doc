@@ -20,8 +20,12 @@ cd YunoHost
 
 The following command will initialize the project with a Debian Wheezy base image
 ```bash
-vagrant init chef/debian-7.4
+vagrant init chef/debian-7.7
 ```
+<blockquote>
+<span class="text-warning">/!\</span> You must have a working image call `chef/debian-7.7`. If not, just do 
+`vagrant box add chef/debian-7.7 https://vagrantcloud.com/chef/boxes/debian-7.7/versions/1.0.0/providers/virtualbox.box`
+</blockquote>
 
 Uncomment (remove the leading #) the following line in the newly created Vagrantfile to get access from the host system
 ```bash
