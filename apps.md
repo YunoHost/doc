@@ -133,9 +133,11 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Shaarli](http://sebsauvage.net/wiki/doku.php?id=php:shaarli) | julien | <div class="inprogress"/> | https://github.com/julienmalik/shaarli_ynh | Delicious clone |
 | [Sickbeard](http://sickbeard.com) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sickbeard_ynh | PVR and episode guide that downloads and manages all your TV shows |
 | [Subsonic](http://subsonic.org) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/subsonic_ynh | Web-based media server |
+| [TagSpaces](http://www.tagspaces.org/) | scith | <div class="inprogress"/> | https://github.com/scith/tagspaces_ynh | Manage files using tags |
 | [Webmin](http://webmin.com) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/webmin_ynh | Web-based system configuration tool |
 | [Yourls](http://yourls.org/) | courgette | <div class="ready"/> | https://github.com/courgette/yourls_ynh | URL Shortening service |
 | [Zomburl](http://cadav.re/) | courgette | <div class="inprogress"/> | https://github.com/courgette/zomburl_ynh | URL Shortening service |
+| [ZoteroSync](http://blog.holz.ca/2011/11/phpzoterowebdav-installation/) | scith | <div class="inprogress"/> | https://github.com/scith/zoterosync_ynh | Sync Zotero library and files |
 
 ### Wishlist
 
@@ -170,7 +172,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [jsFiddle](http://jsbin.com/help/2-second-setup)
 * [remotestorage-server](http://remotestorage.io/provide/)
 * [miniflux](https://github.com/fguillot/miniflux)
-* [Zotero](https://www.zotero.org)
 * [Browsepass](http://techualization.blogspot.de/2013/09/introducing-browsepass-keepass-on-web.html)
 * [Respawn 2.0](https://github.com/broncowdd/respawn)
 * [Total Respawn](https://github.com/broncowdd/TotalRespawn)
