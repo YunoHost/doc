@@ -197,7 +197,7 @@
 </div>
 
 <div class="col-md-7 text-right">
-<h1>Explorez <small>les possibilités de votre serveur, et apprenez pourquoi c'est important</small></h1>
+<h1>Explorez <small>les possibilités de votre serveur, et apprenez pourquoi c’est important</small></h1>
 <p><br /><a href="/docs_fr">Lire la documentation</a></p>
 </div>
 </div>
@@ -211,7 +211,7 @@
 <br />
 
 <div class="text-center">
-<h1>Hey ! Nous sommes des humains !<br /><small> Si vous avez une question, un problème, ou que vous êtes tout simplement intéressé, passez dire "Bonjour" sur notre salon de discussion en cliquant sur le bouton en bas &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+<h1>Hey ! Nous sommes humains !<br /><small> Si vous avez une question, un problème, ou que vous êtes tout simplement intéressé, passez dire « Bonjour » sur notre salon de discussion en cliquant sur le bouton en bas &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
 
 <br />
 <br />
