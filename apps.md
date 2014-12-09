@@ -136,6 +136,8 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Webmin](http://webmin.com) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/webmin_ynh | Web-based system configuration tool |
 | [Yourls](http://yourls.org/) | courgette | <div class="ready"/> | https://github.com/courgette/yourls_ynh | URL Shortening service |
 | [Zomburl](http://cadav.re/) | courgette | <div class="inprogress"/> | https://github.com/courgette/zomburl_ynh | URL Shortening service |
+| [Jenkins](http://jenkins-ci.org/) | julien | <div class="inprogress"/> | https://github.com/julienmalik/jenkins_ynh | Continuous Integration platform |
+
 
 ### Wishlist
 
