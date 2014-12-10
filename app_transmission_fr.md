@@ -4,9 +4,6 @@
 Transmission est un logiciel de téléchargement et de partage de fichiers basé sur le protocole BitTorrent.
 * [Site de transmission](http://transmissionbt.com/)
 
-### Comment télécharger des fichiers complétés ?
-Si vous avez installé Transmission sur `/torrent/`, vous pourrez télécharger vos fichiers complétés à l’adresse suivante : https://votre-domaine.org/torrent/downloads/
-
 ### Envoi de fichier vers le serveur pour seeder
 Dans YunoHost, les fichiers complétés sont enregistrés dans : `/home/yunohost.transmission/completed`
 
