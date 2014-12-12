@@ -115,21 +115,3 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [racktables](http://racktables.org/)
 * [Known](https://withknown.com/)
 * [Mopidy](https://www.mopidy.com/)
-
-<script type="text/javascript" src="_js/jquery.tablesorter.js"></script>
-<script type='text/javascript'>
-
-$(function() {
-
-  // initial sort set using sortList option
-  $(".table").tablesorter({
-    theme : 'bootstrap',
-    headerTemplate : '{content} {icon}',
-    sortAsc    : 'icon-chevron-up glyphicon glyphicon-chevron-up',
-    sortDesc   : 'icon-chevron-down glyphicon glyphicon-chevron-down', 
-    // sort on the first column and second column in ascending order
-    sortList: [[0,0],[2,0]]
-    });
-});
-
-</script>
