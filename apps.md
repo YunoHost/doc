@@ -51,11 +51,16 @@ $(document).ready(function () {
              .replace(/{app_id}/g, app_id)
              .replace(/{app_name}/g, infos.manifest.name)
              .replace('{app_description}', infos.manifest.description.en)
-             .replace('{app_maintainer}', infos.manifest.developer.name)
-             .replace('{app_mail}', infos.manifest.developer.email)
              .replace('{app_git}', infos.git.url)
              .replace('{app_branch}', infos.git.branch)
              .replace('{app_update}', timeConverter(infos.lastUpdate));
+
+      if (infos.manifest.developer) {
+        html
+          .replace('{app_maintainer}', infos.manifest.developer.name)
+          .replace('{app_mail}', infos.manifest.developer.email);
+      }
+
       $('#app-accordion').append(html);
       $('.app_'+ app_id).attr('id', 'app_'+ app_id);
     });
