@@ -60,6 +60,11 @@ $(document).ready(function () {
           .replace('{app_maintainer}', infos.manifest.developer.name)
           .replace('{app_mail}', infos.manifest.developer.email);
       }
+      else {
+        html
+          .replace('{app_maintainer}', 'unknown')
+          .replace('{app_mail}', 'unknown');
+      }
 
       $('#app-accordion').append(html);
       $('.app_'+ app_id).attr('id', 'app_'+ app_id);
