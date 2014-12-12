@@ -138,6 +138,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [PluXml](http://www.pluxml.org/) | matlink | <div class="inprogress"/> | https://github.com/matlink/pluxml_ynh | Blogging platform |
 | [proFTPd](http://www.proftpd.org/) | beudbeud | <div class="inprogress"/> | https://github.com/abeudin/proftpd_ynh.git | FTP server |
 | [Pydio](http://pyd.io) | julienmalik | <div class="inprogress"/> | https://github.com/julienmalik/pydio_ynh | File sharing and synchronization |
+| [Radicale](http://radicale.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/radicale_ynh.git | Caldav & Carddav Server |
 | [Sabnzbd](http://http://sabnzbd.org/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sabnzbd_ynh | Automated Usenet download |
 | [SCM-Manager](https://www.scm-manager.org/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/scm-manager_ynh | Share and manage repositories over HTTP |
 | [Shaarli](http://sebsauvage.net/wiki/doku.php?id=php:shaarli) | julien | <div class="inprogress"/> | https://github.com/julienmalik/shaarli_ynh | Delicious clone |
