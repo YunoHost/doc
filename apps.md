@@ -56,12 +56,12 @@ $(document).ready(function () {
              .replace('{app_update}', timeConverter(infos.lastUpdate));
 
       if (infos.manifest.developer) {
-        html
+        html = html
           .replace('{app_maintainer}', infos.manifest.developer.name)
           .replace('{app_mail}', infos.manifest.developer.email);
       }
       else {
-        html
+        html = html
           .replace('{app_maintainer}', 'unknown')
           .replace('{app_mail}', 'unknown');
       }
