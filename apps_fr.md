@@ -14,7 +14,7 @@
         <p><strong>Description</strong>: {app_description}</p>
         <p><strong>Dernière mise à jour (UTC)</strong>: {app_update}</p>
         <p><strong>Mainteneur</strong>: {app_maintainer} <small class="text-muted">({app_mail})</small></p>
-        <p><strong>Git</strong>: {app_git} <small class="text-muted">({app_branch})</small></p>
+        <p><strong>Git</strong>: <a href="{app_git}" target="_blank">{app_git}</a> <small class="text-muted">({app_branch})</small></p>
         <a href="#/app_{app_id}_fr" target="_blank" class="btn btn-default">Documentation</a>
     </div>
   </div>
@@ -54,11 +54,22 @@ $(document).ready(function () {
              .replace(/{app_id}/g, app_id)
              .replace(/{app_name}/g, infos.manifest.name)
              .replace('{app_description}', infos.manifest.description.fr)
-             .replace('{app_maintainer}', infos.manifest.developer.name)
-             .replace('{app_mail}', infos.manifest.developer.email)
-             .replace('{app_git}', infos.git.url)
+             .replace(/{app_git}/g, infos.git.url)
              .replace('{app_branch}', infos.git.branch)
              .replace('{app_update}', timeConverter(infos.lastUpdate));
+
+      if (infos.manifest.developer) {
+        html = html
+          .replace('{app_maintainer}', infos.manifest.developer.name)
+          .replace('{app_mail}', infos.manifest.developer.email);
+      }
+
+      if (infos.manifest.maintainer) {
+        html = html
+          .replace('{app_maintainer}', infos.manifest.maintainer.name)
+          .replace('{app_mail}', infos.manifest.maintainer.email);
+      }
+
       $('#app-accordion').append(html);
       $('.app_'+ app_id).attr('id', 'app_'+ app_id);
     });

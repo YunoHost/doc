@@ -1,5 +1,67 @@
 #Apps Work in progress
 
+<script>
+
+function timeConverter(UNIX_timestamp) {
+    var a = new Date(UNIX_timestamp*1000);
+    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var year = a.getFullYear();
+    var month = months[a.getMonth()];
+    var date = a.getDate();
+    var hour = a.getHours();
+    var min = a.getMinutes();
+    if (hour < 10) { hour = '0' + hour; }
+    if (min < 10) { min = '0' + min; }
+    var time = date+' '+month+' '+year+' at '+hour+':'+min;
+    return time;
+}
+
+$(document).ready(function () {
+  $.getJSON('/list.json', function(app_list) {
+    // Cast as array
+    var app_list = $.map(app_list, function(el) { return el; });
+    // Sort alpha
+    app_list.sort(function(a, b){
+      if (a.manifest.id > b.manifest.id) {return 1;}
+      else if (a.manifest.id < b.manifest.id) {return -1;}
+      return 0;
+    });
+    $.each(app_list, function(k, infos) {
+      app_id = infos.manifest.id;
+      html = $('#app-template').html()
+             .replace(/{app_id}/g, app_id)
+             .replace(/{app_name}/g, infos.manifest.name)
+             .replace('{app_description}', infos.manifest.description.en)
+             .replace('{app_git}', infos.git.url)
+             .replace('{app_branch}', infos.git.branch)
+             .replace('{app_update}', timeConverter(infos.lastUpdate));
+
+      if (infos.manifest.developer) {
+        html = html
+          .replace('{app_maintainer}', infos.manifest.developer.name)
+          .replace('{app_mail}', infos.manifest.developer.email);
+      }
+      else {
+        html = html
+          .replace('{app_maintainer}', 'unknown')
+          .replace('{app_mail}', 'unknown');
+      }
+
+      $('#app-accordion').append(html);
+      $('.app_'+ app_id).attr('id', 'app_'+ app_id);
+    });
+  });
+
+  $(".inprogress").each(function() {
+    $(this).html( '<a class="btn btn-small btn-warning disabled" href="#">in progress</a>' );
+  });
+  $(".ready").each(function() {
+    $(this).html( '<a class="btn btn-small btn-success disabled" href="#">ready</a>' );
+  });
+
+});
+</script>
+
 The following applications are being worked on by a growing number of packagers.
 
 They are <strong>NOT</strong> validated by the packaging team, and as such, no official support is provided for them.
@@ -115,21 +177,3 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [racktables](http://racktables.org/)
 * [Known](https://withknown.com/)
 * [Mopidy](https://www.mopidy.com/)
-
-<script type="text/javascript" src="_js/jquery.tablesorter.js"></script>
-<script type='text/javascript'>
-
-$(function() {
-
-  // initial sort set using sortList option
-  $(".table").tablesorter({
-    theme : 'bootstrap',
-    headerTemplate : '{content} {icon}',
-    sortAsc    : 'icon-chevron-up glyphicon glyphicon-chevron-up',
-    sortDesc   : 'icon-chevron-down glyphicon glyphicon-chevron-down', 
-    // sort on the first column and second column in ascending order
-    sortList: [[0,0],[2,0]]
-    });
-});
-
-</script>

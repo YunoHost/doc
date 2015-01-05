@@ -12,9 +12,9 @@
     <div class="panel-collapse collapse app_{app_id}">
       <div class="panel-body">
         <p><strong>Description</strong>: {app_description}</p>
-        <p><strong>Last update (UTC)x</strong>: {app_update}</p>
+        <p><strong>Last update (UTC)</strong>: {app_update}</p>
         <p><strong>Maintainer</strong>: {app_maintainer} <small class="text-muted">({app_mail})</small></p>
-        <p><strong>Git</strong>: {app_git} <small class="text-muted">({app_branch})</small></p>
+        <p><strong>Git</strong>: <a href="{app_git}" target="_blank">{app_git}</a> <small class="text-muted">({app_branch})</small></p>
         <a href="#/app_{app_id}" target="_blank" class="btn btn-default">Documentation</a>
     </div>
   </div>
@@ -51,7 +51,7 @@ $(document).ready(function () {
              .replace(/{app_id}/g, app_id)
              .replace(/{app_name}/g, infos.manifest.name)
              .replace('{app_description}', infos.manifest.description.en)
-             .replace('{app_git}', infos.git.url)
+             .replace(/{app_git}/g, infos.git.url)
              .replace('{app_branch}', infos.git.branch)
              .replace('{app_update}', timeConverter(infos.lastUpdate));
 
@@ -60,10 +60,11 @@ $(document).ready(function () {
           .replace('{app_maintainer}', infos.manifest.developer.name)
           .replace('{app_mail}', infos.manifest.developer.email);
       }
-      else {
+
+      if (infos.manifest.maintainer) {
         html = html
-          .replace('{app_maintainer}', 'unknown')
-          .replace('{app_mail}', 'unknown');
+          .replace('{app_maintainer}', infos.manifest.maintainer.name)
+          .replace('{app_mail}', infos.manifest.maintainer.email);
       }
 
       $('#app-accordion').append(html);
@@ -118,6 +119,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Ghost](http://ghost.org) | julien | <div class="ready"/> | https://github.com/julienmalik/ghost_ynh | Blogging platform |
 | [GLPI + FusionInventory](http://www.glpi-project.org/?lang=en) | beudbeud | <div class="ready"/> | https://github.com/abeudin/glpi_ynh | IT And Asset managent |
 | [Jeedom](http://jeedom.fr) | lunarok | <div class="ready"/> | https://github.com/lunarok/jeedom_ynh | Home automation |
+| [Jenkins](http://jenkins-ci.org/) | julien | <div class="ready"/> | https://github.com/julienmalik/jenkins_ynh | Continuous Integration platform |
 | [Kanboard](http://kanboard.net/) | tostaki | <div class=" ready"/> | https://github.com/mbugeia/kanboard_ynh | Visual task board |
 | [KiwiIRC](http://kiwiirc.com) | julien | <div class="ready"/> | https://github.com/julienmalik/kiwiirc_ynh | Web IRC client |
 | [Leed](http://projet.idleman.fr/leed/) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/leed_ynh | RSS reader |
@@ -147,7 +149,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Webmin](http://webmin.com) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/webmin_ynh | Web-based system configuration tool |
 | [Yourls](http://yourls.org/) | courgette | <div class="ready"/> | https://github.com/courgette/yourls_ynh | URL Shortening service |
 | [Zomburl](http://cadav.re/) | courgette | <div class="inprogress"/> | https://github.com/courgette/zomburl_ynh | URL Shortening service |
-| [Jenkins](http://jenkins-ci.org/) | julien | <div class="inprogress"/> | https://github.com/julienmalik/jenkins_ynh | Continuous Integration platform |
+| [Z-Push](https://z-push.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/z-push_ynh | ActiveSync Server |
 
 
 ### Wishlist
