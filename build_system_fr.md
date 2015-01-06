@@ -79,3 +79,12 @@ reprepro -V -b /var/www/repo.yunohost.org/nom_du_repo/ remove megusta nom_du_paq
 reprepro -V -b /var/www/repo.yunohost.org/nom_du_repo/ includedeb megusta nom_du_paquet.deb
 ```
 
+### Gestion des backports
+Pour la gestion des paquets venant du dépôt backport il est possible de les intégrer rapidement dans le repo test de yunohost
+
+Pour ce faire il faut ajouter le nom du paquet dans le fichier `/var/www/repo.yunohost.org/test/conf/list` puis lancer la commande 
+```bash
+reprepro -V -b /var/www/repo.yunohost.org/test update megusta
+```
+Les paquets vont être télécharger et ajouté au repo `test` 
+
