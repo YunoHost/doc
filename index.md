@@ -1,6 +1,6 @@
 <div class="teasing-part" style="
   display: none;
-  background: #222;
+  background: #000;
   color: #eee; 
   position: absolute; 
   top: 0; 
@@ -17,7 +17,7 @@
   width: 100%;
   text-align: center;
   text-align: center">
-<img src="https://yunohost.org/images/ynh_logo_white.png" width="100"/>
+<img src="http://www.charliehebdo.fr/images/jesuischarlie.png" width="320"/>
 </div>
 
 <br />
