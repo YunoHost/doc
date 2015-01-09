@@ -163,6 +163,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 
 [Edit this list](/write_documentation) to add your own favorite app, or learn to [package apps](/packaging_apps) yourself.
 
+* [Scramble, Browser-based PGP web mail](https://github.com/dcposch/scramble)
 * [PPTP VPN](https://packages.debian.org/sv/squeeze/pptpd)
 * [Ethersheet](https://ethersheet.org/)
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
