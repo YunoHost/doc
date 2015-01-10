@@ -43,6 +43,7 @@
             * [Orange](/isp_orange_fr)
             * [Free](/isp_free_fr)
         * [Administration web](/admin_fr)
+        * [Sécurité](/security_fr)
         * [Connexion à son serveur en ligne de commande avec SSH](/ssh_fr)
         * [Administration en ligne de commande avec la Moulinette](/moulinette_fr)
         * [Gestion du certificat](/certificate_fr)
@@ -70,14 +71,10 @@
            * [Écrire de la documentation](/write_documentation_fr)
         * [Contribution](/contributordoc_fr)
 
-* [Feuille de route](/roadmap_fr)
-
-* [Contributeurs](contribs_fr)
-
-* [Sécurité](/security_fr)
-
-* [Entraide - support](/support_fr)
-
-* [Blog](http://news.yunohost.org/)
-
-* [Aide](/help_fr)
+* Autres :
+   * [Feuille de route](/roadmap_en)
+   * [Contributeurs](contribs_fr)
+   * [Entraide - support](/support_fr)
+   * [Blog](https://forum.yunohost.org/c/announcement)
+   * [Travail artistique](artworks_en)
+   * [Aide](/help_fr)
