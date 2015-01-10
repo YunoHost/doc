@@ -33,9 +33,9 @@
 <span class="yolo 1" style="color: #FF3399;">Self-hosting for you, mom</span>
 <span class="yolo 2" style="color: #6699FF;">Haters gonna host</span>
 <span class="yolo 3" style="color: #66FF33;">I host myself, b*tches</span>
-<span class="yolo 4" style="color: #00FFCC;">Go host yourself !</span>
+<span class="yolo 4" style="color: #00FFCC;">Go host yourself!</span>
 <span class="yolo 5" style="color: #FF5050;">Get off of my cloud</span>
-<span class="yolo 6" style="color: #FF0066;">Host me I'm famous</span>
+<span class="yolo 6" style="color: #FF0066;">Host me I’m famous</span>
 <span class="yolo 7" style="color: #3366FF;">Try Internet</span>
 <span class="yolo 8" style="color: #FFFFFF;">How I met your server</span>
 <span class="yolo 9" style="color: #FF6600;">john@doe.org</span>
@@ -47,7 +47,7 @@
   width: 20%; 
   margin: 0 auto;
   color: #222;
-  font-size: 1.6em">What ?</button>
+  font-size: 1.6em">What?</button>
 </div>
 
 
@@ -196,7 +196,7 @@
 <a class="btn btn-lg btn-block btn-info" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/docs">Documentation</a>
 <a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/contribute">Get involved</a>
 <a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://forum.yunohost.org/" target="_blank">Forum</a>
-<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="http://news.yunohost.org">Latest news</a>
+<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://forum.yunohost.org/c/announcement">Latest news</a>
 </div>
 </div>
 
@@ -224,7 +224,7 @@
 <br />
 
 <!--<img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />-->
-<h5><small>2014 • <a href="https://twitter.com/yunohost" style="color:#999">@YunoHost on Twitter</a>  • <a style="color: #999" href="/sitemap">Sitemap</a> • Datalove <3</small></h5>
+<h5><small>2015 • <a href="https://twitter.com/yunohost" style="color:#999">@YunoHost on Twitter</a>  • <a style="color: #999" href="/sitemap">Sitemap</a> • Datalove <3</small></h5>
 </div>
 
 </div>
