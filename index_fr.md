@@ -192,7 +192,7 @@
 <a class="btn btn-lg btn-block btn-info" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/docs_fr">Documentation</a>
 <a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/contribute_fr">Comment contribuer</a>
 <a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://forum.yunohost.org" target="_blank">Forum</a>
-<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="http://news.yunohost.org">Dernières nouvelles</a>
+<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://forum.yunohost.org/c/announcement">Dernières nouvelles</a>
 </div>
 </div>
 
@@ -221,7 +221,7 @@
 
 
 <!--<img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />-->
-<h5><small>2014 • <a href="https://twitter.com/yunohost" style="color:#999">@YunoHost on Twitter</a> • <a style="color: #999" href="/sitemap_fr">Plan du site</a> • Datalove <3</small></h5>
+<h5><small>2015 • <a href="https://twitter.com/yunohost" style="color:#999">@YunoHost on Twitter</a> • <a style="color: #999" href="/sitemap_fr">Plan du site</a> • Datalove <3</small></h5>
 </div>
 
 </div>
