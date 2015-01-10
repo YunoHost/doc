@@ -38,6 +38,7 @@
         * [Internet service provider](/isp)
             * [Main configuration box](/isp_box_config)
         * [Web administration](/admin)
+        * [Security](/security)
         * [Connect to your server with SSH](/ssh)
         * [Command line administration](/moulinette)
         * [Certificates](/certificate)
@@ -62,14 +63,10 @@
            * [Accounting to edit documentation](/accounting)
         * [Contribution](/contributordoc)
 
-* [Roadmap](/roadmap)
-
-* [Contributors](contribs)
-
-* [Security](/security)
-
-* [Support](/support_en)
-
-* [Blog](http://news.yunohost.org/)
-
-* [Help](/help)
+* Others:
+   * [Roadmap](/roadmap)
+   * [Contributors](contribs)
+   * [Support](/support_en)
+   * [Art Works](artworks_en)
+   * [Blog](https://forum.yunohost.org/c/announcement)
+   * [Help](/help)
