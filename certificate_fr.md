@@ -65,7 +65,7 @@ En fonction de l'autorité d'enregistrement, des certificats intermédiaire et r
 > ```bash
 > sudo wget https://knowledge.rapidssl.com/library/VERISIGN/INTERNATIONAL_AFFILIATES/RapidSSL/AR1548/RapidSSLCABundle.txt -O ae_certs/intermediate_ca.pem```
 
-Les certificats intermédiaire et root doivent être réuni avec le certificat obtenu pour créer une chaine de certificats unifiés.
+Les certificats intermédiaire et root doivent être réuni avec le certificat obtenu pour créer une chaîne de certificats unifiés.
 
 En cas d'utilisation d'un certificat racine (StartSSL) :
 
