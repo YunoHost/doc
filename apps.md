@@ -208,3 +208,4 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [racktables](http://racktables.org/)
 * [Known](https://withknown.com/)
 * [Mopidy](https://www.mopidy.com/)
+* [Taiga](https://taiga.io/)
