@@ -12,6 +12,8 @@ An ARM box, a VPS, a dedicated server, a standard x86 computer, an old Macintosh
 * connected to the Internet
 * with a **root access** directly or via SSH
 
+<img width=650 src="https://yunohost.org/images/debian_install.png">
+
 ---
 
 ## Installation steps
