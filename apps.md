@@ -209,3 +209,4 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Known](https://withknown.com/)
 * [Mopidy](https://www.mopidy.com/)
 * [Taiga](https://taiga.io/)
+* [Gitolite](http://gitolite.com/gitolite/)
