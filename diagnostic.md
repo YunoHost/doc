@@ -30,7 +30,7 @@ If you do not see your IP address, or if there is red crosses everywhere, then y
 
 ---
 
-### <small>3.</small> Do network ports are opened on your router ?
+### <small>3.</small> Are network ports opened on your router ?
 
 If your DNS is well configured, and your server looks is accessible locally, you may have **network ports blocked** or not forwarded by your router.    
 In order to verify that, try accessing your server with a client outside your local network. For example via another WiFi access point or with your mobile phone in 3G/4G.
