@@ -37,6 +37,7 @@
             * [Avec OVH](/OVH_fr)
             * [Accéder à son domaine depuis le réseau local](/dns_reseau_local_fr)
         * [Applications](/apps_fr)
+            * [Mettre à jour ses applications](app_update_fr)
         * [Fournisseurs d’accès à Internet](/isp_fr)
             * [Configuration générale box](/isp_box_config_fr)
             * [SFR](/isp_sfr_fr)
