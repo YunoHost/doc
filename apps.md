@@ -149,6 +149,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Shaarli](http://sebsauvage.net/wiki/doku.php?id=php:shaarli) | ju | <div class="inprogress"/> | https://github.com/julienmalik/shaarli_ynh | Delicious clone |
 | [Sickbeard](http://sickbeard.com) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sickbeard_ynh | PVR and episode guide that downloads and manages all your TV shows |
 | [Subsonic](http://subsonic.org) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/subsonic_ynh | Web-based media server |
+| [Tor Relay](https://www.torproject.org/docs/tor-doc-relay.html.en) | matlink | <div class="inprogress"/> | https://github.com/matlink/torrelay_ynh | Tor Node |
 | [Webmin](http://webmin.com) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/webmin_ynh | Web-based system configuration tool |
 | [Wordpress multisite](http://codex.wordpress.org/Create_A_Network) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/wordpress_ynh | Wordpress with network support |
 | [Yourls](http://yourls.org/) | courgette | <div class="ready"/> | https://github.com/courgette/yourls_ynh | URL Shortening service |
@@ -183,7 +184,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [RainLoop](http://rainloop.net/)
 * [Mailpile](https://www.mailpile.is)
 * [ZNC](http://wiki.znc.in/ZNC)
-* [Tor relay](https://www.torproject.org/docs/tor-doc-relay.html.en)
 * [uMap](https://umap.openstreetmap.fr/en/)
 * [Headphones](https://github.com/rembo10/headphones)
 * [MediaCrush](https://mediacru.sh/)
