@@ -35,7 +35,7 @@
 * ~~Add a download files button on Transmission interface *(opi)*~~
 * ~~Update Metronome to v3.6 and make a more Debian-friendly package *(jerome)*~~
 * Install and switch to a new build system on a new server *(beudbeud)*
-* Warn users about security updates in the webadmin *(opi)*
+* ~~Warn users about security updates in the webadmin *(opi)*~~
 * Implement a simple backup & restore system *(jerome, kload)*
 * Add logging to the moulinette for each action *(jerome)*
 * Review the app manifest format and integrate it *(app maintainers, jerome, opi)*
