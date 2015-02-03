@@ -1,4 +1,1 @@
-doc
-===
-
-Documentation for YunoHost v2
+# YunoHost Documentation
