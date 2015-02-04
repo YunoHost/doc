@@ -24,7 +24,7 @@ Ansi, les dépôts de chaque paquet yunohost possèdent 3 branches correspondant
 
 Aucun commit dans la branche daily ne modifie le fichier `debian/changelog` car celui-ci est modifié automatiquement lors du build d'un paquet daily, avec une version correspondant à la date-heure de construction.
 
-`TODO` ajouter un pre-commit hook pour éviter les erreurs ?
+**`TODO`** ajouter un pre-commit hook pour éviter les erreurs ?
 
 Tout commit modifiant fonctionnellement les paquets doit se faire dans cette branche daily.
 
@@ -43,25 +43,25 @@ Ceci va configurer un nouvel alias git nommé `yunobump`, global (stocké dans `
 
 Pour mettre à jour une version dans `test` ou `stable`, exécuter simplement:
 ```bash
-git yunobump x.y.z-p
+$ git yunobump x.y.z-p
 ```
 Ceci a pour effet d'utiliser `git-dch` pour mettre à jour le changelog, et de créer un nouveau `tag` sur le commit modifiant le changelog.
 Le tag sera lui-même utilisé lors des exécutions ultérieures de git-dch pour connaître la nouvelle liste des commits à prendre en compte. Il doit donc avoir un format bien particulier, mais ceci est géré grâce à yunobump.
 
-`TODO` politique sur les numéros de version. git-dch ne supporte pas les ~ dans les numéros de version
+**`TODO`** politique sur les numéros de version. git-dch ne supporte pas les ~ dans les numéros de version
 
-`TODO` politique sur les format de tag, actuellement $branch/$version pour autoriser la même version dans deux branches différentes. est-ce vraiment souhaitable ?
+**`TODO`** politique sur les format de tag, actuellement $branch/$version pour autoriser la même version dans deux branches différentes. est-ce vraiment souhaitable ?
 
-`TODO` normalement à chaque push sur test ou stable, le dernier commit est un commit de changelog et il est taggué proprement. on doit pouvoir implémenter un hook git de pre-push qui empêche de pousser des trucs à moitié fait (une erreur dans git yunobump, un git tag -d, un commit à la main...)
+**`TODO`** normalement à chaque push sur test ou stable, le dernier commit est un commit de changelog et il est taggué proprement. on doit pouvoir implémenter un hook git de pre-push qui empêche de pousser des trucs à moitié fait (une erreur dans git yunobump, un git tag -d, un commit à la main...)
 
 ###### Branche test et stable - faire un hotfix
 
 Il peut arriver, de façon exceptionnelle, qu'on ait besoin de faire un hotfix (de sécurité par exemple) sur les paquets en `stable` ou en `test`, pour lequel le merge de la branche daily n'est pas acceptable (car trop de nouvelles fonctionnalités en développement sur daily).
 ** Cette situation doit rester exceptionnelle **
 
-`TODO` à décrire
+**`TODO`** à décrire
 
-`TODO` dev un helper 'git yunohotfix ...' qui commit dans stable et cherry-pick tout de suite dans daily ? ou l'inverse ?
+**`TODO`** dev un helper 'git yunohotfix ...' qui commit dans stable et cherry-pick tout de suite dans daily ? ou l'inverse ?
 
 #### Paquets non YunoHost
 
@@ -88,19 +88,19 @@ Une fois les paquets buildés, ils sont ajoutés au repo `daily`.
 Il est possible de relancer manuellement le build d'un paquet.
 
 ```bash
-daily_build -p nom_du_paquet
+$ daily_build -p nom_du_paquet
 ```
 
 #### Build d'un paquet non YunoHost
 
 ```bash
-build_deb -p path_du_paquet
+$ build_deb -p path_du_paquet
 ```
 
 ### Passage de `daily` à `test`
 
 ```bash
-push-packages-test -p nom_du_paquet
+$ push-packages-test -p nom_du_paquet
 ```
 
 Il est possible d'utiliser l'option `-v` pour définir manuellement la version du paquet.
@@ -113,7 +113,7 @@ Le script va récuperer les sources du paquet dans `daily` puis ouvrir le change
 ### Passage de `test` à `stable`
 
 ```bash
-push-package-stable -p nom_du_paquet
+$ push-package-stable -p nom_du_paquet
 ```
 
 Cette commande passe simplement le paquet du repo `test` à `stable`, sans rebuild.
@@ -123,12 +123,12 @@ Cette commande passe simplement le paquet du repo `test` à `stable`, sans rebui
 
 * Suppression d'un paquet
 ```bash
-reprepro -V -b /var/www/repo.yunohost.org/nom_du_repo/ remove megusta nom_du_paquet
+$ reprepro -V -b /var/www/repo.yunohost.org/nom_du_repo/ remove megusta nom_du_paquet
 ```
 
 * Ajout d'un paquet debian dans un repo
 ```bash
-reprepro -V -b /var/www/repo.yunohost.org/nom_du_repo/ includedeb megusta nom_du_paquet.deb
+$ reprepro -V -b /var/www/repo.yunohost.org/nom_du_repo/ includedeb megusta nom_du_paquet.deb
 ```
 
 ### Gestion des backports
@@ -136,7 +136,7 @@ Pour la gestion des paquets venant du dépôt backport il est possible de les in
 
 Pour ce faire il faut ajouter le nom du paquet dans le fichier `/var/www/repo.yunohost.org/test/conf/list` puis lancer la commande 
 ```bash
-reprepro -V -b /var/www/repo.yunohost.org/test update megusta
+$ reprepro -V -b /var/www/repo.yunohost.org/test update megusta
 ```
 Les paquets vont être télécharger et ajouté au repo `test` 
 
