@@ -24,7 +24,7 @@ Ansi, les dépôts de chaque paquet yunohost possèdent 3 branches correspondant
 
 Aucun commit dans la branche daily ne modifie le fichier `debian/changelog` car celui-ci est modifié automatiquement lors du build d'un paquet daily, avec une version correspondant à la date-heure de construction.
 
-TODO : ajouter un pre-commit hook pour éviter les erreurs ?
+`TODO` ajouter un pre-commit hook pour éviter les erreurs ?
 
 Tout commit modifiant fonctionnellement les paquets doit se faire dans cette branche daily.
 
@@ -48,20 +48,20 @@ git yunobump x.y.z-p
 Ceci a pour effet d'utiliser `git-dch` pour mettre à jour le changelog, et de créer un nouveau `tag` sur le commit modifiant le changelog.
 Le tag sera lui-même utilisé lors des exécutions ultérieures de git-dch pour connaître la nouvelle liste des commits à prendre en compte. Il doit donc avoir un format bien particulier, mais ceci est géré grâce à yunobump.
 
-TODO : politique sur les numéros de version. git-dch ne supporte pas les ~ dans les numéros de version
+`TODO` politique sur les numéros de version. git-dch ne supporte pas les ~ dans les numéros de version
 
-TODO : politique sur les format de tag, actuellement $branch/$version pour autoriser la même version dans deux branches différentes. est-ce vraiment souhaitable ?
+`TODO` politique sur les format de tag, actuellement $branch/$version pour autoriser la même version dans deux branches différentes. est-ce vraiment souhaitable ?
 
-TODO : normalement à chaque push sur test ou stable, le dernier commit est un commit de changelog et il est taggué proprement. on doit pouvoir implémenter un hook git de pre-push qui empêche de pousser des trucs à moitié fait (une erreur dans git yunobump, un git tag -d, un commit à la main...)
+`TODO` normalement à chaque push sur test ou stable, le dernier commit est un commit de changelog et il est taggué proprement. on doit pouvoir implémenter un hook git de pre-push qui empêche de pousser des trucs à moitié fait (une erreur dans git yunobump, un git tag -d, un commit à la main...)
 
 ###### Branche test et stable - faire un hotfix
 
 Il peut arriver, de façon exceptionnelle, qu'on ait besoin de faire un hotfix (de sécurité par exemple) sur les paquets en `stable` ou en `test`, pour lequel le merge de la branche daily n'est pas acceptable (car trop de nouvelles fonctionnalités en développement sur daily).
 ** Cette situation doit rester exceptionnelle **
 
-TODO : à décrire
+`TODO` à décrire
 
-TODO : dev un helper 'git yunohotfix ...' qui commit dans stable et cherry-pick tout de suite dans daily ? ou l'inverse ?
+`TODO` dev un helper 'git yunohotfix ...' qui commit dans stable et cherry-pick tout de suite dans daily ? ou l'inverse ?
 
 #### Paquets non YunoHost
 
