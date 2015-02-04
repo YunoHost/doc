@@ -22,7 +22,9 @@ Ansi, les dépôts de chaque paquet yunohost possèdent 3 branches correspondant
 
 ###### Branche daily
 
-Aucun commit dans la branche daily ne modifie le fichier `debian/changelog` car celui-ci est modifié automatiquement lors du build d'un paquet daily, avec une version correspondant à la date-heure de construction. (TODO : ajouter un pre-commit hook pour éviter les erreurs ?)
+Aucun commit dans la branche daily ne modifie le fichier `debian/changelog` car celui-ci est modifié automatiquement lors du build d'un paquet daily, avec une version correspondant à la date-heure de construction.
+
+TODO : ajouter un pre-commit hook pour éviter les erreurs ?
 
 Tout commit modifiant fonctionnellement les paquets doit se faire dans cette branche daily.
 
@@ -37,15 +39,18 @@ Des outils à destinations des mainteneurs de paquets sont disponibles sur le d�
 $ git clone https://github.com/YunoHost/yunohost-debhelper
 $ yunohost-debhelper/setup_git_alias.sh
 ```
-Ceci va configurer un nouvel alias git nommé `yunobump`, global (stocké dans `~/.gitconfig` et donc accessible depuis n'importe quel répertoire). Pour mettre à jour une version dans `test` ou `stable`, exécuter simplement:
+Ceci va configurer un nouvel alias git nommé `yunobump`, global (stocké dans `~/.gitconfig` et donc accessible depuis n'importe quel dépôt git local).
+
+Pour mettre à jour une version dans `test` ou `stable`, exécuter simplement:
 ```bash
-git yunobump x.y.z-n.m
+git yunobump x.y.z-p
 ```
 Ceci a pour effet d'utiliser `git-dch` pour mettre à jour le changelog, et de créer un nouveau `tag` sur le commit modifiant le changelog.
 Le tag sera lui-même utilisé lors des exécutions ultérieures de git-dch pour connaître la nouvelle liste des commits à prendre en compte. Il doit donc avoir un format bien particulier, mais ceci est géré grâce à yunobump.
 
 TODO : politique sur les numéros de version. git-dch ne supporte pas les ~ dans les numéros de version
-TODO : politique sur les format de tag, actuellement $branch/$version pour autoriser la même version dans deux branches différentes.
+
+TODO : politique sur les format de tag, actuellement $branch/$version pour autoriser la même version dans deux branches différentes. est-ce vraiment souhaitable ?
 
 ###### Branche test et stable - faire un hotfix
 
@@ -53,6 +58,7 @@ Il peut arriver, de façon exceptionnelle, qu'on ait besoin de faire un hotfix (
 ** Cette situation doit rester exceptionnelle **
 
 TODO : à décrire
+
 TODO : dev un helper 'git yunohotfix ...' qui commit dans stable et cherry-pick tout de suite dans daily ? ou l'inverse ?
 
 #### Paquets non YunoHost
