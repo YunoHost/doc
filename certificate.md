@@ -7,7 +7,11 @@ Concretely users will go throw a screen like this:
 
 <img src="https://yunohost.org/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
+<<<<<<< HEAD
 This screen ask to the user : **"Do you trust this server that host this website?"**
+=======
+This screen ask to the user : **« Do you trust this server that host this website? »**
+>>>>>>> 4e7248a204f8858974480efe113e8463add31c21
 It could afraid a lot of users (rightly).
 
 To avoid this confusion, it's possible to get a signed certificate  by a "known" authority : **Gandi**, **RapidSSL**, **StartSSL**, **CaCert**.
