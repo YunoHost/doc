@@ -18,7 +18,7 @@ Il existe trois repo (`daily`, `test` et `stable`):
 
 Le but du workflow est d'éviter toute intervention manuelle (lancement d'un script, ...) sur le serveur, et de maîtriser la gestion des paquets via GitHub uniquement.
 
-Ansi, les dépôts de chaque paquet yunohost possèdent 3 branches correspondant aux trois dépôts (`daily`, `test` et `stable`). Le serveur de build construit et déploie les paquets source et binaires Debian correspondant à l'état de ces trois branches sur GitHub.
+Ansi, les dépôts de chaque paquet yunohost possèdent 3 branches correspondant aux trois dépôts (`daily`, `test` et `stable`). Le serveur de build construit et déploie **automatiquement** les paquets source et binaires Debian correspondant à l'état de ces trois branches sur GitHub.
 
 ###### Branche daily
 
