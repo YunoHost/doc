@@ -41,11 +41,32 @@ $ yunohost-debhelper/setup_git_alias.sh
 ```
 Ceci va configurer un nouvel alias git nommé `yunobump`, global (stocké dans `~/.gitconfig` et donc accessible depuis n'importe quel dépôt git local).
 
-Pour mettre à jour une version dans `test` ou `stable`, exécuter simplement:
+Pour mettre à jour une version dans `test` ou `stable`, le workflow habituel est le suivant :
 ```bash
+# You will obviously need to clone once...
+$ git clone git@github.com:YunoHost/yunohost-config-nginx.git
+$ cd yunohost-config-nginx
+
+# Be sure to be up-to-date, and don't forget to get the tags !
+$ git fetch --tags
+
+# Checkout your branch : stable or test
+$ git checkout test
+
+# Do your 'functional' modification : either merge daily in test, or merge test in stable
+$ git pull daily
+
+# What is the current version number in test ?
+$ dpkg-parsechangelog | grep "^Version" | cut -d ' ' -f 2
+
+# Update changelog and do a proper tag
 $ git yunobump x.y.z-p
+
+# Push to GitHub
+$ git push origin test
 ```
-Ceci a pour effet d'utiliser `git-dch` pour mettre à jour le changelog, et de créer un nouveau `tag` sur le commit modifiant le changelog.
+
+`git yunobump` a pour effet d'utiliser `git-dch` pour mettre à jour le changelog, et de créer un nouveau `tag` sur le commit modifiant le changelog.
 Le tag sera lui-même utilisé lors des exécutions ultérieures de git-dch pour connaître la nouvelle liste des commits à prendre en compte. Il doit donc avoir un format bien particulier, mais ceci est géré grâce à yunobump.
 
 **`TODO`** politique sur les numéros de version. git-dch ne supporte pas les ~ dans les numéros de version
