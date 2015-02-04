@@ -10,7 +10,7 @@ En effet, les utilisateurs devront passer par un écran de ce type :
 Cet écran revient à demander **« Avez-vous confiance au serveur qui héberge ce site ? »**.    
 Cela peut effrayer vos utilisateurs (à juste titre).
 
-Pour éviter cette confusion, il est possible d'obtenir un certificat signé par une autorité « connue » : **Gandi**, **RapidSSL**, **StartSSL**.    
+Pour éviter cette confusion, il est possible d'obtenir un certificat signé par une autorité « connue » : **Gandi**, **RapidSSL**, **StartSSL**, **Cacert**.    
 Dans ce cas, il s’agira de remplacer le certificat auto-signé par celui qui a été reconnu par une autorité de certification, et vos utilisateurs n’auront plus à passer par cet écran d’avertissement.
 
 ### Ajout d’un certificat signé par une autorité
@@ -65,9 +65,14 @@ En fonction de l'autorité d'enregistrement, des certificats intermédiaire et r
 > ```bash
 > sudo wget https://knowledge.rapidssl.com/library/VERISIGN/INTERNATIONAL_AFFILIATES/RapidSSL/AR1548/RapidSSLCABundle.txt -O ae_certs/intermediate_ca.pem```
 
+> **Cacert**
+> ```bash
+> sudo wget http://www.cacert.org/certs/root.crt -O ae_certs/ca.pem
+> sudo wget http://www.cacert.org/certs/class3.crt -O ae_certs/intermediate_ca.pem```
+
 Les certificats intermédiaire et root doivent être réuni avec le certificat obtenu pour créer une chaîne de certificats unifiés.
 
-En cas d'utilisation d'un certificat racine (StartSSL) :
+En cas d'utilisation d'un certificat racine (StartSSL, Cacert) :
 
 ```bash
 cat ae_certs/ssl.crt ae_certs/intermediate_ca.pem ae_certs/ca.pem | sudo tee crt.pem```

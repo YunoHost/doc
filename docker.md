@@ -54,8 +54,8 @@ You will then be able to [postinstall](/postinstall) all this by entering the co
 
 **Notice:** You may want to forward some of your container's ports, find more information or these pages:
 
-* http://docs.docker.io/reference/commandline/cli/#run
-* http://docs.docker.io/use/port_redirection/#port-redirection
+* http://docs.docker.com/reference/commandline/cli/#run
+* http://docs.docker.com/userguide/dockerlinks/
 
 
 ---
@@ -85,12 +85,15 @@ iptables -t nat -A POSTROUTING -s '<container.IP>/32' -o eth0 -j SNAT --to-sourc
 ```bash
 # You will need:
 # * your container's ID
-docker ps -notrunc | grep yunohost
+docker ps --no-trunc | grep yunohost
 # * your container's PID
-cat /var/lib/docker/execdriver/native/<container_ID>/pid
+docker ps -q | xargs docker inspect --format '{{.State.Pid}}'
 # * `util-linux` package
 apt-get install util-linux || pacman -S util-linux
 
 # Run the nsenter command with the right parameters
 nsenter --target <PID> --mount --uts --ipc --net --pid /bin/bash
+
+# Otherwise, with docker
+docker run -t -i yunohost:init /bin/bash
 ```

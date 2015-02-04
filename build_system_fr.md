@@ -1,7 +1,7 @@
 #Création de paquet Debian
 
 ## Architecture
-Le système se compose de rebuildd qui est un front-end pour `pbuilder`, des chroot pbuilder pour i386, amd64, armhf et de `reprepro` pour le système de repo debian.
+Le système se compose de `rebuildd` qui est un front-end pour `pbuilder`, des chroot pbuilder pour i386, amd64, armhf et de `reprepro` pour le système de repo debian.
 
 ---
 
