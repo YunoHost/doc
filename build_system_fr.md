@@ -52,6 +52,8 @@ TODO : politique sur les numéros de version. git-dch ne supporte pas les ~ dans
 
 TODO : politique sur les format de tag, actuellement $branch/$version pour autoriser la même version dans deux branches différentes. est-ce vraiment souhaitable ?
 
+TODO : normalement à chaque push sur test ou stable, le dernier commit est un commit de changelog et il est taggué proprement. on doit pouvoir implémenter un hook git de pre-push qui empêche de pousser des trucs à moitié fait (une erreur dans git yunobump, un git tag -d, un commit à la main...)
+
 ###### Branche test et stable - faire un hotfix
 
 Il peut arriver, de façon exceptionnelle, qu'on ait besoin de faire un hotfix (de sécurité par exemple) sur les paquets en `stable` ou en `test`, pour lequel le merge de la branche daily n'est pas acceptable (car trop de nouvelles fonctionnalités en développement sur daily).
