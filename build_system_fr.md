@@ -9,7 +9,51 @@ Le système se compose de `rebuildd` qui est un front-end pour `pbuilder`, des c
 
 #### Paquets YunoHost
 
-Il existe trois repo (`daily`, `test` et `stable`), les paquets du repo `daily` correspondent à la dernière version du git. Le repo `test` permet de mettre en place une nouvelle version d'un paquet qui sera ensuite testé. Une fois le paquet testé et validé, il est passé manuellement dans le repo  `stable`.
+Il existe trois repo (`daily`, `test` et `stable`):
+* Les paquets du repo `daily` correspondent à la dernière version du git, et sont reconstruits de façon automatisée toutes les nuits.
+
+* Le repo `test` permet de mettre en place une nouvelle version d'un paquet qui sera ensuite testé
+
+* Le repo `stable` contient la version de production
+
+Le but du workflow est d'éviter toute intervention manuelle (lancement d'un script, ...) sur le serveur, et de maîtriser la gestion des paquets via GitHub uniquement.
+
+Ansi, les dépôts de chaque paquet yunohost possèdent 3 branches correspondant aux trois dépôts (`daily`, `test` et `stable`). Le serveur de build construit et déploie les paquets source et binaires Debian correspondant à l'état de ces trois branches sur GitHub.
+
+###### Branche daily
+
+Aucun commit dans la branche daily ne modifie le fichier `debian/changelog` car celui-ci est modifié automatiquement lors du build d'un paquet daily, avec une version correspondant à la date-heure de construction. (TODO : ajouter un pre-commit hook pour éviter les erreurs ?)
+
+Tout commit modifiant fonctionnellement les paquets doit se faire dans cette branche daily.
+
+###### Branche test et stable - workflow standard
+
+Aucun commit fonctionnel n'est effectué directement dans ces branches. On ne fait que des merge (merge de daily dans test et merge de test dans stable)
+
+Les seules modifications spécifiques à ces dépôts sont les changements de versions (modification de `debian/changelog` puis tag)
+
+Des outils à destinations des mainteneurs de paquets sont disponibles sur le dépôt [yunohost-debhelper](https://github.com/YunoHost/yunohost-debhelper)
+```bash
+$ git clone https://github.com/YunoHost/yunohost-debhelper
+$ yunohost-debhelper/setup_git_alias.sh
+```
+Ceci va configurer un nouvel alias git nommé `yunobump`, global (stocké dans `~/.gitconfig` et donc accessible depuis n'importe quel répertoire). Pour mettre à jour une version dans `test` ou `stable`, exécuter simplement:
+```bash
+git yunobump x.y.z-n.m
+```
+Ceci a pour effet d'utiliser `git-dch` pour mettre à jour le changelog, et de créer un nouveau `tag` sur le commit modifiant le changelog.
+Le tag sera lui-même utilisé lors des exécutions ultérieures de git-dch pour connaître la nouvelle liste des commits à prendre en compte. Il doit donc avoir un format bien particulier, mais ceci est géré grâce à yunobump.
+
+TODO : politique sur les numéros de version. git-dch ne supporte pas les ~ dans les numéros de version
+TODO : politique sur les format de tag, actuellement $branch/$version pour autoriser la même version dans deux branches différentes.
+
+###### Branche test et stable - faire un hotfix
+
+Il peut arriver, de façon exceptionnelle, qu'on ait besoin de faire un hotfix (de sécurité par exemple) sur les paquets en `stable` ou en `test`, pour lequel le merge de la branche daily n'est pas acceptable (car trop de nouvelles fonctionnalités en développement sur daily).
+** Cette situation doit rester exceptionnelle **
+
+TODO : à décrire
+TODO : dev un helper 'git yunohotfix ...' qui commit dans stable et cherry-pick tout de suite dans daily ? ou l'inverse ?
 
 #### Paquets non YunoHost
 
