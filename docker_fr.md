@@ -53,8 +53,8 @@ Cette commande lancera un conteneur sur la base de l'image `yunohost`, tag `init
 
 **Remarque :** vous pourrez avoir besoin de forwarder certains ports de votre conteneur docker, pour cela consultez les pages de documentation suivantes :
 
-* http://docs.docker.io/reference/commandline/cli/#run
-* http://docs.docker.io/use/port_redirection/#port-redirection
+* http://docs.docker.com/reference/commandline/cli/#run
+* http://docs.docker.com/userguide/dockerlinks/
 
 
 ---
@@ -84,12 +84,14 @@ iptables -t nat -A POSTROUTING -s '<IP conteneur docker>/32' -o eth0 -j SNAT --t
 ```bash
 # Vous avez besoin :
 # * de votre ID de conteneur
-docker ps -notrunc | grep yunohost
+docker ps --no-trunc | grep yunohost
 # * du PID de votre conteneur
-cat /var/lib/docker/execdriver/native/<ID_de_mon_conteneur>/pid
+docker ps -q | xargs docker inspect --format '{{.State.Pid}}'
 # du paquet `util-linux`
 apt-get install util-linux || pacman -S util-linux
-
 # Lancez la commande nsenter avec les paramètre kivonbien©
 nsenter --target <PID> --mount --uts --ipc --net --pid /bin/bash
+
+# Sinon, avec docker
+docker run -t -i yunohost:init /bin/bash
 ```

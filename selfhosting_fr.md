@@ -38,4 +38,5 @@ Si vous vous servez du système de [courrier électronique](/email_fr), et que v
 #### Pour aller plus loin
 * [Auto-hebergement.fr](http://www.auto-hebergement.fr/)
 * [Conférence de Benjamin Bayart - Internet libre, ou Minitel 2.0 ?](http://www.fdn.fr/internet-libre-ou-minitel-2.html)
+* [Conférence de Dufromentel - Auto-hébergement vous pouvez ? - Capitole du Libre - 2014](http://videos2014.capitoledulibre.org/internet-libre/dufromentel-auto-hebergement-vous-pouvez.webm)
 * [Conférence de Richard Stallman - Le logiciel libre](http://perso.telecom-paristech.fr/~boucart/video/conf_stallman.webm)

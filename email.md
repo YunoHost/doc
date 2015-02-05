@@ -31,6 +31,14 @@ The automatic detection tool of Thunderbird does not work with YunoHost. You wil
 [K-9 Mail](https://en.wikipedia.org/wiki/K-9_Mail) application works.
 
 ### Migration
+Emails can be migrated with [Larch](https://github.com/rgrove/larch/):
+* on your client install Larch:
+```bash
+sudo gem install larch
+```
+* Proceed to the transfert between two YunoHost servers:
+```bash
+larch -a -f imaps://serveur_d'origine.org -t imaps://serveur_de_destination.org
+```
+For other type of tranfers refer you to Larch documentation.
 
-Your emails are stored in the `/var/mail/` directory.
-You will need to move that folder to your new YunoHost server.

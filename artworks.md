@@ -5,4 +5,4 @@ Black and white YunoHost png logo done by ToZz (400 × 400 px):
 
 Clic to download.
 
-TODO: add licence and .svg images.
+Licence: CC-BY-SA 4.0
