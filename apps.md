@@ -173,6 +173,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 
 [Edit this list](/write_documentation) to add your own favorite app, or learn to [package apps](/packaging_apps) yourself.
 
+* [Odoo ERP](https://github.com/odoo/odoo) or (https://www.odoo.com)
 * [PPTP VPN](https://packages.debian.org/sv/squeeze/pptpd)
 * [Ethersheet](https://ethersheet.org/)
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
