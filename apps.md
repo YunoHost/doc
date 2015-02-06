@@ -115,6 +115,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Firefox Sync](https://www.mozilla.org/en-US/firefox/sync/) | beudbeud | <div class="inprogress"/> |https://github.com/abeudin/ffsync_ynh | Firefox synchronization server |
 | [FreshRSS](http://freshrss.org/) | plopoyop | <div class="ready"/> | https://github.com/plopoyop/freshrss_ynh | RSS reader |
 | FTP support for webapp | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/ftp_support_webapp_ynh | FTP support for webapp |
+| [Gogs](http://gogs.io/) | tostaki | <div class=" inprogress"/> | https://github.com/mbugeia/gogs_ynh | self-hosted Git service |
 | [HTML Tools](http://lehollandaisvolant.net/tout/tools/)| IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/htmltools_ynh | HTML Mini-tools |
 | [HTPC Manager](http://htpc.io) | lunarok | <div class="ready"/> | https://github.com/lunarok/htpc_ynh | Manage your HTPC |
 | [Ghost](http://ghost.org) | ju | <div class="ready"/> | https://github.com/julienmalik/ghost_ynh | Blogging platform |
