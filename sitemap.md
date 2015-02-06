@@ -63,7 +63,7 @@
            * [Accounting to edit documentation](/accounting)
         * [Contribution](/contributordoc)
 
-* Others:
+* Project's life:
    * [Roadmap](/roadmap)
    * [Contributors](contribs)
    * [Support](/support_en)
