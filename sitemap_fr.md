@@ -72,7 +72,7 @@
            * [Écrire de la documentation](/write_documentation_fr)
         * [Contribution](/contributordoc_fr)
 
-* Autres :
+* Vie du projet :
    * [Feuille de route](/roadmap_en)
    * [Contributeurs](contribs_fr)
    * [Entraide - support](/support_fr)
