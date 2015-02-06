@@ -214,3 +214,4 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Mopidy](https://www.mopidy.com/)
 * [Taiga](https://taiga.io/)
 * [Gitolite](http://gitolite.com/gitolite/)
+* [h5ai](http://larsjung.de/h5ai/)
