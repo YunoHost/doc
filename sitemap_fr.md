@@ -77,5 +77,6 @@
    * [Contributeurs](contribs_fr)
    * [Entraide - support](/support_fr)
    * [Blog](https://forum.yunohost.org/c/announcement)
+   * [Communication extérieure](communication_fr)
    * [Travail artistique](artworks_en)
    * [Aide](/help_fr)
