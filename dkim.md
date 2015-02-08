@@ -1,37 +1,34 @@
-
-
-Hi,
+# DKIM
 
 Please note that :
 
-This is the revision 2 of this Work In Progress How-To
+This is the revision 2 of this Work In Progress How-To.
 
-Until this is natively integrated in YnH core apps, it will mean to that postfix conf will be blocked (or each time there is a change some configuration lines will need to be added to the end of /etc/postfix/main.cf)
+Until this is natively integrated in YunoHost core apps, it will mean to that Postfix configuration will be blocked (or each time there is a change some configuration lines will need to be added to the end of /etc/postfix/main.cf).
 
-To be fully functionnal DKIM requires a modification of the DNS, which propagantion can take up to 24h
+To be fully functionnal DKIM requires a modification of the DNS, which propagantion can take up to 24h.
 
-CREDIT : This tutorial has been initially based on the DKMI section of : http://sealedabstract.com/code/nsa-proof-your-e-mail-in-2-hours/ from Drew Crawford
-CREDIT : This tutorial has been reviewed based on 
+Source: This tutorial has been initially based on the DKMI section of: http://sealedabstract.com/code/nsa-proof-your-e-mail-in-2-hours/ from Drew Crawford.
 
-https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy from Popute Sebastian Armin
+Source: This tutorial has been reviewed based on https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy from Popute Sebastian Armin
 
-Replace DOMAIN.TLD by your own domain name
+Replace DOMAIN.TLD by your own domain name.
 
-Changes in rev 2 :
+Changes in rev 2:
 
-Much easier to manage more than one DOMAIN.TLD (future proof)
-Updated configuration as it seemed that the previous one was based on old software
+Much easier to manage more than one DOMAIN.TLD (future proof).
+Updated configuration as it seemed that the previous one was based on old software.
 
-So, here is the thing :
-Solution 1 : Fully automatic script : (single domain)
+So, here is the thing:
+### With a script
+Fully automatic script: (single domain)
 ```bash
 git clone https://github.com/polytan02/yunohost_auto_config_basic
 sudo ./yunohost_auto_config_basic/5_opendkim.sh
 ```
 
-Solution 2 : All by hand !
-
-We start by installing the right software : 
+### Manually
+We start by installing the right software: 
 ```bash
 sudo aptitude install opendkim opendkim-tools
 ```
@@ -78,12 +75,12 @@ Text to be placed in the text file:
 SOCKET="inet:8891@localhost"
 ```
 
-Configure postfix to use this milter:
+Configure Postfix to use this milter:
 ```bash
 sudo nano /etc/postfix/main.cf
 ```
 
-Text to be placed AT THE END in the text file: 
+Text to be placed **at the end** in the text file: 
 ```bash
 # OpenDKIM milter 
 
@@ -116,7 +113,7 @@ Create a key table:
 sudo nano /etc/opendkim/KeyTable
 ```
 
-Text to be placed in the text file: Be very careful, it needs to be on a SINGLE LINE for each domain
+Text to be placed in the text file: be very careful, it needs to be on a **single line** for each domain.
 ```bash
 mail._domainkey.DOMAIN.TLD DOMAIN.TLD:mail:/etc/opendkim/keys/DOMAIN.TLD/mail.private
 ```
@@ -131,13 +128,13 @@ Text to be placed in the text file:
 *@DOMAIN.TLD mail._domainkey.DOMAIN.TLD
 ```
 
-Now we generate the keys ! smile 
+Now we generate the keys! smile 
 ```bash
 sudo cd /etc/opendkim/keys/DOMAIN.TLD
 sudo opendkim-genkey -s mail -d DOMAIN.TLD
 ```
 
-Output the DKIM DNS line to the terminal. Then, we install it on our DNS server. My ZONE file looks like this. (Be very careful with the formatting, the "p=...." needs to be in a single line.
+Output the DKIM DNS line to the terminal. Then, we install it on our DNS server. My ZONE file looks like this. (Be very careful with the formatting, the "p=...." needs to be in a single line.)
 ```bash
 cat mail.txt
 
@@ -149,17 +146,17 @@ And we don't forget to put the right rights otherwise opendkim will get grumpy..
 chown -Rv opendkim:opendkim /etc/opendkim*
 ```
 
-And finally, we restart everything :
+And finally, we restart everything:
 ```bash
 sudo service opendkim restart
 sudo service postfix restart
 ```
 
-To test if it is all working well (don't forget that the DNS propagation can take a bit of take....) you can simply send an email to check-auth@verifier.port25.com and a reply will be received. If everything works correctly you should see DKIM check: pass under Summary of Results.
+To test if it is all working well (don't forget that the DNS propagation can take a bit of take…) you can simply send an email to check-auth@verifier.port25.com and a reply will be received. If everything works correctly you should see DKIM check: pass under Summary of Results.
 
 You can also go to http://www.mail-tester.com
 
-Lastly, don't forget to add a SPF key in your DNS such as :
+Lastly, don't forget to add a SPF key in your DNS such as:
 ```bash
 DOMAIN.TLD 300 TXT "v=spf1 a:DOMAIN.TLD mx ?all"
 ```
