@@ -47,6 +47,8 @@
         * [Sécurité](/security_fr)
         * [Connexion à son serveur en ligne de commande avec SSH](/ssh_fr)
         * [Administration en ligne de commande avec la Moulinette](/moulinette_fr)
+        * Email:
+           * [DKIM](dkim_fr)
         * [Gestion du certificat](/certificate_fr)
             * [Régénérer un certificat](/regenerate_certificate_fr)
         * [YunoHost service caché Tor](/torhiddenservice_fr)
