@@ -21,7 +21,13 @@ La config s'adapte très facilement à plusieurs noms de domaines simultanés.
 Mise à jour des paramètres de configuration avec la dernière version de opendkim disponible dans Debian 7.
 
 Rentrons maintenant dans le cœur du sujet :
+Solution 1 : utiliser un script tout fait et répondez aux questions : 
+```bash
+git clone https://github.com/polytan02/yunohost_auto_config_basic
+sudo ./yunohost_auto_config_basic/5_opendkim.sh
+```
 
+Solution 2 : tout à la main :
 On commence par installer les logiciels : 
 ```bash
 sudo aptitude install opendkim opendkim-tools
@@ -34,7 +40,7 @@ sudo nano /etc/opendkim.conf
 
 Texte à insérer dans le document :
 ```bash
-AutoRestart Yes
+AutoRestart  Yes
 AutoRestartRate 10/1h
 UMask 022
 Syslog yes
@@ -76,6 +82,7 @@ sudo nano /etc/postfix/main.cf
 
 Texte à insérer à la fin du document :
 ```bash
+# OpenDKIM milter
 milter_protocol = 2
 milter_default_action = accept
 smtpd_milters = inet:127.0.0.1:8891
@@ -97,7 +104,6 @@ Texte à insérer dans le document :
 127.0.0.1
 localhost
 192.168.0.1/24
-
 *.DOMAIN.TLD
 ```
 
