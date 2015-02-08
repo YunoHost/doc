@@ -41,6 +41,8 @@
         * [Security](/security)
         * [Connect to your server with SSH](/ssh)
         * [Command line administration](/moulinette)
+        * Email:
+           * [DKIM](dkim)
         * [Certificates](/certificate)
             * [Regenerate certificate](/regenerate_certificate_en)
         * [YunoHost Tor Hidden Servicer](/torhiddenservice)
