@@ -9,9 +9,9 @@ En attendant que tout ceci soit intégré nativement dans YunoHost, cela nécess
 
 Pour fonctionner correctement, DKIM nécessite une modification de vos DNS. N'oubliez pas que la propagation de l'information DNS une fois modifiée peut prendre jusqu'à 24h !
 
-CRÉDIT : ce document a été initialement basé sur : http://sealedabstract.com/code/nsa-proof-your-e-mail-in-2-hours/ from Drew Crawford
+Source : ce document a été initialement basé sur : http://sealedabstract.com/code/nsa-proof-your-e-mail-in-2-hours/ from Drew Crawford
 
-CRÉDIT : cette 2ème révision s'appuie beaucoup sur : https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy from Popute Sebastian Armin
+Source : cette 2ème révision s'appuie beaucoup sur : https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy from Popute Sebastian Armin
 
 Dans la suite de ce document, replacez DOMAIN.TLD par votre propre nom de domaine.
 
@@ -21,7 +21,14 @@ La config s'adapte très facilement à plusieurs noms de domaines simultanés.
 Mise à jour des paramètres de configuration avec la dernière version de opendkim disponible dans Debian 7.
 
 Rentrons maintenant dans le cœur du sujet :
+### Avec un script
+Utiliser un script tout fait et répondez aux questions :
+```bash
+git clone https://github.com/polytan02/yunohost_auto_config_basic
+sudo ./yunohost_auto_config_basic/5_opendkim.sh
+```
 
+### À la main :
 On commence par installer les logiciels : 
 ```bash
 sudo aptitude install opendkim opendkim-tools
@@ -76,6 +83,7 @@ sudo nano /etc/postfix/main.cf
 
 Texte à insérer à la fin du document :
 ```bash
+# OpenDKIM milter
 milter_protocol = 2
 milter_default_action = accept
 smtpd_milters = inet:127.0.0.1:8891
@@ -97,7 +105,6 @@ Texte à insérer dans le document :
 127.0.0.1
 localhost
 192.168.0.1/24
-
 *.DOMAIN.TLD
 ```
 
