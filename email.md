@@ -6,7 +6,7 @@ YunoHost provides:
 * [Amavis](http://amavis.org/): an antispam
 * [RoundCube](/apps): a webmail
 
-### Heavy email client
+### Desktop email client
 You can access your emails via desktop email clients such as Mozilla Thunderbird or Evolution.
 
 You will need your email address and your password.
