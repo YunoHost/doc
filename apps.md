@@ -196,6 +196,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Guacamole](http://guac-dev.org/)
 * [h5ai](http://larsjung.de/h5ai/)
 * [Headphones](https://github.com/rembo10/headphones)
+* [Hi Buddy](http://hibuddy.monkeypatch.me/)
 * [ikiwiki](http://ikiwiki.info/)
 * [img.bi](https://img.bi/)
 * [Inbox](https://www.inboxapp.com/)
@@ -240,4 +241,5 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Webmpc](https://github.com/ushis/webmpc)
 * [WebODF](http://webodf.org/)
 * [webSync](http://furier.github.io/websync/)
+* [Wisemapping](http://www.wisemapping.com/)
 * [ZNC](http://wiki.znc.in/ZNC)
