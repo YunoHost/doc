@@ -160,7 +160,8 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Tor Relay](https://www.torproject.org/docs/tor-doc-relay.html.en) | matlink | <div class="inprogress"/> | https://github.com/matlink/torrelay_ynh | Tor Node |
 | [Webmin](http://webmin.com) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/webmin_ynh | Web-based system configuration tool |
 | [Wordpress multisite](http://codex.wordpress.org/Create_A_Network) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/wordpress_ynh | Wordpress with network support |
-| [Yourls](http://yourls.org/) | courgette | <div class="ready"/> | https://github.com/courgette/yourls_ynh | URL Shortening service |
+| [YaCy](http://yacy.net) | Moul | <div class="inprogress"/> | https://github.com/M5oul/yacy_ynh/ | Libre and decentralized search engine |
+| [Yourls](http://yourls.org/) | courgette | <div class="ready"/> | https://github.com/courgette/yourls_ynh |  URL Shortening service |
 | Yunofav | [xof](https://forum.yunohost.org/users/xof) | <div class="ready"/> | https://github.com/chtixof/yunofav | Page of favorite links Yunohost-styled |
 | [Zomburl](http://cadav.re/) | courgette | <div class="inprogress"/> | https://github.com/courgette/zomburl_ynh | URL Shortening service |
 | [ZoteroSync](http://blog.holz.ca/2011/11/phpzoterowebdav-installation/) | scith | <div class="inprogress"/> | https://github.com/scith/zoterosync_ynh | Sync Zotero library and files |

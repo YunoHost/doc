@@ -47,6 +47,7 @@
         * [Sécurité](/security_fr)
         * [Connexion à son serveur en ligne de commande avec SSH](/ssh_fr)
         * [Administration en ligne de commande avec la Moulinette](/moulinette_fr)
+        * [Changer le mot de passe d'administration](/change_admin_password_fr)
         * Email:
            * [DKIM](dkim_fr)
         * [Gestion du certificat](/certificate_fr)
