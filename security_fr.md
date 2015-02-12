@@ -7,7 +7,7 @@ Tous les protocoles que YunoHost utilise sont **chiffrés**, les mots de passe n
 
 Deux points sont néanmoins importants à noter :
 
-* L'installation d'applications supplémentaires **augmente le nombre de faille** potentielle. Il est donc conseillé de se renseigner sur chacune d'elle **avant l'installation**, d'en comprendre le fonctionnement et juger ainsi l'impact que provoquerait une potentielle attaque. N'installez **que** les applications qui semblent importantes pour votre usage.
+* L'installation d'applications supplémentaires **augmente le nombre des failles** potentielles. Il est donc conseillé de se renseigner sur chacune d'elle **avant l'installation**, d'en comprendre le fonctionnement et juger ainsi l'impact que provoquerait une potentielle attaque. N'installez **que** les applications qui semblent importantes pour votre usage.
 
 * Le fait que YunoHost soit un logiciel répandu augmente les chances de subir une attaque. Si une faille est découverte, elle peut potentiellement **toucher toutes les instances YunoHost** à un temps donné. Nous nous efforçons de corriger ces failles le plus rapidement possible, pensez donc à **mettre à jour régulièrement** votre système.
 
@@ -114,7 +114,7 @@ sudo nano /etc/ssh/sshd_config
 # Recherchez le paragraphe "Authentication" et ajoutez à la fin de celui-ci :
 AllowUsers nom_utilisateur
 ```
-Seuls les utilisateurs mentionnés dans la directive AllowUsers seront alors autorisés à se connecter via SSH, ce qui exclue donc l'utilisateur admin.
+Seuls les utilisateurs mentionnés dans la directive AllowUsers seront alors autorisés à se connecter via SSH, ce qui exclut donc l'utilisateur admin.
 
 Pour éviter que YunoHost écrase la configuration du serveur SSH il faut modifier le fichier `/etc/yunohost/yunohost.conf` et passer la ligne ssh à yes
 
