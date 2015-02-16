@@ -5,11 +5,14 @@ YunoHost provide:
 * [Metronome](http://www.lightwitch.org/metronome): a XMPP server
 * [Jappix](/apps): a web XMPP client
 
-## Heavy XMPP client
+## Desktop XMPP client
 
-You can use an heavy XMPP client such as [Pidgin](http://pidgin.im/), [Gajim](http://gajim.org/index.fr.html), [Jitsi](http://jitsi.org/) or [Adium](https://adium.im/).
+You can connect to your XMPP server with any standard desktop XMPP client, such as [Pidgin](http://pidgin.im/), [Gajim](http://gajim.org/index.fr.html), [Jitsi](http://jitsi.org/) or [Adium](https://adium.im/).
 
-You will need to put your main e-mail address and your password.
+The credentials to give are :
+* The first part of your email address (without the @domain.tld)
+* Your standard YunoHost password
 
+Your XMPP server runs on the standard port 5222. Your administrator might need to forward this port if the server is behind a router.
 
 <img src="https://yunohost.org/images/Pidgin-add-acount.png" width=500>

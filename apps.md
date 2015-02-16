@@ -104,7 +104,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | --- | --- | --- | --- | --- |
 | [Ampache](http://ampache.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/ampache_ynh | Web based audio/video streaming |
 | [BTSync](http://www.getsync.com/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/btsync_ynh | File synchronization tool  |
-| [ChtickyNotes](https://github.com/chtixof/ynh-chtickynotes) | Chtixof | <div class="ready"/> | https://github.com/chtixof/ynh-chtickynotes | Post-it  |
+| Chtickynotes | chtixof | <div class="ready"/> | https://github.com/chtixof/ynh-chtickynotes | A Post-it page |
 | [COPS](http://cops.com) | lunarok | <div class="ready"/> | https://github.com/lunarok/cops_ynh | Frontend for Calibre library |
 | [Couchpotato](https://couchpota.to/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/couchpotato_ynh | PVR for Usenet and torrents |
 | Custom Webapp (Multi instance) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/my_webapp_ynh |Custom Webapp |
@@ -119,17 +119,19 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [HTPC Manager](http://htpc.io) | lunarok | <div class="ready"/> | https://github.com/lunarok/htpc_ynh | Manage your HTPC |
 | [Ghost](http://ghost.org) | ju | <div class="ready"/> | https://github.com/julienmalik/ghost_ynh | Blogging platform |
 | [GLPI + FusionInventory](http://www.glpi-project.org/?lang=en) | beudbeud | <div class="ready"/> | https://github.com/abeudin/glpi_ynh | IT And Asset managent |
+| [Gogs](http://gogs.io/) | tostaki | <div class=" inprogress"/> | https://github.com/mbugeia/gogs_ynh | self-hosted Git service |
 | [Jeedom](http://jeedom.fr) | lunarok | <div class="ready"/> | https://github.com/lunarok/jeedom_ynh | Home automation |
 | [Jenkins](http://jenkins-ci.org/) | ju | <div class="ready"/> | https://github.com/julienmalik/jenkins_ynh | Continuous Integration platform |
 | [Kanboard](http://kanboard.net/) | tostaki | <div class=" ready"/> | https://github.com/mbugeia/kanboard_ynh | Visual task board |
 | [KiwiIRC](http://kiwiirc.com) | ju | <div class="ready"/> | https://github.com/julienmalik/kiwiirc_ynh | Web IRC client |
+| [Laverna](https://laverna.cc/) | anaqreon | <div class="inprogress"/> | https://github.com/anaqreon/laverna_ynh | Note taking app |
 | [Leed](http://projet.idleman.fr/leed/) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/leed_ynh | RSS reader |
 | [LimeSurvey](http://www.limesurvey.org/en/) | zamentur | <div class="inprogress"/> | https://github.com/zamentur/limesurvey_ynh | Web survey tool |
 | [Linux Dash](http://linuxdash.afaqtariq.com/) | opi | <div class="ready"/> | https://github.com/opi/linuxdash_ynh | Monitoring web dashboard |
 | [Lychee](http://lychee.electerious.com/) | titoko | <div class="inprogress"/> | https://github.com/titoko/lychee_ynh.git | Web photo-management |
 | [Lutim](https://lut.im/) | Maniack Crudelis | <div class="inprogress"/> | https://github.com/maniackcrudelis/lutim_ynh | Anonymous image hosting service |
 | [MediaWiki](https://mediawiki.org) | ElieSauveterre | <div class="ready"/> | https://github.com/mikangali-labs/mediawiki_ynh | Wiki platform |
-| [Mumble Server](http://wiki.mumble.info/wiki/Main_Page) | matlink | <div class="inprogress"/> | https://github.com/matlink/mumbleserver_ynh | Voice chat for gaming and meeting |
+| [Mumble Server](http://wiki.mumble.info/wiki/Main_Page) | matlink | <div class="ready"/> | https://github.com/matlink/mumbleserver_ynh | Voice chat for gaming and meeting |
 | [Munin](http://munin-monitoring.org/) | ju | <div class="ready"/> | https://github.com/julienmalik/munin_ynh | System Monitoring graphing tool |
 | [Monit](http://mmonit.com/monit/) | ju | <div class="ready"/> | https://github.com/julienmalik/monit_ynh | Daemon Monitoring tool |
 | [MyCryptoChat](https://github.com/HowTommy/mycryptochat) | mrtino | <div class="ready"/> | https://github.com/mrtino/mycryptochat_ynh | Encrypted chat rooms manager |
@@ -141,21 +143,28 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [PHPSysinfo](https://phpsysinfo.github.io/phpsysinfo/) | lunarok | <div class="ready"/> | https://github.com/lunarok/phpsysinfo_ynh | Informations about your system |
 | [Piwigo](http://piwigo.org) | monsieur-a | <div class="ready"/> | https://github.com/monsieur-a/piwigo_ynh | Web photo gallery |
 | [Piwik](http://piwik.org) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/piwik_ynh | Web analytics platform |
-| [Plexmediaserver](https://plex.tv/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/plexmediaserver_ynh | PlexMediaServer |
+| [Plexmediaserver](https://plex.tv/) | Chao-Man | <div class="inprogress"/> | https://github.com/Novakin/plexmediaserver_ynh | PlexMediaServer |
 | [PluXml](http://www.pluxml.org/) | matlink | <div class="inprogress"/> | https://github.com/matlink/pluxml_ynh | Blogging platform |
 | [proFTPd](http://www.proftpd.org/) | beudbeud | <div class="inprogress"/> | https://github.com/abeudin/proftpd_ynh.git | FTP server |
+| PSP Adhoc Server | matlink | <div class="inprogress"/> | https://github.com/matlink/adhocserver_ynh | |
 | [Pydio](http://pyd.io) | ju | <div class="inprogress"/> | https://github.com/julienmalik/pydio_ynh | File sharing and synchronization |
 | [Radicale](http://radicale.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/radicale_ynh.git | Caldav & Carddav Server |
 | [Rainloop](http://rainloop.net/) | polytan02 | <div class="ready"/> | https://github.com/polytan02/rainloop_ynh | Rainloop : nice and simple webmail - configuration by hand |
+| [Red Matrix](https://redmatrix.me/) | anaqreon | <div class="inprogress"/> | https://github.com/anaqreon/redmatrix_ynh | Social network and decentralized identity platform |
 | [Sabnzbd](http://http://sabnzbd.org/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sabnzbd_ynh | Automated Usenet download |
 | [SCM-Manager](https://www.scm-manager.org/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/scm-manager_ynh | Share and manage repositories over HTTP |
 | [Shaarli](http://sebsauvage.net/wiki/doku.php?id=php:shaarli) | ju | <div class="inprogress"/> | https://github.com/julienmalik/shaarli_ynh | Delicious clone |
 | [Sickbeard](http://sickbeard.com) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sickbeard_ynh | PVR and episode guide that downloads and manages all your TV shows |
 | [Subsonic](http://subsonic.org) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/subsonic_ynh | Web-based media server |
+| [TagSpaces](http://www.tagspaces.org/) | scith | <div class="inprogress"/> | https://github.com/scith/tagspaces_ynh | Manage files using tags |
+| [Tor Relay](https://www.torproject.org/docs/tor-doc-relay.html.en) | matlink | <div class="inprogress"/> | https://github.com/matlink/torrelay_ynh | Tor Node |
 | [Webmin](http://webmin.com) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/webmin_ynh | Web-based system configuration tool |
 | [Wordpress multisite](http://codex.wordpress.org/Create_A_Network) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/wordpress_ynh | Wordpress with network support |
-| [Yourls](http://yourls.org/) | courgette | <div class="ready"/> | https://github.com/courgette/yourls_ynh | URL Shortening service |
+| [YaCy](http://yacy.net) | Moul | <div class="inprogress"/> | https://github.com/M5oul/yacy_ynh/ | Libre and decentralized search engine |
+| [Yourls](http://yourls.org/) | courgette | <div class="ready"/> | https://github.com/courgette/yourls_ynh |  URL Shortening service |
+| Yunofav | [xof](https://forum.yunohost.org/users/xof) | <div class="ready"/> | https://github.com/chtixof/yunofav | Page of favorite links Yunohost-styled |
 | [Zomburl](http://cadav.re/) | courgette | <div class="inprogress"/> | https://github.com/courgette/zomburl_ynh | URL Shortening service |
+| [ZoteroSync](http://blog.holz.ca/2011/11/phpzoterowebdav-installation/) | scith | <div class="inprogress"/> | https://github.com/scith/zoterosync_ynh | Sync Zotero library and files |
 | [Z-Push](https://z-push.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/z-push_ynh | ActiveSync Server |
 
 
@@ -166,50 +175,71 @@ The following list is a compiled wishlist of applications that would be nice-to-
 
 [Edit this list](/write_documentation) to add your own favorite app, or learn to [package apps](/packaging_apps) yourself.
 
-* [PPTP VPN](https://packages.debian.org/sv/squeeze/pptpd)
-* [Ethersheet](https://ethersheet.org/)
-* [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
-* [Movim](http://www.movim.eu/)
-* [GitLab](http://gitlab.org/)
-* [FileTea](https://filetea.me)
 * [10er10](https://github.com/dready92/10er10)
-* [PHProxy](http://sourceforge.net/projects/poxy/)
-* [Jitsi Meet](https://github.com/jitsi/jitsi-meet)
-* [Sympa](http://www.sympa.org/)
-* [Mailman](https://www.gnu.org/software/mailman/)
-* [PHPList](http://www.phplist.com/)
-* [Shleuder](http://schleuder2.nadir.org/)
-* [Diaspora](https://diasporafoundation.org/)
-* [Twister](http://twister.net.co/)
-* [MediaGoblin](http://mediagoblin.org/)
-* [CumulusClips](http://cumulusclips.org/)
-* [RainLoop](http://rainloop.net/)
-* [Mailpile](https://www.mailpile.is)
-* [ZNC](http://wiki.znc.in/ZNC)
-* [Tor relay](https://www.torproject.org/docs/tor-doc-relay.html.en)
-* [uMap](https://umap.openstreetmap.fr/en/)
-* [Headphones](https://github.com/rembo10/headphones)
-* [MediaCrush](https://mediacru.sh/)
-* [jsFiddle](http://jsbin.com/help/2-second-setup)
-* [remotestorage-server](http://remotestorage.io/provide/)
-* [miniflux](https://github.com/fguillot/miniflux)
-* [Zotero](https://www.zotero.org)
-* [Browsepass](http://techualization.blogspot.de/2013/09/introducing-browsepass-keepass-on-web.html)
-* [Respawn 2.0](https://github.com/broncowdd/respawn)
-* [Total Respawn](https://github.com/broncowdd/TotalRespawn)
-* [Fail2web](https://github.com/Sean-Der/fail2web)
-* [Ajenti](http://ajenti.org/)
-* [img.bi](https://img.bi/)
-* [Laverna](https://laverna.cc/)
-* [Streisand](https://github.com/jlund/streisand)
-* [Scribbleton](https://scribbleton.com/)
-* [webSync](http://furier.github.io/websync/)
 * [adminer](http://www.adminer.org/)
-* [Inbox](https://www.inboxapp.com/)
-* [Pulse](https://ind.ie/pulse/)
-* [Kune](https://en.wikipedia.org/wiki/Kune_%28software%29)
-* [racktables](http://racktables.org/)
-* [Known](https://withknown.com/)
-* [Mopidy](https://www.mopidy.com/)
-* [Taiga](https://taiga.io/)
+* [Ajenti](http://ajenti.org/)
+* [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
+* [Browsepass](http://techualization.blogspot.de/2013/09/introducing-browsepass-keepass-on-web.html)
+* [Caliopen](https://www.caliopen.org/)
+* [CumulusClips](http://cumulusclips.org/)
+* [Diaspora](https://diasporafoundation.org/)
+* [Ethersheet](https://ethersheet.org/)
+* [Fail2web](https://github.com/Sean-Der/fail2web)
+* [FileTea](https://filetea.me)
+* [Fossil](http://www.fossil-scm.org)
+* [Git-annex](http://git-annex.branchable.com/)
+* [Gitit](http://gitit.net/)
+* [GitLab](http://gitlab.org/)
 * [Gitolite](http://gitolite.com/gitolite/)
+* [Gollum](https://github.com/gollum/gollum)
+* [Grav](http://getgrav.org/)
+* [Guacamole](http://guac-dev.org/)
+* [h5ai](http://larsjung.de/h5ai/)
+* [Headphones](https://github.com/rembo10/headphones)
+* [Hi Buddy](http://hibuddy.monkeypatch.me/)
+* [ikiwiki](http://ikiwiki.info/)
+* [img.bi](https://img.bi/)
+* [Inbox](https://www.inboxapp.com/)
+* [Jitsi Meet](https://github.com/jitsi/jitsi-meet)
+* [jsFiddle](http://jsbin.com/help/2-second-setup)
+* [Known](https://withknown.com/)
+* [Kune](https://en.wikipedia.org/wiki/Kune_%28software%29)
+* [LSTU](https://github.com/ldidry/lstu)
+* [Mailman](https://www.gnu.org/software/mailman/)
+* [Mailpile](https://www.mailpile.is)
+* [MPD](http://www.musicpd.org/)
+* [MediaCrush](https://mediacru.sh/)
+* [MediaGoblin](http://mediagoblin.org/)
+* [miniflux](https://github.com/fguillot/miniflux)
+* [MinigalNano](https://github.com/sebsauvage/MinigalNano)
+* [Modoboa](http://modoboa.org/)
+* [Mopidy](https://www.mopidy.com/)
+* [Movim](http://www.movim.eu/)
+* [Odoo ERP](https://www.odoo.com)
+* [Pelican](http://blog.getpelican.com/)
+* [PHPList](http://www.phplist.com/)
+* [PHProxy](http://sourceforge.net/projects/poxy/)
+* [Pico](http://picocms.org/)
+* [Pix](http://pix.toile-libre.org/)
+* [PPTP VPN](https://packages.debian.org/sv/squeeze/pptpd)
+* [Pulse](https://ind.ie/pulse/)
+* [racktables](http://racktables.org/)
+* [remotestorage-server](http://remotestorage.io/provide/)
+* [Respawn 2.0](https://github.com/broncowdd/respawn)
+* [uMap](https://umap.openstreetmap.fr/en/)
+* [Scramble, Browser-based PGP web mail](https://github.com/dcposch/scramble)
+* [Scribbleton](https://scribbleton.com/)
+* [scrumblr](http://scrumblr.ca/)
+* [Shleuder](http://schleuder2.nadir.org/)
+* [Streisand](https://github.com/jlund/streisand)
+* [SVG-Edit](https://code.google.com/p/svg-edit/)
+* [Sympa](http://www.sympa.org/)
+* [Taiga](https://taiga.io/)
+* [Total Respawn](https://github.com/broncowdd/TotalRespawn)
+* [Twister](http://twister.net.co/)
+* [Vaultier](http://www.vaultier.org/)
+* [Webmpc](https://github.com/ushis/webmpc)
+* [WebODF](http://webodf.org/)
+* [webSync](http://furier.github.io/websync/)
+* [Wisemapping](http://www.wisemapping.com/)
+* [ZNC](http://wiki.znc.in/ZNC)

@@ -41,6 +41,9 @@
         * [Security](/security)
         * [Connect to your server with SSH](/ssh)
         * [Command line administration](/moulinette)
+        * [Change administration password](/change_admin_password)
+        * Email:
+           * [DKIM](dkim)
         * [Certificates](/certificate)
             * [Regenerate certificate](/regenerate_certificate_en)
         * [YunoHost Tor Hidden Servicer](/torhiddenservice)
@@ -63,7 +66,7 @@
            * [Accounting to edit documentation](/accounting)
         * [Contribution](/contributordoc)
 
-* Others:
+* Project's life:
    * [Roadmap](/roadmap)
    * [Contributors](contribs)
    * [Support](/support_en)
