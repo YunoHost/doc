@@ -118,6 +118,8 @@ $ daily_build -p nom_du_paquet
 $ build_deb /path/du/paquet
 ```
 
+**`TODO`** à décrire : besoin de bump la version pour un passage test->stable
+
 ### Passage de `daily` à `test`
 
 ```bash
