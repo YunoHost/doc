@@ -115,7 +115,7 @@ $ daily_build -p nom_du_paquet
 #### Build d'un paquet non YunoHost
 
 ```bash
-$ build_deb -p path_du_paquet
+$ build_deb /path/du/paquet
 ```
 
 ### Passage de `daily` à `test`
