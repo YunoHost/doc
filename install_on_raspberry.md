@@ -3,8 +3,7 @@
 *Find other ways to install YunoHost **[here](/install)**.*
 
 ## Pre-requisite
-
-<img src="https://yunohost.org/images/raspberry-pi-model-b.jpg">
+<img src="https://yunohost.org/images/Raspberry_Pi_2_Model_B_v1.1_front_angle_new.jpg" width=350>
 <img src="https://yunohost.org/images/micro-sd-card.jpg">
 
 * A Raspberry Pi model 1 or 2
