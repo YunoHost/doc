@@ -119,6 +119,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [HTPC Manager](http://htpc.io) | lunarok | <div class="ready"/> | https://github.com/lunarok/htpc_ynh | Manage your HTPC |
 | [Ghost](http://ghost.org) | ju | <div class="ready"/> | https://github.com/julienmalik/ghost_ynh | Blogging platform |
 | [Gitolite](https://github.com/sitaramc/gitolite) | matlink | <div class="inprogress"/> | https://github.com/matlink/gitolite_ynh | Hosting git repositories |
+| [Gitwe](https://git.wiki.kernel.org/index.php/Gitweb) | matlink | <div class="inprogress"/> | https://github.com/matlink/gitweb_ynh | Web interface for git |
 | [GLPI + FusionInventory](http://www.glpi-project.org/?lang=en) | beudbeud | <div class="ready"/> | https://github.com/abeudin/glpi_ynh | IT And Asset managent |
 | [Gogs](http://gogs.io/) | tostaki | <div class=" inprogress"/> | https://github.com/mbugeia/gogs_ynh | self-hosted Git service |
 | [Jeedom](http://jeedom.fr) | lunarok | <div class="ready"/> | https://github.com/lunarok/jeedom_ynh | Home automation |
