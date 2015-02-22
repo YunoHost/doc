@@ -5,14 +5,14 @@
 ## Prérequis
 
 <img src="https://yunohost.org/images/raspberry-pi-model-b.jpg">
-<img src="https://yunohost.org/images/sdcard.jpg">
+<img src="https://yunohost.org/images/micro-sd-card.jpg">
 
-* Un Raspberry Pi modèle B *(le modèle A devrait fonctionner, mais n'a jamais été testé)*
+* Un Raspberry Pi 1 ou 2
 * Une carte SD de capacité minimale de **4Go** et une certification de vitesse **class10** sont recommandées
 * Un autre ordinateur pour parcourir ce guide et accéder à votre Raspberry Pi
 * Un écran et un clavier sont recommandés pour pouvoir contrôler votre Raspberry Pi si un problème apparaît
 * Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
-* L’**image YunoHost pour Raspberry Pi**, disponible ici (à **dézipper**) :
+* L’**image YunoHost pour Raspberry Pi 1**, disponible ici (à **dézipper**) :
 
     [http://build.yunohost.org/yunohost-raspberrypi-2014-09-17.zip](http://build.yunohost.org/yunohost-raspberrypi-2014-09-17.zip)
 
