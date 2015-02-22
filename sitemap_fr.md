@@ -32,7 +32,7 @@
                * [Post-installation](/postinstall_fr)
                * [Diagnostic du bon fonctionnement du YunoHost](/diagnostic_fr)
         * [DNS - Système de nom de domaine](/dns_fr)
-            * [Bureaux d’enregistrements de nom de domaine - Registrar](registar)
+            * [Bureaux d’enregistrements de nom de domaine - Registrar](registar_en)
             * [Configuration du DNS chez son registar](/dns_config_fr)
             * [Avec OVH](/OVH_fr)
             * [Accéder à son domaine depuis le réseau local](/dns_reseau_local_fr)
@@ -48,7 +48,7 @@
         * [Connexion à son serveur en ligne de commande avec SSH](/ssh_fr)
         * [Administration en ligne de commande avec la Moulinette](/moulinette_fr)
         * [Changer le mot de passe d'administration](/change_admin_password_fr)
-        * Email:
+        * Email :
            * [DKIM](dkim_fr)
         * [Gestion du certificat](/certificate_fr)
             * [Régénérer un certificat](/regenerate_certificate_fr)
