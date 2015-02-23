@@ -118,6 +118,8 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [HTML Tools](http://lehollandaisvolant.net/tout/tools/)| IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/htmltools_ynh | HTML Mini-tools |
 | [HTPC Manager](http://htpc.io) | lunarok | <div class="ready"/> | https://github.com/lunarok/htpc_ynh | Manage your HTPC |
 | [Ghost](http://ghost.org) | ju | <div class="ready"/> | https://github.com/julienmalik/ghost_ynh | Blogging platform |
+| [Gitolite](https://github.com/sitaramc/gitolite) | matlink | <div class="inprogress"/> | https://github.com/matlink/gitolite_ynh | Hosting git repositories |
+| [Gitweb](https://git.wiki.kernel.org/index.php/Gitweb) | matlink | <div class="inprogress"/> | https://github.com/matlink/gitweb_ynh | Web interface for git |
 | [GLPI + FusionInventory](http://www.glpi-project.org/?lang=en) | beudbeud | <div class="ready"/> | https://github.com/abeudin/glpi_ynh | IT And Asset managent |
 | [Gogs](http://gogs.io/) | tostaki | <div class=" inprogress"/> | https://github.com/mbugeia/gogs_ynh | self-hosted Git service |
 | [Jeedom](http://jeedom.fr) | lunarok | <div class="ready"/> | https://github.com/lunarok/jeedom_ynh | Home automation |
@@ -190,7 +192,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Git-annex](http://git-annex.branchable.com/)
 * [Gitit](http://gitit.net/)
 * [GitLab](http://gitlab.org/)
-* [Gitolite](http://gitolite.com/gitolite/)
 * [Gollum](https://github.com/gollum/gollum)
 * [Grav](http://getgrav.org/)
 * [Guacamole](http://guac-dev.org/)
