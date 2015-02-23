@@ -179,6 +179,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [adminer](http://www.adminer.org/)
 * [Ajenti](http://ajenti.org/)
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
+* [Bootstrap](http://getbootstrap.com/)
 * [Browsepass](http://techualization.blogspot.de/2013/09/introducing-browsepass-keepass-on-web.html)
 * [Caliopen](https://www.caliopen.org/)
 * [CumulusClips](http://cumulusclips.org/)
