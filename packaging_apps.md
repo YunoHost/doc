@@ -160,6 +160,23 @@ sudo yunohost app setting <id> <key> [ -v <value> ]
 This is the most important helper of YunoHost. It allows you to store some settings for a specific app, in order to be either reused afterward or used for YunoHost configuration (**e.g.** for the SSO).
 <br><br>
 It sets the value if you append ```-v <value>```, and gets it otherwise.
+<br><br>
+
+** Some useful settings **<br><br>
+```skipped_uris```<br><br>
+Remove the protection on the uris list provided separated by commas.<br><br>
+
+```protected_uris```<br><br>
+Protects the uris list provided separated by commas. Only logged in users will have access.<br><br>
+
+There are also `skipped_regex`, `protected_regex`, `unprotected_uris`, `unprotected_regex`.<br><br>
+
+**Be careful** : you must run `yunohost app ssowatconf` to apply the effect. URIs will be converted into URLs and written to the file /etc/ssowat/conf.json.<br><br>
+
+Example:<br>
+```yunohost app setting myapp unprotected_urls -v "/"```<br>
+```yunohost app ssowatconf```<br>
+These commands will disable the SSO on the root of the aplication like domain.tld/myapp This is useful for public application.
 </blockquote>
 
 <br>
