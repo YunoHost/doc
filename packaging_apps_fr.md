@@ -162,7 +162,12 @@ Protège la liste d'uris fournies séparées par des virgules. Seul un utilisate
 
 Il existe aussi `skipped_regex`, `protected_regex`, `unprotected_uris`, `unprotected_regex`.<br><br>
 
-**Attention** : il est nécessaire de lancer `yunohost app ssowatconf` pour appliquer les effets.
+**Attention** : il est nécessaire de lancer `yunohost app ssowatconf` pour appliquer les effets. Les uris seront alors converties en urls et écrites dans le fichier /etc/ssowat/conf.json.<br><br>
+
+Exemple:<br>
+```yunohost app setting myapp unprotected_urls -v "/"```<br>
+```yunohost app ssowatconf```<br>
+Ces commandes vont désactiver le SSO sur la racine de l'aplication soit domain.tld/myapp, ceci est utile pour une application publique.
 </blockquote>
 
 <br>
