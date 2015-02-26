@@ -1,4 +1,4 @@
-# Packaging d'applications
+# Packaging d’applications
 
 Il y a quelques petites choses à connaître si vous voulez packager une application pour Yunohost.
 
