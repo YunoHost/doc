@@ -11,7 +11,7 @@ This screen ask to the user : **"Do you trust this server that host this website
 It could afraid a lot of users (rightly).
 
 To avoid this confusion, it's possible to get a signed certificate  by a "known" authority : **Gandi**, **RapidSSL**, **StartSSL**, **CaCert**.
-In these cases, the point is to replace the self-signed certificate by the one that have been certified by an certificate authority, and the users won't have this warning screen anymore.
+In these cases, the point is to replace the self-signed certificate with the one that has been certified by a certificate authority, and the users won't have this warning screen anymore.
 
 ### Add a signed certificate by an authority
 
