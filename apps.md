@@ -108,12 +108,14 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [COPS](http://cops.com) | lunarok | <div class="ready"/> | https://github.com/lunarok/cops_ynh | Frontend for Calibre library |
 | [Couchpotato](https://couchpota.to/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/couchpotato_ynh | PVR for Usenet and torrents |
 | Custom Webapp (Multi instance) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/my_webapp_ynh |Custom Webapp |
+| [Diaspora](http://diasporafoundation.org) | aymhce | <div class="inprogress"/> | https://github.com/aymhce/diaspora_ynh | Distributed social networking service |
 | [EmailPoubelle](http://forge.zici.fr/p/emailpoubelle-php/) | matlink | <div class="inprogress"/> | https://github.com/matlink/emailpoubelle_ynh | Disposable email |
 | [EtherCalc](https://ethercalc.org/) | zamentur | <div class="inprogress"/> | https://github.com/zamentur/ethercalc_ynh | Web spreadsheet |
 | [Etherpad-Lite](http://etherpad.org) | beudbeud | <div class="ready"/> | https://github.com/abeudin/etherpadlite_ynh | Real-time collaborative document editing |
 | [FileBin](http://sebsauvage.net/wiki/doku.php?id=php:zerobin) | IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/filebin_ynh | Online filebin |
 | [Firefox Sync](https://www.mozilla.org/en-US/firefox/sync/) | beudbeud | <div class="ready"/> |https://github.com/abeudin/ffsync_ynh | Firefox synchronization server |
 | [FreshRSS](http://freshrss.org/) | plopoyop | <div class="ready"/> | https://github.com/plopoyop/freshrss_ynh | RSS reader |
+| [Friendica](http://friendica.com) | aymhce | <div class="inprogress"/> | https://github.com/aymhce/friendica_ynh | Social Communication Server |
 | FTP support for webapp | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/ftp_support_webapp_ynh | FTP support for webapp |
 | [HTML Tools](http://lehollandaisvolant.net/tout/tools/)| IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/htmltools_ynh | HTML Mini-tools |
 | [HTPC Manager](http://htpc.io) | lunarok | <div class="ready"/> | https://github.com/lunarok/htpc_ynh | Manage your HTPC |
@@ -182,10 +184,11 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [adminer](http://www.adminer.org/)
 * [Ajenti](http://ajenti.org/)
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
+* [Bootstrap](http://getbootstrap.com/)
 * [Browsepass](http://techualization.blogspot.de/2013/09/introducing-browsepass-keepass-on-web.html)
 * [Caliopen](https://www.caliopen.org/)
 * [CumulusClips](http://cumulusclips.org/)
-* [Diaspora](https://diasporafoundation.org/)
+* [DemocracyOS](http://democracyos.org/)
 * [Ethersheet](https://ethersheet.org/)
 * [Fail2web](https://github.com/Sean-Der/fail2web)
 * [FileTea](https://filetea.me)
