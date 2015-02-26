@@ -133,6 +133,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Lychee](http://lychee.electerious.com/) | titoko | <div class="inprogress"/> | https://github.com/titoko/lychee_ynh.git | Web photo-management |
 | [Lutim](https://lut.im/) | Maniack Crudelis | <div class="inprogress"/> | https://github.com/maniackcrudelis/lutim_ynh | Anonymous image hosting service |
 | [MediaWiki](https://mediawiki.org) | ElieSauveterre | <div class="ready"/> | https://github.com/mikangali-labs/mediawiki_ynh | Wiki platform |
+| [miniflux](http://miniflux.net) | matanya | <div class="inprogress"/> | https://github.com/mat-mo/miniflux_ynh | RSS reader via RTL support |
 | [Mumble Server](http://wiki.mumble.info/wiki/Main_Page) | matlink | <div class="ready"/> | https://github.com/matlink/mumbleserver_ynh | Voice chat for gaming and meeting |
 | [Munin](http://munin-monitoring.org/) | ju | <div class="ready"/> | https://github.com/julienmalik/munin_ynh | System Monitoring graphing tool |
 | [Monit](http://mmonit.com/monit/) | ju | <div class="ready"/> | https://github.com/julienmalik/monit_ynh | Daemon Monitoring tool |
@@ -211,7 +212,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [MPD](http://www.musicpd.org/)
 * [MediaCrush](https://mediacru.sh/)
 * [MediaGoblin](http://mediagoblin.org/)
-* [miniflux](https://github.com/fguillot/miniflux)
 * [MinigalNano](https://github.com/sebsauvage/MinigalNano)
 * [Modoboa](http://modoboa.org/)
 * [Mopidy](https://www.mopidy.com/)
