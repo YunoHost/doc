@@ -53,6 +53,7 @@
         * [Configure an email client](/email)
         * [Instant messaging usage](/XMPP)
         * [Applications](/apps)
+           * [Firefox Sync](/app_ffsync_en)
            * [Transmission](/app_transmission_en)
            * [Radicale](/app_radicale)
 
