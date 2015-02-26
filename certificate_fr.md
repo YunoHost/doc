@@ -1,56 +1,56 @@
-#Certificate
+# Certificat
 
-Certificates are used to certify that your server is the genuine one and not a falsified one.
+Un certificat est utilisé pour garantir la confidentialité des échanges entre votre serveur et votre client.
 
-YunoHost provides a **self-signed** certificate, it means that your server guaranty the certificate validity. It's enough **for personal usage**, because you trust your own server. But this could be a problem if you want to open access to anonymous like web user for a website.
-Concretely users will go throw a screen like this:
+YunoHost fournit par défaut un certificat **auto-signé**, ce qui veut dire que c'est votre serveur qui garantit la validité du certificat. C'est suffisant **pour un usage personnel**, car vous pouvez avoir confiance en votre serveur, en revanche cela posera problème si vous comptez ouvrir l'accès à votre serveur à des anonymes, par exemple pour héberger un site web.    
+En effet, les utilisateurs devront passer par un écran de ce type :
 
 <img src="https://yunohost.org/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-This screen ask to the user : **"Do you trust this server that host this website?"**
-It could afraid a lot of users (rightly).
+Cet écran revient à demander **« Avez-vous confiance au serveur qui héberge ce site ? »**.    
+Cela peut effrayer vos utilisateurs (à juste titre).
 
-To avoid this confusion, it's possible to get a signed certificate  by a "known" authority : **Gandi**, **RapidSSL**, **StartSSL**, **CaCert**.
-In these cases, the point is to replace the self-signed certificate with the one that has been certified by a certificate authority, and the users won't have this warning screen anymore.
+Pour éviter cette confusion, il est possible d'obtenir un certificat signé par une autorité « connue » : **Gandi**, **RapidSSL**, **StartSSL**, **Cacert**.    
+Dans ce cas, il s’agira de remplacer le certificat auto-signé par celui qui a été reconnu par une autorité de certification, et vos utilisateurs n’auront plus à passer par cet écran d’avertissement.
 
-### Add a signed certificate by an authority
+### Ajout d’un certificat signé par une autorité
 
-Get your certificate from your CA, you must get a private key, file key and a public certificate (file .crt)
-> Be carefull, the key file is very critical, it's strictly personal and have to be secured.
+Après création du certificat auprès de votre autorité d'enregistrement, vous devez être en possession d'une clé privée, le fichier key et d'un certificat public, le fichier crt.
+> Attention, le fichier key est très sensible, il est strictement personnel et doit être très bien sécurisé.
 
-Copy this two files on the server, if not.
+Ces deux fichiers doivent être copiés sur le serveur, si ils ne s'y trouvent pas déjà.
 
 ```bash
 scp CERTIFICAT.crt admin@DOMAIN.TLD:ssl.crt
 scp CLE.key admin@DOMAIN.TLD:ssl.key
 ```
 
-From Windows, scp can be used with putty, download [pscp](http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe)
+Depuis Windows, scp est exploitable avec putty, en téléchargeant l'outil [pscp](http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe)
 
 ```bash
 pscp -P 22 CERTIFICAT.crt admin@DOMAIN.TLD:ssl.crt
 pscp -P 22 CLE.key admin@DOMAIN.TLD:ssl.key```
 
-Now the files are in the server. Open a shell on the server use [ssh](https://yunohost.org/#/ssh_fr) or locally.
+Dés lors que les fichiers sont sur le serveur, le reste du travail se fera sur celui-ci. En [ssh](https://yunohost.org/#/ssh_fr) ou en local.
 
-First, create a directory for archive the certificates.
+Tout d'abord, créez un dossier pour stocker les certificats obtenus.
 
 ```bash
 sudo mkdir /etc/yunohost/certs/DOMAIN.TLD/ae_certs
 sudo mv ssl.key ssl.crt /etc/yunohost/certs/DOMAIN.TLD/ae_certs/```
 
-Then go to the parent directory and go on.
+Puis allez dans le dossier parent pour poursuivre.
 
 ```bash
 cd /etc/yunohost/certs/DOMAIN.TLD/```
 
-Make a backup of the YunoHost original certificates , to be safe!
+Faites une sauvegarde des certificats d'origine de yunohost, par précaution.
 
 ```bash
 sudo mkdir yunohost_self_signed
 sudo mv *.pem *.cnf yunohost_self_signed/```
 
-Depends on the CA, intermediate certificates and root have to be downloaded.
+En fonction de l'autorité d'enregistrement, des certificats intermédiaire et racine doivent être obtenu.
 
 > **StartSSL**
 > ```bash
@@ -70,29 +70,29 @@ Depends on the CA, intermediate certificates and root have to be downloaded.
 > sudo wget http://www.cacert.org/certs/root.crt -O ae_certs/ca.pem
 > sudo wget http://www.cacert.org/certs/class3.crt -O ae_certs/intermediate_ca.pem```
 
-Intermediate certificates and root must be merged with certificates obtained to create a unified chain certificates.
+Les certificats intermédiaire et root doivent être réuni avec le certificat obtenu pour créer une chaîne de certificats unifiés.
 
-If you use a root certificate (StartSSL) :
+En cas d'utilisation d'un certificat racine (StartSSL, Cacert) :
 
 ```bash
 cat ae_certs/ssl.crt ae_certs/intermediate_ca.pem ae_certs/ca.pem | sudo tee crt.pem```
 
-If you use only an intermediate certificate.
+En cas d'utilisation du certificat intermédiaire seulement.
 
 ```bash
 cat ae_certs/ssl.crt ae_certs/intermediate_ca.pem | sudo tee crt.pem```
 
-The private key have to be converted in PEM format.
+La clé privée doit être, elle, convertie au format pem.
 
 ```bash
 sudo openssl rsa -in ae_certs/ssl.key -out key.pem -outform PEM```
 
-Check certificates syntaxe, check file contents.
+Afin de s'assurer de la syntaxe des certificats, vérifiez le contenu des fichiers.
 
 ```bash
 cat crt.pem key.pem```
 
-Certificates and private key look like this :
+Les certificats et la clé privée doivent ressembler à cela :
 
 `-----BEGIN CERTIFICATE-----`    
 `MIICVDCCAb0CAQEwDQYJKoZIhvcNAQEEBQAwdDELMAkGA1UEBhMCRlIxFTATBgNV`
@@ -110,7 +110,7 @@ Certificates and private key look like this :
 `9t/rrbdGzXXOCl3up99naL5XAzCIp6r5`  
 `-----END CERTIFICATE-----`
 
-At last, secure files of your certificate
+Enfin, sécurisez les fichiers de votre certificat.
 
 ```bash
 sudo chown root:metronome crt.pem key.pem
@@ -118,10 +118,9 @@ sudo chmod 640 crt.pem key.pem
 sudo chown root:root -R ae_certs
 sudo chmod 600 -R ae_certs```
 
-Reload Nginx configuration to take into account the new certificate.
-
+Rechargez la configuration de nginx pour prendre en compte le nouveau certificat.
 ```bash
 sudo service nginx reload```
 
-Your certificate is ready to serve. You can check that every thing is correct byan external service like <a href="https://www.geocerts.com/ssl_checker" target="_blank">geocerts</a>
 
+Votre certificat est prêt à servir. Vous pouvez toutefois vous assurez de sa mise en place en testant le certificat à l'aide du service de <a href="https://www.geocerts.com/ssl_checker" target="_blank">geocerts</a>.
