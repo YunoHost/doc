@@ -185,6 +185,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Browsepass](http://techualization.blogspot.de/2013/09/introducing-browsepass-keepass-on-web.html)
 * [Caliopen](https://www.caliopen.org/)
 * [CumulusClips](http://cumulusclips.org/)
+* [DemocracyOS](http://democracyos.org/)
 * [Diaspora](https://diasporafoundation.org/)
 * [Ethersheet](https://ethersheet.org/)
 * [Fail2web](https://github.com/Sean-Der/fail2web)
