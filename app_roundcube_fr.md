@@ -26,7 +26,7 @@ Pour l'installer, suivez les indications suivantes :
 
 * Notez (ou copiez) le mot de passe de l'utilisateur "root" de votre base MySQL qui s'affichera en tapant `cat /etc/yunohost/mysql`.
 
-* Ajoutez les tables SQL nécessaires au greffon en tapant `mysql -u root -p  roundcube < carddav/SQL/mysql.sql`
+* Ajoutez les tables SQL nécessaires au greffon en tapant `mysql -u root -p roundcube < carddav/Roundcube-CardDAV/SQL/mysql.sql`
 
 * Entrez le mot de passe que vous venez de noter et appuyez sur Entrée.
 
