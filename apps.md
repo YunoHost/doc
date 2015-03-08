@@ -135,7 +135,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Leed](http://projet.idleman.fr/leed/) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/leed_ynh | RSS reader |
 | [LimeSurvey](http://www.limesurvey.org/en/) | zamentur | <div class="inprogress"/> | https://github.com/zamentur/limesurvey_ynh | Web survey tool |
 | [Linux Dash](http://linuxdash.afaqtariq.com/) | opi | <div class="ready"/> | https://github.com/opi/linuxdash_ynh | Monitoring web dashboard |
-| [Lychee](http://lychee.electerious.com/) | titoko | <div class="inprogress"/> | https://github.com/titoko/lychee_ynh.git | Web photo-management |
+| [Lychee](http://lychee.electerious.com/) | titoko | <div class="inprogress"/> | https://github.com/titoko/lychee_ynh | Web photo-management |
 | [Lutim](https://lut.im/) | Maniack Crudelis | <div class="inprogress"/> | https://github.com/maniackcrudelis/lutim_ynh | Anonymous image hosting service |
 | [MediaWiki](https://mediawiki.org) | ElieSauveterre | <div class="ready"/> | https://github.com/mikangali-labs/mediawiki_ynh | Wiki platform |
 | [miniflux](http://miniflux.net) | matanya | <div class="inprogress"/> | https://github.com/mat-mo/miniflux_ynh | RSS reader via RTL support |
@@ -155,10 +155,10 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Piwik](http://piwik.org) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/piwik_ynh | Web analytics platform |
 | [Plexmediaserver](https://plex.tv/) | Chao-Man | <div class="inprogress"/> | https://github.com/Novakin/plexmediaserver_ynh | PlexMediaServer |
 | [PluXml](http://www.pluxml.org/) | matlink | <div class="inprogress"/> | https://github.com/matlink/pluxml_ynh | Blogging platform |
-| [proFTPd](http://www.proftpd.org/) | beudbeud | <div class="inprogress"/> | https://github.com/abeudin/proftpd_ynh.git | FTP server |
+| [proFTPd](http://www.proftpd.org/) | beudbeud | <div class="inprogress"/> | https://github.com/abeudin/proftpd_ynh | FTP server |
 | PSP Adhoc Server | matlink | <div class="inprogress"/> | https://github.com/matlink/adhocserver_ynh | |
 | [Pydio](http://pyd.io) | ju | <div class="inprogress"/> | https://github.com/julienmalik/pydio_ynh | File sharing and synchronization |
-| [Radicale](http://radicale.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/radicale_ynh.git | Caldav & Carddav Server |
+| [Radicale](http://radicale.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/radicale_ynh | Caldav & Carddav Server |
 | [Rainloop](http://rainloop.net/) | polytan02 | <div class="ready"/> | https://github.com/polytan02/rainloop_ynh | Rainloop : nice and simple webmail - configuration by hand |
 | [Red Matrix](https://redmatrix.me/) | anaqreon | <div class="inprogress"/> | https://github.com/anaqreon/redmatrix_ynh | Social network and decentralized identity platform |
 | [Sabnzbd](http://http://sabnzbd.org/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sabnzbd_ynh | Automated Usenet download |
