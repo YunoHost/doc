@@ -253,3 +253,4 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [webSync](http://furier.github.io/websync/)
 * [Wisemapping](http://www.wisemapping.com/)
 * [ZNC](http://wiki.znc.in/ZNC)
+* [Sonerezh] (https://github.com/Sonerezh)
