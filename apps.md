@@ -102,11 +102,14 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 
 | Name | Packager | State | URL repositories | Description
 | --- | --- | --- | --- | --- |
+| [20euros](https://jatekos101.github.io/20euros/) | Moul | <div class="ready"/> | https://github.com/M5oul/20euros_ynh | Clone of 2048 game with euros |
+| [243](https://hgentry.github.io/81/) | Moul | <div class="ready"/> | https://github.com/M5oul/243_ynh | Clone of 2048 game: goal reach 243 |
 | [Ampache](http://ampache.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/ampache_ynh | Web based audio/video streaming |
 | [BTSync](http://www.getsync.com/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/btsync_ynh | File synchronization tool  |
 | Chtickynotes | chtixof | <div class="ready"/> | https://github.com/chtixof/ynh-chtickynotes | A Post-it page |
 | [COPS](http://cops.com) | lunarok | <div class="ready"/> | https://github.com/lunarok/cops_ynh | Frontend for Calibre library |
 | [Couchpotato](https://couchpota.to/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/couchpotato_ynh | PVR for Usenet and torrents |
+| [Cubiks-2048](https://kshitij-banerjee.github.io/Cubiks-2048/) | Moul | <div class="ready"/> | https://github.com/M5oul/Cubiks-2048_ynh | Clone of 2048 game in 3D |
 | Custom Webapp (Multi instance) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/my_webapp_ynh |Custom Webapp |
 | [Diaspora](http://diasporafoundation.org) | aymhce | <div class="inprogress"/> | https://github.com/aymhce/diaspora_ynh | Distributed social networking service |
 | [EmailPoubelle](http://forge.zici.fr/p/emailpoubelle-php/) | matlink | <div class="inprogress"/> | https://github.com/matlink/emailpoubelle_ynh | Disposable email |
@@ -132,10 +135,12 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Leed](http://projet.idleman.fr/leed/) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/leed_ynh | RSS reader |
 | [LimeSurvey](http://www.limesurvey.org/en/) | zamentur | <div class="inprogress"/> | https://github.com/zamentur/limesurvey_ynh | Web survey tool |
 | [Linux Dash](http://linuxdash.afaqtariq.com/) | opi | <div class="ready"/> | https://github.com/opi/linuxdash_ynh | Monitoring web dashboard |
-| [Lychee](http://lychee.electerious.com/) | titoko | <div class="inprogress"/> | https://github.com/titoko/lychee_ynh.git | Web photo-management |
-| [Lutim](https://lut.im/) | Maniack Crudelis | <div class="inprogress"/> | https://github.com/maniackcrudelis/lutim_ynh | Anonymous image hosting service |
+| [Lychee](http://lychee.electerious.com/) | titoko | <div class="inprogress"/> | https://github.com/titoko/lychee_ynh | Web photo-management |
+| [Lutim](https://lut.im/) | Maniack Crudelis | <div class="inprogress"/> | https://github.com/maniackcrudelis/lutim_ynh | Anonymous image hosting service (not working at all !) |
+| [Lutim](https://lut.im/) | Matlink | <div class="inprogress"/> | https://github.com/matlink/lutim_ynh | Anonymous image hosting service (working version) |
 | [MediaWiki](https://mediawiki.org) | ElieSauveterre | <div class="ready"/> | https://github.com/mikangali-labs/mediawiki_ynh | Wiki platform |
 | [miniflux](http://miniflux.net) | matanya | <div class="inprogress"/> | https://github.com/mat-mo/miniflux_ynh | RSS reader via RTL support |
+| [Mumble Admin Plugin](http://wiki.mumble.info/wiki/MAP_-_Mumb1e_Admin_Plugin) | matlink | <div class="inprogress"/> | https://github.com/matlink/mumble_admin_plugin_ynh | Web interface to manage mumble server |
 | [Mumble Server](http://wiki.mumble.info/wiki/Main_Page) | matlink | <div class="ready"/> | https://github.com/matlink/mumbleserver_ynh | Voice chat for gaming and meeting |
 | [Munin](http://munin-monitoring.org/) | ju | <div class="ready"/> | https://github.com/julienmalik/munin_ynh | System Monitoring graphing tool |
 | [Monit](http://mmonit.com/monit/) | ju | <div class="ready"/> | https://github.com/julienmalik/monit_ynh | Daemon Monitoring tool |
@@ -144,16 +149,17 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [OpenDKIM](http://opendkim.org/) | polytan02 | <div class="inprogress"/> | https://github.com/polytan02/opendkim_ynh | OpenDKIM for Yunohost installation script |
 | [OpenID](http://openid.net/) | ju | <div class="inprogress"/> | https://github.com/julienmalik/openid-simplesamlphp_ynh | OpenID Identity server |
 | [OpenWRT](http://openwrt.org) | lunarok | <div class="ready"/> | https://github.com/lunarok/openwrt_ynh | Reverse proxy for OpenWRT installation |
+| [phpBB](http://www.phpbb.com/) | polytan02 | <div class="ready"/> | https://github.com/polytan02/phpBB_ynh | #1 forum in php with adaptive design - Requires manual configuration after initial installation |
 | [phpLDAPadmin](http://phpldapadmin.sourceforge.net/) | aymhce | <div class="ready"/> | https://github.com/aymhce/phpldapadmin_ynh | LDAP database web manager |
 | [PHPSysinfo](https://phpsysinfo.github.io/phpsysinfo/) | lunarok | <div class="ready"/> | https://github.com/lunarok/phpsysinfo_ynh | Informations about your system |
 | [Piwigo](http://piwigo.org) | monsieur-a | <div class="ready"/> | https://github.com/monsieur-a/piwigo_ynh | Web photo gallery |
 | [Piwik](http://piwik.org) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/piwik_ynh | Web analytics platform |
 | [Plexmediaserver](https://plex.tv/) | Chao-Man | <div class="inprogress"/> | https://github.com/Novakin/plexmediaserver_ynh | PlexMediaServer |
 | [PluXml](http://www.pluxml.org/) | matlink | <div class="inprogress"/> | https://github.com/matlink/pluxml_ynh | Blogging platform |
-| [proFTPd](http://www.proftpd.org/) | beudbeud | <div class="inprogress"/> | https://github.com/abeudin/proftpd_ynh.git | FTP server |
+| [proFTPd](http://www.proftpd.org/) | beudbeud | <div class="inprogress"/> | https://github.com/abeudin/proftpd_ynh | FTP server |
 | PSP Adhoc Server | matlink | <div class="inprogress"/> | https://github.com/matlink/adhocserver_ynh | |
 | [Pydio](http://pyd.io) | ju | <div class="inprogress"/> | https://github.com/julienmalik/pydio_ynh | File sharing and synchronization |
-| [Radicale](http://radicale.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/radicale_ynh.git | Caldav & Carddav Server |
+| [Radicale](http://radicale.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/radicale_ynh | Caldav & Carddav Server |
 | [Rainloop](http://rainloop.net/) | polytan02 | <div class="ready"/> | https://github.com/polytan02/rainloop_ynh | Rainloop : nice and simple webmail - configuration by hand |
 | [Red Matrix](https://redmatrix.me/) | anaqreon | <div class="inprogress"/> | https://github.com/anaqreon/redmatrix_ynh | Social network and decentralized identity platform |
 | [Sabnzbd](http://http://sabnzbd.org/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sabnzbd_ynh | Automated Usenet download |
@@ -189,6 +195,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Caliopen](https://www.caliopen.org/)
 * [CumulusClips](http://cumulusclips.org/)
 * [DemocracyOS](http://democracyos.org/)
+* [Dotclear](http://dotclear.org/)
 * [Ethersheet](https://ethersheet.org/)
 * [Fail2web](https://github.com/Sean-Der/fail2web)
 * [FileTea](https://filetea.me)
@@ -235,9 +242,11 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Scribbleton](https://scribbleton.com/)
 * [scrumblr](http://scrumblr.ca/)
 * [Shleuder](http://schleuder2.nadir.org/)
+* [Sonerezh](https://github.com/Sonerezh)
 * [Streisand](https://github.com/jlund/streisand)
 * [SVG-Edit](https://code.google.com/p/svg-edit/)
 * [Sympa](http://www.sympa.org/)
+* [Syncthing](http://syncthing.net/)
 * [Taiga](https://taiga.io/)
 * [Total Respawn](https://github.com/broncowdd/TotalRespawn)
 * [Twister](http://twister.net.co/)

@@ -11,17 +11,17 @@
 * Un autre ordinateur pour parcourir ce guide et accéder à votre Raspberry Pi
 * Un écran et un clavier sont recommandés pour pouvoir contrôler votre Raspberry Pi si un problème apparaît
 * Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
-* L’**image YunoHost pour Raspberry Pi 1**, disponible ici (à **dézipper**) :
+* L’**image YunoHost pour Raspberry Pi**, disponible ici (à **dézipper**) :
 
-    [http://build.yunohost.org/yunohost-raspberrypi-2014-09-17.zip](http://build.yunohost.org/yunohost-raspberrypi-2014-09-17.zip)
+    [http://build.yunohost.org/yunohost4rpi2.img.7z](http://build.yunohost.org/yunohost4rpi2.img.7z)
 
     <div class="alert alert-warning">
     <b>Attention :</b> la configuration réseau par défaut configure l'interface nommée *eth0* en DHCP. Il se peut que vous ayez à changer cette configuration pour que votre Raspberry Pi puisse se connecter à votre réseau si l'interface porte un autre nom. Pour ce faire :
     <ul>
     <li>Connectez-vous localement à votre Raspberry Pi</li>
-    <li>Repérez le nom de votre interface réseau : `$ ip link` (*lo* correspondant à l'interface de rebouclage, cela peut-être *eth1* par exemple)</li>
-    <li>Éditez le fichier de configuration `/etc/network/interfaces` et remplacez *eth0* par le nom de votre interface</li>
-    <li>Redémarrez le service réseau : `sudo service networking restart`</li>
+    <li>Repérez le nom de votre interface réseau : `$ ip link` (`lo` correspondant à l'interface de rebouclage, cela peut-être `eth1` par exemple)</li>
+    <li>Éditez le fichier de configuration `/etc/network/interfaces` et remplacez `eth0` par le nom de votre interface</li>
+    <li>Redémarrez le service réseau : `$ sudo service networking restart`</li>
     </ul>
     </div>
 
@@ -39,8 +39,8 @@
 
 ### Recommandé après la post-installation
 
-* Se connecter en ssh : **root@yunohost.local** (mot de passe : **yunohost**)
-* Changer le mot de passe root : ```passwd root``` ou utiliser l’[authentification SSH par clé](security_fr)
+* Se connecter en ssh : **root@IP.DU.RPI** (mot de passe : **yunohost**)
+* Changer le mot de passe root : ```passwd root```
 
 * Mettre à jour le système d’exploitation : ```apt-get update && apt-get dist-upgrade && rpi-update```
 
