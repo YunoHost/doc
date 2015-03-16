@@ -28,7 +28,7 @@ It should be `/dev/diskN`, where `N` is a number, or `/dev/sdX`, where `X` is a 
 * Copy the image by typing:
 
 ```bash
-sudo dd bs=1M if=/path/to/your/.img of=/your/device/name
+sudo dd if=/path/to/your/.img of=/your/device/name
 ```
 
 <span class="glyphicon glyphicon-warning-sign"></span> Do not forget to change `/path/to/your/.img` and `/your/device/name` with the appropriate values.
