@@ -27,7 +27,7 @@ sudo fdisk -l
 * Copiez l'image en tapant :
 
 ```bash
-sudo dd bs=1M if=/chemin/vers/votre/.img of=/nom/du/matériel
+sudo dd if=/chemin/vers/votre/.img of=/nom/du/matériel
 ```
 
 <span class="glyphicon glyphicon-warning-sign"></span> N’oubliez pas de changer `/chemin/vers/votre/.img` et `/nom/du/matériel` par les valeurs appropriées.
