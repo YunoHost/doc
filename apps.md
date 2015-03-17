@@ -255,4 +255,5 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [WebODF](http://webodf.org/)
 * [webSync](http://furier.github.io/websync/)
 * [Wisemapping](http://www.wisemapping.com/)
+* [Zone-project](https://github.com/descl/ZONE)
 * [ZNC](http://wiki.znc.in/ZNC)
