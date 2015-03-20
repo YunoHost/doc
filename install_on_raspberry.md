@@ -6,7 +6,7 @@
 <img src="https://yunohost.org/images/Raspberry_Pi_2_Model_B_v1.1_front_angle_new.jpg" width=350>
 <img src="https://yunohost.org/images/micro-sd-card.jpg">
 
-* A Raspberry Pi model 1 or 2
+* A Raspberry Pi model 1 (or 2 but not yet available)
 * An SD card: **4GB** capacity (or more) and **class10** speed rate are highly recommended
 * An other computer to read this guide and access to your Raspberry Pi
 * A screen and a keyboard are recommended to control your Raspberry Pi if a problem occurs.
