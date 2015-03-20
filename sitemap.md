@@ -43,6 +43,7 @@
         * [Command line administration](/moulinette)
         * [Change administration password](/change_admin_password)
         * Email:
+           * [Forms to remove blacklisting of his IP address](blacklist_forms_en)
            * [DKIM](dkim)
         * [Certificates](/certificate)
             * [Regenerate certificate](/regenerate_certificate_en)
