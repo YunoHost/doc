@@ -49,6 +49,7 @@
         * [Administration en ligne de commande avec la Moulinette](/moulinette_fr)
         * [Changer le mot de passe d'administration](/change_admin_password_fr)
         * Email :
+           * [Formulaires pour enlever son IP des listes noires](blacklist_forms_en)
            * [DKIM](dkim_fr)
         * [Gestion du certificat](/certificate_fr)
             * [Régénérer un certificat](/regenerate_certificate_fr)
