@@ -236,6 +236,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Pix](http://pix.toile-libre.org/)
 * [PPTP VPN](https://packages.debian.org/sv/squeeze/pptpd)
 * [Pulse](https://ind.ie/pulse/)
+* [Pump.io](http://pump.io)
 * [racktables](http://racktables.org/)
 * [remotestorage-server](http://remotestorage.io/provide/)
 * [Respawn 2.0](https://github.com/broncowdd/respawn)
