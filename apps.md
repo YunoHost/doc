@@ -137,7 +137,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [LimeSurvey](http://www.limesurvey.org/en/) | zamentur | <div class="inprogress"/> | https://github.com/zamentur/limesurvey_ynh | Web survey tool |
 | [Linux Dash](http://linuxdash.afaqtariq.com/) | opi | <div class="ready"/> | https://github.com/opi/linuxdash_ynh | Monitoring web dashboard |
 | [Lychee](http://lychee.electerious.com/) | titoko | <div class="inprogress"/> | https://github.com/titoko/lychee_ynh | Web photo-management |
-| [Lutim](https://lut.im/) | Maniack Crudelis | <div class="inprogress"/> | https://github.com/maniackcrudelis/lutim_ynh | Anonymous image hosting service (not working at all !) |
+| [Lutim](https://lut.im/) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/lutim_ynh | Anonymous image hosting service (not working at all !) |
 | [Lutim](https://lut.im/) | Matlink | <div class="inprogress"/> | https://github.com/matlink/lutim_ynh | Anonymous image hosting service (working version) |
 | [MediaWiki](https://mediawiki.org) | ElieSauveterre | <div class="ready"/> | https://github.com/mikangali-labs/mediawiki_ynh | Wiki platform |
 | [miniflux](http://miniflux.net) | matanya | <div class="inprogress"/> | https://github.com/mat-mo/miniflux_ynh | RSS reader via RTL support |
