@@ -48,4 +48,8 @@ Vous pouvez également rediriger les ports manuellement vers l'adresse IP locale
 
 Si le serveur est accessible de l’extérieur, mais inatteignable via son nom de domaine dans votre réseau local, votre box/routeur ne fait probablement pas correctement de <a href="http://fr.wikipedia.org/wiki/Hairpinning" target="_blank">hairpinning</a>.
 
-Si vous savez comment faire, ajoutez une entrée dans le fichier `/etc/hosts` du **client** pour indiquer qu'il doit accéder au **serveur** via son IP locale. Sinon, retentez l’installation en prenant cette fois un nom de domaine en **.nohost.me** ou en **.noho.st**.
+Voici un [tutoriel](dns_reseau_local_fr) pour pouvoir accéder à son serveur en réseau local et contourner le problème de hairpinning. Le tutoriel propose en première solution de mettre en place une redirection avec le DNS de la box et en seconde solution de modifier le fichier `hosts` des **clients** pour indiquer qu'il doit accéder au **serveur** via son IP locale. La première solution est préférable car il ne nécessite pas de modifier le fichier `hosts` sur chaqun des clients du réseau local.
+
+___
+
+Sinon, retentez l’installation en prenant cette fois un nom de domaine en **.nohost.me** ou en **.noho.st**.
