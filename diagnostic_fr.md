@@ -9,7 +9,7 @@ Dans un navigateur web, essayez d’accéder à votre serveur grâce au nom de d
 Par exemple : `http://mondomaine.org`
 
 <div class="alert alert-warning">
-Si vous avez optez pour un nom de domaine se terminant par <b>.nohost.me</b> ou <b>.noho.st</b>, vous devrez patienter 5 minutes avant que l'adresse soit atteignable.
+Si vous avez optez pour un nom de domaine se terminant par <b>.nohost.me</b> ou <b>.noho.st</b>, vous devrez patienter cinq minutes avant que l'adresse soit atteignable.
 </div>
 
 ---
@@ -48,7 +48,7 @@ Vous pouvez également rediriger les ports manuellement vers l'adresse IP locale
 
 Si le serveur est accessible de l’extérieur, mais inatteignable via son nom de domaine dans votre réseau local, votre box/routeur ne fait probablement pas correctement de <a href="http://fr.wikipedia.org/wiki/Hairpinning" target="_blank">hairpinning</a>.
 
-Voici un [tutoriel](dns_reseau_local_fr) pour pouvoir accéder à son serveur en réseau local et contourner le problème de hairpinning. Le tutoriel propose en première solution de mettre en place une redirection avec le DNS de la box et en seconde solution de modifier le fichier `hosts` des **clients** pour indiquer qu'il doit accéder au **serveur** via son IP locale. La première solution est préférable car il ne nécessite pas de modifier le fichier `hosts` sur chaqun des clients du réseau local.
+Voici un [tutoriel](dns_reseau_local_fr) pour pouvoir accéder à son serveur en réseau local et contourner le problème de hairpinning. Le tutoriel propose en première solution de mettre en place une redirection avec le DNS de la box et en seconde solution de modifier le fichier `hosts` des **clients** pour indiquer qu'il doit accéder au **serveur** via son IP locale. La première solution est préférable car il ne nécessite pas de modifier le fichier `hosts` sur chacun des clients du réseau local.
 
 ___
 
