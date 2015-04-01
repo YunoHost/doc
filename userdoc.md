@@ -5,3 +5,6 @@
 * [Instant messaging usage](/XMPP)
 * [Configure a mail client](/email)
 * [What is YunoHost](/whatsyunohost)
+* [Setting up firefox sync](/app_ffsync_en)
+* [Torrent usage](/app_transmission_en)
+* [Calendar and contact sync](/app_radicale)
