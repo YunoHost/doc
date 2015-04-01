@@ -137,8 +137,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [LimeSurvey](http://www.limesurvey.org/en/) | zamentur | <div class="inprogress"/> | https://github.com/zamentur/limesurvey_ynh | Web survey tool |
 | [Linux Dash](http://linuxdash.afaqtariq.com/) | opi | <div class="ready"/> | https://github.com/opi/linuxdash_ynh | Monitoring web dashboard |
 | [Lychee](http://lychee.electerious.com/) | titoko | <div class="inprogress"/> | https://github.com/titoko/lychee_ynh | Web photo-management |
-| [Lutim](https://lut.im/) | Maniack Crudelis | <div class="inprogress"/> | https://github.com/maniackcrudelis/lutim_ynh | Anonymous image hosting service (not working at all !) |
-| [Lutim](https://lut.im/) | Matlink | <div class="inprogress"/> | https://github.com/matlink/lutim_ynh | Anonymous image hosting service (working version) |
+| [Lutim](https://lut.im/) | Maniack Crudelis<br></br>Matlink | <div class="ready"/> | https://github.com/maniackcrudelis/lutim_ynh<br> https://github.com/matlink/lutim_ynh | Anonymous image hosting service |
 | [MediaWiki](https://mediawiki.org) | ElieSauveterre | <div class="ready"/> | https://github.com/mikangali-labs/mediawiki_ynh | Wiki platform |
 | [miniflux](http://miniflux.net) | matanya | <div class="inprogress"/> | https://github.com/mat-mo/miniflux_ynh | RSS reader via RTL support |
 | [Mumble Admin Plugin](http://wiki.mumble.info/wiki/MAP_-_Mumb1e_Admin_Plugin) | matlink | <div class="inprogress"/> | https://github.com/matlink/mumble_admin_plugin_ynh | Web interface to manage mumble server |
@@ -165,6 +164,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Red Matrix](https://redmatrix.me/) | anaqreon | <div class="inprogress"/> | https://github.com/anaqreon/redmatrix_ynh | Social network and decentralized identity platform |
 | [Sabnzbd](http://http://sabnzbd.org/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sabnzbd_ynh | Automated Usenet download |
 | [SCM-Manager](https://www.scm-manager.org/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/scm-manager_ynh | Share and manage repositories over HTTP |
+| [Seafile](http://seafile.com/) | CotzaDev<br></br>mbugeia | <div class="ready"/> | https://github.com/CotzaDev/seafile_ynh<br> https://github.com/mbugeia/seafile_ynh | Cloud storage service with encryption |
 | [Shaarli](http://sebsauvage.net/wiki/doku.php?id=php:shaarli) | ju | <div class="inprogress"/> | https://github.com/julienmalik/shaarli_ynh | Delicious clone |
 | [Sickbeard](http://sickbeard.com) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sickbeard_ynh | PVR and episode guide that downloads and manages all your TV shows |
 | [Subsonic](http://subsonic.org) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/subsonic_ynh | Web-based media server |
@@ -211,12 +211,14 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [h5ai](http://larsjung.de/h5ai/)
 * [Headphones](https://github.com/rembo10/headphones)
 * [Hi Buddy](http://hibuddy.monkeypatch.me/)
+* [Huginn](https://github.com/cantino/huginn)
 * [ikiwiki](http://ikiwiki.info/)
 * [img.bi](https://img.bi/)
 * [Inbox](https://www.inboxapp.com/)
 * [Jitsi Meet](https://github.com/jitsi/jitsi-meet)
 * [jsFiddle](http://jsbin.com/help/2-second-setup)
 * [Known](https://withknown.com/)
+* [KrISS feed](https://github.com/tontof/kriss_feed)
 * [Kune](https://en.wikipedia.org/wiki/Kune_%28software%29)
 * [LSTU](https://github.com/ldidry/lstu)
 * [Mailman](https://www.gnu.org/software/mailman/)
@@ -229,6 +231,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Mopidy](https://www.mopidy.com/)
 * [Movim](http://www.movim.eu/)
 * [Odoo ERP](https://www.odoo.com)
+* [pdfy](https://github.com/joepie91/pdfy)
 * [Pelican](http://blog.getpelican.com/)
 * [PHPList](http://www.phplist.com/)
 * [PHProxy](http://sourceforge.net/projects/poxy/)
@@ -251,11 +254,14 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Sympa](http://www.sympa.org/)
 * [Syncthing](http://syncthing.net/)
 * [Taiga](https://taiga.io/)
+* [TorChat](https://github.com/prof7bit/TorChat)
 * [Total Respawn](https://github.com/broncowdd/TotalRespawn)
 * [Twister](http://twister.net.co/)
+* [Unvis](https://github.com/phixofor/unvis.it)
 * [Vaultier](http://www.vaultier.org/)
 * [Webmpc](https://github.com/ushis/webmpc)
 * [WebODF](http://webodf.org/)
 * [webSync](http://furier.github.io/websync/)
 * [Wisemapping](http://www.wisemapping.com/)
+* [Zone-project](https://github.com/descl/ZONE)
 * [ZNC](http://wiki.znc.in/ZNC)
