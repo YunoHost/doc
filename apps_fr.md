@@ -1,4 +1,4 @@
-#Apps &nbsp;&nbsp;<img src="https://yunohost.org/images/roundcube.png"><img src="https://yunohost.org/images/ttrss.png"><img src="https://yunohost.org/images/wordpress.png"><img src="https://yunohost.org/images/transmission.png"><img src="https://yunohost.org/images/jappix.png">
+#Apps officielles&nbsp;&nbsp;<img src="https://yunohost.org/images/roundcube.png"><img src="https://yunohost.org/images/ttrss.png"><img src="https://yunohost.org/images/wordpress.png"><img src="https://yunohost.org/images/transmission.png"><img src="https://yunohost.org/images/jappix.png">
 
 <a class="btn btn-lg btn-default" href="/apps_in_progress_en"><strong>2</strong> - Apps en cours</a><a class="btn btn-lg btn-default" href="/apps_wishlist_en"><strong>3</strong> - Propositions d’apps</a>
 
