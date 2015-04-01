@@ -1,6 +1,6 @@
 #Apps &nbsp;&nbsp;<img src="https://yunohost.org/images/roundcube.png"><img src="https://yunohost.org/images/ttrss.png"><img src="https://yunohost.org/images/wordpress.png"><img src="https://yunohost.org/images/transmission.png"><img src="https://yunohost.org/images/jappix.png">
 
-<a class="btn btn-lg btn-default" href="/apps_in_progress"><strong>2</strong> - Apps in progress</a><a class="btn btn-lg btn-default" href="/apps_wishlist"><strong>3</strong> - Apps wishlist</a>
+<a class="btn btn-lg btn-default" href="/apps_in_progress_en"><strong>2</strong> - Apps in progress</a><a class="btn btn-lg btn-default" href="/apps_wishlist_en"><strong>3</strong> - Apps wishlist</a>
 
 <div class="panel-group" id="app-accordion"></div>
 
