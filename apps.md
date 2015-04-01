@@ -256,6 +256,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Taiga](https://taiga.io/)
 * [TorChat](https://github.com/prof7bit/TorChat)
 * [Total Respawn](https://github.com/broncowdd/TotalRespawn)
+* [TorChat](https://github.com/prof7bit/TorChat)
 * [Twister](http://twister.net.co/)
 * [Unvis](https://github.com/phixofor/unvis.it)
 * [Vaultier](http://www.vaultier.org/)
