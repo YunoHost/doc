@@ -61,8 +61,8 @@
     * [Contributor guide](/contribute)
         * Developement
            * [Package new application](/packaging_apps)
-           * [Packages in progress](/apps_in_progress)
-           * [Applications wishlist](/apps_wishlist)
+           * [Packages in progress](/apps_in_progress_en)
+           * [Applications wishlist](/apps_wishlist_en)
            * [Create live usb](/create_live_usb)
            * [Build Openresty](/build_openresty)
         * Documentation
