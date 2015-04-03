@@ -1,8 +1,8 @@
 # Apps in progress
 
-<a class="btn btn-lg btn-default" href="/apps">Official apps</a><a class="btn btn-lg btn-default" href="/apps_in_progress">Apps in progress</a><a class="btn btn-lg btn-default" href="/apps_wishlist_en">Apps wishlist</a>
+<a class="btn btn-lg btn-default" href="/apps">Official apps</a> <a class="btn btn-lg btn-default" href="/apps_in_progress">Apps in progress</a> <a class="btn btn-lg btn-default" href="/apps_wishlist_en">Apps wishlist</a>
 
-The following applications are being worked on by a growing number of packagers.
+The following applications are being packaged on by a growing number of packagers.
 
 They are <strong>NOT</strong> validated by the packaging team, and as such, no official support is provided for them.
 
