@@ -1,6 +1,6 @@
 #Apps wishlist
 
-<a class="btn btn-lg btn-default" href="/apps">Official apps</a><a class="btn btn-lg btn-default" href="/apps_in_progress_en">Apps in progress</a><a class="btn btn-lg btn-default" href="/apps_wishlist">Apps wishlist</a>
+<a class="btn btn-lg btn-default" href="/apps">Official apps</a> <a class="btn btn-lg btn-default" href="/apps_in_progress_en">Apps in progress</a> <a class="btn btn-lg btn-default" href="/apps_wishlist">Apps wishlist</a>
 
 The following list is a compiled wishlist of applications that would be nice-to-have.
 
