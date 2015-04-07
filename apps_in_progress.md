@@ -21,7 +21,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [243](https://hgentry.github.io/81/) | Moul | <div class="ready"/> | https://github.com/M5oul/243_ynh | Clone of 2048 game: goal reach 243 |
 | [Ampache](http://ampache.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/ampache_ynh | Web based audio/video streaming |
 | [BTSync](http://www.getsync.com/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/btsync_ynh | File synchronization tool  |
-| Chtickynotes | chtixof | <div class="ready"/> | https://github.com/chtixof/ynh-chtickynotes | A Post-it page |
+| [Chtickynotes](https://github.com/chtixof/chtickynotes_ynh) | chtixof | <div class="ready"/> | https://github.com/chtixof/chtickynotes_ynh | A Post-it page |
 | [COPS](http://cops.com) | lunarok | <div class="ready"/> | https://github.com/lunarok/cops_ynh | Frontend for Calibre library |
 | [Couchpotato](https://couchpota.to/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/couchpotato_ynh | PVR for Usenet and torrents |
 | [Cubiks-2048](https://kshitij-banerjee.github.io/Cubiks-2048/) | Moul | <div class="ready"/> | https://github.com/M5oul/Cubiks-2048_ynh | Clone of 2048 game in 3D |
@@ -54,6 +54,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Lychee](http://lychee.electerious.com/) | titoko | <div class="inprogress"/> | https://github.com/titoko/lychee_ynh | Web photo-management |
 | [Lutim](https://lut.im/) | Maniack Crudelis<br></br>Matlink | <div class="ready"/> | https://github.com/maniackcrudelis/lutim_ynh<br> https://github.com/matlink/lutim_ynh | Anonymous image hosting service |
 | [MediaWiki](https://mediawiki.org) | ElieSauveterre | <div class="ready"/> | https://github.com/mikangali-labs/mediawiki_ynh | Wiki platform |
+| [minchat](https://github.com/chtixof/minchat_ynh) | chtixof | <div class="ready"/> | https://github.com/chtixof/minchat_ynh | Minimalist web chat |
 | [miniflux](http://miniflux.net) | matanya | <div class="inprogress"/> | https://github.com/mat-mo/miniflux_ynh | RSS reader via RTL support |
 | [Mumble Admin Plugin](http://wiki.mumble.info/wiki/MAP_-_Mumb1e_Admin_Plugin) | matlink | <div class="inprogress"/> | https://github.com/matlink/mumble_admin_plugin_ynh | Web interface to manage mumble server |
 | [Mumble Server](http://wiki.mumble.info/wiki/Main_Page) | matlink | <div class="ready"/> | https://github.com/matlink/mumbleserver_ynh | Voice chat for gaming and meeting |
@@ -89,7 +90,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Wordpress multisite](http://codex.wordpress.org/Create_A_Network) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/wordpress_ynh | Wordpress with network support |
 | [YaCy](http://yacy.net) | Moul | <div class="inprogress"/> | https://github.com/M5oul/yacy_ynh/ | Libre and decentralized search engine |
 | [Yourls](http://yourls.org/) | courgette | <div class="ready"/> | https://github.com/courgette/yourls_ynh |  URL Shortening service |
-| Yunofav | [xof](https://forum.yunohost.org/users/xof) | <div class="ready"/> | https://github.com/chtixof/yunofav | Page of favorite links Yunohost-styled |
+| Yunofav | chtixof | <div class="ready"/> | https://github.com/chtixof/yunofav | Page of favorite links Yunohost-styled |
 | [Zomburl](http://cadav.re/) | courgette | <div class="inprogress"/> | https://github.com/courgette/zomburl_ynh | URL Shortening service |
 | [ZoteroSync](http://blog.holz.ca/2011/11/phpzoterowebdav-installation/) | scith | <div class="inprogress"/> | https://github.com/scith/zoterosync_ynh | Sync Zotero library and files |
 | [Z-Push](https://z-push.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/z-push_ynh | ActiveSync Server |
