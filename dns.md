@@ -35,4 +35,4 @@ You can also check out these pages for specific registrar documentation: [OVH](/
 <br><br>**Warning**: If you choose this option, all configuration options will be dome automatically, you will retain a good deal of flexibility, but if your server gets knocked offline you will run into many problems. **Choose this only if you are certain.**
 
 ### Dynamic IP
-If the public IP of your server is changing follow [these tutorial](https://www.dnsexit.com/Direct.sv?cmd=ipClients).
+If the global IP address is changing follow this [tutorial](dns_dynamicip_en).
