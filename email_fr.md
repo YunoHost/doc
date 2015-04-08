@@ -26,7 +26,7 @@ L'utilitaire de détection automatique de Thunderbird ne marche pas correctement
 
 * [Gestion des alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
 
-####Pour Androïd
+####Pour Android
 L’application [K-9 Mail](https://github.com/k9mail) fonctionne.
 
 ###Migration
