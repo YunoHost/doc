@@ -34,6 +34,7 @@
         * [DNS Settings](/dns)
            * [Registrar](registar)
            * [DNS Configuration](/dns_config)
+           * [Configure a dynamic DNS with a dynamic IP address](dns_dynamicip_en)
         * [Official applications](/apps)
         * [Internet service provider](/isp)
             * [Main configuration box](/isp_box_config)
