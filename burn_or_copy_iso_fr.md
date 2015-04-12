@@ -1,4 +1,4 @@
-# Copier l'image ISO
+# Copier l’image ISO
 
 Maintenant que vous avez l'image ISO de YunoHost, vous devez la mettre sur un support physique : **Clé USB** ou **CD/DVD**
 
@@ -13,7 +13,7 @@ Téléchargez la version d'<a href="http://unetbootin.sourceforge.net/" target="
 
 <img src="https://yunohost.org/images/unetbootin.png">
 
-Insérez votre clé USB, sélectionnez l'image ISO YunoHost et cliquez sur "OK"
+Insérez votre clé USB, sélectionnez l'image ISO YunoHost et cliquez sur **OK**.
 
 
 ---
