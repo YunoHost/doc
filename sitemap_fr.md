@@ -72,7 +72,7 @@
     * [Guide du contributeur](/contribute_fr)
         * Développement
            * [Packager des applications](/packaging_apps_fr)
-           * [Packages d'applications en cours de développement](/apps_in_progress_en)
+           * [Packages d'applications en cours de développement](/apps_in_progress_fr)
            * [Liste de proposition d'applications](/apps_wishlist_en)
            * [Création de paquets Debian](/build_system_fr)
         * Documentation
