@@ -1,6 +1,6 @@
-#Changer le mot de passe d'administration 
+#Changer le mot de passe d’administration 
 
-Pour des raisons de sécurité vous pouvez avoir besoin de changer votre mot de passe d'administration. Pour cela, 2 methodes sont possibles.
+Pour des raisons de sécurité vous pouvez avoir besoin de changer votre mot de passe d'administration. Pour cela, deux méthodes sont possibles.
 
 <div class="alert alert-warning">
 <span class="glyphicon glyphicon-warning-sign"></span>
