@@ -1,4 +1,4 @@
-#Qu'est-ce que YunoHost ?
+#Qu’est-ce que YunoHost ?
 
 YunoHost est un **système d'exploitation serveur** visant à simplifier l'auto-hébergement de services Internet.   
 Il est basé et reste totalement compatible avec [Debian GNU/Linux](http://debian.org).
@@ -20,14 +20,14 @@ On peut donc le considérer comme une distribution, comprenant les logiciels sui
 * [Dovecot](http://www.dovecot.org/) : un serveur de messagerie électronique IMAP et POP3
 * [Amavis](http://amavis.org/) : un antispam
 * [Metronome](http://www.lightwitch.org/metronome) : un serveur XMPP
-* [OpenLDAP](http://www.openldap.org/)
+* [OpenLDAP](http://www.openldap.org/) : un système d'annuaire
 * [Bind](https://www.isc.org/downloads/bind/) : un serveur de DNS
 * [SSOwat](https://github.com/Kloadut/SSOwat) : un (SSO) système d’authentification web
-* [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs) : un système de sauvegarde (pas encore mis en place)
+<!--* [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs) : un système de sauvegarde (pas encore mis en place)-->
 
 ---
 
-### Système d'app
+### Système d’app
 
 En complément, YunoHost fournit un système d'« app » qui n'est autre qu'un **dépôt communautaire** de scripts aidant à installer des services et applications web supplémentaires.
 
@@ -71,7 +71,7 @@ Tous les efforts sont faits pour simplifier le déploiement sur le plus d'appare
 
 YunoHost est développé pour être le plus **simple** et le moins intrusif possible pour garder la compatibilité avec Debian. Il propose uniquement un ensemble de configurations automatiques et opère via des interfaces accessibles.
 
-Le tout est bien entendu **entièrement libre**. La philosophie de l'auto-hébergement étant à nos yeux incompatible avec tout autre modèle de développement logiciel.
+Le tout est bien entendu **entièrement libre**. La philosophie de l'[auto-hébergement](selfhosting_fr) étant à nos yeux incompatible avec tout autre modèle de développement logiciel.
 
 N'hésitez pas à visiter la page « [contribuez](/contribute_fr) ».
 
@@ -83,7 +83,7 @@ Tous les efforts ont été déployés pour sécuriser YunoHost, et **chiffrer to
 
 ---
 
-### Qu'est-ce que YunoHost n'est pas ?
+### Qu’est-ce que YunoHost n’est pas ?
 
 Même si YunoHost est multi-domaine et multi-utilisateur, il reste **inapproprié pour un usage mutualisé**.
 
