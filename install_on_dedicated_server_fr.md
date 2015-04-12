@@ -11,7 +11,7 @@
 
 ---
 
-## Étapes d'installation
+## Étapes d’installation
 
 <a class="btn btn-lg btn-default" href="/install_manually_fr">1. Installer manuellement</a>
 
