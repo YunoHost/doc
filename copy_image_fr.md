@@ -1,10 +1,10 @@
-# Copier l'image sur une carte SD
+# Copier l’image sur une carte SD
 
 Maintenant que vous avez l'image ISO YunoHost, vous devez la copier sur une carte SD. Le processus est différent suivant votre système d'exploitation.
 
 <img src="https://yunohost.org/images/sdcard.jpg" width=150><img src="https://yunohost.org/images/micro-sd-card.jpg">
 
-## Sur Windows
+## Sous Windows
 
 * Téléchargez et installez **[Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/)**.
 * Insérez votre carte SD.
@@ -12,7 +12,7 @@ Maintenant que vous avez l'image ISO YunoHost, vous devez la copier sur une cart
 
 <img src="https://yunohost.org/images/win32diskimager.png">
 
-## Sur GNU/Linux, BSD ou Mac OS
+## Sous GNU/Linux, BSD ou Mac OS
 
 * Ouvrez un terminal.
 * Insérez votre carte SD.
