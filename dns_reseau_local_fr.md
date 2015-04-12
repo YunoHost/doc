@@ -4,7 +4,7 @@ Après installation de votre serveur, il est probable que votre nom de domaine n
 
 Pour résoudre ce problème, il est nécessaire de configurer le DNS de votre routeur ou, à défaut, le ou les fichiers hosts de vos ordinateurs clients.
 
-### Obtenir l'adresse IP locale du serveur
+### Obtenir l’adresse IP locale du serveur
 Afin de configurer le DNS ou le fichier hosts, il vous faut connaître l'adresse ip privée de votre serveur. Cette adresse est utilisable uniquement sur le réseau locale où se trouve le serveur et n'est pas liée à votre adresse publique utilisée sur Internet.
 
 Vous pouvez retrouver l'adresse privée de votre serveur de différentes manières :
@@ -27,7 +27,7 @@ Si vous ne disposez toujours pas de l'adresse IP privée de votre serveur, vous 
 Rendez-vous dans l'onglet Réseau puis DNS pour ajouter votre nom de domaine au DNS de la box.
 <img src="https://yunohost.org/images/dns_9box.png" width=800>
 
-## Configurer le fichier [hosts](http://fr.wikipedia.org/wiki/Hosts) de l'ordinateur client
+## Configurer le fichier [hosts](http://fr.wikipedia.org/wiki/Hosts) de l’ordinateur client
 La modification du fichier hosts devrait être effectuée seulement si vous ne pouvez pas modifier le DNS de votre box ou de votre routeur, car le fichier hosts impactera uniquement l'ordinateur sur lequel le fichier est modifié.
 
 - Sous Windows, vous trouverez le fichier hosts ici :
