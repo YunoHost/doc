@@ -63,7 +63,7 @@ Cette commande lancera un conteneur sur la base de l'image `yunohost`, tag `init
 
 Petit mémo des commandes utiles :
 
-### Snapshoter l'état d'un container
+### Snapshoter l’état d’un container
 
 ```bash
 docker commit <ID_de_mon_conteneur> LeNomQueJeVeux
