@@ -14,14 +14,18 @@ You can reuse any computer with **256MB RAM or more**.
 * A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
 * A **USB key** of at least 1GB capacity **OR** a standard **blank CD**
 * One of the latest **YunoHost ISO images**, available here (take the 32 bits one if you don't know which one to choose):
- * **Torent** (share at least to ratio 1 to assure torrents sustainability):
-   * [32 bits](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent)
-   * [64 bits](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent)
-
- * **Direct download**:
-   * [32 bits](http://build.yunohost.org/yunohostv2-latest-i386.iso)
-   * [64 bits](http://build.yunohost.org/yunohostv2-latest-amd64.iso)
-
+   <div>
+   <b>Torent:</b>
+   <ul>
+   <li>[32 bits](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent)</li>
+   <li>[64 bits](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent)</li>
+   </ul>
+   <b>Direct download:</b>
+   <ul>
+   <li>[32 bits](http://build.yunohost.org/yunohostv2-latest-i386.iso)</li>
+   <li>[64 bits](http://build.yunohost.org/yunohostv2-latest-amd64.iso)</li>
+   </ul>
+   </div>
 
 ---
 
@@ -36,8 +40,8 @@ You can reuse any computer with **256MB RAM or more**.
 ---
 
 For connecting directly on your computer or with [SSH](/ssh) (only local): 
-* User: root
-* Password: yunohost
+* User: **root**
+* Password: **yunohost**
 
 ---
 
