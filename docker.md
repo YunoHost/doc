@@ -10,20 +10,14 @@
 
 ## Install Docker
 
-**Pre-requisite** : A x86 computer under Ubuntu 12.04 (or above), or ArchLinux.
+**Pre-requisite** : A x86 computer under Ubuntu 14.04 (or above), or ArchLinux.
 
-Under Ubuntu :
+On Ubuntu :
 ```bash
-# 12.04 only
-sudo apt-get update
-sudo apt-get install linux-image-generic-lts-raring linux-headers-generic-lts-raring
-sudo reboot
-
-# In every cases
 curl -s https://get.docker.io/ubuntu/ | sudo sh
 ```
 
-Under ArchLinux :
+On ArchLinux :
 ```bash
 sudo pacman -Sy docker
 ```
@@ -34,9 +28,14 @@ sudo pacman -Sy docker
 
 ## Build the YunoHost container
 
-The following command will fetch a Debian Wheezy base image, clone the YunoHost's install script in it, and run it.
+The following command will fetch the latest YunoHost built image:
 ```bash
-docker build -t yunohost:init https://raw.githubusercontent.com/YunoHost/Kremlin/master/docker/Dockerfile
+docker pull yunohost/full
+```
+
+You can also build the image manually:
+```bash
+docker build -t yunohost/full github.com/YunoHost/Dockerfile
 ```
 
 You can check that the container is successfully built with the `docker images` command.
@@ -46,32 +45,55 @@ You can check that the container is successfully built with the `docker images` 
 ## Run the container
 
 ```bash
-docker run -d -t yunohost:init /sbin/init
+docker run -d yunohost/full /sbin/init
 ```
 
-This command will start a container based on the `yunohost` image (tag `init`) that you just created.    
-You will then be able to [postinstall](/postinstall) all this by entering the container's IP address (`172.17.0.2` by default) into a web browser.
+If you want to run the container and forward all the interesting ports to the host:
+Si vous souhaitez démarrer le conteneur avec tous les ports forwardé sur l’hôte :
 
-**Notice:** You may want to forward some of your container's ports, find more information or these pages:
+```bash
+docker run -d \
+ -p 25:25 \
+ -p 53:53/udp \
+ -p 80:80 \
+ -p 443:443 \
+ -p 465:465 \
+ -p 993:993 \
+ -p 5222:5222 \
+ -p 5269:5269 \
+ -p 5290:5290 \
+ yunohost/full \
+ /sbin/init
+```
 
+You can find more information on these steps on the Docker's documentation:
 * http://docs.docker.com/reference/commandline/cli/#run
 * http://docs.docker.com/userguide/dockerlinks/
 
+---
+
+## Post-installation
+
+Find your container's IP address (should looks like 172.17.0.x)
+
+```bash
+docker inspect --format '{{ .NetworkSettings.IPAddress }}' <CONTAINER_ID>
+```
+
+Then reach https://ip.du.conteneur on your web browser, and proceed to the [post-installation](/postinstall) step.
 
 ---
 
-## Advanced usage
+## Useful commands
 
-Some useful commands:
-
-### Snapshot container's state
+Snapshot container's state
 
 ```bash
-docker commit <container_ID> yunohost:TheTagIWant
-# Example : docker commit 3e85317430db yunohost:03052014
+docker commit <container_ID> yunohost/full:tag
+# E.g.: docker commit 3e85317430db yunohost/full:03052014
 ```
 
-### Assign an IP to a container
+Assign an IP to a container
 
 ```bash
 # You will need iptables, and to activate IP forwarding on your system
@@ -80,20 +102,9 @@ iptables -t nat -A POSTROUTING -s '<container.IP>/32' -o eth0 -j SNAT --to-sourc
 # Be careful on the network interface (here eth0)
 ```
 
-### Log in a YunoHost running container
+Log in a YunoHost running container
 
 ```bash
-# You will need:
-# * your container's ID
-docker ps --no-trunc | grep yunohost
-# * your container's PID
-docker ps -q | xargs docker inspect --format '{{.State.Pid}}'
-# * `util-linux` package
-apt-get install util-linux || pacman -S util-linux
-
-# Run the nsenter command with the right parameters
-nsenter --target <PID> --mount --uts --ipc --net --pid /bin/bash
-
 # Otherwise, with docker
-docker run -t -i yunohost:init /bin/bash
+docker exec -t -i <container_ID> /bin/bash
 ```
