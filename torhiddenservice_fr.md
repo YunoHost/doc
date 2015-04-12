@@ -25,7 +25,7 @@ service tor restart
 ```
 
 
-## Obtenir l'adresse du service caché
+## Obtenir l’adresse du service caché
 
 ```bash
 cat /path/to/hidden_service/keys/hostname
