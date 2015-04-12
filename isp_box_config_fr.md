@@ -1,7 +1,7 @@
 # Configuration box/routeur
 
 ### Accès à l’administration de la box/routeur
-Allez à l'adresse http://192.168.0.1 ou http://192.168.1.1. Puis authentifier vous.
+Allez à l'adresse suivante : http://192.168.0.1 (ou celle-ci http://192.168.1.1). Puis authentifier-vous.
 
 
 ### Ouverture des ports
