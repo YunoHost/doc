@@ -92,7 +92,7 @@ ssh -p <votre_numero_de_port_ssh> admin@<votre_serveur_yunohost>
 
 ---
 
-### Changer l'utilisateur autorisé à se connecter par SSH
+### Changer l’utilisateur autorisé à se connecter par SSH
 
 Afin d'éviter de multiples tentatives de forçage du login admin par des robots, on peut éventuellement changer l'utilisateur autorisé à se connecter.
 
@@ -126,7 +126,7 @@ Sauvegardez et relancez le démon SSH.
 
 ---
 
-### Désactivation de l'API YunoHost
+### Désactivation de l’API YunoHost
 
 YunoHost est administrable via une **API HTTP**, servie sur le port 6787 par défaut. Elle permet d'administrer une grande partie de votre serveur, et peut donc être utilisée à des **fins malveillantes**. La meilleure chose à faire si vous êtes habitués aux lignes de commande est de désactiver le service `yunohost-api`, et **utiliser la [moulinette](/moulinette_fr)** en SSH.
 
