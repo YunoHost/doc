@@ -49,7 +49,7 @@
         * [Connexion à son serveur en ligne de commande avec SSH](/ssh_fr)
         * [Administration en ligne de commande avec la Moulinette](/moulinette_fr)
         * [Changer le mot de passe d'administration](/change_admin_password_fr)
-        * Email :
+        * [Courier électronique](email_fr)
            * [Formulaires pour enlever son IP des listes noires](blacklist_forms_en)
            * [DKIM](dkim_fr)
         * [Gestion du certificat](/certificate_fr)
