@@ -13,7 +13,7 @@ Les connexions sans-fil ne sont pas supportées pour le moment, et si vous utili
 Démarrez votre serveur avec la clé USB ou le CD-ROM inséré, et sélectionnez-le comme **périphérique de démarrage** en pressant l'une des touches suivantes (dépendant de votre ordinateur) :    
 ```<Échap>```, ```<F8>```, ```<F10>```, ```<F11>```, ```<F12>``` or ```<Suppr>```
 
-## <small>3.</small> Lancer l'installation graphique
+## <small>3.</small> Lancer l’installation graphique
 
 Vous devriez voit un écran comme ça :
 
@@ -45,7 +45,7 @@ Vous pouvez procéder à la post-installation directement, ou accéder à l'adre
 
 <img src="https://yunohost.org/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-Si vous rencontrez une erreur de ce type, cliquez sur "**Poursuivre quand même**" ou "**Ajouter une exception**".    
+Si vous rencontrez une erreur de ce type, cliquez sur “**Poursuivre quand même**” ou “**Ajouter une exception**”.    
 Cela signifie que vous devez faire confiance au certificat qui sécurise les connexions avec votre serveur.    
 Comme c'est le votre, vous pouvez le valider sereinement ici :-)
 
@@ -55,6 +55,6 @@ Comme c'est le votre, vous pouvez le valider sereinement ici :-)
 
 ---
 
-#### Plus d'informations sur la post-installation ici :
+#### Plus d’informations sur la post-installation ici :
 
 **[yunohost.org/postinstall](/postinstall)**
