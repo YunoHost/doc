@@ -9,12 +9,12 @@ Pour cela, il faut aller dans Outils > Mettre à jour le système.
 
 Une fois la liste des paquets d'applications récupérée la page proposera de mettre à jour les applications officielles qui ont une mise à jour en attente.
 
-### Mise à jour par la ligne de commande
+### Mise à jour en ligne de commande
 Il faut d’abord se connecter sur le serveur en ssh, puis taper cette commande (dans le cas d'une mise à jour WordPress).
 ```bash
 yunohost app upgrade wordpress
 ```
-** Note : ** dans le cas où plusieurs applications du même type (ex: 2 wordpress) sont installés, il est nécessaire de spécifier le nom d'instance (ex: wordpress ou wordpress__2 ).
+** Note : ** dans le cas où plusieurs applications du même type (ex : deux wordpress) sont installés, il est nécessaire de spécifier le nom d'instance (ex : wordpress ou wordpress__2 ).
 
 #### Mise à jour d'une application non officielle
 Il faut pour cela indiquer le dépôt git qui contient la mise à jour. 
