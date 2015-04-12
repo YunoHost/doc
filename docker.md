@@ -10,7 +10,7 @@
 
 ## Install Docker
 
-**Pre-requisite** : A x86 computer under Ubuntu 14.04 (or above), or ArchLinux.
+**Pre-requisite**: a x86 computer under Ubuntu 14.04 (or above), or ArchLinux.
 
 On Ubuntu :
 ```bash
@@ -22,7 +22,7 @@ On ArchLinux :
 sudo pacman -Sy docker
 ```
 
-**Note:** You may have to start Docker's daemon manually (as root: `service docker start`, `systemctl start docker` or simply `docker -d`)
+**Note:** you may have to start Docker's daemon manually (as root: `service docker start`, `systemctl start docker` or simply `docker -d`)
 
 ---
 
@@ -49,7 +49,6 @@ docker run -d yunohost/full /sbin/init
 ```
 
 If you want to run the container and forward all the interesting ports to the host:
-Si vous souhaitez démarrer le conteneur avec tous les ports forwardé sur l’hôte :
 
 ```bash
 docker run -d \
