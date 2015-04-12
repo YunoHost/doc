@@ -27,9 +27,9 @@
 
 ---
 
-## Étapes d'installation
+## Étapes d’installation
 
-<a class="btn btn-lg btn-default" href="/copy_image_fr">1. Copier l'image sur une carte SD</a>
+<a class="btn btn-lg btn-default" href="/copy_image_fr">1. Copier l’image sur une carte SD</a>
 
 <a class="btn btn-lg btn-default" href="/plug_and_boot_fr">2. Brancher & démarrer</a>
 
@@ -39,7 +39,7 @@
 
 ### Recommandé après la post-installation
 
-* Se connecter en ssh : **root@IP.DU.RPI** (mot de passe : **yunohost**)
+* Se connecter en [ssh](ssh_fr) : **root@IP.DU.RPI** (mot de passe : **yunohost**)
 * Changer le mot de passe root : ```passwd root```
 
 * Mettre à jour le système d’exploitation : ```apt-get update && apt-get dist-upgrade && rpi-update```
