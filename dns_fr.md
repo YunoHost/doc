@@ -39,4 +39,4 @@ Vous pouvez également consulter les documentations spécifiques à ces différe
 <br><br>**Attention** : Si vous choisissez ce mode de fonctionnement, toutes les configurations seront automatiques, vous disposerez d'une grande flexibilité, mais la perte de votre serveur entraînera potentiellement beaucoup d'ennuis. **Choisissez cette méthode si vous êtes sûr de vous.**
 
 ### IP Dynamique
-Si l’adresse IP publique change, suivez ce [tutoriel](dns_dynamicip_en).
+Si l’adresse IP publique change, suivez ce [tutoriel](dns_dynamicip_fr).
