@@ -26,6 +26,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Couchpotato](https://couchpota.to/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/couchpotato_ynh | PVR for Usenet and torrents |
 | [Cubiks-2048](https://kshitij-banerjee.github.io/Cubiks-2048/) | Moul | <div class="ready"/> | https://github.com/M5oul/Cubiks-2048_ynh | Clone of 2048 game in 3D |
 | Custom Webapp (Multi instance) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/my_webapp_ynh |Custom Webapp |
+| [webapp_multi_ynh](https://github.com/polytan02/webapp_multi_ynh) | polytan02 | <div class="ready"/> | https://github.com/polytan02/webapp_multi_ynh | Multi Instances & Multi Domains Web App Without FTP Support |
 | [Diaspora](http://diasporafoundation.org) | aymhce | <div class="inprogress"/> | https://github.com/aymhce/diaspora_ynh | Distributed social networking service |
 | [EmailPoubelle](http://forge.zici.fr/p/emailpoubelle-php/) | matlink | <div class="inprogress"/> | https://github.com/matlink/emailpoubelle_ynh | Disposable email |
 | [EtherCalc](https://ethercalc.org/) | zamentur | <div class="inprogress"/> | https://github.com/zamentur/ethercalc_ynh | Web spreadsheet |
