@@ -34,7 +34,7 @@
         * [DNS - Système de nom de domaine](/dns_fr)
             * [Bureaux d’enregistrements de nom de domaine - Registrar](registar_en)
             * [Configuration du DNS chez son registar](/dns_config_fr)
-            * [Configurer un DNS dynamique avec une adresse IP dynamique](dns_dynamicip_en)
+            * [Configurer un DNS dynamique avec une adresse IP dynamique](dns_dynamicip_fr)
             * [Avec OVH](/OVH_fr)
             * [Accéder à son domaine depuis le réseau local](/dns_reseau_local_fr)
         * [Applications officielles](/apps_fr)
