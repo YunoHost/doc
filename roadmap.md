@@ -45,6 +45,7 @@
 * Add proper upgrade/remove scripts and comment Debian scripts in packages *(beudbeud)*
 * Improve documentation, by making it more accessible *(Moul)*
 * Create YunoHost image based on Cubian for Cubieboard 1 ~~and 2~~ *(Moul)*
+* ~~Add mail quota *(beudbeud, jerome)*~~
 
 ## v2.2
 
