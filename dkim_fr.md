@@ -25,10 +25,11 @@ Rentrons maintenant dans le cœur du sujet :
 Utiliser un script tout fait et répondez aux questions :
 ```bash
 git clone https://github.com/polytan02/yunohost_auto_config_basic
-sudo ./yunohost_auto_config_basic/5_opendkim.sh
+cd yunohost_auto_config_basic
+sudo ./5_opendkim.sh
 ```
 
-### À la main :
+### À la main
 On commence par installer les logiciels : 
 ```bash
 sudo aptitude install opendkim opendkim-tools
