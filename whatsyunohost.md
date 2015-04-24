@@ -1,6 +1,6 @@
-#What is YunoHost ?
+#What is YunoHost?
 
-YunoHost is a **server operating system** aiming to make self-hosting accessible to everyone. It is based on Debian GNU/Linux and is fully compatible with it.
+YunoHost is a **server operating system** aiming to make [self-hosting](selfhosting) accessible to everyone. It is based on Debian GNU/Linux and is fully compatible with it.
 
 <img src="https://yunohost.org/images/debian-logo.png" width=100>
 
@@ -22,13 +22,13 @@ It can thus be considered as a distribution, including the following software:
 * [OpenLDAP](http://www.openldap.org/)
 * [Bind](https://www.isc.org/downloads/bind/): a DNS server
 * [SSOwat](https://github.com/Kloadut/SSOwat): a Single Sign On (SSO) web authentication system
-* [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs): a backup system (not yet functional)
+* A backup system (not yet implemeted)
 
 ---
 
 ### App system
 
-Additionally, YunoHost comes with an "app" system which is, in other words, **a community repository** of validated helper scripts to install further services or web applications.
+Additionally, YunoHost comes with an **app** system which is, in other words, **a community repository** of validated helper scripts to install further services or web applications.
 
 The most interesting thing about this system is that **web applications benefits from the LDAP** through the SSO (Single Sign On), which authenticate server's users in every installed apps at the same time.
 
@@ -78,13 +78,12 @@ Do not hesitate to visit the ["contribute" page](/contribute).
 
 ### Security
 
-All the efforts have been made to keep YunoHost secure, and **communications encrypted**. You can read more about this subject on the related page :
-
+All the efforts have been made to keep YunoHost secure, and **communications encrypted**. You can read more about this subject on the related page:
 [https://yunohost.org/security](/security)
 
 ---
 
-### What YunoHost is not ?
+### What YunoHost is not?
 
 Even if YunoHost can handle multiple domains and multiple users, it is **not meant to be a mutualized system**.
 
