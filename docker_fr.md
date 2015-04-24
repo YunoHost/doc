@@ -10,20 +10,35 @@
 
 ## Installer Docker
 
-**Prérequis** : une machine x86 qui tourne sous Ubuntu 14.04 ou supérieur, ou alors ArchLinux (sur Debian c'est plus chiant)
+**Prérequis** : une machine x86 qui tourne sous Ubuntu 14.04 ou supérieur, ArchLinux ou Fedora (sur Debian c'est plus chiant)
 
 Sous Ubuntu :
 ```bash
-curl -s https://get.docker.io/ubuntu/ | sudo sh
+$ curl -s https://get.docker.io/ubuntu/ | sudo sh
 ```
 
 Sous ArchLinux :
 ```bash
-sudo pacman -Sy docker
+$ sudo pacman -Sy docker
 ```
 
-**Remarque :** vous pourrez avoir besoin de lancer le démon docker (en root : `service docker start`, `systemctl start docker` ou simplement `docker -d`)
+Sous Fedora :
+```bash
+$ su -c 'yum install docker'
+```
+---
 
+Passez **root** :
+```bash
+$ sudo -i
+```
+
+Lancer le démon docker avec une des commande ci-dessous :
+```bash
+service docker start
+systemctl start docker
+docker -d
+```
 ---
 
 ## Installer le conteneur YunoHost
