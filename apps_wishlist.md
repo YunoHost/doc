@@ -47,6 +47,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [MediaCrush](https://mediacru.sh/)
 * [MediaGoblin](http://mediagoblin.org/)
 * [MinigalNano](https://github.com/sebsauvage/MinigalNano)
+* [Mirakel](http://mirakel.azapps.de/taskwarrior.html)
 * [Modoboa](http://modoboa.org/)
 * [Mopidy](https://www.mopidy.com/)
 * [Movim](http://www.movim.eu/)
