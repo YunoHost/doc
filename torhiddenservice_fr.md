@@ -5,7 +5,7 @@ Voir https://www.torproject.org/docs/tor-hidden-service.html.en (anglais)
 ## Installer Tor
 
 ```bash
-apt-get install tor 
+sudo apt-get install tor 
 ```
 
 ## Configurer notre service caché
@@ -28,7 +28,7 @@ service tor restart
 ## Obtenir l’adresse du service caché
 
 ```bash
-cat /path/to/hidden_service/keys/hostname
+cat /var/lib/tor/hidden_service/hostname
 ```
 
 Le domaine ressemble à *random123456789.onion*
