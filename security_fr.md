@@ -23,9 +23,11 @@ Si votre serveur YunoHost est dans un environnement de production critique ou qu
 
 ### Authentification SSH par clé
 
+Voici un [tutoriel plus détaillé](http://doc.ubuntu-fr.org/ssh#authentification_par_un_systeme_de_cles_publiqueprivee).
+
 Par défaut, l'authentification SSH se fait avec le mot de passe d'administration. Il est conseillé de désactiver ce type d'authentification et de le remplacer par un mécanisme de clé de chiffrement.
 
-**Sur votre client** :
+**Sur votre ordinateur de bureau :**
 
 ```bash
 ssh-keygen
