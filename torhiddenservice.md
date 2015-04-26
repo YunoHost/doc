@@ -27,7 +27,7 @@ service tor restart
 ## Get your Tor Hidden Service hostname
 
 ```bash
-cat /path/to/hidden_service/keys/hostname
+cat /var/lib/tor/hidden_service/hostname
 ```
 
 Your domain looks like *random123456789.onion*
