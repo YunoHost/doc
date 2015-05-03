@@ -57,7 +57,7 @@ Sauvegardez et relancez le démon SSH.
 
 ### Modifier le port SSH
 
-Pour éviter de tentatives de connexion SSH par des robots qui scannent tout internet pour tenter des connexion SSH avec tout serveur accessible on peux modifier le port SSH.
+Pour éviter des tentatives de connexion SSH par des robots qui scannent tout Internet pour tenter des connexions SSH avec tout serveur accessible, on peut modifier le port SSH.
 
 **Sur votre serveur**, éditez le fichier de configuration SSH, pour modifier le port SSH.
 
@@ -84,7 +84,7 @@ yunohost firewall disallow <votre numéro de port> # port par défaut 22
 yunohost firewall disallow --ipv6 <votre numéro de port> # pour ipv6
 ``` 
 
-**Pour les prochaines connexions SSH** il faudra ajouter l'option -p suivit du numéro de port SSH.
+**Pour les prochaines connexions SSH** il faudra ajouter l'option -p suivie du numéro de port SSH.
 
 **Exemple** :
 
