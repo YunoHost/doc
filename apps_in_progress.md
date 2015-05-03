@@ -37,6 +37,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | FTP support for webapp | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/ftp_support_webapp_ynh | FTP support for webapp |
 | [HTML Tools](http://lehollandaisvolant.net/tout/tools/)| IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/htmltools_ynh | HTML Mini-tools |
 | [HTPC Manager](http://htpc.io) | lunarok | <div class="ready"/> | https://github.com/lunarok/htpc_ynh | Manage your HTPC |
+| [I Hate Money](http://ihatemoney.org/) | JocelynD | <div class="ready"/> | https://github.com/JocelynDelalande/ihatemoney_ynh | A simple shared budget manager web application |
 | [Ghost](http://ghost.org) | ju | <div class="ready"/> | https://github.com/julienmalik/ghost_ynh | Blogging platform |
 | [Gitolite](https://github.com/sitaramc/gitolite) | matlink | <div class="inprogress"/> | https://github.com/matlink/gitolite_ynh | Hosting git repositories |
 | [Gitweb](https://git.wiki.kernel.org/index.php/Gitweb) | matlink | <div class="inprogress"/> | https://github.com/matlink/gitweb_ynh | Web interface for git |
