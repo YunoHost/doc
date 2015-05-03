@@ -35,6 +35,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [ikiwiki](http://ikiwiki.info/)
 * [img.bi](https://img.bi/)
 * [Inbox](https://www.inboxapp.com/)
+* [InfCloud](https://www.inf-it.com/open-source/clients/infcloud/)
 * [Jitsi Meet](https://github.com/jitsi/jitsi-meet)
 * [jsFiddle](http://jsbin.com/help/2-second-setup)
 * [Kaiwa](http://getkaiwa.com/)
