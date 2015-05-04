@@ -15,16 +15,6 @@
 
     [http://build.yunohost.org/yunohost4rpi2.img.7z](http://build.yunohost.org/yunohost4rpi2.img.7z)
 
-    <div class="alert alert-warning">
-    <b>Warning:</b> The default network device is set to `eth0` by default. You may have to change it if your network does not work properly. In order to do that :
-    <ul>
-    <li>Connect locally to your Raspberry Pi</li>
-    <li>Retrieve your network device's name: `$ ip link` (*lo* is the loopback device, so it should be `eth1`)</li>
-    <li>Edit the configuration file `/etc/network/interfaces` and replace *eth0* by your network device's name</li>
-    <li>Restart networking service: `$ sudo service networking restart`</li>
-    </ul>
-    </div>
-
 ---
 
 ## Installation steps
