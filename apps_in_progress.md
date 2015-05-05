@@ -6,7 +6,7 @@ The following applications are being packaged on by a growing number of packager
 
 They are <strong>NOT</strong> validated by the packaging team, and as such, no official support is provided for them.
 
-You can test them, **at your own risk**, by installing them either through the [administration web]("/admin") interface by choosing "Install custom app", or using the [moulinette]("/moulinette"):
+You can test them, **at your own risk**, by installing them either through the [administration web](/admin) interface by choosing "Install custom app", or using the [moulinette](/moulinette):
 ```bash
 yunohost app install https://github.com/<packager>/<app_repository>
 ```
