@@ -24,7 +24,9 @@ OVH5>
 
 À l'endroit de configuration de la zone DNS, mettez-vous en édition texte, et utilisez la [configuration DNS standard](/dns_config_fr).
 
-###IP dynamique :
+###IP dynamique
+
+[Tutoriel plus général sur l'IP dynamique](dns_dynamicip_fr).
 
 Cette partie est à suivre que si votre IP est dynamique.
 
