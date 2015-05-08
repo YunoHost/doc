@@ -6,6 +6,12 @@
 
 Allez à l'adresse : http://mafreebox.free.fr/ puis authentifiez-vous.
 
+#### Ouverture des ports
+
+[Tutoriel d'ouverture des ports sur Freebox](http://www.astuces-pratiques.fr/informatique/ouvrir-un-port-sur-la-freebox-revolution)
+
+[Liste des ports à ouvrir](https://yunohost.org/#/isp_box_config_fr).
+
 #### Déblocage de l’envoi de courriel
 
 Pour pouvoir envoyer des mails, le déblocage se fait dans la [partie client](https://subscribe.free.fr/login/).
