@@ -26,7 +26,7 @@
 * ~~Add sexiness and a menu to YunoHost.org frontpage *(kload)*~~
 * ~~**DOCUMENTATIONNNNNNN** *(everyone <3)*~~
 
-## v2.1
+## v2.2
 
 * ~~Firewall in web administration *(opi)*~~
 * ~~Install non-official apps from admin *(opi)*~~
@@ -34,8 +34,10 @@
 * ~~Migrate to Baïkal and deprecate Radicale *(ju)*~~
 * ~~Add a download files button on Transmission interface *(opi)*~~
 * ~~Update Metronome to v3.6 and make a more Debian-friendly package *(jerome)*~~
-* Install and switch to a new build system on a new server *(beudbeud)*
 * ~~Warn users about security updates in the webadmin *(opi)*~~
+* ~~Add mail quota *(beudbeud, jerome)*~~
+* ~~Improve documentation, by making it more accessible *(Moul)*~~
+* Install and switch to a new build system on a new server *(beudbeud)*
 * Implement a simple backup & restore system *(jerome, kload)*
 * Add logging to the moulinette for each action *(jerome)*
 * Review the app manifest format and integrate it *(app maintainers, jerome, opi)*
@@ -43,12 +45,10 @@
 * Run automatic tests on moulinette *(kload)*
 * Fix WebSocket issue for Raspberry Pi *(jerome, kload)*
 * Add proper upgrade/remove scripts and comment Debian scripts in packages *(beudbeud)*
-* Improve documentation, by making it more accessible *(Moul)*
 * Create YunoHost image based on Cubian for Cubieboard 1 ~~and 2~~ *(Moul)*
-* ~~Add mail quota *(beudbeud, jerome)*~~
-
-## v2.2
-
 * Migrate YunoHost to Debian Jessie
+
+## v2.4
+
 * Use templates to (re)generate configurations instead of packages *(beudbeud, jerome)*
 * Complete and improve backup & restore system *(jerome)*
