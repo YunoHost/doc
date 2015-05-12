@@ -34,7 +34,7 @@
         * [DNS Settings](/dns)
            * [Registrar](registar)
            * [DNS Configuration](/dns_config)
-           * [Use the YunoHost DNS resolver](/dns_resolver_fr)
+           * [Use the YunoHost DNS resolver](/dns_resolver_en)
            * [Configure a dynamic DNS with a dynamic IP address](dns_dynamicip_en)
         * [Official applications](/apps)
         * [Internet service provider](/isp)
