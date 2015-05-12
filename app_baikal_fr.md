@@ -1,8 +1,8 @@
 #Baïkal
 
-Baïkal est un serveur de calendriers et contacts accessible par les protocoles CalDAV (calendriers) et CardDAV (carnets d'adresses), autorisant ainsi la synchronisation avec de nombreux clients (Thunderbird + Lightning par exemple).
+Baïkal est un serveur de calendriers et de contacts accessible par les protocoles CalDAV (calendriers) et CardDAV (carnets d'adresses), autorisant ainsi la synchronisation avec de nombreux clients (Thunderbird + Lightning par exemple).
 
-## Connexion à l'interface d'admin
+## Connexion à l’interface d’admin
 Sur le portail SSO, si on clique sur la tuile "Baïkal", on tombe sur une page bien peu conviviale qui explique que le service fonctionne. Pour accéder à l'admin, il faut rajouter `/admin`. Par exemple :
 
 https://example.com/baikal/admin
