@@ -1,12 +1,12 @@
 # YunoHost DNS Resolver
 
-## Presentation
+### Presentation
 YunoHost provide a DNS service for DNS name resolution. Usually, your server is not configured to use it, it's your ISP DNS. For instance, for the Free ISP with Freebox router the DNS resolver IP is `192.168.0.254`.
 
 How to known: watch the file `/etc/resolv.conf`. This file is not modifiable because it is rewriten by the DHCP service. A DHCP client is configured, it requests the router to get DNS resolver IPs. 
 This IPs is provided by your ISP.
 
-## Configuration
+### Configuration
 To use YunoHost DNS resolver of your server, modify your DHCP configuration client: remove DNS name server request, and add static IP of your server `127.0.0.1`.
 
 Edit the file `/etc/dhcp/dhclient.conf`, add the line `supersede` and remove in the line `request` the word `domain-name-servers`:
