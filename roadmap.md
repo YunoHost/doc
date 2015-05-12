@@ -54,3 +54,4 @@
 * Use templates to (re)generate configurations instead of packages *(beudbeud, jerome)*
 * Add proper upgrade/remove scripts and comment Debian scripts in packages *(beudbeud)*
 * Complete and improve backup & restore system *(jerome)*
+* Plugin system for the web administration panel *(ljf)*
