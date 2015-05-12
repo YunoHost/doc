@@ -38,17 +38,19 @@
 * ~~Add mail quota *(beudbeud, jerome)*~~
 * ~~Improve documentation, by making it more accessible *(Moul)*~~
 * ~~Install and switch to a new build system on a new server *(beudbeud)*~~
-* Implement a simple backup & restore system *(jerome, kload)*
-* Add logging to the moulinette for each action *(jerome)*
+* ~~Add logging to the moulinette for each action *(jerome)*~~
 * ~~Review the app manifest format and integrate it *(app maintainers, jerome, opi)*~~
-* User avatar *(opi)*
-* Run automatic tests on moulinette *(kload)*
-* Fix WebSocket issue for Raspberry Pi *(jerome, kload)*
-* Add proper upgrade/remove scripts and comment Debian scripts in packages *(beudbeud)*
-* Create YunoHost image based on Cubian for Cubieboard 1 ~~and 2~~ *(Moul)*
-* Migrate YunoHost to Debian Jessie
+* ~~Implement a simple backup & restore system *(jerome, kload)*~~
+* ~~Fix WebSocket issue for Raspberry Pi *(jerome, kload)*~~
+* ~~Create YunoHost image based on Cubian for Cubieboard 2 *(Moul)*~~
+* ~~Migrate YunoHost to Debian Jessie~~
+* ~~Create a YunoHost official image for RaspberryPi~~
+* ~~Create an official image for LaBriqueInternet~~
 
 ## v2.4
 
+* User avatar *(opi)*
+* Run automatic tests on moulinette *(kload)*
 * Use templates to (re)generate configurations instead of packages *(beudbeud, jerome)*
+* Add proper upgrade/remove scripts and comment Debian scripts in packages *(beudbeud)*
 * Complete and improve backup & restore system *(jerome)*
