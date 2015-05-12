@@ -2,32 +2,18 @@
 
 ---
 
-## v2.0 RC
+## v2.4
+* User avatar *(opi)*
+* Run automatic tests on moulinette *(kload)*
+* Use templates to (re)generate configurations instead of packages *(beudbeud, jerome)*
+* Add proper upgrade/remove scripts and comment Debian scripts in packages *(beudbeud)*
+* Complete and improve backup & restore system *(jerome)*
+* Add tools in moulinette to manage certificates (add, remove, update) *(ljf, Moul)*
+* Plugin system for the web administration panel *(ljf)*
 
-* ~~Mail configuration tests *(beudbeud)*~~
-* ~~Make pending apps official *(Ju)*~~
-* ~~SFTP *(kload)*~~
-* ~~DNS zone fix *(kload)*~~
-* ~~SSOwat stuffs (presistent rules, public root website) *(ezpen)*~~
-* ~~Mail forward configuration *(kload, beudbeud)*~~
-* ~~Test and upgrade official apps like Owncloud, Roundcube and Radicale *(packagers)*~~
-* ~~Upgrade function + view *(beudbeud, opi)*~~
-* ~~uPnP rework *(kload, titoko)*~~
-* ~~Add warning in a sample backup view *(opi)*~~
-* ~~User interface design *(Courgette, opi)*~~
-* ~~Moulinette/API refactoring *(jerome)*~~
-* ~~Security check and complete patterns~~
-* ~~I18n *(opi, jerome)*~~
-* ~~Lack of hairpinning hack *(kload)*~~
-
-
-## v2.0
-
-* ~~Add sexiness and a menu to YunoHost.org frontpage *(kload)*~~
-* ~~**DOCUMENTATIONNNNNNN** *(everyone <3)*~~
+---
 
 ## v2.2
-
 * ~~Firewall in web administration *(opi)*~~
 * ~~Install non-official apps from admin *(opi)*~~
 * ~~OpenVPN configuration page + access control *(kload)*~~
@@ -47,10 +33,27 @@
 * ~~Create a YunoHost official image for RaspberryPi~~
 * ~~Create an official image for LaBriqueInternet~~
 
-## v2.4
+---
 
-* User avatar *(opi)*
-* Run automatic tests on moulinette *(kload)*
-* Use templates to (re)generate configurations instead of packages *(beudbeud, jerome)*
-* Add proper upgrade/remove scripts and comment Debian scripts in packages *(beudbeud)*
-* Complete and improve backup & restore system *(jerome)*
+## v2.0
+* ~~Add sexiness and a menu to YunoHost.org frontpage *(kload)*~~
+* ~~**DOCUMENTATIONNNNNNN** *(everyone <3)*~~
+
+---
+
+## v2.0 RC
+* ~~Mail configuration tests *(beudbeud)*~~
+* ~~Make pending apps official *(Ju)*~~
+* ~~SFTP *(kload)*~~
+* ~~DNS zone fix *(kload)*~~
+* ~~SSOwat stuffs (presistent rules, public root website) *(ezpen)*~~
+* ~~Mail forward configuration *(kload, beudbeud)*~~
+* ~~Test and upgrade official apps like Owncloud, Roundcube and Radicale *(packagers)*~~
+* ~~Upgrade function + view *(beudbeud, opi)*~~
+* ~~uPnP rework *(kload, titoko)*~~
+* ~~Add warning in a sample backup view *(opi)*~~
+* ~~User interface design *(Courgette, opi)*~~
+* ~~Moulinette/API refactoring *(jerome)*~~
+* ~~Security check and complete patterns~~
+* ~~I18n *(opi, jerome)*~~
+* ~~Lack of hairpinning hack *(kload)*~~
