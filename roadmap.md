@@ -37,10 +37,10 @@
 * ~~Warn users about security updates in the webadmin *(opi)*~~
 * ~~Add mail quota *(beudbeud, jerome)*~~
 * ~~Improve documentation, by making it more accessible *(Moul)*~~
-* Install and switch to a new build system on a new server *(beudbeud)*
+* ~~Install and switch to a new build system on a new server *(beudbeud)*~~
 * Implement a simple backup & restore system *(jerome, kload)*
 * Add logging to the moulinette for each action *(jerome)*
-* Review the app manifest format and integrate it *(app maintainers, jerome, opi)*
+* ~~Review the app manifest format and integrate it *(app maintainers, jerome, opi)*~~
 * User avatar *(opi)*
 * Run automatic tests on moulinette *(kload)*
 * Fix WebSocket issue for Raspberry Pi *(jerome, kload)*
