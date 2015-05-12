@@ -13,7 +13,7 @@
 
 ---
 
-## v2.2
+## v2.2 <small><small>12 may 2015</small></small>
 * ~~Firewall in web administration *(opi)*~~
 * ~~Install non-official apps from admin *(opi)*~~
 * ~~OpenVPN configuration page + access control *(kload)*~~
@@ -35,7 +35,7 @@
 
 ---
 
-## v2.0
+## v2.0 <small><small>12 june 2014</small></small>
 * ~~Add sexiness and a menu to YunoHost.org frontpage *(kload)*~~
 * ~~**DOCUMENTATIONNNNNNN** *(everyone <3)*~~
 
