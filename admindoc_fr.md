@@ -26,6 +26,7 @@
    * [Configurer un DNS dynamique avec une adresse IP dynamique](dns_dynamicip_en)
    * [Avec OVH](/OVH_fr)
    * [Accéder à son domaine depuis le réseau local](/dns_reseau_local_fr)
+   * [Utiliser le DNS resolver de Yunohost](/dns_resolver_fr)
 * [Applications officielles](/apps_fr)
    * [Mettre à jour ses applications](app_update_fr)
 * [Fournisseurs d’accès à Internet](/isp_fr)
