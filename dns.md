@@ -32,7 +32,10 @@ You can also check out these pages for specific registrar documentation: [OVH](/
 
 3. Your YunoHost instance has its own DNS service, which means it will automatically configure its own DNS records, and that you can leave the setup to the instance itself. To do this, you must explain to your **registrar** that your YunoHost instance is the authoritative DNS server for your domain name.
 
-<br><br>**Warning**: If you choose this option, all configuration options will be dome automatically, you will retain a good deal of flexibility, but if your server gets knocked offline you will run into many problems. **Choose this only if you are certain.**
+<br>**Warning**: If you choose this option, all configuration options will be dome automatically, you will retain a good deal of flexibility, but if your server gets knocked offline you will run into many problems. **Choose this only if you are certain.**
+
+4. One time your DNS service is running, your server can use it but it needs to be configured, this is the [DNS resolver](/dns_resolver_en).
+
 
 ### Dynamic IP
 If the global IP address is changing follow this [tutorial](dns_dynamicip_en).
