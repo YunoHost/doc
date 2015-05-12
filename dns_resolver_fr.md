@@ -7,8 +7,8 @@ Un client DHCP est configuré, celui-ci intéroge votre routeur pour les adresse
 
 ##Modification
 Afin d'utiliser votre DNS resolver de votre Yunohost (votre serveur), il faut modifier la configuration DHCP pour ne pas requeter votre routeur. Il faut donc mettre de façon statique la nouvelle adresse à savoir dans ce cas *127.0.0.1*
-Editer le fichier */etc/dhcp/dhclient.conf*, ajouter une ligne *supersede* et supprimer de la ligne *request* le mot *domain-name-servers*
-<code>
+Editer le fichier */etc/dhcp/dhclient.conf*, ajouter une ligne *supersede* et supprimer de la ligne *request* le mot *domain-name-servers*<br>
+```
 ...
 supersede domain-name-servers 127.0.0.1, 192.168.0.254;
 request subnet-mask, broadcast-address, time-offset, routers,
@@ -17,6 +17,7 @@ request subnet-mask, broadcast-address, time-offset, routers,
         netbios-name-servers, netbios-scope, interface-mtu,
         rfc3442-classless-static-routes, ntp-servers;
 ...
-</code>
-Afin de prendre en compte la modification rebooter le serveur. (TODO: il doit être possible de reconfigurer à chaud, mais ca n'a pas marcher)
+```
+
+Afin de prendre en compte la modification rebooter le serveur. (TODO: il doit être possible de reconfigurer à chaud, mais ca n'a pas marché)
 Il est possible de faire la meme modification sur toutes vos machines du réseau local en remplacant 127.0.0.1 par l'IP de votre serveur.
