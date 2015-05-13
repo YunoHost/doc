@@ -30,7 +30,11 @@ Cette page liste plusieurs types d'installations, classés par catégories.
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_raspberry_fr"><img src="https://yunohost.org/images/Raspberry_Pi_-_Model_A.jpg" height=150 style="vertical-align:bottom"><b><p>Sur Raspberry Pi</p></b></a>
+<a href="http://labriqueinter.net/"><img src="https://yunohost.org/images/thisisinternet.png" height=150 style="vertical-align:bottom"><b><p>Sur la Brique Internet</p></b></a>
+</div>
+
+<div class="col col-md-3 text-center">
+<a href="/install_on_raspberry_fr"><img src="https://yunohost.org/images/Raspberry_Pi_2_Model_B_v1.1_front_angle_new.jpg" height=150 style="vertical-align:bottom"><b><p>Sur Raspberry Pi</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
