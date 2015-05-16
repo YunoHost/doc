@@ -53,7 +53,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Modoboa](http://modoboa.org/)
 * [Mopidy](https://www.mopidy.com/)
 * [Movim](http://www.movim.eu/)
-* [Odoo ERP](https://www.odoo.com)
 * [pdfy](https://github.com/joepie91/pdfy)
 * [Pelican](http://blog.getpelican.com/)
 * [PHPList](http://www.phplist.com/)
