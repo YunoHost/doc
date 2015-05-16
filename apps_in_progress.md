@@ -63,6 +63,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Munin](http://munin-monitoring.org/) | ju | <div class="ready"/> | https://github.com/julienmalik/munin_ynh | System Monitoring graphing tool |
 | [Monit](http://mmonit.com/monit/) | ju | <div class="ready"/> | https://github.com/julienmalik/monit_ynh | Daemon Monitoring tool |
 | [MyCryptoChat](https://github.com/HowTommy/mycryptochat) | mrtino | <div class="ready"/> | https://github.com/mrtino/mycryptochat_ynh | Encrypted chat rooms manager |
+| [Odoo](https://www.odoo.com/) | portanicolas | <div class="inprogress"/> | https://github.com/portanicolas/odoov8_ynh | ERP |
 | [OFBiz](https://ofbiz.apache.org/) | julien | <div class="inprogress"/> | https://github.com/nomakaFr/ofbiz_ynh | ERP |
 | [OpenDKIM](http://opendkim.org/) | polytan02 | <div class="inprogress"/> | https://github.com/polytan02/opendkim_ynh | OpenDKIM for Yunohost installation script |
 | [OpenID](http://openid.net/) | ju | <div class="inprogress"/> | https://github.com/julienmalik/openid-simplesamlphp_ynh | OpenID Identity server |
