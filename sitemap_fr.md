@@ -14,6 +14,7 @@
         * [L’auto-hébergement](/selfhosting_fr)
         * [Matériel compatible](/hardware_fr)
         * [Guide d'installation](/install_fr)
+            * [Sur la Brique Internet](/install_brick_fr)
             * [Sur Raspberry Pi](/install_on_raspberry_fr)
             * [Sur Cubieboard](/install_on_cubieboard_fr)
             * [À partir de l’ISO](/install_iso_fr)
