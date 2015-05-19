@@ -12,7 +12,7 @@ Tous les fournisseurs d'accès à Internet [membres de la Fédération French Da
 
 | Fournisseur d'accès | Box (modem/routeur) | uPnP activable | [Port 25 ouvrable](email_fr) | [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | Reverse DNS personnalisable | IP fixe |
 | --- | --- | --- | --- | --- | --- | --- |
-| **[Free](/isp_free_fr)** | Freebox | oui (activé) | oui | oui (désactivé) | oui | oui |
+| **[Free](/isp_free_fr)** | Freebox | oui (activé) | oui (fermé) | oui (désactivé) | oui | oui |
 | **[SFR](/isp_sfr_fr)** | Neufbox | oui (activé) | oui (fermé) | oui et **non** | … | oui et **non** |
 | **[Orange](/isp_orange_fr)** | Livebox | oui | **non** | **non** | **non** | **non** (Professionel uniquement) |
 | **Darty** | Dartybox | oui (activé) | oui | oui | **non** | oui |
