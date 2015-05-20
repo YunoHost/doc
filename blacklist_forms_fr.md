@@ -1,17 +1,17 @@
-# Formulaires liste noire (Blacklist Forms)
+# Formulaires de retrait de liste noire
 
-Il peut arriver que votre IP soit ajoutée à la liste noire de certains fournisseurs d'adresse de courrier électronique ou de services anti-spam.
+Il peut arriver que votre IP soit ajoutÃ©e Ã  la liste noire de certains fournisseurs d'adresse de courrier Ã©lectronique ou de services anti-spam.
 
 Voici certains des formulaires vous permettant de retirer votre adresse IP de ces listes.
 
 ## Fournisseurs Email
 
-* Hotmail: https://support.live.com/eform.aspx?productKey=edfsmsbl3&ct=eformts&scrx=1
+* HotmailÂ : https://support.live.com/eform.aspx?productKey=edfsmsbl3&ct=eformts&scrx=1
 * GMail : https://support.google.com/mail/contact/msgdelivery
 
 ## Services anti-spam 
 
-* SpamHaus: http://www.spamhaus.org/lookup/
+* SpamHausÂ : http://www.spamhaus.org/lookup/
 
 ## Tester votre serveur
 
