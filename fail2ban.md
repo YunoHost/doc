@@ -1,10 +1,10 @@
 # Fail2ban
 
-For a number of reasons, an IP adresse may be wrongly blacklisted. If you wish to access your server through this specifi IP you will need to unblock it.
+For a number of reasons, an IP adresse may be wrongly blacklisted. If you wish to access your server through this specify IP you will need to unblock it.
 
 ## IP unblock
 
-First, list all iptables rules with : `iptables -L --line-numbers` :
+First, list all iptables rules with: `iptables -L --line-numbers` :
 
 ```bash
 root@beudi:~# iptables -L --line-numbers
@@ -51,7 +51,7 @@ To unblock:
 iptables -D rule_name entry_number
 ```
 
-For example :
+For intance:
 ```bash
 iptables -D fail2ban-yunohost 1
 ```
