@@ -30,7 +30,7 @@ This page lists few installation guides.
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="http://labriqueinter.net/"><img src="https://yunohost.org/images/thisisinternet.png" height=150 style="vertical-align:bottom"><b><p>On the Internet brick</p></b></a>
+<a href="/install_brick"><img src="https://yunohost.org/images/thisisinternet.png" height=150 style="vertical-align:bottom"><b><p>On the Internet brick</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
