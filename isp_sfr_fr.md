@@ -1,5 +1,5 @@
 #SFR
-*Trouvez la liste d'autres fournisseurs d’accès Internet **[ici](/isp_fr)**.*
+*Trouvez la liste d’autres fournisseurs d’accès Internet **[ici](/isp_fr)**.*
 #### Accès à l’administration de la box
 * Allez à cette adresse : http://192.168.1.1.
 * Authentifiez-vous, soit en appuyant sur le bouton de la box pendant 5 secondes soit avec les identifiants d’administration.
