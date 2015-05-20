@@ -1,24 +1,24 @@
-# Créer une Live ISO de YunoHost
+# CrÃ©er une Live ISO de YunoHost
 
-Testé sur Debian Wheezy (devrait marcher sur Ubuntu également).
+TestÃ© sur Debian Wheezy (devrait marcher sur Ubuntu Ã©galement).
 Tutoriel original : http://willhaley.com/blog/create-a-custom-debian-live-environment/
 
-**Attention**: Toutes les sections où vous devrez être dans un environnement **chroot** sont **surlignées**.
+**Attention** : toutes les sections oÃ¹ vous devrez Ãªtre dans un environnement **chroot** sont **surlignÃ©es**.
 
-1. Installation des applications nécessaires à la compilation de l'environnement
+1. Installation des applications nÃ©cessaires Ã  la compilation de l'environnement
 ```bash
 sudo apt-get install debootstrap syslinux squashfs-tools genisoimage memtest86+ rsync
 ```
 
-2. Configuration de l'environnement de base Debian.  Debian wheezy et une architecture i386 ont été utilisés pour effectuer les tests. 
-Changer le mirroir si vous n'êtes pas aux Pays Bas ou que vous connaissez un mirroir plus proche.
+2. Configuration de l'environnement de base Debian.  Debian wheezy et une architecture i386 ont Ã©tÃ© utilisÃ©s pour effectuer les tests. 
+Changer le mirroir si vous n'Ãªtes pas aux Pays Bas ou que vous connaissez un mirroir plus proche.
 
 ```bash
 mkdir live_boot && cd live_boot
 sudo debootstrap --arch=i386 --variant=minbase wheezy chroot http://ftp.nl.debian.org/debian/
 ```
 
-3. Deux étapes importantes avant de chroot :
+3. Deux Ã©tapes importantes avant de chroot :
 ```bash
 sudo mount -o bind /dev chroot/dev && sudo cp /etc/resolv.conf chroot/etc/resolv.conf
 ```
@@ -29,7 +29,7 @@ sudo chroot chroot
 ```
 
 5. **chroot**
-Configuration de variables et d'options système de l'environnement Debian :
+Configuration de variables et d'options systÃ¨me de l'environnement Debian :
 ```bash
 mount none -t proc /proc && 
 mount none -t sysfs /sys && 
@@ -46,7 +46,7 @@ apt-get update
 passwd root
 ```
 
-7. **chroot** Installation des paquets requis, remplacement du noyau si nécessaire :
+7. **chroot** Installation des paquets requis, remplacement du noyau si nÃ©cessaire :
 ```bash
 apt-get install --no-install-recommends \
 linux-image-3.2.0-4-486 live-boot \
@@ -56,7 +56,7 @@ pciutils usbutils gparted ntfsprogs hfsprogs rsync dosfstools syslinux partclone
 chromium-browser libnss3-tools openbox git ca-certificates openssl
 ```
 
-8. **chroot** Le NetworkManager peut casser la configuration de votre environnement chroot. Il est possible de l'installer à posteriori et d'annuler en pressant CTRL-C pendant l'installation.
+8. **chroot** Le NetworkManager peut casser la configuration de votre environnement chroot. Il est possible de l'installer Ã  posteriori et d'annuler en pressant CTRL-C pendant l'installation.
 ```bash
 apt-get --no-install-recommends install network-manager
 ```
@@ -67,7 +67,7 @@ git clone https://github.com/YunoHost/install_script /tmp/yunohost_install
 cd /tmp/yunohost_install && ./autoinstall_yunohostv2
 ```
 
-10. **chroot** Configuration des paramètres :
+10. **chroot** Configuration des paramÃ¨tres :
 ```bash
 echo "127.0.0.1 yunohost.org" >> /etc/hosts
 echo "chromium --user-data-dir=/root/.config/chromium --app=https://yunohost.org/yunohost/admin/" >> /etc/xdg/openbox/autostart
@@ -76,7 +76,7 @@ certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n YunoHostCA  -i /etc/yunohost/cer
 certutil -d sql:$HOME/.pki/nssdb -A -t "P,," -n YunoHostCrt -i /etc/yunohost/certs/yunohost.org/crt.pem
 ```
 
-11. **chroot** Editer `/etc/inittab` opur se connecter automatiquement :
+11. **chroot** Ã‰diter `/etc/inittab` pour se connecter automatiquement :
 ```bash
 nano /etc/inittab
 # Remplacer la ligne suivante :
@@ -98,28 +98,28 @@ umount -lf /dev/pts
 exit
 ```
 
-13. Démonter dev du chroot :
+13. DÃ©monter dev du chroot :
 ```bash
 sudo umount -lf chroot/dev
 ```
 
-14. Créer les répertoires qui seront copiés dans le media bootable :
+14. CrÃ©er les rÃ©pertoires qui seront copiÃ©s dans le mÃ©dia bootable :
 ```bash
 mkdir -p image/{live,isolinux}
 ```
 
-15. Compresser l'environnement chroot dans un système de fichier Squash :
+15. Compresser l'environnement chroot dans un systÃ©me de fichier Squash :
 ```bash
 sudo mksquashfs chroot image/live/filesystem.squashfs -e boot
 ```
 
-16. Preparer le bootloader USB/CD :
+16. PrÃ©parer le bootloader USB/CD :
 ```bash
 cp chroot/boot/vmlinuz-3.2.0-4-486 image/live/vmlinuz1 && 
 cp chroot/boot/initrd.img-3.2.0-4-486 image/live/initrd1
 ```
 
-17. Créer le menu `image/isolinux/isolinux.cfg` pour le bootloader.
+17. CrÃ©er le menu `image/isolinux/isolinux.cfg` pour le bootloader.
 
 ```bash
 UI menu.c32
@@ -138,7 +138,7 @@ append initrd=/live/initrd1 boot=live
 
 ### Compiler le .iso
 
-Copier les fichiers nécessaires au démarrage de l'ISO et créer l'ISO :
+Copier les fichiers nÃ©cessaires au dÃ©marrage de l'ISO et crÃ©er l'ISO :
 
 ```bash
 cp /usr/lib/syslinux/isolinux.bin image/isolinux/ && 
@@ -146,4 +146,4 @@ cp /usr/lib/syslinux/menu.c32 image/isolinux/
 cd image && genisoimage -rational-rock -volid "YunoHost Live" -cache-inodes -joliet -full-iso9660-filenames -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -output ../yunohost-live.iso . && cd ..
 ```
 
-Félicitations ! L'ISO peut désormais être gravée ou utilisée avec [Unetbootin](http://unetbootin.sourceforge.net/) pour la copier sur une clé USB.
+FÃ©licitations ! L'ISO peut dÃ©sormais Ãªtre gravÃ©e ou utilisÃ©e avec [Unetbootin](http://unetbootin.sourceforge.net/) pour la copier sur une clÃ© USB.
