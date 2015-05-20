@@ -144,4 +144,4 @@ cp /usr/lib/syslinux/menu.c32 image/isolinux/
 cd image && genisoimage -rational-rock -volid "YunoHost Live" -cache-inodes -joliet -full-iso9660-filenames -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -output ../yunohost-live.iso . && cd ..
 ```
 
-Great success ! Now you can burn the .iso or use [Unetbootin](http://unetbootin.sourceforge.net/) to copy it on a USB key.
+Great success! Now you can burn the .iso or use [Unetbootin](http://unetbootin.sourceforge.net/) to copy it on a USB key.
