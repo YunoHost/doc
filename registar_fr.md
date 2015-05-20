@@ -1,6 +1,6 @@
-#Registar
+# Bureaux dâ€™enregistrement
 
-Voici une liste des hébergeurs pour réserver un nom de domaine :
+Voici une liste des bureaux dâ€™enregistrement pour acheter un nom de domaine :
 * [OVH](http://ovh.com/)
 * [GoDaddy](https://godaddy.com/)
 * [Gandi](http://gandi.net/)
