@@ -2,7 +2,7 @@
 
 *Voici une petite page de documentation en guise de mémo sur la manière de tester/développer YunoHost avec Vagrant.*
 
-*Toutes les autres façons d'installer YunoHost sont listées **[ici](/install_fr)**.*
+*Toutes les autres façons d’installer YunoHost sont listées **[ici](/install_fr)**.*
 
 <img src="https://yunohost.org/images/vagrant.png" width=250>
 
@@ -18,17 +18,17 @@ mkdir YunoHost
 cd YunoHost
 ```
 
-La commande suivante va initialiser le projet avec un image Debian Wheezy de base
+La commande suivante va initialiser le projet avec une image Debian Wheezy de base
 ```bash
 vagrant init chef/debian-7.4
 ```
 
-Décommenter (Supprimer le # devant la ligne) la ligne suivante dans le fichier Vagrantfile nouvellement créé afin d'avoir un accès depuis le système hôte
+Décommenter (supprimer le # devant la ligne) la ligne suivante dans le fichier Vagrantfile nouvellement créé afin d’avoir un accès depuis le système hôte
 ```bash
 config.vm.network "private_network", ip: "192.168.33.10"
 ```
 
-Clonez le dépôt du script d'installation de YunoHost
+Clonez le dépôt du script d’installation de YunoHost
 ```bash
 git clone https://github.com/YunoHost/install_script
 ```
@@ -47,7 +47,7 @@ Se connecter à la machine virtuelle démarrée
 vagrant ssh
 ```
 
-Il est nécessaire de donner un mot de passe à l'utilisateur root
+Il est nécessaire de donner un mot de passe à l’utilisateur root
 ```bash
 sudo passwd
 ```
@@ -57,7 +57,7 @@ Mettre à jour le système.
 sudo apt-get update && sudo apt-get upgrade
 ```
 
-Lancez le script d'installation
+Lancez le script d’installation
 ```bash
 cd /vagrant/install_script && sudo ./install_yunohostv2
 ```
@@ -70,4 +70,4 @@ cd /vagrant/install_script && sudo ./install_yunohostv2
 
 ---
 
-*Une fois l'installation terminée, vous pouvez procéder à la post-installation : **[yunohost.org/postinstall](/postinstall_fr)** *
+*Une fois l’installation terminée, vous pouvez procéder à la post-installation : **[yunohost.org/postinstall](/postinstall_fr)** *
