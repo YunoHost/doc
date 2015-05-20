@@ -9,10 +9,10 @@ Le système de build est basé sur debuild et pbuilder. Le fonctionnement de cet
 La configuration de cette environnement est défini dans le fichier `/etc/pbuilder/megusta-amd64` et permet de construire les paquets sans architecture spécifique. 
 
 <div class="alert alert-info">
-**Attention :** Il n'est pas conseillé d'être en root pour exécuter les actions suivantes (sauf celles précédées de `sudo`)
+**Attention :** il n'est pas conseillé d'être en root pour exécuter les actions suivantes (sauf celles précédées de `sudo`)
 </div>
 
-## Mise à jour d'un paquet
+## Mise à jour d’un paquet
 
 <br>
 #### Paquets avec sources externes
