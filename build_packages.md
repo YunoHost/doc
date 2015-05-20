@@ -68,7 +68,3 @@ sudo reprepro -Vb /var/www/repo.yunohost.org/ includedeb repository_name package
  
 ## TODO 
 Modify commit-build script to retrieve git commit messages and generate Debian changelog with `git-dch` command.
-
-
-
-
