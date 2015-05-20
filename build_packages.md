@@ -9,21 +9,19 @@ Build system is based on debuild and pbuilder. It will generate a chroot, embedd
 Configuration is defined in the `/etc/pbuilder/megusta-amd64` file and allows to make packages without any specific architecture. 
 
 <div class="alert alert-info">
-**Attention :** Be advised not to be logged in as "root" to execute the following commands (except those starting with `sudo`).
+**Caution:** be advised not to be logged in as "root" to execute the following commands (except those starting with `sudo`).
 </div>
 
 ## Package update
-
-<br>
 #### Packages with external sources
-Packages based on Github sources (moulinette, moulinette-yunohost, ssowat, et yunohost-admin) require the latest modifications:
+Packages based on GitHub sources (moulinette, moulinette-yunohost, ssowat, et yunohost-admin) require the latest modifications:
 
 ```bash
 [yunohost@yunohost] ~/packages.git/moulinette $ cd src
 [yunohost@yunohost] ~/packages.git/moulinette/src $ git pull
 ```
 
-Then, start package build (**attention : you need to be located in the package root folder**):
+Then, start package build (**caution: you need to be located in the package root folder**):
 
 ```bash
 [yunohost@yunohost] ~/packages.git/moulinette/src $ cd ..
