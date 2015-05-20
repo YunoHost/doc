@@ -2,7 +2,7 @@
 
 ## Architecture
 
-Yunohost packages are located on the yunohost.org workstation, in the `/home/yunohost/packages.git` folder.
+YunoHost packages are located on the yunohost.org workstation, in the `/home/yunohost/packages.git` folder.
 
 Build system is based on debuild and pbuilder. It will generate a chroot, embedding every dependencies and Debian build tools.
 
