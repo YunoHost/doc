@@ -108,7 +108,7 @@ sudo umount -lf chroot/dev
 mkdir -p image/{live,isolinux}
 ```
 
-15. Compresser l'environnement chroot dans un systéme de fichier Squash :
+15. Compresser l'environnement chroot dans un système de fichier Squash :
 ```bash
 sudo mksquashfs chroot image/live/filesystem.squashfs -e boot
 ```
