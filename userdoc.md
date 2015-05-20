@@ -1,11 +1,13 @@
 # User documentation
 
 * [What is YunoHost](/whatsyunohost)
-* [User Interface](user_interface)  
-* [Roadmap](/roadmap)
-* [Applications](apps):
-   * [Instant messaging usage](/XMPP)
-   * [Configure a mail client](/email)
-   * [Setting up firefox sync](/app_ffsync)   
-   * [Torrent usage](/app_transmission)
-   * [Calendar and contact sync](/app_radicale)
+* [User interface](user_interface)
+* [Configure an email client](/email)
+* [Instant messaging usage](/XMPP)
+* [Official applications](/apps)
+   * [Baikal](/app_baikal_en)
+   * [Firefox Sync](/app_ffsync_en)
+   * [Tiny Tiny RSS](/app_ttrss_en)
+   * [Transmission](/app_transmission_en)
+   * [Radicale](/app_radicale)
+   * [RoundCube](/app_roundcube_en)
