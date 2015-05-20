@@ -19,9 +19,9 @@ Follow the instructions to install:
 ssh admin@your_server_ip
 ```
 
-* Next you'll need to gain administrator rights (root user): `sudo su`
+* Next you'll need to gain administrator rights ("root" user): `sudo su`
 
-* Move to the Roundcube plugin directory (plugins):
+* Move to the Roundcube plugin directory ("plugins"):
 ```bash
 cd /var/www/roundcube/plugins/
 ```
@@ -31,7 +31,7 @@ cd /var/www/roundcube/plugins/
 git clone https://github.com/christian-putzke/Roundcube-CardDAV/
 ```
 
-* Rename downloaded folder to carddav: 
+* Rename downloaded folder to "carddav": 
 ```bash
 mv Roundcube-CardDAV carddav
 ```
@@ -64,14 +64,14 @@ nano /var/www/roundcube/config/main.inc.php
 cp /var/www/roundcube/plugins/carddav/config.inc.php.dist /var/www/roundcube/plugins/carddav/config.inc.php
 ```
 
-Now, you just have to connect to your Roundcube application, select Parameters located at the top right corner, then select CardDAV in the left panel.
+Now, you just have to connect to your Roundcube application, select "Parameters" located at the top right corner, then select "CardDAV" in the left panel.
 
 Synchronize your owncloud contacts:
 
-* Go to Contacts section of your owncloud application and click on the gear wheel icon located at the bottom left. Then, click on CardDAV link and copy the URL that appeared.
+* Go to "Contacts" section of your owncloud application and click on the gear wheel icon located at the bottom left. Then, click on "CardDAV link" and copy the URL that appeared.
 
-* Go to Roundcube's CardDAV section and type in ownCloud in Label field, paste the previously copied URL and type your username and password. 
+* Go to Roundcube's CardDAV section and type in "ownCloud" in "Label" field, paste the previously copied URL and type your username and password. 
 
 Your contacts are now synchronized! 
 
-Note that even if Roundcube may complain about some time out but process is working.
+Note that even if Roundcube may complain about some "time out" but process is working.
