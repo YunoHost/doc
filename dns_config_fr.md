@@ -22,9 +22,9 @@ vjud 1800 IN CNAME @
 @ 900 IN TXT "v=spf1 a mx -all"
 ```
 
-<div class="alert alert-warning"><b>Attention :</b> remplacez « domain.tld » par votre propre nom de domaine ainsi que les adresses IP d’exemple par celle de votre serveur.</div>
+<div class="alert alert-warning"><b>Attention :</b> remplacez « domain.tld » par votre propre nom de domaine ainsi que les adresses IP d’exemple par celle de votre serveur.</div>
 
 
-<div class="alert alert-info"><b>Pour débuter :</b> les lignes avec « (Minimum) » sont les entrées DNS minimales requises pour que le web, le courrier électronique et XMPP fonctionnent.</div>
+<div class="alert alert-info"><b>Pour débuter :</b> les lignes avec « (Minimum) » sont les entrées DNS minimales requises pour que le web, le courrier électronique et XMPP fonctionnent.</div>
 
-<div class="alert alert-warning"><b>Attention :</b> <b>@</b> représente le nom de domaine par défaut que l'on est en train de définir, certains bureau d’enregistrement ne l'accepte pas (ex : OVH). Il faut donc remplacer le « @ » par votre nom de domaine (domain.tld).</div>
+<div class="alert alert-warning"><b>Attention :</b> <b>@</b> représente le nom de domaine par défaut que l’on est en train de définir, certains bureaux d’enregistrement ne l’acceptent pas (ex : OVH). Il faut donc remplacer le « @ » par votre nom de domaine (domain.tld).</div>
