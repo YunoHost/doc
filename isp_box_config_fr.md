@@ -1,7 +1,7 @@
 # Configuration box/routeur
 
 ### Accès à l’administration de la box/routeur
-Allez à l'adresse suivante : http://192.168.0.1 (ou celle-ci http://192.168.1.1). Puis authentifier-vous.
+Allez à l’adresse suivante : http://192.168.0.1 (ou celle-ci http://192.168.1.1). Puis authentifier-vous.
 
 
 ### Ouverture des ports
@@ -18,16 +18,16 @@ L’ouverture des ports suivants est nécessaire au fonctionnement des différen
 
 #### UPnP
 
-L’UPnP permet d’ouvrir automatiquement les ports. Si ce n'est pas le cas par défaut, vous pouvez l'activer via l'interface d'administration de votre routeur.
+L’UPnP permet d’ouvrir automatiquement les ports. Si ce n’est pas le cas par défaut, vous pouvez l’activer via l’interface d’administration de votre routeur.
 
-Dans certains cas après avoir changé la configuration de votre box (ex : sur Freebox ajout d'IPv6, débloquer le SMTP…) et après l'avoir rebooter. Il se peut que vos ports ne soient plus ouverts. Il faut donc reautorisé ces ports par le firewall :
+Dans certains cas après avoir changé la configuration de votre box (ex : sur Freebox ajout d’IPv6, débloquer le SMTP…) et après l’avoir rebooté. Il se peut que vos ports ne soient plus ouverts. Il faut donc réautoriser ces ports par le firewall :
 
 ```sudo yunohost firewall reload```
 
 #### Ouverture manuelle de ports
 
-Dans le cas où l’UPnP ne fonctionne pas l’ouverture manuelle des ports est nécessaire. Encore une fois référez-vous à l'interface d'administration de votre routeur.
+Dans le cas où l’UPnP ne fonctionne pas, l’ouverture manuelle des ports est nécessaire. Encore une fois référez-vous à l’interface d’administration de votre routeur.
 
 #### Le courrier électronique
 
-Les fournisseurs d’accès à Internet bloquent souvent le port 25 pour éviter que les ordinateurs de votre réseau n'envoient des spams sur Internet à votre insu. Pour pouvoir envoyer des emails, il vous faut donc ouvrir le port 25, ou désactiver l'option “blocage SMTP sortant” dans l'administration de votre routeur.
+Les fournisseurs d’accès à Internet bloquent souvent le port 25 pour éviter que les ordinateurs de votre réseau n’envoient des spams sur Internet à votre insu. Pour pouvoir envoyer des emails, il vous faut donc ouvrir le port 25, ou désactiver l’option « blocage SMTP sortant » dans l’administration de votre routeur.
