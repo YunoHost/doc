@@ -2,7 +2,7 @@
 
 *Voici une petite page de documentation en guise de mémo sur la manière de tester/développer YunoHost avec Docker.*
 
-*Toutes les autres façons d'installer YunoHost sont listées **[ici](/install_fr)**.*
+*Toutes les autres façons d’installer YunoHost sont listées **[ici](/install_fr)**.*
 
 <img src="https://yunohost.org/images/docker.png" width=250>
 
@@ -10,7 +10,7 @@
 
 ## Installer Docker
 
-**Prérequis** : une machine x86 qui tourne sous Ubuntu 14.04 ou supérieur, ArchLinux ou Fedora (sur Debian c'est plus chiant)
+**Prérequis** : une machine x86 qui tourne sous Ubuntu 14.04 ou supérieur, ArchLinux ou Fedora (sur Debian c’est plus chiant)
 
 Sous Ubuntu :
 ```bash
@@ -63,7 +63,7 @@ Vous pouvez vérifier que le conteneur est bien téléchargé avec la commande `
 docker run -d yunohost/full /sbin/init
 ```
 
-Si vous souhaitez démarrer le conteneur avec tous les ports forwardé sur l’hôte :
+Si vous souhaitez démarrer le conteneur avec tous les ports forwardés sur l’hôte :
 
 ```bash
 docker run -d \
@@ -80,7 +80,7 @@ docker run -d \
  /sbin/init
 ```
 
-Plus d'information sur la documentation de Docker :
+Plus d’information sur la documentation de Docker :
 * http://docs.docker.com/reference/commandline/cli/#run
 * http://docs.docker.com/userguide/dockerlinks/
 
@@ -89,7 +89,7 @@ Plus d'information sur la documentation de Docker :
 
 ## Post-installation
 
-Récupérez l'adresse IP du conteneur (normalement quelque chose comme 172.17.0.x)
+Récupérez l’adresse IP du conteneur (normalement quelque chose comme 172.17.0.x)
 
 ```bash
 docker inspect --format '{{ .NetworkSettings.IPAddress }}' <CONTAINER_ID>
@@ -101,7 +101,7 @@ Rendez-vous ensuite sur https://ip.du.conteneur et procédez à la [post-install
 
 ## Commandes utiles
 
-Snapshoter l'état d'un container
+Snapshoter l’état d’un container
 
 ```bash
 docker commit <ID_de_mon_conteneur> LeNomQueJeVeux
@@ -111,10 +111,10 @@ docker commit <ID_de_mon_conteneur> LeNomQueJeVeux
 Assigner une IP à un container
 
 ```bash
-# Vous avez besoin d'iptables, et avoir activé l'IP forwarding sur votre système
+# Vous avez besoin d’iptables, et avoir activé l’IP forwarding sur votre système
 iptables -t nat -A PREROUTING -d <IP à allouer> -j DNAT --to-destination <IP conteneur docker>
 iptables -t nat -A POSTROUTING -s '<IP conteneur docker>/32' -o eth0 -j SNAT --to-source <IP à allouer>
-# Attention à l'interface (ici eth0)
+# Attention à l’interface (ici eth0)
 ```
 
 Se connecter à un conteneur démarré
