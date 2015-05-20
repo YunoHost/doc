@@ -1,4 +1,4 @@
-# Yunohost Debian Packages
+# YunoHost Debian Packages
 
 ## Architecture
 
