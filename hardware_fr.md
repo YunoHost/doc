@@ -1,7 +1,7 @@
 # Matériel
 
-YunoHost est compatible avec tous les types de machine courants.    
-Il est important d'identifier votre type de machine avant de procéder à l'installation.
+YunoHost est compatible avec tous les types de machines courants.    
+Il est important d’identifier votre type de machine avant de procéder à l’installation.
 
 *Cliquez sur le guide correspondant à votre matériel.*
 
@@ -14,9 +14,9 @@ Il est important d'identifier votre type de machine avant de procéder à l'inst
 
 ### Configuration minimale
 
-* 256 Mo de Ram
+* 256 Mo de RAM
 
-* 4 Go d'espace de stockage    
+* 4 Go d’espace de stockage    
 
 
 ### Configuration recommandée
@@ -25,5 +25,4 @@ Il est important d'identifier votre type de machine avant de procéder à l'inst
 
 * 512 Mo de RAM, pour pouvoir faire tourner tous les services et applications correctement
 
-* 20 Go d'espace de stockage, pour pouvoir stocker plus d'emails et de documents
-
+* 20 Go d’espace de stockage, pour pouvoir stocker plus d’emails et de documents
