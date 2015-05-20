@@ -1,11 +1,11 @@
 # User documentation
 
-*For want of anything better, here is an index of interesting pages for the YunoHost server's user.*
-
-* [Instant messaging usage](/XMPP)
-* [Configure a mail client](/email)
 * [What is YunoHost](/whatsyunohost)
-* [Applications](apps_en):
-   * [Setting up firefox sync](/app_ffsync_en)
-   * [Torrent usage](/app_transmission_en)
+* [User Interface](user_interface)  
+* [Roadmap](/roadmap)
+* [Applications](apps):
+   * [Instant messaging usage](/XMPP)
+   * [Configure a mail client](/email)
+   * [Setting up firefox sync](/app_ffsync)   
+   * [Torrent usage](/app_transmission)
    * [Calendar and contact sync](/app_radicale)

@@ -50,7 +50,7 @@ Ceci va configurer un nouvel alias git nommé `yunobump`, global (stocké dans `
 3. Récupérez le numéro de version actuel : `head debian/changelog`
 4. Rendez-vous sur la branche `testing` ou `stable`
 5. Mergez ou cherry-pickez les commits que vous voulez intégrer à la version depuis la branche `unstable`
-6. Modifiez le `debian/changelog` en intégrant les messages de commits correspondant aux modifications que vous avez intégrer (ou utilisez `git-dch` pour le faire automatiquement)
+6. Modifiez le `debian/changelog` en intégrant les messages de commits correspondant aux modifications que vous avez intégré (ou utilisez `git-dch` pour le faire automatiquement)
 7. Taggez la branche actuelle (`testing` ou `stable`) du numéro de version juste supérieur à l'actuel
 8. Pushez vos modifications **ainsi que vos tags** sur le repo GitHub
 9. Retournez sur la branche `unstable`

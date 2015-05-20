@@ -4,7 +4,7 @@
 **Self-hosting** consist to host at home its server, its data and its services.
 
 #### Administrator responsibilities
-If you want to serve a web site, the [email system](email_en) and [instant messaging](XMPP_en), the server need to stay turn on all the time, 24h/24 and 7d/7.
+If you want to serve a web site, the [email system](email) and [instant messaging](XMPP), the server need to stay turn on all the time, 24h/24 and 7d/7.
 
 Self-hosting results availability of the server to users hosted and/or to externals people consulting it.
 

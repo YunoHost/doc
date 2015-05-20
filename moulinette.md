@@ -4,9 +4,9 @@
 
 users, domains, applications, firewall, backup, monitoring.
 
-The other interface is a [web administration](/admin_fr), which eliminates the need for the command line.
+The other interface is a [web administration](/admin), which eliminates the need for the command line.
 
-To use Moulinette you need to connect to your server via [SSH](/ssh_en).
+To use Moulinette you need to connect to your server via [SSH](/ssh).
 
 ##yunohost
 
