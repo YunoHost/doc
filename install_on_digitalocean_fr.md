@@ -1,6 +1,6 @@
 # Installation sur un conteneur DigitalOcean
 
-*Trouvez d'autres moyens d'installer YunoHost **[ici](/install_fr)**.*
+*Trouvez d’autres moyens d’installer YunoHost **[ici](/install_fr)**.*
 
 ## Prérequis
 
@@ -10,7 +10,7 @@
 * Un conteneur **Debian 7.0 x64** avec au moins **512MB** de RAM
 
     <div class="alert alert-warning">
-    <b>Attention :</b> l'utilisateur `root` doit posséder un mot de passe. Exécutez `sudo passwd root` pour être sûr qu'il est configuré correctement.
+    <b>Attention :</b> l’utilisateur `root` doit posséder un mot de passe. Exécutez `sudo passwd root` pour être sûr qu’il est configuré correctement.
     </div>
 
 ---
@@ -23,4 +23,4 @@
 
 ---
 
-***Si vous avez besoin d'aide lors de ces étapes, n'hésitez pas à utiliser les différents [moyens de support](/support_fr).***
+***Si vous avez besoin d’aide lors de ces étapes, n’hésitez pas à utiliser les différents [moyens de support](/support_fr).***
