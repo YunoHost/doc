@@ -1,11 +1,11 @@
 #Régénérer un certificat
 
-Si vous désirez générer à nouveau -- et non renouveler -- un certificat pour un domain, suivre les étapes suivantes :
+Si vous désirez générer à nouveau — et non renouveler — un certificat pour un domain, suivre les étapes suivantes :
 
 (remplacer **example.org** avec votre domaine)
 
 ```bash
-# Sauvegarde du répertoire SSL de Yunohost, pour la lisibilité
+# Sauvegarde du répertoire SSL de YunoHost, pour la lisibilité
 ssldir=/usr/share/yunohost/yunohost-config/ssl/yunoCA
 
 # Sauvegarde du chemin final SSL (ne pas oublier de modifier avec votre domaine)
@@ -42,6 +42,6 @@ chmod 755 $finalpath
 chmod 640 $finalpath/key.pem $finalpath/crt.pem
 chmod 600 $finalpath/openssl.cnf
 
-# Authoriser metronome à accéder aux certificats
+# Autoriser metronome à accéder aux certificats
 chown root:metronome $finalpath/key.pem $finalpath/crt.pem
 ```
