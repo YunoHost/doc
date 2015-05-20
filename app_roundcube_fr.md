@@ -71,11 +71,3 @@ Pour synchroniser vos contacts ownCloud :
 * Rendez-vous dans la section “Contacts” de votre espace ownCloud et cliquez sur l'icône représentant une roue dentée en bas à gauche. Ensuite cliquez sur l'icône “Lien CardDAV” et copiez l'URL qui s'affiche en-dessous.
 
 * Rendez-vous ensuite dans la section CardDAV des paramètres de Roundcube et entrez “ownCloud” dans le champ “Label”, collez l'URL que vous venez de copier et enfin entrez votre nom d'utilisateur et votre mot de passe. Vos contacts sont désormais synchronisés ! Notez que Roundcube risque de se plaindre d'un “time out”, mais le processus fonctionne quand même.
-
-
-
-
-
-
-
-

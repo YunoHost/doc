@@ -9,6 +9,8 @@ https://domain.org/baikal/admin
 
 The user name specified is "admin" followed by the specific password choosen at Baïkal installation procedure.
 
+## CalDAV Connection
+
 ### Connection with Thunderbird + Lightning
 
 Add a new agenda with type "Network" and "CalDAV"
@@ -19,7 +21,6 @@ https://domain.org/baikal/cal.php/calendars/username/default
 
 Be careful to replace "domain.org" by your own domain and the "username" by your user name.
 
-
 ### Connection to AgenDAV
 
 AgenDAV is a web client for using your calendars. It's packaged for Yunohost and you can used it after installing Baïkal.
@@ -28,3 +29,19 @@ AgenDAV is already connected to Baïkal, any other configuration is necessary. I
 
 AgenDAV also allows you to create a new calendars very easily.
 
+## CardDAV Connection
+### Roundcube Connection
+
+Add new adressbook by navigating to Parameters > Preferences > CardDAV.
+
+Make sure it is filled with:
+* Adressbook name: `default`
+* Username: `username`
+* Password: `thePasswordAssociatedToUsername`
+* URL : `https://example.com/baikal/card.php/addressbooks/username/default`
+
+* Make sure to replace "example.com" with your domain and "username" with your username*
+
+Save.
+
+Now, the adressbook is accessible.

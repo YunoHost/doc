@@ -22,3 +22,18 @@ sftp://<user>@<your-domain.org>/home/yunohost.transmission/completed
 ```
 user = admin or root
 
+#### With SCP (complex)
+To transfer file, type in the following command:
+
+```bash
+scp (-r) /your/file/ root@your-domain.org:/home/yunohost.transmission/completed
+```
+
+##### How to download a complete folder?
+Once connected to your server, using [SSH](ssh), move to the download folder and zip it :
+```bash
+cd /home/yunohost.transmission/completed
+zip -r your_archive.zip [dossier]
+```
+
+More informations about file transfer using *scp*: http://doc.ubuntu-fr.org/ssh#transfert_-_copie_de_fichiers (french, need english documentation)
