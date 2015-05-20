@@ -1,6 +1,6 @@
 # Installation sur un serveur dédié
 
-*Trouvez d'autres moyens d'installer YunoHost **[ici](/install_fr)**.*
+*Trouvez d’autres moyens d’installer YunoHost **[ici](/install_fr)**.*
 
 ## Prérequis
 
@@ -20,4 +20,4 @@
 ---
 
 
-***Si vous avez besoin d'aide lors de ces étapes, n'hésitez pas à utiliser les différents [moyens de support](/support_fr).***
+***Si vous avez besoin d’aide lors de ces étapes, n’hésitez pas à utiliser les différents [moyens de support](/support_fr).***
