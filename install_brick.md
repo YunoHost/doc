@@ -23,8 +23,8 @@ Insert SD card into the box, plug in ethernet cable (to connect to local network
 ## Post-configuration
 Connect to `yunohost.local` or through SSH, using the IP adress and update packages.
 
-*  user : root
-*  password : olinux
+*  user: root
+*  password: olinux
 
 ```bash
 apt-get update && apt-get dist-upgrade
