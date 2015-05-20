@@ -9,13 +9,13 @@
 * Une carte micro-SD de capacité minimale de **8GB** et vitesse **class10** fortement recommandée
 * Un autre ordinateur pour parcourir ce guide et accéder à votre Cubieboard
 * Un écran et un clavier sont recommandés pour pouvoir contrôler votre Cubieboard si un problème apparaît
-* Un [fournisseur d'accès correct](/isp_fr), de préférence avec une bonne vitesse d'upload
+* Un [fournisseur d’accès correct](/isp_fr), de préférence avec une bonne vitesse d’upload
 * L’**image YunoHost pour Cubieboard**, disponible ici (à **dézipper**) :
   * [Pour Cubieboard 2](http://build.yunohost.org/yunohost-cubieboard-a20-2014-10-14.img.zip)
 
 ## Étapes d’installation
 
-<a class="btn btn-lg btn-default" href="/copy_image_fr">1. Copier l'image sur une carte SD</a>
+<a class="btn btn-lg btn-default" href="/copy_image_fr">1. Copier l’image sur une carte SD</a>
 
 Avant de mettre la carte dans la Cubieboard créer le dossier nginx :
 ```bash
@@ -45,4 +45,4 @@ mkdir media/cubieboard/var/log/ngnix
 
 ---
 
-***Si vous avez besoin d'aide lors de ces étapes, n'hésitez pas à utiliser les différents [moyens de support](/support_fr).***
+***Si vous avez besoin d’aide lors de ces étapes, n’hésitez pas à utiliser les différents [moyens de support](/support_fr).***
