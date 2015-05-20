@@ -2,7 +2,7 @@
 
 Un certificat est utilisé pour garantir la confidentialité des échanges entre votre serveur et votre client.
 
-YunoHost fournit par défaut un certificat **auto-signé**, ce qui veut dire que c'est votre serveur qui garantit la validité du certificat. C'est suffisant **pour un usage personnel**, car vous pouvez avoir confiance en votre serveur, en revanche cela posera problème si vous comptez ouvrir l'accès à votre serveur à des anonymes, par exemple pour héberger un site web.    
+YunoHost fournit par défaut un certificat **auto-signé**, ce qui veut dire que c’est votre serveur qui garantit la validité du certificat. C’est suffisant **pour un usage personnel**, car vous pouvez avoir confiance en votre serveur, en revanche cela posera problème si vous comptez ouvrir l’accès à votre serveur à des anonymes, par exemple pour héberger un site web.    
 En effet, les utilisateurs devront passer par un écran de ce type :
 
 <img src="https://yunohost.org/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
@@ -10,30 +10,30 @@ En effet, les utilisateurs devront passer par un écran de ce type :
 Cet écran revient à demander **« Avez-vous confiance au serveur qui héberge ce site ? »**.    
 Cela peut effrayer vos utilisateurs (à juste titre).
 
-Pour éviter cette confusion, il est possible d'obtenir un certificat signé par une autorité « connue » : **Gandi**, **RapidSSL**, **StartSSL**, **Cacert**.    
+Pour éviter cette confusion, il est possible d’obtenir un certificat signé par une autorité « connue » : **Gandi**, **RapidSSL**, **StartSSL**, **Cacert**.    
 Dans ce cas, il s’agira de remplacer le certificat auto-signé par celui qui a été reconnu par une autorité de certification, et vos utilisateurs n’auront plus à passer par cet écran d’avertissement.
 
 ### Ajout d’un certificat signé par une autorité
 
-Après création du certificat auprès de votre autorité d'enregistrement, vous devez être en possession d'une clé privée, le fichier key et d'un certificat public, le fichier crt.
+Après création du certificat auprès de votre autorité d’enregistrement, vous devez être en possession d’une clé privée, le fichier key et d’un certificat public, le fichier crt.
 > Attention, le fichier key est très sensible, il est strictement personnel et doit être très bien sécurisé.
 
-Ces deux fichiers doivent être copiés sur le serveur, si ils ne s'y trouvent pas déjà.
+Ces deux fichiers doivent être copiés sur le serveur, s’ils ne s’y trouvent pas déjà.
 
 ```bash
 scp CERTIFICAT.crt admin@DOMAIN.TLD:ssl.crt
 scp CLE.key admin@DOMAIN.TLD:ssl.key
 ```
 
-Depuis Windows, scp est exploitable avec putty, en téléchargeant l'outil [pscp](http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe)
+Depuis Windows, scp est exploitable avec putty, en téléchargeant l’outil [pscp](http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe)
 
 ```bash
 pscp -P 22 CERTIFICAT.crt admin@DOMAIN.TLD:ssl.crt
 pscp -P 22 CLE.key admin@DOMAIN.TLD:ssl.key```
 
-Dés lors que les fichiers sont sur le serveur, le reste du travail se fera sur celui-ci. En [ssh](https://yunohost.org/#/ssh_fr) ou en local.
+Dès lors que les fichiers sont sur le serveur, le reste du travail se fera sur celui-ci. En [ssh](https://yunohost.org/#/ssh_fr) ou en local.
 
-Tout d'abord, créez un dossier pour stocker les certificats obtenus.
+Tout d’abord, créez un dossier pour stocker les certificats obtenus.
 
 ```bash
 sudo mkdir /etc/yunohost/certs/DOMAIN.TLD/ae_certs
@@ -44,13 +44,13 @@ Puis allez dans le dossier parent pour poursuivre.
 ```bash
 cd /etc/yunohost/certs/DOMAIN.TLD/```
 
-Faites une sauvegarde des certificats d'origine de yunohost, par précaution.
+Faites une sauvegarde des certificats d’origine de yunohost, par précaution.
 
 ```bash
 sudo mkdir yunohost_self_signed
 sudo mv *.pem *.cnf yunohost_self_signed/```
 
-En fonction de l'autorité d'enregistrement, des certificats intermédiaire et racine doivent être obtenu.
+En fonction de l’autorité d’enregistrement, des certificats intermédiaires et racines doivent être obtenus.
 
 > **StartSSL**
 > ```bash
@@ -70,14 +70,14 @@ En fonction de l'autorité d'enregistrement, des certificats intermédiaire et r
 > sudo wget http://www.cacert.org/certs/root.crt -O ae_certs/ca.pem
 > sudo wget http://www.cacert.org/certs/class3.crt -O ae_certs/intermediate_ca.pem```
 
-Les certificats intermédiaire et root doivent être réuni avec le certificat obtenu pour créer une chaîne de certificats unifiés.
+Les certificats intermédiaires et root doivent être réunis avec le certificat obtenu pour créer une chaîne de certificats unifiés.
 
-En cas d'utilisation d'un certificat racine (StartSSL, Cacert) :
+En cas d’utilisation d’un certificat racine (StartSSL, Cacert) :
 
 ```bash
 cat ae_certs/ssl.crt ae_certs/intermediate_ca.pem ae_certs/ca.pem | sudo tee crt.pem```
 
-En cas d'utilisation du certificat intermédiaire seulement.
+En cas d’utilisation du certificat intermédiaire seulement.
 
 ```bash
 cat ae_certs/ssl.crt ae_certs/intermediate_ca.pem | sudo tee crt.pem```
@@ -87,7 +87,7 @@ La clé privée doit être, elle, convertie au format pem.
 ```bash
 sudo openssl rsa -in ae_certs/ssl.key -out key.pem -outform PEM```
 
-Afin de s'assurer de la syntaxe des certificats, vérifiez le contenu des fichiers.
+Afin de s’assurer de la syntaxe des certificats, vérifiez le contenu des fichiers.
 
 ```bash
 cat crt.pem key.pem```
@@ -123,4 +123,4 @@ Rechargez la configuration de nginx pour prendre en compte le nouveau certificat
 sudo service nginx reload```
 
 
-Votre certificat est prêt à servir. Vous pouvez toutefois vous assurez de sa mise en place en testant le certificat à l'aide du service de <a href="https://www.geocerts.com/ssl_checker" target="_blank">geocerts</a>.
+Votre certificat est prêt à servir. Vous pouvez toutefois vous assurez de sa mise en place en testant le certificat à l’aide du service de <a href="https://www.geocerts.com/ssl_checker" target="_blank">geocerts</a>.
