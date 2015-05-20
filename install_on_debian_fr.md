@@ -1,6 +1,6 @@
 # Installation sur Debian
 
-*Trouvez d'autres moyens d'installer YunoHost **[ici](/install_fr)**.*
+*Trouvez d’autres moyens d’installer YunoHost **[ici](/install_fr)**.*
 
 ## Prérequis
 
@@ -8,7 +8,7 @@
 
 Sur une plateforme ARM, un VPS, un serveur dédié, un ordinateur x86 standard, un vieux Macintosh, ...
 
-* avec **Debian 7** (Wheezy, Raspbian, Cubian, etc…) d'installé
+* avec **Debian 7** (Wheezy, Raspbian, Cubian, etc…) d’installé
 * connecté à Internet avec un câble RJ-45
 * avec un **accès root** directement ou par SSH
 
@@ -24,5 +24,5 @@ Sur une plateforme ARM, un VPS, un serveur dédié, un ordinateur x86 standard, 
 
 ---
 
-***Si vous avez besoin d'aide lors de ces étapes, n'hésitez pas à utiliser les différents [moyens de support](/support_fr).***
+***Si vous avez besoin d’aide lors de ces étapes, n’hésitez pas à utiliser les différents [moyens de support](/support_fr).***
 
