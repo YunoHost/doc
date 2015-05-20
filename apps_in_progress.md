@@ -35,6 +35,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [FreshRSS](http://freshrss.org/) | plopoyop | <div class="ready"/> | https://github.com/plopoyop/freshrss_ynh | RSS reader |
 | [Friendica](http://friendica.com) | aymhce | <div class="inprogress"/> | https://github.com/aymhce/friendica_ynh | Social Communication Server |
 | FTP support for webapp | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/ftp_support_webapp_ynh | FTP support for webapp |
+| HotSpot | Jvaubourg | <div class="ready"/> | https://github.com/labriqueinternet/hotspot_ynh | Wifi Hotspot for [the Brick](/install_brick) |
 | [HTML Tools](http://lehollandaisvolant.net/tout/tools/)| IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/htmltools_ynh | HTML Mini-tools |
 | [HTPC Manager](http://htpc.io) | lunarok | <div class="ready"/> | https://github.com/lunarok/htpc_ynh | Manage your HTPC |
 | [I Hate Money](http://ihatemoney.org/) | JocelynD | <div class="ready"/> | https://github.com/JocelynDelalande/ihatemoney_ynh | A simple shared budget manager web application |
@@ -71,6 +72,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [phpBB](http://www.phpbb.com/) | polytan02 | <div class="ready"/> | https://github.com/polytan02/phpBB_ynh | #1 forum in php with adaptive design - Requires manual configuration after initial installation |
 | [phpLDAPadmin](http://phpldapadmin.sourceforge.net/) | aymhce | <div class="ready"/> | https://github.com/aymhce/phpldapadmin_ynh | LDAP database web manager |
 | [PHPSysinfo](https://phpsysinfo.github.io/phpsysinfo/) | lunarok | <div class="ready"/> | https://github.com/lunarok/phpsysinfo_ynh | Informations about your system |
+| [PirateBox](https://github.com/jvaubourg/php-piratebox) | Jvaubourg | <div class="ready"/> | https://github.com/labriqueinternet/piratebox_ynh | PirateBox for [the Brick](/install_brick) |
 | [Piwigo](http://piwigo.org) | monsieur-a | <div class="ready"/> | https://github.com/monsieur-a/piwigo_ynh | Web photo gallery |
 | [Piwik](http://piwik.org) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/piwik_ynh | Web analytics platform |
 | [Plexmediaserver](https://plex.tv/) | Chao-Man | <div class="inprogress"/> | https://github.com/Novakin/plexmediaserver_ynh | PlexMediaServer |
@@ -89,7 +91,9 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [SPIP](http://www.spip.net/) | Cyp | <div class="inprogress"/> | https://github.com/magikcypress/spip_ynh | Web sites/blog |
 | [Subsonic](http://subsonic.org) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/subsonic_ynh | Web-based media server |
 | [TagSpaces](http://www.tagspaces.org/) | scith | <div class="inprogress"/> | https://github.com/scith/tagspaces_ynh | Manage files using tags |
+| Tor Client | Bleuchtang | <div class="ready"/> | https://github.com/labriqueinternet/torclient_ynh| Tor Client for [the Brick](/install_brick) |
 | [Tor Relay](https://www.torproject.org/docs/tor-doc-relay.html.en) | matlink | <div class="inprogress"/> | https://github.com/matlink/torrelay_ynh | Tor Node |
+| VPN Client | Jvaubourg | <div class="ready"/> | https://github.com/labriqueinternet/vpnclient_ynh | VPN Client for [the Brick](/install_brick) |
 | [Webapp Multi](https://github.com/polytan02/webapp_multi_ynh) | polytan02 | <div class="ready"/> | https://github.com/polytan02/webapp_multi_ynh | Multi instances & multi domains web app without FTP support |
 | [Webmin](http://webmin.com) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/webmin_ynh | Web-based system configuration tool |
 | [Wordpress multisite](http://codex.wordpress.org/Create_A_Network) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/wordpress_ynh | Wordpress with network support |
