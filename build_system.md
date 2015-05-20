@@ -12,11 +12,11 @@ There is 3 repositories (`unstable`, `testing` & `stable`):
 
 * Packages from `testing` (aka `test`) allow to set up a new package version to be tested.
 
-* Packages from `stable` (aka `megusta`) contains only production versions
+* Packages from `stable` (aka `megusta`) contains only production versions.
 
 This workflow purpose is to avoid any manual interaction (script launch, ...) on your server and to focus on package management through Github only.
 
-Thus, each yunohost package has 3 branches, matching the 3 repositories (`unstable`, `testing` et `stable`). The build server will **automatically** build and deploy Debian source packages and binaries into the corresponding state on Github
+Thus, each yunohost package has three branches, matching the three repositories (`unstable`, `testing` et `stable`). The build server will **automatically** build and deploy Debian source packages and binaries into the corresponding state on Github
 
 ### Unstable branch
 Commits to the unstable branch will not modify the `debian/changelog` file because it is automatically updated during daily builds with corresponding date and time.
@@ -31,7 +31,7 @@ No commit can be done directly in those branches. You need to use merges (merge 
 
 The only specific changes that occur on the repositories are version changes (modification of `debian/changelog`, then tag).
 
-As a Yunohost application maintainer, you may find specific tools in the repository [yunohost-debhelper](https://github.com/YunoHost/yunohost-debhelper)
+As a YunoHost application maintainer, you may find specific tools in the repository [yunohost-debhelper](https://github.com/YunoHost/yunohost-debhelper)
 ```bash
 git clone https://github.com/YunoHost/yunohost-debhelper
 yunohost-debhelper/setup_git_alias.sh
@@ -39,7 +39,7 @@ yunohost-debhelper/setup_git_alias.sh
 The previous instructions will configure a new git alias named `yunobump`. It is global and located at `~/.gitconfig`, therefore accessible through any local git repository.
 
 <div class="alert alert-warning">
-**Attention :** This helper `yunobump` only works for Ubuntu or Debian Jessie for the moment. You **need** to install `git` and `git-buildpackage` packages in order to make this helper work properly.
+**Cauttion:** this helper `yunobump` only works for Ubuntu or Debian Jessie for the moment. You **need** to install `git` and `git-buildpackage` packages in order to make this helper work properly.
 </div>
 
 #### Without helper
@@ -66,7 +66,7 @@ $ cd yunohost-config-nginx
 # Be sure to be up-to-date, and don't forget to get the tags !
 $ git fetch --tags
 
-# Checkout your branch : stable or testing
+# Checkout your branch: stable or testing
 $ git checkout testing
 
 # Do your 'functional' modifications: either merge unstable in testing, or merge testing in stable
@@ -74,7 +74,7 @@ $ git pull origin unstable
 # Or just
 $ git merge unstable
 
-# What is the current version number in test ?
+# What is the current version number in test?
 $ dpkg-parsechangelog | grep "^Version" | cut -d ' ' -f 2
 # Or just
 $ head debian/changelog
