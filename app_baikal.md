@@ -35,7 +35,7 @@ AgenDAV also allows you to create a new calendars very easily.
 Add new adressbook by navigating to Parameters > Preferences > CardDAV.
 
 Make sure it is filled with:
-* Adressbook name: `default`
+* Addressbook name: `default`
 * Username: `username`
 * Password: `thePasswordAssociatedToUsername`
 * URL : `https://example.com/baikal/card.php/addressbooks/username/default`
