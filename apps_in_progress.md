@@ -23,6 +23,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [BTSync](http://www.getsync.com/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/btsync_ynh | File synchronization tool  |
 | [Chtickynotes](https://github.com/chtixof/chtickynotes_ynh) | chtixof | <div class="ready"/> | https://github.com/chtixof/chtickynotes_ynh | A Post-it page |
 | [COPS](http://cops.com) | lunarok | <div class="ready"/> | https://github.com/lunarok/cops_ynh | Frontend for Calibre library |
+| [Coquelicot](https://coquelicot.potager.org/) | Moul | <div class="inprogress"/> | https://github.com/M5oul/coquelicot_ynh | “One-click” file sharing focused on users’ privacy |
 | [Couchpotato](https://couchpota.to/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/couchpotato_ynh | PVR for Usenet and torrents |
 | [Cubiks-2048](https://kshitij-banerjee.github.io/Cubiks-2048/) | Moul | <div class="ready"/> | https://github.com/M5oul/Cubiks-2048_ynh | Clone of 2048 game in 3D |
 | Custom Webapp (Multi instance) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/my_webapp_ynh |Custom Webapp |
