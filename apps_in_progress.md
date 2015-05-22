@@ -57,6 +57,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Linux Dash](http://linuxdash.afaqtariq.com/) | opi | <div class="ready"/> | https://github.com/opi/linuxdash_ynh | Monitoring web dashboard |
 | [Lychee](http://lychee.electerious.com/) | titoko | <div class="inprogress"/> | https://github.com/titoko/lychee_ynh | Web photo-management |
 | [Lutim](https://lut.im/) | Maniack Crudelis<br></br>Matlink | <div class="ready"/> | https://github.com/maniackcrudelis/lutim_ynh<br> https://github.com/matlink/lutim_ynh | Anonymous image hosting service |
+| [MediaGoblin](http://mediagoblin.org/) | Jerome | <div class="inprogress"/> | https://github.com/jeromelebleu/mediagoblin_ynh | Multi-media publishing platform |
 | [MediaWiki](https://mediawiki.org) | ElieSauveterre | <div class="ready"/> | https://github.com/mikangali-labs/mediawiki_ynh | Wiki platform |
 | [minchat](https://github.com/chtixof/minchat_ynh) | chtixof | <div class="ready"/> | https://github.com/chtixof/minchat_ynh | Minimalist web chat |
 | [miniflux](http://miniflux.net) | matanya | <div class="inprogress"/> | https://github.com/mat-mo/miniflux_ynh | RSS reader via RTL support |
