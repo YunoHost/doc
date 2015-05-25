@@ -42,9 +42,9 @@ mkdir media/cubieboard/var/log/ngnix
 
 ### Create a YunoHost image for Cubieboard 1, 2 or 3
 * **[Scripts for Cubian](https://github.com/M5oul/Yunocubian)**
-* A Cubieboard Debian 7 image compatible with YunoHost:
+* A Cubieboard Debian 7/8 image compatible with YunoHost:
+    * [ARMbian](http://www.igorpecovnik.com/2013/12/24/cubietruck-debian-wheezy-sd-card-image/)
     * [Cubian](http://cubian.org/)
-    * [For Cubieboard 2 and 3](http://www.igorpecovnik.com/2013/12/24/cubietruck-debian-wheezy-sd-card-image/)
     * [Cubieez](http://www.cubieforums.com/index.php?topic=442.0)
 
 ---
