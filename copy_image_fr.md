@@ -22,7 +22,9 @@ Maintenant que vous avez l’image ISO YunoHost, vous devez la copier sur une ca
 sudo fdisk -l
 ```
 
-Ça devrait être `/dev/diskN`, où `N` est un nombre, ou `/dev/sdX`, où `X` est une lettre, ou `/dev/mmcblk0`.
+Ça devrait être `/dev/diskN`, où `N` est un chiffre, ou `/dev/sdX`, où `X` est une lettre, ou `/dev/mmcblk0`.
+
+Attention à ne pas mettre le chiffre `N` car ça créera une [carte SD non fonctionnelle](https://raspberrypi.stackexchange.com/questions/11880/sd-card-doesnt-works-after-dd).
 
 * Copiez l’image en tapant :
 
