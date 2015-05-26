@@ -27,11 +27,12 @@ Core:
 * ✔ Implement a simple backup and restore system *(jerome, kload)*
 * ✔ Add logging to the moulinette for each action *(jerome)*
 * ✔ Review the app manifest format and integrate it *(app maintainers, jerome, opi)*
+* ✔ Fix a security bug in SSOwat *(kload)*
 
-Web interface:
-* ✔ Install unofficial apps from the admin panel *(opi)*
-* ✔ Add firewall in admin panel *(opi)*
-* ✔ Warn admin about security updates in the admin panel *(opi)*
+Web administration:
+* ✔ Install unofficial apps *(opi)*
+* ✔ Add firewall *(opi)*
+* ✔ Warn admin about security updates *(opi)*
 * ✔ Fix websocket issue for Raspberry Pi *(jerome, kload)*
 
 Apps:
