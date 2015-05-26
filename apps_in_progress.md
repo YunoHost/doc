@@ -4,9 +4,11 @@
 
 The following applications are being packaged on by a growing number of packagers.
 
-They are <strong>NOT</strong> validated by the packaging team, and as such, no official support is provided for them.
+<div class="alert alert-danger">These applications are **NOT** validated by the packaging team, and as such, **no official support is provided** for them.<br>
+You can test and use them, **at your own risk**.
+</div>
 
-You can test them, **at your own risk**, by installing them either through the [administration web](/admin) interface by choosing "Install custom app", or using the [moulinette](/moulinette):
+There are installable through the [administration web](/admin) interface by choosing "Install custom app", or using the [moulinette](/moulinette):
 ```bash
 yunohost app install https://github.com/<packager>/<app_repository>
 ```
