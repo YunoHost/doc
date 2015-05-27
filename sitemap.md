@@ -82,6 +82,8 @@
         * [Contribution](/contributordoc)
 
 * Project's life:
+   * [Changelog v.2.0](/changelog_2_0_en)
+   * [Changelog v.2.2](/changelog_2_2_en)
    * [Roadmap](/roadmap)
    * [Contributors](contribs)
    * [Support](/support_en)
