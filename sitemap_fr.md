@@ -87,6 +87,8 @@
         * [Contribution](/contributordoc_fr)
 
 * Vie du projet :
+   * [Journal des modifications v.2.0](/changelog_2_0_en)
+   * [Journal des modifications v.2.2](/changelog_2_2_en)
    * [Feuille de route](/roadmap_en)
    * [Contributeurs](contribs_fr)
    * [Entraide - support](/support_fr)
