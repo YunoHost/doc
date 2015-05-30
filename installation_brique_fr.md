@@ -54,36 +54,5 @@ copier/coller la conf généré pour le vpn dans l'endroit "advanced"
 (pour l'instant pas configurer l'ipv6 pour neutrinet, le script doit être fini pour l'obtenir ou aller le chercher sur https://vpn.neutrinet.be:8000)
 
 ```bash
-=======
-
--  user: root
--  password: olinux
-
-```
-apt-get update && apt-get dist-upgrade
-```
-
-Puis y aller en http et accepter le certificat auto signé, puis suivre les instructions de [post install](/postinstall)
-
-- choisir le nom de domaine
-- choisir un mot de passe administrateur
-
-Vous êtes redirigé sur l'interface d'admin et là, faire un nouvel utilisateur avec son mot de passe et co.
-
-Puis, installer les applications ("applications -> installer" et tout en bas mettre l'url vers le dépot github):
-
-- hotspot : https://github.com/labriqueinternet/hotspot_ynh
-- vpnclient : https://github.com/labriqueinternet/vpnclient_ynh
-- torclient : https://github.com/labriqueinternet/torclient_ynh
-- piratebox : https://github.com/labriqueinternet/piratebox_ynh
-
-
-Ensuite, aller sur `http://monurl.com/vpnadmin` (ou ce que vous avez choisi). Là:
-
-(pour neutrinet) foutre vpn.neutrinet.be
-copier/coller la conf généré pour le vpn dans l'endroit "advanced"
-(pour l'instant pas configurer l'ipv6 pour neutrinet, le script doit être fini pour l'obtenir ou aller le chercher sur https://vpn.neutrinet.be:8000)
-
-```
 scp auth client.crt client.key ca.crt dans /etc/openvpn/
 ```
