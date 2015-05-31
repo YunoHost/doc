@@ -31,7 +31,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | Custom Webapp (Multi instance) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/my_webapp_ynh |Custom Webapp |
 | [Diaspora](http://diasporafoundation.org) | aymhce | <div class="inprogress"/> | https://github.com/aymhce/diaspora_ynh | Distributed social networking service |
 | [EmailPoubelle](http://forge.zici.fr/p/emailpoubelle-php/) | matlink | <div class="inprogress"/> | https://github.com/matlink/emailpoubelle_ynh | Disposable email |
-| [EtherCalc](https://ethercalc.org/) | zamentur | <div class="inprogress"/> | https://github.com/zamentur/ethercalc_ynh | Web spreadsheet |
+| [EtherCalc](https://ethercalc.org/) | zamentur | <div class="ready"/> | https://github.com/zamentur/ethercalc_ynh | Web spreadsheet |
 | [Etherpad-Lite](http://etherpad.org) | beudbeud | <div class="ready"/> | https://github.com/abeudin/etherpadlite_ynh | Real-time collaborative document editing |
 | [FileBin](http://sebsauvage.net/wiki/doku.php?id=php:zerobin) | IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/filebin_ynh | Online filebin |
 | [Firefox Sync](https://www.mozilla.org/en-US/firefox/sync/) | beudbeud | <div class="ready"/> |https://github.com/abeudin/ffsync_ynh | Firefox synchronization server |
