@@ -6,7 +6,7 @@
 Core:
 * ✔ Migrate YunoHost to Debian Jessie
 * ✔ Update Metronome to v3.6 and make a more Debian-friendly package *(jerome)*
-* ✔ Update Nginx to v1.6.2
+* ✔ Update of Nginx, Postfix and Dovecot regarding the late Poodle attack
 * ✔ Add Dnsmasq next to Bind9 *(kload)*
 * ✔ Add email quota *(beudbeud, jerome)*
 * ✔ Implement a simple backup and restore system *(jerome, kload)*
