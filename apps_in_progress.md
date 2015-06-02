@@ -68,7 +68,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Munin](http://munin-monitoring.org/) | ju | <div class="ready"/> | https://github.com/julienmalik/munin_ynh | System Monitoring graphing tool |
 | [Monit](http://mmonit.com/monit/) | ju | <div class="ready"/> | https://github.com/julienmalik/monit_ynh | Daemon Monitoring tool |
 | [MyCryptoChat](https://github.com/HowTommy/mycryptochat) | mrtino | <div class="ready"/> | https://github.com/mrtino/mycryptochat_ynh | Encrypted chat rooms manager |
-| [Odoo](https://www.odoo.com/) | portanicolas | <div class="inprogress"/> | https://github.com/portanicolas/odoov8_ynh | ERP |
+| [Odoo](https://www.odoo.com/) | portanicolas | <div class="notworking"/> | https://github.com/portanicolas/odoov8_ynh | ERP |
 | [OFBiz](https://ofbiz.apache.org/) | julien | <div class="inprogress"/> | https://github.com/nomakaFr/ofbiz_ynh | ERP |
 | [OpenDKIM](http://opendkim.org/) | polytan02 | <div class="inprogress"/> | https://github.com/polytan02/opendkim_ynh | OpenDKIM for Yunohost installation script |
 | [OpenID](http://openid.net/) | ju | <div class="inprogress"/> | https://github.com/julienmalik/openid-simplesamlphp_ynh | OpenID Identity server |
@@ -97,7 +97,8 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Syncthing](https://syncthing.net/) | tuxmouraille | <div class="inprogress"/> | https://github.com/tuxmouraille/syncthing_ynh | Sync and encrypted service |
 | [TagSpaces](http://www.tagspaces.org/) | scith | <div class="inprogress"/> | https://github.com/scith/tagspaces_ynh | Manage files using tags |
 | Tor Client | Bleuchtang | <div class="ready"/> | https://github.com/labriqueinternet/torclient_ynh| Tor Client for [the Brick](/install_brick) |
-| [Tor Relay](https://www.torproject.org/docs/tor-doc-relay.html.en) | matlink | <div class="inprogress"/> | https://github.com/matlink/torrelay_ynh | Tor Node |
+| [Tor Relay](https://www.torproject.org/docs/tor-doc-relay.html.en) | matlink | <div class="inprogress"/> | https://github.com/matlink/torrelay_ynh | Tor node |
+| [uCoin](http://ucoin.io/) | Moul | <div class="inprogress"/> | https://github.com/M5oul/ucoin_ynh | uCoin node:<br>free monetary system  |
 | VPN Client | Jvaubourg | <div class="ready"/> | https://github.com/labriqueinternet/vpnclient_ynh | VPN Client for [the Brick](/install_brick) |
 | [Webapp Multi](https://github.com/polytan02/webapp_multi_ynh) | polytan02 | <div class="ready"/> | https://github.com/polytan02/webapp_multi_ynh | Multi instances & multi domains web app without FTP support |
 | [Webmin](http://webmin.com) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/webmin_ynh | Web-based system configuration tool |
