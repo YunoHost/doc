@@ -48,7 +48,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Mailpile](https://www.mailpile.is)
 * [MPD](http://www.musicpd.org/)
 * [MediaCrush](https://imgrush.com/)
-* [MediaGoblin](http://mediagoblin.org/)
 * [MinigalNano](https://github.com/sebsauvage/MinigalNano)
 * [Mirakel](http://mirakel.azapps.de/taskwarrior.html)
 * [Modoboa](http://modoboa.org/)
