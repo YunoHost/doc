@@ -47,7 +47,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Mailman](https://www.gnu.org/software/mailman/)
 * [Mailpile](https://www.mailpile.is)
 * [MPD](http://www.musicpd.org/)
-* [MediaCrush](https://mediacru.sh/)
+* [MediaCrush](https://imgrush.com/)
 * [MediaGoblin](http://mediagoblin.org/)
 * [MinigalNano](https://github.com/sebsauvage/MinigalNano)
 * [Mirakel](http://mirakel.azapps.de/taskwarrior.html)
