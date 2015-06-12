@@ -33,7 +33,7 @@ The automatic detection tool of Thunderbird does not work with YunoHost. You wil
 ### Migration
 Emails can be migrated with:
 * [ImapSync](http://imapsync.lamiral.info/):
- * on your client [install ImapSync](http://imapsync.lamiral.info/INSTALL) :
+ * on your client [install ImapSync](http://imapsync.lamiral.info/INSTALL):
 ```bash
 sudo dnf install imapsync # Under Fedora
 ```
