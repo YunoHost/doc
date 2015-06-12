@@ -1,4 +1,4 @@
-# Install YunoHost on CubieBoard
+# Install YunoHost on Cubieboard
 
 *Find other ways to install YunoHost **[here](/install)**.*
 
@@ -8,42 +8,32 @@
 <img src="https://yunohost.org/images/micro-sd-card.jpg">
 
 * CubieBoard 1, 2 or CubieTruck.
-* A micro-SD card: **8GB** capacity (or more) and **class10** speed rate are highly recommended
-* An other computer to read this guide and access to your Cubieboard
-* A screen and a keyboard are recommended to control your Cubieboard if a problem occurs
+* A micro SD card: **4GB** capacity (or more) and **class10** speed rate are highly recommended
 * A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
-* The **YunoHost Cubieboard image**, available here (to **unzip**):
-  * [For Cubieboard 2](http://build.yunohost.org/yunohost-cubieboard-a20-2014-10-14.img.zip)
 
 ---
 
-## Installation steps
+## Installation
+* Download the latest **[image of ARMbian Jessie for Cubieboard](http://www.igorpecovnik.com/2013/12/24/cubietruck-debian-wheezy-sd-card-image/)**
 
-<a class="btn btn-lg btn-default" href="/copy_image">1. Copy image to the SD card</a>
+<a class="btn btn-lg btn-default" href="/copy_image">Copy image to the SD card</a>
 
-Before putting SD card on Cubieboard create repository nginx:
-```bash
-mkdir media/cubieboard/var/log/ngnix
-```
+<a class="btn btn-lg btn-default" href="/plug_and_boot">Plug & boot</a>
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot">2. Plug & boot</a>
+* Connect via [SSH](ssh): **root@exemple.tld/ip_address** with the password: **1234**.
 
-<a class="btn btn-lg btn-default" href="/postinstall">4. Post-install</a>
+<a class="btn btn-lg btn-default" href="/install_manually">Install YunoHost</a>
 
----
-
-## Recommended after post-installation
-
-* Connect via [SSH](ssh): **root@expemple.tld** (password: **yunohost**)
-* Change root password: `passwd root` or use [SSH authentication via key](security)
-* Upgrade system: `apt-get update && apt-get dist-upgrade && cubian-update`
+<a class="btn btn-lg btn-default" href="/postinstall">Post-install</a>
 
 ---
 
-### Create a YunoHost image for Cubieboard 1, 2 or 3
-* **[Scripts for Cubian](https://github.com/M5oul/Yunocubian)**
-* A Cubieboard Debian 7/8 image compatible with YunoHost:
-    * [ARMbian](http://www.igorpecovnik.com/2013/12/24/cubietruck-debian-wheezy-sd-card-image/)
+#### Recommended after post-installation
+* Use [SSH authentication via key](security)
+
+#### See also
+* [Scripts to install YunoHost on Cubian](https://github.com/M5oul/Yunocubian)
+* Images of Cubieboard Debian 7/8 compatible with YunoHost:
     * [Cubian](http://cubian.org/)
     * [Cubieez](http://www.cubieforums.com/index.php?topic=442.0)
 
