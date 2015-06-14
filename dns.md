@@ -26,7 +26,7 @@ You have several choices here. Note that you can mix and match solutions if you 
 **This is the recommended option if you are just starting out with self-hosting.**
 
 2. You can use the DNS service offered by your **registrar** (Gandi, NameCheap, BookMyName or others) to configure your domain name. Here is the [standard DNS configuration](/dns_config).    
-You can also check out these pages for specific registrar documentation: [OVH](/OVH), [Gandi](/Gandi), [BookMyName](/BookMyName)
+You can also check out these pages for specific [registar](/registar_en) documentation: [OVH](https://www.ovh.co.uk/index.xml), [Gandi](http://gandi.net), [NameCheap](http://namecheap.com) or [BookMyName](http://bookmyname.com).
 
 **Warning**: If you choose this option, you will have more configuration possibilities, but nothing will be done for you. For example, if you want to use `webmail.my-server.org`, you must add it manually to the DNS records with your registrar.
 
