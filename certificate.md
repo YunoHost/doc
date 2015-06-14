@@ -72,12 +72,12 @@ Depends on the CA, intermediate certificates and root have to be downloaded.
 
 Intermediate certificates and root must be merged with certificates obtained to create a unified chain certificates.
 
-If you use a root certificate (StartSSL) :
+If you use a root certificate (Cacert):
 
 ```bash
 cat ae_certs/ssl.crt ae_certs/intermediate_ca.pem ae_certs/ca.pem | sudo tee crt.pem```
 
-If you use only an intermediate certificate.
+If you use only an intermediate certificate (StartSSL).
 
 ```bash
 cat ae_certs/ssl.crt ae_certs/intermediate_ca.pem | sudo tee crt.pem```
