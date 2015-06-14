@@ -99,7 +99,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [TagSpaces](http://www.tagspaces.org/) | scith | <div class="inprogress"/> | https://github.com/scith/tagspaces_ynh | Manage files using tags |
 | Tor Client | Bleuchtang | <div class="ready"/> | https://github.com/labriqueinternet/torclient_ynh| Tor Client for [the Brick](/install_brick) |
 | [Tor Relay](https://www.torproject.org/docs/tor-doc-relay.html.en) | matlink | <div class="inprogress"/> | https://github.com/matlink/torrelay_ynh | Tor node |
-| [uCoin](http://ucoin.io/) | Moul | <div class="inprogress"/> | https://github.com/M5oul/ucoin_ynh | uCoin node:<br>free monetary system  |
+| [uCoin](http://ucoin.io/) | Moul | <div class="inprogress"/> | https://github.com/ucoin-io/ucoin_ynh | uCoin node:<br>free monetary system  |
 | VPN Client | Jvaubourg | <div class="ready"/> | https://github.com/labriqueinternet/vpnclient_ynh | VPN Client for [the Brick](/install_brick) |
 | [Webapp Multi](https://github.com/polytan02/webapp_multi_ynh) | polytan02 | <div class="ready"/> | https://github.com/polytan02/webapp_multi_ynh | Multi instances & multi domains web app without FTP support |
 | [Webmin](http://webmin.com) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/webmin_ynh | Web-based system configuration tool |
