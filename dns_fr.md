@@ -31,7 +31,7 @@ Plusieurs choix s’offrent à vous. Notez que vous pouvez cumuler ces solutions
 **C’est la méthode recommandée si vous débutez.**
 
 2. Vous pouvez utiliser le service de DNS de votre **registar** (Gandi, OVH, BookMyName ou autre) pour configurer vos noms de domaine. Voici la [configuration DNS standard](/dns_config_fr).    
-Vous pouvez également consulter les documentations spécifiques à ces différents registrar : [OVH](/OVH_fr), [Gandi](/Gandi_fr), [BookMyName](/BookMyName_fr).
+Vous pouvez également consulter les documentations spécifiques à ces différents [bureaux d’enregistrement](/registar_fr) : [Gandi](http://gandi.net), [OVH](/OVH_fr) ou [BookMyName](http://bookmyname.com).
 
 **Attention** : Si vous choisissez ce mode de fonctionnement, vous aurez plus de flexibilité, mais rien ne sera automatique. Par exemple si vous souhaitez utiliser `webmail.mon-serveur.org`, vous devrez l’ajouter manuellement chez votre registar.
 
