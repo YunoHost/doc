@@ -10,7 +10,7 @@ For example, Neutrinet needs the `topology subnet` directive (for Windows compat
 ## Download ISO
 
 Go to http://repo.labriqueinter.net/ 
-(get latest http://repo.labriqueinter.net/labriqueinternet_latest.img.tar.gz)
+(get latest http://repo.labriqueinter.net/labriqueinternet_latest_wheezy.img.tar.gz)
 
 Save ISO to to SD card using `dd`:
 
