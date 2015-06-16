@@ -11,7 +11,7 @@ Chez Neutrinet, nous avons par exemple besoin de la directive `topology subnet` 
 ## Télécharger l’image
 
 Sur http://repo.labriqueinter.net/ 
-(prendre la latest http://repo.labriqueinter.net/labriqueinternet_latest.img.tar.gz)
+(prendre la latest http://repo.labriqueinter.net/labriqueinternet_latest_wheezy.img.tar.gz)
 
 Faire un `dd` de l'image sur la carte SD a destination :
 
