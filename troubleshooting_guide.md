@@ -130,7 +130,7 @@ This is the log created at the YunoHost install. If you have issue installing Yu
 
 This list is not exhaustive. Furthermore, some app may put their logs in `/var/log` too. Slapd logs are unfortunately in `/var/log/syslog`.
 
-## RAM
+## RAM usage
 Issues can be caused by a lack of RAM. To check your memory usage, do the following command:
 ```bash
 free -m
@@ -338,6 +338,8 @@ This will be specific to the app.
 ### Other (Go, Java...)
 Webapp can take multiple form an can be deployed in many way. Go app have usually an integrated webserver, Java can be deployed with Tomcat or equivalent… There is no way to be exhaustive here, but most of the time your deployment option will expose an http endpoint that you can pass to Nginx via proxy_pass.
 
-* **Note on Apache**: never install Apache or a package withe Apache as dependency, this will probably break your YunoHost intance.
+##### Note on Apache
+Never install Apache or a package withe Apache as dependency, this will probably break your YunoHost intance.
 
-* **Note on https**: sometimes the webserver integrated with the app is capable to serve https on its own, it's right to use this when you have one application on one server and you don't want to install Nginx for intance. But in YunoHost case, Nginx who serve https and it simplify configuration. So when passing the local URL to Nginx via proxy_pass, use http, nginx will https the thing to the open world later.
+##### Note on https
+Sometimes the webserver integrated with the app is capable to serve https on its own, it's right to use this when you have one application on one server and you don't want to install Nginx for intance. But in YunoHost case, Nginx who serve https and it simplify configuration. So when passing the local URL to Nginx via proxy_pass, use http, nginx will https the thing to the open world later.
