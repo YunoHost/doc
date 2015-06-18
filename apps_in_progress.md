@@ -21,7 +21,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | --- | --- | --- | --- | --- |
 | [20euros](https://jatekos101.github.io/20euros/) | Moul | <div class="ready"/> | https://github.com/M5oul/20euros_ynh | Clone of 2048 game with euros |
 | [243](https://hgentry.github.io/81/) | Moul | <div class="ready"/> | https://github.com/M5oul/243_ynh | Clone of 2048 game: goal reach 243 |
-| Ajax google apis | zamentur | <div class="ready"/> | https://github.com/zamentur/ajaxgoogleapis_ynh | A mirror of Google Apis |
+| Ajax google apis | zamentur | <div class="ready"/> | https://github.com/zamentur/ajaxgoogleapis_ynh | Google APIs mirror |
 | [Ampache](http://ampache.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/ampache_ynh | Web based audio/video streaming |
 | [BTSync](http://www.getsync.com/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/btsync_ynh | File synchronization tool  |
 | [Chtickynotes](https://github.com/chtixof/chtickynotes_ynh) | chtixof | <div class="ready"/> | https://github.com/chtixof/chtickynotes_ynh | A Post-it page |
@@ -36,6 +36,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Etherpad-Lite](http://etherpad.org) | beudbeud | <div class="ready"/> | https://github.com/abeudin/etherpadlite_ynh | Real-time collaborative document editing |
 | [FileBin](http://sebsauvage.net/wiki/doku.php?id=php:zerobin) | IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/filebin_ynh | Online filebin |
 | [Firefox Sync](https://www.mozilla.org/en-US/firefox/sync/) | beudbeud | <div class="ready"/> |https://github.com/abeudin/ffsync_ynh | Firefox synchronization server |
+| [FramaGames](http://framagames.org/) | polytan02 | <div class="ready"/> | https://github.com/polytan02/framagames_ynh | Set of games |
 | [FreshRSS](http://freshrss.org/) | plopoyop | <div class="ready"/> | https://github.com/plopoyop/freshrss_ynh | RSS reader |
 | [Friendica](http://friendica.com) | aymhce | <div class="inprogress"/> | https://github.com/aymhce/friendica_ynh | Social Communication Server |
 | FTP support for webapp | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/ftp_support_webapp_ynh | FTP support for webapp |
