@@ -36,6 +36,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Etherpad-Lite](http://etherpad.org) | beudbeud | <div class="ready"/> | https://github.com/abeudin/etherpadlite_ynh | Real-time collaborative document editing |
 | [FileBin](http://sebsauvage.net/wiki/doku.php?id=php:zerobin) | IsserTerrus | <div class="ready"/> | https://github.com/isserterrus/filebin_ynh | Online filebin |
 | [Firefox Sync](https://www.mozilla.org/en-US/firefox/sync/) | beudbeud | <div class="ready"/> |https://github.com/abeudin/ffsync_ynh | Firefox synchronization server |
+| [Framagames](http://framagames.org/) | Polytan02 | <div class="ready"/> | https://github.com/polytan02/framagames_ynh | Games from Framagames |
 | [FreshRSS](http://freshrss.org/) | plopoyop | <div class="ready"/> | https://github.com/plopoyop/freshrss_ynh | RSS reader |
 | [Friendica](http://friendica.com) | aymhce | <div class="inprogress"/> | https://github.com/aymhce/friendica_ynh | Social Communication Server |
 | FTP support for webapp | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/ftp_support_webapp_ynh | FTP support for webapp |
