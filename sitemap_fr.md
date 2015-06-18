@@ -48,6 +48,7 @@
             * [Free](/isp_free_fr)
         * [Administration web](/admin_fr)
         * [Sécurité](/security_fr)
+        * [Guide de dépannage](/troubleshooting_guide_en)
         * [Connexion à son serveur en ligne de commande avec SSH](/ssh_fr)
         * [Administration en ligne de commande avec la Moulinette](/moulinette_fr)
         * [Changer le mot de passe d'administration](/change_admin_password_fr)
