@@ -44,6 +44,7 @@
             * [Main configuration box](/isp_box_config)
         * [Web administration](/admin)
         * [Security](/security)
+        * [Troubleshooting guide](/troubleshooting_guide_en)
         * [Connect to your server with SSH](/ssh)
         * [Command line administration](/moulinette)
         * [Change administration password](/change_admin_password)
