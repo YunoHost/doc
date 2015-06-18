@@ -5,7 +5,7 @@ Ce document a pour but de vous apprendre à packager une application pour YunoHo
 ### Prérequis
 Pour packager une application, voici les prérequis :
 * Un compte sur un serveur git comme [GitHub](https://github.com/) pour pouvoir ensuite publier l’application ;
-* Maitriser un minimum `git`, le Shell et d’autres notions de programmation ;
+* Maîtriser un minimum `git`, le Shell et d’autres notions de programmation ;
 * Une [machine virtuelle ou sur un serveur distant](/install_fr) pour packager et tester son paquet.
 
 ### Contenu
@@ -13,12 +13,11 @@ Un paquet YunoHost est composé :
 
 * d’un `manifest.json`
 * d’un dossier `scripts`, composé de cinq scripts Shell `install`, `remove`, `upgrade`, `backup` et `restore`
-* de dossiers optionnels, contenant les `sources` ou la `conf`
-* de la `LICENSE` de votre paquet
-* d’une page de présentation de votre paquet contenu dans un `README.md`
+* de dossiers optionnels, contenant les `sources` ou de la `conf`
+* d’un fichier `LICENSE` contenant la licence du paquet
+* d’une page de présentation du paquet contenu dans un fichier `README.md`
 
 **[Paquet de base](https://github.com/opi/example_ynh)** : n'hésitez pas à vous en servir comme base de travail.
-
 
 ### Manifeste
 Le fichier `manifest.json` définit les constantes de l'application, un ensemble de valeurs dont YunoHost a besoin pour identifier l'application et l'installer correctement. Voici un exemple :
@@ -65,9 +64,9 @@ Le fichier `manifest.json` définit les constantes de l'application, un ensemble
 
 * **description** : la description complète de l'application. Vous pouvez la détailler comme bon vous semble. Uniquement le champs `en` (English) est requis, mais vous pouvez tout de même ajouter la traduction en français :)
 
-* **license** : la licence avec laquelle l'application est distribuée. Il ne s’agit pas de la license du paquet qui doit être mise dans le fichier `LICENSE`. Veuillez utiliser le nom abrégé de la licence, par exemple `GPL-3` pour la GNU General Public License version 3. Voici une [liste des abréviations standards](https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/#license-field).
+* **license** : la licence avec laquelle l'application est distribuée. Il ne s’agit pas de la license du paquet qui, elle, doit être mise dans le fichier `LICENSE`. Veuillez utiliser le nom abrégé de la licence, par exemple `GPL-3` pour la GNU General Public License version 3. Voici une [liste des abréviations standards](https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/#license-field).
 
-* **maintainer** : quelques informations à propos du mainteneur du paquet de l'application.
+* **maintainer** : informations à propos du mainteneur du paquet de l'application.
 
 * **multi_instance** : définit la possibilité de votre package à être installée plusieurs fois. Quand YunoHost essaie d'installer une seconde fois votre application, il remplaçera l’`id` dans votre script par `id__2`. Cela signifie que si voulez être `multi_instance`, vous devez mettre toutes les valeurs identifiantes dans les scripts.
 <br></br>**Par exemple** : dans le script roundcube, il faut nommer la base de donnée `roundcube`, le dossier d'installation `roundcube` et la configuration Nginx `roundcube`. De cette manière, la seconde installation de roundcube ne rentrera pas en conflit avec la première, et sera installée dans la base de donnée `roundcube__2`, dans le répertoire `roundcube__2`, et avec la configuration Nginx `roundcube__2`.
@@ -231,6 +230,7 @@ yunohost app install https://github.com/auteur/mon_paquet.git
 ### Publiez et demandez des tests de votre application
 * Demandez des tests et des retours sur votre application en publiant un [post sur le Forum](https://forum.yunohost.org/) avec la catégorie `App integration`.
 
-* [Ajoutez](/write_documentation_fr) votre application à [la liste des apps non officielles](https://yunohost.org/#/apps_in_progress_en).
+* [Ajoutez](/write_documentation_fr) votre application à [la liste des apps non officielles](https://yunohost.org/#/apps_in_progress_en) avec l’état du paquet : `Ready`, `In progress` ou `Not working`.
 
-* Demander l’[intégration officielle](http://app.yunohost.org) de son paquet.
+### Officialisation d’une application
+Pour qu’une application deviennent officielle, elle doit être suffisament testé, stable et fonctionner sous les architectures de processeurs 64 bits, 32 bits et ARM. Si ces conditions vous paraissent réuni, demandez l’[intégration officielle](http://app.yunohost.org) de votre application.
