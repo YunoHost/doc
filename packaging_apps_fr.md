@@ -139,7 +139,7 @@ La CLI [moulinette](/moulinette) fournit quelques outils pour rendre le packagin
 sudo yunohost app checkport <port>
 ```
 <blockquote>
-Cette commande vérifie le port et retourne une erreur si le port déjà utilisé.
+Cette commande vérifie le port et retourne une erreur si le port est déjà utilisé.
 </blockquote>
 
 <br>
@@ -221,7 +221,7 @@ Remarque : ça fonctionne aussi avec une URL Git :
 yunohost app install https://github.com/auteur/mon_paquet.git
 ```
 ### Ajoutez votre application à la liste des applications en cours d’avancement
-Vous pouvez ajouter votre application à [la liste _Work in progress_](https://yunohost.org/#/apps_en).
+Vous pouvez ajouter votre application à [la liste _Work in progress_](https://yunohost.org/#/apps_in_progress_en).
 
 ### Demander l’intégration de son application à la liste officielle
 Si vous le souhaitez vous pouvez proposer l'inclusion de l'application dans les applications officielles. Pour ce faire, il faut utiliser le bouton "New App Request" sur http://app.yunohost.org.
