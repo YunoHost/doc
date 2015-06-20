@@ -8,15 +8,19 @@ Un « **non** » peut entraîner des problèmes d’utilisation de votre serve
 
 ### France
 
-Tous les fournisseurs d’accès à Internet [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres) ont une politique favorable à l’auto-hébergement. 
+Tous les fournisseurs d’accès à Internet [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres) ont une politique favorable à l’auto-hébergement.
+* ✔ : oui
+* ✘ : non
 
-| Fournisseur d’accès | Box/ routeur | uPnP activable | [Port 25 ouvrable](email_fr) | [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | [IP fixe](/dns_dynamicip_fr) | IPv6 |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **[Free](/isp_free_fr)** | Freebox | oui (activé) | oui (fermé) | oui (désactivé) | oui | oui | oui |
-| **[SFR](/isp_sfr_fr)** | Neufbox | oui (activé) | oui (fermé) | oui et **non** | … | oui et **non** | oui |
-| **[Orange](/isp_orange_fr)** | Livebox | oui | **non** | **non** | **non** | **non** (Pro. uniquement) | oui |
-| **Bouygues Télécom** | Bbox | oui (activé) | oui | oui | **non** | oui | oui |
-| **Darty** | Dartybox | oui (activé) | oui | oui | **non** | oui | … |
+| Fournisseur d’accès | [Free](/isp_free_fr) | [SFR](/isp_sfr_fr) | [Orange](/isp_orange_fr) | Bouygues<br>Télécom | Darty |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| **Box/routeur** | Freebox | Neufbox | Livebox | Bbox | Dartybox |
+| **[UPnP](https://fr.wikipedia.org/wiki/Universal_Plug_and_Play)** | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **[Port 25 ouvrable](email_fr)**<br> (fermé par défaut) | ✔ | ✔ | ✘ | ✔ | ✔ |
+| **[Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning)** | ✔ | ✔/✘ | ✘ | ✔ | ✔ |
+| **[Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup)<br>personnalisable ** | ✔ | … | ✘ | ✘ | ✘ |
+| **[IP fixe](/dns_dynamicip_fr)** | ✔ | ✔/✘ | ✘ | ✔ | ✔ |
+| **[IPv6](https://fr.wikipedia.org/wiki/IPv6)** | ✔ | ✔ | ✔ | … | … |
 Pour une liste plus complète et précise, référez-vous à la très bonne documentation de [wiki.auto-hebergement.fr](http://wiki.auto-hebergement.fr/fournisseurs/fai#d%C3%A9tail_des_fai).
 
 **Astuce** : [FDN](http://www.fdn.fr) fournit des [VPN](http://www.fdn.fr/-VPN-.html) permettant de rapatrier une (ou plusieurs sur demande) IPv4 fixe et un /48 en IPv6 et ainsi “nettoyer” votre connexion si vous êtes chez l’un des FAI *limitants* du tableau ci-dessus.
