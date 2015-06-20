@@ -56,10 +56,10 @@
             * [Administration web](/admin_fr)
             * [Changer le mot de passe d'administration](/change_admin_password_fr)
         * [Courier électronique](email_fr)
-           * [Configuration un client email](email_configure_client_fr)
+           * [Configuration d’un client email](email_configure_client_fr)
            * [Migration emails](email_migration_fr)
            * [Formulaires pour enlever son adresse IP des listes noires](blacklist_forms_fr)
-           * [Mise en place de DKIM](dkim_fr)
+           * [Mettre en place DKIM](dkim_fr)
         * Certificats
             * [Ajouter un certificat d’une autorité](/certificate_fr)
             * [Régénérer le certificat auto-signé](/regenerate_certificate_fr)
