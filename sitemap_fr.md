@@ -56,8 +56,10 @@
             * [Administration web](/admin_fr)
             * [Changer le mot de passe d'administration](/change_admin_password_fr)
         * [Courier électronique](email_fr)
+           * [Configuration un client email](email_configure_client_fr)
+           * [Migration emails](email_migration_fr)
            * [Formulaires pour enlever son adresse IP des listes noires](blacklist_forms_fr)
-           * [DKIM](dkim_fr)
+           * [Mise en place de DKIM](dkim_fr)
         * Certificats
             * [Ajouter un certificat d’une autorité](/certificate_fr)
             * [Régénérer le certificat auto-signé](/regenerate_certificate_fr)
@@ -68,7 +70,7 @@
 
     * [Guide de l'utilisateur](/userdoc_fr)
         * [Interface utilisateur](user_interface)
-        * [Configurer un client email](/email_fr)
+        * [Configurer un client email](email_configure_client_fr)
         * [Utiliser la messagerie instantanée XMPP](/XMPP_fr)
         * [Applications officielles](/apps_fr)
            * [Baïkal](/app_baikal_fr)
