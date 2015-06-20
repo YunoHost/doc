@@ -11,12 +11,11 @@ Un « **non** » peut entraîner des problèmes d’utilisation de votre serve
 Tous les fournisseurs d’accès à Internet [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres) ont une politique favorable à l’auto-hébergement. 
 
 | Fournisseur d’accès | Box/ routeur | uPnP activable | [Port 25 ouvrable](email_fr) | [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | [IP fixe](/dns_dynamicip_fr) | IPv6 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **[Free](/isp_free_fr)** | Freebox | oui (activé) | oui (fermé) | oui (désactivé) | oui | oui | oui |
 | **[SFR](/isp_sfr_fr)** | Neufbox | oui (activé) | oui (fermé) | oui et **non** | … | oui et **non** | oui |
-| **[Orange](/isp_orange_fr)** | Livebox | oui | **non** | **non** | **non** | **non** (Pro. uniquement) | … |
-| **Bouygues Télécom** | Bbox | oui (activé) | oui | oui | **non** | oui | … |
-| **Numéricable** | … | oui | oui | … | **non** | **non** (Pro. uniquement) | … |
+| **[Orange](/isp_orange_fr)** | Livebox | oui | **non** | **non** | **non** | **non** (Pro. uniquement) | oui |
+| **Bouygues Télécom** | Bbox | oui (activé) | oui | oui | **non** | oui | oui |
 | **Darty** | Dartybox | oui (activé) | oui | oui | **non** | oui | … |
 Pour une liste plus complète et précise, référez-vous à la très bonne documentation de [wiki.auto-hebergement.fr](http://wiki.auto-hebergement.fr/fournisseurs/fai#d%C3%A9tail_des_fai).
 
@@ -25,6 +24,6 @@ Pour une liste plus complète et précise, référez-vous à la très bonne docu
 ### Belgique
 
 | Fournisseur d’accès | Box/ routeur | uPnP activable | [Port 25 ouvrable](email_fr)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | IP fixe |
-| --- | --- | --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Belgacom** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
 | **Scarlet** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
