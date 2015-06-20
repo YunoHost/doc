@@ -51,9 +51,11 @@
                 * [Command line administration](/moulinette)
             * [Web administration](/admin)
             * [Change administration password](/change_admin_password)
-        * Email
+        * [Email](email_en)
+           * [Configure email client](email_configure_client_en)
+           * [Migrate emails](email_migration_en)
            * [Forms to remove blacklisting of your IP address](blacklist_forms_en)
-           * [DKIM](dkim)
+           * [Use DKIM](dkim)
         * Certificates
             * [Add a certificate certified by an authority](/certificate)
             * [Regenerate self-signed certificate](/regenerate_certificate_en)
@@ -64,7 +66,7 @@
 
     * [User guide](/userdoc)
         * [User interface](user_interface)
-        * [Configure an email client](/email)
+        * [Configure email client](email_configure_client_en)
         * [Instant messaging usage](/XMPP)
         * [Official applications](/apps)
            * [Baikal](/app_baikal_en)
