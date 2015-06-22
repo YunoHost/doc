@@ -17,7 +17,7 @@ Un paquet YunoHost est composé :
 * d’un fichier `LICENSE` contenant la licence du paquet
 * d’une page de présentation du paquet contenu dans un fichier `README.md`
 
-**[Paquet de base](https://github.com/opi/example_ynh)** : n'hésitez pas à vous en servir comme base de travail.
+**[Paquet de base](https://github.com/YunoHost/example_ynh)** : n'hésitez pas à vous en servir comme base de travail.
 
 ### Manifeste
 Le fichier `manifest.json` définit les constantes de l'application, un ensemble de valeurs dont YunoHost a besoin pour identifier l'application et l'installer correctement. Voici un exemple :
