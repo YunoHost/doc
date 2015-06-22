@@ -17,7 +17,7 @@ A YunoHost package is composed of:
 * A `LICENSE` file containing the license of the package
 * A presentation page of your package in a `README.md` file
 
-**[A basic package](https://github.com/opi/example_ynh)**: feel free to use it as a framework.
+**[A basic package](https://github.com/YunoHost/example_ynh)**: feel free to use it as a framework.
 
 ### Manifest
 The `manifest.json` file defines the app's constants, a bunch of values that YunoHost needs to identify the app and install it correctly. It looks like this :
