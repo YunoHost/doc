@@ -93,7 +93,7 @@ This page lists few installation guides.
 
 <h1 style="font-weight: 100">On Debian</h1>
 
-If you have already installed **Debian 7** (wheezy) on a server, you are able to **[install YunoHost via script](/install_on_debian)**.
+If you have already installed **Debian 7** (Wheezy) or **8** (Jessie) on a server, you are able to **[install YunoHost via script](/install_on_debian)**.
 
 <a href="/install_on_debian"><img width=100 src="https://yunohost.org/images/debian-logo.png"></a>
 
