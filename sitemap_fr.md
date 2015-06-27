@@ -102,6 +102,7 @@
    * [Contributeurs](contribs_fr)
    * [Entraide - support](/support_fr)
    * [Blog](https://forum.yunohost.org/c/announcement)
+   * [Conférences](/conf_fr)
    * [Communication extérieure](communication_fr)
    * [Travail artistique](artworks_fr)
    * [Aide](/help_fr)
