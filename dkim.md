@@ -153,9 +153,10 @@ sudo service opendkim restart
 sudo service postfix restart
 ```
 
-To test if it is all working well (don't forget that the DNS propagation can take a bit of take…) you can simply send an email to check-auth@verifier.port25.com and a reply will be received. If everything works correctly you should see DKIM check: pass under Summary of Results.
+To test if it is all working well (don't forget that the DNS propagation can take a bit of take…) you can simply go to [mail-tester.com](http://www.mail-tester.com) and send an e-mail to the address indicated. Then follow the link and the result will appear.
 
-You can also go to http://www.mail-tester.com
+
+# SPF
 
 Lastly, don't forget to add a SPF key in your DNS such as:
 ```bash
