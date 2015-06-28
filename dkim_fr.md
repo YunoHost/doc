@@ -155,4 +155,4 @@ sudo service opendkim restart
 sudo service postfix restart
 ```
 
-Pour tester que tout fonctionne bien (n'oubliez pas que la propagation DNS peut prendre jusqu'à 24h...) vous pouvez tout simplement envoyer un email à check-auth@verifier.port25.com . Vous recevrez une réponse automatiquement. Si tout se passe bien, vous verrez DKIM check: pass dans la section Summary of Results.
+Pour tester que tout fonctionne bien (n'oubliez pas que la propagation DNS peut prendre jusqu'à 24h...) vous pouvez tout simplement vous rendre sur [mail-tester.com](http://www.mail-tester.com/), envoyer un courriel à l'adresse indiquée et cliquer pour voir le résultat.
