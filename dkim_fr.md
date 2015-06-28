@@ -157,8 +157,10 @@ Pour tester que tout fonctionne bien (n'oubliez pas que la propagation DNS peut 
 
 # SPF
 Enfin, n'oubliez pas d'ajouter une clé SPF dans votre [zone DNS](/dns_config_fr) (ou un champ TXT si SPF n'est pas disponible) :
-```bash
-DOMAIN.TLD 1800 TXT "v=spf1 a:DOMAIN.TLD mx ?all"
-```
 
+```bash
+DOMAIN.TLD 1800 TXT "v=spf1 a:DOMAIN.TLD ip4:<IPv4 publique du serveur> ip6:<IPv6 publique> mx ?all"
+ ``` 
+ 
 Pour rappel, le champ SPF indique que seule la machine utilisant l'adresse IP indiquée dans votre zone DNS est autorisée à envoyer des courriels.
+Si vous n'avez pas d'IPv6 sur votre serveur, supprimez simplement la section ip6:<…>
