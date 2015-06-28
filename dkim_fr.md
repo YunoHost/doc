@@ -1,24 +1,22 @@
-
 # DKIM
 
-Veuillez noter les points suivants :
+##### Notes :
 
-Ceci est la deuxième version de ce travail en cours concernant l'activation de DKIM et SPF dans YunoHost.
- 
-En attendant que tout ceci soit intégré nativement dans YunoHost, cela nécessitera une modification de la configuration de Postfix dans /etc/postfix/main.cf.
+* Ceci est la deuxième version de ce travail en cours concernant l'activation de [DKIM](https://fr.wikipedia.org/wiki/DomainKeys_Identified_Mail) et [SPF](https://fr.wikipedia.org/wiki/Sender_Policy_Framework) dans YunoHost.
+* Le DKIM et le SPF empêche le fait que des courriels puissent être envoyer avec votre nom de domaine à partir d’un autre serveur que le serveur légitime. Ceci évite le spam.
+* En attendant que tout ceci soit intégré nativement dans YunoHost, cela nécessitera une modification de la configuration de Postfix dans `/etc/postfix/main.cf`.
+* Pour fonctionner correctement, DKIM nécessite une modification de votre [zone DNS](/dns_config_fr). N'oubliez pas que la propagation de l'information DNS une fois modifiée peut prendre jusqu'à 24h !
 
-Pour fonctionner correctement, DKIM nécessite une modification de vos DNS. N'oubliez pas que la propagation de l'information DNS une fois modifiée peut prendre jusqu'à 24h !
+##### Sources :
+* Ce document a été initialement basé sur : http://sealedabstract.com/code/nsa-proof-your-e-mail-in-2-hours/ de Drew Crawford.
+* Cette 2ème révision s'appuie beaucoup sur : https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy from Popute Sebastian Armin
 
-Source : ce document a été initialement basé sur : http://sealedabstract.com/code/nsa-proof-your-e-mail-in-2-hours/ from Drew Crawford
+Dans la suite de ce document, replacez `DOMAIN.TLD` par votre propre nom de domaine.
 
-Source : cette 2ème révision s'appuie beaucoup sur : https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy from Popute Sebastian Armin
+Changement dans la 2nd révision :
 
-Dans la suite de ce document, replacez DOMAIN.TLD par votre propre nom de domaine.
-
-Changement dans la rev 2 :
-
-La config s'adapte très facilement à plusieurs noms de domaines simultanés.
-Mise à jour des paramètres de configuration avec la dernière version de opendkim disponible dans Debian 7.
+* La configuration s'adapte très facilement à plusieurs noms de domaines simultanés.
+* Mise à jour des paramètres de configuration avec la dernière version de OpenDKIM disponible dans Debian 7.
 
 Rentrons maintenant dans le cœur du sujet :
 ### Avec un script
@@ -155,4 +153,12 @@ sudo service opendkim restart
 sudo service postfix restart
 ```
 
-Pour tester que tout fonctionne bien (n'oubliez pas que la propagation DNS peut prendre jusqu'à 24h...) vous pouvez tout simplement envoyer un email à check-auth@verifier.port25.com . Vous recevrez une réponse automatiquement. Si tout se passe bien, vous verrez DKIM check: pass dans la section Summary of Results.
+Pour tester que tout fonctionne bien (n'oubliez pas que la propagation DNS peut prendre jusqu'à 24h...) vous pouvez tout simplement vous rendre sur [mail-tester.com](http://www.mail-tester.com/), envoyer un courriel à l'adresse indiquée et cliquer pour voir le résultat.
+
+# SPF
+Enfin, n'oubliez pas d'ajouter une clé SPF dans votre [zone DNS](/dns_config_fr) (ou un champ TXT si SPF n'est pas disponible) :
+```bash
+DOMAIN.TLD 1800 TXT "v=spf1 a:DOMAIN.TLD mx ?all"
+```
+
+Pour rappel, le champ SPF indique que seule la machine utilisant l'adresse IP indiquée dans votre zone DNS est autorisée à envoyer des courriels.
