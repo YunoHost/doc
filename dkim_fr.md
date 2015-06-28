@@ -156,3 +156,12 @@ sudo service postfix restart
 ```
 
 Pour tester que tout fonctionne bien (n'oubliez pas que la propagation DNS peut prendre jusqu'à 24h...) vous pouvez tout simplement envoyer un email à check-auth@verifier.port25.com . Vous recevrez une réponse automatiquement. Si tout se passe bien, vous verrez DKIM check: pass dans la section Summary of Results.
+
+# SPF
+
+Enfin, n'oubliez pas d'ajouter une clé SPF dans votre DNS (ou un champ TXT si SPF n'est pas disponible):
+```bash
+DOMAIN.TLD 1800 TXT "v=spf1 a:DOMAIN.TLD mx ?all"
+```
+
+Pour rappel le champ SPF indique que seule l'adresse IP de votre serveur est autorisée à envoyer des courriels.
