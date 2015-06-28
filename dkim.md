@@ -154,7 +154,8 @@ To test if it is all working well (don't forget that the DNS propagation can tak
 # SPF
 Lastly, don't forget to add a SPF key in your [DNS zone](/dns_config_en) such as:
 ```bash
-DOMAIN.TLD 300 TXT "v=spf1 a:DOMAIN.TLD mx ?all"
-```
+DOMAIN.TLD 300 TXT "v=spf1 a:DOMAIN.TLD ip4:<server public IPv4> ip6:<server public IPv6> mx ?all"
+ ```
 
 As reminder, the SPF field shows that the only machine using the IP address shows in your DNS zone are authorized to send emails.
+If you don't have IPv6 on your email server, simply delete le ip6:<...> section
