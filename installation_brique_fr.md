@@ -43,10 +43,10 @@ Vous êtes redirigé sur l'interface d'admin et là, créer un nouvel utilisateu
 
 Puis, installer les applications ("applications -> installer" et tout en bas mettre l'url vers le dépot GitHub) :
 
-- [HotSpot](https://github.com/labriqueinternet/hotspot_ynh) (https://github.com/labriqueinternet/hotspot_ynh)
-- [VPNCient](https://github.com/labriqueinternet/vpnclient_ynh) (https://github.com/labriqueinternet/vpnclient_ynh)
-- [TorClient](https://github.com/labriqueinternet/torclient_ynh) (https://github.com/labriqueinternet/torclient_ynh)
-- [PirateBox](https://github.com/labriqueinternet/piratebox_ynh) (https://github.com/labriqueinternet/piratebox_ynh)
+- [HotSpot](https://github.com/labriqueinternet/hotspot_ynh) (`https://github.com/labriqueinternet/hotspot_ynh`)
+- [VPNCient](https://github.com/labriqueinternet/vpnclient_ynh) (`https://github.com/labriqueinternet/vpnclient_ynh`)
+- [TorClient](https://github.com/labriqueinternet/torclient_ynh) (`https://github.com/labriqueinternet/torclient_ynh`)
+- [PirateBox](https://github.com/labriqueinternet/piratebox_ynh) (`https://github.com/labriqueinternet/piratebox_ynh`)
 
 
 Ensuite, aller sur `http://monurl.com/vpnadmin` (ou ce que vous avez choisi). Là :
