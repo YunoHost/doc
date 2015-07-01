@@ -10,13 +10,12 @@ Chez Neutrinet, nous avons par exemple besoin de la directive `topology subnet` 
 
 ## Télécharger l’image
 
-Sur http://repo.labriqueinter.net/ 
-(prendre la latest http://repo.labriqueinter.net/labriqueinternet_latest_wheezy.img.tar.gz)
+Sur http://repo.labriqueinter.net/ (prendre la latest http://repo.labriqueinter.net/labriqueinternet_latest_jessie.img.tar.xz)
 
 Faire un `dd` de l'image sur la carte SD a destination :
 
 ```bash
-sudo dd if=labriqueinternet_latest.img of=/dev/sdX
+sudo dd if=labriqueinternet_latest_jessie.img of=/dev/sdX
 ```
 
 Mettre la carte SD dans la boîte, puis la lancer et l'ayant branché sur le réseau locale avec un câble ethernet.
@@ -32,7 +31,7 @@ Ensuite, aller sur `yunohost.local` ou l'ip en ssh et mettre à jours les pkgs.
 apt-get update && apt-get dist-upgrade
 ```
 
-Puis y aller en http et accepter le certificat auto-signé, puis suivre les instructions de [postinstall](/postinstall).
+Puis y aller en http et accepter le certificat auto-signé, puis suivre les instructions de [postinstall](/postinstall.md).
 
 * choisir le nom de domaine
 * choisir un mot de passe administrateur

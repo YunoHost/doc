@@ -9,13 +9,12 @@ For example, Neutrinet needs the `topology subnet` directive (for Windows compat
 
 ## Download ISO
 
-Go to http://repo.labriqueinter.net/ 
-(get latest http://repo.labriqueinter.net/labriqueinternet_latest_wheezy.img.tar.gz)
+Go to http://repo.labriqueinter.net/ (get latest http://repo.labriqueinter.net/labriqueinternet_latest_jessie.img.tar.gz)
 
 Save ISO to to SD card using `dd`:
 
 ```bash
-sudo dd if=labriqueinternet_latest.img of=/dev/sdX
+sudo dd if=labriqueinternet_latest_jessie.img of=/dev/sdX
 ```
 
 Insert SD card into the box, plug in ethernet cable (to connect to local network) and turn it on.
@@ -30,7 +29,7 @@ Connect to `yunohost.local` or through SSH, using the IP adress and update packa
 apt-get update && apt-get dist-upgrade
 ```
 
-Then connect using https and accept the self signed certificate. Then follow instructions and proceed to [postinstall](/postinstall).
+Then connect using https and accept the self signed certificate. Then follow instructions and proceed to [postinstall](/postinstall.md).
 
 * Choose domain name
 * Choose administrator password
