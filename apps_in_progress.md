@@ -23,6 +23,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [243](https://hgentry.github.io/81/) | Moul | <div class="ready"/> | https://github.com/M5oul/243_ynh | Clone of 2048 game: goal reach 243 |
 | Ajax google apis | zamentur | <div class="ready"/> | https://github.com/zamentur/ajaxgoogleapis_ynh | Google APIs mirror |
 | [Ampache](http://ampache.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/ampache_ynh | Web based audio/video streaming |
+| [Adminer](http:/adminer.org/) | Fol | <div class="inprogress"/> | https://github.com/jesuisfol/adminer_ynh | Lightweight database administration tool |
 | [BTSync](http://www.getsync.com/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/btsync_ynh | File synchronization tool  |
 | [Chtickynotes](https://github.com/chtixof/chtickynotes_ynh) | chtixof | <div class="ready"/> | https://github.com/chtixof/chtickynotes_ynh | A Post-it page |
 | [COPS](http://cops.com) | lunarok | <div class="ready"/> | https://github.com/lunarok/cops_ynh | Frontend for Calibre library |
