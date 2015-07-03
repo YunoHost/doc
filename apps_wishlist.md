@@ -7,7 +7,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 [Edit this list](/write_documentation) to add your own favorite app, or learn to [package apps](/packaging_apps) yourself.
 
 * [10er10](https://github.com/dready92/10er10)
-* [adminer](http://www.adminer.org/)
 * [Ajenti](http://ajenti.org/)
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
 * [Bootstrap](http://getbootstrap.com/)
