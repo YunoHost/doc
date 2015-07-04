@@ -1,6 +1,8 @@
-# Introduction
+# Installation d'une Brique Internet
 
 *Instructions basées sur l'image **[labriqueinternet_04-06-2015_jessie.img](http://repo.labriqueinter.net/labriqueinternet_04-06-2015_jessie.img.tar.xz)** et écrites début Juillet par kload chez **Neutrinet**.*
+
+![brique](https://yunohost.org/images/thisisinternet.png)
 
 ## Prérequis
 
