@@ -118,8 +118,9 @@ topology subnet</code></pre>
 <img style="border-radius: 5px; border: 5px solid #eee; max-width: 800px" src="https://raw.githubusercontent.com/labriqueinternet/hotspot_ynh/master/screenshot.png" />
 </a></div>
 
-11. **TESTEY** : La Brique devrait être accessible via l’IP publique que sa connexion VPN lui procure. Si l’utilisateur a opté pour un nom de domaine en **.nohost.me**, patientez quelques minutes que son IP se propage sur le serveur DNS de YunoHost. Si l’utilisateur a opté pour son propre nom de domaine, c’est le moment de [configurer ses enregistrements DNS](/dns_config_fr) correctement chez son registrar.  
-Si tout se passe bien côté **hotspot**, Un réseau WiFi du nom choisi par l’utilisateur à l’étape 10 devrait être visible, et devrait vous router tout bien vers l’Internet. Il est possible de regarder l’IP avec laquelle on sort sur Internet ici : http://ip.yunohost.org (ou `curl ip.yunohost.org` depuis le serveur)
+11. **TESTEY** : La Brique devrait être accessible via l’IP publique que sa connexion VPN lui procure. Si l’utilisateur a opté pour un nom de domaine en **.nohost.me**, patienter quelques minutes que son IP se propage sur le serveur DNS de YunoHost. Si l’utilisateur a opté pour son propre nom de domaine, c’est le moment de [configurer ses enregistrements DNS](/dns_config_fr) correctement chez son registrar.  
+Si tout se passe bien côté **hotspot**, un réseau WiFi du nom choisi par l’utilisateur à l’étape 10 devrait être visible, et devrait vous router tout bien vers l’Internet.  
+Il est possible de regarder l’IP avec laquelle on sort sur Internet [ici](http://ip.yunohost.org) (ou via `curl ip.yunohost.org` depuis le serveur)
 
 ---
 
