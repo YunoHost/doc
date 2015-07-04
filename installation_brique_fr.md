@@ -30,7 +30,7 @@ L’ordre des étapes est important :-)
 sudo dd if=labriqueinternet_XX-XX-XXXX_jessie.img of=/dev/sdX bs=1M
 ```
 
-3. Mettre la carte SD dans une Brique, brancher le câble Ethernet et l’alimentation. Elle démarre normalement toute seule, et les LEDs du port Ethernet se mette à clignoter au bout de 10 secondes maximum.
+3. Mettre la carte SD dans une Brique, brancher le câble Ethernet et l’alimentation. Elle démarre normalement toute seule, et les LEDs du port Ethernet se mettent à clignoter au bout de 10 secondes maximum.
 <div class="alert alert-warning" markdown="1">
 Le premier démarrage peut mettre une grosse minute car la partition est redimensionnée et la board redémarrée automatiquement.
 </div>
@@ -74,7 +74,7 @@ Ajouter à la fin du fichier :
 **Note :** Il est possible de réaliser cette étape en ligne de commande via SSH en exécutant `yunohost tools postinstall`
 </div>
 
-4. Se connecter en SSH et changer le mot de passe *root* (potentiellement par le même mot de passe que l’administration pour éviter la complexité).
+4. Se connecter en SSH et changer le mot de passe **root** (potentiellement par le même mot de passe que l’administration pour éviter la complexité).
 ```bash
 ssh root@michu.nohost.me
 passwd root
@@ -100,9 +100,9 @@ Il faudra entrer un **nom d’utilisateur** sans majuscule/espace/tiret, un **no
 
 7. **Installer l’application VPN Client** : Se rendre dans **Applications** > **Installer**, et entrer `https://github.com/labriqueinternet/vpnclient_ynh` dans le champs **URL** du formulaire **Installer une application personnalisée** tout en bas de la page.
 
-8. (optionnel) **Restreindre l`accès à l’application VPN Client** : Se rendre dans **Applications** > **VPN Client** > **Accès** et sélectionner l’utilisateur précédemment créé, de sorte que les futurs potentiels nouveaux utilisateurs ne pourront pas modifier les paramètres d’accès VPN.
+8. (optionnel) **Restreindre l`accès à l’application VPN Client** : Se rendre dans **Applications** > **VPN Client** > **Accès** et sélectionner l’utilisateur précédemment créé, de sorte que les futurs potentiels nouveaux utilisateurs ne puissent pas modifier les paramètres d’accès VPN.
 
-9. **Configurer l’application VPN Client** : Se connecter à l’**interface utilisateur** (ici https://michu.nohost.me/yunohost/sso/) et entrer les identifiants de l’utilisateur précédemment créé. Vous devriez voir apparaître **VPN Client** dans votre liste d’application :
+9. **Configurer l’application VPN Client** : Se connecter à l’**interface utilisateur** (ici https://michu.nohost.me/yunohost/sso/) et entrer les identifiants de l’utilisateur précédemment créé. L’application **VPN Client** devrait apparaître dans la liste d’application :
 <div><a title="screenshot_vpnclient" target="_blank" href="https://raw.githubusercontent.com/labriqueinternet/vpnclient_ynh/master/screenshot.png">
 <img style="border-radius: 5px; border: 5px solid #eee; max-width: 800px" src="https://raw.githubusercontent.com/labriqueinternet/vpnclient_ynh/master/screenshot.png" />
 </a></div>  
@@ -141,7 +141,7 @@ rm /etc/cron.d/yunohost-dyndns
 
 * **S’assurer du nom de l’interface WiFi** : Lors du changement d’antenne WiFi (même si le modèle reste le même), il peut arriver que le nom de l’interface WiFi change, typiquement de `wlan0` à `wlan1`. Pour continuer à utiliser l’application **hotspot**, il faut se rendre sur l’interface web de configuration de l’application (étape 10) et mettre à jour le **Device**.
 
-* **Ajouter un CRON de restart du service VPN** : Selon vos paramètres VPN client et serveur, il peut arriver que la connexion soit instable, et que le client VPN tombe de temps en temps. Pour s’assurer qu’il redémarrera automatiquement, une bonne méthode *quick'n'dirty* et de tester que le service tourne et de le redémarrer dans le cas contraire :
+* **Ajouter un CRON de restart du service VPN** : Selon les paramètres VPN client et serveur, il peut arriver que la connexion soit instable, et que le client VPN tombe de temps en temps. Pour s’assurer qu’il redémarrera automatiquement, une bonne méthode *quick'n'dirty* et de tester que le service tourne et de le redémarrer dans le cas contraire :
 ```bash
 echo "* * * * * /usr/bin/pgrep openvpn || systemctl restart ynh-vpnclient" > /etc/cron.d/restart-vpn
 ```
