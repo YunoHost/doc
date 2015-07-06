@@ -146,9 +146,41 @@ rm /etc/cron.d/yunohost-dyndns
 echo "* * * * * /usr/bin/pgrep openvpn || systemctl restart ynh-vpnclient" > /etc/cron.d/restart-vpn
 ```
 
-* **Ajouter un CRON de restart du service Amavisd** : il peut arriver, notamment lorsque la Brique sature en RAM, que le service Amavisd s’arrête. Même *workaround* que pour le client VPN :
+* **Arrêter le service Amavis** : Amavis est un antivirus qui s’occupe de regarder si les pièces jointes des emails ne sont pas vérolées. Il est très lourd et tombe souvent en panne sur des petites machines comme la Brique. Pour arrêter Amavis, éditer le fichier `/etc/postfix/main.cf` et commenter la ligne 90 (normalement) :
 ```bash
-echo "0,30 * * * * netstat -lntp | grep -q 10024 || systemctl restart amavis" > /etc/cron.d/restart-amavis
+#content_filter = amavis:[127.0.0.1]:10024
+```
+Éditer également le fichier `/etc/postfix/master.cf` pour y commenter les lignes relatives à Amavis, vers les lignes 119-122:
+```bash
+#amavis unix    -       -       -       -       2     smtp
+#     -o smtp_data_done_timeout=1200
+#     -o smtp_send_xforward_command=yes
+#     -o smtp_tls_note_starttls_offer=no
+```
+Une fois ces éditions effectuées, redémarrer le service postfix et arrêter le service amavis :
+```bash
+systemctl restart postfix
+systemctl stop amavis
+systemctl disable amavis
+```
+
+* **Arrêter le service postgrey** : Postgrey est un méchanisme antivirus qui est assez peu efficace, et surtout assez pénible. Il refuse les emails en premier lieu lorsque qu’ils proviennent d’une source inconnue. Un serveur email de spam ne fait pas toujours l’effort de renvoyer le spam une seconde fois. Pour arrêter postgrey, il faut éditer le fichier `/etc/postfix/main.cf` et commenter la ligne relative à postgrey (ligne 132) :
+```bash
+smtpd_recipient_restrictions =
+    permit_mynetworks,
+    permit_sasl_authenticated,
+    reject_non_fqdn_recipient,
+    reject_unknown_recipient_domain,
+    reject_unauth_destination,
+    check_policy_service unix:private/policy-spf
+#    check_policy_service inet:127.0.0.1:10023
+    permit
+```
+Une fois le fichier éditer, redémarrer le service postfix, et désactiver postgrey :
+```bash
+systemctl restart postfix
+systemctl stop postgrey
+systemctl disable postgrey
 ```
 
 * **Mettre à jour la configuration SSH** : par défaut, la connexion en tant que **root** est possible sur la Brique. Pour ne garder que la connexion en tant qu’**admin** (qui est sudoer), il convient d’éditer le `/etc/ssh/sshd_confg` et de remplacer passer **PermitRootLogin** à **without-password**.
