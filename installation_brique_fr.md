@@ -148,7 +148,7 @@ echo "* * * * * /usr/bin/pgrep openvpn || systemctl restart ynh-vpnclient" > /et
 
 * **Ajouter un CRON de restart du service Amavisd** : il peut arriver, notamment lorsque la Brique sature en RAM, que le service Amavisd s’arrête. Même *workaround* que pour le client VPN :
 ```bash
-echo "0,30 * * * * /usr/bin/pgrep -u amavis amavi || systemctl restart amavis" > /etc/cron.d/restart-amavis
+echo "0,30 * * * * netstat -lntp | grep -v 10024 || systemctl restart amavis" > /etc/cron.d/restart-amavis
 ```
 
 * **Mettre à jour la configuration SSH** : par défaut, la connexion en tant que **root** est possible sur la Brique. Pour ne garder que la connexion en tant qu’**admin** (qui est sudoer), il convient d’éditer le `/etc/ssh/sshd_confg` et de remplacer passer **PermitRootLogin** à **without-password**.
