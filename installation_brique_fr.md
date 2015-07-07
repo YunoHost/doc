@@ -35,7 +35,7 @@ sudo dd if=labriqueinternet_XX-XX-XXXX_jessie.img of=/dev/sdX bs=1M
 Le premier démarrage peut mettre une grosse minute car la partition est redimensionnée et la board redémarrée automatiquement.
 </div>
 
-4. Récupérer l’adresse IP locale de la Brique, soit avec une commande comme `nmap -T4 -sP 192.168.x.0/24`, soit via l'interface du routeur listant les clients DHCP, soit en branchant un écran en HDMI à la Brique.
+4. Récupérer l’adresse IP locale de la Brique, soit avec une commande comme `arp-scan --local | grep -P '\t02'`, soit via l'interface du routeur listant les clients DHCP, soit en branchant un écran en HDMI à la Brique. Pour info, l'adresse MAC des boards A20-OLinuXino-LIME commence par `02`.
 <div class="alert alert-info" markdown="1">
 Admettons que l’adresse IP locale de la Brique soit **192.168.4.2**
 </div>
@@ -143,7 +143,7 @@ rm /etc/cron.d/yunohost-dyndns
 
 * **Ajouter un CRON de restart du service VPN** : selon les paramètres VPN client et serveur, il peut arriver que la connexion soit instable, et que le client VPN tombe de temps en temps. Pour s’assurer qu’il redémarrera automatiquement, une bonne méthode *quick'n'dirty* et de tester que le service tourne et de le redémarrer dans le cas contraire :
 ```bash
-echo "* * * * * /usr/bin/pgrep openvpn || systemctl restart ynh-vpnclient" > /etc/cron.d/restart-vpn
+echo "* * * * * root /sbin/ifconfig tun0 > /dev/null || systemctl restart ynh-vpnclient" > /etc/cron.d/restart-vpn
 ```
 
 * **Arrêter le service Amavis** : Amavis est un antivirus qui s’occupe de regarder si les pièces jointes des emails ne sont pas vérolées. Il est très lourd et tombe souvent en panne sur des petites machines comme la Brique. Pour arrêter Amavis, éditer le fichier `/etc/postfix/main.cf` et commenter la ligne 90 (normalement) :
