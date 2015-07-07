@@ -89,7 +89,7 @@ cat > /usr/share/yunohost/hooks/post_user_create/06-create_userdir <<EOF
 user=\$1
 sudo mkdir -p /var/mail/\$user
 sudo chown -hR vmail:mail /var/mail/\$user
-mkhomedir_helper \$user
+/sbin/mkhomedir_helper \$user
 EOF
 ```
 
