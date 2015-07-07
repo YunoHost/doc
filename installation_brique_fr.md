@@ -146,7 +146,8 @@ rm /etc/cron.d/yunohost-dyndns
 echo "* * * * * root /sbin/ifconfig tun0 > /dev/null || systemctl restart ynh-vpnclient" > /etc/cron.d/restart-vpn
 ```
 
-* **Arrêter le service Amavis** : Amavis est un antivirus qui s’occupe de regarder si les pièces jointes des emails ne sont pas vérolées. Il est très lourd et tombe souvent en panne sur des petites machines comme la Brique. Pour arrêter Amavis, éditer le fichier `/etc/postfix/main.cf` et commenter la ligne 90 (normalement) :
+* **Arrêter le service Amavis** : *(**EDIT**: en fait Amavis est branché à SpamAssassin, donc ça enlève l'antispam, ce qui est pénible)*  
+Amavis est un antivirus qui s’occupe de regarder si les pièces jointes des emails ne sont pas vérolées. Il est très lourd et tombe souvent en panne sur des petites machines comme la Brique. Pour arrêter Amavis, éditer le fichier `/etc/postfix/main.cf` et commenter la ligne 90 (normalement) :
 ```bash
 #content_filter = amavis:[127.0.0.1]:10024
 ```
@@ -176,11 +177,9 @@ smtpd_recipient_restrictions =
 #    check_policy_service inet:127.0.0.1:10023
     permit
 ```
-Une fois le fichier éditer, redémarrer le service postfix, et désactiver postgrey :
+Une fois le fichier éditer, redémarrer le service postfix :
 ```bash
 systemctl restart postfix
-systemctl stop postgrey
-systemctl disable postgrey
 ```
 
 * **Mettre à jour la configuration SSH** : par défaut, la connexion en tant que **root** est possible sur la Brique. Pour ne garder que la connexion en tant qu’**admin** (qui est sudoer), il convient d’éditer le `/etc/ssh/sshd_confg` et de remplacer passer **PermitRootLogin** à **without-password**.
