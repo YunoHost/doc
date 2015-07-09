@@ -23,7 +23,7 @@ L’ordre des étapes est important :-)
 
 ## Étapes préliminaires
 
-1. Télécharger l’image à partir de https://repo.labriqueinter.net, valider son checksum.
+1. Télécharger l’image à partir de https://repo.labriqueinter.net, valider son checksum, puis la décompresser.
 
 2. Copier l'image sur la carte à l'aide de `dd` (la commande, pas le patron du bistro d’en face)
 ```bash
