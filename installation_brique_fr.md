@@ -7,7 +7,7 @@
 ## Prérequis
 
 Une **Brique Internet complète**, soit :
-* Une board [A20-OLinuXino-LIME](https://www.olimex.com/Products/OLinuXino/A20/A20-OLinuXino-LIME/open-source-hardware)
+* Une board [A20-OLinuXino-LIME](https://www.olimex.com/Products/OLinuXino/A20/A20-OLinuXino-LIME/open-source-hardware) ou [A20-OLinuXino-LIME2](https://www.olimex.com/Products/OLinuXino/A20/A20-OLinuXino-LIME2/open-source-hardware)
 * Une carte microSD (on utilise des [Trasncend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO) pour des raisons de performance/stabilité)
 * Une antenne WiFi [MOD-WIFI-R5370-ANT](https://www.olimex.com/Products/USB-Modules/MOD-WIFI-R5370-ANT/) (seule version testée jusqu’à présent chez nous)
 * Un adaptateur secteur pour alimenter la brique ([chinois](https://www.olimex.com/Products/Power/SY0605E-CHINA/) ou [européen](https://www.olimex.com/Products/Power/SY0605E/)). L’alimentation via USB semble peu stable.
@@ -30,21 +30,29 @@ L’ordre des étapes est important :-)
 sudo dd if=labriqueinternet_XX-XX-XXXX_jessie.img of=/dev/sdX bs=1M
 ```
 
-3. Mettre la carte SD dans une Brique, brancher le câble Ethernet et l’alimentation. Elle démarre normalement toute seule, et les LEDs du port Ethernet se mettent à clignoter au bout de 10 secondes maximum.
+3. **Uniquement pour le modèle LIME2** : Monter la carte SD et changer le lien de base donnée des pilotes dans `/boot` :
+```bash
+sudo mount /dev/sdX1 /mnt
+cd /mnt/boot/
+sudo rm board.dtb
+sudo ln -sf /boot/dtb/sun7i-a20-olinuxino-lime2.dtb board.dtb
+```
+
+4. Mettre la carte SD dans une Brique, brancher le câble Ethernet et l’alimentation. Elle démarre normalement toute seule, et les LEDs du port Ethernet se mettent à clignoter au bout de 10 secondes maximum.
 <div class="alert alert-warning" markdown="1">
 Le premier démarrage peut mettre une grosse minute car la partition est redimensionnée et la board redémarrée automatiquement.
 </div>
 
-4. Récupérer l’adresse IP locale de la Brique, soit avec une commande comme `arp-scan --local | grep -P '\t02'`, soit via l'interface du routeur listant les clients DHCP, soit en branchant un écran en HDMI à la Brique. Pour info, l'adresse MAC des boards A20-OLinuXino-LIME commence par `02`.
+5. Récupérer l’adresse IP locale de la Brique, soit avec une commande comme `arp-scan --local | grep -P '\t02'`, soit via l'interface du routeur listant les clients DHCP, soit en branchant un écran en HDMI à la Brique. Pour info, l'adresse MAC des boards A20-OLinuXino-LIME commence par `02`.
 <div class="alert alert-info" markdown="1">
 Admettons que l’adresse IP locale de la Brique soit **192.168.4.2**
 </div>
 
-5. Se connecter en SSH en root à la Brique, le mot de passe est **olinux** par défaut. Le changer par un mot de passe temporaire à modifier avec l’utilisateur par la suite.
+6. Se connecter en SSH en root à la Brique, le mot de passe est **olinux** par défaut. Le changer par un mot de passe temporaire à modifier avec l’utilisateur par la suite.
 ```bash
 ssh root@192.168.4.2
 ```
-6. Mettre à jour le système (environ 10 minutes), et pré-installer les paquets qui seront nécessaires aux applications **vpnclient** et **hotspot** (comme ça c'est fait).
+7. Mettre à jour le système (environ 10 minutes), et pré-installer les paquets qui seront nécessaires aux applications **vpnclient** et **hotspot** (comme ça c'est fait).
 ```bash
 apt-get update && apt-get upgrade
 apt-get install openvpn sipcalc hostapd iw dnsmasq firmware-linux-free firmware-linux-nonfree \ firmware-realtek firmware-ralink
@@ -143,7 +151,7 @@ rm /etc/cron.d/yunohost-dyndns
 
 * **Ajouter un CRON de restart du service VPN** : selon les paramètres VPN client et serveur, il peut arriver que la connexion soit instable, et que le client VPN tombe de temps en temps. Pour s’assurer qu’il redémarrera automatiquement, une bonne méthode *quick'n'dirty* et de tester que le service tourne et de le redémarrer dans le cas contraire :
 ```bash
-echo "* * * * * root /sbin/ifconfig tun0 > /dev/null || systemctl restart ynh-vpnclient" > /etc/cron.d/restart-vpn
+echo "* * * * * root /sbin/ifconfig tun0 > /dev/null 2>&1 || systemctl restart ynh-vpnclient" > /etc/cron.d/restart-vpn
 ```
 
 * **Arrêter le service Amavis** : *(**EDIT**: en fait Amavis est branché à SpamAssassin, donc ça enlève l'antispam, ce qui est pénible)*  
