@@ -13,6 +13,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Browsepass](http://techualization.blogspot.de/2013/09/introducing-browsepass-keepass-on-web.html)
 * [Caliopen](https://www.caliopen.org/)
 * [CardDavMate](https://www.inf-it.com/open-source/clients/carddavmate/)
+* [cgit](http://git.zx2c4.com/cgit/about/)
 * [CumulusClips](http://cumulusclips.org/)
 * [DemocracyOS](http://democracyos.org/)
 * [Discourse](http://discourse.org/)
