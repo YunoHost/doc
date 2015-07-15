@@ -55,7 +55,7 @@ ssh root@192.168.4.2
 7. Mettre à jour le système (environ 10 minutes), et pré-installer les paquets qui seront nécessaires aux applications **vpnclient** et **hotspot** (comme ça c'est fait).
 ```bash
 apt-get update && apt-get upgrade
-apt-get install openvpn sipcalc hostapd iw dnsmasq firmware-linux-free firmware-linux-nonfree \ firmware-realtek firmware-ralink
+apt-get install openvpn sipcalc hostapd iw dnsmasq firmware-linux-free firmware-linux-nonfree firmware-realtek firmware-ralink
 ```
 
 ---
