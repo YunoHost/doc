@@ -37,6 +37,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Inbox](https://www.inboxapp.com/)
 * [InfCloud](https://www.inf-it.com/open-source/clients/infcloud/)
 * [Jitsi Meet](https://github.com/jitsi/jitsi-meet)
+* [Joomla!](https://www.joomla.org/)
 * [jsFiddle](http://jsbin.com/help/2-second-setup)
 * [Kaiwa](http://getkaiwa.com/)
 * [Known](https://withknown.com/)
