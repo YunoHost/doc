@@ -99,6 +99,7 @@
    * [Journal des modifications v.2.0](/changelog_2_0_en)
    * [Journal des modifications v.2.2](/changelog_2_2_en)
    * [Feuille de route](/roadmap_en)
+   * [Foire aux questions](/faq_fr)
    * [Contributeurs](contribs_fr)
    * [Entraide - support](/support_fr)
    * [Blog](https://forum.yunohost.org/c/announcement)
