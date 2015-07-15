@@ -9,4 +9,3 @@ Les paquets qui composent YunoHost sont sous licence libre GNU AGPL v.3.
 YunoHost est basé sur Debian, donc sur les licences des éléments sur lequels Debian est basé.
 
 Les applications et les packages d’applications ont leurs licences respectives.
-
