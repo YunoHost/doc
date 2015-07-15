@@ -94,6 +94,7 @@
    * [Changelog v.2.0](/changelog_2_0_en)
    * [Changelog v.2.2](/changelog_2_2_en)
    * [Roadmap](/roadmap)
+   * [Frequently asked questions](/faq_en)
    * [Contributors](contribs)
    * [Support](/support_en)
    * [Art Works](artworks_en)
