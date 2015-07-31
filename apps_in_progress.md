@@ -99,7 +99,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Subsonic](http://subsonic.org) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/subsonic_ynh | Web-based media server |
 | [Syncthing](https://syncthing.net/) | tuxmouraille | <div class="inprogress"/> | https://github.com/tuxmouraille/syncthing_ynh | Sync and encrypted service |
 | [TagSpaces](http://www.tagspaces.org/) | scith | <div class="inprogress"/> | https://github.com/scith/tagspaces_ynh | Manage files using tags |
-| [Telegram](http://www.telegram.org/) | Cyp | <div class="ready"/> |  https://github.com/magikcypress/telegram_ynh | a new era of messaging |
+| [Telegram](http://www.telegram.org/) | Cyp | <div class="inprogress"/> |  https://github.com/magikcypress/telegram_ynh | a new era of messaging |
 | Tor Client | Bleuchtang | <div class="ready"/> | https://github.com/labriqueinternet/torclient_ynh| Tor Client for [the Brick](/install_brick) |
 | [Tor Relay](https://www.torproject.org/docs/tor-doc-relay.html.en) | matlink | <div class="inprogress"/> | https://github.com/matlink/torrelay_ynh | Tor node |
 | [uCoin](http://ucoin.io/) | Moul | <div class="inprogress"/> | https://github.com/ucoin-io/ucoin_ynh | uCoin node:<br>free monetary system  |
