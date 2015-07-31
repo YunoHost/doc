@@ -29,6 +29,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [COPS](http://cops.com) | lunarok | <div class="ready"/> | https://github.com/lunarok/cops_ynh | Frontend for Calibre library |
 | [Coquelicot](https://coquelicot.potager.org/) | Moul | <div class="inprogress"/> | https://github.com/M5oul/coquelicot_ynh | “One-click” file sharing focused on users’ privacy |
 | [Couchpotato](https://couchpota.to/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/couchpotato_ynh | PVR for Usenet and torrents |
+| [Covoiturage](https://github.com/SebGit/covoiturage-libre) | ljf | <div class="ready"/> | https://git.framasoft.org/ljf/covoiturage_ynh | Car sharing app (french only) |
 | [Cubiks-2048](https://kshitij-banerjee.github.io/Cubiks-2048/) | Moul | <div class="ready"/> | https://github.com/M5oul/Cubiks-2048_ynh | Clone of 2048 game in 3D |
 | Custom Webapp (Multi instance) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/my_webapp_ynh |Custom Webapp |
 | [Diaspora](http://diasporafoundation.org) | aymhce | <div class="inprogress"/> | https://github.com/aymhce/diaspora_ynh | Distributed social networking service |
