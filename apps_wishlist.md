@@ -74,7 +74,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [SIP](https://en.wikipedia.org/wiki/List_of_SIP_software#Free_and_open-source_license)
 * [Sonerezh](https://github.com/Sonerezh)
 * [Streisand](https://github.com/jlund/streisand)
-* [SVG-Edit](https://code.google.com/p/svg-edit/)
+* [SVG-Edit](https://github.com/SVG-Edit/svgedit)
 * [Sympa](http://www.sympa.org/)
 * [Syncthing](http://syncthing.net/)
 * [Taiga](https://taiga.io/)
