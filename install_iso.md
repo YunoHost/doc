@@ -15,7 +15,7 @@ You can reuse any computer with **256MB RAM or more**.
 * A **USB key** of at least 1GB capacity **OR** a standard **blank CD**
 * One of the latest **YunoHost ISO images**, available here (take the 32 bits one if you don't know which one to choose):
    <div>
-   <b>Torent:</b>
+   <b>Torrent:</b>
    <ul>
    <li>[32 bits](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent)</li>
    <li>[64 bits](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent)</li>
