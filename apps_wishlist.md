@@ -58,6 +58,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Only Office](http://onlyoffice.org/)
 * [Paperwork](http://paperwork.rocks)
 * [pdfy](https://github.com/joepie91/pdfy)
+* [Paperwork](http://paperwork.rocks)
 * [Pelican](http://blog.getpelican.com/)
 * [PHPList](http://www.phplist.com/)
 * [PHProxy](http://sourceforge.net/projects/poxy/)
