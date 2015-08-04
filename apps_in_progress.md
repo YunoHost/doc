@@ -54,6 +54,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Gogs](http://gogs.io/) | tostaki | <div class=" inprogress"/> | https://github.com/mbugeia/gogs_ynh | self-hosted Git service |
 | [Jeedom](http://jeedom.fr) | lunarok | <div class="ready"/> | https://github.com/lunarok/jeedom_ynh | Home automation |
 | [Jenkins](http://jenkins-ci.org/) | ju | <div class="ready"/> | https://github.com/julienmalik/jenkins_ynh | Continuous Integration platform |
+| [Jitsi Meet](https://jitsi.org/Projects/JitsiMeet) | ju | <div class="inprogress"/> | https://github.com/julienmalik/jitsi_ynh | Audio/Video web conferencing |
 | [Kanboard](http://kanboard.net/) | tostaki | <div class=" ready"/> | https://github.com/mbugeia/kanboard_ynh | Visual task board |
 | [KiwiIRC](http://kiwiirc.com) | ju | <div class="ready"/> | https://github.com/julienmalik/kiwiirc_ynh | Web IRC client |
 | [Laverna](https://laverna.cc/) | anaqreon | <div class="inprogress"/> | https://github.com/anaqreon/laverna_ynh | Note taking app |
