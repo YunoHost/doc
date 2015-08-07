@@ -55,6 +55,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Modoboa](http://modoboa.org/)
 * [Mopidy](https://www.mopidy.com/)
 * [Movim](http://www.movim.eu/)
+* [Nibbleblog](http://www.nibbleblog.com)
 * [Only Office](http://onlyoffice.org/)
 * [Paperwork](http://paperwork.rocks)
 * [pdfy](https://github.com/joepie91/pdfy)
