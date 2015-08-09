@@ -234,3 +234,5 @@ yunohost app install https://github.com/auteur/mon_paquet.git
 
 ### Officialisation d’une application
 Pour qu’une application deviennent officielle, elle doit être suffisament testé, stable et fonctionner sous les architectures de processeurs 64 bits, 32 bits et ARM. Si ces conditions vous paraissent réuni, demandez l’[intégration officielle](http://app.yunohost.org) de votre application.
+
+L'application doit aussi fonctionner sur yunohost wheezy et jessie.
