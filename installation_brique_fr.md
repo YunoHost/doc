@@ -1,7 +1,7 @@
 # Installation d’une Brique Internet
 
 <div class="alert alert-info" markdown="1">
-Site du projet **La Brique Internet**: http://labriqueinter.net/
+Site du projet **La Brique Internet** : http://labriqueinter.net/
 </div>
 
 *Instructions basées sur l'image **[labriqueinternet_04-06-2015_jessie.img](http://repo.labriqueinter.net/labriqueinternet_04-06-2015_jessie.img.tar.xz)** et écrites début Juillet par kload chez **Neutrinet**.*
