@@ -244,6 +244,4 @@ Vous trouverez ci-dessous une liste de point à vérifier concernant la qualité
 * [Ajoutez](/write_documentation_fr) votre application à [la liste des apps non officielles](https://yunohost.org/#/apps_in_progress_en) avec l’état du paquet : `Ready`, `In progress` ou `Not working`.
 
 ### Officialisation d’une application
-Pour qu’une application deviennent officielle, elle doit être suffisament testé, stable et fonctionner sous les architectures de processeurs 64 bits, 32 bits et ARM. Si ces conditions vous paraissent réuni, demandez l’[intégration officielle](http://app.yunohost.org) de votre application.
-
-L'application doit aussi fonctionner sur yunohost wheezy et jessie.
+Pour qu’une application deviennent officielle, elle doit être suffisament testé, stable et fonctionner sous les architectures de processeurs 64 bits, 32 bits et ARM sur Debian Wheezy et Jessie. Si ces conditions vous paraissent réuni, demandez l’[intégration officielle](http://app.yunohost.org) de votre application.
