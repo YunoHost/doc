@@ -32,6 +32,9 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Cubiks-2048](https://kshitij-banerjee.github.io/Cubiks-2048/) | Moul | <div class="ready"/> | https://github.com/M5oul/Cubiks-2048_ynh | Clone of 2048 game in 3D |
 | Custom Webapp (Multi instance) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/my_webapp_ynh |Custom Webapp |
 | [Diaspora](http://diasporafoundation.org) | aymhce | <div class="inprogress"/> | https://github.com/aymhce/diaspora_ynh | Distributed social networking service |
+| [Docker Container](https://registry.hub.docker.com/search?q=library) | scith | <div class="inprogress"/> | https://github.com/scith/docker_container_ynh | Docker allows to deploy applications which have not yet been integrated with YunoHost (use with redirect_ynh) |
+| [Docker RStudio](https://www.rstudio.com/) | scith | <div class="inprogress"/> | https://github.com/scith/docker_rstudio_ynh | RStudio is a web development environment for R (statistics). This app runs through Docker |
+| [DockerUI](https://registry.hub.docker.com/search?q=library) | scith | <div class="inprogress"/> | https://github.com/scith/dockerui_ynh | DockerUI is a web interface to manage Docker containers and images |
 | [EmailPoubelle](http://forge.zici.fr/p/emailpoubelle-php/) | matlink | <div class="inprogress"/> | https://github.com/matlink/emailpoubelle_ynh | Disposable email |
 | [EtherCalc](https://ethercalc.org/) | zamentur | <div class="ready"/> | https://github.com/zamentur/ethercalc_ynh | Web spreadsheet |
 | [Etherpad-Lite](http://etherpad.org) | beudbeud | <div class="ready"/> | https://github.com/abeudin/etherpadlite_ynh | Real-time collaborative document editing |
@@ -92,6 +95,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Rainloop](http://rainloop.net/) | polytan02 | <div class="ready"/> | https://github.com/polytan02/rainloop_ynh | Rainloop : nice and simple webmail - configuration by hand |
 | [Rainloop](http://rainloop.net/) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/rainloop_ynh | Rainloop : nice and simple webmail - [For advanced users](https://github.com/maniackcrudelis/rainloop_ynh/blob/master/README.md) |
 | [Red Matrix](https://redmatrix.me/) | anaqreon | <div class="inprogress"/> | https://github.com/anaqreon/redmatrix_ynh | Social network and decentralized identity platform |
+| [Redirect](https://github.com/scith/redirect_ynh) | scith | <div class="inprogress"/> | https://github.com/scith/redirect_ynh | This app allows to create a YunoHost application redirecting to one port and/or path |
 | [Sabnzbd](http://http://sabnzbd.org/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sabnzbd_ynh | Automated Usenet download |
 | [SCM-Manager](https://www.scm-manager.org/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/scm-manager_ynh | Share and manage repositories over HTTP |
 | [Seafile](http://seafile.com/) | CotzaDev<br></br>mbugeia | <div class="ready"/> | https://github.com/CotzaDev/seafile_ynh<br> https://github.com/mbugeia/seafile_ynh | Cloud storage service with encryption |
