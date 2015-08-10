@@ -92,6 +92,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Rainloop](http://rainloop.net/) | polytan02 | <div class="ready"/> | https://github.com/polytan02/rainloop_ynh | Rainloop : nice and simple webmail - configuration by hand |
 | [Rainloop](http://rainloop.net/) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/rainloop_ynh | Rainloop : nice and simple webmail - [For advanced users](https://github.com/maniackcrudelis/rainloop_ynh/blob/master/README.md) |
 | [Red Matrix](https://redmatrix.me/) | anaqreon | <div class="inprogress"/> | https://github.com/anaqreon/redmatrix_ynh | Social network and decentralized identity platform |
+| [ruTorrent](https://github.com/Novik/ruTorrent) | CotzaDev | <div class="ready"/> | https://github.com/CotzaDev/rutorrent_ynh | A front-end for the popular Bittorrent client rtorrent |
 | [Sabnzbd](http://http://sabnzbd.org/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sabnzbd_ynh | Automated Usenet download |
 | [SCM-Manager](https://www.scm-manager.org/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/scm-manager_ynh | Share and manage repositories over HTTP |
 | [Seafile](http://seafile.com/) | CotzaDev<br></br>mbugeia | <div class="ready"/> | https://github.com/CotzaDev/seafile_ynh<br> https://github.com/mbugeia/seafile_ynh | Cloud storage service with encryption |
