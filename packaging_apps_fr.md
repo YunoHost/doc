@@ -228,15 +228,15 @@ Remarque : ça fonctionne aussi avec une URL Git :
 yunohost app install https://github.com/auteur/mon_paquet.git
 ```
 
-### Améliorer la qualité du paquet d'installation
-Vous trouverez ci-dessous une liste de point à vérifier concernant la qualité de vos scripts:
-* Vos scripts utilisent bien `sudo cp -a ../sources/. $final_path` plutôt que `sudo cp -a ../sources/* $final_path` 
-* Votre script d'installation contient une gestion en cas d'erreurs du script pour supprimer les fichiers résiduels à l'aide de `set -e` et de `trap`
-* Votre script d'installation utilise une méthode d'installation en ligne de commande plutôt qu'un appel curl à un formulaire web d'installation
-* Votre script d'installation enregistre les réponses de l'utilisateur
-* Vous avez vérifié les sources de l'application avec une somme de contrôle (sha256, sha1 ou md5) ou une signature PGP
-* Vos scripts ont été testé sur wheezy, jessie, 32 bits, 64 bits, ARM
-* Les scripts backup et restore sont présents et fonctionnels
+### Améliorer la qualité du paquet d’installation
+Vous trouverez ci-dessous une liste des point à vérifier concernant la qualité de vos scripts :
+* Vos scripts utilisent bien `sudo cp -a ../sources/. $final_path` plutôt que `sudo cp -a ../sources/* $final_path` ;
+* Votre script d’installation contient une gestion en cas d’erreurs du script pour supprimer les fichiers résiduels à l'aide de `set -e` et de `trap` ;
+* Votre script d’installation utilise une méthode d’installation en ligne de commande plutôt qu'un appel curl via un formulaire web d’installation ;
+* Votre script d’installation enregistre les réponses de l'utilisateur ;
+* Vous avez vérifié les sources de l’application avec une somme de contrôle (sha256, sha1 ou md5) ou une signature PGP ;
+* Vos scripts ont été testé sur Debian Wheezy et Jessie ainsi que sur les architectures 32 bits, 64 bits et ARM ;
+* Les scripts backup et restore sont présents et fonctionnels.
 
 ### Publiez et demandez des tests de votre application
 * Demandez des tests et des retours sur votre application en publiant un [post sur le Forum](https://forum.yunohost.org/) avec la catégorie `App integration`.
