@@ -228,10 +228,21 @@ Note that it also works with a Git URL:
 ```bash
 yunohost app install https://github.com/author/my_app_package.git
 ```
+
+### Enhance package
+You will find points to verify quality of your scripts:
+* scripts should use `sudo cp -a ../sources/. $final_path` instead of `sudo cp -a ../sources/* $final_path`;
+* install script must contain support in case of script errors to delete residuals files thanks to `set -e` and `trap`;
+* install script should use command line method instead of curl call through web install form;
+* install script should save install answers;
+* application sources should be checked with a control sum (sha256, sha1 or md5) or a PGP signature;
+* scripts had been tested on Debian Wheezy and Jessie as well as 32 bits, 64 bits and ARM architectures;
+* backup and restore scripts are present and functional.
+
 ### Publish and ask for testing your application
 * Publishing a [post on the Forum](https://forum.yunohost.org/) with the `App integration` category, to ask tests and returns on your application.
 
 * [Add](/write_documentation_en) your application to the [non-officials list of application](https://yunohost.org/#/apps_in_progress_en) with the state of the package: `Ready`, `In progress` or `Not working`.
 
 ### Officalization of an application
-To become an official application, it must be enough tested, stable and should works on 64 bits, 32 bits et ARM processors architectures. If you think thoses conditions are gather, ask for [official integration](http://app.yunohost.org) of your application.
+To become an official application, it must be enough tested, stable and should works on 64 bits, 32 bits et ARM processors architectures and on Debian Wheezy and Jessie. If you think thoses conditions are gather, ask for [official integration](http://app.yunohost.org) of your application.
