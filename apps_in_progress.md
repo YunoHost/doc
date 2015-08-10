@@ -3,7 +3,6 @@
 <a class="btn btn-lg btn-default" href="/apps">Official apps</a> <a class="btn btn-lg btn-default" href="/apps_in_progress">Apps in progress</a> <a class="btn btn-lg btn-default" href="/apps_wishlist_en">Apps wishlist</a>
 
 The following applications are being packaged on by a growing number of packagers.
-
 <div class="alert alert-danger">These applications are **NOT** validated by the packaging team, and as such, **no official support is provided** for them.<br>
 You can test and use them, **at your own risk**.
 </div>
@@ -91,6 +90,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Pydio](http://pyd.io) | ju | <div class="inprogress"/> | https://github.com/julienmalik/pydio_ynh | File sharing and synchronization |
 | [Radicale](http://radicale.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/radicale_ynh | Caldav & Carddav Server |
 | [Rainloop](http://rainloop.net/) | polytan02 | <div class="ready"/> | https://github.com/polytan02/rainloop_ynh | Rainloop : nice and simple webmail - configuration by hand |
+| [Rainloop](http://rainloop.net/) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/rainloop_ynh | Rainloop : nice and simple webmail - [For advanced users](https://github.com/maniackcrudelis/rainloop_ynh/blob/master/README.md) |
 | [Red Matrix](https://redmatrix.me/) | anaqreon | <div class="inprogress"/> | https://github.com/anaqreon/redmatrix_ynh | Social network and decentralized identity platform |
 | [Sabnzbd](http://http://sabnzbd.org/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sabnzbd_ynh | Automated Usenet download |
 | [SCM-Manager](https://www.scm-manager.org/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/scm-manager_ynh | Share and manage repositories over HTTP |
