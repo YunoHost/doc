@@ -82,7 +82,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [PHPSysinfo](https://phpsysinfo.github.io/phpsysinfo/) | lunarok | <div class="ready"/> | https://github.com/lunarok/phpsysinfo_ynh | Informations about your system |
 | [PirateBox](https://github.com/jvaubourg/php-piratebox) | Jvaubourg | <div class="ready"/> | https://github.com/labriqueinternet/piratebox_ynh | PirateBox for [The Internet Cube](/installation_brique_fr) |
 | [Piwigo](http://piwigo.org) | monsieur-a | <div class="ready"/> | https://github.com/monsieur-a/piwigo_ynh | Web photo gallery |
-| [Piwik](http://piwik.org) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/piwik_ynh | Web analytics platform |
+| [Piwik](http://piwik.org) | Maniack Crudelis | <div class="notworking"/> | https://github.com/maniackcrudelis/piwik_ynh | Web analytics platform |
 | [Plexmediaserver](https://plex.tv/) | Chao-Man | <div class="inprogress"/> | https://github.com/Novakin/plexmediaserver_ynh | PlexMediaServer |
 | [PluXml](http://www.pluxml.org/) | matlink | <div class="inprogress"/> | https://github.com/matlink/pluxml_ynh | Blogging platform |
 | [proFTPd](http://www.proftpd.org/) | beudbeud | <div class="inprogress"/> | https://github.com/abeudin/proftpd_ynh | FTP server |
