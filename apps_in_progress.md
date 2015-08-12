@@ -67,6 +67,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [MediaWiki](https://mediawiki.org) | ElieSauveterre | <div class="ready"/> | https://github.com/mikangali-labs/mediawiki_ynh | Wiki platform |
 | [minchat](https://github.com/chtixof/minchat_ynh) | chtixof | <div class="ready"/> | https://github.com/chtixof/minchat_ynh | Minimalist web chat |
 | [miniflux](http://miniflux.net) | matanya | <div class="inprogress"/> | https://github.com/mat-mo/miniflux_ynh | RSS reader via RTL support |
+| [Movim](https://movim.eu) | src386_ | <div class="inprogress"/> | https://github.com/src386/movim_ynh | Kick Ass Social Network |
 | [Mumble Admin Plugin](http://wiki.mumble.info/wiki/MAP_-_Mumb1e_Admin_Plugin) | matlink | <div class="inprogress"/> | https://github.com/matlink/mumble_admin_plugin_ynh | Web interface to manage mumble server |
 | [Mumble Server](http://wiki.mumble.info/wiki/Main_Page) | matlink | <div class="ready"/> | https://github.com/matlink/mumbleserver_ynh | Voice chat for gaming and meeting |
 | [Munin](http://munin-monitoring.org/) | ju | <div class="ready"/> | https://github.com/julienmalik/munin_ynh | System Monitoring graphing tool |
