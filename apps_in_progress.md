@@ -32,6 +32,9 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Cubiks-2048](https://kshitij-banerjee.github.io/Cubiks-2048/) | Moul | <div class="ready"/> | https://github.com/M5oul/Cubiks-2048_ynh | Clone of 2048 game in 3D |
 | Custom Webapp (Multi instance) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/my_webapp_ynh |Custom Webapp |
 | [Diaspora](http://diasporafoundation.org) | aymhce | <div class="inprogress"/> | https://github.com/aymhce/diaspora_ynh | Distributed social networking service |
+| [Docker Container](https://registry.hub.docker.com/search?q=library) | scith | <div class="inprogress"/> | https://github.com/scith/docker_container_ynh | Docker allows to deploy applications which have not yet been integrated with YunoHost (use with redirect_ynh) |
+| [Docker RStudio](https://www.rstudio.com/) | scith | <div class="inprogress"/> | https://github.com/scith/docker_rstudio_ynh | RStudio is a web development environment for R (statistics). This app runs through Docker |
+| [DockerUI](https://registry.hub.docker.com/search?q=library) | scith | <div class="inprogress"/> | https://github.com/scith/dockerui_ynh | DockerUI is a web interface to manage Docker containers and images |
 | [EmailPoubelle](http://forge.zici.fr/p/emailpoubelle-php/) | matlink | <div class="inprogress"/> | https://github.com/matlink/emailpoubelle_ynh | Disposable email |
 | [EtherCalc](https://ethercalc.org/) | zamentur | <div class="ready"/> | https://github.com/zamentur/ethercalc_ynh | Web spreadsheet |
 | [Etherpad-Lite](http://etherpad.org) | beudbeud | <div class="ready"/> | https://github.com/abeudin/etherpadlite_ynh | Real-time collaborative document editing |
@@ -67,10 +70,11 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [MediaWiki](https://mediawiki.org) | ElieSauveterre | <div class="ready"/> | https://github.com/mikangali-labs/mediawiki_ynh | Wiki platform |
 | [minchat](https://github.com/chtixof/minchat_ynh) | chtixof | <div class="ready"/> | https://github.com/chtixof/minchat_ynh | Minimalist web chat |
 | [miniflux](http://miniflux.net) | matanya | <div class="inprogress"/> | https://github.com/mat-mo/miniflux_ynh | RSS reader via RTL support |
+| [Monit](http://mmonit.com/monit/) | ju | <div class="ready"/> | https://github.com/julienmalik/monit_ynh | Daemon Monitoring tool |
+| [Movim](https://movim.eu) | src386_ | <div class="inprogress"/> | https://github.com/src386/movim_ynh | Kick Ass Social Network |
 | [Mumble Admin Plugin](http://wiki.mumble.info/wiki/MAP_-_Mumb1e_Admin_Plugin) | matlink | <div class="inprogress"/> | https://github.com/matlink/mumble_admin_plugin_ynh | Web interface to manage mumble server |
 | [Mumble Server](http://wiki.mumble.info/wiki/Main_Page) | matlink | <div class="ready"/> | https://github.com/matlink/mumbleserver_ynh | Voice chat for gaming and meeting |
 | [Munin](http://munin-monitoring.org/) | ju | <div class="ready"/> | https://github.com/julienmalik/munin_ynh | System Monitoring graphing tool |
-| [Monit](http://mmonit.com/monit/) | ju | <div class="ready"/> | https://github.com/julienmalik/monit_ynh | Daemon Monitoring tool |
 | [MyCryptoChat](https://github.com/HowTommy/mycryptochat) | mrtino | <div class="ready"/> | https://github.com/mrtino/mycryptochat_ynh | Encrypted chat rooms manager |
 | [Odoo](https://www.odoo.com/) | portanicolas | <div class="notworking"/> | https://github.com/portanicolas/odoov8_ynh | ERP |
 | [OFBiz](https://ofbiz.apache.org/) | julien | <div class="inprogress"/> | https://github.com/nomakaFr/ofbiz_ynh | ERP |
@@ -82,7 +86,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [PHPSysinfo](https://phpsysinfo.github.io/phpsysinfo/) | lunarok | <div class="ready"/> | https://github.com/lunarok/phpsysinfo_ynh | Informations about your system |
 | [PirateBox](https://github.com/jvaubourg/php-piratebox) | Jvaubourg | <div class="ready"/> | https://github.com/labriqueinternet/piratebox_ynh | PirateBox for [The Internet Cube](/installation_brique_fr) |
 | [Piwigo](http://piwigo.org) | monsieur-a | <div class="ready"/> | https://github.com/monsieur-a/piwigo_ynh | Web photo gallery |
-| [Piwik](http://piwik.org) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/piwik_ynh | Web analytics platform |
+| [Piwik](http://piwik.org) | Maniack Crudelis | <div class="notworking"/> | https://github.com/maniackcrudelis/piwik_ynh_2 | Web analytics platform |
 | [Plexmediaserver](https://plex.tv/) | Chao-Man | <div class="inprogress"/> | https://github.com/Novakin/plexmediaserver_ynh | PlexMediaServer |
 | [PluXml](http://www.pluxml.org/) | matlink | <div class="inprogress"/> | https://github.com/matlink/pluxml_ynh | Blogging platform |
 | [proFTPd](http://www.proftpd.org/) | beudbeud | <div class="inprogress"/> | https://github.com/abeudin/proftpd_ynh | FTP server |
@@ -92,6 +96,8 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Rainloop](http://rainloop.net/) | polytan02 | <div class="ready"/> | https://github.com/polytan02/rainloop_ynh | Rainloop : nice and simple webmail - configuration by hand |
 | [Rainloop](http://rainloop.net/) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/rainloop_ynh | Rainloop : nice and simple webmail - [For advanced users](https://github.com/maniackcrudelis/rainloop_ynh/blob/master/README.md) |
 | [Red Matrix](https://redmatrix.me/) | anaqreon | <div class="inprogress"/> | https://github.com/anaqreon/redmatrix_ynh | Social network and decentralized identity platform |
+| [Redirect](https://github.com/scith/redirect_ynh) | scith | <div class="inprogress"/> | https://github.com/scith/redirect_ynh | This app allows to create a YunoHost application redirecting to one port and/or path |
+| [ruTorrent](https://github.com/Novik/ruTorrent) | CotzaDev | <div class="ready"/> | https://github.com/CotzaDev/rutorrent_ynh | A front-end for the popular BitTorrent client rtorrent |
 | [Sabnzbd](http://http://sabnzbd.org/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sabnzbd_ynh | Automated Usenet download |
 | [SCM-Manager](https://www.scm-manager.org/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/scm-manager_ynh | Share and manage repositories over HTTP |
 | [Seafile](http://seafile.com/) | CotzaDev<br></br>mbugeia | <div class="ready"/> | https://github.com/CotzaDev/seafile_ynh<br> https://github.com/mbugeia/seafile_ynh | Cloud storage service with encryption |
