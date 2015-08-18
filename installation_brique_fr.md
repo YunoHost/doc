@@ -81,7 +81,7 @@ Ajouter à la fin du fichier :
 192.168.4.2 michu.nohost.me
 ```
 
-3. Procéder à la [postinstallation](/postinstallation_fr) en se connectant à la Brique sur https://michu.nohost.me. L’uilisateur pourra lui-même saisir le mot de passe d’administration qu'il souhaite lors de cette étape.
+3. Procéder à la [postinstallation](/postinstall_fr) en se connectant à la Brique sur https://michu.nohost.me. L’uilisateur pourra lui-même saisir le mot de passe d’administration qu'il souhaite lors de cette étape.
 <div class="alert alert-info" markdown="1">
 **Note :** il est possible de réaliser cette étape en ligne de commande via SSH en exécutant `yunohost tools postinstall`
 </div>
