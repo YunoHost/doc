@@ -15,6 +15,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Caliopen](https://www.caliopen.org/)
 * [CardDavMate](https://www.inf-it.com/open-source/clients/carddavmate/)
 * [cgit](http://git.zx2c4.com/cgit/about/)
+* [Commafeed](https://github.com/Athou/commafeed)
 * [CumulusClips](http://cumulusclips.org/)
 * [DemocracyOS](http://democracyos.org/)
 * [Discourse](http://discourse.org/)
