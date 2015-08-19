@@ -33,7 +33,6 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | Custom Webapp (Multi instance) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/my_webapp_ynh |Custom Webapp |
 | [Diaspora](http://diasporafoundation.org) | aymhce | <div class="inprogress"/> | https://github.com/aymhce/diaspora_ynh | Distributed social networking service |
 | [Docker Container](https://registry.hub.docker.com/search?q=library) | scith | <div class="inprogress"/> | https://github.com/scith/docker_container_ynh | Docker allows to deploy applications which have not yet been integrated with YunoHost (use with redirect_ynh) |
-| [Docker RStudio](https://www.rstudio.com/) | scith | <div class="inprogress"/> | https://github.com/scith/docker_rstudio_ynh | RStudio is a web development environment for R (statistics). This app runs through Docker |
 | [DockerUI](https://registry.hub.docker.com/search?q=library) | scith | <div class="inprogress"/> | https://github.com/scith/dockerui_ynh | DockerUI is a web interface to manage Docker containers and images |
 | [EmailPoubelle](http://forge.zici.fr/p/emailpoubelle-php/) | matlink | <div class="inprogress"/> | https://github.com/matlink/emailpoubelle_ynh | Disposable email |
 | [EtherCalc](https://ethercalc.org/) | zamentur | <div class="ready"/> | https://github.com/zamentur/ethercalc_ynh | Web spreadsheet |
@@ -77,6 +76,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Munin](http://munin-monitoring.org/) | ju | <div class="ready"/> | https://github.com/julienmalik/munin_ynh | System Monitoring graphing tool |
 | [MyCryptoChat](https://github.com/HowTommy/mycryptochat) | mrtino | <div class="ready"/> | https://github.com/mrtino/mycryptochat_ynh | Encrypted chat rooms manager |
 | [Odoo](https://www.odoo.com/) | portanicolas | <div class="notworking"/> | https://github.com/portanicolas/odoov8_ynh | ERP |
+| [Odoo (Dockerized)](https://www.odoo.com) | scith | <div class="inprogress"/> | https://github.com/scith/docker_odoo_ynh | Odoo is a suite of business apps (ERP: CRM, Accounting, Point of Sale, HR, Purchases...). This app runs through Docker |
 | [OFBiz](https://ofbiz.apache.org/) | julien | <div class="inprogress"/> | https://github.com/nomakaFr/ofbiz_ynh | ERP |
 | [OpenDKIM](http://opendkim.org/) | polytan02 | <div class="inprogress"/> | https://github.com/polytan02/opendkim_ynh | OpenDKIM for Yunohost installation script |
 | [OpenID](http://openid.net/) | ju | <div class="inprogress"/> | https://github.com/julienmalik/openid-simplesamlphp_ynh | OpenID Identity server |
@@ -97,6 +97,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Rainloop](http://rainloop.net/) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/rainloop_ynh | Rainloop : nice and simple webmail - [For advanced users](https://github.com/maniackcrudelis/rainloop_ynh/blob/master/README.md) |
 | [Red Matrix](https://redmatrix.me/) | anaqreon | <div class="inprogress"/> | https://github.com/anaqreon/redmatrix_ynh | Social network and decentralized identity platform |
 | [Redirect](https://github.com/scith/redirect_ynh) | scith | <div class="inprogress"/> | https://github.com/scith/redirect_ynh | This app allows to create a YunoHost application redirecting to one port and/or path |
+| [RStudio (Dockerized)](https://www.rstudio.com/) | scith | <div class="inprogress"/> | https://github.com/scith/docker_rstudio_ynh | RStudio is a web development environment for R (statistics). This app runs through Docker |
 | [ruTorrent](https://github.com/Novik/ruTorrent) | CotzaDev | <div class="ready"/> | https://github.com/CotzaDev/rutorrent_ynh | A front-end for the popular BitTorrent client rtorrent |
 | [Sabnzbd](http://http://sabnzbd.org/) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sabnzbd_ynh | Automated Usenet download |
 | [SCM-Manager](https://www.scm-manager.org/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/scm-manager_ynh | Share and manage repositories over HTTP |
@@ -119,7 +120,6 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Yourls](http://yourls.org/) | courgette | <div class="ready"/> | https://github.com/courgette/yourls_ynh |  URL Shortening service |
 | Yunofav | chtixof | <div class="ready"/> | https://github.com/chtixof/yunofav | Page of favorite links Yunohost-styled |
 | [Zomburl](http://cadav.re/) | courgette | <div class="inprogress"/> | https://github.com/courgette/zomburl_ynh | URL Shortening service |
-| [ZoteroSync](http://blog.holz.ca/2011/11/phpzoterowebdav-installation/) | scith | <div class="inprogress"/> | https://github.com/scith/zoterosync_ynh | Sync Zotero library and files |
 | [Z-Push](https://z-push.org/) | beudbeud | <div class="ready"/> | https://github.com/abeudin/z-push_ynh | ActiveSync Server |
 
 <script>
