@@ -75,13 +75,13 @@ apt-get install openvpn sipcalc hostapd iw dnsmasq firmware-linux-free firmware-
 Ici nous installons la Brique de **michu.nohost.me** qui a pour IP locale **192.168.4.2**
 </div>
 
-2. Mettre à jour le fichier `/etc/hosts` de son ordinateur client pour pouvoir accéder à la Brique en local via **michu.nohost.me** (important pour la configuration des applications **vpnclient** et **hotspot**).  
+2. Mettre à jour le fichier `/etc/hosts` de son ordinateur client pour pouvoir accéder à la Brique en local via **michu.nohost.me** (important pour la configuration des applications **vpnclient** et **hotspot**).
 Ajouter à la fin du fichier :
 ```bash
 192.168.4.2 michu.nohost.me
 ```
 
-3. Procéder à la [postinstallation](/postinstall_fr) en se connectant à la Brique sur https://michu.nohost.me. L’uilisateur pourra lui-même saisir le mot de passe d’administration qu'il souhaite lors de cette étape.
+3. Procéder à la [postinstallation](/postinstall_fr) en se connectant à la Brique sur https://michu.nohost.me. L’utilisateur pourra lui-même saisir le mot de passe d’administration qu'il souhaite lors de cette étape.
 <div class="alert alert-info" markdown="1">
 **Note :** il est possible de réaliser cette étape en ligne de commande via SSH en exécutant `yunohost tools postinstall`
 </div>
@@ -92,7 +92,7 @@ ssh root@michu.nohost.me
 passwd root
 ```
 
-5. **Fix temporaire** : la création des répertoires utilisateur ne se fait pas automatiquement dans cette image YunoHost pour la Brique. Il convient donc d'ajouter un script qui s'exécutera à la création des utilisateurs YunoHost et qui s’en assurera.  
+5. **Solution temporaire** : la création des répertoires utilisateur ne se fait pas automatiquement dans cette image YunoHost pour la Brique. Il convient donc d'ajouter un script qui s'exécutera à la création des utilisateurs YunoHost et qui s’en assurera.  
 En SSH sur la Brique :
 ```bash
 mkdir -p /usr/share/yunohost/hooks/post_user_create
@@ -117,9 +117,9 @@ Il faudra entrer un **nom d’utilisateur** sans majuscule/espace/tiret, un **no
 9. **Configurer l’application VPN Client** : se connecter à l’**interface utilisateur** (ici https://michu.nohost.me/yunohost/sso/) et entrer les identifiants de l’utilisateur précédemment créé. Vous devriez voir apparaître **VPN Client** dans votre liste d’application :
 <div><a title="screenshot_vpnclient" target="_blank" href="https://raw.githubusercontent.com/labriqueinternet/vpnclient_ynh/master/screenshot.png">
 <img style="border-radius: 5px; border: 5px solid #eee; max-width: 800px" src="https://raw.githubusercontent.com/labriqueinternet/vpnclient_ynh/master/screenshot.png" />
-</a></div>  
-De manière générale, il convient bien sûr d’éditer les paramètres en fonction de son fournisseur d’accès VPN.  
-Chez Neutrinet, nous éditons, dans **Advanced**, le template de configuration pour y ajouter trois directives spécifiques :  
+</a></div>
+De manière générale, il convient bien sûr d’éditer les paramètres en fonction de son fournisseur d’accès VPN.
+Chez Neutrinet, nous éditons, dans **Advanced**, le template de configuration pour y ajouter trois directives spécifiques :
 <pre><code>resolv-retry infinite
 ns-cert-type server
 topology subnet</code></pre>
@@ -132,8 +132,8 @@ topology subnet</code></pre>
 <img style="border-radius: 5px; border: 5px solid #eee; max-width: 800px" src="https://raw.githubusercontent.com/labriqueinternet/hotspot_ynh/master/screenshot.png" />
 </a></div>
 
-11. **TESTEY** : la Brique devrait être accessible via l’IP publique que sa connexion VPN lui procure. Si l’utilisateur a opté pour un nom de domaine en **.nohost.me**, patienter quelques minutes que son IP se propage sur le serveur DNS de YunoHost. Si l’utilisateur a opté pour son propre nom de domaine, c’est le moment de [configurer ses enregistrements DNS](/dns_config_fr) correctement chez son registrar.  
-Si tout se passe bien côté **hotspot**, un réseau WiFi du nom choisi par l’utilisateur à l’étape 10 devrait être visible, et devrait vous router tout bien vers l’Internet.  
+11. **TESTER** : la Brique devrait être accessible via l’IP publique que sa connexion VPN lui procure. Si l’utilisateur a opté pour un nom de domaine en **.nohost.me**, patienter quelques minutes que son IP se propage sur le serveur DNS de YunoHost. Si l’utilisateur a opté pour son propre nom de domaine, c’est le moment de [configurer ses enregistrements DNS](/dns_config_fr) correctement chez son registrar.
+Si tout se passe bien côté **hotspot**, un réseau WiFi du nom choisi par l’utilisateur à l’étape 10 devrait être visible, et devrait vous router tout bien vers l’Internet.
 Il est possible de regarder l’IP avec laquelle on sort sur Internet [ici](http://ip.yunohost.org) (ou via `curl ip.yunohost.org` depuis le serveur)
 
 ---
@@ -158,7 +158,7 @@ rm /etc/cron.d/yunohost-dyndns
 echo "* * * * * root /sbin/ifconfig tun0 > /dev/null 2>&1 || systemctl restart ynh-vpnclient" > /etc/cron.d/restart-vpn
 ```
 
-* **Arrêter le service Amavis** : *(**EDIT**: en fait Amavis est branché à SpamAssassin, donc ça enlève l'antispam, ce qui est pénible)*  
+* **Arrêter le service Amavis** : *(**EDIT**: en fait Amavis est branché à SpamAssassin, donc ça enlève l'antispam, ce qui est pénible)*
 Amavis est un antivirus qui s’occupe de regarder si les pièces jointes des emails ne sont pas vérolées. Il est très lourd et tombe souvent en panne sur des petites machines comme la Brique. Pour arrêter Amavis, éditer le fichier `/etc/postfix/main.cf` et commenter la ligne 90 (normalement) :
 ```bash
 #content_filter = amavis:[127.0.0.1]:10024
@@ -177,7 +177,7 @@ systemctl stop amavis
 systemctl disable amavis
 ```
 
-* **Arrêter le service postgrey** : Postgrey est un méchanisme antivirus qui est assez peu efficace, et surtout assez pénible. Il refuse les emails en premier lieu lorsque qu’ils proviennent d’une source inconnue. Un serveur email de spam ne fait pas toujours l’effort de renvoyer le spam une seconde fois. Pour arrêter postgrey, il faut éditer le fichier `/etc/postfix/main.cf` et commenter la ligne relative à postgrey (ligne 132) :
+* **Arrêter le service postgrey** : Postgrey est un mécanisme antivirus qui est assez peu efficace, et surtout assez pénible. Il refuse les emails en premier lieu lorsque qu’ils proviennent d’une source inconnue. Un serveur email de spam ne fait pas toujours l’effort de renvoyer le spam une seconde fois. Pour arrêter postgrey, il faut édité le fichier `/etc/postfix/main.cf` et commenter la ligne relative à postgrey (ligne 132) :
 ```bash
 smtpd_recipient_restrictions =
     permit_mynetworks,
@@ -198,8 +198,8 @@ systemctl restart postfix
 
 * **Configurer le reverse DNS** : pour s’assurer du bon fonctionnement du serveur email, il est recommandé de configurer un reverse DNS pour son IP. En tant que FAI associatif, c’est un service faisable, autant en profiter !
 
-* **Configurer le DKIM** : avec un SPF et un PTR bien configuré dans les DNS, les emails envoyés par la Brique ne devrait pas être considérés comme spam. Ceci dit, GMail et d’autres dégraderont considérablement le spamscore si le DKIM n’est pas configuré également.  
-Cette opération est longue mais à considérer pour avoir un serveur email irréprochable en production. Plus de renseignement sur [la page de documentation appropriée](/dkim_fr).  
+* **Configurer le DKIM** : avec un SPF et un PTR bien configuré dans les DNS, les emails envoyés par la Brique ne devrait pas être considérés comme spam. Ceci dit, GMail et d’autres dégraderont considérablement le spamscore si le DKIM n’est pas configuré également.
+Cette opération est longue mais à considérer pour avoir un serveur email irréprochable en production. Plus de renseignement sur [la page de documentation appropriée](/dkim_fr).
 
 * **Installer Roundcube** via l’interface d’administration YunoHost et tester l’envoi/réception d’email.
 
@@ -211,6 +211,6 @@ Cette opération est longue mais à considérer pour avoir un serveur email irr�
 
 * **Attention à la RAM** : sur le modèle A20-OLinuXino-LIME, les **512 Mo** partent vite. Les applications PHP ne sont pas très gourmandes, mais Searx et Etherpad Lite sont par exemple à installer avec des pincettes.
 
-* **Glances ne fonctionne pas** sur l’image *labriqueinternet_04-06-2015_jessie.img*, ce qui rend l’onglet **État du serveur** inaccessible dans l’interface d’adminstration de YunoHost. Une mise à jour future du noyau sera à prévoir pour corriger le problème.
+* **Glances ne fonctionne pas** sur l’image *labriqueinternet_04-06-2015_jessie.img*, ce qui rend l’onglet **État du serveur** inaccessible dans l’interface d’administration de YunoHost. Une mise à jour future du noyau sera à prévoir pour corriger le problème.
 
 * Attention à bien veiller à ce que les répertoires utilisateurs soient bien créés (étape 5.) dans `/var/mail` et `/home/`, sans quoi plusieurs bugs seront observables dans l’interface d’administration (erreurs 500 en pagaille).
