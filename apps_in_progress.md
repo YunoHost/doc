@@ -102,6 +102,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [SCM-Manager](https://www.scm-manager.org/) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/scm-manager_ynh | Share and manage repositories over HTTP |
 | [Seafile](http://seafile.com/) | CotzaDev<br></br>mbugeia | <div class="ready"/> | https://github.com/CotzaDev/seafile_ynh<br> https://github.com/mbugeia/seafile_ynh | Cloud storage service with encryption |
 | [Shaarli](http://sebsauvage.net/wiki/doku.php?id=php:shaarli) | ju | <div class="inprogress"/> | https://github.com/julienmalik/shaarli_ynh | Delicious clone |
+| [Shout](http://shout-irc.com/) | kload | <div class="ready"/> | https://github.com/Kloadut/shout_ynh | IRC web client (for Debian Jessie only) |
 | [Sickbeard](http://sickbeard.com) | Chao-Man | <div class="ready"/> | https://github.com/Chao-Man/sickbeard_ynh | PVR and episode guide that downloads and manages all your TV shows |
 | [SPIP](http://www.spip.net/) | Cyp | <div class="inprogress"/> | https://github.com/magikcypress/spip_ynh | Web sites/blog |
 | [Subsonic](http://subsonic.org) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/subsonic_ynh | Web-based media server |
