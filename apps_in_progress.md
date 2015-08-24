@@ -117,6 +117,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Webmin](http://webmin.com) | tifred | <div class="inprogress"/> | https://github.com/drfred1981/webmin_ynh | Web-based system configuration tool |
 | [Wordpress multisite](http://codex.wordpress.org/Create_A_Network) | Maniack Crudelis | <div class="ready"/> | https://github.com/maniackcrudelis/wordpress_ynh | Wordpress with network support |
 | [YaCy](http://yacy.net) | Moul | <div class="notworking"/> | https://github.com/M5oul/yacy_ynh/ | Libre and decentralized search engine |
+| [Yify-pop](https://github.com/yify-pop/yify-pop) | m0dm | <div class="inprogress"/> | https://github.com/M0dM/yify-pop_ynh | Inspired by Popcorn Time, a node web server to stream torrents from YIFY. |
 | [Yourls](http://yourls.org/) | courgette | <div class="ready"/> | https://github.com/courgette/yourls_ynh |  URL Shortening service |
 | Yunofav | chtixof | <div class="ready"/> | https://github.com/chtixof/yunofav | Page of favorite links Yunohost-styled |
 | [Zomburl](http://cadav.re/) | courgette | <div class="inprogress"/> | https://github.com/courgette/zomburl_ynh | URL Shortening service |
