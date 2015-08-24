@@ -95,5 +95,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [WebTorrent](https://github.com/feross/webtorrent)
 * [Wisemapping](http://www.wisemapping.com/)
 * [YellowCMS](http://datenstrom.se/yellow/)
+* [Yify-pop](https://github.com/yify-pop/yify-pop)
 * [Zone-project](https://github.com/descl/ZONE)
 * [ZNC](http://wiki.znc.in/ZNC)
