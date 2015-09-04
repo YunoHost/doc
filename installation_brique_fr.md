@@ -56,7 +56,7 @@ Admettons que l’adresse IP locale de la Brique soit **192.168.4.2**
 ```bash
 ssh root@192.168.4.2
 ```
-7. Mettre à jour le système (environ 10 minutes), et pré-installer les paquets qui seront nécessaires aux applications **vpnclient** et **hotspot** (comme ça c'est fait).
+7. Mettre à jour le système (environ 10 minutes), et pré-installer les paquets qui seront nécessaires aux applications **vpnclient** et **hotspot**. Cette pré-installation n'est pas du tout indispensable puisque si ces éléments n'étaient pas présents, YunoHost les installerait au moment de l'installation des applications.
 ```bash
 apt-get update && apt-get upgrade
 apt-get install openvpn sipcalc hostapd iw dnsmasq firmware-linux-free firmware-linux-nonfree firmware-realtek firmware-ralink
@@ -92,7 +92,7 @@ ssh root@michu.nohost.me
 passwd root
 ```
 
-5. **Solution temporaire** : la création des répertoires utilisateur ne se fait pas automatiquement dans cette image YunoHost pour la Brique. Il convient donc d'ajouter un script qui s'exécutera à la création des utilisateurs YunoHost et qui s’en assurera.  
+5. **Solution temporaire** : la création des répertoires utilisateur ne se fait pas automatiquement dans cette image YunoHost pour la Brique. Il convient donc d'ajouter un script qui s'exécutera à la création des utilisateurs YunoHost et qui s’en assurera.
 En SSH sur la Brique :
 ```bash
 mkdir -p /usr/share/yunohost/hooks/post_user_create
@@ -127,7 +127,7 @@ topology subnet</code></pre>
 **Attention** : le redémarrage du service, déclenché par le bouton **Save and reload**, peut mettre quelques minutes.
 </div>
 
-10. **Installer l’application Hotspot** : s'assurer que l’antenne WiFi est bien branchée, et répéter les étapes **7**, **8** et **9** en installant à l’aide de l'URL `https://github.com/labriqueinternet/hotspot_ynh`  
+10. **Installer l’application Hotspot** : s'assurer que l’antenne WiFi est bien branchée, et répéter les étapes **7**, **8** et **9** en installant à l’aide de l'URL `https://github.com/labriqueinternet/hotspot_ynh`
 <div><a title="screenshot_hotspot" target="_blank" href="https://raw.githubusercontent.com/labriqueinternet/hotspot_ynh/master/screenshot.png">
 <img style="border-radius: 5px; border: 5px solid #eee; max-width: 800px" src="https://raw.githubusercontent.com/labriqueinternet/hotspot_ynh/master/screenshot.png" />
 </a></div>
@@ -194,11 +194,11 @@ Une fois le fichier éditer, redémarrer le service postfix :
 systemctl restart postfix
 ```
 
-* **Mettre à jour la configuration SSH** : par défaut, la connexion en tant que **root** est possible sur la Brique. Pour ne garder que la connexion en tant qu’**admin** (qui est sudoer), il convient d’éditer le `/etc/ssh/sshd_confg` et de remplacer passer **PermitRootLogin** à **without-password**.
+* **Mettre à jour la configuration SSH** : par défaut, la connexion en tant que **root** est possible sur la Brique. Pour ne garder que la connexion en tant qu’**admin** (qui est sudoer), il convient d’éditer le `/etc/ssh/sshd_config` et de remplacer passer **PermitRootLogin** à **without-password**.
 
 * **Configurer le reverse DNS** : pour s’assurer du bon fonctionnement du serveur email, il est recommandé de configurer un reverse DNS pour son IP. En tant que FAI associatif, c’est un service faisable, autant en profiter !
 
-* **Configurer le DKIM** : avec un SPF et un PTR bien configuré dans les DNS, les emails envoyés par la Brique ne devrait pas être considérés comme spam. Ceci dit, GMail et d’autres dégraderont considérablement le spamscore si le DKIM n’est pas configuré également.
+* **Configurer le DKIM** : avec un SPF et un PTR bien configurés dans les DNS, les emails envoyés par la Brique ne devraient pas être considérés comme spam. Ceci dit, GMail et d’autres dégraderont considérablement le spamscore si le DKIM n’est pas configuré également.
 Cette opération est longue mais à considérer pour avoir un serveur email irréprochable en production. Plus de renseignement sur [la page de documentation appropriée](/dkim_fr).
 
 * **Installer Roundcube** via l’interface d’administration YunoHost et tester l’envoi/réception d’email.
