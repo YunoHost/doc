@@ -4,13 +4,13 @@
 
 Voici une liste non exhaustive des fournisseurs d’accès à Internet par pays, contenant les critères de tolérance à l’[auto-hébergement](selfhosting_fr).
 
-Un « **non** » peut entraîner des problèmes d’utilisation de votre serveur ou peut vous obliger à faire des configurations supplémentaires. Le statut entre parenthèses indique le comportement par défaut.
+Un « **non** » peut entraîner des problèmes d’utilisation de votre serveur ou peut vous obliger à faire des configurations supplémentaires. Le statut entre parenthèses indique le comportement par défaut.
 
 ### France
 
 Tous les fournisseurs d’accès à Internet [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres) ont une politique favorable à l’auto-hébergement.
-* ✔ : oui
-* ✘ : non
+* ✔ : oui
+* ✘ : non
 
 | Fournisseur d’accès | [Free](/isp_free_fr) | [SFR](/isp_sfr_fr) | [Orange](/isp_orange_fr) | Bouygues<br>Télécom | Darty |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -27,7 +27,10 @@ Pour une liste plus complète et précise, référez-vous à la très bonne docu
 
 ### Belgique
 
-| Fournisseur d’accès | Box/ routeur | uPnP activable | [Port 25 ouvrable](email_fr)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | IP fixe |
+| Fournisseur d’accès | Box/routeur | uPnP activable | [Port 25 ouvrable](email_fr)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | IP fixe |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Belgacom** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
+| **Proximus** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
+| | BBox3 | oui (activé) | oui | **non** | **non** | **non** |
 | **Scarlet** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
+
+**Proximus** ne serait pas ouvert à l'auto-hébergement. L'ouverture des ports serait plus difficile afin d'éviter tout SPAM. Il serait préférable de passer par [Neutrinet](http://neutrinet.be), un des [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres).
