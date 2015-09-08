@@ -5,7 +5,9 @@ Exemple de configuration DNS pour domain.tld
 ```bash
 #### IPv4 & IPv6
 @ 900 IN A 111.222.333.444 (Minimum)
+* 900 IN A 111.222.333.444 (wildcard)
 @ 900 IN AAAA 2001:AABB:CCDD:EEFF:1122:3344:5566:7788
+* 900 IN AAAA 2001:AABB:CCDD:EEFF:1122:3344:5566:7788
 
 #### Gestion du sous-domaine www
 www 1800 IN CNAME @
