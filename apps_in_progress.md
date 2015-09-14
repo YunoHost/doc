@@ -120,6 +120,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Wordpress multisite](http://codex.wordpress.org/Create_A_Network) | Maniack Crudelis | <div class="ready"/> | [Repository](https://github.com/maniackcrudelis/wordpress_ynh) | Wordpress with network support |
 | [Yify-pop](https://github.com/yify-pop/yify-pop) | m0dm | <div class="inprogress"/> | [Repository](https://github.com/M0dM/yify-pop_ynh) | Inspired by Popcorn Time, a node web server to stream torrents from YIFY. |
 | [YaCy](http://yacy.net) | Moul | <div class="notworking"/> | [Repository](https://github.com/M5oul/yacy_ynh/) | Libre and decentralized search engine |
+| [Youtube-dl-WebUI](https://github.com/p1rox/Youtube-dl-WebUI) | rgarrigue | <div class="ready"/> | [Repository](https://github.com/rgarrigue/Youtube-dl-WebUI_ynh) |  Web interface to download audio and video based on youtube-dl writen in PHP. |
 | [Yourls](http://yourls.org/) | courgette | <div class="ready"/> | [Repository](https://github.com/courgette/yourls_ynh) |  URL Shortening service |
 | Yunofav | chtixof | <div class="ready"/> | [Repository](https://github.com/chtixof/yunofav) | Page of favorite links Yunohost-styled |
 | [Zomburl](http://cadav.re/) | courgette | <div class="inprogress"/> | [Repository](https://github.com/courgette/zomburl_ynh) | URL Shortening service |
