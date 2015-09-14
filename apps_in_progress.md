@@ -77,7 +77,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Mumble Server](http://wiki.mumble.info/wiki/Main_Page) | matlink | <div class="ready"/> | [Repository](https://github.com/matlink/mumbleserver_ynh) | Voice chat for gaming and meeting |
 | [Munin](http://munin-monitoring.org/) | ju | <div class="ready"/> | [Repository](https://github.com/julienmalik/munin_ynh) | System Monitoring graphing tool |
 | [MyCryptoChat](https://github.com/HowTommy/mycryptochat) | mrtino | <div class="ready"/> | [Repository](https://github.com/mrtino/mycryptochat_ynh) | Encrypted chat rooms manager |
-| [Odoo (Dockerized)](https://www.odoo.com) | scith | <div class="inprogress"/> | [Repository](https://github.com/scith/docker_odoo_ynh) | Odoo is a suite of business apps (ERP: CRM, Accounting, Point of Sale, HR, Purchases...). |
+| [Odoo](https://www.odoo.com) | scith | <div class="inprogress"/> | [Repository](https://github.com/scith/odoo_ynh) | Odoo is a suite of business apps (ERP: CRM, Accounting, Point of Sale, HR, Purchases...). |
 | [OFBiz](https://ofbiz.apache.org/) | julien | <div class="inprogress"/> | [Repository](https://github.com/nomakaFr/ofbiz_ynh) | ERP |
 | [OpenDKIM](http://opendkim.org/) | polytan02 | <div class="inprogress"/> | [Repository](https://github.com/polytan02/opendkim_ynh) | OpenDKIM for Yunohost installation script |
 | [OpenID](http://openid.net/) | ju | <div class="inprogress"/> | [Repository](https://github.com/julienmalik/openid-simplesamlphp_ynh) | OpenID Identity server |
@@ -109,7 +109,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [SPIP](http://www.spip.net/) | Cyp | <div class="inprogress"/> | [Repository](https://github.com/magikcypress/spip_ynh) | Web sites/blog |
 | [Subsonic](http://subsonic.org) | tifred | <div class="inprogress"/> | [Repository](https://github.com/drfred1981/subsonic_ynh) | Web-based media server |
 | [Syncthing](https://syncthing.net/) | tuxmouraille | <div class="inprogress"/> | [Repository](https://github.com/tuxmouraille/syncthing_ynh) | Sync and encrypted service |
-| [TagSpaces](http://www.tagspaces.org/) | scith | <div class="inprogress"/> | [Repository](https://github.com/scith/tagspaces_ynh) | Manage files using tags |
+| [TagSpaces](http://www.tagspaces.org/) | scith | <div class="ready"/> | [Repository](https://github.com/scith/tagspaces_ynh) | Manage files using tags |
 | [Telegram](http://www.telegram.org/) | Cyp | <div class="inprogress"/> | [Repository](https://github.com/magikcypress/telegram_ynh) | a new era of messaging |
 | Tor Client | Bleuchtang | <div class="ready"/> | [Repository](https://github.com/labriqueinternet/torclient_ynh) | Tor Client for [The Internet Cube](/installation_brique_fr) |
 | [Tor Relay](https://www.torproject.org/docs/tor-doc-relay.html.en) | matlink | <div class="inprogress"/> | [Repository](https://github.com/matlink/torrelay_ynh) | Tor node |
