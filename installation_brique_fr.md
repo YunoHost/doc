@@ -56,10 +56,10 @@ Admettons que l’adresse IP locale de la Brique soit **192.168.4.2**
 ```bash
 ssh root@192.168.4.2
 ```
-7. Mettre à jour le système (environ 10 minutes), et pré-installer les paquets qui seront nécessaires aux applications **vpnclient** et **hotspot**. Cette pré-installation n'est pas du tout indispensable puisque si ces éléments n'étaient pas présents, YunoHost les installerait au moment de l'installation des applications.
+7. Mettre à jour le système (environ 10 minutes).
+
 ```bash
 apt-get update && apt-get upgrade
-apt-get install openvpn sipcalc hostapd iw dnsmasq firmware-linux-free firmware-linux-nonfree firmware-realtek firmware-ralink
 ```
 
 ---
