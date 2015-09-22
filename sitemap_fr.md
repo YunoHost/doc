@@ -55,7 +55,7 @@
                 * [Administration avec la Moulinette](/moulinette_fr)
             * [Administration web](/admin_fr)
             * [Changer le mot de passe d'administration](/change_admin_password_fr)
-        * [Courier électronique](email_fr)
+        * [Courrier électronique](email_fr)
            * [Configuration d’un client email](email_configure_client_fr)
            * [Migration emails](email_migration_fr)
            * [Formulaires pour enlever son adresse IP des listes noires](blacklist_forms_fr)
