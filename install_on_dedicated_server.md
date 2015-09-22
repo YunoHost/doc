@@ -7,7 +7,7 @@
 <img src="https://yunohost.org/images/vps.png" width=250>
 
 * A dedicated server **OR** a VPS with at least **256MB** RAM
-* A **Debian 7** OS up and running on it
+* A **Debian 7** or **Debian 8** OS up and running on it
 
 ---
 
