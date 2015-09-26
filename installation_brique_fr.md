@@ -29,8 +29,8 @@ L’ordre des étapes est important.
 ```bash
 % cd /tmp/
 % wget http://repo.labriqueinter.net/labriqueinternet_latest_jessie.img.tar.xz
-% tar -xf labriqueinternet_latest_jessie.img.tar.xz
-% sha512sum labriqueinternet_latest_jessie.img
+% tar -xf labriqueinternet_*.img.tar.xz
+% sha512sum labriqueinternet_*.img
 ```
 
 2. Identifier le nom de la carte micro-SD en tapant la commande `ls -1 /sys/block/`, en insérant la carte micro-SD (éventuellement à l'aide d'un adaptateur) dans son ordinateur, puis en retapant la commande `ls -1 /sys/block/`. Le nom de la carte micro-SD correspond à la ligne qui apparaît en plus après la seconde saisie (e.g. *sdb* ou *mmcblk0*).
