@@ -29,7 +29,7 @@ L’ordre des étapes est important.
 ```bash
 % cd /tmp/
 % wget http://repo.labriqueinter.net/labriqueinternet_latest_jessie.img.tar.xz
-% tar xf labriqueinternet_latest_jessie.img.tar.xz
+% tar -xf labriqueinternet_latest_jessie.img.tar.xz
 % sha512sum labriqueinternet_latest_jessie.img
 ```
 
