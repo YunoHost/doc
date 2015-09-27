@@ -25,19 +25,20 @@ L’ordre des étapes est important.
 
 ## Étapes préliminaires
 
-1. Télécharger l’[image](http://repo.labriqueinter.net/labriqueinternet_latest_jessie.img.tar.xz), la décompresser, puis valider son *checksum* (en comparant la valeur de retour de la dernière commande avec [celle sur le site](http://repo.labriqueinter.net/SHA512SUMS)) :
+1. Télécharger l’[image](http://repo.labriqueinter.net/labriqueinternet_latest_jessie.img.tar.xz), la valider son *checksum* (en comparant la valeur de retour de la dernière commande avec [celle sur le site](http://repo.labriqueinter.net/SHA512SUMS)), puis la décompresser :
 ```bash
 % cd /tmp/
 % wget http://repo.labriqueinter.net/labriqueinternet_latest_jessie.img.tar.xz
-% sha512sum labriqueinternet_*.img.xz
+% sha512sum labriqueinternet_*.img.tar.xz
 % tar -xf labriqueinternet_*.img.tar.xz
+% mv labriqueinternet_*.img labriqueinternet.img
 ```
 
-2. Identifier le nom de la carte micro-SD en tapant la commande `ls -1 /sys/block/`, en insérant la carte micro-SD (éventuellement à l'aide d'un adaptateur) dans son ordinateur, puis en retapant la commande `ls -1 /sys/block/`. Le nom de la carte micro-SD correspond à la ligne qui apparaît en plus après la seconde saisie (e.g. *sdb* ou *mmcblk0*).
+2. Identifier le nom de la carte micro-SD (SDNAME) en tapant la commande `ls -1 /sys/block/`, en insérant la carte micro-SD (éventuellement à l'aide d'un adaptateur) dans son ordinateur, puis en retapant la commande `ls -1 /sys/block/`. Le nom de la carte micro-SD (SDNAME) correspond à la ligne qui apparaît en plus après la seconde saisie (e.g. *sdb* ou *mmcblk0*).
 
 3. Copier l'image sur la carte (remplacer *SDNAME* par le nom trouvé lors de l'étape précédente) :
 ```bash
-sudo dd if=/tmp/labriqueinternet_latest_jessie.img of=/dev/SDNAME bs=1M
+sudo dd if=/tmp/labriqueinternet.img of=/dev/SDNAME bs=1M
 ```
 
 4. **Uniquement pour le modèle LIME2** : Monter la carte micro-SD et changer le lien symbolique suivant :
@@ -48,22 +49,26 @@ sudo dd if=/tmp/labriqueinternet_latest_jessie.img of=/dev/SDNAME bs=1M
 % sudo ln -sf /boot/dtb/sun7i-a20-olinuxino-lime2.dtb board.dtb
 ```
 
-5. Mettre la carte micro-SD dans une Brique, brancher le câble Ethernet et l’alimentation. Elle démarre normalement toute seule, et les LEDs du port Ethernet se mettent à clignoter au bout de 10 secondes maximum.
+5. Mettre la carte micro-SD dans une Brique, connecter la brique à votre routeur avec le câble Ethernet, puis brancher l’alimentation. La brique démarre normalement toute seule, et les LEDs du port Ethernet se mettent à clignoter au bout de 10 secondes maximum.
 <div class="alert alert-warning" markdown="1">
 Le premier démarrage peut mettre une grosse minute car la partition est redimensionnée et le serveur est redémarré automatiquement.
 </div>
 
-6. Récupérer l’adresse IP locale de la Brique, soit avec une commande comme `arp-scan --local | grep -P '\t02'`, soit via l'interface du routeur listant les clients DHCP, soit en branchant un écran en HDMI à la Brique.
+6. Récupérer l’adresse IP locale de la Brique :
+* avec une commande comme `arp-scan --local | grep -P '\t02'`
+* soit via l'interface du routeur listant les clients DHCP
+* soit en branchant un écran en HDMI à la Brique, et en exécutant `ifconfig`
 <div class="alert alert-info" markdown="1">
-Admettons que l’adresse IP locale de la Brique soit **192.168.4.2**
+Pour les commandes suivantes, nous admettons que l’adresse IP locale de la Brique est **192.168.4.2**. Remplacer par l'adresse IP précédement déterminée.
 </div>
 
-7. Se connecter en SSH en root à la Brique, le mot de passe est **olinux** par défaut (un changement de mot de passe sera demandé à la première connexion) :
+7. Se connecter en SSH en root à la Brique, le mot de passe est **olinux** par défaut :
 ```bash
 % ssh root@192.168.4.2
 ```
+À la première connexion, il sera demandé de changer le mot de passe : entrer à nouveau **olinux**, puis saisir deux fois votre nouveau mot de passe.
 
-8. Mettre à jour le système (environ 10 minutes) :
+8. Mettre à jour le système (environ 15 minutes) :
 ```bash
 % sudo apt-get update && sudo apt-get dist-upgrade
 ```
@@ -71,7 +76,7 @@ Admettons que l’adresse IP locale de la Brique soit **192.168.4.2**
 ## Étapes de configuration
 
 <div class="alert alert-info" markdown="1">
-Ici nous installons la Brique de **michu.nohost.me** (à remplacer par le nom de domaine choisi).
+Nous installons ici la Brique de **michu.nohost.me**. Remplacer ce nom par le nom de domaine choisi (et comme précédemment l'IP 192.168.4.2 par celle de la brique)
 </div>
 
 1. Mettre à jour le fichier `/etc/hosts` de son ordinateur client pour pouvoir accéder à la Brique en local via **michu.nohost.me**, en ajoutant à la fin :
@@ -81,7 +86,7 @@ Ici nous installons la Brique de **michu.nohost.me** (à remplacer par le nom de
 
 2. Procéder à la [postinstallation](/postinstall_fr) en se connectant à la Brique sur https://michu.nohost.me (accepter l'exception de sécurité du certificat).
 <div class="alert alert-info" markdown="1">
-**Note :** il est possible de réaliser cette étape en ligne de commande via SSH en exécutant `yunohost tools postinstall`
+**Note :** il est également possible de réaliser cette étape en ligne de commande via SSH en exécutant `yunohost tools postinstall`.
 </div>
 
 3. **Créer le premier utilisateur** : se rendre dans l’interface d’administration YunoHost (ici https://michu.nohost.me/yunohost/admin), entrer le mot de passe d’administration puis se rendre dans **Utilisateurs** > **Nouvel utilisateur**.
@@ -91,7 +96,7 @@ Il faudra entrer un **nom d’utilisateur** sans majuscule/espace/tiret, un **no
 
 4. **Installer l’application VPN Client** : se rendre dans **Applications** > **Installer**, et entrer `https://github.com/labriqueinternet/vpnclient_ynh` dans le champs **URL** du formulaire **Installer une application personnalisée** tout en bas de la page.
 
-5. (optionnel) **Restreindre l’accès à l’application VPN Client** : se rendre dans **Applications** > **VPN Client** > **Accès** et sélectionner l’utilisateur précédemment créé, de sorte que les futurs potentiels nouveaux utilisateurs ne puissent pas modifier les paramètres d’accès VPN.
+5. **Restreindre l’accès à l’application VPN Client** (optionnel) : se rendre dans **Applications** > **VPN Client** > **Accès** et sélectionner l’utilisateur précédemment créé, de sorte que les futurs potentiels nouveaux utilisateurs ne puissent pas modifier les paramètres d’accès VPN.
 
 6. **Configurer l’application VPN Client** : se connecter à l’**interface utilisateur** (ici https://michu.nohost.me/yunohost/sso/) et entrer les identifiants de l’utilisateur précédemment créé. Vous devriez voir apparaître **VPN Client** dans votre liste d’application :
 <div><a title="screenshot_vpnclient" target="_blank" href="https://raw.githubusercontent.com/labriqueinternet/vpnclient_ynh/master/screenshot.png">
