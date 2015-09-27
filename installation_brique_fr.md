@@ -94,7 +94,7 @@ Nous installons ici la Brique de **michu.nohost.me**. Remplacer ce nom par le no
 Il faudra entrer un **nom d’utilisateur** sans majuscule/espace/tiret, un **nom/prénom/pseudo** en deux parties (obligatoires, merci LDAP) qui correspondra au nom qui apparaîtra sur les futurs emails de l’utilisateur, ainsi qu'un **quota d’email** éventuel et un **mot de passe** (*à ne pas confondre avec le mot de passe d’administration dans ce cas*).
 </div>
 
-4. **Installer l’application VPN Client** : se rendre dans **Applications** > **Installer**, et entrer `https://github.com/labriqueinternet/vpnclient_ynh` dans le champs **URL** du formulaire **Installer une application personnalisée** tout en bas de la page. L'adresse du serveur peut être configurée plus tard (utiliser par exemple `dummy.vps.srv`).
+4. **Installer l’application VPN Client** : se rendre dans **Applications** > **Installer**, et entrer `https://github.com/labriqueinternet/vpnclient_ynh` dans le champs **URL** du formulaire **Installer une application personnalisée** tout en bas de la page. L'adresse du serveur peut être configurée plus tard (utiliser par exemple `dummy.vpn`).
 
 5. **Restreindre l’accès à l’application VPN Client** (optionnel) : se rendre dans **Applications** > **VPN Client** > **Accès** et sélectionner l’utilisateur précédemment créé, de sorte que les futurs potentiels nouveaux utilisateurs ne puissent pas modifier les paramètres d’accès VPN.
 
