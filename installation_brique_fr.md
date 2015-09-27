@@ -1,7 +1,11 @@
 # Installation d’une Brique Internet
 
 <div class="alert alert-info" markdown="1">
-Site du projet **La Brique Internet** : http://labriqueinter.net/
+Cette documentation s'adresse à des personnes qui ont **quelques notions d'informatique** et qui souhaitent installer eux-même leur Brique Internet.
+
+Pour obtenir une **Brique clé-en-main** et pouvoir l'utiliser directement sans avoir besoin de connaissances particulières, il faut se rapprocher d'une association locale qui fournit des Briques Internet à leurs adhérents, comme celles référencées sur [le site de FFDN](http://db.ffdn.org).
+
+Site du projet *La Brique Internet* : http://labriqueinter.net
 </div>
 
 ![brique](https://yunohost.org/images/thisisinternet.png)
