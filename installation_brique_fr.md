@@ -55,9 +55,11 @@ Le premier démarrage peut mettre une grosse minute car la partition est redimen
 </div>
 
 6. Récupérer l’adresse IP locale de la Brique :
-* avec une commande comme `arp-scan --local | grep -P '\t02'`
-* soit via l'interface du routeur listant les clients DHCP
-* soit en branchant un écran en HDMI à la Brique, et en exécutant `ifconfig`
+<ul>
+<li>soit avec une commande comme `arp-scan --local | grep -P '\t02'`,</li>
+<li>soit via l'interface du routeur listant les clients DHCP,</li>
+<li>soit en branchant un écran en HDMI à la Brique, et en exécutant `ifconfig`.</li>
+</ul>
 <div class="alert alert-info" markdown="1">
 Pour les commandes suivantes, nous admettons que l’adresse IP locale de la Brique est **192.168.4.2**. Remplacer par l'adresse IP précédement déterminée.
 </div>
@@ -117,7 +119,12 @@ topology subnet</code></pre>
 
 8. **TESTER** : la Brique devrait être accessible via l’IP publique que sa connexion VPN lui procure. Si l’utilisateur a opté pour un nom de domaine en **.nohost.me**, patienter quelques minutes que son IP se propage sur le serveur DNS de YunoHost. Si l’utilisateur a opté pour son propre nom de domaine, c’est le moment de [configurer ses enregistrements DNS](/dns_config_fr) correctement chez son registrar.
 Si tout se passe bien côté **hotspot**, un réseau WiFi du nom choisi par l’utilisateur à l’étape 7 devrait être visible, et devrait vous router tout bien vers l’Internet.
-Il est possible de regarder l’IP avec laquelle on sort sur Internet : [IPv6](http://ip6.yunohost.org) / [IPv4](http://ip.yunohost.org).
+Il est possible de regarder l’IP avec laquelle on sort sur Internet ([IPv4](http://ip.yunohost.org) / [IPv6](http://ip6.yunohost.org)) :
+```bash
+% host $(wget -qO- ip.yunohost.org)
+% host $(wget -qO- ip6.yunohost.org)
+```
+Si le retour des deux commandes précédentes contient le nom du fournisseur d'accès VPN, c'est que la Brique fait bien accéder à Internet via le VPN.
 
 # Étapes supplémentaires <small>(pour une Brique idéale)</small>
 
