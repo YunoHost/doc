@@ -49,6 +49,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [MaidSafe](http://maidsafe.net/)
 * [Mailman](https://www.gnu.org/software/mailman/)
 * [Mailpile](https://www.mailpile.is)
+* [MatterMost](https://github.com/mattermost/platform)
 * [MediaCrush](https://imgrush.com/)
 * [Mini Jappix](https://github.com/jappix/jappix/wiki/JappixMini)
 * [MinigalNano](https://github.com/sebsauvage/MinigalNano)
