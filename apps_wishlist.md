@@ -19,6 +19,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [CumulusClips](http://cumulusclips.org/)
 * [DemocracyOS](http://democracyos.org/)
 * [Discourse](http://discourse.org/)
+* [Dolibarr](http://www.dolibarr.fr/)
 * [Ethersheet](https://ethersheet.org/)
 * [Fail2web](https://github.com/Sean-Der/fail2web)
 * [FileTea](https://filetea.me)
