@@ -66,5 +66,6 @@ Si vous avez besoin d'une vm pour tester quelque chose avec wheezy ou la version
 | testing7 | 192.168.33.71 |
 | unstable7 | 192.168.33.72 |
 
+Les adresses IPs sont assignées par défaut mais peuvent être changées dans les paramètres réseau du Vagrantfile.
 
 
