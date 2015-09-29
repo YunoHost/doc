@@ -66,4 +66,4 @@ If you need a vm to test something with wheezy or testing/unstable version of Yu
 | testing7 | 192.168.33.71 |
 | unstable7 | 192.168.33.72 |
 
-
+The IP addresses related to the boxes are set by default but can be changed in the network settings. 
