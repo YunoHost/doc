@@ -2,7 +2,7 @@
 
 * [How to contribute](/contribute)
 * [What is YunoHost](/whatsyunohost)
-    * Développement
+    * Developpement
         * [Roadmap](/roadmap)
         * [List of available applications](/apps)
         * [Package new applications](/packaging_apps)
