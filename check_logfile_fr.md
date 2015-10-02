@@ -2,7 +2,11 @@
 
 ## accéder à un fichier de log
 
+### Accéder aux logs par l'interface d'administration
 https://domaine.tld/yunohost/admin/#/services
+
+### En ligne de commande
+[accéder au serveur en ssh](ssh_fr)
 
 ## Liste des services
 
