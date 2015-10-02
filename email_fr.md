@@ -23,7 +23,7 @@ La messagerie électronique est basée sur les protocoles SMTP pour l'envoi de m
 * [Dovecot](http://www.dovecot.org/) pour le serveur IMAP.
 * [Amavis](http://amavis.org/) logiciel antispam, filtrant les messages indésirables.
 
-Pour approfondir la compréhension du courriel et de ses protocoles, voici une [conférence éclairante](https://www.youtube.com/watch?v=f_ORZDNHMXM).
+Pour approfondir la compréhension du courriel et de ses protocoles, voici une [conférence éclairante](https://www.youtube.com/watch?v=f_ORZDNHMXM) (en français).
 
 ### Sommaire
 * [Ouverture des ports de la box](/isp_box_config_fr)
