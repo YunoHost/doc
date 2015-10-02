@@ -9,7 +9,7 @@ Pour relever simplement ses [courriels](https://fr.wikipedia.org/wiki/Courrier_%
 #### Client de messagerie alternatif
 Vous pouvez également configurer un [client de messagerie indépendant](email_configure_client_fr), pour par exemple relever les messages de plusieurs adresses courriel simultanément ou [relever vos courriels depuis un smartphone](email_configure_client_fr#K9mail).
 
-### Configuration pour la messagerie
+### Configurations supplémentaires pour la messagerie
 
 #### Configurer les DNS MX
 Si vous avez opté pour un nom de domaine personnel, il est nécessaire de [configurer votre serveur DNS](/dns_config_fr) pour faire fonctionner la messagerie électronique.
