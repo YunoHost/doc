@@ -1,13 +1,15 @@
 # DKIM
 
-##### Notes :
+Le protocole SMTP ne prévoit pas de mécanisme de vérification de l'expéditeur. Il est donc possible d'envoyer un courrier avec une adresse d'expéditeur factice ou usurpée. SPF et DKIM sont deux méchanismes d'authentification de l'expéditeur d'un email.
+
+#### Notes :
 
 * Ceci est la deuxième version de ce travail en cours concernant l'activation de [DKIM](https://fr.wikipedia.org/wiki/DomainKeys_Identified_Mail) et [SPF](https://fr.wikipedia.org/wiki/Sender_Policy_Framework) dans YunoHost.
 * Le DKIM et le SPF empêche le fait que des courriels puissent être envoyer avec votre nom de domaine à partir d’un autre serveur que le serveur légitime. Ceci évite le spam.
 * En attendant que tout ceci soit intégré nativement dans YunoHost, cela nécessitera une modification de la configuration de Postfix dans `/etc/postfix/main.cf`.
 * Pour fonctionner correctement, DKIM nécessite une modification de votre [zone DNS](/dns_config_fr). N'oubliez pas que la propagation de l'information DNS une fois modifiée peut prendre jusqu'à 24h !
 
-##### Sources :
+#### Sources :
 * Ce document a été initialement basé sur : http://sealedabstract.com/code/nsa-proof-your-e-mail-in-2-hours/ de Drew Crawford.
 * Cette 2ème révision s'appuie beaucoup sur : https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy from Popute Sebastian Armin
 
