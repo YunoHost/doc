@@ -7,7 +7,7 @@ Pour relever simplement ses [courriels](https://fr.wikipedia.org/wiki/Courrier_%
 <img src="https://yunohost.org/images/mailview.jpg" width=650>
 
 #### Client de messagerie externe
-Vous pouvez également configurer un [client de messagerie indépendant](email_configure_client_fr), pour par exemple relever les messages de plusieurs adresses courriel simultanément ou depuis un smartphone.
+Vous pouvez également configurer un [client de messagerie indépendant](email_configure_client_fr), pour par exemple relever les messages de plusieurs adresses courriel simultanément ou relever vos courriels depuis un smartphone.
 
 ### Configuration pour la messagerie
 
