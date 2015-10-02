@@ -1,12 +1,8 @@
 # Messagerie électronique
 
-Pour relever simplement ses mails Yunohost fournit le client [Rouncube](https://roundcube.net/) que vous pouvez installer depuis l'interface d'administration :
+Pour relever simplement ses mails, YunoHost fournit le client web [Rouncube](https://roundcube.net/) que vous pouvez installer depuis l’interface d’administration :
 
-
-
-
-
-La messagerie électronique est basée sur les protocoles SMTP pour l'envoi de mail et IMAP pour la récupération des mails sur le serveur :
+La messagerie électronique est basée sur les protocoles SMTP pour l’envoi de mail et IMAP pour la récupération des mails sur le serveur :
 
 ### Sommaire
 * [Configuration d’un client email](email_configure_client_fr)
