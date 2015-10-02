@@ -1,7 +1,7 @@
 # Documentation utilisateur
 
 * [Interface utilisateur](user_interface)
-* [La messagerie électronique](/email_fr)
+* [La messagerie électronique (email)](/email_fr)
 * [Utiliser la messagerie instantanée XMPP](/XMPP_fr)
 * [Applications officielles](/apps_fr)        
     * [Firefox Sync](/app_ffsync_fr)
