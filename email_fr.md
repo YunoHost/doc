@@ -31,7 +31,7 @@ Si les courriels envoyés à un type d'adresse spécifique (par exemples les adr
 
 #### Consulter les fichier de log pour identifier le problème
 
-De nombreux messages permettant d'identifier les problèmes se trouvent enregistrés dans les fichiers de log du système. Apprenez à les consulter, pour pouvoir mieux comprendre ce qui cloche et trouver de l'aide sur le forum ou le canal IRC.
+De nombreux messages permettant d'identifier les problèmes se trouvent enregistrés dans les fichiers de log du système. [Apprenez à les consulter](check_logfile_fr), pour pouvoir mieux comprendre ce qui cloche et trouver de l'aide sur le forum ou le canal IRC.
 
 <!-- ajouter une doc pour consulter ses logs des services mail -->
 
