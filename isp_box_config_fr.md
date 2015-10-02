@@ -10,10 +10,13 @@ Allez à l’adresse suivante : http://192.168.0.1 (ou celle-ci http://192.168.1
 L’ouverture des ports suivants est nécessaire au fonctionnement des différents services.
 
 **TCP :**
-   * Web : 80, 443
+   * Web : 80 <small>(HTTP)</small>, 443 <small>(HTTPS)</small>
    * [SSH](ssh_fr) : 22
-   * [XMPP](XMPP_fr) : 5222, 5269
-   * [Courriel](email_fr) : 25, 465, 993
+   * [XMPP](XMPP_fr) : 5222 <small>(clients)</small> , 5269 <small>(serveurs)</small>
+   * [Courriel](email_fr) : 25, 465 <small>(SMTP)</small>, 993 <small>(IMAP)</small>
+   * [DNS](dns_fr) : 53
+
+**UDP :**
    * [DNS](dns_fr) : 53
 
 ---
