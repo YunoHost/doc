@@ -2,7 +2,7 @@
 
 ## accéder à un fichier de log
 
-https://<domaine.tld>/yunohost/admin/#/services
+https://domaine.tld/yunohost/admin/#/services
 
 ## Liste des services
 
