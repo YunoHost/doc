@@ -9,6 +9,9 @@ Pour relever simplement ses [courriels](https://fr.wikipedia.org/wiki/Courrier_%
 #### Client de messagerie alternatif
 Vous pouvez également configurer un [client de messagerie indépendant](email_configure_client_fr), pour par exemple relever les messages de plusieurs adresses courriel simultanément ou [relever vos courriels depuis un smartphone](email_configure_client_fr#K9mail).
 
+#### Transférer (migrer) ses mails depuis un autre serveur
+Suivez [ce guide](email_migration_fr) pour transférer vos mails sur votre serveur Yunohost grâce au protocole IMAP.
+
 ### Configurations supplémentaires pour la messagerie
 
 #### Configurer les DNS MX
@@ -33,8 +36,3 @@ La messagerie électronique est basée sur les protocoles SMTP pour l'envoi de m
 * [Amavis](http://amavis.org/) logiciel antispam, filtrant les messages indésirables.
 
 Pour approfondir votre compréhension du courriel et de ses protocoles, voici une [conférence éclairante](https://www.youtube.com/watch?v=f_ORZDNHMXM) (en français).
-
-
-
-### Sommaire
-* [Migration emails](email_migration_fr)
