@@ -27,7 +27,7 @@ Le protocole SMTP ne prévoit pas de mécanisme de vérification de l'expéditeu
 
 #### Votre serveur est sur une liste noire...
 
-Si les courriels envoyés à un type d'adresse spécifique (par exemples les adresses gmail) n'arrivent pas à destination, votre serveur (son adresse IP) a peut être été ajouté à la liste noire du fournisseurs d'adresse courriel en question : [formulaires de retrait de liste noires](blacklist_forms_fr)
+Si les courriels envoyés à un type d'adresse spécifique (par exemples les adresses gmail) n'arrivent pas à destination, votre serveur (son adresse IP) a peut être été ajouté à la liste noire du fournisseur d'adresse courriel en question : [formulaires de retrait de liste noires](blacklist_forms_fr)
 
 ### Aller plus loin
 La messagerie électronique est basée sur les protocoles SMTP pour l'envoi de mail et IMAP (ou anciennement POP3) pour la récupération des messages depuis un serveur. En arrière plan, Yunohost fournit :
