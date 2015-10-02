@@ -21,7 +21,7 @@ Si vous avez opté pour un nom de domaine personnel, il est nécessaire de [conf
 Vérifiez également que les ports correspondant à la messagerie (n° 25, 465, 993) sont bien ouverts au niveau de votre box/routeur : [Ouverture des ports de la box](/isp_box_config_fr)
 
 #### Configurer l'authentification DKIM/SPF (facultatif)
-Le protocole SMTP ne prévoit pas de mécanisme de vérification de l'expéditeur. Il est donc possible d'envoyer un courrier avec une adresse d'expéditeur factice ou usurpée. SPF et DKIM sont deux méchanismes possible d'authentification de l'expéditeur d'un email : [configurer DKIM/SPF](dkim_fr)<--! compliqué, à clarifier ? -->
+Le protocole SMTP ne prévoit pas de mécanisme de vérification de l'expéditeur. Il est donc possible d'envoyer un courrier avec une adresse d'expéditeur factice ou usurpée. SPF et DKIM sont deux méchanismes possible d'authentification de l'expéditeur d'un email : [configurer DKIM/SPF](dkim_fr)<!-- compliqué, à clarifier ? -->
 
 ### Résoudre les problèmes
 
