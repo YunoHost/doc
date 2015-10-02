@@ -1,6 +1,10 @@
 #Consulter les fichiers de log du système
 
+## accéder à un fichier de log
+
 https://<domaine.tld>/yunohost/admin/#/services
+
+## Liste des services
 
 ### Services courriels
 
@@ -12,7 +16,7 @@ mail.log
 
 amavis
 
-### Serveur web NGINX
+### Serveur web
 
 nginx
 
