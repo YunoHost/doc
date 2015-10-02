@@ -13,9 +13,9 @@ Pour accéder aux fichiers de log, la méthode traditionnelle consiste à [accé
 
 ```bash
 sudo tail -f chemin/du/fichier/log
-```bash
-Par exemple pour le fichier de log concernant les services de messagerie électronique:
 ```
+Par exemple pour le fichier de log concernant les services de messagerie électronique:
+```bash
 sudo tail -f /var/log/mail.log
 ```
 affiche une sortie dans laquelle chaque ligne est un message écrit par un service lié aux mail:
