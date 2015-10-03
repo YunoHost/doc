@@ -145,7 +145,7 @@ echo "* * * * * root /sbin/ifconfig tun0 > /dev/null 2>&1 || systemctl restart y
 ```
 
 * **Arrêter le service Amavis** :
-Amavis est un antivirus qui s’occupe de regarder si les pièces jointes des emails ne sont pas vérolées. Il est très lourd et tombe souvent en panne sur des petites machines comme la Brique. Pour arrêter Amavis (ce qui arrêtera aussi l'antispam), éditer le fichier `/etc/postfix/main.cf` et commenter la ligne 90 (normalement) :
+Amavis est un antivirus qui s’occupe de regarder si les pièces jointes des emails ne sont pas vérolées. Il est très lourd et tombe souvent en panne sur des petites machines comme la Brique. Pour arrêter Amavis, éditer le fichier `/etc/postfix/main.cf` et commenter la ligne 90 (normalement) :
 ```bash
 #content_filter = amavis:[127.0.0.1]:10024
 ```
