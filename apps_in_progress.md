@@ -52,8 +52,8 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 | [Gitolite](https://github.com/sitaramc/gitolite) | matlink | <div class="inprogress"/> | [Repository](https://github.com/matlink/gitolite_ynh) | Hosting git repositories |
 | [Gitweb](https://git.wiki.kernel.org/index.php/Gitweb) | matlink | <div class="inprogress"/> | [Repository](https://github.com/matlink/gitweb_ynh) | Web interface for git |
 | [GLPI + FusionInventory](http://www.glpi-project.org/?lang=en) | beudbeud | <div class="ready"/> | [Repository](https://github.com/abeudin/glpi_ynh) | IT And Asset managent |
-| [Gogs](http://gogs.io/) | tostaki | <div class=" inprogress"/> | [Repository](https://github.com/mbugeia/gogs_ynh) | self-hosted Git service |
-| [Headphones](https://github.com/rembo10/headphones) | Snipees | <div class=" inprogress"/> | [Repository](https://github.com/Snipees/headphones_ynh) | Automatic music downloader for SABnzbd. |
+| [Gogs](http://gogs.io/) | tostaki | <div class="inprogress"/> | [Repository](https://github.com/mbugeia/gogs_ynh) | self-hosted Git service |
+| [Headphones](https://github.com/rembo10/headphones) | Snipees | <div class="inprogress"/> | [Repository](https://github.com/Snipees/headphones_ynh) | Automatic music downloader for SABnzbd. |
 | [Jeedom](http://jeedom.fr) | lunarok | <div class="ready"/> | [Repository](https://github.com/lunarok/jeedom_ynh) | Home automation |
 | [Jenkins](http://jenkins-ci.org/) | ju | <div class="ready"/> | [Repository](https://github.com/julienmalik/jenkins_ynh) | Continuous Integration platform |
 | [Jitsi Meet](https://jitsi.org/Projects/JitsiMeet) | ju | <div class="inprogress"/> | [Repository](https://github.com/julienmalik/jitsi_ynh) | Audio/Video web conferencing |
