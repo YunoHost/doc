@@ -158,7 +158,7 @@ systemctl disable amavis
 
 * **Mettre à jour la configuration SSH** : par défaut, la connexion en tant que **root** est possible sur la Brique. Pour ne garder que la connexion en tant qu’**admin** (qui est sudoer), il convient d’éditer le `/etc/ssh/sshd_config` et de passer **PermitRootLogin** à **without-password**.
 
-* **Configurer le reverse DNS** : pour s’assurer du bon fonctionnement du serveur email, il est recommandé de configurer un reverse DNS pour son IP. En tant que FAI associatif, c’est un service faisable, autant le demander !
+* **Configurer le reverse DNS** : pour s’assurer du bon fonctionnement du serveur email, il est recommandé de configurer un reverse DNS pour son IP. Il faut s'adresser au fournisseur de VPN. En tant que FAI associatif, c’est un service faisable, autant le demander !
 
 * **Configurer le DKIM** : avec un SPF et un PTR bien configurés dans les DNS, les emails envoyés par la Brique ne devraient pas être considérés comme spam. Ceci dit, GMail et d’autres dégraderont considérablement le spamscore si le DKIM n’est pas configuré également.
 Cette opération est longue mais à considérer pour avoir un serveur email irréprochable en production. Plus de renseignement sur [la page de documentation appropriée](/dkim_fr).
