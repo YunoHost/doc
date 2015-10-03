@@ -27,7 +27,7 @@ L’ordre des étapes est important.
 
 ## Étapes préliminaires
 
-1. Télécharger l’[image](http://repo.labriqueinter.net/labriqueinternet_latest_jessie.img.tar.xz), la valider son *checksum* MD5, puis la décompresser :
+1. Télécharger l’image ( [lime1](http://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz) ou [lime2](http://repo.labriqueinter.net/labriqueinternet_A20LIME2_latest_jessie.img.tar.xz) ), la valider son *checksum* MD5, puis la décompresser :
 ```bash
 % cd /tmp/
 % wget http://repo.labriqueinter.net/labriqueinternet_latest_jessie.img.tar.xz
