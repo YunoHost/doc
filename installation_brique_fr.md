@@ -99,10 +99,15 @@ Il faudra entrer un **nom d’utilisateur** sans majuscule/espace/tiret, un **no
 <div><a title="screenshot_vpnclient" target="_blank" href="https://raw.githubusercontent.com/labriqueinternet/vpnclient_ynh/master/screenshot.png">
 <img style="border-radius: 5px; border: 5px solid #eee; max-width: 800px" src="https://raw.githubusercontent.com/labriqueinternet/vpnclient_ynh/master/screenshot.png" />
 </a></div>
-De manière générale, il convient bien sûr d’éditer les paramètres en fonction de son fournisseur d’accès VPN. Ce dernier devra vous fournir des certificats et/ou des identifiants ainsi qu'un préfixe délégué IPv6. Pour Neutrinet, dans **Advanced**, il faudra également ajouter trois directives spécifiques :
+De manière générale, il convient bien sûr d’éditer les paramètres en fonction de son fournisseur d’accès VPN. Ce dernier devra vous fournir des certificats et/ou des identifiants ainsi qu'un préfixe délégué IPv6. 
+
+<div class="alert alert-info" markdown="1">
+Pour Neutrinet, dans **Advanced**, il faudra également ajouter trois directives spécifiques :
 <pre><code>resolv-retry infinite
 ns-cert-type server
 topology subnet</code></pre>
+</div>
+
 <div class="alert alert-warning" markdown="1">
 **Attention** : le redémarrage du service, déclenché par le bouton **Save and reload**, peut mettre quelques minutes.
 </div>
