@@ -1,6 +1,6 @@
-#Apps officielles&nbsp;&nbsp;<img src="https://yunohost.org/images/roundcube.png"><img src="https://yunohost.org/images/ttrss.png"><img src="https://yunohost.org/images/wordpress.png"><img src="https://yunohost.org/images/transmission.png"><img src="https://yunohost.org/images/jappix.png">
+#Apps officielles&nbsp;&nbsp;<img src="https://yunohost.org/images/roundcube.png" width=50><img src="https://yunohost.org/images/ttrss.png" width=50><img src="https://yunohost.org/images/wordpress.png" width=50><img src="https://yunohost.org/images/transmission.png" width=50><img src="https://yunohost.org/images/jappix.png" width=50><img src="https://yunohost.org/images/logo-jirafeau.jpeg" width=50><img src="https://yunohost.org/images/Logo-wallabag-svg.svg" width=50><img src="https://yunohost.org/images/Searx_logo.svg" width=50>
 
-<a class="btn btn-lg btn-default" href="/apps_fr">Apps officielles</a> <a class="btn btn-lg btn-default" href="/apps_in_progress_fr">Apps en cours</a> <a class="btn btn-lg btn-default" href="/apps_wishlist_fr">Apps souhaitées</a>
+<a class="btn btn-lg btn-default" href="/apps_fr" disabled>Apps officielles</a> <a class="btn btn-lg btn-default" href="/apps_in_progress_fr">Apps en cours</a> <a class="btn btn-lg btn-default" href="/apps_wishlist_fr">Apps souhaitées</a>
 
 <div class="panel-group" id="app-accordion"></div>
 
