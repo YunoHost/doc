@@ -27,11 +27,11 @@ The packagers will appreciate your remarks. If you test them and find issues, or
     </div>
     <div class="panel-collapse collapse app_{app_id}">
       <div class="panel-body">
+        <div class="{app_state}"/>
         <p><strong>Description</strong>: {app_description}</p>
         <p><strong>Last update (UTC)</strong>: {app_update}</p>
         <p><strong>Maintainer</strong>: {app_maintainer} <small class="text-muted">({app_mail})</small></p>
         <p><strong>Git</strong>: <a href="{app_git}" target="_blank">{app_git}</a> <small class="text-muted">({app_branch})</small></p>
-        <div class="{app_state}"/>
     </div>
   </div>
 </script>
