@@ -178,6 +178,5 @@ Cette opération est longue mais à considérer pour avoir un serveur email irr�
 
 ## Notes
 
-* **Attention à la RAM** : sur le modèle A20-OLinuXino-LIME, les **512 Mo** partent vite. Les applications PHP ne sont pas très gourmandes, mais Searx et Etherpad Lite sont par exemple à installer avec des pincettes.
+* **Attention à la RAM** : sur le modèle A20-OLinuXino-LIME, les **512 Mo** partent vite. Les applications PHP ne sont pas très gourmandes, mais Searx et Etherpad Lite sont par exemple à installer avec des pincettes. Ce sont Amavis et mySQL qui consomment le plus de RAM. Amavis sera bientôt remplacé par rspamd qui est moins gourmand en ressources. Toutes les apps officielles fonctionnent sans problème de RAM avec le A20-OLinuXino-LIME2 (qui a 1Go de RAM). 
 
-* **Glances ne fonctionne pas** sur l’image *labriqueinternet_04-06-2015_jessie.img*, ce qui rend l’onglet **État du serveur** inaccessible dans l’interface d’administration de YunoHost. Une mise à jour future du noyau sera à prévoir pour corriger le problème.
