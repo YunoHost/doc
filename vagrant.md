@@ -18,28 +18,18 @@ mkdir YunoHost
 cd YunoHost
 ```
 
-The following command will initialize the project with a Debian Wheezy base image
+The following command will initialize the project with a Yunohost image based on Debian Jeesie
 ```bash
-vagrant init chef/debian-7.7
+vagrant init yunohost/stable8
 ```
 <blockquote>
-<span class="text-warning">/!\</span> You must have a working image call `chef/debian-7.7`. If not, just do 
-`vagrant box add chef/debian-7.7 https://vagrantcloud.com/chef/boxes/debian-7.7/versions/1.0.0/providers/virtualbox.box`
+<span class="text-warning">/!\</span> You must have a working image call `yunohost/stable8`. If not, just do 
+`vagrant box add yunohost/stable8 https://atlas.hashicorp.com/yunohost/boxes/stable8/versions/1.0.0/providers/virtualbox.box`
 </blockquote>
-
-Uncomment (remove the leading #) the following line in the newly created Vagrantfile to get access from the host system
-```bash
-config.vm.network "private_network", ip: "192.168.33.10"
-```
-
-Clone the Yunohost install script repository
-```bash
-git clone https://github.com/YunoHost/install_script
-```
 
 ---
 
-## Installation
+## Run a vm
 
 Start the virtual machine
 ```bash
@@ -51,27 +41,29 @@ Connect to the started virtual machine
 vagrant ssh
 ```
 
-The root user must have a password
-```bash
-sudo passwd
-```
-
 Upgrade the system
 ```bash
 sudo apt-get update && sudo apt-get upgrade
 ```
 
-Execute the installation script
-```bash
-cd /vagrant/install_script && sudo ./install_yunohostv2
-```
-
-<br>
-
-<p class="text-center">
-<img src="https://yunohost.org/images/install_script.png">
-</p>
+You can access to your vm with the ip 192.168.33.80
 
 ---
 
 *Once the installation is finished, you may want to proceed to post-installation: **[yunohost.org/postinstall](/postinstall)** *
+
+
+## Boxes with wheezy or testing/unstable repository
+
+If you need a vm to test something with wheezy or testing/unstable version of Yunohost. There is a Vagrantfile and 5 other boxes in preparation. For the moment, you can build the boxes by following instructions on these repo: https://github.com/zamentur/yunohost-vagrant
+
+| Box | IP | 
+| --- | --- | 
+| stable8 | 192.168.33.80 |
+| testing8 | 192.168.33.81 |
+| unstable8 | 192.168.33.82 |
+| stable7 | 192.168.33.70 |
+| testing7 | 192.168.33.71 |
+| unstable7 | 192.168.33.72 |
+
+The IP addresses related to the boxes are set by default but can be changed in the network settings. 

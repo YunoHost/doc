@@ -6,8 +6,8 @@
 
 <img src="https://yunohost.org/images/digitalocean.png" width=250>
 
-* A DigitalOcean account
-* A **Debian 7.0 x64** droplet with at least **512MB** RAM
+* A [DigitalOcean](https://www.digitalocean.com/) account
+* A **Debian 7.x or 8.x 64bits** droplet with at least **512MB** RAM
 
     <div class="alert alert-warning">
     <b>Note :</b> The `root` user **must** have a password properly set. Run `sudo passwd root` to ensure this.

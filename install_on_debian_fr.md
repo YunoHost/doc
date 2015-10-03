@@ -8,7 +8,7 @@
 
 Sur une plateforme ARM, un VPS, un serveur dédié, un ordinateur x86 standard, un vieux Macintosh, ...
 
-* avec **Debian 7** (Wheezy, Raspbian, Cubian, etc…) d’installé
+* avec **Debian 8** (Jessie) ou **7** (Wheezy)  d’installé
 * connecté à Internet avec un câble RJ-45
 * avec un **accès root** directement ou par SSH
 

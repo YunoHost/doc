@@ -97,20 +97,6 @@ Seed (share) YunoHost images with Torrent system: [live](http://build.yunohost.o
 
 ---
 
-<div class="row">
-<div class="col col-md-3 lead">
-<span class="glyphicon glyphicon-usd"></span>&nbsp;&nbsp; Donation
-</div>
-<div class="col col-md-8" markdown="1">
-You can now send us Bitcoins at the address `1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf`
-</br>
-<a href="bitcoin:1PySSS56bxnRzTv4RzYx1aQr9sJeBQwddf?label=Yunohost"><img src="https://yunohost.org/images/bitcoin.png" /></a>
-<br>
-<br>
-or use Flattr:  <a href="http://flattr.com/thing/3164470/YunoHost-web-site" target="_blank"><img src="https://yunohost.org/images/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
-</div>
-</div>
-
 
 <br>
 <p class="lead" markdown="1">In any case, please [come to our chatroom](/support) to say how enthusiast you are :-)</p>

@@ -30,7 +30,7 @@ Cette page liste plusieurs types d'installations, classés par catégories.
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_brick_fr"><img src="https://yunohost.org/images/thisisinternet.png" height=150 style="vertical-align:bottom"><b><p>Sur la Brique Internet</p></b></a>
+<a href="/installation_brique_fr"><img src="https://yunohost.org/images/thisisinternet.png" height=150 style="vertical-align:bottom"><b><p>Sur la Brique Internet</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
@@ -93,6 +93,6 @@ Cette page liste plusieurs types d'installations, classés par catégories.
 
 <h1 style="font-weight: 100">Sur Debian</h1>
 
-Si vous disposez déjà d'un serveur ou d'un ordinateur sous **Debian 7** (wheezy), suivez l'**[installation par script](/install_on_debian_fr)**.
+Si vous disposez déjà d'un serveur ou d'un ordinateur sous **Debian 7** (Wheezy) ou **8** (Jessie), suivez l'**[installation par script](/install_on_debian_fr)**.
 
 <a href="/install_on_debian_fr"><img width=100 src="https://yunohost.org/images/debian-logo.png"></a>

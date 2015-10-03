@@ -87,6 +87,6 @@ Tous les efforts ont été déployés pour sécuriser YunoHost, et **chiffrer to
 
 Même si YunoHost est multi-domaine et multi-utilisateur, il reste **inapproprié pour un usage mutualisé**.
 
-Premièrement parce que le logiciel est trop jeune, donc non-testé et non-optimisé pour être mis en production pour des centaines d'utilisateurs en même temps. Et quand bien même, ce n'est pas le chemin que l'on souhaite faire suivre à YunoHost. La virtualisation se démocratise, et c'est un usage bien plus étanche et sécurisé de faire de la mutualisation.
+Premièrement parce que le logiciel est trop jeune, donc non-testé et non-optimisé pour être mis en production pour des centaines d'utilisateurs en même temps. Et quand bien même, ce n'est pas le chemin que l'on souhaite faire suivre à YunoHost. La virtualisation se démocratise, et c'est une façon bien plus étanche et sécurisée de faire de la mutualisation.
 
-Vous pouvez héberger vos amis, votre famille ou votre entreprise sans problème, mais vous devez **avoir confiance** en vos utilisateur, et ils doivent de la même façon avoir confiance en vous. Si vous souhaitez tout de même fournir des services YunoHost à des inconnus, **un VPS entier par utilisateur** sera la meilleure solution (et nous vous fournissons le [panel de déploiement](https://github.com/YunoHost/Kremlin) !)
+Vous pouvez héberger vos amis, votre famille ou votre entreprise sans problème, mais vous devez **avoir confiance** en vos utilisateur, et ils doivent de la même façon avoir confiance en vous. Si vous souhaitez tout de même fournir des services YunoHost à des inconnus, **un VPS entier par utilisateur** sera la meilleure solution.

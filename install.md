@@ -30,10 +30,6 @@ This page lists few installation guides.
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_brick"><img src="https://yunohost.org/images/thisisinternet.png" height=150 style="vertical-align:bottom"><b><p>On the Internet brick</p></b></a>
-</div>
-
-<div class="col col-md-3 text-center">
 <a href="/install_on_raspberry"><img src="https://yunohost.org/images/Raspberry_Pi_2_Model_B_v1.1_front_angle_new.jpg" height=150 style="vertical-align:bottom"><b><p>On a Raspberry Pi</p></b></a>
 </div>
 
@@ -93,7 +89,7 @@ This page lists few installation guides.
 
 <h1 style="font-weight: 100">On Debian</h1>
 
-If you have already installed **Debian 7** (wheezy) on a server, you are able to **[install YunoHost via script](/install_on_debian)**.
+If you have already installed **Debian 7** (Wheezy) or **8** (Jessie) on a server, you are able to **[install YunoHost via script](/install_on_debian)**.
 
 <a href="/install_on_debian"><img width=100 src="https://yunohost.org/images/debian-logo.png"></a>
 

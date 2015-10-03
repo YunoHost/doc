@@ -1,21 +1,17 @@
 # DKIM
+##### Note:
+* This is the 2nd revision of this Work In Progress How-To activate [DKIM](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail) and [SPF](https://en.wikipedia.org/wiki/Sender_Policy_Framework) in YunoHost.
+* Le DKIM and SPF prevent emails which could be sent with your domain name from a non legitim server. This avoid spam.
+* Untill, this is not natively integrated in YunoHost core, it will mean to that Postfix configuration will be blocked (or each time there is a change some configuration lines will need to be added to the end of `/etc/postfix/main.cf`).
+* To be fully functionnal DKIM requires a modification of your [DNS zone](/dns_config_en), which propagantion can take up to 24h.
 
-Please note that :
+##### Sources:
+* This tutorial has been initially based on the DKMI section of: http://sealedabstract.com/code/nsa-proof-your-e-mail-in-2-hours/ from Drew Crawford.
+* This tutorial has been reviewed based on https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy from Popute Sebastian Armin
 
-This is the revision 2 of this Work In Progress How-To.
+Replace `DOMAIN.TLD` by your own domain name.
 
-Until this is natively integrated in YunoHost core apps, it will mean to that Postfix configuration will be blocked (or each time there is a change some configuration lines will need to be added to the end of /etc/postfix/main.cf).
-
-To be fully functionnal DKIM requires a modification of the DNS, which propagantion can take up to 24h.
-
-Source: This tutorial has been initially based on the DKMI section of: http://sealedabstract.com/code/nsa-proof-your-e-mail-in-2-hours/ from Drew Crawford.
-
-Source: This tutorial has been reviewed based on https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-dkim-with-postfix-on-debian-wheezy from Popute Sebastian Armin
-
-Replace DOMAIN.TLD by your own domain name.
-
-Changes in rev 2:
-
+Changes in 2n revision:
 Much easier to manage more than one DOMAIN.TLD (future proof).
 Updated configuration as it seemed that the previous one was based on old software.
 
@@ -153,12 +149,13 @@ sudo service opendkim restart
 sudo service postfix restart
 ```
 
-To test if it is all working well (don't forget that the DNS propagation can take a bit of take…) you can simply send an email to check-auth@verifier.port25.com and a reply will be received. If everything works correctly you should see DKIM check: pass under Summary of Results.
-
-You can also go to http://www.mail-tester.com
-
-Lastly, don't forget to add a SPF key in your DNS such as:
+To test if it is all working well (don't forget that the DNS propagation can take a bit of take…) you can simply go to [mail-tester.com](http://www.mail-tester.com) and send an e-mail to the address indicated. Then follow the link and the result will appear.
+ 
+# SPF
+Lastly, don't forget to add a SPF key in your [DNS zone](/dns_config_en) such as:
 ```bash
-DOMAIN.TLD 300 TXT "v=spf1 a:DOMAIN.TLD mx ?all"
-```
+DOMAIN.TLD 300 TXT "v=spf1 a:DOMAIN.TLD ip4:<server public IPv4> ip6:<server public IPv6> mx ?all"
+ ```
 
+As reminder, the SPF field shows that the only machine using the IP address shows in your DNS zone are authorized to send emails.
+If you don't have IPv6 on your email server, simply delete le ip6:<...> section

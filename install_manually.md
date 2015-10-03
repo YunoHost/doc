@@ -16,7 +16,12 @@ sudo apt-get install git
 git clone https://github.com/YunoHost/install_script /tmp/install_script
 ```
 
-3. Execute the installation script
+3. The root user must have a password set, if it isn't the case, set it (whithout the install script failed):
+```bash
+sudo passwd root
+```
+
+4. Execute the installation script
 ```bash
 cd /tmp/install_script && sudo ./install_yunohostv2
 ```

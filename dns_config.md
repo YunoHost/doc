@@ -5,7 +5,9 @@ Sample DNS config for domain.tld
 ```bash
 #### IPv4 & IPv6
 @ 900 IN A 111.222.333.444 (Minimal)
+* 900 IN A 111.222.333.444 (wildcard)
 @ 900 IN AAAA 2001:AABB:CCDD:EEFF:1122:3344:5566:7788
+* 900 IN AAAA 2001:AABB:CCDD:EEFF:1122:3344:5566:7788
 
 #### Handle www subdomain
 www 1800 IN CNAME @
@@ -26,4 +28,4 @@ vjud 1800 IN CNAME @
 
 <div class="alert alert-info"><b>To begin:</b> lines with "(Minimal)" are the minimal required DNS entries to make works web, email and XMPP.</div>
 
-<div class="alert alert-warning"><b>Warning:</b> <b>@</b> is the default domain name currently defined, some registrar (like OVH) does not accept it, so replace @ by your domain name (domain.tld).</div>
+<div class="alert alert-warning"><b>Warning:</b> <b>@</b> is the default domain name currently defined, some registrar (like OVH) does not accept it, so replace @ by your domain name (domain.tld**.**) with a dot at the end.</div>
