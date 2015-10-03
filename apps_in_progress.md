@@ -1,18 +1,18 @@
 # Apps in progress
 
-<a class="btn btn-lg btn-default" href="/apps">Official apps</a> <a class="btn btn-lg btn-default disabled" href="/apps_in_progress">Apps in progress</a> <a class="btn btn-lg btn-default" href="/apps_wishlist_en">Apps wishlist</a>
+<a class="btn btn-lg btn-default" href="/apps_en">Official apps</a> <a class="btn btn-lg btn-default disabled" href="/apps_in_progress_en">Apps in progress</a> <a class="btn btn-lg btn-default" href="/apps_wishlist_en">Apps wishlist</a>
 
 The following applications are being packaged on by a growing number of packagers.
-<div class="alert alert-danger">These applications are **NOT** validated by the packaging team, and as such, **no official support is provided** for them.<br>
-You can test and use them, **at your own risk**.
+<div class="alert alert-danger">They are **NOT** validated by the packaging team, and as such, **no official support is provided** for them.<br>
+You can test and use them **at your own risk**.
 </div>
 
-There are installable through the [administration web](/admin) interface by choosing "Install custom app", or using the [moulinette](/moulinette):
+You can install them through the [administration web interface](/admin) by choosing "Install custom app", or using the [moulinette](/moulinette):
 ```bash
 yunohost app install https://github.com/<packager>/<app_repository>
 ```
 
-The packagers will appreciate your remarks. If you test them and find issues, or have ideas for improvement, do not hesitate to file issues directly on their repositories project page.
+The packagers will appreciate your remarks. If you test them and find issues, or ideas for improvement, do not hesitate to file issues directly on their repositories project page.
 
 <br>
 
