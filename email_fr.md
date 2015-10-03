@@ -22,7 +22,7 @@ Vérifiez également que les ports correspondant à la messagerie (n° 25, 465 e
 #### Configurer l’authentification DKIM/SPF (facultatif)
 Le protocole SMTP ne prévoit pas de mécanisme de vérification de l’expéditeur. Il est donc possible d’envoyer un courrier avec une adresse d’expéditeur factice ou usurpée. SPF et DKIM sont deux mécanismes possible d’authentification de l’expéditeur d’un email. [Tutoriel pour configurer DKIM/SPF](dkim_fr).<!-- compliqué, à clarifier ? -->
 
-### Résosution de problèmes
+### Résolution de problèmes
 #### Votre serveur est sur une liste noire…
 Si les courriels envoyés à un type d’adresse spécifique (par exemples les adresses Gmail) n’arrivent pas à destination, votre serveur (son adresse IP) a peut être été ajouté à la liste noire du fournisseur d’adresse courriel en question. Pour résoudre ce problème voici les [formulaires de retrait de liste noires](blacklist_forms_fr).
 
