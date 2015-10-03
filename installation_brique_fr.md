@@ -44,20 +44,12 @@ L’ordre des étapes est important.
 sudo dd if=/tmp/labriqueinternet.img of=/dev/SDNAME bs=1M
 ```
 
-4. **Uniquement pour le modèle LIME2** : Monter la carte micro-SD et changer le lien symbolique suivant :
-```bash
-% sudo mount /dev/SDNAME /mnt/
-% cd /mnt/boot/
-% sudo rm board.dtb
-% sudo ln -sf /boot/dtb/sun7i-a20-olinuxino-lime2.dtb board.dtb
-```
-
-5. Mettre la carte micro-SD dans une Brique, connecter la brique à votre routeur avec le câble Ethernet, puis brancher l’alimentation. La brique démarre normalement toute seule, et les LEDs du port Ethernet se mettent à clignoter au bout de 10 secondes maximum.
+4. Mettre la carte micro-SD dans une Brique, connecter la brique à votre routeur avec le câble Ethernet, puis brancher l’alimentation. La brique démarre normalement toute seule, et les LEDs du port Ethernet se mettent à clignoter au bout de 10 secondes maximum.
 <div class="alert alert-warning" markdown="1">
 Le premier démarrage peut mettre une grosse minute car la partition est redimensionnée et le serveur est redémarré automatiquement.
 </div>
 
-6. Récupérer l’adresse IP locale de la Brique :
+5. Récupérer l’adresse IP locale de la Brique :
 <ul>
 <li>soit avec une commande comme `arp-scan --local | grep -P '\t02'`,</li>
 <li>soit via l'interface du routeur listant les clients DHCP,</li>
@@ -67,13 +59,13 @@ Le premier démarrage peut mettre une grosse minute car la partition est redimen
 Pour les commandes suivantes, nous admettons que l’adresse IP locale de la Brique est **192.168.4.2**. Remplacer par l'adresse IP précédement déterminée.
 </div>
 
-7. Se connecter en SSH en root à la Brique, le mot de passe est **olinux** par défaut :
+6. Se connecter en SSH en root à la Brique, le mot de passe est **olinux** par défaut :
 ```bash
 % ssh root@192.168.4.2
 ```
 À la première connexion, il sera demandé de changer le mot de passe : entrer à nouveau **olinux**, puis saisir deux fois votre nouveau mot de passe.
 
-8. Mettre à jour le système (environ 15 minutes) :
+7. Mettre à jour le système (environ 15 minutes) :
 ```bash
 % sudo apt-get update && sudo apt-get dist-upgrade
 ```
