@@ -132,7 +132,7 @@ Si le retour des deux commandes précédentes contient le nom du fournisseur d'a
 
 Ces étapes ne sont pas obligatoires mais peuvent améliorer considérablement l'**expérience de la Brique** (*fap fap fap*).
 
-* **Supprimer le CRON DynDNS** : si l’utilisateur a opté pour un nom de domaine en **.nohost.me**, YunoHost a configuré automatiquement un client DynDNS sur la Brique qui va avertir le serveur DNS d’un potentiel changement d’IP publique. Or, l’IP fourni par la connexion VPN **est fixe**. Il convient donc de supprimer ce client, qui pourrait malencontreusement mettre à jour l’IP dans les DNS si la connexion VPN venait à tomber :
+* **Supprimer le CRON DynDNS** : si l’utilisateur a opté pour un nom de domaine en **.nohost.me**, YunoHost a configuré automatiquement un client DynDNS sur la Brique qui va avertir le serveur DNS d’un potentiel changement d’IP publique. Or, l’IP fournie par la connexion VPN **est fixe**. Il convient donc de supprimer ce client, qui pourrait malencontreusement mettre à jour l’IP dans les DNS si la connexion VPN venait à tomber :
 ```bash
 rm /etc/cron.d/yunohost-dyndns
 ```
@@ -175,7 +175,7 @@ smtpd_recipient_restrictions =
 #    check_policy_service inet:127.0.0.1:10023
     permit
 ```
-Une fois le fichier éditer, redémarrer le service postfix :
+Une fois le fichier édité, redémarrer le service postfix :
 ```bash
 systemctl restart postfix
 ```
