@@ -1,5 +1,9 @@
 #Radicale
 
+<div class="alert alert-info" markdown="1">
+Radicale is now replaced by Baikal
+</div>
+
 ## CalDAV Sync
 URL: https://example.org/patch/login/calendar.ics/
 
