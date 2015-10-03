@@ -27,7 +27,7 @@ L’ordre des étapes est important.
 
 ## Étapes préliminaires
 
-1. Télécharger l’[image](http://repo.labriqueinter.net/labriqueinternet_latest_jessie.img.tar.xz), la valider son *checksum* (en comparant la valeur de retour de la dernière commande avec [celle sur le site](http://repo.labriqueinter.net/SHA512SUMS)), puis la décompresser :
+1. Télécharger l’[image](http://repo.labriqueinter.net/labriqueinternet_latest_jessie.img.tar.xz), la valider son *checksum* MD5, puis la décompresser :
 ```bash
 % cd /tmp/
 % wget http://repo.labriqueinter.net/labriqueinternet_latest_jessie.img.tar.xz
