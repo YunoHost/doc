@@ -163,23 +163,6 @@ systemctl stop amavis
 systemctl disable amavis
 ```
 
-* **Arrêter le service postgrey** : Postgrey est un mécanisme antivirus qui est assez peu efficace, et surtout assez pénible. Il refuse les emails en premier lieu lorsque qu’ils proviennent d’une source inconnue. Un serveur email de spam ne fait pas toujours l’effort de renvoyer le spam une seconde fois. Pour arrêter postgrey, il faut éditer le fichier `/etc/postfix/main.cf` et commenter la ligne relative à postgrey (ligne 132) :
-```bash
-smtpd_recipient_restrictions =
-    permit_mynetworks,
-    permit_sasl_authenticated,
-    reject_non_fqdn_recipient,
-    reject_unknown_recipient_domain,
-    reject_unauth_destination,
-    check_policy_service unix:private/policy-spf
-#    check_policy_service inet:127.0.0.1:10023
-    permit
-```
-Une fois le fichier édité, redémarrer le service postfix :
-```bash
-systemctl restart postfix
-```
-
 * **Mettre à jour la configuration SSH** : par défaut, la connexion en tant que **root** est possible sur la Brique. Pour ne garder que la connexion en tant qu’**admin** (qui est sudoer), il convient d’éditer le `/etc/ssh/sshd_config` et de passer **PermitRootLogin** à **without-password**.
 
 * **Configurer le reverse DNS** : pour s’assurer du bon fonctionnement du serveur email, il est recommandé de configurer un reverse DNS pour son IP. En tant que FAI associatif, c’est un service faisable, autant le demander !
