@@ -14,10 +14,8 @@ yunohost app install https://github.com/<packager>/<app_repository>
 
 The packagers will appreciate your remarks. If you test them and find issues, or have ideas for improvement, do not hesitate to file issues directly on their repositories project page.
 
-<br>
-
-| Name | Packager | State | URL repositories | Description
-| --- | --- | --- | --- | --- |
+| Name | Packager | State | URL | Description |
+| :---: | :---: | :---: | :---: | :---: |
 | [20euros](https://jatekos101.github.io/20euros/) | Moul | <div class="ready"/> | [Repository](https://github.com/M5oul/20euros_ynh) | Clone of 2048 game with euros |
 | [243](https://hgentry.github.io/81/) | Moul | <div class="ready"/> | [Repository](https://github.com/M5oul/243_ynh) | Clone of 2048 game: goal reach 243 |
 | Ajax google apis | zamentur | <div class="ready"/> | [Repository](https://github.com/zamentur/ajaxgoogleapis_ynh) | Google APIs mirror |
