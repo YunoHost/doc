@@ -6,7 +6,7 @@ L’**auto-hébergement** consiste à héberger chez soi son serveur, ses donné
 #### Responsabilités de l’administrateur
 Si vous souhaitez vous servir d’un site web, du [courrier électronique](/email_fr) et de la [messagerie instantanée](/XMPP_fr), le serveur devra rester allumé tout le temps, soit 24h/24 et 7j/7.
 
-L’auto-hébergement entraîne une disponibilité du serveur envers les utilisateurs hébergés sur votre serveur et/ou aux personnes extérieurs consultants le serveur.
+L’auto-hébergement entraîne une disponibilité du serveur envers les utilisateurs hébergés sur votre serveur et/ou aux personnes extérieures consultants le serveur.
 
 Il peut y avoir des problèmes rendant le serveur indisponible : une coupure électrique, une perte d’accès à Internet…etc.
 
