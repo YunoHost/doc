@@ -30,7 +30,7 @@ L’ordre des étapes est important.
 1. Télécharger l’image ( [lime1](http://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz) ou [lime2](http://repo.labriqueinter.net/labriqueinternet_A20LIME2_latest_jessie.img.tar.xz) ), la valider son *checksum MD5*, puis la décompresser :
 ```bash
 % cd /tmp/
-% wget http://repo.labriqueinter.net/labriqueinternet_latest_jessie.img.tar.xz
+% wget http://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz
 % wget http://repo.labriqueinter.net/MD5SUMS
 % md5sum -c MD5SUMS
 % tar -xf labriqueinternet_*.img.tar.xz
