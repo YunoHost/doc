@@ -16,7 +16,7 @@ Sous yunohost, cet identifiant correspond simplement à l'adresse courriel princ
 
 ### Utiliser un autre client XMPP
 
-En plus de Jappix, il existe d'autres clients web orientés réseau social, comme [movim](https://pod.movim.eu) ou [libervia/Salut à Toi](http://salut-a-toi.org/).
+En plus de Jappix, il existe d'autres clients web orientés réseau social, comme [Movim](https://pod.movim.eu) ou [Libervia/Salut à Toi](http://salut-a-toi.org/).
 
 Vous pouvez également utiliser un client desktop comme [Pidgin](http://pidgin.im/) (multiplateforme), [Gajim](http://gajim.org/index.fr.html) (Linux), [Jitsi](http://jitsi.org/) (multiplateforme) ou [Adium](https://adium.im/) (Mac OS).
 
@@ -35,7 +35,7 @@ Il est possible de chiffrer ses conversations XMPP à l'aide de [OTR](https://ot
 
 Pour créer un salon de discussion (Multi-user chat) sur votre serveur, ajoutez 'muc.' au de l'adresse serveur :
 
-### VoIP et Visionconférence
+### VoIP et visioconférence
 
 Un moyen pratique d'appeler un contact XMPP, en VoIP ou en appel vidéo, est d'utiliser le client [Jitsi](http://jitsi.org/).
 
