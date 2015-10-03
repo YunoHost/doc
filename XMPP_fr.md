@@ -33,7 +33,9 @@ Il est possible de chiffrer ses conversations XMPP à l'aide de [OTR](https://ot
 
 ### Salon de discussion
 
-Pour créer un salon de discussion (Multi-user chat) sur votre serveur, ajoutez 'muc.' au de l'adresse serveur :
+Pour créer un salon de discussion (Multi-user chat) sur votre serveur utilisez l'identifiant nomsalon@muc.domaine.tld (ou domaine.tld est le domaine principal de votre serveur).
+
+Si vous utilisez un nom de domaine personnel, il est nécessaire d'[ajouter une redirection de type A pour le sous domaine muc.](dns_config_fr) au niveau de votre serveur DNS.
 
 ### VoIP et visioconférence
 
