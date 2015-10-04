@@ -8,7 +8,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <div class="panel-title">
-        <a data-toggle="collapse" data-parent="#app-accordion" href="apps/#app_{app_id}">{app_name} <em><small>({app_id})</small></em></a>
+        <a data-toggle="collapse" data-parent="#app-accordion" href="apps_en/#app_{app_id}">{app_name} <em><small>({app_id})</small></em></a>
       </div>
     </div>
     <div class="panel-collapse collapse app_{app_id}">
