@@ -10,7 +10,7 @@ Toutes les applications basées sur XMPP sont compatibles entre-elles : lorsque 
 
 ### Compte XMPP/Jabber
 
-Un compte XMPP/Jabber est basé sur un identifiant sous la forme 'utilisateur@domaine.tld', ainsi qu'un mot de passe.
+Un compte XMPP/Jabber est basé sur un identifiant sous la forme `utilisateur@domaine.tld`, ainsi qu'un mot de passe.
 
 Sous yunohost, cet identifiant correspond simplement à l'adresse courriel principale d'un utilisateur. Le mot de passe est celui du compte de l'utilisateur.
 
@@ -29,13 +29,17 @@ Voici une liste plus exhaustive des clients XMPP : https://fr.wikipedia.org/wiki
 
 ### Chiffrer ses conversations avec OTR
 
-Il est possible de chiffrer ses conversations XMPP à l'aide de [OTR](https://otr.cypherpunks.ca/index.php#downloads), notamment en utilisant Pidgin ou Gajim.
+Il est possible de chiffrer ses conversations XMPP à l'aide de [OTR](https://otr.cypherpunks.ca/index.php#downloads), notamment en utilisant Pidgin :
+* Installer `pidgin` et le plugin [`pidgin-otr`](https://otr.cypherpunks.ca/index.php#downloads)(sous linux il devrait être disponible avec votre gestionnaire de paquet)
+* Activez le plugins dans `Outils > Plugins`
+* Faite `produire` pour générer une empreinte
+* Activez le chiffrement dans une conversation avec un contact disposant de l'OTR.
 
 ### Salon de discussion
 
 Pour créer un salon de discussion (Multi-user chat) sur votre serveur utilisez l'identifiant nomsalon@muc.domaine.tld (ou domaine.tld est le domaine principal de votre serveur).
 
-Si vous utilisez un nom de domaine personnel, il est nécessaire d'[ajouter une redirection de type A pour le sous domaine muc.](dns_config_fr) au niveau de votre serveur DNS.
+Si vous utilisez un nom de domaine personnel, il est nécessaire d'[ajouter une redirection de `type A` pour le sous domaine `muc.`](dns_config_fr) au niveau de votre serveur DNS.
 
 ### VoIP et visioconférence
 
