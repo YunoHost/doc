@@ -19,7 +19,7 @@ Une **Brique Internet complète**, soit :
 * Un adaptateur secteur [européen](https://www.olimex.com/Products/Power/SY0605E/) pour alimenter la brique. L’alimentation via USB semble peu stable.
 * Un câble Ethernet/RJ-45 pour brancher la Brique à son routeur.
 
-Et évidemment, **un ordinateur sous UNIX (e.g. GNU/Linux).**
+Et évidemment, **un ordinateur sous GNU/Linux ou BSD**.
 
 ---
 
