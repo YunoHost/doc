@@ -28,10 +28,10 @@ N'hésitez pas à vous créer un compte GitHub pour faire part de vos remarques 
     </div>
     <div class="panel-collapse collapse app_{app_id}">
       <div class="panel-body">
-        <p><strong>Description</strong>: {app_description}</p>
-        <p><strong>Dernière mise à jour (UTC)</strong>: {app_update}</p>
-        <p><strong>Mainteneur</strong>: {app_maintainer} <small class="text-muted">({app_mail})</small></p>
-        <p><strong>Git</strong>: <a href="{app_git}" target="_blank">{app_git}</a> <small class="text-muted">({app_branch})</small></p>
+        <p><strong>Description</strong> : {app_description}</p>
+        <p><strong>Dernière mise à jour (UTC)</strong> : {app_update}</p>
+        <p><strong>Mainteneur</strong> : {app_maintainer} <small class="text-muted">({app_mail})</small></p>
+        <p><strong>Dépôt git</strong> : <a href="{app_git}" target="_blank">{app_git}</a> <small class="text-muted">({app_branch})</small></p>
         <div class="{app_state}"/>
     </div>
   </div>
