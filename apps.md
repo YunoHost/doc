@@ -21,11 +21,12 @@
         <p><strong>Last update (UTC)</strong>: {app_update}</p>
         <p><strong>Maintainer</strong>: {app_maintainer} <small class="text-muted">({app_mail})</small></p>
         <p><strong>Git repository</strong>: <a href="{app_git}" target="_blank">{app_git}</a> <small class="text-muted">({app_branch})</small></p>
-        <p><strong>App license</strong>: {app_license}</p>
         <a href="#/app_{app_id}" target="_blank" class="btn btn-default">Documentation</a>
     </div>
   </div>
 </script>
+<br />
+<div class="alert alert-info">Official applications are free softwares.</div>
 
 <script>
 function timeConverter(UNIX_timestamp) {
@@ -60,8 +61,7 @@ $(document).ready(function () {
              .replace('{app_description}', infos.manifest.description.en)
              .replace(/{app_git}/g, infos.git.url)
              .replace('{app_branch}', infos.git.branch)
-             .replace('{app_update}', timeConverter(infos.lastUpdate))
-             .replace('{app_license}', infos.manifest.license);
+             .replace('{app_update}', timeConverter(infos.lastUpdate));
 
       if (infos.manifest.developer) {
         html = html
