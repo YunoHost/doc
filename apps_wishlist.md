@@ -48,6 +48,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [KrISS feed](https://github.com/tontof/kriss_feed)
 * [Kune](https://en.wikipedia.org/wiki/Kune_%28software%29)
 * [LSTU](https://github.com/ldidry/lstu)
+* [Lufi](https://git.framasoft.org/luc/lufi)
 * [MaidSafe](http://maidsafe.net/)
 * [Mailman](https://www.gnu.org/software/mailman/)
 * [Mailpile](https://www.mailpile.is)
