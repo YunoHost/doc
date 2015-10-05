@@ -5,15 +5,15 @@
 <a class="btn btn-lg btn-default" href="/apps_wishlist_fr">Apps souhaitées</a>
 
 De plus en plus d'applications sont mises à disposition par les packagers.
-<div class="alert alert-danger">Ces applications **n’ont pas** été validées par l'équipe YunoHost et  **ne sont pas** officiellement prises en charge.<br>Vous pouvez les tester et les utiliser à **vos risques et périls**.
+<div class="alert alert-danger">Ces applications **n’ont pas** été validées par l’équipe YunoHost et  **ne sont pas** officiellement prises en charge.<br>Vous pouvez les tester et les utiliser à **vos risques et périls**.
 </div>
 
-Elles sont installables avec l'[interface web d'administration](/admin) ou avec la moulinette :
+Elles sont installables avec l’[interface web d'administration](/admin) ou avec la moulinette :
 ```bash
 yunohost app install https://github.com/<packageur>/<dépôt_app>
 ```
 
-N'hésitez pas à vous créer un compte GitHub pour faire part de vos remarques aux packagers (sous forme d'«&nbsp;issues&nbsp;») ou à leur proposer des améliorations (sous forme de «&nbsp;pull requests&nbsp;»).
+N’hésitez pas à vous créer un compte GitHub pour faire part de vos remarques aux packagers (sous forme d’«&nbsp;issues&nbsp;») ou à leur proposer des améliorations (sous forme de «&nbsp;pull requests&nbsp;»).
 
 <div class="clearfix" style="margin-bottom: 1em;">
 <div class="btn btn-default btn-xs pull-right" data-toggle="collapse" data-target="#app-accordion2 .collapse">Tout déplier</div>
@@ -43,7 +43,7 @@ N'hésitez pas à vous créer un compte GitHub pour faire part de vos remarques 
 <script>
 function timeConverter(UNIX_timestamp) {
     var a = new Date(UNIX_timestamp*1000);
-    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var months = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
     var year = a.getFullYear();
     var month = months[a.getMonth()];
     var date = a.getDate();
