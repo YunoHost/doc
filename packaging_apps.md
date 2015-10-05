@@ -20,7 +20,7 @@ A YunoHost package is composed of:
 **[A basic package](https://github.com/YunoHost/example_ynh)**: feel free to use it as a framework.
 
 ### Manifest
-The `manifest.json` file defines the app's constants, a bunch of values that YunoHost needs to identify the app and install it correctly. It looks like this :
+The `manifest.json` file defines the app's constants, a bunch of values that YunoHost needs to identify the app and install it correctly. It looks like this:
 ```json
 {
     "name": "Roundcube",
@@ -29,7 +29,7 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
         "en": "Open Source Webmail software",
         "fr": "Webmail Open Source"
     },
-    "license": "GPL-3",
+    "license": "free",
     "maintainer": {
         "name": "kload",
         "email": "kload@kload.fr",
@@ -64,7 +64,7 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
 
 * **description**: the complete description of the app. You can make it as detailed as you feel it should be. Only `en` is required right now, but you can translate the description by prepending the locale prefix.
 
-* **license**: the license under which the app is distributed. Please use the short name of the license, e.g. `GPL-3` for the GNU General Public License v3. Here is a [list of standard abbreviations](https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/#license-short-name).
+* **license**: software license type: `free` or `non-free`. Be careful to not confuse with package license which must be put in `LICENSE` file.
 
 * **maintainer**: informations about the app maintainer.
 
@@ -240,9 +240,9 @@ You will find points to verify quality of your scripts:
 * backup and restore scripts are present and functional.
 
 ### Publish and ask for testing your application
-* Publishing a [post on the Forum](https://forum.yunohost.org/) with the `App integration` category, to ask tests and returns on your application.
+* Publishing a [post on the Forum](https://forum.yunohost.org/) with the [`App integration` category](https://forum.yunohost.org/c/app-integration), to ask tests and returns on your application.
 
-* [Add](/write_documentation_en) your application to the [non-officials list of application](https://yunohost.org/#/apps_in_progress_en) with the state of the package: `Ready`, `In progress` or `Not working`.
+* Ask to add your application in the [app repository](https://github.com/YunoHost/apps) to be displayed in the [non-official apps list](https://yunohost.org/#/apps_in_progress_en). Precise his progress state: `notworking`, `inprogress`, or `ready`
 
 ### Officalization of an application
-To become an official application, it must be enough tested, stable and should works on 64 bits, 32 bits et ARM processors architectures and on Debian Wheezy and Jessie. If you think thoses conditions are gather, ask for [official integration](http://app.yunohost.org) of your application.
+To become an official application, it must be enough tested, stable and should works on 64 bits, 32 bits et ARM processors architectures and on Debian Wheezy and Jessie. If you think thoses conditions are gather, ask for [official integration](https://github.com/YunoHost/apps) of your application.
