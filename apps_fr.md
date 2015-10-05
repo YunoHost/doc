@@ -21,16 +21,17 @@
         <p><strong>Dernière mise à jour (UTC)</strong> : {app_update}</p>
         <p><strong>Mainteneur</strong> : {app_maintainer} <small class="text-muted">({app_mail})</small></p>
         <p><strong>Dépôt git</strong> : <a href="{app_git}" target="_blank">{app_git}</a> <small class="text-muted">({app_branch})</small></p>
-        <p><strong>Licence de l’application</strong> : {app_license}</p>
         <a href="#/app_{app_id}_fr" target="_blank" class="btn btn-default">Documentation</a>
     </div>
   </div>
 </script>
+<br />
+<div class="alert alert-info">Toutes les applications officielles sont sous licences libres.</div>
 
 <script>
 function timeConverter(UNIX_timestamp) {
     var a = new Date(UNIX_timestamp*1000);
-    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var months = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
     var year = a.getFullYear();
     var month = months[a.getMonth()];
     var date = a.getDate();
@@ -38,7 +39,7 @@ function timeConverter(UNIX_timestamp) {
     var min = a.getMinutes();
     if (hour < 10) { hour = '0' + hour; }
     if (min < 10) { min = '0' + min; }
-    var time = date+' '+month+' '+year+' at '+hour+':'+min;
+    var time = date+' '+month+' '+year+' à '+hour+':'+min;
     return time;
 }
 
@@ -63,8 +64,7 @@ $(document).ready(function () {
              .replace('{app_description}', infos.manifest.description.fr)
              .replace(/{app_git}/g, infos.git.url)
              .replace('{app_branch}', infos.git.branch)
-             .replace('{app_update}', timeConverter(infos.lastUpdate))
-             .replace('{app_license}', infos.manifest.license);
+             .replace('{app_update}', timeConverter(infos.lastUpdate));
 
       if (infos.manifest.developer) {
         html = html
@@ -84,4 +84,3 @@ $(document).ready(function () {
   });
 });
 </script>
-
