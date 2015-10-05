@@ -26,12 +26,12 @@
   </div>
 </script>
 <br />
-<div class="alert alert-info">Official applications are free softwares.</div>
+<div class="alert alert-info">Official applications are under free licences.</div>
 
 <script>
 function timeConverter(UNIX_timestamp) {
     var a = new Date(UNIX_timestamp*1000);
-    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var months = ['January','February','March','Aprir','May','June','July','August','September','October','November','December'];
     var year = a.getFullYear();
     var month = months[a.getMonth()];
     var date = a.getDate();
