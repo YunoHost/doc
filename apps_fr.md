@@ -2,6 +2,10 @@
 
 <a class="btn btn-lg btn-default" href="/apps_fr" disabled>Apps officielles</a> <a class="btn btn-lg btn-default" href="/apps_in_progress_fr">Apps en cours</a> <a class="btn btn-lg btn-default" href="/apps_wishlist_fr">Apps souhaitées</a>
 
+<div class="clearfix" style="margin-bottom: 1em;">
+<div class="btn btn-default btn-xs pull-right" data-toggle="collapse" data-target="#app-accordion .collapse">Tout déplier</div>
+</div>
+
 <div class="panel-group" id="app-accordion"></div>
 
 <script type="text/template" id="app-template">
@@ -17,6 +21,7 @@
         <p><strong>Dernière mise à jour (UTC)</strong> : {app_update}</p>
         <p><strong>Mainteneur</strong> : {app_maintainer} <small class="text-muted">({app_mail})</small></p>
         <p><strong>Dépôt git</strong> : <a href="{app_git}" target="_blank">{app_git}</a> <small class="text-muted">({app_branch})</small></p>
+        <p><strong>Licence de l’application</strong> : {app_license}</p>
         <a href="#/app_{app_id}_fr" target="_blank" class="btn btn-default">Documentation</a>
     </div>
   </div>
@@ -58,7 +63,8 @@ $(document).ready(function () {
              .replace('{app_description}', infos.manifest.description.fr)
              .replace(/{app_git}/g, infos.git.url)
              .replace('{app_branch}', infos.git.branch)
-             .replace('{app_update}', timeConverter(infos.lastUpdate));
+             .replace('{app_update}', timeConverter(infos.lastUpdate))
+             .replace('{app_license}', infos.manifest.license);
 
       if (infos.manifest.developer) {
         html = html
