@@ -35,7 +35,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
         <p><strong>Last update (UTC)</strong>: {app_update}</p>
         <p><strong>Maintainer</strong>: {app_maintainer} <small class="text-muted">({app_mail})</small></p>
         <p><strong>Git repository</strong>: <a href="{app_git}" target="_blank">{app_git}</a> <small class="text-muted">({app_branch})</small></p>
-        <p><strong>App license</strong>: {app_license}</p>
+        <p><strong>Software license</strong>: {app_license}</p>
     </div>
   </div>
 </script>
@@ -43,7 +43,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 <script>
 function timeConverter(UNIX_timestamp) {
     var a = new Date(UNIX_timestamp*1000);
-    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
     var year = a.getFullYear();
     var month = months[a.getMonth()];
     var date = a.getDate();
