@@ -35,6 +35,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
         <p><strong>Last update (UTC)</strong>: {app_update}</p>
         <p><strong>Maintainer</strong>: {app_maintainer} <small class="text-muted">({app_mail})</small></p>
         <p><strong>Git repository</strong>: <a href="{app_git}" target="_blank">{app_git}</a> <small class="text-muted">({app_branch})</small></p>
+        <p><strong>App license</strong>: {app_license}</p>
     </div>
   </div>
 </script>
@@ -73,7 +74,8 @@ $(document).ready(function () {
              .replace(/{app_git}/g, infos.git.url)
              .replace('{app_branch}', infos.git.branch)
              .replace('{app_update}', timeConverter(infos.lastUpdate))
-             .replace('{app_state}', infos.state);
+             .replace('{app_state}', infos.state)
+             .replace('{app_license}', infos.manifest.license);
 
       if (infos.manifest.developer) {
         html = html
