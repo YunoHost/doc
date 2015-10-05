@@ -15,9 +15,7 @@ yunohost app install https://github.com/<packageur>/<dépôt_app>
 
 N'hésitez pas à vous créer un compte GitHub pour faire part de vos remarques aux packagers (sous forme d'«&nbsp;issues&nbsp;») ou à leur proposer des améliorations (sous forme de «&nbsp;pull requests&nbsp;»).
 
-<div class="clearfix" style="margin-bottom: 1em;">
-<div class="btn btn-default btn-xs pull-right" data-toggle="collapse" data-target="#app-accordion2 .collapse">Tout déplier</div>
-</div>
+<br>
 
 <div class="panel-group" id="app-accordion2"></div>
 
@@ -34,6 +32,7 @@ N'hésitez pas à vous créer un compte GitHub pour faire part de vos remarques 
         <p><strong>Dernière mise à jour (UTC)</strong> : {app_update}</p>
         <p><strong>Mainteneur</strong> : {app_maintainer} <small class="text-muted">({app_mail})</small></p>
         <p><strong>Dépôt git</strong> : <a href="{app_git}" target="_blank">{app_git}</a> <small class="text-muted">({app_branch})</small></p>
+        <p><strong>Licence de l’application</strong>: {app_license}</p>
         <div class="{app_state}"/>
     </div>
   </div>
@@ -76,7 +75,8 @@ $(document).ready(function () {
              .replace(/{app_git}/g, infos.git.url)
              .replace('{app_branch}', infos.git.branch)
              .replace('{app_update}', timeConverter(infos.lastUpdate))
-             .replace('{app_state}', infos.state);
+             .replace('{app_state}', infos.state)
+             .replace('{app_license}', infos.manifest.license);
 
       if (infos.manifest.developer) {
         html = html
