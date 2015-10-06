@@ -18,7 +18,7 @@ Sous yunohost, cet identifiant correspond simplement à l'adresse courriel princ
 
 En plus de Jappix, il existe d'autres clients web orientés réseau social, comme [Movim](https://pod.movim.eu) ou [Libervia/Salut à Toi](http://salut-a-toi.org/).
 
-Vous pouvez également utiliser un client desktop comme [Pidgin](http://pidgin.im/) (multiplateforme), [Gajim](http://gajim.org/index.fr.html) (Linux), [thunderbird](https://www.mozilla.org/fr/thunderbird/) (multiplateforme) [Jitsi](http://jitsi.org/) (multiplateforme) ou [Adium](https://adium.im/) (Mac OS).
+Vous pouvez également utiliser un client desktop comme [Pidgin](http://pidgin.im/) (multiplateforme), [Gajim](http://gajim.org/index.fr.html) (Linux), [thunderbird](https://www.mozilla.org/fr/thunderbird/) (multiplateforme), [Jitsi](http://jitsi.org/) (multiplateforme) ou [Adium](https://adium.im/) (Mac OS).
 
 ... ou un client smartphone
 * [Xabber](http://xabber.com) (Android)
@@ -37,9 +37,9 @@ Il est possible de chiffrer ses conversations XMPP à l'aide de [OTR](https://ot
 
 ### Salon de discussion
 
-Pour créer un salon de discussion (Multi-user chat) sur votre serveur utilisez l'identifiant nomsalon@muc.domaine.tld (ou domaine.tld est le domaine principal de votre serveur).
+Pour créer un salon de discussion (Multi-user chat) sur votre serveur Yunohost utilisez l'identifiant nomsalon@muc.domaine.tld (ou domaine.tld est le domaine principal de votre serveur).
 
-Si vous utilisez un nom de domaine personnel, il est nécessaire d'[ajouter une redirection de `type A` pour le sous domaine `muc.`](dns_config_fr) au niveau de votre serveur DNS.
+Si vous utilisez un nom de domaine personnel, il est nécessaire d'[ajouter une redirection de `type CNAME` pour le sous domaine `muc.`](dns_config_fr) au niveau de votre serveur DNS.
 
 ### VoIP et visioconférence
 
