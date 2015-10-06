@@ -18,7 +18,7 @@ Sous yunohost, cet identifiant correspond simplement à l'adresse courriel princ
 
 En plus de Jappix, il existe d'autres clients web orientés réseau social, comme [Movim](https://pod.movim.eu) ou [Libervia/Salut à Toi](http://salut-a-toi.org/).
 
-Vous pouvez également utiliser un client desktop comme [Pidgin](http://pidgin.im/) (multiplateforme), [Gajim](http://gajim.org/index.fr.html) (Linux), [Jitsi](http://jitsi.org/) (multiplateforme) ou [Adium](https://adium.im/) (Mac OS).
+Vous pouvez également utiliser un client desktop comme [Pidgin](http://pidgin.im/) (multiplateforme), [Gajim](http://gajim.org/index.fr.html) (Linux), [thunderbird](https://www.mozilla.org/fr/thunderbird/) (multiplateforme) [Jitsi](http://jitsi.org/) (multiplateforme) ou [Adium](https://adium.im/) (Mac OS).
 
 ... ou un client smartphone
 * [Xabber](http://xabber.com) (Android)
