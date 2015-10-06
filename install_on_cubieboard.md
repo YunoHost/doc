@@ -14,7 +14,7 @@
 ---
 
 ## Installation
-* Download the latest **[image of ARMbian Jessie for Cubieboard](http://www.igorpecovnik.com/2013/12/24/cubietruck-debian-wheezy-sd-card-image/)**
+* Download the latest **[image of ARMbian Jessie for Cubieboard](http://www.armbian.com/cubieboard-2/)**
 
 <a class="btn btn-lg btn-default" href="/copy_image">Copy image to the SD card</a>
 
