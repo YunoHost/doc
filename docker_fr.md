@@ -50,7 +50,7 @@ docker pull zamentur/yunohost-stable8
 
 Vous pouvez également construire le conteneur manuellement :
 ```bash
-docker build -t yunohost/full github.com/YunoHost/Dockerfile
+docker build -t zamentur/yunohost-stable8 github.com/YunoHost/Dockerfile
 ```
 
 Vous pouvez vérifier que le conteneur est bien téléchargé avec la commande `docker images`
@@ -59,6 +59,7 @@ Vous pouvez vérifier que le conteneur est bien téléchargé avec la commande `
 
 ## Démarrer le conteneur
 
+Pour démarrer le conteneur, lancez la commande suivante en remplaçant DOMAIN par un domaine valide ex: mondomaine.org => yunohost.mondomaine.org
 ```bash
 docker run -h yunohost.DOMAIN -v $(pwd):/yunohost -d zamentur/yunohost-stable8 /sbin/init
 ```
@@ -113,7 +114,7 @@ Snapshoter l’état d’un container
 
 ```bash
 docker commit <ID_de_mon_conteneur> LeNomQueJeVeux
-# Exemple : docker commit 3e85317430db yunohost/full:27042015
+# Exemple : docker commit 3e85317430db zamentur/yunohost-stable8:27042015
 ```
 
 Assigner une IP à un container
