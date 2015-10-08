@@ -1,6 +1,6 @@
 # Docker et YunoHost
 
-*Voici une petite page de documentation en guise de mémo sur la manière de tester/développer YunoHost avec Docker.*
+*Voici une page de documentation en guise de mémo sur la manière de tester/développer YunoHost avec Docker.*
 
 *Toutes les autres façons d’installer YunoHost sont listées **[ici](/install_fr)**.*
 
@@ -10,7 +10,7 @@
 
 ## Installer Docker
 
-**Prérequis** : une machine x86 qui tourne sous Ubuntu 14.04 ou supérieur, ArchLinux ou Fedora (sur Debian c’est plus chiant)
+**Prérequis** : une machine x86 qui tourne sous Ubuntu 14.04 ou supérieur, ArchLinux ou Fedora (sur Debian c’est plus chiant).
 
 Sous Ubuntu :
 ```bash
@@ -24,7 +24,7 @@ $ sudo pacman -Sy docker
 
 Sous Fedora :
 ```bash
-$ su -c 'yum install docker'
+$ sudo dnf install docker
 ```
 ---
 
