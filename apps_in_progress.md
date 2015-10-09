@@ -1,4 +1,4 @@
-# Apps in progress <img src="https://yunohost.org/images/freshrss_logo.png" width=60> <img src="https://yunohost.org/images/Icons_mumble.svg" width=60> <img src="https://yunohost.org/images/Lutim_small.png" width=50> <img src="https://yunohost.org/images/PluXml-logo_transparent.png" width=80> <img src="https://yunohost.org/images/rainloop_logo.png" width=60> <img src="https://yunohost.org/images/Etherpad.svg" width=60>
+# Apps in progress <img src="https://yunohost.org/images/freshrss_logo.png" width=50> <img src="https://yunohost.org/images/Icons_mumble.svg" width=50> <img src="https://yunohost.org/images/Lutim_small.png" width=40> <img src="https://yunohost.org/images/PluXml-logo_transparent.png" width=70> <img src="https://yunohost.org/images/rainloop_logo.png" width=50> <img src="https://yunohost.org/images/Etherpad.svg" width=50> <img src="https://yunohost.org/images/gogs.png" width=50>
 
 <a class="btn btn-lg btn-default" href="/apps_en">Official apps</a> <a class="btn btn-lg btn-default disabled" href="/apps_in_progress_en">Apps in progress</a> <a class="btn btn-lg btn-default" href="/apps_wishlist_en">Apps wishlist</a>
 
