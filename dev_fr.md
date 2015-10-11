@@ -39,7 +39,10 @@ L'interface d’administration n'est en réalité qu'un client qui se connecte �
 
 Le service yunohost-api doit donc être start pour utiliser l'adminweb.
 
-
+## Installation de l'environnement de dev
+<div class="alert alert-warning">
+<b>Attention :</b> Cette partie est en cours de rédaction
+</div>
 
 
 
