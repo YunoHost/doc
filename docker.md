@@ -30,12 +30,12 @@ sudo pacman -Sy docker
 
 The following command will fetch the latest YunoHost built image:
 ```bash
-docker pull yunohost/full
+docker pull zamentur/yunohost-stable8
 ```
 
 You can also build the image manually:
 ```bash
-docker build -t yunohost/full github.com/YunoHost/Dockerfile
+docker build -t zamentur/yunohost-stable8 github.com/YunoHost/Dockerfile
 ```
 
 You can check that the container is successfully built with the `docker images` command.
@@ -43,15 +43,15 @@ You can check that the container is successfully built with the `docker images` 
 ---
 
 ## Run the container
-
+To start the container, run the next command by replacing DOMAIN by a valid domain eg: exemple.com => yunohost.exemple.com
 ```bash
-docker run -d yunohost/full /sbin/init
+docker run -h yunohost.DOMAIN -v $(pwd):/yunohost -d zamentur/yunohost-stable8 /sbin/init
 ```
 
 If you want to run the container and forward all the interesting ports to the host:
 
 ```bash
-docker run -d \
+docker run -d -h yunohost.DOMAIN -v $(pwd):/yunohost \
  -p 25:25 \
  -p 53:53/udp \
  -p 80:80 \
@@ -61,7 +61,7 @@ docker run -d \
  -p 5222:5222 \
  -p 5269:5269 \
  -p 5290:5290 \
- yunohost/full \
+ zamentur/yunohost-stable8 \
  /sbin/init
 ```
 
@@ -72,6 +72,20 @@ You can find more information on these steps on the Docker's documentation:
 ---
 
 ## Post-installation
+Go in the container by replacing XXXX by the id obtained when `docker run`
+```bash
+docker exec -t -i XXXX /bin/bash
+```
+Next run postinstall with the dedicated script to docker
+```bash
+postinstall
+```
+
+
+---
+
+## Useful commands
+
 
 Find your container's IP address (should looks like 172.17.0.x)
 
@@ -79,17 +93,12 @@ Find your container's IP address (should looks like 172.17.0.x)
 docker inspect --format '{{ .NetworkSettings.IPAddress }}' <CONTAINER_ID>
 ```
 
-Then reach https://ip.du.conteneur on your web browser, and proceed to the [post-installation](/postinstall) step.
-
----
-
-## Useful commands
 
 Snapshot container's state
 
 ```bash
-docker commit <container_ID> yunohost/full:tag
-# E.g.: docker commit 3e85317430db yunohost/full:03052014
+docker commit <container_ID> zamentur/yunohost-stable8:tag
+# E.g.: docker commit 3e85317430db zamentur/yunohost-stable8:03052014
 ```
 
 Assign an IP to a container
