@@ -44,6 +44,14 @@ Le service yunohost-api doit donc être start pour utiliser l'adminweb.
 <b>Attention :</b> Cette partie est en cours de rédaction
 </div>
 
+Afin de vous simplifier la tache un dépôt dédié a été créé afin de créer un environnement de développement.
+
+```bash
+git clone --recursive https://github.com/zamentur/yunohost-development
+```
+
+
+
 
 
 
