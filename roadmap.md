@@ -9,9 +9,10 @@ Core:
 * ✔ Install script refactored *(ju)*
 * Add tools in moulinette to manage certificate (add, remove, update), Let’s Encrypt *(ljf, Moul)*
 * Run automatic tests on moulinette *(kload)*
-* Use templates to (re)generate configurations instead of packages *(beudbeud, jerome)*
+* ✔ Use templates to (re)generate configurations instead of packages *(kload, beudbeud, jerome)*
 * Add proper upgrade/remove scripts and comment Debian scripts in packages *(beudbeud)*
-* Complete and improve backup and restore system *(jerome)*
+* Complete and improve backup and restore system *(jerome, ljf)*
+* Replace amavis by rspamd *(jerome)*
 
 Web interface:
 * ✔ Use Gulp for administration and user web interfaces *(opi)*
