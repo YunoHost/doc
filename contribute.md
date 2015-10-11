@@ -57,7 +57,7 @@ Sysadmins, web developers, designers and pythonists <a href="https://github.com/
 </div>
 <div class="col col-md-8" markdown="1">
 Get involved by making YunoHost interfaces available in your language.    
-Create a Transifex account and <a href="https://www.transifex.com/organization/yunohost/" target="_blank">get started</a>! 
+<a href="https://translate.yunohost.org/" target="_blank">Get started</a>! 
 </div>
 </div>
 
