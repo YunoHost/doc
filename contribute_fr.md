@@ -55,7 +55,7 @@ Vous pouvez vous impliquer dans le développement de YunoHost peu importe votre 
 <span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp; Traduisez
 </div>
 <div class="col col-md-8" markdown="1">
-Participez en rendant les interfaces de YunoHost disponibles dans votre langue. Créez un compte Transifex et <a href="https://www.transifex.com/organization/yunohost/" target="_blank">lancez-vous</a> !
+Participez en rendant les interfaces de YunoHost disponibles dans votre langue. <a href="https://translate.yunohost.org/" target="_blank">Lancez-vous</a> !
 </div>
 </div>
 
