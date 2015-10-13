@@ -66,7 +66,7 @@ Pour les commandes suivantes, nous admettons que l’adresse IP locale de la Bri
 À la première connexion, il sera demandé de changer le mot de passe : entrer à nouveau **olinux**, puis saisir deux fois votre nouveau mot de passe.
 
 7. Mettre à jour le système (environ 15 minutes) :
-```bash
+```
 % sudo apt-get update && sudo apt-get dist-upgrade
 ```
 
@@ -182,3 +182,4 @@ Cette opération est longue mais à considérer pour avoir un serveur email irr�
 
 * **Attention à la RAM** : sur le modèle A20-OLinuXino-LIME, les **512 Mo** partent vite. Les applications PHP ne sont pas très gourmandes, mais Searx et Etherpad Lite sont par exemple à installer avec des pincettes. Ce sont Amavis et mySQL qui consomment le plus de RAM. Amavis sera bientôt remplacé par rspamd qui est moins gourmand en ressources. Toutes les apps officielles fonctionnent sans problème de RAM avec le A20-OLinuXino-LIME2 (qui a 1Go de RAM). 
 
+* Attention à bien veiller à ce que les répertoires utilisateurs soient bien créés (étape 5.) dans `/var/mail` et `/home/`, sans quoi plusieurs bugs seront observables dans l’interface d’administration (erreurs 500 en pagaille).
