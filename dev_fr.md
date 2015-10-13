@@ -28,9 +28,9 @@ SSOwat est comme la moulinette une dépendance de YunoHost, mais peut aussi êtr
 #### Paquet yunohost
 Le paquet yunohost est le cœur de YunoHost, ce paquet contient depuis la version 2.3 (testing) le code du programme en ligne de commande `yunohost`. Il contient également des helpers qui peuvent être utilisées par les scripts des apps YunoHost, ainsi que les templates de configuration des dépendances de YunoHost.
 
-<div class="alert alert-info">
-<b>Note :</b> à partir de la version 2.3 (testing), le code de la ligne de commande `yunohost` initialement dans le paquet moulinette-yunohost a été rapatrié dans le paquet yunohost. Un système 2.2 contient donc deux paquets au lieu d'un seul : yunohost et moulinette-yunohost.
-</div>
+
+Note : à partir de la version 2.3 (testing), le code de la ligne de commande `yunohost` initialement dans le paquet moulinette-yunohost a été rapatrié dans le paquet yunohost. Un système 2.2 contient donc deux paquets au lieu d'un seul : yunohost et moulinette-yunohost.
+
 
 #### Paquet yunohost-admin (optionnel)
 Ce paquet contient l'interface d'administration web de YunoHost, obligatoire dans la version 2.2, il est optionnel depuis la version 2.3 (testing).
@@ -40,9 +40,9 @@ L'interface d’administration n'est en réalité qu'un client qui se connecte �
 Le service yunohost-api doit donc être start pour utiliser l'administration web.
 
 ### Installation de l’environnement de développement
-<div class="alert alert-warning">
-<b>Attention :</b> Cette partie est en cours de rédaction. La ligne de commande `ynh-dev` vient juste d'être créée il est possible qu'il y ai des manques.
-</div>
+
+Attention : Cette partie est en cours de rédaction. La ligne de commande `ynh-dev` vient juste d'être créée il est possible qu'il y ai des manques.
+
 
 Une ligne de commande `ynh-dev` a été créé afin de simplifier la gestion de votre environnement de developpement.
 
@@ -57,3 +57,64 @@ Pour créer votre environnement, commencez par faire un `create-env`
 Cette sous commande va cloner les dépots principaux et les positionner en `unstable`. Si vous avez vos propres fork, vous pouvez ensuite faire ce qu'il faut pour changer l'origine et le remote repository.
 
 #### Usage
+
+
+##### Lancer un container
+Positionner vous dans votre environnement, puis créer et entrer dans une vm à l'aide de `ynh-dev run`
+```bash
+cd ~/project/my/yunohost/env
+./ynh-dev run exemple.local docker stable8
+root@yunohost:/# cd yunohost
+root@yunohost:/yunohost/# ls
+Dockerfile  LICENSE  README.md	SSOwat	apps  backup  moulinette  ynh-dev  yunohost  yunohost-admin  yunohost-vagrant
+```
+
+##### Mettre à jour un container
+
+Si la vm n'est pas à jour lancez un `ynh-dev upgrade`:
+```bash
+root@yunohost:/yunohost/# ./ynh-dev upgrade
+```
+
+##### Déployer les sources présentes dans votre environnement
+Pour déployer les sources se trouvant dans votre environement de developpement faites:
+```bash
+root@yunohost:/yunohost/# ./ynh-dev deploy
+```
+
+Attention : pour yunohost-admin vous devez avoir compiler le js avec gulp au préalable
+
+
+
+Note : vous pouvez sélectionner les paquets à déployer exemple: `./ynh-dev deploy yunohost yunohost-admin`
+
+
+##### Lancer la postinstall
+Avec Docker
+```bash
+root@yunohost:/yunohost/# postinstall
+```
+Avec VirtualBox/Vagrant
+```bash
+root@yunohost:/yunohost/# yunohost tools postinstall
+```
+
+##### Récupérer l'ip de la vm et parametrer son /etc/hosts
+Si vous ne connaissez pas l'ip de votre vm:
+```bash
+root@yunohost:/yunohost/# ./ynh-dev ip
+172.17.0.1
+```
+
+Pour tester dans votre navigateur vous pouvez modifier votre fichier /etc/hosts afin de faire pointer votre domaine sur la bonne ip. Par exemple en y ajoutant une ligne semblable à celle ci
+```bash
+172.17.0.1   exemple.local
+```
+
+##### Déployer les sources au fur et à mesure des modifications
+```bash
+root@yunohost:/yunohost/# ./ynh-dev watch
+```
+
+Astuce : dans le cas de modification sur yunohost-admin, cette commande est trés pratique couplée avec un `gulp watch` sur la machine hôte.
+
