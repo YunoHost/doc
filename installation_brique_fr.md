@@ -66,7 +66,7 @@ Pour les commandes suivantes, nous admettons que l’adresse IP locale de la Bri
 À la première connexion, il sera demandé de changer le mot de passe : entrer à nouveau **olinux**, puis saisir deux fois votre nouveau mot de passe.
 
 7. Mettre à jour le système (environ 15 minutes) :
-```
+```bash
 % sudo apt-get update && sudo apt-get dist-upgrade
 ```
 
