@@ -44,7 +44,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Joomla!](https://www.joomla.org/)
 * [jsFiddle](http://jsbin.com/help/2-second-setup)
 * [Kaiwa](http://getkaiwa.com/)
-* [Kanboard] (http://kanboard.net/)
 * [Known](https://withknown.com/)
 * [KrISS feed](https://github.com/tontof/kriss_feed)
 * [Kune](https://en.wikipedia.org/wiki/Kune_%28software%29)
