@@ -26,7 +26,7 @@
   </div>
 </script>
 <br />
-<div class="alert alert-info">Official applications are under free licences.</div>
+<div class="alert alert-info">All official applications are under free licenses.</div>
 
 <script>
 function timeConverter(UNIX_timestamp) {
