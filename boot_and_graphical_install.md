@@ -25,7 +25,7 @@ You should see a screen like this:
 
 * Select your language, your location and your keyboard layout
 
-* If a partitionning screen appears, confirm.
+* If a partitioning screen appears, confirm.
 
     <div class="alert alert-danger"><b>Caution:</b> This will totally erase the data on your hard drive</div>
 

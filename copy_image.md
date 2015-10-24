@@ -25,7 +25,7 @@ sudo fdisk -l
 
 It should be `/dev/diskN`, where `N` is a number, or `/dev/sdX`, where `X` is a letter.
 
-Carefull to not put the digit `N` cause it will create an [non-fonctional SD card](https://raspberrypi.stackexchange.com/questions/11880/sd-card-doesnt-works-after-dd).
+Carefull to not put the digit `N` cause it will create an [non-functional SD card](https://raspberrypi.stackexchange.com/questions/11880/sd-card-doesnt-works-after-dd).
 
 * Copy the image by typing:
 
