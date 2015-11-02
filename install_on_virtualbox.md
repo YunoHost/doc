@@ -71,6 +71,7 @@ After the reboot, you will see this screen:
 <img src="https://yunohost.org/images/virtualbox_4.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 <br>
+* The password for root user is "yunohost"
 
 * You can obtain further precisions on post-installation here: **[yunohost.org/postinstall](/postinstall)**
 
