@@ -40,8 +40,12 @@ L'interface d’administration n'est en réalité qu'un client qui se connecte �
 Le service yunohost-api doit donc être start pour utiliser l'administration web.
 
 ### Installation de l’environnement de développement
-
-Attention : Cette partie est en cours de rédaction. La ligne de commande `ynh-dev` vient juste d'être créée il est possible qu'il y ai des manques.
+<div class="alert alert-warning">
+<b>Attention :</b> Cette partie est en cours de rédaction. La ligne de commande `ynh-dev` vient juste d'être créée il est possible qu'il y ai des manques.
+</div>
+<div class="alert alert-warning">
+<b>Note :</b> `ynh-dev` fonctionne avec apt-get. Debian et linux mint ont été testé. Ubuntu fonctionne sans doute.
+</div>
 
 
 Une ligne de commande `ynh-dev` a été créé afin de simplifier la gestion de votre environnement de developpement.
@@ -82,11 +86,15 @@ Pour déployer les sources se trouvant dans votre environement de developpement 
 root@yunohost:/yunohost/# ./ynh-dev deploy
 ```
 
-Attention : pour yunohost-admin vous devez avoir compiler le js avec gulp au préalable
+<div class="alert alert-warning">
+<b>Attention :</b> pour yunohost-admin vous devez avoir compiler le js avec gulp au préalable
+</div>
 
 
 
-Note : vous pouvez sélectionner les paquets à déployer exemple: `./ynh-dev deploy yunohost yunohost-admin`
+<div class="alert alert-warning">
+<b>Note :</b> vous pouvez sélectionner les paquets à déployer exemple: `./ynh-dev deploy yunohost yunohost-admin`
+</div>
 
 
 ##### Lancer la postinstall
