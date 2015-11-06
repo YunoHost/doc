@@ -168,7 +168,7 @@ Indique à SSOwat de ne pas s'occuper de la liste d'uris fournies séparées par
 Protège la liste d'uris fournies séparées par des virgules. Seul un utilisateur connecté y aura accès.<br><br>
 
 ```unprotected_uris```<br><br>
-Indique à SSOwat de ne pas s'occuper de la liste d'uris fournies séparées par des virgules que si l'utilisateur est connecté. Ces uris sont donc publiquement accessibles mais peuvent utiliser le mécanisme d'authentification centralisée.
+Indique à SSOwat de ne pas s'occuper de la liste d'uris fournies séparées par des virgules que si l'utilisateur est connecté. Ces uris sont donc publiquement accessibles mais peuvent utiliser le mécanisme d'authentification centralisée.<br><br>
 
 Il existe aussi `skipped_regex`, `protected_regex`, `unprotected_uris`, `unprotected_regex`.<br><br>
 
