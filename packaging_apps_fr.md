@@ -162,10 +162,13 @@ La commande définit la valeur si vous ajoutez ```-v <valeur>```, sinon la récu
 
 ** Quelques paramètres pratiques **<br><br>
 ```skipped_uris```<br><br>
-Enlève la protection sur la liste d'uris fournies séparées par des virgules.<br><br>
+Indique à SSOwat de ne pas s'occuper de la liste d'uris fournies séparées par des virgules. Celles-ci ne seront donc pas protégées et ne pourront pas utiliser le mécanisme d'authentification centralisée.<br><br>
 
 ```protected_uris```<br><br>
 Protège la liste d'uris fournies séparées par des virgules. Seul un utilisateur connecté y aura accès.<br><br>
+
+```unprotected_uris```<br><br>
+Indique à SSOwat de ne pas s'occuper de la liste d'uris fournies séparées par des virgules que si l'utilisateur est connecté. Ces uris sont donc publiquement accessibles mais peuvent utiliser le mécanisme d'authentification centralisée.
 
 Il existe aussi `skipped_regex`, `protected_regex`, `unprotected_uris`, `unprotected_regex`.<br><br>
 
