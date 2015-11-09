@@ -20,6 +20,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [DemocracyOS](http://democracyos.org/)
 * [Discourse](http://discourse.org/)
 * [Dolibarr](http://www.dolibarr.fr/)
+* [Emby](https://github.com/MediaBrowser/Emby)
 * [Ethersheet](https://ethersheet.org/)
 * [Fail2web](https://github.com/Sean-Der/fail2web)
 * [FileTea](https://filetea.me)
