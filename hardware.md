@@ -9,19 +9,12 @@ It is important to identify your machine kind before proceeding to the installat
 |------|-----------------------|----------------------|
 | **x86** | Desktops, Laptops, Mac Intel (after 2007), netbooks, nettops, etc. | [Install via CD/USB](/install_iso) |
 | **armhf** | [Raspberry Pi](/install_on_raspberry), [Cubieboard](/install_on_cubieboard), Cubox, Olimex, Beagleboard, etc. | [Install on ARM Debian](/install_on_debian) |
-| **powerpc** | Macintosh G4/G5, PS3 |  [Install on Debian](/install_on_debian) |
-
 
 ### Minimum requirements
-
-* 256MB RAM
-
-* 4GB storage space
+* 256Mo RAM
+* 4Go storage space
 
 ### Recommended
-
 * Recent x86 computer, silent and low consumption.
-
-* 512MB RAM in order to run all the services and apps properly
-
-* 20GB storage in order to store more mails and documents
+* 512Mo RAM in order to run all the services and apps properly
+* 20Go storage in order to store more mails and documents
