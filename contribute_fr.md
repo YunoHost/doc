@@ -22,7 +22,7 @@ Parlez de logiciel libre, d'[auto-hébergement](/selfhosting_fr), de YunoHost à
 <span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;&nbsp; Testez
 </div>
 <div class="col col-md-8" markdown="1">
-Nous avons besoin de tester YunoHost profondément. Si vous trouvez un bug, essayez de l'identifier, puis reportez-le sur le bon <a href="https://github.com/YunoHost" target="_blank">bug tracker GitHub</a>.
+Nous avons besoin de tester YunoHost profondément. Si vous trouvez un bug, essayez de l'identifier, puis reportez-le sur notre <a href="https://dev.yunohost.org/projects/yunohost/issues/new" target="_blank">bug tracker</a>.
 </div>
 </div>
 
