@@ -22,7 +22,7 @@ Talk about software freedom, [self-hosting](selfhosting_en) and YunoHost to your
 <span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;&nbsp; Testing
 </div>
 <div class="col col-md-8" markdown="1">
-We need people able to test YunoHost deeply. If you find a bug, try to identify it, and report it on the right <a href="https://github.com/YunoHost" target="_blank">GitHub issue tracker</a>.
+We need people able to test YunoHost deeply. If you find a bug, try to identify it, and report it on our <a href="https://dev.yunohost.org/projects/yunohost/issues/new" target="_blank">bug tracker</a>.
 </div>
 </div>
 
