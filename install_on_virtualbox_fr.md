@@ -8,8 +8,8 @@
 
 * Un ordinateur x86 avec VirtualBox installé et assez de RAM disponible pour lancer une petite machine virtuelle.
 * La dernière **image ISO YunoHost**, disponible ici :
-  * **[Torrent](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent)** : partagez au moins jusqu’au un ratio de 1 pour assurer la pérennité du torrent
-  * **[Téléchargement direct](http://build.yunohost.org/yunohostv2-latest-amd64.iso)**
+  * **Torrent** ([i386](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent), [amd64](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent)): partagez au moins jusqu’à un ratio de 1 pour assurer la pérennité du torrent
+  * **Téléchargement direct** ([i386](http://build.yunohost.org/yunohostv2-latest-i386.iso), [amd64](http://build.yunohost.org/yunohostv2-latest-amd64.iso))
 
 ---
 
