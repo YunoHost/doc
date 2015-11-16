@@ -65,12 +65,13 @@ Pour les commandes suivantes, nous admettons que l’adresse IP locale de la Bri
 ```
 À la première connexion, il sera demandé de changer le mot de passe : entrer à nouveau **olinux**, puis saisir deux fois votre nouveau mot de passe.
 
-7. (optionnel) **Si vous avez une antenne WiFi libre**, la débrancher/rebrancher pour qu’elle soit reconnue.
-
 8. Mettre à jour le système (environ 15 minutes) :
 ```bash
 % sudo apt-get update && sudo apt-get dist-upgrade
 ```
+
+9. (optionnel) **Si vous avez une antenne WiFi libre**, la débrancher/rebrancher pour être sûr qu’elle soit reconnue après la mise à jour.
+
 
 ## Étapes de configuration
 
