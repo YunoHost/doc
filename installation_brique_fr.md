@@ -42,6 +42,7 @@ L’ordre des étapes est important.
 3. Copier l'image sur la carte (remplacer *SDNAME* par le nom trouvé lors de l'étape précédente) :
 ```bash
 sudo dd if=/tmp/labriqueinternet.img of=/dev/SDNAME bs=1M
+sync
 ```
 
 4. Mettre la carte micro-SD dans une Brique, connecter la brique à votre routeur avec le câble Ethernet, puis brancher l’alimentation. La brique démarre normalement toute seule, et les LEDs du port Ethernet se mettent à clignoter au bout de 10 secondes maximum.
@@ -61,13 +62,13 @@ Pour les commandes suivantes, nous admettons que l’adresse IP locale de la Bri
 
 6. Se connecter en SSH en root à la Brique, le mot de passe est **olinux** par défaut :
 ```bash
-% ssh root@192.168.4.2
+ssh root@192.168.4.2
 ```
 À la première connexion, il sera demandé de changer le mot de passe : entrer à nouveau **olinux**, puis saisir deux fois votre nouveau mot de passe.
 
 7. Mettre à jour le système (environ 15 minutes) :
 ```bash
-% sudo apt-get update && sudo apt-get dist-upgrade
+apt-get update && apt-get dist-upgrade
 ```
 
 8. (optionnel) **Si vous avez une antenne WiFi libre**, la débrancher/rebrancher pour être sûr qu’elle soit reconnue après la mise à jour.
