@@ -300,19 +300,19 @@ Quand vous bricolez une application, des erreurs peuvent avoir lieu selon certai
 Nous allons voir ici les « cas classiques ». 
 La configuration des applications n'est pas abordée ici car leurs configurations respectives peuvent énormément varier.
 
-##### Schéma super simplifié
-Naviguateur web −> Nginx <− (Serveur web) <−  interpréteur (PHP, Python, Node.js,...) <− app
+##### Schéma simplifié
+Naviguateur web −> Nginx <− (serveur web) <−  interpréteur (PHP, Python, Node.js…) <− app
 
-L'application est executée par l'interpréteur, celui-ci peut potentiellement fournir un serveur web. Le runtime ou le serveur web va communiquer avec Nginx et ce dernier servira des page au navigateur web. 
+L'application est executée par l'interpréteur, celui-ci peut potentiellement fournir un serveur web. Le runtime ou le serveur web va communiquer avec Nginx et ce dernier servira des pages au navigateur web. 
 
-Le but de cette configuration est d'avoir plusieurs application sur un seul serveur avec seulement le port https ouvert à l'internet entier.
+Le but de cette configuration est d'avoir plusieurs applications sur un seul serveur avec seulement le port https ouvert à l'internet entier.
 
 ### Applications PHP
 ##### Options de déploiement
 PHP fonctionne nativement avec Nginx
 
 ##### La communication avec Nginx
-L'interpréteur Php communique avec Nginx par [PHP-FPM](http://php-fpm.org/)
+L'interpréteur PHP communique avec Nginx par [PHP-FPM](http://php-fpm.org/)
 qui est une implémentation de [FastCGI](http://en.wikipedia.org/wiki/FastCGI) implémentation.
 
 ##### Les logs
@@ -321,7 +321,7 @@ qui est une implémentation de [FastCGI](http://en.wikipedia.org/wiki/FastCGI) i
 ```
 **Exemple de paquet YunoHost** : [Owncloud](https://github.com/Kloadut/owncloud_ynh).
 
-### Application Python 
+### Applications Python 
 ##### Options de déploiement
 Une application python devrait fonctionner  avec son propre interpréteur Python et ses propres dépendance. Pour cela, on peut utiliser l'outil `virtualenv`.
 D'habitude, un serveur web léger sera utilisé pour fournir l'application derrière Nignx [Uwsgi](https://uwsgi-docs.readthedocs.org/en/latest/) est un bon exemple.
@@ -332,7 +332,7 @@ Nginx communique de trois manières avec Python :
 
 - [proxy_pass](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass)
 - Websocket
-- Native uwsgi: uwsgi_pass: [Par exemple](https://github.com/abeudin/searx_ynh/blob/master/conf/nginx.conf#L9-L10)
+- Native uwsgi : uwsgi_pass : [par exemple](https://github.com/abeudin/searx_ynh/blob/master/conf/nginx.conf#L9-L10)
 
 ##### Logs
 Logs spécifiques à l'application et/ou au serveur web, par exemple uwsgi :
@@ -346,7 +346,7 @@ Logs spécifiques à l'application et/ou au serveur web, par exemple uwsgi :
 
 ### Applications Node.js 
 ##### Options de déploiement
-Une application Node.js a son propre serveur web intégré dans le l'interpréteur node. D'habitude, Node va exposer l'application sur un port TCP.
+Une application Node.js a son propre serveur web intégré dans l'interpréteur Node. D'habitude, Node va exposer l'application sur un port TCP.
 
 ##### Communication avec Nginx
 Le point d'accès http va être réalisé en local vers Nginx via proxy_pass.
@@ -356,14 +356,14 @@ Cela va être spécifique aux applications.
 
 **Exemple de paquet YunoHost en Node.js :** [Etherpad-Lite](https://github.com/abeudin/etherpadlite_ynh).
 
-**Note** : les processus Node peuvent utiliser **Beaucoup** de mémoire comparée aux processus des autres applications. Assurez-vous donc d'en avoir assez.
+**Note** : les processus Node peuvent utiliser **beaucoup** de mémoire comparée aux processus des autres applications. Assurez-vous donc d'en avoir assez.
 
-### Aures (Go, Java…)
+### Autres (Go, Java…)
 Les webapp peuvent être déployées de nombreuses manières.
 Les applications Go ont généralement un serveur web intégré, Java peut être déployé avec Tomcat ou une autre solution équivalente. Il n'est pas possible d'être exhaustif ici mais la plupart du temps, les déploiements vont exposer une adresse en http que vous pourrez passer dans Nginx via proxy_pass.
 
 ##### Note sur Apache
-Ne jamais installer le serveur web Apache ou un paquet avec Apache comme dépendance, cela va sûrement casser votre instance YunoHost.
+Ne jamais installer le serveur web Apache ou un paquet avec Apache comme dépendance, cela va sûrement casser l’instance YunoHost.
 
 ##### Note sur https
 Parfois, le serveur web intégré avec l'application est capable de servir du https lui-même.
