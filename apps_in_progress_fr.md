@@ -102,7 +102,7 @@ $(document).ready(function () {
           $(".inprogress").each(function() {
               $(this).html( '<a class="btn btn-small btn-warning disabled" href="#">En cours</a>' );
           });
-          $(".ready").each(function() {
+          $(".working").each(function() {
               $(this).html( '<a class="btn btn-small btn-success disabled" href="#">Fonctionnel</a>' );
           });
       }, 3000);
