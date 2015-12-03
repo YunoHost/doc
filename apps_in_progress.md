@@ -99,8 +99,8 @@ $(document).ready(function () {
           $(".inprogress").each(function() {
               $(this).html( '<a class="btn btn-small btn-warning disabled" href="#">In progress</a>' );
           });
-          $(".ready").each(function() {
-              $(this).html( '<a class="btn btn-small btn-success disabled" href="#">Ready</a>' );
+          $(".working").each(function() {
+              $(this).html( '<a class="btn btn-small btn-success disabled" href="#">Working</a>' );
           });
       }, 3000);
     });
