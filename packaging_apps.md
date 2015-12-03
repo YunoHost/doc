@@ -242,7 +242,7 @@ You will find points to verify quality of your scripts:
 ### Publish and ask for testing your application
 * Publishing a [post on the Forum](https://forum.yunohost.org/) with the [`App integration` category](https://forum.yunohost.org/c/app-integration), to ask tests and returns on your application.
 
-* Ask to add your application in the [app repository](https://github.com/YunoHost/apps) to be displayed in the [non-official apps list](https://yunohost.org/#/apps_in_progress_en). Precise his progress state: `notworking`, `inprogress`, or `ready`
+* Ask to add your application in the [app repository](https://github.com/YunoHost/apps) to be displayed in the [non-official apps list](https://yunohost.org/#/apps_in_progress_en). Precise his progress state: `notworking`, `inprogress`, or `working`.
 
 ### Officalization of an application
 To become an official application, it must be enough tested, stable and should works on 64 bits, 32 bits et ARM processors architectures and on Debian Wheezy and Jessie. If you think thoses conditions are gather, ask for [official integration](https://github.com/YunoHost/apps) of your application.
