@@ -244,7 +244,7 @@ Vous trouverez ci-dessous une liste des point à vérifier concernant la qualit�
 ### Publiez et demandez des tests de votre application
 * Demandez des tests et des retours sur votre application en publiant un [post sur le Forum](https://forum.yunohost.org/) dans la [catégorie `App integration`](https://forum.yunohost.org/c/app-integration).
 
-* Faire une demande d’ajout de votre application dans le [dépôt des applications](https://github.com/YunoHost/apps) afin qu’elle soit affichée dans [la liste des apps non officielles](https://yunohost.org/#/apps_in_progress_en). Préciser également son état d’avancement : `notworking`, `inprogress`, ou `ready`
+* Faire une demande d’ajout de votre application dans le [dépôt des applications](https://github.com/YunoHost/apps) afin qu’elle soit affichée dans [la liste des apps non officielles](https://yunohost.org/#/apps_in_progress_en). Préciser également son état d’avancement : `notworking`, `inprogress` ou `working`
 
 ### Officialisation d’une application
 Pour qu’une application devienne officielle, elle doit être suffisamment testée, stable et fonctionner sous les architectures 64 bits, 32 bits et ARM sur Debian Wheezy et Jessie. Si ces conditions vous paraissent réunies, demandez l’[intégration officielle](https://github.com/YunoHost/apps) de votre application.
