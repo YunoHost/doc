@@ -65,7 +65,7 @@
             * [Régénérer le certificat auto-signé](/regenerate_certificate_fr)
         * [Sécurité](/security_fr)
         * [Consulter les fichiers de log du système](/check_logfile_fr)
-        * [Guide de dépannage](/troubleshooting_guide_en)
+        * [Guide de dépannage](/troubleshooting_guide_fr)
         * [YunoHost service caché Tor](/torhiddenservice_fr)
         * [Débloquer une IP avec Fail2ban](/fail2ban_fr)
 
