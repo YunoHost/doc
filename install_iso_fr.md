@@ -8,7 +8,9 @@
 <img src="https://yunohost.org/images/desktop.jpg">
 <img src="https://yunohost.org/images/nettop.jpg">
 
-* Un matériel compatible x86 dédié à YunoHost : portable, netbook, ordinateur. Vous pouvez réutiliser n’importe quelle machine avec **256MB de RAM minimum**
+<div class="alert alert-danger">Ces images sont basées sur **Debian Wheezy**. Il est **conseillé** d’installer sur **Debian Jessie** avec le **[script d’installation](/install_on_debian_fr)**.</div>
+
+* Un matériel compatible x86 dédié à YunoHost : portable, netbook, ordinateur. Vous pouvez réutiliser n’importe quelle machine avec **256 Mo de RAM minimum**
 * Un autre ordinateur pour parcourir ce guide et accéder à votre serveur
 * Un [fournisseur d’accès correct](/isp_fr), de préférence avec une bonne vitesse d’upload
 * Une **clé USB** d’une capacité minimum d’1Go **OU** un **CD vierge** standard
