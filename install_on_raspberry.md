@@ -13,7 +13,7 @@
 * A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
 * The **YunoHost Raspberry Pi image**, available here (to **unzip**):
 
-    [http://build.yunohost.org/yunohost4rpi2.img.7z](http://build.yunohost.org/yunohost4rpi2.img.7z)
+    [Wheezy image for Raspberry Pi 1 and 2 created the 4th june 2015](http://build.yunohost.org/yunohost4rpi2.img.7z)
 
 ---
 
