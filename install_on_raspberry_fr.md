@@ -35,4 +35,9 @@
 * Mettre à jour le système d’exploitation : ```apt-get update && apt-get dist-upgrade && rpi-update```
 
 ---
+
+#### Créer une image
+* [Créer une image pour Raspberry](/build_arm_image_en)
+
+---
 ***Si vous avez besoin d’aide lors de ces étapes, n’hésitez pas à utiliser les différents [moyens de support](/support_fr).***
