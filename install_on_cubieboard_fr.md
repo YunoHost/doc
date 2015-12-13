@@ -28,11 +28,10 @@
 #### Recommandé après la post-installation
 * Utilisez l’[authentification SSH par clé](security_fr)
 
-#### Annexes
-*  [Scripts d’installation de YunoHost pour Cubian](https://github.com/M5oul/Yunocubian)
-* Images Debian 7/8 pour Cubieboard compatible avec YunoHost :
-  * [Cubian](http://cubian.org/)
-  * [Cubieez](http://www.cubieforums.com/index.php?topic=442.0)
+---
+
+#### Créer une image
+* [Créer une image pour Cubieboard](/build_arm_image_en)
 
 ---
 
