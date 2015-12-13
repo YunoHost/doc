@@ -83,6 +83,7 @@
            * [Wishlist of applications](/apps_wishlist_en)
            * [Creation of system packages](/build_system_en)
            * [Creation of Debian packages](/build_packages_en)
+           * [Create an ARM board image](/build_arm_image_en)
            * [Create a live USB image](/create_live_usb)
            * [Build Openresty](/build_openresty)
         * Documentation
