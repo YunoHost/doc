@@ -7,7 +7,7 @@ It could be used on many ARM board (Rasberry Pi, Olimex, Cubieboard…).
 This tutorial is based on [Yunocubian](https://github.com/M5oul/Yunocubian).
 
 ### Download minimal Debian Jessie
-Download a Debian Jessie compatible with the hardware **without desktop environnement** installed:
+Download a Debian Jessie image compatible with the hardware **without desktop environnement** installed:
 
 * [ARMbian](http://www.armbian.com/download/) (Olimex, Cubieboard, Banana Pi…)
 * [Raspbian Jessie Lite](https://www.raspberrypi.org/downloads/raspbian/)
@@ -33,7 +33,7 @@ apt-get update && apt-get dist-upgrade && apt-get autoremove
 ```bash
 hostname -v YunoHost
 ```
-* Generate new SSH key at first lauching:
+* Set new SSH key generation at first lauching:
 
 ```bash
 # Delete SSH keys
@@ -65,7 +65,7 @@ chmod a+x /etc/init.d/ssh_gen_host_keys
 insserv /etc/init.d/ssh_gen_host_keys
 ```
 
-* Delete logs
+* Delete logs:
 ```bash
 find /var/log -type f -exec rm {} \;
 ```
@@ -78,18 +78,19 @@ shutdown
 ### Copy image
 Plug your SD card on your desktop computer and copy it:
 <div class="alert alert-danger">Be carefull to not erase your data.</div>
+
 ```bash
 sudo dd bs=1M if=/dev/sdd of=~/yunohost-jessie-board-year-month-day.img
 ```
 
-### Try image
+### Verify image
 <a class="btn btn-lg btn-default" href="/copy_image">Copy image to the SD card</a>
 
 <a class="btn btn-lg btn-default" href="/plug_and_boot">Plug & boot</a>
 
 <a class="btn btn-lg btn-default" href="/postinstall">Post-install</a>
 
-If everything is alright, you could publish your image.
+<div class="alert alert-info">If everything is alright, you could publish your image.</div>
 
 ### Publish image
 * Reduce size by zipping the image:
