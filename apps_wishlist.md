@@ -37,6 +37,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Headphones](https://github.com/rembo10/headphones)
 * [Hi Buddy](http://hibuddy.monkeypatch.me/)
 * [Huginn](https://github.com/cantino/huginn)
+* [Hugo](http://gohugo.io/)
 * [ikiwiki](http://ikiwiki.info/)
 * [img.bi](https://img.bi/)
 * [Inbox](https://www.inboxapp.com/)
