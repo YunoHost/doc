@@ -39,6 +39,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Hi Buddy](http://hibuddy.monkeypatch.me/)
 * [Huginn](https://github.com/cantino/huginn)
 * [Hugo](http://gohugo.io/)
+* [Icecast 2](http://www.icecast.org/)
 * [ikiwiki](http://ikiwiki.info/)
 * [img.bi](https://img.bi/)
 * [Inbox](https://www.inboxapp.com/)
