@@ -4,7 +4,7 @@ This document aimed to learn you how to package an application for YunoHost.
 
 ### Requirements
 To package an application, here are the requirements:
-* An account on a git server as [Framagit](https://git.framasoft.org/public/projects) or [GitHub](https://github.com/) to publish the application;
+* An account on a git server as [GitHub](https://github.com/) to publish the application;
 * Control a minimum `git`, Shell and other programming stuffs;
 * A testing [virtual machine or a distant server](/install_en) to package and test the package.
 
