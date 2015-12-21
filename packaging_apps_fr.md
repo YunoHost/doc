@@ -4,7 +4,7 @@ Ce document a pour but de vous apprendre à packager une application pour YunoHo
 
 ### Prérequis
 Pour packager une application, voici les prérequis :
-* Un compte sur un serveur git comme [GitHub](https://github.com/) pour pouvoir ensuite publier l’application ;
+* Un compte sur un serveur git comme [Framagit](https://git.framasoft.org/public/projects) ou [GitHub](https://github.com/) pour pouvoir ensuite publier l’application ;
 * Maîtriser un minimum `git`, le Shell et d’autres notions de programmation ;
 * Une [machine virtuelle ou sur un serveur distant](/install_fr) pour packager et tester son paquet.
 
