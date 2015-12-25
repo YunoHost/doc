@@ -104,6 +104,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [webSync](http://furier.github.io/websync/)
 * [WebTorrent](https://github.com/feross/webtorrent)
 * [Wisemapping](http://www.wisemapping.com/)
+* [Xonotic](http://xonotic.org/)
 * [YellowCMS](http://datenstrom.se/yellow/)
 * [ZeroNet](http://zeronet.io/)
 * [Zone-project](https://github.com/descl/ZONE)
