@@ -75,6 +75,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Pico](http://picocms.org/)
 * [Pix](http://pix.toile-libre.org/)
 * [PPTP VPN](https://packages.debian.org/sv/squeeze/pptpd)
+* [Privoxy](http://www.privoxy.org/)
 * [Pulse](https://ind.ie/pulse/)
 * [Pump.io](http://pump.io)
 * [racktables](http://racktables.org/)
