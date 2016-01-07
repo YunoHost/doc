@@ -52,7 +52,7 @@ Le premier démarrage peut mettre une grosse minute car la partition est redimen
 
 5. Récupérer l’adresse IP locale de la Brique :
 <ul>
-<li>soit avec une commande comme `arp-scan --local | grep -P '\t02'`,</li>
+<li>soit avec une commande comme `arp-scan --local | grep -P '\t02'` ou bien la commande `arp-scan --local -I wlan0 | grep -P '\t02'` si votre ordinateur est en wifi.</li>
 <li>soit via l'interface du routeur listant les clients DHCP,</li>
 <li>soit en branchant un écran en HDMI à la Brique, et en exécutant `ifconfig`.</li>
 </ul>
