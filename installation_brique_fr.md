@@ -165,7 +165,7 @@ systemctl stop amavis
 systemctl disable amavis
 ```
 
-* **Mettre à jour la configuration SSH** : par défaut, la connexion en tant que **root** est possible sur la Brique. Pour ne garder que la connexion en tant qu’**admin** (qui est sudoer), il convient d’éditer le `/etc/ssh/sshd_config` et de passer **PermitRootLogin** à **without-password**.
+* **Mettre à jour la configuration SSH** : par défaut, la connexion SSH en tant que **root** est possible sur la Brique ce qui est considéré comme une faille de sécurité. Quand vous voulez vous connecter en SSH, il est préférable de le faire en tant qu'**admin** : cet utilisateur (qui est sudoer) a été créé automatiquement avec le même mot de passe que **root**. Pour ne garder que la connexion en tant qu’**admin**, il convient d’éditer le `/etc/ssh/sshd_config` et de passer **PermitRootLogin** à **without-password**.
 
 <div class="alert alert-warning" markdown="1">
 D'autres conseils de sécurité sont décrits sur la page : [sécurité](/security_fr).
