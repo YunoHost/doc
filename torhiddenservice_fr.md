@@ -47,3 +47,8 @@ Si vous voulez éviter d’être redirigé vers le portail à la connexion pour 
 #access_by_lua_file /usr/share/ssowat/access.lua;
 ```
 
+## Rédémarrer nginx
+
+```bash
+service nginx restart
+```

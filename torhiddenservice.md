@@ -45,3 +45,9 @@ If you want to avoid being redirected to the SSO portal at login, you can deacti
 ```bash
 #access_by_lua_file /usr/share/ssowat/access.lua;
 ```
+
+## Restart nginx
+
+```bash
+service nginx restart
+```
