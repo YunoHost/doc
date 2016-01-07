@@ -22,13 +22,18 @@ Pour pouvoir envoyer des mails, passer le blocage en « inactif ».
 
 #### Fonction NAS de la Freebox
 
-Il faut installer le paquet cifs-utils
+Il faut installer le paquet `cifs-utils`
+```bash
 $ sudo apt-get install cifs-utils
+```
 
-Il faut créer un point de montage (ici /home/monlogin/freebox)
+Il faut créer un point de montage (ici `/home/monlogin/freebox`)
+```bash
 $ mkdir ~/freebox
+```
 
 On monte le répertoire NAS par défaut avec les droits de lecture / écriture pour tous
+```bash
 $ sudo mount -t cifs //mafreebox.freebox.fr/Disque\ dur/ /home/monlogin/freebox -o guest,iocharset=utf8,file_mode=0777,dir_mode=0777
-
+```
 RAF : automatiser ce montage car il faut le refaire à chaque rédémarrage.
