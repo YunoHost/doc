@@ -51,6 +51,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [JS Bin](http://jsbin.com/help/2-second-setup)
 * [Kaiwa](http://getkaiwa.com/)
 * [Known](https://withknown.com/)
+* [Kontalk](http://kontalk.org/)
 * [KrISS feed](https://github.com/tontof/kriss_feed)
 * [Kune](https://en.wikipedia.org/wiki/Kune_%28software%29)
 * [Loomio](https://www.loomio.org/)
