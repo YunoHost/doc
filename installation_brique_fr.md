@@ -3,9 +3,9 @@
 <div class="alert alert-info" markdown="1">
 Cette documentation s'adresse à des personnes qui ont **quelques notions d'informatique** et qui souhaitent installer eux-même leur Brique Internet.
 
-Pour obtenir une **Brique clé-en-main** et pouvoir l'utiliser directement sans avoir besoin de connaissances particulières, il faut se rapprocher d'une association locale qui fournit des Briques Internet à leurs adhérents, comme celles référencées sur [le site de FFDN](http://db.ffdn.org).
+Pour obtenir une **Brique clé-en-main** et pouvoir l'utiliser directement sans avoir besoin de connaissances particulières, il faut se rapprocher d'une association locale qui fournit des Briques Internet à ses adhérents, comme celles référencées sur [le site de FFDN](http://db.ffdn.org).
 
-Site du projet *La Brique Internet* : http://labriqueinter.net
+[Site du projet *La Brique Internet*](http://labriqueinter.net)
 </div>
 
 ![brique](https://yunohost.org/images/thisisinternet.png)
@@ -13,11 +13,15 @@ Site du projet *La Brique Internet* : http://labriqueinter.net
 ## Prérequis
 
 Une **Brique Internet complète**, soit :
-* Un mini-serveur [A20-OLinuXino-LIME](https://www.olimex.com/Products/OLinuXino/A20/A20-OLinuXino-LIME/open-source-hardware) ou [A20-OLinuXino-LIME2](https://www.olimex.com/Products/OLinuXino/A20/A20-OLinuXino-LIME2/open-source-hardware).
+* Un mini-serveur Olimex :
+ * [A20-OLinuXino-LIME](https://www.olimex.com/Products/OLinuXino/A20/A20-OLinuXino-LIME/open-source-hardware)
+ * [A20-OLinuXino-LIME2](https://www.olimex.com/Products/OLinuXino/A20/A20-OLinuXino-LIME2/open-source-hardware)
 * Une carte micro-SD (des [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO) pour des raisons de performance/stabilité).
-* Une antenne WiFi [MOD-WIFI-R5370-ANT](https://www.olimex.com/Products/USB-Modules/MOD-WIFI-R5370-ANT/) (non-libre) ou [AR9271](http://fr.aliexpress.com/item/Atheros-AR9271-Chip-150Mbps-Mini-USB-Wifi-Adapter-with-5dBi-Antenna/32344771975.html) (libre, mais limitée à 7 connexions simultanées maximum).
 * Un adaptateur secteur [européen](https://www.olimex.com/Products/Power/SY0605E/) pour alimenter la brique. L’alimentation via USB semble peu stable.
 * Un câble Ethernet/RJ-45 pour brancher la Brique à son routeur.
+* Une antenne WiFi :
+ * [MOD-WIFI-R5370-ANT](https://www.olimex.com/Products/USB-Modules/MOD-WIFI-R5370-ANT/) (non-libre)
+ * [AR9271](http://fr.aliexpress.com/item/Atheros-AR9271-Chip-150Mbps-Mini-USB-Wifi-Adapter-with-5dBi-Antenna/32344771975.html) (libre, mais limitée à sept connexions simultanées maximum)
 
 Et évidemment, **un ordinateur sous GNU/Linux ou BSD**.
 
@@ -27,7 +31,7 @@ L’ordre des étapes est important.
 
 ## Étapes préliminaires
 
-1. Télécharger l’image ( [lime1](http://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz) ou [lime2](http://repo.labriqueinter.net/labriqueinternet_A20LIME2_latest_jessie.img.tar.xz) ), la valider son *checksum MD5*, puis la décompresser :
+1. Télécharger l’image ([lime1](http://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz) ou [lime2](http://repo.labriqueinter.net/labriqueinternet_A20LIME2_latest_jessie.img.tar.xz)), valider son *checksum MD5*, puis la décompresser :
 ```bash
 % cd /tmp/
 % wget http://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz
@@ -45,26 +49,26 @@ sudo dd if=/tmp/labriqueinternet.img of=/dev/SDNAME bs=1M
 sync
 ```
 
-4. Mettre la carte micro-SD dans une Brique, connecter la brique à votre routeur avec le câble Ethernet, puis brancher l’alimentation. La brique démarre normalement toute seule, et les LEDs du port Ethernet se mettent à clignoter au bout de 10 secondes maximum.
+4. Mettre la carte micro-SD dans une Brique, connecter la brique à votre routeur avec le câble Ethernet, puis brancher l’alimentation. La brique démarre normalement toute seule, et les LEDs du port Ethernet se mettent à clignoter au bout de dix secondes maximum.
 <div class="alert alert-warning" markdown="1">
-Le premier démarrage peut mettre une grosse minute car la partition est redimensionnée et le serveur est redémarré automatiquement.
+Le premier démarrage peut prendre un peu plus d’une minute car la partition est redimensionnée et le serveur est redémarré automatiquement.
 </div>
 
 5. Récupérer l’adresse IP locale de la Brique :
-<ul>
-<li>soit avec une commande comme `arp-scan --local | grep -P '\t02'` ou bien la commande `arp-scan --local -I wlan0 | grep -P '\t02'` si votre ordinateur est en wifi.</li>
-<li>soit via l'interface du routeur listant les clients DHCP,</li>
-<li>soit en branchant un écran en HDMI à la Brique, et en exécutant `ifconfig`.</li>
-</ul>
+
+ * soit avec une commande comme `arp-scan --local | grep -P '\t02'` ou bien avec la commande `arp-scan --local -I wlan0 | grep -P '\t02'` si votre ordinateur est connecté en WiFi.
+ * soit via l'interface du routeur listant les clients DHCP,
+ * soit en branchant un écran en HDMI à la Brique, et en exécutant `ifconfig`.
+
 <div class="alert alert-info" markdown="1">
 Pour les commandes suivantes, nous admettons que l’adresse IP locale de la Brique est **192.168.4.2**. Remplacer par l'adresse IP précédement déterminée.
 </div>
 
-6. Se connecter en SSH en root à la Brique, le mot de passe est **olinux** par défaut :
+6. Se connecter en SSH en root à la Brique, le mot de passe par défaut est **olinux** :
 ```bash
 ssh root@192.168.4.2
 ```
-À la première connexion, il sera demandé de changer le mot de passe : entrer à nouveau **olinux**, puis saisir deux fois votre nouveau mot de passe.
+À la première connexion, il sera demandé de changer le mot de passe : entrer à nouveau **olinux**, puis saisir deux fois le nouveau mot de passe.
 
 7. Mettre à jour le système (environ 15 minutes) :
 ```bash
@@ -113,7 +117,7 @@ topology subnet</code></pre>
 </div>
 
 <div class="alert alert-warning" markdown="1">
-**Attention** : le redémarrage du service, déclenché par le bouton **Save and reload**, peut mettre quelques minutes.
+**Attention** : le redémarrage du service, déclenché par le bouton **Save and reload**, peut prendre quelques minutes.
 </div>
 
 7. **Installer l’application Hotspot** : s'assurer que l’antenne WiFi est bien branchée, et répéter les étapes **4**, **5** et **6** en installant à l’aide de l'URL `https://github.com/labriqueinternet/hotspot_ynh` :
@@ -176,7 +180,7 @@ D'autres conseils de sécurité sont décrits sur la page : [sécurité](/securi
 * **Configurer le DKIM** : avec un SPF et un PTR bien configurés dans les DNS, les emails envoyés par la Brique ne devraient pas être considérés comme spam. Ceci dit, GMail et d’autres dégraderont considérablement le spamscore si le DKIM n’est pas configuré également.
 Cette opération est longue mais à considérer pour avoir un serveur email irréprochable en production. Plus de renseignement sur [la page de documentation appropriée](/dkim_fr).
 
-* **Installer Roundcube** via l’interface d’administration YunoHost et tester l’envoi/réception d’email.
+* **Installer Roundcube** via l’interface d’administration YunoHost et tester l’envoi et la réception d’email.
 
 * **Installer d’autres applications** et les découvrir.
 
@@ -184,6 +188,6 @@ Cette opération est longue mais à considérer pour avoir un serveur email irr�
 
 ## Notes
 
-* **Attention à la RAM** : sur le modèle A20-OLinuXino-LIME, les **512 Mo** partent vite. Les applications PHP ne sont pas très gourmandes, mais Searx et Etherpad Lite sont par exemple à installer avec des pincettes. Ce sont Amavis et mySQL qui consomment le plus de RAM. Amavis sera bientôt remplacé par rspamd qui est moins gourmand en ressources. Toutes les apps officielles fonctionnent sans problème de RAM avec le A20-OLinuXino-LIME2 (qui a 1Go de RAM). 
+* **Attention à la RAM** : sur le modèle A20-OLinuXino-LIME, les **512 Mo** partent vite. Les applications PHP ne sont pas très gourmandes, mais Searx et Etherpad Lite sont par exemple à installer avec des pincettes. Ce sont Amavis et MySQL qui consomment le plus de RAM. Amavis sera bientôt remplacé par rspamd qui est moins gourmand en ressources. Toutes les apps officielles fonctionnent sans problème de RAM avec le A20-OLinuXino-LIME2 (qui a 1 Go de RAM). 
 
 * Attention à bien veiller à ce que les répertoires utilisateurs soient bien créés (étape 5.) dans `/var/mail` et `/home/`, sans quoi plusieurs bugs seront observables dans l’interface d’administration (erreurs 500 en pagaille).
