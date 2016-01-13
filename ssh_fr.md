@@ -21,3 +21,8 @@ Les utilisateurs crées via l'interface d'administration de YunoHost sont géré
 Si vous souhaitez avoir un autre utilisateur qu'admin pour vous connectez en ssh, il faut le créer depuis la ligne de commande (via l'utilisateur admin) comme n'importe quel utilisateur (commande adduser).
 
 Rq : cet utilisateur ne sera pas utilisable depuis YunoHost. Il aura son propre répértoire /home, son propre groupe (cf les principes d'un utilisateur Linux classique et les différents tutoriaux sur le sujet dans toute bonne documentation sur l'administration sous Debian).
+
+##### Sécurité et SSH
+
+Voir la page dédiée [Sécurité et SSH](/security_fr)
+
