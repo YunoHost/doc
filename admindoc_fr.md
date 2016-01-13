@@ -51,3 +51,4 @@
    * [Régénérer un certificat](/regenerate_certificate_fr)
 * [YunoHost service caché Tor](/torhiddenservice_fr)
    * [Débloquer une IP avec Fail2ban](/fail2ban_fr)
+* [Les sauvegardes](/backup_fr)
