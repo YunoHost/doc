@@ -92,6 +92,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [scrumblr](http://scrumblr.ca/)
 * [ShareLatex](https://www.sharelatex.com/)
 * [Shleuder](http://schleuder2.nadir.org/)
+* [Shout](http://shout-irc.com/)
 * [SIP](https://en.wikipedia.org/wiki/List_of_SIP_software#Free_and_open-source_license)
 * [Sonarr](https://sonarr.tv/)
 * [Sonerezh](https://github.com/Sonerezh)
