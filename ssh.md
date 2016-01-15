@@ -20,7 +20,7 @@ Users yunohost created via the administration interface are managed by the LDAP 
 
 If you want another user admin to log on ssh, you must create it from the command line (through the admin user) as any user (adduser).
 
-Rq: this user will not be usable since yunohost. It will have its own repertoire /home, his own linux group (see the principles of a Linux user and the various tutorials on the subject in any good documentation on the administration in Debian).
+Rq: this user will not be usable since yunohost. It will have its own folder /home, his own linux group (see the principles of a Linux user and the various tutorials on the subject in any good documentation on the administration in Debian).
 
 ##### Security and SSH
 
