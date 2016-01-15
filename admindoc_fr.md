@@ -65,3 +65,4 @@
 * [YunoHost service caché Tor](/torhiddenservice_fr)
    * [Débloquer une IP avec Fail2ban](/fail2ban_fr)
 * [Les sauvegardes](/backup_fr)
+* [Les mises à jour](/update_fr)
