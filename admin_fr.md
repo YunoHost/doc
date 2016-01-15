@@ -29,3 +29,15 @@ slappasswd -h {SSHA}
 ```
 
 Une fois les lignes ajoutées (il faut probablement rédémarrer le service ldap), vous devriez être en mesure de vous connecter avec le mot de passse admin temporaire. Changer le via l'interface. Retirer les lignes ajoutées dan sle fichier slapd.conf.
+
+### Comment déplacer une application
+
+Exemple avec Wordpress
+```bash
+# Deplacement du wordpress vers le hdd externe
+$ sudo  mv /var/www/wordpress /media/disqueexterne 
+# Creation du lien symbolique
+$ sudo ln -s /media/disqueexterne/wordpress /var/www/wordpress
+# Le répertoire doit appartenir à www-data
+sudo chown -R www-data:www-data /media/externalharddrive/wordpress
+```

@@ -29,3 +29,15 @@ slappasswd -h {SSHA}
 ```
 
 Once the lines are added, [here you might need to restart the ldap service ?], you should be able to connect to the admin interface, rechange the password properly, remove the lines you added in slapd.conf, and that should be all.
+
+### How to move application folder
+
+Sample with Wordpress
+```bash
+# Move wordpress folder to an external harddrive
+$ sudo  mv /var/www/wordpress /media/externalharddrive 
+# Symbolic link
+$ sudo   ln -s /media/externalharddrive/wordpress /var/www/wordpress
+# Folder must belong to www-data
+$ sudo  chown -R www-data:www-data /media/externalharddrive/wordpress
+```
