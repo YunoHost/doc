@@ -43,7 +43,7 @@ You can check that the container is successfully built with the `docker images` 
 ---
 
 ## Run the container
-To start the container, run the next command by replacing DOMAIN by a valid domain eg: exemple.com => yunohost.exemple.com
+To start the container, run the next command by replacing DOMAIN by a valid domain e.g.: example.com => yunohost.example.com
 ```bash
 docker run -h yunohost.DOMAIN -v $(pwd):/yunohost -d zamentur/yunohost-stable8 /sbin/init
 ```
