@@ -44,7 +44,8 @@ Notre support est communautaire et s'appuie sur des contributeurs comme vous. Ve
 <span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp; Codez
 </div>
 <div class="col col-md-8" markdown="1">
-Vous pouvez vous impliquer dans le développement de YunoHost peu importe votre niveau. Administrateurs système, développeurs web, designers et pythonistes <a href="https://github.com/YunoHost" target="_blank">sont les bienvenus</a>.
+Vous pouvez vous impliquer dans le développement de YunoHost peu importe votre niveau. Administrateurs système, développeurs web, designers et pythonistes <a href="https://github.com/YunoHost" target="_blank">sont les bienvenus</a>.<br>
+Une <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/contrib">mailing-list</a> est également disponible.
 </div>
 </div>
 
@@ -78,6 +79,8 @@ Améliorez cette documentation en [proposant de nouvelles pages](/write_document
 </div>
 <div class="col col-md-8" markdown="1">
 Étendez les capacités de YunoHost en [packageant de nouveaux services et applications web](/packaging_apps_fr). Jetez un oeil à [ce qui a déjà été fait](/apps_fr) !
+<br>
+Une <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/apps">mailing-list</a> est également disponible.
 </div>
 </div>
 
