@@ -187,7 +187,7 @@
 <div class="col-md-4">
 <div style="
   width: 100%; 
-  max-height: 290px; 
+  /*max-height: 290px; */
   overflow: hidden; 
   border-radius: 5px; 
   border: 1px solid rgba(0,0,0,0.15);
@@ -197,6 +197,7 @@
 <a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/contribute">Get involved</a>
 <a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://forum.yunohost.org/" target="_blank">Forum</a>
 <a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://forum.yunohost.org/c/announcement">Latest news</a>
+<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);background-color:#C6F;border-color:#C6F;" href="/support">Support</a>
 </div>
 </div>
 
