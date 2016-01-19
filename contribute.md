@@ -46,6 +46,8 @@ Our support relies on contributors like you. Just come to [the XMPP chatroom](/s
 <div class="col col-md-8" markdown="1">
 You can involve in the YunoHost's development regardless of your skill.    
 Sysadmins, web developers, designers and pythonists <a href="https://github.com/YunoHost" target="_blank">are welcome</a>!
+<br>
+A <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/contrib">mailing-list</a> is available.
 </div>
 </div>
 
@@ -81,6 +83,8 @@ Improve this documentation by [writing new pages](/write_documentation) or trans
 <div class="col col-md-8" markdown="1">
 Extend YunoHost capabilities by [packaging new services and web applications](/packaging_apps).    
 Have a look of [what has been done yet](/apps)!
+<br>
+A <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/apps">mailing-list</a> is available.
 </div>
 </div>
 
