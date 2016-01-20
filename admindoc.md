@@ -15,3 +15,5 @@
 * [Unlock IP in iptables](/fail2ban)
 * [SSL certificate installation](/certificate)
 * [Troubleshooting guide](/troubleshooting_guide_en)
+* [Backup](/backup)
+* [Update](/update)
