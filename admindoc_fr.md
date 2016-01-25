@@ -31,6 +31,7 @@
    * [Mettre à jour ses applications](app_update_fr)
    * [Applications en cours](apps_in_progress_fr)
    * [Applications souhaitées](apps_wishlist_fr)
+   * [Owncloud] (owncloud_fr)
 * [Fournisseurs d’accès à Internet](/isp_fr)
    * [Configuration générale box](/isp_box_config_fr)
    * [SFR](/isp_sfr_fr)
