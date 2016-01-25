@@ -1,26 +1,19 @@
 #Owncloud
 
-**Comment déplacer son répertoire Owncloud sur un disque USB?**
+### Utiliser un autre support mÃ©moire
 
-**Prérequis :** connaître les commandes d'administration Linux
+**PrÃ©requis :** connaÃ®tre les commandes d'administration Unix
 
-Le répertoire data de Owncloud (contenant les fichiers) doit normalement être dans
-```bash
-/home/yunohost.app/owncloud/data
-```
+Le rÃ©pertoire des donnÃ©s dâ€™Owncloud (contenant les fichiers) sont dans `/home/yunohost.app/owncloud/data`
 
-Il est possible de déplacer ce dossier vers un disque externe en USB (par exemple).
+Il est possible de dÃ©placer ces donnÃ©s sur autre support mÃ©moire.
 
-Il faut pour cela spécifier le nouveau chemin dans le fichier
+Pour cela, il faut spÃ©cifier le nouveau chemin dans le fichier `/var/www/owncloud/config` Ã  la ligne `datadirectory`
 
-```bash
-/var/www/owncloud/config à la ligne datadirectory
-```
-
-Il faut s'assurer de bien mettre les droits à Owncloud sur ce répertoire
+Il faut Ã©galement sâ€™assurer de donner les droits Ã  Owncloud sur ce rÃ©pertoire
 
 ```bash
 chown -R owncloud /le/chemin
 ```
 
-Il faut aussi que le disque dur externe soit monté automatiquement au démarrage de Yunohost.
+Il faut Ã©galement que ce support mÃ©moire soit automatiquement montÃ© au dÃ©marrage de YunoHost.
