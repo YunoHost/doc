@@ -8,26 +8,35 @@ Le fichier `manifest.json` définit les constantes de l'application, un ensemble
         "en": "Open Source Webmail software",
         "fr": "Webmail Open Source"
     },
+    "url": "http://roundcube.net/",
     "license": "free",
     "maintainer": {
         "name": "kload",
-        "email": "kload@kload.fr",
-        "url": "http://kload.fr"
+        "email": "kload@kload.fr"
     },
     "multi_instance": "true",
+    "services": [
+        "nginx",
+        "php5-fpm",
+        "mysql"
+    ],
     "arguments": {
         "install" : [
             {
                 "name": "domain",
+                "type": "domain",
                 "ask": {
-                    "en": "Choose a domain for Roundcube"
+                    "en": "Choose a domain for Roundcube",
+                    "fr": "Choisissez un domaine pour Roundcube"
                 },
                 "example": "domain.org"
             },
             {
                 "name": "path",
+                "type": "path",
                 "ask": {
-                    "en": "Choose a path for Roundcube"
+                    "en": "Choose a path for Roundcube",
+                    "fr": "Choisissez un chemin pour Roundcube"
                 },
                 "example": "/webmail",
                 "default": "/webmail"
@@ -43,11 +52,15 @@ Le fichier `manifest.json` définit les constantes de l'application, un ensemble
 
 * **description** : la description complète de l'application. Vous pouvez la détailler comme bon vous semble. Uniquement le champs `en` (English) est requis, mais vous pouvez tout de même ajouter la traduction en français :)
 
+* **url**: site de l’application.
+
 * **license** : type de licence avec laquelle le logiciel est distribué : `free`, `non-free`. Attention à ne pas confondre avec la licence du paquet qui doit être mise dans le fichier `LICENSE`.
 
 * **maintainer** : informations à propos du mainteneur du paquet de l'application.
 
 * **multi_instance** : définit la possibilité de votre package à être installée plusieurs fois. Quand YunoHost essaie d'installer une seconde fois votre application, il remplaçera l’`id` dans votre script par `id__2`. Cela signifie que si voulez être `multi_instance`, vous devez mettre toutes les valeurs identifiantes dans les scripts.
 <br></br>**Par exemple** : dans le script roundcube, il faut nommer la base de donnée `roundcube`, le dossier d'installation `roundcube` et la configuration Nginx `roundcube`. De cette manière, la seconde installation de roundcube ne rentrera pas en conflit avec la première, et sera installée dans la base de donnée `roundcube__2`, dans le répertoire `roundcube__2`, et avec la configuration Nginx `roundcube__2`.
+
+* **services**: services nécessaires au fonctionnement de l’application. `nginx`, `php5-fpm`, `mysql`, `uwsgi`, `metronome`…
 
 * **arguments** : les paramètres à demander aux administrateurs du serveur lors de l'installation. `name` est l'identifiant du paramètre, et `ask` la question à poser (au minimum en Anglais -- `en`) que vous pouvez traduire de la même manière que la description ci-dessus. Vous pouvez aussi proposer une valeur par défaut (`default`) et un exemple (`example`) pour aider l'administrateur à remplir le formulaire d’installation.
