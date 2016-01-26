@@ -9,6 +9,7 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
         "fr": "Webmail Open Source"
     },
     "url": "http://roundcube.net/",
+    "license": "free",
     "maintainer": {
         "name": "kload",
         "email": "kload@kload.fr"
