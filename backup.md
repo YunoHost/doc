@@ -89,7 +89,7 @@ admin@yunohost:~# sudo yunohost backup restore 20151126-132533
 ```
 You can choose to apply only some parts of the backup, by selecting which restore hooks and which apps to restore.
 
-## Packaging informations
+## Packaging information
 You can see an example to make backup and restore scripts here
 https://github.com/YunoHost/example_ynh/tree/testing
 and
