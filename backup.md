@@ -13,26 +13,32 @@ sudo yunohost backup create
 
 In this version you can backup with cli or with the web admin. The cli way allows you to do more things. The webadmin way is more accessible.
 
-## Webadmin way
+## Web admin
 Basically with the webadmin, you can:
 
-- backup into /home/yunohost/archives/
-- choose to backup one or more things between mail data, home data, configuration and apps
-- list your backup
+- backup into `/home/yunohost/archives/`
+- choose to backup one or more data among:
+ - apps data
+ - emails
+ - home data
+ - configuration
+- list backups
 - see what there is in a backup
 - restore selectively a backup
 
-**Caution:** to do a backup, you need to have enough free disk spaces in the destination directory. For example, if you have 20GB in /home/data you need to have enough space to contain this 20GB compressed in a tar.gz. To do the tar.gz, yunohost backup use shallow copy, to avoid to need more spaces to be able to create the tar.gz .
+**Caution:** to do a backup, you need to have enough free disk spaces in the destination directory. For example, if you have 20GB in `/home/data` you need to have enough space to contain this 20GB compressed in a tar.gz. To do the tar.gz, yunohost backup use shallow copy, to avoid to need more spaces to be able to create the tar.gz.
+
 **Caution:** If you use selective restore, be sure to not create discordant operation. For example, if you restore an app using a domain that have been deleted from YunoHost, you need to read the domain or to restore all configuration files.
 
 We have already planned where we will add some feature like:
 
-- backup in an other place
+- backup in an other memory device
 - download/upload a backup
 - crypt a backup
-Some feature are almost ready in webadmin, but the api is not for the moment.
 
-## CLI way
+Some feature are almost ready in webadmin, but the API is not for the moment.
+
+## Command line
 ### Backup
 You can make a full backup by running this command:
 ```bash
@@ -67,14 +73,14 @@ archive:
 admin@yunohost:~#  sudo ls /home/yunohost.backup/archives/
 20151126-132533.info.json  20151126-132533.tar.gz
 ```
-By default, it backups in /home/yunohost.backup/archives/, but you can set your own directory with -o option. It could be an usb key or an other mounted filesystem.
+By default, it backups in `/home/yunohost.backup/archives/`, but you can set your own directory with `-o` option. It could be an usb key or an other mounted filesystem.
 
 If an app has no backup script it warns you. 
 
 As you can see in the answer, there is 2 hooks which backup data (data_home and data_mail). By default, the mysql data aren't saved, because the apps should save themselves their databases.
 
 
-**Note:** `yunohost backup` is not able currently to create diff backup. But you can use the -r option to avoid compression and use an other backup tool to make diff backup.
+**Note:** `yunohost backup` is not able currently to create diff backup. But you can use `-r` option to avoid compression and use an other backup tool to make diff backup.
 
 ### Restore
 To do a restore
@@ -91,13 +97,10 @@ https://github.com/zamentur/strut_ynh/
 
 There is some helpers to do shadow copy if you have big quantity of data to backup (owncloud, video apps, etc...).
 
-**Note:** During a backup operation, the restore script associated is saved. So in a restore operation, yunohost use the saved restore script and not the most recent script. 
+**Note:** during a backup operation, the restore script associated is saved. So in a restore operation, yunohost use the saved restore script and not the most recent script. 
 
 If you want modify a general conf file, you should use hooks to trigger a modification of the conf file after each call of `yunohost regenconf`.
 You can also use the regeneration configuration system to do index your conf file, and allow your user to be warn if an upgrade of your app has change a config file.
-
-
-
 
 ## Annex
 ```bash
