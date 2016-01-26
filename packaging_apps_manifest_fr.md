@@ -1,3 +1,5 @@
+<a class="btn btn-lg btn-default" href="packaging_apps_fr">Packaging d’application</a>
+
 ## Manifeste
 Le fichier `manifest.json` définit les constantes de l’application, un ensemble de valeurs dont YunoHost a besoin pour identifier l'application et l’installer correctement. Voici un exemple :
 ```json
