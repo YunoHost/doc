@@ -33,6 +33,8 @@ Dans certains cas après avoir changé la configuration de votre box (ex : sur F
 
 Dans le cas où l’UPnP ne fonctionne pas, l’ouverture manuelle des ports est nécessaire. Encore une fois référez-vous à l’interface d’administration de votre routeur.
 
+ATTENTION (CPU ARM) : l’activation de l’UPnP est inefficace avec les serveurs équipés d’un processeur ARM (remarque valable pour YunoHost v2.2). Une ouverture manuelle des ports du routeur est alors requise.
+
 #### Le courrier électronique
 
 Les fournisseurs d’accès à Internet bloquent souvent le port 25 pour éviter que les ordinateurs de votre réseau n’envoient des spams sur Internet à votre insu. Pour pouvoir envoyer des emails, il vous faut donc ouvrir le port 25, ou désactiver l’option « blocage SMTP sortant » dans l’administration de votre routeur.
