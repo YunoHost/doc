@@ -79,6 +79,7 @@
     * [Contributor guide](/contribute)
         * Developement
            * [Package new application](/packaging_apps)
+              * [Manifest](packaging_apps_manifest_en)
            * [Applications in progress](/apps_in_progress_en)
            * [Wishlist of applications](/apps_wishlist_en)
            * [Creation of system packages](/build_system_en)
