@@ -86,6 +86,7 @@
     * [Guide du contributeur](/contribute_fr)
         * Développement
            * [Packager des applications](/packaging_apps_fr)
+              * [Manifeste](packaging_apps_manifest_fr)
            * [Packages d'applications en cours de développement](/apps_in_progress_fr)
            * [Liste de proposition d'applications](/apps_wishlist_fr)
            * [Création de paquets système](/build_system_fr)
