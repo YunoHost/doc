@@ -84,7 +84,7 @@ Vous devez tout mettre dans le script d’`install` pour que votre application s
 ### Architecture et arguments
 Comme les instances de YunoHost possèdent une architecture unifiée, vous serez capable de deviner la plupart des réglages nécessaires. Mais si vous avez besoin de réglages spécifiques, comme le nom de domaine ou un chemin web pour configurer l’application, vous devrez les demander aux administrateurs lors de l'installation (voir la section `arguments` dans le § **Manifeste** ci-dessus).
 
-**Remarque** : les arguments seront passés au script dans l'ordre du manifeste. Par exemple pour **roundcube**, l'argument `domain` sera passé en tant que `$1` dans le script, et  `path` en tant que `$2`.
+<a class="btn btn-lg btn-default" href="packaging_apps_arguments_management_fr">Gestion des arguments</a>
 
 ### Commandes pratiques
 La CLI [moulinette](/moulinette) fournit quelques outils pour faciliter le packaging :
