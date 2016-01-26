@@ -84,7 +84,7 @@ You have to put everything in the `install` script in order to get the app to in
 ### Architecture and arguments
 Since YunoHost has a unified architecture, you will be able to guess most of the settings you need. But if you need variable ones, like the domain or web path, you will have to ask the administrator at installation (see `arguments` section in the manifest above).
 
-**Note**: the arguments will be passed in the order that they appear in the manifest. For example for **roundcube**, the `domain` argument will be referenced as `$1` in the script, and `path` as `$2`.
+<a class="btn btn-lg btn-default" href="packaging_apps_arguments_management_en">Arguments management</a>
 
 ### Hooks
 YunoHost provides a hook system, which is accessible via the packager's script callbacks in moulinette (CLI).
