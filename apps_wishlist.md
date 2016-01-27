@@ -93,6 +93,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [ShareLatex](https://www.sharelatex.com/)
 * [Shleuder](http://schleuder2.nadir.org/)
 * [SIP](https://en.wikipedia.org/wiki/List_of_SIP_software#Free_and_open-source_license)
+* [Simple invoice](http://simpleinvoices.org/)
 * [Sonarr](https://sonarr.tv/)
 * [Sonerezh](https://github.com/Sonerezh)
 * [Streisand](https://github.com/jlund/streisand)
