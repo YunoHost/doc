@@ -63,7 +63,7 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
 * **multi_instance**: this defines your app's ability to be installed multiple times. When YunoHost tries to install a second instance of the app, it will replace the `id` in the scripts by an `id__2`. It means that, if you want to be `multi_instance`, you have to put all the identifiers in the scripts. 
 <br /><br />**E.g.** in the roundcube script, database is called `roundcube`, the install directory `roundcube` and the Nginx configuration `roundcube`. This way, the second instance of roundcube will not conflict with the first one, and will be installed in the `roundcube__2` database, in the `roundcube__2`directory, and with the `roundcube__2` Nginx configuration.
 
-* **services**: services needed by the application among `nginx`, `php5-fpm`, `mysql`, `uwsgi`, `metronome`…
+* **services**: services needed by the application among `nginx`, `php5-fpm`, `mysql`, `uwsgi`, `metronome`, `postfix`, `dovecot`…
 
 * **arguments**:
   * **install**: argument for the YunoHost's administrator to enter at installation.
