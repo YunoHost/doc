@@ -93,7 +93,7 @@ root@yunohost:/yunohost/# ./ynh-dev deploy
 
 
 <div class="alert alert-warning">
-<b>Note :</b> vous pouvez sélectionner les paquets à déployer exemple: `./ynh-dev deploy yunohost yunohost-admin`
+<b>Note :</b> vous pouvez sélectionner les paquets à déployer exemple : `./ynh-dev deploy yunohost yunohost-admin`
 </div>
 
 
@@ -107,14 +107,14 @@ Avec VirtualBox/Vagrant
 root@yunohost:/yunohost/# yunohost tools postinstall
 ```
 
-##### Récupérer l'ip de la vm et parametrer son /etc/hosts
-Si vous ne connaissez pas l'ip de votre vm:
+##### Récupérer l'ip de la vm et parametrer son `/etc/hosts`
+Si vous ne connaissez pas l'ip de votre vm :
 ```bash
 root@yunohost:/yunohost/# ./ynh-dev ip
 172.17.0.1
 ```
 
-Pour tester dans votre navigateur vous pouvez modifier votre fichier /etc/hosts afin de faire pointer votre domaine sur la bonne ip. Par exemple en y ajoutant une ligne semblable à celle ci
+Pour tester dans votre navigateur vous pouvez modifier votre fichier `/etc/hosts` afin de faire pointer votre domaine sur la bonne adresse IP. Par exemple en y ajoutant une ligne semblable à celle ci
 ```bash
 172.17.0.1   exemple.local
 ```
@@ -124,5 +124,4 @@ Pour tester dans votre navigateur vous pouvez modifier votre fichier /etc/hosts 
 root@yunohost:/yunohost/# ./ynh-dev watch
 ```
 
-Astuce : dans le cas de modification sur yunohost-admin, cette commande est trés pratique couplée avec un `gulp watch` sur la machine hôte.
-
+Astuce : dans le cas de modification sur yunohost-admin, cette commande est très pratique couplée avec un `gulp watch` sur la machine hôte.
