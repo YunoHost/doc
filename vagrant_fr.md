@@ -53,9 +53,9 @@ Vous pouvez accéder à votre vm via l'ip 192.168.33.80
 *Une fois l’installation terminée, vous pouvez procéder à la post-installation : **[yunohost.org/postinstall](/postinstall_fr)** *
 
 
-## Image avec wheezy or testing/unstable repository
+## Image avec Wheezy et les dépôts testing/unstable
 
-Si vous avez besoin d'une vm pour tester quelque chose avec wheezy ou la version testing/unstable de Yunohost. Il y a un Vagrantfile et 5 autres box en préparation. Pour le moment, vous pouvez construire les images en suivant les instructions sur ce dépôt: https://github.com/zamentur/yunohost-vagrant
+Si vous avez besoin d'une vm pour tester quelque chose avec wheezy ou la version testing/unstable de Yunohost. Il y a un Vagrantfile et 5 autres box en préparation. Pour le moment, vous pouvez construire les images en suivant les instructions sur ce [dépôt](https://github.com/zamentur/yunohost-vagrant).
 
 | Box | IP | 
 | --- | --- | 
@@ -67,5 +67,3 @@ Si vous avez besoin d'une vm pour tester quelque chose avec wheezy ou la version
 | unstable7 | 192.168.33.72 |
 
 Les adresses IPs sont assignées par défaut mais peuvent être changées dans les paramètres réseau du Vagrantfile.
-
-
