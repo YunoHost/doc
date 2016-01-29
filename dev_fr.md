@@ -81,7 +81,7 @@ root@yunohost:/yunohost/# ./ynh-dev upgrade
 ```
 
 ##### Déployer les sources présentes dans votre environnement
-Pour déployer les sources se trouvant dans votre environement de developpement faites:
+Pour déployer les sources se trouvant dans votre environnement de développement faites :
 ```bash
 root@yunohost:/yunohost/# ./ynh-dev deploy
 ```
