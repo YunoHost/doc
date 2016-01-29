@@ -38,6 +38,17 @@ L’interface d’administration n’est en réalité qu’un client qui se conn
 Le service yunohost-api doit donc être start pour utiliser l’administration web.
 
 ### Installation de l’environnement de développement
+#### Installation du système de virtualisation
+Installer, avec le gestionnaire de paquet de votre système d’exploitation, Vagrant ou Docker suivant celui que vous souhaitez utiliser.
+
+```bash
+# Debian, Ubuntu, Mint
+sudo apt-get install docker vagrant
+# Fedora
+sudo dnf install docker vagrant
+```
+
+#### Télécharger `ynh-dev`
 <div class="alert alert-warning">
 <b>Attention :</b> Cette partie est en cours de rédaction. La ligne de commande `ynh-dev` vient juste d’être créée il est possible qu’il y ai des manques.
 </div>
