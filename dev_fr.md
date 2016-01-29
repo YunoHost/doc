@@ -56,7 +56,7 @@ sudo dnf install docker vagrant vagrant-libvirt
 <b>Note :</b> `ynh-dev` fonctionne avec apt-get. Debian et linux mint ont été testé. Ubuntu fonctionne sans doute.
 </div>
 
-Une ligne de commande `ynh-dev` a été créé afin de simplifier la gestion de votre environnement de développement.
+Une ligne de commande `ynh-dev` a été créée afin de simplifier la gestion de votre environnement de développement.
 
 ```bash
 wget https://raw.githubusercontent.com/zamentur/yunohost-development/master/ynh-dev
@@ -66,7 +66,7 @@ Pour créer votre environnement, commencez par faire un `create-env`
 ```bash
 ./ynh-dev create-env ~/project/my/yunohost/env
 ```
-Cette sous commande va cloner les dépots principaux et les positionner en `unstable`. Si vous avez vos propres fork, vous pouvez ensuite faire ce qu’il faut pour changer l’origine et le remote repository.
+Cette sous commande va cloner les dépôts principaux au fonctionnement de YunoHost et les positionner en `unstable`. Si vous avez vos propres fork, vous pouvez ensuite faire ce qu’il faut pour changer l’origine et le remote repository.
 
 #### Usage
 ##### Lancer un container
