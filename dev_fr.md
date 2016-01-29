@@ -48,7 +48,7 @@ Le service yunohost-api doit donc être start pour utiliser l'administration web
 </div>
 
 
-Une ligne de commande `ynh-dev` a été créé afin de simplifier la gestion de votre environnement de developpement.
+Une ligne de commande `ynh-dev` a été créé afin de simplifier la gestion de votre environnement de développement.
 
 ```bash
 wget https://raw.githubusercontent.com/zamentur/yunohost-development/master/ynh-dev
