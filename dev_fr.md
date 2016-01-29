@@ -109,7 +109,7 @@ Avec VirtualBox/Vagrant
 root@yunohost:/yunohost/# yunohost tools postinstall
 ```
 
-##### Récupérer l’IP de la vm et parametrer son `/etc/hosts`
+##### Récupérer l’IP de la vm et paramétrer son `/etc/hosts`
 si vous ne connaissez pas l’IP de votre vm :
 ```bash
 root@yunohost:/yunohost/# ./ynh-dev ip
