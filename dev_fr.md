@@ -45,7 +45,7 @@ Installer, avec le gestionnaire de paquet de votre système d’exploitation, Va
 # Debian, Ubuntu, Mint
 sudo apt-get install docker vagrant
 # Fedora
-sudo dnf install docker vagrant
+sudo dnf install docker vagrant vagrant-libvirt
 ```
 
 #### Télécharger `ynh-dev`
