@@ -8,7 +8,7 @@ Afin de mettre en place un système automatisé de compilation des paquets Debia
 - testing : il s’agit du code éligible pour la création d’une nouvelle version de YunoHost, il est supposé stable mais manque de test. La branche testing peut notamment servir pour corriger rapidement certains bugs.
 - unstable : il s’agit là des derniers codes ajoutés au dépôt mais qui sont connus pour être instables voir inachevés. C’est à destination de cette branche que vous devez faire vos pull request. Si votre travail est conséquent mais inachevé, il convient d’envisager de créer une branche à part thématique (exemple : backup).
 
-Les numéros de version des paquets stable sont pairs, les numéros de version des paquets testing sont impairs. Ainsi, la version 2.3 de YunoHost est une version de test qui sera peut être transformée en version 2.4 si les tests sont concluants.
+Les numéros de version des paquets stable sont pairs, les numéros de version des paquets testing sont impairs. Ainsi, la version 2.3 de YunoHost est une version de test qui sera peut-être transformée en version 2.4 si les tests sont concluants.
 
 ### Présentation des paquets YunoHost
 Avant d’aller plus loin, il convient de rappeler le rôle des différents paquets YunoHost.
@@ -21,7 +21,7 @@ La ligne de commande `yunohost` est écrite avec ce framework, La moulinette est
 La moulinette est un code écrit par les développeurs YunoHost. À l’origine, la moulinette était fusionnée avec le code YunoHost, mais il a été décidé de scinder les deux afin de permettre l’utilisation de la moulinette pour d’autres projets.
 
 #### Paquet SSOwat
-SSOwat est un système de Single Sign On pour Nginx écrit en Lua. C’est ce système qui génére l’interface que les utilisateurs YunoHost voit. Il permet de protéger des URLs et d’autoriser des utilisateurs à accéder ou non à ces ressources.
+SSOwat est un système de Single Sign On pour Nginx écrit en Lua. C’est ce système qui génère l’interface que les utilisateurs YunoHost voit. Il permet de protéger des URLs et d’autoriser des utilisateurs à accéder ou non à ces ressources.
 
 SSOwat est comme la moulinette une dépendance de YunoHost, mais peut aussi être utilisée séparément sur d’autres projets. 
 
@@ -50,7 +50,7 @@ sudo dnf install docker vagrant vagrant-libvirt
 
 #### Télécharger `ynh-dev`
 <div class="alert alert-warning">
-<b>Attention :</b> Cette partie est en cours de rédaction. La ligne de commande `ynh-dev` vient juste d’être créée il est possible qu’il y ai des manques.
+<b>Attention :</b> Cette partie est en cours de rédaction. La ligne de commande `ynh-dev` vient juste d’être créée il est possible qu’il y ait des manques.
 </div>
 <div class="alert alert-warning">
 <b>Note :</b> `ynh-dev` fonctionne avec apt-get. Debian et linux mint ont été testé. Ubuntu fonctionne sans doute.
@@ -92,7 +92,7 @@ root@yunohost:/yunohost/# ./ynh-dev deploy
 ```
 
 <div class="alert alert-warning">
-<b>Attention :</b> pour yunohost-admin vous devez avoir compiler le js avec gulp au préalable
+<b>Attention :</b> pour yunohost-admin vous devez avoir compilé le js avec gulp au préalable
 </div>
 
 <div class="alert alert-warning">
