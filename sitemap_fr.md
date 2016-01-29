@@ -85,11 +85,13 @@
 
     * [Guide du contributeur](/contribute_fr)
         * Développement
-           * [Packager des applications](/packaging_apps_fr)
-              * [Manifeste](packaging_apps_manifest_fr)
-              * [Gestion des arguments](packaging_apps_arguments_management_fr)
-           * [Packages d'applications en cours de développement](/apps_in_progress_fr)
-           * [Liste de proposition d'applications](/apps_wishlist_fr)
+           * [Créer un environnement de développement](dev_fr)
+           * Applications :
+              * [Packager des applications](/packaging_apps_fr)
+                 * [Manifeste](packaging_apps_manifest_fr)
+                 * [Gestion des arguments](packaging_apps_arguments_management_fr)
+              * [Packages d'applications en cours de développement](/apps_in_progress_fr)
+              * [Liste de proposition d'applications](/apps_wishlist_fr)
            * [Création de paquets système](/build_system_fr)
            * [Création de paquets Debian](/build_packages_fr)
            * [Créer une image pour carte ARM](/build_arm_image_en)
