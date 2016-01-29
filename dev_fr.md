@@ -28,9 +28,7 @@ SSOwat est comme la moulinette une dépendance de YunoHost, mais peut aussi êtr
 #### Paquet yunohost
 Le paquet yunohost est le cœur de YunoHost, ce paquet contient depuis la version 2.3 (testing) le code du programme en ligne de commande `yunohost`. Il contient également des helpers qui peuvent être utilisées par les scripts des apps YunoHost, ainsi que les templates de configuration des dépendances de YunoHost.
 
-
 Note : à partir de la version 2.3 (testing), le code de la ligne de commande `yunohost` initialement dans le paquet moulinette-yunohost a été rapatrié dans le paquet yunohost. Un système 2.2 contient donc deux paquets au lieu d’un seul : yunohost et moulinette-yunohost.
-
 
 #### Paquet yunohost-admin (optionnel)
 Ce paquet contient l’interface d’administration web de YunoHost, obligatoire dans la version 2.2, il est optionnel depuis la version 2.3 (testing).
@@ -47,7 +45,6 @@ Le service yunohost-api doit donc être start pour utiliser l’administration w
 <b>Note :</b> `ynh-dev` fonctionne avec apt-get. Debian et linux mint ont été testé. Ubuntu fonctionne sans doute.
 </div>
 
-
 Une ligne de commande `ynh-dev` a été créé afin de simplifier la gestion de votre environnement de développement.
 
 ```bash
@@ -61,8 +58,6 @@ Pour créer votre environnement, commencez par faire un `create-env`
 Cette sous commande va cloner les dépots principaux et les positionner en `unstable`. Si vous avez vos propres fork, vous pouvez ensuite faire ce qu’il faut pour changer l’origine et le remote repository.
 
 #### Usage
-
-
 ##### Lancer un container
 Positionner vous dans votre environnement, puis créer et entrer dans une vm à l’aide de `ynh-dev run`
 ```bash
@@ -74,7 +69,6 @@ Dockerfile  LICENSE  README.md	SSOwat	apps  backup  moulinette  ynh-dev  yunohos
 ```
 
 ##### Mettre à jour un container
-
 Si la vm n’est pas à jour lancez un `ynh-dev upgrade` :
 ```bash
 root@yunohost:/yunohost/# ./ynh-dev upgrade
@@ -90,12 +84,9 @@ root@yunohost:/yunohost/# ./ynh-dev deploy
 <b>Attention :</b> pour yunohost-admin vous devez avoir compiler le js avec gulp au préalable
 </div>
 
-
-
 <div class="alert alert-warning">
 <b>Note :</b> vous pouvez sélectionner les paquets à déployer exemple : `./ynh-dev deploy yunohost yunohost-admin`
 </div>
-
 
 ##### Lancer la postinstall
 Avec Docker
