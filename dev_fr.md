@@ -75,7 +75,7 @@ Dockerfile  LICENSE  README.md	SSOwat	apps  backup  moulinette  ynh-dev  yunohos
 
 ##### Mettre à jour un container
 
-Si la vm n'est pas à jour lancez un `ynh-dev upgrade`:
+Si la vm n'est pas à jour lancez un `ynh-dev upgrade` :
 ```bash
 root@yunohost:/yunohost/# ./ynh-dev upgrade
 ```
@@ -114,7 +114,7 @@ root@yunohost:/yunohost/# ./ynh-dev ip
 172.17.0.1
 ```
 
-Pour tester dans votre navigateur vous pouvez modifier votre fichier `/etc/hosts` afin de faire pointer votre domaine sur la bonne adresse IP. Par exemple en y ajoutant une ligne semblable à celle ci
+Pour tester dans votre navigateur vous pouvez modifier votre fichier `/etc/hosts` afin de faire pointer votre domaine sur la bonne adresse IP. Par exemple en y ajoutant une ligne semblable à celle-ci :
 ```bash
 172.17.0.1   exemple.local
 ```
