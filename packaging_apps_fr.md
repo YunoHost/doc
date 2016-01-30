@@ -17,16 +17,16 @@ Un paquet YunoHost est composé :
 * d’un fichier `LICENSE` contenant la licence du paquet
 * d’une page de présentation du paquet contenu dans un fichier `README.md`
 
-**[Paquet de base](https://github.com/YunoHost/example_ynh)** : n'hésitez pas à vous en servir comme base de travail.
+**[Paquet de base](https://github.com/YunoHost/example_ynh)** : n’hésitez pas à vous en servir comme base de travail.
 
 ## Manifeste
 <a class="btn btn-lg btn-default" href="packaging_apps_manifest_fr">Manifeste</a>
 
 ## Les scripts
 Un paquet YunoHost doit contenir cinq scripts Shell : `install`, `remove`, `upgrade`, `backup` et `restore`.
-Ces scripts seront exécutés en tant qu'`admin` sur les serveurs YunoHost.
+Ces scripts seront exécutés en tant qu’`admin` sur les serveurs YunoHost.
 
-Voici un exemple de script d'`install`:
+Voici un exemple de script d’`install`:
 ```bash
 # Retrieve arguments
 domain=$1
@@ -77,12 +77,12 @@ sudo yunohost app ssowatconf
 ```
 
 ### Utilisation
-Vous devez tout mettre dans le script d’`install` pour que votre application soit entièrement installée. Cela signifie que vous devez installer les dépendances, créer les répertoires requis, initialiser les bases de donnés nécessaires, copier les sources et configurer tout dans l'unique script `install` (et bien sûr faire la procédure inverse dans le script `remove`).
+Vous devez tout mettre dans le script d’`install` pour que votre application soit entièrement installée. Cela signifie que vous devez installer les dépendances, créer les répertoires requis, initialiser les bases de donnés nécessaires, copier les sources et configurer tout dans l’unique script `install` (et bien sûr faire la procédure inverse dans le script `remove`).
 
-**Attention** : pour des raisons de sécurité, le script est exécuté en tant qu'**admin** dans YunoHost. Assurez-vous de l'essayer en tant qu'**admin** et de préfixer `sudo` aux commandes requises.
+**Attention** : pour des raisons de sécurité, le script est exécuté en tant qu’**admin** dans YunoHost. Assurez-vous de l’essayer en tant qu’**admin** et de préfixer `sudo` aux commandes requises.
 
 ### Architecture et arguments
-Comme les instances de YunoHost possèdent une architecture unifiée, vous serez capable de deviner la plupart des réglages nécessaires. Mais si vous avez besoin de réglages spécifiques, comme le nom de domaine ou un chemin web pour configurer l’application, vous devrez les demander aux administrateurs lors de l'installation (voir la section `arguments` dans le § **Manifeste** ci-dessus).
+Comme les instances de YunoHost possèdent une architecture unifiée, vous serez capable de deviner la plupart des réglages nécessaires. Mais si vous avez besoin de réglages spécifiques, comme le nom de domaine ou un chemin web pour configurer l’application, vous devrez les demander aux administrateurs lors de l’installation (voir la section `arguments` dans le § **Manifeste** ci-dessus).
 
 <a class="btn btn-lg btn-default" href="packaging_apps_arguments_management_fr">Gestion des arguments</a>
 
@@ -107,20 +107,20 @@ Cette commande vérifie le port et retourne une erreur si le port est déjà uti
 sudo yunohost app setting <id> <key> [ -v <value> ]
 ```
 <blockquote>
-C'est la commande la plus importante. Elle vous permet de stocker des réglages d'une application spécifique, afin de les réutiliser plus tard (typiquement dans le script ```upgrade```) ou pour que YunoHost puisse se configurer automatiquement (par exemple pour le SSO).
+C'est la commande la plus importante. Elle vous permet de stocker des réglages d’une application spécifique, afin de les réutiliser plus tard (typiquement dans le script ```upgrade```) ou pour que YunoHost puisse se configurer automatiquement (par exemple pour le SSO).
 <br><br>
 La commande définit la valeur si vous ajoutez ```-v <valeur>```, sinon la récupère.
 <br><br>
 
 ** Quelques paramètres pratiques **<br><br>
 ```skipped_uris```<br><br>
-Indique à SSOwat de ne pas s'occuper de la liste d'uris fournies séparées par des virgules. Celles-ci ne seront donc pas protégées et ne pourront pas utiliser le mécanisme d'authentification centralisée.<br><br>
+Indique à SSOwat de ne pas s’occuper de la liste d’uris fournies séparées par des virgules. Celles-ci ne seront donc pas protégées et ne pourront pas utiliser le mécanisme d’authentification centralisée.<br><br>
 
 ```protected_uris```<br><br>
-Protège la liste d'uris fournies séparées par des virgules. Seul un utilisateur connecté y aura accès.<br><br>
+Protège la liste d’uris fournies séparées par des virgules. Seul un utilisateur connecté y aura accès.<br><br>
 
 ```unprotected_uris```<br><br>
-Indique à SSOwat de ne pas s'occuper de la liste d'uris fournies séparées par des virgules que si l'utilisateur est connecté. Ces uris sont donc publiquement accessibles mais peuvent utiliser le mécanisme d'authentification centralisée.<br><br>
+Indique à SSOwat de ne pas s’occuper de la liste d’uris fournies séparées par des virgules que si l’utilisateur est connecté. Ces uris sont donc publiquement accessibles mais peuvent utiliser le mécanisme d’authentification centralisée.<br><br>
 
 Il existe aussi `skipped_regex`, `protected_regex`, `unprotected_uris`, `unprotected_regex`.<br><br>
 
@@ -129,7 +129,7 @@ Il existe aussi `skipped_regex`, `protected_regex`, `unprotected_uris`, `unprote
 Exemple :<br>
 ```yunohost app setting myapp unprotected_urls -v "/"```<br>
 ```yunohost app ssowatconf```<br>
-Ces commandes vont désactiver le SSO sur la racine de l'aplication soit domain.tld/myapp, ceci est utile pour une application publique.
+Ces commandes vont désactiver le SSO sur la racine de l’aplication soit domain.tld/myapp, ceci est utile pour une application publique.
 </blockquote>
 
 <br>
@@ -138,7 +138,7 @@ Ces commandes vont désactiver le SSO sur la racine de l'aplication soit domain.
 sudo yunohost app checkurl <domain><path> -a <id>
 ```
 <blockquote>
-Cette commande est utile pour les applications web et vous permet d'être sûr que le chemin n'est pas utilisé par une autre application. Si le chemin est inutilisé, elle le « réserve ».
+Cette commande est utile pour les applications web et vous permet d’être sûr que le chemin n’est pas utilisé par une autre application. Si le chemin est inutilisé, elle le « réserve ».
 <br><br>
 **Remarque** : ne pas préfixer par `http://` ou par `https://` dans le `<domain><path>`.
 </blockquote>
@@ -165,11 +165,11 @@ Si vous ajoutez un fichier SQL avec `-s`, la commande initialise la base de donn
 sudo yunohost app ssowatconf
 ```
 <blockquote>
-Cette commande régénère la configuration du SSO. Vous devez l'appeler à la fin des scripts lorsque vous packagez une application Web.
+Cette commande régénère la configuration du SSO. Vous devez l’appeler à la fin des scripts lorsque vous packagez une application Web.
 </blockquote>
 
 ### Tests
-Afin de tester votre paquet, vous pouvez exécuter votre script en tant qu'`admin` (n'oubliez pas d'ajouter les arguments requis) :
+Afin de tester votre paquet, vous pouvez exécuter votre script en tant qu’`admin` (n'oubliez pas d’ajouter les arguments requis) :
 ```bash
 su - admin -c "/bin/bash /répertoire/de/mon/script my_arg1 my_arg2"
 ```
@@ -186,9 +186,9 @@ yunohost app install https://github.com/auteur/mon_paquet.git
 ### Améliorer la qualité du paquet d’installation
 Vous trouverez ci-dessous une liste des point à vérifier concernant la qualité de vos scripts :
 * Vos scripts utilisent bien `sudo cp -a ../sources/. $final_path` plutôt que `sudo cp -a ../sources/* $final_path` ;
-* Votre script d’installation contient une gestion en cas d’erreurs du script pour supprimer les fichiers résiduels à l'aide de `set -e` et de `trap` ;
-* Votre script d’installation utilise une méthode d’installation en ligne de commande plutôt qu'un appel curl via un formulaire web d’installation ;
-* Votre script d’installation enregistre les réponses de l'utilisateur ;
+* Votre script d’installation contient une gestion en cas d’erreurs du script pour supprimer les fichiers résiduels à l’aide de `set -e` et de `trap` ;
+* Votre script d’installation utilise une méthode d’installation en ligne de commande plutôt qu’un appel curl via un formulaire web d’installation ;
+* Votre script d’installation enregistre les réponses de l’utilisateur ;
 * Vous avez vérifié les sources de l’application avec une somme de contrôle (sha256, sha1 ou md5) ou une signature PGP ;
 * Vos scripts ont été testé sur Debian Wheezy et Jessie ainsi que sur les architectures 32 bits, 64 bits et ARM ;
 * Les scripts backup et restore sont présents et fonctionnels.

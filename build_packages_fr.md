@@ -4,19 +4,19 @@
 
 Les paquets YunoHost se trouvent sur la machine yunohost.org dans le répertoire `/home/yunohost/packages.git`.
 
-Le système de build est basé sur debuild et pbuilder. Le fonctionnement de cet ensemble est de générer un chroot qui va embarquer l'ensemble des dépendances et des outils de build Debian.
+Le système de build est basé sur debuild et pbuilder. Le fonctionnement de cet ensemble est de générer un chroot qui va embarquer l’ensemble des dépendances et des outils de build Debian.
 
 La configuration de cette environnement est défini dans le fichier `/etc/pbuilder/megusta-amd64` et permet de construire les paquets sans architecture spécifique. 
 
 <div class="alert alert-info">
-**Attention :** il n'est pas conseillé d'être en root pour exécuter les actions suivantes (sauf celles précédées de `sudo`)
+**Attention :** il n’est pas conseillé d’être en root pour exécuter les actions suivantes (sauf celles précédées de `sudo`)
 </div>
 
 ## Mise à jour d’un paquet
 
 <br>
 #### Paquets avec sources externes
-Pour les paquets basés sur des sources GitHub (moulinette, moulinette-yunohost, ssowat, et yunohost-admin) il faut d'abord récupérer les dernière modifications :
+Pour les paquets basés sur des sources GitHub (moulinette, moulinette-yunohost, ssowat, et yunohost-admin) il faut d’abord récupérer les dernière modifications :
 
 ```bash
 [yunohost@yunohost] ~/packages.git/moulinette $ cd src
@@ -53,7 +53,7 @@ Pour ajouter le paquet dans le dépôt de `megusta` (stable) il vous faudra exé
 Une fois les modifications effectuées, vous pouvez exécuter `git push` pour envoyer les modifications sur GitHub.
 
 ## Ajout manuel de paquets dans un dépôt
-Il est possible d'ajouter directement des paquets Debian dans le dépôt, c'est le cas notamment pour les paquets nodejs.
+Il est possible d’ajouter directement des paquets Debian dans le dépôt, c’est le cas notamment pour les paquets nodejs.
 
 ```bash
 sudo reprepro -Vb /var/www/repo.yunohost.org/ includedeb nom_du_dépôt nom_du_paquet.deb
@@ -63,7 +63,7 @@ sudo reprepro -Vb /var/www/repo.yunohost.org/ includedeb nom_du_dépôt nom_du_p
 
 ## Supprimer un paquet d’un dépôt
 
-Il est possible de supprimer des paquets Debian dans un dépôt, par exemple pour vider l'ensemble des paquets du dépôt test.
+Il est possible de supprimer des paquets Debian dans un dépôt, par exemple pour vider l’ensemble des paquets du dépôt test.
 
 ```bash
 sudo reprepro -Vb /var/www/repo.yunohost.org/ includedeb nom_du_dépôt nom_du_paquet

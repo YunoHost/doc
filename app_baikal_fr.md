@@ -1,13 +1,13 @@
 #Baïkal
 
-Baïkal est un serveur de calendriers et de contacts accessible par les protocoles CalDAV (calendriers) et CardDAV (carnets d'adresses), autorisant ainsi la synchronisation avec de nombreux clients (Thunderbird + Lightning par exemple).
+Baïkal est un serveur de calendriers et de contacts accessible par les protocoles CalDAV (calendriers) et CardDAV (carnets d’adresses), autorisant ainsi la synchronisation avec de nombreux clients (Thunderbird + Lightning par exemple).
 
 ## Connexion à l’interface d’admin
-Sur le portail SSO, si on clique sur la tuile "Baïkal", on tombe sur une page bien peu conviviale qui explique que le service fonctionne. Pour accéder à l'admin, il faut rajouter `/admin`. Par exemple :
+Sur le portail SSO, si on clique sur la tuile "Baïkal", on tombe sur une page bien peu conviviale qui explique que le service fonctionne. Pour accéder à l’admin, il faut rajouter `/admin`. Par exemple :
 
 https://example.com/baikal/admin
 
-Le nom d'utilisateur à spécifier est "admin" suivi du mot de passe spécifique que vous avez choisi lors de l'installation de Baïkal.
+Le nom d’utilisateur à spécifier est "admin" suivi du mot de passe spécifique que vous avez choisi lors de l’installation de Baïkal.
 
 ## Connexion CalDAV
 
@@ -19,13 +19,13 @@ L'URL à entrer est la suivante :
 
 `https://example.com/baikal/cal.php/calendars/username/default`
 
-*En prenant soin de remplacer "example.com" par votre domaine puis "username" par votre nom d'utilisateur*
+*En prenant soin de remplacer "example.com" par votre domaine puis "username" par votre nom d’utilisateur*
 
 ### Connexion de AgenDAV
 
-AgenDAV est un client web permettant de manipuler vos calendriers. Il est packagé pour YunoHost et vous pouvez donc l'installer juste après avoir installé Baïkal.
+AgenDAV est un client web permettant de manipuler vos calendriers. Il est packagé pour YunoHost et vous pouvez donc l’installer juste après avoir installé Baïkal.
 
-AgenDAV est déjà connecté à Baïkal, aucune manipulation n'est nécessaire. Si vous créez une entrée dans le calendrier Thunderbird + Lightning, il vous suffit d'actualiser votre page AgenDAV pour voir les modifications apparaître.
+AgenDAV est déjà connecté à Baïkal, aucune manipulation n’est nécessaire. Si vous créez une entrée dans le calendrier Thunderbird + Lightning, il vous suffit d’actualiser votre page AgenDAV pour voir les modifications apparaître.
 
 AgenDAV vous permet également de créer de nouveaux calendriers très simplement.
 
@@ -33,16 +33,16 @@ AgenDAV vous permet également de créer de nouveaux calendriers très simplemen
 
 ### Connexion de Roundcube
 
-Ajoutez un nouveau carnet d'adresse en allant dans Paramètres > Préférences > CardDAV.
+Ajoutez un nouveau carnet d’adresse en allant dans Paramètres > Préférences > CardDAV.
 
 Renseigner :
-* Nom du carnet d'adresses : `default`
-* Nom d'utilisateur : `username`
+* Nom du carnet d’adresses : `default`
+* Nom d’utilisateur : `username`
 * Mot de passe : `leMotDePasseAssociéAUsername`
 * URL : `https://example.com/baikal/card.php/addressbooks/username/default`
 
-*En prenant soin de remplacer "example.com" par votre domaine et "username" par votre nom d'utilisateur*
+*En prenant soin de remplacer "example.com" par votre domaine et "username" par votre nom d’utilisateur*
 
 Enregistrer
 
-Le carnet d'adresse est maintenant accessible.
+Le carnet d’adresse est maintenant accessible.

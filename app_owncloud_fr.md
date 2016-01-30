@@ -2,7 +2,7 @@
 
 ### Utiliser un autre support mémoire
 
-**Prérequis :** connaître les commandes d'administration Unix
+**Prérequis :** connaître les commandes d’administration Unix
 
 Le répertoire des donnés d’Owncloud (contenant les fichiers) sont dans `/home/yunohost.app/owncloud/data`
 

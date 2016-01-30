@@ -16,7 +16,7 @@ sudo apt-get install git
 git clone https://github.com/YunoHost/install_script /tmp/install_script
 ```
 
-3. L'utilisateur root doit avoir un mot de passe, si ce n'est pas le cas, créez en un (sinon le script d'installation échoue):
+3. L’utilisateur root doit avoir un mot de passe, si ce n’est pas le cas, créez en un (sinon le script d’installation échoue):
 ```bash
 sudo passwd root
 ```

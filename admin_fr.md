@@ -26,7 +26,7 @@ slappasswd -h {SSHA}
 # Un mot de passe vous sera demandé, vous retournant un hash comme résultat
 ```
 
-Une fois les lignes ajoutées (il faut probablement rédémarrer le service ldap), vous devriez être en mesure de vous connecter avec le mot de passse admin temporaire. Changer le via l'interface. Retirer les lignes ajoutées dans le fichier `slapd.conf`.
+Une fois les lignes ajoutées (il faut probablement rédémarrer le service ldap), vous devriez être en mesure de vous connecter avec le mot de passse admin temporaire. Changer le via l’interface. Retirer les lignes ajoutées dans le fichier `slapd.conf`.
 
 ### Comment déplacer une application
 Exemple avec WordPress :

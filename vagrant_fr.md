@@ -23,7 +23,7 @@ La commande suivante va initialiser le projet avec une image Debian Wheezy de ba
 vagrant init yunohost/stable8
 ```
 <blockquote>
-<span class="text-warning">/!\</span> Vous devez avoir une box `yunohost/stable8`. Si ce n'est pas le cas, ajoutez-la :
+<span class="text-warning">/!\</span> Vous devez avoir une box `yunohost/stable8`. Si ce n’est pas le cas, ajoutez-la :
 `vagrant box add yunohost/stable8 https://atlas.hashicorp.com/yunohost/boxes/stable8/versions/1.0.0/providers/virtualbox.box`
 </blockquote>
 
@@ -46,7 +46,7 @@ Mettre à jour le système.
 sudo apt-get update && sudo apt-get upgrade
 ```
 
-Vous pouvez accéder à votre vm via l'ip 192.168.33.80
+Vous pouvez accéder à votre vm via l’ip 192.168.33.80
 
 ---
 
@@ -55,7 +55,7 @@ Vous pouvez accéder à votre vm via l'ip 192.168.33.80
 
 ## Image Wheezy avec les dépôts testing/unstable
 
-Si vous avez besoin d'une vm pour tester quelque chose avec wheezy ou la version testing/unstable de YunoHost. Il y a un Vagrantfile et cinq autres box en préparation. Pour le moment, vous pouvez construire les images en suivant les instructions sur ce [dépôt](https://github.com/zamentur/yunohost-vagrant).
+Si vous avez besoin d’une vm pour tester quelque chose avec wheezy ou la version testing/unstable de YunoHost. Il y a un Vagrantfile et cinq autres box en préparation. Pour le moment, vous pouvez construire les images en suivant les instructions sur ce [dépôt](https://github.com/zamentur/yunohost-vagrant).
 
 | Box | IP |
 | :---: | :---: |

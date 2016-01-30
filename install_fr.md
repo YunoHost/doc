@@ -1,8 +1,8 @@
 # Guide d’installation
 
-Il existe plusieurs manières d'installer YunoHost. La méthode d'installation diffère légèrement si vous souhaitez l'installer chez vous ou à distance, et du matériel utilisé : **[voir le matériel compatible](/hardware_fr)**
+Il existe plusieurs manières d’installer YunoHost. La méthode d’installation diffère légèrement si vous souhaitez l’installer chez vous ou à distance, et du matériel utilisé : **[voir le matériel compatible](/hardware_fr)**
 
-Cette page liste plusieurs types d'installations, classés par catégories.
+Cette page liste plusieurs types d’installations, classés par catégories.
 
 ---
 
@@ -93,6 +93,6 @@ Cette page liste plusieurs types d'installations, classés par catégories.
 
 <h1 style="font-weight: 100">Sur Debian</h1>
 
-Si vous disposez déjà d'un serveur ou d'un ordinateur sous **Debian 7** (Wheezy) ou **8** (Jessie), suivez l'**[installation par script](/install_on_debian_fr)**.
+Si vous disposez déjà d’un serveur ou d’un ordinateur sous **Debian 7** (Wheezy) ou **8** (Jessie), suivez l’**[installation par script](/install_on_debian_fr)**.
 
 <a href="/install_on_debian_fr"><img width=100 src="https://yunohost.org/images/debian-logo.png"></a>

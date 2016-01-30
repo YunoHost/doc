@@ -11,7 +11,7 @@ YunoHost dépend entièrement de la participation de gens comme vous.
 <span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp; Passez le mot
 </div>
 <div class="col col-md-8" markdown="1">
-Parlez de logiciel libre, d'[auto-hébergement](/selfhosting_fr), de YunoHost à vos proches et à votre travail. Nous comptons sur des évangélistes du <a href="http://datalove.me/" target="_blank">Datalove</a> comme vous <3
+Parlez de logiciel libre, d’[auto-hébergement](/selfhosting_fr), de YunoHost à vos proches et à votre travail. Nous comptons sur des évangélistes du <a href="http://datalove.me/" target="_blank">Datalove</a> comme vous <3
 </div>
 </div>
 
@@ -22,7 +22,7 @@ Parlez de logiciel libre, d'[auto-hébergement](/selfhosting_fr), de YunoHost à
 <span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;&nbsp; Testez
 </div>
 <div class="col col-md-8" markdown="1">
-Nous avons besoin de tester YunoHost profondément. Si vous trouvez un bug, essayez de l'identifier, puis reportez-le sur notre <a href="https://dev.yunohost.org/projects/yunohost/issues/new" target="_blank">bug tracker</a>.
+Nous avons besoin de tester YunoHost profondément. Si vous trouvez un bug, essayez de l’identifier, puis reportez-le sur notre <a href="https://dev.yunohost.org/projects/yunohost/issues/new" target="_blank">bug tracker</a>.
 </div>
 </div>
 
@@ -33,7 +33,7 @@ Nous avons besoin de tester YunoHost profondément. Si vous trouvez un bug, essa
 <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; Aidez les utilisateurs
 </div>
 <div class="col col-md-8" markdown="1">
-Notre support est communautaire et s'appuie sur des contributeurs comme vous. Venez simplement sur le [salon de discussion XMPP](/support_fr), ou tentez de répondre aux questions du <a href="https://forum.yunohost.org/" target="_blank">Forum</a>.
+Notre support est communautaire et s’appuie sur des contributeurs comme vous. Venez simplement sur le [salon de discussion XMPP](/support_fr), ou tentez de répondre aux questions du <a href="https://forum.yunohost.org/" target="_blank">Forum</a>.
 </div>
 </div>
 

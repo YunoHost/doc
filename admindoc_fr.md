@@ -2,7 +2,7 @@
 
 * [L’auto-hébergement](/selfhosting_fr)
 * [Matériel compatible](/hardware_fr)
-* [Guide d'installation](/install_fr)
+* [Guide d’installation](/install_fr)
    * [Sur Raspberry Pi](/install_on_raspberry_fr)
    * [Sur Cubieboard](/install_on_cubieboard_fr)
    * [À partir de l’ISO](/install_iso_fr)
@@ -57,7 +57,7 @@
 		* [Applications Node.js](/troubleshooting_guide_fr)
 		* [Autres (Go, Java…)](/troubleshooting_guide_fr)
 * [Administration en ligne de commande avec la Moulinette](/moulinette_fr)
-* [Changer le mot de passe d'administration](/change_admin_password_fr)
+* [Changer le mot de passe d’administration](/change_admin_password_fr)
 * [Courier électronique](email_fr)
    * [Formulaires pour enlever son IP des listes noires](blacklist_forms_fr)
    * [DKIM](dkim_fr)

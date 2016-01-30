@@ -5,7 +5,7 @@ Il est important d’identifier votre type de machine avant de procéder à l’
 
 *Cliquez sur le guide correspondant à votre matériel.*
 
-| Type | Exemples de machines | Guide d'installation |
+| Type | Exemples de machines | Guide d’installation |
 |------|-----------------------|----------------------|
 | **x86** | PC de bureau, PC portables, Mac Intel (après 2007), netbooks, nettops, etc. | [Installation via CD/USB](/install_iso_fr) |
 | **armhf** | [Raspberry Pi](/install_on_raspberry_fr), [Cubieboard](/install_on_cubieboard_fr), Olimex, Cubox, Beagleboard, etc… | [Installation sur Debian ARM](/install_on_debian_fr) |

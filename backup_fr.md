@@ -14,7 +14,7 @@ Un fichier portant un numéro et une extension .tar.gz est crée
 
 Cette archive contient une copie des dossiers suivants et fichiers de configurations dans les répertoires suivants
 - cron
-- home (car les données d'owncloud se trouvent dans `/home/yunohost.apps/owncloud` par exemple)
+- home (car les données d’owncloud se trouvent dans `/home/yunohost.apps/owncloud` par exemple)
 - ldap
 - mail
 - mysql
@@ -24,4 +24,4 @@ Cette archive contient une copie des dossiers suivants et fichiers de configurat
 - xmpp
 - yunohost
 
-Cette sauvegarde sous forme d'archive est à copier sur un autre support (support mémoire, répertoire réseau…)
+Cette sauvegarde sous forme d’archive est à copier sur un autre support (support mémoire, répertoire réseau…)

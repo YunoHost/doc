@@ -89,7 +89,7 @@ Plus d’information sur la documentation de Docker :
 ---
 
 ## Post-installation
-Entrer dans le container en remplaçant XXXX par l'id obtenu lors du docker run
+Entrer dans le container en remplaçant XXXX par l’id obtenu lors du docker run
 ```bash
 docker exec -t -i XXXX /bin/bash
 ```

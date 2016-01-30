@@ -154,7 +154,7 @@
 <div class="row">
 <div class="col-md-7">
 <h1>Gérez <small>votre serveur comme vous le voulez : via web, mobile ou ligne de commande</small></h1>
-<p><br /><a href="/try_fr">Essayez l'interface d'administration</a></p>
+<p><br /><a href="/try_fr">Essayez l’interface d’administration</a></p>
 </div>
 <div class="col-md-4">
 <div style="

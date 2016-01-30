@@ -20,7 +20,7 @@ cp -a $finalpath $finalpath.back
 # Suppression des certificats et des fichiers de configuration
 rm $finalpath/{crt.pem,key.pem,openssl.cnf}
 
-# Copie du fichier de configuration d'openSSL
+# Copie du fichier de configuration d’openSSL
 cp $ssldir/openssl.cnf $finalpath/
 
 # Changement de la configuration yunohost.org avec votre domaine

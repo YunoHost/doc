@@ -4,11 +4,11 @@
 <a class="btn btn-lg btn-default disabled" href="/apps_in_progress_fr">Apps en cours</a>
 <a class="btn btn-lg btn-default" href="/apps_wishlist_fr">Apps souhaitées</a>
 
-De plus en plus d'applications sont mises à disposition par les packagers.
+De plus en plus d’applications sont mises à disposition par les packagers.
 <div class="alert alert-danger">Ces applications **n’ont pas** été validées par l’équipe YunoHost et  **ne sont pas** officiellement prises en charge.<br>Vous pouvez les tester et les utiliser à **vos risques et périls**.
 </div>
 
-Elles sont installables avec l’[interface web d'administration](/admin) ou avec la moulinette :
+Elles sont installables avec l’[interface web d’administration](/admin) ou avec la moulinette :
 ```bash
 yunohost app install https://github.com/<packageur>/<dépôt_app>
 ```

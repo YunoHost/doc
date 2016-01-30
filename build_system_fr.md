@@ -10,25 +10,25 @@ Le système se compose de `rebuildd` qui est un front-end pour `pbuilder`, des c
 Il existe trois repo (`unstable`, `testing` et `stable`):
 * Les paquets du repo `unstable` (aussi appelé `daily` à certains endroits) correspondent à la dernière version du git, et sont reconstruits de façon automatisée toutes les nuits.
 
-* Le repo `testing` (aussi appelé `test` à certains endroits) permet de mettre en place une nouvelle version d'un paquet qui sera ensuite testé
+* Le repo `testing` (aussi appelé `test` à certains endroits) permet de mettre en place une nouvelle version d’un paquet qui sera ensuite testé
 
 * Le repo `stable` (aussi appelé `megusta` à certains endroits) contient la version de production
 
-Le but du workflow est d'éviter toute intervention manuelle (lancement d'un script, ...) sur le serveur, et de maîtriser la gestion des paquets via GitHub uniquement.
+Le but du workflow est d’éviter toute intervention manuelle (lancement d’un script, ...) sur le serveur, et de maîtriser la gestion des paquets via GitHub uniquement.
 
-Ansi, les dépôts de chaque paquet yunohost possèdent 3 branches correspondant aux trois dépôts (`unstable`, `testing` et `stable`). Le serveur de build construit et déploie **automatiquement** les paquets source et binaires Debian correspondant à l'état de ces trois branches sur GitHub.
+Ansi, les dépôts de chaque paquet yunohost possèdent 3 branches correspondant aux trois dépôts (`unstable`, `testing` et `stable`). Le serveur de build construit et déploie **automatiquement** les paquets source et binaires Debian correspondant à l’état de ces trois branches sur GitHub.
 
 ### Branche unstable
 
 Aucun commit dans la branche unstable ne modifie le fichier `debian/changelog` car celui-ci est modifié automatiquement lors du build quotidien, avec une version correspondant à la date/heure de construction.
 
-Tout commit modifiant fonctionnellement les paquets doit se faire d'abord dans cette branche  `unstable`.
+Tout commit modifiant fonctionnellement les paquets doit se faire d’abord dans cette branche  `unstable`.
 
 **`TODO`** ajouter un pre-commit hook pour éviter les erreurs ?
 
 ### Branche testing et stable - workflow standard
 
-Aucun commit fonctionnel n'est effectué directement dans ces branches. On ne fait que des merges (merge de `unstable` dans `testing` et merge de `testing` dans `stable`).
+Aucun commit fonctionnel n’est effectué directement dans ces branches. On ne fait que des merges (merge de `unstable` dans `testing` et merge de `testing` dans `stable`).
 
 Les seules modifications spécifiques à ces dépôts sont les changements de versions (modification de `debian/changelog`, puis tag).
 
@@ -37,7 +37,7 @@ Des outils à destinations des mainteneurs de paquets sont disponibles sur le d�
 git clone https://github.com/YunoHost/yunohost-debhelper
 yunohost-debhelper/setup_git_alias.sh
 ```
-Ceci va configurer un nouvel alias git nommé `yunobump`, global (stocké dans `~/.gitconfig` et donc accessible depuis n'importe quel dépôt git local).
+Ceci va configurer un nouvel alias git nommé `yunobump`, global (stocké dans `~/.gitconfig` et donc accessible depuis n’importe quel dépôt git local).
 
 <div class="alert alert-warning">
 **Attention :** Pour le moment ce helper `yunobump` ne fonctionne que sous Ubuntu ou Debian Jessie. Vous **devez** installer les paquets `git` et `git-buildpackage` pour que le helper fonctionne correctement.
@@ -51,7 +51,7 @@ Ceci va configurer un nouvel alias git nommé `yunobump`, global (stocké dans `
 4. Rendez-vous sur la branche `testing` ou `stable`
 5. Mergez ou cherry-pickez les commits que vous voulez intégrer à la version depuis la branche `unstable`
 6. Modifiez le `debian/changelog` en intégrant les messages de commits correspondant aux modifications que vous avez intégré (ou utilisez `git-dch` pour le faire automatiquement)
-7. Taggez la branche actuelle (`testing` ou `stable`) du numéro de version juste supérieur à l'actuel
+7. Taggez la branche actuelle (`testing` ou `stable`) du numéro de version juste supérieur à l’actuel
 8. Pushez vos modifications **ainsi que vos tags** sur le repo GitHub
 9. Retournez sur la branche `unstable`
 10. Mergez le changelog mis à jour précédemment
@@ -98,12 +98,12 @@ $ git push origin unstable
 
 #### Branche test et stable - faire un hotfix
 
-Il peut arriver, de façon exceptionnelle, qu'on ait besoin de faire un hotfix (de sécurité par exemple) sur les paquets en `stable` ou en `test`, pour lequel le merge de la branche daily n'est pas acceptable (car trop de nouvelles fonctionnalités en développement sur daily).
+Il peut arriver, de façon exceptionnelle, qu’on ait besoin de faire un hotfix (de sécurité par exemple) sur les paquets en `stable` ou en `test`, pour lequel le merge de la branche daily n’est pas acceptable (car trop de nouvelles fonctionnalités en développement sur daily).
 ** Cette situation doit rester exceptionnelle **
 
 **`TODO`** à décrire
 
-**`TODO`** dev un helper 'git yunohotfix ...' qui commit dans stable et cherry-pick tout de suite dans daily ? ou l'inverse ?
+**`TODO`** dev un helper 'git yunohotfix ...' qui commit dans stable et cherry-pick tout de suite dans daily ? ou l’inverse ?
 
 #### Paquets non YunoHost
 
@@ -115,9 +115,9 @@ Pour les paquets « non-YunoHost » (par exemple `python-bottle`) le paquet ne p
 
 YunoHost est en version **2** globalement, donc le numéro de la version doit, jusqu'à nouvel ordre, être sous la forme **2.x.x**.
 
-La deuxième partie s'incrémente lors d'un changement fonctionnel important : Ajout d'une nouvelle fonctionnalité, modification d'une façon de fonctionner. Pour l'instant tous les paquets se trouvent en version **2.1.x**.
+La deuxième partie s’incrémente lors d’un changement fonctionnel important : Ajout d’une nouvelle fonctionnalité, modification d’une façon de fonctionner. Pour l’instant tous les paquets se trouvent en version **2.1.x**.
 
-La troisième partie s'incrémente quasi-arbitrairement, lors d'un bugfix ou d'un changement fonctionnel mineur. On trouve actuellement des paquets en **2.1.3** ou **2.1.5** par exemple.
+La troisième partie s’incrémente quasi-arbitrairement, lors d’un bugfix ou d’un changement fonctionnel mineur. On trouve actuellement des paquets en **2.1.3** ou **2.1.5** par exemple.
 
 Enfin, une quatrième partie est réservée dans les cas exceptionnels de bugfixes en stable. Dans ce cas, on veut faire passer un changement unique directement dans la branche stable, on préfixe donc le numéro par **-x**, **x** étant le numéro du hotfix. Donnant par exemple **2.1.3-1**.
 
@@ -127,25 +127,25 @@ Enfin, une quatrième partie est réservée dans les cas exceptionnels de bugfix
 
 #### Daily build
 
-Un cron défini pour l'utilisateur `pbuilder` se lance **tous les jours à 01:00**. Ce script va mettre à jour le repo git `packages` et ses submodules (`ssowat`, `moulinette`, `moulinette-yunohost` et `admin_js`). 
+Un cron défini pour l’utilisateur `pbuilder` se lance **tous les jours à 01:00**. Ce script va mettre à jour le repo git `packages` et ses submodules (`ssowat`, `moulinette`, `moulinette-yunohost` et `admin_js`). 
 Une fois les sources mises à jour, le script va rebuilder les paquets qui ont été mis à jour la veille.
 
 Pour ce faire on va créer des paquets sources qui vont ensuite être mis dans le répertoire `/var/www/repo.yunohost.org/daily/incomming`.
 
-Lancer ensuite l'ajout de ces fichiers source au repo, ce lancera automatiquement un job dans `rebuildd` (voir configuration du repo daily dans `/var/www/repo.yunohost.org/daily/conf/distribustion`).
+Lancer ensuite l’ajout de ces fichiers source au repo, ce lancera automatiquement un job dans `rebuildd` (voir configuration du repo daily dans `/var/www/repo.yunohost.org/daily/conf/distribustion`).
 
 Une fois les paquets buildés, ils sont ajoutés au repo `unstable`.
 
 
-#### (Re)build d'un paquet YunoHost
+#### (Re)build d’un paquet YunoHost
 
-Il est possible de relancer manuellement le build d'un paquet.
+Il est possible de relancer manuellement le build d’un paquet.
 
 ```bash
 $ daily_build -p nom_du_paquet
 ```
 
-#### Build d'un paquet non YunoHost
+#### Build d’un paquet non YunoHost
 
 ```bash
 $ build_deb /path/du/paquet
@@ -159,7 +159,7 @@ $ build_deb /path/du/paquet
 $ push-packages-test -p nom_du_paquet
 ```
 
-Il est possible d'utiliser l'option `-v` pour définir manuellement la version du paquet.
+Il est possible d’utiliser l’option `-v` pour définir manuellement la version du paquet.
 
 Le script va récuperer les sources du paquet dans `daily` puis ouvrir le changelog pour y définir la version et la liste des changements. Le build paquet sera ensuite ajouté à la liste des jobs de rebuildd qui le passera dans le repo `test`.
 
@@ -177,12 +177,12 @@ Cette commande passe simplement le paquet du repo `test` à `stable`, sans rebui
 
 ### Gestion du repo avec `reprepro`
 
-* Suppression d'un paquet
+* Suppression d’un paquet
 ```bash
 $ reprepro -V -b /var/www/repo.yunohost.org/nom_du_repo/ remove megusta nom_du_paquet
 ```
 
-* Ajout d'un paquet debian dans un repo
+* Ajout d’un paquet debian dans un repo
 ```bash
 $ reprepro -V -b /var/www/repo.yunohost.org/nom_du_repo/ includedeb megusta nom_du_paquet.deb
 ```
