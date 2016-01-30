@@ -86,6 +86,9 @@ Since YunoHost has a unified architecture, you will be able to guess most of the
 
 <a class="btn btn-lg btn-default" href="packaging_apps_arguments_management_en">Arguments management</a>
 
+### Nginx configuration
+<a class="btn btn-lg btn-default" href="packaging_apps_nginx_conf_en">Nginx configuration</a>
+
 ### Hooks
 YunoHost provides a hook system, which is accessible via the packager's script callbacks in moulinette (CLI).
 The scripts have to be placed in the `hooks` repository at the root of the YunoHost package, and must be named `priority-hook_name`, for example: `hooks/50-post_user_create` will be executed after each user creation.
