@@ -86,6 +86,9 @@ Comme les instances de YunoHost possèdent une architecture unifiée, vous serez
 
 <a class="btn btn-lg btn-default" href="packaging_apps_arguments_management_fr">Gestion des arguments</a>
 
+### Configuration Nginx
+<a class="btn btn-lg btn-default" href="packaging_apps_nginx_conf_fr">Configuration Nginx</a>
+
 ### Commandes pratiques
 La CLI [moulinette](/moulinette) fournit quelques outils pour faciliter le packaging :
 
