@@ -1,9 +1,9 @@
-# Configuration Nginx
-Ce tutoriel a pour but d’aider à la mise en place d’une configuration Nginx pour le packaging d’application.
+# Nginx configuration
+This tutorial aim to help setup Nginx configuration for application packaging.
 
-#### Configuration Nginx
-La configuration doit être mise dans `conf/nginx.conf`. Il s’agira d’utiliser **FastCGI** ou un **proxy_pass** suivant l’application :
-* **FastCGI** est utilisé dans les applications PHP :
+#### Nginx configuration
+Configuration must be in `conf/nginx.conf`. We must use **FastCGI** or a **proxy_pass** following the application:
+* **FastCGI** is used with PHP applications:
 ```bash
 location YNH_EXAMPLE_PATH {
   alias YNH_WWW_PATH ;
@@ -27,7 +27,7 @@ location YNH_EXAMPLE_PATH {
 }
 ```
 
-* **`proxy_pass`** dans le cas d’applications Python, Node.js, Go et Java :
+* **`proxy_pass`** in Python, Node.js, Go and Java applications:
 ```bash
 location YNH_EXAMPLE_PATH/ {
        rewrite                ^YNH_EXAMPLE_PATH$ YNH_EXAMPLE_PATH/ permanent;
@@ -37,22 +37,22 @@ location YNH_EXAMPLE_PATH/ {
 }
 ```
 
-#### Script d’installation
-Il s’agit de modifier le fichier `conf/nginx.conf` avec les paramètres de l’application. Pour cela, on utilise des termes génériques `YNH_EXAMPLE_PATH` que l’on modifie par des valeurs souhaités avec la commande `sed` :
+#### Install script
+We must modify `conf/nginx.conf` file with application arguments. For this, we use generic terms `YNH_EXAMPLE_PATH` that we modify by desired values with `sed` command:
 ```bash
 sed -i "s@YNH_EXAMPLE_PATH@$path@g" ../conf/nginx.conf
 sed -i "s@YNH_EXAMPLE_PORT@$port@g" ../conf/nginx.conf
 sed -i "s@YNH_EXEMPLE_DOMAIN@$domain@g" ../conf/nginx.conf
 ```
-Il faut ensuite déplacer ce fichier de configuration dans la configuration de Nginx, puis de recharger la configuration de Nginx :
+We must move that configuration file in Nginx configuration, then reload Nginx configuration:
 ```bash
 cp ../conf/nginx.conf /etc/nginx/conf.d/$domain.d/$app.conf
 sudo service nginx reload
 ```
-Si Nginx ne redémarre pas, il se peut que le fichier de configuration ne soit pas correct.
+If Nginx won't restart, it's possible that this configuration file isn't right.
 
-#### Script de suppression
-Il s’agit de supprimer la configuration Nginx pour cette application, puis de recharger la configuration de Nginx :
+#### Remove script
+We must remove Nginx configuration of this application, then reload Nginx configuration:
 ```bash
 rm -f /etc/nginx/conf.d/$domain.d/$app.conf
 sudo service nginx reload
