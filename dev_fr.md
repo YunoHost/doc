@@ -59,7 +59,7 @@ sudo dnf install docker vagrant vagrant-libvirt
 Une ligne de commande `ynh-dev` a été créée afin de simplifier la gestion de votre environnement de développement.
 
 ```bash
-wget https://raw.githubusercontent.com/zamentur/yunohost-development/master/ynh-dev
+wget https://raw.githubusercontent.com/yunohost/ynh-dev/master/ynh-dev
 chmod u+x ynh-dev
 ```
 Pour créer votre environnement, commencez par faire un `create-env`
