@@ -2,7 +2,7 @@
 
 ## Arguments management
 #### Retrieve arguments in the install script from manifest
-Arguments are give to the install script from the manifest in it's order. For instance for Roundcube, `domain` and `path` arguments will respectively be retreive from `$1` and `$2` parameters in the install script.
+Arguments are given to the install script from the manifest in it's order. For instance, for Roundcube, `domain` and `path` arguments will respectively be retreived from `$1` and `$2` parameters in the install script.
 
 ```bash
 # Retrieve arguments
