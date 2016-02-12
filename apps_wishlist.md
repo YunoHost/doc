@@ -11,6 +11,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Ajenti](http://ajenti.org/)
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
 * [Bolt](http://bolt.cm)
+* [BoZoN](https://github.com/broncowdd/BoZoN)
 * [Browsepass](http://techualization.blogspot.de/2013/09/introducing-browsepass-keepass-on-web.html)
 * [Caliopen](https://www.caliopen.org/)
 * [CardDavMate](https://www.inf-it.com/open-source/clients/carddavmate/)
