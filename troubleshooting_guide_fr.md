@@ -35,7 +35,7 @@ La plupart du temps, cela suffit. Mais dans certaines situations, il est possibl
 Cela peut entraîner des bugs et, dans certains rares cas, des problèmes de sécurité (ex : lors d’une mise à jour de OpenSSL à cause d’une faille de sécurité, Nginx va continuer à utiliser la version dont il dispose en mémoire). L’utilitaire Checkrestart va vous aider à identifier ces processus et les redémarrer.
 
 ```bash
-sudo apt-get install 	
+sudo apt-get install checkrestart
 sudo checkrestart
 Found 0 processes using old versions of upgraded files
 ```
@@ -79,16 +79,16 @@ Voici une petite description de leurs fonctions respectives :
 - **Avahi-daemon** : système qui facilite la découverte d’ordinateurs sur le réseau local en leur attribuant des noms.
 - **DNSmasq** : serveur DNS, vous n’êtes pas obligé de l’utiliser (Non installé par défaut)
 - **Dovecot** : serveur IMAP, utilisé pour la réception de mails.
-- **Glances** :  optionnel, utilisé pour l’administration web pour afficher les statuts du serveur 
+- **Glances** :  optionnel, utilisé pour l’administration web pour afficher les statuts du serveur
 - **Metronome** : serveur XMPP utilisé par jappix comme client.
 - **MySQL** : base de données utilisée par certaines applications
-- **Nginx** : serveur web, utilisé par toutes les applications 
+- **Nginx** : serveur web, utilisé par toutes les applications
 - **php5-fpm** : serveur PHP, utilisé par toutes applications utilisant PHP
 - **Postfix** : serveur SMTP, utilisé pour l’envoi de mails.
 - **Postgrey** : serveur de liste grises, si vous utilisez YunoHost pour les mails , vous devriez regarder un peu plus sur cette question.
 [En apprendre plus sur les listes grises](http://en.wikipedia.org/wiki/Greylisting)
 - **Slapd**: serveur LDAP, utilisé pour l’authentification (SSO and apps)
-- [**SSH**](/ssh_en) : Secure Shell, utilisé pour l’accès distant au serveur. 
+- [**SSH**](/ssh_en) : Secure Shell, utilisé pour l’accès distant au serveur.
 - [**SSOwat**](https://github.com/Kloadut/SSOwat/) : gestionnaire simple d’authentification.
 - **YunoHost-API** : administration web de YunoHost
 
