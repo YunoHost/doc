@@ -35,7 +35,7 @@ La plupart du temps, cela suffit. Mais dans certaines situations, il est possibl
 Cela peut entraîner des bugs et, dans certains rares cas, des problèmes de sécurité (ex : lors d’une mise à jour de OpenSSL à cause d’une faille de sécurité, Nginx va continuer à utiliser la version dont il dispose en mémoire). L’utilitaire Checkrestart va vous aider à identifier ces processus et les redémarrer.
 
 ```bash
-sudo apt-get install checkrestart
+sudo apt-get install debian-goodies
 sudo checkrestart
 Found 0 processes using old versions of upgraded files
 ```
