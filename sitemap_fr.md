@@ -86,6 +86,7 @@
     * [Guide du contributeur](/contribute_fr)
         * Développement
            * [Créer un environnement de développement](dev_fr)
+           * [Présentation du fonctionnement de YunoHost](/package_list_fr)
            * Applications :
               * [Packager des applications](/packaging_apps_fr)
                  * [Manifeste](packaging_apps_manifest_fr)
