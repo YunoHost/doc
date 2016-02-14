@@ -39,5 +39,5 @@ Le service yunohost-api doit donc être start pour utiliser l’administration w
 ### Conseils de développement
 #### Traduction
 Afin d'éviter des problèmes de fusion, lorsque vous ajoutez ou modifiez une clé de traduction dans les fichiers json situés dans les répertoires locales des dépôts git, il est demandé d'ajouter les clé uniquement dans le fichier en.json, même si vous savez faire la traduction pour d'autres langues.
-Les traductions se font ensuite sur <a href='https://translate.yunohost.org/' target='_BLANK'>weblate</a>. Donc si éffectivement vous savez traduire dans une autre langue, n'hésitez pas à y faire un tour.
+Les traductions se font ensuite sur <a href='https://translate.yunohost.org/' target='_BLANK'>weblate</a>. Donc si effectivement vous savez traduire dans une autre langue, n'hésitez pas à y faire un tour.
 
