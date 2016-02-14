@@ -33,7 +33,7 @@ Nous avons besoin de tester YunoHost profondément. Si vous trouvez un bug, essa
 <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; Aidez les utilisateurs
 </div>
 <div class="col col-md-8" markdown="1">
-Notre support est communautaire et s’appuie sur des contributeurs comme vous. Venez simplement sur le [salon de discussion XMPP](/support_fr), ou tentez de répondre aux questions du <a href="https://forum.yunohost.org/" target="_blank">Forum</a>.
+Notre support est communautaire et s’appuie sur des contributeurs comme vous. Venez simplement sur le [salon de discussion XMPP](/support_fr), ou tentez de répondre aux questions du <a href="https://forum.yunohost.org/" target="_blank">Forum</a>. Vous pouvez aussi organiser des <a href="https://hackstub.netlib.re/wiki/index.php?title=Atelier_3_avenir%28s%29_d%27internet_-_Introduction_%C3%A0_Yunohost_et_la_brique_internet" target="_blank">ateliers de formation</a>.
 </div>
 </div>
 
