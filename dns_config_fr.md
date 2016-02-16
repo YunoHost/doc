@@ -48,5 +48,5 @@ Remplacez :
 <div class="alert alert-warning">**Attention :** le **@** représente le nom de domaine par défaut que l’on est en train de définir, certains bureaux d’enregistrement ne l’acceptent pas (ex : OVH). Il faut donc remplacer le « @ » par votre nom de domaine (domain.tld**.**) sans oublier un point à la fin.</div>
 
 #### Time to live
-Toutes les entrées DNS ci-dessus on la valeur `1800` (30 minutes). Elle correspond au 
-[Time to live (TTL)](https://fr.wikipedia.org/wiki/Time_to_Live#Le_Time_to_Live_dans_le_DNS) qui représente et indique le temps, en secondes, pendant lequel l’entrée DNS peut être conservée en cache. Passé ce délai, l’information doit être considérée comme obsolète et être mise à jour.
+Toutes les entrées DNS ci-dessus ont la valeur `1800` (30 minutes). Elle correspond au 
+[Time to live (TTL)](https://fr.wikipedia.org/wiki/Time_to_Live#Le_Time_to_Live_dans_le_DNS) qui représente et indique le temps, en secondes, durant lequel l’entrée DNS peut être conservée en cache. Passé ce délai, l’information doit être considérée comme obsolète et doit être mise à jour.
