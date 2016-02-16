@@ -68,7 +68,7 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
 * **arguments**:
   * **install**: argument for the YunoHost's administrator to enter at installation.
     * **name**: argument identification.
-    * **type**: (optional) argument type among `domain`, `path`, `user` and `password`. The field will be hiden in the password case.
+    * **type**: (optional) argument type among `domain`, `path`, `user`, `boolean` and `password`. The field will be hiden in the password case.
     * **optional** : (optional) field which indicate if this argument is optional. It can have `true` and `false` value.
     * **ask**: question (at least in `en`) that you can translate.
     * **example**: (optional) example value to help administrator to fill the input.
