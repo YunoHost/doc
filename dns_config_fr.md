@@ -18,7 +18,7 @@ www 1800 IN CNAME @ # accessible sur www.domain.tld
 
 #### XMPP
 ```bash
-_xmpp-client._tcp 1800 IN SRV 0 5 5222 domain.tld. # (Minimum) connexion avec les clients
+_xmpp-client._tcp 1800 IN SRV 0 5 5222 domain.tld. # (Minimum) connexions avec les clients
 _xmpp-server._tcp 1800 IN SRV 0 5 5269 domain.tld. # (Minimum) connexions entre serveurs
 
 muc 1800 IN CNAME @ # salons de discussion sur `muc.domain.tld`
@@ -42,6 +42,8 @@ Remplacez :
 * les adresses IP d’exemple par celles de votre serveur :
  * `111.222.333.444` : [IPv4](http://ip.yunohost.org/).
  * `2001:AABB:CCDD:EEFF:1122:3344:5566:7788` : [IPv6](http://ip6.yunohost.org/).
+
+Les entrées DNS sous-domaines, XMPP et email ne fonctionnent pas sans une redirection du nom de domaine vers l’adresse IP (une ligne est suffisante) étant donné qu’elles en sont dépendantes.
 
 <div class="alert alert-info">**Pour débuter :** les lignes avec « (Minimum) » sont les entrées DNS minimales requises pour avoir une redirection du nom de domaine vers l’adresse IP, XMPP et le courrier électronique qui fonctionnent.</div>
 
