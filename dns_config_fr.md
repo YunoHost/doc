@@ -21,6 +21,7 @@ www 1800 IN CNAME @ # accessible sur www.domain.tld
 _xmpp-client._tcp 14400 IN SRV 0 5 5222 domain.tld. # (Minimum) connexion avec les clients
 _xmpp-server._tcp 14400 IN SRV 0 5 5269 domain.tld. # (Minimum) connexions entre serveurs
 muc 1800 IN CNAME @ # salons de discussion sur `muc.domain.tld`
+anonymous 1800 IN CNAME @ # connexion sans compte sur `anonymous.domain.tld`
 pubsub 1800 IN CNAME @
 vjud 1800 IN CNAME @
 ```
