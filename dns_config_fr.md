@@ -43,7 +43,7 @@ Remplacez :
  * `111.222.333.444` : [IPv4](http://ip.yunohost.org/).
  * `2001:AABB:CCDD:EEFF:1122:3344:5566:7788` : [IPv6](http://ip6.yunohost.org/).
 
-<div class="alert alert-info">**Pour débuter :** les lignes avec « (Minimum) » sont les entrées DNS minimales requises pour avoir une redirection nom de domaine vers l’adresse IP, avoir XMPP et le courrier électronique qui fonctionnent.</div>
+<div class="alert alert-info">**Pour débuter :** les lignes avec « (Minimum) » sont les entrées DNS minimales requises pour avoir une redirection du nom de domaine vers l’adresse IP, XMPP et le courrier électronique qui fonctionnent.</div>
 
 <div class="alert alert-warning">**Attention :** le **@** représente le nom de domaine par défaut que l’on est en train de définir, certains bureaux d’enregistrement ne l’acceptent pas (ex : OVH). Il faut donc remplacer le « @ » par votre nom de domaine (domain.tld**.**) sans oublier un point à la fin.</div>
 
