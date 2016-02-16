@@ -22,6 +22,8 @@ _xmpp-client._tcp 14400 IN SRV 0 5 5222 domain.tld. # (Minimal) clients connecti
 _xmpp-server._tcp 14400 IN SRV 0 5 5269 domain.tld. # (Minimal) servers connection
 muc 1800 IN CNAME @ # multi-user chat rooms at muc.domain.tld
 anonymous 1800 IN CNAME @ # connection without account at `anonymous.domain.tld`
+bosh 1800 CNAME @ # BOSH
+_xmppconnect 1800 TXT "_xmpp-client-xbosh=https://bosh.domain.tld:5281/http-bind"
 pubsub 1800 IN CNAME @
 vjud 1800 IN CNAME @
 ```
