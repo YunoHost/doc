@@ -21,6 +21,7 @@ www 1800 IN CNAME @ # accesible at www.domain.tld
 _xmpp-client._tcp 14400 IN SRV 0 5 5222 domain.tld. # (Minimal) clients connection
 _xmpp-server._tcp 14400 IN SRV 0 5 5269 domain.tld. # (Minimal) servers connection
 muc 1800 IN CNAME @ # multi-user chat rooms at muc.domain.tld
+anonymous 1800 IN CNAME @ # connection without account at `anonymous.domain.tld`
 pubsub 1800 IN CNAME @
 vjud 1800 IN CNAME @
 ```
