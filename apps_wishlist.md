@@ -7,6 +7,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 [Edit this list](/write_documentation) to add your own favorite app, or learn to [package apps](/packaging_apps) yourself.
 
 * [List of awesome selfhosted apps](https://github.com/Kickball/awesome-selfhosted)
+* [List of awesome sysadmin apps](https://github.com/kahun/awesome-sysadmin)
 * [10er10](https://github.com/dready92/10er10)
 * [Ajenti](http://ajenti.org/)
 * [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
@@ -14,6 +15,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [BoZoN](https://github.com/broncowdd/BoZoN)
 * [Browsepass](http://techualization.blogspot.de/2013/09/introducing-browsepass-keepass-on-web.html)
 * [Caliopen](https://www.caliopen.org/)
+* [Candy](https://candy-chat.github.io/candy/)
 * [CardDavMate](https://www.inf-it.com/open-source/clients/carddavmate/)
 * [cgit](http://git.zx2c4.com/cgit/about/)
 * [CiviCRM](https://civicrm.org/)
@@ -95,6 +97,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [scrumblr](http://scrumblr.ca/)
 * [ShareLatex](https://www.sharelatex.com/)
 * [Shleuder](http://schleuder2.nadir.org/)
+* [Simone](https://github.com/Kloadut/Simone)
 * [SIP](https://en.wikipedia.org/wiki/List_of_SIP_software#Free_and_open-source_license)
 * [Sonarr](https://sonarr.tv/)
 * [Sonerezh](https://www.sonerezh.bzh/) – [package](https://github.com/rodinux/sonerezh_ynh)
