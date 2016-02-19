@@ -80,6 +80,7 @@
         * Developement
            * [Package new application](/packaging_apps)
               * [Manifest](packaging_apps_manifest_en)
+              * [Scripts](packaging_apps_scripts_en)
               * [Arguments management](packaging_apps_arguments_management_en)
               * [Nginx configuration](packaging_apps_nginx_conf_en)
            * [Applications in progress](/apps_in_progress_en)
