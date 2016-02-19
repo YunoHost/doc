@@ -90,6 +90,7 @@
            * Applications :
               * [Packager des applications](/packaging_apps_fr)
                  * [Manifeste](packaging_apps_manifest_fr)
+                 * [Scripts](packaging_apps_scripts_fr)
                  * [Gestion des arguments](packaging_apps_arguments_management_fr)
                  * [Configuration Nginx](packaging_apps_nginx_conf_fr)
               * [Packages d’applications en cours de développement](/apps_in_progress_fr)
