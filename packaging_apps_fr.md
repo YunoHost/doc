@@ -17,7 +17,7 @@ Un paquet YunoHost est composé :
 * d’un fichier `LICENSE` contenant la licence du paquet
 * d’une page de présentation du paquet contenu dans un fichier `README.md`
 
-**[Paquet de base](https://github.com/YunoHost/example_ynh)** : n’hésitez pas à vous en servir comme base de travail.
+<a class="btn btn-lg btn-default" href="https://github.com/YunoHost/example_ynh">Paquet de base</a> n’hésitez pas à vous en servir comme base de travail.
 
 ## Manifeste
 <a class="btn btn-lg btn-default" href="packaging_apps_manifest_fr">Manifeste</a>
