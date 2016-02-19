@@ -13,5 +13,5 @@ Applications and applications packages have there respectives licenses.
 #### Can we host many independents websites with differents domain names?
 We can host many websites cause YunoHost is multi-domain and that some applications for websites management, like *WordPress* or *Web App Multi Custom*, are multi-instances, which means that the application can be installed many times.
 
-#### Why can I access to applications with the IP address?
-The [SSO](https://github.com/Kloadut/SSOwat/) does not allow to access to the user part (apps included) with an IP address. For this purpose, you should use a domain name. One trick could be to modify the [`hosts` file (last §)](dns_local_network_en) of your desktop computer.
+#### Why can I access to applications via the IP address?
+The [SSO](https://github.com/Kloadut/SSOwat/) does not allow access to the user part (apps included) via an IP address. For this purpose, you should use a domain name. One trick could be to modify the [`hosts` file (last §)](dns_local_network_en) of your desktop computer with a domain name that you don't need to own.
