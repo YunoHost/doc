@@ -1,6 +1,6 @@
 # Foire aux questions
 
-#### Es-ce que YunoHost est porté sous Ubuntu ?
+#### Est-ce que YunoHost est porté sous Ubuntu ?
 L’équipe de YunoHost n’a pas l’énergie de porter ni de maintenir YunoHost sur Ubuntu.
 
 #### YunoHost est distribuée sous quelle licence ?
@@ -12,3 +12,6 @@ Les applications et les packages d’applications ont leurs licences respectives
 
 #### Peut-on héberger plusieurs sites indépendants avec des nom de domaines différents ?
 On peut tout à fait héberger plusieurs sites web car YunoHost est multi-domaine et que certaines applications de gestion de sites web, comme *WordPress* ou *Web App Multi Custom*, sont multi-instances, c’est-à-dire que l’applications peut-être installée plusieurs fois.
+
+#### Pourquoi je ne peux pas accéder à mes applications avec l’adresse IP ?
+Le [SSO](https://github.com/Kloadut/SSOwat/) ne permet pas d’accéder à la partie utilisateur avec une adresse IP. Pour cela, il faut utiliser un nom de domaine. L’astuce consiste à modifier le [fichier `hosts` (dernier §)](dns_local_network_fr) de son ordinateur de bureau.
