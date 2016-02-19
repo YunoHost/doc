@@ -17,7 +17,8 @@ A YunoHost package is composed of:
 * A `LICENSE` file containing the license of the package
 * A presentation page of your package in a `README.md` file
 
-**[A basic package](https://github.com/YunoHost/example_ynh)**: feel free to use it as a framework.
+<a class="btn btn-lg btn-default" href="https://github.com/YunoHost/example_ynh"> A basic package</a>
+feel free to use it as a framework.
 
 ## Manifest
 <a class="btn btn-lg btn-default" href="packaging_apps_manifest_en">Manifest</a>
