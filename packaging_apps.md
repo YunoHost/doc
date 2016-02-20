@@ -133,7 +133,7 @@ You will find points to verify quality of your scripts:
 * install script should use command line method instead of curl call through web install form;
 * install script should save install answers;
 * application sources should be checked with a control sum (sha256, sha1 or md5) or a PGP signature;
-* scripts had been tested on Debian Wheezy and Jessie as well as 32 bits, 64 bits and ARM architectures;
+* scripts had been tested on Debian Jessie as well as 32 bits, 64 bits and ARM architectures;
 * backup and restore scripts are present and functional.
 
 ### Publish and ask for testing your application
@@ -142,4 +142,4 @@ You will find points to verify quality of your scripts:
 * Ask to add your application in the [app repository](https://github.com/YunoHost/apps) to be displayed in the [non-official apps list](https://yunohost.org/#/apps_in_progress_en). Precise his progress state: `notworking`, `inprogress`, or `working`.
 
 ### Officalization of an application
-To become an official application, it must be enough tested, stable and should works on 64 bits, 32 bits et ARM processors architectures and on Debian Wheezy and Jessie. If you think thoses conditions are gather, ask for [official integration](https://github.com/YunoHost/apps) of your application.
+To become an official application, it must be enough tested, stable and should works on 64 bits, 32 bits et ARM processors architectures and on Debian Jessie. If you think thoses conditions are gather, ask for [official integration](https://github.com/YunoHost/apps) of your application.

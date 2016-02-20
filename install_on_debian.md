@@ -8,7 +8,7 @@
 
 An ARM box, a VPS, a dedicated server, a standard x86 computer, an old Macintosh, ...
 
-* with **Debian 8** (Jessie) or **7** (Wheezy) installed
+* with **Debian 8** (Jessie) installed
 * connected to the Internet
 * with a **root access** directly or via SSH
 
