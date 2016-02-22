@@ -6,8 +6,11 @@ Sample DNS zone configuration for `domain.tld` domain nane:
 ```bash
 @ 1800 IN A 111.222.333.444 # (Minimal) IPv4
 @ 1800 IN AAAA 2001:AABB:CCDD:EEFF:1122:3344:5566:7788 # IPv6
+```
 
-* 1800 IN A 111.222.333.444 # Wildcard
+#### Redirection from the domain name and subdomains to the IP address
+```bash
+* 1800 IN A 111.222.333.444 # Wildcard: *.domain.tld and domain.tld redirection to the IP address
 * 1800 IN AAAA 2001:AABB:CCDD:EEFF:1122:3344:5566:7788
 ```
 
