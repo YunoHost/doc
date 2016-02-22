@@ -6,8 +6,11 @@ Exemple de configuration des entrés de la zone DNS pour le nom de domaine `doma
 ```bash
 @ 1800 IN A 111.222.333.444 # (Minimum) IPv4
 @ 1800 IN AAAA 2001:AABB:CCDD:EEFF:1122:3344:5566:7788 # IPv6
+```
 
-* 1800 IN A 111.222.333.444 # Wildcard
+#### Redirection du nom de domaine et de tous les sous domaines vers l’adresse IP
+```bash
+* 1800 IN A 111.222.333.444 # Wildcard : *.domain.tld et domain.tld pointent vers l’adresse IP.
 * 1800 IN AAAA 2001:AABB:CCDD:EEFF:1122:3344:5566:7788
 ```
 
