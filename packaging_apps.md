@@ -136,6 +136,15 @@ You will find points to verify quality of your scripts:
 * scripts had been tested on Debian Jessie as well as 32 bits, 64 bits and ARM architectures;
 * backup and restore scripts are present and functional.
 
+### Package script checker
+<a class="btn btn-lg btn-default" href="https://github.com/YunoHost/package_checker">Package checker</a>
+
+This is a Python script which check:
+* that the package is up to date wich last specifications
+* that all files are present
+* that the manifest don't have syntax error
+* that scripts exit well before modifing the system during verifications.
+
 ### Publish and ask for testing your application
 * Publishing a [post on the Forum](https://forum.yunohost.org/) with the [`App integration` category](https://forum.yunohost.org/c/app-integration), to ask tests and returns on your application.
 
