@@ -33,6 +33,9 @@ Comme les instances de YunoHost possèdent une architecture unifiée, vous serez
 ### Configuration Nginx
 <a class="btn btn-lg btn-default" href="packaging_apps_nginx_conf_fr">Configuration Nginx</a>
 
+### Multi-instance
+<a class="btn btn-lg btn-default" href="packaging_apps_multiinstance_fr">Multi-instance</a>
+
 ### Commandes pratiques
 <a class="btn btn-lg btn-default" href="packaging_apps_helpers_fr">Commandes pratiques</a>
 
