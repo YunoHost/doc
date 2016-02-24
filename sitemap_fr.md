@@ -93,6 +93,7 @@
                  * [Scripts](packaging_apps_scripts_fr)
                  * [Gestion des arguments](packaging_apps_arguments_management_fr)
                  * [Configuration Nginx](packaging_apps_nginx_conf_fr)
+                 * [Multi-instance](packaging_apps_multiinstance_fr)
                  * [Commandes pratiques](packaging_apps_helpers_fr)
               * [Packages d’applications en cours de développement](/apps_in_progress_fr)
               * [Liste de proposition d’applications](/apps_wishlist_fr)
