@@ -142,9 +142,9 @@ Vous trouverez ci-dessous une liste des point à vérifier concernant la qualit�
 
 Il s’agit d’un script Python qui vérifie :
 * que le paquet est à jour concernant les dernières spécifications
-* que tous les fichiers sont présent
+* que tous les fichiers sont présents
 * que le manifeste ne comporte pas d’erreur de syntaxe
-* que les scripts quittent avant de modifier le système.
+* que les scripts quittent bien avant de modifier le système lors de vérifications.
 
 ### Publiez et demandez des tests de votre application
 * Demandez des tests et des retours sur votre application en publiant un [post sur le Forum](https://forum.yunohost.org/) dans la [catégorie `App integration`](https://forum.yunohost.org/c/app-integration).
