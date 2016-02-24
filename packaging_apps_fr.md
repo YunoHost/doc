@@ -137,6 +137,15 @@ Vous trouverez ci-dessous une liste des point à vérifier concernant la qualit�
 * Vos scripts ont été testé sur Debian Jessie ainsi que sur les architectures 32 bits, 64 bits et ARM ;
 * Les scripts backup et restore sont présents et fonctionnels.
 
+### Script de vérification du paquet
+<a class="btn btn-lg btn-default" href="https://github.com/YunoHost/package_checker">Vérificateur de paquets</a>
+
+Il s’agit d’un script Python qui vérifie :
+* que le paquet est à jour concernant les dernières spécifications
+* que tous les fichiers sont présent
+* que le manifeste ne comporte pas d’erreur de syntaxe
+* que les scripts quittent avant de modifier le système.
+
 ### Publiez et demandez des tests de votre application
 * Demandez des tests et des retours sur votre application en publiant un [post sur le Forum](https://forum.yunohost.org/) dans la [catégorie `App integration`](https://forum.yunohost.org/c/app-integration).
 
