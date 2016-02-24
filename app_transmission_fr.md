@@ -38,5 +38,5 @@ Pour plus de détails sur le transfert de fichier avec *scp* voir ici : http://d
 #### Problèmes de droits
 Si vous rencontrez des problèmes de droits `Permission denied` après l’ajout de fichiers à seeder, changez l’utilisateur qui possède les droits sur ces fichiers :
 ```bash
-chown -R debian-transmission:debian-transmission /home/yunohost.transmission/completed/*
+chown -R debian-transmission: /home/yunohost.transmission/completed/*
 ```
