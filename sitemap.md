@@ -83,6 +83,7 @@
               * [Scripts](packaging_apps_scripts_en)
               * [Arguments management](packaging_apps_arguments_management_en)
               * [Nginx configuration](packaging_apps_nginx_conf_en)
+              * [Multi-instance](packaging_apps_multiinstance_en)
               * [Helpers](packaging_apps_helpers_en)
            * [Applications in progress](/apps_in_progress_en)
            * [Wishlist of applications](/apps_wishlist_en)
