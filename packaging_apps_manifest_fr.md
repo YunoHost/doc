@@ -60,8 +60,7 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
 
 * **maintainer** : informations à propos du mainteneur du paquet de l’application pour pouvoir le contacter.
 
-* **multi_instance** : définit la possibilité du paquet à être installé plusieurs fois. Quand YunoHost essaie d’installer une seconde fois l’application, il remplaçera l’`id` dans votre script par `id__2`. Cela signifie que si voulez que l’application soit `multi_instance`, vous devez mettre toutes les valeurs identifiantes dans les scripts.
-<br /><br />**Par exemple** : dans le script roundcube, il faut nommer la base de donnée `roundcube`, le dossier d’installation `roundcube` et la configuration Nginx `roundcube`. De cette manière, la seconde installation de roundcube ne rentrera pas en conflit avec la première, et sera installée dans la base de donnée `roundcube__2`, dans le répertoire `roundcube__2`, et avec la configuration Nginx `roundcube__2`.
+* [**multi_instance**](packaging_apps_multiinstance_fr) : capacité d’une application d’être installée plusieurs fois.
 
 * **services** : liste des services nécessaires au fonctionnement de l’application. `nginx`, `php5-fpm`, `mysql`, `uwsgi`, `metronome`, `postfix`, `dovecot`…
 
