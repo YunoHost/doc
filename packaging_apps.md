@@ -5,7 +5,7 @@ This document aimed to learn you how to package an application for YunoHost.
 ### Requirements
 To package an application, here are the requirements:
 * An account on a git server (e.g. [GitHub](https://github.com/)) to publish the application;
-* Control a minimum `git`, Shell and other programming stuffs;
+* Basic knowledge of `git`, bash shell and other programming stuff;
 * A testing [virtual machine or a distant server](/install_en) to package and test the package.
 
 ### Content
@@ -64,14 +64,14 @@ yunohost app install https://github.com/author/my_app_package.git
 ```
 
 ### Enhance package
-You will find points to verify quality of your scripts:
+Here is a list of best practices for application install scripts :
 * scripts should use `sudo cp -a ../sources/. $final_path` instead of `sudo cp -a ../sources/* $final_path`;
 * install script must contain support in case of script errors to delete residuals files thanks to `set -e` and `trap`;
 * install script should use command line method instead of curl call through web install form;
 * install script should save install answers;
 * application sources should be checked with a control sum (sha256, sha1 or md5) or a PGP signature;
-* scripts had been tested on Debian Jessie as well as 32 bits, 64 bits and ARM architectures;
-* backup and restore scripts are present and functional.
+* scripts should be tested on Debian Jessie as well as 32 bits, 64 bits and ARM architectures;
+* backup and restore scripts should be present and functional.
 
 ### Package script checker
 <a class="btn btn-lg btn-default" href="https://github.com/YunoHost/package_checker">Package checker</a>
