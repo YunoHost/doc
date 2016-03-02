@@ -7,16 +7,16 @@ Le système se compose de `rebuildd` qui est un front-end pour `pbuilder`, des c
 
 ## Workflow
 
-Il existe trois repo (`unstable`, `testing` et `stable`):
-* Les paquets du repo `unstable` (aussi appelé `daily` à certains endroits) correspondent à la dernière version du git, et sont reconstruits de façon automatisée toutes les nuits.
+Il y a trois dépôts (`unstable`, `testing` et `stable`) :
+* Les paquets du repo `unstable` correspondent à la dernière version du dépôt git sur la branche `unstable`, et sont reconstruits de façon automatisée toutes les nuits s’il y a eu une modification sur la cette branche.
 
-* Le repo `testing` (aussi appelé `test` à certains endroits) permet de mettre en place une nouvelle version d’un paquet qui sera ensuite testé
+* Le dépôt `testing` permet de mettre en place une nouvelle version d’un paquet qui sera ensuite testée.
 
-* Le repo `stable` (aussi appelé `megusta` à certains endroits) contient la version de production
+* Le dépôt `stable` contient la version de production.
 
-Le but du workflow est d’éviter toute intervention manuelle (lancement d’un script, ...) sur le serveur, et de maîtriser la gestion des paquets via GitHub uniquement.
+Le but du workflow est d’éviter toute intervention manuelle (lancement d’un script, …) sur le serveur, et de maîtriser la gestion des paquets via GitHub uniquement.
 
-Ansi, les dépôts de chaque paquet yunohost possèdent 3 branches correspondant aux trois dépôts (`unstable`, `testing` et `stable`). Le serveur de build construit et déploie **automatiquement** les paquets source et binaires Debian correspondant à l’état de ces trois branches sur GitHub.
+Ansi, les dépôts de chaque paquet yunohost possèdent trois branches correspondant aux trois dépôts (`unstable`, `testing` et `stable`). Le serveur de build construit et déploie **automatiquement** les paquets source et binaires Debian correspondant à l’état de ces trois branches sur GitHub.
 
 ### Branche unstable
 
@@ -40,7 +40,7 @@ yunohost-debhelper/setup_git_alias.sh
 Ceci va configurer un nouvel alias git nommé `yunobump`, global (stocké dans `~/.gitconfig` et donc accessible depuis n’importe quel dépôt git local).
 
 <div class="alert alert-warning">
-**Attention :** Pour le moment ce helper `yunobump` ne fonctionne que sous Ubuntu ou Debian Jessie. Vous **devez** installer les paquets `git` et `git-buildpackage` pour que le helper fonctionne correctement.
+**Attention :** pour le moment ce helper `yunobump` ne fonctionne que sous Ubuntu ou Debian Jessie. Vous **devez** installer les paquets `git` et `git-buildpackage` pour que le helper fonctionne correctement.
 </div>
 
 #### Sans helper
@@ -51,7 +51,7 @@ Ceci va configurer un nouvel alias git nommé `yunobump`, global (stocké dans `
 4. Rendez-vous sur la branche `testing` ou `stable`
 5. Mergez ou cherry-pickez les commits que vous voulez intégrer à la version depuis la branche `unstable`
 6. Modifiez le `debian/changelog` en intégrant les messages de commits correspondant aux modifications que vous avez intégré (ou utilisez `git-dch` pour le faire automatiquement)
-7. Taggez la branche actuelle (`testing` ou `stable`) du numéro de version juste supérieur à l’actuel
+7. Taguez la branche actuelle (`testing` ou `stable`) du numéro de version juste supérieur à l’actuel
 8. Pushez vos modifications **ainsi que vos tags** sur le repo GitHub
 9. Retournez sur la branche `unstable`
 10. Mergez le changelog mis à jour précédemment
@@ -92,9 +92,9 @@ $ git merge testing
 $ git push origin unstable
 ```
 
-**`TODO`** politique sur les format de tag, actuellement $branch/$version pour autoriser la même version dans deux branches différentes. est-ce vraiment souhaitable ?
+**`TODO`** politique sur les formats de tag, actuellement $branch/$version pour autoriser la même version dans deux branches différentes. est-ce vraiment souhaitable ?
 
-**`TODO`** normalement à chaque push sur test ou stable, le dernier commit est un commit de changelog et il est taggué proprement. on doit pouvoir implémenter un hook git de pre-push qui empêche de pousser des trucs à moitié fait (une erreur dans git yunobump, un git tag -d, un commit à la main...)
+**`TODO`** normalement à chaque push sur test ou stable, le dernier commit est un commit de changelog et il est taggué proprement. On doit pouvoir implémenter un hook git de pre-push qui empêche de pousser des trucs à moitié fait (une erreur dans git yunobump, un git tag -d, un commit à la main...)
 
 #### Branche test et stable - faire un hotfix
 
@@ -115,7 +115,7 @@ Pour les paquets « non-YunoHost » (par exemple `python-bottle`) le paquet ne p
 
 YunoHost est en version **2** globalement, donc le numéro de la version doit, jusqu'à nouvel ordre, être sous la forme **2.x.x**.
 
-La deuxième partie s’incrémente lors d’un changement fonctionnel important : Ajout d’une nouvelle fonctionnalité, modification d’une façon de fonctionner. Pour l’instant tous les paquets se trouvent en version **2.1.x**.
+La deuxième partie s’incrémente lors d’un changement fonctionnel important : ajout d’une nouvelle fonctionnalité, modification d’une façon de fonctionner. Pour l’instant tous les paquets se trouvent en version **2.1.x**.
 
 La troisième partie s’incrémente quasi-arbitrairement, lors d’un bugfix ou d’un changement fonctionnel mineur. On trouve actuellement des paquets en **2.1.3** ou **2.1.5** par exemple.
 
