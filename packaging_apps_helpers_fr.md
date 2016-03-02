@@ -58,7 +58,6 @@ Cette commande est utile pour les applications web et vous permet d’être sûr
 
 ```bash
 sudo yunohost app initdb [ -d  <db_name> ]  [ -s <SQL_file> ] [ -p <db_pwd> ] user
-<db_user> [ -p <db_pwd> ] [ -s <SQL_file> ]
 ```
 <blockquote>
 Cette commande crée une base de donnée `db_name` et un utilisateur `user` associé à cette base, possédant les permissions nécessaires à manipuler la base de donnée.
