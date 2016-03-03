@@ -15,5 +15,6 @@ A list of French and Belgian ISPs is available on the [french page](/isp_fr).
 | Cox (USA) | Multiple | Yes | No. Only for business class customer. | No | No | Yes, as a business class customer |
 | Charter (USA) | Multiple | Yes | No. Only for business class customer. | No | No | Yes, as a business class customer |
 | DSLExtreme (USA) | Multiple | Yes | Yes | No | No | Yes, extra charge. |
+| Global Village Telecom (BR) | Multiple | Yes | No. Only for Fix IP| No | No | Yes, extra charge. |
 
 If you want to add international ISPs information, please do consider [modifying this page](/write_documentation).
