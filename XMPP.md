@@ -7,7 +7,7 @@ YunoHost provide:
 
 ## Desktop XMPP client
 
-You can connect to your XMPP server with any standard desktop XMPP client, such as [Pidgin](http://pidgin.im/), [Gajim](http://gajim.org/index.fr.html), [Jitsi](http://jitsi.org/) or [Adium](https://adium.im/).
+You can connect to your XMPP server with any standard desktop XMPP client, such as [Pidgin](http://pidgin.im/), [Gajim](http://gajim.org), [Jitsi](http://jitsi.org/) or [Adium](https://adium.im/).
 
 The credentials to give are :
 * The first part of your email address (without the @domain.tld)
