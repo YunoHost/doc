@@ -82,6 +82,7 @@
            * [Transmission](/app_transmission_fr)
            * [Radicale](/app_radicale_fr)
            * [RoundCube](/app_roundcube_fr)
+           * [Minidlna](app_minidlna_fr)
 
     * [Guide du contributeur](/contribute_fr)
         * Développement
