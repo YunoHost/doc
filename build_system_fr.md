@@ -1,22 +1,39 @@
-#Création de paquet Debian
+# Système de construction des paquets
 
-## Architecture
-Le système se compose de `rebuildd` qui est un front-end pour `pbuilder`, des chroot pbuilder pour i386, amd64, armhf et de `reprepro` pour le système de repo debian.
+## Dépôts
+
+Tout d'abord, aussi bien au niveau des dépôts que des paquets YunoHost, il faut savoir qu'il y a trois *composants* (`unstable`, `testing` et `stable`) :
+
+* `unstable` correspondent à la dernière version du dépôt git sur la branche `unstable`, et sont reconstruits de façon automatisée toutes les nuits s’il y a eu une modification sur la cette branche.
+
+* `testing` permet de mettre en place une nouvelle version d’un paquet qui sera ensuite testée.
+
+* `stable` contient la version de production.
+
+Le terme *composant* vient de la façon dont les dépôts sont configurés. Afin de se rapprocher de la façon dont les dépôts sont structurés dans Debian, l'entrée à ajouter dans les sources APT se construit ainsi :
+
+```conf
+deb http://repo.yunohost.org/debian/ nom_de_code composant [composant ...]
+```
+
+Avec *nom_de_code* la "version" de Debian installée sur l'hôte (ex. : `jessie`). Pour les composants, il est nécessaire de spécifier au moins `stable`, puis les différents intermédiaires. Par exemple, sur un système sous Debian Jessie, voici les différentes possibilités :
+
+```conf
+# composant stable
+deb http://repo.yunohost.org/debian/ jessie stable
+# composant testing
+deb http://repo.yunohost.org/debian/ jessie stable testing
+# composant unstable
+deb http://repo.yunohost.org/debian/ jessie stable testing unstable
+```
 
 ---
 
 ## Workflow
 
-Il y a trois dépôts (`unstable`, `testing` et `stable`) :
-* Les paquets du repo `unstable` correspondent à la dernière version du dépôt git sur la branche `unstable`, et sont reconstruits de façon automatisée toutes les nuits s’il y a eu une modification sur la cette branche.
-
-* Le dépôt `testing` permet de mettre en place une nouvelle version d’un paquet qui sera ensuite testée.
-
-* Le dépôt `stable` contient la version de production.
-
 Le but du workflow est d’éviter toute intervention manuelle (lancement d’un script, …) sur le serveur, et de maîtriser la gestion des paquets via GitHub uniquement.
 
-Ansi, les dépôts de chaque paquet yunohost possèdent trois branches correspondant aux trois dépôts (`unstable`, `testing` et `stable`). Le serveur de build construit et déploie **automatiquement** les paquets source et binaires Debian correspondant à l’état de ces trois branches sur GitHub.
+Ansi, les dépôts de chaque paquet yunohost possèdent trois branches correspondant aux trois composants (`unstable`, `testing` et `stable`). Le serveur de build construit et déploie **automatiquement** les paquets source et binaires Debian correspondant à l’état de ces trois branches sur GitHub.
 
 ### Branche unstable
 
@@ -107,7 +124,7 @@ Il peut arriver, de façon exceptionnelle, qu’on ait besoin de faire un hotfix
 
 #### Paquets non YunoHost
 
-Pour les paquets « non-YunoHost » (par exemple `python-bottle`) le paquet ne passe pas par le repo `unstable`, une fois les tests effectués sur ce paquet, ils devront être envoyés manuellement dans le repo `backport`.
+Pour les paquets « non-YunoHost » (par exemple `rspamd`) le paquet ne passe pas par le composant `unstable`, mais uniquement `testing` et `stable` une fois les tests effectués sur ce paquet.
 
 ---
 
@@ -125,74 +142,82 @@ Enfin, une quatrième partie est réservée dans les cas exceptionnels de bugfix
 
 ## Gestion des paquets
 
-#### Daily build
+### Outils et méthode
 
-Un cron défini pour l’utilisateur `pbuilder` se lance **tous les jours à 01:00**. Ce script va mettre à jour le repo git `packages` et ses submodules (`ssowat`, `moulinette`, `moulinette-yunohost` et `admin_js`). 
-Une fois les sources mises à jour, le script va rebuilder les paquets qui ont été mis à jour la veille.
+#### Logiciels et scripts utilisés
 
-Pour ce faire on va créer des paquets sources qui vont ensuite être mis dans le répertoire `/var/www/repo.yunohost.org/daily/incomming`.
+Les principaux logiciels utilisés pour la gestion et construction des paquets sont les suivants :
 
-Lancer ensuite l’ajout de ces fichiers source au repo, ce lancera automatiquement un job dans `rebuildd` (voir configuration du repo daily dans `/var/www/repo.yunohost.org/daily/conf/distribustion`).
+ * [reprepro](https://mirrorer.alioth.debian.org/) : gérer localement un dépôt de paquets Debian
+ * [rebuildd](https://julien.danjou.info/projects/rebuildd) : reconstruire des paquets Debian, avec un historique, une interface Web, ...
 
-Une fois les paquets buildés, ils sont ajoutés au repo `unstable`.
+Pour plus de flexibilité, *rebuildd* délègue la construction du paquet à [pbuilder](https://pbuilder.alioth.debian.org/). Ce dernier permet notamment d'avoir différents environnements, architectures, ...
 
+Enfin, pour gérer au mieux ces outils, deux scripts ont été développé, stockés dans `/usr/local/bin` :
+
+ * `daily_build` : construire un ou tous les paquets YunoHost dans le composant **unstable** uniquement
+ * `build_deb` : construire un paquet Debian depuis un répertoire, dans un composant et un nom de code donné
+
+À noter également que d'autres scripts ont été fait pour *rebuildd* et *reprepro*, afin notamment de faire le pont entre les deux. Ils se trouvent dans `/usr/local/bin/{rebuildd,reprepro}`.
+
+#### Déroulement de la construction d'un paquet
+
+Tout est déclenché par *reprepro*, configuré (voir `/var/www/repo.yunohost.org/debian/conf/distribustion`) pour exécuter le script `/usr/local/bin/repo/process-include` chaque fois qu'un paquet est inclus dans un dépôt (plus précisément, qu'un fichier `.changes` est inclus, via la commande `reprepro include`). Ce dernier va vérifier un certain nombre de chose, dont le fait qu'il s'agit bien d'un paquet source, puis va ajouter une nouvelle tâche pour *rebuildd*, afin que le paquet soit créé.
+
+Lorsque la tâche est reçue par *rebuildd*, si le paquet correspond bien à une distribution et architecture supportée (voir `/etc/rebuildd/rebuilddrc`), trois scripts seront exécutés les uns après les autres, si aucune erreur n'intervient :
+
+1. `/usr/local/bin/rebuildd/get-sources` : récupération des sources depuis le dépôt local pour le paquet et la version demandée
+2. `/usr/local/bin/rebuildd/build-binaries` : construction du paquet via *pbuilder* et l'environnement correspondant à la distribution et l'architecture
+3. `/usr/local/bin/rebuildd/upload-binaries` : ajout du paquet binaire précédemment créé à *reprepro* dans le bon dépôt et composant
+
+### Utilisation de daily_build
+
+Un cron défini pour l’utilisateur `pbuilder` se lance **tous les jours à 01:00**, qui exécute le script `daily_build`. Pour chaque paquet (`ssowat`, `yunohost` et `yunohost-admin`), le script met d'abord à jour le dépôt git correspondant depuis la branche *unstable*. Si de nouveaux commits ont été fait depuis la veille, une nouvelle version du paquet sera construit.
+
+Plus précisément, une nouvelle entrée dans le *changelog* sera d'abord ajoutée, avec une version sous la forme **YYYY.MM.DD+HHMM**. Un paquet source sera ensuite construit, avant de passer le relais au script `/usr/local/bin/repo/include-changes`. Ce dernier va exécuter les bonnes commandes pour *reprepro* afin d'inclure dans le bon dépôt et composant le paquet source fraîchement créé.
 
 #### (Re)build d’un paquet YunoHost
 
-Il est possible de relancer manuellement le build d’un paquet.
+Il est possible de relancer manuellement le build d’un paquet :
 
 ```bash
-$ daily_build -p nom_du_paquet
+$ daily_build -p <nom_du_paquet>
 ```
 
-#### Build d’un paquet non YunoHost
+Il est aussi possible d'utiliser une branche autre que *unstable* :
 
 ```bash
-$ build_deb /path/du/paquet
+$ daily_build -p <nom_du_paquet> -b <branch>
 ```
 
-**`TODO`** à décrire : besoin de bump la version pour un passage test->stable
+*Notez bien que ce script permet uniquement de construire des paquets dans le composant **unstable** !*
 
-### Passage de `daily` à `test`
+### Utilisation de build_deb
+
+Ce script permet de construire un paquet Debian quelconque, et de l'inclure dans un dépôt donné. Il est notamment utilisé pour construire les paquets `rspamd` et `rmilter`. Une fois le paquet source récupéré et extrait, il suffit de lancer la commande suivante :
 
 ```bash
-$ push-packages-test -p nom_du_paquet
+$ build_deb -c distribution -d <composant> /chemin/du/paquet/source
 ```
 
-Il est possible d’utiliser l’option `-v` pour définir manuellement la version du paquet.
+### Gestion du dépôt
 
-Le script va récuperer les sources du paquet dans `daily` puis ouvrir le changelog pour y définir la version et la liste des changements. Le build paquet sera ensuite ajouté à la liste des jobs de rebuildd qui le passera dans le repo `test`.
-
-**Attention :** le nom de version ne doit pas contenir `daily` sinon le paquet sera ajouté au repo `daily`.
-
-
-### Passage de `test` à `stable`
-
+* Lister les paquets
 ```bash
-$ push-package-stable -p nom_du_paquet
+$ reprepro -V -b /var/www/repo.yunohost.org/debian -C <composant> list <nom_de_code>
 ```
-
-Cette commande passe simplement le paquet du repo `test` à `stable`, sans rebuild.
-
-
-### Gestion du repo avec `reprepro`
 
 * Suppression d’un paquet
 ```bash
-$ reprepro -V -b /var/www/repo.yunohost.org/nom_du_repo/ remove megusta nom_du_paquet
+$ reprepro -V -b /var/www/repo.yunohost.org/debian -C <composant> remove <nom_de_code> nom_du_paquet
 ```
 
-* Ajout d’un paquet debian dans un repo
+#### Gestion des backports
+
+Pour la gestion des paquets venant du dépôt backport, il est possible de les intégrer rapidement dans le dépôt de yunohost.
+
+Pour ce faire il faut ajouter le nom du paquet dans le fichier `/var/www/repo.yunohost.org/debian/conf/<nom_de_code>-<composant>.list`, puis exécuter la commande : 
+
 ```bash
-$ reprepro -V -b /var/www/repo.yunohost.org/nom_du_repo/ includedeb megusta nom_du_paquet.deb
+$ reprepro -V -b /var/www/repo.yunohost.org/debian -C <composant> update <nom_de_code>
 ```
-
-### Gestion des backports
-Pour la gestion des paquets venant du dépôt backport il est possible de les intégrer rapidement dans le repo test de yunohost
-
-Pour ce faire il faut ajouter le nom du paquet dans le fichier `/var/www/repo.yunohost.org/test/conf/list` puis lancer la commande 
-```bash
-$ reprepro -V -b /var/www/repo.yunohost.org/test update megusta
-```
-Les paquets vont être télécharger et ajouté au repo `test` 
-
