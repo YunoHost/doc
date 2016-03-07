@@ -168,7 +168,7 @@ Lorsque la tâche est reçue par *rebuildd*, si le paquet correspond bien à une
 2. `/usr/local/bin/rebuildd/build-binaries` : construction du paquet via *pbuilder* et l'environnement correspondant à la distribution et l'architecture
 3. `/usr/local/bin/rebuildd/upload-binaries` : ajout du paquet binaire précédemment créé à *reprepro* dans le bon dépôt et composant
 
-### Utilisation de daily build
+### Utilisation de daily\_build
 
 Un cron défini pour l’utilisateur `pbuilder` se lance **tous les jours à 01:00**, qui exécute le script `daily_build`. Pour chaque paquet (`ssowat`, `yunohost` et `yunohost-admin`), le script met d'abord à jour le dépôt git correspondant depuis la branche *unstable*. Si de nouveaux commits ont été fait depuis la veille, une nouvelle version du paquet sera construit.
 
