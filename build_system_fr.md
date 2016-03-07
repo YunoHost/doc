@@ -27,8 +27,6 @@ deb http://repo.yunohost.org/debian/ jessie stable testing
 deb http://repo.yunohost.org/debian/ jessie stable testing unstable
 ```
 
----
-
 ## Workflow
 
 Le but du workflow est d’éviter toute intervention manuelle (lancement d’un script, …) sur le serveur, et de maîtriser la gestion des paquets via GitHub uniquement.
@@ -41,7 +39,7 @@ Aucun commit dans la branche unstable ne modifie le fichier `debian/changelog` c
 
 Tout commit modifiant fonctionnellement les paquets doit se faire d’abord dans cette branche  `unstable`.
 
-**`TODO`** ajouter un pre-commit hook pour éviter les erreurs ?
+**TODO** ajouter un pre-commit hook pour éviter les erreurs ?
 
 ### Branche testing et stable - workflow standard
 
@@ -50,10 +48,12 @@ Aucun commit fonctionnel n’est effectué directement dans ces branches. On ne 
 Les seules modifications spécifiques à ces dépôts sont les changements de versions (modification de `debian/changelog`, puis tag).
 
 Des outils à destinations des mainteneurs de paquets sont disponibles sur le dépôt [yunohost-debhelper](https://github.com/YunoHost/yunohost-debhelper)
+
 ```bash
 git clone https://github.com/YunoHost/yunohost-debhelper
 yunohost-debhelper/setup_git_alias.sh
 ```
+
 Ceci va configurer un nouvel alias git nommé `yunobump`, global (stocké dans `~/.gitconfig` et donc accessible depuis n’importe quel dépôt git local).
 
 <div class="alert alert-warning">
@@ -109,24 +109,23 @@ $ git merge testing
 $ git push origin unstable
 ```
 
-**`TODO`** politique sur les formats de tag, actuellement $branch/$version pour autoriser la même version dans deux branches différentes. est-ce vraiment souhaitable ?
+**TODO** politique sur les formats de tag, actuellement $branch/$version pour autoriser la même version dans deux branches différentes. est-ce vraiment souhaitable ?
 
-**`TODO`** normalement à chaque push sur test ou stable, le dernier commit est un commit de changelog et il est taggué proprement. On doit pouvoir implémenter un hook git de pre-push qui empêche de pousser des trucs à moitié fait (une erreur dans git yunobump, un git tag -d, un commit à la main...)
+**TODO** normalement à chaque push sur test ou stable, le dernier commit est un commit de changelog et il est taggué proprement. On doit pouvoir implémenter un hook git de pre-push qui empêche de pousser des trucs à moitié fait (une erreur dans git yunobump, un git tag -d, un commit à la main...)
 
 #### Branche test et stable - faire un hotfix
 
 Il peut arriver, de façon exceptionnelle, qu’on ait besoin de faire un hotfix (de sécurité par exemple) sur les paquets en `stable` ou en `test`, pour lequel le merge de la branche daily n’est pas acceptable (car trop de nouvelles fonctionnalités en développement sur daily).
-** Cette situation doit rester exceptionnelle **
+**Cette situation doit rester exceptionnelle**
 
-**`TODO`** à décrire
+**TODO** à décrire
 
-**`TODO`** dev un helper 'git yunohotfix ...' qui commit dans stable et cherry-pick tout de suite dans daily ? ou l’inverse ?
+**TODO** dev un helper 'git yunohotfix ...' qui commit dans stable et cherry-pick tout de suite dans daily ? ou l’inverse ?
 
 #### Paquets non YunoHost
 
 Pour les paquets « non-YunoHost » (par exemple `rspamd`) le paquet ne passe pas par le composant `unstable`, mais uniquement `testing` et `stable` une fois les tests effectués sur ce paquet.
 
----
 
 ## Numéros de version
 
@@ -138,7 +137,6 @@ La troisième partie s’incrémente quasi-arbitrairement, lors d’un bugfix ou
 
 Enfin, une quatrième partie est réservée dans les cas exceptionnels de bugfixes en stable. Dans ce cas, on veut faire passer un changement unique directement dans la branche stable, on préfixe donc le numéro par **-x**, **x** étant le numéro du hotfix. Donnant par exemple **2.1.3-1**.
 
----
 
 ## Gestion des paquets
 
@@ -170,7 +168,7 @@ Lorsque la tâche est reçue par *rebuildd*, si le paquet correspond bien à une
 2. `/usr/local/bin/rebuildd/build-binaries` : construction du paquet via *pbuilder* et l'environnement correspondant à la distribution et l'architecture
 3. `/usr/local/bin/rebuildd/upload-binaries` : ajout du paquet binaire précédemment créé à *reprepro* dans le bon dépôt et composant
 
-### Utilisation de daily\_build
+### Utilisation de daily build
 
 Un cron défini pour l’utilisateur `pbuilder` se lance **tous les jours à 01:00**, qui exécute le script `daily_build`. Pour chaque paquet (`ssowat`, `yunohost` et `yunohost-admin`), le script met d'abord à jour le dépôt git correspondant depuis la branche *unstable*. Si de nouveaux commits ont été fait depuis la veille, une nouvelle version du paquet sera construit.
 
@@ -202,12 +200,14 @@ $ build_deb -c distribution -d <composant> /chemin/du/paquet/source
 
 ### Gestion du dépôt
 
-* Lister les paquets
+#### Lister les paquets
+
 ```bash
 $ reprepro -V -b /var/www/repo.yunohost.org/debian -C <composant> list <nom_de_code>
 ```
 
-* Suppression d’un paquet
+#### Suppression d’un paquet
+
 ```bash
 $ reprepro -V -b /var/www/repo.yunohost.org/debian -C <composant> remove <nom_de_code> nom_du_paquet
 ```
