@@ -12,13 +12,13 @@ Tout d'abord, aussi bien au niveau des dépôts que des paquets YunoHost, il fau
 
 Le terme *composant* vient de la façon dont les dépôts sont configurés. Afin de se rapprocher de la façon dont les dépôts sont structurés dans Debian, l'entrée à ajouter dans les sources APT se construit ainsi :
 
-```
+```bash
 deb http://repo.yunohost.org/debian/ nom_de_code composant [composant ...]
 ```
 
 Avec *nom_de_code* la "version" de Debian installée sur l'hôte (ex. : `jessie`). Pour les composants, il est nécessaire de spécifier au moins `stable`, puis les différents intermédiaires. Par exemple, sur un système sous Debian Jessie, voici les différentes possibilités :
 
-```
+```bash
 # composant stable
 deb http://repo.yunohost.org/debian/ jessie stable
 # composant testing
