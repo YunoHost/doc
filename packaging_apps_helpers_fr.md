@@ -1,9 +1,20 @@
 <a class="btn btn-lg btn-default" href="packaging_apps_fr">Packaging d’application</a>
 
-### Commandes pratiques
-La CLI [moulinette](/moulinette) fournit quelques outils pour faciliter le packaging :
+## Commandes pratiques
+Il est conseillé d’utiliser les commandes pratiques.
 
-<br>
+#### Shell
+À partir de YunoHost 2.4, des [helpers en shell](https://github.com/YunoHost/yunohost/tree/unstable/data/apps/helpers.d) sont disponible.
+
+Pour pouvoir les utiliser il faut ajouter les lignes suivantes :
+```bash
+# Source app helpers
+. /usr/share/yunohost/apps/helpers
+```
+<br />
+
+#### Moulinette
+La CLI [moulinette](/moulinette) fournit quelques outils pour faciliter le packaging :
 
 ```bash
 sudo yunohost app checkport <port>
