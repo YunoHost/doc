@@ -1,10 +1,20 @@
 <a class="btn btn-lg btn-default" href="packaging_apps_en">Application packaging</a>
 
 ### Helpers
+It's recommended to use helpers.
 
+#### Shell
+From YunoHost 2.4, [shell helpers](https://github.com/YunoHost/yunohost/tree/unstable/data/apps/helpers.d) are available.
+
+To use them, you need to add following lines in the shell scripts:
+```bash
+# Source app helpers
+. /usr/share/yunohost/apps/helpers
+```
+<br />
+
+#### Moulinette
 The CLI [moulinette](/moulinette) provides a few tools to make the packager's work easier:
-
-<br>
 
 ```bash
 sudo yunohost app checkport <port>
