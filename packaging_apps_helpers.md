@@ -9,7 +9,7 @@ From YunoHost 2.4, [shell helpers](https://github.com/YunoHost/yunohost/tree/uns
 To use them, you need to add following lines in the shell scripts:
 ```bash
 # Source app helpers
-. /usr/share/yunohost/apps/helpers
+. /usr/share/yunohost/helpers
 ```
 <br />
 
