@@ -9,7 +9,7 @@ Il est conseillé d’utiliser les commandes pratiques.
 Pour pouvoir les utiliser il faut ajouter les lignes suivantes :
 ```bash
 # Source app helpers
-. /usr/share/yunohost/apps/helpers
+. /usr/share/yunohost/helpers
 ```
 <br />
 
