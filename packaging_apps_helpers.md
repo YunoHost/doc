@@ -4,7 +4,7 @@
 It's recommended to use helpers.
 
 #### Shell
-From YunoHost 2.4, [shell helpers](https://github.com/YunoHost/yunohost/tree/unstable/data/apps/helpers.d) are available.
+From YunoHost 2.4, [shell helpers](https://dev.yunohost.org/projects/yunohost/repository/yunohost/revisions/unstable/show/data/helpers.d) are available.
 
 To use them, you need to add following lines in the shell scripts:
 ```bash
