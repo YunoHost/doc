@@ -21,7 +21,7 @@ On peut donc le considérer comme une distribution, comprenant les logiciels sui
 * [Rspamd](http://rspamd.com/) : un antispam
 * [Metronome](http://www.lightwitch.org/metronome) : un serveur XMPP
 * [OpenLDAP](http://www.openldap.org/) : un système d’annuaire
-* [Bind](https://www.isc.org/downloads/bind/) : un serveur de DNS
+* [Dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html) : un serveur de DNS
 * [SSOwat](https://github.com/Kloadut/SSOwat) : un (SSO) système d’authentification web
 <!--* [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs) : un système de sauvegarde (pas encore mis en place)-->
 
