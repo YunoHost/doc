@@ -13,12 +13,12 @@ Concrètement, YunoHost **installe et configure automatiquement** quelques servi
 
 On peut donc le considérer comme une distribution, comprenant les logiciels suivant :
 
-<img src="https://yunohost.org/images/nginx.png"><img src="https://yunohost.org/images/postfix.png"><img src="https://yunohost.org/images/dovecot.png"><img src="https://yunohost.org/images/spamassassin.png"><img src="https://yunohost.org/images/XMPP_logo.png" width=80>
+<img src="https://yunohost.org/images/nginx.png"><img src="https://yunohost.org/images/postfix.png"><img src="https://yunohost.org/images/dovecot.png"><img src="https://yunohost.org/images/rspamd.png"><img src="https://yunohost.org/images/XMPP_logo.png" width=80>
 
 * [Nginx](http://nginx.org/) : un serveur web
 * [Postfix](http://www.postfix.org/) : un serveur de messagerie électronique SMTP
 * [Dovecot](http://www.dovecot.org/) : un serveur de messagerie électronique IMAP et POP3
-* [Amavis](http://amavis.org/) : un antispam
+* [Rspamd](http://rspamd.com/) : un antispam
 * [Metronome](http://www.lightwitch.org/metronome) : un serveur XMPP
 * [OpenLDAP](http://www.openldap.org/) : un système d’annuaire
 * [Bind](https://www.isc.org/downloads/bind/) : un serveur de DNS
