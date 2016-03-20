@@ -14,15 +14,14 @@ It can thus be considered as a distribution, including the following software:
 
 <img src="https://yunohost.org/images/nginx.png"><img src="https://yunohost.org/images/postfix.png"><img src="https://yunohost.org/images/dovecot.png"><img src="https://yunohost.org/images/spamassassin.png"><img src="https://yunohost.org/images/XMPP_logo.png" width=80>
 
-* [Nginx](http://nginx.org/): a web server
+* [Nginx](http://nginx.org/): a Web server
 * [Postfix](http://www.postfix.org/): an SMTP e-mail server
 * [Dovecot](http://www.dovecot.org/): an IMAP and a POP3 e-mail server
-* [Amavis](http://amavis.org/): an antispam
+* [Rspamd](https://rspamd.com/): an e-mail spam filtering
 * [Metronome](http://www.lightwitch.org/metronome): an XMPP server
-* [OpenLDAP](http://www.openldap.org/)
-* [Bind](https://www.isc.org/downloads/bind/): a DNS server
+* [OpenLDAP](http://www.openldap.org/): an LDAP server
+* [Dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html): a DNS server
 * [SSOwat](https://github.com/Kloadut/SSOwat): a Single Sign On (SSO) web authentication system
-* A backup system (not yet implemeted)
 
 ---
 
