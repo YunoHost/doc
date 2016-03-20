@@ -18,12 +18,11 @@ On peut donc le considérer comme une distribution, comprenant les logiciels sui
 * [Nginx](http://nginx.org/) : un serveur web
 * [Postfix](http://www.postfix.org/) : un serveur de messagerie électronique SMTP
 * [Dovecot](http://www.dovecot.org/) : un serveur de messagerie électronique IMAP et POP3
-* [Rspamd](http://rspamd.com/) : un antispam
+* [Rspamd](https://rspamd.com/) : un antispam
 * [Metronome](http://www.lightwitch.org/metronome) : un serveur XMPP
 * [OpenLDAP](http://www.openldap.org/) : un système d’annuaire
 * [Dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html) : un serveur de DNS
 * [SSOwat](https://github.com/Kloadut/SSOwat) : un (SSO) système d’authentification web
-<!--* [Tahoe-LAFS](https://tahoe-lafs.org/trac/tahoe-lafs) : un système de sauvegarde (pas encore mis en place)-->
 
 ---
 
