@@ -39,6 +39,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Gitit](http://gitit.net/)
 * [GitLab](http://gitlab.org/)
 * [Gollum](https://github.com/gollum/gollum)
+* [Goploader](https://github.com/Depado/goploader)
 * [Grav](http://getgrav.org/)
 * [Guacamole](http://guac-dev.org/)
 * [h5ai](http://larsjung.de/h5ai/)
