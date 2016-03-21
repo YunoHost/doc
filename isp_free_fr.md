@@ -4,13 +4,30 @@
 
 #### Accès à l’administration de la box (v5/v6)
 
+##### Freebox ≤ v5 
+
+Rendez-vous sur la [console d'administration du site de free](https://subscribe.free.fr/login/).
+
+##### Freebox v6 (Revolution / Mini4k)
+
 Allez à l’adresse : http://mafreebox.free.fr/ puis authentifiez-vous.
 
 #### Ouverture des ports
 
+[Liste des ports à ouvrir](https://yunohost.org/#/isp_box_config_fr).
+
+##### Freebox ≤ v5 
+
+Cela se passe dans la section *Ma Freebox / Configurer mon routeur*. Il faut :
+
+- Rediriger les [ports à ouvrir](https://yunohost.org/#/isp_box_config_fr) vers l'adresse locale de votre serveur YunoHost.
+- Définir une DMZ vers votre serveur YunoHost.
+
+La présence conjointe de ces deux règles permettent d'accéder à votre serveur de l'extérieur comme de l'intérieur de votre réseau local.
+
+##### Freebox v6
 [Tutoriel d’ouverture des ports sur Freebox](http://www.astuces-pratiques.fr/informatique/ouvrir-un-port-sur-la-freebox-revolution)
 
-[Liste des ports à ouvrir](https://yunohost.org/#/isp_box_config_fr).
 
 #### Déblocage de l’envoi de courriel
 
