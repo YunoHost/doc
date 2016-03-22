@@ -156,7 +156,6 @@
     var ADS_ENABLE = 'off';
     var JAPPIX_STATIC = '/jappix/';
     var HOST_BOSH = 'https://im.yunohost.org/http-bind/';
-    var DEVELOPER = 'on';
     var ANONYMOUS = 'on';
      JappixMini.launch({
         connection: {
