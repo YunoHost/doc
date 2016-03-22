@@ -12,7 +12,11 @@ Basically YunoHost **automatically installs** and configures some services aroun
 
 It can thus be considered as a distribution, including the following software:
 
-<img src="/images/nginx.png"><img src="https://yunohost.org/images/postfix.png"><img src="https://yunohost.org/images/dovecot.png"><img src="/images/rspamd.png"><img src="https://yunohost.org/images/XMPP_logo.png" width=80>
+<img src="/images/nginx.png">
+<img src="/images/postfix.png">
+<img src="/images/dovecot.png">
+<img src="/images/rspamd.png">
+<img src="/images/XMPP_logo.png" width=80>
 
 * [Nginx](http://nginx.org/): a Web server
 * [Postfix](http://www.postfix.org/): an SMTP e-mail server
@@ -33,7 +37,11 @@ The most interesting thing about this system is that **web applications benefits
 
 You may be interessed in reading the [packaging documentation](/packaging_apps) and the [SSOwat GitHub page](https://github.com/Kloadut/SSOwat) to go further.
 
-<img src="/images/roundcube.png"><img src="https://yunohost.org/images/ttrss.png"><img src="https://yunohost.org/images/wordpress.png"><img src="https://yunohost.org/images/transmission.png"><img src="https://yunohost.org/images/jappix.png">
+<img src="/images/roundcube.png">
+<img src="/images/ttrss.png">
+<img src="/images/wordpress.png">
+<img src="/images/transmission.png">
+<img src="/images/jappix.png">
 
 ---
 

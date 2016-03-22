@@ -13,7 +13,11 @@ Concrètement, YunoHost **installe et configure automatiquement** quelques servi
 
 On peut donc le considérer comme une distribution, comprenant les logiciels suivant :
 
-<img src="/images/nginx.png"><img src="https://yunohost.org/images/postfix.png"><img src="https://yunohost.org/images/dovecot.png"><img src="/images/rspamd.png"><img src="https://yunohost.org/images/XMPP_logo.png" width=80>
+<img src="/images/nginx.png">
+<img src="/images/postfix.png">
+<img src="/images/dovecot.png">
+<img src="/images/rspamd.png">
+<img src="/images/XMPP_logo.png" width=80>
 
 * [Nginx](http://nginx.org/) : un serveur web
 * [Postfix](http://www.postfix.org/) : un serveur de messagerie électronique SMTP
@@ -34,7 +38,11 @@ La chose la plus intéressante avec ce système est que **les applications web p
 
 Vous serez peut-être intéressé à la lecture de la [documentation sur le packaging](/packaging_apps_fr) et la page GitHub d’[SSOwat](https://github.com/Kloadut/SSOwat) pour aller plus loin.
 
-<img src="/images/roundcube.png"><img src="https://yunohost.org/images/ttrss.png"><img src="https://yunohost.org/images/wordpress.png"><img src="https://yunohost.org/images/transmission.png"><img src="https://yunohost.org/images/jappix.png">
+<img src="/images/roundcube.png">
+<img src="/images/ttrss.png">
+<img src="/images/wordpress.png">
+<img src="/images/transmission.png">
+<img src="/images/jappix.png">
 
 ---
 
