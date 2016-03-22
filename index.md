@@ -144,7 +144,6 @@
         scrollTop: jQuery(window).height() + 80
       }, 500);
     });
-    // $(".actions").css('opacity', 0);
 
 </script>
 
@@ -152,6 +151,7 @@
 <script type="text/javascript">
     // Jappix mini chat
     jQuery.ajaxSetup({cache: false});
+    $(".actions").css('opacity', 0);
 
     var ADS_ENABLE = 'off';
     var JAPPIX_STATIC = '/jappix/';
