@@ -1,6 +1,6 @@
 #Qu’est-ce que YunoHost ?
 
-YunoHost est un **système d’exploitation serveur** visant à simplifier l’auto-hébergement de services Internet.   
+YunoHost est un **système d’exploitation serveur** visant à simplifier l’auto-hébergement de services Internet.
 Il est basé et reste totalement compatible avec [Debian GNU/Linux](http://debian.org).
 
 <img src="/images/debian-logo.png" width=100>
@@ -13,7 +13,7 @@ Concrètement, YunoHost **installe et configure automatiquement** quelques servi
 
 On peut donc le considérer comme une distribution, comprenant les logiciels suivant :
 
-<img src="/images/nginx.png"><img src="https://yunohost.org/images/postfix.png"><img src="https://yunohost.org/images/dovecot.png"><img src="https://yunohost.org/images/rspamd.png"><img src="https://yunohost.org/images/XMPP_logo.png" width=80>
+<img src="/images/nginx.png"><img src="https://yunohost.org/images/postfix.png"><img src="https://yunohost.org/images/dovecot.png"><img src="/images/rspamd.png"><img src="https://yunohost.org/images/XMPP_logo.png" width=80>
 
 * [Nginx](http://nginx.org/) : un serveur web
 * [Postfix](http://www.postfix.org/) : un serveur de messagerie électronique SMTP
