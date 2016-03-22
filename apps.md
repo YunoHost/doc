@@ -1,4 +1,13 @@
-#Official apps &nbsp;<img src="/images/roundcube.png" width=60><img src="https://yunohost.org/images/ttrss.png" width=60><img src="https://yunohost.org/images/wordpress.png" width=60><img src="https://yunohost.org/images/transmission.png" width=60><img src="https://yunohost.org/images/jappix.png" width=60><img src="https://yunohost.org/images/logo-jirafeau.jpeg" width=60><img src="https://yunohost.org/images/Logo-wallabag-svg.svg" width=60><img src="https://yunohost.org/images/Searx_logo.svg" width=60>
+#Official apps
+
+<img src="/images/roundcube.png" width=50>
+<img src="/images/ttrss.png" width=50>
+<img src="/images/wordpress.png" width=50>
+<img src="/images/transmission.png" width=50>
+<img src="/images/jappix.png" width=50>
+<img src="/images/logo-jirafeau.jpeg" width=50>
+<img src="/images/Logo-wallabag-svg.svg" width=50>
+<img src="/images/Searx_logo.svg" width=50>
 
 <a class="btn btn-lg btn-default disabled" href="/apps_en">Official apps</a> <a class="btn btn-lg btn-default" href="/apps_in_progress_en">Apps in progress</a> <a class="btn btn-lg btn-default" href="/apps_wishlist_en">Apps wishlist</a>
 
