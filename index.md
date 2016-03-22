@@ -144,29 +144,32 @@
         scrollTop: jQuery(window).height() + 80
       }, 500);
     });
-    $(".actions").css('opacity', 0);
+    // $(".actions").css('opacity', 0);
+
+    // Jappix mini chat
     jQuery.ajaxSetup({cache: false});
-    jQuery.getScript('https://'+ location.host +'/mini/javascripts/mini.js', function() {
-        HOST_BOSH = 'https://'+ location.host +'/http-bind/';
-        JappixMini.launch({
-            connection: {
-              domain: 'anonymous.yunohost.org'
-            },
+    jQuery.getScript('https://yunohost.org/_js/jappix_mini.js', function() {
+      HOST_BOSH = 'https://yunohost.org/http-bind/';
+       JappixMini.launch({
+          connection: {
+             domain: "anonymous.yunohost.com",
+          },
 
-            application: {
-              network: {
-                autoconnect: false
-              },
+          application: {
+             network: {
+                autoconnect: false,
+             },
 
-              interface: {
-                showpane: true,
-                animate: true
-              },
+             interface: {
+                showpane: false,
+                animate: false,
+             },
 
-              groupchat: {
-                open: ['support@conference.yunohost.org']
-              }
-            }
-        });
+
+                groupchat: {
+                  open: ['support@conference.yunohost.org']
+                }
+          },
+       });
     });
 </script>
