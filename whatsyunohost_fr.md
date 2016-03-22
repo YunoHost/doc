@@ -3,7 +3,7 @@
 YunoHost est un **système d’exploitation serveur** visant à simplifier l’auto-hébergement de services Internet.   
 Il est basé et reste totalement compatible avec [Debian GNU/Linux](http://debian.org).
 
-<img src="https://yunohost.org/images/debian-logo.png" width=100>
+<img src="/images/debian-logo.png" width=100>
 
 ---
 
@@ -13,7 +13,7 @@ Concrètement, YunoHost **installe et configure automatiquement** quelques servi
 
 On peut donc le considérer comme une distribution, comprenant les logiciels suivant :
 
-<img src="https://yunohost.org/images/nginx.png"><img src="https://yunohost.org/images/postfix.png"><img src="https://yunohost.org/images/dovecot.png"><img src="https://yunohost.org/images/rspamd.png"><img src="https://yunohost.org/images/XMPP_logo.png" width=80>
+<img src="/images/nginx.png"><img src="https://yunohost.org/images/postfix.png"><img src="https://yunohost.org/images/dovecot.png"><img src="https://yunohost.org/images/rspamd.png"><img src="https://yunohost.org/images/XMPP_logo.png" width=80>
 
 * [Nginx](http://nginx.org/) : un serveur web
 * [Postfix](http://www.postfix.org/) : un serveur de messagerie électronique SMTP
@@ -34,7 +34,7 @@ La chose la plus intéressante avec ce système est que **les applications web p
 
 Vous serez peut-être intéressé à la lecture de la [documentation sur le packaging](/packaging_apps_fr) et la page GitHub d’[SSOwat](https://github.com/Kloadut/SSOwat) pour aller plus loin.
 
-<img src="https://yunohost.org/images/roundcube.png"><img src="https://yunohost.org/images/ttrss.png"><img src="https://yunohost.org/images/wordpress.png"><img src="https://yunohost.org/images/transmission.png"><img src="https://yunohost.org/images/jappix.png">
+<img src="/images/roundcube.png"><img src="https://yunohost.org/images/ttrss.png"><img src="https://yunohost.org/images/wordpress.png"><img src="https://yunohost.org/images/transmission.png"><img src="https://yunohost.org/images/jappix.png">
 
 ---
 
@@ -62,7 +62,7 @@ Tous les efforts sont faits pour simplifier le déploiement sur le plus d’appa
 ### Nom
 
 **YunoHost** vient de l’argot Internet anglais « Y U NO Host » signifiant approximativement « Pourquoi toi ne pas héberger ». Le [mème Internet](http://fr.wikipedia.org/wiki/M%C3%A8me_Internet) qui l’illustre est à peu près celui-ci :
-<div class="text-center"><img style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" src="https://yunohost.org/images/dude_yunohost.jpg"></div>
+<div class="text-center"><img style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" src="/images/dude_yunohost.jpg"></div>
 
 ---
 

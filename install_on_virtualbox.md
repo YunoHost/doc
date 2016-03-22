@@ -4,7 +4,7 @@
 
 ## Pre-requisite
 
-<img src="https://yunohost.org/images/virtualbox.png" width=200>
+<img src="/images/virtualbox.png" width=200>
 
 * An x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine.
 * The latest **YunoHost ISO image**, available here: 
@@ -16,7 +16,7 @@
 
 ## <small>1.</small> Create a new virtual machine
 
-<img src="https://yunohost.org/images/virtualbox_1.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<img src="/images/virtualbox_1.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 <br>
 
@@ -30,7 +30,7 @@
 
 Go to **Settings** > **Network**,  and your interface:
 
-<img src="https://yunohost.org/images/virtualbox_2.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<img src="/images/virtualbox_2.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 <br>
 
@@ -46,7 +46,7 @@ Go to **Settings** > **Network**,  and your interface:
 
 Start the virtual machine
 
-<img src="https://yunohost.org/images/virtualbox_2.1.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<img src="/images/virtualbox_2.1.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 <br>
 
@@ -54,7 +54,7 @@ You will have to select your ISO image `yunohostv2-latest-amd64.iso` here, then 
 
 <br>
    
-<img src="https://yunohost.org/images/virtualbox_3.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<img src="/images/virtualbox_3.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 <br>
 
@@ -68,7 +68,7 @@ You will have to select your ISO image `yunohostv2-latest-amd64.iso` here, then 
 
 After the reboot, you will see this screen:
 
-<img src="https://yunohost.org/images/virtualbox_4.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<img src="/images/virtualbox_4.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 <br>
 * The password for root user is "yunohost"

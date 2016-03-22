@@ -17,7 +17,7 @@
   width: 100%;
   text-align: center;
   text-align: center">
-<img src="https://yunohost.org/images/ynh_logo_white.png" width="100"/>
+<img src="/images/ynh_logo_white.png" width="100"/>
 </div>
 
 <br />
@@ -66,7 +66,7 @@
 <div class="boring-part">
 
 <a href="https://github.com/YunoHost" target="_blank" class="hidden-xs">
-<img style="position: fixed; top: 0; right: 0; border: 0;" src="https://yunohost.org/images/github_ribbon_grey.png" alt="Fork me on GitHub" data-canonical-src="https://yunohost.org/images/github_ribbon_grey.png">
+<img style="position: fixed; top: 0; right: 0; border: 0;" src="/images/github_ribbon_grey.png" alt="Fork me on GitHub" data-canonical-src="https://yunohost.org/images/github_ribbon_grey.png">
 </a>
 
 <h1>YunoHost <small>is a server operating system aiming to make self-hosting accessible to everyone.</small></h1>
@@ -81,7 +81,7 @@
   border: 1px solid rgba(0,0,0,0.15); 
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-<img style="width: 100%; min-width: 580px;" src="https://yunohost.org/images/home_panel.jpg" />
+<img style="width: 100%; min-width: 580px;" src="/images/home_panel.jpg" />
 </div>
 
 
@@ -114,7 +114,7 @@
   border: 1px solid rgba(0,0,0,0.15); 
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-<img style="width: 100%; min-width: 320px; max-width: 635px" src="https://yunohost.org/images/home_install.png" />
+<img style="width: 100%; min-width: 320px; max-width: 635px" src="/images/home_install.png" />
 </div>
 </div>
 </div>
@@ -137,7 +137,7 @@
   border: 1px solid rgba(0,0,0,0.15); 
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-<img style="width: 100%; min-width: 580px; max-width: 635px" src="https://yunohost.org/images/home_enjoy.jpg" />
+<img style="width: 100%; min-width: 580px; max-width: 635px" src="/images/home_enjoy.jpg" />
 </div>
 </div>
 
@@ -169,7 +169,7 @@
   border: 1px solid rgba(0,0,0,0.15); 
   box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-<img style="width: 100%; min-width: 310px; max-width: 635px" src="https://yunohost.org/images/home_manage.jpg" />
+<img style="width: 100%; min-width: 310px; max-width: 635px" src="/images/home_manage.jpg" />
 </div>
 </div>
 </div>
@@ -220,7 +220,7 @@
 
 <br />
 <br />
-<a href="http://flattr.com/thing/3164470/YunoHost-web-site" target="_blank"><img src="https://yunohost.org/images/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+<a href="http://flattr.com/thing/3164470/YunoHost-web-site" target="_blank"><img src="/images/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
 <br />
 <br />
 

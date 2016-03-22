@@ -2,8 +2,8 @@
 
 ## Prérequis
 
-<img src="https://yunohost.org/images/cubieboard2.png">
-<img src="https://yunohost.org/images/micro-sd-card.jpg">
+<img src="/images/cubieboard2.png">
+<img src="/images/micro-sd-card.jpg">
 
 * Une Cubieboard 1, 2 ou une CubieTruck
 * Une carte micro SD de capacité minimale de **4 GB** et de vitesse **class10**

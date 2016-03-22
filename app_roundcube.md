@@ -1,4 +1,4 @@
-#<img src="https://yunohost.org/images/roundcube.png">Roundcube - Webmail
+#<img src="/images/roundcube.png">Roundcube - Webmail
 
 Roundcube is a web client for email messaging also called webmail.
 

@@ -4,9 +4,9 @@
 
 ### Pre-requisite
 
-<img src="https://yunohost.org/images/laptop.png" width=200>
-<img src="https://yunohost.org/images/desktop.jpg">
-<img src="https://yunohost.org/images/nettop.jpg">
+<img src="/images/laptop.png" width=200>
+<img src="/images/desktop.jpg">
+<img src="/images/nettop.jpg">
 
 <div class="alert alert-danger">This images are based on **Debian Wheezy**. Wheezy **won't be maintained** with YunoHost 2.4.<br />
 It's **strongly adviced** to install YunoHost on **Debian Jessie** with the **[install script](/install_on_debian_en)**.</div>

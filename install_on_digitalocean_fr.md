@@ -4,7 +4,7 @@
 
 ## Prérequis
 
-<img src="https://yunohost.org/images/digitalocean.png" width=250>
+<img src="/images/digitalocean.png" width=250>
 
 * Un compte [DigitalOcean](https://www.digitalocean.com/)
 * Un conteneur **Debian 7.x ou 8.x 64 bits** avec au moins **512MB** de RAM

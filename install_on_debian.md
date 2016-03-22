@@ -4,7 +4,7 @@
 
 ### Pre-requisite
 
-<img width=100 src="https://yunohost.org/images/debian-logo.png">
+<img width=100 src="/images/debian-logo.png">
 
 An ARM box, a VPS, a dedicated server, a standard x86 computer, an old Macintosh, ...
 
@@ -12,7 +12,7 @@ An ARM box, a VPS, a dedicated server, a standard x86 computer, an old Macintosh
 * connected to the Internet
 * with a **root access** directly or via SSH
 
-<img width=650 src="https://yunohost.org/images/debian_install.png">
+<img width=650 src="/images/debian_install.png">
 
 ---
 

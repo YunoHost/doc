@@ -4,7 +4,7 @@
 #### Le webmail Rouncube
 Pour relever simplement ses [courriels](https://fr.wikipedia.org/wiki/Courrier_%C3%A9lectronique), le client webmail [Rouncube](https://roundcube.net/) est proposé dans YunoHost. Il est installable depuis l’interface d’administration :
 
-<img src="https://yunohost.org/images/mailview.jpg" width=650>
+<img src="/images/mailview.jpg" width=650>
 
 #### Client de messagerie alternatif
 Vous pouvez également configurer un [client de messagerie indépendant](email_configure_client_fr), pour par exemple relever les messages de plusieurs adresses de courriels simultanément ou [relever vos courriels depuis un smartphone](email_configure_client_fr#Android)<!-- proposer plus de clients et rendre plus verbeux -->.

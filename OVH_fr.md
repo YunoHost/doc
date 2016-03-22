@@ -4,15 +4,15 @@ Nous allons voir comment configurer le DNS avec [OVH](http://www.ovh.com).
 
 Après achat de votre nom de domaine. Sélectionnez votre nom de domaine.
 
-<img src="https://yunohost.org/images/OVH1_domain_select.png" width=400>
+<img src="/images/OVH1_domain_select.png" width=400>
 
 Allez dans **Domaine & DNS** :
 
-<img src="https://yunohost.org/images/OVH2_domain_DNS.png" width=250>
+<img src="/images/OVH2_domain_DNS.png" width=250>
 
 Puis, allez dans **Zone DNS** :
 
-<img src="https://yunohost.org/images/OVH3_zoneDNS.png" width=600>
+<img src="/images/OVH3_zoneDNS.png" width=600>
 
 <Voici la page de configuration des zones DNS
 

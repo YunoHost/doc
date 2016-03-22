@@ -1,4 +1,4 @@
-#<img src="https://yunohost.org/images/ttrss.png">Tiny Tiny RSS
+#<img src="/images/ttrss.png">Tiny Tiny RSS
 
 Tiny Tiny RSS est un lecteur de flux d’actualité utilisant les protocoles RSS et atom.
 

@@ -29,7 +29,7 @@ cd /tmp/install_script && sudo ./install_yunohostv2
 <br>
 
 <p class="text-center">
-<img src="https://yunohost.org/images/install_script.png">
+<img src="/images/install_script.png">
 </p>
 
 <br>

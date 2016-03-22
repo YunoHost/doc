@@ -24,5 +24,5 @@ If it does not work, do consider [trying it at home](/try_at_home).
 
 <p class="text-center" markdown="1">
 ***Demo server gracefully provided by    
-<a href="https://www.web4all.fr/" target="_blank"><img src="https://yunohost.org/images/web4all.png" width=100 style="vertical-align: center"></a>***
+<a href="https://www.web4all.fr/" target="_blank"><img src="/images/web4all.png" width=100 style="vertical-align: center"></a>***
 </p>

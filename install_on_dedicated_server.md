@@ -4,7 +4,7 @@
 
 ### Pre-requisite
 
-<img src="https://yunohost.org/images/vps.png" width=250>
+<img src="/images/vps.png" width=250>
 
 * A dedicated server **OR** a VPS with at least **256MB** RAM
 * A **Debian 8** or **7** OS up and running on it

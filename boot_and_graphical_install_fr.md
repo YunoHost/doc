@@ -17,7 +17,7 @@ Démarrez votre serveur avec la clé USB ou le CD-ROM inséré, et sélectionnez
 
 Vous devriez voit un écran comme ça :
 
-<img src="https://yunohost.org/images/virtualbox_3.png">
+<img src="/images/virtualbox_3.png">
 
 
 * Sélectionnez `Graphical install`
@@ -39,11 +39,11 @@ Vérifiez que votre serveur est bien branché et réessayez.</div>
 
 Une fois démarré, votre serveur devrait afficher un écran comme celui-ci :
 
-<img src="https://yunohost.org/images/virtualbox_4.png">
+<img src="/images/virtualbox_4.png">
 
 Vous pouvez procéder à la post-installation directement, ou accéder à l’adresse **IP** affichée sur cet écran depuis un navigateur web d’un autre ordinateur (généralement `http://192.168.x.x`)
 
-<img src="https://yunohost.org/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<img src="/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 Si vous rencontrez une erreur de ce type, cliquez sur « **Poursuivre quand même** » ou « **Ajouter une exception** ».    
 Cela signifie que vous devez faire confiance au certificat qui sécurise les connexions avec votre serveur.    
@@ -51,7 +51,7 @@ Comme c’est le votre, vous pouvez le valider sereinement ici :-)
 
 <br>
 
-<img src="https://yunohost.org/images/postinstall_web.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<img src="/images/postinstall_web.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 ---
 

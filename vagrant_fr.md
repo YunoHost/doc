@@ -4,7 +4,7 @@
 
 *Toutes les autres façons d’installer YunoHost sont listées **[ici](/install_fr)**.*
 
-<img src="https://yunohost.org/images/vagrant.png" width=250>
+<img src="/images/vagrant.png" width=250>
 
 **Prérequis** : Un ordinateur x86 avec VirtualBox installé et assez de RAM disponible pour lancer une petite machine virtuelle.
 

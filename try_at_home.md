@@ -4,8 +4,8 @@
 
 ### Requirements
 
-<img src="https://yunohost.org/images/laptop.png" width=200>
-<img src="https://yunohost.org/images/usb_key.png">
+<img src="/images/laptop.png" width=200>
+<img src="/images/usb_key.png">
 
 * A standard x86 computer
 * A **USB key** of at least 2GB capacity **OR** a standard **blank CD**

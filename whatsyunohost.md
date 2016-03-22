@@ -2,7 +2,7 @@
 
 YunoHost is a **server operating system** aiming to make [self-hosting](selfhosting) accessible to everyone. It is based on Debian GNU/Linux and is fully compatible with it.
 
-<img src="https://yunohost.org/images/debian-logo.png" width=100>
+<img src="/images/debian-logo.png" width=100>
 
 ---
 
@@ -12,7 +12,7 @@ Basically YunoHost **automatically installs** and configures some services aroun
 
 It can thus be considered as a distribution, including the following software:
 
-<img src="https://yunohost.org/images/nginx.png"><img src="https://yunohost.org/images/postfix.png"><img src="https://yunohost.org/images/dovecot.png"><img src="https://yunohost.org/images/rspamd.png"><img src="https://yunohost.org/images/XMPP_logo.png" width=80>
+<img src="/images/nginx.png"><img src="https://yunohost.org/images/postfix.png"><img src="https://yunohost.org/images/dovecot.png"><img src="https://yunohost.org/images/rspamd.png"><img src="https://yunohost.org/images/XMPP_logo.png" width=80>
 
 * [Nginx](http://nginx.org/): a Web server
 * [Postfix](http://www.postfix.org/): an SMTP e-mail server
@@ -33,7 +33,7 @@ The most interesting thing about this system is that **web applications benefits
 
 You may be interessed in reading the [packaging documentation](/packaging_apps) and the [SSOwat GitHub page](https://github.com/Kloadut/SSOwat) to go further.
 
-<img src="https://yunohost.org/images/roundcube.png"><img src="https://yunohost.org/images/ttrss.png"><img src="https://yunohost.org/images/wordpress.png"><img src="https://yunohost.org/images/transmission.png"><img src="https://yunohost.org/images/jappix.png">
+<img src="/images/roundcube.png"><img src="https://yunohost.org/images/ttrss.png"><img src="https://yunohost.org/images/wordpress.png"><img src="https://yunohost.org/images/transmission.png"><img src="https://yunohost.org/images/jappix.png">
 
 ---
 
@@ -61,7 +61,7 @@ Everything is done with the goal of simplifying deployment on as many different 
 ### Name
 
 **YunoHost** comes from the jargon "Y U NO Host". The [Internet meme](https://en.wikipedia.org/wiki/Internet_meme) should illustrate it:
-<div class="text-center"><img style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" src="https://yunohost.org/images/dude_yunohost.jpg"></div>
+<div class="text-center"><img style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" src="/images/dude_yunohost.jpg"></div>
 
 ---
 

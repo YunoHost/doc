@@ -1,4 +1,4 @@
-#<img src="https://yunohost.org/images/roundcube.png">Roundcube - Webmail libre
+#<img src="/images/roundcube.png">Roundcube - Webmail libre
 
 Roundcube est un client web de courrier électronique libre ou aussi appelé un webmail.
 

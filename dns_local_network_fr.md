@@ -9,11 +9,11 @@ Afin de configurer le DNS ou le fichier hosts, il vous faut connaître l’adres
 
 Vous pouvez retrouver l’adresse privée de votre serveur de différentes manières :
 - Sur l’écran de connexion de YunoHost sur le serveur lui-même :
-<img src="https://yunohost.org/images/ynh_login.png" width=600>
+<img src="/images/ynh_login.png" width=600>
 
 - Depuis l’interface d’administration de votre serveur YunoHost :
     dans État du serveur > Réseau
-<img src="https://yunohost.org/images/ynh_admin_etat_ip.png" width=900>
+<img src="/images/ynh_admin_etat_ip.png" width=900>
 
 - Ou depuis votre routeur ou votre box, selon son modèle.
 
@@ -21,11 +21,11 @@ Vous pouvez retrouver l’adresse privée de votre serveur de différentes mani�
 ### Box SFR
 Si vous ne disposez toujours pas de l’adresse IP privée de votre serveur, vous pouvez la trouver sur l’interface de votre box SFR :  
     Dans l’onglet Réseau puis Général
-<img src="https://yunohost.org/images/ip_serveur.png" width=800>
+<img src="/images/ip_serveur.png" width=800>
 
 #### Configurer le DNS de la box SFR
 Rendez-vous dans l’onglet Réseau puis DNS pour ajouter votre nom de domaine au DNS de la box.
-<img src="https://yunohost.org/images/dns_9box.png" width=800>
+<img src="/images/dns_9box.png" width=800>
 
 ## Configurer le fichier [hosts](http://fr.wikipedia.org/wiki/Hosts) de l’ordinateur client
 La modification du fichier hosts devrait être effectuée seulement si vous ne pouvez pas modifier le DNS de votre box ou de votre routeur, car le fichier hosts impactera uniquement l’ordinateur sur lequel le fichier est modifié.

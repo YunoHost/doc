@@ -22,7 +22,7 @@ If you use the [email system](email_en), and your server is unavailable, emails 
 * Reappropriation of its data and its services;
 * Decentralization, distributed networks;
 
-<img src="https://yunohost.org/images/networks.png" width=500>
+<img src="/images/networks.png" width=500>
 
 #### Others Self-hosting projects
 * [ArkOS](http://arkos.io/)

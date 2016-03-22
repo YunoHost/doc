@@ -3,7 +3,7 @@
 Now that you have the YunoHost image, you have to copy its content to an SD card.    
 The process differs regarding your operating system.
 
-<img src="https://yunohost.org/images/sdcard.jpg" width=150><img src="https://yunohost.org/images/micro-sd-card.jpg">
+<img src="/images/sdcard.jpg" width=150><img src="https://yunohost.org/images/micro-sd-card.jpg">
 
 ## On Windows
 
@@ -11,7 +11,7 @@ The process differs regarding your operating system.
 * Plug your SD card in
 * Copy the `.img` file to your SD card using Win32 Disk Imager.
 
-<img src="https://yunohost.org/images/win32diskimager.png">
+<img src="/images/win32diskimager.png">
 
 ## On GNU/Linux, BSD or Mac OS
 
@@ -42,6 +42,6 @@ The command may take a few minutes, then your SD card will be ready to use. **:-
 By default, the root partition of your SD card is very small.    
 You can resize it by using software like `resize2fs` (command-line) or `gparted` (graphical).
 
-<img src="https://yunohost.org/images/gparted.jpg" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<img src="/images/gparted.jpg" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 <p class="text-muted">Preview of the Gparted window</p>

@@ -3,8 +3,8 @@
 *Toutes les autres façons d’installer YunoHost sont listées **[ici](/install_fr)**.*
 
 ## Prérequis
-<img src="https://yunohost.org/images/Raspberry_Pi_2_Model_B_v1.1_front_angle_new.jpg" width=350>
-<img src="https://yunohost.org/images/micro-sd-card.jpg">
+<img src="/images/Raspberry_Pi_2_Model_B_v1.1_front_angle_new.jpg" width=350>
+<img src="/images/micro-sd-card.jpg">
 
 * Un Raspberry Pi 1 ou 2
 * Une carte SD de capacité minimale de **4Go** et une certification de vitesse **class10** sont recommandées

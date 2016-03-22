@@ -1,4 +1,4 @@
-#Chat, VoIP et réseau social avec <img src="https://yunohost.org/images/XMPP_logo.png" width=100>
+#Chat, VoIP et réseau social avec <img src="/images/XMPP_logo.png" width=100>
 
 Yunohost est installé avec un serveur de messagerie instantanée <abbr title="Extensible Messaging and Presence Protocol">XMPP</abbr> (metronome).
 

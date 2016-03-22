@@ -1,4 +1,4 @@
-# App packaging <img src="https://yunohost.org/images/yunohost_package.png" width=100/>
+# App packaging <img src="/images/yunohost_package.png" width=100/>
 
 This document aimed to learn you how to package an application for YunoHost.
 

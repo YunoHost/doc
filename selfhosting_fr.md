@@ -22,7 +22,7 @@ Si vous vous servez du système de [courrier électronique](/email_fr), et que v
 * Réappropriation de ces données de ces services ;
 * Décentralisation, réseaux distribués ;
 
-<img src="https://yunohost.org/images/networks.png" width=500>
+<img src="/images/networks.png" width=500>
 
 #### Autres projets d’auto-hébergement
 * [ArkOS](http://arkos.io/)

@@ -18,7 +18,7 @@ Boot up your server with the USB key or a CD-ROM inserted, and select it as **bo
 
 You should see a screen like this:
 
-<img src="https://yunohost.org/images/virtualbox_3.png">
+<img src="/images/virtualbox_3.png">
 
 
 * Select `Graphical install`
@@ -41,11 +41,11 @@ Check that your computer is physically connected and retry.</div>
 
 Once booted, your computer should display a screen like this:
 
-<img src="https://yunohost.org/images/virtualbox_4.png">
+<img src="/images/virtualbox_4.png">
 
 You can proceed to post-installation right away, or access the **IP** address shown on this screen from another computer's web browser (usually `http://192.168.x.x`)
 
-<img src="https://yunohost.org/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<img src="/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 If you encounter this kind of error, click on "**Proceed**" or "**Add an exception**".    
 This means that you have to trust the certificate which secures your server's connections.    
@@ -53,7 +53,7 @@ Since this is your server, you can bypass it serenely here :-)
 
 <br> 
 
-<img src="https://yunohost.org/images/postinstall_web.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<img src="/images/postinstall_web.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 ---
 

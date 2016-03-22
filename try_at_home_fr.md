@@ -4,8 +4,8 @@
 
 ## Prérequis
 
-<img src="https://yunohost.org/images/laptop.png" width=200>
-<img src="https://yunohost.org/images/usb_key.png">
+<img src="/images/laptop.png" width=200>
+<img src="/images/usb_key.png">
 
 * PC x86 standard
 * Une **Clé USB** avec une capacité minimale de 2GB **OU** un **CD vierge** classique

@@ -9,11 +9,11 @@ In order to configure DNS or hosts file, you must know the private IP adress of 
 
 You may retrieve your server private IP adress  through different means:
 - Using the Yunohost connection screen on the server:
-<img src="https://yunohost.org/images/ynh_login.png" width=600>
+<img src="/images/ynh_login.png" width=600>
 
 - Using Yunohost administration panel:
     Go to "State of the server" > Network
-<img src="https://yunohost.org/images/ynh_admin_etat_ip.png" width=900>
+<img src="/images/ynh_admin_etat_ip.png" width=900>
 
 - Or using your router or internet box, depending on model.
 
@@ -21,11 +21,11 @@ You may retrieve your server private IP adress  through different means:
 ### SFR Box
 If you haven't found your server private IP, you may find it using the SFR box admin panel:  
     Go to Network tab > General
-<img src="https://yunohost.org/images/ip_serveur.png" width=800>
+<img src="/images/ip_serveur.png" width=800>
 
 #### Configure SFR box's DNS
 Go to Network tab > DNS and add your domain name to the box's DNS.
-<img src="https://yunohost.org/images/dns_9box.png" width=800>
+<img src="/images/dns_9box.png" width=800>
 
 ## Configure [hosts](https://en.wikipedia.org/wiki/Host_%28Unix%29) file on client workstation
 Modifying hosts file should be done only if you cannot alter your box's DNS or router, because hosts file will only impact the workstation where the file was modified.

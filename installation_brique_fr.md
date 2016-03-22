@@ -8,7 +8,7 @@ Pour obtenir une **Brique clé-en-main** et pouvoir l’utiliser directement san
 [Site du projet *La Brique Internet*](http://labriqueinter.net)
 </div>
 
-![brique](https://yunohost.org/images/thisisinternet.png)
+![brique](/images/thisisinternet.png)
 
 ## Prérequis
 

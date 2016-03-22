@@ -36,4 +36,4 @@ We gone use the client installed on the box which is more easy way.
 #### 5. Configure the box
 Put the login of the dynamic DNS and the [public IP address](http://ip.yunohost.org/) on your box.
 
-<img src="https://yunohost.org/images/dns_dynamic-ip_box_conf.png" width=600>
+<img src="/images/dns_dynamic-ip_box_conf.png" width=600>

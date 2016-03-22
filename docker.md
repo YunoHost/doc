@@ -4,7 +4,7 @@
 
 *Find other ways to install YunoHost **[here](/install)**.*
 
-<img src="https://yunohost.org/images/docker.png" width=250>
+<img src="/images/docker.png" width=250>
 
 ---
 

@@ -24,7 +24,7 @@ Si cela ne fonctionne pas, vous pouvez [essayer chez vous](/try_at_home_fr).
 
 <p class="text-center" markdown="1">
 ***Le serveur de démo est fourni généreusement par    
-<a href="https://www.web4all.fr/" target="_blank"><img src="https://yunohost.org/images/web4all.png" width=100 style="vertical-align: center"></a>***
+<a href="https://www.web4all.fr/" target="_blank"><img src="/images/web4all.png" width=100 style="vertical-align: center"></a>***
 </p>
 
 

@@ -1,4 +1,4 @@
-# <img src="https://yunohost.org/images/transmission.png">Transmission
+# <img src="/images/transmission.png">Transmission
 
 ### What is  Transmission?
 

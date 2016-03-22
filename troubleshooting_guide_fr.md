@@ -41,7 +41,7 @@ Found 0 processes using old versions of upgraded files
 ```
 Si des processus fonctionnent avec des vielles versions de bibliothèques, checkrestart va vous dire et vous proposer une manière de les redémarrer. Il est possible que checkrestart ne trouve pas de manière de les redémarrer. Attention, il faut opérer l’opération manuellement.
 
-<img src="https://yunohost.org/images/checkstart.png" width=600>
+<img src="/images/checkstart.png" width=600>
 
 La solution la plus simple peut être de redémarrer si vous pouvez
 
@@ -70,7 +70,7 @@ sudo yunohost service status
 ```
 Exemple de résultat :
 
-<img src="https://yunohost.org/images/services_status.png" width=210>
+<img src="/images/services_status.png" width=210>
 
 Tous les services doivent être activés (enabled) et en fonctionnement (running) sauf Glances (optionnel). Si certains ne le sont pas, essayez de les redémarrer. 
 Voici une petite description de leurs fonctions respectives :
@@ -141,7 +141,7 @@ Des problèmes peuvent être causés par un manque de RAM. Pour vérifier votre 
 ```bash
 free -m
 ```
-<img src="https://yunohost.org/images/free_m.png" width=600> 
+<img src="/images/free_m.png" width=600> 
 
 5 à 10 % de mémoire libre est acceptable, mais il est bien de disposer d’une marge (en particulier pour les mises à jour). Comme la plupart du temps, vous ne pouvez pas augmenter votre quantitité de RAM, vous avez la possibilité d’utiliser une partition de SWAP (mémoire du disque dur attribuée à la RAM).
 Gardez à l’esprit que le SWAP est une mémoire 100 000 fois plus lente, vous devriez donc l’utiliser uniquement si vous n’avez pas d’autre choix.
@@ -171,7 +171,7 @@ df -h
 Cela va vous montrer l’utilisation du disque. Si une partition système est presque pleine, vous pouvez rencontrer des problèmes. Vous devez alors réaliser les opérations appropriées pour gagner de l’espace libre sur le disque ou étendre la capacité de celui-ci.
 
 
-<img src="https://yunohost.org/images/df_h.png" width=400>
+<img src="/images/df_h.png" width=400>
 
 
 ## Nginx

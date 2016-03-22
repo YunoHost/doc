@@ -18,7 +18,7 @@ You can access your emails via desktop email clients such as Mozilla Thunderbird
 
 The automatic detection tool of Thunderbird does not work with YunoHost. You will need to set it up manually. To do so, add the account information, then select SSL/TLS for IMAP and SMTP. Afterwards select 'Normal Password' for Authentication and click on 'Advanced Config'. You will need to accept the certificate exceptions for fetching mails and after you send your first mail. Remove dot before domain name.
 
-<img src="https://yunohost.org/images/thunderbird-config.png" width=900>
+<img src="/images/thunderbird-config.png" width=900>
 
 * [Manage alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
 

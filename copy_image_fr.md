@@ -2,7 +2,7 @@
 
 Maintenant que vous avez l’image ISO YunoHost, vous devez la copier sur une carte SD. Le processus est différent suivant votre système d’exploitation.
 
-<img src="https://yunohost.org/images/sdcard.jpg" width=150><img src="https://yunohost.org/images/micro-sd-card.jpg">
+<img src="/images/sdcard.jpg" width=150><img src="https://yunohost.org/images/micro-sd-card.jpg">
 
 ## Sous Windows
 
@@ -10,7 +10,7 @@ Maintenant que vous avez l’image ISO YunoHost, vous devez la copier sur une ca
 * Insérez votre carte SD.
 * Copiez le fichier `.img` sur votre carte SD en utilisant *Win32 Disk Imager*.
 
-<img src="https://yunohost.org/images/win32diskimager.png">
+<img src="/images/win32diskimager.png">
 
 ## Sous GNU/Linux, BSD ou Mac OS
 
@@ -41,6 +41,6 @@ La commande peut prendre quelques minutes, puis votre carte SD sera prête à ê
 Par défaut, la partition root installée sur votre carte SD avec la commande `dd` est très petite.   
 Vous pouvez la redimensionner avec un logiciel comme `resize2fs` (ligne de commande) ou `Gparted` (interface graphique) en étendant la partition ext4 au maximum de façon à utiliser tout l’espace non-alloué.
 
-<img src="https://yunohost.org/images/gparted.jpg" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<img src="/images/gparted.jpg" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 <p class="text-muted">Aperçu de l’interface de Gparted</p>

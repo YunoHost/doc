@@ -4,8 +4,8 @@
 
 ### Requirements
 
-<img src="https://yunohost.org/images/cubieboard2.png">
-<img src="https://yunohost.org/images/micro-sd-card.jpg">
+<img src="/images/cubieboard2.png">
+<img src="/images/micro-sd-card.jpg">
 
 * CubieBoard 1, 2 or CubieTruck.
 * A micro SD card: **4GB** capacity (or more) and **class10** speed rate are highly recommended

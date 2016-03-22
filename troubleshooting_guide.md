@@ -38,7 +38,7 @@ Found 0 processes using old versions of upgraded files
 ```
 If some process are running with old librairies versions checkrestart will tell you and propose you a way to restart them. In some cases checkrestart can't find a way to restart them.
 
-<img src="https://yunohost.org/images/checkstart.png" width=600>
+<img src="/images/checkstart.png" width=600>
 
 Easier way is to reboot if you can.
 
@@ -66,7 +66,7 @@ sudo yunohost service status
 
 Sample result:
 
-<img src="https://yunohost.org/images/services_status.png" width=210>
+<img src="/images/services_status.png" width=210>
 
 All services should be enabled and running. Except glances (optional). If some are not, try to restart them. Here is a short description of what they do:
 
@@ -135,7 +135,7 @@ Issues can be caused by a lack of RAM. To check your memory usage, do the follow
 ```bash
 free -m
 ```
-<img src="https://yunohost.org/images/free_m.png" width=600> 
+<img src="/images/free_m.png" width=600> 
 
 5-10% of free memory is fine but it's good to have margin (especially for upgrade). Since most of the time you can't upgrade your physical RAM, alternative it to use a swap file. Keep in mind that swap it's a memory 100.000 times slower, so you may to use it only if you got no other choice.
 
@@ -161,7 +161,7 @@ df -h
 ```
 This will show you disk usage, if one file-system is near to be full you could encounter issues. You should take appropriate actions to free space or extend your file-system.
 
-<img src="https://yunohost.org/images/df_h.png" width=400>
+<img src="/images/df_h.png" width=400>
 
 ## Nginx
 Nginx play a big part in YunoHost since it serve all the web applications. YunoHost have a specific way to handle its configuration since there are multiple domain and multiple applications.
