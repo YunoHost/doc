@@ -1,228 +1,119 @@
-<div class="teasing-part" style="
-  display: none;
-  background: #222;
-  color: #eee; 
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.45);
-  z-index: 1000;
-  overflow: hidden">                                                                      
+<div class="teasing-part">                                                                      
 
-<div style="
-  position: absolute;
-  top: 7%;
-  width: 100%;
-  text-align: center;
-  text-align: center">
-<img src="/images/ynh_logo_white.png" width="100"/>
-</div>
+  <div class="home-logo">
+    <img src="/images/ynh_logo_white.png" width="100"/>
+  </div>
 
-<br />
+  <div class="punchline">
+    <p>
+      <span class="yolo 1" style="color: #FF3399;">Viens chez moi, je suis hébergé chez une copine</span>
+      <span class="yolo 2" style="color: #6699FF;">Si à 50 ans t’es pas auto-hébergé, t’as raté ta vie</span>
+      <span class="yolo 3" style="color: #FF0066;">Ils s’hébergèrent et eurent beaucoup d’enfants</span>
+      <span class="yolo 4" style="color: #3366FF;">Internet, lecture et écriture</span>
+      <span class="yolo 5" style="color: #FFFFFF;">monsieur@michu.fr</span>
+      <span class="yolo 6" style="color: #CC66FF;">J’ai rien à cacher</span>
+      <span class="yolo 7" style="color: #FF6600;">How I met your server</span>
+    </p>
+    <button class="btn btn-primary btn-lg btn-block yolobtn">Pardon ?</button>
+  </div>
 
-<div style="
-  position: absolute; 
-  top: 27%; 
-  width: 100%; 
-  text-align: center; 
-  font-weight: bold; 
-  margin: 50px auto 0">
-<p style="font-size: 3em; margin-bottom: 4%">
-<span class="yolo 1" style="color: #FF3399;">Viens chez moi, je suis hébergé chez une copine</span>
-<span class="yolo 2" style="color: #6699FF;">Si à 50 ans t’es pas auto-hébergé, t’as raté ta vie</span>
-<span class="yolo 3" style="color: #FF0066;">Ils s’hébergèrent et eurent beaucoup d’enfants</span>
-<span class="yolo 4" style="color: #3366FF;">Internet, lecture et écriture</span>
-<span class="yolo 5" style="color: #FFFFFF;">monsieur@michu.fr</span>
-<span class="yolo 6" style="color: #CC66FF;">J’ai rien à cacher</span>
-<span class="yolo 7" style="color: #FF6600;">How I met your server</span>
-</p>
-<button class="btn btn-primary btn-lg btn-block yolobtn"  style="
-  min-width: 200px; 
-  width: 20%; 
-  margin: 0 auto;
-  color: #222;
-  font-size: 1.6em">Pardon ?</button>
-</div>
+  <div class="main-links hidden-xs">
+    <a href="/whatsyunohost_fr">À propos</a> <span class="colored-bar">•</span> 
+    <a href="https://forum.yunohost.org/c/announcement" target="_blank">Dernières nouvelles</a> <span class="colored-bar">•</span> 
+    <a href="/docs_fr">Documentation</a>
+  </div>
 
-
-<br />
-
-<div class="text-center hidden-xs" style="
-  width: 100%;
-  position: absolute; 
-  top: 90%;
-  text-align: center;">
-<a style="color: #777" href="/whatsyunohost_fr">À propos</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://forum.yunohost.org/c/announcement" target="_blank">Dernières nouvelles</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs_fr">Documentation</a>
-</div>
-
-</div>
+</div><!-- teasing-part -->
 
 <div class="boring-part" markdown="1">
 
-<a href="https://github.com/YunoHost" target="_blank" class="hidden-xs">
-<img style="position: fixed; top: 0; right: 0; border: 0;" src="/images/github_ribbon_grey.png" alt="Fork me on GitHub" data-canonical-src="/images/github_ribbon_grey.png">
-</a>
+  <a href="https://github.com/YunoHost" target="_blank" class="github-ribbon hidden-xs">
+    <img src="/images/github_ribbon_grey.png" alt="Fork me on GitHub">
+  </a>
 
-<h1>YunoHost <small>est un outil qui vous permet d’installer et d’utiliser facilement votre propre serveur.</small></h1>
+  <h1>YunoHost <small>est un outil qui vous permet d’installer et d’utiliser facilement votre propre serveur.</small></h1>
 
-<br />
+  <div class="home-panel">
+    <img src="/images/home_panel.jpg" />
+  </div>
 
-<div style="
-  width: 100%; 
-  max-height: 300px; 
-  overflow: hidden; 
-  border-radius: 5px; 
-  border: 1px solid rgba(0,0,0,0.15); 
-  box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+  <div class="call-to-action">
+    <a class="btn btn-primary btn-lg" href="/try_fr">Essayer</a> 
+    <a class="btn btn-success btn-lg" href="/install_fr">Installer</a>
+    <p class="text-muted"><small>YunoHost v2.2</small></p>
+  </div>
 
-<img style="width: 100%; min-width: 580px;" src="/images/home_panel.jpg" />
-</div>
+  <hr />
 
+  <div class="row cf">
+    <div class="col-md-7">
+      <h1>Installez <small>votre serveur simplement, vous avez déjà tout ce qu’il faut à la maison</small></h1>
+      <p><a href="/hardware_fr">Voir les prérequis</a></p>
+    </div>
+    <div class="col-md-4">
+      <div class="feature-pic">
+        <img src="/images/home_install.png" />
+      </div>
+    </div>
+  </div>
 
-<div class="text-center" style="
-  width: auto; 
-  min-width: 150px; 
-  margin: 40px auto 0;">
-<a class="btn btn-primary btn-lg"  style="min-width: 150px; font-size: 1.5em;margin-bottom:0.5em;" href="/try_fr">Essayer</a> <a class="btn btn-success btn-lg" style="min-width: 150px; font-size: 1.5em;margin-bottom:0.5em;" href="/install_fr">Installer</a>
-<p class="text-muted text-center"><small>YunoHost v2.2</small></p>
-</div>
+  <hr />
 
-<br />
+  <div class="row cf">
+    <div class="col-md-4">
+      <div class="feature-pic">
+        <img src="/images/home_enjoy.jpg" />
+      </div>
+    </div>
+    <div class="col-md-7 text-right">
+      <h1>Profitez <small>de vos applications web, et fabriquez votre coin d’Internet</small></h1>
+      <p><br /><a href="/apps_fr">Liste des applications disponibles</a></p>
+    </div>
+  </div>
 
-<hr />
+  <hr />
 
-<br />
-<br />
+  <div class="row cf">
+    <div class="col-md-7">
+      <h1>Gérez <small>votre serveur comme vous le voulez : via web, mobile ou ligne de commande</small></h1>
+      <p><br /><a href="/try_fr">Essayez l’interface d’administration</a></p>
+    </div>
+    <div class="col-md-4">
+      <div class="feature-pic">
+        <img src="/images/home_manage.jpg" />
+      </div>
+    </div>
+  </div>
 
-<div class="row">
-<div class="col-md-7">
-<h1>Installez <small>votre serveur simplement, vous avez déjà tout ce qu’il faut à la maison</small></h1>
-<p><br /><a href="/hardware_fr">Voir les prérequis</a></p>
-</div>
-<div class="col-md-4">
-<div style="
-  width: 100%; 
-  max-height: 290px; 
-  overflow: hidden; 
-  border-radius: 5px; 
-  border: 1px solid rgba(0,0,0,0.15); 
-  box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+  <hr />
 
-<img style="width: 100%; min-width: 320px; max-width: 635px" src="/images/home_install.png" />
-</div>
-</div>
-</div>
+  <div class="row cf">
+    <div class="col-md-4 button-list">
 
+      <a class="btn btn-lg btn-block btn-primary"href="/whatsyunohost_fr">Qu’est-ce que YunoHost ?</a>
+      <a class="btn btn-lg btn-block btn-info" href="/docs_fr">Documentation</a>
+      <a class="btn btn-lg btn-block btn-success" href="/contribute_fr">Comment contribuer</a>
+      <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org" target="_blank">Forum</a>
+      <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Dernières nouvelles</a>
+      <a class="btn btn-lg btn-block btn-danger btn-support" href="/support_fr">Support</a>
 
-<div class="clearfix"></div>
-<br />
-<br />
-<hr />
-<br />
-<br />
+    </div>
+    <div class="col-md-7 text-right">
+      <h1>Explorez <small>les possibilités de votre serveur, et apprenez pourquoi c’est important</small></h1>
+      <p><br /><a href="/docs_fr">Lire la documentation</a></p>
+    </div>
+  </div>
 
-<div class="row">
-<div class="col-md-4">
-<div style="
-  width: 100%; 
-  max-height: 290px; 
-  overflow: hidden; 
-  border-radius: 5px; 
-  border: 1px solid rgba(0,0,0,0.15); 
-  box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+  <hr />
 
-<img style="width: 100%; min-width: 580px; max-width: 635px" src="/images/home_enjoy.jpg" />
-</div>
-</div>
+  <div class="text-center">
+    <h1>Hey ! Nous sommes humains !<br /><small> Si vous avez une question, un problème, ou que vous êtes tout simplement intéressé, passez dire « Bonjour » sur notre salon de discussion en cliquant sur le bouton en bas &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+    <p class="flattr">
+      <a href="http://flattr.com/thing/3164470/YunoHost-web-site" target="_blank"><img src="/images/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+    </p>
+  </div>
 
-<div class="col-md-7 text-right">
-<h1>Profitez <small>de vos applications web, et fabriquez votre coin d’Internet</small></h1>
-<p><br /><a href="/apps_fr">Liste des applications disponibles</a></p>
-</div>
-</div>
-
-<div class="clearfix"></div>
-
-<br />
-<br />
-<hr />
-<br />
-<br />
-
-<div class="row">
-<div class="col-md-7">
-<h1>Gérez <small>votre serveur comme vous le voulez : via web, mobile ou ligne de commande</small></h1>
-<p><br /><a href="/try_fr">Essayez l’interface d’administration</a></p>
-</div>
-<div class="col-md-4">
-<div style="
-  width: 100%; 
-  max-height: 290px; 
-  overflow: hidden; 
-  border-radius: 5px; 
-  border: 1px solid rgba(0,0,0,0.15); 
-  box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
-
-<img style="width: 100%; min-width: 310px; max-width: 635px" src="/images/home_manage.jpg" />
-</div>
-</div>
-</div>
-
-
-<div class="clearfix"></div>
-<br />
-<br />
-<br />
-<hr />
-<br />
-<br />
-
-<div class="row">
-<div class="col-md-4">
-<div style="
-  width: 100%; 
-  /*max-height: 320px;*/
-  overflow: hidden; 
-  border-radius: 5px; 
-  border: 1px solid rgba(0,0,0,0.15);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
-<a class="btn btn-lg btn-block btn-primary" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/whatsyunohost_fr">Qu’est-ce que YunoHost ?</a>
-<a class="btn btn-lg btn-block btn-info" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/docs_fr">Documentation</a>
-<a class="btn btn-lg btn-block btn-success" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="/contribute_fr">Comment contribuer</a>
-<a class="btn btn-lg btn-block btn-warning" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://forum.yunohost.org" target="_blank">Forum</a>
-<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);" href="https://forum.yunohost.org/c/announcement">Dernières nouvelles</a>
-<a class="btn btn-lg btn-block btn-danger" style="box-shadow: 0 5px 15px rgba(0,0,0,0.35);background-color:#C6F;border-color:#C6F;" href="/support_fr">Support</a>
-</div>
-</div>
-
-<div class="col-md-7 text-right">
-<h1>Explorez <small>les possibilités de votre serveur, et apprenez pourquoi c’est important</small></h1>
-<p><br /><a href="/docs_fr">Lire la documentation</a></p>
-</div>
-</div>
-
-<div class="clearfix"></div>
-
-<br />
-<br />
-<hr />
-<br />
-<br />
-
-<div class="text-center">
-<h1>Hey ! Nous sommes humains !<br /><small> Si vous avez une question, un problème, ou que vous êtes tout simplement intéressé, passez dire « Bonjour » sur notre salon de discussion en cliquant sur le bouton en bas &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
-
-<br />
-<br />
-<a href="http://flattr.com/thing/3164470/YunoHost-web-site" target="_blank"><img src="/images/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
-<br />
-<br />
-
-</div>
-
-</div>
+</div><!-- boring-part -->
 
 <script type="text/javascript">
     jQuery('.teasing-part').css({
