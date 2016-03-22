@@ -18,30 +18,32 @@ L'entraide autour de YunoHost est assurée par la communauté.
 
     **[yunohost@yunohost.org](mailto:yunohost@yunohost.org)**
 
+
+<script type="text/javascript" src="/jappix/javascripts/mini.min.js"></script>
 <script type="text/javascript">
+    // Jappix mini chat
     $(".actions").css('opacity', 0);
     jQuery.ajaxSetup({cache: false});
-    jQuery.getScript('https://'+ location.host +'/mini/javascripts/mini.js', function() {
-        HOST_BOSH = 'https://'+ location.host +'/http-bind/';
-        JappixMini.launch({
-            connection: {
-              domain: 'anonymous.yunohost.org'
-            },
 
-            application: {
-              network: {
-                autoconnect: false
-              },
-
-              interface: {
-                showpane: true,
-                animate: true
-              },
-
-              groupchat: {
-                open: ['support@conference.yunohost.org']
-              }
-            }
-        });
-    });
+    var ADS_ENABLE = 'off';
+    var JAPPIX_STATIC = '/jappix/';
+    var HOST_BOSH = 'https://im.yunohost.org/http-bind/';
+    var ANONYMOUS = 'on';
+     JappixMini.launch({
+        connection: {
+           domain: "anonymous.yunohost.org",
+        },
+        application: {
+           network: {
+              autoconnect: false,
+           },
+           interface: {
+              showpane: false,
+              animate: false,
+           },
+           groupchat: {
+              open: ['support@conference.yunohost.org']
+           }
+        },
+     });
 </script>
