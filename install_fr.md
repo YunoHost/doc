@@ -15,7 +15,7 @@ Cette page liste plusieurs types d’installations, classés par catégories.
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/try_fr"><img height=150 src="https://yunohost.org/logo.png" style="vertical-align:bottom"><b><p>Serveur de démo</p></b></a>
+<a href="/try_fr"><img height=150 src="/images/logo.png" style="vertical-align:bottom"><b><p>Serveur de démo</p></b></a>
 </div>
 
 

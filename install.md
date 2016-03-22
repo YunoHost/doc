@@ -15,7 +15,7 @@ This page lists few installation guides.
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/try"><img height=150 src="https://yunohost.org/logo.png" style="vertical-align:bottom"><b><p>Demo server</p></b></a>
+<a href="/try"><img height=150 src="/images/logo.png" style="vertical-align:bottom"><b><p>Demo server</p></b></a>
 </div>
 
 
