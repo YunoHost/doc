@@ -54,7 +54,7 @@
   position: absolute; 
   top: 90%;
   text-align: center;">
-<a style="color: #777" href="/whatsyunohost_fr">À propos</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://forum.yunohost.org/c/announcement" target="_blank">Dernières nouvelles</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs_fr" target="_blank">Documentation</a>
+<a style="color: #777" href="/whatsyunohost_fr">À propos</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://forum.yunohost.org/c/announcement" target="_blank">Dernières nouvelles</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs_fr">Documentation</a>
 </div>
 
 </div>
@@ -220,9 +220,6 @@
 <br />
 <br />
 
-
-<!--<img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />-->
-<h5><small>2015 • <a href="https://twitter.com/yunohost" style="color:#999">@YunoHost on Twitter</a> • <a style="color: #999" href="/sitemap_fr">Plan du site</a> • Datalove <3</small></h5>
 </div>
 
 </div>
@@ -258,7 +255,7 @@
         scrollTop: jQuery(window).height() + 80
       }, 500);
     });
-    $(".actions").css('opacity', 0);
+    // $(".actions").css('opacity', 0);
     jQuery.ajaxSetup({cache: false});
     jQuery.getScript('https://'+ location.host +'/mini/javascripts/mini.js', function() {
         HOST_BOSH = 'https://'+ location.host +'/http-bind/';

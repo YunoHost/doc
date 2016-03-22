@@ -58,7 +58,7 @@
   position: absolute; 
   top: 90%;
   text-align: center;">
-<a style="color: #777" href="/whatsyunohost">About</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://forum.yunohost.org/c/announcement" target="_blank">Latest news</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs" target="_blank">Documentation</a>
+<a style="color: #777" href="/whatsyunohost">About</a> <span class="colored-bar">•</span> <a style="color: #777" href="https://forum.yunohost.org/c/announcement" target="_blank">Latest news</a> <span class="colored-bar">•</span> <a style="color: #777" href="/docs">Documentation</a>
 </div>
 
 </div>
@@ -224,8 +224,6 @@
 <br />
 <br />
 
-<!--<img style="width: 100px" src="http://pix.toile-libre.org/upload/original/1386012810.png" />-->
-<h5><small>2015 • <a href="https://twitter.com/yunohost" style="color:#999">@YunoHost on Twitter</a>  • <a style="color: #999" href="/sitemap">Sitemap</a> • Datalove <3</small></h5>
 </div>
 
 </div>
