@@ -150,11 +150,13 @@
 
     // Jappix mini chat
     jQuery.ajaxSetup({cache: false});
-    jQuery.getScript('https://yunohost.org/_js/jappix_mini.js', function() {
-      HOST_BOSH = 'https://yunohost.org/http-bind/';
+    jQuery.getScript("https://yunohost.org/_js/jappix_mini.js", function() {
+      var JAPPIX_MINI_CSS = 'http://simone.local/_css/jappix_mini.css';
+      var ADS_ENABLE = 'off';
+      var HOST_BOSH = 'https://yunohost.org/http-bind/';
        JappixMini.launch({
           connection: {
-             domain: "anonymous.yunohost.com",
+             domain: "anonymous.yunohost.org",
           },
 
           application: {
