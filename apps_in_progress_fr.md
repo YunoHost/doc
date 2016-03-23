@@ -65,7 +65,7 @@ function timeConverter(UNIX_timestamp) {
 }
 
 $(document).ready(function () {
-  $.getJSON('/community.json', function(app_list) {
+  $.getJSON('https://app.yunohost.org/community.json', function(app_list) {
     // Cast as array
     var app_list = $.map(app_list, function(el) { return el; });
     // Sort alpha
