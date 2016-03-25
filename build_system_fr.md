@@ -118,7 +118,20 @@ $ git push origin unstable
 Il peut arriver, de façon exceptionnelle, qu’on ait besoin de faire un hotfix (de sécurité par exemple) sur les paquets en `stable` ou en `test`, pour lequel le merge de la branche daily n’est pas acceptable (car trop de nouvelles fonctionnalités en développement sur daily).
 **Cette situation doit rester exceptionnelle**
 
-**TODO** à décrire
+Pour faire un hotfix, il faut donc travailler sur la branche `stable` directement. Un fois la correction effectuée et commitée, passer sur la branche `testing` et merger la branche `stable`; Un "commit de merge" doit etre réalisé. L'historique de la branche `testing` doit donc ressembler à : 
+```bash
+456def Merge branch 'stable' into testing
+123abc Hotfix commit message.
+```
+
+Puis passer dans la branche `unstable` et merger la branche `testing`. Un nouveau commit de merge est réalisé, l'historique de la branche unstable ressemble donc à :
+```bash
+789ghi Merge branch 'testing' into unstable
+456def Merge branch 'stable' into testing
+123abc Hotfix commit message.
+```
+
+Il faut ensuite créer une release stable suivant le processus habituel.
 
 **TODO** dev un helper 'git yunohotfix ...' qui commit dans stable et cherry-pick tout de suite dans daily ? ou l’inverse ?
 
