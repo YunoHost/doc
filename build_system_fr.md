@@ -129,13 +129,17 @@ Pour les paquets « non-YunoHost » (par exemple `rspamd`) le paquet ne passe pa
 
 ## Numéros de version
 
-YunoHost est en version **2** globalement, donc le numéro de la version doit, jusqu'à nouvel ordre, être sous la forme **2.x.x**.
+La version d'un paquet YunoHost est sous la forme : ``X.x.y[.z]``.
 
-La deuxième partie s’incrémente lors d’un changement fonctionnel important : ajout d’une nouvelle fonctionnalité, modification d’une façon de fonctionner. Pour l’instant tous les paquets se trouvent en version **2.1.x**.
+La première partie, ``X``, correspond à la version majeure de YunoHost, actuellement **2**.
 
-La troisième partie s’incrémente quasi-arbitrairement, lors d’un bugfix ou d’un changement fonctionnel mineur. On trouve actuellement des paquets en **2.1.3** ou **2.1.5** par exemple.
+La deuxième partie, ``x``, s’incrémente lors d’un changement fonctionnel important : ajout d’une nouvelle fonctionnalité, modification d’une façon de fonctionner, ... Les chiffres pairs correspondent à une version ``stable`` (ex. : **2.4.x**), tandis que les chiffres impairs à une version ``testing``.
 
-Enfin, une quatrième partie est réservée dans les cas exceptionnels de bugfixes en stable. Dans ce cas, on veut faire passer un changement unique directement dans la branche stable, on préfixe donc le numéro par **-x**, **x** étant le numéro du hotfix. Donnant par exemple **2.1.3-1**.
+La troisième partie, ``y``, s’incrémente quasi-arbitrairement, lors d’un lot de bugfixes ou d’un changement fonctionnel mineur. On peut trouver par exemple des paquets en **2.1.3** ou **2.1.5**.
+
+Enfin, une quatrième partie, ``z``, est réservée dans les cas exceptionnels de bugfix. Dans ce cas, on veut faire passer un changement unique, généralement directement dans la branche ``stable`` (voir la partie s'y rapportant). Cela donne, par exemple, **2.1.3.1**.
+
+Note : les paquets de YunoHost étants natfis pour Debian (dans le sens où nous gérons directement le *packaging* Debian avec le paquet), il n'y a pas de révision Debian dans le numéro de version (caractérisé par **-debian_revision**). Pour plus de détails sur les numéros de version, voir le [Debian Policy Manual](https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Version).
 
 
 ## Gestion des paquets
