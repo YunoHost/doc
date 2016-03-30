@@ -2,11 +2,11 @@
 
 ### Utiliser un autre support mémoire
 
-**Prérequis :** connaître les commandes d’administration Unix
+**Prérequis :** connaître les commandes d’administration Unix
 
 Le répertoire des donnés d’Owncloud (contenant les fichiers) sont dans `/home/yunohost.app/owncloud/data`
 
-Il est possible de déplacer ces donnés sur autre support mémoire.
+Il est possible de déplacer ces données sur autre support mémoire.
 
 Pour cela, il faut spécifier le nouveau chemin dans le fichier `/var/www/owncloud/config` à la ligne `datadirectory`
 

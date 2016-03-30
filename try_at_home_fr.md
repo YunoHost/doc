@@ -9,13 +9,13 @@
 
 * PC x86 standard
 * Une **Clé USB** avec une capacité minimale de 2GB **OU** un **CD vierge** classique
-* La dernière **image ISO live YunoHost**, disponible ici : 
- * **[Torrent](http://build.yunohost.org/yunohost-live.iso.torrent)** : partagez au moins jusqu’au un ratio de 1 pour assurer la pérennité du torrent
+* La dernière **image ISO live YunoHost**, disponible ici : 
+ * **[Torrent](http://build.yunohost.org/yunohost-live.iso.torrent)** : partagez au moins jusqu’au un ratio de 1 pour assurer la pérennité du torrent
  * **[Téléchargement direct](http://build.yunohost.org/yunohost-live.iso)**
 
 <br>
 <div class="alert alert-warning" markdown="1">
-<strong>Note :</strong>  Vous devez connecter votre ordinateur directement en Ethernet à votre routeur principal pour que la configuration réseau s’effectue automatiquement.
+<strong>Note :</strong> Vous devez connecter votre ordinateur directement en Ethernet à votre routeur principal pour que la configuration réseau s’effectue automatiquement.
 </div>
 
 ---

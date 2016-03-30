@@ -56,7 +56,7 @@ Une <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/contrib">mailing-
 <span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp; Traduisez
 </div>
 <div class="col col-md-8" markdown="1">
-Participez en rendant les interfaces de YunoHost disponibles dans votre langue. <a href="https://translate.yunohost.org/" target="_blank">Lancez-vous</a> !
+Participez en rendant les interfaces de YunoHost disponibles dans votre langue. <a href="https://translate.yunohost.org/" target="_blank">Lancez-vous</a> !
 </div>
 </div>
 
@@ -78,7 +78,7 @@ Améliorez cette documentation en [proposant de nouvelles pages](/write_document
 <span class="glyphicon glyphicon-gift"></span>&nbsp;&nbsp; Packagez
 </div>
 <div class="col col-md-8" markdown="1">
-Étendez les capacités de YunoHost en [packageant de nouveaux services et applications web](/packaging_apps_fr). Jetez un oeil à [ce qui a déjà été fait](/apps_fr) !
+Étendez les capacités de YunoHost en [packageant de nouveaux services et applications web](/packaging_apps_fr). Jetez un œil à [ce qui a déjà été fait](/apps_fr) !
 <br>
 Une <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/apps">mailing-list</a> est également disponible.
 </div>
@@ -91,7 +91,7 @@ Une <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/apps">mailing-lis
 <span class="glyphicon glyphicon glyphicon-upload"></span>&nbsp;&nbsp; Seedez
 </div>
 <div class="col col-md-8" markdown="1">
-Seedez (partagez) avec le système de Torrent les images de YunoHost : [live](http://build.yunohost.org/yunohost-live.iso.torrent), [32 bits](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent) et [64 bits](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent).
+Seedez (partagez) avec le système de Torrent les images de YunoHost : [live](http://build.yunohost.org/yunohost-live.iso.torrent), [32 bits](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent) et [64 bits](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent).
 </div>
 </div>
 

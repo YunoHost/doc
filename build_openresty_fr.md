@@ -1,6 +1,6 @@
 # Builder Openresty
 
-**Note:** Vu que nginx-extras ne fonctionne pas sur Raspbian, il faut compiler un équivalent, ici [Openresty](http://openresty.org).
+**Note :** Vu que nginx-extras ne fonctionne pas sur Raspbian, il faut compiler un équivalent, ici [Openresty](http://openresty.org).
 
 ```bash
 wget http://openresty.org/download/ngx_openresty-1.4.3.3.tar.gz
@@ -37,7 +37,7 @@ cd ngx_openresty-1.4.3.3
 --with-http_stub_status_module \
 --with-http_secure_link_module \
 --with-http_sub_module 
-# Durée : ~15 minutes
+# Durée : ~15 minutes
 
 make # ~15 minutes supplémentaires
 

@@ -15,10 +15,10 @@ sudo dnf install docker vagrant vagrant-libvirt
 
 #### Télécharger `ynh-dev`
 <div class="alert alert-warning">
-<b>Attention :</b> Cette partie est en cours de rédaction. La ligne de commande `ynh-dev` vient juste d’être créée il est possible qu’il y ait des manques.
+<b>Attention :</b> Cette partie est en cours de rédaction. La ligne de commande `ynh-dev` vient juste d’être créée il est possible qu’il y ait des manques.
 </div>
 <div class="alert alert-warning">
-<b>Note :</b> `ynh-dev` fonctionne avec apt-get. Debian et linux mint ont été testé. Ubuntu fonctionne sans doute.
+<b>Note :</b> `ynh-dev` fonctionne avec apt-get. Debian et Linux Mint ont été testés. Ubuntu fonctionne sans doute.
 </div>
 
 Une ligne de commande `ynh-dev` a été créée afin de simplifier la gestion de votre environnement de développement.
@@ -45,23 +45,23 @@ Dockerfile  LICENSE  README.md	SSOwat	apps  backup  moulinette  ynh-dev  yunohos
 ```
 
 ##### Mettre à jour un container
-Si la vm n’est pas à jour lancez un `ynh-dev upgrade` :
+Si la vm n’est pas à jour lancez un `ynh-dev upgrade` :
 ```bash
 root@yunohost:/yunohost/# ./ynh-dev upgrade
 ```
 
 ##### Déployer les sources présentes dans votre environnement
-Pour déployer les sources se trouvant dans votre environnement de développement faites :
+Pour déployer les sources se trouvant dans votre environnement de développement faites :
 ```bash
 root@yunohost:/yunohost/# ./ynh-dev deploy
 ```
 
 <div class="alert alert-warning">
-<b>Attention :</b> pour yunohost-admin vous devez avoir compilé le js avec gulp au préalable
+<b>Attention :</b> pour yunohost-admin vous devez avoir compilé le js avec gulp au préalable
 </div>
 
 <div class="alert alert-warning">
-<b>Note :</b> vous pouvez sélectionner les paquets à déployer exemple : `./ynh-dev deploy yunohost yunohost-admin`
+<b>Note :</b> vous pouvez sélectionner les paquets à déployer exemple : `./ynh-dev deploy yunohost yunohost-admin`
 </div>
 
 ##### Lancer la postinstall
@@ -75,13 +75,13 @@ root@yunohost:/yunohost/# yunohost tools postinstall
 ```
 
 ##### Récupérer l’IP de la vm et paramétrer son `/etc/hosts`
-si vous ne connaissez pas l’IP de votre vm :
+si vous ne connaissez pas l’IP de votre vm :
 ```bash
 root@yunohost:/yunohost/# ./ynh-dev ip
 172.17.0.1
 ```
 
-Pour tester dans votre navigateur vous pouvez modifier votre fichier `/etc/hosts` afin de faire pointer votre domaine sur la bonne adresse IP. Par exemple en y ajoutant une ligne semblable à celle-ci :
+Pour tester dans votre navigateur vous pouvez modifier votre fichier `/etc/hosts` afin de faire pointer votre domaine sur la bonne adresse IP. Par exemple en y ajoutant une ligne semblable à celle-ci :
 ```bash
 172.17.0.1   exemple.local
 ```
@@ -91,4 +91,4 @@ Pour tester dans votre navigateur vous pouvez modifier votre fichier `/etc/hosts
 root@yunohost:/yunohost/# ./ynh-dev watch
 ```
 
-Astuce : dans le cas de modification sur yunohost-admin, cette commande est très pratique couplée avec un `gulp watch` sur la machine hôte.
+Astuce : dans le cas de modification sur yunohost-admin, cette commande est très pratique couplée avec un `gulp watch` sur la machine hôte.

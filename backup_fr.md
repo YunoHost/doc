@@ -1,6 +1,6 @@
 # Les sauvegardes
 
-**Prérequis :** vérifier que le dossier `archives` existe bien dans le dossier `/home/yunohost.backup/`
+**Prérequis :** vérifier que le dossier `archives` existe bien dans le dossier `/home/yunohost.backup/`
 sinon le créer via un 
 ```bash
 sudo mkdir /home/yunohost.backup/archives

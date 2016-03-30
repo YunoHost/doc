@@ -17,7 +17,7 @@
 
 <a class="btn btn-lg btn-default" href="/plug_and_boot_fr">Brancher & démarrer</a>
 
-* Se connecter en [SSH](ssh_fr) : **root@exemple.tld/adresse_ip** avec le mot de passe : **1234**.
+* Se connecter en [SSH](ssh_fr) : **root@exemple.tld/adresse_ip** avec le mot de passe : **1234**.
 
 <a class="btn btn-lg btn-default" href="/install_manually_fr">Installation de YunoHost</a>
 

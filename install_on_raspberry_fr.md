@@ -7,11 +7,11 @@
 <img src="/images/micro-sd-card.jpg">
 
 * Un Raspberry Pi 1 ou 2
-* Une carte SD de capacité minimale de **4Go** et une certification de vitesse **class10** sont recommandées
+* Une carte SD de capacité minimale de **4 Go** et une certification de vitesse **class10** sont recommandées
 * Un autre ordinateur pour parcourir ce guide et accéder à votre Raspberry Pi
 * Un écran et un clavier sont recommandés pour pouvoir contrôler votre Raspberry Pi si un problème apparaît
 * Un [fournisseur d’accès correct](/isp_fr), de préférence avec une bonne vitesse d’upload
-* L’**image YunoHost pour Raspberry Pi**, disponible ici (à **dézipper**) :
+* L’**image YunoHost pour Raspberry Pi**, disponible ici (à **dézipper**) :
 
     [Image wheezy pour Raspberry Pi 1 et 2 créée le 4 juin 2015](http://build.yunohost.org/yunohost4rpi2.img.7z)
 
@@ -29,10 +29,10 @@
 
 ### Recommandé après la post-installation
 
-* Se connecter en [ssh](ssh_fr) : **root@IP.DU.RPI** (mot de passe : **yunohost**)
-* Changer le mot de passe root : ```passwd root```
+* Se connecter en [ssh](ssh_fr) : **root@IP.DU.RPI** (mot de passe : **yunohost**)
+* Changer le mot de passe root : ```passwd root```
 
-* Mettre à jour le système d’exploitation : ```apt-get update && apt-get dist-upgrade && rpi-update```
+* Mettre à jour le système d’exploitation : ```apt-get update && apt-get dist-upgrade && rpi-update```
 
 ---
 

@@ -1,12 +1,12 @@
-# DNS : système de nom de domaine
+# DNS : système de nom de domaine
 
 La configuration des DNS est une étape cruciale pour que votre serveur soit accessible. En effet si vos DNS sont mal configurés, il y a toutes les chances pour que vous ayez des problèmes de connexion à votre serveur via votre nom de domaine.
 
 *Bien que cette page de documentation paraisse longue et complexe, elle demeure très importante si vous souhaitez comprendre correctement les implications du nommage sur Internet via les noms de domaine, qui sont nécessaires au fonctionnement de votre serveur YunoHost.*
 
-### Qu’est-ce que c’est ?
+### Qu’est-ce que c’est ?
 
-**N’hésitez à pas regarder la très bonne conférence de Stéphane Bortzmeyer :     
+**N’hésitez à pas regarder la très bonne conférence de Stéphane Bortzmeyer :     
 http://www.iletaitunefoisinternet.fr/dns-bortzmeyer/**
 
 DNS signifie « Domain Name Server » en anglais, et est souvent employé pour désigner la configuration de vos noms de domaine. Vos noms de domaines doivent en effet pointer vers quelque chose (en général une adresse IP).
@@ -23,7 +23,7 @@ Il existe également des **types** d’enregistrement DNS, ce qui veut dire qu�
 **Par exemple** : `www.yunohost.org` renvoie vers `yunohost.org`
 
 
-### Comment (bien) faire la configuration ?
+### Comment (bien) faire la configuration ?
 
 Plusieurs choix s’offrent à vous. Notez que vous pouvez cumuler ces solutions si vous possédez plusieurs domaines : par exemple vous pouvez avoir `mon-serveur.nohost.me` en utilisant la solution **1.**, et `mon-serveur.org` en utilisant la solution **2.**, redirigeant vers le même serveur YunoHost.
 
@@ -31,7 +31,7 @@ Plusieurs choix s’offrent à vous. Notez que vous pouvez cumuler ces solutions
 **C’est la méthode recommandée si vous débutez.**
 
 2. Vous pouvez utiliser le service de DNS de votre **registar** (Gandi, OVH, BookMyName ou autre) pour configurer vos noms de domaine. Voici la [configuration DNS standard](/dns_config_fr).    
-Vous pouvez également consulter les documentations spécifiques à ces différents [bureaux d’enregistrement](/registar_fr) : [Gandi](http://gandi.net), [OVH](/OVH_fr) ou [BookMyName](http://bookmyname.com).
+Vous pouvez également consulter les documentations spécifiques à ces différents [bureaux d’enregistrement](/registar_fr) : [Gandi](http://gandi.net), [OVH](/OVH_fr) ou [BookMyName](http://bookmyname.com).
 
 **Attention** : Si vous choisissez ce mode de fonctionnement, vous aurez plus de flexibilité, mais rien ne sera automatique. Par exemple si vous souhaitez utiliser `webmail.mon-serveur.org`, vous devrez l’ajouter manuellement chez votre registar.
 

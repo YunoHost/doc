@@ -2,8 +2,8 @@
 Ce tutoriel a pour but d’aider à la mise en place d’une configuration Nginx pour le packaging d’application.
 
 #### Configuration Nginx
-La configuration doit être mise dans `conf/nginx.conf`. Il s’agira d’utiliser **FastCGI** ou un **proxy_pass** suivant l’application :
-* **FastCGI** est utilisé dans les applications PHP :
+La configuration doit être mise dans `conf/nginx.conf`. Il s’agira d’utiliser **FastCGI** ou un **proxy_pass** suivant l’application :
+* **FastCGI** est utilisé dans les applications PHP :
 ```bash
 location YNH_EXAMPLE_PATH {
   alias YNH_WWW_PATH ;
@@ -38,13 +38,13 @@ location YNH_EXAMPLE_PATH/ {
 ```
 
 #### Script d’installation
-Il s’agit de modifier le fichier `conf/nginx.conf` avec les paramètres de l’application. Pour cela, on utilise des termes génériques `YNH_EXAMPLE_PATH` que l’on modifie par des valeurs souhaités avec la commande `sed` :
+Il s’agit de modifier le fichier `conf/nginx.conf` avec les paramètres de l’application. Pour cela, on utilise des termes génériques `YNH_EXAMPLE_PATH` que l’on modifie par des valeurs souhaitées avec la commande `sed` :
 ```bash
 sed -i "s@YNH_EXAMPLE_PATH@$path@g" ../conf/nginx.conf
 sed -i "s@YNH_EXAMPLE_PORT@$port@g" ../conf/nginx.conf
 sed -i "s@YNH_EXEMPLE_DOMAIN@$domain@g" ../conf/nginx.conf
 ```
-Il faut ensuite déplacer ce fichier de configuration dans la configuration de Nginx, puis de recharger la configuration de Nginx :
+Il faut ensuite déplacer ce fichier de configuration dans la configuration de Nginx, puis de recharger la configuration de Nginx :
 ```bash
 cp ../conf/nginx.conf /etc/nginx/conf.d/$domain.d/$app.conf
 sudo service nginx reload
@@ -52,7 +52,7 @@ sudo service nginx reload
 Si Nginx ne redémarre pas, il se peut que le fichier de configuration ne soit pas correct.
 
 #### Script de suppression
-Il s’agit de supprimer la configuration Nginx pour cette application, puis de recharger la configuration de Nginx :
+Il s’agit de supprimer la configuration Nginx pour cette application, puis de recharger la configuration de Nginx :
 ```bash
 rm -f /etc/nginx/conf.d/$domain.d/$app.conf
 sudo service nginx reload

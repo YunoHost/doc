@@ -1,6 +1,6 @@
 #Régénérer un certificat
 
-Si vous désirez générer à nouveau — et non renouveler — un certificat pour un domain, suivre les étapes suivantes :
+Si vous désirez générer à nouveau — et non renouveler — un certificat pour un domain, suivre les étapes suivantes :
 
 (remplacer **example.org** avec votre domaine)
 
@@ -24,7 +24,7 @@ rm $finalpath/{crt.pem,key.pem,openssl.cnf}
 cp $ssldir/openssl.cnf $finalpath/
 
 # Changement de la configuration yunohost.org avec votre domaine
-# NE PAS OUBLIER DE REMPLACER example.org !
+# NE PAS OUBLIER DE REMPLACER example.org !
 sed -i "s/yunohost.org/example.org/g" $finalpath/openssl.cnf
 
 # Generation du certificat et de la clé

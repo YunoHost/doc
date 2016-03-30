@@ -16,7 +16,7 @@ Maintenant que vous avez l’image ISO YunoHost, vous devez la copier sur une ca
 
 * Ouvrez un terminal.
 * Insérez votre carte SD.
-* Identifiez votre matériel en tapant :
+* Identifiez votre matériel en tapant :
 
 ```bash
 sudo fdisk -l
@@ -26,7 +26,7 @@ sudo fdisk -l
 
 Attention à ne pas mettre le chiffre `N` car ça créera une [carte SD non fonctionnelle](https://raspberrypi.stackexchange.com/questions/11880/sd-card-doesnt-works-after-dd).
 
-* Copiez l’image en tapant :
+* Copiez l’image en tapant :
 
 ```bash
 sudo dd if=/chemin/vers/votre/.img of=/nom/du/matériel
@@ -39,7 +39,7 @@ La commande peut prendre quelques minutes, puis votre carte SD sera prête à ê
 ## Étendre la partition root <small>(facultatif, mais conseillé)</small>
 
 Par défaut, la partition root installée sur votre carte SD avec la commande `dd` est très petite.   
-Vous pouvez la redimensionner avec un logiciel comme `resize2fs` (ligne de commande) ou `Gparted` (interface graphique) en étendant la partition ext4 au maximum de façon à utiliser tout l’espace non-alloué.
+Vous pouvez la redimensionner avec un logiciel comme `resize2fs` (ligne de commande) ou `Gparted` (interface graphique) en étendant la partition ext4 au maximum de façon à utiliser tout l’espace non alloué.
 
 <img src="/images/gparted.jpg" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 

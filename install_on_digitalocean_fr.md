@@ -10,7 +10,7 @@
 * Un conteneur **Debian 7.x ou 8.x 64 bits** avec au moins **512MB** de RAM
 
     <div class="alert alert-warning">
-    <b>Attention :</b> l’utilisateur `root` doit posséder un mot de passe. Exécutez `sudo passwd root` pour être sûr qu’il est configuré correctement.
+    <b>Attention :</b> l’utilisateur `root` doit posséder un mot de passe. Exécutez `sudo passwd root` pour être sûr qu’il est configuré correctement.
     </div>
 
 ---

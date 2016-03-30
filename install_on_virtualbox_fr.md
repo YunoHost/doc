@@ -7,8 +7,8 @@
 <img src="/images/virtualbox.png" width=200>
 
 * Un ordinateur x86 avec VirtualBox installé et assez de RAM disponible pour lancer une petite machine virtuelle.
-* La dernière **image ISO YunoHost**, disponible ici :
-  * **Torrent** ([i386](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent), [amd64](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent)): partagez au moins jusqu’à un ratio de 1 pour assurer la pérennité du torrent
+* La dernière **image ISO YunoHost**, disponible ici :
+  * **Torrent** ([i386](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent), [amd64](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent)) : partagez au moins jusqu’à un ratio de 1 pour assurer la pérennité du torrent
   * **Téléchargement direct** ([i386](http://build.yunohost.org/yunohostv2-latest-i386.iso), [amd64](http://build.yunohost.org/yunohostv2-latest-amd64.iso))
 
 ---
@@ -27,7 +27,7 @@
 
 ## <small>2.</small> Modifier la configuration réseau
 
-Allez dans **Réglages** > **Réseau** :
+Allez dans **Réglages** > **Réseau** :
 
 <img src="/images/virtualbox_2.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
@@ -35,7 +35,7 @@ Allez dans **Réglages** > **Réseau** :
 
 * Sélectionnez `Accès par pont`
 
-* Choisissez votre interface selon son nom :
+* Choisissez votre interface selon son nom :
 
     **wlan0** si vous êtes connecté sans-fil, **eth0** sinon.
 
@@ -65,13 +65,13 @@ Vous devez sélectionner ici l’image ISO `yunohostv2-latest-amd64.iso`, puis v
 
 ## <small>4.</small> Effectuer la post-installation
 
-Après le redémarrage, vous devriez voir cet écran :
+Après le redémarrage, vous devriez voir cet écran :
 
 <img src="/images/virtualbox_4.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 <br>
 
-* Vous pouvez obtenir plus d’information sur la post-installation ici : **[yunohost.org/postinstall_fr](/postinstall_fr)**
+* Vous pouvez obtenir plus d’information sur la post-installation ici : **[yunohost.org/postinstall_fr](/postinstall_fr)**
 * Le mode de passe root est "yunohost"
 
 ---

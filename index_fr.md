@@ -75,7 +75,7 @@
 
   <div class="row cf">
     <div class="col-md-7">
-      <h1>Gérez <small>votre serveur comme vous le voulez : via web, mobile ou ligne de commande</small></h1>
+      <h1>Gérez <small>votre serveur comme vous le voulez : via web, mobile ou ligne de commande</small></h1>
       <p><br /><a href="/try_fr">Essayez l’interface d’administration</a></p>
     </div>
     <div class="col-md-4">
@@ -107,7 +107,7 @@
   <hr />
 
   <div class="text-center">
-    <h1>Hey ! Nous sommes humains !<br /><small> Si vous avez une question, un problème, ou que vous êtes tout simplement intéressé, passez dire « Bonjour » sur notre salon de discussion en cliquant sur le bouton en bas &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+    <h1>Hey ! Nous sommes humains !<br /><small> Si vous avez une question, un problème, ou que vous êtes tout simplement intéressé, passez dire « Bonjour » sur notre salon de discussion en cliquant sur le bouton en bas &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
     <p class="flattr">
       <a href="http://flattr.com/thing/3164470/YunoHost-web-site" target="_blank"><img src="/images/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
     </p>

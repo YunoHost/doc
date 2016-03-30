@@ -5,9 +5,9 @@
 [Administration web](admin_fr)
 
 #### En ligne de commande
-Un fichier de log est un simple fichier texte utilisé par certains programmes du système (et notamment les services) pour inscrire l’historique de leur fonctionnement. Consulter un fichier de log consiste donc à afficher son contenu pour lire les messages qui s’y trouve.
+Un fichier de log est un simple fichier texte utilisé par certains programmes du système (et notamment les services) pour inscrire l’historique de leur fonctionnement. Consulter un fichier de log consiste donc à afficher son contenu pour lire les messages qui s’y trouvent.
 
-Pour accéder aux fichiers de log, la méthode traditionnelle consiste à [se connecter au serveur en ligne de commande via SSH](ssh_fr). Un fois connecté, utilisez la commande `tail` qui affiche uniquement la fin du fichier, car les fichiers de log sont très long et qu’uniquement l’historique récent nous intéresse.
+Pour accéder aux fichiers de log, la méthode traditionnelle consiste à [se connecter au serveur en ligne de commande via SSH](ssh_fr). Une fois connecté, utilisez la commande `tail` qui affiche uniquement la fin du fichier, car les fichiers de log sont très longs et qu’uniquement l’historique récent nous intéresse.
 
 ### Services
 #### Courriel

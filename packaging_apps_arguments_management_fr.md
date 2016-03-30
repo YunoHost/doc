@@ -20,7 +20,7 @@ sudo yunohost app setting $app domain -v $domain
 ```
 Elle est généralement utilisée dans le script d’installation.
 
-Ensuite, le script peux récupérer les arguments sauvegardés avec cette commande :
+Ensuite, le script peut récupérer les arguments sauvegardés avec cette commande :
 ```bash
 domain=$(sudo yunohost app setting $app domain)
 ```

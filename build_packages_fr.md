@@ -6,24 +6,24 @@ Les paquets YunoHost se trouvent sur la machine yunohost.org dans le répertoire
 
 Le système de build est basé sur debuild et pbuilder. Le fonctionnement de cet ensemble est de générer un chroot qui va embarquer l’ensemble des dépendances et des outils de build Debian.
 
-La configuration de cette environnement est défini dans le fichier `/etc/pbuilder/megusta-amd64` et permet de construire les paquets sans architecture spécifique. 
+La configuration de cet environnement est définie dans le fichier `/etc/pbuilder/megusta-amd64` et permet de construire les paquets sans architecture spécifique. 
 
 <div class="alert alert-info">
-**Attention :** il n’est pas conseillé d’être en root pour exécuter les actions suivantes (sauf celles précédées de `sudo`)
+**Attention :** il n’est pas conseillé d’être en root pour exécuter les actions suivantes (sauf celles précédées de `sudo`)
 </div>
 
 ## Mise à jour d’un paquet
 
 <br>
 #### Paquets avec sources externes
-Pour les paquets basés sur des sources GitHub (moulinette, moulinette-yunohost, ssowat, et yunohost-admin) il faut d’abord récupérer les dernière modifications :
+Pour les paquets basés sur des sources GitHub (moulinette, moulinette-yunohost, ssowat, et yunohost-admin), il faut d’abord récupérer les dernières modifications :
 
 ```bash
 [yunohost@yunohost] ~/packages.git/moulinette $ cd src
 [yunohost@yunohost] ~/packages.git/moulinette/src $ git pull
 ```
 
-Puis lancer la commande de build du paquet (**attention : vous devez la lancer à la racine du répertoire du paquet**)
+Puis lancer la commande de build du paquet (**attention : vous devez la lancer à la racine du répertoire du paquet**)
 
 ```bash
 [yunohost@yunohost] ~/packages.git/moulinette/src $ cd ..
@@ -33,7 +33,7 @@ Puis lancer la commande de build du paquet (**attention : vous devez la lancer �
 ---
 
 #### Paquets de configuration
-Pour mettre à jour un paquet yunohost-config-* il faut se rendre dans le répertoire, faire les modifications voulues sur le paquet (typiquement modifier un script `debian/postinst`), puis lancer la même commande que pour les paquets avec source : 
+Pour mettre à jour un paquet yunohost-config-* il faut se rendre dans le répertoire, faire les modifications voulues sur le paquet (typiquement modifier un script `debian/postinst`), puis lancer la même commande que pour les paquets avec source : 
 
 ```bash
 [yunohost@yunohost] ~/packages.git/yunohost-config-nginx $ commit-and-build "Message de commit"
@@ -44,7 +44,7 @@ La commande de build va mettre à jour le fichier changelog Debian (`debian/chan
 ---
 
 #### Mettre à jour en production
-Pour ajouter le paquet dans le dépôt de `megusta` (stable) il vous faudra exécuter la commande :
+Pour ajouter le paquet dans le dépôt de `megusta` (stable), il vous faudra exécuter la commande :
 
 ```bash
 [yunohost@yunohost] ~/packages.git/monpaquet $ commit-and-build "Message de commit" production

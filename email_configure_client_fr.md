@@ -5,7 +5,7 @@
 Il est possible d’accéder à ses emails grâce à un client lourd de messagerie électronique tel que Mozilla Thunderbird.
 
 #### Prérequis
-* Adresse email principal
+* Adresse email principale
 * Mot de passe du compte utilisateur
 
 #### Réglages génériques

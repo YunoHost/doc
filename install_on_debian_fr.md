@@ -6,7 +6,7 @@
 
 <img width=100 src="/images/debian-logo.png">
 
-Sur une plateforme ARM, un VPS, un serveur dédié, un ordinateur x86 standard, un vieux Macintosh, ...
+Sur une plateforme ARM, un VPS, un serveur dédié, un ordinateur x86 standard, un vieux Macintosh,...
 
 * avec **Debian 8** (Jessie) d’installé
 * connecté à Internet avec un câble RJ-45

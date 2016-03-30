@@ -10,9 +10,9 @@
 
 ## Installer Docker
 
-**Prérequis** : une machine x86 qui tourne sous Ubuntu 14.04 ou supérieur, ArchLinux ou Fedora (sur Debian c’est plus chiant).
+**Prérequis** : une machine x86 qui tourne sous Ubuntu 14.04 ou supérieur, ArchLinux ou Fedora (sur Debian c’est plus chiant).
 
-Sous Ubuntu :
+Sous Ubuntu :
 ```bash
 $ curl -s https://get.docker.io/ubuntu/ | sudo sh
 ```
@@ -28,12 +28,12 @@ $ sudo dnf install docker
 ```
 ---
 
-Passez **root** :
+Passez **root** :
 ```bash
 $ sudo -i
 ```
 
-Lancer le démon docker avec une des commande ci-dessous :
+Lancer le démon docker avec une des commandes ci-dessous :
 ```bash
 service docker start
 systemctl start docker
@@ -43,12 +43,12 @@ docker -d
 
 ## Installer le conteneur YunoHost
 
-La commande suivante va télécharger l’image YunoHost pré-construite :
+La commande suivante va télécharger l’image YunoHost pré-construite :
 ```bash
 docker pull zamentur/yunohost-stable8
 ```
 
-Vous pouvez également construire le conteneur manuellement :
+Vous pouvez également construire le conteneur manuellement :
 ```bash
 docker build -t zamentur/yunohost-stable8 github.com/YunoHost/Dockerfile
 ```
@@ -59,12 +59,12 @@ Vous pouvez vérifier que le conteneur est bien téléchargé avec la commande `
 
 ## Démarrer le conteneur
 
-Pour démarrer le conteneur, lancez la commande suivante en remplaçant DOMAIN par un domaine valide ex: mondomaine.org => yunohost.mondomaine.org
+Pour démarrer le conteneur, lancez la commande suivante en remplaçant DOMAIN par un domaine valide ex : mondomaine.org => yunohost.mondomaine.org
 ```bash
 docker run -h yunohost.DOMAIN -v $(pwd):/yunohost -d zamentur/yunohost-stable8 /sbin/init
 ```
 
-Si vous souhaitez démarrer le conteneur avec tous les ports forwardés sur l’hôte :
+Si vous souhaitez démarrer le conteneur avec tous les ports forwardés sur l’hôte :
 
 ```bash
 docker run -d -h yunohost.DOMAIN -v $(pwd):/yunohost \
@@ -81,7 +81,7 @@ docker run -d -h yunohost.DOMAIN -v $(pwd):/yunohost \
  /sbin/init
 ```
 
-Plus d’information sur la documentation de Docker :
+Plus d’information sur la documentation de Docker :
 * http://docs.docker.com/reference/commandline/cli/#run
 * http://docs.docker.com/userguide/dockerlinks/
 
@@ -114,7 +114,7 @@ Snapshoter l’état d’un container
 
 ```bash
 docker commit <ID_de_mon_conteneur> LeNomQueJeVeux
-# Exemple : docker commit 3e85317430db zamentur/yunohost-stable8:27042015
+# Exemple : docker commit 3e85317430db zamentur/yunohost-stable8:27042015
 ```
 
 Assigner une IP à un container

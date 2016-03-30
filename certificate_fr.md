@@ -3,14 +3,14 @@
 Un certificat est utilisé pour garantir la confidentialité des échanges entre votre serveur et votre client.
 
 YunoHost fournit par défaut un certificat **auto-signé**, ce qui veut dire que c’est votre serveur qui garantit la validité du certificat. C’est suffisant **pour un usage personnel**, car vous pouvez avoir confiance en votre serveur, en revanche cela posera problème si vous comptez ouvrir l’accès à votre serveur à des anonymes, par exemple pour héberger un site web.    
-En effet, les utilisateurs devront passer par un écran de ce type :
+En effet, les utilisateurs devront passer par un écran de ce type :
 
 <img src="/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-Cet écran revient à demander **« Avez-vous confiance au serveur qui héberge ce site ? »**.    
+Cet écran revient à demander **« Avez-vous confiance au serveur qui héberge ce site ? »**.    
 Cela peut effrayer vos utilisateurs (à juste titre).
 
-Pour éviter cette confusion, il est possible d’obtenir un certificat signé par une autorité « connue » : **Gandi**, **RapidSSL**, **StartSSL**, **Cacert**.    
+Pour éviter cette confusion, il est possible d’obtenir un certificat signé par une autorité « connue » : **Gandi**, **RapidSSL**, **StartSSL**, **Cacert**.    
 Dans ce cas, il s’agira de remplacer le certificat auto-signé par celui qui a été reconnu par une autorité de certification, et vos utilisateurs n’auront plus à passer par cet écran d’avertissement.
 
 ### Ajout d’un certificat signé par une autorité
@@ -72,7 +72,7 @@ En fonction de l’autorité d’enregistrement, des certificats intermédiaires
 
 Les certificats intermédiaires et root doivent être réunis avec le certificat obtenu pour créer une chaîne de certificats unifiés.
 
-En cas d’utilisation d’un certificat racine (Cacert) :
+En cas d’utilisation d’un certificat racine (Cacert) :
 
 ```bash
 cat ae_certs/ssl.crt ae_certs/intermediate_ca.pem ae_certs/ca.pem | sudo tee crt.pem```
@@ -92,7 +92,7 @@ Afin de s’assurer de la syntaxe des certificats, vérifiez le contenu des fich
 ```bash
 cat crt.pem key.pem```
 
-Les certificats et la clé privée doivent ressembler à cela :
+Les certificats et la clé privée doivent ressembler à cela :
 
 `-----BEGIN CERTIFICATE-----`    
 `MIICVDCCAb0CAQEwDQYJKoZIhvcNAQEEBQAwdDELMAkGA1UEBhMCRlIxFTATBgNV`
