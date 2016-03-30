@@ -101,7 +101,7 @@ $ head debian/changelog
 $ git yunobump x.y.z-p
 
 # Push the branch state AND the tags to the remote repository
-$ git push origin --tags testing : testing
+$ git push origin --tags testing:testing
 
 # Merge changelog modifications to the `unstable` branch
 $ git checkout unstable
