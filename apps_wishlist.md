@@ -73,6 +73,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Modoboa](http://modoboa.org/)
 * [Mopidy](https://www.mopidy.com/)
 * [MPD](http://www.musicpd.org/)
+* [NetData](https://github.com/firehol/netdata)
 * [Nibbleblog](http://www.nibbleblog.com)
 * [Only Office](http://onlyoffice.org/)
 * [OS.js](http://os.js.org/)
