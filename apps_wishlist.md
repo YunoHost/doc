@@ -126,6 +126,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Xonotic](http://xonotic.org/)
 * [Yacy](http://yacy.net/) – [package](https://github.com/M5oul/yacy_ynh/)
 * [YellowCMS](http://datenstrom.se/yellow/)
+* [YesWiki](http://yeswiki.net/wa.php?wiki=AccueiL)
 * [ZeroNet](http://zeronet.io/)
 * [Zone-project](https://github.com/descl/ZONE)
 * [ZNC](http://wiki.znc.in/ZNC)
