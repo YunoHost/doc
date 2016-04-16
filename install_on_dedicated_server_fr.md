@@ -6,7 +6,7 @@
 
 <img src="/images/vps.png" width=250>
 
-* Un serveur dédié **OU** un VPS avec au moins **256MB** de RAM
+* Un serveur dédié **OU** un VPS avec au moins **256 MB** de RAM
 * Une installation **Debian 8** ou **7** fonctionnelle
 
 ---

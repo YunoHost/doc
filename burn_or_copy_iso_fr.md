@@ -1,6 +1,6 @@
 # Copier l’image ISO
 
-Maintenant que vous avez l’image ISO de YunoHost, vous devez la mettre sur un support physique : **Clé USB** ou **CD/DVD**
+Maintenant que vous avez l’image ISO de YunoHost, vous devez la mettre sur un support physique : **Clé USB** ou **CD/DVD**
 
 <img src="/images/usb_key.png">
 <img src="/images/cd.jpg" width=200>

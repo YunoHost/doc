@@ -1,10 +1,10 @@
 # Post-Installation
 
-L’étape appelée « **post-installation** » est en fait l’étape de configuration initiale de YunoHost. Il faut l’exécuter après l’**installation** du système en lui-même.
+L’étape appelée « **post-installation** » est en fait l’étape de configuration initiale de YunoHost. Il faut l’exécuter après l’**installation** du système en lui-même.
 
 ## Accès
 
-Vous pouvez accéder à la post-installation graphique en entrant dans un navigateur web :
+Vous pouvez accéder à la post-installation graphique en entrant dans un navigateur web :
 * l’adresse **IP locale de votre serveur** si celui-ci est connecté à votre réseau local (généralement `192.168.x.x`)
 * l’adresse **IP publique de votre serveur** si celui-ci n’est pas connecté à votre réseau local.
 
@@ -42,7 +42,7 @@ De manière générale, c’est la **clé d’entrée à votre système**, pense
 
 ---
 
-## Et après ?
+## Et après ?
 
 Une fois l’étape de post-installation exécutée, vérifiez que votre serveur est accessible en tapant le nom de domaine choisi précédemment dans votre navigateur web. Si celui-ci n’est pas accessible, quelques étapes de configurations supplémentaires sont sûrement nécessaires.
 

@@ -4,7 +4,7 @@ Pour diverses raisons, il peut arriver qu’une adresse IP ait été blacklisté
 
 ## Débloquer une IP
 
-Tout d’abord on affiche le listing de toutes les règles iptables avec la commande `iptables -L --line-numbers` :
+Tout d’abord on affiche le listing de toutes les règles iptables avec la commande `iptables -L --line-numbers` :
 
 ```bash
 root@beudi:~# iptables -L --line-numbers
@@ -45,13 +45,13 @@ num  target     prot opt source               destination
 ```
 
 Il nous indique que l’IP `80.215.197.201` est bannie dans la règle `fail2ban-yunohost`.    
-Pour la débloquer :
+Pour la débloquer :
 
 ```bash
 iptables -D nom_de_la_regle numéro_de_l_entrée
 ```
 
-Par exemple :
+Par exemple :
 ```bash
 iptables -D fail2ban-yunohost 1
 ```

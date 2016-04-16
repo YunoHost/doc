@@ -4,7 +4,7 @@
 
 #### Accès à l’administration de la box (v5/v6)
 
-Allez à l’adresse : http://mafreebox.free.fr/ puis authentifiez-vous.
+Allez à l’adresse : http://mafreebox.free.fr/ puis authentifiez-vous.
 
 #### Ouverture des ports
 
@@ -36,4 +36,4 @@ On monte le répertoire NAS par défaut avec les droits de lecture / écriture p
 ```bash
 $ sudo mount -t cifs //mafreebox.freebox.fr/Disque\ dur/ /home/monlogin/freebox -o guest,iocharset=utf8,file_mode=0777,dir_mode=0777
 ```
-RAF : automatiser ce montage car il faut le refaire à chaque rédémarrage.
+RAF : automatiser ce montage car il faut le refaire à chaque redémarrage.

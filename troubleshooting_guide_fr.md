@@ -5,14 +5,14 @@ Ce guide peut trouver son intérêt lors du débuggage d’une nouvelle applicat
 
 ## Notes générales
 ### Ne cassez pas YunoHost
-La meilleure manière de ne pas avoir de pannes est de ne pas bricoler sur votre serveur. Cela signifie que dès que vous souhaitez essayer quelque chose de nouveau (application non officielle, nouvelles configuration personnalisée, création d’une nouvelle application), voyez plutôt cela sur un serveur de développement et non de production.
+La meilleure manière de ne pas avoir de pannes est de ne pas bricoler sur votre serveur. Cela signifie que dès que vous souhaitez essayer quelque chose de nouveau (application non officielle, nouvelle configuration personnalisée, création d’une nouvelle application), voyez plutôt cela sur un serveur de développement et non de production.
 Vous pouvez faire cela de la manière qui vous convient, sur un [Droplet DigitalOcean](install_on_digitalocean_en) pour 1 centime/heure, localement avec [Docker](/docker_en) ou sur une machine virtuelle.
 
 Vous pouvez aussi lire ceci si vous avez encore envie de bricoler sur votre instance YunoHost en production : https://wiki.debian.org/DontBreakDebian
 
 ### Utilisez les applications non-officielles avec attention
 Bien que ce soit tentant d’installer toutes les [applications non officielles](https://yunohost.org/#/apps_in_progress_fr), s’il vous plaît ne le faites pas, même si l’application est indiquée comme prête.
-Avant de tester, vous devriez lire au moins le code source de l’application et vérifier que les fichiers d’installation, de suppression et  de mise à jour sont bien présents.
+Avant de tester, vous devriez lire au moins le code source de l’application et vérifier que les fichiers d’installation, de suppression et de mise à jour sont bien présents.
 Garder à l’esprit que quand vous installez une application, vous exécutez du code avec des droits root. De mon expérience, certaines applications sont excellentes, d’autres peuvent casser votre instance YunoHost et certaines ne sont plus maintenues. Alors, avant d’installer, regardez les problèmes rencontrés (issues dans GitHub), le [Forum](http://forum.yunohost.org/) 
 et [le salon de discussion Yunohost](support_fr) pour voir si d’autres ont eu des problèmes avec l’application.
 
@@ -23,16 +23,16 @@ Les réponses à vos questions existent peut être déjà dans [la documentation
 Vous pouvez apprendre à utiliser les [commandes YunoHost](moulinette_fr)
 
 ## Mise à jour
-Les problèmes ont souvent lieu après une mise à jour. Après une mise à jours, vous pouvez avoir envie de [mettre à jour votre application](app_update_fr).
+Les problèmes ont souvent lieu après une mise à jour. Après une mise à jour, vous pouvez avoir envie de [mettre à jour votre application](app_update_fr).
 
 
 **Vérifier si un processus utilise une ancienne librairie**
-vous avez sûrement l’habitude d’utiliser :
+vous avez sûrement l’habitude d’utiliser :
 ```bash
 sudo apt-get update && sudo apt-get dist-upgrade
 ```
 La plupart du temps, cela suffit. Mais dans certaines situations, il est possible que certains processus utilisent toujours d’anciennes bibliothèques non mises à jour. 
-Cela peut entraîner des bugs et, dans certains rares cas, des problèmes de sécurité (ex : lors d’une mise à jour de OpenSSL à cause d’une faille de sécurité, Nginx va continuer à utiliser la version dont il dispose en mémoire). L’utilitaire Checkrestart va vous aider à identifier ces processus et les redémarrer.
+Cela peut entraîner des bugs et, dans certains rares cas, des problèmes de sécurité (ex : lors d’une mise à jour de OpenSSL à cause d’une faille de sécurité, Nginx va continuer à utiliser la version dont il dispose en mémoire). L’utilitaire Checkrestart va vous aider à identifier ces processus et les redémarrer.
 
 ```bash
 sudo apt-get install debian-goodies
@@ -49,7 +49,7 @@ Vous pouvez aussi utiliser [ce script](https://github.com/octopuce/octopuce-good
 
 **Forcer une mise à jour d’une application non officielle**
 
-/!\ Pensez toujours à vérifier s’il existe un script de mise à jour et lisez le si vous pouvez/!\
+/!\ Pensez toujours à vérifier s’il existe un script de mise à jour et lisez-le si vous pouvez/!\
 
 
 ```bash
@@ -64,80 +64,80 @@ YunoHost utilise toute une série de logiciels pour fonctionner. La plupart de c
 
 ### Vérifier le statut des services
 Quand quelque chose ne fonctionne pas, une des premières choses à faire est de vérifier que tous les services utilisés par YunoHost sont lancés.
-YunoHost inclus un outil qui permet de visualiser tous les services utilisés par YunoHost :
+YunoHost inclus un outil qui permet de visualiser tous les services utilisés par YunoHost :
 ```bash
 sudo yunohost service status
 ```
-Exemple de résultat :
+Exemple de résultat :
 
 <img src="/images/services_status.png" width=210>
 
 Tous les services doivent être activés (enabled) et en fonctionnement (running) sauf Glances (optionnel). Si certains ne le sont pas, essayez de les redémarrer. 
-Voici une petite description de leurs fonctions respectives :
+Voici une petite description de leurs fonctions respectives :
 
 - **Amavis** : anti-spam/virus/malwares, utilisé quand lors de l’échange de mails.
 - **Avahi-daemon** : système qui facilite la découverte d’ordinateurs sur le réseau local en leur attribuant des noms.
 - **DNSmasq** : serveur DNS, vous n’êtes pas obligé de l’utiliser (Non installé par défaut)
 - **Dovecot** : serveur IMAP, utilisé pour la réception de mails.
-- **Glances** :  optionnel, utilisé pour l’administration web pour afficher les statuts du serveur
+- **Glances** : optionnel, utilisé pour l’administration web pour afficher les statuts du serveur
 - **Metronome** : serveur XMPP utilisé par jappix comme client.
 - **MySQL** : base de données utilisée par certaines applications
 - **Nginx** : serveur web, utilisé par toutes les applications
 - **php5-fpm** : serveur PHP, utilisé par toutes applications utilisant PHP
 - **Postfix** : serveur SMTP, utilisé pour l’envoi de mails.
-- **Postgrey** : serveur de liste grises, si vous utilisez YunoHost pour les mails , vous devriez regarder un peu plus sur cette question.
+- **Postgrey** : serveur de listes grises, si vous utilisez YunoHost pour les mails, vous devriez regarder un peu plus sur cette question.
 [En apprendre plus sur les listes grises](http://en.wikipedia.org/wiki/Greylisting)
-- **Slapd**: serveur LDAP, utilisé pour l’authentification (SSO and apps)
+- **Slapd** : serveur LDAP, utilisé pour l’authentification (SSO and apps)
 - [**SSH**](/ssh_en) : Secure Shell, utilisé pour l’accès distant au serveur.
 - [**SSOwat**](https://github.com/Kloadut/SSOwat/) : gestionnaire simple d’authentification.
 - **YunoHost-API** : administration web de YunoHost
 
-Les autres services installés par des applications vont aussi apparaître. Par exemple `seafile-serve` utilisé par l’application Seafile et `uwsgi`  qui est utilisé par des applications python comme Searx.
-##### démarrer ou arrêter un service identifié avec YunoHost :
+Les autres services installés par des applications vont aussi apparaître. Par exemple `seafile-serve` utilisé par l’application Seafile et `uwsgi` qui est utilisé par des applications python comme Searx.
+##### démarrer ou arrêter un service identifié avec YunoHost :
 ```bash
 sudo yunohost service start <servicename>
 sudo yunohost service stop <servicename>
 ```
-Vous pouvez aussi utiliser la commande Debian :
+Vous pouvez aussi utiliser la commande Debian :
 ```bash
 sudo service <servicename> start/stop/restart/reload
 ```
 Après une tentative de lancement, vérifiez toujours que le service est lancé.
-**Note** : Debian Jessie utilise désormais `systemd` à la place de  `upstart`. Cela est pour l’instant toujours compatible avec la manière dont Debian Wheezy gère les services.
+**Note** : Debian Jessie utilise désormais `systemd` à la place de `upstart`. Cela est pour l’instant toujours compatible avec la manière dont Debian Wheezy gère les services.
 [Ressources utiles sur systemd](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet).
 
 ### Logs
-Si un service ne démarre pas, vous devez vérifier les logs pour voir ce qui ne pose problème. Il n’y a pas de règles définies où les services doivent stocker leurs logs. Cependant, ceux-ci se trouvent pour la plupart dans :  
+Si un service ne démarre pas, vous devez vérifier les logs pour voir ce qui ne pose problème. Il n’y a pas de règles définies où les services doivent stocker leurs logs. Cependant, ceux-ci se trouvent pour la plupart dans :  
 ```bash
 /var/log/
 ```
-Voici quelques fichiers de log utiles pour YunoHost :
+Voici quelques fichiers de log utiles pour YunoHost :
 ##### auth.log
 Il contient les connexions ou tentatives de connexion à votre serveur. Il inclut aussi toutes les connexion web, ssh et cron job (tâches répétitives). Il stoque enfin toutes les tentatives (on l’espère) de connexion par des potentiels intrus.
 
 ##### fail2ban.log
-Quand quelqu'un tente de se connecter à votre serveur et rate plusieurs fois, Fail2ban bannie l’adresse IP afin d’éviter les attaques en bruteforce et ou en (D)DOS. Vous pouvez donc trouver ici les IP qui auront été bannies.
+Quand quelqu’un tente de se connecter à votre serveur et rate plusieurs fois, Fail2ban bannit l’adresse IP afin d’éviter les attaques en bruteforce et/ou en (D)DOS. Vous pouvez donc trouver ici les IP qui auront été bannies.
 
 ##### mail.err, mail.info, mail.log, mail.warn
-Ce sont les logs de Postfix pour le serveur de mail. Vous pouvez les consulter si vous rencontrer des problèmes avec les mails.
+Ce sont les logs de Postfix pour le serveur de mail. Vous pouvez les consulter si vous rencontrez des problèmes avec les mails.
 
 ##### metronome/metronome.err, metronome/metronome.log
 Logs du serveur de chat XMPP
 
 ##### mysql.err, mysql.log, mysql/error.log
-Logs de la base de données MySQL. Ils doivent être vite sauf si vous avez des problèmes avec MySQL.
+Logs de la base de données MySQL. Ils doivent être vides sauf si vous avez des problèmes avec MySQL.
 
 ##### php5-fpm.log
 Lieu générique d’emplacement des logs pour les applications PHP.
 
 ##### yunohost.log
-C'est le fichier de log créé à l’installation de YunoHost. Si vous rencontrez des problèmes à  l’installation de YunoHost, vérifier ce fichier.
+C’est le fichier de log créé à l’installation de YunoHost. Si vous rencontrez des problèmes à l’installation de YunoHost, vérifier ce fichier.
 
-Cette liste n’est pas exhaustive. De plus, certaines applications peuvent aussi mettre leurs fichiers de log dans  `/var/log`.
+Cette liste n’est pas exhaustive. De plus, certaines applications peuvent aussi mettre leurs fichiers de log dans `/var/log`.
 Les logs de Slapd sont malheureusement stockés dans`/var/log/syslog`.
 
 ## Utilisation de la RAM
-Des problèmes peuvent être causés par un manque de RAM. Pour vérifier votre utilisation de la RAM, entrez la commande suivante :
+Des problèmes peuvent être causés par un manque de RAM. Pour vérifier votre utilisation de la RAM, entrez la commande suivante :
 ```bash
 free -m
 ```
@@ -146,8 +146,8 @@ free -m
 5 à 10 % de mémoire libre est acceptable, mais il est bien de disposer d’une marge (en particulier pour les mises à jour). Comme la plupart du temps, vous ne pouvez pas augmenter votre quantitité de RAM, vous avez la possibilité d’utiliser une partition de SWAP (mémoire du disque dur attribuée à la RAM).
 Gardez à l’esprit que le SWAP est une mémoire 100 000 fois plus lente, vous devriez donc l’utiliser uniquement si vous n’avez pas d’autre choix.
 
-##### créer un fichier de swap:
-Si `free -m` indique que vous n’avez aucule ligne de SWAP, vous pouvez avoir envie d’ajouter un fichier de SWAP.
+##### créer un fichier de swap :
+Si `free -m` indique que vous n’avez aucune ligne de SWAP, vous pouvez avoir envie d’ajouter un fichier de SWAP.
 ```bash
 sudo install -o root -g root -m 0600 /dev/null /swapfile
 dd if=/dev/zero of=/swapfile bs=1k count=512k
@@ -164,7 +164,7 @@ Changez 512 avec la quantité de mémoire SWAP que vous voulez.
 
 ## Espace disque
 Un des autres problèmes communs des serveurs est le manque d’espace d’espace disque.
-Vous pouvez vérifier que votre disque n’est pas plein avec la commande :
+Vous pouvez vérifier que votre disque n’est pas plein avec la commande :
 ```bash
 df -h
 ```
@@ -175,8 +175,8 @@ Cela va vous montrer l’utilisation du disque. Si une partition système est pr
 
 
 ## Nginx
-Nginx joue un grand rôle dans YunoHost puisqu'il fournit toutes les applications web.
-YunoHost a une manière particulière de gérer la configuration puisqu'il existe plusieurs domaines et plusieurs applications.
+Nginx joue un grand rôle dans YunoHost puisqu’il fournit toutes les applications web.
+YunoHost a une manière particulière de gérer la configuration puisqu’il existe plusieurs domaines et plusieurs applications.
 
 ### Configuration
 ##### Configuration générale de la structure
@@ -192,7 +192,7 @@ YunoHost a une manière particulière de gérer la configuration puisqu'il exist
 ```
 
 ##### Configuration des applications
-Pour chaque application ou domaine donné, il y a un fichier de configuration Nginx situé dans :
+Pour chaque application ou domaine donné, il y a un fichier de configuration Nginx situé dans :
 ```bash
 /etc/nginx/conf.d/example.com.d/nom_de_application.conf
 ```
@@ -200,7 +200,7 @@ Les fichiers de configuration sont généralement utilisés pour ce genre de mod
 
 ```bash
 location YNH_WWW_PATH { # Chemin pour atteindre votre application dans le navigateur
-alias YNH_WWW_ALIAS ; # chemin pour accéder aux sources des fichiers aux fichiers (d'habitude /var/www/app_name)
+alias YNH_WWW_ALIAS ; # chemin pour accéder aux sources des fichiers aux fichiers (d’habitude /var/www/app_name)
 
 # Configuration particulière pour une application selon son langage de programmation et ses options de déploiement.
 
@@ -210,14 +210,14 @@ include conf.d/yunohost_panel.conf.inc;
 ```
 
 ### Les logs
-Les fichiers de log de Nginx sont situés dans le dossier :
+Les fichiers de log de Nginx sont situés dans le dossier :
 
 ```bash
 /var/log/nginx/
 ```
 #### Logs génériques
 ##### access.log
-Le fichier générique d’accès. Vous trouverez ici toutes les tentaties d’accès à l’administration de YunoHost et certaines tentatives d’intrusion.
+Le fichier générique d’accès. Vous trouverez ici toutes les tentatives d’accès à l’administration de YunoHost et certaines tentatives d’intrusion.
 
 ##### error.log
 Ce fichier devrait être vide avec une configuration correcte de Nginx. Si Nginx ne démarre pas, des informations sur les erreurs devraient se trouver dans ce fichier.
@@ -228,7 +228,7 @@ Ce fichier devrait être vide avec une configuration correcte de Nginx. Si Nginx
 Tous les accès à ce domaine (en prenant en comptes toutes les applications).
 
 ##### example.com-error.log
-Toutes les erreurs liées aux applications installées sur ce domaine, il se peut que certaines applications aient tous leurs logs sur dans ce fichier.
+Toutes les erreurs liées aux applications installées sur ce domaine, il se peut que certaines applications aient tous leurs logs surs dans ce fichier.
 
 
 ## SSOwat
@@ -236,21 +236,21 @@ Toutes les erreurs liées aux applications installées sur ce domaine, il se peu
 est le logiciel qui connecte le serveur web nginx au serveur LDAP. Son but est d’authentifier les utilisateurs au portail YunHost pour pouvoir simplement changer entre les applications.
 
 ### Configuration
-Vous pouvez regarder le fichier de configuration SSOwat dans le fichier :
+Vous pouvez regarder le fichier de configuration SSOwat dans le fichier :
 
 ```bash
 /etc/ssowat/conf.json
 ```
-Celui ci est généré avec la commande 
+Celui-ci est généré avec la commande 
 ```bash
 sudo yunohost app ssowatconf
 ```
-Astuce : si vous souhaitez mettre en place des règles personnalisées dans le SSOwat, vous pouvez le faire dans ce fichier :
+Astuce : si vous souhaitez mettre en place des règles personnalisées dans le SSOwat, vous pouvez le faire dans ce fichier :
 ```bash
 /etc/ssowat/conf.json.persistent
 ```
 ### Logs
-Il n’y a pas de fichier de log spécifiques pour SSOwat. Ils sont située dans les fichiers de log de Nginx. Si vous voyez des lignes avec `lua` à l’intérieur, il s’agit probablement de logs de SSOwat.
+Il n’y a pas de fichier de log spécifiques pour SSOwat. Ils sont situés dans les fichiers de log de Nginx. Si vous voyez des lignes avec `lua` à l’intérieur, il s’agit probablement de logs de SSOwat.
 
 ## YunoHost
 ### Configuration
@@ -258,18 +258,18 @@ La configuration de Yunohost est située ici
 ```bash
 /etc/yunohost/
 ```
-Si vous souhaitez utiliser et conserver un fichier de configuration personnalisé, utiliser ce fichier :
+Si vous souhaitez utiliser et conserver un fichier de configuration personnalisé, utiliser ce fichier :
 ```bash
 /etc/yunohost/yunohost.conf
 ```
 Pour tous les services avec la mention `yes`, YunoHost ne réalisera pas de mise à jour des services spécifiés.
 Ne faites ça que si vous savez ce que vous faites. 
 
-Toutes les configurations d’applications sont situées dans :
+Toutes les configurations d’applications sont situées dans :
 ```bash
 /etc/yunohost/apps/app_name/
 ```
-Dans chaque paquet (d'application), vous trouverez :
+Dans chaque paquet (d’application), vous trouverez :
 
 
 * **manifest.json** : manifeste de l’application
@@ -280,13 +280,13 @@ Dans chaque paquet (d'application), vous trouverez :
  * backup
  * restore
 * **config/** : dossier de configuration
-* **settings.yml** : La configuration de l’application, aussi accessible via :
+* **settings.yml** : La configuration de l’application, aussi accessible via :
 ```bash
 sudo yunohost app setting appname settingname
 ```
 
 ### Logs
-Il n’y a pas de fichier de log créé lors que vous installez une application. Essayez de conserver les logs. Vous pouvez trouver cependant certains logs peuvent se trouver dans :
+Il n’y a pas de fichier de log créé lors que vous installez une application. Essayez de conserver les logs. Vous pouvez trouver cependant certains logs peuvent se trouver dans :
 ```bash
 /var/log/yunohost/
 ```
@@ -297,13 +297,13 @@ Cette partie concerne plus les créateurs d’applications YunoHost mais permet 
 Premièrement, vous devez savoir [comment créer un paquet pour une nouvelle application](packaging_apps_fr).
 
 Quand vous bricolez une application, des erreurs peuvent avoir lieu selon certains niveaux d’importance. Il y a une grande variété d’applications et le déploiement de celles-ci va dépendre du langage de programmation de l’application.
-Nous allons voir ici les « cas classiques ». 
+Nous allons voir ici les « cas classiques ». 
 La configuration des applications n’est pas abordée ici car leurs configurations respectives peuvent énormément varier.
 
 ##### Schéma simplifié
-Naviguateur web −> Nginx <− (serveur web) <−  interpréteur (PHP, Python, Node.js…) <− app
+Navigateur web −> Nginx <− (serveur web) <− interpréteur (PHP, Python, Node.js…) <− app
 
-L'application est executée par l’interpréteur, celui-ci peut potentiellement fournir un serveur web. Le runtime ou le serveur web va communiquer avec Nginx et ce dernier servira des pages au navigateur web. 
+L’application est exécutée par l’interpréteur, celui-ci peut potentiellement fournir un serveur web. Le runtime ou le serveur web va communiquer avec Nginx et ce dernier servira des pages au navigateur web. 
 
 Le but de cette configuration est d’avoir plusieurs applications sur un seul serveur avec seulement le port https ouvert à l’internet entier.
 
@@ -312,7 +312,7 @@ Le but de cette configuration est d’avoir plusieurs applications sur un seul s
 PHP fonctionne nativement avec Nginx
 
 ##### La communication avec Nginx
-L'interpréteur PHP communique avec Nginx par [PHP-FPM](http://php-fpm.org/)
+L’interpréteur PHP communique avec Nginx par [PHP-FPM](http://php-fpm.org/)
 qui est une implémentation de [FastCGI](http://en.wikipedia.org/wiki/FastCGI) implémentation.
 
 ##### Les logs
@@ -323,12 +323,12 @@ qui est une implémentation de [FastCGI](http://en.wikipedia.org/wiki/FastCGI) i
 
 ### Applications Python 
 ##### Options de déploiement
-Une application python devrait fonctionner  avec son propre interpréteur Python et ses propres dépendance. Pour cela, on peut utiliser l’outil `virtualenv`.
-D'habitude, un serveur web léger sera utilisé pour fournir l’application derrière Nignx [Uwsgi](https://uwsgi-docs.readthedocs.org/en/latest/) est un bon exemple.
+Une application python devrait fonctionner avec son propre interpréteur Python et ses propres dépendances. Pour cela, on peut utiliser l’outil `virtualenv`.
+D’habitude, un serveur web léger sera utilisé pour fournir l’application derrière Nignx [Uwsgi](https://uwsgi-docs.readthedocs.org/en/latest/) est un bon exemple.
 
 
 ##### La communication avec Nginx
-Nginx communique de trois manières avec Python :
+Nginx communique de trois manières avec Python :
 
 - [proxy_pass](http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass)
 - Websocket
@@ -342,7 +342,7 @@ Logs spécifiques à l’application et/ou au serveur web, par exemple uwsgi :
 ##### Ressources
 [Bonnes ressources en français sur Python et virtualenv](http://sametmax.com/les-environnement-virtuels-python-virtualenv-et-virtualenvwrapper/)
 
-**Exemple de paquet YunoHost en Python** : [Searx](https://github.com/abeudin/searx_ynh)
+**Exemple de paquet YunoHost en Python** : [Searx](https://github.com/abeudin/searx_ynh)
 
 ### Applications Node.js 
 ##### Options de déploiement
@@ -367,4 +367,4 @@ Ne jamais installer le serveur web Apache ou un paquet avec Apache comme dépend
 
 ##### Note sur https
 Parfois, le serveur web intégré avec l’application est capable de servir du https lui-même.
-C'est une bonne chose de l’utiliser quand vous disposez d’une application sans Nginx devant. Dans le cadre de YunoHost, le fait que Nginx serve du https simplifie la configuration. Donc, quand vous passez par proxy_pass, utilisez http et Nginx mettra a disposition en https pour le reste de l’internet.
+C’est une bonne chose de l’utiliser quand vous disposez d’une application sans Nginx devant. Dans le cadre de YunoHost, le fait que Nginx serve du https simplifie la configuration. Donc, quand vous passez par proxy_pass, utilisez http et Nginx mettra a disposition en https pour le reste de l’internet.

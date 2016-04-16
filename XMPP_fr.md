@@ -6,7 +6,7 @@ Vous pouvez discuter simplement avec des contacts XMPP/Jabber en installant l’
 
 [XMPP](https://fr.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol) est un protocole ouvert et extensible qui permet également de créer des salons de discussions, de partager des statuts et des données, de passer des appels en VoIP et de faire de la visioconférence.
 
-Toutes les applications basées sur XMPP sont compatibles entre-elles : lorsque vous utilisez un client XMPP vous pouvez discuter avec n’importe quel possesseur.e d’un compte XMPP/Jabber. Ce protocole est déjà utilisé par des millions de personnes dans le monde.
+Toutes les applications basées sur XMPP sont compatibles entre-elles : lorsque vous utilisez un client XMPP vous pouvez discuter avec n’importe quel possesseur.e d’un compte XMPP/Jabber. Ce protocole est déjà utilisé par des millions de personnes dans le monde.
 
 ### Compte XMPP/Jabber
 
@@ -25,11 +25,11 @@ Vous pouvez également utiliser un client desktop comme [Pidgin](http://pidgin.i
 * [Movim sous Android](https://movim.eu)
 * [Monal](https://itunes.apple.com/us/app/monal-free-xmpp-chat/id317711500?mt=8) (iOS)
 
-Voici une liste plus exhaustive des clients XMPP : https://fr.wikipedia.org/wiki/Liste_de_clients_XMPP
+Voici une liste plus exhaustive des clients XMPP : https://fr.wikipedia.org/wiki/Liste_de_clients_XMPP
 
 ### Chiffrer ses conversations avec OTR
 
-Il est possible de chiffrer ses conversations XMPP à l’aide de [OTR](https://otr.cypherpunks.ca/index.php#downloads), notamment en utilisant Pidgin :
+Il est possible de chiffrer ses conversations XMPP à l’aide de [OTR](https://otr.cypherpunks.ca/index.php#downloads), notamment en utilisant Pidgin :
 * Installer `pidgin` et le plugin [`pidgin-otr`](https://otr.cypherpunks.ca/index.php#downloads)(sous linux il devrait être disponible avec votre gestionnaire de paquet)
 * Activez le plugins dans `Outils > Plugins`
 * Faite `produire` pour générer une empreinte

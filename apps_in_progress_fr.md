@@ -14,7 +14,7 @@
 <a class="btn btn-lg btn-default" href="/apps_wishlist_fr">Apps souhaitées</a>
 
 De plus en plus d’applications sont mises à disposition par les packagers.
-<div class="alert alert-danger">Ces applications **n’ont pas** été validées par l’équipe YunoHost et  **ne sont pas** officiellement prises en charge.<br>Vous pouvez les tester et les utiliser à **vos risques et périls**.
+<div class="alert alert-danger">Ces applications **n’ont pas** été validées par l’équipe YunoHost et **ne sont pas** officiellement prises en charge.<br>Vous pouvez les tester et les utiliser à **vos risques et périls**.
 </div>
 
 Elles sont installables avec l’[interface web d’administration](/admin) ou avec la moulinette :

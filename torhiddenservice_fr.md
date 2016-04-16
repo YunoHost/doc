@@ -8,7 +8,7 @@ sudo apt-get install tor
 ```
 
 ### Configurer notre service caché
-Éditer le fichier `/etc/tor/torrc`, et ajouter ces lignes :
+Éditer le fichier `/etc/tor/torrc`, et ajouter ces lignes :
 
 ```bash
 HiddenServiceDir  /var/lib/tor/hidden_service/
@@ -34,7 +34,7 @@ yunohost domain add random123456789.onion
 ```
 
 ### Éviter la redirection vers le SSO (optionnel)
-Si vous voulez éviter d’être redirigé vers le portail à la connexion pour des raisons de traçabilité, vous pouvez désactiver SSOwat pour le domaine, en éditant le fichier `/etc/nginx/conf.d/random123456789.onion.conf` et en commentant la ligne suivante (elle apparaît deux fois dans le fichier) :
+Si vous voulez éviter d’être redirigé vers le portail à la connexion pour des raisons de traçabilité, vous pouvez désactiver SSOwat pour le domaine, en éditant le fichier `/etc/nginx/conf.d/random123456789.onion.conf` et en commentant la ligne suivante (elle apparaît deux fois dans le fichier) :
 
 ```bash
 #access_by_lua_file /usr/share/ssowat/access.lua;

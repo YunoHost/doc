@@ -9,13 +9,13 @@ Pour cela, il faut aller dans Actions -> Configuration -> onglet flux -> chapitr
 
 ### Client Android
 
-Il est possible d’utiliser le client Android ttrss-reader pour consulter ces flux :
+Il est possible d’utiliser le client Android ttrss-reader pour consulter ces flux :
 
 **[ttrss-reader](https://f-droid.org/repository/browse/?fdfilter=rss&fdid=org.ttrssreader)**
 
-Sur l’interface web, dans Actions -> Configuration, cochez "Activer l’accès par API"
-puis dans ttrss-reader sur Android, l’adresse du serveur TTRSS : "https://votredomaine.org/ttrss", nom d’utilisateur, mot de passe. (pas besoin d’utiliser l’authentification HTTP)
+Sur l’interface web, dans Actions -> Configuration, cochez « Activer l’accès par API »
+puis dans ttrss-reader sur Android, l’adresse du serveur TTRSS : « https://votredomaine.org/ttrss », nom d’utilisateur, mot de passe. (pas besoin d’utiliser l’authentification HTTP)
 
-**Note** : vous pouvez avoir besoin de désinstaller, puis réinstaller entièrement l’app ttrss via l’administration de YunoHost pour que la connexion puisse se faire.
+**Note** : vous pouvez avoir besoin de désinstaller, puis réinstaller entièrement l’app ttrss via l’administration de YunoHost pour que la connexion puisse se faire.
 
 * [Site de Tiny Tiny RSS](http://tt-rss.org/redmine/projects/tt-rss/wiki)

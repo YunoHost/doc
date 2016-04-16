@@ -1,6 +1,6 @@
 # Bureaux d’enregistrement
 
-Voici une liste des bureaux d’enregistrement pour acheter un nom de domaine :
+Voici une liste des bureaux d’enregistrement pour acheter un nom de domaine :
 * [OVH](http://ovh.com/)
 * [GoDaddy](https://godaddy.com/)
 * [Gandi](http://gandi.net/)

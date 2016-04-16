@@ -7,11 +7,11 @@ Pour résoudre ce problème, il est nécessaire de configurer le DNS de votre ro
 ### Obtenir l’adresse IP locale du serveur
 Afin de configurer le DNS ou le fichier hosts, il vous faut connaître l’adresse IP privée de votre serveur. Cette adresse est utilisable uniquement sur le réseau local où se trouve le serveur et n’est pas liée à votre adresse publique utilisée sur Internet.
 
-Vous pouvez retrouver l’adresse privée de votre serveur de différentes manières :
-- Sur l’écran de connexion de YunoHost sur le serveur lui-même :
+Vous pouvez retrouver l’adresse privée de votre serveur de différentes manières :
+- Sur l’écran de connexion de YunoHost sur le serveur lui-même :
 <img src="/images/ynh_login.png" width=600>
 
-- Depuis l’interface d’administration de votre serveur YunoHost :
+- Depuis l’interface d’administration de votre serveur YunoHost :
     dans État du serveur > Réseau
 <img src="/images/ynh_admin_etat_ip.png" width=900>
 
@@ -19,7 +19,7 @@ Vous pouvez retrouver l’adresse privée de votre serveur de différentes mani�
 
 ## Configurer le DNS de la box ou du routeur
 ### Box SFR
-Si vous ne disposez toujours pas de l’adresse IP privée de votre serveur, vous pouvez la trouver sur l’interface de votre box SFR :  
+Si vous ne disposez toujours pas de l’adresse IP privée de votre serveur, vous pouvez la trouver sur l’interface de votre box SFR :  
     Dans l’onglet Réseau puis Général
 <img src="/images/ip_serveur.png" width=800>
 
@@ -30,10 +30,10 @@ Rendez-vous dans l’onglet Réseau puis DNS pour ajouter votre nom de domaine a
 ## Configurer le fichier [hosts](http://fr.wikipedia.org/wiki/Hosts) de l’ordinateur client
 La modification du fichier hosts devrait être effectuée seulement si vous ne pouvez pas modifier le DNS de votre box ou de votre routeur, car le fichier hosts impactera uniquement l’ordinateur sur lequel le fichier est modifié.
 
-- Sous Windows, vous trouverez le fichier hosts ici :
+- Sous Windows, vous trouverez le fichier hosts ici :
     `%SystemRoot%\system32\drivers\etc\`
     > Il est nécessaire d’afficher les fichiers cachés et systèmes pour voir le fichier hosts.
-- Sous les systèmes UNIX (GNU/Linux, Mac OS), vous le trouverez ici :
+- Sous les systèmes UNIX (GNU/Linux, Mac OS), vous le trouverez ici :
     `/etc/hosts`
     > Les droits root sont nécessaires pour modifier le fichier.
 

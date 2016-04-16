@@ -11,7 +11,7 @@
 <div class="alert alert-danger">Ces images sont basées sur **Debian Wheezy**. Wheezy **ne sera plus maintenue** avec YunoHost 2.4.<br />
 Il est **fortement conseillé** d’installer YunoHost sur **Debian Jessie** avec le **[script d’installation](/install_on_debian_fr)**.</div>
 
-* Un matériel compatible x86 dédié à YunoHost : portable, netbook, ordinateur. Vous pouvez réutiliser n’importe quelle machine avec **256 Mo de RAM minimum**
+* Un matériel compatible x86 dédié à YunoHost : portable, netbook, ordinateur. Vous pouvez réutiliser n’importe quelle machine avec **256 Mo de RAM minimum**
 * Un autre ordinateur pour parcourir ce guide et accéder à votre serveur
 * Un [fournisseur d’accès correct](/isp_fr), de préférence avec une bonne vitesse d’upload
 * Une **clé USB** d’une capacité minimum d’1Go **OU** un **CD vierge** standard
@@ -41,9 +41,9 @@ Il est **fortement conseillé** d’installer YunoHost sur **Debian Jessie** ave
 
 ---
 
-Pour se connecter directement sur l’ordinateur (uniquement en local) : 
-* Utilisateur : **root**
-* Mot de passe : **yunohost**
+Pour se connecter directement sur l’ordinateur (uniquement en local) : 
+* Utilisateur : **root**
+* Mot de passe : **yunohost**
 
 ---
 ***Si vous avez besoin d’aide lors de ces étapes, n’hésitez pas à utiliser les différents [moyens de support](/support_fr).***

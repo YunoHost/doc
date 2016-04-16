@@ -4,12 +4,12 @@ Ce document a pour but de vous apprendre à packager une application pour YunoHo
 
 ### Prérequis
 Pour packager une application, voici les prérequis :
-* Un compte sur un serveur git comme [GitHub](https://github.com/) pour pouvoir ensuite publier l’application ;
-* Maîtriser un minimum `git`, le Shell et d’autres notions de programmation ;
+* Un compte sur un serveur git comme [GitHub](https://github.com/) pour pouvoir ensuite publier l’application ;
+* Maîtriser un minimum `git`, le Shell et d’autres notions de programmation ;
 * Une [machine virtuelle ou sur un serveur distant](/install_fr) pour packager et tester son paquet.
 
 ### Contenu
-Un paquet YunoHost est composé :
+Un paquet YunoHost est composé :
 
 * d’un `manifest.json`
 * d’un dossier `scripts`, composé de cinq scripts Shell `install`, `remove`, `upgrade`, `backup` et `restore`
@@ -40,19 +40,19 @@ Comme les instances de YunoHost possèdent une architecture unifiée, vous serez
 <a class="btn btn-lg btn-default" href="packaging_apps_helpers_fr">Commandes pratiques</a>
 
 ### Améliorer la qualité du paquet d’installation
-Vous trouverez ci-dessous une liste des point à vérifier concernant la qualité de vos scripts :
-* Vos scripts utilisent bien `sudo cp -a ../sources/. $final_path` plutôt que `sudo cp -a ../sources/* $final_path` ;
-* Votre script d’installation contient une gestion en cas d’erreurs du script pour supprimer les fichiers résiduels à l’aide de `set -e` et de `trap` ;
-* Votre script d’installation utilise une méthode d’installation en ligne de commande plutôt qu’un appel curl via un formulaire web d’installation ;
-* Votre script d’installation enregistre les réponses de l’utilisateur ;
-* Vous avez vérifié les sources de l’application avec une somme de contrôle (sha256, sha1 ou md5) ou une signature PGP ;
-* Vos scripts ont été testé sur Debian Jessie ainsi que sur les architectures 32 bits, 64 bits et ARM ;
+Vous trouverez ci-dessous une liste des points à vérifier concernant la qualité de vos scripts :
+* Vos scripts utilisent bien `sudo cp -a ../sources/. $final_path` plutôt que `sudo cp -a ../sources/* $final_path` ;
+* Votre script d’installation contient une gestion en cas d’erreurs du script pour supprimer les fichiers résiduels à l’aide de `set -e` et de `trap` ;
+* Votre script d’installation utilise une méthode d’installation en ligne de commande plutôt qu’un appel curl via un formulaire web d’installation ;
+* Votre script d’installation enregistre les réponses de l’utilisateur ;
+* Vous avez vérifié les sources de l’application avec une somme de contrôle (sha256, sha1 ou md5) ou une signature PGP ;
+* Vos scripts ont été testés sur Debian Jessie ainsi que sur les architectures 32 bits, 64 bits et ARM ;
 * Les scripts backup et restore sont présents et fonctionnels.
 
 ### Script de vérification du paquet
 <a class="btn btn-lg btn-default" href="https://github.com/YunoHost/package_checker">Vérificateur de paquets</a>
 
-Il s’agit d’un script Python qui vérifie :
+Il s’agit d’un script Python qui vérifie :
 * que le paquet est à jour concernant les dernières spécifications
 * que tous les fichiers sont présents
 * que le manifeste ne comporte pas d’erreur de syntaxe

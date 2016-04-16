@@ -1,7 +1,7 @@
 #Radicale
 
 <div class="alert alert-info" markdown="1">
-Radicale est maintenant remplacé par Baikal
+Radicale est maintenant remplacé par Baïkal
 </div>
 
 ## CalDAV Sync

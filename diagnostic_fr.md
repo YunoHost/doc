@@ -6,7 +6,7 @@ Si vous avez réussi l’[installation](/install_fr) de YunoHost et passé l’�
 
 Dans un navigateur web, essayez d’accéder à votre serveur grâce au nom de domaine que vous avez entré à l’étape de post-installation.
 
-Par exemple : `http://mondomaine.org`
+Par exemple : `http://mondomaine.org`
 
 <div class="alert alert-warning">
 Si vous avez optez pour un nom de domaine se terminant par <b>.nohost.me</b> ou <b>.noho.st</b>, vous devrez patienter cinq minutes avant que l’adresse soit atteignable.
@@ -18,7 +18,7 @@ Si vous avez optez pour un nom de domaine se terminant par <b>.nohost.me</b> ou 
 
 ---
 
-### <small>2.</small> Avez-vous bien configuré votre DNS ?
+### <small>2.</small> Avez-vous bien configuré votre DNS ?
 
 <div class="alert alert-info">
 Cette étape n’est pas nécessaire si vous possédez un nom de domaine en <b>.nohost.me</b> ou un <b>.noho.st</b>
@@ -28,7 +28,7 @@ Rendez-vous sur https://www.whatsmydns.net/, entrez votre nom de domaine dans le
 
 ---
 
-### <small>3.</small> Est-ce que les ports de votre box/routeur sont ouverts ?
+### <small>3.</small> Est-ce que les ports de votre box/routeur sont ouverts ?
 
 Si vos DNS sont bien configurés, et que le serveur est accessible localement, vous avez probablement des **ports bloqués** sur votre box/routeur ou non dirigés vers votre serveur.
 Afin de le vérifier, essayez d’accéder à votre serveur avec un client extérieur au réseau local. Par exemple grâce à un autre accès Wi-Fi ou avec un smartphone en 3G/4G.
@@ -44,7 +44,7 @@ Vous pouvez également rediriger les ports manuellement vers l’adresse IP loca
 
 ---
 
-### <small>4.</small> Est-ce que votre box/routeur fait du hairpinning ?
+### <small>4.</small> Est-ce que votre box/routeur fait du hairpinning ?
 
 Si le serveur est accessible de l’extérieur, mais inatteignable via son nom de domaine dans votre réseau local, votre box/routeur ne fait probablement pas correctement de <a href="http://fr.wikipedia.org/wiki/Hairpinning" target="_blank">hairpinning</a>.
 

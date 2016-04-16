@@ -2,10 +2,10 @@
 
 ## Les scripts
 
-Un paquet YunoHost doit contenir cinq scripts Shell : `install`, `remove`, `upgrade`, `backup` et `restore`.
+Un paquet YunoHost doit contenir cinq scripts Shell : `install`, `remove`, `upgrade`, `backup` et `restore`.
 Ces scripts seront exécutés en tant qu’`admin` sur les serveurs YunoHost.
 
-Voici un exemple de script d’`install`:
+Voici un exemple de script d’`install` :
 ```bash
 # Retrieve arguments
 domain=$1
@@ -56,6 +56,6 @@ sudo yunohost app ssowatconf
 ```
 
 ### Utilisation
-Vous devez tout mettre dans le script d’`install` pour que votre application soit entièrement installée. Cela signifie que vous devez installer les dépendances, créer les répertoires requis, initialiser les bases de donnés nécessaires, copier les sources et configurer tout dans l’unique script `install` (et bien sûr faire la procédure inverse dans le script `remove`).
+Vous devez tout mettre dans le script d’`install` pour que votre application soit entièrement installée. Cela signifie que vous devez installer les dépendances, créer les répertoires requis, initialiser les bases de données nécessaires, copier les sources et configurer tout dans l’unique script `install` (et bien sûr faire la procédure inverse dans le script `remove`).
 
-**Attention** : pour des raisons de sécurité, le script est exécuté en tant qu’**admin** dans YunoHost. Assurez-vous de l’essayer en tant qu’**admin** et de préfixer `sudo` aux commandes requises.
+**Attention** : pour des raisons de sécurité, le script est exécuté en tant qu’**admin** dans YunoHost. Assurez-vous de l’essayer en tant qu’**admin** et de préfixer `sudo` aux commandes requises.

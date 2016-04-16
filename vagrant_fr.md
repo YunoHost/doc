@@ -6,7 +6,7 @@
 
 <img src="/images/vagrant.png" width=250>
 
-**Prérequis** : Un ordinateur x86 avec VirtualBox installé et assez de RAM disponible pour lancer une petite machine virtuelle.
+**Prérequis** : Un ordinateur x86 avec VirtualBox installé et assez de RAM disponible pour lancer une petite machine virtuelle.
 
 ---
 
@@ -50,7 +50,7 @@ Vous pouvez accéder à votre vm via l’ip 192.168.33.80
 
 ---
 
-*Une fois l’installation terminée, vous pouvez procéder à la post-installation : **[yunohost.org/postinstall](/postinstall_fr)** *
+*Une fois l’installation terminée, vous pouvez procéder à la post-installation : **[yunohost.org/postinstall](/postinstall_fr)** *
 
 
 ## Image Wheezy avec les dépôts testing/unstable
