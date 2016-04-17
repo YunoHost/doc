@@ -44,7 +44,7 @@ N’hésitez pas à vous créer un compte GitHub pour faire part de vos remarque
 <div class="panel-group" id="app-accordion2-notworking"></div>
 
 <script type="text/template" id="app-template2">
-  <div class="panel panel-default">
+  <div class="panel panel-default panel-{app_state_bootstrap}">
     <div class="panel-heading">
       <div class="panel-title">
         <a data-toggle="collapse" data-parent="#app-accordion" href="#app_{app_id}">{app_name} <em><small>({app_id})</small></em></a>
@@ -57,7 +57,6 @@ N’hésitez pas à vous créer un compte GitHub pour faire part de vos remarque
         <p><strong>Mainteneur</strong> : {app_maintainer} <small class="text-muted">({app_mail})</small></p>
         <p><strong>Dépôt git</strong> : <a href="{app_git}" target="_blank">{app_git}</a> <small class="text-muted">({app_branch})</small></p>
         <p><strong>Licence de l’application</strong> : {app_license}</p>
-        <div class="{app_state}"/>
     </div>
   </div>
 </script>
@@ -92,6 +91,15 @@ $(document).ready(function () {
       if (typeof infos.manifest.description.fr === 'undefined') {
         infos.manifest.description.fr = infos.manifest.description.en;
       }
+
+      if (infos.state === "working") {
+        app_state_bootstrap = "success";
+      } else if (infos.state === "inprogress") {
+        app_state_bootstrap = "warning";
+      } else if (infos.state === "notworking") {
+        app_state_bootstrap = "danger";
+      }
+
       html = $('#app-template2').html()
              .replace(/{app_id}/g, app_id)
              .replace(/{app_name}/g, infos.manifest.name)
@@ -100,6 +108,7 @@ $(document).ready(function () {
              .replace('{app_branch}', infos.git.branch)
              .replace('{app_update}', timeConverter(infos.lastUpdate))
              .replace('{app_state}', infos.state)
+             .replace('{app_state_bootstrap}', app_state_bootstrap)
              .replace('{app_license}', infos.manifest.license);
 
       if (infos.manifest.developer) {
@@ -116,18 +125,6 @@ $(document).ready(function () {
 
       $('#app-accordion2-' + infos.state).append(html);
       $('.app_'+ app_id).attr('id', 'app_'+ app_id);
-
-      setTimeout(function() {
-          $(".notworking").each(function() {
-              $(this).html( '<a class="btn btn-small btn-danger disabled" href="#">Non fonctionnel</a>' );
-          });
-          $(".inprogress").each(function() {
-              $(this).html( '<a class="btn btn-small btn-warning disabled" href="#">En cours</a>' );
-          });
-          $(".working").each(function() {
-              $(this).html( '<a class="btn btn-small btn-success disabled" href="#">Fonctionnel</a>' );
-          });
-      }, 3000);
     });
   });
 });
