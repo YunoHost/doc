@@ -28,7 +28,20 @@ N’hésitez pas à vous créer un compte GitHub pour faire part de vos remarque
 <div class="btn btn-default btn-xs pull-right" data-toggle="collapse" data-target="#app-accordion2 .collapse">Tout déplier</div>
 </div>
 
-<div class="panel-group" id="app-accordion2"></div>
+<h2>Applications dites fonctionnelles</h2>
+<p><b>Remarque : c'est le mainteneur de l'application qui la décrit comme fonctionnelle, pas l'équipe de YunoHost. Installez la à vos risques et péril. Nous ne fournirrons pas de support dessus.</b></p>
+
+<div class="panel-group" id="app-accordion2-working"></div>
+
+<h2>Applications en cours de développement</h2>
+<p>Il s'agit d'application <b>pas encore fonctionnelles</b> mais en cours de développement, nous vous <b>déconseillons fortement de les installer</b> sauf si vous savez ce que vous faites.</p>
+
+<div class="panel-group" id="app-accordion2-inprogress"></div>
+
+<h2>Applications cassées</h2>
+<p>Ne les installez <b>PAS</b>, elles sont là pour référence le temps d'être réparées.</p>
+
+<div class="panel-group" id="app-accordion2-notworking"></div>
 
 <script type="text/template" id="app-template2">
   <div class="panel panel-default">
@@ -101,7 +114,7 @@ $(document).ready(function () {
           .replace('{app_mail}', infos.manifest.maintainer.email);
       }
 
-      $('#app-accordion2').append(html);
+      $('#app-accordion2-' + infos.state).append(html);
       $('.app_'+ app_id).attr('id', 'app_'+ app_id);
 
       setTimeout(function() {
