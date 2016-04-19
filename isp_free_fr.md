@@ -10,17 +10,17 @@ Rendez-vous sur la [console d'administration du site de free](https://subscribe.
 
 ##### Freebox v6 (Revolution / Mini4k)
 
-Allez à l’adresse : http://mafreebox.free.fr/ puis authentifiez-vous.
+Allez à l’adresse : [mafreebox.free.fr](http://mafreebox.free.fr/) puis authentifiez-vous.
 
 #### Ouverture des ports
 
-[Liste des ports à ouvrir](https://yunohost.org/#/isp_box_config_fr).
+[Liste des ports à ouvrir](/isp_box_config_fr).
 
 ##### Freebox ≤ v5 
 
 Cela se passe dans la section *Ma Freebox / Configurer mon routeur*. Il faut :
 
-- Rediriger les [ports à ouvrir](https://yunohost.org/#/isp_box_config_fr) vers l'adresse locale de votre serveur YunoHost.
+- Rediriger les [ports à ouvrir](/isp_box_config_fr) vers l'adresse locale de votre serveur YunoHost.
 - Définir une DMZ vers votre serveur YunoHost.
 
 La présence conjointe de ces deux règles permettent d'accéder à votre serveur de l'extérieur comme de l'intérieur de votre réseau local.
