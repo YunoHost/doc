@@ -45,32 +45,32 @@ Il est toutefois possible d'affiner ces règles par défaut et d'autoriser des p
 Les règles régissant ces droits doivent être inscrite dans le fichier */etc/radicale/rights*
 
 Chaque règle se présente sous cette forme:
-```
+```bash
 # Commentaire précédant la règle et l'expliquant (optionnel évidemment):
 [Nom de la règle]
 user: utilisateur concerné
 collection: calendrier, carnet ou collection concernée.
 permission: permission, r (lecture), w (écriture) ou rw (lecture/écriture)
-```
+```bash
 Le fichier *rights* contient plusieurs exemples pouvant être exploités.
 Pour valider les modifications apportées au fichier */etc/radicale/rights*, radicale doit être rechargé via le service uwsgi.
-```
+```bash
 sudo service uwsgi restart
-```
+```bash
 
 ## Partager des ressources:
 Pour partager un calendrier ou un carnet d'adresses, il suffit d'écrire une règle le permettant. Le partage peut se faire avec un autre utilisateur.
-```
+```bash
 user: ^user1$
 collection: ^user2/shared2.ics$
 permission: rw
-```
+```bash
 Ou publiquement pour un utilisateur distant n'utilisant pas le même serveur.
-```
+```bash
 user: .*
 collection: ^user2/shared2$
 permission: r
-```
+```bash
 Dans les 2 cas, le partage ne fonctionnera qu'en utilisant l'adresse complète du calendrier ou de la collection. Autrement dit, les partages n'apparaissent pas dans la collection d'un utilisateur.  
 Cette limitation peut s'avérer bloquante pour des clients gérant une seule collection, tel que InfCloud. Pour ce cas particulier, une solution permet de contourner ce problème.
 
@@ -79,9 +79,9 @@ Cette limitation peut s'avérer bloquante pour des clients gérant une seule col
 
 Pour permettre à un partage d'apparaître directement dans la collection d'un utilisateur, il faut exploiter l'usage des fichiers sous Radicale.  
 En créant simplement un lien symbolique de la ressource à partager.
-```
+```bash
 ln -sr user2/shared.ics user1/user2_shared.ics
-```
+```bash
 La ressource partagée devient ainsi une ressource de la collection de user1, alors qu'elle reste physiquement dans la collection de user2.  
 En revanche, sans avoir recours à des règles pour chaque ressource de la collection de user1, la règle générale s'applique. user1 obtient donc le droit de lecture ET d'écriture par défaut sur la ressource partagé car elle fait partie de sa collection.
 
@@ -98,6 +98,6 @@ Il est toutefois déconseillé de rester sur ce mode, car le log se rempli très
 ## Modifier la configuration de InfCloud:
 La configuration de InfCloud se trouve dans le fichier *infcloud/config.js*  
 Pour prendre en compte une modification dans le fichier *config.js* (ou tout autre fichier de InfCloud) il faut recharger le cache avec le script fourni.
-```
+```bash
 sudo ./cache_update.sh
-```
+```bash

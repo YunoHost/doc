@@ -45,32 +45,32 @@ It is possible to refine these default rules and to allow sharing by allowing us
 The rules governing these rights should be included in the */etc/radicale/rights*
 
 Each rule is in this form:
-```
+```bash
 # Comment before rule and explaining that (optional of course):
 [Rule Name]
 user: user concerned
 collection: calendar, book or collection concerned.
 permission: permission, r (read), w (write) or rw (read/write)
-```
+```bash
 *Rights* file contains several examples that can be exploited.  
 To validate changes to the */etc/radicale/rights* file, radical must be recharged via uwsgi service.
-```
+```bash
 sudo service uwsgi restart
-```
+```bash
 
 ## Share resources:
 To share a calendar or address book, just write a rule permitting. Sharing can be done with another user.
-```
+```bash
 user: ^user1$
 collection: ^user2/shared2.ics$
 permission: rw
-```
+```bash
 Or publicly for a remote user does not use the same server.
-```
+```bash
 user: .*
 collection: ^user2/shared2.ics$
 permission: r
-```
+```bash
 In both cases, the sharing works only using the full address of the calendar or collection. In other words, the shares do not appear in the collection of a user.  
 This limitation may be blocking for clients managing a single collection, as InfCloud. In this particular case, a solution overcomes this problem.
 
@@ -79,9 +79,9 @@ This limitation may be blocking for clients managing a single collection, as Inf
 
 To enable sharing to occur directly in the collection of a user, it must exploit the use of files in Radicale.  
 By simply creating a symbolic link to the resource sharing.
-```
+```bash
 ln -sr user2/shared.ics user1/user2_shared.ics
-```
+```bash
 The shared resource becomes a resource from the collection of user1, while it physically remains in the collection of user2.  
 However, without recourse to the rules for each resource in the collection of user1, the general rule applies. user1 gets so read and write access by default on the shared resource because it is part of his collection.
 
@@ -98,6 +98,6 @@ However, do not stay on this mode because the log is filled very quickly.
 ## Change config of InfCloud:
 The configuration of InfCloud is in the *infcloud/config.js* file  
 To load any changes in the *config.js* file (or other file of InfCloud) must reload the cache with the script provided.
-```
+```bash
 sudo ./cache_update.sh
-```
+```bash
