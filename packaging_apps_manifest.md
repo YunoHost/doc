@@ -17,6 +17,9 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
         "name": "kload",
         "email": "kload@kload.fr"
     },
+    "requirements": {
+        "yunohost": ">> 2.3.12"
+    },
     "multi_instance": "true",
     "services": [
         "nginx",
@@ -62,6 +65,8 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
 * **license**: application license: `free` or `non-free`. Be careful to not confuse with package license which must be put in `LICENSE` file.
 
 * **maintainer**: informations about the app maintainer for contact.
+
+- **requirements**: dependency of the application package to a Debian YunoHost package version. For instance, "yunohost": ">> 2.3.12", `yunohost` package version must be up to `2.3.12`.
 
 * [**multi_instance**](packaging_apps_multiinstance_en): it defines app's ability to be installed multiple times.
 

@@ -17,6 +17,9 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
         "name": "kload",
         "email": "kload@kload.fr"
     },
+    "requirements": {
+        "yunohost": ">> 2.3.12"
+    },
     "multi_instance": "true",
     "services": [
         "nginx",
@@ -62,6 +65,8 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
 * **license** : licence avec laquelle l’application est distribuée : `free`, `non-free`. Attention à ne pas confondre avec la licence du paquet qui doit être mise dans le fichier `LICENSE`.
 
 * **maintainer** : informations à propos du mainteneur du paquet de l’application pour pouvoir le contacter.
+
+- **requirements** : dépendance du paquet de l’application à la version d’un paquet Debian de YunoHost. Par exemple : "yunohost": ">> 2.3.12", le paquet `yunohost` doit être de version supérieur à `2.3.12`.
 
 * [**multi_instance**](packaging_apps_multiinstance_fr) : capacité d’une application d’être installée plusieurs fois.
 
