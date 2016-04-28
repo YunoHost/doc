@@ -7,19 +7,16 @@ Radicale est installé par défaut avec le client web InfCloud qui permettra de 
 Pour connecter un autre client au serveur radicale, il faut renseigner ces adresses :
 
 ### Collection CalDAV/CardDAV complète d’un utilisateur
-URL : https://domain.tld/path/user/
-
-Exemple : https://example.org/radicale/moi/
+- URL : https://domain.tld/path/user/
+- Exemple : https://example.org/radicale/moi/
 
 ### Pour connecter un calendrier en particulier
-URL : https://domain.tld/path/user/calendar.ics/
-
-Exemple : https://example.org/radicale/moi/calendar.ics/
+- URL : https://domain.tld/path/user/calendar.ics/
+- Exemple : https://example.org/radicale/moi/calendar.ics/
 
 ### Pour connecter un carnet d’adresses en particulier
-URL : https://domain.tld/path/user/AddressBook.vcf/
-
-Exemple : https://example.org/radicale/moi/AddressBook.vcf/
+- URL : https://domain.tld/path/user/AddressBook.vcf/
+- Exemple : https://example.org/radicale/moi/AddressBook.vcf/
 
 ### Créer un nouveau calendrier ou un nouveau carnet d’adresses
 Créer un nouveau calendrier ou un nouveau carnet d’adresses est très simple avec radicale, il suffit d’y accéder! Radicale créera tout nouveau calendrier ou carnet d’adresses inexistant si vous tentez d’y accéder.
