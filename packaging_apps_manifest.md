@@ -6,6 +6,7 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
 {
     "name": "Roundcube",
     "id": "roundcube",
+    "packaging_format": 1,
     "description": {
         "en": "Open Source Webmail software",
         "fr": "Webmail Open Source"
@@ -51,6 +52,8 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
 * **name**: app name. It does not have to be unique, but it should be, since it is the name shown to all the YunoHost administrators in the app list.
 
 * **id**: ID of the app. You have to ensure that this ID is unique before submit an app integration request.
+
+- **packaging_format**: package version. Actual version is **1**. This key has been set up to make independant packaging evolution versions from YunoHost versions evolution.
 
 * **description**: complete app description. You can make it as detailed as you feel it should be. Only `en` is required right now, but you can translate the description by prepending the locale prefix.
 

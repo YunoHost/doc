@@ -6,6 +6,7 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
 {
     "name": "Roundcube",
     "id": "roundcube",
+    "packaging_format": 1,
     "description": {
         "en": "Open Source Webmail software",
         "fr": "Webmail Open Source"
@@ -51,6 +52,8 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
 * **name** : nom de l’application. Son unicité n’est pas nécessaire. Il est tout de même conseillé étant donné que c’est le nom qui apparaît dans la liste des applications pour les administrateurs de serveurs YunoHost.
 
 * **id** : identifiant de l’application. Vous devez vous assurer de son unicité.
+
+- **packaging_format** : version de packaging du paquet. La version **1** est la version actuelle. Cette clé a été mise en place afin de faire évoluer les versions de packaging de manière décorrélée des versions de YunoHost.
 
 * **description** : description complète de l’application. Vous pouvez la détailler comme bon vous semble. Uniquement le champs `en` (english) est requis, vous pouvez également ajouter la traduction en français :)
 
