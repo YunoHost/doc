@@ -22,6 +22,8 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [CiviCRM](https://civicrm.org/)
 * [Commafeed](https://github.com/Athou/commafeed)
 * [Coquelicot](https://coquelicot.potager.org/) – [package](https://github.com/M5oul/coquelicot_ynh)
+- [Cronkeep](https://github.com/cronkeep/cronkeep)
+- [CronWeb](https://github.com/fisherinnovation/CronWeb)
 * [CumulusClips](http://cumulusclips.org/)
 * [Darkwire.io](https://github.com/seripap/darkwire.io)
 * [Deluge](http://deluge-torrent.org/) (with WebUI)
