@@ -93,7 +93,7 @@ $(document).ready(function () {
       }
 
       if (infos.state === "working") {
-        app_state_bootstrap = "default";
+        app_state_bootstrap = "success";
       } else if (infos.state === "inprogress") {
         app_state_bootstrap = "warning";
       } else if (infos.state === "notworking") {
