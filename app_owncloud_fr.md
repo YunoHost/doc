@@ -8,7 +8,7 @@ Le répertoire des donnés d’Owncloud (contenant les fichiers) sont dans `/hom
 
 Il est possible de déplacer ces données sur autre support mémoire.
 
-Pour cela, il faut spécifier le nouveau chemin dans le fichier `/var/www/owncloud/config` à la ligne `datadirectory`
+Pour cela, il faut spécifier le nouveau chemin dans le fichier `/var/www/owncloud/config/config.php` à la ligne `datadirectory`
 
 Il faut également s’assurer de donner les droits à Owncloud sur ce répertoire
 
