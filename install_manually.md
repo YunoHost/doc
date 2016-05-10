@@ -23,7 +23,7 @@ sudo passwd root
 
 4. Execute the installation script
 ```bash
-cd /tmp/install_script && sudo ./install_yunohostv2
+cd /tmp/install_script && sudo ./install_yunohost
 ```
 
 <br>

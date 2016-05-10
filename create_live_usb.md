@@ -62,7 +62,7 @@ apt-get --no-install-recommends install network-manager
 9. **chroot** Install YunoHost
 ```bash
 git clone https://github.com/YunoHost/install_script /tmp/yunohost_install
-cd /tmp/yunohost_install && ./autoinstall_yunohostv2
+cd /tmp/yunohost_install && ./install_yunohost -a
 ```
 
 10. **chroot** Set parameters in order to launch everything right
