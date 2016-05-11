@@ -44,7 +44,7 @@
   <div class="call-to-action">
     <a class="btn btn-primary btn-lg" href="/try">Try it</a> 
     <a class="btn btn-success btn-lg" href="/install">Get started</a>
-    <p class="text-muted"><small>YunoHost v2.2</small></p>
+    <p class="text-muted"><small>YunoHost v2.4</small></p>
   </div>
 
   <div class="row cf">

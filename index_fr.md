@@ -40,7 +40,7 @@
   <div class="call-to-action">
     <a class="btn btn-primary btn-lg" href="/try_fr">Essayer</a> 
     <a class="btn btn-success btn-lg" href="/install_fr">Installer</a>
-    <p class="text-muted"><small>YunoHost v2.2</small></p>
+    <p class="text-muted"><small>YunoHost v2.4</small></p>
   </div>
 
   <hr />
