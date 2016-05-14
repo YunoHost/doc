@@ -1,6 +1,6 @@
 ## DNS zone configuration
 
-Sample DNS zone configuration for `domain.tld` domain nane:
+Sample DNS zone configuration for `domain.tld` domain name:
 
 #### Redirection from the domain name to the IP address
 ```bash
@@ -45,11 +45,11 @@ Replace:
  * `111.222.333.444`: [IPv4](http://ip.yunohost.org/).
  * `2001:AABB:CCDD:EEFF:1122:3344:5566:7788`: [IPv6](http://ip6.yunohost.org/).
 
-DNS lines for subdomains, XMPP and email does not works without a redirection from the domain name to the IP address (one line is enough) because they depends on it.
+DNS lines for subdomains, XMPP and email does not work without a redirection from the domain name to the IP address (one line is enough) because they depend on it.
 
-<div class="alert alert-info"><b>To begin:</b> lines with "(Minimal)" are the minimal required DNS entries to make works redirection from the domain name to the IP adress, XMPP and email.</div>
+<div class="alert alert-info"><b>To begin:</b> lines with "(Minimal)" are the minimal required DNS entries to make redirection work from the domain name to the IP adress, XMPP and email.</div>
 
 <div class="alert alert-warning"><b>Warning:</b> <b>@</b> is the default domain name currently defined, some registrar (like OVH) does not accept it, so replace @ by your domain name (domain.tld**.**) with a dot at the end.</div>
 
 #### Time to live
-All DNS lines above have `1800` value (30 minutes). It corresponds to [Time to live (TTL)](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) which represents and indicate time, in seconds, during which the DNS line can be kept in the cache. After this time, the information must me considered obsolete and must be update.
+All DNS lines above have `1800` value (30 minutes). It corresponds to [Time to live (TTL)](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) which represents and indicate time, in seconds, during which the DNS line can be kept in the cache. After this time, the information must me considered obsolete and must be updated.
