@@ -18,6 +18,7 @@ On peut donc le considérer comme une distribution, comprenant les logiciels sui
 <img src="/images/dovecot.png">
 <img src="/images/rspamd.png">
 <img src="/images/XMPP_logo.png" width=80>
+<img src="/images/metronome-logo-180x180.png" width=80>
 
 * [Nginx](http://nginx.org/) : un serveur web
 * [Postfix](http://www.postfix.org/) : un serveur de messagerie électronique SMTP
