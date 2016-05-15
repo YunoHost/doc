@@ -72,15 +72,8 @@ En fonction de l’autorité d’enregistrement, des certificats intermédiaires
 
 Les certificats intermédiaires et root doivent être réunis avec le certificat obtenu pour créer une chaîne de certificats unifiés.
 
-En cas d’utilisation d’un certificat racine (Cacert) :
-
 ```bash
 cat ae_certs/ssl.crt ae_certs/intermediate_ca.pem ae_certs/ca.pem | sudo tee crt.pem```
-
-En cas d’utilisation du certificat intermédiaire seulement (StartSSL).
-
-```bash
-cat ae_certs/ssl.crt ae_certs/intermediate_ca.pem | sudo tee crt.pem```
 
 La clé privée doit être, elle, convertie au format pem.
 
