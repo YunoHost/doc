@@ -1,16 +1,20 @@
 <a class="btn btn-lg btn-default" href="packaging_apps_en">Application packaging</a>
 
-### Helpers
-It's recommended to use helpers.
+## Shell helpers
 
-#### Shell
-From YunoHost 2.4, [shell helpers](https://dev.yunohost.org/projects/yunohost/repository/yunohost/revisions/unstable/show/data/helpers.d) are available.
+Since YunoHost 2.4 release, **new shell helpers** are available to ease packaging, in particular for common tasks like password generation, MySQL database creation…
+
+Examples are available in the [example application](https://github.com/YunoHost/example_ynh/blob/master/scripts/install). We advise to use them. 
+
+You can find them on this [repository](https://github.com/YunoHost/yunohost/blob/unstable/data/helpers.d).
 
 To use them, you need to add following lines in the shell scripts:
 ```bash
 # Source app helpers
 . /usr/share/yunohost/helpers
 ```
+
+<!--
 <br />
 
 #### Moulinette
@@ -79,3 +83,4 @@ sudo yunohost app ssowatconf
 <blockquote>
 This helper reloads the SSO configuration. You have to call it at the end of the script when you are packaging a web app.
 </blockquote>
+-->

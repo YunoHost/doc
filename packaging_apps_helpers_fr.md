@@ -1,16 +1,15 @@
 <a class="btn btn-lg btn-default" href="packaging_apps_fr">Packaging d’application</a>
 
-## Commandes pratiques
-Il est conseillé d’utiliser les commandes pratiques.
 
-#### Shell
-À partir de YunoHost 2.4, des [helpers en shell](https://dev.yunohost.org/projects/yunohost/repository/yunohost/revisions/unstable/show/data/helpers.d) sont disponible.
+## Commandes pratiques en Shell
 
-Pour pouvoir les utiliser il faut ajouter les lignes suivantes :
-```bash
-# Source app helpers
-. /usr/share/yunohost/helpers
-```
+À partir de YunoHost 2.4, de **nouvelles commandes pratiques *(helpers)* en shell** sont disponible pour faciliter le *packaging*, particulièrement pour des tâches répétitives comme la génération de mot de passe, la création de base de donnés MySQL…
+
+Des exemples sont disponibles dans l’[application d’exemple](https://github.com/YunoHost/example_ynh/blob/master/scripts/install). Il est conseillé d’utiliser les commandes pratiques.
+
+Vous pourrez les retrouver dans ce [dépôt](https://github.com/YunoHost/yunohost/blob/unstable/data/helpers.d).
+
+<!--
 <br />
 
 #### Moulinette
@@ -88,3 +87,4 @@ sudo yunohost app ssowatconf
 <blockquote>
 Cette commande régénère la configuration du SSO. Vous devez l’appeler à la fin des scripts lorsque vous packagez une application Web.
 </blockquote>
+-->
