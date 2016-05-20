@@ -9,6 +9,12 @@ Des exemples sont disponibles dans l’[application d’exemple](https://github.
 
 Vous pourrez les retrouver dans ce [dépôt](https://github.com/YunoHost/yunohost/blob/unstable/data/helpers.d).
 
+Pour pouvoir utiliser les helpers, il faudra ajouter les lignes suivantes au début des scripts shell :
+```bash
+# Source app helpers
+. /usr/share/yunohost/helpers
+```
+
 <!--
 <br />
 
