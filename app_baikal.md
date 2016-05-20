@@ -7,7 +7,12 @@ In SSO portal, click on "Baïkal", a link lead to a web page showing a message s
 
 https://domain.org/baikal/admin
 
-The user name specified is "admin" followed by the specific password choosen at Baïkal installation procedure.
+The user name specified is "admin" followed by the specific password choosen at Baïkal installation procedure. Please note, the password should not contain special characters.
+
+### Example of creating a new user:
+
+Go to the "settings" tab, select "Digest" in "WebDAV authentication type".
+Add users to the "Users and resources" tab.
 
 ## CalDAV Connection
 
