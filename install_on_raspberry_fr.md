@@ -11,11 +11,11 @@
 - Un autre ordinateur pour parcourir ce guide et accéder à votre Raspberry Pi
 - Un écran et un clavier sont recommandés pour pouvoir contrôler votre Raspberry Pi si un problème apparaît
 - Un [fournisseur d’accès correct](/isp_fr), de préférence avec une bonne vitesse d’upload
-- Les *images YunoHost pour Raspberry Pi**, disponible ici :
+- Les **images YunoHost pour Raspberry Pi**, disponible ici :
  - [Officielle, Wheezy/YunoHost 2.2 créée le 4 juin 2015](http://build.yunohost.org/yunohost4rpi2.img.7z)
  - [Non officielle Jessie/YunoHost 2.2 créée le 5 décembre 2015](https://forum.yunohost.org/t/building-a-new-image-for-raspberry-debian-jessie-fr-en/1101/2)
 
-<div class="alert alert-info">**Ces deux images ne sont plus à jour**. Personne ne maintien d’image de YunoHost pour Raspberry Pi. Si vous souhaitez maintenir une image pour le projet YunoHost.</div>
+<div class="alert alert-info">**Ces deux images ne sont plus à jour**. Personne ne maintiens d’image de YunoHost pour Raspberry Pi. Vous pouvez maintenir une image pour le projet YunoHost.</div>
 
 ---
 
