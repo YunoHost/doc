@@ -108,9 +108,11 @@
 
   <div class="text-center">
     <h1>Hey! We are humans!<br /><small> If you have questions, problems or if you are just an enthusiast, leave a message on our chatroom by clicking on the button below &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+<!--
     <p class="liberapay">
      <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Donation button" title="Liberapay" /></a>
     </p>
+-->
   </div>
 
 </div><!-- boring-part -->
