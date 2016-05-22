@@ -6,14 +6,16 @@
 <img src="/images/Raspberry_Pi_2_Model_B_v1.1_front_angle_new.jpg" width=350>
 <img src="/images/micro-sd-card.jpg">
 
-* Un Raspberry Pi 1 ou 2
-* Une carte SD de capacité minimale de **4 Go** et une certification de vitesse **class10** sont recommandées
-* Un autre ordinateur pour parcourir ce guide et accéder à votre Raspberry Pi
-* Un écran et un clavier sont recommandés pour pouvoir contrôler votre Raspberry Pi si un problème apparaît
-* Un [fournisseur d’accès correct](/isp_fr), de préférence avec une bonne vitesse d’upload
-* L’**image YunoHost pour Raspberry Pi**, disponible ici (à **dézipper**) :
+- Un Raspberry Pi 1, 2 ou 3
+- Une carte SD de capacité minimale de **4 Go** et une certification de vitesse **class10** sont recommandées
+- Un autre ordinateur pour parcourir ce guide et accéder à votre Raspberry Pi
+- Un écran et un clavier sont recommandés pour pouvoir contrôler votre Raspberry Pi si un problème apparaît
+- Un [fournisseur d’accès correct](/isp_fr), de préférence avec une bonne vitesse d’upload
+- Les *images YunoHost pour Raspberry Pi**, disponible ici :
+ - [Officielle, Wheezy/YunoHost 2.2 créée le 4 juin 2015](http://build.yunohost.org/yunohost4rpi2.img.7z)
+ - [Non officielle Jessie/YunoHost 2.2 créée le 5 décembre 2015](https://forum.yunohost.org/t/building-a-new-image-for-raspberry-debian-jessie-fr-en/1101/2)
 
-    [Image wheezy pour Raspberry Pi 1 et 2 créée le 4 juin 2015](http://build.yunohost.org/yunohost4rpi2.img.7z)
+<div class="alert alert-info">**Ces deux images ne sont plus à jour**. Personne ne maintien d’image de YunoHost pour Raspberry Pi. Si vous souhaitez maintenir une image pour le projet YunoHost.</div>
 
 ---
 

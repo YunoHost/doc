@@ -6,14 +6,18 @@
 <img src="/images/Raspberry_Pi_2_Model_B_v1.1_front_angle_new.jpg" width=350>
 <img src="/images/micro-sd-card.jpg">
 
-* A Raspberry Pi model 1 or 2
-* An SD card: **4GB** capacity (or more) and **class10** speed rate are highly recommended
-* An other computer to read this guide and access to your Raspberry Pi
-* A screen and a keyboard are recommended to control your Raspberry Pi if a problem occurs.
-* A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
-* The **YunoHost Raspberry Pi image**, available here (to **unzip**):
+- A Raspberry Pi model 1, 2 or 3
+- An SD card: **4GB** capacity (or more) and **class10** speed rate are highly recommended
+- An other computer to read this guide and access to your Raspberry Pi
+- A screen and a keyboard are recommended to control your Raspberry Pi if a problem occurs.
+- A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
+- **YunoHost Raspberry Pi images**, available here:
+ - [Official Wheezy/YunoHost 2.2 created the 4th June 2015](https://build.yunohost.org/yunohost-rpi2_wheezy.7z)
+ - [Non-official Jessie/YunoHost 2.2 created the 5th December 2015](https://forum.yunohost.org/t/building-a-new-image-for-raspberry-debian-jessie-fr-en/1101/2)
 
-    [Wheezy image for Raspberry Pi 1 and 2 created the 4th june 2015](http://build.yunohost.org/yunohost4rpi2.img.7z)
+
+<div class="alert alert-info">**This two images are old**. Nobody is maintaining a YunoHost image for Raspberry Pi. You could maintain on image for YunoHost project.</div>
+
 
 ---
 
