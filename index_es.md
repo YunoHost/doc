@@ -104,7 +104,9 @@
 
   <div class="text-center">
     <h1>¡ Hey ! Somos humanos<br /><small> Si tiene algun pregunta, un problema, o simplemente estás interesado, ven decir "¡ Hola !" sobre nuetra salón de discusión clic en el botón abajo &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
-    <a href="http://flattr.com/thing/3164470/YunoHost-web-site" target="_blank"><img src="/images/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
+   <p class="liberapay">
+   <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Donation button" title="Liberapay" /></a>
+   </p>
   </div>
 
 </div><!-- boring-part -->
