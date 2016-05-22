@@ -6,6 +6,8 @@ It could be used on many ARM board (Rasberry Pi, Olimex, Cubieboard…).
 
 This tutorial is based on [Yunocubian](https://github.com/M5oul/Yunocubian).
 
+You could find [ARM image builder from Debian Jessie](https://github.com/YunoHost/install_script/pull/36).
+
 ### Download minimal Debian Jessie
 Download a Debian Jessie image compatible with the hardware **without desktop environnement** installed:
 
