@@ -15,7 +15,7 @@
  - [Officielle, Wheezy/YunoHost 2.2 créée le 4 juin 2015](http://build.yunohost.org/yunohost4rpi2.img.7z)
  - [Non officielle Jessie/YunoHost 2.2 créée le 5 décembre 2015](https://forum.yunohost.org/t/building-a-new-image-for-raspberry-debian-jessie-fr-en/1101/2)
 
-<div class="alert alert-info">**Ces deux images ne sont plus à jour**. Personne ne maintiens d’image de YunoHost pour Raspberry Pi. Vous pouvez maintenir une image pour le projet YunoHost.</div>
+<div class="alert alert-info">**Ces deux images ne sont plus à jour**. Personne ne maintiens d’image de YunoHost pour Raspberry Pi. Vous pouvez [maintenir une image](build_arm_image_en) pour le projet YunoHost.</div>
 
 ---
 

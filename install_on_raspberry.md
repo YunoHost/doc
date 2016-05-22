@@ -16,7 +16,7 @@
  - [Non-official Jessie/YunoHost 2.2 created the 5th December 2015](https://forum.yunohost.org/t/building-a-new-image-for-raspberry-debian-jessie-fr-en/1101/2)
 
 
-<div class="alert alert-info">**This two images are old**. Nobody is maintaining a YunoHost image for Raspberry Pi. You could maintain on image for YunoHost project.</div>
+<div class="alert alert-info">**This two images are old**. Nobody is maintaining a YunoHost image for Raspberry Pi. You could [maintain an image](build_arm_image_en) for YunoHost project.</div>
 
 
 ---
