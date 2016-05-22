@@ -8,9 +8,10 @@ Il est important d’identifier votre type de machine avant de procéder à l’
 | Type | Exemples de machines | Guide d’installation |
 |------|-----------------------|----------------------|
 | **x86** | PC de bureau, PC portables, Mac Intel (après 2007), netbooks, nettops, etc. | [Installation via CD/USB](/install_iso_fr) |
-| **armhf** | [Raspberry Pi](/install_on_raspberry_fr), [Cubieboard](/install_on_cubieboard_fr), Olimex, Cubox, Beagleboard, etc… | [Installation sur Debian ARM](/install_on_debian_fr) |
+| **armhf** | [Carte ARM](install_on_arm_board_fr), [Raspberry Pi](/install_on_raspberry_fr), Olimex, Cubox, Beagleboard, etc… | [Installation sur Debian ARM](/install_on_debian_fr) |
 
 ### Configuration minimale
+- 500 MHz de processeur
 * 256 Mo de RAM
 * 4 Go d’espace de stockage
 

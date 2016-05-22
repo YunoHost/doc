@@ -30,11 +30,16 @@ This page lists few installation guides.
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_raspberry"><img src="/images/Raspberry_Pi_2_Model_B_v1.1_front_angle_new.jpg" height=150 style="vertical-align:bottom"><b><p>On a Raspberry Pi</p></b></a>
+<a href="/installation_brique_fr"><img src="/images/thisisinternet.png" height=150 style="vertical-align:bottom"><b><p>On the Internet Cube</p></b></a>
+</div>
+
+
+<div class="col col-md-3 text-center">
+<a href="/install_on_arm_board"><img src="/images/cubieboard2.png" height=150 style="vertical-align:bottom"><b><p>On an ARM board</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_cubieboard"><img src="/images/cubieboard2.png" height=150 style="vertical-align:bottom"><b><p>On a Cubieboard</p></b></a>
+<a href="/install_on_raspberry"><img src="/images/Raspberry_Pi_2_Model_B_v1.1_front_angle_new.jpg" height=150 style="vertical-align:bottom"><b><p>On a Raspberry Pi</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">

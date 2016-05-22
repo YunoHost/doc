@@ -8,9 +8,10 @@ It is important to identify your machine kind before proceeding to the installat
 | Arch | Hardware examples | Installation guide |
 |------|-----------------------|----------------------|
 | **x86** | Desktops, Laptops, Mac Intel (after 2007), netbooks, nettops, etc. | [Install via CD/USB](/install_iso) |
-| **armhf** | [Raspberry Pi](/install_on_raspberry), [Cubieboard](/install_on_cubieboard), Cubox, Olimex, Beagleboard, etc. | [Install on ARM Debian](/install_on_debian) |
+| **armhf** | [ARM board](install_on_arm_board), [Raspberry Pi](/install_on_raspberry), Cubox, Olimex, Beagleboard, etc. | [Install on ARM Debian](/install_on_debian) |
 
 ### Minimum requirements
+- 500MHz CPU
 * 256Mo RAM
 * 4Go storage space
 

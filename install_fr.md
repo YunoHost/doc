@@ -34,11 +34,11 @@ Cette page liste plusieurs types d’installations, classés par catégories.
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_raspberry_fr"><img src="/images/Raspberry_Pi_2_Model_B_v1.1_front_angle_new.jpg" height=150 style="vertical-align:bottom"><b><p>Sur Raspberry Pi</p></b></a>
+<a href="/install_on_arm_board_fr"><img src="/images/cubieboard2.png" height=150 style="vertical-align:bottom"><b><p>Sur carte ARM</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_cubieboard_fr"><img src="/images/cubieboard2.png" height=150 style="vertical-align:bottom"><b><p>Sur Cubieboard</p></b></a>
+<a href="/install_on_raspberry_fr"><img src="/images/Raspberry_Pi_2_Model_B_v1.1_front_angle_new.jpg" height=150 style="vertical-align:bottom"><b><p>Sur Raspberry Pi</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
