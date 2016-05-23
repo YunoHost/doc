@@ -66,7 +66,7 @@ yunohost app install https://github.com/author/my_app_package.git
 ### Enhance package
 Here is a list of best practices for application install scripts :
 * scripts should use `sudo cp -a ../sources/. $final_path` instead of `sudo cp -a ../sources/* $final_path`;
-* install script must contain support in case of script errors to delete residuals files thanks to `set -e` and `trap`;
+* install script must contain support in case of script errors to delete residuals files thanks to `set -e` and [`trap`](packaging_apps_trap_fr);
 * install script should use command line method instead of curl call through web install form;
 * install script should save install answers;
 * application sources should be checked with a control sum (sha256, sha1 or md5) or a PGP signature;

@@ -86,6 +86,7 @@
               * [Nginx configuration](packaging_apps_nginx_conf_en)
               * [Multi-instance](packaging_apps_multiinstance_en)
               * [Helpers](packaging_apps_helpers_en)
+              * [Trap usage](packaging_apps_trap_fr)
            * [Applications in progress](/apps_in_progress_en)
            * [Wishlist of applications](/apps_wishlist_en)
            * [Creation of system packages](/build_system_en)
