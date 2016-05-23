@@ -39,7 +39,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
 
 <div class="panel-group" id="app-accordion2-inprogress"></div>
 
-<h2>Borken applications</h2>
+<h2>Broken applications</h2>
 <p>Do <b>NOT</b> install them, they are here as reference while they aren't fixed.</p>
 
 <div class="panel-group" id="app-accordion2-notworking"></div>
