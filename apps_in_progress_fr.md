@@ -25,7 +25,9 @@ yunohost app install https://github.com/<packageur>/<dépôt_app>
 N’hésitez pas à vous créer un compte GitHub pour faire part de vos remarques aux packagers (sous forme d’«&nbsp;issues&nbsp;») ou à leur proposer des améliorations (sous forme de «&nbsp;pull requests&nbsp;»).
 
 <div class="clearfix" style="margin-bottom: 1em;">
-<div class="btn btn-default btn-xs pull-right" data-toggle="collapse" data-target="#app-accordion2 .collapse">Tout déplier</div>
+<div class="btn btn-default btn-xs pull-right" data-toggle="collapse" data-target="#app-accordion2-notworking .collapse">Déplier cassées</div>
+<div class="btn btn-default btn-xs pull-right" data-toggle="collapse" data-target="#app-accordion2-inprogress .collapse">Déplier en cours</div>
+<div class="btn btn-default btn-xs pull-right" data-toggle="collapse" data-target="#app-accordion2-working .collapse">Déplier fonctionnelles</div>
 </div>
 
 <h2>Applications dites fonctionnelles</h2>

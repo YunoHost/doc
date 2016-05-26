@@ -26,7 +26,9 @@ yunohost app install https://github.com/<packager>/<app_repository>
 The packagers will appreciate your remarks. If you test them and find issues, or ideas for improvement, do not hesitate to file issues directly on their repositories project page.
 
 <div class="clearfix" style="margin-bottom: 1em;">
-<div class="btn btn-default btn-xs pull-right" data-toggle="collapse" data-target="#app-accordion2 .collapse">View all</div>
+<div class="btn btn-default btn-xs pull-right" data-toggle="collapse" data-target="#app-accordion2-notworking .collapse">Collapse broken</div>
+<div class="btn btn-default btn-xs pull-right" data-toggle="collapse" data-target="#app-accordion2-inprogress .collapse">Collapse in progress</div>
+<div class="btn btn-default btn-xs pull-right" data-toggle="collapse" data-target="#app-accordion2-working .collapse">Collapse working</div>
 </div>
 
 <h2>Declared as working applications</h2>
