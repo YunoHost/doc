@@ -4,13 +4,13 @@ Ce document a pour but de donner les clés pour créer un environnement de déve
 
 ### Installation de l’environnement de développement
 #### Installation du système de virtualisation
-Installer, avec le gestionnaire de paquet de votre système d’exploitation, Vagrant ou Docker suivant celui que vous souhaitez utiliser.
+Installer, avec le gestionnaire de paquet de votre système d’exploitation, Vagrant.
 
 ```bash
 # Debian, Ubuntu, Mint
-sudo apt-get install docker vagrant
+sudo apt-get install vagrant
 # Fedora
-sudo dnf install docker vagrant vagrant-libvirt
+sudo dnf install vagrant
 ```
 
 #### Télécharger `ynh-dev`
@@ -65,10 +65,6 @@ root@yunohost:/yunohost/# ./ynh-dev deploy
 </div>
 
 ##### Lancer la postinstall
-Avec Docker
-```bash
-root@yunohost:/yunohost/# postinstall
-```
 Avec VirtualBox/Vagrant
 ```bash
 root@yunohost:/yunohost/# yunohost tools postinstall
