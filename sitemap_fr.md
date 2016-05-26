@@ -40,6 +40,7 @@
             * [Utiliser le résolveur DNS de YunoHost](/dns_resolver_fr)
             * [Adresse IP dynamique : configuration d’un DynDNS](dns_dynamicip_fr)
             * [Accéder à son serveur dans son réseau local](/dns_local_network_fr)
+	    - [IPv6](ipv6_fr)
         * [Fournisseurs d’accès à Internet](/isp_fr)
             * [Configuration générique de la box ou du routeur](/isp_box_config_fr)
             * [Free](/isp_free_fr)

@@ -39,6 +39,7 @@
            * [Use the YunoHost DNS resolver](/dns_resolver_en)
            * [Dynamic IP address: configure DynDNS](dns_dynamicip_en)
            * [Access his server on his local network](/dns_local_network_en)
+	   - [IPv6](ipv6_fr)
         * [Internet service provider](/isp)
             * [Generic configuration of the ISP router](/isp_box_config)
         * Applications
