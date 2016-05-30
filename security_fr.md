@@ -45,12 +45,6 @@ nano /etc/ssh/sshd_config
 PasswordAuthentication no
 ```
 
-Pour éviter que YunoHost écrase la configuration du serveur SSH il faut modifier le fichier `/etc/yunohost/yunohost.conf` et passer la ligne ssh à yes
-
-```bash
-ssh=yes
-```
-
 Sauvegardez et relancez le démon SSH.
 
 ---
@@ -66,12 +60,6 @@ nano /etc/ssh/sshd_config
 
 # Recherchez la ligne « Port » et remplacez le numéro du port (par défaut 22) par un autre numéro non utilisé
 Port 22 # à remplacer par exemple par 9777
-```
-
-Pour éviter que yunohost écrase la configuration du serveur SSH il faut modifier le fichier `/etc/yunohost/yunohost.conf` et passer la ligne ssh à yes
-
-```bash
-ssh=yes
 ```
 
 Sauvegardez et relancez le démon SSH.
@@ -121,12 +109,6 @@ sudo nano /etc/ssh/sshd_config
 AllowUsers nom_utilisateur
 ```
 Seuls les utilisateurs mentionnés dans la directive AllowUsers seront alors autorisés à se connecter via SSH, ce qui exclut donc l’utilisateur admin.
-
-Pour éviter que YunoHost écrase la configuration du serveur SSH il faut modifier le fichier `/etc/yunohost/yunohost.conf` et passer la ligne ssh à yes
-
-```bash
-ssh=yes
-```
 
 Sauvegardez et relancez le démon SSH.
 

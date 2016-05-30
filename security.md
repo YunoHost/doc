@@ -55,12 +55,6 @@ nano /etc/ssh/sshd_config
 Port 22 # to replace by 9777 for example
 ```
 
-To prevent YunoHost overwrites the configuration of the SSH server you must edit the file `/etc/yunohost/yunohost.conf` and change ligne ssh to yes
-
-```bash
-ssh=yes
-```
-
 Save and restart SSH daemon.
 
 Then restart the iptables firewall and close the old port in iptables.
@@ -108,12 +102,6 @@ sudo nano /etc/ssh/sshd_config
 AllowUsers user_name
 ```
 Only users listed in the AllowUsers directive will then be allowed to connect via SSH, which excludes the admin user.
-
-To prevent yunohost overwrites the configuration of the SSH server you must edit the file `/etc/yunohost/yunohost.conf` et pass ligne ssh to yes
-
-```bash
-ssh=yes
-```
 
 Save and restart SSH daemon.
 
