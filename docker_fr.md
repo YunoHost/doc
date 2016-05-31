@@ -10,7 +10,10 @@
 
 ## Installer Docker
 
-**Prérequis** : une machine x86 qui tourne sous Ubuntu 14.04 ou supérieur, ArchLinux ou Fedora (sur Debian c’est plus chiant).
+**Prérequis** :
+* une machine qui tourne sous Ubuntu 14.04 ou supérieur, ArchLinux ou Fedora (sur Debian c’est un peu plus compliqué) ...
+* ... **avec systemd**
+* une machine sous architecture processeur AMD64 (PC classique) ou ARM v7 (comme Raspberry PI V2)
 
 Sous Ubuntu :
 ```bash
@@ -41,33 +44,42 @@ docker -d
 ```
 ---
 
-## Installer le conteneur YunoHost
+## Récupérer l'image YunoHost
 
-La commande suivante va télécharger l’image YunoHost pré-construite :
+La commande suivante va télécharger l’image YunoHost pré-construite pour **AMD 64**  :
 ```bash
-docker pull zamentur/yunohost-stable8
+docker pull domainelibre/yunohost
 ```
+
+La commande suivante va télécharger l’image YunoHost pré-construite pour **ARM v7** (ex : Raspberry PI 2):
+```bash
+docker pull domainelibre/yunohost-arm
+```
+
+## Construire l'image YunoHost
 
 Vous pouvez également construire le conteneur manuellement :
-```bash
-docker build -t zamentur/yunohost-stable8 github.com/YunoHost/Dockerfile
-```
 
-Vous pouvez vérifier que le conteneur est bien téléchargé avec la commande `docker images`
+Merci de suivre la section *Building* [ici](https://github.com/aymhce/YunohostDockerImage)
 
 ---
 
 ## Démarrer le conteneur
 
+> **L'hôte linux de docker doit fonctionner avec systemd**
+
+> **ATTENTION : le mode --privileged est nécessaire pour systemd**
+
 Pour démarrer le conteneur, lancez la commande suivante en remplaçant DOMAIN par un domaine valide ex : mondomaine.org => yunohost.mondomaine.org
 ```bash
-docker run -h yunohost.DOMAIN -v $(pwd):/yunohost -d zamentur/yunohost-stable8 /sbin/init
+docker run -h yunohost.DOMAIN -v $(pwd):/yunohost -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro domainelibre/yunohost:2.4 /bin/systemd
 ```
 
 Si vous souhaitez démarrer le conteneur avec tous les ports forwardés sur l’hôte :
 
 ```bash
 docker run -d -h yunohost.DOMAIN -v $(pwd):/yunohost \
+ --privileged \
  -p 25:25 \
  -p 53:53/udp \
  -p 80:80 \
@@ -77,8 +89,9 @@ docker run -d -h yunohost.DOMAIN -v $(pwd):/yunohost \
  -p 5222:5222 \
  -p 5269:5269 \
  -p 5290:5290 \
- zamentur/yunohost-stable8 \
- /sbin/init
+ -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
+ domainelibre/yunohost:2.4 \
+ /bin/systemd
 ```
 
 Plus d’information sur la documentation de Docker :
@@ -95,7 +108,7 @@ docker exec -t -i XXXX /bin/bash
 ```
 Puis lancez la postinstall avec le script dédié à docker
 ```bash
-postinstall
+yunohost tools postinstall
 ```
 
 
@@ -114,7 +127,7 @@ Snapshoter l’état d’un container
 
 ```bash
 docker commit <ID_de_mon_conteneur> LeNomQueJeVeux
-# Exemple : docker commit 3e85317430db zamentur/yunohost-stable8:27042015
+# Exemple : docker commit 3e85317430db yunohost:20160530
 ```
 
 Assigner une IP à un container
