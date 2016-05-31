@@ -72,7 +72,8 @@ Merci de suivre la section *Building* [ici](https://github.com/aymhce/YunohostDo
 
 Pour démarrer le conteneur, lancez la commande suivante en remplaçant DOMAIN par un domaine valide ex : mondomaine.org => yunohost.mondomaine.org
 ```bash
-docker run -h yunohost.DOMAIN -v $(pwd):/yunohost -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro domainelibre/yunohost:2.4 /bin/systemd
+docker run -h yunohost.DOMAIN -v $(pwd):/yunohost -d --privileged \
+-v /sys/fs/cgroup:/sys/fs/cgroup:ro domainelibre/yunohost:2.4 /bin/systemd
 ```
 
 Si vous souhaitez démarrer le conteneur avec tous les ports forwardés sur l’hôte :
