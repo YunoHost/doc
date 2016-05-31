@@ -57,7 +57,8 @@ Please follow *Building* section [here](https://github.com/aymhce/YunohostDocker
 
 To start the container, run the next command by replacing DOMAIN by a valid domain e.g.: example.com => yunohost.example.com
 ```bash
-docker run -h yunohost.DOMAIN -v $(pwd):/yunohost -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro domainelibre/yunohost:2.4 /bin/systemd
+docker run -h yunohost.DOMAIN -v $(pwd):/yunohost -d --privileged \
+-v /sys/fs/cgroup:/sys/fs/cgroup:ro domainelibre/yunohost:2.4 /bin/systemd
 ```
 
 If you want to run the container and forward all the interesting ports to the host:
