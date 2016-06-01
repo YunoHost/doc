@@ -17,5 +17,5 @@ APP=${!#}
 #### Manifeste
 Passer la variable `multi_instance` à `true` dans le [manifeste](packaging_apps_manifest_fr) :
 ```json
- "multi_instance": "true",
+ "multi_instance": true,
 ```

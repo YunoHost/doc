@@ -18,9 +18,9 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
         "email": "kload@kload.fr"
     },
     "requirements": {
-        "yunohost": ">> 2.3.12"
+        "yunohost": ">= 2.4.0"
     },
-    "multi_instance": "true",
+    "multi_instance": true,
     "services": [
         "nginx",
         "php5-fpm",
