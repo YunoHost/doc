@@ -114,7 +114,7 @@ ynh_app_setting_set APP KEY VALUE
 > ```
 
 Le SSO fait appel aux réglages stockés pour l'application afin de déterminer si cette dernière peux être accessible publiquement ou non.  
-Pour cela, 6 clés différents sont disponible :
+Pour cela, 6 clés différentes sont disponible :
 
 Tout d'abord `skipped_uris`, `unprotected_uris` et `protected_uris`. Ces 3 clés sont relatives au chemin (ou *path*) de l'application.
 > Par exemple :
@@ -231,23 +231,72 @@ ynh_die MSG RETCODE
 ```bash
 sudo yunohost app checkport PORT
 ```
-> Cette commande vérifie le `PORT` et retourne une erreur si il est déjà utilisé.  
+> Vérifie le port `PORT` et retourne une erreur si il est déjà utilisé.  
 > La sortie de la commande doit être testée pour en connaître le résultat. Par exemple :
 > ```bash
 > port=PORT_PAR_DEFAUT
-> sudo yunohost app checkport $port
-> while [[ ! $? -eq 0 ]]; do
+> while ! sudo yunohost app checkport $port ; do
 >     port=$((port+1))
->     sudo yunohost app checkport $port
 > done
 > ```
 
 
 ```bash
+sudo yunohost firewall allow [--no-upnp] {TCP,UDP,Both} PORT
+```
+> Ouvre le port `PORT` sur le parefeu en TCP, UDP ou les deux.
+> L'ouverture automatique des ports via upnp peux être désactivé sur ce port en spécifiant l'option `--no-upnp`.
+
+
+```bash
+sudo yunohost firewall disallow {TCP,UDP,Both} PORT
+```
+> Ferme le port `PORT` sur le parefeu en TCP, UDP ou les deux.
+
+
+```bash
 sudo yunohost app checkurl DOMAINPATH -a APP
 ```
-> Cette commande vérifie la disponibilité du chemin DOMAIN/PATH. Il est utile pour les applications web et vous permet d’être sûr que le chemin n’est pas utilisé par une autre application. Si le chemin est inutilisé, elle le « réserve » pour l'application APP.  
+> Vérifie la disponibilité du chemin DOMAIN/PATH. Il est utile pour les applications web et vous permet d’être sûr que le chemin n’est pas utilisé par une autre application. Si le chemin est inutilisé, elle le « réserve » pour l'application APP.  
 > **Remarque** : ne pas préfixer par `http://` ou par `https://` dans le `DOMAINPATH`.
+
+
+```bash
+sudo yunohost app addaccess [--users=USER] APP
+```
+> Autorise l'utilisateur `USER` à accéder à l'application `APP`.
+> Si l'option `--users` n'est pas spécifiée, l'accès à l'application `APP` est accordé à tout les utilisateurs.
+
+
+```bash
+sudo yunohost app removeaccess --users=USER APP
+```
+> Retire l'autorisation d'accès de l'utilisateur `USER` à l'application `APP`.
+
+
+```bash
+sudo yunohost service add NAME [-l LOG]
+```
+> Ajoute le service `NAME` dans l'interface de gestion admin de YunoHost.
+> Le fichier de log du service peux être ajouté avec l'option `-l` en indiquant son chemin absolu.
+
+
+```bash
+sudo yunohost service remove NAME
+```
+> Retire le service `NAME` dans l'interface de gestion admin de YunoHost.
+
+
+```bash
+sudo yunohost hook add APP FILE
+```
+> Ajoute le script de hook `FILE` pour l'application `APP`.
+
+
+```bash
+sudo yunohost hook remove APP
+```
+> Supprime les scripts de hook de l'application `APP`.
 
 
 ```bash
