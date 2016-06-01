@@ -54,7 +54,7 @@ ynh_mysql_dump_db DB > ./FILE
 ```bash
 ynh_package_is_installed PACKAGE
 ```
-> Détermine si le paquet `PACKAGE` est installé sur le système.
+> Détermine si le paquet `PACKAGE` est installé sur le système.  
 > La sortie de la commande doit être testée pour en connaître le résultat. Par exemple :
 > ```bash
 > if ! ynh_package_is_installed "yunohost" ; then
@@ -74,30 +74,31 @@ ynh_package_version PACKAGE
 ```bash
 ynh_package_update
 ```
-> Met à jour la liste des paquets disponibles de manière silencieuse et non interactive.
+> Met à jour la liste des paquets disponibles de manière silencieuse et non interactive.  
 > C'est un `apt-get update` avec les options -y -qq et noninteractive.
 
+<br/>
 
 **Attention, les commandes suivantes sont à éviter autant que possible. Il n'est pas sain d'installer et encore moins de supprimer un paquet sans en gérer les conflits et dépendances. Ceci sera bientôt facilité dans les prochaines versions de YunoHost...**
 
 ```bash
 ynh_package_install PACKAGE1 PACKAGE2
 ```
-> Installe les paquets `PACKAGE1`, `PACKAGE2`, etc de manière non interactive et silencieuse.
+> Installe les paquets `PACKAGE1`, `PACKAGE2`, etc de manière non interactive et silencieuse.  
 > C'est un `apt-get install` avec les options -y -qq et noninteractive.
 
 
 ```bash
 ynh_package_remove PACKAGE1 PACKAGE2
 ```
-> Supprime les paquets `PACKAGE1`, `PACKAGE2`, etc de manière non interactive et silencieuse.
+> Supprime les paquets `PACKAGE1`, `PACKAGE2`, etc de manière non interactive et silencieuse.  
 > C'est un `apt-get remove` avec les options -y -qq et noninteractive.
 
 
 ```bash
 ynh_package_autoremove PACKAGE1 PACKAGE2
 ```
-> Supprime les paquets `PACKAGE1`, `PACKAGE2`, etc ainsi que tous les paquets qui ne semblent plus utilisé, de manière non interactive et silencieuse.
+> Supprime les paquets `PACKAGE1`, `PACKAGE2`, etc ainsi que tous les paquets qui ne semblent plus utilisé, de manière non interactive et silencieuse.  
 > C'est un `apt-get autoremove` avec les options -y -qq et noninteractive.
 
 
@@ -105,14 +106,14 @@ ynh_package_autoremove PACKAGE1 PACKAGE2
 ```bash
 ynh_app_setting_set APP KEY VALUE
 ```
-> Stocke le réglage nommé `KEY` dont la valeur est `VALUE` pour l'application `APP `, afin de le réutiliser plus tard (typiquement dans le script `upgrade`) ou pour que YunoHost puisse se configurer automatiquement (par exemple pour le SSO).
-> Les réglages sont stockés dans le fichier /etc/yunohost/apps/${APP}/settings.yml.
+> Stocke le réglage nommé `KEY` dont la valeur est `VALUE` pour l'application `APP `, afin de le réutiliser plus tard (typiquement dans le script `upgrade`) ou pour que YunoHost puisse se configurer automatiquement (par exemple pour le SSO).  
+> Les réglages sont stockés dans le fichier /etc/yunohost/apps/${APP}/settings.yml.  
 > Par exemple, pour stocker le paramètre de visibilité, privé ou public, d'une application, on notera ainsi :
 > ```bash
 > ynh_app_setting_set nom_app is_public "yes"
 > ```
 
-Le SSO fait appel aux réglages stockés pour l'application afin de déterminer si cette dernière peux être accessible publiquement ou non.
+Le SSO fait appel aux réglages stockés pour l'application afin de déterminer si cette dernière peux être accessible publiquement ou non.  
 Pour cela, 6 clés différents sont disponible :
 
 Tout d'abord `skipped_uris`, `unprotected_uris` et `protected_uris`. Ces 3 clés sont relatives au chemin (ou *path*) de l'application.
@@ -127,18 +128,18 @@ Tout d'abord `skipped_uris`, `unprotected_uris` et `protected_uris`. Ces 3 clés
 > ```
 > concernera le path /blog de l'application, soit https://domain.tld/path_app/blog et ce qui suivra, mais pas https://domain.tld/path_app/.
 
-**skipped_uris**
+**skipped_uris**  
 Une url ajoutée avec la clé *skipped_uris* sera totalement ignorée par le SSO, donc l'accès sera publique et ne prendra pas en compte un utilisateur déjà connecté.
 
-**unprotected_uris**
+**unprotected_uris**  
 Une url ajoutée avec la clé *unprotected_uris* sera accessible publiquement, mais un utilisateur connecté au SSO pourra se connecter en utilisant le header HTTP.
 
-**protected_uris**
+**protected_uris**  
 Une url ajoutée avec la clé *protected_uris* sera bloquée par le SSO et accessible uniquement aux utilisateurs authentifiés.
 
 Les clés `skipped_regex`, `unprotected_regex` et `protected_regex` sont les équivalents en "expressions régulières" des 3 clés précédentes.
-> Il est important de noter que ce ne sont pas véritablement des expressions régulières qui seront interprétés, mais des patterns lua, dont la syntaxe différe légèrement.
-> [Plus d'infos sur la syntaxe des patterns lua.](http://wxlua.free.fr/Tutoriel_Lua/Tuto/Strings/strings6.php) [Ainsi que quelques exemples.](http://wxlua.free.fr/Tutoriel_Lua/Tuto/Strings/strings7.php)
+> Il est important de noter que ce ne sont pas véritablement des expressions régulières qui seront interprétés, mais des patterns lua, dont la syntaxe différe légèrement.  
+> [Plus d'infos sur la syntaxe des patterns lua.](http://wxlua.free.fr/Tutoriel_Lua/Tuto/Strings/strings6.php) [Ainsi que quelques exemples.](http://wxlua.free.fr/Tutoriel_Lua/Tuto/Strings/strings7.php)  
 Le pattern étant recherché sur l'ensemble des urls soumises, afin d'éviter des débordements on préfera ajouter au pattern l'url complète qui doit être prise en compte par ssowat.
 > Par exemple, si on souhaite placer *skipped_regex* sur /blog en considérant une suite de chiffres indéfinie en argument. On indiquera ceci :
 > ```bash
@@ -155,7 +156,7 @@ Le pattern étant recherché sur l'ensemble des urls soumises, afin d'éviter de
 ```bash
 ynh_app_setting_get APP KEY
 ```
-> Récupère le paramètre `KEY` stocké précémment pour l'application `APP`.
+> Récupère le paramètre `KEY` stocké précémment pour l'application `APP`.  
 > Par exemple :
 > ```bash
 > is_public=$(ynh_app_setting_get nom_app is_public)
@@ -172,7 +173,7 @@ ynh_app_setting_delete APP KEY
 ```bash
 ynh_user_exists USERNAME
 ```
-> Vérifie l'existence de l'utilisateur `USERNAME` dans Yunohost.
+> Vérifie l'existence de l'utilisateur `USERNAME` dans Yunohost.  
 > La sortie de la commande doit être testée pour en connaître le résultat. Par exemple :
 > ```bash
 > if ynh_user_exists "johndoe" ; then
@@ -184,14 +185,14 @@ ynh_user_exists USERNAME
 ```bash
 ynh_user_get_info USERNAME KEY
 ```
-> Récupère l'information `KEY` sur l'utilisateur `USERNAME`.
+> Récupère l'information `KEY` sur l'utilisateur `USERNAME`.  
 > Les valeurs possibles de `KEY` sont :
 > - firstname
 > - fullname
 > - lastname
 > - mail
 > - mail-aliases
-> - mailbox-quota
+> - mailbox-quota  
 > Par exemple :
 > ```bash
 > mailadmin=$(ynh_user_get_info $admin mail)
@@ -201,7 +202,7 @@ ynh_user_get_info USERNAME KEY
 ```bash
 ynh_system_user_exists USERNAME
 ```
-> Détermine si l'utilisateur `USERNAME` existe sur le système.
+> Détermine si l'utilisateur `USERNAME` existe sur le système.  
 > La sortie de la commande doit être testée pour en connaître le résultat. Par exemple :
 > ```bash
 > if ynh_system_user_exists "www-data" ; then
@@ -222,6 +223,7 @@ ynh_die MSG RETCODE
 ```
 > Affiche le message `MSG` (sur stderr) et termine le script avec le code `RETCODE` (par défaut 1).
 
+<br/>
 
 **Les commandes suivantes sont amenées à être remplacées (voir supprimées) dans les prochaines versions de YunoHost.**
 
@@ -229,7 +231,7 @@ ynh_die MSG RETCODE
 ```bash
 sudo yunohost app checkport PORT
 ```
-> Cette commande vérifie le `PORT` et retourne une erreur si il est déjà utilisé.
+> Cette commande vérifie le `PORT` et retourne une erreur si il est déjà utilisé.  
 > La sortie de la commande doit être testée pour en connaître le résultat. Par exemple :
 > ```bash
 > port=PORT_PAR_DEFAUT
@@ -244,12 +246,12 @@ sudo yunohost app checkport PORT
 ```bash
 sudo yunohost app checkurl DOMAINPATH -a APP
 ```
-> Cette commande vérifie la disponibilité du chemin DOMAIN/PATH. Il est utile pour les applications web et vous permet d’être sûr que le chemin n’est pas utilisé par une autre application. Si le chemin est inutilisé, elle le « réserve » pour l'application APP.
+> Cette commande vérifie la disponibilité du chemin DOMAIN/PATH. Il est utile pour les applications web et vous permet d’être sûr que le chemin n’est pas utilisé par une autre application. Si le chemin est inutilisé, elle le « réserve » pour l'application APP.  
 > **Remarque** : ne pas préfixer par `http://` ou par `https://` dans le `DOMAINPATH`.
 
 
 ```bash
 sudo yunohost app ssowatconf
 ```
-> Cette commande régénère la configuration du SSO. Elle est appelée automatiquement à la fin du script.
+> Cette commande régénère la configuration du SSO. Elle est appelée automatiquement à la fin du script.  
 > Mais peux être appelée avant si nécessaire.
