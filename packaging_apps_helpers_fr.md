@@ -7,12 +7,12 @@
 
 Des exemples sont disponibles dans l’[application d’exemple](https://github.com/YunoHost/example_ynh/blob/master/scripts/install). Il est conseillé d’utiliser les commandes pratiques.
 
-Vous pourrez les retrouver dans ce [dépôt](https://github.com/YunoHost/yunohost/blob/unstable/data/helpers.d).
+Vous pourrez les retrouver dans ce [dépôt](https://github.com/YunoHost/yunohost/blob/stable/data/helpers.d).
 
 Pour pouvoir utiliser les helpers, il faudra ajouter les lignes suivantes au début des scripts shell :
 ```bash
 # Source app helpers
-. /usr/share/yunohost/helpers
+source /usr/share/yunohost/helpers
 ```
 
 Le script helpers va exécuter tout les scripts présent dans helpers.d et donc charger les fonctions des helpers. Afin qu'elles puissent être appelées simplement.
