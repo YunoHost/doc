@@ -288,18 +288,6 @@ sudo yunohost service remove NAME
 
 
 ```bash
-sudo yunohost hook add APP FILE
-```
-> Ajoute le script de hook `FILE` pour l'application `APP`.
-
-
-```bash
-sudo yunohost hook remove APP
-```
-> Supprime les scripts de hook de l'application `APP`.
-
-
-```bash
 sudo yunohost app ssowatconf
 ```
 > Cette commande régénère la configuration du SSO. Elle est appelée automatiquement à la fin du script.  
