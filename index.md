@@ -174,7 +174,8 @@
               animate: false,
            },
            groupchat: {
-              open: ['support@conference.yunohost.org']
+              open: ['support@conference.yunohost.org'],
+              suggest: ['dev@conference.yunohost.org']
            }
         },
      });
