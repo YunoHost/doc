@@ -80,7 +80,7 @@ Améliorez cette documentation en [proposant de nouvelles pages](/write_document
 <div class="col col-md-8" markdown="1">
 Étendez les capacités de YunoHost en [packageant de nouveaux services et applications web](/packaging_apps_fr). Jetez un œil à [ce qui a déjà été fait](/apps_fr) !
 <br>
-Une <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/apps">mailing-list</a> est également disponible.
+Un [salon de développement](xmpp:dev@conference.yunohost.org?join) et une <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/apps">mailing-list</a> est également disponible.
 </div>
 </div>
 
