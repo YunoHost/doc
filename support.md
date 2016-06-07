@@ -43,7 +43,8 @@ The YunoHost support is provided by the community members.
               animate: false,
            },
            groupchat: {
-              open: ['support@conference.yunohost.org']
+              open: ['support@conference.yunohost.org'],
+              suggest: ['dev@conference.yunohost.org']
            }
         },
      });

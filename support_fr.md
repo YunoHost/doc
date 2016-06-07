@@ -42,7 +42,8 @@ L’entraide autour de YunoHost est assurée par la communauté.
               animate: false,
            },
            groupchat: {
-              open: ['support@conference.yunohost.org']
+              open: ['support@conference.yunohost.org'],
+              suggest: ['dev@conference.yunohost.org']
            }
         },
      });
