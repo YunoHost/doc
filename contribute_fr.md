@@ -97,4 +97,35 @@ Seedez (partagez) avec le système de Torrent les images de YunoHost : [live](h
 
 ---
 <br>
-<p class="lead" markdown="1">Dans tous les cas, venez sur notre [salon de discussion](/support_fr) pour exprimer votre enthousiasme :-)</p>
+<br>
+<p class="lead" markdown="1">Dans tous les cas, venez sur le [salon de développement](xmpp:dev@conference.yunohost.org?join) pour contribuer :-)</p>
+
+<script type="text/javascript" src="/jappix/javascripts/mini.min.js"></script>
+<script type="text/javascript">
+    // Jappix mini chat
+    $(".actions").css('opacity', 0);
+    jQuery.ajaxSetup({cache: false});
+
+    var ADS_ENABLE = 'off';
+    var JAPPIX_STATIC = '/jappix/';
+    var HOST_BOSH = 'https://im.yunohost.org/http-bind/';
+    var ANONYMOUS = 'on';
+     JappixMini.launch({
+        connection: {
+           domain: "anonymous.yunohost.org",
+        },
+        application: {
+           network: {
+              autoconnect: false,
+           },
+           interface: {
+              showpane: false,
+              animate: false,
+           },
+           groupchat: {
+              open: ['dev@conference.yunohost.org'],
+              suggest: ['support@conference.yunohost.org']
+           }
+        },
+     });
+</script>

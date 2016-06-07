@@ -103,4 +103,34 @@ Seed (share) YunoHost images with Torrent system: [live](http://build.yunohost.o
 
 
 <br>
-<p class="lead" markdown="1">In any case, please [come to our chatroom](/support) to say how enthusiast you are :-)</p>
+<p class="lead" markdown="1">In any case, please [come to dev chatroom](xmpp:dev@conference.yunohost.org?join) to contribute :-)</p>
+
+<script type="text/javascript" src="/jappix/javascripts/mini.min.js"></script>
+<script type="text/javascript">
+    // Jappix mini chat
+    $(".actions").css('opacity', 0);
+    jQuery.ajaxSetup({cache: false});
+
+    var ADS_ENABLE = 'off';
+    var JAPPIX_STATIC = '/jappix/';
+    var HOST_BOSH = 'https://im.yunohost.org/http-bind/';
+    var ANONYMOUS = 'on';
+     JappixMini.launch({
+        connection: {
+           domain: "anonymous.yunohost.org",
+        },
+        application: {
+           network: {
+              autoconnect: false,
+           },
+           interface: {
+              showpane: false,
+              animate: false,
+           },
+           groupchat: {
+              open: ['dev@conference.yunohost.org'],
+              suggest: ['support@conference.yunohost.org']
+           }
+        },
+     });
+</script>
