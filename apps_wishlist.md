@@ -37,6 +37,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Flarum](http://flarum.org/)
 * [Fossil](http://www.fossil-scm.org)
 * [GetSimple CMS](http://get-simple.info/)
+* [Ghost Blog](https://ghost.org)
 * [Git-annex](http://git-annex.branchable.com/)
 * [Gitit](http://gitit.net/)
 * [GitLab](http://gitlab.org/)
