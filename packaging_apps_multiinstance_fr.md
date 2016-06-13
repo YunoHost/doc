@@ -4,14 +4,14 @@
 Le multi-instance est la capacité d’une application à être installée plusieurs fois.
 
 #### Scripts
-Lorsque YunoHost installe une seconde fois l’application, il passe au script en dernier paramètre `id__2` avec l’identifiant de l’application `id` provenant du manifeste. La valeur `n` dans `id__n` est incrémentée à chaque nouvelle instance de l’application.
+Lorsque YunoHost installe l’application, il passe au script dans la variable `$YNH_APP_INSTANCE_NAME`  la valeur `id__n` avec l’identifiant de l’application `id` provenant du manifeste et `n` un nombre incrémentée à chaque nouvelle instance de l’application.
 
-**Par exemple** : dans le script roundcube, il faut nommer la base de données `roundcube`, le dossier d’installation `roundcube` et la [configuration Nginx](packaging_apps_nginx_conf_fr) `roundcube`. De cette manière, la seconde installation de roundcube ne rentrera pas en conflit avec la première, et sera installée dans la base de données `roundcube__2`, dans le répertoire `roundcube__2`, et avec la configuration Nginx `roundcube__2`.
+**Par exemple** : dans le script roundcube, il faut nommer la base de données `roundcube`, le dossier d’installation `roundcube` et la [configuration Nginx](packaging_apps_nginx_conf_fr) `roundcube`. De cette manière, la seconde installation de roundcube ne rentrera pas en conflit avec la première, et sera installée dans la base de données `roundcube__2`, dans le répertoire `roundcube__2`, et avec la configuration Nginx `roundcube__2`.
 
 
-Récupération de la dernière variable passée aux scripts :
+Récupération de l'identifiant de l'app (incluant l'id multi-instance) :
 ```bash
-APP=${!#}
+app=$YNH_APP_INSTANCE_NAME
 ```
 
 #### Manifeste
