@@ -46,6 +46,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Guacamole](http://guac-dev.org/)
 * [h5ai](http://larsjung.de/h5ai/)
 * [Hackpad](https://github.com/dropbox/hackpad)
+- [Hastebin](https://github.com/seejohnrun/haste-server)
 * [Headphones](https://github.com/rembo10/headphones)
 * [Hi Buddy](http://hibuddy.monkeypatch.me/)
 * [Huginn](https://github.com/cantino/huginn)
