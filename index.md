@@ -42,7 +42,7 @@
   </div>
 
   <div class="call-to-action">
-    <a class="btn btn-primary btn-lg" href="/try">Try it</a> 
+    <!-- <a class="btn btn-primary btn-lg" href="/try">Try it</a>  -->
     <a class="btn btn-success btn-lg" href="/install">Get started</a>
     <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-2-4-released/1544/1">YunoHost v2.4</a></small></p>
   </div>
