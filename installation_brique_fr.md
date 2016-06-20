@@ -8,6 +8,10 @@ Pour obtenir une **Brique clé-en-main** et pouvoir l’utiliser directement san
 [Site du projet *La Brique Internet*](http://labriqueinter.net)
 </div>
 
+<div class="alert alert-error" markdown="1">
+Aujourd'hui nous n'installons plus de Brique à la main en suivant ces instructions, nous vous conseillons d'utiliser l'outil d'installation automatique trouvable à [cette adresse](https://install.labriqueinter.net/#welcome) ou de contacter un FAI associatif local.
+</div>
+
 ![brique](/images/thisisinternet.png)
 
 ## Prérequis
