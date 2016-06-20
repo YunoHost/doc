@@ -8,7 +8,7 @@ Pour obtenir une **Brique clé-en-main** et pouvoir l’utiliser directement san
 [Site du projet *La Brique Internet*](http://labriqueinter.net)
 </div>
 
-<div class="alert alert-error" markdown="1">
+<div class="alert alert-danger" markdown="1">
 Aujourd'hui nous n'installons plus de Brique à la main en suivant ces instructions, nous vous conseillons d'utiliser l'outil d'installation automatique trouvable à [cette adresse](https://install.labriqueinter.net/#welcome) ou de contacter un FAI associatif local.
 </div>
 
@@ -129,7 +129,7 @@ topology subnet</code></pre>
 <img style="border-radius: 5px; border: 5px solid #eee; max-width: 800px" src="https://raw.githubusercontent.com/labriqueinternet/hotspot_ynh/master/screenshot.png" />
 </a></div>
 
-<div class="alert alert-error" markdown="1">
+<div class="alert alert-danger" markdown="1">
 **Attention** : si vous n'installez *pas* DoctorCube votre brique ne fonctionnera pas au prochain redémarrage, en effet, il y a un bug avec le kernel 4.5 et les boards olimex qui empêche aux Briques de se connecter au réseau (et ce qui les rends donc inutilisable), DoctorCube résoud ce problème.
 </div>
 
