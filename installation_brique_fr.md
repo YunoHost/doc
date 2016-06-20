@@ -198,6 +198,6 @@ Cette opération est longue mais à considérer pour avoir un serveur email irr�
 
 ## Notes
 
-* **Attention à la RAM** : sur le modèle A20-OLinuXino-LIME, les **512 Mo** partent vite. Les applications PHP ne sont pas très gourmandes, mais Searx et Etherpad Lite sont par exemple à installer avec des pincettes. Ce sont Amavis et MySQL qui consomment le plus de RAM. Amavis sera bientôt remplacé par rspamd qui est moins gourmand en ressources. Toutes les apps officielles fonctionnent sans problème de RAM avec le A20-OLinuXino-LIME2 (qui a 1 Go de RAM). 
+* **Attention à la RAM** : sur le modèle A20-OLinuXino-LIME, les **512 Mo** partent relativement vite. Les applications PHP ne sont pas très gourmandes, mais Searx et Etherpad Lite sont par exemple à installer avec des pincettes. Toutes les apps officielles fonctionnent sans problème de RAM avec le A20-OLinuXino-LIME2 (qui a 1 Go de RAM).
 
 * Attention à bien veiller à ce que les répertoires utilisateurs soient bien créés (étape 5.) dans `/var/mail` et `/home/`, sans quoi plusieurs bugs seront observables dans l’interface d’administration (erreurs 500 en pagaille).
