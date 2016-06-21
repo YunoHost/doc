@@ -60,6 +60,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Joomla!](https://www.joomla.org/)
 * [JS Bin](http://jsbin.com/help/2-second-setup)
 * [Kaiwa](http://getkaiwa.com/)
+* [Kinto](https://github.com/Kinto/formbuilder)
 * [Known](https://withknown.com/)
 * [Kontalk](http://kontalk.org/)
 * [KrISS feed](https://github.com/tontof/kriss_feed)
