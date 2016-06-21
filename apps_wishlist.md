@@ -106,6 +106,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Shleuder](http://schleuder2.nadir.org/)
 * [Simone](https://github.com/Kloadut/Simone)
 * [SIP](https://en.wikipedia.org/wiki/List_of_SIP_software#Free_and_open-source_license)
+* [SOGo](https://github.com/mattronix/sogo_ynh)
 * [Sonarr](https://sonarr.tv/)
 * [Streisand](https://github.com/jlund/streisand)
 * [SVG-Edit](https://github.com/SVG-Edit/svgedit)
