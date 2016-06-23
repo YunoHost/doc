@@ -17,9 +17,6 @@ sudo dnf install vagrant
 <div class="alert alert-warning">
 <b>Attention :</b> Cette partie est en cours de rédaction. La ligne de commande `ynh-dev` vient juste d’être créée il est possible qu’il y ait des manques.
 </div>
-<div class="alert alert-warning">
-<b>Note :</b> `ynh-dev` fonctionne avec apt-get. Debian et Linux Mint ont été testés. Ubuntu fonctionne sans doute.
-</div>
 
 Une ligne de commande `ynh-dev` a été créée afin de simplifier la gestion de votre environnement de développement.
 
