@@ -1,8 +1,0 @@
-# Tester son code
-
-
-### Tester le code sur une instance YunoHost 
-Le code du cœur de YunoHost se situe dans `/usr/lib/moulinette/yunohost/`.
-Pour tester le code il faut rajouter l’option `--no-cache` à la commande `yunohost`.
-
-Autre emplacement de code relatif à YunoHost : `/usr/share/yunohost`.
