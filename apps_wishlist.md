@@ -97,6 +97,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 * [Pump.io](http://pump.io)
 * [racktables](http://racktables.org/)
 * [remotestorage-server](http://remotestorage.io/provide/)
+* [Request Tracker](https://bestpractical.com/)
 * [Respawn 2.0](https://github.com/broncowdd/respawn)
 * [Restya](http://restya.com)
 * [uMap](https://umap.openstreetmap.fr/en/)
