@@ -55,6 +55,9 @@ You may be interessed in reading the [packaging documentation](/packaging_apps) 
 <img src="/images/wordpress.png">
 <img src="/images/transmission.png">
 <img src="/images/jappix.png">
+<img src="/images/logo-jirafeau.jpeg" width=70>
+<img src="/images/Logo-wallabag-svg.svg" width=70>
+<img src="/images/Searx_logo.svg" width=70>
 
 ---
 

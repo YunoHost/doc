@@ -57,6 +57,9 @@ Vous serez peut-être intéressé à la lecture de la [documentation sur le pack
 <img src="/images/wordpress.png">
 <img src="/images/transmission.png">
 <img src="/images/jappix.png">
+<img src="/images/logo-jirafeau.jpeg" width=70>
+<img src="/images/Logo-wallabag-svg.svg" width=70>
+<img src="/images/Searx_logo.svg" width=70>
 
 ---
 
