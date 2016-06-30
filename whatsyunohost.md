@@ -16,6 +16,8 @@ YunoHost is a **server operating system** aiming to make [self-hosting](selfhost
 - a backup system
 - a regen configuration services system
 
+<img src="/images/YunoHost_logo_vertical.png" width=400>
+
 ---
 
 ### Software

@@ -18,6 +18,8 @@ Il est basé et reste totalement compatible avec [Debian GNU/Linux](https://debi
 - un système de backup
 - un système de régénération de configuration des services
 
+<img src="/images/YunoHost_logo_vertical.png" width=400>
+
 ---
 
 ### Logiciels
