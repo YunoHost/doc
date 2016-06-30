@@ -3,6 +3,18 @@
 YunoHost is a **server operating system** aiming to make [self-hosting](selfhosting) accessible to everyone. It is based on Debian GNU/Linux and is fully compatible with it.
 
 <img src="/images/debian-logo.png" width=100>
+---
+
+### Features
+
+- multi-user with LDAP integration
+- multi-domaines
+- an email system
+- an instant messaging server
+- a Single sign-on (SSO)
+- an application system
+- a backup system
+- a regen configuration services system
 
 ---
 
