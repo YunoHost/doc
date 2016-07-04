@@ -12,6 +12,9 @@ L’interface admin est accessible depuis votre instance YunoHost à l’adresse
 </div>
 
 ### Remise à zéro du mot de passe admin
+
+<div class="text-error">Cette methode ne fonctionnera pas avec Yunohost 2.4 / Debian Jessie</div>
+
 Pour faire une remise à zéro du mot de passe admin de YunoHost (un utilisateur root est nécessaire)
 
 Dans le fichier `/etc/slapd/slapd.conf` ajouter la ligne suivante :
