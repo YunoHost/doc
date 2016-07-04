@@ -14,6 +14,8 @@ You can access your administrator web interface at this address: https://example
 
 ### Reset admin password
 
+<div class="text-error">Deprecated method, will not work on Yunohost 2.4 / Debian Jessie</div>
+
 To reset YunoHost admin password (Need a root user available)
 
 add the following lines to `/etc/slapd/slapd.conf`:
