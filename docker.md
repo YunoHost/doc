@@ -13,7 +13,7 @@
 **Pre-requisite**:
 * a computer under Ubuntu, Debian, or ArchLinux ...
 * ... **with systemd**
-* a AMD64 (classic PC) or ARM v7 computer (Raspberry PI V2)
+* a AMD64 (classic PC) or ARMHF computer (Raspberry PI V2 or V3)
 
 On Ubuntu :
 ```bash
@@ -36,7 +36,7 @@ The following command will fetch the latest YunoHost built image for **amd64**:
 docker pull domainelibre/yunohost
 ```
 
-The following command will fetch the latest YunoHost built image for **arm v7** (ex : Raspberry PI 2):
+The following command will fetch the latest YunoHost built image for **armhf** (ex : Raspberry PI 2 ou 3):
 ```bash
 docker pull domainelibre/yunohost-arm
 ```
@@ -58,7 +58,7 @@ Please follow *Building* section [here](https://github.com/aymhce/YunohostDocker
 To start the container, run the next command by replacing DOMAIN by a valid domain e.g.: example.com => yunohost.example.com
 ```bash
 docker run -h yunohost.DOMAIN -v $(pwd):/yunohost -d --privileged \
--v /sys/fs/cgroup:/sys/fs/cgroup:ro domainelibre/yunohost:2.4 /bin/systemd
+-v /sys/fs/cgroup:/sys/fs/cgroup:ro domainelibre/yunohost /bin/systemd
 ```
 
 If you want to run the container and forward all the interesting ports to the host:
@@ -76,7 +76,7 @@ docker run -d -h yunohost.DOMAIN -v $(pwd):/yunohost \
  -p 5269:5269 \
  -p 5290:5290 \
  -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
- domainelibre/yunohost:2.4 \
+ domainelibre/yunohost \
  /bin/systemd
 ```
 
