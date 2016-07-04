@@ -13,7 +13,7 @@
 **Prérequis** :
 * une machine qui tourne sous Ubuntu 14.04 ou supérieur, ArchLinux ou Fedora (sur Debian c’est un peu plus compliqué) ...
 * ... **avec systemd**
-* une machine sous architecture processeur AMD64 (PC classique) ou ARM v7 (comme Raspberry PI V2)
+* une machine sous architecture processeur AMD64 (PC classique) ou ARMHF (comme Raspberry PI V2 ou V3)
 
 Sous Ubuntu :
 ```bash
@@ -51,7 +51,7 @@ La commande suivante va télécharger l’image YunoHost pré-construite pour **
 docker pull domainelibre/yunohost
 ```
 
-La commande suivante va télécharger l’image YunoHost pré-construite pour **ARM v7** (ex : Raspberry PI 2):
+La commande suivante va télécharger l’image YunoHost pré-construite pour **ARMHF** (ex : Raspberry PI 2 ou 3):
 ```bash
 docker pull domainelibre/yunohost-arm
 ```
@@ -73,7 +73,7 @@ Merci de suivre la section *Building* [ici](https://github.com/aymhce/YunohostDo
 Pour démarrer le conteneur, lancez la commande suivante en remplaçant DOMAIN par un domaine valide ex : mondomaine.org => yunohost.mondomaine.org
 ```bash
 docker run -h yunohost.DOMAIN -v $(pwd):/yunohost -d --privileged \
--v /sys/fs/cgroup:/sys/fs/cgroup:ro domainelibre/yunohost:2.4 /bin/systemd
+-v /sys/fs/cgroup:/sys/fs/cgroup:ro domainelibre/yunohost /bin/systemd
 ```
 
 Si vous souhaitez démarrer le conteneur avec tous les ports forwardés sur l’hôte :
@@ -91,7 +91,7 @@ docker run -d -h yunohost.DOMAIN -v $(pwd):/yunohost \
  -p 5269:5269 \
  -p 5290:5290 \
  -v /sys/fs/cgroup:/sys/fs/cgroup:ro \
- domainelibre/yunohost:2.4 \
+ domainelibre/yunohost \
  /bin/systemd
 ```
 
