@@ -35,7 +35,7 @@ Cette sous commande va cloner les dépôts principaux au fonctionnement de YunoH
 Positionner vous dans votre environnement, puis créer et entrer dans une vm à l’aide de `ynh-dev run`
 ```bash
 cd ~/project/my/yunohost/env
-./ynh-dev run exemple.local docker stable8
+./ynh-dev run exemple.local stable8
 root@yunohost:/# cd yunohost
 root@yunohost:/yunohost/# ls
 Dockerfile  LICENSE  README.md	SSOwat	apps  backup  moulinette  ynh-dev  yunohost  yunohost-admin  yunohost-vagrant
