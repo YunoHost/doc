@@ -33,8 +33,8 @@ De nombreux messages permettant d’identifier les problèmes se trouvent enregi
 
 ### Aller plus loin
 La messagerie électronique est basée sur les protocoles SMTP pour l’envoi de mail et IMAP (ou anciennement POP3) pour la récupération des messages depuis un serveur. En arrière-plan, YunoHost fournit :
-* [Postfix](http://www.postfix.org/) en tant que serveur SMTP.
-* [Dovecot](http://www.dovecot.org/) pour le serveur IMAP.
-* [Amavis](http://amavis.org/) logiciel antispam, filtrant les messages indésirables.
+* [Postfix](http://www.postfix.org) en tant que serveur SMTP.
+* [Dovecot](http://www.dovecot.org) pour le serveur IMAP.
+* [Rspamd](https://rspamd.com) logiciel antispam, filtrant les messages indésirables.
 
 Pour approfondir votre compréhension du courriel et de ses protocoles, voici une [conférence éclairante](http://www.iletaitunefoisinternet.fr/lemail-par-benjamin-sonntag/index.html)(en français).

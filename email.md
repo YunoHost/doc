@@ -9,7 +9,7 @@
 * [Use DKIM](dkim_en)
 
 #### YunoHost provides
-* [Postfix](http://www.postfix.org/): a SMTP email server
-* [Dovecot](http://www.dovecot.org/): an IMAP email server
-* [Amavis](http://amavis.org/): an antispam
+* [Postfix](http://www.postfix.org): a SMTP email server
+* [Dovecot](http://www.dovecot.org): an IMAP email server
+* [Rspamd](https://rspamd.com): an antispam
 * [RoundCube](/apps): a webmail
