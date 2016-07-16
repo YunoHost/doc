@@ -11,10 +11,10 @@ Then you will need to authentificate.
 Opening following ports are necessary to make works differents services.
 
 **TCP:**
-* Web: 80, 443
+* Web: 80 <small>(HTTP)</small>, 443 <small>(HTTPS)</small>
 * [SSH](/ssh_en): 22
-* [XMPP](/XMPP_en): 5222, 5269
-* [Email](/email_en): 25, 465, 993
+* [XMPP](/XMPP_en): <small>(clients)</small>, 5269 <small>(server)</small>
+* [Email](/email_en):  25, 465 <small>(SMTP)</small>, 587 <small>(SMTP with SSL)</small>,  993 <small>(IMAP)</small>
 * [DNS](/dns_en): 53
 
 ##### UPnP
