@@ -34,7 +34,7 @@
         * Access to YunoHost server: DNS, domain name, `hosts` file
            * [Diagnostic the access to YunoHost server](/diagnostic)
            * [DNS Settings](/dns)
-           * [Registrar](registar)
+           * [Registrar](registrar)
            * [DNS Configuration](/dns_config)
            * [Use the YunoHost DNS resolver](/dns_resolver_en)
            * [Dynamic IP address: configure DynDNS](dns_dynamicip_en)

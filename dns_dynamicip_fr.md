@@ -21,13 +21,13 @@ Voici des sites qui proposent un service de DynDNS gratuitement :
 Créer un compte chez l’un d’eux.
 
 #### 2. Déplacer les zones DNS
-Déplacer les [zones DNS](dns_config), à l’exception des champs NS, du [bureau d’enregistrement](registar_en) où vous avez acheté votre nom de domaine vers le DNS dynamique où vous avez créé un compte à l’étape 1.
+Déplacer les [zones DNS](dns_config), à l’exception des champs NS, du [bureau d’enregistrement](registrar_en) où vous avez acheté votre nom de domaine vers le DNS dynamique où vous avez créé un compte à l’étape 1.
 
 #### 3. Basculer la gestion de votre nom de domaine vers le serveur DNS dynamique
-Cette étape consiste à faire savoir au [bureau d’enregistrement](registar_en) que le service de DNS sera assuré par le service de DynDNS.
+Cette étape consiste à faire savoir au [bureau d’enregistrement](registrar_en) que le service de DNS sera assuré par le service de DynDNS.
 Redirigez le champ NS vers l’adresse IP donnée par le service de DynDNS.
 
-Ensuite, supprimez les [zones DNS](dns_config), à l’exception des champs NS, du [bureau d’enregistrement](registar_en).
+Ensuite, supprimez les [zones DNS](dns_config), à l’exception des champs NS, du [bureau d’enregistrement](registrar_en).
 
 #### 4. Créer un identifiant de DNS dynamique
 Sur le service de DNS dynamique créer un identifiant qui sera entré dans un client de DNS dynamique.

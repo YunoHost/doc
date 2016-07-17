@@ -34,9 +34,9 @@
         * Accès au serveur YunoHost : DNS, nom de domaine, fichier `hosts`
             * [Diagnostic d’un bon accès au serveur YunoHost](/diagnostic_fr)
             * [DNS - Système de nom de domaine](/dns_fr)
-            * [Configuration du DNS chez son registar](/dns_config_fr)
+            * [Configuration du DNS chez son registrar](/dns_config_fr)
               * [Chez OVH](/OVH_fr)
-            * [Bureaux d’enregistrements de nom de domaine — Registrar](registar_fr)
+            * [Bureaux d’enregistrements de nom de domaine — Registrar](registrar_fr)
             * [Utiliser le résolveur DNS de YunoHost](/dns_resolver_fr)
             * [Adresse IP dynamique : configuration d’un DynDNS](dns_dynamicip_fr)
             * [Accéder à son serveur dans son réseau local](/dns_local_network_fr)
