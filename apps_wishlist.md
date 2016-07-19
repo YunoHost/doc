@@ -81,6 +81,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Nibbleblog](http://www.nibbleblog.com)
 - [Only Office](http://onlyoffice.org)
 - [OpenBazaar](https://openbazaar.org)
+- [OpenJabNab](https://github.com/OpenJabNab/OpenJabNab)
 - [OS.js](http://os.js.org)
 - [Paperwork](http://paperwork.rocks)
 - [pdfy](https://github.com/joepie91/pdfy)
