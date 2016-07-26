@@ -1,5 +1,7 @@
 # Configuration box/routeur
 
+<a class="btn btn-lg btn-default" href="http://ports.yunohost.org">Vérifier que les ports sont ouverts</a>
+
 ### Accès à l’administration de la box/routeur
 Allez à l’adresse suivante : http://192.168.0.1 (ou celle-ci http://192.168.1.1). Puis authentifier-vous.
 

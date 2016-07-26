@@ -1,5 +1,7 @@
 # Configuration box/router
 
+<a class="btn btn-lg btn-default" href="http://ports.yunohost.org">Check ports are open</a>
+
 #### Access to box/routeur administration
 In the URL bar of your web navigator put:
 ```bash
