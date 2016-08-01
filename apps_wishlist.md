@@ -130,6 +130,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [webSync](http://furier.github.io/websync)
 - [WebTorrent](https://github.com/feross/webtorrent)
 - [Wekan](http://wekan.io)
+- [WID](https://wid.chorem.com/site/home)
 - [Wisemapping](http://www.wisemapping.com)
 - [Xonotic](http://xonotic.org)
 - [Yacy](http://yacy.net) – [package](https://github.com/M5oul/yacy_ynh)
