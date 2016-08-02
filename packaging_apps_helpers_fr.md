@@ -129,7 +129,7 @@ Tout d'abord `skipped_uris`, `unprotected_uris` et `protected_uris`. Ces 3 clés
 > concernera le path /blog de l'application, soit https://domain.tld/path_app/blog et ce qui suivra, mais pas https://domain.tld/path_app/.
 
 **skipped_uris**  
-Une url ajoutée avec la clé *skipped_uris* sera totalement ignorée par le SSO, donc l'accès sera publique et ne prendra pas en compte un utilisateur déjà connecté.
+Une url ajoutée avec la clé *skipped_uris* sera totalement ignorée par le SSO, donc l'accès sera public et ne prendra pas en compte un utilisateur déjà connecté.
 
 **unprotected_uris**  
 Une url ajoutée avec la clé *unprotected_uris* sera accessible publiquement, mais un utilisateur connecté au SSO pourra se connecter en utilisant le header HTTP.
