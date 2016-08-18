@@ -116,6 +116,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Streisand](https://github.com/jlund/streisand)
 - [SVG-Edit](https://github.com/SVG-Edit/svgedit)
 - [Sympa](http://www.sympa.org)
+- [Taskwarrior](https://taskwarrior.org/)
 - [Taiga](https://taiga.io)
 - [TorChat](https://github.com/prof7bit/TorChat)
 - [Torrent Tunes](https://github.com/tchoulihan/torrenttunes-client)
