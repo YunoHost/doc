@@ -113,6 +113,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Simone](https://github.com/Kloadut/Simone)
 - [SIP](https://en.wikipedia.org/wiki/List_of_SIP_software#Free_and_open-source_license)
 - [Sonarr](https://sonarr.tv)
+- [Stackedit](https://stackedit.io)
 - [Streisand](https://github.com/jlund/streisand)
 - [SVG-Edit](https://github.com/SVG-Edit/svgedit)
 - [Sympa](http://www.sympa.org)
