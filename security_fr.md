@@ -126,6 +126,6 @@ sudo service yunohost-api stop
 
 Des [pentests](https://fr.wikipedia.org/wiki/pentest) ont été effectués sur une instance de YunoHost 2.4 :
 
-- [#1 – Préparation](https://blog.exadot.fr/2016/07/03/pentest-dune-instance-yunohost-1-preparation)
-- [#2 – Le fonctionnement](https://blog.exadot.fr/2016/07/12/pentest-dune-instance-yunohost-2-le-fonctionnement)
-- [#3 – Audit en Black Box](https://blog.exadot.fr/2016/08/26/pentest-dune-instance-yunohost-3-audit-en-black-box)
+- [1) Préparation](https://blog.exadot.fr/2016/07/03/pentest-dune-instance-yunohost-1-preparation)
+- [2) Le fonctionnement](https://blog.exadot.fr/2016/07/12/pentest-dune-instance-yunohost-2-le-fonctionnement)
+- [3) Audit en Black Box](https://blog.exadot.fr/2016/08/26/pentest-dune-instance-yunohost-3-audit-en-black-box)
