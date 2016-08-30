@@ -1,5 +1,9 @@
 ## Créer un environnement de développement
 
+<div class="alert alert-info">
+<b>Attention :</b> cette page de documentation n’est plus à jour. Merci de vous référer à la [documentation du dépôt](https://github.com/YunoHost/ynh-dev).
+</div>
+
 Ce document a pour but de donner les clés pour créer un environnement de développement correct afin de développer sur le cœur de YunoHost. Il peut également vous permettre de tester vos applications que ce soit avec les versions `stable`, `testing`, `unstable` ou même des versions customisées issues des branches des dépôts.
 
 ### Installation de l’environnement de développement
