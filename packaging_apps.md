@@ -6,7 +6,7 @@ This document aimed to learn you how to package an application for YunoHost.
 To package an application, here are the requirements:
 * An account on a git server (e.g. [GitHub](https://github.com/)) to publish the application;
 * Basic knowledge of `git`, bash shell and other programming stuff;
-* A testing [virtual machine or a distant server](/install_en) to package and test the package.
+* A testing [virtual machine or a distant server](/install_en), or a [development environement](https://github.com/yunohost/ynh-dev) to package and test the package.
 
 ### Content
 A YunoHost package is composed of:
