@@ -23,7 +23,7 @@ Nécéssaire si: YEP nécéssaire pour atteindre le status indiqué
 | OFFICIAL | YEP 1.9 | Documenter l'app  | VALIDATED |
 | OFFICIAL | YEP 1.10 | Garder un historique de version propre   | DRAFT |
 | OFFICIAL | YEP 1.11 | Ajouter l'app au bugtracker Ynh   | DRAFT |
-
+| | | | | |
 | | **YEP 2** | **Stabiliser une app** | | |
 | INPROGRESS | YEP 2.1 | Respecter le format du manifest  | VALIDATED |
 | WORKING | YEP 2.2 | Utiliser bash pour les scripts principaux  | VALIDATED |
@@ -42,22 +42,21 @@ Nécéssaire si: YEP nécéssaire pour atteindre le status indiqué
 | OFFICIAL | YEP 2.15 | Vérifier les paramétres saisies par l'utilisateurs   | VALIDATED |
 | OFFICIAL | YEP 2.16 | Vérifier la disponibilité des dépendances sur ARM, x86 et x64   | VALIDATED |
 | OFFICIAL | YEP 2.17 | Prendre en compte la version d'origine lors des mises à jour   | VALIDATED |
-
-
+| | | | | |
 | | **YEP 2.18** | **Stabiliser une webapp** | | |
 | WORKING | YEP 2.18.1 | Lancer le script d'installation d'une webapp correctement   | VALIDATED |
 | WORKING | YEP 2.18.2 | Supporter l'installation sur un domaine   | VALIDATED |
 | WORKING | YEP 2.18.3 | Supporter l'installation sur un sous-domaine   | VALIDATED |
 | OFFICIAL | YEP 2.18.4 | Supporter l'installation sur un sous-dossier   | VALIDATED |
 | OFFICIAL | YEP 2.18.5 | Ajouter le carré yunohost pour retourner au SSO   | VALIDATED |
-
+| | | | | |
 | | **YEP 3** | **Sécuriser une app** | | |
 | NOTWORKING | YEP 3.1 | Ne pas demander ou stocker de password ldap   | DRAFT |
 | WORKING | YEP 3.2 | Ouvrir un port correctement   | DRAFT |
 | OFFICIAL | YEP 3.3 | Faciliter le contrôle de l'intégrité des sources   | DRAFT |
 | OFFICIAL | YEP 3.4 | Isoler l'app   | DRAFT |
 | OFFICIAL | YEP 3.5 | Suivre les recommendations de la documentation de l'app   | VALIDATED |
-
+| | | | | |
 | | **YEP 4** | **Intégrer une app** | | |
 | OFFICIAL | 4.1 Lier au | ldap   | VALIDATED |
 | OFFICIAL | YEP 4.2 | Lier l'authentification au sso   | VALIDATED |
