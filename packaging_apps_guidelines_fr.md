@@ -3,6 +3,7 @@
 <div class="alert alert-danger">
 <b>
 Cette page est en cours d'élaboration. Tant que cet avertissement n'est pas enlevé. Considérez ces informations comme potentiellement fausse.
+Le nom YEP n'est à priori pas définitif, ni les niveaux, ni les bonnes pratiques en elle même.
 </b>
 </div>
 
@@ -11,8 +12,10 @@ Ce document a pour but de lister les différentes bonnes pratiques concernant la
 
 Chaque bonne pratique est numérotée avec un numéro suffixé par les lettres YEP (YunoHost Enhancement Proposals), ceci afin de pouvoir y faire référence facilement dans les outils d'analyse automatique de paquet (package checker, [package linter](https://github.com/YunoHost/package_linter)), mais également lors des revues de code.
 
-Statut : brouillon, validé, refusé, obsolète
-Nécessaire si : YEP nécessaire pour atteindre le statut indiqué
+Chaque YEP est associée à :
+* un status indiquant si la régle a été validé ou si elle fait encore l'objet de discussion (brouillon, validé, refusé, obsolète) ;
+* une indication sur le type de test à mener (manuel ou auto si un outil automatique peut vérifier) ;
+* une indication du niveau d'app à partir duquel la règle est nécessaire (NOTWORKING, INPROGRESS, WORKING, OFFICIAL), certaines règles sont optionnelles ;
 
 ### Index des YEP
 | ID |  Titre | Status | Test | Niveau |
@@ -95,9 +98,22 @@ Pour les noms d'applications contenant des espaces la quasitotalité des paquets
 
 Par convention, les dépôts d'applications YunoHost sont toujours nommés de leur ID suivis de la chaine de caractère "\_ynh". Ainsi on peut distinguer le dépôt upstream de l'application, du dépôt du package yunohost. Cette notation permet également de trouver des applications non répertoriés à travers les moteurs de recherche des plateformes proposant des gestionnaire de version (github par exemple).
 
-Exemple: ID : exemple Nom de dépôt: exemple_ynh
+Exemple : ID : exemple Nom de dépôt : exemple_ynh
 
 #### YEP 1.2 - Inscrire l'app sur un "répertoire" connu  | validé | manuel | NOTWORKING |
+Il est conseillé dés le début du packaging d'inscrire une app sur un des dépôts d'application YunoHost.
+
+Ces dépôts ont plusieurs fonctions :
+* communiquer l'existence d'un paquet ;
+* indiquer la dernière version associée au paquet (afin de permetre à la mise à jour de l'app par YunoHost) ;
+* indiquer l'état de fonctionnement du paquet ;
+* indiquer des informations sur le support d'un paquet.
+
+<div class="alert alert-danger">
+<b>
+TODO Lien ou information pour réaliser l'inscription.
+</b>
+</div>
 
 #### YEP 1.3 - Indiquer la licence associée au paquet  | validé | AUTO | WORKING |
 #### YEP 1.4 - Informer sur l'intention de maintenir un paquet   | brouillon | manuel | WORKING |
@@ -112,7 +128,15 @@ Exemple: ID : exemple Nom de dépôt: exemple_ynh
 ### YEP 2 - Stabiliser une app
 #### YEP 2.1 - Respecter le format du manifeste  | validé | auto | INPROGRESS |
 #### YEP 2.2 - Utiliser bash pour les scripts principaux  | validé | auto | WORKING |
+Les scripts d'action (install, upgrade, remove, backup et restore) doivent être en bash afin que la cli/api yunohost puisse correctement les appeler.
+
+Ceci étant rien n'empèche à l'intérieur de ces scripts de faire appel à d'autres scripts ou bibliothèques de fonction. Ceux ci ne sont pas obligés d'être en bash.
+
+Cependant, il faudra porter une attention particulière à l'affichage correcte des logs d'information, de warning, ou d'erreurs. Afin qu'un utilisateur de la cli/api yunohost puisse comprendre le fonctionnement du script venant d'être executé et au besoin réparer son instance YunoHost.
+ 
 #### YEP 2.3 - Sauvegarder les réponses lors de l'installation  | validé | manuel | WORKING |
+Lors de l'installation, il est nécessaire de sauvegarder chaque réponse aux questions du manifeste. En effet, même si au début il n'est pas nécessaire d'écrire un script de mise à jour, par la suite ce sera sans doute le cas. Or, sans les informations initiales, la mise à jour peut être plus fastidieuse.
+
 #### YEP 2.4 - Détecter et gérer les erreurs  | brouillon | manuel | WORKING |
 #### YEP 2.5 - Copier correctement des fichiers   | brouillon | manuel | WORKING |
 #### YEP 2.6 - Annuler l'action si les valeurs d'entrées sont incorrectes   | validé | manuel | WORKING |
