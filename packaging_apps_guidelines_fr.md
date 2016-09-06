@@ -1,5 +1,11 @@
 # Packaging d’applications: les bonnes pratiques
 
+<div class="alert alert-danger">
+<b>
+Cette page est en cours d'élaboration. Tant que cet avertissement n'est pas enlevé. Considérez ces informations comme potentiellement fausse.
+</b>
+</div>
+
 ### Introduction
 Ce document a pour but de lister les différentes bonnes pratiques concernant la création de paquet d'application YunoHost.
 
