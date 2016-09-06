@@ -84,19 +84,21 @@ Chaque application YunoHost possède un id inscrit dans le manifest de l'applica
 Cet identifiant doit être unique entre chaque paquet d'application.
 Il est donc recommandé de vérifier sa disponibilité en consultant la liste des applications référencées dans les dépôts d'applications connus (official, community, internetcube).
 
-De plus l'identifiant doit respecter l'expression régulière suivante ^[a-z1-9](_?[a-z1-9])+$ . Autrement dit, il doit respecter les règles suivantes :
+De plus l'identifiant doit respecter l'expression régulière suivante `^[a-z1-9]((_|-)?[a-z1-9])+$` . Autrement dit, il doit respecter les règles suivantes :
 * être en minuscule
 * commencer par une lettre ou un chiffre
 * être alphanumerique (le underscore est autorisé)
-* ne pas contenir de tiret
-* ne pas contenir 2 underscores qui se suivent
-* ne pas terminer par un underscore
+* ne pas contenir 2 underscores ou tirets qui se suivent
+* ne pas terminer par un underscore ou un tiret
 
-Par convention, les dépôts d'applications YunoHost sont toujours nommés de leur ID suivis de la chaine de caractère "\_ynh".
+Pour les noms d'applications contenant des espaces la quasitotalité des paquets actuels les retirent simplement sans les remplacer par des tirets ou underscores.
+
+Par convention, les dépôts d'applications YunoHost sont toujours nommés de leur ID suivis de la chaine de caractère "\_ynh". Ainsi on peut distinguer le dépôt upstream de l'application, du dépôt du package yunohost. Cette notation permet également de trouver des applications non répertoriés à travers les moteurs de recherche des plateformes proposant des gestionnaire de version (github par exemple).
 
 Exemple: ID : exemple Nom de dépôt: exemple_ynh
 
 #### YEP 1.2 - Inscrire l'app sur un "répertoire" connu  | validé | manuel | NOTWORKING |
+
 #### YEP 1.3 - Indiquer la licence associée au paquet  | validé | AUTO | WORKING |
 #### YEP 1.4 - Informer sur l'intention de maintenir un paquet   | brouillon | manuel | WORKING |
 #### YEP 1.5 - Mettre à jour régulièrement le statut de l'app  | brouillon | manuel | WORKING |
