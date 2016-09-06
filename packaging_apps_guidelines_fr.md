@@ -10,7 +10,7 @@ Le nom YEP n'est à priori pas définitif, ni les niveaux, ni les bonnes pratiqu
 ### Introduction
 Ce document a pour but de lister les différentes bonnes pratiques concernant la création de paquet d'application YunoHost.
 
-Chaque bonne pratique est numérotée avec un numéro suffixé par les lettres YEP (YunoHost Enhancement Proposals), ceci afin de pouvoir y faire référence facilement dans les outils d'analyse automatique de paquet (package checker, [package linter](https://github.com/YunoHost/package_linter)), mais également lors des revues de code.
+Chaque bonne pratique est numérotée avec un numéro suffixé par les lettres YEP (YunoHost Enhancement Proposals), ceci afin de pouvoir y faire référence facilement dans les outils d'analyse automatique de paquet ([package checker](https://github.com/YunoHost/package_check), [package linter](https://github.com/YunoHost/package_linter)), mais également lors des revues de code.
 
 Chaque YEP est associée à :
 * un status indiquant si la régle a été validé ou si elle fait encore l'objet de discussion (brouillon, validé, refusé, obsolète) ;
