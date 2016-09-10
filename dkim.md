@@ -1,4 +1,8 @@
 # DKIM
+
+<div class="alert alert-danger">This page is deprecated. DKIM is now by default integrated in YunoHost with [Rspamd](https://rspamd.com)/rmilter.</div>
+
+
 ##### Note:
 * This is the 2nd revision of this Work In Progress How-To activate [DKIM](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail) and [SPF](https://en.wikipedia.org/wiki/Sender_Policy_Framework) in YunoHost.
 * Le DKIM and SPF prevent emails which could be sent with your domain name from a non legitim server. This avoid spam.
