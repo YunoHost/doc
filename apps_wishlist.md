@@ -18,6 +18,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Candy](https://candy-chat.github.io/candy)
 - [CardDavMate](https://www.inf-it.com/open-source/clients/carddavmate)
 - [cgit](http://git.zx2c4.com/cgit/about)
+- [CheckUp](https://sourcegraph.github.io/checkup/)
 - [CiviCRM](https://civicrm.org)
 - [Commafeed](https://github.com/Athou/commafeed)
 - [Converse.js](https://conversejs.org)
