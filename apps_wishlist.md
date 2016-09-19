@@ -71,7 +71,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [KrISS feed](https://github.com/tontof/kriss_feed)
 - [Kune](https://en.wikipedia.org/wiki/Kune_%28software%29)
 - [Loomio](https://www.loomio.org)
-- [The Lounge](https://thelounge.github.io)
+- [The Lounge](https://thelounge.github.io), cf. https://github.com/Kloadut/shout_ynh/issues/4
 - [LSTU](https://github.com/ldidry/lstu)
 - [Lufi](https://git.framasoft.org/luc/lufi)
 - [MaidSafe](http://maidsafe.net)
