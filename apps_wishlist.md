@@ -90,6 +90,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [OpenBazaar](https://openbazaar.org)
 - [OpenJabNab](https://github.com/OpenJabNab/OpenJabNab)
 - [OS.js](http://os.js.org)
+- [Paperless](https://github.com/danielquinn/paperless)
 - [Paperwork](http://paperwork.rocks)
 - [pdfy](https://github.com/joepie91/pdfy)
 - [Pelican](http://blog.getpelican.com)
