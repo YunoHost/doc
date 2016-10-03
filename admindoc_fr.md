@@ -23,7 +23,7 @@
 * [DNS - Système de nom de domaine](/dns_fr)
    * [Bureaux d’enregistrements de nom de domaine - Registrar](registrar_fr)
    * [Configuration du DNS chez son registrar](/dns_config_fr)
-   * [DNS et installation d'un application sur un sous-domaine](/dns_subdomains_fr)
+   * [DNS et installation d’une application sur un sous-domaine](/dns_subdomains_fr)
    * [Utiliser le résolveur DNS](/dns_resolver_fr)
    * [Configurer un DNS dynamique avec une adresse IP dynamique](dns_dynamicip_fr)
    * [Avec OVH](/OVH_fr)
