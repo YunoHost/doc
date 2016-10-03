@@ -1,25 +1,23 @@
 #Self-hosting
 
 #### Definition
-**Self-hosting** consist to host at home its server, its data and its services.
+**Self-hosting** is having a server at home in order to host personnal data and services on it.
 
 #### Administrator responsibilities
-If you want to serve a web site, the [email system](email) and [instant messaging](XMPP), the server need to stay turn on all the time, 24h/24 and 7d/7.
+Self-hosting implies responsibilities, if you want to host a website, [emails](email) and have [an instant messaging system](XMPP) running, the server needs to stay online all the time, 24/7.
 
-Self-hosting results availability of the server to users hosted and/or to externals people consulting it.
+Problems can happen and the server could become unavailable: a power outage, Internet access loss, etc.
 
-Problems can happen making server unavailable: power outage, loss of access to the Internet…etc.
-
-If you use the [email system](email_en), and your server is unavailable, emails for the server will be sent under 3 to 7 days.
+If you use the [email system](email_en) and your server becomes unavailable, emails destined to the server will be re-sent under 3 to 7 days.
 
 #### Self-hosting contraints
-* The rate of transmission information is low. In ADSL case, it’s often approximately 1/10 related to the rate of reception. For instance: 1 Mo/s of reception and 100 ko/s of emission;
-* Availability 24/7;
+* Slow transfer speed. With ADSL, upload is approximately 1/10 of the rate of download. For instance: 1 Mb/s download speed would give an upload speed of 100 kb/s;
+* Availability must be 24/7;
 * Move;
 
 #### Self-hosting issues
 * Anonymity, private life;
-* Reappropriation of its data and its services;
+* Reappropriation of personnal data and services;
 * Decentralization, distributed networks;
 
 <img src="/images/networks.png" width=500>
@@ -33,4 +31,6 @@ If you use the [email system](email_en), and your server is unavailable, emails 
 * [Sandstorm](https://sandstorm.io/)
 * [FreedomBox](https://fr.wikipedia.org/wiki/FreedomBox)
 
-*Thoses projects arent finished.*
+#### Learn more
+* [Decentralized Web Summit](http://www.decentralizedweb.net/)
+* [Feudal Security](https://www.schneier.com/blog/archives/2012/12/feudal_sec.html) Bruce Schneier, famous security expert exposes the risks of a centralized web and the importance of civic action.
