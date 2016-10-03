@@ -1,8 +1,8 @@
-#Nom de domaine Nohost.me
+# Noms de domaines nohost.me
 
 ### Sous-domaines
 
-Nohost.me ne permet que d'avoir un domaine du type Pseudo.nohost.me, ce qui est déjà un sous-domaine. 
+Les noms de domaines `nohost.me` et `noho.st` permettent d'avoir uniquement un sous-domaine du type `pseudo.nohost.me`.
 Bien qu'il soit possible d'installer des applications sur des sous-domaines (pour avoir l'application Owncloud accessible 
-depuis une adresse du type cloud.mondomaine.org), on ne peut donc pas avoir un sous-sous-domaine comme monapplication.pseudo.nohost.me. 
-(Il faut avoir son propre nom de domaine).
+depuis une adresse du type `cloud.mondomaine.org`), il n’est pas possible d’avoir un sous-sous-domaine tel `monapplication.pseudo.nohost.me`.
+Pour pouvoir profiter des applications installables uniquement à la racine d’un nom de domaine, il faut avoir son propre nom de domaine.
