@@ -27,6 +27,7 @@
    * [Configurer un DNS dynamique avec une adresse IP dynamique](dns_dynamicip_fr)
    * [Avec OVH](/OVH_fr)
    * [Accéder à son domaine depuis le réseau local](/dns_local_network_fr)
+   * [Nom de domaine en Nohost.me](/dns_nohost_me_fr)
 * [Applications officielles](/apps_fr)
    * [Mettre à jour ses applications](app_update_fr)
    * [Applications en cours](apps_in_progress_fr)
