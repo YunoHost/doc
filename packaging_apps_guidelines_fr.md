@@ -3,7 +3,7 @@
 <div class="alert alert-danger">
 <b>
 Cette page est en cours d'élaboration. Tant que cet avertissement n'est pas enlevé. Considérez ces informations comme potentiellement fausse.
-Le nom YEP n'est à priori pas définitif, ni les niveaux, ni les bonnes pratiques en elle même.
+Le nom YEP n'est à priori pas définitif, ni les niveaux, ni les bonnes pratiques en elle-même.
 </b>
 </div>
 
@@ -13,7 +13,7 @@ Ce document a pour but de lister les différentes bonnes pratiques concernant la
 Chaque bonne pratique est numérotée avec un numéro suffixé par les lettres YEP (YunoHost Enhancement Proposals), ceci afin de pouvoir y faire référence facilement dans les outils d'analyse automatique de paquet ([package checker](https://github.com/YunoHost/package_check), [package linter](https://github.com/YunoHost/package_linter)), mais également lors des revues de code.
 
 Chaque YEP est associée à :
-* un status indiquant si la régle a été validé ou si elle fait encore l'objet de discussion (brouillon, validé, refusé, obsolète) ;
+* un statut indiquant si la règle a été validé ou si elle fait encore l'objet de discussion (brouillon, validé, refusé, obsolète) ;
 * une indication sur le type de test à mener (manuel ou auto si un outil automatique peut vérifier) ;
 * une indication du niveau d'app à partir duquel la règle est nécessaire (NOTWORKING, INPROGRESS, WORKING, OFFICIAL), certaines règles sont optionnelles ;
 
@@ -21,7 +21,7 @@ Chaque YEP est associée à :
 | ID |  Titre | Status | Test | Niveau |
 |----|--------|--------|------|--------|
 | **YEP 1** | **Communiquer avec la communauté** | | | |
-| YEP 1.1 | Nommer son app et son dépot  | validé | manuel | NOTWORKING |
+| YEP 1.1 | Nommer son app et son dépôt  | validé | manuel | NOTWORKING |
 | YEP 1.2 | Inscrire l'app sur un "répertoire" connu  | validé | manuel | NOTWORKING |
 | YEP 1.3 | Indiquer la licence associée au paquet  | brouillon | AUTO | WORKING |
 | YEP 1.4 | Informer sur l'intention de maintenir un paquet   | brouillon | manuel | WORKING |
@@ -64,7 +64,7 @@ Chaque YEP est associée à :
 | YEP 3.2 | Ouvrir un port correctement   | brouillon | manuel | WORKING |
 | YEP 3.3 | Faciliter le contrôle de l'intégrité des sources   | brouillon | manuel | OFFICIAL |
 | YEP 3.4 | Isoler l'app   | brouillon | manuel | OFFICIAL |
-| YEP 3.5 | Suivre les recommendations de la documentation de l'app   | validé | manuel | OFFICIAL |
+| YEP 3.5 | Suivre les recommandations de la documentation de l'app   | validé | manuel | OFFICIAL |
 | YEP 3.6 | Mettre à jour les versions contenant des CVE   | draft | manuel | OFFICIAL |
 | | | | | |
 | **YEP 4** | **Intégrer une app** | | | |
@@ -90,22 +90,22 @@ Il est donc recommandé de vérifier sa disponibilité en consultant la liste de
 De plus l'identifiant doit respecter l'expression régulière suivante `^[a-z1-9]((_|-)?[a-z1-9])+$` . Autrement dit, il doit respecter les règles suivantes :
 * être en minuscule
 * commencer par une lettre ou un chiffre
-* être alphanumerique (le underscore est autorisé)
+* être alphanumérique (le underscore est autorisé)
 * ne pas contenir 2 underscores ou tirets qui se suivent
 * ne pas terminer par un underscore ou un tiret
 
-Pour les noms d'applications contenant des espaces la quasitotalité des paquets actuels les retirent simplement sans les remplacer par des tirets ou underscores.
+Pour les noms d'applications contenant des espaces la quasi totalité des paquets actuels les retirent simplement sans les remplacer par des tirets ou underscores.
 
-Par convention, les dépôts d'applications YunoHost sont toujours nommés de leur ID suivis de la chaine de caractère "\_ynh". Ainsi on peut distinguer le dépôt upstream de l'application, du dépôt du package yunohost. Cette notation permet également de trouver des applications non répertoriés à travers les moteurs de recherche des plateformes proposant des gestionnaire de version (github par exemple).
+Par convention, les dépôts d'applications YunoHost sont toujours nommés de leur ID suivis de la chaine de caractère "\_ynh". Ainsi on peut distinguer le dépôt upstream de l'application, du dépôt du package yunohost. Cette notation permet également de trouver des applications non répertoriées à travers les moteurs de recherche des plateformes proposant des gestionnaires de version (github par exemple).
 
 Exemple : ID : exemple Nom de dépôt : exemple_ynh
 
-#### YEP 1.2 - Inscrire l'app sur un "répertoire" connu  | validé | manuel | NOTWORKING |
-Il est conseillé dés le début du packaging d'inscrire une app sur un des dépôts d'application YunoHost.
+#### YEP 1.2 - Inscrire l'app sur un « répertoire » connu  | validé | manuel | NOTWORKING |
+Il est conseillé dès le début du packaging d'inscrire une app sur un des dépôts d'application YunoHost.
 
 Ces dépôts ont plusieurs fonctions :
 * communiquer l'existence d'un paquet ;
-* indiquer la dernière version associée au paquet (afin de permetre à la mise à jour de l'app par YunoHost) ;
+* indiquer la dernière version associée au paquet (afin de permettre à la mise à jour de l'app par YunoHost) ;
 * indiquer l'état de fonctionnement du paquet ;
 * indiquer des informations sur le support d'un paquet.
 
@@ -129,24 +129,24 @@ Pour suivre l'évolution de YunoHost de façon plus générale:
 #### YEP 1.7 - Ajouter l'app à l'[organisation YunoHost-Apps](https://github.com/YunoHost-Apps)  | validé | manuel | OFFICIAL |
 L'ajout d'une app sur l'[organisation YunoHost-Apps](https://github.com/YunoHost-Apps) permet de faire connaitre l'apps auprès des autres contributeurs qui pourraient être tentés de packager l'application visée.
 
-C'est aussi un moyen pour permettre de déployer rapidement un correctif de sécurité si nécéssaire dans le cas où le mainteneur ne serait pas disponible.
+C'est aussi un moyen pour permettre de déployer rapidement un correctif de sécurité si nécessaire dans le cas où le mainteneur ne serait pas disponible.
 
 #### YEP 1.8 - Publier des demandes de test  | validé | manuel | OFFICIAL |
 Afin d'assurer le bon fonctionnement d'un paquet, il convient de publier une annonce afin d'ouvrir les tests sur le paquet. Cette annonce peut se faire sur le forum dans [la catégorie App intégration du forum](https://forum.yunohost.org/c/app-integration).
 
-Il est recommandé d'indiquer si certains tests n'ont pas été mené
+Il est recommandé d'indiquer si certains tests n'ont pas été menés.
 <div class="alert alert-danger">
 <b>
 TODO: Lister les tests types à mener
 </b>
 </div>
 #### YEP 1.9 - Documenter l'app  | validé | AUTO | OFFICIAL |
-Avant tout, il convient de faire une description correcte de l'app dans le champs `description` du manifest. L'insertion de mot clé dans cette description peut être une bonne idée, dans la mesure où un utilisateur pourrait être amené à faire une recherche (CTRL+F) parmis toutes les applications.
+Avant tout, il convient de faire une description correcte de l'app dans le champ `description` du manifest. L'insertion de mot clé dans cette description peut être une bonne idée, dans la mesure où un utilisateur pourrait être amené à faire une recherche (CTRL+F) parmi toutes les applications.
 
 Il y a également le README.md, ce dernier peut contenir:
 * le nom de l'app
 * un bref résumé de ce qu'elle fait
-* des éventuels compléments d'installation si le script ne suffit pas lui même
+* des éventuels compléments d'installation si le script ne suffit pas lui-même
 * des instructions pour l'utiliser (par exemple pour relier son smartphone ou son ordinateur)
 * l'endroit pour signaler un dysfonctionnement / une demande
 * la roadmap/TODO
@@ -162,9 +162,9 @@ Le manifeste permet de décrire une app afin que YunoHost puisse lui appliquer l
 #### YEP 2.2 - Utiliser bash pour les scripts principaux  | validé | auto | WORKING |
 Les scripts d'action (install, upgrade, remove, backup et restore) doivent être en bash afin que la cli/api yunohost puisse correctement les appeler.
 
-Ceci étant rien n'empèche à l'intérieur de ces scripts de faire appel à d'autres scripts ou bibliothèques de fonction. Ceux ci ne sont pas obligés d'être en bash.
+Ceci étant, rien n'empêche à l'intérieur de ces scripts de faire appel à d'autres scripts ou bibliothèques de fonction. Ceux-ci ne sont pas obligés d'être en bash.
 
-Cependant, il faudra porter une attention particulière à l'affichage correcte des logs d'information, de warning, ou d'erreurs. Afin qu'un utilisateur de la cli/api yunohost puisse comprendre le fonctionnement du script venant d'être executé et au besoin réparer son instance YunoHost.
+Cependant, il faudra porter une attention particulière à l'affichage correct des logs d'information, de warning, ou d'erreurs. Afin qu'un utilisateur de la cli/api yunohost puisse comprendre le fonctionnement du script venant d'être exécuté et au besoin réparer son instance YunoHost.
 
 #### YEP 2.3 - Sauvegarder les réponses lors de l'installation  | validé | manuel | WORKING |
 Lors de l'installation, il est nécessaire de sauvegarder chaque réponse aux questions du manifeste. En effet, même si au début il n'est pas nécessaire d'écrire un script de mise à jour, par la suite ce sera sans doute le cas. Or, sans les informations initiales, la mise à jour peut être plus fastidieuse.
@@ -179,22 +179,22 @@ Voici quelques exemples:
 * Vérifier que l'utilisateur existe
 * Vérifier que le chemin choisi est disponible
 
-Dans le cas où l'une des valeurs est incorrecte, il est alors nécéssaire d'annuler toutes modifications réalisées préalablement sur l'instance. Le mieux étant de faire tout ces contrôles avant de modifier le système.
+Dans le cas où l'une des valeurs est incorrecte, il est alors nécessaire d'annuler toutes modifications réalisées préalablement sur l'instance. Le mieux étant de faire tous ces contrôles avant de modifier le système.
 
 
 #### YEP 2.7 - Donner des permissions suffisantes aux instructions bash   | validé | auto | WORKING |
-Certaines instructions nécéssitent les droits sudo. Il faut dans ce cas ne pas oublier de prefixer ces instructions par `sudo `.
+Certaines instructions nécessitent les droits sudo. Il faut dans ce cas ne pas oublier de préfixer ces instructions par `sudo `.
 
-Dans d'autres cas il est nécéssaire de donner des droits à l'aide de chmod et de chown.
+Dans d'autres cas il est nécessaire de donner des droits à l'aide de chmod et de chown.
 
 #### YEP 2.8 - Modifier correctement une configuration système   | brouillon | manuel | WORKING |
 #### YEP 2.9 - Enlever toutes traces de l'app lors de la suppression   | brouillon | manuel | WORKING |
 #### YEP 2.10 - Configurer les logs de l'application   | brouillon | manuel | WORKING |
 #### YEP 2.11 - Utiliser une variable plutôt que l'app id directement  | validé | manuel | OFFICIAL |
-Il est conseillé de rendre les scripts le plus générique possible, un bon moyen d'y parvenir est du'tiliser une variable pour le nom de l'app afin d'éviter qu'il se retrouve partout dans les scripts. Ainsi un autre packageur pourra plus facilement se servir du script pour une autre app.
+Il est conseillé de rendre les scripts le plus générique possible, un bon moyen d'y parvenir est d'utiliser une variable pour le nom de l'app afin d'éviter qu'il se retrouve partout dans les scripts. Ainsi un autre packageur pourra plus facilement se servir du script pour une autre app.
 
 #### YEP 2.12 - Utiliser les commandes pratiques (helpers)  | validé | auto | OFFICIAL |
-Afin de simplifier le packaging, d'uniformiser les pratiques, d'éviter les erreurs et d'augmenter la durée de vie d'un scripts vis à vis des futures versions de YunoHost. Un ensemble de helpers permetant de faire de nombreuses actions est proposé.
+Afin de simplifier le packaging, d'uniformiser les pratiques, d'éviter les erreurs et d'augmenter la durée de vie d'un script vis-à-vis des futures versions de YunoHost. Un ensemble de helpers permettant de faire de nombreuses actions est proposé.
 
 Pour plus d'information:
 * consulter [la documentation des helpers](https://yunohost.org/#/packaging_apps_helpers_fr)
@@ -215,7 +215,7 @@ Le script de mise à jour doit pouvoir fonctionner même si les mises à jour pr
 Ainsi, il doit être possible de faire des sauts de mise à jour d'une version N-x vers une version N. Pour ce faire il est conseillé d'enregistrer les numéros de version dans les settings de l'app.
 
 ### YEP 2.18 - Stabiliser une webapp
-La majeure partie des applications YunoHost sont des web apps, mais certaines n'en sont pas. Les YEP 2.18.x développent certaines spécificités liés aux web app.
+La majeure partie des applications YunoHost sont des web apps, mais certaines n'en sont pas. Les YEP 2.18.x développent certaines spécificités liées aux web app.
 
 #### YEP 2.18.1 - Lancer le script d'installation d'une webapp correctement   | validé | manuel | WORKING |
 Bien souvent une web app s'installe à partir de formulaires affichés sur une page web. Cette façon de faire, bien que pratique pour un humain, l'est moins pour un programme.
@@ -239,17 +239,17 @@ Une web app devraient pouvoir s'installer dans un sous-dossier.
 #### YEP 2.18.5 - Ajouter la tuile YunoHost pour naviguer facilement entre les applications   | validé | manuel | OFFICIAL |
 Sauf dans de rare cas il est conseiller d'intégrer le carré YunoHost qui permet de retourner sur le menu du SSO. Cette intégration se fait dans la configuration nginx.
 
-Certains utilisateurs ont remplacé ce carré par un script ajoutant un menu en ahut de chaque webapp.
+Certains utilisateurs ont remplacé ce carré par un script ajoutant un menu en haut de chaque webapp.
 
 ### YEP 3 - Sécuriser une app
 #### YEP 3.1 - Ne pas demander ou stocker de mot de passe LDAP   | brouillon | manuel | NOTWORKING |
 #### YEP 3.2 - Ouvrir un port correctement   | brouillon | manuel | WORKING |
 #### YEP 3.3 - Faciliter le contrôle de l'intégrité des sources   | brouillon | manuel | OFFICIAL |
 #### YEP 3.4 - Isoler l'app   | brouillon | manuel | OFFICIAL |
-#### YEP 3.5 - Suivre les recommendations de la documentation de l'app   | validé | manuel | OFFICIAL |
-En général, une application propose une documentation afin d'aider les administrateurs systèmes à réaliser l'installation. Il est conseiller d'en suivre les recommendations, notamment celles concernant les permissions à accorder par fichier ou répertoire.
+#### YEP 3.5 - Suivre les recommandations de la documentation de l'app   | validé | manuel | OFFICIAL |
+En général, une application propose une documentation afin d'aider les administrateurs systèmes à réaliser l'installation. Il est conseiller d'en suivre les recommandations, notamment celles concernant les permissions à accorder par fichier ou répertoire.
 
-Le mainteneur de paquet doit toutefois rester vigilant, certaines documentations pouvant être érronées ou insuffisante.
+Le mainteneur de paquet doit toutefois rester vigilant, certaines documentations pouvant être erronées ou insuffisante.
 
 #### YEP 3.6 - Mettre à jour les versions contenant des CVE   | draft | manuel | OFFICIAL |
 
@@ -261,17 +261,17 @@ Le Single Sign On permet d'éviter d'avoir à créer les mêmes utilisateurs pou
 
 Pour se faire, il convient de lier son app au LDAP et/ou d'utiliser des hooks pour dupliquer les informations du user dans la base de données de l'app.
 
-Une fois cette operation faite, le mainteneur peut utiliser l'instruction HTTP REMOTE_USER pour vérifier si un utilisateur est loggué ou non. En général, des modules existent (que ce soit au niveau de la technologie, du framework ou même de l'app elle même).
+Une fois cette opération faite, le mainteneur peut utiliser l'instruction HTTP REMOTE_USER pour vérifier si un utilisateur est loggué ou non. En général, des modules existent (que ce soit au niveau de la technologie, du framework ou même de l'app elle-même).
 
-Au besoin, SSOwat permet de sécuriser l'accès à une ou plusieurs partie de l'app. Il peut ainsi être pertinent de sécuriser l'accès à une page d'administration avec le SSO plutôt qu'un htaccess et de rendre le reste de l'app accessible à tous les visiteurs.
+Au besoin, SSOwat permet de sécuriser l'accès à une ou plusieurs parties de l'app. Il peut ainsi être pertinent de sécuriser l'accès à une page d'administration avec le SSO plutôt qu'un htaccess et de rendre le reste de l'app accessible à tous les visiteurs.
 
 #### YEP 4.2.1 - Déconnexion   | validé | manuel | OFFICIAL |
-Lorsque l'on clique sur une action de déconnection au sein de l'app, celle ci devrait déconnecter l'utilisateur du SSO. Sinon il y a un risque que l'utilisateur laisse par mégarde une session ouverte.
+Lorsque l'on clique sur une action de déconnexion au sein de l'app, celle-ci devrait déconnecter l'utilisateur du SSO. Sinon il y a un risque que l'utilisateur laisse par mégarde une session ouverte.
 
 #### YEP 4.3 - Fournir un script de sauvegarde YunoHost fonctionnel   | validé | auto | OFFICIAL |
 #### YEP 4.4 - Fournir un script de restauration YunoHost fonctionnel   | validé | auto | OFFICIAL |
 #### YEP 4.5 - Utiliser les hooks   | validé | manuel | OPTIONAL |
-YunoHost offre la possibilité de lancer des actions à chaque traitement éffectué par la ligne de commande. Ceci peut être pratique dans de nombreux cas.
+YunoHost offre la possibilité de lancer des actions à chaque traitement effectué par la ligne de commande. Ceci peut être pratique dans de nombreux cas.
 
 Exemples:
 * Ajouter/supprimer un utilisateur dans la base de données de l'app lorsque l'on utilise `yunohost user create` ou `yunohost user remove`
@@ -293,7 +293,7 @@ Liste des hooks:
 * post_app_addaccess
 * post_iptable_rules
 
-Ces scripts sont à placer dans un répertoire comme par exemple dans ce package: https://github.com/YunoHost-Apps/owncloud_ynh/tree/master/hooks .
+Ces scripts sont à placer dans un répertoire `hooks` comme dans ce package: https://github.com/YunoHost-Apps/owncloud_ynh/tree/master/hooks .
 
 
 #### YEP 4.6 - Gèrer le multi-instance   | validé | manuel | OPTIONAL |
