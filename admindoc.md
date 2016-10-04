@@ -2,7 +2,7 @@
 
 *For want of anything better, here is an index of interesting pages for the YunoHost server's administrator.*
 
-* [What is Self-hosting](/self-hosting)
+* [What is Self-hosting](/selfhosting)
 * [Installation guide](/install)
 * [Compatible hardware](/hardware)
 * [Available applications](/apps)
