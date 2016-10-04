@@ -304,7 +304,7 @@ Il faut toutefois faire attention à la façon de gérer les chemins de fichier,
 #### YEP 4.7 - Ajouter un module à la CLI   | validé | manuel | OPTIONAL |
 Il est possible de créer un module afin d'ajouter des commandes à la ligne de commandes yunohost.
 
-Pour ce faire, il faut ajouter un actionmaps dans /usr/share/moulinette/actionsmap/ .
+Pour ce faire, il faut ajouter un actionmaps dans /usr/share/moulinette/actionsmap/ . Cet actionmaps doit commencer par "ynh_".
 
 Les paquets [menu_ynh](https://github.com/YunoHost-Apps/menu_ynh/) et [subscribe_ynh](https://github.com/YunoHost-Apps/subscribe_ynh/) bien qu'un peu ancien (et non à jour) peuvent servir de base pour mettre en place ce genre de module.
 #### YEP 4.8 - Ajouter un module à l'admin web   | brouillon | manuel | OPTIONAL |
