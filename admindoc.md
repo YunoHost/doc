@@ -4,6 +4,8 @@
 
 * [What is Self-hosting](/selfhosting)
 * [Installation guide](/install)
+   * [On ARM board](/install_on_arm_board)
+   * [On Raspberry Pi](/install_on_raspberry)
 * [Compatible hardware](/hardware)
 * [Available applications](/apps)
 * [Administration interface usage](/admin)

@@ -7,9 +7,9 @@
 <img src="/images/cubieboard2.png">
 <img src="/images/micro-sd-card.jpg">
 
-* An ARM board with 500MHz CPU and 512Mo RAM.
-* A micro SD card: **4GB** capacity (or more) and **class10** speed rate are highly recommended.
-* A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth.
+* An ARM board with 500MHz CPU and 512MB RAM.
+* A micro SD card: **4GB** capacity (or more), **class10** speed rate is highly recommended.
+* A [reasonable ISP](/isp), preferably with a good and unlimited upload bandwidth.
 
 ---
 
@@ -28,7 +28,7 @@
 
 ---
 
-#### Recommended after post-installation
+#### Recommended after running the post-installation
 * Use [SSH authentication via key](security)
 
 ---
@@ -38,4 +38,4 @@
 
 ---
 
-***If you need help during one of these steps, do not hesitate to use [our support tools](/support).***
+***If you need help during one of these steps, do not hesitate to use [our support channel](/support).***
