@@ -68,6 +68,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Known](https://withknown.com)
 - [Koel](http://koel.phanan.net)
 - [Kontalk](http://kontalk.org)
+- [Koozip](http://koozic.net)
 - [KrISS feed](https://github.com/tontof/kriss_feed)
 - [Kune](https://en.wikipedia.org/wiki/Kune_%28software%29)
 - [Logstalgia](http://logstalgia.io)
