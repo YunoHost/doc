@@ -38,4 +38,4 @@
 
 ---
 
-***If you need help during one of these steps, do not hesitate to use [our support channel](/support).***
+***Need help during one of these steps? [Get support!](/support)***
