@@ -2,13 +2,13 @@
 
 *Find other ways to install YunoHost **[here](/install)**.*
 
-## Pre-requisite
+## Requirements
 
 <img src="/images/virtualbox.png" width=200>
 
-* An x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine.
-* The latest **YunoHost ISO image**, available here: 
-  * **Torrent** ([i386](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent), [amd64](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent)): share at least to ratio 1 to assure torrents sustainability
+* A x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine.
+* The latest **YunoHost ISO image**, available here:
+  * **Torrent** ([i386](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent), [amd64](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent)): share at least to ratio 1 to assure the torrent's sustainability
   * **Direct download** ([i386](http://build.yunohost.org/yunohostv2-latest-i386.iso), [amd64](http://build.yunohost.org/yunohostv2-latest-amd64.iso))
 
 
@@ -28,7 +28,7 @@
 
 ## <small>2.</small> Change network settings
 
-Go to **Settings** > **Network**,  and your interface:
+Go to **Settings** > **Network**:
 
 <img src="/images/virtualbox_2.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
@@ -53,7 +53,7 @@ Start the virtual machine
 You will have to select your ISO image `yunohostv2-latest-amd64.iso` here, then you should see the YunoHost's boot screen.
 
 <br>
-   
+
 <img src="/images/virtualbox_3.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 <br>
@@ -73,8 +73,8 @@ After the reboot, you will see this screen:
 <br>
 * The password for root user is "yunohost"
 
-* You can obtain further precisions on post-installation here: **[yunohost.org/postinstall](/postinstall)**
+* You can get more information on the post-installation here: **[yunohost.org/postinstall](/postinstall)**
 
 ---
 
-***If you need help during one of these steps, do not hesitate to use [our support tools](/support).***
+***Need help during one of these steps? [Get support!](/support)***
