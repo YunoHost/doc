@@ -2,21 +2,21 @@
 
 *Find other ways to install YunoHost **[here](/install)**.*
 
-### Pre-requisite
+### Requirements
 
 <img src="/images/laptop.png" width=200>
 <img src="/images/desktop.jpg">
 <img src="/images/nettop.jpg">
 
-<div class="alert alert-danger">This images are based on **Debian Wheezy**. Wheezy **won't be maintained** with YunoHost 2.4.<br />
-It's **strongly adviced** to install YunoHost on **Debian Jessie** with the **[install script](/install_on_debian_en)**.</div>
+<div class="alert alert-danger">These images are based on **Debian Wheezy**. Wheezy **won't be maintained** with YunoHost 2.4.<br />
+It is **strongly recommended** to install YunoHost on **Debian Jessie** with the **[install script](/install_on_debian_en)**.</div>
 
-* An x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop.    
-You can reuse any computer with **256MB RAM or more**.
+* A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop.    
+You can use any computer with **256MB RAM or more**.
 * Another computer to read this guide and access to your server.
 * A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
-* A **USB key** of at least 1GB capacity **OR** a standard **blank CD**
-* One of the latest **YunoHost ISO images**, available here (take the 32 bits one if you don't know which one to choose):
+* A **USB stick** of at least 1GB capacity **OR** a standard **blank CD**
+* One of the latest **YunoHost ISO images**, available here (take the 32 Bits one if you don't know which one to choose):
    <div>
    <b>Torrent:</b>
    <ul>
@@ -42,10 +42,10 @@ You can reuse any computer with **256MB RAM or more**.
 
 ---
 
-For connecting directly on your computer or with [SSH](/ssh) (only local): 
+To connect directly to your computer or with [SSH](/ssh) (only on local network:
 * User: **root**
 * Password: **yunohost**
 
 ---
 
-***If you need help during one of these steps, do not hesitate to use [our support tools](/support).***
+***Need help during one of these steps? [Get support!](/support)***

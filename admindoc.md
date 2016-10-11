@@ -3,10 +3,13 @@
 *For want of anything better, here is an index of interesting pages for the YunoHost server's administrator.*
 
 * [What is Self-hosting](/selfhosting)
+* [Compatible hardware](/hardware)
 * [Installation guide](/install)
    * [On ARM board](/install_on_arm_board)
    * [On Raspberry Pi](/install_on_raspberry)
-* [Compatible hardware](/hardware)
+   * [From the ISO image](/install_iso)
+   * [On Debian](/install_on_debian)
+   * [On VirtualBox](/install_on_virtualbox)
 * [Available applications](/apps)
 * [Administration interface usage](/admin)
 * [Command-line interface usage](/moulinette)
