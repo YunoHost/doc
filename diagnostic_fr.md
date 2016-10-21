@@ -46,7 +46,7 @@ Vous pouvez également rediriger les ports manuellement vers l’adresse IP loca
 
 ### <small>4.</small> Est-ce que votre box/routeur fait du hairpinning ?
 
-Si le serveur est accessible de l’extérieur, mais inatteignable via son nom de domaine dans votre réseau local, votre box/routeur ne fait probablement pas correctement de <a href="http://fr.wikipedia.org/wiki/Hairpinning" target="_blank">hairpinning</a>.
+Si le serveur est accessible de l’extérieur, mais inatteignable via son nom de domaine dans votre réseau local, votre box/routeur ne fait probablement pas correctement de <a href="https://fr.wikipedia.org/wiki/Hairpinning" target="_blank">hairpinning</a>.
 
 Voici un [tutoriel](dns_local_network_fr) pour pouvoir accéder à son serveur en réseau local et contourner le problème de hairpinning. Le tutoriel propose en première solution de mettre en place une redirection avec le DNS de la box et en seconde solution de modifier le fichier `hosts` des **clients** pour indiquer qu’il doit accéder au **serveur** via son IP locale. La première solution est préférable car il ne nécessite pas de modifier le fichier `hosts` sur chacun des clients du réseau local.
 
