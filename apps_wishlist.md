@@ -31,6 +31,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Deluge](http://deluge-torrent.org) (with WebUI)
 - [DemocracyOS](http://democracyos.org)
 - [Discourse](http://discourse.org)
+- [DNSchain](https://github.com/okTurtles/dnschain)
 - [Emby](https://emby.media)
 - [ERPnext](https://erpnext.com/download)
 - [Ethersheet](https://ethersheet.org)
