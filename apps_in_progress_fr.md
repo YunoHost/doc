@@ -31,7 +31,7 @@ N’hésitez pas à vous créer un compte GitHub pour faire part de vos remarque
 </div>
 
 <h2>Applications dites fonctionnelles</h2>
-<p><b style="color: red">Remarque : c'est le mainteneur de l'application qui la décrit comme fonctionnelle, pas l'équipe de YunoHost. Installez la à vos risques et péril. Nous ne fournirrons pas de support dessus.</b></p>
+<p><b style="color: red">Remarque : c'est le mainteneur de l'application qui la décrit comme fonctionnelle, pas l'équipe de YunoHost. Installez la à vos risques et péril et soyez conscient que ne fournirons aucune assistance dessus.</b></p>
 
 <div class="panel-group" id="app-accordion2-working"></div>
 
