@@ -8,6 +8,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 
 - [List of awesome selfhosted apps](https://github.com/Kickball/awesome-selfhosted)
 - [List of awesome sysadmin apps](https://github.com/kahun/awesome-sysadmin)
+- [List of awesome Node.js projects](https://github.com/sqreen/awesome-nodejs-projects)
 - [10er10](https://github.com/dready92/10er10)
 - [Ajenti](http://ajenti.org)
 - [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
