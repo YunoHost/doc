@@ -137,6 +137,24 @@ Tout le monde peut changer de positions à n'importe quel moment, mais il est de
    - si 1/3 arrondi au supérieur (exemple: 1/3 de 4 == "1.33.." -> 2) [à débattre pour ce %] des participant·e·s s'étant exprimé·e·s sur cette question sont favorables au vote, alors le vote est ouvert et prend fin lorsque tout le monde a répondu (ou si nécessaire, après une date de clôture)
   - pourcentage d’avis positifs différents suivant l’importance de la prise de décisions : 50 %, 66 %, 80 %.
 
+###### Vote Mineur:
+Durée initiale: 1 semaine.
+Durée minimale: 3 jours.
+Décalage, si nécessaire: 3 jours.
+Avis nécessaires: 3 dont au moins 2 membres du conseil faisant partie du groupe (celui qui a initié le vote peut voter).
+
+###### Vote Standard/Moyen:
+Durée initiale: 2 semaines.
+Durée minimale: 1 semaine.
+Décalage, si nécessaire: 1 semaine.
+Avis nécessaires: 4 dont au moins 2 membres du conseil faisant partie du groupe (celui qui a initié le vote peut voter).
+
+###### Vote Majeur :
+Durée initiale: 1 mois.
+Durée minimale: 2 semaines.
+Décalage, si nécessaire: 2 semaines.
+Avis nécessaires: 5 et au moins la moitié des membres du conseil actifs faisant partie du groupe (celui qui a initié le vote peut voter).
+
 ##### 6) Application
 Alors un membre du groupe peut annoncer la décision comme effective (et procéder aux actions nécessaires comme releaser, merger, annonce, autre ...). Il est important que s'il y a besoin de certaines actions, des personnes se soient engagées à les faire, une décision sans désigner est moyennement utile
 
