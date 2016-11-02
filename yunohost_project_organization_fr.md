@@ -1,8 +1,4 @@
-# Réunion YunoHost 22 et 23 octobre 2016 à Paris
-
-L'objectif de cette réunion était de définir le positionnement de YunoHost et d'organiser la prise de décision au sein de l'équipe de contributeurs de YunoHost. Ce document est le bilan du week end, il sera sans doute amélioré dans les jours et semaines à venir.
-
-Présents : @ljf, @Maniack_Crudelis, @Moul, @theodore
+# Organisation du projet YunoHost
 
 ## Définition de YunoHost
 
@@ -31,7 +27,9 @@ Historiquement, le projet est très proche des initiatives visant à la créatio
 ### Une structure ouverte, organisée par thèmes
 L'objectif de l'organisation de YunoHost est de permettre au plus grand nombre de contribuer à l'amélioration du logiciel, que ce soit d'un point de vue technique (développement, packaging d'application) ou non (communication, assistance aux utilisateurs, documentation, etc.). Inspiré par différents projets passés en revue lors de l'événement (Kodi, Debian, Django, Fedora, Wikipédia, etc.) et des idées des contributeurs de YunoHost (Jérôme, Bram, opi, scith, ju), il a été décidé d'une organisation en groupes spécialisés, fédérés par un conseil de contributeurs clés.
 
-Schéma d’organisation du projet YunoHost : <img src="https://framapic.org/0fZuM9Q5si0j/oaUlwA6Ie6G1.jpg" />
+Schéma d’organisation du projet YunoHost :
+
+![Schéma d’organisation du projet YunoHost](organization_schema.jpg?raw=true "Schéma d’organisation du projet YunoHost")
 
 
 #### Définition et constitution des groupes
