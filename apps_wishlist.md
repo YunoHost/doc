@@ -10,6 +10,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [List of awesome sysadmin apps](https://github.com/kahun/awesome-sysadmin)
 - [List of awesome Node.js projects](https://github.com/sqreen/awesome-nodejs-projects)
 - [10er10](https://github.com/dready92/10er10)
+- [Airtime](https://www.sourcefabric.org/en/airtime/)
 - [Ajenti](http://ajenti.org)
 - [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
 - [Auth0 SSO Dashboard](https://github.com/auth0/auth0-sso-dashboard)
@@ -71,6 +72,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Koozip](http://koozic.net)
 - [KrISS feed](https://github.com/tontof/kriss_feed)
 - [Kune](https://en.wikipedia.org/wiki/Kune_%28software%29)
+- [LiquidSoap](http://savonet.sourceforge.net/)
 - [Logstalgia](http://logstalgia.io)
 - [Loomio](https://www.loomio.org)
 - [The Lounge](https://thelounge.github.io), cf. https://github.com/Kloadut/shout_ynh/issues/4
