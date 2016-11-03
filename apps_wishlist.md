@@ -90,6 +90,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [MPD](http://www.musicpd.org)
 - [NetData](https://github.com/firehol/netdata)
 - [Nibbleblog](http://www.nibbleblog.com)
+- [NodeBB](https://nodebb.org)
 - [Only Office](http://onlyoffice.org)
 - [OpenBazaar](https://openbazaar.org)
 - [OpenJabNab](https://github.com/OpenJabNab/OpenJabNab)
