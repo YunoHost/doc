@@ -1,5 +1,11 @@
 # Organisation du projet YunoHost
 
+## Objectif du document
+Ce document a pour objectif d’empêcher une prise de pouvoir trop centralisée au sein du projet YunoHost.
+Le projet étant communautaire, les prises de décisions ne doivent pas être prises hâtivement par un seul contributeur.
+Pour palier à ce problème, les décisions doivent êtres collectives et réfléchies sur un temps minimum.
+Un conseil chapeaute le projet et des groupes d’intérêts permettent de représenter des sous projets du projet YunoHost. 
+
 ## Définition de YunoHost
 
 ###  Objectifs
