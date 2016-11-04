@@ -132,7 +132,7 @@ Tout le monde peut changer de positions à n'importe quel moment, mais il est de
    - que des avis positifs
    - que des refus
    - sans avis (s'en remet aux autres)
- - si le quota de réponse est atteint avant que la date ne soit atteinte
+ - Pour une décison mineure ou moyenne/standard, si le quota de réponse est atteint à la durée minimale et que le consensus est obtenu.
  - s'il n'est pas possible d'avoir assez de monde (vacances, plus assez de membres du groupe pouvant avoir un avis) il est possible pour le groupe de demander la clôture quand même, il y a alors un nouveau décalage de la date et si cette nouvelle date est franchie, la proposition est clôturée
    - si 1/3 arrondi au supérieur (exemple: 1/3 de 4 == "1.33.." -> 2) [à débattre pour ce %] des participant·e·s s'étant exprimé·e·s sur cette question sont favorables au vote, alors le vote est ouvert et prend fin lorsque tout le monde a répondu (ou si nécessaire, après une date de clôture)
   - pourcentage d’avis positifs différents suivant l’importance de la prise de décisions : 50 %, 66 %, 80 %.
