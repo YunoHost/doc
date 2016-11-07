@@ -1,6 +1,6 @@
 # App packaging <img src="/images/yunohost_package.png" width=100/>
 
-This document aimed to learn you how to package an application for YunoHost.
+The purpose of this document is to teach you how to package an application for YunoHost.
 
 ### Requirements
 To package an application, here are the requirements:
@@ -63,11 +63,11 @@ Note that it also works with a Git URL:
 yunohost app install https://github.com/author/my_app_package.git
 ```
 
-### Enhance package
-Here is a list of best practices for application install scripts :
+### Packaging best practices
+Here is a list of best practices for application install scripts:
 * scripts should use `sudo cp -a ../sources/. $final_path` instead of `sudo cp -a ../sources/* $final_path`;
 * install script must contain support in case of script errors to delete residuals files thanks to `set -e` and [trap](packaging_apps_trap_fr);
-* install script should use command line method instead of curl call through web install form;
+* install script should use the command-line method instead of calls to curl through web install form;
 * install script should save install answers;
 * application sources should be checked with a control sum (sha256, sha1 or md5) or a PGP signature;
 * scripts should be tested on Debian Jessie as well as 32 bits, 64 bits and ARM architectures;
@@ -76,18 +76,18 @@ Here is a list of best practices for application install scripts :
 ### Package script checker
 <a class="btn btn-lg btn-default" href="https://github.com/YunoHost/package_checker">Package checker</a>
 
-This is a Python script which check:
+This Python script checks:
 * that the package is up to date wich last specifications
 * that all files are present
-* that the manifest don't have syntax error
-* that scripts exit well before modifing the system during verifications.
+* that the manifest doesn't have syntax errors
+* that scripts exit well before modifing the system during verification.
 
 ### Publish and ask for testing your application
-* Publishing a [post on the Forum](https://forum.yunohost.org/) with the [`App integration` category](https://forum.yunohost.org/c/app-integration), to ask tests and returns on your application.
+* Publishing a [post on the Forum](https://forum.yunohost.org/) with the [`App integration` category](https://forum.yunohost.org/c/app-integration), to ask for testing and feedback on your application.
 
-* Ask to add your application in the [app repository](https://github.com/YunoHost/apps) to be displayed in the [non-official apps list](apps_in_progress_en). Precise his progress state: `notworking`, `inprogress`, or `working`.
+* Ask your application to be added to the [app repository](https://github.com/YunoHost/apps) to be displayed in the [non-official apps list](apps_in_progress_en). Specify its progress state: `notworking`, `inprogress`, or `working`.
 
-- Subscribe to the [Apps mailing list](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps) to be informed about packaging evolutions.
+- Subscribe to the [Apps mailing list](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps) to be informed about packaging evolution.
 
 ### Officalization of an application
-To become an official application, it must be enough tested, stable and should work on 64 bits, 32 bits et ARM processor architectures, and on Debian Jessie. If you think those conditions are met, ask for [official integration](https://github.com/YunoHost/apps) of your application.
+To become an official application, it must be tested well enough, be stable and should work on 64 bits, 32 bits et ARM processor architectures, and on Debian Jessie. If you think those conditions are met, ask for [official integration](https://github.com/YunoHost/apps) of your application.
