@@ -1,7 +1,7 @@
 #Essayer YunoHost
 
 <div class="alert alert-warning" markdown="1">
-**Note :** Cette démo tourne sous une **version bêta** du logiciel et **va cesser de fonctionner** de temps en temps.
+**Note :** Cette démo peut cesser de fonctionner de temps en temps.
 <br>
 Si cela ne fonctionne pas, vous pouvez [essayer chez vous](/try_at_home_fr).
 
@@ -24,7 +24,7 @@ Si cela ne fonctionne pas, vous pouvez [essayer chez vous](/try_at_home_fr).
 
 <p class="text-center" markdown="1">
 ***Le serveur de démo est fourni généreusement par    
-<a href="https://www.web4all.fr/" target="_blank"><img src="/images/web4all.png" width=100 style="vertical-align: center"></a>***
+<a href="https://www.gitoyen.net" target="_blank">Gitoyen</a>***
 </p>
 
 
