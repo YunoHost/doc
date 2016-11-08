@@ -42,12 +42,12 @@ Schéma d’organisation du projet YunoHost :
 La constitution de groupes part du constat que YunoHost compte beaucoup de sous-projets (treize au total), mais que l'on sait pas toujours qui en est en charge ou qui y est compétent. Il est donc proposé une simplification de l'organisation des sous-projet en groupes thématiques :
 
 - Groupe Core Dev
- -  Core YunoHost
- -  Moulinette
- -  Admin web
- -  SSOwat
- -  Dynette
- -  YNH-Dev
+ - Core YunoHost
+ - Moulinette
+ - Admin web
+ - SSOwat
+ - Dynette
+ - YNH-Dev
 
 - Groupe distribution
  - Création et maintenance des images d'installation sur diverses architectures
