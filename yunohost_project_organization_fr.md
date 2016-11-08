@@ -72,6 +72,11 @@ La constitution de groupes part du constat que YunoHost compte beaucoup de sous-
 
 - Groupe Support
 
+- Groupe distribution
+   - Création et maintenance des images d'installation sur diverses architectures
+   - Distribution des images
+   - Gestion de la distribution des paquets Debian.
+
 Les groupes sont ouverts à tous les contributeurs souhaitant participer au développement de YunoHost. Chacun peut s'inscrire aux canaux de communication associés aux groupes auxquels il souhaite prendre part. Chaque inscrit est libre d'échanger avec le reste du groupe, de voter et de proposer au vote une décision à la suite d'une étape d'échange et d'amélioration de la proposition. 
 Afin de faciliter sa gestion, chaque groupe nomme donc un coordinateur (et un remplaçant) dont le rôle est :  
 
