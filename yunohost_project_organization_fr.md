@@ -144,20 +144,20 @@ Tout le monde peut changer de positions à n'importe quel moment, mais il est de
 - Durée initiale: 1 semaine.
 - Durée minimale: 3 jours.
 - Décalage, si nécessaire: 3 jours.
-- Avis nécessaires: 3 dont au moins 2 membres du groupe (celui qui a initié le vote peut voter). 4, dont 3 membres du groupe pour anticiper.
+- Avis nécessaires: 3 dont au moins 2 membres du groupe (celui qui a initié cette prise de décision peux donner son avis). 4, dont 3 membres du groupe pour anticiper.
 - Validation par vote (le cas échéant): 66% de votes positifs.
 
 ###### Décision Standard/Moyenne:
 - Durée initiale: 2 semaines.
 - Durée minimale: 1 semaine.
 - Décalage, si nécessaire: 1 semaine.
-- Avis nécessaires: 50% des membres du groupe (celui qui a initié le vote peut voter). 66% des membres du groupe pour anticiper.
+- Avis nécessaires: 50% des membres du groupe (celui qui a initié cette prise de décision peux donner son avis). 66% des membres du groupe pour anticiper.
 - Validation par vote (le cas échéant): 75% de votes positifs.
 
 ###### Décision Majeure :
 - Durée initiale: 1 mois.
 - Décalage, si nécessaire: 2 semaines.
-- Avis nécessaires: 75% des membres du groupe (celui qui a initié le vote peut voter).
+- Avis nécessaires: 75% des membres du groupe (celui qui a initié cette prise de décision peux donner son avis).
 - Validation par vote (le cas échéant): 90% de votes positifs.
 
 ##### 6) Application
