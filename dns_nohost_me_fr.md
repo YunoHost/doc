@@ -6,12 +6,24 @@ Afin de rendre l'auto-hébergement le plus accessible possible, YunoHost offre u
 
 ### Sous-domaines
 
-Utiliser le service de DNS `nohost.me` ou `noho.st` revient a en obtenir un sous-domaine.
-
-Le service de domaines `nohost.me` et `noho.st` permet d'avoir uniquement un sous-domaine du type `mondomaine.nohost.me` ou `mondomaine.nohost.me` mais n'autorise pas les sous-domaines de sous-domaines.
+Le service de domaines `nohost.me` et `noho.st` permet d'avoir uniquement un sous-domaine du type `mondomaine.nohost.me` ou `mondomaine.nohost.me` mais n'autorise pas les sous-domaines sur ces sous-domaines.
 
 Ainsi, même si YunoHost permet l'installation d'applications sur des sous-domaines (par exemple avoir l'application Owncloud accessible depuis l'adresse `cloud.mondomaine.org`), il n’est pas possible d’avoir un sous-sous-domaine tel `monapplication.mondomaine.nohost.me`.
 Pour pouvoir profiter des applications installables uniquement à la racine d’un nom de domaine, il faut avoir son propre nom de domaine.
+
+### Obtenir un Sous-domaines
+
+Pour obtenir un sous-domaine, connecter-vous a votre serveur YunHost, puis en entrez la commande (en remplaçant `mondomaine`par le domaine que vous souhaitez acquérir):
+
+```bash
+sudo yunohost domain add mondomaine.nohost.me
+```
+
+Vous pouvez ensuite vérifier la création du domaine avec la commande :
+
+```bash
+sudo yunohost domain list
+```
 
 ### Récuperer un domaine nohost.me ou noho.st
 
