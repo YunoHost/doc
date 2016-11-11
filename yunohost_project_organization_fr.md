@@ -16,7 +16,8 @@ Ce postulat pose la question des services comme nohost.me, qui devra être déba
 
 ###  Valeurs
 
-Un logiciel libre et communautaire
+#### Un logiciel libre et communautaire
+
 Par rapport à d'autres initiatives, (InternetCube, Sandstorm, Freedombox, cozy, ArkOS, serveur NAS (synology), kodi) YunoHost se distingue en étant : 
  
 - un logiciel sous licence libre
@@ -24,7 +25,8 @@ Par rapport à d'autres initiatives, (InternetCube, Sandstorm, Freedombox, cozy,
 -  reposant sur des applications libres existantes (roundcube, baikal, etc.)
 
 
-Que chacun peut s'approprier
+#### Que chacun peut s'approprier
+
 Historiquement, le projet est très proche des initiatives visant à la création d'un internet neutre et décentralisé. Cette proximité, notamment avec la FFDN, a amené une partie des contributeurs de YunoHost à créer la Brique Internet dont la mission est de faciliter l'auto-hébergement en fournissant une solution complète incluant service (via un VPN) et matériel. Cet aspect militant n'entrave pas des initiatives commerciales du logiciel pour lequel des entreprises pourraient proposer du support ou de l'hébergement.
 
 
