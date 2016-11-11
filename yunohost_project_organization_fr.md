@@ -151,8 +151,6 @@ Tout le monde peut changer de positions à n'importe quel moment, mais il est de
    - sans avis (s'en remet aux autres)
  - Pour une décison mineure ou moyenne/standard, si le quota de réponse est atteint à la durée minimale et que le consensus est obtenu.
  - s'il n'est pas possible d'avoir assez de monde (vacances, plus assez de membres du groupe pouvant avoir un avis) il est possible pour le groupe de demander la clôture même si le quota d'avis n'est pas atteint, il y a alors un nouveau décalage de la date et si cette nouvelle date est franchie, la proposition est clôturée selon les avis donnés.
-   - si 1/3 arrondi au supérieur (exemple: 1/3 de 4 == "1.33.." -> 2) [à débattre pour ce %] des participant·e·s s'étant exprimé·e·s sur cette question sont favorables au vote, alors le vote est ouvert et prend fin lorsque tout le monde a répondu (ou si nécessaire, après une date de clôture)
-  - pourcentage d’avis positifs différents suivant l’importance de la prise de décisions : 50 %, 66 %, 80 %.
 
 ###### Micro décision:
 - Décision prise et appliquée par un seul membre sans délai. Ce type de décision doit impérativement pouvoir être réversible, et peut être remise en question par n'importe quel membre du groupe.
