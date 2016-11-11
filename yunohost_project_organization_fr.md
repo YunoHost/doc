@@ -76,7 +76,7 @@ La constitution de groupes part du constat que YunoHost compte beaucoup de sous-
  - Traduction
  - Entraide (support)
 
-Les groupes sont ouverts à tous les contributeurs souhaitant participer au développement de YunoHost. Chacun peut s'inscrire aux canaux de communication associés aux groupes auxquels il souhaite prendre part. Chaque inscrit est libre d'échanger avec le reste du groupe, de voter et de proposer au vote une décision à la suite d'une étape d'échange et d'amélioration de la proposition. 
+Les groupes sont accessible à tous les contributeurs souhaitant participer au développement de YunoHost, sur simple demande et après accord du groupe. Chacun peut s'inscrire aux canaux de communication associés aux groupes auxquels il souhaite prendre part. Chaque inscrit est libre d'échanger avec le reste du groupe, de voter et de proposer au vote une décision à la suite d'une étape d'échange et d'amélioration de la proposition. 
 Afin de faciliter sa gestion, chaque groupe nomme donc un coordinateur (et un remplaçant) dont le rôle est :  
 
 - d'accueillir et fédérer les nouveaux contributeurs réguliers de son groupe
