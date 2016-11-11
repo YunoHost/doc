@@ -151,6 +151,29 @@ Tout le monde peut changer de positions à n'importe quel moment, mais il est de
    - si 1/3 arrondi au supérieur (exemple: 1/3 de 4 == "1.33.." -> 2) [à débattre pour ce %] des participant·e·s s'étant exprimé·e·s sur cette question sont favorables au vote, alors le vote est ouvert et prend fin lorsque tout le monde a répondu (ou si nécessaire, après une date de clôture)
   - pourcentage d’avis positifs différents suivant l’importance de la prise de décisions : 50 %, 66 %, 80 %.
 
+###### Micro décision:
+- Décision prise et appliquée par un seul membre sans délai. Ce type de décision doit impérativement pouvoir être réversible, et peut être remise en question par n'importe quel membre du groupe.
+
+###### Décision Mineure:
+- Durée initiale: 1 semaine.
+- Durée minimale: 3 jours.
+- Décalage, si nécessaire: 3 jours.
+- Avis nécessaires: 3 dont au moins 2 membres du groupe (celui qui a initié cette prise de décision peux donner son avis). 4, dont 3 membres du groupe pour anticiper.
+- Validation par vote (le cas échéant): 66% de votes positifs.
+
+###### Décision Standard/Moyenne:
+- Durée initiale: 2 semaines.
+- Durée minimale: 1 semaine.
+- Décalage, si nécessaire: 1 semaine.
+- Avis nécessaires: 50% des membres du groupe (celui qui a initié cette prise de décision peux donner son avis). 66% des membres du groupe pour anticiper.
+- Validation par vote (le cas échéant): 75% de votes positifs.
+
+###### Décision Majeure :
+- Durée initiale: 1 mois.
+- Décalage, si nécessaire: 2 semaines.
+- Avis nécessaires: 75% des membres du groupe (celui qui a initié cette prise de décision peux donner son avis).
+- Validation par vote (le cas échéant): 90% de votes positifs.
+
 ##### 6) Application
 Alors un membre du groupe peut annoncer la décision comme effective (et procéder aux actions nécessaires comme releaser, merger, annonce, autre ...). Il est important que s'il y a besoin de certaines actions, des personnes se soient engagées à les faire, une décision sans désigner est moyennement utile
 
