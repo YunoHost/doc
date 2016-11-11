@@ -102,8 +102,9 @@ Pour participer aux votes du conseil, il faut avoir contribué au projet et avoi
 ### Un processus de prises de décision basé sur un consensus mou
 
 Les décisions à prendre peuvent être de deux ordres : 
-1) pour un groupe (par "exemple merger une PR" serait affecté au groupe Dev tandis que "poster un tweet" serait de la responsabilité du groupe Communication)
-2) pour l'ensemble du projet (par exemple décider d'une release avec des nouvelles fonctionnalités)
+
+1. pour un groupe (par "exemple merger une PR" serait affecté au groupe Dev tandis que "poster un tweet" serait de la responsabilité du groupe Communication)
+2. pour l'ensemble du projet (par exemple décider d'une release avec des nouvelles fonctionnalités)
 
 Si un consensus sur une décision à prendre n'est pas trouvée au sein d'un groupe, ce dernier devra se tourner vers le conseil pour en débattre. Si aucun consensus n'est trouvé, la proposition sera soumise au vote de tous les contributeurs.
 
