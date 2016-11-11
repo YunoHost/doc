@@ -51,7 +51,7 @@ La constitution de groupes part du constat que YunoHost compte beaucoup de sous-
  - Dynette
  - YNH-Dev
 
-- Groupe distribution
+- Groupe Distribution
  - Création et maintenance des images d'installation sur diverses architectures
  - Distribution des images
  - Gestion de la distribution des paquets Debian.
