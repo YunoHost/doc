@@ -41,7 +41,7 @@ Schéma d’organisation du projet YunoHost :
 
 
 #### Définition et constitution des groupes
-La constitution de groupes part du constat que YunoHost compte beaucoup de sous-projets (treize au total), mais que l'on sait pas toujours qui en est en charge ou qui y est compétent. Il est donc proposé une simplification de l'organisation des sous-projet en groupes thématiques :
+La constitution de groupes part du constat que YunoHost compte beaucoup de sous-projets (treize au total), mais que l'on ne sait pas toujours qui en est en charge ou qui y est compétent. Il est donc proposé une simplification de l'organisation des sous-projet en groupes thématiques :
 
 - Groupe Core Dev
  - Core YunoHost
