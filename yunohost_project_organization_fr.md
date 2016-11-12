@@ -178,14 +178,8 @@ Tout le monde peut changer de positions à n'importe quel moment, mais il est de
 ##### 6) Application
 Alors un membre du groupe peut annoncer la décision comme effective (et procéder aux actions nécessaires comme releaser, merger, annonce, autre ...). Il est important que s'il y a besoin de certaines actions, des personnes se soient engagées à les faire, une décision sans désigner est moyennement utile
 
-## Plan d’action
-
-Différentes idées ont été relevées au cours de la réunion par les personnes présentes. Les décisions du week-end devraient être publiée sur le forum (ou autre) pour être détaillées et discutées, en vue d'être acceptées.
-
 ### Plan de migration
-Il est proposé d'appliquer dés à présent ce processus décisionnel, toutefois vu que ce n'est qu'un brouillon, chaque personne est invitée à publier des propositions de modifications/améliorations/précisions et à les soumettre. Les décisions se prendront sur le forum étant donné que Maniack et Moul ont des problèmes techniques de réception ou d'écriture sur la liste de discussion mail. Rappel il est possible de s'abonner par mail au forum, par contre la fonctionnalité de réponse par mail semble ne pas fonctionner.
-
-Mise en place d’un [système de vote via Discourse](https://blog.discourse.org/2015/08/improved-polls-in-discourse) plus intéressant que par mailling list.
+Il est proposé d'appliquer dés à présent ce processus décisionnel, toutefois vu que ce n'est qu'un brouillon, chaque personne est invitée à publier des propositions de modifications/améliorations/précisions et à les soumettre. Les décisions pourront s'appuyer sur le [système de vote via Discourse](https://blog.discourse.org/2015/08/improved-polls-in-discourse).
 
 Conseil : Bram, ju, ljf, Maniack C, Moul, opi, (scith, tostak, theodore) (à élire ? auto-promotion par méritocratie ? renouvellement au lieu de demander un retrait par d’autres membres (processus négatif))
 
