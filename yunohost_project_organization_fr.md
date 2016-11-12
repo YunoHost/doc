@@ -9,10 +9,7 @@ Un conseil oriente l’évolution du projet YunoHost, et des groupes d’intér�
 ## Définition de YunoHost
 
 ###  Objectifs
-Selon le site web : « Le but de YunoHost est de rendre accessibles au plus grand nombre l’installation et l’administration d’un serveur, sans délaisser la qualité et la fiabilité du logiciel. »
-
-Nous proposons de limiter YunoHost au simple logiciel et de ne traiter aucun service auxiliaire estampillé sous le même nom (support payant, dns, hébergement). La fourniture de services devrait être laissée à d'autres structures gravitant autour du logiciel, qu'elles soient des entreprises ou des associations. Cela afin de concentrer l'activité de Yunohost sur la qualité du logiciel.
-Ce postulat pose la question des services comme nohost.me, qui devra être débattue.
+Le but de YunoHost est de rendre accessibles au plus grand nombre l’installation et l’administration d’un serveur, sans délaisser la qualité et la fiabilité du logiciel.
 
 ###  Valeurs
 
