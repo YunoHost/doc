@@ -212,18 +212,20 @@ Conseil : Bram, ju, ljf, Maniack C, Moul, opi, (scith, tostak, theodore) (à él
 - Revoir système de build : stable <— testing <— branches
 - Gel de nohost.me et question de l'abandon des services
 
-#### Groupes Dev
+#### Groupe Dev
  - Comment gérer les pull request ?
    - Chaque ticket fait l'objet d'une branche et d'un ticket, tu fais une pull/merge request, la communauté vérifie que ça fonctionne, une décision est prise d'intégrer.
 
 
-#### Groupes Apps
+#### Groupe Apps
  -  Pour les apps communautaires, les issues sont bien sur Github, les discussions sur le forum
 
-#### Support
+#### Groupe Communication
 - Rapport de bug à partir du forum
 - Faire en sorte de nettoyer le forum pour éviter le bruit
 - Proposition de supprimer le salon de support
+- Comment rendre le forum plus actif et central
+- Comment s'organiser pour les privilèges sur le forum (si les groupes veulent voter sur le forum)
 
 #### Autres
 - Demande sur le forum avec notification des membres du conseil et des représentants des groupes d’intérêts concernés.
