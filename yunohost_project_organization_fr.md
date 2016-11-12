@@ -128,11 +128,7 @@ Tout le monde peut changer de positions à n'importe quel moment, mais il est de
  - "pas d'avis" / "je ne suis pas en position de donner un avis pertinent (exemple: je sais pas coder en X)"
 -  réponses délayantes/différées
  - demande de précisions, dans ce cas la décision est suspendue
--  refus
- -  il y a deux types de refus
-    -  "cela doit être fait autrement"
-    - "on ne doit pas faire ça"
- - tout refus doit être argumenté et justifié
+-  refus: tout refus doit être argumenté et justifié
 
 ##### 3) Suspension/Repoussement
  - tant qu'il n'y a pas de réponse, la décision est suspendue, au moment de la réponse, la date de clôture est automatiquement repoussé (si besoin) (pour une durée, à définir, moins longue que la première fois)
