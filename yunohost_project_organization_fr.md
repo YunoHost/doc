@@ -18,11 +18,7 @@ Ce postulat pose la question des services comme nohost.me, qui devra être déba
 
 #### Un logiciel libre et communautaire
 
-Par rapport à d'autres initiatives, (InternetCube, Sandstorm, Freedombox, cozy, ArkOS, serveur NAS (synology), kodi) YunoHost se distingue en étant : 
- 
-- un logiciel sous licence libre
--  entièrement communautaire
--  reposant sur des applications libres existantes (roundcube, baikal, etc.)
+YunoHost est un logiciel sous licence libre, entièrement communautaire, et reposant sur des applications elles-mêmes communautaires et souvent libres (roundcube, baikal, etc...).
 
 
 #### Que chacun peut s'approprier
