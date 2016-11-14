@@ -187,7 +187,7 @@ Il est proposé d'appliquer dés à présent ce processus décisionnel, toutefoi
 
 Mise en place d’un [système de vote via Discourse](https://blog.discourse.org/2015/08/improved-polls-in-discourse) plus intéressant que par mailling list.
 
-Conseil : Bram, ju, ljf, Maniack C, Moul, opi, (scith, tostak, theodore) (à élire ? auto-promotion par méritocratie ? renouvellement au lieu de demander un retrait par d’autres membres (processus négatif))
+Conseil : Bram, ju, ljf, Maniack, Moul, opi, theodore.
 
  - Representants des groupes d’intérêts (élus ou auto-proclamés) : 
    - Dev : opi, Bram, ju, ljf
