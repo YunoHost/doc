@@ -33,7 +33,7 @@ Historiquement, le projet est très proche des initiatives visant à la créatio
 ## Organisation de YunoHost
 
 ### Une structure ouverte, organisée par thèmes
-L'objectif de l'organisation de YunoHost est de permettre au plus grand nombre de contribuer à l'amélioration du logiciel, que ce soit d'un point de vue technique (développement, packaging d'application) ou non (communication, assistance aux utilisateurs, documentation, etc.). Inspiré par différents projets passés en revue lors de l'événement (Kodi, Debian, Django, Fedora, Wikipédia, etc.) et des idées des contributeurs de YunoHost (Jérôme, Bram, opi, scith, ju), il a été décidé d'une organisation en groupes spécialisés, fédérés par un conseil de contributeurs clés.
+L'objectif de l'organisation de YunoHost est de permettre au plus grand nombre de contribuer à l'amélioration du logiciel, que ce soit d'un point de vue technique (développement, packaging d'application) ou non (communication, assistance aux utilisateurs, documentation, etc.). Inspiré par différents projets passés en revue lors de l'événement (Kodi, Debian, Django, Fedora, Wikipédia, etc.) et des idées de contributeur de YunoHost (Jérôme, Bram, opi, scith, ju), il a été décidé d'une organisation en groupes spécialisés, fédérés par un conseil de contributeurs clés.
 
 Schéma d’organisation du projet YunoHost :
 
