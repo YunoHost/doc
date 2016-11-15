@@ -179,7 +179,7 @@ Conseil : Bram, ju, ljf, Maniack, Moul, opi, theodore.
   - Com
     - Com : Bram, Moul
     - Doc : Moul, theodore
-    - Trad : Jean-Batiste
+    - Trad : Jean-Baptiste
 
 ### Décisions à venir pour les groupes
 #### Conseil
@@ -217,16 +217,16 @@ Conseil : Bram, ju, ljf, Maniack, Moul, opi, theodore.
 - La release devrait être validée par l'ensemble des 4 (ou 5) groupes d’intérêts
 - Communication en français et en anglais
 - Annuaire ou contact des groupes pour les nouveaux arrivants. Voir peut-être annuaire tout court pour savoir qui fait quoi. https://yunohost.org/#/contribs_fr à compléter. Et à mettre en avant.
--  Proposition de laisser les membres YunoHost s'auto déterminer -> Comment gérer les accès ?
+- Proposition de laisser les membres YunoHost s'auto déterminer -> Comment gérer les accès ?
 
 
 ## Notes
 Moyens de communication actuel : 
 
--  IRL
--  Réunion Mumble
--  Forum
--  Listes de diffusion : contrib et app
+- IRL
+- Réunion Mumble
+- Forum
+- Listes de diffusion : contrib et app
 - Bugtracker Redmine
 - Forge git pour les review de code sur les PR
 - Salon de discussions XMPP
