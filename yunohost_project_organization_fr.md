@@ -50,15 +50,15 @@ La constitution de groupes part du constat que YunoHost compte beaucoup de sous-
  - Gestion de la distribution des paquets Debian.
 
 - Groupe Infra/Adminsys
- -  Infrastructure
+ - Infrastructure
  - Site web (wiki, forum, salon de discussion, redmine, mumble)
  - Démo
  - Services
-    - ip.yunohost.org
-    - yunoport
-    - nohost.me
-    - yunodash
-    - yunopaste
+    - [ip.yunohost.org](https://ip.yunohost.org/) et ip6.yunohost.org
+    - [yunoports](http://ports.yunohost.org/)
+    - nohost.me et noho.st
+    - [yunodash](https://dash.yunohost.org/)
+    - [yunopaste](http://paste.yunohost.org/)
 
 - Groupe Apps
  - Apps Officielles
@@ -225,8 +225,8 @@ Moyens de communication actuel :
 
 - IRL
 - Réunion Mumble
-- Forum
-- Listes de diffusion : contrib et app
-- Bugtracker Redmine
-- Forge git pour les review de code sur les PR
+- [Forum](https://forum.yunohost.org)
+- Listes de diffusion : [contrib](https://list.yunohost.org/cgi-bin/mailman/listinfo/contrib) et [apps](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps)
+- [Bugtracker Redmine](https://dev.yunohost.org)
+- [Forge git](http://github.com/yunohost/) pour les review de code
 - Salon de discussions XMPP
