@@ -60,6 +60,9 @@ En fonction de l’autorité d’enregistrement, des certificats intermédiaires
 > **Gandi**
 > ```bash
 > sudo wget https://www.gandi.net/static/CAs/GandiStandardSSLCA.pem -O ae_certs/intermediate_ca.pem```
+> Attention si votre certificat expire après le 01/01/2017, choisissez le certificat intermédiaire SHA2 suivant (à la place du certificat SHA1 précédent)
+> ```bash
+> sudo wget https://www.gandi.net/static/CAs/GandiStandardSSLCA2.pem -O ae_certs/intermediate_ca.pem```
 
 > **RapidSSL**
 > ```bash
