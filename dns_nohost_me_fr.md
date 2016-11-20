@@ -8,7 +8,7 @@ Afin de rendre l'auto-hébergement le plus accessible possible, YunoHost offre u
 ### Obtenir un domaine
 
 ##### Depuis l'interface d'administration
-Vous pouvez obtenir un domaine directement depuis l'interface d'administration de YunoHost, en vous rendant dans le menu Domaine et en cliquant sur le bouton "Ajouter un domaine" :
+Vous pouvez obtenir un domaine directement depuis l'interface d'administration de YunoHost, en vous rendant dans le menu "Domaines" et en cliquant sur le bouton "Ajouter un domaine" :
 
 <img src="/images/dns_nohost_me.png" height=150 style="vertical-align:bottom">
 
