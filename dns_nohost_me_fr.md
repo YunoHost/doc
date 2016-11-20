@@ -7,7 +7,13 @@ Afin de rendre l'auto-hébergement le plus accessible possible, YunoHost offre u
 
 ### Obtenir un domaine
 
-Pour obtenir un domaine, connectez-vous à votre serveur YunoHost, puis entrez la commande (en remplaçant `mondomaine` par le domaine que vous souhaitez acquérir):
+##### Depuis l'interface d'administration
+Vous pouvez obtenir un domaine directement depuis l'interface d'administration de YunoHost, en vous rendant dans le menu Domaine et en cliquant sur le bouton "Ajouter un domaine" :
+
+<img src="/images/dns_nohost_me.png" height=150 style="vertical-align:bottom">
+
+##### En ligne de commande
+Après vous être connecté à votre serveur YunoHost, entrez la commande (en remplaçant `mondomaine` par le domaine que vous souhaitez acquérir) :
 
 ```bash
 sudo yunohost domain add mondomaine.nohost.me
