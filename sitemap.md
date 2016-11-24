@@ -109,5 +109,6 @@
    * [Support](/support_en)
    * [Art Works](artworks_en)
    * [Blog](https://forum.yunohost.org/c/announcement)
+   - [Forum](https://forum.yunohost.org)
    * [Communication](communication_en)
    * [Help](/help)
