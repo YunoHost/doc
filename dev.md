@@ -4,6 +4,9 @@ You wish to implement a new feature in the Yunohost core, but don't know how to
 proceed ? This guide takes you through the various steps of the development and
 contribution process. 
 
+If you're looking for stuff to implement or fix, the bugtracker is 
+[here](https://dev.yunohost.org/issues/) !
+
 ## Setting up a development environment
 
 - **Use [ynh-dev](https://github.com/YunoHost/ynh-dev)** (see the README) to
@@ -63,6 +66,10 @@ contribution process.
   opening `https://domain.tld/yunohost/admin`. If not, run `npm install` and
   `npm run build` in `yunohost-admin/src/`. [Not sure about this, to be checked]
 
+- Run `/vagrant/ynh-dev use-git yunohost-admin`. It launches gulp, such as each 
+  time you modify sources, it recompiles the code and you can use it by 
+  refreshing (Ctrl+F5) your web administration. To stop the command, just do Ctrl+C.
+
 - The web interface uses the API to interact with Yunohost. The API
   commands/requests are also defined via the actionsmap. For instance, accessing
   the page ```https://domain.tld/yunohost/api/users``` corresponds to a `GET
@@ -95,20 +102,21 @@ contribution process.
   ```service yunohost-api restart```
   (You'll need to retype your admin password in the web interface)
 
-- Each time you edit something in the `js` folder, you should re-build with npm :
-  ```npm run build-dev``` 
-  and clear the cache of your browser.
-
-- Each time you edit something in the `views` folder, you should clear the cache
-  of your browser
+- You might need to force-clear the cache of your browser sometimes to refresh 
+  the javascript and/or html (so each time you edit something in `js` or `views`).
 
 
 ## Your feature is working and you want it to be integrated in Yunohost
 
-- Fork the relevant repo on Github, and commit stuff to a new branch with a name
-  like `enh-name-of-feature`.
+- Fork the relevant repo on Github, and commit stuff to a new branch. We recommend
+  to name the branch with the following convention :
+  - For an enhancement or new feature : `enh-REDMINETICKET-name-of-feature`, where 
+    REDMINETICKET is optional and is the id of a corresponding ticket on RedMine.
+  - For a bugfix fix-IDREDMINETICKET-description-of-fix", where 
+    REDMINETICKET is optional and is the id of a corresponding ticket on RedMine.
 
-- Once you're ready, open a Pull Request on Github
+- Once you're ready, open a Pull Request (PR) on Github. Please include "[fix]" or 
+  "[enh]" at the beginning of the title of your PR.
 
 - After reviewing, testing and validation by other contributors, your branch
 should be merged in `testing` (?) !
