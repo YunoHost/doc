@@ -122,6 +122,7 @@
    * [Entraide - support](/support_fr)
    * [Blog](https://forum.yunohost.org/c/announcement)
    - [Forum](https://forum.yunohost.org)
+   - [Salons de discussions](chat_rooms_fr)
    * [Conférences](/conf_fr)
    * [Communication extérieure](communication_fr)
    * [Travail artistique](artworks_fr)

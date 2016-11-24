@@ -110,5 +110,6 @@
    * [Art Works](artworks_en)
    * [Blog](https://forum.yunohost.org/c/announcement)
    - [Forum](https://forum.yunohost.org)
+   - [Chat rooms](chat_rooms_en)
    * [Communication](communication_en)
    * [Help](/help)
