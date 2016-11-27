@@ -1,29 +1,34 @@
-# Contributing to the Yunohost core
+## Contributing to the Yunohost core
 
-You wish to implement a new feature in the Yunohost core, but don't know how to
+You wish to add a new feature in the Yunohost core, but don't know how to
 proceed ? This guide takes you through the various steps of the development and
 contribution process. 
 
-If you're looking for stuff to implement or fix, the bugtracker is 
+If you're looking for stuff to implement or fix, the bug-tracker is 
 [here](https://dev.yunohost.org/issues/) !
 
-## Setting up a development environment
+**Come say hi to us in the [dev chatroom](xmpp:dev@conference.yunohost.org?join)** ! If you don't have an XMPP client, you can join using the widget at the bottom right of this page.
+
+### Setting up a development environment
 
 - **Use [ynh-dev](https://github.com/YunoHost/ynh-dev)** (see the README) to
   setup a development environment - locally in a virtual machine, or on a VPS.
-  This will setup a working Yunohost instance, using git repositories and
-  symlinks. That way, you will be able to edit files, test your changes, commit
-  stuff and push/pull directly from your development environment.
+  This will setup a working Yunohost instance, using directly the git repositories
+  (with symlinks). That way, you will be able to edit files, test your changes in real
+  time, commit stuff and push/pull directly from your development environment.
 
-- Implement and test your feature. Depending on what you want to develop, you
+- **Implement and test your feature**. Depending on what you want to develop, you
   will want to :
-   - **Python/CLI core** : work in `/vagrant/yunohost/`, i.e. the Python/CLI core
+   - **Python/CLI core** : work in `/vagrant/yunohost/`
    - **Web administration interface** : work in `/vagrant/yunohost-admin/`
-   - You can also work on the other projects (SSOwat, moulinette) in similar ways
+   - You can also work on the other projects on which Yunohost is built 
+     (SSOwat, moulinette) in similar ways
 
-## Developping on the Yunohost Python/CLI core
+### Working on the Yunohost Python/CLI core
 
-- Work in `/vagrant/yunohost/`
+- Work in `/vagrant/yunohost/`.
+
+- Run `/vagrant/ynh-dev use-git yunohost`.
 
 - The actionsmap file (`data/actionsmap/yunohost.yml`) defines the various
   categories, actions and arguments of the yunohost CLI. Define how you want
@@ -38,33 +43,29 @@ If you're looking for stuff to implement or fix, the bugtracker is
   `domain_add(domainName)` in `domain.py`, with the argument `domainName` equal
   to `"some.domain.tld"`.
 
-#### Helpers / coding style
+##### Helpers / coding style
 
 - To handle exceptions, you should raise some `MoulinetteError()`
 
 - To help with internationalizing the messages, use `m18n.n('some-message-id')`
   and put your string in `locales/en.json`. You can also put arguments and use
   them in the string with `{{some-argument:s}}`. Don't edit other locales files,
-  only the en.json !
+  this will be done using [weblate](https://translate.yunohost.org/) !
 
 - Yunohost tries to follow the [pep8](http://pep8.org/) coding style. Tools
   exist to automatically check conformity.
 
 - Name of "private" functions should start with a `_`
 
-#### Don't forget
+##### Don't forget
 
 - (Might not be necessary anymore) Each time you edit the actionsmap, you should
   force the refresh of the cache with `rm
   /var/cache/moulinette/actionsmap/yunohost.pkl`
 
-## Adding stuff to the Yunohost web administration interface
+### Working on the Yunohost web administration interface
 
-- Work in `/vagrant/yunohost-admin/src/`
-
-- Make sure the web admin interface of your development environment works, by
-  opening `https://domain.tld/yunohost/admin`. If not, run `npm install` and
-  `npm run build` in `yunohost-admin/src/`. [Not sure about this, to be checked]
+- Work in `/vagrant/yunohost-admin/src/`.
 
 - Run `/vagrant/ynh-dev use-git yunohost-admin`. It launches gulp, such as each 
   time you modify sources, it recompiles the code and you can use it by 
@@ -89,14 +90,14 @@ If you're looking for stuff to implement or fix, the bugtracker is
   `{{some-variable}}`, which will be replaced when building/accessing the page.
   It is also possible to have conditions using the
   [handlebars.js](http://handlebarsjs.com) syntax : ```{{#if
-  some-variable}}<p>Some conditionnal HTML code here !</p>{{/if}}```
+  some-variable}}<p>Some conditional HTML code here !</p>{{/if}}```
 
 - For internationalized strings, use `y18n.t('some-string-code')` in the
   javascript, or `{{t 'some-string-code'}}` in the HTML template, and put your
-  string in `locales/en.json`. Don't edit other locales files, only the 
-  en.json !
+  string in `locales/en.json`. Don't edit other locales files,
+  this will be done using [weblate](https://translate.yunohost.org/) !
 
-#### Don't forget
+##### Don't forget
 
 - Each time you edit the actionsmap, you should restart the yunohost-api :
   ```service yunohost-api restart```
@@ -106,19 +107,49 @@ If you're looking for stuff to implement or fix, the bugtracker is
   the javascript and/or html (so each time you edit something in `js` or `views`).
 
 
-## Your feature is working and you want it to be integrated in Yunohost
+### Your feature is ready and you want it to be integrated in Yunohost
 
 - Fork the relevant repo on Github, and commit stuff to a new branch. We recommend
   to name the branch with the following convention :
-  - For an enhancement or new feature : `enh-REDMINETICKET-name-of-feature`, where 
-    REDMINETICKET is optional and is the id of a corresponding ticket on RedMine.
-  - For a bugfix fix-IDREDMINETICKET-description-of-fix", where 
-    REDMINETICKET is optional and is the id of a corresponding ticket on RedMine.
+  - For an enhancement or new feature : `enh-REDMINETICKET-name-of-feature`
+  - For a bugfix `fix-REDMINETICKET-description-of-fix`
+  - `REDMINETICKET` is optional and is the id of a corresponding ticket on RedMine.
 
-- Once you're ready, open a Pull Request (PR) on Github. Please include "[fix]" or 
-  "[enh]" at the beginning of the title of your PR.
+- Once you're ready, open a Pull Request (PR) on Github. Please include `[fix]` or 
+  `[enh]` at the beginning of the title of your PR.
 
 - After reviewing, testing and validation by other contributors, your branch
 should be merged in `testing` (?) !
+
+
+<script type="text/javascript" src="/jappix/javascripts/mini.min.js"></script>
+<script type="text/javascript">
+    // Jappix mini chat
+    $(".actions").css('opacity', 0);
+    jQuery.ajaxSetup({cache: false});
+
+    var ADS_ENABLE = 'off';
+    var JAPPIX_STATIC = '/jappix/';
+    var HOST_BOSH = 'https://im.yunohost.org/http-bind/';
+    var ANONYMOUS = 'on';
+     JappixMini.launch({
+        connection: {
+           domain: "anonymous.yunohost.org",
+        },
+        application: {
+           network: {
+              autoconnect: false,
+           },
+           interface: {
+              showpane: false,
+              animate: false,
+           },
+           groupchat: {
+              open: ['dev@conference.yunohost.org'],
+              suggest: ['support@conference.yunohost.org']
+           }
+        },
+     });
+</script>
 
 
