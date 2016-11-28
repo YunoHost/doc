@@ -13,6 +13,8 @@ Deux points sont néanmoins importants à noter :
 
 *Si vous avez besoin de conseil, n’hésitez pas à [nous demander](/support_fr).*
 
+*Pour discuter d'une faille de securité, contactez l'[équipe securité de YunoHost](/security_team_fr).*
+
 ---
 
 ## Améliorer la sécurité

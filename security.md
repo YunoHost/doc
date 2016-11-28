@@ -10,6 +10,8 @@ Two things remain important to note:
 
 *If you need some advises, do not hesitate to [ask us](/support).*
 
+*To talk about security flaws, contact the [YunoHost security team](/security_team).*
+
 ---
 
 ## Improve security
