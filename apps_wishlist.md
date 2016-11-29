@@ -38,6 +38,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [ERPnext](https://erpnext.com/download)
 - [Ethersheet](https://ethersheet.org)
 - [Fail2web](https://github.com/Sean-Der/fail2web)
+- [Ferment](https://github.com/mmckegg/ferment)
 - [FileTea](https://filetea.me)
 - [Fossil](http://www.fossil-scm.org)
 - [GetSimple CMS](http://get-simple.info)
