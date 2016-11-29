@@ -172,9 +172,9 @@ Il est proposé d'appliquer dés à présent ce processus décisionnel, toutefoi
 
 Conseil : Bram, ju, ljf, Maniack, Moul, opi, theodore.
 
- - Representants des groupes d’intérêts (élus ou auto-proclamés) :
-   - Dev : opi, Bram, ju, ljf, AlexAubin
-  - Apps : Maniack, tostaki, Moul, ljf
+ - Representants des groupes d’intérêts :
+  - Dev : opi, Bram, ju, ljf, AlexAubin, Moul
+  - Apps : Bram, Ju, Ljf, Maniack C, Moul, Scith, Tostaki
   - Infra : opi, Bram, ju, Moul
   - Com
     - Com : Bram, Moul
