@@ -20,7 +20,7 @@ YunoHost est un logiciel sous licence libre, entièrement communautaire, et repo
 
 #### Que chacun peut s'approprier
 
-Historiquement, le projet est très proche des initiatives visant à la création d'un internet neutre et décentralisé. Cette proximité, notamment avec la FFDN, a amené une partie des contributeurs de YunoHost à créer la Brique Internet dont la mission est de faciliter l'auto-hébergement en fournissant une solution complète incluant service (via un VPN) et matériel. Cet aspect militant n'entrave pas des initiatives commerciales du logiciel pour lequel des entreprises pourraient proposer du support ou de l'hébergement.
+Historiquement, le projet est très proche des initiatives visant à la création d'un internet neutre et décentralisé. Cette proximité, notamment avec la [FFDN](https://www.ffdn.org/), a amené une partie des contributeurs de YunoHost à créer la Brique Internet dont la mission est de faciliter l'auto-hébergement en fournissant une solution complète incluant service (via un VPN) et matériel. Cet aspect militant n'entrave pas des initiatives commerciales du logiciel pour lequel des entreprises pourraient proposer du support ou de l'hébergement.
 
 
 ## Organisation de YunoHost
@@ -34,9 +34,9 @@ Schéma d’organisation du projet YunoHost :
 
 
 #### Définition et constitution des groupes
-La constitution de groupes part du constat que YunoHost compte beaucoup de sous-projets (treize au total), mais que l'on ne sait pas toujours qui en est en charge ou qui y est compétent. Il est donc proposé une simplification de l'organisation des sous-projet en groupes thématiques :
+La constitution de groupes part du constat que YunoHost compte beaucoup de sous-projets (treize au total), mais que l'on ne sait pas toujours qui en est en charge ou qui y est compétent. Il est donc proposé une simplification de l'organisation des sous-projets en groupes thématiques :
 
-- Groupe Core Dev
+- ##### Groupe Core Dev
  - Core YunoHost
  - Moulinette
  - Admin web
@@ -44,12 +44,12 @@ La constitution de groupes part du constat que YunoHost compte beaucoup de sous-
  - Dynette
  - YNH-Dev
 
-- Groupe Distribution
+- ##### Groupe Distribution
  - Création et maintenance des images d'installation sur diverses architectures
  - Distribution des images
  - Gestion de la distribution des paquets Debian.
 
-- Groupe Infra/Adminsys
+- ##### Groupe Infra/Adminsys
  - Infrastructure
  - Site web (wiki, forum, salon de discussion, redmine, mumble)
  - Démo
@@ -60,46 +60,46 @@ La constitution de groupes part du constat que YunoHost compte beaucoup de sous-
     - [yunodash](https://dash.yunohost.org/)
     - [yunopaste](http://paste.yunohost.org/)
 
-- Groupe Apps
+- ##### Groupe Apps
  - Apps Officielles
  - Apps Communautaires
  - outils de développements d'app (package_checker, package linter)
 
-- Groupe Communication
+- ##### Groupe Communication
  - Documentation
  - Communication (annonce évolutions du projet sur le forum, réseaux sociaux)
  - Traduction
  - Entraide (support)
 
-Les groupes sont ouverts à tous les contributeurs souhaitant participer au développement de YunoHost. Chacun peut s'inscrire aux canaux de communication associés aux groupes auxquels il souhaite prendre part. Chaque inscrit est libre d'échanger avec le reste du groupe et de proposer une prise de décision à la suite d'une étape d'échange et d'amélioration de la proposition. 
+Les groupes sont ouverts à tous les contributeurs souhaitant participer au développement de YunoHost. Chacun peut s'inscrire aux canaux de communication associés aux groupes auxquels il souhaite prendre part. Chaque inscrit est libre d'échanger avec le reste du groupe et de proposer une prise de décision à la suite d'une étape d'échange et d'amélioration de la proposition.
 Afin de faciliter sa gestion, chaque groupe nomme donc un coordinateur (et un remplaçant) dont le rôle est :  
 
 - d'accueillir et fédérer les nouveaux contributeurs réguliers de son groupe
-- de tenir informé le conseil des décisions prises au sein du groupe (cf. point suivant)
+- de tenir informé le Conseil des décisions prises au sein du groupe (cf. point suivant)
 
 Le choix d'un outil de communication est laissé à chaque groupe en fonction de sa pertinence (forum, chat, ML, etc.).
 
 #### Définition et constitution du Conseil
 
-YunoHost grandissant, il est important de maintenir une cohérence entre tous les groupes, néanmoins il est impossible d'imposer à chacun des membres des groupes de s'intéresser ou de s'impliquer sur tous les aspects du projet (pour des raisons de temps et de compétence). Pour pallier à cela, il est proposé de créer un meta-groupe, où chaque groupe sera représenté par au moins un de ses membres : le Conseil.
-Le Conseil est indépendant des groupes et réuni les contributeurs souhaitant s'impliquer le plus dans le projet, son rôle est de : 
+YunoHost grandissant, il est important de maintenir une cohérence entre tous les groupes, néanmoins il est impossible d'imposer à chacun des membres des groupes de s'intéresser ou de s'impliquer sur tous les aspects du projet (pour des raisons de temps et de compétences). Pour pallier à cela, il est proposé de créer un meta-groupe, où chaque groupe sera représenté par au moins un de ses membres : le Conseil.
+Le Conseil est indépendant des groupes et réunit les contributeurs souhaitant s'impliquer le plus dans le projet, son rôle est de :
 
 - prendre les décisions importantes sur YunoHost qui ne dépendent pas d'un seul groupe (par exemple changer le moteur du wiki)
 - faire des points réguliers sur l'ensemble du projet pour assurer sa cohésion. (réunion Mumble)
-- solliciter l'ensemble de la communauté des contributeurs (ou même des utilisateurs) quand une décision divise les groupes et/ou le conseil
+- solliciter l'ensemble de la communauté des contributeurs (ou même des utilisateurs) quand une décision divise les groupes et/ou le Conseil
 
-Le choix d'un outil de communication est laissé au conseil, ses décisions doivent néanmoins être consultable par l'ensemble de la communauté de contributeur.
-Pour participer aux votes du conseil, il faut avoir contribué au projet et avoir obtenu un droit de vote (ou d'entrée) au sein du conseil. Ce droit est délivré par le conseil (éventuellement sur demande). Le conseil est libre à tout moment de modifier le processus de décision.
-Être membre du conseil n'implique pas forcément d'avoir l'ensemble des accès (infra, dépôt etc...).
+Le choix d'un outil de communication est laissé au Conseil, ses décisions doivent néanmoins être consultables par l'ensemble de la communauté de contributeurs.
+Pour participer aux votes du Conseil, il faut avoir contribué au projet et avoir obtenu un droit de vote (ou d'entrée) au sein du Conseil. Ce droit est délivré par le Conseil (éventuellement sur demande). Le Conseil est libre à tout moment de modifier le processus de décision.
+Être membre du Conseil n'implique pas forcément d'avoir l'ensemble des accès (infrastructure, dépôt etc...).
 
 ### Un processus de prises de décision basé sur un consensus mou
 
-Les décisions à prendre peuvent être de deux ordres : 
+Les décisions à prendre peuvent être de deux ordres :
 
 1. pour un groupe (par "exemple merger une PR" serait affecté au groupe Dev tandis que "poster un tweet" serait de la responsabilité du groupe Communication)
 2. pour l'ensemble du projet (par exemple décider d'une release avec des nouvelles fonctionnalités)
 
-Si un consensus sur une décision à prendre n'est pas trouvée au sein d'un groupe, ce dernier devra se tourner vers le conseil pour en débattre. Si aucun consensus n'est trouvé, la proposition sera soumise au vote de tous les contributeurs.
+Si un consensus sur une décision à prendre n'est pas trouvée au sein d'un groupe, ce dernier devra se tourner vers le Conseil pour en débattre. Si aucun consensus n'est trouvé, la proposition sera soumise au vote de tous les contributeurs.
 
 #### Le processus de prise de décision en détail
 
@@ -108,8 +108,8 @@ Si un consensus sur une décision à prendre n'est pas trouvée au sein d'un gro
  - forcément publique à l'exception de situations bien définies (bug relatif à la sécurité critique ou vote sur les personnes)
   - une date de clôture est automatiquement définie par type de proposition. La définition de la date remplie plusieurs fonctions :
     - pouvoir laisser le temps à tout le monde de s'exprimer et ne pas prendre la décision trop vite
-    -  maintenir un rythme car si le quota des réponses est rempli avant le temps imparti, il n'y a pas besoin d'attendre l'avis de tout les membres du groupe 
-       - le quota est à évaluer en fonction des personnes inscrites au groupe (ou au conseil selon la situation) qui ont manifesté leurs souhaits d'être considéré comme votant régulier => exemple kload peut vouloir donner son avis ponctuellement, mais à priori il ne souhaitera pas être considéré comme membre votant actif du conseil
+    -  maintenir un rythme car si le quota des réponses est rempli avant le temps imparti, il n'y a pas besoin d'attendre l'avis de tout les membres du groupe
+       - le quota est à évaluer en fonction des personnes inscrites au groupe (ou au Conseil selon la situation) qui ont manifesté leurs souhaits d'être considéré comme votant régulier => exemple kload peut vouloir donner son avis ponctuellement, mais à priori il ne souhaitera pas être considéré comme membre votant actif du Conseil
     - pouvoir être repoussable sur simple demande d'une des personnes du groupe. Et seulement du groupe, pas tous les contrib.
 
 ##### 2) Ouverture de la discussion, plusieurs réponses possibles :
@@ -183,8 +183,8 @@ Conseil : Bram, ju, ljf, Maniack, Moul, opi, theodore.
 
 ### Décisions à venir pour les groupes
 #### Conseil
-- Faut-il élire les membres du conseil plutôt que de les coopter ? Risque de se transformer en "campagne politique"!
-- Faut-il limiter l'ouverture des groupes d'intérêts par cooptation comme pour le conseil ?
+- Faut-il élire les membres du Conseil plutôt que de les coopter ? Risque de se transformer en "campagne politique"!
+- Faut-il limiter l'ouverture des groupes d'intérêts par cooptation comme pour le Conseil ?
 - Proposition de changer Conseil en Collégiale
 - Migrer le serveur d’infrastructure du projet sous YunoHost. (avec apps déjà packagées pad, gogs, mumble?)
 - Let's Encrypt
@@ -211,7 +211,7 @@ Conseil : Bram, ju, ljf, Maniack, Moul, opi, theodore.
 - Comment s'organiser pour les privilèges sur le forum (si les groupes veulent voter sur le forum)
 
 #### Autres
-- Demande sur le forum avec notification des membres du conseil et des représentants des groupes d’intérêts concernés.
+- Demande sur le forum avec notification des membres du Conseil et des représentants des groupes d’intérêts concernés.
 - Vote sur deux semaines par un post sur le forum
 - Créer quatre canaux pour le Dev, les Apps, la Communication et l'Infrastructure
 - La release devrait être validée par l'ensemble des 4 (ou 5) groupes d’intérêts
@@ -221,7 +221,7 @@ Conseil : Bram, ju, ljf, Maniack, Moul, opi, theodore.
 
 
 ## Notes
-Moyens de communication actuel : 
+Moyens de communication actuels :
 
 - IRL
 - Réunion Mumble
