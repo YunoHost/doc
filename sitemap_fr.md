@@ -68,6 +68,7 @@
             * [Ajouter un certificat d’une autorité](/certificate_fr)
             * [Régénérer le certificat auto-signé](/regenerate_certificate_fr)
         * [Sécurité](/security_fr)
+        - [Contacter l’équipe de sécurité](security_team_fr)
         * [Consulter les fichiers de log du système](/check_logfile_fr)
         * [Guide de dépannage](/troubleshooting_guide_fr)
         * [YunoHost service caché Tor](/torhiddenservice_fr)

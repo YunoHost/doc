@@ -61,6 +61,7 @@
             * [Add a certificate certified by an authority](/certificate)
             * [Regenerate self-signed certificate](/regenerate_certificate_en)
         * [Security](/security)
+        - [Contact security team](security_team)
         * [Troubleshooting guide](/troubleshooting_guide_en)
         * [YunoHost Tor Hidden Servicer](/torhiddenservice)
         * [Unblock an IP address with Fail2ban](/fail2ban_en)
