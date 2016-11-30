@@ -14,13 +14,11 @@ Salon d’[entraide](support_fr) est là pour permettre aux utilisateurs de Yuno
 - **[support@conference.yunohost.org](xmpp:support@conference.yunohost.org?join)**
 
 #### Développement
-Salon de développement du cœur de YunoHost.
+Salon de développement du cœur de YunoHost. Actuellement utilisé comme salon principal pour les contributions autour du projet.
+Pour de l’aide, merci de le faire sur le salon d’entraide.
 - **[dev@conference.yunohost.org](xmpp:dev@conference.yunohost.org?join)**
 
 #### Applications
 Salon de développement du packaging d’application. Il permet aux packageurs de s’entraider.
 Il sert également à discuter de l’évolution du packaging, des outils d’intégration continue sur les applications.
 - **[apps@conference.yunohost.org](xmpp:apps@conference.yunohost.org?join)**
-
-### Historique des discussions
-L’historique des discussions sont enregistrées pendant quatre jours.

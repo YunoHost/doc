@@ -14,13 +14,11 @@ You could join this chat rooms with an [XMPP client](https://en.wikipedia.org/wi
 - **[support@conference.yunohost.org](xmpp:support@conference.yunohost.org?join)**
 
 #### Development
-YunoHost core development chat room.
+YunoHost core development chat room. Currently, the main chat room for contributions on YunoHost project.
+For help, thanks to do it on `support` chat room.
 - **[dev@conference.yunohost.org](xmpp:dev@conference.yunohost.org?join)**
 
 #### Applications
 Application packaging development chat room. It allow packagers to help each other.
 It also allow to discuss packaging evolution, continuous integration tools.
 - **[apps@conference.yunohost.org](xmpp:apps@conference.yunohost.org?join)**
-
-### Discussions logs
-Discussions are logged during four days.
