@@ -173,13 +173,14 @@ Il est proposé d'appliquer dés à présent ce processus décisionnel, toutefoi
 Conseil : Bram, ju, ljf, Maniack, Moul, opi, theodore.
 
  - Representants des groupes d’intérêts :
-  - Dev : opi, Bram, ju, ljf, AlexAubin, Moul
+  - Core Dev : AlexAubin, Bram, Ju, Ljf, Moul, opi
   - Apps : Bram, Ju, Ljf, Maniack C, Moul, Scith, Tostaki
-  - Infra : opi, Bram, ju, Moul
-  - Com
-    - Com : Bram, Moul
-    - Doc : Moul, theodore
+  - Infra : Bram, Ju, Maniack C, Moul, opi
+  - Communication
+    - Com : Bram, Moul, Ljf, opi
+    - Doc : Moul, Theodore
     - Trad : Jean-Baptiste
+  - Distribution : Heyyounow
 
 ### Décisions à venir pour les groupes
 #### Conseil
