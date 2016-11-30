@@ -219,14 +219,12 @@ Conseil : Bram, ju, ljf, Maniack, Moul, opi, theodore.
 - Annuaire ou contact des groupes pour les nouveaux arrivants. Voir peut-être annuaire tout court pour savoir qui fait quoi. https://yunohost.org/#/contribs_fr à compléter. Et à mettre en avant.
 - Proposition de laisser les membres YunoHost s'auto déterminer -> Comment gérer les accès ?
 
+## Moyens de communication actuels
 
-## Notes
-Moyens de communication actuels :
-
-- IRL
-- Réunion Mumble
-- [Forum](https://forum.yunohost.org)
+- Rencontres à des évènements.
+- Réunions hébdomadaires Mumble.
+- [Forum](https://forum.yunohost.org).
 - Listes de diffusion : [contrib](https://list.yunohost.org/cgi-bin/mailman/listinfo/contrib) et [apps](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps)
-- [Bugtracker Redmine](https://dev.yunohost.org)
-- [Forge git](http://github.com/yunohost/) pour les review de code
-- Salon de discussions XMPP
+- [Bugtracker Redmine](https://dev.yunohost.org).
+- Forge git pour la review de code : [YunoHost](https://github.com/YunoHost) [YunoHost-Apps](https://github.com/YunoHost-Apps).
+- [Salons discussions XMPP](https://yunohost.org/#/chat_rooms_fr)
