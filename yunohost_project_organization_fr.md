@@ -172,13 +172,14 @@ Alors un membre du groupe peut annoncer la décision comme effective (et procéd
 Conseil : Bram, ju, ljf, Maniack, Moul, opi, theodore.
 
  - Representants des groupes d’intérêts :
-  - Dev : opi, Bram, ju, ljf, AlexAubin, Moul
-  - Apps : Bram, Ju, Ljf, Maniack C, Moul, Scith, Tostaki
-  - Infra : opi, Bram, ju, Moul
-  - Com
-    - Com : Bram, Moul
-    - Doc : Moul, theodore
+  - Core Dev : AlexAubin, Bram, Ju, ljf, Moul, opi
+  - Apps : Bram, Ju, ljf, Maniack C, Moul, Scith, Tostaki
+  - Infra : Bram, Ju, Maniack C, Moul, opi
+  - Communication
+    - Com : Bram, Moul, ljf, opi
+    - Doc : Moul, Theodore
     - Trad : Jean-Baptiste
+  - Distribution : Heyyounow
 
 ### Décisions à venir pour les groupes
 #### Conseil
