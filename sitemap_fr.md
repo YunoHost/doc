@@ -103,7 +103,7 @@
                  * [Usage de trap](packaging_apps_trap_fr)
               * [Packages d’applications en cours de développement](/apps_in_progress_fr)
               * [Liste de proposition d’applications](/apps_wishlist_fr)
-           * [Contribuer au coeur de Yunohost](/dev_fr)
+           * [Contribuer au cœur de YunoHost](/dev_fr)
            * [Création de paquets système](/build_system_fr)
            * [Création de paquets Debian](/build_packages_fr)
            * [Créer une image pour carte ARM](/build_arm_image_en)
