@@ -119,6 +119,7 @@
    * [Journal des modifications v.2.2](/changelog_2_2_en)
    * [Feuille de route](/roadmap_en)
    * [Foire aux questions](/faq_fr)
+   - [Organisation du projet](project_organization_fr)
    * [Contributeurs](contribs_fr)
    * [Entraide - support](/support_fr)
    * [Blog](https://forum.yunohost.org/c/announcement)

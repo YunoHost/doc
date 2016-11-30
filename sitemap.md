@@ -107,6 +107,7 @@
    * [Roadmap](/roadmap)
    * [Frequently asked questions](/faq_en)
    * [Contributors](contribs)
+   - [Project organization](project_organization_fr)
    * [Support](/support_en)
    * [Art Works](artworks_en)
    * [Blog](https://forum.yunohost.org/c/announcement)
