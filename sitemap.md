@@ -91,7 +91,7 @@
                    * [Trap usage](packaging_apps_trap_fr)
                * [Applications in progress](/apps_in_progress_en)
                * [Wishlist of applications](/apps_wishlist_en)
-           * [Contributing to the Yunohost core](/dev)
+           * [Contributing to the YunoHost core](/dev)
            * [Creation of system packages](/build_system_en)
            * [Creation of Debian packages](/build_packages_en)
            * [Create an ARM board image](/build_arm_image_en)
