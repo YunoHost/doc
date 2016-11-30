@@ -1,7 +1,7 @@
-## Contributing to the Yunohost core
+## Contributing to the YunoHost core
 
-You wish to add a new feature in the Yunohost core, but don't know how to
-proceed ? This guide takes you through the various steps of the development and
+You wish to add a new feature in the YunoHost core, but don't know how to
+proceed? This guide takes you through the various steps of the development and
 contribution process. 
 
 If you're looking for stuff to implement or fix, the bug-tracker is 
@@ -13,7 +13,7 @@ If you're looking for stuff to implement or fix, the bug-tracker is
 
 - **Use [ynh-dev](https://github.com/YunoHost/ynh-dev)** (see the README) to
   setup a development environment - locally in a virtual machine, or on a VPS.
-  This will setup a working Yunohost instance, using directly the git repositories
+  This will setup a working YunoHost instance, using directly the git repositories
   (with symlinks). That way, you will be able to edit files, test your changes in real
   time, commit stuff and push/pull directly from your development environment.
 
@@ -21,10 +21,10 @@ If you're looking for stuff to implement or fix, the bug-tracker is
   will want to :
    - **Python/CLI core** : work in `/vagrant/yunohost/`
    - **Web administration interface** : work in `/vagrant/yunohost-admin/`
-   - You can also work on the other projects on which Yunohost is built 
+   - You can also work on the other projects on which YunoHost is built 
      (SSOwat, moulinette) in similar ways
 
-### Working on the Yunohost Python/CLI core
+### Working on the YunoHost Python/CLI core
 
 - Work in `/vagrant/yunohost/`.
 
@@ -52,7 +52,7 @@ If you're looking for stuff to implement or fix, the bug-tracker is
   them in the string with `{{some-argument:s}}`. Don't edit other locales files,
   this will be done using [weblate](https://translate.yunohost.org/) !
 
-- Yunohost tries to follow the [pep8](http://pep8.org/) coding style. Tools
+- YunoHost tries to follow the [pep8](http://pep8.org/) coding style. Tools
   exist to automatically check conformity.
 
 - Name of "private" functions should start with a `_`
@@ -63,7 +63,7 @@ If you're looking for stuff to implement or fix, the bug-tracker is
   force the refresh of the cache with `rm
   /var/cache/moulinette/actionsmap/yunohost.pkl`
 
-### Working on the Yunohost web administration interface
+### Working on the YunoHost web administration interface
 
 - Work in `/vagrant/yunohost-admin/src/`.
 
@@ -71,10 +71,10 @@ If you're looking for stuff to implement or fix, the bug-tracker is
   time you modify sources, it recompiles the code and you can use it by 
   refreshing (Ctrl+F5) your web administration. To stop the command, just do Ctrl+C.
 
-- The web interface uses the API to interact with Yunohost. The API
+- The web interface uses the API to interact with YunoHost. The API
   commands/requests are also defined via the actionsmap. For instance, accessing
   the page ```https://domain.tld/yunohost/api/users``` corresponds to a `GET
-  /domains` requests on the Yunohost API. It is mapped to the function
+  /users` requests on the YunoHost API. It is mapped to the function
   `user_list()`. Accessing the URL should display the json returned by this
   function. 'GET' requests are typically meant to ask information to the server.
   'POST' requests are meant to ask the server to edit/change some information,
@@ -107,7 +107,7 @@ If you're looking for stuff to implement or fix, the bug-tracker is
   the javascript and/or html (so each time you edit something in `js` or `views`).
 
 
-### Your feature is ready and you want it to be integrated in Yunohost
+### Your feature is ready and you want it to be integrated in YunoHost
 
 - Fork the relevant repo on Github, and commit stuff to a new branch. We recommend
   to name the branch with the following convention :
