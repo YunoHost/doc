@@ -122,6 +122,24 @@ Il peut arriver, de façon exceptionnelle, qu’on ait besoin de faire un hotfix
 
 **TODO** dev un helper 'git yunohotfix...' qui commit dans stable et cherry-pick tout de suite dans daily ? ou l’inverse ?
 
+#### Publier une release testing ou stable
+
+Pour l'instant, on passe par une release via GitHub pour déclencher le build du paquet.
+
+Aller sur https://github.com/YunoHost/{moulinette, yunohost, yunohost-admin, ssowat}/releases/new
+
+1/ Choisir la branche cible en premier (testing ou stable).
+Ex: "target: Testing" 
+
+2/ Choisir le tag concerné, généralement le dernier
+Ex: "debian/2.4.1"
+
+3/ Release title: "v2.4.1" ("v" + le numéro de version)
+
+4/ Commentaire
+Reprendre le changelog depuis `debian/changelog`. Remercier les contributeurs/traducteurs
+( Pour voir le dernier commit : `git show HEAD` )
+
 #### Paquets non YunoHost
 
 Pour les paquets « non-YunoHost » (par exemple `rspamd`) le paquet ne passe pas par le composant `unstable`, mais uniquement `testing` et `stable` une fois les tests effectués sur ce paquet.
