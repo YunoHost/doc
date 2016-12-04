@@ -30,7 +30,7 @@ L'objectif de l'organisation de YunoHost est de permettre au plus grand nombre d
 
 Schéma d’organisation du projet YunoHost :
 
-![Schéma d’organisation du projet YunoHost](organization_schema.png?raw=true "Schéma d’organisation du projet YunoHost")
+![Schéma d’organisation du projet YunoHost](images/organization_schema.png?raw=true "Schéma d’organisation du projet YunoHost")
 
 
 #### Définition et constitution des groupes
