@@ -206,11 +206,13 @@ _Les valeurs sont arrondies (exemple: 5,4 => 5 et 5,5 => 6)._
 |    Clôture anticipée |    3*   |     3    |
 |    Clôture par vote  |    3    |     3    |    4    |
 | **Communication -> Doc** |
-|    Clôture anticipée |    2*   |
+|    Clôture classique |    1    |     1    |    Conseil    |
+|    Clôture anticipée |    2*   |     2*   |
+|    Clôture par vote  |    Conseil    |     Conseil    |    Conseil    |
 | **Distribution**         |
-|    Clôture classique |    1    |
-|    Clôture anticipée |    1    |
-|    Clôture par vote  |    1    |
+|    Clôture classique |    1    |     Conseil    |    Conseil    |
+|    Clôture anticipée |    1    |     Conseil    |
+|    Clôture par vote  |    1    |     Conseil    |    Conseil    |
 
 \* dont 1 avis qui peut être externe au groupe
 
