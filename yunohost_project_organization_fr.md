@@ -180,7 +180,9 @@ Alors un membre du groupe peut annoncer la décision comme effective (et procéd
 - Distribution : Heyyounow
 
 ## Tableau récapitualtif du nombre d'avis nécéssaire pour la prise de décision
+
 _Les valeurs sont arrondies (exemple: 5,4 => 5 et 5,5 => 6)._
+
 |                      | **Mineure** | **Standard** | **Majeure** |
 |----------------------|---------|----------|---------|
 | **Conseil**              |
@@ -211,8 +213,11 @@ _Les valeurs sont arrondies (exemple: 5,4 => 5 et 5,5 => 6)._
 |    Clôture par vote  |    1    |
 
 \* dont 1 avis qui peut être externe au groupe
+
 Pour la traduction, le processus reste à adapter.
+
 Pour la doc, le nombre d'avis pour la cloture anticipée d'une décision mineure est pour le moment réduit (vu qu'il n'y a que 2 personnes dans le groupe). Les autres types de décisions sont prises par le conseil.
+
 Pour le groupe distribution, étant donné qu'il n'y a pour l'instant que Heyyounow, je propose que le Conseil soit sollicité pour les décisions Standard ou Majeure.
 
 ### Décisions à venir pour les groupes
