@@ -36,14 +36,6 @@ Liste non exhaustive des principaux contributeurs :
 * Scith
 * Tostaki
 
-#### Groupe Apps
-
-* Bram
-* Ju
-* Maniack C
-* Moul
-* opi
-
 #### Groupe Communication
 
 * Bram
