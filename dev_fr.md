@@ -82,8 +82,8 @@ XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
   exemple, accéder à la page ```https://domain.tld/yunohost/api/users```
   correspond à une requete `GET /users` vers l'API YunoHost. Cette requête
   est mappée sur `user_list()`. Accéder à cette URL devrait afficher le json
-  retourné par cette fonction. Les requêtes `GET' sont typiquement destinées à
-  demander de l'information au serveur, tandis que les requêtes `POST` sont
+  retourné par cette fonction. Les requêtes 'GET' sont typiquement destinées à
+  demander de l'information au serveur, tandis que les requêtes 'POST' sont
   destinées à demander au serveur de modifier/changer des informations ou de
   réaliser des actions.
 
