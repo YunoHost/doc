@@ -45,7 +45,7 @@ Notre support est communautaire et s’appuie sur des contributeurs comme vous. 
 </div>
 <div class="col col-md-8" markdown="1">
 Vous pouvez vous impliquer dans le développement de YunoHost peu importe votre niveau. Administrateurs système, développeurs web, designers et pythonistes <a href="https://github.com/YunoHost" target="_blank">sont les bienvenus</a>.<br>
-Une <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/contrib">mailing-list</a> est également disponible.
+Découvrez [comment contribuer](/dev_fr), et rejoignez-nous sur le [salon de discussion](xmpp:dev@conference.yunohost.org?join) et la <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/contrib">mailing-list</a> !
 </div>
 </div>
 
