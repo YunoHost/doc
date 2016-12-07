@@ -148,7 +148,7 @@ Tout le monde peut changer de positions à n'importe quel moment, mais il est de
 - Durée initiale: 1 semaine.
 - Durée minimale: 3 jours.
 - Décalage, si nécessaire: 3 jours.
-- Avis nécessaires: 3 dont au moins 2 membres du groupe (celui qui a initié cette prise de décision peux donner son avis). 4, dont 3 membres du groupe pour anticiper.
+- Avis nécessaires: 2 membres du groupe (celui qui a initié cette prise de décision peux donner son avis). 3, dont 2 membres du groupe pour anticiper.
 - Validation par vote (le cas échéant): 66% de votes positifs.
 
 ###### Décision Standard/Moyenne:
@@ -178,6 +178,42 @@ Alors un membre du groupe peut annoncer la décision comme effective (et procéd
   - Doc : Moul, Theodore
   - Trad : Jean-Baptiste
 - Distribution : Heyyounow
+
+## Tableau récapitualtif du nombre d'avis nécéssaire pour la prise de décision
+_Les valeurs sont arrondies (exemple: 5,4 => 5 et 5,5 => 6)._
+|                      | **Mineure** | **Standard** | **Majeure** |
+|----------------------|---------|----------|---------|
+| **Conseil**              |
+|    Clôture classique |    2    |     4    |    5    |
+|    Clôture anticipée |    3*   |     5    |
+|    Clôture par vote  |    5    |     5    |    6    |
+| **Core Dev**             |
+|    Clôture classique |    2    |     3    |    5    |
+|    Clôture anticipée |    3*   |     4    |
+|    Clôture par vote  |    4    |     5    |    5    |
+| **Apps**                 |
+|    Clôture classique |    2    |     4    |    5    |
+|    Clôture anticipée |    3*   |     5    |
+|    Clôture par vote  |    5    |     5    |    6    |
+| **Infra**                |
+|    Clôture classique |    2    |     3    |    4    |
+|    Clôture anticipée |    3*   |     3    |
+|    Clôture par vote  |    3    |     4    |    5    |
+| **Communication -> Com** |
+|    Clôture classique |    2    |     2    |    3    |
+|    Clôture anticipée |    3*   |     3    |
+|    Clôture par vote  |    3    |     3    |    4    |
+| **Communication -> Doc** |
+|    Clôture anticipée |    2*   |
+| **Distribution**         |
+|    Clôture classique |    1    |
+|    Clôture anticipée |    1    |
+|    Clôture par vote  |    1    |
+
+\* dont 1 avis qui peut être externe au groupe
+Pour la traduction, le processus reste à adapter.
+Pour la doc, le nombre d'avis pour la cloture anticipée d'une décision mineure est pour le moment réduit (vu qu'il n'y a que 2 personnes dans le groupe). Les autres types de décisions sont prises par le conseil.
+Pour le groupe distribution, étant donné qu'il n'y a pour l'instant que Heyyounow, je propose que le Conseil soit sollicité pour les décisions Standard ou Majeure.
 
 ### Décisions à venir pour les groupes
 #### Conseil
