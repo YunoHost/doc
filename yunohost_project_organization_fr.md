@@ -218,7 +218,7 @@ Pour la traduction, le processus reste à adapter.
 
 Pour la doc, le nombre d'avis pour la cloture anticipée d'une décision mineure est pour le moment réduit (vu qu'il n'y a que 2 personnes dans le groupe). Les autres types de décisions sont prises par le conseil.
 
-Pour le groupe distribution, étant donné qu'il n'y a pour l'instant que Heyyounow, je propose que le Conseil soit sollicité pour les décisions Standard ou Majeure.
+Pour le groupe distribution, étant donné qu'il n'y a pour l'instant que Heyyounow, le Conseil sera sollicité pour les décisions Standard ou Majeure.
 
 ### Décisions à venir pour les groupes
 #### Conseil
