@@ -95,6 +95,7 @@
            * [Présentation du fonctionnement de YunoHost](/package_list_fr)
            * Applications :
               * [Packager des applications](/packaging_apps_fr)
+                 * [Introduction](start_packaging_apps_fr.md)
                  * [Manifeste](packaging_apps_manifest_fr)
                  * [Scripts](packaging_apps_scripts_fr)
                  * [Gestion des arguments](packaging_apps_arguments_management_fr)
