@@ -8,7 +8,7 @@ Pour packager une application, voici les prérequis :
 * Maîtriser un minimum `git`, le Shell et d’autres notions de programmation ;
 * Une [machine virtuelle ou sur un serveur distant](/install_fr) ou un [environnement de développement](https://github.com/yunohost/ynh-dev) pour packager et tester son paquet.
 
-Si vous ne comprenez pas ces prérequis, ou si vous ne savez pas comment écrire du code, consulter d'abord l'[introduction au packaging](/start_packaging_apps_fr.md).
+Si vous ne comprenez pas ces prérequis, ou si vous ne savez pas comment écrire du code, consulter d'abord l'[introduction au packaging](packaging_apps_start_fr.md).
 
 ### Contenu
 Un paquet YunoHost est composé :
