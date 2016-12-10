@@ -46,12 +46,9 @@ Liste non exhaustive des principaux contributeurs :
 * Jean-Baptiste
 
 #### Groupe Distribution
-
 * Heyyounow
 
-* Jerome
-
-
+#### Autres contributeurs
 * jerome : développeur de la [Moulinette](moulinette_fr)
 * courgette : design
 * titoko
