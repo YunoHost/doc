@@ -162,6 +162,9 @@ Lors de l'installation, il est nécessaire de sauvegarder chaque réponse aux qu
 ### YEP 3 - Sécuriser une app
 #### YEP 3.1 - Ne pas demander ou stocker de mot de passe LDAP   | brouillon | manuel | NOTWORKING |
 #### YEP 3.2 - Ouvrir un port correctement   | brouillon | manuel | WORKING |
+Si l'application nécessite l'ouverture d'un port, il est nécessaire de vérifier préalablement que ce port n'est pas déjà utilisé par une autre application. Le cas échéant, le script install doit être capable de trouver un autre port disponible.  
+Il convient également de vérifier si le port doit être ouvert sur le routeur, au delà du réseau local. Si ce n'est pas le cas, l'argument `--no-upnp` doit être ajouté à la commande `yunohost firewall allow` afin de limiter l'ouverture du port au réseau local uniquement.
+
 #### YEP 3.3 - Faciliter le contrôle de l'intégrité des sources   | brouillon | manuel | OFFICIAL |
 #### YEP 3.4 - Isoler l'app   | brouillon | manuel | OFFICIAL |
 #### YEP 3.5 - Suivre les recommendations de la documentation de l'app   | validé | manuel | OFFICIAL |
