@@ -119,7 +119,7 @@ Pour la liste d'application du projet LaBriqueInter.net, l'inscription se fait e
 #### YEP 1.6 - Se tenir informé sur l'évolution du packaging d'apps  | validé | manuel | OFFICIAL |
 Afin de suivre l'évolution du format de packaging ainsi que des bonnes pratiques, il est recommandé de:
 * s'inscrire à la liste de discussion `apps@list.yunohost.org`
-* suivre [la catégorie App intégration du forum](https://forum.yunohost.org/c/app-integration)
+* suivre [la catégorie Apps packaging du forum](https://forum.yunohost.org/c/apps-packaging)
 
 Pour suivre l'évolution de YunoHost de façon plus générale :
 * rejoindre le salon XMPP dev@conference.yunohost.org ([trois jours de logs sont disponibles](https://im.yunohost.org/logs/dev/))
@@ -132,7 +132,7 @@ L'ajout d'une app sur l'[organisation YunoHost-Apps](https://github.com/YunoHost
 C'est aussi un moyen pour permettre de déployer rapidement un correctif de sécurité si nécessaire dans le cas où le mainteneur ne serait pas disponible.
 
 #### YEP 1.8 - Publier des demandes de test  | validé | manuel | OFFICIAL |
-Afin d'assurer le bon fonctionnement d'un paquet, il convient de publier une annonce afin d'ouvrir les tests sur le paquet. Cette annonce peut se faire sur le forum dans [la catégorie App intégration du forum](https://forum.yunohost.org/c/app-integration).
+Afin d'assurer le bon fonctionnement d'un paquet, il convient de publier une annonce afin d'ouvrir les tests sur le paquet. Cette annonce peut se faire sur le forum dans [la catégorie Apps du forum](https://forum.yunohost.org/c/apps).
 
 Il est recommandé d'indiquer si certains tests n'ont pas été menés.
 <div class="alert alert-danger">
