@@ -117,7 +117,7 @@ TODO Lien ou information pour réaliser l'inscription.
 
 #### YEP 1.3 - Indiquer la licence associée au paquet  | validé | AUTO | WORKING |
 #### YEP 1.4 - Informer sur l'intention de maintenir un paquet   | brouillon | manuel | OFFICIAL |
-Le mainteneur de l'application doit s'engager à maintenir son app sur la durée si il souhaite que celle-ci rejoigne la liste des applications officielles.
+Le mainteneur de l'application doit s'engager à maintenir son app sur la durée si il souhaite que celle-ci rejoigne la liste des applications officielles.  
 Cela implique de surveiller les mises à jour de l'application upstream, de respecter les nouvelles règles de packaging et de répondre aux demandes des utilisateurs.
 
 #### YEP 1.5 - Mettre à jour régulièrement le statut de l'app  | brouillon | manuel | WORKING |
