@@ -130,7 +130,9 @@ Si une application a des modules liés avec une autre licence (Exemple: Odoo 9 L
 
 Si deux applications distinctes sont dans le même paquet d'installation et ont des licences distinctes, dans ce cas on peut utiliser le `,` pour séparer les licences.
 
-Dans les deux cas, le mainteneur est encouragé à réfléchir à la possibilité de créer deux paquets distincts. Le manifeste permet des questions de type `app` de façon à faire référence à une autre application déjà installée.
+Dans les deux cas, le mainteneur est encouragé à réfléchir à la possibilité de créer deux paquets distincts. Le manifeste de chaque application permet de poser des questions de type `app` de façon à faire référence à une autre application déjà installée.
+
+Rappel: une question de type `app` prend pour réponse l'identifiant d'une des apps déjà installée.
 
 Quelques liens intéressants pour aider au choix de licence:
 * [Des fiches explicatives sur les licences libres](https://www.inria.fr/content/download/5896/48452/version/2/file/INRIA_recueil_fiches_licences_libres_vf.pdf)
