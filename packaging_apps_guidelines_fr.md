@@ -135,11 +135,26 @@ C'est aussi un moyen pour permettre de déployer rapidement un correctif de séc
 Afin d'assurer le bon fonctionnement d'un paquet, il convient de publier une annonce afin d'ouvrir les tests sur le paquet. Cette annonce peut se faire sur le forum dans [la catégorie Apps du forum](https://forum.yunohost.org/c/apps).
 
 Il est recommandé d'indiquer si certains tests n'ont pas été menés.
-<div class="alert alert-danger">
-<b>
-TODO: Lister les tests types à mener
-</b>
-</div>
+
+* Vérifier le package avec Package linter.
+* Installation en sous-dossier.
+* Installation à la racine d'un domaine ou d'un sous-domaine.
+* Suppression, dans les 2 cas d'installations précédent.
+* Accès à l'interface web de l'application, avec le / final dans l'adresse, et en l'omettant.
+* Upgrade sur la même version du package.
+* Upgrade depuis une ancienne version du package.
+* Installation privée (sécurisée par le SSO).
+* Installation publique.
+* Installation multi-instance.
+* Erreur de nom d'utilisateur.
+* Erreur de nom de domaine.
+* Path mal écrit (path/ au lieu de /path par exemple).
+* Port déjà utilisé par une autre application.
+* Source corrompue après téléchargement.
+* Erreur de téléchargement de la source.
+* Dossier déjà utilisé par une autre application.
+* Backup et restore.
+
 #### YEP 1.9 - Documenter l'app  | validé | AUTO | OFFICIAL |
 Avant tout, il convient de faire une description correcte de l'app dans le champ `description` du manifest. L'insertion de mot clé dans cette description peut être une bonne idée, dans la mesure où un utilisateur pourrait être amené à faire une recherche (CTRL+F) parmi toutes les applications.
 
