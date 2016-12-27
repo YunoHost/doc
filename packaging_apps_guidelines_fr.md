@@ -144,6 +144,9 @@ Lors de l'installation, il est nécessaire de sauvegarder chaque réponse aux qu
 #### YEP 2.8 - Modifier correctement une configuration système   | brouillon | manuel | WORKING |
 #### YEP 2.9 - Enlever toutes traces de l'app lors de la suppression   | brouillon | manuel | WORKING |
 #### YEP 2.10 - Configurer les logs de l'application   | brouillon | manuel | WORKING |
+Si possible, l'application doit utiliser un fichier de log, qui sera de préférence dans /var/log.  
+Si le log est mis en place par le script install et non par l'application elle-même, un fichier de configuration pour log-rotate devra être ajouté pour gérer les rotations des logs de l'application.
+
 #### YEP 2.11 - Utiliser une variable plutôt que l'app id directement  | validé | manuel | OFFICIAL |
 #### YEP 2.12 - Utiliser les commandes pratiques (helpers)  | validé | auto | OFFICIAL |
 #### YEP 2.13 - Traduire le package en anglais   | brouillon | manuel | OFFICIAL |
