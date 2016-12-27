@@ -139,6 +139,7 @@ Tout le monde peut changer de positions à n'importe quel moment, mais il est de
    - que des refus
    - sans avis (s'en remet aux autres)
  - Pour une décison mineure ou moyenne/standard, si le quota de réponse est atteint à la durée minimale et que le consensus est obtenu.
+  - Le quota de réponse correspond aux avis nécessaires, détaillé ci-après dans les types de décisions. Le pourcentage est rapporté au nombre d'actifs dans le groupe concerné. La gestion des actif et inactif dans le groupe est à la charge du coordinateur et du suppléant qui doivent maintenir à jour la liste des membres au minimum à chaque décision du groupe. (Un inactif qui se manifeste lors d'une décision redevient automatiquement actif.)
  - s'il n'est pas possible d'avoir assez de monde (vacances, plus assez de membres du groupe pouvant avoir un avis) il est possible pour le groupe de demander la clôture même si le quota d'avis n'est pas atteint, il y a alors un nouveau décalage de la date et si cette nouvelle date est franchie, la proposition est clôturée selon les avis donnés.
 
 ###### Micro décision:
