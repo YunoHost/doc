@@ -171,7 +171,11 @@ Lors de l'installation, il est nécessaire de sauvegarder chaque réponse aux qu
 #### YEP 4.2 - Lier l'authentification au sso   | validé | manuel | OFFICIAL |
 #### YEP 4.2.1 - Déconnexion   | validé | manuel | OFFICIAL |
 #### YEP 4.3 - Fournir un script de sauvegarde YunoHost fonctionnel   | validé | auto | OFFICIAL |
+L'application doit disposer d'un script backup pour permettre aux utilisateurs de sauvegarder l'application, sa configuration et ses données.
+
 #### YEP 4.4 - Fournir un script de restauration YunoHost fonctionnel   | validé | auto | OFFICIAL |
+L'application doit disposer d'un script restore pour permettre aux utilisateurs de restaurer une application sauvegardée préalablement avec le script backup.
+
 #### YEP 4.5 - Utiliser les hooks   | validé | manuel | OPTIONAL |
 #### YEP 4.6 - Gère le multi-instance   | validé | manuel | OPTIONAL |
 #### YEP 4.7 - Ajouter un module à la CLI   | validé | manuel | OPTIONAL |
