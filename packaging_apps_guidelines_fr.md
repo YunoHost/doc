@@ -163,6 +163,9 @@ Lors de l'installation, il est nécessaire de sauvegarder chaque réponse aux qu
 #### YEP 3.1 - Ne pas demander ou stocker de mot de passe LDAP   | brouillon | manuel | NOTWORKING |
 #### YEP 3.2 - Ouvrir un port correctement   | brouillon | manuel | WORKING |
 #### YEP 3.3 - Faciliter le contrôle de l'intégrité des sources   | brouillon | manuel | OFFICIAL |
+L'application upstream ne doit pas être intégrée en tarball dans le dossier source du package, car cela alourdit le package et le dépôt git et ne permet pas la vérification de l'intégrité de la source.  
+La source doit donc être téléchargée depuis le site officiel, puis son intégritée doit être vérifiée avant de l'installer.
+
 #### YEP 3.4 - Isoler l'app   | brouillon | manuel | OFFICIAL |
 #### YEP 3.5 - Suivre les recommendations de la documentation de l'app   | validé | manuel | OFFICIAL |
 #### YEP 3.6 - Mettre à jour les versions contenant des CVE   | draft | manuel | OFFICIAL |
