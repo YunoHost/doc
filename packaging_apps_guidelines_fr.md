@@ -142,7 +142,7 @@ Lors de l'installation, il est nécessaire de sauvegarder chaque réponse aux qu
 #### YEP 2.6 - Annuler l'action si les valeurs d'entrées sont incorrectes   | validé | manuel | WORKING |
 #### YEP 2.7 - Donner des permissions suffisantes aux instructions bash   | validé | auto | WORKING |
 #### YEP 2.8 - Modifier correctement une configuration système   | brouillon | manuel | WORKING |
-Les modifications du système doivent être réversible pour de la suppression de l'aplication, sans conséquence pour le système et sans laisser de résidus.  
+Les modifications du système doivent être réversible pour que la suppression de l'application soit sans conséquences pour le système ne laisse pas de résidus.  
 Pour celà, il faut recourir autant que possible aux dossiers `.d` des configurations système. Où lorsqu'il n'est pas possible de faire autrement, d'indiquer clairement la configuration modifiée par une application et s'assurer que les modifications seront retirées lors de sa suppression.
 
 #### YEP 2.9 - Enlever toutes traces de l'app lors de la suppression   | brouillon | manuel | WORKING |
