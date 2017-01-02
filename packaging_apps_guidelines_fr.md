@@ -140,7 +140,9 @@ Lors de l'installation, il est nécessaire de sauvegarder chaque réponse aux qu
 #### YEP 2.4 - Détecter et gérer les erreurs  | brouillon | manuel | WORKING |
 Les scripts install, upgrade, backup et restore doivent détecter les erreurs pour éviter la poursuite des scripts en cas d'erreur bloquante ou d'usage de variable vide.  
 L'usage de trap et de set -eu est recommandé pour détecter et traiter les erreurs ([Discussion en cours à ce sujet](https://forum.yunohost.org/t/gestion-des-erreurs-set-e-et-ou-trap/2249/5))  
-Il est nécessaire également de vérifier le contenu des variables avant les suppressions du script remove.
+Il est nécessaire également de vérifier le contenu des variables avant les suppressions du script remove. Par exemple un `rm -Rf /var/www/$app` avec `$app` vide aurait un résultat désastreux.
+
+Au début des scripts, avant toutes modifications, il faut vérifier l'existence des utilisateurs mentionné à l'installation, ainsi que la disponibilité du path demandé, la disponibilité du dossier final de l'application et la taille des mots de passe le cas échéant.
 
 #### YEP 2.5 - Copier correctement des fichiers   | brouillon | manuel | WORKING |
 #### YEP 2.6 - Annuler l'action si les valeurs d'entrées sont incorrectes   | validé | manuel | WORKING |
