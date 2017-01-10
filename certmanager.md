@@ -25,7 +25,7 @@ run every day and attempt to renew any certificate that will expire in less than
 
 #### I want/need to use a certificate from a different CA than Let's Encrypt.
 
-This is not supported yet. You might need to manually crate Certificate Signing
+This is not supported yet. You might need to manually create Certificate Signing
 Request (CSR) to be given to your CA, and manually import the certificate you
 got from it. Check out [this page](certificate) for more info. This process
 might made easier by Yunohost in the future.
