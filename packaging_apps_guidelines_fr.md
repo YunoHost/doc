@@ -111,9 +111,30 @@ Ces dépôts ont plusieurs fonctions :
 
 Pour les listes `official.json` et `community.json`, l'inscription se fait sur [le dépôt git "apps"](https://github.com/YunoHost/apps).
 
-Pour la liste d'application du projet LaBriqueInter.net, l'inscription se fait en consultant [la doc du dépôt du site internet](https://github.com/labriqueinternet/labriqueinter.net).
-
 #### YEP 1.3 - Indiquer la licence associée au paquet  | brouillon | AUTO | WORKING |
+La licence du paquet est à indiquer dans un fichier `LICENSE` à la racine du paquet. Attention à ne pas confondre avec la licence de l'application qui va être installée dont l'acronyme est à renseigner dans le champ `license` du manifeste.
+
+Les listes d'applications official.json et community.json n'acceptent que les paquets dont la licence est libre, de même pour la licence de l'application contenue. Certaines applications libres nécessitent des dépendances non-libres (exemple: mp3, drivers, etc.). Dans ce cas, il faut ajouter `&dep-non-free` à l'acronyme et si possible donner des précisions dans le README.md du paquet, l'intégration sera dans ce cas acceptée au cas par cas.
+
+Dans le futur, YunoHost affichera sans doute des détails sur la licence de l'application. Pour y parvenir, l'acronyme doit être celui issu de cette [liste de licences répertoriées du SPDX](https://spdx.org/licenses/) (si il y a 2 acronymes, il faut prendre celui contenant le numéro de version). Pour plus de cohérence, la casse doit être respectée.
+
+Si la licence n'est pas présente dans la liste, dans ce cas il faut indiquer `free` ou `non-free` selon qu'elle est libre ou non et donner l'occasion à l'utilisateur de se renseigner dans le README.md (lien, explications, ...).
+
+Exemple: pour une licence `GNU Lesser General Public License (LGPL), version 3` l'acronyme est `LGPL-3.0` si toutefois des dépendances non libres sont utilisées dans ce cas il faudra mettre `LGPL-3.0&dep-non-free` dans le manifeste.
+
+Si une application a des modules liés avec une autre licence (Exemple: Odoo 9 LGPL-3.0 + un module sous licence AGPL-3.0 ), dans ce cas on indiquera les deux licences séparées par un `&`.
+
+Si deux applications distinctes sont dans le même paquet d'installation et ont des licences distinctes, dans ce cas on peut utiliser le `,` pour séparer les licences.
+
+Dans les deux cas, le mainteneur est encouragé à réfléchir à la possibilité de créer deux paquets distincts. Le manifeste de chaque application permet de poser des questions de type `app` de façon à faire référence à une autre application déjà installée.
+
+Rappel: une question de type `app` prend pour réponse l'identifiant d'une des apps déjà installée.
+
+Quelques liens intéressants pour aider au choix de licence:
+* [Des fiches explicatives sur les licences libres](https://www.inria.fr/content/download/5896/48452/version/2/file/INRIA_recueil_fiches_licences_libres_vf.pdf)
+* [La documentation sur les licences du projet GNU](https://www.gnu.org/licenses/licenses.fr.html)
+* [Un guide du projet GNU pour aider au choix d'une licence](https://www.gnu.org/licenses/license-recommendations.fr.html)
+
 #### YEP 1.4 - Informer sur l'intention de maintenir un paquet   | brouillon | manuel | WORKING |
 #### YEP 1.5 - Mettre à jour régulièrement le statut de l'app  | brouillon | manuel | WORKING |
 #### YEP 1.6 - Se tenir informé sur l'évolution du packaging d'apps  | validé | manuel | OFFICIAL |

@@ -1,12 +1,12 @@
 # Installation guide
 
-You have several ways to install YunoHost. The process may slightly differs whether it takes place at home or if you want to do it remotely, and regarding the hardware used: **[See the requirements](/hardware)**
+There are multiple ways to install YunoHost. The process may slightly differs whether it takes place at home or if you want to do it on a remote server, and regarding the hardware used: **[See the requirements](/hardware)**
 
-This page lists few installation guides.
+This page lists a few installation guides.
 
 ---
 
-<h1 style="font-weight: 100">Give a try</h1>
+<h1 style="font-weight: 100">Give it a try</h1>
 
 <div class="row">
 
@@ -52,7 +52,7 @@ This page lists few installation guides.
 
 ---
 
-<h1 style="font-weight: 100">Virtually</h1>
+<h1 style="font-weight: 100">On a virtual machine/container</h1>
 
 <div class="row">
 
@@ -74,7 +74,7 @@ This page lists few installation guides.
 
 ---
 
-<h1 style="font-weight: 100">Remotely</h1>
+<h1 style="font-weight: 100">On a remote server</h1>
 
 <div class="row">
 
@@ -94,7 +94,6 @@ This page lists few installation guides.
 
 <h1 style="font-weight: 100">On Debian</h1>
 
-If you have already installed **Debian 8** (Jessie) on a server, you are able to **[install YunoHost via script](/install_on_debian)**.
+If you have already installed **Debian 8** (Jessie) on a server, you'll be able to **[install YunoHost with a simple script](/install_on_debian)**.
 
 <a href="/install_on_debian"><img width=100 src="/images/debian-logo.png"></a>
-

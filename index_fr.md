@@ -38,7 +38,7 @@
   </div>
 
   <div class="call-to-action">
-    <!-- <a class="btn btn-primary btn-lg" href="/try_fr">Essayer</a>  -->
+    <a class="btn btn-primary btn-lg" href="/try_fr">Essayer</a>
     <a class="btn btn-success btn-lg" href="/install_fr">Installer</a>
     <p class="text-muted"><small><a href="https://forum.yunohost.org/t/parution-de-yunohost-2-4/1541">YunoHost v2.4</a></small></p>
   </div>
@@ -94,6 +94,7 @@
       <a class="btn btn-lg btn-block btn-info" href="/docs_fr">Documentation</a>
       <a class="btn btn-lg btn-block btn-success" href="/contribute_fr">Comment contribuer</a>
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org" target="_blank">Forum</a>
+      <a class="btn btn-lg btn-block btn-default" href="chat_rooms_fr" target="_blank">Salons de discussions</a>
       <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Dernières nouvelles</a>
       <a class="btn btn-lg btn-block btn-danger btn-support" href="/support_fr">Support</a>
 

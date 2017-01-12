@@ -41,7 +41,7 @@ Il est **fortement conseillé** d’installer YunoHost sur **Debian Jessie** ave
 
 ---
 
-Pour se connecter directement sur l’ordinateur (uniquement en local) : 
+Pour se connecter directement sur l’ordinateur (uniquement en local) :
 * Utilisateur : **root**
 * Mot de passe : **yunohost**
 

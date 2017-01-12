@@ -40,6 +40,7 @@
    * [Orange](/isp_orange_fr)
    * [Free](/isp_free_fr)
 * [Administration web](/admin_fr)
+* [Administration via l'API](/admin_api_fr)
 * [Sécurité](/security_fr)
    * [Authentification SSH par clé](/security_fr)
    * [Modifier le port SSH](/security_fr)

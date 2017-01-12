@@ -2,7 +2,7 @@
 
 *Find other ways to install YunoHost **[here](/install)**.*
 
-### Pre-requisite
+### Requirements
 
 <img width=100 src="/images/debian-logo.png">
 
@@ -10,7 +10,7 @@ An ARM box, a VPS, a dedicated server, a standard x86 computer, an old Macintosh
 
 * with **Debian 8** (Jessie) installed
 * connected to the Internet
-* with a **root access** directly or via SSH
+* with a direct **root access** or via SSH
 
 <img width=650 src="/images/debian_install.png">
 
@@ -24,5 +24,4 @@ An ARM box, a VPS, a dedicated server, a standard x86 computer, an old Macintosh
 
 ---
 
-***If you need help during one of these steps, do not hesitate to use [our support tools](/support).***
-
+***Need help during one of these steps? [Get support!](/support)***

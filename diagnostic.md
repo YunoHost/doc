@@ -48,7 +48,6 @@ You can also redirect ports manually to your server's local IP address on this r
 
 ### <small>4.</small> Do your router has hairpinning ?
 
-If the server is accessible from outside your local network, but unreachable with its domain name on the local network, then your router probably lacks of <a href="http://en.wikipedia.org/wiki/Hairpinning" target="_blank">hairpinning</a>.
+If the server is accessible from outside your local network, but unreachable with its domain name on the local network, then your router probably lacks of <a href="https://en.wikipedia.org/wiki/Hairpinning" target="_blank">hairpinning</a>.
 
-You cannot avoid that in a simple way. If you know how to do it, just configure the `/etc/hosts` of your local clients to access your server with the local IP. Else, retry the installation with a **.nohost.me** or **.noho.st** domain.
-
+Here is a [tutorial](dns_local_network) to access to your server on a local network and bypass hairpinning problem. The tutorial propose in first solution to create a redirection with DNS of the ISP box and on second solution to modify `hosts` file of **clients** to say to access the **server** via it's local IP address. First solution is preferable because it's not needed to modify `hosts` files on every computer of the local network, if using many clients.

@@ -10,6 +10,8 @@ Two things remain important to note:
 
 *If you need some advises, do not hesitate to [ask us](/support).*
 
+*To talk about security flaws, contact the [YunoHost security team](/security_team).*
+
 ---
 
 ## Improve security
@@ -121,3 +123,4 @@ Some [pentests](https://en.wikipedia.org/wiki/Penetration_test) have been done o
 - [1) Preparation](https://blog.exadot.fr/2016/07/03/pentest-dune-instance-yunohost-1-preparation)
 - [2) The functionning](https://blog.exadot.fr/2016/07/12/pentest-dune-instance-yunohost-2-le-fonctionnement)
 - [3) Black Box Audit](https://blog.exadot.fr/2016/08/26/pentest-dune-instance-yunohost-3-audit-en-black-box)
+- [4) Grey Box Audit](https://blog.exadot.fr/2016/11/03/pentest-dune-instance-yunohost-4-audit-en-grey-box)

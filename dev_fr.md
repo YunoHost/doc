@@ -1,91 +1,164 @@
-## Créer un environnement de développement
+## Contribuer au cœur de YunoHost
 
-<div class="alert alert-info">
-<b>Attention :</b> cette page de documentation n’est plus à jour. Merci de vous référer à la [documentation du dépôt](https://github.com/YunoHost/ynh-dev).
-</div>
+Vous souhaitez ajouter une nouvelle fonctionnalité au cœur de YunoHost, mais ne
+savez pas comment procéder ? Ce guide parcours les étapes du développement et du
+processus de contribution.
 
-Ce document a pour but de donner les clés pour créer un environnement de développement correct afin de développer sur le cœur de YunoHost. Il peut également vous permettre de tester vos applications que ce soit avec les versions `stable`, `testing`, `unstable` ou même des versions customisées issues des branches des dépôts.
+Si vous chercher quelque chose à implémenter ou un bug à réparer, le
+bug tracker est [ici](https://dev.yunohost.org/issues/) !
 
-### Installation de l’environnement de développement
-#### Installation du système de virtualisation
-Installer, avec le gestionnaire de paquet de votre système d’exploitation, Vagrant.
+**Venez dire coucou sur le [salon de
+dev](xmpp:dev@conference.yunohost.org?join)** ! Si vous n'avez pas de client
+XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
 
-```bash
-# Debian, Ubuntu, Mint
-sudo apt-get install vagrant
-# Fedora
-sudo dnf install vagrant
-```
+### Mettre en place un environnement de développement
 
-#### Télécharger `ynh-dev`
-<div class="alert alert-warning">
-<b>Attention :</b> Cette partie est en cours de rédaction. La ligne de commande `ynh-dev` vient juste d’être créée il est possible qu’il y ait des manques.
-</div>
+- **Utilisez [ynh-dev](https://github.com/YunoHost/ynh-dev)** (voir le README)
+  pour mettre en place un environnement de développement - en local sur une
+  machine virtuel, ou bien sur un VPS.
+  Ceci installera une instance fonctionelle de YunoHost, en utilisant
+  directement les dépôts git à l'aide de liens symboliques. De cette façon, il
+  vous sera possible de modifier les fichiers, de tester les changements en
+  temps réel, et de commiter et push/pull directement depuis cet environnement.
 
-Une ligne de commande `ynh-dev` a été créée afin de simplifier la gestion de votre environnement de développement.
+- **Implémentez et testez votre fonctionnalité**. Suivant ce sur quoi vous
+  voulez travailler :
+   - **Cœur Python/ligne de comande** : allez dans `/vagrant/yunohost/`
+   - **Interface d'administration web** : allez dans `/vagrant/yunohost-admin/`
+   - Vous pouvez aussi travailler sur les autres projets liés sur lesquels
+     s'appuie YunoHost (SSOwat, moulinette) de façon similaire.
 
-```bash
-wget https://raw.githubusercontent.com/yunohost/ynh-dev/master/ynh-dev
-chmod u+x ynh-dev
-```
-Pour créer votre environnement, commencez par faire un `create-env`
-```bash
-./ynh-dev create-env ~/project/my/yunohost/env
-```
-Cette sous commande va cloner les dépôts principaux au fonctionnement de YunoHost et les positionner en `unstable`. Si vous avez vos propres fork, vous pouvez ensuite faire ce qu’il faut pour changer l’origine et le remote repository.
+### Travailler sur le cœur Python / ligne de commande
 
-#### Usage
-##### Lancer un container
-Positionner vous dans votre environnement, puis créer et entrer dans une vm à l’aide de `ynh-dev run`
-```bash
-cd ~/project/my/yunohost/env
-./ynh-dev run exemple.local stable8
-root@yunohost:/# cd yunohost
-root@yunohost:/yunohost/# ls
-Dockerfile  LICENSE  README.md	SSOwat	apps  backup  moulinette  ynh-dev  yunohost  yunohost-admin  yunohost-vagrant
-```
+- Allez dans `/vagrant/yunohost/`.
 
-##### Mettre à jour un container
-Si la vm n’est pas à jour lancez un `ynh-dev upgrade` :
-```bash
-root@yunohost:/yunohost/# ./ynh-dev upgrade
-```
+- Executez `/vagrant/ynh-dev use-git yunohost`.
 
-##### Déployer les sources présentes dans votre environnement
-Pour déployer les sources se trouvant dans votre environnement de développement faites :
-```bash
-root@yunohost:/yunohost/# ./ynh-dev deploy
-```
+- Le fichier actionsmap (`data/actionsmap/yunohost.yml`) définit les différentes
+  catégories, actions et arguments de la ligne de commande YunoHost. Choisissez
+  comment vous voulez que les utilisateurs utilisent votre fonctionnalité, et
+  ajoutez/éditez les catégories, actions et arguments correspondants. Par
+  exemple, dans `yunohost domain add some.domain.tld`, la catégorie est
+  `domain`, l'action est `add` et `some.domain.tld` est un argument.
 
-<div class="alert alert-warning">
-<b>Attention :</b> pour yunohost-admin vous devez avoir compilé le js avec gulp au préalable
-</div>
+- Moulinette va automatiquement faire le lien entre les commandes de
+  l'actionsmap et les fonctions python (ainsi que leurs arguments) dans
+  `src/yunohost/`. Par exemple, `yunohost domain add some.domain.tld`
+  déclenchera un appel de `domain_add(domainName)` dans `domain.py`, avec l'argument 
+  `domainName` qui vaudra `"some.domain.tld"`.
 
-<div class="alert alert-warning">
-<b>Note :</b> vous pouvez sélectionner les paquets à déployer exemple : `./ynh-dev deploy yunohost yunohost-admin`
-</div>
+##### Helpers / style de code
 
-##### Lancer la postinstall
-Avec VirtualBox/Vagrant
-```bash
-root@yunohost:/yunohost/# yunohost tools postinstall
-```
+- Pour gérer les exceptions, il existe un type `MoulinetteError()`
 
-##### Récupérer l’IP de la vm et paramétrer son `/etc/hosts`
-si vous ne connaissez pas l’IP de votre vm :
-```bash
-root@yunohost:/yunohost/# ./ynh-dev ip
-172.17.0.1
-```
+- Pour aider avec l'internationalisation des messages, utilisez `m18n.n('some-message-id')`
+  et mettez le message correspondant dans `locales/en.json`. Vous pouvez aussi
+  utiliser des arguments pour construire les messages, avec `{{some-argument:s}}`. 
+  Ne modifiez pas de fichiers de locales autres que en.json, la traduction sera
+  faite avec [weblate](https://translate.yunohost.org/) !
 
-Pour tester dans votre navigateur vous pouvez modifier votre fichier `/etc/hosts` afin de faire pointer votre domaine sur la bonne adresse IP. Par exemple en y ajoutant une ligne semblable à celle-ci :
-```bash
-172.17.0.1   exemple.local
-```
+- YunoHost essaye de suivre le style de code [pep8](http://pep8.org/). Des
+  outils existent pour vérifier automatiquement la conformité du code.
 
-##### Déployer les sources au fur et à mesure des modifications
-```bash
-root@yunohost:/yunohost/# ./ynh-dev watch
-```
+- Mettre un `_` devant les noms des fonctions "privées".
 
-Astuce : dans le cas de modification sur yunohost-admin, cette commande est très pratique couplée avec un `gulp watch` sur la machine hôte.
+##### N'oubliez pas
+
+- (Peut-être plus nécessaire) À chaque fois que vous modifiez l'actionsmap, il
+  faut forcer le rafraîchissement du cache avec :
+  `rm /var/cache/moulinette/actionsmap/yunohost.pkl`
+
+### Travailler sur l'interface d'administration web
+
+- Allez dans `/vagrant/yunohost-admin/src/`.
+
+- Exécutez `/vagrant/ynh-dev use-git yunohost-admin`. Ceci lance gulp, de sorte 
+  qu'à chaque fois que vous modifiez les sources, il recompilera le code
+  (js) et vous pourrez voir les changements dans le navigateur web (Ctrl+F5).
+  Pour stopper la commande, faites simplement Ctrl+C.
+
+- L'interface web utilise une API pour communiquer avec YunoHost. Les
+  commandes/requêtes de l'API sont également définies dans l'actionsmap. Par
+  exemple, accéder à la page ```https://domain.tld/yunohost/api/users```
+  correspond à une requete `GET /users` vers l'API YunoHost. Cette requête
+  est mappée sur `user_list()`. Accéder à cette URL devrait afficher le json
+  retourné par cette fonction. Les requêtes 'GET' sont typiquement destinées à
+  demander de l'information au serveur, tandis que les requêtes 'POST' sont
+  destinées à demander au serveur de modifier/changer des informations ou de
+  réaliser des actions.
+
+- `js/yunohost/controllers` contiens les parties javascript, et définit quelles
+  requêtes faire à l'API pendant le chargement d'une page donnée de l'interface,
+  et comment traîter les données récupérées pour générer la page, en utilisant
+  des templates.
+
+- `views` contient les templates des pages de l'interface. Dans le template,
+  les données venant du javascript peuvent êtres utilisées avec la syntaxe
+  `{{some-variable}}`, qui sera remplacée pendant la construction de la page.
+  Il est également possible d'avoir des conditions avec la syntaxe 
+  d'[handlebars.js](http://handlebarsjs.com) : ```{{#if
+  some-variable}}<p>du HTML conditionnel ici !</p>{{/if}}```
+
+- Pour l'internationalisation des messages, utilisez `y18n.t('some-string-code')` 
+  dans le javascript, ou `{{t 'some-string-code'}}` dans le template HTML, et 
+  mettez votre message dans `locales/en.json`. Ne modifiez pas de fichiers de 
+  locales autres que en.json, la traduction sera faite avec 
+  [weblate](https://translate.yunohost.org/) !
+
+##### N'oubliez pas
+
+- À chaque modification de l'actionsmap, il faut redémarrer l'API yunohost :
+  ```service yunohost-api restart```
+  (Il faudra retaper le mot de passe administrateur dans l'interface web)
+
+- Il faudra peut-être régulièrement forcer le rafraîchissement du cache
+  navigateur pour propager correctement le javascript et/ou HTML (à chaque fois
+  que l'on change quelque chose dans `js` ou `views`, donc).
+
+
+### Votre fonctionnalité est prête et vous souhaitez qu'elle soit intégrée dans YunoHost 
+
+- Forkez le dépòt correspondant sur Github, et commitez vos changements dans
+  une nouvelle branche, Il est recommandé de nommer la branche avec la
+  convention :
+  - Pour une nouvelle fonctionnalité ou amélioration : `enh-TICKETREDMINE-description-fonctionnalité`
+  - Pour une correction de bug : `fix-REDMINETICKET-description-correctif`
+  - `TICKETREDMINE` est optionnel et correspond au numéro du ticket sur RedMine
+
+- Une fois prêt, ouvrez une Pull Request (PR) sur Github. De préférence, inclure
+  `[fix]` ou `[enh]` au début du titre de la PR.
+
+- Après relecture, test et validation par les autres contributeurs, votre
+  branche sera mergée dans `testing` (?) !
+
+<script type="text/javascript" src="/jappix/javascripts/mini.min.js"></script>
+<script type="text/javascript">
+    // Jappix mini chat
+    $(".actions").css('opacity', 0);
+    jQuery.ajaxSetup({cache: false});
+
+    var ADS_ENABLE = 'off';
+    var JAPPIX_STATIC = '/jappix/';
+    var HOST_BOSH = 'https://im.yunohost.org/http-bind/';
+    var ANONYMOUS = 'on';
+     JappixMini.launch({
+        connection: {
+           domain: "anonymous.yunohost.org",
+        },
+        application: {
+           network: {
+              autoconnect: false,
+           },
+           interface: {
+              showpane: false,
+              animate: false,
+           },
+           groupchat: {
+              open: ['dev@conference.yunohost.org'],
+              suggest: ['support@conference.yunohost.org']
+           }
+        },
+     });
+</script>
+
+
