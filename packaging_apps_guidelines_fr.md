@@ -290,6 +290,9 @@ En général, une application propose une documentation afin d'aider les adminis
 Le mainteneur de paquet doit toutefois rester vigilant, certaines documentations pouvant être erronées ou insuffisante.
 
 #### YEP 3.6 - Mettre à jour les versions contenant des CVE   | draft | manuel | OFFICIAL |
+Les [CVE](https://fr.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures), ou Common Vulnerabilities and Exposures, recensent les failles de sécurités communes aux applications. Les corrections de ces failles peuvent concerner l'application et il est important dans ce cas de suivre au plus près ces mises à jour.  
+Plus généralement, l'application peut proposer un correctif pour une faille spécifique à elle-même.  
+De manière générale, cette YEP implique de suivre un canal d'information pour suivre les mises à jour de sécurité de l'application et réagir rapidement en mettant à jour le package en conséquence.
 
 ### YEP 4 - Intégrer une app
 Cette meta YEP traite de l'intégration d'une app avec l'environnement YunoHost. Une bonne intégration est en général un gage de qualité et de confort pour les utilisateurs.
