@@ -120,7 +120,7 @@ Il peut arriver, de façon exceptionnelle, qu’on ait besoin de faire un hotfix
 
 Pour faire un hotfix, il faut donc travailler sur la branche `stable` directement. Une fois la correction effectuée et commitée, il faut immédiatement créer la release stable avec l'outil yunobump (Voir les sections XX et "Numéros de version").
 
-Ensuite, il faut appliquer ce hotfix aux branches `testing` et `unstable`. Il est fortement conseillé de l'appliquer immédiatement après avec créer la release stable.
+Ensuite, il faut appliquer ce hotfix aux branches `testing` et `unstable`. Il est fortement conseillé de l'appliquer immédiatement après avoir créer la release stable.
 Pour cela, passer sur la branche `testing` et merger la branche `stable`; Un "commit de merge" doit etre réalisé. L'historique de la branche `testing` doit donc ressembler à : 
 ```bash
 456def Merge branch 'stable' into testing
