@@ -6,7 +6,7 @@ Managing certificates with Yunohost
 -----------------------------------
 
 The main feature of the certificate manager is to allow you to install Let's
-Encrypt certificate on your domains without plain. You can use it from the web
+Encrypt certificate on your domains without pain. You can use it from the web
 administration (*SSL certificate* on a given domain info page), or from the
 command line with `yunohost domain cert-status`, `cert-install` and
 `cert-renew`.
@@ -25,10 +25,10 @@ run every day and attempt to renew any certificate that will expire in less than
 
 #### I want/need to use a certificate from a different CA than Let's Encrypt.
 
-This is not supported yet. You might need to manually create Certificate Signing
-Request (CSR) to be given to your CA, and manually import the certificate you
-got from it. Check out [this page](certificate) for more info. This process
-might made easier by Yunohost in the future.
+This cannot be done automatically for now. You will need to manually create a 
+Certificate Signing Request (CSR) to be given to your CA, and manually import 
+the certificate you get from it. Check out [this page](certificate) for more 
+info. This process might be made easier by Yunohost in the future.
 
 Migration procedure
 --------------------
@@ -40,10 +40,10 @@ This is especially true for nohost.me / noho.st users (and other domains service
 sharing a common subdomain). If too many people migrate during the same period
 of time, you might get stuck with a self-signed certificate for a few days !
 
-#### I used the *letsencrypt_ynh* app.
+#### I used the *letsencrypt_ynh* app
 
 You will be asked to uninstall the app before being able to use the new
-management feature. You can do it from the web administration interface, of from
+management feature. You can do it from the web administration interface, or from
 the command line with :
 
 ```bash
@@ -53,10 +53,10 @@ yunohost domain cert-install
 
 Be aware that the first command will revert your domains to self-signed
 certificate. The second command will attempt to reinstall a Let's Encrypt
-certificate on all your domains which have self-signed certificate.
+certificate on all your domains which have a self-signed certificate.
 
 
-#### I manually installed my certificates.
+#### I manually installed my Let's Encrypt certificates
 
 You should go in your nginx configuration, and remove the `letsencrypt.conf` (or
 whatever you called the file containing the `location
@@ -126,7 +126,7 @@ whole process relies on trust in third parties called Certification Authorities
 effectively controls the domain `ilikecoffee.com`) before delivering
 [cryptographic certificates](https://en.wikipedia.org/wiki/Public_key_certificate).
 
-#### Why do browsers complain about self-signed certificate ?
+#### Why do browsers complain about self-signed certificates ?
 
 Self-signed certificates are, as their name says, self-signed, meaning that you
 were your own certification authority in the process. Such a certificate does
@@ -141,7 +141,7 @@ human intervention, time and money.
 
 In 2015, Let's Encrypt, developped a protocol called
 [ACME](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment),
-that allow to automatically verify that a machine controls a domain and deliver
+which allows to automatically verify that a machine controls a domain, and deliver
 certificates for free, drastically reducing the cost of setting up a SSL
 certificate.
 
@@ -150,7 +150,7 @@ certificate.
 To verify your server's identity and deliver the certificate, Let's Encrypt uses
 the [ACME
 protocol](https://en.wikipedia.org/wiki/Automated_Certificate_Management_Environment). It
-basically works as follow (it's simplified, but you get the idea) :
+basically works as follow (it's simplified, but you'll get the idea) :
 - A program running on your server contacts the Let's Encrypt CA server, ask for
   a certificate for domain `ilikecoffee.com`.
 - The Let's Encrypt CA server generates a random string such as `A84F2D0B`, and
