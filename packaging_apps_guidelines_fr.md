@@ -23,8 +23,8 @@ Chaque YEP est associée à :
 | **YEP 1** | **Communiquer avec la communauté** | | | |
 | YEP 1.1 | Nommer son app et son dépôt  | validé | manuel | NOTWORKING |
 | YEP 1.2 | Inscrire l'app sur un "répertoire" connu  | validé | manuel | NOTWORKING |
-| YEP 1.3 | Indiquer la licence associée au paquet  | brouillon | AUTO | WORKING |
-| YEP 1.4 | Informer sur l'intention de maintenir un paquet   | brouillon | manuel | WORKING |
+| YEP 1.3 | Indiquer la licence associée au paquet  | validé | AUTO | WORKING |
+| YEP 1.4 | Informer sur l'intention de maintenir un paquet   | brouillon | manuel | OFFICIAL |
 | YEP 1.5 | Mettre à jour régulièrement le statut de l'app  | brouillon | manuel | WORKING |
 | YEP 1.6 | Se tenir informé sur l'évolution du packaging d'apps  | validé | manuel | OFFICIAL |
 | YEP 1.7 | Ajouter l'app à l'[organisation YunoHost-Apps](https://github.com/YunoHost-Apps)  | validé | manuel | OFFICIAL |
@@ -135,7 +135,10 @@ Quelques liens intéressants pour aider au choix de licence:
 * [La documentation sur les licences du projet GNU](https://www.gnu.org/licenses/licenses.fr.html)
 * [Un guide du projet GNU pour aider au choix d'une licence](https://www.gnu.org/licenses/license-recommendations.fr.html)
 
-#### YEP 1.4 - Informer sur l'intention de maintenir un paquet   | brouillon | manuel | WORKING |
+#### YEP 1.4 - Informer sur l'intention de maintenir un paquet   | brouillon | manuel | OFFICIAL |
+Le mainteneur de l'application doit s'engager à maintenir son app sur la durée si il souhaite que celle-ci rejoigne la liste des applications officielles.  
+Cela implique de surveiller les mises à jour de l'application upstream, de respecter les nouvelles règles de packaging et de répondre aux demandes des utilisateurs.
+
 #### YEP 1.5 - Mettre à jour régulièrement le statut de l'app  | brouillon | manuel | WORKING |
 #### YEP 1.6 - Se tenir informé sur l'évolution du packaging d'apps  | validé | manuel | OFFICIAL |
 Afin de suivre l'évolution du format de packaging ainsi que des bonnes pratiques, il est recommandé de:
