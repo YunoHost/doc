@@ -71,6 +71,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Koel](http://koel.phanan.net)
 - [Kontalk](http://kontalk.org)
 - [Koozip](http://koozic.net)
+- [Kresus](https://framagit.org/bnjbvr/kresus)
 - [KrISS feed](https://github.com/tontof/kriss_feed)
 - [Kune](https://en.wikipedia.org/wiki/Kune_%28software%29)
 - [LiquidSoap](http://savonet.sourceforge.net/)
