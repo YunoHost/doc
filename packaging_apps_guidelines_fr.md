@@ -227,6 +227,8 @@ Certaines instructions nécessitent les droits sudo. Il faut dans ce cas ne pas 
 Dans d'autres cas il est nécessaire de donner des droits à l'aide de chmod et de chown.
 
 #### YEP 2.8 - Modifier correctement une configuration système   | brouillon | manuel | WORKING |
+
+
 #### YEP 2.9 - Enlever toutes traces de l'app lors de la suppression   | brouillon | manuel | WORKING |
 À l’exception de dépendances (pax exemple : paquets Debian) utilisés par d’autres services ou applications.
 
