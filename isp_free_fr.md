@@ -54,4 +54,9 @@ On monte le répertoire NAS par défaut avec les droits de lecture / écriture p
 $ sudo mount -t cifs //mafreebox.freebox.fr/Disque\ dur/ /home/monlogin/freebox -o guest,iocharset=utf8,file_mode=0777,dir_mode=0777
 ```
 
-RAF : automatiser ce montage car il faut le refaire à chaque redémarrage.
+##### Automatiser le montage
+
+Ajouter cette ligne dans `/etc/fstab` : 
+```
+//mafreebox.freebox.fr/Disque\040dur/ /mnt/freebox cifs _netdev,rw,guest,iocharset=utf8 0 0
+```
