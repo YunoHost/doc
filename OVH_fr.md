@@ -4,11 +4,11 @@ Nous allons voir comment configurer le DNS avec [OVH](http://www.ovh.com).
 
 Après achat de votre nom de domaine, rendez vous dans l'espace client pour retrouver la panneau de configuration d'OVH, et cliquez sur votre domaine à gauche:
 
-<img src="/images/ovh_control_panel.png" width=400>
+<img src="/images/ovh_control_panel.png" width=800>
 
 Cliquez sur l'onglet **Zone DNS**, puis sur **Ajouter une entrée**:
 
-<img src="/images/ovh_dns_zone.png" width=250>
+<img src="/images/ovh_dns_zone.png" width=800>
 
 Il suffit maintenant d'ajouter les redirections DNS comme indiqué dans la [configuration DNS standard](/dns_config_fr).
 
