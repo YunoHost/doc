@@ -2,27 +2,16 @@
 
 Nous allons voir comment configurer le DNS avec [OVH](http://www.ovh.com).
 
-Après achat de votre nom de domaine. Sélectionnez votre nom de domaine.
+Après achat de votre nom de domaine, rendez vous dans l'espace client pour retrouver la panneau de configuration d'OVH, et cliquez sur votre domaine à gauche:
 
-<img src="/images/OVH1_domain_select.png" width=400>
+<img src="/images/ovh_control_panel.png" width=400>
 
-Allez dans **Domaine & DNS** :
+Cliquez sur l'onglet **Zone DNS**, puis sur **Ajouter une entrée**:
 
-<img src="/images/OVH2_domain_DNS.png" width=250>
+<img src="/images/ovh_dns_zone.png" width=250>
 
-Puis, allez dans **Zone DNS** :
+Il suffit maintenant d'ajouter les redirections DNS comme indiqué dans la [configuration DNS standard](/dns_config_fr).
 
-<img src="/images/OVH3_zoneDNS.png" width=600>
-
-<Voici la page de configuration des zones DNS
-
-OVH4
-
-Avec l’édition texte.
-
-OVH5>
-
-À l’endroit de configuration de la zone DNS, mettez-vous en édition texte, et utilisez-la [configuration DNS standard](/dns_config_fr).
 
 ###IP dynamique
 
