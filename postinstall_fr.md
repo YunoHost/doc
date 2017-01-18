@@ -32,6 +32,9 @@ C’est le nom de domaine qui permettra l’accès à votre serveur ainsi qu’a
 
 * Si en revanche vous maîtrisez la notion de **DNS**, vous pouvez utiliser votre propre nom de domaine. Dans ce cas, référez-vous à la page [yunohost.org/dns](/dns_fr) pour plus d’informations.
 
+* Si vous n'avez pas de nom de domaine et que vous n'en voulez pas en *mondomaine.nohost.me* ou *mondomaine.noho.st*, vous pouvez utilisez un domaine local. Plus d'infos sur comment [accéder à son serveur depuis le réseau local](/dns_local_network_fr).
+
+
 ### Mot de passe d’administration
 
 C’est le mot de passe qui vous permettra d’accéder à l’[interface d’administration](/admin_fr) de votre serveur. Vous pourrez également l’utiliser pour vous connecter à distance via **SSH**, ou en **SFTP** pour transférer des fichiers. 
