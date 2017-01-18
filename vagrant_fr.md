@@ -1,5 +1,7 @@
 # Vagrant et YunoHost
 
+*Si vous avez besoin d’une vm pour tester du code, il vaut mieux utiliser directement [ynh-dev](https://github.com/yunohost/ynh-dev)*
+
 *Toutes les autres façons d’installer YunoHost sont listées **[ici](/install_fr)**.*
 
 <img src="/images/vagrant.png" width=250>
@@ -58,7 +60,4 @@ Les adresses IP sont assignées par défaut mais peuvent être changées dans le
 *Une fois l’installation terminée, vous pouvez procéder à la post-installation : **[yunohost.org/postinstall](/postinstall_fr)** *
 
 
-## Outils pour le développement 
-
-Si vous avez besoin d’une vm pour tester quelque chose, il vaut mieux utiliser directement [ynh-dev](https://github.com/yunohost/ynh-dev).
 
