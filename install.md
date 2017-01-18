@@ -6,18 +6,33 @@ This page lists a few installation guides.
 
 ---
 
-<h1 style="font-weight: 100">Give it a try</h1>
-
 <div class="row">
 
-<div class="col col-md-3 text-center">
-<a href="/try_at_home"><img src="/images/usb_key.png" height=150 style="vertical-align:bottom"><b><p>Live CD/USB</p></b></a>
-</div>
+<div class="col col-md-9">
+<h1 style="font-weight: 100">Give it a try</h1>
 
-<div class="col col-md-3 text-center">
+<div class="col col-md-4 text-center">
 <a href="/try"><img height=150 src="/images/logo.png" style="vertical-align:bottom"><b><p>Demo server</p></b></a>
 </div>
 
+<div class="col col-md-4 text-center">
+<a href="/try_at_home"><img src="/images/usb_key.png" height=150 style="vertical-align:bottom"><b><p>Try with a Live USB</p></b></a>
+</div>
+
+<div class="col col-md-4 text-center">
+<a href="/install_on_virtualbox"><img src="/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>Try in VirtualBox</p></b></a>
+</div>
+</div>
+<div class="col col-md-3">
+<h1 style="font-weight: 100" class="text-right">Help!</h1>
+<div class="col col-md-12 text-center">
+<a href="/where_to_start"><img height=150 src="http://englishconnection.com.br/arquivos/files/2015/03/meme2.png" style="vertical-align:bottom;"><b><p>Don't know where to start ?</p></b></a>
+</div>
+
+</div>
+
+
+
 
 </div>
 
@@ -25,25 +40,43 @@ This page lists a few installation guides.
 
 ---
 
-<h1 style="font-weight: 100">Install @ home</h1>
+<h1 style="font-weight: 100">Install at home</h1>
 
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/installation_brique_fr"><img src="/images/thisisinternet.png" height=150 style="vertical-align:bottom"><b><p>On the Internet Cube</p></b></a>
-</div>
-
-
-<div class="col col-md-3 text-center">
-<a href="/install_on_arm_board"><img src="/images/cubieboard2.png" height=150 style="vertical-align:bottom"><b><p>On an ARM board</p></b></a>
+<a href="/installation_brique_fr"><img src="https://www.olimex.com/Products/OLinuXino/A20/A20-OLinuXino-LIME/images/A20-OLinuXino-LIME-1.jpg" height=150 style="vertical-align:bottom"><b><p>On an OlinuXino (Internet Cube)</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_raspberry"><img src="/images/Raspberry_Pi_2_Model_B_v1.1_front_angle_new.jpg" height=150 style="vertical-align:bottom"><b><p>On a Raspberry Pi</p></b></a>
+<a href="/install_on_raspberry"><img src="https://cdn.shopify.com/s/files/1/0176/3274/products/rpi2b_1024x1024.jpg" height=150 style="vertical-align:bottom"><b><p>On a Raspberry Pi</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_iso"><img src="/images/laptop.png" height=150 style="vertical-align:bottom"><b><p>On a standard computer</p></b></a>
+<a href="/install_on_arm_board"><img src="/images/cubieboard2.png" height=150 style="vertical-align:bottom"><b><p>On an ARM board</p></b></a>
+</div>
+
+<div class="col col-md-3 text-center">
+<a href="/install_iso"><img src="https://s14-eu5.ixquick.com/cgi-bin/serveimage?url=https:%2F%2Fcdn.pixabay.com%2Fphoto%2F2013%2F07%2F13%2F11%2F41%2Fcomputer-158474_960_720.png&sp=9a32d31209c9f29fa5f39dd45388e7ae" height=150 style="vertical-align:bottom"><b><p>On a regular computer</p></b></a>
+</div>
+
+</div>
+
+<br>
+
+
+---
+
+<h1 style="font-weight: 100">Install on a remote server</h1>
+
+<div class="alert alert-info" markdown="1">
+<span class="glyphicon glyphicon-heart"></span> Local associative ISP near you might be able to provide you with a *Virtual Private Server* (VPS), managed by human beings who respect users and [Net Neutrality](https://en.wikipedia.org/wiki/Net_neutrality) ! Check out [this page](https://db.ffdn.org/) for more information.
+</div>
+
+<div class="row">
+
+<div class="block-center text-center">
+<a href="/install_on_dedicated_server"><img src="/images/vps.png" height=150 style="vertical-align:bottom; text-align:center"><b><p>On a dedicated or virtual private server</p></b></a>
 </div>
 
 </div>
@@ -52,48 +85,31 @@ This page lists a few installation guides.
 
 ---
 
-<h1 style="font-weight: 100">On a virtual machine/container</h1>
+<h1 style="font-weight: 100">Advanced / others</h1>
 
 <div class="row">
-
-<div class="col col-md-3 text-center">
-<a href="/install_on_virtualbox"><img src="/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>On VirtualBox</p></b></a>
-</div>
-
-<div class="col col-md-3 text-center">
-<a href="/docker"><img src="/images/docker.png" height=150 style="vertical-align:bottom"><b><p>On Docker</p></b></a>
-</div>
 
 <div class="col col-md-3 text-center">
 <a href="/vagrant"><img src="/images/vagrant.png" height=150 style="vertical-align:bottom"><b><p>On Vagrant</p></b></a>
 </div>
 
-</div>
-
-<br>
-
----
-
-<h1 style="font-weight: 100">On a remote server</h1>
-
-<div class="row">
-
 <div class="col col-md-3 text-center">
-<a href="/install_on_digitalocean"><img src="/images/digitalocean.png" height=150 style="vertical-align:bottom"><b><p>On a DigitalOcean droplet</p></b></a>
+<a href="/install_on_debian"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
+<b><p>On Debian 8/Jessie</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_dedicated_server"><img src="/images/vps.png" height=150 style="vertical-align:bottom"><b><p>On a dedicated or a virtual private server</p></b></a>
+<a href="/install_on_debian_stretch"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
+<b><p>On Debian 9/Stretch (Experimental)</p></b></a>
 </div>
+
+<div class="col col-md-3 text-center">
+<a href="/use_yunohost_testing"><img height=150 src="http://previews.123rf.com/images/damedeeso/damedeeso1212/damedeeso121200017/16839352-handyman-dog-work-in-progress-with-jackhammer-Stock-Photo-dog-hammer.jpg" style="vertical-align:bottom">
+<b><p>Use Yunohost Testing</p></b></a>
+</div>
+
+
 
 </div>
 
 <br>
-
----
-
-<h1 style="font-weight: 100">On Debian</h1>
-
-If you have already installed **Debian 8** (Jessie) on a server, you'll be able to **[install YunoHost with a simple script](/install_on_debian)**.
-
-<a href="/install_on_debian"><img width=100 src="/images/debian-logo.png"></a>
