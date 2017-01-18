@@ -29,3 +29,5 @@ ddclient annonce à OVH le changement d’IP. OVH va alors changer votre IP.
 Il faut ajouter dans le fichier de configuration :
 * votre identifiant et votre mot de passe DynHost
 * votre nom de domaine
+
+Il existe un [guide d'utilisation DynHost fait par OVH](https://docs.ovh.com/fr/fr/web/domains/utilisation-dynhost/).
