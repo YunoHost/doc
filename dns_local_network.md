@@ -18,6 +18,9 @@ You may retrieve your server private IP adress  through different means:
 - Or using your router or internet box, depending on model.
 
 ## Configure DNS of Internet box or router
+
+The goal here is to create a network wide redirection handled by your router. The idea is to create a DNS redirection to your server's IP. You should access your router's configuration and look for DNS configuration, then add a redirection to your server's IP (e.g. redirect "yunohot.local" to 192.168.1.21).
+
 ### SFR Box
 If you haven't found your server private IP, you may find it using the SFR box admin panel:  
     Go to Network tab > General
