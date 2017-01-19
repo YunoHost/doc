@@ -227,6 +227,9 @@ Certaines instructions nécessitent les droits sudo. Il faut dans ce cas ne pas 
 Dans d'autres cas il est nécessaire de donner des droits à l'aide de chmod et de chown.
 
 #### YEP 2.8 - Modifier correctement une configuration système   | brouillon | manuel | WORKING |
+Les modifications du système doivent être réversible pour que la suppression de l'application soit sans conséquences pour le système ne laisse pas de résidus.  
+Pour celà, il faut recourir autant que possible aux dossiers `.d` des configurations système. Où lorsqu'il n'est pas possible de faire autrement, d'indiquer clairement la configuration modifiée par une application et s'assurer que les modifications seront retirées lors de sa suppression.
+
 #### YEP 2.9 - Enlever toutes traces de l'app lors de la suppression   | brouillon | manuel | WORKING |
 À l’exception de dépendances (pax exemple : paquets Debian) utilisés par d’autres services ou applications.
 
