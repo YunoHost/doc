@@ -295,6 +295,9 @@ Si l'application nécessite l'ouverture d'un port, il est nécessaire de vérifi
 Il convient également de vérifier si le port doit être ouvert sur le routeur, au delà du réseau local. Si ce n'est pas le cas, l'argument `--no-upnp` doit être ajouté à la commande `yunohost firewall allow` afin de limiter l'ouverture du port au réseau local uniquement.
 
 #### YEP 3.3 - Faciliter le contrôle de l'intégrité des sources   | brouillon | manuel | OFFICIAL |
+L'application upstream ne doit pas être intégrée en tarball dans le dossier source du package, car cela alourdit le package et le dépôt git et ne permet pas la vérification de l'intégrité de la source.  
+La source doit donc être téléchargée depuis le site officiel, puis son intégritée doit être vérifiée avant de l'installer.
+
 #### YEP 3.4 - Isoler l'app   | brouillon | manuel | OFFICIAL |
 #### YEP 3.5 - Suivre les recommandations de la documentation de l'app   | validé | manuel | OFFICIAL |
 En général, une application propose une documentation afin d'aider les administrateurs systèmes à réaliser l'installation. Il est conseiller d'en suivre les recommandations, notamment celles concernant les permissions à accorder par fichier ou répertoire.
