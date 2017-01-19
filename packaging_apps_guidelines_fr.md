@@ -144,6 +144,8 @@ Il est nécessaire également de vérifier le contenu des variables avant les su
 
 Au début des scripts, avant toutes modifications, il faut vérifier l'existence des utilisateurs mentionné à l'installation, ainsi que la disponibilité du path demandé, la disponibilité du dossier final de l'application et la taille des mots de passe le cas échéant.
 
+ N'oubliez pas qu'en cas d'erreur d'installation le script de suppression sera lancé automatiquement par la cli yunohost.
+
 #### YEP 2.5 - Copier correctement des fichiers   | brouillon | manuel | WORKING |
 #### YEP 2.6 - Annuler l'action si les valeurs d'entrées sont incorrectes   | validé | manuel | WORKING |
 #### YEP 2.7 - Donner des permissions suffisantes aux instructions bash   | validé | auto | WORKING |
