@@ -234,6 +234,9 @@ Pour celà, il faut recourir autant que possible aux dossiers `.d` des configura
 À l’exception de dépendances (pax exemple : paquets Debian) utilisés par d’autres services ou applications.
 
 #### YEP 2.10 - Configurer les logs de l'application   | brouillon | manuel | WORKING |
+Si possible, l'application doit utiliser un fichier de log, qui sera de préférence dans /var/log.  
+Si le log est mis en place par le script install et non par l'application elle-même, un fichier de configuration pour log-rotate devra être ajouté pour gérer les rotations des logs de l'application.
+
 #### YEP 2.11 - Utiliser une variable plutôt que l'app id directement  | validé | manuel | OFFICIAL |
 Il est conseillé de rendre les scripts le plus générique possible, un bon moyen d'y parvenir est d'utiliser une variable pour le nom de l'app afin d'éviter qu'il se retrouve partout dans les scripts. Ainsi, un autre packageur pourra plus facilement se servir du script pour une autre app.
 
