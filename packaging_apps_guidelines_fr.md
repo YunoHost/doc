@@ -316,7 +316,11 @@ Au besoin, SSOwat permet de sécuriser l'accès à une ou plusieurs parties de l
 Lorsque l'on clique sur une action de déconnexion au sein de l'app, celle-ci devrait déconnecter l'utilisateur du SSO. Sinon, il y a un risque que l'utilisateur laisse par mégarde une session ouverte.
 
 #### YEP 4.3 - Fournir un script de sauvegarde YunoHost fonctionnel   | validé | auto | OFFICIAL |
+L'application doit disposer d'un script backup pour permettre aux utilisateurs de sauvegarder l'application, sa configuration et ses données.
+
 #### YEP 4.4 - Fournir un script de restauration YunoHost fonctionnel   | validé | auto | OFFICIAL |
+L'application doit disposer d'un script restore pour permettre aux utilisateurs de restaurer une application sauvegardée préalablement avec le script backup.
+
 #### YEP 4.5 - Utiliser les hooks   | validé | manuel | OPTIONAL |
 YunoHost offre la possibilité de lancer des actions à chaque traitement effectué par la ligne de commande. Ceci peut être pratique dans de nombreux cas.
 
