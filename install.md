@@ -76,7 +76,7 @@ This page lists a few installation guides.
 <div class="row">
 
 <div class="block-center text-center">
-<a href="/install_on_dedicated_server"><img src="/images/vps.png" height=150 style="vertical-align:bottom; text-align:center"><b><p>On a dedicated or virtual private server</p></b></a>
+<a href="/install_on_vps"><img src="/images/vps.png" height=150 style="vertical-align:bottom; text-align:center"><b><p>On a dedicated or virtual private server</p></b></a>
 </div>
 
 </div>

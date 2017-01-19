@@ -72,7 +72,7 @@ Cette page liste plusieurs types d’installations, classés par catégories.
 <div class="row">
 
 <div class="block-center text-center">
-<a href="/install_on_dedicated_server_fr"><img src="/images/vps.png" height=150 style="vertical-align:bottom; text-align:center"><b><p>Sur un serveur dédié ou virtuel (VPS)</p></b></a>
+<a href="/install_on_vps_fr"><img src="/images/vps.png" height=150 style="vertical-align:bottom; text-align:center"><b><p>Sur un serveur dédié ou virtuel (VPS)</p></b></a>
 </div>
 
 </div>
