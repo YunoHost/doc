@@ -54,9 +54,20 @@ On monte le répertoire NAS par défaut avec les droits de lecture / écriture p
 $ sudo mount -t cifs //mafreebox.freebox.fr/Disque\ dur/ /home/monlogin/freebox -o guest,iocharset=utf8,file_mode=0777,dir_mode=0777
 ```
 
-##### Automatiser le montage
+##### Automatiser le montage  
 
-Ajouter cette ligne dans `/etc/fstab` : 
+Une ligne a ajouter à la fin du `/etc/fstab` :
 ```
-//mafreebox.freebox.fr/Disque\040dur/ /mnt/freebox cifs _netdev,rw,guest,iocharset=utf8 0 0
+//mafreebox.freebox.fr/Disque\040dur/ /home/monlogin/freebox cifs _netdev,guest,uid=monlogin,gid=users,iocharset=utf8 0 0
 ```
+
+Le `_netdev` signale que c'est un périphérique réseau, afin que le système ne le monte que s'il a accès au réseau.  
+`guest` est le mode d'identification à la Freebox : pour une connexion authentifié, placer vos identifiants dans un fichier sous la forme
+```
+username=your_user
+password=your_pass
+domain=FREEBOX
+```  
+et remplacer `guest` par `credentials=/path/to/file` (c'est aussi possible de spécifier directement `username=xx,password=xx` dans le fstab, mais déconseillé pour des raisons de sécurité)  
+`uid` et `gid` sont pour les id user et group auxquels appartiendra le répertoire une fois monté. Par défault (sur la Freebox V5 en tout cas), ils se retrouvent avec les uid/gid de 4242.  
+Il est aussi possible de mettre des droits particuliers avec les paramètres `file_mode=0777,dir_mode=0777`.
