@@ -294,6 +294,8 @@ Les [CVE](https://fr.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures), o
 Plus généralement, l'application peut proposer un correctif pour une faille spécifique à elle-même.  
 De manière générale, cette YEP implique de suivre un canal d'information pour suivre les mises à jour de sécurité de l'application et réagir rapidement en mettant à jour le package en conséquence.
 
+Comme précisé dans la YEP 1.7, si un correctif de sécurité doit être déployé en urgence, un autre membre de YunoHost peut être amené à faire un commit sur le package si nécessaire.
+
 ### YEP 4 - Intégrer une app
 Cette meta YEP traite de l'intégration d'une app avec l'environnement YunoHost. Une bonne intégration est en général un gage de qualité et de confort pour les utilisateurs.
 
