@@ -270,7 +270,7 @@ Bien souvent une web app s'installe à partir de formulaires affichés sur une p
 Il convient donc de vérifier si l'application ne propose pas une solution d'installation en ligne de commande.
 
 Si ce n'est pas le cas, il convient d'utiliser l'option -H de curl. En effet, dans certains cas la redirection DNS pourrait ne pas être active au moment de l'installation.
-```
+```bash
 curl -kL -H "Host: $domain" --data "&param1=Text1&param2=text2" https://localhost$path/install.php > /dev/null 2>&1
 ```
 
