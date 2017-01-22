@@ -41,6 +41,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Ferment](https://github.com/mmckegg/ferment)
 - [FileTea](https://filetea.me)
 - [Fossil](http://www.fossil-scm.org)
+- [Garrafin](http://garradin.eu/a-propos/) Non-profit organization management/accounting software (french only).
 - [GetSimple CMS](http://get-simple.info)
 - [Git-annex](http://git-annex.branchable.com)
 - [Gitit](http://gitit.net)
