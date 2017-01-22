@@ -307,6 +307,11 @@ L'application upstream ne doit pas être intégrée en tarball dans le dossier s
 La source doit donc être téléchargée depuis le site officiel, puis son intégritée doit être vérifiée avant de l'installer.
 
 #### YEP 3.4 - Isoler l'app   | brouillon | manuel | OFFICIAL |
+Afin d'éviter des effets de bords en cas de compromission éventuelle de l'application, celle-ci doit être isolée pour de ne pas risquer d'impacter les autres applications.  
+Pour cela, il convient d'isoler l'application dans son dossier d'exécution en restreignant son environnement par un chroot, soit par un mécanisme interne à l'application lorsque c'est possible (par exemple pour un serveur ftp), soit par l'usage de phpfpm.  
+De même, pour restreindre la portée de l'utilisateur exécutant l'application, il est préférable d'utiliser un utilisateur dédiée à l'application. Dont les droits sont restreint à l'usage de l'application uniquement.  
+Toutefois, cela ne doit pas exempter d'une restriction maximale des droits sur les fichiers de l'application. Autant que possible, les fichiers doivent appartenir à root, et l'utilisateur dédié ne doit avoir de droits d'écriture que sur les fichiers le réclamant expressément.
+
 #### YEP 3.5 - Suivre les recommandations de la documentation de l'app   | validé | manuel | OFFICIAL |
 En général, une application propose une documentation afin d'aider les administrateurs systèmes à réaliser l'installation. Il est conseiller d'en suivre les recommandations, notamment celles concernant les permissions à accorder par fichier ou répertoire.
 
