@@ -209,6 +209,14 @@ Cependant, il faudra porter une attention particulière à l'affichage correct d
 Lors de l'installation, il est nécessaire de sauvegarder chaque réponse aux questions du manifeste. En effet, même si au début il n'est pas nécessaire d'écrire un script de mise à jour, par la suite ce sera sans doute le cas. Or, sans les informations initiales, la mise à jour peut être plus fastidieuse.
 
 #### YEP 2.4 - Détecter et gérer les erreurs  | brouillon | manuel | WORKING |
+Les scripts install, upgrade, backup et restore doivent détecter les erreurs pour éviter la poursuite des scripts en cas d'erreur bloquante ou d'usage de variable vide.  
+L'usage de trap et de set -eu est recommandé pour détecter et traiter les erreurs ([Discussion en cours à ce sujet](https://forum.yunohost.org/t/gestion-des-erreurs-set-e-et-ou-trap/2249/5))  
+Il est nécessaire également de vérifier le contenu des variables avant les suppressions du script remove. Par exemple un `rm -Rf /var/www/$app` avec `$app` vide aurait un résultat désastreux.
+
+Au début des scripts, avant toutes modifications, il faut vérifier l'existence des utilisateurs mentionné à l'installation, ainsi que la disponibilité du path demandé, la disponibilité du dossier final de l'application et la taille des mots de passe le cas échéant.
+
+ N'oubliez pas qu'en cas d'erreur d'installation le script de suppression sera lancé automatiquement par la cli yunohost.
+
 #### YEP 2.5 - Copier correctement des fichiers   | brouillon | manuel | WORKING |
 #### YEP 2.6 - Annuler l'action si les valeurs d'entrées sont incorrectes   | validé | manuel | WORKING |
 Chaque script devrait vérifier que les valeurs d'entrées sont correctes.
