@@ -47,7 +47,7 @@ Chaque YEP est associée à :
 | YEP 2.11 | Utiliser une variable plutôt que l'app id directement  | validé | manuel | OFFICIAL (9) |
 | YEP 2.12 | Utiliser les commandes pratiques (helpers)  | validé | auto | OFFICIAL (5) |
 | YEP 2.13 | Traduire le package en anglais   | brouillon | manuel | OFFICIAL (9) |
-| YEP 2.14 | Remplir correctement un fichier de conf   | brouillon | manuel | OFFICIAL (?) |
+| YEP 2.14 | Remplir correctement un fichier de conf   | brouillon | manuel | OFFICIAL (9) |
 | YEP 2.15 | Suivre les instructions d'installation de l'application   | validé | manuel | OFFICIAL (1) |
 | YEP 2.16 | Vérifier la disponibilité des dépendances sur ARM, x86 et x64   | validé | manuel | OFFICIAL (8) |
 | YEP 2.17 | Prendre en compte la version d'origine lors des mises à jour   | validé | manuel | OFFICIAL (9) |
@@ -63,9 +63,9 @@ Chaque YEP est associée à :
 | YEP 3.1 | Ne pas demander ou stocker de mot de passe LDAP   | brouillon | manuel | NOTWORKING (?) |
 | YEP 3.2 | Ouvrir un port correctement   | brouillon | manuel | WORKING (7) |
 | YEP 3.3 | Faciliter le contrôle de l'intégrité des sources   | brouillon | manuel | OFFICIAL (6) |
-| YEP 3.4 | Isoler l'app   | brouillon | manuel | OFFICIAL (?) |
+| YEP 3.4 | Isoler l'app   | brouillon | manuel | OFFICIAL (8) |
 | YEP 3.5 | Suivre les recommendations de la documentation de l'app   | validé | manuel | OFFICIAL (6) |
-| YEP 3.6 | Mettre à jour les versions contenant des CVE   | draft | manuel | OFFICIAL (?) |
+| YEP 3.6 | Mettre à jour les versions contenant des CVE   | draft | manuel | OFFICIAL (6) |
 | | | | | |
 | **YEP 4** | **Intégrer une app** | | | |
 | 4.1 | Lier au ldap   | validé | manuel | OFFICIAL (4) |
