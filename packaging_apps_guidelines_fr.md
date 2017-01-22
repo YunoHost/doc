@@ -23,8 +23,8 @@ Chaque YEP est associée à :
 | **YEP 1** | **Communiquer avec la communauté** | | | |
 | YEP 1.1 | Nommer son app et son dépôt  | validé | manuel | NOTWORKING |
 | YEP 1.2 | Inscrire l'app sur un "répertoire" connu  | validé | manuel | NOTWORKING |
-| YEP 1.3 | Indiquer la licence associée au paquet  | brouillon | AUTO | WORKING |
-| YEP 1.4 | Informer sur l'intention de maintenir un paquet   | brouillon | manuel | WORKING |
+| YEP 1.3 | Indiquer la licence associée au paquet  | validé | AUTO | WORKING |
+| YEP 1.4 | Informer sur l'intention de maintenir un paquet   | brouillon | manuel | OFFICIAL |
 | YEP 1.5 | Mettre à jour régulièrement le statut de l'app  | brouillon | manuel | WORKING |
 | YEP 1.6 | Se tenir informé sur l'évolution du packaging d'apps  | validé | manuel | OFFICIAL |
 | YEP 1.7 | Ajouter l'app à l'[organisation YunoHost-Apps](https://github.com/YunoHost-Apps)  | validé | manuel | OFFICIAL |
@@ -135,7 +135,10 @@ Quelques liens intéressants pour aider au choix de licence:
 * [La documentation sur les licences du projet GNU](https://www.gnu.org/licenses/licenses.fr.html)
 * [Un guide du projet GNU pour aider au choix d'une licence](https://www.gnu.org/licenses/license-recommendations.fr.html)
 
-#### YEP 1.4 - Informer sur l'intention de maintenir un paquet   | brouillon | manuel | WORKING |
+#### YEP 1.4 - Informer sur l'intention de maintenir un paquet   | brouillon | manuel | OFFICIAL |
+Le mainteneur de l'application doit s'engager à maintenir son app sur la durée si il souhaite que celle-ci rejoigne la liste des applications officielles.  
+Cela implique de surveiller les mises à jour de l'application upstream, de respecter les nouvelles règles de packaging et de répondre aux demandes des utilisateurs.
+
 #### YEP 1.5 - Mettre à jour régulièrement le statut de l'app  | brouillon | manuel | WORKING |
 #### YEP 1.6 - Se tenir informé sur l'évolution du packaging d'apps  | validé | manuel | OFFICIAL |
 Afin de suivre l'évolution du format de packaging ainsi que des bonnes pratiques, il est recommandé de:
@@ -206,6 +209,14 @@ Cependant, il faudra porter une attention particulière à l'affichage correct d
 Lors de l'installation, il est nécessaire de sauvegarder chaque réponse aux questions du manifeste. En effet, même si au début il n'est pas nécessaire d'écrire un script de mise à jour, par la suite ce sera sans doute le cas. Or, sans les informations initiales, la mise à jour peut être plus fastidieuse.
 
 #### YEP 2.4 - Détecter et gérer les erreurs  | brouillon | manuel | WORKING |
+Les scripts install, upgrade, backup et restore doivent détecter les erreurs pour éviter la poursuite des scripts en cas d'erreur bloquante ou d'usage de variable vide.  
+L'usage de trap et de set -eu est recommandé pour détecter et traiter les erreurs ([Discussion en cours à ce sujet](https://forum.yunohost.org/t/gestion-des-erreurs-set-e-et-ou-trap/2249/5))  
+Il est nécessaire également de vérifier le contenu des variables avant les suppressions du script remove. Par exemple un `rm -Rf /var/www/$app` avec `$app` vide aurait un résultat désastreux.
+
+Au début des scripts, avant toutes modifications, il faut vérifier l'existence des utilisateurs mentionné à l'installation, ainsi que la disponibilité du path demandé, la disponibilité du dossier final de l'application et la taille des mots de passe le cas échéant.
+
+ N'oubliez pas qu'en cas d'erreur d'installation le script de suppression sera lancé automatiquement par la cli yunohost.
+
 #### YEP 2.5 - Copier correctement des fichiers   | brouillon | manuel | WORKING |
 #### YEP 2.6 - Annuler l'action si les valeurs d'entrées sont incorrectes   | validé | manuel | WORKING |
 Chaque script devrait vérifier que les valeurs d'entrées sont correctes.
@@ -224,10 +235,16 @@ Certaines instructions nécessitent les droits sudo. Il faut dans ce cas ne pas 
 Dans d'autres cas il est nécessaire de donner des droits à l'aide de chmod et de chown.
 
 #### YEP 2.8 - Modifier correctement une configuration système   | brouillon | manuel | WORKING |
+Les modifications du système doivent être réversible pour que la suppression de l'application soit sans conséquences pour le système ne laisse pas de résidus.  
+Pour celà, il faut recourir autant que possible aux dossiers `.d` des configurations système. Où lorsqu'il n'est pas possible de faire autrement, d'indiquer clairement la configuration modifiée par une application et s'assurer que les modifications seront retirées lors de sa suppression.
+
 #### YEP 2.9 - Enlever toutes traces de l'app lors de la suppression   | brouillon | manuel | WORKING |
 À l’exception de dépendances (pax exemple : paquets Debian) utilisés par d’autres services ou applications.
 
 #### YEP 2.10 - Configurer les logs de l'application   | brouillon | manuel | WORKING |
+Si possible, l'application doit utiliser un fichier de log, qui sera de préférence dans /var/log.  
+Si le log est mis en place par le script install et non par l'application elle-même, un fichier de configuration pour log-rotate devra être ajouté pour gérer les rotations des logs de l'application.
+
 #### YEP 2.11 - Utiliser une variable plutôt que l'app id directement  | validé | manuel | OFFICIAL |
 Il est conseillé de rendre les scripts le plus générique possible, un bon moyen d'y parvenir est d'utiliser une variable pour le nom de l'app afin d'éviter qu'il se retrouve partout dans les scripts. Ainsi, un autre packageur pourra plus facilement se servir du script pour une autre app.
 
@@ -261,7 +278,7 @@ Bien souvent une web app s'installe à partir de formulaires affichés sur une p
 Il convient donc de vérifier si l'application ne propose pas une solution d'installation en ligne de commande.
 
 Si ce n'est pas le cas, il convient d'utiliser l'option -H de curl. En effet, dans certains cas la redirection DNS pourrait ne pas être active au moment de l'installation.
-```
+```bash
 curl -kL -H "Host: $domain" --data "&param1=Text1&param2=text2" https://localhost$path/install.php > /dev/null 2>&1
 ```
 
@@ -282,7 +299,12 @@ Certains utilisateurs ont remplacé ce carré par un script ajoutant un menu en 
 ### YEP 3 - Sécuriser une app
 #### YEP 3.1 - Ne pas demander ou stocker de mot de passe LDAP   | brouillon | manuel | NOTWORKING |
 #### YEP 3.2 - Ouvrir un port correctement   | brouillon | manuel | WORKING |
+Si l'application nécessite l'ouverture d'un port, il est nécessaire de vérifier préalablement que ce port n'est pas déjà utilisé par une autre application. Le cas échéant, le script install doit être capable de trouver un autre port disponible.  
+Il convient également de vérifier si le port doit être ouvert sur le routeur, au delà du réseau local. Si ce n'est pas le cas, l'argument `--no-upnp` doit être ajouté à la commande `yunohost firewall allow` afin de limiter l'ouverture du port au réseau local uniquement.
+
 #### YEP 3.3 - Faciliter le contrôle de l'intégrité des sources   | brouillon | manuel | OFFICIAL |
+L'application upstream ne doit pas être intégrée en tarball dans le dossier source du package, car cela alourdit le package et le dépôt git et ne permet pas la vérification de l'intégrité de la source.  
+La source doit donc être téléchargée depuis le site officiel, puis son intégritée doit être vérifiée avant de l'installer.
 
 #### YEP 3.4 - Isoler l'app   | brouillon | manuel | OFFICIAL |
 Afin d'éviter des effets de bords en cas de compromission éventuelle de l'application, celle-ci doit être isolée pour de ne pas risquer d'impacter les autres applications.  
@@ -296,6 +318,11 @@ En général, une application propose une documentation afin d'aider les adminis
 Le mainteneur de paquet doit toutefois rester vigilant, certaines documentations pouvant être erronées ou insuffisante.
 
 #### YEP 3.6 - Mettre à jour les versions contenant des CVE   | draft | manuel | OFFICIAL |
+Les [CVE](https://fr.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures), ou Common Vulnerabilities and Exposures, recensent les failles de sécurités communes aux applications. Les corrections de ces failles peuvent concerner l'application et il est important dans ce cas de suivre au plus près ces mises à jour.  
+Plus généralement, l'application peut proposer un correctif pour une faille spécifique à elle-même.  
+De manière générale, cette YEP implique de suivre un canal d'information pour suivre les mises à jour de sécurité de l'application et réagir rapidement en mettant à jour le package en conséquence.
+
+Comme précisé dans la YEP 1.7, si un correctif de sécurité doit être déployé en urgence, un autre membre de YunoHost peut être amené à faire un commit sur le package si nécessaire.
 
 ### YEP 4 - Intégrer une app
 Cette meta YEP traite de l'intégration d'une app avec l'environnement YunoHost. Une bonne intégration est en général un gage de qualité et de confort pour les utilisateurs.
@@ -313,7 +340,11 @@ Au besoin, SSOwat permet de sécuriser l'accès à une ou plusieurs parties de l
 Lorsque l'on clique sur une action de déconnexion au sein de l'app, celle-ci devrait déconnecter l'utilisateur du SSO. Sinon, il y a un risque que l'utilisateur laisse par mégarde une session ouverte.
 
 #### YEP 4.3 - Fournir un script de sauvegarde YunoHost fonctionnel   | validé | auto | OFFICIAL |
+L'application doit disposer d'un script backup pour permettre aux utilisateurs de sauvegarder l'application, sa configuration et ses données.
+
 #### YEP 4.4 - Fournir un script de restauration YunoHost fonctionnel   | validé | auto | OFFICIAL |
+L'application doit disposer d'un script restore pour permettre aux utilisateurs de restaurer une application sauvegardée préalablement avec le script backup.
+
 #### YEP 4.5 - Utiliser les hooks   | validé | manuel | OPTIONAL |
 YunoHost offre la possibilité de lancer des actions à chaque traitement effectué par la ligne de commande. Ceci peut être pratique dans de nombreux cas.
 

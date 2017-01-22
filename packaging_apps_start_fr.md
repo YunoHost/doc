@@ -1,3 +1,5 @@
+# Introduction au packaging
+
 Petite introduction au packaging d'application, pour comprendre de quoi nous parlons et comment ça marche.
 Cette documentation s'adresse avant tout aux packageurs débutants qui ne sont pas à l'aise avec les concepts de shell, parsing et administration système de manière générale.
 
