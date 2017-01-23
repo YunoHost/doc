@@ -1,6 +1,7 @@
 # DKIM
 
-<div class="alert alert-danger">Cette page n’est plus à jour. Le DKIM est a présent intégré par défaut dans YunoHost avec [Rspamd](https://rspamd.com)/rmilter.</div>
+<div class="alert alert-danger">Cette page n’est plus à jour. Le DKIM est a présent intégré par défaut dans YunoHost avec [Rspamd](https://rspamd.com)/rmilter.
+Il suffit désormais de créer une zone DNS en s'inspirant du fichier /etc/dkim/yourdomainname.tld.mail.txt</div>
 
 Le protocole SMTP ne prévoit pas de mécanisme de vérification de l’expéditeur. Il est donc possible d’envoyer un courrier avec une adresse d’expéditeur factice ou usurpée. SPF et DKIM sont deux mécanismes d’authentification de l’expéditeur d’un email.
 
