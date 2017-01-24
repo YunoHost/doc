@@ -34,15 +34,17 @@ On peut donc le considérer comme une distribution, comprenant les logiciels sui
 <img src="/images/rspamd.png">
 <img src="/images/XMPP_logo.png" width=80>
 <img src="/images/metronome-logo-180x180.png" width=80>
+<img src="/images/Let's_Encrypt.svg">
 
-* [Nginx](http://nginx.org/) : un serveur web
-* [Postfix](http://www.postfix.org/) : un serveur de messagerie électronique SMTP
-* [Dovecot](http://www.dovecot.org/) : un serveur de messagerie électronique IMAP et POP3
-* [Rspamd](https://rspamd.com/) : un antispam
-* [Metronome](http://www.lightwitch.org/metronome) : un serveur XMPP
-* [OpenLDAP](http://www.openldap.org/) : un système d’annuaire
-* [Dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html) : un serveur de DNS
-* [SSOwat](https://github.com/Kloadut/SSOwat) : un (SSO) système d’authentification web
+* [Nginx](http://nginx.org/): a Web server
+* [Postfix](http://www.postfix.org/): an SMTP e-mail server
+* [Dovecot](http://www.dovecot.org/): an IMAP and a POP3 e-mail server
+* [Rspamd](https://rspamd.com/): an e-mail spam filtering
+* [Metronome](http://www.lightwitch.org/metronome): an XMPP server
+* [OpenLDAP](http://www.openldap.org/): an LDAP server
+* [Dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html): a DNS server
+* [SSOwat](https://github.com/Kloadut/SSOwat): a Single Sign On (SSO) web authentication system
+- [Let's Encrypt](https://letsencrypt.org): un gestionnaire de certificats
 
 ---
 
