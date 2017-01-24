@@ -2,6 +2,13 @@
 
 Exemple de configuration des entrées de la zone DNS pour le nom de domaine `domain.tld` :
 
+#### Utiliser la commande yunohost pour générer ma zone DNS
+
+Connecter vous à votre serveur et lancer la commande suivante.
+```bash
+yunohost domain dns-conf domain.tld
+```
+
 #### Redirection du nom de domaine vers l’adresse IP
 ```bash
 @ 1800 IN A 111.222.333.444 # (Minimum) IPv4
@@ -39,6 +46,8 @@ vjud 1800 IN CNAME @
 ```
 <br />
 
+Vous devriez aussi consulter [la documentation de DKIM](#/dkim_fr). DKIM permet d'éviter que vos mails soit considérés comme SPAM et DKIM nécessite une entrée spécifique dans votre zone DNS.
+
 #### Mise en place
 Remplacez :
 * « `domain.tld` » par votre propre nom de domaine en conservant le point à la fin.
@@ -53,5 +62,5 @@ Les entrées DNS sous domaines, XMPP et email ne fonctionnent pas sans une redir
 <div class="alert alert-warning">**Attention :** le **@** représente le nom de domaine par défaut que l’on est en train de définir, certains bureaux d’enregistrement ne l’acceptent pas (ex : OVH). Il faut donc remplacer le « @ » par votre nom de domaine (domain.tld**.**) sans oublier un point à la fin.</div>
 
 #### Time to live
-Toutes les entrées DNS ci-dessus ont la valeur `1800` (30 minutes). Elle correspond au 
+Toutes les entrées DNS ci-dessus ont la valeur `1800` (30 minutes). Elle correspond au
 [Time to live (TTL)](https://fr.wikipedia.org/wiki/Time_to_Live#Le_Time_to_Live_dans_le_DNS) qui représente et indique le temps, en secondes, durant lequel l’entrée DNS peut être conservée en cache. Passé ce délai, l’information doit être considérée comme obsolète et doit être mise à jour.

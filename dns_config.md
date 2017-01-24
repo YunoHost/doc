@@ -2,6 +2,13 @@
 
 Sample DNS zone configuration for `domain.tld` domain name:
 
+#### Use yunohost command to generate my DNS ZONE
+
+Connect to your server using yunohost and run the following as root
+```bash
+yunohost domain dns-conf domain.tld
+```
+
 #### Redirection from the domain name to the IP address
 ```bash
 @ 1800 IN A 111.222.333.444 # (Minimal) IPv4
@@ -37,6 +44,8 @@ vjud 1800 IN CNAME @
 @ 1800 IN MX 10 domain.tld. # (Minimal)
 @ 1800 IN TXT "v=spf1 a mx -all"
 ```
+
+You should also consult the [DKIM documentation](#/dkim). DKIM allows yours mails not to be considered by spam by other mail service. In fact DKIM ask you to add an entry in your zone.
 
 #### Set up
 Replace:
