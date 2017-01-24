@@ -36,7 +36,6 @@ On peut donc le considérer comme une distribution, comprenant les logiciels sui
 <img src="/images/metronome-logo-180x180.png" width=80>
 <img src="/images/Let's_Encrypt.svg">
 
-
 * [Nginx](http://nginx.org/) : un serveur web
 * [Postfix](http://www.postfix.org/) : un serveur de messagerie électronique SMTP
 * [Dovecot](http://www.dovecot.org/) : un serveur de messagerie électronique IMAP et POP3
