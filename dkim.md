@@ -1,6 +1,7 @@
 # DKIM
 
 <div class="alert alert-danger">This page is deprecated. DKIM is now by default integrated in YunoHost with [Rspamd](https://rspamd.com)/rmilter.</div>
+Now you just need to add a zone in your DNS configuration according to the file /etc/dkim/yourdomainname.tld.mail.txt</div>
 
 
 ##### Note:
