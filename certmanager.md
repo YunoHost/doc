@@ -2,6 +2,8 @@
 Certificate management
 ======================
 
+<div class="alert alert-danger">This feature is only available on the beta for now, it should be released quite soon</div>
+
 Managing certificates with Yunohost
 -----------------------------------
 
