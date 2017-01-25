@@ -5,7 +5,7 @@ Pour installer YunoHost sur une carte OLinuXino, le plus simple est d'utiliser l
 </div>
 
 <div class="alert alert-warning" markdown="1">
-Si vous souhaitez mettre en place ou obtenir une Brique Internet complète (Carte Olimex + YunoHost + VPN associatif neutre + Hotspot Wifi), il est dans ce cas préférable d'utiliser [la procédure d'installation du projet La Brique Internet](https://install.labriqueinter.net).
+Si vous souhaitez mettre en place ou obtenir une Brique Internet complète (Carte Olimex + YunoHost + VPN associatif neutre + Hotspot Wifi), nous vous conseillons de contacter [le FAI associatif le plus proche de chez vous](https://labriqueinter.net/#obtenir-une-brique), la Brique Internet déconseillant **fortement** de faire l'installation vous même. Si vous voulez néanmoins le faire, vous pouvez utiliser [la procédure d'installation du projet La Brique Internet](https://install.labriqueinter.net).
 
 Pour faire votre choix, nous vous conseillons de rencontrer votre FAI associatif local et de consulter [les avantages d'un VPN neutre dans le cadre de l'auto-hébergement](/vpn_advantage_fr).
 </div>

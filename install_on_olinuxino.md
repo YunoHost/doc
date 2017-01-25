@@ -5,7 +5,7 @@ The simplest way to install YunoHost on an OLinuXino board is to use the image p
 </div>
 
 <div class="alert alert-warning" markdown="1">
-If you aim to setup a full Internet Cube (OLinuXino boad + YunoHost + VPN from neutral ISP + Wifi access point), you should use the [the install procedure on the Internet Cube project website](https://install.labriqueinter.net).
+If you aim to setup a full Internet Cube (OLinuXino boad + YunoHost + VPN from neutral ISP + Wifi access point), you should contact your [local associative ISP](https://internetcu.be/#obtenir-une-brique), the Internet Cube really advice **against** installing it yourself. If you still really want to do it by yourself, you can try [the install procedure on the Internet Cube project website](https://install.labriqueinter.net).
 
 It is recommended to read about the [advantages of using a neutral VPN in the context of self-hosting](/vpn_advantage) and to contact your local associative ISP (if you have one).
 </div>
