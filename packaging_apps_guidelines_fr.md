@@ -257,6 +257,9 @@ Pour plus d'informations :
 
 #### YEP 2.13 - Traduire le paquet en anglais   | brouillon | manuel | OFFICIAL |
 #### YEP 2.14 - Remplir correctement un fichier de conf   | brouillon | manuel | OFFICIAL |
+*Juste pour éclaircir un peu cette YEP, mais ça reste à l'état de brouillon.*
+Le but est de trouver une méthode plus fiable que sed pour modifier les fichiers de configuration. sed pouvant éventuellement avoir des effets de bord en modifiant des parties non désirées du fichier de configuration, en particulier avec l'usage de regex.
+
 #### YEP 2.15 - Suivre les instructions d'installation de l'application   | validé | manuel | OFFICIAL |
 
 #### YEP 2.16 - Vérifier la disponibilité des dépendances sur ARM, x86 et x64   | validé | manuel | OFFICIAL |
