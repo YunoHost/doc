@@ -30,7 +30,7 @@ Plusieurs choix s’offrent à vous. Notez que vous pouvez cumuler ces solutions
 1. Vous pouvez utiliser le service de DNS de YunoHost, qui s’occupera de configurer tout seul les DNS de votre instance YunoHost. Vous devrez en revanche choisir un domaine se terminant par `.nohost.me` ou `.noho.st`, ce qui peut être inconvenant (vous aurez alors des adresses email telles que `jean@mon-serveur.noho.st`).
 **C’est la méthode recommandée si vous débutez.**
 
-2. Vous pouvez utiliser le service de DNS de votre **registrar** (Gandi, OVH, BookMyName ou autre) pour configurer vos noms de domaine. Voici la [configuration DNS standard](/dns_config_fr).    
+2. Vous pouvez utiliser le service de DNS de votre **registrar** (Gandi, OVH, BookMyName ou autre) pour configurer vos noms de domaine. Voici la [configuration DNS standard](/dns_config_fr). Il est aussi possible d'utiliser une redirection DNS locale, plus d'infos sur comment [Accéder à son serveur depuis le réseau local](/dns_local_network_fr).
 Vous pouvez également consulter les documentations spécifiques à ces différents [bureaux d’enregistrement](/registrar_fr) : [Gandi](http://gandi.net), [OVH](/OVH_fr) ou [BookMyName](http://bookmyname.com).
 
 **Attention** : Si vous choisissez ce mode de fonctionnement, vous aurez plus de flexibilité, mais rien ne sera automatique. Par exemple si vous souhaitez utiliser `webmail.mon-serveur.org`, vous devrez l’ajouter manuellement chez votre registrar.

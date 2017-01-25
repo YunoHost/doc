@@ -18,6 +18,9 @@ Vous pouvez retrouver l’adresse privée de votre serveur de différentes mani�
 - Ou depuis votre routeur ou votre box, selon son modèle.
 
 ## Configurer le DNS de la box ou du routeur
+
+L'idée ici est de créer une redirection qui sera active sur tout votre réseau. Le but est de créer une redirection DNS vers l'ip de votre serveur YunoHost dans votre box. Il faut donc accéder à l'interface de configuration de votre box et aux parametrages DNS, puis créer la redirection locale (par exemple, yunohost.local renvoi sur 192.168.21).
+
 ### Box SFR
 Si vous ne disposez toujours pas de l’adresse IP privée de votre serveur, vous pouvez la trouver sur l’interface de votre box SFR :  
     Dans l’onglet Réseau puis Général
