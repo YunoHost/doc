@@ -2,6 +2,10 @@
 
 L'installation d'un serveur chez soi étant une pratique peu courante, la plupart des connexions Internet fournies aux particuliers sont inadaptées à sa mise en pratique. Un VPN respectant la neutralité du net et fournissant une adresse IPv4 fixe et des adresses IPv6 peut permettre de contourner certaines limitations ou certaines difficultés.
 
+<div class="alert alert-warning">
+<b>Attention</b>: tous les fournisseurs VPN existants ne remplissent pas ces conditions, assurez vous bien que celui que vous choisissez les remplis.
+</div>
+
 ## Avantages
 
 ### Plug & Play
