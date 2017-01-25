@@ -32,6 +32,7 @@ It can thus be considered as a distribution, including the following software:
 <img src="/images/rspamd.png">
 <img src="/images/XMPP_logo.png" width=80>
 <img src="/images/metronome-logo-180x180.png" width=80>
+<img src="/images/Let's_Encrypt.svg">
 
 * [Nginx](http://nginx.org/): a Web server
 * [Postfix](http://www.postfix.org/): an SMTP e-mail server
@@ -41,6 +42,7 @@ It can thus be considered as a distribution, including the following software:
 * [OpenLDAP](http://www.openldap.org/): an LDAP server
 * [Dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html): a DNS server
 * [SSOwat](https://github.com/Kloadut/SSOwat): a Single Sign On (SSO) web authentication system
+- [Let's Encrypt](https://letsencrypt.org): a certificate manager
 
 ---
 
