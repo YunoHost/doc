@@ -20,28 +20,39 @@ Le matériel nécessaire :
 * Un adaptateur secteur [européen](https://www.olimex.com/Products/Power/SY0605E/) pour alimenter la carte olimex. L’alimentation via USB semble peu stable.
 * Un câble Ethernet/RJ-45 pour brancher la Brique à son routeur.
 
-Et évidemment, **un ordinateur sous GNU/Linux ou BSD**.
+Pour préparer la carte SD, un ordinateur sous GNU/Linux ou BSD est préférrable. Vous devriez pouvoir suivre les mêmes instructions avec MacOS/OSX. Sous Windows, il vous faudra utiliser l'outil décrit [ici](/copy_image_fr).
 
 ---
 
 ## Télécharger l'image
 
-Télécharger l’image ([lime1](http://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz) ou [lime2](http://repo.labriqueinter.net/labriqueinternet_A20LIME2_latest_jessie.img.tar.xz)), valider son *checksum MD5*, puis la décompresser :
+Télécharger l’image ([lime1](http://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz) ou [lime2](http://repo.labriqueinter.net/labriqueinternet_A20LIME2_latest_jessie.img.tar.xz)), vérifier son intégrité (somme de contrôle MD5), puis la décompresser :
 ```bash
-% cd /tmp/
-% wget http://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz
-% wget http://repo.labriqueinter.net/MD5SUMS
-% md5sum -c MD5SUMS
-% tar -xf labriqueinternet_*.img.tar.xz
-% mv labriqueinternet_*.img labriqueinternet.img
+cd /tmp/
+# Telecharger l'image
+wget https://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz
+
+# Verifier l'integrite (optionnel, mais recommande)
+wget -q -O - https://repo.labriqueinter.net/MD5SUMS | grep "labriqueinternet_A20LIME_latest_jessie.img.tar.xz$" > MD5SUMS
+md5sum -c MD5SUMS
+
+# Decompresser l'image
+tar -xf labriqueinternet_*.img.tar.xz
+mv labriqueinternet_*.img labriqueinternet.img
 ```
+
 ## Copier l'image sur la carte SD
 
-1. Identifier le nom de la carte micro-SD (SDNAME) en tapant la commande `ls -1 /sys/block/`, en insérant la carte micro-SD (éventuellement à l’aide d’un adaptateur) dans son ordinateur, puis en retapant la commande `ls -1 /sys/block/`. Le nom de la carte micro-SD (SDNAME) correspond à la ligne qui apparaît en plus après la seconde saisie (e.g. *sdb* ou *mmcblk0*).
+1. Identifier le nom de la carte micro-SD : 
+   - Assurez-vous que la carte n'est *pas* insérée dans l'ordinateur
+   - Tapez `ls -1 /sys/block/`
+   - Insérez la carte
+   - Retaper `ls -1 /sys/block/`
+   - Le nom de la carte correspond au nom qui apparaît en plus dans la deuxième commande. Il s'agit généralement de quelque chose comme `sdb` ou `mmcblk0`.
 
-2. Copier l’image sur la carte (remplacer *SDNAME* par le nom trouvé lors de l’étape précédente) :
+2. Copier l’image sur la carte (remplacer *SDNAME* par le nom trouvé lors de l’étape précédente). La copie peut prendre un certain temps.
 ```bash
-sudo dd if=/tmp/labriqueinternet.img of=/dev/SDNAME bs=1M
+sudo dd if=/tmp/labriqueinternet.img of=/dev/SDNAME bs=1M status=progress
 sync
 ```
 
@@ -55,19 +66,19 @@ Le premier démarrage peut prendre un peu plus d’une minute car la partition e
 ## Trouver l'ip locale de votre mini-serveur
 Récupérer l’adresse IP locale :
 
- * soit avec une commande comme `sudo arp-scan --local | grep -P '\t02'` ou bien avec la commande `sudo arp-scan --local -I wlan0 | grep -P '\t02'` si votre ordinateur est connecté en WiFi.
- * soit via l’interface du routeur listant les clients DHCP,
+ * soit avec une commande comme `sudo arp-scan --local | grep -P '\t02'`;
+ * soit via l’interface du routeur listant les clients DHCP ;
  * soit en branchant un écran en HDMI au mini-serveur, et en exécutant `ifconfig`.
 
 <div class="alert alert-info" markdown="1">
-Pour les commandes suivantes, nous admettons que l’adresse IP locale du mini-serveur est **192.168.4.2**. Remplacer par l’adresse IP précédemment déterminée.
+Pour les commandes suivantes, nous utiliser **192.168.x.y** pour désigner l'IP du serveur. Remplacez-la par l’adresse IP déterminée précédemment.
 </div>
 
 ## Changer le mot de passe root en se connectant en SSH
 
 Se connecter en SSH en root au mini-serveur, le mot de passe par défaut est **olinux** :
 ```bash
-ssh root@192.168.4.2
+ssh root@192.168.x.y
 ```
 À la première connexion, il sera demandé de changer le mot de passe : entrer à nouveau **olinux**, puis saisir deux fois le nouveau mot de passe.
 
@@ -78,21 +89,11 @@ Mettre à jour le système (environ 15 minutes) :
 apt-get update && apt-get dist-upgrade
 ```
 
-## Fixer le fichier host
-<div class="alert alert-info" markdown="1">
-Nous installons ici le mini-serveur de **michu.nohost.me**. Remplacer ce nom par le nom de domaine choisi (et comme précédemment l’IP 192.168.4.2 par celle du mini-serveur)
-</div>
-
-Mettre à jour le fichier `/etc/hosts` de son ordinateur client pour pouvoir accéder au mini-serveur en local via **michu.nohost.me**, en ajoutant à la fin :
-```bash
-192.168.4.2 michu.nohost.me
-```
-
 ## Procéder à la postinstallation
 
-Procéder à la [postinstallation](/postinstall_fr) en se connectant au mini-serveur sur https://michu.nohost.me (accepter l’exception de sécurité du certificat).
+Procéder à la [postinstallation](/postinstall_fr) en se connectant à la carte avec votre navigateur web sur https://192.168.x.y (votre navigateur vous avertira que le certificat est auto-signé, ceci est normal : vous pouvez ajouter une exception de sécurité pour ce certificat).
 <div class="alert alert-info" markdown="1">
-**Note :** il est également possible de réaliser cette étape en ligne de commande via SSH en exécutant `yunohost tools postinstall`.
+**Note :** il est également possible de réaliser la post-installation ligne de commande via SSH en exécutant `yunohost tools postinstall`.
 </div>
 
 ## (Optionnel) Installer DoctorCube
