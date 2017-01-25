@@ -58,6 +58,7 @@
            * [Forms to remove blacklisting of your IP address](blacklist_forms_en)
            * [Use DKIM](dkim)
         * Certificates
+            - [Certificates manager](certmanager_en)
             * [Add a certificate certified by an authority](/certificate)
             * [Regenerate self-signed certificate](/regenerate_certificate_en)
         * [Security](/security)

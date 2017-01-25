@@ -65,6 +65,7 @@
            * [Formulaires pour enlever son adresse IP des listes noires](blacklist_forms_fr)
            * [Mettre en place DKIM](dkim_fr)
         * Certificats
+            - [Gestionnaire de certificats](certmanager_en)
             * [Ajouter un certificat d’une autorité](/certificate_fr)
             * [Régénérer le certificat auto-signé](/regenerate_certificate_fr)
         * [Sécurité](/security_fr)
