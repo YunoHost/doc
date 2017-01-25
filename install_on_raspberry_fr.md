@@ -2,21 +2,26 @@
 
 *Toutes les autres façons d’installer YunoHost sont listées **[ici](/install_fr)**.*
 
-## Prérequis
-<img src="/images/Raspberry_Pi_2_Model_B_v1.1_front_angle_new.jpg" width=350>
-<img src="/images/micro-sd-card.jpg">
+<center>
+<img src="https://cdn.shopify.com/s/files/1/0176/3274/products/rpi2b_1024x1024.jpg" width=350>
+</center>
 
-- Un Raspberry Pi 1, 2 ou 3
-- Une carte SD de capacité minimale de **4 Go** et une certification de vitesse **class10** sont recommandées
-- Un autre ordinateur pour parcourir ce guide et accéder à votre Raspberry Pi
-- Un écran et un clavier sont recommandés pour pouvoir contrôler votre Raspberry Pi si un problème apparaît
-- Un [fournisseur d’accès correct](/isp_fr), de préférence avec une bonne vitesse d’upload
-- Les **images YunoHost pour Raspberry Pi**, disponible ici :
+<div class="alert alert-info" markdown="1">
+Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissance des [limitations liées à votre FAI](/isp). Si votre FAI est trop contraignant, il est possible d'[utiliser un VPN pour contourner ces limitations](/vpn_advantage_fr) 
+</div>
+
+## Prérequis
+
+- Un Raspberry Pi 1, 2 ou 3 ;
+- Une carte SD *classe 10* d'au moins 8 Go (par exemple une [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
+- Un adaptateur secteur pour la alimenter la carte ;
+- Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet.
+- Une des **images YunoHost pour Raspberry Pi** :
  - [Officielle, Wheezy/YunoHost 2.2 créée le 4 juin 2015](http://build.yunohost.org/yunohost4rpi2.img.7z)
  - [Non officielle Jessie/YunoHost 2.2 créée le 5 décembre 2015](https://forum.yunohost.org/t/building-a-new-image-for-raspberry-debian-jessie-fr-en/1101/2)
-- Un tutoriel d'installation basée sur YunoHost 2.4 a été écrit par AviGNU : http://avignu.wiki.tuxfamily.org/doku.php?id=documentation:yunohost-jessie
+- (Optionnel) Un écran et un clavier si il n'est pas possible de se connecter directement en SSH au Raspberry.
 
-Il y a deux façon d'installer Yunohost, soit vous pouvez repartir de zéro avec une nouvelle image ou installer manuellement :
+Pour préparer la carte SD, il est préférable d'avoir un ordinateur sous GNU/Linux ou BSD. Il devrait être possible de suivre les mêmes instructions sous MacOS/OSX. Sur Windows, il vous faudra suivre les instructions disponibles [ici](/copy_image_fr).
 
 ---
 
@@ -26,70 +31,37 @@ Il y a deux façon d'installer Yunohost, soit vous pouvez repartir de zéro avec
 
 <a class="btn btn-lg btn-default" href="/plug_and_boot_fr">2. Brancher & démarrer</a>
 
-<a class="btn btn-lg btn-default" href="/postinstall_fr">3. Post-installation</a>
+<a class="btn btn-lg btn-default" href="/ssh_fr">3. Se connecter en SSH [TODO : Cette partie n'est pas triviale et dois être détaillée comme pour OLinuXino !!]</a>
 
+<a class="btn btn-lg btn-default" href="/postinstall_fr">4. Post-installation</a>
+
+---
 
 ## Installation manuelle
 
-Utilisez cette méthode si vous ne pouvez pas repartir de zéro et utiliser une image. Attention, ces étapes sont différentes si vous installez sur un Raspberry Pi Zero !
 
-1. Installer git
-```bash
-sudo apt-get install git
-```
+0. Installez Raspbian sur la carte SD puis connectez-vous en ssh au Raspberry Pi. [TODO : Cette partie n'est pas triviale et dois être détaillée comme pour OLinuXino !!]
 
-2. Cloner le repo Yunohost install script 
-```bash
-git clone https://github.com/YunoHost/install_script /tmp/install_script
-```
-
-3. L'user root doit avoir un mot de passe. Si ce n'est pas le cas l'installation ne marchera pas:
+1. L'user root doit avoir un mot de passe. (Si ce n'est pas le cas l'installation ne marchera pas.)
 ```bash
 sudo passwd root
 ```
 
-4. Mettre à jour le Pi: 
+2. Installer git
 ```bash
-apt-get update ; apt-get dist-upgrade -y ; apt-get install rpi-update ; rpi-update ; reboot`
+sudo apt-get install git
 ```
 
-Cela va mettre à jour le Pi, puis rebooter.
-
-<div class="alert alert-info">
-<b>Raspberry Pi Zero :</b> suivez ces étapes pour une installation réussie.
-
-</div>
-
-0.1 Installez metronome manuellement:
+3. Récupérer le script d'installation de Yunohost
 ```bash
-apt-get install -y ssl-cert lua-event lua-expat lua-socket lua-sec lua-filesystem
-wget https://github.com/YunoHost/metronome/archive/debian/3.7.9+33b7572-1.zip
-unzip 3.7.9+33b7572-1.zip
-cd metronome-debian-3.7.9-33b7572-1
-dpkg-buildpackage -rfakeroot -uc -b -d
-cd ..
-dpkg -i metronome_3.7.9+33b7572-1_armhf.deb
-apt-mark hold metronome
+git clone https://github.com/YunoHost/install_script /tmp/install_script
 ```
 
-4. Executer le script d' installation
+4. Executez le script d' installation
 ```bash
 cd /tmp/install_script && sudo ./install_yunohost
 ```
 
 ---
 
-### Recommandé après la post-installation
-
-* Se connecter en [ssh](ssh_fr) : **root@IP.DU.RPI** (mot de passe : **yunohost**)
-* Changer le mot de passe root : ```passwd root```
-* Mettre à jour le système d’exploitation : ```apt-get update && apt-get dist-upgrade && rpi-update```
-* Configurer la langue, le clavier et le fuseau horaire avec l'outil **raspi-config**
-
----
-
-#### Créer une image
-* [Créer une image pour Raspberry](/build_arm_image_fr)
-
----
-***Si vous avez besoin d’aide lors de ces étapes, n’hésitez pas à utiliser les différents [moyens de support](/support_fr).***
+***Si vous avez besoin d’aide lors de ces étapes, n’hésitez pas à utiliser les différents [outils de support](/support_fr).***
