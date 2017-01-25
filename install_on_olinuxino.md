@@ -1,106 +1,111 @@
-# Installation sur une carte OlinuXino
+# Install on an OlinuXino board
 
 <div class="alert alert-info" markdown="1">
-Pour installer YunoHost sur une carte OLinuXino, le plus simple est d'utiliser l'image du projet [Site du projet *La Brique Internet*](http://labriqueinter.net). Il s'agit d'une image YunoHost qui est actuellement spécifiquement destinée aux cartes OLinuXino.
+The simplest way to install YunoHost on an OLinuXino board is to use the image provided by the [*Internet Cube project*](http://labriqueinter.net). It's an image specifically designed for the OLinuXino boards.
 </div>
 
 <div class="alert alert-warning" markdown="1">
-Si vous souhaitez mettre en place ou obtenir une Brique Internet complète (Carte Olimex + YunoHost + VPN associatif neutre + Hotspot Wifi), il est dans ce cas préférable d'utiliser [la procédure d'installation du projet La Brique Internet](https://install.labriqueinter.net).
+If you aim to setup a full Internet Cube (OLinuXino boad + YunoHost + VPN from neutral ISP + Wifi access point), you should use the [the install procedure on the Internet Cube project website](https://install.labriqueinter.net).
 
-Pour faire votre choix, nous vous conseillons de rencontrer votre FAI associatif local et de consulter [les avantages d'un VPN neutre dans le cadre de l'auto-hébergement](/vpn_advantage_fr).
+It is recommended to read about the [advantages of using a neutral VPN in the context of self-hosting](/vpn_advantage) and to contact your local associative ISP (if you have one).
 </div>
 
-## Prérequis
+## Prerequisites
 
-Le matériel nécessaire :
-* Un mini-serveur Olimex :
+* One of these OLinuXino boards
  * [A20-OLinuXino-LIME](https://www.olimex.com/Products/OLinuXino/A20/A20-OLinuXino-LIME/open-source-hardware)
  * [A20-OLinuXino-LIME2](https://www.olimex.com/Products/OLinuXino/A20/A20-OLinuXino-LIME2/open-source-hardware)
-* Une carte micro-SD (des [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO) pour des raisons de performance/stabilité).
-* Un adaptateur secteur [européen](https://www.olimex.com/Products/Power/SY0605E/) pour alimenter la carte olimex. L’alimentation via USB semble peu stable.
-* Un câble Ethernet/RJ-45 pour brancher la Brique à son routeur.
+* A Micro-SD card ([Transcend 300x](https://www.amazon.com/Transcend-MicroSDHC-Class10-Adapter-TS32GUSDU1/dp/B00APCMMDG/) show good performance and stability).
+* A power supply ([european one](https://www.olimex.com/Products/Power/SY0605E/)) for the board. (Supply through a USB cable is not stable.)
+* An ethernet/RJ-45 cable to connect the board to your internet box / router.
 
-Et évidemment, **un ordinateur sous GNU/Linux ou BSD**.
+To prepare the SD card, a computer with GNU/Linux or BSD is preferable. You should be able to follow the same instructions on MacOS/OSX. On Windows, you will need to use the tool decribed [here](/copy_image).
 
 ---
 
-## Télécharger l'image
+## Download the image
 
-Télécharger l’image ([lime1](http://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz) ou [lime2](http://repo.labriqueinter.net/labriqueinternet_A20LIME2_latest_jessie.img.tar.xz)), valider son *checksum MD5*, puis la décompresser :
+Download the image ([LIME1](http://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz) or [LIME2](http://repo.labriqueinter.net/labriqueinternet_A20LIME2_latest_jessie.img.tar.xz)), check its integrity (*MD5 checksum*), and uncompress it :
 ```bash
-% cd /tmp/
-% wget http://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz
-% wget http://repo.labriqueinter.net/MD5SUMS
-% md5sum -c MD5SUMS
-% tar -xf labriqueinternet_*.img.tar.xz
-% mv labriqueinternet_*.img labriqueinternet.img
+cd /tmp/
+# Download image
+wget https://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz
+
+# Integrity check (optionnal, but recommended)
+wget -q -O - https://repo.labriqueinter.net/MD5SUMS | grep "labriqueinternet_A20LIME_latest_jessie.img.tar.xz$" > MD5SUMS
+md5sum -c MD5SUMS
+
+# Uncompress image
+tar -xf labriqueinternet_*.img.tar.xz
+mv labriqueinternet_*.img labriqueinternet.img
 ```
-## Copier l'image sur la carte SD
 
-1. Identifier le nom de la carte micro-SD (SDNAME) en tapant la commande `ls -1 /sys/block/`, en insérant la carte micro-SD (éventuellement à l’aide d’un adaptateur) dans son ordinateur, puis en retapant la commande `ls -1 /sys/block/`. Le nom de la carte micro-SD (SDNAME) correspond à la ligne qui apparaît en plus après la seconde saisie (e.g. *sdb* ou *mmcblk0*).
+## Copy image to SD card
 
-2. Copier l’image sur la carte (remplacer *SDNAME* par le nom trouvé lors de l’étape précédente) :
+1. Identify the name of the card : 
+    - Make sure the SD card is *not* plugged in the computer
+    - Run the command `ls -1 /sys/block/`
+    - Insert the SD card in the computer (maybe 
+    - Run the command `ls -1 /sys/block/` again
+    - The name of your card (SDNAME) is the one present in the what's returned in the second command but not in the first. It's usually something like `sdb` or `mmcblk0`.
+
+2. Copy the image to your card (replace SDNAME by the name of your card, found in the previous step). Command will take a while.
 ```bash
-sudo dd if=/tmp/labriqueinternet.img of=/dev/SDNAME bs=1M
+sudo dd if=/tmp/labriqueinternet.img of=/dev/SDNAME bs=1M status=progress
 sync
 ```
 
-## Brancher & démarrer
+## Plug and boot
 
-Insérer la carte micro-SD dans la carte OLinuXino, connecter la carte OLinuXino à votre routeur avec le câble Ethernet, puis brancher l’alimentation. La carte démarre normalement toute seule, et les LEDs du port Ethernet se mettent à clignoter au bout de dix secondes maximum.
+Insert the card in the OLinuXino board, connect it to your router with the Ethernet cable, and plug the power supply. Your board will boot (give it a few seconds) and the LEDs around the Ethernet port should start blinking.
 <div class="alert alert-warning" markdown="1">
-Le premier démarrage peut prendre un peu plus d’une minute car la partition est redimensionnée et le serveur est redémarré automatiquement.
+The first boot can take a little more than one minute because the partition is being resized and the board rebooted automatically.
 </div>
 
-## Trouver l'ip locale de votre mini-serveur
-Récupérer l’adresse IP locale :
+## Find the local IP of your server
 
- * soit avec une commande comme `sudo arp-scan --local | grep -P '\t02'` ou bien avec la commande `sudo arp-scan --local -I wlan0 | grep -P '\t02'` si votre ordinateur est connecté en WiFi.
- * soit via l’interface du routeur listant les clients DHCP,
- * soit en branchant un écran en HDMI au mini-serveur, et en exécutant `ifconfig`.
+Get the local IP of your OLinuXino board :
+
+ * either using `sudo arp-scan --local | grep -P '\t02'` ;
+ * either using the router interface by listing the DHCP clients ;
+ * either by pluging an HDMI screen on the OLinuXino, logging in and typing `ifconfig`.
 
 <div class="alert alert-info" markdown="1">
-Pour les commandes suivantes, nous admettons que l’adresse IP locale du mini-serveur est **192.168.4.2**. Remplacer par l’adresse IP précédemment déterminée.
+In the following commands, we refer to the board's IP with **192.168.x.y**. You should replace it with the local IP you found.
 </div>
 
-## Changer le mot de passe root en se connectant en SSH
+## Connect through SSH and change root password
 
-Se connecter en SSH en root au mini-serveur, le mot de passe par défaut est **olinux** :
+Connect to your server with
 ```bash
-ssh root@192.168.4.2
+ssh root@192.168.x.y
 ```
-À la première connexion, il sera demandé de changer le mot de passe : entrer à nouveau **olinux**, puis saisir deux fois le nouveau mot de passe.
+The default password is **olinux**.
 
-## Mettre à jour le serveur
+After connecting, you will be asked to changed the root password. First, enter **olinux** *again* (current password), then type the new password two times.
 
-Mettre à jour le système (environ 15 minutes) :
+## Update your server
+
+Update your server with the following commands. It can take around 15 minutes.
 ```bash
 apt-get update && apt-get dist-upgrade
 ```
 
-## Fixer le fichier host
+## Proceed to post-installation
+
+Proceed to [post-installation](/postinstall) by connecting with your browser to https://192.168.x.y (you browser will warn you about the certificate being self-signed, but you can add/accept the certificate exception).
 <div class="alert alert-info" markdown="1">
-Nous installons ici le mini-serveur de **michu.nohost.me**. Remplacer ce nom par le nom de domaine choisi (et comme précédemment l’IP 192.168.4.2 par celle du mini-serveur)
+**Note :** it is also possibled to do the post-installation step through command line in SSH, with `yunohost tools postinstall`.
 </div>
 
-Mettre à jour le fichier `/etc/hosts` de son ordinateur client pour pouvoir accéder au mini-serveur en local via **michu.nohost.me**, en ajoutant à la fin :
-```bash
-192.168.4.2 michu.nohost.me
-```
+## (Optionnel) Install DoctorCube
 
-## Procéder à la postinstallation
+If you want to benefit automatically from fixes and configuration specific to the Internet Cube, you can install the DoctorCube app.
 
-Procéder à la [postinstallation](/postinstall_fr) en se connectant au mini-serveur sur https://michu.nohost.me (accepter l’exception de sécurité du certificat).
-<div class="alert alert-info" markdown="1">
-**Note :** il est également possible de réaliser cette étape en ligne de commande via SSH en exécutant `yunohost tools postinstall`.
-</div>
-
-## (Optionnel) Installer DoctorCube
-
-Si vous souhaitez bénéficier automatiquement des corrections de l'image du projet La Brique Internet, vous pouvez installez l'application dédiée DoctorCube.
-
-1. Ajoutez le dépôt d'application du projet La Brique Internet
+1. Add the Internet Cube repository :
 ```bash
 yunohost app fetchlist -n labriqueinternet -u https://labriqueinter.net/apps/labriqueinternet.json
 ```
-2. Dans l'administration web, cliquez sur la catégorie "Applications", puis installez l'application DoctorCube qui fournie des configurations et des fixs spécifiques à la brique. L'installation de DoctorCube peut prendre de nombreuses minutes. Vous n'êtes pas obligé de rester sur la page web.
+2. In the web administration interface, click on "Applications", then install the DoctorCube app. The installation can be pretty long, but you can leave the page anyway.
+
+
