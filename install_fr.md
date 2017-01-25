@@ -6,29 +6,20 @@ Cette page liste plusieurs types d’installations, classés par catégories.
 
 ---
 
-<div class="row">
-
-<div class="col col-md-9">
 <h1 style="font-weight: 100">Essayer</h1>
 
-<div class="col col-md-4 text-center">
+<div class="row">
+
+<div class="col col-md-3 text-center">
 <a href="/try_fr"><img height=150 src="/images/logo.png" style="vertical-align:bottom"><b><p>Serveur de démo</p></b></a>
 </div>
 
-<div class="col col-md-4 text-center">
+<div class="col col-md-3 text-center">
 <a href="/try_at_home_fr"><img src="/images/usb_key.png" height=150 style="vertical-align:bottom"><b><p>Essayer avec une Live USB</p></b></a>
 </div>
 
-<div class="col col-md-4 text-center">
+<div class="col col-md-3 text-center">
 <a href="/install_on_virtualbox_fr"><img src="/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>Essayer dans une machine virtuelle</p></b></a>
-</div>
-</div>
-<div class="col col-md-3">
-<h1 style="font-weight: 100" class="text-right">À l'aide !</h1>
-<div class="col col-md-12 text-center">
-<a href="/where_to_start_fr"><img height=150 src="http://englishconnection.com.br/arquivos/files/2015/03/meme2.png" style="vertical-align:bottom;"><b><p>Vous ne savez pas par où commencer ?</p></b></a>
-</div>
-
 </div>
 
 </div>
@@ -86,7 +77,7 @@ Cette page liste plusieurs types d’installations, classés par catégories.
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/vagrant_fr"><img src="/images/vagrant.png" height=150 style="vertical-align:bottom"><b><p>Dans Vagrant</p></b></a>
+<a href="/vagrant_fr"><img src="/images/vagrant.png" height=150 style="vertical-align:bottom"><b><p>Avec Vagrant</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
@@ -94,12 +85,4 @@ Cette page liste plusieurs types d’installations, classés par catégories.
 <b><p>Sur Debian 8/Jessie</p></b></a>
 </div>
 
-<div class="col col-md-3 text-center">
-<a href="/install_on_debian_stretch_fr"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
-<b><p>Sur Debian 9/Stretch (Expérimental)</p></b></a>
-</div>
-
-<div class="col col-md-3 text-center">
-<a href="/use_yunohost_testing_fr"><img height=150 src="http://previews.123rf.com/images/damedeeso/damedeeso1212/damedeeso121200017/16839352-handyman-dog-work-in-progress-with-jackhammer-Stock-Photo-dog-hammer.jpg" style="vertical-align:bottom">
-<b><p>Utiliser la version Testing</p></b></a>
 </div>
