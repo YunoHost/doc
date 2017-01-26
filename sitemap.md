@@ -91,6 +91,8 @@
                    * [Multi-instance](packaging_apps_multiinstance_en)
                    * [Helpers](packaging_apps_helpers_en)
                    * [Trap usage](packaging_apps_trap_fr)
+                   * [Applications levels](packaging_apps_levels_fr)
+                   * [YEP - YunoHost Enhancement Proposals](packaging_apps_guidelines_fr)
                * [Applications in progress](/apps_in_progress_en)
                * [Wishlist of applications](/apps_wishlist_en)
            * [Contributing to the YunoHost core](/dev)
