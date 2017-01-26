@@ -104,6 +104,8 @@
                  * [Multi-instance](packaging_apps_multiinstance_fr)
                  * [Commandes pratiques](packaging_apps_helpers_fr)
                  * [Usage de trap](packaging_apps_trap_fr)
+		 * [Niveaux des applications](packaging_apps_levels_fr)
+		 * [YEP - YunoHost Enhancement Proposals](packaging_apps_guidelines_fr)
               * [Packages d’applications en cours de développement](/apps_in_progress_fr)
               * [Liste de proposition d’applications](/apps_wishlist_fr)
            * [Contribuer au cœur de YunoHost](/dev_fr)
