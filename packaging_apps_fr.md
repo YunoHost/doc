@@ -51,6 +51,8 @@ Vous trouverez ci-dessous une liste des points à vérifier concernant la qualit
 * Vos scripts ont été testés sur Debian Jessie ainsi que sur les architectures 32 bits, 64 bits et ARM ;
 * Les scripts backup et restore sont présents et fonctionnels.
 
+Pour mesurer la qualité d'un paquet, celui-ci obtiendra un [niveau](packaging_apps_levels_fr), déterminé en fonction de divers critères d'installation et selon le respect des [règles de packaging](packaging_apps_guidelines_fr).
+
 ### Script de vérification du paquet
 <a class="btn btn-lg btn-default" href="https://github.com/YunoHost/package_checker">Vérificateur de paquets</a>
 
