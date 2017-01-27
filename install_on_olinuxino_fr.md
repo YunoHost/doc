@@ -5,7 +5,7 @@ Pour installer YunoHost sur une carte OLinuXino, le plus simple est d'utiliser l
 </div>
 
 <div class="alert alert-warning" markdown="1">
-Si vous souhaitez mettre en place ou obtenir une Brique Internet complète (Carte Olimex + YunoHost + VPN associatif neutre + Hotspot Wifi), nous vous conseillons de contacter [le FAI associatif le plus proche de chez vous](https://labriqueinter.net/#obtenir-une-brique), la Brique Internet déconseillant **fortement** de faire l'installation vous même. Si vous voulez néanmoins le faire, vous pouvez utiliser [la procédure d'installation du projet La Brique Internet](https://install.labriqueinter.net).
+Si vous souhaitez mettre en place ou obtenir une Brique Internet complète (Carte Olimex + YunoHost + VPN associatif neutre + Hotspot Wifi), nous vous conseillons de contacter [le FAI associatif le plus proche de chez vous](https://labriqueinter.net/#obtenir-une-brique), la Brique Internet déconseillant **fortement** de faire l'installation vous-même. Si vous voulez néanmoins le faire, vous pouvez utiliser [la procédure d'installation du projet La Brique Internet](https://install.labriqueinter.net).
 
 Pour faire votre choix, nous vous conseillons de rencontrer votre FAI associatif local et de consulter [les avantages d'un VPN neutre dans le cadre de l'auto-hébergement](/vpn_advantage_fr).
 </div>
@@ -24,24 +24,24 @@ Pour préparer la carte SD, un ordinateur sous GNU/Linux ou BSD est préférrabl
 
 ---
 
-## Télécharger l'image
+## Télécharger l’image
 
 Télécharger l’image ([lime1](http://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz) ou [lime2](http://repo.labriqueinter.net/labriqueinternet_A20LIME2_latest_jessie.img.tar.xz)), vérifier son intégrité (somme de contrôle MD5), puis la décompresser :
 ```bash
 cd /tmp/
-# Telecharger l'image
+# Télécharger l'image
 wget https://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz
 
-# Verifier l'integrite (optionnel, mais recommande)
+# Verifier l'intégrite (optionel, mais recommandé)
 wget -q -O - https://repo.labriqueinter.net/MD5SUMS | grep "labriqueinternet_A20LIME_latest_jessie.img.tar.xz$" > MD5SUMS
 md5sum -c MD5SUMS
 
-# Decompresser l'image
+# Décompresser l'image
 tar -xf labriqueinternet_*.img.tar.xz
 mv labriqueinternet_*.img labriqueinternet.img
 ```
 
-## Copier l'image sur la carte SD
+## Copier l’image sur la carte SD
 
 1. Identifier le nom de la carte micro-SD : 
    - Assurez-vous que la carte n'est *pas* insérée dans l'ordinateur
@@ -96,7 +96,7 @@ Procéder à la [postinstallation](/postinstall_fr) en se connectant à la carte
 **Note :** il est également possible de réaliser la post-installation ligne de commande via SSH en exécutant `yunohost tools postinstall`.
 </div>
 
-## (Optionnel) Installer DoctorCube
+## (Optionel) Installer DoctorCube
 
 Si vous souhaitez bénéficier automatiquement des corrections de l'image du projet La Brique Internet, vous pouvez installez l'application dédiée DoctorCube.
 

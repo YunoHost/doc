@@ -98,7 +98,7 @@ Proceed to [post-installation](/postinstall) by connecting with your browser to 
 **Note :** it is also possibled to do the post-installation step through command line in SSH, with `yunohost tools postinstall`.
 </div>
 
-## (Optionnel) Install DoctorCube
+## (Optional) Install DoctorCube
 
 If you want to benefit automatically from fixes and configuration specific to the Internet Cube, you can install the DoctorCube app.
 
