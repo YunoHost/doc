@@ -16,6 +16,7 @@
         * [Installation guide](/install)
             * [On the Internet Cube](/install_brick_en)
             * [On an ARM board](/install_on_arm_board)
+            - [On an Olimex board](/install_on_olinuxino)
             * [On a Raspberry Pi](/install_on_raspberry)
             * [From an ISO](/install_iso)
             * [On Debian](/install_on_debian)
@@ -40,6 +41,7 @@
            * [Dynamic IP address: configure DynDNS](dns_dynamicip_en)
            * [Access his server on his local network](/dns_local_network_en)
 	   - [IPv6](ipv6_fr)
+           - [VPN](vpn_advantage)
         * [Internet service provider](/isp)
             * [Generic configuration of the ISP router](/isp_box_config)
         * Applications
