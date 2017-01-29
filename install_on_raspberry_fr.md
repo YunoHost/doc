@@ -16,9 +16,7 @@ Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissan
 - Une carte SD *classe 10* d'au moins 8 Go (par exemple une [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
 - Un adaptateur secteur pour la alimenter la carte ;
 - Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet.
-- Une des **images YunoHost pour Raspberry Pi** :
- - [Officielle, Wheezy/YunoHost 2.2 créée le 4 juin 2015](http://build.yunohost.org/yunohost4rpi2.img.7z)
- - [Non officielle Jessie/YunoHost 2.2 créée le 5 décembre 2015](https://forum.yunohost.org/t/building-a-new-image-for-raspberry-debian-jessie-fr-en/1101/2)
+- L'image YunoHost pour Raspberry Pi, à télécharger sur [build.yunohost.org](http://build.yunohost.org/)
 - (Optionnel) Un écran et un clavier si il n'est pas possible de se connecter directement en SSH au Raspberry.
 
 Pour préparer la carte SD, il est préférable d'avoir un ordinateur sous GNU/Linux ou BSD. Il devrait être possible de suivre les mêmes instructions sous MacOS/OSX. Sur Windows, il vous faudra suivre les instructions disponibles [ici](/copy_image_fr).
