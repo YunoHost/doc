@@ -5,7 +5,7 @@ You can consider this as some kind of administrator guide for troubleshooting or
 ## General notes
 ### Do not break YunoHost
 Best way to troubleshoot is to not have to troubleshoot because you have tested everything before deploying it on your server.
-That means everytime you want to try a new thing (non-official app, new specific config, package an app…) try it on a development or testing server not on your production one. For this, use whatever way you think appropriate, you can use YunoHost on a [DigitalOcean droplet](install_on_digitalocean_en) for 1 cent/hour, locally with [Docker](/docker_en) or a VM for example.
+This means that everytime you want to try a new thing (non-official app, new specific config, package an app...), you should try it on a development or testing instance, *not* on your production server. For this, you can [set up a Vagrant box](vagrant), or for instance a [DigitalOcean droplet](install_on_vps) for 1 cent/hour.
 
 Also: https://wiki.debian.org/DontBreakDebian
 

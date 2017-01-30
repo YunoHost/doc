@@ -5,8 +5,7 @@ Ce guide peut trouver son intérêt lors du débuggage d’une nouvelle applicat
 
 ## Notes générales
 ### Ne cassez pas YunoHost
-La meilleure manière de ne pas avoir de pannes est de ne pas bricoler sur votre serveur. Cela signifie que dès que vous souhaitez essayer quelque chose de nouveau (application non officielle, nouvelle configuration personnalisée, création d’une nouvelle application), voyez plutôt cela sur un serveur de développement et non de production.
-Vous pouvez faire cela de la manière qui vous convient, sur un [Droplet DigitalOcean](install_on_digitalocean_en) pour 1 centime/heure, localement avec [Docker](/docker_en) ou sur une machine virtuelle.
+La meilleure manière de ne pas avoir de pannes est de ne pas bricoler sur votre serveur. Cela signifie que dès que vous souhaitez essayer quelque chose de nouveau (application non officielle, nouvelle configuration personnalisée, création d’une nouvelle application), essayez d'abord cela sur un serveur de test et non de production. Pour faire cela, vous pouvez par exemple utiliser une [box Vagrant](vagrant_fr) ou un [droplet DigitalOcean](install_on_vps_fr) pour 1 centime/here.
 
 Vous pouvez aussi lire ceci si vous avez encore envie de bricoler sur votre instance YunoHost en production : https://wiki.debian.org/DontBreakDebian
 
@@ -16,7 +15,7 @@ Avant de tester, vous devriez lire au moins le code source de l’application et
 Garder à l’esprit que quand vous installez une application, vous exécutez du code avec des droits root. De mon expérience, certaines applications sont excellentes, d’autres peuvent casser votre instance YunoHost et certaines ne sont plus maintenues. Alors, avant d’installer, regardez les problèmes rencontrés (issues dans GitHub), le [Forum](http://forum.yunohost.org/) 
 et [le salon de discussion Yunohost](support_fr) pour voir si d’autres ont eu des problèmes avec l’application.
 
-### vérifier la documentation officielle
+### Vérifier la documentation officielle
 Les réponses à vos questions existent peut être déjà dans [la documentation](sitemap_fr).
 
 ### Vérifier l’aide dans les commandes en ligne

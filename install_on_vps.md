@@ -6,8 +6,9 @@
 
 <img src="/images/vps.png" width=250>
 
-* A dedicated server **OR** a VPS with at least **256MB** RAM
-* A **Debian 8** or **7** OS up and running on it
+* A dedicated or virtual private server
+* with at least **512MB** RAM
+* and **Debian 8.x (Jessie) 64bits** as operating system
 
 ---
 
