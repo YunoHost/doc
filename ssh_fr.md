@@ -13,7 +13,7 @@ Si vous installez YunoHost sur un VPS, votre fournisseur devrait vous avoir comm
 Si vous installez un serveur à la maison (par ex. sur Raspberry Pi ou OLinuXino), il vous faut trouver l'IP qui a été attribuée à votre carte après que vous l'ayez connecté à votre box internet / routeur. Il y a plusieurs façon de faire ça :
 
 - ouvrez un terminal et tapez `sudo arp-scan --local` pour lister les IP des machines sur le réseau local ;
-- utilisez l'interface de votre box internet pour lister les clients DHCP connectés ;
+- utilisez l'interface de votre box internet pour lister les machines connectées, ou regarder les logs ;
 - branchez un écran sur votre serveur, loggez-vous et tapez `ifconfig`.
 
 #### Se connecter
@@ -56,7 +56,7 @@ ssh -p 2244 admin@votre.domaine.tld
 
 ## Quels utilisateurs ?
 
-Par défaut, seulement l'utilisateur admin peut se logger en SSH sur une instance Yunohost.
+Par défaut, seulement les utilisateurs admin et root peuvent se logger en SSH sur une instance Yunohost.
 
 Les utilisateurs YunoHost créé via l'interface d'administration sont géré par la base de donnée LDAP. Par défaut, ils ne peuvent pas se connecter en SSH pour des raisons de sécurité. Si vous avez absolument besoin qu'un utilisateur dispose d'un accès SSH, vous pouvez utiliser [cette manipulation](https://forum.yunohost.org/t/ssh-disconnects-after-successful-login/256/10).
 

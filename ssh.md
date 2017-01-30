@@ -13,7 +13,7 @@ If you are installing on a VPS, then your VPS provider should have gave you your
 If you are installing at home (e.g. on a Raspberry Pi or OLinuXino), then you need to find out which IP has been attributed to your board after you plugged it to your internet box / router. Several ways exists to find your server's IP :
 
 - open a terminal and use `sudo arp-scan --local` to list the IP on your local network ;
-- use your internet box / router interface to list the DHCP clients ;
+- use your internet box / router interface to list the machines connected, or check the logs ;
 - plug a screen on your server, log in and type `ifconfig`.
 
 #### Connect
@@ -56,9 +56,9 @@ ssh -p 2244 admin@your.domain.tld
 
 ## Which users?
 
-Only the admin user can log in to YunoHost ssh server.
+By default, only the admin and root users can log in to YunoHost ssh server.
 
-YunoHost's users created via the administration interface are managed by the LDAP directory. By default, they can not connect via SSH for security reasons. See [here](https://forum.yunohost.org/t/ssh-disconnects-after-successful-login/256/10) if you absolutely want some users to have SSH access enabled.
+YunoHost's users created via the administration interface are managed by the LDAP directory. By default, they can't connect via SSH for security reasons. See [here](https://forum.yunohost.org/t/ssh-disconnects-after-successful-login/256/10) if you absolutely want some users to have SSH access enabled.
 
 ## Security and SSH
 
