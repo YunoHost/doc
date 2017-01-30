@@ -14,7 +14,7 @@
         * [L’auto-hébergement](/selfhosting_fr)
         * [Matériel compatible](/hardware_fr)
         * [Guide d’installation](/install_fr)
-            * [Sur la Brique Internet](/installation_brique_fr)
+            * [Sur une carte OLinuXino](/install_on_olinuxino_fr)
             * [Sur carte ARM](/install_on_arm_board_fr)
             * [Sur Raspberry Pi](/install_on_raspberry_fr)
             * [À partir de l’ISO](/install_iso_fr)

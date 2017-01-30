@@ -33,7 +33,7 @@ Cette page liste plusieurs types d’installations, classés par catégories.
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/installation_brique_fr"><img src="/images/olinuxino.jpg" height=150 style="vertical-align:bottom"><b><p>Sur une carte OlinuXino (Brique Internet)</p></b></a>
+<a href="/install_on_olinuxino_fr"><img src="/images/olinuxino.jpg" height=150 style="vertical-align:bottom"><b><p>Sur une carte OlinuXino (Brique Internet)</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">

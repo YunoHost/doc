@@ -5,7 +5,7 @@
 * [What is Self-hosting](/selfhosting)
 * [Compatible hardware](/hardware)
 * [Installation guide](/install)
-    * [On the Internet Cube](/install_brick_en)
+    * [On an OLinuXino board](/install_on_olinuxino)
     * [On an ARM board](/install_on_arm_board)
     * [On a Raspberry Pi](/install_on_raspberry)
     * [From an ISO](/install_iso)
