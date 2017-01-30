@@ -32,6 +32,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Darkwire.io](https://github.com/seripap/darkwire.io)
 - [Deluge](http://deluge-torrent.org) (with WebUI)
 - [DemocracyOS](http://democracyos.org)
+- [DirectoryLister](https://github.com/DirectoryLister/DirectoryLister)
 - [Discourse](http://discourse.org)
 - [DNSchain](https://github.com/okTurtles/dnschain)
 - [Emby](https://emby.media)
