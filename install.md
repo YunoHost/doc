@@ -38,11 +38,11 @@ This page lists a few installation guides.
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/installation_brique_fr"><img src="https://www.olimex.com/Products/OLinuXino/A20/A20-OLinuXino-LIME/images/A20-OLinuXino-LIME-1.jpg" height=150 style="vertical-align:bottom"><b><p>On an OlinuXino (Internet Cube)</p></b></a>
+<a href="/installation_brique_fr"><img src="/images/olinuxino.jpg" height=150 style="vertical-align:bottom"><b><p>On an OlinuXino (Internet Cube)</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_raspberry"><img src="https://cdn.shopify.com/s/files/1/0176/3274/products/rpi2b_1024x1024.jpg" height=150 style="vertical-align:bottom"><b><p>On a Raspberry Pi</p></b></a>
+<a href="/install_on_raspberry"><img src="/images/raspberrypi.jpg" height=150 style="vertical-align:bottom"><b><p>On a Raspberry Pi</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
@@ -50,7 +50,7 @@ This page lists a few installation guides.
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_iso"><img src="https://s14-eu5.ixquick.com/cgi-bin/serveimage?url=https:%2F%2Fcdn.pixabay.com%2Fphoto%2F2013%2F07%2F13%2F11%2F41%2Fcomputer-158474_960_720.png&sp=9a32d31209c9f29fa5f39dd45388e7ae" height=150 style="vertical-align:bottom"><b><p>On a regular computer</p></b></a>
+<a href="/install_iso"><img src="/images/computer.png" height=150 style="vertical-align:bottom"><b><p>On a regular computer</p></b></a>
 </div>
 
 </div>

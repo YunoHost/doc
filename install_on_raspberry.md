@@ -3,7 +3,7 @@
 *Find all the ways to install YunoHost **[here](/install)**.*
 
 <center>
-<img src="https://cdn.shopify.com/s/files/1/0176/3274/products/rpi2b_1024x1024.jpg" width=350>
+<img src="/images/raspberrypi.jpg" width=350>
 </center>
 
 <div class="alert alert-info" markdown="1">
