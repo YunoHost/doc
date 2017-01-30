@@ -13,13 +13,11 @@ Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissan
 ## Prérequis
 
 - Un Raspberry Pi 0, 1, 2 ou 3 ;
-- Une carte SD *classe 10* d'au moins 8 Go (par exemple une [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
+- Une carte SD : au moins **8 Go** et **Classe 10** (par exemple une [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
 - Un adaptateur secteur pour la alimenter la carte ;
 - Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet. Avec le Raspberry Pi Zero vous pouvez connecter votre carte avec un câble OTG et un adaptateur Wifi USB.
-- L'image YunoHost pour Raspberry Pi, à télécharger sur [build.yunohost.org](http://build.yunohost.org/)
-- **(Optionnel)** Un écran et un clavier s'il n'est pas possible de se connecter directement en SSH au Raspberry.
-
-Pour préparer la carte SD, il est préférable d'avoir un ordinateur sous GNU/Linux ou BSD. Il devrait être possible de suivre les mêmes instructions sous MacOS/OSX. Sur Windows, il vous faudra suivre les instructions disponibles [ici](/copy_image_fr).
+- L'image YunoHost pour Raspberry Pi, à télécharger sur [build.yunohost.org](http://build.yunohost.org/). (Pas nécessaire si vous souhaitez faire une installation manuelle sur un système Debian déjà installé)
+- **(Optionnel)** Un écran et un clavier s'il n'est pas possible de se connecter directement en SSH au Raspberry. (Pas nécessaire si vous installez depuis l'image)
 
 ---
 
@@ -30,10 +28,8 @@ Pour préparer la carte SD, il est préférable d'avoir un ordinateur sous GNU/L
 <a class="btn btn-lg btn-default" href="/plug_and_boot_fr">2. Brancher & démarrer</a>
 
 <a class="btn btn-lg btn-default" href="/ssh_fr">3. Se connecter en SSH</a>
-<!-- [TODO : Cette partie n'est pas triviale et dois être détaillée comme pour OLinuXino !!] -->
 
-
-<a class="btn btn-lg btn-default" href="/postinstall_fr">4. Post-installation</a>
+<a class="btn btn-lg btn-default" href="/postinstall_fr">4. Procéder à la post-installation</a>
 
 ---
 

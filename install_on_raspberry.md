@@ -12,12 +12,11 @@ Before setting up a server at home, it is recommended that you know the [limitat
 
 ## Pre-requisite
 
-- A Raspberry Pi model 0, 1, 2 or 3
-- An SD card: **4GB** capacity (or more) and **class10** speed rate is highly recommended (like the [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO))
+- An SD card: **8GB** capacity (at least) and **Class 10** speed rate are highly recommended (like the [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
 - A power supply (either an adapter or a MicroUSB cable)
 - An ethernet cable (RJ-45) to connect your Raspberry Pi to your router. (Raspberry Pi Zero users can connect the Pi using an OTG cable, Wifi dongle and [following these instructions](https://davidmaitland.me/2015/12/raspberry-pi-zero-headless-setup/))
-- **YunoHost Raspberry Pi image**, availabe on [build.yunohost.org](http://build.yunohost.org/). Not needed if you want to manually install YunoHost on a existing Debian system.
-- **(Optional)** A screen and a keyboard, if you can't use an ssh connection to proceed to the post-installation. **Note:** not needed when installing with an image.
+- The **YunoHost Raspberry Pi image**, available on [build.yunohost.org](http://build.yunohost.org/). (Not needed if you want to manually install YunoHost on an existing Debian system.)
+- **(Optional)** A screen and a keyboard, if you can't use an ssh connection to proceed to the post-installation. (Not needed when installing with an image.)
 
 ---
 
@@ -28,9 +27,8 @@ Before setting up a server at home, it is recommended that you know the [limitat
 <a class="btn btn-lg btn-default" href="/plug_and_boot">2. Plug & boot</a>
 
 <a class="btn btn-lg btn-default" href="/ssh">3. Connect to your server with SSH</a>
-<!-- [TODO : Cette partie n'est pas triviale et dois être détaillée comme pour OLinuXino !!] -->
 
-<a class="btn btn-lg btn-default" href="/postinstall">4. Post-install</a>
+<a class="btn btn-lg btn-default" href="/postinstall">4. Proceed to post-installation</a>
 
 ---
 
