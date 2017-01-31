@@ -1,10 +1,10 @@
 # SSH
 
-## What's SSH ?
+## What's SSH?
 
 **SSH** stands for Secure Shell, and refers to a protocol that allows to remotly control a machine using the command line interface (CLI). It is available by default on Linux and Mac OS / OSX. On Windows, unfortunately you might need to use the [PuTTy](http://www.fastcomet.com/tutorials/getting-started/putty) software.
 
-## During Yunohost installation
+## During YunoHost installation
 
 #### Find your IP
 
@@ -26,11 +26,11 @@ ssh root@111.222.333.444
 
 A password will be asked. If this is a VPS, your VPS provided should have communicated you the password. On a fresh Raspberry Pi, the password might be `raspberry`. For an OLinuXino, this should be `olinux`.
 
-#### Change the password !
+#### Change the password!
 
 After logging in for the first time, you should change the root password. The server might automatically ask you to do so. If not, use the command `passwd`. It is important to choose a reasonably strong password.
 
-## After installing Yunohost
+## After installing YunoHost
 
 If you installed your server at home and are attempting to connect from outside your local network, make sure port 22 is correctly forwarded to your server.
 

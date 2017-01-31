@@ -72,7 +72,7 @@ Cette page liste plusieurs types d’installations, classés par catégories.
 
 ---
 
-<h1 style="font-weight: 100">Advanced / others</h1>
+<h1 style="font-weight: 100">Avancé / autres</h1>
 
 <div class="row">
 

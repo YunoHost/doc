@@ -1,10 +1,10 @@
 # SSH
 
-## Qu'est-ce que SSH ?
+## Qu’est-ce que SSH ?
 
 **SSH** est un accronyme pour Secure Shell, et désigne un protocole qui permet de contrôler à distance une machine via la ligne de commande (CLI). C'est aussi une commande disponible de base sur Linux et Mac OS / OSX. Sous Windows, maleureusement il vous faudra utiliser le logiciel [PuTTy](http://www.fastcomet.com/tutorials/getting-started/putty).
 
-## Pendant l'installation de YunoHost
+## Pendant l’installation de YunoHost
 
 #### Trouver son IP
 
