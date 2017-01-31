@@ -8,7 +8,6 @@
 
     * Try YunoHost
        * [With the demo](/try)    
-       * [With a live USB stick](/try_at_home)
 
     * [Administrator guide](/admindoc)
         * [Self-hosting](/selfhosting_en)

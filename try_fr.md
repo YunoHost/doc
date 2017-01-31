@@ -3,7 +3,6 @@
 <div class="alert alert-warning" markdown="1">
 **Note :** Cette démo peut cesser de fonctionner de temps en temps.
 <br>
-Si cela ne fonctionne pas, vous pouvez [essayer chez vous](/try_at_home_fr).
 
 </div>
 

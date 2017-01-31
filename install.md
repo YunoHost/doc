@@ -15,10 +15,6 @@ This page lists a few installation guides.
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/try_at_home"><img src="/images/usb_key.png" height=150 style="vertical-align:bottom"><b><p>Try with a Live USB</p></b></a>
-</div>
-
-<div class="col col-md-3 text-center">
 <a href="/install_on_virtualbox"><img src="/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>Try in VirtualBox</p></b></a>
 </div>
 
