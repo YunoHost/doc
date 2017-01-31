@@ -15,10 +15,6 @@ Cette page liste plusieurs types d’installations, classés par catégories.
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/try_at_home_fr"><img src="/images/usb_key.png" height=150 style="vertical-align:bottom"><b><p>Essayer avec une Live USB</p></b></a>
-</div>
-
-<div class="col col-md-3 text-center">
 <a href="/install_on_virtualbox_fr"><img src="/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>Essayer dans une machine virtuelle</p></b></a>
 </div>
 

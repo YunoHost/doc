@@ -3,7 +3,6 @@
 <div class="alert alert-warning" markdown="1">
 **Note:** This demo server could be down from time to time.
 <br>
-If it does not work, do consider [trying it at home](/try_at_home).
 
 </div>
 
