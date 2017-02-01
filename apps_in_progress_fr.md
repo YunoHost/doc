@@ -56,6 +56,7 @@ N’hésitez pas à vous créer un compte GitHub pour faire part de vos remarque
       <div class="panel-body">
         <p><strong>Description</strong> : {app_description}</p>
         <p><strong>Dernière mise à jour (UTC)</strong> : {app_update}</p>
+        <p><strong>Niveau</strong>: {app_level}</p>
         <p><strong>Mainteneur</strong> : {app_maintainer} <small class="text-muted">({app_mail})</small></p>
         <p><strong>Dépôt git</strong> : <a href="{app_git}" target="_blank">{app_git}</a> <small class="text-muted">({app_branch})</small></p>
         <p><strong>Licence de l’application</strong> : {app_license}</p>
@@ -108,6 +109,7 @@ $(document).ready(function () {
              .replace('{app_description}', infos.manifest.description.fr)
              .replace(/{app_git}/g, infos.git.url)
              .replace('{app_branch}', infos.git.branch)
+             .replace('{app_level}', infos.level)
              .replace('{app_update}', timeConverter(infos.lastUpdate))
              .replace('{app_state}', infos.state)
              .replace('{app_state_bootstrap}', app_state_bootstrap)

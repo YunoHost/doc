@@ -57,6 +57,7 @@ The packagers will appreciate your remarks. If you test them and find issues, or
       <div class="panel-body">
         <p><strong>Description</strong>: {app_description}</p>
         <p><strong>Last update (UTC)</strong>: {app_update}</p>
+        <p><strong>Level</strong>: {app_level}</p>
         <p><strong>Maintainer</strong>: {app_maintainer} <small class="text-muted">({app_mail})</small></p>
         <p><strong>Git repository</strong>: <a href="{app_git}" target="_blank">{app_git}</a> <small class="text-muted">({app_branch})</small></p>
         <p><strong>Software license</strong>: {app_license}</p>
@@ -105,6 +106,7 @@ $(document).ready(function () {
              .replace('{app_description}', infos.manifest.description.en)
              .replace(/{app_git}/g, infos.git.url)
              .replace('{app_branch}', infos.git.branch)
+             .replace('{app_level}', infos.level)
              .replace('{app_update}', timeConverter(infos.lastUpdate))
              .replace('{app_state}', infos.state)
              .replace('{app_state_bootstrap}', app_state_bootstrap)
