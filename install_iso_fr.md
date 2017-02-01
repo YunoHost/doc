@@ -8,26 +8,12 @@
 <img src="/images/desktop.jpg">
 <img src="/images/nettop.jpg">
 
-<div class="alert alert-danger">Ces images sont basées sur **Debian Wheezy**. Wheezy **ne sera plus maintenue** avec YunoHost 2.4.<br />
-Il est **fortement conseillé** d’installer YunoHost sur **Debian Jessie** avec le **[script d’installation](/install_on_debian_fr)**.</div>
-
 * Un matériel compatible x86 dédié à YunoHost : portable, netbook, ordinateur. Vous pouvez réutiliser n’importe quelle machine avec **256 Mo de RAM minimum**
 * Un autre ordinateur pour parcourir ce guide et accéder à votre serveur
 * Un [fournisseur d’accès correct](/isp_fr), de préférence avec une bonne vitesse d’upload
 * Une **clé USB** d’une capacité minimum d’1Go **OU** un **CD vierge** standard
 * Une des dernières **images ISO YunoHost** (dans le doute prenez la version 32 bits) :
-    <div>
-    <b>Torrent :</b>
-    <ul>
-    <li>[32 bits](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent)</li>
-    <li>[64 bits](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent)</li>
-    </ul>
-    <b>Téléchargement direct :</b>
-    <ul>
-    <li>[32 bits](http://build.yunohost.org/yunohostv2-latest-i386.iso)</li>
-    <li>[64 bits](http://build.yunohost.org/yunohostv2-latest-amd64.iso)</li>
-    </ul>
-    </div>
+ - https://build.yunohost.org
 
 ---
 
