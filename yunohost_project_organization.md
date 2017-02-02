@@ -90,7 +90,7 @@ The Board is independent of groups and brings together contributors wishing to g
 - call on the whole community of contributors (or even end-users) when a decision appears divisive between groups or within the Board
 
 To take part at Board-level votes, you must have contributed to the project and have obtained a right to vote (or right of entry) at the Board. This right is delivered by the Board (and may be upon request). The Board is free at any moment to change its decision process.
-To be a member of the Board does not imply that you have access to all resources (infrastructure, deposit, etc.).
+To be a member of the Board does not imply that you have access to all resources (infrastructure, repositories, etc.).
 
 ### A decision process based on soft consensus
 
@@ -116,8 +116,8 @@ If a consensus is not reached over a decision within a particular group, they mu
 Anyone can change their position at any moment, but it's expected to let the group react if necessary (e.g. avoid going from positive to negative to reject a proposal altogether after just 3 minutes).
 
 - "simple" replies
-   - "I agree" -> counts as a positive view
-   - "It seems good to me, but I'd rather abide by others' opinion" -> if there are only such views (or like the next one) and at least one positive view and the due date is past, then the proposal is accepted
+   - "I agree" –> counts as a positive view
+   - "It seems good to me, but I'd rather abide by others' opinion" –> if there are only such views (or like the next one) and at least one positive view and the due date is past, then the proposal is accepted
    - "no views" / "I'm not in a position to express a helpful view (e.g. I can't code in X)"
    - delayed reponse
    - request for clarification, in which case the decision is suspended
@@ -236,14 +236,14 @@ For the distribution group, since there's only Heyyounow at the moment, the Boar
 - XMPP server migration
 - Hosting of our Git forge
 - Review the build system: stable <— testing <— branches
-- Freeze cohost.me and abandoning services
+- Freeze nohost.me and abandoning services
 
 #### Core Dev Group
 - How to manage pull requests?
    - Each ticket gives rise to a branch and a ticket; you make a pull/merge request, the community verifies that it works, a decision is taken to integrate. 
 
 #### Apps Group
-- For community-based apps, issues are on Github as they should be, but discussions are on the forum
+- For community-based apps, issues are on GitHub as they should be, but discussions are on the forum
 
 #### Communication Group
 - Bug report from the forum
