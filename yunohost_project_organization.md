@@ -5,7 +5,7 @@
 This document aims at allowing contributors to feel legitimate in contributing to the YunoHost project together with collective feedback.
 The project is community-based and hasty decisions made by a restricted group of contributors can generate frustrations at a later stage.
 To address this issue, the proposed solution here is to ensure that decisions are taken collectively and that they are sufficiently thought out.
-An advisory board provides orientations for the evolution of the YunoHost project and special interest groups allow more efficient contribution in relation to each specific topic.
+An advisory council provides orientations for the evolution of the YunoHost project and special interest groups allow more efficient contribution in relation to each specific topic.
 
 ## Definition of YunoHost
 
@@ -27,7 +27,7 @@ Historically, the project has been very close to initiatives which aim at creati
 
 ### A theme-based, open structure
 
-The objective of the YunoHost organisation is to allow the largest number of people to contribute to software improvement, whether from a technical point of view (development, application packaging) or otherwise (communication, end-user assistance, documentation, etc.). Inspired by the projects which were reviewed at a recent event (Kodi, Debian, Django, Fedora, Wikipedia, etc.) and by ideas stemming from YunoHost contributors (Jérôme, Bram, opi, scith, ju), a decision was made to organise work by special interest groups, federated thanks to a board to key contributors.
+The objective of the YunoHost organisation is to allow the largest number of people to contribute to software improvement, whether from a technical point of view (development, application packaging) or otherwise (communication, end-user assistance, documentation, etc.). Inspired by the projects which were reviewed at a recent event (Kodi, Debian, Django, Fedora, Wikipedia, etc.) and by ideas stemming from YunoHost contributors (Jérôme, Bram, opi, scith, ju), a decision was made to organise work by special interest groups, federated thanks to a council to key contributors.
 
 YunoHost project organisation schema
 
@@ -76,21 +76,21 @@ Groups are open to all contributors willing to participate to the development of
 In order to facilitate its management, each group names a coordinator (and a deputy) whose role is:
 
 - to welcome and to federate new regular contributors to the group
-- to keep the Board informed of decisions taken within the group (see next point)
+- to keep the Council informed of decisions taken within the group (see next point)
 
 The choice of a communication tool is left to each group depending on its relevance (forum, chat, email, etc.)
 
-#### Definition and structure of the Board
+#### Definition and structure of the Council
 
-YunoHost is growing and it's important to maintain a coherence among all the groups. However, it is impossible to impose on every member within every group to take interest or to get involved in all aspects of the project (due to time and competency constraints). To address this, it has been suggested that a meta-group be created where every group has at least one representative: hence the Board.
-The Board is independent of groups and brings together contributors wishing to get involved in the project to the maximum extent. It's role is to:
+YunoHost is growing and it's important to maintain a coherence among all the groups. However, it is impossible to impose on every member within every group to take interest or to get involved in all aspects of the project (due to time and competency constraints). To address this, it has been suggested that a meta-group be created where every group has at least one representative: hence the Council.
+The Council is independent of groups and brings together contributors wishing to get involved in the project to the maximum extent. It's role is to:
 
 - take important decisions affecting YunoHost which are dependent on one single group (for instance, changing the wiki engine)
 - regularly follow up on the overall aspect of the project to ensure its cohesion (Mumble meeting)
-- call on the whole community of contributors (or even end-users) when a decision appears divisive between groups or within the Board
+- call on the whole community of contributors (or even end-users) when a decision appears divisive between groups or within the Council
 
-To take part at Board-level votes, you must have contributed to the project and have obtained a right to vote (or right of entry) at the Board. This right is delivered by the Board (and may be upon request). The Board is free at any moment to change its decision process.
-To be a member of the Board does not imply that you have access to all resources (infrastructure, repositories, etc.).
+To take part at Council-level votes, you must have contributed to the project and have obtained a right to vote (or right of entry) at the Council. This right is delivered by the Council (and may be upon request). The Council is free at any moment to change its decision process.
+To be a member of the Council does not imply that you have access to all resources (infrastructure, repositories, etc.).
 
 ### A decision process based on soft consensus
 
@@ -99,7 +99,7 @@ Decisions to be taken can be of 2 kinds:
 1. for a group (for example, "to merge a PR" would be assumed by the Dev Group whereas to "post a tweet" would fall under the responsibility of the Communication Group)
 2. for the overall project (for instance, to decide on a release with new features) 
 
-If a consensus is not reached over a decision within a particular group, they must refer to the Board for further discussions. If no consensus has been reached, the proposal will be submitted to a vote by all contributors.
+If a consensus is not reached over a decision within a particular group, they must refer to the Council for further discussions. If no consensus has been reached, the proposal will be submitted to a vote by all contributors.
 
 #### The decision process in detail
 
@@ -109,7 +109,7 @@ If a consensus is not reached over a decision within a particular group, they mu
 - an end-date is automatically set for every type of proposition. This date is used for various reasons:
     - to leave enough time for everyone to express themselves and to avoid hasty decisions
     - to maintain a certain rhythm otherwise if the quota of responses is reached then there's no need to wait for everyone's views within a group
-       - the quota is evaluated according to people registered in a group (or the Board, depending on the situation) who have expressed their desire to be considered as a regular voter => for instance kload could wish to give their opinion at a particular occasion, but with no intention of applying as a active voting member at the Board 
+       - the quota is evaluated according to people registered in a group (or the Council, depending on the situation) who have expressed their desire to be considered as a regular voter => for instance kload could wish to give their opinion at a particular occasion, but with no intention of applying as a active voting member at the Council 
    - so it can be postponed upon simple request by any one member of the group—and only the group, not all contributors.
 
 ##### 2) Opening a discussion with several possible responses:
@@ -169,7 +169,7 @@ Then a member of a group can announce their decision as effective (and proceed w
 ## Composition of groups
 
 - Distribution : Heyyounow
-- Board : Bram, ju, ljf, Maniack, Moul, opi, theodore
+- Council : Bram, ju, ljf, Maniack, Moul, opi, theodore
 - Core Dev : AlexAubin, Bram, Ju, ljf, Moul, opi
 - Apps : Bram, Ju, ljf, Maniack C, Moul, Scith, Tostaki
 - Infra : Bram, Ju, Maniack C, Moul, opi
@@ -186,7 +186,7 @@ _Values are rounded (e.g. 5.4 => 5 and 5.5 => 6)._
 
 |                      | **Minor** | **Standard** | **Major** |
 |----------------------|---------|----------|---------|
-| **Board**              |
+| **Council**              |
 |    Standard closure |    2    |     4    |    5    |
 |    Anticipated closure |    3*   |     5    |
 |    Closure by voting  |    5    |     5    |    6    |
@@ -207,28 +207,28 @@ _Values are rounded (e.g. 5.4 => 5 and 5.5 => 6)._
 |    Anticipated closure |    3*   |     3    |
 |    Closure by voting  |    3    |     3    |    4    |
 | **Communication -> Doc** |
-|    Standard closure |    1    |     1    |    Board    |
+|    Standard closure |    1    |     1    |    Council    |
 |    Anticipated closure |    2*   |     2*   |
-|    Closure by voting  |    Board    |     Board    |    Board    |
+|    Closure by voting  |    Council    |     Council    |    Council    |
 | **Distribution**         |
-|    Standard closure |    1    |     Board    |    Board    |
-|    Anticipated closure |    1    |     Board    |
-|    Closure by voting  |    1    |     Board    |    Board    |
+|    Standard closure |    1    |     Council    |    Council    |
+|    Anticipated closure |    1    |     Council    |
+|    Closure by voting  |    1    |     Council    |    Council    |
 
 \* of which 1 view can be external to the group
 
 For the translation group, the process needs to be adapted. 
 
-For the documentation group, the number of views for an anticipated closure of a minor decision eat for the moment limited (there are only 2 people in the group). The other types of decision are taken by the Board.
+For the documentation group, the number of views for an anticipated closure of a minor decision eat for the moment limited (there are only 2 people in the group). The other types of decision are taken by the Council.
 
-For the distribution group, since there's only Heyyounow at the moment, the Board will have the task of making Standard and Major decisions.
+For the distribution group, since there's only Heyyounow at the moment, the Council will have the task of making Standard and Major decisions.
 
 ### Pending decisions for the groups
 
-#### Board
-- Should we elect Board members rather than co-opt them? There's a risk of it becoming a "political campaign"!
-- Should special interest group membership be restricted to cooptation like for the Board?
-- Proposal to change Board to Collegiate
+#### Council
+- Should we elect Council members rather than co-opt them? There's a risk of it becoming a "political campaign"!
+- Should special interest group membership be restricted to cooptation like for the Council?
+- Proposal to change Council to Collegiate
 - Migrate the project infrastructure server under YunoHost (with prepackaged apps like pad, dogs and mumble?)
 - Let's Encrypt
 - New system for documentation
@@ -253,7 +253,7 @@ For the distribution group, since there's only Heyyounow at the moment, the Boar
 - How to organise rights on the forum (if groups want to vote on the forum)
 
 #### Miscellaneous
-- Request on the forum with notification to the Board members and to representatives of relevant special interest groups
+- Request on the forum with notification to the Council members and to representatives of relevant special interest groups
 - Vote over 2 weeks with a post on the forum
 - Create 4 channels for Core Dev, Apps, Communication and Infrastructure
 - A release should be validated by all 4 (or 5) interest groups
