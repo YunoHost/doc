@@ -1,9 +1,9 @@
 # Organisation du projet YunoHost
 
 ## Objectif du document
-Ce document a pour objectif de permettre aux contributeurs de se sentir légitimes d’effectuer une contribution dans le projet YunoHost avec un avis collectif.
-Le projet étant communautaire, les décisions prises hâtivement par un groupe restreint de contributeurs peuvent entraîner des frustrations postérieures.
-Pour pallier à ce problème, la solution proposée ici est de faire en sorte que les décisions soient prises collectivement et qu’elles soient suffisamment réfléchies.
+Ce document a pour objectif de permettre aux contributeurs de se sentir légitimes d’effectuer une contribution dans le projet YunoHost avec un avis collectif. Il vise également à renforcer le projet en le structurant autour de groupes de travail autonomes pouvant résister au départ ou à l'absence de certains contributeurs.
+Le projet étant communautaire, les décisions prises hâtivement et discrètement par un groupe restreint de contributeurs peuvent entraîner des frustrations postérieures.
+Pour pallier à ce problème, la solution proposée ici est de faire en sorte que les décisions soient prises collectivement, qu’elles soient suffisamment réfléchies, et qu'elles soient documentées ou rendues publiques.
 Un conseil oriente l’évolution du projet YunoHost, et des groupes d’intérêts permettent de contribuer plus efficacement en fonction des domaines de prédilection de chacun.
 
 ## Définition de YunoHost
@@ -71,7 +71,7 @@ La constitution de groupes part du constat que YunoHost compte beaucoup de sous-
  - Traduction
  - Entraide (support)
 
-Les groupes sont ouverts à tous les contributeurs souhaitant participer au développement de YunoHost. Chacun peut s'inscrire aux canaux de communication associés aux groupes auxquels il souhaite prendre part. Chaque inscrit est libre d'échanger avec le reste du groupe et de proposer une prise de décision à la suite d'une étape d'échange et d'amélioration de la proposition.
+Les groupes sont ouverts à tous les contributeurs souhaitant participer au développement de YunoHost. Chacun peut s'inscrire aux canaux de communication associés aux groupes auxquels il souhaite prendre part. Chaque inscrit est libre d'échanger avec le reste du groupe et de proposer une prise de décision à la suite d'une étape d'échange et d'amélioration de la proposition. Il est recommandé aux contributeurs de documenter au maximum leurs décisions et leurs contributions. Ceci permet de renforcer l'autonomie des groupes en cas de départs ou d'absences de certains de leurs membres.
 Afin de faciliter sa gestion, chaque groupe nomme donc un coordinateur (et un remplaçant) dont le rôle est :  
 
 - d'accueillir et fédérer les nouveaux contributeurs réguliers de son groupe
