@@ -27,7 +27,7 @@ Historically, the project has been very close to initiatives which aim at creati
 
 ### A theme-based, open structure
 
-The objective of the the YunoHost organisation is to allow the largest number of people to contribute to software improvement, whether from a technical point of view (development, application packaging) or otherwise (communication, end-user assistance, documentation, etc.). Inspired by the projects which were reviewed at a recent event (Kodi, Debian, Django, Fedora, Wikipedia, etc.) and by ideas stemming from YunoHost contributors (Jérôme, Bram, opi, scith, ju), a decision was made to organise work by special interest groups, federated thanks to a board to key contributors.
+The objective of the YunoHost organisation is to allow the largest number of people to contribute to software improvement, whether from a technical point of view (development, application packaging) or otherwise (communication, end-user assistance, documentation, etc.). Inspired by the projects which were reviewed at a recent event (Kodi, Debian, Django, Fedora, Wikipedia, etc.) and by ideas stemming from YunoHost contributors (Jérôme, Bram, opi, scith, ju), a decision was made to organise work by special interest groups, federated thanks to a board to key contributors.
 
 YunoHost project organisation schema
 
@@ -96,7 +96,7 @@ To be a member of the Board does not imply that you have access to all resources
 
 Decisions to be taken can be of 2 kinds:
 
-1. for a group (for example, "to merge a PR" would be assumed by the Apps Group whereas to "post a tweet" would fall under the responsibility of the Communication Group)
+1. for a group (for example, "to merge a PR" would be assumed by the Dev Group whereas to "post a tweet" would fall under the responsibility of the Communication Group)
 2. for the overall project (for instance, to decide on a release with new features) 
 
 If a consensus is not reached over a decision within a particular group, they must refer to the Board for further discussions. If no consensus has been reached, the proposal will be submitted to a vote by all contributors.
