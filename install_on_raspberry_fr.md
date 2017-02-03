@@ -7,7 +7,7 @@
 </center>
 
 <div class="alert alert-info" markdown="1">
-Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissance des [limitations liées à votre FAI](/isp). Si votre FAI est trop contraignant, il est possible d'utiliser un VPN pour contourner ces limitations.
+Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissance des [possibles limitations liées à votre FAI](/isp). Si votre FAI est trop contraignant, vous pouvez envisager d'utiliser un VPN pour contourner ces limitations.
 </div>
 
 ## Prérequis
@@ -16,8 +16,7 @@ Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissan
 - Une carte SD : au moins **8 Go** et **Classe 10** (par exemple une [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
 - Un adaptateur secteur pour la alimenter la carte ;
 - Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet. Avec le Raspberry Pi Zero vous pouvez connecter votre carte avec un câble OTG et un adaptateur Wifi USB.
-- L'image YunoHost pour Raspberry Pi, à télécharger sur [build.yunohost.org](http://build.yunohost.org/). (Pas nécessaire si vous souhaitez faire une installation manuelle sur un système Debian déjà installé)
-- **(Optionnel)** Un écran et un clavier s'il n'est pas possible de se connecter directement en SSH au Raspberry. (Pas nécessaire si vous installez depuis l'image)
+- L'image YunoHost pour Raspberry Pi, à télécharger sur [build.yunohost.org](http://build.yunohost.org/).
 
 ---
 
@@ -35,9 +34,11 @@ Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissan
 
 ## Installation manuelle
 
+<div class="alert alert-warning" markdown="1">
+Les dernières versions de Raspbian nécessitent un écran et un clavier, car il n'est plus possible de se connecter directement en SSH au Raspberry par défaut. Néanmoins, il est possible de réactiver le lancement de SSH au boot : il suffit de placer dans la partition boot de la carte SD un fichier nommé `ssh`, vide et sans extension.
+</div>
 
-0. Installez Raspbian sur la carte SD puis connectez-vous en ssh au Raspberry Pi. 
-<!-- [TODO : Cette partie n'est pas triviale et dois être détaillée comme pour OLinuXino !!] -->
+0. Installez Raspbian Jessie Lite ([instructions](https://www.raspberrypi.org/downloads/raspbian/)) sur la carte SD puis connectez-vous en ssh au Raspberry Pi. 
 
 
 1. L'user root doit avoir un mot de passe. (Si ce n'est pas le cas l'installation ne marchera pas.)

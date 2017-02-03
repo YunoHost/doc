@@ -7,7 +7,7 @@
 </center>
 
 <div class="alert alert-info" markdown="1">
-Before setting up a server at home, it is recommended that you know the [limitations imposed by your ISP](/isp). If they are too restrictive you can consider using a VPN to get around those limitations.
+Before setting up a server at home, it is recommended that you know the [possible limitations imposed by your ISP](/isp). If they are too restrictive, you might consider using a VPN to bypass them.
 </div>
 
 ## Pre-requisite
@@ -16,7 +16,6 @@ Before setting up a server at home, it is recommended that you know the [limitat
 - A power supply (either an adapter or a MicroUSB cable)
 - An ethernet cable (RJ-45) to connect your Raspberry Pi to your router. (Raspberry Pi Zero users can connect the Pi using an OTG cable, Wifi dongle and [following these instructions](https://davidmaitland.me/2015/12/raspberry-pi-zero-headless-setup/))
 - The **YunoHost Raspberry Pi image**, available on [build.yunohost.org](http://build.yunohost.org/). (Not needed if you want to manually install YunoHost on an existing Debian system.)
-- **(Optional)** A screen and a keyboard, if you can't use an ssh connection to proceed to the post-installation. (Not needed when installing with an image.)
 
 ---
 
@@ -34,8 +33,11 @@ Before setting up a server at home, it is recommended that you know the [limitat
 
 ## Manual installation
 
+<div class="alert alert-warning" markdown="1">
+The latest Rasbpian Jessie image requires a screen and a keyboard, as it is no longer possible to connect directly to the Raspberry through SSH. Nevertheless it is possible to re-enable SSH at boot : before starting your Raspberry, put in the boot partition of the SD card an empty file named `ssh` (without extension).
+</div>
 
-0. Install Raspbian on the SD card and connect to your Pi.
+0. Install Raspbian Jessie Lite on the SD card ([instructions](https://www.raspberrypi.org/downloads/raspbian/)) and connect to your Pi.
 
 1. The root user must have a password, or the installation will fail. To change the root password:
 ```bash
