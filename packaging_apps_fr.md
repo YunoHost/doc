@@ -6,7 +6,7 @@ Ce document a pour but de vous apprendre à packager une application pour YunoHo
 Pour packager une application, voici les prérequis :
 * Un compte sur un serveur git comme [GitHub](https://github.com/) pour pouvoir ensuite publier l’application ;
 * Maîtriser un minimum `git`, le Shell et d’autres notions de programmation ;
-* Une [machine virtuelle ou sur un serveur distant](/install_fr) ou un [environnement de développement](/packaging_apps_virtualbox_fr) pour packager et tester son paquet.
+* Une [machine virtuelle ou sur un serveur distant](/install_fr) ou un environnement de développement, [ynh-dev](https://github.com/yunohost/ynh-dev) ou [VirtualBox](/packaging_apps_virtualbox_fr), pour packager et tester son paquet.
 
 
 Si vous ne comprenez pas ces prérequis, ou si vous ne savez pas comment écrire du code, consulter d'abord l'[introduction au packaging](/packaging_apps_start_fr).
