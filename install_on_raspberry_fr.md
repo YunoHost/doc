@@ -17,7 +17,7 @@ Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissan
 - Un adaptateur secteur pour la alimenter la carte ;
 - Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet. Avec le Raspberry Pi Zero vous pouvez connecter votre carte avec un câble OTG et un adaptateur Wifi USB.
 - L'image YunoHost pour Raspberry Pi, à télécharger sur [build.yunohost.org](http://build.yunohost.org/). (Pas nécessaire si vous souhaitez faire une installation manuelle sur un système Debian déjà installé)
-- **(Optionnel)** Un écran et un clavier s'il n'est pas possible de se connecter directement en SSH au Raspberry. (Pas nécessaire si vous installez depuis l'image)
+- **(Optionnel)** si vous n'utilisez pas l'image Raspi-Yunohost ci-dessus, l'installation de l'image Rasbpian Jessie nécessite un écran et un clavier car il n'est plus possible de se connecter directement en SSH au Raspberry. Une alternative est possible; avant de démarrer votre RaspberryPi; placer dans la partition boot de la carte SD un fichier nommer " ssh " , vide et sans extension. Ceci activera l'accès SSH, et permettra donc, l’accès à raspi-config ou vnc dans le cas de Raspbian (Jessie non lite).
 
 ---
 
