@@ -16,7 +16,7 @@ Before setting up a server at home, it is recommended that you know the [limitat
 - A power supply (either an adapter or a MicroUSB cable)
 - An ethernet cable (RJ-45) to connect your Raspberry Pi to your router. (Raspberry Pi Zero users can connect the Pi using an OTG cable, Wifi dongle and [following these instructions](https://davidmaitland.me/2015/12/raspberry-pi-zero-headless-setup/))
 - The **YunoHost Raspberry Pi image**, available on [build.yunohost.org](http://build.yunohost.org/). (Not needed if you want to manually install YunoHost on an existing Debian system.)
-- **(Optional)** A screen and a keyboard, if you can't use an ssh connection to proceed to the post-installation. (Not needed when installing with an image.)
+- **(Optional)** If you do not use the Raspi-Yunohost image above, installing the Rasbpian Jessie image requires a screen and a keyboard as it is no longer possible to connect directly to the Raspberry SSH. An alternative is possible; Before starting your RaspberryPi; Put in the boot partition of the SD card a file named "ssh", empty and without extension. This will enable SSH access, and thus allow access to raspi-config or vnc in the case of Raspbian (Jessie non lite).
 
 ---
 
