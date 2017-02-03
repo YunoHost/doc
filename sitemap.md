@@ -83,6 +83,7 @@
         * Developement
            * Applications
                * [Package new application](/packaging_apps)
+                   * [VirtualBox for apps' packaging](packaging_apps_virtualbox_fr)
                    * [Manifest](packaging_apps_manifest_en)
                    * [Scripts](packaging_apps_scripts_en)
                    * [Arguments management](packaging_apps_arguments_management_en)
