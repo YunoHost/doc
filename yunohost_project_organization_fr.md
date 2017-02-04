@@ -124,11 +124,11 @@ Tout le monde peut changer de positions à n'importe quel moment, mais il est de
 -  refus: tout refus doit être argumenté et justifié
 
 ##### 3) Suspension/Repoussement
- - tant qu'il n'y a pas de réponse, la décision est suspendue, au moment de la réponse, la date de clôture est automatiquement repoussé (si besoin) (pour une durée, à définir, moins longue que la première fois)
+ - tant qu'il n'y a pas de réponse, la décision est suspendue, au moment de la réponse, la date de clôture est automatiquement repoussée (si besoin) (pour une durée, à définir, moins longue que la première fois)
  -  situation où il y a des avis positifs et négatifs ou situation où il y a un choix à faire entre plusieurs propositions
 
 ##### 4) Demande de modifications
- - mais il se peut qu'il y ai discussion autour de ces modifications, si c'est le cas, cela devient une nouvelle décision à adjoindre à la liste des décisions à prendre et le processus s'y applique alors (et cela repousse la date)
+ - mais il se peut qu'il y ait discussion autour de ces modifications, si c'est le cas, cela devient une nouvelle décision à adjoindre à la liste des décisions à prendre et le processus s'y applique alors (et cela repousse la date)
  - dans le cas contraire, un membre du groupe peut demander à ce que l'on fasse un vote qui portera sur la liste des possibilités qui font conflits + "ce vote est mal formulé, reformulons le"
  - s'il n'y a pas assez de monde d'accord, la date est repoussée et un rappel doit être envoyé
  - si le résultat est vraiment serré, le groupe est invité à rediscuter de la question si elle est importante, car cela pourrait être source de division et de tension à l'avenir
