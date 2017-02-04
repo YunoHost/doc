@@ -111,7 +111,7 @@
    * [Roadmap](/roadmap)
    * [Frequently asked questions](/faq_en)
    * [Contributors](contribs)
-   - [Project organization](project_organization_fr)
+   - [Project organization](project_organization)
    * [Support](/support_en)
    * [Art Works](artworks_en)
    * [Blog](https://forum.yunohost.org/c/announcement)
