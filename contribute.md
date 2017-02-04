@@ -99,8 +99,11 @@ Seed (share) YunoHost images with Torrent system: [live](http://build.yunohost.o
 </div>
 </div>
 
+-->
+
 ---
 
+<!--
 
 <br>
 <p class="lead" markdown="1">In any case, please [come to dev chatroom](xmpp:dev@conference.yunohost.org?join) to contribute :-)</p>
