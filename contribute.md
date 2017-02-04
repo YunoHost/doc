@@ -88,7 +88,8 @@ A <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/apps">mailing-list<
 </div>
 </div>
 
----
+
+<!--
 
 <div class="row">
 <div class="col col-md-3 lead">
@@ -99,11 +100,11 @@ Seed (share) YunoHost images with Torrent system: [live](http://build.yunohost.o
 </div>
 </div>
 
+---
+
 -->
 
 ---
-
-<!--
 
 <br>
 <p class="lead" markdown="1">In any case, please [come to dev chatroom](xmpp:dev@conference.yunohost.org?join) to contribute :-)</p>

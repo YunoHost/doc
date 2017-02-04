@@ -97,9 +97,10 @@ Seedez (partagez) avec le système de Torrent les images de YunoHost : [live](h
 </div>
 </div>
 
+---
+
 -->
 
----
 <br>
 <br>
 <p class="lead" markdown="1">Dans tous les cas, venez sur le [salon de développement](xmpp:dev@conference.yunohost.org?join) pour contribuer :-)</p>
