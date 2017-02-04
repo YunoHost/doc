@@ -2,9 +2,9 @@
 
 Ce page de documentation va vous expliquer comment mettre en place un serveur YunoHost virtuel, avec VirtualBox, pour travailler sur le packaging d'application.
 
-## Pourquoi utiliser VirtualBox plutôt qu'un vrai serveur YunoHost pour packager une application ?
+## Pourquoi utiliser VirtualBox plutôt qu’un serveur YunoHost de production pour packager une application ?
 
-Il y a principalement 2 raisons pour préférer l'usage d'un serveur virtuel plutôt que votre propre serveur:
+Il y a principalement deux raisons pour préférer l'usage d'un serveur virtuel plutôt que votre propre serveur :
 
 - Vous pouvez torturez à loisir un serveur virtuel sans courir le risque de le casser, puisque vous pourrez toujours restaurer un état précédent. Alors qu'il serait dommage de casser son propre serveur !
 - Un serveur virtuel sera restauré avant de travailler dessus, pour garder en permanence un système sans résidus d'une précédente installation. Cela permet de se rapprocher au plus près d'une première installation par un utilisateur.
@@ -13,19 +13,19 @@ Nous parlerons ici de VirtualBox, pour son approche graphique facile à utiliser
 
 ## Installer VirtualBox
 
-Depuis un système GNU Linux, installer simplement le paquet virtualbox-qt.  
-Depuis un système Windows ou Mac, il faudra se référer à la page de [téléchargement de VirtualBox](https://www.virtualbox.org/wiki/Downloads) pour récupérer le fichier d'installation adéquat.
+Depuis un système GNU Linux, installer simplement le paquet `virtualbox-qt`. 
+Depuis un système Windows ou macOS, il faudra se référer à la page de [téléchargement de VirtualBox](https://www.virtualbox.org/wiki/Downloads) pour récupérer le fichier d'installation adéquat.
 
 Quel que soit votre système, il ne devrait pas être nécessaire d'installer l'extension pack ou les additions invités.
 
 ## Installer YunoHost sur VirtualBox
 
-Suivez simplement la documentation idoine pour l'[installation sur VirtualBox](/install_on_virtualbox_fr) puis la documentation sur la [post-install](/postinstall_fr).
+Suivez simplement la documentation idoine pour l'[installation sur VirtualBox](/install_on_virtualbox_fr) puis la documentation sur la [post-installation](/postinstall_fr).
 
-Lors de la post-installation, il est inutile d'utiliser un nom de domaine en .nohost.me ou .noho.st, votre serveur virtuel ne sera pas accessible depuis l'extérieur de votre réseau local.  
-Nous préférerons l'usage d'un faux nom de domaine qui restera cantonné au réseau local. Par exemple yunohost.packaging
+Lors de la post-installation, il est inutile d'utiliser un nom de domaine en `.nohost.me` ou `.noho.st`, votre serveur virtuel ne sera pas accessible depuis l'extérieur de votre réseau local.  
+Nous préférerons l'usage d'un faux nom de domaine qui restera cantonné au réseau local. Par exemple, `yunohost.packaging`.
 
-Ce domaine n'étant enregistré dans aucun DNS, on l'enregistrera dans le hosts de l'ordinateur qui y accédera. Voir la documentation sur le [DNS local](/dns_local_network_fr).
+Ce nom de domaine n'étant enregistré dans aucun serveur DNS, on l'enregistrera dans le fichier `hosts` de l'ordinateur qui y accédera. Voir la documentation sur le [DNS local](/dns_local_network_fr).
 
 Votre serveur virtuel est à présent installé. Avant de commencer à l'utiliser, nous allons voir comment créer un premier instantané et comment les utiliser.
 
@@ -45,7 +45,7 @@ La gestion des instantanés se fait dans l'onglet "Instantanés"
 Et on créer un premier instantané  
 <img src="/images/virtualbox_packaging2.jpg" width=30%>
 
-A présent on peut commencer à travailler sur la machine virtuelle et créer autant d'instantanés que souhaité pour jalonner le travail.
+À présent on peut commencer à travailler sur la machine virtuelle et créer autant d'instantanés que souhaité pour jalonner le travail.
 
 <img src="/images/virtualbox_packaging3.jpg" width=80%>
 
@@ -59,9 +59,9 @@ En plus de l'usage d'instantanés successifs, il est également possible de dér
 
 <img src="/images/virtualbox_packaging4.jpg" width=80%>
 
-Dans cet exemple, j'ai dérivé 2 branche depuis mon installation réussie du package, pour tester indépendamment la suppression simple de l'application, l'upgrade et le backup/restore.  
+Dans cet exemple, j'ai dérivé deux branches depuis mon installation réussie du package, pour tester indépendamment la suppression simple de l'application, l'upgrade et le backup/restore.  
 Finalement je suis reparti de la base de la machine virtuelle pour démarrer un nouveau test sur un autre package, sans pour autant abandonner le précédent test.  
-A tout moment, il est possible de revenir sur un instantané précédent en le restaurant.  
+À tout moment, il est possible de revenir sur un instantané précédent en le restaurant.  
 La machine démarrera toujours sur l'"État actuel".
 
 <img src="/images/virtualbox_packaging5.jpg" width=80%>
@@ -82,11 +82,11 @@ Ou, si le domaine n'a pas été ajouté dans le hosts, en utilisant son ip.
 ssh admin@11.22.33.44
 ```
 
-A présent, on peut travailler sur la machine virtuelle en CLI.
+À présent, on peut travailler sur la machine virtuelle en CLI.
 
 Pour copier facilement les fichiers du package ou utiliser un éditeur de texte graphique, on peut également se connecter en sftp avec un explorateur de fichier.
 
-Il suffit simplement de se connecter à l'adresse `sftp://admin@mon.domain/` avec l'explorateur.  
+Il suffit de se connecter à l'adresse `sftp://admin@mon.domain/` avec l'explorateur.  
 <img src="/images/virtualbox_packaging6.jpg" width=80%>
 
-> Sur Windows ou Mac, l'explorateur de fichier ne supporte pas nativement le protocole sftp...
+> Sur Windows ou macOS, l'explorateur de fichier ne supporte pas nativement le protocole sftp…
