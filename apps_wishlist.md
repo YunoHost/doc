@@ -68,6 +68,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Joomla!](https://www.joomla.org)
 - [JS Bin](http://jsbin.com/help/2-second-setup)
 - [Kaiwa](http://getkaiwa.com)
+- [Kin calendar](https://github.com/KinToday)
 - [Kinto](https://github.com/Kinto/formbuilder)
 - [Known](https://withknown.com)
 - [Koel](http://koel.phanan.net)

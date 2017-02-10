@@ -28,9 +28,9 @@ This is the first domain name linked to your YunoHost server, but also the one w
 
 * If you do not have a domain name, or if you want to use the YunoHost's DynDNS service, choose a sub-domain of **.nohost.me** or **.noho.st** (i.e. `homersimpson.nohost.me`). The domain will be configured automatically and you won't need any further configuration step.
 
-* If you do know what **DNS** is, you probably want to configure your own domain name here. In this case, please refer to the [yunohost.org/dns](/dns) page for more informations.
+* If you do know what **DNS** is, you probably want to configure your own domain name here. In this case, please refer to the [DNS page](/dns) page for more informations.
 
-* If you don't own a domain name and don't want a **.nohost.me** or **.noho.st**, you can use a local domain. The idea is to configure your router to redirect a local domain name to your server. For example you could create the yunohost.local domain redirecting to your server in your router, and now every device on the network will be redirected to your server when accessing yunohost.local. More information on how to setup a local domain can be found [here](yunohost.org/dns_local_network).
+* If you don't own a domain name and don't want a **.nohost.me** or **.noho.st**, you can use a local domain. The idea is to configure your router to redirect a local domain name to your server. For example you could create the yunohost.local domain redirecting to your server in your router, and now every device on the network will be redirected to your server when accessing yunohost.local. More information on how to setup a local domain can be found [here](dns_local_network).
 
 ### Administration password
 

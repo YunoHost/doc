@@ -23,13 +23,16 @@ If you use the [email system](email_en) and your server becomes unavailable, ema
 <img src="/images/networks.png" width=500>
 
 #### Others Self-hosting projects
-* [ArkOS](http://arkos.io/)
-* [Cozy](http://cozy.io/)
-* [UBOS](http://ubos.net/)
-* [Host@home](http://yeuxdelibad.net/Programmation/Hostathome.html)
-* [Sovereign](https://github.com/al3x/sovereign)
-* [Sandstorm](https://sandstorm.io/)
-* [FreedomBox](https://fr.wikipedia.org/wiki/FreedomBox)
+- [ArkOS](https://arkos.io)
+- [Cloudron](https://cloudron.io)
+- [Cozy](https://cozy.io)
+- [FreedomBox](https://wiki.debian.org/FreedomBox)
+- [Host@home](http://yeuxdelibad.net/Programmation/Hostathome.html)
+- [Libre.sh](https://github.com/indiehosters/libre.sh)
+- [Puffin](http://puffin.rocks)
+- [Sandstorm](https://sandstorm.io/)
+- [Sovereign](https://github.com/al3x/sovereign)
+- [UBOS](http://ubos.net)
 
 #### Learn more
 * [Decentralized Web Summit](http://www.decentralizedweb.net/)

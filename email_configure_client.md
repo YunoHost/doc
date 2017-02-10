@@ -24,3 +24,17 @@ The automatic detection tool of Thunderbird does not work with YunoHost. You wil
 
 #### For Android
 [K-9 Mail](https://en.wikipedia.org/wiki/K-9_Mail) application works.
+
+#### For Firefox OS
+
+Tested with Firefox OS 2.6.
+On the home screen, enter the user name and the email address. Then use manual configuration:
+
+<a href="/images/ffos_email_config_home_screen_empty.png"><img src="/images/ffos_email_config_home_screen_empty.png" width=200/></a> <a href="/images/ffos_email_config_home_screen_fill.png"><img src="/images/ffos_email_config_home_screen_fill.png" width=200/></a>
+
+Configure manually the form as shown on following screenshots:
+
+<a href="/images/ffos_email_config_manual_conf_empty.png"><img src="/images/ffos_email_config_manual_conf_empty.png" width=200/></a> <a href="/images/ffos_email_config_manual_conf_fill.png"><img src="/images/ffos_email_config_manual_conf_fill.png" width=200/></a>
+
+
+<a href="/images/ffos_email_config_manual_conf_2_empty.png"><img src="/images/ffos_email_config_manual_conf_2_empty.png" width=200/></a> <a href="/images/ffos_email_config_manual_conf_2_fill.png"><img src="/images/ffos_email_config_manual_conf_2_fill.png" width=200/></a>
