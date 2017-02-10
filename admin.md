@@ -34,6 +34,8 @@ Once the lines are added, [here you might need to restart the ldap service ?], y
 
 ### How to move application folder
 
+To change an application folder, only a few commands are needed: move content, create a symlink and set access rights.
+
 Sample with WordPress:
 ```bash
 # Move wordpress folder to an external hard drive
