@@ -7,7 +7,6 @@
         * [Liste des applications disponibles](/apps_fr)
         * [Préparer/empaqueter une nouvelle application](/packaging_apps_fr)
         * [Développer avec Docker](/docker_fr)
-        * [Fabriquer OpenResty (serveur Web) pour Raspberry Pi](/build_openresty_fr)
         * [Présentation du fonctionnement de YunoHost](/package_list_fr)
         * [Se créer un environnement de développement](/ynh_dev_fr)
     * Documentation
