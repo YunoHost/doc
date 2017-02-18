@@ -113,7 +113,6 @@
            * [Création de paquets Debian](/build_packages_fr)
            * [Créer une image pour carte ARM](/build_arm_image_en)
            * [Créer une image live USB](/create_live_usb_fr)
-           * [Builder Openresty](/build_openresty_fr)
         * Documentation
            * [Création d’un compte pour l’édition de la documentation](/accounting_fr)
            * [Écrire de la documentation](/write_documentation_fr)
