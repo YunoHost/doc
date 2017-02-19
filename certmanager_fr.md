@@ -2,8 +2,6 @@
 Gestion du certificat
 ======================
 
-<div class="alert alert-danger">Cette fonctionnalité est seulement disponible sur la bêta pour le moment. Elle devrait être rendue publique prochainement.</div>
-
 Gérer les certificats avec YunoHost
 -----------------------------------
 
