@@ -65,6 +65,7 @@
    * [La signature du serveur via DKIM](dkim_fr)
 * [Gestion des certificats](/certificate_fr)
    * [Régénérer un certificat](/regenerate_certificate_fr)
+   * [Utiliser Let's Encrypt](/certmanager_fr)
 * [YunoHost avec un service caché Tor](/torhiddenservice_fr)
    * [Débloquer une IP avec Fail2ban](/fail2ban_fr)
 * [Les sauvegardes](/backup_fr)
