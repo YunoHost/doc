@@ -12,6 +12,7 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
         "fr": "Webmail Open Source"
     },
     "url": "http://roundcube.net/",
+    "version": "v1.0",
     "license": "free",
     "maintainer": {
         "name": "kload",
@@ -60,7 +61,9 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
 
 * **description** : description complète de l’application. Vous pouvez la détailler comme bon vous semble. Uniquement le champs `en` (english) est requis, vous pouvez également ajouter la traduction en français :)
 
-* **url**: site de l’application.
+* **url** : site web de l’application.
+
+* **version** : version de l’application qui est installée. Le champ doit être une chaîne de caractères.
 
 * **license** : licence avec laquelle l’application est distribuée : `free`, `non-free`. Attention à ne pas confondre avec la licence du paquet qui doit être mise dans le fichier `LICENSE`.
 

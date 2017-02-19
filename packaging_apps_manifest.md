@@ -12,6 +12,7 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
         "fr": "Webmail Open Source"
     },
     "url": "http://roundcube.net/",
+    "version": "v1.0",
     "license": "free",
     "maintainer": {
         "name": "kload",
@@ -61,6 +62,8 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
 * **description**: complete app description. You can make it as detailed as you feel it should be. Only `en` is required right now, but you can translate the description by prepending the locale prefix.
 
 * **url**: software website.
+
+* **version**: version of upstream software which is installed. Must be a string.
 
 * **license**: application license: `free` or `non-free`. Be careful to not confuse with package license which must be put in `LICENSE` file.
 
