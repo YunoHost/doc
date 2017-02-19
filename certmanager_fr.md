@@ -61,12 +61,18 @@ Let's Encrypt sur chacun de vos domaines ayant un certificat auto-signé.
 
 Il vous faut aller dans la configuration nginx et retirer les fichiers `letsencrypt.conf` (ou le nom que
 vous lui avez donné et qui contient un bloc `location '/.well-known/acme-challenge'`) pour chacun
-de vos domaines.
-
-Tapez la commande suivante :
+de vos domaines. Retirez les liens symboliques vers vos certificats actuels :
 
 ```bash
-yunohost domain cert-install your.domain.tld --force
+rm /etc/yunohost/certs/your.domain.tld/key.pem
+rm /etc/yunohost/certs/your.domain.tld/crt.pem
+```
+
+Puis tapez les commandes suivantes :
+
+```bash
+yunohost domain cert-install your.domain.tld --force --self-signed
+yunohost domain cert-install your.domain.tld
 ```
 
 pour chacun des domaines pour lesquels vous souhaitez avoir un certificat Let's Encrypt.
