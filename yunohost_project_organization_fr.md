@@ -74,7 +74,7 @@ La constitution de groupes part du constat que YunoHost compte beaucoup de sous-
 Les groupes sont ouverts à tous les contributeurs souhaitant participer au développement de YunoHost. Chacun peut s'inscrire aux canaux de communication associés aux groupes auxquels il souhaite prendre part. Chaque inscrit est libre d'échanger avec le reste du groupe et de proposer une prise de décision à la suite d'une étape d'échange et d'amélioration de la proposition. Il est recommandé aux contributeurs de documenter au maximum leurs décisions et leurs contributions. Ceci permet de renforcer l'autonomie des groupes en cas de départs ou d'absences de certains de leurs membres.
 Afin de faciliter sa gestion, chaque groupe nomme donc un coordinateur (et un remplaçant) dont le rôle est :  
 
-- d'accueillir et fédérer les nouveaux contributeurs réguliers de son groupe
+- d'accueillir et de fédérer les nouveaux contributeurs réguliers de son groupe
 - de tenir informé le Conseil des décisions prises au sein du groupe (cf. point suivant)
 
 Le choix d'un outil de communication est laissé à chaque groupe en fonction de sa pertinence (forum, chat, ML, etc.).
@@ -110,7 +110,7 @@ Si un consensus sur une décision à prendre n'est pas trouvée au sein d'un gro
     - pouvoir laisser le temps à tout le monde de s'exprimer et ne pas prendre la décision trop vite
     -  maintenir un rythme car si le quota des réponses est rempli avant le temps imparti, il n'y a pas besoin d'attendre l'avis de tout les membres du groupe
        - le quota est à évaluer en fonction des personnes inscrites au groupe (ou au Conseil selon la situation) qui ont manifesté leurs souhaits d'être considéré comme votant régulier => exemple kload peut vouloir donner son avis ponctuellement, mais à priori il ne souhaitera pas être considéré comme membre votant actif du Conseil
-    - pouvoir être repoussable sur simple demande d'une des personnes du groupe. Et seulement du groupe, pas tous les contrib.
+    - pouvoir être repoussable sur simple demande d'une des personnes du groupe. Et seulement du groupe, pas tous les contributeurs.
 
 ##### 2) Ouverture de la discussion, plusieurs réponses possibles :
 Tout le monde peut changer de positions à n'importe quel moment, mais il est de bon ton de laisser au groupe le temps de réagir si cela est nécessaire (pas passer de positif à négatif puis rejeter la proposition 3 min après par exemple.)
@@ -180,7 +180,7 @@ Alors un membre du groupe peut annoncer la décision comme effective (et procéd
   - Trad : Jean-Baptiste
 - Distribution : Heyyounow
 
-## Tableau récapitualtif du nombre d'avis nécéssaire pour la prise de décision
+## Tableau récapitulatif du nombre d'avis nécéssaire pour la prise de décision
 
 _Les valeurs sont arrondies (exemple: 5,4 => 5 et 5,5 => 6)._
 
@@ -264,7 +264,7 @@ Pour le groupe distribution, étant donné qu'il n'y a pour l'instant que Heyyou
 ## Moyens de communication actuels
 
 - Rencontres à des évènements.
-- Réunions hébdomadaires Mumble.
+- Réunions hebdomadaires Mumble.
 - [Forum](https://forum.yunohost.org).
 - Listes de diffusion : [contrib](https://list.yunohost.org/cgi-bin/mailman/listinfo/contrib) et [apps](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps)
 - [Bugtracker Redmine](https://dev.yunohost.org).
