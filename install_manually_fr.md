@@ -8,7 +8,7 @@ Une fois que vous avez accès à votre serveur, directement ou par SSH, vous pou
 
 1. Installez git
 ```bash
-sudo apt-get install git
+sudo apt-get install git dialog
 ```
 
 2. Clonez le dépôt du script d’installation de YunoHost
