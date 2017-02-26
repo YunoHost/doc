@@ -230,7 +230,6 @@ For the distribution group, since there's only Heyyounow at the moment, the Coun
 - Should special interest group membership be restricted to cooptation like for the Council?
 - Proposal to change Council to Collegiate
 - Migrate the project infrastructure server under YunoHost (with prepackaged apps like pad, dogs and mumble?)
-- Let's Encrypt
 - New system for documentation
 - Improvement of documentation
 - XMPP server migration

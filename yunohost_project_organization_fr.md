@@ -229,7 +229,6 @@ Pour le groupe distribution, étant donné qu'il n'y a pour l'instant que Heyyou
 - Faut-il limiter l'ouverture des groupes d'intérêts par cooptation comme pour le Conseil ?
 - Proposition de changer Conseil en Collégiale
 - Migrer le serveur d’infrastructure du projet sous YunoHost. (avec apps déjà packagées pad, gogs, mumble?)
-- Let's Encrypt
 - Nouveau système pour la documentation
 - Amélioration de la documentation
 - Migration du serveur XMPP
