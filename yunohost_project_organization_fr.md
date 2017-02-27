@@ -172,7 +172,7 @@ Alors un membre du groupe peut annoncer la décision comme effective (et procéd
 
 - Conseil : Bram, ju, ljf, Maniack, Moul, opi, theodore.
 - Core Dev : AlexAubin, Bram, Ju, ljf, Moul, opi
-- Apps : Bram, Ju, ljf, Maniack C, Moul, Scith, Tostaki
+- Apps : Bram, frju365, JimboJo, Ju, ljf, Maniack C, Maxime, Moul, Scith, Tostaki
 - Infra : Bram, Ju, Maniack C, Moul, opi
 - Communication
   - Com : Bram, Moul, ljf, opi
@@ -195,9 +195,9 @@ _Les valeurs sont arrondies (exemple: 5,4 => 5 et 5,5 => 6)._
 |    Clôture anticipée |    3*   |     4    |
 |    Clôture par vote  |    4    |     5    |    5    |
 | **Apps**                 |
-|    Clôture classique |    2    |     4    |    5    |
-|    Clôture anticipée |    3*   |     5    |
-|    Clôture par vote  |    5    |     5    |    6    |
+|    Clôture classique |    2    |     5    |    8    |
+|    Clôture anticipée |    3*   |     7    |
+|    Clôture par vote  |    7    |     8    |    9    |
 | **Infra**                |
 |    Clôture classique |    2    |     3    |    4    |
 |    Clôture anticipée |    3*   |     3    |
