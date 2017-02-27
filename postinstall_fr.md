@@ -1,3 +1,4 @@
+
 # Post-Installation
 
 L’étape appelée « **post-installation** » est en fait l’étape de configuration initiale de YunoHost. Il faut l’exécuter après l’**installation** du système en lui-même.
@@ -37,11 +38,19 @@ C’est le nom de domaine qui permettra l’accès à votre serveur ainsi qu’a
 
 ### Mot de passe d’administration
 
-C’est le mot de passe qui vous permettra d’accéder à l’[interface d’administration](/admin_fr) de votre serveur. Vous pourrez également l’utiliser pour vous connecter à distance via **SSH**, ou en **SFTP** pour transférer des fichiers. 
+C’est le mot de passe qui vous permettra d’accéder à l’[interface d’administration](/admin_fr) de votre serveur. Vous pourrez également l’utiliser pour vous connecter à distance via **SSH**, ou en **SFTP** pour transférer des fichiers.
 
 De manière générale, c’est la **clé d’entrée à votre système**, pensez donc à la **[choisir attentivement](http://www.commentcamarche.net/faq/8275-choisir-un-bon-mot-de-passe)**.
 
 <br>
+
+---
+
+## En cas de probème
+
+### Échec de la connection sécurisée après la **post-installation**
+
+Si vous utilisez votre propre domaine et selon votre navigateur, vous pourriez vous retrouver bloqué à l'entrée de votre Yunohost tant que vous n'avez pas déployé un certificat valide. Grâce à Yunohost et [Let's Encrypt](https://letsencrypt.org/), c'est plutôt simple : exécutez simplement `yunohost domain cert-install` en ligne de commande pour émettre et installer votre certificat et _Voilà_. Rafraichissez votre navigateur et vous êtes paré.
 
 ---
 

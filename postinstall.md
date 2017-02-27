@@ -40,6 +40,14 @@ This password will be used to access to your server's [administration interface]
 
 ---
 
+## Troubleshooting
+
+### Secured connection fails after **post-installation**
+
+If you're using your own domain and depending on your browser, you might be stuck out of your Yunohost installation until you deploy an appropriate certificate. Thanks to Yunohost and [Let's Encrypt](https://letsencrypt.org/), this proves to be quite easy: just run `yunohost domain cert-install` in command-line to issue and install your certificate and _Voilà_. Refresh your browser and you're good to go.
+
+---
+
 ## And after ?
 
 Once the post-installation finished, check if you can access to your server with your web-browser. If it is not the case, a few more configuration steps may be required.
