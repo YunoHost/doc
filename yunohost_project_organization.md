@@ -171,7 +171,7 @@ Then a member of a group can announce their decision as effective (and proceed w
 - Distribution : Heyyounow
 - Council : Bram, ju, ljf, Maniack, Moul, opi, theodore
 - Core Dev : AlexAubin, Bram, Ju, ljf, Moul, opi
-- Apps : Bram, Ju, ljf, Maniack C, Moul, Scith, Tostaki
+- Apps : Bram, frju365, JimboJo, Ju, ljf, Maniack C, Maxime, Moul, Scith, Tostaki
 - Infra : Bram, Ju, Maniack C, Moul, opi
 - Communication
   - Com : Bram, Moul, ljf, opi
@@ -195,9 +195,9 @@ _Values are rounded (e.g. 5.4 => 5 and 5.5 => 6)._
 |    Anticipated closure |    3*   |     4    |
 |    Closure by voting  |    4    |     5    |    5    |
 | **Apps**                 |
-|    Standard closure |    2    |     4    |    5    |
-|    Anticipated closure |    3*   |     5    |
-|    Closure by voting  |    5    |     5    |    6    |
+|    Standard closure |    2    |     5    |    8    |
+|    Anticipated closure |    3*   |     7    |
+|    Closure by voting  |    7    |     8    |    9    |
 | **Infra**                |
 |    Standard closure |    2    |     3    |    4    |
 |    Anticipated closure |    3*   |     3    |
