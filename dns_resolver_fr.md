@@ -20,7 +20,11 @@ request subnet-mask, broadcast-address, time-offset, routers,
         rfc3442-classless-static-routes, ntp-servers;
 ```
 
-Afin de prendre en compte la modification, redémarrer le serveur.
+Afin de prendre en compte la modification, redémarrer le serveur DNS :
+
+```bash
+service dnsmasq restart
+```
 
 (TODO : il doit être possible de reconfigurer à chaud, mais ça n’a pas fonctionné).
 Il est possible de faire la même modification sur toutes vos machines du réseau local en remplaçant 127.0.0.1 par l’IP de votre serveur.

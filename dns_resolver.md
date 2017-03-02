@@ -18,7 +18,11 @@ request subnet-mask, broadcast-address, time-offset, routers,
         netbios-name-servers, netbios-scope, interface-mtu,
         rfc3442-classless-static-routes, ntp-servers;
 ```
-Apply this modification by rebooting the server.
+Apply this modification by rebooting the DNS server:
+
+```bash
+service dnsmasq restart
+```
 
 (TODO: It's possible to restart a service to take into account the modification -DHCP?-, but didn't work for me).
 It's possible to do same modification in all machine in local network by replacing *127.0.0.1* by IP server.
