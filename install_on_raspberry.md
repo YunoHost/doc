@@ -12,14 +12,16 @@ Before setting up a server at home, it is recommended that you know the [possibl
 
 ## Pre-requisite
 
+- A Raspberry Pi 0, 1, 2 or 3 ;
 - An SD card: **8GB** capacity (at least) and **Class 10** speed rate are highly recommended (like the [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
 - A power supply (either an adapter or a MicroUSB cable)
 - An ethernet cable (RJ-45) to connect your Raspberry Pi to your router. (Raspberry Pi Zero users can connect the Pi using an OTG cable, Wifi dongle and [following these instructions](https://davidmaitland.me/2015/12/raspberry-pi-zero-headless-setup/))
-- The **YunoHost Raspberry Pi image**, available on [build.yunohost.org](http://build.yunohost.org/). (Not needed if you want to manually install YunoHost on an existing Debian system.)
 
 ---
 
-## Installation using an image
+## Installation using the image (recommended)
+
+<a class="btn btn-lg btn-default" href="https://build.yunohost.org/">0. Download the pre-installed image for Raspberry Pi</a>
 
 <a class="btn btn-lg btn-default" href="/copy_image">1. Copy image to the SD card</a>
 
@@ -31,33 +33,28 @@ Before setting up a server at home, it is recommended that you know the [possibl
 
 ---
 
-## Manual installation
+## Manual installation (advanced users)
+
+<div class="alert alert-info" markdown="1">
+We do not recommend the manual installation because it is more technical and longer than using the pre-installed image. This documentation is only intended for advanced users.
+</div>
 
 <div class="alert alert-warning" markdown="1">
 The latest Rasbpian Jessie image requires a screen and a keyboard, as it is no longer possible to connect directly to the Raspberry through SSH. Nevertheless it is possible to re-enable SSH at boot : before starting your Raspberry, put in the boot partition of the SD card an empty file named `ssh` (without extension).
 </div>
 
-0. Install Raspbian Jessie Lite on the SD card ([instructions](https://www.raspberrypi.org/downloads/raspbian/)) and connect to your Pi.
+0. Install Raspbian Jessie Lite on the SD card ([instructions](https://www.raspberrypi.org/downloads/raspbian/)).
 
-1. The root user must have a password, or the installation will fail. To change the root password:
+1. Connect to your Raspberry Pi with the user `pi`. Set the root password with 
 ```bash
 sudo passwd root
 ```
 
-2. Install git
-```bash
-sudo apt-get install git
-```
+2. Edit `/etc/ssh/sshd_config` to allow ssh login for root, by replacing `PermitRootLogin without-password` with `PermitRootLogin yes`. Reload the ssh daemon with `service ssh reload`.
 
-2. Clone the Yunohost install script repository
-```bash
-git clone https://github.com/YunoHost/install_script /tmp/install_script
-```
+3. Disconnect and reconnect, this time as root.
 
-4. Execute the installation script
-```bash
-cd /tmp/install_script && sudo ./install_yunohost
-```
+4. Then follow the <a href="/install_manually">generic manual install procedure</a>.
 
 ---
 
