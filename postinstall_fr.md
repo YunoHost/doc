@@ -46,7 +46,7 @@ De manière générale, c’est la **clé d’entrée à votre système**, pense
 
 ---
 
-## En cas de probème
+## En cas de problème
 
 ### Échec de la connection sécurisée après la **post-installation**
 
