@@ -43,7 +43,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Ferment](https://github.com/mmckegg/ferment)
 - [FileTea](https://filetea.me)
 - [Fossil](http://www.fossil-scm.org)
-- [Garrafin](http://garradin.eu/a-propos) Non-profit organization management/accounting software french only.
 - [GetSimple CMS](http://get-simple.info)
 - [Git-annex](http://git-annex.branchable.com)
 - [Gitit](http://gitit.net)
@@ -124,7 +123,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [uMap](https://umap.openstreetmap.fr/en)
 - [Scramble, Browser-based PGP web mail](https://github.com/dcposch/scramble)
 - [Scribbleton](https://scribbleton.com)
-- [scrumblr](http://scrumblr.ca)
 - [ShareLatex](https://www.sharelatex.com)
 - [Shleuder](http://schleuder2.nadir.org)
 - [Simone](https://github.com/Kloadut/Simone)
