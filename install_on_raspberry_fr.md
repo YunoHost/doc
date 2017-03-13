@@ -35,7 +35,7 @@ Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissan
 
 ## Installation manuelle (déconseillée)
 
-<div class="alert alert-info" markdown="1">
+<div class="alert alert-warning" markdown="1">
 Nous déconseillons l'installation manuelle car elle plus technique et plus longue que l'installation via l'image pré-installée. Cette documentation est surtout destinée aux utilisateurs avancés.
 </div>
 
