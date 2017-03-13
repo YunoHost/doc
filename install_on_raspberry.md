@@ -35,7 +35,7 @@ Before setting up a server at home, it is recommended that you know the [possibl
 
 ## Manual installation (advanced users)
 
-<div class="alert alert-info" markdown="1">
+<div class="alert alert-warning" markdown="1">
 We do not recommend the manual installation because it is more technical and longer than using the pre-installed image. This documentation is only intended for advanced users.
 </div>
 
