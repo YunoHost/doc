@@ -205,7 +205,7 @@ Lorsque la tâche est reçue par *rebuildd*, si le paquet correspond bien à une
 
 ### Utilisation de daily\_build
 
-Un cron défini pour l’utilisateur `pbuilder` se lance **tous les jours à 01:00**, qui exécute le script `daily_build`. Pour chaque paquet (`ssowat`, `yunohost` et `yunohost-admin`), le script met d’abord à jour le dépôt git correspondant depuis la branche *unstable*. Si de nouveaux commits ont été faits depuis la veille, une nouvelle version du paquet sera construite.
+Un cron défini pour l’utilisateur `pbuilder` se lance **tous les jours à 01:00**, qui exécute le script `daily_build`. Pour chaque paquet (`ssowat`, `moulinette`, `yunohost` et `yunohost-admin`), le script met d’abord à jour le dépôt git correspondant depuis la branche *unstable*. Si de nouveaux commits ont été faits depuis la veille, une nouvelle version du paquet sera construite.
 
 Plus précisément, une nouvelle entrée dans le *changelog* sera d’abord ajoutée, avec une version sous la forme **YYYY.MM.DD+HHMM**. Un paquet source sera ensuite construit, avant de passer le relais au script `/usr/local/bin/repo/include-changes`. Ce dernier va exécuter les bonnes commandes pour *reprepro* afin d’inclure dans le bon dépôt et composant le paquet source fraîchement créé.
 

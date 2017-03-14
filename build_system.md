@@ -127,7 +127,7 @@ A fourth section is dedicated for exceptional cases like bugfixes in stable bran
 
 #### Daily build
 
-A cron task defined for `pbuilder` user is executed **every day at 01:00**. The script will update the `packages` git repository and submodules (`ssowat`, `moulinette`, `moulinette-yunohost` & `admin_js`). 
+A cron task defined for `pbuilder` user is executed **every day at 01:00**. The script will update the `packages` git repository and submodules (`ssowat`, `moulinette`, `yunohost` & `yunohost-admin`). 
 Once sources are up to date, the script will rebuild packages that have been updated the day.
 
 Sources packages will then need to be created and moved into `/var/www/repo.yunohost.org/daily/incomming` folder.
