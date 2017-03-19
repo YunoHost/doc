@@ -140,7 +140,7 @@ Une url ajoutée avec la clé *protected_uris* sera bloquée par le SSO et acces
 Les clés `skipped_regex`, `unprotected_regex` et `protected_regex` sont les équivalents en "expressions régulières" des 3 clés précédentes.
 > Il est important de noter que ce ne sont pas véritablement des expressions régulières qui seront interprétés, mais des patterns lua, dont la syntaxe différe légèrement.  
 > [Plus d'infos sur la syntaxe des patterns lua.](http://wxlua.free.fr/Tutoriel_Lua/Tuto/Strings/strings6.php) [Ainsi que quelques exemples.](http://wxlua.free.fr/Tutoriel_Lua/Tuto/Strings/strings7.php)  
-Le pattern étant recherché sur l'ensemble des urls soumises, afin d'éviter des débordements on préfera ajouter au pattern l'url complète qui doit être prise en compte par ssowat.
+Les patterns utilisant des regex, contrairement aux précédents, sont recherchés sur la totalité de l'URL, et non uniquement sur la partie spécifique à l'application. Il convient donc d'écrire des patterns qui englobent l'URL entière (incluant *domaine* et *chemin*).
 > Par exemple, si on souhaite placer *skipped_regex* sur /blog en considérant une suite de chiffres indéfinie en argument. On indiquera ceci :
 > ```bash
 > ynh_app_setting_set nom_app skipped_regex "$domain$path/blog%?%d+$"
