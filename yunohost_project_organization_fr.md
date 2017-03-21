@@ -175,7 +175,7 @@ Alors un membre du groupe peut annoncer la décision comme effective (et procéd
 - Apps : Bram, frju365, JimboJoe, Ju, ljf, Maniack C, Maxime, Moul, Scith, Tostaki
 - Infra : Bram, Ju, Maniack C, Moul, opi
 - Communication
-  - Com : Bram, Moul, ljf, opi
+  - Com : Bram, Moul, korbak, ljf, opi
   - Doc : Moul, Theodore
   - Trad : Jean-Baptiste
 - Distribution : Heyyounow
