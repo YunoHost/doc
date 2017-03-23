@@ -8,8 +8,8 @@ Allez à l’adresse suivante : http://192.168.0.1 (ou celle-ci http://192.168.
 ### Tutoriel
 * [Tutoriel pour les ouvrir les ports sur les boxs d’Orange, Free, SFR, Dartybox, Belgacom et sur les routeurs Netgear](https://craym.eu/tutoriels/utilitaires/ouvrir_les_ports_de_sa_box.html).
 
-### Ouverture des ports
-L’ouverture des ports suivants est nécessaire au fonctionnement des différents services.
+### Redirection des ports
+La redirection des ports suivants est nécessaire au fonctionnement des différents services.
 
 **TCP :**
    * Web : 80 <small>(HTTP)</small>, 443 <small>(HTTPS)</small>
@@ -27,15 +27,17 @@ L’ouverture des ports suivants est nécessaire au fonctionnement des différen
 
 L’UPnP permet d’ouvrir automatiquement les ports. Si ce n’est pas le cas par défaut, vous pouvez l’activer via l’interface d’administration de votre routeur.
 
-Dans certains cas après avoir changé la configuration de votre box (ex : sur Freebox ajout d’IPv6, débloquer le SMTP…) et après l’avoir rebooté. Il se peut que vos ports ne soient plus ouverts. Il faut donc réautoriser ces ports par le firewall :
+Dans certains cas après avoir changé la configuration de votre box (ex : sur Freebox ajout d’IPv6, débloquer le SMTP…) et après l’avoir rebooté. Il se peut que vos ports ne soient plus redirigés. Il faut donc réautoriser ces ports par le firewall :
 
-```sudo yunohost firewall reload```
+```bash
+sudo yunohost firewall reload
+```
 
-#### Ouverture manuelle de ports
+#### Redirection manuelle des ports
 
-Dans le cas où l’UPnP ne fonctionne pas, l’ouverture manuelle des ports est nécessaire. Encore une fois référez-vous à l’interface d’administration de votre routeur.
+Dans le cas où l’UPnP ne fonctionne pas, la redirection manuelle des ports est nécessaire. Encore une fois, référez-vous à l’interface d’administration de votre routeur.
 
-ATTENTION (CPU ARM) : l’activation de l’UPnP est inefficace avec les serveurs équipés d’un processeur ARM (remarque valable pour YunoHost v2.2). Une ouverture manuelle des ports du routeur est alors requise.
+ATTENTION (CPU ARM) : l’activation de l’UPnP est inefficace avec les serveurs équipés d’un processeur ARM (remarque valable pour YunoHost v2.2). Une redirection manuelle des ports du routeur est alors requise.
 
 #### Le courrier électronique
 
