@@ -60,8 +60,8 @@ The previous instructions will configure a new git alias named `yunobump`. It is
 
 ```bash
 # You Only Clone Once
-$ git clone git@github.com:YunoHost/yunohost-config-nginx.git
-$ cd yunohost-config-nginx
+$ git clone git@github.com:YunoHost/yunohost.git
+$ cd yunohost
 
 # Be sure to be up-to-date, and don't forget to get the tags !
 $ git fetch --tags
