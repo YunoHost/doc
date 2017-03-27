@@ -108,6 +108,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Paperless](https://github.com/danielquinn/paperless)
 - [Paperwork](http://paperwork.rocks)
 - [pdfy](https://github.com/joepie91/pdfy)
+- [PeerTube](https://github.com/Chocobozzz/PeerTube)
 - [Pelican](http://blog.getpelican.com)
 - [Peps](https://github.com/MLstate/PEPS)
 - [PHPList](http://www.phplist.com)
