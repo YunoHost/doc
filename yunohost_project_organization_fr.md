@@ -261,7 +261,7 @@ Cette partie liste les kits de droits d’administration pour les différents gr
 - membre de l’[équipe `Doc` de l’organisation `YunoHost`](https://github.com/orgs/YunoHost/teams/doc).
 
 #### Communication
-- accès aux comptes Diaspora*, Twitter et au compte `YunoHost` du forum.
+- accès aux comptes [Diaspora*](https://framasphere.org/people/01868d20330c013459cf2a0000053625), [Twitter](https://twitter.com/yunohost) et au [compte `YunoHost` du forum](https://forum.yunohost.org/users/yunohost/activity).
 
 #### Traduction
 - administrateur sur l’[outil de traduction Weblate](https://translate.yunohost.org/projects/yunohost/).
