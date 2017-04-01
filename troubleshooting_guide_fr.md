@@ -5,7 +5,7 @@ Ce guide peut trouver son intérêt lors du débuggage d’une nouvelle applicat
 
 ## Notes générales
 ### Ne cassez pas YunoHost
-La meilleure manière de ne pas avoir de pannes est de ne pas bricoler sur votre serveur. Cela signifie que dès que vous souhaitez essayer quelque chose de nouveau (application non officielle, nouvelle configuration personnalisée, création d’une nouvelle application), essayez d'abord cela sur un serveur de test et non de production. Pour faire cela, vous pouvez par exemple utiliser une [box Vagrant](vagrant_fr) ou un [droplet DigitalOcean](install_on_vps_fr) pour 1 centime/here.
+La meilleure manière de ne pas avoir de pannes est de ne pas bricoler sur votre serveur. Cela signifie que dès que vous souhaitez essayer quelque chose de nouveau (application non officielle, nouvelle configuration personnalisée, création d’une nouvelle application), essayez d'abord cela sur un serveur de test et non de production. Pour faire cela, vous pouvez par exemple utiliser une [box Vagrant](vagrant_fr) ou un [droplet DigitalOcean](install_on_vps_fr) pour 1 centime/heure.
 
 Vous pouvez aussi lire ceci si vous avez encore envie de bricoler sur votre instance YunoHost en production : https://wiki.debian.org/DontBreakDebian
 
