@@ -88,6 +88,8 @@
            * [Radicale](/app_radicale_fr)
            * [RoundCube](/app_roundcube_fr)
            * [Minidlna](app_minidlna_fr)
+        * [Applications communautaires](/apps_in_progress_fr)
+           * [LimeSurvey](/app_limesurvey_fr)
 
     * [Guide du contributeur](/contribute_fr)
         * Développement

@@ -11,3 +11,5 @@
    * [Transmission](/app_transmission_en)
    * [Radicale](/app_radicale)
    * [RoundCube](/app_roundcube_en)
+* [Community applications](/apps_in_progress_en)
+   * [LimeSurvey](/app_limesurvey_en)

@@ -78,6 +78,8 @@
            * [Radicale](/app_radicale)
            * [RoundCube](/app_roundcube_en)
            * [Minidlna](app_minidlna_en)
+        * [Community applications](/apps_in_progress_en)
+           * [LimeSurvey](/app_limesurvey_en)
 
     * [Contributor guide](/contribute)
         * Developement
