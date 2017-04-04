@@ -2,8 +2,6 @@
 Certificate management
 ======================
 
-<div class="alert alert-danger">This feature is only available on the beta for now, it should be released quite soon</div>
-
 Managing certificates with Yunohost
 -----------------------------------
 
@@ -62,12 +60,19 @@ certificate on all your domains which have a self-signed certificate.
 
 You should go in your nginx configuration, and remove the `letsencrypt.conf` (or
 whatever you called the file containing the `location
-'/.well-known/acme-challenge'` block) for each of your domains. 
+'/.well-known/acme-challenge'` block) for each of your domains. Also remove the symlink
+to your current certificates :
+
+```bash
+rm /etc/yunohost/certs/your.domain.tld/key.pem
+rm /etc/yunohost/certs/your.domain.tld/crt.pem
+```
 
 Then run :
 
 ```bash
-yunohost domain cert-install your.domain.tld --force
+yunohost domain cert-install your.domain.tld --force --self-signed
+yunohost domain cert-install your.domain.tld
 ```
 
 for each of your domains you want a Let's Encrypt certificate.

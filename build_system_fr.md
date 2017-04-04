@@ -78,8 +78,8 @@ Ceci va configurer un nouvel alias git nommé `yunobump`, global (stocké dans `
 
 ```bash
 # You Only Clone Once
-$ git clone git@github.com:YunoHost/yunohost-config-nginx.git
-$ cd yunohost-config-nginx
+$ git clone git@github.com:YunoHost/yunohost.git
+$ cd yunohost
 
 # Be sure to be up-to-date, and don't forget to get the tags !
 $ git fetch --tags
@@ -195,7 +195,7 @@ Enfin, pour gérer au mieux ces outils, deux scripts ont été développés, sto
 
 #### Déroulement de la construction d’un paquet
 
-Tout est déclenché par *reprepro*, configuré (voir `/var/www/repo.yunohost.org/debian/conf/distribustion`) pour exécuter le script `/usr/local/bin/repo/process-include` chaque fois qu’un paquet est inclus dans un dépôt (plus précisément, qu’un fichier `.changes` est inclus, via la commande `reprepro include`). Ce dernier va vérifier un certain nombre de choses, dont le fait qu’il s’agit bien d’un paquet source, puis va ajouter une nouvelle tâche pour *rebuildd*, afin que le paquet soit créé.
+Tout est déclenché par *reprepro*, configuré (voir `/var/www/repo/debian/conf/distribution`) pour exécuter le script `/usr/local/bin/repo/process-include` chaque fois qu’un paquet est inclus dans un dépôt (plus précisément, qu’un fichier `.changes` est inclus, via la commande `reprepro include`). Ce dernier va vérifier un certain nombre de choses, dont le fait qu’il s’agit bien d’un paquet source, puis va ajouter une nouvelle tâche pour *rebuildd*, afin que le paquet soit créé.
 
 Lorsque la tâche est reçue par *rebuildd*, si le paquet correspond bien à une distribution et architecture supportée (voir `/etc/rebuildd/rebuilddrc`), trois scripts seront exécutés les uns après les autres, si aucune erreur n’intervient :
 
@@ -205,7 +205,7 @@ Lorsque la tâche est reçue par *rebuildd*, si le paquet correspond bien à une
 
 ### Utilisation de daily\_build
 
-Un cron défini pour l’utilisateur `pbuilder` se lance **tous les jours à 01:00**, qui exécute le script `daily_build`. Pour chaque paquet (`ssowat`, `yunohost` et `yunohost-admin`), le script met d’abord à jour le dépôt git correspondant depuis la branche *unstable*. Si de nouveaux commits ont été faits depuis la veille, une nouvelle version du paquet sera construite.
+Un cron défini pour l’utilisateur `pbuilder` se lance **tous les jours à 01:00**, qui exécute le script `daily_build`. Pour chaque paquet (`ssowat`, `moulinette`, `yunohost` et `yunohost-admin`), le script met d’abord à jour le dépôt git correspondant depuis la branche *unstable*. Si de nouveaux commits ont été faits depuis la veille, une nouvelle version du paquet sera construite.
 
 Plus précisément, une nouvelle entrée dans le *changelog* sera d’abord ajoutée, avec une version sous la forme **YYYY.MM.DD+HHMM**. Un paquet source sera ensuite construit, avant de passer le relais au script `/usr/local/bin/repo/include-changes`. Ce dernier va exécuter les bonnes commandes pour *reprepro* afin d’inclure dans le bon dépôt et composant le paquet source fraîchement créé.
 
@@ -238,21 +238,21 @@ $ build_deb -c distribution -d <composant> /chemin/du/paquet/source
 #### Lister les paquets
 
 ```bash
-$ reprepro -V -b /var/www/repo.yunohost.org/debian -C <composant> list <nom_de_code>
+$ reprepro -V -b /var/www/repo/debian -C <composant> list <nom_de_code>
 ```
 
 #### Suppression d’un paquet
 
 ```bash
-$ reprepro -V -b /var/www/repo.yunohost.org/debian -C <composant> remove <nom_de_code> nom_du_paquet
+$ reprepro -V -b /var/www/repo/debian -C <composant> remove <nom_de_code> nom_du_paquet
 ```
 
 #### Gestion des backports
 
 Pour la gestion des paquets venant du dépôt backport, il est possible de les intégrer rapidement dans le dépôt de yunohost.
 
-Pour ce faire il faut ajouter le nom du paquet dans le fichier `/var/www/repo.yunohost.org/debian/conf/<nom_de_code>-<composant>.list`, puis exécuter la commande : 
+Pour ce faire il faut ajouter le nom du paquet dans le fichier `/var/www/repo/debian/conf/<nom_de_code>-<composant>.list`, puis exécuter la commande : 
 
 ```bash
-$ reprepro -V -b /var/www/repo.yunohost.org/debian -C <composant> update <nom_de_code>
+$ reprepro -V -b /var/www/repo/debian -C <composant> update <nom_de_code>
 ```

@@ -23,3 +23,18 @@ L’utilitaire de détection automatique de Thunderbird ne fonctionne pas avec l
 
 #### Pour Android
 L’application [K-9 Mail](https://github.com/k9mail) fonctionne.
+
+
+#### Pour Firefox OS
+
+Testé avec Firefox OS 2.6.
+Sur la page d’accueil, entrez votre nom d’utilisateur et l’adresse email, puis allez dans la configuration manuelle :
+
+<a href="/images/ffos_email_config_home_screen_empty.png"><img src="/images/ffos_email_config_home_screen_empty.png" width=200/></a> <a href="/images/ffos_email_config_home_screen_fill.png"><img src="/images/ffos_email_config_home_screen_fill.png" width=200/></a>
+
+Configurer manuellement le formulaire comme indiqué sur les captures d’écran suivantes :
+
+<a href="/images/ffos_email_config_manual_conf_empty.png"><img src="/images/ffos_email_config_manual_conf_empty.png" width=200/></a> <a href="/images/ffos_email_config_manual_conf_fill.png"><img src="/images/ffos_email_config_manual_conf_fill.png" width=200/></a>
+
+
+<a href="/images/ffos_email_config_manual_conf_2_empty.png"><img src="/images/ffos_email_config_manual_conf_2_empty.png" width=200/></a> <a href="/images/ffos_email_config_manual_conf_2_fill.png"><img src="/images/ffos_email_config_manual_conf_2_fill.png" width=200/></a>
