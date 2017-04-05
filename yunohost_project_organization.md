@@ -223,13 +223,17 @@ For the documentation group, the number of views for an anticipated closure of a
 
 For the distribution group, since there's only Heyyounow at the moment, the Council will have the task of making Standard and Major decisions.
 
-### Council
+## Administration group's rights
+This part list administration rights for differents groups of YunoHost project:
 
+(Warning, this is not decision rights here).
+
+### Council
 - No administration right. Authorizations are completed through the other groups membership,
 - Forum: ["Conseil" group member](https://forum.yunohost.org/groups/Conseil).
 
 ### Core Dev
-- Github: Devs team member inside YunoHost's organization (permission to push, merge...),
+- GitHub: Devs team member inside YunoHost's organization (permission to push, merge…),
 - Redmine: project member of [`YunoHost`](https://dev.yunohost.org/projects/yunohost) and [`Moulinette`](https://dev.yunohost.org/projects/moulinette),
 - Continous integration: writting access to CI-Core,
 - XMPP: ["dev"](xmpp:dev@conference.yunohost.org?join) channel moderator,
@@ -237,15 +241,15 @@ For the distribution group, since there's only Heyyounow at the moment, the Coun
 
 ### Infra
 - Servers: SSH access using SSH key on some (as needed) or every servers,
-- Github: [Infra team member inside YunoHost's organization](https://github.com/orgs/YunoHost/teams/infra) (permission to push, merge...),
+- GitHub: [Infra team member inside YunoHost's organization](https://github.com/orgs/YunoHost/teams/infra) (permission to push, merge…),
 - Redmine: [Infra project member](https://dev.yunohost.org/projects/y-u-no-infra/),
 - Forum, Weblate, Redmine, XMPP, CI: administrator,
 - Forum: [Infra group member](https://forum.yunohost.org/groups/Infra).
 
 ### Apps
-- Github: YunoHost-Apps [Owner](https://github.com/orgs/YunoHost-Apps/people?utf8=%E2%9C%93&query=%20role%3Aowner) (permission to push and merge on all repositories),
+- GitHub: YunoHost-Apps [Owner](https://github.com/orgs/YunoHost-Apps/people?utf8=%E2%9C%93&query=%20role%3Aowner) (permission to push and merge on all repositories),
 - Redmine: [Apps project member](https://dev.yunohost.org/projects/apps),
-- Github: [Apps team member inside YunoHost's organization](https://github.com/orgs/YunoHost/teams/apps) (permission to push, merge...),
+- GitHub: [Apps team member inside YunoHost's organization](https://github.com/orgs/YunoHost/teams/apps) (permission to push, merge…),
 - Continous integration: access to [CI-Apps](https://ci-apps.yunohost.org),
 - XMPP: [Apps channel moderator](https://im.yunohost.org/logs/apps),
 - Forum: [Apps group member](https://forum.yunohost.org/groups/Apps).
