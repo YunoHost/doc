@@ -278,9 +278,9 @@ This part list administration rights for differents groups of YunoHost project:
 - Publication: SFTP access can be set up,
 - Forum: [`Distribution` group team member](https://forum.yunohost.org/groups/Distribution).
 
-### Pending decisions for the groups
+## Pending decisions for the groups
 
-#### Council
+### Council
 - Should we elect Council members rather than co-opt them? There's a risk of it becoming a "political campaign"!
 - Should special interest group membership be restricted to cooptation like for the Council?
 - Proposal to change Council to Collegiate
@@ -292,21 +292,21 @@ This part list administration rights for differents groups of YunoHost project:
 - Review the build system: stable <— testing <— branches
 - Freeze nohost.me and abandoning services
 
-#### Core Dev Group
+### Core Dev Group
 - How to manage pull requests?
    - Each ticket gives rise to a branch and a ticket; you make a pull/merge request, the community verifies that it works, a decision is taken to integrate. 
 
-#### Apps Group
+### Apps Group
 - For community-based apps, issues are on GitHub as they should be, but discussions are on the forum
 
-#### Communication Group
+### Communication Group
 - Bug report from the forum
 - Cleanup of the forum to avoid noise
 - Proposal to delete support chat
 - How to make the forum a more active and central hub
 - How to organise rights on the forum (if groups want to vote on the forum)
 
-#### Miscellaneous
+### Miscellaneous
 - Request on the forum with notification to the Council members and to representatives of relevant special interest groups
 - Vote over 2 weeks with a post on the forum
 - Create 4 channels for Core Dev, Apps, Communication and Infrastructure
