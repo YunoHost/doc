@@ -223,8 +223,63 @@ Pour la doc, le nombre d'avis pour la cloture anticipée d'une décision mineure
 
 Pour le groupe distribution, étant donné qu'il n'y a pour l'instant que Heyyounow, le Conseil sera sollicité pour les décisions Standard ou Majeure.
 
-### Décisions à venir pour les groupes
-#### Conseil
+## Droits d’administration afférents aux groupes
+Cette partie liste les kits de droits d’administration pour les différents groupes du projet YunoHost :
+
+(Attention, il ne s’agit pas des droits de prises de décisions dans ce cas).
+
+### Conseil
+- Aucun droits d’administration. Les droits sont complétés avec le fait d’être présents dans les autres groupes,
+- Forum : membre du [groupe `Conseil`](https://forum.yunohost.org/groups/Conseil).
+
+### Dev
+- GitHub : membre de l’[équipe `Devs` de l’organisation `YunoHost`](https://github.com/orgs/YunoHost/teams/devs),
+- Redmine : membre des projets [`YunoHost`](https://dev.yunohost.org/projects/yunohost) et [`Moulinette`](https://dev.yunohost.org/projects/moulinette),
+- Intégration continue : droits sur les outils d’intégrations continue CI-core,
+- XMPP : modérateur du salon [`dev`](xmpp:dev@conference.yunohost.org?join),
+- Forum : membre du [groupe `Dev`](https://forum.yunohost.org/groups/Dev).
+
+### Infra
+- Serveurs : accès SSH par clé sur certains (selon les besoins) ou sur la totalité des serveurs,
+- GitHub : membre de l’[équipe `Infra` de l’organisation `YunoHost`](https://github.com/orgs/YunoHost/teams/infra),
+- Redmine: membre du [projet `Infra`](https://dev.yunohost.org/projects/y-u-no-infra/),
+- Forum, Weblate, Redmine, XMPP, CI: administrateur,
+- Forum : membre du [groupe `Infra`](https://forum.yunohost.org/groups/Infra).
+
+### Apps
+- GitHub : propriétaire (Owner) [de l’organisation YunoHost-Apps](https://github.com/orgs/YunoHost-Apps/people?utf8=%E2%9C%93&query=%20role%3Aowner),
+- Redmine : membre du [projet `Apps`](https://dev.yunohost.org/projects/apps),
+- GitHub : membre de l’[équipe `Apps` de l’organisation `YunoHost`](https://github.com/orgs/YunoHost/teams/apps),
+- Intégration continue : accès à [CI-Apps](https://ci-apps.yunohost.org),
+- XMPP : admin et modérateur sur le [salon `Apps`](xmpp:apps@conference.yunohost.org?join),
+- Forum : membre du [groupe `Apps`](https://forum.yunohost.org/groups/Apps).
+
+### Communication
+- Forum : membre du [groupe `Com`](https://forum.yunohost.org/groups/Communication).
+
+#### Doc
+- GitHub : membre de l’[équipe `Doc` de l’organisation `YunoHost`](https://github.com/orgs/YunoHost/teams/doc).
+
+#### Communication
+- Diaspora* : accès au compte [YunoHost](https://framasphere.org/people/01868d20330c013459cf2a0000053625),
+- Twitter : accès au compte [YunoHost](https://twitter.com/yunohost),
+- Forum : accès au compte [`YunoHost`](https://forum.yunohost.org/users/yunohost/activity).
+
+#### Traduction
+- Weblate : administrateur sur l’[outil de traduction](https://translate.yunohost.org/projects/yunohost/).
+
+#### Entraide
+- Forum : statut de modérateur,
+- XMPP : statut de modérateur sur le salon [`support`](xmpp:support@conference.yunohost.org?join).
+
+### Distribution
+- GitHub : membre de l’[équipe `Distrib` de l’organisation `YunoHost`](https://github.com/orgs/YunoHost/teams/distribution),
+- Information : la diffusion des images (ISO…) doit se faire en collaboration avec le groupe `Infra` (et `Doc`),
+- Publication : un accès SFTP peut être mis en place,
+- Forum : membre du [groupe `Distribution`](https://forum.yunohost.org/groups/Distribution).
+
+## Décisions à venir pour les groupes
+### Conseil
 - Faut-il élire les membres du Conseil plutôt que de les coopter ? Risque de se transformer en "campagne politique"!
 - Faut-il limiter l'ouverture des groupes d'intérêts par cooptation comme pour le Conseil ?
 - Proposition de changer Conseil en Collégiale
@@ -236,22 +291,21 @@ Pour le groupe distribution, étant donné qu'il n'y a pour l'instant que Heyyou
 - Revoir système de build : stable <— testing <— branches
 - Gel de nohost.me et question de l'abandon des services
 
-#### Groupe Dev
+### Groupe Dev
  - Comment gérer les pull request ?
    - Chaque ticket fait l'objet d'une branche et d'un ticket, tu fais une pull/merge request, la communauté vérifie que ça fonctionne, une décision est prise d'intégrer.
 
-
-#### Groupe Apps
+### Groupe Apps
  -  Pour les apps communautaires, les issues sont bien sur Github, les discussions sur le forum
 
-#### Groupe Communication
+### Groupe Communication
 - Rapport de bug à partir du forum
 - Faire en sorte de nettoyer le forum pour éviter le bruit
 - Proposition de supprimer le salon de support
 - Comment rendre le forum plus actif et central
 - Comment s'organiser pour les privilèges sur le forum (si les groupes veulent voter sur le forum)
 
-#### Autres
+### Autres
 - Demande sur le forum avec notification des membres du Conseil et des représentants des groupes d’intérêts concernés.
 - Vote sur deux semaines par un post sur le forum
 - Créer quatre canaux pour le Dev, les Apps, la Communication et l'Infrastructure
