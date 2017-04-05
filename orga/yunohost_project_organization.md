@@ -171,10 +171,10 @@ Then a member of a group can announce their decision as effective (and proceed w
 - Distribution : Heyyounow
 - Council : Bram, ju, ljf, Maniack, Moul, opi, theodore
 - Core Dev : AlexAubin, Bram, Ju, ljf, Moul, opi
-- Apps : Bram, Ju, ljf, Maniack C, Moul, Scith, Tostaki
+- Apps : Bram, frju365, JimboJoe, Ju, ljf, Maniack C, Maxime, Moul, Scith, Tostaki
 - Infra : Bram, Ju, Maniack C, Moul, opi
 - Communication
-  - Com : Bram, Moul, ljf, opi
+  - Com : Bram, Moul, korbak, ljf, opi
   - Doc : Moul, Theodore
   - Trans : Jean-Baptiste
 - Distribution : Heyyounow
@@ -195,9 +195,9 @@ _Values are rounded (e.g. 5.4 => 5 and 5.5 => 6)._
 |    Anticipated closure |    3*   |     4    |
 |    Closure by voting  |    4    |     5    |    5    |
 | **Apps**                 |
-|    Standard closure |    2    |     4    |    5    |
-|    Anticipated closure |    3*   |     5    |
-|    Closure by voting  |    5    |     5    |    6    |
+|    Standard closure |    2    |     5    |    8    |
+|    Anticipated closure |    3*   |     7    |
+|    Closure by voting  |    7    |     8    |    9    |
 | **Infra**                |
 |    Standard closure |    2    |     3    |    4    |
 |    Anticipated closure |    3*   |     3    |
@@ -223,14 +223,68 @@ For the documentation group, the number of views for an anticipated closure of a
 
 For the distribution group, since there's only Heyyounow at the moment, the Council will have the task of making Standard and Major decisions.
 
-### Pending decisions for the groups
+## Administration group's rights
+This part list administration rights for differents groups of YunoHost project:
 
-#### Council
+(Warning, this is not decision rights here).
+
+### Council
+- No administration right. Authorizations are completed through the other groups membership,
+- Forum: ["Conseil" group member](https://forum.yunohost.org/groups/Conseil).
+
+### Core Dev
+- GitHub: Devs team member inside YunoHost's organization (permission to push, merge…),
+- Redmine: project member of [`YunoHost`](https://dev.yunohost.org/projects/yunohost) and [`Moulinette`](https://dev.yunohost.org/projects/moulinette),
+- Continous integration: writting access to CI-Core,
+- XMPP: ["dev"](xmpp:dev@conference.yunohost.org?join) channel moderator,
+- Forum: ["Dev" group member](https://forum.yunohost.org/groups/Dev).
+
+### Infra
+- Servers: SSH access using SSH key on some (as needed) or every servers,
+- GitHub: [Infra team member inside YunoHost's organization](https://github.com/orgs/YunoHost/teams/infra) (permission to push, merge…),
+- Redmine: [Infra project member](https://dev.yunohost.org/projects/y-u-no-infra/),
+- Forum, Weblate, Redmine, XMPP, CI: administrator,
+- Forum: [Infra group member](https://forum.yunohost.org/groups/Infra).
+
+### Apps
+- GitHub: YunoHost-Apps [Owner](https://github.com/orgs/YunoHost-Apps/people?utf8=%E2%9C%93&query=%20role%3Aowner) (permission to push and merge on all repositories),
+- Redmine: [Apps project member](https://dev.yunohost.org/projects/apps),
+- GitHub: [Apps team member inside YunoHost's organization](https://github.com/orgs/YunoHost/teams/apps) (permission to push, merge…),
+- Continous integration: access to [CI-Apps](https://ci-apps.yunohost.org),
+- XMPP: [Apps channel moderator](https://im.yunohost.org/logs/apps),
+- Forum: [Apps group member](https://forum.yunohost.org/groups/Apps).
+
+### Communication
+- Forum: [Com group member](https://forum.yunohost.org/groups/Communication).
+
+#### Documentation
+- GitHub: [Doc team member of YunoHost's organization](https://github.com/orgs/YunoHost/teams/doc).
+
+#### Communication
+- Diaspora*: [account access](https://framasphere.org/people/01868d20330c013459cf2a0000053625),
+- Twitter: [account access](https://twitter.com/yunohost),
+- Forum: [account access](https://forum.yunohost.org/users/yunohost/activity).
+
+#### Translation
+- Weblate: [translator tool admin](https://translate.yunohost.org/projects/yunohost/).
+
+#### Mutual assistance (support)
+- Forum: moderator status,
+- XMPP: [`support` chanel moderator](xmpp:support@conference.yunohost.org?join).
+
+### Distribution
+- GitHub: [YunoHost's organisation `Distrib` team member](https://github.com/orgs/YunoHost/teams/distribution),
+- Information: image distribution (ISO…) should be done in collaboration with `Infra` group (and `Doc`),
+- Publication: SFTP access can be set up,
+- Forum: [`Distribution` group team member](https://forum.yunohost.org/groups/Distribution).
+
+## Pending decisions for the groups
+
+### Council
 - Should we elect Council members rather than co-opt them? There's a risk of it becoming a "political campaign"!
 - Should special interest group membership be restricted to cooptation like for the Council?
 - Proposal to change Council to Collegiate
 - Migrate the project infrastructure server under YunoHost (with prepackaged apps like pad, dogs and mumble?)
-- Let's Encrypt
 - New system for documentation
 - Improvement of documentation
 - XMPP server migration
@@ -238,21 +292,21 @@ For the distribution group, since there's only Heyyounow at the moment, the Coun
 - Review the build system: stable <— testing <— branches
 - Freeze nohost.me and abandoning services
 
-#### Core Dev Group
+### Core Dev Group
 - How to manage pull requests?
    - Each ticket gives rise to a branch and a ticket; you make a pull/merge request, the community verifies that it works, a decision is taken to integrate. 
 
-#### Apps Group
+### Apps Group
 - For community-based apps, issues are on GitHub as they should be, but discussions are on the forum
 
-#### Communication Group
+### Communication Group
 - Bug report from the forum
 - Cleanup of the forum to avoid noise
 - Proposal to delete support chat
 - How to make the forum a more active and central hub
 - How to organise rights on the forum (if groups want to vote on the forum)
 
-#### Miscellaneous
+### Miscellaneous
 - Request on the forum with notification to the Council members and to representatives of relevant special interest groups
 - Vote over 2 weeks with a post on the forum
 - Create 4 channels for Core Dev, Apps, Communication and Infrastructure

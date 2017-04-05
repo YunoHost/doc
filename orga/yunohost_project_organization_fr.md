@@ -74,7 +74,7 @@ La constitution de groupes part du constat que YunoHost compte beaucoup de sous-
 Les groupes sont ouverts à tous les contributeurs souhaitant participer au développement de YunoHost. Chacun peut s'inscrire aux canaux de communication associés aux groupes auxquels il souhaite prendre part. Chaque inscrit est libre d'échanger avec le reste du groupe et de proposer une prise de décision à la suite d'une étape d'échange et d'amélioration de la proposition. Il est recommandé aux contributeurs de documenter au maximum leurs décisions et leurs contributions. Ceci permet de renforcer l'autonomie des groupes en cas de départs ou d'absences de certains de leurs membres.
 Afin de faciliter sa gestion, chaque groupe nomme donc un coordinateur (et un remplaçant) dont le rôle est :  
 
-- d'accueillir et fédérer les nouveaux contributeurs réguliers de son groupe
+- d'accueillir et de fédérer les nouveaux contributeurs réguliers de son groupe
 - de tenir informé le Conseil des décisions prises au sein du groupe (cf. point suivant)
 
 Le choix d'un outil de communication est laissé à chaque groupe en fonction de sa pertinence (forum, chat, ML, etc.).
@@ -110,7 +110,7 @@ Si un consensus sur une décision à prendre n'est pas trouvée au sein d'un gro
     - pouvoir laisser le temps à tout le monde de s'exprimer et ne pas prendre la décision trop vite
     -  maintenir un rythme car si le quota des réponses est rempli avant le temps imparti, il n'y a pas besoin d'attendre l'avis de tout les membres du groupe
        - le quota est à évaluer en fonction des personnes inscrites au groupe (ou au Conseil selon la situation) qui ont manifesté leurs souhaits d'être considéré comme votant régulier => exemple kload peut vouloir donner son avis ponctuellement, mais à priori il ne souhaitera pas être considéré comme membre votant actif du Conseil
-    - pouvoir être repoussable sur simple demande d'une des personnes du groupe. Et seulement du groupe, pas tous les contrib.
+    - pouvoir être repoussable sur simple demande d'une des personnes du groupe. Et seulement du groupe, pas tous les contributeurs.
 
 ##### 2) Ouverture de la discussion, plusieurs réponses possibles :
 Tout le monde peut changer de positions à n'importe quel moment, mais il est de bon ton de laisser au groupe le temps de réagir si cela est nécessaire (pas passer de positif à négatif puis rejeter la proposition 3 min après par exemple.)
@@ -172,15 +172,15 @@ Alors un membre du groupe peut annoncer la décision comme effective (et procéd
 
 - Conseil : Bram, ju, ljf, Maniack, Moul, opi, theodore.
 - Core Dev : AlexAubin, Bram, Ju, ljf, Moul, opi
-- Apps : Bram, Ju, ljf, Maniack C, Moul, Scith, Tostaki
+- Apps : Bram, frju365, JimboJoe, Ju, ljf, Maniack C, Maxime, Moul, Scith, Tostaki
 - Infra : Bram, Ju, Maniack C, Moul, opi
 - Communication
-  - Com : Bram, Moul, ljf, opi
+  - Com : Bram, Moul, korbak, ljf, opi
   - Doc : Moul, Theodore
   - Trad : Jean-Baptiste
 - Distribution : Heyyounow
 
-## Tableau récapitualtif du nombre d'avis nécéssaire pour la prise de décision
+## Tableau récapitulatif du nombre d'avis nécéssaire pour la prise de décision
 
 _Les valeurs sont arrondies (exemple: 5,4 => 5 et 5,5 => 6)._
 
@@ -195,9 +195,9 @@ _Les valeurs sont arrondies (exemple: 5,4 => 5 et 5,5 => 6)._
 |    Clôture anticipée |    3*   |     4    |
 |    Clôture par vote  |    4    |     5    |    5    |
 | **Apps**                 |
-|    Clôture classique |    2    |     4    |    5    |
-|    Clôture anticipée |    3*   |     5    |
-|    Clôture par vote  |    5    |     5    |    6    |
+|    Clôture classique |    2    |     5    |    8    |
+|    Clôture anticipée |    3*   |     7    |
+|    Clôture par vote  |    7    |     8    |    9    |
 | **Infra**                |
 |    Clôture classique |    2    |     3    |    4    |
 |    Clôture anticipée |    3*   |     3    |
@@ -223,13 +223,67 @@ Pour la doc, le nombre d'avis pour la cloture anticipée d'une décision mineure
 
 Pour le groupe distribution, étant donné qu'il n'y a pour l'instant que Heyyounow, le Conseil sera sollicité pour les décisions Standard ou Majeure.
 
-### Décisions à venir pour les groupes
-#### Conseil
+## Droits d’administration afférents aux groupes
+Cette partie liste les kits de droits d’administration pour les différents groupes du projet YunoHost :
+
+(Attention, il ne s’agit pas des droits de prises de décisions dans ce cas).
+
+### Conseil
+- Aucun droits d’administration. Les droits sont complétés avec le fait d’être présents dans les autres groupes,
+- Forum : membre du [groupe `Conseil`](https://forum.yunohost.org/groups/Conseil).
+
+### Dev
+- GitHub : membre de l’[équipe `Devs` de l’organisation `YunoHost`](https://github.com/orgs/YunoHost/teams/devs),
+- Redmine : membre des projets [`YunoHost`](https://dev.yunohost.org/projects/yunohost) et [`Moulinette`](https://dev.yunohost.org/projects/moulinette),
+- Intégration continue : droits sur les outils d’intégrations continue CI-core,
+- XMPP : modérateur du salon [`dev`](xmpp:dev@conference.yunohost.org?join),
+- Forum : membre du [groupe `Dev`](https://forum.yunohost.org/groups/Dev).
+
+### Infra
+- Serveurs : accès SSH par clé sur certains (selon les besoins) ou sur la totalité des serveurs,
+- GitHub : membre de l’[équipe `Infra` de l’organisation `YunoHost`](https://github.com/orgs/YunoHost/teams/infra),
+- Redmine: membre du [projet `Infra`](https://dev.yunohost.org/projects/y-u-no-infra/),
+- Forum, Weblate, Redmine, XMPP, CI: administrateur,
+- Forum : membre du [groupe `Infra`](https://forum.yunohost.org/groups/Infra).
+
+### Apps
+- GitHub : propriétaire (Owner) [de l’organisation YunoHost-Apps](https://github.com/orgs/YunoHost-Apps/people?utf8=%E2%9C%93&query=%20role%3Aowner),
+- Redmine : membre du [projet `Apps`](https://dev.yunohost.org/projects/apps),
+- GitHub : membre de l’[équipe `Apps` de l’organisation `YunoHost`](https://github.com/orgs/YunoHost/teams/apps),
+- Intégration continue : accès à [CI-Apps](https://ci-apps.yunohost.org),
+- XMPP : admin et modérateur sur le [salon `Apps`](xmpp:apps@conference.yunohost.org?join),
+- Forum : membre du [groupe `Apps`](https://forum.yunohost.org/groups/Apps).
+
+### Communication
+- Forum : membre du [groupe `Com`](https://forum.yunohost.org/groups/Communication).
+
+#### Doc
+- GitHub : membre de l’[équipe `Doc` de l’organisation `YunoHost`](https://github.com/orgs/YunoHost/teams/doc).
+
+#### Communication
+- Diaspora* : accès au compte [YunoHost](https://framasphere.org/people/01868d20330c013459cf2a0000053625),
+- Twitter : accès au compte [YunoHost](https://twitter.com/yunohost),
+- Forum : accès au compte [`YunoHost`](https://forum.yunohost.org/users/yunohost/activity).
+
+#### Traduction
+- Weblate : administrateur sur l’[outil de traduction](https://translate.yunohost.org/projects/yunohost/).
+
+#### Entraide
+- Forum : statut de modérateur,
+- XMPP : statut de modérateur sur le salon [`support`](xmpp:support@conference.yunohost.org?join).
+
+### Distribution
+- GitHub : membre de l’[équipe `Distrib` de l’organisation `YunoHost`](https://github.com/orgs/YunoHost/teams/distribution),
+- Information : la diffusion des images (ISO…) doit se faire en collaboration avec le groupe `Infra` (et `Doc`),
+- Publication : un accès SFTP peut être mis en place,
+- Forum : membre du [groupe `Distribution`](https://forum.yunohost.org/groups/Distribution).
+
+## Décisions à venir pour les groupes
+### Conseil
 - Faut-il élire les membres du Conseil plutôt que de les coopter ? Risque de se transformer en "campagne politique"!
 - Faut-il limiter l'ouverture des groupes d'intérêts par cooptation comme pour le Conseil ?
 - Proposition de changer Conseil en Collégiale
 - Migrer le serveur d’infrastructure du projet sous YunoHost. (avec apps déjà packagées pad, gogs, mumble?)
-- Let's Encrypt
 - Nouveau système pour la documentation
 - Amélioration de la documentation
 - Migration du serveur XMPP
@@ -237,22 +291,21 @@ Pour le groupe distribution, étant donné qu'il n'y a pour l'instant que Heyyou
 - Revoir système de build : stable <— testing <— branches
 - Gel de nohost.me et question de l'abandon des services
 
-#### Groupe Dev
+### Groupe Dev
  - Comment gérer les pull request ?
    - Chaque ticket fait l'objet d'une branche et d'un ticket, tu fais une pull/merge request, la communauté vérifie que ça fonctionne, une décision est prise d'intégrer.
 
-
-#### Groupe Apps
+### Groupe Apps
  -  Pour les apps communautaires, les issues sont bien sur Github, les discussions sur le forum
 
-#### Groupe Communication
+### Groupe Communication
 - Rapport de bug à partir du forum
 - Faire en sorte de nettoyer le forum pour éviter le bruit
 - Proposition de supprimer le salon de support
 - Comment rendre le forum plus actif et central
 - Comment s'organiser pour les privilèges sur le forum (si les groupes veulent voter sur le forum)
 
-#### Autres
+### Autres
 - Demande sur le forum avec notification des membres du Conseil et des représentants des groupes d’intérêts concernés.
 - Vote sur deux semaines par un post sur le forum
 - Créer quatre canaux pour le Dev, les Apps, la Communication et l'Infrastructure
@@ -264,7 +317,7 @@ Pour le groupe distribution, étant donné qu'il n'y a pour l'instant que Heyyou
 ## Moyens de communication actuels
 
 - Rencontres à des évènements.
-- Réunions hébdomadaires Mumble.
+- Réunions hebdomadaires Mumble.
 - [Forum](https://forum.yunohost.org).
 - Listes de diffusion : [contrib](https://list.yunohost.org/cgi-bin/mailman/listinfo/contrib) et [apps](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps)
 - [Bugtracker Redmine](https://dev.yunohost.org).
