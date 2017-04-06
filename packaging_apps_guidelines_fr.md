@@ -155,6 +155,9 @@ L'ajout d'une app sur l'[organisation YunoHost-Apps](https://github.com/YunoHost
 
 C'est aussi un moyen pour permettre de déployer rapidement un correctif de sécurité si nécessaire dans le cas où le mainteneur ne serait pas disponible.
 
+Procédure de transfert : demander sur le [salon de discussion `Apps`](chat_rooms_fr) à être invité à l’organisation en lui fournissant le nom de son compte GitHub.
+Une fois l’invitation acceptée, [transférer son dépôt sur l’organisation en suivant ce tutoriel](https://help.github.com/articles/transferring-a-repository-owned-by-your-personal-account/#transferring-a-repository-to-another-user-account-or-to-an-organization).
+
 #### YEP 1.8 - Publier des demandes de test  | validé | manuel | OFFICIAL |
 Afin d'assurer le bon fonctionnement d'un paquet, il convient de publier une annonce afin d'ouvrir les tests sur le paquet. Cette annonce peut se faire sur le forum dans [la catégorie Apps du forum](https://forum.yunohost.org/c/apps).
 
