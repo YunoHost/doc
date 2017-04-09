@@ -90,7 +90,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [MaidSafe](http://maidsafe.net)
 - [Mailpile](https://www.mailpile.is)
 - [Mastodon](https://github.com/tootsuite/mastodon)
-- [Matrix](https://matrix.org) – [Synapse](https://github.com/matrix-org/synapse)
 - [MatterMost](https://github.com/mattermost/platform)
 - [MediaCrush](https://imgrush.com)
 - [MinigalNano](https://github.com/sebsauvage/MinigalNano)
