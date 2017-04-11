@@ -98,7 +98,7 @@ $ dpkg-parsechangelog | grep "^Version" | cut -d ' ' -f 2
 $ head debian/changelog
 
 # Update changelog and do a proper tag (explained below)
-$ git yunobump x.y.z-p
+$ git yunobump x.y.z
 
 # Push the branch state AND the tags to the remote repository
 $ git push origin --tags testing:testing
