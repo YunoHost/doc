@@ -7,6 +7,7 @@
 <img src="/images/Etherpad.svg" width=40>
 <img src="/images/gogs.svg" width=40>
 <img src="/images/movim_logo.png" width=40>
+<img src="/images/duniter-logo.svg" width=40>
 
 <a class="btn btn-lg btn-default" href="/apps_fr">Apps officielles</a>
 <a class="btn btn-lg btn-default disabled" href="/apps_in_progress_fr">Apps en cours</a>
