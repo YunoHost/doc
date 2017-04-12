@@ -9,6 +9,7 @@
 <img src="/images/Logo-wallabag-svg.svg" width=50>
 <img src="/images/Searx_logo.svg" width=50>
 <img src="/images/rainloop_logo.png" width=40>
+<img src="/images/Nextcloud_Logo.svg" width=70>
 
 <a class="btn btn-lg btn-default disabled" href="/apps_en">Official apps</a> <a class="btn btn-lg btn-default" href="/apps_in_progress_en">Apps in progress</a> <a class="btn btn-lg btn-default" href="/apps_wishlist_en">Apps wishlist</a>
 
