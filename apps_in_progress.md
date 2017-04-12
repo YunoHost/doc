@@ -8,6 +8,7 @@
 <img src="/images/gogs.svg" width=40>
 <img src="/images/movim_logo.png" width=40>
 <img src="/images/duniter-logo.svg" width=40>
+<img src="/images/Zeronet_logo.png" width=40>
 
 <a class="btn btn-lg btn-default" href="/apps_en">Official apps</a> 
 <a class="btn btn-lg btn-default disabled" href="/apps_in_progress_en">Apps in progress</a>
