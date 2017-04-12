@@ -5,7 +5,7 @@
 <img src="/images/Lutim_small.png" width=30>
 <img src="/images/PluXml-logo_transparent.png" width=60>
 <img src="/images/Etherpad.svg" width=40>
-<img src="/images/gogs.png" width=40>
+<img src="/images/gogs.svg" width=40>
 <img src="/images/movim_logo.png" width=40>
 
 <a class="btn btn-lg btn-default" href="/apps_en">Official apps</a> 
