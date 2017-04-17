@@ -86,7 +86,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Loomio](https://www.loomio.org)
 - [The Lounge](https://thelounge.github.io), cf. https://github.com/Kloadut/shout_ynh/issues/4
 - [LSTU](https://github.com/ldidry/lstu)
-- [Lufi](https://git.framasoft.org/luc/lufi)
 - [MaidSafe](http://maidsafe.net)
 - [Mailpile](https://www.mailpile.is)
 - [Mastodon](https://github.com/tootsuite/mastodon)
@@ -95,7 +94,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [MinigalNano](https://github.com/sebsauvage/MinigalNano)
 - [Mirakel](http://mirakel.azapps.de/taskwarrior.html)
 - [Modoboa](http://modoboa.org)
-- [Mopidy](https://www.mopidy.com)
 - [MPD](http://www.musicpd.org)
 - [NetData](https://github.com/firehol/netdata)
 - [Nibbleblog](http://www.nibbleblog.com)
