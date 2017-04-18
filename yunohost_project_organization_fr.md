@@ -251,7 +251,7 @@ Cette partie liste les kits de droits d’administration pour les différents gr
 - Redmine : membre du [projet `Apps`](https://dev.yunohost.org/projects/apps),
 - GitHub : membre de l’[équipe `Apps` de l’organisation `YunoHost`](https://github.com/orgs/YunoHost/teams/apps),
 - Intégration continue : accès à [CI-Apps](https://ci-apps.yunohost.org),
-- XMPP : admin et modérateur sur le [salon `Apps`](xmpp:apps@conference.yunohost.org?join),
+- XMPP : modérateur sur le [salon `Apps`](xmpp:apps@conference.yunohost.org?join),
 - Forum : membre du [groupe `Apps`](https://forum.yunohost.org/groups/Apps).
 
 ### Communication
