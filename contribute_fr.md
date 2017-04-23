@@ -11,7 +11,7 @@ YunoHost dépend entièrement de la participation de gens comme vous.
 <span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp; Passez le mot
 </div>
 <div class="col col-md-8" markdown="1">
-Parlez de logiciel libre, d’[auto-hébergement](/selfhosting_fr), de YunoHost à vos proches et à votre travail. Nous comptons sur des évangélistes du <a href="http://datalove.me/" target="_blank">Datalove</a> comme vous <3
+Parlez de logiciel libre, d’[auto-hébergement](/selfhosting_fr), de YunoHost à vos proches et à votre travail. Nous comptons sur des évangélistes du Datalove comme vous <3
 </div>
 </div>
 
