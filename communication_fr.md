@@ -4,3 +4,4 @@
 <a href="http://www.linux-pratique.com/2016/07/et-si-vous-passiez-a-lauto-hebergement/"><img src="/images/linux-pratique-96.jpg" width=150 /></a>
 * LinuxFr : [YunoHost 2.0 : l’auto-hébergement à portée de clic](https://linuxfr.org/news/yunohost-2-0-l-auto-hebergement-a-portee-de-clic)
 * Twitter [@yunohost](https://twitter.com/yunohost) [#yunohost](https://twitter.com/hashtag/yunohost?src=hash)
+- [Linux Pratique n°96 – YunoHost, l’auto-hébergement à portée de main – juillet 2016](http://connect.ed-diamond.com/Linux-Pratique/LP-096/YunoHost-l-auto-hebergement-a-portee-de-main)
