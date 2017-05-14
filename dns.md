@@ -20,7 +20,7 @@ There are also different **types** of DNS records, which means that a domain can
 
 ### How to (properly) set up a DNS name?
 
-You have several choices here. Note that you can mix and match solutions if you have multiple domains: for example, you can have `my-server.nohost.me` using solution **1.**, et `my-server.org` using solution **2.**, both leading to the same Yunohost server.
+You have several choices here. Note that you can mix and match solutions if you have multiple domains: for example, you can have `my-server.nohost.me` using solution **1.**, and `my-server.org` using solution **2.**, both leading to the same Yunohost server.
 
 1. You can use YunoHost's DNS service, which will automatically configure your DNS for you. You must choose a domain that ends with `.nohost.me` or `noho.st` for this, which may be inconvenient for you (you would then only be able to use an email address like `john@my-server.noho.st`).
 **This is the recommended option if you are just starting out with self-hosting.**
