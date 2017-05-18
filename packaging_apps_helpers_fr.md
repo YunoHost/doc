@@ -211,6 +211,33 @@ ynh_system_user_exists USERNAME
 > ```
 
 
+```bash
+ynh_system_user_create USER_NAME [HOME_DIR]
+```
+> Créer l'utilisateur système `USER_NAME`, si il n'existe pas déjà.  
+> Si aucun dossier home n'est mentionné, l'utilisateur sera créé sans home.  
+> **Nécessite YunoHost version 2.6**
+
+
+```bash
+ynh_system_user_delete USER_NAME
+```
+> Supprime l'utilisateur système `USER_NAME`.  
+> **Nécessite YunoHost version 2.6**
+
+
+#### Gestion des ports
+```bash
+ynh_find_port BEGIN_PORT
+```
+> Cherche un port libre en commençant par `BEGIN_PORT`  
+> Le numéro de port trouvé est renvoyé en fin de commande.
+> ```bash
+> port=$(ynh_find_port 8080)
+> ```
+> **Nécessite YunoHost version 2.6**
+
+
 #### Autres commandes
 ```bash
 ynh_string_random LENGTH
@@ -226,19 +253,6 @@ ynh_die MSG RETCODE
 <br/>
 
 **Les commandes suivantes sont amenées à être remplacées (voir supprimées) dans les prochaines versions de YunoHost.**
-
-
-```bash
-sudo yunohost app checkport PORT
-```
-> Vérifie le port `PORT` et retourne une erreur si il est déjà utilisé.  
-> La sortie de la commande doit être testée pour en connaître le résultat. Par exemple :
-> ```bash
-> port=PORT_PAR_DEFAUT
-> while ! sudo yunohost app checkport $port ; do
->     port=$((port+1))
-> done
-> ```
 
 
 ```bash
