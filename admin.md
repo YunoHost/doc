@@ -14,23 +14,25 @@ You can access your administrator web interface at this address: https://example
 
 ### Reset admin password
 
-<div class="text-error">Deprecated method, will not work on Yunohost 2.4 / Debian Jessie</div>
+#### On Yunohost 2.5
 
-To reset YunoHost admin password (Need a root user available)
+The script to reset the admin password is not directly available, but can be downloaded and executed (as root) :
 
-add the following lines to `/etc/slapd/slapd.conf`:
 ```bash
-rootdn "cn=admin,dc=yunohost,dc=org"
-rootpw {SSHA}O4kkm2OkgO2DPrrnYXXXXXXXXXXXXXXX
+$ wget https://raw.githubusercontent.com/YunoHost/yunohost/testing/sbin/yunohost-reset-ldap-password
+$ chmod +x yunohost-reset-ldap-password
+$ ./yunohost-reset-ldap-password
 ```
 
-where the hash in the last line comes from (or at least that's my understanding)
+#### From Yunohost 2.6
+
+To reset the admin password (as root) :
+
 ```bash
-slappasswd -h {SSHA}
-# A password will be ask, and you'll get the corresponding hash
+$ yunohost-reset-ldap-password
 ```
 
-Once the lines are added, [here you might need to restart the ldap service ?], you should be able to connect to the admin interface, rechange the password properly, remove the lines you added in slapd.conf, and that should be all.
+A temporary password will be created, which you can use to define the new password.
 
 ### How to move application folder
 
