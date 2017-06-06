@@ -4,7 +4,6 @@
 <img src="/images/ttrss.png" width=50>
 <img src="/images/wordpress.png" width=50>
 <img src="/images/transmission.png" width=50>
-<img src="/images/jappix.png" width=50>
 <img src="/images/logo-jirafeau.jpeg" width=50>
 <img src="/images/Logo-wallabag-svg.svg" width=50>
 <img src="/images/Searx_logo.svg" width=50>
