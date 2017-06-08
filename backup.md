@@ -1,11 +1,11 @@
 # Backup
 
-Verify that the folder exist in archives 
+First make sure that the `archives` folder exists in `/home/yunohost.backup/`. If it does not, create it with:
 ```bash
-/home/yunohost.backup/
+sudo mkdir /home/yunohost.backup/archives
 ```
-Launch a backup via 
 
+Launch a backup via 
 ```bash
 sudo yunohost backup create 
 ```
@@ -26,17 +26,17 @@ Basically with the webadmin, you can:
 - see what there is in a backup
 - restore selectively a backup
 
-**Caution:** to do a backup, you need to have enough free disk spaces in the destination directory. For example, if you have 20GB in `/home/data` you need to have enough space to contain this 20GB compressed in a tar.gz. To do the tar.gz, yunohost backup use shallow copy, to avoid to need more spaces to be able to create the tar.gz.
+**Caution:** to do a backup, you need to have enough free disk spaces in the destination directory. For example, if you have 20GB in `/home/data` you need to have enough space to contain this 20GB compressed in a tar.gz. To do the tar.gz, yunohost backup uses shallow copies, to avoid to need more spaces to be able to create the tar.gz.
 
-**Caution:** If you use selective restore, be sure to not create discordant operation. For example, if you restore an app using a domain that have been deleted from YunoHost, you need to read the domain or to restore all configuration files.
+**Caution:** If you use selective restore, be sure to not create discordant operation. For example, if you restore an app using a domain that has been deleted from YunoHost, you need to read the domain or to restore all configuration files.
 
-We have already planned where we will add some feature like:
+Here's a list of missing but planned features:
 
-- backup in an other memory device
-- download/upload a backup
-- crypt a backup
+- backup in another memory device
+- download/upload backups
+- encrypt backups
 
-Some feature are almost ready in webadmin, but the API is not for the moment.
+Some features are almost ready in the webadmin, but the API is not for the moment.
 
 ## Command line
 ### Backup
