@@ -1,6 +1,6 @@
 # Les sauvegardes
 
-**Prérequis :** vérifier que le dossier `archives` existe bien dans le dossier `/home/yunohost.backup/`
+**Prérequis :** vérifier que le dossier `archives` existe bien dans le dossier `/home/yunohost.backup/`
 sinon le créer via un 
 ```bash
 sudo mkdir /home/yunohost.backup/archives
@@ -42,3 +42,7 @@ scp -P 1234 /home/$USER/aaaammjj-hhmmss.tar.gz root@IP_ou_NDD:/home/yunohost.bac
 ```bash
 yunohost backup restore nom_de_la_sauvegarde
 ```
+
+# Pour déplacer ses sauvegardes sur un autre disque dur
+
+Il suffit de monter son disque dur dans le dossier /home/yunohost.backup/archives
