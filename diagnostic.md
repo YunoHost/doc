@@ -26,21 +26,21 @@ This step is not necessary if you have a <b>.nohost.me</b> or a <b>.noho.st</b> 
 </div>
 
 Go to https://www.whatsmydns.net/ , enter your domain name in the field and click `Search`.    
-If you do not see your IP address, or if there is red crosses everywhere, then you have probably misconfigured your [DNS](/dns).
+If you do not see your IP address, or if there are red crosses everywhere, then you have probably misconfigured your [DNS](/dns).
 
 ---
 
 ### <small>3.</small> Are network ports opened on your router ?
 
-If your DNS is well configured, and your server looks is accessible locally, you may have **network ports blocked** or not forwarded by your router.    
-In order to verify that, try accessing your server with a client outside your local network. For example via another WiFi access point or with your mobile phone in 3G/4G.
+If your DNS is properly configured, and your server is accessible locally, you may have **network ports blocked** or it may not be forwarded by your router.    
+In order to verify this, try accessing your server with a client outside your local network. For example via another WiFi access point or with your mobile phone in 3G/4G.
 
 If the server is unreachable from outside your local network too, then the problem probably comes from your router's configuration.
 
 <div class="alert alert-info">
 Try to activate uPnP in your router's configuration interface, and check that your server is plugged in Ethernet directly behind it.
 <p>
-You can also redirect ports manually to your server's local IP address on this router's configuration interface.
+You can also redirect ports manually to your server's local IP address on the router's configuration interface.
 </p>
 </div>
 
@@ -48,6 +48,6 @@ You can also redirect ports manually to your server's local IP address on this r
 
 ### <small>4.</small> Do your router has hairpinning ?
 
-If the server is accessible from outside your local network, but unreachable with its domain name on the local network, then your router probably lacks of <a href="https://en.wikipedia.org/wiki/Hairpinning" target="_blank">hairpinning</a>.
+If the server is accessible from outside your local network, but unreachable with its domain name on the local network, then your router probably lacks <a href="https://en.wikipedia.org/wiki/Hairpinning" target="_blank">hairpinning</a>.
 
-Here is a [tutorial](dns_local_network) to access to your server on a local network and bypass hairpinning problem. The tutorial propose in first solution to create a redirection with DNS of the ISP box and on second solution to modify `hosts` file of **clients** to say to access the **server** via it's local IP address. First solution is preferable because it's not needed to modify `hosts` files on every computer of the local network, if using many clients.
+Here is a [tutorial](dns_local_network) to access your server on a local network and bypass the hairpinning problem. The tutorial proposes a first solution to create a redirection with DNS of the ISP box and a second solution to modify the `hosts` file of the **clients** to instruct it to access the **server** via its local IP address. The first solution is preferable because it's not necessary to modify the `hosts` files on every computer  on your local network, if you are using many different clients.
