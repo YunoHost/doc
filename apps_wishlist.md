@@ -72,6 +72,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Kaiwa](http://getkaiwa.com)
 - [Kin calendar](https://github.com/KinToday)
 - [Kinto](https://github.com/Kinto/formbuilder)
+- [Kiwix](http://www.kiwix.org/) Offline wikipedia
 - [Known](https://withknown.com)
 - [Koel](http://koel.phanan.net)
 - [Kontalk](http://kontalk.org)
