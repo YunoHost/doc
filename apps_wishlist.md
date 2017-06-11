@@ -111,7 +111,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [PHProxy](http://sourceforge.net/projects/poxy)
 - [Phraseanet](https://docs.phraseanet.com/3.8/fr/index.html#)
 - [Pico](http://picocms.org)
-- [Pinry](ttps://github.com/pinry/pinry)
+- [Pinry](https://github.com/pinry/pinry)
 - [Pix](http://pix.toile-libre.org)
 - [PPTP VPN](https://packages.debian.org/sv/squeeze/pptpd)
 - [Privoxy](http://www.privoxy.org)
