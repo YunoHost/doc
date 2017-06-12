@@ -13,29 +13,33 @@ L’interface admin est accessible depuis votre instance YunoHost à l’adresse
 
 ### Réinitialiser le mot de passe administrateur
 
-<div class="text-error">Cette méthode ne fonctionnera pas avec Yunohost 2.4 / Debian Jessie</div>
+#### Sous Yunohost 2.5
 
-Pour réinitialiser le mot de passe administrater de YunoHost (l’utilisateur root est nécessaire)
+Le script pour réinitialiser le mot de passe adminstrateur n'est pas directement disponible, mais peut être téléchargé puis executé (à partir de l'utilisateur root) :
 
-Dans le fichier `/etc/slapd/slapd.conf` ajouter la ligne suivante :
 ```bash
-rootdn "cn=admin,dc=yunohost,dc=org"
-rootpw {SSHA}O4kkm2OkgO2DPrrnYXXXXXXXXXXXXXXX
+$ wget https://raw.githubusercontent.com/YunoHost/yunohost/testing/sbin/yunohost-reset-ldap-password
+$ chmod +x yunohost-reset-ldap-password
+$ ./yunohost-reset-ldap-password
 ```
 
-avec le hash la dernière ligne de la commande
+#### À partir de Yunohost 2.6
+
+Pour réinitialiser le mot de passe administrateur de YunoHost (à partir de l'utilisateur root) :
+
 ```bash
-slappasswd -h {SSHA}
-# Un mot de passe vous sera demandé, vous retournant un hash comme résultat
+$ yunohost-reset-ldap-password
 ```
 
-Une fois les lignes ajoutées (il faut probablement rédémarrer le service LDAP), vous devriez être en mesure de vous connecter avec le mot de passse temporaire. Changer le via l’interface. Retirer les lignes ajoutées dans le fichier `slapd.conf`.
+Un mot de passe temporaire sera créé, que vous pouvez utiliser pour ensuite définir un nouveau mot de passe.
+
+
 
 ### Comment déplacer le dossier d’une application
 
 Pour changer le dossier contenant une application, seules quelques commandes sont nécessaires : déplacer le contenu créer un lien symbolique et définir les droits d’accès.
 
-Exemple avec WordPress :
+Exemple avec WordPress :
 ```bash
 # Deplacement du wordpress vers un autre support
 $ sudo  mv /var/www/wordpress /mon/dossier/cible
