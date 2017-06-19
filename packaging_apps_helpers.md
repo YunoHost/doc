@@ -40,6 +40,11 @@ ynh_mysql_drop_db DB
 > Delete the `DB` database.
 
 ```bash
+ynh_mysql_drop_user USERNAME
+```
+> Delete the `USERNAME` MySQL user.
+
+```bash
 ynh_mysql_dump_db DB > ./FILE
 ```
 
