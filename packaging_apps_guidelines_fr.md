@@ -66,6 +66,7 @@ Chaque YEP est associée à :
 | YEP 3.4 | Isoler l'app   | brouillon | manuel | OFFICIAL (8) |
 | YEP 3.5 | Suivre les recommendations de la documentation de l'app   | validé | manuel | OFFICIAL (6) |
 | YEP 3.6 | Mettre à jour les versions contenant des CVE   | draft | manuel | OFFICIAL (6) |
+| YEP 3.7 | Modifier correctement les dépots sources | draft | manuel | NOTWORKING (0) |
 | | | | | |
 | **YEP 4** | **Intégrer une app** | **Statut** | **Test** | **Niveau** |
 | 4.1 | Lier au ldap   | validé | manuel | OFFICIAL (4) |
@@ -329,6 +330,17 @@ Plus généralement, l'application peut proposer un correctif pour une faille sp
 De manière générale, cette YEP implique de suivre un canal d'information pour suivre les mises à jour de sécurité de l'application et réagir rapidement en mettant à jour le package en conséquence.
 
 Comme précisé dans la YEP 1.7, si un correctif de sécurité doit être déployé en urgence, un autre membre de YunoHost peut être amené à faire un commit sur le package si nécessaire.
+
+#### YEP 3.7 - Modifier correctement les dépots sources  | draft | manuel | OFFICIAL |
+La modification ou l'ajout des dépôts sources dans /etc/apt/sources.list ou /etc/apt/sources.list.d/ ne doit se faire que si c'est absolument nécéssaire.
+
+Dans certains cas, il pourra être préférable de télécharger directement le .deb à partir du dépôt source (avec wget par exemple), ceci est à évaluer en fonction des dépendances, de la nature et du rythme des mises à jour.
+
+L'ajout des backports, de dépôts contrib ou nonfree est autorisée.
+
+Lorsque l'on designe la distribution on doit toujours faire référence à son nom (jessie) et non pas au statut de celle-ci (stable). Sans quoi, il y a un risque le jour où debian change de version.
+
+Dans tous les cas, une app ne devrait pas modifier les dépots sources pour les placer sur testing ou une version non supportée par YunoHost (à l'heure où cette yep est rédigé, YunoHost ne supporte pas la nouvelle stable: debian stretch).
 
 ### YEP 4 - Intégrer une app
 Cette meta YEP traite de l'intégration d'une app avec l'environnement YunoHost. Une bonne intégration est en général un gage de qualité et de confort pour les utilisateurs.
