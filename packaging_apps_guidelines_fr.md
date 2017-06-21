@@ -332,15 +332,15 @@ De manière générale, cette YEP implique de suivre un canal d'information pour
 Comme précisé dans la YEP 1.7, si un correctif de sécurité doit être déployé en urgence, un autre membre de YunoHost peut être amené à faire un commit sur le package si nécessaire.
 
 #### YEP 3.7 - Modifier correctement les dépots sources  | draft | manuel | OFFICIAL |
-La modification ou l'ajout des dépôts sources dans /etc/apt/sources.list ou /etc/apt/sources.list.d/ ne doit se faire que si c'est absolument nécéssaire.
+La modification ou l'ajout des dépôts sources dans /etc/apt/sources.list ou /etc/apt/sources.list.d/ ne doit se faire que si c'est absolument nécessaire.
 
 Dans certains cas, il pourra être préférable de télécharger directement le .deb à partir du dépôt source (avec wget par exemple), ceci est à évaluer en fonction des dépendances, de la nature et du rythme des mises à jour.
 
 L'ajout des backports, de dépôts contrib ou nonfree est autorisée.
 
-Lorsque l'on designe la distribution on doit toujours faire référence à son nom (jessie) et non pas au statut de celle-ci (stable). Sans quoi, il y a un risque le jour où debian change de version.
+Lorsque l'on désigne la distribution on doit toujours faire référence à son nom (jessie) et non pas au statut de celle-ci (stable). Sans quoi, il y a un risque le jour où debian change de version.
 
-Dans tous les cas, une app ne devrait pas modifier les dépots sources pour les placer sur testing ou une version non supportée par YunoHost (à l'heure où cette yep est rédigé, YunoHost ne supporte pas la nouvelle stable: debian stretch).
+Dans tous les cas, une app ne devrait pas modifier les dépôts sources pour les placer sur testing ou une version non supportée par YunoHost (à l'heure où cette yep est rédigé, YunoHost ne supporte pas la nouvelle stable: debian stretch).
 
 ### YEP 4 - Intégrer une app
 Cette meta YEP traite de l'intégration d'une app avec l'environnement YunoHost. Une bonne intégration est en général un gage de qualité et de confort pour les utilisateurs.
