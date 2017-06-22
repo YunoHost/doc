@@ -56,10 +56,12 @@ Une fois les modifications effectuées, vous pouvez exécuter `git push` pour en
 Il est possible d’ajouter directement des paquets Debian dans le dépôt, c’est le cas notamment pour les paquets nodejs.
 
 ```bash
-sudo reprepro -Vb /var/www/repo.yunohost.org/ includedeb nom_du_dépôt nom_du_paquet.deb
+sudo reprepro -Vb /var/www/repo.yunohost.org/ -C <composant> includedeb <nom_du_dépôt> nom_du_paquet.deb
 ```
 
-`nom_du_dépôt` peut être `test` ou `megusta`.
+- `<nom_du_dépôt>` peut être `jessie`.
+- `<composant>` peut être `stable` ou `testing`.
+
 
 ## Supprimer un paquet d’un dépôt
 
