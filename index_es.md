@@ -41,7 +41,7 @@
   <div class="call-to-action">
     <!-- <a class="btn btn-primary btn-lg" href="/try">Try it</a>  -->
     <a class="btn btn-success btn-lg" href="/install">Get started</a>
-    <p class="text-muted"><small>YunoHost v2.2</small></p>
+    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/en-fr-sortie-de-yunohost-2-6-aaron-swartz-yunohost-2-6-release-aaron-swartz/3065">YunoHost v2.6</a></small></p>
   </div>
 
   <div class="row cf">
