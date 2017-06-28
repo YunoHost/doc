@@ -17,7 +17,7 @@ Vous pouvez accéder à la post-installation graphique en entrant dans un naviga
 
 Vous pouvez aussi y accéder en entrant la commande `yunohost tools postinstall` directement sur le serveur ou en SSH.
 
-<img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="/images/postinstall_cli2.png">
+<img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="/images/postinstall_cli.png">
 
 *<p class="text-muted">Aperçu de la post-installation en ligne de commande</p>*
 
