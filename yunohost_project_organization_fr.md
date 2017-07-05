@@ -101,6 +101,94 @@ Les décisions à prendre peuvent être de deux ordres :
 
 Si un consensus sur une décision à prendre n'est pas trouvée au sein d'un groupe, ce dernier devra se tourner vers le Conseil pour en débattre. Si aucun consensus n'est trouvé, la proposition sera soumise au vote de tous les contributeurs.
 
+
+### Processus de validation des demandes d'intégration (pull requests)
+
+#### 1. Proposition
+
+N'importe quel contributeur peut proposer une demande d'intégration (pull request, abrégée PR dans la suite) dans les divers dépôts liés au projet YunoHost (core, apps, infra, ...).
+
+La demande d'intégration doit obligatoirement décrire les points suivants :
+- problème auquel réponds la PR
+- solution, stratégie, résumé des changements, et/ou choix techniques utilisés dans la PR
+- comment tester la PR (sauf si le test est réellement trivial)
+- status actuel de la PR (ex. : non terminé, en attente de revues, ...)
+
+L'auteur est vivement encouragé à respecter les bonnes pratiques suivantes :
+- une PR doit concerner exclusivement un sujet précis. Par exemple, elle ne doit pas à la fois résoudre un bug et ajouter une fonctionnalité (à moins que l'un implique l'autre) ;
+- avant de débuter l'implémentation d'une fonctionnalité qui fait intervenir des choix de design (nom et format de commande ou d'option, nouvelle API, interface utilisateur, ...), discuter en amont de manière informelle avec le groupe pour s'assurer que l'implémentation imaginée convienne au plus grand nombre et reste dans l'esprit du projet ;
+- nommer sa PR avec un titre explicite, et la branche associée avec un nom explicite ;
+- donner les références vers d'autres éléments liés à la PR (rapport de bug sur le bugtracker, message sur le forum, ...)
+
+Une PR peut être créée même si son auteur juge qu'elle n'est pas encore terminée. Dans ce cas, il doit déclarer explicitement dans le fil de discussion de la PR lorsqu'il juge la PR prête. Cela n'empêche pas aux autres contributeurs d'émettre des avis sur la PR pendant ce temps.
+
+Il appartient aussi à l'auteur de la PR de juger de son importance. (Ce jugement pourra cependant être contesté par les autres membres du groupe concerné par la PR.) Les niveaux d'importance utilisés sont les suivants :
+- **micro** : concerne uniquement un détail de forme et/ou qui ne nécessite pas d'être débattue et testée. Elle doit être facilement réversible.
+- **mineure** : impacte de manière légère le projet (e.g. refactoring d'une petite partie de code, réparation d'un bug, ...)
+- **moyenne** : impacte de manière significative l'architecture d'une partie du code (e.g. refactoring de tout un aspect ou de tout un fichier, ajout d'une fonctionnalité importante, sortie d'une version testing, ...)
+- **majeure** : impacte lourdement l'ensemble du projet (e.g. migration d'une dépendance critique, changement de version de Debian, sortie d'une version stable,  ...)
+
+
+#### 2. Revue et validation collective
+
+(Cette section ne s'applique pas aux PR "micro" qui peuvent être validée directement par leur auteur.)
+
+Une fois la PR déclarée comme terminée, les contributeurs sont invités à donner leurs avis, relire et tester les changements proposés pour les valider. Lorsque des bugs ou des implémentations mauvaises ou incomplètes sont trouvées, les relecteurs rapportent cordialement le problème à l'auteur de la PR sur le fil de discussion. Si le problème trouvé est simple à corriger (e.g. typo ou détail de forme), le relecteur est encouragé à amender la PR pour corriger le problème lui-même. Sinon, l'auteur fait de son mieux pour corriger les problèmes soulevés.
+
+Les relecteurs rapportent également le degré de relecture et de tests effectués (c.f. liste ci-dessous). Selon l'importance de la PR (mineure, moyenne ou majeure), différents quotas de tests et approbations sont à remplir pour que celle-ci soit validée. L'auteur de la PR ne compte pas dans ces quotas de validation. La proposition doit aussi passer les tests automatiques disponibles dans le groupe (CI, tests unitaires/fonctionnels, linter, ...). 
+
+
+|                                   | **Mineure** | **Standard** | **Majeure** |
+|-----------------------------------|-------------|--------------|-------------|
+| **Accord sur le principe**        |     2       |     3        |    4        |
+| **Relecture en diagonale**        |     1       |     2        |    3        |
+| **Testé dans les cas simples**    |     1       |     2        |    3        |
+| **Relecture attentive**           |     0       |     1        |    2        |
+| **Testé dans des cas compliqués** |     0       |     1        |    2        |
+
+Si l'auteur ne fait pas parti du groupe concerné par la PR, tous ces quotas sont augmentés de 1. Dans tous les cas, ces quotas doivent être remplis au moins à 50% par des relecteurs membres du groupe concerné par la PR. (Ainsi, par exemple, un non-membre peut donner son accord sur le principe pour une PR mineure. Mais deux avis de non-membres pour une PR moyenne comptent uniquement pour un seul avis).
+
+
+#### 3. Intégration (merge) d'une PR
+
+Une fois les quotas de relecture remplis, et si aucun refus n'a été prononcé et qu'aucune demande de changement n'est en attente, n'importe quel membre du groupe peut alors déclarer et marquer la PR comme "prête à être mergée".
+
+Pendant une durée de 3 jours suivant cette déclaration, les membres du groupe peuvent encore relire, demander des changements ou émettre un refus vis-à-vis de la PR. Dans ce cas, le processus d'intégration est interrompu et retourne à la partie 2).
+
+À l'issue de cette durée, n'importe quel membre du groupe peut merger la PR. Lorsque celle-ci comporte plusieurs commits, il est recommandé d'utiliser la fonction "squash and merge" pour garder l'historique de commit propre.
+
+
+#### Cas particuliers
+
+Plusieurs cas particuliers peuvent se présenter et dont la résolution est décrite ci-après.
+
+##### Refus d'une PR
+
+Une PR peut être refusée et clôturée par n'importe quel membre du groupe concerné si :
+- la PR a été créée au moins depuis deux semaines
+- au moins deux membres du groupe ont manifesté un désaccord avec le principe de la PR
+- aucun autre membre du groupe n'a manifesté son accord avec le principe de la PR
+
+
+##### Changement d'auteur d'une PR
+
+Si l'auteur d'une PR devient indisponible, manque de temps ou souhaite se consacrer à d'autres travaux, un autre contributeur peut prendre la main en tant qu'auteur de la PR, après concertation informelle avec le groupe. Dans ce cas, il assure la gestion de la PR (e.g. développement, résolution des problèmes soulevés, ...), mais ne compte plus dans les quotas de validation de la PR.
+
+
+##### Validation "allégé" en cas de manque de relecteurs
+
+En cas de manque de relecteurs, l'auteur d'une PR peut déclencher une procédure de validation alternative si : 
+- l'auteur est membre du groupe concerné par la PR
+- il s'agit d'une PR mineure ou moyenne
+- deux semaines se sont écoulées depuis que la PR a été déclarée comme prête
+- il n'y a pas de demande de changement en attente
+- les quotas de relecture "standard" n'ont pas été remplis
+
+Dans ce cas, l'auteur annonce sur le fil de discussion de la PR qu'il souhaite engager cette prodécure. À partir de ce moment, les quotas d'accord, relecture et tests pour valider cette PR sont diminués de 1. Au minimum une semaine devra s'écouler avant que cette PR ne soit effectivement mergée. Un autre membre du groupe peut à tout moment mettre fin à cette procédure si il juge la PR trop critique pour être mergée de la sorte.
+
+
+
+
 #### Le processus de prise de décision en détail
 
 ##### 1) Initiation d'une décision à prendre
