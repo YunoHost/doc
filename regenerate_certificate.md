@@ -1,4 +1,4 @@
-# Regenerate certificate
+# Regenerate self signed certificate
 
 If you want to generate again -- not renewing -- a certificate for a domain, you can follow those steps: 
 
