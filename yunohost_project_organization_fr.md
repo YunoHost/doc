@@ -116,7 +116,7 @@ La demande d'intégration doit obligatoirement décrire les points suivants :
 
 L'auteur est vivement encouragé à respecter les bonnes pratiques suivantes :
 - une PR doit concerner exclusivement un sujet précis. Par exemple, elle ne doit pas à la fois résoudre un bug et ajouter une fonctionnalité (à moins que l'un implique l'autre) ;
-- avant de débuter l'implémentation d'une fonctionnalité qui fait intervenir des choix de design (nom et format de commande ou d'option, nouvelle API, interface utilisateur, ...), discuter en amont de manière informelle avec le groupe pour s'assurer que l'implémentation imaginée convienne au plus grand nombre et reste dans l'esprit du projet ;
+- avant de débuter l'implémentation d'une fonctionnalité qui fait intervenir des choix de conception (nom et format de commande ou d'option, nouvelle API, interface utilisateur, ...), discuter en amont de manière informelle avec le groupe pour s'assurer que l'implémentation imaginée convienne au plus grand nombre et reste dans l'esprit du projet ;
 - nommer sa PR avec un titre explicite, et la branche associée avec un nom explicite ;
 - donner les références vers d'autres éléments liés à la PR (rapport de bug sur le bugtracker, message sur le forum, ...)
 
@@ -138,7 +138,7 @@ Une fois la PR déclarée comme terminée, les contributeurs sont invités à do
 Les relecteurs rapportent également le degré de relecture et de tests effectués (c.f. liste ci-dessous). Selon l'importance de la PR (mineure, moyenne ou majeure), différents quotas de tests et approbations sont à remplir pour que celle-ci soit validée. L'auteur de la PR ne compte pas dans ces quotas de validation. La proposition doit aussi passer les tests automatiques disponibles dans le groupe (CI, tests unitaires/fonctionnels, linter, ...). 
 
 
-|                                   | **Mineure** | **Standard** | **Majeure** |
+|                                   | **Mineure** | **Moyenne** | **Majeure** |
 |-----------------------------------|-------------|--------------|-------------|
 | **Accord sur le principe**        |     2       |     3        |    4        |
 | **Relecture en diagonale**        |     1       |     2        |    3        |
@@ -182,7 +182,7 @@ En cas de manque de relecteurs, l'auteur d'une PR peut déclencher une procédur
 - il s'agit d'une PR mineure ou moyenne
 - deux semaines se sont écoulées depuis que la PR a été déclarée comme prête
 - il n'y a pas de demande de changement en attente
-- les quotas de relecture "standard" n'ont pas été remplis
+- les quotas de relecture "standards" n'ont pas été remplis
 
 Dans ce cas, l'auteur annonce sur le fil de discussion de la PR qu'il souhaite engager cette prodécure. À partir de ce moment, les quotas d'accord, relecture et tests pour valider cette PR sont diminués de 1. Au minimum une semaine devra s'écouler avant que cette PR ne soit effectivement mergée. Un autre membre du groupe peut à tout moment mettre fin à cette procédure si il juge la PR trop critique pour être mergée de la sorte.
 
@@ -226,7 +226,7 @@ Tout le monde peut changer de positions à n'importe quel moment, mais il est de
    - que des avis positifs
    - que des refus
    - sans avis (s'en remet aux autres)
- - Pour une décison mineure ou moyenne/standard, si le quota de réponse est atteint à la durée minimale et que le consensus est obtenu.
+ - Pour une décison mineure ou moyenne, si le quota de réponse est atteint à la durée minimale et que le consensus est obtenu.
   - Le quota de réponse correspond aux avis nécessaires, détaillé ci-après dans les types de décisions. Le pourcentage est rapporté au nombre d'actifs dans le groupe concerné. La gestion des actif et inactif dans le groupe est à la charge du coordinateur et du suppléant qui doivent maintenir à jour la liste des membres au minimum à chaque décision du groupe. (Un inactif qui se manifeste lors d'une décision redevient automatiquement actif.)
  - s'il n'est pas possible d'avoir assez de monde (vacances, plus assez de membres du groupe pouvant avoir un avis) il est possible pour le groupe de demander la clôture même si le quota d'avis n'est pas atteint, il y a alors un nouveau décalage de la date et si cette nouvelle date est franchie, la proposition est clôturée selon les avis donnés.
 
