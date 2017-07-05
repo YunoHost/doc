@@ -1,4 +1,4 @@
-#Régénérer un certificat
+#Régénérer un certificat auto signé
 
 Si vous désirez générer à nouveau — et non renouveler — un certificat pour un domain, suivre les étapes suivantes :
 
