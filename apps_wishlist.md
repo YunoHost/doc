@@ -107,6 +107,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [PeerTube](https://github.com/Chocobozzz/PeerTube)
 - [Pelican](http://blog.getpelican.com)
 - [Peps](https://github.com/MLstate/PEPS)
+- [Pi-hole](https://pi-hole.net) Network-wide ad blocking via your own Linux hardware
 - [PHPList](http://www.phplist.com)
 - [PHProxy](http://sourceforge.net/projects/poxy)
 - [Phraseanet](https://docs.phraseanet.com/3.8/fr/index.html#)
