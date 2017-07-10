@@ -111,8 +111,8 @@ N'importe quel contributeur peut proposer une pull request (abrégée PR dans la
 La proposition doit obligatoirement décrire les points suivants :
 - problème auquel réponds la PR
 - solution, stratégie, résumé des changements, et/ou choix techniques utilisés dans la PR
-- comment tester la PR (sauf si le test est réellement trivial)
-- status actuel de la PR (ex. : non terminé, en attente de revues, ...)
+- comment tester la PR (sauf si s'il n'y a rien a tester)
+- status actuel de la PR (ex. : non terminé, en attente de revues, choix techniques à faire...)
 
 L'auteur est vivement encouragé à respecter les bonnes pratiques suivantes :
 - une PR doit concerner exclusivement un sujet précis. Par exemple, elle ne doit pas à la fois résoudre un bug et ajouter une fonctionnalité (à moins que l'un implique l'autre) ;
