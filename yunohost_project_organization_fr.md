@@ -179,9 +179,10 @@ Si l'auteur d'une PR devient indisponible, manque de temps ou souhaite se consac
 En cas de manque de relecteurs, l'auteur d'une PR peut déclencher une procédure de validation alternative si : 
 - l'auteur est membre du groupe concerné par la PR
 - il s'agit d'une PR mineure ou moyenne
-- deux semaines se sont écoulées depuis que la PR a été déclarée comme prête
+- la PR a été déclarée comme prête
 - il n'y a pas de demande de changement en attente
 - les quotas de relecture "standards" n'ont pas été remplis
+- une semaine s'est écoulée depuis le dernier commentaire ou commit
 
 Dans ce cas, l'auteur annonce sur le fil de discussion de la PR qu'il souhaite engager cette prodécure. À partir de ce moment, les quotas d'accord, relecture et tests pour valider cette PR sont diminués de 1. Au minimum une semaine devra s'écouler avant que cette PR ne soit effectivement mergée. Un autre membre du groupe peut à tout moment mettre fin à cette procédure si il juge la PR trop critique pour être mergée de la sorte.
 
