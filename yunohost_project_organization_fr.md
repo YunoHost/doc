@@ -102,13 +102,13 @@ Les décisions à prendre peuvent être de deux ordres :
 Si un consensus sur une décision à prendre n'est pas trouvée au sein d'un groupe, ce dernier devra se tourner vers le Conseil pour en débattre. Si aucun consensus n'est trouvé, la proposition sera soumise au vote de tous les contributeurs.
 
 
-### Processus de validation des demandes d'intégration (pull requests)
+### Processus de validation des pull requests
 
 #### 1. Proposition
 
-N'importe quel contributeur peut proposer une demande d'intégration (pull request, abrégée PR dans la suite) dans les divers dépôts liés au projet YunoHost (core, apps, infra, ...).
+N'importe quel contributeur peut proposer une pull request (abrégée PR dans la suite) dans les divers dépôts liés au projet YunoHost (core, apps, infra, ...).
 
-La demande d'intégration doit obligatoirement décrire les points suivants :
+La proposition doit obligatoirement décrire les points suivants :
 - problème auquel réponds la PR
 - solution, stratégie, résumé des changements, et/ou choix techniques utilisés dans la PR
 - comment tester la PR (sauf si le test est réellement trivial)
@@ -149,11 +149,11 @@ Les relecteurs rapportent également le degré de relecture et de tests effectu�
 Si l'auteur ne fait pas parti du groupe concerné par la PR, tous ces quotas sont augmentés de 1. Dans tous les cas, ces quotas doivent être remplis au moins à 50% par des relecteurs membres du groupe concerné par la PR. (Ainsi, par exemple, un non-membre peut donner son accord sur le principe pour une PR mineure. Mais deux avis de non-membres pour une PR moyenne comptent uniquement pour un seul avis).
 
 
-#### 3. Intégration (merge) d'une PR
+#### 3. Merge d'une pull request
 
 Une fois les quotas de relecture remplis, et si aucun refus n'a été prononcé et qu'aucune demande de changement n'est en attente, n'importe quel membre du groupe peut alors déclarer et marquer la PR comme "prête à être mergée".
 
-Pendant une durée de 3 jours suivant cette déclaration, les membres du groupe peuvent encore relire, demander des changements ou émettre un refus vis-à-vis de la PR. Dans ce cas, le processus d'intégration est interrompu et retourne à la partie 2). Pour les PRs moyennes et majeures, cette durée est augmentée jusqu'à ce qu'il se soit écoulé au moins une semaine par rapport au moment où la PR a été déclarée comme prête par son auteur.
+Pendant une durée de 3 jours suivant cette déclaration, les membres du groupe peuvent encore relire, demander des changements ou émettre un refus vis-à-vis de la PR. Dans ce cas, le merge est interrompu et le processus retourne à la partie 2). Pour les PRs moyennes et majeures, la durée est augmentée jusqu'à ce qu'il se soit écoulé au moins une semaine par rapport au moment où la PR a été déclarée comme prête par son auteur.
 
 À l'issue de cette durée, n'importe quel membre du groupe peut merger la PR. Lorsque celle-ci comporte plusieurs commits, il est recommandé d'utiliser la fonction "squash and merge" pour garder l'historique de commit propre.
 
