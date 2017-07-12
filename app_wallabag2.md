@@ -1,4 +1,4 @@
-## <img src="https://wallabag.org/user/themes/boxify/img/logo-wallabag-black.svg">
+## <img src="https://yunohost.org/images/Logo-wallabag-svg.svg">
 
 [Wallabag](https://www.wallabag.org/) is a self hostable Read-It-Later application allowing
 you to not miss any content anymore. Click, save, read it when you can.
