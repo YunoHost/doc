@@ -23,8 +23,8 @@ this package:
  * Report a bug: https://github.com/YunoHost-Apps/wallabag2_ynh/issues
  * Wallabag website: https://www.wallabag.org/
  * Wallabag documentation: https://doc.wallabag.org/ (fr/en/it/de)
- * YunoHost website: https://yunohost.org/
  * [Video demo](https://vimeo.com/video/167435064)
+ 
 ----
 
 ### Upgrade from v1.x
