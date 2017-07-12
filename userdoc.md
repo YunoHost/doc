@@ -11,5 +11,6 @@
    * [Transmission](/app_transmission_en)
    * [Radicale](/app_radicale)
    * [RoundCube](/app_roundcube_en)
+   * [Wallabag v2](/app_wallabag2)
 * [Community applications](/apps_in_progress_en)
    * [LimeSurvey](/app_limesurvey_en)
