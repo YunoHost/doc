@@ -1,4 +1,4 @@
-## <img src="https://wallabag.org/user/themes/boxify/img/logo-wallabag-black.svg">
+## <img src="https://yunohost.org/images/Logo-wallabag-svg.svg">
 
 
 [Wallabag](https://www.wallabag.org/) est une application de lecture différée : elle  permet simplement d’archiver une page web en ne conservant que le contenu. Les éléments superflus (menus, publicités, etc.) sont supprimés.
