@@ -50,6 +50,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Git-annex](http://git-annex.branchable.com)
 - [Gitit](http://gitit.net)
 - [GitLab](http://gitlab.org)
+- [Goaccess](https://goaccess.io) Web log analyser (replaces piwik without js tracking scripts)
 - [Gollum](https://github.com/gollum/gollum)
 - [Goploader](https://github.com/Depado/goploader)
 - [Guacamole](http://guac-dev.org)
