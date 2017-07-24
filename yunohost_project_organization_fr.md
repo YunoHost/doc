@@ -102,11 +102,13 @@ Si un consensus ne peut être trouvé au sein d'un gorupe en suivant le processu
 
 N'importe quel contributeur peut proposer une pull request (abrégée PR dans la suite) dans les divers dépôts liés au projet YunoHost (core, apps, infra, ...).
 
-La proposition doit obligatoirement décrire les points suivants :
-- problème auquel réponds la PR
-- solution, stratégie, résumé des changements, et/ou choix techniques utilisés dans la PR
-- comment tester la PR (sauf si s'il n'y a rien a tester)
+L'auteur est vivement encouragé à décrire sa proposition des informations
+pertinentes. Le groupe peut, à cette fin, proposer un modèle des informations à
+inclure, comme par exemple :
 - status actuel de la PR (ex. : non terminé, en attente de revues, choix techniques à faire...)
+- problème auquel réponds la PR (et références liées, par ex. : ticket sur le bugtracker, post sur le forum...)
+- solution, stratégie, résumé des changements, et/ou choix techniques utilisés dans la PR
+- comment tester la PR
 
 L'auteur est vivement encouragé à respecter les bonnes pratiques suivantes :
 - une PR doit concerner exclusivement un sujet précis. Par exemple, elle ne doit pas à la fois résoudre un bug et ajouter une fonctionnalité (à moins que l'un implique l'autre) ;
@@ -130,7 +132,6 @@ Il appartient aussi à l'auteur de la PR de juger de son importance. (Ce jugemen
 Une fois la PR déclarée comme terminée, les contributeurs sont invités à donner leurs avis, relire et tester les changements proposés pour les valider. Lorsque des bugs ou des implémentations mauvaises ou incomplètes sont trouvées, les relecteurs rapportent cordialement le problème à l'auteur de la PR sur le fil de discussion. Si le problème trouvé est simple à corriger (e.g. typo ou détail de forme), le relecteur est encouragé à amender la PR pour corriger le problème lui-même. Sinon, l'auteur fait de son mieux pour corriger les problèmes soulevés.
 
 Les relecteurs rapportent également le degré de relecture et de tests effectués (c.f. liste ci-dessous). Selon l'importance de la PR (mineure, moyenne ou majeure), différents quotas de tests et approbations sont à remplir pour que celle-ci soit validée. Les relecteurs peuvent valider une fois chaque type de relecture/test nécessaire (par exemple, un relecteur peut donner un point d'accord sur le principe, un autre point de relecture en diagonale, et un autre point de test dans des cas simples.). L'auteur de la PR ne compte pas dans ces quotas de validation. La proposition doit aussi passer les tests automatiques disponibles dans le groupe (CI, tests unitaires/fonctionnels, linter, ...).  
-
 
 |                                   | **Mineure** | **Moyenne**  | **Majeure** |
 |-----------------------------------|-------------|--------------|-------------|
