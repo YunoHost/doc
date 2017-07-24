@@ -92,17 +92,11 @@ Le choix d'un outil de communication est laissé au Conseil, ses décisions doiv
 Pour participer aux votes du Conseil, il faut avoir contribué au projet et avoir obtenu un droit de vote (ou d'entrée) au sein du Conseil. Ce droit est délivré par le Conseil (éventuellement sur demande). Le Conseil est libre à tout moment de modifier le processus de décision.
 Être membre du Conseil n'implique pas forcément d'avoir l'ensemble des accès (infrastructure, dépôt etc...).
 
-### Un processus de prises de décision basé sur un consensus mou
-
-Les décisions à prendre peuvent être de deux ordres :
-
-1. pour un groupe (par "exemple merger une PR" serait affecté au groupe Dev tandis que "poster un tweet" serait de la responsabilité du groupe Communication)
-2. pour l'ensemble du projet (par exemple décider d'une release avec des nouvelles fonctionnalités)
-
-Si un consensus sur une décision à prendre n'est pas trouvée au sein d'un groupe, ce dernier devra se tourner vers le Conseil pour en débattre. Si aucun consensus n'est trouvé, la proposition sera soumise au vote de tous les contributeurs.
-
-
 ### Processus de validation des pull requests
+
+Cette section détaille le processus de validation des pull requests dans les différents dépòts du projet. L'objectif de ce processus est de dégager un « consensus mou ». Il est important que ce processus est *recommandé* mais ne représente pas un impératif. En particulier, il ne couvre pas toutes les situations qui peuvent se présenter. Il est donc légitime de l'adapter (avec l'accord du groupe concerné) lorsqu'il n'est pas adapté au contexte.
+
+Si un consensus ne peut être trouvé au sein d'un gorupe en suivant le processus décrit, il est invité à se tourner vers le Conseil pour en débattre. Si aucun consensus n'est trouvé, la proposition sera soumise au vote de tous les contributeurs.
 
 #### 1. Proposition
 
