@@ -16,14 +16,16 @@ sudo nano /etc/postfix/main.cf
 puis rajouter à la ligne le relai SMTP d’Orange :
 
 ```bash
-relayhost = smtp.orange.fr```
+relayhost = smtp.orange.fr
+```
 
 redémarrez Postfix :
 
 ```bash
-sudo service postfix restart```
+sudo service postfix restart
+```
 
-#####Problèmes
+##### Problèmes
 
 Si vous avez une erreur "Authentification requise", la solution est la suivante : **[source](http://viruslocker.free.fr/?page_id=1749)**.*
 
@@ -38,7 +40,8 @@ puis rajouter à la ligne :
 smtp_sasl_password_maps = hash:/etc/postfix/mdp_fai.conf
 smtp_sasl_auth_enable = yes
 smtp_sasl_security_options = noanonymous
-relayhost = [smtp.orange.fr]:25```
+relayhost = [smtp.orange.fr]:25
+```
 
 créer fichier mdp_fai.conf
 
@@ -58,4 +61,5 @@ Intégrer le mdp à Postfix :
 
 ```bash
 sudo postmap /etc/postfix/sasl/mdp_fai.conf
-sudo postconf -e smtp_sasl_password_maps=hash:/etc/postfix/sasl/mdp_fai.conf```
+sudo postconf -e smtp_sasl_password_maps=hash:/etc/postfix/sasl/mdp_fai.conf
+```
