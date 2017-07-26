@@ -98,6 +98,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [NetData](https://github.com/firehol/netdata)
 - [Nibbleblog](http://www.nibbleblog.com)
 - [NodeBB](https://nodebb.org)
+- [Nuage](https://nuage.kerjean.me/login)
 - [ONLYOFFICE](http://onlyoffice.org)
 - [ONLYOFFICE Document Server](http://helpcenter.onlyoffice.com/server/linux/document/linux-installation.aspx) (to be able to use ONLYOFFICE inside Nextcloud)
 - [OpenBazaar](https://openbazaar.org)
