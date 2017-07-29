@@ -47,7 +47,7 @@ trois mois environ.
 
 ![](./images/certificate-signed-by-LE.png)
 
-#### Ajout d’un certificat Let's Encrypt via l'interface d'administration
+#### Via la ligne de commande
 
 Connectez-vous sur votre serveur en SSH.
 
