@@ -25,16 +25,20 @@ Si vous vous servez du système de [courrier électronique](/email_fr), et que v
 <img src="/images/networks.png" width=500>
 
 #### Autres projets d’auto-hébergement
-- [ArkOS](https://arkos.io)
+##### En développement
 - [Cloudron](https://cloudron.io)
 - [Cozy](https://cozy.io)
 - [FreedomBox](https://wiki.debian.org/FreedomBox)
-- [Host@home](http://yeuxdelibad.net/Programmation/Hostathome.html)
 - [Libre.sh](https://github.com/indiehosters/libre.sh)
 - [Puffin](http://puffin.rocks)
 - [Sandstorm](https://sandstorm.io/)
 - [Sovereign](https://github.com/al3x/sovereign)
 - [UBOS](http://ubos.net)
+
+##### Non maintenu
+- [ArkOS](http://web.archive.org/web/20170603213149/https://arkos.io/)
+- [Host@home](http://web.archive.org/web/20160206150730/http://yeuxdelibad.net/Programmation/Hostathome.html)
+
 
 #### Pour aller plus loin
 * [Auto-hebergement.fr](http://www.auto-hebergement.fr/)
