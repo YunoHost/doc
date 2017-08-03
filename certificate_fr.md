@@ -13,10 +13,49 @@ Cela peut effrayer vos utilisateurs (à juste titre).
 Pour éviter cette confusion, il est possible d’obtenir un certificat signé par une autorité « connue » : **Gandi**, **RapidSSL**, **StartSSL**, **Cacert**.    
 Dans ce cas, il s’agira de remplacer le certificat auto-signé par celui qui a été reconnu par une autorité de certification, et vos utilisateurs n’auront plus à passer par cet écran d’avertissement.
 
-### Ajout d’un certificat signé par une autorité
+Dans la suite du document, DOMAIN.TLD est à remplacer par le nom de domaine que vous souhaitez configurer.
+
+## Ajout d’un certificat signé par une autorité
+
+### Méthode simplifiée (avec Moulinette)
+
+Il faut tout d'abord se connecter sur votre serveur en SSH.
+
+On se déplace dans le dossier du domaine concerné et on fait une sauvegarde:
+
+```bash
+cd /etc/yunohost/certs/DOMAIN.TLD/
+sudo mkdir yunohost_self_signed
+sudo mv *.pem *.cnf yunohost_self_signed/
+```
+
+Si aucun certificat n'est présent, ou bien que l'on souhaite regénérer de nouveaux certificats:
+
+```
+yunohost domain cert-install DOMAIN.TLD --self-signed --force
+```
+
+Enfin, on installe "Let's Encrypt certificate" :
+
+```
+yunohost domain cert-install DOMAIN.TLD
+```
+
+Elle doit retourner :
+
+```
+Success! The SSOwat configuration has been generated
+Success! Successfully installed Let's Encrypt certificate for domain DOMAIN.TLD!
+```
+
+On vous connectant à votre serveur, le navigateur n'indique plus d'erreur.
+
+### Méthode Manuelle (Attention, cette section n'est peut être pas à jour)
 
 Après création du certificat auprès de votre autorité d’enregistrement, vous devez être en possession d’une clé privée, le fichier key et d’un certificat public, le fichier crt.
 > Attention, le fichier key est très sensible, il est strictement personnel et doit être très bien sécurisé.
+
+Ces deux fichiers doivent être copiés sur le serveur, s’ils ne s’y trouvent pas déjà (les certificats se trouvent dans le dossier /etc/yunohost/certs/DOMAIN.TLD/).
 
 Ces deux fichiers doivent être copiés sur le serveur, s’ils ne s’y trouvent pas déjà.
 
