@@ -126,13 +126,9 @@ Le hook conf_regen est un hook plus délicat, que ce soit pour sa mise en place 
 ##### Mise en place d'un hook `conf_regen`
 
 Un hook conf_regen ne doit pas être placé dans le dossier hooks de l'application. Il doit être mis en place manuellement.  
-Pour cela, le dossier doit être créé.
+Le hook doit être copié en indiquant à quel service il est lié.
 ```bash
-mkdir --parents /etc/yunohost/hooks.d/conf_regen
-```
-Puis le hook doit être copié en indiquant à quel service il est lié.
-```bash
-cp hook_regen_conf /etc/yunohost/hooks.d/conf_regen/50-SERVICE-$app
+cp hook_regen_conf /usr/share/yunohost/hooks/conf_regen/50-SERVICE_$app
 ```
 
 > Lors de la suppression de l'application, ce hook devra être supprimé manuellement.
@@ -147,7 +143,7 @@ Un script de hook conf_regen devrait donc ressembler à ça:
 #!/bin/bash
 
 force=${2:-0}  # 0/1 --force argument
-dry-run=${3:-0}  # 0/1 --dry-run argument
+dryrun=${3:-0}  # 0/1 --dry-run argument
 pending_conf=$4 # Path of the pending conf file
 
 do_pre_regen() {
@@ -171,4 +167,6 @@ case "$1" in
     exit 1
     ;;
 esac
+
+exit 0
 ```
