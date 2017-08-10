@@ -39,6 +39,9 @@ Comme les instances de YunoHost possèdent une architecture unifiée, vous serez
 ### Multi-instance
 <a class="btn btn-lg btn-default" href="packaging_apps_multiinstance_fr">Multi-instance</a>
 
+### Hooks
+<a class="btn btn-lg btn-default" href="packaging_apps_hooks_fr">Hooks</a>
+
 ### Commandes pratiques
 <a class="btn btn-lg btn-default" href="packaging_apps_helpers_fr">Commandes pratiques</a>
 

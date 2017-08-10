@@ -105,6 +105,7 @@
                  * [Gestion des arguments](packaging_apps_arguments_management_fr)
                  * [Configuration Nginx](packaging_apps_nginx_conf_fr)
                  * [Multi-instance](packaging_apps_multiinstance_fr)
+                 * [Hooks](packaging_apps_hooks_fr)
                  * [Commandes pratiques](packaging_apps_helpers_fr)
                  * [Usage de trap](packaging_apps_trap_fr)
                  * [Niveaux des applications](packaging_apps_levels_fr)
