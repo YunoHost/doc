@@ -15,7 +15,7 @@ Before setting up a server at home, it is recommended that you know the [possibl
 - A Raspberry Pi 0, 1, 2 or 3 ;
 - An SD card: **8GB** capacity (at least) and **Class 10** speed rate are highly recommended (like the [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
 - A power supply (either an adapter or a MicroUSB cable)
-- An ethernet cable (RJ-45) to connect your Raspberry Pi to your router. (Raspberry Pi Zero users can connect the Pi using an OTG cable, Wifi dongle and [following these instructions](https://davidmaitland.me/2015/12/raspberry-pi-zero-headless-setup/))
+- An ethernet cable (RJ-45) to connect your Raspberry Pi to your router. (Raspberry Pi Zero users can connect the Pi using an OTG cable, Wifi dongle and [following these instructions](https://davidmaitland.me/2015/12/raspberry-pi-zero-headless-setup/). And for [Raspberry Pi Zero Wireless](https://core-electronics.com.au/tutorials/raspberry-pi-zerow-headless-wifi-setup.html).)
 
 ---
 
