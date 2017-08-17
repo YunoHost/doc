@@ -55,19 +55,19 @@ Connect to your server through SSH.
 
 You can check the status of your current certificate with :
 
-```
+```bash
 yunohost domain cert-status your.domain.tld
 ```
 
 Install a Let's Encrypt certificate with
 
-```
+```bash
 yunohost domain cert-install your.domain.tld
 ```
 
 This should return :
 
-```
+```bash
 Success! The SSOwat configuration has been generated
 Success! Successfully installed Let's Encrypt certificate for domain DOMAIN.TLD!
 ```
@@ -82,7 +82,7 @@ If due to some bad tweaking, your certificate ends up in a bad state (e.g.
 lost the certificate or unable to read the files), you should be able to clean
 the situation by regenerating a self-signed certificate :
 
-```
+```bash
 yunohost domain cert-install your.domain.tld --self-signed --force
 ```
 
