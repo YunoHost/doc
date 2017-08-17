@@ -1,95 +1,95 @@
-# Certificat
+#Certificate
 
-Un certificat est utilisé pour garantir la confidentialité des échanges entre votre serveur et votre client.
+Certificates are used to certify that your server is the genuine one and not a falsified one.
 
-YunoHost fournit par défaut un certificat **auto-signé**, ce qui veut dire que c’est votre serveur qui garantit la validité du certificat. C’est suffisant **pour un usage personnel**, car vous pouvez avoir confiance en votre serveur, en revanche cela posera problème si vous comptez ouvrir l’accès à votre serveur à des anonymes, par exemple pour héberger un site web.
-En effet, les utilisateurs devront passer par un écran de ce type :
+YunoHost provides a **self-signed** certificate, it means that your server guaranty the certificate validity. It's enough **for personal usage**, because you trust your own server. But this could be a problem if you want to open access to anonymous like web user for a website.
+Concretely users will go throw a screen like this:
 
 <img src="/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-Cet écran revient à demander **« Avez-vous confiance au serveur qui héberge ce site ? »**.
-Cela peut effrayer vos utilisateurs (à juste titre).
+This screen ask to the user : **"Do you trust this server that host this website?"**
+It could afraid a lot of users (rightly).
 
-Pour éviter cette confusion, il est possible d’obtenir un certificat signé par
-une autorité « connue » qui est **Let's Encrypt** et qui propose des
-certificats gratuits et reconnus directement par les navigateurs. YunoHost
-permet d'installer directement un tel certificat depuis l'interface
-d'administration ou la ligne de commande.
+To avoid this confusion, it's possible to get a signed certificate  by a "known" authority : **Gandi**, **RapidSSL**, **StartSSL**, **CaCert**.
+In these cases, the point is to replace the self-signed certificate with the one that has been certified by a certificate authority, and the users won't have this warning screen anymore.
 
-### Installer un certificat Let's Encrypt
+To avoid this confusion, it's possible to get a certificate signed a known
+authority named **Let's Encrypt** which provide free certificates directly
+recognized by browsers. YunoHost allows to directly install this certificate
+from the web administration interface or from the command line.
 
-Avant de chercher à installer un certificat Let's Encrypt, assurez vous que
-votre DNS est correctement configuré (votre.domaine.tld doit pointer sur l'IP
-de votre serveur) et que votre site est accessible en HTTP depuis l'extérieur
-(i.e. qu'au moins le port 80 est correctement redirigé vers votre serveur).
+### Install a Let's Encrypt certificate
 
-#### Via l'interface d'administration web
+Before attempting to install a Let's Encrypt certificate, you should make sure
+that your DNS is correctly configured (votre.domaine.tld should point to
+your server's IP) and that your domain is accessible though HTTP from outside
+your local network (i.e. at least port 80 should be forwarded to your server).
 
-Rendez-vous dans la partie 'Domaine' de l'interface d'administration, puis dans
-la section dédiée à votre domaine. Vous trouverez un bouton 'Certificat SSL'.
+#### From the web administration interface
 
-![](./images/domain-certificate-button-fr.png)
+Go to the 'Domain' part of the admin interface, then in the section dedicated to
+your.domain.tld. You should find a 'SSL certificate' button :
 
-Dans la section 'Certificat SSL', vous pourrez voir l'état actuel du certificat.
-Si vous venez d'ajouter le domaine, il dispose d'un certificat auto-signé.
+![](./images/domain-certificate-button.png)
 
-![](./images/certificate-before-LE-fr.png)
+In the 'SSL certificate' section, you can see the status of the current
+certificate. If you just added the domain, it should be a self-signed
+certificate.
 
-Si votre domaine est correctement configuré, il vous est alors possible de
-passer à un certificat Let's Encrypt via le bouton vert.
+![](./images/certificate-before-LE.png)
 
-![](./images/certificate-after-LE-fr.png)
+If your domain is correctly configured, it is then possible to install the
+Let's Encrypt certificate via the green button.
 
-Une fois l'installation effectuée, vous pouvez vous rendre sur votre domaine
-via votre navigateur, en HTTPS, pour vérifier que votre certificat est bien
-signé par Let's Encrypt. Le certificat sera renouvelé automatiquement tous les
-trois mois environ.
+![](./images/certificate-after-LE.png)
+
+Once the install is made, you can check that the certificate is live via your
+browser by going to your domain in HTTPS. The certificate will automatically
+be renewed every three months.
 
 ![](./images/certificate-signed-by-LE.png)
 
-#### Via la ligne de commande
+#### From the command line interface 
 
-Connectez-vous sur votre serveur en SSH.
+Connect to your server through SSH.
 
-Vous pouvez vérifier le statut actuel de votre certificat via
-
-```bash
-yunohost domain cert-status votre.domaine.tld
-```
-
-Installez le certificat Let's Encrypt via
+You can check the status of your current certificate with :
 
 ```bash
-yunohost domain cert-install votre.domaine.tld
+yunohost domain cert-status your.domain.tld
 ```
 
-Cette commande doit retouner :
+Install a Let's Encrypt certificate with
+
+```bash
+yunohost domain cert-install your.domain.tld
+```
+
+This should return :
 
 ```bash
 Success! The SSOwat configuration has been generated
 Success! Successfully installed Let's Encrypt certificate for domain DOMAIN.TLD!
 ```
 
-Une fois l'installation effectuée, vous pouvez vous rendre sur votre domaine
-via votre navigateur, en HTTPS, pour vérifier que votre certificat est bien
-signé par Let's Encrypt. Le certificat sera renouvelé automatiquement tous les
-trois mois environ.
+Once this is done, you can check that the certificate is live via your
+browser by going to your domain in HTTPS. The certificate will automatically
+be renewed every three months.
 
-##### En cas de problème
+##### Troubleshooting
 
-Si suite à une mauvaise manipulation, un certificat se retrouve dans une
-situation fâcheuse (e.g. perte du certificat ou impossible de lire le
-certificat), il est possible de repartir sur des bases propres en regénérant un
-certificat auto-signé :
+If due to some bad tweaking, your certificate ends up in a bad state (e.g.
+lost the certificate or unable to read the files), you should be able to clean
+the situation by regenerating a self-signed certificate :
 
 ```bash
-yunohost domain cert-install votre.domaine.tld --self-signed --force
+yunohost domain cert-install your.domain.tld --self-signed --force
 ```
 
-Si YunoHost trouve que votre domaine est mal configuré quand bien même vous
-avez bien vérifié votre configuration DNS et avez bien accès à votre serveur en
-HTTP depuis l'extérieur, vous pouvez tenter :
+If YunoHost thinks that your domain is badly configured despite the fact that
+you checked the DNS configuration and you have access in HTTP to your server
+from outside your local network, then you can :
 
-- d'ajouter une ligne `127.0.0.1 votre.domaine.tld` au fichier `/etc/hosts` sur votre serveur ;
-- si l'installation ne fonctionne toujours pas, désactiver les vérifications en ajouter `--no-checks` à la commande `cert-install`.
+- add a line `127.0.0.1 your.domain.tld` to the file `/etc/hosts` on your server ;
+- if the certificate installation still doesn't work, you can disable the checks with `--no-checks` after the `cert-install` command.
 
