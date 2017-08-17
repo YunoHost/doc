@@ -17,6 +17,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Blynk](https://github.com/blynkkk/blynk-library)
 - [Bolt](http://bolt.cm)
 - [Browsepass](http://techualization.blogspot.de/2013/09/introducing-browsepass-keepass-on-web.html)
+- [Calibre](https://manual.calibre-ebook.com/server.html)
 - [Caliopen](https://www.caliopen.org)
 - [Candy](https://candy-chat.github.io/candy)
 - [CardDavMate](https://www.inf-it.com/open-source/clients/carddavmate)
