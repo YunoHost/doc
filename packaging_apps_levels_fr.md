@@ -1,11 +1,11 @@
 # Niveaux de qualité des packages d'applications YunoHost
 
-Afin de faciliter le packaging d'applications par des étapes successives à atteindre, chaque package est affublée d'un niveau de qualité, de 0 à 10.  
+Afin de faciliter le packaging d'applications par des étapes successives à atteindre, chaque package est affublé d'un niveau de qualité, de 0 à 10.  
 Un package doit satisfaire un certain nombre de critères pour atteindre chaque niveau. De plus pour atteindre un niveau, le package doit avoir préalablement atteint le niveau précédent.
 
 Ce classement des applications par niveaux présente 3 avantages:
 - Le packaging d'application est d'autant plus ludique, avec des objectifs clairs à atteindre et des étapes successives.
-- Une application correctement packagée est d'avantage mise en avant qu'une application ne respectant pas les règles de packaging.
+- Une application correctement packagée est davantage mise en avant qu'une application ne respectant pas les règles de packaging.
 - Les utilisateurs peuvent rapidement voir le niveau d'une application et ainsi savoir si le package est de bonne qualité.
 
 ## Les niveaux de qualité des packages d'applications en détails:
@@ -15,7 +15,7 @@ Ce classement des applications par niveaux présente 3 avantages:
 C'est le niveau le plus bas, une application de niveau 0 est considérée comme non fonctionnelle.
 
 YEP à respecter pour atteindre le niveau 0:
-- [YEP 1.1](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-11---nommer-son-app-et-son-d%C3%A9pot---valid%C3%A9--manuel--notworking-) : Nommer son app et son dépot
+- [YEP 1.1](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-11---nommer-son-app-et-son-d%C3%A9pot---valid%C3%A9--manuel--notworking-) : Nommer son app et son dépôt
 - [YEP 1.2](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-12---inscrire-lapp-sur-un-r%C3%A9pertoire-connu---valid%C3%A9--manuel--notworking-) : Inscrire l'app sur un "répertoire" connu
 
 ### Niveau 1
@@ -36,9 +36,9 @@ YEP à respecter pour atteindre le niveau 1:
 - Installation privée (sécurisée par le SSO).
 - Installation publique.
 - Installation multi-instance.
-- Désinstallation dans les mêmes circonstances
+- Désinstallation dans les mêmes circonstances.
 
-*Si une application ne permet pas certaines configurations d'installations, celles-ci doivent être indiqués clairement dans le readme du package. Toutefois, le niveau 2 ne peut pas être atteint si une configuration d'installation est volontairement écartée sans raison valable.*  
+*Si une application ne permet pas certaines configurations d'installation, celles-ci doivent être indiquées clairement dans le readme du package. Toutefois, le niveau 2 ne peut pas être atteint si une configuration d'installation est volontairement écartée sans raison valable.*  
 *Cela n'empêche pas de restreindre volontairement les installations publiques, privées ou multi-instance si l'application le justifie.*
 
 YEP à respecter pour atteindre le niveau 2:
@@ -59,7 +59,7 @@ YEP à respecter pour atteindre le niveau 3:
 **L'application prend en charge ldap et HTTP AUTH**  
 L'application gère ses utilisateurs directement à partir de la [base ldap de YunoHost](https://github.com/YunoHost/SSOwat/blob/366dd6c4438e6550f7438c36893690b628340185/config.lua#L50-L53) et permet la connexion unifiée en utilisant l'[authentification HTTP](https://fr.wikipedia.org/wiki/Authentification_HTTP) depuis le SSO.
 
-*Si l'application n'est pas capable de prendre en charge un annuaire ldap ou l'authentification HTTP, ce niveau peux être ignoré.*  
+*Si l'application n'est pas capable de prendre en charge un annuaire ldap ou l'authentification HTTP, ce niveau peut être ignoré.*  
 *Il faut toutefois être en mesure de justifier de cette impossibilité*
 
 YEP à respecter pour atteindre le niveau 4:
@@ -77,7 +77,7 @@ YEP à respecter pour atteindre le niveau 5:
 - [YEP 2.18.1](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-2181---lancer-le-script-dinstallation-dune-webapp-correctement----valid%C3%A9--manuel--working-) : Lancer le script d'installation d'une webapp correctement
 
 ### Niveau 6
-**L'application peut-être sauvegardée et restaurée sans erreurs sur la même machine ou une autre.**  
+**L'application peut-être sauvegardée et restaurée sans erreur sur la même machine ou une autre.**  
 
 YEP à respecter pour atteindre le niveau 6:
 - [YEP 1.4](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-14---informer-sur-lintention-de-maintenir-un-paquet----brouillon--manuel--working-) : Informer sur l'intention de maintenir un paquet
@@ -117,7 +117,7 @@ YEP à respecter pour atteindre le niveau 8:
 *Si une application n'est pas disponible sur une architecture, et qu'il est impossible de contourner cette limitation raisonnablement, cette limitation doit être indiquée dans le readme et prise en compte dans le script d'installation. L'installation de l'application sur une architecture non supportée doit être stoppée avant de modifier les fichiers.*
 
 ### Niveau 9
-**L'application respecte toutes les [YEP optionnelles.**
+**L'application respecte toutes les YEP optionnelles.**
 
 YEP à respecter pour atteindre le niveau 9:
 - [YEP 2.10](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-210---configurer-les-logs-de-lapplication----brouillon--manuel--working-) : Configurer les logs de l'application
@@ -157,7 +157,7 @@ L'application s'installe et se désinstalle correctement dans certains cas.
 L'application s'installe et se désinstalle correctement dans toutes les configurations communes.
 
 **Niveau 3**  
-L'application peux être mise à jour.
+L'application peut être mise à jour.
 
 **Niveau 4**  
 L'application utilise directement les utilisateurs YunoHost et permet l'identification unique à partir du portail YunoHost.
