@@ -47,6 +47,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Fail2web](https://github.com/Sean-Der/fail2web)
 - [Ferment](https://github.com/mmckegg/ferment)
 - [FileTea](https://filetea.me)
+- [FoOlSlide](http://foolcode.github.io/FoOlSlide/) Open source comicbook/manga management software
 - [Fossil](http://www.fossil-scm.org)
 - [Framaslides](https://framagit.org/framasoft/framaslides/)
 - [GetSimple CMS](http://get-simple.info)
