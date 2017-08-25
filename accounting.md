@@ -1,3 +1,12 @@
-#Accounting
+# Accounting
 
-If you want to contribute to this documentation, you have to [ask an admin to create an account](/support) **OR** send merge requests to the pages' [git repository](https://github.com/YunoHost/doc).
+<div class="alert alert-warning">
+<b>
+This page isn't valid anymore: it is no longer necessary to get an account to be able to contribute to the documentation. Now, you just need to click on "Edit" and [write the doc](/write_documentation).
+</b>
+</div>
+
+<script>
+window.location.replace("/write_documentation");
+</script>
+

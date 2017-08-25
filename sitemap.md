@@ -105,7 +105,6 @@
            * [Create a live USB image](/create_live_usb)
         * Documentation
            * [Write documentation](/write_documentation)
-           * [Accounting to edit documentation](/accounting)
         * [Contribution](/contributordoc)
 
 * Project's life:
