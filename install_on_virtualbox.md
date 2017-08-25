@@ -73,6 +73,3 @@ After the reboot, you will see this screen:
 
 * You can get more information on the post-installation here: **[yunohost.org/postinstall](/postinstall)**
 
----
-
-***Need help during one of these steps? [Get support!](/support)***

@@ -33,7 +33,7 @@ We need people able to test YunoHost deeply. If you find a bug, try to identify 
 <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; Helping users
 </div>
 <div class="col col-md-8" markdown="1">
-Our support relies on contributors like you. Just come to [the XMPP chatroom](/support) and help new users getting started, or pick a question on the <a href="https://forum.yunohost.org/" target="_blank">Forum</a>.
+Our support relies on contributors like you. Just come to [the support chatroom](/help) and help new users getting started, or pick a question on the <a href="https://forum.yunohost.org/" target="_blank">Forum</a>.
 </div>
 </div>
 

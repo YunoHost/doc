@@ -56,6 +56,3 @@ sudo passwd root
 
 4. Then follow the <a href="/install_manually">generic manual install procedure</a>.
 
----
-
-***If you need help during one of these steps, do not hesitate to use [our support tools](/support).***

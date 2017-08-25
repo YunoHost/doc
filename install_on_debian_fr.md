@@ -22,7 +22,3 @@ Sur une plateforme ARM, un VPS, un serveur dédié, un ordinateur x86 standard, 
 
 <a class="btn btn-lg btn-default" href="/postinstall_fr">2. Post-installation</a>
 
----
-
-***Si vous avez besoin d’aide lors de ces étapes, n’hésitez pas à utiliser les différents [moyens de support](/support_fr).***
-
