@@ -10,5 +10,4 @@
         * [Présentation du fonctionnement de YunoHost](/package_list_fr)
         * [Se créer un environnement de développement](/ynh_dev_fr)
     * Documentation
-       * [Création d’un compte pour modifier la documentation](/accounting_fr)
        * [Écrire de la documentation](/write_documentation_fr)

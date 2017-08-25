@@ -8,5 +8,4 @@
         * [Package new applications](/packaging_apps)
         * [Develop on Docker](/docker)
     * Documentation
-       * [Account creation to edit documentation](/accounting)
        * [Write documentation](/write_documentation)
