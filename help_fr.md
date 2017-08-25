@@ -15,6 +15,10 @@
 <button id="joinChatroom" type="button" class="btn btn-success" style="font-weight:bold;">
             <span class="glyphicon glyphicon-comment"></span> Rejoindre le salon
 </button>
+</br>
+</br>
+<em>Note : vous pouvez aussi vous connecter via votre client XMPP favori à</br>
+support@conference.yunohost.org</em>
 </center>
 
 <h3>... ou demandez sur le forum !</h3>
@@ -36,6 +40,10 @@
 <button id="goDevroom" type="button" class="btn btn-warning" style="font-weight:bold; margin-left:40px">
             <span class="glyphicon glyphicon-comment"></span> Contacter les développeurs
           </button>
+</br>
+</br>
+<em>Note : vous pouvez aussi vous connecter aux salons de dev, via votre client XMPP favori, à</br>
+dev@conference.yunohost.org et apps@conference.yunohost.org</em>
 </center>
 
 <script>
