@@ -152,32 +152,3 @@
 
 </script>
 
-<script type="text/javascript" src="/jappix/javascripts/mini.min.js"></script>
-<script type="text/javascript">
-    // Jappix mini chat
-    jQuery.ajaxSetup({cache: false});
-    $(".actions").css('opacity', 0);
-
-    var ADS_ENABLE = 'off';
-    var JAPPIX_STATIC = '/jappix/';
-    var HOST_BOSH = 'https://im.yunohost.org/http-bind/';
-    var ANONYMOUS = 'on';
-     JappixMini.launch({
-        connection: {
-           domain: "anonymous.yunohost.org",
-        },
-        application: {
-           network: {
-              autoconnect: false,
-           },
-           interface: {
-              showpane: false,
-              animate: false,
-           },
-           groupchat: {
-              open: ['support@conference.yunohost.org'],
-              suggest: ['dev@conference.yunohost.org']
-           }
-        },
-     });
-</script>
