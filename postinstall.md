@@ -26,7 +26,7 @@ Or by running `yunohost tools postinstall` in command-line.
 
 This is the first domain name linked to your YunoHost server, but also the one which will be used by your server's users to access the **authentication portal**. It will thus be **visible by everyone**, choose it wisely.
 
-* If you do not have a domain name, or if you want to use the YunoHost's DynDNS service, choose a sub-domain of **.nohost.me** or **.noho.st** (i.e. `homersimpson.nohost.me`). The domain will be configured automatically and you won't need any further configuration step.
+* If you do not have a domain name, or if you want to use the YunoHost's DynDNS service, choose a sub-domain of **.nohost.me** or **.noho.st** (e.g. `homersimpson.nohost.me`). The domain will be configured automatically and you won't need any further configuration step.
 
 * If you do know what **DNS** is, you probably want to configure your own domain name here. In this case, please refer to the [DNS page](/dns) page for more informations.
 
