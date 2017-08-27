@@ -1,4 +1,4 @@
-#Free
+# Free
 
 *Trouvez la liste d’autres fournisseurs d’accès Internet **[ici](/isp_fr)**.*
 
@@ -14,7 +14,7 @@ Allez à l’adresse : [mafreebox.free.fr](http://mafreebox.free.fr/) puis authe
 
 #### Ouverture des ports
 
-[Liste des ports à ouvrir](/isp_box_config_fr.md).
+[Liste des ports à ouvrir](/isp_box_config_fr).
 
 ##### Freebox ≤ v5 
 
@@ -33,9 +33,9 @@ La présence conjointe de ces deux règles permettent d'accéder à votre serveu
 
 Pour pouvoir envoyer des mails, le déblocage se fait dans la [partie client](https://subscribe.free.fr/login/).
 
-Depuis le menu Ma freebox aller sur « Blocage SMTP sortant ».
+Depuis le menu Ma freebox aller sur « Blocage SMTP sortant ».
 
-Pour pouvoir envoyer des mails, passer le blocage en « inactif ».
+Pour pouvoir envoyer des mails, passer le blocage en « inactif ».
 
 #### Fonction NAS de la Freebox
 
@@ -57,13 +57,13 @@ $ sudo mount -t cifs //mafreebox.freebox.fr/Disque\ dur/ /home/monlogin/freebox 
 ##### Automatiser le montage  
 
 Une ligne a ajouter à la fin du `/etc/fstab` :
-```
+```bash
 //mafreebox.freebox.fr/Disque\040dur/ /home/monlogin/freebox cifs _netdev,guest,uid=monlogin,gid=users,iocharset=utf8 0 0
 ```
 
 Le `_netdev` signale que c'est un périphérique réseau, afin que le système ne le monte que s'il a accès au réseau.  
 `guest` est le mode d'identification à la Freebox : pour une connexion authentifié, placer vos identifiants dans un fichier sous la forme
-```
+```bash
 username=your_user
 password=your_pass
 domain=FREEBOX
