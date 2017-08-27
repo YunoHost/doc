@@ -14,7 +14,7 @@ Allez à l’adresse : [mafreebox.free.fr](http://mafreebox.free.fr/) puis authe
 
 #### Ouverture des ports
 
-[Liste des ports à ouvrir](/isp_box_config_fr).
+[Liste des ports à ouvrir](/isp_box_config_fr.md).
 
 ##### Freebox ≤ v5 
 
