@@ -26,6 +26,14 @@ Après l'ajout d'un utilisateur autorisé sur une application.
 Après la suppression de l'autorisation d'un utilisateur sur une application.
 - `post_app_clearaccess`  
 Après l'effacement de toute les règles d'accès sur une application.
+- `post_app_install`
+Après l'installation d'une application
+- `post_app_upgrade`
+Après l'upgrade d'une applications
+- `post_app_remove`
+Après la supression d'une applications
+- `post_app_change_url`
+Après avoir modifié le chemin et ou le nom de domaine d'une application
 - `conf_regen`  
 Avant et après la régénération de la configuration d'un service.  
 Services pris en charge par regen-conf:
@@ -84,7 +92,6 @@ password=$3 # Clear password
 firstname=$4
 lastname=$5
 ```
-
 ##### `post_user_delete`
 
 ```bash
@@ -104,6 +111,12 @@ ipv6=$2  # True/False Indique si l'IPV6 est activé ou non.
 ```bash
 backup_name=$1
 ```
+
+##### `post_app_install`, `post_app_upgrade`, `post_app_remove` et `post_app_change_url`
+
+Les variables utilisables dans ces scripts sont les mêmes que celles disponibles dans les scripts d'actions associés.
+
+Example: pour `post_app_install` les variables sont les mêmes que pour le script `install`
 
 ##### `post_app_addaccess` et `post_app_removeaccess`
 
