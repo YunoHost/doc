@@ -10,7 +10,7 @@
         <ul class="dropdown-menu">
             <li><a href="#" id="app-cards-list-validated">Only official apps</a></li>
             <li><a href="#" id="app-cards-list-working">Only working apps</a></li>
-            <li><a href="#" id="app-cards-list-working-inprogress">working & in progress apps</a></li>
+            <li><a href="#" id="app-cards-list-working-inprogress">In progress/not working apps</a></li>
             <li><a href="#" id="app-cards-list-all-apps">All apps</a></li>
         </ul>
     </div>
@@ -151,7 +151,7 @@ $(document).ready(function () {
 
     function filter(){
         var filters_text = filters.map(function(el) { return '.app-' + el;}).join(', ');
-        var valThis = $('#filter-app-cards').val();
+        var valThis = $('#filter-app-cards').val().toLowerCase();
         $('.app-card').each(function(){
             var text = $(this).find('h3').text().toLowerCase();
             (text.indexOf(valThis) == 0 && $(this).find(filters_text).length > 0) ? $(this).show() : $(this).hide();         
@@ -177,7 +177,7 @@ $(document).ready(function () {
     });
 
     $('#app-cards-list-working-inprogress').click(function(){
-        filters = ["validated", "working", "inprogress"];
+        filters = ["notworking", "inprogress"];
         $('#app-cards-list-filter-text').text($('#app-cards-list-working-inprogress').text());
         filter();
     });
