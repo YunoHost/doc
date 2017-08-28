@@ -49,7 +49,6 @@
             * [Orange](/isp_orange_fr)
         * Applications
             * [Applications officielles](/apps_fr)
-            * [Applications non officielles](/apps_in_progress_en)
             * [Mise à jour des applications](app_update_fr)
         * Administration
             * En ligne de commande
@@ -78,19 +77,7 @@
         * [Interface utilisateur](user_interface)
         * [Configurer un client email](email_configure_client_fr)
         * [Utiliser la messagerie instantanée XMPP](/XMPP_fr)
-        * [Applications officielles](/apps_fr)
-           * [Baïkal](/app_baikal_fr)
-           * [Firefox Sync](/app_ffsync_fr)
-           * [Jappix](/app_jappix_fr)
-           * [Nextcloud](app_nextcloud_fr)
-           * [Tiny Tiny RSS](/app_ttrss_fr)
-           * [Transmission](/app_transmission_fr)
-           * [Radicale](/app_radicale_fr)
-           * [RoundCube](/app_roundcube_fr)
-           * [Minidlna](app_minidlna_fr)
-           * [Wallabag v2](/app_wallabag2_fr)
-        * [Applications communautaires](/apps_in_progress_fr)
-           * [LimeSurvey](/app_limesurvey_fr)
+        * [Applications](/apps_fr)
 
     * [Guide du contributeur](/contribute_fr)
         * Développement
@@ -109,7 +96,6 @@
                  * [Usage de trap](packaging_apps_trap_fr)
                  * [Niveaux des applications](packaging_apps_levels_fr)
                  * [YEP - YunoHost Enhancement Proposals](packaging_apps_guidelines_fr)
-              * [Packages d’applications en cours de développement](/apps_in_progress_fr)
               * [Liste de proposition d’applications](/apps_wishlist_fr)
            * [Contribuer au cœur de YunoHost](/dev_fr)
            * [Création de paquets système](/build_system_fr)

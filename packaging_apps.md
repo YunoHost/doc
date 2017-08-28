@@ -87,7 +87,7 @@ This Python script checks:
 ### Publish and ask for testing your application
 * Publishing a [post on the Forum](https://forum.yunohost.org/) with the [`App integration` category](https://forum.yunohost.org/c/app-integration), to ask for testing and feedback on your application.
 
-* Ask your application to be added to the [app repository](https://github.com/YunoHost/apps) to be displayed in the [non-official apps list](apps_in_progress_en). Specify its progress state: `notworking`, `inprogress`, or `working`.
+* Ask your application to be added to the [app repository](https://github.com/YunoHost/apps) to be displayed in the [non-official apps list](apps_en). Specify its progress state: `notworking`, `inprogress`, or `working`.
 
 - Subscribe to the [Apps mailing list](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps) to be informed about packaging evolution.
 

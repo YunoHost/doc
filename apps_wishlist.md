@@ -1,6 +1,6 @@
 # Apps wishlist
 
-<a class="btn btn-lg btn-default" href="/apps_en">Official apps</a> <a class="btn btn-lg btn-default" href="/apps_in_progress_en">Apps in progress</a> <a class="btn btn-lg btn-default disabled" href="/apps_wishlist_en">Apps wishlist</a>
+<div class="alert alert-info">Before to add an app in wishlist please check your app is not already in official or community list: see the <a href="/apps_en">apps list</a></div>
 
 The following list is a compiled wishlist of applications that would be nice-to-have.
 
@@ -29,7 +29,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Commafeed](https://github.com/Athou/commafeed)
 - [Converse.js](https://conversejs.org)
 - [Coquelicot](https://coquelicot.potager.org) – [package](https://github.com/M5oul/coquelicot_ynh)
-- [Cryptpad](https://github.com/xwiki-labs/cryptpad)
 - [Cronkeep](https://github.com/cronkeep/cronkeep)
 - [CronWeb](https://github.com/fisherinnovation/CronWeb)
 - [Croodle](https://github.com/jelhan/croodle) Schedule a date or to do a poll on a general topics, with client-side encryption.
@@ -53,7 +52,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [GetSimple CMS](http://get-simple.info)
 - [Git-annex](http://git-annex.branchable.com)
 - [Gitit](http://gitit.net)
-- [GitLab](http://gitlab.org)
 - [Goaccess](https://goaccess.io) Web log analyser (replaces piwik without js tracking scripts)
 - [Gollum](https://github.com/gollum/gollum)
 - [Goploader](https://github.com/Depado/goploader)
@@ -112,7 +110,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [pdfy](https://github.com/joepie91/pdfy)
 - [PeerTube](https://github.com/Chocobozzz/PeerTube)
 - [Pelias](https://github.com/pelias/pelias)
-- [Pelican](http://blog.getpelican.com)
 - [Peps](https://github.com/MLstate/PEPS)
 - [PHPList](http://www.phplist.com)
 - [PHProxy](http://sourceforge.net/projects/poxy)
@@ -129,7 +126,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Request Tracker](https://bestpractical.com)
 - [Respawn 2.0](https://github.com/broncowdd/respawn)
 - [Restya](http://restya.com)
-- [uMap](https://umap.openstreetmap.fr/en)
 - [Scramble, Browser-based PGP web mail](https://github.com/dcposch/scramble)
 - [Scribbleton](https://scribbleton.com)
 - [ShareLatex](https://www.sharelatex.com)
@@ -142,7 +138,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Streama](https://github.com/dularion/streama)
 - [Streisand](https://github.com/jlund/streisand)
 - [SVG-Edit](https://github.com/SVG-Edit/svgedit)
-- [Sympa](http://www.sympa.org)
 - [Taskwarrior](https://taskwarrior.org)
 - [Taiga](https://taiga.io)
 - [TorChat](https://github.com/prof7bit/TorChat)
@@ -157,11 +152,9 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [WebODF](http://webodf.org)
 - [webSync](http://furier.github.io/websync)
 - [WebTorrent](https://github.com/feross/webtorrent)
-- [Wekan](http://wekan.io)
 - [WID](https://wid.chorem.com/site/home)
 - [Wisemapping](http://www.wisemapping.com)
 - [Xonotic](http://xonotic.org)
-- [Yacy](http://yacy.net) – [package](https://github.com/M5oul/yacy_ynh)
 - [YellowCMS](http://datenstrom.se/yellow)
 - [YesWiki](http://yeswiki.net/wa.php?wiki=AccueiL)
 - [ZeroTier](https://github.com/zerotier/ZeroTierOne)
