@@ -114,7 +114,8 @@ backup_name=$1
 
 ##### `post_app_install`, `post_app_upgrade`, `post_app_remove` et `post_app_change_url`
 
-Les variables utilisables dans ces scripts sont les mêmes que celles disponibles dans les scripts d'actions associés.
+Les variables utilisables dans ces scripts sont les mêmes que celles disponibles dans [les scripts d'actions associés](/packaging_apps_scripts_fr).
+
 
 Example: pour `post_app_install` les variables sont les mêmes que pour le script `install`
 
