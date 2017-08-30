@@ -1,29 +1,29 @@
-#Self-hosting
+#Самостоятельное развертывание (свой хостинг)
 
-#### Definition
-**Self-hosting** is having a server at home in order to host personnal data and services on it.
+#### Значение
+**Свой хостинг** - это сервер, расположенный у вас дома и предназначенный для размещения информации для личных нужд.
 
-#### Administrator responsibilities
-Self-hosting implies responsibilities, if you want to host a website, [emails](email) and have [an instant messaging system](XMPP) running, the server needs to stay online all the time, 24/7.
+#### Обязанности администратора
+Свой хостинг создает для вас определенные обязанности, если вы хотите разместить на нём сайт, [e-mail](email_en), а также запустить [систему мгновенных сообщений](XMPP), ваш сервер должен работать и оставаться онлайн 24/7.
 
-Problems can happen and the server could become unavailable: a power outage, Internet access loss, etc.
+Распространенные проблемы, по причине которых сервер может быть недоступен включают в себя: отсутствие электроэнергии, потеря доступа к Интернету, итд.
 
-If you use the [email system](email_en) and your server becomes unavailable, emails destined to the server will be re-sent under 3 to 7 days.
+К примеру, если вы используете [e-mail](email_en) и ваш сервер по какой-то причине становится недоступен, отправленные на него сообщения будут отправлены снова только по прошествии от 3 до 7 дней.
 
-#### Self-hosting contraints
-* Slow transfer speed. With ADSL, upload is approximately 1/10 of the rate of download. For instance: 1 Mb/s download speed would give an upload speed of 100 kb/s;
-* Availability must be 24/7;
-* Move;
+#### Минусы своего хостинга
+* Медленная передача данных. При использовании ADSL, скорость загрузки составляет 1/10 от скорости закачки. К примеру при скорости загрузки 1Мб/с скорость загрузки будет около 100Кб/с;
+* Сервер должен быть доступен 24/7;
+* Перенос данных;
 
-#### Self-hosting issues
-* Anonymity, private life;
-* Reappropriation of personnal data and services;
-* Decentralization, distributed networks;
+#### Плюсы своего хостинга
+* Анонимность, приватность;
+* Вы - единственный хозяин ваших данных и сервисов;
+* Возможность децентрализации и использования распределенных сетей;
 
 <img src="/images/networks.png" width=500>
 
-#### Others Self-hosting projects
-##### Under active development
+#### Другие проекты, предназначенные для самостоятельного развертывания
+##### В активной разработке
 - [Cloudron](https://cloudron.io)
 - [Cozy](https://cozy.io)
 - [FreedomBox](https://wiki.debian.org/FreedomBox)
@@ -33,11 +33,11 @@ If you use the [email system](email_en) and your server becomes unavailable, ema
 - [Sovereign](https://github.com/al3x/sovereign)
 - [UBOS](http://ubos.net)
 
-##### Unmaintained
+##### Неподдерживаемые
 - [ArkOS](http://web.archive.org/web/20170603213149/https://arkos.io/)
 - [Host@home](http://web.archive.org/web/20160206150730/http://yeuxdelibad.net/Programmation/Hostathome.html)
 
 
-#### Learn more
+#### Узнать больше
 * [Decentralized Web Summit](http://www.decentralizedweb.net/)
 * [Feudal Security](https://www.schneier.com/blog/archives/2012/12/feudal_sec.html) Bruce Schneier, famous security expert exposes the risks of a centralized web and the importance of civic action.
