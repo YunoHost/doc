@@ -16,7 +16,7 @@ sudo apt-get install git dialog
 git clone https://github.com/YunoHost/install_script /tmp/install_script
 ```
 
-3. The root user must have a password set, if it isn't the case, set it (whithout the install script failed):
+3. The root user must have a password set, if it isn't the case, set it (otherwise, the install script fails):
 ```bash
 sudo passwd root
 ```
