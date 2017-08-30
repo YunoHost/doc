@@ -29,7 +29,7 @@ support@conference.yunohost.org</em>
           </button>
 </center>
 
-<h3>Vous avez trouver un bug ?</h3>
+<h3>Vous avez trouvé un bug ?</h3>
 
 <center>
 <br>
