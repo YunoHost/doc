@@ -29,16 +29,16 @@ support@conference.yunohost.org</em>
           </button>
 </center>
 
-<h3>You found a bug ?</h3>
+<h3>You've found a bug ?</h3>
 
 <center>
 <br>
-<em>Please report it on our bugtracker or contact the developpers</em><br><br>
+<em>Please report it on our bugtracker or contact the developers</em><br><br>
 <button id="goBugtracker" type="button" class="btn btn-warning" style="font-weight:bold;">
             <span class="glyphicon glyphicon-exclamation-sign"></span> Report a bug
           </button>
 <button id="goDevroom" type="button" class="btn btn-warning" style="font-weight:bold; margin-left:40px">
-            <span class="glyphicon glyphicon-comment"></span> Contact the developpers
+            <span class="glyphicon glyphicon-comment"></span> Contact the developers
           </button>
 </br>
 </br>
