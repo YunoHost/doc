@@ -31,5 +31,3 @@ Pour se connecter directement sur l’ordinateur (uniquement en local) :
 * Utilisateur : **root**
 * Mot de passe : **yunohost**
 
----
-***Si vous avez besoin d’aide lors de ces étapes, n’hésitez pas à utiliser les différents [moyens de support](/support_fr).***

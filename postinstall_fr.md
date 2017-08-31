@@ -58,4 +58,5 @@ Si vous utilisez votre propre domaine et selon votre navigateur, vous pourriez v
 
 Une fois l’étape de post-installation exécutée, vérifiez que votre serveur est accessible en tapant le nom de domaine choisi précédemment dans votre navigateur web. Si celui-ci n’est pas accessible, quelques étapes de configurations supplémentaires sont sûrement nécessaires.
 
-Rendez-nous visite sur le [salon de support](/support_fr) si vous avez besoin d’aide.
+N'hésitez pas à [demander de l'aide](/help_fr) au besoin.
+

@@ -33,6 +33,3 @@
 #### Créer une image
 * [Créer une image pour la carte ARM](build_arm_image_en)
 
----
-
-***Si vous avez besoin d’aide lors de ces étapes, n’hésitez pas à utiliser les différents [moyens de support](/support_fr).***

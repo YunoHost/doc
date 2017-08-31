@@ -97,7 +97,7 @@
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org/" target="_blank">Forum</a>
       <a class="btn btn-lg btn-block btn-default" href="chat_rooms_en" target="_blank">Chat rooms</a>
       <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Latest news</a>
-      <a class="btn btn-lg btn-block btn-danger btn-support" href="/support">Support</a>
+      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_fr">Support</a>
     </div>
     <div class="col-md-7 text-right">
       <h1>Explore <small>what you can do with a server, and why it is important</small></h1>
