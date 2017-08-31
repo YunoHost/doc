@@ -18,6 +18,3 @@
 
 <a class="btn btn-lg btn-default" href="/postinstall">2. Post-install</a>
 
----
-
-***If you need help during one of these steps, do not hesitate to use [our support tools](/support).***

@@ -33,7 +33,7 @@ We need people able to test YunoHost deeply. If you find a bug, try to identify 
 <span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp; Helping users
 </div>
 <div class="col col-md-8" markdown="1">
-Our support relies on contributors like you. Just come to [the XMPP chatroom](/support) and help new users getting started, or pick a question on the <a href="https://forum.yunohost.org/" target="_blank">Forum</a>.
+Our support relies on contributors like you. Just come to [the support chatroom](/help) and help new users getting started, or pick a question on the <a href="https://forum.yunohost.org/" target="_blank">Forum</a>.
 </div>
 </div>
 
@@ -109,32 +109,3 @@ Seed (share) YunoHost images with Torrent system: [live](http://build.yunohost.o
 <br>
 <p class="lead" markdown="1">In any case, please [come to dev chatroom](xmpp:dev@conference.yunohost.org?join) to contribute :-)</p>
 
-<script type="text/javascript" src="/jappix/javascripts/mini.min.js"></script>
-<script type="text/javascript">
-    // Jappix mini chat
-    $(".actions").css('opacity', 0);
-    jQuery.ajaxSetup({cache: false});
-
-    var ADS_ENABLE = 'off';
-    var JAPPIX_STATIC = '/jappix/';
-    var HOST_BOSH = 'https://im.yunohost.org/http-bind/';
-    var ANONYMOUS = 'on';
-     JappixMini.launch({
-        connection: {
-           domain: "anonymous.yunohost.org",
-        },
-        application: {
-           network: {
-              autoconnect: false,
-           },
-           interface: {
-              showpane: false,
-              animate: false,
-           },
-           groupchat: {
-              open: ['dev@conference.yunohost.org'],
-              suggest: ['support@conference.yunohost.org']
-           }
-        },
-     });
-</script>

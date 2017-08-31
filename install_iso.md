@@ -32,6 +32,3 @@ To connect directly to your computer or with [SSH](/ssh) (only on local network:
 * User: **root**
 * Password: **yunohost**
 
----
-
-***Need help during one of these steps? [Get support!](/support)***

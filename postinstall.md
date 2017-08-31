@@ -52,4 +52,3 @@ If you're using your own domain and depending on your browser, you might be stuc
 
 Once the post-installation finished, check if you can access to your server with your web-browser. If it is not the case, a few more configuration steps may be required.
 
-Do not hesitate to come on our [support chatroom](/support) if you need help.

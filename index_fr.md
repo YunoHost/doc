@@ -96,7 +96,7 @@
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org" target="_blank">Forum</a>
       <a class="btn btn-lg btn-block btn-default" href="chat_rooms_fr" target="_blank">Salons de discussions</a>
       <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Dernières nouvelles</a>
-      <a class="btn btn-lg btn-block btn-danger btn-support" href="/support_fr">Support</a>
+      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_fr">Support</a>
 
     </div>
     <div class="col-md-7 text-right">
@@ -152,32 +152,3 @@
 
 </script>
 
-<script type="text/javascript" src="/jappix/javascripts/mini.min.js"></script>
-<script type="text/javascript">
-    // Jappix mini chat
-    jQuery.ajaxSetup({cache: false});
-    $(".actions").css('opacity', 0);
-
-    var ADS_ENABLE = 'off';
-    var JAPPIX_STATIC = '/jappix/';
-    var HOST_BOSH = 'https://im.yunohost.org/http-bind/';
-    var ANONYMOUS = 'on';
-     JappixMini.launch({
-        connection: {
-           domain: "anonymous.yunohost.org",
-        },
-        application: {
-           network: {
-              autoconnect: false,
-           },
-           interface: {
-              showpane: false,
-              animate: false,
-           },
-           groupchat: {
-              open: ['support@conference.yunohost.org'],
-              suggest: ['dev@conference.yunohost.org']
-           }
-        },
-     });
-</script>

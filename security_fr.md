@@ -11,7 +11,7 @@ Deux points sont néanmoins importants à noter :
 
 * Le fait que YunoHost soit un logiciel répandu augmente les chances de subir une attaque. Si une faille est découverte, elle peut potentiellement **toucher toutes les instances YunoHost** à un temps donné. Nous nous efforçons de corriger ces failles le plus rapidement possible, pensez donc à **mettre à jour régulièrement** votre système.
 
-*Si vous avez besoin de conseil, n’hésitez pas à [nous demander](/support_fr).*
+*Si vous avez besoin de conseil, n’hésitez pas à [nous demander](/help_fr).*
 
 *Pour discuter d'une faille de securité, contactez l'[équipe securité de YunoHost](/security_team_fr).*
 

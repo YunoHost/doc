@@ -122,34 +122,3 @@ If you're looking for stuff to implement or fix, the bug-tracker is
 should be merged in `testing` (?) !
 
 
-<script type="text/javascript" src="/jappix/javascripts/mini.min.js"></script>
-<script type="text/javascript">
-    // Jappix mini chat
-    $(".actions").css('opacity', 0);
-    jQuery.ajaxSetup({cache: false});
-
-    var ADS_ENABLE = 'off';
-    var JAPPIX_STATIC = '/jappix/';
-    var HOST_BOSH = 'https://im.yunohost.org/http-bind/';
-    var ANONYMOUS = 'on';
-     JappixMini.launch({
-        connection: {
-           domain: "anonymous.yunohost.org",
-        },
-        application: {
-           network: {
-              autoconnect: false,
-           },
-           interface: {
-              showpane: false,
-              animate: false,
-           },
-           groupchat: {
-              open: ['dev@conference.yunohost.org'],
-              suggest: ['support@conference.yunohost.org']
-           }
-        },
-     });
-</script>
-
-
