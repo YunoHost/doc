@@ -58,5 +58,14 @@ Si vous utilisez votre propre domaine et selon votre navigateur, vous pourriez v
 
 Une fois l’étape de post-installation exécutée, vérifiez que votre serveur est accessible en tapant le nom de domaine choisi précédemment dans votre navigateur web. Si celui-ci n’est pas accessible, quelques étapes de configurations supplémentaires sont sûrement nécessaires.
 
+En particulier, il faudra effectuer l'ouverture de port (cas d'une machine autohébergée derrière une box ADSL). Voir à ce sujet les tutoriaux selon votre FAI : 
+* [Fournisseurs d’accès à Internet](/isp_fr)
+   * [Configuration générale d’une box](/isp_box_config_fr)
+   * [SFR](/isp_sfr_fr)
+   * [Orange](/isp_orange_fr)
+   * [Free](/isp_free_fr)
+
+Pensez à regader [la partie sécurité dela documentation](/security_fr) et d'une façon générale à regarder la [Documentation pour les administrateurs](/YunoHost ladmindoc_fr)
+
 N'hésitez pas à [demander de l'aide](/help_fr) au besoin.
 
