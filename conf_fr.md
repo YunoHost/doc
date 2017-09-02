@@ -1,5 +1,6 @@
 # Conférences
 
+* [Ubuntu Party Novembre 2017 - De Framasoft à Yunohost, réapproprions nous le cloud]([slides](https://blog.genma.fr/?De-Framasoft-a-Yunohost-reapproprions-nous-le-cloud))
 * [PSES 2017 – Construire l’Internet du Futur avec YunoHost – Aleks, ljf](https://data.passageenseine.org/2017/aleks-ljf_internet-futur-yunohost.webm) ([slides](https://data.passageenseine.org/2017/aleks-ljf_internet-futur-yunohost.pdf))
 * [Université de technologie de compiègne 2017 – Agir pour un internet éthique – LJF](http://webtv.utc.fr/watch_video.php?v=O34AA7RBR1AH)
 * [FOSDEM 2017 – YunoHost/Internet Cube – Bram/kload](https://video.fosdem.org/2017/AW1.125/)

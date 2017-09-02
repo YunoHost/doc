@@ -46,3 +46,9 @@ yunohost backup restore nom_de_la_sauvegarde
 # Pour déplacer ses sauvegardes sur un autre disque dur
 
 Il suffit de monter son disque dur dans le dossier /home/yunohost.backup/archives
+
+# Sauvegarde d'Owncloud / Nextcloud
+
+Les données de Nextcloud se trouvent : 
+- dans la base de données, elles sont sauvegardées avec le processus de sauvegarde de Yunohost
+- dans le dodssier /home/yunohost.app/nextcloud/, on trouve un dossier par utilisateur contenant les données de ces derniers (données liées à l'application Fichier, les noms des Agendas (le contenu des agendas se trouve dans la base de données), les Notes).

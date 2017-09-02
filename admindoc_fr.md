@@ -69,3 +69,6 @@
    * [Débloquer une IP avec Fail2ban](/fail2ban_fr)
 * [Les sauvegardes](/backup_fr)
 * [Les mises à jour](/update_fr)
+* [FAQ]
+   * [Les comptes crées automatiquement pour les applications](/comptes_applications_fr)
+
