@@ -13,3 +13,4 @@
     * [Wallabag v2](/app_wallabag2_fr)
 * [Applications communautaires](/apps_in_progress_fr)
    * [LimeSurvey](/app_limesurvey_fr)
+* [Applications Framasoft](/apps_framasoft_fr)
