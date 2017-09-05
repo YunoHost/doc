@@ -52,11 +52,12 @@
  App card
 =================================================*/
 .app-card {
-    margin-bottom:10px;
+    margin-bottom:20px;
     width:270px;
     float:left;
     min-height: 1px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 /*===============================================*/
 
@@ -69,7 +70,7 @@
     font-size:1.2em;
 }
 .app-card .category {
-    height:50px;
+    height:35px;
 }
 .app-card .category .label, .app-card-date-maintainer {
     font-size:0.7em;
@@ -77,10 +78,14 @@
 .app-card-date-maintainer {
     text-align:right;
     max-height: 18px;
+    margin-bottom: 3px;
+    margin-right: 7px;
+    margin-top: -5px;
 }
 
 .app-card-desc {
     height:100px;
+    overflow: hidden;
 }
 /*===============================================*/
 
@@ -102,6 +107,7 @@
     border-right:0;
     border-top-right-radius:0;
     margin-left: 0px;
+    width: 33.6%;
 }
 /*===============================================*/
 </style>
@@ -114,12 +120,11 @@
             <div class="category"></div>
 
             <div class="app-card-desc">{app_description}</div>
+        </div>
             <div class="app-card-date-maintainer">
                 <span class="glyphicon glyphicon-refresh"></span> {app_update} - 
                 <span class="glyphicon glyphicon-user"></span> {app_maintainer}
             </div>
-        </div>
-
         <div class="btn-group" role="group">
             <a href="{app_git}" target="_BLANK" type="button" class="btn btn-default col-sm-4"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Code</a>
             <a href="#/app_{app_id}_en" target="_BLANK" type="button" class="btn btn-default col-sm-4"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Doc</a>
