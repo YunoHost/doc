@@ -11,7 +11,7 @@ there are other problems link to the firewall and services).
 
 ## Community images
 
-However, it exist community images available on Docker Hub :
+However, community images exist and are available on Docker Hub :
 
   * AMD64 (classic)
     * https://hub.docker.com/r/domainelibre/yunohost2/ (Yunohost v2.7)
