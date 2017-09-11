@@ -97,6 +97,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [MinigalNano](https://github.com/sebsauvage/MinigalNano)
 - [Mirakel](http://mirakel.azapps.de/taskwarrior.html)
 - [Modoboa](http://modoboa.org)
+- [MotionEye](https://github.com/ccrisan/motioneye)
 - [MPD](http://www.musicpd.org)
 - [NetData](https://github.com/firehol/netdata)
 - [Nibbleblog](http://www.nibbleblog.com)
