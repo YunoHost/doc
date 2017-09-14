@@ -57,6 +57,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Goploader](https://github.com/Depado/goploader)
 - [Guacamole](http://guac-dev.org)
 - [h5ai](http://larsjung.de/h5ai)
+- [HackMD](https://hackmd.io)
 - [Hackpad](https://github.com/dropbox/hackpad)
 - [Headphones](https://github.com/rembo10/headphones)
 - [Hi Buddy](http://hibuddy.monkeypatch.me)
