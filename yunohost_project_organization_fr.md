@@ -171,7 +171,7 @@ Alors un membre du groupe peut annoncer la décision comme effective (et procéd
 ## Composition des groupes
 
 - Conseil : Bram, ju, ljf, Maniack, Moul, opi, theodore.
-- Core Dev : AlexAubin, Bram, Ju, ljf, Moul, opi
+- Core Dev : AlexAubin, Bram, JimboJoe, Ju, ljf, Moul, opi
 - Apps : Bram, cyp, frju365, JimboJoe, Ju, ljf, Maniack C, Maxime, Moul, Scith, Tostaki
 - Infra : Bram, Ju, Maniack C, Moul, opi
 - Communication

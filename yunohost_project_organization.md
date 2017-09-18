@@ -169,7 +169,7 @@ Then a member of a group can announce their decision as effective (and proceed w
 ## Composition of groups
 
 - Council : Bram, ju, ljf, Maniack, Moul, opi, theodore
-- Core Dev : AlexAubin, Bram, Ju, ljf, Moul, opi
+- Core Dev : AlexAubin, Bram, JimboJoe, Ju, ljf, Moul, opi
 - Apps : Bram, cyp, frju365, JimboJoe, Ju, ljf, Maniack C, Maxime, Moul, Scith, Tostaki
 - Infra : Bram, Ju, Maniack C, Moul, opi
 - Communication
