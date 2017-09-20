@@ -2,60 +2,64 @@
 
 ## Les scripts
 
-Un paquet YunoHost doit contenir cinq scripts Shell : `install`, `remove`, `upgrade`, `backup` et `restore`.
-Ces scripts seront exécutés en tant qu’`admin` sur les serveurs YunoHost.
+Un paquet YunoHost doit contenir cinq scripts Shell : `install`, `remove`, `upgrade`, `backup` et `restore`. Un 6ème script `change_url` peut aussi être ajouté de façon optionnelle
+Ces scripts seront exécutés en tant que `root` sur les serveurs YunoHost.
 
-Voici un exemple de script d’`install` :
-```bash
-# Retrieve arguments
-domain=$1
-path=$2
-
-# Check domain/path availability
-sudo yunohost app checkurl $domain$path -a roundcube
-if [[ ! $? -eq 0 ]]; then
-    exit 1
-fi
-
-# Generate random DES key & password
-deskey=$(dd if=/dev/urandom bs=1 count=200 2> /dev/null | tr -c -d '[A-Za-z0-9]' | sed -n 's/\(.\{24\}\).*/\1/p')
-db_pwd=$(dd if=/dev/urandom bs=1 count=200 2> /dev/null | tr -c -d '[A-Za-z0-9]' | sed -n 's/\(.\{24\}\).*/\1/p')
-
-# Use 'roundcube' as database name and user
-db_user=roundcube
-
-# Initialize database and store mysql password for upgrade
-sudo yunohost app initdb $db_user -p $db_pwd -s $(readlink -e ../sources/SQL/mysql.initial.sql)
-sudo yunohost app setting roundcube mysqlpwd -v $db_pwd
-
-# Copy files to the right place
-final_path=/var/www/roundcube
-sudo mkdir -p $final_path
-sudo cp -a ../sources/* $final_path
-sudo cp ../conf/main.inc.php $final_path/config/
-sudo cp ../conf/db.inc.php $final_path/config/
-sudo mv $final_path/plugins/managesieve/config.inc.php.dist $final_path/plugins/managesieve/config.inc.php
-
-# Change variables in Roundcube configuration
-sudo sed -i "s/rcmail-ynhDESkeyTOchange/$deskey/g" $final_path/config/main.inc.php
-sudo sed -i "s/yunouser/$db_user/g" $final_path/config/db.inc.php
-sudo sed -i "s/yunopass/$db_pwd/g" $final_path/config/db.inc.php
-sudo sed -i "s/yunobase/$db_user/g" $final_path/config/db.inc.php
-
-# Set permissions to roundcube directory
-sudo chown -R www-data: $final_path
-
-# Modify Nginx configuration file and copy it to Nginx conf directory
-sed -i "s@PATHTOCHANGE@$path@g" ../conf/nginx.conf
-sed -i "s@ALIASTOCHANGE@$final_path/@g" ../conf/nginx.conf
-sudo cp ../conf/nginx.conf /etc/nginx/conf.d/$domain.d/roundcube.conf
-
-# Reload Nginx and regenerate SSOwat conf
-sudo service nginx reload
-sudo yunohost app ssowatconf
-```
+Des exemples de ces scripts sont disponibles dans l'[application d'exemple](https://github.com/YunoHost/example_ynh/tree/master/scripts)
 
 ### Utilisation
 Vous devez tout mettre dans le script d’`install` pour que votre application soit entièrement installée. Cela signifie que vous devez installer les dépendances, créer les répertoires requis, initialiser les bases de données nécessaires, copier les sources et configurer tout dans l’unique script `install` (et bien sûr faire la procédure inverse dans le script `remove`).
 
-**Attention** : pour des raisons de sécurité, le script est exécuté en tant qu’**admin** dans YunoHost. Assurez-vous de l’essayer en tant qu’**admin** et de préfixer `sudo` aux commandes requises.
+Il est possible d'utiliser des helpers et d'importer une librairie de fonction par exemple depuis un fichier `_common.sh`.
+
+### Variables disponibles pour tous ces scripts
+#### YNH_CWD
+Cette variable contient le chemin du répertoire de travail courant du contexte d'execution du script. Elle peut être utile pour retrouver le chemin initial si on s'est déplacé pendant l'execution du script. Elle est utilisée par certains helpers pour être sûr d'utiliser le bon.
+
+#### YNH_APP_ID
+Contient l'identifiant de l'application sans le numéro d'instance
+
+Exemple: strut
+#### YNH_APP_INSTANCE_NAME
+Contient le nom d'instance qui sera utilisé dans de nombreuses situation pour pouvoir gérer l'installation multiple d'une même app.
+
+Exemple: strut__3
+#### YNH_APP_INSTANCE_NUMBER
+Contient le numero de l'instance. Attention il ne s'agit pas forcément du nombre d'instance toujours installée, car une ancienne application peut avoir été désinstallée.
+
+Exemple: 3
+
+### Variables spécifiques pour `install`
+#### YNH_APP_ARG_XXXXXXX
+Pour chaque question posée dans lors de l'installation une variable d'environnement est disponible.
+
+Par exemple, si dans le manifest nous avons une question de cette forme
+```
+{
+    "name": "domain",
+    "type": "domain",
+    "ask": {
+        "en": "Choose a domain for OpenSondage",
+        "fr": "Choisissez un nom de domaine pour OpenSondage",
+        "de": "Wählen Sie bitte einen Domain für OpenSondage"
+    },
+    "example": "domain.org"
+},
+```
+
+Le nom de la question `domain` donc dans le script on peut accéder à cette variable via $YNH_APP_ARG_DOMAIN. L'usage est de créer une variable plus courte comme ceci:
+
+```
+domain=$YNH_APP_ARG_DOMAIN
+```
+
+### Variables spécifiques pour `change_url`
+#### YNH_APP_OLD_DOMAIN
+L'ancien domaine où était installée l'app.
+#### YNH_APP_OLD_PATH
+L'ancien chemin où était installée l'app;
+#### YNH_APP_NEW_DOMAIN
+Le nouveau domaine où doit être installée l'app.
+#### YNH_APP_NEW_PATH
+Le nouveau chemin où doit être installée l'app.
+
