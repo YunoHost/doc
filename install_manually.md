@@ -8,7 +8,8 @@ Once you have access to your server, either directly or by SSH, you can install 
 
 1. Install git
 ```bash
-sudo apt-get install git dialog
+sudo apt-get update
+sudo apt-get install ca-certificate dialog git
 ```
 
 2. Clone the Yunohost install script repository
