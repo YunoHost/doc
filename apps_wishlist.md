@@ -49,6 +49,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [FoOlSlide](http://foolcode.github.io/FoOlSlide/) Open source comicbook/manga management software
 - [Fossil](http://www.fossil-scm.org)
 - [Framaslides](https://framagit.org/framasoft/framaslides/)
+- [Christian] (https://geneweb.tuxfamily.org)
 - [GetSimple CMS](http://get-simple.info)
 - [Git-annex](http://git-annex.branchable.com)
 - [Gitit](http://gitit.net)
@@ -74,6 +75,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Joomla!](https://www.joomla.org)
 - [JS Bin](http://jsbin.com/help/2-second-setup)
 - [Kaiwa](http://getkaiwa.com)
+- [Christian] (http://keepass.info)
 - [Kin calendar](https://github.com/KinToday)
 - [Kinto](https://github.com/Kinto/formbuilder)
 - [Kiwix](http://www.kiwix.org/) Offline wikipedia
