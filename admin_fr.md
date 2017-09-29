@@ -1,8 +1,8 @@
 # L’interface d’administration web
 
-YunoHost est fourni avec une interface graphique d’administration. L’autre méthode est d’utiliser la [moulinette](/moulinette_fr) ligne de commande.
+YunoHost est fourni avec une interface graphique d’administration. L’autre méthode est d’utiliser la [ligne de commande](/moulinette_fr).
 
-**Attention** : l’interface d’administration donne accès à beaucoup moins de fonctionnalités que la moulinette, car elle est en développement actif.
+**Attention** : la ligne de commande donne accès à des fonctionnalités avancées non incluses dans l'interface d'administration web.
 
 ### Accès
 L’interface admin est accessible depuis votre instance YunoHost à l’adresse https://exemple.org/yunohost/admin (remplacez exemple.org par la bonne valeur)
@@ -12,16 +12,6 @@ L’interface admin est accessible depuis votre instance YunoHost à l’adresse
 </div>
 
 ### Réinitialiser le mot de passe administrateur
-
-#### Sous Yunohost 2.5
-
-Le script pour réinitialiser le mot de passe adminstrateur n'est pas directement disponible, mais peut être téléchargé puis executé (à partir de l'utilisateur root) :
-
-```bash
-$ wget https://raw.githubusercontent.com/YunoHost/yunohost/testing/sbin/yunohost-reset-ldap-password
-$ chmod +x yunohost-reset-ldap-password
-$ ./yunohost-reset-ldap-password
-```
 
 #### À partir de Yunohost 2.6
 
@@ -33,7 +23,15 @@ $ yunohost-reset-ldap-password
 
 Un mot de passe temporaire sera créé, que vous pouvez utiliser pour ensuite définir un nouveau mot de passe.
 
+#### Sous Yunohost 2.5
 
+Le script pour réinitialiser le mot de passe adminstrateur n'est pas directement disponible, mais peut être téléchargé puis executé (à partir de l'utilisateur root) :
+
+```bash
+$ wget https://raw.githubusercontent.com/YunoHost/yunohost/testing/sbin/yunohost-reset-ldap-password
+$ chmod +x yunohost-reset-ldap-password
+$ ./yunohost-reset-ldap-password
+```
 
 ### Comment déplacer le dossier d’une application
 

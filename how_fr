@@ -1,0 +1,109 @@
+# Choisir son mode d'auto-hébergement
+Vous pouvez vous auto-héberger chez vous ou décider de gérer une machine virtuelle ou un serveur physique en datacenter. Un choix éclairé se fait selon ce que vous souhaitez héberger, la localisation des utilisateurs du serveur, le type de connexion internet que vous avez et le matériel que vous avez déjà à votre disposition.
+
+
+#### Évaluer sa connexion internet
+Dans le cadre de l'auto-hébergement la qualité d'une connexion internet peut s'évaluer sur 2 critères:
+- les possibilités de configuration (important pour le mail)
+- le débit montant (celui qui n'est pas annoncé en gros par votre FAI...)
+
+Selon la situation, il peut être pertinent d'utiliser un [VPN](/vpn_fr) ou d'abandonner l'idée d'héberger physiquement la machine en optant pour un serveur distant (typiquement en datacenter ou chez une personne de confiance).
+
+##### Configuration de sa connexion
+###### Redirection du traffic entrant
+Pour s'auto-héberger il faut pouvoir exposer sa machine sur internet, c'est à dire qu'il faut pouvoir rediriger les communications entrantes (arrivant sur la box) vers le serveur qui se trouve sur le réseau local. La plupart des Fournisseurs d'Accès à Internet le permettent si il s'agit d'un abonnement classique à Internet. 
+
+Par contre, si il s'agit d'une connexion demandant de se connecter avec son navigateur sur un portail captif (FreeWifi), ou d'un réseau d'entreprise ou d'université sur lequel vous n'avez pas la main, il faudra à priori utiliser un tunnel (par exemple un [VPN](/vpn_fr)) pour contourner l'absence de possibilité de redirection du flux entrant.
+
+###### Envoi de mail
+Si vous souhaitez pouvoir envoyer des mails à n'importe quel serveur mail dans le monde, il est nécéssaire de pouvoir configurer plus finement votre connexion. Malheureusement la plupart des FAI Français et belges ne sont pas de très bons élèves.
+
+Ci dessous une liste de ce qu'il faut pouvoir régler:
+- Obtention d'une IPv4 publique fixe
+- Ouverture du port 25
+- Edition du reverse DNS
+- Non listage sur le DUL (ce dernier point a une influence moindre)
+
+Un comparatif est disponible sur la page dédiée au [Fournisseur d'Accès Internet](/isp_fr). Si votre FAI ne permet pas de faire ces réglages, vous pouvez utiliser un [VPN](/vpn_fr) pour contourner le problème.
+
+
+##### Débit
+Plus on a un débit montant important plus les services hébergés pourront répondre rapidement en dehors de votre réseau local. Certains services comme le streaming vidéo nécessitent un débit minimale pour fonctionner correctement, d'autres auront besoin de plus de débit pour pouvoir accepter plus de visiteurs.
+
+Pour mesurer son débit, il existe plusieurs techniques, en effet une mesure à un endroit sur Internet peut être différente d'un autre. Le débit peut ausi être différent selon le protocole (certains FAI ralentissent la vidéo et le torrent par rapport au reste). Dans le cas de l'auto-hébergement, on souhaite en général que le test soit proche du cas d'utilisation d'un visiteur/utilisateur type.
+
+- [Test simple sur test-debit.fr](http://www.test-debit.fr/)
+- [Test avec iperf3](/test_iperf_fr)
+- [Test en torrent](/test_torrent_fr)
+- [Test cas réel](/test_upload_fr)
+
+Si vous avez un mauvais débit, mais que les usagers de votre serveur se situe en général sur votre réseau local (chez vous), à ce moment la limitation de débit ne les concernent pas. Autrement dit, s'auto-héberger peut être un moyen d'accélérer ses services chez soi quand on a une mauvaise connexion. Par contre les visiteurs ou autres usagers extérieurs constateront des lenteurs.
+
+
+##### Contournement
+<div class="alert alert-info" markdown="1">
+<span class="glyphicon glyphicon-heart"></span> Les FAI associatifs de la Fédération FDN peuvent vous fournir de nombreuses solutions pour pallier à ces problématiques (VPN compatibles pour l'auto-hébergement, serveurs virtuels, housing, abonnement internet alternatif...). Il s'agit de FAI à taille humaine qui sont engagés dans la construction d'un Internet respectueux des utilisateurs. Vous trouverez plus d'information auprès de [votre FAI associatif local](https://db.ffdn.org/).
+</div>
+
+###### Utilisation d'un VPN
+Dans le cadre de l'auto-hébergement, on peut se servir d'un VPN pour changer virtuellement de Fournisseur d'Accès Internet. Ainsi on est plus limité par les réglages de son FAI classique mais par les réglages de son fournisseur de VPN. [En savoir plus](/vpn_fr)
+
+###### Opter pour un hébergement distant
+Une solution pour contourner les FAI trop restrictifs et/ou les connexions Internet trop lentes (si l'on souhaite favoriser les visiteurs extérieurs) peut être de localiser son serveur ailleurs que chez soi.
+
+Plusieurs solutions existent:
+- Location d'un serveur privé virtuel (VPS)
+- Location d'un serveur dédié (si on a vraiment des gros gros gros besoin)
+- Hébergement d'une machine physique en datacenter
+- Hébergement d'une machine physique chez une personne de confiance (avec un VPN potentiellement)
+
+Un des avantages du VPS est qu'il est théoriquement plus résilient: en général les fournisseurs de VPS virtualisent sur plusieurs serveurs physiques ce qui assure la continuité de service même si un serveur tombe en panne. Il est possible d'avoir le même genre de montage chez soi, mais celà demande des connaissances techniques importantes.
+
+###### Changer de type d'abonnement internet
+Afin de pouvoir régler sa connexion correctemnt (reverse DNS, Ipv4 fixe, port 25, DUL) une autre stratégie peut être de changer d'opérateur réseau. Le mieux dans ce cas est de se référer aux [comparatifs des FAI](/isp_fr).
+
+Si votre débit n'est pas suffisant, il y a plus de chance d'améliorer la situation en changeant de type de technologie (VDSL, Radio, Fibre optique à terminaison coaxiale, Fibre optique) qu'en changeant d'opérateur. Typiquement si votre ligne ADSL est très éloigné du NRA, changer d'opérateur ADSL ne changera à priori rien. 
+
+Certains FAI proposent des aternatives à l'ADSL par le biais d'antennes radios notamment dans les zones faiblement connectés. Ces antennes peuvent parfois permettre d'obtenir une bande passante proche de la fibre (ou au moins d'une ADSL de grande ville). Voir même largement supérieur pour les débits montants.
+
+#### Choisir les caractèristiques de son serveur
+YunoHost est compatible avec tous les types de machines courants.
+Il est important d’identifier votre type de machine avant de procéder à l’installation.
+
+| Type | Exemples de machines |
+|------|-----------------------|
+| **x86** | PC de bureau, PC portables, Mac Intel (après 2007), netbooks, nettops, etc. |
+| **armhf** | [Carte ARM](install_on_arm_board_fr), [Raspberry Pi](/install_on_raspberry_fr), Olimex, Cubox, Beagleboard, etc… |
+
+Qu'il s'agissent d'une machine physique ou virtuelle, que ce serveur soit chez vous ou ailleurs, il est important de dimensionner les caractèristiques de la machine correctement, sinon certains services pourraient ne pas pouvoir s'installer ou fonctionner correctement.
+
+##### Configuration minimale
+La configuration minimale pour installer YunoHost est la suivante. En l'état il risque d'y avoir des lenteurs et certaines applications seront inutilisables voir impossible à installer.
+- 500 MHz de processeur
+- 256 Mo de RAM
+- 4 Go d’espace de stockage
+
+##### Configuration recommandée
+Avec cette configuration recommandée, YunoHost devrait fonctionner plus rapidement:
+* 1GHz silencieuse et peu consommatrice. (certaines apps ne s'installent pas sur arm)
+* 512 Mo de RAM, pour faire fonctionner la plupart des applications, 1Go pour pouvoir faire fonctionner toutes les applications correctement
+* 20 Go d’espace de stockage, pour pouvoir stocker plus d’emails et de documents (ou beaucoup plus certains ont 3To)
+* silencieuse et peu consomatrice
+
+Les cartes Olinuxino Lime 1 et Lime 2 (utilisées par La Brique Internet) ou les derniers raspberry pi correspondent à peu prés à cette configuration (en dehors du fait que ce sont des processeurs ARM). Il existe des images officielles pour ces cartes.
+
+#### Identifier les services ayant des besoins spécifiques
+Selon le type de service que vous souhaitez héberger il vous faudra un ordinateur plus ou moins puissant ainsi qu'une connexion avec un débit montant adéquat.
+
+
+| Service | Mémoire vive | Processeur | Débit montant | Config routeur/vpn | 
+|----------------------------------------------------------------------------------|
+| Boite mail | - | - | - | voir config mail |
+| Mailing liste | 1Go | - | - | voir config mail |
+| Streaming/conf audio | - | - | 1 Mbps? | - |
+| Streaming/conf vidéo | 1Go? | - | 1 Mbps | - |
+| Jenkins | - | arm déconseillé | - | - |
+| Stockage de fichier/image | - | - | Lent en ADSL | - |
+| VPN | - | instructions de chiffrement | - | - |
+
+Cette liste n'est pas exhaustive, il est recommandé de vérifier les pré-requis sur le README de chaque app que l'on souhaite installer.

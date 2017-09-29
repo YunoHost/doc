@@ -1,0 +1,23 @@
+# Pourquoi ne pas s'auto héberger ?
+Pour s'auto-héberger il est nécéssaire de faire face à quelques contraintes, dans certains cas elles peuvent être trop importantes. De façon alternatives, il existe des hébergeurs engagés dans le respects de leurs usagers. En france, la plupart sont réunis autour du collectif CHATONS.
+
+#### Vous manquez de temps ou de patience
+S'auto-héberger c'est un peu comme faire pousser ses légumes, il faut du travail et de la patience. Bien que YunoHost essaie de faire le travail difficile pour vous, l'auto-hébergement demande de prendre le temps de comprendre, d'installer et de configurer ce dont on a besoin. Il est aussi nécéssaire de s'occuper de son serveur de temps en temps (mises à jour) ou de demander de l'aide si quelques chose casse.
+
+#### Vous ne pouvez assumer la responsabilités associée
+Auto-héberger des services c'est reprendre la responsabilité des données et services que l'on héberge. Le fait d'héberger soi-même des services implique de mettre en oeuvre diverses stratégies afin de pouvoir maintenir au mieux les services en question. Il s'agit de stratégie pour éviter un risque et de solutions de secours en cas de problème: panne d'électricité, coupure d'accès à Internet, enfants, vacances, animaux domestiques, catastrophes naturelles ou industrielles...
+
+Vous devrez mettre en place des sauvegardes régulières et vous tenir informer des alertes de sécurités pour éviter de perdre vos données.
+
+La disponibilité 24/7 est la plupart du temps nécéssaire pour les personnes utilisant un services quelqu'il soit. Si vous vous servez du système de [courrier électronique](/email_fr), et que votre serveur est indisponible, les mails destinés au serveur seront de nouveau envoyés sous 3 à 7 jours, après ils seront perdus. Il faut donc anticiper notamment en ce qui concerne les déménagements et les periodes d'absences. Tester automatiquement la disponibilité du serveur (monitoring) et avoir une procédure de restauration rapide et faisable à distance peut être une solution.
+
+#### Vous avez besoin d'une qualité et de performance trop grande
+YunoHost (et la plupart des applications proposées) sont des logiciels libres, une part d'entre eux sont développées sur le temps libres de leurs contributeurs. Il n'y a pas de guarantie que les logiciels fonctionneront dans toutes les circonstances possibles.
+
+La puissance de votre serveur peut aussi être un frein si vous avez de gros besoins.
+
+Le débit d’émission peut être trop faible pour certains services. Dans le cas de l’ADSL, il est souvent de l’ordre de 1/10 par rapport au débit de réception. Par exemple : 1 Mo/s de réception et 100 ko/s d’émission. Dans ces conditions, il n'est pas possible par exemple d'avoir des interfaces réactives ou de diffuser des vidéos en streaming lues par plusieurs personnes à la fois.
+
+La configuration de l'accès internet est souvent incompatible pour l'envoi de mail. De nombreux Fournisseur d'Accès à Internet ne respectent pas la neutralité du net et empéchent leurs abonné·e·s de configurer correctement leur connexion Internet (blocage du port 25, pas d'IP statique, impossible de configurer le reverse DNS, etc.).
+
+Pour ces deux points, une solution peut être de changer d'offre ou de voir si un Fournisseur d'Accès à Internet alternatif n'a pas une solution.

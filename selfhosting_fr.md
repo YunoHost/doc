@@ -1,47 +1,12 @@
 #L’auto-hébergement
 
 #### Définition
-L’**auto-hébergement** consiste à héberger chez soi son serveur, ses données et ses services.
+Un **serveur** informatique est un ordinateur généralement allumé 24h/24 qui fournit des **services** aux usagers d'un réseau informatique (typiquement Internet). Il peut s'agir de l'envoi de page web d'un site internet, de fournir des boites mails, de services de synchronisation de fichier, etc. Les utilisatrices et utilisateurs solicitent ces services à travers le réseau auxquels est connecté le serveur.
 
-#### Responsabilités de l’administrateur
-Si vous souhaitez vous servir d’un site web, du [courrier électronique](/email_fr) et de la [messagerie instantanée](/XMPP_fr), le serveur devra rester allumé tout le temps, soit 24h/24 et 7j/7.
+L’**auto-hébergement** consiste à héberger chez soi son serveur, ses données et ses services. On peut aussi héberger son serveur chez quel'qu'un d'autre, par exemple en datacenter ou faire le choix de louer un serveur, tout en continuant à en avoir la pleine gestion. Ce sont des formes d'hébergement qui s'approche beaucoup de l'auto-hébergement car on héberge ses services soi-même.
 
-L’auto-hébergement entraîne une disponibilité du serveur envers les utilisateurs hébergés sur votre serveur et/ou aux personnes extérieures consultants le serveur.
-
-Il peut y avoir des problèmes rendant le serveur indisponible : une coupure électrique, une perte d’accès à Internet…etc.
-
-Si vous vous servez du système de [courrier électronique](/email_fr), et que votre serveur est indisponible, les mails destinés au serveur seront de nouveau envoyés sous 3 à 7 jours.
-
-#### Contraintes de l’auto-hébergement
-* Le débit d’émission est faible. Dans le cas de l’ADSL, il est souvent de l’ordre de 1/10 par rapport au débit de réception. Par exemple : 1 Mo/s de réception et 100 ko/s d’émission ;
-* La disponibilité 24/7 ;
-* Le déménagement ;
-
-#### Enjeux de l’auto-hébergement
-* Anonymat, vie privée ;
-* Réappropriation de ces données de ces services ;
-* Décentralisation, réseaux distribués ;
-
-<img src="/images/networks.png" width=500>
-
-#### Autres projets d’auto-hébergement
-##### En développement
-- [Cloudron](https://cloudron.io)
-- [Cozy](https://cozy.io)
-- [FreedomBox](https://wiki.debian.org/FreedomBox)
-- [Libre.sh](https://github.com/indiehosters/libre.sh)
-- [Puffin](http://puffin.rocks)
-- [Sandstorm](https://sandstorm.io/)
-- [Sovereign](https://github.com/al3x/sovereign)
-- [UBOS](http://ubos.net)
-
-##### Non maintenu
-- [ArkOS](http://web.archive.org/web/20170603213149/https://arkos.io/)
-- [Host@home](http://web.archive.org/web/20160206150730/http://yeuxdelibad.net/Programmation/Hostathome.html)
+**YunoHost** est un logiciel (une distribution linux) qui permet de simplifier l'installation et l'administration de son propre serveur. Mais avant de plonger dans l'auto-hébergement, vous devriez peser le pour et le contre de l'auto-hébergement.
 
 
-#### Pour aller plus loin
-* [Auto-hebergement.fr](http://www.auto-hebergement.fr/)
-* [Conférence de Benjamin Bayart - Internet libre, ou Minitel 2.0 ?](http://www.fdn.fr/internet-libre-ou-minitel-2.html)
-* [Conférence de Dufromentel - Auto-hébergement vous pouvez ? - Capitole du Libre - 2014](http://videos2014.capitoledulibre.org/internet-libre/dufromentel-auto-hebergement-vous-pouvez.webm)
-* [Conférence de Richard Stallman - Le logiciel libre](http://perso.telecom-paristech.fr/~boucart/video/conf_stallman.webm)
+
+

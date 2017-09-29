@@ -1,0 +1,46 @@
+# Pourquoi s'auto-héberger ?
+L'auto-hébergement au delà du simple hobby est un acte qui a de nombreux avantages qu'ils soient personnels ou societaux. On peut trouver de nombreuses conférences qui abordent le sujet. Ci-dessous un bref résumé.
+
+#### Adopter de nouveaux outils et pouvoir les personnaliser
+Le monde du logiciel libre regorge d'outils puissants mais parfois peu connus. S'auto-héberger c'est découvrir de nouveaux services. YunoHost propose une galerie conséquente d'applications installables en 4 ou 5 clics, configurés pour le cas général. Il reste cependant possible d'affiner la configuration pour ses propres besoins, la plupart de ces applications proposant une interface d'administration plus complète.
+
+Les licences libres associées à ces logiciels permetent même de modifier le code, le graphisme ou les traductions des applications si nécéssaire.
+
+#### Comprendre comment fonctionnent Internet et les ordinateurs
+L'auto-hébergement permet de s'approprier les savoirs et la technique lié au fonctionnement des ordinateurs et des réseaux. Au delà de la curiosité ou de l'auto-formation, comprendre à minima le fonctionnement d'Internet est nécéssaire si on ne souhaite pas être la proie des Géants du net qui parfois sous couvert de simplification profitent de l'ignorance de leurs usagers.
+
+#### Garder son indépendance 
+S'auto-héberger permet de se réapproprier la gestion de ses services en ligne. Plus la société se connecte plus la phrase de Lawrence Lessig, "Code is law" se vérifie. Qui n'a pas été un jour contraint (ou fortement guidé) par l'interface d'un service en ligne de renseigner un champs ou de faire tel ou tel action. S'auto-héberger c'est en quelques sortes agir contre une certaine forme d'asservissement technologique où les usagers subissent les choix des gestionnaires de services.
+
+Dans la pratique, les services hébergés sur le Cloud - les serveurs des autres - sont parfois épémères ou le plus souvent changent de formes et de conditions d'utilisations. Avec l'auto-hébergement, on est maitre chez soi des logiciels que l'on utilise, on peut choisir de maintenir ou non un service, de le configurer d'une certaine façon, d'en installé une version modifiée.
+
+#### Préserver nos vies privées et notre liberté d'opinion
+Gérer ses services et localiser ses données chez soi ou dans un endroit sûr est une façon de reprendre le contrôle sur les données qu'on placait auparavant sur les ordinateurs des silos de données (GAFAM, NATU, et bien d'autres sociétés du "Cloud").
+
+Vos photos, vos messages, votre historique de navigation, etc. sont des parties de votre vie privée. Ces données ne devraient pas être analysables par des compagnies aux USA qui en revendent d'une façon ou d'une autre les résultats,  que ce soit pour nous vendre comme cible marketing, comme cible électoral ou même comme cible politique.
+
+A l'échelle, collective l'auto-hébergement est une étape significative nécéssaire pour préserver la vie privée et les libertés fondamentales des usagers. En l'état, l'utilisation de services proposés par ces silos de données menacent jusqu'à notre perception du monde puisque les algorithmes mis en oeuvre modifient le contenu présenté en fonction de ce que nous sommes.
+
+Toutefois, il est important de comprendre que l'auto-hébergement n'est pas une solution d'anonymat, en tout cas c'est loin d'être suffisant. C'est même l'inverse si on utilise la même IP pour son serveur et pour sa navigation. Il est toutefois possible de pallier à ce problème via l'usage d'un VPN (ou d'une connexion Internet avec plusieurs IP).
+
+#### Construire un internet libre
+L'avénement des silos de données fait naitre depuis plusieurs années des points centraux qui permetent de controler le réseau. Par ailleurs, les nombreux fournisseurs d'accès de taille moyenne ont fait place à quelques gros (voir un seul dans certains pays). Là où par le passé internet était plutôt décentralisé dans sa structure, on constate que les usages se sont centralisés énormément autour de quelques points du réseau créant de nombreux déséquilibres dans les rapports de force même à l'échelle géo-politique.
+
+En s'auto-hébergeant, on participe à la décentralisation d'internet, c'est à dire qu'on replace une partie de l'intelligence (les services) et des données à la périphérie du réseau. Ainsi on diminue l'influence des silos de données ou des états qui en ont le contrôle.
+
+Le fait de décentraliser nos usages numériques, met en lumières des pratiques différentes qui permettent d'influencer la façon dont les lois et l'infrastructure numérique sont conçus. Plus on s'auto-héberge, plus on évite le raccourcis Internet = GAFAM, plus les législateurs seront confrontés à la réalité technique d'Internet, plus les Fournisseurs d'Accès à Internet proposeront des accès internet en cohérence, c'est à dire des accès qui permettent de diffuser autant que de recevoir.
+
+Enfin, l'auto-hébergement pourrait devenir le terreau qui permettra la montée en puissance d'applications structurellement décentralisées (sans serveur central). Elles sont nombreuses et peu connus du grand public mais ont le potentiel d'être les futurs bien communs de l'humanité - à l'inverse des services centralisés des silos de données - citons par exemple le P2P, Mastodon, Yaci, Tor, Duniter, Ipfs, Gnunet, Namecoin, I2p et bien d'autres.
+
+#### Maitriser sa consommation énergétique
+Enfin, l'auto-hébergement permet d'avoir une représentation physique d'Internet et de ce que l'on utilise puisqu'on paye la facture d'électricité lié au serveur mis en place. On est libre de mettre en place un système ultra-redondé et performant ou d'opter pour une solution plus légère, de recycler des composants électroniques (disque durs par exemple), de maistriser sa consommation numérique et d'utiliser des stratégies moins gourmandes afin d'assurer la continuité des services.
+
+Dans tous les cas on peut avoir une idée correcte de la consommation énergétique associée et avoir un impact sur l'énergie grise mise en jeu, ce qui est très difficile lorsque l'on est hébergé.
+
+Note: Il faut toutefois contre balancer ce point, car la centralisation peut permettre une optimisation des ressources en ajustant au plus juste les besoins en termes de ressources (espace disque, ram, processeur).
+
+#### Pour aller plus loin
+* [Auto-hebergement.fr](http://www.auto-hebergement.fr/)
+* [Conférence de Benjamin Bayart - Internet libre, ou Minitel 2.0 ?](http://www.fdn.fr/internet-libre-ou-minitel-2.html)
+* [Conférence de Dufromentel - Auto-hébergement vous pouvez ? - Capitole du Libre - 2014](http://videos2014.capitoledulibre.org/internet-libre/dufromentel-auto-hebergement-vous-pouvez.webm)
+* [Conférence de Richard Stallman - Le logiciel libre](http://perso.telecom-paristech.fr/~boucart/video/conf_stallman.webm)
