@@ -48,7 +48,7 @@ De manière générale, c’est la **clé d’entrée à votre système**, pense
 
 ## En cas de problème
 
-### Échec de la connection sécurisée après la **post-installation**
+### Échec de la connexion sécurisée après la **post-installation**
 
 Si vous utilisez votre propre domaine et selon votre navigateur, vous pourriez vous retrouver bloqué à l'entrée de votre Yunohost tant que vous n'avez pas déployé un certificat valide. Grâce à Yunohost et [Let's Encrypt](https://letsencrypt.org/), c'est plutôt simple : exécutez simplement `yunohost domain cert-install` en ligne de commande pour émettre et installer votre certificat et _Voilà_. Rafraichissez votre navigateur et vous êtes paré.
 
