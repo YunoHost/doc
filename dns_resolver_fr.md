@@ -1,5 +1,7 @@
 # Résolveur DNS de YunoHost
 
+<div class="alert alert-danger">Cette page est dépréciée / obsolète. Les informations présentées ont besoin d'être mise à jour (ou doivent être retirée).</div>
+
 ### Présentation
 YunoHost est installé avec un service DNS pour la résolution des noms de domaine. En général, votre serveur n’est pas configuré, c’est celui de votre FAI.
 Par exemple pour une Freebox la résolution se fait par l’adresse `192.168.0.254`.

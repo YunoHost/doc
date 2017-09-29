@@ -1,5 +1,7 @@
 # YunoHost DNS Resolver
 
++<div class="alert alert-danger">This page is deprecated / obsolete. Information it contains should be updated (or should be removed).</div>
+
 ### Presentation
 YunoHost provide a DNS service for DNS name resolution. Usually, your server is not configured to use it, it's your ISP DNS. For instance, for the Free ISP with Freebox router the DNS resolver IP is `192.168.0.254`.
 
