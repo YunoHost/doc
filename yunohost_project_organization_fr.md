@@ -164,9 +164,13 @@ Une PR peut être refusée et clôturée par n'importe quel membre du groupe con
 - aucun autre membre du groupe n'a manifesté son accord avec le principe de la PR
 
 
-##### Changement d'auteur d'une PR
+##### Co-création
 
-Si l'auteur d'une PR devient indisponible, manque de temps ou souhaite se consacrer à d'autres travaux, un autre contributeur peut prendre la main en tant qu'auteur de la PR, après concertation informelle avec le groupe. Dans ce cas, il assure la gestion de la PR (e.g. développement, résolution des problèmes soulevés, ...), mais ne compte plus dans les quotas de validation de la PR.
+Une PR peut être développée par plusieurs personnes. Chacun est invité à y faire des commits en se concertant avec l'auteur initial ou le nouveau gestionnaire de PR si l'auteur est indisponible, manque de temps ou souhaite se consacrer à d'autres travaux. 
+
+Si ces commits sont conséquents, dans ce cas on peut prendre **partiellement** en compte l'avis des auteurs dans les quotas de relectures et de tests. 
+
+Exemple: si une PR est écrite par A et B (50/50), A et B pourront relire le code de l'autre. Dans ce cas, on pourra par exemple compter une relecture pour ces 2 relectures partielles.
 
 
 ##### Validation "allégé" en cas de manque de relecteurs
