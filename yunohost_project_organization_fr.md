@@ -96,7 +96,7 @@ Pour participer aux votes du Conseil, il faut avoir contribué au projet et avoi
 
 Cette section détaille le processus de validation des pull requests dans les différents dépôts du projet. L'objectif de ce processus est de dégager un « consensus mou ». Il est important que ce processus est *recommandé* mais ne représente pas un impératif. En particulier, il ne couvre pas toutes les situations qui peuvent se présenter. Il est donc légitime de l'adapter (avec l'accord du groupe concerné) lorsqu'il n'est pas adapté au contexte.
 
-Si un consensus ne peut être trouvé au sein d'un gorupe en suivant le processus décrit, il est invité à se tourner vers le Conseil pour en débattre. Si aucun consensus n'est trouvé, la proposition sera soumise au vote de tous les contributeurs.
+Si un consensus ne peut être trouvé au sein d'un groupe en suivant le processus décrit, il est invité à se tourner vers le Conseil pour en débattre. Si aucun consensus n'est trouvé, la proposition sera soumise au vote de tous les contributeurs.
 
 #### 1. Proposition
 
