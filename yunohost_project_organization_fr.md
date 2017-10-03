@@ -183,7 +183,7 @@ En cas de manque de relecteurs, l'auteur d'une PR peut déclencher une procédur
 - les quotas de relecture "standards" n'ont pas été remplis
 - une semaine s'est écoulée depuis le dernier commentaire ou commit
 
-Dans ce cas, l'auteur annonce sur le fil de discussion de la PR qu'il souhaite engager cette prodécure. À partir de ce moment, les quotas d'accord, relecture et tests pour valider cette PR sont diminués de 1. Au minimum une semaine devra s'écouler avant que cette PR ne soit effectivement mergée. Un autre membre du groupe peut à tout moment mettre fin à cette procédure si il juge la PR trop critique pour être mergée de la sorte.
+Dans ce cas, l'auteur annonce sur le fil de discussion de la PR qu'il souhaite engager cette prodécure ainsi que sur la liste de diffusion (ou lors d'une réunion du mardi). À partir de ce moment, les quotas d'accord, relecture et tests pour valider cette PR sont diminués de 1. Au minimum une semaine devra s'écouler avant que cette PR ne soit effectivement mergée. Un autre membre du groupe peut à tout moment mettre fin à cette procédure si il juge la PR trop critique pour être mergée de la sorte.
 
 
 ## Composition des groupes
