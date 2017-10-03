@@ -127,7 +127,7 @@ Il appartient aussi à l'auteur de la PR de juger de son importance. (Ce jugemen
 
 #### 2. Revue et validation collective
 
-(Cette section ne s'applique pas aux PR "micro" qui peuvent être validée directement par leur auteur.)
+(Cette section ne s'applique pas aux PR "micro" qui peuvent être validées directement par leur auteur.)
 
 Une fois la PR déclarée comme terminée, les contributeurs sont invités à donner leurs avis, relire et tester les changements proposés pour les valider. Lorsque des bugs ou des implémentations mauvaises ou incomplètes sont trouvées, les relecteurs rapportent cordialement le problème à l'auteur de la PR sur le fil de discussion. Si le problème trouvé est simple à corriger (e.g. typo ou détail de forme), le relecteur est encouragé à amender la PR pour corriger le problème lui-même. Sinon, l'auteur fait de son mieux pour corriger les problèmes soulevés.
 
