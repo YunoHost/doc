@@ -102,7 +102,7 @@ Si un consensus ne peut être trouvé au sein d'un gorupe en suivant le processu
 
 N'importe quel contributeur peut proposer une pull request (abrégée PR dans la suite) dans les divers dépôts liés au projet YunoHost (core, apps, infra, ...).
 
-L'auteur est vivement encouragé à décrire sa proposition des informations
+L'auteur est vivement encouragé à décrire sa proposition en donnant le maximum  des informations
 pertinentes. Le groupe peut, à cette fin, proposer un modèle des informations à
 inclure, comme par exemple :
 - status actuel de la PR (ex. : non terminé, en attente de revues, choix techniques à faire...)
