@@ -116,7 +116,7 @@ L'auteur est vivement encouragé à respecter les bonnes pratiques suivantes :
 - nommer sa PR avec un titre explicite, et la branche associée avec un nom explicite ;
 - donner les références vers d'autres éléments liés à la PR (rapport de bug sur le bugtracker, message sur le forum, ...)
 
-Une PR peut être créée même si son auteur juge qu'elle n'est pas encore terminée. Dans ce cas, il doit déclarer explicitement dans le fil de discussion de la PR lorsqu'il juge la PR prête. Cela n'empêche pas aux autres contributeurs d'émettre des avis sur la PR pendant ce temps.
+Une PR peut être créée même si son auteur juge qu'elle n'est pas encore terminée. Dans ce cas, il doit déclarer explicitement dans le fil de discussion de la PR lorsqu'il juge la PR prête. Cela n'empêche pas les autres contributeurs d'émettre des avis sur la PR pendant ce temps.
 
 Il appartient aussi à l'auteur de la PR de juger de son importance. (Ce jugement pourra cependant être contesté par les autres membres du groupe concerné par la PR.) Les niveaux d'importance utilisés sont les suivants :
 - **micro** : concerne uniquement un détail de forme et/ou qui ne nécessite pas d'être débattue et testée. Elle doit être facilement réversible.
