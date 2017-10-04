@@ -92,81 +92,99 @@ Le choix d'un outil de communication est laissé au Conseil, ses décisions doiv
 Pour participer aux votes du Conseil, il faut avoir contribué au projet et avoir obtenu un droit de vote (ou d'entrée) au sein du Conseil. Ce droit est délivré par le Conseil (éventuellement sur demande). Le Conseil est libre à tout moment de modifier le processus de décision.
 Être membre du Conseil n'implique pas forcément d'avoir l'ensemble des accès (infrastructure, dépôt etc...).
 
-### Un processus de prises de décision basé sur un consensus mou
+### Processus de validation des pull requests
 
-Les décisions à prendre peuvent être de deux ordres :
+Cette section détaille le processus de validation des pull requests dans les différents dépôts du projet. L'objectif de ce processus est de dégager un « consensus mou ». Il est important de préciser que ce processus est *recommandé* mais ne représente pas un impératif. En particulier, il ne couvre pas toutes les situations qui peuvent se présenter. Il est donc légitime de l'adapter (avec l'accord du groupe concerné) lorsqu'il n'est pas adapté au contexte.
 
-1. pour un groupe (par "exemple merger une PR" serait affecté au groupe Dev tandis que "poster un tweet" serait de la responsabilité du groupe Communication)
-2. pour l'ensemble du projet (par exemple décider d'une release avec des nouvelles fonctionnalités)
+Si un consensus ne peut être trouvé au sein d'un groupe en suivant le processus décrit, il est invité à se tourner vers le Conseil pour en débattre. Si aucun consensus n'est trouvé, la proposition sera soumise au vote de tous les contributeurs.
 
-Si un consensus sur une décision à prendre n'est pas trouvée au sein d'un groupe, ce dernier devra se tourner vers le Conseil pour en débattre. Si aucun consensus n'est trouvé, la proposition sera soumise au vote de tous les contributeurs.
+#### 1. Proposition
 
-#### Le processus de prise de décision en détail
+N'importe quel contributeur peut proposer une pull request (abrégée PR dans la suite) dans les divers dépôts liés au projet YunoHost (core, apps, infra, ...).
 
-##### 1) Initiation d'une décision à prendre
- - peut-être initiée par n'importe qui suivant les mediums définis au sein de chacun des groupes (exemple : ouvrir une PR déclenche automatiquement ce processus)
- - forcément publique à l'exception de situations bien définies (bug relatif à la sécurité critique ou vote sur les personnes)
-  - une date de clôture est automatiquement définie par type de proposition. La définition de la date remplie plusieurs fonctions :
-    - pouvoir laisser le temps à tout le monde de s'exprimer et ne pas prendre la décision trop vite
-    -  maintenir un rythme car si le quota des réponses est rempli avant le temps imparti, il n'y a pas besoin d'attendre l'avis de tout les membres du groupe
-       - le quota est à évaluer en fonction des personnes inscrites au groupe (ou au Conseil selon la situation) qui ont manifesté leurs souhaits d'être considéré comme votant régulier => exemple kload peut vouloir donner son avis ponctuellement, mais à priori il ne souhaitera pas être considéré comme membre votant actif du Conseil
-    - pouvoir être repoussable sur simple demande d'une des personnes du groupe. Et seulement du groupe, pas tous les contributeurs.
+L'auteur est vivement encouragé à décrire sa proposition en donnant le maximum  des informations
+pertinentes. Le groupe peut, à cette fin, proposer un modèle des informations à
+inclure, comme par exemple :
+- status actuel de la PR (ex. : non terminé, en attente de revues, choix techniques à faire...)
+- problème auquel réponds la PR (et références liées, par ex. : ticket sur le bugtracker, post sur le forum...)
+- solution, stratégie, résumé des changements, et/ou choix techniques utilisés dans la PR
+- comment tester la PR
 
-##### 2) Ouverture de la discussion, plusieurs réponses possibles :
-Tout le monde peut changer de positions à n'importe quel moment, mais il est de bon ton de laisser au groupe le temps de réagir si cela est nécessaire (pas passer de positif à négatif puis rejeter la proposition 3 min après par exemple.)
+L'auteur est vivement encouragé à respecter les bonnes pratiques suivantes :
+- une PR doit concerner exclusivement un sujet précis. Par exemple, elle ne doit pas à la fois résoudre un bug et ajouter une fonctionnalité (à moins que l'un implique l'autre) ;
+- avant de débuter l'implémentation d'une fonctionnalité qui fait intervenir des choix de conception (nom et format de commande ou d'option, nouvelle API, interface utilisateur, ...), discuter en amont de manière informelle avec le groupe pour s'assurer que l'implémentation imaginée convienne au plus grand nombre et reste dans l'esprit du projet ;
+- nommer sa PR avec un titre explicite, et la branche associée avec un nom explicite ;
+- donner les références vers d'autres éléments liés à la PR (rapport de bug sur le bugtracker, message sur le forum, ...)
 
-- réponses dites "simple"
-   - "je suis d'accord" -> vaut pour un avis positif
- - "ça me semble bon, mais je préfère m'en remettre aux autres" -> si jamais il n'y a que des avis comme cela (ou le suivant) et au moins un avis positif et que la date est passé, la proposition est acceptée
- - "pas d'avis" / "je ne suis pas en position de donner un avis pertinent (exemple: je sais pas coder en X)"
--  réponses délayantes/différées
- - demande de précisions, dans ce cas la décision est suspendue
--  refus: tout refus doit être argumenté et justifié
+Une PR peut être créée même si son auteur juge qu'elle n'est pas encore terminée. Dans ce cas, il doit déclarer explicitement dans le fil de discussion de la PR lorsqu'il juge la PR prête. Cela n'empêche pas les autres contributeurs d'émettre des avis sur la PR pendant ce temps.
 
-##### 3) Suspension/Repoussement
- - tant qu'il n'y a pas de réponse, la décision est suspendue, au moment de la réponse, la date de clôture est automatiquement repoussée (si besoin) (pour une durée, à définir, moins longue que la première fois)
- -  situation où il y a des avis positifs et négatifs ou situation où il y a un choix à faire entre plusieurs propositions
+Il appartient aussi à l'auteur de la PR de juger de son importance. (Ce jugement pourra cependant être contesté par les autres membres du groupe concerné par la PR.) Les niveaux d'importance utilisés sont les suivants :
+- **micro** : concerne uniquement un détail de forme et/ou qui ne nécessite pas d'être débattue et testée. Elle doit être facilement réversible.
+- **mineure** : impacte de manière légère le projet (e.g. refactoring d'une petite partie de code, réparation d'un bug, ...)
+- **moyenne** : impacte de manière significative l'architecture d'une partie du code (e.g. refactoring de tout un aspect ou de tout un fichier, ajout d'une fonctionnalité importante, sortie d'une version testing, ...)
+- **majeure** : impacte lourdement l'ensemble du projet (e.g. migration d'une dépendance critique, changement de version de Debian, sortie d'une version stable,  ...)
 
-##### 4) Demande de modifications
- - mais il se peut qu'il y ait discussion autour de ces modifications, si c'est le cas, cela devient une nouvelle décision à adjoindre à la liste des décisions à prendre et le processus s'y applique alors (et cela repousse la date)
- - dans le cas contraire, un membre du groupe peut demander à ce que l'on fasse un vote qui portera sur la liste des possibilités qui font conflits + "ce vote est mal formulé, reformulons le"
- - s'il n'y a pas assez de monde d'accord, la date est repoussée et un rappel doit être envoyé
- - si le résultat est vraiment serré, le groupe est invité à rediscuter de la question si elle est importante, car cela pourrait être source de division et de tension à l'avenir
 
-##### 5) Clôture
- -  si le groupe est unanime dans sa décision
-   - que des avis positifs
-   - que des refus
-   - sans avis (s'en remet aux autres)
- - Pour une décison mineure ou moyenne/standard, si le quota de réponse est atteint à la durée minimale et que le consensus est obtenu.
-  - Le quota de réponse correspond aux avis nécessaires, détaillé ci-après dans les types de décisions. Le pourcentage est rapporté au nombre d'actifs dans le groupe concerné. La gestion des actif et inactif dans le groupe est à la charge du coordinateur et du suppléant qui doivent maintenir à jour la liste des membres au minimum à chaque décision du groupe. (Un inactif qui se manifeste lors d'une décision redevient automatiquement actif.)
- - s'il n'est pas possible d'avoir assez de monde (vacances, plus assez de membres du groupe pouvant avoir un avis) il est possible pour le groupe de demander la clôture même si le quota d'avis n'est pas atteint, il y a alors un nouveau décalage de la date et si cette nouvelle date est franchie, la proposition est clôturée selon les avis donnés.
+#### 2. Revue et validation collective
 
-###### Micro décision:
-- Décision prise et appliquée par un seul membre sans délai. Ce type de décision doit impérativement pouvoir être réversible, et peut être remise en question par n'importe quel membre du groupe.
+(Cette section ne s'applique pas aux PR "micro" qui peuvent être validées directement par leur auteur.)
 
-###### Décision Mineure:
-- Durée initiale: 1 semaine.
-- Durée minimale: 3 jours.
-- Décalage, si nécessaire: 3 jours.
-- Avis nécessaires: 2 membres du groupe (celui qui a initié cette prise de décision peux donner son avis). 3, dont 2 membres du groupe pour anticiper.
-- Validation par vote (le cas échéant): 66% de votes positifs.
+Une fois la PR déclarée comme terminée, les contributeurs sont invités à donner leurs avis, relire et tester les changements proposés pour les valider. Lorsque des bugs ou des implémentations mauvaises ou incomplètes sont trouvées, les relecteurs rapportent cordialement le problème à l'auteur de la PR sur le fil de discussion. Si le problème trouvé est simple à corriger (e.g. typo ou détail de forme), le relecteur est encouragé à amender la PR pour corriger le problème lui-même. Sinon, l'auteur fait de son mieux pour corriger les problèmes soulevés.
 
-###### Décision Standard/Moyenne:
-- Durée initiale: 2 semaines.
-- Durée minimale: 1 semaine.
-- Décalage, si nécessaire: 1 semaine.
-- Avis nécessaires: 50% des membres du groupe (celui qui a initié cette prise de décision peux donner son avis). 66% des membres du groupe pour anticiper.
-- Validation par vote (le cas échéant): 75% de votes positifs.
+Les relecteurs rapportent également le degré de relecture et de tests effectués (c.f. liste ci-dessous). Selon l'importance de la PR (mineure, moyenne ou majeure), différents quotas de tests et approbations sont à remplir pour que celle-ci soit validée. Les relecteurs peuvent valider une fois chaque type de relecture/test nécessaire (par exemple, un relecteur peut donner un point d'accord sur le principe, un autre point de relecture en diagonale, et un autre point de test dans des cas simples.). L'auteur de la PR ne compte pas dans ces quotas de validation. La proposition doit aussi passer les tests automatiques disponibles dans le groupe (CI, tests unitaires/fonctionnels, linter, ...).  
 
-###### Décision Majeure :
-- Durée initiale: 1 mois.
-- Décalage, si nécessaire: 2 semaines.
-- Avis nécessaires: 75% des membres du groupe (celui qui a initié cette prise de décision peux donner son avis).
-- Validation par vote (le cas échéant): 90% de votes positifs.
+|                                   | **Mineure** | **Moyenne**  | **Majeure** |
+|-----------------------------------|-------------|--------------|-------------|
+| **Accord sur le principe**        |     2       |     3        |    4        |
+| **Relecture en diagonale**        |     1       |     2        |    3        |
+| **Testé dans les cas simples**    |     1       |     2        |    3        |
+| **Relecture attentive**           |     0       |     1        |    2        |
+| **Testé dans des cas compliqués** |     0       |     1        |    2        |
 
-##### 6) Application
-Alors un membre du groupe peut annoncer la décision comme effective (et procéder aux actions nécessaires comme releaser, merger, annonce, autre ...). Il est important que s'il y a besoin de certaines actions, des personnes se soient engagées à les faire, une décision sans désigner est moyennement utile
+Si l'auteur ne fait pas parti du groupe concerné par la PR, tous ces quotas sont augmentés de 1. Dans tous les cas, ces quotas doivent être remplis au moins à 50% par des relecteurs membres du groupe concerné par la PR. (Ainsi, par exemple, un non-membre peut donner son accord sur le principe pour une PR mineure. Mais deux avis de non-membres pour une PR moyenne comptent uniquement pour un seul avis).
+
+
+#### 3. Merge d'une pull request
+
+Une fois les quotas de relecture remplis, et si aucun refus n'a été prononcé et qu'aucune demande de changement n'est en attente, n'importe quel membre du groupe peut alors déclarer et marquer la PR comme "prête à être mergée".
+
+Pendant une durée de 3 jours suivant cette déclaration, les membres du groupe peuvent encore relire, demander des changements ou émettre un refus vis-à-vis de la PR. Dans ce cas, le merge est interrompu et le processus retourne à la partie 2). Pour les PRs moyennes et majeures, la durée est augmentée jusqu'à ce qu'il se soit écoulé au moins une semaine par rapport au moment où la PR a été déclarée comme prête par son auteur.
+
+À l'issue de cette durée, n'importe quel membre du groupe peut merger la PR. Lorsque celle-ci comporte plusieurs commits, il est recommandé d'utiliser la fonction "squash and merge" pour garder l'historique de commit propre.
+
+#### Cas particuliers
+
+Plusieurs cas particuliers peuvent se présenter et dont la résolution est décrite ci-après.
+
+##### Refus d'une PR
+
+Une PR peut être refusée et clôturée par n'importe quel membre du groupe concerné si :
+- la PR a été créée au moins depuis deux semaines
+- au moins deux membres du groupe ont manifesté un désaccord avec le principe de la PR
+- aucun autre membre du groupe n'a manifesté son accord avec le principe de la PR
+
+
+##### Co-création
+
+Une PR peut être développée par plusieurs personnes. Chacun est invité à y faire des commits en se concertant avec l'auteur initial ou le nouveau gestionnaire de PR si l'auteur est indisponible, manque de temps ou souhaite se consacrer à d'autres travaux. 
+
+Si ces commits sont conséquents, dans ce cas on peut prendre **partiellement** en compte l'avis des auteurs dans les quotas de relectures et de tests. 
+
+Exemple: si une PR est écrite par A et B (50/50), A et B pourront relire le code de l'autre. Dans ce cas, on pourra par exemple compter une relecture pour ces 2 relectures partielles.
+
+
+##### Validation "allégé" en cas de manque de relecteurs
+
+En cas de manque de relecteurs, l'auteur d'une PR peut déclencher une procédure de validation alternative si : 
+- l'auteur est membre du groupe concerné par la PR
+- il s'agit d'une PR mineure ou moyenne
+- la PR a été déclarée comme prête
+- il n'y a pas de demande de changement en attente
+- les quotas de relecture "standards" n'ont pas été remplis
+- une semaine s'est écoulée depuis le dernier commentaire ou commit
+
+Dans ce cas, l'auteur annonce sur le fil de discussion de la PR qu'il souhaite engager cette prodécure ainsi que sur la liste de diffusion (ou lors d'une réunion du mardi). À partir de ce moment, les quotas d'accord, relecture et tests pour valider cette PR sont diminués de 1. Au minimum une semaine devra s'écouler avant que cette PR ne soit effectivement mergée. Un autre membre du groupe peut à tout moment mettre fin à cette procédure si il juge la PR trop critique pour être mergée de la sorte.
+
 
 ## Composition des groupes
 
@@ -180,48 +198,6 @@ Alors un membre du groupe peut annoncer la décision comme effective (et procéd
   - Trad : Jean-Baptiste
 - Distribution : Heyyounow
 
-## Tableau récapitulatif du nombre d'avis nécéssaire pour la prise de décision
-
-_Les valeurs sont arrondies (exemple: 5,4 => 5 et 5,5 => 6)._
-
-|                      | **Mineure** | **Standard** | **Majeure** |
-|----------------------|---------|----------|---------|
-| **Conseil**              |
-|    Clôture classique |    2    |     4    |    5    |
-|    Clôture anticipée |    3*   |     5    |
-|    Clôture par vote  |    5    |     5    |    6    |
-| **Core Dev**             |
-|    Clôture classique |    2    |     3    |    5    |
-|    Clôture anticipée |    3*   |     4    |
-|    Clôture par vote  |    4    |     5    |    5    |
-| **Apps**                 |
-|    Clôture classique |    2    |     5    |    8    |
-|    Clôture anticipée |    3*   |     7    |
-|    Clôture par vote  |    7    |     8    |    9    |
-| **Infra**                |
-|    Clôture classique |    2    |     3    |    4    |
-|    Clôture anticipée |    3*   |     3    |
-|    Clôture par vote  |    3    |     4    |    5    |
-| **Communication -> Com** |
-|    Clôture classique |    2    |     2    |    3    |
-|    Clôture anticipée |    3*   |     3    |
-|    Clôture par vote  |    3    |     3    |    4    |
-| **Communication -> Doc** |
-|    Clôture classique |    1    |     1    |    Conseil    |
-|    Clôture anticipée |    2*   |     2*   |
-|    Clôture par vote  |    Conseil    |     Conseil    |    Conseil    |
-| **Distribution**         |
-|    Clôture classique |    1    |     Conseil    |    Conseil    |
-|    Clôture anticipée |    1    |     Conseil    |
-|    Clôture par vote  |    1    |     Conseil    |    Conseil    |
-
-\* dont 1 avis qui peut être externe au groupe
-
-Pour la traduction, le processus reste à adapter.
-
-Pour la doc, le nombre d'avis pour la cloture anticipée d'une décision mineure est pour le moment réduit (vu qu'il n'y a que 2 personnes dans le groupe). Les autres types de décisions sont prises par le conseil.
-
-Pour le groupe distribution, étant donné qu'il n'y a pour l'instant que Heyyounow, le Conseil sera sollicité pour les décisions Standard ou Majeure.
 
 ## Droits d’administration afférents aux groupes
 Cette partie liste les kits de droits d’administration pour les différents groupes du projet YunoHost :
