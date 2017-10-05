@@ -122,6 +122,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Pico](http://picocms.org)
 - [Pix](http://pix.toile-libre.org)
 - [PPTP VPN](https://packages.debian.org/sv/squeeze/pptpd)
+- [PrivateBin](https://privatebin.info/)
 - [Privoxy](http://www.privoxy.org)
 - [ProcessMaker](http://www.processmaker.com)
 - [Pulse](https://ind.ie/pulse)
