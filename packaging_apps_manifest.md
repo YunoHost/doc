@@ -63,7 +63,7 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
 
 * **url**: software website.
 
-* **version**: version of the package builded from the upstream version number and an incremental number in more for each change in the package without upstream change. Example "1.0.0-7". Must be a string.
+* **version**: version of the package builded from the upstream version number and an incremental number for each change in the package without upstream change. Example "1.0.0-7". Must be a string.
 
 * **license**: application license: `free` or `non-free`. Be careful to not confuse with package license which must be put in `LICENSE` file.
 
