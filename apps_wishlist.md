@@ -92,7 +92,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Logstalgia](http://logstalgia.io)
 - [Loomio](https://www.loomio.org)
 - [The Lounge](https://thelounge.github.io), cf. https://github.com/Kloadut/shout_ynh/issues/4
-- [LSTU](https://github.com/ldidry/lstu)
 - [MaidSafe](http://maidsafe.net)
 - [Mailpile](https://www.mailpile.is)
 - [MatterMost](https://github.com/mattermost/platform)
