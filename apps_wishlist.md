@@ -67,7 +67,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Icecast 2](http://www.icecast.org)
 - [ikiwiki](http://ikiwiki.info)
 - [img.bi](https://img.bi)
-- [Inbox](https://www.inboxapp.com)
 - [InfCloud](https://www.inf-it.com/open-source/clients/infcloud)
 - [InvoicePlane](https://invoiceplane.com)
 - [IPFS](https://ipfs.io)
