@@ -15,7 +15,7 @@ command line with `yunohost domain cert-status`, `cert-install` and
 
 Your server needs to be reachable from the rest of Internet on port 80 (and
 443), and make your `domain.tld` points to your server's public IP in your DNS
-configuration. See [this documentation](hdiagnostic) if you need help.
+configuration. See [this documentation](diagnostic_en) if you need help.
 
 #### Will my certificate be automatically be renewed ?
 
