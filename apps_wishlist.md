@@ -61,7 +61,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [HackMD](https://hackmd.io)
 - [Hackpad](https://github.com/dropbox/hackpad)
 - [Headphones](https://github.com/rembo10/headphones)
-- [Hi Buddy](http://hibuddy.monkeypatch.me)
+- [Hi Buddy](https://github.com/tOkeshu/hibuddy)
 - [Huginn](https://github.com/cantino/huginn)
 - [Hugo](http://gohugo.io)
 - [Icecast 2](http://www.icecast.org)
