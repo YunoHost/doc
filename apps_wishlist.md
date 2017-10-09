@@ -150,7 +150,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Unvis](https://github.com/phixofor/unvis.it)
 - [Unsee](https://github.com/unsee-cc)
 - [Vaultier](http://www.vaultier.org)
-- [Weblate](http://weblate.org)
 - [Webmpc](https://github.com/ushis/webmpc)
 - [WebODF](http://webodf.org)
 - [webSync](http://furier.github.io/websync)
