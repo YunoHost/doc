@@ -155,7 +155,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [WebODF](http://webodf.org)
 - [webSync](http://furier.github.io/websync)
 - [WebTorrent](https://github.com/feross/webtorrent)
-- [WID](https://wid.chorem.com/site/home)
 - [Wisemapping](http://www.wisemapping.com)
 - [Xonotic](http://xonotic.org)
 - [YellowCMS](http://datenstrom.se/yellow)
