@@ -42,7 +42,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Emby](https://emby.media)
 - [Emoncms](https://github.com/emoncms/emoncms)
 - [ERPnext](https://erpnext.com/download)
-- [Ethersheet](https://ethersheet.org)
+- [Ethersheet](https://github.com/ethersheet-collective/EtherSheet)
 - [Fail2web](https://github.com/Sean-Der/fail2web)
 - [Ferment](https://github.com/mmckegg/ferment)
 - [FileTea](https://filetea.me)
