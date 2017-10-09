@@ -14,7 +14,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Airtime](https://www.sourcefabric.org/en/airtime/)
 - [Ajenti](http://ajenti.org)
 - [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog)
-- [Auth0 SSO Dashboard](https://github.com/auth0/auth0-sso-dashboard)
+- [Auth0 SSO Dashboard](https://github.com/auth0-extensions/auth0-sso-dashboard-extension)
 - [Blynk](https://github.com/blynkkk/blynk-library)
 - [Bolt](http://bolt.cm)
 - [Browsepass](http://techualization.blogspot.de/2013/09/introducing-browsepass-keepass-on-web.html)
@@ -31,7 +31,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Converse.js](https://conversejs.org)
 - [Coquelicot](https://coquelicot.potager.org) – [package](https://github.com/M5oul/coquelicot_ynh)
 - [Cronkeep](https://github.com/cronkeep/cronkeep)
-- [CronWeb](https://github.com/fisherinnovation/CronWeb)
 - [Croodle](https://github.com/jelhan/croodle) Schedule a date or to do a poll on a general topics, with client-side encryption.
 - [CumulusClips](http://cumulusclips.org)
 - [Darkwire.io](https://github.com/seripap/darkwire.io)
