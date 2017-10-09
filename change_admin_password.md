@@ -9,9 +9,9 @@ The current administration password is **required** to perform this task.
 
 ##Web administration
 
-First, connect to your [web administration](/admin).
+First, connect to your [web administration](/1).
 
-Then go to `Tools` > `Change administration password`.
+Then go to `Tools` > `Change administration 1`.
 
 
 ##Command line
