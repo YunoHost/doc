@@ -49,7 +49,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [FoOlSlide](http://foolcode.github.io/FoOlSlide/) Open source comicbook/manga management software
 - [Fossil](http://www.fossil-scm.org)
 - [Framaslides](https://framagit.org/framasoft/framaslides/)
-- [Geneweb](https://geneweb.tuxfamily.org)
 - [GetSimple CMS](http://get-simple.info)
 - [Git-annex](http://git-annex.branchable.com)
 - [Gitit](http://gitit.net)
@@ -67,6 +66,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Icecast 2](http://www.icecast.org)
 - [ikiwiki](http://ikiwiki.info)
 - [img.bi](https://img.bi)
+- [Inbox](https://www.inboxapp.com)
 - [InfCloud](https://www.inf-it.com/open-source/clients/infcloud)
 - [InvoicePlane](https://invoiceplane.com)
 - [IPFS](https://ipfs.io)
@@ -74,7 +74,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Joomla!](https://www.joomla.org)
 - [JS Bin](http://jsbin.com/help/2-second-setup)
 - [Kaiwa](http://getkaiwa.com)
-- [Keepass](http://keepass.info)
 - [Kin calendar](https://github.com/KinToday)
 - [Kinto](https://github.com/Kinto/formbuilder)
 - [Kiwix](http://www.kiwix.org/) Offline wikipedia
@@ -91,8 +90,10 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Logstalgia](http://logstalgia.io)
 - [Loomio](https://www.loomio.org)
 - [The Lounge](https://thelounge.github.io), cf. https://github.com/Kloadut/shout_ynh/issues/4
+- [LSTU](https://github.com/ldidry/lstu)
 - [MaidSafe](http://maidsafe.net)
 - [Mailpile](https://www.mailpile.is)
+- [Mastodon](https://joinmastodon.org)
 - [MatterMost](https://github.com/mattermost/platform)
 - [MediaCrush](https://imgrush.com)
 - [MinigalNano](https://github.com/sebsauvage/MinigalNano)
@@ -155,6 +156,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [WebODF](http://webodf.org)
 - [webSync](http://furier.github.io/websync)
 - [WebTorrent](https://github.com/feross/webtorrent)
+- [WID](https://wid.chorem.com/site/home)
 - [Wisemapping](http://www.wisemapping.com)
 - [Xonotic](http://xonotic.org)
 - [YellowCMS](http://datenstrom.se/yellow)
