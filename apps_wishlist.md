@@ -70,7 +70,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [InfCloud](https://www.inf-it.com/open-source/clients/infcloud)
 - [InvoicePlane](https://invoiceplane.com)
 - [IPFS](https://ipfs.io)
-- [Jeedom](http://www.jeedom.fr) – [package](https://github.com/lunarok/jeedom_ynh)
 - [Joomla!](https://www.joomla.org)
 - [JS Bin](http://jsbin.com/help/2-second-setup)
 - [Kaiwa](http://getkaiwa.com)
