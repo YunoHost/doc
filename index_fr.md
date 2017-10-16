@@ -108,7 +108,7 @@
   <hr />
 
   <div class="text-center">
-    <h1>Hey ! Nous sommes humains !<br /><small> Si vous avez une question, un problème, ou que vous êtes tout simplement intéressé, passez dire « Bonjour » sur notre salon de discussion en cliquant sur le bouton en bas &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+    <h1>Hey ! Nous sommes humains !<br /><small> Si vous avez une question, un problème, ou que vous êtes tout simplement intéressé⋅e, passez dire « Bonjour » sur notre salon de discussion en cliquant sur le bouton en bas &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
 <!--
     <p class="liberapay">
       <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Donation button" title="Liberapay" /></a>
