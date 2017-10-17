@@ -8,6 +8,7 @@ Allez à l’adresse suivante : http://192.168.0.1 (ou celle-ci http://192.168.
 ### Tutoriel
 * [Tutoriel pour les ouvrir les ports sur les boxs d’Orange, Free, SFR, Dartybox, Belgacom et sur les routeurs Netgear](https://craym.eu/tutoriels/utilitaires/ouvrir_les_ports_de_sa_box.html).
 
+
 ### Redirection des ports
 La redirection des ports suivants est nécessaire au fonctionnement des différents services.
 
@@ -20,6 +21,11 @@ La redirection des ports suivants est nécessaire au fonctionnement des différe
 
 **UDP:**
    * [DNS](dns_fr) : 53
+
+<div class="alert alert-warning" markdown="1">
+<span class="glyphicon glyphicon-warning-sign"></span> Certains fournisseurs d'accès internet / box internet imposent des contraintes sur certains ports. C'est le cas notamment du port 25 que seuls certains FAI permettent d'ouvrir. D'autres (e.g. SFR Red...) ne permettent pas d'utiliser librement les ports 80, 443 ou 22.
+</div>
+
 
 ---
 
