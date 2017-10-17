@@ -54,6 +54,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Goaccess](https://goaccess.io) Web log analyser (replaces piwik without js tracking scripts)
 - [Gollum](https://github.com/gollum/gollum)
 - [Goploader](https://github.com/Depado/goploader)
+- [Grav](https://getgrav.org/) Modern open source flat-file CMS
 - [Guacamole](http://guac-dev.org)
 - [h5ai](http://larsjung.de/h5ai)
 - [HackMD](https://hackmd.io)
