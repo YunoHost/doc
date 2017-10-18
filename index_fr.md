@@ -1,4 +1,4 @@
-<div class="teasing-part">                                                                      
+<div class="teasing-part">
 
   <div class="home-logo">
     <img src="/images/ynh_logo_white_300dpi.png" width="100"/>
@@ -6,8 +6,8 @@
 
   <div class="punchline">
     <p>
-      <span class="yolo 1" style="color: #FF3399;">Viens chez moi, je suis hébergé chez une copine</span>
-      <span class="yolo 2" style="color: #FF0066;">Ils s’hébergèrent et eurent beaucoup d’enfants</span>
+      <span class="yolo 1" style="color: #FF3399;">Viens chez moi, je suis hébergé⋅e chez une copine</span>
+      <span class="yolo 2" style="color: #FF0066;">Iels s’hébergèrent et eurent beaucoup d’enfants</span>
       <span class="yolo 3" style="color: #3366FF;">Internet, lecture et écriture</span>
       <span class="yolo 4" style="color: #FFFFFF;">monsieur@michu.fr</span>
       <span class="yolo 5" style="color: #CC66FF;">J’ai rien à cacher</span>
@@ -17,8 +17,8 @@
   </div>
 
   <div class="main-links hidden-xs">
-    <a href="/whatsyunohost_fr">À propos</a> <span class="colored-bar">•</span> 
-    <a href="https://forum.yunohost.org/c/announcement" target="_blank">Dernières nouvelles</a> <span class="colored-bar">•</span> 
+    <a href="/whatsyunohost_fr">À propos</a> <span class="colored-bar">•</span>
+    <a href="https://forum.yunohost.org/c/announcement" target="_blank">Dernières nouvelles</a> <span class="colored-bar">•</span>
     <a href="/docs_fr">Documentation</a>
   </div>
 
@@ -103,12 +103,10 @@
   <hr />
 
   <div class="text-center">
-    <h1>Hey ! Nous sommes humains !<br /><small> Si vous avez une question, un problème, ou que vous êtes tout simplement intéressé, passez dire « Bonjour » sur notre salon de discussion en cliquant sur le bouton en bas &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
-
-<p class="liberapay">
+    <h1>Hey ! Nous sommes des êtres humains !<br /><small> Si vous avez une question, un problème, ou que vous trouvez simplement le projet intéressant, passez dire « Bonjour » sur notre salon de discussion en cliquant sur le bouton en bas &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+    <p class="liberapay">
       <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Donation button" title="Liberapay" /></a>
     </p>
-    
   </div>
 
 </div><!-- boring-part -->
@@ -146,4 +144,3 @@
     });
 
 </script>
-
