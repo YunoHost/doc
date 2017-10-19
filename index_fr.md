@@ -90,7 +90,7 @@
   <div class="row cf">
     <div class="col-md-4 button-list">
 
-      <a class="btn btn-lg btn-block btn-primary"href="/whatsyunohost_fr">Qu’est-ce que YunoHost ?</a>
+      <a class="btn btn-lg btn-block btn-primary" href="/whatsyunohost_fr">Qu’est-ce que YunoHost ?</a>
       <a class="btn btn-lg btn-block btn-info" href="/docs_fr">Documentation</a>
       <a class="btn btn-lg btn-block btn-success" href="/contribute_fr">Comment contribuer</a>
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org" target="_blank">Forum</a>
