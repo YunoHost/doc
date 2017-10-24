@@ -7,6 +7,7 @@
 | Framagit       | GitLab              | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/gitlab_ynh)          | ![](https://dash.yunohost.org/integration/gitlab.svg) |
 |                | Gogs                | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/gogs_ynh)            | ![](https://dash.yunohost.org/integration/gogs.svg) |
 | Framadrop      | Lufi                | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/lufi_ynh)            | ![](https://dash.yunohost.org/integration/lufi.svg) |
+| Framapiaf      | Mastodon            | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/mastodon_ynh)        | ![](https://dash.yunohost.org/integration/mastodon.svg) |
 | Framapic       | Lutim               | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/lutim_ynh)           | ![](https://dash.yunohost.org/integration/lutim.svg) |
 | Framabin       | PrivateBin          | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-apps/zerobin_ynh)         | ![](https://dash.yunohost.org/integration/zerobin.svg) |
 | Frama.link     | Lstu                | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/lstu_ynh)            | ![](https://dash.yunohost.org/integration/lstu.svg) |
