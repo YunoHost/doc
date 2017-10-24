@@ -73,7 +73,7 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
 
 * [**multi_instance**](packaging_apps_multiinstance_fr) : capacité d’une application d’être installée plusieurs fois.
 
-* **services** : liste des services nécessaires au fonctionnement de l’application. `nginx`, `php5-fpm`, `mysql`, `uwsgi`, `metronome`, `postfix`, `dovecot`…
+* **services** : liste des services nécessaires au fonctionnement de l’application. `nginx`, `php5-fpm`, `mysql`, `uwsgi`, `prosody`, `postfix`, `dovecot`…
 
 * **arguments** :
   * **install** : paramètres à demander à l’administrateur lors de l’installation.

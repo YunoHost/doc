@@ -79,8 +79,8 @@ Voici une petite description de leurs fonctions respectives :
 - **DNSmasq** : serveur DNS, vous n’êtes pas obligé de l’utiliser (Non installé par défaut)
 - **Dovecot** : serveur IMAP, utilisé pour la réception de mails.
 - **Glances** : optionnel, utilisé pour l’administration web pour afficher les statuts du serveur
-- **Metronome** : serveur XMPP utilisé par jappix comme client.
-- **MySQL** : base de données utilisée par certaines applications
+- **Prosŏdy** : serveur XMPP utilisé par jappix comme client.
+- **MariaDB** : base de données utilisée par certaines applications
 - **Nginx** : serveur web, utilisé par toutes les applications
 - **php5-fpm** : serveur PHP, utilisé par toutes applications utilisant PHP
 - **Postfix** : serveur SMTP, utilisé pour l’envoi de mails.
@@ -120,7 +120,7 @@ Quand quelqu’un tente de se connecter à votre serveur et rate plusieurs fois,
 ##### mail.err, mail.info, mail.log, mail.warn
 Ce sont les logs de Postfix pour le serveur de mail. Vous pouvez les consulter si vous rencontrez des problèmes avec les mails.
 
-##### metronome/metronome.err, metronome/metronome.log
+##### prosody/prosody.err, prosody/prosody.log
 Logs du serveur de chat XMPP
 
 ##### mysql.err, mysql.log, mysql/error.log

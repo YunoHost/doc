@@ -75,8 +75,8 @@ All services should be enabled and running. Except glances (optional). If some a
 - **DNSmasq**: DNS server, you are not forced to use it
 - **Dovecot**: IMAP email server, used to receive email
 - **Glances**: optional, used by web administration to display server status
-- **Metronome**: XMPP instant messaging server, used by Jappix and some external client
-- **MySQL**: database, used by some app
+- **Prosŏdy**: XMPP instant messaging server, used by Jappix and some external client
+- **MariaDB**: database, used by some app
 - **Nginx**: web server, used by all web app
 - **php5-fpm**: PHP service, used by all app written in PHP
 - **Postfix**: SMTP email server, used to send email
@@ -116,7 +116,7 @@ When someone tries to connect to your server and fails multiple times, Fail2ban 
 ##### mail.err, mail.info, mail.log, mail.warn
 These are Postfix (the mail server) logs, check theses if you have issues with email.
 
-##### metronome/metronome.err, metronome/metronome.log
+##### prosody/prosody.err, prosody/prosody.log
 XMPP chat server logs.
 
 ##### mysql.err, mysql.log, mysql/error.log

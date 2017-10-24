@@ -1,6 +1,6 @@
 #Chat, VoIP et réseau social avec <img src="/images/XMPP_logo.png" width=100>
 
-Yunohost est installé avec un serveur de messagerie instantanée <abbr title="Extensible Messaging and Presence Protocol">XMPP</abbr> (metronome).
+Yunohost est installé avec un serveur de messagerie instantanée <abbr title="Extensible Messaging and Presence Protocol">XMPP</abbr> (Prosŏdy).
 
 Vous pouvez discuter simplement avec des contacts XMPP/Jabber en installant l’application [Jappix](https://jappix.com/) depuis l’interface d’administration.
 

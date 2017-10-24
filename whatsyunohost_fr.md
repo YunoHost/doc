@@ -33,14 +33,14 @@ On peut donc le considérer comme une distribution, comprenant les logiciels sui
 <img src="/images/dovecot.png">
 <img src="/images/rspamd.png">
 <img src="/images/XMPP_logo.png" width=80>
-<img src="/images/metronome-logo-180x180.png" width=80>
+<img src="/images/prosody.png" width=80>
 <img src="/images/Let's_Encrypt.svg">
 
 * [Nginx](http://nginx.org/) : un serveur web
 * [Postfix](http://www.postfix.org/) : un serveur de messagerie électronique SMTP
 * [Dovecot](http://www.dovecot.org/) : un serveur de messagerie électronique IMAP et POP3
 * [Rspamd](https://rspamd.com/) : un antispam
-* [Metronome](http://www.lightwitch.org/metronome) : un serveur XMPP
+* [Metronome](https://prosody.im) : un serveur XMPP
 * [OpenLDAP](http://www.openldap.org/) : un système d’annuaire
 * [Dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html) : un serveur de DNS
 * [SSOwat](https://github.com/Kloadut/SSOwat) : un (SSO) système d’authentification web

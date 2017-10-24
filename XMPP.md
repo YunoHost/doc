@@ -2,7 +2,7 @@
 <abbr title="Extensible Messaging and Presence Protocol">XMPP</abbr> is a communication protocol of instant messaging, VoIP (Voice over IP), videoconferencing.
 
 YunoHost provide:
-* [Metronome](https://metronome.im/): a XMPP server
+* [Prosŏdy](https://prosody.im): a XMPP server
 * [Jappix](/apps): a web XMPP client
 
 ## Desktop XMPP client

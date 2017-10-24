@@ -31,14 +31,14 @@ It can thus be considered as a distribution, including the following software:
 <img src="/images/dovecot.png">
 <img src="/images/rspamd.png">
 <img src="/images/XMPP_logo.png" width=80>
-<img src="/images/metronome-logo-180x180.png" width=80>
+<img src="/images/prosody" width=80>
 <img src="/images/Let's_Encrypt.svg">
 
 * [Nginx](http://nginx.org/): a Web server
 * [Postfix](http://www.postfix.org/): an SMTP e-mail server
 * [Dovecot](http://www.dovecot.org/): an IMAP and a POP3 e-mail server
 * [Rspamd](https://rspamd.com/): an e-mail spam filtering
-* [Metronome](http://www.lightwitch.org/metronome): an XMPP server
+* [Metronome](https://prosody.im): an XMPP server
 * [OpenLDAP](http://www.openldap.org/): an LDAP server
 * [Dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html): a DNS server
 * [SSOwat](https://github.com/Kloadut/SSOwat): a Single Sign On (SSO) web authentication system

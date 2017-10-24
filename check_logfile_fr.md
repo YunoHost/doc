@@ -20,8 +20,8 @@ Pour accéder aux fichiers de log, la méthode traditionnelle consiste à [se co
 * Nginx
 * php5-fpm
 
-#### Serveur XMPP metronome
-* Metronome
+#### Serveur XMPP Prosody
+- Prosody
 
 #### Surveillance du serveur
 * Glances

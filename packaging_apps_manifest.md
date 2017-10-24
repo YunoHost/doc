@@ -73,7 +73,7 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
 
 * [**multi_instance**](packaging_apps_multiinstance_en): it defines app's ability to be installed multiple times.
 
-* **services**: services needed by the application among `nginx`, `php5-fpm`, `mysql`, `uwsgi`, `metronome`, `postfix`, `dovecot`…
+* **services**: services needed by the application among `nginx`, `php5-fpm`, `mysql`, `uwsgi`, `prosody`, `postfix`, `dovecot`…
 
 * **arguments**:
   * **install**: argument for the YunoHost's administrator to enter at installation.
