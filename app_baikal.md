@@ -11,7 +11,6 @@ The user name specified is "admin" followed by the specific password choosen at 
 
 ### Example of creating a new user:
 
-Go to the "settings" tab, select "Digest" in "WebDAV authentication type".
 Add users to the "Users and resources" tab.
 
 ## CalDAV Connection
