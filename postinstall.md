@@ -40,15 +40,22 @@ This password will be used to access to your server's [administration interface]
 
 ---
 
-## Troubleshooting
+## Congratz!
 
-### Secured connection fails after **post-installation**
+If you got so far and saw 'YunoHost has been successfully installed' (web
+postinstall) or 'YunoHost has been correctly configured', then congratulations!
 
-If you're using your own domain and depending on your browser, you might be stuck out of your Yunohost installation until you deploy an appropriate certificate. Thanks to Yunohost and [Let's Encrypt](https://letsencrypt.org/), this proves to be quite easy: just run `yunohost domain cert-install` in command-line to issue and install your certificate and _Voilà_. Refresh your browser and you're good to go.
+### What now ?
 
----
-
-## And after ?
-
-Once the post-installation finished, check if you can access to your server with your web-browser. If it is not the case, a few more configuration steps may be required.
+- If you're self-hosting at home and without a VPN, you need to [make sure to
+  correctly forward ports on your router/Internet box](isp_box_config) ;
+- If you're using your own domain name (i.e. not a .nohost.me / .noho.st), you
+  need to [configure it according to the recommended DNS
+  configuration](dns_config) ;
+- If you cannot configure your domain name yet (because you didn't register it
+  yet, or because this is a test domain), see last paragraph
+  [here](dns_local_network) for a workaround ;
+- Don't be too afraid of the [certificate warning](certificate), you'll probably
+  be able to install a Let's Encrypt certificate :).
+- Have a look at [the available apps](apps) !
 
