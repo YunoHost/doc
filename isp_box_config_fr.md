@@ -1,6 +1,6 @@
 # Configurer la redirection des ports
 
-Si vous vous auto-hébergez à la maison et sans VPN, il vous faut rediriger les ports de votre routeur ("machin-box"). Si vous souhaitez une explication courte de ce qu'est et pourquoi vous avez besoin de rediriger les ports, vous pouvez jeter un oeil à [cette page](port_forwarding_fr).
+Si vous vous auto-hébergez à la maison et sans VPN, il vous faut rediriger les ports de votre routeur ("machin-box"). Si vous souhaitez une explication courte de ce qu'est et pourquoi vous avez besoin de rediriger les ports, vous pouvez jeter un oeil à [cette page](port_forwarding_fr). [Cette page](https://craym.eu/tutoriels/utilitaires/ouvrir_les_ports_de_sa_box.html) propose également des explications détaillées sur le fonctionnement des ports, et les étapes de configuration pour différents routeurs.
 
 ### 0. Diagnostiquer les ports ouverts
 
