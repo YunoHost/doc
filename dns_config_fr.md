@@ -1,66 +1,82 @@
-## Configuration de la zone DNS
+# Configuration de la zone DNS
 
-Exemple de configuration des entrées de la zone DNS pour le nom de domaine `domain.tld` :
+DNS (système de nom de domaine) est un élément essentiel d'Internet qui permet
+de convertir des adresses compréhensible par les êtres humains (les noms de
+domaines) en adresses compréhensibles par la machine (les IPs). Pour que
+votre serveur soit facilement accessible par d'autres êtres humains, et pour
+que certains services comme le mail fonctionnent correctement, il est nécessaire
+de configurer la zone DNS de votre domaine.
 
-#### Utiliser la commande yunohost pour générer ma zone DNS
+Si vous utilisez un domaine en nohost.me / noho.st domain, la configuration
+devrait être faite automatiquement. Si vous utilisez votre propre nom de domaine
+(e.g. acheté chez un registrar), il vous faut configurer manuellement votre
+domaine via l'interface de votre registrar.
 
-Connecter vous à votre serveur et lancer la commande suivante.
+## Configuration DNS recommandée
+
+YunoHost fourni une configuration DNS recommandée, accessible via :
+- la webadmin, dans Domaines > votre.domain.tld > Configuration DNS ;
+- ou la ligne de commande, `yunohost domain dns-conf votre.domaine.tld`
+
+Pour certains besoins ou installations particulières, et si vous savez ce que
+vous faîtes, il vous faudra peut-être modifier cette recommendation ou ajouter
+d'autres enregistrements (e.g. pour gérer des sous-domaines).
+
+La configuration recommandée ressemble typiquement à :
+
 ```bash
-yunohost domain dns-conf domain.tld
+#
+# Enregistrements IPv4/IPv6 basiques
+#
+@ 3600 IN A 111.222.33.44
+* 3600 IN A 111.222.33.44
+
+# (Si votre serveur supporter l'IPv6, il a des enregistrements AAAA)
+@ 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
+* 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
+
+#
+# XMPP
+#
+_xmpp-client._tcp 3600 IN SRV 0 5 5222 votre.domaine.tld.
+_xmpp-server._tcp 3600 IN SRV 0 5 5269 votre.domaine.tld.
+muc 3600 IN CNAME @
+pubsub 3600 IN CNAME @
+vjud 3600 IN CNAME @
+
+#
+# Mail (MX, SPF, DKIM et DMARC)
+#
+@ 3600 IN MX 10 votre.domaine.tld.
+@ 3600 IN TXT "v=spf1 a mx ip4:111.222.33.44 -all"
+mail._domainkey 3600 IN TXT "v=DKIM1; k=rsa; p=uneGrannnnndeClef"
+_dmarc 3600 IN TXT "v=DMARC1; p=none"
 ```
 
-#### Redirection du nom de domaine vers l’adresse IP
-```bash
-@ 1800 IN A 111.222.333.444 # (Minimum) IPv4
-@ 1800 IN AAAA 2001:AABB:CCDD:EEFF:1122:3344:5566:7788 # IPv6
-```
+Mais il est peut-être plus facile de la comprendre si affichée de la façon
+suivante :
 
-#### Redirection du nom de domaine et de tous les sous-domaines vers l’adresse IP
-```bash
-* 1800 IN A 111.222.333.444 # Wildcard : *.domain.tld et domain.tld pointent vers l’adresse IP.
-* 1800 IN AAAA 2001:AABB:CCDD:EEFF:1122:3344:5566:7788
-```
+| Type    | Nom                    | Valeur                                                 |
+| :-----: | :--------------------: | :----------------------------------------------------: |
+|  **A**  |   **@**                |  `111.222.333.444` (votre IPv4)                        |
+|    A    |   *                    |  `111.222.333.444` (votre IPv4)                        |
+|  AAAA   |   @                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (votre IPv6) |
+|  AAAA   |   *                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (votre IPv6) |
+| **SRV** | **_xmpp-client._tcp**  |  `0 5 5222 votre.domaine.tld.`                         |
+| **SRV** | **_xmpp-server._tcp**  |  `0 5 5269 votre.domaine.tld.`                         |
+|  CNAME  |   muc                  |  `@`                                                   |
+|  CNAME  |   pubsub               |  `@`                                                   |
+|  CNAME  |   vjud                 |  `@`                                                   |
+| **MX**  | **@**                  |  `votre.domaine.tld.`     (et priorité: 10)            |
+|   TXT   |   @                    |  `"v=spf1 a mx ip4:111.222.33.44 -all"`                |
+|   TXT   |  mail._domainkey       |  `"v=DKIM1; k=rsa; p=uneGrannnndeClef"`                |
+|   TXT   |  _dmarc                |  `"v=DMARC1; p=none"`                                  |
 
-#### Sous-domaines
-```bash
-www 1800 IN CNAME @ # accessible sur www.domain.tld
-```
+#### Quelques notes à propos de cette table
 
-#### XMPP
-```bash
-_xmpp-client._tcp 1800 IN SRV 0 5 5222 domain.tld. # (Minimum) connexions avec les clients
-_xmpp-server._tcp 1800 IN SRV 0 5 5269 domain.tld. # (Minimum) connexions entre serveurs
-
-muc 1800 IN CNAME @ # salons de discussion sur `muc.domain.tld`
-anonymous 1800 IN CNAME @ # connexion sans compte sur `anonymous.domain.tld`
-bosh 1800 CNAME @ # BOSH
-_xmppconnect 1800 TXT "_xmpp-client-xbosh=https://bosh.domain.tld:5281/http-bind"
-pubsub 1800 IN CNAME @
-vjud 1800 IN CNAME @
-```
-
-#### Email
-```bash
-@ 1800 IN MX 10 domain.tld. # (Minimum)
-@ 1800 IN TXT "v=spf1 a mx -all"
-```
-<br />
-
-Vous devriez aussi consulter [la documentation de DKIM](#/dkim_fr). DKIM permet d'éviter que vos mails soit considérés comme SPAM et DKIM nécessite une entrée spécifique dans votre zone DNS.
-
-#### Mise en place
-Remplacez :
-* « `domain.tld` » par votre propre nom de domaine en conservant le point à la fin.
-* les adresses IP d’exemple par celles de votre serveur :
- * `111.222.333.444` : [IPv4](http://ip.yunohost.org/).
- * `2001:AABB:CCDD:EEFF:1122:3344:5566:7788` : [IPv6](http://ip6.yunohost.org/).
-
-Les entrées DNS sous domaines, XMPP et email ne fonctionnent pas sans une redirection du nom de domaine vers l’adresse IP (une ligne est suffisante) étant donné qu’elles en sont dépendantes.
-
-<div class="alert alert-info">**Pour débuter :** les lignes avec « (Minimum) » sont les entrées DNS minimales requises pour avoir une redirection du nom de domaine vers l’adresse IP, XMPP et le courrier électronique qui fonctionnent.</div>
-
-<div class="alert alert-warning">**Attention :** le **@** représente le nom de domaine par défaut que l’on est en train de définir, certains bureaux d’enregistrement ne l’acceptent pas (ex : OVH). Il faut donc remplacer le « @ » par votre nom de domaine (domain.tld**.**) sans oublier un point à la fin.</div>
-
-#### Time to live
-Toutes les entrées DNS ci-dessus ont la valeur `1800` (30 minutes). Elle correspond au
-[Time to live (TTL)](https://fr.wikipedia.org/wiki/Time_to_Live#Le_Time_to_Live_dans_le_DNS) qui représente et indique le temps, en secondes, durant lequel l’entrée DNS peut être conservée en cache. Passé ce délai, l’information doit être considérée comme obsolète et doit être mise à jour.
+- Tous ces enregistrements ne sont pas nécessaires. Pour une installation minimale, seuls les enregistrements en gras sont nécessaires.
+- Le point à la fin de `votre.domaine.tld.` est important ;) ;
+- `@` corresponds à `votre.domaine.tld`, et par ex. `muc` corresponds à `muc.votre.domaine.tld` ;
+- Les valeurs montrées sont des valeurs d'exemple ! Référez-vous à la configuration générée chez vous pour savoir quelles valeurs utiliser.
+- Nous recommendons un [TTL](https://fr.wikipedia.org/wiki/Time_to_Live#Le_Time_to_Live_dans_le_DNS) de 3600 (1 heure). Mais vous pouvez utiliser une autre valeur si vous savez ce que vous faîtes ;
+- Ne mettez pas d'enregistrement IPv6 si vous n'êtes pas certains que l'IPv6 fonctionne sur votre serveur ! Vous aurez des problèmes avec Let's Encrypt si ce n'est pas le cas.
