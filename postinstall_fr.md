@@ -46,17 +46,24 @@ De manière générale, c’est la **clé d’entrée à votre système**, pense
 
 ---
 
-## En cas de problème
+## Félicitations !
 
-### Échec de la connexion sécurisée après la **post-installation**
+Si vous arrivez ici après avoir vu "YunoHost a été installé avec succès" depuis
+votre navigateur ou la ligne de commande, alors félicitaton !
 
-Si vous utilisez votre propre domaine et selon votre navigateur, vous pourriez vous retrouver bloqué à l'entrée de votre Yunohost tant que vous n'avez pas déployé un certificat valide. Grâce à Yunohost et [Let's Encrypt](https://letsencrypt.org/), c'est plutôt simple : exécutez simplement `yunohost domain cert-install` en ligne de commande pour émettre et installer votre certificat et _Voilà_. Rafraichissez votre navigateur et vous êtes paré.
+### Et maintenant ?
 
----
-
-## Et après ?
-
-Une fois l’étape de post-installation exécutée, vérifiez que votre serveur est accessible en tapant le nom de domaine choisi précédemment dans votre navigateur web. Si celui-ci n’est pas accessible, quelques étapes de configurations supplémentaires sont sûrement nécessaires.
-
-N'hésitez pas à [demander de l'aide](/help_fr) au besoin.
+- Si vous vous auto-hébergez à la maison et sans VPN, il vous faut vous assurer
+  de bien [rediriger les ports de votre box internet](isp_box_config_fr) ;
+- Si vous utilisez votre propre nom de domaine (i.e. pas un nohost.me /
+  noho.st), il vous faut [configurer le nom de domaine d'après la configuration
+  recommandée](dns_config_fr) ;
+- Si vous ne pouvez pas configurer le nom de domaine pour le moment (parce qu'il
+  n'est pas encore acheté, ou parce que c'est un domaine de test), vous pouvez
+  contourner temporairement le problème avec les instructions du dernier
+  paragraphe [ici](dns_local_network_fr) ;
+- Ne soyez pas trop effrayé par [l'avertissement à propos du
+  certificat](certificate_fr), vous aurez probablement la possibilité
+  d'installer un certificat Let's Encrypt :).
+- Jetez un oeil aux [applications disponibles](apps_fr) !
 
