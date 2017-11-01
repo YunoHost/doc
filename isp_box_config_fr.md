@@ -1,50 +1,51 @@
-# Configuration box/routeur
+# Configurer la redirection des ports
 
-<a class="btn btn-lg btn-default" href="http://ports.yunohost.org">Vérifier que les ports sont ouverts</a>
+Si vous vous auto-hébergez à la maison et sans VPN, il vous faut rediriger les ports de votre routeur ("machin-box"). Si vous souhaitez une explication courte de ce qu'est et pourquoi vous avez besoin de rediriger les ports, vous pouvez jeter un oeil à [cette page](port_forwarding_fr). [Cette page](https://craym.eu/tutoriels/utilitaires/ouvrir_les_ports_de_sa_box.html) propose également des explications détaillées sur le fonctionnement des ports, et les étapes de configuration pour différents routeurs.
 
-### Accès à l’administration de la box/routeur
-Allez à l’adresse suivante : http://192.168.0.1 (ou celle-ci http://192.168.1.1). Puis authentifier-vous.
+### 0. Diagnostiquer les ports ouverts
 
-### Tutoriel
-* [Tutoriel pour les ouvrir les ports sur les boxs d’Orange, Free, SFR, Dartybox, Belgacom et sur les routeurs Netgear](https://craym.eu/tutoriels/utilitaires/ouvrir_les_ports_de_sa_box.html).
+Une fois que vous aurez configuré la redirection, vous devriez pouvoir valider avec ce petit outil que vos ports sont bien redirigés :
 
+<a class="btn btn-default" href="http://ports.yunohost.org">Vérifier la redirection des ports</a>
 
-### Redirection des ports
-La redirection des ports suivants est nécessaire au fonctionnement des différents services.
+### 1. Accéder à l'interface d'administration de votre box/routeur
 
-**TCP :**
-   * Web : 80 <small>(HTTP)</small>, 443 <small>(HTTPS)</small>
-   * [SSH](ssh_fr) : 22
-   * [XMPP](XMPP_fr) : 5222 <small>(clients)</small>, 5269 <small>(serveurs)</small>
-   * [Courriel](email_fr) : 25, 465 <small>(SMTP)</small>, 587 <small>(SMTP avec chiffrement)</small>,  993 <small>(IMAP)</small>
-   * [DNS](dns_fr) : 53
+L'interface d'administration est généralement accessible via http://192.168.0.1 ou http://192.168.1.1. 
+Ensuite, il vous faudra peut-être vous authentifier avec les identifiants
+fournis par votre fournisseur d'accès internet (FAI).
 
-**UDP:**
-   * [DNS](dns_fr) : 53
+### 2. Trouver l'IP locale de votre serveur
+
+Identifiez quelle est l'IP locale de votre serveur, soit :
+- depuis l'interface de votre routeur/box, qui liste peut-être les dispostifis
+  connectés.
+- depuis la webadmin de YunoHost, dans 'État du serveur', 'Réseau'
+- depuis la ligne de commande dans votre serveur, par exemple avec `ip a | grep "scope global" | awk '{print $2}'`
+
+Une adresse IP locale ressemble généralement à `192.168.xx.yy`, ou `10.0.xx.yy`.
+
+### 3. Rediriger les ports
+
+Dans l'interface d'administration de votre box/routeur, il vous faut trouver
+une catégorie comme 'Configuration du routeur', ou 'Redirections de ports'. Le
+nom diffère suivant le type / marque de la box...
+
+Il vous faut ensuite rediriger chacun des ports listés ci-dessous vers l'IP locale de votre serveur pour que les différents services de YunoHost fonctionnent. Pour chacun d'eux, une redirection 'TCP' est nécessaire. Certains interfaces font références à un port 'externe' et un port 'interne' : dans notre cas il s'agit du même.
+
+* Web: 80 <small>(HTTP)</small>, 443 <small>(HTTPS)</small>
+* [SSH](/ssh_fr): 22
+* [XMPP](/XMPP_fr): 5222 <small>(clients)</small>, 5269 <small>(servers)</small>
+* [Email](/email_fr):  25, 465 <small>(SMTP)</small>, 587 <small>(SMTP with SSL)</small>,  993 <small>(IMAP)</small>
 
 <div class="alert alert-warning" markdown="1">
-<span class="glyphicon glyphicon-warning-sign"></span> Certains fournisseurs d'accès internet / box internet imposent des contraintes sur certains ports. C'est le cas notamment du port 25 que seuls certains FAI permettent d'ouvrir. D'autres (e.g. SFR Red...) ne permettent pas d'utiliser librement les ports 80, 443 ou 22.
+<span class="glyphicon glyphicon-warning-sign"></span> Certains fournisseurs d'accès internet bloquent le port 25 (mail SMTP) par défaut pour combattre le spam. D'autres (plus rares) ne permettent pas d'utiliser librement les ports 80/443. En fonction de votre FAI, il peut être possible d'ouvrir ces ports dans l'interface... Voir [cette page](isp_fr) pour plus d'informations.
 </div>
 
+## Redirection automatique / UPnP
 
----
-
-#### UPnP
-
-L’UPnP permet d’ouvrir automatiquement les ports. Si ce n’est pas le cas par défaut, vous pouvez l’activer via l’interface d’administration de votre routeur.
-
-Dans certains cas après avoir changé la configuration de votre box (ex : sur Freebox ajout d’IPv6, débloquer le SMTP…) et après l’avoir rebooté. Il se peut que vos ports ne soient plus redirigés. Il faut donc réautoriser ces ports par le firewall :
+Une technologie nommée UPnP est disponible sur certains routeurs/box et permet de rediriger automatiquement des ports vers une machine qui le demande. Si UPnP est activé chez vous, exécuter cette commande devrait automatiquement rediriger les bons ports :
 
 ```bash
 sudo yunohost firewall reload
 ```
 
-#### Redirection manuelle des ports
-
-Dans le cas où l’UPnP ne fonctionne pas, la redirection manuelle des ports est nécessaire. Encore une fois, référez-vous à l’interface d’administration de votre routeur.
-
-ATTENTION (CPU ARM) : l’activation de l’UPnP est inefficace avec les serveurs équipés d’un processeur ARM (remarque valable pour YunoHost v2.2). Une redirection manuelle des ports du routeur est alors requise.
-
-#### Le courrier électronique
-
-Les fournisseurs d’accès à Internet bloquent souvent le port 25 pour éviter que les ordinateurs de votre réseau n’envoient des spams sur Internet à votre insu. Pour pouvoir envoyer des emails, il vous faut donc ouvrir le port 25, ou désactiver l’option « blocage SMTP sortant » dans l’administration de votre routeur.
