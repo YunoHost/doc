@@ -8,6 +8,45 @@ YunoHost est basé sur Debian, donc sur les licences des éléments sur lesquels
 
 Les applications et les packages d’applications ont leurs licences respectives.
 
+
+#### Quel est l'objectif de YunoHost?
+
+Nous pensons que la décentalization d'Internet, et la reprise du contrôle et
+de la responsabilité des données et services par les citoyens est un enjeu
+crucial pour garantir une société libre et démocratique.
+
+Le projet YunoHost cherche à démocratiser l'auto-hébergement.
+
+Nous fournissons un logiciel qui cherche à rendre simple le fait de gérer et
+d'administrer un serveur soi-même, en minimisant les compétences et le temps
+requis.
+
+
+#### Mais qu'est-ce que ça fait *vraiment*?
+
+YunoHost peut être appelé une distribution ou un système d'exploitation, mais
+dans les fait, c'est une "simple" couche par dessus Debian, qui gère les
+manipulations pénibles à votre place.
+
+Par exemple, pour installer un Wordpress à la main, il vous faudrait taper
+toute une série de commande pour créer des utilisateurs, mettre en place un
+serveur web, mettre en place un serveur SQL, télécharger l'archive de Wordpress,
+la décompresser, configurer le serveur web, configurer la base de données SQL,
+et finalement configurer Wordpress. YunoHost gère toute cette partie technique
+et "tape les commandes à votre place", pour que vous puissiez vous concentrer
+sur ce qui compte vraiment.
+
+Plus d'informations sur [cette page](whatsyunohost) !
+
+
+#### Puis-je gérer mon propre site web avec YunoHost?
+
+Oui ! Il faut regarder du côté de [cette app](https://github.com/YunoHost-Apps/my_webapp_ynh).
+Elle fournit une "coquille vide" : après l'installation, il suffit d'uploader
+vos fichiers (via SSH/SCP ou SFTP) au bon endroit. Il est aussi possible
+d'avoir du PHP et une base de donnée SQL si besoin.
+
+
 #### Peut-on héberger plusieurs sites indépendants avec des noms de domaines différents ?
 
 On peut tout à fait héberger plusieurs sites web car YunoHost est multi-domaine et que certaines applications de gestion de sites web, comme *WordPress* ou *Web App Multi Custom*, sont multi-instances, c’est-à-dire que l’application peut-être installée plusieurs fois.
@@ -15,6 +54,46 @@ On peut tout à fait héberger plusieurs sites web car YunoHost est multi-domain
 #### Pourquoi je ne peux pas accéder à mes applications avec l’adresse IP ?
 
 Pour des raisons techniques, le [SSO](https://github.com/Kloadut/SSOwat/) ne permet pas aux utilisateurs de se logger à l'espace utilisateur lorsque l'on accède au serveur uniquement avec l'IP. Si vous ne pouvez réellement pas configurer un nom de domaine, une solution temporaire peut être de modifier le [fichier `hosts` (dernier §)](dns_local_network_fr) de son ordinateur.
+
+
+#### Quel est le modèle économique de YunoHost ?
+
+À l'heure actuelle, YunoHost est maintenu uniquement par une équipe de bénévole
+travaillant pendant leur temps libre. Il n'y a pas d'argent impliqué dans le
+projet (hormis quelques frais de serveurs et stickers :P), ce qui signifie
+également que nous sommes indépendant de toute préocuppations économiques.
+
+Pour le moment, l'équipe est assez peu enthousiaste à l'idée d'include de
+l'argent dans la projet. Cependant, certains contributeurs mène des activités
+professionelles qui sont liées à YunoHost.
+
+
+#### Puis-je faire un don au projet ?
+
+Pour le moment, nous n'avons pas mis en place de moyen pour recevoir des dons.
+Cependant, nous bénéficions de contributions en nature apportées par des associations,
+comme des serveurs.
+
+
+#### Comment puis-je contributer au projet ?
+
+Il y existe [plusieurs façons de contribuer](contribute) :).
+
+N'hésitez pas à venir nous parler de vos idées!
+
+Une idée répandue parmis les nouveaux contributeurs aux logiciels libres est
+de ne pas être "assez compétent". En pratique, croyez-le, personne n'est
+compétent :). Ce qui compte vraiment est : [d'aimer ce que vous faites](https://www.youtube.com/watch?v=zIbR5TAz2xQ&t=113s),
+être sympatique avec les autres êtres humains du projet, être patient et têtu
+avec les machines, et avoir du temps libre. À part ça, juste faire ce que vous
+pouvez, c'est déjà trop cool!
+
+
+#### Quel est le modèle politique de YunoHost ?
+
+Il est décrit dans [ce document](https://github.com/YunoHost/project-organization/blob/master/yunohost_project_organization.md) :).
+
+
 
 #### Pouvez-vous porter YunoHost sur [ma distro préféré] ?
 
