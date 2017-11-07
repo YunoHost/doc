@@ -14,7 +14,7 @@
 * Une **clé USB** d’une capacité minimum d’1Go **OU** un **CD vierge** standard
 * Une des dernières **images ISO YunoHost** (dans le doute prenez la version 32 bits) :
  - https://build.yunohost.org
-* ***Cas particulier*** : Si votre serveur n'a pas de carte graphique, il faut [préparer un iso qui démarre sur le port série](https://github.com/luffah/debian-mkserialiso) ).
+* ***Cas particulier*** : Si votre serveur n'a pas de carte graphique, il faut [préparer un iso qui démarre sur le port série](https://github.com/luffah/debian-mkserialiso).
 
 ---
 
