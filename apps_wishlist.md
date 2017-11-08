@@ -90,6 +90,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [The Lounge](https://thelounge.github.io), cf. https://github.com/Kloadut/shout_ynh/issues/4
 - [MaidSafe](http://maidsafe.net)
 - [Mailpile](https://www.mailpile.is)
+- [Mastodon](https://joinmastodon.org/)
 - [MediaCrush](https://imgrush.com)
 - [MinigalNano](https://github.com/sebsauvage/MinigalNano)
 - [Mirakel](http://mirakel.azapps.de/taskwarrior.html)
