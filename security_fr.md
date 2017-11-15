@@ -36,13 +36,12 @@ ssh-keygen
 ssh-copy-id -i ~/.ssh/id_rsa.pub <votre_serveur_yunohost>
 ```
 <div class="alert alert-info" markdown="1">
-Si vous êtes sur Ubuntu 16.04 vous devez faire  ```ssh-add``` pour initialiser l'agent ssh
+Si vous êtes sur Ubuntu 16.04 vous devez faire  `ssh-add` pour initialiser l'agent ssh
 </div>
+
 Entrez le mot de passe d’administration et votre clé publique devrait être copiée sur votre serveur.
 
-
 **Sur votre serveur**, éditez le fichier de configuration SSH, pour désactiver l’authentification par mot de passe.
-
 ```bash
 nano /etc/ssh/sshd_config
 
