@@ -49,7 +49,7 @@ De manière générale, c’est la **clé d’entrée à votre système**, pense
 ## Félicitations !
 
 Si vous arrivez ici après avoir vu "YunoHost a été installé avec succès" depuis
-votre navigateur ou la ligne de commande, alors félicitaton !
+votre navigateur ou la ligne de commande, alors félicitations !
 
 ### Et maintenant ?
 
