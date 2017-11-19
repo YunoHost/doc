@@ -16,7 +16,7 @@ Could be reviewed and tested.
 - [ ] **Code review** : 
 - [ ] **Approval (LGTM)** : 
 - [ ] **Approval (LGTM)** : 
-- [ ] **CI succeeded** : 
+- [ ] **CI succeeded** : [![Build Status](https://ci-apps-dev.yunohost.org/jenkins/job/APP_ynh%20BRANCH%20(Official)/badge/icon)](https://ci-apps-dev.yunohost.org/jenkins/job/APP_ynh%20BRANCH%20(Official)/) *Please replace APP and BRANCH in this link*  
 When the PR is mark as ready to merge, you have to wait for 3 days before really merge it.
 
 *Medium decision*
@@ -27,9 +27,7 @@ When the PR is mark as ready to merge, you have to wait for 3 days before really
 - [ ] **Approval (LGTM)** : 
 - [ ] **Approval (LGTM)** : 
 - [ ] **Approval (LGTM)** : 
-- [ ] **CI succeeded** : 
-- [ ] **CI succeeded** : 
-One public package check log is enough instead of two checks.  
+- [ ] **CI succeeded** : [![Build Status](https://ci-apps-dev.yunohost.org/jenkins/job/APP_ynh%20BRANCH%20(Official)/badge/icon)](https://ci-apps-dev.yunohost.org/jenkins/job/APP_ynh%20BRANCH%20(Official)/) *Please replace APP and BRANCH in this link*  
 When the PR is mark as ready to merge, you have to wait for 7 days before really merge it.
 
 *Major decision*
@@ -44,8 +42,5 @@ When the PR is mark as ready to merge, you have to wait for 7 days before really
 - [ ] **Approval (LGTM)** : 
 - [ ] **Approval (LGTM)** : 
 - [ ] **Approval (LGTM)** : 
-- [ ] **CI succeeded** : 
-- [ ] **CI succeeded** : 
-- [ ] **CI succeeded** : 
-One public package check log is enough instead of three checks.  
+- [ ] **CI succeeded** : [![Build Status](https://ci-apps-dev.yunohost.org/jenkins/job/APP_ynh%20BRANCH%20(Official)/badge/icon)](https://ci-apps-dev.yunohost.org/jenkins/job/APP_ynh%20BRANCH%20(Official)/) *Please replace APP and BRANCH in this link*  
 When the PR is mark as ready to merge, you have to wait for 7 days before really merge it.
