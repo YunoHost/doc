@@ -15,8 +15,8 @@ Depuis Windows, scp est exploitable avec putty, en téléchargeant l’outil [ps
 
 ```bash
 pscp -P 22 CERTIFICAT.crt admin@DOMAIN.TLD:ssl.crt
-pscp -P 22 CLE.key admin@DOMAIN.TLD:ssl.key```
-
+pscp -P 22 CLE.key admin@DOMAIN.TLD:ssl.key
+```
 
 Dès lors que les fichiers sont sur le serveur, le reste du travail se fera sur celui-ci. En [ssh](https://yunohost.org/#/ssh_fr) ou en local.
 
@@ -24,25 +24,29 @@ Tout d’abord, créez un dossier pour stocker les certificats obtenus.
 
 ```bash
 sudo mkdir /etc/yunohost/certs/DOMAIN.TLD/ae_certs
-sudo mv ssl.key ssl.crt /etc/yunohost/certs/DOMAIN.TLD/ae_certs/```
+sudo mv ssl.key ssl.crt /etc/yunohost/certs/DOMAIN.TLD/ae_certs/
+```
 
 Puis allez dans le dossier parent pour poursuivre.
 
 ```bash
-cd /etc/yunohost/certs/DOMAIN.TLD/```
+cd /etc/yunohost/certs/DOMAIN.TLD/
+```
 
 Faites une sauvegarde des certificats d’origine de yunohost, par précaution.
 
 ```bash
 sudo mkdir yunohost_self_signed
-sudo mv *.pem *.cnf yunohost_self_signed/```
+sudo mv *.pem *.cnf yunohost_self_signed/
+```
 
 En fonction de l’autorité d’enregistrement, des certificats intermédiaires et racines doivent être obtenus.
 
 > **StartSSL**
 > ```bash
 > sudo wget http://www.startssl.com/certs/ca.pem -O ae_certs/ca.pem
-> sudo wget http://www.startssl.com/certs/sub.class1.server.ca.pem -O ae_certs/intermediate_ca.pem```
+> sudo wget http://www.startssl.com/certs/sub.class1.server.ca.pem -O ae_certs/intermediate_ca.pem
+>```
 
 > **Gandi**
 > ```bash
@@ -63,17 +67,20 @@ En fonction de l’autorité d’enregistrement, des certificats intermédiaires
 Les certificats intermédiaires et root doivent être réunis avec le certificat obtenu pour créer une chaîne de certificats unifiés.
 
 ```bash
-cat ae_certs/ssl.crt ae_certs/intermediate_ca.pem ae_certs/ca.pem | sudo tee crt.pem```
+cat ae_certs/ssl.crt ae_certs/intermediate_ca.pem ae_certs/ca.pem | sudo tee crt.pem
+```
 
 La clé privée doit être, elle, convertie au format pem.
 
 ```bash
-sudo openssl rsa -in ae_certs/ssl.key -out key.pem -outform PEM```
+sudo openssl rsa -in ae_certs/ssl.key -out key.pem -outform PEM
+```
 
 Afin de s’assurer de la syntaxe des certificats, vérifiez le contenu des fichiers.
 
 ```bash
-cat crt.pem key.pem```
+cat crt.pem key.pem
+```
 
 Les certificats et la clé privée doivent ressembler à cela :
 
@@ -99,11 +106,12 @@ Enfin, sécurisez les fichiers de votre certificat.
 sudo chown root:metronome crt.pem key.pem
 sudo chmod 640 crt.pem key.pem
 sudo chown root:root -R ae_certs
-sudo chmod 600 -R ae_certs```
+sudo chmod 600 -R ae_certs
+```
 
 Rechargez la configuration de nginx pour prendre en compte le nouveau certificat.
 ```bash
-sudo service nginx reload```
-
+sudo service nginx reload
+```
 
 Votre certificat est prêt à servir. Vous pouvez toutefois vous assurez de sa mise en place en testant le certificat à l’aide du service de <a href="https://www.geocerts.com/ssl_checker" target="_blank">geocerts</a>. 
