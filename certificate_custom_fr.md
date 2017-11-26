@@ -17,6 +17,7 @@ Depuis Windows, scp est exploitable avec putty, en téléchargeant l’outil [ps
 pscp -P 22 CERTIFICAT.crt admin@DOMAIN.TLD:ssl.crt
 pscp -P 22 CLE.key admin@DOMAIN.TLD:ssl.key```
 
+
 Dès lors que les fichiers sont sur le serveur, le reste du travail se fera sur celui-ci. En [ssh](https://yunohost.org/#/ssh_fr) ou en local.
 
 Tout d’abord, créez un dossier pour stocker les certificats obtenus.
