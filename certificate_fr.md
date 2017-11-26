@@ -10,11 +10,9 @@ En effet, les utilisateurs devront passer par un écran de ce type :
 Cet écran revient à demander **« Avez-vous confiance au serveur qui héberge ce site ? »**.
 Cela peut effrayer vos utilisateurs (à juste titre).
 
-Pour éviter cette confusion, il est possible d’obtenir un certificat signé par
-une autorité « connue » qui est **Let's Encrypt** et qui propose des
-certificats gratuits et reconnus directement par les navigateurs. YunoHost
-permet d'installer directement un tel certificat depuis l'interface
-d'administration ou la ligne de commande.
+Pour éviter cette confusion, il est possible d’obtenir un certificat, reconnu directement par les navigateurs, signé par une autorité « connue » : **Let's Encrypt**, **Gandi**, **RapidSSL**, **StartSSL**, **Cacert**.
+
+**Let's Encrypt** propose des certificats gratuits. YunoHost permet d'installer directement un tel certificat depuis l'interface d'administration ou la ligne de commande. La suite du document détaille l'installation et la gestion d'un tel certificat. Vous pouvez également [installer un certificat d'une autre autorité que Let's Encrypt](/custom_certificate_fr).
 
 ### Installer un certificat Let's Encrypt
 
@@ -92,4 +90,5 @@ HTTP depuis l'extérieur, vous pouvez tenter :
 
 - d'ajouter une ligne `127.0.0.1 votre.domaine.tld` au fichier `/etc/hosts` sur votre serveur ;
 - si l'installation ne fonctionne toujours pas, désactiver les vérifications en ajouter `--no-checks` à la commande `cert-install`.
+
 
