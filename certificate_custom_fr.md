@@ -50,19 +50,23 @@ En fonction de l’autorité d’enregistrement, des certificats intermédiaires
 
 > **Gandi**
 > ```bash
-> sudo wget https://www.gandi.net/static/CAs/GandiStandardSSLCA.pem -O ae_certs/intermediate_ca.pem```
+> sudo wget https://www.gandi.net/static/CAs/GandiStandardSSLCA.pem -O ae_certs/intermediate_ca.pem
+>```
 > Attention si votre certificat expire après le 01/01/2017, choisissez le certificat intermédiaire SHA2 suivant (à la place du certificat SHA1 précédent)
 > ```bash
-> sudo wget https://www.gandi.net/static/CAs/GandiStandardSSLCA2.pem -O ae_certs/intermediate_ca.pem```
+> sudo wget https://www.gandi.net/static/CAs/GandiStandardSSLCA2.pem -O ae_certs/intermediate_ca.pem
+>```
 
 > **RapidSSL**
 > ```bash
-> sudo wget https://knowledge.rapidssl.com/library/VERISIGN/INTERNATIONAL_AFFILIATES/RapidSSL/AR1548/RapidSSLCABundle.txt -O ae_certs/intermediate_ca.pem```
+> sudo wget https://knowledge.rapidssl.com/library/VERISIGN/INTERNATIONAL_AFFILIATES/RapidSSL/AR1548/RapidSSLCABundle.txt -O ae_certs/intermediate_ca.pem
+>```
 
 > **Cacert**
 > ```bash
 > sudo wget http://www.cacert.org/certs/root.crt -O ae_certs/ca.pem
-> sudo wget http://www.cacert.org/certs/class3.crt -O ae_certs/intermediate_ca.pem```
+> sudo wget http://www.cacert.org/certs/class3.crt -O ae_certs/intermediate_ca.pem
+>```
 
 Les certificats intermédiaires et root doivent être réunis avec le certificat obtenu pour créer une chaîne de certificats unifiés.
 
@@ -84,7 +88,7 @@ cat crt.pem key.pem
 
 Les certificats et la clé privée doivent ressembler à cela :
 
-`-----BEGIN CERTIFICATE-----`    
+`-----BEGIN CERTIFICATE-----`
 `MIICVDCCAb0CAQEwDQYJKoZIhvcNAQEEBQAwdDELMAkGA1UEBhMCRlIxFTATBgNV`
 `BAgTDENvcnNlIGR1IFN1ZDEQMA4GA1UEBxMHQWphY2NpbzEMMAoGA1UEChMDTExC`
 `MREwDwYDVQQLEwhCVFMgSU5GTzEbMBkGA1UEAxMSc2VydmV1ci5idHNpbmZvLmZy`
@@ -96,8 +100,8 @@ Les certificats et la clé privée doivent ressembler à cela :
 `BWm5xSqewM5QDYzXFt031DrPX63Fvo+tCKTQoVItdEuJPMahVsXnDyYHeUURRWLW`
 `wc0BzEgFZGGw7wiMF6wt5QIDAQABMA0GCSqGSIb3DQEBBAUAA4GBALD640iwKPMf`
 `pqdYtfvmLnA7CiEuao60i/pzVJE2LIXXXbwYjNAM+7Lov+dFT+b5FcOUGqLymSG3`
-`kSK6OOauBHItgiGI7C87u4EJaHDvGIUxHxQQGsUM0SCIIVGK7Lwm+8e9I2X0G2GP`    
-`9t/rrbdGzXXOCl3up99naL5XAzCIp6r5`  
+`kSK6OOauBHItgiGI7C87u4EJaHDvGIUxHxQQGsUM0SCIIVGK7Lwm+8e9I2X0G2GP`
+`9t/rrbdGzXXOCl3up99naL5XAzCIp6r5`
 `-----END CERTIFICATE-----`
 
 Enfin, sécurisez les fichiers de votre certificat.
