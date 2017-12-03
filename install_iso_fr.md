@@ -31,3 +31,7 @@ Pour se connecter directement sur l’ordinateur (uniquement en local) :
 * Utilisateur : **root**
 * Mot de passe : **yunohost**
 
+
+## Cas spécifiques / avancés
+
+Si l'ordinateur n'a pas de carte graphique mais a un port série : il faut modifier l'ISO pour démarrer avec la console série. Une solution est d'utiliser [un script qui modifie les options de démarrage](https://github.com/luffah/debian-mkserialiso).
