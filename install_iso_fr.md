@@ -25,6 +25,10 @@
 
 <a class="btn btn-lg btn-default" href="/postinstall_fr">3. Post-installation</a>
 
+## Cas Spécifiques
+
+Si l'ordinateur n'a pas de carte graphique mais a un port série : il faut modifier l'ISO pour démarrer avec la console série. La solution de facilité est d'utiliser un [Script qui modifie les options de démarrage](https://github.com/luffah/debian-mkserialiso).
+
 ---
 
 Pour se connecter directement sur l’ordinateur (uniquement en local) :
