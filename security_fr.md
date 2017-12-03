@@ -72,7 +72,7 @@ Ensuite redémarrez le firewall iptables et fermez l’ancien port dans iptables
 
 ```bash
 yunohost firewall reload
-yunohost firewall disallow <votre numéro de port> # port par défaut 22
+yunohost firewall disallow TCP <votre numéro de port> # port par défaut 22
 yunohost firewall disallow --ipv6 TCP <votre numéro de port> # pour ipv6
 ``` 
 
