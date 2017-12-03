@@ -89,6 +89,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Loomio](https://www.loomio.org)
 - [The Lounge](https://thelounge.github.io), cf. https://github.com/Kloadut/shout_ynh/issues/4
 - [MaidSafe](http://maidsafe.net)
+- [MailMan](http:www.list.org)
 - [Mailpile](https://www.mailpile.is)
 - [MediaCrush](https://imgrush.com)
 - [MinigalNano](https://github.com/sebsauvage/MinigalNano)
@@ -134,6 +135,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Streama](https://github.com/dularion/streama)
 - [Streisand](https://github.com/jlund/streisand)
 - [SVG-Edit](https://github.com/SVG-Edit/svgedit)
+- [Sympa](https://www.sympa.org/)
 - [Taskwarrior](https://taskwarrior.org)
 - [Taiga](https://taiga.io)
 - [TorChat](https://github.com/prof7bit/TorChat)
