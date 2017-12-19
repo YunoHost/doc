@@ -81,4 +81,9 @@ Cette page liste plusieurs types d’installations, classés par catégories.
 <b><p>Sur Debian 8/Jessie</p></b></a>
 </div>
 
+<div class="col col-md-3 text-center">
+<a href="/install_manually_fr"><img height=150 src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" style="vertical-align:bottom">
+<b><p>Sur Ubuntu</p></b></a>
+</div>
+
 </div>
