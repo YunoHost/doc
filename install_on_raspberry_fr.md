@@ -56,6 +56,3 @@ sudo passwd root
 
 4. Poursuivez avec la <a href="/install_manually_fr">procédure d'installation manuelle générique</a>.
 
----
-
-***Si vous avez besoin d’aide lors de ces étapes, n’hésitez pas à utiliser les différents [outils de support](/support_fr).***

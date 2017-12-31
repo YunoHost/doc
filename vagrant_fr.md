@@ -48,7 +48,7 @@ vagrant ssh
 
 Mettre à jour le système.
 ```bash
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update && sudo apt-get dist-upgrade
 ```
 
 Vous pouvez accéder à votre vm via l’ip 192.168.33.10.

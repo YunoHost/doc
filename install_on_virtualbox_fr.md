@@ -72,6 +72,3 @@ Après le redémarrage, vous devriez voir cet écran :
 * Vous pouvez obtenir plus d’information sur la post-installation ici : **[yunohost.org/postinstall_fr](/postinstall_fr)**
 * Le mode de passe root est "yunohost"
 
----
-
-***Si vous avez besoin d’aide lors de ces étapes, n’hésitez pas à utiliser les différents [moyens de support](/support_fr).***

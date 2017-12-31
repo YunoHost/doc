@@ -36,6 +36,3 @@
 #### Build image
 * [Create an ARM board image](/build_arm_image_en)
 
----
-
-***Need help during one of these steps? [Get support!](/support)***

@@ -8,7 +8,7 @@ Two things remain important to note:
 
 * The fact that YunoHost is a well-spread software increase chances to face an attack. If a flaw is discovered, it could potentially affect all the YunoHost instances at once. Keep your system **up-to-date** to remain safe.
 
-*If you need some advises, do not hesitate to [ask us](/support).*
+*If you need some advices, do not hesitate to [ask us](/help).*
 
 *To talk about security flaws, contact the [YunoHost security team](/security_team).*
 

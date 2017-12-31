@@ -13,7 +13,7 @@ Il est basé et reste totalement compatible avec [Debian GNU/Linux](https://debi
 - multi-domaines
 - un système d’emails
 - un serveur de messagerie instantanée
-- un système d’authentifaction unique (SSO)
+- un système d’authentification unique (SSO)
 - un système d’applications
 - un système de backup
 - un système de régénération de configuration des services

@@ -4,7 +4,7 @@ The step called "**post-installation**" is actually the initial configuration of
 
 ## Access
 
-You can access it graphically by entering your **server's local IP** address in a **web browser** (e.g. `http://192.168.1.7`).
+You can access it graphically by entering your **server's local IP** address in a **web browser** (e.g. `http://192.168.1.7`; you'll get this from the client table on your router's admin page).
 
 <img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="/images/postinstall_web.png">
 
@@ -26,7 +26,7 @@ Or by running `yunohost tools postinstall` in command-line.
 
 This is the first domain name linked to your YunoHost server, but also the one which will be used by your server's users to access the **authentication portal**. It will thus be **visible by everyone**, choose it wisely.
 
-* If you do not have a domain name, or if you want to use the YunoHost's DynDNS service, choose a sub-domain of **.nohost.me** or **.noho.st** (i.e. `homersimpson.nohost.me`). The domain will be configured automatically and you won't need any further configuration step.
+* If you do not have a domain name, or if you want to use the YunoHost's DynDNS service, choose a sub-domain of **.nohost.me** or **.noho.st** (e.g. `homersimpson.nohost.me`). The domain will be configured automatically and you won't need any further configuration step.
 
 * If you do know what **DNS** is, you probably want to configure your own domain name here. In this case, please refer to the [DNS page](/dns) page for more informations.
 
@@ -40,16 +40,22 @@ This password will be used to access to your server's [administration interface]
 
 ---
 
-## Troubleshooting
+## Congratz!
 
-### Secured connection fails after **post-installation**
+If you got so far and saw 'YunoHost has been successfully installed' (web
+postinstall) or 'YunoHost has been correctly configured', then congratulations!
 
-If you're using your own domain and depending on your browser, you might be stuck out of your Yunohost installation until you deploy an appropriate certificate. Thanks to Yunohost and [Let's Encrypt](https://letsencrypt.org/), this proves to be quite easy: just run `yunohost domain cert-install` in command-line to issue and install your certificate and _Voilà_. Refresh your browser and you're good to go.
+### What now ?
 
----
+- If you're self-hosting at home and without a VPN, you need to [make sure to
+  correctly forward ports on your router/Internet box](isp_box_config) ;
+- If you're using your own domain name (i.e. not a .nohost.me / .noho.st), you
+  need to [configure it according to the recommended DNS
+  configuration](dns_config) ;
+- If you cannot configure your domain name yet (because you didn't register it
+  yet, or because this is a test domain), see last paragraph
+  [here](dns_local_network) for a workaround ;
+- Don't be too afraid of the [certificate warning](certificate), you'll probably
+  be able to install a Let's Encrypt certificate :).
+- Have a look at [the available apps](apps) !
 
-## And after ?
-
-Once the post-installation finished, check if you can access to your server with your web-browser. If it is not the case, a few more configuration steps may be required.
-
-Do not hesitate to come on our [support chatroom](/support) if you need help.

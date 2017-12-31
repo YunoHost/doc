@@ -44,7 +44,7 @@
   <div class="call-to-action">
     <a class="btn btn-primary btn-lg" href="/try">Try it</a>
     <a class="btn btn-success btn-lg" href="/install">Get started</a>
-    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/en-fr-sortie-de-yunohost-2-6-aaron-swartz-yunohost-2-6-release-aaron-swartz/3065">YunoHost v2.6</a></small></p>
+    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-2-7-stable-release-eben-moglen-sortie-de-yunohost-2-7-stable-eben-moglen/3376">YunoHost v2.7</a></small></p>
   </div>
 
   <div class="row cf">
@@ -97,7 +97,7 @@
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org/" target="_blank">Forum</a>
       <a class="btn btn-lg btn-block btn-default" href="chat_rooms_en" target="_blank">Chat rooms</a>
       <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Latest news</a>
-      <a class="btn btn-lg btn-block btn-danger btn-support" href="/support">Support</a>
+      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_fr">Support</a>
     </div>
     <div class="col-md-7 text-right">
       <h1>Explore <small>what you can do with a server, and why it is important</small></h1>
@@ -152,32 +152,3 @@
 
 </script>
 
-<script type="text/javascript" src="/jappix/javascripts/mini.min.js"></script>
-<script type="text/javascript">
-    // Jappix mini chat
-    jQuery.ajaxSetup({cache: false});
-    $(".actions").css('opacity', 0);
-
-    var ADS_ENABLE = 'off';
-    var JAPPIX_STATIC = '/jappix/';
-    var HOST_BOSH = 'https://im.yunohost.org/http-bind/';
-    var ANONYMOUS = 'on';
-     JappixMini.launch({
-        connection: {
-           domain: "anonymous.yunohost.org",
-        },
-        application: {
-           network: {
-              autoconnect: false,
-           },
-           interface: {
-              showpane: false,
-              animate: false,
-           },
-           groupchat: {
-              open: ['support@conference.yunohost.org'],
-              suggest: ['dev@conference.yunohost.org']
-           }
-        },
-     });
-</script>

@@ -232,7 +232,7 @@ Toutes les erreurs liées aux applications installées sur ce domaine, il se peu
 
 ## SSOwat
 [SSowat](https://github.com/Kloadut/SSOwat) 
-est le logiciel qui connecte le serveur web nginx au serveur LDAP. Son but est d’authentifier les utilisateurs au portail YunHost pour pouvoir simplement changer entre les applications.
+est le logiciel qui connecte le serveur web nginx au serveur LDAP. Son but est d’authentifier les utilisateurs au portail YunoHost pour pouvoir simplement changer entre les applications.
 
 ### Configuration
 Vous pouvez regarder le fichier de configuration SSOwat dans le fichier :

@@ -29,7 +29,7 @@ deb http://repo.yunohost.org/debian/ jessie stable testing unstable
 
 ## Workflow
 
-Le but du workflow est d’éviter toute intervention manuelle (lancement d’un script, etc.) sur le serveur, et de maîtriser la gestion des paquets via GitHub uniquement.
+Le but du workflow est d’éviter toute intervention manuelle (lancement d’un script, etc.) sur le serveur, et de maîtriser la gestion des paquets via GitHub uniquement. (Edit: les webhooks ne sont plus fonctionnels, il est nécessaire de lancer la création des paquets à la main)
 
 Ainsi, les dépôts de chaque paquet yunohost possèdent trois branches correspondant aux trois composants (`unstable`, `testing` et `stable`). Le serveur de build construit et déploie **automatiquement** les paquets sources et binaires Debian correspondant à l’état de ces trois branches sur GitHub.
 
@@ -137,7 +137,7 @@ Puis passer dans la branche `unstable` et merger la branche `testing`. Un nouvea
 
 #### Publier une release testing ou stable
 
-Pour l'instant, on passe par une release via GitHub pour déclencher le build du paquet.
+Pour l'instant, on passe par une release via GitHub pour déclencher le build du paquet. (Edit: les webhooks ne sont plus fonctionnels, il est nécessaire de lancer la création des paquets à la main)
 
 Aller sur https://github.com/YunoHost/{moulinette, yunohost, yunohost-admin, ssowat}/releases/new
 
@@ -152,6 +152,14 @@ Ex: "debian/2.4.1"
 4/ Commentaire
 Reprendre le changelog depuis `debian/changelog`. Remercier les contributeurs/traducteurs
 ( Pour voir le dernier commit : `git show HEAD` )
+
+5/ Création des paquets
+Une fois connecté à `veganaise2`, il faut utiliser la commande `ynh-build` pour lancer la création des paquets. 
+Exemples de commandes:
+```bash
+ynh-build yunohost stable 2.6.5
+ynh-build moulinette testing 2.6.9
+```
 
 #### Paquets non YunoHost
 

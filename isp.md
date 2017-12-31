@@ -20,4 +20,9 @@ A list of French and Belgian ISPs is available on the [french page](/isp_fr).
 | --- | --- | --- | --- | --- | --- | --- |
 | Global Village Telecom | Multiple | Yes | No. Only for Fix IP| No | No | Yes, extra charge. |
 
+### Ireland
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| Whizzy Internet | Multiple | Yes | Yes| Yes | Yes | Yes |
+
 If you want to add international ISPs information, please do consider [modifying this page](/write_documentation).

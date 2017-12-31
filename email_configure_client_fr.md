@@ -19,6 +19,8 @@ L’utilitaire de détection automatique de Thunderbird ne fonctionne pas avec l
 
 <img src="/images/thunderbird-config.png" width=900>
 
+Note : si votre instance Yunohost gère plusieurs noms de domaine, il faut utiliser celui définit comme "nom de domaine par défaut" dans l'interface de gestion des noms de domaines. Et ce, même si le domaine de votre adresse mail en est un autre.
+
 * [Gestion des alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
 
 #### Pour Android

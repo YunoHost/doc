@@ -42,8 +42,7 @@
         * [Internet service provider](/isp)
             * [Generic configuration of the ISP router](/isp_box_config)
         * Applications
-            * [Official applications](/apps_en)
-            * [Non-official applications](/apps_in_progress_en)
+            * [Applications](/apps_en)
             * [Update applications](app_update_en)
         * Administration
             * Command-line
@@ -70,17 +69,7 @@
         * [User interface](user_interface)
         * [Configure email client](email_configure_client_en)
         * [Instant messaging usage](/XMPP)
-        * [Official applications](/apps)
-           * [Baikal](/app_baikal_en)
-           * [Firefox Sync](/app_ffsync_en)
-           * [Tiny Tiny RSS](/app_ttrss_en)
-           * [Transmission](/app_transmission_en)
-           * [Radicale](/app_radicale)
-           * [RoundCube](/app_roundcube_en)
-           * [Minidlna](app_minidlna_en)
-           * [Wallabag v2](/app_wallabag2)
-        * [Community applications](/apps_in_progress_en)
-           * [LimeSurvey](/app_limesurvey_en)
+        * [Applications](/apps)
 
     * [Contributor guide](/contribute)
         * Developement
@@ -96,7 +85,6 @@
                    * [Trap usage](packaging_apps_trap_fr)
                    * [Applications levels](packaging_apps_levels_fr)
                    * [YEP - YunoHost Enhancement Proposals](packaging_apps_guidelines_fr)
-               * [Applications in progress](/apps_in_progress_en)
                * [Wishlist of applications](/apps_wishlist_en)
            * [Contributing to the YunoHost core](/dev)
            * [Creation of system packages](/build_system_en)
@@ -114,10 +102,9 @@
    * [Frequently asked questions](/faq_en)
    * [Contributors](contribs)
    - [Project organization](project_organization)
-   * [Support](/support_en)
    * [Art Works](artworks_en)
    * [Blog](https://forum.yunohost.org/c/announcement)
    - [Forum](https://forum.yunohost.org)
    - [Chat rooms](chat_rooms_en)
    * [Communication](communication_en)
-   * [Help](/help)
+   * [Support / Help](/help)

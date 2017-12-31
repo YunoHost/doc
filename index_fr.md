@@ -40,7 +40,7 @@
   <div class="call-to-action">
     <a class="btn btn-primary btn-lg" href="/try_fr">Essayer</a>
     <a class="btn btn-success btn-lg" href="/install_fr">Installer</a>
-    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/en-fr-sortie-de-yunohost-2-6-aaron-swartz-yunohost-2-6-release-aaron-swartz/3065">YunoHost v2.6</a></small></p>
+    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-2-7-stable-release-eben-moglen-sortie-de-yunohost-2-7-stable-eben-moglen/3376">YunoHost v2.7</a></small></p>
   </div>
 
   <hr />
@@ -90,13 +90,13 @@
   <div class="row cf">
     <div class="col-md-4 button-list">
 
-      <a class="btn btn-lg btn-block btn-primary"href="/whatsyunohost_fr">Qu’est-ce que YunoHost ?</a>
+      <a class="btn btn-lg btn-block btn-primary" href="/whatsyunohost_fr">Qu’est-ce que YunoHost ?</a>
       <a class="btn btn-lg btn-block btn-info" href="/docs_fr">Documentation</a>
       <a class="btn btn-lg btn-block btn-success" href="/contribute_fr">Comment contribuer</a>
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org" target="_blank">Forum</a>
       <a class="btn btn-lg btn-block btn-default" href="chat_rooms_fr" target="_blank">Salons de discussions</a>
       <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Dernières nouvelles</a>
-      <a class="btn btn-lg btn-block btn-danger btn-support" href="/support_fr">Support</a>
+      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_fr">Support</a>
 
     </div>
     <div class="col-md-7 text-right">
@@ -152,32 +152,3 @@
 
 </script>
 
-<script type="text/javascript" src="/jappix/javascripts/mini.min.js"></script>
-<script type="text/javascript">
-    // Jappix mini chat
-    jQuery.ajaxSetup({cache: false});
-    $(".actions").css('opacity', 0);
-
-    var ADS_ENABLE = 'off';
-    var JAPPIX_STATIC = '/jappix/';
-    var HOST_BOSH = 'https://im.yunohost.org/http-bind/';
-    var ANONYMOUS = 'on';
-     JappixMini.launch({
-        connection: {
-           domain: "anonymous.yunohost.org",
-        },
-        application: {
-           network: {
-              autoconnect: false,
-           },
-           interface: {
-              showpane: false,
-              animate: false,
-           },
-           groupchat: {
-              open: ['support@conference.yunohost.org'],
-              suggest: ['dev@conference.yunohost.org']
-           }
-        },
-     });
-</script>
