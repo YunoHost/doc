@@ -15,15 +15,15 @@ Keep in mind that when you install an app, you execute code on your server with 
 From my experience, some packaging are excellent and others can break some part of your YunoHost instance. Some packages are unmaintained. So before install check package issues, the [Forum](http://forum.yunohost.org/) and the [YunoHost support room](support_en) to see if other have problem with the app.
 
 ### Check the official documentation
-Answer to your question may be already in [the documentatioon](https://yunohost.org/#/sitemap_en).
+Answer to your question may be already in [the documentation](https://yunohost.org/#/sitemap_en).
 
 ### Check the command line help
 Learn how to use the [YunoHost commands](https://yunohost.org/#/moulinette_en) like a pro.
 
 ## Upgrade
-Problems oftenly occurs after an upgrade. After a YunoHost upgrade you may want to [update your apps](https://yunohost.org/#/app_update_en).
+Problems often occur after an upgrade. After a YunoHost upgrade you may want to [update your apps](https://yunohost.org/#/app_update_en).
 
-**Check if some processes are using old librairies**
+**Check if some processes are using old libraries**
 
 You are probably familiar with:
 ```bash

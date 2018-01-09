@@ -96,6 +96,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Modoboa](http://modoboa.org)
 - [MotionEye](https://github.com/ccrisan/motioneye)
 - [MPD](http://www.musicpd.org)
+- [Museek+](https://github.com/eLvErDe/museek-plus)
 - [Nibbleblog](http://www.nibbleblog.com)
 - [Nuage](https://nuage.kerjean.me/login)
 - [ONLYOFFICE](http://onlyoffice.org)
@@ -118,6 +119,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [ProcessMaker](http://www.processmaker.com)
 - [Pulse](https://ind.ie/pulse)
 - [Pump.io](http://pump.io)
+- [qBittorrent](https://github.com/qbittorrent/qBittorrent)
 - [racktables](http://racktables.org)
 - [remotestorage-server](http://remotestorage.io/provide)
 - [Request Tracker](https://bestpractical.com)
@@ -139,6 +141,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [TorChat](https://github.com/prof7bit/TorChat)
 - [Torrent Tunes](https://github.com/tchoulihan/torrenttunes-client)
 - [Total Respawn](https://github.com/broncowdd/TotalRespawn)
+- [TwitRSS.me](http://twitrss.me/) ([Github](https://github.com/ciderpunx/twitrssme)) Scrapes Twitter to create RSS feeds.
 - [Twister](http://twister.net.co)
 - [Unvis](https://github.com/lodjuret/unvis.it)
 - [Unsee](https://github.com/unsee-cc)
