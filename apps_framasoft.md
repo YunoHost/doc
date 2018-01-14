@@ -38,5 +38,6 @@
 
 ### Voir aussi
 
-[Liste complète des applications packagées](/apps)
+- [Liste complète des applications packagées](/apps)
+- [La roadmap 'Dégooglisons'](https://dev.yunohost.org/versions/12)
 
