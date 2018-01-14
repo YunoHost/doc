@@ -12,16 +12,16 @@ Tous les fournisseurs d’accès à Internet [membres de la Fédération French 
 * ✔ : oui
 * ✘ : non
 
-| Fournisseur d’accès | [Free](/isp_free_fr) | [SFR](/isp_sfr_fr) | [Orange](/isp_orange_fr) | Bouygues<br>Télécom | Darty |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| **Box/routeur** | Freebox | Neufbox | Livebox | Bbox | Dartybox |
-| **[UPnP](https://fr.wikipedia.org/wiki/Universal_Plug_and_Play)** | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **[Port 25 ouvrable](email_fr)**<br> (fermé par défaut) | ✔ | ✔ | ✘ | ✔ | ✔ |
-| **[Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning)** | ✔ | ✔/✘ | ✘ | ✔ | ✔ |
-| **[Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup)<br>personnalisable ** | ✔ (sauf IPv6) | … | ✘ | ✘ | ✘ |
-| **[IP fixe](/dns_dynamicip_fr)** | ✔ | ✔/✘ | ✘ | ✔ | ✔ |
-| **[IPv6](https://fr.wikipedia.org/wiki/IPv6)** | ✔ | ✔ | ✔ | … | … |
-| **[Non listé sur le DUL](https://en.wikipedia.org/wiki/Dialup_Users_List)** | ✘ | … | … | … | … |
+| Fournisseur d’accès | OVH | [Free](/isp_free_fr) | [SFR](/isp_sfr_fr) | [Orange](/isp_orange_fr) | Bouygues<br>Télécom | Darty |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Box/routeur** | OVH | Freebox | Neufbox | Livebox | Bbox | Dartybox |
+| **[UPnP](https://fr.wikipedia.org/wiki/Universal_Plug_and_Play)** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
+| **[Port 25 ouvrable](email_fr)**<br> (fermé par défaut) | ✔ | ✔ | ✔ | ✘ | ✔ | ✔ |
+| **[Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning)** | ✔ | ✔ | ✔/✘ | ✘ | ✔ | ✔ |
+| **[Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup)<br>personnalisable ** | ✔ | ✔ (sauf IPv6) | … | ✘ | ✘ | ✘ |
+| **[IP fixe](/dns_dynamicip_fr)** | ✔ | ✔ | ✔/✘ | ✘ | ✔ | ✔ |
+| **[IPv6](https://fr.wikipedia.org/wiki/IPv6)** | ✔ | ✔ | ✔ | ✔ | … | … |
+| **[Non listé sur le DUL](https://en.wikipedia.org/wiki/Dialup_Users_List)** | … | ✘ | … | … | … | … |
 Pour une liste plus complète et précise, référez-vous à la très bonne documentation de [wiki.auto-hebergement.fr](http://wiki.auto-hebergement.fr/fournisseurs/fai#d%C3%A9tail_des_fai).
 
 **Astuce** : [FDN](http://www.fdn.fr) fournit des [VPN](http://www.fdn.fr/-VPN-.html) permettant de rapatrier une (ou plusieurs sur demande) IPv4 fixe et un /48 en IPv6 et ainsi « nettoyer » votre connexion si vous êtes chez l’un des FAI *limitants* du tableau ci-dessus.
