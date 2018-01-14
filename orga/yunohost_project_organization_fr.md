@@ -172,7 +172,7 @@ Alors un membre du groupe peut annoncer la décision comme effective (et procéd
 
 - Conseil : Bram, ju, ljf, Maniack, Moul, opi, theodore.
 - Core Dev : AlexAubin, Bram, JimboJoe, Ju, ljf, Moul, opi
-- Apps : Bram, frju365, JimboJoe, Ju, ljf, Maniack C, Maxime, Moul, Scith, Tostaki
+- Apps : Bram, Cyp, frju365, JimboJoe, Ju, ljf, Maniack C, Maxime, Moul, Scith, Tostaki
 - Infra : Bram, Ju, Maniack C, Moul, opi
 - Communication
   - Com : Bram, Moul, korbak, ljf, opi
