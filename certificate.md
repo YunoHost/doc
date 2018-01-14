@@ -8,7 +8,7 @@ Concretely users will go throw a screen like this:
 <img src="/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 This screen ask to the user : **"Do you trust this server that host this website?"**
-It could afraid a lot of users (rightly).
+It could frighten a lot of users (rightly).
 
 To avoid this confusion, it's possible to get a signed certificate  by a "known" authority : **Gandi**, **RapidSSL**, **StartSSL**, **CaCert**.
 In these cases, the point is to replace the self-signed certificate with the one that has been certified by a certificate authority, and the users won't have this warning screen anymore.
