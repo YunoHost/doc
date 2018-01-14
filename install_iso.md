@@ -15,6 +15,7 @@ You can use any computer with **256MB RAM or more**.
 * A **USB stick** of at least 1GB capacity **OR** a standard **blank CD**
 * One of the latest **YunoHost ISO images**, available here (take the 32 Bits one if you don't know which one to choose):
  - https://build.yunohost.org
+* ***Particular case*** : If your server has no graphic card, [prepare iso for booting with serial port](https://github.com/luffah/debian-mkserialiso).
 
 ---
 
