@@ -14,7 +14,7 @@ Tous les fournisseurs d’accès à Internet [membres de la Fédération French 
 
 | Fournisseur d’accès | OVH | [Free](/isp_free_fr) | [SFR](/isp_sfr_fr) | [Orange](/isp_orange_fr) | Bouygues<br>Télécom | Darty |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Box/routeur** | OVH | Freebox | Neufbox | Livebox | Bbox | Dartybox |
+| **Box/routeur** | Personnel/OVH Télécom | Freebox | Neufbox | Livebox | Bbox | Dartybox |
 | **[UPnP](https://fr.wikipedia.org/wiki/Universal_Plug_and_Play)** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **[Port 25 ouvrable](email_fr)**<br> (fermé par défaut) | ✔ | ✔ | ✔ | ✘ | ✔ | ✔ |
 | **[Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning)** | ✔ | ✔ | ✔/✘ | ✘ | ✔ | ✔ |
@@ -29,8 +29,9 @@ Pour une liste plus complète et précise, référez-vous à la très bonne docu
 ### Belgique
 
 | Fournisseur d’accès | Box/ routeur | uPnP activable | [Port 25 ouvrable](email_fr)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | IP fixe |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Proximus** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
 | | BBox3 | oui (activé) | oui | **non** | **non** | **non** |
 | **Scarlet** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
-**Proximus** ne serait pas ouvert à l’auto-hébergement. L’ouverture des ports serait plus difficile afin d’éviter tout SPAM. Il serait préférable de passer par [Neutrinet](http://neutrinet.be), un des [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres). Les ports 23, 80 et 443 sont fermés par le fournisseur par défaut, ils peuvent être débloqués à la demande (via le compte en ligne MyProximus) sur le site de Proximus.
+
+**Proximus** ne serait pas ouvert à l’auto-hébergement. L’ouverture des ports serait plus difficile afin d’éviter tout SPAM. Il serait préférable de passer par [Neutrinet](http://neutrinet.be), un des [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres).
