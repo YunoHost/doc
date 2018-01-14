@@ -36,7 +36,7 @@ Il faut modifier le fichier `/etc/postfix/main.cf`.
 Chercher la ligne contenant `relayhost = ` et la remplacer par `relayhost = smtp.<nom-du-fai>.tld`. Par exemple: `relayhost = smtp.free.tld`.
 Si la ligne n'existe pas ajouter la ligne à la fin du fichier.
 
-**More Info**
+**Plus d'informations**
 - https://yunohost.org/#/isp_fr
 - https://yunohost.org/#/isp_orange_fr
 - https://yunohost.org/#/isp_sfr_fr
