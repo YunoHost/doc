@@ -31,6 +31,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Cronkeep](https://github.com/cronkeep/cronkeep)
 - [Croodle](https://github.com/jelhan/croodle) Schedule a date or to do a poll on a general topics, with client-side encryption.
 - [CumulusClips](http://cumulusclips.org)
+- [Cyclos](https://www.cyclos.org)
 - [Darkwire.io](https://github.com/seripap/darkwire.io)
 - [Deluge](http://deluge-torrent.org) (with WebUI)
 - [DemocracyOS](http://democracyos.org)
