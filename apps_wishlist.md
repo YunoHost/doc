@@ -117,6 +117,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Pix](http://pix.toile-libre.org)
 - [Playmaker](https://github.com/NoMore201/playmaker)
 - [Pleroma](https://git.pleroma.social/pleroma/pleroma)
+- [Playmaker](https://github.com/NoMore201/playmaker)
 - [PPTP VPN](https://packages.debian.org/sv/squeeze/pptpd)
 - [Privoxy](http://www.privoxy.org)
 - [ProcessMaker](http://www.processmaker.com)
