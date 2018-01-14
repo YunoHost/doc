@@ -1,4 +1,4 @@
-#L’auto-hébergement
+# L’auto-hébergement
 
 #### Définition
 L’**auto-hébergement** consiste à héberger chez soi son serveur, ses données et ses services.
