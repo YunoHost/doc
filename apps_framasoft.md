@@ -24,7 +24,7 @@
 | Framemo        | Scrumblr            | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/scrumblr_ynh)        | ![](https://dash.yunohost.org/integration/scumblr.svg) |
 | Framinetest    | Minetest            | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/minetest_ynh)        | ![](https://dash.yunohost.org/integration/minetest.svg) |
 | Framatalk      | Jitsi Meet          | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/jitsi_ynh)           | ![](https://dash.yunohost.org/integration/jitsi.svg) |
-| Framalists     | Mailman             | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/mailman_ynh)         | ![](https://dash.yunohost.org/integration/mailman.svg) |
+| Framalistes    | Mailman             | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/mailman_ynh)         | ![](https://dash.yunohost.org/integration/mailman.svg) |
 |                | Sympa               | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/alexAubin/sympa_ynh)               | ![](https://dash.yunohost.org/integration/sympa.svg) |
 | Framindmap     | Wisemapping         | Non packagé                                          | |
 | Framavectoriel | SVG-Edit            | Non packagé                                          | |
