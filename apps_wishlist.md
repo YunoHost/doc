@@ -46,6 +46,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [FileTea](https://filetea.me)
 - [FoOlSlide](http://foolcode.github.io/FoOlSlide/) Open source comicbook/manga management software
 - [Fossil](http://www.fossil-scm.org)
+- [Framamind](https://framindmap.org/c/login)
 - [Framaslides](https://framagit.org/framasoft/framaslides/)
 - [Geneweb](https://geneweb.tuxfamily.org)
 - [GetSimple CMS](http://get-simple.info)
