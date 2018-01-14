@@ -31,6 +31,17 @@ De nombreux messages permettant d’identifier les problèmes se trouvent enregi
 
 <!-- ajouter une doc pour consulter ses logs des services mail -->
 
+#### Je reçois mais ne peut envoyer de mails
+Il faut modifier le fichier `/etc/postfix/main.cf`.
+Chercher la ligne contenant `relayhost = ` et la remplacer par `relayhost = smtp.<nom-du-fai>.tld`. Par exemple: `relayhost = smtp.free.tld`.
+Si la ligne n'existe pas ajouter la ligne à la fin du fichier.
+
+**More Info**
+- https://yunohost.org/#/isp_fr
+- https://yunohost.org/#/isp_orange_fr
+- https://yunohost.org/#/isp_sfr_fr
+- https://yunohost.org/#/isp_free_fr
+
 ### Aller plus loin
 La messagerie électronique est basée sur les protocoles SMTP pour l’envoi de mail et IMAP (ou anciennement POP3) pour la récupération des messages depuis un serveur. En arrière-plan, YunoHost fournit :
 * [Postfix](http://www.postfix.org) en tant que serveur SMTP.
