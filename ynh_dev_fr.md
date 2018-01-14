@@ -1,6 +1,6 @@
 ## Créer un environnement de développement
 
-<div class="alert alert-info">
+<div class="alert alert-danger">
 <b>Attention :</b> cette page de documentation n’est plus à jour. Merci de vous référer à la [documentation du dépôt](https://github.com/YunoHost/ynh-dev).
 </div>
 
