@@ -120,6 +120,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [PPTP VPN](https://packages.debian.org/sv/squeeze/pptpd)
 - [Privoxy](http://www.privoxy.org)
 - [ProcessMaker](http://www.processmaker.com)
+- [PyLoad](https://github.com/pyload/pyload)
 - [Pulse](https://ind.ie/pulse)
 - [Pump.io](http://pump.io)
 - [qBittorrent](https://github.com/qbittorrent/qBittorrent)
