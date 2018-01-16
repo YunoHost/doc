@@ -31,8 +31,15 @@ De nombreux messages permettant d’identifier les problèmes se trouvent enregi
 
 <!-- ajouter une doc pour consulter ses logs des services mail -->
 
-#### Je reçois mais ne peut envoyer de mails
-Il faut modifier le fichier `/etc/postfix/main.cf`.
+#### Je suis capable de recevoir mais pas d'envoyer des mails
+
+Cela peut être dû au fait que le port 25 est fermé, et que votre fournisseur d'accès internet ne vous permet pas de l'ouvrir (pour lutter contre le spam)...
+
+Une solution de contournement consiste, soit à utiliser un VPN (ce qui nécessitera un abonnement chez un fournisseur, et de configurer l'app vpnclient), soit à utiliser un relai SMTP.
+
+Attention : dans le cas d'un relai SMTP, ***la personne ou l'organisme qui possède le relai sera techniquement très facilement capable de lire tout mail non-chiffré transitant entre votre serveur et le reste d'Internet ! Vous lui faites donc confiance à propos de toute information personelle ou critique que pourrait contenir vos mails !*** 
+
+Pour mettre en place le relai SMTP, il faut modifier le fichier `/etc/postfix/main.cf`.
 Chercher la ligne contenant `relayhost = ` et la remplacer par `relayhost = smtp.<nom-du-fai>.tld`. Par exemple: `relayhost = smtp.free.tld`.
 Si la ligne n'existe pas ajouter la ligne à la fin du fichier.
 
