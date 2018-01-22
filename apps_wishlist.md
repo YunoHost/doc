@@ -11,6 +11,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [List of awesome Node.js projects](https://github.com/sqreen/awesome-nodejs-projects)
 - [List of SIP softwares/applications](https://en.wikipedia.org/wiki/List_of_SIP_software#Free_and_open-source_license)
 - [10er10](https://github.com/dready92/10er10)
+- [Airsonic](https://github.com/airsonic/airsonic)
 - [Airtime](https://www.sourcefabric.org/en/airtime/)
 - [Ajenti](http://ajenti.org)
 - [Auth0 SSO Dashboard](https://github.com/auth0-extensions/auth0-sso-dashboard-extension)
@@ -161,3 +162,4 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [ZeroTier](https://github.com/zerotier/ZeroTierOne)
 - [ZNC](http://wiki.znc.in/ZNC)
 - [Zone-project](https://github.com/descl/ZONE)
+- [Zoneminder](https://github.com/ZoneMinder/zoneminder)
