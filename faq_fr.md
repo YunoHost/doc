@@ -9,7 +9,7 @@ YunoHost est basé sur Debian, donc sur les licences des éléments sur lesquels
 Les applications et leurs paquets ont leurs licences respectives.
 
 
-#### Quel est l’objectif de YunoHost?
+#### Quel est l’objectif de YunoHost ?
 
 Nous pensons que la décentralisation d’Internet, et la reprise du contrôle et
 de la responsabilité des données et services par les citoyens est un enjeu
@@ -22,7 +22,7 @@ d’administrer un serveur soi-même, en minimisant les compétences et le temps
 requis.
 
 
-#### Mais qu’est-ce que ça fait *vraiment*?
+#### Mais qu’est-ce que ça fait *vraiment* ?
 
 YunoHost peut être appelé une distribution ou un système d’exploitation, mais
 dans les faits, c’est une « simple » sur-couche à Debian, qui gère les
@@ -36,10 +36,10 @@ la décompresser, configurer le serveur web, configurer la base de données SQL,
 Plus d’informations sur [cette page](whatsyunohost) !
 
 
-#### Puis-je gérer mon propre site web avec YunoHost?
+#### Puis-je gérer mon propre site web avec YunoHost ?
 
 Oui ! Il faut regarder du côté de [cette app](https://github.com/YunoHost-Apps/my_webapp_ynh).
-Elle fournit une « coquille vide » : après l’installation, il suffit d’envoyer vos fichiers (via SSH/SCP ou SFTP) au bon endroit. Il est aussi possible
+Elle fournit une « coquille vide » : après l’installation, il suffit d’envoyer vos fichiers (via SSH/SCP ou SFTP) au bon endroit. Il est aussi possible 
 d’avoir du PHP et une base de donnée SQL si besoin.
 
 
@@ -49,7 +49,7 @@ On peut tout à fait héberger plusieurs sites web car YunoHost est multi-domain
 
 #### Pourquoi je ne peux pas accéder à mes applications avec l’adresse IP ?
 
-Pour des raisons techniques, le [SSO](https://github.com/Kloadut/SSOwat/) ne permet pas aux utilisateurs de se connecter à l’espace utilisateur lorsque l’on accède au serveur uniquement avec l’IP. Si vous ne pouvez réellement pas configurer un nom de domaine, une solution temporaire peut être de modifier le [fichier `hosts` (dernier §)](dns_local_network_fr) de son ordinateur.
+Pour des raisons techniques, le [SSO](https://github.com/YunoHost/SSOwat/) ne permet pas aux utilisateurs de se connecter à l’espace utilisateur lorsque l’on accède au serveur uniquement avec l’IP. Si vous ne pouvez réellement pas configurer un nom de domaine, une solution temporaire peut être de modifier le [fichier `hosts` (dernier §)](dns_local_network_fr) de son ordinateur.
 
 
 #### Quel est le modèle économique de YunoHost ?
