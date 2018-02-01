@@ -85,6 +85,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Koozip](http://koozic.net)
 - [Kresus](https://framagit.org/bnjbvr/kresus)
 - [KrISS feed](https://github.com/tontof/kriss_feed)
+- [Koken](http://koken.me)
 - [Kune](https://en.wikipedia.org/wiki/Kune_%28software%29)
 - [LibreNews-Server](https://librenews.io)
 - [LibreOffice Online](https://wiki.documentfoundation.org/ReleaseNotes/5.3/fr#LibreOffice_Online)
