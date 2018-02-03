@@ -19,6 +19,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Beehive](https://github.com/muesli/beehive)
 - [Blynk](https://github.com/blynkkk/blynk-library)
 - [Bolt](http://bolt.cm)
+- [Bookstack](https://www.bookstackapp.com/)
 - [Browsepass](http://techualization.blogspot.de/2013/09/introducing-browsepass-keepass-on-web.html)
 - [Calibre](https://manual.calibre-ebook.com/server.html)
 - [Caliopen](https://www.caliopen.org)
