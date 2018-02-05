@@ -156,6 +156,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [WebTorrent](https://github.com/feross/webtorrent)
 - [Wisemapping](http://www.wisemapping.com)
 - [Xonotic](http://xonotic.org)
+- [YaCy](https://yacy.net)
 - [YellowCMS](https://datenstrom.se/yellow)
 - [YesWiki](https://yeswiki.net)
 - [ZeroTier](https://github.com/zerotier/ZeroTierOne)
