@@ -42,7 +42,7 @@ ssh admin@111.222.333.444
 
 Ensuite, entrez le mot de passe administrateur défini pendant la [post-installation](postinstall).
 
-Si vous avez configuré vos DNS (or tweaked your `/etc/hosts`), you can simply use your domain name :
+Si vous avez configuré vos DNS (ou modifié votre `/etc/hosts`), vous pouvez utiliser votre nom de domaine :
 
 ```bash
 ssh admin@votre.domaine.tld
