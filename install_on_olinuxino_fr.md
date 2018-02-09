@@ -82,13 +82,6 @@ ssh root@192.168.x.y
 ```
 À la première connexion, il sera demandé de changer le mot de passe : entrer à nouveau **olinux**, puis saisir deux fois le nouveau mot de passe.
 
-## Mettre à jour le serveur
-
-Mettre à jour le système (environ 15 minutes) :
-```bash
-apt-get update && apt-get dist-upgrade
-```
-
 ## Procéder à la postinstallation
 
 Procéder à la [postinstallation](/postinstall_fr) en se connectant à la carte avec votre navigateur web sur https://192.168.x.y (votre navigateur vous avertira que le certificat est auto-signé, ceci est normal : vous pouvez ajouter une exception de sécurité pour ce certificat).
@@ -96,6 +89,12 @@ Procéder à la [postinstallation](/postinstall_fr) en se connectant à la carte
 **Note :** il est également possible de réaliser la post-installation ligne de commande via SSH en exécutant `yunohost tools postinstall`.
 </div>
 
+## Mettre à jour le serveur
+
+Mettre à jour le système (environ 15 minutes) :
+```bash
+apt-get update && apt-get dist-upgrade
+```
 ## (Optionel) Installer DoctorCube
 
 Si vous souhaitez bénéficier automatiquement des corrections de l'image du projet La Brique Internet, vous pouvez installez l'application dédiée DoctorCube.
