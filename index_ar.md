@@ -8,7 +8,7 @@
     <p>
       <span class="yolo 1" style="color: #FF3399;">تعالي إلى منزلي، أنا مُستضافة عند صديقة</span>
       <span class="yolo 2" style="color: #6699FF;">إن لم تقم باستضافة نفسك بنفسك في عمر الخمسين فاعرف أنك قد فشلت في حياتك</span>
-      <span class="yolo 3" style="color: #FF0066;">فاستضافوا أنفسهم بنفسم و كانت لهم ذرية كثيرة</span>
+      <span class="yolo 3" style="color: #FF0066;">فاستضافوا أنفسهم بأنفسم و كانت لهم ذرية كثيرة</span>
       <span class="yolo 4" style="color: #3366FF;">الإنترنت، قراءة و كتابة</span>
       <span class="yolo 5" style="color: #FFFFFF;">monsieur@michu.fr</span>
       <span class="yolo 6" style="color: #CC66FF;">ليس هناك ما أخفيه</span>
@@ -25,13 +25,13 @@
 
 </div><!-- teasing-part -->
 
-<div dir="auto" class="boring-part" markdown="1">
+<div class="boring-part" markdown="1">
 
   <a href="https://github.com/YunoHost" target="_blank" class="github-ribbon hidden-xs">
     <img src="/images/github_ribbon_grey.png" alt="قم بتشعيبي على جيت هب">
   </a>
 
-  <h1>YunoHost <small>أداة تُمكّنكم من تنصيب و استخدام خادمكم بأسلوب سهل.</small></h1>
+  <h1 dir="rtl">YunoHost <small>أداة تُمكّنكم من تنصيب و استخدام خادمكم بأسلوب سهل.</small></h1>
 
   <div class="home-panel">
     <img src="/images/home_panel.jpg" />
@@ -45,9 +45,9 @@
 
   <hr />
 
-  <div dir="auto" class="row cf">
-    <div class="col-md-7">
-      <h1>Installez <small>خادومكم بصورة سهلة، إنكم تمتلكون كل ما تحتاجون إليه عندكم في المنزل</small></h1>
+  <div class="row cf">
+    <div dir="rtl" class="col-md-7">
+      <h1>قوموا بتنصيب <small>خادومكم بكل سهولة، إنكم تمتلكون في المنزل كل ما تحتاجون إليه</small></h1>
       <p><a href="/hardware">الإطلاع على المتطلبات الأساسية</a></p>
     </div>
     <div class="col-md-4">
@@ -66,7 +66,7 @@
       </div>
     </div>
     <div class="col-md-7 text-right">
-      <h1>استمتعوا <small>بتطبيقات الويب الخاصة بكم و انشؤا موطنكم الصغير على الإنترنت</small></h1>
+      <h1>استمتعوا <small>بتطبيقات الويب الخاصة بكم و انْشِئُوا موطنكم الصغير على الإنترنت</small></h1>
       <p><br /><a href="/apps">قائمة التطبيقات المتوفرة</a></p>
     </div>
   </div>
@@ -75,7 +75,7 @@
 
   <div dir="auto" class="row cf">
     <div class="col-md-7">
-      <h1>أديروا <small>السيرفر الخاص بكم كما يحلو لكم : سواءا عبر الويب أو جهازك المحمول أو عبر سطر الأوامر</small></h1>
+      <h1>أديروا <small>السيرفر الخاص بكم كما يحلو لكم : سواءا عبر الويب أو أجهزتكم المحمولة أو عبر سطر الأوامر</small></h1>
       <p><br /><a href="/try">جربوا الواجهة الإدارية</a></p>
     </div>
     <div class="col-md-4">
@@ -90,7 +90,7 @@
   <div dir="auto" class="row cf">
     <div class="col-md-4 button-list">
 
-      <a class="btn btn-lg btn-block btn-primary" href="/whatsyunohost">ما هو واي يونوهوست</a>
+      <a class="btn btn-lg btn-block btn-primary" href="/whatsyunohost">ما هو YunoHost</a>
       <a class="btn btn-lg btn-block btn-info" href="/docs">الدليل</a>
       <a class="btn btn-lg btn-block btn-success" href="/contribute">كيف يمكنكم المساهمة</a>
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org" target="_blank">المنتدى</a>
@@ -100,7 +100,7 @@
 
     </div>
     <div class="col-md-7 text-right">
-      <h1>إكتشفوا <small>قدرات خادمكم، ولماذا ذلك مهم بالنسبة لكم</small></h1>
+      <h1>إكتشفوا <small>قدرات خادمكم، ولماذا يهمكم الأمر</small></h1>
       <p><br /><a href="/docs">إطلعوا على الدليل</a></p>
     </div>
   </div>
@@ -108,9 +108,10 @@
   <hr />
 
   <div dir="auto" class="text-center">
-    <h1>تذكروا ! نحن بشر !<br /><small> إن كان عندكم ساؤل أو واجهتكم مشكلة أو يهمكم الأمر لقد، انضموا إلينا عبر عرفة المحادثة الخاصة بنا لتبليغنا السلام بالنقر على الزر أدناه &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+    <h1>تذكروا ! نحن بشر !<br /><small> إن كان عندكم تساؤل أو واجهتكم مشكلة أو ربما يهمُّكُم المشروع فقط، انضموا إلينا عبر غرفة المحادثة الخاصة بنا لتبليغنا التحية بالنقر على الزر أدناه &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+
 <!--
-    <p class="liberapay">
+<p class="liberapay">
       <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Donation button" title="Liberapay" /></a>
     </p>
 -->
