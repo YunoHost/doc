@@ -26,9 +26,9 @@
                * [Burn or copy iso](/burn_or_copy_iso)
                * [Boot and graphical install](/boot_and_graphical_install)
                * [Copy YunoHost image on SD card](/copy_image)
-               * [Manual instalation](/install_manually)
+               * [Manual installation](/install_manually)
                * [Plug and boot your server](/plug_and_boot)
-               * [Post-instalation](/postinstall)
+               * [Post-installation](/postinstall)
         * Access to YunoHost server: DNS, domain name, `hosts` file
            * [Diagnostic the access to YunoHost server](/diagnostic)
            * [DNS Settings](/dns)
