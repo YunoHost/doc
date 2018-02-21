@@ -45,6 +45,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Ethersheet](https://github.com/ethersheet-collective/EtherSheet)
 - [Fail2web](https://github.com/Sean-Der/fail2web)
 - [Ferment](https://github.com/mmckegg/ferment)
+- [FileRun](https://filerun.com)
 - [FileTea](https://filetea.me)
 - [FoOlSlide](http://foolcode.github.io/FoOlSlide/) Open source comicbook/manga management software
 - [Fossil](http://www.fossil-scm.org)
