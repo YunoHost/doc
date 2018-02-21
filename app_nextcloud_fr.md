@@ -1,11 +1,11 @@
-# Migrer les données
+# Migrer les données de Nextcloud
+
+**Remarque** : ce qui suit suppose que vous avez un disque dur monté sur `/media/stockage`. Remplacez `nextcloud` par le nom de son instance, si vous avez plusieurs apps Nextcloud installées.
 
 Commencez par éteindre le serveur web avec la commande:
 ```
     systemctl stop nginx  
 ```
-
-**Remarque** : dans les commandes qui suivent, remplacez `nextcloud` par le nom de son instance, si vous avez plusieurs apps Nextcloud installées.
 
 ## Choix de l'emplacement
 

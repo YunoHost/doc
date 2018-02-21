@@ -22,7 +22,7 @@ Vous devez également disposer d'un disque dur supplémentaire (branché en usb 
 
 2. [Monter un disque dur avec `/etc/fstab`](/external_storage_2_mount_fr)
 
-3. [Migrer les données et modifier la configuration de Nextcloud](external_storage_3_migrate_fr)
+3. [Migrer les données et modifier la configuration de Nextcloud](/app_nextcloud_fr)
 
 **Sources**
 

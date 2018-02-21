@@ -55,4 +55,4 @@ Terminez en redémarrant votre système.
     reboot now
 ```
 
-La suite du tutoriel : [migrer les données de Nextcloud](/external_storage_3_migrate_fr).
+La suite du tutoriel : [migrer les données de Nextcloud](/app_nextcloud_fr).
