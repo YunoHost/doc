@@ -24,7 +24,7 @@ Vous devez également disposer d'un disque dur supplémentaire (branché en usb 
 
 3. [Migrer les données et modifier la configuration de Nextcloud](external_storage_3_migrate_fr)
 
-** Sources **
+**Sources**
 
 [https://soozx.fr/deplacer-repertoire-donnees-data-nextcloud-sur-disque-externe/](https://soozx.fr/deplacer-repertoire-donnees-data-nextcloud-sur-disque-externe/)
 
