@@ -1,6 +1,8 @@
 # Migrer les données de Nextcloud
 
-**Remarque** : ce qui suit suppose que vous avez un disque dur monté sur `/media/stockage`. Remplacez `nextcloud` par le nom de son instance, si vous avez plusieurs apps Nextcloud installées.
+**Remarque** : Ce qui suit suppose que vous avez un disque dur monté sur `/media/stockage`. Référez-vous à [cet article](/external_storage_0_intro_fr) pour préparer votre système.
+
+**Remarque** : Remplacez `nextcloud` par le nom de son instance, si vous avez plusieurs apps Nextcloud installées.
 
 Commencez par éteindre le serveur web avec la commande:
 ```
