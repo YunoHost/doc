@@ -1,30 +1,89 @@
-# Nextcloud
+# Migrer les données de Nextcloud
 
-### Utiliser un autre support mémoire
+**Remarque** : Ce qui suit suppose que vous avez un disque dur monté sur `/media/stockage`. Référez-vous à [cet article](/external_storage_0_intro_fr) pour préparer votre système.
 
-**Prérequis :** connaître les commandes d’administration Unix.
+**Remarque** : Remplacez `nextcloud` par le nom de son instance, si vous avez plusieurs apps Nextcloud installées.
 
-**Remarque :** remplacez `nextcloud` par le nom de son instance si vous avez plusieurs apps Nextcloud installées.
-
-Le répertoire des donnés de Nextcloud (contenant les fichiers) sont dans `/home/yunohost.app/nextcloud/data`
-
-Si le nouvel emplacement est sur un support mémoire, il faut qu'il soit automatiquement monté au démarrage de YunoHost. Vous pouvez utiliser le fichier `/etc/fstab` par exemple.
-
-Si le nouvel emplacement est vierge, vous pouvez déplacer l'ancien dossier vers le nouveau :
-```bash
-mv /home/yunohost.app/nextcloud/data /le/chemin
+Commencez par éteindre le serveur web avec la commande:
+```
+    systemctl stop nginx  
 ```
 
-Si le nouvel emplacement contient déjà des données d'une ancienne instance Owncloud/Nextcloud, privilégiez un `cp -ir` au lieu du `mv` pour copier les données et choisir quoi faire en cas de conflit de fichier.
+## Choix de l'emplacement
 
-Assurez-vous de donner les droits à Nextcloud sur ce répertoire :
-```bash
-chown -R nextcloud /le/chemin
+### Cas A : Stockage vierge, exclusif à Nextcloud
+
+Pour l'instant seul root peut y écrire dans `/media/stockage`; ce qui signifie que nginx et nextcloud ne pourront donc pas l'utiliser.
+
+```
+    chown -R nextcloud:www-data /media/stockage
+    chmod 775 -R /media/stockage
 ```
 
-Il faut ensuite spécifier le nouveau chemin dans le fichier `/var/www/nextcloud/config/config.php` à la ligne `datadirectory`
+### Cas B : Stockage partagé, données déjà présentes, données Nextcloud dans un sous-dossier
 
-Enfin, vous pouvez forcer le scan de ce nouvel emplacement par Nextcloud, si vous avez ajouté de nouveaux fichiers.
+Si vous souhaitez utiliser ce disque pour d'autres applications, vous pouvez créer un sous-dossier appartenant Nextcloud.
+
 ```
-sudo -u nextcloud php /var/www/nextcloud/occ files:scan --all
+    mkdir -p /media/stockage/nextcloud_data
+    chown -R nextcloud /media/stockage/nextcloud_data
+    chmod 775 -R /media/stockage/nextcloud_data
 ```
+
+## Migrer les données
+
+Migrez vos données vers le nouveau disque. Pour ce faire *(soyez patient, cela peut être long)* :
+
+```
+    Cas A : cp -ir /home/yunohost.app/nextcloud /media/stockage
+    Cas B : cp -ir /home/yunohost.app/nextcloud /media/stockage/nextcloud_data
+```
+
+L'option `i` permet de vous demander quoi faire en cas de conflit de fichier, notamment si vous écrasez un ancien dossier de données Owncloud ou Nextcloud.
+
+Pour vérifier que tout s'est bien passé, comparer ce qu'affichent ces deux commandes (le contenu doit être identique):
+
+```
+    ls -la /home/yunohost.app/nextcloud
+
+    Cas A : ls -al /media/stockage
+    Cas B : ls -al /media/stockage/nextcloud_data
+```
+
+## Configurer Nextcloud
+
+Pour informer Nextcloud de son nouveau répertoire, modifiez le fichier `/var/www/nextcloud/config/config.php` avec la commande:
+
+```
+    nano /var/www/nextcloud/config/config.php
+```
+
+Cherchez la ligne:
+
+```
+      'datadirectory' => '/home/yunohost.app/nextcloud/data',
+```
+
+Que vous modifiez :
+
+```
+       CAS A : 'datadirectory' => '/media/stockage',
+       CAS B : 'datadirectory' => '/media/stockage/nextcloud_data',
+```
+
+Sauvegardez avec `ctrl+x` puis `o`.
+
+Relancez le serveur web :
+
+```
+    systemctl start nginx
+```
+
+Lancez un scan du nouveau répertoire par Nextcloud:
+
+```
+    cd /var/www/nextcloud
+    sudo -u nexcloud php occ files:scan --all
+```
+
+C'est terminé. À présent testez si tout va bien, essayez de vous connecter à votre instance Nextcloud, envoyer un fichier, vérifiez sa bonne synchronisation.
