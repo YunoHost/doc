@@ -53,7 +53,7 @@ ajouter
 
 ```bash
 # mdp_fai.conf
-[smtp.orange.fr]:25  user:mdp
+[smtp.orange.fr]:25  adresseemail@chez.orange:son-mot-de-passe
 ```
 avec votre mot de passe du compte d'orange.
 
