@@ -9,12 +9,12 @@ Now that you have the ISO image of YunoHost, you have to put it on a physical me
 
 ## USB key
 
-Download <a href="http://unetbootin.sourceforge.net/" target="_blank">UnetBootin</a> for your operating system and install it.
+Download <a href="https://etcher.io/" target="_blank">Etcher</a> for your operating system and install it.
 
 
-<img src="/images/unetbootin.png">
+<img src="https://etcher.io/static/screenshot.gif">
 
-Put your USB key on, select your YunoHost ISO and click "OK"
+Put your USB key on, select your YunoHost ISO and click "Flash"
 
 
 ---
