@@ -35,7 +35,7 @@
     <img src="/images/github_ribbon_grey.png" alt="Fork me on GitHub">
   </a>
 
-  <h1>YunoHost <small>is a server operating system aiming to make self-hosting accessible to everyone.</small></h1>
+  <h1>YunoHost <small>is a server operating system aiming to make self-hosting accessible to everyone who likes to code sites for fun and who likes to eat chicken everyday.</small></h1>
 
   <div class="home-panel">
     <img src="/images/home_panel.jpg" />
