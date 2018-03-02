@@ -1,21 +1,38 @@
-# Copy ISO image
+# Flashing YunoHost ISO on a USB key or CD/DVD
 
 Now that you have the ISO image of YunoHost, you have to put it on a physical medium: **USB key** or **CD/DVD**
 
-<img src="/images/usb_key.png">
-<img src="/images/cd.jpg" width=200>
+<img src="/images/usb_key.png" width=150>
+<img src="/images/cd.jpg" width=150>
 
 ---
 
 ## USB key
 
+### With Etcher
+
 Download <a href="https://etcher.io/" target="_blank">Etcher</a> for your operating system and install it.
 
-
-<img src="https://etcher.io/static/screenshot.gif">
+<img src="/images/etcher.gif">
 
 Put your USB key on, select your YunoHost ISO and click "Flash"
 
+### With UNetbootin
+
+Download <a href="https://unetbootin.github.io/">UNetbootin</a> for your operating system and install it.
+
+<img src="/images/unetbootin.png">
+
+Put your USB key on, select your YunoHost ISO and click "OK"
+
+### With `dd`
+
+If you know your way around command line, you may also flash your USB key with
+`dd`. Assuming your USB key is `/dev/sdb` (be careful !!), you may run :
+
+```bash
+dd if=/path/to/yunohost.iso of=/dev/sdb
+```
 
 ---
 
