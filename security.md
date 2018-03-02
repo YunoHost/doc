@@ -41,7 +41,9 @@ PasswordAuthentication no
 ```
 
 Save and restart SSH daemon.
-
+```bash
+/etc/init.d/ssh restart
+```
 ---
 
 ### Modify SSH port
@@ -52,13 +54,17 @@ To prevent SSH connection attempts by robots that scan the Internet for any atte
 
 ```bash
 nano /etc/ssh/sshd_config
-
-# Search line "Port" and remplace port number (by default 22) by another not used number
+```
+**Search line "Port" and remplace port number (by default 22) by another not used number
+```bash
+# What ports, IPs and protocols we listen for
 Port 22 # to replace by 9777 for example
 ```
 
-Save and restart SSH daemon.
-
+Save and restart SSH daemon. Switch over to the new port by restarting SSH.
+```bash
+/etc/init.d/ssh restart
+```
 Then restart the iptables firewall and close the old port in iptables.
 
 ```bash
@@ -106,7 +112,9 @@ AllowUsers user_name
 Only users listed in the AllowUsers directive will then be allowed to connect via SSH, which excludes the admin user.
 
 Save and restart SSH daemon.
-
+```bash
+/etc/init.d/ssh restart
+```
 ---
 
 ### Disable YunoHost API
