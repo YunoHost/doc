@@ -18,7 +18,7 @@
   </div>
 
   <div dir="auto" class="main-links hidden-xs">
-    <a href="/whatsyunohost">عن واي يونوهوست</a> <span class="colored-bar">•</span> 
+    <a href="/whatsyunohost_ar">عن واي يونوهوست</a> <span class="colored-bar">•</span> 
     <a href="https://forum.yunohost.org/c/announcement" target="_blank">آخر المستجدات</a> <span class="colored-bar">•</span> 
     <a href="/docs_ar">المستندات</a>
   </div>
@@ -38,8 +38,8 @@
   </div>
 
   <div dir="auto" class="call-to-action">
-    <a class="btn btn-primary btn-lg" href="/try">تجريب</a>
-    <a class="btn btn-success btn-lg" href="/install">تنصيب</a>
+    <a class="btn btn-primary btn-lg" href="/try_ar">تجريب</a>
+    <a class="btn btn-success btn-lg" href="/install_ar">تنصيب</a>
     <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-2-7-stable-release-eben-moglen-sortie-de-yunohost-2-7-stable-eben-moglen/3376">YunoHost v2.7</a></small></p>
   </div>
 
@@ -76,7 +76,7 @@
   <div dir="auto" class="row cf">
     <div class="col-md-7">
       <h1>أديروا <small>السيرفر الخاص بكم كما يحلو لكم : سواءا عبر الويب أو أجهزتكم المحمولة أو عبر سطر الأوامر</small></h1>
-      <p><br /><a href="/try">جربوا الواجهة الإدارية</a></p>
+      <p><br /><a href="/try_ar">جربوا الواجهة الإدارية</a></p>
     </div>
     <div class="col-md-4">
       <div class="feature-pic">
@@ -90,7 +90,7 @@
   <div dir="auto" class="row cf">
     <div class="col-md-4 button-list">
 
-      <a class="btn btn-lg btn-block btn-primary" href="/whatsyunohost">ما هو YunoHost</a>
+      <a class="btn btn-lg btn-block btn-primary" href="/whatsyunohost_ar">ما هو YunoHost</a>
       <a class="btn btn-lg btn-block btn-info" href="/docs_ar">الدليل</a>
       <a class="btn btn-lg btn-block btn-success" href="/contribute">كيف يمكنكم المساهمة</a>
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org" target="_blank">المنتدى</a>
