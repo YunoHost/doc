@@ -1,6 +1,6 @@
 # Flasher l'ISO YunoHost sur une clef USB ou un CD/DVD
 
-Maintenant que vous avez téléchargé l’image ISO de YunoHost, vous devez la mettre sur un support physique : une **Clé USB** ou un **CD/DVD**
+Maintenant que vous avez téléchargé l’image ISO de YunoHost, vous devez la mettre sur un support physique : une **Clé USB** ou un **CD/DVD**.
 
 <img src="/images/usb_key.png" width=150>
 <img src="/images/cd.jpg" width=150>
