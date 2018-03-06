@@ -15,7 +15,7 @@ XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
 
 - **Utilisez [ynh-dev](https://github.com/YunoHost/ynh-dev)** (voir le README)
   pour mettre en place un environnement de développement - en local sur une
-  machine virtuel, ou bien sur un VPS.
+  machine virtuelle, ou bien sur un VPS.
   Ceci installera une instance fonctionelle de YunoHost, en utilisant
   directement les dépôts git à l'aide de liens symboliques. De cette façon, il
   vous sera possible de modifier les fichiers, de tester les changements en
