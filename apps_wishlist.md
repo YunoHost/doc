@@ -53,6 +53,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Framaslides](https://framagit.org/framasoft/framaslides/)
 - [Geneweb](https://geneweb.tuxfamily.org)
 - [GetSimple CMS](http://get-simple.info)
+- [Ghost](https://github.com/TryGhost/Ghost)
 - [Git-annex](http://git-annex.branchable.com)
 - [Gitit](https://github.com/jgm/gitit)
 - [Goaccess](https://goaccess.io) Web log analyser (replaces piwik without js tracking scripts)
