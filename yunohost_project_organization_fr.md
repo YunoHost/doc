@@ -190,7 +190,7 @@ Dans ce cas, l'auteur annonce sur le fil de discussion de la PR qu'il souhaite e
 
 - Conseil : Bram, ju, ljf, Maniack, Moul, opi, theodore.
 - Core Dev : AlexAubin, Bram, JimboJoe, Ju, ljf, Moul, opi
-- Apps : Bram, cyp, frju365, JimboJoe, Ju, ljf, Maniack C, Maxime, Moul, Scith, Tostaki
+- Apps : Bram, cyp, frju365, JimboJoe, Josue-T, Ju, ljf, Maniack C, Maxime, Moul, Scith, Tostaki
 - Infra : Bram, Ju, Maniack C, Moul, opi
 - Communication
   - Com : Bram, Moul, korbak, ljf, opi
