@@ -8,6 +8,8 @@ If you want the network configuration to be set up automatically, you have to pl
  
 The wireless connections are not supported yet, and if you use intermediate routers, the network ports opening will not be automatic: Your server will not be accessible externally.
 
+NB: a successful install has been done with the stable Yunohost image for amd64 2.7.10 on 2018-03-13, you may want to give it a try. The network worked as for a normal Debian image, so basically select WiFi -> input password -> go on with the automatic install.
+
 
 ## <small>2.</small> Boot on CD / USB key
 
