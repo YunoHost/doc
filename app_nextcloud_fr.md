@@ -96,19 +96,19 @@ Mais il arrive parfois que Nextcloud ne laisse pas l'application prendre en char
 
 Ce rendre dans le répertoire de configuration de Nextcloud :
 
-```
-    cd /var/www/nextcloud/config/
+```bash
+cd /var/www/nextcloud/config/
 ```
 
 S'il n'existe pas, créer le fichier *mimetypemapping.json* dont le propriétaire est l'utilisateur *nextcloud* :
 
-```
-    sudo su nextcloud -c "nano mimetypemapping.json"
+```bash
+sudo su nextcloud -c "nano mimetypemapping.json"
 ```
 
 Puis ajouter dans ce fichier le texte suivent :
 
-```
+```bash
 {
     "kdbx": ["x-application/kdbx"]
 }
