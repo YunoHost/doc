@@ -1,4 +1,6 @@
-<div class="teasing-part">                                                                      
+<div class="teasing-part">     
+Ghozt is so good..
+                                                                 
 
   <div class="home-logo">
     <img src="/images/ynh_logo_white.png" width="100"/>
