@@ -38,7 +38,7 @@ It can thus be considered as a distribution, including the following software:
 * [Postfix](http://www.postfix.org/): an SMTP e-mail server
 * [Dovecot](http://www.dovecot.org/): an IMAP and a POP3 e-mail server
 * [Rspamd](https://rspamd.com/): an e-mail spam filtering
-* [Metronome](http://www.lightwitch.org/metronome): an XMPP server
+* [Metronome](https://metronome.im/): an XMPP server
 * [OpenLDAP](http://www.openldap.org/): an LDAP server
 * [Dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html): a DNS server
 * [SSOwat](https://github.com/Kloadut/SSOwat): a Single Sign On (SSO) web authentication system
