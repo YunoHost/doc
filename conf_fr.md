@@ -1,6 +1,6 @@
 # Conférences
 
-* [Capitole du libre 2017 - JimboeJoe](https://2017.capitoledulibre.org/programme/#yunohost-vers-lauto-hebergement-et-au-dela)
+* [Capitole du libre 2017 - YunoHost : vers l'auto-hébergement et au-delà - JimboJoe](https://2017.capitoledulibre.org/programme/#yunohost-vers-lauto-hebergement-et-au-dela)
 * [PSES 2017 – Construire l’Internet du Futur avec YunoHost – Aleks, ljf](https://data.passageenseine.org/2017/aleks-ljf_internet-futur-yunohost.webm) ([slides](https://data.passageenseine.org/2017/aleks-ljf_internet-futur-yunohost.pdf))
 * [Université de technologie de compiègne 2017 – Agir pour un internet éthique – LJF](http://webtv.utc.fr/watch_video.php?v=O34AA7RBR1AH)
 * [FOSDEM 2017 – Internet Cube – kload](https://archive.fosdem.org/2017/schedule/event/internet_cube/)
