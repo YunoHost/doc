@@ -46,7 +46,7 @@ You can also redirect ports manually to your server's local IP address on the ro
 
 ---
 
-### <small>4.</small> Do your router has hairpinning ?
+### <small>4.</small> Does your router have hairpinning ?
 
 If the server is accessible from outside your local network, but unreachable with its domain name on the local network, then your router probably lacks <a href="https://en.wikipedia.org/wiki/Hairpinning" target="_blank">hairpinning</a>.
 
