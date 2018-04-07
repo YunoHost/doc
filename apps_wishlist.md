@@ -128,6 +128,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Pump.io](http://pump.io)
 - [qBittorrent](https://github.com/qbittorrent/qBittorrent)
 - [racktables](http://racktables.org)
+- [Redmine](https://www.redmine.org)
 - [remotestorage-server](https://remotestorage.io/)
 - [Request Tracker](https://bestpractical.com)
 - [Respawn 2.0](https://github.com/broncowdd/respawn) ( /!\ last update: 2015)
