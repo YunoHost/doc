@@ -132,6 +132,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Request Tracker](https://bestpractical.com)
 - [Respawn 2.0](https://github.com/broncowdd/respawn) ( /!\ last update: 2015)
 - [Restya](http://restya.com)
+- [SABnzbd](https://sabnzbd.org)
 - [Scramble, Browser-based PGP web mail](https://github.com/dcposch/scramble)
 - [Scribbleton](https://scribbleton.com)
 - [ShareLatex](https://www.sharelatex.com)
