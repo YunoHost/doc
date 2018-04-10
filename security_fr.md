@@ -1,5 +1,5 @@
 
-# Securité
+# Sécurité
 
 YunoHost a été développé dans l’optique de fournir une sécurité maximale tout en restant accessible et facilement installable.
 
@@ -13,7 +13,7 @@ Deux points sont néanmoins importants à noter :
 
 *Si vous avez besoin de conseil, n’hésitez pas à [nous demander](/help_fr).*
 
-*Pour discuter d'une faille de securité, contactez l'[équipe securité de YunoHost](/security_team_fr).*
+*Pour discuter d'une faille de sécurité, contactez l'[équipe sécurité de YunoHost](/security_team_fr).*
 
 ---
 

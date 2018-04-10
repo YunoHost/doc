@@ -1,6 +1,6 @@
 #<img src="/images/limesurvey.png">LimeSurvey
 
-LimeSurvey est un outil de création et diffusion de sondage/formulaire en ligne..
+LimeSurvey est un outil de création et diffusion de sondage/formulaire en ligne.
 
 ### Comment créer un questionnaire
 Pour créer un questionnaire, il faut accéder à l'interface d'administration.

@@ -6,7 +6,7 @@ La configuration des DNS est une étape cruciale pour que votre serveur soit acc
 
 ### Qu’est-ce que c’est ?
 
-**N’hésitez à pas regarder la très bonne conférence de Stéphane Bortzmeyer :     
+**N’hésitez pas à regarder la très bonne conférence de Stéphane Bortzmeyer :     
 http://www.iletaitunefoisinternet.fr/dns-bortzmeyer/**
 
 DNS signifie « Domain Name Server » en anglais, et est souvent employé pour désigner la configuration de vos noms de domaine. Vos noms de domaines doivent en effet pointer vers quelque chose (en général une adresse IP).

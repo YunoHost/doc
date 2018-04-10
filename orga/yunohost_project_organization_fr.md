@@ -81,7 +81,7 @@ Le choix d'un outil de communication est laissé à chaque groupe en fonction de
 
 #### Définition et constitution du Conseil
 
-YunoHost grandissant, il est important de maintenir une cohérence entre tous les groupes, néanmoins il est impossible d'imposer à chacun des membres des groupes de s'intéresser ou de s'impliquer sur tous les aspects du projet (pour des raisons de temps et de compétences). Pour pallier à cela, il est proposé de créer un meta-groupe, où chaque groupe sera représenté par au moins un de ses membres : le Conseil.
+YunoHost grandissant, il est important de maintenir une cohérence entre tous les groupes, néanmoins il est impossible d'imposer à chacun des membres des groupes de s'intéresser ou de s'impliquer sur tous les aspects du projet (pour des raisons de temps et de compétences). Pour pallier à cela, il est proposé de créer un méta-groupe, où chaque groupe sera représenté par au moins un de ses membres : le Conseil.
 Le Conseil est indépendant des groupes et réunit les contributeurs souhaitant s'impliquer le plus dans le projet, son rôle est de :
 
 - prendre les décisions importantes sur YunoHost qui ne dépendent pas d'un seul groupe (par exemple changer le moteur du wiki)
@@ -104,7 +104,7 @@ Si un consensus sur une décision à prendre n'est pas trouvée au sein d'un gro
 #### Le processus de prise de décision en détail
 
 ##### 1) Initiation d'une décision à prendre
- - peut-être initiée par n'importe qui suivant les mediums définis au sein de chacun des groupes (exemple : ouvrir une PR déclenche automatiquement ce processus)
+ - peut-être initiée par n'importe qui suivant les médiums définis au sein de chacun des groupes (exemple : ouvrir une PR déclenche automatiquement ce processus)
  - forcément publique à l'exception de situations bien définies (bug relatif à la sécurité critique ou vote sur les personnes)
   - une date de clôture est automatiquement définie par type de proposition. La définition de la date remplie plusieurs fonctions :
     - pouvoir laisser le temps à tout le monde de s'exprimer et ne pas prendre la décision trop vite
@@ -322,4 +322,4 @@ Cette partie liste les kits de droits d’administration pour les différents gr
 - Listes de diffusion : [contrib](https://list.yunohost.org/cgi-bin/mailman/listinfo/contrib) et [apps](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps)
 - [Bugtracker Redmine](https://dev.yunohost.org).
 - Forge git pour la review de code : [YunoHost](https://github.com/YunoHost) [YunoHost-Apps](https://github.com/YunoHost-Apps).
-- [Salons discussions XMPP](https://yunohost.org/#/chat_rooms_fr)
+- [Salons de discussions XMPP](https://yunohost.org/#/chat_rooms_fr)

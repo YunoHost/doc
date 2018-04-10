@@ -61,7 +61,7 @@ Installez le certificat Let's Encrypt via
 yunohost domain cert-install votre.domaine.tld
 ```
 
-Cette commande doit retouner :
+Cette commande doit retourner :
 
 ```bash
 Success! The SSOwat configuration has been generated
@@ -89,6 +89,6 @@ avez bien vérifié votre configuration DNS et avez bien accès à votre serveur
 HTTP depuis l'extérieur, vous pouvez tenter :
 
 - d'ajouter une ligne `127.0.0.1 votre.domaine.tld` au fichier `/etc/hosts` sur votre serveur ;
-- si l'installation ne fonctionne toujours pas, désactiver les vérifications en ajouter `--no-checks` à la commande `cert-install`.
+- si l'installation ne fonctionne toujours pas, désactiver les vérifications en ajoutant `--no-checks` à la commande `cert-install`.
 
 

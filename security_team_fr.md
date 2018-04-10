@@ -1,6 +1,6 @@
-# Équipe securité
+# Équipe sécurité
 
-Contactez l'équipe securité par email : `security@yunohost.org`.
+Contactez l'équipe sécurité par email : `security@yunohost.org`.
 
 Nous vous recommandons fortement de chiffrer votre mail avec GPG. Notre clé
 publique est disponible sur les serveurs de clés. L'empreinte est ci-dessous :

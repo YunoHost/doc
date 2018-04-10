@@ -44,7 +44,7 @@ sed -i "s@YNH_EXAMPLE_PATH@$path@g" ../conf/nginx.conf
 sed -i "s@YNH_EXAMPLE_PORT@$port@g" ../conf/nginx.conf
 sed -i "s@YNH_EXEMPLE_DOMAIN@$domain@g" ../conf/nginx.conf
 ```
-Il faut ensuite déplacer ce fichier de configuration dans la configuration de Nginx, puis de recharger la configuration de Nginx :
+Il faut ensuite déplacer ce fichier de configuration dans la configuration de Nginx, puis recharger la configuration de Nginx :
 ```bash
 cp ../conf/nginx.conf /etc/nginx/conf.d/$domain.d/$app.conf
 sudo service nginx reload

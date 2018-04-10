@@ -32,7 +32,7 @@ XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
 
 - Allez dans `/vagrant/yunohost/`.
 
-- Executez `/vagrant/ynh-dev use-git yunohost`.
+- Exécutez `/vagrant/ynh-dev use-git yunohost`.
 
 - Le fichier actionsmap (`data/actionsmap/yunohost.yml`) définit les différentes
   catégories, actions et arguments de la ligne de commande YunoHost. Choisissez
@@ -89,7 +89,7 @@ XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
 
 - `js/yunohost/controllers` contiens les parties javascript, et définit quelles
   requêtes faire à l'API pendant le chargement d'une page donnée de l'interface,
-  et comment traîter les données récupérées pour générer la page, en utilisant
+  et comment traiter les données récupérées pour générer la page, en utilisant
   des templates.
 
 - `views` contient les templates des pages de l'interface. Dans le template,

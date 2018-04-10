@@ -4,7 +4,7 @@
 
 Tout d’abord, aussi bien au niveau des dépôts que des paquets YunoHost, il faut savoir qu’il y a trois *composants* (`unstable`, `testing` et `stable`) :
 
-* `unstable` correspondent à la dernière version du dépôt git sur la branche `unstable`, et sont reconstruits de façon automatisée toutes les nuits s’il y a eu une modification sur la cette branche.
+* `unstable` correspond à la dernière version du dépôt git sur la branche `unstable`, et est reconstruit de façon automatisée toutes les nuits s’il y a eu une modification sur cette branche.
 
 * `testing` permet de mettre en place une nouvelle version d’un paquet qui sera ensuite testée.
 

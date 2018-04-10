@@ -32,7 +32,7 @@ cd /tmp/
 # Télécharger l'image
 wget https://repo.labriqueinter.net/labriqueinternet_A20LIME_latest_jessie.img.tar.xz
 
-# Verifier l'intégrite (optionel, mais recommandé)
+# Vérifier l'intégrité (optionel, mais recommandé)
 wget -q -O - https://repo.labriqueinter.net/MD5SUMS | grep "labriqueinternet_A20LIME_latest_jessie.img.tar.xz$" > MD5SUMS
 md5sum -c MD5SUMS
 
@@ -71,7 +71,7 @@ Récupérer l’adresse IP locale :
  * soit en branchant un écran en HDMI au mini-serveur, et en exécutant `ifconfig`.
 
 <div class="alert alert-info" markdown="1">
-Pour les commandes suivantes, nous utiliser **192.168.x.y** pour désigner l'IP du serveur. Remplacez-la par l’adresse IP déterminée précédemment.
+Pour les commandes suivantes, nous allons utiliser **192.168.x.y** pour désigner l'IP du serveur. Remplacez-la par l’adresse IP déterminée précédemment.
 </div>
 
 ## Changer le mot de passe root en se connectant en SSH
@@ -93,7 +93,7 @@ apt-get update && apt-get dist-upgrade
 
 Procéder à la [postinstallation](/postinstall_fr) en se connectant à la carte avec votre navigateur web sur https://192.168.x.y (votre navigateur vous avertira que le certificat est auto-signé, ceci est normal : vous pouvez ajouter une exception de sécurité pour ce certificat).
 <div class="alert alert-info" markdown="1">
-**Note :** il est également possible de réaliser la post-installation ligne de commande via SSH en exécutant `yunohost tools postinstall`.
+**Note :** il est également possible de réaliser la post-installation en ligne de commande via SSH en exécutant `yunohost tools postinstall`.
 </div>
 
 ## (Optionel) Installer DoctorCube

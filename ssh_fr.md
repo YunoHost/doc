@@ -58,7 +58,7 @@ ssh -p 2244 admin@votre.domaine.tld
 
 Par défaut, seulement les utilisateurs admin et root peuvent se logger en SSH sur une instance Yunohost.
 
-Les utilisateurs YunoHost créé via l'interface d'administration sont géré par la base de donnée LDAP. Par défaut, ils ne peuvent pas se connecter en SSH pour des raisons de sécurité. Si vous avez absolument besoin qu'un utilisateur dispose d'un accès SSH, vous pouvez utiliser [cette manipulation](https://forum.yunohost.org/t/ssh-disconnects-after-successful-login/256/10).
+Les utilisateurs YunoHost créés via l'interface d'administration sont géré par la base de donnée LDAP. Par défaut, ils ne peuvent pas se connecter en SSH pour des raisons de sécurité. Si vous avez absolument besoin qu'un utilisateur dispose d'un accès SSH, vous pouvez utiliser [cette manipulation](https://forum.yunohost.org/t/ssh-disconnects-after-successful-login/256/10).
 
 ## SSH et sécurité
 

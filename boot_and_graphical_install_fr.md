@@ -15,7 +15,7 @@ Démarrez votre serveur avec la clé USB ou le CD-ROM inséré, et sélectionnez
 
 ## <small>3.</small> Lancer l’installation graphique
 
-Vous devriez voit un écran comme ça :
+Vous devriez voir un écran comme ça :
 
 <img src="/images/virtualbox_3.png">
 

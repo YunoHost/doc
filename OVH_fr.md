@@ -2,7 +2,7 @@
 
 Nous allons voir comment configurer le DNS avec [OVH](http://www.ovh.com).
 
-Après achat de votre nom de domaine, rendez vous dans l'espace client pour retrouver la panneau de configuration d'OVH, et cliquez sur votre domaine à gauche:
+Après achat de votre nom de domaine, rendez vous dans l'espace client pour retrouver le panneau de configuration d'OVH, et cliquez sur votre domaine à gauche:
 
 <img src="/images/ovh_control_panel.png" width=800>
 
@@ -17,7 +17,7 @@ Il suffit maintenant d'ajouter les redirections DNS comme indiqué dans la [conf
 
 [Tutoriel plus général sur l’IP dynamique](dns_dynamicip_fr).
 
-Cette partie est à suivre que si votre IP est dynamique.
+Cette partie est à suivre, que si votre IP est dynamique.
 
 Pour savoir si votre fournisseur d’accès internet vous fournit une IP dynamique [voir ici](/isp_fr).
 

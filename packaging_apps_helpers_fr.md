@@ -178,7 +178,7 @@ Les patterns utilisant des regex, contrairement aux précédents, sont recherch�
 ```bash
 ynh_app_setting_get APP KEY
 ```
-> Récupère le paramètre `KEY` stocké précémment pour l'application `APP`.  
+> Récupère le paramètre `KEY` stocké précédemment pour l'application `APP`.  
 > Par exemple :
 > ```bash
 > is_public=$(ynh_app_setting_get nom_app is_public)
@@ -403,7 +403,7 @@ ynh_normalize_url_path PATH
 ```bash
 ynh_webpath_available DOMAIN PATH
 ```
-> Vérifie la disponiblité du path demandé.  
+> Vérifie la disponibilité du path demandé.  
 > **Nécessite YunoHost version 2.6.4**
 
 

@@ -1,6 +1,6 @@
 # Créer un environnement de développement avec VirtualBox
 
-Ce page de documentation va vous expliquer comment mettre en place un serveur YunoHost virtuel, avec VirtualBox, pour travailler sur le packaging d'application.
+Cette page de documentation va vous expliquer comment mettre en place un serveur YunoHost virtuel, avec VirtualBox, pour travailler sur le packaging d'application.
 
 ## Pourquoi utiliser VirtualBox plutôt qu’un serveur YunoHost de production pour packager une application ?
 
@@ -42,7 +42,7 @@ Arrêtez la machine virtuelle avant tout.
 La gestion des instantanés se fait dans l'onglet "Instantanés"  
 <img src="/images/virtualbox_packaging1.jpg" width=80%>
 
-Et on créer un premier instantané  
+Et on cré un premier instantané  
 <img src="/images/virtualbox_packaging2.jpg" width=30%>
 
 À présent on peut commencer à travailler sur la machine virtuelle et créer autant d'instantanés que souhaité pour jalonner le travail.
