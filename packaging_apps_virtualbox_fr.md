@@ -42,7 +42,7 @@ Arrêtez la machine virtuelle avant tout.
 La gestion des instantanés se fait dans l'onglet "Instantanés"  
 <img src="/images/virtualbox_packaging1.jpg" width=80%>
 
-Et on créé un premier instantané  
+Et on crée un premier instantané  
 <img src="/images/virtualbox_packaging2.jpg" width=30%>
 
 À présent on peut commencer à travailler sur la machine virtuelle et créer autant d'instantanés que souhaité pour jalonner le travail.
