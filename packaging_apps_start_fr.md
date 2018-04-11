@@ -30,7 +30,7 @@ Le script install va se charger d'installer l'application, en prenant en compte 
 
 Si par la suite l'utilisateur souhaite supprimer l'application, YunoHost utilisera le script remove du dossier script, qui se chargera à la place de l'utilisateur de supprimer l'application, ses dossiers et tout ses fichiers de configuration.
 
-### Qu'il y a-t-il dans ces scripts pour que tout soit si simple pour l'utilisateur ?
+### Qu'y a-t-il dans ces scripts pour que tout soit si simple pour l'utilisateur ?
 
 Les scripts d'un package d'application sont simplement des commandes bash les unes à la suite des autres.
 

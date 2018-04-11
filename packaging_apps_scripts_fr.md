@@ -14,7 +14,7 @@ Il est possible d'utiliser des helpers et d'importer une librairie de fonction p
 
 ### Variables disponibles pour tous ces scripts
 #### YNH_CWD
-Cette variable contient le chemin du répertoire de travail courant du contexte d'execution du script. Elle peut être utile pour retrouver le chemin initial si on s'est déplacé pendant l'execution du script. Elle est utilisée par certains helpers pour être sûr d'utiliser le bon.
+Cette variable contient le chemin du répertoire de travail courant du contexte d'exécution du script. Elle peut être utile pour retrouver le chemin initial si on s'est déplacé pendant l'exécution du script. Elle est utilisée par certains helpers pour être sûr d'utiliser le bon.
 
 #### YNH_APP_ID
 Contient l'identifiant de l'application sans le numéro d'instance
@@ -25,13 +25,13 @@ Contient le nom d'instance qui sera utilisé dans de nombreuses situation pour p
 
 Exemple: strut__3
 #### YNH_APP_INSTANCE_NUMBER
-Contient le numero de l'instance. Attention il ne s'agit pas forcément du nombre d'instance toujours installée, car une ancienne application peut avoir été désinstallée.
+Contient le numéro de l'instance. Attention il ne s'agit pas forcément du nombre d'instance toujours installée, car une ancienne application peut avoir été désinstallée.
 
 Exemple: 3
 
 ### Variables spécifiques pour `install`
 #### YNH_APP_ARG_XXXXXXX
-Pour chaque question posée dans lors de l'installation une variable d'environnement est disponible.
+Pour chaque question posée lors de l'installation, une variable d'environnement est disponible.
 
 Par exemple, si dans le manifest nous avons une question de cette forme
 ```

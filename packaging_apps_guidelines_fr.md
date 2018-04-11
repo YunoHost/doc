@@ -108,7 +108,7 @@ Il est conseillé dès le début du packaging d'inscrire une app sur un des dép
 
 Ces dépôts ont plusieurs fonctions :
 * communiquer l'existence d'un paquet ;
-* indiquer la dernière version associée au paquet (afin de permettre à la mise à jour de l'app par YunoHost) ;
+* indiquer la dernière version associée au paquet (afin de permettre la mise à jour de l'app par YunoHost) ;
 * indiquer l'état de fonctionnement du paquet ;
 * indiquer des informations sur le support d'un paquet.
 
@@ -259,7 +259,7 @@ Dans d'autres cas il est nécessaire de donner des droits à l'aide de chmod et 
 
 #### YEP 2.8
 ##### Modifier correctement une configuration système   | brouillon | manuel | WORKING |
-Les modifications du système doivent être réversible pour que la suppression de l'application soit sans conséquences pour le système ne laisse pas de résidus.  
+Les modifications du système doivent être réversible pour que la suppression de l'application soit sans conséquences pour le système, ne laisse pas de résidus.  
 Pour celà, il faut recourir autant que possible aux dossiers `.d` des configurations système. Où lorsqu'il n'est pas possible de faire autrement, d'indiquer clairement la configuration modifiée par une application et s'assurer que les modifications seront retirées lors de sa suppression.
 
 #### YEP 2.9
@@ -354,7 +354,7 @@ La source doit donc être téléchargée depuis le site officiel, puis son inté
 
 #### YEP 3.4
 ##### Isoler l'app   | brouillon | manuel | OFFICIAL |
-Afin d'éviter des effets de bords en cas de compromission éventuelle de l'application, celle-ci doit être isolée pour de ne pas risquer d'impacter les autres applications.  
+Afin d'éviter des effets de bords en cas de compromission éventuelle de l'application, celle-ci doit être isolée pour ne pas risquer d'impacter les autres applications.  
 Pour cela, il convient d'isoler l'application dans son dossier d'exécution en restreignant son environnement par un chroot, soit par un mécanisme interne à l'application lorsque c'est possible (par exemple pour un serveur ftp), soit par l'usage de phpfpm.  
 De même, pour restreindre la portée de l'utilisateur exécutant l'application, il est préférable d'utiliser un utilisateur dédiée à l'application. Dont les droits sont restreint à l'usage de l'application uniquement.  
 Toutefois, cela ne doit pas exempter d'une restriction maximale des droits sur les fichiers de l'application. Autant que possible, les fichiers doivent appartenir à root, et l'utilisateur dédié ne doit avoir de droits d'écriture que sur les fichiers le réclamant expressément.

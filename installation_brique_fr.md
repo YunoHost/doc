@@ -130,7 +130,7 @@ topology subnet</code></pre>
 </a></div>
 
 <div class="alert alert-danger" markdown="1">
-**Attention** : si vous n'installez *pas* DoctorCube votre brique ne fonctionnera pas au prochain redémarrage, en effet, il y a un bug avec le kernel 4.5 et les boards olimex qui empêche aux Briques de se connecter au réseau (et ce qui les rends donc inutilisable), DoctorCube résoud ce problème.
+**Attention** : si vous n'installez *pas* DoctorCube votre brique ne fonctionnera pas au prochain redémarrage, en effet, il y a un bug avec le kernel 4.5 et les boards olimex qui empêche les Briques de se connecter au réseau (et ce qui les rends donc inutilisable), DoctorCube résoud ce problème.
 </div>
 
 8. **Installer DoctorCube** : de la même manière que pour les précédentes applications, installez l'application DoctorCube qui fournie des configurations et des fixs spécifiques à la brique, en utilisant l'URL suivante: `https://github.com/labriqueinternet/doctorcube_ynh` L'installation de DoctorCube peut prendre de nombreuses minutes.

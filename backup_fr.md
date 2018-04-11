@@ -9,7 +9,7 @@ Lancer la sauvegarde via
 ```bash
 sudo yunohost backup create
 ```
-Un fichier portant un numéro et une extension .tar.gz est crée
+Un fichier portant un numéro et une extension .tar.gz est créé
 (exemple 1452694078.tar.gz)
 
 Cette archive contient une copie des dossiers suivants et fichiers de configurations dans les répertoires suivants

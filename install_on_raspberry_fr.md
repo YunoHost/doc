@@ -14,8 +14,8 @@ Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissan
 
 - Un Raspberry Pi 0, 1, 2 ou 3 ;
 - Une carte SD : au moins **8 Go** et **Classe 10** (par exemple une [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
-- Un adaptateur secteur pour la alimenter la carte ;
-- Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet. Avec le Raspberry Pi Zero vous pouvez connecter votre carte avec un câble OTG et un adaptateur Wifi USB.
+- Un adaptateur secteur pour alimenter la carte ;
+- Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet. Avec le Raspberry Pi 0 vous pouvez connecter votre carte avec un câble OTG et un adaptateur Wifi USB.
 
 ---
 
@@ -36,7 +36,7 @@ Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissan
 ## Installation manuelle (déconseillée)
 
 <div class="alert alert-warning" markdown="1">
-Nous déconseillons l'installation manuelle car elle plus technique et plus longue que l'installation via l'image pré-installée. Cette documentation est surtout destinée aux utilisateurs avancés.
+Nous déconseillons l'installation manuelle car elle est plus technique et plus longue que l'installation via l'image pré-installée. Cette documentation est surtout destinée aux utilisateurs avancés.
 </div>
 
 <div class="alert alert-warning" markdown="1">
@@ -50,7 +50,7 @@ Les dernières versions de Raspbian nécessitent un écran et un clavier, car il
 sudo passwd root
 ```
 
-2. Modifiez `/etc/ssh/sshd_config` pour autoriser root à se logger en ssh, en remplacant `PermitRootLogin without-password` par `PermitRootLogin yes`. Rechargez le daemon ssh avec `service ssh reload`, puis re-connectez-vous en root.
+2. Modifiez `/etc/ssh/sshd_config` pour autoriser root à se logger en ssh, en remplaçant `PermitRootLogin without-password` par `PermitRootLogin yes`. Rechargez le daemon ssh avec `service ssh reload`, puis re-connectez-vous en root.
 
 3. Déconnectez-vous et reconnectez-vous avec l'utilisateur root cette fois.
 

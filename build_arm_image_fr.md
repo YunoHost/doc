@@ -8,10 +8,10 @@ Ce tutoriel est basé sur [Yunocubian](https://github.com/M5oul/Yunocubian).
 Vous pouvez trouvez le script [ARM image builder from Debian Jessie](https://github.com/YunoHost/install_script/pull/36).
 
 
-**Toutes ces étapes peuvent être executées en utilisant des variations de [ce script](https://github.com/likeitneverwentaway/rpi_buildbot/blob/master/build_image.sh).**
+**Toutes ces étapes peuvent être exécutées en utilisant des variations de [ce script](https://github.com/likeitneverwentaway/rpi_buildbot/blob/master/build_image.sh).**
 
-### Télechargez une version minimale de Debian Jessie
-Télechargez une image Debian Jessie compatible avec la carte **sans environnement graphique** installé:
+### Téléchargez une version minimale de Debian Jessie
+Téléchargez une image Debian Jessie compatible avec la carte **sans environnement graphique** installé:
 
 * [ARMbian](http://www.armbian.com/download/) (Olimex, Cubieboard, Banana Pi…)
 * [Raspbian Jessie Lite](https://www.raspberrypi.org/downloads/raspbian/)
@@ -21,7 +21,7 @@ Télechargez une image Debian Jessie compatible avec la carte **sans environneme
 
 <a class="btn btn-lg btn-default" href="/plug_and_boot_fr">Plug & boot</a>
 
-* Connewion via [SSH](ssh): **pi@exemple.tld/ip_address** avec le mot de passe **raspberry** (ou toute autre variation pour des distros différentes de Raspbian).
+* Connexion via [SSH](ssh): **pi@exemple.tld/ip_address** avec le mot de passe **raspberry** (ou toute autre variation pour des distros différentes de Raspbian).
 * Mettez un mot de passe root :
 
 ```bash
@@ -65,10 +65,10 @@ deluser –remove-all-files pi
 ```bash
 wget https://raw.githubusercontent.com/likeitneverwentaway/rpi_buildbot/master/yunohost-firstboot -P /etc/init.d/
 
-# Droit d'execution au script
+# Droit d'exécution au script
 chmod a+x /etc/init.d/yunohost-firstboot
 
-# Execute le script au prochain boot
+# Exécute le script au prochain boot
 insserv /etc/init.d/yunohost-firstboot
 ```
 * Mise en place du script boot promtp:
@@ -108,17 +108,17 @@ sudo dd bs=1M if=/dev/sdd of=~/yunohost-jessie-board-year-month-day.img
 Vous pouvez aussi utiliser la fonction **Read** de [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/).
 
 
-### Verifer l' image
+### Vérifier l' image
 <a class="btn btn-lg btn-default" href="/copy_image_fr">Copier l'image sur la carte SD</a>
 
 <a class="btn btn-lg btn-default" href="/plug_and_boot_fr">Plug & boot</a>
 
 <a class="btn btn-lg btn-default" href="/postinstall_fr">Post-install</a>
 
-<div class="alert alert-info">Si tous va bien, vous pouvez publiez votre image.</div>
+<div class="alert alert-info">Si tout va bien, vous pouvez publiez votre image.</div>
 
 ### Publier l'image
-* Reduire la taille en zippant l'image:
+* Réduire la taille en zippant l'image:
 ```bash
 zip yunohost-jessie-board-year-month-day.img.zip yunohost-jessie-board-year-month-day.img
 ```

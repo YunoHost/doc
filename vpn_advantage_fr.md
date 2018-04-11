@@ -9,9 +9,9 @@ L'installation d'un serveur chez soi étant une pratique peu courante, la plupar
 ## Avantages
 
 ### Plug & Play
-En configurant un VPN sur votre serveur, vous serez en mesure de le rendre accessible au reste d'Internet sans avoir à modifier la configuration du routeur auxquel vous le branchez. Ce point peut être vraiment pratique si vous partez en vacances, que vous déménagez ou que vous ayez une coupure d'Internet car vous serez en mesure de le brancher facilement chez une personne de confiance sans avoir besoin de configurer le routeur de la personne qui vous aide.
+En configurant un VPN sur votre serveur, vous serez en mesure de le rendre accessible au reste d'Internet sans avoir à modifier la configuration du routeur auxquel vous le branchez. Ce point peut être vraiment pratique si vous partez en vacances, que vous déménagez ou si vous avez une coupure d'Internet, car vous serez en mesure de le brancher facilement chez une personne de confiance sans avoir besoin de configurer le routeur de la personne qui vous aide.
 
-De la même façon, vous vous économisez l'ouverture des ports de votre routeur ainsi que le coutournement du hairpinning.
+De la même façon, vous vous économisez l'ouverture des ports de votre routeur ainsi que le contournement du hairpinning.
 
 ### Pas de micro-coupure DNS
 Si votre connexion Internet n'a pas d'IP publique fixe, vous serez obligé de mettre en place un nom de domaine dynamique (Dynamique DNS). Cette solution peut être acceptable, mais la mise à jour du DNS ne se fera qu'à intervalle régulier (Toutes les deux minutes si c'est un nom de domaine en `noho.st` ou `nohost.me`). Il y a donc une chance que cela provoque de temps en temps des erreurs d'affichage dans le navigateur, voir même qu'un autre site s'affiche (les risques sont toutefois réduit car la pratique de l'auto-hébergement n'est pas répandue).
@@ -43,4 +43,4 @@ Lorsque l'on met en place un VPN sur son serveur, si on ne met pas en place de c
 
 Pour pallier à ce point, il y a deux solutions :
 - transformer son serveur en routeur et connecter les équipements de la maison à ce dernier, ces équipements bénéficieront alors de la confidentialité du VPN également.
-- utiliser le serveur YunoHost comme solveur DNS lorsque l'on est chez soi, de façon à rediriger les noms de domaines du serveur l'ip locale plutôt que l'ip publique. Cette opération peut se faire soit sur chaque équipements, soit sur le routeur (si ce dernier le permet).
+- utiliser le serveur YunoHost comme résolveur DNS lorsque l'on est chez soi, de façon à rediriger les noms de domaines du serveur l'ip locale plutôt que l'ip publique. Cette opération peut se faire soit sur chaque équipements, soit sur le routeur (si ce dernier le permet).

@@ -27,7 +27,7 @@ Un mot de passe temporaire sera créé, que vous pouvez utiliser pour ensuite d�
 
 ### Comment déplacer le dossier d’une application
 
-Pour changer le dossier contenant une application, seules quelques commandes sont nécessaires : déplacer le contenu créer un lien symbolique et définir les droits d’accès.
+Pour changer le dossier contenant une application, seules quelques commandes sont nécessaires : déplacer le contenu, créer un lien symbolique et définir les droits d’accès.
 
 Exemple avec WordPress :
 ```bash

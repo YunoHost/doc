@@ -23,7 +23,7 @@ Cette commande renvoit quelque chose de ce genre:
     /dev/sdX:UUID="cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7" TYPE="ext4" PARTUUID="34e4b02c-02"
 ```
 
-Le ligne qui concerne le disque à monter est celle qui est sous la forme de:
+La ligne qui concerne le disque à monter est celle qui est sous la forme de:
 
 ```
     /dev/sdX:UUID="cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7" TYPE="ext4" PARTUUID="34e4b02c-02"

@@ -38,7 +38,7 @@ sudo apt-get install debian-goodies
 sudo checkrestart
 Found 0 processes using old versions of upgraded files
 ```
-Si des processus fonctionnent avec des vielles versions de bibliothèques, checkrestart va vous dire et vous proposer une manière de les redémarrer. Il est possible que checkrestart ne trouve pas de manière de les redémarrer. Attention, il faut opérer l’opération manuellement.
+Si des processus fonctionnent avec des vieilles versions de bibliothèques, checkrestart va vous le dire et vous proposer une manière de les redémarrer. Il est possible que checkrestart ne trouve pas de manière de les redémarrer. Attention, il faut opérer l’opération manuellement.
 
 <img src="/images/checkstart.png" width=600>
 
@@ -74,7 +74,7 @@ Exemple de résultat :
 Tous les services doivent être activés (enabled) et en fonctionnement (running) sauf Glances (optionnel). Si certains ne le sont pas, essayez de les redémarrer. 
 Voici une petite description de leurs fonctions respectives :
 
-- **Amavis** : anti-spam/virus/malwares, utilisé quand lors de l’échange de mails.
+- **Amavis** : anti-spam/virus/malwares, utilisé lors de l’échange de mails.
 - **Avahi-daemon** : système qui facilite la découverte d’ordinateurs sur le réseau local en leur attribuant des noms.
 - **DNSmasq** : serveur DNS, vous n’êtes pas obligé de l’utiliser (Non installé par défaut)
 - **Dovecot** : serveur IMAP, utilisé pour la réception de mails.
@@ -142,7 +142,7 @@ free -m
 ```
 <img src="/images/free_m.png" width=600> 
 
-5 à 10 % de mémoire libre est acceptable, mais il est bien de disposer d’une marge (en particulier pour les mises à jour). Comme la plupart du temps, vous ne pouvez pas augmenter votre quantitité de RAM, vous avez la possibilité d’utiliser une partition de SWAP (mémoire du disque dur attribuée à la RAM).
+5 à 10 % de mémoire libre est acceptable, mais il est bien de disposer d’une marge (en particulier pour les mises à jour). Comme la plupart du temps, vous ne pouvez pas augmenter votre quantité de RAM, vous avez la possibilité d’utiliser une partition de SWAP (mémoire du disque dur attribuée à la RAM).
 Gardez à l’esprit que le SWAP est une mémoire 100 000 fois plus lente, vous devriez donc l’utiliser uniquement si vous n’avez pas d’autre choix.
 
 ##### créer un fichier de swap :
@@ -162,7 +162,7 @@ Changez 512 avec la quantité de mémoire SWAP que vous voulez.
 [Source avec plus d’explication](https://meta.discourse.org/t/create-a-swapfile-for-your-linux-server/13880).
 
 ## Espace disque
-Un des autres problèmes communs des serveurs est le manque d’espace d’espace disque.
+Un des autres problèmes communs des serveurs est le manque d’espace disque.
 Vous pouvez vérifier que votre disque n’est pas plein avec la commande :
 ```bash
 df -h
@@ -203,7 +203,7 @@ alias YNH_WWW_ALIAS ; # chemin pour accéder aux sources des fichiers aux fichie
 
 # Configuration particulière pour une application selon son langage de programmation et ses options de déploiement.
 
-# Inclure le logo SSOwat en bas à droit de la fenêtre
+# Inclure le logo SSOwat en bas à droite de la fenêtre
 include conf.d/yunohost_panel.conf.inc;
 }
 ```
@@ -227,12 +227,12 @@ Ce fichier devrait être vide avec une configuration correcte de Nginx. Si Nginx
 Tous les accès à ce domaine (en prenant en comptes toutes les applications).
 
 ##### example.com-error.log
-Toutes les erreurs liées aux applications installées sur ce domaine, il se peut que certaines applications aient tous leurs logs surs dans ce fichier.
+Toutes les erreurs liées aux applications installées sur ce domaine, il se peut que certaines applications aient tous leurs logs soit dans ce fichier.
 
 
 ## SSOwat
 [SSowat](https://github.com/Kloadut/SSOwat) 
-est le logiciel qui connecte le serveur web nginx au serveur LDAP. Son but est d’authentifier les utilisateurs au portail YunoHost pour pouvoir simplement changer entre les applications.
+est le logiciel qui connecte le serveur web nginx au serveur LDAP. Son but est d’authentifier les utilisateurs au portail YunoHost pour pouvoir simplement se déplaçer entre les applications.
 
 ### Configuration
 Vous pouvez regarder le fichier de configuration SSOwat dans le fichier :
@@ -285,7 +285,7 @@ sudo yunohost app setting appname settingname
 ```
 
 ### Logs
-Il n’y a pas de fichier de log créé lors que vous installez une application. Essayez de conserver les logs. Vous pouvez trouver cependant certains logs peuvent se trouver dans :
+Il n’y a pas de fichier de log créé lorsque vous installez une application. Essayez de conserver les logs. Vous pouvez trouver cependant certains logs peuvent se trouver dans :
 ```bash
 /var/log/yunohost/
 ```
@@ -366,4 +366,4 @@ Ne jamais installer le serveur web Apache ou un paquet avec Apache comme dépend
 
 ##### Note sur https
 Parfois, le serveur web intégré avec l’application est capable de servir du https lui-même.
-C’est une bonne chose de l’utiliser quand vous disposez d’une application sans Nginx devant. Dans le cadre de YunoHost, le fait que Nginx serve du https simplifie la configuration. Donc, quand vous passez par proxy_pass, utilisez http et Nginx mettra a disposition en https pour le reste de l’internet.
+C’est une bonne chose de l’utiliser quand vous disposez d’une application sans Nginx devant. Dans le cadre de YunoHost, le fait que Nginx serve du https simplifie la configuration. Donc, quand vous passez par proxy_pass, utilisez http et Nginx le mettra a disposition en https pour le reste de l’internet.

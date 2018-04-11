@@ -1,4 +1,4 @@
-# Installer YunoHost sur VitualBox
+# Installer YunoHost sur VirtualBox
 
 *Trouvez d’autres moyens d’installer YunoHost **[ici](/install_fr)**.*
 
@@ -70,5 +70,5 @@ Après le redémarrage, vous devriez voir cet écran :
 <br>
 
 * Vous pouvez obtenir plus d’information sur la post-installation ici : **[yunohost.org/postinstall_fr](/postinstall_fr)**
-* Le mode de passe root est "yunohost"
+* Le mot de passe root est "yunohost"
 

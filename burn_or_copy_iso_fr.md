@@ -19,7 +19,7 @@ Branchez votre clef USB, selectionnez l'ISO YunoHost puis cliquez sur 'Flash'
 
 ### Avec UNetbootin
 
-Téléchargez <a href="https://unetbootin.github.io/">UNetbootin</a> pour votre votre système d'exploitation et installez-le.
+Téléchargez <a href="https://unetbootin.github.io/">UNetbootin</a> pour votre système d'exploitation et installez-le.
 
 <img src="/images/unetbootin.png">
 
@@ -29,7 +29,7 @@ Branchez votre clef USB, selectionnez l'ISO YunoHost puis cliquez sur 'OK'
 
 Si vous êtes familier avec la ligne de commande, il est possible de flasher la
 clef USB avec `dd`. En supposant que votre clef USB soit `/dev/sdb` (faites
-attention !!), vous pouvez executer :
+attention !!), vous pouvez exécuter :
 
 ```bash
 dd if=/chemin/de/yunohost.iso of=/dev/sdb

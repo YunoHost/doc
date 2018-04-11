@@ -22,7 +22,7 @@ chmod 775 -R /media/stockage
 
 ### Cas B : Stockage partagé, données déjà présentes, données Nextcloud dans un sous-dossier
 
-Si vous souhaitez utiliser ce disque pour d'autres applications, vous pouvez créer un sous-dossier appartenant Nextcloud.
+Si vous souhaitez utiliser ce disque pour d'autres applications, vous pouvez créer un sous-dossier appartenant à Nextcloud.
 
 ```bash
 mkdir -p /media/stockage/nextcloud_data
