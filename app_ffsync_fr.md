@@ -14,4 +14,4 @@ Remplacez l’URL par la vôtre : https://mondomaine.tld/adresse/token/1.0/sync
 Créez un compte chez Mozilla : https://accounts.firefox.com/signup
 
 #### Firefox mobile
-Avec la dernière version de firefox mobile c'est identique a firefox pour le bureau.
+Avec la dernière version de firefox mobile c'est identique à firefox pour le bureau.
