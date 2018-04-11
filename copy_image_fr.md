@@ -1,45 +1,51 @@
-# Copier l’image sur une carte SD
+# Flasher une carte SD
 
-Maintenant que vous avez l’image ISO YunoHost, vous devez la copier sur une carte SD. Le processus est différent suivant votre système d’exploitation.
+Maintenant que vous avez téléchargé l'image de YunoHost, il vous faut copier son
+contenu sur une carte SD. Cette étape est aussi souvent appelé 'flasher' la
+carte SD.
+
+<div class="alert alert-warning" markdown="1">
+Dans le contexte de l'auto-hébergement, il est recommandé que votre carte SD
+fasse au moins 8 Go (pour disposer d'un espace raisonnable pour le système et
+quelques données) et soit au moins certifiée classe 10 (pour avoir des
+performances raisonnables).
+</div>
 
 <img src="/images/sdcard.jpg" width=150><img src="https://yunohost.org/images/micro-sd-card.jpg">
 
-## Sous Windows
+### Avec Etcher
 
-* Téléchargez et installez **[Win32 Disk Imager](http://sourceforge.net/projects/win32diskimager/)**.
-* Insérez votre carte SD.
-* Copiez le fichier `.img` sur votre carte SD en utilisant *Win32 Disk Imager*.
+Télécharger <a href="https://etcher.io/" target="_blank">Etcher</a> pour votre
+système d'exploitation, et installez-le.
 
-<img src="/images/win32diskimager.png">
+<img src="/images/etcher.gif">
 
-## Sous GNU/Linux, BSD ou Mac OS
+Connectez votre carte SD, sélectionnez votre image YunoHost, puis cliquez sur
+'Flash'.
 
-* Ouvrez un terminal.
-* Insérez votre carte SD.
-* Identifiez votre matériel en tapant :
+### Avec `dd`
 
-```bash
-sudo fdisk -l
-```
-
-Ça devrait être `/dev/diskN`, où `N` est un chiffre, ou `/dev/sdX`, où `X` est une lettre, ou `/dev/mmcblk0`.
-
-Attention à ne pas mettre le chiffre `N` car ça créera une [carte SD non fonctionnelle](https://raspberrypi.stackexchange.com/questions/11880/sd-card-doesnt-works-after-dd).
-
-* Copiez l’image en tapant :
+Si vous êtes sous Linux / Mac et que vous être à l'aise avec la ligne de
+commande, vous pouvez aussi flasher votre carte SD avec `dd`. Commencez par
+identifier le périphérique correspondant à votre carte SD avec `fdisk -l` ou
+`lsblk`. En supposant que votre carte SD soit `/dev/mmcblk0` (faites attention
+!), vous pouvez lancer :
 
 ```bash
-sudo dd if=/chemin/vers/votre/.img of=/nom/du/matériel
+dd if=/chemin/vers/yunohost.img of=/dev/mmcblk0
 ```
 
-<span class="glyphicon glyphicon-warning-sign"></span> N’oubliez pas de changer `/chemin/vers/votre/.img` et `/nom/du/matériel` par les valeurs appropriées.
+## Étendre la partition root <small>(optionnel)</small>
 
-La commande peut prendre quelques minutes, puis votre carte SD sera prête à être utilisée. **:-)**
+<div class="alert alert-warning" markdown="1">
+Cette étape est optionnelle car elle est normalement effectuée automatiquement
+par le système lors du premier démarrage sur les images récentes.
+</div>
 
-## Étendre la partition root <small>(facultatif, mais conseillé)</small>
-
-Par défaut, la partition root installée sur votre carte SD avec la commande `dd` est très petite.   
-Vous pouvez la redimensionner avec un logiciel comme `resize2fs` (ligne de commande) ou `Gparted` (interface graphique) en étendant la partition ext4 au maximum de façon à utiliser tout l’espace non alloué.
+Par défaut, la partition root installée sur votre carte SD avec la commande `dd`
+est très petite.   Vous pouvez la redimensionner avec un logiciel comme
+`resize2fs` (ligne de commande) ou `Gparted` (interface graphique) en étendant
+la partition ext4 au maximum de façon à utiliser tout l’espace non alloué.
 
 <img src="/images/gparted.jpg" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
