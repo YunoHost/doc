@@ -31,7 +31,7 @@ Exemple: 3
 
 ### Variables spécifiques pour `install`
 #### YNH_APP_ARG_XXXXXXX
-Pour chaque question posée lors de l'installation une variable d'environnement est disponible.
+Pour chaque question posée lors de l'installation, une variable d'environnement est disponible.
 
 Par exemple, si dans le manifest nous avons une question de cette forme
 ```

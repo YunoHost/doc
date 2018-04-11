@@ -4,7 +4,7 @@
 Afin de mettre en place un système automatisé de compilation des paquets Debian, le développement de YunoHost progresse désormais autour de trois branches principales :
 - **stable** : il s’agit du code des paquets Debian utilisés en live par les utilisateurs de YunoHost.
 - **testing** : il s’agit du code éligible pour la création d’une nouvelle version de YunoHost, il est supposé stable mais manque de test. La branche testing peut notamment servir pour corriger rapidement certains bugs.
-- **unstable** : il s’agit là des derniers codes ajoutés au dépôt mais qui sont connus pour être instables voir inachevés. C’est à destination de cette branche que vous devez faire vos pull request. Si votre travail est conséquent mais inachevé, il convient d’envisager de créer une branche à part par thématique (exemple : backup).
+- **unstable** : il s’agit là des derniers codes ajoutés au dépôt mais qui sont connus pour être instables voir inachevés. C’est à destination de cette branche que vous devez faire vos pull request. Si votre travail est conséquent mais inachevé, il convient d’envisager de créer une branche à part, thématique (exemple : backup).
 
 Les numéros de version des paquets stable sont pairs, les numéros de version des paquets testing sont impairs. Ainsi, la version 2.3 de YunoHost est une version de test qui sera transformée en version 2.4 si les tests sont concluants.
 

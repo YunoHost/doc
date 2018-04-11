@@ -17,7 +17,7 @@ fournis par votre fournisseur d'accès internet (FAI).
 ### 2. Trouver l'IP locale de votre serveur
 
 Identifiez quelle est l'IP locale de votre serveur, soit :
-- depuis l'interface de votre routeur/box, qui liste peut-être les dispositifes
+- depuis l'interface de votre routeur/box, qui liste peut-être les dispositifs
   connectés.
 - depuis la webadmin de YunoHost, dans 'État du serveur', 'Réseau'
 - depuis la ligne de commande dans votre serveur, par exemple avec `ip a | grep "scope global" | awk '{print $2}'`
