@@ -74,6 +74,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Invoice Ninja](https://www.invoiceninja.com)
 - [InvoicePlane](https://invoiceplane.com)
 - [IPFS](https://ipfs.io)
+- [Joplin](http://joplin.cozic.net/)
 - [JS Bin](http://jsbin.com/help/2-second-setup)
 - [Kaiwa](http://getkaiwa.com)
 - [Keepass](http://keepass.info)
