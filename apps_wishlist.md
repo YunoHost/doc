@@ -61,7 +61,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Granary](https://github.com/snarfed/granary)
 - [Guacamole](http://guac-dev.org)
 - [h5ai](http://larsjung.de/h5ai)
-- [HackMD](https://hackmd.io)
+- [HackMD CE](https://github.com/hackmdio/hackmd)
 - [Hackpad](https://github.com/dropbox/hackpad)
 - [Headphones](https://github.com/rembo10/headphones)
 - [Hi Buddy](https://github.com/tOkeshu/hibuddy) (/!\ last update: 17 Feb 2015)
