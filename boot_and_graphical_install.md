@@ -8,6 +8,8 @@ If you want the network configuration to be set up automatically, you have to pl
  
 The wireless connections are not supported yet, and if you use intermediate routers, the network ports opening will not be automatic: Your server will not be accessible externally.
 
+Even if you can install the base system with your WiFi connection, you will not be able to finalize the post-installation steps (which use the same ethernet connection setup as while installing the base system -- THIS is when the WiFi can not be used), and you will have to restart the installation from the beginning.
+
 
 ## <small>2.</small> Boot on CD / USB key
 
