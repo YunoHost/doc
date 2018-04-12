@@ -16,6 +16,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Ajenti](http://ajenti.org)
 - [Auth0 SSO Dashboard](https://github.com/auth0-extensions/auth0-sso-dashboard-extension)
 - [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog) (/!\ last update: Jan 27, 2015)
+- [Bitmessage](https://bitmessage.org/wiki/Compiling_instructions)
 - [Beehive](https://github.com/muesli/beehive)
 - [Blynk](https://github.com/blynkkk/blynk-library)
 - [Bolt](http://bolt.cm)
