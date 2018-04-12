@@ -22,6 +22,11 @@ The process differs regarding your operating system.
 ```bash
 sudo fdisk -l
 ```
+Alternative
+
+```bash
+lsblk
+```
 
 It should be `/dev/diskN`, where `N` is a number, or `/dev/sdX`, where `X` is a letter.
 
