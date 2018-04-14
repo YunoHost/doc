@@ -1,5 +1,5 @@
 
-# Sécurité
+# Securité
 
 YunoHost a été développé dans l’optique de fournir une sécurité maximale tout en restant accessible et facilement installable.
 
@@ -13,7 +13,7 @@ Deux points sont néanmoins importants à noter :
 
 *Si vous avez besoin de conseil, n’hésitez pas à [nous demander](/help_fr).*
 
-*Pour discuter d'une faille de sécurité, contactez l'[équipe sécurité de YunoHost](/security_team_fr).*
+*Pour discuter d'une faille de securité, contactez l'[équipe securité de YunoHost](/security_team_fr).*
 
 ---
 
@@ -75,6 +75,20 @@ yunohost firewall reload
 yunohost firewall disallow TCP <votre numéro de port> # port par défaut 22
 yunohost firewall disallow --ipv6 TCP <votre numéro de port> # pour ipv6
 ``` 
+Modifiez la configuration de fail2ban:
+
+```bash
+sudo nano /etc/fail2ban/jail.conf
+
+# Recherchez la partie [ssh] et, dans la ligne « port », remplacez « ssh » par le numéro du nouveau port d'écoute de SSH:
+port  = ssh # à remplacer par exemple par 9777
+```
+
+et redémarrez fail2ban:
+
+```bash
+sudo service fail2ban restart
+```
 
 **Pour les prochaines connexions SSH** il faudra ajouter l’option -p suivie du numéro de port SSH.
 
