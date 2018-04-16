@@ -110,11 +110,11 @@
   <div dir="auto" class="text-center">
     <h1>تذكروا ! نحن بشر !<br /><small> إن كان عندكم تساؤل أو واجهتكم مشكلة أو ربما يهمُّكُم المشروع فقط، انضموا إلينا عبر غرفة المحادثة الخاصة بنا لتبليغنا التحية بالنقر على الزر أدناه &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
 
-<!--
+
 <p class="liberapay">
       <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Donation button" title="Liberapay" /></a>
     </p>
--->
+
   </div>
 
 </div><!-- boring-part -->
