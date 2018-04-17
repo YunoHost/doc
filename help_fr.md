@@ -9,7 +9,7 @@
 <li><em>Soyez patient</em>, cela peut prendre plusieurs minutes avant que quelqu'un remarque vos messages.</li>
 </ul>
 </div>
-<strong>Pseudonyme</strong> : <input id="nickname" value="foobar" type="text">
+<strong>Pseudonyme</strong> : <input id="nickname" value="foobar__" type="text">
 </br>
 </br>
 <button id="joinChatroom" type="button" class="btn btn-success" style="font-weight:bold;">
@@ -49,7 +49,7 @@ dev@conference.yunohost.org et apps@conference.yunohost.org</em>
 <script>
 document.getElementById("joinChatroom").onclick = function() {
     var nickname = document.getElementById("nickname").value;
-    window.location.href = "https://chat.yunohost.org/?nick="+nickname;
+    window.location.href = "https://kiwiirc.com/client/irc.freenode.net/yunohost/?nick="+nickname;
 }
 document.getElementById("goForum").onclick = function() {
     var nickname = document.getElementById("nickname").value;
@@ -59,7 +59,7 @@ document.getElementById("goBugtracker").onclick = function() {
     window.location.href = "https://dev.yunohost.org/projects/yunohost/issues";
 }
 document.getElementById("goDevroom").onclick = function() {
-    window.location.href = "https://chat.yunohost.org/";
+    window.location.href = "https://kiwiirc.com/client/irc.freenode.net/yunohost-dev";
 }
 </script>
 
