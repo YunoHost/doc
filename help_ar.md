@@ -9,7 +9,7 @@
 <li><em>تحلّى بالصبر</em>، في بعض الأحيان يمكن أن تمر بضع دقائق قبل أن يرى أحد المستخدمين سؤالك.</li>
 </ul>
 </div>
-<div dir="rtl"><strong>الإسم المستعار</strong> : <input id="nickname" value="foobar" type="text">
+<div dir="rtl"><strong>الإسم المستعار</strong> : <input id="nickname" value="foobar__" type="text">
 </div>
 </br>
 </br>
@@ -58,7 +58,7 @@ dev@conference.yunohost.org and apps@conference.yunohost.org</em>
 <script>
 document.getElementById("joinChatroom").onclick = function() {
     var nickname = document.getElementById("nickname").value;
-    window.location.href = "https://chat.yunohost.org/?nick="+nickname;
+    window.location.href = "https://kiwiirc.com/client/irc.freenode.net/yunohost/?nick="+nickname;
 }
 document.getElementById("goForum").onclick = function() {
     var nickname = document.getElementById("nickname").value;
@@ -68,6 +68,6 @@ document.getElementById("goBugtracker").onclick = function() {
     window.location.href = "https://dev.yunohost.org/projects/yunohost/issues";
 }
 document.getElementById("goDevroom").onclick = function() {
-    window.location.href = "https://chat.yunohost.org/";
+    window.location.href = "https://kiwiirc.com/client/irc.freenode.net/yunohost-dev";
 }
 </script>
