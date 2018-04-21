@@ -83,7 +83,7 @@ Lancez un scan du nouveau répertoire par Nextcloud:
 
 ```bash
 cd /var/www/nextcloud
-sudo -u nexctloud php occ files:scan --all
+sudo -u nextcloud php occ files:scan --all
 ```
 
 C'est terminé. À présent testez si tout va bien, essayez de vous connecter à votre instance Nextcloud, envoyer un fichier, vérifiez sa bonne synchronisation.
