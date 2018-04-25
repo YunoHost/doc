@@ -16,7 +16,7 @@ In this version you can backup with cli or with the web admin. The cli way allow
 ## Web admin
 Basically with the webadmin, you can:
 
-- backup into `/home/yunohost/archives/`
+- backup into `/home/yunohost.backup/archives/`
 - choose to backup one or more data among:
  - apps data
  - emails
