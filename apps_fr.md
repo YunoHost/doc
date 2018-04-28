@@ -27,7 +27,7 @@
 
 <div class="app-cards-list" id="app-cards-list"></div>
 
-<div class="alert alert-warning">Si vous ne trouvez pas l'applications que vous recherchez, vous pouvez la rechercher dans les apps communautaires (working, inprogress et notworking) ou remplir la <a href="/apps_wishlist_fr">liste d'apps souhaitées</a>.</div>
+<div class="alert alert-warning">Si vous ne trouvez pas l'application que vous recherchez, vous pouvez la rechercher dans les apps communautaires (working, inprogress et notworking) ou remplir la <a href="/apps_wishlist_fr">liste d'apps souhaitées</a>.</div>
 
 <style>
 /*=================================================
