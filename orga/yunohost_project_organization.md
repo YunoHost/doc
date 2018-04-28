@@ -168,13 +168,12 @@ Then a member of a group can announce their decision as effective (and proceed w
 
 ## Composition of groups
 
-- Distribution : Heyyounow
 - Council : Bram, ju, ljf, Maniack, Moul, opi, theodore
 - Core Dev : AlexAubin, Bram, JimboJoe, Ju, ljf, Moul, opi
-- Apps : Bram, Cyp, frju365, JimboJoe, Ju, ljf, Maniack C, Maxime, Moul, Scith, Tostaki
+- Apps : Bram, cyp, frju365, JimboJoe, Josue-T, Ju, ljf, Maniack C, Maxime, Moul, Scith, Tostaki
 - Infra : Bram, Ju, Maniack C, Moul, opi
 - Communication
-  - Com : Bram, Moul, korbak, ljf, opi
+  - Com : Bram, Moul, korbak, ljf, opi, frju365
   - Doc : Moul, Theodore
   - Trans : Jean-Baptiste
 - Distribution : Heyyounow
