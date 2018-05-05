@@ -17,13 +17,13 @@
 </div>
 <br />
 <div id="community-app-list-warrant" class="alert alert-danger">
-    <p>Seules les apps marquées <span class="label label-success label-as-badge">validated</span> sont officiellement supportées par l'équipe d'empaquetage. </p>
+    <p>Seules les apps marquées <span class="label label-success label-as-badge">validated</span> sont officiellement supportées par l'équipe de développement d'applications. </p>
 
     <p>Les apps marquées <span class="label label-success label-as-badge">working</span>, <span class="label label-warning label-as-badge">inprogress</span>, <span class="label label-danger label-as-badge">notworking</span> sont des applications non officielles maintenues par la communauté, vous pouvez les tester et les utiliser **à vos risques et périls**.</p>
 
-    <p>Important: c'est le mainteneur de l'application qui définit son application comme "working" et non pas l'équipe d'empaquetage de Yunohost. Installez ces apps à vos risques et périls. Nous ne fournissons pas de support pour elles.</p>
+    <p>Important: c'est le mainteneur de l'application qui définit son application comme "working" et non pas l'équipe de développement d'applications de Yunohost. Installez ces apps à vos risques et périls. Nous ne fournissons pas de support pour elles.</p>
 </div>
-<div class="alert alert-info">Les empaqueteurs apprécieront vos remarques. Si vous installez leurs apps et trouvez des dysfonctionnement, ou si vous avez des idées d'amélioration, n'hésitez pas à créer des tickets directement sur les pages de dépots des projets.</div>
+<div class="alert alert-info">Les développeurs d'applications apprécieront vos remarques. Si vous installez leurs apps et trouvez des dysfonctionnement, ou si vous avez des idées d'amélioration, n'hésitez pas à créer des tickets directement sur les pages de dépots des projets.</div>
 
 <div class="app-cards-list" id="app-cards-list"></div>
 
