@@ -11,12 +11,9 @@
 </div>
 <div dir="rtl"><strong>الإسم المستعار</strong> : <input id="nickname" value="foobar__" type="text">
 </div>
-</br>
-</br>
-<div dir="rtl"><button id="joinChatroom" type="button" class="btn btn-success" style="font-weight:bold;">
-            <span class="glyphicon glyphicon-comment"></span> إنضم إلى غرفة المحادثة
-</button>
-</div>
+
+<iframe src="https://kiwiirc.com/client/irc.freenode.org/?nick=foobar|?&theme=mini#yunohost" style="border:0; width:100%; height:450px;"></iframe>
+
 </br>
 </br>
 <div dir="rtl">
@@ -56,10 +53,6 @@ dev@conference.yunohost.org and apps@conference.yunohost.org</em>
 </center>
 
 <script>
-document.getElementById("joinChatroom").onclick = function() {
-    var nickname = document.getElementById("nickname").value;
-    window.location.href = "https://kiwiirc.com/client/irc.freenode.net/yunohost/?nick="+nickname;
-}
 document.getElementById("goForum").onclick = function() {
     var nickname = document.getElementById("nickname").value;
     window.location.href = "https://forum.yunohost.org/latest";
