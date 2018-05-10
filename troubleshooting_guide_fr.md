@@ -1,6 +1,6 @@
 # Guide de dépannage de YunoHost
 
-Vous pouvez considérer ce guide comme une sorte de guide de dépannage permettant de voir ce qu’il faut regarder quand vous rencontrer un problème avec votre serveur YunoHost. Ce n’est pas un guide pour remettre en état votre instance YunoHost mais plutôt une liste de choses à vérifier pour aider à diagnostiquer les problèmes rencontrés.
+Vous pouvez considérer ce guide comme une sorte de guide de dépannage permettant de voir ce qu’il faut regarder quand vous rencontrez un problème avec votre serveur YunoHost. Ce n’est pas un guide pour remettre en état votre instance YunoHost mais plutôt une liste de choses à vérifier pour aider à diagnostiquer les problèmes rencontrés.
 Ce guide peut trouver son intérêt lors du débuggage d’une nouvelle application ou pour comprendre l’architecture de Yunohost.
 
 ## Notes générales
