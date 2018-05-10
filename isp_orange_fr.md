@@ -63,3 +63,18 @@ Intégrer le mot de passe à Postfix :
 sudo postmap /etc/postfix/sasl/mdp_fai.conf
 sudo postconf -e smtp_sasl_password_maps=hash:/etc/postfix/sasl/mdp_fai.conf
 ```
+
+Si vous avez une erreur "(SASL authentication failed; cannot authenticate to server smtp-auth.nowhere.com[38.123.22.160]: no mechanism available)"
+
+Vérifier la présence de libsasl2-modules et de sasl2-bin :
+
+```bash
+sudo apt-cache search libsasl2-modules
+sudo apt-cache search sasl2-bin
+```
+
+Si ils ne sont pas présents, installez-les :
+
+```bash
+sudo apt-get install libsasl2-modules sasl2-bin
+```
