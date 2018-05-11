@@ -14,6 +14,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Airsonic](https://github.com/airsonic/airsonic)
 - [Airtime](https://www.sourcefabric.org/en/airtime/)
 - [Ajenti](http://ajenti.org)
+- [aMule](https://github.com/amule-project/amule)
 - [Auth0 SSO Dashboard](https://github.com/auth0-extensions/auth0-sso-dashboard-extension)
 - [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog) (/!\ last update: Jan 27, 2015)
 - [Bitmessage](https://bitmessage.org/wiki/Compiling_instructions)
@@ -155,7 +156,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [TorChat](https://github.com/prof7bit/TorChat)
 - [Torrent Tunes](https://github.com/tchoulihan/torrenttunes-client)
 - [Total Respawn](https://github.com/broncowdd/TotalRespawn)
-- [Turtle](https://turtlapp.com/)
 - [Twister](http://twister.net.co)
 - [TwitRSS.me](http://twitrss.me/) ([Github](https://github.com/ciderpunx/twitrssme)) Scrapes Twitter to create RSS feeds.
 - [Unvis](https://unv.is/) ([Github](https://github.com/lodjuret/unvis.it))
