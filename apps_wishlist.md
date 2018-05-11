@@ -92,6 +92,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [KrISS feed](https://github.com/tontof/kriss_feed)
 - [Koken](http://koken.me)
 - [Kune](https://en.wikipedia.org/wiki/Kune_%28software%29)
+- [Lessy](https://lessy.io)
 - [LibreNews-Server](https://librenews.io)
 - [LibreOffice Online](https://wiki.documentfoundation.org/ReleaseNotes/5.3/fr#LibreOffice_Online)
 - [LiquidSoap](http://savonet.sourceforge.net/)
