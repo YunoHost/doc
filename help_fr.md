@@ -9,15 +9,14 @@
 <li><em>Soyez patient</em>, cela peut prendre plusieurs minutes avant que quelqu'un remarque vos messages.</li>
 </ul>
 </div>
-<strong>Pseudonyme</strong> : <input id="nickname" value="foobar__" type="text">
+
+<iframe
+src="https://kiwiirc.com/client/irc.freenode.org/?nick=foobar|?&theme=mini#yunohost"
+style="border:0; width:100%; height:450px;"></iframe>
+
 </br>
 </br>
-<button id="joinChatroom" type="button" class="btn btn-success" style="font-weight:bold;">
-            <span class="glyphicon glyphicon-comment"></span> Rejoindre le salon
-</button>
-</br>
-</br>
-<em>Note : vous pouvez aussi vous connecter via votre client XMPP favori à</br>
+<em>Note : ce salon est aussi accessible via XMPP <small>(support@conference.yunohost.org)</small>, ou Matrix <small>(#freenode_#yunohost:matrix.org)</small>.</em>
 support@conference.yunohost.org</em>
 </center>
 
@@ -47,10 +46,6 @@ dev@conference.yunohost.org et apps@conference.yunohost.org</em>
 </center>
 
 <script>
-document.getElementById("joinChatroom").onclick = function() {
-    var nickname = document.getElementById("nickname").value;
-    window.location.href = "https://kiwiirc.com/client/irc.freenode.net/yunohost/?nick="+nickname;
-}
 document.getElementById("goForum").onclick = function() {
     var nickname = document.getElementById("nickname").value;
     window.location.href = "https://forum.yunohost.org/latest";
