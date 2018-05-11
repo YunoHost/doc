@@ -45,9 +45,9 @@ Vous pouvez procéder à la post-installation directement, ou accéder à l’ad
 
 <img src="/images/postinstall_error.png" style="max-width:100% ; border-radius: 5px ; border: 1px solid rgba(0,0,0,0.15) ; box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-Si vous rencontrez une erreur de ce type, cliquez sur « **Poursuivre quand même** » ou « **Ajouter une exception** ».    
+Si vous rencontrez une erreur de ce type, cliquez sur « **Poursuivre quand même** » ou « **Ajouter une exception** ».
 Cela signifie que vous devez faire confiance au certificat qui sécurise les connexions avec votre serveur.    
-Comme c’est le votre, vous pouvez le valider sereinement ici :-)
+Comme c’est le votre, vous pouvez le valider sereinement ici :-). (Certains navigateurs interdisent totalement la connexion. Si c'est le cas, vous pouvez réessayer avec un autre.)
 
 <br>
 
