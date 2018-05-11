@@ -13,6 +13,7 @@
       <span class="yolo 5" style="color: #FFFFFF;">monsieur@michu.fr</span>
       <span class="yolo 6" style="color: #CC66FF;">J’ai rien à cacher</span>
       <span class="yolo 7" style="color: #FF6600;">How I met your server</span>
+      <span class="yolo 8" style="color: #3399FF;">Je suis partout dans le monde</span>
     </p>
     <button class="btn btn-primary btn-lg btn-block yolobtn">Pardon ?</button>
   </div>
