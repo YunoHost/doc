@@ -106,6 +106,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Mirakel](http://mirakel.azapps.de/taskwarrior.html) (/!\ SSL-Warning)
 - [Modoboa](http://modoboa.org)
 - [MotionEye](https://github.com/ccrisan/motioneye)
+- [Movim](https://github.com/movim/movim)
 - [MPD](http://www.musicpd.org)
 - [Museek+](https://github.com/eLvErDe/museek-plus)
 - [Nibbleblog](http://www.nibbleblog.com)
