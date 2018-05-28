@@ -83,6 +83,10 @@
     margin-top: -5px;
 }
 
+.app-card .unmaintained {
+   color: #e0aa33;
+}
+
 .app-card-desc {
     height:100px;
     overflow: hidden;
@@ -99,7 +103,7 @@
 .app-card > .btn-group > .btn{
     border-bottom:0;
 }
-.app-card > .btn-group > .btn:first-child {   
+.app-card > .btn-group > .btn:first-child {
     border-left:0;
     border-top-left-radius:0;
 }
@@ -122,8 +126,8 @@
             <div class="app-card-desc">{app_description}</div>
         </div>
             <div class="app-card-date-maintainer">
-                <span class="glyphicon glyphicon-refresh"></span> {app_update} - 
-                <span class="glyphicon glyphicon-user"></span> {app_maintainer}
+                <span class="glyphicon glyphicon-refresh"></span> {app_update} -
+                <span title="{maintained_help}" class="{maintained_state}"><span class="glyphicon glyphicon-{maintained_icon}"></span> {app_maintainer}</span>
             </div>
         <div class="btn-group" role="group">
             <a href="{app_git}" target="_BLANK" type="button" class="btn btn-default col-sm-4"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Code</a>
@@ -131,7 +135,7 @@
             <a href="https://install-app.yunohost.org/?app={app_id}" target="_BLANK" type="button" class="btn btn-{app_install_bootstrap} col-sm-4 active"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Install</a>
         </div>
 
-    </div> 
+    </div>
 </script>
 
 <script>
@@ -159,7 +163,7 @@ $(document).ready(function () {
         var valThis = $('#filter-app-cards').val().toLowerCase();
         $('.app-card').each(function(){
             var text = $(this).find('h3').text().toLowerCase();
-            (text.indexOf(valThis) == 0 && $(this).find(filters_text).length > 0) ? $(this).show() : $(this).hide();         
+            (text.indexOf(valThis) == 0 && $(this).find(filters_text).length > 0) ? $(this).show() : $(this).hide();
         });
         (filters.indexOf("working") == -1) ?$('#community-app-list-warrant').hide():$('#community-app-list-warrant').show();
     }
@@ -191,8 +195,8 @@ $(document).ready(function () {
         filters = ["validated", "working", "inprogress", "notworking"];
         $('#app-cards-list-filter-text').text($('#app-cards-list-all-apps').text());
         filter();
-    }); 
-    //=================================================  
+    });
+    //=================================================
 
 
     //=================================================
@@ -208,7 +212,7 @@ $(document).ready(function () {
         })
     ).then(function() {
         app_list = app_list.official.concat(app_list.community);
-    
+
         // Sort alpha
         app_list.sort(function(a, b){
             a_state = (a.state == "validated")?4:(a.state == "working")?3:(a.state == "inprogress")?2:1;
@@ -258,17 +262,30 @@ $(document).ready(function () {
              .replace('{app_state_bootstrap}', app_state_bootstrap)
              .replace('{app_install_bootstrap}', app_install_bootstrap);
 
+            if (infos.maintained == false)
+            {
+               html = html
+                 .replace('{maintained_state}', 'unmaintained')
+                 .replace('{maintained_icon}', 'warning-sign')
+                 .replace('{app_maintainer}', "Unmaintained")
+                 .replace('{maintained_help}', "This package is currently unmaintained. Feel free to propose yourself as the new maintainer !");
+            } else {
             if (infos.manifest.developer) {
                 html = html
+                 .replace('{maintained_state}', 'maintained')
+                 .replace('{maintained_icon}', 'user')
                  .replace('{app_maintainer}', infos.manifest.developer.name)
-                 .replace('{app_mail}', infos.manifest.developer.email);
+                 .replace('{maintained_help}', "Current maintainer of this package");
             }
-
             if (infos.manifest.maintainer) {
                 html = html
+                 .replace('{maintained_state}', 'maintained')
+                 .replace('{maintained_icon}', 'user')
                  .replace('{app_maintainer}', infos.manifest.maintainer.name)
-                 .replace('{app_mail}', infos.manifest.maintainer.email);
+                 .replace('{maintained_help}', "Current maintainer of this package");;
             }
+            }
+
 
             // Fill the template
             $('#app-cards-list').append(html);
@@ -282,7 +299,6 @@ $(document).ready(function () {
         });
         filter();
     });
-    //=================================================  
+    //=================================================
 });
 </script>
-
