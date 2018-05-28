@@ -14,12 +14,12 @@ domaine via l'interface de votre registrar.
 
 ## Configuration DNS recommandée
 
-YunoHost fourni une configuration DNS recommandée, accessible via :
+YunoHost fournit une configuration DNS recommandée, accessible via :
 - la webadmin, dans Domaines > votre.domain.tld > Configuration DNS ;
 - ou la ligne de commande, `yunohost domain dns-conf votre.domaine.tld`
 
 Pour certains besoins ou installations particulières, et si vous savez ce que
-vous faîtes, il vous faudra peut-être modifier cette recommendation ou ajouter
+vous faites, il vous faudra peut-être modifier cette recommandation ou ajouter
 d'autres enregistrements (e.g. pour gérer des sous-domaines).
 
 La configuration recommandée ressemble typiquement à :
@@ -78,5 +78,5 @@ suivante :
 - Le point à la fin de `votre.domaine.tld.` est important ;) ;
 - `@` corresponds à `votre.domaine.tld`, et par ex. `muc` corresponds à `muc.votre.domaine.tld` ;
 - Les valeurs montrées sont des valeurs d'exemple ! Référez-vous à la configuration générée chez vous pour savoir quelles valeurs utiliser.
-- Nous recommendons un [TTL](https://fr.wikipedia.org/wiki/Time_to_Live#Le_Time_to_Live_dans_le_DNS) de 3600 (1 heure). Mais vous pouvez utiliser une autre valeur si vous savez ce que vous faîtes ;
+- Nous recommandons un [TTL](https://fr.wikipedia.org/wiki/Time_to_Live#Le_Time_to_Live_dans_le_DNS) de 3600 (1 heure). Mais vous pouvez utiliser une autre valeur si vous savez ce que vous faîtes ;
 - Ne mettez pas d'enregistrement IPv6 si vous n'êtes pas certains que l'IPv6 fonctionne sur votre serveur ! Vous aurez des problèmes avec Let's Encrypt si ce n'est pas le cas.
