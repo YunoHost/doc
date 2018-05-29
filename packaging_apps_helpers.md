@@ -247,16 +247,23 @@ sudo yunohost app checkurl DOMAINPATH -a APP
 
 
 ```bash
-sudo yunohost app addaccess [--users=USER] APP
+sudo yunohost app addaccess APP [--users=USER]
 ```
 > Allow the `USER` user to access `APP`.
 
+> it's possible to add several users on several apps at once, for exemple:
+```bash
+sudo yunohost app addaccess app1 app2 -u user1 user2
+```
 
 ```bash
-sudo yunohost app removeaccess --users=USER APP
+sudo yunohost app removeaccess APP --users=USER
 ```
 > Remove the access authorization to `APP` from `USER` user.
 
+> like for addaccess, it's possible to remove several users on several apps at once, for exemple:
+```bash
+sudo yunohost app removeaccess app1 app2 -u user1 user2
 
 ```bash
 sudo yunohost service remove NAME
