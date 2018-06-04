@@ -118,3 +118,17 @@ Même si YunoHost est multi-domaine et multi-utilisateur, il reste **inappropri�
 Premièrement parce que le logiciel est trop jeune, donc non-testé et non-optimisé pour être mis en production pour des centaines d’utilisateurs en même temps. Et quand bien même, ce n’est pas le chemin que l’on souhaite faire suivre à YunoHost. La virtualisation se démocratise, et c’est une façon bien plus étanche et sécurisée de faire de la mutualisation.
 
 Vous pouvez héberger vos amis, votre famille ou votre entreprise sans problème, mais vous devez **avoir confiance** en vos utilisateurs, et ils doivent de la même façon avoir confiance en vous. Si vous souhaitez tout de même fournir des services YunoHost à des inconnus, **un VPS entier par utilisateur** sera la meilleure solution.
+
+---
+
+# Logo
+
+Logo Yunohost noir et blanc réalisé par ToZz (400 × 400 px) :
+
+<a href="/images/ynh_logo_black.png"><img src="/images/ynh_logo_black.png" width=220></a>
+
+<a href="/images/ynh_logo_white.png"><img src="/images/ynh_logo_white.png" width=220></a>
+
+Cliquer pour télécharger.
+
+Licence: CC-BY-SA 4.0
