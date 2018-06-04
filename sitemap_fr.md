@@ -105,7 +105,7 @@
            * [Créer une image live USB](/create_live_usb_fr)
         * Documentation
            * [Écrire de la documentation](/write_documentation_fr)
-        * [Contribution](/contributordoc_fr)
+        * [Contribution](/contributordoc)
 
 * Vie du projet :
    * [Journal des modifications v.2.0](/changelog_2_0_en)
