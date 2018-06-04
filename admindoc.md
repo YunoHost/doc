@@ -30,6 +30,7 @@
     * [Backup](/backup)
 * Going further
     * [Improving security](/security)
+    * [Migrating emails to YunoHost](/email_migration)
     * [Hide services with Tor](/torhiddenservice)
 * [Troubleshooting guide](/troubleshooting_guide)
     * [Unlock IP in iptables](/fail2ban)
