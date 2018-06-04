@@ -24,7 +24,7 @@
 * Getting to know YunoHost
     * [Web administration interface](/admin)
     * [Connecting to your server using SSH](/ssh)
-    * [Command-line administration](/moulinette)
+    * [Command-line administration](/commandline)
     * [Application catalog](/apps)
     * [Updating your server](/update) and [apps](/app_update)
     * [Backup](/backup)

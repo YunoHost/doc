@@ -53,7 +53,7 @@
         * Administration
             * En ligne de commande
                 * [Connexion à son serveur avec SSH](/ssh_fr)
-                * [Administration avec la Moulinette](/moulinette_fr)
+                * [Administration avec la ligne de commande](/commandline_fr)
             * [Administration web](/admin_fr)
             * [Administration via l'API](/admin_api_fr)
             * [Changer le mot de passe d’administration](/change_admin_password_fr)

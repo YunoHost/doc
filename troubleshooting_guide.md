@@ -18,7 +18,7 @@ From my experience, some packaging are excellent and others can break some part 
 Answer to your question may be already in [the documentation](https://yunohost.org/#/sitemap_en).
 
 ### Check the command line help
-Learn how to use the [YunoHost commands](https://yunohost.org/#/moulinette_en) like a pro.
+Learn how to use the [YunoHost commands](https://yunohost.org/#/commandline) like a pro.
 
 ## Upgrade
 Problems often occur after an upgrade. After a YunoHost upgrade you may want to [update your apps](https://yunohost.org/#/app_update_en).
