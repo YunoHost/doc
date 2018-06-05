@@ -43,6 +43,7 @@
     * [Ajouter un stockage externe](/external_storage_0_intro_fr)
     * [Migrer ses emails vers YunoHost](/email_migration_fr)
     * [YunoHost avec un service caché Tor](/torhiddenservice_fr)
+    * [Utilisation de certificats autres que Let's Encrypt](/certificate_custom_fr)
 * [Guide de dépannage](/troubleshooting_guide_fr)
     * [Débloquer une IP dans Fail2ban](/fail2ban_fr)
     * [Changer le mot de passe d’administration](/change_admin_password_fr)
