@@ -22,7 +22,7 @@
 </div>
 <div class="col col-md-8" markdown="1">
 نحن بحاجة إلى تجريب حثيث لواي يونوهوست YunoHost. فإن صادفتم مشكلة، يرجى القيام بتحديد الخلل و ثم الإبلاغ عنه عبر
-<a href="https://dev.yunohost.org/projects/yunohost/issues/new" target="_blank">مُتعقب الأخطاء</a>.
+<a href="https://github.com/YunoHost/issues/issues" target="_blank">مُتعقب الأخطاء</a>.
 </div>
 </div>
 

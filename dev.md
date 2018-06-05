@@ -5,7 +5,7 @@ proceed? This guide takes you through the various steps of the development and
 contribution process. 
 
 If you're looking for stuff to implement or fix, the bug-tracker is 
-[here](https://dev.yunohost.org/issues/) !
+[here](https://github.com/YunoHost/issues/issues) !
 
 **Come say hi to us in the [dev chatroom](xmpp:dev@conference.yunohost.org?join)** ! If you don't have an XMPP client, you can join using the widget at the bottom right of this page.
 

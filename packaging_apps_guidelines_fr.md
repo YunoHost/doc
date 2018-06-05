@@ -31,7 +31,7 @@ Chaque YEP est associée à :
 | YEP 1.8 | Publier des demandes de test  | validé | manuel | OFFICIAL (6) |
 | YEP 1.9 | Documenter l'app  | validé | AUTO | OFFICIAL (6) |
 | YEP 1.10 | Garder un historique de version propre   | brouillon | manuel | OFFICIAL (6) |
-| YEP 1.11 | Ajouter l'app au [bugtracker YunoHost](https://dev.yunohost.org)   | brouillon | manuel | OFFICIAL (NA) |
+| YEP 1.11 | Ajouter l'app au [bugtracker YunoHost](https://github.com/yunohost/issues/issues)   | brouillon | manuel | OFFICIAL (NA) |
 | | | | | |
 | **YEP 2** | **Stabiliser une app** | **Statut** | **Test** | **Niveau** |
 | YEP 2.1 | Respecter le format du manifeste  | validé | auto | INPROGRESS (5) |
@@ -207,7 +207,7 @@ Il y a également le README.md, ce dernier doit et peut contenir :
 #### YEP 1.10
 ##### Garder un historique de version propre   | brouillon | manuel | OFFICIAL |
 #### YEP 1.11
-##### Ajouter l'app au [bugtracker YunoHost](https://dev.yunohost.org)   | brouillon | manuel | OFFICIAL |
+##### Ajouter l'app au [bugtracker YunoHost](https://github.com/yunohost/issues/issues)   | brouillon | manuel | OFFICIAL |
 
 ### YEP 2
 #### Stabiliser une app

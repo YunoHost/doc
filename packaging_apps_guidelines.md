@@ -31,7 +31,7 @@ Each YEP is associated with:
 | YEP 1.8 | Publish test requests | validated | manual | OFFICIAL (6) |
 | YEP 1.9 | Document the app | validated | AUTO | OFFICIAL (6) |
 | YEP 1.10 | Keep a clean version history | draft | manual | OFFICIAL (6) |
-| YEP 1.11 | Add app to [YunoHost bugtracker](https://dev.yunohost.org) | draft | manual | OFFICIAL (NA) |
+| YEP 1.11 | Add app to [YunoHost bugtracker](https://github.com/YunoHost/issues/issues) | draft | manual | OFFICIAL (NA) |
 | | | | | |
 | ** YEP 2 ** | ** Stabilize an app ** | ** Status ** | ** Test ** | ** Level ** |
 | YEP 2.1 | Respect the manifest format | validated | Home | INPROGRESS (5) |
@@ -207,7 +207,7 @@ There is also README.md, which must and can contain:
 #### YEP 1.10
 ##### Keep a clean version history | draft | manual | OFFICIAL |
 #### YEP 1.11
-##### Add app to [YunoHost bugtracker](https://dev.yunohost.org) | draft | manual | OFFICIAL |
+##### Add app to [YunoHost bugtracker](https://github.com/YunoHost/issues/issues) | draft | manual | OFFICIAL |
 
 ### YEP 2
 #### Stabilize an app
