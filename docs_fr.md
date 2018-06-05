@@ -17,7 +17,7 @@ La documentation de YunoHost s’articule autour de trois sections :
 </div>
 
 <div class="col col-md-5 col-md-offset-3">
-<a class="btn btn-danger btn-lg" href="/contributordoc"><span class="glyphicon glyphicon-heart"></span> Guide du contributeur</a>
+<a class="btn btn-danger btn-lg" href="/contributordoc_fr"><span class="glyphicon glyphicon-heart"></span> Guide du contributeur</a>
 <p><small class="text-muted">Qui contient tout ce que vous devez savoir à propos de nous et de notre manière de travailler</small></p>
 </div>
 
