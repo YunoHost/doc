@@ -51,7 +51,7 @@ document.getElementById("goForum").onclick = function() {
     window.location.href = "https://forum.yunohost.org/latest";
 }
 document.getElementById("goBugtracker").onclick = function() {
-    window.location.href = "https://dev.yunohost.org/projects/yunohost/issues";
+    window.location.href = "https://github.com/YunoHost/issues";
 }
 document.getElementById("goDevroom").onclick = function() {
     window.location.href = "https://kiwiirc.com/client/irc.freenode.net/yunohost-dev";
