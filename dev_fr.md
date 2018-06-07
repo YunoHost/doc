@@ -5,7 +5,7 @@ savez pas comment procéder ? Ce guide parcours les étapes du développement et
 processus de contribution.
 
 Si vous chercher quelque chose à implémenter ou un bug à réparer, le
-bug tracker est [ici](https://dev.yunohost.org/issues/) !
+bug tracker est [ici](https://github.com/YunoHost/issues) !
 
 **Venez dire coucou sur le [salon de
 dev](xmpp:dev@conference.yunohost.org?join)** ! Si vous n'avez pas de client
