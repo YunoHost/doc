@@ -3,7 +3,7 @@
 * [Guide du contributeur](/contribute_fr)
 * [Qu’est-ce que YunoHost ?](/whatsyunohost_fr)
     * Développement
-        * <a href='https://dev.yunohost.org/projects/yunohost/roadmap' target='_BLANK'>Feuille de route du projet</a>
+        * <a href='https://github.com/YunoHost/issues/milestones?direction=asc&sort=title&state=open' target='_BLANK'>Feuille de route du projet</a>
         * [Liste des applications disponibles](/apps_fr)
         * [Préparer/empaqueter une nouvelle application](/packaging_apps_fr)
         * [Développer avec Docker](/docker_fr)
