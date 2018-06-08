@@ -17,7 +17,7 @@
 </div>
 
 <div dir="rtl" class="col col-md-5 col-md-offset-3">
-<a class="btn btn-danger btn-lg" href="/contributordoc_fr"><span class="glyphicon glyphicon-heart"></span> دليل المساهم</a>
+<a class="btn btn-danger btn-lg" href="/contributordoc"><span class="glyphicon glyphicon-heart"></span> دليل المساهم</a>
 <p><small class="text-muted">يحتوي على كافة المعلومات التي تخصنا و أسلوب عملنا و مساهمتنا</small></p>
 </div>
 

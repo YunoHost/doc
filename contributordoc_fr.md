@@ -1,13 +1,32 @@
-# Documentation contributeur YunoHost
+# Guide du contributeur
 
-* [Guide du contributeur](/contribute_fr)
-* [Qu’est-ce que YunoHost ?](/whatsyunohost_fr)
-    * Développement
-        * <a href='https://github.com/YunoHost/issues/milestones?direction=asc&sort=title&state=open' target='_BLANK'>Feuille de route du projet</a>
-        * [Liste des applications disponibles](/apps_fr)
-        * [Préparer/empaqueter une nouvelle application](/packaging_apps_fr)
-        * [Développer avec Docker](/docker_fr)
-        * [Présentation du fonctionnement de YunoHost](/package_list_fr)
-        * [Se créer un environnement de développement](/ynh_dev_fr)
-    * Documentation
-       * [Écrire de la documentation](/write_documentation_fr)
+* [Liste des façons de contribuer à YunoHost](/contribute_fr)
+* [Écrire de la documentation](/write_documentation_fr)
+* Packaging d'application
+   * [Liste d'apps souhaitées par la communauté](/apps_wishlist_fr)
+   * [Introduction générale au packaging d'apps](/packaging_apps_start_fr)
+   * [Introduction technique au packaging d'apps](/packaging_apps_fr)
+   * [Déployer un environnement de développement avec VirtualBox](packaging_apps_virtualbox_fr)
+   * [Manifest](packaging_apps_manifest_fr)
+   * [Scripts](packaging_apps_scripts_fr)
+   * [Gestion des arguments](packaging_apps_arguments_management_fr)
+   * [Configuration nginx](packaging_apps_nginx_conf_fr)
+   * [Multi-instance](packaging_apps_multiinstance_fr)
+   * [Fonctions utiles](packaging_apps_helpers_fr)
+   * [Utilisation de 'trap'](packaging_apps_trap_fr)
+   * [Ajouter son application à la liste community](https://github.com/YunoHost/Apps/#contributing)
+   * Tests de qualité
+       * [Package linter](https://github.com/YunoHost/package_linter)
+       * [Package check](https://github.com/YunoHost/package_check)
+       * [Niveaux des applications](packaging_apps_levels_fr)
+       * [Intégration continue des apps](https://ci-apps.yunohost.org/jenkins/)
+       * [Tableau de bord du CI des apps](https://dash.yunohost.org/appci/branch/stable)
+       * [YEP - YunoHost Enhancement Proposals](packaging_apps_guidelines_fr)
+* [Contribuer à la partie "core" de YunoHost](/dev_fr)
+   * [Déployer un environnement de dev avec ynh-dev](https://github.com/YunoHost/ynh-dev/blob/master/README.md)
+   * [Construction des paquets debian](https://github.com/YunoHost/vinaigrette/blob/master/README.md)
+   * Construction des images
+       * [x86 ISO](https://github.com/YunoHost/cd_build)
+       * [Images Raspberry Pi](https://github.com/YunoHost/rpi-image)
+       * [Autres images pour cartes ARM](https://github.com/YunoHost/arm-images)
+* [Utiliser l'API YunoHost en dehors de la webadmin](/admin_api_fr)
