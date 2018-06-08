@@ -25,6 +25,7 @@
 * [Contribuer à la partie "core" de YunoHost](/dev_fr)
    * [Déployer un environnement de dev avec ynh-dev](https://github.com/YunoHost/ynh-dev/blob/master/README.md)
    * [Construction des paquets debian](https://github.com/YunoHost/vinaigrette/blob/master/README.md)
+   * [Feuilles de route du projet](https://github.com/YunoHost/issues/milestones?direction=asc&sort=title&state=open)
    * Construction des images
        * [x86 ISO](https://github.com/YunoHost/cd_build)
        * [Images Raspberry Pi](https://github.com/YunoHost/rpi-image)
