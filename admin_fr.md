@@ -1,9 +1,6 @@
 # L’interface d’administration web
 
-YunoHost est fourni avec une interface graphique d’administration. L’autre méthode est d’utiliser la [moulinette](/moulinette_fr) ligne de commande.
-
-**Attention** : l’interface d’administration donne accès à beaucoup moins de fonctionnalités que la moulinette, car elle est en développement actif.
-
+YunoHost est fourni avec une interface graphique d’administration. L’autre méthode est d’utiliser la [ligne de commande](/commandline_fr).
 
 ### Accès
 

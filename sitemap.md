@@ -47,7 +47,7 @@
         * Administration
             * Command-line
                 * [Connect to your server with SSH](/ssh)
-                * [Command line administration](/moulinette)
+                * [Command line administration](/commandline)
             * [Web administration](/admin)
             * [Change administration password](/change_admin_password)
         * [Email](email_en)
