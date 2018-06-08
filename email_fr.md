@@ -27,7 +27,7 @@ Le protocole SMTP ne prévoit pas de mécanisme de vérification de l’expédit
 Si les courriels envoyés à un type d’adresse spécifique (par exemple les adresses Gmail) n’arrivent pas à destination, votre serveur (son adresse IP) a peut être été ajouté à la liste noire du fournisseur d’adresse courriel en question. Pour résoudre ce problème voici les [formulaires de retrait des listes noires](blacklist_forms_fr).
 
 #### Consulter les fichiers de log pour identifier le problème
-De nombreux messages permettant d’identifier les problèmes se trouvent enregistrés dans les fichiers de log du système. [Apprenez à les consulter](check_logfile_fr), pour pouvoir mieux comprendre ce qui cloche et trouver de l’aide sur le forum ou le salon de support.
+De nombreux messages permettant d’identifier les problèmes se trouvent enregistrés dans les fichiers de log du système. Apprenez à les consulter, pour pouvoir mieux comprendre ce qui cloche et trouver de l’aide sur le forum ou le salon de support.
 
 <!-- ajouter une doc pour consulter ses logs des services mail -->
 
