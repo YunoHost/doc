@@ -1,4 +1,4 @@
-# Migrate his emails
+# Migrating email from an email provider to a YunoHost instance
 
 *[Documentation linked to YunoHost email](/email_fr)*.
 
@@ -9,6 +9,7 @@ This tool must be installed on your desktop computer. The transfer method looks 
 **`Old email server −> desktop computer with ImapSync or Larch −> new email server`**
 
 ### ImapSync
+
 [ImapSync site](http://imapsync.lamiral.info/)
 
 Install ImapSync on your client computer by following this [guide](http://imapsync.lamiral.info/INSTALL):
@@ -24,6 +25,7 @@ imapsync --host1 <domain/IP> --port1 993 --ssl1 --user1 <user> --password1 <pass
 Note that transfer settings `--port 993` and `--ssl` are specific to YunoHost email server.
 
 ### Larch
+
 [Larch site](https://github.com/rgrove/larch/)
 
 After beforehand installed `gem`, install `larch` on your client computer:

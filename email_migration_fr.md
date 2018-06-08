@@ -1,4 +1,4 @@
-# Migration de ces emails
+# Migrer ses emails d'un ancien serveur mail vers YunoHost
 
 *[Documentation en rapport avec l’email de YunoHost](/email_fr)*.
 
@@ -9,6 +9,7 @@ Cet outil doit être installé sur votre ordinateur de bureau. La procédure de 
 **`Ancien serveur email −> ordinateur client avec ImapSync ou Larch −> nouveau serveur email`**
 
 ### ImapSync
+
 [Site d’ImapSync](http://imapsync.lamiral.info/)
 
 Installez ImapSync sur votre ordinateur client en suivant ce [guide](http://imapsync.lamiral.info/INSTALL) :
@@ -24,6 +25,7 @@ imapsync --host1 <domaine/IP> --port1 993 --ssl1 --user1 <utilisateur> --passwor
 Notez que les paramètres de transfert `--port 993` et `--ssl` sont spécifique à un serveur de mail YunoHost.
 
 ### Larch
+
 [Site de Larch](https://github.com/rgrove/larch/)
 
 Après avoir préalablement installé `gem`, installez `larch` sur votre ordinateur client :

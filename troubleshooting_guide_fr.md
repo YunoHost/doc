@@ -19,7 +19,7 @@ et [le salon de discussion Yunohost](support_fr) pour voir si d’autres ont eu 
 Les réponses à vos questions existent peut être déjà dans [la documentation](sitemap_fr).
 
 ### Vérifier l’aide dans les commandes en ligne
-Vous pouvez apprendre à utiliser les [commandes YunoHost](moulinette_fr)
+Vous pouvez apprendre à utiliser les [commandes YunoHost](/commandline_fr)
 
 ## Mise à jour
 Les problèmes ont souvent lieu après une mise à jour. Après une mise à jour, vous pouvez avoir envie de [mettre à jour votre application](app_update_fr).

@@ -1,4 +1,4 @@
-# Contributor documentation
+# Guide du contributeur
 
 * [Liste des façons de contribuer à YunoHost](/contribute_fr)
 * [Écrire de la documentation](/write_documentation_fr)

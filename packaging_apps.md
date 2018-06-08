@@ -38,7 +38,7 @@ Since YunoHost has a unified architecture, you will be able to guess most of the
 <a class="btn btn-lg btn-default" href="packaging_apps_multiinstance_en">Multi-instance</a>
 
 ### Hooks
-YunoHost provides a hook system, which is accessible via the packager's script callbacks in moulinette (CLI).
+YunoHost provides a hook system, which is accessible via the packager's script callbacks in command line.
 The scripts have to be placed in the `hooks` repository at the root of the YunoHost package, and must be named `priority-hook_name`, for example: `hooks/50-post_user_create` will be executed after each user creation.
 
 **Note**: `priority` is optional, default is `50`.
@@ -54,7 +54,7 @@ In order to test your package, you can execute your script standalone as `admin`
 su - admin -c "/bin/bash /path/to/my/script my_arg1 my_arg2"
 ```
 
-Or you can use [moulinette](/moulinette_en):
+Or you can use [command line](/commandline_en):
 ```bash
 yunohost app install /path/to/my/app/package
 ```

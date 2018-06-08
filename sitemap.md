@@ -37,8 +37,7 @@
            * [Use the YunoHost DNS resolver](/dns_resolver_en)
            * [Dynamic IP address: configure DynDNS](dns_dynamicip_en)
            * [Access his server on his local network](/dns_local_network_en)
-	   - [IPv6](ipv6_fr)
-           - [VPN](vpn_advantage)
+        - [VPN](vpn_advantage)
         * [Internet service provider](/isp)
             * [Generic configuration of the ISP router](/isp_box_config)
         * Applications
@@ -47,7 +46,7 @@
         * Administration
             * Command-line
                 * [Connect to your server with SSH](/ssh)
-                * [Command line administration](/moulinette)
+                * [Command line administration](/commandline)
             * [Web administration](/admin)
             * [Change administration password](/change_admin_password)
         * [Email](email_en)
@@ -95,16 +94,12 @@
            * [Write documentation](/write_documentation)
         * [Contribution](/contributordoc)
 
+
 * Project's life:
-   * [Changelog v.2.0](/changelog_2_0_en)
-   * [Changelog v.2.2](/changelog_2_2_en)
-   * [Roadmap](/roadmap)
    * [Frequently asked questions](/faq_en)
-   * [Contributors](contribs)
-   - [Project organization](project_organization)
-   * [Art Works](artworks_en)
+   * [Project organization](/project_organization)
    * [Blog](https://forum.yunohost.org/c/announcement)
-   - [Forum](https://forum.yunohost.org)
-   - [Chat rooms](chat_rooms_en)
-   * [Communication](communication_en)
+   * [Forum](https://forum.yunohost.org)
+   * [Chat rooms](/chat_rooms_en)
+   * [Communication](/communication_en)
    * [Support / Help](/help)
