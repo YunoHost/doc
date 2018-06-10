@@ -173,3 +173,4 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [ZNC](http://wiki.znc.in/ZNC)
 - [Zone-project](https://github.com/descl/ZONE)
 - [Zoneminder](https://github.com/ZoneMinder/zoneminder)
+- [microblog.pub](https://microblog.pub)
