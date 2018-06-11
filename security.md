@@ -61,6 +61,11 @@ nano /etc/ssh/sshd_config
 Port 22 # to replace by 9777 for example
 ```
 
+**Open the port** in firewall (you can use -6 option to limit forbid ipv4 connexion)
+```bash
+yunohost firewall allow TCP 9777
+``` 
+
 Save and restart SSH daemon. Switch over to the new port by restarting SSH.
 ```bash
 /etc/init.d/ssh restart
@@ -70,7 +75,6 @@ Then restart the iptables firewall and close the old port in iptables.
 ```bash
 yunohost firewall reload
 yunohost firewall disallow <your_old_ssh_port_number> # port by default 22
-yunohost firewall disallow --ipv6 TCP <your_new_ssh_port_number> # for ipv6
 ``` 
 
 **For the next SSH connections ** you need to add the `-p` option followed by the SSH port number.
