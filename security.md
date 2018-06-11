@@ -42,7 +42,7 @@ PasswordAuthentication no
 
 Save and restart SSH daemon.
 ```bash
-/etc/init.d/ssh restart
+systemctl restart ssh
 ```
 ---
 
@@ -68,7 +68,7 @@ yunohost firewall allow TCP 9777
 
 Save and restart SSH daemon. Switch over to the new port by restarting SSH.
 ```bash
-/etc/init.d/ssh restart
+systemctl restart ssh
 ```
 Then restart the iptables firewall and close the old port in iptables.
 
@@ -117,7 +117,7 @@ Only users listed in the AllowUsers directive will then be allowed to connect vi
 
 Save and restart SSH daemon.
 ```bash
-/etc/init.d/ssh restart
+systemctl restart ssh
 ```
 ---
 
