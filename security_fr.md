@@ -50,6 +50,9 @@ PasswordAuthentication no
 ```
 
 Sauvegardez et relancez le démon SSH.
+```bash
+systemctl restart ssh
+```
 
 ---
 
@@ -61,19 +64,27 @@ Pour éviter des tentatives de connexion SSH par des robots qui scannent tout In
 
 ```bash
 nano /etc/ssh/sshd_config
-
-# Recherchez la ligne « Port » et remplacez le numéro du port (par défaut 22) par un autre numéro non utilisé
+```
+**Recherchez la ligne « Port »** et remplacez le numéro du port (par défaut 22) par un autre numéro non utilisé
+```bash
 Port 22 # à remplacer par exemple par 9777
 ```
 
+**Ouvrez le port** choisi dans le parefeu (vous pouvez utiliser l'option -6 pour interdire la connexion via ipv4)
++```bash
++yunohost firewall allow TCP <votre_numero_de_port_ssh>
++``` 
+ ```
 Sauvegardez et relancez le démon SSH.
+```bash
+systemctl restart ssh
+```
 
 Ensuite redémarrez le firewall iptables et fermez l’ancien port dans iptables.
 
 ```bash
 yunohost firewall reload
 yunohost firewall disallow TCP <votre numéro de port> # port par défaut 22
-yunohost firewall disallow --ipv6 TCP <votre numéro de port> # pour ipv6
 ``` 
 
 **Pour les prochaines connexions SSH** il faudra ajouter l’option -p suivie du numéro de port SSH.
@@ -115,6 +126,9 @@ AllowUsers nom_utilisateur
 Seuls les utilisateurs mentionnés dans la directive AllowUsers seront alors autorisés à se connecter via SSH, ce qui exclut donc l’utilisateur admin.
 
 Sauvegardez et relancez le démon SSH.
+```bash
+systemctl restart ssh
+```
 
 ---
 
