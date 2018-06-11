@@ -55,7 +55,7 @@ To prevent SSH connection attempts by robots that scan the Internet for any atte
 ```bash
 nano /etc/ssh/sshd_config
 ```
-**Search line "Port" and remplace port number (by default 22) by another not used number
+**Search line "Port" and replace** port number (by default 22) by another not used number
 ```bash
 # What ports, IPs and protocols we listen for
 Port 22 # to replace by 9777 for example
