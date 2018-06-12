@@ -11,7 +11,7 @@
 
 ## Installation
 
-* Télécharger la dernière **[image d’ARMbian Jessie pour la carte ARM](http://www.armbian.com/download)**.
+* Télécharger la dernière **[image d’ARMbian Stretch pour la carte ARM](http://www.armbian.com/download)**.
 
 <a class="btn btn-lg btn-default" href="/copy_image_fr">Copier l’image sur une carte SD</a>
 

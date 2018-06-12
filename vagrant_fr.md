@@ -20,13 +20,9 @@ cd YunoHost
 
 La commande suivante va initialiser le projet avec une image YunoHost de base
 ```bash
-vagrant box add yunohost/jessie-stable https://build.yunohost.org/yunohost-jessie-stable.box --provider virtualbox
-vagrant init yunohost/jessie-stable
+vagrant box add yunohost/stretch-unstable https://build.yunohost.org/yunohost-stretch-unstable.box --provider virtualbox
+vagrant init yunohost/stretch-unstable
 ```
-<blockquote>
-<span class="text-warning">/!\</span>Si vous préférez utiliser la version beta https://build.yunohost.org/yunohost-jessie-testing.box
-</blockquote>
-
 Puis, il faut activer le réseau pour l'instance YunoHost:
 ```bash
 sed -i 's/# config\.vm\.network "private_network"/config.vm.network "private_network"/' Vagrantfile

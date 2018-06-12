@@ -84,7 +84,7 @@ This page lists a few installation guides.
 
 <div class="col col-md-3 text-center">
 <a href="/install_on_debian"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
-<b><p>On Debian 8/Jessie</p></b></a>
+<b><p>On Debian 9/Stretch</p></b></a>
 </div>
 
 </div>

@@ -94,16 +94,14 @@ Voici une petite description de leurs fonctions respectives :
 Les autres services installés par des applications vont aussi apparaître. Par exemple `seafile-serve` utilisé par l’application Seafile et `uwsgi` qui est utilisé par des applications python comme Searx.
 ##### démarrer ou arrêter un service identifié avec YunoHost :
 ```bash
-sudo yunohost service start <servicename>
-sudo yunohost service stop <servicename>
+yunohost service start <servicename>
+yunohost service stop <servicename>
 ```
 Vous pouvez aussi utiliser la commande Debian :
 ```bash
-sudo service <servicename> start/stop/restart/reload
+systemctl start/stop/restart/reload <servicename>
 ```
 Après une tentative de lancement, vérifiez toujours que le service est lancé.
-**Note** : Debian Jessie utilise désormais `systemd` à la place de `upstart`. Cela est pour l’instant toujours compatible avec la manière dont Debian Wheezy gère les services.
-[Ressources utiles sur systemd](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet).
 
 ### Logs
 Si un service ne démarre pas, vous devez vérifier les logs pour voir ce qui ne pose problème. Il n’y a pas de règles définies où les services doivent stocker leurs logs. Cependant, ceux-ci se trouvent pour la plupart dans :  
@@ -126,7 +124,7 @@ Logs du serveur de chat XMPP
 ##### mysql.err, mysql.log, mysql/error.log
 Logs de la base de données MySQL. Ils doivent être vides sauf si vous avez des problèmes avec MySQL.
 
-##### php5-fpm.log
+##### php7.0-fpm.log
 Lieu générique d’emplacement des logs pour les applications PHP.
 
 ##### yunohost.log

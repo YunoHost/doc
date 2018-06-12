@@ -89,17 +89,16 @@ All services should be enabled and running. Except glances (optional). If some a
 Others services installed by applications can also be present. For instance, `seafile-serve` which serves Seafile app and `uwsgi` which serve Python apps such as Searx.
 
 ##### Start or stop a service which is registered with YunoHost:
+
 ```bash
 sudo yunohost service start <servicename>
 sudo yunohost service stop <servicename>
 ```
 You can also use the generic Debian command:
 ```bash
-sudo service <servicename> start/stop/restart/reload
+sudo systemctl start/stop/restart/reload <servicename>
 ```
 After a launch attempt, always check that the service is running.
-
-**Note**: Debian Jessie now uses `systemd` instead of `upstart`, but, for now it's fully compatible with Debian Wheezy way to handle services. [Useful resource on systemd](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet).
 
 ### Logs
 If a service won't start you have to check the logs to see what's wrong. There is no generic way for services to store their logs, but there are mainly stocked in:
@@ -122,7 +121,7 @@ XMPP chat server logs.
 ##### mysql.err, mysql.log, mysql/error.log
 MySQL database logs, these should be empty unless you have trouble with MySQL.
 
-##### php5-fpm.log
+##### php7.0-fpm.log
 Generic logs for PHP apps.
 
 ##### yunohost.log

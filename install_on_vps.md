@@ -8,7 +8,7 @@
 
 * A dedicated or virtual private server
 * with at least **512MB** RAM
-* and **Debian 8.x (Jessie) 64bits** as operating system
+* and **Debian 9.x (Stretch) 64bits** as operating system
 
 ---
 

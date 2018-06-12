@@ -78,7 +78,7 @@ Cette page liste plusieurs types d’installations, classés par catégories.
 
 <div class="col col-md-3 text-center">
 <a href="/install_on_debian_fr"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
-<b><p>Sur Debian 8/Jessie</p></b></a>
+<b><p>Sur Debian 9/Stretch</p></b></a>
 </div>
 
 </div>
