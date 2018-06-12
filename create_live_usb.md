@@ -1,5 +1,8 @@
 # Create a YunoHost Live ISO
 
+<div class="alert alert-danger">This page is deprecated / obsolete / outdated. Information
+it contains should be updated (or should be removed).</div>
+
 Tested on Debian Wheezy (should work on Ubuntu as well).    
 Original tutorial here: http://willhaley.com/blog/create-a-custom-debian-live-environment/
 
