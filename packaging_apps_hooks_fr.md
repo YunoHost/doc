@@ -48,7 +48,6 @@ Services pris en charge par regen-conf:
  - nslcd
  - nsswitch
  - postfix
- - rmilter
  - rspamd
  - slapd
  - ssh
