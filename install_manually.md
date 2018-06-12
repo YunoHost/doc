@@ -6,7 +6,7 @@ Once you have access to a command line on your server (either directly or throug
 bash <(wget -q -O- https://install.yunohost.org/)
 ```
 
-<small>*(If `wget` is not installed on your system, you might need to install it with `apt-get install wget`)*</small>
+<small>*(If `wget` is not installed on your system, you might need to install it with `apt install wget`)*</small>
 
 Once the installation is finished, you may want to [**proceed to post-installation**](/postinstall)
 

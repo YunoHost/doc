@@ -4,7 +4,7 @@ Voir https://www.torproject.org/docs/tor-hidden-service.html.en (anglais)
 
 ### Installer Tor
 ```bash
-sudo apt-get install tor 
+apt install tor 
 ```
 
 ### Configurer notre service caché

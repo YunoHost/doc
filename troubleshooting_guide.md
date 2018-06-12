@@ -27,13 +27,13 @@ Problems often occur after an upgrade. After a YunoHost upgrade you may want to 
 
 You are probably familiar with:
 ```bash
-sudo apt-get update && sudo apt-get dist-upgrade
+$ apt update && apt dist-upgrade
 ```
 Most of the time it's enough. But in some cases it's possible that some process are still using old versions of upgraded files (such as libraries), that can cause bug. In rare cases that can lead to security concern (ex: upgrade OpenSSL because of a security bug, Nginx will continue to use the version it has in memory). The utility Checkrestart will help you to find and restart them.
 
 ```bash
-sudo apt-get install debian-goodies
-sudo checkrestart
+$ apt install debian-goodies
+$ checkrestart
 Found 0 processes using old versions of upgraded files
 ```
 If some process are running with old librairies versions checkrestart will tell you and propose you a way to restart them. In some cases checkrestart can't find a way to restart them.
@@ -48,10 +48,10 @@ You can also use [this script](https://github.com/octopuce/octopuce-goodies/blob
 
 /!\ Always check if there is a upgrade script and read it if you can /!\
 ```bash
-sudo yunohost app upgrade
+$ yunohost app upgrade
 Warning: You must provide an URL to upgrade your custom app app_name
 Error: No app to upgrade
-sudo yunohost app upgrade -u https://github.com/user/someapp_ynh app_name
+$ yunohost app upgrade -u https://github.com/user/someapp_ynh app_name
 ```
 
 ## Services
@@ -61,7 +61,7 @@ YunoHost uses a bunch of software to accomplish its purpose. Most of theses soft
 When something doesn't work on your YunoHost, one of the first things to do is to check that all services used by YunoHost are running.
 YunoHost include a helper to see the status of all services used by YunoHost:
 ```bash
-sudo yunohost service status
+$ yunohost service status
 ```
 
 Sample result:
@@ -91,21 +91,20 @@ Others services installed by applications can also be present. For instance, `se
 ##### Start or stop a service which is registered with YunoHost:
 
 ```bash
-sudo yunohost service start <servicename>
-sudo yunohost service stop <servicename>
+$ yunohost service start <servicename>
+$ yunohost service stop <servicename>
 ```
 You can also use the generic Debian command:
 ```bash
-sudo systemctl start/stop/restart/reload <servicename>
+$ systemctl start/stop/restart/reload <servicename>
 ```
 After a launch attempt, always check that the service is running.
 
 ### Logs
-If a service won't start you have to check the logs to see what's wrong. There is no generic way for services to store their logs, but there are mainly stocked in:
-```bash
-/var/log/
-```
+If a service won't start you have to check the logs to see what's wrong. There is no generic way for services to store their logs, but there are mainly stocked in: `/var/log/`
+
 Here are the some useful logs files for YunoHost:
+
 ##### auth.log
 Contains connections or attempt of connection to your server. It includes every web, ssh, cron job connection. It also stockes all the failed (hopefully) attempts to connect by a potential intruders connections.
 
@@ -227,7 +226,7 @@ You can view (don't edit it, it is oftently overwritten) your current SSOwat con
 ```
 Which is generated with the command:
 ```bash
-sudo yunohost app ssowatconf
+yunohost app ssowatconf
 ```
 Protip: if you want to add a personalized rule for SSOwat, do it in this file:
 ```bash
@@ -264,7 +263,7 @@ In each app packages you will find:
 * **config/**: config directory
 * **settings.yml**: config of the app, also accessible with:
 ```bash
-sudo yunohost app setting appname settingname
+yunohost app setting appname settingname
 ```
 
 ### Logs

@@ -41,7 +41,7 @@ Pour pouvoir envoyer des mails, passer le blocage en « inactif ».
 
 Il faut installer le paquet `cifs-utils`
 ```bash
-$ sudo apt-get install cifs-utils
+$ sudo apt install cifs-utils
 ```
 
 Il faut créer un point de montage (ici `/home/monlogin/freebox`)

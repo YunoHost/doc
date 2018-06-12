@@ -86,7 +86,7 @@ ssh root@192.168.x.y
 
 Mettre à jour le système (environ 15 minutes) :
 ```bash
-apt-get update && apt-get dist-upgrade
+apt update && apt dist-upgrade
 ```
 
 ## Procéder à la postinstallation

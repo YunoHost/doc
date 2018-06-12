@@ -69,12 +69,12 @@ Si vous avez une erreur "(SASL authentication failed; cannot authenticate to ser
 Vérifier la présence de libsasl2-modules et de sasl2-bin :
 
 ```bash
-sudo apt-cache search libsasl2-modules
-sudo apt-cache search sasl2-bin
+apt search libsasl2-modules
+apt search sasl2-bin
 ```
 
 Si ils ne sont pas présents, installez-les :
 
 ```bash
-sudo apt-get install libsasl2-modules sasl2-bin
+apt install libsasl2-modules sasl2-bin
 ```
