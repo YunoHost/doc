@@ -153,6 +153,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Streisand](https://github.com/jlund/streisand)
 - [SVG-Edit](https://github.com/SVG-Edit/svgedit)
 - [Taiga](https://taiga.io)
+- [Tania](http://gettania.org/)
 - [Taskwarrior](https://taskwarrior.org)
 - [TorChat](https://github.com/prof7bit/TorChat)
 - [Torrent Tunes](https://github.com/tchoulihan/torrenttunes-client)
