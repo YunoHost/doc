@@ -21,7 +21,7 @@ Before setting up a server at home, it is recommended that you know the [possibl
 
 ## Installation using the image (recommended)
 
-<a class="btn btn-lg btn-default" href="https://build.yunohost.org/">0. Download the pre-installed image for Raspberry Pi</a>
+<a class="btn btn-lg btn-default" href="/images">0. Download the pre-installed image for Raspberry Pi</a>
 
 <a class="btn btn-lg btn-default" href="/copy_image">1. Copy image to the SD card</a>
 
