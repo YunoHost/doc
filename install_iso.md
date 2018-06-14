@@ -22,7 +22,7 @@ You can use any computer with **256MB RAM or more**.
 ## Installation steps
 
 
-<a class="btn btn-lg btn-default" href="https://build.yunohost.org">0. download your ISO image</a>
+<a class="btn btn-lg btn-default" href="https://build.yunohost.org">0. Download your ISO image</a>
 
 <a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Burn or copy ISO image</a>
 
