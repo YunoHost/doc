@@ -86,21 +86,6 @@ Un [salon de développement](xmpp:dev@conference.yunohost.org?join) et une <a hr
 
 ---
 
-<!--
-
-<div class="row">
-<div class="col col-md-3 lead">
-<span class="glyphicon glyphicon glyphicon-upload"></span>&nbsp;&nbsp; Seedez
-</div>
-<div class="col col-md-8" markdown="1">
-Seedez (partagez) avec le système de Torrent les images de YunoHost : [live](http://build.yunohost.org/yunohost-live.iso.torrent), [32 bits](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent) et [64 bits](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent).
-</div>
-</div>
-
----
-
--->
-
 <br>
 <br>
 <p class="lead" markdown="1">Dans tous les cas, venez sur le [salon de développement](xmpp:dev@conference.yunohost.org?join) pour contribuer :-)</p>

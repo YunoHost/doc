@@ -88,22 +88,6 @@ A <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/apps">mailing-list<
 </div>
 </div>
 
-
-<!--
-
-<div class="row">
-<div class="col col-md-3 lead">
-<span class="glyphicon glyphicon glyphicon-upload"></span>&nbsp;&nbsp; Seed
-</div>
-<div class="col col-md-8" markdown="1">
-Seed (share) YunoHost images with Torrent system: [live](http://build.yunohost.org/yunohost-live.iso.torrent), [32 bits](http://build.yunohost.org/yunohostv2-latest-i386.iso.torrent) and [64 bits](http://build.yunohost.org/yunohostv2-latest-amd64.iso.torrent).
-</div>
-</div>
-
----
-
--->
-
 ---
 
 <br>
