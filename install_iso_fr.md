@@ -20,6 +20,8 @@
 
 ## Étapes d’installation
 
+<a class="btn btn-lg btn-default" href="https://build.yunohost.org">0. Télécharger l'image ISO</a>
+
 <a class="btn btn-lg btn-default" href="/burn_or_copy_iso_fr">1. Copier l’image ISO</a>
 
 <a class="btn btn-lg btn-default" href="/boot_and_graphical_install_fr">2. Démarrer & installer</a>
