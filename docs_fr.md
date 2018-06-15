@@ -23,10 +23,11 @@ La documentation de YunoHost s’articule autour de trois sections :
 
 </div>
 
-<div class="row text-center" style="margin-top: 2em;">
-    <div class="col col-md-5 col-md-offset-3">
-    <a class="btn btn-default btn-lg" href="/sitemap_fr"><span class="glyphicon glyphicon-list"></span> Plan du site</a>
-    <p><small class="text-muted">Liste de toutes les pages du site</small></p>
-    </div>
-
-</div>
+* Vie du projet :
+   * [Foire aux questions](/faq_fr)
+   - [Organisation du projet](project_organization_fr)
+   * [Blog](https://forum.yunohost.org/c/announcement)
+   - [Forum](https://forum.yunohost.org)
+   - [Salons de discussions](/chat_rooms_fr)
+   * [Communication extérieure](/communication)
+   * [Support / Aide](/help_fr)

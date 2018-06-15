@@ -23,10 +23,11 @@
 
 </div>
 
-<div class="row text-center" style="margin-top: 2em;">
-    <div dir="rtl" class="col col-md-5 col-md-offset-3">
-    <a class="btn btn-default btn-lg" href="/sitemap_fr"><span class="glyphicon glyphicon-list"></span> خريطة الموقع</a>
-    <p><small class="text-muted">تحتوي على قائمة كافة صفحات الموقع</small></p>
-    </div>
-
-</div>
+* Project's life:
+   * [Frequently asked questions](/faq_en)
+   * [Project organization](/project_organization)
+   * [Blog](https://forum.yunohost.org/c/announcement)
+   * [Forum](https://forum.yunohost.org)
+   * [Chat rooms](/chat_rooms_en)
+   * [Communication](/communication_en)
+   * [Support / Help](/help)

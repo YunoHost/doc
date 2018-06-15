@@ -16,7 +16,7 @@ Garder à l’esprit que quand vous installez une application, vous exécutez du
 et [le salon de discussion Yunohost](support_fr) pour voir si d’autres ont eu des problèmes avec l’application.
 
 ### Vérifier la documentation officielle
-Les réponses à vos questions existent peut être déjà dans [la documentation](sitemap_fr).
+Les réponses à vos questions existent peut être déjà dans [la documentation](docs_fr).
 
 ### Vérifier l’aide dans les commandes en ligne
 Vous pouvez apprendre à utiliser les [commandes YunoHost](/commandline_fr)
