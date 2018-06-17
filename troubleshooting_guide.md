@@ -15,7 +15,7 @@ Keep in mind that when you install an app, you execute code on your server with 
 From my experience, some packaging are excellent and others can break some part of your YunoHost instance. Some packages are unmaintained. So before install check package issues, the [Forum](http://forum.yunohost.org/) and the [YunoHost support room](support_en) to see if other have problem with the app.
 
 ### Check the official documentation
-Answer to your question may be already in [the documentation](https://yunohost.org/#/sitemap_en).
+Answer to your question may be already in [the documentation](https://yunohost.org/#/docs_en).
 
 ### Check the command line help
 Learn how to use the [YunoHost commands](https://yunohost.org/#/commandline) like a pro.
