@@ -18,7 +18,7 @@
 
 ## Étapes d’installation
 
-<a class="btn btn-lg btn-default" href="/images">0. Télécharger l'image ISO</a>
+<a class="btn btn-lg btn-default" href="/images_en">0. Télécharger l'image ISO</a>
 
 <a class="btn btn-lg btn-default" href="/burn_or_copy_iso_fr">1. Copier l’image ISO</a>
 
