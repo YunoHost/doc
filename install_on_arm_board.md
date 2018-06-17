@@ -14,7 +14,7 @@
 ---
 
 ## Installation
-* Download the latest **[image of ARMbian Jessie for the ARM board](http://www.armbian.com/download)**
+* Download the latest **[image of ARMbian Stretch for the ARM board](http://www.armbian.com/download)**
 
 <a class="btn btn-lg btn-default" href="/copy_image">Copy image to the SD card</a>
 

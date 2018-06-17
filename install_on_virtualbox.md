@@ -7,7 +7,7 @@
 <img src="/images/virtualbox.png" width=200>
 
 * A x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine.
-* The latest stable **YunoHost ISO image**, available [here](https://build.yunohost.org).
+* The latest stable **YunoHost ISO image**, available [here](/images).
 
 
 ---
@@ -48,7 +48,7 @@ Start the virtual machine
 
 <br>
 
-You will have to select your ISO image `yunohostv2-latest-amd64.iso` here, then you should see the YunoHost's boot screen.
+You will have to select your ISO image here, then you should see the YunoHost's boot screen.
 
 <br>
 

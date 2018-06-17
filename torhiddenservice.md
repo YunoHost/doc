@@ -4,7 +4,7 @@ See https://www.torproject.org/docs/tor-hidden-service.html.en
 
 ### Installing Tor
 ```bash
-sudo apt-get install tor 
+apt install tor 
 ```
 
 ### Configuring our hidden service

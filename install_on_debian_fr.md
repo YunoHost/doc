@@ -8,8 +8,8 @@
 
 Sur une plateforme ARM, un VPS, un serveur dédié, un ordinateur x86 standard, un vieux Macintosh,...
 
-* avec **Debian 8** (Jessie) d’installé
-* connecté à Internet avec un câble RJ-45
+* avec **Debian 9** (Stretch) installé
+* connecté à Internet
 * avec un **accès root** directement ou par SSH
 
 <img width=650 src="/images/debian_install.png">

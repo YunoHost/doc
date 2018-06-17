@@ -88,7 +88,7 @@ After connecting, you will be asked to changed the root password. First, enter *
 
 Update your server with the following commands. It can take around 15 minutes.
 ```bash
-apt-get update && apt-get dist-upgrade
+apt update && apt dist-upgrade
 ```
 
 ## Proceed to post-installation

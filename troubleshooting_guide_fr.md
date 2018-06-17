@@ -28,15 +28,15 @@ Les problèmes ont souvent lieu après une mise à jour. Après une mise à jour
 **Vérifier si un processus utilise une ancienne librairie**
 vous avez sûrement l’habitude d’utiliser :
 ```bash
-sudo apt-get update && sudo apt-get dist-upgrade
+$ apt update && apt dist-upgrade
 ```
 La plupart du temps, cela suffit. Mais dans certaines situations, il est possible que certains processus utilisent toujours d’anciennes bibliothèques non mises à jour. 
 Cela peut entraîner des bugs et, dans certains rares cas, des problèmes de sécurité (ex : lors d’une mise à jour de OpenSSL à cause d’une faille de sécurité, Nginx va continuer à utiliser la version dont il dispose en mémoire). L’utilitaire Checkrestart va vous aider à identifier ces processus et les redémarrer.
 
 ```bash
-sudo apt-get install debian-goodies
-sudo checkrestart
-Found 0 processes using old versions of upgraded files
+$ apt install debian-goodies
+checkrestart
+# Found 0 processes using old versions of upgraded files
 ```
 Si des processus fonctionnent avec des vieilles versions de bibliothèques, checkrestart va vous le dire et vous proposer une manière de les redémarrer. Il est possible que checkrestart ne trouve pas de manière de les redémarrer. Attention, il faut opérer l’opération manuellement.
 
@@ -52,10 +52,11 @@ Vous pouvez aussi utiliser [ce script](https://github.com/octopuce/octopuce-good
 
 
 ```bash
-sudo yunohost app upgrade
+$ yunohost app upgrade
 Warning: You must provide an URL to upgrade your custom app app_name
 Error: No app to upgrade
-sudo yunohost app upgrade -u https://github.com/user/someapp_ynh app_name
+
+$ yunohost app upgrade -u https://github.com/user/someapp_ynh app_name
 ```
 
 ## Les services
@@ -65,7 +66,7 @@ YunoHost utilise toute une série de logiciels pour fonctionner. La plupart de c
 Quand quelque chose ne fonctionne pas, une des premières choses à faire est de vérifier que tous les services utilisés par YunoHost sont lancés.
 YunoHost inclus un outil qui permet de visualiser tous les services utilisés par YunoHost :
 ```bash
-sudo yunohost service status
+yunohost service status
 ```
 Exemple de résultat :
 
@@ -94,16 +95,14 @@ Voici une petite description de leurs fonctions respectives :
 Les autres services installés par des applications vont aussi apparaître. Par exemple `seafile-serve` utilisé par l’application Seafile et `uwsgi` qui est utilisé par des applications python comme Searx.
 ##### démarrer ou arrêter un service identifié avec YunoHost :
 ```bash
-sudo yunohost service start <servicename>
-sudo yunohost service stop <servicename>
+yunohost service start <servicename>
+yunohost service stop <servicename>
 ```
 Vous pouvez aussi utiliser la commande Debian :
 ```bash
-sudo service <servicename> start/stop/restart/reload
+systemctl start/stop/restart/reload <servicename>
 ```
 Après une tentative de lancement, vérifiez toujours que le service est lancé.
-**Note** : Debian Jessie utilise désormais `systemd` à la place de `upstart`. Cela est pour l’instant toujours compatible avec la manière dont Debian Wheezy gère les services.
-[Ressources utiles sur systemd](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet).
 
 ### Logs
 Si un service ne démarre pas, vous devez vérifier les logs pour voir ce qui ne pose problème. Il n’y a pas de règles définies où les services doivent stocker leurs logs. Cependant, ceux-ci se trouvent pour la plupart dans :  
@@ -126,7 +125,7 @@ Logs du serveur de chat XMPP
 ##### mysql.err, mysql.log, mysql/error.log
 Logs de la base de données MySQL. Ils doivent être vides sauf si vous avez des problèmes avec MySQL.
 
-##### php5-fpm.log
+##### php7.0-fpm.log
 Lieu générique d’emplacement des logs pour les applications PHP.
 
 ##### yunohost.log
