@@ -21,7 +21,7 @@ Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissan
 
 ## Installation avec l'image (recommandée)
 
-<a class="btn btn-lg btn-default" href="/images_en">1. Télécharger l'image pour Raspberry Pi</a>
+<a class="btn btn-lg btn-default" href="/images_fr">1. Télécharger l'image pour Raspberry Pi</a>
 
 <a class="btn btn-lg btn-default" href="/copy_image_fr">2. Copier l’image sur une carte SD</a>
 
