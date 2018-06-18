@@ -7,7 +7,7 @@
 <img src="/images/virtualbox.png" width=200>
 
 * Un ordinateur x86 avec VirtualBox installé et assez de RAM disponible pour lancer une petite machine virtuelle.
-* La dernière **image ISO YunoHost** stable, disponible [ici](/images_en).
+* La dernière **image ISO YunoHost** stable, disponible [ici](/images_fr).
 
 ---
 
