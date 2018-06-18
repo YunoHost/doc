@@ -37,7 +37,7 @@ Vérifiez que votre serveur est bien branché et réessayez.</div>
 
 ## <small>4.</small> Log in
 
-Après avoir redémarrer, votre machine devrait afficher un écran noir avec
+Après avoir redémarré, votre machine devrait afficher un écran noir avec
 quelques mots vous invitant à vous identifier. Vous pouvez utiliser les
 identifiants suivants :
 
