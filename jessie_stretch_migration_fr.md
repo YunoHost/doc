@@ -18,7 +18,7 @@ L'objectif cette page est de décrire le processus de migration d'une instance e
 
 #### Depuis la webadmin
 
-Après avoir mis à jour vers la version 2.7.14, allez dans Outils > Migrations pour accéder à l'interface de migration. Il vous faudra ensuite lire l'avertissement attentivement et l'accepter pour lancer la migration. Les logs seront affichés dans la barre de message en haut (vous pouvez approcer la souris dessus pour voir l'historique en entier).
+Après avoir mis à jour vers la version 2.7.14, allez dans Outils > Migrations pour accéder à l'interface de migration. Il vous faudra ensuite lire l'avertissement attentivement et l'accepter pour lancer la migration. Les logs seront affichés dans la barre de message en haut (vous pouvez approcher la souris dessus pour voir l'historique en entier).
 
 #### Depuis la ligne de commande
 
