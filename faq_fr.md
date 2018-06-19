@@ -69,9 +69,7 @@ Oui, c'est possible ! YunoHost a besoin de payer des serveurs et noms de domaine
 
 Pour donner ça se passe via notre [Liberapay](https://liberapay.com/YunoHost)
 
-Pour le moment, nous avons mis en place un liberapay pour recevoir des dons.
-Cependant, nous bénéficions de contributions en nature apportées par des associations,
-comme des serveurs.
+Si vous le pouvez, vous pouvez aussi faire des contributions en nature (une partie de notre infrastructure viens d'association qui nous fournissent des serveurs).
 
 
 #### Comment puis-je contribuer au projet ?
