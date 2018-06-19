@@ -60,7 +60,7 @@ projet (hormis quelques frais de serveurs et stickers :P).
 
 Étant donné que certains contributeurs sont très engagés dans ce projet, nous réfléchissons à un moyen de rendre pérenniser le projet.
 
-Il est questions de financement par dons ou subventions, certains contributeurs mènent par ailleurs des activités professionnelles liées à YunoHost, .
+Il est question de financement par dons ou subventions, certains contributeurs mènent par ailleurs des activités professionnelles liées à YunoHost, .
 
 
 #### Puis-je faire un don au projet ?
