@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="annotations">
-            <div class="col-sm-6 annotation"><a href="{file}.sum"><span class="glyphicon glyphicon-barcode" aria-hidden="true"></span> Checksum</a></div>
+            <div class="col-sm-6 annotation"><a href="{file}.sha256sum"><span class="glyphicon glyphicon-barcode" aria-hidden="true"></span> Checksum</a></div>
             <div class="col-sm-6 annotation"><a href="{file}.sig"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> Signature</a></div>
         </div>
         <div class="btn-group" role="group">
