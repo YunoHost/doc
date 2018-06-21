@@ -11,7 +11,7 @@ Vous pouvez récupérer et envoyer des emails avec votre instance YunoHost grâc
 
 ### <img src="images/thunderbird.png" width=50> Configurer Mozilla Thunderbird
 
-L'outil de détection automatique de Thunderbird ne fonctionne actuellement pas avec YunoHost. Il vous faudra remplir les champs manuellement. Commencez par remplir les informations de base (Nom, adresse et mot de passe), cliquez sur Continuer puis Configuration Manuelle. Enlevez le `.` avant le nom de domaine. Sélectionnez le port 993 avec SSL/TLS pour IMAP, et le port 586 avec STARTTLS pour SMTP. Sélectionnez 'Mot de passe normal' pour l'authentification. Testez la configuration puis validez. (Il vous faudra ensuite possiblement accepter des certificats pour que tout fonctionne correctement.)
+L'outil de détection automatique de Thunderbird ne fonctionne actuellement pas avec YunoHost. Il vous faudra remplir les champs manuellement. Commencez par remplir les informations de base (Nom, adresse et mot de passe), cliquez sur Continuer puis Configuration Manuelle. Enlevez le `.` avant le nom de domaine. Sélectionnez le port 993 avec SSL/TLS pour IMAP, et le port 587 avec STARTTLS pour SMTP. Sélectionnez 'Mot de passe normal' pour l'authentification. Testez la configuration puis validez. (Il vous faudra ensuite possiblement accepter des certificats pour que tout fonctionne correctement.)
 
 <img src="/images/thunderbird_config_1.png" width=900>
 <img src="/images/thunderbird_config_2.png" width=900>
