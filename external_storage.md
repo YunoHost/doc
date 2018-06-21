@@ -77,8 +77,10 @@ mkdir /media/storage
 Then we can manually mount the disk with :
 
 ```bash
-mount /dev/YOUR_DISK /media/storage
+mount /dev/YOUR_DISK1 /media/storage
 ```
+
+(Here, `/dev/YOUR_DISK1` corresponds to the first partition on the disk)
 
 Next, you should be able to create files in `/media/stockage`, and, for instance, add `/media/stockage` as an external drive in Nextcloud.
 
@@ -89,9 +91,9 @@ So far, we only mounted the disk manually. But it can be nice and useful to have
 Let's start by finding the UUID (universal identifier) of the disk with :
 
 ```bash
-blkid | grep "/dev/YOUR_DISK:"
+blkid | grep "/dev/YOUR_DISK1:"
 # Should return something like
-# /dev/sda:UUID="cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7" TYPE="ext4" PARTUUID="34e4b02c-02"
+# /dev/sda1:UUID="cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7" TYPE="ext4" PARTUUID="34e4b02c-02"
 ```
 
 Let's add a line in the file `/etc/fstab` which manages which disks are mounted at boot. We open this file with `nano` :

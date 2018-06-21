@@ -8,7 +8,7 @@ Si vous n'avez pas dédié une grande partition à `/home` avant d'installer Yun
 
 Les étapes à réaliser, même si elles sont relativement simples, peuvent parfois paraître techniques et nécessitent dans tous les cas **de prendre son temps**.
 
-Vous devez également être connecté en root sur votre système, par exemple via SSH. (Note : en étant connecté en tant qu'utilisateur `admin`, vous pouvez passer root avec `sudo su`)
+Vous devez également être connecté en root sur votre système, par exemple via [SSH](/ssh). (Note : en étant connecté en tant qu'utilisateur `admin`, vous pouvez passer root avec `sudo su`)
 
 Il peut être utilise de [faire un backup](/backup) de votre installation.
 
@@ -76,8 +76,10 @@ mkdir /media/stockage
 Puis nous pouvons monter le disque manuellement avec : 
 
 ```bash
-mount /dev/VOTRE_DISQUE /media/stockage
+mount /dev/VOTRE_DISQUE1 /media/stockage
 ```
+
+(Ici, `/dev/VOTRE_DISQUE1` corresponds à la première partition sur le disque)
 
 Ensuite, vous devriez pouvoir créer des fichiers dans `/media/stockage`, et, par exemple, ajouter `/media/stockage` comme périphérique externe dans Nextcloud.
 
@@ -88,9 +90,9 @@ Jusqu'ici, nous avons monté manuellement le disque. Cependant, il peut être ut
 Pour commencer, trouvons l'UUID (identifiant universel) de notre disque avec : 
 
 ```bash
-blkid | grep "/dev/VOTRE_DISQUE:"
-# Retourne quelque chose comme
-# /dev/sda:UUID="cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7" TYPE="ext4" PARTUUID="34e4b02c-02"
+blkid | grep "/dev/VOTRE_DISQUE1:"
+# Retourne quelque chose comme :
+# /dev/sda1:UUID="cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7" TYPE="ext4" PARTUUID="34e4b02c-02"
 ```
 
 Ajoutons alors une ligne au fichier `/etc/fstab` qui gère le montage des disques au démarrage. On ouvre donc le fichier avec `nano` :
