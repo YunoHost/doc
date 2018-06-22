@@ -8,7 +8,7 @@ L'objectif cette page est de décrire le processus de migration d'une instance e
 
 - Néanmoins, vous devez être conscient qu'il s'agit d'une opération délicate. L'administration système est un sujet compliqué et couvrir tous les cas particuliers n'est pas chose aisée. En conséquence, si vous hébergez des données et des systèmes critiques, [faites des sauvegardes](/backup). Et dans tous les cas, soyez patients et attentifs durant la migration.
 
-- Cependant, ne vous précipitez pas non plus à vouloir faire une réinstallation de votre système. Une attitude qui revient réguliement est de vouloir réinstaller son système à la moindre complication. Pourtant, réinstaller peut aussi s'avérer compliqué. À la place, si vous rencontrez des problèmes, nous vous encourageons à investiguer, chercher à comprendre et trouver de l'aide, plutôt que de se précipiter à vouloir réinstaller simplement parce que cela semble plus simple.
+- Cependant, ne vous précipitez pas non plus à vouloir faire une réinstallation de votre système. Une attitude qui revient régulièrement est de vouloir réinstaller son système à la moindre complication. Pourtant, réinstaller peut aussi s'avérer compliqué. À la place, si vous rencontrez des problèmes, nous vous encourageons à investiguer, chercher à comprendre et trouver de l'aide, plutôt que de se précipiter à vouloir réinstaller simplement parce que cela semble plus simple.
 
 - Si vous ou vos utilisateurs utilisez des clients emails externes (typiquement Thunderbird ou K9Mail) : le port SMTP a changé. Il s'agissait auparavant du port 465 (avec SSL/TLS) qui a été remplacé par 587 (STARTTLS). Voir [cette page de doc dédiée à la configuration des clients mails](/email_configure_client).
 
@@ -28,7 +28,7 @@ Après avoir mis à jour vers la version 2.7.14, lancez :
 yunohost tools migrations migrate
 ```
 
-puis lisez attentivement l'averissement et les instructions.
+puis lisez attentivement l'avertissement et les instructions.
 
 ## Pendant la migration
 
@@ -44,7 +44,7 @@ Si la migration a échoué a un moment donné, la première chose à faire est d
 
 #### Vérifiez que vous êtes véritablement sous Debian Stretch / YunoHost 3.0
 
-Pour cela, allezdans Outils > Diagnostique. (Vous pouvez aussi regarder ce qui est affiché dans le pied de page). En ligne de commande, vous pouvez aussi utiliser `lsb_release -a` et `yunohost --version`.
+Pour cela, allez dans Outils > Diagnostique. (Vous pouvez aussi regarder ce qui est affiché dans le pied de page). En ligne de commande, vous pouvez aussi utiliser `lsb_release -a` et `yunohost --version`.
 
 #### Vérifiez que fail2ban et le pare-feu sont actifs.
 
