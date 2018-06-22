@@ -59,18 +59,25 @@ The [SSO](https://github.com/Kloadut/SSOwat/) (single sign-on) cannot properly a
 
 At the moment, YunoHost is maintained only by volunteers working in their free
 time. Basically no money is involved in the project (apart from server fees
-or stickers :P), which also means that we are independent and not
-pressured by economical concerns.
+or stickers :P).
 
-Right now, the team is not too enthusiast about bringing money in the project.
-With that said, some contributors have professional projects which involve
-YunoHost.
+Considering that a few contributors are investing a large amount of time in the
+project, we are thinking about ways to make the project sustainable.
+
+This could be achieved via donations, public fundings, and a few contributors
+have professional activities related to YunoHost.
 
 
 #### Can I make donations to the project?
 
-At the moment we don't have any system to receive money donations. We do however
-receive some in-kind contributions from association, like servers.
+Yes, you can ! YunoHost needs money to pay servers and domain names. We would
+also like contributors to be able to continue contributing rather than look for
+jobs elsewhere.
+
+You can donate on [Liberapay](https://liberapay.com/yunohost).
+
+If you can, you can also make in-kind contributions, like servers (some of our
+infrastructure relies on servers from a few associations).
 
 
 #### How can I contribute to the project?

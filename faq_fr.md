@@ -56,18 +56,20 @@ Pour des raisons techniques, le [SSO](https://github.com/YunoHost/SSOwat/) ne pe
 
 À l’heure actuelle, YunoHost est maintenu uniquement par une équipe de bénévole
 travaillant pendant leur temps libre. Il n’y a pas d’argent impliqué dans le
-projet (hormis quelques frais de serveurs et stickers :P), ce qui signifie
-également que nous sommes indépendants de toute préoccupations économiques.
+projet (hormis quelques frais de serveurs et stickers :P).
 
-Pour le moment, l’équipe est assez peu enthousiaste à l’idée d’inclure de
-l’argent dans le projet. Cependant, certains contributeurs mènent des activités professionelles liées à YunoHost.
+Étant donné que certains contributeurs sont très engagés dans ce projet, nous réfléchissons à un moyen de rendre pérenniser le projet.
+
+Il est question de financement par dons ou subventions, certains contributeurs mènent par ailleurs des activités professionnelles liées à YunoHost, .
 
 
 #### Puis-je faire un don au projet ?
 
-Pour le moment, nous n’avons pas mis en place de moyen pour recevoir des dons.
-Cependant, nous bénéficions de contributions en nature apportées par des associations,
-comme des serveurs.
+Oui, c'est possible ! YunoHost a besoin de payer des serveurs et noms de domaine, par ailleurs nous souhaiterions pouvoir permettre aux développeurs principaux de pouvoir continuer à développer YunoHost plutôt que de chercher des emplois ailleurs.
+
+Pour donner ça se passe via notre [Liberapay](https://liberapay.com/YunoHost)
+
+Si vous le pouvez, vous pouvez aussi faire des contributions en nature (une partie de notre infrastructure viens d'association qui nous fournissent des serveurs).
 
 
 #### Comment puis-je contribuer au projet ?
