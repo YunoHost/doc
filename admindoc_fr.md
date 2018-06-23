@@ -18,7 +18,7 @@
 * Finaliser son installation
     * [Post-installation](/postinstall_fr)
     * [Configurer les redirections de port](/isp_box_config_fr)
-    * [Congigurer les enregistrements DNS](/dns_config_fr)
+    * [Configurer les enregistrements DNS](/dns_config_fr)
     * [Installer un certificat SSL](/certificate_fr)
     * [Diagnostic du bon fonctionnement du YunoHost](/diagnostic_fr)
 * Apprendre à connaitre YunoHost
