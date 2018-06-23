@@ -18,7 +18,7 @@
 * Finaliser son installation
     * [Post-installation](/postinstall_fr)
     * [Configurer les redirections de port](/isp_box_config_fr)
-    * [Congigurer les enregistrements DNS](/dns_config_fr)
+    * [Configurer les enregistrements DNS](/dns_config_fr)
     * [Installer un certificat SSL](/certificate_fr)
     * [Diagnostic du bon fonctionnement du YunoHost](/diagnostic_fr)
 * Apprendre à connaitre YunoHost
@@ -40,7 +40,7 @@
        * [SFR](/isp_sfr_fr)
        * [Orange](/isp_orange_fr)
        * [Free](/isp_free_fr)
-    * [Ajouter un stockage externe](/external_storage_fr)
+    * [Ajouter un stockage externe](/external_storage_0_intro_fr)
     * [Migrer ses emails vers YunoHost](/email_migration_fr)
     * [YunoHost avec un service caché Tor](/torhiddenservice_fr)
     * [Utilisation de certificats autres que Let's Encrypt](/certificate_custom_fr)
