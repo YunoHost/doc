@@ -40,7 +40,7 @@
        * [SFR](/isp_sfr_fr)
        * [Orange](/isp_orange_fr)
        * [Free](/isp_free_fr)
-    * [Ajouter un stockage externe](/external_storage_0_intro_fr)
+    * [Ajouter un stockage externe](/external_storage_fr)
     * [Migrer ses emails vers YunoHost](/email_migration_fr)
     * [YunoHost avec un service caché Tor](/torhiddenservice_fr)
     * [Utilisation de certificats autres que Let's Encrypt](/certificate_custom_fr)
