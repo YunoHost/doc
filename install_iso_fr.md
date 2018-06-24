@@ -18,9 +18,9 @@
 
 ## Étapes d’installation
 
-<a class="btn btn-lg btn-default" href="/images_fr">0. Télécharger l'image ISO</a>
+<a class="btn btn-lg btn-success" href="/images_en">0. Télécharger l'image ISO</a>
 
-<a class="btn btn-lg btn-default" href="/burn_or_copy_iso_fr">1. Copier l’image ISO</a>
+<a class="btn btn-lg btn-primary" href="/burn_or_copy_iso_fr">1. Copier l’image ISO</a>
 
 <a class="btn btn-lg btn-default" href="/boot_and_graphical_install_fr">2. Démarrer & installer</a>
 
