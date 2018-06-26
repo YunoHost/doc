@@ -1,14 +1,14 @@
 Sauvegarder son serveur et ses apps
 ===================================
 
-Dans le contexte de l'auto-hébergement, les sauvegardes (backup) sont un éléments importants pour palier à des événements innatendus (incendis, corruption de base de données, perte d'accès au serveur, serveur compromis, ...). La politique de sauvegarder à mettre en place dépends de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez être très prudent si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas vous souhaiterez stocker les sauvegardes *dans un endroit différent*.
+Dans le contexte de l'auto-hébergement, les sauvegardes (backup) sont un élément important pour palier à des événements inattendus (incendies, corruption de base de données, perte d'accès au serveur, serveur compromis, ...). La politique de sauvegarder à mettre en place dépend de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez être très prudent si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les sauvegardes *dans un endroit différent*.
 
 Les sauvegardes avec YunoHost
 -----------------------------
 
 YunoHost contient un système de sauvegarde, qui permet de sauvegarder (et restaurer) les configurations du système, les données "système" (comme les mails) et les applications si elles le supportent.
 
-Vous pouvez gérer vos sauvegardes via la ligne de commande (`yunohost backup --help`) ou la webadmin (dans la section Sauvegardes) bien que certaines fonctionnalités ne sont pas disponible via celle-ci.
+Vous pouvez gérer vos sauvegardes via la ligne de commande (`yunohost backup --help`) ou la webadmin (dans la section Sauvegardes) bien que certaines fonctionnalités ne soient pas disponible via celle-ci.
 
 Actuellement, la méthode de sauvegarde actuelle consiste à créer des archives `.tar.gz` qui contiennent les fichiers pertinents. Pour le futur, YunoHost envisage de supporter nativement [Borg](https://www.borgbackup.org/) qui est une solution plus flexible, performante et puissante pour gérer des sauvegardes.
 
@@ -23,7 +23,7 @@ Vous pouvez facilement créer des archives depuis la webadmin en allant dans Sau
 
 #### Depuis la ligne de commande
 
-Vous pouvez créer de nouvelles archives depuis la ligne de commande. Voici quelques exemples de commandes et leur comportement correspondant :
+Vous pouvez créer de nouvelles archives depuis la ligne de commande. Voici quelques exemples de commandes et leur comportement correspondant:
 
 - Tout sauvegarder (système et application)
 ```bash
@@ -54,7 +54,7 @@ Pour plus d'informations et d'option sur la création d'archives, consultez `yun
 
 #### Configuration spécifiques à certaines apps
 
-Certaines apps comme Nextcloud sont potentiellement ratachées à des quantités importantes de données, qui ne sont pas sauvegardées par défaut. Dans ce cas, on dit que l'app "sauvegarde uniquement le core" (de l'app). Néanmoins, il est possible d'activer la sauvegarde de toutes les données de cette application avec (dans le cas de Nextcloud) `yunohost app setting nextcloud backup_core_only -v 0`. Soyez prudent : en fonction des données stockées dans nextcloud, il se peut que l'archive que vous obtenez ensuite devienne énorme...
+Certaines apps comme Nextcloud sont potentiellement rattachées à des quantités importantes de données, qui ne sont pas sauvegardées par défaut. Dans ce cas, on dit que l'app "sauvegarde uniquement le core" (de l'app). Néanmoins, il est possible d'activer la sauvegarde de toutes les données de cette application avec (dans le cas de Nextcloud) `yunohost app setting nextcloud backup_core_only -v 0`. Soyez prudent: en fonction des données stockées dans nextcloud, il se peut que l'archive que vous obtenez ensuite devienne énorme...
 
 Télécharger et téléverser des sauvegardes
 -----------------------------------------
@@ -63,13 +63,13 @@ Après avoir créé des sauvegardes, il est possible de les lister et de les ins
 
 Il n'existe actuellement pas de solution "rapide et facile" pour télécharger ou téléverser une archive depuis une autre machine.
 
-Une solution consiste à utiliser `scp` (un programme basé sur [`ssh`](/ssh)) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous Linux, vous pouvez utiliser la commande suivante pour télécharger une archive :
+Une solution consiste à utiliser `scp` (un programme basé sur [`ssh`](/ssh)) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous Linux, vous pouvez utiliser la commande suivante pour télécharger une archive:
 
 ```bash
 scp admin@your.domain.tld:/home/yunohost.backup/archives/<nom_d'archive>.tar.gz ./
 ```
 
-De façon similaire, vous pouvez téléverser une sauvegarde depuis une machine vers votre serveur avec : 
+De façon similaire, vous pouvez téléverser une sauvegarde depuis une machine vers votre serveur avec: 
 
 ```bash
 scp /path/to/your/<nom_d'archive>.tar.gz admin@your.domain.tld:/home/yunohost.backup/archives/
@@ -92,11 +92,11 @@ Depuis la ligne de commande, vous pouvez utiliser `yunohost backup restore <nom_
 
 #### Contraintes
 
-Pour restaurer une application, le domaine sur laquelle elle est installée doit déjà être configuré (ou il vous faut restaurer en même temps la configuration correspondante). Aussi, il n'est pas possible de restaurer une application déjà installée ... ce qui veut dire que pour restaurer une sauvegarde d'une app, il vous faut déjà la désinstaller.
+Pour restaurer une application, le domaine sur laquelle elle est installée doit déjà être configuré (ou il vous faut restaurer en même temps la configuration correspondante). Aussi, il n'est pas possible de restaurer une application déjà installée... ce qui veut dire que pour restaurer une sauvegarde d'une app, il vous faut déjà la désinstaller.
 
 #### Restauration d'une archive à la place de la post-installation
 
-Une fonctionnalité particulière est la possibilité de restaurer une archive entière *à la place* de faire la post-installation. Ceci est utile pour réinstaller un système entièrement à partir d'une sauvegarde existante. Pour faire cela, il vous faudra d'abord téléverser l'archie sur le server et la placer dans `/home/yunohost.backup/archives`. Ensuite, à la place de `yunohost tools poinstall` vous pouvez faire :
+Une fonctionnalité particulière est la possibilité de restaurer une archive entière *à la place* de faire la post-installation. Ceci est utile pour réinstaller un système entièrement à partir d'une sauvegarde existante. Pour faire cela, il vous faudra d'abord téléverser l'archive sur le server et la placer dans `/home/yunohost.backup/archives`. Ensuite, à la place de `yunohost tools poinstall` vous pouvez faire:
 
 ```bash
 yunohost backup restore <nom_d'archive>
@@ -107,40 +107,40 @@ Pour aller plus loin
 
 #### Stocker les archives sur un autre disque
 
-Si vous le souhaitez, vous pouvez connecter un disque externe à votre serveur pour (parmis d'autres choses) stocker les archives de backup dessus. Pour cela, il faut d'abord déplacer les archives existantes vers le disque, puis créer un lien symbolique : 
+Si vous le souhaitez, vous pouvez connecter un disque externe à votre serveur pour (parmi d'autres choses) stocker les archives de backup dessus. Pour cela, il faut d'abord déplacer les archives existantes vers le disque, puis créer un lien symbolique: 
 
 ```bash
-PATH_TO_DRIVE="/media/mon_disque_externe" # Par exemple - Tout dépends de où le disque est monté
+PATH_TO_DRIVE="/media/mon_disque_externe" # Par exemple - Tout dépend d'où le disque est monté
 mv /home/yunohost.backup/archives $PATH_TO_DRIVE/yunohost_backup_archives
 ln -s $PATH_TO_DRIVE/yunohost_backup_archives /home/yunohost.backup/archives
 ```
 
 #### Sauvegardes automatiques
 
-Vous pouvez ajouter une tâche cron pour déclencer automatiquement une sauvegarde régulièrement. Par exemple pour sauvegarder l'application wordpress toutes les semaines, créez un fichier `/etc/cron.weekly/backup-wordpress` avec le contenu suivant : 
+Vous pouvez ajouter une tâche cron pour déclencher automatiquement une sauvegarde régulièrement. Par exemple pour sauvegarder l'application wordpress toutes les semaines, créez un fichier `/etc/cron.weekly/backup-wordpress` avec le contenu suivant: 
 
 ```bash
 #!/bin/bash
 yunohost backup create --apps wordpress
 ```
 
-puis rendez-le executable : 
+puis rendez-le exécutable: 
 
 ```bash
 chown +x /etc/cron.weekly/backup-wordpress
 ```
 
-Soyez prudent à propos de ce que vous sauvegardez et de la fréquence : il vaut mieux éviter de se retrouver avec un disque saturé car vous avez voulu sauvegarder 30 Go de données tous les jours ...
+Soyez prudent à propos de ce que vous sauvegardez et de la fréquence: il vaut mieux éviter de se retrouver avec un disque saturé car vous avez voulu sauvegarder 30 Go de données tous les jours...
 
 #### Sauvegarder sur un serveur distant
 
-Vous pouvez suivre ce tutorial sur le forum pour mettre en place Borg entre deux serveurs : https://forum.yunohost.org/t/how-to-backup-your-yunohost-server-on-another-server/3153
+Vous pouvez suivre ce tutoriel sur le forum pour mettre en place Borg entre deux serveurs: https://forum.yunohost.org/t/how-to-backup-your-yunohost-server-on-another-server/3153
 
-Il existe aussi l'application Archivist qui permet un système similaire : https://forum.yunohost.org/t/new-app-archivist/3747
+Il existe aussi l'application Archivist qui permet un système similaire: https://forum.yunohost.org/t/new-app-archivist/3747
 
 #### Backup complet avec `dd`
 
-Si vous êtes sur une carte ARM, une autre méthode pour créer une sauvegarde complète consiste à créer une image (copie) de la carte SD. Pour cela, éteignez votre serveur, insérez la carte SD dans votre ordinateur et créez une image avec une commande comme : 
+Si vous êtes sur une carte ARM, une autre méthode pour créer une sauvegarde complète consiste à créer une image (copie) de la carte SD. Pour cela, éteignez votre serveur, insérez la carte SD dans votre ordinateur et créez une image avec une commande comme: 
 
 ```bash
 dd if=/dev/mmcblk0 of=./backup.img
