@@ -3,7 +3,8 @@
 *Toutes les autres façons d’installer YunoHost sont listées **[ici](/install_fr)**.*
 
 <center>
-<img src="/images/raspberrypi.jpg" width=350>
+<img src="/images/raspberrypi.jpg" width=300 style="padding-bottom:20px">
+<img src="/images/micro-sd-card.jpg">
 </center>
 
 <div class="alert alert-info" markdown="1">
@@ -13,13 +14,14 @@ Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissan
 ## Prérequis
 
 - Un Raspberry Pi 0, 1, 2 ou 3 ;
-- Une carte SD : au moins **8 Go** et **Classe 10** (par exemple une [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
 - Un adaptateur secteur pour alimenter la carte ;
-- Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet. Avec le Raspberry Pi 0 vous pouvez connecter votre carte avec un câble OTG et un adaptateur Wifi USB.
+- Une carte microSD : au moins **8 Go** et **Classe 10** (par exemple une [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
+- Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet. (Avec le Raspberry Pi 0, vous pouvez connecter votre carte avec un câble OTG et un adaptateur Wifi USB.)
+- Un [fournisseur d’accès correct](/isp_fr), de préférence avec une bonne vitesse d’upload.
 
 ---
 
-## Installation avec l'image (recommandée)
+## Installation avec l'image pré-installée (recommandée)
 
 <a class="btn btn-lg btn-default" href="/images_fr">1. Télécharger l'image pour Raspberry Pi</a>
 

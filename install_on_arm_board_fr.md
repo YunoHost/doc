@@ -1,35 +1,51 @@
 # Installer YunoHost sur carte ARM
 
-## Prérequis
+*Toutes les autres façons d’installer YunoHost sont listées **[ici](/install_fr)**.*
 
-<img src="/images/cubieboard2.png">
+<center>
+<img src="/images/olinuxino.jpg" width=250 style="padding-bottom:20px">
 <img src="/images/micro-sd-card.jpg">
+</center>
 
-* Une carte ARM avec un processeur de 500 MHz et 512 Mo de mémoire vive.
-* Une carte micro SD de capacité minimale de **4 GB** et de vitesse **class10**.
-* Un [fournisseur d’accès correct](/isp_fr), de préférence avec une bonne vitesse d’upload.
+<div class="alert alert-info" markdown="1">
+Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissance des [possibles limitations liées à votre FAI](/isp). Si votre FAI est trop contraignant, vous pouvez envisager d'utiliser un VPN pour contourner ces limitations.
+</div>
 
-## Installation
+<div class="alert alert-warning" markdown="1">
+YunoHost ne supporte pour le moment pas les cartes ARM64. Pour plus d'informations, voir [ce ticket](https://github.com/YunoHost/issues/issues/438).
+</div>
 
-* Télécharger la dernière **[image d’ARMbian Stretch pour la carte ARM](http://www.armbian.com/download)**.
-
-<a class="btn btn-lg btn-default" href="/copy_image_fr">Copier l’image sur une carte SD</a>
-
-<a class="btn btn-lg btn-default" href="/plug_and_boot_fr">Brancher & démarrer</a>
-
-* Se connecter en [SSH](ssh_fr) : **root@exemple.tld/adresse_ip** avec le mot de passe : **1234**.
-
-<a class="btn btn-lg btn-default" href="/install_manually_fr">Installation de YunoHost</a>
-
-<a class="btn btn-lg btn-default" href="/postinstall_fr">Post-installation</a>
+- Une carte ARM avec un processeur de 500 MHz et 512 Mo de mémoire vive ; 
+- Un adaptateur secteur pour alimenter la carte ;
+- Une carte microSD : au moins **8 Go** et **Classe 10** (par exemple une [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
+- Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet. (Avec le Raspberry Pi 0, vous pouvez connecter votre carte avec un câble OTG et un adaptateur Wifi USB.)
+- Un [fournisseur d’accès correct](/isp_fr), de préférence avec une bonne vitesse d’upload.
 
 ---
 
-#### Recommandé après la post-installation
-* Utilisez l’[authentification SSH par clé](security_fr)
+## Installation avec l'image pré-installée (recommandée)
+
+<a class="btn btn-lg btn-default" href="/images_fr">0. Télécharger l'image pré-installée pour votre carte ARM</a><br><small>Si il n'existe pas d'image pré-installée pour votre carte, vous pouvez suivre la section "Installation par dessus ARMbian".</small>
+
+<a class="btn btn-lg btn-default" href="/copy_image_fr">1. Copier l’image sur une carte SD</a>
+
+<a class="btn btn-lg btn-default" href="/plug_and_boot_fr">2. Brancher & démarrer</a>
+
+<a class="btn btn-lg btn-default" href="/ssh_fr">3. Se connecter en SSH</a>
+
+<a class="btn btn-lg btn-default" href="/postinstall_fr">4. Procéder à la post-installation</a>
 
 ---
 
-#### Créer une image
-* [Créer une image pour la carte ARM](build_arm_image_en)
+## Installation par dessus ARMbian
+
+<a class="btn btn-lg btn-default" href="https://www.armbian.com/download/">0. Télécharger l'image ARMbian pour votre carte ARM</a>
+
+<a class="btn btn-lg btn-default" href="/copy_image_fr">1. Copier l’image sur une carte SD</a>
+
+<a class="btn btn-lg btn-default" href="/plug_and_boot_fr">2. Brancher & démarrer</a>
+
+<a class="btn btn-lg btn-default" href="/ssh_fr">3. Se connecter en SSH</a>
+
+<a class="btn btn-lg btn-default" href="/install_manually_fr">4. Suivre la procédure d'installation générique</a>
 
