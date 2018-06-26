@@ -11,7 +11,6 @@
     * [On a regular computer](/install_iso)
     * [On a dedicated or a virtual private server](/install_on_vps)
     * [On a Raspberry Pi](/install_on_raspberry)
-    * [On an OLinuXino board](/install_on_olinuxino)
     * [On an ARM board](/install_on_arm_board)
     * [On Debian](/install_on_debian)
     * [On VirtualBox](/install_on_virtualbox)

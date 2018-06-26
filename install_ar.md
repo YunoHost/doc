@@ -32,10 +32,6 @@
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_olinuxino_fr"><img src="/images/olinuxino.jpg" height=150 style="vertical-align:bottom"><b><p dir="rtl">على بطاقة أولينوكسينو (Brique Internet)</p></b></a>
-</div>
-
-<div class="col col-md-3 text-center">
 <a href="/install_on_raspberry_fr"><img src="/images/raspberrypi.jpg" height=150 style="vertical-align:bottom"><b><p>على راسبيري باي</p></b></a>
 </div>
 

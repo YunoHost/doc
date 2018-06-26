@@ -29,15 +29,11 @@ Cette page liste plusieurs types d’installations, classés par catégories.
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_olinuxino_fr"><img src="/images/olinuxino.jpg" height=150 style="vertical-align:bottom"><b><p>Sur une carte OlinuXino (Brique Internet)</p></b></a>
-</div>
-
-<div class="col col-md-3 text-center">
 <a href="/install_on_raspberry_fr"><img src="/images/raspberrypi.jpg" height=150 style="vertical-align:bottom"><b><p>Sur un Raspberry Pi</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_arm_board_fr"><img src="/images/cubieboard2.png" height=150 style="vertical-align:bottom"><b><p>Sur une carte ARM</p></b></a>
+<a href="/install_on_arm_board"><img src="/images/olinuxino.jpg" height=150 style="vertical-align:bottom"><b><p>On an ARM board</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">

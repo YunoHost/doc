@@ -24,7 +24,7 @@ Assuming your IP address is `111.222.333.444`, open a terminal and enter :
 ssh root@111.222.333.444
 ```
 
-A password will be asked. If this is a VPS, your VPS provided should have communicated you the password. On a fresh Raspberry Pi, the password should be `yunohost`. For an OLinuXino, this should be `olinux`.
+A password will be asked. If this is a VPS, your VPS provided should have communicated you the password. If you used a pre-installed image (for x86 computer or ARM board), the password should be `yunohost`.
 
 #### Change the password!
 
