@@ -33,7 +33,7 @@ Cette page liste plusieurs types d’installations, classés par catégories.
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_arm_board"><img src="/images/olinuxino.jpg" height=150 style="vertical-align:bottom"><b><p>On an ARM board</p></b></a>
+<a href="/install_on_arm_board"><img src="/images/olinuxino.jpg" height=150 style="vertical-align:bottom; padding:20px"><b><p>On an ARM board</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
