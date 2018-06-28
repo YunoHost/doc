@@ -65,17 +65,21 @@ Pour éviter des tentatives de connexion SSH par des robots qui scannent tout In
 ```bash
 nano /etc/ssh/sshd_config
 ```
+
 **Recherchez la ligne « Port »** et remplacez le numéro du port (par défaut 22) par un autre numéro non utilisé
+
 ```bash
 Port 22 # à remplacer par exemple par 9777
 ```
 
 **Ouvrez le port** choisi dans le parefeu (vous pouvez utiliser l'option -6 pour interdire la connexion via ipv4)
-+```bash
-+yunohost firewall allow TCP <votre_numero_de_port_ssh>
-+``` 
- ```
+
+```bash
+yunohost firewall allow TCP <votre_numero_de_port_ssh>
+```
+
 Sauvegardez et relancez le démon SSH.
+
 ```bash
 systemctl restart ssh
 ```
