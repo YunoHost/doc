@@ -75,7 +75,7 @@ Finally, it is possible to add, delete and list ssh keys, to improve ssh access 
 ```bash
 yunohost user ssh add-key <username> <key>
 yunohost user ssh remove-key <username> <key>
-yunohost user ssh add-key <username>
+yunohost user ssh list-keys <username>
 ```
 
 ## Security and SSH
