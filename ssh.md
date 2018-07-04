@@ -58,7 +58,25 @@ ssh -p 2244 admin@your.domain.tld
 
 By default, only the admin and root users can log in to YunoHost ssh server.
 
-YunoHost's users created via the administration interface are managed by the LDAP directory. By default, they can't connect via SSH for security reasons. See [here](https://forum.yunohost.org/t/ssh-disconnects-after-successful-login/256/10) if you absolutely want some users to have SSH access enabled.
+YunoHost's users created via the administration interface are managed by the LDAP directory. By default, they can't connect via SSH for security reasons. If you want some users to have SSH access enabled, use the command:
+
+```bash
+yunohost user ssh allow <username>
+```
+
+It is also possible to remove ssh access using the following:
+
+```bash
+yunohost user ssh disallow <username>
+```
+
+Finally, it is possible to add, delete and list ssh keys, to improve ssh access security, using the commands:
+
+```bash
+yunohost user ssh add-key <username> <key>
+yunohost user ssh remove-key <username> <key>
+yunohost user ssh add-key <username>
+```
 
 ## Security and SSH
 
