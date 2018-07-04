@@ -72,7 +72,7 @@ Enfin, il est possible d'ajouter, de supprimer et de lister des clés ssh, pour 
 ```bash
 yunohost user ssh add-key <username> <key>
 yunohost user ssh remove-key <username> <key>
-yunohost user ssh add-key <username>
+yunohost user ssh list-keys <username>
 ```
 
 
