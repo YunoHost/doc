@@ -23,7 +23,7 @@
 * Apprendre à connaitre YunoHost
     * [L'interface d'administration web](/admin_fr)
     * [Se connecter à son serveur via SSH](/ssh_fr)
-    * [Administrrer son serveur en ligne de commande](/commandline_fr)
+    * [Administrer son serveur en ligne de commande](/commandline_fr)
     * [Catalogue d'applications](/apps_fr)
     * [Mettre à jour son serveur](/update_fr) et [les apps](/app_update_fr)
     * [Les sauvegardes](/backup_fr)
