@@ -10,7 +10,7 @@ Les étapes à réaliser, même si elles sont relativement simples, peuvent parf
 
 Vous devez également être connecté en root sur votre système, par exemple via [SSH](/ssh). (Note : en étant connecté en tant qu'utilisateur `admin`, vous pouvez passer root avec `sudo su`)
 
-Il peut être utilise de [faire un backup](/backup) de votre installation.
+Il peut être utile de [faire un backup](/backup) de votre installation.
 
 Vous devez également disposer d'un disque dur supplémentaire (branché en USB ou en SATA).
 
