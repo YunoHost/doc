@@ -56,10 +56,12 @@ domain=$YNH_APP_ARG_DOMAIN
 ### Variables spécifiques pour `change_url`
 #### YNH_APP_OLD_DOMAIN
 L'ancien domaine où était installée l'app.
+
 #### YNH_APP_OLD_PATH
-L'ancien chemin où était installée l'app;
+L'ancien chemin où était installée l'app.
+
 #### YNH_APP_NEW_DOMAIN
 Le nouveau domaine où doit être installée l'app.
+
 #### YNH_APP_NEW_PATH
 Le nouveau chemin où doit être installée l'app.
-
