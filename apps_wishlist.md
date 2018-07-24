@@ -127,6 +127,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Pix](http://pix.toile-libre.org)
 - [Playmaker](https://github.com/NoMore201/playmaker)
 - [Pleroma](https://git.pleroma.social/pleroma/pleroma)
+- [PrivateBin] (https://privatebin.info/)
 - [Privoxy](http://www.privoxy.org)
 - [ProcessMaker](http://www.processmaker.com)
 - [PyLoad](https://github.com/pyload/pyload)
