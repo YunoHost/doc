@@ -34,7 +34,7 @@ Exemple: 3
 Pour chaque question posée lors de l'installation, une variable d'environnement est disponible.
 
 Par exemple, si dans le manifest nous avons une question de cette forme
-```
+```json
 {
     "name": "domain",
     "type": "domain",
@@ -44,12 +44,12 @@ Par exemple, si dans le manifest nous avons une question de cette forme
         "de": "Wählen Sie bitte einen Domain für OpenSondage"
     },
     "example": "domain.org"
-},
+}
 ```
 
 Le nom de la question `domain` donc dans le script on peut accéder à cette variable via $YNH_APP_ARG_DOMAIN. L'usage est de créer une variable plus courte comme ceci:
 
-```
+```bash
 domain=$YNH_APP_ARG_DOMAIN
 ```
 
