@@ -56,5 +56,8 @@ document.getElementById("goBugtracker").onclick = function() {
 document.getElementById("goDevroom").onclick = function() {
     window.location.href = "https://kiwiirc.com/client/irc.freenode.net/yunohost-dev";
 }
+document.getElementById("goForum").onclick = function() {
+    window.location.href = "https://forum.yunohost.org";
+}
 </script>
 
