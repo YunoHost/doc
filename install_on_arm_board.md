@@ -29,7 +29,7 @@ YunoHost doesn't yet support ARM64 boards. For more information, see [this issue
 
 <a class="btn btn-lg btn-default" href="/images">0. Download the pre-installed image for your board</a><br><small>If no pre-installed image exists for your board, you can follow the instructions to "Install on top of ARMbian"</small>
 
-<a class="btn btn-lg btn-default" href="/copy_image">1. Copy image to the SD card</a>
+<a class="btn btn-lg btn-default" href="/copy_image">1. Flash the SD card with the image</a>
 
 <a class="btn btn-lg btn-default" href="/plug_and_boot">2. Plug & boot</a>
 
@@ -43,7 +43,7 @@ YunoHost doesn't yet support ARM64 boards. For more information, see [this issue
 
 <a class="btn btn-lg btn-default" href="https://www.armbian.com/download/">0. Download the ARMbian image for your board</a>
 
-<a class="btn btn-lg btn-default" href="/copy_image_fr">1. Copy image to the SD card</a>
+<a class="btn btn-lg btn-default" href="/copy_image_fr">1. Flash the SD card with the image</a>
 
 <a class="btn btn-lg btn-default" href="/plug_and_boot_fr">2. Plug & boot</a>
 
