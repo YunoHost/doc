@@ -3,22 +3,22 @@
 
 #### Under which licence is YunoHost distributed?
 
-YunoHost packages are under the free license GNU AGPL v.3.
+YunoHost packages are under free licenses GNU AGPL v.3.
 
 YunoHost is based on Debian, so on licenses of Debian based elements.
 
-Applications and application packages have their respective licenses.
+Applications and applications packages have their respectives licenses.
 
 
 #### What is the goal of YunoHost?
 
 We believe that decentralizing the Internet, and people taking back control and
-responsibility over their own data and services, is a crucial issue to guarantee
+responsability over their own data and services, is a crucial issue to guarantee
 a free and democratic society.
 
 The YunoHost project aims to democratize self-hosting.
 
-It provides a software that aims to make it easy for people to run and
+It provides a software that aim to make it easy for people to run and
 administrate their own server, with minimal knowledge and time required.
 
 
@@ -31,31 +31,31 @@ work for you.
 For instance, if you wanted to install Wordpress, you would need to type a bunch
 of commands to create some users, setup a web server, setup a SQL server,
 download the wordpress archive, uncompress it, configure the web server,
-configure the SQL database, and finally configure wordpress. YunoHost handles
-the technical mess and "types all these commands for you", so that you can focus
+configure the SQL database, and finally configure wordpress. YunoHost handle
+the technical mess and "type all these commands for you", so that you can focus
 on what really matters.
 
-More info on [this page](whatsyunohost)!
+More info on [this page](whatsyunohost) !
 
-#### Can I host my own personal website with YunoHost?
+#### Can I host my own personnal website with YunoHost?
 
-Yes! Have a look at the [Custom Web app](https://github.com/YunoHost-Apps/my_webapp_ynh).
-It provides an "empty shell": after installing it, just upload your files
+Yes ! Have a look at the [Custom Web app](https://github.com/YunoHost-Apps/my_webapp_ynh).
+It provides an "empty shell" : after installing it, just upload your files
 (via SSH/SCP or SFTP) to the right location. You can have PHP and a SQL database
 if you need.
 
 
 #### Can I host many independents websites with different domain names?
 
-Yes! YunoHost is multi-user and multi-domain. Some applications like *WordPress* or *Web App Multi Custom*, are multi-instances, which means that the application can be installed many times.
+Yes ! YunoHost is multi-user and multi-domain. Some applications like *WordPress* or *Web App Multi Custom*, are multi-instances, which means that the application can be installed many times.
 
 
-#### Why can't I access applications via the IP address?
+#### Why can't I access to applications via the IP address?
 
 The [SSO](https://github.com/Kloadut/SSOwat/) (single sign-on) cannot properly authenticate users when they access your server with only its IP. If you really can't configure the DNS properly, you can temporarily work around it by [modifying the `hosts` file (last §)](dns_local_network_en) on your computer.
 
 
-#### What is YunoHost's business model?
+#### What's YunoHost's business model?
 
 At the moment, YunoHost is maintained only by volunteers working in their free
 time. Basically no money is involved in the project (apart from server fees
@@ -125,7 +125,7 @@ Medium answer: Apps were packaged in .deb in the past. It was a nightmare. We're
 
 <p>Turns out, YunoHost apps packaging holds a subtly different purpose than traditional packaging like .deb. Debian packages fulfill the low-level purpose of installing files, commands, programs and services on the system. It is often your duty to configure them properly, simply because there is no standard server setup. Typically, web apps requires a lot of configuration because they rely on a web server and a database (and the single sign-on).</p>
 
-<p>YunoHost manipulate high-level abstractions (apps, domains, users, ...) and defines a standard setup (Nginx, Postfix, Metronome, SSOwat, ...) and, because of this, can handle the configuration for the user.</p>
+<p>YunoHost manipulates high-level abstractions (apps, domains, users, ...) and defines a standard setup (Nginx, Postfix, Metronome, SSOwat, ...) and, because of this, can handle the configuration for the user.</p>
 
 <p>If you still think deb packages can be hacked to do this, see previous answers.</p>
 </div>
