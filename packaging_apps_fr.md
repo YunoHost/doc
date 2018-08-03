@@ -15,7 +15,7 @@ Si vous ne comprenez pas ces prérequis, ou si vous ne savez pas comment écrire
 Un paquet YunoHost est composé :
 
 * d’un `manifest.json`
-* d’un dossier `scripts`, composé de cinq scripts Shell `install`, `remove`, `upgrade`, `backup` et `restore`
+* d’un dossier `scripts`, composé de six scripts Shell `install`, `remove`, `upgrade`, `backup`, `change_url` et `restore`
 * de dossiers optionnels, contenant les `sources` ou de la `conf`
 * d’un fichier `LICENSE` contenant la licence du paquet
 * d’une page de présentation du paquet contenu dans un fichier `README.md`
