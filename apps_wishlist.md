@@ -128,6 +128,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Playmaker](https://github.com/NoMore201/playmaker)
 - [Pleroma](https://git.pleroma.social/pleroma/pleroma)
 - [Privoxy](http://www.privoxy.org)
+- [PrivateBin] (https://privatebin.info) {READ: https://privatebin.info/news/v1.2-release.html !}
 - [ProcessMaker](http://www.processmaker.com)
 - [PyLoad](https://github.com/pyload/pyload)
 - [Pulse](https://source.ind.ie/project/pulse-swift/tree/master)
