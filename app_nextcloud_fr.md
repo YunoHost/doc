@@ -1,4 +1,19 @@
-# Migrer les données de Nextcloud
+# Ajouter de l'espace de stockage
+
+La solution I) permet d'ajouter un lien vers un dossier local ou distant.  
+La solution II) permet de déplacer l'espace de stockage principal de nextcloud.
+
+## I) Ajouter un espace de stockage externe
+
+Paramètre => [Administration] Stockages externe.
+
+En bas de la liste vous pouvez rajouter un dossier (Il est possible de définir un sous dossier en utilisant la convention `dossier/sousDossier`.)  
+Sélectionner un type de stockage et indiquez les information de connexion demandés.  
+Vous pouvez restreindre ce dossier à un ou plusieurs utilisateurs nextcloud avec la colonne `Disponible pour`.  
+Avec l'engrenage vous pouvez autoriser ou interdire la prévisualisation et le partage des fichiers.  
+Enfin cliquer sur la coche pour valider le dossier.
+
+## II) Migrer les données de Nextcloud dans une partition plus grosse
 
 **Remarque** : Ce qui suit suppose que vous avez un disque dur monté sur `/media/stockage`. Référez-vous à [cet article](/external_storage_fr) pour préparer votre système.
 
@@ -9,9 +24,9 @@ Commencez par éteindre le serveur web avec la commande:
 systemctl stop nginx  
 ```
 
-## Choix de l'emplacement
+### Choix de l'emplacement
 
-### Cas A : Stockage vierge, exclusif à Nextcloud
+#### Cas A : Stockage vierge, exclusif à Nextcloud
 
 Pour l'instant seul root peut y écrire dans `/media/stockage`; ce qui signifie que nginx et nextcloud ne pourront donc pas l'utiliser.
 
@@ -20,7 +35,7 @@ chown -R nextcloud:www-data /media/stockage
 chmod 775 -R /media/stockage
 ```
 
-### Cas B : Stockage partagé, données déjà présentes, données Nextcloud dans un sous-dossier
+#### Cas B : Stockage partagé, données déjà présentes, données Nextcloud dans un sous-dossier
 
 Si vous souhaitez utiliser ce disque pour d'autres applications, vous pouvez créer un sous-dossier appartenant à Nextcloud.
 
@@ -30,7 +45,7 @@ chown -R nextcloud /media/stockage/nextcloud_data
 chmod 775 -R /media/stockage/nextcloud_data
 ```
 
-## Migrer les données
+### Migrer les données
 
 Migrez vos données vers le nouveau disque. Pour ce faire *(soyez patient, cela peut être long)* :
 
@@ -50,7 +65,7 @@ Cas A : ls -al /media/stockage
 Cas B : ls -al /media/stockage/nextcloud_data
 ```
 
-## Configurer Nextcloud
+### Configurer Nextcloud
 
 Pour informer Nextcloud de son nouveau répertoire, modifiez le fichier `/var/www/nextcloud/config/config.php` avec la commande:
 
