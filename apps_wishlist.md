@@ -110,6 +110,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [MPD](http://www.musicpd.org)
 - [Museek+](https://github.com/eLvErDe/museek-plus)
 - [Nibbleblog](http://www.nibbleblog.com)
+- [NodeBB](https://nodebb.org/)
 - [Nuage](https://nuage.kerjean.me/login)
 - [ONLYOFFICE Document Server](http://helpcenter.onlyoffice.com/server/linux/document/linux-installation.aspx) (to be able to use ONLYOFFICE inside Nextcloud)
 - [ONLYOFFICE](http://onlyoffice.org)
