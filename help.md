@@ -45,7 +45,6 @@ dev@conference.yunohost.org and apps@conference.yunohost.org</em>
 <script>
 
 document.getElementById("goForum").onclick = function() {
-    var nickname = document.getElementById("nickname").value;
     window.location.href = "https://forum.yunohost.org/latest";
 }
 document.getElementById("goBugtracker").onclick = function() {
