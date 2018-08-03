@@ -14,7 +14,7 @@
 
 </br>
 </br>
-<em>Note : this room is also available via XMPP <small>(support@conference.yunohost.org)</small>, or Matrix <small>(#freenode_#yunohost:matrix.org)</small></em>
+<em>Note : this room is also available via XMPP <small>(support@conference.yunohost.org)</small>, or Matrix <small>(#freenode_#yunohost:matrix.org - <a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">using Riot</a>)</small></em>
 </center>
 
 <h3>... or ask on the forum !</h3>
@@ -45,6 +45,7 @@ dev@conference.yunohost.org and apps@conference.yunohost.org</em>
 <script>
 
 document.getElementById("goForum").onclick = function() {
+    var nickname = document.getElementById("nickname").value;
     window.location.href = "https://forum.yunohost.org/latest";
 }
 document.getElementById("goBugtracker").onclick = function() {
