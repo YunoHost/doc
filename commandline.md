@@ -143,5 +143,11 @@ yunohost tools [-h] {postinstall,maindomain,ldapinit,adminpw} ...
     postinstall         YunoHost post-install
     maindomain          Main domain change tool
     ldapinit            YunoHost LDAP initialization
-    adminpw             Change admin password
+    adminpw             Change admin password         # Existing password required.  See workaround below.
+```
+
+
+### admin
+```bash
+yunohost-reset-ldap-password       Reset the admin account (Web GUI) password
 ```
