@@ -102,7 +102,7 @@ sudo adduser user_name
 Choose a strong password, since it is the user who will be responsible to obtain root privileges.
 Add the user to sudo group so just to allow him to perform maintenance tasks that require root privileges.
 ```bash
-sudo adduser user_namesudo
+sudo adduser user_name sudo
 ```
 
 Now, change the SSH configuration to allow the new user to connect.
