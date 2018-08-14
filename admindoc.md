@@ -19,7 +19,7 @@
     * [Configuring port forwarding](/isp_box_config)
     * [Configuring DNS records](/dns_config)
     * [Installing an SSL certificate](/certificate)
-    * [Diagnoze if your setup is working properly](/diagnostic)
+    * [Diagnose if your setup is working properly](/diagnostic)
 * Getting to know YunoHost
     * [Web administration interface](/admin)
     * [Connecting to your server using SSH](/ssh)
