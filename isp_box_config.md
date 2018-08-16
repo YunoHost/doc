@@ -30,7 +30,7 @@ Opening the ports listed below is necessary for the various services available i
 * Web: 80 <small>(HTTP)</small>, 443 <small>(HTTPS)</small>
 * [SSH](/ssh_en): 22
 * [XMPP](/XMPP_en): 5222 <small>(clients)</small>, 5269 <small>(servers)</small>
-* [Email](/email_en):  25, 465 <small>(SMTP)</small>, 587 <small>(SMTP with SSL)</small>,  993 <small>(IMAP)</small>
+* [Email](/email_en): 25, 587 <small>(SMTP)</small>, 993 <small>(IMAP)</small>
 
 <div class="alert alert-warning" markdown="1">
 <span class="glyphicon glyphicon-warning-sign"></span> Some internet service providers block port 25 (mail SMTP) by default to fight spam. Some other ISP don't allow to use port 80/443 (web) freely, though it's less likely. Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](isp_en) for more info.

@@ -35,7 +35,7 @@ Il vous faut ensuite rediriger chacun des ports listés ci-dessous vers l'IP loc
 * Web: 80 <small>(HTTP)</small>, 443 <small>(HTTPS)</small>
 * [SSH](/ssh_fr): 22
 * [XMPP](/XMPP_fr): 5222 <small>(clients)</small>, 5269 <small>(servers)</small>
-* [Email](/email_fr):  25, 465 <small>(SMTP)</small>, 587 <small>(SMTP with SSL)</small>,  993 <small>(IMAP)</small>
+* [Email](/email_en): 25, 587 <small>(SMTP)</small>, 993 <small>(IMAP)</small>
 
 <div class="alert alert-warning" markdown="1">
 <span class="glyphicon glyphicon-warning-sign"></span> Certains fournisseurs d'accès internet bloquent le port 25 (mail SMTP) par défaut pour combattre le spam. D'autres (plus rares) ne permettent pas d'utiliser librement les ports 80/443. En fonction de votre FAI, il peut être possible d'ouvrir ces ports dans l'interface... Voir [cette page](isp_fr) pour plus d'informations.
