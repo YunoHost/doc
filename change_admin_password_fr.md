@@ -18,3 +18,9 @@ Puis allez dans la section `Outils` > `Changer le mot de passe d’administratio
 ```bash
 yunohost tools adminpw
 ```
+
+Si vous avez oublié votre mot de passe, utilisez plutôt:
+
+```bash
+yunohost-reset-ldap-password
+```
