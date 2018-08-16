@@ -35,3 +35,11 @@ Pour une liste plus complète et précise, référez-vous à la très bonne docu
 | **Scarlet** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
 
 **Proximus** ne serait pas ouvert à l’auto-hébergement. L’ouverture des ports serait plus difficile afin d’éviter tout SPAM. Il serait préférable de passer par [Neutrinet](http://neutrinet.be), un des [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres).
+
+### Côte d'Ivoire
+
+| Fournisseur d’accès | Box/ routeur | uPnP activable | [Port 25 ouvrable](email_fr)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | IP fixe |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Orange** | Livebox2 | oui (activé) | non | **non** | **non** | **non** |
+| **Moov** |  | oui (activé) |  |  |  |  |
+| **MTN** |  | oui (activé) |  |  |  | |
