@@ -2,7 +2,7 @@
 
 ## Talks / conf
 
-* (FR) [Capitole du libre 2017 - YunoHost : vers l'auto-hébergement et au-delà - JimboJoe](https://2017.capitoledulibre.org/programme/#yunohost-vers-lauto-hebergement-et-au-dela)
+* (FR) [Capitole du libre 2017 - YunoHost : vers l'auto-hébergement et au-delà - JimboJoe](https://2017.capitoledulibre.org/programme/#yunohost-vers-lauto-hebergement-et-au-dela) ([slides](https://github.com/YunoHost/yunohost-cdl-2017/raw/master/YunoHost-CDL2017.pdf))
 * (FR) [PSES 2017 – Construire l’Internet du Futur avec YunoHost – Aleks, ljf](https://data.passageenseine.org/2017/aleks-ljf_internet-futur-yunohost.webm) ([slides](https://data.passageenseine.org/2017/aleks-ljf_internet-futur-yunohost.pdf))
 * (FR) [Université de technologie de compiègne 2017 – Agir pour un internet éthique – LJF](http://webtv.utc.fr/watch_video.php?v=O34AA7RBR1AH)
 * (EN) [FOSDEM 2017 – Internet Cube – kload](https://archive.fosdem.org/2017/schedule/event/internet_cube/)
@@ -31,4 +31,3 @@
 * [EXPERIMENTA 2018](https://livestream.com/accounts/26482307/events/8034656/player?width=960&height=540&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false) at 57.47 (depuis https://www.experimenta.fr/direct/)
 * [Capitole du libre 2017 - « Contributopia », Dégoogliser ne suffit pas](https://www.youtube.com/watch?v=ip6_VMkWpr8&feature=youtu.be&t=4793)
 * [Contributopia - Essaimage (Framasoft)](https://contributopia.org/fr/essaimage/)
-
