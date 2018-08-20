@@ -2,11 +2,9 @@
 
 Yunohost est installé avec un serveur de messagerie instantanée <abbr title="Extensible Messaging and Presence Protocol">XMPP</abbr> (metronome).
 
-Vous pouvez discuter simplement avec des contacts XMPP/Jabber en installant l’application [Jappix](https://jappix.com/) le lien GitHub `https://github.com/YunoHost-Apps/jappix_ynh` ou depuis Jappix du dépôt communautaire.
-
 [XMPP](https://fr.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol) est un protocole ouvert et extensible qui permet également de créer des salons de discussions, de partager des statuts et des données, de passer des appels en VoIP et de faire de la visioconférence.
 
-Toutes les applications basées sur XMPP sont compatibles entre-elles : lorsque vous utilisez un client XMPP vous pouvez discuter avec n’importe quel.le possesseur.e d’un compte XMPP/Jabber. Ce protocole est déjà utilisé par des millions de personnes dans le monde.
+Toutes les applications basées sur XMPP sont compatibles entre-elles : lorsque vous utilisez un client XMPP vous pouvez discuter avec n’importe quel possesseur d’un compte XMPP/Jabber. Ce protocole est déjà utilisé par des millions de personnes dans le monde.
 
 ### Compte XMPP/Jabber
 
@@ -14,9 +12,9 @@ Un compte XMPP/Jabber est basé sur un identifiant sous la forme `utilisateur@do
 
 Sous yunohost, cet identifiant correspond simplement à l’adresse courriel principale d’un utilisateur. Le mot de passe est celui du compte de l’utilisateur.
 
-### Utiliser un autre client XMPP
+### Se connecter à XMPP
 
-En plus de Jappix, il existe d’autres clients web orientés réseau social, comme [Movim](https://pod.movim.eu) ou [Libervia/Salut à Toi](http://salut-a-toi.org/).
+Il existe des clients web orientés réseau social, comme [Movim](https://pod.movim.eu) ou [Libervia/Salut à Toi](http://salut-a-toi.org/).
 
 Vous pouvez également utiliser un client desktop comme [Pidgin](http://pidgin.im/) (multiplateforme), [Gajim](http://gajim.org/index.fr.html) (Linux), [thunderbird](https://www.mozilla.org/fr/thunderbird/) (multiplateforme), [Jitsi](http://jitsi.org/) (multiplateforme) ou [Adium](https://adium.im/) (Mac OS).
 
