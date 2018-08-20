@@ -2,11 +2,11 @@
 
 Yunohost est installé avec un serveur de messagerie instantanée <abbr title="Extensible Messaging and Presence Protocol">XMPP</abbr> (metronome).
 
-Vous pouvez discuter simplement avec des contacts XMPP/Jabber en installant l’application [Jappix](https://jappix.com/) depuis l’interface d’administration.
+Vous pouvez discuter simplement avec des contacts XMPP/Jabber en installant l’application [Jappix](https://jappix.com/) le lien GitHub `https://github.com/YunoHost-Apps/jappix_ynh` ou depuis Jappix du dépôt communautaire.
 
 [XMPP](https://fr.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol) est un protocole ouvert et extensible qui permet également de créer des salons de discussions, de partager des statuts et des données, de passer des appels en VoIP et de faire de la visioconférence.
 
-Toutes les applications basées sur XMPP sont compatibles entre-elles : lorsque vous utilisez un client XMPP vous pouvez discuter avec n’importe quel possesseur.e d’un compte XMPP/Jabber. Ce protocole est déjà utilisé par des millions de personnes dans le monde.
+Toutes les applications basées sur XMPP sont compatibles entre-elles : lorsque vous utilisez un client XMPP vous pouvez discuter avec n’importe quel.le possesseur.e d’un compte XMPP/Jabber. Ce protocole est déjà utilisé par des millions de personnes dans le monde.
 
 ### Compte XMPP/Jabber
 
@@ -27,21 +27,20 @@ Vous pouvez également utiliser un client desktop comme [Pidgin](http://pidgin.i
 
 Voici une liste plus exhaustive des clients XMPP : https://fr.wikipedia.org/wiki/Liste_de_clients_XMPP
 
-### Chiffrer ses conversations avec OTR
+### Chiffrer ses conversations avec OMEMO
 
-Il est possible de chiffrer ses conversations XMPP à l’aide de [OTR](https://otr.cypherpunks.ca/index.php#downloads), notamment en utilisant Pidgin :
-* Installer `pidgin` et le plugin [`pidgin-otr`](https://otr.cypherpunks.ca/index.php#downloads)(sous linux il devrait être disponible avec votre gestionnaire de paquet)
+Il est possible de chiffrer ses conversations XMPP à l’aide de [OMEMO](https://xmpp.org/extensions/xep-0384.html), notamment en utilisant Gajim :
+* Installer `gajim` et le plugin `gajim-omemo`
 * Activez le plugins dans `Outils > Plugins`
-* Faite `produire` pour générer une empreinte
-* Activez le chiffrement dans une conversation avec un contact disposant de l’OTR.
+* L'activer
+* Activez le chiffrement dans une conversation avec un contact disposant de OMEMO.
 
 ### Salon de discussion
 
-Pour créer un salon de discussion (Multi-user chat) sur votre serveur Yunohost utilisez l’identifiant nomsalon@muc.domaine.tld (ou domaine.tld est le domaine principal de votre serveur).
+Pour créer un salon de discussion (Multi-user chat) sur votre serveur Yunohost utilisez l’identifiant nomsalon@muc.domaine.tld (où domaine.tld est le domaine principal de votre serveur).
 
 Si vous utilisez un nom de domaine personnel, il est nécessaire d’[ajouter une redirection de `type CNAME` pour le sous domaine `muc.`](dns_config_fr) au niveau de votre serveur DNS.
 
 ### VoIP et visioconférence
 
 Un moyen pratique d’appeler un contact XMPP, en VoIP ou en appel vidéo, est d’utiliser le client [Jitsi](http://jitsi.org/).
-
