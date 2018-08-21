@@ -35,7 +35,7 @@ Example: 3
 An environment variable is available for each question asked in the installation.
 
 For example, if in the manifest we have a question like this
-```
+```json
 {
     "name": "domain",
     "type": "domain",
@@ -50,7 +50,7 @@ For example, if in the manifest we have a question like this
 
 The name of the question is `domain` so in the script we can access it with YNH_APP_ARG_DOMAIN. The usage is to create a shorter name in the script like this:
 
-```
+```bash
 domain=$YNH_APP_ARG_DOMAIN
 ```
 
