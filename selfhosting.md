@@ -1,43 +1,29 @@
-#Self-hosting
+Self-hosting
+============
 
-#### Definition
-**Self-hosting** is having a server at home in order to host personnal data and services on it.
+Self-hosting is the activity of having and administrating your own server, typically at home, to host your personal data and services yourself instead of relying exclusively on third-parties. For instance, you can self-host your blog, such that it 'lives' on a machine that you have control on, instead of having it on somebody else's computer (a.k.a. The Cloud) in exchange for money, advertisement or private data.
 
-#### Administrator responsibilities
-Self-hosting implies responsibilities, if you want to host a website, [emails](email) and have [an instant messaging system](XMPP) running, the server needs to stay online all the time, 24/7.
+Self-hosting implies owning a server. A server is a computer which is typically accessible on the network 24/7, and usually does not have any screen or keyboard (it is instead controlled remotely). Contrarily to a popular belief, a server is not necessarily a huge and extra-powerful machine : nowadays, a small, ~$30 ARM board is adequate for self-hosting.
 
-Problems can happen and the server could become unavailable: a power outage, Internet access loss, etc.
+Self-hosting is not about making "your Internet" more secure or does not provide anonymity by itself. Instead, it is about being autonomous, and in control of your services and data - which also means being responsible for them.
 
-If you use the [email system](email_en) and your server becomes unavailable, emails destined to the server will be re-sent under 3 to 7 days.
+Why should you host yourself ?
+------------------------------
 
-#### Self-hosting contraints
-* Slow transfer speed. With ADSL, upload is approximately 1/10 of the rate of download. For instance: 1 Mb/s download speed would give an upload speed of 100 kb/s;
-* Availability must be 24/7;
-* Move;
+- **You believe in a free, open and decentralized internet.** In a centralized internet, private companies and governement can spy, analyze and influence people by dictating how they connect with each other, and by filtering content. Yunohost is developed by a community who believe in an open and decentralized internet, and we hope that you do, too !
 
-#### Self-hosting issues
-* Anonymity, private life;
-* Reappropriation of personnal data and services;
-* Decentralization, distributed networks;
+- **You want to have control on your data and services.** Your pictures, chat messages, browsing history, and that text you are writing for school, have nothing to do on somebody else's server (a.k.a. The Cloud). They are part of your private life, but also part of your family's life, your friend's life, and so on. These data should be managed by *you*, not a random company in the US who wants your data to analyze them and sell the results.
 
-<img src="/images/networks.png" width=500>
+- **You want to learn about how computers and the Internet work.** Operating your own server is a pretty good context to understand the basic mechanisms at the heart of operating systems and the Internet. You might have to deal with command line interface, network architecture, DNS configuration, SSH, and so on.
 
-#### Others Self-hosting projects
-##### Under active development
-- [Cloudron](https://cloudron.io)
-- [Cozy](https://cozy.io)
-- [FreedomBox](https://wiki.debian.org/FreedomBox)
-- [Libre.sh](https://github.com/indiehosters/libre.sh)
-- [Puffin](http://puffin.rocks)
-- [Sandstorm](https://sandstorm.io/)
-- [Sovereign](https://github.com/al3x/sovereign)
-- [UBOS](http://ubos.net)
+- **You want to explore new possibilities and customize things.** Ever dreamed of running a Minecraft server for you friends, or a persistent IRC or XMPP client ? With you very own server, you can manually install and run virtually any program you want, and customize every bits.
 
-##### Unmaintained
-- [ArkOS](http://web.archive.org/web/20170603213149/https://arkos.io/)
-- [Host@home](http://web.archive.org/web/20160206150730/http://yeuxdelibad.net/Programmation/Hostathome.html)
+Why should you *not* host yourself ?
+------------------------------------
 
+- **Self-hosting requires some work and patience.** Hosting yourself is a bit like growing your own garden or vegetables : it requires work and patience. While YunoHost aims to do all the hard work for you, self-hosting still requires that you take time to learn and configure a few things to setup your server properly. You will also need to perform maintenance tasks (such as upgrades) from time to time, or to ask for support if some things break.
 
-#### Learn more
-* [Decentralized Web Summit](http://www.decentralizedweb.net/)
-* [Feudal Security](https://www.schneier.com/blog/archives/2012/12/feudal_sec.html) Bruce Schneier, famous security expert exposes the risks of a centralized web and the importance of civic action.
+- **With great servers comes great responsabilities.** Operating a server means that you are responsible of the data you are hosting. Nobody will be able to recover them for you if they get lost. YunoHost provides backup features, which you should use regularly to backup the configurations and data you care about. You should also keep and eye on security news and recommentations so that your server or critical data don't get compromised.
+
+- **Quality and performance probably won't be as good as premium services.** YunoHost (and most of the applications packaged for it) are free and open-source softwares, developped by communities of people in their free time and on the basis of best effort. There is no absolute guarantee that software will work in every possible circumstances. The performance of your self-hosted server is also related to its CPU and RAM, and to the available internet connectivity.
+
