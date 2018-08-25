@@ -1,73 +1,30 @@
-#Qu’est-ce que YunoHost ?
-
-YunoHost est un **système d’exploitation serveur** visant à simplifier l’auto-hébergement de services Internet.
-Il est basé et reste totalement compatible avec [Debian GNU/Linux](https://debian.org).
-
-<img src="/images/debian-logo.png" width=100>
-
----
-
-### Fonctionnalités
-
-- multi-utilisateurs avec intégration LDAP
-- multi-domaines
-- un système d’emails
-- un serveur de messagerie instantanée
-- un système d’authentification unique (SSO)
-- un système d’applications
-- un système de backup
-- un système de régénération de configuration des services
+Qu'est-ce que YunoHost ?
+========================
 
 <img src="/images/YunoHost_logo_vertical.png" width=400>
 
----
+Objectif
+--------
 
-### Logiciels
+YunoHost est un **système d’exploitation serveur** visant à rendre accessible [l’auto-hébergement](selfhosting_fr) à autant de personne que possible, sans délaisser la qualité et la fiabilité du logiciel. YunoHost supporte [plusieurs types de matériel](install_fr) et est basé et compatible avec [Debian GNU/Linux](https://debian.org).
 
-Concrètement, YunoHost **installe et configure automatiquement** quelques services autour de LDAP, et **fournit des outils** pour les administrer.
+Fonctionnalités
+---------------
 
-On peut donc le considérer comme une distribution, comprenant les logiciels suivants :
+- <img src="/images/icon-debian.png" width=64> basé sur Debian ;
+- <img src="/images/icon-tools.png" width=64> administration via une **gentille interface web** ;
+- <img src="/images/icon-package.png" width=64> **deployez facilement des applications** ; 
+- <img src="/images/icon-users.png" width=64> gérez des **utilisateurs** <small>(gérés via LDAP)</small> ;
+- <img src="/images/icon-globe.png" width=64> gérez des **domaines** ;
+- <img src="/images/icon-medic.png" width=64> créez et restaurez des **sauvegardes** ;
+- <img src="/images/icon-door.png" width=64> les utilisateurs peuvent se connecter à toutes les apps à travers le système de **Single Sign-On** (SSO) <small>(SSOwat)</small> ;
+- <img src="/images/icon-mail.png" width=64> viens avec un **serveur mail complet** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
+- <img src="/images/icon-messaging.png" width=64> ... ainsi qu'un **serveur de messagerie instantannée** <small>(XMPP)</small> ;
+- <img src="/images/icon-lock.png" width=64> ... un système de gestion de **certificats SSL** <small>(interfacé avec Let's Encrypt)</small> ;
+- <img src="/images/icon-shield.png" width=64> et des **systèmes de sécurité** <small>(fail2ban, yunohost-firewall)</small> ;
 
-<img src="/images/nginx.png">
-<img src="/images/postfix.png">
-<img src="/images/dovecot.png">
-<img src="/images/rspamd.png">
-<img src="/images/XMPP_logo.png" width=80>
-<img src="/images/metronome-logo-180x180.png" width=80>
-<img src="/images/Let's_Encrypt.svg">
-
-* [Nginx](http://nginx.org/) : un serveur web
-* [Postfix](http://www.postfix.org/) : un serveur de messagerie électronique SMTP
-* [Dovecot](http://www.dovecot.org/) : un serveur de messagerie électronique IMAP et POP3
-* [Rspamd](https://rspamd.com/) : un antispam
-* [Metronome](http://www.lightwitch.org/metronome) : un serveur XMPP
-* [OpenLDAP](http://www.openldap.org/) : un système d’annuaire
-* [Dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html) : un serveur de DNS
-* [SSOwat](https://github.com/Kloadut/SSOwat) : un (SSO) système d’authentification web
-- [Let's Encrypt](https://letsencrypt.org): un gestionnaire de certificats
-
----
-
-### Système d’app
-
-En complément, YunoHost fournit un système d’« app » qui n’est autre qu’un **dépôt communautaire** de scripts aidant à installer des services et applications web supplémentaires.
-
-La chose la plus intéressante avec ce système est que **les applications web profitent de la base LDAP** via le SSO (Single Sign On), qui authentifie les utilisateurs du serveur avec un unique nom d’utilisateur/mot de passe.
-
-Vous serez peut-être intéressé à la lecture de la [documentation sur le packaging](/packaging_apps_fr) et la page GitHub d’[SSOwat](https://github.com/YunoHost/SSOwat/) pour aller plus loin.
-
-<img src="/images/roundcube.png">
-<img src="/images/ttrss.png">
-<img src="/images/wordpress.png">
-<img src="/images/transmission.png">
-<img src="/images/jappix.png">
-<img src="/images/logo-jirafeau.jpeg" width=70>
-<img src="/images/Logo-wallabag-svg.svg" width=70>
-<img src="/images/Searx_logo.svg" width=70>
-
----
-
-### Origine
+Origine
+-------
 
 YunoHost est un projet né en février 2012 à la suite d’à peu près ça :
 
@@ -78,24 +35,21 @@ Il ne manquait en fait qu’une interface d’administration au serveur de Beudb
 
 Constatant l’engouement croissant autour de YunoHost et de l’auto-hébergement en général, les développeurs et les nouveaux contributeurs ont alors décidé de prendre le cap d’une version 2, plus accessible, plus extensible, plus puissante, et qui prépare du bon café commerce équitable pour les lutins de Laponie.
 
+But
 ---
-
-### But
 
 Le but de YunoHost est de rendre accessibles au plus grand nombre l’installation et l’administration d’un serveur, sans délaisser la qualité et la fiabilité du logiciel. 
 
 Tous les efforts sont faits pour simplifier le déploiement sur le plus d’appareils possible et dans toutes les conditions (chez soi, sur son serveur dédié ou sur un VPS).
 
+Nom
 ---
-
-### Nom
 
 **YunoHost** vient de l’argot Internet anglais « Y U NO Host » signifiant approximativement « Pourquoi toi ne pas héberger ». Le [mème Internet](http://fr.wikipedia.org/wiki/M%C3%A8me_Internet) qui l’illustre est à peu près celui-ci :
 <div class="text-center"><img style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" src="/images/dude_yunohost.jpg"></div>
 
----
-
-### Développement
+Développement
+-------------
 
 YunoHost est développé pour être le plus **simple** et le moins intrusif possible pour garder la compatibilité avec Debian. Il propose uniquement un ensemble de configurations automatiques et opère via des interfaces accessibles.
 
@@ -103,15 +57,13 @@ Le tout est bien entendu **entièrement libre**. La philosophie de l’[auto-hé
 
 N’hésitez pas à visiter la page « [contribuez](/contribute_fr) ».
 
----
-
-### Sécurité
+Sécurité
+--------
 
 Tous les efforts ont été déployés pour sécuriser YunoHost, et **chiffrer tous les protocoles**. Une explication plus détaillée est disponible [ici](/security_fr).
 
----
-
-### Qu’est-ce que YunoHost n’est pas ?
+Qu’est-ce que YunoHost n’est pas ?
+----------------------------------
 
 Même si YunoHost est multi-domaine et multi-utilisateur, il reste **inapproprié pour un usage mutualisé**.
 
@@ -119,9 +71,8 @@ Premièrement parce que le logiciel est trop jeune, donc non-testé et non-optim
 
 Vous pouvez héberger vos amis, votre famille ou votre entreprise sans problème, mais vous devez **avoir confiance** en vos utilisateurs, et ils doivent de la même façon avoir confiance en vous. Si vous souhaitez tout de même fournir des services YunoHost à des inconnus, **un VPS entier par utilisateur** sera la meilleure solution.
 
----
-
-# Logo
+Logo
+----
 
 Logo Yunohost noir et blanc réalisé par ToZz (400 × 400 px) :
 
