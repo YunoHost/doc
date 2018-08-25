@@ -3,10 +3,10 @@
 * Découvrir l'auto-hébergement
     * [Qu'est-ce que l'auto-hébergement](/selfhosting_fr)
     * [Qu'est-ce que YunoHost](/whatsyunohost_fr)
-* Avant de se lancer
     * [Essayer YunoHost](/try_fr)
-    * [Matériel compatible](/hardware_fr)
-    * [À propos des fournisseurs d'accès internet](/isp_fr)
+    * [Choisir son mode d'hébergement](howtohostyourself-fr)
+        * [Matériel compatible](/hardware_fr)
+        * [À propos des fournisseurs d'accès internet](/isp_fr)
 * [Guide d’installation](/install_fr)
     * [Sur un ordinateur "standard"](/install_iso_fr)
     * [Sur un serveur dédié ou virtuel (VPS)](/install_on_vps_fr)

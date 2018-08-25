@@ -3,10 +3,10 @@
 * Discovering self-hosting
     * [What is Self-hosting](/selfhosting)
     * [What is YunoHost](/whatsyunohost)
-* Before installing
     * [Try YunoHost](/try)
-    * [Choosing hardware](/hardware)
-    * [About the friendliness of internet service providers](/isp)
+    * [How to host yourself](howtohostyourself)
+        * [Choosing hardware](/hardware)
+        * [About the friendliness of internet service providers](/isp)
 * [Installing YunoHost](/install)
     * [On a regular computer](/install_iso)
     * [On a dedicated or a virtual private server](/install_on_vps)
