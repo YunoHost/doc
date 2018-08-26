@@ -48,6 +48,37 @@ Take a look at the [ownCloud package](https://github.com/Kloadut/owncloud_ynh) f
 ### Helpers
 <a class="btn btn-lg btn-default" href="packaging_apps_helpers_en">Helpers</a>
 
+### Registering a log file
+
+In a lot of case, you might want to register a log file created by your app, to make it available in the webadmin. To register a log, you can create a reference file `/var/log/yunohost/categories/app/APPNAME.yml`.
+
+You can specify a start date by starting the file name with the date formatted as `YYYYMMDD-HHMMSS`.
+
+Example of yml metadata log file:
+```bash
+log_path: /path/to/your/log/file.log
+```
+
+If you want display some context info, you can add:
+```bash
+extra:
+  env:
+    args1: value1
+    args2: value2
+    args3: value3
+```
+
+You can attach the log to an app, domain, service or user like this :
+```bash
+related_to:
+    - ['app', 'APPNAME']
+    - ['service', 'SERVICE1']
+    - ['service', 'SERVICE2']
+    - ['domain', 'DOMAIN.TLD']
+```
+
+This will be used to filter logs and display all log related to an entity like a user, a domain, an app or a service.
+
 ### Test it!
 In order to test your package, you can execute your script standalone as `admin` (do not forget to append required arguments):
 ```bash
