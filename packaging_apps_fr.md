@@ -46,17 +46,17 @@ Comme les instances de YunoHost possèdent une architecture unifiée, vous serez
 <a class="btn btn-lg btn-default" href="packaging_apps_helpers_fr">Commandes pratiques</a>
 
 ### Référencement des logs
-Dans de nombreuses situations, vous pouvez vouloir indexer un fichier de log pour qu'il soit affiché dans la webadmin. Pour indexer un log, il faut créer un fichier d'indexation dans /var/log/yunohost/categories/app/APPNAME.yml.
+Dans de nombreuses situations, vous pouvez vouloir indexer un fichier de log pour qu'il soit affiché dans la webadmin. Pour indexer un log, il faut créer un fichier d'indexation dans `/var/log/yunohost/categories/app/APPNAME.yml`.
 
-Il est possible de spécifier la date de début en commençant le nom de fichier par la date YYYYMMDD-HHMMSS.
+Il est possible de spécifier la date de début en commençant le nom de fichier par la date `YYYYMMDD-HHMMSS`.
 
 Exemple de fichier de log d'indexation:
-```
+```bash
 log_path: /chemin/vers/le/fichier.log
 ```
 
 Il est possible d'afficher des infos complémentaires, la variable env sera affichée dans la partie "Contexte" :
-```
+```bash
 extra:
   env:
     args1: value1
@@ -65,14 +65,15 @@ extra:
 ```
 
 Il est possible de rattacher le log à une application précise et/ou un service, un nom de domaine, une personne :
-```
+```bash
 related_to:
     - ['app', 'APPNAME']
     - ['service', 'SERVICE1']
     - ['service', 'SERVICE2']
     - ['domain', 'DOMAIN.TLD']
 ```
-Ces informations seront utilisées pour pemettre de filtrer le slogs en relation avec une de ces entités application, service, domaine, personne.
+
+Ces informations seront utilisées pour permettre de filtrer les logs en relation avec une de ces entités application, service, domaine, personne.
 
 
 ### Améliorer la qualité du paquet d’installation
