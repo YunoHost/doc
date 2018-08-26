@@ -21,6 +21,7 @@
     * [Installer un certificat SSL](/certificate_fr)
     * [Diagnostic du bon fonctionnement du YunoHost](/diagnostic_fr)
 * Apprendre à connaitre YunoHost
+    * [Vue d'ensemble de YunoHost](/overview_fr)
     * [L'interface d'administration web](/admin_fr)
     * [Se connecter à son serveur via SSH](/ssh_fr)
     * [Administrer son serveur en ligne de commande](/commandline_fr)

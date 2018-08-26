@@ -21,6 +21,7 @@
     * [Installing an SSL certificate](/certificate)
     * [Diagnose if your setup is working properly](/diagnostic)
 * Getting to know YunoHost
+    * [Overview of YunoHost](/overview)
     * [Web administration interface](/admin)
     * [Connecting to your server using SSH](/ssh)
     * [Command-line administration](/commandline)
