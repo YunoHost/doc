@@ -26,58 +26,6 @@
 
 ---
 
-###<div dir="rtl"> البرمجيات</div>
-<div dir="rtl">
-عمليًا، يقوم واي يونوهوست YunoHost **بالتنصيب و الإعداد الآلي** لبعض الخدمات التي تشتغل حول نظام LDAP، و كذا **بتوفير الأدوات اللازمة** لإدارتها.
-
-لذا يمكن اعتباره كتوزيعة بحد ذاتها تضم كل مِن البرمجيات التالية :
-</div>
-
-<img src="/images/nginx.png">
-<img src="/images/postfix.png">
-<img src="/images/dovecot.png">
-<img src="/images/rspamd.png">
-<img src="/images/XMPP_logo.png" width=80>
-<img src="/images/metronome-logo-180x180.png" width=80>
-<img src="/images/Let's_Encrypt.svg">
-
-<div dir="rtl">
-* [Nginx](http://nginx.org/) : خادم صفحات الويب
-* [Postfix](http://www.postfix.org/) : خادم للبريد الإلكتروني الصادر عبر بروتوكول SMTP
-* [Dovecot](http://www.dovecot.org/) : خادم للبريد الإلكتروني عبر بروتوكولي IMAP و POP3
-* [Rspamd](https://rspamd.com/) : مُضاد للبريد المُزعج
-* [Metronome](http://www.lightwitch.org/metronome) : خادم للمحادثة الفورية عبر بروتوكول XMPP
-* [OpenLDAP](http://www.openldap.org/) : un système d’annuaire
-* [Dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html) : خادم أسماء النطاقات دي آن أس DNS
-* [SSOwat](https://github.com/Kloadut/SSOwat) : (SSO) نظام للمصادقة عبر الويب
-- [Let's Encrypt](https://letsencrypt.org): مدير للشهادات الإلكترونية الآمنة
-</div>
-
----
-
-###<div dir="rtl"> نظام للتطبيقات</div>
-<div dir="rtl">
-
-بالإضافة إلى ما سبق، يُوَفِّرُ YunoHost نظامًا "للتطبيقات" على شكل **مُستودَع مُجتمعاتيّ** من السكريبتات التي تساعد المستخدِم على تثبيت خدمات و تطبيقات ويب إضافية.
-
-La chose la plus intéressante avec ce système est que **les applications web profitent de la base LDAP** via le SSO (Single Sign On), qui authentifie les utilisateurs du serveur avec un unique nom d’utilisateur/mot de passe.
-</div>
-<div dir="rtl">
-
-قد تهمكم قراءة صفحة [الدليل حول التحزيم](/packaging_apps_fr) وصفحة جيت هب الخاصة بـ[SSOwat](https://github.com/YunoHost/SSOwat/) لمعرفة المزيد.
-</div>
-
-<img src="/images/roundcube.png">
-<img src="/images/ttrss.png">
-<img src="/images/wordpress.png">
-<img src="/images/transmission.png">
-<img src="/images/jappix.png">
-<img src="/images/logo-jirafeau.jpeg" width=70>
-<img src="/images/Logo-wallabag-svg.svg" width=70>
-<img src="/images/Searx_logo.svg" width=70>
-
----
-
 ###<div dir="rtl"> أصل فكرة المشروع</div>
 
 <div dir="rtl">
