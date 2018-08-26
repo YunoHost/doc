@@ -48,18 +48,19 @@ Take a look at the [ownCloud package](https://github.com/Kloadut/owncloud_ynh) f
 ### Helpers
 <a class="btn btn-lg btn-default" href="packaging_apps_helpers_en">Helpers</a>
 
-### Register a log
-In a lot of case, you could want to register log file created by your app, to display it in YunoHost webadmin. To register a log, you can create a reference file in /var/log/yunohost/categories/app/APPNAME.yml
+### Registering a log file
 
-You can specify started date by begining the file name by the date formatted as YYYYMMDD-HHMMSS.
+In a lot of case, you might want to register a log file created by your app, to make it available in the webadmin. To register a log, you can create a reference file `/var/log/yunohost/categories/app/APPNAME.yml`.
 
-Example of yml metatdata log file:
-```
+You can specify a start date by starting the file name with the date formatted as `YYYYMMDD-HHMMSS`.
+
+Example of yml metadata log file:
+```bash
 log_path: /path/to/your/log/file.log
 ```
 
-If you want display some context info, you can add :
-```
+If you want display some context info, you can add:
+```bash
 extra:
   env:
     args1: value1
@@ -67,15 +68,16 @@ extra:
     args3: value3
 ```
 
-You can attach the domain to an app, domain, service or user like this :
-```
+You can attach the log to an app, domain, service or user like this :
+```bash
 related_to:
     - ['app', 'APPNAME']
     - ['service', 'SERVICE1']
     - ['service', 'SERVICE2']
     - ['domain', 'DOMAIN.TLD']
 ```
-This will be used to filter logs and display all log related to an entity lika a user, a domain, an app or a service.
+
+This will be used to filter logs and display all log related to an entity like a user, a domain, an app or a service.
 
 ### Test it!
 In order to test your package, you can execute your script standalone as `admin` (do not forget to append required arguments):
