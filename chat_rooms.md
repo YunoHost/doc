@@ -10,17 +10,18 @@ You could join those chat rooms using :
 
 #### Help and support chatroom
 
-Their is a [support](support_fr) chatroom for YunoHost users mutual support and help.
+There is a [support](support_fr) chatroom for YunoHost users mutual support and help.
 
-- IRC channel **#yunohost** on irc.freenode.net.
-- Matrix room (#freenode_#yunohost:matrix.org)
-- XMPP chatroom **[support@conference.yunohost.org](xmpp:support@conference.yunohost.org?join)**
+- IRC: **#yunohost** on irc.freenode.net ;
+- Matrix: **#freenode_#yunohost:matrix.org** ;
+- XMPP: **[support@conference.yunohost.org](xmpp:support@conference.yunohost.org?join)**
 
 #### Development chatroom
+
 YunoHost core development chat room :
-- channel **#yunohost-dev** on irc.freenode.net
-- Matrix: #freenode_#yunohost-dev:matrix.org)
-- **[dev@conference.yunohost.org](xmpp:dev@conference.yunohost.org?join)**
+- IRC: **#yunohost-dev** on irc.freenode.net ;
+- Matrix: **#freenode_#yunohost-dev:matrix.org** ;
+- XMPP: **[dev@conference.yunohost.org](xmpp:dev@conference.yunohost.org?join)**
 
 Currently, the main chat room for contributions on YunoHost project.
 For help, please see **#yunohost** chat room above.
@@ -28,6 +29,6 @@ For help, please see **#yunohost** chat room above.
 #### Applications chatroom
 Application packaging development chat room. It allow packagers to help each other.
 It also allow to discuss packaging evolution, continuous integration tools :
-- channel **#yunohost-apps** on irc.freenode.net
-- Matrix: #freenode_#yunohost-apps:matrix.org)
-- **[apps@conference.yunohost.org](xmpp:apps@conference.yunohost.org?join)**
+- IRC: **#yunohost-apps** on irc.freenode.net
+- Matrix: **#freenode_#yunohost-apps:matrix.org**
+- XMPP: **[apps@conference.yunohost.org](xmpp:apps@conference.yunohost.org?join)**
