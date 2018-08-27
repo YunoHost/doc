@@ -1,52 +1,30 @@
-# Moulinette
+# Administrer YunoHost en ligne de commande
 
-La **Moulinette** est l’interface en ligne de commande (CLI) de YunoHost. Elle permet de gérer entièrement YunoHost : utilisateurs, domaines, applications, pare-feu, sauvegardes et monitoring.
+L'interface en ligne de commande (CLI) est, en informatique, la manière original (et plus technique) d'interagir avec un ordinateur comparé aux interfaces graphique. La ligne de commande est généralement considéré comme plus complète, puissante et efficace que les interface graphique, bien que plus difficile à apprendre.
 
-L’autre interface est l’[administration web](/admin_fr), qui permet de se passer de la ligne de commande.
+Dans le contexte de YunoHost, ou de l'administration système en général, la ligne de commande est communément utilisée après s'être [connecté en SSH](/ssh).
 
-Pour utiliser la Moulinette il faut se connecter à son serveur en [SSH](/ssh_fr).
+<div class="alert alert-info" markdown="1">
+Fournir un tutorial complet sur la ligne de commande est bien au dela du cadre de la documentation de YunoHost : pour cela, référez-vous à des tutoriaux comme [celui-ci](https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande) ou [celui-ci (en)](http://linuxcommand.org/). Mais soyez rassurer qu'il n'y a pas besoin d'être un expert pour commencer à l'utiliser !
+</div>
 
-### Utilisation
+La commande `yunohost` peut être utilisée pour administrer votre serveur ou réaliser les mêmes actions que celles disponibles sur la webadmin. Elle doit être lancée en depuis l'utilisateur `root`, ou bien depuis l'utilisateur `admin` en précédant la commande de `sudo`. (ProTip™ : il est possible de devenir `root` via la commande `sudo su` en tant qu'`admin`.)
 
-La moulinette fonctionne avec deux niveaux de sous-commandes, par exemple :
+Les commandes YunoHost ont ce type de structure :
+
 ```bash
-yunohost user create
+yunohost app install wordpress --label Webmail
+          ^    ^        ^             ^
+          |    |        |             |
+   categorie  action  argument     options
 ```
 
-Vous pouvez y adjoindre des arguments pour certaines commandes :
-```bash
-yunohost app install roundcube --label Webmail
-```
+N'hesitez pas à naviguer et demander des informations à propos d'une catégorie ou action donnée via l'option `--help`. Par exemple, ces commandes :
 
-Pour obtenir de l’aide à tout moment sur l’utilisation d’une commande ou d’une sous-commande, vous pouvez ajouter ```-h``` ou ```--help``` à la commande. Essayez par exemple :
 ```bash
 yunohost --help
 yunohost user --help
 yunohost user create --help
 ```
 
---- 
-
-Ça y est, vous savez utiliser la moulinette ! N’hésitez pas à parcourir ses fonctions.
-```bash
-root@yunohost:~# yunohost --help
-usage: yunohost [-h] [-v]
-                {domain,monitor,firewall,backup,app,hook,dyndns,user,tools}
-                ...
-
-positional arguments:
-  {domain,monitor,firewall,backup,app,hook,dyndns,user,tools}
-    domain              Manage domains
-    monitor             Monitoring functions
-    firewall            Manage firewall rules
-    backup              Manage backups
-    app                 Manage apps
-    hook                Manage hooks
-    dyndns              Subscribe and Update DynDNS Hosts
-    user                Manage users
-    tools               Specific tools
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -v, --version         Display YunoHost version
-```
+vont successivement lister toutes les catégories disponibles, puis les actions de la catégorie `user`, puis expliquer comment utiliser l'action `user create`. Vous devriez remarquer que l'arbre des commandes YunoHost suit une structure similaire aux pages de la webadmin.
