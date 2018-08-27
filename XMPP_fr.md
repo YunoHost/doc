@@ -1,8 +1,8 @@
 #Chat, VoIP et réseau social avec <img src="/images/XMPP_logo.png" width=100>
 
-Yunohost est installé avec un serveur de messagerie instantanée <abbr title="Extensible Messaging and Presence Protocol">XMPP</abbr> (metronome).
+Yunohost est installé avec un serveur de messagerie instantanée Metronome qui implémente le [protocole XMPP](https://fr.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol).
 
-[XMPP](https://fr.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol) est un protocole ouvert et extensible qui permet également de créer des salons de discussions, de partager des statuts et des données, de passer des appels en VoIP et de faire de la visioconférence.
+XMPP est un protocole ouvert et extensible qui permet également de créer des salons de discussions, de partager des statuts et des données, de passer des appels en VoIP et de faire de la visioconférence.
 
 Toutes les applications basées sur XMPP sont compatibles entre-elles : lorsque vous utilisez un client XMPP vous pouvez discuter avec n’importe quel possesseur d’un compte XMPP/Jabber. Ce protocole est déjà utilisé par des millions de personnes dans le monde.
 
@@ -14,12 +14,21 @@ Sous yunohost, cet identifiant correspond simplement à l’adresse courriel pri
 
 ### Se connecter à XMPP
 
-Il existe des clients web orientés réseau social, comme [Movim](https://pod.movim.eu) ou [Libervia/Salut à Toi](http://salut-a-toi.org/).
+Il existe des clients web orientés réseau social, comme :
+- [Movim](https://pod.movim.eu)
+- [Libervia/Salut à Toi](http://salut-a-toi.org/).
 
-Vous pouvez également utiliser un client desktop comme [Pidgin](http://pidgin.im/) (multiplateforme), [Gajim](http://gajim.org/index.fr.html) (Linux), [thunderbird](https://www.mozilla.org/fr/thunderbird/) (multiplateforme), [Jitsi](http://jitsi.org/) (multiplateforme) ou [Adium](https://adium.im/) (Mac OS).
+Vous pouvez également utiliser un client desktop comme 
+- [Pidgin](http://pidgin.im/) (multiplateforme), 
+- [Gajim](http://gajim.org/index.fr.html) (Linux), 
+- [Dino](https://dino.im) (Linux),
+- [Thunderbird](https://www.mozilla.org/fr/thunderbird/) (multiplateforme), 
+- [Jitsi](http://jitsi.org/) (multiplateforme) 
+- [Adium](https://adium.im/) (Mac OS).
 
 ... ou un client smartphone
 * [Xabber](http://xabber.com) (Android)
+* [Conversations](https://conversations.im/) (Android)
 * [Movim sous Android](https://movim.eu)
 * [Monal](https://itunes.apple.com/us/app/monal-free-xmpp-chat/id317711500?mt=8) (iOS)
 
@@ -37,7 +46,7 @@ Il est possible de chiffrer ses conversations XMPP à l’aide de [OMEMO](https:
 
 Pour créer un salon de discussion (Multi-user chat) sur votre serveur Yunohost utilisez l’identifiant nomsalon@muc.domaine.tld (où domaine.tld est le domaine principal de votre serveur).
 
-Si vous utilisez un nom de domaine personnel, il est nécessaire d’[ajouter une redirection de `type CNAME` pour le sous domaine `muc.`](dns_config_fr) au niveau de votre serveur DNS.
+Si vous utilisez un nom de domaine personnel, il est nécessaire d’[ajouter une redirection de type CNAME pour le sous domaine `muc.`](dns_config_fr) au niveau de votre serveur DNS.
 
 ### VoIP et visioconférence
 
