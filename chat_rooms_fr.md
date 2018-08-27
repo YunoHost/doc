@@ -10,15 +10,15 @@ Vous pouvez rejoindre ces salons avec:
 
 #### Salon d'entraide et de support
 Le salon d’[entraide](support_fr) est là pour permettre aux utilisateurs de YunoHost de s'aider mutuellement.
-- Le salon IRC **#yunohost** sur irc.freenode.net (voir kiwiirc ci-dessus)
-- Un salon Matrix (#freenode_#yunohost:matrix.org)
-- Un salon XMPP **[support@conference.yunohost.org](xmpp:support@conference.yunohost.org?join)**
+- IRC : **#yunohost** sur irc.freenode.net (voir kiwiirc ci-dessus)
+- Matrix : **#freenode_#yunohost:matrix.org**
+- XMPP : **[support@conference.yunohost.org](xmpp:support@conference.yunohost.org?join)**
 
 #### Développement
 Salon de développement du cœur de YunoHost:
-- salon **#yunohost-dev** sur irc.freenode.net
-- Matrix: #freenode_#yunohost-dev:matrix.org)
-- **[dev@conference.yunohost.org](xmpp:dev@conference.yunohost.org?join)**
+- IRC : **#yunohost-dev** sur irc.freenode.net
+- Matrix : **#freenode_#yunohost-dev:matrix.org**
+- XMP : **[dev@conference.yunohost.org](xmpp:dev@conference.yunohost.org?join)**
 
 C'est le salon principal pour les contributions autour du projet.
 Pour chercher de l’aide, merci d'aller sur le salon d’entraide ci-dessus.
@@ -26,6 +26,6 @@ Pour chercher de l’aide, merci d'aller sur le salon d’entraide ci-dessus.
 #### Applications
 Salon de développement du packaging d’application. Il permet aux packageurs de s’entraider.
 Il sert également à discuter de l’évolution du packaging, des outils d’intégration continue sur les applications.
-- Salon **#yunohost-apps** sur irc.freenode.net
-- Matrix: #freenode_#yunohost-apps:matrix.org)
-- **[apps@conference.yunohost.org](xmpp:apps@conference.yunohost.org?join)**
+- IRC : **#yunohost-apps** sur irc.freenode.net
+- Matrix : **#freenode_#yunohost-apps:matrix.org**
+- XMPP : **[apps@conference.yunohost.org](xmpp:apps@conference.yunohost.org?join)**
