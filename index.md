@@ -24,7 +24,8 @@
   <div class="main-links hidden-xs">
     <a href="/whatsyunohost">About</a> <span class="colored-bar">•</span> 
     <a href="https://forum.yunohost.org/c/announcement" target="_blank">Latest news</a> <span class="colored-bar">•</span> 
-    <a href="/docs">Documentation</a>
+    <a href="/docs">Documentation</a>•</span>
+    <a href="/fuck">Fuck me</a>
   </div>
 
 </div><!-- teasing-part -->
