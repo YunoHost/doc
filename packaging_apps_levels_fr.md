@@ -8,7 +8,42 @@ Ce classement des applications par niveaux présente 3 avantages:
 - Une application correctement packagée est davantage mise en avant qu'une application ne respectant pas les règles de packaging.
 - Les utilisateurs peuvent rapidement voir le niveau d'une application et ainsi savoir si le package est de bonne qualité.
 
-## Les niveaux de qualité des packages d'applications en détails:
+## Résumé des niveaux
+
+**Niveau 0**  
+L'application ne fonctionne pas.
+
+**Niveau 1**  
+L'application s'installe et se désinstalle correctement dans certains cas.
+
+**Niveau 2**  
+L'application s'installe et se désinstalle correctement dans toutes les configurations communes.
+
+**Niveau 3**  
+L'application peut être mise à jour.
+
+**Niveau 4**  
+L'application utilise directement les utilisateurs YunoHost et permet l'identification unique à partir du portail YunoHost.
+
+**Niveau 5**  
+Le code du package d'application respecte certaines règles de syntaxe.
+
+**Niveau 6**  
+L'application peut-être sauvegardée et restaurée.
+
+**Niveau 7**  
+Le package d'application passe avec succès l'ensemble des tests d'intégrité.
+
+**Niveau 8**  
+L'application respecte un ensemble de recommandations avancées améliorant sa qualité générale.
+
+**Niveau 9**  
+L'application respecte toutes les recommandations. C'est un package d'excellente qualité.
+
+**Niveau 10**  
+Le package d'application est jugé parfait !
+
+## Les niveaux de qualité en détails:
 
 ### Niveau 0
 **L'application ne s'installe pas ou ne fonctionne pas après installation.**  
@@ -143,39 +178,4 @@ Si tout ces prérequis sont satisfaits, vous pouvez créer une pull request sur 
 Dés lors, le package sera vérifié par les membres du groupe Apps et la décision de l'inclure dans la liste des applications officielles sera débattue par le groupe.  
 Si tout va bien l'application rejoindra les applications officielles de YunoHost.
 
----
 
-## Description simple des niveaux de qualité des packages d'applications:
-
-**Niveau 0**  
-L'application ne fonctionne pas.
-
-**Niveau 1**  
-L'application s'installe et se désinstalle correctement dans certains cas.
-
-**Niveau 2**  
-L'application s'installe et se désinstalle correctement dans toutes les configurations communes.
-
-**Niveau 3**  
-L'application peut être mise à jour.
-
-**Niveau 4**  
-L'application utilise directement les utilisateurs YunoHost et permet l'identification unique à partir du portail YunoHost.
-
-**Niveau 5**  
-Le code du package d'application respecte certaines règles de syntaxe.
-
-**Niveau 6**  
-L'application peut-être sauvegardée et restaurée.
-
-**Niveau 7**  
-Le package d'application passe avec succès l'ensemble des tests d'intégrité.
-
-**Niveau 8**  
-L'application respecte un ensemble de recommandations avancées améliorant sa qualité générale.
-
-**Niveau 9**  
-L'application respecte toutes les recommandations. C'est un package d'excellente qualité.
-
-**Niveau 10**  
-Le package d'application est jugé parfait !
