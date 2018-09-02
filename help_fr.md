@@ -16,7 +16,7 @@ style="border:0; width:100%; height:450px;"></iframe>
 
 </br>
 </br>
-<em>Note : ce salon est aussi accessible via XMPP <small>(support@conference.yunohost.org)</small>, ou Matrix <small>(#freenode_#yunohost:matrix.org)</small>.</em>
+<em>Note : ce salon est aussi accessible via XMPP <small>(support@conference.yunohost.org)</small>, ou Matrix <small>(#freenode_#yunohost:matrix.org - <a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">en utilisant Riot</a>)</small>.</em>
 support@conference.yunohost.org</em>
 </center>
 
