@@ -18,7 +18,9 @@
 </br>
 <div dir="rtl">
 <em>ملاحظة : يمكن الإتصال كذلك بغرفة المحادثة باستخدام تطبيق XMPP الخاص بك على العنوان التالي </br>
-support@conference.yunohost.org</em>
+support@conference.yunohost.org </br>
+<a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">Riot</a> باستخدام Matrix أو </br>
+</em>
 </div>
 </center>
 
