@@ -332,11 +332,11 @@ De manière générale, cette YEP implique de suivre un canal d'information pour
 Comme précisé dans la YEP 1.7, si un correctif de sécurité doit être déployé en urgence, un autre membre de YunoHost peut être amené à faire un commit sur le package si nécessaire.
 
 #### YEP 3.7 - Modifier correctement les dépots sources  | draft | manuel | OFFICIAL |
-La modification ou l'ajout des dépôts sources dans /etc/apt/sources.list ou /etc/apt/sources.list.d/ ne doit se faire que si c'est absolument nécessaire.
+La modification ou l'ajout des dépôts sources dans /etc/apt/sources.list ou /etc/apt/sources.list.d/ ne doit se faire que si c'est absolument nécessaire. Dans un tel cas, merci d'utiliser le pinning, afin de s'assurer que le dépôt n'aura pas une priorité supérieur aux dépôts de debian et YunoHost. 
 
 Dans certains cas, il pourra être préférable de télécharger directement le .deb à partir du dépôt source (avec wget par exemple), ceci est à évaluer en fonction des dépendances, de la nature et du rythme des mises à jour.
 
-L'ajout des backports, de dépôts contrib ou nonfree est autorisée.
+L'ajout des backports et des dépôts contrib est autorisée. Le paquet doit demander l'autorisation à l'usager avant de procéder à l'ajout de dépôts nonfree, et si possible, permettre l'installation de l'app sans ce dépôt.
 
 Lorsque l'on désigne la distribution on doit toujours faire référence à son nom (jessie) et non pas au statut de celle-ci (stable). Sans quoi, il y a un risque le jour où debian change de version.
 
