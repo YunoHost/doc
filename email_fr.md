@@ -23,6 +23,8 @@ Clients de messagerie
 
 Pour interagir avec le serveur de mail, c'est-à-dire lire et envoyer des emails, vous pouvez soit installer un client web comme Roundcube ou Rainloop sur votre serveur - ou configurer un client de bureau ou mobile comme décrit dans [cette page](email_configure_client).
 
+Les clients de bureau ou mobile ont l'avantage de copier vos emails sur l'équipement permettant ainsi la consultation hors ligne et une protection relative face à d'éventuelles pannes matériel de votre serveur.
+
 Configuration des alias de messagerie et des redirections automatiques
 -------------------------------------------
 

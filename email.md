@@ -23,6 +23,8 @@ Email clients
 
 To interact with the email sever (read and send emails), you can either install a webclient such as Roundcube or Rainloop on your serveur - or configure a desktop/mobile client as described in [this page](email_configure_client).
 
+Desktop and mobile clients have the advantage of copying your emails to the equipment, allowing offline consultation and relative protection against possible hardware failures of your server.
+
 Configuring email aliases and auto-forwards
 -------------------------------------------
 
