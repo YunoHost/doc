@@ -16,7 +16,7 @@ To validate that your setup is right :
 - carefully configure mail DNS records according [this documentation](dns_config) ;
 - test your setup using [Mail-tester.com](https://mail-tester.com) <small>(be careful : only 3 tests per domain per day are allowed)</small> ;
 
-A score of at least 7~8/10 is a reasonnable goal.
+A score of at least 8~9/10 is a reasonnable goal.
 
 Email clients
 -------------

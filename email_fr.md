@@ -16,7 +16,7 @@ Pour valider que votre configuration est correcte :
 - configurez soigneusement les enregistrements DNS du courrier électronique selon [cette documentation](dns_config) ;
 - Testez votre configuration en utilisant [Mail-tester.com](https://mail-tester.com) <small>(attention : seuls 3 tests par domaine et par jour sont autorisés)</small> ;
 
-Un score d'au moins 7~8/10 est un but raisonnable.
+Un score d'au moins 8~9/10 est un but raisonnable.
 
 Clients de messagerie
 -------------
