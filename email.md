@@ -30,6 +30,8 @@ Configuring email aliases and auto-forwards
 
 Mail aliases and forwards can be configured for each users. For instance, the first user created on the server automatically has an alias `root@the.domain.tld` configured - meaning that sending email to this adress will end in the inbox of this user. Automatic forwards may be configured, for instance if an user doesn't want to configure an additional email account and just want to receive emails from the server on, say, his/her gmail address.
 
+Another feature which few people know about is the use of suffixes beginning with "+". For example, emails sent to `johndoe+booking@votre.domaine.tld` will land in John Doe's mailbox. It is a practical technique for example to provide an e-mail address to a website, then easily sort (via automatic filters) the mail coming from this website.
+
 What happens if my server becomes unavailable ?
 -----------------------------------------------
 

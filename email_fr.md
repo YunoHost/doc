@@ -30,6 +30,8 @@ Configuration des alias de messagerie et des redirections automatiques
 
 Des alias de messagerie et des redirections peuvent être configurés pour chaque utilisateur. Par exemple, le premier utilisateur créé sur le serveur dispose automatiquement d'un alias `root@votre.domaine.tld` - ce qui signifie qu'un email envoyé vers cette adresse se retrouvera dans la boîte de réception de cet utilisateur. Les redirections automatiques peuvent être configurées, par exemple si un utilisateur ne veut pas configurer un compte de messagerie supplémentaire et souhaite simplement recevoir des courriels du serveur sur, disons, son adresse gmail.
 
+Une autre fonctionnalité méconnue est l'utilisation de suffixe commencant par "+". Par exemple, les emails envoyés à `johndoe+sncf@votre.domaine.tld` atteriront dans la boîte mail de John Doe. C'est une technique pratique pour par exemple fournir une adresse mail à un site puis facilement trier (via des filtres automatiques) les courriers venant de ce site.
+
 Que se passe-t-il si mon serveur devient indisponible ?
 -----------------------------------------------
 
