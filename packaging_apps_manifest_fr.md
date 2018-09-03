@@ -12,6 +12,7 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
         "fr": "Webmail Open Source"
     },
     "url": "http://roundcube.net/",
+    "version": "1.0.1~ynh7",
     "license": "free",
     "maintainer": {
         "name": "kload",
@@ -58,9 +59,11 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
 
 - **packaging_format** : version de packaging du paquet. La version **1** est la version actuelle. Cette clé a été mise en place afin de faire évoluer les versions de packaging de manière décorrélée des versions de YunoHost.
 
-* **description** : description complète de l’application. Vous pouvez la détailler comme bon vous semble. Uniquement le champs `en` (english) est requis, vous pouvez également ajouter la traduction en français :)
+* **description** : description complète de l’application. Vous pouvez la détailler comme bon vous semble. Uniquement le champ `en` (english) est requis, vous pouvez également ajouter la traduction en français :)
 
-* **url**: site de l’application.
+* **url** : site web de l’application.
+
+* **version** : version du package construit à partir du numéro de version de l’application qui est installée et d'un incrément pour chaque changement du paquet sans changement de version de l'application. "Exemple: 1.0.1~ynh7". Le champ doit être une chaîne de caractères.
 
 * **license** : licence avec laquelle l’application est distribuée : `free`, `non-free`. Attention à ne pas confondre avec la licence du paquet qui doit être mise dans le fichier `LICENSE`.
 
@@ -68,7 +71,7 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
 
 - **requirements** : dépendance du paquet de l’application à la version d’un paquet Debian de YunoHost. Par exemple : "yunohost": ">> 2.3.12", le paquet `yunohost` doit être de version supérieur à `2.3.12`.
 
-* [**multi_instance**](packaging_apps_multiinstance_fr) : capacité d’une application d’être installée plusieurs fois.
+* [**multi_instance**](packaging_apps_multiinstance_fr) : capacité d’une application d’être installée plusieurs fois.
 
 * **services** : liste des services nécessaires au fonctionnement de l’application. `nginx`, `php5-fpm`, `mysql`, `uwsgi`, `metronome`, `postfix`, `dovecot`…
 
@@ -77,7 +80,7 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
     * **name** : identifiant du paramètre
     * **type** : (optionnel) type de paramètre parmis `domain`, `path`, `user`, `app`, `boolean` et `password`. Le champ sera caché dans le cas d’un mot de passe.
     * **choices** : (optionnel) restreint les réponses possibles à plusieurs choix.
-    * **optional** : (optionnel) champs qui indique si ce paramètre est optionnel. Il peux avoir les valeurs `true` ou `false`.
+    * **optional** : (optionnel) champs qui indique si ce paramètre est optionnel. Il peut avoir les valeurs `true` ou `false`.
     * **ask** : question posée (au minimum en anglais – `en`) que vous pouvez traduire dans plusieurs langues.
     * **example** : (optionnel) valeur d’exemple pour aider l’administrateur à remplir le formulaire d’installation.
     * **default** : (optionnel) valeur par défaut.

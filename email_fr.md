@@ -17,7 +17,7 @@ Suivez [ce guide](email_migration_fr)<!-- à clarifier --> pour transférer vos 
 Si vous avez opté pour un nom de domaine personnel, il est nécessaire de [configurer votre serveur DNS](/dns_config_fr)<!-- explication spécifique des DNS MX à ajouter sur cette page--> pour faire fonctionner la messagerie électronique.
 
 #### Ouverture des ports
-Vérifiez également que les ports correspondant à la messagerie (n° 25, 465 et 993) sont bien ouverts au niveau de votre box ou de votre routeur. [Tutoriel d’ouverture des ports de la box](/isp_box_config_fr).
+Vérifiez également que les ports correspondant à la messagerie (n° 25, 587 et 993) sont bien ouverts au niveau de votre box ou de votre routeur. [Tutoriel d’ouverture des ports de la box](/isp_box_config_fr).
 
 #### Configurer l’authentification DKIM/SPF (facultatif)
 Le protocole SMTP ne prévoit pas de mécanisme de vérification de l’expéditeur. Il est donc possible d’envoyer un courrier avec une adresse d’expéditeur factice ou usurpée. SPF et DKIM sont deux mécanismes possibles d’authentification de l’expéditeur d’un email. [Tutoriel pour configurer DKIM/SPF](dkim_fr).<!-- compliqué, à clarifier ? -->
@@ -27,9 +27,27 @@ Le protocole SMTP ne prévoit pas de mécanisme de vérification de l’expédit
 Si les courriels envoyés à un type d’adresse spécifique (par exemple les adresses Gmail) n’arrivent pas à destination, votre serveur (son adresse IP) a peut être été ajouté à la liste noire du fournisseur d’adresse courriel en question. Pour résoudre ce problème voici les [formulaires de retrait des listes noires](blacklist_forms_fr).
 
 #### Consulter les fichiers de log pour identifier le problème
-De nombreux messages permettant d’identifier les problèmes se trouvent enregistrés dans les fichiers de log du système. [Apprenez à les consulter](check_logfile_fr), pour pouvoir mieux comprendre ce qui cloche et trouver de l’aide sur le forum ou le salon de support.
+De nombreux messages permettant d’identifier les problèmes se trouvent enregistrés dans les fichiers de log du système. Apprenez à les consulter, pour pouvoir mieux comprendre ce qui cloche et trouver de l’aide sur le forum ou le salon de support.
 
 <!-- ajouter une doc pour consulter ses logs des services mail -->
+
+#### Je suis capable de recevoir mais pas d'envoyer des mails
+
+Cela peut être dû au fait que le port 25 est fermé, et que votre fournisseur d'accès internet ne vous permet pas de l'ouvrir (pour lutter contre le spam)...
+
+Une solution de contournement consiste, soit à utiliser un VPN (ce qui nécessitera un abonnement chez un fournisseur, et de configurer l'app vpnclient), soit à utiliser un relai SMTP.
+
+Attention : dans le cas d'un relai SMTP, ***la personne ou l'organisme qui possède le relai sera techniquement très facilement capable de lire tout mail non-chiffré transitant entre votre serveur et le reste d'Internet ! Vous lui faites donc confiance à propos de toute information personelle ou critique que pourrait contenir vos mails !***
+
+Pour mettre en place le relai SMTP, il faut modifier le fichier `/etc/postfix/main.cf`.
+Chercher la ligne contenant `relayhost = ` et la remplacer par `relayhost = smtp.<nom-du-fai>.tld`. Par exemple: `relayhost = smtp.free.tld`.
+Si la ligne n'existe pas ajouter la ligne à la fin du fichier.
+
+**Plus d'informations**
+- https://yunohost.org/#/isp_fr
+- https://yunohost.org/#/isp_orange_fr
+- https://yunohost.org/#/isp_sfr_fr
+- https://yunohost.org/#/isp_free_fr
 
 ### Aller plus loin
 La messagerie électronique est basée sur les protocoles SMTP pour l’envoi de mail et IMAP (ou anciennement POP3) pour la récupération des messages depuis un serveur. En arrière-plan, YunoHost fournit :

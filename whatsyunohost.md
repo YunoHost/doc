@@ -38,7 +38,7 @@ It can thus be considered as a distribution, including the following software:
 * [Postfix](http://www.postfix.org/): an SMTP e-mail server
 * [Dovecot](http://www.dovecot.org/): an IMAP and a POP3 e-mail server
 * [Rspamd](https://rspamd.com/): an e-mail spam filtering
-* [Metronome](http://www.lightwitch.org/metronome): an XMPP server
+* [Metronome](https://metronome.im/): an XMPP server
 * [OpenLDAP](http://www.openldap.org/): an LDAP server
 * [Dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html): a DNS server
 * [SSOwat](https://github.com/Kloadut/SSOwat): a Single Sign On (SSO) web authentication system
@@ -118,4 +118,16 @@ First, the software is too young, not tested at large scale and thus probably no
 
 You can host your friends, your family and your company safely and with ease, but you have to **trust your users**, and they have to trust you above all. If you do want to provide YunoHost services for unknown persons anyway, a full VPS per user will be just fine, and we believe is a better way to go.
 
+---
 
+### Art Works
+
+Black and white YunoHost png logo done by ToZz (400 × 400 px):
+
+<a href="/images/ynh_logo_black.png"><img src="/images/ynh_logo_black.png" width=220></a>
+
+<a href="/images/ynh_logo_white.png"><img src="/images/ynh_logo_white.png" width=220></a>
+
+Click to download.
+
+Licence: CC-BY-SA 4.0

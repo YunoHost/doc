@@ -6,7 +6,7 @@ La configuration des DNS est une étape cruciale pour que votre serveur soit acc
 
 ### Qu’est-ce que c’est ?
 
-**N’hésitez à pas regarder la très bonne conférence de Stéphane Bortzmeyer :     
+**N’hésitez pas à regarder la très bonne conférence de Stéphane Bortzmeyer :     
 http://www.iletaitunefoisinternet.fr/dns-bortzmeyer/**
 
 DNS signifie « Domain Name Server » en anglais, et est souvent employé pour désigner la configuration de vos noms de domaine. Vos noms de domaines doivent en effet pointer vers quelque chose (en général une adresse IP).
@@ -27,7 +27,7 @@ Il existe également des **types** d’enregistrement DNS, ce qui veut dire qu�
 
 Plusieurs choix s’offrent à vous. Notez que vous pouvez cumuler ces solutions si vous possédez plusieurs domaines : par exemple vous pouvez avoir `mon-serveur.nohost.me` en utilisant la solution **1.**, et `mon-serveur.org` en utilisant la solution **2.**, redirigeant vers le même serveur YunoHost.
 
-1. Vous pouvez utiliser le service de DNS de YunoHost, qui s’occupera de configurer tout seul les DNS de votre instance YunoHost. Vous devrez en revanche choisir un domaine se terminant par `.nohost.me` ou `.noho.st`, ce qui peut être inconvenant (vous aurez alors des adresses email telles que `jean@mon-serveur.noho.st`).
+1. Vous pouvez utiliser le service de DNS de YunoHost, qui s’occupera de configurer tout seul les DNS de votre instance YunoHost. Vous devrez en revanche choisir un domaine se terminant par `.nohost.me`, `.noho.st` ou `.ynh.fr`, ce qui peut être inconvenant (vous aurez alors des adresses email telles que `jean@mon-serveur.noho.st`).
 **C’est la méthode recommandée si vous débutez.**
 
 2. Vous pouvez utiliser le service de DNS de votre **registrar** (Gandi, OVH, BookMyName ou autre) pour configurer vos noms de domaine. Voici la [configuration DNS standard](/dns_config_fr). Il est aussi possible d'utiliser une redirection DNS locale, plus d'infos sur comment [Accéder à son serveur depuis le réseau local](/dns_local_network_fr).

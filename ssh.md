@@ -24,7 +24,7 @@ Assuming your IP address is `111.222.333.444`, open a terminal and enter :
 ssh root@111.222.333.444
 ```
 
-A password will be asked. If this is a VPS, your VPS provided should have communicated you the password. On a fresh Raspberry Pi, the password should be `yunohost`. For an OLinuXino, this should be `olinux`.
+A password will be asked. If this is a VPS, your VPS provided should have communicated you the password. If you used a pre-installed image (for x86 computer or ARM board), the password should be `yunohost`.
 
 #### Change the password!
 
@@ -58,7 +58,25 @@ ssh -p 2244 admin@your.domain.tld
 
 By default, only the admin and root users can log in to YunoHost ssh server.
 
-YunoHost's users created via the administration interface are managed by the LDAP directory. By default, they can't connect via SSH for security reasons. See [here](https://forum.yunohost.org/t/ssh-disconnects-after-successful-login/256/10) if you absolutely want some users to have SSH access enabled.
+YunoHost's users created via the administration interface are managed by the LDAP directory. By default, they can't connect via SSH for security reasons. If you want some users to have SSH access enabled, use the command:
+
+```bash
+yunohost user ssh allow <username>
+```
+
+It is also possible to remove ssh access using the following:
+
+```bash
+yunohost user ssh disallow <username>
+```
+
+Finally, it is possible to add, delete and list ssh keys, to improve ssh access security, using the commands:
+
+```bash
+yunohost user ssh add-key <username> <key>
+yunohost user ssh remove-key <username> <key>
+yunohost user ssh list-keys <username>
+```
 
 ## Security and SSH
 

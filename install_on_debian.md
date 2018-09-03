@@ -8,7 +8,7 @@
 
 An ARM box, a VPS, a dedicated server, a standard x86 computer, an old Macintosh, ...
 
-* with **Debian 8** (Jessie) installed
+* with **Debian 9** (Stretch) installed
 * connected to the Internet
 * with a direct **root access** or via SSH
 
@@ -22,6 +22,3 @@ An ARM box, a VPS, a dedicated server, a standard x86 computer, an old Macintosh
 
 <a class="btn btn-lg btn-default" href="/postinstall">2. Post-install</a>
 
----
-
-***Need help during one of these steps? [Get support!](/support)***

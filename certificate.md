@@ -1,121 +1,92 @@
-#Certificate
+# Certificate
 
-Certificates are used to certify that your server is the genuine one and not a falsified one.
+Certificates are used to certify that your server is the genuine one, and not an attacker trying to impersonate it.
 
-YunoHost provides a **self-signed** certificate, it means that your server guaranty the certificate validity. It's enough **for personal usage**, because you trust your own server. But this could be a problem if you want to open access to anonymous like web user for a website.
-Concretely users will go throw a screen like this:
+YunoHost provides a **self-signed** certificate, it means that your server guaranties the certificate validity. It's enough **for personal usage**, because you trust your own server. But this could be a problem if you want to open access to anonymous like web user for a website.
+
+In practice, visitors will see a screen list this:
 
 <img src="/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
-This screen ask to the user : **"Do you trust this server that host this website?"**
-It could afraid a lot of users (rightly).
+Which basically asks the visitor : **"Do you trust the server hosting this website?"**. This can rightfully frighten a lot of people.
 
-To avoid this confusion, it's possible to get a signed certificate  by a "known" authority : **Gandi**, **RapidSSL**, **StartSSL**, **CaCert**.
-In these cases, the point is to replace the self-signed certificate with the one that has been certified by a certificate authority, and the users won't have this warning screen anymore.
+To avoid this confusion, it's possible to get a certificate signed a known
+authority named **Let's Encrypt** which provide free certificates directly
+recognized by browsers. YunoHost allows to directly install this certificate
+from the web administration interface or from the command line.
 
-### Add a signed certificate by an authority
+### Install a Let's Encrypt certificate
 
-Get your certificate from your CA, you must get a private key, file key and a public certificate (file .crt)
-> Be carefull, the key file is very critical, it's strictly personal and have to be secured.
+Before attempting to install a Let's Encrypt certificate, you should make sure
+that your DNS is correctly configured (votre.domaine.tld should point to
+your server's IP) and that your domain is accessible though HTTP from outside
+your local network (i.e. at least port 80 should be forwarded to your server).
 
-Copy this two files on the server, if not.
+#### From the web administration interface
+
+Go to the 'Domain' part of the admin interface, then in the section dedicated to
+your.domain.tld. You should find a 'SSL certificate' button :
+
+![](./images/domain-certificate-button.png)
+
+In the 'SSL certificate' section, you can see the status of the current
+certificate. If you just added the domain, it should be a self-signed
+certificate.
+
+![](./images/certificate-before-LE.png)
+
+If your domain is correctly configured, it is then possible to install the
+Let's Encrypt certificate via the green button.
+
+![](./images/certificate-after-LE.png)
+
+Once the install is made, you can check that the certificate is live via your
+browser by going to your domain in HTTPS. The certificate will automatically
+be renewed every three months.
+
+![](./images/certificate-signed-by-LE.png)
+
+#### From the command line interface 
+
+Connect to your server through SSH.
+
+You can check the status of your current certificate with :
 
 ```bash
-scp CERTIFICAT.crt admin@DOMAIN.TLD:ssl.crt
-scp CLE.key admin@DOMAIN.TLD:ssl.key
+yunohost domain cert-status your.domain.tld
 ```
 
-From Windows, scp can be used with putty, download [pscp](http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe)
+Install a Let's Encrypt certificate with
 
 ```bash
-pscp -P 22 CERTIFICAT.crt admin@DOMAIN.TLD:ssl.crt
-pscp -P 22 CLE.key admin@DOMAIN.TLD:ssl.key```
+yunohost domain cert-install your.domain.tld
+```
 
-Now the files are in the server. Open a shell on the server use [ssh](https://yunohost.org/#/ssh_fr) or locally.
-
-First, create a directory for archive the certificates.
+This should return :
 
 ```bash
-sudo mkdir /etc/yunohost/certs/DOMAIN.TLD/ae_certs
-sudo mv ssl.key ssl.crt /etc/yunohost/certs/DOMAIN.TLD/ae_certs/```
+Success! The SSOwat configuration has been generated
+Success! Successfully installed Let's Encrypt certificate for domain DOMAIN.TLD!
+```
 
-Then go to the parent directory and go on.
+Once this is done, you can check that the certificate is live via your
+browser by going to your domain in HTTPS. The certificate will automatically
+be renewed every three months.
 
-```bash
-cd /etc/yunohost/certs/DOMAIN.TLD/```
+##### Troubleshooting
 
-Make a backup of the YunoHost original certificates , to be safe!
-
-```bash
-sudo mkdir yunohost_self_signed
-sudo mv *.pem *.cnf yunohost_self_signed/```
-
-Depends on the CA, intermediate certificates and root have to be downloaded.
-
-> **StartSSL**
-> ```bash
-> sudo wget http://www.startssl.com/certs/ca.pem -O ae_certs/ca.pem
-> sudo wget http://www.startssl.com/certs/sub.class1.server.ca.pem -O ae_certs/intermediate_ca.pem```
-
-> **Gandi**
-> ```bash
-> sudo wget https://www.gandi.net/static/CAs/GandiStandardSSLCA.pem -O ae_certs/intermediate_ca.pem```
-
-> **RapidSSL**
-> ```bash
-> sudo wget https://knowledge.rapidssl.com/library/VERISIGN/INTERNATIONAL_AFFILIATES/RapidSSL/AR1548/RapidSSLCABundle.txt -O ae_certs/intermediate_ca.pem```
-
-> **Cacert**
-> ```bash
-> sudo wget http://www.cacert.org/certs/root.crt -O ae_certs/ca.pem
-> sudo wget http://www.cacert.org/certs/class3.crt -O ae_certs/intermediate_ca.pem```
-
-Intermediate certificates and root must be merged with certificates obtained to create a unified chain certificates.
+If due to some bad tweaking, your certificate ends up in a bad state (e.g.
+lost the certificate or unable to read the files), you should be able to clean
+the situation by regenerating a self-signed certificate :
 
 ```bash
-cat ae_certs/ssl.crt ae_certs/intermediate_ca.pem ae_certs/ca.pem | sudo tee crt.pem```
+yunohost domain cert-install your.domain.tld --self-signed --force
+```
 
+If YunoHost thinks that your domain is badly configured despite the fact that
+you checked the DNS configuration and you have access in HTTP to your server
+from outside your local network, then you can :
 
-The private key have to be converted in PEM format.
-
-```bash
-sudo openssl rsa -in ae_certs/ssl.key -out key.pem -outform PEM```
-
-Check certificates syntaxe, check file contents.
-
-```bash
-cat crt.pem key.pem```
-
-Certificates and private key look like this :
-
-`-----BEGIN CERTIFICATE-----`    
-`MIICVDCCAb0CAQEwDQYJKoZIhvcNAQEEBQAwdDELMAkGA1UEBhMCRlIxFTATBgNV`
-`BAgTDENvcnNlIGR1IFN1ZDEQMA4GA1UEBxMHQWphY2NpbzEMMAoGA1UEChMDTExC`
-`MREwDwYDVQQLEwhCVFMgSU5GTzEbMBkGA1UEAxMSc2VydmV1ci5idHNpbmZvLmZy`
-`MB4XDTA0MDIwODE2MjQyNloXDTA0MDMwOTE2MjQyNlowcTELMAkGA1UEBhMCRlIx`
-`FTATBgNVBAgTDENvcnNlIGR1IFN1ZDEQMA4GA1UEBxMHQWphY2NpbzEMMAoGA1UE`
-`ChMDTExCMREwDwYDVQQLEwhCVFMgSU5GTzEYMBYGA1UEAxMPcHJvZi5idHNpbmZv`
-`LmZyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDSUagxPSv3LtgDV5sygt12`
-`kSbN/NWP0QUiPlksOkF2NkPfwW/mf55dD1hSndlOM/5kLbSBo5ieE3TgikF0Iktj`
-`BWm5xSqewM5QDYzXFt031DrPX63Fvo+tCKTQoVItdEuJPMahVsXnDyYHeUURRWLW`
-`wc0BzEgFZGGw7wiMF6wt5QIDAQABMA0GCSqGSIb3DQEBBAUAA4GBALD640iwKPMf`
-`pqdYtfvmLnA7CiEuao60i/pzVJE2LIXXXbwYjNAM+7Lov+dFT+b5FcOUGqLymSG3`
-`kSK6OOauBHItgiGI7C87u4EJaHDvGIUxHxQQGsUM0SCIIVGK7Lwm+8e9I2X0G2GP`    
-`9t/rrbdGzXXOCl3up99naL5XAzCIp6r5`  
-`-----END CERTIFICATE-----`
-
-At last, secure files of your certificate
-
-```bash
-sudo chown root:metronome crt.pem key.pem
-sudo chmod 640 crt.pem key.pem
-sudo chown root:root -R ae_certs
-sudo chmod 600 -R ae_certs```
-
-Reload Nginx configuration to take into account the new certificate.
-
-```bash
-sudo service nginx reload```
-
-Your certificate is ready to serve. You can check that every thing is correct byan external service like <a href="https://www.geocerts.com/ssl_checker" target="_blank">geocerts</a>
+- add a line `127.0.0.1 your.domain.tld` to the file `/etc/hosts` on your server ;
+- if the certificate installation still doesn't work, you can disable the checks with `--no-checks` after the `cert-install` command.
 

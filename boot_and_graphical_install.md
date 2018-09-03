@@ -37,26 +37,16 @@ Check that your computer is physically connected and retry.</div>
 
 * It should reboot automatically.
 
-## <small>4.</small> Proceed to post-installation
+## <small>4.</small> Log in
 
-Once booted, your computer should display a screen like this:
+After the reboot, you should see a black screen with a few words asking you to
+log in. You can log with the following credentials :
 
-<img src="/images/virtualbox_4.png">
+* User: **root**
+* Password: **yunohost**
 
-You can proceed to post-installation right away, or access the **IP** address shown on this screen from another computer's web browser (usually `http://192.168.x.x`)
+## <small>5.</small> Proceed to post-installation
 
-<img src="/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<a class="btn btn-lg btn-default" href="/postinstall">Post-install documentation</a>
 
-If you encounter this kind of error, click on "**Proceed**" or "**Add an exception**".    
-This means that you have to trust the certificate which secures your server's connections.    
-Since this is your server, you can bypass it serenely here :-)
 
-<br> 
-
-<img src="/images/postinstall_web.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
-
----
-
-#### More information on the post-installation here:
-
-**[yunohost.org/postinstall](/postinstall)**

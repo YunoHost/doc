@@ -23,9 +23,11 @@ YunoHost's documentation has 3 different sections:
 
 </div>
 
-<div class="row text-center" style="margin-top: 2em;">
-    <div class="col col-md-5 col-md-offset-3">
-    <a class="btn btn-default btn-lg" href="/sitemap"><span class="glyphicon glyphicon-list"></span> Sitemap</a>
-    <p><small class="text-muted">List of all pages of the web site</small></p>
-    </div>
-</div>
+* Project's life:
+   * [Frequently asked questions](/faq_en)
+   * [Project organization](/project_organization)
+   * [Blog](https://forum.yunohost.org/c/announcement)
+   * [Forum](https://forum.yunohost.org)
+   * [Chat rooms](/chat_rooms_en)
+   * [Communication](/communication_en)
+   * [Support / Help](/help)

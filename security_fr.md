@@ -1,19 +1,19 @@
 
-# Securité
+# Sécurité
 
 YunoHost a été développé dans l’optique de fournir une sécurité maximale tout en restant accessible et facilement installable.
 
 Tous les protocoles que YunoHost utilise sont **chiffrés**, les mots de passe ne sont pas stockés en clair, et par défaut chaque utilisateur n’accède qu’à son répertoire personnel.
 
-Deux points sont néanmoins importants à noter :
+Deux points sont néanmoins importants à noter :
 
 * L’installation d’applications supplémentaires **augmente le nombre de failles** potentielles. Il est donc conseillé de se renseigner sur chacune d’elle **avant l’installation**, d’en comprendre le fonctionnement et juger ainsi l’impact que provoquerait une potentielle attaque. N’installez **que** les applications qui semblent importantes pour votre usage.
 
 * Le fait que YunoHost soit un logiciel répandu augmente les chances de subir une attaque. Si une faille est découverte, elle peut potentiellement **toucher toutes les instances YunoHost** à un temps donné. Nous nous efforçons de corriger ces failles le plus rapidement possible, pensez donc à **mettre à jour régulièrement** votre système.
 
-*Si vous avez besoin de conseil, n’hésitez pas à [nous demander](/support_fr).*
+*Si vous avez besoin de conseil, n’hésitez pas à [nous demander](/help_fr).*
 
-*Pour discuter d'une faille de securité, contactez l'[équipe securité de YunoHost](/security_team_fr).*
+*Pour discuter d'une faille de sécurité, contactez l'[équipe sécurité de YunoHost](/security_team_fr).*
 
 ---
 
@@ -21,7 +21,7 @@ Deux points sont néanmoins importants à noter :
 
 Si votre serveur YunoHost est dans un environnement de production critique ou que vous souhaitez améliorer sa sécurité, il est bon de suivre quelques bonnes pratiques.
 
-**Attention :** *l’application des conseils suivants nécessite une connaissance avancée du fonctionnement et de l’administration d’un serveur. Pensez à vous renseigner avant de procéder à cette mise en place.*
+**Attention :** *l’application des conseils suivants nécessite une connaissance avancée du fonctionnement et de l’administration d’un serveur. Pensez à vous renseigner avant de procéder à cette mise en place.*
 
 ### Authentification SSH par clé
 
@@ -29,17 +29,19 @@ Voici un [tutoriel plus détaillé](http://doc.ubuntu-fr.org/ssh#authentificatio
 
 Par défaut, l’authentification SSH se fait avec le mot de passe d’administration. Il est conseillé de désactiver ce type d’authentification et de le remplacer par un mécanisme de clé de chiffrement.
 
-**Sur votre ordinateur de bureau :**
+**Sur votre ordinateur de bureau :**
 
 ```bash
 ssh-keygen
 ssh-copy-id -i ~/.ssh/id_rsa.pub <votre_serveur_yunohost>
 ```
+<div class="alert alert-info" markdown="1">
+Si vous êtes sur Ubuntu 16.04 vous devez faire  `ssh-add` pour initialiser l'agent ssh
+</div>
 
 Entrez le mot de passe d’administration et votre clé publique devrait être copiée sur votre serveur.
 
 **Sur votre serveur**, éditez le fichier de configuration SSH, pour désactiver l’authentification par mot de passe.
-
 ```bash
 nano /etc/ssh/sshd_config
 
@@ -48,6 +50,9 @@ PasswordAuthentication no
 ```
 
 Sauvegardez et relancez le démon SSH.
+```bash
+systemctl restart ssh
+```
 
 ---
 
@@ -59,24 +64,36 @@ Pour éviter des tentatives de connexion SSH par des robots qui scannent tout In
 
 ```bash
 nano /etc/ssh/sshd_config
+```
 
-# Recherchez la ligne « Port » et remplacez le numéro du port (par défaut 22) par un autre numéro non utilisé
+**Recherchez la ligne « Port »** et remplacez le numéro du port (par défaut 22) par un autre numéro non utilisé
+
+```bash
 Port 22 # à remplacer par exemple par 9777
 ```
 
+**Ouvrez le port** choisi dans le parefeu (vous pouvez utiliser l'option -6 pour interdire la connexion via ipv4)
+
+```bash
+yunohost firewall allow TCP <votre_numero_de_port_ssh>
+```
+
 Sauvegardez et relancez le démon SSH.
+
+```bash
+systemctl restart ssh
+```
 
 Ensuite redémarrez le firewall iptables et fermez l’ancien port dans iptables.
 
 ```bash
 yunohost firewall reload
-yunohost firewall disallow <votre numéro de port> # port par défaut 22
-yunohost firewall disallow --ipv6 TCP <votre numéro de port> # pour ipv6
+yunohost firewall disallow TCP <votre numéro de port> # port par défaut 22
 ``` 
 
 **Pour les prochaines connexions SSH** il faudra ajouter l’option -p suivie du numéro de port SSH.
 
-**Exemple** :
+**Exemple** :
 
 ```bash
 ssh -p <votre_numero_de_port_ssh> admin@<votre_serveur_yunohost>
@@ -107,18 +124,21 @@ sudo adduser nom_utilisateur sudo
 ```bash
 sudo nano /etc/ssh/sshd_config
 
-# Recherchez le paragraphe « Authentication » et ajoutez à la fin de celui-ci :
+# Recherchez le paragraphe « Authentication » et ajoutez à la fin de celui-ci :
 AllowUsers nom_utilisateur
 ```
 Seuls les utilisateurs mentionnés dans la directive AllowUsers seront alors autorisés à se connecter via SSH, ce qui exclut donc l’utilisateur admin.
 
 Sauvegardez et relancez le démon SSH.
+```bash
+systemctl restart ssh
+```
 
 ---
 
 ### Désactivation de l’API YunoHost
 
-YunoHost est administrable via une **API HTTP**, servie sur le port 6787 par défaut. Elle permet d’administrer une grande partie de votre serveur, et peut donc être utilisée à des **fins malveillantes**. La meilleure chose à faire si vous êtes habitués aux lignes de commande est de désactiver le service `yunohost-api`, et **utiliser la [moulinette](/moulinette_fr)** en SSH.
+YunoHost est administrable via une **API HTTP**, servie sur le port 6787 par défaut. Elle permet d’administrer une grande partie de votre serveur, et peut donc être utilisée à des **fins malveillantes**. La meilleure chose à faire si vous êtes habitués aux lignes de commande est de désactiver le service `yunohost-api`, et **utiliser la [ligne de commande](/commandline_fr)** en SSH.
 
 ```bash
 sudo service yunohost-api stop
@@ -126,7 +146,7 @@ sudo service yunohost-api stop
 
 ### Tests d’intrusion de YunoHost
 
-Des [pentests](https://fr.wikipedia.org/wiki/pentest) ont été effectués sur une instance de YunoHost 2.4 :
+Des [pentests](https://fr.wikipedia.org/wiki/pentest) ont été effectués sur une instance de YunoHost 2.4 :
 
 - [1) Préparation](https://exadot.fr/2016/07/03/pentest-dune-instance-yunohost-1-preparation)
 - [2) Le fonctionnement](https://exadot.fr/2016/07/12/pentest-dune-instance-yunohost-2-le-fonctionnement)

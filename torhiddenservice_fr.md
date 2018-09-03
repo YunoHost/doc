@@ -4,7 +4,7 @@ Voir https://www.torproject.org/docs/tor-hidden-service.html.en (anglais)
 
 ### Installer Tor
 ```bash
-sudo apt-get install tor 
+apt install tor 
 ```
 
 ### Configurer notre service caché
@@ -40,7 +40,7 @@ Si vous voulez éviter d’être redirigé vers le portail à la connexion pour 
 #access_by_lua_file /usr/share/ssowat/access.lua;
 ```
 
-### Rédémarrer nginx
+### Redémarrer nginx
 ```bash
 service nginx restart
 ```

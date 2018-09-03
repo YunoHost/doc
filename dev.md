@@ -5,7 +5,7 @@ proceed? This guide takes you through the various steps of the development and
 contribution process. 
 
 If you're looking for stuff to implement or fix, the bug-tracker is 
-[here](https://dev.yunohost.org/issues/) !
+[here](https://github.com/YunoHost/issues/issues) !
 
 **Come say hi to us in the [dev chatroom](xmpp:dev@conference.yunohost.org?join)** ! If you don't have an XMPP client, you can join using the widget at the bottom right of this page.
 
@@ -120,36 +120,5 @@ If you're looking for stuff to implement or fix, the bug-tracker is
 
 - After reviewing, testing and validation by other contributors, your branch
 should be merged in `testing` (?) !
-
-
-<script type="text/javascript" src="/jappix/javascripts/mini.min.js"></script>
-<script type="text/javascript">
-    // Jappix mini chat
-    $(".actions").css('opacity', 0);
-    jQuery.ajaxSetup({cache: false});
-
-    var ADS_ENABLE = 'off';
-    var JAPPIX_STATIC = '/jappix/';
-    var HOST_BOSH = 'https://im.yunohost.org/http-bind/';
-    var ANONYMOUS = 'on';
-     JappixMini.launch({
-        connection: {
-           domain: "anonymous.yunohost.org",
-        },
-        application: {
-           network: {
-              autoconnect: false,
-           },
-           interface: {
-              showpane: false,
-              animate: false,
-           },
-           groupchat: {
-              open: ['dev@conference.yunohost.org'],
-              suggest: ['support@conference.yunohost.org']
-           }
-        },
-     });
-</script>
 
 

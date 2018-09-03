@@ -2,7 +2,7 @@
 
 ## Gestion des arguments
 #### Récupérer les arguments du manifeste dans le script d’installation
-Les arguments sont passés au script d’installation dans l’ordre du manifeste. Par exemple pour Roundcube, les arguments `domain` et `path` seront respectivement récupérés avec via les variables d’environnement ou les paramètres `$1` et `$2` dans le script d’installation.
+Les arguments sont passés au script d’installation dans l’ordre du manifeste. Par exemple pour Roundcube, les arguments `domain` et `path` seront respectivement récupérés via les variables d’environnement ou les paramètres `$1` et `$2` dans le script d’installation.
 
 ```bash
 # Retrieve arguments
@@ -16,7 +16,7 @@ Les scripts remove, upgrade, backup et restore peuvent avoir besoin de ces argum
 Pour cela, YunoHost peut sauvegarder les arguments avec cette commande :
 ```bash
 # Store config on YunoHost instance
-ynh_app_setting_set $app domain $domain
+ynh_app_setting_set "$app" domain "$domain"
 ```
 Elle est généralement utilisée dans le script d’installation.
 

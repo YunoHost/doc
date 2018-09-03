@@ -44,7 +44,7 @@
   <div class="call-to-action">
     <a class="btn btn-primary btn-lg" href="/try">Try it</a>
     <a class="btn btn-success btn-lg" href="/install">Get started</a>
-    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/sortie-de-yunohost-2-5/2393">YunoHost v2.5</a></small></p>
+    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-0-stretch-release-sortie-de-yunohost-3-0-stretch/5020">YunoHost v3.0</a></small></p>
   </div>
 
   <div class="row cf">
@@ -97,7 +97,7 @@
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org/" target="_blank">Forum</a>
       <a class="btn btn-lg btn-block btn-default" href="chat_rooms_en" target="_blank">Chat rooms</a>
       <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Latest news</a>
-      <a class="btn btn-lg btn-block btn-danger btn-support" href="/support">Support</a>
+      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_fr">Support</a>
     </div>
     <div class="col-md-7 text-right">
       <h1>Explore <small>what you can do with a server, and why it is important</small></h1>
@@ -109,11 +109,11 @@
 
   <div class="text-center">
     <h1>Hey! We are humans!<br /><small> If you have questions, problems or if you are just an enthusiast, leave a message on our chatroom by clicking on the button below &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
-<!--
-    <p class="liberapay">
+
+   <p class="liberapay">
      <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Donation button" title="Liberapay" /></a>
     </p>
--->
+
   </div>
 
 </div><!-- boring-part -->
@@ -152,32 +152,3 @@
 
 </script>
 
-<script type="text/javascript" src="/jappix/javascripts/mini.min.js"></script>
-<script type="text/javascript">
-    // Jappix mini chat
-    jQuery.ajaxSetup({cache: false});
-    $(".actions").css('opacity', 0);
-
-    var ADS_ENABLE = 'off';
-    var JAPPIX_STATIC = '/jappix/';
-    var HOST_BOSH = 'https://im.yunohost.org/http-bind/';
-    var ANONYMOUS = 'on';
-     JappixMini.launch({
-        connection: {
-           domain: "anonymous.yunohost.org",
-        },
-        application: {
-           network: {
-              autoconnect: false,
-           },
-           interface: {
-              showpane: false,
-              animate: false,
-           },
-           groupchat: {
-              open: ['support@conference.yunohost.org'],
-              suggest: ['dev@conference.yunohost.org']
-           }
-        },
-     });
-</script>

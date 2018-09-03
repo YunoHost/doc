@@ -8,7 +8,7 @@
 
 * Un serveur dédié ou virtuel
 * avec au moins **512MB** RAM
-* et **Debian 8.x (Jessie) 64bits** comme système d'exploitation
+* et **Debian 9.x (Stretch) 64bits** comme système d'exploitation
 
 ---
 
@@ -18,7 +18,3 @@
 
 <a class="btn btn-lg btn-default" href="/postinstall_fr">2. Post-installation</a>
 
----
-
-
-***Si vous avez besoin d’aide lors de ces étapes, n’hésitez pas à utiliser les différents [moyens de support](/support_fr).***

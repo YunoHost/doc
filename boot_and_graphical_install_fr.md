@@ -15,7 +15,7 @@ Démarrez votre serveur avec la clé USB ou le CD-ROM inséré, et sélectionnez
 
 ## <small>3.</small> Lancer l’installation graphique
 
-Vous devriez voit un écran comme ça :
+Vous devriez voir un écran comme ça :
 
 <img src="/images/virtualbox_3.png">
 
@@ -35,26 +35,16 @@ Vérifiez que votre serveur est bien branché et réessayez.</div>
 
 * L’ordinateur devrait redémarrer automatiquement à la fin de l’installation.
 
-## <small>4.</small> Procéder à la post-installation
+## <small>4.</small> Log in
 
-Une fois démarré, votre serveur devrait afficher un écran comme celui-ci :
+Après avoir redémarré, votre machine devrait afficher un écran noir avec
+quelques mots vous invitant à vous identifier. Vous pouvez utiliser les
+identifiants suivants :
 
-<img src="/images/virtualbox_4.png">
+* User: **root**
+* Password: **yunohost**
 
-Vous pouvez procéder à la post-installation directement, ou accéder à l’adresse **IP** affichée sur cet écran depuis un navigateur web d’un autre ordinateur (généralement `http://192.168.x.x`)
+## <small>5.</small> Procéder à la post-installation
 
-<img src="/images/postinstall_error.png" style="max-width:100% ; border-radius: 5px ; border: 1px solid rgba(0,0,0,0.15) ; box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<a class="btn btn-lg btn-default" href="/postinstall_fr">Documentation de la post-installation</a>
 
-Si vous rencontrez une erreur de ce type, cliquez sur « **Poursuivre quand même** » ou « **Ajouter une exception** ».    
-Cela signifie que vous devez faire confiance au certificat qui sécurise les connexions avec votre serveur.    
-Comme c’est le votre, vous pouvez le valider sereinement ici :-)
-
-<br>
-
-<img src="/images/postinstall_web.png" style="max-width:100% ; border-radius: 5px ; border: 1px solid rgba(0,0,0,0.15) ; box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
-
----
-
-#### Plus d’informations sur la post-installation ici :
-
-**[yunohost.org/postinstall](/postinstall)**

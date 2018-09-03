@@ -12,12 +12,13 @@
 * Un autre ordinateur pour parcourir ce guide et accéder à votre serveur
 * Un [fournisseur d’accès correct](/isp_fr), de préférence avec une bonne vitesse d’upload
 * Une **clé USB** d’une capacité minimum d’1Go **OU** un **CD vierge** standard
-* Une des dernières **images ISO YunoHost** (dans le doute prenez la version 32 bits) :
- - https://build.yunohost.org
+* ***Cas particulier*** : Si votre serveur n'a pas de carte graphique, il faut [préparer un iso qui démarre sur le port série](https://github.com/luffah/debian-mkserialiso).
 
 ---
 
 ## Étapes d’installation
+
+<a class="btn btn-lg btn-default" href="/images_fr">0. Télécharger l'image ISO</a>
 
 <a class="btn btn-lg btn-default" href="/burn_or_copy_iso_fr">1. Copier l’image ISO</a>
 
@@ -31,5 +32,7 @@ Pour se connecter directement sur l’ordinateur (uniquement en local) :
 * Utilisateur : **root**
 * Mot de passe : **yunohost**
 
----
-***Si vous avez besoin d’aide lors de ces étapes, n’hésitez pas à utiliser les différents [moyens de support](/support_fr).***
+
+## Cas spécifiques / avancés
+
+Si l'ordinateur n'a pas de carte graphique mais a un port série : il faut modifier l'ISO pour démarrer avec la console série. Une solution est d'utiliser [un script qui modifie les options de démarrage](https://github.com/luffah/debian-mkserialiso).

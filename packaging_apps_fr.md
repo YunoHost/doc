@@ -15,7 +15,7 @@ Si vous ne comprenez pas ces prérequis, ou si vous ne savez pas comment écrire
 Un paquet YunoHost est composé :
 
 * d’un `manifest.json`
-* d’un dossier `scripts`, composé de cinq scripts Shell `install`, `remove`, `upgrade`, `backup` et `restore`
+* d’un dossier `scripts`, composé de six scripts Shell `install`, `remove`, `upgrade`, `backup`, `change_url` et `restore`
 * de dossiers optionnels, contenant les `sources` ou de la `conf`
 * d’un fichier `LICENSE` contenant la licence du paquet
 * d’une page de présentation du paquet contenu dans un fichier `README.md`
@@ -39,8 +39,42 @@ Comme les instances de YunoHost possèdent une architecture unifiée, vous serez
 ### Multi-instance
 <a class="btn btn-lg btn-default" href="packaging_apps_multiinstance_fr">Multi-instance</a>
 
+### Hooks
+<a class="btn btn-lg btn-default" href="packaging_apps_hooks_fr">Hooks</a>
+
 ### Commandes pratiques
 <a class="btn btn-lg btn-default" href="packaging_apps_helpers_fr">Commandes pratiques</a>
+
+### Référencement des logs
+Dans de nombreuses situations, vous pouvez vouloir indexer un fichier de log pour qu'il soit affiché dans la webadmin. Pour indexer un log, il faut créer un fichier d'indexation dans `/var/log/yunohost/categories/app/APPNAME.yml`.
+
+Il est possible de spécifier la date de début en commençant le nom de fichier par la date `YYYYMMDD-HHMMSS`.
+
+Exemple de fichier de log d'indexation:
+```bash
+log_path: /chemin/vers/le/fichier.log
+```
+
+Il est possible d'afficher des infos complémentaires, la variable env sera affichée dans la partie "Contexte" :
+```bash
+extra:
+  env:
+    args1: value1
+    args2: value2
+    args3: value3
+```
+
+Il est possible de rattacher le log à une application précise et/ou un service, un nom de domaine, une personne :
+```bash
+related_to:
+    - ['app', 'APPNAME']
+    - ['service', 'SERVICE1']
+    - ['service', 'SERVICE2']
+    - ['domain', 'DOMAIN.TLD']
+```
+
+Ces informations seront utilisées pour permettre de filtrer les logs en relation avec une de ces entités application, service, domaine, personne.
+
 
 ### Améliorer la qualité du paquet d’installation
 Vous trouverez ci-dessous une liste des points à vérifier concernant la qualité de vos scripts :
@@ -49,7 +83,7 @@ Vous trouverez ci-dessous une liste des points à vérifier concernant la qualit
 * Votre script d’installation utilise une méthode d’installation en ligne de commande plutôt qu’un appel curl via un formulaire web d’installation ;
 * Votre script d’installation enregistre les réponses de l’utilisateur ;
 * Vous avez vérifié les sources de l’application avec une somme de contrôle (sha256, sha1 ou md5) ou une signature PGP ;
-* Vos scripts ont été testés sur Debian Jessie ainsi que sur les architectures 32 bits, 64 bits et ARM ;
+* Vos scripts ont été testés sur Debian Stretch 32 bits, 64 bits et ARM ;
 * Les scripts backup et restore sont présents et fonctionnels.
 
 Pour mesurer la qualité d'un paquet, celui-ci obtiendra un [niveau](packaging_apps_levels_fr), déterminé en fonction de divers critères d'installation et selon le respect des [règles de packaging](packaging_apps_guidelines_fr).
@@ -66,9 +100,9 @@ Il s’agit d’un script Python qui vérifie :
 ### Publiez et demandez des tests de votre application
 * Demandez des tests et des retours sur votre application en publiant un [post sur le Forum](https://forum.yunohost.org/) dans la [catégorie `App integration`](https://forum.yunohost.org/c/app-integration).
 
-* Faire une demande d’ajout de votre application dans le [dépôt des applications](https://github.com/YunoHost/apps) afin qu’elle soit affichée dans [la liste des apps non officielles](apps_in_progress_fr). Préciser également son état d’avancement : `notworking`, `inprogress` ou `working`.
+* Faire une demande d’ajout de votre application dans le [dépôt des applications](https://github.com/YunoHost/apps) afin qu’elle soit affichée dans [la liste des apps non officielles](apps_fr). Préciser également son état d’avancement : `notworking`, `inprogress` ou `working`.
 
 - Inscrivez-vous à la [mailing list Apps](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps) pour être tenu au courant des évolutions du packaging.
 
 ### Officialisation d’une application
-Pour qu’une application devienne officielle, elle doit être suffisamment testée, stable et fonctionner sous les architectures 64 bits, 32 bits et ARM sur Debian Jessie. Si ces conditions vous paraissent réunies, demandez l’[intégration officielle](https://github.com/YunoHost/apps) de votre application.
+Pour qu’une application devienne officielle, elle doit être suffisamment testée, stable et fonctionner sous Debian Stretch 64 bits, 32 bits et ARM. Si ces conditions vous paraissent réunies, demandez l’[intégration officielle](https://github.com/YunoHost/apps) de votre application.

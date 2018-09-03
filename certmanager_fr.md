@@ -127,7 +127,7 @@ deux choses :
 - la confidentialité, ce qui veut dire qu'un attaquant ne sera pas capable de déchiffrer le contenu d'une communication si elle est interceptée ;
 - l'identification du serveur, ce qui veut dire qu'un serveur peut et doit prouver qui il prétend être, dans le but d'éviter les [attaques man-in-the-middle](https://en.wikipedia.org/wiki/Man-in-the-middle_attack).
 
-Les certificats SSL sont utilisés par les serveurs pour prouver leur identitié.
+Les certificats SSL sont utilisés par les serveurs pour prouver leur identité.
 Le processus général repose sur la confiance en des tiers, appelés Autorité
 de Certification (CA), dont le rôle est de vérifier l'identité d'un serveur (par ex.
 qu'une machine donnée contrôle bien le domaine `jaimelecafe.com`) avant

@@ -1,43 +1,18 @@
-# Install YunoHost manually
+# Installing YunoHost manually
 
-Once you have access to your server, either directly or by SSH, you can install YunoHost using the install script.
+Once you have access to a command line on your server (either directly or through SSH), you can install yunohost by running command as root :
 
-<div class="alert alert-info">
-<b>Note:</b> The configuration of your services will be overridden, it is thus recommended to install YunoHost on a newly installed Debian system.
-</div>
-
-1. Install git
 ```bash
-sudo apt-get install git dialog
+bash <(wget -q -O- https://install.yunohost.org/)
 ```
 
-2. Clone the Yunohost install script repository
-```bash
-git clone https://github.com/YunoHost/install_script /tmp/install_script
-```
+<small>*(If `wget` is not installed on your system, you might need to install it with `apt install wget`)*</small>
 
-3. The root user must have a password set, if it isn't the case, set it (whithout the install script failed):
-```bash
-sudo passwd root
-```
-
-4. Execute the installation script
-```bash
-cd /tmp/install_script && sudo ./install_yunohost
-```
-
-<br>
-
-<p class="text-center">
-<img src="/images/install_script.png">
-</p>
-
-<br>
-
-<div class="alert alert-warning">
-<b>Warning:</b> Apache could already be installed by default on your dedicated server. If it's the case the installation script will fail since YunoHost is using Nginx. You will have to remove *apache2.2* package with the command: ``sudo apt-get autoremove apache2.2`` and execute the script again.
-</div>
+Once the installation is finished, you may want to [**proceed to post-installation**](/postinstall)
 
 ---
 
-*Once the installation is finished, you may want to proceed to post-installation: **[yunohost.org/postinstall](/postinstall)** *
+**Note for advanced users concerned with the `curl|bash` approach**
+
+If you strongly object to the `curl|bash` way (and similar commands) of installing software, consider reading ["Is curl|bash insecure?"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) on Sandstom's blog, and possibly [this discussion on Hacker News](https://news.ycombinator.com/item?id=12766350).
+

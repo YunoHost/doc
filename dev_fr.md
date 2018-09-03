@@ -5,7 +5,7 @@ savez pas comment procéder ? Ce guide parcours les étapes du développement et
 processus de contribution.
 
 Si vous chercher quelque chose à implémenter ou un bug à réparer, le
-bug tracker est [ici](https://dev.yunohost.org/issues/) !
+bug tracker est [ici](https://github.com/yunohost/issues/issues) !
 
 **Venez dire coucou sur le [salon de
 dev](xmpp:dev@conference.yunohost.org?join)** ! Si vous n'avez pas de client
@@ -15,7 +15,7 @@ XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
 
 - **Utilisez [ynh-dev](https://github.com/YunoHost/ynh-dev)** (voir le README)
   pour mettre en place un environnement de développement - en local sur une
-  machine virtuel, ou bien sur un VPS.
+  machine virtuelle, ou bien sur un VPS.
   Ceci installera une instance fonctionelle de YunoHost, en utilisant
   directement les dépôts git à l'aide de liens symboliques. De cette façon, il
   vous sera possible de modifier les fichiers, de tester les changements en
@@ -32,7 +32,7 @@ XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
 
 - Allez dans `/vagrant/yunohost/`.
 
-- Executez `/vagrant/ynh-dev use-git yunohost`.
+- Exécutez `/vagrant/ynh-dev use-git yunohost`.
 
 - Le fichier actionsmap (`data/actionsmap/yunohost.yml`) définit les différentes
   catégories, actions et arguments de la ligne de commande YunoHost. Choisissez
@@ -89,7 +89,7 @@ XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
 
 - `js/yunohost/controllers` contiens les parties javascript, et définit quelles
   requêtes faire à l'API pendant le chargement d'une page donnée de l'interface,
-  et comment traîter les données récupérées pour générer la page, en utilisant
+  et comment traiter les données récupérées pour générer la page, en utilisant
   des templates.
 
 - `views` contient les templates des pages de l'interface. Dans le template,
@@ -130,35 +130,5 @@ XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
 
 - Après relecture, test et validation par les autres contributeurs, votre
   branche sera mergée dans `testing` (?) !
-
-<script type="text/javascript" src="/jappix/javascripts/mini.min.js"></script>
-<script type="text/javascript">
-    // Jappix mini chat
-    $(".actions").css('opacity', 0);
-    jQuery.ajaxSetup({cache: false});
-
-    var ADS_ENABLE = 'off';
-    var JAPPIX_STATIC = '/jappix/';
-    var HOST_BOSH = 'https://im.yunohost.org/http-bind/';
-    var ANONYMOUS = 'on';
-     JappixMini.launch({
-        connection: {
-           domain: "anonymous.yunohost.org",
-        },
-        application: {
-           network: {
-              autoconnect: false,
-           },
-           interface: {
-              showpane: false,
-              animate: false,
-           },
-           groupchat: {
-              open: ['dev@conference.yunohost.org'],
-              suggest: ['support@conference.yunohost.org']
-           }
-        },
-     });
-</script>
 
 

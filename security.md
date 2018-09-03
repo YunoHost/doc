@@ -8,7 +8,7 @@ Two things remain important to note:
 
 * The fact that YunoHost is a well-spread software increase chances to face an attack. If a flaw is discovered, it could potentially affect all the YunoHost instances at once. Keep your system **up-to-date** to remain safe.
 
-*If you need some advises, do not hesitate to [ask us](/support).*
+*If you need some advices, do not hesitate to [ask us](/help).*
 
 *To talk about security flaws, contact the [YunoHost security team](/security_team).*
 
@@ -41,7 +41,9 @@ PasswordAuthentication no
 ```
 
 Save and restart SSH daemon.
-
+```bash
+systemctl restart ssh
+```
 ---
 
 ### Modify SSH port
@@ -52,19 +54,27 @@ To prevent SSH connection attempts by robots that scan the Internet for any atte
 
 ```bash
 nano /etc/ssh/sshd_config
-
-# Search line "Port" and remplace port number (by default 22) by another not used number
+```
+**Search line "Port" and replace** port number (by default 22) by another not used number
+```bash
+# What ports, IPs and protocols we listen for
 Port 22 # to replace by 9777 for example
 ```
 
-Save and restart SSH daemon.
+**Open the port** in firewall (you can use -6 option to limit forbid ipv4 connexion)
+```bash
+yunohost firewall allow TCP 9777
+``` 
 
+Save and restart SSH daemon. Switch over to the new port by restarting SSH.
+```bash
+systemctl restart ssh
+```
 Then restart the iptables firewall and close the old port in iptables.
 
 ```bash
 yunohost firewall reload
 yunohost firewall disallow <your_old_ssh_port_number> # port by default 22
-yunohost firewall disallow --ipv6 TCP <your_new_ssh_port_number> # for ipv6
 ``` 
 
 **For the next SSH connections ** you need to add the `-p` option followed by the SSH port number.
@@ -92,7 +102,7 @@ sudo adduser user_name
 Choose a strong password, since it is the user who will be responsible to obtain root privileges.
 Add the user to sudo group so just to allow him to perform maintenance tasks that require root privileges.
 ```bash
-sudo adduser user_namesudo
+sudo adduser user_name sudo
 ```
 
 Now, change the SSH configuration to allow the new user to connect.
@@ -106,11 +116,13 @@ AllowUsers user_name
 Only users listed in the AllowUsers directive will then be allowed to connect via SSH, which excludes the admin user.
 
 Save and restart SSH daemon.
-
+```bash
+systemctl restart ssh
+```
 ---
 
 ### Disable YunoHost API
-YunoHost administration is accessible through an **HTTP API**, served on the 6787 port by default. It can be used to administrate a lot of things on your server, thus to break many things between malicious hands. The best thing to do, if you know how to use the [command-line interface](/moulinette), is to deactivate the `yunohost-api` service.
+YunoHost administration is accessible through an **HTTP API**, served on the 6787 port by default. It can be used to administrate a lot of things on your server, thus to break many things between malicious hands. The best thing to do, if you know how to use the [command-line interface](/commandline), is to deactivate the `yunohost-api` service.
 
 ```bash
 sudo service yunohost-api stop

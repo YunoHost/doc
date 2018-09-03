@@ -18,14 +18,11 @@ mkdir YunoHost
 cd YunoHost
 ```
 
-The following command will initialize the project with a Yunohost image based on Debian Jessie
+The following command will initialize the project with a Yunohost image
 ```bash
-vagrant box add yunohost/jessie-stable https://build.yunohost.org/yunohost-jessie-stable.box --provider virtualbox
-vagrant init yunohost/jessie-stable
+vagrant box add yunohost/stretch-unstable https://build.yunohost.org/yunohost-stretch-unstable.box --provider virtualbox
+vagrant init yunohost/stretch-unstable
 ```
-<blockquote>
-<span class="text-warning">/!\</span> If you prefer use the beta version : https://build.yunohost.org/yunohost-jessie-testing.box 
-</blockquote>
 
 You need to activate the network for the YunoHost instance.
 ```bash
@@ -47,7 +44,7 @@ vagrant ssh
 
 Upgrade the system
 ```bash
-sudo apt-get update && sudo apt-get upgrade
+sudo apt update && sudo apt dist-upgrade
 ```
 
 You can access to your vm with the ip 192.168.33.10

@@ -1,8 +1,6 @@
 # Administrator web interface
 
-Yunohost has an administrator web interface. The other way to administer your Yunohost install is through the [CLI called "moulinette"](/moulinette)
-
-**Please note** that the web interface is an active work-in-progress and has far fewer features than the CLI moulinette.
+Yunohost has an administrator web interface. The other way to administrate your Yunohost install is through the [command line](/commandline).
 
 ### Access
 
@@ -12,19 +10,8 @@ You can access your administrator web interface at this address: https://example
 <img src="/images/manage_en.png" style="max-width:100%;">
 </div>
 
+
 ### Reset admin password
-
-#### On Yunohost 2.5
-
-The script to reset the admin password is not directly available, but can be downloaded and executed (as root) :
-
-```bash
-$ wget https://raw.githubusercontent.com/YunoHost/yunohost/testing/sbin/yunohost-reset-ldap-password
-$ chmod +x yunohost-reset-ldap-password
-$ ./yunohost-reset-ldap-password
-```
-
-#### From Yunohost 2.6
 
 To reset the admin password (as root) :
 
@@ -33,6 +20,7 @@ $ yunohost-reset-ldap-password
 ```
 
 A temporary password will be created, which you can use to define the new password.
+
 
 ### How to move application folder
 

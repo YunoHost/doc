@@ -34,15 +34,11 @@ This page lists a few installation guides.
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_olinuxino"><img src="/images/olinuxino.jpg" height=150 style="vertical-align:bottom"><b><p>On an OlinuXino (Internet Cube)</p></b></a>
-</div>
-
-<div class="col col-md-3 text-center">
 <a href="/install_on_raspberry"><img src="/images/raspberrypi.jpg" height=150 style="vertical-align:bottom"><b><p>On a Raspberry Pi</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_arm_board"><img src="/images/cubieboard2.png" height=150 style="vertical-align:bottom"><b><p>On an ARM board</p></b></a>
+<a href="/install_on_arm_board"><img src="/images/olinuxino.jpg" height=150 style="vertical-align:bottom; padding:20px"><b><p>On an ARM board</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
@@ -84,7 +80,7 @@ This page lists a few installation guides.
 
 <div class="col col-md-3 text-center">
 <a href="/install_on_debian"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
-<b><p>On Debian 8/Jessie</p></b></a>
+<b><p>On Debian 9/Stretch</p></b></a>
 </div>
 
 </div>

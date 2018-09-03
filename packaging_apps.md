@@ -38,7 +38,7 @@ Since YunoHost has a unified architecture, you will be able to guess most of the
 <a class="btn btn-lg btn-default" href="packaging_apps_multiinstance_en">Multi-instance</a>
 
 ### Hooks
-YunoHost provides a hook system, which is accessible via the packager's script callbacks in moulinette (CLI).
+YunoHost provides a hook system, which is accessible via the packager's script callbacks in command line.
 The scripts have to be placed in the `hooks` repository at the root of the YunoHost package, and must be named `priority-hook_name`, for example: `hooks/50-post_user_create` will be executed after each user creation.
 
 **Note**: `priority` is optional, default is `50`.
@@ -48,13 +48,44 @@ Take a look at the [ownCloud package](https://github.com/Kloadut/owncloud_ynh) f
 ### Helpers
 <a class="btn btn-lg btn-default" href="packaging_apps_helpers_en">Helpers</a>
 
+### Registering a log file
+
+In a lot of case, you might want to register a log file created by your app, to make it available in the webadmin. To register a log, you can create a reference file `/var/log/yunohost/categories/app/APPNAME.yml`.
+
+You can specify a start date by starting the file name with the date formatted as `YYYYMMDD-HHMMSS`.
+
+Example of yml metadata log file:
+```bash
+log_path: /path/to/your/log/file.log
+```
+
+If you want display some context info, you can add:
+```bash
+extra:
+  env:
+    args1: value1
+    args2: value2
+    args3: value3
+```
+
+You can attach the log to an app, domain, service or user like this :
+```bash
+related_to:
+    - ['app', 'APPNAME']
+    - ['service', 'SERVICE1']
+    - ['service', 'SERVICE2']
+    - ['domain', 'DOMAIN.TLD']
+```
+
+This will be used to filter logs and display all log related to an entity like a user, a domain, an app or a service.
+
 ### Test it!
 In order to test your package, you can execute your script standalone as `admin` (do not forget to append required arguments):
 ```bash
 su - admin -c "/bin/bash /path/to/my/script my_arg1 my_arg2"
 ```
 
-Or you can use [moulinette](/moulinette_en):
+Or you can use [command line](/commandline_en):
 ```bash
 yunohost app install /path/to/my/app/package
 ```
@@ -70,7 +101,7 @@ Here is a list of best practices for application install scripts:
 * install script should use the command-line method instead of calls to curl through web install form;
 * install script should save install answers;
 * application sources should be checked with a control sum (sha256, sha1 or md5) or a PGP signature;
-* scripts should be tested on Debian Jessie as well as 32 bits, 64 bits and ARM architectures;
+* scripts should be tested on Debian Stretch 32 bits, 64 bits and ARM architectures;
 * backup and restore scripts should be present and functional.
 
 To be define the quality of a package, it'll obtained a [level](packaging_apps_levels_fr), determined according to somes criteria of installation and according to respect to [package guidelines](packaging_apps_guidelines_fr).
@@ -87,9 +118,9 @@ This Python script checks:
 ### Publish and ask for testing your application
 * Publishing a [post on the Forum](https://forum.yunohost.org/) with the [`App integration` category](https://forum.yunohost.org/c/app-integration), to ask for testing and feedback on your application.
 
-* Ask your application to be added to the [app repository](https://github.com/YunoHost/apps) to be displayed in the [non-official apps list](apps_in_progress_en). Specify its progress state: `notworking`, `inprogress`, or `working`.
+* Ask your application to be added to the [app repository](https://github.com/YunoHost/apps) to be displayed in the [non-official apps list](apps_en). Specify its progress state: `notworking`, `inprogress`, or `working`.
 
 - Subscribe to the [Apps mailing list](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps) to be informed about packaging evolution.
 
 ### Officalization of an application
-To become an official application, it must be tested well enough, be stable and should work on 64 bits, 32 bits et ARM processor architectures, and on Debian Jessie. If you think those conditions are met, ask for [official integration](https://github.com/YunoHost/apps) of your application.
+To become an official application, it must be tested well enough, be stable and should work on Debian Stretch 64 bits, 32 bits and ARM architectures. If you think those conditions are met, ask for [official integration](https://github.com/YunoHost/apps) of your application.

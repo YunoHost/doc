@@ -1,6 +1,6 @@
 # Matériel
 
-YunoHost est compatible avec tous les types de machines courants.    
+YunoHost est compatible avec tous les types de machines courantes.    
 Il est important d’identifier votre type de machine avant de procéder à l’installation.
 
 *Cliquez sur le guide correspondant à votre matériel.*

@@ -2,7 +2,7 @@
 
 ## Qu’est-ce que SSH ?
 
-**SSH** est un accronyme pour Secure Shell, et désigne un protocole qui permet de contrôler à distance une machine via la ligne de commande (CLI). C'est aussi une commande disponible de base sur Linux et Mac OS / OSX. Sous Windows, maleureusement il vous faudra utiliser le logiciel [PuTTy](http://www.fastcomet.com/tutorials/getting-started/putty).
+**SSH** est un accronyme pour Secure Shell, et désigne un protocole qui permet de contrôler à distance une machine via la ligne de commande (CLI). C'est aussi une commande disponible de base sur Linux et Mac OS / OSX. Sous Windows, malheureusement il vous faudra utiliser le logiciel [PuTTy](http://www.fastcomet.com/tutorials/getting-started/putty).
 
 ## Pendant l’installation de YunoHost
 
@@ -24,7 +24,7 @@ En supposant que votre adresse IP est `111.222.333.444`, ouvrez un terminal et t
 ssh root@111.222.333.444
 ```
 
-Un mot de passe sera demandé. Si c'est un VPS, votre fournisseur devrait également vous avoir communiqué un mot de passe. Sur un Raspberry Pi, le password devrait être `yunohost`. Sur un OLinuXino, cela devrait être `olinux`.
+Un mot de passe sera demandé. Si c'est un VPS, votre fournisseur devrait également vous avoir communiqué un mot de passe. Si vous avez utilisé une image pré-installée (pour x86 ou cartes ARM), le password devrait être `yunohost`.
 
 #### Changer le mot de passe root !
 
@@ -42,7 +42,7 @@ ssh admin@111.222.333.444
 
 Ensuite, entrez le mot de passe administrateur défini pendant la [post-installation](postinstall).
 
-Si vous avez configuré vos DNS (or tweaked your `/etc/hosts`), you can simply use your domain name :
+Si vous avez configuré vos DNS (ou modifié votre `/etc/hosts`), vous pouvez utiliser votre nom de domaine :
 
 ```bash
 ssh admin@votre.domaine.tld
@@ -58,7 +58,24 @@ ssh -p 2244 admin@votre.domaine.tld
 
 Par défaut, seulement les utilisateurs admin et root peuvent se logger en SSH sur une instance Yunohost.
 
-Les utilisateurs YunoHost créé via l'interface d'administration sont géré par la base de donnée LDAP. Par défaut, ils ne peuvent pas se connecter en SSH pour des raisons de sécurité. Si vous avez absolument besoin qu'un utilisateur dispose d'un accès SSH, vous pouvez utiliser [cette manipulation](https://forum.yunohost.org/t/ssh-disconnects-after-successful-login/256/10).
+Les utilisateurs YunoHost créés via l'interface d'administration sont géré par la base de donnée LDAP. Par défaut, ils ne peuvent pas se connecter en SSH pour des raisons de sécurité. Si vous avez absolument besoin qu'un utilisateur dispose d'un accès SSH, vous pouvez utiliser la commande :
+```bash
+yunohost user ssh allow <username>
+```
+
+De même, il est possible de supprimer l'accès ssh à un utilisateur avec la commande :
+```bash
+yunohost user ssh disallow <username>
+```
+
+Enfin, il est possible d'ajouter, de supprimer et de lister des clés ssh, pour améliorer la sécurité de l'accès ssh, avec les commandes :
+```bash
+yunohost user ssh add-key <username> <key>
+yunohost user ssh remove-key <username> <key>
+yunohost user ssh list-keys <username>
+```
+
+
 
 ## SSH et sécurité
 

@@ -41,7 +41,7 @@
   <div class="call-to-action">
     <!-- <a class="btn btn-primary btn-lg" href="/try">Try it</a>  -->
     <a class="btn btn-success btn-lg" href="/install">Get started</a>
-    <p class="text-muted"><small>YunoHost v2.2</small></p>
+    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-0-stretch-release-sortie-de-yunohost-3-0-stretch/5020">YunoHost v3.0</a></small></p>
   </div>
 
   <div class="row cf">
@@ -104,11 +104,11 @@
 
   <div class="text-center">
     <h1>¡ Hey ! Somos humanos<br /><small> Si tiene algun pregunta, un problema, o simplemente estás interesado, ven decir "¡ Hola !" sobre nuetra salón de discusión clic en el botón abajo &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
-<!--
-   <p class="liberapay">
+
+  <p class="liberapay">
    <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Donation button" title="Liberapay" /></a>
    </p>
--->
+
   </div>
 
 </div><!-- boring-part -->

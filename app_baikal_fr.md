@@ -43,7 +43,7 @@ Ajoutez un nouveau carnet d’adresses en allant dans Paramètres > Préférence
 Renseigner :
 * Nom du carnet d’adresses : `default`
 * Nom d’utilisateur : `username`
-* Mot de passe : `leMotDePasseAssociéAUsername`
+* Mot de passe : `leMotDePasseAssociéAUusername`
 * URL : `https://example.com/baikal/card.php/addressbooks/username/default`
 
 *En prenant soin de remplacer « example.com » par votre domaine et « username » par votre nom d’utilisateur*

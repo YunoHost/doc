@@ -1,4 +1,4 @@
-# Installer YunoHost sur VitualBox
+# Installer YunoHost sur VirtualBox
 
 *Trouvez d’autres moyens d’installer YunoHost **[ici](/install_fr)**.*
 
@@ -7,7 +7,7 @@
 <img src="/images/virtualbox.png" width=200>
 
 * Un ordinateur x86 avec VirtualBox installé et assez de RAM disponible pour lancer une petite machine virtuelle.
-* La dernière **image ISO YunoHost** stable, disponible [ici](https://build.yunohost.org).
+* La dernière **image ISO YunoHost** stable, disponible [ici](/images_fr).
 
 ---
 
@@ -47,7 +47,7 @@ Démarrez votre machine virtuelle
 
 <br>
 
-Vous devez sélectionner ici l’image ISO `yunohostv2-latest-amd64.iso`, puis vous devriez voir cet écran d’accueil YunoHost.
+Vous devez sélectionner ici l’image ISO, puis vous devriez voir cet écran d’accueil YunoHost.
 
 <br>
    
@@ -70,8 +70,5 @@ Après le redémarrage, vous devriez voir cet écran :
 <br>
 
 * Vous pouvez obtenir plus d’information sur la post-installation ici : **[yunohost.org/postinstall_fr](/postinstall_fr)**
-* Le mode de passe root est "yunohost"
+* Le mot de passe root est "yunohost"
 
----
-
-***Si vous avez besoin d’aide lors de ces étapes, n’hésitez pas à utiliser les différents [moyens de support](/support_fr).***
