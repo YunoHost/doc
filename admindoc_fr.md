@@ -35,7 +35,7 @@
     * [La sécurité](/security)
 * Pour aller plus loin
     * Noms de domaine
-        * [Nom de domaine en noho.st / nohost.me](/dns_nohost_me_fr)
+        * [Nom de domaine en noho.st / nohost.me / ynh.fr](/dns_nohost_me_fr)
         * [Configurer un DNS dynamique avec une adresse IP dynamique](/dns_dynamicip_fr)
         * [DNS et installation d’une application sur un sous-domaine](/dns_subdomains_fr)
         * [Utiliser le résolveur DNS local](/dns_resolver_fr)
