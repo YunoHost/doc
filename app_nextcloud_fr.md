@@ -86,13 +86,22 @@ CAS A : 'datadirectory' => '/media/stockage',
 CAS B : 'datadirectory' => '/media/stockage/nextcloud_data',
 ```
 
-Sauvegardez avec `ctrl+x` puis `o`.
+Sauvegardez avec `ctrl+x` puis `y` ou `o` (dépend de la locale de votre serveur).
 
 Relancez le serveur web :
 
 ```bash
 systemctl start nginx
 ```
+
+Ajouter le fichier .ocdata
+```bash
+CAS A : nano /media/stockage/.ocdata
+CAS B : nano /media/stockage/nextcloud_data/.ocdata
+```
+Ajouter un espace au fichier pour pouvoir le sauvegarder
+
+Sauvegardez avec `ctrl+x` puis `y` ou `o` (dépend de la locale de votre serveur).
 
 Lancez un scan du nouveau répertoire par Nextcloud:
 
