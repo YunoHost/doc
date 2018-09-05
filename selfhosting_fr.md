@@ -1,47 +1,28 @@
-# L’auto-hébergement
+L'auto-hébergement
+==================
 
-#### Définition
-L’**auto-hébergement** consiste à héberger chez soi son serveur, ses données et ses services.
+L'auto-hébergement est le fait d'avoir et d'administrer son propre serveur, typiquement chez soi, pour héberger soi-même ses données personelles et des services plutôt que de se reposer exclusivement sur des tiers. Par exemple, il est possible d'auto-héberger son blog de sorte qu'il "vive" dans une machine que vous contrôlez, au lieu qu'il soit sur l'ordinateur de quelqu'un d'autre (a.k.a. le Cloud) en échange d'argent, de publicités ou de données privées.
 
-#### Responsabilités de l’administrateur
-Si vous souhaitez vous servir d’un site web, du [courrier électronique](/email_fr) et de la [messagerie instantanée](/XMPP_fr), le serveur devra rester allumé tout le temps, soit 24h/24 et 7j/7.
+L'auto-hébergement implique de disposer d'un serveur. Un serveur est un ordinateur qui est destiné à être accessible sur le réseau en permanence, et n'a généralement pas d'écran ni de clavier puisqu'il est administé à distance. Contrairement à une croyance répandue, les serveurs ne sont pas nécessairement des machines énormes et extrèmement puissante : aujourd'hui, une petite carte ARM à ~30€ est adéquate pour de l'auto-hébergement.
 
-L’auto-hébergement entraîne une disponibilité du serveur envers les utilisateurs hébergés sur votre serveur et/ou aux personnes extérieures consultants le serveur.
+Pratique l'auto-hébergement ne rends pas "votre internet" plus sécurisé et ne fourni pas d'anonymat en tant que tel. L'objectif est généralement de pouvoir être autonome et au contrôle de ses services et de ses données - ce qui implique aussi d'en être responsable.
 
-Il peut y avoir des problèmes rendant le serveur indisponible : une coupure électrique, une perte d’accès à Internet…etc.
+Pourquoi s'auto-héberger ?
+--------------------------
 
-Si vous vous servez du système de [courrier électronique](/email_fr), et que votre serveur est indisponible, les mails destinés au serveur seront de nouveau envoyés sous 3 à 7 jours.
+- **Vous croyez en un internet libre, ouvert et décentralisé.** Dans un internet centralisé, les entités privées et les gouvernement peuvent espionner, analyser et influencer les personnes en dictant la façon dont elle peuvent interagir les unes avec les autres, ainsi qu'en filtrant du contenu. Yunohost est développé par une communauté qui croit en un internet ouvert et décentralisé. Nous espérons que vous aussi !
 
-#### Contraintes de l’auto-hébergement
-* Le débit d’émission est faible. Dans le cas de l’ADSL, il est souvent de l’ordre de 1/10 par rapport au débit de réception. Par exemple : 1 Mo/s de réception et 100 ko/s d’émission ;
-* La disponibilité 24/7 ;
-* Le déménagement ;
+- **Vous voulez avoir le contrôle de vos données et services.** Vos images, votre messages de chat, votre historique de navigation, et votre dissertation pour l'école n'ont rien à faire sur l'ordinateur de quelqu'un d'autre (a.k.a. le Cloud). Ces données font parties de votre vie privée, mais également de celle de votre famille, de vos amis, etc. Ces données devraient être gérées par *vous*, et non par une quelconque entreprise américaine qui cherche à analyser vos données pour revendre les résultats.
 
-#### Enjeux de l’auto-hébergement
-* Anonymat, vie privée ;
-* Réappropriation de ces données de ces services ;
-* Décentralisation, réseaux distribués ;
+- **Vous souhaitez apprendre comment fonctionnent les ordinateurs et Internet.** Opérer son propre serveur est un bon contexte pour apprendre les mécanismes de base au coeur des systèmes d'exploitations (OS) et d'Internet. Il vous faudra possiblement toucher à la ligne de commande et à des morceaux de configuration réseau et DNS.
 
-<img src="/images/networks.png" width=500>
+- **Vous voulez explorer de nouvelles possibilités et personnaliser votre espace.** Avez-vous déjà rêvé d'avoir votre propre serveur Minecraft pour vos ami.e.s, ou un client IRC ou XMPP persistent ? Avec votre propre serveur, vous pouvez manuellement installer et faire tourner n'importe quel program et personnaliser chaque morceau.
 
-#### Autres projets d’auto-hébergement
-##### En développement
-- [Cloudron](https://cloudron.io)
-- [Cozy](https://cozy.io)
-- [FreedomBox](https://wiki.debian.org/FreedomBox)
-- [Libre.sh](https://github.com/indiehosters/libre.sh)
-- [Puffin](http://puffin.rocks)
-- [Sandstorm](https://sandstorm.io/)
-- [Sovereign](https://github.com/al3x/sovereign)
-- [UBOS](http://ubos.net)
+Pourquoi ne *pas* s'auto-héberger ?
+-----------------------------------
 
-##### Non maintenu
-- [ArkOS](http://web.archive.org/web/20170603213149/https://arkos.io/)
-- [Host@home](http://web.archive.org/web/20160206150730/http://yeuxdelibad.net/Programmation/Hostathome.html)
+- **L'auto-hébergement requiert du travail et de la patience.** S'auto-héberger est un peu comme avoir son propre jardin ou potager : cela demande du travail et de la patience. Bien que YunoHost cherche à faire tout le travail compliqué pour vous, il vous faudra tout de même premdre le temps d'apprendre et configurer quelques détails pour que votre installation marche correctement. Il vous faudra aussi gérer quelques taches de maintenance (telles que les mises à jour) de temps en temps, et demander de l'aide si des choses ne fonctionnent pas comme prévu.
 
+- **Avec de grands serveur viennent les grandes responsabilités.** Opérer un serveur implique d'être responsable des données que vous hébergez : personne ne pourra récupérer des données à votre place si vous les perdez. YunoHost fourni des fonctionnalités de sauvegarder qu'il est recommandé d'utiliser pour sauvegarder les configurations et données importantes. Il vous faut aussi garder un oeil sur les recommandations et les nouvelles à propos de la sécurité pour que votre serveur ou vos données ne soient pas compromises.
 
-#### Pour aller plus loin
-* [Auto-hebergement.fr](http://www.auto-hebergement.fr/)
-* [Conférence de Benjamin Bayart - Internet libre, ou Minitel 2.0 ?](http://www.fdn.fr/internet-libre-ou-minitel-2.html)
-* [Conférence de Dufromentel - Auto-hébergement vous pouvez ? - Capitole du Libre - 2014](http://videos2014.capitoledulibre.org/internet-libre/dufromentel-auto-hebergement-vous-pouvez.webm)
-* [Conférence de Richard Stallman - Le logiciel libre](http://perso.telecom-paristech.fr/~boucart/video/conf_stallman.webm)
+- **La qualité et les performances ne seront probablement pas aussi bonne que des services premium.** YunoHost (et la plupart des applications qui sont packagées) sont des logiciels libres et open-source, développés par des communautés bénévoles. Il n'y a pas de garantie absolue que ces logiciels marcheront dans toutes les circonstances possibles. Les performances de votre serveur auto-hébergé sont aussi liés au processeur, à la mémoire vive et à la connectivité internet.

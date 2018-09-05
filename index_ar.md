@@ -1,7 +1,7 @@
 <div dir="auto" class="teasing-part">                                                                      
 
   <div class="home-logo">
-    <img src="/images/ynh_logo_white.png" width="100"/>
+    <img src="/images/ynh_logo_white_300dpi.png" width="100"/>
   </div>
 
   <div dir="auto" class="punchline">
