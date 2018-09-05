@@ -26,7 +26,7 @@ Sous-chemins vs. domaines individuels par application
 
 Dans le contexte de YunoHost, il est assez courant d'avoir un seul (ou quelques) domaines sur lesquels plusieurs applications sont installées dans des "sous-chemins", de sorte que l'on se retrouve avec quelque chose comme ceci : 
 
-````bash
+```bash
 yolo.com
      ├─── /blog  : Wordpress (un blog)
      ├─── /cloud : Nextcloud (un service de cloud)
@@ -38,7 +38,7 @@ Alternativement, on peut choisir d'installer chaque application (ou certaines) s
 
 Si toutes les applications de l'exemple précédent étaient installées sur un domaine séparé, cela donnerait quelque chose comme ceci :
 
-````bash
+```bash
 blog.yolo.com  : Wordpress (un blog)
 cloud.yolo.com : Nextcloud (un service de cloud)
 rss.yolo.com   : TinyTiny RSS (un lecteur RSS)

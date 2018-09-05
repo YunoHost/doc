@@ -4,7 +4,7 @@
     * [Qu'est-ce que l'auto-hébergement](/selfhosting_fr)
     * [Qu'est-ce que YunoHost](/whatsyunohost_fr)
     * [Essayer YunoHost](/try_fr)
-    * [Choisir son mode d'hébergement](howtohostyourself-fr)
+    * [Choisir son mode d'hébergement](howtohostyourself_fr)
         * [Matériel compatible](/hardware_fr)
         * [À propos des fournisseurs d'accès internet](/isp_fr)
 * [Guide d’installation](/install_fr)
