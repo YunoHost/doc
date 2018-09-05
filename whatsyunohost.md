@@ -11,17 +11,17 @@ YunoHost is a **server operating system** aiming to make [self-hosting](selfhost
 Features
 --------
 
-- <img src="/images/icon-debian.png" width=64> based on Debian ;
-- <img src="/images/icon-tools.png" width=64> administrate your server through a **friendly web admin** ;
-- <img src="/images/icon-package.png" width=64> easily **install applications** on your server ; 
-- <img src="/images/icon-users.png" width=64> manage **users** <small>(based on LDAP)</small>;
-- <img src="/images/icon-globe.png" width=64> manage **domains** ;
-- <img src="/images/icon-medic.png" width=64> create and restore **backups** ;
-- <img src="/images/icon-door.png" width=64> users can be logged in all apps through the **Single Sign-On** (SSO) system <small>(SSOwat)</small> ;
-- <img src="/images/icon-mail.png" width=64> includes a **full email stack** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
-- <img src="/images/icon-messaging.png" width=64> ... as well as **an instant messaging server** <small>(XMPP)</small> ;
-- <img src="/images/icon-lock.png" width=64> ... a **SSL certificate** management system <small>(interfaced with Let's Encrypt)</small> ;
-- <img src="/images/icon-shield.png" width=64> and **security systems** <small>(fail2ban, yunohost-firewall)</small> ;
+- <img src="/images/icon-debian.png" width=32 style="margin-right:5px"> based on Debian ;
+- <img src="/images/icon-tools.png" width=32 style="margin-right:5px" width=64> administrate your server through a **friendly web admin** ;
+- <img src="/images/icon-package.png" width=32 style="margin-right:5px"> easily **install applications** on your server ;
+- <img src="/images/icon-users.png" width=32 style="margin-right:5px"> manage **users** <small>(based on LDAP)</small>;
+- <img src="/images/icon-globe.png" width=32 style="margin-right:5px"> manage **domains** ;
+- <img src="/images/icon-medic.png" width=32 style="margin-right:5px"> create and restore **backups** ;
+- <img src="/images/icon-door.png" width=32 style="margin-right:5px"> connect to all apps simultaneously through the **user portal** <small>(nginx, SSOwat)</small> ;
+- <img src="/images/icon-mail.png" width=32 style="margin-right:5px"> includes a **full email stack** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
+- <img src="/images/icon-messaging.png" width=32 style="margin-right:5px"> ... as well as **an instant messaging server** <small>(XMPP)</small> ;
+- <img src="/images/icon-lock.png" width=32 style="margin-right:5px"> ... a **SSL certificate** management system <small>(intergrated with Let's Encrypt)</small> ;
+- <img src="/images/icon-shield.png" width=32 style="margin-right:5px"> ... and **security systems** <small>(fail2ban, yunohost-firewall)</small> ;
 
 Origin
 ------
