@@ -46,7 +46,9 @@ The application package is considered perfect!
 ## Quality levels in detail:
 
 ### Level 0
+
 **The application does not install or run after installation.**  
+
 This is the lowest level, a level 0 application is considered non-functional.
 
 YEP to be respected to reach level 0:
@@ -54,7 +56,9 @@ YEP to be respected to reach level 0:
 - [YEP 1.2](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-12---inscrire-lapp-sur-un-r%C3%A9pertoire-connu---valid%C3%A9--manuel--notworking-) Add the app to a known app list 
 
 ### Level 1
-**The application can be installed and uninstalled correctly.**  
+
+**The application can be installed and uninstalled correctly.** 
+
 But exceptions are possible, if at least one installation method is functional and its removal then the application is considered functional.
 
 YEP to be respected to reach level 1:
@@ -64,6 +68,7 @@ YEP to be respected to reach level 1:
 - [YEP 2.15](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-215---v%C3%A9rifier-les-param%C3%A8tres-saisies-par-lutilisateur----valid%C3%A9--manuel--official-) : Follow the application installation instructions
 
 ### Level 2
+
 **The application can be installed and uninstalled in all common configurations.**  
 
 - Installation in subfolder.
@@ -85,14 +90,18 @@ YEP to be respected to reach level 2:
 
 
 ### Level 3
+
 **The application supports upgrade from an older version of the package.**  
+
 The application must be able to be updated from a previous version of the package without causing an error.
 
 YEP to be respected to reach level 3:
 - [YEP 2.3](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-23---sauvegarder-les-r%C3%A9ponses-lors-de-linstallation---valid%C3%A9--manuel--working-) Save answers during installation
 
 ### Level 4
-**The application supports LDAP and HTTP AUTH **
+
+**The application supports LDAP and HTTP AUTH**
+
 The application manages its users directly from the [YunoHost ldap base](https://github.com/YunoHost/SSOwat/blob/366dd6c4438e6550f7438c36893690b628340185/config.lua#L50-L53) and allows unified connection using [HTTP authentication](https://fr.wikipedia.org/wiki/Authentification_HTTP) from the SSO.
 
 *If the application is not capable of supporting an ldap directory or HTTP authentication, this level can be ignored.  *
@@ -103,7 +112,9 @@ YEP to be respected to reach level 4:
 - *[YEP 4.2](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-42---lier-lauthentification-au-sso----valid%C3%A9--manuel--official-) : Bind authentication to sso*
 
 ### Level 5
+
 **The application has no errors in [Package linter](https://github.com/YunoHost/package_linter).**  
+
 *There may be false positives in Package linter. These situations will be handled on a case-by-case basis.*
 
 YEP to be respected to reach level 5:
@@ -114,7 +125,8 @@ YEP to be respected to reach level 5:
 
 
 ### Level 6
-**The application can be backed up and restored without error on the same machine or another. ** 
+
+**The application can be backed up and restored without error on the same machine or another.** 
 
 YEP to be respected to reach level 6:
 - [YEP 1.4](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-14---informer-sur-lintention-de-maintenir-un-paquet----brouillon--manuel--working-) : Inform about the intention to maintain a package
@@ -133,7 +145,9 @@ YEP to be respected to reach level 6:
 If an app reaches level 6, it may qualify to join the official applications.
 
 ### Level 7
-**The application has no errors in [Package check](https://github.com/YunoHost/package_check).**  
+
+**The application has no errors in [Package check](https://github.com/YunoHost/package_check).** 
+
 Considering the maximum number of tests possible for the application.
 
 YEP à respecter pour atteindre le niveau 7:
@@ -142,6 +156,7 @@ YEP à respecter pour atteindre le niveau 7:
 
 
 ### Level 8
+
 **The application complies with all recommended YEPs.**
 
 YEP to be respected to reach level 8:
@@ -155,6 +170,7 @@ YEP to be respected to reach level 8:
 If an application is not available on an architecture, and it is impossible to circumvent this limitation reasonably, this limitation must be indicated in the REDME and taken into account in the installation script. The installation of the application on an unsupported architecture must be stopped before modifying the filesystem.
 
 ### Level 9
+
 **The application complies with all optional YEPs.**
 
 YEP to be respected to reach level 9:
@@ -168,7 +184,9 @@ YEP to be respected to reach level 9:
 
 
 ### Level 10
-**The application is considered perfect.** 
+
+**The application is considered perfect.**
+
 This ultimate level for an application can only be reached after an in-depth study of the package and by the validation of the Apps group.
 
 
