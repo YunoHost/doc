@@ -1,7 +1,7 @@
 Sauvegarder son serveur et ses apps
 ===================================
 
-Dans le contexte de l'auto-hébergement, les sauvegardes (backup) sont un élément important pour palier à des événements inattendus (incendies, corruption de base de données, perte d'accès au serveur, serveur compromis, ...). La politique de sauvegarder à mettre en place dépend de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez être très prudent si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les sauvegardes *dans un endroit différent*.
+Dans le contexte de l'auto-hébergement, les sauvegardes (backup) sont un élément important pour palier à des événements inattendus (incendies, corruption de base de données, perte d'accès au serveur, serveur compromis, ...). La politique de sauvegardes à mettre en place dépend de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez être très prudent si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les sauvegardes *dans un endroit différent*.
 
 Les sauvegardes avec YunoHost
 -----------------------------
