@@ -132,7 +132,7 @@ sudo service yunohost-api stop
 
 Some [pentests](https://en.wikipedia.org/wiki/Penetration_test) have been done on a YunoHost 2.4 instance (french):
 
-- [1) Preparation](https://exadot.fr/2016/07/03/pentest-dune-instance-yunohost-1-preparation)
-- [2) The functionning](https://exadot.fr/2016/07/12/pentest-dune-instance-yunohost-2-le-fonctionnement)
-- [3) Black Box Audit](https://exadot.fr/2016/08/26/pentest-dune-instance-yunohost-3-audit-en-black-box)
-- [4) Grey Box Audit](https://exadot.fr/2016/11/03/pentest-dune-instance-yunohost-4-audit-en-grey-box)
+- [1) Preparation](https://exadot.fr/blog/2016-07-03-pentest-dune-instance-yunohost-1-preparation)
+- [2) The functionning](https://exadot.fr/blog/2016-07-12-pentest-dune-instance-yunohost-2-le-fonctionnement)
+- [3) Black Box Audit](https://exadot.fr/blog/2016-08-26-pentest-dune-instance-yunohost-3-audit-en-black-box)
+- [4) Grey Box Audit](https://exadot.fr/blog/2016-11-03-pentest-dune-instance-yunohost-4-audit-en-grey-box)
