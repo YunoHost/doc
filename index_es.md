@@ -41,7 +41,7 @@
   <div class="call-to-action">
     <!-- <a class="btn btn-primary btn-lg" href="/try">Try it</a>  -->
     <a class="btn btn-success btn-lg" href="/install">Get started</a>
-    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-0-stretch-release-sortie-de-yunohost-3-0-stretch/5020">YunoHost v3.0</a></small></p>
+    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-2-release-sortie-de-yunohost-3-2/5710">YunoHost v3.2</a></small></p>
   </div>
 
   <div class="row cf">
