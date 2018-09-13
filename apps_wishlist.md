@@ -157,6 +157,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Taiga](https://taiga.io)
 - [Tania](http://gettania.org/)
 - [Taskwarrior](https://taskwarrior.org)
+- [TMate](https://tmate.io/)
 - [TorChat](https://github.com/prof7bit/TorChat)
 - [Torrent Tunes](https://github.com/tchoulihan/torrenttunes-client)
 - [Total Respawn](https://github.com/broncowdd/TotalRespawn)
