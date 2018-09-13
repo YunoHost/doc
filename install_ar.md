@@ -77,7 +77,7 @@
 
 <div class="col col-md-3 text-center">
 <a href="/install_on_debian_fr"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
-<b><p>على ديبيان 8 / جيسي</p></b></a>
+<b><p>على ديبيان 9 / ستريتش</p></b></a>
 </div>
 
 </div>
