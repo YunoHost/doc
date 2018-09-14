@@ -115,6 +115,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [ONLYOFFICE Document Server](http://helpcenter.onlyoffice.com/server/linux/document/linux-installation.aspx) (to be able to use ONLYOFFICE inside Nextcloud)
 - [ONLYOFFICE](http://onlyoffice.org)
 - [OpenBazaar](https://openbazaar.org)
+- [openHAB](https://www.openhab.org/) - Smart home platform.
 - [OpenJabNab](https://github.com/OpenJabNab/OpenJabNab) (/!\ last update: Apr 30, 2016)
 - [Paperless](https://github.com/danielquinn/paperless)
 - [Paperwork](http://paperwork.rocks)
