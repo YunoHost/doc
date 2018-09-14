@@ -104,6 +104,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Mailpile](https://www.mailpile.is)
 - [Matomo](https://matomo.org/) (formerly Piwik)
 - [MediaCrush](https://github.com/MediaCrush/MediaCrush) (/!\ last update: Jan 23, 2015)
+- [MediaGoblin](https://mediagoblin.org/)
 - [MinigalNano](https://github.com/sebsauvage/MinigalNano) (/!\ last update: Jun 24, 2016)
 - [Mirakel](http://mirakel.azapps.de/taskwarrior.html) (/!\ SSL-Warning)
 - [Modoboa](http://modoboa.org)
