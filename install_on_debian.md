@@ -8,7 +8,7 @@
 
 An ARM box, a VPS, a dedicated server, a standard x86 computer, an old Macintosh, ...
 
-* with **Debian 9** (Stretch) installed
+* with **Debian 9** (Stretch) installed with kernel version at least to 3.12
 * connected to the Internet
 * with a direct **root access** or via SSH
 
