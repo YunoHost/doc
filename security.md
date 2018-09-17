@@ -122,7 +122,7 @@ systemctl restart ssh
 ---
 
 ### Disable YunoHost API
-YunoHost administration is accessible through an **HTTP API**, served on the 6787 port by default. It can be used to administrate a lot of things on your server, so malicious actors can alsu use it to damage your server. The best thing to do, if you know how to use the [command-line interface](/commandline), is to deactivate the `yunohost-api` service.
+YunoHost administration is accessible through an **HTTP API**, served on the 6787 port by default. It can be used to administrate a lot of things on your server, so malicious actors can also use it to damage your server. The best thing to do, if you know how to use the [command-line interface](/commandline), is to deactivate the `yunohost-api` service.
 
 ```bash
 sudo service yunohost-api stop
