@@ -1,6 +1,6 @@
 # Installing YunoHost manually
 
-Once you have **Debian 9** with **kernel >= 3.12** and access to a command line on your server (either directly or through SSH), you can install yunohost by running command as root :
+Once you have **Debian 9** <small>(with **kernel >= 3.12**)</small> and access to a command line on your server (either directly or through SSH), you can install yunohost by running command as root :
 
 ```bash
 bash <(wget -q -O- https://install.yunohost.org/)
