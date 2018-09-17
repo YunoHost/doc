@@ -89,7 +89,7 @@ ssh -p <new_ssh_port_number> admin@<your_yunohost_server>
 
 ### Change the user authorized to connect via SSH
 
-To avoid multiple forced login attempts to admin by robots, change the authorized user who can connect connect.
+To avoid multiple forced login attempts to admin by robots, change the authorized user who can connect.
 
 <div class="alert alert-info" markdown="1">
 In the case of a key authentication, a brute force attack has no chance of succeeding. This step is not really useful in this case.
