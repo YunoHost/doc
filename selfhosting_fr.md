@@ -16,7 +16,7 @@ Pourquoi s'auto-héberger ?
 
 - **Vous souhaitez apprendre comment fonctionnent les ordinateurs et Internet.** Opérer son propre serveur est un bon contexte pour apprendre les mécanismes de base au coeur des systèmes d'exploitations (OS) et d'Internet. Il vous faudra possiblement toucher à la ligne de commande et à des morceaux de configuration réseau et DNS.
 
-- **Vous voulez explorer de nouvelles possibilités et personnaliser votre espace.** Avez-vous déjà rêvé d'avoir votre propre serveur Minecraft pour vos ami.e.s, ou un client IRC ou XMPP persistent ? Avec votre propre serveur, vous pouvez manuellement installer et faire tourner n'importe quel program et personnaliser chaque morceau.
+- **Vous voulez explorer de nouvelles possibilités et personnaliser votre espace.** Avez-vous déjà rêvé d'avoir votre propre serveur Minecraft pour vos ami.e.s, ou un client IRC ou XMPP persistent ? Avec votre propre serveur, vous pouvez manuellement installer et faire tourner n'importe quel programme et personnaliser chaque morceau.
 
 Pourquoi ne *pas* s'auto-héberger ?
 -----------------------------------
