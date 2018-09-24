@@ -77,6 +77,31 @@ yunohost firewall reload
 yunohost firewall disallow <your_old_ssh_port_number> # port by default 22
 ``` 
 
+You also need to give fail2ban the new SSH port.
+
+To do that you need to create the configuration file `my_ssh_port.conf` with the command
+
+
+```bash
+nano /etc/fail2ban/jail.d/my_ssh_port.conf
+``` 
+
+and you can fill it with
+
+```
+[sshd]
+port = <votre_numero_de_port_ssh>
+
+[sshd-ddos]
+port = <votre_numero_de_port_ssh>
+```
+
+Finally you have to restart fail2ban in order to apply the new configuration
+
+```bash
+systemctl restart fail2ban.service
+``` 
+
 **For the next SSH connections ** you need to add the `-p` option followed by the SSH port number.
 
 **Sample**:
