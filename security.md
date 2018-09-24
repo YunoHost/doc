@@ -90,10 +90,10 @@ and you can fill it with
 
 ```bash
 [sshd]
-port = <votre_numero_de_port_ssh>
+port = <your_ssh_port>
 
 [sshd-ddos]
-port = <votre_numero_de_port_ssh>
+port = <your_ssh_port>
 ```
 
 Finally you have to restart fail2ban in order to apply the new configuration
