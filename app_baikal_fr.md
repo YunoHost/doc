@@ -2,6 +2,8 @@
 
 Baïkal est un serveur de calendriers et de contacts accessible par les protocoles CalDAV (calendriers) et CardDAV (carnets d’adresses), autorisant ainsi la synchronisation avec de nombreux clients (Thunderbird + Lightning par exemple).
 
+**AVERTISSEMENT** : Baikal ne fonctionnera pas si vous avez installé un **Nextcloud** ( leurs fonctions cardav/caldav entrent en conflit).
+
 ## Connexion à l’interface d’admin
 Sur le portail SSO, si on clique sur la tuile « Baïkal », on tombe sur une page bien peu conviviale qui explique que le service fonctionne. Pour accéder à l’admin, il faut rajouter `/admin`. Par exemple :
 
