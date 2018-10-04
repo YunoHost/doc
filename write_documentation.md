@@ -14,4 +14,4 @@ The YunoHost documentation is managed through a [git repository](https://github.
 
 ## Syntax
 
-This page use the markdown syntax, please refer to the [documentation](https://guides.github.com/features/mastering-markdown/) for further information.
+This page uses the markdown syntax, please refer to the [documentation](https://guides.github.com/features/mastering-markdown/) for further information.

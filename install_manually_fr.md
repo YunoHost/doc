@@ -6,7 +6,7 @@ Une fois que vous avez accès à votre serveur (directement ou par SSH), vous po
 bash <(wget -q -O- https://install.yunohost.org/)
 ```
 
-<small>*(Si `wget` n'est pas installé sur votre système, il vous faudra peut-être l'installer avec `apt install wget`)*</small>
+<small>*(Si `wget` n'est pas installé sur votre système, il vous faudra peut-être l'installer avec `apt install wget`. Autrement, sinon la commande n'affiche rien du tout, vous pouvez tenter `apt install ca-certificates`)*</small>
 
 Une fois l'installation terminée, il vous faudra [**procéder à la post-installation**](/postinstall)
 
