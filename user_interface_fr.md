@@ -1,5 +1,11 @@
 # Interface utilisateur
 
+L'interface utilisateur est un portail permettant à un utilisateur connecté de voir toutes les applications qu'il peut
+utiliser, et y accéder. Cette interface permet aussi à l'utilisateur de gérer ses paramètres (changer de mot de passe, 
+définir ses alias et redirections courriel).
+
+<img src="/images/home_panel.jpg" width=800>
+
 ### Problème d’accès
 
 L’accès à la partie utilisateur peut se faire uniquement avec un nom de domaine. Vous ne pouvez pas y accéder en utilisant l’adresse IP locale de votre serveur comme suit : https://adresse.ip.du.server/yunohost/sso
