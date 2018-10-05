@@ -1,4 +1,10 @@
-#User interface
+# User interface
+
+The user interface is a portal that allows the loged-in user to see all the applications he is allowed to use, and 
+access them. This interface is also where the user can set his parameters (change password, define email alias and 
+redirections).
+
+<img src="/images/home_panel.jpg" width=800>
 
 ### Access problem
 
