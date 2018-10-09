@@ -17,9 +17,9 @@ Fonctionnalités
 - <img src="/images/icon-users.png" width=32 style="margin-right:5px"> gérez des **utilisateurs** <small>(gérés via LDAP)</small> ;
 - <img src="/images/icon-globe.png" width=32 style="margin-right:5px"> gérez des **domaines** ;
 - <img src="/images/icon-medic.png" width=32 style="margin-right:5px"> créez et restaurez des **sauvegardes** ;
-- <img src="/images/icon-door.png" width=32 style="margin-right:5px"> connexion simultannée à toutes les apps via un **portail utilisateur** <small>(nginx, SSOwat)</small> ;
+- <img src="/images/icon-door.png" width=32 style="margin-right:5px"> connexion simultanée à toutes les apps via un **portail utilisateur** <small>(nginx, SSOwat)</small> ;
 - <img src="/images/icon-mail.png" width=32 style="margin-right:5px"> fourni avec un **serveur mail complet** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
-- <img src="/images/icon-messaging.png" width=32 style="margin-right:5px"> ... ainsi qu'un **serveur de messagerie instantannée** <small>(XMPP)</small> ;
+- <img src="/images/icon-messaging.png" width=32 style="margin-right:5px"> ... ainsi qu'un **serveur de messagerie instantanée** <small>(XMPP)</small> ;
 - <img src="/images/icon-lock.png" width=32 style="margin-right:5px"> ... un système de gestion de **certificats SSL** <small>(integration de Let's Encrypt)</small> ;
 - <img src="/images/icon-shield.png" width=32 style="margin-right:5px"> ... et des **systèmes de sécurité** <small>(fail2ban, yunohost-firewall)</small> ;
 
