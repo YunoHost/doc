@@ -10,7 +10,7 @@ This page is dedicated to help you migrating an instance from YunoHost 2.7.x (ru
 
 - Yet, please don't rush into thinking that you should rush into reinstalling your system. A common "mistake" is to be willing to reinstall a server at the slightest complication. But turns out that reinstalling a system can also be complicated. Instead, if you happen to run into issues, we encourage you to try to investigate and understand what's going on and reach for help instead of just throwing away everything because it looks simpler.
 
-- About external email clients : if you or your users are using external email clients (typically Thunderbird, K9Mail, ...) be aware that the SMTP port changed from 465 (with SSL/TLS) to 587 (STARTTLS). See [this page of doc dedicated to email clients](/email_configure_client).
+- About external email clients : if you or your users are using external email clients (typically Thunderbird, K9Mail, ...) be aware that the SMTP port changed from 465 (with SSL/TLS) to 587 (STARTTLS). See [this page of doc dedicated to email clients](/email_configure_client). Webmail configurations such as Rainloop should also be updated using the corresponding administration interface.
 
 - For advanced users : if you have some custom scripts for backups, be aware that we made some backward-incompatible changes in the backup command line. The deprecated `--hooks`/`--ignore-hooks` options were removed, as well as the options `--ignore-apps`, `--ignore-system`. To make things more intuitive, `yunohost backup create --apps wordpress` (for example) will only backup wordpress, i.e. you don't have to add `--ignore-system` to not backup the system.
 
