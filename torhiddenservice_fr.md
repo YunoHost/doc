@@ -47,5 +47,5 @@ nginx -t
 
 ### Si tout est OK on applique les modifications de la configuration
 ```bash
-nginx -s reload
+systemctl reload nginx
 ```
