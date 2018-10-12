@@ -20,7 +20,7 @@ HiddenServicePort 443 127.0.0.1:443
 
 ### Redémarrer Tor
 ```bash
-service tor restart
+systemctl restart tor
 ```
 
 ### Obtenir l’adresse du service caché
@@ -42,7 +42,12 @@ Si vous voulez éviter d’être redirigé vers le portail à la connexion pour 
 #access_by_lua_file /usr/share/ssowat/access.lua;
 ```
 
-### Redémarrer nginx
+### Vérifier que l'on a pas fait d'erreurs dans la configuration de Nginx
 ```bash
-service nginx restart
+nginx -t
+```
+
+### Si tout est OK on applique les modifications de la configuration
+```bash
+systemctl reload nginx
 ```
