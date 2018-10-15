@@ -53,7 +53,7 @@ Do not hesitate to visit the ["contribute" page](/contribute).
 Security
 --------
 
-The utmost effor is made to keep YunoHost secure, and **communications encrypted**. You can read more about this subject on the related page:
+The utmost effort is made to keep YunoHost secure, and **communications encrypted**. You can read more about this subject on the related page:
 [https://yunohost.org/security](/security)
 
 What YunoHost is not?
