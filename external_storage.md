@@ -28,9 +28,9 @@ It may yield something like this :
 
 ```bash
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
-sda           8:0    0 931.5G  0 disk 
-└─sda1        8:1    0 931.5G  0 part 
-mmcblk0     179:0    0  14.9G  0 disk 
+sda           8:0    0 931.5G  0 disk
+└─sda1        8:1    0 931.5G  0 part
+mmcblk0     179:0    0  14.9G  0 disk
 ├─mmcblk0p1 179:1    0  47.7M  0 part /boot
 └─mmcblk0p2 179:2    0  14.8G  0 part /
 ```
@@ -41,20 +41,11 @@ Here, `mmcblk0` corresponds to an SD card of 16Go (the partitions `mmcblk0p1` et
 <span class="glyphicon glyphicon-warning-sign"></span> On a different setup, your system partition might be `sda` and so your external drive might be `sdb` for instance.
 </div>
 
-## 2. (Optionnal) Format the disk
+## 2. (Optional) Format the disk
 
-If you want, you can format the disk before starting to use it. You should be aware that **formating a drive implies to erasing every data on it !** If your disk is already "clean", you may ignore this step.
+This operation is optional if your disk has already been formatted.
 
-To format the partition :
-
-```bash
-mkfs.ext4 /dev/YOUR_DISK
-# then 'y' to validate
-```
-
-(Replace `YOUR_DISK` by the name of the disk. Be careful not to do any mistake here, as it can mean erasing data on your main system if you are using the wrong name ! In the previous example, the name of our disk was `sda`.)
-
-Then, let's create a new partition on the disk which just got formatted :
+First let's create a new partition on the disk :
 
 ```bash
 fdisk /dev/YOUR_DISK
@@ -63,6 +54,20 @@ fdisk /dev/YOUR_DISK
 then sucessfully type `n`, `p`, `1`, `Enter`, `Enter`, then `w` to create the new partition.
 
 Check with `lsblk` that your disk really does contain a single partition.
+
+Before you can use your disk it has to be formatted.
+
+You should be aware that **formating a drive implies to erasing every data on it !** If your disk is already "clean", you may ignore this step.
+
+To format the partition :
+
+```bash
+mkfs.ext4 /dev/YOUR_DISK1
+# then 'y' to validate
+```
+
+(Replace `YOUR_DISK1` by the name of the first partition on the disk. Be careful not to do any mistake here, as it can mean erasing data on your main system if you are using the wrong name ! In the previous example, the name of our disk was `sda`.)
+
 
 ## 3. Mount the disk
 
@@ -97,7 +102,7 @@ blkid | grep "/dev/YOUR_DISK1:"
 ```
 
 Let's add a line in the file `/etc/fstab` which manages which disks are mounted at boot. We open this file with `nano` :
- 
+
 ```bash
 nano /etc/fstab
 ```
