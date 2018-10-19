@@ -1,7 +1,9 @@
 ## Utiliser YunoHost comme un service caché Tor
-<div class="alert alert-warning">
-Ce tuto n'est pas complet ! Des données peuvent être récupérée avec cette installation comme le nom de domaine principal de votre yunohost, donc ce n'est pas un "service caché".
+<div class="alert alert-danger">
+Ce tutoriel n'est pas complet, il a ses limites et il est par exemple possible de récupérer le nom de domaine principal de la machine.
+Soyez sûr de savoir ce que vous faites.
 </div>
+
 Voir https://www.torproject.org/docs/tor-hidden-service.html.en (anglais)
 
 ### Installer Tor
@@ -20,7 +22,7 @@ HiddenServicePort 443 127.0.0.1:443
 
 ### Redémarrer Tor
 ```bash
-systemctl restart tor
+service tor restart
 ```
 
 ### Obtenir l’adresse du service caché
@@ -42,12 +44,7 @@ Si vous voulez éviter d’être redirigé vers le portail à la connexion pour 
 #access_by_lua_file /usr/share/ssowat/access.lua;
 ```
 
-### Vérifier que l'on a pas fait d'erreurs dans la configuration de Nginx
+### Redémarrer nginx
 ```bash
-nginx -t
-```
-
-### Si tout est OK on applique les modifications de la configuration
-```bash
-systemctl reload nginx
+service nginx restart
 ```
