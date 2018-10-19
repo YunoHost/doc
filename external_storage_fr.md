@@ -18,19 +18,19 @@ Vous devez également disposer d'un disque dur supplémentaire (branché en USB 
 
 Commencez par brancher ce disque dur à votre système. Il faut ensuite identifier sous quel nom est désigné le disque par le système.
 
-Pour cela, utilisez la commande : 
+Pour cela, utilisez la commande :
 
 ```bash
 lsblk
 ```
 
-Elle peut renvoyer quelque chose comme : 
+Elle peut renvoyer quelque chose comme :
 
 ```bash
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
-sda           8:0    0 931.5G  0 disk 
-└─sda1        8:1    0 931.5G  0 part 
-mmcblk0     179:0    0  14.9G  0 disk 
+sda           8:0    0 931.5G  0 disk
+└─sda1        8:1    0 931.5G  0 part
+mmcblk0     179:0    0  14.9G  0 disk
 ├─mmcblk0p1 179:1    0  47.7M  0 part /boot
 └─mmcblk0p2 179:2    0  14.8G  0 part /
 ```
@@ -43,18 +43,9 @@ Ici, `mmcblk0` corresponds à une carte SD de 16Go (on voit que les partitions `
 
 ## 2. (Optionnel) Formater le disque
 
-Si vous le souhaitez, vous pouvez formater votre disque avant de l'utiliser. Attention : **formatter un disque implique de supprimer toutes les données inscrites dessus !** Si votre disque est déjà "propre", vous pouvez passer cette étape.
+Cette opération est optionnelle si votre disque est déjà formaté.
 
-Pour formater la partition : 
-
-```bash
-mkfs.ext4 /dev/VOTRE_DISQUE
-# puis 'y' pour valider
-```
-
-(Remplacez `VOTRE_DISQUE` par le nom du disque. Attention à ne pas vous tromper de nom, car cela peut avoir pour conséquence de formatter un autre disque que celui voulu ! Dans l'exemple donné précédemment, il s'agissait de `sda`.)
-
-Ensuite, créons une nouvelle partition sur le disque qui viens d'être formatté : 
+Créons une nouvelle partition sur le disque :
 
 ```bash
 fdisk /dev/VOTRE_DISQUE
@@ -64,16 +55,30 @@ puis entrez successivement `n`, `p`, `1`, `Entrée`, `Entrée`, et `w` pour cré
 
 Vérifiez avec `lsblk` que vous avez bien votre disque contenant une seule partition.
 
+Avant de pouvoir utiliser votre disque, il doit être formaté.
+
+Attention : **formatter un disque implique de supprimer toutes les données inscrites dessus !** Si votre disque est déjà "propre", vous pouvez passer cette étape.
+
+Pour formater la partition :
+
+```bash
+mkfs.ext4 /dev/VOTRE_DISQUE1
+# puis 'y' pour valider
+```
+
+(Remplacez `VOTRE_DISQUE1` par le nom de la première partition sur le disque. Attention à ne pas vous tromper de nom, car cela peut avoir pour conséquence de formater un autre disque que celui voulu ! Dans l'exemple donné précédemment, il s'agissait de `sda`.)
+
+
 ## 3. Monter le disque
 
 "Monter" un disque corresponds à le rendre effectivement accessible dans l'arborescence des fichiers. Nous allons choisir arbitrairement de monter le disque dans `/media/stockage` mais vous pouvez le nommer différement (par exemple `/media/mon_disque` ...).
 
-Commençons par cŕeer le répertoire : 
+Commençons par cŕeer le répertoire :
 ```bash
 mkdir /media/stockage
 ```
 
-Puis nous pouvons monter le disque manuellement avec : 
+Puis nous pouvons monter le disque manuellement avec :
 
 ```bash
 mount /dev/VOTRE_DISQUE1 /media/stockage
@@ -87,7 +92,7 @@ Ensuite, vous devriez pouvoir créer des fichiers dans `/media/stockage`, et, pa
 
 Jusqu'ici, nous avons monté manuellement le disque. Cependant, il peut être utile de configurer le système pour qu'il monte automatiquement le disque après un démarrage.
 
-Pour commencer, trouvons l'UUID (identifiant universel) de notre disque avec : 
+Pour commencer, trouvons l'UUID (identifiant universel) de notre disque avec :
 
 ```bash
 blkid | grep "/dev/VOTRE_DISQUE1:"
@@ -96,12 +101,12 @@ blkid | grep "/dev/VOTRE_DISQUE1:"
 ```
 
 Ajoutons alors une ligne au fichier `/etc/fstab` qui gère le montage des disques au démarrage. On ouvre donc le fichier avec `nano` :
- 
+
 ```bash
 nano /etc/fstab
 ```
 
-Puis on ajoute cette ligne : 
+Puis on ajoute cette ligne :
 
 ```bash
 UUID="cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7" /media/stockage ext4 defaults,nofail 0 0
