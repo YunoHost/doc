@@ -74,7 +74,7 @@ Then restart the iptables firewall and close the old port in iptables.
 
 ```bash
 yunohost firewall reload
-yunohost firewall disallow <your_old_ssh_port_number> # port by default 22
+yunohost firewall disallow TCP <your_old_ssh_port_number> # port by default 22
 ``` 
 
 You also need to give fail2ban the new SSH port.
