@@ -99,7 +99,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [LiquidSoap](http://savonet.sourceforge.net/)
 - [Logstalgia](http://logstalgia.io)
 - [Loomio](https://www.loomio.org)
-- [The Lounge](https://thelounge.github.io), cf. https://github.com/Kloadut/shout_ynh/issues/4
 - [MaidSafe](http://maidsafe.net)
 - [Mailpile](https://www.mailpile.is)
 - [Matomo](https://matomo.org/) (formerly Piwik)
