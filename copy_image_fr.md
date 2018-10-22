@@ -25,7 +25,7 @@ Connectez votre carte SD, sélectionnez votre image YunoHost, puis cliquez sur
 
 ### Avec `dd`
 
-Si vous êtes sous Linux / Mac et que vous être à l'aise avec la ligne de
+Si vous êtes sous Linux / Mac et que vous êtes à l'aise avec la ligne de
 commande, vous pouvez aussi flasher votre carte SD avec `dd`. Commencez par
 identifier le périphérique correspondant à votre carte SD avec `fdisk -l` ou
 `lsblk`. En supposant que votre carte SD soit `/dev/mmcblk0` (faites attention
