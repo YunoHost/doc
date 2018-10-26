@@ -7,7 +7,7 @@ To allow non-interactive login, you must follow those steps :
 - Create a public/private key pair for your script, on your "redacting" computer
 - Copy the public key in `/var/www/my_webapp(__#)/.ssh/authorized_keys`
 - Adjust the owner of the file and directory to the `webapp#` user
-- you may now login without a password input, using  `sftp -b`, `lftp` of other sftp clients.
+- you may now login without a password input, using  `sftp -b`, `lftp` or other sftp clients.
 
 NB : The port number to use for SFTP connexions is the one used for SSH, specified in `/etc/ssh/sshd_config`.
 
