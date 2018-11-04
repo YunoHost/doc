@@ -11,6 +11,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [List of awesome Node.js projects](https://github.com/sqreen/awesome-nodejs-projects)
 - [List of SIP softwares/applications](https://en.wikipedia.org/wiki/List_of_SIP_software#Free_and_open-source_license)
 - [10er10](https://github.com/dready92/10er10)
+- [Adminer](https://www.adminer.org/en/) Database management in a single PHP file
 - [Airsonic](https://github.com/airsonic/airsonic)
 - [Airtime](https://www.sourcefabric.org/en/airtime/)
 - [Ajenti](http://ajenti.org)
