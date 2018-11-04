@@ -8,7 +8,7 @@
     <p>
       <span class="yolo 1" style="color: #FF3399;">Self-hosting for you, mom</span>
       <span class="yolo 2" style="color: #6699FF;">Haters gonna host</span>
-      <span class="yolo 3" style="color: #66FF33;">I host myself, b*tches</span>
+      <span class="yolo 3" style="color: #66FF33;">I host myself, Yo!</span>
       <span class="yolo 4" style="color: #00FFCC;">Go host yourself!</span>
       <span class="yolo 5" style="color: #FF5050;">Get off of my cloud</span>
       <span class="yolo 6" style="color: #FF0066;">Host me I’m famous</span>

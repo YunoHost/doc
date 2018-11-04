@@ -18,7 +18,7 @@ Le salon d’[entraide](support_fr) est là pour permettre aux utilisateurs de Y
 Salon de développement du cœur de YunoHost:
 - IRC : **#yunohost-dev** sur irc.freenode.net
 - Matrix : **#freenode_#yunohost-dev:matrix.org**
-- XMP : **[dev@conference.yunohost.org](xmpp:dev@conference.yunohost.org?join)**
+- XMPP : **[dev@conference.yunohost.org](xmpp:dev@conference.yunohost.org?join)**
 
 C'est le salon principal pour les contributions autour du projet.
 Pour chercher de l’aide, merci d'aller sur le salon d’entraide ci-dessus.

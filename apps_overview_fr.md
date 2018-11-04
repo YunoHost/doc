@@ -21,7 +21,7 @@ La liste des applications existantes (officielles et communautaires) peut être 
 Niveaux d'intégration et de qualité
 ------------------------------
 
-Des tests automatisés sont exécutés régulièrement pour tester l'intégration et la qualité de toutes les applications officielles, ainsi que les applications communautaires qui ont été déclarées "working". Le résultat est un niveau entre 0 et 7, dont la signification est détaillée sur [cette page](/packaging_apps_levels_levels_fr). Certains résultats de tests peuvent également être disponibles sur [ce tableau de bord](https://dash.yunohost.org/appci/branch/stable).
+Des tests automatisés sont exécutés régulièrement pour tester l'intégration et la qualité de toutes les applications officielles, ainsi que les applications communautaires qui ont été déclarées "working". Le résultat est un niveau entre 0 et 7, dont la signification est détaillée sur [cette page](/packaging_apps_levels_fr). Certains résultats de tests peuvent également être disponibles sur [ce tableau de bord](https://dash.yunohost.org/appci/branch/stable).
 
 Intégration LDAP / SSO
 ----------------------

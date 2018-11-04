@@ -4,11 +4,11 @@ YunoHost has been developed to provide the best security without too much compli
 
 Two things remain important to note:
 
-* Installing additional apps can **increase significantly** the number of potential security flaws. Do not hesitate to get information about them **before using it**, and try to install only those which will suit your needs.
+* Installing additional apps can **significantly increase** the number of potential security flaws. Do not hesitate to get information about security flaws **before installing an app**, and try to install only apps which will suit your needs.
 
-* The fact that YunoHost is a well-spread software increase chances to face an attack. If a flaw is discovered, it could potentially affect all the YunoHost instances at once. Keep your system **up-to-date** to remain safe.
+* The fact that YunoHost is a well-spread software increases the chances of an attack. If a flaw is discovered, it could potentially affect all the YunoHost instances at once. Keep your system **up-to-date** to remain safe.
 
-*If you need some advices, do not hesitate to [ask us](/help).*
+*If you need advice, do not hesitate to [ask us](/help).*
 
 *To talk about security flaws, contact the [YunoHost security team](/security_team).*
 
@@ -17,10 +17,10 @@ Two things remain important to note:
 ## Improve security
 If your YunoHost server is used in a critical production environment, or if you want to improve its safety, you may want to follow those good practices.
 
-**Attention:** *Following those instructions requires advanced knowledges in system administration.*
+**Attention:** *Following those instructions requires advanced knowledge of system administration.*
 
 ### SSH authentication via key
-By default, the SSH authentication uses the administration password. Deactivation this kind of authentication and replacing it by a key mechanism is advised.
+By default, the SSH authentication uses the administration password. Deactivating this kind of authentication and replacing it by a key mechanism is advised.
 
 **On your client**:
 
@@ -48,7 +48,7 @@ systemctl restart ssh
 
 ### Modify SSH port
 
-To prevent SSH connection attempts by robots that scan the Internet for any attempt SSH connections with any server accessible, you can change the SSH port.
+To prevent SSH connection attempts by robots that scan the Internet for any servers with SSH accessible, you can change the SSH port.
 
 **On your server**, edit the ssh configuration file, in order to modify SSH port.
 
@@ -74,7 +74,32 @@ Then restart the iptables firewall and close the old port in iptables.
 
 ```bash
 yunohost firewall reload
-yunohost firewall disallow <your_old_ssh_port_number> # port by default 22
+yunohost firewall disallow TCP <your_old_ssh_port_number> # port by default 22
+``` 
+
+You also need to give fail2ban the new SSH port.
+
+To do that you need to create the configuration file `my_ssh_port.conf` with the command
+
+
+```bash
+nano /etc/fail2ban/jail.d/my_ssh_port.conf
+``` 
+
+and you can fill it with
+
+```bash
+[sshd]
+port = <your_ssh_port>
+
+[sshd-ddos]
+port = <your_ssh_port>
+```
+
+Finally you have to restart fail2ban in order to apply the new configuration
+
+```bash
+systemctl restart fail2ban.service
 ``` 
 
 **For the next SSH connections ** you need to add the `-p` option followed by the SSH port number.
@@ -89,18 +114,18 @@ ssh -p <new_ssh_port_number> admin@<your_yunohost_server>
 
 ### Change the user authorized to connect via SSH
 
-To avoid multiple forcing the admin login attempts by robots, it can possibly change the authorized user to connect.
+To avoid multiple forced login attempts to admin by robots, change the authorized user who can connect.
 
 <div class="alert alert-info" markdown="1">
-In the case of a key authentication, brute force has no chance of succeeding. This step is not really useful in this case
+In the case of a key authentication, a brute force attack has no chance of succeeding. This step is not really useful in this case.
 </div>
 
 **On your server**, add a user
 ```bash
 sudo adduser user_name
 ```
-Choose a strong password, since it is the user who will be responsible to obtain root privileges.
-Add the user to sudo group so just to allow him to perform maintenance tasks that require root privileges.
+Choose a strong password, since this user will be responsible to obtain root privileges.
+Add the user to sudo group to allow him/her to perform maintenance tasks that require root privileges.
 ```bash
 sudo adduser user_name sudo
 ```
@@ -122,7 +147,7 @@ systemctl restart ssh
 ---
 
 ### Disable YunoHost API
-YunoHost administration is accessible through an **HTTP API**, served on the 6787 port by default. It can be used to administrate a lot of things on your server, thus to break many things between malicious hands. The best thing to do, if you know how to use the [command-line interface](/commandline), is to deactivate the `yunohost-api` service.
+YunoHost administration is accessible through an **HTTP API**, served on the 6787 port by default. It can be used to administrate a lot of things on your server, so malicious actors can also use it to damage your server. The best thing to do, if you know how to use the [command-line interface](/commandline), is to deactivate the `yunohost-api` service.
 
 ```bash
 sudo service yunohost-api stop

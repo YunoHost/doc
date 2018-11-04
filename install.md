@@ -1,6 +1,6 @@
 # Installation guide
 
-There are multiple ways to install YunoHost. The process may slightly differs whether it takes place at home or if you want to do it on a remote server, and regarding the hardware used: **[See the requirements](/hardware)**
+There are multiple ways to install YunoHost. The process may differ slightly depending on whether it takes place at home or on a remote server, and depending on the hardware used: **[See the requirements](/hardware)**
 
 This page lists a few installation guides.
 

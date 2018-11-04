@@ -6,7 +6,7 @@ L’étape appelée « **post-installation** » est en fait l’étape de conf
 ## Accès
 
 Vous pouvez accéder à la post-installation graphique en entrant dans un navigateur web :
-* l’adresse **IP locale de votre serveur** si celui-ci est connecté à votre réseau local (généralement `192.168.x.x`)
+* l’adresse **IP locale de votre serveur** si celui-ci est connecté à votre réseau local (généralement `192.168.x.x`, voir ['Trouver son IP' sur la page sur SSH](/ssh))
 * l’adresse **IP publique de votre serveur** si celui-ci n’est pas connecté à votre réseau local.
 
 <img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="/images/postinstall_web.png">
