@@ -4,7 +4,7 @@ The step called "**post-installation**" is actually the initial configuration of
 
 ## Access
 
-You can access it graphically by entering your **server's local IP** address in a **web browser** (e.g. `http://192.168.1.7`; you'll get this from the client table on your router's admin page).
+You can access it graphically by entering your **server's local IP** address in a **web browser** (e.g. `192.168.x.x`, see ['Find your IP' on the page about SSH](/ssh))
 
 <img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="/images/postinstall_web.png">
 
