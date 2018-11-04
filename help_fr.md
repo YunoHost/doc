@@ -10,9 +10,7 @@
 </ul>
 </div>
 
-<iframe
-src="https://kiwiirc.com/client/irc.freenode.org/?nick=foobar|?&theme=mini#yunohost"
-style="border:0; width:100%; height:450px;"></iframe>
+<iframe src="https://kiwiirc.com/client/irc.freenode.org:+6697/?nick=foobar|?&theme=mini#yunohost" style="border:0; width:100%; height:450px;"></iframe>
 
 </br>
 </br>
