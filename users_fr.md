@@ -4,7 +4,7 @@ Les utilisateurs et le SSO
 Utilisateurs
 -----
 
-Les utilisateurs sont les êtres humains qui ont accès aux applications et autres services sur votre serveur. L'administrateur peut ajouter et gérer des utilisateurs via l'administration web (dans la catégorie Utilisateurs) ou via la catégorie `yunohost user` de la ligne de commande. Après cela, les utilisateurs obtiennent une adresse e-mail personnelle (choisie par l'administrateur), un compte XMPP, et peuvent se connecter au portail utilisateur pour accéder aux applications pour lesquelles ils ont des permissions et configurer d'autres paramètres.
+Les utilisateurs sont les êtres humains qui ont accès aux applications et autres services sur votre serveur. L'administrateur peut ajouter et gérer des utilisateurs via l'administration web (dans la catégorie Utilisateurs) ou via la catégorie `yunohost user` de la ligne de commande. Après cela, les utilisateurs obtiennent une adresse e-mail personnelle (choisie par l'administrateur), un compte XMPP, et peuvent se connecter au portail utilisateur (SSO) pour accéder aux applications pour lesquelles ils ont des permissions et configurer d'autres paramètres.
 
 Le premier utilisateur créé reçoit aussi automatiquement les alias email `root@main.domain.tld` et `admin@main.domain.tld`, de sorte que le courrier envoyé à ces adresses se retrouvera dans la boîte aux lettres de cet utilisateur.
 
@@ -22,7 +22,7 @@ Le portail utilisateur, également appelé SSO pour 'Single Sign On', permet à 
 Dans le portail, les utilisateurs peuvent également cliquer sur l'avatar en haut à gauche pour configurer d'autres paramètres tels que leur identité, les alias de messagerie, les transferts automatiques de courrier ou changer leur mot de passe.
 
 <div class="alert alert-info" markdown="1">
-Vous devez être conscient que le SSO ne peut être atteint que par le nom de domaine (i.e. `https://the.domain.tld/yunohost/sso`), et non pas en utilisant l'IP du serveur (i.e. `https://11.22.33.44/yunohost/sso`), contrairement à l'administrateur web ! C'est un peu déroutant dans certaine situation, mais est nécessaire pour des raisons techniques. Si vous êtes dans une situation où vous avez besoin d'accéder au SSO sans avoir votre DNS correctement configuré pour une raison quelconque, vous pouvez envisager de modifier votre `/etc/hosts' comme décrit dans [cette page](dns_local_nework).
+Vous devez être conscient que le SSO ne peut être atteint que par le nom de domaine (i.e. `https://the.domain.tld/yunohost/sso`), et non pas en utilisant l'IP du serveur (i.e. `https://11.22.33.44/yunohost/sso`), contrairement à l'administrateur web ! C'est un peu déroutant dans certaines situations, mais est nécessaire pour des raisons techniques. Si vous êtes dans une situation où vous avez besoin d'accéder au SSO sans avoir votre DNS correctement configuré pour une raison quelconque, vous pouvez envisager de modifier votre `/etc/hosts' comme décrit dans [cette page](dns_local_nework).
 </div>
 
 Permissions d'accès aux applications
