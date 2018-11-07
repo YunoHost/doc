@@ -68,6 +68,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [HackMD CE](https://github.com/hackmdio/hackmd)
 - [Hackpad](https://github.com/dropbox/hackpad)
 - [Headphones](https://github.com/rembo10/headphones)
+- [Hexo](https://hexo.io/)
 - [Hi Buddy](https://github.com/tOkeshu/hibuddy) (/!\ last update: 17 Feb 2015)
 - [Huginn](https://github.com/cantino/huginn)
 - [Hugo](http://gohugo.io)
