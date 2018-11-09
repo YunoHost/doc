@@ -176,6 +176,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Xonotic](http://xonotic.org)
 - [YellowCMS](https://datenstrom.se/yellow)
 - [YesWiki](https://yeswiki.net)
+- [ZeroBin](https://github.com/sebsauvage/ZeroBin) or [PrivateBin](https://privatebin.info/)
 - [ZeroTier](https://github.com/zerotier/ZeroTierOne)
 - [ZNC](http://wiki.znc.in/ZNC)
 - [Zone-project](https://github.com/descl/ZONE)
