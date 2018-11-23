@@ -118,7 +118,7 @@ L'application KeeWeb est un gestionnaire de mots de passe incorporé à Nextclou
 Mais il arrive parfois que Nextcloud ne laisse pas l'application prendre en charge ces fichiers, ce qui rend alors impossible leur lecture de KeeWeb. Pour remédier à cela, 
 [une solution](https://github.com/jhass/nextcloud-keeweb/issues/34) existe.
 
-Ce rendre dans le répertoire de configuration de Nextcloud :
+Se rendre dans le répertoire de configuration de Nextcloud :
 
 ```bash
 cd /var/www/nextcloud/config/
