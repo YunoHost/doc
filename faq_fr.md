@@ -29,7 +29,7 @@ dans les faits, c’est une « simple » sur-couche à Debian, qui gère les
 manipulations pénibles à votre place.
 
 Par exemple, pour installer un Wordpress à la main, il vous faudrait taper
-toute une série de commande pour créer des utilisateurs, mettre en place un
+toute une série de commandes pour créer des utilisateurs, mettre en place un
 serveur web, mettre en place un serveur SQL, télécharger l’archive de Wordpress,
 la décompresser, configurer le serveur web, configurer la base de données SQL, et finalement configurer Wordpress. YunoHost gère toute cette partie technique et « tape les commandes à votre place », pour que vous puissiez vous concentrer sur ce qui compte vraiment.
 
@@ -54,27 +54,27 @@ Pour des raisons techniques, le [SSO](https://github.com/YunoHost/SSOwat/) ne pe
 
 #### Quel est le modèle économique de YunoHost ?
 
-À l’heure actuelle, YunoHost est maintenu uniquement par une équipe de bénévole
+À l’heure actuelle, YunoHost est maintenu uniquement par une équipe de bénévoles
 travaillant pendant leur temps libre. Il n’y a pas d’argent impliqué dans le
 projet (hormis quelques frais de serveurs et stickers :P).
 
-Étant donné que certains contributeurs sont très engagés dans ce projet, nous réfléchissons à un moyen de rendre pérenniser le projet.
+Étant donné que certains contributeurs sont très engagés dans ce projet, nous réfléchissons à un moyen de pérenniser le projet.
 
-Il est question de financement par dons ou subventions, certains contributeurs mènent par ailleurs des activités professionnelles liées à YunoHost, .
+Il est question de financement par dons ou subventions, certains contributeurs mènent par ailleurs des activités professionnelles liées à YunoHost.
 
 
 #### Puis-je faire un don au projet ?
 
-Oui, c'est possible ! YunoHost a besoin de payer des serveurs et noms de domaine, par ailleurs nous souhaiterions pouvoir permettre aux développeurs principaux de pouvoir continuer à développer YunoHost plutôt que de chercher des emplois ailleurs.
+Oui, c'est possible ! YunoHost a besoin de payer des serveurs et noms de domaine, par ailleurs nous souhaiterions pouvoir permettre aux développeurs principaux de continuer à développer YunoHost plutôt que de chercher un emploi ailleurs.
 
-Pour donner ça se passe via notre [Liberapay](https://liberapay.com/YunoHost)
+Pour faire un don ça se passe via notre [Liberapay](https://liberapay.com/YunoHost)
 
-Si vous le pouvez, vous pouvez aussi faire des contributions en nature (une partie de notre infrastructure viens d'association qui nous fournissent des serveurs).
+Si vous le pouvez, vous pouvez aussi faire des contributions en nature (une partie de notre infrastructure vient d'associations qui nous fournissent des serveurs).
 
 
 #### Comment puis-je contribuer au projet ?
 
-Il y existe [plusieurs façons de contribuer](contribute) :).
+Il existe [plusieurs façons de contribuer](contribute) :).
 
 N’hésitez pas à venir nous parler de vos idées!
 
@@ -100,7 +100,7 @@ Réponse courte : non. L’équipe n’a pas l’énergie et ce n’est pas pert
 <div id="willyouportyunohost" class="collapse">
 <p>Si vous vous préoccupez des guéguerres de distro, ou pensez que « Debian c’est sale », vous n’êtes pas le public de YunoHost.</p>
 
-<p>YunoHost vise un public de non-technophile ou de bidouilleurs qui veulent simplement que le serveur fonctionne sans devoir investir des semaines entières. Debian a probablement des défauts, mais c’est une (la ?) distribution la plus connue et utilisée pour gérer des serveurs. C’est une distribution stable. La plupart des services auto-hébergeables sont compatibles d’une manière ou d’une autre avec Debian. Elle est facilement bidouillable par quelqu’un qui a déjà utilisé la ligne de commande sur son ordinateur personnel. Il n’y a pas de « killer feature » particulière dans les autres distributions qui rendrait pertinent de porter YunoHost dessus.</p>
+<p>YunoHost vise un public de non-technophiles ou de bidouilleurs qui veulent simplement que le serveur fonctionne sans devoir investir des semaines entières. Debian a probablement des défauts, mais c’est une (la ?) distribution la plus connue et utilisée pour gérer des serveurs. C’est une distribution stable. La plupart des services auto-hébergeables sont compatibles d’une manière ou d’une autre avec Debian. Elle est facilement bidouillable par quelqu’un qui a déjà utilisé la ligne de commande sur son ordinateur personnel. Il n’y a pas de « killer feature » particulière dans les autres distributions qui rendrait pertinent de porter YunoHost dessus.</p>
 
 <p>Si cela ne vous convient pas, il existe d’autres projets sous d’autres distributions ou avec d’autres philosophies.</p>
 </div>
@@ -118,7 +118,7 @@ Réponse moyenne : Par le passé, les apps étaient gérées via des .deb. C’
 
 <p>Il se trouve que l’objectif des paquets d’application YunoHost est subtilement différent des paquets traditionnels (comme les .deb de Debian) qui remplissent le rôle d’installer des éléments bas-niveaux tels que des fichiers, commandes, programmes ou services sur le système. Il est à la charge de l’administrateur de les configurer ensuite proprement, simplement parce qu’il n’existe pas d’environnement standard. Typiquement, les applications web requièrent beaucoup de configuration car elles ont besoin de s’interfacer avec un serveur web et une base de données (et le système de connexion unique / SSO).</p>
 
-<p>YunoHost manipule des abstractions haut-niveau (apps, domaines, utilisateurs…) et défini un environnement standard (Nginx, Postfix, Metronome, SSOwat…) et, grâce à cela, peut gérer la configuration à la place de l’administrateur.</p>
+<p>YunoHost manipule des abstractions haut-niveau (apps, domaines, utilisateurs…) et définit un environnement standard (Nginx, Postfix, Metronome, SSOwat…) et, grâce à cela, peut gérer la configuration à la place de l’administrateur.</p>
 
 <p>Si vous restez persuadé que l’on peut néanmoins bricoler les paquets .deb pour gérer tout cela, voir les réponses précédentes.</p>
 </div>
