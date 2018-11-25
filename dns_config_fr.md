@@ -31,7 +31,7 @@ La configuration recommandée ressemble typiquement à :
 @ 3600 IN A 111.222.33.44
 * 3600 IN A 111.222.33.44
 
-# (Si votre serveur supporter l'IPv6, il a des enregistrements AAAA)
+# (Si votre serveur supporte l'IPv6, il a des enregistrements AAAA)
 @ 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
 * 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
 
