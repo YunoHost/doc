@@ -25,7 +25,7 @@ After upgrading to 2.7.14, go to Tools > Migrations to access the migrations int
 After upgrading to 2.7.14, run : 
 
 ```bash
-yunohost tools migrations migrate
+sudo yunohost tools migrations migrate
 ```
 
 then read carefully and accept the disclaimer.
