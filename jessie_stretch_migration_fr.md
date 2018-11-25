@@ -25,7 +25,7 @@ Après avoir mis à jour vers la version 2.7.14, allez dans Outils > Migrations 
 Après avoir mis à jour vers la version 2.7.14, lancez : 
 
 ```bash
-yunohost tools migrations migrate
+sudo yunohost tools migrations migrate
 ```
 
 puis lisez attentivement l'avertissement et les instructions.
