@@ -1,5 +1,11 @@
 # <div dir="rtl">التطبيقات</div>
 
+<span class="javascriptDisclaimer">
+This page requires Javascript enabled to display properly :s.
+<br/>
+<br/>
+</span>
+
 <div dir="rtl" class="input-group">
     <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search"></span></span>
     <input type="text" id="filter-app-cards" class="form-control"  placeholder="البحث عن تطبيقات ..." aria-describedby="basic-addon1"/>
