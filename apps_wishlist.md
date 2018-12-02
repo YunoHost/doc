@@ -117,6 +117,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [OpenBazaar](https://openbazaar.org)
 - [openHAB](https://www.openhab.org/) - Smart home platform.
 - [OpenJabNab](https://github.com/OpenJabNab/OpenJabNab) (/!\ last update: Apr 30, 2016)
+- [OX Open-Xchange](https://www.open-xchange.com) Linux groupware solution
 - [Paperless](https://github.com/danielquinn/paperless)
 - [Paperwork](http://paperwork.rocks)
 - [pdfy](https://github.com/joepie91/pdfy) (/!\ last update: Aug 5, 2014)
