@@ -2,17 +2,23 @@
 
 The step called "**post-installation**" is actually the initial configuration of YunoHost. It has to be done just after the installation of the system itself.
 
-## Access
+### From the web interface
 
-You can access it graphically by entering your **server's local IP** address in a **web browser** (e.g. `192.168.x.x`, see ['Find your IP' on the page about SSH](/ssh))
+You can perform the post-installation with the web interface by entering in your browser :
+* **the local IP address of your server** if it is on your local network (e.g. at home !). The address typically looks like `192.168.x.y` (see 'Find your IP' on [the page about SSH](/ssh))
+* **the public IP address of your server** if your server is not on your local network. Typically, if you own a VPS, your VPS provider should have gave you the IP of the server.
+
+During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). For now, you should add a security exception to accept the current certificate.
+
+You should then land on this page :
 
 <img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="/images/postinstall_web.png">
 
 <em><p class="text-muted">Preview of the Web post-installation</p></em>
 
-<br>
+### From the command line
 
-Or by running `yunohost tools postinstall` in command-line.
+You can also perform the postinstallation with the command `yunohost tools postinstall` directly on the server, or [via SSH](/ssh).
 
 <img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="/images/postinstall_cli.png">
 
@@ -20,7 +26,7 @@ Or by running `yunohost tools postinstall` in command-line.
 
 <br>
 
----
+## Informations asked
 
 ### Main domain
 
