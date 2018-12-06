@@ -14,7 +14,7 @@
 
 </br>
 </br>
-<em>Nota : questa stanza e disponibile via IRC (#yunohost su freenode - <a href="https://kiwiirc.com/client/irc.freenode.org/?nick=foobar|?&theme=mini#yunohost">usando kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, o Matrix <small>(#freenode_#yunohost:matrix.org - <a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">usando Riot</a>)</small></em>
+<em>Nota : questa stanza e disponibile via IRC (#yunohost su freenode - <a href="https://kiwiirc.com/client/irc.freenode.org:+6697/?nick=foobar|?&theme=mini#yunohost">usando kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, o Matrix <small>(#freenode_#yunohost:matrix.org - <a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">usando Riot</a>)</small></em>
 </center>
 
 <h3>... o chiedi nel forum !</h3>
