@@ -1,6 +1,6 @@
 # Certificate
 
-Certificates are used to certify that your server is the genuine one, and not an attacker trying to impersonate it.
+Certificates are used to guarantee the confidentiality and authenticity of the communication between a web browser and your server. In particular, they protect against attackers trying to impersonate your server.
 
 YunoHost provides a **self-signed** certificate, it means that your server guaranties the certificate validity. It's enough **for personal usage**, because you trust your own server. But this could be a problem if you want to open access to anonymous like web user for a website.
 
