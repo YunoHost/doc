@@ -32,7 +32,7 @@ Please don't do this. Reinstalling is a heavy operation and is not a good long-t
 
 ## Do backups
 
-If you host services and data that are important for your users, it is important that you setup a backup policy. Backups can be easily created from the webadmin - though they currently cannot be downloaded from it (but it can be downloaded through other means). You should perform backup regularly and keep them in a safe and different physical location from your server. More info on [the backup documentation](/backup)
+If you host services and data that are important for your users, it is important that you setup a backup policy. Backups can be easily created from the webadmin - though they currently cannot be downloaded from it (but it can be downloaded through other means). You should perform backup regularly and keep them in a safe and different physical location from your server. More info on [the backup documentation](/backup).
 
 ## Check root's email
 
