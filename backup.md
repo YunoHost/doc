@@ -90,7 +90,7 @@ Go in Backup > Local storage and select your archive. You can then select which 
 
 From the command line, you can run `yunohost backup restore <archivename>` (without the `.tar.gz`) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use for instance `yunohost backup restore --apps wordpress` which will restore only the wordpress app.
 
-#### Constrains
+#### Constraints
 
 To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app which is already installed ... which means that to restore an old version of an app, you must first uninstall it.
 
