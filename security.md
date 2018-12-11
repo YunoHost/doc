@@ -77,7 +77,7 @@ yunohost firewall reload
 yunohost firewall disallow TCP <your_old_ssh_port_number> # port by default 22
 ``` 
 
-You also need to give fail2ban the new SSH port.
+You also need to give `fail2ban` the new SSH port.
 
 To do that you need to create the configuration file `my_ssh_port.conf` with the command
 
