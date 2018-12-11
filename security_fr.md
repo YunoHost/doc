@@ -166,7 +166,8 @@ YunoHost est administrable via une **API HTTP**, servie sur le port 6787 par
 défaut (seulement sur `localhost`). Elle permet d’administrer une grande partie de votre serveur, et peut donc être utilisée à des **fins malveillantes**. La meilleure chose à faire si vous êtes habitués aux lignes de commande est de désactiver le service `yunohost-api`, et **utiliser la [ligne de commande](/commandline_fr)** en SSH.
 
 ```bash
-sudo service yunohost-api stop
+sudo systemctl disable yunohost-api
+sudo systemctl stop yunohost-api
 ```
 
 ### Tests d’intrusion de YunoHost
