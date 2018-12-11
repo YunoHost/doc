@@ -1,6 +1,6 @@
 # Security
 
-YunoHost has been developed to provide the best security without too much complication. Every protocol used in YunoHost are **encrypted**, only password's hash are stored and by default each user is able to access to his personal directory only.
+YunoHost has been developed to provide the best security without too much complication. Every protocol used in YunoHost are **encrypted**, only password's hashs are stored and by default each user is able to access to his personal directory only.
 
 Two things remain important to note:
 
@@ -61,7 +61,7 @@ nano /etc/ssh/sshd_config
 Port 22 # to replace by 9777 for example
 ```
 
-**Open the port** in firewall (you can use -6 option to limit forbid ipv4 connexion)
+**Open the port** in firewall (you can use `-6` option to deny ipv4 connection)
 ```bash
 yunohost firewall allow TCP 9777
 ``` 
@@ -102,7 +102,7 @@ Finally you have to restart fail2ban in order to apply the new configuration
 systemctl restart fail2ban.service
 ``` 
 
-**For the next SSH connections ** you need to add the `-p` option followed by the SSH port number.
+**For the next SSH connections **, you need to add the `-p` option followed by the SSH port number.
 
 **Sample**:
 
@@ -147,7 +147,8 @@ systemctl restart ssh
 ---
 
 ### Disable YunoHost API
-YunoHost administration is accessible through an **HTTP API**, served on the 6787 port by default. It can be used to administrate a lot of things on your server, so malicious actors can also use it to damage your server. The best thing to do, if you know how to use the [command-line interface](/commandline), is to deactivate the `yunohost-api` service.
+YunoHost administration is accessible through an **HTTP API**, served on the
+6787 port by default (only on `localhost`). It can be used to administrate a lot of things on your server, so malicious actors can also use it to damage your server. The best thing to do, if you know how to use the [command-line interface](/commandline), is to deactivate the `yunohost-api` service.
 
 ```bash
 sudo service yunohost-api stop
