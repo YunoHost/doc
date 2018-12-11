@@ -91,7 +91,7 @@ yunohost firewall reload
 yunohost firewall disallow TCP <votre numéro de port> # port par défaut 22
 ``` 
 
-Il convient également de donner à fail2ban le nouveau port SSH à bloquer en cas de bannissement d'une adresse IP.
+Il convient également de donner à `fail2ban` le nouveau port SSH à bloquer en cas de bannissement d'une adresse IP.
 
 Pour cela il suffit de créer le fichier de configuration `my_ssh_port.conf` avec
 
