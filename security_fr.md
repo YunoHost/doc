@@ -72,7 +72,7 @@ nano /etc/ssh/sshd_config
 Port 22 # à remplacer par exemple par 9777
 ```
 
-**Ouvrez le port** choisi dans le parefeu (vous pouvez utiliser l'option -6 pour interdire la connexion via ipv4)
+**Ouvrez le port** choisi dans le parefeu (vous pouvez utiliser l'option `-6` pour interdire la connexion via ipv4)
 
 ```bash
 yunohost firewall allow TCP <votre_numero_de_port_ssh>
@@ -115,7 +115,7 @@ Il reste enfin à relancer fail2ban pour prendre en compte la nouvelle configura
 systemctl restart fail2ban.service
 ``` 
 
-**Pour les prochaines connexions SSH** il faudra ajouter l’option -p suivie du numéro de port SSH.
+**Pour les prochaines connexions SSH**, il faudra ajouter l’option `-p` suivie du numéro de port SSH.
 
 **Exemple** :
 
@@ -162,7 +162,8 @@ systemctl restart ssh
 
 ### Désactivation de l’API YunoHost
 
-YunoHost est administrable via une **API HTTP**, servie sur le port 6787 par défaut. Elle permet d’administrer une grande partie de votre serveur, et peut donc être utilisée à des **fins malveillantes**. La meilleure chose à faire si vous êtes habitués aux lignes de commande est de désactiver le service `yunohost-api`, et **utiliser la [ligne de commande](/commandline_fr)** en SSH.
+YunoHost est administrable via une **API HTTP**, servie sur le port 6787 par
+défaut (seulement sur `localhost`). Elle permet d’administrer une grande partie de votre serveur, et peut donc être utilisée à des **fins malveillantes**. La meilleure chose à faire si vous êtes habitués aux lignes de commande est de désactiver le service `yunohost-api`, et **utiliser la [ligne de commande](/commandline_fr)** en SSH.
 
 ```bash
 sudo service yunohost-api stop
