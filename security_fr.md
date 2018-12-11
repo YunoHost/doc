@@ -109,10 +109,10 @@ port = <votre_numero_de_port_ssh>
 port = <votre_numero_de_port_ssh>
 ```
 
-Il reste enfin à relancer fail2ban pour prendre en compte la nouvelle configuration 
+Il reste enfin à relancer `fail2ban` pour prendre en compte la nouvelle configuration 
 
 ```bash
-systemctl restart fail2ban.service
+systemctl restart fail2ban
 ``` 
 
 **Pour les prochaines connexions SSH**, il faudra ajouter l’option `-p` suivie du numéro de port SSH.
