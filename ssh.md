@@ -80,4 +80,4 @@ yunohost user ssh list-keys <username>
 
 ## Security and SSH
 
-See the dedicated page [Security & SSH](security_en)
+See the dedicated page [Security & SSH](security_en).
