@@ -3,10 +3,10 @@
 Once you have **Debian 9** <small>(with **kernel >= 3.12**)</small> and access to a command line on your server (either directly or through SSH), you can install yunohost by running command as root :
 
 ```bash
-bash <(wget -q -O- https://install.yunohost.org/)
+curl https://install.yunohost.org | bash
 ```
 
-<small>*(If `wget` is not installed on your system, you might need to install it with `apt install wget`. Otherwise, if the command does not do anything, you might want to `apt install ca-certificates`)*</small>
+<small>*(If `curl` is not installed on your system, you might need to install it with `apt install curl`. Otherwise, if the command does not do anything, you might want to `apt install ca-certificates`)*</small>
 
 Once the installation is finished, you may want to [**proceed to post-installation**](/postinstall)
 
