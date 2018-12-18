@@ -3,10 +3,10 @@
 Une fois que vous avez accès à votre serveur (directement ou par SSH), vous pouvez installer YunoHost en executant cette commande en tant que root :
 
 ```bash
-bash <(wget -q -O- https://install.yunohost.org/)
+curl https://install.yunohost.org | bash
 ```
 
-<small>*(Si `wget` n'est pas installé sur votre système, il vous faudra peut-être l'installer avec `apt install wget`. Autrement, sinon la commande n'affiche rien du tout, vous pouvez tenter `apt install ca-certificates`)*</small>
+<small>*(Si `bash` n'est pas installé sur votre système, il vous faudra peut-être l'installer avec `apt install bash`. Autrement, sinon la commande n'affiche rien du tout, vous pouvez tenter `apt install ca-certificates`)*</small>
 
 Une fois l'installation terminée, il vous faudra [**procéder à la post-installation**](/postinstall)
 
