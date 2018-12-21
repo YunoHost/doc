@@ -2,6 +2,8 @@
 
 ## Talks / conf
 
+* (FR) [Capitole du libre 2018 - YunoHost: un des chemins vers la décentralisation - Bram](https://www.youtube.com/watch?v=OEXEStoOYpw) ([slides](https://psycojoker.github.io/yunohost-cdl-2018/))
+* (FR) [Journées du logiciel libre 2018 - YunoHost : vers l’auto-hébergement et au-delà - Bram](https://www.videos-libr.es/videos/watch/45b48b1e-1b10-4e09-b29a-a404bd42c5d0) ([slides](https://psycojoker.github.io/yunohost-jdll-2018/))
 * (FR) [Capitole du libre 2017 - YunoHost : vers l'auto-hébergement et au-delà - JimboJoe](https://2017.capitoledulibre.org/programme/#yunohost-vers-lauto-hebergement-et-au-dela) ([slides](https://github.com/YunoHost/yunohost-cdl-2017/raw/master/YunoHost-CDL2017.pdf))
 * (FR) [PSES 2017 – Construire l’Internet du Futur avec YunoHost – Aleks, ljf](https://data.passageenseine.org/2017/aleks-ljf_internet-futur-yunohost.webm) ([slides](https://data.passageenseine.org/2017/aleks-ljf_internet-futur-yunohost.pdf))
 * (FR) [Université de technologie de compiègne 2017 – Agir pour un internet éthique – LJF](http://webtv.utc.fr/watch_video.php?v=O34AA7RBR1AH)
