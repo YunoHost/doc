@@ -5,7 +5,7 @@ L'une des fonctionnalités principales de YunoHost est la possibilité d'install
 
 Les applications doivent être packagées manuellement par les packageurs/mainteneurs d'applications. Les applications peuvent être intégrées avec YunoHost pour gérer les mise à jour, la sauvegarde/restauration et l'intégration LDAP/SSO, entre autres.
 
-Les applications peuvent être installées et gérées via l'interface webadmin dansila partie 'Applications', ou via les commandes de la catégorie `yunohost app`.
+Les applications peuvent être installées et gérées via l'interface webadmin dans la partie 'Applications', ou via les commandes de la catégorie `yunohost app`.
 
 Listes d'applications
 -----------------
