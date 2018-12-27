@@ -63,7 +63,7 @@ After creating backup archives, it is possible to list and inspect them via the 
 
 There is currently no straightfoward way to download or upload a backup archive.
 
-One solution consists in using `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. Hence, from a machine running linux, you should be able to run the following to download a specific backup : 
+One solution consists in using `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. Hence, from a machine running Linux, you should be able to run the following to download a specific backup : 
 
 ```bash
 scp admin@your.domain.tld:/home/yunohost.backup/archives/<archivename>.tar.gz ./
