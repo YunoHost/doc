@@ -82,8 +82,7 @@ Restoring backups
 
 #### From the webadmin
 
-Go in Backup > Local storage and select your archive. You can then select
-which items you want to restore, then click on 'Restore'.
+Go in Backup > Local storage and select your archive. You can then select which items you want to restore, then click on 'Restore'.
 
 ![](/images/restore.png)
 
