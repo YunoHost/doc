@@ -17,9 +17,7 @@ Créer des sauvegardes
 
 #### Depuis la webadmin
 
-Vous pouvez facilement créer des archives depuis la webadmin en allant dans
-Sauvegardes > Archives locales et en cliquant sur "Nouvelle sauvegarde". Vous
-pourrez ensuite sélectionner les éléments à sauvegarder (configuration, données "système", applications).
+Vous pouvez facilement créer des archives depuis la webadmin en allant dans Sauvegardes > Archives locales et en cliquant sur "Nouvelle sauvegarde". Vous pourrez ensuite sélectionner les éléments à sauvegarder (configuration, données "système", applications).
 
 ![](/images/backup.png)
 
@@ -56,14 +54,7 @@ Pour plus d'informations et d'options sur la création d'archives, consultez `yu
 
 #### Configuration spécifique à certaines apps
 
-Certaines apps comme Nextcloud sont potentiellement rattachées à des quantités
-importantes de données, qui ne sont pas sauvegardées par défaut. Dans ce cas,
-on dit que l'app "sauvegarde uniquement le core" (de l'app). Néanmoins, il est
-possible d'activer la sauvegarde de toutes les données de cette application
-avec (dans le cas de Nextcloud) `yunohost app setting nextcloud
-backup_core_only -v 0`. Soyez prudent : en fonction des données stockées dans
-Nextcloud, il se peut que l'archive que vous obtenez ensuite devienne
-énorme...
+Certaines apps comme Nextcloud sont potentiellement rattachées à des quantités importantes de données, qui ne sont pas sauvegardées par défaut. Dans ce cas, on dit que l'app "sauvegarde uniquement le core" (de l'app). Néanmoins, il est possible d'activer la sauvegarde de toutes les données de cette application avec (dans le cas de Nextcloud) `yunohost app setting nextcloud backup_core_only -v 0`. Soyez prudent : en fonction des données stockées dans Nextcloud, il se peut que l'archive que vous obtenez ensuite devienne énorme...
 
 Télécharger et téléverser des sauvegardes
 -----------------------------------------
@@ -72,17 +63,13 @@ Après avoir créé des sauvegardes, il est possible de les lister et de les ins
 
 Il n'existe actuellement pas de solution "rapide et facile" pour télécharger ou téléverser une archive depuis une autre machine.
 
-Une solution consiste à utiliser `scp` (un programme basé sur [`ssh`](/ssh))
-pour copier des fichiers entre deux machines grâce à la ligne de
-commande. Ainsi, depuis une machine sous Linux, vous pouvez utiliser la
-commande suivante pour télécharger une archive :
+Une solution consiste à utiliser `scp` (un programme basé sur [`ssh`](/ssh)) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous Linux, vous pouvez utiliser la commande suivante pour télécharger une archive :
 
 ```bash
 scp admin@your.domain.tld:/home/yunohost.backup/archives/<nom_d'archive>.tar.gz ./
 ```
 
-De façon similaire, vous pouvez téléverser une sauvegarde depuis une machine
-vers votre serveur avec :
+De façon similaire, vous pouvez téléverser une sauvegarde depuis une machine vers votre serveur avec :
 
 ```bash
 scp /path/to/your/<nom_d'archive>.tar.gz admin@your.domain.tld:/home/yunohost.backup/archives/
@@ -134,16 +121,12 @@ ln -s $PATH_TO_DRIVE/yunohost_backup_archives /home/yunohost.backup/archives
 
 #### Sauvegardes automatiques
 
-Vous pouvez ajouter une tâche cron pour déclencher automatiquement une
-sauvegarde régulièrement. Par exemple pour sauvegarder l'application wordpress
-toutes les semaines, créez un fichier `/etc/cron.weekly/backup-wordpress` avec
-le contenu suivant : 
+Vous pouvez ajouter une tâche cron pour déclencher automatiquement une sauvegarde régulièrement. Par exemple pour sauvegarder l'application wordpress toutes les semaines, créez un fichier `/etc/cron.weekly/backup-wordpress` avec le contenu suivant :
 
 ```bash
 #!/bin/bash
 yunohost backup create --apps wordpress
 ```
-
 puis rendez-le exécutable :
 
 ```bash
@@ -154,17 +137,13 @@ Soyez prudent à propos de ce que vous sauvegardez et de la fréquence : il vaut
 
 #### Sauvegarder sur un serveur distant
 
-Vous pouvez suivre ce tutoriel sur le forum pour mettre en place Borg entre
-deux serveurs : https://forum.yunohost.org/t/how-to-backup-your-yunohost-server-on-another-server/3153
+Vous pouvez suivre ce tutoriel sur le forum pour mettre en place Borg entre deux serveurs : https://forum.yunohost.org/t/how-to-backup-your-yunohost-server-on-another-server/3153
 
 Il existe aussi l'application Archivist qui permet un système similaire : https://forum.yunohost.org/t/new-app-archivist/3747
 
 #### Backup complet avec `dd`
 
-Si vous êtes sur une carte ARM, une autre méthode pour créer une sauvegarde
-complète consiste à créer une image (copie) de la carte SD. Pour cela,
-éteignez votre serveur, insérez la carte SD dans votre ordinateur et créez une
-image avec une commande comme :
+Si vous êtes sur une carte ARM, une autre méthode pour créer une sauvegarde complète consiste à créer une image (copie) de la carte SD. Pour cela, éteignez votre serveur, insérez la carte SD dans votre ordinateur et créez une image avec une commande comme :
 
 ```bash
 dd if=/dev/mmcblk0 of=./backup.img
