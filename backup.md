@@ -102,6 +102,9 @@ One specific feature is the ability to restore a full archive *instead* of the p
 yunohost backup restore <archivename>
 ```
 
+Note: Don't start the postinstall step. Decline invite when doing installation
+via `bash`/`wget`.
+
 To go futher
 ------------
 
