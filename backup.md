@@ -61,7 +61,7 @@ Downloading and uploading backups
 
 After creating backup archives, it is possible to list and inspect them via the corresponding views in the webadmin, or via `yunohost backup list` and `yunohost backup info <archivename>` from the command line. By default, backups are stored in `/home/yunohost.backup/archives/`.
 
-There is currently no straightfoward way to dowload or upload a backup archive.
+There is currently no straightfoward way to download or upload a backup archive.
 
 One solution consists in using `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. Hence, from a machine running linux, you should be able to run the following to download a specific backup : 
 
