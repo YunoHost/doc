@@ -5,7 +5,7 @@ L'interface en ligne de commande (CLI) est, en informatique, la manière origina
 Dans le contexte de YunoHost, ou de l'administration système en général, la ligne de commande est communément utilisée après s'être [connecté en SSH](/ssh).
 
 <div class="alert alert-info" markdown="1">
-Fournir un tutorial complet sur la ligne de commande est bien au dela du cadre de la documentation de YunoHost : pour cela, référez-vous à des tutoriaux comme [celui-ci](https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande) ou [celui-ci (en)](http://linuxcommand.org/). Mais soyez rassurer qu'il n'y a pas besoin d'être un expert pour commencer à l'utiliser !
+Fournir un tutorial complet sur la ligne de commande est bien au dela du cadre de la documentation de YunoHost : pour cela, référez-vous à des tutoriaux comme [celui-ci](https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande) ou [celui-ci (en)](http://linuxcommand.org/). Mais soyez rassuré qu'il n'y a pas besoin d'être un expert pour commencer à l'utiliser !
 </div>
 
 La commande `yunohost` peut être utilisée pour administrer votre serveur ou réaliser les mêmes actions que celles disponibles sur la webadmin. Elle doit être lancée en depuis l'utilisateur `root`, ou bien depuis l'utilisateur `admin` en précédant la commande de `sudo`. (ProTip™ : il est possible de devenir `root` via la commande `sudo su` en tant qu'`admin`.)
