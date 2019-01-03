@@ -1,5 +1,5 @@
 # Install Collabora with Nextcloud, using Docker
-**Note :** This walkthrough is based on a Debian 8 instance, and has not been tested since version 3 upgrade of Yunohost. As a prerequisite, you must have configured your domains and sub-domains in the DNS, in compliance with : [DNS](/dns_en), [Sub-domain install of an app](/dns_subdomains_en), [DNS settings](/dns_config_en) and [noho.st / nohost.me / ynh.fr domains](/dns_nohost_me_en)).
+**Note :** This walkthrough is based on a Debian 8 instance, and has not been tested since version 3 upgrade of Yunohost. As a prerequisite, you must have configured your domains and sub-domains in the DNS, in compliance with : [DNS](/dns_en), [Sub-domain install of an app](/dns_subdomains_en), [DNS settings](/dns_config_en) and [noho.st / nohost.me / ynh.fr domains](/dns_nohost_me)).
 
 ### 0. Install Nextcloud
 
