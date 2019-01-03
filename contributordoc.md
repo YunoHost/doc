@@ -29,4 +29,4 @@
        * [x86 ISO](https://github.com/YunoHost/cd_build)
        * [Raspberry Pi images](https://github.com/YunoHost/rpi-image)
        * [Other ARM board images](https://github.com/YunoHost/arm-images)
-* [Using the YunoHost API outside of the webadmin](/admin_api_fr)
+* [Using the YunoHost API outside of the webadmin](/admin_api)
