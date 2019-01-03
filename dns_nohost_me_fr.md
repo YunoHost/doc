@@ -1,35 +1,17 @@
 # Noms de domaines nohost.me
 
-### Présentation
+Afin de rendre l'auto-hébergement le plus accessible possible, YunoHost propose un service de noms de domaine *gratuits* et *automatiquement configurés*. En utilisant ce service, vous n'avez donc pas à réaliser vous-même la [configuration des enregistrements DNS](/dns_config) qui est assez technique.
 
-Afin de rendre l'auto-hébergement le plus accessible possible, YunoHost offre un service de DNS dynamique par l'intermédiaire des noms de domaine `nohost.me` et `noho.st`. Si vous n'avez pas de nom de domaine, vous pouvez donc obtenir un sous-domaine de type `mondomaine.nohost.me` ou `mondomaine.noho.st`. Pour profiter de ce service, choisissez un domaine se terminant en `.nohost.me` ou `.noho.st`, il sera automatiquement rattaché à votre serveur YunoHost, et vous n’aurez pas d’étape de configuration supplémentaire.
+Les (sous-)domaines suivants sont proposés :
+- `cequevousvoulez.nohost.me` ;
+- `cequevousvoulez.noho.st` ;
+- `cequevousvoulez.ynh.fr`.
 
-
-### Obtenir un domaine
-
-##### Depuis l'interface d'administration
-Vous pouvez obtenir un domaine directement depuis l'interface d'administration de YunoHost, en vous rendant dans le menu "Domaines" et en cliquant sur le bouton "Ajouter un domaine" :
-
-<img src="/images/dns_nohost_me.png" height=150 style="vertical-align:bottom">
-
-##### En ligne de commande
-Après vous être connecté à votre serveur YunoHost, entrez la commande (en remplaçant `mondomaine` par le domaine que vous souhaitez acquérir) :
-
-```bash
-sudo yunohost domain add mondomaine.nohost.me
-```
-
-Vous pouvez ensuite vérifier la création du domaine avec la commande :
-
-```bash
-sudo yunohost domain list
-```
-
+Pour profiter de ce service, il vous suffit de choisir un tel domaine lors de la post-installation. Il sera ensuite automatiquement configuré par YunoHost !
 
 ### Récupérer un domaine nohost.me ou noho.st
 
-Il peut arriver qu'une mise à jour des DNS du domaine soit nécessaire (par exemple lors d'un changement de machine), pour cela vous pouvez poster votre demande de réinitialisation sur le forum, [un fil est dédié à ce sujet](https://forum.yunohost.org/t/nohost-domain-recovery/442).
-
+Si vous réinstallez votre serveur et voulez utiliser un domaine déjà utilisé précédemment, il vous faut demander une réinitialisation du domaine sur le forum [dans le fil de discussion dédié](https://forum.yunohost.org/t/nohost-domain-recovery/442).
 
 ### Sous-domaines
 
@@ -38,3 +20,26 @@ Le service de domaines `nohost.me` et `noho.st` n'autorise pas la création de s
 Même si YunoHost permet l'installation d'applications sur des sous-domaines (par exemple avoir l'application Owncloud accessible depuis l'adresse `cloud.mondomaine.org`), cette fonctionnalité n'est pas permise avec les domaines `nohost.me` et `noho.st` et il n’est pas possible d’avoir un sous-sous-domaine tel `monapplication.mondomaine.nohost.me`.
 
 Pour pouvoir profiter des applications installables uniquement à la racine d’un nom de domaine, il faut avoir son propre nom de domaine.
+
+### Ajouter un domaine nohost.me / noho.st / ynh.fr après la post-installation
+
+Si vous avez déjà effectué la postinstallation est souhaitez ajouter un domaine
+de type nohost.me, vous pouvez utiliser les commandes suivantes (uniquement
+faisable depuis la ligne de commande pour le moment).
+
+N.B. : vous ne pouvez avoir qu'*un* seul domaine nohost.me par installation de
+YunoHost.
+
+```bash
+# Ajouter le domaine
+yunohost domain add cequevousvoulez.nohost.me
+
+# Enregister le domaine dans le service dyndns
+yunohost dyndns subscribe -d cequevousvoulez.nohost.me
+
+# [ attendre ~ 30 seconds ]
+
+# Mettre à jour la configuration DNS
+yunohost dyndns update
+```
+

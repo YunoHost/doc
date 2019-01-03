@@ -3,7 +3,7 @@ Domains, DNS conf and certificate
 
 YunoHost allows you to manage and serve several domains on the same server. For instance, you can host a blog and Nextcloud on a first domain `yolo.com`, and a web mail client on a second domain `swag.nohost.me`. Each domain is automatically configured to handle web services, mail services and XMPP services.
 
-Domains can be managed in the 'Domain' section of the webadmin, or through the `yunohost domain` category of the command line. Each time you add a domain, it is expected that you bought it (or own it) on a domain registrar, so you can manage the [DNS configuration](dns). The exception is the domains `.nohost.me`, `.noho.st` and `ynh.fr` which are free and can be directly integrated with YunoHost.
+Domains can be managed in the 'Domain' section of the webadmin, or through the `yunohost domain` category of the command line. Each time you add a domain, it is expected that you bought it (or own it) on a domain registrar, so you can manage the [DNS configuration](dns). The exception is the [domains `.nohost.me`, `.noho.st` and `ynh.fr`](/dns_nohost_me) which are free and can be directly integrated with YunoHost.
 
 The domain chosen during the postinstall is defined as the main domain of the server : this is where the SSO and the web admin interface will be available. The main domain can later be changed through the web admin in Domains > (the domain) > Set default, or with the command line `yunohost tools maindomain`.
 
