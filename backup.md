@@ -54,22 +54,22 @@ For more informations and options about backup creation, consult `yunohost backu
 
 #### Apps-specific configuration
 
-Some apps such as nextcloud may be related to a large quantity of data which are not backuped by default. This practice is referred to "backing up only the core" (of the app). However it's possible to enable the backup of all data of this app with `yunohost app setting nextcloud backup_core_only -v 0`. Be careful though that your archive might get huge if there's too much data to be backuped...
+Some apps such as Nextcloud may be related to a large quantity of data which are not backuped by default. This practice is referred to "backing up only the core" (of the app). However it's possible to enable the backup of all data of this app with `yunohost app setting nextcloud backup_core_only -v 0`. Be careful though that your archive might get huge if there's too much data to be backuped...
 
 Downloading and uploading backups
 ---------------------------------
 
 After creating backup archives, it is possible to list and inspect them via the corresponding views in the webadmin, or via `yunohost backup list` and `yunohost backup info <archivename>` from the command line. By default, backups are stored in `/home/yunohost.backup/archives/`.
 
-There is currently no straightfoward way to dowload or upload a backup archive.
+There is currently no straightfoward way to download or upload a backup archive.
 
-One solution consists in using `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. Hence, from a machine running linux, you should be able to run the following to download a specific backup : 
+One solution consists in using `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. Hence, from a machine running Linux, you should be able to run the following to download a specific backup: 
 
 ```bash
 scp admin@your.domain.tld:/home/yunohost.backup/archives/<archivename>.tar.gz ./
 ```
 
-Similarly, you can upload a backup from a machine to your server with
+Similarly, you can upload a backup from a machine to your server with:
 
 ```bash
 scp /path/to/your/<archivename>.tar.gz admin@your.domain.tld:/home/yunohost.backup/archives/
@@ -82,7 +82,7 @@ Restoring backups
 
 #### From the webadmin
 
-Go in Backup > Local storage and select your archive. You can then select which items you want to restore, then click 'Restore'.
+Go in Backup > Local storage and select your archive. You can then select which items you want to restore, then click on 'Restore'.
 
 ![](/images/restore.png)
 
@@ -96,11 +96,14 @@ To restore an app, the domain on which it was installed should already be config
 
 #### Restoring during the postinstall
 
-One specific feature is the ability to restore a full archive *instead* of the postinstall step. This makes it useful when you want to reinstall a system entirely from an existing backup. To be able to do this, you will need to upload the archive on the server and place it in `/home/yunohost.backup/archives` though. Then, instead of `yunohost tools poinstall` you can run : 
+One specific feature is the ability to restore a full archive *instead* of the postinstall step. This makes it useful when you want to reinstall a system entirely from an existing backup. To be able to do this, you will need to upload the archive on the server and place it in `/home/yunohost.backup/archives`. Then, instead of `yunohost tools postinstall` you can run: 
 
 ```bash
 yunohost backup restore <archivename>
 ```
+
+Note: Don't start the postinstall step. Decline invite when doing installation
+via `bash`/`wget`.
 
 To go futher
 ------------
