@@ -79,4 +79,4 @@ yunohost user ssh list-keys <username>
 
 ## SSH et sécurité
 
-Voir la page dédiée à la [sécurité](security_fr)
+Voir la page dédiée à la [sécurité](security_fr).
