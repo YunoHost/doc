@@ -26,13 +26,17 @@ ssh root@111.222.333.444
 
 Un mot de passe sera demandé. Si c'est un VPS, votre fournisseur devrait également vous avoir communiqué un mot de passe. Si vous avez utilisé une image pré-installée (pour x86 ou cartes ARM), le password devrait être `yunohost`.
 
+<div class="alert alert-warning">
+Depuis YunoHost 3.4, après avoir effectué la postinstallation, il ne sera plus possible de se logguer avec l'utilisateur `root`. À la place, il vous faut **vous logguer avec l'utilisateur `admin` !**. Dans l'éventualité où le serveur LDAP serait cassé, rendant l'utilisateur `admin` inutilisable, vous devriez cependant pouvoir vous logguer avec l'utilisateur `root` depuis le réseau local.
+</div>
+
 #### Changer le mot de passe root !
 
-Après vous être loggé pour la première fois, il vous faut changer le mot de passe root. Le serveur vous demandera peut-être automatiquement de le faire. Si ce n'est pas le cas, il faut utiliser la commande `passwd`. Il est important de choisir un mot de passe raisonnablement compliqué.
+Après vous être loggé pour la première fois, il vous faut changer le mot de passe root. Le serveur vous demandera peut-être automatiquement de le faire. Si ce n'est pas le cas, il faut utiliser la commande `passwd`. Il est important de choisir un mot de passe raisonnablement compliqué. Notez que ce mot de passe sera écrasé ensuite par le mot de passe admin choisi lors de la postinstallation.
 
 ## Sur une instance déjà installée
 
-Si vous avez installé votre serveur à la maison et que vous cherchez à vous connecter depuis l'extérieur du réseau local, assurez-vous d'avoir bien redirigé le port 22 vers votre serveur.
+Si vous avez installé votre serveur à la maison et que vous cherchez à vous connecter depuis l'extérieur du réseau local, assurez-vous d'avoir bien redirigé le port 22 vers votre serveur. (Rappel : depuis la version 3.4, il vous faut vous logguer avec l'utilisateur `admin` !)
 
 Si vous connaissez seulement l'IP de votre serveur :
 
@@ -56,7 +60,7 @@ ssh -p 2244 admin@votre.domaine.tld
 
 ## Quels utilisateurs ?
 
-Par défaut, seulement les utilisateurs admin et root peuvent se logger en SSH sur une instance Yunohost.
+Par défaut, seulement l'utilisateur `admin` peut se logger en SSH sur une instance Yunohost.
 
 Les utilisateurs YunoHost créés via l'interface d'administration sont géré par la base de donnée LDAP. Par défaut, ils ne peuvent pas se connecter en SSH pour des raisons de sécurité. Si vous avez absolument besoin qu'un utilisateur dispose d'un accès SSH, vous pouvez utiliser la commande :
 ```bash
@@ -74,8 +78,6 @@ yunohost user ssh add-key <username> <key>
 yunohost user ssh remove-key <username> <key>
 yunohost user ssh list-keys <username>
 ```
-
-
 
 ## SSH et sécurité
 
