@@ -26,15 +26,19 @@ ssh root@111.222.333.444
 
 A password will be asked. If this is a VPS, your VPS provided should have communicated you the password. If you used a pre-installed image (for x86 computer or ARM board), the password should be `yunohost`.
 
+<div class="alert alert-warning">
+Since YunoHost 3.4, after running the postinstallation, you won't be able to login as `root` anymore. Instead, **you should login using the `admin` user !** In the event that the LDAP server is broken and the `admin` user is unusable, you may still however still be able to login using `root` from the local network.
+</div>
+
 #### Change the password!
 
-After logging in for the first time, you should change the root password. The server might automatically ask you to do so. If not, use the command `passwd`. It is important to choose a reasonably strong password.
+After logging in for the first time, you should change the root password. The server might automatically ask you to do so. If not, use the command `passwd`. It is important to choose a reasonably strong password. Note that the root password will be overriden by the admin password when you perform the postinstallation.
 
 ## After installing YunoHost
 
-If you installed your server at home and are attempting to connect from outside your local network, make sure port 22 is correctly forwarded to your server.
+If you installed your server at home and are attempting to connect from outside your local network, make sure port 22 is correctly forwarded to your server. (Reminder : since YunoHost 3.4 you should connect using the `admin` user !)
 
-If you only know the IP of your server :
+If you only know the IP address of your server :
 
 ```bash
 ssh admin@111.222.333.444
@@ -56,7 +60,7 @@ ssh -p 2244 admin@your.domain.tld
 
 ## Which users?
 
-By default, only the admin and root users can log in to YunoHost ssh server.
+By default, only the `admin` user can log in to YunoHost ssh server.
 
 YunoHost's users created via the administration interface are managed by the LDAP directory. By default, they can't connect via SSH for security reasons. If you want some users to have SSH access enabled, use the command:
 
