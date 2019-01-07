@@ -26,7 +26,7 @@ curl -k -i -H "Accept: application/json" \
 
 Pour simplifier l’administration à distance d’une instance YunoHost dans le cadre d’un projet CHATONS/Librehosters, des classes API ont été développées par des utilisateurs.
 
-Par exemple, cette classe PHP (FIXME: où la trouver...?) vous permettra d’administrer votre instance YunoHost depuis une application PHP (site web, outil de gestion de capacité…).
+Par exemple, cette [classe PHP](https://github.com/scith/yunohost-api-php) vous permettra d’administrer votre instance YunoHost depuis une application PHP (site web, outil de gestion de capacité…).
 
 Voici un exemple de code PHP permettant d’ajouter un utilisateur dans votre instance YunoHost :
 
