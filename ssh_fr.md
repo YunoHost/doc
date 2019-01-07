@@ -14,7 +14,7 @@ Si vous installez un serveur à la maison (par ex. sur Raspberry Pi ou OLinuXino
 
 - ouvrez un terminal et tapez `sudo arp-scan --local` pour lister les IP des machines sur le réseau local ;
 - utilisez l'interface de votre box internet pour lister les machines connectées, ou regarder les logs ;
-- branchez un écran sur votre serveur, loggez-vous et tapez `ifconfig`.
+- branchez un écran sur votre serveur, loggez-vous et tapez `hostname --all-ip-address`.
 
 #### Se connecter
 
