@@ -2,7 +2,7 @@
 
 ## Qu’est-ce que SSH ?
 
-**SSH** est un accronyme pour Secure Shell, et désigne un protocole qui permet de contrôler à distance une machine via la ligne de commande (CLI). C'est aussi une commande disponible de base sur Linux et Mac OS / OSX. Sous Windows, malheureusement il vous faudra utiliser le logiciel [PuTTy](http://www.fastcomet.com/tutorials/getting-started/putty).
+**SSH** est un accronyme pour Secure Shell, et désigne un protocole qui permet de contrôler à distance une machine via la ligne de commande (CLI). C'est aussi une commande disponible de base dans les terminaux de Linux et Mac OS / OSX. Sous Windows, il vous faudra utiliser le logiciel [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (après l'avoir lancer, cliquer sur Session puis SSH).
 
 ## Pendant l’installation de YunoHost
 

@@ -2,7 +2,7 @@
 
 ## What's SSH?
 
-**SSH** stands for Secure Shell, and refers to a protocol that allows to remotly control a machine using the command line interface (CLI). It is available by default on Linux and Mac OS / OSX. On Windows, unfortunately you might need to use the [PuTTy](http://www.fastcomet.com/tutorials/getting-started/putty) software.
+**SSH** stands for Secure Shell, and refers to a protocol that allows to remotly control a machine using the command line interface (CLI). It is available by default in any terminal on Linux and Mac OS / OSX. On Windows, you may want to use [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (after launching it, click on Session then SSH).
 
 ## During YunoHost installation
 
