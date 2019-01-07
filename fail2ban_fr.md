@@ -1,57 +1,32 @@
 # Fail2ban
 
-Pour diverses raisons, il peut arriver qu’une adresse IP ait été blacklistée. Si vous souhaitez accéder à votre serveur depuis cette IP, il faudra la débloquer.
+Fail2Ban est un logiciel de prévention des intrusions qui protège les serveurs informatiques contre les attaques de brute-force. Il surveille certains journaux et bannira les adresses IP qui montrent un comportement de brute-forcing.
 
-## Débloquer une IP
+En particulier, Fail2ban surveille les tentatives de connexion SSH. Après 5 tentatives de connexion échouées sur SSH, Fail2ban banniera l'IP de se connecter via SSH pendant 10 minutes. Si cette adresse récidive plusieurs fois, elle peut être bannie pendant une semaine.
 
-Tout d’abord on affiche le listing de toutes les règles iptables avec la commande `iptables -L --line-numbers` :
+## Débannir une IP
 
-```bash
-root@beudi:~# iptables -L --line-numbers
-Chain INPUT (policy ACCEPT)
-num  target     prot opt source               destination         
-1    fail2ban-yunohost  tcp  --  anywhere             anywhere             multiport dports http,https
-2    fail2ban-nginx  tcp  --  anywhere             anywhere             multiport dports http,https
-3    fail2ban-dovecot  tcp  --  anywhere             anywhere             multiport dports smtp,ssmtp,imap2,imap3,imaps,pop3,pop3s
-4    fail2ban-sasl  tcp  --  anywhere             anywhere             multiport dports smtp,ssmtp,imap2,imap3,imaps,pop3,pop3s
-5    fail2ban-ssh  tcp  --  anywhere             anywhere             multiport dports ssh
+Pour débloquer une IP de fail2ban, vous devez d'abord accéder à votre serveur par un moyen quelconque (par exemple à partir d'une autre IP que celle bannie).
 
-Chain FORWARD (policy ACCEPT)
-num  target     prot opt source               destination         
-
-Chain OUTPUT (policy ACCEPT)
-num  target     prot opt source               destination         
-
-Chain fail2ban-dovecot (1 references)
-num  target     prot opt source               destination         
-1    RETURN     all  --  anywhere             anywhere            
-
-Chain fail2ban-nginx (1 references)
-num  target     prot opt source               destination         
-1    RETURN     all  --  anywhere             anywhere            
-
-Chain fail2ban-sasl (1 references)
-num  target     prot opt source               destination         
-1    RETURN     all  --  anywhere             anywhere            
-
-Chain fail2ban-ssh (1 references)
-num  target     prot opt source               destination         
-1    RETURN     all  --  anywhere             anywhere            
-
-Chain fail2ban-yunohost (1 references)
-num  target     prot opt source               destination         
-1    DROP       all  --  80.215.197.201       anywhere            
-2    RETURN     all  --  anywhere             anywhere 
-```
-
-Il nous indique que l’IP `80.215.197.201` est bannie dans la règle `fail2ban-yunohost`.    
-Pour la débloquer :
+Ensuite, regardez le journal de fail2ban pour identifier dans quelle 'prison' (jail) l'IP a été bannie : 
 
 ```bash
-iptables -D nom_de_la_regle numéro_de_l_entrée
+$ tail /var/log/fail2ban.log
+2019-01-07 16:24:47 fail2ban.filter  [1837]: INFO    [sshd] Found 11.22.33.44
+2019-01-07 16:24:49 fail2ban.filter  [1837]: INFO    [sshd] Found 11.22.33.44
+2019-01-07 16:24:51 fail2ban.filter  [1837]: INFO    [sshd] Found 11.22.33.44
+2019-01-07 16:24:54 fail2ban.filter  [1837]: INFO    [sshd] Found 11.22.33.44
+2019-01-07 16:24:57 fail2ban.filter  [1837]: INFO    [sshd] Found 11.22.33.44
+2019-01-07 16:24:57 fail2ban.actions [1837]: NOTICE  [sshd] Ban 11.22.33.44
+2019-01-07 16:24:57 fail2ban.filter  [1837]: NOTICE  [recidive] Ban 11.22.33.44
 ```
 
-Par exemple :
+Ici, l'IP `11.22.33.44` a été bannie dans les jails `sshd` et `recidive`.
+
+Puis débanissez l'IP avec les commandes suivantes :
+
 ```bash
-iptables -D fail2ban-yunohost 1
+$ fail2ban-client set sshd unbanip 11.22.33.44
+$ fail2ban-client set recidive unbanip 11.22.33.44
 ```
+
