@@ -58,6 +58,10 @@ Si vous avez changé le port SSH, il faut rajouter `-p <numerodeport>` à la com
 ssh -p 2244 admin@votre.domaine.tld
 ```
 
+<div class="alert alert-info">
+Si vous êtes connecté en tant qu'`admin` et souhaité devenir `root` pour plus de confort (par exemple, ne pas avoir à taper `sudo` à chaque commande), vous pouvez devenir `root` en tapant `sudo su`.
+</div>
+
 ## Quels utilisateurs ?
 
 Par défaut, seulement l'utilisateur `admin` peut se logger en SSH sur une instance Yunohost.
