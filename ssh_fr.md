@@ -85,4 +85,6 @@ yunohost user ssh list-keys <username>
 
 ## SSH et sécurité
 
-Voir la page dédiée à la [sécurité](security_fr).
+N.B. : `fail2ban` banniera votre IP pour 10 minutes si vous échouez plus de 5 fois à vous identifier. Pour débannir une IP, vous pouvez regarder la page sur [fail2ban](/fail2ban_fr)
+
+Une discussion plus complète de la sécurité et de SSH peut être trouvée sur [la page dédiée](security_fr).
