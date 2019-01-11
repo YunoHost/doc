@@ -1,57 +1,32 @@
 # Fail2ban
 
-For a number of reasons, an IP adresse may be wrongly blacklisted. If you wish to access your server through this specify IP you will need to unblock it.
+Fail2Ban is an intrusion prevention software that protects computer servers from brute-force attacks. It monitors some log files and will ban IP addresses that shows brute-force-like behavior.
 
-## IP unblock
+In particular, Fail2ban monitors SSH connection attempts. After 5 failed login attempts on SSH, Fail2ban will ban the corresponding IP address from connecting through SSH for 10 minutes. If this IP is found to recidive several times, it might get ban for a week.
 
-First, list all iptables rules with: `iptables -L --line-numbers` :
+## Unban an IP
 
-```bash
-root@beudi:~# iptables -L --line-numbers
-Chain INPUT (policy ACCEPT)
-num  target     prot opt source               destination         
-1    fail2ban-yunohost  tcp  --  anywhere             anywhere             multiport dports http,https
-2    fail2ban-nginx  tcp  --  anywhere             anywhere             multiport dports http,https
-3    fail2ban-dovecot  tcp  --  anywhere             anywhere             multiport dports smtp,ssmtp,imap2,imap3,imaps,pop3,pop3s
-4    fail2ban-sasl  tcp  --  anywhere             anywhere             multiport dports smtp,ssmtp,imap2,imap3,imaps,pop3,pop3s
-5    fail2ban-ssh  tcp  --  anywhere             anywhere             multiport dports ssh
+To unban an IP from fail2ban, you first need to access your server by some mean (e.g. from another IP by the one being banned).
 
-Chain FORWARD (policy ACCEPT)
-num  target     prot opt source               destination         
-
-Chain OUTPUT (policy ACCEPT)
-num  target     prot opt source               destination         
-
-Chain fail2ban-dovecot (1 references)
-num  target     prot opt source               destination         
-1    RETURN     all  --  anywhere             anywhere            
-
-Chain fail2ban-nginx (1 references)
-num  target     prot opt source               destination         
-1    RETURN     all  --  anywhere             anywhere            
-
-Chain fail2ban-sasl (1 references)
-num  target     prot opt source               destination         
-1    RETURN     all  --  anywhere             anywhere            
-
-Chain fail2ban-ssh (1 references)
-num  target     prot opt source               destination         
-1    RETURN     all  --  anywhere             anywhere            
-
-Chain fail2ban-yunohost (1 references)
-num  target     prot opt source               destination         
-1    DROP       all  --  80.215.197.201       anywhere            
-2    RETURN     all  --  anywhere             anywhere 
-```
-
-Here, Ip adress `80.215.197.201` is banned in the `fail2ban-yunohost` rule.
-To unblock:
+Then look at fail2ban's log to identify in which jail the IP was put : 
 
 ```bash
-iptables -D rule_name entry_number
+$ tail /var/log/fail2ban.log
+2019-01-07 16:24:47 fail2ban.filter  [1837]: INFO    [sshd] Found 11.22.33.44
+2019-01-07 16:24:49 fail2ban.filter  [1837]: INFO    [sshd] Found 11.22.33.44
+2019-01-07 16:24:51 fail2ban.filter  [1837]: INFO    [sshd] Found 11.22.33.44
+2019-01-07 16:24:54 fail2ban.filter  [1837]: INFO    [sshd] Found 11.22.33.44
+2019-01-07 16:24:57 fail2ban.filter  [1837]: INFO    [sshd] Found 11.22.33.44
+2019-01-07 16:24:57 fail2ban.actions [1837]: NOTICE  [sshd] Ban 11.22.33.44
+2019-01-07 16:24:57 fail2ban.filter  [1837]: NOTICE  [recidive] Ban 11.22.33.44
 ```
 
-For intance:
+Here, the IP `11.22.33.44` was banned in the `sshd` and `recidive` jails.
+
+Then unban the IP with the following commands : 
+
 ```bash
-iptables -D fail2ban-yunohost 1
+$ fail2ban-client set sshd unbanip 11.22.33.44
+$ fail2ban-client set recidive unbanip 11.22.33.44
 ```
+
