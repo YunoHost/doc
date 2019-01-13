@@ -1,10 +1,8 @@
-Backing up your server and apps
-===============================
+# Backing up your server and apps
 
-Backing up your server, apps and data is an important concern when administrating a server. This protects you from unexpected events that could happen (server lost in a fire, database corruption, loss of access, server compromised, ...). The backup policy you will put in place depends of the importance of the services and data hosted. For instance you won't care too much about having backup on a test server, but you will care about having a backup of critical data of your association or company, and having this backup *in a different physical place*. 
+Backing up your server, apps and data is an important concern when administrating a server. This protects you from unexpected events that could happen (server lost in a fire, database corruption, loss of access, server compromised, ...). The backup policy you will put in place depends of the importance of the services and data hosted. For instance you won't care too much about having backup on a test server, but you will care about having a backup of critical data of your association or company, and having this backup *in a different physical place*.
 
-Backups in the context of YunoHost
-----------------------------------
+## Backups in the context of YunoHost
 
 YunoHost comes with a backup system, that allows to backup (and restore) system configurations and data (e.g. mails) and apps if they support it.
 
@@ -12,58 +10,61 @@ You can manage backups either from the command line (`yunohost backup --help`) o
 
 The current default method consists in creating a `.tar.gz` archive containing all relevant files. In the future, YunoHost plans to support [Borg](https://www.borgbackup.org/) which is a more flexible, efficient and powerful solution.
 
-Creating backups
-----------------
+## Creating backups
 
-#### From the webadmin
+### From the webadmin
 
 You can easily create backup archives from the webadmin by going in Backups > Local storage and clicking on "New backup". You will then be asked to select which configuration, data and apps you want to backup.
 
-![](/images/backup.png)
+![picture of Yunohost's backup pannel](/images/backup.png)
 
-#### From the command line
+### From the command line
 
-You can create a new backup archive with the command line. Here are a few simple example of commands and their corresponding behavior : 
+You can create a new backup archive with the command line. Here are a few simple example of commands and their corresponding behavior :
 
-- Backing up everything (all system parts and apps) : 
-```bash
-yunohost backup create
-```
+- Backing up everything (all system parts and apps) :
+
+  ```bash
+  yunohost backup create
+  ```
 
 - Backing up only apps
-```bash
-yunohost backup create --apps
-```
+
+  ```bash
+  yunohost backup create --apps
+  ```
 
 - Backing up only two apps (wordpress and shaarli)
-```bash
-yunohost backup create --apps wordpress shaarli
-```
+
+  ```bash
+  yunohost backup create --apps wordpress shaarli
+  ```
 
 - Backing up only mails
-```bash
-yunohost backup create --system data_mail
-```
+
+  ```bash
+  yunohost backup create --system data_mail
+  ```
 
 - Backing up mails and wordpress
-```bash
-yunohost backup create --system data_mail --apps wordpress
-```
+
+  ```bash
+  yunohost backup create --system data_mail --apps wordpress
+  ```
 
 For more informations and options about backup creation, consult `yunohost backup create --help`. You can also list system parts that can be backuped with `yunohost hook list backup`.
 
-#### Apps-specific configuration
+### Apps-specific configuration
 
 Some apps such as Nextcloud may be related to a large quantity of data which are not backuped by default. This practice is referred to "backing up only the core" (of the app). However it's possible to enable the backup of all data of this app with `yunohost app setting nextcloud backup_core_only -v 0`. Be careful though that your archive might get huge if there's too much data to be backuped...
 
-Downloading and uploading backups
----------------------------------
+## Downloading and uploading backups
 
 After creating backup archives, it is possible to list and inspect them via the corresponding views in the webadmin, or via `yunohost backup list` and `yunohost backup info <archivename>` from the command line. By default, backups are stored in `/home/yunohost.backup/archives/`.
 
 There is currently no straightfoward way to download or upload a backup archive.
 
-One solution consists in using `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. Hence, from a machine running Linux, you should be able to run the following to download a specific backup: 
+One solution consists in using `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. Hence, from a machine running Linux, you should be able to run the following to download a specific backup:
 
 ```bash
 scp admin@your.domain.tld:/home/yunohost.backup/archives/<archivename>.tar.gz ./
@@ -80,23 +81,23 @@ Alternatively, a solution can be to install Nextcloud or a similar app and confi
 Restoring backups
 -----------------
 
-#### From the webadmin
+### From the webadmin
 
 Go in Backup > Local storage and select your archive. You can then select which items you want to restore, then click on 'Restore'.
 
-![](/images/restore.png)
+![picture of Yunohost's restore pannel](/images/restore.png)
 
-#### From the command line
+### From the command line
 
 From the command line, you can run `yunohost backup restore <archivename>` (without the `.tar.gz`) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use for instance `yunohost backup restore --apps wordpress` which will restore only the wordpress app.
 
-#### Constraints
+### Constraints
 
 To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app which is already installed ... which means that to restore an old version of an app, you must first uninstall it.
 
-#### Restoring during the postinstall
+### Restoring during the postinstall
 
-One specific feature is the ability to restore a full archive *instead* of the postinstall step. This makes it useful when you want to reinstall a system entirely from an existing backup. To be able to do this, you will need to upload the archive on the server and place it in `/home/yunohost.backup/archives`. Then, instead of `yunohost tools postinstall` you can run: 
+One specific feature is the ability to restore a full archive *instead* of the postinstall step. This makes it useful when you want to reinstall a system entirely from an existing backup. To be able to do this, you will need to upload the archive on the server and place it in `/home/yunohost.backup/archives`. Then, instead of `yunohost tools postinstall` you can run:
 
 ```bash
 yunohost backup restore <archivename>
@@ -105,10 +106,9 @@ yunohost backup restore <archivename>
 Note: Don't start the postinstall step. Decline invite when doing installation
 via `bash`/`wget`.
 
-To go futher
-------------
+## To go futher
 
-#### Storing backups on a different drive
+### Storing backups on a different drive
 
 If you want, you can connect and mount an external drive to store backup archives on it (among other things). For this, we first move the existing archives then add a symbolic link.
 
@@ -118,16 +118,16 @@ mv /home/yunohost.backup/archives $PATH_TO_DRIVE/yunohost_backup_archives
 ln -s $PATH_TO_DRIVE/yunohost_backup_archives /home/yunohost.backup/archives
 ```
 
-#### Automatic backups
+### Automatic backups
 
-You can add a simple cron job to trigger automatic backups regularly. For instance, to backup your wordpress weekly, create a file `/etc/cron.weekly/backup-wordpress` with the following content : 
+You can add a simple cron job to trigger automatic backups regularly. For instance, to backup your wordpress weekly, create a file `/etc/cron.weekly/backup-wordpress` with the following content :
 
 ```bash
 #!/bin/bash
 yunohost backup create --apps wordpress
 ```
 
-then make it executable : 
+then make it executable :
 
 ```bash
 chown +x /etc/cron.weekly/backup-wordpress
@@ -137,13 +137,13 @@ Be careful what you backup exactly and when : you don't want to end up with your
 
 #### Backing your server on a remote server
 
-You can follow this tutorial on the forum to setup Borg between two servers : https://forum.yunohost.org/t/how-to-backup-your-yunohost-server-on-another-server/3153
+You can follow this tutorial on the forum to setup Borg between two servers : <https://forum.yunohost.org/t/how-to-backup-your-yunohost-server-on-another-server/3153>
 
-Alternatively, the app Archivist allows to setup a similar system : https://forum.yunohost.org/t/new-app-archivist/3747
+Alternatively, the app Archivist allows to setup a similar system : <https://forum.yunohost.org/t/new-app-archivist/3747>
 
 #### Full backup with `dd`
 
-If you are using an ARM board, another method for doing a full backup can be to create an image of the SD card. For this, poweroff your ARM board, get the SD card in your computer then create a full image with something like : 
+If you are using an ARM board, another method for doing a full backup can be to create an image of the SD card. For this, poweroff your ARM board, get the SD card in your computer then create a full image with something like :
 
 ```bash
 dd if=/dev/mmcblk0 of=./backup.img
