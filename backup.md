@@ -76,6 +76,7 @@ scp /path/to/your/<archivename>.tar.gz admin@your.domain.tld:/home/yunohost.back
 ```
 
 Alternatively, a solution can be to install Nextcloud or a similar app and configure it to be able to access files in `/home/yunohost.backup/archives/` from a web browser.
+You could also use the program [Filezilla](/filezilla) from your computer and which is available for Windows, Linux and macOS.
 
 Restoring backups
 -----------------
