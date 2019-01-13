@@ -78,8 +78,15 @@ scp /path/to/your/<archivename>.tar.gz admin@your.domain.tld:/home/yunohost.back
 
 Alternatively, a solution can be to install Nextcloud or a similar app and configure it to be able to access files in `/home/yunohost.backup/archives/` from a web browser.
 
-Restoring backups
------------------
+### Workaround to retrieve the backups
+
+<div class="alert alert-danger">
+  <span class="glyphicon glyphicon-exclamation-sign"></span> Since Yunohost version 3.3 and the choice to connect as the `admin` user, there is a [limitation](https://github.com/YunoHost/issues/issues/1266) that prevents straight access to the backups folder `/home/yunohost.backup/archives/`
+</div>
+
+Until the issue is solved, you will need to follow [a workaround](/backup_workaround) to manage the backup files.
+
+## Restoring backups
 
 ### From the webadmin
 
