@@ -2,6 +2,7 @@
 
 * [General ways of contributing to YunoHost](/contribute)
 * [Writing documentation](/write_documentation)
+* [Chat rooms](/chat_rooms)
 * Application packaging
    * [Apps wishlist](/apps_wishlist)
    * [General introduction to app packaging](/packaging_apps_start)
