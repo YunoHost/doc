@@ -79,8 +79,6 @@ Améliorez cette documentation en [proposant de nouvelles pages](/write_document
 </div>
 <div class="col col-md-8" markdown="1">
 Étendez les capacités de YunoHost en [packageant de nouveaux services et applications web](/packaging_apps_fr). Jetez un œil à [ce qui a déjà été fait](/apps_fr) !
-<br>
-Un [salon de développement](xmpp:dev@conference.yunohost.org?join) et une <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/apps">mailing-list</a> est également disponible.
 </div>
 </div>
 
@@ -88,5 +86,5 @@ Un [salon de développement](xmpp:dev@conference.yunohost.org?join) et une <a hr
 
 <br>
 <br>
-<p class="lead" markdown="1">Dans tous les cas, venez sur le [salon de développement](xmpp:dev@conference.yunohost.org?join) pour contribuer :-)</p>
+<p class="lead" markdown="1">Dans tous les cas, venez discuter avec nous sur [le salon de développement](/chat_rooms_fr) :-)</p>
 
