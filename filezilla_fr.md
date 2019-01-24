@@ -1,8 +1,8 @@
 # Échanger des fichiers avec son serveur à l'aide d'une interface graphique
 
 Cette page explique comment échanger des fichiers (sauvegardes, musiques,
-photos, films, ...) avec son serveur à l'aide d'un outil graphique. C'est donc 
-une méthode alternative au fait d'utiliser la commande `scp` qui peut être jugée 
+photos, films, ...) avec son serveur à l'aide d'un outil graphique. C'est donc
+une méthode alternative au fait d'utiliser la commande `scp` qui peut être jugée
 technique et cryptique, ou de devoir installer Nextcloud.
 
 [FileZilla](https://filezilla-project.org/) permet d'accomplir cela. Il s'agit
@@ -10,8 +10,8 @@ d'un logiciel libre disponible pour Windows, Linux et MacOS.
 
 ## Télécharger et installer FileZilla
 
-Vous pouvez télécharger FileZilla depuis [cette page](https://filezilla-project.org/download.php?type=client). 
-Le site devrait détecter automatiquement la version nécessaire pour votre ordinateur. 
+Vous pouvez télécharger FileZilla depuis [cette page](https://filezilla-project.org/download.php?type=client).
+Le site devrait détecter automatiquement la version nécessaire pour votre ordinateur.
 Sinon, suivez les instructions pour [installer le client](https://wiki.filezilla-project.org/Client_Installation)
 
 Installez le programme et lancez *Filezilla*.
@@ -74,6 +74,7 @@ Sources
 Depuis n'importe quel Linux récent, vous devriez pouvoir utiliser le gestionnaire de fichiers pour accéder à votre serveur.
 
 Nautilus de Gnome3 intègre de base des fonctionnalités similaires à FileZilla :
+
 * <https://help.gnome.org/users/gnome-help/stable/nautilus-connect.html.en>
 * <https://www.techrepublic.com/article/how-to-use-linux-file-manager-to-connect-to-an-sftp-server/>
 
