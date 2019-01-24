@@ -1,3 +1,0 @@
-# OpenVPN
-
-To be written...
