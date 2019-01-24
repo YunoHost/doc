@@ -61,9 +61,11 @@ Downloading and uploading backups
 
 After creating backup archives, it is possible to list and inspect them via the corresponding views in the webadmin, or via `yunohost backup list` and `yunohost backup info <archivename>` from the command line. By default, backups are stored in `/home/yunohost.backup/archives/`.
 
-There is currently no straightfoward way to download or upload a backup archive.
+Currently, the most accessible way to download archives is to use the program FileZilla as explained in [this page](/filezilla).
 
-One solution consists in using `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. Hence, from a machine running Linux, you should be able to run the following to download a specific backup: 
+Alternatively, a solution can be to install Nextcloud or a similar app and configure it to be able to access files in `/home/yunohost.backup/archives/` from a web browser.
+
+Finally, you can use `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. Hence, from a machine running Linux, you should be able to run the following to download a specific backup: 
 
 ```bash
 scp admin@your.domain.tld:/home/yunohost.backup/archives/<archivename>.tar.gz ./
@@ -74,9 +76,6 @@ Similarly, you can upload a backup from a machine to your server with:
 ```bash
 scp /path/to/your/<archivename>.tar.gz admin@your.domain.tld:/home/yunohost.backup/archives/
 ```
-
-Alternatively, a solution can be to install Nextcloud or a similar app and configure it to be able to access files in `/home/yunohost.backup/archives/` from a web browser.
-You could also use the program [Filezilla](/filezilla) from your computer and which is available for Windows, Linux and macOS.
 
 Restoring backups
 -----------------
