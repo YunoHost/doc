@@ -1,11 +1,11 @@
 # Exchange files with your server using a graphical interface
 
 This page explains how to exchange files (backup archives, music, pictures,
-movies, ...) with your server using a graphical interface. This is an alternative
-to using `scp` which can be deemed technical and cryptic, or using an app like
-Nextcloud.
+movies, ...) with your server using a graphical interface for the (S)FTP protocol. 
+This is an alternative to using `scp` which can be deemed technical and cryptic, 
+or using an app like Nextcloud.
 
-[Filezila](https://filezilla-project.org/) can be used for this. It is a free
+[FileZilla](https://filezilla-project.org/) can be used for this. It is a free
 software and is available for Windows, Linux and macOS.
 
 ## Download and install FileZilla
@@ -20,7 +20,7 @@ Install the program and run *Filezilla*.
 
    ![Main screen of Filezilla](images/filezilla_1.png)
 
-2. Click **New Site** and give a name the server you will be using : *Familly* here. Fill the settings as on the screenshot (replace the server adress with your own), and click on **Connect**.
+2. Click **New Site** and give a name the server you will be using : *Family* here. Fill the settings as on the screenshot (replace the server adress with your own), and click on **Connect**. (N.B. : if you want to interact with the [custom webapp](https://github.com/YunoHost-Apps/my_webapp_ynh) files, you should use a different user than `admin`. Refer to the custom webapp documentation.)
 
    ![Site manager screen](images/filezilla_2.png)
 
@@ -28,7 +28,7 @@ Install the program and run *Filezilla*.
 
    ![warning about the unknown fingerprint of the server](images/filezilla_3.png)
 
-4. Filezilla is now asking the `admin` password for connecting to your server.
+4. Filezilla is now asking the `admin` password to connect to your server.
 
    ![credential screen asking for the password](images/filezilla_4.png)
 

@@ -22,7 +22,7 @@ Installez le programme et lancez *Filezilla*.
 
    ![écran principal de Filezilla](images/filezilla_1.png)
 
-2. Cliquez sur **Nouveau site** et donnez un nom au serveur que vous allez utiliser. Par exemple "Famille". Remplissez les paramètres comme sur la capture d'écran (en remplaçant l'adresse du serveur par la votre). Une fois terminé, cliquez sur **Connexion**.
+2. Cliquez sur **Nouveau site** et donnez un nom au serveur que vous allez utiliser. Par exemple "Famille". Remplissez les paramètres comme sur la capture d'écran (en remplaçant l'adresse du serveur par la votre). Une fois terminé, cliquez sur **Connexion**. (N.B. : si vous souhaitez éditer les fichiers de l'application [custom webapp](https://github.com/YunoHost-Apps/my_webapp_ynh), il vous faudra utiliser un autre utilisateur que admin. Se référer à la documentation de custom webapp.)
 
    ![écran du gestionnaire de site](images/filezilla_2.png)
 
