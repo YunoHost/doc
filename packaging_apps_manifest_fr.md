@@ -65,7 +65,7 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
 
 * **version** : version du package construit à partir du numéro de version de l’application qui est installée et d'un incrément pour chaque changement du paquet sans changement de version de l'application. "Exemple: 1.0.1~ynh7". Le champ doit être une chaîne de caractères.
 
-* **license** : licence avec laquelle l’application est distribuée : `free`, `non-free`. Attention à ne pas confondre avec la licence du paquet qui doit être mise dans le fichier `LICENSE`.
+* **license** : licence avec laquelle l’application est distribuée : `free`, `non-free` ou une des valeurs de la colonne Identifier du site https://spdx.org/licenses/. Attention à ne pas confondre avec la licence du paquet qui doit être mise dans le fichier `LICENSE`.
 
 * **maintainer** : informations à propos du mainteneur du paquet de l’application pour pouvoir le contacter.
 
