@@ -44,7 +44,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [DirectoryLister](https://github.com/DirectoryLister/DirectoryLister)
 - [Discourse](https://discourse.org)
 - [DNSchain](https://github.com/okTurtles/dnschain)
-- [Domoticz](https://github.com/domoticz/domoticz)
 - [Drupal](https://www.drupal.org/)
 - [Emby](https://emby.media)
 - [Emoncms](https://github.com/emoncms/emoncms)
@@ -171,6 +170,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [TwitRSS.me](http://twitrss.me/) ([Github](https://github.com/ciderpunx/twitrssme)) Scrapes Twitter to create RSS feeds.
 - [Unvis](https://unv.is/) ([Github](https://github.com/lodjuret/unvis.it))
 - [Vaultier](http://www.vaultier.org)
+- [Volumio](https://volumio.org)
 - [Webmpc](https://github.com/ushis/webmpc)
 - [WebODF](http://webodf.org)
 - [webSync](http://furier.github.io/websync)
