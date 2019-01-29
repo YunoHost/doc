@@ -34,7 +34,7 @@ dd if=/path/to/yunohost.img of=/dev/mmcblk0
 ## Expand the root partition <small>(optional)</small>
 
 <div class="alert alert-warning" markdown="1">
-This step is optionnal as it should be performed automatically during the first
+This step is optional as it should be performed automatically during the first
 boot on recent images.
 </div>
 
