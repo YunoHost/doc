@@ -78,6 +78,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [ikiwiki](http://ikiwiki.info)
 - [img.bi](https://github.com/imgbi/img.bi)
 - [InfCloud](https://www.inf-it.com/open-source/clients/infcloud)
+- [Invidious](https://github.com/omarroth/invidious)
 - [Invoice Ninja](https://www.invoiceninja.com)
 - [InvoicePlane](https://invoiceplane.com)
 - [IPFS](https://ipfs.io)
