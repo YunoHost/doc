@@ -6,17 +6,16 @@
 
   <div class="punchline">
     <p>
-      <span class="yolo 1" style="color: #FF3399;">Self-hosting for you, mom</span>
-      <span class="yolo 2" style="color: #6699FF;">Haters gonna host</span>
-      <span class="yolo 3" style="color: #66FF33;">I host myself, Yo!</span>
-      <span class="yolo 4" style="color: #00FFCC;">Go host yourself!</span>
-      <span class="yolo 5" style="color: #FF5050;">Get off of my cloud</span>
-      <span class="yolo 6" style="color: #FF0066;">Host me I’m famous</span>
-      <span class="yolo 7" style="color: #3366FF;">Try Internet</span>
-      <span class="yolo 8" style="color: #FFFFFF;">How I met your server</span>
-      <span class="yolo 9" style="color: #FF6600;">john@doe.org</span>
-      <span class="yolo 10" style="color: #FF5050;">dude, Y U NO Host?!</span>
-      <span class="yolo 11" style="color: #66FF33;">Keep calm and host yourself</span>
+      <span class="yolo 1" style="color: #6699FF;">Haters gonna host</span>
+      <span class="yolo 2" style="color: #66FF33;">I host myself, Yo!</span>
+      <span class="yolo 3" style="color: #00FFCC;">Go host yourself!</span>
+      <span class="yolo 4" style="color: #FF5050;">Get off of my cloud</span>
+      <span class="yolo 5" style="color: #FF0066;">Host me I’m famous</span>
+      <span class="yolo 6" style="color: #3366FF;">Try Internet</span>
+      <span class="yolo 7" style="color: #FFFFFF;">How I met your server</span>
+      <span class="yolo 8" style="color: #FF6600;">john@doe.org</span>
+      <span class="yolo 9" style="color: #FF5050;">dude, Y U NO Host?!</span>
+      <span class="yolo 10" style="color: #66FF33;">Keep calm and host yourself</span>
     </p>
     <button class="btn btn-primary btn-lg btn-block yolobtn">What?</button>
   </div>
