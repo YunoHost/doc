@@ -146,7 +146,7 @@ Il existe aussi l'application Archivist qui permet un système similaire : https
 Si vous êtes sur une carte ARM, une autre méthode pour créer une sauvegarde complète consiste à créer une image (copie) de la carte SD. Pour cela, éteignez votre serveur, insérez la carte SD dans votre ordinateur et créez une image avec une commande comme :
 
 ```bash
-dd if=/dev/mmcblk0 of=./backup.img
+dd if=/dev/mmcblk0 of=./backup.img status=progress
 ```
 
 (remplacez `/dev/mmcblk0` par le vrai nom de votre carte SD)

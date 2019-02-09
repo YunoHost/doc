@@ -146,7 +146,7 @@ Alternatively, the app Archivist allows to setup a similar system : https://foru
 If you are using an ARM board, another method for doing a full backup can be to create an image of the SD card. For this, poweroff your ARM board, get the SD card in your computer then create a full image with something like : 
 
 ```bash
-dd if=/dev/mmcblk0 of=./backup.img
+dd if=/dev/mmcblk0 of=./backup.img status=progress
 ```
 
 (replace `/dev/mmcblk0` with the actual device of your sd card)
