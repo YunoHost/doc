@@ -1,27 +1,27 @@
 # How to host yourself ?
 
-You can host yourself at home (on a small computer), or on a remote server. Each solution has their pros and cons :
+You can host yourself at home (on a small computer), or on a remote server. Each solution has their pros and cons:
 
 ### At home, for instance on an ARM board or an old computer
 
-You can host yourself at home with an ARM board or a re-purposed regular computer, connected to our home router/box. 
+You can host yourself at home with an ARM board or a re-purposed regular computer, connected to your home router/box. 
 
-- **Pros**  : you will have physical control on the machine and only need to buy the hardware ;
+- **Pros**  : you will have physical control of the machine and only need to buy the hardware;
 - **Cons**  : you will have to [manually configure your internet box](isp_box_config) and [might be limited by your ISP](isp).
 
 ### At home, behind a VPN
 
-A VPN is an encrypted tunnel between two machines. In practice, it allows to make it "as is" you were connected to the Internet from somewhere else. This allows to still host yourself at home while bypassing possible limitations from your ISP. See also [the Internet Cube project](https://internetcu.be/) and [the FFDN](https://www.ffdn.org/).
+A VPN is an encrypted tunnel between two machines. In practice, it makes it "as if" you were directly, locally, connected to your server machine, but actually from somewhere else on the Internet. This allows you to still host yourself at home, while bypassing possible limitations of your ISP. See also [the Internet Cube project](https://internetcu.be/) and [the FFDN](https://www.ffdn.org/).
 
-- **Pros** : you will have physical control on the machine, and the VPN hides your traffic from your ISP and allows to bypass its limitations ;
+- **Pros** : you will have physical control of the machine, and the VPN hides your traffic from your ISP and allows you to bypass its limitations;
 - **Cons** : you will have to pay a monthly subscription for the VPN.
 
 ### On a remote server (VPS or dedicated server)
 
-You can rent a virtual private server or a dedicated machine to [associative](https://db.ffdn.org/) or commercial "Cloud" providers.
+You can rent a virtual private server or a dedicated machine from [associative](https://db.ffdn.org/) or commercial "Cloud" providers.
 
-- **Pros** : your server and its internet connectivity will be fast ;
-- **Cons** : you will have to pay a monthly subscription and won't have physical control on your server.
+- **Pros** : your server and its internet connectivity will be fast;
+- **Cons** : you will have to pay a monthly subscription and won't have physical control of your server.
 
 ### Summary
 
@@ -42,12 +42,12 @@ You can rent a virtual private server or a dedicated machine to [associative](ht
       </tr>
       <tr>
         <td style="text-align:center;">Monthly cost</td>
-        <td style="text-align:center;" class="success">Neglictible<br><small>(electricity)</small></td>
+        <td style="text-align:center;" class="success">Negligible<br><small>(electricity)</small></td>
         <td style="text-align:center;" class="warning">Around 5€ <br><small>(VPN)</small></td>
         <td style="text-align:center;" class="warning">Starting at ~3€ <br><small>(VPS)</small></td>
       </tr>
       <tr>
-        <td style="text-align:center;">Physical control<br>on the machine</td>
+        <td style="text-align:center;">Physical control<br>of the machine</td>
         <td style="text-align:center;" class="success">Yes</td>
         <td style="text-align:center;" class="success">Yes</td>
         <td style="text-align:center;" class="danger">No</td>
@@ -71,12 +71,12 @@ You can rent a virtual private server or a dedicated machine to [associative](ht
       </tr>
       <tr>
         <td style="text-align:center;">RAM</td>
-        <td style="text-align:center;" class="warning" colspan="2">Typically 500 Mo or 1 Go</td>
+        <td style="text-align:center;" class="warning" colspan="2">Typically 500 Mb or 1 Gb</td>
         <td style="text-align:center;" class="warning">Related to server cost</td>
       </tr>
       <tr>
         <td style="text-align:center;">Internet connectivity</td>
-        <td style="text-align:center;" class="warning" colspan="2">Depends of home connectivity</td>
+        <td style="text-align:center;" class="warning" colspan="2">Depends on home connectivity</td>
         <td style="text-align:center;" class="success">Typically pretty good</td>
       </tr>
     </tbody>
