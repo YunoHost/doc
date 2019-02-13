@@ -78,7 +78,7 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
 * **arguments** :
   * **install** : paramètres à demander à l’administrateur lors de l’installation.
     * **name** : identifiant du paramètre
-    * **type** : (optionnel) type de paramètre parmis `domain`, `path`, `user`, `app`, `boolean` et `password`. Le champ sera caché dans le cas d’un mot de passe.
+    * **type** : (optionnel) type de paramètre parmis `domain`, `path`, `user`, `app`, `boolean`, `string` et `password`. Le champ sera caché dans le cas d’un mot de passe.
     * **choices** : (optionnel) restreint les réponses possibles à plusieurs choix.
     * **optional** : (optionnel) champs qui indique si ce paramètre est optionnel. Il peut avoir les valeurs `true` ou `false`.
     * **ask** : question posée (au minimum en anglais – `en`) que vous pouvez traduire dans plusieurs langues.
