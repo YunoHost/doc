@@ -84,6 +84,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [InvoicePlane](https://invoiceplane.com)
 - [IPFS](https://ipfs.io)
 - [Joplin](http://joplin.cozic.net/)
+- [Jellyfin](https://github.com/jellyfin)
 - [JS Bin](http://jsbin.com/help/2-second-setup)
 - [Kaiwa](http://getkaiwa.com)
 - [Keepass](http://keepass.info)
