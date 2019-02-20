@@ -23,22 +23,22 @@ L'application s'installe et se désinstalle correctement dans toutes les configu
 L'application peut être mise à jour.
 
 **Niveau 4**  
-L'application utilise directement les utilisateurs YunoHost et permet l'identification unique à partir du portail YunoHost.
+L'application peut-être sauvegardée et restaurée.
 
 **Niveau 5**  
 Le code du package d'application respecte certaines règles de syntaxe.
 
 **Niveau 6**  
-L'application peut-être sauvegardée et restaurée.
+Le package d'application est dans l'organisation YunoHost-Apps.
 
 **Niveau 7**  
 Le package d'application passe avec succès l'ensemble des tests d'intégrité.
 
 **Niveau 8**  
-L'application respecte un ensemble de recommandations avancées améliorant sa qualité générale.
+Le package d'application respecte toute les recommendations de packaging d'apps. C'est une app de très bonne qualité.
 
 **Niveau 9**  
-L'application respecte toutes les recommandations. C'est un package d'excellente qualité.
+Le package d'application respecte des recommandations de packaging supérieures. Non disponible pour le moment.
 
 **Niveau 10**  
 Le package d'application est jugé parfait !
@@ -91,15 +91,11 @@ YEP à respecter pour atteindre le niveau 3:
 - [YEP 2.3](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-23---sauvegarder-les-r%C3%A9ponses-lors-de-linstallation---valid%C3%A9--manuel--working-) : Sauvegarder les réponses lors de l'installation
 
 ### Niveau 4
-**L'application prend en charge ldap et HTTP AUTH**  
-L'application gère ses utilisateurs directement à partir de la [base ldap de YunoHost](https://github.com/YunoHost/SSOwat/blob/366dd6c4438e6550f7438c36893690b628340185/config.lua#L50-L53) et permet la connexion unifiée en utilisant l'[authentification HTTP](https://fr.wikipedia.org/wiki/Authentification_HTTP) depuis le SSO.
-
-*Si l'application n'est pas capable de prendre en charge un annuaire ldap ou l'authentification HTTP, ce niveau peut être ignoré.*  
-*Il faut toutefois être en mesure de justifier de cette impossibilité*
+**L'application peut-être sauvegardée et restaurée sans erreur sur la même machine ou une autre.**  
 
 YEP à respecter pour atteindre le niveau 4:
-- *[YEP 4.1](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-41---lier-au-ldap----valid%C3%A9--manuel--official-) : Lier au ldap*
-- *[YEP 4.2](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-42---lier-lauthentification-au-sso----valid%C3%A9--manuel--official-) : Lier l'authentification au sso*
+- *[YEP 4.3](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-43---fournir-un-script-de-sauvegarde-yunohost-fonctionnel----valid%C3%A9--auto--official-) : Fournir un script de sauvegarde YunoHost fonctionnel*
+- *[YEP 4.4](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-44---fournir-un-script-de-restauration-yunohost-fonctionnel----valid%C3%A9--auto--official-) : Fournir un script de restauration YunoHost fonctionnel*
 
 ### Niveau 5
 **L'application ne présente aucune erreur dans [Package linter](https://github.com/YunoHost/package_linter).**  
@@ -107,17 +103,17 @@ YEP à respecter pour atteindre le niveau 4:
 
 YEP à respecter pour atteindre le niveau 5:
 - *[YEP 1.3](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-13---indiquer-la-licence-associ%C3%A9e-au-paquet---valid%C3%A9--auto--working-) : Indiquer la licence associée au paquet*
-- [YEP 2.1](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-21---respecter-le-format-du-manifeste---valid%C3%A9--auto--inprogress-) : Respecter le format du manifeste
+- *[YEP 2.1](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-21---respecter-le-format-du-manifeste---valid%C3%A9--auto--inprogress-) : Respecter le format du manifeste*
 - [YEP 2.12](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-212---utiliser-les-commandes-pratiques-helpers---valid%C3%A9--auto--official-) : Utiliser les commandes pratiques (helpers)
 - [YEP 2.18.1](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-2181---lancer-le-script-dinstallation-dune-webapp-correctement----valid%C3%A9--manuel--working-) : Lancer le script d'installation d'une webapp correctement
 
 ### Niveau 6
-**L'application peut-être sauvegardée et restaurée sans erreur sur la même machine ou une autre.**  
+**Le package d'application est dans l'organisation YunoHost-Apps.**  
 
 YEP à respecter pour atteindre le niveau 6:
 - [YEP 1.4](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-14---informer-sur-lintention-de-maintenir-un-paquet----brouillon--manuel--working-) : Informer sur l'intention de maintenir un paquet
 - [YEP 1.6](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-16---se-tenir-inform%C3%A9-sur-l%C3%A9volution-du-packaging-dapps---valid%C3%A9--manuel--official-) : Se tenir informé sur l'évolution du packaging d'apps
-- [YEP 1.7](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-17---ajouter-lapp-%C3%A0-lorganisation-yunohost-apps---valid%C3%A9--manuel--official-) : Ajouter l'app à l'[organisation YunoHost-Apps](https://github.com/YunoHost-Apps)
+- *[YEP 1.7](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-17---ajouter-lapp-%C3%A0-lorganisation-yunohost-apps---valid%C3%A9--manuel--official-) : Ajouter l'app à l'[organisation YunoHost-Apps](https://github.com/YunoHost-Apps)*
 - [YEP 1.8](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-18---publier-des-demandes-de-test---valid%C3%A9--manuel--official-) : Publier des demandes de test
 - [YEP 1.9](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-19---documenter-lapp---valid%C3%A9--auto--official-) : Documenter l'app
 - [YEP 1.10](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-110---garder-un-historique-de-version-propre----brouillon--manuel--official-) : Garder un historique de version propre
@@ -125,28 +121,28 @@ YEP à respecter pour atteindre le niveau 6:
 - [YEP 3.3](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-33---faciliter-le-contr%C3%B4le-de-lint%C3%A9grit%C3%A9-des-sources----brouillon--manuel--official-) : Faciliter le contrôle de l'intégrité des sources
 - [YEP 3.5](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-35---suivre-les-recommendations-de-la-documentation-de-lapp----valid%C3%A9--manuel--official-) : Suivre les recommandations de la documentation de l'app
 - [YEP 3.6](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-36---mettre-%C3%A0-jour-les-versions-contenant-des-cve----draft--manuel--official-) : Mettre à jour les versions contenant des CVE
-- *[YEP 4.3](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-43---fournir-un-script-de-sauvegarde-yunohost-fonctionnel----valid%C3%A9--auto--official-) : Fournir un script de sauvegarde YunoHost fonctionnel*
-- *[YEP 4.4](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-44---fournir-un-script-de-restauration-yunohost-fonctionnel----valid%C3%A9--auto--official-) : Fournir un script de restauration YunoHost fonctionnel*
-
-**Si une app atteint le niveau 6, elle peut prétendre à rejoindre les applications officielles.**
 
 ### Niveau 7
 **L'application ne présente aucune erreur dans [Package check](https://github.com/YunoHost/package_check).**  
 En considérant le maximum de tests possibles pour l'application.
 
 YEP à respecter pour atteindre le niveau 7:
+- [YEP 2.4](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-24---d%C3%A9tecter-et-g%C3%A9rer-les-erreurs---brouillon--manuel--working-) : Détecter et gérer les erreurs
 - [YEP 2.6](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-26---annuler-laction-si-les-valeurs-dentr%C3%A9es-sont-incorrectes----valid%C3%A9--manuel--working-) : Annuler l'action si les valeurs d'entrées sont incorrectes
+- [YEP 2.8](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-28---modifier-correctement-une-configuration-syst%C3%A8me----brouillon--manuel--working-) : Modifier correctement une configuration système
+- [YEP 2.10](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-210---configurer-les-logs-de-lapplication----brouillon--manuel--working-) : Configurer les logs de l'application
+- [YEP 2.11](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-211---utiliser-une-variable-plut%C3%B4t-que-lapp-id-directement---valid%C3%A9--manuel--official-) : Utiliser une variable plutôt que l'app id directement
+- [YEP 2.13](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-213---traduire-le-package-en-anglais----brouillon--manuel--official-) : Traduire le package en anglais
 - [YEP 3.2](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-32---ouvrir-un-port-correctement----brouillon--manuel--working-) : Ouvrir un port correctement
 
 ### Niveau 8
-**L'application respecte toutes les YEP recommandées.**
+**Le package d'application respecte toute les recommendations de packaging d'apps. C'est une app de très bonne qualité.**
 
 YEP à respecter pour atteindre le niveau 8:
-- [YEP 2.4](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-24---d%C3%A9tecter-et-g%C3%A9rer-les-erreurs---brouillon--manuel--working-) : Détecter et gérer les erreurs
-- [YEP 2.8](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-28---modifier-correctement-une-configuration-syst%C3%A8me----brouillon--manuel--working-) : Modifier correctement une configuration système
-- [YEP 2.16](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-216---v%C3%A9rifier-la-disponibilit%C3%A9-des-d%C3%A9pendances-sur-arm-x86-et-x64----valid%C3%A9--manuel--official-) : Vérifier la disponibilité des dépendances sur ARM, x86 et x64
+- *[YEP 2.16](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-216---v%C3%A9rifier-la-disponibilit%C3%A9-des-d%C3%A9pendances-sur-arm-x86-et-x64----valid%C3%A9--manuel--official-) : Vérifier la disponibilité des dépendances sur ARM, x86 et x64*
 - [YEP 2.18.5](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-2185---ajouter-la-tuile-yunohost-pour-naviguer-facilement-entre-les-applications----valid%C3%A9--manuel--official-) : Ajouter la tuile YunoHost pour naviguer facilement entre les applications
-- [YEP 3.4](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-34---isoler-lapp----brouillon--manuel--official-) : Isoler l'app
+- [YEP 4.1](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-41---lier-au-ldap----valid%C3%A9--manuel--official-) : Lier au ldap
+- [YEP 4.2](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-42---lier-lauthentification-au-sso----valid%C3%A9--manuel--official-) : Lier l'authentification au sso
 - [YEP 4.5](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-45---utiliser-les-hooks----valid%C3%A9--manuel--optional-) : Utiliser les hooks
 
 *Si une application n'est pas disponible sur une architecture, et qu'il est impossible de contourner cette limitation raisonnablement, cette limitation doit être indiquée dans le readme et prise en compte dans le script d'installation. L'installation de l'application sur une architecture non supportée doit être stoppée avant de modifier les fichiers.*
@@ -155,27 +151,11 @@ YEP à respecter pour atteindre le niveau 8:
 **L'application respecte toutes les YEP optionnelles.**
 
 YEP à respecter pour atteindre le niveau 9:
-- [YEP 2.10](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-210---configurer-les-logs-de-lapplication----brouillon--manuel--working-) : Configurer les logs de l'application
-- [YEP 2.11](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-211---utiliser-une-variable-plut%C3%B4t-que-lapp-id-directement---valid%C3%A9--manuel--official-) : Utiliser une variable plutôt que l'app id directement
-- [YEP 2.13](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-213---traduire-le-package-en-anglais----brouillon--manuel--official-) : Traduire le package en anglais
 - [YEP 2.14](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-214---remplir-correctement-un-fichier-de-conf----brouillon--manuel--official-) : Remplir correctement un fichier de conf
 - [YEP 2.17](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-217---prendre-en-compte-la-version-dorigine-lors-des-mises-%C3%A0-jour----valid%C3%A9--manuel--official-) : Prendre en compte la version d'origine lors des mises à jour
+- [YEP 3.4](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-34---isoler-lapp----brouillon--manuel--official-) : Isoler l'app
 - [YEP 4.2.1](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-421---d%C3%A9connexion----valid%C3%A9--manuel--official-) : Déconnexion
 
 ### Niveau 10
 **L'application est jugée parfaite !**  
 Ce niveau ultime pour une application ne peux être atteint que suite à étude approfondie du package et par la validation du groupe Apps.
-
-
-## Comment demander l'intégration d'une application dans la liste officielle ?
-
-Avant de demander l'intégration d'une application dans la liste officielle, vous devez vous engager à maintenir l'application sur la durée, ou trouver quelqu'un qui s'engage à le faire.  
-Une application officielle doit être régulièrement mise à jour et suivre au mieux les recommandations de packaging.
-
-Pour prétendre à rejoindre la liste officielle, l'application doit avoir atteint au moins le niveau 6 et doit être un logiciel libre.
-
-Si tout ces prérequis sont satisfaits, vous pouvez créer une pull request sur la liste officielle ou faire une demande sur le forum.  
-Dés lors, le package sera vérifié par les membres du groupe Apps et la décision de l'inclure dans la liste des applications officielles sera débattue par le groupe.  
-Si tout va bien l'application rejoindra les applications officielles de YunoHost.
-
-
