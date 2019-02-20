@@ -38,9 +38,7 @@ A list of French and Belgian ISPs is available on the [french page](/isp_fr).
 ### Sweden
 
 | Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
-
 | --- | --- | --- | --- | --- | --- | --- |
-
 | Telia | Multiple | Yes | No. Business only. | Yes | No. Business only. | No. Business only. |
 | Bredbandsbolaget | Multiple | Yes | No. Business only. | Yes | No. Business only. | No. Business only. |
 
