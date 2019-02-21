@@ -102,10 +102,7 @@ One specific feature is the ability to restore a full archive *instead* of the p
 yunohost backup restore <archivename>
 ```
 
-Note: Don't start the postinstall step. Decline invite when doing installation
-via `bash`/`wget`.
-
-Note: If your archive isn't in /home/yunohost.backup/archives, you cant specify where it is :
+Note: If your archive isn't in /home/yunohost.backup/archives, you can specify where it is like this :
 
 ```bash
 yunohost backup restore /path/to/<archivename>
