@@ -98,13 +98,19 @@ Pour restaurer une application, le domaine sur laquelle elle est installée doit
 
 Une fonctionnalité particulière est la possibilité de restaurer une archive entière *à la place* de faire la post-installation. Ceci est utile pour réinstaller un système entièrement à partir d'une sauvegarde existante. Pour faire cela, il vous faudra d'abord téléverser l'archive sur le serveur et la placer dans `/home/yunohost.backup/archives`.
 
-Ensuite, à la place de `yunohost tools postinstall`; réalisez la restauration de l'archive téléversée par cette ligne de commande avec le nom de l'archive (sans le `.tar.gz`) :
+Ensuite, **à la place de** `yunohost tools postinstall`, réalisez la restauration de l'archive téléversée par cette ligne de commande avec le nom de l'archive (sans le `.tar.gz`) :
 
 ```bash
 yunohost backup restore <nom_d'archive>
 ```
 
-NB: Ne surtout pas engager la 'Post-Installation' , refuser l'invitation lors de l'installation via `bash`/`wget`.
+Note: si votre archive n'est pas dans `/home/yunohost.backup/archives`, vous pouvez spécifier où elle se trouve comme ceci :
+
+```bash
+yunohost backup restore /path/to/<archivename>
+``` 
+
+
 
 Pour aller plus loin
 --------------------

@@ -96,13 +96,13 @@ To restore an app, the domain on which it was installed should already be config
 
 #### Restoring during the postinstall
 
-One specific feature is the ability to restore a full archive *instead* of the postinstall step. This makes it useful when you want to reinstall a system entirely from an existing backup. To be able to do this, you will need to upload the archive on the server and place it in `/home/yunohost.backup/archives`. Then, instead of `yunohost tools postinstall` you can run: 
+One specific feature is the ability to restore a full archive *instead* of the postinstall step. This makes it useful when you want to reinstall a system entirely from an existing backup. To be able to do this, you will need to upload the archive on the server and place it in `/home/yunohost.backup/archives`. Then, **instead of** `yunohost tools postinstall` you can run: 
 
 ```bash
 yunohost backup restore <archivename>
 ```
 
-Note: If your archive isn't in /home/yunohost.backup/archives, you can specify where it is like this :
+Note: If your archive isn't in `/home/yunohost.backup/archives`, you can specify where it is like this :
 
 ```bash
 yunohost backup restore /path/to/<archivename>
