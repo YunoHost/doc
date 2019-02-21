@@ -105,6 +105,12 @@ yunohost backup restore <archivename>
 Note: Don't start the postinstall step. Decline invite when doing installation
 via `bash`/`wget`.
 
+Note: If your archive isn't in /home/yunohost.backup/archives, you cant specify where it is :
+
+```bash
+yunohost backup restore /path/to/<archivename>
+``` 
+
 To go futher
 ------------
 
