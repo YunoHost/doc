@@ -12,6 +12,7 @@
       <span class="yolo 4" style="color: #FFFFFF;">monsieur@michu.fr</span>
       <span class="yolo 5" style="color: #CC66FF;">J’ai rien à cacher</span>
       <span class="yolo 6" style="color: #FF6600;">How I met your server</span>
+      <span class="yolo 7" style="color: #1188FF;">Construisez votre ZaDacenter!</span>
     </p>
     <button class="btn btn-primary btn-lg btn-block yolobtn">Pardon ?</button>
   </div>
