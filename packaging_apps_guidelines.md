@@ -32,6 +32,7 @@ Each YEP is associated with:
 | YEP 1.9 | Document the app | validated | AUTO | OFFICIAL (6) |
 | YEP 1.10 | Keep a clean version history | draft | manual | OFFICIAL (6) |
 | YEP 1.11 | Add app to [YunoHost bugtracker](https://github.com/YunoHost/issues/issues) | draft | manual | OFFICIAL (NA) |
+| YEP 1.12 | Follow the template from [example_ynh](https://github.com/YunoHost/example_ynh) | draft | manual | OFFICIAL (8) |
 | | | | | |
 | ** YEP 2 ** | ** Stabilize an app ** | ** Status ** | ** Test ** | ** Level ** |
 | YEP 2.1 | Respect the manifest format | validated | Home | INPROGRESS (5) |
@@ -208,6 +209,13 @@ There is also README.md, which must and can contain:
 ##### Keep a clean version history | draft | manual | OFFICIAL |
 #### YEP 1.11
 ##### Add app to [YunoHost bugtracker](https://github.com/YunoHost/issues/issues) | draft | manual | OFFICIAL |
+
+#### YEP 1.12
+##### Follow the template from [example_ynh](https://github.com/YunoHost/example_ynh) | draft | manual | OFFICIAL |
+In order to facilitate the work of the community regarding a package, it has to follow the template shown by the example app.  
+This will help other packagers to read, modified and debug the package. Also, it will help to prolong the life of the package by giving it a standard template that other packagers will be able to quickly understand in case a package become orphan.  
+As well, a package should not use exotic or uselessly complicated code if it's not really needed. If so, this part of the code should be clearly documented.  
+Keep your code as easy as possible, keep everything a script needs directly into it. Do not move functions in another file. Keep it simple and efficient.
 
 ### YEP 2
 #### Stabilize an app
