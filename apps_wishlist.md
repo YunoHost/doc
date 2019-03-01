@@ -31,6 +31,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [cgit](http://git.zx2c4.com/cgit/about)
 - [CheckUp](https://sourcegraph.github.io/checkup)
 - [CiviCRM](https://civicrm.org)
+- [Cloud torrent](https://github.com/jpillora/cloud-torrent)
 - [Cockpit](http://cockpit-project.org/)
 - [Commafeed](https://github.com/Athou/commafeed)
 - [Converse.js](https://conversejs.org)
