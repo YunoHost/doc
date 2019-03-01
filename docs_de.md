@@ -13,7 +13,7 @@ Die YunoHost Dokumentation ist in 3 Bereiche aufgeteilt:
 
 <div class="col col-md-4 col-md-offset-1">
 <a class="btn btn-primary btn-lg" href="/admindoc"><span class="glyphicon glyphicon-lock"></span> Handbuch für Administratoren</a>
-<p><small class="text-muted">Befasst sich mit den die Installationsschritten und der Verwaltung von Server und Apps.</small></p>
+<p><small class="text-muted">Befasst sich mit den Installationsschritten und der Verwaltung von Server und Apps.</small></p>
 </div>
 
 <div class="col col-md-5 col-md-offset-3">
