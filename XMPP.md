@@ -20,7 +20,7 @@ There are several web client built with social network features :
 
 You can also use a desktop client such as :
 - [Pidgin](http://pidgin.im/) (multiplatform), 
-- [Gajim](http://gajim.org/) (Linux), 
+- [Gajim](http://gajim.org/) (Linux, Windows),
 - [Dino](https://dino.im) (Linux),
 - [Thunderbird](https://www.thundebird.net/) (multiplatform), 
 - [Jitsi](http://jitsi.org/) (multiplatform) 

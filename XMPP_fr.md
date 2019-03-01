@@ -20,7 +20,7 @@ Il existe des clients web orientés réseau social, comme :
 
 Vous pouvez également utiliser un client desktop comme 
 - [Pidgin](http://pidgin.im/) (multiplateforme), 
-- [Gajim](http://gajim.org/index.fr.html) (Linux), 
+- [Gajim](http://gajim.org/index.fr.html) (Linux, Windows),
 - [Dino](https://dino.im) (Linux),
 - [Thunderbird](https://www.mozilla.org/fr/thunderbird/) (multiplateforme), 
 - [Jitsi](http://jitsi.org/) (multiplateforme) 
