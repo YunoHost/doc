@@ -64,7 +64,7 @@ Port 22 # to replace by 9777 for example
 **Open the port** in firewall (you can use -6 option to limit forbid ipv4 connexion)
 ```bash
 yunohost firewall allow TCP 9777
-``` 
+```
 
 Save and restart SSH daemon. Switch over to the new port by restarting SSH.
 ```bash
@@ -75,7 +75,7 @@ Then restart the iptables firewall and close the old port in iptables.
 ```bash
 yunohost firewall reload
 yunohost firewall disallow <your_old_ssh_port_number> # port by default 22
-``` 
+```
 
 You also need to give fail2ban the new SSH port.
 
@@ -84,7 +84,7 @@ To do that you need to create the configuration file `my_ssh_port.conf` with the
 
 ```bash
 nano /etc/fail2ban/jail.d/my_ssh_port.conf
-``` 
+```
 
 and you can fill it with
 
@@ -100,7 +100,7 @@ Finally you have to restart fail2ban in order to apply the new configuration
 
 ```bash
 systemctl restart fail2ban.service
-``` 
+```
 
 **For the next SSH connections ** you need to add the `-p` option followed by the SSH port number.
 
@@ -108,7 +108,7 @@ systemctl restart fail2ban.service
 
 ```bash
 ssh -p <new_ssh_port_number> admin@<your_yunohost_server>
-``` 
+```
 
 ---
 
@@ -145,6 +145,22 @@ Save and restart SSH daemon.
 systemctl restart ssh
 ```
 ---
+
+### Change cipher compatibility configuration
+
+The default TLS configuration for services tend to offer a good compatibility to support old devices. You can tune this policy for specific services like SSH or NGINX. For NGINX you can choose to use what Mozilla call a 'modern' configuration. A modern configuration will be more secure but if you loose the connectivity from your devices it will be ueseless.
+Once you have changed a policy you can always revert the setting if that doesn't feet your environment.
+
+**On your server**, change the policy for NGINX
+```bash
+sudo yunohost settings set security.ciphers.compatibility -v modern
+```
+
+**On your server**, change the policy for SSH
+```bash
+sudo yunohost settings set service.ssh.ciphers.compatibility -v modern
+```
+
 
 ### Disable YunoHost API
 YunoHost administration is accessible through an **HTTP API**, served on the 6787 port by default. It can be used to administrate a lot of things on your server, so malicious actors can also use it to damage your server. The best thing to do, if you know how to use the [command-line interface](/commandline), is to deactivate the `yunohost-api` service.
