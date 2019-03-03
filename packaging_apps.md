@@ -43,7 +43,7 @@ The scripts have to be placed in the `hooks` repository at the root of the YunoH
 
 **Note**: `priority` is optional, default is `50`.
 
-Take a look at the [ownCloud package](https://github.com/Kloadut/owncloud_ynh) for a working example.
+Take a look at the [Nextcloud package](https://github.com/YunoHost-Apps/nextcloud_ynh/) for a working example.
 
 ### Helpers
 <a class="btn btn-lg btn-default" href="packaging_apps_helpers_en">Helpers</a>

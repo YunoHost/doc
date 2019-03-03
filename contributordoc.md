@@ -2,6 +2,7 @@
 
 * [General ways of contributing to YunoHost](/contribute)
 * [Writing documentation](/write_documentation)
+* [Chat rooms](/chat_rooms)
 * Application packaging
    * [Apps wishlist](/apps_wishlist)
    * [General introduction to app packaging](/packaging_apps_start)
@@ -29,4 +30,4 @@
        * [x86 ISO](https://github.com/YunoHost/cd_build)
        * [Raspberry Pi images](https://github.com/YunoHost/rpi-image)
        * [Other ARM board images](https://github.com/YunoHost/arm-images)
-* [Using the YunoHost API outside of the webadmin](/admin_api_fr)
+* [Using the YunoHost API outside of the webadmin](/admin_api)

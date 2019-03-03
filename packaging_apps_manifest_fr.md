@@ -65,7 +65,7 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
 
 * **version** : version du package construit à partir du numéro de version de l’application qui est installée et d'un incrément pour chaque changement du paquet sans changement de version de l'application. "Exemple: 1.0.1~ynh7". Le champ doit être une chaîne de caractères.
 
-* **license** : licence avec laquelle l’application est distribuée : `free`, `non-free`. Attention à ne pas confondre avec la licence du paquet qui doit être mise dans le fichier `LICENSE`.
+* **license** : licence avec laquelle l’application est distribuée : `free`, `non-free` ou une des valeurs de la colonne Identifier du site https://spdx.org/licenses/. Attention à ne pas confondre avec la licence du paquet qui doit être mise dans le fichier `LICENSE`.
 
 * **maintainer** : informations à propos du mainteneur du paquet de l’application pour pouvoir le contacter.
 
@@ -78,7 +78,7 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
 * **arguments** :
   * **install** : paramètres à demander à l’administrateur lors de l’installation.
     * **name** : identifiant du paramètre
-    * **type** : (optionnel) type de paramètre parmis `domain`, `path`, `user`, `app`, `boolean` et `password`. Le champ sera caché dans le cas d’un mot de passe.
+    * **type** : (optionnel) type de paramètre parmis `domain`, `path`, `user`, `app`, `boolean`, `string` et `password`. Le champ sera caché dans le cas d’un mot de passe.
     * **choices** : (optionnel) restreint les réponses possibles à plusieurs choix.
     * **optional** : (optionnel) champs qui indique si ce paramètre est optionnel. Il peut avoir les valeurs `true` ou `false`.
     * **ask** : question posée (au minimum en anglais – `en`) que vous pouvez traduire dans plusieurs langues.

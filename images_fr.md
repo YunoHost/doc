@@ -1,5 +1,12 @@
 # Images
 
+<span class="javascriptDisclaimer">
+Cette page requiert que Javascript soit activé pour s'afficher correctement :s.
+<br/>
+<br/>
+</span>
+
+
 <div id="cards-list">
 </div>
 

@@ -2,6 +2,7 @@
 
 * [Liste des façons de contribuer à YunoHost](/contribute_fr)
 * [Écrire de la documentation](/write_documentation_fr)
+* [Salons de discussion](/chat_rooms_fr)
 * Packaging d'application
    * [Liste d'apps souhaitées par la communauté](/apps_wishlist_fr)
    * [Introduction générale au packaging d'apps](/packaging_apps_start_fr)

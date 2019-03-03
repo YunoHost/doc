@@ -62,7 +62,7 @@ Pour vérifier que tout s'est bien passé, comparer ce qu'affichent ces deux com
 ls -la /home/yunohost.app/nextcloud
 
 Cas A : ls -al /media/stockage
-Cas B : ls -al /media/stockage/nextcloud_data
+Cas B : ls -al /media/stockage/nextcloud_data/nextcloud
 ```
 
 ### Configurer Nextcloud
@@ -83,7 +83,7 @@ Que vous modifiez :
 
 ```bash
 CAS A : 'datadirectory' => '/media/stockage',
-CAS B : 'datadirectory' => '/media/stockage/nextcloud_data',
+CAS B : 'datadirectory' => '/media/stockage/nextcloud_data/nextcloud/data',
 ```
 
 Sauvegardez avec `ctrl+x` puis `y` ou `o` (dépend de la locale de votre serveur).
@@ -97,7 +97,7 @@ systemctl start nginx
 Ajouter le fichier .ocdata
 ```bash
 CAS A : nano /media/stockage/.ocdata
-CAS B : nano /media/stockage/nextcloud_data/.ocdata
+CAS B : nano /media/stockage/nextcloud_data/nextcloud/data/.ocdata
 ```
 Ajouter un espace au fichier pour pouvoir le sauvegarder
 
@@ -118,7 +118,7 @@ L'application KeeWeb est un gestionnaire de mots de passe incorporé à Nextclou
 Mais il arrive parfois que Nextcloud ne laisse pas l'application prendre en charge ces fichiers, ce qui rend alors impossible leur lecture de KeeWeb. Pour remédier à cela, 
 [une solution](https://github.com/jhass/nextcloud-keeweb/issues/34) existe.
 
-Ce rendre dans le répertoire de configuration de Nextcloud :
+Se rendre dans le répertoire de configuration de Nextcloud :
 
 ```bash
 cd /var/www/nextcloud/config/

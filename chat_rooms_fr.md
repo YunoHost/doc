@@ -29,3 +29,10 @@ Il sert également à discuter de l’évolution du packaging, des outils d’in
 - IRC : **#yunohost-apps** sur irc.freenode.net
 - Matrix : **#freenode_#yunohost-apps:matrix.org**
 - XMPP : **[apps@conference.yunohost.org](xmpp:apps@conference.yunohost.org?join)**
+
+#### Documentation
+Le salon de documentation du projet Yunohost. Il permet aux contributeurs d'échanger, pour synchroniser et maintenir une documentation à jour sur les différents aspects du projet : backend, frontend, apps, projet, communauté...
+Vous pouvez aussi y partager vos communications au public à propos de Yunohost (présentations, vidéos...) pour permettre leur référencement dans la documentation.
+- IRC: **#yunohost-doc** sur irc.freenode.net
+- Matrix: **#freenode_#yunohost-doc:matrix.org**
+- XMPP: **[doc@conference.yunohost.org](xmpp:doc@conference.yunohost.org?join)**

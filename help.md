@@ -10,11 +10,11 @@
 </ul>
 </div>
 
-<iframe src="https://kiwiirc.com/client/irc.freenode.org/?nick=foobar|?&theme=mini#yunohost" style="border:0; width:100%; height:450px;"></iframe>
+<iframe src="https://kiwiirc.com/client/irc.freenode.org:+6697/?nick=foobar|?&theme=mini#yunohost" style="border:0; width:100%; height:450px;"></iframe>
 
 </br>
 </br>
-<em>Note : this room is available via IRC (#yunohost on freenode - <a href="https://kiwiirc.com/client/irc.freenode.org/?nick=foobar|?&theme=mini#yunohost">using kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, or Matrix <small>(#freenode_#yunohost:matrix.org - <a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">using Riot</a>)</small></em>
+<em>Note : this room is available via IRC (#yunohost on freenode - <a href="https://kiwiirc.com/client/irc.freenode.org:+6697/?nick=foobar|?&theme=mini#yunohost">using kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, or Matrix <small>(#freenode_#yunohost:matrix.org - <a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">using Riot</a>)</small></em>
 </center>
 
 <h3>... or ask on the forum !</h3>

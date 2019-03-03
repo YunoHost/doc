@@ -10,7 +10,7 @@ Toutes les applications basées sur XMPP sont compatibles entre-elles : lorsque
 
 Un compte XMPP/Jabber est basé sur un identifiant sous la forme `utilisateur@domaine.tld`, ainsi qu’un mot de passe.
 
-Sous yunohost, cet identifiant correspond simplement à l’adresse courriel principale d’un utilisateur. Le mot de passe est celui du compte de l’utilisateur.
+Sous Yunohost, cet identifiant correspond simplement à l’adresse courriel principale d’un utilisateur. Le mot de passe est celui du compte de l’utilisateur.
 
 ### Se connecter à XMPP
 
@@ -20,7 +20,7 @@ Il existe des clients web orientés réseau social, comme :
 
 Vous pouvez également utiliser un client desktop comme 
 - [Pidgin](http://pidgin.im/) (multiplateforme), 
-- [Gajim](http://gajim.org/index.fr.html) (Linux), 
+- [Gajim](http://gajim.org/index.fr.html) (Linux, Windows),
 - [Dino](https://dino.im) (Linux),
 - [Thunderbird](https://www.mozilla.org/fr/thunderbird/) (multiplateforme), 
 - [Jitsi](http://jitsi.org/) (multiplateforme) 

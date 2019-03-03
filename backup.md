@@ -54,35 +54,35 @@ For more informations and options about backup creation, consult `yunohost backu
 
 #### Apps-specific configuration
 
-Some apps such as nextcloud may be related to a large quantity of data which are not backuped by default. This practice is referred to "backing up only the core" (of the app). However it's possible to enable the backup of all data of this app with `yunohost app setting nextcloud backup_core_only -v 0`. Be careful though that your archive might get huge if there's too much data to be backuped...
+Some apps such as Nextcloud may be related to a large quantity of data which are not backuped by default. This practice is referred to "backing up only the core" (of the app). However it's possible to enable the backup of all data of this app with `yunohost app setting nextcloud backup_core_only -v ''`. Be careful though that your archive might get huge if there's too much data to be backuped...
 
 Downloading and uploading backups
 ---------------------------------
 
 After creating backup archives, it is possible to list and inspect them via the corresponding views in the webadmin, or via `yunohost backup list` and `yunohost backup info <archivename>` from the command line. By default, backups are stored in `/home/yunohost.backup/archives/`.
 
-There is currently no straightfoward way to dowload or upload a backup archive.
+Currently, the most accessible way to download archives is to use the program FileZilla as explained in [this page](/filezilla).
 
-One solution consists in using `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. Hence, from a machine running linux, you should be able to run the following to download a specific backup : 
+Alternatively, a solution can be to install Nextcloud or a similar app and configure it to be able to access files in `/home/yunohost.backup/archives/` from a web browser.
+
+Finally, you can use `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. Hence, from a machine running Linux, you should be able to run the following to download a specific backup: 
 
 ```bash
 scp admin@your.domain.tld:/home/yunohost.backup/archives/<archivename>.tar.gz ./
 ```
 
-Similarly, you can upload a backup from a machine to your server with
+Similarly, you can upload a backup from a machine to your server with:
 
 ```bash
 scp /path/to/your/<archivename>.tar.gz admin@your.domain.tld:/home/yunohost.backup/archives/
 ```
-
-Alternatively, a solution can be to install Nextcloud or a similar app and configure it to be able to access files in `/home/yunohost.backup/archives/` from a web browser.
 
 Restoring backups
 -----------------
 
 #### From the webadmin
 
-Go in Backup > Local storage and select your archive. You can then select which items you want to restore, then click 'Restore'.
+Go in Backup > Local storage and select your archive. You can then select which items you want to restore, then click on 'Restore'.
 
 ![](/images/restore.png)
 
@@ -90,17 +90,23 @@ Go in Backup > Local storage and select your archive. You can then select which 
 
 From the command line, you can run `yunohost backup restore <archivename>` (without the `.tar.gz`) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use for instance `yunohost backup restore --apps wordpress` which will restore only the wordpress app.
 
-#### Constrains
+#### Constraints
 
 To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app which is already installed ... which means that to restore an old version of an app, you must first uninstall it.
 
 #### Restoring during the postinstall
 
-One specific feature is the ability to restore a full archive *instead* of the postinstall step. This makes it useful when you want to reinstall a system entirely from an existing backup. To be able to do this, you will need to upload the archive on the server and place it in `/home/yunohost.backup/archives` though. Then, instead of `yunohost tools poinstall` you can run : 
+One specific feature is the ability to restore a full archive *instead* of the postinstall step. This makes it useful when you want to reinstall a system entirely from an existing backup. To be able to do this, you will need to upload the archive on the server and place it in `/home/yunohost.backup/archives`. Then, **instead of** `yunohost tools postinstall` you can run: 
 
 ```bash
 yunohost backup restore <archivename>
 ```
+
+Note: If your archive isn't in `/home/yunohost.backup/archives`, you can specify where it is like this :
+
+```bash
+yunohost backup restore /path/to/<archivename>
+``` 
 
 To go futher
 ------------
@@ -143,7 +149,7 @@ Alternatively, the app Archivist allows to setup a similar system : https://foru
 If you are using an ARM board, another method for doing a full backup can be to create an image of the SD card. For this, poweroff your ARM board, get the SD card in your computer then create a full image with something like : 
 
 ```bash
-dd if=/dev/mmcblk0 of=./backup.img
+dd if=/dev/mmcblk0 of=./backup.img status=progress
 ```
 
 (replace `/dev/mmcblk0` with the actual device of your sd card)

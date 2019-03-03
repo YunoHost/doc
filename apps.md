@@ -1,5 +1,11 @@
 # Apps
 
+<span class="javascriptDisclaimer">
+This page requires Javascript enabled to display properly :s.
+<br/>
+<br/>
+</span>
+
 <div class="input-group">
     <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search"></span></span>
     <input type="text" id="filter-app-cards" class="form-control"  placeholder="Search for apps..." aria-describedby="basic-addon1"/>

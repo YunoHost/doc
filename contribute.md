@@ -83,13 +83,11 @@ Improve this documentation by [writing new pages](/write_documentation) or trans
 <div class="col col-md-8" markdown="1">
 Extend YunoHost capabilities by [packaging new services and web applications](/packaging_apps).    
 Have a look of [what has been done yet](/apps)!
-<br>
-A <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/apps">mailing-list</a> is available.
 </div>
 </div>
 
 ---
 
 <br>
-<p class="lead" markdown="1">In any case, please [come to dev chatroom](xmpp:dev@conference.yunohost.org?join) to contribute :-)</p>
+<p class="lead" markdown="1">In any case, please come chat with us on [the dev chatroom](/chat_rooms) :-)</p>
 

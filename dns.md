@@ -10,7 +10,7 @@ DNS stands for "Domain Name Server", and is often used for the configuration of 
 
 **For example**: `yunohost.org` points to the server at `88.191.153.110`.
 
-This system was created to more easily keep track of server addresses. There are DNS registries for Internet names that you must register with. They are called "registrars", which will let you rent certain domain names for a price (between $5 or a few hundred, depending on the root domain and the chosen name). These [registrars](registrar) are private entities authorised by [ICANN](http://en.wikipedia.org/wiki/ICANN), such as [OVH](https://www.ovh.co.uk/index.xml), [Gandi](http://gandi.net), [NameCheap](http://namecheap.com) or [BookMyName](http://bookmyname.com).
+This system was created to more easily keep track of server addresses. There are DNS registries for Internet names that you must register with. They are called "registrars", which will let you rent certain domain names for a price (between $5 or a few hundred, depending on the root domain and the chosen name). These [registrars](registrar) are private entities authorised by [ICANN](http://en.wikipedia.org/wiki/ICANN), such as [OVH](https://www.ovh.co.uk/index.xml), [Gandi](http://gandi.net), [NameCheap](http://namecheap.com) or [BookMyName](http://bookmyname.com). A privacy respecting registrar is [Njalla](https://njal.la/) or [Njalla Onion Site](njalladnspotetti.onion). With Njalla, you can register a domain name with just an email or XMPP address (N.B. : you won't have full control and ownership of the domain though).
 
 It is important to note that subdomains do not necessarily have to send you to wherever the principal domain is pointing. If `yunohost.org` sends to `88.191.153.110`, that doesn't mean that `backup.yunohost.org` has to point at the same IP. You must therefore configure **all** of the domains and subdomains that you want to use.
 
@@ -22,7 +22,7 @@ There are also different **types** of DNS records, which means that a domain can
 
 You have several choices here. Note that you can mix and match solutions if you have multiple domains: for example, you can have `my-server.nohost.me` using solution **1.**, and `my-server.org` using solution **2.**, both leading to the same Yunohost server.
 
-1. You can use YunoHost's DNS service, which will automatically configure your DNS for you. You must choose a domain that ends with `.nohost.me`, `.noho.st` or `.ynh.fr` for this, which may be inconvenient for you (you would then only be able to use an email address like `john@my-server.noho.st`).
+1. You can use [YunoHost's DNS service](/dns_nohost_me), which will automatically configure your DNS for you. You must choose a domain that ends with `.nohost.me`, `.noho.st` or `.ynh.fr` for this, which may be inconvenient for you (you would then only be able to use an email address like `john@my-server.noho.st`).
 
   **This is the recommended option if you are just starting out with self-hosting.**
 

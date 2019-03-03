@@ -32,3 +32,11 @@ It also allow to discuss packaging evolution, continuous integration tools :
 - IRC: **#yunohost-apps** on irc.freenode.net
 - Matrix: **#freenode_#yunohost-apps:matrix.org**
 - XMPP: **[apps@conference.yunohost.org](xmpp:apps@conference.yunohost.org?join)**
+
+#### Documentation chatroom
+Yunohost project documentation chat room. It allow people to discuss, synchronize and maintain 
+an up-to-date documentation on the differents aspects of the project (backend, frontend, apps, project, community...).
+You may also share here your public communications about Yunohost (videos, presentations, etc.), to allow proper referencing.
+- IRC: **#yunohost-doc** on irc.freenode.net
+- Matrix: **#freenode_#yunohost-doc:matrix.org**
+- XMPP: **[doc@conference.yunohost.org](xmpp:doc@conference.yunohost.org?join)**

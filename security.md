@@ -1,6 +1,6 @@
 # Security
 
-YunoHost has been developed to provide the best security without too much complication. Every protocol used in YunoHost are **encrypted**, only password's hash are stored and by default each user is able to access to his personal directory only.
+YunoHost has been developed to provide the best security without too much complication. Every protocol used in YunoHost are **encrypted**, only password's hashs are stored and by default each user is able to access to his personal directory only.
 
 Two things remain important to note:
 
@@ -29,7 +29,7 @@ ssh-keygen
 ssh-copy-id -i ~/.ssh/id_rsa.pub <your_yunohost_server>
 ```
 
-Type your admnistration password and your key will be copied on your server. 
+Type your admnistration password and your key will be copied on your server.
 
 **On your server**, edit the SSH configuration file, in order to deactivate the password authentication.
 
@@ -61,7 +61,7 @@ nano /etc/ssh/sshd_config
 Port 22 # to replace by 9777 for example
 ```
 
-**Open the port** in firewall (you can use -6 option to limit forbid ipv4 connexion)
+**Open the port** in firewall (you can use `-6` option to deny ipv4 connection)
 ```bash
 yunohost firewall allow TCP 9777
 ```
@@ -74,10 +74,10 @@ Then restart the iptables firewall and close the old port in iptables.
 
 ```bash
 yunohost firewall reload
-yunohost firewall disallow <your_old_ssh_port_number> # port by default 22
+yunohost firewall disallow TCP <your_old_ssh_port_number> # port by default 22
 ```
 
-You also need to give fail2ban the new SSH port.
+You also need to give `fail2ban` the new SSH port.
 
 To do that you need to create the configuration file `my_ssh_port.conf` with the command
 
@@ -96,13 +96,13 @@ port = <your_ssh_port>
 port = <your_ssh_port>
 ```
 
-Finally you have to restart fail2ban in order to apply the new configuration
+Finally you have to restart `fail2ban` in order to apply the new configuration
 
 ```bash
-systemctl restart fail2ban.service
+systemctl restart fail2ban
 ```
 
-**For the next SSH connections ** you need to add the `-p` option followed by the SSH port number.
+**For the next SSH connections **, you need to add the `-p` option followed by the SSH port number.
 
 **Sample**:
 
@@ -161,12 +161,12 @@ sudo yunohost settings set security.ciphers.compatibility -v modern
 sudo yunohost settings set service.ssh.ciphers.compatibility -v modern
 ```
 
-
 ### Disable YunoHost API
-YunoHost administration is accessible through an **HTTP API**, served on the 6787 port by default. It can be used to administrate a lot of things on your server, so malicious actors can also use it to damage your server. The best thing to do, if you know how to use the [command-line interface](/commandline), is to deactivate the `yunohost-api` service.
+YunoHost administration is accessible through an **HTTP API**, served on the 6787 port by default (only on `localhost`). It can be used to administrate a lot of things on your server, so malicious actors can also use it to damage your server. The best thing to do, if you know how to use the [command-line interface](/commandline), is to deactivate the `yunohost-api` service.
 
 ```bash
-sudo service yunohost-api stop
+sudo systemctl disable yunohost-api
+sudo systemctl stop yunohost-api
 ```
 
 ### YunoHost penetration test

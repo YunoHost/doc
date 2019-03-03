@@ -18,7 +18,7 @@
       <span class="yolo 10" style="color: #FF5050;">dude, Y U NO Host?!</span>
       <span class="yolo 11" style="color: #66FF33;">Ruhe bewahren und sich selbst bewirten</span>
     </p>
-    <button class="btn btn-primary btn-lg btn-block yolobtn">Entschuldigung?</button>
+    <button class="btn btn-primary btn-lg btn-block yolobtn">Wie bitte?</button>
   </div>
 
   <div class="main-links hidden-xs">
@@ -34,22 +34,23 @@
     <img src="/images/github_ribbon_grey.png" alt="Folgen Sie Yunohost auf GitHub">
   </a>
 
-  <h1>YunoHost <small>ist ein Serverbetriebssystem mit dem Ziel, Self-Hosting für jedermann zugänglich zu machen.</small></h1>
+  <h1>YunoHost <small>ist ein Serverbetriebssystem mit dem Ziel,<br>
+Self-Hosting für jedermann zugänglich zu machen.</small></h1>
 
   <div class="home-panel">
     <img src="/images/home_panel.jpg" />
   </div>
 
   <div class="call-to-action">
-    <a class="btn btn-primary btn-lg" href="/try">Try it</a>
-    <a class="btn btn-success btn-lg" href="/install">Get started</a>
-    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-2-release-sortie-de-yunohost-3-2/5710">YunoHost v3.2</a></small></p>
+    <a class="btn btn-primary btn-lg" href="/try">Ausprobieren</a>
+    <a class="btn btn-success btn-lg" href="/install">Beginnen</a>
+    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-4-release-sortie-de-yunohost-3-4/6950">YunoHost v3.4</a></small></p>
   </div>
 
   <div class="row cf">
     <div class="col-md-7">
-      <h1>Installieren<small> Sie eure Server mit Leichtigkeit, Sie haben bereits alles zu Hause.</small></h1>
-      <p><br /><a href="/hardware">Siehe die Voraussetzungen.</a></p>
+      <h1>Installieren<small> Sie ganz einfach Ihren eigenen Server. Sie haben bereits alles, was Sie brauchen.</small></h1>
+      <p><br /><a href="/hardware">Hardware-Voraussetzungen</a></p>
     </div>
     <div class="col-md-4">
       <div class="feature-pic">
@@ -67,7 +68,7 @@
       </div>
     </div>
     <div class="col-md-7 text-right">
-      <h1>Genießen <small>Sie Ihre Apps und machen Sie Ihre kleine Ecke von Internet</small></h1>
+      <h1>Erfreuen <small>Sie sich an Ihren eigenen Apps und richten Sie ihre eigene kleine Ecke im Netz ein.</small></h1>
       <p><br /><a href="/apps">Liste der verfügbaren Apps</a></p>
     </div>
   </div>
@@ -76,8 +77,8 @@
 
   <div class="row cf">
     <div class="col-md-7">
-      <h1>Verwalten <small>Sie Ihren Server so, wie Sie es wünschen: per Web, Handy oder Kommandozeile.</small></h1>
-      <p><br /><a href="/try">Testen Sie die Administrationsoberfläche</a></p>
+      <h1>Verwalten <small>Sie Ihren Server so, wie Sie es wünschen: per Web, mobil oder mit der Kommandozeile.</small></h1>
+      <p><br /><a href="/try">Administrationsoberfläche testen</a></p>
     </div>
     <div class="col-md-4">
       <div class="feature-pic">
@@ -99,7 +100,7 @@
       <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_de">Support</a>
     </div>
     <div class="col-md-7 text-right">
-      <h1>Erfahren <small>Sie, was Sie mit einem Server machen können und warum es wichtig ist.</small></h1>
+      <h1>Erfahren <small>Sie, was Sie mit einem Server machen können,<br> und warum es sinnvoll ist.</small></h1>
       <p><br /><a href="/docs">Lesen Sie die Dokumentation</a></p>
     </div>
   </div>
@@ -107,7 +108,7 @@
   <hr />
 
   <div class="text-center">
-    <h1>Hey! Wir sind Menschen!<br /><small> Wenn Sie eine Frage oder ein Problem haben oder wenn Sie nur ein Enthusiast sind, hinterlassen Sie eine Nachricht in unserem Chatraum, indem Sie auf den untenstehenden Button klicken.&nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+    <h1>Hey! Wir sind Menschen.<br /><small> Wenn Sie eine Frage oder ein Problem haben oder wenn Sie auch nur neugierig sind, hinterlassen Sie gerne eine Nachricht in unserem Chatraum, indem Sie auf den untenstehenden Button klicken.&nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
 
    <p class="liberapay">
      <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Donation button" title="Liberapay" /></a>

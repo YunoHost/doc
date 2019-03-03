@@ -9,4 +9,4 @@ Tout commence avec l'utilisateur spécial, **admin**. Il s'agit de l'administrat
 
 L'administrateur peut créer des utilisateurs et installer des applications, parmis d'autres actions d'administration. Les utilisateurs disposent immédiatement d'une adresse email sur le serveur et d'un compte XMPP. Les utilisateurs peuvent se connecter au portail utilisateur (SSO) pour accéder aux applications. Les applications peuvent typiquement être installées soient en accès public, ou privé, c'est-à-dire que seul les utilisateurs du serveur pourront y accéder.
 
-Les applications et autres fonctionnalités du serveur reposent sur plusieurs services pour fonctionner proprement. Les services (aussi appelés daemon) sont des programmes qui tournent constamment pour assurer des tâches, telles que répondres aux requêtes web des navigateurs web, ou relayer les emails.
+Les applications et autres fonctionnalités du serveur reposent sur plusieurs services pour fonctionner proprement. Les services (aussi appelés daemon) sont des programmes qui tournent constamment pour assurer des tâches, telles que répondre aux requêtes web des navigateurs web, ou relayer les emails.

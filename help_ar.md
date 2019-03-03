@@ -12,14 +12,14 @@
 <div dir="rtl"><strong>الإسم المستعار</strong> : <input id="nickname" value="foobar__" type="text">
 </div>
 
-<iframe src="https://kiwiirc.com/client/irc.freenode.org/?nick=foobar|?&theme=mini#yunohost" style="border:0; width:100%; height:450px;"></iframe>
+<iframe src="https://kiwiirc.com/client/irc.freenode.org:+6697/?nick=foobar|?&theme=mini#yunohost" style="border:0; width:100%; height:450px;"></iframe>
 
 </br>
 </br>
 <div dir="rtl">
 <em>ملاحظة : يمكن الإتصال كذلك بغرفة المحادثة باستخدام تطبيق XMPP الخاص بك على العنوان التالي </br>
 support@conference.yunohost.org </br>
-<a target="_blank" href="https://kiwiirc.com/client/irc.freenode.org/?nick=foobar|?&theme=mini#yunohost">kiwiirc</a>  باستخدام   freenode على #yunohost IRC أو </br>
+<a target="_blank" href="https://kiwiirc.com/client/irc.freenode.org:+6697/?nick=foobar|?&theme=mini#yunohost">kiwiirc</a>  باستخدام   freenode على #yunohost IRC أو </br>
 <a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">Riot</a> باستخدام Matrix أو </br>
 </em>
 </div>

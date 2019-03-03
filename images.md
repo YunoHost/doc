@@ -1,5 +1,11 @@
 # Pre-installed images
 
+<span class="javascriptDisclaimer">
+This page requires Javascript enabled to display properly :s.
+<br/>
+<br/>
+</span>
+
 <div id="cards-list">
 </div>
 
