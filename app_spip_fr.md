@@ -1,22 +1,31 @@
-#SPIP for YunoHost
+# SPIP for YunoHost
 
-###SPIP c'est quoi ?
+### SPIP c'est quoi ?
+
 SPIP est un système de publication pour l’Internet qui s’attache particulièrement au fonctionnement collectif, au multilinguisme et à la facilité d’emploi. C’est un logiciel libre, distribué sous la licence GNU/GPL. Il peut ainsi être utilisé pour tout site Internet, qu’il soit associatif ou institutionnel, personnel ou marchand.
 
 Source : [spip.net](https://www.spip.net/fr_rubrique91.html)
 
-###Fonctionnalité de l'application pour Yunohost
+### Fonctionnalité de l'application pour Yunohost
+
 * Installation de la base sans passer par le système d'installation
 * Support multilingue
 * Support LDAP
 
-####Installation
-`$ sudo yunohost app install https://github.com/YunoHost-Apps/spip_ynh.git`
+#### Installation
 
-####Mise à jour
-`$ sudo yunohost app upgrade --verbose spip -u https://github.com/YunoHost-Apps/spip_ynh.git`
+```bash
+$ sudo yunohost app install https://github.com/YunoHost-Apps/spip_ynh.git
+```
 
-####Utilisation
+#### Mise à jour
+
+```
+$ sudo yunohost app upgrade --verbose spip -u https://github.com/YunoHost-Apps/spip_ynh.git
+```
+
+#### Utilisation
+
 Accéder à l'administration du site en écrivant l'adresse suivante dans votre navigateur.
 
 https://www.domain.tld/spip/ecrire
