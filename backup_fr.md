@@ -136,7 +136,7 @@ yunohost backup create --apps wordpress
 puis rendez-le exécutable :
 
 ```bash
-chown +x /etc/cron.weekly/backup-wordpress
+chmod +x /etc/cron.weekly/backup-wordpress
 ```
 
 Soyez prudent à propos de ce que vous sauvegardez et de la fréquence : il vaut mieux éviter de se retrouver avec un disque saturé car vous avez voulu sauvegarder 30 Go de données tous les jours...
