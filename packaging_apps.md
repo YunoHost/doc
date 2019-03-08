@@ -116,13 +116,17 @@ This Python script checks:
 * that scripts exit well before modifing the system during verification.
 
 ### Publish and ask for testing your application
+
 * Publishing a [post on the Forum](https://forum.yunohost.org/) with the [`App integration` category](https://forum.yunohost.org/c/app-integration), to ask for testing and feedback on your application.
 
-* If your application is released under free softare licence, ask your application to be added to the [app repository](https://github.com/YunoHost/apps) to be displayed in the [non-official apps list](apps_en). Otherwise you may find a non-official list to add you app to, easing the installation on Yunohost (non-existent yet). Specify its progress state: `notworking`, `inprogress`, or `working`.
+* If your application is released under a free software license, you may ask the YunoHost app team to integrate your application to the [app repository](https://github.com/YunoHost/apps) (c.f. also the [app list](apps_en)). You can add your application even if it is not stable or working yet : the current state can be specified to `notworking`, `inprogress`, or `working`.
+
+* If your application is *not* free software, then in the future, a non-official list might be created to handle them but is non-existent yet.
 
 - Subscribe to the [Apps mailing list](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps) to be informed about packaging evolution.
 
 ### Officalization of an application
+
 **!! This section is obsolete as of 08/03/19** - The project's organization regarging this point is to be changed.
 
 To become an official application, it must be tested well enough, be stable and should work on Debian Stretch 64 bits, 32 bits and ARM architectures. If you think those conditions are met, ask for [official integration](https://github.com/YunoHost/apps) of your application.

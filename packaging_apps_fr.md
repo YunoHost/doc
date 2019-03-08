@@ -98,13 +98,17 @@ Il s’agit d’un script Python qui vérifie :
 * que les scripts quittent bien avant de modifier le système lors de vérifications.
 
 ### Publiez et demandez des tests de votre application
+
 * Demandez des tests et des retours sur votre application en publiant un [post sur le Forum](https://forum.yunohost.org/) dans la [catégorie `App integration`](https://forum.yunohost.org/c/app-integration).
 
-* Si votre paquet et l'application qu'il contient sont sous licence libre, faites une demande d’ajout de votre application dans le [dépôt des applications](https://github.com/YunoHost/apps) afin qu’elle soit affichée dans [la liste des apps non officielles](apps_fr). Autrement, cherchez une liste non-officielle à laquelle vous rajouter (non-existante à ce jour), pour permettre son installation intégrée dans Yunohost. Préciser également son état d’avancement : `notworking`, `inprogress` ou `working`.
+* Si votre paquet et l'application qu'il contient sont sous licence libre, faites une demande d’ajout de votre application dans le [dépôt des applications](https://github.com/YunoHost/apps) (voir aussi [la liste des apps](apps_fr)). Vous pouvez ajouter une application même si celle-ci n'est pour le moment pas fonctionelle : l'état d'avancement peut être `notworking`, `inprogress` ou `working`.
+
+* Si votre application n'est *pas* sous licence libre, il se peut qu'une liste non-officielle soit créée pour gérer ces applications. Ce n'est pour l'instant pas le cas.
 
 - Inscrivez-vous à la [mailing list Apps](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps) pour être tenu au courant des évolutions du packaging.
 
 ### Officialisation d’une application
+
 **!! Section obsolète au 08/03/19** - Le fonctionnement du projet est en cours d'évolution sur ce point.
 
 Pour qu’une application devienne officielle, elle doit être suffisamment testée, stable et fonctionner sous Debian Stretch 64 bits, 32 bits et ARM. Si ces conditions vous paraissent réunies, demandez l’[intégration officielle](https://github.com/YunoHost/apps) de votre application.
