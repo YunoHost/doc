@@ -108,6 +108,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Loomio](https://www.loomio.org)
 - [MaidSafe](http://maidsafe.net)
 - [Mailpile](https://www.mailpile.is)
+- [Mastodon](https://joinmastodon.org)
 - [Matomo](https://matomo.org/) (formerly Piwik)
 - [MediaCrush](https://github.com/MediaCrush/MediaCrush) (/!\ last update: Jan 23, 2015)
 - [MinigalNano](https://github.com/sebsauvage/MinigalNano) (/!\ last update: Jun 24, 2016)
