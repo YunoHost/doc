@@ -112,13 +112,15 @@ These deposits have several functions:
 * indicate the state of operation of the packet;
 * indicate information about the support of a package.
 
-For the `official.json` and` community.json` lists, registration is on [the git apps repository](https://github.com/YunoHost/apps).
+For the `official.json` and` community.json` lists maintained by the project team, registration is on [the git apps repository](https://github.com/YunoHost/apps). Other non-official lists may exists (including those for non-free apps for example), see more about that in the [community forum](https//forum.yunohost.org).
 
 #### YEP 1.3
 ##### Indicate the license associated with the package | draft | AUTO | WORKING |
 The license of the packet must be specified in a `LICENSE` file at the root of the packet. Be careful not to confuse with the license of the application that will be installed whose acronym is to be entered in the `license` field of the manifest.
 
 The application lists official.json and community.json only accept packages with a free license, as well as the license for the contained application. Some free applications require non-free dependencies (example: mp3, drivers, etc.). In this case, you should add `&dep-non-free` to the acronym and if possible give details in the README.md of the package, in this case the integration will be accepted on a case-by-case basis.
+
+**NB:** Packets not included in offical lists may still be installed: either manually with the URL to the packet, or in a more practical way using other lists (which remain to be created by the community).
 
 In the future, YunoHost will probably display details about the license of the application. To achieve this, the acronym must be the one from this [list of licenses listed in the SPDX](https://spdx.org/licenses/) (if there are 2 acronyms, the one containing the version number). For consistency, the case must be respected.
 
