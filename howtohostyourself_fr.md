@@ -4,14 +4,14 @@ Vous pouvez vous auto-héberger à la maison (sur un petit ordinateur), ou sur u
 
 ### À la maison, par exemple sur une carte ARM ou un ancien ordinateur
 
-Vous pouvez vous hébergez chez vous, sur une carte ARM ou un vieil ordinateur, connecté à votre box internet.
+Vous pouvez vous héberger chez vous, sur une carte ARM ou un vieil ordinateur, connecté à votre box internet.
 
 - **Avantages** : vous aurez un contrôle physique sur la machine et avez seulement besoin d'acheter le matériel initial ;
-- **Inconvénients** : il vous faudra [configuré manuellement votre box internet](isp_box_config) et serez possiblement [limité par certains aspects de votre fournisseur d'accès internet](isp).
+- **Inconvénients** : il vous faudra [configurer manuellement votre box internet](isp_box_config) et serez possiblement [limité par certains aspects de votre fournisseur d'accès internet](isp).
 
 ### À la maison, derrière un VPN
 
-Un VPN est un tunnel chiffré entre deux machines. En pratique, cela permet de faire "comme si" une machine était connecté depuis ailleurs. Ceci permet de s'auto-héberger à la maison tout en contournant les limitations du fournisseur d'accès internet. Voir aussi [le projet Brique Internet](https://labriqueinter.net/) et [la FFDN](https://www.ffdn.org/).
+Un VPN est un tunnel chiffré entre deux machines. En pratique, cela permet de faire "comme si" une machine était connectée depuis ailleurs. Ceci permet de s'auto-héberger à la maison tout en contournant les limitations du fournisseur d'accès internet. Voir aussi [le projet Brique Internet](https://labriqueinter.net/) et [la FFDN](https://www.ffdn.org/).
 
 - **Avantages** : vous aurez un contrôle physique sur la machine, et le VPN permettra de cacher votre traffic vis-à-vis de votre FAI ainsi que de contourner ses limitations ;
 - **Inconvénients** : il vous faudra payer des frais mensuels pour le VPN.
