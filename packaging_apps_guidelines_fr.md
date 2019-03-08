@@ -121,7 +121,7 @@ La licence du paquet est à indiquer dans un fichier `LICENSE` à la racine du p
 
 Les listes d'applications official.json et community.json n'acceptent que les paquets dont la licence est libre, de même pour la licence de l'application contenue. Certaines applications libres nécessitent des dépendances non-libres (exemple: mp3, drivers, etc.). Dans ce cas, il faut ajouter `&dep-non-free` à l'acronyme et si possible donner des précisions dans le README.md du paquet, l'intégration sera dans ce cas acceptée au cas par cas.
 
-**NB :** Les paquets non-inclus dans les listes maintenues par le projet peuvent tout de même être installés : soit manuellement via le lien du paquet, soit de manière plus intégrée via des listes non-officielles (qui restent encore à créer par la communauté).
+**NB :** Les applications non-présentes dans les listes maintenues par le projet peuvent tout de même être installées : soit manuellement via le lien de l'application, soit de manière plus intégrée via des listes non-officielles (qui peuvent être créées et maintenues par la communauté).
 
 Dans le futur, YunoHost affichera sans doute des détails sur la licence de l'application. Pour y parvenir, l'acronyme doit être celui issu de cette [liste de licences répertoriées du SPDX](https://spdx.org/licenses/) (si il y a 2 acronymes, il faut prendre celui contenant le numéro de version). Pour plus de cohérence, la casse doit être respectée.
 

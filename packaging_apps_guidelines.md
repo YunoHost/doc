@@ -120,7 +120,7 @@ The license of the packet must be specified in a `LICENSE` file at the root of t
 
 The application lists official.json and community.json only accept packages with a free license, as well as the license for the contained application. Some free applications require non-free dependencies (example: mp3, drivers, etc.). In this case, you should add `&dep-non-free` to the acronym and if possible give details in the README.md of the package, in this case the integration will be accepted on a case-by-case basis.
 
-**NB:** Packets not included in offical lists may still be installed: either manually with the URL to the packet, or in a more practical way using other lists (which remain to be created by the community).
+**NB:** Apps not included in offical lists may still be installed: either manually with the URL to the app, or in a more practical way using non-official lists (which can be created and maintained by the community).
 
 In the future, YunoHost will probably display details about the license of the application. To achieve this, the acronym must be the one from this [list of licenses listed in the SPDX](https://spdx.org/licenses/) (if there are 2 acronyms, the one containing the version number). For consistency, the case must be respected.
 
