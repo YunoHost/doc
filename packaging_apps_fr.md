@@ -105,8 +105,6 @@ Il s’agit d’un script Python qui vérifie :
 
 * Si votre application n'est *pas* sous licence libre, il se peut qu'une liste non-officielle soit créée pour gérer ces applications. Ce n'est pour l'instant pas le cas.
 
-- Inscrivez-vous à la [mailing list Apps](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps) pour être tenu au courant des évolutions du packaging.
-
 ### Officialisation d’une application
 
 **!! Section obsolète au 08/03/19** - Le fonctionnement du projet est en cours d'évolution sur ce point.

@@ -123,8 +123,6 @@ This Python script checks:
 
 * If your application is *not* free software, then in the future, a non-official list might be created to handle them but is non-existent yet.
 
-- Subscribe to the [Apps mailing list](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps) to be informed about packaging evolution.
-
 ### Officalization of an application
 
 **!! This section is obsolete as of 08/03/19** - The project's organization regarging this point is to be changed.
