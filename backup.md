@@ -61,10 +61,6 @@ Downloading and uploading backups
 
 After creating backup archives, it is possible to list and inspect them via the corresponding views in the webadmin, or via `yunohost backup list` and `yunohost backup info <archivename>` from the command line. By default, backups are stored in `/home/yunohost.backup/archives/`.
 
-There is currently no straightfoward way to download or upload a backup archive.
-
-One solution consists in using `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. Hence, from a machine running Linux, you should be able to run the following to download a specific backup: 
-
 Currently, the most accessible way to download archives is to use the program FileZilla as explained in [this page](/filezilla).
 
 Alternatively, a solution can be to install Nextcloud or a similar app and configure it to be able to access files in `/home/yunohost.backup/archives/` from a web browser.
@@ -99,7 +95,6 @@ From the command line, you can run `yunohost backup restore <archivename>` (with
 To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app which is already installed ... which means that to restore an old version of an app, you must first uninstall it.
 
 #### Restoring during the postinstall
-
 
 One specific feature is the ability to restore a full archive *instead* of the postinstall step. This makes it useful when you want to reinstall a system entirely from an existing backup. To be able to do this, you will need to upload the archive on the server and place it in `/home/yunohost.backup/archives`. Then, **instead of** `yunohost tools postinstall` you can run: 
 

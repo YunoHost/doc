@@ -100,7 +100,6 @@ Une fonctionnalité particulière est la possibilité de restaurer une archive e
 
 Ensuite, **à la place de** `yunohost tools postinstall`, réalisez la restauration de l'archive téléversée par cette ligne de commande avec le nom de l'archive (sans le `.tar.gz`) :
 
-
 ```bash
 yunohost backup restore <nom_d'archive>
 ```
