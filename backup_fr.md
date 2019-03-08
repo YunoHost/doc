@@ -54,7 +54,11 @@ Pour plus d'informations et d'options sur la création d'archives, consultez `yu
 
 #### Configuration spécifique à certaines apps
 
-Certaines apps comme Nextcloud sont potentiellement rattachées à des quantités importantes de données, qui ne sont pas sauvegardées par défaut. Dans ce cas, on dit que l'app "sauvegarde uniquement le core" (de l'app). Néanmoins, il est possible d'activer la sauvegarde de toutes les données de cette application avec (dans le cas de Nextcloud) `yunohost app setting nextcloud backup_core_only -v ''`. Soyez prudent : en fonction des données stockées dans Nextcloud, il se peut que l'archive que vous obtenez ensuite devienne énorme...
+Certaines apps comme Nextcloud sont potentiellement rattachées à des quantités importantes de données. Il est possible de ne pas les sauvegarder par défaut. Dans ce cas, on dit que l'app "sauvegarde uniquement le core" (de l'app). 
+
+Pour activer la sauvegarde de toutes les données de cette application vous pouvez utiliser (dans le cas de Nextcloud) `yunohost app setting nextcloud backup_core_only -v ''`. Cette commande ajoute `backup_core_only` dans `/etc/yunohost/apps/nextcloud/settings.yml`. Soyez prudent : en fonction des données stockées dans Nextcloud, il se peut que l'archive que vous obtenez ensuite devienne énorme...
+
+Pour désactiver la sauvegarde de toutes les données de cette application vous pouvez utiliser (dans le cas de Nextcloud) `yunohost app setting nextcloud backup_core_only -v '1'`. Cette commande ajoute `backup_core_only: '1'` dans `/etc/yunohost/apps/nextcloud/settings.yml`. Soyez prudent : il vous faudra alors sauvegarder vous même les données des utilisateurs de nextcloud. Choisir ce type de sauvegarde vous permettra de mettre en place manuellement des sauvegardes incrémentielles ou différentielles (que yunohost ne permet pas encore de faire automatiquement).
 
 Télécharger et téléverser des sauvegardes
 -----------------------------------------
