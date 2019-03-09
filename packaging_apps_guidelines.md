@@ -213,7 +213,7 @@ There is also README.md, which must and can contain:
 #### YEP 1.12
 ##### Follow the template from [example_ynh](https://github.com/YunoHost/example_ynh) | draft | manual | OFFICIAL |
 In order to facilitate the work of the community regarding a package, it has to follow the template shown by the example app.  
-This will help other packagers to read, modified and debug the package. Also, it will help to prolong the life of the package by giving it a standard template that other packagers will be able to quickly understand in case a package become orphan.  
+This will help other packagers to read, modify and debug the package. Also, it will help extend the life of the package by giving it a standard template that other packagers can quickly understand in the event that a package becomes orphaned.
 As well, a package should not use exotic or uselessly complicated code if it's not really needed. If so, this part of the code should be clearly documented.  
 Keep your code as easy as possible, keep everything a script needs directly into it. Do not move functions in another file. Keep it simple and efficient.
 
