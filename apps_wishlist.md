@@ -44,6 +44,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Drupal](https://www.drupal.org/)
 - [Emoncms](https://github.com/emoncms/emoncms)
 - [ERPnext](https://erpnext.com/download)
+- [EteSync](https://www.etesync.com/)
 - [Ethersheet](https://github.com/ethersheet-collective/EtherSheet)
 - [Fail2web](https://github.com/Sean-Der/fail2web)
 - [Ferment](https://github.com/mmckegg/ferment)
