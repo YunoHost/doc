@@ -62,7 +62,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Gollum](https://github.com/gollum/gollum)
 - [Goploader](https://github.com/Depado/goploader)
 - [Granary](https://github.com/snarfed/granary)
-- [Gotify](https://gotify.net)
 - [Guacamole](http://guac-dev.org)
 - [HackMD CE](https://github.com/hackmdio/hackmd)
 - [Hackpad](https://github.com/dropbox/hackpad)
