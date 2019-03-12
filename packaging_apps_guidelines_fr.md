@@ -32,6 +32,7 @@ Chaque YEP est associée à :
 | YEP 1.9 | Documenter l'app  | validé | AUTO | OFFICIAL (6) |
 | YEP 1.10 | Garder un historique de version propre   | brouillon | manuel | OFFICIAL (6) |
 | YEP 1.11 | Ajouter l'app au [bugtracker YunoHost](https://github.com/yunohost/issues/issues)   | brouillon | manuel | OFFICIAL (NA) |
+| YEP 1.12 | Suivre le modèle de [example_ynh](https://github.com/YunoHost/example_ynh) | brouillon | manuel | OFFICIAL (8) |
 | | | | | |
 | **YEP 2** | **Stabiliser une app** | **Statut** | **Test** | **Niveau** |
 | YEP 2.1 | Respecter le format du manifeste  | validé | auto | INPROGRESS (5) |
@@ -209,6 +210,13 @@ Il y a également le README.md, ce dernier doit et peut contenir :
 ##### Garder un historique de version propre   | brouillon | manuel | OFFICIAL |
 #### YEP 1.11
 ##### Ajouter l'app au [bugtracker YunoHost](https://github.com/yunohost/issues/issues)   | brouillon | manuel | OFFICIAL |
+
+#### YEP 1.12
+##### Suivre le modèle de [example_ynh](https://github.com/YunoHost/example_ynh) | brouillon | manuel | OFFICIAL |
+Afin de faciliter le travail de la communauté concernant un package, il doit suivre le modèle montré par l'application d'exemple.  
+Cela aidera les autres packagers à lire, modifier et débugger le paquet. De plus, cela aidera à prolonger la durée de vie du package en lui donnant un modèle standard que les autres packagers seront en mesure de comprendre rapidement au cas où un package deviendrait orphelin.  
+De plus, un package ne devrait pas utiliser de code exotique ou inutilement compliqué si ce n'est pas vraiment nécessaire. Le cas échéant, cette partie du code devrait être clairement documentée.  
+Gardez votre code aussi simple que possible, gardez tout ce dont un script a besoin directement dedans. Ne déplacez pas les fonctions dans un autre fichier. Restez simple et efficace.
 
 ### YEP 2
 #### Stabiliser une app
