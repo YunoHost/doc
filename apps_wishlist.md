@@ -63,6 +63,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Goploader](https://github.com/Depado/goploader)
 - [Granary](https://github.com/snarfed/granary)
 - [Guacamole](http://guac-dev.org)
+- [Habitica](https://habitica.com/)
 - [HackMD CE](https://github.com/hackmdio/hackmd)
 - [Hackpad](https://github.com/dropbox/hackpad)
 - [Hexo](https://hexo.io/)
