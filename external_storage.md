@@ -87,7 +87,7 @@ mount /dev/YOUR_DISK1 /media/storage
 
 (Here, `/dev/YOUR_DISK1` corresponds to the first partition on the disk)
 
-Next, you should be able to create files in `/media/stockage`, and, for instance, add `/media/stockage` as an external drive in Nextcloud.
+Next, you should be able to create files in `/media/storage`, and, for instance, add `/media/storage` as an external drive in Nextcloud.
 
 ## 4. Mount the disk automatically at boot
 
