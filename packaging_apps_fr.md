@@ -97,6 +97,11 @@ Il s’agit d’un script Python qui vérifie :
 * que le manifeste ne comporte pas d’erreur de syntaxe
 * que les scripts quittent bien avant de modifier le système lors de vérifications.
 
+### Intégration continue
+
+Un serveur d'intégration continue est a disposition des packagers désirant tester leurs applications.  
+<a class="btn btn-lg btn-default" href="packaging_apps_ci">Intégration continue</a>
+
 ### Publiez et demandez des tests de votre application
 
 * Demandez des tests et des retours sur votre application en publiant un [post sur le Forum](https://forum.yunohost.org/) dans la [catégorie `App integration`](https://forum.yunohost.org/c/app-integration).

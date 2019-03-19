@@ -115,6 +115,11 @@ This Python script checks:
 * that the manifest doesn't have syntax errors
 * that scripts exit well before modifing the system during verification.
 
+### Continuous integration
+
+A continuous integration server is available for packagers who want to test their apps.  
+<a class="btn btn-lg btn-default" href="packaging_apps_ci">Continuous integration</a>
+
 ### Publish and ask for testing your application
 
 * Publishing a [post on the Forum](https://forum.yunohost.org/) with the [`App integration` category](https://forum.yunohost.org/c/app-integration), to ask for testing and feedback on your application.
