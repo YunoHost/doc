@@ -13,7 +13,7 @@ Ce document a pour but de lister les différentes bonnes pratiques concernant la
 Chaque bonne pratique est numérotée avec un numéro suffixé par les lettres YEP (YunoHost Enhancement Proposals), ceci afin de pouvoir y faire référence facilement dans les outils d'analyse automatique de paquet ([package checker](https://github.com/YunoHost/package_check), [package linter](https://github.com/YunoHost/package_linter)), mais également lors des revues de code.
 
 Chaque YEP est associée à :
-* un statut indiquant si la règle a été validé ou si elle fait encore l'objet de discussion (brouillon, validé, refusé, obsolète) ;
+* un statut indiquant si la règle a été validée ou si elle fait encore l'objet de discussion (brouillon, validé, refusé, obsolète) ;
 * une indication sur le type de test à mener (manuel ou auto si un outil automatique peut vérifier) ;
 * une indication du niveau d'app à partir duquel la règle est nécessaire (NOTWORKING, INPROGRESS, WORKING, OFFICIAL), certaines règles sont optionnelles ;
 
@@ -114,13 +114,15 @@ Ces dépôts ont plusieurs fonctions :
 * indiquer l'état de fonctionnement du paquet ;
 * indiquer des informations sur le support d'un paquet.
 
-Pour les listes `official.json` et `community.json`, l'inscription se fait sur [le dépôt git "apps"](https://github.com/YunoHost/apps).
+Pour les listes `official.json` et `community.json` maintenues par l'équipe du projet Yunohost, l'inscription se fait sur [le dépôt git "apps"](https://github.com/YunoHost/apps). D'autres listes non-officielles (notamment celles incluant des applications non-libres) peuvent exister, se réferer au [Forum](https://forum.yunohost.org) de la communauté.
 
 #### YEP 1.3
 ##### Indiquer la licence associée au paquet  | brouillon | AUTO | WORKING |
 La licence du paquet est à indiquer dans un fichier `LICENSE` à la racine du paquet. Attention à ne pas confondre avec la licence de l'application qui va être installée dont l'acronyme est à renseigner dans le champ `license` du manifeste.
 
 Les listes d'applications official.json et community.json n'acceptent que les paquets dont la licence est libre, de même pour la licence de l'application contenue. Certaines applications libres nécessitent des dépendances non-libres (exemple: mp3, drivers, etc.). Dans ce cas, il faut ajouter `&dep-non-free` à l'acronyme et si possible donner des précisions dans le README.md du paquet, l'intégration sera dans ce cas acceptée au cas par cas.
+
+**NB :** Les applications non-présentes dans les listes maintenues par le projet peuvent tout de même être installées : soit manuellement via le lien de l'application, soit de manière plus intégrée via des listes non-officielles (qui peuvent être créées et maintenues par la communauté).
 
 Dans le futur, YunoHost affichera sans doute des détails sur la licence de l'application. Pour y parvenir, l'acronyme doit être celui issu de cette [liste de licences répertoriées du SPDX](https://spdx.org/licenses/) (si il y a 2 acronymes, il faut prendre celui contenant le numéro de version). Pour plus de cohérence, la casse doit être respectée.
 
