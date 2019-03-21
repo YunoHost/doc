@@ -70,6 +70,19 @@ This page lists a few installation guides.
 
 ---
 
+<h1 style="font-weight: 100">Install with our friendly VPS partner</h1>
+
+<div class="row">
+
+<div class="block-center text-center">
+<a href="https://community.time4vps.com/discussion/453/yunohost-getting-started-with-yunohost#latest"><img src="/images/vps.png" height=150 style="vertical-align:bottom;text-align:center"><b><p>Time4vps</p></b></a>
+</div>
+
+
+</div>
+
+---
+
 <h1 style="font-weight: 100">Advanced / others</h1>
 
 <div class="row">
