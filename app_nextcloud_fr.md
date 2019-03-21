@@ -31,7 +31,7 @@ systemctl stop nginx
 Pour l'instant seul root peut y écrire dans `/media/stockage`; ce qui signifie que nginx et nextcloud ne pourront donc pas l'utiliser.
 
 ```bash
-chown -R nextcloud:www-data /media/stockage
+chown -R nextcloud:nextcloud /media/stockage
 chmod 775 -R /media/stockage
 ```
 
