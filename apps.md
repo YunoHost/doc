@@ -15,6 +15,8 @@ This page requires Javascript enabled to display properly :s.
         </button>
         <ul class="dropdown-menu">
             <li><a href="#" id="app-cards-list-validated">Only official apps</a></li>
+            <li><a href="#" id="app-cards-list-high-quality">Only High Quality apps</a></li>
+            <li><a href="#" id="app-cards-list-featured">Only Featured apps</a></li>
             <li><a href="#" id="app-cards-list-working">Only working apps</a></li>
             <li><a href="#" id="app-cards-list-working-inprogress">In progress/not working apps</a></li>
             <li><a href="#" id="app-cards-list-all-apps">All apps</a></li>
@@ -182,6 +184,18 @@ $(document).ready(function () {
     $('#app-cards-list-validated').click(function(){
         filters = ["validated"];
         $('#app-cards-list-filter-text').text($('#app-cards-list-validated').text());
+        filter();
+    });
+
+    $('#app-cards-list-high-quality').click(function(){
+        filters = ["high_quality"];
+        $('#app-cards-list-filter-text').text($('#app-cards-list-high-quality').text());
+        filter();
+    });
+
+    $('#app-cards-list-featured').click(function(){
+        filters = ["featured"];
+        $('#app-cards-list-filter-text').text($('#app-cards-list-featured').text());
         filter();
     });
 
