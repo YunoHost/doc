@@ -148,17 +148,18 @@ systemctl restart ssh
 
 ### Change cipher compatibility configuration
 
-The default TLS configuration for services tend to offer a good compatibility to support old devices. You can tune this policy for specific services like SSH or NGINX. For NGINX you can choose to use what Mozilla call a 'modern' configuration. A modern configuration will be more secure but if you loose the connectivity from your devices it will be ueseless.
-Once you have changed a policy you can always revert the setting if that doesn't feet your environment.
+The default TLS configuration for services tend to offer a good compatibility to support old devices. You can tune this policy for specific services like SSH and NGINX. By default, the NGINX configuration follows the [intermediate compatibility recommendation](https://wiki.mozilla.org/Security/Server_Side_TLS#Intermediate_compatibility_.28default.29) from Mozilla. You can choose to switch to the 'modern' configuration which uses more recent security recommendations, but decreases the compatibility, which may be an issue for your users and visitors using older devices. More details about the compatibility can be found on [this page](https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility).
+
+Changing the compatibility level is not definitive and can be reverted if it doesn't feet your environment.
 
 **On your server**, change the policy for NGINX
 ```bash
-sudo yunohost settings set security.ciphers.compatibility -v modern
+sudo yunohost settings set security.nginx.compatibility -v modern
 ```
 
 **On your server**, change the policy for SSH
 ```bash
-sudo yunohost settings set service.ssh.ciphers.compatibility -v modern
+sudo yunohost settings set service.ssh.compatibility -v modern
 ```
 
 ### Disable YunoHost API
