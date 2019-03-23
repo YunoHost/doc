@@ -83,14 +83,6 @@ Similarly, you can upload a backup from a machine to your server with:
 scp /path/to/your/<archivename>.tar.gz admin@your.domain.tld:/home/yunohost.backup/archives/
 ```
 
-### Workaround to retrieve the backups
-
-<div class="alert alert-danger">
-  <span class="glyphicon glyphicon-exclamation-sign"></span> Since Yunohost version 3.3 and the choice to connect as the `admin` user, there is a [limitation](https://github.com/YunoHost/issues/issues/1266) that prevents straight access to the backups folder `/home/yunohost.backup/archives/`
-</div>
-
-Until the issue is solved, you will need to follow [a workaround](/backup_workaround) to manage the backup files.
-
 ## Restoring backups
 
 ### From the webadmin
