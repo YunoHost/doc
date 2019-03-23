@@ -10,7 +10,7 @@
 
 * Un matériel compatible x86 dédié à YunoHost : portable, netbook, ordinateur. Vous pouvez réutiliser n’importe quelle machine avec **256 Mo de RAM minimum**
 * Un autre ordinateur pour parcourir ce guide et accéder à votre serveur
-* Un [fournisseur d’accès correct](/isp_fr), de préférence avec une bonne vitesse de téléversement
+* Un [fournisseur d’accès correct](/isp_fr), de préférence avec une bonne vitesse de téléversement (débit montant)
 * Une **clé USB** d’une capacité minimum d’1Go **OU** un **CD vierge** standard
 * ***Cas particulier*** : Si votre serveur n'a pas de carte graphique, il faut [préparer un iso qui démarre sur le port série](https://github.com/luffah/debian-mkserialiso).
 
