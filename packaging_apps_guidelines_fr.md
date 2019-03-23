@@ -13,7 +13,7 @@ Ce document a pour but de lister les différentes bonnes pratiques concernant la
 Chaque bonne pratique est numérotée avec un numéro suffixé par les lettres YEP (YunoHost Enhancement Proposals), ceci afin de pouvoir y faire référence facilement dans les outils d'analyse automatique de paquet ([package checker](https://github.com/YunoHost/package_check), [package linter](https://github.com/YunoHost/package_linter)), mais également lors des revues de code.
 
 Chaque YEP est associée à :
-* un statut indiquant si la règle a été validé ou si elle fait encore l'objet de discussion (brouillon, validé, refusé, obsolète) ;
+* un statut indiquant si la règle a été validée ou si elle fait encore l'objet de discussion (brouillon, validé, refusé, obsolète) ;
 * une indication sur le type de test à mener (manuel ou auto si un outil automatique peut vérifier) ;
 * une indication du niveau d'app à partir duquel la règle est nécessaire (NOTWORKING, INPROGRESS, WORKING, OFFICIAL), certaines règles sont optionnelles ;
 
@@ -32,6 +32,7 @@ Chaque YEP est associée à :
 | YEP 1.9 | Documenter l'app  | validé | AUTO | OFFICIAL (6) |
 | YEP 1.10 | Garder un historique de version propre   | brouillon | manuel | OFFICIAL (6) |
 | YEP 1.11 | Ajouter l'app au [bugtracker YunoHost](https://github.com/yunohost/issues/issues)   | brouillon | manuel | OFFICIAL (NA) |
+| YEP 1.12 | Suivre le modèle de [example_ynh](https://github.com/YunoHost/example_ynh) | brouillon | manuel | OFFICIAL (8) |
 | | | | | |
 | **YEP 2** | **Stabiliser une app** | **Statut** | **Test** | **Niveau** |
 | YEP 2.1 | Respecter le format du manifeste  | validé | auto | INPROGRESS (5) |
@@ -113,13 +114,15 @@ Ces dépôts ont plusieurs fonctions :
 * indiquer l'état de fonctionnement du paquet ;
 * indiquer des informations sur le support d'un paquet.
 
-Pour les listes `official.json` et `community.json`, l'inscription se fait sur [le dépôt git "apps"](https://github.com/YunoHost/apps).
+Pour les listes `official.json` et `community.json` maintenues par l'équipe du projet Yunohost, l'inscription se fait sur [le dépôt git "apps"](https://github.com/YunoHost/apps). D'autres listes non-officielles (notamment celles incluant des applications non-libres) peuvent exister, se réferer au [Forum](https://forum.yunohost.org) de la communauté.
 
 #### YEP 1.3
 ##### Indiquer la licence associée au paquet  | brouillon | AUTO | WORKING |
 La licence du paquet est à indiquer dans un fichier `LICENSE` à la racine du paquet. Attention à ne pas confondre avec la licence de l'application qui va être installée dont l'acronyme est à renseigner dans le champ `license` du manifeste.
 
 Les listes d'applications official.json et community.json n'acceptent que les paquets dont la licence est libre, de même pour la licence de l'application contenue. Certaines applications libres nécessitent des dépendances non-libres (exemple: mp3, drivers, etc.). Dans ce cas, il faut ajouter `&dep-non-free` à l'acronyme et si possible donner des précisions dans le README.md du paquet, l'intégration sera dans ce cas acceptée au cas par cas.
+
+**NB :** Les applications non-présentes dans les listes maintenues par le projet peuvent tout de même être installées : soit manuellement via le lien de l'application, soit de manière plus intégrée via des listes non-officielles (qui peuvent être créées et maintenues par la communauté).
 
 Dans le futur, YunoHost affichera sans doute des détails sur la licence de l'application. Pour y parvenir, l'acronyme doit être celui issu de cette [liste de licences répertoriées du SPDX](https://spdx.org/licenses/) (si il y a 2 acronymes, il faut prendre celui contenant le numéro de version). Pour plus de cohérence, la casse doit être respectée.
 
@@ -209,6 +212,13 @@ Il y a également le README.md, ce dernier doit et peut contenir :
 ##### Garder un historique de version propre   | brouillon | manuel | OFFICIAL |
 #### YEP 1.11
 ##### Ajouter l'app au [bugtracker YunoHost](https://github.com/yunohost/issues/issues)   | brouillon | manuel | OFFICIAL |
+
+#### YEP 1.12
+##### Suivre le modèle de [example_ynh](https://github.com/YunoHost/example_ynh) | brouillon | manuel | OFFICIAL |
+Afin de faciliter le travail de la communauté concernant un package, il doit suivre le modèle montré par l'application d'exemple.  
+Cela aidera les autres packagers à lire, modifier et débugger le paquet. De plus, cela aidera à prolonger la durée de vie du package en lui donnant un modèle standard que les autres packagers seront en mesure de comprendre rapidement au cas où un package deviendrait orphelin.  
+De plus, un package ne devrait pas utiliser de code exotique ou inutilement compliqué si ce n'est pas vraiment nécessaire. Le cas échéant, cette partie du code devrait être clairement documentée.  
+Gardez votre code aussi simple que possible, gardez tout ce dont un script a besoin directement dedans. Ne déplacez pas les fonctions dans un autre fichier. Restez simple et efficace.
 
 ### YEP 2
 #### Stabiliser une app

@@ -2,6 +2,7 @@
 
 * [Liste des façons de contribuer à YunoHost](/contribute_fr)
 * [Écrire de la documentation](/write_documentation_fr)
+* [Salons de discussion](/chat_rooms_fr)
 * Packaging d'application
    * [Liste d'apps souhaitées par la communauté](/apps_wishlist_fr)
    * [Introduction générale au packaging d'apps](/packaging_apps_start_fr)
@@ -19,8 +20,9 @@
        * [Package linter](https://github.com/YunoHost/package_linter)
        * [Package check](https://github.com/YunoHost/package_check)
        * [Niveaux des applications](packaging_apps_levels_fr)
-       * [Intégration continue des apps](https://ci-apps.yunohost.org/jenkins/)
+       * [Intégration continue des apps](https://ci-apps.yunohost.org)
        * [Tableau de bord du CI des apps](https://dash.yunohost.org/appci/branch/stable)
+       * [Intégration continue pour packagers](/packaging_apps_ci)
        * [YEP - YunoHost Enhancement Proposals](packaging_apps_guidelines_fr)
 * [Contribuer à la partie "core" de YunoHost](/dev_fr)
    * [Déployer un environnement de dev avec ynh-dev](https://github.com/YunoHost/ynh-dev/blob/master/README.md)

@@ -19,7 +19,7 @@ YunoHost peut générer une configuration DNS recommandée pour chaque domaine, 
 Certificats SSL/HTTPS
 ----------------------
 
-Un autre aspect important de la configuration des domaines est le certificat SSL/HTTPS. YunoHost est intégré avec Let's Encrypt, de sorte qu'une fois que votre serveur est correctement accessible depuis n'importe qui sur Internet via le nom de domaine, l'administrateur peut demander l'installation d'un certificat Let's Encrypt. Voir la documentation sur les [certificats](certificats) pour plus d'informations.
+Un autre aspect important de la configuration des domaines est le certificat SSL/HTTPS. YunoHost est intégré avec Let's Encrypt, de sorte qu'une fois que votre serveur est correctement accessible depuis n'importe qui sur Internet via le nom de domaine, l'administrateur peut demander l'installation d'un certificat Let's Encrypt. Voir la documentation sur les [certificats](certificate_fr) pour plus d'informations.
 
 Sous-chemins vs. domaines individuels par application
 -----------------------------------------------------

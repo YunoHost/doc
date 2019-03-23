@@ -34,6 +34,8 @@ Après l'upgrade d'une applications
 Après la supression d'une applications
 - `post_app_change_url`
 Après avoir modifié le chemin et ou le nom de domaine d'une application
+- `post_cert_update`
+Après la mise à jour d'un certificat
 - `conf_regen`  
 Avant et après la régénération de la configuration d'un service.  
 Services pris en charge par regen-conf:
@@ -129,6 +131,11 @@ users=$2  # Tous les utilisateurs autorisés sur l'app. Séparés par des virgul
 
 ```bash
 app_id=$1
+```
+
+##### `post_cert_update`
+```bash
+domain=$1
 ```
 
 La suite du script dépend de ce que vous voulez effectuer dans celui-ci.

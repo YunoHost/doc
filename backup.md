@@ -56,13 +56,20 @@ For more informations and options about backup creation, consult `yunohost backu
 
 ### Apps-specific configuration
 
-Some apps such as Nextcloud may be related to a large quantity of data which are not backuped by default. This practice is referred to "backing up only the core" (of the app). However it's possible to enable the backup of all data of this app with `yunohost app setting nextcloud backup_core_only -v 0`. Be careful though that your archive might get huge if there's too much data to be backuped...
+Some apps such as Nextcloud may be related to a large quantity of data. If you want you can backup the app without the user data. This practice is referred to "backing up only the core" (of the app). 
+
+To enable the backup of all data of this app, you can use `yunohost app setting nextcloud backup_core_only -v ''`. This command add `backup_core_only:` in `etc/yunohost/apps/nextcloud/settings.yml`. Be careful though that your archive might get huge if there's too much data to be backuped...
+
+To disable the backup of all data, you can use `yunohost app setting nextcloud backup_core_only -v '1'`. This command add `backup_core_only: '1'` in `etc/yunohost/apps/nextcloud/settings.yml`. Be careful though that mean you will have to backup user data yourself. But doing so, you will be able to do incremental or differential backups of this large amount of data (which is not an option provided by yunohost yet).
+
 
 ## Downloading and uploading backups
 
 After creating backup archives, it is possible to list and inspect them via the corresponding views in the webadmin, or via `yunohost backup list` and `yunohost backup info <archivename>` from the command line. By default, backups are stored in `/home/yunohost.backup/archives/`.
 
-There is currently no straightfoward way to download or upload a backup archive.
+Currently, the most accessible way to download archives is to use the program FileZilla as explained in [this page](/filezilla).
+
+Alternatively, a solution can be to install Nextcloud or a similar app and configure it to be able to access files in `/home/yunohost.backup/archives/` from a web browser.
 
 One solution consists in using `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. Hence, from a machine running Linux, you should be able to run the following to download a specific backup:
 
@@ -75,8 +82,6 @@ Similarly, you can upload a backup from a machine to your server with:
 ```bash
 scp /path/to/your/<archivename>.tar.gz admin@your.domain.tld:/home/yunohost.backup/archives/
 ```
-
-Alternatively, a solution can be to install Nextcloud or a similar app and configure it to be able to access files in `/home/yunohost.backup/archives/` from a web browser.
 
 ### Workaround to retrieve the backups
 
@@ -104,14 +109,17 @@ To restore an app, the domain on which it was installed should already be config
 
 ### Restoring during the postinstall
 
-One specific feature is the ability to restore a full archive *instead* of the postinstall step. This makes it useful when you want to reinstall a system entirely from an existing backup. To be able to do this, you will need to upload the archive on the server and place it in `/home/yunohost.backup/archives`. Then, instead of `yunohost tools postinstall` you can run:
+One specific feature is the ability to restore a full archive *instead* of the postinstall step. This makes it useful when you want to reinstall a system entirely from an existing backup. To be able to do this, you will need to upload the archive on the server and place it in `/home/yunohost.backup/archives`. Then, **instead of** `yunohost tools postinstall` you can run:
 
 ```bash
 yunohost backup restore <archivename>
 ```
 
-Note: Don't start the postinstall step. Decline invite when doing installation
-via `bash`/`wget`.
+Note: If your archive isn't in `/home/yunohost.backup/archives`, you can specify where it is like this :
+
+```bash
+yunohost backup restore /path/to/<archivename>
+``` 
 
 ## To go futher
 
@@ -137,7 +145,7 @@ yunohost backup create --apps wordpress
 then make it executable :
 
 ```bash
-chown +x /etc/cron.weekly/backup-wordpress
+chmod +x /etc/cron.weekly/backup-wordpress
 ```
 
 Be careful what you backup exactly and when : you don't want to end up with your whole disk space saturated because you backuped 30 Go of data every day.
@@ -153,7 +161,7 @@ Alternatively, the app Archivist allows to setup a similar system : <https://for
 If you are using an ARM board, another method for doing a full backup can be to create an image of the SD card. For this, poweroff your ARM board, get the SD card in your computer then create a full image with something like :
 
 ```bash
-dd if=/dev/mmcblk0 of=./backup.img
+dd if=/dev/mmcblk0 of=./backup.img status=progress
 ```
 
 (replace `/dev/mmcblk0` with the actual device of your sd card)

@@ -31,11 +31,11 @@ Vous pouvez aussi y accéder en entrant la commande `yunohost tools postinstall`
 
 C’est le nom de domaine qui permettra l’accès à votre serveur ainsi qu’au portail d’authentification des utilisateurs. Il sera donc **visible par tout le monde**, choisissez-le en conséquence.
 
-* YunoHost propose un service de DNS dynamique fournissant des noms de domaine de type *mondomaine.nohost.me* ou *mondomaine.noho.st*. Si vous ne possédez pas de nom de domaine et/ou que vous souhaitez profiter de ce service, choisissez un domaine se terminant en `.nohost.me` ou `.noho.st`. Le domaine sera automatiquement rattaché à votre serveur YunoHost, et vous n’aurez pas d’étape de configuration supplémentaire.
+* YunoHost propose un service de DNS dynamique fournissant des noms de domaine de type *mondomaine.nohost.me*, *mondomaine.noho.st* ou *mondomaine.ynh.fr*. Si vous ne possédez pas de nom de domaine et/ou que vous souhaitez profiter de ce service, choisissez un domaine se terminant en `.nohost.me`, `.noho.st` ou `.ynh.fr`. S'il n'est pas déjà utilisé, le domaine sera automatiquement rattaché à votre serveur YunoHost, et vous n’aurez pas d’étape de configuration supplémentaire.
 
 * Si en revanche vous maîtrisez la notion de **DNS**, vous pouvez utiliser votre propre nom de domaine. Dans ce cas, référez-vous à la page [yunohost.org/dns](/dns_fr) pour plus d’informations.
 
-* Si vous n'avez pas de nom de domaine et que vous n'en voulez pas en *mondomaine.nohost.me* ou *mondomaine.noho.st*, vous pouvez utilisez un domaine local. Plus d'infos sur comment [accéder à son serveur depuis le réseau local](/dns_local_network_fr).
+* Si vous n'avez pas de nom de domaine et que vous n'en voulez pas en *mondomaine.nohost.me*, *mondomaine.noho.st* ou *mondomaine.ynh.fr*, vous pouvez utilisez un domaine local. Plus d'infos sur comment [accéder à son serveur depuis le réseau local](/dns_local_network_fr).
 
 
 ### Mot de passe d’administration

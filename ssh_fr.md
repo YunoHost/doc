@@ -2,7 +2,7 @@
 
 ## Qu’est-ce que SSH ?
 
-**SSH** est un accronyme pour Secure Shell, et désigne un protocole qui permet de contrôler à distance une machine via la ligne de commande (CLI). C'est aussi une commande disponible de base dans les terminaux de Linux et Mac OS / OSX. Sous Windows, il vous faudra utiliser le logiciel [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (après l'avoir lancer, cliquer sur Session puis SSH).
+**SSH** est un acronyme pour Secure Shell, et désigne un protocole qui permet de contrôler à distance une machine via la ligne de commande (CLI). C'est aussi une commande disponible de base dans les terminaux de Linux et Mac OS / OSX. Sous Windows, il vous faudra utiliser le logiciel [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (après l'avoir lancer, cliquer sur Session puis SSH).
 
 ## Pendant l’installation de YunoHost
 
@@ -10,7 +10,7 @@
 
 Si vous installez YunoHost sur un VPS, votre fournisseur devrait vous avoir communiqué l'adresse IP de votre serveur. 
 
-Si vous installez un serveur à la maison (par ex. sur Raspberry Pi ou OLinuXino), il vous faut trouver l'IP qui a été attribuée à votre carte après que vous l'ayez connecté à votre box internet / routeur. Il y a plusieurs façon de faire ça :
+Si vous installez un serveur à la maison (par ex. sur Raspberry Pi ou OLinuXino), il vous faut trouver l'IP qui a été attribuée à votre carte après que vous l'ayez connectée à votre box internet / routeur. Il y a plusieurs façons de faire cela :
 
 - ouvrez un terminal et tapez `sudo arp-scan --local` pour lister les IP des machines sur le réseau local ;
 - utilisez l'interface de votre box internet pour lister les machines connectées, ou regarder les logs ;
@@ -32,7 +32,7 @@ Depuis YunoHost 3.4, après avoir effectué la postinstallation, il ne sera plus
 
 #### Changer le mot de passe root !
 
-Après vous être loggé pour la première fois, il vous faut changer le mot de passe root. Le serveur vous demandera peut-être automatiquement de le faire. Si ce n'est pas le cas, il faut utiliser la commande `passwd`. Il est important de choisir un mot de passe raisonnablement compliqué. Notez que ce mot de passe sera écrasé ensuite par le mot de passe admin choisi lors de la postinstallation.
+Après vous être connecté pour la première fois, il vous faut changer le mot de passe `root`. Le serveur vous demandera peut-être automatiquement de le faire. Si ce n'est pas le cas, il faut utiliser la commande `passwd`. Il est important de choisir un mot de passe raisonnablement compliqué. Notez que ce mot de passe sera écrasé ensuite par le mot de passe admin choisi lors de la postinstallation.
 
 ## Sur une instance déjà installée
 
@@ -66,7 +66,7 @@ Si vous êtes connecté en tant qu'`admin` et souhaité devenir `root` pour plus
 
 Par défaut, seulement l'utilisateur `admin` peut se logger en SSH sur une instance Yunohost.
 
-Les utilisateurs YunoHost créés via l'interface d'administration sont géré par la base de donnée LDAP. Par défaut, ils ne peuvent pas se connecter en SSH pour des raisons de sécurité. Si vous avez absolument besoin qu'un utilisateur dispose d'un accès SSH, vous pouvez utiliser la commande :
+Les utilisateurs YunoHost créés via l'interface d'administration sont gérés par la base de donnée LDAP. Par défaut, ils ne peuvent pas se connecter en SSH pour des raisons de sécurité. Si vous avez absolument besoin qu'un utilisateur dispose d'un accès SSH, vous pouvez utiliser la commande :
 ```bash
 yunohost user ssh allow <username>
 ```
@@ -85,6 +85,6 @@ yunohost user ssh list-keys <username>
 
 ## SSH et sécurité
 
-N.B. : `fail2ban` banniera votre IP pour 10 minutes si vous échouez plus de 5 fois à vous identifier. Pour débannir une IP, vous pouvez regarder la page sur [fail2ban](/fail2ban_fr)
+N.B. : `fail2ban` bannira votre IP pour 10 minutes si vous échouez plus de 5 fois à vous identifier. Pour débannir une IP, vous pouvez regarder la page sur [fail2ban](/fail2ban_fr)
 
 Une discussion plus complète de la sécurité et de SSH peut être trouvée sur [la page dédiée](security_fr).

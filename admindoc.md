@@ -35,6 +35,7 @@
     * [Security](/security)
 * Going further
     * [Noho.st / nohost.me / ynh.fr domain names](/dns_nohost_me)
+    * [Exchange files with your server using a graphical interface](/filezilla)
     * [Adding an external storage](/external_storage)
     * [Migrating emails to YunoHost](/email_migration)
     * [Hide services with Tor](/torhiddenservice)

@@ -32,6 +32,7 @@ Each YEP is associated with:
 | YEP 1.9 | Document the app | validated | AUTO | OFFICIAL (6) |
 | YEP 1.10 | Keep a clean version history | draft | manual | OFFICIAL (6) |
 | YEP 1.11 | Add app to [YunoHost bugtracker](https://github.com/YunoHost/issues/issues) | draft | manual | OFFICIAL (NA) |
+| YEP 1.12 | Follow the template from [example_ynh](https://github.com/YunoHost/example_ynh) | draft | manual | OFFICIAL (8) |
 | | | | | |
 | ** YEP 2 ** | ** Stabilize an app ** | ** Status ** | ** Test ** | ** Level ** |
 | YEP 2.1 | Respect the manifest format | validated | Home | INPROGRESS (5) |
@@ -112,13 +113,15 @@ These deposits have several functions:
 * indicate the state of operation of the packet;
 * indicate information about the support of a package.
 
-For the `official.json` and` community.json` lists, registration is on [the git apps repository](https://github.com/YunoHost/apps).
+For the `official.json` and` community.json` lists maintained by the project team, registration is on [the git apps repository](https://github.com/YunoHost/apps). Other non-official lists may exists (including those for non-free apps for example), see more about that in the [community forum](https//forum.yunohost.org).
 
 #### YEP 1.3
 ##### Indicate the license associated with the package | draft | AUTO | WORKING |
 The license of the packet must be specified in a `LICENSE` file at the root of the packet. Be careful not to confuse with the license of the application that will be installed whose acronym is to be entered in the `license` field of the manifest.
 
 The application lists official.json and community.json only accept packages with a free license, as well as the license for the contained application. Some free applications require non-free dependencies (example: mp3, drivers, etc.). In this case, you should add `&dep-non-free` to the acronym and if possible give details in the README.md of the package, in this case the integration will be accepted on a case-by-case basis.
+
+**NB:** Apps not included in offical lists may still be installed: either manually with the URL to the app, or in a more practical way using non-official lists (which can be created and maintained by the community).
 
 In the future, YunoHost will probably display details about the license of the application. To achieve this, the acronym must be the one from this [list of licenses listed in the SPDX](https://spdx.org/licenses/) (if there are 2 acronyms, the one containing the version number). For consistency, the case must be respected.
 
@@ -208,6 +211,13 @@ There is also README.md, which must and can contain:
 ##### Keep a clean version history | draft | manual | OFFICIAL |
 #### YEP 1.11
 ##### Add app to [YunoHost bugtracker](https://github.com/YunoHost/issues/issues) | draft | manual | OFFICIAL |
+
+#### YEP 1.12
+##### Follow the template from [example_ynh](https://github.com/YunoHost/example_ynh) | draft | manual | OFFICIAL |
+In order to facilitate the work of the community regarding a package, it has to follow the template shown by the example app.  
+This will help other packagers to read, modify and debug the package. Also, it will help extend the life of the package by giving it a standard template that other packagers can quickly understand in the event that a package becomes orphaned.
+As well, a package should not use exotic or uselessly complicated code if it's not really needed. If so, this part of the code should be clearly documented.  
+Keep your code as easy as possible, keep everything a script needs directly into it. Do not move functions in another file. Keep it simple and efficient.
 
 ### YEP 2
 #### Stabilize an app
