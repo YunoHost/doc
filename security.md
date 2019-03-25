@@ -29,7 +29,7 @@ ssh-keygen
 ssh-copy-id -i ~/.ssh/id_rsa.pub <your_yunohost_server>
 ```
 
-Type your admnistration password and your key will be copied on your server. 
+Type your admnistration password and your key will be copied on your server.
 
 **On your server**, edit the SSH configuration file, in order to deactivate the password authentication.
 
@@ -64,7 +64,7 @@ Port 22 # to replace by 9777 for example
 **Open the port** in firewall (you can use `-6` option to deny ipv4 connection)
 ```bash
 yunohost firewall allow TCP 9777
-``` 
+```
 
 Save and restart SSH daemon. Switch over to the new port by restarting SSH.
 ```bash
@@ -75,7 +75,7 @@ Then restart the iptables firewall and close the old port in iptables.
 ```bash
 yunohost firewall reload
 yunohost firewall disallow TCP <your_old_ssh_port_number> # port by default 22
-``` 
+```
 
 You also need to give `fail2ban` the new SSH port.
 
@@ -84,7 +84,7 @@ To do that you need to create the configuration file `my_ssh_port.conf` with the
 
 ```bash
 nano /etc/fail2ban/jail.d/my_ssh_port.conf
-``` 
+```
 
 and you can fill it with
 
@@ -100,7 +100,7 @@ Finally you have to restart `fail2ban` in order to apply the new configuration
 
 ```bash
 systemctl restart fail2ban
-``` 
+```
 
 **For the next SSH connections **, you need to add the `-p` option followed by the SSH port number.
 
@@ -108,7 +108,7 @@ systemctl restart fail2ban
 
 ```bash
 ssh -p <new_ssh_port_number> admin@<your_yunohost_server>
-``` 
+```
 
 ---
 
@@ -145,6 +145,22 @@ Save and restart SSH daemon.
 systemctl restart ssh
 ```
 ---
+
+### Change cipher compatibility configuration
+
+The default TLS configuration for services tend to offer a good compatibility to support old devices. You can tune this policy for specific services like SSH and NGINX. By default, the NGINX configuration follows the [intermediate compatibility recommendation](https://wiki.mozilla.org/Security/Server_Side_TLS#Intermediate_compatibility_.28default.29) from Mozilla. You can choose to switch to the 'modern' configuration which uses more recent security recommendations, but decreases the compatibility, which may be an issue for your users and visitors using older devices. More details about the compatibility can be found on [this page](https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility).
+
+Changing the compatibility level is not definitive and can be reverted if it doesn't feet your environment.
+
+**On your server**, change the policy for NGINX
+```bash
+sudo yunohost settings set security.nginx.compatibility -v modern
+```
+
+**On your server**, change the policy for SSH
+```bash
+sudo yunohost settings set service.ssh.compatibility -v modern
+```
 
 ### Disable YunoHost API
 YunoHost administration is accessible through an **HTTP API**, served on the 6787 port by default (only on `localhost`). It can be used to administrate a lot of things on your server, so malicious actors can also use it to damage your server. The best thing to do, if you know how to use the [command-line interface](/commandline), is to deactivate the `yunohost-api` service.
