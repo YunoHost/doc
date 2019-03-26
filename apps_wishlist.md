@@ -127,6 +127,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Pico](http://picocms.org)
 - [Pix](http://pix.toile-libre.org)
 - [Playmaker](https://github.com/NoMore201/playmaker)
+- [Plex](https://www.plex.tv/)
 - [Privoxy](http://www.privoxy.org)
 - [ProcessMaker](http://www.processmaker.com)
 - [ProtonMail’s WebClient](https://github.com/ProtonMail/WebClient)
