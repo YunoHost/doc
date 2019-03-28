@@ -57,7 +57,7 @@ Vérifiez avec `lsblk` que vous avez bien votre disque contenant une seule parti
 
 Avant de pouvoir utiliser votre disque, il doit être formaté.
 
-Attention : **formatter un disque implique de supprimer toutes les données inscrites dessus !** Si votre disque est déjà "propre", vous pouvez passer cette étape.
+Attention : **formater un disque implique de supprimer toutes les données inscrites dessus !** Si votre disque est déjà "propre", vous pouvez passer cette étape.
 
 Pour formater la partition :
 
