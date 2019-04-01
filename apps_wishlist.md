@@ -117,7 +117,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [OX Open-Xchange](https://www.open-xchange.com) Linux groupware solution
 - [Paperless](https://github.com/danielquinn/paperless)
 - [Paperwork](http://paperwork.rocks)
-- [Passbolt] (https://www.passbolt.com)
+- [Passbolt](https://www.passbolt.com) Passwords manager
 - [pdfy](https://github.com/joepie91/pdfy) (/!\ last update: Aug 5, 2014)
 - [Pelias](https://github.com/pelias/pelias)
 - [Peps](https://github.com/MLstate/PEPS)
@@ -154,6 +154,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [StandardNotes](https://standardnotes.org) (a clean, simple, E2E-encrypted notes app) -- specifically, the server-side [StandardFile](https://standardfile.org) portion.
 - [Streama](https://github.com/dularion/streama)
 - [Streisand](https://github.com/jlund/streisand)
+- [Syspass](http://www.syspass.org/)
 - [Taiga](https://taiga.io)
 - [Tania](http://gettania.org/)
 - [Taskwarrior](https://taskwarrior.org)
