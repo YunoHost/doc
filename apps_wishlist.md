@@ -117,7 +117,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [OX Open-Xchange](https://www.open-xchange.com) Linux groupware solution
 - [Paperless](https://github.com/danielquinn/paperless)
 - [Paperwork](http://paperwork.rocks)
-- [Passbolt] (https://www.passbolt.com)
+- [Passbolt](https://www.passbolt.com) Passwords manager
 - [pdfy](https://github.com/joepie91/pdfy) (/!\ last update: Aug 5, 2014)
 - [Pelias](https://github.com/pelias/pelias)
 - [Peps](https://github.com/MLstate/PEPS)
