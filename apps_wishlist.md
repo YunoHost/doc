@@ -154,6 +154,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [StandardNotes](https://standardnotes.org) (a clean, simple, E2E-encrypted notes app) -- specifically, the server-side [StandardFile](https://standardfile.org) portion.
 - [Streama](https://github.com/dularion/streama)
 - [Streisand](https://github.com/jlund/streisand)
+- [Syspass](http://www.syspass.org/)
 - [Taiga](https://taiga.io)
 - [Tania](http://gettania.org/)
 - [Taskwarrior](https://taskwarrior.org)
