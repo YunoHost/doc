@@ -14,8 +14,8 @@ This page requires Javascript enabled to display properly :s.
             <span id="app-cards-list-filter-text">Only official apps</span> <span class="caret"></span>
         </button>
         <ul class="dropdown-menu">
-            <li><a href="#" id="app-cards-list-validated">Only official apps</a></li>
             <li><a href="#" id="app-cards-list-high-quality">Only High Quality apps</a></li>
+            <li><a href="#" id="app-cards-list-validated">Only official apps</a></li>
             <li><a href="#" id="app-cards-list-featured">Only Featured apps</a></li>
             <li><a href="#" id="app-cards-list-working">Only working apps</a></li>
             <li><a href="#" id="app-cards-list-working-inprogress">In progress/not working apps</a></li>
@@ -312,6 +312,13 @@ $(document).ready(function () {
             $('.app-card_'+ app_id).attr('id', 'app-card_'+ app_id);
             $('.app-card_'+ app_id + ' .category').append(' <span class="label label-'+app_level_bootstrap+' label-as-badge">'+infos.level+'</span>');
             $('.app-card_'+ app_id + ' .category').append(' <span class="label label-'+app_state_bootstrap+' label-as-badge app-'+infos.state+'">'+infos.state+'</span>');
+            
+            if (infos.featured) {
+                  $('.app-card_'+ app_id + ' .category').append(' <span class="label label-success label-as-badge featured" title="Featured">Featured</span>');
+            }
+            if (infos.high_quality) {
+                  $('.app-card_'+ app_id + ' .category').append(' <span class="label label-primary label-as-badge high_quality" title="High Quality">High Quality</span>');
+            }
             if (infos.manifest.license && infos.manifest.license != 'free') {
                 $('.app-card_'+ app_id + ' .category').append(' <span class="label label-default">'+infos.manifest.license+'</span>');
             }
