@@ -25,8 +25,6 @@ This page requires Javascript enabled to display properly :s.
 </div>
 <br />
 <div id="community-app-list-warrant" class="alert alert-danger">
-    <p>Only apps tagged <span class="label label-success label-as-badge">validated</span> are officially supported by the package team. </p>
-
     <p>Apps tagged <span class="label label-success label-as-badge">working</span>, <span class="label label-warning label-as-badge">inprogress</span>, <span class="label label-danger label-as-badge">notworking</span> are from community repository, you can test and use them **at your own risk**.</p>
 
     <p>Important: it's the application maintaineur that qualify his application as working, not the YunoHost core team. Install it at your own risks. We won't provide support for it.</p>
@@ -147,6 +145,10 @@ This page requires Javascript enabled to display properly :s.
 </script>
 
 <script>
+/** Display the date correctly
+  * @ A unix timestamp
+  * @Return String with date like '21 December 2018'
+  */
 function timeConverter(UNIX_timestamp) {
     var a = new Date(UNIX_timestamp*1000);
     var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -161,11 +163,13 @@ function timeConverter(UNIX_timestamp) {
     return time;
 }
 
+// This code runs after jquery and all the document is loaded
 $(document).ready(function () {
     // Hide warrant about community list
     $('#community-app-list-warrant').hide();
     var filters = ["validated"];
 
+    /** Hide card that doesn't contain some keyword **/
     function filter(){
         var filters_text = filters.map(function(el) { return '.app-' + el;}).join(', ');
         var valThis = $('#filter-app-cards').val().toLowerCase();
@@ -220,7 +224,7 @@ $(document).ready(function () {
 
 
     //=================================================
-    // Upload apps lists
+    // Download apps lists
     //=================================================
     var app_list={};
     $.when(
@@ -233,7 +237,9 @@ $(document).ready(function () {
     ).then(function() {
         app_list = app_list.official.concat(app_list.community);
 
-        // Sort alpha
+        //=================================================
+        // Sort in this order: validated -> working -> inprogress -> alphanumerci
+        //=================================================
         app_list.sort(function(a, b){
             a_state = (a.state == "validated")?4:(a.state == "working")?3:(a.state == "inprogress")?2:1;
             b_state = (b.state == "validated")?4:(b.state == "working")?3:(b.state == "inprogress")?2:1;
@@ -241,8 +247,14 @@ $(document).ready(function () {
             else if (a.manifest.id == b.manifest.id) {return 0;}
             return -1;
         });
+        ∕∕=================================================
+        
         $.each(app_list, function(k, infos) {
             app_id = infos.manifest.id;
+            
+            //=================================================
+            // Manage colors
+            //=================================================
             app_install_bootstrap = "success";
             if (infos.state === "validated") {
                 app_state_bootstrap = "success";
@@ -269,8 +281,11 @@ $(document).ready(function () {
             } else {
                 app_level_bootstrap = "default";
             }
+            //=================================================
 
-            // Fill the template
+            //=================================================
+            // Replace some var in the template
+            //=================================================
             html = $('#app-template2').html()
              .replace(/{app_id}/g, app_id)
              .replace(/{app_name}/g, infos.manifest.name)
@@ -305,9 +320,11 @@ $(document).ready(function () {
                  .replace('{maintained_help}', "Current maintainer of this package");;
             }
             }
+            //=================================================
 
-
-            // Fill the template
+            //=================================================
+            // Fill the template with some additional labels
+            //=================================================
             $('#app-cards-list').append(html);
             $('.app-card_'+ app_id).attr('id', 'app-card_'+ app_id);
             $('.app-card_'+ app_id + ' .category').append(' <span class="label label-'+app_level_bootstrap+' label-as-badge">'+infos.level+'</span>');
@@ -322,6 +339,8 @@ $(document).ready(function () {
             if (infos.manifest.license && infos.manifest.license != 'free') {
                 $('.app-card_'+ app_id + ' .category').append(' <span class="label label-default">'+infos.manifest.license+'</span>');
             }
+            
+            //=================================================
 
         });
         filter();
