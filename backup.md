@@ -56,11 +56,10 @@ For more informations and options about backup creation, consult `yunohost backu
 
 ### Apps-specific configuration
 
-Some apps such as Nextcloud may be related to a large quantity of data. If you want you can backup the app without the user data. This practice is referred to "backing up only the core" (of the app). 
+Some apps such as Nextcloud may be related to a large quantity of data. If you want you can backup the app without the user data. This practice is referred to "backing up only the core" (of the app).  
+When performing an upgrade, apps with large quantity of data will, usually, do a backup without those data.
 
-To enable the backup of all data of this app, you can use `yunohost app setting nextcloud backup_core_only -v ''`. This command add `backup_core_only:` in `etc/yunohost/apps/nextcloud/settings.yml`. Be careful though that your archive might get huge if there's too much data to be backuped...
-
-To disable the backup of all data, you can use `yunohost app setting nextcloud backup_core_only -v '1'`. This command add `backup_core_only: '1'` in `etc/yunohost/apps/nextcloud/settings.yml`. Be careful though that mean you will have to backup user data yourself. But doing so, you will be able to do incremental or differential backups of this large amount of data (which is not an option provided by yunohost yet).
+To manually disable the backup of large data, for application that implement that feature, you can set the variable `BACKUP_CORE_ONLY`. To do so, the variable have to be set before the backup command: `sudo BACKUP_CORE_ONLY=1 yunohost backup create --apps nextcloud`. Be careful though that mean you will have to backup user data yourself. But doing so, you will be able to do incremental or differential backups of this large amount of data (which is not an option provided by yunohost yet).
 
 
 ## Downloading and uploading backups

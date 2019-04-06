@@ -28,3 +28,12 @@ yunohost app upgrade limesurvey -u https://github.com/zamentur/limesurvey_ynh
 ** Note : ** faites attention aux applications/mises à jour non officielles que vous installez. Assurez-vous que ces mises à jour sont stables et ne constituent pas une étape de développement. Si une application ou une mise à jour n’est pas intégrée au dépôt officiel, il y a sûrement une raison.
 
 ** Attention : ** assurez-vous du contenu de cette mise à jour ; l’installation ou la mise à jour d’une application non officielle permet à cette dernière d’exécuter des scripts avec les privilèges les plus élevés. Si le script est malicieux, il pourrait nuire à votre vie privée en communiquant à des tiers toute donnée présente sur le serveur, ou bien les détruire irrémédiablement.
+
+##### Options de ligne de commande
+
+Lorsque vous mettez à jour des applications à partir de la ligne de commande, vous pouvez spécifier des options spécifiques pour modifier le comportement du script d'upgrade.  
+Pour définir ces options, définissez la variable correspondante avant la commande d'upgrade: `sudo OPTION_TO_SET=1 yunohost app upgrade wordpress`
+
+Les options disponibles sont:
+- `NO_BACKUP_UPGRADE`: Ne pas effectuer le backup avant la mise à jour. Ce qui veut dire que la mise à jour se fera sans sauvegarde de sécurité.
+- `YNH_FORCE_UPGRADE`: Force la mise à jour de l'application et du package, même si l'application est déjà à jour.
