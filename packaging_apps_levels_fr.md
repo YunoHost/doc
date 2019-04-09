@@ -136,7 +136,7 @@ YEP à respecter pour atteindre le niveau 7:
 - [YEP 3.2](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-32---ouvrir-un-port-correctement----brouillon--manuel--working-) : Ouvrir un port correctement
 
 ### Niveau 8
-**Le package d'application respecte toute les recommendations de packaging d'apps. C'est une app de très bonne qualité.**
+**Le package d'application respecte toute les recommandations de packaging d'apps. C'est une app de très bonne qualité.**
 
 YEP à respecter pour atteindre le niveau 8:
 - *[YEP 2.16](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-216---v%C3%A9rifier-la-disponibilit%C3%A9-des-d%C3%A9pendances-sur-arm-x86-et-x64----valid%C3%A9--manuel--official-) : Vérifier la disponibilité des dépendances sur ARM, x86 et x64*
