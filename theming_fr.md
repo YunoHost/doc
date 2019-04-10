@@ -21,7 +21,7 @@ Ensuite, vous pouvez utiliser `nano /etc/ssowat/conf.json.persistent` pour activ
 
 <div class="alert alert-info" markdown="1">
 Vous devrez peut-être forcer le rafraîchissement du cache de votre navigateur pour que le thème se propage complètement. Vous pouvez le faire avec Ctrl+Maj+R sur Firefox.
-</div> </div
+</div>
 
 ## Ajouter le thème de quelqu'un d'autre
 
