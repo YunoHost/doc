@@ -41,6 +41,6 @@ Un VPN neutre a un coût puisque l'opérateur qui le fournis doit faire fonction
 ### Trajet des paquets
 Lorsque l'on met en place un VPN sur son serveur, si on ne met pas en place de configuration particulière, le transfert d'un fichier d'un ordinateur du réseau local vers le serveur utilisant le VPN, passera par le bout du VPN c'est-à-dire par le serveur du fournisseur de VPN.
 
-Pour pallier à ce point, il y a deux solutions :
+Pour pallier ce point, il y a deux solutions :
 - transformer son serveur en routeur et connecter les équipements de la maison à ce dernier, ces équipements bénéficieront alors de la confidentialité du VPN également.
 - utiliser le serveur YunoHost comme résolveur DNS lorsque l'on est chez soi, de façon à rediriger les noms de domaines du serveur l'ip locale plutôt que l'ip publique. Cette opération peut se faire soit sur chaque équipements, soit sur le routeur (si ce dernier le permet).
