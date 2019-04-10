@@ -45,6 +45,7 @@
        * [Orange](/isp_orange_fr)
        * [Free](/isp_free_fr)
     * [Échanger des fichiers avec son serveur à l'aide d'une interface graphique](/filezilla)
+    * [Modifier l'apparence du portail utilisateur](/theming_fr)
     * [Ajouter un stockage externe](/external_storage_fr)
     * [Migrer ses emails vers YunoHost](/email_migration_fr)
     * [YunoHost avec un service caché Tor](/torhiddenservice_fr)
