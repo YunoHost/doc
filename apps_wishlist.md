@@ -42,6 +42,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [DirectoryLister](https://github.com/DirectoryLister/DirectoryLister)
 - [DNSchain](https://github.com/okTurtles/dnschain)
 - [Drupal](https://www.drupal.org/)
+- [eLabFTW](https://www.elabftw.net/) electronic lab notebook
 - [Emoncms](https://github.com/emoncms/emoncms)
 - [ERPnext](https://erpnext.com/download)
 - [EteSync](https://www.etesync.com/)
