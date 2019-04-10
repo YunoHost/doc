@@ -1,6 +1,6 @@
 #Upgrade your applications
 
-Once you installed applications, you may need to updgrade them, sooner or later. 
+Once you installed applications, you may need to upgrade them, sooner or later. 
 
 ** Caution: ** please be advised to backup your databases (using phpmyadmin application for example) and files before any upgrade.
 
