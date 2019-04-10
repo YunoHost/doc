@@ -57,3 +57,6 @@ document.getElementById("goForum").onclick = function() {
 }
 </script>
 
+Bonjour,
+Je ne parviens pas à connecter mon RaspYunohost en wifi ; j'ai modifié le fichier /etc/wpa_supplicant/wpa_supplicant.conf, j'ai fait un ifconfig wlan0 down , puis up, mais rien n'y fait ; pas de problème avec le câble.
+Si vous avez des pistes, merci.
