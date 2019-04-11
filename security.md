@@ -159,7 +159,7 @@ sudo yunohost settings set security.nginx.compatibility -v modern
 
 **On your server**, change the policy for SSH
 ```bash
-sudo yunohost settings set service.ssh.compatibility -v modern
+sudo yunohost settings set security.ssh.compatibility -v modern
 ```
 
 ### Disable YunoHost API
