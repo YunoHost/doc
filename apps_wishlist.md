@@ -112,7 +112,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Museek+](https://github.com/eLvErDe/museek-plus)
 - [Nibbleblog](http://www.nibbleblog.com)
 - [Nuage](https://nuage.kerjean.me/login)
-- [Odoo](https://github.com/odoo/odoo)
 - [ONLYOFFICE Document Server](http://helpcenter.onlyoffice.com/server/linux/document/linux-installation.aspx) (to be able to use ONLYOFFICE inside Nextcloud)
 - [OpenBazaar](https://openbazaar.org)
 - [openHAB](https://www.openhab.org/) - Smart home platform.
