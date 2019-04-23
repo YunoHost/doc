@@ -22,7 +22,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Blynk](https://github.com/blynkkk/blynk-library)
 - [Bookstack](https://www.bookstackapp.com/)
 - [Browsepass](http://techualization.blogspot.de/2013/09/introducing-browsepass-keepass-on-web.html)
-- [btcpayserver](https://github.com/btcpayserver/btcpayserver)
 - [Caliopen](https://www.caliopen.org)
 - [Candy](https://candy-chat.github.io/candy)
 - [CardDavMate](https://www.inf-it.com/open-source/clients/carddavmate)
@@ -152,6 +151,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Simone](https://github.com/Kloadut/Simone)
 - [SocialHome](https://github.com/jaywink/socialhome) (Socialhome is best described as a federated personal profile with social networking functionality) (https://socialhome.network)
 - [Sonarr](https://sonarr.tv)
+- [SPIP](https://spip.net) (more respectful of users than... )
 - [Stackedit](https://stackedit.io)
 - [StandardNotes](https://standardnotes.org) (a clean, simple, E2E-encrypted notes app) -- specifically, the server-side [StandardFile](https://standardfile.org) portion.
 - [Streama](https://github.com/dularion/streama)
