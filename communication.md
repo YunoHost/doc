@@ -2,8 +2,10 @@
 
 ## Talks / conf
 
+* (EN) [FOSDEM 2019 - The operating system to build the decentralized Internet](https://cinema.yunohost.support/videos/watch/1eb49594-0283-4a01-8691-3817a3cb31e6) ([slides](https://github.com/YunoHost/yunohost-fosdem-2019))
 * (FR) [Capitole du libre 2018 - YunoHost: un des chemins vers la décentralisation - Bram](https://www.youtube.com/watch?v=OEXEStoOYpw) ([slides](https://psycojoker.github.io/yunohost-cdl-2018/))
 * (FR) [Journées du logiciel libre 2018 - YunoHost : vers l’auto-hébergement et au-delà - Bram](https://www.videos-libr.es/videos/watch/45b48b1e-1b10-4e09-b29a-a404bd42c5d0) ([slides](https://psycojoker.github.io/yunohost-jdll-2018/))
+* (FR) Ubuntu Party Novembre 2017 - De Framasoft à Yunohost, réapproprions nous le cloud ([slides](https://blog.genma.fr/?De-Framasoft-a-Yunohost-reapproprions-nous-le-cloud))
 * (FR) [Capitole du libre 2017 - YunoHost : vers l'auto-hébergement et au-delà - JimboJoe](https://2017.capitoledulibre.org/programme/#yunohost-vers-lauto-hebergement-et-au-dela) ([slides](https://github.com/YunoHost/yunohost-cdl-2017/raw/master/YunoHost-CDL2017.pdf))
 * (FR) [PSES 2017 – Construire l’Internet du Futur avec YunoHost – Aleks, ljf](https://data.passageenseine.org/2017/aleks-ljf_internet-futur-yunohost.webm) ([slides](https://data.passageenseine.org/2017/aleks-ljf_internet-futur-yunohost.pdf))
 * (FR) [Université de technologie de compiègne 2017 – Agir pour un internet éthique – LJF](http://webtv.utc.fr/watch_video.php?v=O34AA7RBR1AH)
@@ -25,8 +27,9 @@
 * LinuxFr (french):
   - [YunoHost 2.0 : self hosting at click range](https://linuxfr.org/news/yunohost-2-0-l-auto-hebergement-a-portee-de-clic)
   - [Internet cube and YunoHost projects evolutions](https://linuxfr.org/news/evolutions-des-projets-la-brique-internet-et-yunohost-des-versions-2-2-2-4-et-2-5)
-- [Linux Pratique n°96 – YunoHost, l’auto-hébergement à portée de main – juillet 2016](http://connect.ed-diamond.com/Linux-Pratique/LP-096/YunoHost-l-auto-hebergement-a-portee-de-main)
-- [Linux Magazine n°208 – YunoHost, Personal server for a private cloud – Mars 2018](http://www.linux-magazine.com/Issues/2018/208/YunoHost)
+- (FR) [Linux Pratique n°96 – YunoHost, l’auto-hébergement à portée de main – juillet 2016](http://connect.ed-diamond.com/Linux-Pratique/LP-096/YunoHost-l-auto-hebergement-a-portee-de-main)
+- (EN) [Linux Magazine n°208 – YunoHost, Personal server for a private cloud – Mars 2018](http://www.linux-magazine.com/Issues/2018/208/YunoHost)
+- (FR) [Linux Pratique HS n° 044 février 2019 - Le choix de l’auto-hébergement avec YunoHost : rencontre avec l’équipe du projet](https://connect.ed-diamond.com/Linux-Pratique/LPHS-044/Le-choix-de-l-auto-hebergement-avec-YunoHost-rencontre-avec-l-equipe-du-projet)
 
 ## YunoHost was cited in :
 
