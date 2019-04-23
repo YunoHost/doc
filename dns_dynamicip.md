@@ -15,6 +15,7 @@ Here are sites which offer a DynDNS service free of charge:
 * [ChangeIP](https://changeip.com)
 * [DynDNS (in italian)](https://dyndns.it)
 * [DynDNS with your own domain](https://github.com/jodumont/DynDNS-with-HE.NET)
+* [Duck DNS](https://www.duckdns.org/)
 
 Register to one of them. It should provide you with one (or more) IP address to reach the service, and a login (that you may be able to self-define).
 
