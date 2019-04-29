@@ -1,6 +1,6 @@
 # Administrer YunoHost en ligne de commande
 
-L'interface en ligne de commande (CLI) est, en informatique, la manière original (et plus technique) d'interagir avec un ordinateur comparé aux interfaces graphique. La ligne de commande est généralement considéré comme plus complète, puissante et efficace que les interface graphique, bien que plus difficile à apprendre.
+L'interface en ligne de commande (CLI) est, en informatique, la manière originale (et plus technique) d'interagir avec un ordinateur comparé aux interfaces graphiques. La ligne de commande est généralement considéré comme plus complète, puissante et efficace que les interfaces graphiques, bien que plus difficile à apprendre.
 
 Dans le contexte de YunoHost, ou de l'administration système en général, la ligne de commande est communément utilisée après s'être [connecté en SSH](/ssh).
 
