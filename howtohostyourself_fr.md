@@ -31,7 +31,7 @@ Vous pouvez louer un serveur privé virtuel ou une machine dédiée à des hébe
         <th></th>
         <th style="text-align:center;">À la maison<br><small>(e.g. carte ARM, vieil ordi)</small></th>
         <th style="text-align:center;">À la maison<br>derrière un VPN</th>
-        <th style="text-align:center;">Sur un serveur distantr<br>(VPS ou dédié)</th>
+        <th style="text-align:center;">Sur un serveur distant<br>(VPS ou dédié)</th>
       </tr>
     </thead>
     <tbody>
