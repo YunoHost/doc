@@ -6,17 +6,17 @@
 
   <div class="punchline">
     <p>
-      <span class="yolo 1" style="color: #FF3399;">Selbst-Hosting für dich, Mom.</span>
-      <span class="yolo 2" style="color: #6699FF;">Hasser werden Gastgeber sein</span>
-      <span class="yolo 3" style="color: #66FF33;">Ich beherberge mich selbst, b*tches</span>
-      <span class="yolo 4" style="color: #00FFCC;">Geh und bewirte dich!</span>
+      <span class="yolo 1" style="color: #FF3399;">Self-Hosting für dich, Mama.</span>
+      <span class="yolo 2" style="color: #6699FF;">Haters gonna host</span>
+      <span class="yolo 3" style="color: #66FF33;">Ich host es mir selbst, Baby</span>
+      <span class="yolo 4" style="color: #00FFCC;">Host dich doch selber!</span>
       <span class="yolo 5" style="color: #FF5050;">Raus aus meiner Cloud</span>
-      <span class="yolo 6" style="color: #FF0066;">Beherbergt mich, ich bin berühmt.</span>
-      <span class="yolo 7" style="color: #3366FF;">Versuchen Internet</span>
-      <span class="yolo 8" style="color: #FFFFFF;">Wie kann I ich eure Server begegnen ?</span>
-      <span class="yolo 9" style="color: #FF6600;">john@doe.org</span>
-      <span class="yolo 10" style="color: #FF5050;">dude, Y U NO Host?!</span>
-      <span class="yolo 11" style="color: #66FF33;">Ruhe bewahren und sich selbst bewirten</span>
+      <span class="yolo 6" style="color: #FF0066;">Hostet mich, ich bin berühmt.</span>
+      <span class="yolo 7" style="color: #3366FF;">Internet ausprobieren</span>
+      <span class="yolo 8" style="color: #FFFFFF;">Ich werd’ noch zum Host</span>
+      <span class="yolo 9" style="color: #FF6600;">erika@mustermann.de</span>
+      <span class="yolo 10" style="color: #FF5050;">Alter, Y U NO Host?!</span>
+      <span class="yolo 11" style="color: #66FF33;">Wer wird denn gleich zu ’nem Host gehen</span>
     </p>
     <button class="btn btn-primary btn-lg btn-block yolobtn">Wie bitte?</button>
   </div>
@@ -34,8 +34,8 @@
     <img src="/images/github_ribbon_grey.png" alt="Folgen Sie Yunohost auf GitHub">
   </a>
 
-  <h1>YunoHost <small>ist ein Serverbetriebssystem mit dem Ziel,<br>
-Self-Hosting für jedermann zugänglich zu machen.</small></h1>
+  <h1>YunoHost <small>ist ein Serverbetriebssystem, das<br>
+Self-Hosting für alle möglich macht.</small></h1>
 
   <div class="home-panel">
     <img src="/images/home_panel.jpg" />
@@ -43,13 +43,13 @@ Self-Hosting für jedermann zugänglich zu machen.</small></h1>
 
   <div class="call-to-action">
     <a class="btn btn-primary btn-lg" href="/try">Ausprobieren</a>
-    <a class="btn btn-success btn-lg" href="/install">Beginnen</a>
+    <a class="btn btn-success btn-lg" href="/install">Loslegen</a>
     <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-4-release-sortie-de-yunohost-3-4/6950">YunoHost v3.4</a></small></p>
   </div>
 
   <div class="row cf">
     <div class="col-md-7">
-      <h1>Installieren<small> Sie ganz einfach Ihren eigenen Server. Sie haben bereits alles, was Sie brauchen.</small></h1>
+      <h1>Installiere<small> Dir ganz einfach Deinen eigenen Server. Du hast bereits alles, was Du dazu brauchst.</small></h1>
       <p><br /><a href="/hardware">Hardware-Voraussetzungen</a></p>
     </div>
     <div class="col-md-4">
@@ -68,7 +68,7 @@ Self-Hosting für jedermann zugänglich zu machen.</small></h1>
       </div>
     </div>
     <div class="col-md-7 text-right">
-      <h1>Erfreuen <small>Sie sich an Ihren eigenen Apps und richten Sie ihre eigene kleine Ecke im Netz ein.</small></h1>
+      <h1>Verwende <small>Deine Lieblings-Apps und richte Dir Deine eigene kleine Ecke im Netz ein.</small></h1>
       <p><br /><a href="/apps">Liste der verfügbaren Apps</a></p>
     </div>
   </div>
@@ -77,8 +77,8 @@ Self-Hosting für jedermann zugänglich zu machen.</small></h1>
 
   <div class="row cf">
     <div class="col-md-7">
-      <h1>Verwalten <small>Sie Ihren Server so, wie Sie es wünschen: per Web, mobil oder mit der Kommandozeile.</small></h1>
-      <p><br /><a href="/try">Administrationsoberfläche testen</a></p>
+      <h1>Verwalte <small>Deinen Server, wie es Dir am besten gefällt: übers Web, mobil oder mit der Kommandozeile.</small></h1>
+      <p><br /><a href="/try">Verwaltung ausprobieren</a></p>
     </div>
     <div class="col-md-4">
       <div class="feature-pic">
@@ -93,25 +93,25 @@ Self-Hosting für jedermann zugänglich zu machen.</small></h1>
     <div class="col-md-4 button-list">
       <a class="btn btn-lg btn-block btn-primary" href="/whatsyunohost">Uber YunoHost</a>
       <a class="btn btn-lg btn-block btn-info" href="/docs">Dokumentation</a>
-      <a class="btn btn-lg btn-block btn-success" href="/contribute">Engagieren Sie sich</a>
+      <a class="btn btn-lg btn-block btn-success" href="/contribute">Mach mit!</a>
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org/" target="_blank">Forum</a>
-      <a class="btn btn-lg btn-block btn-default" href="chat_rooms_de" target="_blank">Chaträume</a>
-      <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Letzte Nachrichten</a>
-      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_de">Support</a>
+      <a class="btn btn-lg btn-block btn-default" href="chat_rooms_de" target="_blank">Chat</a>
+      <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Neuste Nachrichten</a>
+      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_de">Hilfe</a>
     </div>
     <div class="col-md-7 text-right">
-      <h1>Erfahren <small>Sie, was Sie mit einem Server machen können,<br> und warum es sinnvoll ist.</small></h1>
-      <p><br /><a href="/docs">Lesen Sie die Dokumentation</a></p>
+      <h1>Entdecke <small> die Möglichkeiten, die Du mit einem eigenen Server hast<br> – und warum Self-Hosting Sinn macht.</small></h1>
+      <p><br /><a href="/docs">Dokumentation lesen</a></p>
     </div>
   </div>
 
   <hr />
 
   <div class="text-center">
-    <h1>Hey! Wir sind Menschen.<br /><small> Wenn Sie eine Frage oder ein Problem haben oder wenn Sie auch nur neugierig sind, hinterlassen Sie gerne eine Nachricht in unserem Chatraum, indem Sie auf den untenstehenden Button klicken.&nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+    <h1>Hallo! Wir sind auch nur Menschen.<br /><small> Wenn Du eine Frage oder ein Problem hast, oder auch nur neugierig bist, hinterlass’ einfach eine Nachricht in unserem Chat – ein Klick auf den untenstehenden Button genügt.&nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
 
    <p class="liberapay">
-     <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Donation button" title="Liberapay" /></a>
+     <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Spendenlink" title="Liberapay" /></a>
     </p>
 
   </div>
