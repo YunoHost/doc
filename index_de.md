@@ -44,7 +44,7 @@ Self-Hosting für alle möglich macht.</small></h1>
   <div class="call-to-action">
     <a class="btn btn-primary btn-lg" href="/try">Ausprobieren</a>
     <a class="btn btn-success btn-lg" href="/install">Loslegen</a>
-    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-4-release-sortie-de-yunohost-3-4/6950">YunoHost v3.4</a></small></p>
+    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-5-release-sortie-de-yunohost-3-5/7619">YunoHost v3.5</a></small></p>
   </div>
 
   <div class="row cf">
