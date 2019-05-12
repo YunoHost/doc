@@ -127,6 +127,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [PHProxy](http://sourceforge.net/projects/poxy)
 - [Phraseanet](https://docs.phraseanet.com/3.8/fr/index.html#)
 - [Pico](http://picocms.org)
+- [Pi-hole](https://pi-hole.net)
 - [Pix](http://pix.toile-libre.org)
 - [Playmaker](https://github.com/NoMore201/playmaker)
 - [Privoxy](http://www.privoxy.org)
