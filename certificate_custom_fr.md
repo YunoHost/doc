@@ -109,6 +109,12 @@ sudo chown root:root -R ae_certs
 sudo chmod 600 -R ae_certs
 ```
 
+Maintenant les certificats (les deux fichiers avec l'extension .pem) doivent être recopiés dans /etc/yunohost/certs/DOMAIN.TLD.
+
+```bash
+cp ae_certs/*.pem ./
+```
+
 Rechargez la configuration de nginx pour prendre en compte le nouveau certificat.
 ```bash
 sudo service nginx reload
