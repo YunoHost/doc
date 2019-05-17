@@ -82,4 +82,4 @@ Nautilus from Gnome3 has features similar to FileZilla, out of the box.
 
 ### MacOS
 
-Feel free to complete this part
+* [Cyberduck](https://cyberduck.io/) is a free software available on MacOS
