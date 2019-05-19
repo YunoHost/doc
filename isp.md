@@ -34,6 +34,7 @@ A list of French and Belgian ISPs is available on the [french page](/isp_fr).
 | Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
 | --- | --- | --- | --- | --- | --- | --- |
 | Telus | Multiple | - | No. Extra charge | - | - | No. Extra charge |
+| TekSavvy | Multiple | - | Yes | No | - | No. Extra charge |
 
 ### Sweden
 
@@ -41,5 +42,15 @@ A list of French and Belgian ISPs is available on the [french page](/isp_fr).
 | --- | --- | --- | --- | --- | --- | --- |
 | Telia | Multiple | Yes | No. Business only. | Yes | No. Business only. | No. Business only. |
 | Bredbandsbolaget | Multiple | Yes | No. Business only. | Yes | No. Business only. | No. Business only. |
+
+### Switzerland
+
+Most of non business IP provided by ISP are blacklisted.
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| Sunrise | Multiple | No | Yes | No | - | - |
+| Swisscom | Multiple | No | Yes | No | - | - |
+| VTX | Multiple | No | Yes | No | - | - |
 
 If you want to add international ISPs information, please do consider [modifying this page](/write_documentation).
