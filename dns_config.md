@@ -5,7 +5,7 @@ DNS (domain name system) is a system that converts human-readable addresses
 easily accessible by human beings, and for some services like mail to work
 properly, DNS must be configured.
 
-If you're using a nohost.me / noho.st domain, the configuration should be
+If you're using an [automatic domain](/dns_nohost_me) provided by the YunoHost Project, the configuration should be
 performed automatically. If you're using your own domain name (e.g. bought via
 a registrar), you should manually configure your domain on your registrar's
 interface.
