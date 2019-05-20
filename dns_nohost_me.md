@@ -1,6 +1,6 @@
-# Nohost.me domains
+# DynDNS domains
 
-In order to make self-hosting as accessible as possible, YunoHost offers a *free*
+In order to make self-hosting as accessible as possible, the YunoHost Project offers a *free*
 and *automatically configured* domain name service. By using this service, you
 won't have to [configure DNS records](/dns_config) yourself, which
 can be tedious and technical.
@@ -13,15 +13,12 @@ The following (sub)domains are proposed:
 To use this service, you simply have to choose such a domain during the 
 post-installation. It will then be automatically configured by YunoHost !
 
-#### Retrieve a nohost.me or noho.st domain
-
-If you reinstall your server and want to use a domain already used previously,
-you must request a domain reset on the forum 
-[in the dedicated thread](https://forum.yunohost.org/t/nohost-domain-recovery/442).
+N.B.: As a fairness measure, each instance may only 
+have **one such domain** setup at any given time.
 
 #### Subdomains
 
-The `nohost.me` and `noho.st` domain service does not allow the creation of
+The `nohost.me`, `noho.st` and `ynh.fr` domain service does not allow the creation of
 subdomains.
 
 Even if YunoHost allows the installation of applications on subdomains (for
@@ -33,13 +30,11 @@ application.mydomain.nohost.me`.
 To be able to enjoy applications that can only be installed at the root of a
 domain name, you must have your own domain name.
 
-### Adding a nohost.me / noho.st / ynh.fr domain after the post-installation
+### Adding a nohost.me, noho.st or ynh.fr domain after the post-installation
 
 If you already did the postinstall and want to add a nohost.me domain, you
 should run the following command (this can only be done from command line
 currently).
-
-N.B. : you can only have *one* nohost.me domain per YunoHost installation.
 
 ```bash
 # Add the domain
@@ -53,3 +48,22 @@ yunohost dyndns subscribe -d whateveryouwant.nohost.me
 # Update the DNS conf
 yunohost dyndns update
 ```
+
+#### Retrieve a nohost.me, noho.st or ynh.fr domain
+
+If you reinstall your server and want to use a domain already used previously,
+you must request a domain reset on the forum 
+[in the dedicated thread](https://forum.yunohost.org/t/nohost-domain-recovery/442).
+
+
+#### Change a nohost.me, noho.st or ynh.fr domain
+
+If you wish to use a different domain of this kind, you first have to remove
+your present domain registration. This is done in 3 steps:
+
+1. Remove the domain from your instance (via webadmin or the `yunohost doamin remove` CLI). 
+**/!\ Caution: this will remove any app installed on this domain, along with its data.**
+2. Ask for registration removal [in the dedicated forum thread](https://forum.yunohost.org/t/nohost-domain-recovery/442).
+3. Remove automatic domain configuration files on your server, via CLI only : `sudo rm /etc/cron.d/yunohost-dyndns && sudo rm -r /etc/yunohost/dyndns`
+
+You may then add a new domain.
