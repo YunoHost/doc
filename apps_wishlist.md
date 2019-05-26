@@ -23,12 +23,10 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Bookstack](https://www.bookstackapp.com/)
 - [Browsepass](http://techualization.blogspot.de/2013/09/introducing-browsepass-keepass-on-web.html)
 - [btcpayserver](https://github.com/btcpayserver/btcpayserver)
-- [Caliopen](https://www.caliopen.org)
 - [Candy](https://candy-chat.github.io/candy)
 - [CardDavMate](https://www.inf-it.com/open-source/clients/carddavmate)
 - [cgit](http://git.zx2c4.com/cgit/about)
 - [CheckUp](https://sourcegraph.github.io/checkup)
-- [CiviCRM](https://civicrm.org)
 - [Cloud torrent](https://github.com/jpillora/cloud-torrent)
 - [Cockpit](http://cockpit-project.org/)
 - [Commafeed](https://github.com/Athou/commafeed)
@@ -42,7 +40,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Deluge](http://deluge-torrent.org) (with WebUI)
 - [DirectoryLister](https://github.com/DirectoryLister/DirectoryLister)
 - [DNSchain](https://github.com/okTurtles/dnschain)
-- [Drupal](https://www.drupal.org/)
 - [eLabFTW](https://www.elabftw.net/) electronic lab notebook
 - [Emoncms](https://github.com/emoncms/emoncms)
 - [ERPnext](https://erpnext.com/download)
@@ -112,7 +109,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Museek+](https://github.com/eLvErDe/museek-plus)
 - [Nibbleblog](http://www.nibbleblog.com)
 - [Nuage](https://nuage.kerjean.me/login)
-- [ONLYOFFICE Document Server](http://helpcenter.onlyoffice.com/server/linux/document/linux-installation.aspx) (to be able to use ONLYOFFICE inside Nextcloud)
 - [OpenBazaar](https://openbazaar.org)
 - [openHAB](https://www.openhab.org/) - Smart home platform.
 - [OpenJabNab](https://github.com/OpenJabNab/OpenJabNab) (/!\ last update: Apr 30, 2016)
