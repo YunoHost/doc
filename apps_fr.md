@@ -166,7 +166,7 @@ $(document).ready(function () {
         var valThis = $('#filter-app-cards').val().toLowerCase();
         $('.app-card').each(function(){
             var text = $(this).find('h3').text().toLowerCase();
-            (text.indexOf(valThis) == 0 && $(this).find(filters_text).length > 0) ? $(this).show() : $(this).hide();         
+            (text.indexOf(valThis) >= 0 && $(this).find(filters_text).length > 0) ? $(this).show() : $(this).hide();
         });
         (filters.indexOf("working") == -1) ?$('#community-app-list-warrant').hide():$('#community-app-list-warrant').show();
     }
