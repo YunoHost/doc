@@ -126,6 +126,9 @@ Generic logs for PHP apps.
 ##### yunohost.log
 This is the log created at the YunoHost install. If you have issue installing YunoHost, check this file.
 
+##### YunoHost operations logs
+This is the logs created when you install, remove, backup, etc... an apps, they can be found using the Webadmin in Tools > Logs or using the command line: `yunohost log list` and `yunohost log display`.
+
 This list is not exhaustive. Furthermore, some app may put their logs in `/var/log` too. Slapd logs are unfortunately in `/var/log/syslog`.
 
 ## RAM usage
