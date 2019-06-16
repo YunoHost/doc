@@ -171,6 +171,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [webSync](http://furier.github.io/websync)
 - [WebTorrent](https://github.com/feross/webtorrent)
 - [Wisemapping](http://www.wisemapping.com)
+- [Wireguard](https://www.wireguard.com/)
 - [Xonotic](http://xonotic.org)
 - [YesWiki](https://yeswiki.net)
 - [ZeroTier](https://github.com/zerotier/ZeroTierOne)
