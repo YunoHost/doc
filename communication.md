@@ -30,9 +30,29 @@
 - (FR) [Linux Pratique n°96 – YunoHost, l’auto-hébergement à portée de main – juillet 2016](http://connect.ed-diamond.com/Linux-Pratique/LP-096/YunoHost-l-auto-hebergement-a-portee-de-main)
 - (EN) [Linux Magazine n°208 – YunoHost, Personal server for a private cloud – Mars 2018](http://www.linux-magazine.com/Issues/2018/208/YunoHost)
 - (FR) [Linux Pratique HS n° 044 février 2019 - Le choix de l’auto-hébergement avec YunoHost : rencontre avec l’équipe du projet](https://connect.ed-diamond.com/Linux-Pratique/LPHS-044/Le-choix-de-l-auto-hebergement-avec-YunoHost-rencontre-avec-l-equipe-du-projet)
+- (FR) [Duhaz.fr: Devenir votre propre hébergeur](https://www.duhaz.fr/blog/devenir-votre-propre-h%C3%A9bergeur/)
+- (FR) [Faimaison.net: au revoir Google, bonjour liberté!](https://www.faimaison.net/actualites/chatons-leprette-mai2019.html)
+- (FR) [Tineternet.net: Reprendre la main sur ses données avec l'auto-hébergement](https://www.tinternet.net/article/2019/05/dossier-reprendre-la-main-sur-ses-donnees-avec-lauto-hebergement)
+- (DE) [Yunohost Serverinstallation auf Laptop](https://www.giammi.com/2019/04/19/yunohost-serverinstallation-auf-laptop/)
+- (FR) [Cenabumix: Retour d’expérience Yunohost sur Raspberry](https://wiki.cenabumix.org/wordpress/2018/03/17/retour-dexperience-yunohost-sur-raspberry/)
+- (FR) [Geber.ga: Yunohost, ou l'auto-hébergement à portée de main...](https://www.geber.ga/yunohost-ou-l-auto-hebergement-a-portee-de-main/)
+- (EN) [Nequalsonelifestyle.com: Self Hosting Without Self Owning](https://www.nequalsonelifestyle.com/2019/05/04/self-hosting-without-self-owning/)
+- (EN) [Skysilk.com: How to Install YunoHost On a Debian VPS](https://www.skysilk.com/blog/2019/how-to-install-yunohost-on-a-debian-vps/)
+- (FR) [Alternativelibertaire.org: Auto-hébergement](https://www.alternativelibertaire.org/?Auto-hebergement-1-Un-serveur-a-mon-seul-service)
+- (ES) [Sololinux.es: Instalar YunoHost en Debian 9 Stretch](https://www.sololinux.es/instalar-yunohost-en-debian-9-stretch/)
+- (FR) [Bog.hugopoi.net: Le cloud maison](https://blog.hugopoi.net/2019/03/30/le-cloud-maison/)
+
+## Past Events / Workshops
+
+- (FR) [INFOTHEMA: Présentation de l’avancée du projet YunoHost INFOTHEMA + Présentation du collectif CHATONS](https://www.infothema.fr/begard-samedi-22-juin-2019-seance-infothema/)
+- (FR) [Normandie-libre.fr: Héberger ses sites web à la maison](https://normandie-libre.fr/heberger-ses-sites-web-a-la-maison/)
+- (FR) [Viregul.fr: Auto-hébergement, pour un Internet décentralisé](https://viregul.fr/auto-hebergement-pour-un-internet-decentralise-le-samedi-25-mai-2019/)
+- (EN) [35C3: Hands-on introduction to self-Hosting with YunoHos](https://events.ccc.de/congress/2018/wiki/index.php/Session:Hands-on_introduction_to_self-Hosting_with_YunoHost)
+- (FR) [Journées du Logiciel Libre 2019: l'auto-hébergement avec YunoHost](https://pretalx.jdll.org/jdll2019/talk/88GSPH/)
 
 ## YunoHost was cited in :
 
 * [EXPERIMENTA 2018](https://livestream.com/accounts/26482307/events/8034656/player?width=960&height=540&enableInfoAndActivity=true&defaultDrawer=&autoPlay=true&mute=false) at 57.47 (depuis https://www.experimenta.fr/direct/)
 * [Capitole du libre 2017 - « Contributopia », Dégoogliser ne suffit pas](https://www.youtube.com/watch?v=ip6_VMkWpr8&feature=youtu.be&t=4793)
 * [Contributopia - Essaimage (Framasoft)](https://contributopia.org/fr/essaimage/)
+- (FR) [Triple A: Émission Underscore #144 du 19 mai 2019](https://www.triplea.fr/blog/podcast/emission-underscore-144-du-19-mai-2019/)
