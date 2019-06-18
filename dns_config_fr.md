@@ -7,8 +7,8 @@ votre serveur soit facilement accessible par d'autres êtres humains, et pour
 que certains services comme le mail fonctionnent correctement, il est nécessaire
 de configurer la zone DNS de votre domaine.
 
-Si vous utilisez un domaine en nohost.me / noho.st domain, la configuration
-devrait être faite automatiquement. Si vous utilisez votre propre nom de domaine
+Si vous utilisez un [domaine automatique](/dns_nohost_me_fr) fourni par le Projet Yunohost,
+la configuration devrait être faite automatiquement. Si vous utilisez votre propre nom de domaine
 (e.g. acheté chez un registrar), il vous faut configurer manuellement votre
 domaine via l'interface de votre registrar.
 
