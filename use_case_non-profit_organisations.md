@@ -9,7 +9,6 @@
 * [Why](#why) 
 * [How](#how) 
 * [Conclusion](#conclusion) 
-* [Authors](#authors) 
 
 ## Introduction <a id="introduction"></a> 
 
