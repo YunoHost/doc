@@ -33,4 +33,4 @@
    * [Support / Help](/help)
 
 * استخدم مثال:
-   * [YunoHost للمنظمات غير الهادفة للربح]](/use_case_non-profit_organisations_en)
+   * [YunoHost للمنظمات غير الهادفة للربح](/use_case_non-profit_organisations_en)
