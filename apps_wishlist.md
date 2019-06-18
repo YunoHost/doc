@@ -19,6 +19,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Bitmessage](https://bitmessage.org/wiki/Compiling_instructions)
 - [Bitwarden](https://bitwarden.com/)
 - [Beehive](https://github.com/muesli/beehive)
+- [Bludit](https://www.bludit.com)
 - [Blynk](https://github.com/blynkkk/blynk-library)
 - [Bookstack](https://www.bookstackapp.com/)
 - [Browsepass](http://techualization.blogspot.de/2013/09/introducing-browsepass-keepass-on-web.html)
