@@ -31,3 +31,6 @@ YunoHost's documentation has 3 different sections:
    * [Chat rooms](/chat_rooms_en)
    * [Communication](/communication_en)
    * [Support / Help](/help)
+
+* Use example:
+   * [YunoHost for non-profit organisations](/use_case_non-profit_organisations)

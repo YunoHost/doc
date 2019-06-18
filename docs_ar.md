@@ -31,3 +31,6 @@
    * [Chat rooms](/chat_rooms_en)
    * [Communication](/communication_en)
    * [Support / Help](/help)
+
+* استخدم مثال:
+   * [YunoHost للمنظمات غير الهادفة للربح] (/ use_case_non-profit_organisations_en)
