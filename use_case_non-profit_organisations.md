@@ -1,14 +1,14 @@
 # YunoHost for non-profit
 
 ## Table of Contents
-* [Introduction](#introduction) 
-* [Who](#who) 
-* [What](#what) 
-* [When](#when) 
-* [Where](#where) 
-* [Why](#why) 
-* [How](#how) 
-* [Conclusion](#conclusion) 
+* [Introduction](/use_case_non-profit_organisations_en?id=introduction) 
+* [Who](/use_case_non-profit_organisations_en?id=who) 
+* [What](/use_case_non-profit_organisations_en?id=what) 
+* [When](/use_case_non-profit_organisations_en?id=when) 
+* [Where](/use_case_non-profit_organisations_en?id=where) 
+* [Why](/use_case_non-profit_organisations_en?id=why) 
+* [How](/use_case_non-profit_organisations_en?id=how) 
+* [Conclusion](/use_case_non-profit_organisations_en?id=conclusion) 
 
 ## Introduction <a id="introduction"></a> 
 
@@ -23,22 +23,22 @@ Non-profit organizations, NGO or any kind of association.
 Usually non-profit organizations need to provide several services to several publics:
 
 * Board of Directors / Steering Committee / Volunteers with:
-  * [Mails](#mail)
-  * [Calendar](#calendar)
-  * [Contact](#contact)
-  * [Shared files / Drive](#drive)
-  * [Instant communication](#im)
-  * [Intranet / knowledge database](#intranet)
-  * [ERP / Accounting](#erp)
+  * [Mails](/use_case_non-profit_organisations_en?id=mail)
+  * [Calendar](/use_case_non-profit_organisations_en?id=calendar)
+  * [Contact](/use_case_non-profit_organisations_en?id=contact)
+  * [Shared files / Drive](/use_case_non-profit_organisations_en?id=drive)
+  * [Instant communication](/use_case_non-profit_organisations_en?id=im)
+  * [Intranet / knowledge database](/use_case_non-profit_organisations_en?id=intranet)
+  * [ERP / Accounting](/use_case_non-profit_organisations_en?id=erp)
 * Members with:
-  * [Public website with private and individual access](#www)
-  * [Membership](#membership)
-  * [Events registrations](#events)
-  * [Mailings](#mailing)
-  * [Forum](#forum)
+  * [Public website with private and individual access](/use_case_non-profit_organisations_en?id=www)
+  * [Membership](/use_case_non-profit_organisations_en?id=membership)
+  * [Events registrations](/use_case_non-profit_organisations_en?id=events)
+  * [Mailings](/use_case_non-profit_organisations_en?id=mailing)
+  * [Forum](/use_case_non-profit_organisations_en?id=forum)
 * Public with:
-  * [Public website](#www)
-  * [Newsletter](#mailing)
+  * [Public website](/use_case_non-profit_organisations_en?id=www)
+  * [Newsletter](/use_case_non-profit_organisations_en?id=mailing)
 
 ## When <a id="when"></a> 
 
