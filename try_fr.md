@@ -22,7 +22,7 @@
 <br>
 
 <p class="text-center" markdown="1">
-***Le serveur de démo est fourni généreusement par    
+***(Serveur Actif)Le serveur de démo est fourni généreusement par    
 <a href="https://www.gitoyen.net" target="_blank">Gitoyen</a>***
 </p>
 
