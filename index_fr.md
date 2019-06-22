@@ -11,6 +11,7 @@
       <span class="yolo 3" style="color: #3366FF;">Internet, lecture et écriture</span>
       <span class="yolo 4" style="color: #FFFFFF;">monsieur@michu.fr</span>
       <span class="yolo 5" style="color: #CC66FF;">J’ai rien à cacher</span>
+      <span class="yolo 5" style="color: #CC66FF;">J'ai mon serveur à héberger ?</span>
       <span class="yolo 6" style="color: #FF6600;">How I met your server</span>
     </p>
     <button class="btn btn-primary btn-lg btn-block yolobtn">Pardon ?</button>
