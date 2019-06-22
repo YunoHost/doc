@@ -16,7 +16,7 @@ Why should you host yourself ?
 
 - **You want to learn about how computers and the Internet work.** Operating your own server is a pretty good context to understand the basic mechanisms at the heart of operating systems and the Internet. You might have to deal with command line interface, network architecture, DNS configuration, SSH, and so on.
 
-- **You want to explore new possibilities and customize things.** Ever dreamed of running a Minecraft server for you friends, or a persistent IRC or XMPP client? With you very own server, you can manually install and run virtually any program you want, and customize every bit.
+- **You want to explore new possibilities and customize things.** Ever dreamed of running a Minecraft server for you friends, or a persistent IRC or XMPP client? With your very own server, you can manually install and run virtually any program you want, and customize every bit.
 
 Why should you *not* host yourself ?
 ------------------------------------
