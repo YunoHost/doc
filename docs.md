@@ -33,4 +33,4 @@ YunoHost's documentation has 3 different sections:
    * [Support / Help](/help)
 
 * Use example:
-   * [YunoHost for non-profit organisations](/use_case_non-profit_organisations)
+   * [YunoHost for non-profit organisations](/use_case_non-profit_organisations_en)
