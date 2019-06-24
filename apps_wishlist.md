@@ -110,6 +110,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Museek+](https://github.com/eLvErDe/museek-plus)
 - [Nibbleblog](http://www.nibbleblog.com)
 - [Nuage](https://nuage.kerjean.me/login)
+- [Ombi](https://github.com/tidusjar/Ombi)
 - [OpenBazaar](https://openbazaar.org)
 - [openHAB](https://www.openhab.org/) - Smart home platform.
 - [OpenJabNab](https://github.com/OpenJabNab/OpenJabNab) (/!\ last update: Apr 30, 2016)
@@ -134,6 +135,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Pump.io](http://pump.io)
 - [qBittorrent](https://github.com/qbittorrent/qBittorrent)
 - [racktables](http://racktables.org)
+- [Radarr](https://github.com/Radarr/Radarr)
 - [Redmine](https://www.redmine.org)
 - [Request Tracker](https://bestpractical.com)
 - [Respawn 2.0](https://github.com/broncowdd/respawn) ( /!\ last update: 2015)
