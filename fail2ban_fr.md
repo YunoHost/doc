@@ -30,3 +30,27 @@ $ fail2ban-client set sshd unbanip 11.22.33.44
 $ fail2ban-client set recidive unbanip 11.22.33.44
 ```
 
+## Passer une IP en liste blanche / whitelist
+
+Si vous ne voulez plus qu'une adresse IP "légitime" soit bloquée par fail2ban, alors il faut la renseigner dans la liste blanche / whitelist du fichier de configuration de la prison.
+
+Lors d'une mise à jour du logiciel Fail2ban, le fichier d'origine /etc/fail2ban/jail.conf est écrasé. C'est donc sur une copie renomée en .local de ce fichier que nous allons apporter nos modifications /etc/fail2ban/jail.local.
+Commencez donc par faire une copie du fichier de configuration des prisons (/etc/fail2ban/jail.conf) qui s’appelera jail.local :
+```bash
+$ cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+```
+
+Éditez ce nouveau fichier :
+```bash
+$ sudo nano /etc/fail2ban/jail.local
+```
+
+Complétez la ligne ```ignoreipe =``` :
+
+```bash 
+ignoreip = 127.0.0.1/8 XXX.XXX.XXX.XXX #<= l'adresse IP (on peut en mettre plusieurs, séparées par un espace) que vous voulez passer en liste blanche / whitelist```
+
+Sauvegardez le fichier et rechargez la configuration de fail2ban :
+```bash
+$ fail2ban-client reload
+```
