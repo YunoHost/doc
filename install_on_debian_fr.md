@@ -12,8 +12,6 @@ Sur une plateforme ARM, un VPS, un serveur dédié, un ordinateur x86 standard, 
 * connecté à Internet
 * avec un **accès root** directement ou par SSH
 
-<img width=650 src="/images/debian_install.png">
-
 ---
 
 ## Étapes d’installation
