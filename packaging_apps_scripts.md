@@ -54,7 +54,7 @@ The name of the question is `domain` so in the script we can access it with YNH_
 domain=$YNH_APP_ARG_DOMAIN
 ```
 
-### Variables spécifiques pour `change_url`
+### Variables specific to `change_url`
 #### YNH_APP_OLD_DOMAIN
 The old domain where the app was installed.
 #### YNH_APP_OLD_PATH
