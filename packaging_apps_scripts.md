@@ -30,7 +30,7 @@ It contains the instance's number. Warning, it's not the number of running insta
 
 Example: 3
 
-### Specific variables to use in `install`
+### Variables specific to `install`
 #### YNH_APP_ARG_XXXXXXX
 An environment variable is available for each question asked in the installation.
 
