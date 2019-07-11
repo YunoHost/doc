@@ -342,17 +342,13 @@
   <div class="helper-card-body">
     <div data-toggle="collapse" href="#collapse-ynh_install_app_dependencies" style="cursor:pointer">
         <h5 class="helper-card-title"><tt>ynh_install_app_dependencies</tt></h5>
-        <h6 class="helper-card-subtitle text-muted">Define and install dependencies with a equivs control file
-This helper can/should only be called once per app</h6>
+        <h6 class="helper-card-subtitle text-muted">Define and install dependencies with a equivs control file</h6>
     </div>
     <div id="collapse-ynh_install_app_dependencies" class="collapse" role="tabpanel">
     <hr style="margin-top:25px; margin-bottom:25px;">
     <p>
         
-        <strong>Usage</strong>: <code class="helper-code helper-usage">ynh_install_app_dependencies dep [dep [...]]
-  You can give a choice between some package with this syntax : "dep1|dep2"
-  Example : ynh_install_app_dependencies dep1 dep2 "dep3|dep4|dep5"
-  This mean in the dependence tree : dep1 & dep2 & (dep3 | dep4 | dep5)</code>
+        <strong>Usage</strong>: <code class="helper-code">ynh_install_app_dependencies dep [dep [...]]</code>
         
     </p>
     
@@ -361,7 +357,7 @@ This helper can/should only be called once per app</h6>
         <ul>
             
             
-            <li><code>dep</code> : the package name to install in dependence</li>
+            <li><code>dep</code> : the package name to install in dependence. Writing "dep3|dep4|dep5" can be used to specify alternatives. For example : dep1 dep2 "dep3|dep4|dep5" will require to install dep1 and dep 2 and (dep3 or dep4 or dep5).</li>
             
             
         </ul>
@@ -374,7 +370,7 @@ This helper can/should only be called once per app</h6>
     <p>
         <strong>Details</strong>:
         <p>
-        Requires YunoHost version 2.6.4 or higher.</br></br>
+        This helper can/should only be called once per app</br></br>example : ynh_install_app_dependencies dep1 dep2 "dep3|dep4|dep5"</br></br>Requires YunoHost version 2.6.4 or higher.</br></br>
         </p>
     </p>
     
@@ -478,12 +474,12 @@ This helper can/should only be called once per app</h6>
     <p>
         <strong>Details</strong>:
         <p>
-        Note: this helper could be used in backup hook or in backup script inside an</br>app package</br></br>Details: ynh_backup writes SRC and the relative DEST into a CSV file. And it</br>creates the parent destination directory</br></br>If DEST is ended by a slash it complete this path with the basename of SRC.</br></br>Example in the context of a wordpress app</br></br>ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf"</br># => This line will be added into CSV file</br># "/etc/nginx/conf.d/$domain.d/$app.conf","apps/wordpress/etc/nginx/conf.d/$domain.d/$app.conf"</br></br>ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf" "conf/nginx.conf"</br># => "/etc/nginx/conf.d/$domain.d/$app.conf","apps/wordpress/conf/nginx.conf"</br></br>ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf" "conf/"</br># => "/etc/nginx/conf.d/$domain.d/$app.conf","apps/wordpress/conf/$app.conf"</br></br>ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf" "conf"</br># => "/etc/nginx/conf.d/$domain.d/$app.conf","apps/wordpress/conf"</br></br>#Deprecated usages (maintained for retro-compatibility)</br>ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf" "${backup_dir}/conf/nginx.conf"</br># => "/etc/nginx/conf.d/$domain.d/$app.conf","apps/wordpress/conf/nginx.conf"</br></br>ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf" "/conf/"</br># => "/etc/nginx/conf.d/$domain.d/$app.conf","apps/wordpress/conf/$app.conf"</br></br>Requires YunoHost version 2.4.0 or higher.</br></br>
+        This helper can be used both in a system backup hook, and in an app backup script</br></br>Details: ynh_backup writes SRC and the relative DEST into a CSV file. And it</br>creates the parent destination directory</br></br>If DEST is ended by a slash it complete this path with the basename of SRC.</br></br>Example in the context of a wordpress app</br></br>ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf"</br># => This line will be added into CSV file</br># "/etc/nginx/conf.d/$domain.d/$app.conf","apps/wordpress/etc/nginx/conf.d/$domain.d/$app.conf"</br></br>ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf" "conf/nginx.conf"</br># => "/etc/nginx/conf.d/$domain.d/$app.conf","apps/wordpress/conf/nginx.conf"</br></br>ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf" "conf/"</br># => "/etc/nginx/conf.d/$domain.d/$app.conf","apps/wordpress/conf/$app.conf"</br></br>ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf" "conf"</br># => "/etc/nginx/conf.d/$domain.d/$app.conf","apps/wordpress/conf"</br></br>#Deprecated usages (maintained for retro-compatibility)</br>ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf" "${backup_dir}/conf/nginx.conf"</br># => "/etc/nginx/conf.d/$domain.d/$app.conf","apps/wordpress/conf/nginx.conf"</br></br>ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf" "/conf/"</br># => "/etc/nginx/conf.d/$domain.d/$app.conf","apps/wordpress/conf/$app.conf"</br></br>Requires YunoHost version 2.4.0 or higher.</br></br>
         </p>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L45">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L44">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -497,7 +493,7 @@ This helper can/should only be called once per app</h6>
   <div class="helper-card-body">
     <div data-toggle="collapse" href="#collapse-ynh_restore" style="cursor:pointer">
         <h5 class="helper-card-title"><tt>ynh_restore</tt></h5>
-        <h6 class="helper-card-subtitle text-muted">Restore all files linked to the restore hook or to the restore app script</h6>
+        <h6 class="helper-card-subtitle text-muted">Restore all files that were previously backuped in a core backup script or app backup script</h6>
     </div>
     <div id="collapse-ynh_restore" class="collapse" role="tabpanel">
     <hr style="margin-top:25px; margin-bottom:25px;">
@@ -519,7 +515,7 @@ This helper can/should only be called once per app</h6>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L162">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L161">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -595,7 +591,7 @@ This helper can/should only be called once per app</h6>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L221">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L220">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -642,7 +638,7 @@ This helper can/should only be called once per app</h6>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L297">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L296">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -656,9 +652,7 @@ This helper can/should only be called once per app</h6>
   <div class="helper-card-body">
     <div data-toggle="collapse" href="#collapse-ynh_backup_if_checksum_is_different" style="cursor:pointer">
         <h5 class="helper-card-title"><tt>ynh_backup_if_checksum_is_different</tt></h5>
-        <h6 class="helper-card-subtitle text-muted">Verify the checksum and backup the file if it's different
-This helper is primarily meant to allow to easily backup personalised/manually
-modified config files.</h6>
+        <h6 class="helper-card-subtitle text-muted">Verify the checksum and backup the file if it's different</h6>
     </div>
     <div id="collapse-ynh_backup_if_checksum_is_different" class="collapse" role="tabpanel">
     <hr style="margin-top:25px; margin-bottom:25px;">
@@ -690,12 +684,12 @@ modified config files.</h6>
     <p>
         <strong>Details</strong>:
         <p>
-        $app should be defined when calling this helper</br></br>Requires YunoHost version 2.6.4 or higher.</br></br>
+        This helper is primarily meant to allow to easily backup personalised/manually</br>modified config files.</br></br>Requires YunoHost version 2.6.4 or higher.</br></br>
         </p>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L330">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L328">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -742,7 +736,7 @@ modified config files.</h6>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L363">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L361">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -782,7 +776,7 @@ ynh_abort_if_errors</code>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L385">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L383">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -822,7 +816,7 @@ ynh_abort_if_errors</code>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L434">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L432">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -956,14 +950,13 @@ ynh_abort_if_errors</code>
   <div class="helper-card-body">
     <div data-toggle="collapse" href="#collapse-ynh_die" style="cursor:pointer">
         <h5 class="helper-card-title"><tt>ynh_die</tt></h5>
-        <h6 class="helper-card-subtitle text-muted">Print a message to stderr and exit
-usage: ynh_die --message=MSG [--ret_code=RETCODE]</h6>
+        <h6 class="helper-card-subtitle text-muted">Print a message to stderr and exit</h6>
     </div>
     <div id="collapse-ynh_die" class="collapse" role="tabpanel">
     <hr style="margin-top:25px; margin-bottom:25px;">
     <p>
         
-        <strong>Usage</strong>: <code class="helper-code"></code>
+        <strong>Usage</strong>: <code class="helper-code">ynh_die --message=MSG [--ret_code=RETCODE]</code>
         
     </p>
     
@@ -979,7 +972,7 @@ usage: ynh_die --message=MSG [--ret_code=RETCODE]</h6>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L7">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L8">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -1015,7 +1008,7 @@ usage: ynh_die --message=MSG [--ret_code=RETCODE]</h6>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L25">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L26">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -1062,7 +1055,7 @@ usage: ynh_die --message=MSG [--ret_code=RETCODE]</h6>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L70">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L71">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -1109,7 +1102,7 @@ usage: ynh_die --message=MSG [--ret_code=RETCODE]</h6>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L87">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L88">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -1129,10 +1122,8 @@ usage: ynh_die --message=MSG [--ret_code=RETCODE]</h6>
     <hr style="margin-top:25px; margin-bottom:25px;">
     <p>
         
-        <strong>Usage</strong>: <code class="helper-code helper-usage">ynh_exec_err command to execute
-ynh_exec_err "command to execute | following command"
-In case of use of pipes, you have to use double quotes. Otherwise, this helper will be executed with the first command, then be sent to the next pipe.
-If the command to execute uses double quotes, they have to be escaped or they will be interpreted and removed.</code>
+        <strong>Usage</strong>: <code class="helper-code helper-usage">ynh_exec_err your_command
+ynh_exec_err "your_command | other_command"</code>
         
     </p>
     
@@ -1154,12 +1145,12 @@ If the command to execute uses double quotes, they have to be escaped or they wi
     <p>
         <strong>Details</strong>:
         <p>
-        Requires YunoHost version 3.2.0 or higher.</br></br>
+        When using pipes, double quotes are required - otherwise, this helper will run the first command, and the whole output will be sent through the next pipe.</br></br>If the command to execute uses double quotes, they have to be escaped or they will be interpreted and removed.</br></br>Requires YunoHost version 3.2.0 or higher.</br></br>
         </p>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L108">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L111">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -1179,10 +1170,8 @@ If the command to execute uses double quotes, they have to be escaped or they wi
     <hr style="margin-top:25px; margin-bottom:25px;">
     <p>
         
-        <strong>Usage</strong>: <code class="helper-code helper-usage">ynh_exec_warn command to execute
-ynh_exec_warn "command to execute | following command"
-In case of use of pipes, you have to use double quotes. Otherwise, this helper will be executed with the first command, then be sent to the next pipe.
-If the command to execute uses double quotes, they have to be escaped or they will be interpreted and removed.</code>
+        <strong>Usage</strong>: <code class="helper-code helper-usage">ynh_exec_warn your_command
+ynh_exec_warn "your_command | other_command"</code>
         
     </p>
     
@@ -1204,12 +1193,12 @@ If the command to execute uses double quotes, they have to be escaped or they wi
     <p>
         <strong>Details</strong>:
         <p>
-        Requires YunoHost version 3.2.0 or higher.</br></br>
+        When using pipes, double quotes are required - otherwise, this helper will run the first command, and the whole output will be sent through the next pipe.</br></br>If the command to execute uses double quotes, they have to be escaped or they will be interpreted and removed.</br></br>Requires YunoHost version 3.2.0 or higher.</br></br>
         </p>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L122">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L127">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -1229,10 +1218,8 @@ If the command to execute uses double quotes, they have to be escaped or they wi
     <hr style="margin-top:25px; margin-bottom:25px;">
     <p>
         
-        <strong>Usage</strong>: <code class="helper-code helper-usage">ynh_exec_warn_less command to execute
-ynh_exec_warn_less "command to execute | following command"
-In case of use of pipes, you have to use double quotes. Otherwise, this helper will be executed with the first command, then be sent to the next pipe.
-If the command to execute uses double quotes, they have to be escaped or they will be interpreted and removed.</code>
+        <strong>Usage</strong>: <code class="helper-code helper-usage">ynh_exec_warn_less your_command
+ynh_exec_warn_less "your_command | other_command"</code>
         
     </p>
     
@@ -1254,12 +1241,12 @@ If the command to execute uses double quotes, they have to be escaped or they wi
     <p>
         <strong>Details</strong>:
         <p>
-        Requires YunoHost version 3.2.0 or higher.</br></br>
+        When using pipes, double quotes are required - otherwise, this helper will run the first command, and the whole output will be sent through the next pipe.</br></br>If the command to execute uses double quotes, they have to be escaped or they will be interpreted and removed.</br></br>Requires YunoHost version 3.2.0 or higher.</br></br>
         </p>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L136">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L143">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -1279,10 +1266,8 @@ If the command to execute uses double quotes, they have to be escaped or they wi
     <hr style="margin-top:25px; margin-bottom:25px;">
     <p>
         
-        <strong>Usage</strong>: <code class="helper-code helper-usage">ynh_exec_quiet command to execute
-ynh_exec_quiet "command to execute | following command"
-In case of use of pipes, you have to use double quotes. Otherwise, this helper will be executed with the first command, then be sent to the next pipe.
-If the command to execute uses double quotes, they have to be escaped or they will be interpreted and removed.</code>
+        <strong>Usage</strong>: <code class="helper-code helper-usage">ynh_exec_quiet your_command
+ynh_exec_quiet "your_command | other_command"</code>
         
     </p>
     
@@ -1304,12 +1289,12 @@ If the command to execute uses double quotes, they have to be escaped or they wi
     <p>
         <strong>Details</strong>:
         <p>
-        Requires YunoHost version 3.2.0 or higher.</br></br>
+        When using pipes, double quotes are required - otherwise, this helper will run the first command, and the whole output will be sent through the next pipe.</br></br>If the command to execute uses double quotes, they have to be escaped or they will be interpreted and removed.</br></br>Requires YunoHost version 3.2.0 or higher.</br></br>
         </p>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L150">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L159">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -1329,10 +1314,8 @@ If the command to execute uses double quotes, they have to be escaped or they wi
     <hr style="margin-top:25px; margin-bottom:25px;">
     <p>
         
-        <strong>Usage</strong>: <code class="helper-code helper-usage">ynh_exec_fully_quiet command to execute
-ynh_exec_fully_quiet "command to execute | following command"
-In case of use of pipes, you have to use double quotes. Otherwise, this helper will be executed with the first command, then be sent to the next pipe.
-If the command to execute uses double quotes, they have to be escaped or they will be interpreted and removed.</code>
+        <strong>Usage</strong>: <code class="helper-code helper-usage">ynh_exec_fully_quiet your_command
+ynh_exec_fully_quiet "your_command | other_command"</code>
         
     </p>
     
@@ -1354,12 +1337,12 @@ If the command to execute uses double quotes, they have to be escaped or they wi
     <p>
         <strong>Details</strong>:
         <p>
-        Requires YunoHost version 3.2.0 or higher.</br></br>
+        When using pipes, double quotes are required - otherwise, this helper will run the first command, and the whole output will be sent through the next pipe.</br></br>If the command to execute uses double quotes, they have to be escaped or they will be interpreted and removed.</br></br>Requires YunoHost version 3.2.0 or higher.</br></br>
         </p>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L164">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L175">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -1379,8 +1362,7 @@ If the command to execute uses double quotes, they have to be escaped or they wi
     <hr style="margin-top:25px; margin-bottom:25px;">
     <p>
         
-        <strong>Usage</strong>: <code class="helper-code helper-usage">ynh_print_OFF
-WARNING: You should be careful with this helper, and never forget to use ynh_print_ON as soon as possible to restore the logging.</code>
+        <strong>Usage</strong>: <code class="helper-code">ynh_print_OFF</code>
         
     </p>
     
@@ -1391,12 +1373,12 @@ WARNING: You should be careful with this helper, and never forget to use ynh_pri
     <p>
         <strong>Details</strong>:
         <p>
-        Requires YunoHost version 3.2.0 or higher.</br></br>
+        WARNING: You should be careful with this helper, and never forget to use ynh_print_ON as soon as possible to restore the logging.</br></br>Requires YunoHost version 3.2.0 or higher.</br></br>
         </p>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L174">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L186">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -1432,7 +1414,7 @@ WARNING: You should be careful with this helper, and never forget to use ynh_pri
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L183">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L195">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -1444,11 +1426,11 @@ WARNING: You should be careful with this helper, and never forget to use ynh_pri
 
 <div class="helper-card">
   <div class="helper-card-body">
-    <div data-toggle="collapse" href="#collapse-increment_progression=0" style="cursor:pointer">
-        <h5 class="helper-card-title"><tt>increment_progression=0</tt></h5>
+    <div data-toggle="collapse" href="#collapse-ynh_script_progression" style="cursor:pointer">
+        <h5 class="helper-card-title"><tt>ynh_script_progression</tt></h5>
         <h6 class="helper-card-subtitle text-muted">Print a message as INFO and show progression during an app script</h6>
     </div>
-    <div id="collapse-increment_progression=0" class="collapse" role="tabpanel">
+    <div id="collapse-ynh_script_progression" class="collapse" role="tabpanel">
     <hr style="margin-top:25px; margin-bottom:25px;">
     <p>
         
@@ -1492,7 +1474,7 @@ The execution time is given for the duration since the previous call. So the wei
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L199">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L224">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -1529,7 +1511,7 @@ The execution time is given for the duration since the previous call. So the wei
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L294">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L308">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -1580,7 +1562,7 @@ The execution time is given for the duration since the previous call. So the wei
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L305">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L319">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -1600,9 +1582,8 @@ The execution time is given for the duration since the previous call. So the wei
     <hr style="margin-top:25px; margin-bottom:25px;">
     <p>
         
-        <strong>Usage</strong>: <code class="helper-code helper-usage">ynh_debug_exec command to execute
-ynh_debug_exec "command to execute | following command"
-In case of use of pipes, you have to use double quotes. Otherwise, this helper will be executed with the first command, then be sent to the next pipe.</code>
+        <strong>Usage</strong>: <code class="helper-code helper-usage">ynh_debug_exec your_command
+ynh_debug_exec "your_command | other_command"</code>
         
     </p>
     
@@ -1624,12 +1605,12 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
     <p>
         <strong>Details</strong>:
         <p>
-        Requires YunoHost version 3.5.0 or higher.</br></br>
+        When using pipes, double quotes are required - otherwise, this helper will run the first command, and the whole output will be sent through the next pipe.</br></br>If the command to execute uses double quotes, they have to be escaped or they will be interpreted and removed.</br></br>Requires YunoHost version 3.5.0 or higher.</br></br>
         </p>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L360">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L377">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -2392,35 +2373,6 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
 
 <div class="helper-card">
   <div class="helper-card-body">
-    <div data-toggle="collapse" href="#collapse-export" style="cursor:pointer">
-        <h5 class="helper-card-title"><tt>export</tt></h5>
-        <h6 class="helper-card-subtitle text-muted">N_PREFIX is the directory of n, it needs to be loaded as a environment variable.</h6>
-    </div>
-    <div id="collapse-export" class="collapse" role="tabpanel">
-    <hr style="margin-top:25px; margin-bottom:25px;">
-    <p>
-        
-        <strong>Usage</strong>: <code class="helper-code"></code>
-        
-    </p>
-    
-    
-    
-    
-    
-    <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/nodejs#L6">Dude, show me the code !</a>
-    </p>
-
-  </div>
-  </div>
-
-</div>
-
-
-
-<div class="helper-card">
-  <div class="helper-card-body">
     <div data-toggle="collapse" href="#collapse-ynh_use_nodejs" style="cursor:pointer">
         <h5 class="helper-card-title"><tt>ynh_use_nodejs</tt></h5>
         <h6 class="helper-card-subtitle text-muted">Load the version of node for an app, and set variables.</h6>
@@ -2465,9 +2417,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
     <hr style="margin-top:25px; margin-bottom:25px;">
     <p>
         
-        <strong>Usage</strong>: <code class="helper-code helper-usage">ynh_install_nodejs --nodejs_version=nodejs_version
-       If possible, prefer to use major version number (e.g. 8 instead of 8.10.0).
-       The crontab will handle the update of minor versions when needed.</code>
+        <strong>Usage</strong>: <code class="helper-code">ynh_install_nodejs --nodejs_version=nodejs_version</code>
         
     </p>
     
@@ -2476,7 +2426,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
         <ul>
             
             
-            <li><code>-n</code>, <code>--nodejs_version</code> : Version of node to install.</li>
+            <li><code>-n</code>, <code>--nodejs_version</code> : Version of node to install. When possible, your should prefer to use major version number (e.g. 8 instead of 8.10.0). The crontab will then handle the update of minor versions when needed.</li>
             
             
         </ul>
@@ -2494,7 +2444,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/nodejs#L68">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/nodejs#L66">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -2530,7 +2480,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/nodejs#L146">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/nodejs#L144">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -2668,10 +2618,22 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
     
     
     
-    <p>
-        <strong>Example</strong>: <code class="helper-code">ynh_psql_connect_as 'user' 'pass' <<< "UPDATE ...;" example: ynh_psql_connect_as 'user' 'pass' < /path/to/file.sql</code>
-    </p>
     
+    <p>
+    <strong>Examples</strong>:<ul>
+        
+            
+            <code class="helper-code">   ynh_psql_connect_as 'user' 'pass' <<< "UPDATE ...;"</code>
+            
+            <br>
+        
+            
+            <code class="helper-code">   ynh_psql_connect_as 'user' 'pass' < /path/to/file.sql</code>
+            
+            <br>
+        
+        </ul>
+    </p>
     
     
     <p>
@@ -2682,7 +2644,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L16">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L17">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -2733,7 +2695,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L37">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L38">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -2784,7 +2746,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L58">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L59">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -2839,7 +2801,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L124">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L125">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -2879,7 +2841,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
     
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L154">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L155">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -2919,7 +2881,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
     
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L173">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L174">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -2974,7 +2936,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L209">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L210">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -3018,7 +2980,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
     
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L236">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L237">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -3048,7 +3010,7 @@ Please always call this script in install and restore scripts</h6>
     
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L264">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L265">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -3912,11 +3874,7 @@ Please always call this script in install and restore scripts</h6>
     <hr style="margin-top:25px; margin-bottom:25px;">
     <p>
         
-        <strong>Usage</strong>: <code class="helper-code helper-usage">ynh_systemd_action [-n service_name] [-a action] [ [-l "line to match"] [-p log_path] [-t timeout] [-e length] ]
-                             If not defined it don't wait until the service is completely started.
-                             WARNING: When using --line_match, you should always add `ynh_clean_check_starting` into your
-                               `ynh_clean_setup` at the beginning of the script. Otherwise, tail will not stop in case of failure
-                               of the script. The script will then hang forever.</code>
+        <strong>Usage</strong>: <code class="helper-code">ynh_systemd_action [-n service_name] [-a action] [ [-l "line to match"] [-p log_path] [-t timeout] [-e length] ]</code>
         
     </p>
     
@@ -3933,7 +3891,7 @@ Please always call this script in install and restore scripts</h6>
             
             
             
-            <li><code>-l</code>, <code>--line_match=</code> : Line to match - The line to find in the log to attest the service have finished to boot.</li>
+            <li><code>-l</code>, <code>--line_match=</code> : Line to match - The line to find in the log to attest the service have finished to boot. If not defined it don't wait until the service is completely started. WARNING: When using --line_match, you should always add `ynh_clean_check_starting` into your `ynh_clean_setup` at the beginning of the script. Otherwise, tail will not stop in case of failure of the script. The script will then hang forever.</li>
             
             
             
@@ -3956,7 +3914,7 @@ Please always call this script in install and restore scripts</h6>
     
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/systemd#L85">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/systemd#L81">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -3986,7 +3944,7 @@ Please always call this script in install and restore scripts</h6>
     
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/systemd#L171">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/systemd#L167">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -4762,11 +4720,7 @@ Please always call this script in install and restore scripts</h6>
   <div class="helper-card-body">
     <div data-toggle="collapse" href="#collapse-ynh_app_upstream_version" style="cursor:pointer">
         <h5 class="helper-card-title"><tt>ynh_app_upstream_version</tt></h5>
-        <h6 class="helper-card-subtitle text-muted">Read the upstream version from the manifest
-The version number in the manifest is defined by <upstreamversion>~ynh<packageversion>
-For example : 4.3-2~ynh3
-This include the number before ~ynh
-In the last example it return 4.3-2</h6>
+        <h6 class="helper-card-subtitle text-muted">Read the upstream version from the manifest</h6>
     </div>
     <div id="collapse-ynh_app_upstream_version" class="collapse" role="tabpanel">
     <hr style="margin-top:25px; margin-bottom:25px;">
@@ -4794,12 +4748,12 @@ In the last example it return 4.3-2</h6>
     <p>
         <strong>Details</strong>:
         <p>
-        Requires YunoHost version 3.5.0 or higher.</br></br>
+        The version number in the manifest is defined by <upstreamversion>~ynh<packageversion></br>For example : 4.3-2~ynh3</br>This include the number before ~ynh</br>In the last example it return 4.3-2</br></br>Requires YunoHost version 3.5.0 or higher.</br></br>
         </p>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L433">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L434">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -4813,11 +4767,7 @@ In the last example it return 4.3-2</h6>
   <div class="helper-card-body">
     <div data-toggle="collapse" href="#collapse-ynh_app_package_version" style="cursor:pointer">
         <h5 class="helper-card-title"><tt>ynh_app_package_version</tt></h5>
-        <h6 class="helper-card-subtitle text-muted">Read package version from the manifest
-The version number in the manifest is defined by <upstreamversion>~ynh<packageversion>
-For example : 4.3-2~ynh3
-This include the number after ~ynh
-In the last example it return 3</h6>
+        <h6 class="helper-card-subtitle text-muted">Read package version from the manifest</h6>
     </div>
     <div id="collapse-ynh_app_package_version" class="collapse" role="tabpanel">
     <hr style="margin-top:25px; margin-bottom:25px;">
@@ -4845,12 +4795,12 @@ In the last example it return 3</h6>
     <p>
         <strong>Details</strong>:
         <p>
-        Requires YunoHost version 3.5.0 or higher.</br></br>
+        The version number in the manifest is defined by <upstreamversion>~ynh<packageversion></br>For example : 4.3-2~ynh3</br>This include the number after ~ynh</br>In the last example it return 3</br></br>Requires YunoHost version 3.5.0 or higher.</br></br>
         </p>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L456">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L458">Dude, show me the code !</a>
     </p>
 
   </div>
@@ -4864,9 +4814,7 @@ In the last example it return 3</h6>
   <div class="helper-card-body">
     <div data-toggle="collapse" href="#collapse-ynh_check_app_version_changed" style="cursor:pointer">
         <h5 class="helper-card-title"><tt>ynh_check_app_version_changed</tt></h5>
-        <h6 class="helper-card-subtitle text-muted">Checks the app version to upgrade with the existing app version and returns:
-- UPGRADE_APP if the upstream app version has changed
-- UPGRADE_PACKAGE if only the YunoHost package has changed</h6>
+        <h6 class="helper-card-subtitle text-muted">Checks the app version to upgrade with the existing app version and returns:</h6>
     </div>
     <div id="collapse-ynh_check_app_version_changed" class="collapse" role="tabpanel">
     <hr style="margin-top:25px; margin-bottom:25px;">
@@ -4883,12 +4831,12 @@ In the last example it return 3</h6>
     <p>
         <strong>Details</strong>:
         <p>
-        It stops the current script without error if the package is up-to-date</br></br>This helper should be used to avoid an upgrade of an app, or the upstream part</br>of it, when it's not needed</br></br>To force an upgrade, even if the package is up to date,</br>you have to set the variable YNH_FORCE_UPGRADE before.</br>example: sudo YNH_FORCE_UPGRADE=1 yunohost app upgrade MyApp</br></br>Requires YunoHost version 3.5.0 or higher.</br></br>
+        - UPGRADE_APP if the upstream app version has changed</br>- UPGRADE_PACKAGE if only the YunoHost package has changed</br></br>It stops the current script without error if the package is up-to-date</br></br>This helper should be used to avoid an upgrade of an app, or the upstream part</br>of it, when it's not needed</br></br>To force an upgrade, even if the package is up to date,</br>you have to set the variable YNH_FORCE_UPGRADE before.</br>example: sudo YNH_FORCE_UPGRADE=1 yunohost app upgrade MyApp</br></br>Requires YunoHost version 3.5.0 or higher.</br></br>
         </p>
     </p>
     
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L485">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L488">Dude, show me the code !</a>
     </p>
 
   </div>
