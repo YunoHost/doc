@@ -27,7 +27,7 @@
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backend#L19">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logrotate#L19">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -50,7 +50,7 @@
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backend#L99">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logrotate#L99">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -80,7 +80,7 @@
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backend#L120">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/systemd#L18">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -109,7 +109,7 @@
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backend#L156">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/systemd#L54">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -138,7 +138,7 @@
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backend#L192">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/nginx#L21">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -161,7 +161,7 @@
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backend#L244">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/nginx#L73">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -190,7 +190,7 @@
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backend#L255">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/php#L9">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -213,7 +213,7 @@
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backend#L302">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/php#L56">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -249,7 +249,7 @@
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backend#L377">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/fail2ban#L65">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -272,7 +272,7 @@
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backend#L459">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/fail2ban#L147">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -303,7 +303,7 @@
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/debug#L10">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L305">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -334,7 +334,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/debug#L65">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L360">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -368,7 +368,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/filesystem#L47">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L45">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -391,7 +391,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/filesystem#L160">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L162">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -432,7 +432,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/filesystem#L219">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L221">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -461,7 +461,7 @@ In case of use of pipes, you have to use double quotes. Otherwise, this helper w
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/filesystem#L315">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L297">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -495,7 +495,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/filesystem#L348">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L330">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -524,7 +524,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/filesystem#L381">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L363">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -553,7 +553,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/filesystem#L399">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L335">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -584,7 +584,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/ip#L11">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/network#L35">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -613,7 +613,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/ip#L45">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/network#L69">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -642,7 +642,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/ip#L66">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/network#L90">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -898,7 +898,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/mysql#L250">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/string#L97">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -942,7 +942,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/network#L19">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/string#L125">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -974,7 +974,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/network#L45">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/network#L11">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1007,7 +1007,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/network#L70">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/setting#L196">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1041,7 +1041,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/network#L92">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/setting#L218">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1169,7 +1169,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/package#L51">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/apt#L51">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1204,7 +1204,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/package#L73">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/apt#L73">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1227,7 +1227,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/package#L105">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/apt#L105">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1256,7 +1256,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/package#L115">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/apt#L115">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1285,7 +1285,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/package#L126">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/apt#L126">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1314,7 +1314,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/package#L136">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/apt#L136">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1343,7 +1343,7 @@ modified config files.</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/package#L146">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/apt#L146">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1376,7 +1376,7 @@ This helper can/should only be called once per app</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/package#L206">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/apt#L206">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1399,7 +1399,7 @@ This helper can/should only be called once per app</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/package#L244">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/apt#L244">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1424,7 +1424,7 @@ usage: ynh_die --message=MSG [--ret_code=RETCODE]</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/print#L7">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L7">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1447,7 +1447,7 @@ usage: ynh_die --message=MSG [--ret_code=RETCODE]</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/print#L25">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L25">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1476,7 +1476,7 @@ usage: ynh_die --message=MSG [--ret_code=RETCODE]</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/print#L70">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L70">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1505,7 +1505,7 @@ usage: ynh_die --message=MSG [--ret_code=RETCODE]</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/print#L87">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L87">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1537,7 +1537,7 @@ If the command to execute uses double quotes, they have to be escaped or they wi
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/print#L108">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L108">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1569,7 +1569,7 @@ If the command to execute uses double quotes, they have to be escaped or they wi
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/print#L122">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L122">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1601,7 +1601,7 @@ If the command to execute uses double quotes, they have to be escaped or they wi
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/print#L136">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L136">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1633,7 +1633,7 @@ If the command to execute uses double quotes, they have to be escaped or they wi
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/print#L150">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L150">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1665,7 +1665,7 @@ If the command to execute uses double quotes, they have to be escaped or they wi
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/print#L164">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L164">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1689,7 +1689,7 @@ WARNING: You should be careful with this helper, and never forget to use ynh_pri
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/print#L174">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L174">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1712,7 +1712,7 @@ WARNING: You should be careful with this helper, and never forget to use ynh_pri
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/print#L183">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L183">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1744,7 +1744,7 @@ WARNING: You should be careful with this helper, and never forget to use ynh_pri
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/print#L198">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/logging#L198">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1779,7 +1779,7 @@ WARNING: You should be careful with this helper, and never forget to use ynh_pri
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/psql#L16">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L16">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1809,7 +1809,7 @@ WARNING: You should be careful with this helper, and never forget to use ynh_pri
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/psql#L37">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L37">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1839,7 +1839,7 @@ WARNING: You should be careful with this helper, and never forget to use ynh_pri
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/psql#L58">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L58">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1874,7 +1874,7 @@ WARNING: You should be careful with this helper, and never forget to use ynh_pri
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/psql#L120">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L124">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1897,7 +1897,7 @@ WARNING: You should be careful with this helper, and never forget to use ynh_pri
         </ul>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/psql#L150">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L154">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1920,7 +1920,7 @@ WARNING: You should be careful with this helper, and never forget to use ynh_pri
         </ul>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/psql#L169">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L173">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1951,7 +1951,7 @@ WARNING: You should be careful with this helper, and never forget to use ynh_pri
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/psql#L205">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L209">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1975,7 +1975,7 @@ WARNING: You should be careful with this helper, and never forget to use ynh_pri
         </ul>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/psql#L232">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L236">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -1993,7 +1993,7 @@ Please always call this script in install and restore scripts</h6>
         <strong>Usage</strong>: <code class="helper-code">ynh_psql_test_if_first_run</code>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/psql#L262">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/postgresql#L264">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -2204,7 +2204,7 @@ Please always call this script in install and restore scripts</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/system#L48">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L85">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -2230,7 +2230,7 @@ Please always call this script in install and restore scripts</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/system#L59">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L305">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -2262,7 +2262,7 @@ Please always call this script in install and restore scripts</h6>
         </ul>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/system#L76">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/systemd#L85">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -2280,7 +2280,7 @@ Please always call this script in install and restore scripts</h6>
         <strong>Usage</strong>: <code class="helper-code">ynh_clean_check_starting</code>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/system#L164">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/systemd#L171">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -2310,7 +2310,7 @@ Please always call this script in install and restore scripts</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/system#L177">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L406">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -2343,7 +2343,7 @@ In the last example it return 4.3-2</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/system#L204">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L433">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -2376,7 +2376,7 @@ In the last example it return 3</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/system#L227">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L456">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -2401,7 +2401,7 @@ In the last example it return 3</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/system#L256">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L485">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -2653,7 +2653,7 @@ In the last example it return 3</h6>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L11">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L378">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -2680,7 +2680,7 @@ ynh_abort_if_errors</code>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L42">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L434">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -2707,7 +2707,7 @@ ynh_abort_if_errors</code>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L74">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/backup#L385">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -2737,7 +2737,7 @@ ynh_abort_if_errors</code>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L159">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L136">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -2772,7 +2772,7 @@ ynh_abort_if_errors</code>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L266">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L250">Dude, show me the code !</a>
     </p>
   </div>
   </div>
@@ -2802,7 +2802,7 @@ ynh_abort_if_errors</code>
         </p>
     </p>
     <p>
-        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L305">Dude, show me the code !</a>
+        <a href="https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/helpers.d/utils#L289">Dude, show me the code !</a>
     </p>
   </div>
   </div>
