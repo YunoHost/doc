@@ -2,6 +2,7 @@
 
 ## Talks / conf
 
+- (EN) [BattleMeshV12 - YunoHost and the Internet Cube (Brique Internet)](https://www.battlemesh.org/BattleMeshV12/Events#YunoHost_and_the_Internet_Cube_.28Brique_Internet.29)
 * (EN) [FOSDEM 2019 - The operating system to build the decentralized Internet](https://cinema.yunohost.support/videos/watch/1eb49594-0283-4a01-8691-3817a3cb31e6) ([slides](https://github.com/YunoHost/yunohost-fosdem-2019))
 * (FR) [Capitole du libre 2018 - YunoHost: un des chemins vers la décentralisation - Bram](https://www.youtube.com/watch?v=OEXEStoOYpw) ([slides](https://psycojoker.github.io/yunohost-cdl-2018/))
 * (FR) [Journées du logiciel libre 2018 - YunoHost : vers l’auto-hébergement et au-delà - Bram](https://www.videos-libr.es/videos/watch/45b48b1e-1b10-4e09-b29a-a404bd42c5d0) ([slides](https://psycojoker.github.io/yunohost-jdll-2018/))
