@@ -30,7 +30,7 @@ It contains the instance's number. Warning, it's not the number of running insta
 
 Example: 3
 
-### Specific variables to use in `install`
+### Variables specific to `install`
 #### YNH_APP_ARG_XXXXXXX
 An environment variable is available for each question asked in the installation.
 
@@ -54,7 +54,7 @@ The name of the question is `domain` so in the script we can access it with YNH_
 domain=$YNH_APP_ARG_DOMAIN
 ```
 
-### Variables spécifiques pour `change_url`
+### Variables specific to `change_url`
 #### YNH_APP_OLD_DOMAIN
 The old domain where the app was installed.
 #### YNH_APP_OLD_PATH
