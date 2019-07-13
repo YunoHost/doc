@@ -177,6 +177,7 @@ But for production, localy stored backup are not enough, so you will need to imp
 #### Federated Audio Gallery
 
 * [Reel2Bits](https://github.com/YunoHost-Apps/reel2bits_ynh)
+* [Funkwhale](https://github.com/YunoHost-Apps/funkwhale_ynh)
 
 #### Federated Video Gallery
 
