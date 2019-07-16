@@ -13,6 +13,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [10er10](https://github.com/dready92/10er10)
 - [Airtime](https://www.sourcefabric.org/en/airtime/)
 - [Ajenti](http://ajenti.org)
+- [Akaunting](https://akaunting.com/)
 - [aMule](https://github.com/amule-project/amule)
 - [Auth0 SSO Dashboard](https://github.com/auth0-extensions/auth0-sso-dashboard-extension)
 - [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog) (/!\ last update: Jan 27, 2015)
