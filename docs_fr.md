@@ -33,4 +33,4 @@ La documentation de YunoHost s’articule autour de trois sections :
    * [Support / Aide](/help_fr)
 
 * Exemple d'utilisation:
-   * [YunoHost pour les organisations à but non lucratif](/use_case_non-profit_organisations_en)
+   * [YunoHost pour les organisations à but non lucratif](/use_case_non-profit_organisations_fr)

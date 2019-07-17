@@ -87,7 +87,7 @@ The first thing you will need to implement a YunoHost server is a domain name. T
 ### Mails
 
 From scratch, YunoHost provide mail system available using POP/IMAP/SMTP.
-Mails accounts will be managed using the web interface or the command line. Created accounts are stored in openldap.
+Mails accounts will be managed using the web interface or the command line. Created accounts are stored in OpenLDAP.
 
 Additional package can be installed to provide more functionality to the YunoHost mail system:
 * Webmail using [Roundcube](https://github.com/YunoHost-Apps/roundcube_ynh), [Rainloop](https://github.com/YunoHost-Apps/rainloop_ynh)
@@ -109,11 +109,11 @@ To provide personal contact system you will need to install:
 ### Shared files
 
 To provide shared files system: personal and shared drive, you can install [Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh).
-Files will be available from a web interface or using a synchronization client
+Files will be available from a web interface or using a synchronization client.
 
 ### Instant communication
 
-Out of the box, YunoHost provide an XMPP server, for which you can install a web client: [Jappix](https://github.com/YunoHost-Apps/jappix_ynh)
+Out of the box, YunoHost provide an XMPP server, for which you can install a web client: [Jappix](https://github.com/YunoHost-Apps/jappix_ynh).
 
 You can also install a matrix server:
 * The server: [Synapse](https://github.com/YunoHost-Apps/synapse_ynh)
@@ -147,25 +147,25 @@ With CiviCRM you can provide online membership and payment.
 
 #### Events Registrations
 
-With CiviCRM, you can provide an online diary to let members or public register for free or with a payment
+With CiviCRM, you can provide an online diary to let members or public register for free or with a payment.
 
 #### Newsletter/Mailing
 
-Best way to manage that is using CiviCRM and its mailing module
+Best way to manage that is using CiviCRM and its mailing module.
 
 ### Forum
 
-You have several choices, or having an integrated forum in Drupal or using a dedicated forum system like [Flarum](https://github.com/YunoHost-Apps/flarum_ynh)
+You have several choices, or having an integrated forum in Drupal or using a dedicated forum system like [Flarum](https://github.com/YunoHost-Apps/flarum_ynh).
 
 ### Backup
 
 YunoHost provide is own backup system. Before any package upgrade, YunoHost backup the current version of the package and automaticaly restore it if the upgrade fails.
-Yunohost backup are stored localy in `/home/yunohost.backup/archives`
+Yunohost backup are stored localy in `/home/yunohost.backup/archives`.
 
 But for production, localy stored backup are not enough, so you will need to implement aditional backup strategies:
 * Backup of the the Virtual Machine if provided by the hosting system.
 * [Archivist](https://github.com/YunoHost-Apps/archivist_ynh) is an automatic backup system for your server. Your backups can be send to many other places, local or distant.
-* [Borg](https://github.com/YunoHost-Apps/borg_ynh) and [Borg Server](https://github.com/YunoHost-Apps/borgserver_ynh) allow to externalize backups
+* [Borg](https://github.com/YunoHost-Apps/borg_ynh) and [Borg Server](https://github.com/YunoHost-Apps/borgserver_ynh) allow to externalize backups.
 * [Fallback](https://github.com/YunoHost-Apps/fallback_ynh), if you have two yunohost servers, provide a way to have a secondary server which you can used if your main server goes down. This secondary server will allow you to deploy a copy of your server to bring back your YunoHost during your break down.
 
 ### Go further
