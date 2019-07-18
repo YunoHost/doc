@@ -165,7 +165,7 @@ Mais pour la production, la sauvegarde stockée localement ne suffit pas, vous d
 * Sauvegarde de la machine virtuelle si fournie par le système d'hébergement.
 * [Archivist](https://github.com/YunoHost-Apps/archivist_ynh) est un système de sauvegarde automatique de votre serveur. Vos sauvegardes peuvent être envoyées à de nombreux autres endroits, locaux ou distants.
 * [Borg](https://github.com/YunoHost-Apps/borg_ynh) and [Borg Server](https://github.com/YunoHost-Apps/borgserver_ynh) permettent d'externaliser les sauvegardes.
-* [Fallback](https://github.com/YunoHost-Apps/fallback_ynh), si vous avez deux serveurs YunoHst, fournissez un moyen d'avoir un serveur secondaire que vous pourrez utiliser si votre serveur principal tombe en panne. Ce serveur secondaire vous permettra de déployer une copie de votre serveur pour ramener votre YunoHost lors de votre panne.
+* [Fallback](https://github.com/YunoHost-Apps/fallback_ynh), si vous avez deux serveurs YunoHost, fournissez un moyen d'avoir un serveur secondaire que vous pourrez utiliser si votre serveur principal tombe en panne. Ce serveur secondaire vous permettra de déployer une copie de votre serveur pour ramener votre YunoHost lors de votre panne.
 
 ### Aller plus loin
 
