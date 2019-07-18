@@ -16,5 +16,5 @@ Depuis la ligne de commande, vous pouvez utiliser :
 
 ``` bash
 yunohost tools update 
-yunohost tools upgrade --ignore-apps
+yunohost tools upgrade --system
 ```
