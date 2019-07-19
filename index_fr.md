@@ -26,10 +26,6 @@
 
 <div class="boring-part" markdown="1">
 
-  <a href="https://github.com/YunoHost" target="_blank" class="github-ribbon hidden-xs">
-    <img src="/images/github_ribbon_grey.png" alt="Fork me on GitHub">
-  </a>
-
   <h1>YunoHost <small>est un outil qui vous permet d’installer et d’utiliser facilement votre propre serveur.</small></h1>
 
   <div class="home-panel">

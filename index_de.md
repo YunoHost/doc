@@ -30,10 +30,6 @@
 
 <div class="boring-part" markdown="1">
 
-  <a href="https://github.com/YunoHost" target="_blank" class="github-ribbon hidden-xs">
-    <img src="/images/github_ribbon_grey.png" alt="Folgen Sie Yunohost auf GitHub">
-  </a>
-
   <h1>YunoHost <small>ist ein Serverbetriebssystem, das<br>
 Self-Hosting für alle möglich macht.</small></h1>
 

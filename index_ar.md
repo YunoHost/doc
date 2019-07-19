@@ -27,10 +27,6 @@
 
 <div class="boring-part" markdown="1">
 
-  <a href="https://github.com/YunoHost" target="_blank" class="github-ribbon hidden-xs">
-    <img src="/images/github_ribbon_grey.png" alt="قم بتشعيبي على جيت هب">
-  </a>
-
   <h1 dir="rtl">YunoHost <small>أداة تُمكّنكم من تنصيب و استخدام خادمكم بأسلوب سهل.</small></h1>
 
   <div class="home-panel">
