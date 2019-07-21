@@ -67,6 +67,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Habitica](https://habitica.com/)
 - [HackMD CE](https://github.com/hackmdio/hackmd)
 - [Hackpad](https://github.com/dropbox/hackpad)
+- [Helpy](https://github.com/helpyio/helpy)
 - [Hexo](https://hexo.io/)
 - [Hi Buddy](https://github.com/tOkeshu/hibuddy) (/!\ last update: 17 Feb 2015)
 - [Huginn](https://github.com/cantino/huginn)
@@ -98,6 +99,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [LibreNews-Server](https://librenews.io)
 - [LibreOffice Online](https://wiki.documentfoundation.org/ReleaseNotes/5.3/fr#LibreOffice_Online)
 - [LiquidSoap](http://savonet.sourceforge.net/)
+- [LocomotiveCMS](https://github.com/locomotivecms/engine)
 - [Logstalgia](http://logstalgia.io)
 - [Loomio](https://www.loomio.org)
 - [MaidSafe](http://maidsafe.net)
@@ -118,6 +120,8 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [OpenBazaar](https://openbazaar.org)
 - [openHAB](https://www.openhab.org/) - Smart home platform.
 - [OpenJabNab](https://github.com/OpenJabNab/OpenJabNab) (/!\ last update: Apr 30, 2016)
+- [OpenProject](https://github.com/opf/openproject)
+- [OpenSourceBilling](https://github.com/vteams/open-source-billing)
 - [OX Open-Xchange](https://www.open-xchange.com) Linux groupware solution
 - [Paperless](https://github.com/danielquinn/paperless)
 - [Paperwork](http://paperwork.rocks)
@@ -169,7 +173,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [TorChat](https://github.com/prof7bit/TorChat)
 - [Torrent Tunes](https://github.com/tchoulihan/torrenttunes-client)
 - [Total Respawn](https://github.com/broncowdd/TotalRespawn)
-- [Tracim](https://github.com/tracim/tracim)
 - [Twister](http://twister.net.co)
 - [TwitRSS.me](http://twitrss.me/) ([Github](https://github.com/ciderpunx/twitrssme)) Scrapes Twitter to create RSS feeds.
 - [Unvis](https://unv.is/) ([Github](https://github.com/lodjuret/unvis.it))
@@ -183,6 +186,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Wireguard](https://www.wireguard.com/)
 - [Xonotic](http://xonotic.org)
 - [YesWiki](https://yeswiki.net)
+- [Zammad](https://github.com/zammad/zammad)
 - [ZeroTier](https://github.com/zerotier/ZeroTierOne)
 - [ZNC](http://wiki.znc.in/ZNC)
 - [Zone-project](https://github.com/descl/ZONE)
