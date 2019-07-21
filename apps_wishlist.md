@@ -173,6 +173,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [TorChat](https://github.com/prof7bit/TorChat)
 - [Torrent Tunes](https://github.com/tchoulihan/torrenttunes-client)
 - [Total Respawn](https://github.com/broncowdd/TotalRespawn)
+- [Tracim](https://github.com/tracim/tracim)
 - [Twister](http://twister.net.co)
 - [TwitRSS.me](http://twitrss.me/) ([Github](https://github.com/ciderpunx/twitrssme)) Scrapes Twitter to create RSS feeds.
 - [Unvis](https://unv.is/) ([Github](https://github.com/lodjuret/unvis.it))
