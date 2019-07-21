@@ -139,7 +139,7 @@ then make it executable :
 chmod +x /etc/cron.weekly/backup-wordpress
 ```
 
-Be careful what you backup exactly and when : you don't want to end up with your whole disk space saturated because you backuped 30 Go of data every day.
+Be careful what you backup exactly and when : you don't want to end up with your whole disk space saturated because you backuped 30 GB of data every day.
 
 #### Backing your server on a remote server
 
