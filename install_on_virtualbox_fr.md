@@ -9,6 +9,13 @@
 * Un ordinateur x86 avec VirtualBox installé et assez de RAM disponible pour lancer une petite machine virtuelle.
 * La dernière **image ISO YunoHost** stable, disponible [ici](/images_fr).
 
+<div class="alert alert-warning" markdown="1">
+N.B. : Installer YunoHost dans une VirtualBox est utile pour tester la
+distribution. Pour réellement s'autohéberger sur le long terme, il vous faudra
+probablement une machine physique (vieil ordinateur, carte ARM, ..) ou un VPS en
+ligne.
+</div>
+
 ---
 
 ## <small>1.</small> Créer une nouvelle machine virtuelle
@@ -17,9 +24,8 @@
 
 <br>
 
-* 256MB de RAM est le minimum requis, 512MB est recommandé.
-
-* 4GB de stockage minimum requis.
+* 256Mo de RAM est le minimum requis, 512Mo est recommandé.
+* 8Go de stockage minimum requis.
 
 ---
 
@@ -63,12 +69,8 @@ Vous devez sélectionner ici l’image ISO, puis vous devriez voir cet écran d�
 
 ## <small>4.</small> Effectuer la post-installation
 
-Après le redémarrage, vous devriez voir cet écran :
+Après le redémarrage, la machine devrait vous proposer d'effectuer la
+post-installation :
 
-<img src="/images/virtualbox_4.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
-
-<br>
-
-* Vous pouvez obtenir plus d’information sur la post-installation ici : **[yunohost.org/postinstall_fr](/postinstall_fr)**
-* Le mot de passe root est "yunohost"
-
+<a class="btn btn-lg btn-default" href="/postinstall">Post-install
+documentation</a>
