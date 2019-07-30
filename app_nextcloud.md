@@ -141,3 +141,26 @@ Then add in this file the following text:
 Save the file (**CTRL** + **o**) and exit nano (**CTRL** + **c**).
 
 Now the problem is fixed.
+
+# Nextcloud and Cloudflare
+
+If you use Cloudflare for your DNS, *which may be useful if you have a dynamic IP*, you will most likely have authentication problems with the Nextcloud application. On the Internet many people propose to create a rule that disables all options related to security and Cloudflare speed for the url pointing to your Nextcloud instance. Although it works, it is not the optimal solution. I propose, certainly to create a rule for the url pointing to your Nextcloud instance but to disable only 2 options. So here's how:
+
+## Cloudflare Page Rules
+
+In the Cloudflare control panel select your domain and find Page Rules
+the url in your address bar will look like this: https://dash.cloudflare.com/*/domain.tld/page-rules
+
+#### Add a rule
+
+The rule to be added must apply to the url of your Nextcloud instance either:
+
+- `https://nextcloud.domain.tld/**` if you use a subdomain
+- `https://domain.tld/nextcloud/*`` if you have deployed Nextcloud in a directory
+
+The options to disable (Off) are:
+
+- Rocket Loader
+- Email Obfuscation
+
+Save and clean your caches (Cloudflare, browser,...) and that's it.
