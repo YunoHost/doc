@@ -17,6 +17,7 @@ This is what application packaging is, a serie of scripts that automate the inst
 ### How it works
 
 From the final user perspective, it is as simple as it can be:
+
 1) Pick an application
 1) Fill a form
 1) Wait
@@ -40,7 +41,7 @@ Scripts used during application packaging are simply a serie of bash commands.
 
 ### ... bash command?
 
-A [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) command is a line of text that will be interpreted by the computer and will produce a result. This is commonly refered to a command line.
+A [bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) command is a line of text that will be interpreted by the computer and will produce a result. This is commonly refered to a command line.
 
 You only can interact with your server through command line as it does not provide a graphical interface. Usual access is through [ssh](/ssh_en).
 
