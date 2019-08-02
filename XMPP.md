@@ -46,8 +46,8 @@ XMPP chats can be encrypted with the help of [OMEMO](https://xmpp.org/extensions
 
 To create a chatroom (multi-user chat) on your YunoHost server, use the identifier `chatroomname@muc.yourdomain.tld`.
 
-For this to workm you need to [add the corresponding `muc.` DNS record](dns_config_fr) in the DNS configuration.
+For this to work you need to [add the corresponding `muc.` DNS record](dns_config_fr) in the DNS configuration.
 
-### VoIP and visioconferences
+### VoIP and videoconferences
 
 A practical tool to call an XMPP client, either with voice or voice+video, is to use the client [Jitsi](http://jitsi.org/).
