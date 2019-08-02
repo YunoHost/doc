@@ -156,3 +156,8 @@ dd if=/dev/mmcblk0 of=./backup.img status=progress
 ```
 
 (replace `/dev/mmcblk0` with the actual device of your sd card)
+
+You can also create a compressed image using gzip this way:
+```bash
+dd if=/dev/mmcblk0 | gzip > ./image.gz
+```
