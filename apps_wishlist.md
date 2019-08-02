@@ -55,6 +55,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [FoOlSlide](http://foolcode.github.io/FoOlSlide/) Open source comicbook/manga management software
 - [Fossil](http://www.fossil-scm.org)
 - [Framaslides](https://framagit.org/framasoft/framaslides/)
+- [Gateway](https://iot.mozilla.org/gateway/)
 - [Geneweb](https://geneweb.tuxfamily.org)
 - [GetSimple CMS](http://get-simple.info)
 - [Git-annex](http://git-annex.branchable.com)
