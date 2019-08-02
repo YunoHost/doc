@@ -31,7 +31,7 @@
 <div class="boring-part" markdown="1">
 
   <h1>YunoHost <small>ist ein Serverbetriebssystem, das<br>
-Self-Hosting für alle möglich macht.</small></h1>
+Self-Hosting für alle ermöglicht.</small></h1>
 
   <div class="home-panel">
     <img src="/images/home_panel.jpg" />
