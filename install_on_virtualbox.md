@@ -24,7 +24,8 @@ machine (old computer, ARM board, ...) or a VPS online.
 
 <br>
 
-* 256MB RAM is the minimum required, but at least 512MB is recommended.
+* It's okay if you can only have 32-bit versions, just be sure that you downloaded the 32-bit image previously.
+* 256MB RAM is the minimum required, but at least 512MB is recommended (1Go or more if you can).
 * 8GB storage is the minimum required.
 
 ---

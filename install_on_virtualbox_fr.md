@@ -24,7 +24,8 @@ ligne.
 
 <br>
 
-* 256Mo de RAM est le minimum requis, 512Mo est recommandé.
+* Ce n'est pas grave si seulement la version 32-bit est dispo, mais dans ce cas soyez sur d'avoir téléchargé l'image 32 bit précédemment.
+* 256Mo de RAM est le minimum requis, 512Mo est recommandé (1Go ou plus si vous pouvez).
 * 8Go de stockage minimum requis.
 
 ---
