@@ -58,6 +58,10 @@ You will have to select your ISO image here, then you should see the YunoHost's 
 
 <br>
 
+If you encounter the error "VT-x is not available", you need probably need to enable Virtualization in the BIOS of your computer.
+
+<br>
+
 <img src="/images/virtualbox_3.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 <br>
