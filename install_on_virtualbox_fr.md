@@ -9,10 +9,6 @@
 * Un ordinateur x86 avec VirtualBox installé et assez de RAM disponible pour lancer une petite machine virtuelle.
 * La dernière **image ISO YunoHost** stable, disponible [ici](/images_fr).
 
-<div class="alert alert-danger" markdown="1">
-L'installation à l'aide de notre ISO Virtualbox / x86 est actuellement cassée ... Nous investiguons le problème [ici](https://github.com/YunoHost/issues/issues/1382). En attendant, il est possible de contourner le problème est d'utiliser l'ISO officielle Debian 9.x (pas 10 !) et d'installer YunoHost par dessus comme expliqué [ici](https://yunohost.org/#/install_on_debian)
-</div>
-
 <div class="alert alert-warning" markdown="1">
 N.B. : Installer YunoHost dans une VirtualBox est utile pour tester la
 distribution. Pour réellement s'autohéberger sur le long terme, il vous faudra

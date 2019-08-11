@@ -9,10 +9,6 @@
 * An x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine.
 * The latest stable **YunoHost ISO image**, available [here](/images).
 
-<div class="alert alert-danger" markdown="1">
-The current installation using our Virtualbox / x86 ISO is broken and will fail for now... We are investigating the issue [here](https://github.com/YunoHost/issues/issues/1382). In the meantime, a workaround is to use the official Debian 9.x (not 10 !) image and install YunoHost on top of it as explained [here](https://yunohost.org/#/install_on_debian)
-</div>
-
 <div class="alert alert-warning" markdown="1">
 N.B. : Installing YunoHost in a VirtualBox is usually intended for testing. To
 run an actual server on the long-term, you usually need a dedicated physical

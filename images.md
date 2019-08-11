@@ -8,10 +8,6 @@ This page requires Javascript enabled to display properly :s.
 
 N.B. : Even if the image does not corresponds to the latest version of YunoHost, you can still use it and do a regular system upgrade after setting up!
 
-<div class="alert alert-danger" markdown="1">
-The current installation using our Virtualbox / x86 ISO is broken and will fail for now... We are investigating the issue [here](https://github.com/YunoHost/issues/issues/1382). In the meantime, a workaround is to use the official Debian 9.x (not 10 !) image and install YunoHost on top of it as explained [here](https://yunohost.org/#/install_on_debian)
-</div>
-
 <div id="cards-list">
 </div>
 
