@@ -2,7 +2,7 @@
 
 ## ¿ Qué es SSH ?
 
-**SSH** est un acrónimo por Secure Shell, y representa un protocolo que permite controlar remotamente una máquina vía la línea de comandos (CLI). También es un comando básico disponible en los terminales de Linux y MacOS / OSX. En Windows, hace falta utilizar el programa [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (después de haberlo iniciado, clicar sobre Session y lego SSH).
+**SSH** est un acrónimo por Secure Shell, y representa un protocolo que permite controlar remotamente una máquina vía la línea de comandos (CLI). También es un comando básico disponible en los terminales de Linux y MacOS / OSX. En Windows, hace falta utilizar el programa [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (después de haberlo iniciado, clicar sobre Session y luego SSH).
 
 ## Durante la instalación de Yunohost
 
