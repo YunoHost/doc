@@ -29,7 +29,7 @@ Before setting up a server at home, it is recommended that you know the [possibl
 
 <a class="btn btn-lg btn-default" href="/plug_and_boot">2. Plug & boot</a>
 
-<a class="btn btn-lg btn-default" href="/ssh">3. Connect to your server with SSH</a>
+<a class="btn btn-lg btn-default" href="/ssh">3. Connect to your server with your web browser</a>
 
 <a class="btn btn-lg btn-default" href="/postinstall">4. Proceed to post-installation</a>
 
