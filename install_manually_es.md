@@ -8,7 +8,7 @@ curl https://install.yunohost.org | bash
 
 <small>*(Si `curl` no está instalado en tu sistema, tal vez tendrás que instalarlo con `apt install curl`. De otro modo, si el comando no muestra nada, puedes intentar `apt install ca-certificates`)*</small>
 
-Cuando la instalación esté terminada, habrá que [**proceder a la post-instalación**](/postinstall)
+Cuando la instalación esté terminada, habrá que [**proceder a la post-instalación**](/postinstall_es)
 
 ---
 

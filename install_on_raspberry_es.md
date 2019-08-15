@@ -17,21 +17,21 @@ Antes de alojar tu propio servidor en tu casa, te recomendamos que consultes las
 - Un adaptador de corriente para alimentar la tarjeta ;
 - Una tarjeta microSD : al menos **8 Go** y **Clase 10** (por ejemplo una [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
 - Un cable ethernet/RJ-45 para conectar la tarjeta con tu enrutador o tu caja internet. (Con el Raspberry Pi 0, puedes conectar tu tarjeta con un cable OTG y un adaptador Wifi USB.)
-- Un [proveedor de Internet ético](/isp_fr), de preferencia con buena velocidad de upload.
+- Un [proveedor de Internet ético](/isp_es), de preferencia con buena velocidad de upload.
 
 ---
 
 ## Instalación con la imagen pre-instalada (recomendada)
 
-<a class="btn btn-lg btn-default" href="/images_fr">1. Descargar la imagen para Raspberry Pi</a>
+<a class="btn btn-lg btn-default" href="/images_es">1. Descargar la imagen para Raspberry Pi</a>
 
-<a class="btn btn-lg btn-default" href="/copy_image_fr">2. Poner la imagen en tu tarjeta SD</a>
+<a class="btn btn-lg btn-default" href="/copy_image_es">2. Poner la imagen en tu tarjeta SD</a>
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot_fr">3. Conectar y encender</a>
+<a class="btn btn-lg btn-default" href="/plug_and_boot_es">3. Conectar y encender</a>
 
-<a class="btn btn-lg btn-default" href="/ssh_fr">4. Conectarse en SSH</a>
+<a class="btn btn-lg btn-default" href="/ssh_es">4. Conectarse en SSH</a>
 
-<a class="btn btn-lg btn-default" href="/postinstall_fr">5. Proceder a la post-instalación</a>
+<a class="btn btn-lg btn-default" href="/postinstall_es">5. Proceder a la post-instalación</a>
 
 ---
 

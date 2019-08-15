@@ -66,7 +66,7 @@
     </div>
     <div class="col-md-7 text-right">
       <h1>Disfrutar <small>de sus aplicaciones web, y crea tu esquina de Internet</small></h1>
-      <p><br /><a href="/apps_fr">Lista de aplicaciones disponible</a></p>
+      <p><br /><a href="/apps_es">Lista de aplicaciones disponible</a></p>
     </div>
   </div>
 
@@ -75,7 +75,7 @@
   <div class="row cf">
     <div class="col-md-7">
       <h1>Gestionar <small>tu servidor como quieras : vía web, móvil o en línea de comandos</small></h1>
-      <p><br /><a href="/try_fr">Intentar la interfaz de administración</a></p>
+      <p><br /><a href="/try_es">Intentar la interfaz de administración</a></p>
     </div>
     <div class="col-md-4">
       <div class="feature-pic">
@@ -88,15 +88,15 @@
 
   <div class="row cf">
     <div class="col-md-4 button-list">
-      <a class="btn btn-lg btn-block btn-primary" href="/userdoc_fr">Guía del usuario</a>
+      <a class="btn btn-lg btn-block btn-primary" href="/userdoc_es">Guía del usuario</a>
       <a class="btn btn-lg btn-block btn-info" href="https://ask.yunohost.org" target="_blank">Preguntas más frecuentes</a>
-      <a class="btn btn-lg btn-block btn-success" href="/whatsyunohost_fr">¿ Que es YunoHost ?</a>
-      <a class="btn btn-lg btn-block btn-warning" href="/contribute_fr">Cómo contribuir</a>
+      <a class="btn btn-lg btn-block btn-success" href="/whatsyunohost_es">¿ Que es YunoHost ?</a>
+      <a class="btn btn-lg btn-block btn-warning" href="/contribute_es">Cómo contribuir</a>
       <a class="btn btn-lg btn-block btn-danger btn-support" href="http://news.yunohost.org">últimas noticias</a>
     </div>
     <div class="col-md-7 text-right">
       <h1>Explorar <small>las posibilidad de su servidor, y aprender porque es importante</small></h1>
-      <p><br /><a href="/docs_fr">Leer la documentación</a></p>
+      <p><br /><a href="/docs_es">Leer la documentación</a></p>
     </div>
   </div>
 
