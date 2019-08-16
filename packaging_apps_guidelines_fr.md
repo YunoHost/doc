@@ -275,7 +275,7 @@ Pour celà, il faut recourir autant que possible aux dossiers `.d` des configura
 
 #### YEP 2.9
 ##### Enlever toutes traces de l'app lors de la suppression   | brouillon | manuel | WORKING |
-À l’exception de dépendances (pax exemple : paquets Debian) utilisés par d’autres services ou applications.
+À l’exception de dépendances (par exemple : paquets Debian) utilisés par d’autres services ou applications.
 
 #### YEP 2.10
 ##### Configurer les logs de l'application   | brouillon | manuel | WORKING |
@@ -374,7 +374,7 @@ Toutefois, cela ne doit pas exempter d'une restriction maximale des droits sur l
 ##### Suivre les recommandations de la documentation de l'app   | validé | manuel | OFFICIAL |
 En général, une application propose une documentation afin d'aider les administrateurs systèmes à réaliser l'installation. Il est conseiller d'en suivre les recommandations, notamment celles concernant les permissions à accorder par fichier ou répertoire.
 
-Le mainteneur de paquet doit toutefois rester vigilant, certaines documentations pouvant être erronées ou insuffisante.
+Le mainteneur de paquet doit toutefois rester vigilant, certaines documentations pouvant être erronées ou insuffisantes.
 
 #### YEP 3.6
 ##### Mettre à jour les versions contenant des CVE   | draft | manuel | OFFICIAL |
