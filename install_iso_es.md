@@ -10,7 +10,7 @@
 
 * Un ordenador compatible x86 dedicado a YunoHost : portátil, netbook, ordenador de escritorio. Puedes reutilizar calquiera máquina con **256 Mo de RAM mínimo**
 * Otro ordenador para examinar esta guía y acceder a tu servidor
-* Un [proveedor de Internet ético](/isp_fr), de preferencia con acceso de buena velocidad   (ascendente)
+* Un [proveedor de Internet ético](/isp_es), de preferencia con acceso de buena velocidad   (ascendente)
 * Una **memoria USB** con capacidad mínima de 1Go **O** un **CD en blanco** estándar
 * ***Casos particulares*** : si tu servidor no tiene tarjeta gráfica, hay que preparar un iso que se inicie sobre el puerto de serie](https://github.com/luffah/debian-mkserialiso).
 
@@ -18,13 +18,13 @@
 
 ## Etapas de instalación
 
-<a class="btn btn-lg btn-default" href="/images_fr">0. Descargar la imagen ISO</a>
+<a class="btn btn-lg btn-default" href="/images_es">0. Descargar la imagen ISO</a>
 
-<a class="btn btn-lg btn-default" href="/burn_or_copy_iso_fr">1. Copiar la imagen ISO</a>
+<a class="btn btn-lg btn-default" href="/burn_or_copy_iso_es">1. Copiar la imagen ISO</a>
 
-<a class="btn btn-lg btn-default" href="/boot_and_graphical_install_fr">2. Encender e instalar</a>
+<a class="btn btn-lg btn-default" href="/boot_and_graphical_install_es">2. Encender e instalar</a>
 
-<a class="btn btn-lg btn-default" href="/postinstall_fr">3. Post-instalación</a>
+<a class="btn btn-lg btn-default" href="/postinstall_es">3. Post-instalación</a>
 
 ---
 

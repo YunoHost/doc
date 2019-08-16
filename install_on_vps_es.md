@@ -14,7 +14,7 @@
 
 ## Etapas de instalación
 
-<a class="btn btn-lg btn-default" href="/install_manually_fr">1. Instalar manualmente</a>
+<a class="btn btn-lg btn-default" href="/install_manually_es">1. Instalar manualmente</a>
 
-<a class="btn btn-lg btn-default" href="/postinstall_fr">2. Post-instalación</a>
+<a class="btn btn-lg btn-default" href="/postinstall_es">2. Post-instalación</a>
 

@@ -19,21 +19,21 @@ YunoHost todavía no es compatible con las tarjetas ARM64. Para obtener más inf
 - Un adaptador de corriente para alimentar la tarjeta ;
 - Una tarjeta microSD : al menos **8 Go** y **Clase 10** (por ejemplo una [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
 - Un cable ethernet/RJ-45 para conectar la carte con el router / caja internet. (Con el Raspberry Pi 0, puedes conectar tu tarjeta con un cable OTG y un adaptador Wifi USB.)
-- Un [proveedor de Internet ético](/isp_fr), de preferencia con una buena velocidad de upload.
+- Un [proveedor de Internet ético](/isp_es), de preferencia con una buena velocidad de upload.
 
 ---
 
 ## Instalación con la imagen pre-instalada (recomendada)
 
-<a class="btn btn-lg btn-default" href="/images_fr">0. Descargar la imagen pre-instalada para tu tarjeta ARM</a><br><small>Si no existe una imagen dedicada a tu tarjeta, puedes seguir la sección "Instalación encima de ARMbian".</small>
+<a class="btn btn-lg btn-default" href="/images_es">0. Descargar la imagen pre-instalada para tu tarjeta ARM</a><br><small>Si no existe una imagen dedicada a tu tarjeta, puedes seguir la sección "Instalación encima de ARMbian".</small>
 
-<a class="btn btn-lg btn-default" href="/copy_image_fr">1. Poner la imagen en tu tarjeta SD</a>
+<a class="btn btn-lg btn-default" href="/copy_image_es">1. Poner la imagen en tu tarjeta SD</a>
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot_fr">2. Conectar y encender</a>
+<a class="btn btn-lg btn-default" href="/plug_and_boot_es">2. Conectar y encender</a>
 
-<a class="btn btn-lg btn-default" href="/ssh_fr">3. Conectarse en SSH</a>
+<a class="btn btn-lg btn-default" href="/ssh_es">3. Conectarse en SSH</a>
 
-<a class="btn btn-lg btn-default" href="/postinstall_fr">4. Proceder a la post-instalación</a>
+<a class="btn btn-lg btn-default" href="/postinstall_es">4. Proceder a la post-instalación</a>
 
 ---
 
@@ -41,11 +41,11 @@ YunoHost todavía no es compatible con las tarjetas ARM64. Para obtener más inf
 
 <a class="btn btn-lg btn-default" href="https://www.armbian.com/download/">0. Descargar la imagen ARMbian para tu tarjeta ARM</a>
 
-<a class="btn btn-lg btn-default" href="/copy_image_fr">1. Poner la imagen en tu tarjeta SD</a>
+<a class="btn btn-lg btn-default" href="/copy_image_es">1. Poner la imagen en tu tarjeta SD</a>
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot_fr">2. Conectar y encender</a>
+<a class="btn btn-lg btn-default" href="/plug_and_boot_es">2. Conectar y encender</a>
 
-<a class="btn btn-lg btn-default" href="/ssh_fr">3. Conectarse en SSH</a>
+<a class="btn btn-lg btn-default" href="/ssh_es">3. Conectarse en SSH</a>
 
-<a class="btn btn-lg btn-default" href="/install_manually_fr">4. Proceder a la post-instalación genérica</a>
+<a class="btn btn-lg btn-default" href="/install_manually_es">4. Proceder a la post-instalación genérica</a>
 

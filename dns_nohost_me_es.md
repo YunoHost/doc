@@ -47,7 +47,7 @@ Si reinstalas tu servidor y quieres utilizar un dominio automático que ya utili
 Si quieres utilizar otro dominio automático en tu servidor, primero tienes que cancelar el que ya está configurado, siguiendo estas instrucciones :
 1. Suprimir el dominio de tu instancia (vía webadmin o `yunohost domain remove`). **Cuidado : esto suprimirá todas las aplicaciones instaladas en este dominio así como sus datos**.
 2. Pedir la supresión de tu suscripción [en el hilo de discusión dedicado del foro](https://forum.yunohost.org/t/nohost-domain-recovery/442).
-3. Suprimir los ficheros de configuración automática de tu instancia (únicamente desde la linea de comando por ahora) : `sudo rm /etc/cron.d/yunohost-dyndns && sudo rm -r /etc/yunohost/dyndns`
+3. Suprimir los archivos de configuración automática de tu instancia (únicamente desde la linea de comando por ahora) : `sudo rm /etc/cron.d/yunohost-dyndns && sudo rm -r /etc/yunohost/dyndns`
 
 
 Luego podrás registrar un nuevo dominio automático. 

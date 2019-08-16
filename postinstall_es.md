@@ -39,7 +39,7 @@ Es el nombre de dominio que permitirá el acceso a tu servidor así como al port
 
 ### Contraseña de administración
 
-Es la contraseña que permitirá acceder a la [interfaz de administración](/admin_es) de tu servidor. También podrás utilizarla para conectarte remotamente vía **SSH**, o vía  **SFTP** para transferir ficheros.
+Es la contraseña que permitirá acceder a la [interfaz de administración](/admin_es) de tu servidor. También podrás utilizarla para conectarte remotamente vía **SSH**, o vía  **SFTP** para transferir archivos.
 
 De manera general, ésta es la **llave de entrada en tu sistema**, pues piensa en **[elegirla atentamente](https://es.wikihow.com/escoger-una-contrase%C3%B1a-segura)**.
 
