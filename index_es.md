@@ -31,7 +31,7 @@
 
 <div class="boring-part" markdown="1">
 
-  <h1>YunoHost <small>es un herramiento que permite installar et utilizar facilamente sur propio servidor.</small></h1>
+  <h1>YunoHost <small>es una herramienta que permite instalar y utilizar fácilmente su propio servidor.</small></h1>
 
 
   <div class="home-panel">
@@ -46,8 +46,8 @@
 
   <div class="row cf">
     <div class="col-md-7">
-      <h1>Installar <small>su sevidor simplemente, tienes todo a casa</small></h1>
-      <p><br /><a href="/hardware">Ver los requisitos previos</a></p>
+      <h1>Installar <small>su servidor simplemente, tienes todo en casa</small></h1>
+      <p><br /><a href="/hardware">Ver los prerrequisitos</a></p>
     </div>
     <div class="col-md-4">
       <div class="feature-pic">
@@ -65,8 +65,8 @@
       </div>
     </div>
     <div class="col-md-7 text-right">
-      <h1>Disfrutar <small>de sus aplicaciones web, y crea su esquina de Internet</small></h1>
-      <p><br /><a href="/apps_fr">Lista de aplicationes disponible</a></p>
+      <h1>Disfrutar <small>de sus aplicaciones web, y crea tu esquina de Internet</small></h1>
+      <p><br /><a href="/apps_es">Lista de aplicaciones disponible</a></p>
     </div>
   </div>
 
@@ -74,8 +74,8 @@
 
   <div class="row cf">
     <div class="col-md-7">
-      <h1>Gestionar <small>su servidor como quieras : via web, móvil o en línea de comandos</small></h1>
-      <p><br /><a href="/try_fr">Intentar el interfaz de administración</a></p>
+      <h1>Gestionar <small>tu servidor como quieras : vía web, móvil o en línea de comandos</small></h1>
+      <p><br /><a href="/try_es">Intentar la interfaz de administración</a></p>
     </div>
     <div class="col-md-4">
       <div class="feature-pic">
@@ -88,22 +88,22 @@
 
   <div class="row cf">
     <div class="col-md-4 button-list">
-      <a class="btn btn-lg btn-block btn-primary" href="/userdoc_fr">Guía del usuario</a>
+      <a class="btn btn-lg btn-block btn-primary" href="/userdoc_es">Guía del usuario</a>
       <a class="btn btn-lg btn-block btn-info" href="https://ask.yunohost.org" target="_blank">Preguntas más frecuentes</a>
-      <a class="btn btn-lg btn-block btn-success" href="/whatsyunohost_fr">Que es YunoHost ?</a>
-      <a class="btn btn-lg btn-block btn-warning" href="/contribute_fr">Cómo contribuir</a>
+      <a class="btn btn-lg btn-block btn-success" href="/whatsyunohost_es">¿ Que es YunoHost ?</a>
+      <a class="btn btn-lg btn-block btn-warning" href="/contribute_es">Cómo contribuir</a>
       <a class="btn btn-lg btn-block btn-danger btn-support" href="http://news.yunohost.org">últimas noticias</a>
     </div>
     <div class="col-md-7 text-right">
-      <h1>Explorar <small>las posibilidad de su servidor, y aprender pourque es importante</small></h1>
-      <p><br /><a href="/docs_fr">Leer la documentación</a></p>
+      <h1>Explorar <small>las posibilidad de su servidor, y aprender porque es importante</small></h1>
+      <p><br /><a href="/docs_es">Leer la documentación</a></p>
     </div>
   </div>
 
   <hr />
 
   <div class="text-center">
-    <h1>¡ Hey ! Somos humanos<br /><small> Si tiene algun pregunta, un problema, o simplemente estás interesado, ven decir "¡ Hola !" sobre nuetra salón de discusión clic en el botón abajo &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+    <h1>¡ Hey ! Somos humanos<br /><small> Si tiene alguna pregunta, un problema, o simplemente estás interesado, ven decir "¡ Hola !" sobre nuestro salón de discusión clic en el botón abajo &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
 
   <p class="liberapay">
    <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Donation button" title="Liberapay" /></a>

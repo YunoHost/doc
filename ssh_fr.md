@@ -13,6 +13,7 @@ Si vous installez YunoHost sur un VPS, votre fournisseur devrait vous avoir comm
 Si vous installez un serveur à la maison (par ex. sur Raspberry Pi ou OLinuXino), il vous faut trouver l'IP qui a été attribuée à votre carte après que vous l'ayez connectée à votre box internet / routeur. Il y a plusieurs façons de faire cela :
 
 - ouvrez un terminal et tapez `sudo arp-scan --local` pour lister les IP des machines sur le réseau local ;
+- si la commande arp-scan vous affiche beaucoup de machines, vous pouvez vérifier lesquelles sont ouvertes au ssh avec `nmap -p 22 192.168.1.0/24` pour faire du tri (adaptez la plage IP selon votre réseau local)
 - utilisez l'interface de votre box internet pour lister les machines connectées, ou regarder les logs ;
 - branchez un écran sur votre serveur, loggez-vous et tapez `hostname --all-ip-address`.
 
@@ -33,6 +34,10 @@ Depuis YunoHost 3.4, après avoir effectué la postinstallation, il ne sera plus
 #### Changer le mot de passe root !
 
 Après vous être connecté pour la première fois, il vous faut changer le mot de passe `root`. Le serveur vous demandera peut-être automatiquement de le faire. Si ce n'est pas le cas, il faut utiliser la commande `passwd`. Il est important de choisir un mot de passe raisonnablement compliqué. Notez que ce mot de passe sera écrasé ensuite par le mot de passe admin choisi lors de la postinstallation.
+
+#### En avant pour la configuration !
+
+Tout est prêt pour passer à la [post-installation](postinstall).
 
 ## Sur une instance déjà installée
 

@@ -1,8 +1,8 @@
 # Guía de instalación
 
-Existenten varias mèneras de instalar YunoHost. El método y el hardware difieren un poco si quieres instalarlo en tu casa o en acceso remoto : **[ver el hardware compatible](/hardware_es)**
+Existen varias maneras de instalar YunoHost. El método y el hardware difieren un poco si quieres instalarlo en tu casa o en acceso remoto : **[ver el hardware compatible](/hardware_es)**
 
-Esta página enumera varios tipos de instalaciones, clasificos por categorías.
+Esta página enumera varios tipos de instalaciones, clasificados por categorías.
 
 ---
 
@@ -64,7 +64,7 @@ Esta página enumera varios tipos de instalaciones, clasificos por categorías.
 
 ---
 
-<h1 style="font-weight: 100">Avancé / autres</h1>
+<h1 style="font-weight: 100">Avanzado / otros</h1>
 
 <div class="row">
 

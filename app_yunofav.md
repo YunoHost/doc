@@ -1,5 +1,4 @@
-Yunofav : (unofficial) Page of favorite links for Yunohost
-=======
+#Yunofav : (unofficial) Page of favorite links for Yunohost
 
 homepage: https://github.com/YunoHost-Apps/yunofav_ynh
 

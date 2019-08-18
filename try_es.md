@@ -11,7 +11,7 @@
   <div class="row text-center">
     <div class="col-md-6">
       <a href="https://demo.yunohost.org/" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-user"></span> Interfaz de usuario</a>
-      <p class="text-muted">Utilisateur : demo<br>Contraseña : demo</p>
+      <p class="text-muted">Usuario : demo<br>Contraseña : demo</p>
     </div>
     <div class="col-md-5">
       <a href="https://demo.yunohost.org/yunohost/admin" target="_blank" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-lock"></span> Interfaz de administración</a>

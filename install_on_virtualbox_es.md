@@ -29,7 +29,7 @@ N.B. : Instalar YunoHost en VirtualBox es útil para probar la distribución. Pa
 
 ## <small>2.</small> Modificar la configuración de la red
 
-Ir a **Settings** > **Network* :
+Ir a **Settings** > **Network** :
 
 <img src="/images/virtualbox_2.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
@@ -73,5 +73,4 @@ Si te encuentras con el error "VT-x is not available", probablement hay que acti
 
 Después del reinicio, la máquina debería proponerte de efectuar la post-instalación :
 
-<a class="btn btn-lg btn-default" href="/postinstall">Post-install
-documentation</a>
+<a class="btn btn-lg btn-default" href="/postinstall_es">Documentación de post-instalación</a>
