@@ -6,7 +6,14 @@ Une fois que vous avez accès à votre serveur (directement ou par SSH), vous po
 curl https://install.yunohost.org | bash
 ```
 
-<small>*(Si `curl` n'est pas installé sur votre système, il vous faudra peut-être l'installer avec `apt install curl`. Autrement, si la commande n'affiche rien du tout, vous pouvez tenter `apt install ca-certificates`)*</small>
+<small>*Si `curl` n'est pas installé sur votre système, il vous faudra peut-être l'installer avec `apt install curl`. Autrement, si la commande n'affiche rien du tout, vous pouvez tenter `apt install ca-certificates`*</small>
+
+<small>*Si vous avez le message d'erreur suivant :
+<br>```[FAIL] Bind9 is installed and might conflict with dnsmasq. Uninstall it first, or if you know what you are doing, run this script with -f```
+<br>Alors tapez :
+<br>`sudo service bind9 stop`
+<br>`sudo apt-get install dnsmasq`
+<br>Voir ["YunoHost 2.2 released"](https://forum.yunohost.org/t/yunohost-2-2-released/602) pour les explications.*</small>
 
 Une fois l'installation terminée, il vous faudra [**procéder à la post-installation**](/postinstall)
 
