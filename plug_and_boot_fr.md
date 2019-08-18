@@ -10,9 +10,9 @@
 
 <div class="text-center"><img src="/images/boot_screen.png">
 
-<p markdown="1">
+
 *Notez la valeur `IP` affichée à l’écran : c’est **l’adresse IP locale** de votre serveur.*
-</p>
+
 
 </div>
 <br>Si vous n'avez pas d'écran pour votre Raspberry, ce n'est pas grave ! Vous pourrez trouver son adresse IP autrement à l'étape suivante.
