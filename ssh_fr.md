@@ -34,6 +34,10 @@ Depuis YunoHost 3.4, après avoir effectué la postinstallation, il ne sera plus
 
 Après vous être connecté pour la première fois, il vous faut changer le mot de passe `root`. Le serveur vous demandera peut-être automatiquement de le faire. Si ce n'est pas le cas, il faut utiliser la commande `passwd`. Il est important de choisir un mot de passe raisonnablement compliqué. Notez que ce mot de passe sera écrasé ensuite par le mot de passe admin choisi lors de la postinstallation.
 
+#### En avant pour la configuration !
+
+Tout est prêt pour passer à la [post-installation](postinstall).
+
 ## Sur une instance déjà installée
 
 Si vous avez installé votre serveur à la maison et que vous cherchez à vous connecter depuis l'extérieur du réseau local, assurez-vous d'avoir bien redirigé le port 22 vers votre serveur. (Rappel : depuis la version 3.4, il vous faut vous logguer avec l'utilisateur `admin` !)
