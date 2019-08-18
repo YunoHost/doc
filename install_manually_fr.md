@@ -13,6 +13,7 @@ curl https://install.yunohost.org | bash
 <br>Alors tapez :
 <br>`sudo service bind9 stop`
 <br>`sudo apt-get install dnsmasq`
+<br>`sudo apt-get remove bind9`
 <br>Voir ["YunoHost 2.2 released"](https://forum.yunohost.org/t/yunohost-2-2-released/602) pour les explications.*</small>
 
 Une fois l'installation terminée, il vous faudra [**procéder à la post-installation**](/postinstall)
