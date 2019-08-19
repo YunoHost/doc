@@ -14,7 +14,7 @@ First, connect to your server through SSH and type in the following command (Wor
 ```bash
 yunohost app upgrade wordpress
 ```
-** Note: ** in case you have multiple instances of the same type (ex: 2 wordpress) installed, you will need to specify the instance name (ex: wordpress ou wordpress__2).
+** Note: ** in case you have multiple instances of the same type (ex: 2 wordpress) installed, you will need to specify the instance name (ex: wordpress or wordpress__2).
 
 #### Upgrade an unofficial application
 Specify the git repository containing the upgrade. 
