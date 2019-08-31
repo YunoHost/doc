@@ -113,6 +113,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Modoboa](http://modoboa.org)
 - [MotionEye](https://github.com/ccrisan/motioneye)
 - [MPD](http://www.musicpd.org)
+- [MyBB](https://mybb.com/)
 - [Museek+](https://github.com/eLvErDe/museek-plus)
 - [Netrunner](https://github.com/mtgred/netrunner)
 - [Nibbleblog](http://www.nibbleblog.com)
