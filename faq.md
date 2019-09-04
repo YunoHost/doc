@@ -95,7 +95,7 @@ and having some free time. Other than that, just doing what you can is already a
 
 #### What's YunoHost's political model?
 
-It is described in [this document](https://github.com/YunoHost/project-organization/blob/master/yunohost_project_organization.md) :).
+It is described in [this document](yunohost_project_organization.md) :).
 
 
 #### Will you port YunoHost to [insert favorite distro] ?

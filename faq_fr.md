@@ -88,7 +88,7 @@ pouvez, c’est déjà trop cool !
 
 #### Quel est le modèle politique de YunoHost ?
 
-Il est décrit dans [ce document](https://github.com/YunoHost/project-organization/blob/master/yunohost_project_organization.md) :).
+Il est décrit dans [ce document](yunohost_project_organization) :).
 
 
 
@@ -111,7 +111,7 @@ Réponse courte : ce n’est pas ce que nous faisons.
 
 Réponse moyenne : Par le passé, les apps étaient gérées via des .deb. C’était cauchemardesque. Nous sommes heureux maintenant ;).
 
-<a data-toggle="collapse" data-target="#whyareyoureinventingpackaging" href="#">Long answer</a>
+<a data-toggle="collapse" data-target="#whyareyoureinventingpackaging" href="#">Longue réponse</a>
 <div id="whyareyoureinventingpackaging" class="collapse">
 
 <p>YunoHost cherche à garder un système de packaging simple. L’idée depuis le départ était que « si tu sais installer l’app à la main, alors tu peux facilement créer un package basique en copiant-collant les étapes, sans besoin de connaissances particulière ». Ce n’est pas le cas des paquets Debian.</p>
