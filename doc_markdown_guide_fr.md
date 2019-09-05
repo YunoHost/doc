@@ -52,7 +52,21 @@ C'est identique pour les pages de la documentation excepté que le lien est inte
 [Page du wiki](write_documentation)
 
 ### Créer des ancres
-Une ancre permet de faire un lien vers un point précis dans une page, c'est comme ça que fonctionne les index en haut de pages. Pour créer une ancre il faut insérer du code à l'endroit, 
+Une ancre permet de faire un lien vers un point précis dans une page, c'est comme ça que fonctionne les index en haut de pages. Pour créer une ancre il faut insérer du code à l'endroit de l'ancre sous la forme suivante :  
+
+```
+<a name="NomDeLAncre"> Du texte qui sera ne sait même pas qu'il a une ancre</a>
+```
+
+Ce qui s'affiche :  
+
+<a name="NomDeLAncre"> Du texte qui sera ne sait même pas qu'il a une ancre</a>
+
+Il ne reste plus qu'à désigner l'ancre au texte que l'on souhaite interactif :  
+```
+[Mon titre qui renvoi](#NomDeLAncre)
+```
+[Mon titre qui renvoi](#NomDeLAncre)
 
 ## Afficher des images
 Pour afficher des images le principe est identiques aux liens excepté l'ajout d'un `!` avant le texte à afficher qui est ici considéré comme le texte à afficher en cas d'impossibilité de chargement de l'image. Une description de l'image convient.
@@ -68,14 +82,6 @@ Il est possible de faire un lien avec une image, exemple :
 ```
 [![Logo Yunohost](/images/logo.png)](write_documentation)
 
-#### Manipulation de l'image
-Il est possible de contraindre l'image en ajoutant du code à la fin du lien comme cela :
-```
-![Logo Yunohost](/images/logo.png =50x50)
-```
-Dans le cas présent cela contraint l'image à une dimension de 50 pixels par 50 pixels
-![Logo Yunohost](/images/logo.png =50x50)
-
 ## Formater une citation
 
 ## Faire des notes de bas de pages
@@ -85,8 +91,6 @@ Dans le cas présent cela contraint l'image à une dimension de 50 pixels par 50
 ### Ordonnées
 
 ### Non ordonnées
-
-### Les listes de tâches
 
 ## les tableaux
 
