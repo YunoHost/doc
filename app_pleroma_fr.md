@@ -1,14 +1,12 @@
 # <img src="/images/pleroma_logo.png" alt="logo de Pleroma"> Pleroma
 
-| Index |
-|-------|
-| [Découverte de l'interface de Pleroma](#decouvertegeneralepleroma) |
-| [Logiciels Clients pour mobile et ordinateur](#LogicielsClients) |
-| [Liens utiles](#liensutiles) |
+ - [Découverte de l'interface de Pleroma](#decouvertegeneralepleroma) |
+ - [Logiciels Clients pour mobile et ordinateur](#LogicielsClients) |
+ - [Liens utiles](#liensutiles) |
 
 Pleroma est un réseau social décentralisé de micro-blogging qui propose une alternative à Twitter, le protocole Activy Pub qu'il utilise permet d'interagir avec le fediverse composé notamment de Mastodon, GNU Social, et d'autres. Il a l'avantage d'être plus léger que mastodon et se prête donc plus facilement à l'auto-hébergement.
 
-## <a name="#decouvertegeneralepleroma">Découverte de l'interface de Pleroma
+## <a name="#decouvertegeneralepleroma">Découverte de l'interface de Pleroma</a>
 Pour ceux et celles qui n'ont pas ou peu l'habitude des réseaux sociaux, voici en détail l'utilisation de chacune des fenêtres proposées.
 
 ### Accueil de l'interface
@@ -36,7 +34,7 @@ Cet espace permet de choisir l'agencement de Pleroma, il est proposé deux agenc
 6. Notifications  
 On retrouve dans cette zone les messages où vous avez été cité, mais aussi les abonnements à votre compte.
 
-## <a name="LogicielsClients"> Applications clients
+## <a name="LogicielsClients"> Applications clients</a>
 
 | Nom de l'applications | Plateforme | Multi-comptes | Autre réseaux supportés | Play Store | F-Droid | Apple Store |
 |---|---|---|---|---|---|---|
