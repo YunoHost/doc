@@ -52,6 +52,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [FEX](http://fex.rus.uni-stuttgart.de/)
 - [FileTea](https://filetea.me)
 - [FitTrackee](https://github.com/SamR1/FitTrackee)
+- [FlatPress](https://github.com/flatpressblog/flatpress)
 - [FoOlSlide](http://foolcode.github.io/FoOlSlide/) Open source comicbook/manga management software
 - [Fossil](http://www.fossil-scm.org)
 - [Framaslides](https://framagit.org/framasoft/framaslides/)
