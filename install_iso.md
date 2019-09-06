@@ -1,4 +1,4 @@
-# Install on a standard computer
+# Install on a regular computer
 
 *Find other ways to install YunoHost **[here](/install)**.*
 
