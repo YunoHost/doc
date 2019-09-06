@@ -6,7 +6,7 @@
 
 Pleroma est un réseau social décentralisé de micro-blogging qui propose une alternative à Twitter, le protocole Activy Pub qu'il utilise permet d'interagir avec le fediverse composé notamment de Mastodon, GNU Social, et d'autres. Il a l'avantage d'être plus léger que mastodon et se prête donc plus facilement à l'auto-hébergement.
 
-## <a name="#decouvertegeneralepleroma">Découverte de l'interface de Pleroma</a>
+## <a name="decouvertegeneralepleroma">Découverte de l'interface de Pleroma</a>
 Pour ceux et celles qui n'ont pas ou peu l'habitude des réseaux sociaux, voici en détail l'utilisation de chacune des fenêtres proposées.
 
 ### Accueil de l'interface
