@@ -16,7 +16,7 @@ Du fait de la constitution de Nextcloud, une base avec des applications tiers à
 ## <a name="LogicielsClients">Logiciels Clients</a>
 Il existe des logiciels client pour l'ensemble plateformes. Vous pouvez les retrouver sur le site officiel de nextcloud : https://nextcloud.com/install/#install-clients
 
-## <a name="#ManipulationsUtiles"> Manipulations utiles & Problèmes rencontrés</a>
+## <a name="ManipulationsUtiles"> Manipulations utiles & Problèmes rencontrés</a>
 
 ### <a name="AjoutEspace">Ajouter de l'espace à Nextcloud</a>
 
