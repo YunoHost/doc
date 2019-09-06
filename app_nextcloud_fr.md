@@ -13,7 +13,7 @@ Nextcloud est un service d'hébergement de fichiers, de nombreuses applications 
 
 Du fait de la constitution de Nextcloud, une base avec des applications tiers à installer, cette découverte de nextcloud ne concernera que la base de nextcloud sans applications ajoutés. Plus d'informations sur les applications dans la partie dédiée ou sur le catalogue d'application de nextcloud : https://apps.nextcloud.com/
 
-## <a name="#LogicielsClients">Logiciels Clients</a>
+## <a name="LogicielsClients">Logiciels Clients</a>
 Il existe des logiciels client pour l'ensemble plateformes. Vous pouvez les retrouver sur le site officiel de nextcloud : https://nextcloud.com/install/#install-clients
 
 ## <a name="#ManipulationsUtiles"> Manipulations utiles & Problèmes rencontrés</a>
