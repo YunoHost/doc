@@ -15,6 +15,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Ajenti](http://ajenti.org)
 - [Akaunting](https://akaunting.com) Everything you need to manage your finances. Keep track of all of your payments, invoices, expenses, etc.
 - [aMule](https://github.com/amule-project/amule)
+- [Anki](https://github.com/tsudoko/anki-sync-server)
 - [Auth0 SSO Dashboard](https://github.com/auth0-extensions/auth0-sso-dashboard-extension)
 - [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog) (/!\ last update: Jan 27, 2015)
 - [Bitmessage](https://bitmessage.org/wiki/Compiling_instructions)
