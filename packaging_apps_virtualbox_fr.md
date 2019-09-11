@@ -6,7 +6,7 @@ Cette page de documentation va vous expliquer comment mettre en place un serveur
 
 Il y a principalement deux raisons pour préférer l'usage d'un serveur virtuel plutôt que votre propre serveur :
 
-- Vous pouvez torturez à loisir un serveur virtuel sans courir le risque de le casser, puisque vous pourrez toujours restaurer un état précédent. Alors qu'il serait dommage de casser son propre serveur !
+- Vous pouvez torturer à loisir un serveur virtuel sans courir le risque de le casser, puisque vous pourrez toujours restaurer un état précédent. Alors qu'il serait dommage de casser son propre serveur !
 - Un serveur virtuel sera restauré avant de travailler dessus, pour garder en permanence un système sans résidus d'une précédente installation. Cela permet de se rapprocher au plus près d'une première installation par un utilisateur.
 
 Nous parlerons ici de VirtualBox, pour son approche graphique facile à utiliser. Si vous préférez une interface en ligne de commande pour la gestion de la machine virtuelle, tournez-vous de préférence vers [ynh-dev](/dev_fr).
