@@ -70,7 +70,7 @@ Case B: ls -al /media/storage/nextcloud_data/nextcloud
 To inform Nextcloud of its new directory, modify the `/var/www/nextcloud/config/config.php` file with the command:
 
 ```bash
-nano /var/www/nextcloud/config/config/config.php
+nano /var/www/nextcloud/config/config.php
 ```
 
 Look for the line:
