@@ -25,10 +25,10 @@ In the portal, users can also click on the avatar in the top-left to configure s
 You should be aware that the SSO can only be reached through the actual domain name (i.e. `https://the.domain.tld/yunohost/sso`), and NOT by just using the IP of the server (i.e. `https://11.22.33.44/yunohost/sso`), contrarily to the webadmin ! This is a bit confusing but is necessary for technical reason. If you are in a situation where you need to access the SSO without having your DNS properly configured for some reason, you might consider tweaking your `/etc/hosts` as described in [this page](dns_local_nework).
 </div>
 
-App permissions
----------------
+User groups and permissions
+---------------------------
 
-Access to apps can be restricted to some users only. This can be configured via the webadmin in Applications > (choose an app) > Access, or similarly via the command line `yunohost app addaccess`, `removeaccess` and `clearaccess`.
+See [this dedicated page](groups_and_permissions).
 
 SSH access
 ----------

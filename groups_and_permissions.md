@@ -1,0 +1,145 @@
+User groups and permissions
+===========================
+
+Warning : for now, these features are only available through the command line (c.f. `yunohost user group --help` and `yunohost user permission --help`)
+
+Managing groups
+---------------
+
+The group mechanism can be used to define group of users which then can be used to restrict permissions for applications and other services such as mail or xmpp. Note that it is *not* mandatory to create a group to do so : you can also restrict access to an app or service to just a specific list of user.
+
+Using groups is however useful for semantic, for example if you host multiple group of friends, association or enterprise on your server, you might want to create groups like `association1` and `association2` and add members of each association to the relevant group.
+
+### List existing groups
+
+To list the currently existing groups : 
+
+```bash
+$ yunohost user group list
+groups: 
+  all_users: 
+    members: 
+      - alice
+      - bob
+      - charlie
+      - delphine
+```
+
+By default, a special group called `all_users` exists and contain all users registered on YunoHost. This group can not be edited.
+
+### Creating a new group
+
+To create a new group called `yolo_crew`
+
+```bash
+$ yunohost user group create yolo_crew
+```
+
+Let's add Charlie and Delphine to this group:
+
+```bash
+$ yunohost user group update yolo_crew --add charlie delphine
+```
+
+(similarly, `--remove` can be used to remove members from a group)
+
+Now in the group list we should see : 
+
+```bash
+$ yunohost user group list
+groups:
+  all_users:
+    members:
+      - alice
+      - bob
+      - charlie
+      - delphine
+  yolo_crew:
+    members:
+      - charlie
+      - delphine
+```
+
+### Deleting groups
+
+To delete the group `yolo_crew`, you may run
+
+```bash
+$ yunohost user group delete yolo_crew
+```
+
+Managing permissions
+--------------------
+
+The permission mechanism allow to restrict access to services (for example mail, xmpp, ...) and apps, or even specific part of the apps (for example the administration interface of wordpress).
+
+### List permissions
+
+To list permissions and corresponding accesses:
+
+```bash
+$ yunohost user permission list
+permissions: 
+  mail.main: 
+    allowed: all_users
+  wordpress.admin: 
+    allowed: 
+  wordpress.main: 
+    allowed: all_users
+  xmpp.main: 
+    allowed: all_users
+```
+
+Here, we find that all registered users can use mails, xmpp, and access the wordpress blog. However, nobody can access the wordpress admin interface.
+
+More details can be displayed by adding the `--full` option which will display the list of users corresponding to groups allowed, as well as urls associated to a permission (relevant for web apps).
+
+### Add accesses to group or users
+
+To allow a group to access the wordpress admin interface:
+
+```bash
+$ yunohost user permission update wordpress.admin --add yolo_crew
+```
+
+Note that you can also allow a single user:
+
+```bash
+$ yunohost user permission update wordpress.admin --add alice
+```
+
+And now we may see that both the YoloCrew and Alice have access to the wordpress admin interface : 
+
+```bash
+$ yunohost user permission list
+  [...]
+  wordpress.admin:
+    allowed:
+      - yolo_crew
+      - john
+  [...]
+```
+
+Note that, for example, if we want to restrict permission for email so that only Bob, we should also remove `all_users` from the permission : 
+
+```bash
+$ yunohost user permission update mail --remove all_users --add bob
+```
+
+### Notes for apps packagers
+
+By default, installing an app creates the permission `$app.main` with `all_users` allowed by default.
+If you want to create a custom permission for your app (e.g. to restrict access to an admin interface) you may use the following helpers: 
+
+```bash
+ynh_permission_create --permission "admin" --urls "$domain$path_url/admin"
+ynh_permission_update --permission "admin" --add "$admin_user"
+```
+
+For now, inside the `change_url` script, you need to take care of updating the url corresponding to your permission:
+
+```bash
+ynh_permission_urls --permission "admin" --remove "$old_domain$old_path_url/admin" --add "$domain$path_url/admin"
+```
+
+However, you don't need to take care of removing permissions or backing up/restoring them as it is handled by the core of YunoHost.
