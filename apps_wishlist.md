@@ -119,6 +119,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Museek+](https://github.com/eLvErDe/museek-plus)
 - [Netrunner](https://github.com/mtgred/netrunner)
 - [Nibbleblog](http://www.nibbleblog.com)
+- [Nitter](https://github.com/zedeus/nitter) (Twitter front-end focused on privacy)
 - [Nuage](https://nuage.kerjean.me/login)
 - [Ombi](https://github.com/tidusjar/Ombi)
 - [OpenBazaar](https://openbazaar.org)
