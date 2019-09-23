@@ -50,8 +50,8 @@ chmod 775 -R /media/storage/nextcloud_data
 Migrate your data to the new disk. To do this *(be patient, it can take a long time)*:
 
 ```bash
-Case A: cp -ir /home/yunohost.app/nextcloud /media/storage
-Case B: cp -ir /home/yunohost.app/nextcloud /media/storage/nextcloud_data
+Case A: cp -ia /home/yunohost.app/nextcloud /media/storage
+Case B: cp -ia /home/yunohost.app/nextcloud /media/storage/nextcloud_data
 ```
 
 The `i` option allows you to ask yourself what to do if there is a file conflict, especially if you overwrite an old Owncloud or Nextcloud data folder.
