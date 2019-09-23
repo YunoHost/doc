@@ -16,7 +16,7 @@ You can create a redirection of a domain name to IP address of your server by mo
 your.server.ip.address domain.tld
 ```
 
-By replacing `your.server.ip.address` for instance by `192.168.1.05` and `domain.tld` by your domain name or by one you can choose if you doesn’t own one.
+By replacing `your.server.ip.address` for instance by `192.168.1.05` and `domain.tld` by your domain name or by one you can choose if you don’t own one.
 
 ### Software
 
