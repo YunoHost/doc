@@ -13,7 +13,6 @@ If you are installing on a VPS, then your VPS provider should have gave you your
 If you are installing at home (e.g. on a Raspberry Pi or OLinuXino), then you need to find out which IP has been attributed to your board after you plugged it to your internet box / router. Several ways exists to find your server's IP :
 
 - open a terminal and use `sudo arp-scan --local` to list the IP on your local network ;
-- if the arp-scan command displays a confusing number of devices, you can check which ones are open to ssh with `nmap -p 22 192.168.1.0/24` to sort them out (adapt the IP range to your local network)
 - use your internet box / router interface to list the machines connected, or check the logs ;
 - plug a screen on your server, log in and type `hostname --all-ip-address`.
 
@@ -34,10 +33,6 @@ Since YunoHost 3.4, after running the postinstallation, you won't be able to log
 #### Change the password!
 
 After logging in for the first time, you should change the root password. The server might automatically ask you to do so. If not, use the command `passwd`. It is important to choose a reasonably strong password. Note that the root password will be overriden by the admin password when you perform the postinstallation.
-
-#### Let's configure !
-
-We're now ready to begin the [post-installation](postinstall).
 
 ## After installing YunoHost
 
