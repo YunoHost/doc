@@ -15,7 +15,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Ajenti](http://ajenti.org)
 - [Akaunting](https://akaunting.com) Everything you need to manage your finances. Keep track of all of your payments, invoices, expenses, etc.
 - [aMule](https://github.com/amule-project/amule)
-- [Anki](https://github.com/tsudoko/anki-sync-server)
 - [Auth0 SSO Dashboard](https://github.com/auth0-extensions/auth0-sso-dashboard-extension)
 - [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog) (/!\ last update: Jan 27, 2015)
 - [Bitmessage](https://bitmessage.org/wiki/Compiling_instructions)
@@ -53,7 +52,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [FEX](http://fex.rus.uni-stuttgart.de/)
 - [FileTea](https://filetea.me)
 - [FitTrackee](https://github.com/SamR1/FitTrackee)
-- [FlatPress](https://github.com/flatpressblog/flatpress)
+- [Flarum](https://flarum.org/)
 - [FoOlSlide](http://foolcode.github.io/FoOlSlide/) Open source comicbook/manga management software
 - [Fossil](http://www.fossil-scm.org)
 - [Framaslides](https://framagit.org/framasoft/framaslides/)
@@ -107,6 +106,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Loomio](https://www.loomio.org)
 - [MaidSafe](http://maidsafe.net)
 - [Mailpile](https://www.mailpile.is)
+- [Mailtrain](https://mailtrain.org/)
 - [Mautic](https://github.com/mautic/mautic)
 - [MediaCrush](https://github.com/MediaCrush/MediaCrush) (/!\ last update: Jan 23, 2015)
 - [microblog.pub](https://microblog.pub)
@@ -119,7 +119,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Museek+](https://github.com/eLvErDe/museek-plus)
 - [Netrunner](https://github.com/mtgred/netrunner)
 - [Nibbleblog](http://www.nibbleblog.com)
-- [Nitter](https://github.com/zedeus/nitter) (Twitter front-end focused on privacy)
 - [Nuage](https://nuage.kerjean.me/login)
 - [Ombi](https://github.com/tidusjar/Ombi)
 - [OpenBazaar](https://openbazaar.org)
