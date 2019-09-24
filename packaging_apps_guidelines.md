@@ -153,7 +153,7 @@ This involves monitoring updates to the upstream application, adhering to the ne
 ##### Keeping up-to-date on the evolution of apps packaging | validated | manual | OFFICIAL |
 In order to keep up with the evolution of the packaging format and best practices, it is recommended to:
 * subscribe to the discussion list `apps @ list.yunohost.org`
-* follow [the forum's Apps category](https://forum.yunohost.org/c/apps-packaging)
+* follow [the forum's Apps category](https://forum.yunohost.org/c/contribute-room/apps-packaging)
 
 To follow the evolution of YunoHost more generally:
 * join XMPP dev@conference.yunohost.org ([three days of logs are available](https://im.yunohost.org/logs/dev/))
