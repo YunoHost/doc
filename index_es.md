@@ -6,48 +6,46 @@
 
   <div class="punchline">
     <p>
-      <span class="yolo 1" style="color: #FF3399;">datalove <3</span>
-      <span class="yolo 2" style="color: #6699FF;">data@home</span>
-      <span class="yolo 3" style="color: #66FF33;">Alojar arriba, dijeron</span>
-      <span class="yolo 4" style="color: #00FFCC;">Host me I'm famous</span>
-      <span class="yolo 5" style="color: #FF5050;">sudo internet</span>
-      <span class="yolo 6" style="color: #FF0066;">Ellos alojamientido y tenía muchos hijos</span>
-      <span class="yolo 8" style="color: #FFFFFF;">Try Internet</span>
-      <span class="yolo 7" style="color: #3366FF;">Internet, lectura y escritura</span>
-      <span class="yolo 9" style="color: #CC66FF;">No tengo nada que ocultar</span>
-      <span class="yolo 10" style="color: #FF6600;">How I met your server</span>
-      <span class="yolo 11" style="color: #FF3399;">datalove <3</span>
+      <span class="yolo 1" style="color: #6699FF;">Okupa tu servidor</span>
+      <span class="yolo 2" style="color: #66FF33;">¡Yo me alojo a mi mismo!</span>
+      <span class="yolo 3" style="color: #00FFCC;">¡Anda y que te alojen!</span>
+      <span class="yolo 4" style="color: #FF5050;">Fuera de mi nube</span>
+      <span class="yolo 5" style="color: #FF0066;">Alójame, soy famoso</span>
+      <span class="yolo 6" style="color: #3366FF;">Prueba Internet</span>
+      <span class="yolo 7" style="color: #FFFFFF;">Su fiel servidor</span>
+      <span class="yolo 8" style="color: #FF6600;">yo@mismo.parami</span>
+      <span class="yolo 9" style="color: #FF5050;">Tío ¡¿X K NO alojas?!</span>
+      <span class="yolo 10" style="color: #66FF33;">Tranqui y alójate</span>
     </p>
-    <button class="btn btn-primary btn-lg btn-block yolobtn">Perdón ?</button>
+    <button class="btn btn-primary btn-lg btn-block yolobtn">¿Qué?</button>
   </div>
 
   <div class="main-links hidden-xs">
-    <a href="/whatsyunohost">About</a> <span class="colored-bar">•</span> 
-    <a href="https://forum.yunohost.org/c/announcement" target="_blank">últimas noticias</a> <span class="colored-bar">•</span> 
-    <a href="/docs">Documentation</a>
+    <a href="/whatsyunohost">Acerca de</a> <span class="colored-bar">•</span> 
+    <a href="https://forum.yunohost.org/c/announcement" target="_blank">Últimas noticias</a> <span class="colored-bar">•</span> 
+    <a href="/docs">Documentación</a>
   </div>
 
 </div><!-- teasing-part -->
 
 <div class="boring-part" markdown="1">
 
-  <h1>YunoHost <small>es una herramienta que permite instalar y utilizar fácilmente su propio servidor.</small></h1>
-
+  <h1>YunoHost <small>es un sistema operativo de servidor que pretende hacer accesible el autoalojamiento para todo el mundo.</small></h1>
 
   <div class="home-panel">
     <img src="/images/home_panel.jpg" />
   </div>
 
   <div class="call-to-action">
-    <!-- <a class="btn btn-primary btn-lg" href="/try">Try it</a>  -->
-    <a class="btn btn-success btn-lg" href="/install">Get started</a>
+    <a class="btn btn-primary btn-lg" href="/try">Probar</a>
+    <a class="btn btn-success btn-lg" href="/install">Instalar</a>
     <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-6-release-sortie-de-yunohost-3-6/8359">YunoHost v3.6</a></small></p>
   </div>
 
   <div class="row cf">
     <div class="col-md-7">
-      <h1>Installar <small>su servidor simplemente, tienes todo en casa</small></h1>
-      <p><br /><a href="/hardware">Ver los prerrequisitos</a></p>
+      <h1>Instale <small>su servidor fácilmente, ya tiene todo en su casa</small></h1>
+      <p><br /><a href="/hardware">Vea los requisitos</a></p>
     </div>
     <div class="col-md-4">
       <div class="feature-pic">
@@ -65,8 +63,8 @@
       </div>
     </div>
     <div class="col-md-7 text-right">
-      <h1>Disfrutar <small>de sus aplicaciones web, y crea tu esquina de Internet</small></h1>
-      <p><br /><a href="/apps_es">Lista de aplicaciones disponible</a></p>
+      <h1>Disfrute <small>sus aplicaciones y construya su rinconcito de Internet</small></h1>
+      <p><br /><a href="/apps">Lista de aplicaciones disponibles</a></p>
     </div>
   </div>
 
@@ -74,8 +72,8 @@
 
   <div class="row cf">
     <div class="col-md-7">
-      <h1>Gestionar <small>tu servidor como quieras : vía web, móvil o en línea de comandos</small></h1>
-      <p><br /><a href="/try_es">Intentar la interfaz de administración</a></p>
+      <h1>Gestione <small>su servidor como le guste: vía web, móvil o línea de órdenes</small></h1>
+      <p><br /><a href="/try">Pruebe la administración</a></p>
     </div>
     <div class="col-md-4">
       <div class="feature-pic">
@@ -88,23 +86,28 @@
 
   <div class="row cf">
     <div class="col-md-4 button-list">
-      <a class="btn btn-lg btn-block btn-success" href="/whatsyunohost_es">¿ Que es YunoHost ?</a>
-      <a class="btn btn-lg btn-block btn-warning" href="/contribute_es">Cómo contribuir</a>
+      <a class="btn btn-lg btn-block btn-primary" href="/whatsyunohost">Acerca de YunoHost</a>
+      <a class="btn btn-lg btn-block btn-info" href="/docs">Documentación</a>
+      <a class="btn btn-lg btn-block btn-success" href="/contribute">Colaborar</a>
+      <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org/" target="_blank">Foro</a>
+      <a class="btn btn-lg btn-block btn-default" href="chat_rooms_en" target="_blank">Salas de chat</a>
+      <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Últimas noticias</a>
+      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help">Ayuda</a>
     </div>
     <div class="col-md-7 text-right">
-      <h1>Explorar <small>las posibilidad de su servidor, y aprender porque es importante</small></h1>
-      <p><br /><a href="/docs_es">Leer la documentación</a></p>
+      <h1>Explore <small>lo que puede hacer con un servidor y la razón de su importancia</small></h1>
+      <p><br /><a href="/docs">Lea la documentación</a></p>
     </div>
   </div>
 
   <hr />
 
   <div class="text-center">
-    <h1>¡ Hey ! Somos humanos<br /><small> Si tiene alguna pregunta, un problema, o simplemente estás interesado, ven decir "¡ Hola !" sobre nuestro salón de discusión clic en el botón abajo &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
+    <h1>¡Oye! ¡Somos humanos!<br /><small> Si tiene alguna pregunta, problema o es simplemente un fan, deje un mensaje en nuestra sala de chat pulsando en el botón inferior &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
 
-  <p class="liberapay">
-   <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Donation button" title="Liberapay" /></a>
-   </p>
+   <p class="liberapay">
+     <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Botón de donación" title="Liberapay" /></a>
+    </p>
 
   </div>
 
@@ -141,30 +144,5 @@
         scrollTop: jQuery(window).height() + 80
       }, 500);
     });
-    $(".actions").css('opacity', 0);
-    jQuery.ajaxSetup({cache: false});
-    jQuery.getScript('https://'+ location.host +'/mini/javascripts/mini.js', function() {
-        HOST_BOSH = 'https://'+ location.host +'/http-bind/';
-        JappixMini.launch({
-            connection: {
-              domain: 'anonymous.yunohost.org'
-            },
 
-            application: {
-              network: {
-                autoconnect: false
-              },
-
-              interface: {
-                showpane: true,
-                animate: true
-              },
-
-              groupchat: {
-                open: ['support@conference.yunohost.org'],
-                suggest: ['dev@conference.yunohost.org']
-              }
-            }
-        });
-    });
-</script>
+</script> 

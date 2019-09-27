@@ -50,8 +50,8 @@ chmod 775 -R /media/stockage/nextcloud_data
 Migrez vos données vers le nouveau disque. Pour ce faire *(soyez patient, cela peut être long)* :
 
 ```bash
-Cas A : cp -ir /home/yunohost.app/nextcloud /media/stockage
-Cas B : cp -ir /home/yunohost.app/nextcloud /media/stockage/nextcloud_data
+Cas A : cp -ia /home/yunohost.app/nextcloud /media/stockage
+Cas B : cp -ia /home/yunohost.app/nextcloud /media/stockage/nextcloud_data
 ```
 
 L'option `i` permet de vous demander quoi faire en cas de conflit de fichier, notamment si vous écrasez un ancien dossier de données Owncloud ou Nextcloud.
@@ -150,17 +150,11 @@ Si vous utilisez Cloudflare pour vos DNS, *ce qui peut-être pratique si vous av
 
 Dans le panneau de controle de Cloudflare choisissez votre domaine et trouver Page Rules
 l'url dans votre barre d'addresse ressemblera à : https://dash.cloudflare.com/*/domain.tld/page-rules
-
 ### Ajouter une règle
-
 La règle à ajouter doit s'appliquer pour l'url de votre instance Nextcloud soit:
-
 - `https://nextcloud.domain.tld/*` si vous utilisez un sous domain
 - `https://domain.tld/nextcloud/*` si vous avez déployé Nextcloud dans un répertoire
-
 Les options à désactiver (Off) sont :
-
 - Rocket Loader
 - Email Obfuscation
-
 Sauvegarder et nettoyer vos caches (Cloudflare, navigateur, ...) et le tour est joué.
