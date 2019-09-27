@@ -92,7 +92,7 @@
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org/" target="_blank">Foro</a>
       <a class="btn btn-lg btn-block btn-default" href="chat_rooms_en" target="_blank">Salas de chat</a>
       <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Últimas noticias</a>
-      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_fr">Ayuda</a>
+      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help">Ayuda</a>
     </div>
     <div class="col-md-7 text-right">
       <h1>Explore <small>lo que puede hacer con un servidor y la razón de su importancia</small></h1>
