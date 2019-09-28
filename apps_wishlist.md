@@ -54,6 +54,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [FileTea](https://filetea.me)
 - [FitTrackee](https://github.com/SamR1/FitTrackee)
 - [FlatPress](https://github.com/flatpressblog/flatpress)
+- [Flarum](https://flarum.org/)
 - [FoOlSlide](http://foolcode.github.io/FoOlSlide/) Open source comicbook/manga management software
 - [Fossil](http://www.fossil-scm.org)
 - [Framaslides](https://framagit.org/framasoft/framaslides/)
@@ -108,6 +109,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [MagicMirror²](https://github.com/MichMich/MagicMirror)
 - [MaidSafe](http://maidsafe.net)
 - [Mailpile](https://www.mailpile.is)
+- [Mailtrain](https://mailtrain.org/)
 - [Mautic](https://github.com/mautic/mautic)
 - [MediaCrush](https://github.com/MediaCrush/MediaCrush) (/!\ last update: Jan 23, 2015)
 - [microblog.pub](https://microblog.pub)
