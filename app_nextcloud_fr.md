@@ -1,4 +1,4 @@
-# <img src="/images/nextcloud-logo.png" alt="logo de Nextcloud"> Nextcloud  
+# <img src="/images/nextcloud_logo.png" alt="logo de Nextcloud"> Nextcloud  
 
  - [Découverte de l'environnement de Nextcloud](#EnvironnementNextcloud)
  - [Logiciels Clients pour mobile et ordinateur](#LogicielsClients)
@@ -7,21 +7,23 @@
  - [Applications tiers](#AppsTiers)
  - [Liens utiles](#liensutiles)
 
-Nextcloud est un service d'hébergement de fichiers, de nombreuses applications peuvent être installés afin de lui offrir de nouvelles fonctionnalités tel que un agenda, un répertoire, des notes et pleins d'autres (vous pouvez trouver quelques applications dans la partie [applications tiers](#AppsTiers) mais il en existe pleins d'autres suivant vos besoins).
+Nextcloud est un service d'hébergement de fichiers, de nombreuses applications peuvent être installées afin de lui offrir de nouvelles fonctionnalités tel qu'un agenda, un répertoire de contacts, des notes et pleins d'autres possibles (vous pouvez trouver quelques applications dans la partie [applications tiers](#AppsTiers) mais il en existe une multitude suivant vos besoins).
 
-## <a name="EnvironnementNextcloud">Découverte de l'environnement de Nextcloud</a>
+## Découverte de l'environnement de Nextcloud<a name="EnvironnementNextcloud"></a>
 
-Du fait de la constitution de Nextcloud, une base avec des applications tiers à installer, cette découverte de nextcloud ne concernera que la base de nextcloud sans applications ajoutés. Plus d'informations sur les applications dans la partie dédiée ou sur le catalogue d'application de nextcloud : https://apps.nextcloud.com/
+Du fait de la constitution de Nextcloud, une base avec des applications tiers à installer, ce chapitre ne concernera que la base de nextcloud sans applications ajoutés. Plus d'informations sur les applications dans la partie dédiée ou sur le catalogue d'application de nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com).  
+Nextcloud est avant tout un service de cloud (comme Seafile et d'autres logiciels), il permet une synchronisation et le partage de fichiers sur internet et entre plusieurs terminaux (ordinateurs, smartphone) mais aussi avec plusieurs personnes.
 
-## <a name="LogicielsClients">Logiciels Clients</a>
-Il existe des logiciels client pour l'ensemble plateformes. Vous pouvez les retrouver sur le site officiel de nextcloud : https://nextcloud.com/install/#install-clients
+## Logiciels Clients<a name="LogicielsClients"></a>
 
-## <a name="ManipulationsUtiles"> Manipulations utiles & Problèmes rencontrés</a>
+Il existe des logiciels clients pour de nombreux terminaux. Vous pouvez les retrouver sur le site de nextcloud : [nextcloud.com/install/#install-clients](https://nextcloud.com/install/#install-clients)
 
-### <a name="AjoutEspace">Ajouter de l'espace à Nextcloud</a>
+## Manipulations utiles & problèmes rencontrés<a name="ManipulationsUtiles"></a>
 
-La solution I) permet d'ajouter un lien vers un dossier local ou distant.  
-La solution II) permet de déplacer l'espace de stockage principal de nextcloud.
+### Ajouter de l'espace à Nextcloud<a name="AjoutEspace"></a>
+
+La solution I. permet d'ajouter un lien vers un dossier local ou distant.  
+La solution II. permet de déplacer l'espace de stockage principal de nextcloud.
 
 #### I. Ajouter un espace de stockage externe
 
@@ -74,8 +76,7 @@ Cas A : cp -ir /home/yunohost.app/nextcloud /media/stockage
 Cas B : cp -ir /home/yunohost.app/nextcloud /media/stockage/nextcloud_data
 ```
 
-L'option `i` permet de vous demander quoi faire en cas de conflit de fichier, notamment si vous écrasez un ancien dossier de données Owncloud ou Nextcloud.
-
+L'option `i` permet de vous demander quoi faire en cas de conflit de fichier, notamment si vous écrasez un ancien dossier de données Owncloud ou Nextcloud.  
 Pour vérifier que tout s'est bien passé, comparer ce qu'affichent ces deux commandes (le contenu doit être identique):
 
 ```bash
@@ -156,39 +157,15 @@ Les options à désactiver (Off) sont :
 
 Sauvegarder et nettoyer vos caches (Cloudflare, navigateur, ...) et le tour est joué.
 
-## <a name="AppsTiers">Les applications Tiers</a>
+## Applications Tiers<a name="AppsTiers"></a>
 
-### L'application KeeWeb
+ + [Calendrier](app_nextcloud_calendar_fr)
+ + [contact](app_nextcloud_contact_fr)
+ + [KeeWeb](app_nextcloud_keeweb_fr)
+ + [Carnet](app_nextcloud_carnet_fr)
 
-L'application KeeWeb est un gestionnaire de mots de passe incorporé à Nextcloud. Elle permet par exemple de lire un fichier de type KeePass (*.kdbx*) stocké sur votre instance Nextcloud. 
-Mais il arrive parfois que Nextcloud ne laisse pas l'application prendre en charge ces fichiers, ce qui rend alors impossible leur lecture de KeeWeb. Pour remédier à cela, 
-[une solution](https://github.com/jhass/nextcloud-keeweb/issues/34) existe.
+## Quelques liens utiles<a name="liensutiles"></a>
 
-Se rendre dans le répertoire de configuration de Nextcloud :
-
-```bash
-cd /var/www/nextcloud/config/
-```
-
-S'il n'existe pas, créer le fichier *mimetypemapping.json* dont le propriétaire est l'utilisateur *nextcloud* :
-
-```bash
-sudo su nextcloud -c "nano mimetypemapping.json"
-```
-
-Puis ajouter dans ce fichier le texte suivent :
-
-```bash
-{
-    "kdbx": ["x-application/kdbx"]
-}
-```
-
-Enregistrer le fichier (**CTRL** + **o**) et quitter nano (**CTRL** + **c**).
-
-A présent, le problème est corrigé.
-
-## <a name="liensutiles">Quelques liens utiles</a>
-+ Site officiel : [nextcloud.com (En anglais)](https://nextcloud.com/)
++ Site officiel : [nextcloud.com (en)](https://nextcloud.com/)
 + Catalogue d'application pour nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com/)
 + Trouver de l'aide et poser toutes vos questions : [forum.yunohost.org](https://forum.yunohost.org/c/support)
