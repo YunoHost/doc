@@ -143,6 +143,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Privoxy](http://www.privoxy.org)
 - [ProcessMaker](http://www.processmaker.com)
 - [ProtonMail’s WebClient](https://github.com/ProtonMail/WebClient)
+- [ProjeQtOr](https://www.projeqtor.org/en/product-en/downloads)
 - [PyLoad](https://github.com/pyload/pyload)
 - [Pulse](https://source.ind.ie/project/pulse-swift/tree/master)
 - [Pump.io](http://pump.io)
