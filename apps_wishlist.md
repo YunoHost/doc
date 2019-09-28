@@ -15,8 +15,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Ajenti](http://ajenti.org)
 - [Akaunting](https://akaunting.com) Everything you need to manage your finances. Keep track of all of your payments, invoices, expenses, etc.
 - [aMule](https://github.com/amule-project/amule)
-- [Anki](https://github.com/tsudoko/anki-sync-server)
-- [Anki](https://apps.ankiweb.net/index.html) is a powerful Open Source flashcard application, which helps you quickly and easily memorize facts over the long term utilizing a spaced repetition algorithm. (https://github.com/dsnopek/anki-sync-server)
+- [Anki](https://github.com/dsnopek/anki-sync-server) is a powerful Open Source flashcard application, which helps you quickly and easily memorize facts over the long term utilizing a spaced repetition algorithm.
 - [Auth0 SSO Dashboard](https://github.com/auth0-extensions/auth0-sso-dashboard-extension)
 - [Autoblog](https://github.com/mitsukarenai/Projet-Autoblog) (/!\ last update: Jan 27, 2015)
 - [Bitmessage](https://bitmessage.org/wiki/Compiling_instructions)
