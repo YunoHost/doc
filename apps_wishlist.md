@@ -156,6 +156,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Restya](http://restya.com)
 - [Retroshare](http://retroshare.net/downloads.html)
 - [SABnzbd](https://sabnzbd.org)
+- [Samourai Dojo, Bitcoin coinjoin node] (https://github.com/Samourai-Wallet/samourai-dojo)
 - [ScenariChain-server](https://download.scenari.software/SCENARIchain-server/)
 - [Scramble, Browser-based PGP web mail](https://github.com/dcposch/scramble)
 - [Scribbleton](https://scribbleton.com)
