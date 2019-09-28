@@ -194,6 +194,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [WebTorrent](https://github.com/feross/webtorrent)
 - [Wisemapping](http://www.wisemapping.com)
 - [Wireguard](https://www.wireguard.com/)
+- [Xibo](https://github.com/xibosignage)
 - [Xonotic](http://xonotic.org)
 - [YesWiki](https://yeswiki.net)
 - [Zammad](https://github.com/zammad/zammad)
