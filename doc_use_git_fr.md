@@ -7,6 +7,7 @@
  - [Envoyer vos contributions avec une Pull Request](#EnvoyerPR)  
  - [Suivre votre contribution et prendre en compte les retours des contributeurs·trices](#SuivreContributions)  
  - [Faire remonter des erreurs et des souhaits en créant une issue](#RemonterIssues)  
+ - [Corriger et inspecter les contributions](#ReviewContrib)
  - [Aller plus loin avec git et contribuer sur son poste de travail](#PlusLoinGitOrdi)  
     - [Quelques ressources sur le web](#LiensWeb)  
 
@@ -52,6 +53,8 @@ Une fois le dépôt forker (copié), il vous faudra créer une nouvelle branche 
 Lorsque vous avez déjà fait une PR (Pull Request), les modifications de votre branche de développement sur le dépôt git se rajouteront automatiquement à la PR. Cela ne nécessite aucune action supplémentaire. Vous pouvez aussi intégrer les propositions de modifications de contributeurs, qui lorsqu'ils/elles auditeront le code, peuvent trouver des erreurs ou de nouvelles formulations plus adaptées.  
 
 ## Faire remonter des erreurs et des souhaits par des issues <a name="RemonterIssues"></a>
+
+## Corriger et inspecter les contributions <a name"ReviewContrib"></a>
 
 ## Aller plus loin avec git et travailler sur son poste de travail <a name="PlusLoinGitOrdi"></a>
 
