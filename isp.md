@@ -42,6 +42,9 @@ A list of French and Belgian ISPs is available on the [french page](/isp_fr).
 | --- | --- | --- | --- | --- | --- | --- |
 | Telia | Multiple | Yes | No. Business only. | Yes | No. Business only. | No. Business only. |
 | Bredbandsbolaget | Multiple | Yes | No. Business only. | Yes | No. Business only. | No. Business only. |
+| Ownit | Multiple | Yes | Yes | N/A? | ? | Yes |
+
+Ownit reserves port 3 and 4 of their router to TV. With a simple call to their hotline, explaining that you want to selfhost, they can reassign one of the ports to be in bridge mode. It means that your server will have its own public fixed IP address, in addition to the modem's.
 
 ### Switzerland
 

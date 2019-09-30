@@ -72,8 +72,8 @@ chmod 775 -R /media/storage/nextcloud_data
 Migrate your data to the new disk. To do this *(be patient, it can take a long time)*:
 
 ```bash
-Case A: cp -ir /home/yunohost.app/nextcloud /media/storage
-Case B: cp -ir /home/yunohost.app/nextcloud /media/storage/nextcloud_data
+Case A: cp -ia /home/yunohost.app/nextcloud /media/storage
+Case B: cp -ia /home/yunohost.app/nextcloud /media/storage/nextcloud_data
 ```
 
 The `i` option allows you to ask yourself what to do if there is a file conflict, especially if you overwrite an old Owncloud or Nextcloud data folder.  
@@ -91,7 +91,7 @@ Case B: ls -al /media/storage/nextcloud_data/nextcloud
 To inform Nextcloud of its new directory, modify the `/var/www/nextcloud/config/config.php` file with the command:
 
 ```bash
-nano /var/www/nextcloud/config/config/config.php
+nano /var/www/nextcloud/config/config.php
 ```
 
 Look for the line:
@@ -142,7 +142,7 @@ If you use Cloudflare for your DNS, *which may be useful if you have a dynamic I
 In the Cloudflare control panel select your domain and find Page Rules
 the url in your address bar will look like this: https://dash.cloudflare.com/*/domain.tld/page-rules  
 
-#### Add a rule
+##### Add a rule
 
 The rule to be added must apply to the url of your Nextcloud instance either:
 
@@ -158,10 +158,14 @@ Save and clean your caches (Cloudflare, browser,...) and that's it.
 
 ## Third Party Applications <a name="AppsTiers"></a>
 
- + [KeeWeb](app_nextcloud_keeweb)
+ - [Calendrier](app_nextcloud_calendar)
+ - [contact](app_nextcloud_contact)
+ - [KeeWeb](app_nextcloud_keeweb)
+ - [Carnet](app_nextcloud_carnet)
 
 ## Useful links <a name="UsefulLinks"></a>
 
-+ Official website : [nextcloud.com](https://nextcloud.com/)  
-+ Application catalogue for nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com/)  
-+ Find help and ask all your questions : [forum.yunohost.org](https://forum.yunohost.org/c/support)  
+ - Official website : [nextcloud.com](https://nextcloud.com/)  
+ - Application catalogue for nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com/)  
+ - Find help and ask all your questions : [forum.yunohost.org](https://forum.yunohost.org/c/support)  
+

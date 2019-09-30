@@ -29,11 +29,11 @@ YunoHost ne supporte pour le moment pas les cartes ARM64. Pour plus d'informatio
 
 <a class="btn btn-lg btn-default" href="/copy_image_fr">1. Flasher la carte SD avec l'image</a>
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot_fr">2. Brancher & démarrer</a>
+<a class="btn btn-lg btn-default" href="/plug_and_boot_fr">2. Brancher la carte et la laisser démarrer</a>
 
-<a class="btn btn-lg btn-default" href="/ssh_fr">3. Se connecter en SSH</a>
+<a class="btn btn-lg btn-default" href="/ssh_fr">3. Se connecter en SSH sur le serveur</a>
 
-<a class="btn btn-lg btn-default" href="/postinstall_fr">4. Procéder à la post-installation</a>
+<a class="btn btn-lg btn-default" href="/postinstall_fr">4. Effectuer la configuration initiale (post-installation)</a>
 
 ---
 

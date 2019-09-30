@@ -72,8 +72,8 @@ chmod 775 -R /media/stockage/nextcloud_data
 Migrez vos données vers le nouveau disque. Pour ce faire *(soyez patient, cela peut être long)* :
 
 ```bash
-Cas A : cp -ir /home/yunohost.app/nextcloud /media/stockage
-Cas B : cp -ir /home/yunohost.app/nextcloud /media/stockage/nextcloud_data
+Cas A : cp -ia /home/yunohost.app/nextcloud /media/stockage
+Cas B : cp -ia /home/yunohost.app/nextcloud /media/stockage/nextcloud_data
 ```
 
 L'option `i` permet de vous demander quoi faire en cas de conflit de fichier, notamment si vous écrasez un ancien dossier de données Owncloud ou Nextcloud.  
@@ -133,7 +133,6 @@ sudo -u nextcloud php occ files:scan --all
 
 C'est terminé. À présent testez si tout va bien, essayez de vous connecter à votre instance Nextcloud, envoyer un fichier, vérifiez sa bonne synchronisation.
 
-
 ### Nextcloud et Cloudflare
 
 Si vous utilisez Cloudflare pour vos DNS, *ce qui peut-être pratique si vous avez une IP dynamique*, vous aurez très probablement des problèmes d'authentification avec l'application Nextcloud. Sur Internet beaucoup de gens propose de créer une règle ayant pour effet de désactivé tous les options relié à la sécurité et à la vitesse de Cloudflare pour l'url pointant sur votre instance Nextcloud. Malgré que cela fonctionne, ce n'est pas la solution optimial. Je vous propose, certes de créé une règle pour l'url pointant sur votre instance Nextcloud mais de désactivé seulement 2 options. Voici donc comment:
@@ -146,12 +145,9 @@ l'url dans votre barre d'addresse ressemblera à : https://dash.cloudflare.com/*
 #### Ajouter une règle
 
 La règle à ajouter doit s'appliquer pour l'url de votre instance Nextcloud soit:
-
 - `https://nextcloud.domain.tld/*` si vous utilisez un sous domain
 - `https://domain.tld/nextcloud/*` si vous avez déployé Nextcloud dans un répertoire
-
 Les options à désactiver (Off) sont :
-
 - Rocket Loader
 - Email Obfuscation
 

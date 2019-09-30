@@ -153,13 +153,11 @@ Cela implique de surveiller les mises à jour de l'application upstream, de resp
 #### YEP 1.6
 ##### Se tenir informé sur l'évolution du packaging d'apps  | validé | manuel | OFFICIAL |
 Afin de suivre l'évolution du format de packaging ainsi que des bonnes pratiques, il est recommandé de:
-* s'inscrire à la liste de discussion `apps@list.yunohost.org`
-* suivre [la catégorie Apps packaging du forum](https://forum.yunohost.org/c/apps-packaging)
+* suivre [la catégorie Apps packaging du forum](https://forum.yunohost.org/c/contribute-room/apps-packaging)
 
 Pour suivre l'évolution de YunoHost de façon plus générale :
 * rejoindre le salon XMPP dev@conference.yunohost.org ([trois jours de logs sont disponibles](https://im.yunohost.org/logs/dev/))
 * suivre [la catégorie Annoucement du forum](https://forum.yunohost.org/c/announcement)
-* suivre les discussions sur contrib@list.yunohost.org
 
 #### YEP 1.7
 ##### Ajouter l'app à l'[organisation YunoHost-Apps](https://github.com/YunoHost-Apps)  | validé | manuel | OFFICIAL |

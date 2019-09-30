@@ -27,11 +27,11 @@ Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissan
 
 <a class="btn btn-lg btn-default" href="/copy_image_fr">2. Flasher la carte SD avec l'image</a>
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot_fr">3. Brancher & démarrer</a>
+<a class="btn btn-lg btn-default" href="/plug_and_boot_fr">3. Brancher la carte et la laisser démarrer</a>
 
-<a class="btn btn-lg btn-default" href="/ssh_fr">4. Se connecter en SSH</a>
+<a class="btn btn-lg btn-default" href="/ssh_fr">4. Se connecter en SSH sur le serveur</a>
 
-<a class="btn btn-lg btn-default" href="/postinstall_fr">5. Procéder à la post-installation</a>
+<a class="btn btn-lg btn-default" href="/postinstall_fr">5. Effectuer la configuration initiale (post-installation)</a>
 
 ---
 

@@ -13,7 +13,7 @@ Before setting up a server at home, it is recommended that you know the [possibl
 
 ## Pre-requisites
 
-- A Raspberry Pi 0, 1, 2 or 3 ;
+- A Raspberry Pi 0, 1, 2 or 3 (does not currently work on RPI 4);
 - An microSD card: **8GB** capacity (at least) and **Class 10** speed rate are highly recommended (like the [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
 - A power supply (either an adapter or a MicroUSB cable)i ;
 - An ethernet cable (RJ-45) to connect your Raspberry Pi to your router. (Raspberry Pi Zero users can connect the Pi using an OTG cable, [Wifi dongle](https://core-electronics.com.au/tutorials/raspberry-pi-zerow-headless-wifi-setup.html).) ;
@@ -27,11 +27,11 @@ Before setting up a server at home, it is recommended that you know the [possibl
 
 <a class="btn btn-lg btn-default" href="/copy_image">1. Flash the SD card with the image</a>
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot">2. Plug & boot</a>
+<a class="btn btn-lg btn-default" href="/plug_and_boot">2. Power up the board and let it boot</a>
 
 <a class="btn btn-lg btn-default" href="/ssh">3. Connect to your server with your web browser</a>
 
-<a class="btn btn-lg btn-default" href="/postinstall">4. Proceed to post-installation</a>
+<a class="btn btn-lg btn-default" href="/postinstall">4. Proceed with the initial configuration (post-installation)</a>
 
 ---
 
