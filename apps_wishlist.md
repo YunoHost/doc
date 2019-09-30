@@ -26,6 +26,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Bookstack](https://www.bookstackapp.com/)
 - [Browsepass](http://techualization.blogspot.de/2013/09/introducing-browsepass-keepass-on-web.html)
 - [btcpayserver](https://github.com/btcpayserver/btcpayserver)
+- [Caisse Bliss](https://framagit.org/tykayn/caisse-bliss)
 - [Candy](https://candy-chat.github.io/candy)
 - [CardDavMate](https://www.inf-it.com/open-source/clients/carddavmate)
 - [cgit](http://git.zx2c4.com/cgit/about)
