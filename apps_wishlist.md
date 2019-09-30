@@ -99,6 +99,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Loomio](https://www.loomio.org)
 - [MaidSafe](http://maidsafe.net)
 - [Mailpile](https://www.mailpile.is)
+- [Mailtrain](https://mailtrain.org/)
 - [Mautic](https://github.com/mautic/mautic)
 - [MediaCrush](https://github.com/MediaCrush/MediaCrush) (/!\ last update: Jan 23, 2015)
 - [microblog.pub](https://microblog.pub)
