@@ -20,7 +20,8 @@
   <div dir="auto" class="main-links hidden-xs">
     <a href="/whatsyunohost">عن واي يونوهوست</a> <span class="colored-bar">•</span> 
     <a href="https://forum.yunohost.org/c/announcement" target="_blank">آخر المستجدات</a> <span class="colored-bar">•</span> 
-    <a href="/docs_ar">المستندات</a>
+    <a href="/docs_ar">المستندات</a> <span class="colored-bar">•</span> 
+    <a href="https://donate.yunohost.org/">تبرع/a>
   </div>
 
 </div><!-- teasing-part -->
