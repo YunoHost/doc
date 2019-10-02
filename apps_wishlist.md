@@ -171,7 +171,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Simone](https://github.com/Kloadut/Simone)
 - [SocialHome](https://github.com/jaywink/socialhome) (Socialhome is best described as a federated personal profile with social networking functionality) (https://socialhome.network)
 - [Sonarr](https://sonarr.tv)
-- [smokeping](https://packages.debian.org/buster/smokeping)   
+- [smokeping](https://packages.debian.org/buster/smokeping)   / [github](https://github.com/oetiker/SmokePing)
 - [SpamGourmet](https://sourceforge.net/projects/spamgourmet/)
 - [Stackedit](https://stackedit.io)
 - [StandardNotes](https://standardnotes.org) (a clean, simple, E2E-encrypted notes app) -- specifically, the server-side [StandardFile](https://standardfile.org) portion.
