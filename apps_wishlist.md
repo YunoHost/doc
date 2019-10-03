@@ -112,6 +112,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [ShareLatex](https://www.sharelatex.com) / [github](https://github.com/overleaf/overleaf)
 - [Shleuder](https://schleuder.org/)
 - [SocialHome](https://github.com/jaywink/socialhome) (Socialhome is best described as a federated personal profile with social networking functionality) (https://socialhome.network)
+- [smokeping](https://packages.debian.org/buster/smokeping)   / [github](https://github.com/oetiker/SmokePing)
 - [Sonarr](https://sonarr.tv) / [github](https://github.com/Sonarr/Sonarr)
 - [Stackedit](https://stackedit.io) / [github](https://github.com/benweet/stackedit)
 - [StandardNotes](https://standardnotes.org) (a clean, simple, E2E-encrypted notes app) -- specifically, the server-side [StandardFile](https://standardfile.org) portion / [github](https://github.com/standardnotes/web)
