@@ -35,21 +35,6 @@ Noting the growing enthusiasm around YunoHost and around self-hosting in general
 The name **YunoHost** comes from the jargon "Y U NO Host". The [Internet meme](https://en.wikipedia.org/wiki/Internet_meme) should illustrate it:
 <div class="text-center"><img style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" src="/images/dude_yunohost.jpg"></div>
 
-Development
------------
-
-YunoHost is developed to be as **simple** and minimally-intrusive as possible, to retain compatibility with Debian. It merely proposes a package of automatic configurations for existing software, and is configurable via simple interfaces.
-
-YunoHost is **entirely** a free software project. The philosophy of self-hosting is, to us, incompatible with any other model of software development.
-
-Do not hesitate to visit the ["contribute" page](/contribute).
-
-Security
---------
-
-The utmost effort is made to keep YunoHost secure, and **communications encrypted**. You can read more about this subject on the related page:
-[https://yunohost.org/security](/security)
-
 What YunoHost is not?
 ---------------------
 
