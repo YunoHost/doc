@@ -9,15 +9,15 @@ Fonctionnalités
 ---------------
 
 - <img src="/images/icon-debian.png" width=32 style="margin-right:5px"> basé sur Debian ;
-- <img src="/images/icon-tools.png" width=32 style="margin-right:5px"> administration via une **gentille interface web** ;
-- <img src="/images/icon-package.png" width=32 style="margin-right:5px"> déployez facilement des **applications** ;
-- <img src="/images/icon-users.png" width=32 style="margin-right:5px"> gérez des **utilisateurs** <small>(gérés via LDAP)</small> ;
-- <img src="/images/icon-globe.png" width=32 style="margin-right:5px"> gérez des **domaines** ;
+- <img src="/images/icon-tools.png" width=32 style="margin-right:5px"> administration via une **interface web simple et claire** ;
+- <img src="/images/icon-package.png" width=32 style="margin-right:5px"> déployez des **applications en quelques clics** ;
+- <img src="/images/icon-users.png" width=32 style="margin-right:5px"> ajoutez des **utilisateurs** <small>(gérés via un annuaire LDAP)</small> ;
+- <img src="/images/icon-globe.png" width=32 style="margin-right:5px"> gérez des **noms de domaine** ;
 - <img src="/images/icon-medic.png" width=32 style="margin-right:5px"> créez et restaurez des **sauvegardes** ;
 - <img src="/images/icon-door.png" width=32 style="margin-right:5px"> connexion simultanée à toutes les apps via un **portail utilisateur** <small>(nginx, SSOwat)</small> ;
 - <img src="/images/icon-mail.png" width=32 style="margin-right:5px"> fourni avec un **serveur mail complet** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
 - <img src="/images/icon-messaging.png" width=32 style="margin-right:5px"> ... ainsi qu'un **serveur de messagerie instantanée** <small>(XMPP)</small> ;
-- <img src="/images/icon-lock.png" width=32 style="margin-right:5px"> ... un système de gestion de **certificats SSL** <small>(integration de Let's Encrypt)</small> ;
+- <img src="/images/icon-lock.png" width=32 style="margin-right:5px"> gères les **certificats SSL** <small>(basé sur Let's Encrypt)</small> ;
 - <img src="/images/icon-shield.png" width=32 style="margin-right:5px"> ... et des **systèmes de sécurité** <small>(fail2ban, yunohost-firewall)</small> ;
 
 Origine
@@ -39,10 +39,7 @@ Le but de YunoHost est de rendre accessibles au plus grand nombre l’installati
 
 Tous les efforts sont faits pour simplifier le déploiement sur le plus d’appareils possible et dans toutes les conditions (chez soi, sur son serveur dédié ou sur un VPS).
 
-Nom
----
-
-**YunoHost** vient de l’argot Internet anglais « Y U NO Host » signifiant approximativement « Pourquoi toi ne pas héberger ». Le [mème Internet](http://fr.wikipedia.org/wiki/M%C3%A8me_Internet) qui l’illustre est à peu près celui-ci :
+Le nom **YunoHost** vient de l’argot Internet anglais « Y U NO Host » signifiant approximativement « Pourquoi toi ne pas héberger ». Le [mème Internet](http://fr.wikipedia.org/wiki/M%C3%A8me_Internet) qui l’illustre est à peu près celui-ci :
 <div class="text-center"><img style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" src="/images/dude_yunohost.jpg"></div>
 
 Développement
