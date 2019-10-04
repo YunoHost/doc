@@ -30,7 +30,7 @@
 
 <div class="boring-part" markdown="1">
 
-  <h1>YunoHost <small>is an operating system designed for you to easily manage a server for your friends, association or enterprise. <a href="/whatsyunohost" style="font-size:0.6em;">Learn more</a></small></h1>
+  <h1><small>With</small> YunoHost<small>, you can easily manage a server for your friends, association or enterprise.</small> <a href="/whatsyunohost" style="font-size:0.6em;">Learn more</a></small></h1>
 
   <div class="home-panel">
     <img src="/images/home_panel.jpg" />
