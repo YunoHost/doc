@@ -3,10 +3,7 @@ What is YunoHost?
 
 <img src="/images/YunoHost_logo_vertical.png" width=400>
 
-Goal
-----
-
-YunoHost is a **server operating system** aiming to make [self-hosting](selfhosting) accessible to as many people as possible, without taking away from the quality and reliability of the software. YunoHost supports [several kinds of hardware](install). It is based on and fully compatible with [Debian GNU/Linux](https://debian.org).
+YunoHost is an **operating system** aiming to simplify as much as possibly the administration of a **server** and therefore democratize [self-hosting](selfhosting), while making sure it stays reliable, secure, ethical and lightweight. It is a free software project maintained exclusively by volunteers. Technically, it can be seen as a distribution based on [Debian GNU/Linux](https://debian.org) and can be installed on [many kinds of hardware](install).
 
 Features
 --------
