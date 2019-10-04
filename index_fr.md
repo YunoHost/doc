@@ -57,7 +57,7 @@
   <div class="row cf">
     <div class="col-md-4">
       <div class="feature-pic">
-        <img src="/images/home_manage.jpg" />
+        <img src="/images/webadmin_fr.jpg" />
       </div>
     </div>
     <div class="col-md-7">
