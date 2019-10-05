@@ -27,7 +27,7 @@
 
 <div class="boring-part" markdown="1">
 
-  <h1>YunoHost <small>est un outil qui vous permet d’installer et d’utiliser facilement votre propre serveur.</small></h1>
+  <h1><small>Avec</small> YunoHost<small>, gères facilement un serveur pour tes amis, ton asso, ton entreprise.</small> <a href="/whatsyunohost" style="font-size:0.6em;">En savoir plus</a></small></h1>
 
   <div class="home-panel">
     <img src="/images/home_panel.jpg" />
@@ -36,13 +36,13 @@
   <div class="call-to-action">
     <a class="btn btn-primary btn-lg" href="/try_fr">Essayer</a>
     <a class="btn btn-success btn-lg" href="/install_fr">Installer</a>
-    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-6-release-sortie-de-yunohost-3-6/8359">YunoHost v3.6</a></small></p>
+    <h2 style="margin-top: 0"><small><a href="https://forum.yunohost.org/c/announcement">Dernières nouvelles</a></small></h2>
   </div>
 
   <hr />
 
   <div class="row cf">
-    <div class="col-md-7">
+    <div class="col-md-7 text-right">
       <h1>Installez <small>votre serveur simplement, vous avez déjà tout ce qu’il faut à la maison</small></h1>
       <p><a href="/hardware_fr">Voir les prérequis</a></p>
     </div>
@@ -58,25 +58,25 @@
   <div class="row cf">
     <div class="col-md-4">
       <div class="feature-pic">
-        <img src="/images/home_enjoy.jpg" />
+        <img src="/images/webadmin_fr.jpg" />
       </div>
     </div>
-    <div class="col-md-7 text-right">
-      <h1>Profitez <small>de vos applications web, et fabriquez votre coin d’Internet</small></h1>
-      <p><br /><a href="/apps_fr">Liste des applications disponibles</a></p>
+    <div class="col-md-7">
+      <h1>Gérez <small>votre serveur depuis une interface web simple et propre</small></h1>
+      <p><br /><a href="/try_fr">Essayez l’interface d’administration</a></p>
     </div>
   </div>
 
   <hr />
 
   <div class="row cf">
-    <div class="col-md-7">
-      <h1>Gérez <small>votre serveur comme vous le voulez : via web, mobile ou ligne de commande</small></h1>
-      <p><br /><a href="/try_fr">Essayez l’interface d’administration</a></p>
+    <div class="col-md-7 text-right">
+      <h1>Construisez <small>votre petit bout d'Internet en ajoutant des applications en quelques clics</small></h1>
+      <p><br /><a href="/apps">Parcourir les applications disponibles</a></p>
     </div>
     <div class="col-md-4">
       <div class="feature-pic">
-        <img src="/images/home_manage.jpg" />
+        <img src="/images/home_enjoy.jpg" />
       </div>
     </div>
   </div>
@@ -84,32 +84,16 @@
   <hr />
 
   <div class="row cf">
-    <div class="col-md-4 button-list">
+    <div class="text-center">
+    <h1>Hey ! Nous sommes humains !<br />
+    <small>Si vous avez une question, un problème, ou que vous êtes tout simplement intéressé, passez dire « Bonjour » sur notre forum ou le chat!</small></h1>
 
-      <a class="btn btn-lg btn-block btn-primary" href="/whatsyunohost_fr">Qu’est-ce que YunoHost ?</a>
-      <a class="btn btn-lg btn-block btn-info" href="/docs_fr">Documentation</a>
-      <a class="btn btn-lg btn-block btn-success" href="/contribute_fr">Comment contribuer</a>
-      <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org" target="_blank">Forum</a>
-      <a class="btn btn-lg btn-block btn-default" href="chat_rooms_fr" target="_blank">Salons de discussions</a>
-      <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Dernières nouvelles</a>
-      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_fr">Support</a>
-
-    </div>
-    <div class="col-md-7 text-right">
-      <h1>Explorez <small>les possibilités de votre serveur, et apprenez pourquoi c’est important</small></h1>
-      <p><br /><a href="/docs_fr">Lire la documentation</a></p>
-    </div>
-  </div>
-
-  <hr />
-
-  <div class="text-center">
-    <h1>Hey ! Nous sommes humains !<br /><small> Si vous avez une question, un problème, ou que vous êtes tout simplement intéressé, passez dire « Bonjour » sur notre salon de discussion en cliquant sur le bouton en bas &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
-
-<p class="liberapay">
-      <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Donation button" title="Liberapay" /></a>
-    </p>
-    
+    <div class="col-md-4 col-md-offset-4 button-list">
+      <a class="btn btn-lg btn-block btn-info" href="/docs"><span class="glyphicon glyphicon-book"></span> Documentation</a>
+      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_fr"><span class="glyphicon glyphicon-comment"></span> Forum et chat</a>
+      <a class="btn btn-lg btn-block btn-success" href="/contribute"><span class="glyphicon glyphicon-heart"></span> Contribuer</a>
+      <a class="btn btn-lg btn-block btn-primary" href="https://donate.yunohost.org/" style="background-color: #ffd236; border-color: #ffd236;"><span class="glyphicon glyphicon-usd"></span> Faire un don</a>
+     </div>
   </div>
 
 </div><!-- boring-part -->
