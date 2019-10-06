@@ -9,6 +9,7 @@
       <span class="yolo 1" style="color: #FF3399;">Self-hosting for you, mom</span>
       <span class="yolo 2" style="color: #6699FF;">Haters gonna host</span>
       <span class="yolo 3" style="color: #66FF33;">I host myself, Yo!</span>
+With the last version of firefox mobile it's same than for desktop.
       <span class="yolo 4" style="color: #00FFCC;">Go host yourself!</span>
       <span class="yolo 5" style="color: #FF5050;">Get off of my cloud</span>
       <span class="yolo 6" style="color: #FF0066;">Host me I’m famous</span>
@@ -97,7 +98,7 @@
       <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_fr">Supporto</a>
     </div>
     <div class="col-md-7 text-right">
-      <h1>Esplora <small>cosa puoi fare con un server, e perchè è importante</small></h1>
+      <h1>Esplora <small>cosa puoi fare con un server, e perché è importante</small></h1>
       <p><br /><a href="/docs">Leggi la documentazione</a></p>
     </div>
   </div>
