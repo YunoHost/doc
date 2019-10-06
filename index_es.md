@@ -23,7 +23,8 @@
   <div class="main-links hidden-xs">
     <a href="/whatsyunohost">Acerca de</a> <span class="colored-bar">•</span> 
     <a href="https://forum.yunohost.org/c/announcement" target="_blank">Últimas noticias</a> <span class="colored-bar">•</span> 
-    <a href="/docs">Documentación</a>
+    <a href="/docs">Documentación</a> <span class="colored-bar">•</span> 
+    <a href="https://donate.yunohost.org/">Donar</a>
   </div>
 
 </div><!-- teasing-part -->
