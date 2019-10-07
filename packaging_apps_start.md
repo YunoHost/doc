@@ -18,10 +18,10 @@ This is what application packaging is, a series of scripts that automate the ins
 
 From the final user perspective, it is as simple as it can be:
 
-1) Pick an application
-1) Fill a form
-1) Wait
-1) Application is ready to use
+1. Pick an application
+2. Fill a form
+3. Wait
+4. Application is ready to use
 
 There is more to see backstage:
 First, when the application is selected, Yunohost will retrieve the corresponding package from github. eg: [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh).
