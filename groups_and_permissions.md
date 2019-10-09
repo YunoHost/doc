@@ -12,13 +12,13 @@ Using groups is however useful for semantic, for example if you host multiple gr
 
 ### List existing groups
 
-To list the currently existing groups : 
+To list the currently existing groups :
 
 ```bash
 $ yunohost user group list
-groups: 
-  all_users: 
-    members: 
+groups:
+  all_users:
+    members:
       - alice
       - bob
       - charlie
@@ -43,7 +43,7 @@ $ yunohost user group update yolo_crew --add charlie delphine
 
 (similarly, `--remove` can be used to remove members from a group)
 
-Now in the group list we should see : 
+Now in the group list we should see :
 
 ```bash
 $ yunohost user group list
@@ -79,14 +79,14 @@ To list permissions and corresponding accesses:
 
 ```bash
 $ yunohost user permission list
-permissions: 
-  mail.main: 
+permissions:
+  mail.main:
     allowed: all_users
-  wordpress.admin: 
-    allowed: 
-  wordpress.main: 
+  wordpress.admin:
+    allowed:
+  wordpress.main:
     allowed: all_users
-  xmpp.main: 
+  xmpp.main:
     allowed: all_users
 ```
 
@@ -108,7 +108,7 @@ Note that you can also allow a single user:
 $ yunohost user permission update wordpress.admin --add alice
 ```
 
-And now we may see that both the YoloCrew and Alice have access to the wordpress admin interface : 
+And now we may see that both the YoloCrew and Alice have access to the wordpress admin interface :
 
 ```bash
 $ yunohost user permission list
@@ -120,7 +120,7 @@ $ yunohost user permission list
   [...]
 ```
 
-Note that, for example, if we want to restrict permission for email so that only Bob, we should also remove `all_users` from the permission : 
+Note that, for example, if we want to restrict permission for email so that only Bob, we should also remove `all_users` from the permission :
 
 ```bash
 $ yunohost user permission update mail --remove all_users --add bob
@@ -129,17 +129,17 @@ $ yunohost user permission update mail --remove all_users --add bob
 ### Notes for apps packagers
 
 By default, installing an app creates the permission `$app.main` with `all_users` allowed by default.
-If you want to create a custom permission for your app (e.g. to restrict access to an admin interface) you may use the following helpers: 
+
+If you wish to make the application publicly available, instead of the old `unprotected_urls` mechanism, you should give access to the special groups `visitors`:
 
 ```bash
-ynh_permission_create --permission "admin" --urls "$domain$path_url/admin"
-ynh_permission_update --permission "admin" --add "$admin_user"
+ynh_permission_update --permission "main" --remove "all_users" --add "visitors"
 ```
 
-For now, inside the `change_url` script, you need to take care of updating the url corresponding to your permission:
+If you wish to create a custom permission for your app (e.g. to restrict access to an admin interface) you may use the following helpers:
 
 ```bash
-ynh_permission_urls --permission "admin" --remove "$old_domain$old_path_url/admin" --add "$domain$path_url/admin"
+ynh_permission_create --permission "admin" --url "/admin" --allowed "$admin_user"
 ```
 
-However, you don't need to take care of removing permissions or backing up/restoring them as it is handled by the core of YunoHost.
+You don't need to take care of removing permissions or backing up/restoring them as it is handled by the core of YunoHost.
