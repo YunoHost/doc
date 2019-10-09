@@ -35,9 +35,9 @@ The install script will handle the user answers to complete the process as you w
 
 If the user wants to delete the application, Yunohost will use the remove script from the "*scripts*" folder. It will handle the cleaning process for the user and delete all folders and configuration files that was previsouly installed by the application.
 
-### What is a script
+### What is a script?
 
-Scripts used during application packaging are simply a serie of bash commands.
+Scripts used during application packaging are simply a series of bash commands.
 
 ### ... bash command?
 
@@ -49,7 +49,7 @@ Package scripts are therefore a series of bash commands as if you had typed them
 
 To know what you can write in a bash script, you should start reading this [simple tutorial](https://debian-facile.org/doc:programmation:shells:debuter-avec-les-scripts-shell-bash) or this [more advanced one](http://aral.iut-rodez.fr/fr/sanchis/enseignement/bash/index.html).
 
-### Ok, I'm good ! Where do I start?
+### Ok, I'm good! Where do I start?
 
 Before starting the packaging process, you need to successfully install the application. The script will only perform what you instruct it to do.
 
