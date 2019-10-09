@@ -97,7 +97,7 @@
       <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_fr">Supporto</a>
     </div>
     <div class="col-md-7 text-right">
-      <h1>Esplora <small>cosa puoi fare con un server, e perchè è importante</small></h1>
+      <h1>Esplora <small>cosa puoi fare con un server, e perché è importante</small></h1>
       <p><br /><a href="/docs">Leggi la documentazione</a></p>
     </div>
   </div>
