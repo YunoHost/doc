@@ -12,8 +12,8 @@
 * Location Server: ~1000€
    * Forum: 14.4€/mois: 172.80€/ans
    * CI: 20€/mois (à confirmer): 240€/mois
-   * Mifration du serveur "Bearnaise" sur une nouvelle machine: 587.2€
-* Noms de domaines: ~150€
+   * Migration du serveur "Bearnaise" sur une nouvelle machine: 587.2€
+* Noms de domaine: ~150€
    * nohost.me: 11.99€HT/ans
    * ynh.fr: 6.99€HT/ans (doit être confirmer avec frju?)
    * noho.st: ~35€ TTC/ans
