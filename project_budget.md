@@ -19,7 +19,7 @@
    * noho.st: ~35€ TTC/year
    * YunoHost.org: 13.99€HT/year
    * YunoHost.com: 9.99€HT/year
-   * labriqueinter.net: 12.49€Ht/year
+   * labriqueinter.net: 12.49€HT/year
    * internetcu.be: 17.99€HT/year
 * Communication: ~200€
 * Travel (e.g. to go to conferences): ~500€
