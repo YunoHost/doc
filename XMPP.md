@@ -10,7 +10,7 @@ XMPP is an extensible protocol - this means users can configure "extensions" to 
 
 To use an XMPP account you need a username, which takes the format: `user@domain.tld`, and a password.
 
-With YunoHost, an XMPP account is created for a registered account automatically. The XMPP account can be used with the main email address and her YunoHost password.
+With YunoHost, an XMPP account is created for all YunoHost users automatically. The XMPP account credentials corresponds to the user's main email address and password.
 
 ## Connecting to your YunoHost XMPP account
 
