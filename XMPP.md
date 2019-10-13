@@ -24,7 +24,6 @@ You can connect to your YunoHost XMPP account in different ways.
 
 ### Desktop clients
 
-You can also use a desktop client such as :
 - [Pidgin](http://pidgin.im/) (multiplatform),
 - [Gajim](http://gajim.org/) (Linux, Windows),
 - [Dino](https://dino.im) (Linux),
