@@ -1,6 +1,6 @@
 # Chat, VoIP and social network with <img src="/images/XMPP_logo.png" width=100>
 
-YunoHost comes installed with an instant messaging server Metronome which implements the [XMPP protocol](https://en.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol)(previously known as Jabber), by default.
+YunoHost comes installed by default with an instant messaging server Metronome which implements the [XMPP protocol](https://en.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol) (previously known as Jabber).
 
 This protocol is already used by millions of people around the world - it is an open protocol. All applications based on XMPP are compatible with each other: when using an XMPP client, you can interact with anybody who has an XMPP account.
 
