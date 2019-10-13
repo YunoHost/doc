@@ -18,7 +18,6 @@ You can connect to your YunoHost XMPP account in different ways.
 
 ### Web clients
 
-There are several XMPP web clients:
 - [Movim](https://pod.movim.eu)
 - [Libervia/Salut à Toi](http://salut-a-toi.org/).
 
