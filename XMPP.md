@@ -33,7 +33,6 @@ You can connect to your YunoHost XMPP account in different ways.
 
 ### Mobile clients
 
-Or a mobile client such as:
 - [Xabber](http://xabber.com) (Android)
 - [Conversations](https://conversations.im/) (Android)
 - [Movim under Android](https://movim.eu)
