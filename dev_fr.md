@@ -7,9 +7,7 @@ processus de contribution.
 Si vous chercher quelque chose à implémenter ou un bug à réparer, le
 bug tracker est [ici](https://github.com/yunohost/issues/issues) !
 
-**Venez dire coucou sur le [salon de
-dev](xmpp:dev@conference.yunohost.org?join)** ! Si vous n'avez pas de client
-XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
+**Venez dire coucou sur le [salon de dev](/chat_rooms)** !
 
 ### Mettre en place un environnement de développement
 
@@ -23,16 +21,16 @@ XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
 
 - **Implémentez et testez votre fonctionnalité**. Suivant ce sur quoi vous
   voulez travailler :
-   - **Cœur Python/ligne de comande** : allez dans `/vagrant/yunohost/`
-   - **Interface d'administration web** : allez dans `/vagrant/yunohost-admin/`
+   - **Cœur Python/ligne de comande** : allez dans `/ynh-dev/yunohost/`
+   - **Interface d'administration web** : allez dans `/ynh-dev/yunohost-admin/`
    - Vous pouvez aussi travailler sur les autres projets liés sur lesquels
      s'appuie YunoHost (SSOwat, moulinette) de façon similaire.
 
 ### Travailler sur le cœur Python / ligne de commande
 
-- Allez dans `/vagrant/yunohost/`.
+- Allez dans `/ynh-dev/yunohost/`.
 
-- Exécutez `/vagrant/ynh-dev use-git yunohost`.
+- Exécutez `cd /ynh-dev && ./ynh-dev use-git yunohost`.
 
 - Le fichier actionsmap (`data/actionsmap/yunohost.yml`) définit les différentes
   catégories, actions et arguments de la ligne de commande YunoHost. Choisissez
@@ -49,7 +47,7 @@ XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
 
 ##### Helpers / style de code
 
-- Pour gérer les exceptions, il existe un type `MoulinetteError()`
+- Pour gérer les exceptions, il existe un type `YunohostError()`
 
 - Pour aider avec l'internationalisation des messages, utilisez `m18n.n('some-message-id')`
   et mettez le message correspondant dans `locales/en.json`. Vous pouvez aussi
@@ -62,17 +60,11 @@ XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
 
 - Mettre un `_` devant les noms des fonctions "privées".
 
-##### N'oubliez pas
-
-- (Peut-être plus nécessaire) À chaque fois que vous modifiez l'actionsmap, il
-  faut forcer le rafraîchissement du cache avec :
-  `rm /var/cache/moulinette/actionsmap/yunohost.pkl`
-
 ### Travailler sur l'interface d'administration web
 
-- Allez dans `/vagrant/yunohost-admin/src/`.
+- Allez dans `/ynh-dev/yunohost-admin/src/`.
 
-- Exécutez `/vagrant/ynh-dev use-git yunohost-admin`. Ceci lance gulp, de sorte 
+- Exécutez `cd /ynh-dev && ./ynh-dev use-git yunohost-admin`. Ceci lance gulp, de sorte 
   qu'à chaque fois que vous modifiez les sources, il recompilera le code
   (js) et vous pourrez voir les changements dans le navigateur web (Ctrl+F5).
   Pour stopper la commande, faites simplement Ctrl+C.
@@ -121,14 +113,14 @@ XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
 - Forkez le dépòt correspondant sur Github, et commitez vos changements dans
   une nouvelle branche, Il est recommandé de nommer la branche avec la
   convention :
-  - Pour une nouvelle fonctionnalité ou amélioration : `enh-TICKETREDMINE-description-fonctionnalité`
+  - Pour une nouvelle fonctionnalité ou amélioration : `enh-ISSUENUMBER-description-fonctionnalité`
   - Pour une correction de bug : `fix-REDMINETICKET-description-correctif`
-  - `TICKETREDMINE` est optionnel et correspond au numéro du ticket sur RedMine
+  - `ISSUENUMBER` est optionnel et correspond au numéro du ticket sur le bug tracker
 
 - Une fois prêt, ouvrez une Pull Request (PR) sur Github. De préférence, inclure
   `[fix]` ou `[enh]` au début du titre de la PR.
 
 - Après relecture, test et validation par les autres contributeurs, votre
-  branche sera mergée dans `testing` (?) !
+  branche sera mergée dans `unstable` !
 
 

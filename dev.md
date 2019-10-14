@@ -7,7 +7,7 @@ contribution process.
 If you're looking for stuff to implement or fix, the bug-tracker is 
 [here](https://github.com/YunoHost/issues/issues) !
 
-**Come say hi to us in the [dev chatroom](xmpp:dev@conference.yunohost.org?join)** ! If you don't have an XMPP client, you can join using the widget at the bottom right of this page.
+**Come say hi to us in the [dev chatroom](/chat_rooms)** !
 
 ### Setting up a development environment
 
@@ -19,16 +19,16 @@ If you're looking for stuff to implement or fix, the bug-tracker is
 
 - **Implement and test your feature**. Depending on what you want to develop, you
   will want to :
-   - **Python/CLI core** : work in `/vagrant/yunohost/`
-   - **Web administration interface** : work in `/vagrant/yunohost-admin/`
+   - **Python/CLI core** : work in `/ynh-dev/yunohost/`
+   - **Web administration interface** : work in `/ynh-dev/yunohost-admin/`
    - You can also work on the other projects on which YunoHost is built 
      (SSOwat, moulinette) in similar ways
 
 ### Working on the YunoHost Python/CLI core
 
-- Work in `/vagrant/yunohost/`.
+- Work in `/ynh-dev/yunohost/`.
 
-- Run `/vagrant/ynh-dev use-git yunohost`.
+- Run `cd /ynh_dev/ && ./ynh-dev use-git yunohost`.
 
 - The actionsmap file (`data/actionsmap/yunohost.yml`) defines the various
   categories, actions and arguments of the yunohost CLI. Define how you want
@@ -45,7 +45,7 @@ If you're looking for stuff to implement or fix, the bug-tracker is
 
 ##### Helpers / coding style
 
-- To handle exceptions, you should raise some `MoulinetteError()`
+- To handle exceptions, you should raise some `YunohostError()`
 
 - To help with internationalizing the messages, use `m18n.n('some-message-id')`
   and put your string in `locales/en.json`. You can also put arguments and use
@@ -57,17 +57,11 @@ If you're looking for stuff to implement or fix, the bug-tracker is
 
 - Name of "private" functions should start with a `_`
 
-##### Don't forget
-
-- (Might not be necessary anymore) Each time you edit the actionsmap, you should
-  force the refresh of the cache with `rm
-  /var/cache/moulinette/actionsmap/yunohost.pkl`
-
 ### Working on the YunoHost web administration interface
 
-- Work in `/vagrant/yunohost-admin/src/`.
+- Work in `/ynh-dev/yunohost-admin/src/`.
 
-- Run `/vagrant/ynh-dev use-git yunohost-admin`. It launches gulp, such as each 
+- Run `cd /ynh-dev && ./ynh-dev use-git yunohost-admin`. It launches gulp, such as each 
   time you modify sources, it recompiles the code and you can use it by 
   refreshing (Ctrl+F5) your web administration. To stop the command, just do Ctrl+C.
 
@@ -111,14 +105,12 @@ If you're looking for stuff to implement or fix, the bug-tracker is
 
 - Fork the relevant repo on Github, and commit stuff to a new branch. We recommend
   to name the branch with the following convention :
-  - For an enhancement or new feature : `enh-REDMINETICKET-name-of-feature`
-  - For a bugfix `fix-REDMINETICKET-description-of-fix`
-  - `REDMINETICKET` is optional and is the id of a corresponding ticket on RedMine.
+  - For an enhancement or new feature : `enh-ISSUENUMBER-name-of-feature`
+  - For a bugfix `fix-ISSUENUMBER-description-of-fix`
+  - `ISSUENUMBER` is optional and is the id of a corresponding ticket on the bug tracker.
 
 - Once you're ready, open a Pull Request (PR) on Github. Please include `[fix]` or 
   `[enh]` at the beginning of the title of your PR.
 
 - After reviewing, testing and validation by other contributors, your branch
-should be merged in `testing` (?) !
-
-
+should be merged in `unstable` !

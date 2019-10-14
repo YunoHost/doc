@@ -69,12 +69,13 @@ Esta página enumera varios tipos de instalaciones, clasificados por categorías
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/vagrant_es"><img src="/images/vagrant.png" height=150 style="vertical-align:bottom"><b><p>Con Vagrant</p></b></a>
-</div>
-
-<div class="col col-md-3 text-center">
 <a href="/install_on_debian_es"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
 <b><p>Sur Debian 9/Stretch</p></b></a>
 </div>
+
+<div class="col col-md-3 text-center">
+<a href="/dev"><img src="/images/lxc.png" height=150 style="vertical-align:bottom"><b><p>Dev environment in LXD/LXC</p></b></a>
+</div>
+
 
 </div>
