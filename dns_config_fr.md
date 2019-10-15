@@ -13,7 +13,7 @@ la configuration devrait être faite automatiquement. Si vous utilisez votre pro
 domaine via l'interface de votre registrar.
 
 ## Configuration DNS recommandée
-NB : les exemples utilisent ici le texte `votre.domain.tld`, à remplacer par votre domaine (par exemple `www.yunohost.org`).
+_NB : les exemples utilisent ici le texte `votre.domaine.tld`, à remplacer par votre propre domaine (par exemple `www.yunohost.org`)._
 
 YunoHost fournit une configuration DNS recommandée, accessible via :
 - la webadmin, dans Domaines > votre.domain.tld > Configuration DNS ;
