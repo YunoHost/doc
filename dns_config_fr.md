@@ -13,6 +13,7 @@ la configuration devrait être faite automatiquement. Si vous utilisez votre pro
 domaine via l'interface de votre registrar.
 
 ## Configuration DNS recommandée
+NB : les exemples utilisent ici le texte `votre.domain.tld`, à remplacer par votre domaine (par exemple `www.yunohost.org`).
 
 YunoHost fournit une configuration DNS recommandée, accessible via :
 - la webadmin, dans Domaines > votre.domain.tld > Configuration DNS ;
@@ -74,9 +75,9 @@ suivante :
 
 #### Quelques notes à propos de cette table
 
-- Tous ces enregistrements ne sont pas nécessaires. Pour une installation minimale, seuls les enregistrements en gras sont nécessaires.
+- Tous ces enregistrements ne sont pas nécessaires. Pour une installation minimale, seuls les enregistrements en gras sont nécessaires ;
 - Le point à la fin de `votre.domaine.tld.` est important ;) ;
 - `@` corresponds à `votre.domaine.tld`, et par ex. `muc` corresponds à `muc.votre.domaine.tld` ;
-- Les valeurs montrées sont des valeurs d'exemple ! Référez-vous à la configuration générée chez vous pour savoir quelles valeurs utiliser.
+- Les valeurs montrées ici sont des valeurs d'exemple ! Référez-vous à la configuration générée chez vous pour savoir quelles valeurs utiliser ;
 - Nous recommandons un [TTL](https://fr.wikipedia.org/wiki/Time_to_Live#Le_Time_to_Live_dans_le_DNS) de 3600 (1 heure). Mais vous pouvez utiliser une autre valeur si vous savez ce que vous faîtes ;
 - Ne mettez pas d'enregistrement IPv6 si vous n'êtes pas certains que l'IPv6 fonctionne sur votre serveur ! Vous aurez des problèmes avec Let's Encrypt si ce n'est pas le cas.
