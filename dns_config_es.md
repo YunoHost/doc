@@ -6,6 +6,7 @@ Si utilizas un [dominio automático](/dns_nohost_me_es) provecho por el Proyecto
 
 
 ## Configuración DNS recomendada
+_Nota: los ejemplos utilizan el marcador `tu.dominio.tld`, debe ser reemplazado por su propio dominio, como `www.yunohost.org`._
 
 YunoHost provee una configuración DNS recomendada, accesible vía :
 - la webadmin, en Dominios > tu.dominio.tld > Configuración DNS ;
