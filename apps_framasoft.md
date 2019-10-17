@@ -26,7 +26,7 @@
 | Framatalk      | Jitsi Meet          | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/jitsi_ynh)           | ![](https://dash.yunohost.org/integration/jitsi.svg) |
 | Framalistes    | Mailman             | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/mailman_ynh)         | ![](https://dash.yunohost.org/integration/mailman.svg) |
 |                | Sympa               | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/alexAubin/sympa_ynh)               | ![](https://dash.yunohost.org/integration/sympa.svg) |
-| Framindmap     | Wisemapping         | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/mailman_ynh)         | ![](https://dash.yunohost.org/integration/wisemapping.svg) |
+| Framindmap     | Wisemapping         | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/wisemapping_ynh)         | ![](https://dash.yunohost.org/integration/wisemapping.svg) |
 | Framavectoriel | SVG-Edit            | Non packagé                                          | |
 | Framacarte     | uMap                | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/umap_ynh)            |![](https://dash.yunohost.org/integration/umap.svg) |
 | Framaforms     | Framaforms          | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/framaforms_ynh)      |![](https://dash.yunohost.org/integration/framaforms.svg) |
