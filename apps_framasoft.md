@@ -32,7 +32,7 @@
 | Framaforms     | Framaforms          | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/framaforms_ynh)      |![](https://dash.yunohost.org/integration/framaforms.svg) |
 | Framaestro     | Framaestro          | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/framaestro_ynh)      |![](https://dash.yunohost.org/integration/framaestro.svg) |
 | Framavox       | Loomio              | Non packagé                                          | |
-| Framagenda     | (Agenda Nextcloud)  | Non packagé                                          | |
+| Framagenda     | (Agenda Nextcloud)  | c.f. Nextcloud                                          | |
 | Framagames     | Framagames          | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/framagames_ynh)      |![](https://dash.yunohost.org/integration/framagames.svg) |
 | Framateam      | Mattermost          | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/mattermost_ynh)      |![](https://dash.yunohost.org/integration/mattermost.svg) |
 | MyFrama        | Shaarli             | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/shaarli_ynh)      |![](https://dash.yunohost.org/integration/shaarli.svg) |
