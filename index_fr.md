@@ -72,7 +72,7 @@
   <div class="row cf">
     <div class="col-md-7 text-right">
       <h1>Construisez <small>votre petit bout d'Internet en ajoutant des applications en quelques clics</small></h1>
-      <p><br /><a href="/apps">Parcourir les applications disponibles</a></p>
+      <p><br /><a href="/apps">Parcourir le catalogue d'applications</a></p>
     </div>
     <div class="col-md-4">
       <div class="feature-pic">

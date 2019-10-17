@@ -75,7 +75,7 @@
   <div class="row cf">
     <div class="col-md-7 text-right">
       <h1>Install <small>applications to build your little corner of Internet</small></h1>
-      <p><br /><a href="/apps">Browse available apps</a></p>
+      <p><br /><a href="/apps">Browse the app catalog</a></p>
     </div>
     <div class="col-md-4">
       <div class="feature-pic">
