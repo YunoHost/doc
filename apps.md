@@ -1,4 +1,4 @@
-# Apps
+# Application catalog
 
 <span class="javascriptDisclaimer">
 This page requires Javascript enabled to display properly :s.
@@ -6,34 +6,49 @@ This page requires Javascript enabled to display properly :s.
 <br/>
 </span>
 
+<!--
+Search bar
+-->
+
 <div class="input-group">
-    <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-search"></span></span>
-    <input type="text" id="filter-app-cards" class="form-control"  placeholder="Search for apps..." aria-describedby="basic-addon1"/>
+    <span id="basic-addon1" class="input-group-addon" ><span class="glyphicon glyphicon-search"></span></span>
+    <input id="filter-app-cards" type="text" class="form-control"  placeholder="Search for apps..." aria-describedby="basic-addon1"/>
     <div class="input-group-btn">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span id="app-cards-list-filter-text">Only official apps</span> <span class="caret"></span>
+            <span id="current-quality-filter" data-filter="decent">Only decent quality apps</span> <span class="caret"></span>
         </button>
+
         <ul class="dropdown-menu">
-            <li><a href="#" id="app-cards-list-validated">Only official apps</a></li>
-            <li><a href="#" id="app-cards-list-working">Only working apps</a></li>
-            <li><a href="#" id="app-cards-list-working-inprogress">In progress/not working apps</a></li>
-            <li><a href="#" id="app-cards-list-all-apps">All apps</a></li>
+            <li><a href="#" data-quality-filter="high">Only high quality apps</a></li>
+            <li><a href="#" data-quality-filter="decent">Only decent quality apps</a></li>
+            <li><a href="#" data-quality-filter="working">Only working apps</a></li>
+            <li><a href="#" data-quality-filter="none">All apps</a></li>
         </ul>
     </div>
 </div>
 <br />
-<div id="community-app-list-warrant" class="alert alert-danger">
-    <p>Only apps tagged <span class="label label-success label-as-badge">validated</span> are officially supported by the package team. </p>
 
-    <p>Apps tagged <span class="label label-success label-as-badge">working</span>, <span class="label label-warning label-as-badge">inprogress</span>, <span class="label label-danger label-as-badge">notworking</span> are from community repository, you can test and use them **at your own risk**.</p>
+<!--
+Disclaimers
+-->
 
-    <p>Important: it's the application maintaineur that qualify his application as working, not the YunoHost core team. Install it at your own risks. We won't provide support for it.</p>
+<div class="alert alert-info">The application packaging team will welcome your feedback! If you install an app and find issues or possible improvements, do not hesitate to contribute by reporting your issues directly on the code repositories.</div>
+
+<div id="bad-quality-apps-disclaimer" class="alert alert-warning">
+    Applications with a level below or equal to 4 may be working, but they might be not well-integrated with YunoHost, or they do not respect the recommended packaging practices.
 </div>
-<div class="alert alert-info">The packagers will appreciate your remarks. If you install them and find issues, or ideas for improvement, do not hesitate to file issues directly on their repositories project page.</div>
 
-<div class="app-cards-list" id="app-cards-list"></div>
+<div id="broken-apps-disclaimer" class="alert alert-danger">
+    Applications with level 0, or flagged as <span class="label label-warning label-as-badge">inprogress</span>, <span class="label label-danger label-as-badge">notworking</span> are still in development or are know to not be working. **Do not install them** in a production environment!
+</div>
 
-<div class="alert alert-warning">If you don't find the app you are searching for, you can search it in community app repository (working, inprogress and not working apps) or fill the <a href="/apps_wishlist_en">apps wishlist</a>.</div>
+<div id="app-cards-list" class="app-cards-list"></div>
+
+<div class="alert alert-warning">If you don't find the app you are looking for, you can try to look for a appname_ynh repository on Github or on the internet, or add it to the <a href="/apps_wishlist_en">apps wishlist</a>.</div>
+
+<!--
+Custom CSS for this page
+-->
 
 <style>
 /*=================================================
@@ -64,6 +79,7 @@ This page requires Javascript enabled to display properly :s.
     min-height: 1px;
     margin-right: 10px;
     margin-left: 10px;
+    border-radius: 3px;
 }
 /*===============================================*/
 
@@ -75,12 +91,17 @@ This page requires Javascript enabled to display properly :s.
     margin-bottom:5px;
     font-size:1.2em;
 }
-.app-card .category {
+.app-card .app-badges {
     height:35px;
 }
-.app-card .category .label, .app-card-date-maintainer {
-    font-size:0.7em;
+.app-card .app-badges .label, .app-card-date-maintainer {
+    font-size:0.6em;
 }
+
+.label-epic {
+    background-color: darkorchid;
+}
+
 .app-card-date-maintainer {
     text-align:right;
     max-height: 18px;
@@ -108,6 +129,8 @@ This page requires Javascript enabled to display properly :s.
 }
 .app-card > .btn-group > .btn{
     border-bottom:0;
+    font-size: 0.9em;
+    line-height: 1.58;
 }
 .app-card > .btn-group > .btn:first-child {
     border-left:0;
@@ -122,12 +145,16 @@ This page requires Javascript enabled to display properly :s.
 /*===============================================*/
 </style>
 
+<!--
+App card template
+-->
+
 <script type="text/template" id="app-template2">
-    <div class="app-card_{app_id} app-card panel panel-default">
+    <div class="app-card_{app_id} app-card panel panel-default" data-quality="{app_quality}">
 
         <div class="panel-body">
             <h3>{app_name}</h3>
-            <div class="category"></div>
+            <div class="app-badges"></div>
 
             <div class="app-card-desc">{app_description}</div>
         </div>
@@ -138,13 +165,18 @@ This page requires Javascript enabled to display properly :s.
         <div class="btn-group" role="group">
             <a href="{app_git}" target="_BLANK" type="button" class="btn btn-default col-sm-4"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Code</a>
             <a href="#/app_{app_id}_en" target="_BLANK" type="button" class="btn btn-default col-sm-4"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Doc</a>
-            <a href="https://install-app.yunohost.org/?app={app_id}" target="_BLANK" type="button" class="btn btn-{app_install_bootstrap} col-sm-4 active"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Install</a>
+            <a href="https://install-app.yunohost.org/?app={app_id}" target="_BLANK" type="button" class="btn btn-{app_install_css_style} col-sm-4 active"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Install</a>
         </div>
 
     </div>
 </script>
 
+<!--
+Javascript helpers
+-->
+
 <script>
+
 function timeConverter(UNIX_timestamp) {
     var a = new Date(UNIX_timestamp*1000);
     var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -159,19 +191,36 @@ function timeConverter(UNIX_timestamp) {
     return time;
 }
 
+
 $(document).ready(function () {
-    // Hide warrant about community list
-    $('#community-app-list-warrant').hide();
-    var filters = ["validated"];
+
+    // Hide warrant about states when we're using the default filter
+    $('#state-disclaimer').hide();
+    var quality_filters = "decent";
 
     function filter(){
-        var filters_text = filters.map(function(el) { return '.app-' + el;}).join(', ');
-        var valThis = $('#filter-app-cards').val().toLowerCase();
-        $('.app-card').each(function(){
-            var text = $(this).find('h3').text().toLowerCase();
-            (text.indexOf(valThis) >= 0 && $(this).find(filters_text).length > 0) ? $(this).show() : $(this).hide();
+
+        var current_quality_filter = $('#current-quality-filter').data("filter");
+        var user_input_in_search_field = $('#filter-app-cards').val().toLowerCase();
+
+        $('.app-card').each(function() {
+            // This is where we actually define how apps are filtered:
+            // we look for the name of the app (h3) and try to find the user input
+            // + we check this app match the current quality filter
+            var app_name = $(this).find('h3').text().toLowerCase();
+            if (app_name.indexOf(user_input_in_search_field) >= 0 && $(this).data("quality").indexOf(current_quality_filter) >= 0)
+            {
+                $(this).show();
+            }
+            else
+            {
+                $(this).hide();
+            }
         });
-        (filters.indexOf("working") == -1) ?$('#community-app-list-warrant').hide():$('#community-app-list-warrant').show();
+
+        // Display or hide the disclaimers depending on the current filter...
+        ((current_quality_filter == "working") || (current_quality_filter == "none")) ? $("#bad-quality-apps-disclaimer").show() : $("#bad-quality-apps-disclaimer").hide();
+        ((current_quality_filter == "none")) ? $("#broken-apps-disclaimer").show() : $("#broken-apps-disclaimer").hide();
     }
 
     //=================================================
@@ -179,81 +228,87 @@ $(document).ready(function () {
     //=================================================
     $('#filter-app-cards').keyup(filter);
 
-    $('#app-cards-list-validated').click(function(){
-        filters = ["validated"];
-        $('#app-cards-list-filter-text').text($('#app-cards-list-validated').text());
+    $('a[data-quality-filter]').on("click", function(){
+        $('#current-quality-filter').text($(this).text());
+        $('#current-quality-filter').data("filter", $(this).data("quality-filter"));
         filter();
     });
-
-    $('#app-cards-list-working').click(function(){
-        filters = ["validated", "working"];
-        $('#app-cards-list-filter-text').text($('#app-cards-list-working').text());
-        filter();
-    });
-
-    $('#app-cards-list-working-inprogress').click(function(){
-        filters = ["notworking", "inprogress"];
-        $('#app-cards-list-filter-text').text($('#app-cards-list-working-inprogress').text());
-        filter();
-    });
-
-    $('#app-cards-list-all-apps').click(function(){
-        filters = ["validated", "working", "inprogress", "notworking"];
-        $('#app-cards-list-filter-text').text($('#app-cards-list-all-apps').text());
-        filter();
-    });
-    //=================================================
 
 
     //=================================================
     // Upload apps lists
     //=================================================
-    var app_list={};
-    $.when(
-        $.getJSON('https://app.yunohost.org/community.json', {}, function(community) {
-            app_list.community = $.map(community, function(el) { return el; });
-        }),
-        $.getJSON('https://app.yunohost.org/official.json', {}, function(official) {
-            app_list.official = $.map(official, function(el) { return el; });
-        })
-    ).then(function() {
-        app_list = app_list.official.concat(app_list.community);
+    var catalog = undefined;
 
-        // Sort alpha
-        app_list.sort(function(a, b){
-            a_state = (a.state == "validated")?4:(a.state == "working")?3:(a.state == "inprogress")?2:1;
-            b_state = (b.state == "validated")?4:(b.state == "working")?3:(b.state == "inprogress")?2:1;
+    // Fetch application catalog
+
+    $.getJSON('https://app.yunohost.org/apps.json', {}, function(data) {
+
+        catalog = $.map(data, function(el) { return el; });
+
+        // Clarify high quality state, and level if undefined or inprogress or notworking...
+
+        $.each(catalog, function(k, infos) {
+            if ((infos.level === undefined) || (infos.state === "inprogress") || (infos.state === "notworking")) {
+                infos.level = null;
+            }
+            if ((infos.high_quality === true) && (infos.level === 8)) {
+                infos.state = "high quality";
+            }
+        });
+
+        // Sort apps according to their state and level...
+
+        catalog.sort(function(a, b){
+            a_state = (a.state === "high quality")?4:(a.level > 4)?3:(a.state > 0)?2:1;
+            b_state = (b.state === "high quality")?4:(b.level > 4)?3:(b.state > 0)?2:1;
             if (a_state < b_state || a_state == b_state && a.level < b.level || a_state == b_state && a.level == b.level && a.manifest.id > b.manifest.id) {return 1;}
             else if (a.manifest.id == b.manifest.id) {return 0;}
             return -1;
         });
-        $.each(app_list, function(k, infos) {
+
+        // Add the card for each app
+
+        $.each(catalog, function(k, infos) {
+
             app_id = infos.manifest.id;
-            app_install_bootstrap = "success";
-            if (infos.state === "validated") {
-                app_state_bootstrap = "success";
-            } else if (infos.state === "working") {
-                app_state_bootstrap = "success";
-            } else if (infos.state === "inprogress") {
-                app_state_bootstrap = "warning";
-                app_install_bootstrap = "danger";
-            } else if (infos.state === "notworking") {
-                app_state_bootstrap = "danger";
-                app_install_bootstrap = "danger";
-            }
-            if (infos.level == null ) {
-                infos.level = '?';
-            }
-            if (infos.level == 0 ) {
-                app_level_bootstrap = "danger";
-                app_install_bootstrap = "danger";
-            } else if (infos.level <= 2) {
-                app_level_bootstrap = "warning";
-                app_install_bootstrap = "danger";
-            } else if (infos.level >= 7) {
-                app_level_bootstrap = "success";
+
+            // Define what style to use for state, level and install button
+            // according to the app quality ....
+
+            if (infos.state === "high quality") {
+                app_quality = "high,decent,working,none";
+                app_state_css_style = "epic";
+                app_install_css_style = "success";
+                app_level_css_style = "epic";
+            } else if (infos.level > 4) {
+                app_quality = "decent,working,none";
+                app_state_css_style = "success";
+                app_install_css_style = "success";
+                app_level_css_style = "success";
+            } else if (infos.level > 0) {
+                app_quality = "working,none";
+                app_state_css_style = "success";
+                app_install_css_style = "warning";
+                app_level_css_style = "warning";
             } else {
-                app_level_bootstrap = "default";
+                app_quality = "none";
+                if (infos.state === "working") {
+                    app_state_css_style = "success";
+                }
+                else if (infos.state === "inprogress") {
+                    app_state_css_style = "warning";
+                }
+                else {
+                    app_state_css_style = "danger";
+                }
+                app_install_css_style = "danger";
+                app_level_css_style = "danger";
+            }
+
+            // If level is null, we wanna display '?'
+            if (infos.level == null) {
+                infos.level = '?';
             }
 
             // Fill the template
@@ -264,10 +319,12 @@ $(document).ready(function () {
              .replace(/{app_git}/g, infos.git.url)
              .replace('{app_branch}', infos.git.branch)
              .replace('{app_level}', infos.level)
+             .replace('{app_quality}', app_quality)
              .replace('{app_update}', timeConverter(infos.lastUpdate))
-             .replace('{app_state_bootstrap}', app_state_bootstrap)
-             .replace('{app_install_bootstrap}', app_install_bootstrap);
+             .replace('{app_state_css_style}', app_state_css_style)
+             .replace('{app_install_css_style}', app_install_css_style);
 
+            // Handle the maintainer info
             if (infos.maintained == false)
             {
                html = html
@@ -275,34 +332,34 @@ $(document).ready(function () {
                  .replace('{maintained_icon}', 'warning-sign')
                  .replace('{app_maintainer}', "Unmaintained")
                  .replace('{maintained_help}', "This package is currently unmaintained. Feel free to propose yourself as the new maintainer !");
-            } else {
-            if (infos.manifest.developer) {
+            }
+            else {
                 html = html
                  .replace('{maintained_state}', 'maintained')
                  .replace('{maintained_icon}', 'user')
-                 .replace('{app_maintainer}', infos.manifest.developer.name)
                  .replace('{maintained_help}', "Current maintainer of this package");
-            }
-            if (infos.manifest.maintainer) {
-                html = html
-                 .replace('{maintained_state}', 'maintained')
-                 .replace('{maintained_icon}', 'user')
-                 .replace('{app_maintainer}', infos.manifest.maintainer.name)
-                 .replace('{maintained_help}', "Current maintainer of this package");;
-            }
-            }
 
+                if ((infos.manifest.developer) && (infos.manifest.developer.name)) {
+                    html = html.replace('{app_maintainer}', infos.manifest.developer.name);
+                }
+                else if ((infos.manifest.maintainer) && (infos.manifest.maintainer.name)) {
+                    html = html.replace('{app_maintainer}', infos.manifest.maintainer.name);
+                }
+                else {
+                    html = html.replace('{app_maintainer}', "???");
+                }
+            }
 
             // Fill the template
             $('#app-cards-list').append(html);
             $('.app-card_'+ app_id).attr('id', 'app-card_'+ app_id);
-            $('.app-card_'+ app_id + ' .category').append(' <span class="label label-'+app_level_bootstrap+' label-as-badge">'+infos.level+'</span>');
-            $('.app-card_'+ app_id + ' .category').append(' <span class="label label-'+app_state_bootstrap+' label-as-badge app-'+infos.state+'">'+infos.state+'</span>');
-            if (infos.manifest.license && infos.manifest.license != 'free') {
-                $('.app-card_'+ app_id + ' .category').append(' <span class="label label-default">'+infos.manifest.license+'</span>');
+            $('.app-card_'+ app_id + ' .app-badges').append(' <span class="label label-'+app_state_css_style+' label-as-badge app-'+infos.state+'">'+infos.state+'</span>');
+            if ((infos.state === "high quality") || (infos.state === "working")) {
+                $('.app-card_'+ app_id + ' .app-badges').append(' <span class="label label-'+app_level_css_style+' label-as-badge">level '+infos.level+'</span>');
             }
 
         });
+
         filter();
     });
     //=================================================
