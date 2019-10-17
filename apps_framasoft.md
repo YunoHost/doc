@@ -11,7 +11,7 @@
 | Framapic       | Lutim               | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/lutim_ynh)           | ![](https://dash.yunohost.org/integration/lutim.svg) |
 | Framabin       | PrivateBin          | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-apps/zerobin_ynh)         | ![](https://dash.yunohost.org/integration/zerobin.svg) |
 | Frama.link     | Lstu                | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/lstu_ynh)            | ![](https://dash.yunohost.org/integration/lstu.svg) |
-| Framatube      | Mediadrop           | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/mediadrop_ynh)       | ![](https://dash.yunohost.org/integration/mediadrop.svg) |
+| Framatube      | Peertube            | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/peertube_ynh)        | ![](https://dash.yunohost.org/integration/peertube.svg) |
 | Framanews      | TinyTinyRSS         | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-apps/ttrss_ynh)           | ![](https://dash.yunohost.org/integration/ttrss.svg) |
 | Framabee       | Searx               | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/searx_ynh)           | ![](https://dash.yunohost.org/integration/searx.svg) |
 | Framabag       | Wallabag            | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/wallabag_ynh)        | ![](https://dash.yunohost.org/integration/wallabag.svg) |
@@ -26,15 +26,20 @@
 | Framatalk      | Jitsi Meet          | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/jitsi_ynh)           | ![](https://dash.yunohost.org/integration/jitsi.svg) |
 | Framalistes    | Mailman             | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/mailman_ynh)         | ![](https://dash.yunohost.org/integration/mailman.svg) |
 |                | Sympa               | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/alexAubin/sympa_ynh)               | ![](https://dash.yunohost.org/integration/sympa.svg) |
-| Framindmap     | Wisemapping         | Non packagé                                          | |
+| Framindmap     | Wisemapping         | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/mailman_ynh)         | ![](https://dash.yunohost.org/integration/wisemapping.svg) |
 | Framavectoriel | SVG-Edit            | Non packagé                                          | |
-| Framacarte     | uMap                | Non packagé                                          | |
-| Framaforms     | WebForms?           | Non packagé                                          | |
-| Framaestro     | Framaestro          | Non packagé                                          | |
-| Framavox       | ?                   | Non packagé                                          | |
+| Framacarte     | uMap                | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/umap_ynh)            |![](https://dash.yunohost.org/integration/umap.svg) |
+| Framaforms     | Framaforms          | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/framaforms_ynh)      |![](https://dash.yunohost.org/integration/framaforms.svg) |
+| Framaestro     | Framaestro          | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/framaestro_ynh)      |![](https://dash.yunohost.org/integration/framaestro.svg) |
+| Framavox       | Loomio              | Non packagé                                          | |
 | Framagenda     | (Agenda Nextcloud)  | Non packagé                                          | |
-| Framagames     | ?                   | Non packagé                                          | |
-| MyFrama        | ?                   | Non packagé                                          | |
+| Framagames     | Framagames          | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/framagames_ynh)      |![](https://dash.yunohost.org/integration/framagames.svg) |
+| Framateam      | Mattermost          | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/mattermost_ynh)      |![](https://dash.yunohost.org/integration/mattermost.svg) |
+| MyFrama        | Shaarli             | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/shaarli_ynh)      |![](https://dash.yunohost.org/integration/shaarli.svg) |
+| Framaslides    | Strut               | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/strut_ynh)      |![](https://dash.yunohost.org/integration/strut.svg) |
+| Framasites     | Grav                | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/grav_ynh)      |![](https://dash.yunohost.org/integration/grav.svg) |
+| Framaclic      | Matomo              | [<span class="glyphicon glyphicon-gift"></span>](https://github.com/YunoHost-Apps/matomo_ynh)      |![](https://dash.yunohost.org/integration/matomo.svg) |
+| Framatrad     | ?                    | Non packagé                                          | |
 
 ### Voir aussi
 
