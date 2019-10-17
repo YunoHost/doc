@@ -116,11 +116,11 @@ $ yunohost user permission list
   wordpress.admin:
     allowed:
       - yolo_crew
-      - john
+      - alice
   [...]
 ```
 
-Note that, for example, if we want to restrict permission for email so that only Bob, we should also remove `all_users` from the permission :
+Note that, for example, if we want to restrict permission for email so that only Bob is allowed to email, we should also remove `all_users` from the permission :
 
 ```bash
 $ yunohost user permission update mail --remove all_users --add bob
@@ -128,7 +128,7 @@ $ yunohost user permission update mail --remove all_users --add bob
 
 ### Notes for apps packagers
 
-By default, installing an app creates the permission `$app.main` with `all_users` allowed by default.
+By default, installing an app creates the permission `app.main` with `all_users` allowed by default.
 
 If you wish to make the application publicly available, instead of the old `unprotected_urls` mechanism, you should give access to the special groups `visitors`:
 
