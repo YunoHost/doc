@@ -234,6 +234,7 @@ $(document).ready(function () {
         filter();
     });
 
+    filter();
 
     //=================================================
     // Upload apps lists
