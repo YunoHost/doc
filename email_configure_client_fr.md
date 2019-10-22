@@ -2,7 +2,7 @@
 
 Vous pouvez récupérer et envoyer des emails avec votre instance YunoHost grâce à des logiciels comme Mozilla Thunderbird, ou sur votre smartphone grâce à des applications comme K-9 Mail.
 
-Normalement, votre client mail devrait recevoir la configuration automatiquement lorsque vous ajoutez un compte, mais si jamais cela ne fonctionne pas, il est possible de le faire manuellement en suivant les quelques étapes suivantes.
+Normalement, votre client mail devrait recevoir la configuration automatiquement lorsque vous ajoutez un compte. Si cela ne fonctionne pas, il est possible de le faire manuellement en suivant les quelques étapes suivantes. (Cependant, cela devrait être compris comme étant un bug dans YunoHost, et le cas échéant, c'est cool si vous nous notifiez du problème pour que nous puissions tenter de reproduire et corriger le problème !)
 
 ### Réglages génériques
 
