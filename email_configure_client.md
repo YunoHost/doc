@@ -2,7 +2,7 @@
 
 You can fetch and send emails using your YunoHost instance from desktop email clients such as Mozilla Thunderbird or on your smartphone with applications like K-9 Mail.
 
-Normally, configuring your mail client should be automatic, but if the autoconfiguration fails, you can do it manually following the instructions bellow.
+Modern mail clients should be able to configure themselves automatically. If autoconfiguration fails, you can do it manually following the instructions below. (If the autoconfiguration fails though, it should be understood as a bug in YunoHost, and we would be glad to read your feedback to try to reproduce the issue on our side!)
 
 ### Generic settings
 
