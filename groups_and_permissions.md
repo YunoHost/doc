@@ -126,7 +126,8 @@ Note that, for example, if we want to restrict permission for email so that only
 $ yunohost user permission update mail --remove all_users --add bob
 ```
 
-### Notes for apps packagers
+Notes for apps packagers
+------------------------
 
 By default, installing an app creates the permission `app.main` with `all_users` allowed by default.
 
@@ -143,3 +144,19 @@ ynh_permission_create --permission "admin" --url "/admin" --allowed "$admin_user
 ```
 
 You don't need to take care of removing permissions or backing up/restoring them as it is handled by the core of YunoHost.
+
+### Migrating away from the legacy permission management
+
+When migrating/fixing an app still using the legacy permission system, it should be understood that the accesses are now to be managed by features from the core, outside the application scripts!
+
+Application scripts are only expected to:
+- if relevant, during the install script, initialize the main permission of the app as public (`visitors`) or private (`all_users`) or only accessible to specific groups/users ;
+- if relevant, create and initialize any other specific permission (e.g. to some admin interface) in the install script (and *maybe* in some migration happening in the upgrade script).
+
+Applications scripts should absolutely **NOT** mess up with any already-existing app accesses (including `unprotected`/`skipped_uris` settings) during any other case, as *it would reset any admin-defined access rule*!
+
+When migrating away from the legacy permission, you should:
+- remove any management of `$is_public`-like or `$admin_user`-like setting, except for any manifest question meant to either *initialize* the app as public/private or specific permissions ;
+- remove any management of `skipped_`, `unprotected_` and `protected_uris` (and `_regex`) settings that are now considered obsolete and deprecated. (N.B.: you should **explicitly delete them in the upgrade script**). Instead, you should now rely on the new `ynh_permission_*` helpers instead. If you do feel like you still need to use them, please contact the core team to provide your feedback and we'll figure out something ;
+- remove any call to `yunohost app addaccess` and similar actions that are now obsolete and deprecated.
+
