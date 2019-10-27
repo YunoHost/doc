@@ -9,18 +9,18 @@
 
 Nextcloud est un service d'hébergement de fichiers, de nombreuses applications peuvent être installées afin de lui offrir de nouvelles fonctionnalités tel qu'un agenda, un répertoire de contacts, des notes et pleins d'autres possibles (vous pouvez trouver quelques applications dans la partie [applications tiers](#AppsTiers) mais il en existe une multitude suivant vos besoins).
 
-## Découverte de l'environnement de Nextcloud<a name="EnvironnementNextcloud"></a>
+## Découverte de l'environnement de Nextcloud<a name="EnvironnementNextcloud" href=""></a>
 
 Du fait de la constitution de Nextcloud, une base avec des applications tiers à installer, ce chapitre ne concernera que la base de nextcloud sans applications ajoutés. Plus d'informations sur les applications dans la partie dédiée ou sur le catalogue d'application de nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com).  
 Nextcloud est avant tout un service de cloud (comme Seafile et d'autres logiciels), il permet une synchronisation et le partage de fichiers sur internet et entre plusieurs terminaux (ordinateurs, smartphone) mais aussi avec plusieurs personnes.
 
-## Logiciels Clients<a name="LogicielsClients"></a>
+## Logiciels Clients<a name="LogicielsClients" href=""></a>
 
 Il existe des logiciels clients pour de nombreux terminaux. Vous pouvez les retrouver sur le site de nextcloud : [nextcloud.com/install/#install-clients](https://nextcloud.com/install/#install-clients)
 
-## Manipulations utiles & problèmes rencontrés<a name="ManipulationsUtiles"></a>
+## Manipulations utiles & problèmes rencontrés<a name="ManipulationsUtiles" href=""></a>
 
-### Ajouter de l'espace à Nextcloud<a name="AjoutEspace"></a>
+### Ajouter de l'espace à Nextcloud<a name="AjoutEspace" href=""></a>
 
 La solution I. permet d'ajouter un lien vers un dossier local ou distant.  
 La solution II. permet de déplacer l'espace de stockage principal de nextcloud.
@@ -156,14 +156,14 @@ Les options à désactiver (Off) sont :
 
 Sauvegarder et nettoyer vos caches (Cloudflare, navigateur, ...) et le tour est joué.
 
-## Applications Tiers<a name="AppsTiers"></a>
+## Applications Tiers<a name="AppsTiers" href=""></a>
 
  + [Calendrier](app_nextcloud_calendar_fr)
  + [contact](app_nextcloud_contact_fr)
  + [KeeWeb](app_nextcloud_keeweb_fr)
  + [Carnet](app_nextcloud_carnet_fr)
 
-## Quelques liens utiles<a name="liensutiles"></a>
+## Quelques liens utiles<a name="liensutiles" href=""></a>
 
 + Site officiel : [nextcloud.com (en)](https://nextcloud.com/)
 + Catalogue d'application pour nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com/)
