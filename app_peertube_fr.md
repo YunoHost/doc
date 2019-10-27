@@ -14,4 +14,3 @@ Pour comprendre en quoi PeerTube propose une alternative à youtube, vous êtes 
 
  - Site officiel de PeerTube - [joinpeertube.org](https://joinpeertube.org/fr/)
  - Dépot application PeerTube Yunohost - [github.com/YunoHost-Apps/peertube_ynh](https://github.com/YunoHost-Apps/peertube_ynh)
- - Trouver de l'aide et poser toutes vos questions : [forum.yunohost.org](https://forum.yunohost.org/c/support)

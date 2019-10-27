@@ -167,4 +167,3 @@ Save and clean your caches (Cloudflare, browser,...) and that's it.
 
  - Official website : [nextcloud.com](https://nextcloud.com/)  
  - Application catalogue for nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com/)  
- - Find help and ask all your questions : [forum.yunohost.org](https://forum.yunohost.org/c/support)  

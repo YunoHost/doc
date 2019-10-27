@@ -6,4 +6,3 @@ SOGo est un service de webmail pour votre serveur email, c'est une alternative Ã
 
  + Site officiel de SOGo : [sogo.nu](https://sogo.nu/a)
  + DÃ©pot de l'application pour Yunohost : [github.com/YunoHost-Apps/sogo_ynh](https://github.com/YunoHost-Apps/sogo_ynh)
- + Trouver de l'aide et poser vos questions sur le [forum de Yunohost](https://forum.yunohost.org/c/support/apps)

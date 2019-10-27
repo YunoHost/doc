@@ -10,4 +10,3 @@ Pour utiliser pleinement la puissance de gogs vous devez avoir appréhender ce q
  - [Site Officiel - gogs.io](https://gogs.io)
  - [Dépot applications gogs pour YunoHost](https://github.com/YunoHost-Apps/gogs_ynh)
  - [Site officiel de l'outils git - git-scm.com](https://git-scm.com/)
- - [Trouver de l'aide et poser toutes vos questions : forum.yunohost.org](https://forum.yunohost.org/c/support/apps)

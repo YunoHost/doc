@@ -167,4 +167,3 @@ Sauvegarder et nettoyer vos caches (Cloudflare, navigateur, ...) et le tour est 
 
 + Site officiel : [nextcloud.com (en)](https://nextcloud.com/)
 + Catalogue d'application pour nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com/)
-+ Trouver de l'aide et poser toutes vos questions : [forum.yunohost.org](https://forum.yunohost.org/c/support)

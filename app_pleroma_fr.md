@@ -49,4 +49,3 @@ On retrouve dans cette zone les messages où vous avez été cité, mais aussi l
 
 + Site officiel : [pleroma.social (En anglais)](https://pleroma.social)
 + Trouver d'autres instances de Pleroma : [fediverse.network/pleroma](https://fediverse.network/pleroma)
-+ Trouver de l'aide et poser toutes vos questions : [forum.yunohost.org](https://forum.yunohost.org/c/support)
