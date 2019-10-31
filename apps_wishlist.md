@@ -29,6 +29,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Croodle](https://github.com/jelhan/croodle) Schedule a date or to do a poll on a general topics, with client-side encryption.
 - [Darkwire.io](https://github.com/seripap/darkwire.io)
 - [DirectoryLister](https://github.com/DirectoryLister/DirectoryLister)
+- [ejabberd](https://www.process-one.net/en/ejabberd/) Jabber/XMPP server
 - [eLabFTW](https://www.elabftw.net/) electronic lab notebook / [github](https://github.com/elabftw/elabftw)
 - [Emoncms](https://github.com/emoncms/emoncms)
 - [ERPnext](https://erpnext.com/download) / [github](https://github.com/frappe/erpnext)
