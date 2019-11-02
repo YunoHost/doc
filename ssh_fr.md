@@ -2,7 +2,7 @@
 
 ## Qu’est-ce que SSH ?
 
-**SSH** est un acronyme pour Secure Shell, et désigne un protocole qui permet de contrôler à distance une machine via la ligne de commande (CLI). C'est aussi une commande disponible de base dans les terminaux de Linux et Mac OS / OSX. Sous Windows, il vous faudra utiliser le logiciel [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (après l'avoir lancer, cliquer sur Session puis SSH).
+**SSH** est un acronyme pour Secure Shell, et désigne un protocole qui permet de contrôler à distance une machine via la ligne de commande (CLI). C'est aussi une commande disponible de base dans les terminaux de Linux et Mac OS / OSX. Sous Windows, il vous faudra utiliser le logiciel [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (après l'avoir lancé, cliquer sur Session puis SSH).
 
 ## Pendant l’installation de YunoHost
 
@@ -28,7 +28,7 @@ ssh root@111.222.333.444
 Un mot de passe sera demandé. Si c'est un VPS, votre fournisseur devrait également vous avoir communiqué un mot de passe. Si vous avez utilisé une image pré-installée (pour x86 ou cartes ARM), le password devrait être `yunohost`.
 
 <div class="alert alert-warning">
-Depuis YunoHost 3.4, après avoir effectué la postinstallation, il ne sera plus possible de se logguer avec l'utilisateur `root`. À la place, il vous faut **vous logguer avec l'utilisateur `admin` !**. Dans l'éventualité où le serveur LDAP serait cassé, rendant l'utilisateur `admin` inutilisable, vous devriez cependant pouvoir vous logguer avec l'utilisateur `root` depuis le réseau local.
+Depuis YunoHost 3.4, après avoir effectué la postinstallation, il ne sera plus possible de se logguer avec l'utilisateur `root`. À la place, il vous faut **vous logguer avec l'utilisateur `admin` !** Dans l'éventualité où le serveur LDAP serait cassé, rendant l'utilisateur `admin` inutilisable, vous devriez cependant pouvoir vous logguer avec l'utilisateur `root` depuis le réseau local.
 </div>
 
 #### Changer le mot de passe root !
