@@ -15,7 +15,7 @@ Vous devriez faire attention à qui vous donnez l'accès à votre serveur. En te
 Le portail utilisateur, ou SSO
 -----------------------
 
-<center><img src="images/home_panel.jpg" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);"></center>
+<center><img src="images/user_panel.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);"></center>
 
 Le portail utilisateur, également appelé SSO pour 'Single Sign On', permet à l'utilisateur de naviguer facilement entre les différentes applications auxquelles il a accès. En particulier, le terme 'Single Sign On' vient du fait que l'utilisateur n'a qu'à se connecter au portail pour être automatiquement connecté à toutes les applications qui nécessitent une authentification (ou du moins celles qui sont intégrées avec le SSO/LDAP, car cela est parfois techniquement compliqué ou pas possible du tout).
 
