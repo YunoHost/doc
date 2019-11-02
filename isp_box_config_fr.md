@@ -1,6 +1,6 @@
 # Configurer la redirection des ports
 
-Si vous vous auto-hébergez à la maison et sans VPN, il vous faut rediriger les ports de votre routeur ("machin-box"). Si vous souhaitez une explication courte de ce qu'est et pourquoi vous avez besoin de rediriger les ports, vous pouvez jeter un oeil à [cette page](port_forwarding_fr). [Cette page](https://craym.eu/tutoriels/utilitaires/ouvrir_les_ports_de_sa_box.html) propose également des explications détaillées sur le fonctionnement des ports, et les étapes de configuration pour différents routeurs.
+Si vous vous auto-hébergez à la maison et sans VPN, il vous faut rediriger les ports de votre routeur ("machin-box"). Si vous souhaitez une explication courte de ce qu'est et pourquoi vous avez besoin de rediriger les ports, vous pouvez jeter un œil à [cette page-ci](port_forwarding_fr). [Cette page-là](https://craym.eu/tutoriels/utilitaires/ouvrir_les_ports_de_sa_box.html) propose également des explications détaillées sur le fonctionnement des ports, et les étapes de configuration pour différents routeurs.
 
 ### 0. Diagnostiquer les ports ouverts
 
@@ -10,7 +10,7 @@ Une fois que vous aurez configuré la redirection, vous devriez pouvoir valider 
 
 ### 1. Accéder à l'interface d'administration de votre box/routeur
 
-L'interface d'administration est généralement accessible via http://192.168.0.1 ou http://192.168.1.1. 
+L'interface d'administration est généralement accessible via http://192.168.0.1 ou http://192.168.1.1.
 Ensuite, il vous faudra peut-être vous authentifier avec les identifiants
 fournis par votre fournisseur d'accès internet (FAI).
 
@@ -18,9 +18,9 @@ fournis par votre fournisseur d'accès internet (FAI).
 
 Identifiez quelle est l'IP locale de votre serveur, soit :
 - depuis l'interface de votre routeur/box, qui liste peut-être les dispositifs
-  connectés.
-- depuis la webadmin de YunoHost, dans 'État du serveur', 'Réseau'
-- depuis la ligne de commande dans votre serveur, par exemple avec `ip a | grep "scope global" | awk '{print $2}'`
+  connectés;
+- depuis la webadmin de YunoHost, dans 'État du serveur', 'Réseau';
+- depuis la ligne de commande dans votre serveur, par exemple avec `ip a | grep "scope global" | awk '{print $2}'`.
 
 Une adresse IP locale ressemble généralement à `192.168.xx.yy`, ou `10.0.xx.yy`.
 
