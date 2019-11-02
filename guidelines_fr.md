@@ -32,15 +32,15 @@ Ne faites pas ça. La réinstallation est une opération lourde et n'est pas une
 
 ## Faites des sauvegardes
 
-Si vous hébergez des services et des données qui sont importants pour vos utilisateurs, il est important que vous mettiez en place une politique de sauvegarde. Les sauvegardes peuvent être facilement créées à partir de l'interface d'administration web - bien qu'elles ne puissent actuellement pas être téléchargées à partir de celle-ci (mais elles peuvent être téléchargées par d'autres moyens). Vous devez effectuer régulièrement des sauvegardes et les conserver dans un endroit sûr et physiquement différent de votre serveur. Plus d'infos dans [la documentation des sauvegardes](/backup)
+Si vous hébergez des services et des données qui sont importants pour vos utilisateurs, il est important que vous mettiez en place une politique de sauvegarde. Les sauvegardes peuvent être facilement créées à partir de l'interface d'administration web - bien qu'elles ne puissent actuellement pas être téléchargées à partir de celle-ci (mais elles peuvent être téléchargées par d'autres moyens). Vous devez effectuer régulièrement des sauvegardes et les conserver dans un endroit sûr et physiquement différent de votre serveur. Plus d'infos dans [la documentation des sauvegardes](/backup).
 
 ## Lisez les emails envoyés à root
 
-En tant qu'administrateur, vous devriez configurer un client de messagerie pour vérifier les e-mails envoyés à `root@your.domain.tld` (qui doit être un alias pour le premier utilisateur que vous avez ajouté) ou les transférer à une autre adresse que vous vérifiez activement. Ces courriels peuvent contenir des informations sur ce qu'il se passe sur votre serveur, comme les tâches périodiques automatisées.
+En tant qu'administrateur, vous devriez configurer un client de messagerie pour vérifier les e-mails envoyés à `root@your.domain.tld` (qui doit être un alias pour le premier utilisateur que vous avez ajouté) ou les transférer à une autre adresse que vous vérifiez activement. Ces courriels peuvent contenir des informations sur ce qui se passe sur votre serveur, comme les tâches périodiques automatisées.
 
 ## YunoHost est un logiciel gratuit, maintenu par des bénévoles.
 
-Enfin, gardez à l'esprit que YunoHost est un logiciel libre maintenu par des volontaires - et que le but de YunoHost (démocratiser l'auto-hébergement) n'est pas simple ! Le logiciel n'est fourni sans aucune garantie. L'équipe de bénévoles fait de son mieux pour maintenir et fournir la meilleure expérience possible - pourtant les fonctionnalités, les applications et YunoHost dans son ensemble sont loin d'être parfaits et vous ferez face tôt ou tard à de petit ou gros problèmes. Lorsque cela se produit, venez gentillement [demander de l'aide sur le chat ou le forum, ou signaler le problème](/help) :) !
+Enfin, gardez à l'esprit que YunoHost est un logiciel libre maintenu par des volontaires - et que le but de YunoHost (démocratiser l'auto-hébergement) n'est pas simple ! Le logiciel n'est fourni sans aucune garantie. L'équipe de bénévoles fait de son mieux pour maintenir et fournir la meilleure expérience possible - pourtant les fonctionnalités, les applications et YunoHost dans son ensemble sont loin d'être parfaits et vous ferez face tôt ou tard à de petit ou gros problèmes. Lorsque cela se produit, venez gentiment [demander de l'aide sur le chat ou le forum, ou signaler le problème](/help) :) !
 
 Si vous aimez YunoHost et que vous voulez que le projet soit maintenu en vie et progresse, n'hésitez pas à laisser une note de remerciement et à [faire un don](https://liberapay.com/YunoHost) au projet et à en parler autour de vous !
 
