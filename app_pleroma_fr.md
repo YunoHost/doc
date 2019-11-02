@@ -1,15 +1,17 @@
 # <img src="/images/pleroma_logo.png" alt="logo de Pleroma"> Pleroma
 
- - [Découverte de l'interface de Pleroma](#decouvertegeneralepleroma) |
- - [Logiciels Clients pour mobile et ordinateur](#LogicielsClients) |
- - [Liens utiles](#liensutiles) |
+ - [Découverte de l'interface de Pleroma](decouvertegeneralepleroma)
+ - [Logiciels Clients pour mobile et ordinateur](LogicielsClients)
+ - [Liens utiles](liensutiles)
 
 Pleroma est un réseau social décentralisé de micro-blogging qui propose une alternative à Twitter, le protocole Activy Pub qu'il utilise permet d'interagir avec le fediverse composé notamment de Mastodon, GNU Social, et d'autres. Il a l'avantage d'être plus léger que mastodon et se prête donc plus facilement à l'auto-hébergement.
 
-## <a name="#decouvertegeneralepleroma">Découverte de l'interface de Pleroma</a>
+## Découverte de l'interface de Pleroma <a href="" name="decouvertegeneralepleroma"></a>
+
 Pour ceux et celles qui n'ont pas ou peu l'habitude des réseaux sociaux, voici en détail l'utilisation de chacune des fenêtres proposées.
 
 ### Accueil de l'interface
+
 <img src="/images/capture_globale.png" alt="Capture écran accueil de Pleroma">
 
 1. Barre de menu  
@@ -34,7 +36,7 @@ Cet espace permet de choisir l'agencement de Pleroma, il est proposé deux agenc
 6. Notifications  
 On retrouve dans cette zone les messages où vous avez été cité, mais aussi les abonnements à votre compte.
 
-## <a name="LogicielsClients"> Applications clients</a>
+## Applications clients <a href="" name="LogicielsClients"></a>
 
 | Nom de l'applications | Plateforme | Multi-comptes | Autre réseaux supportés | Play Store | F-Droid | Apple Store |
 |---|---|---|---|---|---|---|
@@ -43,7 +45,7 @@ On retrouve dans cette zone les messages où vous avez été cité, mais aussi l
 | Twidere | Android | Oui | Twitter, Mastodon | [play.google.com/org.mariotaku.twidere](https://play.google.com/store/apps/details?id=org.mariotaku.twidere) | [https://f-droid.org/org.mariotaku.twidere](https://f-droid.org/fr/packages/org.mariotaku.twidere/) | 
 | Librem Social | Android | Non | ? | [play.google.com/one.librem.social](https://play.google.com/store/apps/details?id=one.librem.social&hl=fr) | [https://f-droid.org/one.librem.social](https://f-droid.org/fr/packages/one.librem.social) | |
 
-## <a name="liensutiles">Quelques liens utiles</a>
+## Quelques liens utiles <a href="" name="liensutiles"></a>
+
 + Site officiel : [pleroma.social (En anglais)](https://pleroma.social)
 + Trouver d'autres instances de Pleroma : [fediverse.network/pleroma](https://fediverse.network/pleroma)
-+ Trouver de l'aide et poser toutes vos questions : [forum.yunohost.org](https://forum.yunohost.org/c/support)
