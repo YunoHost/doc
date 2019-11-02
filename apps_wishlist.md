@@ -79,6 +79,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [MPD](http://www.musicpd.org)
 - [MyBB](https://mybb.com/) / [github](https://github.com/mybb)
 - [Museek+](https://github.com/eLvErDe/museek-plus)
+- [N8n.io](https://n8n.io)
 - [Netrunner](https://github.com/mtgred/netrunner)
 - [Nibbleblog](http://www.nibbleblog.com)/ [github](https://github.com/dignajar/nibbleblog)
 - [Nuage](https://nuage.kerjean.me/login) / [github](https://github.com/mickael-kerjean/filestash)
