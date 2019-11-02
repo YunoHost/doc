@@ -42,7 +42,7 @@ Vous pouvez louer un serveur privé virtuel ou une machine dédiée à des hébe
       </tr>
       <tr>
         <td style="text-align:center;">Coût mensuel</td>
-        <td style="text-align:center;" class="success">Negligeable<br><small>(electricité)</small></td>
+        <td style="text-align:center;" class="success">Négligeable<br><small>(electricité)</small></td>
         <td style="text-align:center;" class="warning">Autour de 5€ <br><small>(VPN)</small></td>
         <td style="text-align:center;" class="warning">À partir de ~3€ <br><small>(VPS)</small></td>
       </tr>
@@ -71,13 +71,13 @@ Vous pouvez louer un serveur privé virtuel ou une machine dédiée à des hébe
       </tr>
       <tr>
         <td style="text-align:center;">RAM</td>
-        <td style="text-align:center;" class="warning" colspan="2">Generalement 500 Mo ou 1 Go</td>
+        <td style="text-align:center;" class="warning" colspan="2">Généralement 500 Mo ou 1 Go</td>
         <td style="text-align:center;" class="warning">En fonction du prix</td>
       </tr>
       <tr>
         <td style="text-align:center;">Connectivité internet</td>
-        <td style="text-align:center;" class="warning" colspan="2">Dépends de la connexion</td>
-        <td style="text-align:center;" class="success">Géneralement bonne</td>
+        <td style="text-align:center;" class="warning" colspan="2">Dépend de la connexion</td>
+        <td style="text-align:center;" class="success">Généralement bonne</td>
       </tr>
     </tbody>
 </table>
