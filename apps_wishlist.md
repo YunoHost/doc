@@ -97,6 +97,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Phraseanet](https://docs.phraseanet.com/3.8/fr/index.html#) / [github](https://github.com/alchemy-fr/Phraseanet-Docs)
 - [Pico](http://picocms.org) / [github](https://github.com/picocms/Pico)
 - [Playmaker](https://github.com/NoMore201/playmaker)
+- [Presentator](https://presentator.io/) A design presentation and collaboration platform.
 - [Privoxy](http://www.privoxy.org)
 - [ProcessMaker](http://www.processmaker.com)
 - [ProtonMail’s WebClient](https://github.com/ProtonMail/WebClient)
