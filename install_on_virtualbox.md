@@ -31,6 +31,8 @@ machine (old computer, ARM board, ...) or a VPS online.
 
 ## <small>2.</small> Change network settings
 
+**NB:** You must carry out this step. If not, the install will fail. 
+
 Go to **Settings** > **Network**:
 
 <img src="/images/virtualbox_2.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
