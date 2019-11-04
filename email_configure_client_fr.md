@@ -30,3 +30,14 @@ Suivez les instructions suivantes. (Comme pour Thunderbird, il vous faudra peut-
 <a href="/images/k9mail_config_2.png"><img src="/images/k9mail_config_2.png" width=200/></a>
 <a href="/images/k9mail_config_3.png"><img src="/images/k9mail_config_3.png" width=200/></a>
 <a href="/images/k9mail_config_4.png"><img src="/images/k9mail_config_4.png" width=200/></a>
+
+### <img src="images/dekko-app.png" width=50> Configure Dekko (on Ubuntu Touch)
+
+La première fois, vous pouvez simplement choisir "Ajouter un compte". Si vous avez déjà un compte configuré, appuyez sur le menu hamburger puis sur le rouage, choisissez Courrier, Comptes et appuyez sur le symbole " + ".
+
+Sélectionnez ensuite IMAP. Remplissez les champs et appuyez sur Suivant. Dekko va ensuite chercher la configuration. Vérifiez que tous les champs sont corrects. Assurez-vous d'avoir votre nom d'utilisateur yunohost, PAS votre adresse e-mail et choisissez "Autoriser les certificats non fiables". Faites ceci pour IMAP et SMTP et appuyez sur Suivant. Dekko va ensuite synchroniser le compte après quoi vous aurez terminé. Félicitations !
+
+<a href="/images/dekko_config_1.png"><img src="/images/dekko_config_1.png" width=200/></a>
+<a href="/images/dekko_config_2.png"><img src="/images/dekko_config_2.png" width=200/></a>
+<a href="/images/dekko_config_3.png"><img src="/images/dekko_config_3.png" width=200/></a>
+<a href="/images/dekko_config_4.png"><img src="/images/dekko_config_4.png" width=200/></a>
