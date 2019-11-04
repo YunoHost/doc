@@ -37,6 +37,7 @@ You can connect to your YunoHost XMPP account in different ways.
 - [Conversations](https://conversations.im/) (Android)
 - [Movim under Android](https://movim.eu)
 - [Monal](https://itunes.apple.com/us/app/monal-free-xmpp-chat/id317711500?mt=8) (iOS)
+- [Kaidan](https://github.com/KaidanIM/Kaidan) (Ubuntu Touch / Plasma Mobile)
 
 Here is an exhaustive list of XMPP clients : https://en.wikipedia.org/wiki/Comparison_of_XMPP_clients
 
