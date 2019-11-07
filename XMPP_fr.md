@@ -36,6 +36,7 @@ Il existe différents types de clients pour se connecter à XMPP.
 * [Conversations](https://conversations.im/) (Android)
 * [Movim sous Android](https://movim.eu)
 * [Monal](https://itunes.apple.com/us/app/monal-free-xmpp-chat/id317711500?mt=8) (iOS)
+- [Kaidan](https://github.com/KaidanIM/Kaidan) (Ubuntu Touch / Plasma Mobile)
 
 Voici une liste plus exhaustive des clients XMPP : https://fr.wikipedia.org/wiki/Liste_de_clients_XMPP
 

@@ -30,3 +30,14 @@ Follow the following steps. (As for Thunderbird, you might need to accept certif
 <a href="/images/k9mail_config_2.png"><img src="/images/k9mail_config_2.png" width=200/></a>
 <a href="/images/k9mail_config_3.png"><img src="/images/k9mail_config_3.png" width=200/></a>
 <a href="/images/k9mail_config_4.png"><img src="/images/k9mail_config_4.png" width=200/></a>
+
+### <img src="images/dekko-app.png" width=50> Configure Dekko (on Ubuntu Touch)
+
+The first time you can simply choose "Add account". If you already have an account configured, tap the hamburger menu then tap the gear, choose Mail, Accounts and press the '+'-symbol.
+
+Then you choose IMAP. Fill in the fields and press Next. Now Dekko will look for the configuration. Check that all fields are correct. Make sure you have your yunohost username, NOT your mailadress and choose "Allow untrusted certificates". Do this for IMAP and SMTP and press Next. Dekko will now synchronise the account after which you are done. Congratz!
+
+<a href="/images/dekko_config_1.png"><img src="/images/dekko_config_1.png" width=200/></a>
+<a href="/images/dekko_config_2.png"><img src="/images/dekko_config_2.png" width=200/></a>
+<a href="/images/dekko_config_3.png"><img src="/images/dekko_config_3.png" width=200/></a>
+<a href="/images/dekko_config_4.png"><img src="/images/dekko_config_4.png" width=200/></a>
