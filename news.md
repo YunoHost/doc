@@ -29,8 +29,7 @@ blockquote > p {
 <script>
 $(document).ready(function() {
     // FIXME, we need to enable CORS on forum.yunohost.org
-    // $.get("https://forum.yunohost.org/c/announcement.rss").success(function(data) {
-    $.get("/_pages/announcement.rss").success(function(data) {
+    $.get("https://forum.yunohost.org/c/announcement.rss").success(function(data) {
         $(data).find("item").each(function(_, item) {
             var description = $(item).find("description");
             // yes this is a NIGHTMARE
