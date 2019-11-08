@@ -110,9 +110,8 @@ yunohost backup restore <nom_d'archive>
 Note: si votre archive n'est pas dans `/home/yunohost.backup/archives`, vous pouvez créer le répertoire et déplacer l'archive comme ceci :
 
 ```bash
-mkdir /home/yunohost.backup
-mkdir /home/yunohost.backup/archives
-mv /path/to/<archivename> /home/yunohost.backup/archives/
+mkdir -p /home/yunohost.backup/archives
+mv /chemin/vers/<nom_d'archive> /home/yunohost.backup/archives/
 yunohost backup restore <nom_d'archive>
 ``` 
 
