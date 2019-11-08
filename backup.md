@@ -106,10 +106,12 @@ One specific feature is the ability to restore a full archive *instead* of the p
 yunohost backup restore <archivename>
 ```
 
-Note: If your archive isn't in `/home/yunohost.backup/archives`, you can specify where it is like this :
+Note: If your archive isn't in `/home/yunohost.backup/archives`, you can create the directory, move the archive into it, and restore it like this:
 
 ```bash
-yunohost backup restore /path/to/<archivename>
+mkdir -p /home/yunohost.backup/archives
+mv /path/to/<archivename> /home/yunohost.backup/archives/
+yunohost backup restore <archivename>
 ``` 
 
 ## To go futher
