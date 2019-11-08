@@ -107,12 +107,14 @@ Ensuite, **à la place de** `yunohost tools postinstall`, réalisez la restaurat
 yunohost backup restore <nom_d'archive>
 ```
 
-Note: si votre archive n'est pas dans `/home/yunohost.backup/archives`, vous pouvez spécifier où elle se trouve comme ceci :
+Note: si votre archive n'est pas dans `/home/yunohost.backup/archives`, vous pouvez créer le répertoire et déplacer l'archive comme ceci :
 
 ```bash
-yunohost backup restore /path/to/<archivename>
+mkdir /home/yunohost.backup
+mkdir /home/yunohost.backup/archives
+mv /path/to/<archivename> /home/yunohost.backup/archives/
+yunohost backup restore <nom_d'archive>
 ``` 
-
 
 
 Pour aller plus loin
