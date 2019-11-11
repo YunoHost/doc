@@ -28,11 +28,11 @@ Branchez votre clef USB, selectionnez l'ISO YunoHost puis cliquez sur 'OK'
 ### Avec `dd`
 
 Si vous êtes familier avec la ligne de commande, il est possible de flasher la
-clef USB avec `dd`. En supposant que votre clef USB soit `/dev/sdb` (faites
+clef USB avec `dd`. En supposant que votre clef USB soit `/dev/sdz` (faites
 attention !!), vous pouvez exécuter :
 
 ```bash
-dd if=/chemin/de/yunohost.iso of=/dev/sdb
+dd if=/chemin/de/yunohost.iso of=/dev/sdz
 ```
 
 ---
