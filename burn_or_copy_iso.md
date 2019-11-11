@@ -28,10 +28,10 @@ Put your USB stick on, select your YunoHost ISO and click "OK"
 ### With `dd`
 
 If you know your way around command line, you may also flash your USB stick with
-`dd`. Assuming your USB stick is `/dev/sdb` (be careful !!), you may run :
+`dd`. Assuming your USB stick is `/dev/sdz` (be careful !!), you may run :
 
 ```bash
-dd if=/path/to/yunohost.iso of=/dev/sdb
+dd if=/path/to/yunohost.iso of=/dev/sdz
 ```
 
 ---
