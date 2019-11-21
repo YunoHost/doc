@@ -48,6 +48,9 @@ yunohost dyndns subscribe -d whateveryouwant.nohost.me
 
 # Update the DNS conf
 yunohost dyndns update
+
+# Set it as the main domain
+yunohost tools maindomain --new-domain whateveryouwant.nohost.me
 ```
 
 #### Retrieve a nohost.me, noho.st or ynh.fr domain
