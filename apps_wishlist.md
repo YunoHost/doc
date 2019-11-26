@@ -106,6 +106,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [qBittorrent](https://github.com/qbittorrent/qBittorrent)
 - [racktables](http://racktables.org) / [github](https://github.com/RackTables/racktables)
 - [Radarr](https://github.com/Radarr/Radarr)
+- [Rolisteam server](http://www.rolisteam.org/) / [github](https://github.com/Rolisteam/rolisteam)
 - [Request Tracker](https://bestpractical.com) / [github](https://github.com/bestpractical/rt)
 - [Restya](http://restya.com) / [github](https://github.com/RestyaPlatform/board/)
 - [Retroshare](https://retroshare.cc/) / [github](https://github.com/RetroShare/RetroShare)
