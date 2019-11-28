@@ -9,6 +9,11 @@ The domain chosen during the postinstall is defined as the main domain of the se
 
 Finally, take note that, in the context of YunoHost, there is no hierarchy between the domains it knows. In the previous example, you may add a third domain `foo.yolo.com` - but it would be considered as a domain independent of `yolo.com`.
 
+Non-latin characters
+-----------------
+
+If your domain has special, non-latin characters, you need to use its [internationalized version](https://en.wikipedia.org/wiki/Internationalized_domain_name) through [Punycode](https://en.wikipedia.org/wiki/Punycode). You can use [this converter](https://www.charset.org/punycode), and use the converted domain name in your YunoHost configuration. 
+
 DNS configuration
 -----------------
 
