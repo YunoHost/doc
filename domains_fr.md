@@ -12,7 +12,7 @@ Enfin, il faut noter que, dans le contexte de YunoHost, il n'y a pas de hiérarc
 Caractères non latins
 -----------------
 
-Si votre domain contient des caractères spéciaux, non latins, vous devez utiliser sa [version internationalisée](https://fr.wikipedia.org/wiki/Nom_de_domaine_internationalis%C3%A9) en [Punycode](https://fr.wikipedia.org/wiki/Punycode). Vous pouvez utiliser [ce convertisseur](hhttps://www.charset.org/punycode), et utiliser le nom de domaine converti dans YunoHost.
+Si votre domain contient des caractères spéciaux, non latins, vous devez utiliser sa [version internationalisée](https://fr.wikipedia.org/wiki/Nom_de_domaine_internationalis%C3%A9) en [Punycode](https://fr.wikipedia.org/wiki/Punycode). Vous pouvez utiliser [ce convertisseur](https://www.charset.org/punycode), et utiliser le nom de domaine converti dans YunoHost.
 
 Configuration DNS
 -----------------
