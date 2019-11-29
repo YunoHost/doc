@@ -29,6 +29,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Croodle](https://github.com/jelhan/croodle) Schedule a date or to do a poll on a general topics, with client-side encryption.
 - [Darkwire.io](https://github.com/seripap/darkwire.io)
 - [DirectoryLister](https://github.com/DirectoryLister/DirectoryLister)
+- [EasyAppointments](https://easyappointments.org/) Online appointment booker (similar to Doodle)
 - [eLabFTW](https://www.elabftw.net/) electronic lab notebook / [github](https://github.com/elabftw/elabftw)
 - [Emoncms](https://github.com/emoncms/emoncms)
 - [ERPnext](https://erpnext.com/download) / [github](https://github.com/frappe/erpnext)
@@ -106,7 +107,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [qBittorrent](https://github.com/qbittorrent/qBittorrent)
 - [racktables](http://racktables.org) / [github](https://github.com/RackTables/racktables)
 - [Radarr](https://github.com/Radarr/Radarr)
-- [Rolisteam server](http://www.rolisteam.org/) / [github](https://github.com/Rolisteam/rolisteam)
 - [Request Tracker](https://bestpractical.com) / [github](https://github.com/bestpractical/rt)
 - [Restya](http://restya.com) / [github](https://github.com/RestyaPlatform/board/)
 - [Retroshare](https://retroshare.cc/) / [github](https://github.com/RetroShare/RetroShare)
