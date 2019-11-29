@@ -10,7 +10,7 @@ YunoHost is based on Debian, so on Debian's components' licenses.
 Applications and applications packages have their own licenses.
 
 
-#### What YunoHosts' goal?
+#### What's YunoHost goal?
 
 We believe that decentralizing the Internet, and empowering people to take control and
 responsability back over their own data and services, is a crucial issue to guarantee
@@ -64,7 +64,7 @@ or stickers :P).
 Considering that a few contributors are investing a large amount of time in the
 project, we are thinking about ways to make the project sustainable.
 
-This could be achieved via donations, crowdfunding, and a few contributors
+This could be achieved via donations, grants, and a few contributors
 have professional activities related to YunoHost.
 
 
