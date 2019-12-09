@@ -37,6 +37,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [FitTrackee](https://github.com/SamR1/FitTrackee)
 - [Fossil](http://www.fossil-scm.org)
 - [WebThings Gateway](https://iot.mozilla.org/gateway/) [github](https://github.com/mozilla-iot/)
+- [Gancio](https://gancio.org/) / [framagit](https://framagit.org/les/gancio)
 - [Geneweb](https://geneweb.tuxfamily.org) / [github](https://github.com/geneweb/geneweb)
 - [GetSimple CMS](http://get-simple.info) / [github](https://github.com/GetSimpleCMS/GetSimpleCMS)
 - [Goaccess](https://goaccess.io) Web log analyser (replaces piwik without js tracking scripts) / [github](https://github.com/allinurl/goaccess)
