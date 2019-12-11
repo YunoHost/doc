@@ -33,6 +33,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Emoncms](https://github.com/emoncms/emoncms)
 - [ERPnext](https://erpnext.com/download) / [github](https://github.com/frappe/erpnext)
 - [EteSync](https://www.etesync.com/) / [github](https://github.com/etesync)
+- [Epicyon](https://epicyon.net/) / [gitlab](https://gitlab.com/bashrc2/epicyon)
 - [FEX](http://fex.rus.uni-stuttgart.de/)
 - [FitTrackee](https://github.com/SamR1/FitTrackee)
 - [Fossil](http://www.fossil-scm.org)
