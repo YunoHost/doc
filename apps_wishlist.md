@@ -22,6 +22,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [btcpayserver](https://github.com/btcpayserver/btcpayserver)
 - [cgit](http://git.zx2c4.com/cgit/about)
 - [CheckUp](https://sourcegraph.github.io/checkup) / [github](https://github.com/sourcegraph/checkup)
+- [citadel-suite - Debian](https://packages.debian.org/stretch/citadel-suite) / [citadel easyinstall - citadel.org](http://www.citadel.org/doku.php?id=installation:easyinstall:easyinstall) Citadel is a complete and feature-rich open source groupware platform. Directly descending from a well known C/PM BBS system, it has a venerable [history](http://www.citadel.org/doku.php?id=documentation:citadel_past_present_and_future#citadel.past.present.and.future)
 - [Cockpit](http://cockpit-project.org/)
 - [Commafeed](https://github.com/Athou/commafeed)
 - [Converse.js](https://conversejs.org) / [github](https://github.com/jcbrand/converse.js)
