@@ -18,8 +18,8 @@ from the web administration interface or from the command line.
 ### Install a Let's Encrypt certificate
 
 Before attempting to install a Let's Encrypt certificate, you should make sure
-that your DNS is correctly configured (votre.domaine.tld should point to
-your server's IP) and that your domain is accessible though HTTP from outside
+that your DNS is correctly configured (your.domain.tld should point to
+your server's IP) and that your domain is accessible through HTTP from outside
 your local network (i.e. at least port 80 should be forwarded to your server).
 
 #### From the web administration interface
