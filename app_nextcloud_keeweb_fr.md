@@ -1,4 +1,4 @@
-# L'application KeeWeb
+# L'application KeeWeb pour NextCloud
 
 L'application Keeweb sur le catalogue de nextcloud - [apps.nextcloud.com/keeweb](https://apps.nextcloud.com/apps/keeweb)
 

@@ -1,4 +1,4 @@
-# The KeeWeb application
+# The KeeWeb application for NextCloud
 
 The KeeWeb application is a password manager integrated into Nextcloud. For example, it allows you to read a KeePass file (*.kdbx*) stored on your Nextcloud instance.
 But sometimes Nextcloud does not let the application support these files, which makes it impossible to read them from KeeWeb. To remedy this,
