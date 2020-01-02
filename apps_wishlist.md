@@ -26,6 +26,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Cockpit](http://cockpit-project.org/)
 - [Commafeed](https://github.com/Athou/commafeed)
 - [Converse.js](https://conversejs.org) / [github](https://github.com/jcbrand/converse.js)
+- [Couchdb](https://couchdb.apache.org/) databases creation and management
 - [Cozy](https://github.com/cozy)
 - [Croodle](https://github.com/jelhan/croodle) Schedule a date or to do a poll on a general topics, with client-side encryption.
 - [Darkwire.io](https://github.com/seripap/darkwire.io)
