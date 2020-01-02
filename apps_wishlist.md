@@ -45,7 +45,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Gollum](https://github.com/gollum/gollum)
 - [Goploader](https://github.com/Depado/goploader)
 - [Granary](https://github.com/snarfed/granary)
-- [Guacamole](http://guac-dev.org)
+- [Guacamole](http://guacamole.apache.org/)
 - [Habitica](https://habitica.com/) / [github](https://github.com/HabitRPG/habitica)
 - [HackMD CE](https://github.com/hackmdio/hackmd)
 - [Helpy](https://github.com/helpyio/helpy)
