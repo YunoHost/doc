@@ -99,7 +99,7 @@ YEP à respecter pour atteindre le niveau 4:
 
 ### Niveau 5
 **L'application ne présente aucune erreur dans [Package linter](https://github.com/YunoHost/package_linter).**  
-*Il peux y avoir des faux positifs dans Package linter. Ces situations seront gérées au cas par cas.*
+*Il peut y avoir des faux positifs dans Package linter. Ces situations seront gérées au cas par cas.*
 
 YEP à respecter pour atteindre le niveau 5:
 - *[YEP 1.3](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-13---indiquer-la-licence-associ%C3%A9e-au-paquet---valid%C3%A9--auto--working-) : Indiquer la licence associée au paquet*
