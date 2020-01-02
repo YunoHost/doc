@@ -117,7 +117,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [ScenariChain-server](https://download.scenari.software/SCENARIchain-server/)
 - [Scuttlebutt Pub](https://www.scuttlebutt.nz/contributing)
 - [ShareLatex](https://www.sharelatex.com) / [github](https://github.com/overleaf/overleaf)
-- [Shleuder](https://schleuder.org/)
+- [Schleuder](https://schleuder.org/schleuder/docs/concept.html)(Schleuder is a gpg-enabled mailing list manager with resending capabilities.)
 - [SocialHome](https://github.com/jaywink/socialhome) (Socialhome is best described as a federated personal profile with social networking functionality) (https://socialhome.network)
 - [smokeping](https://packages.debian.org/buster/smokeping)   / [github](https://github.com/oetiker/SmokePing)
 - [Sonarr](https://sonarr.tv) / [github](https://github.com/Sonarr/Sonarr)
