@@ -132,6 +132,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [TwitRSS.me](http://twitrss.me/) / [Github](https://github.com/ciderpunx/twitrssme) Scrapes Twitter to create RSS feeds.
 - [Volumio](https://volumio.org) / [github](https://github.com/volumio)
 - [WebODF](http://webodf.org) / [github](https://github.com/webodf/WebODF)
+- [Webhook.site](https://docs.webhook.site/) / [github](https://github.com/fredsted/webhook.site)
 - [Wireguard](https://www.wireguard.com/) / [git](https://git.zx2c4.com/WireGuard/)
 - [Xibo](https://github.com/xibosignage) - A FLOSS digital signage solution (CMS?)
 - [Xonotic](http://xonotic.org) / [gitlab](https://gitlab.com/xonotic)
