@@ -3,26 +3,24 @@ Si vous avez perdu l'accès à votre YunoHost qui était auparavant fonctionnel,
 
 Il existe de nombreuses causes pouvant empécher totalement ou partiellement d'accéder en administrateur à un serveur YunoHost. Dans de nombreux cas, un des moyens d'accès est inaccessible, mais les autres sont fonctionnels.
 
-Cette page va vous aider à diagnostiquer, obtenir un accés et si besoin réparer votre système.
+Cette page va vous aider à diagnostiquer, obtenir un accés et si besoin réparer votre système. Les pannes les plus courrantes sont priorisées de haut en bas. Il vous suffit de tester chaque hypothèse.
 
-## Liste de causes pouvant empécher l'accès à un serveur YunoHost
-Ci-dessous une liste de causes courantes de pannes:
-
-
-### Vous avez perdu votre mot de passe administrateur
+## Vous avez perdu votre mot de passe administrateur
 Si vous arrivez à afficher la page web d'administration (forcer le raffraichissement avec CTRL + F5 pour être sur) et que vous n'arrivez pas à vous connectez. Vous avez probablement un mot de passe érroné.
 
-Dans ce cas, à moins d'avoir un accès root actif (en SSH par exemple) auquel cas vous pouvez changer le mot de passe de l'utilisateur admin, vous allez devoir opérer passer en mode rescue.
+Dans ce cas, à moins d'avoir un accès root actif (en SSH par exemple) auquel cas vous pouvez changer le mot de passe de l'utilisateur admin, vous allez devoir opérer en mode rescue.
 
-### Vous avez une erreur de certificat qui vous empèche d'accéder à la webadmin
+TODO
+
+## Vous avez une erreur de certificat qui vous empèche d'accéder à la webadmin
 
 Si vous n'avez jamais activé Let's Encrypt ou que vous accéder à la web admin via une IP ou un domaine locale, vous pouvez accepter le certificat invalide exceptionnellement à condition d'être sur une connexion internet sûre (pas avec Tor Browser par exemple).
 
 Pour y parvenir, il faut aller sur la page d'administration web en utilisant la navigation privée, votre navigateur devrait vous autoriser d'ajouter une exception temporaire pour accéder à la page.
 
-### Vous avez accés en SSH mais pas à la Web admin ou inversement
+## Vous avez accés en SSH mais pas à la Web admin ou inversement
 
-#### Vous avez été banni temporairement
+### Vous avez été banni temporairement
 Votre serveur YunoHost inclu un pare-feu qui banni les IP qui échouent plusieurs fois à se connecter. Dans certains cas, il peut s'agir d'un programme (nextcloud-client) qui est configuré avec un ancien mot de passe ou d'un utilisateur qui utilise la même IP que vous.
 
 Si vous avez été banni en tentant d'accéder à une page web, seul les pages web sont innaccessibles, vous devriez donc pouvoir accéder au serveur en SSH. De même, si vous avez été banni en SSH vous devriez pouvoir accéder à la webadmin.
@@ -31,7 +29,7 @@ Si vous avez été banni à la fois en SSH et à la webadmin, vous pouvez essaye
 
 NB: le banissement dure en général quelques minutes. Le bannissement n'est actif qu'en IPv4.
 
-#### Vous n'avez plus d'espace disque...
+### Vous n'avez plus d'espace disque...
 ... et votre serveur web nginx qui distribue les pages de la web admin ou votre serveur SSH ne fonctionne plus.
 
 Pour vérifier si vous avez de l'espace disque, vous pouvez le faire de puis la web admin TODO ou avec la commande `df -h`.
@@ -42,7 +40,7 @@ Attention, dans certains cas il peut s'agir d'erreur qui arrive tellement souven
 
 A partir de la web admin vous pouvez relancer le service SSH. De même en SSH, vous pouvez redémarrer le serveur web nginx avec la commande `yunohost service start nginx`
 
-#### Vous manquez de RAM et n'avez pas de swap
+### Vous manquez de RAM et n'avez pas de swap
 ... et votre serveur web nginx qui distribue les pages de la web admin ou votre serveur SSH a été tués aléatoirement.
 
 Quand votre serveur n'a plus de ram, il est obligé d'écrire sur le disque dans la swap, si il n'y en a pas, dans ce cas il doit tuer un des processus pour faire de l'espace.
@@ -57,19 +55,19 @@ Pour régler cette situation, vous pouvez soit:
 
 A partir de la web admin vous pouvez relancer le service SSH. De même en SSH, vous pouvez redémarrer le serveur web nginx avec la commande `yunohost service start nginx`
 
-#### Vous avez installé une app qui a cassé votre configuration web
+### Vous avez installé une app qui a cassé votre configuration web
 Si vous avez installé une app de mauvaise qualité, celle-ci peut échouer à l'installation et laisser des bouts de configuration qui vont empécher le redémarrage de votre serveur web nginx qui vous permet d'accéder à la web admin.
 
 Dans ce cas, il faut accéder en SSH et essayer de terminer la suppresion de l'app. Si elle est déjà supprimée, il faut enlever manuellement les résidus de configuration.
 
-#### Votre serveur est accessible en IPv6 mais pas en IPv4 ou inversement
+### Votre serveur est accessible en IPv6 mais pas en IPv4 ou inversement
 Dans un tel cas, il est possible que vous arriviez à accéder à votre web admin en IPv6 mais pas en SSH potentiellement en IPv4 par défaut...
 
 Dans ce cas il faut résoudre votre problème de connectivité.
 
 Dans certains cas une mise à jour de votre box a activé l'ipv6, entrainant des problèmes de configuration au niveau de votre nom de domaine.
 
-### Votre VPN a expiré ou ne se monte plus
+## Votre VPN a expiré ou ne se monte plus
 Si vous utilisez un VPN a IP fixe, peut être que celui-ci est arrivé à expiration ou que l'infrastructure de votre fournisseur est en difficulté.
 
 Dans ce cas, vous pouvez peut être accéder à votre serveur avec son IP locale s'agissant probablement d'un serveur auto-hébergé chez-vous.
@@ -85,20 +83,20 @@ Il faut voir avec votre fournisseur de VPN pour renouveller le VPN et mettre à 
 
 TODO
 
-### Votre routeur ne redirige plus vers votre serveur
+## Votre routeur ne redirige plus vers votre serveur
 Si votre routeur a été remis à zéro ou mis à jour, votre configuration de redirection de port pourrait avoir disparu. De même, l'ipv6 ou le hairpining pourrait avoir été activé.
 
 Typiquement si en tapant votre IP publique vous tombez sur votre box, c'est soit le hairpinning soit la redirectiond e port qui est manquante.
 
-### Votre serveur ping avec son IP, mais pas avec le nom de domaine
-#### Votre nom de domaine a expiré
+## Votre serveur ping avec son IP, mais pas avec le nom de domaine
+### Votre nom de domaine a expiré
 Si votre nom de domaine expire il ne redirigera plus vers votre serveur. 
 
 Vous pouvez vérifier que votre nom de domaine a expiré en vous connectant sur l'interface de votre registrar ou en utilisant le whois par exemple via la commande `whois NOM_DE_DOMAINE`.
 
 Dans ce cas il faut renouveller le nom de domaine (si ile st encore temps.
 
-#### Votre nom de domaine est mal configuré
+### Votre nom de domaine est mal configuré
 Si votre serveur ping avec son ip mais ne ping pas avec le nom de domaine alors il y a un problème de configuration au niveau du champs A.
 
 Si c'est un nom de domaine fournit par YunoHost, lancez 
@@ -110,26 +108,26 @@ Si c'est un autre nom de domaine, il faut mettre à jour votre ipv4 et votre ipv
 
 Attention, si votre IP change régulièrement il faut mettre en place un script qui se lance régulièrement pour mettre à jour votre IP.
 
-#### Votre nom de domaine noho.st, nohost.me, ynh.fr est inacessible suite à une panne de l'infra YunoHost
+### Votre nom de domaine noho.st, nohost.me, ynh.fr est inacessible suite à une panne de l'infra YunoHost
 Il arrive environ trois fois par an que l'infra de YunoHost soit en panne suite à une coupure de courant ou à un problème d'administration système.
 
 Vérifiez sur le forum si d'autre sont signalez le même problème.
 
-### Vous avez perdu l'accès en IPv4 mais vous avez accès en IPv6 ou inversement
+## Vous avez perdu l'accès en IPv4 mais vous avez accès en IPv6 ou inversement
 
 Dans ce cas, il faut tenter d'accéder en SSH avec l'autre IP et essayer de comprendre pourquoi le réseau en IPv4 ou en IPv6 a disparu.
 
 Si ce n'est pas lié à une erreur de configuration réseau sur votre système, il peut être nécessaire d'appeller votre fournisseur de serveur ou d'accès à internet pour vérifier que le problème n'ets pas chez eux.
 
-### Vous avez perdu l'accès en IPv4 (ET en IPv6 le cas échéant)
+## Vous avez perdu l'accès en IPv4 (ET en IPv6 le cas échéant)
 Vous pouvez le vérifier en tentant de faire des ping sur votre serveur en IPv4 et en IPv6.
 
 Dans ce cas, vous devriez essayer de brancher un clavier/écran sur votre serveur ou d'y accéder par VNC si c'est un serveur distant.
 
-#### Vous pouvez vous connecter avec l'utilisateur admin et le mot de passe
+### Vous pouvez vous connecter avec l'utilisateur admin et le mot de passe
 A partir de là vous devriez diagnostiquer votre problème réseau le réparer ou si ce n'est pas lié au système contacter le support de votre fournisseur de serveur ou de connexion Internet.
 
-#### Votre serveur est coincé au démarrage
+### Votre serveur est coincé au démarrage
 Dans certains cas, votre serveur peut rester coincer au démarrage. Il peut s'agir d'un problème suite à l'installation d'un nouveau kernel. Essayez de choisir un autre kernel avec VNC ou avec l'écran lors du boot.
 
 Si vous êtes en grub rescue, dans ce cas il peut s'agir d'un problème de configuration de grub ou d'un disque corrompu.
@@ -140,7 +138,7 @@ Si les disques sont corrompus et difficile à monter, il faut sauvegarder les do
 
 Sinon, relancer grub-update et grub-install en chroot ou avec systemd-nspawn.
 
-#### L'accès en VNC ou via écran ne fonctionne pas
+### L'accès en VNC ou via écran ne fonctionne pas
 Dans ce cas il peut s'agir d'un problème matèriel sur votre serveur physique ou d'un problème d'hyperviseur si c'est un VPS.
 
 Si c'est une machine loué contacter le support de votre fournisseur. Sinon essayez de dépanner votre machine en retirant les composants qui peuvent être en panne.
