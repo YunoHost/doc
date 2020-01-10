@@ -19,6 +19,7 @@ A list of French and Belgian ISPs is available on the [french page](/isp_fr).
 | Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
 | --- | --- | --- | --- | --- | --- | --- |
 | BT Internet | - | - | Yes| - | - | No |
+| Virgin Media | Yes | - | - | - | No | No |
 
 ### Brazil
 | Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
