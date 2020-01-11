@@ -37,6 +37,11 @@ What happens if my server becomes unavailable ?
 
 If your server becomes unavailable, emails sent to your server will stay in a pending queue on the sender's side for as long as ~5 days. The sender's hoster will regularly try to resend the email, until it drops it if it was unable to send it.
 
+## Forms to remove its IP address from the blacklist
+It is possible that the sent emails from your YunoHost instance are considered as spam by the big email services.
+Is it possible that the IP address from your server have been previously been used to sent spam or that these email services consider your server as a spam sender.
+To ensure that your servers’ IP address isn’t into this blacklists and to remove it from them, follow this [link](/blacklist_forms).
+
 Migrating email from an email provider to a YunoHost instance
 -------------------------------------------------------------
 
