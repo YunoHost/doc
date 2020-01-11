@@ -29,6 +29,7 @@
     * [Les applications](/apps_overview_fr)
     * [Les domaines, la configuration DNS et les certificats](/domains_fr)
     * [Les emails](/email_fr)
+       * [Formulaires pour enlever son adresse IP des listes noires](/blacklist_forms_fr)
     * [XMPP](/XMPP_fr)
     * [Les sauvegardes](/backup_fr)
     * [Mettre à jour le système](/update_fr) et [les applications](/app_update_fr)
@@ -53,4 +54,3 @@
 * [Guide de dépannage](/troubleshooting_guide_fr)
     * [Débloquer une IP dans Fail2ban](/fail2ban_fr)
     * [Changer le mot de passe d’administration](/change_admin_password_fr)
-    * [Formulaires pour enlever son IP des listes noires](/blacklist_forms_fr)

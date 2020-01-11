@@ -3,7 +3,7 @@ Emails
 
 YunoHost est livré avec un écosystème complet de serveur mail, vous permettant d'héberger votre propre serveur de messagerie, et donc d'avoir vos propres adresses email dans `quelquechose@votre.domaine.tld`.
 
-Cet écosystème comprends un serveur SMTP (postfix), un serveur IMAP (Dovecot), un antispam (rspamd) et une configuration DKIM.
+Cet écosystème comprend un serveur SMTP (postfix), un serveur IMAP (Dovecot), un antispam (rspamd) et une configuration DKIM.
 
 S'assurer que votre configuration est correcte
 -------------------------------
@@ -36,6 +36,11 @@ Que se passe-t-il si mon serveur devient indisponible ?
 -----------------------------------------------
 
 Si votre serveur devient indisponible, les courriels envoyés à votre serveur resteront dans une file d'attente du côté de l'expéditeur pendant environ 5 jours. L'hébergeur de l'expéditeur tentera régulièrement de renvoyer le courrier, jusqu'à ce qu'il le jette s'il n'a pas pu l'envoyer.
+
+## Formulaires pour enlever son adresse IP des listes noires
+Il est possible que les emails envoyés depuis votre instance YunoHost soient considérés comme du spam par les grands services de mails.
+Il est possible que l’adresse IP de votre serveur a autrefois été utilisé pour envoyé du spam ou que ces services de mails considèrent votre serveur comme émetteur de spams.
+Pour s’assurer que l’adresse IP de votre serveur n’est pas dans ces listes et pour l’enlever dans le cas échéant suivez ce [lien](/blacklist_forms_fr).
 
 
 Pour aller plus loin

@@ -29,6 +29,7 @@
     * [Applications](/apps_overview)
     * [Domains, DNS and certificates](/domains)
     * [Email](/email)
+       * [Forms to remove its IP address from the black lists](/blacklist_forms)
     * [XMPP](/XMPP)
     * [Backup](/backup)
     * [Updating the system](/update) and [apps](/app_update)
