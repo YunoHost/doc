@@ -151,8 +151,8 @@ Vous pouvez suivre ce tutoriel sur le forum pour mettre en place Borg entre deux
 
 Il existe aussi l'application Archivist qui permet un système similaire : https://forum.yunohost.org/t/new-app-archivist/3747
 
-#### Evier de sauvegarder certains dossiers
-Si besoin, vous pouvez spécifier que certains dossiers `home` d'utilisateurs ne soient pas sauvegardés par la commande `yunohost backup`, en créant à la racine un fichier vide nommé `.nobackup`.
+#### Eviter de sauvegarder certains dossiers
+Si besoin, vous pouvez spécifier que certains dossiers `home` d'utilisateurs ne soient pas sauvegardés par la commande `yunohost backup`, en créant un fichier vide nommé `.nobackup` à l'intérieur.
 
 #### Backup complet avec `dd`
 
