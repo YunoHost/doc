@@ -47,14 +47,11 @@ The latest Rasbpian images requires a screen and a keyboard, as it is no longer 
 
 0. Install Raspbian Stretch Lite on the SD card ([instructions](https://www.raspberrypi.org/downloads/raspbian/)). The Raspbian Stretch Lite can be found here: https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-04-09/
 
-1. Connect to your Raspberry Pi with the user `pi`. Set the root password with 
-```bash
-sudo passwd root
-```
+1. on the `boot` partition you create a file called `ssh` to activate ssh connection
 
-2. Edit `/etc/ssh/sshd_config` to allow ssh login for root, by replacing `PermitRootLogin without-password` with `PermitRootLogin yes`. Reload the ssh daemon with `service ssh reload`.
+2. connect to your raspberry using ssh `ssh pi@IP_ADDRESS`
 
-3. Disconnect and reconnect, this time as root.
+3. run `$ sudo su`
 
 4. Then follow the <a href="/install_manually">generic manual install procedure</a>.
 
