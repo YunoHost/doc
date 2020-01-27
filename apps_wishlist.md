@@ -62,6 +62,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Jellyfin](https://github.com/jellyfin)
 - [JS Bin](http://jsbin.com/help/2-second-setup) / [github](https://github.com/jsbin/)
 - [Joplin](http://joplin.cozic.net/) / [github](https://github.com/laurent22/joplin)
+- [Joplin-web](https://github.com/foxmask/joplin-web) / [github](https://github.com/foxmask/joplin-web)
 - [Kiwix](http://www.kiwix.org/) Offline wikipedia / [github](https://github.com/kiwix/)
 - [Known](https://withknown.com) / [github](https://github.com/idno/known)
 - [Koel](http://koel.phanan.net) / [github](https://github.com/phanan/koel)
