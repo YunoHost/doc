@@ -19,7 +19,7 @@ Pour éviter cette confusion, il est possible d’obtenir un certificat, reconnu
 Avant de chercher à installer un certificat Let's Encrypt, assurez vous que
 votre DNS est correctement configuré (votre.domaine.tld doit pointer sur l'IP
 de votre serveur) et que votre site est accessible en HTTP depuis l'extérieur
-(i.e. qu'au moins le port 80 est correctement redirigé vers votre serveur).
+(c.-à-d. qu'au moins le port 80 est correctement redirigé vers votre serveur).
 
 #### Via l'interface d'administration web
 

@@ -57,7 +57,7 @@ votre navigateur ou la ligne de commande, alors félicitations !
 
 - Si vous vous auto-hébergez à la maison et sans VPN, il faut vous assurer
   de bien [rediriger les ports de votre box internet](isp_box_config_fr) ;
-- Si vous utilisez votre propre nom de domaine (i.e. pas un nohost.me /
+- Si vous utilisez votre propre nom de domaine (c.-à-d. pas un nohost.me /
   noho.st), il vous faut [configurer le nom de domaine d'après la configuration
   recommandée](dns_config_fr) ;
 - Si vous ne pouvez pas configurer le nom de domaine pour le moment (parce qu'il
