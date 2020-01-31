@@ -149,6 +149,9 @@ You can follow this tutorial on the forum to setup Borg between two servers : <h
 
 Alternatively, the app Archivist allows to setup a similar system : <https://forum.yunohost.org/t/new-app-archivist/3747>
 
+#### Avoiding the backup of some folders
+If needed, you can specify that some `/home/user` folders are left out of the `yunohost backup` command, by creating a blank file named `.nobackup` in them.
+
 #### Full backup with `dd`
 
 If you are using an ARM board, another method for doing a full backup can be to create an image of the SD card. For this, poweroff your ARM board, get the SD card in your computer then create a full image with something like :
