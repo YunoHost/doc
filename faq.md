@@ -1,7 +1,7 @@
 # Frequently Asked Questions
 
 
-#### Under which licence is YunoHost distributed?
+#### Under which license is YunoHost distributed?
 
 YunoHost packages are under free licenses GNU AGPL v.3.
 
@@ -13,7 +13,7 @@ Applications and applications packages have their own licenses.
 #### What's YunoHost goal?
 
 We believe that decentralizing the Internet, and empowering people to take control and
-responsability back over their own data and services, is a crucial issue to guarantee
+responsibility back over their own data and services, is a crucial issue to guarantee
 a free and democratic society.
 
 The YunoHost project aims to democratize self-hosting.
@@ -30,14 +30,14 @@ work for you.
 
 For instance, if you wanted to install Wordpress, you would need to type a bunch
 of commands to create some users, setup a web server, setup a SQL server,
-download the wordpress archive, uncompress it, configure the web server,
-configure the SQL database, and finally configure wordpress. YunoHost handles
+download the Wordpress archive, uncompress it, configure the web server,
+configure the SQL database, and finally configure Wordpress. YunoHost handles
 the technical details and "types all these commands for you", so that you can focus
 on what really matters.
 
 More info on [this page](whatsyunohost) !
 
-#### Can I host my own personnal website with YunoHost?
+#### Can I host my own personal website with YunoHost?
 
 Yes! Have a look at the [Custom Web app](https://github.com/YunoHost-Apps/my_webapp_ynh).
 It provides an "empty shell" : after installing it, just upload your files
