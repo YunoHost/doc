@@ -12,7 +12,7 @@ L'objectif cette page est de décrire le processus de migration d'une instance e
 
 - Si vous ou vos utilisateurs utilisez des clients emails externes (typiquement Thunderbird ou K9Mail) : le port SMTP a changé. Il s'agissait auparavant du port 465 (avec SSL/TLS) qui a été remplacé par 587 (STARTTLS). Voir [cette page de doc dédiée à la configuration des clients mails](/email_configure_client). La configuration des webmails comme Rainloop doit également être mise à jour, en passant par l'interface d'administration dédiée.
 
-- Pour les utilisateurs avancés : si vous avez des scripts personnels pour faire des backups, certains changements cassent (de façon mineure) la rétrocompatibilité de la ligne de commande. Les options dépréciées `--hooks`/`--ignore-hooks` ont été enlevées, ainsi que `--ignore-apps`, `--ignore-system`. Pour rendre les choses plus intuitives, `yunohost backup create --apps wordpress` (par exemple) créera uniquement un backup de wordpress, i.e. pas besoin d'ajouter `--ignore-system` pour ne pas backuper le système.
+- Pour les utilisateurs avancés : si vous avez des scripts personnels pour faire des backups, certains changements cassent (de façon mineure) la rétrocompatibilité de la ligne de commande. Les options dépréciées `--hooks`/`--ignore-hooks` ont été enlevées, ainsi que `--ignore-apps`, `--ignore-system`. Pour rendre les choses plus intuitives, `yunohost backup create --apps wordpress` (par exemple) créera uniquement un backup de wordpress, c.-à-d. pas besoin d'ajouter `--ignore-system` pour ne pas backuper le système.
 
 ## Procédure de migration
 
