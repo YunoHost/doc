@@ -2,4 +2,5 @@
 
 page d'accueil : https://github.com/YunoHost-Apps/yunofav_ynh
 
-Fonctionnalité : Crée une page pour vos liens préférés, en utilisant les tuiles Yunohost look and feel.
+
+Fonctionnalité : Crée une page pour vos liens préférés, en utilisant le style et le fonctionnement des tuiles Yunohost.
