@@ -1,12 +1,12 @@
 # <img src="/images/pleroma_logo.png" alt="logo de Pleroma"> Pleroma
 
  - [Découverte de l'interface de Pleroma](#d%C3%A9couverte-de-linterface-de-pleroma)
- - [Logiciels Clients pour mobile et ordinateur](#applications-clients-)
- - [Liens utiles](#liens-utiles)
+ - [Logiciels Clients pour mobile et ordinateur](#applications-clients)
+ - [Liens utiles](#quleques-liens-utiles)
 
 Pleroma est un réseau social décentralisé de micro-blogging qui propose une alternative à Twitter, le protocole Activy Pub qu'il utilise permet d'interagir avec le fediverse composé notamment de Mastodon, GNU Social, et d'autres. Il a l'avantage d'être plus léger que mastodon et se prête donc plus facilement à l'auto-hébergement.
 
-## <a name="decouvertegeneralepleroma"></a>Découverte de l'interface de Pleroma
+## Découverte de l'interface de Pleroma
 
 Pour ceux et celles qui n'ont pas ou peu l'habitude des réseaux sociaux, voici en détail l'utilisation de chacune des fenêtres proposées.
 
@@ -28,7 +28,7 @@ Pour ceux et celles qui n'ont pas ou peu l'habitude des réseaux sociaux, voici 
 C'est ici le centre ~~du monde~~ de Pleroma, vous pourrez y voir les différentes publications de vos contacts ou qui circulent sur l'instance ainsi que les re-toots et qui a publié. 
 
 4. Le journal  
-Cette zone permet de voir les différentes publications des comptes que vous suivez mais aussi l'ensemble des publications visibles sur votre instance. Vous trouverez aussi les messages privés et les notifications où vous trouverez tous vos toots et les publications où vous avez été cité.
+Cette zone permet de voir les différentes publications des comptes que vous suivez mais aussi l'ensemble des publications visibles sur votre instance. Vous trouverez ahttps://github.com/Mellerin/doc/blob/master/app_pleroma_fr.md#applications-clients-ussi les messages privés et les notifications où vous trouverez tous vos toots et les publications où vous avez été cité.
 
 5. Interface utilisateur·trice  
 Cet espace permet de choisir l'agencement de Pleroma, il est proposé deux agencements : un spécifique à Pleroma et un fork (une copie) de l'agencement de Mastodon, selon vos préférences d'usages et de visualisations ; à vous de faire votre choix.
@@ -36,7 +36,7 @@ Cet espace permet de choisir l'agencement de Pleroma, il est proposé deux agenc
 6. Notifications  
 On retrouve dans cette zone les messages où vous avez été cité, mais aussi les abonnements à votre compte.
 
-## <a name="LogicielsClients"></a>Applications clients
+## Applications clients
 
 | Nom de l'applications | Plateforme | Multi-comptes | Autre réseaux supportés | Play Store | F-Droid | Apple Store |
 |---|---|---|---|---|---|---|
@@ -45,7 +45,7 @@ On retrouve dans cette zone les messages où vous avez été cité, mais aussi l
 | Twidere | Android | Oui | Twitter, Mastodon | [play.google.com/org.mariotaku.twidere](https://play.google.com/store/apps/details?id=org.mariotaku.twidere) | [https://f-droid.org/org.mariotaku.twidere](https://f-droid.org/fr/packages/org.mariotaku.twidere/) | 
 | Librem Social | Android | Non | ? | [play.google.com/one.librem.social](https://play.google.com/store/apps/details?id=one.librem.social&hl=fr) | [https://f-droid.org/one.librem.social](https://f-droid.org/fr/packages/one.librem.social) | |
 
-## <a name="liensutiles"></a>Quelques liens utiles
+## Quelques liens utiles
 
 + Site officiel : [pleroma.social (En anglais)](https://pleroma.social)
 + Trouver d'autres instances de Pleroma : [fediverse.network/pleroma](https://fediverse.network/pleroma)
