@@ -37,7 +37,7 @@ Enfin cliquer sur la coche pour valider le dossier.
 
 #### II. Migrer les données de Nextcloud dans une partition plus grosse
 
-**Remarque** : Ce qui suit suppose que vous avez un disque dur monté sur `/media/stockage`. Référez-vous à [cet article](/external_storage_fr) pour préparer votre système.
+**Remarque** : Ce qui suit suppose que vous avez un disque dur monté sur `/media/stockage`. Référez-vous à [cet article](/external_storage_fr.md) pour préparer votre système.
 
 **Remarque** : Remplacez `nextcloud` par le nom de son instance, si vous avez plusieurs apps Nextcloud installées.
 
