@@ -31,6 +31,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Croodle](https://github.com/jelhan/croodle) Schedule a date or to do a poll on a general topics, with client-side encryption.
 - [Darkwire.io](https://github.com/seripap/darkwire.io)
 - [DirectoryLister](https://github.com/DirectoryLister/DirectoryLister)
+- [Draw.io](https://github.com/jgraph/drawio) : a diagram online creator
 - [EasyAppointments](https://easyappointments.org/) Online appointment booker (similar to Doodle)
 - [eLabFTW](https://www.elabftw.net/) electronic lab notebook / [github](https://github.com/elabftw/elabftw)
 - [Emoncms](https://github.com/emoncms/emoncms)
