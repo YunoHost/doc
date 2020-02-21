@@ -92,6 +92,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Nuage](https://nuage.kerjean.me/login) / [github](https://github.com/mickael-kerjean/filestash)
 - [Ombi](https://github.com/tidusjar/Ombi)
 - [OpenBazaar](https://openbazaar.org) / [github](https://github.com/openbazaar)
+- [OpenCart](https://www.opencart.com) / [github](https://github.com/opencart/opencart)
 - [openHAB](https://www.openhab.org/) - Smart home platform. / [github](https://github.com/openhab)
 - [OpenProject](https://github.com/opf/openproject)
 - [OpenSourceBilling](https://github.com/vteams/open-source-billing)
