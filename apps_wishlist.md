@@ -70,6 +70,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Kontalk](https://kontalk.org) / [github](https://github.com/kontalk)
 - [Koozip](http://koozic.net) / [github](https://github.com/DocMarty84/koozic)
 - [L'atelier](https://github.com/jbl2024/latelier)
+- [Lemmy](https://dev.lemmy.ml) / [github](https://github.com/dessalines/lemmy) A federated alternative to reddit. 
 - [Lessy](https://lessy.io) / [github](https://github.com/lessy-community/lessy)
 - [LibreOffice Online](https://wiki.documentfoundation.org/ReleaseNotes/5.3/fr#LibreOffice_Online)
 - [LiquidSoap](http://savonet.sourceforge.net/) / [github](https://github.com/savonet/liquidsoap)
