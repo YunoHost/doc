@@ -27,6 +27,9 @@ To ease your usage of this CI, a small script can be used to copy your apps to y
 
 Copy this [script](https://raw.githubusercontent.com/YunoHost/CI_package_check/master/dev_CI/Send%20CI%20dev.sh) into your usual working directory and fill it with your info.
 
+Make sure the content of your `check_process` file is correct then transfer your files.
+When your files have been transfered, you can monitor the CI pipeline on https://ci-apps-dev.yunohost.org.
+
 ---
 
 # Other continuous integration servers
