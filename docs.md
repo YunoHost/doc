@@ -27,5 +27,6 @@ YunoHost's documentation has 2 different sections:
    * [Communication](/communication_en)
    * [Support / Help](/help)
 
-* Use example:
+* Use examples:
    * [YunoHost for non-profit organisations](/use_case_non-profit_organisations_en)
+   * [Yunohost for decentralised grassroot movements](/use_case_grassroot_movements_en)
