@@ -129,7 +129,7 @@ $ yunohost user permission update mail --remove all_users --add bob
 Notes for apps packagers
 ------------------------
 
-By default, installing an app creates the permission `app.main` with `all_users` allowed by default.
+Installing an app creates the permission `app.main` with `all_users` allowed by default.
 
 If you wish to make the application publicly available, instead of the old `unprotected_urls` mechanism, you should give access to the special groups `visitors`:
 
@@ -158,5 +158,124 @@ Applications scripts should absolutely **NOT** mess up with any already-existing
 When migrating away from the legacy permission, you should:
 - remove any management of `$is_public`-like or `$admin_user`-like setting, except for any manifest question meant to either *initialize* the app as public/private or specific permissions ;
 - remove any management of `skipped_`, `unprotected_` and `protected_uris` (and `_regex`) settings that are now considered obsolete and deprecated. (N.B.: you should **explicitly delete them in the upgrade script**). Instead, you should now rely on the new `ynh_permission_*` helpers instead. If you do feel like you still need to use them, please contact the core team to provide your feedback and we'll figure out something ;
-- remove any call to `yunohost app addaccess` and similar actions that are now obsolete and deprecated.
+For example, in the upgrade script if you used the `protected_uris` key before, you may use this code in the `DOWNWARD COMPATIBILITY` section:
+```bash
+protected_uris=$(ynh_app_setting_get --app=$app --key=protected_uris)
 
+# Unused with the permission system
+if [ ! -z "$protected_uris" ]; then
+	ynh_app_setting_delete --app=$app --key=protected_uris
+fi
+```
+
+- remove any call to `yunohost app addaccess` and similar actions that are now obsolete and deprecated.
+- if your app use LDAP and support filter, use the filter `'(&(objectClass=posixAccount)(permission=cn=YOUR_APP.main,ou=permission,dc=yunohost,dc=org))'` to allow users who have this permission. (A complete documentation of LDAP [here](https://moulinette.readthedocs.io/en/latest/ldap.html) if you want to undestand how it works with YunoHost)
+
+Here an example of how to migrate the code from legacy to new permission system: [example](https://github.com/YunoHost/example_ynh/pull/111/files)
+
+#### Specific case: regex protection
+
+If you still need to use regex to protect or unprotect urls, you can't use the new permission system (for now).
+
+But you can create a fake permission and use hooks to handle if there is a change in this faked permission.
+
+In the install script, create the fake permission (with no url):
+
+`ynh_permission_create --permission="create poll" --allowed="visitors"`
+
+Then use the legacy protection:
+
+```bash
+# Make app public if necessary
+if [ $is_public -eq 1 ]
+then
+	if [ "$path_url" == "/" ]; then
+	    # If the path is /, clear it to prevent any error with the regex.
+	    path_url=""
+	fi
+	# Modify the domain to be used in a regex
+	domain_regex=$(echo "$domain" | sed 's@-@.@g')
+	ynh_app_setting_set --app=$app --key=unprotected_regex --value="$domain_regex$path_url/create_poll.php?.*$","$domain_regex$path_url/adminstuds.php?.*"
+else
+	ynh_permission_update --permission="create poll" --remove="visitors"
+fi
+```
+
+In this example, if the app is public the group `visitors` has access to the permission `create poll`, the group is removed from this permission otherwise.
+
+Then create two files in the directory `hooks` at the root of the git repository: `post_app_addaccess` and `post_app_removeaccess`. In these hooks, you'll remove or readd the regex protection if the `visitors` group is add or remove from this permission:
+
+`post_app_addaccess`:
+
+```bash
+#!/bin/bash
+
+# Source app helpers
+source /usr/share/yunohost/helpers
+
+app=$1
+added_users=$2
+permission=$3
+added_groups=$4
+
+if [ "$app" == __APP__ ]; then
+    if [ "$permission" = "create poll" ]; then # The fake permission "create poll" is modifed.
+        if [ "$added_groups" = "visitors" ]; then # As is it a fake permission we can only grant/remove the "visitors" group.
+            domain=$(ynh_app_setting_get --app=$app --key=domain)
+            path_url=$(ynh_app_setting_get --app=$app --key=path)
+
+            if [ "$path_url" == "/" ]; then
+                # If the path is /, clear it to prevent any error with the regex.
+                path_url=""
+            fi
+            # Modify the domain to be used in a regex
+            domain_regex=$(echo "$domain" | sed 's@-@.@g')
+            ynh_app_setting_set --app=$app --key=unprotected_regex --value="$domain_regex$path_url/create_poll.php?.*$","$domain_regex$path_url/adminstuds.php?.*"
+
+            # Sync the is_public variable according to the permission
+            ynh_app_setting_set --app=$app --key=is_public --value=1
+
+            yunohost app ssowatconf
+        else
+            ynh_print_warn --message="This app doesn't support this authorisation, you can only add or remove visitors group."
+        fi
+    fi
+fi
+```
+
+`post_app_removeaccess`
+
+```bash
+#!/bin/bash
+
+# Source app helpers
+source /usr/share/yunohost/helpers
+
+app=$1
+removed_users=$2
+permission=$3
+removed_groups=$4
+
+if [ "$app" == __APP__ ]; then
+    if [ "$permission" = "create poll" ]; then # The fake permission "create poll" is modifed.
+        if [ "$removed_groups" = "visitors" ]; then # As is it a fake permission we can only grant/remove the "visitors" group.
+            
+            # We remove the regex, no more protection is needed.
+            ynh_app_setting_delete --app=$app --key=unprotected_regex
+
+            # Sync the is_public variable according to the permission
+            ynh_app_setting_set --app=$app --key=is_public --value=0
+
+            yunohost app ssowatconf
+        else
+            ynh_print_warn --message="This app doesn't support this authorisation, you can only add or remove visitors group."
+        fi
+    fi
+fi
+```
+
+Don't forget to replace `__APP__` during the install/upgrade script.
+
+Here some apps that use this specific case: [Lutim](https://github.com/YunoHost-Apps/lutim_ynh/pull/44/files) and [Opensondage](https://github.com/YunoHost-Apps/opensondage_ynh/pull/59/files)
+
+If you have any questions, please contact someone from the apps-group.
