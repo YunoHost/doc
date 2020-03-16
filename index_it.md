@@ -18,7 +18,7 @@
       <span class="yolo 10" style="color: #FF5050;">dude, Y U NO Host?!</span>
       <span class="yolo 11" style="color: #66FF33;">Keep calm and host yourself</span>
     </p>
-    <button class="btn btn-primary btn-lg btn-block yolobtn">Scusa?</button>
+    <button class="btn btn-primary btn-lg btn-block yolobtn">COSA?</button>
   </div>
 
   <div class="main-links hidden-xs">
