@@ -12,3 +12,5 @@ Les guides d'installations peuvent être trouvés sur [cette page](/install_fr).
 * Processeur 500MHz
 * 512 Mo de RAM (recommandée : 1Go pour pouvoir faire tourner les services et applications correctement)
 * 8 Go d'espace de stockage (recommandé : 32 Go pour pouvoir stocker emails et documents)
+
+plop =) 
