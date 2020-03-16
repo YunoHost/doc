@@ -1,7 +1,7 @@
 Sauvegarder son serveur et ses apps
 ===================================
 
-Dans le contexte de l'auto-hébergement, les sauvegardes (backup) sont un élément important pour palier à des événements inattendus (incendies, corruption de base de données, perte d'accès au serveur, serveur compromis, ...). La politique de sauvegardes à mettre en place dépend de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez être très prudent si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les sauvegardes *dans un endroit différent*.
+Dans le contexte de l'auto-hébergement, les sauvegardes (backup) sont un élément important pour palier les événements inattendus (incendies, corruption de base de données, perte d'accès au serveur, serveur compromis, ...). La politique de sauvegardes à mettre en place dépend de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez être très prudent si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les sauvegardes *dans un endroit différent*.
 
 Les sauvegardes avec YunoHost
 -----------------------------
@@ -150,9 +150,6 @@ Soyez prudent à propos de ce que vous sauvegardez et de la fréquence : il vaut
 Vous pouvez suivre ce tutoriel sur le forum pour mettre en place Borg entre deux serveurs : https://forum.yunohost.org/t/how-to-backup-your-yunohost-server-on-another-server/3153
 
 Il existe aussi l'application Archivist qui permet un système similaire : https://forum.yunohost.org/t/new-app-archivist/3747
-
-#### Eviter de sauvegarder certains dossiers
-Si besoin, vous pouvez spécifier que certains dossiers `home` d'utilisateurs ne soient pas sauvegardés par la commande `yunohost backup`, en créant un fichier vide nommé `.nobackup` à l'intérieur.
 
 #### Backup complet avec `dd`
 
