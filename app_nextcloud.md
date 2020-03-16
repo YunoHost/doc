@@ -9,18 +9,18 @@
 
 Nextcloud is a file hosting service, many applications can be installed to offer it new features such as a calendar, a directory, notes and many others (you can find some applications in the [third-party applications](#AppsTiers) part  but there are many others depending on your needs).
 
-## Discovering the Nextcloud environment <a name="EnvironmentNextcloud" href=""></a>
+## Discovering the Nextcloud environment <a name="EnvironmentNextcloud"></a>
 
 Due to the creation of Nextcloud, a database with third-party applications to install, this chapter will only concern the nextcloud database without added applications. More information on applications in the dedicated section or in the nextcloud application catalogue: [apps.nextcloud.com](https://apps.nextcloud.com).  
 Nextcloud is before a cloud service (like Seafile and others), it allows synchronization and file sharing on the Internet and between several terminals (computers, smartphone) but also with several people. 
 
-## Mobile and computer client software <a name="ClientSoftware" href=""></a>
+## Mobile and computer client software <a name="ClientSoftware"></a>
 
 There are client software for all platforms. You can find them on the official nextcloud website: https://nextcloud.com/install/#install-clients
 
-## Useful Manipulations & Problems Encountered <a name="UtileManipulations" href=""></a>
+## Useful Manipulations & Problems Encountered <a name="UtileManipulations"></a>
 
-### Add storage space <a name="AddSpace" href=""></a>
+### Add storage space <a name="AddSpace"></a>
 
 Solution I. allows you to add a link to a local or remote folder.  
 Solution II. allows to move the main storage space of nextcloud.
@@ -156,14 +156,16 @@ The options to disable (Off) are:
 
 Save and clean your caches (Cloudflare, browser,...) and that's it.
 
-## Third Party Applications <a name="AppsTiers" href=""></a>
+## Third Party Applications <a name="AppsTiers"></a>
 
  - [Calendrier](app_nextcloud_calendar)
  - [contact](app_nextcloud_contact)
  - [KeeWeb](app_nextcloud_keeweb)
  - [Carnet](app_nextcloud_carnet)
 
-## Useful links <a name="UsefulLinks" href=""></a>
+## Useful links <a name="UsefulLinks"></a>
 
  - Official website : [nextcloud.com](https://nextcloud.com/)  
  - Application catalogue for nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com/)  
+ - Find help and ask all your questions : [forum.yunohost.org](https://forum.yunohost.org/c/support)  
+
