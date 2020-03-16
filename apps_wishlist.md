@@ -31,6 +31,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Croodle](https://github.com/jelhan/croodle) Schedule a date or to do a poll on a general topics, with client-side encryption.
 - [Darkwire.io](https://github.com/seripap/darkwire.io)
 - [DirectoryLister](https://github.com/DirectoryLister/DirectoryLister)
+- [Draw.io](https://github.com/jgraph/drawio) : a diagram online creator
 - [EasyAppointments](https://easyappointments.org/) Online appointment booker (similar to Doodle)
 - [eLabFTW](https://www.elabftw.net/) electronic lab notebook / [github](https://github.com/elabftw/elabftw)
 - [Emoncms](https://github.com/emoncms/emoncms)
@@ -69,6 +70,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Kontalk](https://kontalk.org) / [github](https://github.com/kontalk)
 - [Koozip](http://koozic.net) / [github](https://github.com/DocMarty84/koozic)
 - [L'atelier](https://github.com/jbl2024/latelier)
+- [Lemmy](https://dev.lemmy.ml) / [github](https://github.com/dessalines/lemmy) A federated alternative to reddit. 
 - [Lessy](https://lessy.io) / [github](https://github.com/lessy-community/lessy)
 - [LibreOffice Online](https://wiki.documentfoundation.org/ReleaseNotes/5.3/fr#LibreOffice_Online)
 - [LiquidSoap](http://savonet.sourceforge.net/) / [github](https://github.com/savonet/liquidsoap)
@@ -91,6 +93,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Nuage](https://nuage.kerjean.me/login) / [github](https://github.com/mickael-kerjean/filestash)
 - [Ombi](https://github.com/tidusjar/Ombi)
 - [OpenBazaar](https://openbazaar.org) / [github](https://github.com/openbazaar)
+- [OpenCart](https://www.opencart.com) / [github](https://github.com/opencart/opencart)
 - [openHAB](https://www.openhab.org/) - Smart home platform. / [github](https://github.com/openhab)
 - [OpenProject](https://github.com/opf/openproject)
 - [OpenSourceBilling](https://github.com/vteams/open-source-billing)
