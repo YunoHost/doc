@@ -149,3 +149,4 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Zoneminder](https://github.com/ZoneMinder/zoneminder)
 - [Zulip](https://zulipchat.com/) / [github](https://github.com/zulip/zulip)
 - [Yggdrasil](https://yggdrasil-network.github.io/) / [github](https://github.com/yggdrasil-network/yggdrasil-go)
+- [WiseMapping](http://www.wisemapping.com/inyourserver.html) / [developpement](https://bitbucket.org/wisemapping/wisemapping-open-source)
