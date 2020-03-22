@@ -71,7 +71,7 @@ Une autre solution alternative consiste à installer une application comme Nextc
 Enfin, il est possible d'utiliser `scp` (un programme basé sur [`ssh`](/ssh)) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous Linux, vous pouvez utiliser la commande suivante pour télécharger une archive :
 
 ```bash
-scp admin@your.domain.tld:/home/yunohost.backup/archives/<nom_d'archive>.tar.gz ./
+scp -P 9777 admin@your.domain.tld:/home/yunohost.backup/archives/<nom_d'archive>.tar.gz ./
 ```
 
 De façon similaire, vous pouvez téléverser une sauvegarde depuis une machine vers votre serveur avec :
