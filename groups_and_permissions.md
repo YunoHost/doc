@@ -134,7 +134,7 @@ Installing an app creates the permission `app.main` with `all_users` allowed by 
 If you wish to make the application publicly available, instead of the old `unprotected_urls` mechanism, you should give access to the special groups `visitors`:
 
 ```bash
-ynh_permission_update --permission "main" --add "visitors"
+ynh_permission_update --permission "main" --add "all_users" "visitors"
 ```
 
 If you wish to create a custom permission for your app (e.g. to restrict access to an admin interface) you may use the following helpers:
@@ -182,7 +182,7 @@ But you can create a fake permission and use hooks to handle if there is a chang
 
 In the install script, create the fake permission (with no url):
 
-`ynh_permission_create --permission="create poll" --allowed="visitors"`
+`ynh_permission_create --permission="create poll" --allowed "visitors" "all_users"`
 
 Then use the legacy protection:
 
