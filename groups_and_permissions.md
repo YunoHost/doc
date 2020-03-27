@@ -134,7 +134,7 @@ Installing an app creates the permission `app.main` with `all_users` allowed by 
 If you wish to make the application publicly available, instead of the old `unprotected_urls` mechanism, you should give access to the special groups `visitors`:
 
 ```bash
-ynh_permission_update --permission "main" --add "all_users" "visitors"
+ynh_permission_update --permission "main" --add visitors
 ```
 
 If you wish to create a custom permission for your app (e.g. to restrict access to an admin interface) you may use the following helpers:
