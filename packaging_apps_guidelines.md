@@ -113,7 +113,7 @@ These deposits have several functions:
 * indicate the state of operation of the packet;
 * indicate information about the support of a package.
 
-For the `official.json` and` community.json` lists maintained by the project team, registration is on [the git apps repository](https://github.com/YunoHost/apps). Other non-official lists may exists (including those for non-free apps for example), see more about that in the [community forum](https//forum.yunohost.org).
+For the `apps.json` list maintained by the project team, registration is on [the git apps repository](https://github.com/YunoHost/apps). Other non-official lists may exists (including those for non-free apps for example), see more about that in the [community forum](https//forum.yunohost.org).
 
 #### YEP 1.3
 ##### Indicate the license associated with the package | draft | AUTO | WORKING |
