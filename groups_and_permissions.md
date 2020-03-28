@@ -1,7 +1,10 @@
 User groups and permissions
 ===========================
 
-Warning : for now, these features are only available through the command line (c.f. `yunohost user group --help` and `yunohost user permission --help`)
+You can access the group and permissions management interface from the webadmin
+by going into the 'Users' section and clicking the corresponding button:
+
+![](./images/button_to_go_to_permission_interface.png)
 
 Managing groups
 ---------------
