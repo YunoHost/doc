@@ -88,7 +88,7 @@ pouvez, c’est déjà trop cool !
 
 #### Quel est le modèle politique de YunoHost ?
 
-Il est décrit dans [ce document](yunohost_project_organization) :).
+Il est décrit dans [ce document](project_organization) :).
 
 
 

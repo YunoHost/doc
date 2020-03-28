@@ -9,10 +9,9 @@ This means that everytime you want to try a new thing (non-official app, new spe
 
 Also: https://wiki.debian.org/DontBreakDebian
 
-### Use non-official apps with caution
-While it's tempting to install every [non-official apps](https://yunohost.org/#/apps_in_progress_en) please don't. Even if the app is marked as ready. Before testing an app you should read at least part of the package source code. Install, remove and upgrade script should be present. 
-Keep in mind that when you install an app, you execute code on your server with root privileges.
-From my experience, some packaging are excellent and others can break some part of your YunoHost instance. Some packages are unmaintained. So before install check package issues, the [Forum](http://forum.yunohost.org/) and the [YunoHost support room](support_en) to see if other have problem with the app.
+### Do not install bad quality apps
+
+Even if it can be tempting to install every [apps](https://yunohost.org/#/apps), be careful to their quality level as a bad quality app can ultimately break your server. If you absolutely wish to install such an app, at least try to do it on a test server or check if issues has been posted to this app's Github repository or on the [forum](http://forum.yunohost.org/).
 
 ### Check the official documentation
 Answer to your question may be already in [the documentation](https://yunohost.org/#/docs_en).

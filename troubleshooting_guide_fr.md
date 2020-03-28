@@ -9,11 +9,9 @@ La meilleure manière de ne pas avoir de pannes est de ne pas bricoler sur votre
 
 Vous pouvez aussi lire ceci si vous avez encore envie de bricoler sur votre instance YunoHost en production : https://wiki.debian.org/DontBreakDebian
 
-### Utilisez les applications non-officielles avec attention
-Bien que ce soit tentant d’installer toutes les [applications non officielles](https://yunohost.org/#/apps_in_progress_fr), s’il vous plaît ne le faites pas, même si l’application est indiquée comme prête.
-Avant de tester, vous devriez lire au moins le code source de l’application et vérifier que les fichiers d’installation, de suppression et de mise à jour sont bien présents.
-Garder à l’esprit que quand vous installez une application, vous exécutez du code avec des droits root. De mon expérience, certaines applications sont excellentes, d’autres peuvent casser votre instance YunoHost et certaines ne sont plus maintenues. Alors, avant d’installer, regardez les problèmes rencontrés (issues dans GitHub), le [Forum](http://forum.yunohost.org/) 
-et [le salon de discussion Yunohost](support_fr) pour voir si d’autres ont eu des problèmes avec l’application.
+### N'installez pas d'applications de mauvaise qualité
+
+Bien que ce soit tentant d’installer toutes les [applications](https://yunohost.org/#/apps), faites attention à leur niveau de qualité car une mauvaise application peut casser votre serveur. Si la qualité d'une application laisse à désirez mais que vous souhaitez tout de même absolument l'installer, essayez de faire ça sur un serveur de test, ou vérifiez au minimum si des problèmes ont été remontés sur le dépôt Github associé ou bien sur le [forum](http://forum.yunohost.org/).
 
 ### Vérifier la documentation officielle
 Les réponses à vos questions existent peut être déjà dans [la documentation](docs_fr).

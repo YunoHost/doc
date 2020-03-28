@@ -13,8 +13,8 @@ Les extensions rendent Piwigo facilement personnalisable. Cerise sur le gâteau,
 
 ## Fonctionnalités
 
-En plus des [fonctionnalités principales](Piwigo) de Piwigo, ce paquet propose également:
- 
+En plus des [fonctionnalités principales](http://piwigo.org/basics/features) de Piwigo, ce paquet propose également:
+
  * une intégration avec le système de gestion des utilisateurs et le SSO de Yunohost :
    * installation privée : limitée aux utilisateurs de YunoHost
    * installation publique :
