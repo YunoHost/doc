@@ -37,7 +37,7 @@ Les scripts d'un package d'application sont simplement des commandes bash les un
 #### ... Et c'est quoi une commande bash ?
 
 Une commande [bash](https://fr.wikipedia.org/wiki/Bourne-Again_shell) c'est une ligne de texte qui sera interprétée et produira un résultat. C'est ce qu'on a l'habitude d'appeler la ligne de commande.  
-Or puisque votre serveur, sur lequel est installé YunoHost, ne dispose pas d'une interface graphique, vous n'avez que la ligne de commande de disponible. Vous l'atteignez en général après vous être connecté avec [ssh](/ssh_fr).
+Or puisque votre serveur, sur lequel est installé YunoHost, ne dispose pas d'une interface graphique, vous n'avez que la ligne de commande de disponible. Vous l'atteignez en général après vous être connecté avec [ssh](/ssh).
 
 Les scripts d'un package ne sont donc qu'une succession de commandes bash, comme si vous les aviez tapées directement dans la console ssh pour installer l'application.
 
@@ -47,7 +47,7 @@ Pour savoir quoi écrire dans un script bash, je vous conseille de commencer par
 
 Avant d'envisager de faire un package d'application, il faut réussir à installer correctement la dites application. Car le script ne fera que ce que vous lui direz de faire.
 
-Ensuite, il faut aller lire (et oui encore) la documentation sur le packaging, mais la vrai cette fois, [celle qui emploie des mots bizarres](/packaging_apps_fr).  
+Ensuite, il faut aller lire (et oui encore) la documentation sur le packaging, mais la vrai cette fois, [celle qui emploie des mots bizarres](/packaging_apps).  
 Mais maintenant vous devriez les comprendre tout ces mots étranges.
 
 Mais heureusement, vous n'êtes pas seul pour affronter cette épreuve titanesque, il y a d'autres packageurs que vous pouvez venir rencontrer sur le [forum](https://forum.yunohost.org/c/apps-packaging) et sur le [salon de discussion](xmpp:apps@conference.yunohost.org?join).  

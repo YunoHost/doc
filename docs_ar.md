@@ -7,7 +7,7 @@
 <div class="row text-center">
 
 <div dir="rtl" class="col col-md-4 col-md-offset-1">
-<a class="btn btn-primary btn-lg" href="/admindoc_fr"><span class="glyphicon glyphicon-lock"></span> دليل المدير</a>
+<a class="btn btn-primary btn-lg" href="/admindoc"><span class="glyphicon glyphicon-lock"></span> دليل المدير</a>
 <p><small class="text-muted">يتطرق إلى طريقة التنصيب و إدارة السيرفر و التطبيقات</small></p>
 </div>
 
@@ -19,13 +19,13 @@
 </div>
 
 * Project's life:
-   * [Frequently asked questions](/faq_en)
+   * [Frequently asked questions](/faq)
    * [Project organization](/project_organization)
    * [Blog](https://forum.yunohost.org/c/announcement)
    * [Forum](https://forum.yunohost.org)
-   * [Chat rooms](/chat_rooms_en)
-   * [Communication](/communication_en)
+   * [Chat rooms](/chat_rooms)
+   * [Communication](/communication)
    * [Support / Help](/help)
 
 * استخدم مثال:
-   * [YunoHost للمنظمات غير الهادفة للربح](/use_case_non-profit_organisations_en)
+   * [YunoHost للمنظمات غير الهادفة للربح](/use_case_non-profit_organisations)

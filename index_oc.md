@@ -17,9 +17,9 @@
   </div>
 
   <div class="main-links hidden-xs">
-    <a href="/whatsyunohost_fr">A prepaus</a> <span class="colored-bar">•</span> 
+    <a href="/whatsyunohost">A prepaus</a> <span class="colored-bar">•</span> 
     <a href="https://forum.yunohost.org/c/announcement" target="_blank">Darrièras novèlas</a> <span class="colored-bar">•</span> 
-    <a href="/docs_fr">Documentacion</a>
+    <a href="/docs">Documentacion</a>
   </div>
 
 </div><!-- teasing-part -->
@@ -33,8 +33,8 @@
   </div>
 
   <div class="call-to-action">
-    <a class="btn btn-primary btn-lg" href="/try_fr">Ensajar</a>
-    <a class="btn btn-success btn-lg" href="/install_fr">Installar</a>
+    <a class="btn btn-primary btn-lg" href="/try">Ensajar</a>
+    <a class="btn btn-success btn-lg" href="/install">Installar</a>
     <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-6-release-sortie-de-yunohost-3-6/8359">YunoHost v3.6</a></small></p>
   </div>
 
@@ -43,7 +43,7 @@
   <div class="row cf">
     <div class="col-md-7">
       <h1>Installatz <small>vòstre servidor simplament, avètz ja tot çò que cal a l’ostal</small></h1>
-      <p><a href="/hardware_fr">Far veire los requistes</a></p>
+      <p><a href="/hardware">Far veire los requistes</a></p>
     </div>
     <div class="col-md-4">
       <div class="feature-pic">
@@ -62,7 +62,7 @@
     </div>
     <div class="col-md-7 text-right">
       <h1>Profitatz <small>de vòstras aplicacions web e fabricatz vòstre canton d’Internet</small></h1>
-      <p><br /><a href="/apps_fr">Lista de las aplicacions disponiblas</a></p>
+      <p><br /><a href="/apps">Lista de las aplicacions disponiblas</a></p>
     </div>
   </div>
 
@@ -71,7 +71,7 @@
   <div class="row cf">
     <div class="col-md-7">
       <h1>Gerissètz <small>vòstre servidor coma volgatz : via web, mobil o en linha de comanda</small></h1>
-      <p><br /><a href="/try_fr">Ensajar l’interfàcia d’administracion</a></p>
+      <p><br /><a href="/try">Ensajar l’interfàcia d’administracion</a></p>
     </div>
     <div class="col-md-4">
       <div class="feature-pic">
@@ -85,18 +85,18 @@
   <div class="row cf">
     <div class="col-md-4 button-list">
 
-      <a class="btn btn-lg btn-block btn-primary" href="/whatsyunohost_fr">Qu’es aquò YunoHost ?</a>
-      <a class="btn btn-lg btn-block btn-info" href="/docs_fr">Documentacion</a>
-      <a class="btn btn-lg btn-block btn-success" href="/contribute_fr">Cossí contribuir</a>
+      <a class="btn btn-lg btn-block btn-primary" href="/whatsyunohost">Qu’es aquò YunoHost ?</a>
+      <a class="btn btn-lg btn-block btn-info" href="/docs">Documentacion</a>
+      <a class="btn btn-lg btn-block btn-success" href="/contribute">Cossí contribuir</a>
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org" target="_blank">Forum</a>
-      <a class="btn btn-lg btn-block btn-default" href="chat_rooms_fr" target="_blank">Salas de discussions</a>
+      <a class="btn btn-lg btn-block btn-default" href="/chat_rooms" target="_blank">Salas de discussions</a>
       <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Darrièras novèlas</a>
-      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_fr">Assisténcia</a>
+      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help">Assisténcia</a>
 
     </div>
     <div class="col-md-7 text-right">
       <h1>Exploratz <small>las possibilitats de vòstre servidor, e aprenètz perque es important</small></h1>
-      <p><br /><a href="/docs_fr">Legir la documentacion</a></p>
+      <p><br /><a href="/docs">Legir la documentacion</a></p>
     </div>
   </div>
 

@@ -33,14 +33,14 @@ C’est le nom de domaine qui permettra l’accès à votre serveur ainsi qu’a
 
 * YunoHost propose un service de DNS dynamique fournissant des noms de domaine de type *mondomaine.nohost.me*, *mondomaine.noho.st* ou *mondomaine.ynh.fr*. Si vous ne possédez pas de nom de domaine et/ou que vous souhaitez profiter de ce service, choisissez un domaine se terminant en `.nohost.me`, `.noho.st` ou `.ynh.fr`. S'il n'est pas déjà utilisé, le domaine sera automatiquement rattaché à votre serveur YunoHost, et vous n’aurez pas d’étape de configuration supplémentaire.
 
-* Si en revanche vous maîtrisez la notion de **DNS**, vous pouvez utiliser votre propre nom de domaine. Dans ce cas, référez-vous à la page [yunohost.org/dns](/dns_fr) pour plus d’informations.
+* Si en revanche vous maîtrisez la notion de **DNS**, vous pouvez utiliser votre propre nom de domaine. Dans ce cas, référez-vous à la page [yunohost.org/dns](/dns) pour plus d’informations.
 
-* Si vous n'avez pas de nom de domaine et que vous n'en voulez pas en *mondomaine.nohost.me*, *mondomaine.noho.st* ou *mondomaine.ynh.fr*, vous pouvez utilisez un domaine local. Plus d'infos sur comment [accéder à son serveur depuis le réseau local](/dns_local_network_fr).
+* Si vous n'avez pas de nom de domaine et que vous n'en voulez pas en *mondomaine.nohost.me*, *mondomaine.noho.st* ou *mondomaine.ynh.fr*, vous pouvez utilisez un domaine local. Plus d'infos sur comment [accéder à son serveur depuis le réseau local](/dns_local_network).
 
 
 ### Mot de passe d’administration
 
-C’est le mot de passe qui vous permettra d’accéder à l’[interface d’administration](/admin_fr) de votre serveur. Vous pourrez également l’utiliser pour vous connecter à distance via **SSH**, ou en **SFTP** pour transférer des fichiers.
+C’est le mot de passe qui vous permettra d’accéder à l’[interface d’administration](/admin) de votre serveur. Vous pourrez également l’utiliser pour vous connecter à distance via **SSH**, ou en **SFTP** pour transférer des fichiers.
 
 De manière générale, c’est la **clé d’entrée à votre système**, pensez donc à la **[choisir attentivement](http://www.commentcamarche.net/faq/8275-choisir-un-bon-mot-de-passe)**.
 
@@ -56,16 +56,16 @@ votre navigateur ou la ligne de commande, alors félicitations !
 ### Et maintenant ?
 
 - Si vous vous auto-hébergez à la maison et sans VPN, il faut vous assurer
-  de bien [rediriger les ports de votre box internet](isp_box_config_fr) ;
+  de bien [rediriger les ports de votre box internet](/isp_box_config) ;
 - Si vous utilisez votre propre nom de domaine (c.-à-d. pas un nohost.me /
   noho.st), il vous faut [configurer le nom de domaine d'après la configuration
-  recommandée](dns_config_fr) ;
+  recommandée](/dns_config) ;
 - Si vous ne pouvez pas configurer le nom de domaine pour le moment (parce qu'il
   n'est pas encore acheté, ou parce que c'est un domaine de test), vous pouvez
   contourner temporairement le problème avec les instructions du dernier
-  paragraphe [ici](dns_local_network_fr) ;
+  paragraphe [ici](/dns_local_network) ;
 - Ne soyez pas trop effrayé par [l'avertissement à propos du
-  certificat](certificate_fr), vous aurez probablement la possibilité
+  certificat](/certificate), vous aurez probablement la possibilité
   d'installer un certificat Let's Encrypt :).
-- Jetez un oeil aux [applications disponibles](apps_fr) !
+- Jetez un oeil aux [applications disponibles](/apps) !
 

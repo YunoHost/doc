@@ -27,18 +27,18 @@ Il existe également des **types** d’enregistrement DNS, ce qui veut dire qu�
 
 Plusieurs choix s’offrent à vous. Notez que vous pouvez cumuler ces solutions si vous possédez plusieurs domaines : par exemple vous pouvez avoir `mon-serveur.nohost.me` en utilisant la solution **1.**, et `mon-serveur.org` en utilisant la solution **2.**, redirigeant vers le même serveur YunoHost.
 
-1. Vous pouvez utiliser [le service de DNS de YunoHost](/dns_nohost_me_fr), qui s’occupera de configurer tout seul les DNS de votre instance YunoHost. Vous devrez en revanche choisir un domaine se terminant par `.nohost.me`, `.noho.st` ou `.ynh.fr`, ce qui peut être inconvenant (vous aurez alors des adresses email telles que `jean@mon-serveur.noho.st`).
+1. Vous pouvez utiliser [le service de DNS de YunoHost](/dns_nohost_me), qui s’occupera de configurer tout seul les DNS de votre instance YunoHost. Vous devrez en revanche choisir un domaine se terminant par `.nohost.me`, `.noho.st` ou `.ynh.fr`, ce qui peut être inconvenant (vous aurez alors des adresses email telles que `jean@mon-serveur.noho.st`).
 **C’est la méthode recommandée si vous débutez.**
 
-2. Vous pouvez utiliser le service de DNS de votre **registrar** (Gandi, OVH, BookMyName ou autre) pour configurer vos noms de domaine. Voici la [configuration DNS standard](/dns_config_fr). Il est aussi possible d'utiliser une redirection DNS locale, plus d'infos sur comment [Accéder à son serveur depuis le réseau local](/dns_local_network_fr).
-Vous pouvez également consulter les documentations spécifiques à ces différents [bureaux d’enregistrement](/registrar_fr) : [Gandi](http://gandi.net), [OVH](/OVH_fr) ou [BookMyName](http://bookmyname.com).
+2. Vous pouvez utiliser le service de DNS de votre **registrar** (Gandi, OVH, BookMyName ou autre) pour configurer vos noms de domaine. Voici la [configuration DNS standard](/dns_config). Il est aussi possible d'utiliser une redirection DNS locale, plus d'infos sur comment [Accéder à son serveur depuis le réseau local](/dns_local_network).
+Vous pouvez également consulter les documentations spécifiques à ces différents [bureaux d’enregistrement](/registrar) : [Gandi](http://gandi.net), [OVH](/OVH) ou [BookMyName](http://bookmyname.com).
 
 **Attention** : Si vous choisissez ce mode de fonctionnement, vous aurez plus de flexibilité, mais rien ne sera automatique. Par exemple si vous souhaitez utiliser `webmail.mon-serveur.org`, vous devrez l’ajouter manuellement chez votre registrar.
 
 3. Votre instance YunoHost possède un service DNS, ce qui veut dire qu’il configure automatiquement ses enregistrements DNS, et qu’il est possible de lui en déléguer la gestion. Pour ce faire, vous devez indiquer au **registrar** que c’est votre instance YunoHost qui est le serveur DNS de votre nom de domaine en créant un enregistrement glue (souvent appelé **glue record**) pointant vers l’IP de votre instance YunoHost.
 <br><br>**Attention** : Si vous choisissez ce mode de fonctionnement, toutes les configurations seront automatiques, vous disposerez d’une grande flexibilité, mais la perte de votre serveur entraînera potentiellement beaucoup d’ennuis. **Choisissez cette méthode si vous êtes sûr de vous.**
 
-4. Une fois votre service DNS opérationnel, votre serveur peut l’utiliser mais il faut le configurer, c’est le [résolveur DNS](/dns_resolver_fr).
+4. Une fois votre service DNS opérationnel, votre serveur peut l’utiliser mais il faut le configurer, c’est le [résolveur DNS](/dns_resolver).
 
 ### IP Dynamique
-Si l’adresse IP publique change, suivez ce [tutoriel](dns_dynamicip_fr).
+Si l’adresse IP publique change, suivez ce [tutoriel](/dns_dynamicip).

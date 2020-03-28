@@ -64,7 +64,7 @@ Télécharger et téléverser des sauvegardes
 
 Après avoir créé des sauvegardes, il est possible de les lister et de les inspecter grâce aux vues correspondantes dans la webadmin, ou via `yunohost backup list` et `yunohost backup info <nom_d'archive>` depuis la ligne de commande. Par défaut, les sauvegardes sont stockées dans `/home/yunohost.backup/archives/`.
 
-À l'heure actuelle, la solution la plus accessible pour récupérer les sauvegardes est d'utiliser le programme FileZilla comme expliqué dans [cette page](/filezilla_fr).
+À l'heure actuelle, la solution la plus accessible pour récupérer les sauvegardes est d'utiliser le programme FileZilla comme expliqué dans [cette page](/filezilla).
 
 Une autre solution alternative consiste à installer une application comme Nextcloud et à la configurer pour être en mesure d'accéder aux fichiers dans `/home/yunohost.backup/archives/` depuis un navigateur web.
 

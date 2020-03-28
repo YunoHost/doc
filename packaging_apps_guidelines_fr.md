@@ -165,7 +165,7 @@ L'ajout d'une app sur l'[organisation YunoHost-Apps](https://github.com/YunoHost
 
 C'est aussi un moyen pour permettre de déployer rapidement un correctif de sécurité si nécessaire dans le cas où le mainteneur ne serait pas disponible.
 
-Procédure de transfert : demander sur le [salon de discussion `Apps`](chat_rooms_fr) à être invité à l’organisation en lui fournissant le nom de son compte GitHub.
+Procédure de transfert : demander sur le [salon de discussion `Apps`](/chat_rooms) à être invité à l’organisation en lui fournissant le nom de son compte GitHub.
 Une fois l’invitation acceptée, [transférer son dépôt sur l’organisation en suivant ce tutoriel](https://help.github.com/articles/transferring-a-repository-owned-by-your-personal-account/#transferring-a-repository-to-another-user-account-or-to-an-organization).
 
 #### YEP 1.8
@@ -222,7 +222,7 @@ Gardez votre code aussi simple que possible, gardez tout ce dont un script a bes
 #### Stabiliser une app
 #### YEP 2.1
 ##### Respecter le format du manifeste  | validé | auto | INPROGRESS |
-Le manifeste permet de décrire une app afin que YunoHost puisse lui appliquer les bons traitements. Pour plus d'information voir la [documentation dédiée](https://yunohost.org/#/packaging_apps_manifest).
+Le manifeste permet de décrire une app afin que YunoHost puisse lui appliquer les bons traitements. Pour plus d'information voir la [documentation dédiée](/packaging_apps_manifest).
 
 #### YEP 2.2
 ##### Utiliser bash pour les scripts principaux  | validé | auto | WORKING |
@@ -289,7 +289,7 @@ Il est conseillé de rendre les scripts le plus générique possible, un bon moy
 Afin de simplifier le packaging, d'uniformiser les pratiques, d'éviter les erreurs et d'augmenter la durée de vie d'un script vis-à-vis des futures versions de YunoHost. Un ensemble de helpers permettant de faire de nombreuses actions est proposé.
 
 Pour plus d'informations :
-* consulter [la documentation des helpers](https://yunohost.org/#/packaging_apps_helpers_fr)
+* consulter [la documentation des helpers](/packaging_apps_helpers)
 * explorer [le répertoire des helpers](https://github.com/YunoHost/yunohost/tree/unstable/data/helpers.d)
 
 #### YEP 2.13

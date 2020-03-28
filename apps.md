@@ -44,7 +44,7 @@ Disclaimers
 
 <div id="app-cards-list" class="app-cards-list"></div>
 
-<div class="alert alert-warning">If you don't find the app you are looking for, you can try to look for a appname_ynh repository on Github or on the internet, or add it to the <a href="/apps_wishlist_en">apps wishlist</a>.</div>
+<div class="alert alert-warning">If you don't find the app you are looking for, you can try to look for a appname_ynh repository on Github or on the internet, or add it to the <a href="/apps_wishlist">apps wishlist</a>.</div>
 
 <!--
 Custom CSS for this page

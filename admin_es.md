@@ -1,6 +1,6 @@
 # La interfaz de administración web
 
-Yunohost tiene una interfaz gráfica de administración. El otro método consiste en utilizar la [linea de comando](/commandline_es).
+Yunohost tiene una interfaz gráfica de administración. El otro método consiste en utilizar la [linea de comando](/commandline).
 
 ### Acceso
 

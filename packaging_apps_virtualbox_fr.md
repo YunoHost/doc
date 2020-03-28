@@ -9,7 +9,7 @@ Il y a principalement deux raisons pour préférer l'usage d'un serveur virtuel 
 - Vous pouvez torturer à loisir un serveur virtuel sans courir le risque de le casser, puisque vous pourrez toujours restaurer un état précédent. Alors qu'il serait dommage de casser son propre serveur !
 - Un serveur virtuel sera restauré avant de travailler dessus, pour garder en permanence un système sans résidus d'une précédente installation. Cela permet de se rapprocher au plus près d'une première installation par un utilisateur.
 
-Nous parlerons ici de VirtualBox, pour son approche graphique facile à utiliser. Si vous préférez une interface en ligne de commande pour la gestion de la machine virtuelle, tournez-vous de préférence vers [ynh-dev](/dev_fr).
+Nous parlerons ici de VirtualBox, pour son approche graphique facile à utiliser. Si vous préférez une interface en ligne de commande pour la gestion de la machine virtuelle, tournez-vous de préférence vers [ynh-dev](/dev).
 
 ## Installer VirtualBox
 
@@ -20,12 +20,12 @@ Quel que soit votre système, il ne devrait pas être nécessaire d'installer l'
 
 ## Installer YunoHost sur VirtualBox
 
-Suivez simplement la documentation idoine pour l'[installation sur VirtualBox](/install_on_virtualbox_fr) puis la documentation sur la [post-installation](/postinstall_fr).
+Suivez simplement la documentation idoine pour l'[installation sur VirtualBox](/install_on_virtualbox) puis la documentation sur la [post-installation](/postinstall).
 
 Lors de la post-installation, il est inutile d'utiliser un nom de domaine en `.nohost.me` ou `.noho.st`, votre serveur virtuel ne sera pas accessible depuis l'extérieur de votre réseau local.  
 Nous préférerons l'usage d'un faux nom de domaine qui restera cantonné au réseau local. Par exemple, `yunohost.packaging`.
 
-Ce nom de domaine n'étant enregistré dans aucun serveur DNS, on l'enregistrera dans le fichier `hosts` de l'ordinateur qui y accédera. Voir la documentation sur le [DNS local](/dns_local_network_fr).
+Ce nom de domaine n'étant enregistré dans aucun serveur DNS, on l'enregistrera dans le fichier `hosts` de l'ordinateur qui y accédera. Voir la documentation sur le [DNS local](/dns_local_network).
 
 Votre serveur virtuel est à présent installé. Avant de commencer à l'utiliser, nous allons voir comment créer un premier instantané et comment les utiliser.
 

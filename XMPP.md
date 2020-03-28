@@ -53,7 +53,7 @@ XMPP chats can be made secure and private using [OMEMO] encryption (https://xmpp
 
 To create a chatroom (multi-user chat) on your YunoHost server, use the identifier `chatroomname@muc.yourdomain.tld`.
 
-For this to work you need to [add the corresponding `muc.` DNS record](dns_config_fr) in the DNS configuration.
+For this to work you need to [add the corresponding `muc.` DNS record](/dns_config) in the DNS configuration.
 
 ## VoIP and videoconferences
 

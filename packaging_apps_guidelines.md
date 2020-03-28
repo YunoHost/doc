@@ -164,7 +164,7 @@ Adding an app to the [YunoHost-Apps organization](https://github.com/YunoHost-Ap
 
 It is also a way to quickly deploy a security patch if necessary in the event that the maintainer is unavailable.
 
-Transfer Procedure: Ask the [chat room](chat_rooms_en) to be invited to the organization by providing the name of their GitHub account.
+Transfer Procedure: Ask the [chat room](/chat_rooms) to be invited to the organization by providing the name of their GitHub account.
 Once the invitation is accepted, [transfer its deposit to the organization by following this tutorial](https://help.github.com/articles/transferring-a-repository-owned-by-your-personal-account/# Transferring-a-repository-to-another-user-account-or-to-an-organization).
 
 #### YEP 1.8
@@ -221,7 +221,7 @@ Keep your code as easy as possible, keep everything a script needs directly into
 #### Stabilize an app
 #### YEP 2.1
 ##### Respect the manifest format | validated | Home | INPROGRESS |
-The manifest allows to describe an app so that YunoHost can apply the good treatments. For more information see [dedicated documentation](https://yunohost.org/#/packaging_apps_manifest).
+The manifest allows to describe an app so that YunoHost can apply the good treatments. For more information see [dedicated documentation](/packaging_apps_manifest).
 
 #### YEP 2.2
 ##### Using bash for main scripts | validated | Home | WORKING |
@@ -287,7 +287,7 @@ It is advisable to make the scripts as generic as possible, a good way to do thi
 In order to simplify packaging, standardize practices, avoid errors and increase the lifetime of a script vis-à-vis future versions of YunoHost. A set of helpers to do many actions is proposed.
 
 For more information :
-* consult [helpers documentation](https://yunohost.org/#/packaging_apps_helpers)
+* consult [helpers documentation](/packaging_apps_helpers)
 * explore [helpers directory](https://github.com/YunoHost/yunohost/tree/unstable/data/helpers.d)
 
 #### YEP 2.13

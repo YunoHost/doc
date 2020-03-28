@@ -28,16 +28,16 @@ In your router admin interface, look for something like 'router configuration' o
 Opening the ports listed below is necessary for the various services available in YunoHost to work. For each of them, the 'TCP' forwarding is needed. Some interfaces refer to 'external' and 'internal' ports : these are the same in our case.
 
 * Web: 80 <small>(HTTP)</small>, 443 <small>(HTTPS)</small>
-* [SSH](/ssh_en): 22
-* [XMPP](/XMPP_en): 5222 <small>(clients)</small>, 5269 <small>(servers)</small>
-* [Email](/email_en): 25, 587 <small>(SMTP)</small>, 993 <small>(IMAP)</small>
+* [SSH](/ssh): 22
+* [XMPP](/XMPP): 5222 <small>(clients)</small>, 5269 <small>(servers)</small>
+* [Email](/email): 25, 587 <small>(SMTP)</small>, 993 <small>(IMAP)</small>
 
 If you use both a modem and a router, then you need to do the following:
 1. first on the modem (the box closest to the internet) create rules to forward the above ports to your router;
 2. then on the router (the box between the modem and your devices) create rules to forward the above ports to the static IP address for your server.
 
 <div class="alert alert-warning" markdown="1">
-<span class="glyphicon glyphicon-warning-sign"></span> Some internet service providers block port 25 (mail SMTP) by default to fight spam. Some other ISP don't allow to use port 80/443 (web) freely, though it's less likely. Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](isp_en) for more info.
+<span class="glyphicon glyphicon-warning-sign"></span> Some internet service providers block port 25 (mail SMTP) by default to fight spam. Some other ISP don't allow to use port 80/443 (web) freely, though it's less likely. Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/isp) for more info.
 </div>
 
 ## Automatic port forwarding / UPnP

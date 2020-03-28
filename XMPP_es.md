@@ -43,7 +43,7 @@ Es posible cifrar tu conversaciones XMPP con la ayuda de [OMEMO](https://xmpp.or
 
 Para crear un salón de discusión (Multi-user chat) en tu servidor Yunohost, utiliza el ID nombredelsalon@muc.dominio.tld (donde dominio.tld es el dominio principal de tu servidor).
 
-Si utilizas un nombre de dominio personal, es necesario [añadir una redirección de tipo CNAME para el subdominio `muc.`](dns_config_es) en tu servidor DNS.
+Si utilizas un nombre de dominio personal, es necesario [añadir una redirección de tipo CNAME para el subdominio `muc.`](/dns_config) en tu servidor DNS.
 
 ### VoIP y videoconferencias
 

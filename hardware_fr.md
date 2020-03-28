@@ -5,7 +5,7 @@ YunoHost peut être installé sur les types de matériel suivant :
 - 'Vieux' ordinateurs de bureau ou portables ;
 - Serveurs distants, aussi appelé Virtual Private Servers (VPS).
 
-Les guides d'installations peuvent être trouvés sur [cette page](/install_fr).
+Les guides d'installations peuvent être trouvés sur [cette page](/install).
 
 ### Configuration minimale
 

@@ -43,7 +43,7 @@ Scripts used during application packaging are simply a series of bash commands.
 
 A [bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) command is a line of text that will be interpreted by the computer and will produce a result. This is commonly refered to as a command line.
 
-You can ony interact with your server through the command line as it does not provide a graphical interface. Usual access is through [ssh](/ssh_en).
+You can ony interact with your server through the command line as it does not provide a graphical interface. Usual access is through [ssh](/ssh).
 
 Package scripts are therefore a series of bash commands as if you had typed them directly in the ssh console.
 
@@ -53,7 +53,7 @@ To know what you can write in a bash script, you should start reading this [simp
 
 Before starting the packaging process, you need to successfully install the application. The script will only perform what you instruct it to do.
 
-Once completed, you need to read a little bit more documentation about application packaging. [This one is more technical](/packaging_apps_en) but now you should understand all the wizardry.
+Once completed, you need to read a little bit more documentation about application packaging. [This one is more technical](/packaging_apps) but now you should understand all the wizardry.
 
 ### HELP! NEED BACKUP!
 

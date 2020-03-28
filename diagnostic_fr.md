@@ -1,6 +1,6 @@
 # Diagnostic du bon fonctionnement de YunoHost
 
-Si vous avez réussi l’[installation](/install_fr) de YunoHost et passé l’étape de [post-installation](/postinstall_fr), vous avez probablement un **serveur fonctionnel**.
+Si vous avez réussi l’[installation](/install) de YunoHost et passé l’étape de [post-installation](/postinstall), vous avez probablement un **serveur fonctionnel**.
 
 ### <small>1.</small> Essayer
 
@@ -24,7 +24,7 @@ Si vous avez optez pour un nom de domaine se terminant par <b>.nohost.me</b> ou 
 Cette étape n’est pas nécessaire si vous possédez un nom de domaine en <b>.nohost.me</b> ou un <b>.noho.st</b>
 </div>
 
-Rendez-vous sur https://www.whatsmydns.net/, entrez votre nom de domaine dans le champ prévu à cet effet et cliquez sur `Search`. Si vous ne voyez pas votre adresse IP, ou s’il y a des croix rouges par endroit, cela signifie que vous avez probablement mal configuré votre [DNS](/dns_fr).
+Rendez-vous sur https://www.whatsmydns.net/, entrez votre nom de domaine dans le champ prévu à cet effet et cliquez sur `Search`. Si vous ne voyez pas votre adresse IP, ou s’il y a des croix rouges par endroit, cela signifie que vous avez probablement mal configuré votre [DNS](/dns).
 
 ---
 
@@ -48,7 +48,7 @@ Vous pouvez également rediriger les ports manuellement vers l’adresse IP loca
 
 Si le serveur est accessible de l’extérieur, mais inatteignable via son nom de domaine dans votre réseau local, votre box/routeur ne fait probablement pas correctement de <a href="https://fr.wikipedia.org/wiki/Hairpinning" target="_blank">hairpinning</a>.
 
-Voici un [tutoriel](dns_local_network_fr) pour pouvoir accéder à son serveur en réseau local et contourner le problème de hairpinning. Le tutoriel propose en première solution de mettre en place une redirection avec le DNS de la box et en seconde solution de modifier le fichier `hosts` des **clients** pour indiquer qu’il doit accéder au **serveur** via son IP locale. La première solution est préférable car il ne nécessite pas de modifier le fichier `hosts` sur chacun des clients du réseau local.
+Voici un [tutoriel](/dns_local_network) pour pouvoir accéder à son serveur en réseau local et contourner le problème de hairpinning. Le tutoriel propose en première solution de mettre en place une redirection avec le DNS de la box et en seconde solution de modifier le fichier `hosts` des **clients** pour indiquer qu’il doit accéder au **serveur** via son IP locale. La première solution est préférable car il ne nécessite pas de modifier le fichier `hosts` sur chacun des clients du réseau local.
 
 ___
 
