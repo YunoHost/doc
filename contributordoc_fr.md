@@ -33,3 +33,4 @@
        * [Images Raspberry Pi](https://github.com/YunoHost/rpi-image)
        * [Autres images pour cartes ARM](https://github.com/YunoHost/arm-images)
 * [Utiliser l'API YunoHost en dehors de la webadmin](/admin_api)
+* [Une discussion sur la portée des variables en bash](shell_variables_scope)

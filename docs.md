@@ -20,8 +20,9 @@ YunoHost's documentation has 2 different sections:
 
 * Project's life:
    * [Frequently asked questions](/faq)
+   * [Project news](/news)
    * [Project organization](/project_organization)
-   * [Blog](https://forum.yunohost.org/c/announcement)
+   * [Project budget](/project_budget)
    * [Forum](https://forum.yunohost.org)
    * [Chat rooms](/chat_rooms)
    * [Communication](/communication)

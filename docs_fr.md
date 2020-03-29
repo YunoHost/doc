@@ -20,10 +20,11 @@ La documentation de YunoHost s’articule autour de deux sections :
 
 * Vie du projet :
    * [Foire aux questions](/faq)
-   - [Organisation du projet](/project_organization)
-   * [Blog](https://forum.yunohost.org/c/announcement)
-   - [Forum](https://forum.yunohost.org)
-   - [Salons de discussions](/chat_rooms)
+   * [Nouvelles du projet](/news)
+   * [Organisation du projet](/project_organization)
+   * [Budget previsionnel](/project_budget)
+   * [Forum](https://forum.yunohost.org)
+   * [Salons de discussions](/chat_rooms)
    * [Communication extérieure](/communication)
    * [Support / Aide](/help)
 
