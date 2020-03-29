@@ -1,5 +1,7 @@
 for FILE in $(ls *.md); 
-do 
+do
+    grep -q "Unfortunately, this page only exists" $FILE && continue
+
     # Replace markdown links with full url ... we only need the relative url
     sed -i -E 's@\(https://yunohost.org/#/(\w+)\)@(/\1)@g' $FILE
 
