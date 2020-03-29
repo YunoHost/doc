@@ -47,4 +47,4 @@ Pour aller plus loin
 --------------------
 
 - Il existe une page de documentation pour [migrer ses emails d'un fournisseur de messagerie vers une instance YunoHost](email_migration).
-- Pour approfondir votre compréhension du courriel et de ses protocoles, voici une [conférence éclairante](https://www.iletaitunefoisinternet.fr/post/7-email-sonntag/)(en français).
+- Pour approfondir votre compréhension du courriel et de ses protocoles, voici une [conférence éclairante](https://www.iletaitunefoisinternet.fr/post/7-email-sonntag/)(en français). lien cassé....
