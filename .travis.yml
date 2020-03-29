@@ -1,0 +1,5 @@
+language: bash
+
+script:
+    - bash tests/dead_links.sh
+    - bash tests/unreferenced_pages.sh
