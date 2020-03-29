@@ -74,7 +74,7 @@ Yes, you can! YunoHost needs money to pay servers and domain names. We would
 also like contributors to be able to continue contributing rather than look for
 jobs elsewhere.
 
-You can donate on [Liberapay](https://liberapay.com/yunohost).
+You can donate using [our donation interface](https://donate.yunohost.org)
 
 If you can, you can also make in-kind contributions, like servers (some of our
 infrastructure relies on servers from a few associations).
