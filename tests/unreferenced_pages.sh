@@ -15,7 +15,7 @@ do
     then
         continue
     fi
-    if ! echo $ALL_TARGETS | grep -q $PAGE
+    if ! echo $ALL_TARGETS | grep -q -w $PAGE
     then
         returncode=1
         echo "The following page is not referenced by any other page :( -> $PAGE"

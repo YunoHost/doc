@@ -77,4 +77,8 @@ Cette page liste plusieurs types d’installations, classés par catégories.
 <a href="/dev"><img src="/images/lxc.png" height=150 style="vertical-align:bottom"><b><p>Environnement de dev avec LXD/LXC</p></b></a>
 </div>
 
+<div class="col col-md-3 text-center">
+<a href="/docker"><img src="/images/docker.png" height=150 style="vertical-align:bottom"><b><p>(Non-officiel!) Images docker</p></b></a>
+</div>
+
 </div>

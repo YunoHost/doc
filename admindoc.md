@@ -42,6 +42,7 @@
     * [Adding an external storage](/external_storage)
     * [Migrating emails to YunoHost](/email_migration)
     * [Hide services with Tor](/torhiddenservice)
+    * [A discussion about the advantages of using a VPN](/vpn_advantage)
     * [(old) Jessie->Stretch migration procedure](jessie_stretch_migration)
 * [Troubleshooting guide](/troubleshooting_guide)
     * [Changing the administration password](/change_admin_password)

@@ -53,6 +53,7 @@
     * [Migrer ses emails vers YunoHost](/email_migration)
     * [YunoHost avec un service caché Tor](/torhiddenservice)
     * [Utilisation de certificats autres que Let's Encrypt](/certificate_custom)
+    * [Une discussion sur les avantages d'utiliser un VPN](/vpn_advantage)
     * [(vieux) Procedure de Migration Jessie->Stretch](jessie_stretch_migration)
 * [Guide de dépannage](/troubleshooting_guide)
     * [Changer le mot de passe d’administration](/change_admin_password)
