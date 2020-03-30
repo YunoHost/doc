@@ -11,16 +11,16 @@ Also: https://wiki.debian.org/DontBreakDebian
 
 ### Do not install bad quality apps
 
-Even if it can be tempting to install every [apps](https://yunohost.org/#/apps), be careful to their quality level as a bad quality app can ultimately break your server. If you absolutely wish to install such an app, at least try to do it on a test server or check if issues has been posted to this app's Github repository or on the [forum](http://forum.yunohost.org/).
+Even if it can be tempting to install every [apps](/apps), be careful to their quality level as a bad quality app can ultimately break your server. If you absolutely wish to install such an app, at least try to do it on a test server or check if issues has been posted to this app's Github repository or on the [forum](http://forum.yunohost.org/).
 
 ### Check the official documentation
-Answer to your question may be already in [the documentation](https://yunohost.org/#/docs_en).
+Answer to your question may be already in [the documentation](/docs).
 
 ### Check the command line help
-Learn how to use the [YunoHost commands](https://yunohost.org/#/commandline) like a pro.
+Learn how to use the [YunoHost commands](/commandline) like a pro.
 
 ## Upgrade
-Problems often occur after an upgrade. After a YunoHost upgrade you may want to [update your apps](https://yunohost.org/#/app_update_en).
+Problems often occur after an upgrade. After a YunoHost upgrade you may want to [update your apps](/app_update).
 
 **Check if some processes are using old libraries**
 
@@ -54,7 +54,7 @@ $ yunohost app upgrade -u https://github.com/user/someapp_ynh app_name
 ```
 
 ## Services
-YunoHost uses a bunch of software to accomplish its purpose. Most of theses software are registered as service in Debian. [More info](https://yunohost.org/#/whatsyunohost_fr).
+YunoHost uses a bunch of software to accomplish its purpose. Most of theses software are registered as service in Debian. [More info](/whatsyunohost).
 
 ### Check services status
 When something doesn't work on your YunoHost, one of the first things to do is to check that all services used by YunoHost are running.
@@ -81,7 +81,7 @@ All services should be enabled and running. Except glances (optional). If some a
 - **Postfix**: SMTP email server, used to send email
 - **Postgrey**: greylisting policy server, if you use YunoHost email, you should [learn more about greylisting](http://en.wikipedia.org/wiki/Greylisting)
 - **Slapd**: LDAP server, used for authentification (SSO and apps)
-- [**SSH**](/ssh_en): Secure Shell
+- [**SSH**](/ssh): Secure Shell
 - [**SSOwat**](https://github.com/Kloadut/SSOwat/): an simple sign-on
 - **YunoHost-API**: YunoHost web administration
 
@@ -275,7 +275,7 @@ There is no logfile for application install so when you install an app, keep the
 ```
 
 ## Applications
-This part is more for packager or to understand the link between Nginx and webapps. First, you should know [how to package a new app](https://yunohost.org/#/packaging_apps_en).
+This part is more for packager or to understand the link between Nginx and webapps. First, you should know [how to package a new app](/packaging_apps).
 
 When troubleshooting an application issue can occur at several levels. There is a wide variety of applications and their deployment to YunoHost will depending on the programming language of the app. We will deal here with the most commons cases.
 Applications configurations are not treated because it completely differs according to the application.

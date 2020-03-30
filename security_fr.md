@@ -11,9 +11,9 @@ Deux points sont néanmoins importants à noter :
 
 * Le fait que YunoHost soit un logiciel répandu augmente les chances de subir une attaque. Si une faille est découverte, elle peut potentiellement **toucher toutes les instances YunoHost** à un temps donné. Nous nous efforçons de corriger ces failles le plus rapidement possible, pensez donc à **mettre à jour régulièrement** votre système.
 
-*Si vous avez besoin de conseil, n’hésitez pas à [nous demander](/help_fr).*
+*Si vous avez besoin de conseil, n’hésitez pas à [nous demander](/help).*
 
-*Pour discuter d'une faille de sécurité, contactez l'[équipe sécurité de YunoHost](/security_team_fr).*
+*Pour discuter d'une faille de sécurité, contactez l'[équipe sécurité de YunoHost](/security_team).*
 
 ---
 
@@ -178,7 +178,7 @@ sudo yunohost settings set security.ssh.compatibility -v modern
 
 ### Désactivation de l’API YunoHost
 
-YunoHost est administrable via une **API HTTP**, servie sur le port 6787 par défaut (seulement sur `localhost`). Elle permet d’administrer une grande partie de votre serveur, et peut donc être utilisée à des **fins malveillantes**. La meilleure chose à faire si vous êtes habitués aux lignes de commande est de désactiver le service `yunohost-api`, et **utiliser la [ligne de commande](/commandline_fr)** en SSH.
+YunoHost est administrable via une **API HTTP**, servie sur le port 6787 par défaut (seulement sur `localhost`). Elle permet d’administrer une grande partie de votre serveur, et peut donc être utilisée à des **fins malveillantes**. La meilleure chose à faire si vous êtes habitués aux lignes de commande est de désactiver le service `yunohost-api`, et **utiliser la [ligne de commande](/commandline)** en SSH.
 
 ```bash
 sudo systemctl disable yunohost-api

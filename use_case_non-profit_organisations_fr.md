@@ -200,4 +200,4 @@ Mais pour la production, la sauvegarde stockée localement ne suffit pas, vous d
 ## Conclusion
 
 YunoHost peut couvrir 99% des besoins des organisations à but non lucratif, leur permettant de posséder et de protéger leurs données, de choisir les applications qu'elles souhaitent utiliser.
-Et s’ils ne sont pas disponibles, ils peuvent [les packager pour YunoHost](https://yunohost.org/#/contributordoc), c’est très simple.
+Et s’ils ne sont pas disponibles, ils peuvent [les packager pour YunoHost](/contributordoc), c’est très simple.

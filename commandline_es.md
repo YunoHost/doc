@@ -2,7 +2,7 @@
 
 La interfaz de línea de comandos (CLI) es, en informática, la manera original (y más técnica) de interactuar con un ordenador. Está generalmente considera como más completa, más potente y eficaz que las interfaces gráficas, aunque sea más difícil de aprenderla.
 
-En el contexto de Yunohost, o de la administración de sistemas en general, la línea de comandos comúnmente se utiliza después de haberse [conectado en SSH](/ssh_es).
+En el contexto de Yunohost, o de la administración de sistemas en general, la línea de comandos comúnmente se utiliza después de haberse [conectado en SSH](/ssh).
 
 <div class="alert alert-info" markdown="1">
 Proveer un tutorial completo sobre la línea de comandos saldría del marco de la documentación de Yunohost : por eso, refiérete a totorales como [éste](https://www.fing.edu.uy/inco/cursos/sistoper/recursosLaboratorio/tutorial0.pdf) o [éste (en)](http://linuxcommand.org/). Pero no te preocupes : no hace falta ser un experto para comenzar a utilizarla !

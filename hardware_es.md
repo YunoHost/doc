@@ -5,7 +5,7 @@ YunoHost puede ser instalado en este hardware :
 - 'Viejos' ordenadores de escritorio ou portátiles ;
 - Servidores remotos, también llamado Virtual Private Servers (VPS).
 
-Los guías de instalación se encuentran en [esta página](/install_es).
+Los guías de instalación se encuentran en [esta página](/install).
 
 ### Configuración minimal
 

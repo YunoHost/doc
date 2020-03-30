@@ -52,7 +52,7 @@ Il est possible de rendre les conversations plus sécurisées et privées en les
 
 Pour créer un salon de discussion (Multi-user chat) sur votre serveur Yunohost utilisez l’identifiant nomsalon@muc.domaine.tld (où domaine.tld est le domaine principal de votre serveur).
 
-Si vous utilisez un nom de domaine personnel, il est nécessaire d’[ajouter une redirection de type CNAME pour le sous domaine `muc.`](dns_config_fr) au niveau de votre serveur DNS.
+Si vous utilisez un nom de domaine personnel, il est nécessaire d’[ajouter une redirection de type CNAME pour le sous domaine `muc.`](/dns_config) au niveau de votre serveur DNS.
 
 ## VoIP et visioconférence
 

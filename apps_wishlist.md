@@ -1,6 +1,6 @@
 # Apps wishlist
 
-<div class="alert alert-info">Before to add an app in wishlist please check your app is not already in official or community list: see the <a href="/apps_en">apps list</a></div>
+<div class="alert alert-info">Before to add an app in wishlist please check your app is not already in official or community list: see the <a href="/apps">apps list</a></div>
 
 The following list is a compiled wishlist of applications that would be nice-to-have.
 

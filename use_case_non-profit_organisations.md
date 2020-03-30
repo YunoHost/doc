@@ -201,4 +201,4 @@ But for production, localy stored backup are not enough, so you will need to imp
 ## Conclusion
 
 YunoHost can cover 99% of the needs of non-profit organizations, allowing them to own and protect their data, choose applications they want to use.
-And if one is not available, they can [package it for YunoHost](https://yunohost.org/#/contributordoc), it's very simple.
+And if one is not available, they can [package it for YunoHost](/contributordoc), it's very simple.

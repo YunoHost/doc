@@ -11,9 +11,9 @@ Asegurarse de que la configuración esté correcta
 Los emails son un ecosistema complicado y una multitud de detalles puedes impedir que funcionen correctamente.
 
 Para validar que tu configuración es correcta :
-- si te alojas en casa y que no tienes VPN, asegúrate de que [tu proveedor de Internet no esté bloqueando el puerto 25](isp_es) ;
-- redirige los puertos siguiendo [esta documentación](isp_box_config_es) ;
-- configura con cuidado los registros DNS del correo electrónico siguiendo [esta documentación](dns_config_es) ;
+- si te alojas en casa y que no tienes VPN, asegúrate de que [tu proveedor de Internet no esté bloqueando el puerto 25](/isp) ;
+- redirige los puertos siguiendo [esta documentación](/isp_box_config) ;
+- configura con cuidado los registros DNS del correo electrónico siguiendo [esta documentación](/dns_config) ;
 - testa tu configuración utilizando [Mail-tester.com](https://mail-tester.com) <small>(cuidado : sólo 3 tests por dominio y por día están autorizados)</small> ;
 
 Una nota de al menos 8~9/10 es un objetivo razonable.
@@ -21,7 +21,7 @@ Una nota de al menos 8~9/10 es un objetivo razonable.
 Clientes de mensajería 
 -------------
 
-Para interactuar con el servidor de mail, o sea leer y mandar emails, puedes instalar un cliente web como Roundcube o Rainloop en tu servidor - o configurar un cliente de Desktop o móvil como descrito en [esta página][cette page](email_configure_client_es).
+Para interactuar con el servidor de mail, o sea leer y mandar emails, puedes instalar un cliente web como Roundcube o Rainloop en tu servidor - o configurar un cliente de Desktop o móvil como descrito en [esta página][cette page](/email_configure_client).
 
 Los clientes Desktop o móvil tienen la ventaja de copiar tu emails en el equipo, así permitiendo la consulta desconectada de tus mensajes, y cierta protección frente a la posibilidad de un servidor averiado.
 
@@ -40,5 +40,5 @@ Si tu servidor se pone indisponible, los correos electrónicos mandados a tu ser
 Más información
 --------------------
 
-- Existe una página de documentación para [migrar sus emails desde un proveedor de mensajería hacia una instancia Yunohost](email_migration_es).
+- Existe una página de documentación para [migrar sus emails desde un proveedor de mensajería hacia una instancia Yunohost](/email_migration).
 - Para profundizar tu comprensión del correo electrónico y de sus protocolos, aquí tienes una [conferencia muy interesante](http://www.iletaitunefoisinternet.fr/lemail-par-benjamin-sonntag/index.html)(en francés).

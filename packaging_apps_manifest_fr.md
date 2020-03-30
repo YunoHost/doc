@@ -1,4 +1,4 @@
-<a class="btn btn-lg btn-default" href="packaging_apps_fr">Packaging d’application</a>
+<a class="btn btn-lg btn-default" href="/packaging_apps">Packaging d’application</a>
 
 ## Manifeste
 Le fichier `manifest.json` définit les constantes de l’application, un ensemble de valeurs dont YunoHost a besoin pour identifier l’application et l’installer correctement. Voici un exemple :
@@ -71,7 +71,7 @@ Le fichier `manifest.json` définit les constantes de l’application, un ensemb
 
 - **requirements** : dépendance du paquet de l’application à la version d’un paquet Debian de YunoHost. Par exemple : "yunohost": ">> 2.3.12", le paquet `yunohost` doit être de version supérieur à `2.3.12`.
 
-* [**multi_instance**](packaging_apps_multiinstance_fr) : capacité d’une application d’être installée plusieurs fois.
+* [**multi_instance**](/packaging_apps_multiinstance) : capacité d’une application d’être installée plusieurs fois.
 
 * **services** : liste des services nécessaires au fonctionnement de l’application. `nginx`, `php5-fpm`, `mysql`, `uwsgi`, `metronome`, `postfix`, `dovecot`…
 

@@ -93,7 +93,7 @@
 
     <div class="col-md-4 col-md-offset-4 button-list">
       <a class="btn btn-lg btn-block btn-info" href="/docs"><span class="glyphicon glyphicon-book"></span> Documentation</a>
-      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_fr"><span class="glyphicon glyphicon-comment"></span> Forum and chat</a>
+      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help"><span class="glyphicon glyphicon-comment"></span> Forum and chat</a>
       <a class="btn btn-lg btn-block btn-success" href="/contribute"><span class="glyphicon glyphicon-heart"></span> Get involved</a>
       <a class="btn btn-lg btn-block btn-primary" href="https://donate.yunohost.org/" style="background-color: #ffd236; border-color: #ffd236;"><span class="glyphicon glyphicon-usd"></span> Donate</a>
     </div>

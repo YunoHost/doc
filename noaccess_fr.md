@@ -73,7 +73,7 @@ Si vous utilisez un VPN a IP fixe, peut être que celui-ci est arrivé à expira
 Dans ce cas, vous pouvez peut être accéder à votre serveur avec son IP locale s'agissant probablement d'un serveur auto-hébergé chez-vous.
 
 Pour connaître votre ip locale, certaines BOX propose une cartographie du réseau en cours avec les équipements connectés. Sinon, en ligne de commande avec linux:
-```
+```bash
 sudo arp-scan --local
 ```
 
@@ -100,7 +100,7 @@ Dans ce cas il faut renouveler le nom de domaine (si ile st encore temps.
 Si votre serveur ping avec son ip mais ne ping pas avec le nom de domaine alors il y a un problème de configuration au niveau du champs A.
 
 Si c'est un nom de domaine fournit par YunoHost, lancez 
-```
+```bash
 yunohost dyndns update
 ```
 

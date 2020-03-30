@@ -45,7 +45,7 @@ Si sólo conoces el IP de tu servidor :
 ssh admin@111.222.333.444
 ```
 
-Luego, entra la contraseña de administración que has elegido durante la post-instalación [post-installation](postinstall_es).
+Luego, entra la contraseña de administración que has elegido durante la post-instalación [post-installation](/postinstall).
 
 Si has configurado tus DNS (o modificar tu `/etc/hosts`), puedes utilizar tu nombre de dominio :
 
@@ -86,6 +86,6 @@ yunohost user ssh list-keys <username>
 
 ## SSH y seguridad
 
-N.B. : `fail2ban` proscribirá tu IP durante 10 minutos si fracasas más de 5 veces consecutivas en identificarte. Si esto ocurre y que quieres re-validar tu IP, puedes echar un vistazo a la página [fail2ban](/fail2ban_es)
+N.B. : `fail2ban` proscribirá tu IP durante 10 minutos si fracasas más de 5 veces consecutivas en identificarte. Si esto ocurre y que quieres re-validar tu IP, puedes echar un vistazo a la página [fail2ban](/fail2ban)
 
-Encontrarás explicaciones más completa sobre la seguridad y SSH en [la página dedicada](security_es).
+Encontrarás explicaciones más completa sobre la seguridad y SSH en [la página dedicada](/security).

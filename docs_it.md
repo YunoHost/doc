@@ -19,13 +19,13 @@ La documentazione di YunoHost ha 2 differenti sezioni:
 </div>
 
 * Vita del progetto :
-   * [Frequently asked questions](/faq_en)
+   * [Frequently asked questions](/faq)
    * [Project organization](/project_organization)
    * [Blog](https://forum.yunohost.org/c/announcement)
    * [Forum](https://forum.yunohost.org)
-   * [Chat rooms](/chat_rooms_en)
-   * [Communication](/communication_en)
-   * [Supporto / Aiuto](/help_it)
+   * [Chat rooms](/chat_rooms)
+   * [Communication](/communication)
+   * [Supporto / Aiuto](/help)
 
 * Usa l'esempio:
-   * [YunoHost per le organizzazioni senza scopo di lucro](/use_case_non-profit_organisations_en)
+   * [YunoHost per le organizzazioni senza scopo di lucro](/use_case_non-profit_organisations)

@@ -49,7 +49,7 @@ On peut tout à fait héberger plusieurs sites web car YunoHost est multi-domain
 
 #### Pourquoi je ne peux pas accéder à mes applications avec l’adresse IP ?
 
-Pour des raisons techniques, le [SSO](https://github.com/YunoHost/SSOwat/) ne permet pas aux utilisateurs de se connecter à l’espace utilisateur lorsque l’on accède au serveur uniquement avec l’IP. Si vous ne pouvez réellement pas configurer un nom de domaine, une solution temporaire peut être de modifier le [fichier `hosts` (dernier §)](dns_local_network_fr) de son ordinateur.
+Pour des raisons techniques, le [SSO](https://github.com/YunoHost/SSOwat/) ne permet pas aux utilisateurs de se connecter à l’espace utilisateur lorsque l’on accède au serveur uniquement avec l’IP. Si vous ne pouvez réellement pas configurer un nom de domaine, une solution temporaire peut être de modifier le [fichier `hosts` (dernier §)](/dns_local_network) de son ordinateur.
 
 
 #### Quel est le modèle économique de YunoHost ?
@@ -67,7 +67,7 @@ Il est question de financement par dons ou subventions, certains contributeurs m
 
 Oui, c'est possible ! YunoHost a besoin de payer des serveurs et noms de domaine, par ailleurs nous souhaiterions pouvoir permettre aux développeurs principaux de continuer à développer YunoHost plutôt que de chercher un emploi ailleurs.
 
-Pour faire un don ça se passe via notre [Liberapay](https://liberapay.com/YunoHost)
+Pour faire un don ça se passe via [notre interface de don](https://donate.yunohost.org)
 
 Si vous le pouvez, vous pouvez aussi faire des contributions en nature (une partie de notre infrastructure vient d'associations qui nous fournissent des serveurs).
 
