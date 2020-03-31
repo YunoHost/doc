@@ -57,7 +57,7 @@ On peut aussi ~~barrer le texte~~ en encadrant avec deux tildes `~`
 
 ## Créer des liens <a name="CreerLiens"></a>
 
-Pour créer un lien vers un site hors de la documentation de Yunohost :
+Pour créer un lien vers un site hors de la documentation de YunoHost :
 
 ```markdown
 [Texte à afficher](https://lelien.tld)
