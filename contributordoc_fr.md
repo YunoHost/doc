@@ -4,7 +4,7 @@
 * [Écrire de la documentation](/write_documentation)
   *  [Guide de redaction de la documentation](dc_writing_guide_fr)
   *  [Guide markdown](/doc_markdown_guide_fr)
-  *  [Propulser son code avec git & github](/doc_use_git_fr)
+  *  [Propulser son code avec Git & GitHub](/doc_use_git_fr)
 * [Salons de discussion](/chat_rooms)
 * Packaging d'application
    * [Liste d'apps souhaitées par la communauté](/apps_wishlist)
