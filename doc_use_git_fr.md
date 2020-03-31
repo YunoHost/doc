@@ -8,7 +8,7 @@
  - [Suivre votre contribution et prendre en compte les retours des contributeurs·trices](#SuivreContributions)
  - [Faire remonter des erreurs et des souhaits en créant une issue](#RemonterIssues)
  - [Corriger et inspecter les contributions](#ReviewContrib)
- - [Aller plus loin avec git et travailler en local sur son ordinateur](#PlusLoinGitOrdi)
+ - [Aller plus loin avec Git et travailler en local sur son ordinateur](#PlusLoinGitOrdi)
  - [Quelques ressources sur le web](#LiensWeb)
 
 Il est bien sûr possible de contribuer directement sur la documentation de Yunohost, mais ce n'est pas la manière la plus pratique de le faire tant pour le/la contributeur·trice que pour la personne qui va injecter votre contribution dans la documentation. Voici un tutoriel pour comprendre et créer une contribution à la documentation de Yunohost en utilisant l'outil [git (en)](https://git-scm.com/) et [github.com](http://github.com/) qui est le service de forge git qui héberge et stocke le code source de Yunohost ainsi que sa documentation.
