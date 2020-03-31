@@ -18,7 +18,7 @@ Classement des applications disponibles par tags (genre, Git, gestion associatio
  1. Bouton installer en un clique.
  1. Une présentation général de l'application et de sa fonction.
  1. Une partie administration de l'application.
- 1. Une partie aller plus loin, Manipulations techniques liés spécifiquement à Yunohost.
+ 1. Une partie aller plus loin, Manipulations techniques liés spécifiquement à YunoHost.
  1. Une partie sur les client desktop (si il en existe). Lien vers différentes applications tierces si il en existe plusieurs (lien possible avec le catalgue d'applications [framalibre.org](https://framalibre.org))  ou un lien vers la page concernant les applications desktop si des apps officiels sont fournis.
  + Une partie avec :
     - les liens vers le site officiel
