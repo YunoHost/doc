@@ -22,7 +22,7 @@ Classement des applications disponibles par tags (genre, Git, gestion associatio
  1. Une partie sur les client desktop (si il en existe). Lien vers différentes applications tierces si il en existe plusieurs (lien possible avec le catalgue d'applications [framalibre.org](https://framalibre.org))  ou un lien vers la page concernant les applications desktop si des apps officiels sont fournis.
  + Une partie avec :
     - les liens vers le site officiel
-    - Les liens vers le package de yunohost
+    - Les liens vers le package de YunoHost
  1. Documentation de l'utilisation si besoin (cf. Documenter une application).
 
 ## Feuille de route
