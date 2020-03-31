@@ -12,7 +12,7 @@ Puedes descubrir la dirección privada de tu servidor de varias maneras :
 <img src="/images/ynh_login.png" width=600>
 
 - Desde la interfaz de administración de tu servidor Yunohost :
-    en Estado del servidor > Red
+    en Herramientas > Estado del servidor > Red
 <img src="/images/ynh_admin_etat_ip.png" width=900>
 
 - O desde tu router o tu caja Internet, dependiendo de su modelo.
