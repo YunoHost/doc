@@ -48,7 +48,7 @@ Faire une Pull Request correspond au moment ou vous souahitez partager votre tra
 Lorsque vous avez déjà fait une PR (Pull Request), les modifications de votre branche de développement sur le dépôt Git se rajouteront automatiquement à la PR. Cela ne nécessite aucune action supplémentaire. Vous pouvez aussi intégrer les propositions de modifications de contributeurs, qui lorsqu'ils/elles auditeront le code, peuvent trouver des erreurs ou de nouvelles formulations plus adaptées.
 
 ## Faire remonter des erreurs et des souhaits par des issues <a name="RemonterIssues"></a>
-YunoHost dispose d'un dépôt git spécifique pour le recueil des issues : [github.com/YunoHost/issues](https://github.com/YunoHost/issues)
+YunoHost dispose d'un dépôt Git spécifique pour le recueil des issues : [github.com/YunoHost/issues](https://github.com/YunoHost/issues)
 Une issue aussi appelé ticket, est un problème identifié ou alors un souhait de développement ; dans le cas présent pour la documentation, mais c'est valable pour tout dépôt logiciel. Dans le cadre de la documentation de YunoHost il sera surtout proposé des issues pour le développement de la documentation, les problèmes identifiés étant facilement corrigeable.
 
 ## Aller plus loin avec git et travailler sur son poste de travail <a name="PlusLoinGitOrdi"></a>
