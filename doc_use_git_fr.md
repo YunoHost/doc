@@ -14,7 +14,7 @@
 Il est bien sûr possible de contribuer directement sur la documentation de YunoHost, mais ce n'est pas la manière la plus pratique de le faire tant pour le/la contributeur·trice que pour la personne qui va injecter votre contribution dans la documentation. Voici un tutoriel pour comprendre et créer une contribution à la documentation de Yunohost en utilisant l'outil [Git (en)](https://git-scm.com/) et [github.com](http://github.com/) qui est le service de forge Git qui héberge et stocke le code source de YunoHost ainsi que sa documentation.
 
 ## Création d'un compte sur github.com <a name="CreationCompteGithub"></a>
-Pour pouvoir envoyer vos contributions via GitHub, il est nécessaire avoir un compte sur github, pour créer le compte vous aurez besoin d'une adresse email valide à laquelle vous avez accès. Github est un outil puissant qui propose de nombreuses fonctionnalités, l'interface peut être un peu effrayant au début.
+Pour pouvoir envoyer vos contributions via GitHub, il est nécessaire avoir un compte sur GitHub, pour créer le compte vous aurez besoin d'une adresse email valide à laquelle vous avez accès. GitHub est un outil puissant qui propose de nombreuses fonctionnalités, l'interface peut être un peu effrayant au début.
 Vous n'êtes pas obligé·ée de donner vos noms et prénoms, vous pouvez utiliser un pseudonyme (lors de l'inscription `Username`).
 
 */iframe video creer compte github /*
