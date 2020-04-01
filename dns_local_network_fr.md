@@ -12,7 +12,7 @@ Vous pouvez retrouver l’adresse privée de votre serveur de différentes mani�
 <img src="/images/ynh_login.png" width=600>
 
 - Depuis l’interface d’administration de votre serveur YunoHost :
-    dans État du serveur > Réseau
+    dans Outils > État du serveur > Réseau
 <img src="/images/ynh_admin_etat_ip.png" width=900>
 
 - Ou depuis votre routeur ou votre box, selon son modèle.
