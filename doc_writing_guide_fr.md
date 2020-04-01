@@ -6,7 +6,7 @@ Ajouter un bouton installer en un clique (comme par exemple : https://yunohost.o
 
 Classement des applications disponibles par tags (genre, Git, gestion associations, courriels, etc.).
 
-*/Définition d'une license de diffusion de la documentation, mais laquelle ? Permissive ou non (CC By-Sa)/*
+*/Définition d'une license de diffusion de la documentation, mais laquelle ? Permissive ou non (CC BY-SA)/*
 
 ## Quelques usages types et d'ordres général (trame de rédaction)
 
