@@ -17,7 +17,7 @@ Il est bien sûr possible de contribuer directement sur la documentation de Yuno
 Pour pouvoir envoyer vos contributions via GitHub, il est nécessaire avoir un compte sur GitHub, pour créer le compte vous aurez besoin d'une adresse email valide à laquelle vous avez accès. GitHub est un outil puissant qui propose de nombreuses fonctionnalités, l'interface peut être un peu effrayant au début.
 Vous n'êtes pas obligé·ée de donner vos noms et prénoms, vous pouvez utiliser un pseudonyme (lors de l'inscription `Username`).
 
-*/iframe video creer compte github /*
+*/iframe video creer compte GitHub /*
 
 
 ## Forker la documentation de YunoHost dans votre dépôt personel <a name="ForkerDocumentationYunoHost"></a>
