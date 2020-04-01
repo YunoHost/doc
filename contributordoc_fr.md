@@ -7,7 +7,7 @@
   *  [Propulser son code avec Git & GitHub](/doc_use_git_fr)
 * [Salons de discussion](/chat_rooms)
 * Packaging d'application
-   * [Liste d'apps souhaitées par la communauté](/apps_wishlist)
+   * [Liste d'applications souhaitées par la communauté](/apps_wishlist)
    * [Introduction générale au packaging d'apps](/packaging_apps_start)
    * [Introduction technique au packaging d'apps](/packaging_apps)
    * [Déployer un environnement de développement avec VirtualBox](/packaging_apps_virtualbox)
