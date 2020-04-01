@@ -28,7 +28,7 @@ Forker un projet sur GitHub est extrêmement simple, il suffit ce cliquer sur le
 Dans le titre du nouveau dépôt, vous verrez de quelle provenance vient le dépôt, dans le cas présent `YunoHost/doc`
 ![Capture d'écran titre et sous-titre du dépot](/images/dug_fork_source.png)
 
-*/iframe video forker code source github /*
+*/iframe video forker code source GitHub /*
 
 
 > **Point de vigilance !**
