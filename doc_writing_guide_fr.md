@@ -60,4 +60,4 @@ YunoHost vers le site officiel        -------      -------
 
 ## Potentielles problématiques rencontrés ?
 
-Quid des apps qui sont des containers à d'autres applications, tel que Nextcloud et qui présentes de multiples possibilités d'usages.
+Quid des applications qui sont des containers à d'autres applications, tel que Nextcloud et qui présentes de multiples possibilités d'usages.
