@@ -132,6 +132,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Syspass](http://www.syspass.org/) / [github](https://github.com/nuxsmin/sysPass)
 - [Taiga](https://taiga.io) / [github](https://github.com/taigaio/)
 - [Taskwarrior](https://taskwarrior.org) / [github](https://github.com/GothenburgBitFactory/taskwarrior)
+- [Technitium DNS](https://technitium.com/dns/) / [github](https://github.com/TechnitiumSoftware/DnsServer)
 - [TMate](https://tmate.io/) / [github](https://github.com/tmate-io/tmate)
 - [Tracim](https://github.com/tracim/tracim)
 - [Thredded](https://thredded.org/) / [github](https://github.com/thredded/thredded)
