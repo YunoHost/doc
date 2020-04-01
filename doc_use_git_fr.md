@@ -45,7 +45,7 @@ Plus d'informations sur qu'est une branche sur git-scm.com : [Les branches avec 
 Faire une Pull Request correspond au moment ou vous souahitez partager votre travaille avec le reste des contributeurs⋅trices et l'intégrer au dépot master (dépôt principale de Yunohost). Lors de la publication d'un Pull Request, couramment nommé PR, les contributeurs⋅trices pourront amender, commenter, ajouter, corriger votre contribution avant intégration complète au dépot.
 
 ## Suivre votre contribution et prendre en compte les retours des contributeurs·trices <a name="SuivreContributions"></a>
-Lorsque vous avez déjà fait une PR (Pull Request), les modifications de votre branche de développement sur le dépôt git se rajouteront automatiquement à la PR. Cela ne nécessite aucune action supplémentaire. Vous pouvez aussi intégrer les propositions de modifications de contributeurs, qui lorsqu'ils/elles auditeront le code, peuvent trouver des erreurs ou de nouvelles formulations plus adaptées.
+Lorsque vous avez déjà fait une PR (Pull Request), les modifications de votre branche de développement sur le dépôt Git se rajouteront automatiquement à la PR. Cela ne nécessite aucune action supplémentaire. Vous pouvez aussi intégrer les propositions de modifications de contributeurs, qui lorsqu'ils/elles auditeront le code, peuvent trouver des erreurs ou de nouvelles formulations plus adaptées.
 
 ## Faire remonter des erreurs et des souhaits par des issues <a name="RemonterIssues"></a>
 YunoHost dispose d'un dépôt git spécifique pour le recueil des issues : [github.com/YunoHost/issues](https://github.com/YunoHost/issues)
