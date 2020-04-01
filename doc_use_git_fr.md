@@ -58,7 +58,7 @@ Utiliser la puissance de Git et ainsi travailler sur son ordinateur personnel, p
 
 ## Quelques ressources ailleurs sur le net pour aller plus loin <a name="LiensWeb"></a>
  - [Gérer son code avec Git et GitHub - openclassrooms.com](https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github)
- - [Interface utilisateurs·trices de git - git-scm.com](https://git-scm.com/download/gui/linux)
+ - [Interface utilisateurs·trices de Git - git-scm.com](https://git-scm.com/download/gui/linux)
 
 */ To do/*
 */Ajouter vidéos explicative - Add videos explication/*
