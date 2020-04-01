@@ -1,4 +1,4 @@
-# Guide de rédaction de la documentation des apps
+# Guide de rédaction de la documentation des applications
 
 ## Pages de documentations utilisateurs.trices / administrateurs⋅trices
 
