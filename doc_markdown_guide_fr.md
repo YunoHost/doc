@@ -44,7 +44,7 @@ Pour taper un retour à la ligne sans créer de nouveau paragraphe, il est néce
 En rédigeant ça :
 
 ```markdown
-Pour du texte en *italique il faut encadrer par un astérique`*`*
+Pour du texte en *italique il faut encadrer par un astérisque`*`*
 Pour rédiger du **texte en gras par deux astériques**
 On peut aussi ~~barrer le texte~~ en encadrant avec deux tildes `~`
 ```
