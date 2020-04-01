@@ -227,24 +227,23 @@ Ce qui afficherait ça :
 
 ## Bloc de codes <a name="BlockCodes"></a>
 
-Pour afficher du texte en brut, des `blocs de codes` peuvent être créer :
+Pour afficher du texte en brut, des `blocs de codes` peuvent être créer en utilisant l'accent grave `Alt Gr + è` :
 
 ````
 Soit inline, par exemple pour mettre en valeur une touche comme `Ctrl`
 ```
 ou directement en bloc.
-La seule différence est dans la quantité de : `
-Minimum ``` en ouverture et fermeture de bloc et deux ` qui encadre le morceau de texte à formater dans une ligne
-```
-````
+La seule différence est dans la quantité d'accents graves : 
+Minimum trois accents graves en ouverture et fermeture de bloc et deux accent grave qui   encadre le morceau de texte à formater dans une ligne
 
 Ce qui donnera au rendu :
 
 Soit inline, par exemple pour mettre en valeur une touche comme `Ctrl`
+
 ```
 ou directement en bloc.
-La seule différence est dans la quantité de : `
-Minimum ``` en ouverture et fermeture de bloc et deux ` qui   encadre le morceau de texte à formater dans une ligne
+La seule différence est dans la quantité d'accents graves :
+Minimum trois accents graves en ouverture et fermeture de bloc et deux accent grave qui   encadre le morceau de texte à formater dans une ligne
 ```
 
 ## Liens utiles <a name ="LiensUtiles"></a>
