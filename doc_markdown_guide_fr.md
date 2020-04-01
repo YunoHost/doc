@@ -52,7 +52,7 @@ On peut aussi ~~barrer le texte~~ en encadrant avec deux tildes `~`
 On peut lire ça :
 
 Pour du texte en *italique il faut encadrer par un astérisque `*` *
-Pour rédiger du **texte en gras par deux astériques**
+Pour rédiger du **texte en gras par deux astérisques**
 On peut aussi ~~barrer le texte~~ en encadrant avec deux tildes `~`
 
 ## Créer des liens <a name="CreerLiens"></a>
