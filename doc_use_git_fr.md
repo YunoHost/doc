@@ -57,7 +57,7 @@ Utiliser la puissance de Git et ainsi travailler sur son ordinateur personnel, p
 - Ressource en ligne : [docs.microsoft.com - Configurer un référentiel Git localement pour la documentation](https://docs.microsoft.com/fr-fr/contribute/get-started-setup-local)
 
 ## Quelques ressources ailleurs sur le net pour aller plus loin <a name="LiensWeb"></a>
- - [Gérer son code avec git et github - openclassrooms.com](https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github)
+ - [Gérer son code avec Git et GitHub - openclassrooms.com](https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github)
  - [Interface utilisateurs·trices de git - git-scm.com](https://git-scm.com/download/gui/linux)
 
 */ To do/*
