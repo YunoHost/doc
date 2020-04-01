@@ -52,7 +52,7 @@ YunoHost dispose d'un dépôt Git spécifique pour le recueil des issues : [gith
 Une issue aussi appelé ticket, est un problème identifié ou alors un souhait de développement ; dans le cas présent pour la documentation, mais c'est valable pour tout dépôt logiciel. Dans le cadre de la documentation de YunoHost il sera surtout proposé des issues pour le développement de la documentation, les problèmes identifiés étant facilement corrigeable.
 
 ## Aller plus loin avec Git et travailler sur son poste de travail <a name="PlusLoinGitOrdi"></a>
-Utiliser la puissance de git et ainsi travailler sur son ordinateur personnel, permet entre autres de ne pas avoir à créer de `commit` à chaque enregistrement intermédiaire des pages de documentations modifiées. Cela permet aussi d'utiliser des outils et logiciels qui permettent une distinction plus facile des codes utilisés dans une page de documentation.
+Utiliser la puissance de Git et ainsi travailler sur son ordinateur personnel, permet entre autres de ne pas avoir à créer de `commit` à chaque enregistrement intermédiaire des pages de documentations modifiées. Cela permet aussi d'utiliser des outils et logiciels qui permettent une distinction plus facile des codes utilisés dans une page de documentation.
 
 - Ressource en ligne : [docs.microsoft.com - Configurer un référentiel Git localement pour la documentation](https://docs.microsoft.com/fr-fr/contribute/get-started-setup-local)
 
