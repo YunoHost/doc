@@ -30,7 +30,7 @@ Classement des applications disponibles par tags (genre, Git, gestion associatio
 1. Documenter les applications.
    1. Documenter les applications au travail (marqué : work) niveau 8/7/6.
    1. Traduire la page de documentation à minima en français et en anglais.
-   1. Faire une PR sur le dépot de l'app concerné vers la page de documentation.
+   1. Faire une PR sur le dépôt de l'application concerné vers la page de documentation.
 
 ## Documenter une application
 
