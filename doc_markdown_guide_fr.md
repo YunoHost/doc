@@ -234,7 +234,7 @@ Soit inline, par exemple pour mettre en valeur une touche comme `Ctrl`
 ```
 ou directement en bloc.
 La seule différence est dans la quantité de : `
-Minimum ``` en ouverture et fermeture de bloc et deux ` qui   encadre le morceau de texte à formater dans une ligne
+Minimum ``` en ouverture et fermeture de bloc et deux ` qui encadre le morceau de texte à formater dans une ligne
 ```
 ````
 
