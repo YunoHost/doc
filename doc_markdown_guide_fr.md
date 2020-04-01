@@ -13,7 +13,7 @@
  - [Les tableaux](#UtiliserTableaux)
  - [Bloc de Codes](#BlockCodes)
 
-Le Markdown est un langage de balisage créé en 2004, de nombreux add-on développant les possibilités de ce langage existent. L'objectif de ce guide est de tendre vers l'exaustivité des possibilités de ce langage de formatage dans le cadre de la documentation de Yunohost et non du langage Markdown en général.
+Le Markdown est un langage de balisage créé en 2004, de nombreux add-on développant les possibilités de ce langage existent. L'objectif de ce guide est de tendre vers l’exhaustivité des possibilités de ce langage de formatage dans le cadre de la documentation de YunoHost et non du langage Markdown en général.
 
 Markdown permet de formater du texte à l'aide de balises, il permet une lecture *humaine* du texte ; même avec le formatage. Même si un unique bloc note est nécessaire il existe de nombreux logiciels markdowns (Markdown sur [framalibre.org](https://framalibre.org/recherche-par-crit-res?keys=markdown)). Sa prise en main est relativement facile.
 
