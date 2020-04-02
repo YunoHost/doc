@@ -1,3 +1,5 @@
+<div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">La page demandée n'est pour le moment pas disponible en français. Voici à la place la version en anglais. Si vous souhaitez commencer une traduction de cette page, vous pouvez vous rendre sur [cette page](https://yunohost.org/#/apps_wishlist_fr).</div>
+
 # Apps wishlist
 
 <div class="alert alert-info">Before to add an app in wishlist please check your app is not already in official or community list: see the <a href="/apps">apps list</a></div>
@@ -138,6 +140,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Thredded](https://thredded.org/) / [github](https://github.com/thredded/thredded)
 - [Twister](http://twister.net.co) / [github](https://github.com/miguelfreitas/twister-core/)
 - [TwitRSS.me](http://twitrss.me/) / [Github](https://github.com/ciderpunx/twitrssme) Scrapes Twitter to create RSS feeds.
+- [Uwazi](https://www.uwazi.io/) / [Github](https://github.com/huridocs/uwazi)
 - [Volumio](https://volumio.org) / [github](https://github.com/volumio)
 - [WebODF](http://webodf.org) / [github](https://github.com/webodf/WebODF)
 - [Webhook.site](https://docs.webhook.site/) / [github](https://github.com/fredsted/webhook.site)
