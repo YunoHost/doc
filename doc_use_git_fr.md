@@ -1,4 +1,4 @@
-# Propulser une contribution avec git
+# Propulser une contribution avec Git
 
 **Index**
  - [Création d'un compte sur github.com](#CreationCompteGithub)
