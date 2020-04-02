@@ -92,7 +92,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Nibbleblog](http://www.nibbleblog.com)/ [github](https://github.com/dignajar/nibbleblog)
 - [Nuage](https://nuage.kerjean.me/login) / [github](https://github.com/mickael-kerjean/filestash)
 - [Ombi](https://github.com/tidusjar/Ombi)
-- [Omeka S](https://github.com/omeka/omeka-s)
+- [Omeka S](https://omeka.org/s/) / [github](https://github.com/omeka/omeka-s)
 - [OpenBazaar](https://openbazaar.org) / [github](https://github.com/openbazaar)
 - [OpenCart](https://www.opencart.com) / [github](https://github.com/opencart/opencart)
 - [openHAB](https://www.openhab.org/) - Smart home platform. / [github](https://github.com/openhab)
