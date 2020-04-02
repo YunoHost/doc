@@ -20,7 +20,7 @@ Classement des applications disponibles par tags (genre, Git, gestion associatio
  1. Un index en tête de documentations avec renvois vers l'ensemble des chapitres de la documentation.
  1. Une présentation général de l'application et de sa fonction.
  1. Une partie administration de l'application.
- 1. Une partie aller plus loin, Manipulations techniques liés spécifiquement à YunoHost.
+ 1. Une partie aller plus loin, Manipulations techniques, liés spécifiquement à YunoHost mais aussi les limitations.
  1. Une partie sur les client desktop (si il en existe). Lien vers différentes applications tierces si il en existe plusieurs (lien possible avec le catalgue d'applications [framalibre.org](https://framalibre.org))  ou un lien vers la page concernant les applications desktop si des applications officiels sont fournis.
  1. Documentation de l'utilisation si besoin (cf. Documenter une application).
  1. Une partie avec :
