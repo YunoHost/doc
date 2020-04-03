@@ -26,9 +26,11 @@ En plus des fonctionnalités principales de Wallabag, ce paquet propose égaleme
 
 ## Applications clientes
 
+| Nom de l'applications | Plateforme | Multi-comptes | Autre réseaux supportés | Play Store | F-Droid | Apple Store |
+|-----------------------|------------|---------------|-------------------------|------------|---------|-------------|
 ## Liens utiles
 
-   + Site web : [www.wallabag.org](https://www.wallabag.org/fr)
+ + Site web : [www.wallabag.org](https://www.wallabag.org/fr)
  + Documentation officielle : [doc.wallabag.org](https://doc.wallabag.org/fr/)
  + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/wallabag2](https://github.com/YunoHost-Apps/wallabag2_ynh)
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/wallabag2/issues](https://github.com/YunoHost-Apps/wallabag2_ynh/issues)
