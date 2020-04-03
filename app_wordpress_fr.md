@@ -5,7 +5,7 @@
 - [Limitations avec Yunohost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
-WordPress est un système de gestion de contenu (SGC ou content management system (CMS) en anglais) gratuit, libre et open-source. Ce logiciel écrit en PHP repose sur une base de données MySQL et est distribué par l'entreprise américaine Automattic. Les fonctionnalités de WordPress lui permettent de créer et gérer différents types de sites Web : site vitrine, site de vente en ligne, site applicatif, blogue, ou encore portfolio. Il est distribué selon les termes de la licence GNU GPL version 2.¹
+WordPress est un système de gestion de contenu (SGC ou content management system (CMS) en anglais) gratuit, libre et open-source. Ce logiciel écrit en PHP repose sur une base de données MySQL et est distribué par l'entreprise américaine Automattic. Les fonctionnalités de WordPress lui permettent de créer et gérer différents types de sites Web : site vitrine, site de vente en ligne, site applicatif, blogue, ou encore portfolio. Il est distribué selon les termes de la licence GNU GPL version 2.[¹]
 
 ## Limitations avec YunoHost
 
@@ -22,4 +22,4 @@ Comme le plugin de mise à jour automatique ne fonctionne pas comme prévu, fait
 
 -----------
 
-¹: [wikipedia.org - WordPress](https://fr.wikipedia.org/wiki/WordPress)
+[¹]: [wikipedia.org - WordPress](https://fr.wikipedia.org/wiki/WordPress)
