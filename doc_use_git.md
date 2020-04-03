@@ -1,1 +1,1 @@
-# Propel your contribution with git
+# Propel your contribution with Git
