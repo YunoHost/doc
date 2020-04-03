@@ -27,6 +27,8 @@ Classement des applications disponibles par tags (genre, Git, gestion associatio
     - les liens vers le site officiel
     - Les liens vers le package de YunoHost
 
+Trame markdown pour la rédaction des pages de documentations : [ici](/app_writing_guide_fr)
+
 ## Feuille de route
 
 1. Documenter les applications.
