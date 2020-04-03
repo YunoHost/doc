@@ -1,10 +1,10 @@
-# How to use git to package apps
+# How to use Git to package apps
 
 Git... Our dear beloved Git, which can be described also as "Goddamn Idiotic Truckload of sh*t", according to Linus.  
-Be sure if you don't know git yet that you will soon agree with that description.
+Be sure if you don't know Git yet that you will soon agree with that description.
 
-YunoHost and all our apps are on the git forge GitHub. Which means that if you want to work on an app, sooner or later you're going to have to deal with git.  
-So let's see how to work with git to be able to contribute in the context of YunoHost.
+YunoHost and all our apps are on the Git forge GitHub. Which means that if you want to work on an app, sooner or later you're going to have to deal with Git.  
+So let's see how to work with Git to be able to contribute in the context of YunoHost.
 
 ## Working with GitHub
 
@@ -38,8 +38,7 @@ If you have the permission to write, you will just edit the file, without forkin
 #### Commit your changes
 
 When you're done with your modification on the file, you can commit your changes.  
-Behind that word, the idea is quite simple, you're just going to save your changes...
-
+Behind that word, the idea is quite simple, you're just going to save your changes...  
 <img src="/images/github_commit.png" width=100%>
 
 The first field is the name of your commit, a very short sentence to explain why you did this modification.  
@@ -89,7 +88,7 @@ Your repo will be moved into the organization, you don't have to remove the orig
 As we have seen, you can do a lot of things directly on GitHub.  
 But when you need to edit multiple files, or when you need to work on your code on your own, it's better to work directly on your computer.
 
-Before going to the hellish part of git, let's see 2 different ways to start working with git.
+Before going to the hellish part of Git, let's see 2 different ways to start working with Git.
 
 #### First case: Creating a new package
 
@@ -107,7 +106,7 @@ git clone https://github.com/YunoHost/example_ynh
 ```
 `git clone` will download a copy of the repository. You will have the complete repository, with its branches, commits, and everything (into that apparently little `.git` directory).
 
-To git clone is usually the starting point of any local work with git.
+To git clone is usually the starting point of any local work with Git.
 
 *A side note though, if you expect to send your modifications back to the distant repository on GitHub, be sure to have the permission to write on this repository. Otherwise, fork before and clone your fork, on which you do have the permission.*
 
@@ -144,7 +143,7 @@ If it appears that you're not on the branch you wanted to be, or you're actually
 ```
 git checkout testing
 ```
-*Read carefully what git says when you validate a command, do never forget that git is sneaky...*
+*Read carefully what Git says when you validate a command, do never forget that Git is sneaky...*
 
 #### Git pull before anything else
 
@@ -152,7 +151,7 @@ You're finally on the right branch, and ready to work.
 **Wait ! A nasty trap is waiting for you...**  
 Before ending up in an inextricable situation. Start with a `git pull` to update your branch to the latest change from the distant repository.
 
-*Sometimes, you will encounter an impossible situation where git is saying that you can't pull because you have local changes. But you don't care of those local modifications, you just want to get the last version of the distant branch. But git don't care about what YOU want...*  
+*Sometimes, you will encounter an impossible situation where Git is saying that you can't pull because you have local changes. But you don't care of those local modifications, you just want to get the last version of the distant branch. But Git don't care about what YOU want...*  
 *I have to admit that my only solution is as highly efficient as dirty... A good old `rm -r` of the repository and a `git clone`*
 
 #### Let's work
@@ -160,7 +159,7 @@ Before ending up in an inextricable situation. Start with a `git pull` to update
 Eventually, you can work on your code.  
 When you are finally ok with what you have done, it's time to validate your work.
 
-The first step is to inform git about which file(s) to validate. To do so, we'll use `git add`
+The first step is to inform Git about which file(s) to validate. To do so, we'll use `git add`
 ```
 git add my_file
 git add my_other_file and_also_this_one
@@ -182,7 +181,7 @@ To create a new branch and move to this branch, you can use `git checkout -b my_
 
 #### Commit
 
-To commit is simply to validate your work in git. As you can do in GitHub.  
+To commit is simply to validate your work in Git. As you can do in GitHub.  
 To have the same fields that you had on GitHub, with the name of the commit, and a longer explanation. You can simply use `git commit`.  
 The first line, before the comments, is for the name of the commit.  
 After all the comments, you can add an explanation if you want to.

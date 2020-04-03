@@ -7,6 +7,7 @@
    * [Liste d'apps souhaitées par la communauté](/apps_wishlist)
    * [Introduction générale au packaging d'apps](/packaging_apps_start)
    * [Introduction technique au packaging d'apps](/packaging_apps)
+   * [Comment utiliser Git pour packager les applications](/packaging_apps_git)
    * [Déployer un environnement de développement avec VirtualBox](/packaging_apps_virtualbox)
    * [Manifest](/packaging_apps_manifest)
    * [Scripts](/packaging_apps_scripts)
