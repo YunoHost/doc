@@ -44,7 +44,7 @@
     * [Hide services with Tor](/torhiddenservice)
     * [A discussion about the advantages of using a VPN](/vpn_advantage)
     * [(old) Jessie->Stretch migration procedure](jessie_stretch_migration)
-* [Troubleshooting guide](/troubleshooting_guide)
+* Troubleshooting
     * [Changing the administration password](/change_admin_password)
     * [Recover access to your server](/noaccess)
     * [Unban IPs in iptables/fail2ban](/fail2ban)
