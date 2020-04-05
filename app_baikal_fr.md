@@ -1,24 +1,35 @@
-#Baïkal
+# <img src="/images/baikal_logo.png" height="80px" alt="Baïkal's logo"> Baïkal
+
+[![Install Baïkal with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=baikal) [![Integration level](https://dash.yunohost.org/integration/baikal.svg)](https://dash.yunohost.org/appci/app/baikal)
+
+- [Configuration](#Configuration)
+  - [Connexion à l'interface d'administration](#Connexion-à-l-interface-d-administration)
+  - [Création d'un nouvel utilisateur](#Création-d-un-nouvel-utilisateur)
+- [Connexion CalDAV](#Connexion-CalDAV)
+  - [Connexion de Thunderbird avec Lightning](#Connexion-de-Thunderbird-avec-Lightning)
+  - [Connexion de AgenDAV](#Connexion-de-AgenDAV)
+- [Connexion CardDAV](#Connexion-CardDAV)
+- [Liens utiles](#liens-utiles)
 
 Baïkal est un serveur de calendriers et de contacts accessible par les protocoles CalDAV (calendriers) et CardDAV (carnets d’adresses), autorisant ainsi la synchronisation avec de nombreux clients (Thunderbird + Lightning par exemple).
 
 **AVERTISSEMENT** : Baikal ne fonctionnera pas si vous avez installé un **Nextcloud** ( leurs fonctions cardav/caldav entrent en conflit).
 
-## Connexion à l’interface d’admin
-Sur le portail SSO, si on clique sur la tuile « Baïkal », on tombe sur une page bien peu conviviale qui explique que le service fonctionne. Pour accéder à l’admin, il faut rajouter `/admin`. Par exemple :
+## Configuration
 
-https://example.com/baikal/admin
+### Connexion à l’interface d’administration
 
-Le nom d’utilisateur à spécifier est « admin » suivi du mot de passe spécifique que vous avez choisi lors de l’installation de Baïkal. Attention, le mot de passe ne doit pas contenir de carractères spéciaux.
+Pour configurer l'appliation il faut se rendre à l'adresse : `sous.domaine.tld/admin` ou `domaine.tld/baikal/admin`
+Le nom d’utilisateur à spécifier est `admin` suivi du mot de passe spécifique que vous avez choisi lors de l’installation de Baïkal. Attention, le mot de passe ne doit pas contenir de carractères spéciaux.
 
-### Exemple de création d'un nouvel utilisateur :
+### Création d'un nouvel utilisateur
 
-Aller dans l'onglet « settings », sélectionner « Digest » dans « WebDAV authentication type ». 
-Ajouter les utilisateurs dans  l'onglet « Users and  resources ».
+Aller dans l'onglet `settings`, sélectionner `Digest` dans `WebDAV authentication type`.
+Ajouter les utilisateurs dans  l'onglet `Users and  resources`.
 
 ## Connexion CalDAV
 
-### Connexion de Thunderbird + Lightning
+### Connexion de Thunderbird avec Lightning
 
 Ajoutez un nouvel agenda de type « Réseau » puis « CalDAV ».
 
@@ -36,20 +47,25 @@ AgenDAV est déjà connecté à Baïkal, aucune manipulation n’est nécessaire
 
 AgenDAV vous permet également de créer de nouveaux calendriers très simplement.
 
-##Connexion CardDAV
+## Connexion CardDAV
 
-### Connexion de Roundcube
-
-Ajoutez un nouveau carnet d’adresses en allant dans Paramètres > Préférences > CardDAV.
+En utilisant l'exemple avec RoundCube Ajoutez un nouveau carnet d’adresses en allant dans Paramètres > Préférences > CardDAV.
 
 Renseigner :
-* Nom du carnet d’adresses : `default`
-* Nom d’utilisateur : `username`
-* Mot de passe : `leMotDePasseAssociéAUusername`
-* URL : `https://example.com/baikal/card.php/addressbooks/username/default`
++ Nom du carnet d’adresses : `default`
++ Nom d’utilisateur : `username`
++ Mot de passe : `leMotDePasseAssociéAUusername`
++ URL : `https://example.com/baikal/card.php/addressbooks/username/default`
 
 *En prenant soin de remplacer « example.com » par votre domaine et « username » par votre nom d’utilisateur*
 
 Enregistrer
 
 Le carnet d’adresses est maintenant accessible.
+
+## Liens utiles
+
+ + Site web : [www.baikal-server.com (en)](http://www.baikal-server.com/)
+ + Documentation officielle : [sabre.io - baikal (en)](https://sabre.io/baikal/)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/bikal](https://github.com/YunoHost-apps/baikal_ynh)
+ + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/baikal/issues](https://github.com/YunoHost-apps/baikal_ynh/issues)

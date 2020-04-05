@@ -8,6 +8,6 @@ Galerie de photos auto-hébergée, réseau social fédéré.
 
 ## Liens utiles
 
-+ Site web : [anfora.app](https://anfora.app/)
-+ Dépôt logiciel de l'application : [github.com - YunoHost-Apps/anfora](https://github.com/YunoHost-Apps/anfora_ynh)
++ Site web : [anfora.app (en)](https://anfora.app/)
++ Dépôt logiciel de l'application : [github.com - YunoHost-Apps/anfora (en)](https://github.com/YunoHost-Apps/anfora_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/anfora/issues](https://github.com/YunoHost-Apps/anfora_ynh/issues)
