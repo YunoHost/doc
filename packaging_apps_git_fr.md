@@ -101,7 +101,7 @@ Donc, vous allez le faire différemment. Vous allez cloner !
 ##### git clone
 
 Pour cloner, vous allez faire :
-```
+```bash
 git clone https://github.com/YunoHost/example_ynh
 ```
 `git clone` téléchargera une copie du dépôt. Vous aurez le dépôt complet, avec ses branches, ses commits, et tout le reste (dans cet apparent petit répertoire `.git`).
@@ -139,7 +139,7 @@ La branche courante est mise en évidence et précédée d'un "*".
 #### git checkout
 
 S'il apparaît que vous n'êtes pas sur la branche où vous vouliez être, ou que vous êtes en fait sur master (ce qui est mal !), vous pouvez passer à une autre branche avec `git checkout`.
-```
+```bash
 git checkout testing
 ```
 *Lisez attentivement ce que Git dit quand vous validez une commande, n'oubliez jamais que Git est sournois...*
@@ -159,12 +159,12 @@ Vous pouvez finalement travailler sur votre code.
 Lorsque vous êtes enfin d'accord avec ce que vous avez fait, il est temps de valider votre travail.
 
 La première étape consiste à informer Git sur le(s) fichier(s) à valider. Pour ce faire, nous utiliserons `git add`.
-```
+```bash
 git add mon_fichier
 ajouter mon_autre_fichier et_aussi_celui_ci
 ```
 Si vous souhaitez valider tous votre travail, vous pouvez aussi simplement faire
-```
+```bash
 git add --all
 ```
 
@@ -186,7 +186,7 @@ La première ligne, avant les commentaires, est pour le nom du commit.
 Après tous les commentaires, vous pouvez ajouter une explication si vous le souhaitez.
 
 Si vous voulez faire un commit avec seulement un nom pour votre commit, vous pouvez utiliser une simple commande :
-```
+```bash
 git commit -m "My commit name"
 ```
 
@@ -195,6 +195,6 @@ git commit -m "My commit name"
 Vos modifications sont validées, mais uniquement sur votre clone local du dépôt. Maintenant, vous devez renvoyer ces modifications sur le dépôt distant sur GitHub.  
 Pour ce faire, vous devez savoir quelle est votre branche actuelle. (Si vous ne le savez pas, `git branch` vous donnera cette information).  
 Ensuite, vous pouvez git push
-```
+```bash
 git push -u origin BRANCH_NAME
 ```
