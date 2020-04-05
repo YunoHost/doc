@@ -1,5 +1,3 @@
-<div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">La page demandée n'est pour le moment pas disponible en français. Voici à la place la version en anglais. Si vous souhaitez commencer une traduction de cette page, vous pouvez vous rendre sur [cette page](https://yunohost.org/#/apps_wishlist_fr).</div>
-
 # Apps wishlist
 
 <div class="alert alert-info">Before to add an app in wishlist please check your app is not already in official or community list: see the <a href="/apps">apps list</a></div>
@@ -18,6 +16,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Auth0 SSO Dashboard](https://github.com/auth0-extensions/auth0-sso-dashboard-extension)
 - [Bitmessage](https://bitmessage.org/wiki/Compiling_instructions) / [github](https://github.com/Bitmessage/PyBitmessage)
 - [Beehive](https://github.com/muesli/beehive)
+- [BigBlueButton](https://bigbluebutton.org) / [install instruction](http://docs.bigbluebutton.org/2.2/install.html) / [github](https://github.com/bigbluebutton/bigbluebutton) Complete open source web conferencing system.
 - [Bludit](https://www.bludit.com) / [github](https://github.com/bludit/bludit)
 - [Blynk](https://github.com/blynkkk/blynk-library)
 - [Bookstack](https://www.bookstackapp.com/) / [github](https://github.com/BookStackApp/BookStack)
