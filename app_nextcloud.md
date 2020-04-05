@@ -128,7 +128,7 @@ Run a scan of the new directory by Nextcloud:
 
 ```bash
 cd /var/www/nextcloud
-sudo -u nextcloud php occ files:scan --all
+sudo -u nextcloud php7.3 occ files:scan --all
 ```
 
 It's over now. Now test if everything is fine, try connecting to your Nextcloud instance, upload a file, check its proper synchronization.
