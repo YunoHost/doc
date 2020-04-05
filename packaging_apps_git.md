@@ -101,7 +101,7 @@ So, you're going to do it differently. You're going to clone !
 ##### git clone
 
 To clone, you're going to do:
-```
+```bash
 git clone https://github.com/YunoHost/example_ynh
 ```
 `git clone` will download a copy of the repository. You will have the complete repository, with its branches, commits, and everything (into that apparently little `.git` directory).
@@ -140,7 +140,7 @@ The current branch is highlighted and preceded by a `*`.
 #### git checkout
 
 If it appears that you're not on the branch you wanted to be, or you're actually on master (which is bad !), you can move to another branch with `git checkout`
-```
+```bash
 git checkout testing
 ```
 *Read carefully what Git says when you validate a command, do never forget that Git is sneaky...*
@@ -160,12 +160,12 @@ Eventually, you can work on your code.
 When you are finally ok with what you have done, it's time to validate your work.
 
 The first step is to inform Git about which file(s) to validate. To do so, we'll use `git add`
-```
+```bash
 git add my_file
 git add my_other_file and_also_this_one
 ```
 If you want to validate all your work, you can also simply do
-```
+```bash
 git add --all
 ```
 
@@ -187,7 +187,7 @@ The first line, before the comments, is for the name of the commit.
 After all the comments, you can add an explanation if you want to.
 
 If you want to commit with only a name for your commit, you can use a simple command:
-```
+```bash
 git commit -m "My commit name"
 ```
 
@@ -196,6 +196,6 @@ git commit -m "My commit name"
 Your changes are validated, but only on your local clone of the repository. Now, you have to send those modifications back to the distant repository on GitHub.  
 In order to do that, you need to know what is your current branch. (If you don't know, `git branch` will give you that info).  
 Then you can git push
-```
+```bash
 git push -u origin BRANCH_NAME
 ```
