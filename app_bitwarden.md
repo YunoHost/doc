@@ -13,7 +13,7 @@ The software is available for most operating systems (Linux, Windows, macOS, iOS
 
 ## Configuration
 
-To configure the application you have to go to the address: `sub.domain.tld/admin`
+To configure the app, go to this address: `sub.domain.tld/admin`
 
 ## Limitations with YunoHost
 
