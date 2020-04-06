@@ -11,13 +11,14 @@ Managing groups
 
 The group mechanism can be used to define groups of users which then can be used to restrict permissions for applications and other services (such as mail or xmpp). Note that it is *not* mandatory to create a group to do so: you can also restrict access to an app or service on a user-per-user basis.
 
-Using groups is however useful for semantic, for example if you host multiple groups of friends, associations or businesses on your server, you might want to create groups like `association1` and `association2` and add members of each association to the relevant group.
+Using groups is however useful for semantics, for example if you host multiple groups of friends, associations or businesses on your server, you might want to create groups like `association1` and `association2` and add members of each association to the relevant group.
 
 ### Default groups
 
 By default, two special groups are created:
 - `all_users`, that contain all users registered on YunoHost,
-- `visitors`, that applies to people viewing the server while not registered on the server. 
+- `visitors`, that applies to people viewing the server while not logged in. 
+
 The content of those groups cannot be changed, only the permissions given to them.
 
 ### List existing groups
@@ -141,7 +142,7 @@ To allow a group to access the wordpress admin interface in CLI:
 $ yunohost user permission update wordpress.admin --add yolo_crew
 ```
 
-Note that you can also allow a single user, by using the panels at the bottom of the page.
+Note that you can also allow a single user, by using the specific panel at the bottom of the page.
 
 ![](./images/groups_add-permission-user.png)
 
@@ -168,6 +169,9 @@ Note that, for example, if we want to restrict permission for email so that only
 ```bash
 $ yunohost user permission update mail --remove all_users --add bob
 ```
+
+The webadmin will issue a warning if you set a permission that is superseeded by a wider permission.
+![](./images/groups_alerte-permission.png)
 
 Notes for apps packagers
 ------------------------
