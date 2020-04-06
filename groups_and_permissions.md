@@ -1,7 +1,7 @@
 User groups and permissions
 ===========================
 
-You can access the 'group and permissions' management interface from the webadmin
+You can access the *groups and permissions* management interface from the webadmin
 by going into the 'Users' section and clicking the corresponding button:
 
 ![](./images/button_to_go_to_permission_interface.png)
@@ -9,13 +9,24 @@ by going into the 'Users' section and clicking the corresponding button:
 Managing groups
 ---------------
 
-The group mechanism can be used to define group of users which then can be used to restrict permissions for applications and other services such as mail or xmpp. Note that it is *not* mandatory to create a group to do so: you can also restrict access to an app or service to just a specific list of users.
+The group mechanism can be used to define groups of users which then can be used to restrict permissions for applications and other services (such as mail or xmpp). Note that it is *not* mandatory to create a group to do so: you can also restrict access to an app or service on a user-per-user basis.
 
 Using groups is however useful for semantic, for example if you host multiple groups of friends, associations or businesses on your server, you might want to create groups like `association1` and `association2` and add members of each association to the relevant group.
 
+### Default groups
+
+By default, two special groups are created:
+- `all_users`, that contain all users registered on YunoHost,
+- `visitors`, that applies to people viewing the server while not registered on the server. 
+The content of those groups cannot be changed, only the permissions given to them.
+
 ### List existing groups
 
-The existing groups are listed at the top of the page, To list the currently existing groups in CLI :
+The existing groups are listed at the top of the *groups and permissions* page.
+
+![](./images/groups_default-groups.png)
+
+To list the currently existing groups in CLI :
 
 ```bash
 $ yunohost user group list
@@ -28,17 +39,30 @@ groups:
       - delphine
 ```
 
-By default, a special group called `all_users` exists and contain all users registered on YunoHost. This group can not be edited.
 
 ### Creating a new group
 
-To create a new group called `yolo_crew`
+To create a new group, simply click on the "New Group" button at the top of the page. You may only choose a name formed with letters (uper- and lowercase) and spaces. The group is created empty and without any permission.
+
+![](./images/groups_button-new-group.png)
+
+In CLI, to create a new group called `yolo_crew`
 
 ```bash
 $ yunohost user group create yolo_crew
 ```
 
-Let's add Charlie and Delphine to this group:
+### Updating a group
+
+Let's add a first to this group: in the group panel, click the button "add a user" and scroll to the desired user, then click on it.
+
+![](./images/groups_button-add-user.png)
+
+To remove a user, click on the cross next to their username, in the group panel.
+
+![](./images/groups_button-remove-user.png)
+
+In CLI, use the following command to add `charlie` and `delphine`to the `yolo_crew` group:
 
 ```bash
 $ yunohost user group update yolo_crew --add charlie delphine
@@ -65,7 +89,11 @@ groups:
 
 ### Deleting groups
 
-To delete the group `yolo_crew`, you may run
+To delete a group, click on the red cross on the top right of the group panel. You will be asked for confirmation.
+
+![](./images/groups_button-delete-group.png)
+
+To delete the group `yolo_crew` in CLI, you may run
 
 ```bash
 $ yunohost user group delete yolo_crew
@@ -74,11 +102,15 @@ $ yunohost user group delete yolo_crew
 Managing permissions
 --------------------
 
-The permission mechanism allow to restrict access to services (for example mail, xmpp, ...) and apps, or even specific part of the apps (for example the administration interface of wordpress).
+The permission mechanism allow to restrict access to services (for example mail, xmpp, ...) and apps, or even specific parts of the apps (for example the administration interface of wordpress).
 
 ### List permissions
 
-To list permissions and corresponding accesses:
+The groups page lists the permissions given to each group, including the special groups `all_users` and `visitors`.
+
+![](./images/groups_default-with-permissions.png)
+
+To list permissions and corresponding accesses in CLI:
 
 ```bash
 $ yunohost user permission list
@@ -93,19 +125,27 @@ permissions:
     allowed: all_users
 ```
 
-Here, we find that all registered users can use mails, xmpp, and access the wordpress blog. However, nobody can access the wordpress admin interface.
+Here, we find that all registered users can use email, xmpp, and access the wordpress blog. However, nobody can access the wordpress admin interface.
 
 More details can be displayed by adding the `--full` option which will display the list of users corresponding to groups allowed, as well as urls associated to a permission (relevant for web apps).
 
 ### Add accesses to group or users
 
-To allow a group to access the wordpress admin interface:
+To add a permission to a group, simply click the "+" button in the group panel, scroll to the desired permission, then click on it.
+
+![](./images/groups_add-permission-group.png)
+
+To allow a group to access the wordpress admin interface in CLI:
 
 ```bash
 $ yunohost user permission update wordpress.admin --add yolo_crew
 ```
 
-Note that you can also allow a single user:
+Note that you can also allow a single user, by using the panels at the bottom of the page.
+
+![](./images/groups_add-permission-user.png)
+
+or in CLI:
 
 ```bash
 $ yunohost user permission update wordpress.admin --add alice
@@ -123,7 +163,7 @@ $ yunohost user permission list
   [...]
 ```
 
-Note that, for example, if we want to restrict permission for email so that only Bob is allowed to email, we should also remove `all_users` from the permission :
+Note that, for example, if we want to restrict permission for email so that only Bob is allowed to email, we should also remove `all_users` from the permission, by deleting it from the `all_users` group panel, or in CLI :
 
 ```bash
 $ yunohost user permission update mail --remove all_users --add bob
@@ -134,7 +174,7 @@ Notes for apps packagers
 
 Installing an app creates the permission `app.main` with `all_users` allowed by default.
 
-If you wish to make the application publicly available, instead of the old `unprotected_urls` mechanism, you should give access to the special groups `visitors`:
+If you wish to make the application publicly available, instead of the old `unprotected_urls` mechanism, you should give access to the special group `visitors`:
 
 ```bash
 ynh_permission_update --permission "main" --add visitors
@@ -150,7 +190,7 @@ You don't need to take care of removing permissions or backing up/restoring them
 
 ### Migrating away from the legacy permission management
 
-When migrating/fixing an app still using the legacy permission system, it should be understood that the accesses are now to be managed by features from the core, outside the application scripts!
+When migrating/fixing an app still using the legacy permission system, it should be understood that the accesses are now to be managed by features from the core, outside of the application scripts!
 
 Application scripts are only expected to:
 - if relevant, during the install script, initialize the main permission of the app as public (`visitors`) or private (`all_users`) or only accessible to specific groups/users ;
@@ -207,7 +247,7 @@ fi
 
 In this example, if the app is public the group `visitors` has access to the permission `create poll`, the group is removed from this permission otherwise.
 
-Then create two files in the directory `hooks` at the root of the git repository: `post_app_addaccess` and `post_app_removeaccess`. In these hooks, you'll remove or readd the regex protection if the `visitors` group is add or remove from this permission:
+Then create two files in the directory `hooks` at the root of the git repository: `post_app_addaccess` and `post_app_removeaccess`. In these hooks, you'll remove or readd the regex protection if the `visitors` group is added or removed from this permission:
 
 `post_app_addaccess`:
 
@@ -280,6 +320,6 @@ fi
 
 Don't forget to replace `__APP__` during the install/upgrade script.
 
-Here some apps that use this specific case: [Lutim](https://github.com/YunoHost-Apps/lutim_ynh/pull/44/files) and [Opensondage](https://github.com/YunoHost-Apps/opensondage_ynh/pull/59/files)
+Here are some apps that use this specific case: [Lutim](https://github.com/YunoHost-Apps/lutim_ynh/pull/44/files) and [Opensondage](https://github.com/YunoHost-Apps/opensondage_ynh/pull/59/files)
 
-If you have any questions, please contact someone from the apps-group.
+If you have any question, please contact someone from the apps-group.
