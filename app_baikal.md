@@ -19,7 +19,7 @@ Baïkal is a server for calendars and address books, which uses the CalDav and C
 
 ### Connecting to the administration interface
 
-To configure the application, go to the address: `sub.domain.tld/admin` or `domain.tld/baikal/admin`.
+To configure the app, go to the address: `sub.domain.tld/admin` or `domain.tld/baikal/admin`.
 The username to specify is `admin` followed by the specific password you chose when installing Baikal. Be careful, the password must not contain any special characters.
 
 ### Creating a new user
