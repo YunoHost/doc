@@ -40,14 +40,14 @@ Avant de commencer à jouer avec la machine virtuelle, il convient de faire un p
 Arrêtez la machine virtuelle avant tout.
 
 La gestion des instantanés se fait dans l'onglet "Instantanés"  
-<img src="/images/virtualbox_packaging1.jpg" width=80%>
+<img src="/images/virtualbox_packaging1-fr.jpg" width=80%>
 
 Et on crée un premier instantané  
-<img src="/images/virtualbox_packaging2.jpg" width=30%>
+<img src="/images/virtualbox_packaging2-fr.jpg" width=30%>
 
 À présent on peut commencer à travailler sur la machine virtuelle et créer autant d'instantanés que souhaité pour jalonner le travail.
 
-<img src="/images/virtualbox_packaging3.jpg" width=80%>
+<img src="/images/virtualbox_packaging3-fr.jpg" width=80%>
 
 Dans cet exemple, on pourra facilement revenir en arrière, après avoir testé la suppression du package par exemple et restaurer la machine virtuelle dans l'état précédent avec le package encore installé avec succès.  
 Et lorsque le package sera pleinement fonctionnel, il suffira de supprimer les instantanés liés à ce package pour revenir à l'état initial de la machine virtuelle.  
@@ -57,14 +57,14 @@ Nous disposerons ainsi d'un serveur YunoHost vierge de toute installation d'appl
 
 En plus de l'usage d'instantanés successifs, il est également possible de dériver un nouvel état actuel et de nouveaux instantanés depuis un instantané plus ancien que le dernier.
 
-<img src="/images/virtualbox_packaging4.jpg" width=80%>
+<img src="/images/virtualbox_packaging4-fr.jpg" width=80%>
 
 Dans cet exemple, j'ai dérivé deux branches depuis mon installation réussie du package, pour tester indépendamment la suppression simple de l'application, l'upgrade et le backup/restore.  
 Finalement je suis reparti de la base de la machine virtuelle pour démarrer un nouveau test sur un autre package, sans pour autant abandonner le précédent test.  
 À tout moment, il est possible de revenir sur un instantané précédent en le restaurant.  
 La machine démarrera toujours sur l'"État actuel".
 
-<img src="/images/virtualbox_packaging5.jpg" width=80%>
+<img src="/images/virtualbox_packaging5-fr.jpg" width=80%>
 
 > Il est toujours possible de créer un nouvel instantané, que la machine soit à l'arrêt ou non.  
 Mais pour restaurer un instantané, la machine ne doit pas être en cours d'exécution.
