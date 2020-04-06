@@ -16,5 +16,6 @@
 
 <a class="btn btn-lg btn-default" href="/install_manually">1. Install manually</a>
 
-<a class="btn btn-lg btn-default" href="/postinstall">2. Post-install</a>
+<a class="btn btn-lg btn-default" href="/postinstall">2. Proceed with the initial configuration (post-installation)</a>
+
 

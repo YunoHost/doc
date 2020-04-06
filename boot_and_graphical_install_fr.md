@@ -11,7 +11,7 @@ Les connexions sans-fil ne sont pas supportées pour le moment, et si vous utili
 ## <small>2.</small> Démarrer sur le CD/la clé USB
 
 Démarrez votre serveur avec la clé USB ou le CD-ROM inséré, et sélectionnez-le comme **périphérique de démarrage** en pressant l’une des touches suivantes (dépendant de votre ordinateur) :    
-```<Échap>```, ```<F8>```, ```<F10>```, ```<F11>```, ```<F12>``` or ```<Suppr>```
+```<Échap>```, ```<F9>```, ```<F10>```, ```<F11>```, ```<F12>``` or ```<Suppr>```
 
 ## <small>3.</small> Lancer l’installation graphique
 
@@ -46,5 +46,5 @@ identifiants suivants :
 
 ## <small>5.</small> Procéder à la post-installation
 
-<a class="btn btn-lg btn-default" href="/postinstall_fr">Documentation de la post-installation</a>
+<a class="btn btn-lg btn-default" href="/postinstall">Documentation de la post-installation</a>
 

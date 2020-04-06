@@ -7,9 +7,7 @@ processus de contribution.
 Si vous chercher quelque chose à implémenter ou un bug à réparer, le
 bug tracker est [ici](https://github.com/yunohost/issues/issues) !
 
-**Venez dire coucou sur le [salon de
-dev](xmpp:dev@conference.yunohost.org?join)** ! Si vous n'avez pas de client
-XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
+**Venez dire coucou sur le [salon de dev](/chat_rooms)** !
 
 ### Mettre en place un environnement de développement
 
@@ -23,16 +21,55 @@ XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
 
 - **Implémentez et testez votre fonctionnalité**. Suivant ce sur quoi vous
   voulez travailler :
-   - **Cœur Python/ligne de comande** : allez dans `/vagrant/yunohost/`
-   - **Interface d'administration web** : allez dans `/vagrant/yunohost-admin/`
+   - **Cœur Python/ligne de comande** : allez dans `/ynh-dev/yunohost/`
+   - **Interface d'administration web** : allez dans `/ynh-dev/yunohost-admin/`
    - Vous pouvez aussi travailler sur les autres projets liés sur lesquels
      s'appuie YunoHost (SSOwat, moulinette) de façon similaire.
 
+### Vue d'ensemble des 4 morceaux principaux de YunoHost
+
+##### Moulinette
+
+C'est un petit framework "fait maison". [Son rôle principal](https://moulinette.readthedocs.io/en/latest/actionsmap.html) 
+est de permettre de construire une API Web et une API en ligne de commande à partir d'un même code Python et d'un schéma YAML que nous appelons 
+[l'actionmap] (https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/actionsmap/yunohost.yml).
+
+Il prend en charge d'autres mécanismes tels que l'authentification, l'internationalisation
+et des petites fonctions utilitaires techniques (par ex. lecture/écriture de fichiers json).
+
+Moulinette dispose de sa propre documentation [ici](https://moulinette.readthedocs.io/en/latest/).
+
+##### Yunohost
+
+C'est le coeur même de YunoHost. Il contient :
+- [le code python](https://github.com/YunoHost/yunohost/tree/stretch-unstable/src/yunohost) qui gère les utilisateurs, domaines, applications, services et autres
+- des [helpers bash](https://github.com/YunoHost/yunohost/tree/stretch-unstable/data/helpers.d) principalement utilisés par les packageurs d'applications dans les scripts de ces applications
+- des [hooks](https://github.com/YunoHost/yunohost/tree/stretch-unstable/data/hooks) et [templates](https://github.com/YunoHost/yunohost/tree/stretch-unstable/data/templates) qui sont utilisés pour configurer les différents éléments de l'écosystème tels que nginx, postfix, ....
+- des [chaînes internationalisées](https://github.com/YunoHost/yunohost/tree/stretch-unstable/locales)
+- des [tests](https://github.com/YunoHost/yunohost/tree/stretch-unstable/src/yunohost/tests)
+
+##### SSOwat
+
+C'est le système de connexion unique (single sign-on) de YunoHost. Il contient principalement:
+- [du code LUA](https://github.com/YunoHost/ssowat) interfacé directement avec nginx et qui gère tous les aspects "techniques" de l'authentification et de la gestion des accès aux ressources.
+- le [portail web utilisateur](https://github.com/YunoHost/SSOwat/tree/stretch-unstable/portal) qui est l'interface finale visible pour les utilisateurs de YunoHost
+
+SSOwat est configuré via `/etc/ssowat/conf.json` qui est généré par YunoHost.
+
+##### Yunohost-admin
+
+C'est une dépendance *optionnelle* de YunoHost et correspond à une interface pour l'API web créée par YunoHost et Moulinette (service `yunohost-api`).
+
+Il contient essentiellement :
+- [des templates pour les vues](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/views)
+- les [contrôleurs javascript](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/js/yunohost/controllers) correspondants, qui interagissent avec l'API Yunohost
+- et es [chaînes internationalisées](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/locales)
+
 ### Travailler sur le cœur Python / ligne de commande
 
-- Allez dans `/vagrant/yunohost/`.
+- Allez dans `/ynh-dev/yunohost/`.
 
-- Exécutez `/vagrant/ynh-dev use-git yunohost`.
+- Exécutez `cd /ynh-dev && ./ynh-dev use-git yunohost`.
 
 - Le fichier actionsmap (`data/actionsmap/yunohost.yml`) définit les différentes
   catégories, actions et arguments de la ligne de commande YunoHost. Choisissez
@@ -49,7 +86,7 @@ XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
 
 ##### Helpers / style de code
 
-- Pour gérer les exceptions, il existe un type `MoulinetteError()`
+- Pour gérer les exceptions, il existe un type `YunohostError()`
 
 - Pour aider avec l'internationalisation des messages, utilisez `m18n.n('some-message-id')`
   et mettez le message correspondant dans `locales/en.json`. Vous pouvez aussi
@@ -62,17 +99,11 @@ XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
 
 - Mettre un `_` devant les noms des fonctions "privées".
 
-##### N'oubliez pas
-
-- (Peut-être plus nécessaire) À chaque fois que vous modifiez l'actionsmap, il
-  faut forcer le rafraîchissement du cache avec :
-  `rm /var/cache/moulinette/actionsmap/yunohost.pkl`
-
 ### Travailler sur l'interface d'administration web
 
-- Allez dans `/vagrant/yunohost-admin/src/`.
+- Allez dans `/ynh-dev/yunohost-admin/src/`.
 
-- Exécutez `/vagrant/ynh-dev use-git yunohost-admin`. Ceci lance gulp, de sorte 
+- Exécutez `cd /ynh-dev && ./ynh-dev use-git yunohost-admin`. Ceci lance gulp, de sorte 
   qu'à chaque fois que vous modifiez les sources, il recompilera le code
   (js) et vous pourrez voir les changements dans le navigateur web (Ctrl+F5).
   Pour stopper la commande, faites simplement Ctrl+C.
@@ -121,14 +152,14 @@ XMPP, vous devriez pouvoir vous connecter à l'aide du widget en bas de la page.
 - Forkez le dépòt correspondant sur Github, et commitez vos changements dans
   une nouvelle branche, Il est recommandé de nommer la branche avec la
   convention :
-  - Pour une nouvelle fonctionnalité ou amélioration : `enh-TICKETREDMINE-description-fonctionnalité`
+  - Pour une nouvelle fonctionnalité ou amélioration : `enh-ISSUENUMBER-description-fonctionnalité`
   - Pour une correction de bug : `fix-REDMINETICKET-description-correctif`
-  - `TICKETREDMINE` est optionnel et correspond au numéro du ticket sur RedMine
+  - `ISSUENUMBER` est optionnel et correspond au numéro du ticket sur le bug tracker
 
 - Une fois prêt, ouvrez une Pull Request (PR) sur Github. De préférence, inclure
   `[fix]` ou `[enh]` au début du titre de la PR.
 
 - Après relecture, test et validation par les autres contributeurs, votre
-  branche sera mergée dans `testing` (?) !
+  branche sera mergée dans `unstable` !
 
 

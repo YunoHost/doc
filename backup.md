@@ -106,10 +106,12 @@ One specific feature is the ability to restore a full archive *instead* of the p
 yunohost backup restore <archivename>
 ```
 
-Note: If your archive isn't in `/home/yunohost.backup/archives`, you can specify where it is like this :
+Note: If your archive isn't in `/home/yunohost.backup/archives`, you can create the directory, move the archive into it, and restore it like this:
 
 ```bash
-yunohost backup restore /path/to/<archivename>
+mkdir -p /home/yunohost.backup/archives
+mv /path/to/<archivename> /home/yunohost.backup/archives/
+yunohost backup restore <archivename>
 ``` 
 
 ## To go futher
@@ -139,13 +141,16 @@ then make it executable :
 chmod +x /etc/cron.weekly/backup-wordpress
 ```
 
-Be careful what you backup exactly and when : you don't want to end up with your whole disk space saturated because you backuped 30 Go of data every day.
+Be careful what you backup exactly and when : you don't want to end up with your whole disk space saturated because you backuped 30 GB of data every day.
 
 #### Backing your server on a remote server
 
 You can follow this tutorial on the forum to setup Borg between two servers : <https://forum.yunohost.org/t/how-to-backup-your-yunohost-server-on-another-server/3153>
 
 Alternatively, the app Archivist allows to setup a similar system : <https://forum.yunohost.org/t/new-app-archivist/3747>
+
+#### Avoiding the backup of some folders
+If needed, you can specify that some `/home/user` folders are left out of the `yunohost backup` command, by creating a blank file named `.nobackup` in them.
 
 #### Full backup with `dd`
 
@@ -156,3 +161,8 @@ dd if=/dev/mmcblk0 of=./backup.img status=progress
 ```
 
 (replace `/dev/mmcblk0` with the actual device of your sd card)
+
+You can also create a compressed image using gzip this way:
+```bash
+dd if=/dev/mmcblk0 | gzip > ./image.gz
+```

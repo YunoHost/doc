@@ -6,6 +6,7 @@ Cette page requiert que Javascript soit activé pour s'afficher correctement :s.
 <br/>
 </span>
 
+N.B. : Même si l'image ne correspond pas à la dernière version de YunoHost, vous pouvez tout de même l'utiliser puis faire une mise à jour du système après l'installation !
 
 <div id="cards-list">
 </div>

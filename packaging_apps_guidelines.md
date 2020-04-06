@@ -113,7 +113,7 @@ These deposits have several functions:
 * indicate the state of operation of the packet;
 * indicate information about the support of a package.
 
-For the `official.json` and` community.json` lists maintained by the project team, registration is on [the git apps repository](https://github.com/YunoHost/apps). Other non-official lists may exists (including those for non-free apps for example), see more about that in the [community forum](https//forum.yunohost.org).
+For the `apps.json` list maintained by the project team, registration is on [the git apps repository](https://github.com/YunoHost/apps). Other non-official lists may exists (including those for non-free apps for example), see more about that in the [community forum](https//forum.yunohost.org).
 
 #### YEP 1.3
 ##### Indicate the license associated with the package | draft | AUTO | WORKING |
@@ -152,13 +152,11 @@ This involves monitoring updates to the upstream application, adhering to the ne
 #### YEP 1.6
 ##### Keeping up-to-date on the evolution of apps packaging | validated | manual | OFFICIAL |
 In order to keep up with the evolution of the packaging format and best practices, it is recommended to:
-* subscribe to the discussion list `apps @ list.yunohost.org`
-* follow [the forum's Apps category](https://forum.yunohost.org/c/apps-packaging)
+* follow [the forum's Apps category](https://forum.yunohost.org/c/contribute-room/apps-packaging)
 
 To follow the evolution of YunoHost more generally:
 * join XMPP dev@conference.yunohost.org ([three days of logs are available](https://im.yunohost.org/logs/dev/))
 * follow [Annoucement category of the forum](https://forum.yunohost.org/c/announcement)
-* follow discussions on contrib@list.yunohost.org
 
 #### YEP 1.7
 ##### Add the app to the [YunoHost-Apps Organization](https://github.com/YunoHost-Apps) | validated | manual | OFFICIAL |
@@ -166,7 +164,7 @@ Adding an app to the [YunoHost-Apps organization](https://github.com/YunoHost-Ap
 
 It is also a way to quickly deploy a security patch if necessary in the event that the maintainer is unavailable.
 
-Transfer Procedure: Ask the [chat room](chat_rooms_en) to be invited to the organization by providing the name of their GitHub account.
+Transfer Procedure: Ask the [chat room](/chat_rooms) to be invited to the organization by providing the name of their GitHub account.
 Once the invitation is accepted, [transfer its deposit to the organization by following this tutorial](https://help.github.com/articles/transferring-a-repository-owned-by-your-personal-account/# Transferring-a-repository-to-another-user-account-or-to-an-organization).
 
 #### YEP 1.8
@@ -223,7 +221,7 @@ Keep your code as easy as possible, keep everything a script needs directly into
 #### Stabilize an app
 #### YEP 2.1
 ##### Respect the manifest format | validated | Home | INPROGRESS |
-The manifest allows to describe an app so that YunoHost can apply the good treatments. For more information see [dedicated documentation](https://yunohost.org/#/packaging_apps_manifest).
+The manifest allows to describe an app so that YunoHost can apply the good treatments. For more information see [dedicated documentation](/packaging_apps_manifest).
 
 #### YEP 2.2
 ##### Using bash for main scripts | validated | Home | WORKING |
@@ -289,7 +287,7 @@ It is advisable to make the scripts as generic as possible, a good way to do thi
 In order to simplify packaging, standardize practices, avoid errors and increase the lifetime of a script vis-à-vis future versions of YunoHost. A set of helpers to do many actions is proposed.
 
 For more information :
-* consult [helpers documentation](https://yunohost.org/#/packaging_apps_helpers)
+* consult [helpers documentation](/packaging_apps_helpers)
 * explore [helpers directory](https://github.com/YunoHost/yunohost/tree/unstable/data/helpers.d)
 
 #### YEP 2.13

@@ -1,6 +1,6 @@
 # Installation sur un serveur dédié
 
-*Trouvez d’autres moyens d’installer YunoHost **[ici](/install_fr)**.*
+*Trouvez d’autres moyens d’installer YunoHost **[ici](/install)**.*
 
 ## Prérequis
 
@@ -14,7 +14,6 @@
 
 ## Étapes d’installation
 
-<a class="btn btn-lg btn-default" href="/install_manually_fr">1. Installer manuellement</a>
+<a class="btn btn-lg btn-default" href="/install_manually">1. Installer manuellement</a>
 
-<a class="btn btn-lg btn-default" href="/postinstall_fr">2. Post-installation</a>
-
+<a class="btn btn-lg btn-default" href="/postinstall">2. Effectuer la configuration initiale (post-installation)</a>

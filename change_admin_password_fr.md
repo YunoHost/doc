@@ -9,7 +9,7 @@ Le mot de passe d’administration actuel est **requis** pour effectuer cette mo
 
 ##Administration web
 
-Premièrement, connectez-vous à [l’administration web](/admin_fr).
+Premièrement, connectez-vous à [l’administration web](/admin).
 
 Puis allez dans la section `Outils` > `Changer le mot de passe d’administration`.
 

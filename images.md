@@ -6,6 +6,8 @@ This page requires Javascript enabled to display properly :s.
 <br/>
 </span>
 
+N.B. : Even if the image does not corresponds to the latest version of YunoHost, you can still use it and do a regular system upgrade after setting up!
+
 <div id="cards-list">
 </div>
 

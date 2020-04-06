@@ -39,7 +39,9 @@
 </br>
 </br>
 <em>Note : vous pouvez aussi vous connecter aux salons de dev, via votre client XMPP favori, à</br>
-dev@conference.yunohost.org et apps@conference.yunohost.org</em>
+dev@conference.yunohost.org et apps@conference.yunohost.org</br>
+ou bien via votre client matrix préféré, à</br>
+#freenode_#yunohost-dev:matrix.org</em>
 </center>
 
 <script>

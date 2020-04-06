@@ -9,10 +9,10 @@ If you want the network configuration to be set up automatically, you have to pl
 The wireless connections are not supported yet, and if you use intermediate routers, the network ports opening will not be automatic: Your server will not be accessible externally.
 
 
-## <small>2.</small> Boot on CD / USB key
+## <small>2.</small> Boot on CD / USB stick
 
-Boot up your server with the USB key or a CD-ROM inserted, and select it as **bootable device** by pressing one of the following keys (hardware specific):    
-```<ESC>```, ```<F8>```, ```<F10>```, ```<F11>```, ```<F12>``` or ```<SUPPR>```
+Boot up your server with the USB stick or a CD-ROM inserted, and select it as **bootable device** by pressing one of the following keys (hardware specific):    
+```<ESC>```, ```<F9>```, ```<F10>```, ```<F11>```, ```<F12>``` or ```<DEL>```
 
 ## <small>3.</small> Launch graphical installation
 

@@ -24,18 +24,15 @@
   <div class="main-links hidden-xs">
     <a href="/whatsyunohost">Über Yunohost</a> <span class="colored-bar">•</span> 
     <a href="https://forum.yunohost.org/c/announcement" target="_blank">Letzte Nachrichten</a> <span class="colored-bar">•</span> 
-    <a href="/docs">Dokumentation</a>
+    <a href="/docs">Dokumentation</a> <span class="colored-bar">•</span> 
+    <a href="https://donate.yunohost.org/">Spenden</a>
   </div>
   </div><!-- teasing-part -->
 
 <div class="boring-part" markdown="1">
 
-  <a href="https://github.com/YunoHost" target="_blank" class="github-ribbon hidden-xs">
-    <img src="/images/github_ribbon_grey.png" alt="Folgen Sie Yunohost auf GitHub">
-  </a>
-
   <h1>YunoHost <small>ist ein Serverbetriebssystem, das<br>
-Self-Hosting für alle möglich macht.</small></h1>
+Self-Hosting für alle ermöglicht.</small></h1>
 
   <div class="home-panel">
     <img src="/images/home_panel.jpg" />
@@ -44,7 +41,7 @@ Self-Hosting für alle möglich macht.</small></h1>
   <div class="call-to-action">
     <a class="btn btn-primary btn-lg" href="/try">Ausprobieren</a>
     <a class="btn btn-success btn-lg" href="/install">Loslegen</a>
-    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-5-release-sortie-de-yunohost-3-5/7619">YunoHost v3.5</a></small></p>
+    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-6-release-sortie-de-yunohost-3-6/8359">YunoHost v3.6</a></small></p>
   </div>
 
   <div class="row cf">
@@ -95,9 +92,9 @@ Self-Hosting für alle möglich macht.</small></h1>
       <a class="btn btn-lg btn-block btn-info" href="/docs">Dokumentation</a>
       <a class="btn btn-lg btn-block btn-success" href="/contribute">Mach mit!</a>
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org/" target="_blank">Forum</a>
-      <a class="btn btn-lg btn-block btn-default" href="chat_rooms_de" target="_blank">Chat</a>
+      <a class="btn btn-lg btn-block btn-default" href="/chat_rooms" target="_blank">Chat</a>
       <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Neuste Nachrichten</a>
-      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_de">Hilfe</a>
+      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help">Hilfe</a>
     </div>
     <div class="col-md-7 text-right">
       <h1>Entdecke <small> die Möglichkeiten, die Du mit einem eigenen Server hast<br> – und warum Self-Hosting Sinn macht.</small></h1>

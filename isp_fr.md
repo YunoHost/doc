@@ -1,8 +1,8 @@
 # Fournisseurs d’accès à Internet
 
-<a class="btn btn-lg btn-default" href="/isp_box_config_fr"> Configuration générale box</a>
+<a class="btn btn-lg btn-default" href="/isp_box_config"> Configuration générale box</a>
 
-Voici une liste non exhaustive des fournisseurs d’accès à Internet par pays, contenant les critères de tolérance à l’[auto-hébergement](selfhosting_fr).
+Voici une liste non exhaustive des fournisseurs d’accès à Internet par pays, contenant les critères de tolérance à l’[auto-hébergement](/selfhosting).
 
 Un « **non** » peut entraîner des problèmes d’utilisation de votre serveur ou peut vous obliger à faire des configurations supplémentaires. Le statut entre parenthèses indique le comportement par défaut.
 
@@ -12,14 +12,14 @@ Tous les fournisseurs d’accès à Internet [membres de la Fédération French 
 * ✔ : oui
 * ✘ : non
 
-| Fournisseur d’accès | OVH | [Free](/isp_free_fr) | [SFR](/isp_sfr_fr) | [Orange](/isp_orange_fr) | Bouygues<br>Télécom | Darty |
+| Fournisseur d’accès | OVH | [Free](/isp_free) | [SFR](/isp_sfr) | [Orange](/isp_orange) | Bouygues<br>Télécom | Darty |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Box/routeur** | Personnel/OVH Télécom | Freebox | Neufbox | Livebox | Bbox | Dartybox |
 | **[UPnP](https://fr.wikipedia.org/wiki/Universal_Plug_and_Play)** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| **[Port 25 ouvrable](email_fr)**<br> (fermé par défaut) | ✔ | ✔ | ✔ | ✘ | ✔ | ✔ |
-| **[Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning)** | ✔ | ✔ | ✔/✘ | ✘ | ✔ | ✔ |
-| **[Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup)<br>personnalisable ** | ✔ | ✔ (sauf IPv6) | … | ✘ | ✘ | ✘ |
-| **[IP fixe](/dns_dynamicip_fr)** | ✔ | ✔ | ✔/✘ | ✘ | ✔ | ✔ |
+| **[Port 25 ouvrable](/email)**<br> (fermé par défaut) | ✔ | ✔ | ✔ | ✘ | ✔ | ✔ |
+| **[Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning)** | ✔ | ✔ | ✔/✘ | ✔ (depuis la Livebox 4) | ✔ | ✔ |
+| **[Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup)<br>personnalisable ** | ✔ | ✔ (sauf IPv6) pas de support | … | ✘ | ✘ | ✘ |
+| **[IP fixe](/dns_dynamicip)** | ✔ | ✔ | ✔/✘ | ✘ | ✔ | ✔ |
 | **[IPv6](https://fr.wikipedia.org/wiki/IPv6)** | ✔ | ✔ | ✔ | ✔ | … | … |
 | **[Non listé sur le DUL](https://en.wikipedia.org/wiki/Dialup_Users_List)** | … | ✘ | … | … | … | … |
 Pour une liste plus complète et précise, référez-vous à la très bonne documentation de [wiki.auto-hebergement.fr](http://wiki.auto-hebergement.fr/fournisseurs/fai#d%C3%A9tail_des_fai).
@@ -28,7 +28,7 @@ Pour une liste plus complète et précise, référez-vous à la très bonne docu
 
 ### Belgique
 
-| Fournisseur d’accès | Box/ routeur | uPnP activable | [Port 25 ouvrable](email_fr)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | IP fixe |
+| Fournisseur d’accès | Box/ routeur | uPnP activable | [Port 25 ouvrable](/email)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | IP fixe |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Proximus** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
 | | BBox3 | oui (activé) | oui | **non** | **non** | **non** |
@@ -38,7 +38,7 @@ Pour une liste plus complète et précise, référez-vous à la très bonne docu
 
 ### Côte d'Ivoire
 
-| Fournisseur d’accès | Box/ routeur | uPnP activable | [Port 25 ouvrable](email_fr)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | IP fixe |
+| Fournisseur d’accès | Box/ routeur | uPnP activable | [Port 25 ouvrable](/email)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | IP fixe |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Orange** | Livebox2 | oui (activé) | non | **non** | **non** | **non** |
 | **Moov** |  | oui (activé) |  |  |  |  |

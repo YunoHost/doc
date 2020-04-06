@@ -6,9 +6,14 @@
 
 <img src="/images/virtualbox.png" width=200>
 
-* A x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine.
+* An x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine.
 * The latest stable **YunoHost ISO image**, available [here](/images).
 
+<div class="alert alert-warning" markdown="1">
+N.B. : Installing YunoHost in a VirtualBox is usually intended for testing. To
+run an actual server on the long-term, you usually need a dedicated physical
+machine (old computer, ARM board, ...) or a VPS online.
+</div>
 
 ---
 
@@ -18,13 +23,15 @@
 
 <br>
 
-* 256MB RAM is the minimum required, 512MB may be better.
-
-* 4GB storage is the minimum required.
+* It's okay if you can only have 32-bit versions, just be sure that you downloaded the 32-bit image previously.
+* 256MB RAM is the minimum required, but at least 512MB is recommended (1Go or more if you can).
+* 8GB storage is the minimum required.
 
 ---
 
 ## <small>2.</small> Change network settings
+
+**NB:** You must carry out this step. If not, the install will fail. 
 
 Go to **Settings** > **Network**:
 
@@ -52,6 +59,10 @@ You will have to select your ISO image here, then you should see the YunoHost's 
 
 <br>
 
+If you encounter the error "VT-x is not available", you need probably need to enable Virtualization in the BIOS of your computer.
+
+<br>
+
 <img src="/images/virtualbox_3.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
 
 <br>
@@ -64,12 +75,10 @@ You will have to select your ISO image here, then you should see the YunoHost's 
 
 ## <small>4.</small> Proceed to post-installation
 
-After the reboot, you will see this screen:
+After the reboot, the system should ask you to proceed with the
+post-installation
 
-<img src="/images/virtualbox_4.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+<a class="btn btn-lg btn-default" href="/postinstall">Post-install documentation</a>
 
-<br>
-* The password for root user is "yunohost"
 
-* You can get more information on the post-installation here: **[yunohost.org/postinstall](/postinstall)**
 

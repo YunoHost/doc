@@ -1,4 +1,4 @@
-# Install on a standard computer
+# Install on a regular computer
 
 *Find other ways to install YunoHost **[here](/install)**.*
 
@@ -20,13 +20,13 @@ You can use any computer with **256MB RAM or more**.
 ## Installation steps
 
 
-<a class="btn btn-lg btn-default" href="/images">0. Download your ISO image</a>
+<a class="btn btn-lg btn-default" href="/images">0. Download the YunoHost ISO image</a>
 
-<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Burn or copy ISO image</a>
+<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Burn the ISO image on a USB stick</a>
 
-<a class="btn btn-lg btn-default" href="/boot_and_graphical_install">2. Boot & install</a>
+<a class="btn btn-lg btn-default" href="/boot_and_graphical_install">2. Boot the machine and run the installation</a>
 
-<a class="btn btn-lg btn-default" href="/postinstall">3. Post-install</a>
+<a class="btn btn-lg btn-default" href="/postinstall">3. Proceed with the initial configuration (post-installation)</a>
 
 ---
 

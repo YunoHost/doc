@@ -31,11 +31,11 @@ YunoHost doesn't yet support ARM64 boards. For more information, see [this issue
 
 <a class="btn btn-lg btn-default" href="/copy_image">1. Flash the SD card with the image</a>
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot">2. Plug & boot</a>
+<a class="btn btn-lg btn-default" href="/plug_and_boot">2. Power up the board and let it boot</a>
 
 <a class="btn btn-lg btn-default" href="/ssh">3. Connect to your server with SSH</a>
 
-<a class="btn btn-lg btn-default" href="/postinstall">4. Proceed to post-installation</a>
+<a class="btn btn-lg btn-default" href="/postinstall">4. Proceed with the initial configuration (post-installation)</a>
 
 ---
 
@@ -43,10 +43,10 @@ YunoHost doesn't yet support ARM64 boards. For more information, see [this issue
 
 <a class="btn btn-lg btn-default" href="https://www.armbian.com/download/">0. Download the ARMbian image for your board</a>
 
-<a class="btn btn-lg btn-default" href="/copy_image_fr">1. Flash the SD card with the image</a>
+<a class="btn btn-lg btn-default" href="/copy_image">1. Flash the SD card with the image</a>
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot_fr">2. Plug & boot</a>
+<a class="btn btn-lg btn-default" href="/plug_and_boot">2. Plug & boot</a>
 
-<a class="btn btn-lg btn-default" href="/ssh_fr">3. Connect to your server with SSH</a>
+<a class="btn btn-lg btn-default" href="/ssh">3. Connect to your server with SSH</a>
 
-<a class="btn btn-lg btn-default" href="/install_manually_fr">4. Follow the generic install procedure</a>
+<a class="btn btn-lg btn-default" href="/install_manually">4. Follow the generic install procedure</a>

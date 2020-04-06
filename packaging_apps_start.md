@@ -12,15 +12,16 @@ To be able to do that, we need to remember that Yunohost at its core is a server
 
 If you have ever installed a web application manually, you already know that the process is in reality far more complex, usually involving a lot of steps and discipline.
 
-This is what application packaging is, a serie of scripts that automate the installation of a web application and its configuration in order to provide the final user with a few clicks installation process.
+This is what application packaging is, a series of scripts that automate the installation of a web application and its configuration in order to provide the final user with a few clicks installation process.
 
 ### How it works
 
 From the final user perspective, it is as simple as it can be:
-1) Pick an application
-1) Fill a form
-1) Wait
-1) Application is ready to use
+
+1. Pick an application
+2. Fill a form
+3. Wait
+4. Application is ready to use
 
 There is more to see backstage:
 First, when the application is selected, Yunohost will retrieve the corresponding package from github. eg: [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh).
@@ -34,31 +35,31 @@ The install script will handle the user answers to complete the process as you w
 
 If the user wants to delete the application, Yunohost will use the remove script from the "*scripts*" folder. It will handle the cleaning process for the user and delete all folders and configuration files that was previsouly installed by the application.
 
-### What is a script
+### What is a script?
 
-Scripts used during application packaging are simply a serie of bash commands.
+Scripts used during application packaging are simply a series of bash commands.
 
 ### ... bash command?
 
-A [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) command is a line of text that will be interpreted by the computer and will produce a result. This is commonly refered to a command line.
+A [bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) command is a line of text that will be interpreted by the computer and will produce a result. This is commonly refered to as a command line.
 
-You only can interact with your server through command line as it does not provide a graphical interface. Usual access is through [ssh](/ssh_en).
+You can ony interact with your server through the command line as it does not provide a graphical interface. Usual access is through [ssh](/ssh).
 
-Package scripts are therefore a serie of bash commands as if you had typed them directly in the ssh console.
+Package scripts are therefore a series of bash commands as if you had typed them directly in the ssh console.
 
-To know what you can write in a bash script, you should start reading this [simple tuto](https://debian-facile.org/doc:programmation:shells:debuter-avec-les-scripts-shell-bash) or this [more advanced one](http://aral.iut-rodez.fr/fr/sanchis/enseignement/bash/index.html).
+To know what you can write in a bash script, you should start reading this [simple tutorial](https://debian-facile.org/doc:programmation:shells:debuter-avec-les-scripts-shell-bash) or this [more advanced one](http://aral.iut-rodez.fr/fr/sanchis/enseignement/bash/index.html).
 
-### Ok, I'm good ! Where do I start?
+### Ok, I'm good! Where do I start?
 
-Before starting the packaging process, you need to successfully install the application. The script will only perform what you instruct him to do.
+Before starting the packaging process, you need to successfully install the application. The script will only perform what you instruct it to do.
 
-Once completed, you need to read a little bit more documentation about application packaging. [This one is more technical](/packaging_apps_en) but now you should understand all the wizardry.
+Once completed, you need to read a little bit more documentation about application packaging. [This one is more technical](/packaging_apps) but now you should understand all the wizardry.
 
 ### HELP! NEED BACKUP!
 
 Fortunately, you are not alone in this!
 
-There is other packagers like you and you can meet them on the [forum](https://forum.yunohost.org/c/apps-packaging) or the [chat](xmpp:apps@conference.yunohost.org?join).
+There are other packagers like you and you can meet them on the [forum](https://forum.yunohost.org/c/apps-packaging) or the [chat](xmpp:apps@conference.yunohost.org?join).
 
 Feel free to join in and ask your questions, there always will be someone to help.
 

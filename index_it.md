@@ -18,22 +18,19 @@
       <span class="yolo 10" style="color: #FF5050;">dude, Y U NO Host?!</span>
       <span class="yolo 11" style="color: #66FF33;">Keep calm and host yourself</span>
     </p>
-    <button class="btn btn-primary btn-lg btn-block yolobtn">Scusa?</button>
+    <button class="btn btn-primary btn-lg btn-block yolobtn">COSA?</button>
   </div>
 
   <div class="main-links hidden-xs">
     <a href="/whatsyunohost">A proposito</a> <span class="colored-bar">•</span> 
     <a href="https://forum.yunohost.org/c/announcement" target="_blank">Ultime notizie</a> <span class="colored-bar">•</span> 
-    <a href="/docs">Documentazione</a>
+    <a href="/docs">Documentazione</a> <span class="colored-bar">•</span> 
+    <a href="https://donate.yunohost.org/">Donare</a>
   </div>
 
 </div><!-- teasing-part -->
 
 <div class="boring-part" markdown="1">
-
-  <a href="https://github.com/YunoHost" target="_blank" class="github-ribbon hidden-xs">
-    <img src="/images/github_ribbon_grey.png" alt="Fork me on GitHub">
-  </a>
 
   <h1>YunoHost <small>è un sistema operativo per server con l'obiettivo di rendere il self-host accessibile a tutti.</small></h1>
 
@@ -44,7 +41,7 @@
   <div class="call-to-action">
     <a class="btn btn-primary btn-lg" href="/try">Provalo</a>
     <a class="btn btn-success btn-lg" href="/install">Per cominciare</a>
-    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-5-release-sortie-de-yunohost-3-5/7619">YunoHost v3.5</a></small></p>
+    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-6-release-sortie-de-yunohost-3-6/8359">YunoHost v3.6</a></small></p>
   </div>
 
   <div class="row cf">
@@ -95,12 +92,12 @@
       <a class="btn btn-lg btn-block btn-info" href="/docs">Documentazione</a>
       <a class="btn btn-lg btn-block btn-success" href="/contribute">Contribuisci</a>
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org/" target="_blank">Forum</a>
-      <a class="btn btn-lg btn-block btn-default" href="chat_rooms_en" target="_blank">Chat</a>
+      <a class="btn btn-lg btn-block btn-default" href="/chat_rooms" target="_blank">Chat</a>
       <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Ultime notizie</a>
-      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_fr">Supporto</a>
+      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help">Supporto</a>
     </div>
     <div class="col-md-7 text-right">
-      <h1>Esplora <small>cosa puoi fare con un server, e perchè è importante</small></h1>
+      <h1>Esplora <small>cosa puoi fare con un server, e perché è importante</small></h1>
       <p><br /><a href="/docs">Leggi la documentazione</a></p>
     </div>
   </div>

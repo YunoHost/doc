@@ -1,7 +1,7 @@
 Sauvegarder son serveur et ses apps
 ===================================
 
-Dans le contexte de l'auto-hébergement, les sauvegardes (backup) sont un élément important pour palier à des événements inattendus (incendies, corruption de base de données, perte d'accès au serveur, serveur compromis, ...). La politique de sauvegardes à mettre en place dépend de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez être très prudent si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les sauvegardes *dans un endroit différent*.
+Dans le contexte de l'auto-hébergement, les sauvegardes (backup) sont un élément important pour palier les événements inattendus (incendies, corruption de base de données, perte d'accès au serveur, serveur compromis, ...). La politique de sauvegardes à mettre en place dépend de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez être très prudent si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les sauvegardes *dans un endroit différent*.
 
 Les sauvegardes avec YunoHost
 -----------------------------
@@ -64,7 +64,7 @@ Télécharger et téléverser des sauvegardes
 
 Après avoir créé des sauvegardes, il est possible de les lister et de les inspecter grâce aux vues correspondantes dans la webadmin, ou via `yunohost backup list` et `yunohost backup info <nom_d'archive>` depuis la ligne de commande. Par défaut, les sauvegardes sont stockées dans `/home/yunohost.backup/archives/`.
 
-À l'heure actuelle, la solution la plus accessible pour récupérer les sauvegardes est d'utiliser le programme FileZilla comme expliqué dans [cette page](/filezilla_fr).
+À l'heure actuelle, la solution la plus accessible pour récupérer les sauvegardes est d'utiliser le programme FileZilla comme expliqué dans [cette page](/filezilla).
 
 Une autre solution alternative consiste à installer une application comme Nextcloud et à la configurer pour être en mesure d'accéder aux fichiers dans `/home/yunohost.backup/archives/` depuis un navigateur web.
 
@@ -107,12 +107,13 @@ Ensuite, **à la place de** `yunohost tools postinstall`, réalisez la restaurat
 yunohost backup restore <nom_d'archive>
 ```
 
-Note: si votre archive n'est pas dans `/home/yunohost.backup/archives`, vous pouvez spécifier où elle se trouve comme ceci :
+Note: si votre archive n'est pas dans `/home/yunohost.backup/archives`, vous pouvez créer le répertoire et déplacer l'archive comme ceci :
 
 ```bash
-yunohost backup restore /path/to/<archivename>
+mkdir -p /home/yunohost.backup/archives
+mv /chemin/vers/<nom_d'archive> /home/yunohost.backup/archives/
+yunohost backup restore <nom_d'archive>
 ``` 
-
 
 
 Pour aller plus loin
@@ -150,6 +151,9 @@ Vous pouvez suivre ce tutoriel sur le forum pour mettre en place Borg entre deux
 
 Il existe aussi l'application Archivist qui permet un système similaire : https://forum.yunohost.org/t/new-app-archivist/3747
 
+#### Eviter de sauvegarder certains dossiers
+Si besoin, vous pouvez spécifier que certains dossiers `home` d'utilisateurs ne soient pas sauvegardés par la commande `yunohost backup`, en créant un fichier vide nommé `.nobackup` à l'intérieur.
+
 #### Backup complet avec `dd`
 
 Si vous êtes sur une carte ARM, une autre méthode pour créer une sauvegarde complète consiste à créer une image (copie) de la carte SD. Pour cela, éteignez votre serveur, insérez la carte SD dans votre ordinateur et créez une image avec une commande comme :
@@ -159,3 +163,9 @@ dd if=/dev/mmcblk0 of=./backup.img status=progress
 ```
 
 (remplacez `/dev/mmcblk0` par le vrai nom de votre carte SD)
+
+Vous pouvez aussi compresser l'image à l'aide de gzip :
+
+```bash
+dd if=/dev/mmcblk0 | gzip > ./image.gz
+```

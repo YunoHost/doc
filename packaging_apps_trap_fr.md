@@ -36,7 +36,7 @@ Ou ignorer complètement les signaux de sorties concernés.
 trap "" ERR
 ```
 
-Dans ce dernier cas, le signal d'interruption n'aura aucun effet sur le shell. Cela peux être utile pour une commande dont la sortie en erreur ne doit pas inpacter le déroulement du script d'installation.
+Dans ce dernier cas, le signal d'interruption n'aura aucun effet sur le shell. Cela peux être utile pour une commande dont la sortie en erreur ne doit pas impacter le déroulement du script d'installation.
 
 ### Stopper le script d'installation et nettoyer avant de quitter.
 En cas d'erreur du script d'installation, trap doit nous permettre de stopper l'installation, puis de nettoyer les fichiers résiduels partiellement installés avant de quitter le script.

@@ -39,7 +39,9 @@
 </br>
 </br>
 <em>Note : you can also connect to the devrooms, using your favorite XMPP client, to </br>
-dev@conference.yunohost.org and apps@conference.yunohost.org</em>
+dev@conference.yunohost.org and apps@conference.yunohost.org</br>
+or with a Matrix client to</br>
+#freenode_#yunohost-dev:matrix.org</em>
 </center>
 
 <script>

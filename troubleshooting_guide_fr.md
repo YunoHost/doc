@@ -5,24 +5,22 @@ Ce guide peut trouver son intérêt lors du débuggage d’une nouvelle applicat
 
 ## Notes générales
 ### Ne cassez pas YunoHost
-La meilleure manière de ne pas avoir de pannes est de ne pas bricoler sur votre serveur. Cela signifie que dès que vous souhaitez essayer quelque chose de nouveau (application non officielle, nouvelle configuration personnalisée, création d’une nouvelle application), essayez d'abord cela sur un serveur de test et non de production. Pour faire cela, vous pouvez par exemple utiliser une [box Vagrant](vagrant_fr) ou un [droplet DigitalOcean](install_on_vps_fr) pour 1 centime/heure.
+La meilleure manière de ne pas avoir de pannes est de ne pas bricoler sur votre serveur. Cela signifie que dès que vous souhaitez essayer quelque chose de nouveau (application non officielle, nouvelle configuration personnalisée, création d’une nouvelle application), essayez d'abord cela sur un serveur de test et non de production. Pour faire cela, vous pouvez par exemple utiliser une [virtualbox](/install_on_virtualbox) ou un [droplet DigitalOcean](/install_on_vps) pour 1 centime/heure.
 
 Vous pouvez aussi lire ceci si vous avez encore envie de bricoler sur votre instance YunoHost en production : https://wiki.debian.org/DontBreakDebian
 
-### Utilisez les applications non-officielles avec attention
-Bien que ce soit tentant d’installer toutes les [applications non officielles](https://yunohost.org/#/apps_in_progress_fr), s’il vous plaît ne le faites pas, même si l’application est indiquée comme prête.
-Avant de tester, vous devriez lire au moins le code source de l’application et vérifier que les fichiers d’installation, de suppression et de mise à jour sont bien présents.
-Garder à l’esprit que quand vous installez une application, vous exécutez du code avec des droits root. De mon expérience, certaines applications sont excellentes, d’autres peuvent casser votre instance YunoHost et certaines ne sont plus maintenues. Alors, avant d’installer, regardez les problèmes rencontrés (issues dans GitHub), le [Forum](http://forum.yunohost.org/) 
-et [le salon de discussion Yunohost](support_fr) pour voir si d’autres ont eu des problèmes avec l’application.
+### N'installez pas d'applications de mauvaise qualité
+
+Bien que ce soit tentant d’installer toutes les [applications](/apps), faites attention à leur niveau de qualité car une mauvaise application peut casser votre serveur. Si la qualité d'une application laisse à désirez mais que vous souhaitez tout de même absolument l'installer, essayez de faire ça sur un serveur de test, ou vérifiez au minimum si des problèmes ont été remontés sur le dépôt Github associé ou bien sur le [forum](http://forum.yunohost.org/).
 
 ### Vérifier la documentation officielle
-Les réponses à vos questions existent peut être déjà dans [la documentation](docs_fr).
+Les réponses à vos questions existent peut être déjà dans [la documentation](/docs).
 
 ### Vérifier l’aide dans les commandes en ligne
-Vous pouvez apprendre à utiliser les [commandes YunoHost](/commandline_fr)
+Vous pouvez apprendre à utiliser les [commandes YunoHost](/commandline)
 
 ## Mise à jour
-Les problèmes ont souvent lieu après une mise à jour. Après une mise à jour, vous pouvez avoir envie de [mettre à jour votre application](app_update_fr).
+Les problèmes ont souvent lieu après une mise à jour. Après une mise à jour, vous pouvez avoir envie de [mettre à jour votre application](/app_update).
 
 
 **Vérifier si un processus utilise une ancienne librairie**
@@ -60,7 +58,7 @@ $ yunohost app upgrade -u https://github.com/user/someapp_ynh app_name
 ```
 
 ## Les services
-YunoHost utilise toute une série de logiciels pour fonctionner. La plupart de ces logiciels sont déclarés comme des services dans Debian [plus d’info](whatsyunohost_fr).
+YunoHost utilise toute une série de logiciels pour fonctionner. La plupart de ces logiciels sont déclarés comme des services dans Debian [plus d’info](/whatsyunohost).
 
 ### Vérifier le statut des services
 Quand quelque chose ne fonctionne pas, une des premières choses à faire est de vérifier que tous les services utilisés par YunoHost sont lancés.
@@ -88,7 +86,7 @@ Voici une petite description de leurs fonctions respectives :
 - **Postgrey** : serveur de listes grises, si vous utilisez YunoHost pour les mails, vous devriez regarder un peu plus sur cette question.
 [En apprendre plus sur les listes grises](http://en.wikipedia.org/wiki/Greylisting)
 - **Slapd** : serveur LDAP, utilisé pour l’authentification (SSO and apps)
-- [**SSH**](/ssh_en) : Secure Shell, utilisé pour l’accès distant au serveur.
+- [**SSH**](/ssh) : Secure Shell, utilisé pour l’accès distant au serveur.
 - [**SSOwat**](https://github.com/Kloadut/SSOwat/) : gestionnaire simple d’authentification.
 - **YunoHost-API** : administration web de YunoHost
 
@@ -292,7 +290,7 @@ Il n’y a pas de fichier de log créé lorsque vous installez une application. 
 ## Applications
 Cette partie concerne plus les créateurs d’applications YunoHost mais permet néanmoins de comprendre le lien entre Nginx et les applications web.
 
-Premièrement, vous devez savoir [comment créer un paquet pour une nouvelle application](packaging_apps_fr).
+Premièrement, vous devez savoir [comment créer un paquet pour une nouvelle application](/packaging_apps).
 
 Quand vous bricolez une application, des erreurs peuvent avoir lieu selon certains niveaux d’importance. Il y a une grande variété d’applications et le déploiement de celles-ci va dépendre du langage de programmation de l’application.
 Nous allons voir ici les « cas classiques ». 

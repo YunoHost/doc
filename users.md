@@ -15,20 +15,20 @@ You should be careful about who you give your server access to. In terms of secu
 The user portal, or SSO
 -----------------------
 
-<center><img src="images/home_panel.jpg" style="max-width: 650px; border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);"></center>
+<center><img src="images/user_panel.png" style="max-width: 650px; border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);"></center>
 
 The user portal, also called the SSO for 'Single Sign On' allows user to browse easily between the different apps they have access to. In particular, the term 'Single Sign On' comes from the fact that user only need to log in the portal to automatically be logged to all apps that require authentication (or at least those who are integrated with the SSO/LDAP, since this is sometimes technically complicated or not possible at all).
 
 In the portal, users can also click on the avatar in the top-left to configure some other settings such as their identify, mail aliases, automatic mail forwards, or change their password.
 
 <div class="alert alert-info" markdown="1">
-You should be aware that the SSO can only be reached through the actual domain name (i.e. `https://the.domain.tld/yunohost/sso`), and NOT by just using the IP of the server (i.e. `https://11.22.33.44/yunohost/sso`), contrarily to the webadmin ! This is a bit confusing but is necessary for technical reason. If you are in a situation where you need to access the SSO without having your DNS properly configured for some reason, you might consider tweaking your `/etc/hosts` as described in [this page](dns_local_nework).
+You should be aware that the SSO can only be reached through the actual domain name (i.e. `https://the.domain.tld/yunohost/sso`), and NOT by just using the IP of the server (i.e. `https://11.22.33.44/yunohost/sso`), contrarily to the webadmin ! This is a bit confusing but is necessary for technical reason. If you are in a situation where you need to access the SSO without having your DNS properly configured for some reason, you might consider tweaking your `/etc/hosts` as described in [this page](dns_local_network).
 </div>
 
-App permissions
----------------
+User groups and permissions
+---------------------------
 
-Access to apps can be restricted to some users only. This can be configured via the webadmin in Applications > (choose an app) > Access, or similarly via the command line `yunohost app addaccess`, `removeaccess` and `clearaccess`.
+See [this dedicated page](groups_and_permissions).
 
 SSH access
 ----------

@@ -1,7 +1,7 @@
 Applications
 ============
 
-L'une des fonctionnalités principales de YunoHost est la possibilité d'installer facile des applications immédiatement utilisables. Pour donner des exemples d'application, il est possible d'installer un système de blog, un "cloud" (pour héberger et synchroniser des fichiers), un site web, un lecteur RSS, ....
+L'une des fonctionnalités principales de YunoHost est la possibilité d'installer facilement des applications immédiatement utilisables. Pour donner des exemples d'application, il est possible d'installer un système de blog, un "cloud" (pour héberger et synchroniser des fichiers), un site web, un lecteur RSS, ....
 
 Les applications doivent être packagées manuellement par les packageurs/mainteneurs d'applications. Les applications peuvent être intégrées avec YunoHost pour gérer les mise à jour, la sauvegarde/restauration et l'intégration LDAP/SSO, entre autres.
 
@@ -21,12 +21,12 @@ La liste des applications existantes (officielles et communautaires) peut être 
 Niveaux d'intégration et de qualité
 ------------------------------
 
-Des tests automatisés sont exécutés régulièrement pour tester l'intégration et la qualité de toutes les applications officielles, ainsi que les applications communautaires qui ont été déclarées "working". Le résultat est un niveau entre 0 et 7, dont la signification est détaillée sur [cette page](/packaging_apps_levels_fr). Certains résultats de tests peuvent également être disponibles sur [ce tableau de bord](https://dash.yunohost.org/appci/branch/stable).
+Des tests automatisés sont exécutés régulièrement pour tester l'intégration et la qualité de toutes les applications officielles, ainsi que les applications communautaires qui ont été déclarées "working". Le résultat est un niveau entre 0 et 7, dont la signification est détaillée sur [cette page](/packaging_apps_levels). Certains résultats de tests peuvent également être disponibles sur [ce tableau de bord](https://dash.yunohost.org/appci/branch/stable).
 
 Intégration LDAP / SSO
 ----------------------
 
-Les applications peuvent prendre en charge l'intégration avec le système LDAP / Single Sign On, de sorte que les utilisateurs qui se connectent au portail utilisateur peuvent être automatiquement authentifié sur toutes ces applications. Certaines applications ne le supportent pas car cette fonctionnalité n'est, soit pas implémentée en amont du logiciel de l'app, soit le mainteneur n'a pas encore travaillé sur cette partie.
+Les applications peuvent prendre en charge l'intégration avec le système LDAP / Single Sign On, de sorte que les utilisateurs qui se connectent au portail utilisateur peuvent être automatiquement authentifiés sur toutes ces applications. Certaines applications ne le supportent pas car cette fonctionnalité n'est, soit pas implémentée en amont du logiciel de l'application, soit le mainteneur n'a pas encore travaillé sur cette partie.
 
 Applications multi-instances
 ---------------------------

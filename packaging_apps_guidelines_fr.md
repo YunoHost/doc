@@ -153,13 +153,11 @@ Cela implique de surveiller les mises à jour de l'application upstream, de resp
 #### YEP 1.6
 ##### Se tenir informé sur l'évolution du packaging d'apps  | validé | manuel | OFFICIAL |
 Afin de suivre l'évolution du format de packaging ainsi que des bonnes pratiques, il est recommandé de:
-* s'inscrire à la liste de discussion `apps@list.yunohost.org`
-* suivre [la catégorie Apps packaging du forum](https://forum.yunohost.org/c/apps-packaging)
+* suivre [la catégorie Apps packaging du forum](https://forum.yunohost.org/c/contribute-room/apps-packaging)
 
 Pour suivre l'évolution de YunoHost de façon plus générale :
 * rejoindre le salon XMPP dev@conference.yunohost.org ([trois jours de logs sont disponibles](https://im.yunohost.org/logs/dev/))
 * suivre [la catégorie Annoucement du forum](https://forum.yunohost.org/c/announcement)
-* suivre les discussions sur contrib@list.yunohost.org
 
 #### YEP 1.7
 ##### Ajouter l'app à l'[organisation YunoHost-Apps](https://github.com/YunoHost-Apps)  | validé | manuel | OFFICIAL |
@@ -167,7 +165,7 @@ L'ajout d'une app sur l'[organisation YunoHost-Apps](https://github.com/YunoHost
 
 C'est aussi un moyen pour permettre de déployer rapidement un correctif de sécurité si nécessaire dans le cas où le mainteneur ne serait pas disponible.
 
-Procédure de transfert : demander sur le [salon de discussion `Apps`](chat_rooms_fr) à être invité à l’organisation en lui fournissant le nom de son compte GitHub.
+Procédure de transfert : demander sur le [salon de discussion `Apps`](/chat_rooms) à être invité à l’organisation en lui fournissant le nom de son compte GitHub.
 Une fois l’invitation acceptée, [transférer son dépôt sur l’organisation en suivant ce tutoriel](https://help.github.com/articles/transferring-a-repository-owned-by-your-personal-account/#transferring-a-repository-to-another-user-account-or-to-an-organization).
 
 #### YEP 1.8
@@ -224,7 +222,7 @@ Gardez votre code aussi simple que possible, gardez tout ce dont un script a bes
 #### Stabiliser une app
 #### YEP 2.1
 ##### Respecter le format du manifeste  | validé | auto | INPROGRESS |
-Le manifeste permet de décrire une app afin que YunoHost puisse lui appliquer les bons traitements. Pour plus d'information voir la [documentation dédiée](https://yunohost.org/#/packaging_apps_manifest).
+Le manifeste permet de décrire une app afin que YunoHost puisse lui appliquer les bons traitements. Pour plus d'information voir la [documentation dédiée](/packaging_apps_manifest).
 
 #### YEP 2.2
 ##### Utiliser bash pour les scripts principaux  | validé | auto | WORKING |
@@ -275,7 +273,7 @@ Pour celà, il faut recourir autant que possible aux dossiers `.d` des configura
 
 #### YEP 2.9
 ##### Enlever toutes traces de l'app lors de la suppression   | brouillon | manuel | WORKING |
-À l’exception de dépendances (pax exemple : paquets Debian) utilisés par d’autres services ou applications.
+À l’exception de dépendances (par exemple : paquets Debian) utilisés par d’autres services ou applications.
 
 #### YEP 2.10
 ##### Configurer les logs de l'application   | brouillon | manuel | WORKING |
@@ -291,7 +289,7 @@ Il est conseillé de rendre les scripts le plus générique possible, un bon moy
 Afin de simplifier le packaging, d'uniformiser les pratiques, d'éviter les erreurs et d'augmenter la durée de vie d'un script vis-à-vis des futures versions de YunoHost. Un ensemble de helpers permettant de faire de nombreuses actions est proposé.
 
 Pour plus d'informations :
-* consulter [la documentation des helpers](https://yunohost.org/#/packaging_apps_helpers_fr)
+* consulter [la documentation des helpers](/packaging_apps_helpers)
 * explorer [le répertoire des helpers](https://github.com/YunoHost/yunohost/tree/unstable/data/helpers.d)
 
 #### YEP 2.13
@@ -374,7 +372,7 @@ Toutefois, cela ne doit pas exempter d'une restriction maximale des droits sur l
 ##### Suivre les recommandations de la documentation de l'app   | validé | manuel | OFFICIAL |
 En général, une application propose une documentation afin d'aider les administrateurs systèmes à réaliser l'installation. Il est conseiller d'en suivre les recommandations, notamment celles concernant les permissions à accorder par fichier ou répertoire.
 
-Le mainteneur de paquet doit toutefois rester vigilant, certaines documentations pouvant être erronées ou insuffisante.
+Le mainteneur de paquet doit toutefois rester vigilant, certaines documentations pouvant être erronées ou insuffisantes.
 
 #### YEP 3.6
 ##### Mettre à jour les versions contenant des CVE   | draft | manuel | OFFICIAL |

@@ -20,16 +20,13 @@
   <div dir="auto" class="main-links hidden-xs">
     <a href="/whatsyunohost">عن واي يونوهوست</a> <span class="colored-bar">•</span> 
     <a href="https://forum.yunohost.org/c/announcement" target="_blank">آخر المستجدات</a> <span class="colored-bar">•</span> 
-    <a href="/docs_ar">المستندات</a>
+    <a href="/docs">المستندات</a> <span class="colored-bar">•</span> 
+    <a href="https://donate.yunohost.org/">تبرع/a>
   </div>
 
 </div><!-- teasing-part -->
 
 <div class="boring-part" markdown="1">
-
-  <a href="https://github.com/YunoHost" target="_blank" class="github-ribbon hidden-xs">
-    <img src="/images/github_ribbon_grey.png" alt="قم بتشعيبي على جيت هب">
-  </a>
 
   <h1 dir="rtl">YunoHost <small>أداة تُمكّنكم من تنصيب و استخدام خادمكم بأسلوب سهل.</small></h1>
 
@@ -40,7 +37,7 @@
   <div dir="auto" class="call-to-action">
     <a class="btn btn-primary btn-lg" href="/try">تجريب</a>
     <a class="btn btn-success btn-lg" href="/install">تنصيب</a>
-    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-5-release-sortie-de-yunohost-3-5/7619">YunoHost v3.5</a></small></p>
+    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-6-release-sortie-de-yunohost-3-6/8359">YunoHost v3.6</a></small></p>
   </div>
 
   <hr />
@@ -67,7 +64,7 @@
     </div>
     <div class="col-md-7 text-right">
       <h1>استمتعوا <small>بتطبيقات الويب الخاصة بكم و انْشِئُوا موطنكم الصغير على الإنترنت</small></h1>
-      <p><br /><a href="/apps_ar">قائمة التطبيقات المتوفرة</a></p>
+      <p><br /><a href="/apps">قائمة التطبيقات المتوفرة</a></p>
     </div>
   </div>
 
@@ -91,17 +88,17 @@
     <div class="col-md-4 button-list">
 
       <a class="btn btn-lg btn-block btn-primary" href="/whatsyunohost">ما هو YunoHost</a>
-      <a class="btn btn-lg btn-block btn-info" href="/docs_ar">الدليل</a>
+      <a class="btn btn-lg btn-block btn-info" href="/docs">الدليل</a>
       <a class="btn btn-lg btn-block btn-success" href="/contribute">كيف يمكنكم المساهمة</a>
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org" target="_blank">المنتدى</a>
       <a class="btn btn-lg btn-block btn-default" href="chat_rooms" target="_blank">غُرف المحادثة</a>
       <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">آخر الأخبار</a>
-      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_ar">المساعدة</a>
+      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help">المساعدة</a>
 
     </div>
     <div class="col-md-7 text-right">
       <h1>إكتشفوا <small>قدرات خادمكم، ولماذا يهمكم الأمر</small></h1>
-      <p><br /><a href="/docs_ar">إطلعوا على الدليل</a></p>
+      <p><br /><a href="/docs">إطلعوا على الدليل</a></p>
     </div>
   </div>
 

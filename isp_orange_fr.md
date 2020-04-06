@@ -1,5 +1,5 @@
 # Orange
-*Trouvez la liste d’autres fournisseurs d’accès Internet **[ici](/isp_fr)**.*
+*Trouvez la liste d’autres fournisseurs d’accès Internet **[ici](/isp)**.*
 
 #### Le courrier électronique
 
@@ -77,4 +77,9 @@ Si ils ne sont pas présents, installez-les :
 
 ```bash
 apt install libsasl2-modules sasl2-bin
+```
+
+Il est possible que postfix ne prenne pas en compte tout de suite vos modifications. Pour le forcer à le faire, exécutez 
+```bash
+systemctl restart postfix
 ```

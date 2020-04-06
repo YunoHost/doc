@@ -3,7 +3,7 @@ L'auto-hébergement
 
 L'auto-hébergement est le fait d'avoir et d'administrer son propre serveur, typiquement chez soi, pour héberger soi-même ses données personnelles et des services plutôt que de se reposer exclusivement sur des tiers. Par exemple, il est possible d'auto-héberger son blog de sorte qu'il "vive" dans une machine que vous contrôlez, au lieu qu'il soit sur l'ordinateur de quelqu'un d'autre (a.k.a. le Cloud) en échange d'argent, de publicités ou de données privées.
 
-L'auto-hébergement implique de disposer d'un serveur. Un serveur est un ordinateur qui est destiné à être accessible sur le réseau en permanence, et n'a généralement pas d'écran ni de clavier puisqu'il est administré à distance. Contrairement à une croyance répandue, les serveurs ne sont pas nécessairement des machines énormes et extrêmement puissante : aujourd'hui, une petite carte ARM à ~30€ est adéquate pour de l'auto-hébergement.
+L'auto-hébergement implique de disposer d'un serveur. Un serveur est un ordinateur qui est destiné à être accessible sur le réseau en permanence, et n'a généralement pas d'écran ni de clavier puisqu'il est administré à distance. Contrairement à une croyance répandue, les serveurs ne sont pas nécessairement des machines énormes et extrêmement puissantes: aujourd'hui, une petite carte ARM à ~30€ est adéquate pour de l'auto-hébergement.
 
 Pratiquer l'auto-hébergement ne rend pas "votre internet" plus sécurisé et ne fournit pas d'anonymat en tant que tel. L'objectif est généralement de pouvoir être autonome et au contrôle de ses services et de ses données - ce qui implique aussi d'en être responsable.
 
@@ -16,7 +16,7 @@ Pourquoi s'auto-héberger ?
 
 - **Vous souhaitez apprendre comment fonctionnent les ordinateurs et Internet.** Opérer son propre serveur est un bon contexte pour apprendre les mécanismes de base au cœur des systèmes d'exploitations (OS) et d'Internet. Il vous faudra possiblement toucher à la ligne de commande et à des morceaux de configuration réseau et DNS.
 
-- **Vous voulez explorer de nouvelles possibilités et personnaliser votre espace.** Avez-vous déjà rêvé d'avoir votre propre serveur Minecraft pour vos ami.e.s, ou un client IRC ou XMPP persistent ? Avec votre propre serveur, vous pouvez manuellement installer et faire tourner n'importe quel programme et personnaliser chaque morceau.
+- **Vous voulez explorer de nouvelles possibilités et personnaliser votre espace.** Avez-vous déjà rêvé d'avoir votre propre serveur Minecraft pour vos ami·e·s, ou un client IRC ou XMPP persistent ? Avec votre propre serveur, vous pouvez manuellement installer et faire tourner n'importe quel programme et personnaliser chaque morceau.
 
 Pourquoi ne *pas* s'auto-héberger ?
 -----------------------------------

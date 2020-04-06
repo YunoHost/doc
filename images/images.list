@@ -2,7 +2,6 @@ boot_screen.png
 cd.jpg
 checkstart.png
 cubieboard2.png
-debian_install.png
 debian-logo.png
 desktop.jpg
 df_h.png
@@ -28,9 +27,10 @@ Linuxfr.png
 logo-jirafeau.jpeg
 logo.png
 Logo-wallabag-svg.svg
+lxc.png
 mailview.jpg
-manage_en.png
-manage.png
+webadmin.png
+webadmin_fr.png
 micro-sd-card.jpg
 nettop.jpg
 networks.png
@@ -56,12 +56,10 @@ transmission.png
 ttrss.png
 unetbootin.png
 usb_key.png
-vagrant.png
 virtualbox_1.png
 virtualbox_2.1.png
 virtualbox_2.png
 virtualbox_3.png
-virtualbox_4.png
 virtualbox.png
 vps.png
 web4all.png

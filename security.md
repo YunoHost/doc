@@ -1,6 +1,6 @@
 # Security
 
-YunoHost has been developed to provide the best security without too much complication. Every protocol used in YunoHost are **encrypted**, only password's hashs are stored and by default each user is able to access to his personal directory only.
+YunoHost has been developed to provide the best security without too much complication. Every protocol used in YunoHost is **encrypted**, only password's hashes are stored and by default each user is able to access his personal directory only.
 
 Two things remain important to note:
 
@@ -40,33 +40,33 @@ nano /etc/ssh/sshd_config
 PasswordAuthentication no
 ```
 
-Save and restart SSH daemon.
+Save and restart the SSH daemon.
 ```bash
 systemctl restart ssh
 ```
 ---
 
-### Modify SSH port
+### Modify the SSH port
 
-To prevent SSH connection attempts by robots that scan the Internet for any servers with SSH accessible, you can change the SSH port.
+To prevent SSH connection attempts by robots that scan the Internet for any server with SSH enabled, you can change the SSH port.
 
-**On your server**, edit the ssh configuration file, in order to modify SSH port.
+**On your server**, edit the ssh configuration file, in order to modify the SSH port.
 
 ```bash
 nano /etc/ssh/sshd_config
 ```
-**Search line "Port" and replace** port number (by default 22) by another not used number
+**Search the line "Port" and replace** port number (by default 22) by another unused number
 ```bash
 # What ports, IPs and protocols we listen for
 Port 22 # to replace by 9777 for example
 ```
 
-**Open the port** in firewall (you can use `-6` option to deny ipv4 connection)
+**Open the port** in the firewall (you can use `-6` option to deny ipv4 connection)
 ```bash
 yunohost firewall allow TCP 9777
 ```
 
-Save and restart SSH daemon. Switch over to the new port by restarting SSH.
+Save and restart the SSH daemon. Switch over to the new port by restarting SSH.
 ```bash
 systemctl restart ssh
 ```
@@ -86,7 +86,7 @@ To do that you need to create the configuration file `my_ssh_port.conf` with the
 nano /etc/fail2ban/jail.d/my_ssh_port.conf
 ```
 
-and you can fill it with
+and you can then fill it in with
 
 ```bash
 [sshd]
@@ -114,7 +114,7 @@ ssh -p <new_ssh_port_number> admin@<your_yunohost_server>
 
 ### Change the user authorized to connect via SSH
 
-To avoid multiple forced login attempts to admin by robots, change the authorized user who can connect.
+To avoid multiple forced login attempts to the admin account by robots, change the authorized user who can connect.
 
 <div class="alert alert-info" markdown="1">
 In the case of a key authentication, a brute force attack has no chance of succeeding. This step is not really useful in this case.
@@ -124,8 +124,8 @@ In the case of a key authentication, a brute force attack has no chance of succe
 ```bash
 sudo adduser user_name
 ```
-Choose a strong password, since this user will be responsible to obtain root privileges.
-Add the user to sudo group to allow him/her to perform maintenance tasks that require root privileges.
+Choose a strong password, since this user will be responsible with obtaining root privileges.
+Add the user to the sudo group to allow him/her to perform maintenance tasks that require root privileges.
 ```bash
 sudo adduser user_name sudo
 ```
@@ -140,7 +140,7 @@ AllowUsers user_name
 ```
 Only users listed in the AllowUsers directive will then be allowed to connect via SSH, which excludes the admin user.
 
-Save and restart SSH daemon.
+Save and restart the SSH daemon.
 ```bash
 systemctl restart ssh
 ```
@@ -148,9 +148,9 @@ systemctl restart ssh
 
 ### Change cipher compatibility configuration
 
-The default TLS configuration for services tend to offer a good compatibility to support old devices. You can tune this policy for specific services like SSH and NGINX. By default, the NGINX configuration follows the [intermediate compatibility recommendation](https://wiki.mozilla.org/Security/Server_Side_TLS#Intermediate_compatibility_.28default.29) from Mozilla. You can choose to switch to the 'modern' configuration which uses more recent security recommendations, but decreases the compatibility, which may be an issue for your users and visitors using older devices. More details about the compatibility can be found on [this page](https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility).
+The default TLS configuration for services tends to offer good compatibility to support old devices. You can tune this policy for specific services like SSH and NGINX. By default, the NGINX configuration follows the [intermediate compatibility recommendation](https://wiki.mozilla.org/Security/Server_Side_TLS#Intermediate_compatibility_.28default.29) from Mozilla. You can choose to switch to the 'modern' configuration which uses more recent security recommendations, but decreases the compatibility, which may be an issue for your users and visitors using older devices. More details about the compatibility can be found on [this page](https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility).
 
-Changing the compatibility level is not definitive and can be reverted if it doesn't feet your environment.
+Changing the compatibility level is not definitive and can be reverted if it doesn't fit with your environment.
 
 **On your server**, change the policy for NGINX
 ```bash
@@ -162,8 +162,8 @@ sudo yunohost settings set security.nginx.compatibility -v modern
 sudo yunohost settings set security.ssh.compatibility -v modern
 ```
 
-### Disable YunoHost API
-YunoHost administration is accessible through an **HTTP API**, served on the 6787 port by default (only on `localhost`). It can be used to administrate a lot of things on your server, so malicious actors can also use it to damage your server. The best thing to do, if you know how to use the [command-line interface](/commandline), is to deactivate the `yunohost-api` service.
+### Disable the YunoHost API
+YunoHost administration is accessible through an **HTTP API**, served on the 6787 port by default (only on `localhost`). It can be used to administer a lot of things on your server, so malicious actors can also use it to damage your server. The best thing to do, if you know how to use the [command-line interface](/commandline), is to deactivate the `yunohost-api` service.
 
 ```bash
 sudo systemctl disable yunohost-api
