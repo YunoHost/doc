@@ -1,7 +1,7 @@
 User groups and permissions
 ===========================
 
-You can access the group and permissions management interface from the webadmin
+You can access the 'group and permissions' management interface from the webadmin
 by going into the 'Users' section and clicking the corresponding button:
 
 ![](./images/button_to_go_to_permission_interface.png)
@@ -9,13 +9,13 @@ by going into the 'Users' section and clicking the corresponding button:
 Managing groups
 ---------------
 
-The group mechanism can be used to define group of users which then can be used to restrict permissions for applications and other services such as mail or xmpp. Note that it is *not* mandatory to create a group to do so : you can also restrict access to an app or service to just a specific list of user.
+The group mechanism can be used to define group of users which then can be used to restrict permissions for applications and other services such as mail or xmpp. Note that it is *not* mandatory to create a group to do so: you can also restrict access to an app or service to just a specific list of users.
 
-Using groups is however useful for semantic, for example if you host multiple group of friends, association or enterprise on your server, you might want to create groups like `association1` and `association2` and add members of each association to the relevant group.
+Using groups is however useful for semantic, for example if you host multiple groups of friends, associations or businesses on your server, you might want to create groups like `association1` and `association2` and add members of each association to the relevant group.
 
 ### List existing groups
 
-To list the currently existing groups :
+The existing groups are listed at the top of the page, To list the currently existing groups in CLI :
 
 ```bash
 $ yunohost user group list
