@@ -5,7 +5,7 @@
 - [Limitations with YunoHost](#limitations-with-yunohost)
 - [Useful links](#useful-links)
 
-Ampache is a free audio streaming software.
+Ampache is libre audio streaming software.
 
 ## Limitations with YunoHost
 
