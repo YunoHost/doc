@@ -11,7 +11,7 @@
 - [CardDAV Connection](#CardDAV-Connection)
 - [Useful links](#Useful-links)
 
-Baïkal is a server for calendars and address book, which used CalDav and CardDav protocol. Baïkal can be synced with a lot of client like Thunderbird + Lightning.
+Baïkal is a server for calendars and address books, which uses the CalDav and CardDav protocol. Baïkal can be synced with a lot of clients, like Thunderbird + Lightning.
 
 **WARNING**: Baikal will not work if you have installed a **Nextcloud** ( their cardav/caldav functions conflict).
 
