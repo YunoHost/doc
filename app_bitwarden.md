@@ -9,7 +9,7 @@
 
 Bitwarden is a freemium and open source password manager under AGPL license, which allows to generate and store passwords in a secure way. These are protected by a single password called the "master password". It is created in 2016 by Kyle Spearrin, a software architect.
 
-The software is available on most operating systems (Linux, Windows, MacOS, iOS, Android and command line), and as a web browser plug-in. It is also possible to view passwords from a website[¹].
+The software is available for most operating systems (Linux, Windows, macOS, iOS, Android and command-line), and as a web browser plug-in. It is also possible to view passwords from a website.[¹]
 
 ## Configuration
 
