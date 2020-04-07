@@ -28,10 +28,10 @@ Cela peut être fait simplement avec un navigateur, pour le voir apparaître dan
 Les adresses précédentes fonctionnent également pour accéder à des ressources n’appartenant pas à l’utilisateur authentifié.
 
 > Exemple :
-> User1 peut se connecter à la collection de user2  
-> https://example.org/radicale/user2/  
+> User1 peut se connecter à la collection de user2
+> https://example.org/radicale/user2/
 > Il lui suffira d’indiquer le login et mot de passe de user1.
-> Ce sont les règles de partage (voir ci-dessous) qui permettront ou pas à user1 de voir le contenu de la collection de user2.  
+> Ce sont les règles de partage (voir ci-dessous) qui permettront ou pas à user1 de voir le contenu de la collection de user2.
 > Par défaut, aucun partage n’est autorisé.
 
 ---
@@ -85,16 +85,50 @@ En revanche, sans avoir recours à des règles pour chaque ressource de la colle
 ---
 
 ### Rendre le log de Radicale plus loquace
-Par défaut, le log de Radicale est réglé sur INFO. Ce mode épargne le disque dur mais ne permet pas de débugger Radicale en cas de problème.  
-Pour passer Radicale en mode DEBUG, il faut éditer le fichier */etc/radicale/logging* et passer INFO à DEBUG dans les sections *[logger_root]* et *[handler_file]* puis recharger le service uwsgi.  
+Par défaut, le log de Radicale est réglé sur INFO. Ce mode épargne le disque dur mais ne permet pas de débugger Radicale en cas de problème.
+Pour passer Radicale en mode DEBUG, il faut éditer le fichier */etc/radicale/logging* et passer INFO à DEBUG dans les sections *[logger_root]* et *[handler_file]* puis recharger le service uwsgi.
 Dès lors, le log affiche toutes les requêtes qui sont faites à Radicale ainsi que l’analyse du fichier *rights*.
 Il est toutefois déconseillé de rester sur ce mode, car le log se remplie très rapidement.
 
 ---
 
 ### Modifier la configuration de InfCloud
-La configuration de InfCloud se trouve dans le fichier *infcloud/config.js*  
+La configuration de InfCloud se trouve dans le fichier *infcloud/config.js*
 Pour prendre en compte une modification dans le fichier *config.js* (ou tout autre fichier de InfCloud) il faut recharger le cache avec le script fourni.
 ```bash
 sudo ./cache_update.sh
 ```
+
+------------------
+
+# <img src="/images/APPLICATION_logo.svg" width="80px" alt="logo de APPLICATION"> APPLICATION
+
+[![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+
+- [Configuration](#configuration)
+- [Limitations avec Yunohost](#limitations-avec-yunohost)
+- [Applications clientes](#applications-clients)
+- [Liens utiles](#liens-utiles)
+
+**Présentation générale de l'application.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+
+## Configuration
+
+**Si la configuration de l'application ne se fait pas avec le panel admin de YunoHost.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+
+## Limitations avec Yunohost
+
+**Explication des limitations actuelles en utilisation l'application avec YunoHost.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+
+## Applications clientes
+
+| Nom de l'applications | Plateforme | Multi-comptes | Autre réseaux supportés | Play Store | F-Droid | Apple Store | *Autres* |
+|-----------------------|------------|---------------|-------------------------|------------|---------|-------------|----------|
+|                       |            |               |                         |            |         |             |          |
+
+## Liens utiles
+
+ + Site web : [SITE WEB](#)
+ + Documentation officielle : [DOCUMENTATION](#)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
+ + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
