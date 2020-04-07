@@ -26,6 +26,7 @@
     * [L'interface d'administration web](/admin)
     * [SSH](/ssh) et [l'administration en ligne de commande](/commandline)
     * [Les utilisateurs et le SSO](/users)
+    * [Les groupes et les permissions](/groups_and_permissions)
     * [Les applications](/apps_overview)
     * [Les domaines, la configuration DNS et les certificats](/domains)
     * [Les emails](/email)

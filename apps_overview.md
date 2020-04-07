@@ -37,7 +37,7 @@ Some applications support the ability to be installed several times (at differen
 User access management
 ----------------------
 
-Access to apps can be restricted to some users only. This can be configured via the webadmin in Applications > (choose an app) > Access, or similarly via the command line `yunohost app addaccess`, `removeaccess` and `clearaccess`.
+Access to apps can be restricted to some users only. This can be configured via the webadmin in the [Groups and permissions panel](/groups_and_permissions), or similarly via the command-line subcategory `yunohost user permission`.
 
 Packaging applications 
 ----------------------
