@@ -1,21 +1,22 @@
-User groups and permissions
+<div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">La page demandée n'est pour le moment pas disponible en français. Voici à la place la version en anglais. Si vous souhaitez commencer une traduction de cette page, vous pouvez vous rendre sur [cette page](https://yunohost.org/#/groups_and_permissions_fr).</div>
+
+Groupes utilisateurs et permissions
 ===========================
 
-You can access the group and permissions management interface from the webadmin
-by going into the 'Users' section and clicking the corresponding button:
+Vous pouvez accédez à l'interface de gestion des groupes et des permissions à partir de webmin en allant dans la section 'Users' et en cliquant sur le bouton suivant:
 
 ![](./images/button_to_go_to_permission_interface.png)
 
-Managing groups
+Gestion des groupes
 ---------------
 
-The group mechanism can be used to define group of users which then can be used to restrict permissions for applications and other services such as mail or xmpp. Note that it is *not* mandatory to create a group to do so : you can also restrict access to an app or service to just a specific list of user.
+Le mécanisme de groupe peut être utiliser pour définir les groupes d'utilisateurs qui peuvent utiliser pour restreindre les permissions pour les applications et les autres services tel que mail ou XMPP. Notez qu'il n'est * pas * obligatoire de créer un groupe pour cela : vous pouvez également restreindre l'accès à une application ou à un service à juste une liste spécifique d'utilisateurs.
 
-Using groups is however useful for semantic, for example if you host multiple group of friends, association or enterprise on your server, you might want to create groups like `association1` and `association2` and add members of each association to the relevant group.
+L'utilisation de groupes est cependant utile pour la sémantique, par exemple si vous hébergez de nombreux groupes d'amis, d'associations ou d'entreprises sur votre serveur, vous voudrez peut-être créer des groupes comme `association1` et `association2` et ajouter des membres de chaque association au groupe concerné.
 
-### List existing groups
+### Liste des groupes existants
 
-To list the currently existing groups :
+Pour lister les groupes actuellement existants :
 
 ```bash
 $ yunohost user group list
@@ -28,25 +29,25 @@ groups:
       - delphine
 ```
 
-By default, a special group called `all_users` exists and contain all users registered on YunoHost. This group can not be edited.
+Par défaut, un groupe spécial appelé `all_users` existe et contient tout les utilisateurs enregistrés sur YunoHost. Ce groupe ne peut pas être modifier.
 
-### Creating a new group
+### Création d'un nouveau groupe 
 
-To create a new group called `yolo_crew`
+Pour créer un nouveau groupe appelé `yolo_crew`
 
 ```bash
 $ yunohost user group create yolo_crew
 ```
 
-Let's add Charlie and Delphine to this group:
+Ajoutons Charlie et Delphine à ce groupe :
 
 ```bash
 $ yunohost user group update yolo_crew --add charlie delphine
 ```
 
-(similarly, `--remove` can be used to remove members from a group)
+(De même, `--remove` peut être utiliser pour retirer des membres d'un groupe)
 
-Now in the group list we should see :
+Maintenant dans la liste du groupe nous devrions voir :
 
 ```bash
 $ yunohost user group list
@@ -63,22 +64,23 @@ groups:
       - delphine
 ```
 
-### Deleting groups
+### Suppression des groupes 
 
-To delete the group `yolo_crew`, you may run
+Pour supprimer le groupe `yolo_crew`, vous pouvez saisir
 
 ```bash
 $ yunohost user group delete yolo_crew
 ```
 
-Managing permissions
+Gestions des permissions
 --------------------
 
-The permission mechanism allow to restrict access to services (for example mail, xmpp, ...) and apps, or even specific part of the apps (for example the administration interface of wordpress).
+Le mécanisme de permission permet de restreindre l'accès aux services (par exemple mail, XMPP, ...) et aux applications, ou même à certaines parties des applications (par exemple à l'interface d'administration de Wordpress).
 
-### List permissions
 
-To list permissions and corresponding accesses:
+### Liste des permissions
+
+Pour lister les permissions et les accès correspondants :
 
 ```bash
 $ yunohost user permission list
@@ -94,24 +96,26 @@ permissions:
 ```
 
 Here, we find that all registered users can use mails, xmpp, and access the wordpress blog. However, nobody can access the wordpress admin interface.
+Ici, nous trouvons tout les utilisateurs qui peuvent utiliser mails, xmpp, et accéder au blog Wordpress. Pourtant, personne n'est autorisé à accéder à l'interface d'administration de Wordpress.
 
-More details can be displayed by adding the `--full` option which will display the list of users corresponding to groups allowed, as well as urls associated to a permission (relevant for web apps).
+Plus de détails peuvent être afficher en ajoutant l'option `--full` qui affichera la liste des utilisateurs correspondant aux groupes autorisés, ainsi que les URLs associées aux permissions (pertinent pour les applications Web).
 
-### Add accesses to group or users
 
-To allow a group to access the wordpress admin interface:
+### Ajouter les accès aux groupes ou utilisateurs
+
+Pour autoriser un groupe à accéder à l'interface d'administration de Worspress :
 
 ```bash
 $ yunohost user permission update wordpress.admin --add yolo_crew
 ```
 
-Note that you can also allow a single user:
+Notez que vous pouvez également autoriser un seul utilisateur:
 
 ```bash
 $ yunohost user permission update wordpress.admin --add alice
 ```
 
-And now we may see that both the YoloCrew and Alice have access to the wordpress admin interface :
+Et maintenat nous pouvons voir que le YoloCrew and Alice ont accès à l'interface d'administration de Worspress :
 
 ```bash
 $ yunohost user permission list
@@ -122,46 +126,49 @@ $ yunohost user permission list
       - alice
   [...]
 ```
-
-Note that, for example, if we want to restrict permission for email so that only Bob is allowed to email, we should also remove `all_users` from the permission :
+Notez que, par exemple, if nous voulons restreindre la permission pour les emails pour que seulement Bob y ait accès, nous devons également retirer `all_users` dans les permissions : 
 
 ```bash
 $ yunohost user permission update mail --remove all_users --add bob
 ```
 
-Notes for apps packagers
+Note pour les empaqueteurs d’applications (apps packagers)
 ------------------------
 
-Installing an app creates the permission `app.main` with `all_users` allowed by default.
+L'installation d'une application créée une permission `app.main` avec `all_users` autorisés par défaut.
 
-If you wish to make the application publicly available, instead of the old `unprotected_urls` mechanism, you should give access to the special groups `visitors`:
+Si vous souhaitez rendre une application disponible publiquement, au lieu de l'ancien mécanisme `unprotected_urls`, vous devez donner l'accès au groupe spécial `visitors`:
 
 ```bash
 ynh_permission_update --permission "main" --add visitors
 ```
 
-If you wish to create a custom permission for your app (e.g. to restrict access to an admin interface) you may use the following helpers:
+Si vous souhaitez créer une permission personnalisée pour votre application (par exemple: restreindre l'accès à l'interface d'administration) vous pouvez utiliser les aides suivantes :
 
 ```bash
 ynh_permission_create --permission "admin" --url "/admin" --allowed "$admin_user"
 ```
 
-You don't need to take care of removing permissions or backing up/restoring them as it is handled by the core of YunoHost.
+Vous n'avez pas besoin de prendre en compte la suppression des permissions ou de les sauvegarder / restaurer car elles sont gérées par le noyau de YunoHost.
 
-### Migrating away from the legacy permission management
+### Migration hors de la gestion des permissions héritées
 
-When migrating/fixing an app still using the legacy permission system, it should be understood that the accesses are now to be managed by features from the core, outside the application scripts!
+Lors de la migration / correction d'une application utilisant toujours le système de permissions hérité, il faut comprendre que les accès doivent maintenant être gérés par des fonctionnalités du noyau, en dehors des scripts d'application!
 
-Application scripts are only expected to:
-- if relevant, during the install script, initialize the main permission of the app as public (`visitors`) or private (`all_users`) or only accessible to specific groups/users ;
-- if relevant, create and initialize any other specific permission (e.g. to some admin interface) in the install script (and *maybe* in some migration happening in the upgrade script).
+Les scripts d'application devraient uniquement:
 
-Applications scripts should absolutely **NOT** mess up with any already-existing app accesses (including `unprotected`/`skipped_uris` settings) during any other case, as *it would reset any admin-defined access rule*!
+- le cas échéant, pendant le script d'installation, initialisez la permission principale de l'application en tant que public («visiteurs») ou privé («tous les utilisateurs») ou uniquement accessible à des groupes / utilisateurs spécifiques;
+- le cas échéant, créez et initialisez toute autre permission spécifique (par exemple, sur l'interface d'administration) dans le script d'installation (et *peut-être* dans certaines migrations se produisant dans le script de mise à niveau).
 
-When migrating away from the legacy permission, you should:
-- remove any management of `$is_public`-like or `$admin_user`-like setting, except for any manifest question meant to either *initialize* the app as public/private or specific permissions ;
-- remove any management of `skipped_`, `unprotected_` and `protected_uris` (and `_regex`) settings that are now considered obsolete and deprecated. (N.B.: you should **explicitly delete them in the upgrade script**). Instead, you should now rely on the new `ynh_permission_*` helpers instead. If you do feel like you still need to use them, please contact the core team to provide your feedback and we'll figure out something ;
-For example, in the upgrade script if you used the `protected_uris` key before, you may use this code in the `DOWNWARD COMPATIBILITY` section:
+
+Les scripts d'applications ne doivent absolument ** PAS ** altérer les accès aux applications déjà existantes (y compris les paramètres `unprotected`/`skipped_uris`) car dans tous les autres cas, *cela réinitialiserait toute règle d'accès définie par l'administrateur*!
+
+Lors de la migration hors des permissions héritées, vous devez:
+- retirer toute gestion des paramètres ressemblant à `$is_public`-like ou `$admin_user`, à l'exception de toute question manifeste destinée à *initialiser* l'application en tant que publique/privée ou spécifier des permissions;
+
+- retirer toute gestion des paramètres de `skipped_`, `unprotected_` et `protected_uris` (et `_regex`) qui sont désormais obsolètes et dépréciés. (Notez que vous devez ***explicitement les supprimés dans le script de mise à jour***). Désormais, vous devez utiliser le nouveau mot clé `ynh_permission_*`. Si vous avez toujours besoin de les utilisés, contacter s'il vous plaît la Team pour fournir vos remarques et nous vous dirons quoi faire ;
+Par exemple, dans le script de mise à jour si vous avez utiliser précédemment la clé `protected_uris`, vous devrez utiliser dans la section `DOWNWARD COMPATIBILITY` ce code :
+
 
 ```bash
 protected_uris=$(ynh_app_setting_get --app=$app --key=protected_uris)
@@ -172,32 +179,33 @@ if [ ! -z "$protected_uris" ]; then
 fi
 ```
 
-- remove any call to `yunohost app addaccess` and similar actions that are now obsolete and deprecated.
-- if your app use LDAP and support filter, use the filter `'(&(objectClass=posixAccount)(permission=cn=YOUR_APP.main,ou=permission,dc=yunohost,dc=org))'` to allow users who have this permission. (A complete documentation of LDAP [here](https://moulinette.readthedocs.io/en/latest/ldap.html) if you want to undestand how it works with YunoHost)
+- supprimer tout appel à `yunohost app addaccess` et aux actions similaires qui sont maintenant obsolètes et dépréciées.
 
-Here an example of how to migrate the code from legacy to new permission system: [example](https://github.com/YunoHost/example_ynh/pull/111/files)
+- si votre application utilise LDAP et qu'elle supporte les filtres, utilisez le filtre `'(&(objectClass=posixAccount)(permission=cn=YOUR_APP.main,ou=permission,dc=yunohost,dc=org))'` pour autoriser les utilisateurs qui ont ces permissions. (Une documentation complète de LDAP est disponible [ici] 
+(https://moulinette.readthedocs.io/en/latest/ldap.html) si vous voulez comprendre comment cela fonctionne avec YunoHost)
 
-#### Specific case: regex protection
+Ici vous avez un exemple de comment migrer le code à partir de l'ancien système au nouveau système de permission: [example](https://github.com/YunoHost/example_ynh/pull/111/files)
 
-If you still need to use regex to protect or unprotect urls, you can't use the new permission system (for now).
+#### Cas particulier : la protection des expressions régulières
 
-But you can create a fake permission and use hooks to handle if there is a change in this faked permission.
+Si vous avez encore besoin d'utiliser des expressions régulières pour protéger ou déprotéger des URLs, vous ne pouvez pas utiliser le nouveau système de permission (pour l'instant).
+Mais vous pouvez créer une permission fictive et utiliser les hooks pour gérer s'il y un changement dans la permission fictive.
 
-In the install script, create the fake permission (with no url):
+Dans le script d'installation, créer une permission fictive (sans URL):
 
 `ynh_permission_create --permission="create poll" --allowed "visitors" "all_users"`
 
-Then use the legacy protection:
+Ensuite utilisez l'ancienne protection:
 
 ```bash
-# Make app public if necessary
+# Rendre l'application publique si nécessaire
 if [ $is_public -eq 1 ]
 then
 	if [ "$path_url" == "/" ]; then
-	    # If the path is /, clear it to prevent any error with the regex.
+	    # Si le chemin est /, le nettoyer pour éviter toute erreur avec l'expression régulière.
 	    path_url=""
 	fi
-	# Modify the domain to be used in a regex
+	# Modifier le domaine à utiliser dans une expression régulière
 	domain_regex=$(echo "$domain" | sed 's@-@.@g')
 	ynh_app_setting_set --app=$app --key=unprotected_regex --value="$domain_regex$path_url/create_poll.php?.*$","$domain_regex$path_url/adminstuds.php?.*"
 else
@@ -205,16 +213,17 @@ else
 fi
 ```
 
-In this example, if the app is public the group `visitors` has access to the permission `create poll`, the group is removed from this permission otherwise.
+Dans cet exemple, si l'application est publique, le groupe `visitors` a accès à la permission `create poll`, le groupe est supprimé de cette permisssion sinon.
 
-Then create two files in the directory `hooks` at the root of the git repository: `post_app_addaccess` and `post_app_removeaccess`. In these hooks, you'll remove or readd the regex protection if the `visitors` group is add or remove from this permission:
+Ensuite créez deux profiles dans le répertoire `hooks` à la racine du répertoire git:
+`post_app_addaccess` et `post_app_removeaccess`. Dans ces hooks, vous supprimerez ou lirez la protection de l'expression régulière, si le groupe `visitors` est ajouté ou retiré de cette permission.
 
 `post_app_addaccess`:
 
 ```bash
 #!/bin/bash
 
-# Source app helpers
+# Source de l'application helpers
 source /usr/share/yunohost/helpers
 
 app=$1
@@ -223,25 +232,25 @@ permission=$3
 added_groups=$4
 
 if [ "$app" == __APP__ ]; then
-    if [ "$permission" = "create poll" ]; then # The fake permission "create poll" is modifed.
-        if [ "$added_groups" = "visitors" ]; then # As is it a fake permission we can only grant/remove the "visitors" group.
+    if [ "$permission" = "create poll" ]; then # La permission "create poll" est modifiée.
+        if [ "$added_groups" = "visitors" ]; then # Comme c'est une permission fictive, nous pouvons seulement définir/supprimer le groupe "visitors".
             domain=$(ynh_app_setting_get --app=$app --key=domain)
             path_url=$(ynh_app_setting_get --app=$app --key=path)
 
             if [ "$path_url" == "/" ]; then
-                # If the path is /, clear it to prevent any error with the regex.
+                # Si le chemin est /, le nettoyer pour éviter toute erreur avec l'expression régulière.
                 path_url=""
             fi
-            # Modify the domain to be used in a regex
+            # Modifiez le domaine qui doit être utlisier dans l'expression régulière
             domain_regex=$(echo "$domain" | sed 's@-@.@g')
             ynh_app_setting_set --app=$app --key=unprotected_regex --value="$domain_regex$path_url/create_poll.php?.*$","$domain_regex$path_url/adminstuds.php?.*"
 
-            # Sync the is_public variable according to the permission
+            # Syncronisez la variable 'is_public' selon la permission
             ynh_app_setting_set --app=$app --key=is_public --value=1
 
             yunohost app ssowatconf
         else
-            ynh_print_warn --message="This app doesn't support this authorisation, you can only add or remove visitors group."
+            ynh_print_warn --message="Cette application ne prend pas en charge cette autorisation, vous pouvez uniquement ajouter ou supprimer un groupe de visiteurs."
         fi
     fi
 fi
@@ -261,13 +270,13 @@ permission=$3
 removed_groups=$4
 
 if [ "$app" == __APP__ ]; then
-    if [ "$permission" = "create poll" ]; then # The fake permission "create poll" is modifed.
-        if [ "$removed_groups" = "visitors" ]; then # As is it a fake permission we can only grant/remove the "visitors" group.
+    if [ "$permission" = "create poll" ]; then # La permission "create poll" est modifiée.
+        if [ "$removed_groups" = "visitors" ]; then # Comme c'est une permission fictive, nous pouvons seulement définir/supprimer le groupe "visitors".
             
-            # We remove the regex, no more protection is needed.
+            # Nous retirions l'expression régulière, la protection n'est plus nécessaire.
             ynh_app_setting_delete --app=$app --key=unprotected_regex
 
-            # Sync the is_public variable according to the permission
+            # Syncronisez la variable 'is_public' selon la permission
             ynh_app_setting_set --app=$app --key=is_public --value=0
 
             yunohost app ssowatconf
@@ -278,8 +287,8 @@ if [ "$app" == __APP__ ]; then
 fi
 ```
 
-Don't forget to replace `__APP__` during the install/upgrade script.
+N'oubliez pas de remplacer `__APP__` pendant l'installation/la mise à jour du script;
 
-Here some apps that use this specific case: [Lutim](https://github.com/YunoHost-Apps/lutim_ynh/pull/44/files) and [Opensondage](https://github.com/YunoHost-Apps/opensondage_ynh/pull/59/files)
+Ici quelques applications qui utlisie ce cas spécifique: [Lutim](https://github.com/YunoHost-Apps/lutim_ynh/pull/44/files) et [Opensondage](https://github.com/YunoHost-Apps/opensondage_ynh/pull/59/files)
 
-If you have any questions, please contact someone from the apps-group.
+Si vous avez question, veuillez contacter quelqu'un du groupe applications.
