@@ -1,4 +1,4 @@
-# <img src="https://yunohost.org/images/bitwarden_logo.png" width="80px" alt="logo de Bitwarden"> Bitwarden
+# <img src="/images/bitwarden_logo.png" width="80px" alt="logo de Bitwarden"> Bitwarden
 
 [![Install Bitwarden with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=bitwarden) [![Integration level](https://dash.yunohost.org/integration/bitwarden.svg)](https://dash.yunohost.org/appci/app/bitwarden)
 
@@ -29,11 +29,11 @@ Les authentification HTTP et LDAP ne sont pas pris en charges.
 
 ## Liens utiles
 
- + Site web : [bitwarden.com](https://bitwarden.com/)
- + Documentation officielle : [help.bitwarden.com](https://help.bitwarden.com/)
- + Dépôt logiciel de l'application : [github.com - YunoHost- Apps/bitwarden](https://github.com/YunoHost-Apps/bitwarden_ynh)
+ + Site web : [bitwarden.com (en)](https://bitwarden.com/)
+ + Documentation officielle : [help.bitwarden.com (en)](https://help.bitwarden.com/)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/bitwarden](https://github.com/YunoHost-Apps/bitwarden_ynh)
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/bitwarden/issues](https://github.com/YunoHost-Apps/bitwarden_ynh/issues)
 
  ------
 
- [¹]: [wikipedia.org - Bitwarden](https://fr.wikipedia.org/wiki/Bitwarden)
+[¹]: [wikipedia.org - Bitwarden](https://fr.wikipedia.org/wiki/Bitwarden)
