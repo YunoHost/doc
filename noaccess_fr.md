@@ -1,5 +1,5 @@
 # Récupérer l'accès à son YunoHost
-Si vous avez perdu l'accès à votre YunoHost qui était auparavant fonctionnel, cette page est faite pour vous.
+
 
 Il existe de nombreuses causes pouvant empêcher totalement ou partiellement d'accéder en administrateur à un serveur YunoHost. Dans de nombreux cas, un des moyens d'accès est inaccessible, mais les autres sont fonctionnels.
 
@@ -25,14 +25,13 @@ Il vous faut configurer vos enregistrement DNS comme expliqué sur [cette page](
 Vous pouvez valider que les enregistrements DNS sont corrects en comparant le résultat de https://www.whatsmydns.net/ avec l'IP globale de votre serveur (si vous êtes hébergé à la maison, vous pouvez obtenir cette IP sur https://ip.yunohost.org)
 
 
-
-
-
 #### Autres causes possibles
 
 - Votre nom de domaine noho.st, nohost.me ou ynh.fr est inaccessible suite à une panne de l'infra YunoHost. Vérifiez sur le forum si d'autre personnes signalent le même problème.
 - Votre nom de domaine est peut-être expiré. Vous pouvez vérifier que votre nom de domaine a expiré en vous connectant sur l'interface de votre registrar ou en utilisant le whois par exemple via la commande `whois NOM_DE_DOMAINE`.
 - Vous avez une IP dynamique. Dans ce cas, il faut mettre en place un script qui se charge de mettre à jour régulièrement votre IP (ou d'utiliser un nom de domaine en nohost.me, noho.st ou ynh.fr qui inclue un tel mécanisme)
+
+
 
 
 ## Vous êtes face à une erreur de certificat qui vous empêche d'accéder à la webadmin
@@ -44,36 +43,12 @@ Une erreur de certificat peut également être affichée dans certain cas où vo
 
 
 
-## La webadmin fonctionne, mais certaines applications web me renvoie une erreur 502.
-
-Il est fort probablement que le service correspondant à ces applications soit en panne (Typiquement pour les applications PHP, il s'agit de php7.0-fpm ou php7.3-fpm). Vous pouvez alors tenter de relancer le service, et si cela ne fonctionne pas, regarder les logs du service correspondant et/ou [demander de l'aide](/help).
-
-
-
-
-
-## Vous avez perdu votre mot de passe administrateur ? (ou bien le mot de passe est refusé)
-
-Si vous arrivez à afficher la page web d'administration (forcer le rafraîchissement avec CTRL + F5 pour être sur) et que vous n'arrivez pas à vous connectez. Vous avez probablement un mot de passe erroné.
-
-Si vous êtes certain du mot de passe, il est possible que le service SLAPD qui gère l'authentification soit en panne. Si c'est le cas, il vous faut vous connecter en root.
-- Si votre serveur est chez vous, vous avez sans doute accès au réseau local du serveur. Depuis ce réseau, vous pouvez vous connecter [en SSH](/ssh) avec l'utilisateur root.
-- Si vous êtes sur un VPS, votre hébergeur vous fourni peut-être la possibilité d'avoir une console sur votre serveur depuis le navigateur web. 
-Une fois connecté, il vous faut regarder l'état du service avec la commande `yunohost service status slapd` et/ou tenter de réinitialiser votre mot de passe avec la commande `yunohost tools adminpw`.
-
-Si vous ne pouvez pas ou ne réussissez pas non plus à vous connecter en root, vous allez devoir opérer en mode rescue.
-
-TODO: à compléter
-
-
-
-
 ## Vous avez accès en SSH mais pas à la Web admin ou inversement
 
 
 #### Vous essayez de vous connecter en SSH avec `root` plutôt qu'avec `admin`
 
-Par défaut, la connexion en SSH doit s'effectuer avec l'utilisateur `admin`. Il est possible de se connecter à la machine avec l'utilisateur `root` *seulement depuis le réseau local* sur lequel se situe le serveur.
+Par défaut, la connexion en SSH doit s'effectuer avec l'utilisateur `admin`. Il est possible de se connecter à la machine avec l'utilisateur `root` *seulement depuis le réseau local* sur lequel se situe le serveur (ou bien via la console web / VNC pour des VPS).
 
 Lorsque vous exécutez des commandes `yunohost` en tant qu'admin, il faut les précéder de la commande `sudo` (par exemple `sudo yunohost user list`). Vous pouvez également devenir `root` en tapant `sudo su`.
 
@@ -108,6 +83,35 @@ Dans un tel cas, il est possible que vous arriviez à accéder à votre web admi
 Dans ce cas il faut résoudre votre problème de connectivité.
 
 Dans certains cas une mise à jour de votre box a activé l'IPv6, entraînant des problèmes de configuration au niveau de votre nom de domaine.
+
+
+
+
+
+
+
+## La webadmin fonctionne, mais certaines applications web me renvoie une erreur 502.
+
+Il est fort probablement que le service correspondant à ces applications soit en panne (Typiquement pour les applications PHP, il s'agit de php7.0-fpm ou php7.3-fpm). Vous pouvez alors tenter de relancer le service, et si cela ne fonctionne pas, regarder les logs du service correspondant et/ou [demander de l'aide](/help).
+
+
+
+
+## Vous avez perdu votre mot de passe administrateur ? (ou bien le mot de passe est refusé)
+
+Si vous arrivez à afficher la page web d'administration (forcer le rafraîchissement avec CTRL + F5 pour être sur) et que vous n'arrivez pas à vous connectez. Vous avez probablement un mot de passe erroné.
+
+Si vous êtes certain du mot de passe, il est possible que le service SLAPD qui gère l'authentification soit en panne. Si c'est le cas, il vous faut vous connecter en root.
+- Si votre serveur est chez vous, vous avez sans doute accès au réseau local du serveur. Depuis ce réseau, vous pouvez vous connecter [en SSH](/ssh) avec l'utilisateur root.
+- Si vous êtes sur un VPS, votre hébergeur vous fourni peut-être la possibilité d'avoir une console sur votre serveur depuis le navigateur web. 
+Une fois connecté, il vous faut regarder l'état du service avec la commande `yunohost service status slapd` et/ou tenter de réinitialiser votre mot de passe avec la commande `yunohost tools adminpw`.
+
+Si vous ne pouvez pas ou ne réussissez pas non plus à vous connecter en root, vous allez devoir opérer en mode rescue.
+
+TODO: à compléter
+
+
+
 
 ## Votre VPN a expiré ou ne se monte plus
 
