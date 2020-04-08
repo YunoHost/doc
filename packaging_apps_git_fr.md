@@ -77,7 +77,7 @@ Conformément à la [YEP 1.7](https://github.com/YunoHost/doc/blob/master/packag
 
 Tout d'abord, vous devez avoir la permission d'écrire dans l'organisation, pour ce faire, demandez au groupe Apps sur le salon xmpp Apps.
 
-Pour transférer votre application sur l'organisation YunoHost-Apps, allez dans votre dépôt et dans l'onglet *Settings*.
+Pour transférer votre application sur l'organisation YunoHost-Apps, allez dans votre dépôt et dans l'onglet *Settings*.  
 En bas de la page, vous trouverez *Transfer ownership*.  
 Dans le champ *New owner’s GitHub username or organization name*, tapez *YunoHost-Apps*.  
 Votre dépôt sera déplacé dans l'organisation, vous n'avez pas besoin de supprimer le dépôt d'origine.
