@@ -1,6 +1,6 @@
 # Apps wishlist
 
-<div class="alert alert-info">Before to add an app in wishlist please check your app is not already in official or community list: see the <a href="/apps">apps list</a></div>
+<div class="alert alert-info">Before to add an app in wishlist please check your app is not already in official or community list: see the <a href="/apps_en">apps list</a></div>
 
 The following list is a compiled wishlist of applications that would be nice-to-have.
 
@@ -16,7 +16,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Auth0 SSO Dashboard](https://github.com/auth0-extensions/auth0-sso-dashboard-extension)
 - [Bitmessage](https://bitmessage.org/wiki/Compiling_instructions) / [github](https://github.com/Bitmessage/PyBitmessage)
 - [Beehive](https://github.com/muesli/beehive)
-- [BigBlueButton](https://bigbluebutton.org) / [install instruction](http://docs.bigbluebutton.org/2.2/install.html) / [github](https://github.com/bigbluebutton/bigbluebutton) Complete open source web conferencing system.
 - [Bludit](https://www.bludit.com) / [github](https://github.com/bludit/bludit)
 - [Blynk](https://github.com/blynkkk/blynk-library)
 - [Bookstack](https://www.bookstackapp.com/) / [github](https://github.com/BookStackApp/BookStack)
@@ -93,7 +92,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Nibbleblog](http://www.nibbleblog.com)/ [github](https://github.com/dignajar/nibbleblog)
 - [Nuage](https://nuage.kerjean.me/login) / [github](https://github.com/mickael-kerjean/filestash)
 - [Ombi](https://github.com/tidusjar/Ombi)
-- [Omeka S](https://omeka.org/s/) / [github](https://github.com/omeka/omeka-s)
 - [OpenBazaar](https://openbazaar.org) / [github](https://github.com/openbazaar)
 - [OpenCart](https://www.opencart.com) / [github](https://github.com/opencart/opencart)
 - [openHAB](https://www.openhab.org/) - Smart home platform. / [github](https://github.com/openhab)
@@ -134,13 +132,11 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Syspass](http://www.syspass.org/) / [github](https://github.com/nuxsmin/sysPass)
 - [Taiga](https://taiga.io) / [github](https://github.com/taigaio/)
 - [Taskwarrior](https://taskwarrior.org) / [github](https://github.com/GothenburgBitFactory/taskwarrior)
-- [Technitium DNS](https://technitium.com/dns/) / [github](https://github.com/TechnitiumSoftware/DnsServer)
 - [TMate](https://tmate.io/) / [github](https://github.com/tmate-io/tmate)
 - [Tracim](https://github.com/tracim/tracim)
 - [Thredded](https://thredded.org/) / [github](https://github.com/thredded/thredded)
 - [Twister](http://twister.net.co) / [github](https://github.com/miguelfreitas/twister-core/)
 - [TwitRSS.me](http://twitrss.me/) / [Github](https://github.com/ciderpunx/twitrssme) Scrapes Twitter to create RSS feeds.
-- [Uwazi](https://www.uwazi.io/) / [Github](https://github.com/huridocs/uwazi)
 - [Volumio](https://volumio.org) / [github](https://github.com/volumio)
 - [WebODF](http://webodf.org) / [github](https://github.com/webodf/WebODF)
 - [Webhook.site](https://docs.webhook.site/) / [github](https://github.com/fredsted/webhook.site)
