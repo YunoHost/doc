@@ -1,6 +1,6 @@
 # Comment utiliser Git pour packager les applications
 
-Git... Notre cher Git bien-aimé, que l'on peut aussi décrire comme "Goddamn Idiotic Truckload of sh*t", selon Linus.  
+Git... Notre cher Git bien-aimé, que l'on peut aussi décrire comme "Goddamn Idiotic Truckload of sh*t"  (Un stupide putain gros tas de m\*rde), selon Linus.  
 Si vous ne connaissez pas encore Git, soyez sûr que vous serez bientôt d'accord avec cette description.
 
 YunoHost et toutes nos applications sont sur la forge Git GitHub. Ce qui veut dire que si vous voulez travailler sur une application, tôt ou tard vous allez devoir faire face à Git.  
@@ -10,7 +10,7 @@ Alors voyons comment travailler avec Git pour pouvoir contribuer dans le context
 
 Commençons par la partie facile, GitHub est livré avec une interface web "facile" à utiliser.
 
-*Tout d'abord, malheureusement il n'y a pas moyen de contourner ça, vous devez avoir un compte sur GitHub.*
+*Tout d'abord et malheureusement, il n'y a pas moyen de contourner ça, vous devez avoir un compte sur GitHub.*
 
 #### Branches
 
@@ -20,7 +20,7 @@ Désolé, il fallait que ce soit dit !
 Les branches sont, comme l'explique GitHub, "*une version parallèle d'un dépôt. Elle est contenue dans le dépôt, mais n'affecte pas les autres branches. Elle vous permet de travailler librement sans perturber la version "live".*"
 
 La branche master est la branche qui contient la version de l'application que les utilisateurs installeront et utiliseront effectivement.  
-La chose habituelle à faire est de travailler à partir de la branche testing, et lorsque tout est réglé et testé, vous pouvez fusionner la branche testing dans master, afin que les utilisateurs puissent profiter de la nouvelle version de votre package.
+La bonne habitude à prendre est de travailler à partir de la branche testing, et lorsque tout est réglé et testé, vous pouvez fusionner la branche testing dans master, afin que les utilisateurs puissent profiter de la nouvelle version de votre package.
 
 Pour voir et modifier la branche actuelle, utilisez ce bouton :  
 <img src="/images/github_branch.png" width=100%>
@@ -54,18 +54,18 @@ Nous avons déjà vu que si vous n'avez pas l'autorisation d'écrire dans un dé
 Comme le fork est sur votre compte, vous avez toujours la permission d'écrire dessus.  
 Mais même si un fork n'est pas le véritable dépôt, mais juste une copie, un fork est toujours lié à son parent. Nous verrons plus tard que la création d'un fork est vraiment utile lors de l'ouverture d'une pull request.
 
-Lorsque vous créez un nouveau package, il est courant d'utiliser l'[application d'exemple](https://github.com/YunoHost/example_ynh) comme base.  
+Lorsque vous créez un nouveau package, il est courant d'utiliser l'[application exemple](https://github.com/YunoHost/example_ynh) comme base.  
 Mais, comme vous ne voulez pas garder ce lien vers l'application d'exemple, vous ne devez pas forker l'application d'exemple. Vous la clonerez plutôt.  
 Malheureusement, cloner une application est un peu plus compliqué sur GitHub. Nous verrons plus tard comment cloner vers un dépôt local à la place.
 
 Nous avons vu comment éditer un fichier, et comment cela peut forker l'application.  
-Mais, lorsque vous voulez éditer plusieurs fichiers, l'interface GitHub n'est pas vraiment la meilleure solution. Dans une telle situation, vous préférez cloner le dépôt et travailler sur un dépôt local.  
+Mais, lorsque vous voulez éditer plusieurs fichiers, l'interface GitHub n'est pas vraiment la meilleure solution. Dans une telle situation, vous préférerez cloner le dépôt et travailler sur un dépôt local.  
 Il se peut que vous deviez tout de même forker sur votre propre compte pour pouvoir enregistrer vos modifications si vous n'avez pas les autorisations sur le dépôt distant.
 
 #### Pull request
 
 Après avoir effectué vos commits, que ce soit sur une branche ou un fork, vous souhaitez proposer vos modifications pour qu'elles soient intégrées dans le dépôt principal, ou dans la branche d'origine.  
-Pour ce faire, vous allez créer une pull request. GitHub vous demande généralement directement si vous souhaitez le faire.  
+Pour ce faire, vous allez créer une pull request. GitHub vous demande généralement directement si vous souhaitez le faire.
 Sinon, vous trouverez le bouton de création d'une pull request juste ici :  
 <img src="/images/github_pull_request.png" width=100%>
 
@@ -95,7 +95,7 @@ Avant d'aller dans la partie infernale de Git, voyons 2 façons différentes de 
 Vous avez découvert, choqué, que la merveilleuse application que vous aimez utiliser tous les jours n'a pas encore son package YunoHost. Et parce que vous êtes sympa, vous avez décidé de créer vous-même le package, pour que tout le monde puisse apprécier cette application.  
 Quelle bonne idée !
 
-Le mieux est de commencer par l'[application d'exemple] (https://github.com/YunoHost/example_ynh). Mais comme nous l'avons déjà expliqué, vous ne voulez pas forker, parce que si vous le faites, vous allez garder ce lien vers l'application d'exemple et c'est vraiment ennuyeux.  
+Le mieux est de commencer par l'[application d'exemple](https://github.com/YunoHost/example_ynh). Mais comme nous l'avons déjà expliqué, vous ne voulez pas forker, parce que si vous le faites, vous allez garder ce lien vers l'application d'exemple et c'est vraiment ennuyeux.  
 Donc, vous allez le faire différemment. Vous allez cloner !
 
 ##### git clone
@@ -110,15 +110,16 @@ git clone est généralement le point de départ de tout travail local avec Git.
 
 *Toutefois, si vous comptez envoyer vos modifications sur le dépôt distant sur GitHub, assurez-vous d'avoir les droits d'écriture sur ce dépôt. Sinon, forkez avant et clonez votre fork, pour lequel vous avez la permission.*
 
-##### Mon tout nouveau package, suite
+##### Mon nouveau package, suite
 
-Dans le contexte d'un nouveau package, vous devrez également créer un dépôt sur GitHub pour y mettre votre package. Ce qui n'est pas plus compliqué qu'un gros bouton vert *New*.  
+Dans le contexte d'un nouveau package, vous devrez également créer un dépôt sur GitHub pour y mettre votre package.  
+Ce qui n'est pas plus compliqué qu'un gros bouton vert *New*.  
 Ne vous embêtez pas avec des README, .gitignore ou licence. Créez simplement le dépôt lui-même.  
 vous pouvez maintenant cloner ce nouveau dépôt avec Git.  
 <img src="/images/github_create_new_repo.png" width=100%>
 
 Vous disposez maintenant de 2 dépôts clonés sur votre ordinateur.  
-Copiez tous les fichiers de l'application example_ynh, **excepté le répertoire .git** (vous voulez juste les fichiers eux-mêmes) dans votre nouveau package.  
+Copiez tous les fichiers de l'application example_ynh, **excepté le répertoire .git** (vous voulez juste les fichiers eux-mêmes) dans votre nouveau package.
 
 *Si vous le souhaitez, vous pouvez supprimer l'application example_ynh. Nous n'en avons plus besoin.*
 
@@ -163,7 +164,7 @@ La première étape consiste à informer Git sur le(s) fichier(s) à valider. Po
 git add mon_fichier
 ajouter mon_autre_fichier et_aussi_celui_ci
 ```
-Si vous souhaitez valider tous votre travail, vous pouvez aussi simplement faire
+Si vous souhaitez valider l'ensemble de votre travail, vous pouvez aussi simplement faire
 ```bash
 git add --all
 ```
