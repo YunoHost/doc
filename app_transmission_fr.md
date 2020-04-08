@@ -23,7 +23,7 @@ utilisateur = admin ou root
 Pour transférer le fichier, entrez la commande suivante :
 
 ```bash
-scp -r /votre/fichier/ root@votre-domaine.org:/home/yunohost.transmission/completed
+scp -r /votre/fichier/ admin@votre-domaine.org:/home/yunohost.transmission/completed
 ```
 
 ##### Comment télécharger un répertoire entier ?
