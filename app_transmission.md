@@ -1,39 +1,42 @@
 # <img src="/images/transmission.png">Transmission
 
-### What is  Transmission?
+### C’est quoi Transmission ?
+Transmission est un logiciel de téléchargement et de partage de fichiers basé sur le protocole BitTorrent.
+* [Site de transmission](http://transmissionbt.com/)
 
-Transmission is a share software based on BitTorrent protocol.
-* [Transmission web site](http://transmissionbt.com/)
+### Comment télécharger des fichiers complétés ?
+Il est possible de télécharger les fichiers complétés en cliquant sur le bouton « Download ».
 
-### How to download completed files?
+Si vous avez installé Transmission sur `/torrent/`, vous pourrez télécharger vos fichiers complétés à l’adresse suivante : https://votre-domaine.org/torrent/downloads/
 
-If Transmission is installed on `/torrent/`, you could download your completed files to the following address: https://your-domain-name.org/torrent/downloads/
+### Envoi de fichier vers le serveur pour seeder
+Dans YunoHost, les fichiers complétés sont enregistrés dans : `/home/yunohost.transmission/completed`
 
-### Sending files towards server for seeding
+#### Avec SFTP (simple)
+À partir de votre [gestionnaire de fichiers](https://fr.wikipedia.org/wiki/Gestionnaire_de_fichier) (sous GNU/Linux) faites `CTRL + L` puis entrez :
+```bash
+sftp://<utilisateur>@<votre-domaine.org>/home/yunohost.transmission/completed
+```
+utilisateur = admin ou root
 
-In YunoHost, completed files are saved in: `/home/yunohost.transmission/completed`
-
-#### With SFTP
-
-With your [file manager](https://en.wikipedia.org/wiki/File_manager) (under GNU/Linux) do `CTRL + L` then enter:
+#### Avec SCP (avancé)
+Pour transférer le fichier, entrez la commande suivante :
 
 ```bash
-sftp://<user>@<your-domain.org>/home/yunohost.transmission/completed
-```
-user = admin or root
-
-#### With SCP (complex)
-To transfer file, type in the following command:
-
-```bash
-scp (-r) /your/file/ root@your-domain.org:/home/yunohost.transmission/completed
+scp -r /votre/fichier/ admin@votre-domaine.org:/home/yunohost.transmission/completed
 ```
 
-##### How to download a complete folder?
-Once connected to your server, using [SSH](ssh), move to the download folder and zip it :
+##### Comment télécharger un répertoire entier ?
+Une fois connecté en [SSH](/ssh), placez-vous dans le répertoire de téléchargement et zippez le répertoire :
 ```bash
 cd /home/yunohost.transmission/completed
-zip -r your_archive.zip [dossier]
+zip -r votre_archive.zip [dossier]
 ```
 
-More informations about file transfer using *scp*: http://doc.ubuntu-fr.org/ssh#transfert_-_copie_de_fichiers (french, need english documentation)
+Pour plus de détails sur le transfert de fichier avec *scp* voir ici : http://doc.ubuntu-fr.org/ssh#transfert_-_copie_de_fichiers
+
+#### Problèmes de droits
+Si vous rencontrez des problèmes de droits `Permission denied` après l’ajout de fichiers à seeder, changez l’utilisateur qui possède les droits sur ces fichiers :
+```bash
+chown -R debian-transmission: /home/yunohost.transmission/completed/*
+```
