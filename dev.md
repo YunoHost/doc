@@ -1,165 +1,156 @@
-## Contribuer au cœur de YunoHost
+## Contributing to the YunoHost core
 
-Vous souhaitez ajouter une nouvelle fonctionnalité au cœur de YunoHost, mais ne
-savez pas comment procéder ? Ce guide parcours les étapes du développement et du
-processus de contribution.
+You wish to add a new feature in the YunoHost core, but don't know how to
+proceed? This guide takes you through the various steps of the development and
+contribution process. 
 
-Si vous chercher quelque chose à implémenter ou un bug à réparer, le
-bug tracker est [ici](https://github.com/yunohost/issues/issues) !
+If you're looking for stuff to implement or fix, the bug-tracker is 
+[here](https://github.com/YunoHost/issues/issues) !
 
-**Venez dire coucou sur le [salon de dev](/chat_rooms)** !
+**Come say hi to us in the [dev chatroom](/chat_rooms)** !
 
-### Mettre en place un environnement de développement
+### Setting up a development environment
 
-- **Utilisez [ynh-dev](https://github.com/YunoHost/ynh-dev)** (voir le README)
-  pour mettre en place un environnement de développement - en local sur une
-  machine virtuelle, ou bien sur un VPS.
-  Ceci installera une instance fonctionelle de YunoHost, en utilisant
-  directement les dépôts git à l'aide de liens symboliques. De cette façon, il
-  vous sera possible de modifier les fichiers, de tester les changements en
-  temps réel, et de commiter et push/pull directement depuis cet environnement.
+- **Use [ynh-dev](https://github.com/YunoHost/ynh-dev)** (see the README) to
+  setup a development environment - locally in a virtual machine, or on a VPS.
+  This will setup a working YunoHost instance, using directly the git repositories
+  (with symlinks). That way, you will be able to edit files, test your changes in real
+  time, commit stuff and push/pull directly from your development environment.
 
-- **Implémentez et testez votre fonctionnalité**. Suivant ce sur quoi vous
-  voulez travailler :
-   - **Cœur Python/ligne de comande** : allez dans `/ynh-dev/yunohost/`
-   - **Interface d'administration web** : allez dans `/ynh-dev/yunohost-admin/`
-   - Vous pouvez aussi travailler sur les autres projets liés sur lesquels
-     s'appuie YunoHost (SSOwat, moulinette) de façon similaire.
+- **Implement and test your feature**. Depending on what you want to develop, you
+  will want to :
+   - **Python/CLI core** : work in `/ynh-dev/yunohost/`
+   - **Web administration interface** : work in `/ynh-dev/yunohost-admin/`
+   - You can also work on the other projects on which YunoHost is built 
+     (SSOwat, moulinette) in similar ways
 
-### Vue d'ensemble des 4 morceaux principaux de YunoHost
+### Overview of the 4 main pieces of YunoHost
 
-##### Moulinette
+#### Moulinette
 
-C'est un petit framework "fait maison". [Son rôle principal](https://moulinette.readthedocs.io/en/latest/actionsmap.html) 
-est de permettre de construire une API Web et une API en ligne de commande à partir d'un même code Python et d'un schéma YAML que nous appelons 
-[l'actionmap] (https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/actionsmap/yunohost.yml).
+It is a small "homemade" framework. [Its major role](https://moulinette.readthedocs.io/en/latest/actionsmap.html) 
+is to allow us to build both a web API and a command-line API from the same 
+Python code thanks to a YAML schema  which we call 
+[the actionmap](https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/actionsmap/yunohost.yml).
 
-Il prend en charge d'autres mécanismes tels que l'authentification, l'internationalisation
-et des petites fonctions utilitaires techniques (par ex. lecture/écriture de fichiers json).
+It handles other mechanisms like authentication, internationalization and
+small technical utilitary functions (e.g. reading/writing json).
 
-Moulinette dispose de sa propre documentation [ici](https://moulinette.readthedocs.io/en/latest/).
+Moulinette has its own documentation available [here](https://moulinette.readthedocs.io/en/latest/).
 
-##### Yunohost
+#### Yunohost
 
-C'est le coeur même de YunoHost. Il contient :
-- [le code python](https://github.com/YunoHost/yunohost/tree/stretch-unstable/src/yunohost) qui gère les utilisateurs, domaines, applications, services et autres
-- des [helpers bash](https://github.com/YunoHost/yunohost/tree/stretch-unstable/data/helpers.d) principalement utilisés par les packageurs d'applications dans les scripts de ces applications
-- des [hooks](https://github.com/YunoHost/yunohost/tree/stretch-unstable/data/hooks) et [templates](https://github.com/YunoHost/yunohost/tree/stretch-unstable/data/templates) qui sont utilisés pour configurer les différents éléments de l'écosystème tels que nginx, postfix, ....
-- des [chaînes internationalisées](https://github.com/YunoHost/yunohost/tree/stretch-unstable/locales)
-- des [tests](https://github.com/YunoHost/yunohost/tree/stretch-unstable/src/yunohost/tests)
+This piece is the very core of YunoHost. It contains:
+- [the python code](https://github.com/YunoHost/yunohost/tree/stretch-unstable/src/yunohost) that manages users, domains, apps, services and other things
+- [bash helpers](https://github.com/YunoHost/yunohost/tree/stretch-unstable/data/helpers.d) mainly used by application packagers to package applications
+- [hooks](https://github.com/YunoHost/yunohost/tree/stretch-unstable/data/hooks) and [templates](https://github.com/YunoHost/yunohost/tree/stretch-unstable/data/templates) that are used to configure the various pieces of the ecosystem such as nginx, postfix, ...
+- [internationalized strings](https://github.com/YunoHost/yunohost/tree/stretch-unstable/locales)
+- [tests](https://github.com/YunoHost/yunohost/tree/stretch-unstable/src/yunohost/tests)
 
-##### SSOwat
+#### SSOwat
 
-C'est le système de connexion unique (single sign-on) de YunoHost. Il contient principalement:
-- [du code LUA](https://github.com/YunoHost/ssowat) interfacé directement avec nginx et qui gère tous les aspects "techniques" de l'authentification et de la gestion des accès aux ressources.
-- le [portail web utilisateur](https://github.com/YunoHost/SSOwat/tree/stretch-unstable/portal) qui est l'interface finale visible pour les utilisateurs de YunoHost
+This is the single sign-on system of YunoHost. It both contains:
+- [Lua scripts](https://github.com/YunoHost/ssowat) that are directly interfaced with nginx and handle all the "technical" aspects of authentication and route accesses
+- the web [user portal](https://github.com/YunoHost/SSOwat/tree/stretch-unstable/portal) which is the interface used by YunoHost's end users to log in and browse installed apps
 
-SSOwat est configuré via `/etc/ssowat/conf.json` qui est généré par YunoHost.
+SSOwat is configured through `/etc/ssowat/conf.json` which is generated by YunoHost.
 
-##### Yunohost-admin
+#### Yunohost-admin
 
-C'est une dépendance *optionnelle* de YunoHost et correspond à une interface pour l'API web créée par YunoHost et Moulinette (service `yunohost-api`).
+It is an *optional* dependency of YunoHost and corresponds to an interface for the web API created by YunoHost and Moulinette (c.f. the `yunohost-api` service).
 
-Il contient essentiellement :
-- [des templates pour les vues](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/views)
-- les [contrôleurs javascript](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/js/yunohost/controllers) correspondants, qui interagissent avec l'API Yunohost
-- et ses [chaînes internationalisées](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/locales)
+It essentially contains:
+- [view templates](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/views)
+- corresponding [javascript controllers](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/js/yunohost/controllers) that interact with the Yunohost API
+- and [internationalized strings](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/locales)
 
-### Travailler sur le cœur Python / ligne de commande
+### Working on the YunoHost Python/CLI core
 
-- Allez dans `/ynh-dev/yunohost/`.
+- Work in `/ynh-dev/yunohost/`.
 
-- Exécutez `cd /ynh-dev && ./ynh-dev use-git yunohost`.
+- Run `cd /ynh_dev/ && ./ynh-dev use-git yunohost`.
 
-- Le fichier actionsmap (`data/actionsmap/yunohost.yml`) définit les différentes
-  catégories, actions et arguments de la ligne de commande YunoHost. Choisissez
-  comment vous voulez que les utilisateurs utilisent votre fonctionnalité, et
-  ajoutez/éditez les catégories, actions et arguments correspondants. Par
-  exemple, dans `yunohost domain add some.domain.tld`, la catégorie est
-  `domain`, l'action est `add` et `some.domain.tld` est un argument.
+- The actionsmap file (`data/actionsmap/yunohost.yml`) defines the various
+  categories, actions and arguments of the yunohost CLI. Define how you want
+  users to use your feature, and add/edit the corresponding categories, actions
+  and arguments. For example in `yunohost domain add some.domain.tld`, the
+  category is `domain`, the action is `add`, and `some.domain.tld` is an
+  argument.
 
-- Moulinette va automatiquement faire le lien entre les commandes de
-  l'actionsmap et les fonctions python (ainsi que leurs arguments) dans
-  `src/yunohost/`. Par exemple, `yunohost domain add some.domain.tld`
-  déclenchera un appel de `domain_add(domainName)` dans `domain.py`, avec l'argument 
-  `domainName` qui vaudra `"some.domain.tld"`.
+- Moulinette will automatically map commands in the actionsmap to python
+  functions (and their arguments) located in `src/yunohost/`. For example, typing
+  `yunohost domain add some.domain.tld` will call the function
+  `domain_add(domainName)` in `domain.py`, with the argument `domainName` equal
+  to `"some.domain.tld"`.
 
-##### Helpers / style de code
+##### Helpers / coding style
 
-- Pour gérer les exceptions, il existe un type `YunohostError()`
+- To handle exceptions, you should raise some `YunohostError()`
 
-- Pour aider avec l'internationalisation des messages, utilisez `m18n.n('some-message-id')`
-  et mettez le message correspondant dans `locales/en.json`. Vous pouvez aussi
-  utiliser des arguments pour construire les messages, avec `{{some-argument:s}}`. 
-  Ne modifiez pas de fichiers de locales autres que en.json, la traduction sera
-  faite avec [weblate](https://translate.yunohost.org/) !
+- To help with internationalizing the messages, use `m18n.n('some-message-id')`
+  and put your string in `locales/en.json`. You can also put arguments and use
+  them in the string with `{{some-argument:s}}`. Don't edit other locales files,
+  this will be done using [weblate](https://translate.yunohost.org/) !
 
-- YunoHost essaye de suivre le style de code [pep8](http://pep8.org/). Des
-  outils existent pour vérifier automatiquement la conformité du code.
+- YunoHost tries to follow the [pep8](http://pep8.org/) coding style. Tools
+  exist to automatically check conformity.
 
-- Mettre un `_` devant les noms des fonctions "privées".
+- Name of "private" functions should start with a `_`
 
-### Travailler sur l'interface d'administration web
+### Working on the YunoHost web administration interface
 
-- Allez dans `/ynh-dev/yunohost-admin/src/`.
+- Work in `/ynh-dev/yunohost-admin/src/`.
 
-- Exécutez `cd /ynh-dev && ./ynh-dev use-git yunohost-admin`. Ceci lance gulp, de sorte 
-  qu'à chaque fois que vous modifiez les sources, il recompilera le code
-  (js) et vous pourrez voir les changements dans le navigateur web (Ctrl+F5).
-  Pour stopper la commande, faites simplement Ctrl+C.
+- Run `cd /ynh-dev && ./ynh-dev use-git yunohost-admin`. It launches gulp, such as each 
+  time you modify sources, it recompiles the code and you can use it by 
+  refreshing (Ctrl+F5) your web administration. To stop the command, just do Ctrl+C.
 
-- L'interface web utilise une API pour communiquer avec YunoHost. Les
-  commandes/requêtes de l'API sont également définies dans l'actionsmap. Par
-  exemple, accéder à la page ```https://domain.tld/yunohost/api/users```
-  correspond à une requete `GET /users` vers l'API YunoHost. Cette requête
-  est mappée sur `user_list()`. Accéder à cette URL devrait afficher le json
-  retourné par cette fonction. Les requêtes 'GET' sont typiquement destinées à
-  demander de l'information au serveur, tandis que les requêtes 'POST' sont
-  destinées à demander au serveur de modifier/changer des informations ou de
-  réaliser des actions.
+- The web interface uses the API to interact with YunoHost. The API
+  commands/requests are also defined via the actionsmap. For instance, accessing
+  the page ```https://domain.tld/yunohost/api/users``` corresponds to a `GET
+  /users` requests on the YunoHost API. It is mapped to the function
+  `user_list()`. Accessing the URL should display the json returned by this
+  function. 'GET' requests are typically meant to ask information to the server.
+  'POST' requests are meant to ask the server to edit/change some information,
+  or to execute some actions.
 
-- `js/yunohost/controllers` contiens les parties javascript, et définit quelles
-  requêtes faire à l'API pendant le chargement d'une page donnée de l'interface,
-  et comment traiter les données récupérées pour générer la page, en utilisant
-  des templates.
+- `js/yunohost/controllers` contains the javascript parts,
+  and define which requests to make to the API when loading a specific page of
+  the interface, and how to process the data to generate the page, using
+  templates.
 
-- `views` contient les templates des pages de l'interface. Dans le template,
-  les données venant du javascript peuvent êtres utilisées avec la syntaxe
-  `{{some-variable}}`, qui sera remplacée pendant la construction de la page.
-  Il est également possible d'avoir des conditions avec la syntaxe 
-  d'[handlebars.js](http://handlebarsjs.com) : ```{{#if
-  some-variable}}<p>du HTML conditionnel ici !</p>{{/if}}```
+- `views` contains the various templates for the pages of the interface. In the
+  template, data coming from the javascript part can be used with the syntax
+  `{{some-variable}}`, which will be replaced when building/accessing the page.
+  It is also possible to have conditions using the
+  [handlebars.js](http://handlebarsjs.com) syntax : ```{{#if
+  some-variable}}<p>Some conditional HTML code here !</p>{{/if}}```
 
-- Pour l'internationalisation des messages, utilisez `y18n.t('some-string-code')` 
-  dans le javascript, ou `{{t 'some-string-code'}}` dans le template HTML, et 
-  mettez votre message dans `locales/en.json`. Ne modifiez pas de fichiers de 
-  locales autres que en.json, la traduction sera faite avec 
-  [weblate](https://translate.yunohost.org/) !
+- For internationalized strings, use `y18n.t('some-string-code')` in the
+  javascript, or `{{t 'some-string-code'}}` in the HTML template, and put your
+  string in `locales/en.json`. Don't edit other locales files,
+  this will be done using [weblate](https://translate.yunohost.org/) !
 
-##### N'oubliez pas
+##### Don't forget
 
-- À chaque modification de l'actionsmap, il faut redémarrer l'API yunohost :
-  ```service yunohost-api restart```
-  (Il faudra retaper le mot de passe administrateur dans l'interface web)
+- Each time you edit the actionsmap or the python code, you should restart the yunohost-api :
+  ```systemctl restart yunohost-api```
+  (You'll need to retype your admin password in the web interface)
 
-- Il faudra peut-être régulièrement forcer le rafraîchissement du cache
-  navigateur pour propager correctement le javascript et/ou HTML (à chaque fois
-  que l'on change quelque chose dans `js` ou `views`, donc).
+- You might need to force-clear the cache of your browser sometimes to refresh 
+  the javascript and/or html (so each time you edit something in `js` or `views`).
 
 
-### Votre fonctionnalité est prête et vous souhaitez qu'elle soit intégrée dans YunoHost 
+### Your feature is ready and you want it to be integrated in YunoHost
 
-- Forkez le dépòt correspondant sur Github, et commitez vos changements dans
-  une nouvelle branche, Il est recommandé de nommer la branche avec la
-  convention :
-  - Pour une nouvelle fonctionnalité ou amélioration : `enh-ISSUENUMBER-description-fonctionnalité`
-  - Pour une correction de bug : `fix-REDMINETICKET-description-correctif`
-  - `ISSUENUMBER` est optionnel et correspond au numéro du ticket sur le bug tracker
+- Fork the relevant repo on Github, and commit stuff to a new branch. We recommend
+  to name the branch with the following convention :
+  - For an enhancement or new feature : `enh-ISSUENUMBER-name-of-feature`
+  - For a bugfix `fix-ISSUENUMBER-description-of-fix`
+  - `ISSUENUMBER` is optional and is the id of a corresponding ticket on the bug tracker.
 
-- Une fois prêt, ouvrez une Pull Request (PR) sur Github. De préférence, inclure
-  `[fix]` ou `[enh]` au début du titre de la PR.
+- Once you're ready, open a Pull Request (PR) on Github. Please include `[fix]` or 
+  `[enh]` at the beginning of the title of your PR.
 
-- Après relecture, test et validation par les autres contributeurs, votre
-  branche sera mergée dans `unstable` !
-
-
+- After reviewing, testing and validation by other contributors, your branch
+should be merged in `unstable` !

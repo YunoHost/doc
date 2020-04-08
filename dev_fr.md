@@ -63,7 +63,7 @@ C'est une dépendance *optionnelle* de YunoHost et correspond à une interface p
 Il contient essentiellement :
 - [des templates pour les vues](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/views)
 - les [contrôleurs javascript](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/js/yunohost/controllers) correspondants, qui interagissent avec l'API Yunohost
-- et es [chaînes internationalisées](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/locales)
+- et ses [chaînes internationalisées](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/locales)
 
 ### Travailler sur le cœur Python / ligne de commande
 
