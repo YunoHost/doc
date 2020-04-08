@@ -66,7 +66,7 @@ sudo postconf -e smtp_sasl_password_maps=hash:/etc/postfix/sasl/mdp_fai.conf
 
 Si vous avez une erreur "(SASL authentication failed; cannot authenticate to server smtp-auth.nowhere.com[38.123.22.160]: no mechanism available)"
 
-Vérifier la présence de libsasl2-modules et de sasl2-bin :
+Vérifier la présence de `libsasl2-modules` et de `sasl2-bin` :
 
 ```bash
 apt search libsasl2-modules
