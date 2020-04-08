@@ -40,6 +40,6 @@
     * [Für externen Speicher hinzu](/external_storage)
     * [Migriere E-Mails zu Yunohost](/email_migration)
     * [Verstecke Services mit Tor](/torhiddenservice)
-* [Hinweise zur Fehlersuche](/troubleshooting_guide)
+* Hinweise zur Fehlersuche
     * [Entsperren von IPs in fail2ban](/fail2ban)
     * [Administrator-Passwort ändern](/change_admin_password)

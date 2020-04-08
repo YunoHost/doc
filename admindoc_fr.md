@@ -56,7 +56,7 @@
     * [Utilisation de certificats autres que Let's Encrypt](/certificate_custom)
     * [Une discussion sur les avantages d'utiliser un VPN](/vpn_advantage)
     * [(vieux) Procedure de Migration Jessie->Stretch](jessie_stretch_migration)
-* [Guide de dépannage](/troubleshooting_guide)
+* Dépannage
     * [Changer le mot de passe d’administration](/change_admin_password)
     * [Récupérer l'accès à son serveur](/noaccess)
     * [Débannir une IP dans Fail2ban/IPtables](/fail2ban)
