@@ -2,6 +2,7 @@
 
 [![Install Ampache with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=ampache) [![Integration level](https://dash.yunohost.org/integration/ampache.svg)](https://dash.yunohost.org/appci/app/ampache)
 
+### Index
 - [Limitations avec Yunohost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
@@ -9,7 +10,7 @@ Ampache est un logiciel libre de streaming audio.
 
 ## Limitations avec YunoHost
 
-L'authentification du SSO ne fonctionnant pas entièrement à partir du panel d'utilisateurs, nous devons y travailler. En fait, cela peut perturber les clients Ampache externes comme Subsonic.
+L'authentification du SSO ne fonctionne pas entièrement à partir du panel d'utilisateurs, nous devons y travailler. En fait, cela peut perturber les clients Ampache externes comme Subsonic.
 
 ## Liens utiles
 
