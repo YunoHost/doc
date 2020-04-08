@@ -1,14 +1,14 @@
 # Hardware
 
-YunoHost can be installed on the following hardware :
-- ARM boards (Raspberry Pi, Olinuxino LIME1 & 2, Orange Pi, etc...) ;
-- 'Old' desktop computers or laptops ;
-- Remote servers, a.k.a Virtual Private Servers (VPS).
+YunoHost kann auf folgender Hardware installiert werden:
+- ARM Boards (Raspberry Pi, Olinuxino LIME1 & 2, Orange Pi, etc...) ;
+- 'Alte' Desktop Computer oder Laptops/Notebooks ;
+- Remote servers, auch bekannt als Virtual Private Servers (VPS).
 
-Corresponding installation guides can be found on [this page](/install).
+Entsprechende Installationsanleitungen finden Sie auf [dieser Seite](/install).
 
-### Minimum requirements
+### Minimale Voraussetzungen
 
 * 500 MHz CPU
-* 512 MB RAM (recommended : 1 GB in order to run all the services and apps properly)
-* 8 GB storage capacity (recommended : 32 GB to store mails and documents)
+* 512 MB RAM (empfohlen : 1 GB um alle Apps und Programme schnell ausführen zu können)
+* 8 GB Speicher/HDD (empfohlen : 32 GB bei Nutzung als Mail oder Dokumentenserver)
