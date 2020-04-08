@@ -1,6 +1,6 @@
 # Comment utiliser Git pour packager les applications
 
-Git... Notre cher Git bien-aimé, que l'on peut aussi décrire comme "Goddamn Idiotic Truckload of sh*t"  ( P *t**n de camion de m*rde), selon Linus.
+Git... Notre cher Git bien-aimé, que l'on peut aussi décrire comme "Goddamn Idiotic Truckload of sh*t"  (Un stupide putain gros tas de merde), selon Linus.
 Si vous ne connaissez pas encore Git, soyez sûr que vous serez bientôt d'accord avec cette description.
 
 YunoHost et toutes nos applications sont sur la forge Git GitHub. Ce qui veut dire que si vous voulez travailler sur une application, tôt ou tard vous allez devoir faire face à Git.
@@ -112,7 +112,8 @@ git clone est généralement le point de départ de tout travail local avec Git.
 
 ##### Mon nouveau package, suite
 
-Dans le contexte d'un nouveau package, vous devrez également créer un dépôt sur GitHub pour y mettre votre package. Ce qui n'est pas plus compliqué qu'un gros bouton vert *New*.
+Dans le contexte d'un nouveau package, vous devrez également créer un dépôt sur GitHub pour y mettre votre package.
+Ce qui n'est pas plus compliqué qu'un gros bouton vert *New*.
 Ne vous embêtez pas avec des README, .gitignore ou licence. Créez simplement le dépôt lui-même.
 vous pouvez maintenant cloner ce nouveau dépôt avec Git.
 <img src="/images/github_create_new_repo.png" width=100%>
@@ -193,7 +194,7 @@ git commit -m "My commit name"
 #### Push vers le dépôt distant
 
 Vos modifications sont validées, mais uniquement sur votre clone local du dépôt. Maintenant, vous devez renvoyer ces modifications sur le dépôt distant sur GitHub.
-Pour ce faire, vous devez savoir quelle est votre branche actuelle. (Si vous ne le savez pas, `git branch` vous donnera cette information).
+Pour ce faire, vous devez savoir quelle est votre branche actuelle. (Si vous ne le savez pas, `git branch` vous donnera cette information).  
 Ensuite, vous pouvez git push
 ```bash
 git push -u origin BRANCH_NAME
