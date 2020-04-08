@@ -14,7 +14,7 @@ La page d'admimnistration est disponible à l'adresse : `mon.domaine.tld/api/adm
 
 ## Limitations avec YunoHost
 
-Pour installer Funkwhale sur un serveur YunoHost il est nécessaire d'avoir un nom de domaine dédié à Funkwhale.
+Pour installer Funkwhale sur votre serveur YunoHost il est nécessaire d'avoir un nom de domaine dédié à Funkwhale.
 
 ## Liens utiles
 
