@@ -2,8 +2,7 @@
 
 ## Depuis la webadmin
 
-Dans la partie administration, aller dans la partie Outils.
-Choisir Mettre à jour le système.
+Dans la partie administration, choisir Mettre à jour le système.
 
 L’application recherche les mises à jour et les propose s’il y en a.
 
