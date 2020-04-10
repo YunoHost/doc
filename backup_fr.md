@@ -1,7 +1,7 @@
 Sauvegarder son serveur et ses apps
 ===================================
 
-Dans le contexte de l'auto-hébergement, les sauvegardes (backup) sont un élément important pour palier les événements inattendus (incendies, corruption de base de données, perte d'accès au serveur, serveur compromis, ...). La politique de sauvegardes à mettre en place dépend de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez être très prudent si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les sauvegardes *dans un endroit différent*.
+Dans le contexte de l'auto-hébergement, les sauvegardes (backup) sont un élément important pour pallier les événements inattendus (incendies, corruption de base de données, perte d'accès au serveur, serveur compromis, ...). La politique de sauvegardes à mettre en place dépend de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez être très prudent si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les sauvegardes *dans un endroit différent*.
 
 Les sauvegardes avec YunoHost
 -----------------------------
@@ -10,7 +10,7 @@ YunoHost contient un système de sauvegarde, qui permet de sauvegarder (et resta
 
 Vous pouvez gérer vos sauvegardes via la ligne de commande (`yunohost backup --help`) ou la webadmin (dans la section Sauvegardes) bien que certaines fonctionnalités ne soient pas disponibles via celle-ci.
 
-Actuellement, la méthode de sauvegarde actuelle consiste à créer des archives `.tar.gz` qui contiennent les fichiers pertinents. Pour le futur, YunoHost envisage de supporter nativement [Borg](https://www.borgbackup.org/) qui est une solution plus flexible, performante et puissante pour gérer des sauvegardes.
+La méthode de sauvegarde actuelle consiste à créer des archives `.tar.gz` qui contiennent les fichiers pertinents. Pour le futur, YunoHost envisage de supporter nativement [Borg](https://www.borgbackup.org/) qui est une solution plus flexible, performante et puissante pour gérer des sauvegardes.
 
 Créer des sauvegardes
 ---------------------
@@ -25,7 +25,7 @@ Vous pouvez facilement créer des archives depuis la webadmin en allant dans Sau
 
 Vous pouvez créer de nouvelles archives depuis la ligne de commande. Voici quelques exemples de commandes et leur comportement correspondant:
 
-- Tout sauvegarder (système et application)
+- Tout sauvegarder (système et apps)
 ```bash
 yunohost backup create
 ```
@@ -35,7 +35,7 @@ yunohost backup create
 yunohost backup create --apps
 ```
 
-- Sauvegarder seulement deux apps (wordpress et shaarli)
+- Sauvegarder seulement deux apps (WordPress et Shaarli)
 ```bash
 yunohost backup create --apps wordpress shaarli
 ```
@@ -45,19 +45,19 @@ yunohost backup create --apps wordpress shaarli
 yunohost backup create --system data_mail
 ```
 
-- Sauvegarder les mails et wordpress
+- Sauvegarder les mails et WordPress
 ```bash
 yunohost backup create --system data_mail --apps wordpress
 ```
 
-Pour plus d'informations et d'options sur la création d'archives, consultez `yunohost backup create --help`. Vous pouvez également lister les parties de système qui sont sauvegardables avec `yunohost hook list backup`.
+Pour plus d'informations et d'options sur la création d'archives, consultez `yunohost backup create --help`. Vous pouvez également lister les parties du système qui sont sauvegardables avec `yunohost hook list backup`.
 
 #### Configuration spécifique à certaines apps
 
 Certaines apps comme Nextcloud sont potentiellement rattachées à des quantités importantes de données. Il est possible de ne pas les sauvegarder par défaut. Dans ce cas, on dit que l'app "sauvegarde uniquement le core" (de l'app).  
 Lors d'une mise à jour, les apps contenant une grande quantité de données effectuent généralement une sauvegarde sans ces données.
 
-Pour désactiver manuellement la sauvegarde des données volumineuses, pour les applications qui implémentent cette fonctionnalité, vous pouvez définir la variable `BACKUP_CORE_ONLY`. Pour ce faire, la variable doit être définie avant la commande de backup : `sudo BACKUP_CORE_ONLY=1 yunohost backup create --apps nextcloud`. Soyez prudent : il vous faudra alors sauvegarder vous même les données des utilisateurs de nextcloud. Choisir ce type de sauvegarde vous permettra de mettre en place manuellement des sauvegardes incrémentielles ou différentielles (que yunohost ne permet pas encore de faire automatiquement).
+Pour désactiver manuellement la sauvegarde des données volumineuses, pour les applications qui implémentent cette fonctionnalité, vous pouvez définir la variable `BACKUP_CORE_ONLY`. Pour ce faire, la variable doit être définie avant la commande de backup : `sudo BACKUP_CORE_ONLY=1 yunohost backup create --apps nextcloud`. Soyez prudent : il vous faudra alors sauvegarder vous-même les données des utilisateurs de Nextcloud. Choisir ce type de sauvegarde vous permettra de mettre en place manuellement des sauvegardes incrémentielles ou différentielles (que YunoHost ne permet pas encore de faire automatiquement).
 
 Télécharger et téléverser des sauvegardes
 -----------------------------------------
@@ -91,7 +91,7 @@ Allez dans Sauvegardes > Sauvegardes locales et sélectionnez l'archive. Vous po
 
 #### Depuis la ligne de commande
 
-Depuis la ligne de commande, vous pouvez utiliser `yunohost backup restore <nom_d'archive>` (sans le `.tar.gz`) pour restaurer une archive. Tout comme `yunohost backup create`, cela restaure tout le contenu par défaut. Si vous souhaitez restaurer seulement certaines parties, vous pouvez utiliser par exemple `yunohost backup restore --apps wordpress` qui restaurera seulement l'app wordpress.
+Depuis la ligne de commande, vous pouvez utiliser `yunohost backup restore <nom_d'archive>` (sans le `.tar.gz`) pour restaurer une archive. Tout comme `yunohost backup create`, cela restaure tout le contenu par défaut. Si vous souhaitez restaurer seulement certaines parties, vous pouvez utiliser par exemple `yunohost backup restore --apps wordpress` qui restaurera seulement l'app WordPress.
 
 #### Contraintes
 
@@ -131,7 +131,7 @@ ln -s $PATH_TO_DRIVE/yunohost_backup_archives /home/yunohost.backup/archives
 
 #### Sauvegardes automatiques
 
-Vous pouvez ajouter une tâche cron pour déclencher automatiquement une sauvegarde régulièrement. Par exemple pour sauvegarder l'application wordpress toutes les semaines, créez un fichier `/etc/cron.weekly/backup-wordpress` avec le contenu suivant :
+Vous pouvez ajouter une tâche cron pour déclencher automatiquement une sauvegarde régulièrement. Par exemple pour sauvegarder l'application WordPress toutes les semaines, créez un fichier `/etc/cron.weekly/backup-wordpress` avec le contenu suivant :
 
 ```bash
 #!/bin/bash
@@ -151,7 +151,7 @@ Vous pouvez suivre ce tutoriel sur le forum pour mettre en place Borg entre deux
 
 Il existe aussi l'application Archivist qui permet un système similaire : https://forum.yunohost.org/t/new-app-archivist/3747
 
-#### Eviter de sauvegarder certains dossiers
+#### Éviter de sauvegarder certains dossiers
 Si besoin, vous pouvez spécifier que certains dossiers `home` d'utilisateurs ne soient pas sauvegardés par la commande `yunohost backup`, en créant un fichier vide nommé `.nobackup` à l'intérieur.
 
 #### Backup complet avec `dd`
