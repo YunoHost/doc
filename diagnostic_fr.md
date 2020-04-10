@@ -9,7 +9,7 @@ Dans un navigateur web, essayez d’accéder à votre serveur grâce au nom de d
 Par exemple : `http://mondomaine.org`
 
 <div class="alert alert-warning">
-Si vous avez optez pour un nom de domaine se terminant par <b>.nohost.me</b> ou <b>.noho.st</b>, vous devrez patienter cinq minutes avant que l’adresse soit atteignable.
+Si vous avez opté pour un nom de domaine se terminant par <b>.nohost.me</b> ou <b>.noho.st</b>, vous devrez patienter cinq minutes avant que l’adresse soit atteignable.
 </div>
 
 ---
@@ -24,7 +24,7 @@ Si vous avez optez pour un nom de domaine se terminant par <b>.nohost.me</b> ou 
 Cette étape n’est pas nécessaire si vous possédez un nom de domaine en <b>.nohost.me</b> ou un <b>.noho.st</b>
 </div>
 
-Rendez-vous sur https://www.whatsmydns.net/, entrez votre nom de domaine dans le champ prévu à cet effet et cliquez sur `Search`. Si vous ne voyez pas votre adresse IP, ou s’il y a des croix rouges par endroit, cela signifie que vous avez probablement mal configuré votre [DNS](/dns).
+Rendez-vous sur https://www.whatsmydns.net/, entrez votre nom de domaine dans le champ prévu à cet effet et cliquez sur `Search`. Si vous ne voyez pas votre adresse IP, ou s’il y a des croix rouges par endroits, cela signifie que vous avez probablement mal configuré votre [DNS](/dns).
 
 ---
 
