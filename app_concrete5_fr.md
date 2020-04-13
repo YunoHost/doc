@@ -4,7 +4,7 @@
 
 ### Index
 
-- [Limitations avec Yunohost](#limitations-avec-yunohost)
+- [Limitations avec YunoHost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
 ## Limitations avec Yunohost

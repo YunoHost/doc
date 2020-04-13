@@ -5,7 +5,7 @@
 ### Index
 
 - [Fonctionnalités](fonctionnalites)
-- [Limitations avec Yunohost](#limitations-avec-yunohost)
+- [Limitations avec YunoHost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
 BlogoText n'est pas seulement un moteur de blog mais propose plutôt un portail dédié à l'écriture de contenu. En effet, l'interface administrateur propose, en plus des outils traditionnels dédiés au blog, un lecteur de flux RSS, un hébergeur de fichiers et un outil permettant de partager des liens.

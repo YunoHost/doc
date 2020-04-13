@@ -4,12 +4,12 @@
 
 ### Index
 
-- [Limitations avec Yunohost](#limitations-avec-yunohost)
+- [Limitations avec YunoHost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
 FluxBB est un logiciel de forum rapide, léger et convivial pour votre site web. FluxBB est conçu comme une alternative plus légère et plus rapide à certaines des applications de forum traditionnelles lourdes en fonctionnalités. Il est facile à utiliser et a fait ses preuves en matière de stabilité et de sécurité, ce qui en fait un choix idéal de forum pour votre site web.
 
-## Limitations avec Yunohost
+## Limitations avec YunoHost
 
 Les authentification HTTP et LDAP ne sont pas pris en charges.
 

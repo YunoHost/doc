@@ -4,12 +4,12 @@
 
 ### Index
 
-- [Limitations avec Yunohost](#limitations-avec-yunohost)
+- [Limitations avec YunoHost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
 Cheky est un logiciel écrit en PHP vous permettant de recevoir les nouvelles annonces publiées sur les sites internet Leboncoin.fr et SeLoger.com. Vous pouvez recevoir les alertes via différent canal de communication.
 
-## Limitations avec Yunohost
+## Limitations avec YunoHost
 
 Les mises à jours depuis l'ancien package LBCAlerte ne sont pas possible, l'application est uniquement en français. Checky ne fonctionne pas avec le [SSO](https://yunohost.org/#/users).
 

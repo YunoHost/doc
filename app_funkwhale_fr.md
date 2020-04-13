@@ -5,7 +5,7 @@
 ### Index
 
 - [Administration](#administration)
-- [Limitations avec Yunohost](#limitations-avec-yunohost)
+- [Limitations avec YunoHost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
 Funkwhale est un serveur de flux continu de musique libre, auto-hébergé et fédéré. Chaque utilisateur⋅trice dispose d'une bibliothèque dans laquelle il/elle peut ajouter les titres qu'il/elle souhaite, et qu'il/elle peut partager avec d'autres utilisateurs, qu'ils soient sur la même instance ou non.[¹]

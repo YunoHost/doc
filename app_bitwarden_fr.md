@@ -5,7 +5,7 @@
 ### Index
 
 - [Configuration](#configuration)
-- [Limitations avec Yunohost](#limitations-avec-yunohost)
+- [Limitations avec YunoHost](#limitations-avec-yunohost)
 - [Applications clientes](#applications-clientes)
 - [Liens utiles](#liens-utiles)
 

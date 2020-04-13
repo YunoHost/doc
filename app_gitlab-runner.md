@@ -1,6 +1,6 @@
-# <img src="/images/gitlab-runner_logo.svg" width="80px" alt="APPLICATION's logo"> APPLICATION
+# <img src="/images/gitlab-runner_logo.svg" width="80px" alt="GitLab Runner's logo"> GitLab Runner
 
-[![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gitlab-runner) [![Integration level](https://dash.yunohost.org/integration/gitlab-runner.svg)](https://dash.yunohost.org/appci/app/gitlab-runner)
+[![Install GitLab Runner with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gitlab-runner) [![Integration level](https://dash.yunohost.org/integration/gitlab-runner.svg)](https://dash.yunohost.org/appci/app/gitlab-runner)
 
 ### Index
 

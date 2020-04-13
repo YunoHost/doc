@@ -7,7 +7,7 @@
 - [Configuration](#configuration)
   - [Firefox bureau](#firefox-bureau)
   - [Firefox mobile](#firefox-mobile)
-- [Limitations avec Yunohost](#limitations-avec-yunohost)
+- [Limitations avec YunoHost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
 Firefox Sync permet la synchronisation des favoris, des marques-pages, de l’historique, des onglets, des extensions entre plusieurs instances du navigateur web Firefox.
@@ -28,7 +28,7 @@ Pour utiliser votre serveur personnel de synchronisation Firefox, vous allez dev
 
 Avec les versions récentes de Firefox pour mobile la démarche est identique identique à la version bureau.
 
-## Limitations avec Yunohost
+## Limitations avec YunoHost
 
 Par défaut, un serveur configuré reportera l'authentification sur le serveur de comptes hébergé par Mozilla à l'adresse https://accounts.firefox.com. Vous devrez donc toujours vous authentifier sur Mozilla, mais le stockage de vos informations se fera sur votre hôte.
 

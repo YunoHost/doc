@@ -4,7 +4,7 @@
 
 ### Index
 
-- [Limitations avec Yunohost](#limitations-avec-yunohost)
+- [Limitations avec YunoHost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
 Cowyo est un serveur wiki autonome qui permet de prendre des notes facilement et rapidement. La caractéristique la plus importante ici est la simplicité. Les autres caractéristiques sont le versionnage, le verrouillage des pages, les messages autodestructeurs, le cryptage et la lisibilité.
