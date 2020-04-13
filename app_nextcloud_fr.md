@@ -1,17 +1,17 @@
-# <img src="/images/nextcloud_logo.png" alt="logo de Nextcloud"> Nextcloud  
+# <img src="/images/nextcloud_logo.png" alt="logo de Nextcloud"> Nextcloud
 
  - [Découverte de l'environnement de Nextcloud](#EnvironnementNextcloud)
- - [Logiciels Clients pour mobile et ordinateur](#LogicielsClients)
  - [Manipulations & Problèmes rencontrés utiles](#ManipulationsUtiles)
     - [Ajouter de l'espace à Nextcloud](#AjoutEspace)
  - [Applications tiers](#AppsTiers)
+ - [Logiciels Clients pour mobile et ordinateur](#LogicielsClients)
  - [Liens utiles](#liensutiles)
 
 Nextcloud est un service d'hébergement de fichiers, de nombreuses applications peuvent être installées afin de lui offrir de nouvelles fonctionnalités tel qu'un agenda, un répertoire de contacts, des notes et pleins d'autres possibles (vous pouvez trouver quelques applications dans la partie [applications tiers](#AppsTiers) mais il en existe une multitude suivant vos besoins).
 
 ## Découverte de l'environnement de Nextcloud<a name="EnvironnementNextcloud" href=""></a>
 
-Du fait de la constitution de Nextcloud, une base avec des applications tiers à installer, ce chapitre ne concernera que la base de nextcloud sans applications ajoutés. Plus d'informations sur les applications dans la partie dédiée ou sur le catalogue d'application de nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com).  
+Du fait de la constitution de Nextcloud, une base avec des applications tiers à installer, ce chapitre ne concernera que la base de nextcloud sans applications ajoutés. Plus d'informations sur les applications dans la partie dédiée ou sur le catalogue d'application de nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com).
 Nextcloud est avant tout un service de cloud (comme Seafile et d'autres logiciels), il permet une synchronisation et le partage de fichiers sur internet et entre plusieurs terminaux (ordinateurs, smartphone) mais aussi avec plusieurs personnes.
 
 ## Logiciels Clients<a name="LogicielsClients" href=""></a>
@@ -22,17 +22,17 @@ Il existe des logiciels clients pour de nombreux terminaux. Vous pouvez les retr
 
 ### Ajouter de l'espace à Nextcloud<a name="AjoutEspace" href=""></a>
 
-La solution I. permet d'ajouter un lien vers un dossier local ou distant.  
+La solution I. permet d'ajouter un lien vers un dossier local ou distant.
 La solution II. permet de déplacer l'espace de stockage principal de nextcloud.
 
 #### I. Ajouter un espace de stockage externe
 
 Paramètre => [Administration] Stockages externe.
 
-En bas de la liste vous pouvez rajouter un dossier (Il est possible de définir un sous dossier en utilisant la convention `dossier/sousDossier`.)  
-Sélectionner un type de stockage et indiquez les information de connexion demandés.  
-Vous pouvez restreindre ce dossier à un ou plusieurs utilisateurs nextcloud avec la colonne `Disponible pour`.  
-Avec l'engrenage vous pouvez autoriser ou interdire la prévisualisation et le partage des fichiers.  
+En bas de la liste vous pouvez rajouter un dossier (Il est possible de définir un sous dossier en utilisant la convention `dossier/sousDossier`.)
+Sélectionner un type de stockage et indiquez les information de connexion demandés.
+Vous pouvez restreindre ce dossier à un ou plusieurs utilisateurs nextcloud avec la colonne `Disponible pour`.
+Avec l'engrenage vous pouvez autoriser ou interdire la prévisualisation et le partage des fichiers.
 Enfin cliquer sur la coche pour valider le dossier.
 
 #### II. Migrer les données de Nextcloud dans une partition plus grosse
@@ -43,7 +43,7 @@ Enfin cliquer sur la coche pour valider le dossier.
 
 Commencez par éteindre le serveur web avec la commande:
 ```bash
-systemctl stop nginx  
+systemctl stop nginx
 ```
 
 ##### Choix de l'emplacement
@@ -76,7 +76,7 @@ Cas A : cp -ir /home/yunohost.app/nextcloud /media/stockage
 Cas B : cp -ir /home/yunohost.app/nextcloud /media/stockage/nextcloud_data
 ```
 
-L'option `i` permet de vous demander quoi faire en cas de conflit de fichier, notamment si vous écrasez un ancien dossier de données Owncloud ou Nextcloud.  
+L'option `i` permet de vous demander quoi faire en cas de conflit de fichier, notamment si vous écrasez un ancien dossier de données Owncloud ou Nextcloud.
 Pour vérifier que tout s'est bien passé, comparer ce qu'affichent ces deux commandes (le contenu doit être identique):
 
 ```bash

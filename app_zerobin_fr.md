@@ -1,6 +1,6 @@
-# <img src="/images/APPLICATION_logo.svg" width="80px" alt="logo de APPLICATION"> APPLICATION
+# <img src="/images/zerobin_logo.svg" width="80px" alt="logo de ZeroBin"> ZeroBin
 
-[![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+[![Install ZeroBin with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=zerobin) [![Integration level](https://dash.yunohost.org/integration/zerobin.svg)](https://dash.yunohost.org/appci/app/zerobin)
 
 - [Configuration](#configuration)
 - [Limitations avec Yunohost](#limitations-avec-yunohost)
@@ -25,7 +25,7 @@
 
 ## Liens utiles
 
- + Site web : [SITE WEB](#)
- + Documentation officielle : [DOCUMENTATION](#)
- + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
- + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
+ + Site web : [privatebin.info (en)](https://privatebin.info/)
+ + Documentation officielle : [github.com - PrivateBin/PrivateBin/wiki (en)](https://github.com/PrivateBin/PrivateBin/wiki)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/zerobin](https://github.com/YunoHost-Apps/zerobin_ynh)
+ + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/zerobin/issues](https://github.com/YunoHost-Apps/zerobin_ynh/issues)

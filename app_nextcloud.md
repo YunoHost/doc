@@ -1,18 +1,18 @@
-# <img src="/images/nextcloud_logo.png" alt="logo de Nextcloud"> Nextcloud  
+# <img src="/images/nextcloud_logo.png" alt="logo de Nextcloud"> Nextcloud
 
- - [Discovering the Nextcloud environment](#EnvironmentNextcloud)  
+ - [Discovering the Nextcloud environment](#EnvironmentNextcloud)
+ - [Useful Manipulations & Problems Encountered](#UtileManipulations)
+    - [Add space to Nextcloud](#AddSpace)
+ - [Third Party Applications](#AppsTiers)
  - [Mobile and computer client software](#ClientSoftware)  
- - [Useful Manipulations & Problems Encountered](#UtileManipulations)  
-    - [Add space to Nextcloud](#AddSpace)  
- - [Third Party Applications](#AppsTiers)  
- - [Useful links](#UsefulLinks)  
+ - [Useful links](#UsefulLinks)
 
 Nextcloud is a file hosting service, many applications can be installed to offer it new features such as a calendar, a directory, notes and many others (you can find some applications in the [third-party applications](#AppsTiers) part  but there are many others depending on your needs).
 
 ## Discovering the Nextcloud environment <a name="EnvironmentNextcloud" href=""></a>
 
-Due to the creation of Nextcloud, a database with third-party applications to install, this chapter will only concern the nextcloud database without added applications. More information on applications in the dedicated section or in the nextcloud application catalogue: [apps.nextcloud.com](https://apps.nextcloud.com).  
-Nextcloud is before a cloud service (like Seafile and others), it allows synchronization and file sharing on the Internet and between several terminals (computers, smartphone) but also with several people. 
+Due to the creation of Nextcloud, a database with third-party applications to install, this chapter will only concern the nextcloud database without added applications. More information on applications in the dedicated section or in the nextcloud application catalogue: [apps.nextcloud.com](https://apps.nextcloud.com).
+Nextcloud is before a cloud service (like Seafile and others), it allows synchronization and file sharing on the Internet and between several terminals (computers, smartphone) but also with several people.
 
 ## Mobile and computer client software <a name="ClientSoftware" href=""></a>
 
@@ -22,17 +22,17 @@ There are client software for all platforms. You can find them on the official n
 
 ### Add storage space <a name="AddSpace" href=""></a>
 
-Solution I. allows you to add a link to a local or remote folder.  
+Solution I. allows you to add a link to a local or remote folder.
 Solution II. allows to move the main storage space of nextcloud.
 
 #### I. Add an external storage space
 
 Parameter =>[Administration] External storage.
 
-At the bottom of the list you can add a folder (It is possible to define a subfolder using the `folder/subfolder` convention.)  
-Select a storage type and specify the requested connection information.  
-You can restrict this folder to one or more nextcloud users with the column `Available for`.  
-With the gear you can allow or prohibit previewing and file sharing.  
+At the bottom of the list you can add a folder (It is possible to define a subfolder using the `folder/subfolder` convention.)
+Select a storage type and specify the requested connection information.
+You can restrict this folder to one or more nextcloud users with the column `Available for`.
+With the gear you can allow or prohibit previewing and file sharing.
 Finally click on the check mark to validate the folder.
 
 #### II. Migrate Nextcloud data to a larger partition
@@ -43,7 +43,7 @@ Finally click on the check mark to validate the folder.
 
 First turn off the web server with the command:
 ```bash
-systemctl stop nginx  
+systemctl stop nginx
 ```
 
 ##### Choice of location
@@ -76,7 +76,7 @@ Case A: cp -ia /home/yunohost.app/nextcloud /media/storage
 Case B: cp -ia /home/yunohost.app/nextcloud /media/storage/nextcloud_data
 ```
 
-The `i` option allows you to ask yourself what to do if there is a file conflict, especially if you overwrite an old Owncloud or Nextcloud data folder.  
+The `i` option allows you to ask yourself what to do if there is a file conflict, especially if you overwrite an old Owncloud or Nextcloud data folder.
 To check that everything went well, compare what these two commands display (the content must be identical):
 
 ```bash
@@ -140,7 +140,7 @@ If you use Cloudflare for your DNS, *which may be useful if you have a dynamic I
 #### Cloudflare Page Rules
 
 In the Cloudflare control panel select your domain and find Page Rules
-the url in your address bar will look like this: https://dash.cloudflare.com/*/domain.tld/page-rules  
+the url in your address bar will look like this: https://dash.cloudflare.com/*/domain.tld/page-rules
 
 ##### Add a rule
 
@@ -165,5 +165,5 @@ Save and clean your caches (Cloudflare, browser,...) and that's it.
 
 ## Useful links <a name="UsefulLinks" href=""></a>
 
- - Official website : [nextcloud.com](https://nextcloud.com/)  
- - Application catalogue for nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com/)  
+ - Official website : [nextcloud.com](https://nextcloud.com/)
+ - Application catalogue for nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com/)
