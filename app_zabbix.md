@@ -1,6 +1,6 @@
-# <img src="/images/APPLICATION_logo.svg" width="80px" alt="APPLICATION's logo"> APPLICATION
+# <img src="/images/zabbix_logo.png" width="80px" alt="Zabbix's logo"> Zabbix
 
-[![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+[![Install Zabbix with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=zabbix) [![Integration level](https://dash.yunohost.org/integration/zabbix.svg)](https://dash.yunohost.org/appci/app/zabbix)
 
 - [Configuration](#Configuration)
 - [Limitations with YunoHost](#limitations-with-yunohost)
@@ -25,7 +25,7 @@
 
 ## Useful links
 
-+ Website: [WEBSITE](#)
-+ Official documentation: [DOCUMENTATION](#)
-+ Application software repository: [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
-+ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
++ Website: [www.zabbix.com](https://www.zabbix.com/)
++ Official documentation: [www.zabbix.com - manuals](https://www.zabbix.com/manuals)
++ Application software repository: [github.com - YunoHost-Apps/zabbix](https://github.com/YunoHost-Apps/zabbix_ynh)
++ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/zabbix/issues](https://github.com/YunoHost-Apps/zabbix_ynh/issues)
