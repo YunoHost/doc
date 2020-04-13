@@ -4,30 +4,24 @@
 
 ### Index
 
-- [Configuration](#Configuration)
 - [Limitations with YunoHost](#limitations-with-yunohost)
-- [Customer Applications](#Customer-applications)
 - [Useful links](#useful-links)
 
-**General presentation of the application.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
-
-## Configuration
-
-**If the configuration of the application is not done with the admin panel of YunoHost.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+Garradin (a word meaning silver in an Aboriginal dialect of northern Australia, pronounced "gar-a-dine "em) is a software program for associative management. It is the tool of choice to manage an association, a sports club, an NGO, etc.. It is designed to meet the needs of a small to medium-sized structure: membership management, accounting, website, note-taking at meetings, archiving and sharing of the association's operating documents, discussion between members, etc. etc.[¹]
 
 ## Limitations with YunoHost
 
-**Explanation of the current limitations in using the application with YunoHost.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+the SSO system is not implemented, nor direct installation. The admin user will have to create his account with the account creation form that he will find at the end of the installation. Several reasons led me not to implement SSO. [More information (fr)](https://github.com/YunoHost-Apps/garradin_ynh#probl%C3%A8mes--avertissements-)
 
-## Customer applications
-
-| Application name | Platform | Multi-account | Other supported networks | Play Store | F-Droid | Apple Store | *Other* |
-|------------------|----------|---------------|--------------------------|------------|---------|-------------|---------|
-|                  |          |               |                          |            |         |             |         |
+Applications available exclusively in French.
 
 ## Useful links
 
-+ Website: [WEBSITE](#)
-+ Official documentation: [DOCUMENTATION](#)
++ Website: [garradin.eu (fr)](https://garradin.eu)
++ Official documentation: [fossil.kd2.org - garradin (fr)](https://fossil.kd2.org/garradin/wiki?name=Garradin)
 + Application software repository: [github.com - YunoHost-Apps/garradin](https://github.com/YunoHost-Apps/garradin_ynh)
 + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/garradin/issues](https://github.com/YunoHost-Apps/garradin_ynh/issues)
+
+------
+
+[¹]: [garradin.eu - a-propos (fr)](https://garradin.eu/a-propos/)
