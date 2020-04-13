@@ -1,6 +1,6 @@
 # <img src="/images/firefly_iii_logo.png" width="80px" alt="logo de Firefly III"> Firefly III
 
-[![Install Firefly III with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=firefly_iii) [![Integration level](https://dash.yunohost.org/integration/firefly_iii.svg)](https://dash.yunohost.org/appci/app/firefly_iii)
+[![Install Firefly III with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=firefly-iii) [![Integration level](https://dash.yunohost.org/integration/firefly-iii.svg)](https://dash.yunohost.org/appci/app/firefly-iii)
 
 ### Index
 
