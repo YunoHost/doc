@@ -1,3 +1,5 @@
+<div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">La page demandée n'est pour le moment pas disponible en français. Voici à la place la version en anglais. Si vous souhaitez commencer une traduction de cette page, vous pouvez vous rendre sur [cette page](https://yunohost.org/#/apps_wishlist_fr).</div>
+
 # Apps wishlist
 
 <div class="alert alert-info">Before to add an app in wishlist please check your app is not already in official or community list: see the <a href="/apps">apps list</a></div>
@@ -113,6 +115,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Privoxy](http://www.privoxy.org)
 - [ProcessMaker](http://www.processmaker.com)
 - [ProtonMail’s WebClient](https://github.com/ProtonMail/WebClient)
+- [PrivateBin](https://privatebin.info/) /[github](https://github.com/PrivateBin/PrivateBin)
 - [PyLoad](https://github.com/pyload/pyload)
 - [Pump.io](http://pump.io) / [github](https://github.com/pump-io/pump.io)
 - [qBittorrent](https://github.com/qbittorrent/qBittorrent)
