@@ -2,6 +2,8 @@
 
 [![Install distbin with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=distbin) [![Integration level](https://dash.yunohost.org/integration/distbin.svg)](https://dash.yunohost.org/appci/app/distbin)
 
+### Index
+
 - [Liens utiles](#liens-utiles)
 
 Un pastebin distribué, c'est-à-dire un service où n'importe qui peut poster des choses sur le web, et d'autres peuvent réagir en postant n'importe où ailleurs sur le web (y compris ici) .

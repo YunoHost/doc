@@ -2,6 +2,8 @@
 
 [![Install archivist with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=archivist) [![Integration level](https://dash.yunohost.org/integration/archivist.svg)](https://dash.yunohost.org/appci/app/archivist)
 
+### Index
+
 - [Useful links](#useful-links)
 
 Archivist is an automatic backup system for your server. It is able to makes backups of your YunoHost core and your apps by using the YunoHost backup command. It can also makes backups of specified directories.

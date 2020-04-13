@@ -1,6 +1,8 @@
-# <img src="/images/APPLICATION_logo.svg" width="80px" alt="APPLICATION's logo"> APPLICATION
+# <img src="/images/halcyon_logo.png" width="80px" alt="Halcyon's logo"> Halcyon
 
-[![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+[![Install Halcyon with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=halcyon) [![Integration level](https://dash.yunohost.org/integration/halcyon.svg)](https://dash.yunohost.org/appci/app/halcyon)
+
+### Index
 
 - [Configuration](#Configuration)
 - [Limitations with YunoHost](#limitations-with-yunohost)
@@ -25,7 +27,7 @@
 
 ## Useful links
 
-+ Website: [WEBSITE](#)
-+ Official documentation: [DOCUMENTATION](#)
-+ Application software repository: [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
-+ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
++ Website: [www.halcyon.social](https://www.halcyon.social/)
++ Official documentation: [www.halcyon.social - documentation](https://www.halcyon.social/documentation.php)
++ Application software repository: [github.com - YunoHost-Apps/halcyon](https://github.com/YunoHost-Apps/halcyon_ynh)
++ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/halcyon/issues](https://github.com/YunoHost-Apps/halcyon_ynh/issues)

@@ -2,6 +2,8 @@
 
 [![Install CiviCRM on Drupal 7 with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=civicrm_drupal7) [![Integration level](https://dash.yunohost.org/integration/civicrm_drupal7.svg)](https://dash.yunohost.org/appci/app/civicrm_drupal7)
 
+### Index
+
 - [Useful links](#useful-links)
 
 CiviCRM is a web-based suite of internationalized open-source software for constituency relationship management that falls under the broad rubric of customer relationship management. It is specifically designed for the needs of non-profit,non-governmental, and advocacy groups, and serves as an association-management system.[¹]

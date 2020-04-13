@@ -1,6 +1,8 @@
-# <img src="/images/APPLICATION_logo.svg" width="80px" alt="APPLICATION's logo"> APPLICATION
+# <img src="/images/grav_logo.png" width="80px" alt="Grav's logo"> Grav
 
-[![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+[![Install Grav with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=grav) [![Integration level](https://dash.yunohost.org/integration/grav.svg)](https://dash.yunohost.org/appci/app/grav)
+
+### Index
 
 - [Configuration](#Configuration)
 - [Limitations with YunoHost](#limitations-with-yunohost)
@@ -25,7 +27,7 @@
 
 ## Useful links
 
-+ Website: [WEBSITE](#)
-+ Official documentation: [DOCUMENTATION](#)
-+ Application software repository: [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
-+ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
++ Website: [getgrav.org](https://getgrav.org/)
++ Official documentation: [learn.getgrav.org](https://learn.getgrav.org/16)
++ Application software repository: [github.com - YunoHost-Apps/grav](https://github.com/YunoHost-Apps/grav_ynh)
++ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/grav/issues](https://github.com/YunoHost-Apps/grav_ynh/issues)

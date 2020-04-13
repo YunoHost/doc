@@ -1,5 +1,9 @@
 # <img src="/images/dokuwiki_logo.svg" width="80px" alt="Dokuwiki's logo"> DokuWiki
 
+[![Installer DokuWiki grâce à YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=dokuwiki) [![Niveau d'intégration](https://dash.yunohost.org/integration/dokuwiki.svg)](https://dash.yunohost.org/appci/app/dokuwiki)
+
+### Index
+
 - [Limitations with YunoHost](#limitations-with-yunohost)
 - [Useful links](#useful-links)
 

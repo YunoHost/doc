@@ -1,6 +1,8 @@
-# <img src="/images/APPLICATION_logo.svg" width="80px" alt="logo de APPLICATION"> APPLICATION
+# <img src="/images/mumbleserver_logo.svg" width="80px" alt="logo de Mumble server "> Mumble server
 
-[![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+[![Install Mumble server with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mumbleserver) [![Integration level](https://dash.yunohost.org/integration/mumbleserver.svg)](https://dash.yunohost.org/appci/app/mumbleserver)
+
+### Index
 
 - [Configuration](#configuration)
 - [Limitations avec Yunohost](#limitations-avec-yunohost)
@@ -25,7 +27,7 @@
 
 ## Liens utiles
 
- + Site web : [SITE WEB](#)
- + Documentation officielle : [DOCUMENTATION](#)
- + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
- + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
+ + Site web : [www.mumble.info (en)](https://www.mumble.info/)
+ + Documentation officielle : [wiki.mumble.info - wiki (en)](https://wiki.mumble.info/wiki/Main_Page)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/mumbleserver](https://github.com/YunoHost-Apps/mumbleserver_ynh)
+ + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/mumbleserver/issues](https://github.com/YunoHost-Apps/mumbleserver_ynh/issues)

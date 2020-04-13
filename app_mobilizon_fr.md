@@ -1,6 +1,8 @@
-# <img src="/images/APPLICATION_logo.svg" width="80px" alt="logo de APPLICATION"> APPLICATION
+# <img src="/images/mobilizon_logo.png" height="80px" alt="logo de Mobilizon"> Mobilizon
 
-[![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+[![Install Mobilizon with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mobilizon) [![Integration level](https://dash.yunohost.org/integration/mobilizon.svg)](https://dash.yunohost.org/appci/app/mobilizon)
+
+### Index
 
 - [Configuration](#configuration)
 - [Limitations avec Yunohost](#limitations-avec-yunohost)
@@ -25,7 +27,7 @@
 
 ## Liens utiles
 
- + Site web : [SITE WEB](#)
- + Documentation officielle : [DOCUMENTATION](#)
- + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
- + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
+ + Site web : [joinmobilizon.org](https://joinmobilizon.org/fr/)
+ + Documentation officielle : [framagit.org - framasoft/mobilizon/wikis (en)](https://framagit.org/framasoft/mobilizon/-/wikis/home)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/mobilizon](https://github.com/YunoHost-Apps/mobilizon_ynh)
+ + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/mobilizon/issues](https://github.com/YunoHost-Apps/mobilizon_ynh/issues)

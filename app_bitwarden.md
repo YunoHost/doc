@@ -2,7 +2,8 @@
 
 [![Install Bitwarden with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=bitwarden) [![Integration level](https://dash.yunohost.org/integration/bitwarden.svg)](https://dash.yunohost.org/appci/app/bitwarden)
 
-**Index**
+### Index
+
 - [Configuration](#Configuration)
 - [Limitations with YunoHost](#limitations-with-yunohost)
 - [Customer Applications](#Customer-applications)

@@ -1,6 +1,8 @@
-# <img src="/images/APPLICATION_logo.svg" width="80px" alt="APPLICATION's logo"> APPLICATION
+# <img src="/images/hubzilla_logo.png" width="80px" alt="Hubzilla's logo"> Hubzilla
 
-[![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+[![Install Hubzilla with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=hubzilla) [![Integration level](https://dash.yunohost.org/integration/hubzilla.svg)](https://dash.yunohost.org/appci/app/hubzilla)
+
+### Index
 
 - [Configuration](#Configuration)
 - [Limitations with YunoHost](#limitations-with-yunohost)
@@ -25,7 +27,7 @@
 
 ## Useful links
 
-+ Website: [WEBSITE](#)
-+ Official documentation: [DOCUMENTATION](#)
-+ Application software repository: [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
-+ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
++ Website: [zotlabs.org - hubzilla/hubzilla-project](https://zotlabs.org/page/hubzilla/hubzilla-project)
++ Official documentation: [zotlabs.org - help/about](https://zotlabs.org/help/en/about/about)
++ Application software repository: [github.com - YunoHost-Apps/hubzilla](https://github.com/YunoHost-Apps/hubzilla_ynh)
++ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/hubzilla/issues](https://github.com/YunoHost-Apps/hubzilla_ynh/issues)

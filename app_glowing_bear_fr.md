@@ -1,6 +1,8 @@
-# <img src="/images/APPLICATION_logo.svg" width="80px" alt="logo de APPLICATION"> APPLICATION
+# <img src="/images/glowing_bear_logo.svg" width="80px" alt="logo de Glowing Bear"> Glowing Bear
 
-[![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+[![Install Glowing Bear with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=glowing_bear) [![Integration level](https://dash.yunohost.org/integration/glowing_bear.svg)](https://dash.yunohost.org/appci/app/glowing_bear)
+
+### Index
 
 - [Configuration](#configuration)
 - [Limitations avec Yunohost](#limitations-avec-yunohost)
@@ -27,5 +29,5 @@
 
  + Site web : [SITE WEB](#)
  + Documentation officielle : [DOCUMENTATION](#)
- + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
- + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/glowing_bear](https://github.com/YunoHost-Apps/glowing_bear_ynh)
+ + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/glowing_bear/issues](https://github.com/YunoHost-Apps/glowing_bear_ynh/issues)

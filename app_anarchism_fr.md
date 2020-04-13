@@ -2,6 +2,8 @@
 
 [![Install anarchism with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=anarchism) [![Integration level](https://dash.yunohost.org/integration/anarchism.svg)](https://dash.yunohost.org/appci/app/anarchism)
 
+### Index
+
 - [Liens utiles](#liens-utiles)
 
 Ceci est une FAQ anarchiste. Son but est de présenter ce que l'anarchisme représente réellement et d'indiquer pourquoi vous devriez devenir anarchiste.

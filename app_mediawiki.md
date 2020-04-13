@@ -1,7 +1,3 @@
-# Mediawiki
-
-![Mediawiki](images/Mediawiki_logo.png)
-
 MediaWiki is a free and open source software wiki package written in PHP, originally for use on Wikipedia.
 
 ## Overview
@@ -17,9 +13,11 @@ Support Desk : https://www.mediawiki.org/wiki/Project:Support_desk
 
 ----------------------------------
 
-# <img src="/images/APPLICATION_logo.svg" width="80px" alt="APPLICATION's logo"> APPLICATION
+# <img src="/images/mediawiki_logo.svg" width="80px" alt="MediaWiki's logo"> MediaWiki
 
-[![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+[![Install MediaWiki with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mediawiki) [![Integration level](https://dash.yunohost.org/integration/mediawiki.svg)](https://dash.yunohost.org/appci/app/mediawiki)
+
+### Index
 
 - [Configuration](#Configuration)
 - [Limitations with YunoHost](#limitations-with-yunohost)
@@ -44,7 +42,7 @@ Support Desk : https://www.mediawiki.org/wiki/Project:Support_desk
 
 ## Useful links
 
-+ Website: [WEBSITE](#)
-+ Official documentation: [DOCUMENTATION](#)
-+ Application software repository: [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
-+ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
++ Website: [www.mediawiki.org](https://www.mediawiki.org/wiki/MediaWiki)
++ Official documentation: [www.mediawiki.org - Manual](https://www.mediawiki.org/wiki/Manual:Contents)
++ Application software repository: [github.com - YunoHost-Apps/mediawiki](https://github.com/YunoHost-Apps/mediawiki_ynh)
++ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/mediawiki/issues](https://github.com/YunoHost-Apps/mediawiki_ynh/issues)

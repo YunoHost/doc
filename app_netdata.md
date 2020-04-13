@@ -1,4 +1,3 @@
-## NetData
 
 [NetData](http://my-netdata.io/) is a system for **distributed real-time performance and health monitoring**.
 It provides **unparalleled insights, in real-time**, of everything happening on the
@@ -263,9 +262,11 @@ And you can extend it, by writing plugins that collect data from any source, usi
 
  -----------------------------
 
- # <img src="/images/APPLICATION_logo.svg" width="80px" alt="APPLICATION's logo"> APPLICATION
+ # <img src="/images/netdata_logo.svg" width="80px" alt="NetData's logo"> NetData
 
- [![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+ [![Install NetData with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=netdata) [![Integration level](https://dash.yunohost.org/integration/netdata.svg)](https://dash.yunohost.org/appci/app/netdata)
+
+### Index
 
  - [Configuration](#Configuration)
  - [Limitations with YunoHost](#limitations-with-yunohost)
@@ -290,7 +291,7 @@ And you can extend it, by writing plugins that collect data from any source, usi
 
  ## Useful links
 
- + Website: [WEBSITE](#)
- + Official documentation: [DOCUMENTATION](#)
- + Application software repository: [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
- + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
+ + Website: [www.netdata.cloud](https://www.netdata.cloud/)
+ + Official documentation: [docs.netdata.cloud](https://docs.netdata.cloud/)
+ + Application software repository: [github.com - YunoHost-Apps/netdata](https://github.com/YunoHost-Apps/netdata_ynh)
+ + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/netdata/issues](https://github.com/YunoHost-Apps/netdata_ynh/issues)

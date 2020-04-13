@@ -2,6 +2,8 @@
 
 [![Install gitlab with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gitlab) [![Integration level](https://dash.yunohost.org/integration/gitlab.svg)](https://dash.yunohost.org/appci/app/gitlab)
 
+### Index
+
 - [Limitations with YunoHost](#limitations-with-yunohost)
 - [Customer Applications](#Customer-applications)
 - [Useful links](#useful-links)

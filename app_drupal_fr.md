@@ -2,6 +2,8 @@
 
 [![Install Drupal with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=drupal) [![Integration level](https://dash.yunohost.org/integration/drupal.svg)](https://dash.yunohost.org/appci/app/drupal)
 
+### Index
+
 - [Liens utiles](#liens-utiles)
 
 Drupal1 est un système de gestion de contenu (CMS) libre et open-source publié sous la licence publique générale GNU et écrit en PHP.[¹]

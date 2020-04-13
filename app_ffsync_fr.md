@@ -1,51 +1,37 @@
-# Firefox Sync
-Firefox Sync permet la synchronisation des favoris, des marques-pages, de l’historique, des onglets, des extensions entre plusieurs instances du navigateur web Firefox.
+# <img src="/images/ffsync_logo.png" width="80px" alt="logo de Firefox Sync"> Firefox Sync
 
-### Configuration de Firefox
-Configurer Firefox pour utiliser votre serveur pour la synchronisation.
+[![Install Firefox Sync with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=ffsync) [![Integration level](https://dash.yunohost.org/integration/ffsync.svg)](https://dash.yunohost.org/appci/app/ffsync)
 
-#### Firefox bureau
-Tapez `about:config` dans la barre d’URL.
-
-Recherchez : `identity.sync.tokenserver.uri`.
-
-Remplacez l’URL par la vôtre : https://mondomaine.tld/adresse/token/1.0/sync/1.5
-
-Créez un compte chez Mozilla : https://accounts.firefox.com/signup
-
-#### Firefox mobile
-Avec la dernière version de firefox mobile c'est identique à firefox pour le bureau.
-
--------------------------
-
-# <img src="/images/APPLICATION_logo.svg" width="80px" alt="logo de APPLICATION"> APPLICATION
-
-[![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+### Index
 
 - [Configuration](#configuration)
+  - [Firefox bureau](#firefox-bureau)
+  - [Firefox mobile](#Firefox-mobile)
 - [Limitations avec Yunohost](#limitations-avec-yunohost)
-- [Applications clientes](#applications-clients)
 - [Liens utiles](#liens-utiles)
 
-**Présentation générale de l'application.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+Firefox Sync permet la synchronisation des favoris, des marques-pages, de l’historique, des onglets, des extensions entre plusieurs instances du navigateur web Firefox.
 
 ## Configuration
+Une fois installé, le site `domain.tld/path` devrait afficher une page expliquant comment le configurer.
+Pour utiliser votre serveur personnel de synchronisation Firefox, vous allez devoir configurer votre explorateur internet [Firefox](https://www.mozilla.org/fr/firefox/new/).
 
-**Si la configuration de l'application ne se fait pas avec le panel admin de YunoHost.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+### Firefox bureau
+
+1. Une fois Firefox lancé ouvrer cette adresse URL : `about:config`
+2. Recherchez : `identity.sync.tokenserver.uri`
+3. Remplacez l’URL par la vôtre : `https://mondomaine.tld/adresse/token/1.0/sync/1.5`
+4. Créez un compte chez Mozilla : https://accounts.firefox.com/signup
+
+### Firefox mobile
+
+Avec les versions récentes de Firefox pour mobile la démarche est identique identique à la version bureau.
 
 ## Limitations avec Yunohost
 
-**Explication des limitations actuelles en utilisation l'application avec YunoHost.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
-
-## Applications clientes
-
-| Nom de l'applications | Plateforme | Multi-comptes | Autre réseaux supportés | Play Store | F-Droid | Apple Store | *Autres* |
-|-----------------------|------------|---------------|-------------------------|------------|---------|-------------|----------|
-|                       |            |               |                         |            |         |             |          |
+Par défaut, un serveur configuré reportera l'authentification sur le serveur de comptes hébergé par Mozilla à l'adresse https://accounts.firefox.com. Vous devrez donc toujours vous authentifier sur Mozilla, mais le stockage de vos informations se fera sur votre hôte.
 
 ## Liens utiles
 
- + Site web : [SITE WEB](#)
- + Documentation officielle : [DOCUMENTATION](#)
- + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
- + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/ffsync_ynh)
+ + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/ffsync/issues](https://github.com/YunoHost-Apps/ffsync_ynh/issues)

@@ -2,6 +2,8 @@
 
 [![Install fallback with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=fallback) [![Integration level](https://dash.yunohost.org/integration/fallback.svg)](https://dash.yunohost.org/appci/app/fallback)
 
+### Index
+
 - [Configuration](#configuration)
 - [Limitations avec Yunohost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)

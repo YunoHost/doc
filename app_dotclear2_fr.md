@@ -2,6 +2,8 @@
 
 [![Install dotclear2 with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=dotclear2) [![Integration level](https://dash.yunohost.org/integration/dotclear2.svg)](https://dash.yunohost.org/appci/app/dotclear2)
 
+### Index
+
 - [Liens utiles](#liens-utiles)
 
 Dotclear est une application de publication de blogs à code source libre distribuée sous la licence GNU GPLv2. Développé à l'origine par Olivier Meunier à partir de 2002, Dotclear a maintenant attiré une solide équipe de développeurs. Il est relativement populaire dans les pays francophones, où il est utilisé par plusieurs grandes plateformes de blogs (Gandi Blogs, Marine nationale, etc.).

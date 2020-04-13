@@ -1,5 +1,3 @@
-#<img src="/images/limesurvey.png">LimeSurvey
-
 LimeSurvey is used to create advanced poll/form.
 
 ### How to create a poll
@@ -13,9 +11,11 @@ For example, if it is install on : https://example.org/poll/ you can access it o
 
 -----------------------------
 
-# <img src="/images/APPLICATION_logo.svg" width="80px" alt="APPLICATION's logo"> APPLICATION
+# <img src="/images/limesurvey_logo.svg" width="80px" alt="LimeSurvey's logo"> LimeSurvey
 
-[![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+[![Install LimeSurvey with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=limesurvey) [![Integration level](https://dash.yunohost.org/integration/limesurvey.svg)](https://dash.yunohost.org/appci/app/limesurvey)
+
+### Index
 
 - [Configuration](#Configuration)
 - [Limitations with YunoHost](#limitations-with-yunohost)
@@ -40,7 +40,7 @@ For example, if it is install on : https://example.org/poll/ you can access it o
 
 ## Useful links
 
-+ Website: [WEBSITE](#)
-+ Official documentation: [DOCUMENTATION](#)
-+ Application software repository: [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
-+ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
++ Website: [www.limesurvey.org](https://www.limesurvey.org/)
++ Official documentation: [manual.limesurvey.org](https://manual.limesurvey.org/LimeSurvey_Manual)
++ Application software repository: [github.com - YunoHost-Apps/limesurvey](https://github.com/YunoHost-Apps/limesurvey_ynh)
++ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/limesurvey/issues](https://github.com/YunoHost-Apps/limesurvey_ynh/issues)

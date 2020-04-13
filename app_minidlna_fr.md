@@ -27,9 +27,11 @@ De manière générale, un client DLNA ne nécessite pas de configuration partic
 
 -----------------------------
 
-# <img src="/images/APPLICATION_logo.svg" width="80px" alt="logo de APPLICATION"> APPLICATION
+# <img src="/images/yunohost_package.png" height="80px" alt="Package"> MiniDLNA
 
 [![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+
+### Index
 
 - [Configuration](#configuration)
 - [Limitations avec Yunohost](#limitations-avec-yunohost)
@@ -54,7 +56,7 @@ De manière générale, un client DLNA ne nécessite pas de configuration partic
 
 ## Liens utiles
 
- + Site web : [SITE WEB](#)
- + Documentation officielle : [DOCUMENTATION](#)
- + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
- + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
+ + Site web : [minidlna.sourceforge.net (en)](http://minidlna.sourceforge.net/)
+ + Documentation officielle : [sourceforge.net - minidlna/support (en)](https://sourceforge.net/projects/minidlna/support)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/minidlna](https://github.com/YunoHost-Apps/minidlna_ynh)
+ + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/minidlna/issues](https://github.com/YunoHost-Apps/minidlna_ynh/issues)

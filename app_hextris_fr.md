@@ -1,13 +1,13 @@
-#Hextris
-
 Car parfois il faut savoir se détendre. Hébergez votre propre fork du célèbre Tetris et devenez le maitre de cet hexagone infernal.
 Qui domptera cet hexagone infernal ?
 
 -------------------------------------
 
-# <img src="/images/APPLICATION_logo.svg" width="80px" alt="logo de APPLICATION"> APPLICATION
+# <img src="/images/hextris_logo.png" width="80px" alt="logo de Hextris"> Hextris
 
-[![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+[![Install Hextris with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=hextris) [![Integration level](https://dash.yunohost.org/integration/hextris.svg)](https://dash.yunohost.org/appci/app/hextris)
+
+### Index
 
 - [Configuration](#configuration)
 - [Limitations avec Yunohost](#limitations-avec-yunohost)
@@ -32,7 +32,7 @@ Qui domptera cet hexagone infernal ?
 
 ## Liens utiles
 
- + Site web : [SITE WEB](#)
+ + Site web : [hextris.github.io (en)](http://hextris.github.io/)
  + Documentation officielle : [DOCUMENTATION](#)
- + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
- + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/hextris](https://github.com/YunoHost-Apps/hextris_ynh)
+ + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/hextris/issues](https://github.com/YunoHost-Apps/hextris_ynh/issues)

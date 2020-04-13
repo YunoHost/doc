@@ -1,6 +1,9 @@
 # <img src="/images/bitwarden_logo.png" width="80px" alt="logo de Bitwarden"> Bitwarden
 
+[![Install Bitwarden with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=bitwarden) [![Integration level](https://dash.yunohost.org/integration/bitwarden.svg)](https://dash.yunohost.org/appci/app/bitwarden)
+
 ### Index
+
 - [Configuration](#configuration)
 - [Limitations avec Yunohost](#limitations-avec-yunohost)
 - [Applications clientes](#applications-clientes)

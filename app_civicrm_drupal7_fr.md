@@ -2,6 +2,8 @@
 
 [![Install CiviCRM on Drupal 7 with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=civicrm_drupal7) [![Integration level](https://dash.yunohost.org/integration/civicrm_drupal7.svg)](https://dash.yunohost.org/appci/app/civicrm_drupal7)
 
+### Index
+
 - [Liens utiles](#liens-utiles)
 
 CiviCRM est une solution Web Open Source de gestion de la relation client. Elle a été spécialement conçue pour répondre aux besoins des organismes à but non lucratif, des organisations non gouvernementales et des groupes de pression.[¹]

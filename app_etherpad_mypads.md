@@ -2,6 +2,8 @@
 
 [![Install Etherpad with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=etherpad_mypads) [![Integration level](https://dash.yunohost.org/integration/etherpad_mypads.svg)](https://dash.yunohost.org/appci/app/etherpad_mypads)
 
+### Index
+
 - [Configuration](#Configuration)
 - [Useful links](#useful-links)
 

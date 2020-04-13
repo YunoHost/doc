@@ -2,6 +2,8 @@
 
 [![Install diagramsnet with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=diagramsnet) [![Integration level](https://dash.yunohost.org/integration/diagramsnet.svg)](https://dash.yunohost.org/appci/app/diagramsnet)
 
+### Index
+
 - [Configuration](#Configuration)
 - [Liens utiles](#liens-utiles)
 
