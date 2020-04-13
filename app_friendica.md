@@ -4,7 +4,7 @@
 
 ### Index
 
-- [Configuration](#Configuration)
+- [Configuration](#configuration)
 - [Useful links](#useful-links)
 
 Friendica is a decentralized communication platform that integrates social communication. The platform is linked to independent social projects and business services.

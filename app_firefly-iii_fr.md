@@ -12,5 +12,5 @@
 
  + Site web : [www.firefly-iii.org (en)](https://www.firefly-iii.org/)
  + Documentation officielle : [docs.firefly-iii.org (en)](https://docs.firefly-iii.org/about-firefly-iii/introduction)
- + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/firefly_iii](https://github.com/YunoHost-Apps/firefly_iii_ynh)
- + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/firefly_iii/issues](https://github.com/YunoHost-Apps/firefly_iii_ynh/issues)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/firefly-iii](https://github.com/YunoHost-Apps/firefly-iii_ynh)
+ + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/firefly-iii/issues](https://github.com/YunoHost-Apps/firefly-iii_ynh/issues)

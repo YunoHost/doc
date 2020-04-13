@@ -6,7 +6,7 @@
 
 - [Liens utiles](#liens-utiles)
 
-Drupal1 est un système de gestion de contenu (CMS) libre et open-source publié sous la licence publique générale GNU et écrit en PHP.[¹]
+Drupal est un système de gestion de contenu (CMS) libre et open-source publié sous la licence publique générale GNU et écrit en PHP.[¹]
 
 ## Liens utiles
 

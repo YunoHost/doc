@@ -16,6 +16,6 @@ De par sa conception, Cowyo a besoin de son propre domaine dédié. Il ne suppor
 ## Liens utiles
 
 + Site web (demo) : [cowyo.com](https://cowyo.com)
-+ Documentation officielle : [github.com - schollz/cowyo/README.md (en)](https://github.com/schollz/cowyo/blob/master/README.md)
++ Documentation officielle : [github.com - schollz/cowyo/README (en)](https://github.com/schollz/cowyo/blob/master/README.md)
 + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/cowyo](https://github.com/YunoHost-Apps/cowyo_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/cowyo](https://github.com/YunoHost-Apps/cowyo_ynh/issues)

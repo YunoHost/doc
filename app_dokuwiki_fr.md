@@ -15,7 +15,7 @@ Il est pour le moment impossible d'ajouter et d'utiliser les utilisateurs intern
 
 ## Liens utiles
 
-+ Site web : [dokuwiki.org](https://dokuwiki.org)
++ Site web : [dokuwiki.org](https://www.dokuwiki.org/start?id=fr:dokuwiki)
 + Documentation officielle : [dokuwiki.org - Manuel Dokuwiki](https://www.dokuwiki.org/start?id=fr:manual)
 + Dépôt logiciel de l'application : [github.com - YunoHost-App/dokuwiki](https://github.com/YunoHost-Apps/dokuwiki_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/dokuwiki/issues](https://github.com/YunoHost-Apps/dokuwiki_ynh/issues)

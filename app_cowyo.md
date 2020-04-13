@@ -16,6 +16,6 @@ By design, cowyo requires its own domain. He does not support multiple users.
 ## Useful links
 
 + Website (demo): [cowyo.com](https://cowyo.com)
-+ Official documentation: [github.com - schollz/cowyo/README.md](https://github.com/schollz/cowyo/blob/master/README.md)
++ Official documentation: [github.com - schollz/cowyo/README](https://github.com/schollz/cowyo/blob/master/README.md)
 + Application software repository: [github.com - YunoHost-Apps/cowyo](https://github.com/YunoHost-Apps/cowyo_ynh)
 + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/cowyo/issues](https://github.com/YunoHost-Apps/cowyo_ynh/issues)

@@ -4,7 +4,7 @@
 
 ### Index
 
-- [Configuration](#Configuration)
+- [Configuration](#configuration)
 - [Useful links](#useful-links)
 
 Etherpad is an online free text editor working in collaborative mode and in real time. It allows several people to share the simultaneous creation of a text, and to discuss it in parallel, via instant messaging. It can have pedagogical uses, especially for collaborative learning.

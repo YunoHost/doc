@@ -12,8 +12,8 @@ L'objectif proposé par Dotclear est de développer un logiciel qui respecte ple
 
 ## Liens utiles
 
- + Site web : [fr.dotclear.org](https://fr.dotclear.org/)
- + Documentation officielle : [fr.dotclear.org - documentation/](https://fr.dotclear.org/documentation/)
+ + Site web : [dotclear.org](https://fr.dotclear.org/)
+ + Documentation officielle : [dotclear.org - documentation](https://fr.dotclear.org/documentation/)
  + Dépôt logiciel de l'application : [github.com - YunoHost- Apps/bitwarden](https://github.com/YunoHost-Apps/bitwarden_ynh)
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/bitwarden/issues](https://github.com/YunoHost-Apps/bitwarden_ynh/issues)
 

@@ -5,7 +5,6 @@
 ### Index
 
 - [Configuration](#configuration)
-- [Limitations avec Yunohost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
 Fallback est une application spéciale, uniquement par interface de ligne de commande, qui permet d'avoir un serveur secondaire que vous pouvez utiliser si votre serveur principal tombe en panne.

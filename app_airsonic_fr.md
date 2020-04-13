@@ -14,5 +14,5 @@ Airsonic est conçu pour gérer de très grandes collections de musique (des cen
 
  + Site web : [airsonic.github.io (en)](https://airsonic.github.io/)
  + Documentation officielle : [airsonic.github.io/docs (en)](https://airsonic.github.io/docs/)
- + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/airsonic (en)](https://github.com/YunoHost-Apps/airsonic_ynh)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/airsonic](https://github.com/YunoHost-Apps/airsonic_ynh)
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/airsonic/issues](https://github.com/YunoHost-Apps/airsonic_ynh/issues)

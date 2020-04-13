@@ -6,13 +6,14 @@
 
 - [Configuration](#configuration)
   - [Firefox bureau](#firefox-bureau)
-  - [Firefox mobile](#Firefox-mobile)
+  - [Firefox mobile](#firefox-mobile)
 - [Limitations avec Yunohost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
 Firefox Sync permet la synchronisation des favoris, des marques-pages, de l’historique, des onglets, des extensions entre plusieurs instances du navigateur web Firefox.
 
 ## Configuration
+
 Une fois installé, le site `domain.tld/path` devrait afficher une page expliquant comment le configurer.
 Pour utiliser votre serveur personnel de synchronisation Firefox, vous allez devoir configurer votre explorateur internet [Firefox](https://www.mozilla.org/fr/firefox/new/).
 

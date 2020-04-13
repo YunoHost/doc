@@ -12,7 +12,7 @@ Drupal1 est un système de gestion de contenu (CMS) libre et open-source publié
 ## Liens utiles
 
  + Site web : [www.drupal.fr](https://www.drupal.fr/)
- + Documentation officielle : [www.drupal.fr - docs/7 (en)](https://www.drupal.org/docs/7)
+ + Documentation officielle : [www.drupal.org - docs/7 (en)](https://www.drupal.org/docs/7)
  + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/drupal7](https://github.com/YunoHost-Apps/drupal7_ynh)
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/drupal7/issues](https://github.com/YunoHost-Apps/drupal7_ynh/issues)
 

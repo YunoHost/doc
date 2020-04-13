@@ -4,7 +4,7 @@
 
 ### Index
 
-- [Configuration](#Configuration)
+- [Configuration](#configuration)
 - [Limitations with YunoHost](#limitations-with-yunohost)
 - [Customer Applications](#Customer-applications)
 - [Useful links](#useful-links)

@@ -4,7 +4,7 @@
 
 ### Index
 
-- [Features](#Features)
+- [Features](#features)
 - [Limitations with YunoHost](#limitations-with-yunohost)
 - [Useful links](#useful-links)
 
@@ -27,10 +27,10 @@ HTTP and LDAP authentication are not supported. The application is not multi-use
 
 ## Useful links
 
-  + Website: [blogotext.org](https://blogotext.org)
+  + Website: [blogotext.org (fr)](https://blogotext.org)
   + Application software repository: [github.com - YunoHost-Apps/blogotext](https://github.com/YunoHost-Apps/blogotext_ynh)
   + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/blogotext/issues](https://github.com/YunoHost-Apps/blogotext_ynh/issues)
 
   -----
 
-[¹]: [framalibre.org - BlogoText](https://framalibre.org/content/blogotext)
+[¹]: [framalibre.org - BlogoText (fr)](https://framalibre.org/content/blogotext)

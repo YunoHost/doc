@@ -4,8 +4,7 @@
 
 ### Index
 
-- [Configuration](#Configuration)
-- [Limitations with YunoHost](#limitations-with-yunohost)
+- [Configuration](#configuration)
 - [Useful links](#useful-links)
 
 Fallback is a special app, only by command line interface, which provide a way to have a secondary server which you can used if your main server goes down.
@@ -17,5 +16,5 @@ After the installation, you should not have anything else to configure. If you w
 
 ## Useful links
 
-+ Application software repository: [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
-+ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
++ Application software repository: [github.com - YunoHost-Apps/fallback](https://github.com/YunoHost-Apps/fallback_ynh)
++ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/fallback/issues](https://github.com/YunoHost-Apps/fallback_ynh/issues)

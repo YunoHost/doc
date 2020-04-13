@@ -12,7 +12,6 @@ Un endroit en réseau pour stocker les documents web postés. Ceci est destiné 
 
 ## Liens utiles
 
- + Site web : [distbin.com]( https://distbin.com)
- + Documentation officielle : [github.com - gobengo/distbin](https://github.com/gobengo/distbin)
+ + Documentation officielle : [github.com - gobengo/distbin (en)](https://github.com/gobengo/distbin)
  + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/distbin](https://github.com/YunoHost-Apps/distbin_ynh)
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/distbin/issues](https://github.com/YunoHost-Apps/distbin_ynh/issues)

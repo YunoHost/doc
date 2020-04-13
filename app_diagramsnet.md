@@ -4,7 +4,7 @@
 
 ### Index
 
-- [Configuration](#Configuration)
+- [Configuration](#configuration)
 - [Useful links](#useful-links)
 
 diagrams.net lets you create a wide range of diagrams, from simple tree and flow diagrams, to highly technical network, rack and electrical diagrams.
@@ -20,4 +20,4 @@ It’s a free, online diagram editor and viewer with a wide variety of shapes, i
 
 -----
 
-[¹]: [www.diagrams.net - about (en)](https://www.diagrams.net/about.html)
+[¹]: [www.diagrams.net - about](https://www.diagrams.net/about.html)

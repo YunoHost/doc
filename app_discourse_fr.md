@@ -16,7 +16,7 @@ Dans le tableau de bord de l'administration, la version installée est indiquée
 ## Liens utiles
 
  + Site web : [www.discourse.org (en)](https://www.discourse.org/)
- + Documentation officielle  [www.discourse.org - customers (en)](https://www.discourse.org/customers)
+ + Documentation officielle : [www.discourse.org - customers (en)](https://www.discourse.org/customers)
  + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/discourse](https://github.com/YunoHost-Apps/discourse_ynh)
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/discourse/issues](https://github.com/YunoHost-Apps/discourse_ynh/issues)
 

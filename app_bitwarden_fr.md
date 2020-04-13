@@ -25,7 +25,7 @@ Les authentification HTTP et LDAP ne sont pas pris en charges.
 
 | Nom de l'applications | Plateforme | Multi-comptes | Lien |
 |-----------------------|------------|---------------|------|
-| Bitwarden | Linux / Mac / Windows  | Oui | [bitwarden.com/download](https://bitwarden.com/#download) |
+| Bitwarden | Linux / Mac / Windows  | Oui | [bitwarden.com - download](https://bitwarden.com/#download) |
 | Bitwarden | Android | ? | [Playstore - Birwarden](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden) |
 | Bitwarden | IOS | ? | [App Store - Bitwarden](https://itunes.apple.com/app/bitwarden-free-password-manager/id1137397744?mt=8) |
 

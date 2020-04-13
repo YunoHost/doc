@@ -17,5 +17,5 @@ L'authentification du SSO ne fonctionne pas entièrement à partir du panel d'ut
 
 + Site web : [ampache.org (en)](http://ampache.org/)
 + Documentation officielle : [github.com - Ampache/wiki (en)](https://github.com/ampache/ampache/wiki)
-+ Dépôt logiciel de l'application : [github.com - YunoHost-Apps/ampache (en)](https://github.com/YunoHost-Apps/ampache_ynh)
++ Dépôt logiciel de l'application : [github.com - YunoHost-Apps/ampache](https://github.com/YunoHost-Apps/ampache_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/ampache/issues](https://github.com/YunoHost-Apps/ampache_ynh/issues)

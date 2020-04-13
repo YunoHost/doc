@@ -9,7 +9,7 @@
 
 DokuWiki is a standards-compliant, easy-to-use, standards-compliant GNU GPL free wiki engine whose main purpose is to create documentation of all kinds. This software is developed in PHP by Andreas Gohr. ...] It has a simple syntax that ensures the readability of data files outside of the wiki, and facilitates the creation of structured texts. All data is stored in text files, so no database is needed. [¹]
 
-## Limitation$
+## Limitations with YunoHost
 
 It is currently impossible to add and use internal DokuWiki users, only YunoHost users.
 
@@ -22,4 +22,4 @@ It is currently impossible to add and use internal DokuWiki users, only YunoHost
 
 ------
 
-[¹]: [wikipedia.org - Dokuwiki](https://fr.wikipedia.org/wiki/DokuWiki)
+[¹]: [wikipedia.org - Dokuwiki (fr)](https://fr.wikipedia.org/wiki/DokuWiki)

@@ -12,10 +12,10 @@ The main goal of Borg is to provide an efficient and secure way to backup data. 
 
 ## Useful links
 
-+ Website: [bitwarden.com](https://bitwarden.com/)
-+ Official documentation: [help.bitwarden.com](https://help.bitwarden.com/)
-+ Application software repository: [github.com - YunoHost-Apps/bitwarden](https://github.com/YunoHost-Apps/bitwarden_ynh)
-+ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/bitwarden/issues](https://github.com/YunoHost-Apps/bitwarden_ynh/issues)
++ Website: [www.borgbackup.org](https://www.borgbackup.org/)
++ Official documentation: [borgbackup.readthedocs.io](https://borgbackup.readthedocs.io/en/stable/)
++ Application software repository: [github.com - YunoHost- Apps/borg](https://github.com/YunoHost-Apps/borg_ynh)
++ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/borg/issues](https://github.com/YunoHost-Apps/borg_ynh/issues)
 
 ------
 

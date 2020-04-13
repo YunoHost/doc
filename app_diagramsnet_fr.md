@@ -4,7 +4,7 @@
 
 ### Index
 
-- [Configuration](#Configuration)
+- [Configuration](#configuration)
 - [Liens utiles](#liens-utiles)
 
 diagrams.net vous permet de créer un large éventail de diagrammes, allant de simples arborescences et organigrammes, à des diagrammes très techniques de réseaux, de baies et d'électricité.

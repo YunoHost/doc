@@ -11,7 +11,7 @@ CiviCRM is a web-based suite of internationalized open-source software for const
 ## Useful links
 
 + Website: [civicrm.org](https://civicrm.org/)
-+ Official documentation: [docs.civicrm.org (en)](https://docs.civicrm.org/)
++ Official documentation: [docs.civicrm.org](https://docs.civicrm.org/)
 + Application software repository: [github.com - YunoHost-Apps/civicrm_drupal7](https://github.com/YunoHost-Apps/civicrm_drupal7_ynh)
 + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/civicrm_drupal7](https://github.com/YunoHost-Apps/civicrm_drupal7_ynh/issues)
 

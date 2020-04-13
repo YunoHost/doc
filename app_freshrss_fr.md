@@ -5,7 +5,7 @@
 ### Index
 
 - [Configuration](#configuration)
-- [Applications clientes](#applications-clients)
+- [Applications clientes](#applications-clientes)
 - [Liens utiles](#liens-utiles)
 
 FreshRSS est un agrégateur et lecteur de flux RSS. Il permet de regrouper l’actualité de plusieurs sites différents dans un endroit unique pour que vous puissiez la lire sans devoir aller de site en site.
@@ -22,10 +22,6 @@ API (mini) Comment faire :
     + username : ynh user
     + password : le mot de passe que vous venez de configurer
     + url https://exemple.tld/rss/api/greader.php
-
-## Limitations avec Yunohost
-
-**Explication des limitations actuelles en utilisation l'application avec YunoHost.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
 
 ## Applications clientes
 

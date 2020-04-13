@@ -14,5 +14,5 @@ L'authentification LDAP et HTTP n'est pas prise en charge.
 ## Liens utiles
 
 + Site web : [documentation.concrete5.org (en)](https://documentation.concrete5.org/)
-+ Dépôt logiciel de l'application : [github.com - YunoHost-Apps/cowyo](https://github.com/YunoHost-Apps/concrete5_ynh)
-+ Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/cowyo](https://github.com/YunoHost-Apps/concrete5_ynh/issues)
++ Dépôt logiciel de l'application : [github.com - YunoHost-Apps/concrete5](https://github.com/YunoHost-Apps/concrete5_ynh)
++ Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/concrete5](https://github.com/YunoHost-Apps/concrete5_ynh/issues)

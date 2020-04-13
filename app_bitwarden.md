@@ -4,9 +4,9 @@
 
 ### Index
 
-- [Configuration](#Configuration)
+- [Configuration](#configuration)
 - [Limitations with YunoHost](#limitations-with-yunohost)
-- [Customer Applications](#Customer-applications)
+- [Customer Applications](#customer-applications)
 - [Useful links](#useful-links)
 
 Bitwarden is a freemium libre password manager under AGPL license, allowing generation and storage of passwords in a secure way. These are protected by a single password called the "master password". It was created in 2016 by Kyle Spearrin, a software architect.
@@ -25,7 +25,7 @@ HTTP and LDAP authentication are not supported.
 
 | Application Name | Platform | Multi Account | Link |
 |------------------|----------|---------------|------|
-| Bitwarden | Linux / Mac / Windows  | Oui | [bitwarden.com/download](https://bitwarden.com/#download) |
+| Bitwarden | Linux / Mac / Windows  | Oui | [bitwarden.com - download](https://bitwarden.com/#download) |
 | Bitwarden | Android | ? | [Playstore - Birwarden](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden) |
 | Bitwarden | IOS | ? | [App Store - Bitwarden](https://itunes.apple.com/app/bitwarden-free-password-manager/id1137397744?mt=8) |
 
