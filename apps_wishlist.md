@@ -89,6 +89,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [MyBB](https://mybb.com/) / [github](https://github.com/mybb)
 - [Museek+](https://github.com/eLvErDe/museek-plus)
 - [N8n.io](https://n8n.io)
+- [Netdata](https://www.netdata.cloud) / [github](https://github.com/netdata/netdata) / Netdata is a metrics collection and shipping tool, with a native awesome monitoring dashboard for short term metris. It may have a lot of value for yunohost instances to be able to get some more information to help them troubleshoot issues.
 - [Netrunner](https://github.com/mtgred/netrunner)
 - [Nibbleblog](http://www.nibbleblog.com)/ [github](https://github.com/dignajar/nibbleblog)
 - [Nuage](https://nuage.kerjean.me/login) / [github](https://github.com/mickael-kerjean/filestash)
