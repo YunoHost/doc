@@ -8,7 +8,7 @@
 
 diagrams.net vous permet de créer un large éventail de diagrammes, allant de simples arborescences et organigrammes, à des diagrammes très techniques de réseaux, de baies et d'électricité.
 
-Il s'agit d'un éditeur et d'un visualiseur de diagrammes en ligne gratuit qui propose une grande variété de formes, d'icônes, de connecteurs et de modèles pour vous aider à démarrer rapidement. Il est également doté de fonctions qui permettent aux utilisateurs expérimentés de se sentir chez eux.[¹]
+Il s'agit d'un éditeur et d'un visualiseur de diagrammes en ligne gratuit qui propose une grande variété de formes, d'icônes, de connecteurs et de modèles pour vous aider à démarrer rapidement. Il est également doté de fonctions qui permettent aux utilisateurs expérimentés de se sentir chez eux.[¹](#sources)
 
 ## Liens utiles
 
@@ -21,4 +21,4 @@ Il s'agit d'un éditeur et d'un visualiseur de diagrammes en ligne gratuit qui p
 
  ### Sources
 
- [¹]: [www.diagrams.net - about (en)](https://www.diagrams.net/about.html)
+ ¹ [www.diagrams.net - about (en)](https://www.diagrams.net/about.html)

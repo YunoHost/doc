@@ -8,7 +8,7 @@
 - [Applications clientes](#applications-clientes)
 - [Liens utiles](#liens-utiles)
 
-Gitlab est une forge logicielle très complète et dont le développement est très dynamique : une nouvelle version sort tous les 22 du mois. Gitlab est un logiciel en open core : il existe une version communautaire libre et une version entreprise propriétaire possédant plus de fonctionnalités.[¹]
+Gitlab est une forge logicielle très complète et dont le développement est très dynamique : une nouvelle version sort tous les 22 du mois. Gitlab est un logiciel en open core : il existe une version communautaire libre et une version entreprise propriétaire possédant plus de fonctionnalités.[¹](#sources)
 
 ## Limitations avec YunoHost
 
@@ -31,4 +31,4 @@ L'application Gitlab n'est pas compatible avec les architecture 32-bit.
 
 ### Sources
 
-[¹]: [framalibre.org - gitlab](https://framalibre.org/content/gitlab)
+¹ [framalibre.org - gitlab](https://framalibre.org/content/gitlab)

@@ -8,7 +8,7 @@
 - [Limitations avec YunoHost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
-Funkwhale est un serveur de flux continu de musique libre, auto-hébergé et fédéré. Chaque utilisateur⋅trice dispose d'une bibliothèque dans laquelle il/elle peut ajouter les titres qu'il/elle souhaite, et qu'il/elle peut partager avec d'autres utilisateurs, qu'ils soient sur la même instance ou non.[¹]
+Funkwhale est un serveur de flux continu de musique libre, auto-hébergé et fédéré. Chaque utilisateur⋅trice dispose d'une bibliothèque dans laquelle il/elle peut ajouter les titres qu'il/elle souhaite, et qu'il/elle peut partager avec d'autres utilisateurs, qu'ils soient sur la même instance ou non.[¹](#sources)
 
 ## Administration
 
@@ -29,4 +29,4 @@ Pour installer Funkwhale sur votre serveur YunoHost il est nécessaire d'avoir u
 
 ### Sources
 
-[¹]: [wikipedia.org - Funkwhale](https://fr.wikipedia.org/wiki/Funkwhale)
+¹ [wikipedia.org - Funkwhale](https://fr.wikipedia.org/wiki/Funkwhale)

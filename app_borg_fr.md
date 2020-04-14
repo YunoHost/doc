@@ -8,7 +8,7 @@
 
 BorgBackup (abréviation : Borg) est un programme de sauvegarde par déduplication. En option, il prend en charge la compression et le cryptage authentifié.
 
-L'objectif principal de Borg est de fournir un moyen efficace et sûr de sauvegarder les données. La technique de déduplication des données utilisée rend Borg adapté aux sauvegardes quotidiennes puisque seules les modifications sont stockées. La technique de cryptage authentifié permet de sauvegarder des données sur des cibles qui ne sont pas totalement fiables.[¹]
+L'objectif principal de Borg est de fournir un moyen efficace et sûr de sauvegarder les données. La technique de déduplication des données utilisée rend Borg adapté aux sauvegardes quotidiennes puisque seules les modifications sont stockées. La technique de cryptage authentifié permet de sauvegarder des données sur des cibles qui ne sont pas totalement fiables.[¹](#sources)
 
 ## Liens utiles
 
@@ -21,4 +21,4 @@ L'objectif principal de Borg est de fournir un moyen efficace et sûr de sauvega
 
 ### Sources
 
-[¹]: [borgbackup.readthedocs.io (en)](https://borgbackup.readthedocs.io/en/stable/#what-is-borgbackup)
+¹ [borgbackup.readthedocs.io (en)](https://borgbackup.readthedocs.io/en/stable/#what-is-borgbackup)

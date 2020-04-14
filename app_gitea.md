@@ -8,7 +8,7 @@
 - [Customer Applications](#customer-applications)
 - [Useful links](#useful-links)
 
-Gitea is a painless self-hosted Git service. It is similar to GitHub, Bitbucket, and GitLab. Gitea is a fork of Gogs.[¹]
+Gitea is a painless self-hosted Git service. It is similar to GitHub, Bitbucket, and GitLab. Gitea is a fork of Gogs.[¹](#sources)
 
 ## Limitations with YunoHost
 
@@ -33,4 +33,4 @@ If you want to use the git command (like git clone, git pull, git push), you nee
 
 ### Sources
 
-[¹]: [docs.gitea.io](https://docs.gitea.io/en-us/)
+¹ [docs.gitea.io](https://docs.gitea.io/en-us/)

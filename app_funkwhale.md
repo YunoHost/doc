@@ -8,7 +8,7 @@
 - [Limitations with YunoHost](#limitations-with-yunohost)
 - [Useful links](#useful-links)
 
-Funkwhale is a self-hosted, federated free music streaming server. Each utilisateur⋅trice has a library in which he/she can add the titles he/she wants, and which he/she can share with other users, whether they are on the same instance or not. [¹]
+Funkwhale is a self-hosted, federated free music streaming server. Each utilisateur⋅trice has a library in which he/she can add the titles he/she wants, and which he/she can share with other users, whether they are on the same instance or not. [¹](#sources)
 
 ## Administration
 
@@ -29,4 +29,4 @@ To install Funkwhale on your YunoHost server it is necessary to have a domain na
 
 ### Sources
 
-[¹]: [wikipedia.org - Funkwhale](https://fr.wikipedia.org/wiki/Funkwhale)
+¹ [wikipedia.org - Funkwhale](https://fr.wikipedia.org/wiki/Funkwhale)

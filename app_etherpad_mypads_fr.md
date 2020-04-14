@@ -7,7 +7,7 @@
 - [Configuration](#configuration)
 - [Liens utiles](#liens-utiles)
 
-Etherpad est un éditeur de texte libre en ligne fonctionnant en mode collaboratif et en temps réel. Il permet à plusieurs personnes de partager l'élaboration simultanée d'un texte, et d'en discuter en parallèle, via une messagerie instantanée. Il peut avoir des usages pédagogiques, notamment pour l'apprentissage collaboratif.[¹]
+Etherpad est un éditeur de texte libre en ligne fonctionnant en mode collaboratif et en temps réel. Il permet à plusieurs personnes de partager l'élaboration simultanée d'un texte, et d'en discuter en parallèle, via une messagerie instantanée. Il peut avoir des usages pédagogiques, notamment pour l'apprentissage collaboratif.[¹](#sources)
 
 ## Configuration
 
@@ -26,4 +26,4 @@ Il est possible d'accéder à deux panneaux de configurations :
 
 ### Sources
 
-[¹]: [wikipedia.org - Etherpad](https://fr.wikipedia.org/wiki/Etherpad)
+¹ [wikipedia.org - Etherpad](https://fr.wikipedia.org/wiki/Etherpad)

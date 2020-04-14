@@ -8,7 +8,7 @@
 
 BorgBackup (short: Borg) is a deduplicating backup program. Optionally, it supports compression and authenticated encryption.
 
-The main goal of Borg is to provide an efficient and secure way to backup data. The data deduplication technique used makes Borg suitable for daily backups since only changes are stored. The authenticated encryption technique makes it suitable for backups to not fully trusted targets.[¹]
+The main goal of Borg is to provide an efficient and secure way to backup data. The data deduplication technique used makes Borg suitable for daily backups since only changes are stored. The authenticated encryption technique makes it suitable for backups to not fully trusted targets.[¹](#sources)
 
 ## Useful links
 
@@ -21,4 +21,4 @@ The main goal of Borg is to provide an efficient and secure way to backup data. 
 
 ### Sources
 
-[¹]: [borgbackup.readthedocs.io](https://borgbackup.readthedocs.io/en/stable/#what-is-borgbackup)
+¹ [borgbackup.readthedocs.io](https://borgbackup.readthedocs.io/en/stable/#what-is-borgbackup)

@@ -8,7 +8,7 @@
 
 Dotclear est une application de publication de blogs à code source libre distribuée sous la licence GNU GPLv2. Développé à l'origine par Olivier Meunier à partir de 2002, Dotclear a maintenant attiré une solide équipe de développeurs. Il est relativement populaire dans les pays francophones, où il est utilisé par plusieurs grandes plateformes de blogs (Gandi Blogs, Marine nationale, etc.).
 
-L'objectif proposé par Dotclear est de développer un logiciel qui respecte pleinement les standards du web basés sur des solutions open source, avec une interface et des capacités de publication multilingues. Il est écrit en PHP.[¹]
+L'objectif proposé par Dotclear est de développer un logiciel qui respecte pleinement les standards du web basés sur des solutions open source, avec une interface et des capacités de publication multilingues. Il est écrit en PHP.[¹](#sources)
 
 ## Liens utiles
 
@@ -21,4 +21,4 @@ L'objectif proposé par Dotclear est de développer un logiciel qui respecte ple
 
  ### Sources
 
-[¹]: [wikipedia.org - Dotclear (en)](https://en.wikipedia.org/wiki/Dotclear)
+¹ [wikipedia.org - Dotclear (en)](https://en.wikipedia.org/wiki/Dotclear)

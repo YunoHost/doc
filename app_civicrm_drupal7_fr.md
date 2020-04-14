@@ -6,7 +6,7 @@
 
 - [Liens utiles](#liens-utiles)
 
-CiviCRM est une solution Web Open Source de gestion de la relation client. Elle a été spécialement conçue pour répondre aux besoins des organismes à but non lucratif, des organisations non gouvernementales et des groupes de pression.[¹]
+CiviCRM est une solution Web Open Source de gestion de la relation client. Elle a été spécialement conçue pour répondre aux besoins des organismes à but non lucratif, des organisations non gouvernementales et des groupes de pression.[¹](#sources)
 
 ## Liens utiles
 
@@ -19,4 +19,4 @@ CiviCRM est une solution Web Open Source de gestion de la relation client. Elle 
 
 ### Sources
 
-[¹]: [wikipedia.org - CiviCRM](https://fr.wikipedia.org/wiki/CiviCRM)
+¹ [wikipedia.org - CiviCRM](https://fr.wikipedia.org/wiki/CiviCRM)

@@ -7,7 +7,7 @@
 - [Limitations with YunoHost](#limitations-with-yunohost)
 - [Useful links](#useful-links)
 
-Dolibarr ERP CRM is an open source, free software package for small and medium companies, foundations or freelancers. It includes different features for enterprise resource planning (ERP) and customer relationship management (CRM) but also other features for different activities.[¹]
+Dolibarr ERP CRM is an open source, free software package for small and medium companies, foundations or freelancers. It includes different features for enterprise resource planning (ERP) and customer relationship management (CRM) but also other features for different activities.[¹](#sources)
 
 ## Limitations with YunoHost
 
@@ -24,4 +24,4 @@ Dolibarr must be a non-public application to be able to link yunohost accounts. 
 
 ### Sources
 
-[¹]: [wikipedia.org - Dolibarr](https://en.wikipedia.org/wiki/Dolibarr)
+¹ [wikipedia.org - Dolibarr](https://en.wikipedia.org/wiki/Dolibarr)

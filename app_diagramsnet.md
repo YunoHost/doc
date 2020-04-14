@@ -8,7 +8,7 @@
 
 diagrams.net lets you create a wide range of diagrams, from simple tree and flow diagrams, to highly technical network, rack and electrical diagrams.
 
-It’s a free, online diagram editor and viewer with a wide variety of shapes, icons, connector and templates to help you get started quickly. It’s also feature-rich–experienced diagrammers will feel at home.[¹]
+It’s a free, online diagram editor and viewer with a wide variety of shapes, icons, connector and templates to help you get started quickly. It’s also feature-rich–experienced diagrammers will feel at home.[¹](#sources)
 
 ## Useful links
 
@@ -21,4 +21,4 @@ It’s a free, online diagram editor and viewer with a wide variety of shapes, i
 
 ### Sources
 
-[¹]: [www.diagrams.net - about](https://www.diagrams.net/about.html)
+¹ [www.diagrams.net - about](https://www.diagrams.net/about.html)

@@ -6,7 +6,7 @@
 
 - [Useful links](#useful-links)
 
-Drupal is a free and open-source web content management framework written in PHP and distributed under the GNU General Public License. Drupal provides a back-end framework for at least 2.3% of all websites worldwide – ranging from personal blogs to corporate, political, and government sites. Systems also use Drupal for knowledge management and for business collaboration.[¹]
+Drupal is a free and open-source web content management framework written in PHP and distributed under the GNU General Public License. Drupal provides a back-end framework for at least 2.3% of all websites worldwide – ranging from personal blogs to corporate, political, and government sites. Systems also use Drupal for knowledge management and for business collaboration.[¹](#sources)
 
 ## Useful links
 
@@ -19,4 +19,4 @@ Drupal is a free and open-source web content management framework written in PHP
 
 ### Sources
 
-[¹]: [wikipedia.org - Drupal](https://en.wikipedia.org/wiki/Drupal)
+¹ [wikipedia.org - Drupal](https://en.wikipedia.org/wiki/Drupal)

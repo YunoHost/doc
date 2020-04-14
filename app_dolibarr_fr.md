@@ -7,7 +7,7 @@
 - [Limitations avec YunoHost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
-Dolibarr ERP/CRM est un progiciel de gestion intégré (PGI, ERP en anglais) et gestion de la relation client (GRC, CRM en anglais) open source pour les petites et moyennes entreprises, les indépendants, auto-entrepreneurs ou les associations .[¹]
+Dolibarr ERP/CRM est un progiciel de gestion intégré (PGI, ERP en anglais) et gestion de la relation client (GRC, CRM en anglais) open source pour les petites et moyennes entreprises, les indépendants, auto-entrepreneurs ou les associations .[¹](#sources)
 
 ## Limitations avec YunoHost
 
@@ -24,4 +24,4 @@ Dolibarr doit être une application non publique pour pouvoir relier les comptes
 
  ### Sources
 
- [¹]: [wikipedia.org - Dolibarr](https://fr.wikipedia.org/wiki/Dolibarr)
+ ¹ [wikipedia.org - Dolibarr](https://fr.wikipedia.org/wiki/Dolibarr)

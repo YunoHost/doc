@@ -6,7 +6,7 @@
 
 - [Useful links](#useful-links)
 
-CiviCRM is a web-based suite of internationalized open-source software for constituency relationship management that falls under the broad rubric of customer relationship management. It is specifically designed for the needs of non-profit,non-governmental, and advocacy groups, and serves as an association-management system.[¹]
+CiviCRM is a web-based suite of internationalized open-source software for constituency relationship management that falls under the broad rubric of customer relationship management. It is specifically designed for the needs of non-profit,non-governmental, and advocacy groups, and serves as an association-management system.[¹](#sources)
 
 ## Useful links
 
@@ -19,4 +19,4 @@ CiviCRM is a web-based suite of internationalized open-source software for const
 
 ### Sources
 
-[¹]: [wikipedia.org - CiviCRM](https://en.wikipedia.org/wiki/CiviCRM)
+¹ [wikipedia.org - CiviCRM](https://en.wikipedia.org/wiki/CiviCRM)

@@ -10,7 +10,7 @@
 
 BlogoText is not only a blog engine but rather a portal dedicated to writing content. Indeed, the administrator interface offers, in addition to the traditional tools dedicated to the blog, an RSS feed reader, a file host and a tool to share links.
 
-The advantage of this CMS is that it is very light and will be perfect to take care of the blog or news part of your website. BlogoText is written in PHP, runs a SQLite database and needs only 2MB of disk space.[¹]
+The advantage of this CMS is that it is very light and will be perfect to take care of the blog or news part of your website. BlogoText is written in PHP, runs a SQLite database and needs only 2MB of disk space.[¹](#sources)
 
 ## Features
 
@@ -35,4 +35,4 @@ HTTP and LDAP authentication are not supported. The application is not multi-use
 
   ### Sources
 
-[¹]: [framalibre.org - BlogoText (fr)](https://framalibre.org/content/blogotext)
+¹ [framalibre.org - BlogoText (fr)](https://framalibre.org/content/blogotext)

@@ -8,7 +8,7 @@
 - [Applications clientes](#applications-clients)
 - [Liens utiles](#liens-utiles)
 
-Gitea est un service Git auto-hébergé très simple à installer et à utiliser. Il est similaire à GitHub, Bitbucket ou Gitlab. Le développement initial provient sur Gogs, mais il a été forké puis renommé Gitea.[¹]
+Gitea est un service Git auto-hébergé très simple à installer et à utiliser. Il est similaire à GitHub, Bitbucket ou Gitlab. Le développement initial provient sur Gogs, mais il a été forké puis renommé Gitea.[¹](#sources)
 
 ## Limitations avec YunoHost
 
@@ -33,4 +33,4 @@ Si vous voulez utiliser la commande git (comme git clone, git pull, git push), v
 
 ### Sources
 
-[¹]: [docs.gitea.io](https://docs.gitea.io/fr-fr/)
+¹ [docs.gitea.io](https://docs.gitea.io/fr-fr/)

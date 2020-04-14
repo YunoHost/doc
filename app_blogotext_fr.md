@@ -10,7 +10,7 @@
 
 BlogoText n'est pas seulement un moteur de blog mais propose plutôt un portail dédié à l'écriture de contenu. En effet, l'interface administrateur propose, en plus des outils traditionnels dédiés au blog, un lecteur de flux RSS, un hébergeur de fichiers et un outil permettant de partager des liens.
 
-L'avantage de ce CMS est qu'il est très léger et sera parfait pour s'occuper de la partie blog ou actualité de votre site web. BlogoText est écrit en PHP, exploite une base de données SQLite et à seulement besoin de 2Mo d'espace disque. [¹]
+L'avantage de ce CMS est qu'il est très léger et sera parfait pour s'occuper de la partie blog ou actualité de votre site web. BlogoText est écrit en PHP, exploite une base de données SQLite et à seulement besoin de 2Mo d'espace disque. [¹](#sources)
 
 ## Fonctionnalités
 
@@ -35,4 +35,4 @@ Les authentification HTTP et LDAP ne sont pas pris en charges. L'application n'e
 
 ### Sources
 
-[¹]: [framalibre.org - BlogoText](https://framalibre.org/content/blogotext)
+¹ [framalibre.org - BlogoText](https://framalibre.org/content/blogotext)

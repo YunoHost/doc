@@ -9,7 +9,7 @@
 
 Friendica est une plateforme de communication décentralisée qui intègre la communication sociale. La plate-forme est liée à des projets sociaux indépendants et à des services aux entreprises.
 
-Son objectif est de libérer les amis, la famille et les collègues des entreprises qui récoltent des données ; Friendica vise à ce que la communication sociale soit libre et ouverte, tout en circulant entre tous les fournisseurs aussi facilement que le courrier électronique.[¹]
+Son objectif est de libérer les amis, la famille et les collègues des entreprises qui récoltent des données ; Friendica vise à ce que la communication sociale soit libre et ouverte, tout en circulant entre tous les fournisseurs aussi facilement que le courrier électronique.[¹](#sources)
 
 ## Configuration
 
@@ -31,4 +31,4 @@ Note : Vous pouvez utiliser les comptes du LDAP de YunoHost. Il n'y a pas encore
 
 ### Sources
 
-[¹]: [github.com - friendica/friendica (en)](https://github.com/friendica/friendica)
+¹ [github.com - friendica/friendica (en)](https://github.com/friendica/friendica)

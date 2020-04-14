@@ -6,7 +6,7 @@
 
 - [Liens utiles](#liens-utiles)
 
-Drupal1 est un système de gestion de contenu (CMS) libre et open-source publié sous la licence publique générale GNU et écrit en PHP.[¹]
+Drupal1 est un système de gestion de contenu (CMS) libre et open-source publié sous la licence publique générale GNU et écrit en PHP.[¹](#sources)
  Cette application YunoHost propose uniquement la version 7 de Drupal, si vous désirez la dernière version disponible pour YunoHost [voir ici](/app_drupal)
 
 ## Liens utiles
@@ -20,4 +20,4 @@ Drupal1 est un système de gestion de contenu (CMS) libre et open-source publié
 
  ### Sources
 
- [¹]: [wikipedia.org - Drupal](https://fr.wikipedia.org/wiki/Drupal)
+ ¹ [wikipedia.org - Drupal](https://fr.wikipedia.org/wiki/Drupal)

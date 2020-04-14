@@ -6,7 +6,7 @@
 
 - [Liens utiles](#liens-utiles)
 
-Grav est une plateforme Web rapide, simple et flexible, basée sur des fichiers. Aucune installation n'est nécessaire. Il suffit d'extraire l'archive ZIP, et vous êtes déjà opérationnel. Il suit des principes similaires à ceux des autres plates-formes CMS à fichiers plats, mais sa philosophie de conception est différente de la plupart des autres. Grav est livré avec un puissant système de gestion des paquets qui permet une installation et une mise à jour simples des plugins et des thèmes, ainsi qu'une mise à jour simple de Grav lui-même.[¹]
+Grav est une plateforme Web rapide, simple et flexible, basée sur des fichiers. Aucune installation n'est nécessaire. Il suffit d'extraire l'archive ZIP, et vous êtes déjà opérationnel. Il suit des principes similaires à ceux des autres plates-formes CMS à fichiers plats, mais sa philosophie de conception est différente de la plupart des autres. Grav est livré avec un puissant système de gestion des paquets qui permet une installation et une mise à jour simples des plugins et des thèmes, ainsi qu'une mise à jour simple de Grav lui-même.[¹](#sources)
 
 ## Liens utiles
 
@@ -19,4 +19,4 @@ Grav est une plateforme Web rapide, simple et flexible, basée sur des fichiers.
 
 ### Sources
 
-[¹]: [github.com - getgrav/grav (en)](https://github.com/getgrav/grav)
+¹ [github.com - getgrav/grav (en)](https://github.com/getgrav/grav)
