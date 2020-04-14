@@ -5,29 +5,32 @@
 ### Index
 
 - [Configuration](#configuration)
-- [Limitations avec Yunohost](#limitations-avec-yunohost)
-- [Applications clientes](#applications-clients)
+- [Limitations avec YunoHost](#limitations-avec-yunohost)
+- [Applications clientes](#applications-clientes)
 - [Liens utiles](#liens-utiles)
 
-**Présentation générale de l'application.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+Un simple serveur pour envoyer et recevoir des messages.
 
 ## Configuration
 
-**Si la configuration de l'application ne se fait pas avec le panel admin de YunoHost.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+Editer le fichier config.yml via SSH.
 
-## Limitations avec Yunohost
+## Limitations avec YunoHost
 
-**Explication des limitations actuelles en utilisation l'application avec YunoHost.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+Exiger un domaine dédié comme gotify.domain.tld.
+Pas de support LDAP (bloqué jusqu'à ce que le noyau Gotify en amont le mette en œuvre)
 
 ## Applications clientes
 
-| Nom de l'applications | Plateforme | Multi-comptes | Autre réseaux supportés | Play Store | F-Droid | Apple Store | *Autres* |
-|-----------------------|------------|---------------|-------------------------|------------|---------|-------------|----------|
-|                       |            |               |                         |            |         |             |          |
+| Nom de l'applications[¹] | Plateforme | Multi-comptes |  Play Store | F-Droid | Apple Store |
+|--------------------------|------------|---------------|-------------|---------|-------------|
+| Gotify (of) | Android | ? | [play.google.com - Gotify](https://play.google.com/store/apps/details?id=com.github.gotify) | [f-droid.org - Gotify](https://f-droid.org/de/packages/com.github.gotify/) | X |
+
+> [¹]: (of) : Officielle / (no) : non officiel
 
 ## Liens utiles
 
- + Site web : [SITE WEB](#)
- + Documentation officielle : [DOCUMENTATION](#)
+ + Site web : [gotify.net (en)](https://gotify.net/)
+ + Documentation officielle : [gotify.net - docs (en)](https://gotify.net/docs/index)
  + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/gotify](https://github.com/YunoHost-Apps/gotify_ynh)
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/gotify/issues](https://github.com/YunoHost-Apps/gotify_ynh/issues)

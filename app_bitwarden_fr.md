@@ -23,11 +23,13 @@ Les authentification HTTP et LDAP ne sont pas pris en charges.
 
 ## Applications clientes
 
-| Nom de l'applications | Plateforme | Multi-comptes | Lien |
-|-----------------------|------------|---------------|------|
+| Nom de l'applications[²] | Plateforme | Multi-comptes | Source | Play Store | F-Droid | Apple Store |
+|--------------------------|------------|---------------|--------|------------|---------|-------------|
 | Bitwarden | Linux / Mac / Windows  | Oui | [bitwarden.com - download](https://bitwarden.com/#download) |
-| Bitwarden | Android | ? | [Playstore - Birwarden](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden) |
-| Bitwarden | IOS | ? | [App Store - Bitwarden](https://itunes.apple.com/app/bitwarden-free-password-manager/id1137397744?mt=8) |
+| Bitwarden | Android / iOS | ? |  | [Playstore - Birwarden](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden) | X | [App Store - Bitwarden](https://itunes.apple.com/app/bitwarden-free-password-manager/id1137397744?mt=8) |
+
+
+> [²]: (of) : Officielle / (no) : non officiel
 
 ## Liens utiles
 

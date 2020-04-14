@@ -4,30 +4,33 @@
 
 ### Index
 
-- [Configuration](#Configuration)
+- [Configuration](#configuration)
 - [Limitations with YunoHost](#limitations-with-yunohost)
-- [Customer Applications](#Customer-applications)
+- [Customer Applications](#customer-applications)
 - [Useful links](#useful-links)
 
-**General presentation of the application.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+A simple server for sending and receiving messages.
 
 ## Configuration
 
-**If the configuration of the application is not done with the admin panel of YunoHost.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+Edit config.yml file via SSH.
 
 ## Limitations with YunoHost
 
-**Explanation of the current limitations in using the application with YunoHost.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+Require dedicated domain like gotify.domain.tld.
+No LDAP support (blocked until Gotify core upstream implements it)
 
 ## Customer applications
 
-| Application name | Platform | Multi-account | Other supported networks | Play Store | F-Droid | Apple Store | *Other* |
-|------------------|----------|---------------|--------------------------|------------|---------|-------------|---------|
-|                  |          |               |                          |            |         |             |         |
+| Application name[¹] | Platform | Multi-account | Play Store | F-Droid | Apple Store |
+|---------------------|----------|---------------|------------|---------|-------------|
+| Gotify (of) | Android | ? | [play.google.com - Gotify](https://play.google.com/store/apps/details?id=com.github.gotify) | [f-droid.org - Gotify](https://f-droid.org/de/packages/com.github.gotify/) | X |
+
+> [¹]: (of) : Official / (un) : Unofficial
 
 ## Useful links
 
-+ Website: [WEBSITE](#)
-+ Official documentation: [DOCUMENTATION](#)
++ Website: [gotify.net](https://gotify.net/)
++ Official documentation: [https://gotify.net/docs/index](https://gotify.net/docs/index)
 + Application software repository: [github.com - YunoHost-Apps/gotify](https://github.com/YunoHost-Apps/gotify_ynh)
 + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/gotify/issues](https://github.com/YunoHost-Apps/gotify_ynh/issues)

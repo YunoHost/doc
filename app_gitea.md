@@ -16,9 +16,11 @@ If you want to use the git command (like git clone, git pull, git push), you nee
 
 ## Customer applications
 
-| Application name | Platform | Multi-account |Source | Play Store | F-Droid | Apple Store |
+| Application name[²] | Platform | Multi-account |Source | Play Store | F-Droid | Apple Store |
 |------------------|----------|---------------|-------|------------|---------|-------------|
-| GitNex (Unofficial) | Android | ? | [gitnex.com (en)](https://gitnex.com/) | [GitNex - PlayStore](https://play.google.com/store/apps/details?id=org.mian.gitnex) | [GitNex - F-Droid](https://f-droid.org/fr/packages/org.mian.gitnex/) | X |
+| GitNex (un) | Android | ? | [gitnex.com (en)](https://gitnex.com/) | [GitNex - PlayStore](https://play.google.com/store/apps/details?id=org.mian.gitnex) | [GitNex - F-Droid](https://f-droid.org/fr/packages/org.mian.gitnex/) | X |
+
+> [²]: (of) : Official / (un) : Unofficial
 
 ## Useful links
 
