@@ -20,4 +20,8 @@ Il est pour le moment impossible d'ajouter et d'utiliser les utilisateurs intern
 + Dépôt logiciel de l'application : [github.com - YunoHost-App/dokuwiki](https://github.com/YunoHost-Apps/dokuwiki_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/dokuwiki/issues](https://github.com/YunoHost-Apps/dokuwiki_ynh/issues)
 
+------
+
+### Sources
+
 [¹]: [wikipedia.org - Dokuwiki](https://fr.wikipedia.org/wiki/DokuWiki)

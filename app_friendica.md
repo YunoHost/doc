@@ -29,4 +29,6 @@ Note:You can use accounts from YunoHost's LDAP. There are not yet active SSO.
 
 ------
 
+### Sources
+
 [¹]: [github.com - friendica/friendica](https://github.com/friendica/friendica)

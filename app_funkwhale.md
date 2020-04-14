@@ -27,4 +27,6 @@ To install Funkwhale on your YunoHost server it is necessary to have a domain na
 
 -----
 
+### Sources
+
 [¹]: [wikipedia.org - Funkwhale](https://fr.wikipedia.org/wiki/Funkwhale)

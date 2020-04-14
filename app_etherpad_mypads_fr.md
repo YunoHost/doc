@@ -22,4 +22,8 @@ Il est possible d'accéder à deux panneaux de configurations :
 + Dépôt logiciel de l'application : [github.com - YunoHost-App/etherpad_mypads](https://github.com/YunoHost-Apps/etherpad_mypads_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/etherpad_mypads/issues](https://github.com/YunoHost-Apps/etherpad_mypads_ynh/issues)
 
+------
+
+### Sources
+
 [¹]: [wikipedia.org - Etherpad](https://fr.wikipedia.org/wiki/Etherpad)

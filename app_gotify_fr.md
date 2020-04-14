@@ -22,7 +22,7 @@ Pas de support LDAP (bloqué jusqu'à ce que le noyau Gotify en amont le mette e
 
 ## Applications clientes
 
-| Nom de l'applications[¹] | Plateforme | Multi-comptes |  Play Store | F-Droid | Apple Store |
+| Nom de l'application [¹] | Plateforme | Multi-comptes |  Play Store | F-Droid | Apple Store |
 |--------------------------|------------|---------------|-------------|---------|-------------|
 | Gotify (of) | Android | ? | [play.google.com - Gotify](https://play.google.com/store/apps/details?id=com.github.gotify) | [f-droid.org - Gotify](https://f-droid.org/de/packages/com.github.gotify/) | X |
 

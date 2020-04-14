@@ -22,4 +22,6 @@ Dolibarr must be a non-public application to be able to link yunohost accounts. 
 
 -----
 
+### Sources
+
 [¹]: [wikipedia.org - Dolibarr](https://en.wikipedia.org/wiki/Dolibarr)

@@ -29,4 +29,6 @@ The Gitlab application is not compatible with 32-bit architectures.
 
 ------
 
+### Sources
+
 [¹]: [framalibre.org - gitlab (fr)](https://framalibre.org/content/gitlab)

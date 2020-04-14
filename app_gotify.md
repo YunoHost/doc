@@ -22,8 +22,8 @@ No LDAP support (blocked until Gotify core upstream implements it)
 
 ## Customer applications
 
-| Application name[¹] | Platform | Multi-account | Play Store | F-Droid | Apple Store |
-|---------------------|----------|---------------|------------|---------|-------------|
+| Application name [¹] | Platform | Multi-account | Play Store | F-Droid | Apple Store |
+|----------------------|----------|---------------|------------|---------|-------------|
 | Gotify (of) | Android | ? | [play.google.com - Gotify](https://play.google.com/store/apps/details?id=com.github.gotify) | [f-droid.org - Gotify](https://f-droid.org/de/packages/com.github.gotify/) | X |
 
 > [¹]: (of) : Official / (un) : Unofficial

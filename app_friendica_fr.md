@@ -29,4 +29,6 @@ Note : Vous pouvez utiliser les comptes du LDAP de YunoHost. Il n'y a pas encore
 
 ------
 
+### Sources
+
 [¹]: [github.com - friendica/friendica (en)](https://github.com/friendica/friendica)

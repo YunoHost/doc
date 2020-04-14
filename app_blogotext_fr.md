@@ -33,4 +33,6 @@ Les authentification HTTP et LDAP ne sont pas pris en charges. L'application n'e
 
 ------
 
+### Sources
+
 [¹]: [framalibre.org - BlogoText](https://framalibre.org/content/blogotext)

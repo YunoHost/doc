@@ -23,7 +23,7 @@ Les authentification HTTP et LDAP ne sont pas pris en charges.
 
 ## Applications clientes
 
-| Nom de l'applications[²] | Plateforme | Multi-comptes | Source | Play Store | F-Droid | Apple Store |
+| Nom de l'application [²] | Plateforme | Multi-comptes | Source | Play Store | F-Droid | Apple Store |
 |--------------------------|------------|---------------|--------|------------|---------|-------------|
 | Bitwarden | Linux / Mac / Windows  | Oui | [bitwarden.com - download](https://bitwarden.com/#download) |
 | Bitwarden | Android / iOS | ? |  | [Playstore - Birwarden](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden) | X | [App Store - Bitwarden](https://itunes.apple.com/app/bitwarden-free-password-manager/id1137397744?mt=8) |
@@ -39,5 +39,7 @@ Les authentification HTTP et LDAP ne sont pas pris en charges.
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/bitwarden/issues](https://github.com/YunoHost-Apps/bitwarden_ynh/issues)
 
  ------
+
+ ### Sources
 
 [¹]: [wikipedia.org - Bitwarden](https://fr.wikipedia.org/wiki/Bitwarden)

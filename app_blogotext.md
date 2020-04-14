@@ -33,4 +33,6 @@ HTTP and LDAP authentication are not supported. The application is not multi-use
 
   -----
 
+  ### Sources
+
 [¹]: [framalibre.org - BlogoText (fr)](https://framalibre.org/content/blogotext)

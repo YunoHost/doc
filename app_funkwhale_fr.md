@@ -27,4 +27,6 @@ Pour installer Funkwhale sur votre serveur YunoHost il est nécessaire d'avoir u
 
 -----
 
+### Sources
+
 [¹]: [wikipedia.org - Funkwhale](https://fr.wikipedia.org/wiki/Funkwhale)

@@ -22,4 +22,8 @@ Two control panels can be accessed:
 + Application software repository: [github.com - YunoHost-App/etherpad_mypads](https://github.com/YunoHost-Apps/etherpad_mypads_ynh)
 + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/etherpad_mypads/issues](https://github.com/YunoHost-Apps/etherpad_mypads_ynh/issues)
 
+------
+
+### Sources
+
 [¹]: [wikipedia.org - Etherpad (fr)](https://fr.wikipedia.org/wiki/Etherpad)

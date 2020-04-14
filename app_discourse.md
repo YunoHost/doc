@@ -22,4 +22,6 @@ In the administration dashboard, The installed version is shown as unknown (due 
 
 -----
 
+### Sources
+
 [¹]: [framalibre.org - Discourse (fr)](https://framalibre.org/content/discourse)

@@ -19,4 +19,6 @@ Dotclear's proposed aim is to develop a software that fully respects web standar
 
 -----
 
+### Sources
+
 [¹]: [wikipedia.org - Dotclear](https://en.wikipedia.org/wiki/Dotclear)

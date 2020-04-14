@@ -23,8 +23,8 @@ HTTP and LDAP authentication are not supported.
 
 ## Customer applications
 
-| Application name[²] | Platform | Multi-account | Source | Play Store | F-Droid | Apple Store |
-|---------------------|----------|---------------|--------|------------|---------|-------------|
+| Application name [²] | Platform | Multi-account | Source | Play Store | F-Droid | Apple Store |
+|----------------------|----------|---------------|--------|------------|---------|-------------|
 | Bitwarden | Linux / Mac / Windows  | Oui | [bitwarden.com - download](https://bitwarden.com/#download) |
 | Bitwarden | Android / iOS | ? |  | [Playstore - Birwarden](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden) | X | [App Store - Bitwarden](https://itunes.apple.com/app/bitwarden-free-password-manager/id1137397744?mt=8) |
 
@@ -38,5 +38,7 @@ HTTP and LDAP authentication are not supported.
 + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/bitwarden/issues](https://github.com/YunoHost-Apps/bitwarden_ynh/issues)
 
 -----
+
+### Sources
 
 [¹]: [wikipedia.org - Bitwarden](https://en.wikipedia.org/wiki/Bitwarden)

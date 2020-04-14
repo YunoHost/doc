@@ -16,7 +16,7 @@ Si vous voulez utiliser la commande git (comme git clone, git pull, git push), v
 
 ## Applications clientes
 
-| Nom de l'applications[²] | Plateforme | Multi-comptes | Source | Play Store | F-Droid | Apple Store |
+| Nom de l'application [²] | Plateforme | Multi-comptes | Source | Play Store | F-Droid | Apple Store |
 |--------------------------|------------|---------------|--------|------------|---------|-------------|
 | GitNex (no) | Android | ? | [gitnex.com (en)](https://gitnex.com/) | [GitNex - PlayStore](https://play.google.com/store/apps/details?id=org.mian.gitnex) | [GitNex - F-Droid](https://f-droid.org/fr/packages/org.mian.gitnex/) | X |
 
@@ -30,5 +30,7 @@ Si vous voulez utiliser la commande git (comme git clone, git pull, git push), v
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/gitea/issues](https://github.com/YunoHost-Apps/gitea_ynh/issues)
 
 ------
+
+### Sources
 
 [¹]: [docs.gitea.io](https://docs.gitea.io/fr-fr/)

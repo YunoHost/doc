@@ -27,7 +27,7 @@ API (mini) How To
 
 | Application name | Platform | Multi-account | Play Store | F-Droid | Play Store |
 |------------------|----------|---------------|------------|---------|------------|
-| Fresh RSS        | Android  |      ?        |            | [Fresh RSS](https://f-droid.org/fr/packages/fr.chenry.android.freshrss/) | X |
+| Fresh RSS | Android  | ? |  | [f-droid.org - Fresh RSS](https://f-droid.org/fr/packages/fr.chenry.android.freshrss/) | X |
 
 ## Useful links
 

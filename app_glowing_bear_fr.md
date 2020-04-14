@@ -17,4 +17,6 @@ Glowing Bear est un frontal web pour le client IRC WeeChat et s'efforce d'être 
 
 ------
 
+### Sources
+
 [¹]: [github.com - glowing-bear/glowing-bear (en)](https://github.com/glowing-bear/glowing-bear)
