@@ -39,6 +39,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [ERPnext](https://erpnext.com/download) / [github](https://github.com/frappe/erpnext)
 - [EteSync](https://www.etesync.com/) / [github](https://github.com/etesync)
 - [Epicyon](https://epicyon.net/) / [gitlab](https://gitlab.com/bashrc2/epicyon)
+- [Ferdi server](https://github.com/getferdi/server) is the server to self host the data and configuration of the [ferdi](https://getferdi.com/) messaging aggregator client.
 - [FEX](http://fex.rus.uni-stuttgart.de/)
 - [FitTrackee](https://github.com/SamR1/FitTrackee)
 - [Fossil](http://www.fossil-scm.org)
