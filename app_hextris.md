@@ -6,13 +6,13 @@
 
 - [Useful links](#useful-links)
 
-Because sometimes you have to know how to relax. Host your own fork of the famous Tetris and become the master of this infernal hexagon.
+Because sometimes you have to know how to relax. Host your own fork of the famous Tetris and become the master of this infernal hexagon hexagon?
 Who will tame this infernal.
 
 ## Useful links
 
 + Website: [hextris.github.io](http://hextris.github.io/)
-+ Official documentation: [DOCUMENTATION](#)
++ Official documentation: [github.com - Hextris](https://github.com/Hextris/Hextris)
 + Application software repository: [github.com - YunoHost-Apps/hextris](https://github.com/YunoHost-Apps/hextris_ynh)
 + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/hextris/issues](https://github.com/YunoHost-Apps/hextris_ynh/issues)
  hexagon?

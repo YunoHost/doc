@@ -1,17 +1,6 @@
-#Webtrees
+# <img src="/images/webtrees_logo.png" width="80px" alt="Webtrees's logo"> Webtrees
 
-webtrees is the web's leading online collaborative genealogy application.
-
-  * It works from standard GEDCOM files, and is therefore compatible with every major desktop application.
-  * It aims to to be efficient and effective by using the right combination of third-party tools, design techniques and open standards.
-
-webtrees allows you to view and edit your genealogy on your website. It has full editing capabilities, full privacy functions, and supports imedia such as photos and document images. As an online program, it fosters extended family participation and good ancestral recording habits, as it simplifies the process of collaborating with others working on your family lines. Your latest information is always on your web site and available for others to see, defined by viewing rules you set.
-
----------------------------
-
-# <img src="/images/APPLICATION_logo.svg" width="80px" alt="APPLICATION's logo"> APPLICATION
-
-[![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+[![Install Webtrees with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=webtrees) [![Integration level](https://dash.yunohost.org/integration/webtrees.svg)](https://dash.yunohost.org/appci/app/webtrees)
 
 ### Index
 
@@ -20,7 +9,12 @@ webtrees allows you to view and edit your genealogy on your website. It has full
 - [Customer Applications](#customer-applications)
 - [Useful links](#useful-links)
 
-**General presentation of the application.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+Webtrees is the web's leading online collaborative genealogy application.
+
+  * It works from standard GEDCOM files, and is therefore compatible with every major desktop application.
+  * It aims to to be efficient and effective by using the right combination of third-party tools, design techniques and open standards.
+
+Webtrees allows you to view and edit your genealogy on your website. It has full editing capabilities, full privacy functions, and supports imedia such as photos and document images. As an online program, it fosters extended family participation and good ancestral recording habits, as it simplifies the process of collaborating with others working on your family lines. Your latest information is always on your web site and available for others to see, defined by viewing rules you set.
 
 ## Configuration
 
@@ -38,7 +32,7 @@ webtrees allows you to view and edit your genealogy on your website. It has full
 
 ## Useful links
 
-+ Website: [WEBSITE](#)
-+ Official documentation: [DOCUMENTATION](#)
-+ Application software repository: [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
-+ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
++ Website: [www.webtrees.net](https://www.webtrees.net)
++ Official documentation: [wiki.webtrees.net](https://wiki.webtrees.net/en/Main_Page)
++ Application software repository: [github.com - YunoHost-Apps/webtrees](https://github.com/YunoHost-Apps/webtrees_ynh)
++ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/webtrees/issues](https://github.com/YunoHost-Apps/webtrees_ynh/issues)
