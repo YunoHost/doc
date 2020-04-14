@@ -5,7 +5,7 @@
 - [Limitations avec Yunohost](#limitations-avec-yunohost)
 - [Fonctionnalités](fonctionnalite)
 - [Mettre à niveau depuis la V1.x](#mettre-a-niveau-depuis-la-version-1.x)
-- [Applications clientes](#applications-clients)
+- [Applications clientes](#applications-clientes)
 - [Liens utiles](#liens-utiles)
 
 Wallabag est une application de lecture différée : elle  permet simplement d’archiver une page web en ne conservant que le contenu. Les éléments superflus (menus, publicités, etc.) sont supprimés.

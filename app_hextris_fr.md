@@ -1,34 +1,13 @@
-Car parfois il faut savoir se détendre. Hébergez votre propre fork du célèbre Tetris et devenez le maitre de cet hexagone infernal.
-Qui domptera cet hexagone infernal ?
-
--------------------------------------
-
 # <img src="/images/hextris_logo.png" width="80px" alt="logo de Hextris"> Hextris
 
 [![Install Hextris with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=hextris) [![Integration level](https://dash.yunohost.org/integration/hextris.svg)](https://dash.yunohost.org/appci/app/hextris)
 
 ### Index
 
-- [Configuration](#configuration)
-- [Limitations avec Yunohost](#limitations-avec-yunohost)
-- [Applications clientes](#applications-clients)
 - [Liens utiles](#liens-utiles)
 
-**Présentation générale de l'application.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
-
-## Configuration
-
-**Si la configuration de l'application ne se fait pas avec le panel admin de YunoHost.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
-
-## Limitations avec Yunohost
-
-**Explication des limitations actuelles en utilisation l'application avec YunoHost.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
-
-## Applications clientes
-
-| Nom de l'applications | Plateforme | Multi-comptes | Autre réseaux supportés | Play Store | F-Droid | Apple Store | *Autres* |
-|-----------------------|------------|---------------|-------------------------|------------|---------|-------------|----------|
-|                       |            |               |                         |            |         |             |          |
+Car parfois il faut savoir se détendre. Hébergez votre propre fork du célèbre Tetris et devenez le maitre de cet hexagone infernal.
+Qui domptera cet hexagone infernal ?
 
 ## Liens utiles
 
