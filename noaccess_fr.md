@@ -67,12 +67,12 @@ NB: le bannissement dure en général 10 à 12 minutes. Le bannissement n'est ac
 
 #### Le serveur web nginx est cassé
 
-Peut-être que le serveur web nginx est en panne. Vous pouvez vérifier cela [en ssh](/ssh) avec `yunohost service status ssh`. Si il est en panne, vérifiez que la configuration ne comporte pas d'erreur avec `nginx -t`. Si la configuration est cassé, ceci est peut-être du à une l'installation ou désinstallation d'une application de mauvaise qualité... Si vous êtes perdu, [demandez de l'aide](/help).
+Peut-être que le serveur web nginx est en panne. Vous pouvez vérifier cela [en ssh](/ssh) avec `yunohost service status ssh`. Si il est en panne, vérifiez que la configuration ne comporte pas d'erreur avec `nginx -t`. Si la configuration est cassée, ceci est peut-être du à une l'installation ou désinstallation d'une application de mauvaise qualité... Si vous êtes perdu, [demandez de l'aide](/help).
 
-Il se peut également que le serveur web (nginx) ou le serveur ssh aient été tué suite à un manque d'espace disque ou de RAM / swap.
+Il se peut également que le serveur web (nginx) ou le serveur ssh aient été tués suite à un manque d'espace disque ou de RAM / swap.
 - Tentez de relancer le service avec `systemctl restart nginx`.
-- Vous pouvez contrôler l'espace disque utilisé avec `df -h`. Si une de vos partition est remplie à 100%, il faut identifier ce qui prend de la place sur votre système et faire de la place. Il est possible d'installer l'utilitaire `ncdu` avec `apt install ncdu` puis de faire `ncdu /` pour analyser la taille des dossiers de  toute l'arborescence.
-- Vous pouvez contrôler l'utilisation de la RAM / swap avec `free -h`. En fonction des résultats, il peut être nécessaire d'optimiser votre serveur pour qu'il utilise moins de ram (suppression d'app lourdes et inutiles, ...), d'ajouter de la RAM ou d'ajouter un fichier de swap.
+- Vous pouvez contrôler l'espace disque utilisé avec `df -h`. Si une de vos partitions est remplie à 100%, il faut identifier ce qui prend de la place sur votre système et faire de la place. Il est possible d'installer l'utilitaire `ncdu` avec `apt install ncdu` puis de faire `ncdu /` pour analyser la taille des dossiers de  toute l'arborescence.
+- Vous pouvez contrôler l'utilisation de la RAM / swap avec `free -h`. En fonction des résultats, il peut être nécessaire d'optimiser votre serveur pour qu'il utilise moins de RAM (suppression d'app lourdes et inutiles, ...), d'ajouter de la RAM ou d'ajouter un fichier de swap.
 
 #### Votre serveur est accessible en IPv6 mais pas en IPv4 ou inversement
 
@@ -82,7 +82,7 @@ Dans un tel cas, il est possible que vous arriviez à accéder à votre web admi
 
 Dans ce cas il faut résoudre votre problème de connectivité.
 
-Dans certains cas une mise à jour de votre box a activé l'IPv6, entraînant des problèmes de configuration au niveau de votre nom de domaine.
+Dans certains, cas une mise à jour de votre box a activé l'IPv6, entraînant des problèmes de configuration au niveau de votre nom de domaine.
 
 
 
@@ -90,27 +90,25 @@ Dans certains cas une mise à jour de votre box a activé l'IPv6, entraînant de
 
 
 
-## La webadmin fonctionne, mais certaines applications web me renvoie une erreur 502.
+## La webadmin fonctionne, mais certaines applications web me renvoient une erreur 502.
 
-Il est fort probablement que le service correspondant à ces applications soit en panne (Typiquement pour les applications PHP, il s'agit de php7.0-fpm ou php7.3-fpm). Vous pouvez alors tenter de relancer le service, et si cela ne fonctionne pas, regarder les logs du service correspondant et/ou [demander de l'aide](/help).
+Il est fort probablement que le service correspondant à ces applications soit en panne (typiquement pour les applications PHP, il s'agit de php7.0-fpm ou php7.3-fpm). Vous pouvez alors tenter de relancer le service, et si cela ne fonctionne pas, regarder les logs du service correspondant et/ou [demander de l'aide](/help).
 
 
 
 
 ## Vous avez perdu votre mot de passe administrateur ? (ou bien le mot de passe est refusé)
 
-Si vous arrivez à afficher la page web d'administration (forcer le rafraîchissement avec CTRL + F5 pour être sur) et que vous n'arrivez pas à vous connectez. Vous avez probablement un mot de passe erroné.
+Si vous arrivez à afficher la page web d'administration (forcez le rafraîchissement avec CTRL + F5 pour être sur) et que vous n'arrivez pas à vous connectez, vous avez probablement un mot de passe erroné.
 
-Si vous êtes certain du mot de passe, il est possible que le service SLAPD qui gère l'authentification soit en panne. Si c'est le cas, il vous faut vous connecter en root.
-- Si votre serveur est chez vous, vous avez sans doute accès au réseau local du serveur. Depuis ce réseau, vous pouvez vous connecter [en SSH](/ssh) avec l'utilisateur root.
-- Si vous êtes sur un VPS, votre hébergeur vous fourni peut-être la possibilité d'avoir une console sur votre serveur depuis le navigateur web. 
+Si vous êtes certain du mot de passe, il est possible que le service SLAPD qui gère l'authentification soit en panne. Si c'est le cas, il vous faut vous connecter en `root`.
+- Si votre serveur est chez vous, vous avez sans doute accès au réseau local du serveur. Depuis ce réseau, vous pouvez vous connecter [en SSH](/ssh) avec l'utilisateur `root`.
+- Si vous êtes sur un VPS, votre hébergeur vous fournit peut-être la possibilité d'avoir une console sur votre serveur depuis le navigateur web. 
 Une fois connecté, il vous faut regarder l'état du service avec la commande `yunohost service status slapd` et/ou tenter de réinitialiser votre mot de passe avec la commande `yunohost tools adminpw`.
 
-Si vous ne pouvez pas ou ne réussissez pas non plus à vous connecter en root, vous allez devoir opérer en mode rescue.
+Si vous ne pouvez pas ou ne réussissez pas non plus à vous connecter en `root`, vous allez devoir opérer en mode rescue.
 
 TODO: à compléter
-
-
 
 
 ## Votre VPN a expiré ou ne se monte plus
@@ -119,30 +117,28 @@ Si vous utilisez un VPN a IP fixe, peut être que celui-ci est arrivé à expira
 
 Dans ce cas, vous pouvez peut être accéder à votre serveur avec son IP locale s'agissant probablement d'un serveur auto-hébergé chez-vous.
 
-Pour connaître votre ip locale, certaines BOX propose une cartographie du réseau en cours avec les équipements connectés. Sinon, en ligne de commande avec linux:
+Pour connaître votre IP locale, certaines BOX proposent une cartographie du réseau en cours avec les équipements connectés. Sinon, en ligne de commande avec linux:
 ```bash
 sudo arp-scan --local
 ```
 
-Vous pouvez aussi essayer avec le domaine `yunohost.local` si il n'y a qu'un seul YunoHost sur votre réseau.
+Vous pouvez aussi essayer avec le domaine `yunohost.local` s'il n'y a qu'un seul YunoHost sur votre réseau.
 
 Il faut voir avec votre fournisseur de VPN pour renouveler le VPN et mettre à jour les paramètre de l'app VPN Client.
 
-TODO
-
-
+TODO: à compléter
 
 ## Votre serveur est coincé au démarrage
 
-Dans certains cas, votre serveur peut rester coincer au démarrage. Il peut s'agir d'un problème suite à l'installation d'un nouveau kernel. Essayez de choisir un autre kernel avec VNC ou avec l'écran lors du boot.
+Dans certains cas, votre serveur peut rester coincé au démarrage. Il peut s'agir d'un problème suite à l'installation d'un nouveau kernel. Essayez de choisir un autre kernel avec VNC ou avec l'écran lors du boot.
 
-Si vous êtes en grub rescue, dans ce cas il peut s'agir d'un problème de configuration de grub ou d'un disque corrompu.
+Si vous êtes en mode `rescue` avec `grub`, dans ce cas il peut s'agir d'un problème de configuration de `grub` ou d'un disque corrompu.
 
-Dans ce cas il faut accéder au disque avec un autre système (mode rescue du fournisseur, live usb, lire la carte SD ou le disque dur avec un autre ordinateur) et essayer de vérifier l'intégrité des partitions avec smartctl, fsck et mount.
+Dans ce cas il faut accéder au disque avec un autre système (mode `rescue` du fournisseur, live usb, lire la carte SD ou le disque dur avec un autre ordinateur) et essayer de vérifier l'intégrité des partitions avec `smartctl`, `fsck` et `mount`.
 
-Si les disques sont corrompus et difficile à monter, il faut sauvegarder les données et potentiellement refaire un formatage/réinstaller et/ou changer le disque. Si on arrive à monter le disque, il est possible d'utiliser systemd-nspawn pour entrer dans la base de donnée.
+Si les disques sont corrompus et difficiles à monter, il faut sauvegarder les données et potentiellement refaire un formatage/réinstaller et/ou changer le disque. Si on arrive à monter le disque, il est possible d'utiliser `systemd-nspawn` pour entrer dans la base de données.
 
-Sinon, relancer grub-update et grub-install en chroot ou avec systemd-nspawn.
+Sinon, relancer `grub-update` et `grub-install` en `chroot` ou avec `systemd-nspawn`.
 
 
 
@@ -152,4 +148,4 @@ Sinon, relancer grub-update et grub-install en chroot ou avec systemd-nspawn.
 
 Dans ce cas il peut s'agir d'un problème matériel sur votre serveur physique ou d'un problème d'hyperviseur si c'est un VPS.
 
-Si c'est une machine loué contacter le support de votre fournisseur. Sinon essayez de dépanner votre machine en retirant les composants qui peuvent être en panne.
+Si c'est une machine louée contactez le support de votre fournisseur. Sinon, essayez de dépanner votre machine en retirant les composants qui peuvent être en panne.
