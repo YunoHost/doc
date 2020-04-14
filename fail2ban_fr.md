@@ -6,7 +6,7 @@ En particulier, **Fail2ban** surveille les tentatives de connexion `SSH`. Après
 
 ## Débannir une IP
 
-Pour débloquer une IP, vous devez d'abord accéder à votre serveur par un moyen quelconque (par exemple à partir d'une autre IP ou connexion internet que celle bannie).
+Pour débloquer une addresse IP, vous devez d'abord accéder à votre serveur par un moyen quelconque (par exemple à partir d'une autre IP ou d'une autre connexion internet que celle bannie).
 
 Ensuite, regardez le **journal de fail2ban** pour identifier dans quelle `prison` ou `jail` l'IP a été bannie :
 
@@ -32,11 +32,11 @@ sudo fail2ban-client set recidive unbanip 11.22.33.44
 
 ## Passer une IP en liste blanche / whitelist
 
-Si vous ne voulez plus qu'une adresse IP "légitime" soit bloquée par **YunoHost**, alors il faut la renseigner dans la liste blanche ou whitelist du fichier de configuration de la prison.
+Si vous ne voulez plus qu'une adresse IP "légitime" soit bloquée par **YunoHost**, alors il faut la renseigner dans la liste blanche ou whitelist du fichier de configuration de la `prison`.
 
 Lors d'une mise à jour du logiciel **Fail2ban**, le fichier d'origine `/etc/fail2ban/jail.conf` est écrasé. C'est donc sur un nouveau fichier `jail.local` de ce fichier que nous allons apporter les modifications dans `/etc/fail2ban/jail.local`. Elles seront ainsi conservées dans le temps.
 
-1. Commencez donc par créer le nouveau fichier de configuration des prisons qui s’appelera `jail.local` :
+1. Commencez par créer le nouveau fichier de configuration des prisons qui s’appelera `jail.local` :
 
     ```bash
     sudo touch /etc/fail2ban/jail.local
@@ -48,7 +48,7 @@ Lors d'une mise à jour du logiciel **Fail2ban**, le fichier d'origine `/etc/fai
     sudo nano /etc/fail2ban/jail.local
     ```
 
-3. Coller le contenu suivant dans le fichier et adapter l'IP ```XXX.XXX.XXX.XXX``` :
+3. Coller le contenu suivant dans le fichier et adapter l'IP `XXX.XXX.XXX.XXX` :
 
     ```bash
     [DEFAULT]
