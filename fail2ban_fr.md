@@ -32,25 +32,34 @@ $ fail2ban-client set recidive unbanip 11.22.33.44
 
 ## Passer une IP en liste blanche / whitelist
 
-Si vous ne voulez plus qu'une adresse IP "légitime" soit bloquée par fail2ban, alors il faut la renseigner dans la liste blanche / whitelist du fichier de configuration de la prison.
+Si vous ne voulez plus qu'une adresse IP "légitime" soit bloquée par YunoHost, alors il faut la renseigner dans la liste blanche ou whitelist du fichier de configuration de la prison.
 
-Lors d'une mise à jour du logiciel Fail2ban, le fichier d'origine /etc/fail2ban/jail.conf est écrasé. C'est donc sur une copie renomée en .local de ce fichier que nous allons apporter nos modifications /etc/fail2ban/jail.local.
-Commencez donc par faire une copie du fichier de configuration des prisons (/etc/fail2ban/jail.conf) qui s’appelera jail.local :
-```bash
-$ cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
-```
+Lors d'une mise à jour du logiciel `Fail2ban`, le fichier d'origine `/etc/fail2ban/jail.conf` est écrasé. C'est donc sur un nouveau fichier `jail.local` de ce fichier que nous allons apporter les modifications dans `/etc/fail2ban/jail.local`. Elles seront ainsi conservées dans le temps.
 
-Éditez ce nouveau fichier :
-```bash
-$ sudo nano /etc/fail2ban/jail.local
-```
+1. Commencez donc par créer le nouveau fichier de configuration des prisons qui s’appelera `jail.local` :
 
-Complétez la ligne ```ignoreipe =``` :
+    ```bash
+    sudo touch /etc/fail2ban/jail.local
+    ```
 
-```bash 
-ignoreip = 127.0.0.1/8 XXX.XXX.XXX.XXX #<= l'adresse IP (on peut en mettre plusieurs, séparées par un espace) que vous voulez passer en liste blanche / whitelist```
+2. Éditez ce nouveau fichier avec votre éditeur préféré :
 
-Sauvegardez le fichier et rechargez la configuration de fail2ban :
-```bash
-$ fail2ban-client reload
-```
+    ```bash
+    sudo nano /etc/fail2ban/jail.local
+    ```
+
+3. Coller le contenu suivant dans le fichier et adapter l'IP ```XXX.XXX.XXX.XXX``` :
+
+    ```bash
+    [DEFAULT]
+
+    ignoreip = 127.0.0.1/8 XXX.XXX.XXX.XXX #<= l'adresse IP (on peut en mettre  plusieurs, séparées par un espace) que vous voulez passer en liste blanche / whitelist
+    ```
+
+4. Sauvegardez le fichier et rechargez la configuration de fail2ban :
+
+    ```bash
+    sudo fail2ban-client reload
+    ```
+
+Félicitations, plus de risques de se bannir de son propre serveur YunoHost!
