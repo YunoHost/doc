@@ -117,7 +117,7 @@ Out of the box, YunoHost provide an XMPP server, for which you can install a web
 
 You can also install a matrix server:
 * The server: [Synapse](https://github.com/YunoHost-Apps/synapse_ynh)
-* A web client: [Riot](https://github.com/YunoHost-Apps/_ynh)
+* A web client: [Riot](https://github.com/YunoHost-Apps/riot_ynh)
 
 ### Intranet
 
