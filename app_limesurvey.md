@@ -6,7 +6,6 @@
 
 - [Configuration](#configuration)
 - [Limitations with YunoHost](#limitations-with-yunohost)
-- [Customer Applications](#Customer-applications)
 - [Useful links](#useful-links)
 
 LimeSurvey is a tool for creating and distributing online surveys/forms.
