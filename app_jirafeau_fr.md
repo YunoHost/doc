@@ -5,7 +5,7 @@
 ### Index
 
 - [Configuration](#configuration)
-  - [Changer les conditions d'utilisation du service](#changer-les-conditions-d-utilisation-du-service)
+  - [Changer les conditions d'utilisation du service](#changer-les-conditions-d'utilisation-du-service)
   - [Administration](#administration)
 - [Liens utiles](#liens-utiles)
 

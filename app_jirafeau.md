@@ -4,7 +4,7 @@
 
 ### Index
 
-- [Configuration](#Configuration)
+- [Configuration](#configuration)
   - [Changing the conditions of use of the service](#changing-the-conditions-of-use-of-the-service)
   - [Administration](#administration)
 - [Useful links](#useful-links)
