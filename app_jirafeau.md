@@ -29,7 +29,7 @@ To administrate the files within Jirafeau it is enough to go to the address `jir
 ## Useful links
 
 + Website: [jirafeau.net](https://jirafeau.net/)
-+ Official documentation: [gitlab.com - mojo42/Jirafeau](https://gitlab.com/mojo42/Jirafeau)
++ Official documentation: [gitlab.com - mojo42/Jirafeau (en)](https://gitlab.com/mojo42/Jirafeau)
 + Application software repository: [github.com - YunoHost-Apps/jirafeau](https://github.com/YunoHost-Apps/jirafeau_ynh)
 + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/jirafeau/issues](https://github.com/YunoHost-Apps/jirafeau_ynh/issues)
 
