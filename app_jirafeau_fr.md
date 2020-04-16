@@ -5,29 +5,36 @@
 ### Index
 
 - [Configuration](#configuration)
-- [Limitations avec Yunohost](#limitations-avec-yunohost)
-- [Applications clientes](#applications-clients)
+  - [Changer les conditions d'utilisation du service](#changer-les-conditions-d-utilisation-du-service)
+  - [Administration](#administration)
 - [Liens utiles](#liens-utiles)
 
-**Présentation générale de l'application.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+Jirafeau offre la possibilité d'héberger et de partager vos fichiers, le tout en toute simplicité. Choisissez un fichier, Jirafeau vous fournira un lien avec beaucoup d'options.
+Il est possible de protéger vos liens avec mot de passe ainsi que de choisir la durée de rétention du fichier sur le serveur. Le fichier et le lien s'autodétruiront passé ce délai.
+Les téléchargements des fichiers transmis peuvent être limités à une certaine date, et chaque fichier peut s'autodétruire après le premier téléchargement.
+Jirafeau permet de configurer les temps maximum de rétention ainsi que la taille maximale par fichier. Le chiffrement est disponible en option.[¹](#sources)
 
 ## Configuration
 
-**Si la configuration de l'application ne se fait pas avec le panel admin de YunoHost.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+### Changer les conditions d'utilisation du service
 
-## Limitations avec Yunohost
+Le texte de la licence sur la page "Conditions d'utilisation du service", qui est livrée avec l'installation par défaut, est basé sur les "Conditions d'utilisation du service de l'Initiative Open Source".
+Pour modifier ce texte, il suffit de copier le fichier `/lib/tos.original.txt`, de le renommer en `/lib/tos.local.txt` et de l'adapter à vos propres besoins.
+Si vous mettez à jour l'installation, alors seul le fichier `tos.original.txt` peut changer éventuellement, et non votre fichier `tos.local.txt`.
 
-**Explication des limitations actuelles en utilisation l'application avec YunoHost.** *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum sodales mauris eu viverra. Sed dapibus, tellus sit amet interdum condimentum, enim eros faucibus ligula, sed suscipit orci velit at felis. Etiam quam lacus, vulputate eu scelerisque ac, sollicitudin rutrum orci. Cras eu ante porttitor, laoreet odio sed, hendrerit tellus. Nulla luctus sem in arcu scelerisque cursus. Nulla ut tellus at leo porttitor tincidunt. Morbi vitae purus convallis, elementum lectus non, dignissim orci. Integer eget egestas mauris. Nunc nunc dolor, cursus in quam mollis, rutrum fermentum nibh. Aliquam molestie velit a nulla porttitor, sit amet tincidunt erat laoreet.*
+### Administration
 
-## Applications clientes
-
-| Nom de l'applications | Plateforme | Multi-comptes | Autre réseaux supportés | Play Store | F-Droid | Apple Store | *Autres* |
-|-----------------------|------------|---------------|-------------------------|------------|---------|-------------|----------|
-|                       |            |               |                         |            |         |             |          |
+Pour administrer les fichiers présents au sein de Jirafeau il suffit de se rendre à l'adresse `jirafeau.domaine.tld/admin.php`.
 
 ## Liens utiles
 
  + Site web : [jirafeau.net](https://jirafeau.net/)
- + Documentation officielle : [DOCUMENTATION](#)
+ + Documentation officielle : [gitlab.com - mojo42/Jirafeau](https://gitlab.com/mojo42/Jirafeau)
  + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/jirafeau](https://github.com/YunoHost-Apps/jirafeau_ynh)
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/jirafeau/issues](https://github.com/YunoHost-Apps/jirafeau_ynh/issues)
+
+------
+
+### Sources
+
+¹ [framalibre.org](https://framalibre.org/content/jirafeau)

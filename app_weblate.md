@@ -1,6 +1,6 @@
-# <img src="/images/APPLICATION_logo.svg" width="80px" alt="APPLICATION's logo"> APPLICATION
+# <img src="/images/weblate_logo.svg" width="80px" alt="Weblate's logo"> Weblate
 
-[![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
+[![Install Weblate with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=weblate) [![Integration level](https://dash.yunohost.org/integration/weblate.svg)](https://dash.yunohost.org/appci/app/weblate)
 
 ### Index
 
@@ -27,7 +27,7 @@
 
 ## Useful links
 
-+ Website: [WEBSITE](#)
-+ Official documentation: [DOCUMENTATION](#)
-+ Application software repository: [github.com - YunoHost-Apps/APPLICATION](https://github.com/YunoHost-Apps/APPLICATION_ynh)
-+ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
++ Website: [weblate.org](https://weblate.org)
++ Official documentation: [docs.weblate.org](https://docs.weblate.org/en/latest/)
++ Application software repository: [github.com - YunoHost-Apps/weblate](https://github.com/YunoHost-Apps/weblate_ynh)
++ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/weblate/issues](https://github.com/YunoHost-Apps/weblate_ynh/issues)
