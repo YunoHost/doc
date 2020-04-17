@@ -1,37 +1,39 @@
 # Guide to writing application documentation
 
-## Pages for user / administative documentation
+## User documentation pages / administrateurs⋅trices
 
-Add a one-click installation button (like for example: https://yunohost.org/#/app_piwigo)
+Add a one-click install button (such as https://yunohost.org/#/app_piwigo_fr) and a button on the application integration level.
 
-Classification of the application can be done using the available tags (genre, Git, management association, e-mails, etc.)
 
-*/Find a suitable documentation license. Permissive or not? (CC BY_SA)/*
+Classification of available applications by tags (genre, Git, association management, emails, etc.).
 
-## Clarify the types of uses it has (special and general application (editorial choice)
+*/Definition of a license to distribute the documentation, but which one? Permissive or not (CC BY-SA)/*
 
- + For links to other languages, add (en)` for Egnlish, and so on.
+## Some typical and general uses (writing framework)
 
-### Things to include in application documentation
+ + When a link points to a page that is not in the language of the original page, it is customary to add `(en)` (for a link that points to a page in English).
+ + rename the images in the following order:`description_application.ext`.
 
- 1. An index of what is included, without reiterating the full content of what is to be found in subsequent chapters.
- 1. A one-click install button.
+### General frame application documentation
+
+ 1. Logo (dimension 80 pixels high) + level 1 title.
+ 1. One-click install button, Integration level for each type of processor.
+ 1. An index at the top of the documentation with cross-references to all the chapters of the documentation.
  1. A general presentation of the application and its function.
- 1. A section detailing administration of the application.
- 1. A further section on changes specific to YunoHost.
- 1. A section about the desktop client (if applicable). Links to different third party applications (if they exist), (or a link to a list of applications [framalibre.org](https://framalibre.org)) or a link to a page that has to do with the different official applications (if applicable).
- + A further section:
-    - Links to the official website.
-    - Links to the package in YunoHost.
- 1. Documentation of any further uses (documentation of an application).
+ 2. A configuration part of the application.
+ 1. An administration part of the application.
+ 1. A part on limitations related to YunoHost.
+ 1. A part on desktop clients (if any). A link to different third-party applications if there are several (possible link to the applications catalgue [framalibre.org](https://framalibre.org)) or a link to the page about desktop applications if official applications are provided.
+ 1. A part with :
+    - the link to the official site
+    - the link to the documentation
+    - Links to the YunoHost package and issues
+
+Screen for writing documentation pages: [here](/app_writing_guide)
 
 ## Roadmap
 
-1. Documentation of the applications.
-   1. Document how the application operates in use (marked: work) level 8/7/6.
-   1. Translate the documentation at-least into French and English.
-   1. Send a PR to the repository of the app that details its documentation.
-
-## Document an application
-
-Do you need to detail how it works?
+1. Document applications.
+   1. Document applications at work (marked: work) level 8/7/6.
+   1. Translate the documentation page at least into French and English.
+   1. Do a PR on the application repository
