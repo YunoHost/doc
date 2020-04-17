@@ -27,6 +27,7 @@ YunoHost's documentation has 2 different sections:
    * [Chat rooms](/chat_rooms)
    * [Communication](/communication)
    * [Support / Help](/help)
+   * [Partners and sponsors](/partners_sponsors)
 
 * Use example:
    * [YunoHost for non-profit organisations](/use_case_non-profit_organisations)
