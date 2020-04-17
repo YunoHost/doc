@@ -71,13 +71,16 @@ Du texte qui sera ne sait même pas qu'il a une ancre <a name="NomDeLAncre"></a>
 Ce qui s'affiche :
 Du texte qui sera ne sait même pas qu'il a une ancre <a name="NomDeLAncres"></a>
 
+Il est aussi possible de directement renvoyer une ancre au titre, en notant le lien en minuscule avec des `-` à la place des espaces.
 Il ne reste plus qu'à désigner l'ancre au texte que l'on souhaite rendre interactif :
 
 ```markdown
-[Mon titre qui renvoie](#nom-du-titre)
+[Mon ancre qui renvoie vers les listes](#nomdelancre)
+[Mon ancre qui renvoie vers le titre des tableaux](#les-tableaux)
 ```
 
-[Mon titre qui renvoie](#nomdelancre)
+[Mon ancre qui renvoie vers les listes](#nomdelancre)
+[Mon ancre qui renvoie vers le titre des tableaux](#les-tableaux)
 
 ## Afficher des images
 
@@ -122,7 +125,7 @@ Les listes permettent d'afficher une suite de textes dans une présentation faci
 
 ### Listes ordonnées
 
-Les listes ordonnées peuvent s'incrémenter autant que vous le désirez, il n'est pas obligé de donner la bonne correspondance au nombre. Il est possible de noter avec des `1.` comme des `7.` et installer trois espaces pour marquer l'incrémentation. Pour une meilleure compréhension du texte brut, il peut être bien d'utiliser les chiffres de manières croissantes pour marquer l'incrémentation, mais c'est bien les trois `espaces` conséquents avant la sous-liste qui désigneront l'incrémentation.
+Les listes ordonnées peuvent s'incrémenter autant que vous le désirez, il n'est pas obligé de donner la bonne correspondance au nombre. Il est possible de noter avec des `1.` et installer trois espaces pour marquer l'incrémentation. Pour une meilleure compréhension du texte brut, il peut être bien d'utiliser les chiffres de manières croissantes pour marquer l'incrémentation, mais c'est bien les trois `espaces` conséquents avant la sous-liste qui désigneront l'incrémentation.
 
 ```markdown
 1. Liste 1
@@ -133,9 +136,9 @@ Les listes ordonnées peuvent s'incrémenter autant que vous le désirez, il n'e
       1. Liste 3b1
       1. Liste 3b2
       1. Liste 3b3
-         4. Liste 1
-         4. Liste 2
-         4. liste 3
+         1. Liste 1
+         1. Liste 2
+         1. liste 3
 1. Liste 4
 1. Liste 5
 1. liste 6
@@ -151,9 +154,9 @@ On obtient :
       1. Liste 3b1
       1. Liste 3b2
       1. Liste 3b3
-         4. Liste 1
-         4. Liste 2
-         4. liste 3
+         1. Liste 1
+         1. Liste 2
+         1. liste 3
 5. Liste 4
 3. Liste 5
 4. liste 6
