@@ -1,13 +1,13 @@
 # Instalar YunoHost en VirtualBox
 
-*Encontrar otros medios de instalar Yunohost **[aquí](/install_es)**.*
+*Encontrar otros medios de instalar Yunohost **[aquí](/install)**.*
 
 ## Prerrequisitos
 
 <img src="/images/virtualbox.png" width=200>
 
 * Un ordenador x86 con VirtualBox instalado y bastante RAM disponible para iniciar una pequeña máquina virtual.
-* La última **imagen ISO YunoHost** estable, disponible [aquí](/images_es).
+* La última **imagen ISO YunoHost** estable, disponible [aquí](/images).
 
 <div class="alert alert-warning" markdown="1">
 N.B. : Instalar YunoHost en VirtualBox es útil para probar la distribución. Para realmente autoalojarse a largo plazo, probablement necesitarás una máquina virtual (viejo ordenador, tarjeta ARM...) o un VPS.
@@ -73,4 +73,4 @@ Si te encuentras con el error "VT-x is not available", probablement hay que acti
 
 Después del reinicio, la máquina debería proponerte de efectuar la post-instalación :
 
-<a class="btn btn-lg btn-default" href="/postinstall_es">Documentación de post-instalación</a>
+<a class="btn btn-lg btn-default" href="/postinstall">Documentación de post-instalación</a>

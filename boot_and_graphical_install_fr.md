@@ -46,5 +46,5 @@ identifiants suivants :
 
 ## <small>5.</small> Procéder à la post-installation
 
-<a class="btn btn-lg btn-default" href="/postinstall_fr">Documentation de la post-installation</a>
+<a class="btn btn-lg btn-default" href="/postinstall">Documentation de la post-installation</a>
 

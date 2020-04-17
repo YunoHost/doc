@@ -28,10 +28,10 @@ YunoHost peut être appelé une distribution ou un système d’exploitation, ma
 dans les faits, c’est une « simple » sur-couche à Debian, qui gère les
 manipulations pénibles à votre place.
 
-Par exemple, pour installer un Wordpress à la main, il vous faudrait taper
+Par exemple, pour installer un WordPress à la main, il vous faudrait taper
 toute une série de commandes pour créer des utilisateurs, mettre en place un
-serveur web, mettre en place un serveur SQL, télécharger l’archive de Wordpress,
-la décompresser, configurer le serveur web, configurer la base de données SQL, et finalement configurer Wordpress. YunoHost gère toute cette partie technique et « tape les commandes à votre place », pour que vous puissiez vous concentrer sur ce qui compte vraiment.
+serveur web, mettre en place un serveur SQL, télécharger l’archive de WordPress,
+la décompresser, configurer le serveur web, configurer la base de données SQL, et finalement configurer WordPress. YunoHost gère toute cette partie technique et « tape les commandes à votre place », pour que vous puissiez vous concentrer sur ce qui compte vraiment.
 
 Plus d’informations sur [cette page](whatsyunohost) !
 
@@ -49,14 +49,12 @@ On peut tout à fait héberger plusieurs sites web car YunoHost est multi-domain
 
 #### Pourquoi je ne peux pas accéder à mes applications avec l’adresse IP ?
 
-Pour des raisons techniques, le [SSO](https://github.com/YunoHost/SSOwat/) ne permet pas aux utilisateurs de se connecter à l’espace utilisateur lorsque l’on accède au serveur uniquement avec l’IP. Si vous ne pouvez réellement pas configurer un nom de domaine, une solution temporaire peut être de modifier le [fichier `hosts` (dernier §)](dns_local_network_fr) de son ordinateur.
+Pour des raisons techniques, le [SSO](https://github.com/YunoHost/SSOwat/) ne permet pas aux utilisateurs de se connecter à l’espace utilisateur lorsque l’on accède au serveur uniquement avec l’IP. Si vous ne pouvez réellement pas configurer un nom de domaine, une solution temporaire peut être de modifier le [fichier `hosts` (dernier §)](/dns_local_network) de son ordinateur.
 
 
 #### Quel est le modèle économique de YunoHost ?
 
-À l’heure actuelle, YunoHost est maintenu uniquement par une équipe de bénévoles
-travaillant pendant leur temps libre. Il n’y a pas d’argent impliqué dans le
-projet (hormis quelques frais de serveurs et stickers :P).
+À l’heure actuelle, YunoHost est maintenu uniquement par une équipe de bénévoles travaillant pendant leur temps libre. Il n’y a pas d’argent impliqué dans le projet (hormis quelques frais de serveurs et stickers :P).
 
 Étant donné que certains contributeurs sont très engagés dans ce projet, nous réfléchissons à un moyen de pérenniser le projet.
 
@@ -67,7 +65,7 @@ Il est question de financement par dons ou subventions, certains contributeurs m
 
 Oui, c'est possible ! YunoHost a besoin de payer des serveurs et noms de domaine, par ailleurs nous souhaiterions pouvoir permettre aux développeurs principaux de continuer à développer YunoHost plutôt que de chercher un emploi ailleurs.
 
-Pour faire un don ça se passe via notre [Liberapay](https://liberapay.com/YunoHost)
+Pour faire un don ça se passe via [notre interface de don](https://donate.yunohost.org)
 
 Si vous le pouvez, vous pouvez aussi faire des contributions en nature (une partie de notre infrastructure vient d'associations qui nous fournissent des serveurs).
 
@@ -76,7 +74,7 @@ Si vous le pouvez, vous pouvez aussi faire des contributions en nature (une part
 
 Il existe [plusieurs façons de contribuer](contribute) :).
 
-N’hésitez pas à venir nous parler de vos idées!
+N’hésitez pas à venir nous parler de vos idées !
 
 Une idée répandue parmi les nouveaux contributeurs aux logiciels libres est
 de ne pas être « assez compétent ». En pratique, croyez-le, personne n’est
@@ -88,11 +86,10 @@ pouvez, c’est déjà trop cool !
 
 #### Quel est le modèle politique de YunoHost ?
 
-Il est décrit dans [ce document](yunohost_project_organization) :).
+Il est décrit dans [ce document](project_organization) :).
 
 
-
-#### Pouvez-vous porter YunoHost sur [ma distro préféré] ?
+#### Pouvez-vous porter YunoHost sur [ma distro préférée] ?
 
 Réponse courte : non. L’équipe n’a pas l’énergie et ce n’est pas pertinent pour le but recherché par YunoHost.
 
@@ -114,9 +111,9 @@ Réponse moyenne : Par le passé, les apps étaient gérées via des .deb. C’
 <a data-toggle="collapse" data-target="#whyareyoureinventingpackaging" href="#">Longue réponse</a>
 <div id="whyareyoureinventingpackaging" class="collapse">
 
-<p>YunoHost cherche à garder un système de packaging simple. L’idée depuis le départ était que « si tu sais installer l’app à la main, alors tu peux facilement créer un package basique en copiant-collant les étapes, sans besoin de connaissances particulière ». Ce n’est pas le cas des paquets Debian.</p>
+<p>YunoHost cherche à garder un système de packaging simple. L’idée depuis le départ était que « si tu sais installer l’app à la main, alors tu peux facilement créer un package basique en copiant-collant les étapes, sans besoin de connaissances particulières ». Ce n’est pas le cas des paquets Debian.</p>
 
-<p>Il se trouve que l’objectif des paquets d’application YunoHost est subtilement différent des paquets traditionnels (comme les .deb de Debian) qui remplissent le rôle d’installer des éléments bas-niveaux tels que des fichiers, commandes, programmes ou services sur le système. Il est à la charge de l’administrateur de les configurer ensuite proprement, simplement parce qu’il n’existe pas d’environnement standard. Typiquement, les applications web requièrent beaucoup de configuration car elles ont besoin de s’interfacer avec un serveur web et une base de données (et le système de connexion unique / SSO).</p>
+<p>Il se trouve que l’objectif des paquets d’application YunoHost est subtilement différent de celui des paquets traditionnels (comme les .deb de Debian) qui remplissent le rôle d’installer des éléments bas-niveau tels que des fichiers, commandes, programmes ou services sur le système. Il est à la charge de l’administrateur de les configurer ensuite proprement, simplement parce qu’il n’existe pas d’environnement standard. Typiquement, les applications web requièrent beaucoup de configuration car elles ont besoin de s’interfacer avec un serveur web et une base de données (et le système de connexion unique / SSO).</p>
 
 <p>YunoHost manipule des abstractions haut-niveau (apps, domaines, utilisateurs…) et définit un environnement standard (Nginx, Postfix, Metronome, SSOwat…) et, grâce à cela, peut gérer la configuration à la place de l’administrateur.</p>
 

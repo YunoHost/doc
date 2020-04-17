@@ -1,6 +1,6 @@
 # Guía de instalación
 
-Existen varias maneras de instalar YunoHost. El método y el hardware difieren un poco si quieres instalarlo en tu casa o en acceso remoto : **[ver el hardware compatible](/hardware_es)**
+Existen varias maneras de instalar YunoHost. El método y el hardware difieren un poco si quieres instalarlo en tu casa o en acceso remoto : **[ver el hardware compatible](/hardware)**
 
 Esta página enumera varios tipos de instalaciones, clasificados por categorías.
 
@@ -11,11 +11,11 @@ Esta página enumera varios tipos de instalaciones, clasificados por categorías
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/try_es"><img height=150 src="/images/logo.png" style="vertical-align:bottom"><b><p>Servidor de demo</p></b></a>
+<a href="/try"><img height=150 src="/images/logo.png" style="vertical-align:bottom"><b><p>Servidor de demo</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_virtualbox_es"><img src="/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>Probar en una máquina virtual</p></b></a>
+<a href="/install_on_virtualbox"><img src="/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>Probar en una máquina virtual</p></b></a>
 </div>
 
 </div>
@@ -29,15 +29,15 @@ Esta página enumera varios tipos de instalaciones, clasificados por categorías
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_raspberry_es"><img src="/images/raspberrypi.jpg" height=150 style="vertical-align:bottom"><b><p>En un Raspberry Pi</p></b></a>
+<a href="/install_on_raspberry"><img src="/images/raspberrypi.jpg" height=150 style="vertical-align:bottom"><b><p>En un Raspberry Pi</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_arm_board_es"><img src="/images/olinuxino.jpg" height=150 style="vertical-align:bottom; padding:20px"><b><p>En un ARM board</p></b></a>
+<a href="/install_on_arm_board"><img src="/images/olinuxino.jpg" height=150 style="vertical-align:bottom; padding:20px"><b><p>En un ARM board</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_iso_es"><img src="/images/computer.png" height=150 style="vertical-align:bottom"><b><p>En un ordenador estándar</p></b></a>
+<a href="/install_iso"><img src="/images/computer.png" height=150 style="vertical-align:bottom"><b><p>En un ordenador estándar</p></b></a>
 </div>
 
 </div>
@@ -55,7 +55,7 @@ Esta página enumera varios tipos de instalaciones, clasificados por categorías
 <div class="row">
 
 <div class="block-center text-center">
-<a href="/install_on_vps_es"><img src="/images/vps.png" height=150 style="vertical-align:bottom; text-align:center"><b><p>En un servidor dedicado o virtual (VPS)</p></b></a>
+<a href="/install_on_vps"><img src="/images/vps.png" height=150 style="vertical-align:bottom; text-align:center"><b><p>En un servidor dedicado o virtual (VPS)</p></b></a>
 </div>
 
 </div>
@@ -69,7 +69,7 @@ Esta página enumera varios tipos de instalaciones, clasificados por categorías
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_debian_es"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
+<a href="/install_on_debian"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
 <b><p>Sur Debian 9/Stretch</p></b></a>
 </div>
 

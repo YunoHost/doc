@@ -37,7 +37,7 @@ Enfin cliquer sur la coche pour valider le dossier.
 
 #### II. Migrer les données de Nextcloud dans une partition plus grosse
 
-**Remarque** : Ce qui suit suppose que vous avez un disque dur monté sur `/media/stockage`. Référez-vous à [cet article](/external_storage_fr) pour préparer votre système.
+**Remarque** : Ce qui suit suppose que vous avez un disque dur monté sur `/media/stockage`. Référez-vous à [cet article](/external_storage) pour préparer votre système.
 
 **Remarque** : Remplacez `nextcloud` par le nom de son instance, si vous avez plusieurs apps Nextcloud installées.
 
@@ -128,7 +128,7 @@ Lancez un scan du nouveau répertoire par Nextcloud:
 
 ```bash
 cd /var/www/nextcloud
-sudo -u nextcloud php occ files:scan --all
+sudo -u nextcloud php7.3 occ files:scan --all
 ```
 
 C'est terminé. À présent testez si tout va bien, essayez de vous connecter à votre instance Nextcloud, envoyer un fichier, vérifiez sa bonne synchronisation.
@@ -158,10 +158,10 @@ Sauvegarder et nettoyer vos caches (Cloudflare, navigateur, ...) et le tour est 
 
 ## Applications Tiers<a name="AppsTiers" href=""></a>
 
- + [Calendrier](app_nextcloud_calendar_fr)
- + [contact](app_nextcloud_contact_fr)
- + [KeeWeb](app_nextcloud_keeweb_fr)
- + [Carnet](app_nextcloud_carnet_fr)
+ + [Calendrier](/app_nextcloud_calendar)
+ + [contact](/app_nextcloud_contact)
+ + [KeeWeb](/app_nextcloud_keeweb)
+ + [Carnet](/app_nextcloud_carnet)
 
 ## Quelques liens utiles<a name="liensutiles" href=""></a>
 

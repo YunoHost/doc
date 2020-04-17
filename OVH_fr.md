@@ -10,16 +10,16 @@ Cliquez sur l'onglet **Zone DNS**, puis sur **Ajouter une entrée**:
 
 <img src="/images/ovh_dns_zone.png" width=800>
 
-Il suffit maintenant d'ajouter les redirections DNS comme indiqué dans la [configuration DNS standard](/dns_config_fr).
+Il suffit maintenant d'ajouter les redirections DNS comme indiqué dans la [configuration DNS standard](/dns_config).
 
 
 ###IP dynamique
 
-[Tutoriel plus général sur l’IP dynamique](dns_dynamicip_fr).
+[Tutoriel plus général sur l’IP dynamique](/dns_dynamicip).
 
 Cette partie est à suivre, que si votre IP est dynamique.
 
-Pour savoir si votre fournisseur d’accès internet vous fournit une IP dynamique [voir ici](/isp_fr).
+Pour savoir si votre fournisseur d’accès internet vous fournit une IP dynamique [voir ici](/isp).
 
 Commencez par créer un identifiant DynHost.
 

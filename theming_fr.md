@@ -39,17 +39,17 @@ Vous pouvez créer votre propre thème en copiant le thème existant de votre ch
 cp -r /usr/share/ssowat/portal/assets/themes/{light,votre_theme}
 ```
 
-Ensuite, éditez les fichiers css et js dans `/usr/share/ssowat/portal/assets/themes/votre_theme` selon ce que vous voulez faire : 
+Ensuite, éditez les fichiers CSS et JS dans `/usr/share/ssowat/portal/assets/themes/votre_theme` selon ce que vous voulez faire : 
 
 - `custom_portal.css` peut être utilisé pour ajouter des règles CSS personnalisées au portail utilisateur ;
-- `custom_overlay.css` peut être utilisé pour personnaliser le petit bouton YunoHost, présent sur les apps qui l'intègre ;
-- `custom_portal.js' peut être utilisé pour ajouter du code JS personnalisé à exécuter à la fois sur le portail utilisateur ou lors de l'injection du petit bouton YunoHost ("overlay").
+- `custom_overlay.css` peut être utilisé pour personnaliser le petit bouton YunoHost, présent sur les apps qui l'intègrent ;
+- `custom_portal.js` peut être utilisé pour ajouter du code JS personnalisé à exécuter à la fois sur le portail utilisateur ou lors de l'injection du petit bouton YunoHost ("overlay").
 
 Vous pouvez également ajouter vos propres images et ressources qui peuvent ensuite être utilisées par les fichiers CSS et JS.
 
 ### Exemple : personnaliser le logo
 
-Vous pouvez créer votre propre thème simplement pour changer le "branding" du portail utilisateur Yunohost et remplacer le logo YunoHost par votre propre logo !
+Vous pouvez créer votre propre thème simplement pour changer le "branding" du portail utilisateur YunoHost et remplacer le logo YunoHost par votre propre logo !
 
 Pour ce faire, téléversez votre logo dans `/usr/share/ssowat/portal/assets/themes/votre_theme/`, et ajoutez les règles CSS suivantes : 
 

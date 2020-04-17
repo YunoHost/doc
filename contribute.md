@@ -11,7 +11,7 @@ YunoHost depends exclusively on the participation of people like you.
 <span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp; Spread the word
 </div>
 <div class="col col-md-8" markdown="1">
-Talk about software freedom, [self-hosting](selfhosting_en) and YunoHost to your relatives and at your work. We rely on Datalove evangelists like you <3
+Talk about software freedom, [self-hosting](/selfhosting) and YunoHost to your relatives and at your work. We rely on Datalove evangelists like you <3
 </div>
 </div>
 
@@ -47,7 +47,7 @@ Our support relies on contributors like you. Just come to [the support chatroom]
 You can involve in the YunoHost's development regardless of your skill.    
 Sysadmins, web developers, designers and pythonists <a href="https://github.com/YunoHost" target="_blank">are welcome</a>!
 <br>
-Learn [how to contribute](/dev), and join us on the [development chat room](xmpp:dev@conference.yunohost.org?join) and the <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/contrib">mailing-list</a>.
+Learn [how to contribute](/dev), and join us on the [development chat room](xmpp:dev@conference.yunohost.org?join).
 </div>
 </div>
 

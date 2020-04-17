@@ -9,7 +9,7 @@ Il y a principalement deux raisons pour préférer l'usage d'un serveur virtuel 
 - Vous pouvez torturer à loisir un serveur virtuel sans courir le risque de le casser, puisque vous pourrez toujours restaurer un état précédent. Alors qu'il serait dommage de casser son propre serveur !
 - Un serveur virtuel sera restauré avant de travailler dessus, pour garder en permanence un système sans résidus d'une précédente installation. Cela permet de se rapprocher au plus près d'une première installation par un utilisateur.
 
-Nous parlerons ici de VirtualBox, pour son approche graphique facile à utiliser. Si vous préférez une interface en ligne de commande pour la gestion de la machine virtuelle, tournez-vous de préférence vers [ynh-dev](/dev_fr).
+Nous parlerons ici de VirtualBox, pour son approche graphique facile à utiliser. Si vous préférez une interface en ligne de commande pour la gestion de la machine virtuelle, tournez-vous de préférence vers [ynh-dev](/dev).
 
 ## Installer VirtualBox
 
@@ -20,12 +20,12 @@ Quel que soit votre système, il ne devrait pas être nécessaire d'installer l'
 
 ## Installer YunoHost sur VirtualBox
 
-Suivez simplement la documentation idoine pour l'[installation sur VirtualBox](/install_on_virtualbox_fr) puis la documentation sur la [post-installation](/postinstall_fr).
+Suivez simplement la documentation idoine pour l'[installation sur VirtualBox](/install_on_virtualbox) puis la documentation sur la [post-installation](/postinstall).
 
 Lors de la post-installation, il est inutile d'utiliser un nom de domaine en `.nohost.me` ou `.noho.st`, votre serveur virtuel ne sera pas accessible depuis l'extérieur de votre réseau local.  
 Nous préférerons l'usage d'un faux nom de domaine qui restera cantonné au réseau local. Par exemple, `yunohost.packaging`.
 
-Ce nom de domaine n'étant enregistré dans aucun serveur DNS, on l'enregistrera dans le fichier `hosts` de l'ordinateur qui y accédera. Voir la documentation sur le [DNS local](/dns_local_network_fr).
+Ce nom de domaine n'étant enregistré dans aucun serveur DNS, on l'enregistrera dans le fichier `hosts` de l'ordinateur qui y accédera. Voir la documentation sur le [DNS local](/dns_local_network).
 
 Votre serveur virtuel est à présent installé. Avant de commencer à l'utiliser, nous allons voir comment créer un premier instantané et comment les utiliser.
 
@@ -40,14 +40,14 @@ Avant de commencer à jouer avec la machine virtuelle, il convient de faire un p
 Arrêtez la machine virtuelle avant tout.
 
 La gestion des instantanés se fait dans l'onglet "Instantanés"  
-<img src="/images/virtualbox_packaging1.jpg" width=80%>
+<img src="/images/virtualbox_packaging1-fr.jpg" width=80%>
 
 Et on crée un premier instantané  
-<img src="/images/virtualbox_packaging2.jpg" width=30%>
+<img src="/images/virtualbox_packaging2-fr.jpg" width=30%>
 
 À présent on peut commencer à travailler sur la machine virtuelle et créer autant d'instantanés que souhaité pour jalonner le travail.
 
-<img src="/images/virtualbox_packaging3.jpg" width=80%>
+<img src="/images/virtualbox_packaging3-fr.jpg" width=80%>
 
 Dans cet exemple, on pourra facilement revenir en arrière, après avoir testé la suppression du package par exemple et restaurer la machine virtuelle dans l'état précédent avec le package encore installé avec succès.  
 Et lorsque le package sera pleinement fonctionnel, il suffira de supprimer les instantanés liés à ce package pour revenir à l'état initial de la machine virtuelle.  
@@ -57,14 +57,14 @@ Nous disposerons ainsi d'un serveur YunoHost vierge de toute installation d'appl
 
 En plus de l'usage d'instantanés successifs, il est également possible de dériver un nouvel état actuel et de nouveaux instantanés depuis un instantané plus ancien que le dernier.
 
-<img src="/images/virtualbox_packaging4.jpg" width=80%>
+<img src="/images/virtualbox_packaging4-fr.jpg" width=80%>
 
 Dans cet exemple, j'ai dérivé deux branches depuis mon installation réussie du package, pour tester indépendamment la suppression simple de l'application, l'upgrade et le backup/restore.  
 Finalement je suis reparti de la base de la machine virtuelle pour démarrer un nouveau test sur un autre package, sans pour autant abandonner le précédent test.  
 À tout moment, il est possible de revenir sur un instantané précédent en le restaurant.  
 La machine démarrera toujours sur l'"État actuel".
 
-<img src="/images/virtualbox_packaging5.jpg" width=80%>
+<img src="/images/virtualbox_packaging5-fr.jpg" width=80%>
 
 > Il est toujours possible de créer un nouvel instantané, que la machine soit à l'arrêt ou non.  
 Mais pour restaurer un instantané, la machine ne doit pas être en cours d'exécution.

@@ -23,11 +23,11 @@ utilisateur = admin ou root
 Pour transférer le fichier, entrez la commande suivante :
 
 ```bash
-scp -r /votre/fichier/ root@votre-domaine.org:/home/yunohost.transmission/completed
+scp -r /votre/fichier/ admin@votre-domaine.org:/home/yunohost.transmission/completed
 ```
 
 ##### Comment télécharger un répertoire entier ?
-Une fois connecté en [SSH](ssh_fr), placez-vous dans le répertoire de téléchargement et zippez le répertoire :
+Une fois connecté en [SSH](/ssh), placez-vous dans le répertoire de téléchargement et zippez le répertoire :
 ```bash
 cd /home/yunohost.transmission/completed
 zip -r votre_archive.zip [dossier]

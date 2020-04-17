@@ -1,4 +1,4 @@
-<a class="btn btn-lg btn-default" href="packaging_apps_fr">Packaging d’application</a>
+<a class="btn btn-lg btn-default" href="/packaging_apps">Packaging d’application</a>
 
 ## Gestion des arguments
 #### Récupérer les arguments du manifeste dans le script d’installation

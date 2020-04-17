@@ -5,8 +5,8 @@ The purpose of this document is to teach you how to package an application for Y
 ### Requirements
 To package an application, here are the requirements:
 * An account on a git server (e.g. [GitHub](https://github.com/)) to publish the application;
-* Basic knowledge of `git`, bash shell and other programming stuff;
-* A testing [virtual machine or a distant server](/install_en), or a development environement, [ynh-dev](https://github.com/yunohost/ynh-dev) or [VirtualBox](/packaging_apps_virtualbox_fr), to package and test the package.
+* Basic knowledge of [git](/packaging_apps_git), bash shell and other programming stuff;
+* A testing [virtual machine or a distant server](/install), or a development environement, [ynh-dev](https://github.com/yunohost/ynh-dev) or [VirtualBox](/packaging_apps_virtualbox), to package and test the package.
 
 ### Content
 A YunoHost package is composed of:
@@ -21,21 +21,21 @@ A YunoHost package is composed of:
 feel free to use it as a framework.
 
 ## Manifest
-<a class="btn btn-lg btn-default" href="packaging_apps_manifest_en">Manifest</a>
+<a class="btn btn-lg btn-default" href="/packaging_apps_manifest">Manifest</a>
 
 ## Scripts
-<a class="btn btn-lg btn-default" href="packaging_apps_scripts_en">Scripts</a>
+<a class="btn btn-lg btn-default" href="/packaging_apps_scripts">Scripts</a>
 
 ### Architecture and arguments
 Since YunoHost has a unified architecture, you will be able to guess most of the settings you need. But if you need variable ones, like the domain or web path, you will have to ask the administrator at installation (see `arguments` section in the manifest above).
 
-<a class="btn btn-lg btn-default" href="packaging_apps_arguments_management_en">Arguments management</a>
+<a class="btn btn-lg btn-default" href="/packaging_apps_arguments_management">Arguments management</a>
 
 ### Nginx configuration
-<a class="btn btn-lg btn-default" href="packaging_apps_nginx_conf_en">Nginx configuration</a>
+<a class="btn btn-lg btn-default" href="/packaging_apps_nginx_conf">Nginx configuration</a>
 
 ### Multi-instance
-<a class="btn btn-lg btn-default" href="packaging_apps_multiinstance_en">Multi-instance</a>
+<a class="btn btn-lg btn-default" href="/packaging_apps_multiinstance">Multi-instance</a>
 
 ### Hooks
 YunoHost provides a hook system, which is accessible via the packager's script callbacks in command line.
@@ -46,7 +46,7 @@ The scripts have to be placed in the `hooks` repository at the root of the YunoH
 Take a look at the [Nextcloud package](https://github.com/YunoHost-Apps/nextcloud_ynh/) for a working example.
 
 ### Helpers
-<a class="btn btn-lg btn-default" href="packaging_apps_helpers_en">Helpers</a>
+<a class="btn btn-lg btn-default" href="/packaging_apps_helpers">Helpers</a>
 
 ### Registering a log file
 
@@ -85,7 +85,7 @@ In order to test your package, you can execute your script standalone as `admin`
 su - admin -c "/bin/bash /path/to/my/script my_arg1 my_arg2"
 ```
 
-Or you can use [command line](/commandline_en):
+Or you can use [command line](/commandline):
 ```bash
 yunohost app install /path/to/my/app/package
 ```
@@ -97,14 +97,14 @@ yunohost app install https://github.com/author/my_app_package.git
 ### Packaging best practices
 Here is a list of best practices for application install scripts:
 * scripts should use `sudo cp -a ../sources/. $final_path` instead of `sudo cp -a ../sources/* $final_path`;
-* install script must contain support in case of script errors to delete residuals files thanks to `set -e` and [trap](packaging_apps_trap_fr);
+* install script must contain support in case of script errors to delete residuals files thanks to `set -e` and [trap](/packaging_apps_trap);
 * install script should use the command-line method instead of calls to curl through web install form;
 * install script should save install answers;
 * application sources should be checked with a control sum (sha256, sha1 or md5) or a PGP signature;
 * scripts should be tested on Debian Stretch 32 bits, 64 bits and ARM architectures;
 * backup and restore scripts should be present and functional.
 
-To be define the quality of a package, it'll obtained a [level](packaging_apps_levels_fr), determined according to somes criteria of installation and according to respect to [package guidelines](packaging_apps_guidelines).
+To be define the quality of a package, it'll obtained a [level](/packaging_apps_levels), determined according to somes criteria of installation and according to respect to [package guidelines](packaging_apps_guidelines).
 
 ### Package script checker
 <a class="btn btn-lg btn-default" href="https://github.com/YunoHost/package_checker">Package checker</a>
@@ -124,7 +124,7 @@ A continuous integration server is available for packagers who want to test thei
 
 * Publishing a [post on the Forum](https://forum.yunohost.org/) with the [`App integration` category](https://forum.yunohost.org/c/app-integration), to ask for testing and feedback on your application.
 
-* If your application is released under a free software license, you may ask the YunoHost app team to integrate your application to the [app repository](https://github.com/YunoHost/apps) (c.f. also the [app list](apps_en)). You can add your application even if it is not stable or working yet : the current state can be specified to `notworking`, `inprogress`, or `working`.
+* If your application is released under a free software license, you may ask the YunoHost app team to integrate your application to the [app repository](https://github.com/YunoHost/apps) (c.f. also the [app list](/apps)). You can add your application even if it is not stable or working yet : the current state can be specified to `notworking`, `inprogress`, or `working`.
 
 * If your application is *not* free software, then in the future, a non-official list might be created to handle them but is non-existent yet.
 

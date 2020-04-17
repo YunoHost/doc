@@ -1,6 +1,6 @@
 # Migrer ses emails d'un ancien serveur mail vers YunoHost
 
-*[Documentation en rapport avec l’email de YunoHost](/email_fr)*.
+*[Documentation en rapport avec l’email de YunoHost](/email)*.
 
 La migration des emails d’un serveur à un autre peut se faire via deux outils recommandés : ImapSync ou Larch.
 

@@ -1,6 +1,6 @@
 # Configurar la redirección de los puertos
 
-Si te estás auto-alojando en casa y sin VPN, tienes que redirigirse los puertos de tu router (caja/box). Si quieres una explicación sencilla de lo que es y por qué necesitas redirigir los puertos, puedes echar un vistazo a [esta página](port_forwarding_es). [Esta página](https://www.testdevelocidad.es/configuraciones/abrir-correctamente-los-puertos-router/) también propone explicaciones detalladas sobre el funcionamiento de los puertos, y las etapas de configuración para un router genérico.
+Si te estás auto-alojando en casa y sin VPN, tienes que redirigirse los puertos de tu router (caja/box). Si quieres una explicación sencilla de lo que es y por qué necesitas redirigir los puertos, puedes echar un vistazo a [esta página](/port_forwarding). [Esta página](https://www.testdevelocidad.es/configuraciones/abrir-correctamente-los-puertos-router/) también propone explicaciones detalladas sobre el funcionamiento de los puertos, y las etapas de configuración para un router genérico.
 
 ### 0. Diagnosticar los puertos abiertos
 
@@ -29,12 +29,12 @@ En la interfaz de administración de tu router/caja/box, tienes que encontrar un
 Luego tienes que redirigir cada uno de los puertos listados a continuación hacia la IP local de tu router para que los varios servicios de Yunohost funcionen. Para cada uno de ellos, una redirección 'TCP' es necesaria. En algunas interfaces, tal vez encontrarás referencias a un puerto 'externo' y un puerto 'interno' : en nuestro caso, se trata del mismo número de puerto, que sea interno o externo.
 
 * Web: 80 <small>(HTTP)</small>, 443 <small>(HTTPS)</small>
-* [SSH](/ssh_es): 22
-* [XMPP](/XMPP_es): 5222 <small>(clients)</small>, 5269 <small>(servers)</small>
-* [Email](/email_es): 25, 587 <small>(SMTP)</small>, 993 <small>(IMAP)</small>
+* [SSH](/ssh): 22
+* [XMPP](/XMPP): 5222 <small>(clients)</small>, 5269 <small>(servers)</small>
+* [Email](/email): 25, 587 <small>(SMTP)</small>, 993 <small>(IMAP)</small>
 
 <div class="alert alert-warning" markdown="1">
-<span class="glyphicon glyphicon-warning-sign"></span> Algunos proveedores de acceso a Internet bloquean el puerto 25 (mail SMTP) por defecto para luchar con el spam. Otros (más escasos) no permiten utilizar libremente los puertos 80/443. Dependiendo de tu proveedor, puede ser posible de abrir estos puertos en la interfaz... Ver [esta página](isp_es) por más informaciones.
+<span class="glyphicon glyphicon-warning-sign"></span> Algunos proveedores de acceso a Internet bloquean el puerto 25 (mail SMTP) por defecto para luchar con el spam. Otros (más escasos) no permiten utilizar libremente los puertos 80/443. Dependiendo de tu proveedor, puede ser posible de abrir estos puertos en la interfaz... Ver [esta página](/isp) por más informaciones.
 </div>
 
 ## Redirección automática / UPnP

@@ -91,7 +91,7 @@
       <a class="btn btn-lg btn-block btn-info" href="/docs">Documentación</a>
       <a class="btn btn-lg btn-block btn-success" href="/contribute">Colaborar</a>
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org/" target="_blank">Foro</a>
-      <a class="btn btn-lg btn-block btn-default" href="chat_rooms_en" target="_blank">Salas de chat</a>
+      <a class="btn btn-lg btn-block btn-default" href="/chat_rooms" target="_blank">Salas de chat</a>
       <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Últimas noticias</a>
       <a class="btn btn-lg btn-block btn-danger btn-support" href="/help">Ayuda</a>
     </div>

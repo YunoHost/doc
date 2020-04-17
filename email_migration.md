@@ -1,6 +1,6 @@
 # Migrating email from an email provider to a YunoHost instance
 
-*[Documentation linked to YunoHost email](/email_fr)*.
+*[Documentation linked to YunoHost email](/email)*.
 
 Migration of his emails from a server to an other can be done with two recommended tools: ImapSync or Larch.
 

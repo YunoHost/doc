@@ -92,9 +92,9 @@ Self-Hosting für alle ermöglicht.</small></h1>
       <a class="btn btn-lg btn-block btn-info" href="/docs">Dokumentation</a>
       <a class="btn btn-lg btn-block btn-success" href="/contribute">Mach mit!</a>
       <a class="btn btn-lg btn-block btn-warning" href="https://forum.yunohost.org/" target="_blank">Forum</a>
-      <a class="btn btn-lg btn-block btn-default" href="chat_rooms_de" target="_blank">Chat</a>
+      <a class="btn btn-lg btn-block btn-default" href="/chat_rooms" target="_blank">Chat</a>
       <a class="btn btn-lg btn-block btn-danger" href="https://forum.yunohost.org/c/announcement">Neuste Nachrichten</a>
-      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help_de">Hilfe</a>
+      <a class="btn btn-lg btn-block btn-danger btn-support" href="/help">Hilfe</a>
     </div>
     <div class="col-md-7 text-right">
       <h1>Entdecke <small> die Möglichkeiten, die Du mit einem eigenen Server hast<br> – und warum Self-Hosting Sinn macht.</small></h1>

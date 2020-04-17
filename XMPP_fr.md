@@ -18,25 +18,26 @@ Il existe différents types de clients pour se connecter à XMPP.
 
 ### Clients web
 
-- [Movim](https://pod.movim.eu)
-- [Libervia/Salut à Toi](http://salut-a-toi.org/).
+- [Movim](https://movim.eu)
+- [ConverseJS](https://conversejs.org/)
+- [Libervia/Salut à Toi](https://salut-a-toi.org/)
 
 ### Clients de bureau
 
-- [Pidgin](http://pidgin.im/) (multiplateforme),
-- [Gajim](http://gajim.org/index.fr.html) (Linux, Windows),
-- [Dino](https://dino.im) (Linux),
-- [Thunderbird](https://www.mozilla.org/fr/thunderbird/) (multiplateforme),
-- [Jitsi](http://jitsi.org/) (multiplateforme)
-- [Adium](https://adium.im/) (Mac OS).
+- [Gajim](http://gajim.org/fr/) (Linux,Windows)
+- [Dino](https://dino.im) (Linux)
+- [Thunderbird](https://www.thunderbird.net/) (multiplateforme)
+- [Beagle IM](https://beagle.im/) (Mac OS)
+- [Profanity](https://profanity-im.github.io/) (Linux)
 
 ### Clients sur mobile
 
-* [Xabber](http://xabber.com) (Android)
-* [Conversations](https://conversations.im/) (Android)
-* [Movim sous Android](https://movim.eu)
-* [Monal](https://itunes.apple.com/us/app/monal-free-xmpp-chat/id317711500?mt=8) (iOS)
-- [Kaidan](https://github.com/KaidanIM/Kaidan) (Ubuntu Touch / Plasma Mobile)
+- [Conversations](https://conversations.im/) (Android)
+- [Xabber](http://xabber.com) (Android)
+- [Movim sous Android](https://movim.eu)
+- [Monal](https://monal.im/) (iOS)
+- [Siskin IM](https://siskin.im/) (iOS)
+- [Kaidan](https://www.kaidan.im/) (Ubuntu Touch / Plasma Mobile)
 
 Voici une liste plus exhaustive des clients XMPP : https://fr.wikipedia.org/wiki/Liste_de_clients_XMPP
 
@@ -52,7 +53,7 @@ Il est possible de rendre les conversations plus sécurisées et privées en les
 
 Pour créer un salon de discussion (Multi-user chat) sur votre serveur Yunohost utilisez l’identifiant nomsalon@muc.domaine.tld (où domaine.tld est le domaine principal de votre serveur).
 
-Si vous utilisez un nom de domaine personnel, il est nécessaire d’[ajouter une redirection de type CNAME pour le sous domaine `muc.`](dns_config_fr) au niveau de votre serveur DNS.
+Si vous utilisez un nom de domaine personnel, il est nécessaire d’[ajouter une redirection de type CNAME pour le sous domaine `muc.`](/dns_config) au niveau de votre serveur DNS.
 
 ## VoIP et visioconférence
 

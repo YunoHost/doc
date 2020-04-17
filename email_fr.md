@@ -40,11 +40,11 @@ Si votre serveur devient indisponible, les courriels envoyés à votre serveur r
 ## Formulaires pour enlever son adresse IP des listes noires
 Il est possible que les emails envoyés depuis votre instance YunoHost soient considérés comme du spam par les grands services de mails.
 Il est possible que l’adresse IP de votre serveur a autrefois été utilisé pour envoyé du spam ou que ces services de mails considèrent votre serveur comme émetteur de spams.
-Pour s’assurer que l’adresse IP de votre serveur n’est pas dans ces listes et pour l’enlever dans le cas échéant suivez ce [lien](/blacklist_forms_fr).
+Pour s’assurer que l’adresse IP de votre serveur n’est pas dans ces listes et pour l’enlever dans le cas échéant suivez ce [lien](/blacklist_forms).
 
 
 Pour aller plus loin
 --------------------
 
 - Il existe une page de documentation pour [migrer ses emails d'un fournisseur de messagerie vers une instance YunoHost](email_migration).
-- Pour approfondir votre compréhension du courriel et de ses protocoles, voici une [conférence éclairante](https://www.iletaitunefoisinternet.fr/post/7-email-sonntag/)(en français).
+- Pour approfondir votre compréhension du courriel et de ses protocoles, voici une [conférence éclairante](https://www.octopuce.fr/conference-lemail-vaste-sujet-par-benjamin-sonntag/)(en français).

@@ -21,7 +21,7 @@ The full list of application (official and community) can be browsed at [this pa
 Integration and quality levels
 ------------------------------
 
-Automated tests are being ran regularly to test the integration and quality of all official apps, as well as community apps who were declared to be 'working'. The result is a level between 0 and 7, whose meaning is detailed on [this page](/packaging_apps_levels_fr). Some tests results may also be available [on this dashboard](https://dash.yunohost.org/appci/branch/stable).
+Automated tests are being ran regularly to test the integration and quality of all official apps, as well as community apps who were declared to be 'working'. The result is a level between 0 and 7, whose meaning is detailed on [this page](/packaging_apps_levels). Some tests results may also be available [on this dashboard](https://dash.yunohost.org/appci/branch/stable).
 
 LDAP / SSO integration
 ----------------------
@@ -37,7 +37,7 @@ Some applications support the ability to be installed several times (at differen
 User access management
 ----------------------
 
-Access to apps can be restricted to some users only. This can be configured via the webadmin in Applications > (choose an app) > Access, or similarly via the command line `yunohost app addaccess`, `removeaccess` and `clearaccess`.
+Access to apps can be restricted to some users only. This can be configured via the webadmin in the [Groups and permissions panel](/groups_and_permissions), or similarly via the command-line subcategory `yunohost user permission`.
 
 Packaging applications 
 ----------------------

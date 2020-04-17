@@ -64,16 +64,16 @@ Constatant l’engouement croissant autour de YunoHost et de l’auto-hébergeme
 
 YunoHost est développé pour être le plus **simple** et le moins intrusif possible pour garder la compatibilité avec Debian. Il propose uniquement un ensemble de configurations automatiques et opère via des interfaces accessibles.
 
-Le tout est bien entendu **entièrement libre**. La philosophie de l’[الإستضافة الذاتية](selfhosting_fr) étant à nos yeux incompatible avec tout autre modèle de développement logiciel.
+Le tout est bien entendu **entièrement libre**. La philosophie de l’[الإستضافة الذاتية](/selfhosting) étant à nos yeux incompatible avec tout autre modèle de développement logiciel.
 
-لا تتردّدوا في زيارة صفحة « [ساهموا](/contribute_ar) ».
+لا تتردّدوا في زيارة صفحة « [ساهموا](/contribute) ».
 </div>
 
 ---
 
 ###<div dir="rtl"> الأمان</div>
 
-لقد بُذِلت كل المجهودات مِن أجل تأمين واي يونوهوست YunoHost و **تعمية و تشفير البروتوكولات** . بإمكانكم الإطلاع على الشرح بتفاصيليه [هنا](/security_fr).
+لقد بُذِلت كل المجهودات مِن أجل تأمين واي يونوهوست YunoHost و **تعمية و تشفير البروتوكولات** . بإمكانكم الإطلاع على الشرح بتفاصيليه [هنا](/security).
 </div>
 ---
 

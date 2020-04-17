@@ -116,7 +116,7 @@ Tras l’installacion YunoHost fornís sul pic un servidor XMPP per lo qual pod�
 
 Podètz tanben installar un servidor Matrix :
 * Lo servidor: [Synapse](https://github.com/YunoHost-Apps/synapse_ynh)
-* Un client web: [Riot](https://github.com/YunoHost-Apps/_ynh)
+* Un client web: [Riot](https://github.com/YunoHost-Apps/riot_ynh)
 
 ### Intranet
 
@@ -200,4 +200,4 @@ Mas per la produccion, la salvagarda gardada localament basta pas, vos cal emple
 ## Conclusion
 
 YunoHost pòt cumplir 99% dels besonhs de las organizacions sens tòca lucrativa, en lor permetent de téner e protegir lors donadas, de causir las aplicacions que vòlon utilizar.
-E se son pas disponiblas, pòdon [crear un paquet per YunoHost](https://yunohost.org/#/contributordoc), es fòrça simple.
+E se son pas disponiblas, pòdon [crear un paquet per YunoHost](/contributordoc), es fòrça simple.

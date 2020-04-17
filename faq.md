@@ -52,7 +52,7 @@ Yes! YunoHost is multi-user and multi-domain. Some applications like *WordPress*
 
 #### Why can't I access applications via the IP address?
 
-The [SSO](https://github.com/Kloadut/SSOwat/) (single sign-on) cannot properly authenticate users when they access your server with only its IP. If you really can't properly configure the DNS, you can temporarily work around it by [modifying the `hosts` file (last §)](dns_local_network_en) on your computer.
+The [SSO](https://github.com/Kloadut/SSOwat/) (single sign-on) cannot properly authenticate users when they access your server with only its IP. If you really can't properly configure the DNS, you can temporarily work around it by [modifying the `hosts` file (last §)](/dns_local_network) on your computer.
 
 
 #### What's YunoHost's business model?
@@ -74,7 +74,7 @@ Yes, you can! YunoHost needs money to pay servers and domain names. We would
 also like contributors to be able to continue contributing rather than look for
 jobs elsewhere.
 
-You can donate on [Liberapay](https://liberapay.com/yunohost).
+You can donate using [our donation interface](https://donate.yunohost.org)
 
 If you can, you can also make in-kind contributions, like servers (some of our
 infrastructure relies on servers from a few associations).
@@ -95,7 +95,7 @@ and having some free time. Other than that, just doing what you can is already a
 
 #### What's YunoHost's political model?
 
-It is described in [this document](yunohost_project_organization.md) :).
+It is described in [this document](project_organization) :).
 
 
 #### Will you port YunoHost to [insert favorite distro]?

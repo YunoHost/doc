@@ -117,7 +117,7 @@ Out of the box, YunoHost provide an XMPP server, for which you can install a web
 
 You can also install a matrix server:
 * The server: [Synapse](https://github.com/YunoHost-Apps/synapse_ynh)
-* A web client: [Riot](https://github.com/YunoHost-Apps/_ynh)
+* A web client: [Riot](https://github.com/YunoHost-Apps/riot_ynh)
 
 ### Intranet
 
@@ -201,4 +201,4 @@ But for production, localy stored backup are not enough, so you will need to imp
 ## Conclusion
 
 YunoHost can cover 99% of the needs of non-profit organizations, allowing them to own and protect their data, choose applications they want to use.
-And if one is not available, they can [package it for YunoHost](https://yunohost.org/#/contributordoc), it's very simple.
+And if one is not available, they can [package it for YunoHost](/contributordoc), it's very simple.
