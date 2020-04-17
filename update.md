@@ -2,8 +2,7 @@
 
 ## From the webadmin
 
-On the administraton panel, choose Tools.
-Click on Upgrade the system.
+On the administraton panel, click on Upgrade the system.
 
 The application search for updates and propose it if so.
 

@@ -26,6 +26,7 @@
     * [L'interface d'administration web](/admin)
     * [SSH](/ssh) et [l'administration en ligne de commande](/commandline)
     * [Les utilisateurs et le SSO](/users)
+    * [Les groupes et les permissions](/groups_and_permissions)
     * [Les applications](/apps_overview)
     * [Les domaines, la configuration DNS et les certificats](/domains)
     * [Les emails](/email)
@@ -55,7 +56,7 @@
     * [Utilisation de certificats autres que Let's Encrypt](/certificate_custom)
     * [Une discussion sur les avantages d'utiliser un VPN](/vpn_advantage)
     * [(vieux) Procedure de Migration Jessie->Stretch](jessie_stretch_migration)
-* [Guide de dépannage](/troubleshooting_guide)
+* Dépannage
     * [Changer le mot de passe d’administration](/change_admin_password)
     * [Récupérer l'accès à son serveur](/noaccess)
     * [Débannir une IP dans Fail2ban/IPtables](/fail2ban)

@@ -18,28 +18,28 @@ You can connect to your YunoHost XMPP account in different ways.
 
 ### Web clients
 
-- [Movim](https://pod.movim.eu)
-- [Libervia/Salut à Toi](http://salut-a-toi.org/).
-
+- [Movim](https://movim.eu)
+- [ConverseJS](https://conversejs.org/)
+- [Libervia/Salut à Toi](https://salut-a-toi.org/)
 
 ### Desktop clients
 
-- [Pidgin](http://pidgin.im/) (multiplatform),
-- [Gajim](http://gajim.org/) (Linux, Windows),
-- [Dino](https://dino.im) (Linux),
-- [Thunderbird](https://www.thundebird.net/) (multiplatform),
-- [Jitsi](http://jitsi.org/) (multiplatform)
-- [Adium](https://adium.im/) (Mac OS).
+- [Gajim](http://gajim.org/) (Linux,Windows)
+- [Dino](https://dino.im) (Linux)
+- [Thunderbird](https://www.thunderbird.net/fr/) (multiplatform)
+- [Beagle IM](https://beagle.im/) (Mac OS)
+- [Profanity](https://profanity-im.github.io/) (Linux)
 
 ### Mobile clients
 
-- [Xabber](http://xabber.com) (Android)
 - [Conversations](https://conversations.im/) (Android)
+- [Xabber](http://xabber.com) (Android)
 - [Movim under Android](https://movim.eu)
-- [Monal](https://itunes.apple.com/us/app/monal-free-xmpp-chat/id317711500?mt=8) (iOS)
-- [Kaidan](https://github.com/KaidanIM/Kaidan) (Ubuntu Touch / Plasma Mobile)
+- [Monal](https://monal.im/) (iOS)
+- [Siskin IM](https://siskin.im/) (iOS)
+- [Kaidan](https://www.kaidan.im/) (Ubuntu Touch / Plasma Mobile)
 
-Here is an exhaustive list of XMPP clients : https://en.wikipedia.org/wiki/Comparison_of_XMPP_clients
+Here is an exhaustive list of XMPP clients : https://xmpp.org/software/clients.html
 
 ## Encrypt conversations with OMEMO
 

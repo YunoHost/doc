@@ -10,6 +10,7 @@
    * [Apps wishlist](/apps_wishlist)
    * [General introduction to app packaging](/packaging_apps_start)
    * [Technical introduction to app packaging](/packaging_apps)
+   * [How to use Git to package apps](/packaging_apps_git)
    * [Setting up a dev environment with VirtualBox](/packaging_apps_virtualbox)
    * [Manifest](packaging_apps_manifest)
    * [Scripts](packaging_apps_scripts)

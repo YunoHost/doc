@@ -26,6 +26,7 @@
     * [Web administration interface](/admin)
     * [SSH](/ssh) and [command-line administration](/commandline)
     * [Users and the SSO](/users)
+    * [Groups and permissions](/groups_and_permissions)
     * [Applications](/apps_overview)
     * [Domains, DNS and certificates](/domains)
     * [Email](/email)
@@ -44,7 +45,7 @@
     * [Hide services with Tor](/torhiddenservice)
     * [A discussion about the advantages of using a VPN](/vpn_advantage)
     * [(old) Jessie->Stretch migration procedure](jessie_stretch_migration)
-* [Troubleshooting guide](/troubleshooting_guide)
+* Troubleshooting
     * [Changing the administration password](/change_admin_password)
     * [Recover access to your server](/noaccess)
     * [Unban IPs in iptables/fail2ban](/fail2ban)

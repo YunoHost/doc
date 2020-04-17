@@ -170,7 +170,7 @@ Une fois l’invitation acceptée, [transférer son dépôt sur l’organisation
 
 #### YEP 1.8
 ##### Publier des demandes de test  | validé | manuel | OFFICIAL |
-Afin d'assurer le bon fonctionnement d'un paquet, il convient de publier une annonce afin d'ouvrir les tests sur le paquet. Cette annonce peut se faire sur le forum dans [la catégorie Apps du forum](https://forum.yunohost.org/c/apps).
+Afin d'assurer le bon fonctionnement d'un paquet, il convient de publier une annonce afin d'ouvrir les tests sur le paquet. Cette annonce peut se faire sur le forum dans [la catégorie Apps du forum](https://forum.yunohost.org/c/support/apps).
 
 Il est recommandé d'indiquer si certains tests n'ont pas été menés.
 
