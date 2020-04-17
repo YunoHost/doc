@@ -89,7 +89,7 @@ La YEP 1 est une meta YEP, elle explique ce qu'il faut faire pour échanger avec
 ##### Nommer son app et son dépôt  | validé | manuel | NOTWORKING |
 Chaque application YunoHost possède un id inscrit dans le manifeste de l'application.
 Cet identifiant doit être unique entre chaque paquet d'application.
-Il est donc recommandé de vérifier sa disponibilité en consultant la liste des applications référencées dans les dépôts d'applications connus (official, community, internetcube).
+Il est donc recommandé de vérifier sa disponibilité en consultant la liste des applications référencées dans les dépôts d'applications connus (apps, internetcube).
 
 De plus l'identifiant doit respecter l'expression régulière suivante `^[a-z1-9]((_|-)?[a-z1-9])+$`. Autrement dit, il doit respecter les règles suivantes :
 * être en minuscule
@@ -114,15 +114,15 @@ Ces dépôts ont plusieurs fonctions :
 * indiquer l'état de fonctionnement du paquet ;
 * indiquer des informations sur le support d'un paquet.
 
-Pour les listes `official.json` et `community.json` maintenues par l'équipe du projet Yunohost, l'inscription se fait sur [le dépôt git "apps"](https://github.com/YunoHost/apps). D'autres listes non-officielles (notamment celles incluant des applications non-libres) peuvent exister, se réferer au [Forum](https://forum.yunohost.org) de la communauté.
+Pour la liste `apps.json` maintenue par l'équipe du projet Yunohost, l'inscription se fait sur [le dépôt git "apps"](https://github.com/YunoHost/apps). D'autres listes non-officielles (notamment celles incluant des applications non-libres) peuvent exister, se réferer au [Forum](https://forum.yunohost.org) de la communauté.
 
 #### YEP 1.3
 ##### Indiquer la licence associée au paquet  | brouillon | AUTO | WORKING |
 La licence du paquet est à indiquer dans un fichier `LICENSE` à la racine du paquet. Attention à ne pas confondre avec la licence de l'application qui va être installée dont l'acronyme est à renseigner dans le champ `license` du manifeste.
 
-Les listes d'applications official.json et community.json n'acceptent que les paquets dont la licence est libre, de même pour la licence de l'application contenue. Certaines applications libres nécessitent des dépendances non-libres (exemple: mp3, drivers, etc.). Dans ce cas, il faut ajouter `&dep-non-free` à l'acronyme et si possible donner des précisions dans le README.md du paquet, l'intégration sera dans ce cas acceptée au cas par cas.
+La liste d'application apps.json n'acceptent que les paquets dont la licence est libre, de même pour la licence de l'application contenue. Certaines applications libres nécessitent des dépendances non-libres (exemple: mp3, drivers, etc.). Dans ce cas, il faut ajouter `&dep-non-free` à l'acronyme et si possible donner des précisions dans le README.md du paquet, l'intégration sera dans ce cas acceptée au cas par cas.
 
-**NB :** Les applications non-présentes dans les listes maintenues par le projet peuvent tout de même être installées : soit manuellement via le lien de l'application, soit de manière plus intégrée via des listes non-officielles (qui peuvent être créées et maintenues par la communauté).
+**NB :** Les applications non-présentes dans la liste maintenue par le projet peuvent tout de même être installées : soit manuellement via le lien de l'application, soit de manière plus intégrée via des listes non-officielles (qui peuvent être créées et maintenues par la communauté).
 
 Dans le futur, YunoHost affichera sans doute des détails sur la licence de l'application. Pour y parvenir, l'acronyme doit être celui issu de cette [liste de licences répertoriées du SPDX](https://spdx.org/licenses/) (si il y a 2 acronymes, il faut prendre celui contenant le numéro de version). Pour plus de cohérence, la casse doit être respectée.
 
