@@ -32,14 +32,14 @@ Es el nombre de dominio que permitirá el acceso a tu servidor así como al port
 
 * YunoHost te propone un DNS dinámico, proveando nombres de dominio del tipo *midominio.nohost.me*, *midominio.noho.st* o *midominio.ynh.fr*. Si no posees un nombre de dominio y/o que quieres aprovechar de este servicio, elige un dominio terminando con `.nohost.me`, `.noho.st` o `.ynh.fr`. Si no está utlizado ya, el dominio automáticamente estará vinculado a tu servidor Yunohost, y no tendrás más etapas de configuración.
 
-* Si, en cambio, dominas la noción de **DNS**, puedes utilizar tu propio nombre de dominio. En este caso, refiérete a la página [yunohost.org/dns](/dns_es) por más información.
+* Si, en cambio, dominas la noción de **DNS**, puedes utilizar tu propio nombre de dominio. En este caso, refiérete a la página [yunohost.org/dns](/dns) por más información.
 
-* Si no tienes nombre de dominio y que no quieres uno que acabe con *.nohost.me*, *.noho.st* ou *.ynh.fr*, puedes utilizar un dominio local. Más información sobre cómo [acceder a tu servidor desde la red local](/dns_local_network_es).
+* Si no tienes nombre de dominio y que no quieres uno que acabe con *.nohost.me*, *.noho.st* ou *.ynh.fr*, puedes utilizar un dominio local. Más información sobre cómo [acceder a tu servidor desde la red local](/dns_local_network).
 
 
 ### Contraseña de administración
 
-Es la contraseña que permitirá acceder a la [interfaz de administración](/admin_es) de tu servidor. También podrás utilizarla para conectarte remotamente vía **SSH**, o vía  **SFTP** para transferir archivos.
+Es la contraseña que permitirá acceder a la [interfaz de administración](/admin) de tu servidor. También podrás utilizarla para conectarte remotamente vía **SSH**, o vía  **SFTP** para transferir archivos.
 
 De manera general, ésta es la **llave de entrada en tu sistema**, pues piensa en **[elegirla atentamente](https://es.wikihow.com/escoger-una-contrase%C3%B1a-segura)**.
 
@@ -54,10 +54,10 @@ Si llegas aquí después de haber visto “Yunohost fue instalado con éxito" de
 
 ### ¿ Y ahora ?
 
-- Si te auto-alojas en casa y sin VPN, tienes que asegurarte que [los puertos de tu caja internet estén redirigidos](isp_box_config_es) ;
+- Si te auto-alojas en casa y sin VPN, tienes que asegurarte que [los puertos de tu caja internet estén redirigidos](/isp_box_config) ;
 - Si utilizas tu propio nombre de dominio (i.e. que no sea un nohost.me /
-  noho.st), tienes que [configurar el nombre de dominio según la configuración recomendada](dns_config_es) ;
-- Si no puedes configurar el nombre de dominio de momento (porque todavía no lo has comprado, ou porque es un dominio test), puedes solucionar temporalmente el problema con las instrucciones del último párrafo [aquí](dns_local_network_es) ;
-- No te asustes demasiado por [la advertencia a propósito del certificado](certificate_es), tendrás la posibilidad de obtener un certificado Let's Encrypt :).
-- Echa un vistazo a las [aplicaciones disponibles](apps_es) !
+  noho.st), tienes que [configurar el nombre de dominio según la configuración recomendada](/dns_config) ;
+- Si no puedes configurar el nombre de dominio de momento (porque todavía no lo has comprado, ou porque es un dominio test), puedes solucionar temporalmente el problema con las instrucciones del último párrafo [aquí](/dns_local_network) ;
+- No te asustes demasiado por [la advertencia a propósito del certificado](/certificate), tendrás la posibilidad de obtener un certificado Let's Encrypt :).
+- Echa un vistazo a las [aplicaciones disponibles](/apps) !
 

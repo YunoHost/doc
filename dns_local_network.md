@@ -12,7 +12,7 @@ You may retrieve your server private IP adress  through different means:
 <img src="/images/ynh_login.png" width=600>
 
 - Using Yunohost administration panel:
-    Go to "State of the server" > Network
+    Go to Tools > State of the server > Network
 <img src="/images/ynh_admin_etat_ip.png" width=900>
 
 - Or using your router or internet box, depending on model.

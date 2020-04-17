@@ -37,7 +37,7 @@ Finally click on the check mark to validate the folder.
 
 #### II. Migrate Nextcloud data to a larger partition
 
-**Note**: The following assumes that you have a hard disk mounted on `/media/storage`. Refer to[this article](/external_storage_en) to prepare your system.
+**Note**: The following assumes that you have a hard disk mounted on `/media/storage`. Refer to[this article](/external_storage) to prepare your system.
 
 **Note**: Replace `nextcloud` with the name of its instance, if you have several Nextcloud apps installed.
 
@@ -128,7 +128,7 @@ Run a scan of the new directory by Nextcloud:
 
 ```bash
 cd /var/www/nextcloud
-sudo -u nextcloud php occ files:scan --all
+sudo -u nextcloud php7.3 occ files:scan --all
 ```
 
 It's over now. Now test if everything is fine, try connecting to your Nextcloud instance, upload a file, check its proper synchronization.

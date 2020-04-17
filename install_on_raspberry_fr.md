@@ -1,6 +1,6 @@
 # Installer YunoHost sur Raspberry Pi
 
-*Toutes les autres façons d’installer YunoHost sont listées **[ici](/install_fr)**.*
+*Toutes les autres façons d’installer YunoHost sont listées **[ici](/install)**.*
 
 <center>
 <img src="/images/raspberrypi.jpg" width=300 style="padding-bottom:20px">
@@ -17,21 +17,21 @@ Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissan
 - Un adaptateur secteur pour alimenter la carte ;
 - Une carte microSD : au moins **8 Go** et **Classe 10** (par exemple une [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
 - Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet. (Avec le Raspberry Pi 0, vous pouvez connecter votre carte avec un câble OTG et un adaptateur Wifi USB.)
-- Un [fournisseur d’accès correct](/isp_fr), de préférence avec une bonne vitesse d’upload.
+- Un [fournisseur d’accès correct](/isp), de préférence avec une bonne vitesse d’upload.
 
 ---
 
 ## Installation avec l'image pré-installée (recommandée)
 
-<a class="btn btn-lg btn-default" href="/images_fr">1. Télécharger l'image pour Raspberry Pi</a>
+<a class="btn btn-lg btn-default" href="/images">1. Télécharger l'image pour Raspberry Pi</a>
 
-<a class="btn btn-lg btn-default" href="/copy_image_fr">2. Flasher la carte SD avec l'image</a>
+<a class="btn btn-lg btn-default" href="/copy_image">2. Flasher la carte SD avec l'image</a>
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot_fr">3. Brancher la carte et la laisser démarrer</a>
+<a class="btn btn-lg btn-default" href="/plug_and_boot">3. Brancher la carte et la laisser démarrer</a>
 
-<a class="btn btn-lg btn-default" href="/ssh_fr">4. Se connecter en SSH sur le serveur</a>
+<a class="btn btn-lg btn-default" href="/ssh">4. Se connecter en SSH sur le serveur</a>
 
-<a class="btn btn-lg btn-default" href="/postinstall_fr">5. Effectuer la configuration initiale (post-installation)</a>
+<a class="btn btn-lg btn-default" href="/postinstall">5. Effectuer la configuration initiale (post-installation)</a>
 
 ---
 
@@ -57,5 +57,5 @@ sudo passwd root
 
 3. Déconnectez-vous et reconnectez-vous avec l'utilisateur root cette fois.
 
-4. Poursuivez avec la <a href="/install_manually_fr">procédure d'installation manuelle générique</a>.
+4. Poursuivez avec la <a href="/install_manually">procédure d'installation manuelle générique</a>.
 

@@ -11,7 +11,7 @@ Esta pantalla equivale a que te pidan ** ¿ Confías en el servidor que aloja es
 
 Para evitar esta confusión, es posible obtener un certificado, reconocido directamente por los navegadores, firmado por una autoridad « conocida » : **Let's Encrypt**, **Gandi**, **RapidSSL**, **StartSSL**, **Cacert**.
 
-**Let's Encrypt** propone certificados gratuitos. Desde la versión 2.5, Yunohost permite instalar directamente tales certificados desde la interfaz de administración o la línea de comandos. El resto del documento detalla la instalación y la firma de este tipo de certificado. También puedes [instalar un certificado de otra autoridad que Let's Encrypt](/certificate_custom_es).
+**Let's Encrypt** propone certificados gratuitos. Desde la versión 2.5, Yunohost permite instalar directamente tales certificados desde la interfaz de administración o la línea de comandos. El resto del documento detalla la instalación y la firma de este tipo de certificado. También puedes [instalar un certificado de otra autoridad que Let's Encrypt](/certificate_custom).
 
 ### Instalar un certificado Let's Encrypt
 

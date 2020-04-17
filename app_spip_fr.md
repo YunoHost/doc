@@ -20,7 +20,7 @@ $ sudo yunohost app install https://github.com/YunoHost-Apps/spip_ynh.git
 
 #### Mise à jour
 
-```
+```bash
 $ sudo yunohost app upgrade --verbose spip -u https://github.com/YunoHost-Apps/spip_ynh.git
 ```
 

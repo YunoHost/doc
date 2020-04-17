@@ -89,4 +89,4 @@ yunohost user ssh list-keys <username>
 
 N.B.: `fail2ban` bannerà il tuo IP per 10 minuti nel caso di almeno 5 tentativi di accesso falliti. Se devi togliere il ban al tuo IP leggi la pagina relativa [fail2ban](/fail2ban)
 
-Una discussione più approfondita relativa a sicurezza & SSH è su [questa pagina](security_en).
+Una discussione più approfondita relativa a sicurezza & SSH è su [questa pagina](/security).

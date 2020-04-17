@@ -7,7 +7,7 @@ votre serveur soit facilement accessible par d'autres êtres humains, et pour
 que certains services comme le mail fonctionnent correctement, il est nécessaire
 de configurer la zone DNS de votre domaine.
 
-Si vous utilisez un [domaine automatique](/dns_nohost_me_fr) fourni par le Projet Yunohost,
+Si vous utilisez un [domaine automatique](/dns_nohost_me) fourni par le Projet Yunohost,
 la configuration devrait être faite automatiquement. Si vous utilisez votre propre nom de domaine
 (e.g. acheté chez un registrar), il vous faut configurer manuellement votre
 domaine via l'interface de votre registrar.
@@ -44,6 +44,7 @@ _xmpp-server._tcp 3600 IN SRV 0 5 5269 votre.domaine.tld.
 muc 3600 IN CNAME @
 pubsub 3600 IN CNAME @
 vjud 3600 IN CNAME @
+xmpp-upload 3600 IN CNAME @
 
 #
 # Mail (MX, SPF, DKIM et DMARC)

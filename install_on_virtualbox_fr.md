@@ -1,13 +1,13 @@
 # Installer YunoHost sur VirtualBox
 
-*Trouvez d’autres moyens d’installer YunoHost **[ici](/install_fr)**.*
+*Trouvez d’autres moyens d’installer YunoHost **[ici](/install)**.*
 
 ## Prérequis
 
 <img src="/images/virtualbox.png" width=200>
 
 * Un ordinateur x86 avec VirtualBox installé et assez de RAM disponible pour lancer une petite machine virtuelle.
-* La dernière **image ISO YunoHost** stable, disponible [ici](/images_fr).
+* La dernière **image ISO YunoHost** stable, disponible [ici](/images).
 
 <div class="alert alert-warning" markdown="1">
 N.B. : Installer YunoHost dans une VirtualBox est utile pour tester la

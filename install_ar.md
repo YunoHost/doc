@@ -14,11 +14,11 @@
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/try_fr"><img height=150 src="/images/logo.png" style="vertical-align:bottom"><b><p>الخادوم التجريبي</p></b></a>
+<a href="/try"><img height=150 src="/images/logo.png" style="vertical-align:bottom"><b><p>الخادوم التجريبي</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_virtualbox_fr"><img src="/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>التجريب على خادوم إفتراضي</p></b></a>
+<a href="/install_on_virtualbox"><img src="/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>التجريب على خادوم إفتراضي</p></b></a>
 </div>
 
 </div>
@@ -32,15 +32,15 @@
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_raspberry_fr"><img src="/images/raspberrypi.jpg" height=150 style="vertical-align:bottom"><b><p>على راسبيري باي</p></b></a>
+<a href="/install_on_raspberry"><img src="/images/raspberrypi.jpg" height=150 style="vertical-align:bottom"><b><p>على راسبيري باي</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_arm_board_fr"><img src="/images/cubieboard2.png" height=150 style="vertical-align:bottom"><b><p dir="rtl">على بطاقة أي أر آم ARM</p></b></a>
+<a href="/install_on_arm_board"><img src="/images/cubieboard2.png" height=150 style="vertical-align:bottom"><b><p dir="rtl">على بطاقة أي أر آم ARM</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/install_iso_fr"><img src="/images/computer.png" height=150 style="vertical-align:bottom"><b><p>على حاسوب عادي</p></b></a>
+<a href="/install_iso"><img src="/images/computer.png" height=150 style="vertical-align:bottom"><b><p>على حاسوب عادي</p></b></a>
 </div>
 
 </div>
@@ -58,7 +58,7 @@
 <div class="row">
 
 <div class="block-center text-center">
-<a href="/install_on_vps_fr"><img src="/images/vps.png" height=150 style="vertical-align:bottom; text-align:center"><b><p dir="rtl">على خادوم مُستضاف أو خادوم إفتراضي خاص (VPS)</p></b></a>
+<a href="/install_on_vps"><img src="/images/vps.png" height=150 style="vertical-align:bottom; text-align:center"><b><p dir="rtl">على خادوم مُستضاف أو خادوم إفتراضي خاص (VPS)</p></b></a>
 </div>
 
 </div>
@@ -72,7 +72,7 @@
 <div class="row">
 
 <div class="col col-md-3 text-center">
-<a href="/install_on_debian_fr"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
+<a href="/install_on_debian"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
 <b><p>على ديبيان 9 / ستريتش</p></b></a>
 </div>
 

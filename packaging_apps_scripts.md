@@ -1,4 +1,4 @@
-<a class="btn btn-lg btn-default" href="packaging_apps_en">Application packaging</a>
+<a class="btn btn-lg btn-default" href="/packaging_apps">Application packaging</a>
 
 ## Scripts
 

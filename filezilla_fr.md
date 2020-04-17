@@ -50,7 +50,7 @@ Installez le programme et lancez *Filezilla*.
 
    ![la vue pendant la connexion à un serveur distant](images/filezilla_6.png)
 
-2. Dans le panneau de droite, vous pouvez aller dans `/home/yunohost.backup/archives/` pour trouver les archives de [sauvegardes](/backup_fr).
+2. Dans le panneau de droite, vous pouvez aller dans `/home/yunohost.backup/archives/` pour trouver les archives de [sauvegardes](/backup).
 
    ![le chemin où les sauvegardes sont situées sur Yunohost](images/filezilla_7.png)
 

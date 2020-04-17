@@ -1,6 +1,6 @@
 # Free
 
-*Trouvez la liste d’autres fournisseurs d’accès Internet **[ici](/isp_fr)**.*
+*Trouvez la liste d’autres fournisseurs d’accès Internet **[ici](/isp)**.*
 
 #### Accès à l’administration de la box (v5/v6)
 
@@ -14,13 +14,13 @@ Allez à l’adresse : [mafreebox.free.fr](http://mafreebox.free.fr/) puis authe
 
 #### Ouverture des ports
 
-[Liste des ports à ouvrir](/isp_box_config_fr).
+[Liste des ports à ouvrir](/isp_box_config).
 
 ##### Freebox ≤ v5 
 
 Cela se passe dans la section *Ma Freebox / Configurer mon routeur*. Il faut :
 
-- Rediriger les [ports à ouvrir](/isp_box_config_fr) vers l'adresse locale de votre serveur YunoHost.
+- Rediriger les [ports à ouvrir](/isp_box_config) vers l'adresse locale de votre serveur YunoHost.
 - Définir une DMZ vers votre serveur YunoHost.
 
 La présence conjointe de ces deux règles permettent d'accéder à votre serveur de l'extérieur comme de l'intérieur de votre réseau local.

@@ -10,7 +10,7 @@ You could join those chat rooms using :
 
 #### Help and support chatroom
 
-There is a [support](support_fr) chatroom for YunoHost users mutual support and help.
+There is a [support](/help) chatroom for YunoHost users mutual support and help.
 
 - IRC: **#yunohost** on irc.freenode.net ;
 - Matrix: **#freenode_#yunohost:matrix.org** ;
