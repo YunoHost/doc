@@ -31,8 +31,8 @@ Pour taper un retour à la ligne sans créer de nouveau paragraphe, il est néce
 En rédigeant ça :
 
 ```markdown
-Pour du texte en *italique il faut encadrer par un astérisque`*`*
-Pour rédiger du **texte en gras par deux astérisques**
+Pour du texte en *italique il faut encadrer par un astérisque* `*`
+Pour rédiger du **texte en gras par deux astérisques** `**`
 On peut aussi ~~barrer le texte~~ en encadrant avec deux tildes `~`
 ```
 
@@ -53,11 +53,12 @@ Pour créer un lien vers un site hors de la documentation de YunoHost :
 s'affichera comme tel :
 [Texte à afficher](https://lelien.tld)
 
-C'est identique pour les pages de la documentation, excepté que le lien est interne. Il renvoie au fichier du wiki, sans extension de langgue et de fichier (le `_fr.md`) :
+C'est identique pour les pages de la documentation, excepté que le lien est interne. Il renvoie au fichier du wiki, sans extension de langue et de fichier (le `_fr.md`) :
 ```markdown
 [Page du wiki](/write_documentation)
 ```
 
+Le lien renverra vers la page avec la bonne configuration de langue si la page existe.
 [Page du wiki](/write_documentation)
 
 ### Créer des ancres
@@ -94,7 +95,7 @@ Il est possible de faire un lien avec une image, exemple :
 ```
 [![Logo Yunohost](/images/logo.png)](/write_documentation)
 
-L'encart de *texte à afficher en cas d'impossibilité de chargement de l'image* n'est pas obligatoire mais fortement recommandé.
+L'encart de *texte à afficher en cas d'impossibilité de chargement de l'image* entre les corchets dans le lien de l'image n'est pas obligatoire mais fortement recommandé.
 
 ## Formater une citation
 
@@ -129,9 +130,9 @@ Les listes ordonnées peuvent s'incrémenter autant que vous le désirez, il n'e
 1. liste 3
    1. Liste 3a
    1. Liste 3b
-      3. Liste 3b1
-      3. Liste 3b2
-      3. Liste 3b3
+      7. Liste 3b1
+      7. Liste 3b2
+      7. Liste 3b3
          4. Liste 1
          4. Liste 2
          4. liste 3
@@ -206,41 +207,43 @@ Pour créer un tableau, il faut utiliser la barre verticale `|` et les tirets `-
 | **Un tableau** | Une colonne | Une seconde | Autant que l'on veut |
 |:--------------:|:-----------:|:-----------:|:--------------------:|
 | Une ligne formatée | | Et du **texte en gras** | Ou en *italique* |
-| D'autres lignes | |![une image](/images/cd.jpg) | [Ou un lien]( contributordoc) |
+| D'autres lignes | |![une image](/images/cd.jpg) | [Ou un lien](/contributordoc) |
 ```
 Ce qui afficherait ça :
 
 | **Un tableau** | Une colonne | Une seconde | Autant que l'on veut |
 |:--------------:|:-----------:|:-----------:|:--------------------:|
 | Une ligne formatée | | Et du **texte en gras** | Ou en *italique* |
-| D'autres lignes | |![une image](/images/cd.jpg) | [Ou un lien]( contributordoc) |
+| D'autres lignes | |![une image](/images/cd.jpg) | [Ou un lien](/contributordoc) |
 
 ## Bloc de codes
 
 Pour afficher du texte en brut, des `blocs de codes` peuvent être créer en utilisant l'accent grave `Alt Gr + è` :
 
-````markdown
-Soit inline, par exemple pour mettre en valeur une touche comme `Ctrl`
+```markdown
+Soit inline, par exemple pour mettre en valeur une touche comme &#39;Ctrl&#39;
 ```
+
 ou directement en bloc.
 La seule différence est dans la quantité d'accents graves :
-Minimum trois accents graves en ouverture et fermeture de bloc et deux accent grave qui   encadre le morceau de texte à formater dans une ligne
+Minimum trois accents graves en ouverture et fermeture de bloc et deux accent grave qui encadre le morceau de texte à formater dans une ligne
 
 Ce qui donnera au rendu :
 
+```
+&#39;&#39;&#39;
 Soit inline, par exemple pour mettre en valeur une touche comme `Ctrl`
-
+&#39;&#39;&#39;
 ```
 ou directement en bloc.
 La seule différence est dans la quantité d'accents graves :
 Minimum trois accents graves en ouverture et fermeture de bloc et deux accent grave qui   encadre le morceau de texte à formater dans une ligne
-```
 
 ## Liens utiles
 
  + La documentation du langage originel Markdown : [daringfireball.net/projects/markdown (en)](https://daringfireball.net/projects/markdown/)
  + Tutoriel Markdown sur [markdowntutorial.com (en)](https://markdowntutorial.com)
 
-## Aller plus loin <a name ="AllerLoin"></a>
+## Aller plus loin
 
 De manière plus général, pour comprendre comment est formaté un texte il suffit juste d'inspecter le document source avec une application note. Ce n'est pas pour autant que le wiki de YunoHost pourra l'exploiter. Il existe bien d'autres possibilités d'utiliser la syntaxe markdown, n'hésitez pas à ajouter des fonctionnalités manquantes. Si vous avez observé des manques et/ou que vous avez des questions, contactez-nous sur [le forum](https://forum.yunohost.org) ou par message directe sur le salon IRC : **#yunohost** sur [irc.freenode.net](https://irc.freenode.net).
