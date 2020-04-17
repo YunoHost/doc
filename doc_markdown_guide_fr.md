@@ -65,11 +65,11 @@ Le lien renverra vers la page avec la bonne configuration de langue si la page e
 Une ancre permet de faire un lien vers un point précis dans une page, c'est comme ça que fonctionnent les index en haut de page. Pour créer une ancre, il faut insérer du code à l'endroit de l'ancre sous la forme suivante :
 
 ```markdown
-Du texte qui sera ne sait même pas qu'il a une ancre <a name="NomDeLAncre"></a>
+Du texte qui sera ne sait même pas qu'il a une ancre <a name="nomancre"></a>
 ```
 
 Ce qui s'affiche :
-Du texte qui sera ne sait même pas qu'il a une ancre <a name="NomDeLAncres"></a>
+Du texte qui sera ne sait même pas qu'il a une ancre <a name="nomancre"></a>
 
 Il est aussi possible de directement renvoyer une ancre au titre, en notant le lien en minuscule avec des `-` à la place des espaces.
 Il ne reste plus qu'à désigner l'ancre au texte que l'on souhaite rendre interactif :
@@ -121,7 +121,7 @@ S'affichera :
 
 ## Les listes
 
-Les listes permettent d'afficher une suite de textes dans une présentation facile, c'est ainsi que sont rédiger les index tels que celui de la page de la [documentation contributeur](contributordoc).
+Les listes permettent d'afficher une suite de textes dans une présentation facile, c'est ainsi que sont rédiger les index tels que celui de la page de la [documentation contributeur](/contributordoc).
 
 ### Listes ordonnées
 
