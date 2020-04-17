@@ -6,8 +6,6 @@ Il est bien sûr possible de contribuer directement sur la documentation de Yuno
 Pour pouvoir envoyer vos contributions via GitHub, il est nécessaire avoir un compte sur GitHub, pour créer le compte vous aurez besoin d'une adresse email valide à laquelle vous avez accès. GitHub est un outil puissant qui propose de nombreuses fonctionnalités, l'interface peut être un peu effrayant au début.
 Vous n'êtes pas obligé·ée de donner vos noms et prénoms, vous pouvez utiliser un pseudonyme (lors de l'inscription `Username`).
 
-*/iframe video creer compte GitHub /*
-
 
 ## Forker la documentation de YunoHost dans votre dépôt personel
 Forker le code source permet de créer une nouvelle branche de développement d'un code source de logiciel ou dans le cas présent, le code source de la documentation. En créant une nouvelle branche, cela vous permet de modifier le code et d'ajouter vos contributions sans altérer le code de la branche `master` qui est le rendu public de la documentation. Ce qui vous permet de ne pas devoir tout marquer mais le faire en plusieurs étapes. (Notamment pour les contributions demandant plus de temps de travail).
@@ -17,8 +15,6 @@ Forker un projet sur GitHub est extrêmement simple, il suffit ce cliquer sur le
 Dans le titre du nouveau dépôt, vous verrez de quelle provenance vient le dépôt, dans le cas présent `YunoHost/doc`
 ![Capture d'écran titre et sous-titre du dépot](/images/dug_fork_source.png)
 
-*/iframe video forker code source GitHub /*
-
 > **Point de vigilance !**
 > Si vous forkez le dépôt d'un autre contributeur que yunohost, vous aurez les mêmes fichiers. Sauf que quand vous enverrez vos modifications, elles seront envoyées au contributeur et non au dépôt yunohost. L'avantage est que ça vous permet de développer une autre branche créee par le contributeur et ainsi travailler avec une autre personne à une amélioration avant proposition au dépôt principal.
 > Il n'est pas possible d'avoir un fork du dépot d'un contributeur et le fork dépôt d'origine au même moment dans votre propre dépôt.
@@ -26,8 +22,6 @@ Dans le titre du nouveau dépôt, vous verrez de quelle provenance vient le dép
 ## Modifier et ajouter votre contribution
 Une fois le dépôt forker (copié), il faudra créer une nouvelle branche de développement au sein de votre dépôt. C'est à travers cette branche que vous allez modifier les fichiers et ainsi proposer des améliorations de la documentation. Le fait que ce soit une nouvelle branche vous permettra par la suite de faire une Pull Request, c'est à dire une demande d'ajout de vos contributions au sein de la branche `master` qui est la branche principale de la documentation. Les règles de développement sur GitHub change selon les développeurs de chaque dépôt, certains ont une branche testing dans laquelle il faut proposer les contributions.
 Plus d'informations sur qu'est une branche sur git-scm.com : [Les branches avec Git - Ce qu'est une branche](https://git-scm.com/book/fr/v1/Les-branches-avec-Git-Ce-qu-est-une-branche).
-
-*/iframe video modifier fichiers ajouter contribution /*
 
 ## Envoyer votre contribution par une Pull Request
 Faire une Pull Request correspond au moment ou vous souahitez partager votre travaille avec le reste des contributeurs⋅trices et l'intégrer au dépot master (dépôt principale de Yunohost). Lors de la publication d'un Pull Request, couramment nommé PR, les contributeurs⋅trices pourront amender, commenter, ajouter, corriger votre contribution avant intégration complète au dépot.
@@ -47,7 +41,3 @@ Utiliser la puissance de Git et ainsi travailler sur son ordinateur personnel, p
 ## Quelques ressources ailleurs sur le net pour aller plus loin
  - [Gérer son code avec Git et GitHub - openclassrooms.com](https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github)
  - [Interface utilisateurs·trices de Git - git-scm.com](https://git-scm.com/download/gui/linux)
-
-*/ To do/*
-*/Ajouter vidéos explicative - Add videos explication/*
-*/Ajouter ## Corriger et inspecter les contributions /*

@@ -8,7 +8,7 @@
   - [Configure Pi-Hole](#configure-pi-hole)
   - [Configure my router](#configure-my-router)
   - [Restore Network](#restore-network)
-- [Useful links] [# Useful links]
+- [Useful links](#useful-links)
 
 Pi-hole is a network-level ad blocker that acts as a DNS liar and possibly a DHCP3 server for use on a private network. It is designed to be installed on embedded devices with network capabilities, such as the Raspberry Pi, but can be used on other machines running Linux or in virtualized environments.
 

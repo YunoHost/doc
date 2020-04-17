@@ -6,8 +6,6 @@ It is of course possible to contribute directly to the YunoHost documentation, b
 To be able to send your contributions via GitHub, you need to have an account on GitHub, to create the account you will need a valid email address that you have access to. GitHub is a powerful tool with many features, the interface can be a little scary at first.
 You don't have to give your first and last names, you can use a nickname (when you register `Username`).
 
-*/iframe video create a GitHub account /*
-
 ## Fork the YunoHost documentation in your personal repository
 To fork the source code allows you to create a new branch of development of a software source code or in this case the source code of the documentation. By creating a new branch, this allows you to modify the code and add your contributions without altering the code of the `master' branch, which is the public release of the documentation. This allows you not to have to write down everything at once, but to do it in several steps. (Especially for contributions that require more time).
 
@@ -16,8 +14,6 @@ Forking a project on GitHub is extremely simple, just click on the Fork button, 
 In the title of the new repository, you will see where the repository comes from, in this case `YunoHost/doc`.
 ![Screenshots title and subtitle of the repository](/images/dug_fork_source.png)
 
-*/iframe video forker source code GitHub /*
-
 > **Point of vigilance !**
 > If you forge the repository of another contributor than yunohost, you'll get the same files. Except that when you send your changes, they will be sent to the contributor and not to the yunohost repository. The advantage is that it allows you to develop another branch created by the contributor and work with another person on an improvement before submitting it to the main repository.
 > It is not possible to have a fork from a contributor's repository and the original repository fork at the same time in your own account.
@@ -25,8 +21,6 @@ In the title of the new repository, you will see where the repository comes from
 ## Modify and add your contribution
 Once the repository is forked (copied), you will need to create a new development branch within your repository. It is through this branch that you will modify the files and thus propose improvements to the documentation. The fact that it is a new branch will allow you to make a Pull Request, i.e. a request to add your contributions to the `master' branch, which is the main documentation branch. The development rules on GitHub change depending on the developers of each repository, some have a testing branch in which to offer contributions.
 More information on what a branch on git-scm.com is: [Branching with Git - What a branch is](https://git-scm.com/book/fr/v1/Les-branches-avec-Git-Ce-qu-est-une-branche).
-
-*/iframe video edit files add contribution /*
 
 ## Send your contribution by a Pull Request
 Create a Pull Request when you want to share your work with the other contributors and integrate it into the master repository (Yunohost's main repository). When publishing a Pull Request, commonly called PR, contributors will be able to amend, comment, add, correct your contribution before it is fully integrated into the repository.
@@ -46,7 +40,3 @@ Using the power of Git to work on your personal computer means you don't have to
 ## Some resources elsewhere on the net to go further
  - [Managing your code with Git and GitHub - openclassrooms.com](https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github)
  - [Git User Interface - git-scm.com](https://git-scm.com/download/gui/linux)
-
-*/ To do/*
-*/Add videos explanation/* - Add videos explanation/*
-*/Add ## Correct and inspect contributions /*

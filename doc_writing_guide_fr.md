@@ -4,10 +4,7 @@
 
 Ajouter un bouton installer en un clique (comme par exemple : https://yunohost.org/#/app_piwigo_fr) et un bouton sur le niveau d'intégration de l'application.
 
-
-Classement des applications disponibles par tags (genre, Git, gestion associations, courriels, etc.).
-
-*/Définition d'une license de diffusion de la documentation, mais laquelle ? Permissive ou non (CC BY-SA)/*
+Classement des applications disponibles par tags (genre, Git, gestion associations, courriels, etc).
 
 ## Quelques usages types et d'ordres général (trame de rédaction)
 

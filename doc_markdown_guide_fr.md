@@ -130,9 +130,9 @@ Les listes ordonnées peuvent s'incrémenter autant que vous le désirez, il n'e
 1. liste 3
    1. Liste 3a
    1. Liste 3b
-      7. Liste 3b1
-      7. Liste 3b2
-      7. Liste 3b3
+      1. Liste 3b1
+      1. Liste 3b2
+      1. Liste 3b3
          4. Liste 1
          4. Liste 2
          4. liste 3
@@ -148,9 +148,9 @@ On obtient :
 1. liste 3
    1. Liste 3a
    1. Liste 3b
-      3. Liste 3b1
-      3. Liste 3b2
-      3. Liste 3b3
+      1. Liste 3b1
+      1. Liste 3b2
+      1. Liste 3b3
          4. Liste 1
          4. Liste 2
          4. liste 3
@@ -158,7 +158,7 @@ On obtient :
 3. Liste 5
 4. liste 6
 
-### Listes non ordonnées<a name="NomDeLAncre"></a>
+### Listes non ordonnées<a name="nomdelancre"></a>
 
 Pour créer une liste non ordonnée, il faut utiliser les symboles `*`, `+` ou `*`. Cela ne changera pas l'apparence du marqueur dans la restitution du texte. C'est l'incrémentation de la liste qui définira le visuel. Pour une meilleure lecture du texte brut, il peut être bien d'utiliser les différents symboles pour marquer l'incrémentation, mais c'est bien les trois espaces avant la sous-liste qui désigneront l'incrémentation.
 Comme tel :
@@ -231,13 +231,13 @@ Minimum trois accents graves en ouverture et fermeture de bloc et deux accent gr
 Ce qui donnera au rendu :
 
 Soit inline, par exemple pour mettre en valeur une touche comme `Ctrl`
-
+&#39;&#39;&#39;
 ```markdown
 ou directement en bloc.
 La seule différence est dans la quantité d'accents graves :
 Minimum trois accents graves en ouverture et fermeture de bloc et deux accent grave qui encadre le morceau de texte à formater dans une ligne
 ```
-
+&#39;&#39;&#39;
 ## Liens utiles
 
  + La documentation du langage originel Markdown : [daringfireball.net/projects/markdown (en)](https://daringfireball.net/projects/markdown/)
