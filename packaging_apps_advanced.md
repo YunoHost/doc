@@ -63,31 +63,36 @@ Use and abuse of `yunohost app install` `--args` argument
 You can do ugly thing considering mynewapp is the name/REPLACEBYYOURAPP of your app
 
 To install your mynewapp app:
-```
+
+```bash
 YNHAPP=mynewapp
 yunohost app install /mycentralrepo/${YNHAPP}_ynh/ --debug --force --args domain=test11.mydomain.org&path=/myapp&admin=alice&is_public=true&language=en&password=awesomepassword
 ```
 
 To remove your mynewapp app and reinstall it
-```
+
+```bash
 YNHAPP=mynewapp 
 yunohost app remove ${YNHAPP} --debug && yunohost app install /mycentralrepo/${YNHAPP}_ynh/ --debug --force --args domain=test11.mydomain.org&path=/myapp&admin=alice&is_public=true&language=en&password=awesomepassword
 ```
 
 To backup your mynewapp app
-```
+
+```bash
 YNHAPP=mynewapp 
 yunohost backup create --apps ${YNHAPP} --debug
 ```
 
 To restore your mynewapp app from the backup just made
-```
+
+```bash
 YNHAPP=mynewapp 
 yunohost backup restore XXXXXXXX-XXXXXX --apps ${YNHAPP} --debug
 ```
 
 To upgrade your mynewapp
-```
+
+```bash
 YNHAPP=mynewapp 
 yunohost app upgrade ${YNHAPP} -f /mycentralrepo/${YNHAPP}_ynh/ --debug
 
