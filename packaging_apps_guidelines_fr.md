@@ -120,7 +120,7 @@ Pour la liste `apps.json` maintenue par l'équipe du projet Yunohost, l'inscript
 ##### Indiquer la licence associée au paquet  | brouillon | AUTO | WORKING |
 La licence du paquet est à indiquer dans un fichier `LICENSE` à la racine du paquet. Attention à ne pas confondre avec la licence de l'application qui va être installée dont l'acronyme est à renseigner dans le champ `license` du manifeste.
 
-La liste d'application apps.json n'acceptent que les paquets dont la licence est libre, de même pour la licence de l'application contenue. Certaines applications libres nécessitent des dépendances non-libres (exemple: mp3, drivers, etc.). Dans ce cas, il faut ajouter `&dep-non-free` à l'acronyme et si possible donner des précisions dans le README.md du paquet, l'intégration sera dans ce cas acceptée au cas par cas.
+La liste d'application apps.json n'accepte que les paquets dont la licence est libre, de même pour la licence de l'application contenue. Certaines applications libres nécessitent des dépendances non-libres (exemple: mp3, drivers, etc.). Dans ce cas, il faut ajouter `&dep-non-free` à l'acronyme et si possible donner des précisions dans le README.md du paquet, l'intégration sera dans ce cas acceptée au cas par cas.
 
 **NB :** Les applications non-présentes dans la liste maintenue par le projet peuvent tout de même être installées : soit manuellement via le lien de l'application, soit de manière plus intégrée via des listes non-officielles (qui peuvent être créées et maintenues par la communauté).
 
