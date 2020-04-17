@@ -4,7 +4,7 @@
 
 ### Index
 
-- [Use Pi-Hole as DHCP server](#use-pi-hole-as-server-dhcp)
+- [Using Pi-Hole as a DHCP server](#using-pi-hole-as-a-dhcp-server)
   - [Configure Pi-Hole](#configure-pi-hole)
   - [Configure my router](#configure-my-router)
   - [Restore Network](#restore-network)
@@ -20,7 +20,7 @@ Thus, you would lose any connection to the internet and even the connection to y
 
 > If you encounter this kind of problem, please read the section "How to restore my network".
 
-### Configuring Pi-hole
+### Configure Pi-Hole
 
 There are 2 ways to configure Pi-hole to be used as your DHCP server.
 - Either you can choose to use it when you install the application.
@@ -41,7 +41,7 @@ By using Pi-hole's DHCP, you allow Pi-hole to give its dns configuration to each
 Another case of using Pi-hole DHCP is if you have hairpinning problems (you can't connect to your server because its ip is your public ip, and your router doesn't allow this).
 In this case, using Pi-hole's dns will allow you to connect to your server by its local address rather than its public address.
 
-### Restore the network
+### Restore network
 
 > Oops!
 Your Pi-hole server has crashed, and you don't have DHCP anymore.
@@ -68,7 +68,7 @@ sudo ifconfig eth0 0.0.0 && sudo dhclient eth0
 
 ## Useful links
 
-+ Website: [WEBSITE](#)
-+ Official documentation: [DOCUMENTATION](#)
++ Website: [pi-hole.net](https://pi-hole.net)
++ Official documentation: [docs.pi-hole.net](https://docs.pi-hole.net/)
 + Application software repository: [github.com - YunoHost-Apps/pihole](https://github.com/YunoHost-Apps/pihole_ynh)
 + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/pihole/issues](https://github.com/YunoHost-Apps/pihole_ynh/issues)

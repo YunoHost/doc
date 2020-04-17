@@ -38,8 +38,8 @@ On peut aussi ~~barrer le texte~~ en encadrant avec deux tildes `~`
 
 On peut lire ça :
 
-Pour du texte en *italique il faut encadrer par un astérisque `*` *
-Pour rédiger du **texte en gras par deux astérisques**
+Pour du texte en *italique il faut encadrer par un astérisque* `*`
+Pour rédiger du **texte en gras par deux astérisques** `**`
 On peut aussi ~~barrer le texte~~ en encadrant avec deux tildes `~`
 
 ## Créer des liens
@@ -69,7 +69,7 @@ Du texte qui sera ne sait même pas qu'il a une ancre <a name="NomDeLAncre"></a>
 ```
 
 Ce qui s'affiche :
-Du texte qui sera ne sait même pas qu'il a une ancre <a name="NomDeLAncre"></a>
+Du texte qui sera ne sait même pas qu'il a une ancre <a name="NomDeLAncres"></a>
 
 Il ne reste plus qu'à désigner l'ancre au texte que l'on souhaite rendre interactif :
 
@@ -77,7 +77,7 @@ Il ne reste plus qu'à désigner l'ancre au texte que l'on souhaite rendre inter
 [Mon titre qui renvoie](#nom-du-titre)
 ```
 
-[Mon titre qui renvoie](#nom-du-titre)
+[Mon titre qui renvoie](#nomdelancre)
 
 ## Afficher des images
 
@@ -158,7 +158,7 @@ On obtient :
 3. Liste 5
 4. liste 6
 
-### Listes non ordonnées
+### Listes non ordonnées<a name="NomDeLAncre"></a>
 
 Pour créer une liste non ordonnée, il faut utiliser les symboles `*`, `+` ou `*`. Cela ne changera pas l'apparence du marqueur dans la restitution du texte. C'est l'incrémentation de la liste qui définira le visuel. Pour une meilleure lecture du texte brut, il peut être bien d'utiliser les différents symboles pour marquer l'incrémentation, mais c'est bien les trois espaces avant la sous-liste qui désigneront l'incrémentation.
 Comme tel :
@@ -221,7 +221,7 @@ Ce qui afficherait ça :
 Pour afficher du texte en brut, des `blocs de codes` peuvent être créer en utilisant l'accent grave `Alt Gr + è` :
 
 ```markdown
-Soit inline, par exemple pour mettre en valeur une touche comme &#39;Ctrl&#39;
+Soit inline, par exemple pour mettre en valeur une touche comme `Ctrl`
 ```
 
 ou directement en bloc.
@@ -230,19 +230,18 @@ Minimum trois accents graves en ouverture et fermeture de bloc et deux accent gr
 
 Ce qui donnera au rendu :
 
-```
-&#39;&#39;&#39;
 Soit inline, par exemple pour mettre en valeur une touche comme `Ctrl`
-&#39;&#39;&#39;
-```
+
+```markdown
 ou directement en bloc.
 La seule différence est dans la quantité d'accents graves :
-Minimum trois accents graves en ouverture et fermeture de bloc et deux accent grave qui   encadre le morceau de texte à formater dans une ligne
+Minimum trois accents graves en ouverture et fermeture de bloc et deux accent grave qui encadre le morceau de texte à formater dans une ligne
+```
 
 ## Liens utiles
 
  + La documentation du langage originel Markdown : [daringfireball.net/projects/markdown (en)](https://daringfireball.net/projects/markdown/)
- + Tutoriel Markdown sur [markdowntutorial.com (en)](https://markdowntutorial.com)
+ + Tutoriel Markdown sur [markdowntutorial.com](https://markdowntutorial.com)
 
 ## Aller plus loin
 
