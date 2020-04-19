@@ -25,7 +25,7 @@ Thus, you would lose any connection to the internet and even the connection to y
 There are 2 ways to configure Pi-hole to be used as your DHCP server.
 - Either you can choose to use it when you install the application.
 - Or you can activate the DHCP server afterwards in the "Settings" tab, part "Pi-hole DHCP Server".
-In this second case, it may be preferable to force the server ip to a static address.
+In this second case, it may be preferable to force the server IP to a static address.
 
 ### Configure my router
 
