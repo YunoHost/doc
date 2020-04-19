@@ -59,7 +59,7 @@ sudo ifconfig eth0 192.168.1.100
 ```
 
 Now you can connect to your router and reboot its DHCP server to use it again.
-You can now remove your static ip and get a dynamic ip again.
+You can now remove your static IP and get a dynamic IP again.
 ```bash
 sudo ifconfig eth0 0.0.0 && sudo dhclient eth0
 ```
