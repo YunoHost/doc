@@ -38,7 +38,7 @@ So you need to turn off your router's DHCP server and let Pi-hole manage your ne
 
 By using Pi-hole's DHCP, you allow Pi-hole to give its dns configuration to each of your clients. This way, every request will be filtered by Pi-hole.
 
-Another case of using Pi-hole DHCP is if you have hairpinning problems (you can't connect to your server because its ip is your public ip, and your router doesn't allow this).
+Another case of using Pi-hole DHCP is if you have hairpinning problems (you can't connect to your server because its IP is your public IP, and your router doesn't allow this).
 In this case, using Pi-hole's dns will allow you to connect to your server by its local address rather than its public address.
 
 ### Restore network
