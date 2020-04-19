@@ -31,7 +31,7 @@ In this second case, it may be preferable to force the server IP to a static add
 
 Your router or your ISP's router has a DHCP server enabled by default.
 If you keep this DHCP, along with Pi-hole's, you will have transparent conflicts between them.
-The first DHCP server to respond will distribute its own ip and settings.
+The first DHCP server to respond will distribute its own IP and settings.
 So you need to turn off your router's DHCP server and let Pi-hole manage your network.
 
 #### Why should I use Pi-hole's DHCP?
