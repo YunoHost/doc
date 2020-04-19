@@ -53,7 +53,7 @@ And first, get your network interface (usually `eth0`).
 sudo ifconfig
 ```
 
-Then change your ip to a static ip.
+Then change your IP to a static one.
 ```bash
 sudo ifconfig eth0 192.168.1.100
 ```
