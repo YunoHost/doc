@@ -21,7 +21,7 @@ Classification of available applications by tags (genre, Git, association manage
  1. An administration part of the application.
  1. A part on limitations related to YunoHost.
  1. A part on desktop clients (if any). A link to different third-party applications if there are several (possible link to the applications catalgue [framalibre.org](https://framalibre.org)) or a link to the page about desktop applications if official applications are provided.
- 1. A part with :
+ 1. A part with:
     - the link to the official site
     - the link to the documentation
     - Links to the YunoHost package and issues
