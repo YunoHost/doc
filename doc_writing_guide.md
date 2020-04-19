@@ -4,7 +4,7 @@
 
 Add a one-click install button (such as https://yunohost.org/#/app_piwigo_fr) and a button on the application integration level.
 
-Classification of available applications by tags (genre, Git, association management, emails, etc).
+Classification of available applications by tags (genre, Git, association management, e-mails, etc).
 
 ## Some typical and general uses (writing framework)
 
