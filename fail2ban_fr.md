@@ -48,7 +48,7 @@ Lors d'une mise à jour du logiciel **Fail2ban**, le fichier d'origine `/etc/fai
     sudo nano /etc/fail2ban/jail.local
     ```
 
-3. Coller le contenu suivant dans le fichier et adapter l'IP `XXX.XXX.XXX.XXX` :
+3. Coller le contenu suivant dans le fichier et adapter l'adresse IP `XXX.XXX.XXX.XXX` :
 
     ```bash
     [DEFAULT]
