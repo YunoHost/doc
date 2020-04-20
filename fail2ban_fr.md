@@ -6,7 +6,7 @@ En particulier, **Fail2ban** surveille les tentatives de connexion `SSH`. Après
 
 ## Débannir une IP
 
-Pour débloquer une addresse IP, vous devez d'abord accéder à votre serveur par un moyen quelconque (par exemple à partir d'une autre IP ou d'une autre connexion internet que celle bannie).
+Pour débloquer une addresse IP, vous devez d'abord accéder à votre serveur par un moyen quelconque (par exemple à partir d'une autre adresse IP ou d'une autre connexion internet que celle bannie).
 
 Ensuite, regardez le **journal de fail2ban** pour identifier dans quelle `prison` ou `jail` l'adresse IP a été bannie :
 
