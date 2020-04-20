@@ -51,6 +51,7 @@
     * [Échanger des fichiers avec son serveur à l'aide d'une interface graphique](/filezilla)
     * [Modifier l'apparence du portail utilisateur](/theming)
     * [Ajouter un stockage externe](/external_storage)
+    * [Déplacer un dossier d'app vers un autre stockage](/moving_app_folder)
     * [Migrer ses emails vers YunoHost](/email_migration)
     * [YunoHost avec un service caché Tor](/torhiddenservice)
     * [Utilisation de certificats autres que Let's Encrypt](/certificate_custom)

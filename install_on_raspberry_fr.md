@@ -25,7 +25,7 @@ Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissan
 
 <a class="btn btn-lg btn-default" href="/images">1. Télécharger l'image pour Raspberry Pi</a>
 
-<a class="btn btn-lg btn-default" href="/copy_image">2. Flasher la carte SD avec l'image</a>
+<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">2. Flasher la carte SD avec l'image</a>
 
 <a class="btn btn-lg btn-default" href="/plug_and_boot">3. Brancher la carte et la laisser démarrer</a>
 

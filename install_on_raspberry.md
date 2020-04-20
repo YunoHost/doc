@@ -25,7 +25,7 @@ Before setting up a server at home, it is recommended that you know the [possibl
 
 <a class="btn btn-lg btn-default" href="/images">0. Download the pre-installed image for Raspberry Pi</a>
 
-<a class="btn btn-lg btn-default" href="/copy_image">1. Flash the SD card with the image</a>
+<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Flash the SD card with the image</a>
 
 <a class="btn btn-lg btn-default" href="/plug_and_boot">2. Power up the board and let it boot</a>
 

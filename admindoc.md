@@ -38,9 +38,11 @@
 * Going further
     * [Specific apps documentations](/appsdoc)
     * [Noho.st / nohost.me / ynh.fr domain names](/dns_nohost_me)
+    * [DNS and subdomains for apps](/dns_subdomains)
     * [Exchange files with your server using a graphical interface](/filezilla)
     * [Customize the appearance of the YunoHost portal](/theming)
     * [Adding an external storage](/external_storage)
+    * [Moving an app folder to an other storage](/moving_app_folder)
     * [Migrating emails to YunoHost](/email_migration)
     * [Hide services with Tor](/torhiddenservice)
     * [A discussion about the advantages of using a VPN](/vpn_advantage)

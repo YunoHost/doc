@@ -1,26 +1,21 @@
-#Changer le mot de passe d’administration 
+# Changer le mot de passe d’administration
 
-Pour des raisons de sécurité vous pouvez avoir besoin de changer votre mot de passe d’administration. Pour cela, deux méthodes sont possibles.
+Vous voudrez peut-être changer votre mot de passe d'administrateur pour des raisons de sécurité ou parce que vous l'avez oublié.
 
-<div class="alert alert-warning">
-<span class="glyphicon glyphicon-warning-sign"></span>
-Le mot de passe d’administration actuel est **requis** pour effectuer cette modification.
-</div>
+Si vous avez oublié votre mot de passe ou si vous ne pouvez pas vous connecter en utilisant l'utilisateur `admin`, vous
+pouvez peut-être encore changer le mot de passe en vous connectant en tant que "root" sur
+SSH (à partir de votre réseau local ! ou en utilisant un mode rescure si vous êtes sur un VPS...)
 
-##Administration web
+## Sur l'interface d'administration web
 
-Premièrement, connectez-vous à [l’administration web](/admin).
+1. Connectez-vous à [l’administration web](/admin).
+2. Allez dans la section Outis > Changer le mot de passe d’administration.
 
-Puis allez dans la section `Outils` > `Changer le mot de passe d’administration`.
 
-##Ligne de commande
+## En ligne de commande
+
 
 ```bash
 yunohost tools adminpw
 ```
 
-Si vous avez oublié votre mot de passe, utilisez plutôt:
-
-```bash
-yunohost-reset-ldap-password
-```

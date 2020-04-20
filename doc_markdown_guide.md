@@ -7,7 +7,7 @@ Markdown allows text to be formatted using tags, it allows *human* reading of th
 ## The different levels of titles
 
 By writing titles as follows:
-```Markdown
+```markdown
 # Level 1 title
 ## Level 2 title
 ### Level 3 title

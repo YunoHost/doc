@@ -4,7 +4,7 @@ Ce tutoriel a pour but d’aider à la mise en place d’une configuration Nginx
 #### Configuration Nginx
 La configuration doit être mise dans `conf/nginx.conf`. Il s’agira d’utiliser **FastCGI** ou un **proxy_pass** suivant l’application :
 * **FastCGI** est utilisé dans les applications PHP :
-```bash
+```nginx
 location YNH_EXAMPLE_PATH {
   alias YNH_WWW_PATH ;
   if ($scheme = http) {
@@ -28,7 +28,7 @@ location YNH_EXAMPLE_PATH {
 ```
 
 * **`proxy_pass`** dans le cas d’applications Python, Node.js, Go et Java :
-```bash
+```nginx
 location YNH_EXAMPLE_PATH/ {
        rewrite                ^YNH_EXAMPLE_PATH$ YNH_EXAMPLE_PATH/ permanent;
        proxy_pass             http://YNH_EXEMPLE_DOMAIN:YNH_EXAMPLE_PORT/;

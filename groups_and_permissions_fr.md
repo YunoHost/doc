@@ -28,7 +28,7 @@ Les groupes existants sont listés en haut de la page *groupes et autorisations*
 Pour obtenir la liste des groupes existants en CLI :
 
 
-```bash
+```shell
 $ yunohost user group list
 groups:
   all_users:
@@ -47,7 +47,7 @@ Pour créer un nouveau groupe, il suffit de cliquer sur le bouton "Nouveau group
 
 Dans la CLI, pour créer un nouveau groupe appelé `yolo_crew`, il faut utiliser
 
-```bash
+```shell
 $ yunohost user group create yolo_crew
 ```
 
@@ -62,7 +62,7 @@ Pour supprimer un utilisateur, cliquez sur la croix à côté de son nom d'utili
 
 En CLI, utilisez la commande suivante pour ajouter `charlie` et `delphine` au groupe `yolo_crew` :
 
-```bash
+```shell
 $ yunohost user group update yolo_crew --add charlie delphine
 ```
 
@@ -70,7 +70,7 @@ $ yunohost user group update yolo_crew --add charlie delphine
 
 Dans la liste des groupes, nous devrions voir :
 
-```bash
+```shell
 $ yunohost user group list
 groups:
   all_users:
@@ -93,7 +93,7 @@ Pour supprimer un groupe, cliquez sur la croix rouge en haut à droite du pannea
 
 Pour supprimer le groupe `yolo_crew` dans CLI, vous pouvez exécuter
 
-```bash
+```shell
 $ yunohost user group delete yolo_crew
 ```
 
@@ -109,7 +109,7 @@ La page des groupes liste les permissions données à chaque groupe, y compris l
 ![](./images/groups_default-with-permissions.png)
 
 Pour répertorier les permissions et les accès correspondants en CLI :
-```bash
+```shell
 $ yunohost user permission list
 permissions:
   mail.main:
@@ -133,7 +133,7 @@ Pour ajouter une permission à un groupe, il suffit de cliquer sur le bouton "+"
 
 Pour permettre à un groupe d'accéder à l'interface d'administration de wordpress via la CLI :
 
-```bash
+```shell
 $ yunohost user permission update wordpress.admin --add yolo_crew
 ```
 
@@ -143,13 +143,13 @@ Notez que vous pouvez également autoriser un seul utilisateur, en utilisant le 
 
 ou en CLI :
 
-```bash
+```shell
 $ yunohost user permission update wordpress.admin --add alice
 ```
 
 Et maintenant, nous pouvons voir que YoloCrew et Alice ont tous deux accès à l'interface d'administration de Wordpress :
 
-```bash
+```shell
 $ yunohost user permission list
   [...]
   wordpress.admin:
@@ -163,7 +163,7 @@ Notez que, par exemple, si nous voulons restreindre la permission pour le courri
 afin que seul Bob soit autorisé à envoyer des courriels, nous devons également supprimer `all_users` 
 de la permission, en la supprimant du panneau de groupe `all_users`, ou en CLI :
 
-```bash
+```shell
 $ yunohost user permission update mail --remove all_users --add bob
 ```
 

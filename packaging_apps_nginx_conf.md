@@ -4,7 +4,7 @@ This tutorial aim to help setup Nginx configuration for application packaging.
 #### Nginx configuration
 Configuration must be in `conf/nginx.conf`. We must use **FastCGI** or a **proxy_pass** following the application:
 * **FastCGI** is used with PHP applications:
-```bash
+```nginx
 location YNH_EXAMPLE_PATH {
   alias YNH_WWW_PATH ;
   if ($scheme = http) {
@@ -28,7 +28,7 @@ location YNH_EXAMPLE_PATH {
 ```
 
 * **`proxy_pass`** in Python, Node.js, Go and Java applications:
-```bash
+```nginx
 location YNH_EXAMPLE_PATH/ {
        rewrite                ^YNH_EXAMPLE_PATH$ YNH_EXAMPLE_PATH/ permanent;
        proxy_pass             http://YNH_EXEMPLE_DOMAIN:YNH_EXAMPLE_PORT/;

@@ -29,7 +29,7 @@ The existing groups are listed at the top of the *groups and permissions* page.
 
 To list the currently existing groups in CLI :
 
-```bash
+```shell
 $ yunohost user group list
 groups:
   all_users:
@@ -49,7 +49,7 @@ To create a new group, simply click on the "New Group" button at the top of the 
 
 In CLI, to create a new group called `yolo_crew`
 
-```bash
+```shell
 $ yunohost user group create yolo_crew
 ```
 
@@ -65,7 +65,7 @@ To remove a user, click on the cross next to their username, in the group panel.
 
 In CLI, use the following command to add `charlie` and `delphine`to the `yolo_crew` group:
 
-```bash
+```shell
 $ yunohost user group update yolo_crew --add charlie delphine
 ```
 
@@ -73,7 +73,7 @@ $ yunohost user group update yolo_crew --add charlie delphine
 
 Now in the group list we should see :
 
-```bash
+```shell
 $ yunohost user group list
 groups:
   all_users:
@@ -96,7 +96,7 @@ To delete a group, click on the red cross on the top right of the group panel. Y
 
 To delete the group `yolo_crew` in CLI, you may run
 
-```bash
+```shell
 $ yunohost user group delete yolo_crew
 ```
 
@@ -113,7 +113,7 @@ The groups page lists the permissions given to each group, including the special
 
 To list permissions and corresponding accesses in CLI:
 
-```bash
+```shell
 $ yunohost user permission list
 permissions:
   mail.main:
@@ -138,7 +138,7 @@ To add a permission to a group, simply click the "+" button in the group panel, 
 
 To allow a group to access the wordpress admin interface in CLI:
 
-```bash
+```shell
 $ yunohost user permission update wordpress.admin --add yolo_crew
 ```
 
@@ -148,13 +148,13 @@ Note that you can also allow a single user, by using the specific panel at the b
 
 or in CLI:
 
-```bash
+```shell
 $ yunohost user permission update wordpress.admin --add alice
 ```
 
 And now we may see that both the YoloCrew and Alice have access to the wordpress admin interface :
 
-```bash
+```shell
 $ yunohost user permission list
   [...]
   wordpress.admin:
@@ -166,7 +166,7 @@ $ yunohost user permission list
 
 Note that, for example, if we want to restrict permission for email so that only Bob is allowed to email, we should also remove `all_users` from the permission, by deleting it from the `all_users` group panel, or in CLI :
 
-```bash
+```shell
 $ yunohost user permission update mail --remove all_users --add bob
 ```
 
@@ -180,13 +180,13 @@ Installing an app creates the permission `app.main` with `all_users` allowed by 
 
 If you wish to make the application publicly available, instead of the old `unprotected_urls` mechanism, you should give access to the special group `visitors`:
 
-```bash
+```shell
 ynh_permission_update --permission "main" --add visitors
 ```
 
 If you wish to create a custom permission for your app (e.g. to restrict access to an admin interface) you may use the following helpers:
 
-```bash
+```shell
 ynh_permission_create --permission "admin" --url "/admin" --allowed "$admin_user"
 ```
 

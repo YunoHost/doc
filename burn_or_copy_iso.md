@@ -1,15 +1,13 @@
-# Flashing the YunoHost ISO on a USB stick or CD/DVD
+# Flashing the YunoHost ISO
 
-Now that you downloaded the ISO image of YunoHost, you should flash/burn it on a physical medium. Typically, this is done on a **USB stick** but you might want to use a **CD/DVD** for older machines.
+Now that you downloaded the ISO image of YunoHost, you should flash/burn it on a physical medium. Typically, this is done on a **USB stick** or an **SD card**.
 
+<img src="/images/sdcard.jpg" width=100>
+<img src="/images/micro-sd-card.jpg" width=100>
 <img src="/images/usb_key.png" width=150>
-<img src="/images/cd.jpg" width=150>
+<img src="/images/cd.jpg" width=100>
 
----
-
-## USB stick
-
-### With Etcher
+### (Recommended) With Etcher
 
 Download <a href="https://etcher.io/" target="_blank">Etcher</a> for your operating system and install it.
 
@@ -25,20 +23,23 @@ Download <a href="https://unetbootin.github.io/">UNetbootin</a> for your operati
 
 Put your USB stick on, select your YunoHost ISO and click "OK"
 
+
 ### With `dd`
 
-If you know your way around command line, you may also flash your USB stick with
-`dd`. Assuming your USB stick is `/dev/sdz` (be careful !!), you may run :
+If you are on Linux / Mac and know your way around command line, you may also
+flash your USK stick or SD card with `dd`. You can identify which device corresponds to your
+USB stick or SD card with `fdisk -l` or `lsblk`. An SD card name typically is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.
+
+Then run :
 
 ```bash
-dd if=/path/to/yunohost.iso of=/dev/sdz
+# Replace /dev/mmcblk0 if the name of your device is different...
+dd if=/path/to/yunohost.img of=/dev/mmcblk0
 ```
 
----
+### Burning a CD/DVD
 
-## CD/DVD
-
-The software to use differs regarding your operating system.
+For older devices, you might want to burn a CD/DVD. The software to use depends on your operating system.
 
 * On Windows, use [ImgBurn](http://www.imgburn.com/) to write the image file on the disc
 
