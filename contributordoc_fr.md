@@ -2,9 +2,12 @@
 
 * [Liste des façons de contribuer à YunoHost](/contribute)
 * [Écrire de la documentation](/write_documentation)
+  *  [Guide de redaction de la documentation](/doc_writing_guide)
+  *  [Guide Markdown](/doc_markdown_guide)
+  *  [Propulser son code avec Git & GitHub](/doc_use_git)
 * [Salons de discussion](/chat_rooms)
 * Packaging d'application
-   * [Liste d'apps souhaitées par la communauté](/apps_wishlist)
+   * [Liste d'applications souhaitées par la communauté](/apps_wishlist)
    * [Introduction générale au packaging d'apps](/packaging_apps_start)
    * [Introduction technique au packaging d'apps](/packaging_apps)
    * [Comment utiliser Git pour packager les applications](/packaging_apps_git)
