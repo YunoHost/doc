@@ -62,6 +62,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Invoice Ninja](https://www.invoiceninja.com) / [github](https://github.com/invoiceninja/invoiceninja)
 - [InvoicePlane](https://invoiceplane.com) / [github](https://github.com/InvoicePlane/InvoicePlane)
 - [IPFS](https://ipfs.io) / [github](https://github.com/ipfs/ipfs)
+- [Isso](https://posativ.org/isso) commenting server / [github](https://github.com/posativ/isso)
 - [Jellyfin](https://github.com/jellyfin)
 - [JS Bin](http://jsbin.com/help/2-second-setup) / [github](https://github.com/jsbin/)
 - [Joplin](http://joplin.cozic.net/) / [github](https://github.com/laurent22/joplin)
