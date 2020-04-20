@@ -2,7 +2,7 @@
 
 **Fail2Ban** est un logiciel de prévention des intrusions qui protège les serveurs informatiques contre les attaques de brute-force. Il surveille certains journaux et bannira les adresses IP qui montrent un comportement de brute-forcing.
 
-En particulier, **Fail2ban** surveille les tentatives de connexion `SSH`. Après 5 tentatives de connexion échouées sur SSH, Fail2ban banniera l'IP de se connecter via SSH pendant 10 minutes. Si cette adresse récidive plusieurs fois, elle peut être bannie pendant une semaine.
+En particulier, **Fail2ban** surveille les tentatives de connexion `SSH`. Après 5 tentatives de connexion échouées sur SSH, Fail2ban banniera l'adresse IP de se connecter via SSH pendant 10 minutes. Si cette adresse récidive plusieurs fois, elle peut être bannie pendant une semaine.
 
 ## Débannir une IP
 
