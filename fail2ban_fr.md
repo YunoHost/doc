@@ -23,7 +23,7 @@ sudo tail /var/log/fail2ban.log
 
 Ici, l'IP `11.22.33.44` a été bannie dans les jails `sshd` et `recidive`.
 
-Puis débanissez l'IP avec les commandes suivantes :
+Puis débanissez l'adresse IP avec les commandes suivantes :
 
 ```bash
 sudo fail2ban-client set sshd unbanip 11.22.33.44
