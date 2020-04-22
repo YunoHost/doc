@@ -63,7 +63,3 @@ When updating the **Fail2ban** software, the original `/etc/fail2ban/jail.conf` 
     ```
 
 Congratulations, no more risks of banning yourself from your own YunoHost server!
-
-----
-
-Translated with www.DeepL.com/Translator (free version)
