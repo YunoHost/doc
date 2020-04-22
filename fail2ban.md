@@ -39,13 +39,13 @@ When updating the **Fail2ban** software, the original `/etc/fail2ban/jail.conf` 
 1. Start by creating the new jail configuration file which will be called `yunohost-whitelist.conf`:
 
     ```bash
-    sudo touch etc/fail2ban/jail.d/yunohost-whitelist.conf
+    sudo touch /etc/fail2ban/jail.d/yunohost-whitelist.conf
     ```
 
 2. Edit this new file with your favorite editor:
 
     ```bash
-    sudo nano etc/fail2ban/jail.d/yunohost-whitelist.conf
+    sudo nano /etc/fail2ban/jail.d/yunohost-whitelist.conf
     ```
 
 3. Paste the following content into the file and adapt the IP address `XXX.XXX.XXX.XXX` :

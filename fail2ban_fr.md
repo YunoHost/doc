@@ -39,13 +39,13 @@ Lors d'une mise à jour du logiciel **Fail2ban**, le fichier d'origine `/etc/fai
 1. Commencez par créer le nouveau fichier de configuration des prisons qui s’appelera `jail.local` :
 
     ```bash
-    sudo touch etc/fail2ban/jail.d/yunohost-whitelist.conf
+    sudo touch /etc/fail2ban/jail.d/yunohost-whitelist.conf
     ```
 
 2. Éditez ce nouveau fichier avec votre éditeur préféré :
 
     ```bash
-    sudo nano etc/fail2ban/jail.d/yunohost-whitelist.conf
+    sudo nano /etc/fail2ban/jail.d/yunohost-whitelist.conf
     ```
 
 3. Coller le contenu suivant dans le fichier et adapter l'adresse IP `XXX.XXX.XXX.XXX` :
