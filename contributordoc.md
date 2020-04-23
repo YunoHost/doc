@@ -19,7 +19,7 @@
    * [Multi-instance](packaging_apps_multiinstance)
    * [Helpers](packaging_apps_helpers)
    * [Trap usage](/packaging_apps_trap)
-   * [Adding your app to the community list](https://github.com/YunoHost/Apps/#contributing)
+   * [Adding your app to the apps list](https://github.com/YunoHost/Apps/#contributing)
    * Quality tests
        * [Package linter](https://github.com/YunoHost/package_linter)
        * [Package check](https://github.com/YunoHost/package_check)

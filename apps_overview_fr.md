@@ -12,11 +12,7 @@ Listes d'applications
 
 Du point de vue technique, les applications sont des dépôts de code public (comme [celui-ci](https://github.com/YunoHost-Apps/wordpress_ynh)). Les applications existantes sont indexées à l'aide de "listes d'applications". Ces listes peuvent être gérées dans Applications > Installer > Gérer les listes d'applications, ou avec des commandes telles que `yunohost app fetchlist`.
 
-Par défaut, YunoHost ne connaît que la liste officielle des applications. Il s'agit d'applications qui ont été soigneusement packagées, intégrées, revues et doivent être maintenues par l'équipe YunoHost. 
-
-Néanmoins, vous souhaiterez peut-être avoir accès au catalogue plus fourni de la liste communautaire. Cette liste peut facilement être ajouté via la vue 'Gérer les listes d'applications' de l'administrateur web, ou avec la commande `yunohost app fetchlist -n community -u https://app.yunohost.org/community.json`. Sachez simplement que les applications de cette liste offrent moins de garanties que les applications officielles et que l'équipe YunoHost n'en est pas responsable !
-
-La liste des applications existantes (officielles et communautaires) peut être consultée sur [cette page](/apps).
+La liste des applications existantes peut être consultée sur [cette page](/apps).
 
 Niveaux d'intégration et de qualité
 ------------------------------
