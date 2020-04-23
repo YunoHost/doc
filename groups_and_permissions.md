@@ -170,8 +170,19 @@ Note that, for example, if we want to restrict permission for email so that only
 $ yunohost user permission update mail --remove all_users --add bob
 ```
 
+Note that for some reason the packager of the application can decide to protect a permission to avoid to add or remove the visitor of the permission. Generaly this because it make non sens for the admin to modify this permission.
+
 The webadmin will issue a warning if you set a permission that is superseeded by a wider permission.
 ![](./images/groups_alerte-permission.png)
+
+### Manage SSO tile
+
+Since yunohost 3.8 you can add or remove a tile in the SSO. For each permission which has an url defined you can enable or disable the tile in the SSO. By example CLI you can enalble the tile for the permission `wordpress.admin`:
+
+```shell
+$ yunohost user permission update wordpress.admin --show_tile True
+```
+
 
 Notes for apps packagers
 ------------------------
@@ -187,7 +198,7 @@ ynh_permission_update --permission "main" --add visitors
 If you wish to create a custom permission for your app (e.g. to restrict access to an admin interface) you may use the following helpers:
 
 ```shell
-ynh_permission_create --permission "admin" --url "/admin" --allowed "$admin_user"
+ynh_permission_create --permission "admin" --url "/admin" --allowed "$admin_user" --label "Label for your permission"
 ```
 
 You don't need to take care of removing permissions or backing up/restoring them as it is handled by the core of YunoHost.
@@ -221,109 +232,30 @@ fi
 
 Here an example of how to migrate the code from legacy to new permission system: [example](https://github.com/YunoHost/example_ynh/pull/111/files)
 
-#### Specific case: regex protection
+#### Extended permission
 
-If you still need to use regex to protect or unprotect urls, you can't use the new permission system (for now).
+Since yunohost 3.8 some new feature of permission has been integrated. Theses new feature should solve some issue with the permission system.
 
-But you can create a fake permission and use hooks to handle if there is a change in this faked permission.
+The new feature are:
+- Tile and label support: You can now define a label for this permission. This label dedicated to the user. It will be shown on the webadmin to explain to the user what do this permission. If you set the parameter `show_tile` to `True` a new tile will be available on the SSO for the allowed user. This give the possiblity to have multiple tile on the SSO for the same app. The url of this tile will be the `url` this permission.
+- Multiple url support: Now you can add multiple `url` for the same permission. This give the possiblity to protect many url with the same permission.
+- Protection: If you don't want as packager that the admin play with the visitor group with a permission you can protect it. So the admin won't have the possiblity to add/remove the `visitor` group of this permission. Note that with the helper `ynh_permission_update` you keep the possibility to add/remove the `visitor` group of this permission.
+- Auth header management: some app don't work with the auth header from SSOwat. You can know define for each permission if you want to set the auth header or not. To resume this folling array show the equivalent with permission of the old settings `protected_uris`, `unprotected_uris`, `skipped_uris`.
 
-In the install script, create the fake permission (with no url):
+|             | with auth header | no auth header |
+| :---------- | :--------------- | :------------- |
+| **public**  | unprotected_uris | skipped_uris   |
+| **private** | protected_uris   | not available  |
 
-`ynh_permission_create --permission="create poll" --allowed "visitors" "all_users"`
+|             | with auth header                            | no auth header                               |
+| :---------- | :------------------------------------------ | :------------------------------------------- |
+| **public**  | auth_header=True, visitor group allowed     | auth_header=False, visitor group allowed     |
+| **private** | auth_header=True, visitor group not allowed | auth_header=False, visitor group not allowed |
 
-Then use the legacy protection:
 
-```bash
-# Make app public if necessary
-if [ $is_public -eq 1 ]
-then
-	if [ "$path_url" == "/" ]; then
-	    # If the path is /, clear it to prevent any error with the regex.
-	    path_url=""
-	fi
-	# Modify the domain to be used in a regex
-	domain_regex=$(echo "$domain" | sed 's@-@.@g')
-	ynh_app_setting_set --app=$app --key=unprotected_regex --value="$domain_regex$path_url/create_poll.php?.*$","$domain_regex$path_url/adminstuds.php?.*"
-else
-	ynh_permission_update --permission="create poll" --remove="visitors"
-fi
-```
-
-In this example, if the app is public the group `visitors` has access to the permission `create poll`, the group is removed from this permission otherwise.
-
-Then create two files in the directory `hooks` at the root of the git repository: `post_app_addaccess` and `post_app_removeaccess`. In these hooks, you'll remove or readd the regex protection if the `visitors` group is added or removed from this permission:
-
-`post_app_addaccess`:
-
-```bash
-#!/bin/bash
-
-# Source app helpers
-source /usr/share/yunohost/helpers
-
-app=$1
-added_users=$2
-permission=$3
-added_groups=$4
-
-if [ "$app" == __APP__ ]; then
-    if [ "$permission" = "create poll" ]; then # The fake permission "create poll" is modifed.
-        if [ "$added_groups" = "visitors" ]; then # As is it a fake permission we can only grant/remove the "visitors" group.
-            domain=$(ynh_app_setting_get --app=$app --key=domain)
-            path_url=$(ynh_app_setting_get --app=$app --key=path)
-
-            if [ "$path_url" == "/" ]; then
-                # If the path is /, clear it to prevent any error with the regex.
-                path_url=""
-            fi
-            # Modify the domain to be used in a regex
-            domain_regex=$(echo "$domain" | sed 's@-@.@g')
-            ynh_app_setting_set --app=$app --key=unprotected_regex --value="$domain_regex$path_url/create_poll.php?.*$","$domain_regex$path_url/adminstuds.php?.*"
-
-            # Sync the is_public variable according to the permission
-            ynh_app_setting_set --app=$app --key=is_public --value=1
-
-            yunohost app ssowatconf
-        else
-            ynh_print_warn --message="This app doesn't support this authorisation, you can only add or remove visitors group."
-        fi
-    fi
-fi
-```
-
-`post_app_removeaccess`
-
-```bash
-#!/bin/bash
-
-# Source app helpers
-source /usr/share/yunohost/helpers
-
-app=$1
-removed_users=$2
-permission=$3
-removed_groups=$4
-
-if [ "$app" == __APP__ ]; then
-    if [ "$permission" = "create poll" ]; then # The fake permission "create poll" is modifed.
-        if [ "$removed_groups" = "visitors" ]; then # As is it a fake permission we can only grant/remove the "visitors" group.
-            
-            # We remove the regex, no more protection is needed.
-            ynh_app_setting_delete --app=$app --key=unprotected_regex
-
-            # Sync the is_public variable according to the permission
-            ynh_app_setting_set --app=$app --key=is_public --value=0
-
-            yunohost app ssowatconf
-        else
-            ynh_print_warn --message="This app doesn't support this authorisation, you can only add or remove visitors group."
-        fi
-    fi
-fi
-```
-
-Don't forget to replace `__APP__` during the install/upgrade script.
-
-Here are some apps that use this specific case: [Lutim](https://github.com/YunoHost-Apps/lutim_ynh/pull/44/files) and [Opensondage](https://github.com/YunoHost-Apps/opensondage_ynh/pull/59/files)
+All of theses feature are managable by theses following helper:
+- `ynh_permission_create`
+- `ynh_permission_url`
+- `ynh_permission_update`
 
 If you have any question, please contact someone from the apps-group.
