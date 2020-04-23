@@ -36,7 +36,7 @@ Si vous ne voulez plus qu'une adresse IP "légitime" soit bloquée par **YunoHos
 
 Lors d'une mise à jour du logiciel **Fail2ban**, le fichier d'origine `/etc/fail2ban/jail.conf` est écrasé. C'est donc sur un nouveau fichier `yunohost-whitelist.conf` de ce fichier que nous allons apporter les modifications dans `/etc/fail2ban/jail.d/yunohost-whitelist.conf`. Elles seront ainsi conservées dans le temps.
 
-1. Commencez par créer le nouveau fichier de configuration des prisons qui s’appelera `jail.local` :
+1. Commencez par créer le nouveau fichier de configuration des prisons qui s’appelera `yunohost-whitelist.conf` :
 
     ```bash
     sudo touch /etc/fail2ban/jail.d/yunohost-whitelist.conf
