@@ -21,7 +21,7 @@ bug tracker est [ici](https://github.com/yunohost/issues/issues) !
 
 - **Implémentez et testez votre fonctionnalité**. Suivant ce sur quoi vous
   voulez travailler :
-   - **Cœur Python/ligne de comande** : allez dans `/ynh-dev/yunohost/`
+   - **Cœur Python/ligne de commande** : allez dans `/ynh-dev/yunohost/`
    - **Interface d'administration web** : allez dans `/ynh-dev/yunohost-admin/`
    - Vous pouvez aussi travailler sur les autres projets liés sur lesquels
      s'appuie YunoHost (SSOwat, moulinette) de façon similaire.
