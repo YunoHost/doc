@@ -27,7 +27,7 @@
 
 <div class="boring-part" markdown="1">
 
-  <h1><small>Avec</small> YunoHost<small>, gère facilement un serveur pour tes amis, ton asso, ton entreprise.</small> <a href="/whatsyunohost" style="font-size:0.6em;">En savoir plus</a></small></h1>
+  <h1><small>Avec</small> YunoHost<small>, gérez facilement un serveur pour vos amis, votre association, votre entreprise.</small> <a href="/whatsyunohost" style="font-size:0.6em;">En savoir plus</a></small></h1>
 
   <div class="home-panel">
     <img src="/images/home_panel.jpg" />
@@ -71,8 +71,8 @@
 
   <div class="row cf">
     <div class="col-md-7 text-right">
-      <h1>Construisez <small>votre petit bout d'Internet en ajoutant des applications en quelques clics</small></h1>
-      <p><br /><a href="/apps">Parcourir le catalogue d'applications</a></p>
+      <h1>Construisez <small>votre petit bout d’Internet en ajoutant des applications en quelques clics</small></h1>
+      <p><br /><a href="/apps">Parcourir le catalogue d’applications</a></p>
     </div>
     <div class="col-md-4">
       <div class="feature-pic">
