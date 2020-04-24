@@ -19,6 +19,6 @@ L'objectif proposé par Dotclear est de développer un logiciel qui respecte ple
 
  ------
 
- ### Sources
+### Sources
 
 ¹ [wikipedia.org - Dotclear (en)](https://en.wikipedia.org/wiki/Dotclear)
