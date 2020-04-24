@@ -19,6 +19,6 @@ Il s'agit d'un éditeur et d'un visualiseur de diagrammes en ligne gratuit qui p
 
  ------
 
- ### Sources
+### Sources
 
  ¹ [www.diagrams.net - about (en)](https://www.diagrams.net/about.html)
