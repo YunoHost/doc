@@ -4,7 +4,7 @@
 
 ### Index
 
-- [Fonctionnalités](fonctionnalites)
+- [Fonctionnalités]( #fonctionnalités)
 - [Limitations avec YunoHost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
