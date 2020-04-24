@@ -20,7 +20,7 @@ Dans le titre du nouveau dépôt, vous verrez de quelle provenance vient le dép
 > Il n’est pas possible d’avoir un fork du dépot d’un contributeur et le fork dépôt d’origine au même moment dans votre propre dépôt.
 
 ## Modifier et ajouter votre contribution
-Une fois le dépôt forker (copié), il faudra créer une nouvelle branche de développement au sein de votre dépôt. C’est à travers cette branche que vous allez modifier les fichiers et ainsi proposer des améliorations de la documentation. Le fait que ce soit une nouvelle branche vous permettra par la suite de faire une Pull Request, c’est-à-dire une demande d’ajout de vos contributions au sein de la branche `master` qui est la branche principale de la documentation. Les règles de développement sur GitHub change selon les développeurs de chaque dépôt, certains ont une branche testing dans laquelle il faut proposer les contributions.
+Une fois le dépôt forké (copié), il faudra créer une nouvelle branche de développement au sein de votre dépôt. C’est à travers cette branche que vous allez modifier les fichiers et ainsi proposer des améliorations de la documentation. Le fait que ce soit une nouvelle branche vous permettra par la suite de faire une Pull Request, c’est-à-dire une demande d’ajout de vos contributions au sein de la branche `master` qui est la branche principale de la documentation. Les règles de développement sur GitHub change selon les développeurs de chaque dépôt, certains ont une branche testing dans laquelle il faut proposer les contributions.
 Plus d’informations sur ce qu’est une branche sur git-scm.com : [Les branches avec Git - Ce qu’est une branche](https://git-scm.com/book/fr/v1/Les-branches-avec-Git-Ce-qu-est-une-branche).
 
 ## Envoyer votre contribution par une Pull Request
