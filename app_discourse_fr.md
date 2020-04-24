@@ -22,6 +22,6 @@ Dans le tableau de bord de l'administration, la version installée est indiquée
 
  ------
 
- ### Sources
+### Sources
 
 ¹ [framalibre.org - Discourse](https://framalibre.org/content/discourse)
