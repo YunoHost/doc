@@ -2,11 +2,15 @@
 
 * [General ways of contributing to YunoHost](/contribute)
 * [Writing documentation](/write_documentation)
+  *  [Documentation wrinting guide](/doc_writing_guide)
+  *  [Markdown guide](/doc_markdown_guide)
+  *  [Propulser son code avec Git & GitHub](/doc_use_git)
 * [Chat rooms](/chat_rooms)
 * Application packaging
    * [Apps wishlist](/apps_wishlist)
    * [General introduction to app packaging](/packaging_apps_start)
    * [Technical introduction to app packaging](/packaging_apps)
+   * [How to use Git to package apps](/packaging_apps_git)
    * [Setting up a dev environment with VirtualBox](/packaging_apps_virtualbox)
    * [Manifest](packaging_apps_manifest)
    * [Scripts](packaging_apps_scripts)
@@ -15,7 +19,7 @@
    * [Multi-instance](packaging_apps_multiinstance)
    * [Helpers](packaging_apps_helpers)
    * [Trap usage](/packaging_apps_trap)
-   * [Adding your app to the community list](https://github.com/YunoHost/Apps/#contributing)
+   * [Adding your app to the apps list](https://github.com/YunoHost/Apps/#contributing)
    * Quality tests
        * [Package linter](https://github.com/YunoHost/package_linter)
        * [Package check](https://github.com/YunoHost/package_check)

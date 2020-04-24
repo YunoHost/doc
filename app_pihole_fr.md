@@ -1,12 +1,12 @@
 # <img src="/images/pihole_logo.png" alt="logo de Pi-hole"> Pi-hole
 
-[![Installer Pi-hole avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=pihole)[![Niveau d'intégration](https://dash.yunohost.org/integration/pihole.svg)](https://dash.yunohost.org/appci/app/pihole) ![](https://ci-apps.yunohost.org/ci/badges/pihole.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/pihole.maintain.svg)
+[![Installer Pi-hole avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=pihole)[![Niveau d'intégration](https://dash.yunohost.org/integration/pihole.svg)](https://dash.yunohost.org/appci/app/pihole)
 
-- [Utiliser Pi-Hole comme serveur DHCP](#utiliser-pi-Hole-comme-serveur-dhcp)
+- [Utiliser Pi-Hole comme serveur DHCP](#utiliser-pi-hole-comme-serveur-dhcp)
   - [Configurer Pi-Hole](#configurer-pi-hole)
   - [Configurer mon routeur](#configurer-mon-routeur)
-  - [Restaurer le réseau](#restaurer-le-reseau)
-- [Liens utiles](#quelques-liens-utiles)
+  - [Restaurer le réseau](#restaurer-le-réseau)
+- [Liens utiles](#liens-utiles)
 
 Pi-hole est un bloqueur de publicité au niveau du réseau qui agit comme un DNS menteur et éventuellement un serveur DHCP3, destiné à être utilisé sur un réseau privé. Il est conçu pour être installé sur des périphériques intégrés dotés de capacités réseau, tels que le Raspberry Pi, mais il peut être utilisé sur d'autres machines exécutant Linux ou dans des environnements virtualisés.
 
@@ -64,7 +64,9 @@ sudo ifconfig eth0 0.0.0.0 && sudo dhclient eth0
 
 > N'oubliez pas d'éteindre le DHCP de votre routeur si votre serveur fonctionne à nouveau.
 
-## Quelques liens utiles
+## Liens utiles
 
-+ Site officiel : [pi-hole.net](https://pi-hole.net)
-+ Documentation Pi-Hole : [docs.pi-hole.net](https://docs.pi-hole.net/)
+ + Site web : [pi-hole.net (en)](https://pi-hole.net)
+ + Documentation officielle : [docs.pi-hole.net (en)](https://docs.pi-hole.net/)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/pihole](https://github.com/YunoHost-Apps/pihole_ynh)
+ + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/pihole/issues](https://github.com/YunoHost-Apps/pihole_ynh/issues)

@@ -27,7 +27,7 @@ YunoHost todavía no es compatible con las tarjetas ARM64. Para obtener más inf
 
 <a class="btn btn-lg btn-default" href="/images">0. Descargar la imagen pre-instalada para tu tarjeta ARM</a><br><small>Si no existe una imagen dedicada a tu tarjeta, puedes seguir la sección "Instalación encima de ARMbian".</small>
 
-<a class="btn btn-lg btn-default" href="/copy_image">1. Poner la imagen en tu tarjeta SD</a>
+<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Poner la imagen en tu tarjeta SD</a>
 
 <a class="btn btn-lg btn-default" href="/plug_and_boot">2. Conectar y encender</a>
 
@@ -41,7 +41,7 @@ YunoHost todavía no es compatible con las tarjetas ARM64. Para obtener más inf
 
 <a class="btn btn-lg btn-default" href="https://www.armbian.com/download/">0. Descargar la imagen ARMbian para tu tarjeta ARM</a>
 
-<a class="btn btn-lg btn-default" href="/copy_image">1. Poner la imagen en tu tarjeta SD</a>
+<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Poner la imagen en tu tarjeta SD</a>
 
 <a class="btn btn-lg btn-default" href="/plug_and_boot">2. Conectar y encender</a>
 

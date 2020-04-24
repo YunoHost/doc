@@ -88,7 +88,7 @@ nano /etc/fail2ban/jail.d/my_ssh_port.conf
 
 and you can then fill it in with
 
-```bash
+```ini
 [sshd]
 port = <your_ssh_port>
 

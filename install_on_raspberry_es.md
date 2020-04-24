@@ -25,7 +25,7 @@ Antes de alojar tu propio servidor en tu casa, te recomendamos que consultes las
 
 <a class="btn btn-lg btn-default" href="/images">1. Descargar la imagen para Raspberry Pi</a>
 
-<a class="btn btn-lg btn-default" href="/copy_image">2. Poner la imagen en tu tarjeta SD</a>
+<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">2. Poner la imagen en tu tarjeta SD</a>
 
 <a class="btn btn-lg btn-default" href="/plug_and_boot">3. Conectar y encender</a>
 

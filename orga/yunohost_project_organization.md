@@ -62,8 +62,7 @@ Groups are structured as a result of the fact that YunoHost counts many sub-proj
     - [yunopaste](http://paste.yunohost.org/)
 
 - ##### Apps Group
- - Official apps
- - Community-based apps
+ - apps.json list
  - App development tools (package_checker, package linter)
 
 - ##### Communication Group

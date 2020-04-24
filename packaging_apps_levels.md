@@ -154,6 +154,7 @@ YEP à respecter pour atteindre le niveau 7:
 
 YEP to be respected to reach level 8:
 - [YEP 1.12](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-112) : Follow the template from example_ynh
+- Supports change of URL
 - *[YEP 2.16](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-216---v%C3%A9rifier-la-disponibilit%C3%A9-des-d%C3%A9pendances-sur-arm-x86-et-x64----valid%C3%A9--manuel--official-) : Check dependency availability on ARM, x86 and x64*
 - [YEP 2.18.5](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-2185---ajouter-la-tuile-yunohost-pour-naviguer-facilement-entre-les-applications----valid%C3%A9--manuel--official-) : Add the YunoHost tile to easily navigate between applications
 - [YEP 4.1](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-41---lier-au-ldap----valid%C3%A9--manuel--official-) : Link to ldap

@@ -45,7 +45,7 @@ Notre support est communautaire et s’appuie sur des contributeurs comme vous. 
 </div>
 <div dir="rtl" class="col col-md-8" markdown="1">
 Vous pouvez vous impliquer dans le développement de YunoHost peu importe votre niveau. Administrateurs système, développeurs web, designers et pythonistes <a href="https://github.com/YunoHost" target="_blank">sont les bienvenus</a>.<br>
-Découvrez [comment contribuer](/dev), et rejoignez-nous sur le [salon de discussion](xmpp:dev@conference.yunohost.org?join) et la <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/contrib">mailing-list</a> !
+Découvrez [comment contribuer](/dev), et rejoignez-nous sur le [salon de discussion](xmpp:dev@conference.yunohost.org?join) !
 </div>
 </div>
 
@@ -80,7 +80,7 @@ Découvrez [comment contribuer](/dev), et rejoignez-nous sur le [salon de discus
 <div class="col col-md-8" markdown="1">
 Étendez les capacités de YunoHost en [packageant de nouveaux services et applications web](/packaging_apps). Jetez un œil à [ce qui a déjà été fait](/apps) !
 <br>
-Un [salon de développement](xmpp:dev@conference.yunohost.org?join) et une <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/apps">mailing-list</a> est également disponible.
+Un [salon de développement](xmpp:dev@conference.yunohost.org?join) est également disponible.
 </div>
 </div>
 

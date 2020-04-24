@@ -12,11 +12,7 @@ Application lists
 
 From the technical point of view, applications are public code repository (such as [this one](https://github.com/YunoHost-Apps/wordpress_ynh)). Existing applications are indexed using "application lists". Those lists can be managed in Applications > Install > Manage applications lists or with commands such as `yunohost app fetchlist`.
 
-By default, YunoHost only knows about the official application list. Those are applications which have been carefully packaged, integrated, reviewed and shall be maintained by the YunoHost team. 
-
-Nevertheless, you might want to have access to the larger catalog of the community list. It can easily be added through the 'Manage applications lists' view of the webadmin, or with the command `yunohost app fetchlist -n community -u https://app.yunohost.org/community.json`. Just be aware that apps in this list offer less guarantees than the official apps and the YunoHost team is not responsible for them !
-
-The full list of application (official and community) can be browsed at [this page](/apps).
+The full list of application can be browsed at [this page](/apps).
 
 Integration and quality levels
 ------------------------------
@@ -37,7 +33,7 @@ Some applications support the ability to be installed several times (at differen
 User access management
 ----------------------
 
-Access to apps can be restricted to some users only. This can be configured via the webadmin in Applications > (choose an app) > Access, or similarly via the command line `yunohost app addaccess`, `removeaccess` and `clearaccess`.
+Access to apps can be restricted to some users only. This can be configured via the webadmin in the [Groups and permissions panel](/groups_and_permissions), or similarly via the command-line subcategory `yunohost user permission`.
 
 Packaging applications 
 ----------------------

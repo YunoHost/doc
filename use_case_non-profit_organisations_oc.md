@@ -116,7 +116,7 @@ Tras l’installacion YunoHost fornís sul pic un servidor XMPP per lo qual pod�
 
 Podètz tanben installar un servidor Matrix :
 * Lo servidor: [Synapse](https://github.com/YunoHost-Apps/synapse_ynh)
-* Un client web: [Riot](https://github.com/YunoHost-Apps/_ynh)
+* Un client web: [Riot](https://github.com/YunoHost-Apps/riot_ynh)
 
 ### Intranet
 
