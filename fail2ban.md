@@ -8,7 +8,7 @@ In particular, **Fail2Ban** monitors `SSH` connection attempts. After 5 failed S
 
 To unblock an IP address, you must first access your server by some means (for example from another IP  address or from another internet connection than the banned one).
 
-Then, look at the **Fail2Ban’s log** to identify in which `jail` the IP adress has been banned:
+Then, look at the **Fail2Ban’s log** to identify in which `jail` the IP address has been banned:
 
 ```bash
 sudo tail /var/log/fail2ban.log
@@ -30,7 +30,7 @@ sudo fail2ban-client set sshd unbanip 11.22.33.44
 sudo fail2ban-client set recidive unbanip 11.22.33.44
 ```
 
-## Whitelist an IP adress
+## Whitelist an IP address
 
 If you don’t want a "legitimate" IP address to be blocked by **YunoHost** anymore, then you have to fill it in the whitelist of the `jail` configuration file.
 
