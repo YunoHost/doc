@@ -22,6 +22,6 @@ Dolibarr doit être une application non publique pour pouvoir relier les comptes
 
  ------
 
- ### Sources
+### Sources
 
  ¹ [wikipedia.org - Dolibarr](https://fr.wikipedia.org/wiki/Dolibarr)
