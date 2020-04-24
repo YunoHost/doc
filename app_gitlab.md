@@ -17,7 +17,7 @@ The Gitlab application is not compatible with 32-bit architectures.
 ## Customer applications
 
 | Application name | Platform | Multi-account | Play Store | F-Droid | Apple Store |
-|------------------|----------|---------------|------------|---------|-------------|
+|:----------------:|:--------:|:-------------:|:----------:|:-------:|:-----------:|
 | LabCoat avec Deep Links for LabCoat | Android | ? | [play.google.com - LabCoat](https://play.google.com/store/apps/details?id=com.commit451.gitlab) / [play.google.com - Deep Links for LabCoat](https://play.google.com/store/apps/details?id=com.nomadlabs.labcoat.deeplinks) |  [f-droid.org - LabCoat](https://f-droid.org/fr/packages/com.commit451.gitlab/) / [f-droid.org - Deep Links for LabCoat](https://f-droid.org/fr/packages/com.nomadlabs.labcoat.deeplinks/) | ? |
 
 ## Useful links
