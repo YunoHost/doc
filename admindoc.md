@@ -36,15 +36,25 @@
     * [Updating the system](/update) and [apps](/app_update)
     * [Security](/security)
 * Going further
+  * Domain names
+        * [Noho.st / nohost.me / ynh.fr domain names](/dns_nohost_me)
+        * [Configure a dynamic DNS with a dynamic IP address](/dns_dynamicip)
+        * [DNS and subdomains for apps](/dns_subdomains)
+        * [Using the local DNS resolver](/dns_resolver)
+        * [Managing DNS records at OVH](/OVH)
+    * Notes about some French ISPs
+        * [SFR](/isp_sfr)
+        * [Orange](/isp_orange)
+        * [Free](/isp_free) 
     * [Specific apps documentations](/appsdoc)
-    * [Noho.st / nohost.me / ynh.fr domain names](/dns_nohost_me)
-    * [DNS and subdomains for apps](/dns_subdomains)
+    * [Equivalence between framasoft service and apps](/apps_framasoft)
     * [Exchange files with your server using a graphical interface](/filezilla)
     * [Customize the appearance of the YunoHost portal](/theming)
     * [Adding an external storage](/external_storage)
     * [Moving an app folder to an other storage](/moving_app_folder)
     * [Migrating emails to YunoHost](/email_migration)
     * [Hide services with Tor](/torhiddenservice)
+    * [Utilisation de certificats autres que Let's Encrypt](/certificate_custom)
     * [A discussion about the advantages of using a VPN](/vpn_advantage)
     * [(old) Jessie->Stretch migration procedure](jessie_stretch_migration)
 * Troubleshooting

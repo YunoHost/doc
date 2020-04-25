@@ -43,9 +43,9 @@
         * [Utiliser le résolveur DNS local](/dns_resolver)
         * [Gérer les enregistrements DNS chez OVH](/OVH)
     * Notes à propos de certains fournisseurs d'accès à Internet
-       * [SFR](/isp_sfr)
-       * [Orange](/isp_orange)
-       * [Free](/isp_free)
+        * [SFR](/isp_sfr)
+        * [Orange](/isp_orange)
+        * [Free](/isp_free)
     * [Documentation spécifique à certaines apps](/appsdoc)
     * [Equivalence entre service framasoft et apps](/apps_framasoft)
     * [Échanger des fichiers avec son serveur à l'aide d'une interface graphique](/filezilla)
