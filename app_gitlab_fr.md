@@ -8,7 +8,7 @@
 - [Applications clientes](#applications-clientes)
 - [Liens utiles](#liens-utiles)
 
-Gitlab est une forge logicielle très complète et dont le développement est très dynamique : une nouvelle version sort tous les 22 du mois. Gitlab est un logiciel en open core : il existe une version communautaire libre et une version entreprise propriétaire possédant plus de fonctionnalités.[¹](#sources)
+Gitlab est une forge logicielle très complète et dont le développement est très dynamique : une nouvelle version sort tous les 22 du mois. Elle permet d'héberger des projets collaboratif en utilisant Git et des gérer des discussions, rapports de bugs, documentation... Gitlab est un logiciel en open core : il existe une version communautaire libre et une version entreprise propriétaire possédant plus de fonctionnalités.[¹](#sources)
 
 ## Limitations avec YunoHost
 
