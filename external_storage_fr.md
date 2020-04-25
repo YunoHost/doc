@@ -35,7 +35,7 @@ mmcblk0     179:0    0  14.9G  0 disk
 └─mmcblk0p2 179:2    0  14.8G  0 part /
 ```
 
-Ici, `mmcblk0` corresponds à une carte SD de 16Go (on voit que les partitions `mmcblk0p1` et `mmcblk0p2` correspondent à la partition de démarrage `/boot` et à la partition système `/`). Le disque dur branché corresponds à `sda` qui fait environ 1To, et contient une seule partition `sda1` qui n'est pas monté (pas de "MOUNTPOINT").
+Ici, `mmcblk0` corresponds à une carte SD de 16Go (on voit que les partitions `mmcblk0p1` et `mmcblk0p2` correspondent à la partition de démarrage `/boot` et à la partition système `/`). Le disque dur branché correspond à `sda` qui fait environ 1To, et contient une seule partition `sda1` qui n'est pas monté (pas de "MOUNTPOINT").
 
 <div class="alert alert-warning" markdown="1">
 <span class="glyphicon glyphicon-warning-sign"></span> Sur un autre système, il se peut que votre système soit installé sur `sda` et que votre disque soit alors `sdb` par exemple.
