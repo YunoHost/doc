@@ -318,7 +318,6 @@ This part list administration rights for differents groups of YunoHost project:
 - Get-togethers at events
 - Weekly Mumble meetings
 - [Forum](https://forum.yunohost.org).
-- Mailing lists: [contrib](https://list.yunohost.org/cgi-bin/mailman/listinfo/contrib) and [apps](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps)
 - [Bugtracker Redmine](https://dev.yunohost.org).
 - Git Forge for code reviews: [YunoHost](https://github.com/YunoHost) [YunoHost-Apps](https://github.com/YunoHost-Apps).
 - [XMPP chat rooms](https://yunohost.org/#/chat_rooms)

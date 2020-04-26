@@ -173,4 +173,4 @@ La webadmin émettra un avertissement si vous définissez une permission qui est
 Notes pour les packageurs d'applications
 ------------------------
 
-[Voir la version anglaise de cette page](groups_and_permissions).
+[Voir la version anglaise de cette page](groups_and_permissions_en).
