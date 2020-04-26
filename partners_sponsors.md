@@ -1,6 +1,6 @@
 # Partners and sponsors
 
-Here is a list of YunoHost sponsors:
+Here is a list of YunoHost sponsors, providing infrastructure and services to the project:
 - [GLOBENET](http://www.globenet.org): activist association, at the service of freedom of expression, offering internet services.
 - [TETANEUTRAL-NET](https://tetaneutral.net/): associative Internet access provider currently operating a radio network in Toulouse and its surroundings and a hoster.
 - [GITOYEN](https://gitoyen.net): association bringing together several companies and associations acting as a provider of hosting infrastructure and Internet access.

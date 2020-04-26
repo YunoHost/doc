@@ -1,6 +1,6 @@
 # Partenaires et mécénes
 
-Une liste des mécénes de YunoHost:
+Une liste des mécénes de YunoHost, fournissant l'infrastructure et des services au projets:
 - [GLOBENET](http://www.globenet.org): association militante, au service de la liberté d’expression, proposant des services internet.
 - [TETANEUTRAL-NET](https://tetaneutral.net/): fournisseur d'accès à Internet associatif opérant actuellement un réseau radio sur Toulouse et ses environs et un hébergeur.
 - [GITOYEN](https://gitoyen.net): association regroupant plusieurs entreprises et associations intervenant comme fournisseur d’infrastructure d’hébergement et d’accès à Internet. 
