@@ -1,6 +1,6 @@
 # Guide to writing application documentation
 
-## User documentation pages / administrateurs⋅trices
+## Users / Administrators documentation pages
 
 Add a one-click install button (such as https://yunohost.org/#/app_piwigo_fr) and a button on the application integration level.
 
