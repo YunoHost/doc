@@ -1,4 +1,4 @@
-# Partenaires et mécénes
+# Mécénes et partenaires
 
 Une liste des mécénes de YunoHost, fournissant l'infrastructure et des services au projets:
 - [GITOYEN](https://gitoyen.net): association regroupant plusieurs entreprises et associations intervenant comme fournisseur d’infrastructure d’hébergement et d’accès à Internet. 

@@ -1,4 +1,4 @@
-# Partners and sponsors
+# Sponsors and partners
 
 Here is a list of YunoHost sponsors, providing infrastructure and services to the project:
 - [GITOYEN](https://gitoyen.net): association bringing together several companies and associations acting as a provider of hosting infrastructure and Internet access.
