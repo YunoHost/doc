@@ -1,5 +1,7 @@
 # Sponsors and partners
 
+In order to advance and make the project works, in addition to the work of volunteers and donations, YunoHost benefits from the support of sponsors and partners.
+
 Here is a list of YunoHost sponsors, providing infrastructure and services to the project:
 - [GITOYEN](https://gitoyen.net): association bringing together several companies and associations acting as a provider of hosting infrastructure and Internet access.
 - [GLOBENET](http://www.globenet.org): activist association, at the service of freedom of expression, offering internet services.
