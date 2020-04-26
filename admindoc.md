@@ -40,7 +40,6 @@
         * [Noho.st / nohost.me / ynh.fr domain names](/dns_nohost_me)
         * [Configure a dynamic DNS with a dynamic IP address](/dns_dynamicip)
         * [DNS and subdomains for apps](/dns_subdomains)
-        * [Using the local DNS resolver](/dns_resolver)
         * [Managing DNS records at OVH](/OVH)
     * Notes about some French ISPs
         * [SFR](/isp_sfr)

@@ -72,3 +72,8 @@ Pero puede ser un poco más fácil entenderla viéndola de esta manera :
 - ¡ Los valores mostrados son ejemplos ! Refiérete a la configuración generada por tu servidor qué valores utilizar.
 - Recomendamos un [TTL](https://en.wikipedia.org/wiki/Time_to_live) de 3600 (1 hora). Pero puedes utilizar otro valor si sabes lo que estás haciendo ;
 - ¡ No pongas registros IPv6 si no estás seguro que el IPv6 funcione en tu servidor ! Tendrás problemas con Let's Encrypt si no es el caso :-)
+
+
+### IP Dinámica
+
+Si la dirección IP pública cambia, sigue este [tutorial](/dns_dynamicip).

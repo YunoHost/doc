@@ -40,7 +40,6 @@
         * [Nom de domaine en noho.st / nohost.me / ynh.fr](/dns_nohost_me)
         * [Configurer un DNS dynamique avec une adresse IP dynamique](/dns_dynamicip)
         * [DNS et installation d’une application sur un sous-domaine](/dns_subdomains)
-        * [Utiliser le résolveur DNS local](/dns_resolver)
         * [Gérer les enregistrements DNS chez OVH](/OVH)
     * Notes à propos de certains fournisseurs d'accès à Internet
         * [SFR](/isp_sfr)
