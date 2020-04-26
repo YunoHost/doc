@@ -65,11 +65,11 @@ Le lien renverra vers la page avec la bonne configuration de langue si la page e
 Une ancre permet de faire un lien vers un point précis dans une page, c'est comme ça que fonctionnent les index en haut de page. Pour créer une ancre, il faut insérer du code à l'endroit de l'ancre sous la forme suivante :
 
 ```markdown
-Du texte qui sera ne sait même pas qu'il a une ancre <a name="nomancre"></a>
+Du texte qui ne sait même pas qu'il a une ancre <a name="nomancre"></a>
 ```
 
 Ce qui s'affiche :
-Du texte qui sera ne sait même pas qu'il a une ancre <a name="nomancre"></a>
+Du texte qui ne sait même pas qu'il a une ancre <a name="nomancre"></a>
 
 Il est aussi possible de directement renvoyer une ancre au titre, en notant le lien en minuscule avec des `-` à la place des espaces.
 Il ne reste plus qu'à désigner l'ancre au texte que l'on souhaite rendre interactif :
@@ -98,11 +98,11 @@ Il est possible de faire un lien avec une image, exemple :
 ```
 [![Logo Yunohost](/images/logo.png)](/write_documentation)
 
-L'encart de *texte à afficher en cas d'impossibilité de chargement de l'image* entre les corchets dans le lien de l'image n'est pas obligatoire mais fortement recommandé.
+L'encart de *texte à afficher en cas d'impossibilité de chargement de l'image* entre les crochets dans le lien de l'image n'est pas obligatoire mais fortement recommandé.
 
 ## Formater une citation
 
-Les citations permettent de mettre en valeur un propos tenu par une autre personne, le wiki gère lui même la façon dont c'est valorisé. Markdown utilise un chevron fermant, ce symbole : `>`, pour annoncer une citation. Il suffit de les rajouter avant la citation, comme tel :
+Les citations permettent de mettre en valeur un propos tenu par une autre personne, le wiki gère lui-même la façon dont c'est valorisé. Markdown utilise un chevron fermant, ce symbole : `>`, pour annoncer une citation. Il suffit de les rajouter avant la citation, comme tel :
 
 ```markdown
 >Du texte de citation du premier niveau
@@ -121,11 +121,11 @@ S'affichera :
 
 ## Les listes
 
-Les listes permettent d'afficher une suite de textes dans une présentation facile, c'est ainsi que sont rédiger les index tels que celui de la page de la [documentation contributeur](/contributordoc).
+Les listes permettent d'afficher une suite de textes dans une présentation facile, c'est ainsi que sont rédigés les index tels que celui de la page de la [documentation contributeur](/contributordoc).
 
 ### Listes ordonnées
 
-Les listes ordonnées peuvent s'incrémenter autant que vous le désirez, il n'est pas obligé de donner la bonne correspondance au nombre. Il est possible de noter avec des `1.` et installer trois espaces pour marquer l'incrémentation. Pour une meilleure compréhension du texte brut, il peut être bien d'utiliser les chiffres de manières croissantes pour marquer l'incrémentation, mais c'est bien les trois `espaces` conséquents avant la sous-liste qui désigneront l'incrémentation.
+Les listes ordonnées peuvent s'incrémenter autant que vous le désirez, il n'est pas obligé de donner la bonne correspondance au nombre. Il est possible de noter avec des `1.` et installer trois espaces pour marquer l'incrémentation. Pour une meilleure compréhension du texte brut, il peut être pratique d'utiliser les chiffres de manière croissante pour marquer l'incrémentation, mais ce sont bien les trois `espaces` conséquents avant la sous-liste qui désigneront l'incrémentation.
 
 ```markdown
 1. Liste 1
@@ -139,9 +139,9 @@ Les listes ordonnées peuvent s'incrémenter autant que vous le désirez, il n'e
          1. Liste 1
          1. Liste 2
          1. liste 3
-1. Liste 4
-1. Liste 5
-1. liste 6
+5. Liste 4
+3. Liste 5
+4. liste 6
 ```
 
 On obtient :
@@ -163,7 +163,7 @@ On obtient :
 
 ### Listes non ordonnées<a name="nomdelancre"></a>
 
-Pour créer une liste non ordonnée, il faut utiliser les symboles `*`, `+` ou `*`. Cela ne changera pas l'apparence du marqueur dans la restitution du texte. C'est l'incrémentation de la liste qui définira le visuel. Pour une meilleure lecture du texte brut, il peut être bien d'utiliser les différents symboles pour marquer l'incrémentation, mais c'est bien les trois espaces avant la sous-liste qui désigneront l'incrémentation.
+Pour créer une liste non ordonnée, il faut utiliser les symboles `*`, `+` ou `*`. Cela ne changera pas l'apparence du marqueur dans la restitution du texte. C'est l'incrémentation de la liste qui définira le visuel. Pour une meilleure lecture du texte brut, il peut être pratique d'utiliser les différents symboles pour marquer l'incrémentation, mais ce sont bien les trois espaces avant la sous-liste qui désigneront l'incrémentation.
 Comme tel :
 ```markdown
 + Liste 1
@@ -200,7 +200,7 @@ Ce qui affichera :
 
 ## Les tableaux
 
-Pour créer un tableau, il faut utiliser la barre verticale `|` et les tirets `-`. Il est obligatoire d'ajouter une ligne de tiret sous la première ligne du tableau. Il n'y a aucune contrainte dans la taille de ce dernier. Il est possible de formater le tableau avec les `:` dans la seconde ligne du tableau, trois options s'offrent à vous :
+Pour créer un tableau, il faut utiliser la barre verticale `|` (appelé 'pipe') et les tirets `-`. Il est obligatoire d'ajouter une ligne de tirets sous la première ligne du tableau. Il n'y a aucune contrainte dans la taille de ce dernier. Il est possible de formater le tableau avec les `:` dans la seconde ligne du tableau, trois options s'offrent à vous :
 
 | Colonne alignée à gauche | Colonne centrée | Colonne alignée à droite |
 |:-------------------------|:---------------:|-------------------------:|
@@ -212,7 +212,7 @@ Pour créer un tableau, il faut utiliser la barre verticale `|` et les tirets `-
 | Une ligne formatée | | Et du **texte en gras** | Ou en *italique* |
 | D'autres lignes | |![une image](/images/cd.jpg) | [Ou un lien](/contributordoc) |
 ```
-Ce qui afficherait ça :
+Ce qui affichera ça :
 
 | **Un tableau** | Une colonne | Une seconde | Autant que l'on veut |
 |:--------------:|:-----------:|:-----------:|:--------------------:|
@@ -221,7 +221,7 @@ Ce qui afficherait ça :
 
 ## Bloc de codes
 
-Pour afficher du texte en brut, des `blocs de codes` peuvent être créer en utilisant l'accent grave `Alt Gr + è` :
+Pour afficher du texte en brut, des `blocs de code` peuvent être créés en utilisant l'accent grave `Alt Gr + è` :
 
 ```markdown
 Soit inline, par exemple pour mettre en valeur une touche comme `Ctrl`
@@ -229,7 +229,7 @@ Soit inline, par exemple pour mettre en valeur une touche comme `Ctrl`
 
 ou directement en bloc.
 La seule différence est dans la quantité d'accents graves :
-Minimum trois accents graves en ouverture et fermeture de bloc et deux accent grave qui encadre le morceau de texte à formater dans une ligne
+Minimum trois accents graves en ouverture et fermeture de bloc et deux accents graves qui encadrent le morceau de texte à formater dans une ligne
 
 Ce qui donnera au rendu :
 
@@ -238,7 +238,7 @@ Soit inline, par exemple pour mettre en valeur une touche comme `Ctrl`
 ```markdown
 ou directement en bloc.
 La seule différence est dans la quantité d'accents graves :
-Minimum trois accents graves en ouverture et fermeture de bloc et deux accent grave qui encadre le morceau de texte à formater dans une ligne
+Minimum trois accents graves en ouverture et fermeture de bloc et deux accents graves qui encadrent le morceau de texte à formater dans une ligne
 ```
 &#39;&#39;&#39;
 ## Liens utiles
@@ -248,4 +248,4 @@ Minimum trois accents graves en ouverture et fermeture de bloc et deux accent gr
 
 ## Aller plus loin
 
-De manière plus général, pour comprendre comment est formaté un texte il suffit juste d'inspecter le document source avec une application note. Ce n'est pas pour autant que le wiki de YunoHost pourra l'exploiter. Il existe bien d'autres possibilités d'utiliser la syntaxe markdown, n'hésitez pas à ajouter des fonctionnalités manquantes. Si vous avez observé des manques et/ou que vous avez des questions, contactez-nous sur [le forum](https://forum.yunohost.org) ou par message directe sur le salon IRC : **#yunohost** sur [irc.freenode.net](https://irc.freenode.net).
+De manière plus générale, pour comprendre comment est formaté un texte il suffit juste d'inspecter le document source avec une application note. Ce n'est pas pour autant que le wiki de YunoHost pourra l'exploiter. Il existe bien d'autres possibilités d'utiliser la syntaxe markdown, n'hésitez pas à ajouter des fonctionnalités manquantes. Si vous avez observé des manques et/ou que vous avez des questions, contactez-nous sur [le forum](https://forum.yunohost.org) ou par message direct sur le salon IRC : **#yunohost** sur [irc.freenode.net](https://irc.freenode.net).
