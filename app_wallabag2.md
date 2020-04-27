@@ -1,4 +1,4 @@
-# <img src="/images/wallabag_logo.svg" width="80px" alt="Wallabag Logo"> Wallabag
+# <img src="/images/wallabag_logo.svg" height="80px" alt="Wallabag's Logo"> Wallabag
 
 [Wallabag](https://www.wallabag.org/) is a self hostable Read-It-Later application allowing you to not miss any content anymore. Click, save, read it when you can.
 It extracts content so that you can read it when you have time.

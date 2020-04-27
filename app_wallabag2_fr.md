@@ -1,4 +1,4 @@
-# <img src="/images/wallabag_logo.svg" width="80px" alt="Logo Wallabag"> Wallabag
+# <img src="/images/wallabag_logo.svg" height="80px" alt="Logo Wallabag"> Wallabag
 
 [![Installer Wallabag avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=wallabag2)
 [![Niveau d'intégration](https://dash.yunohost.org/integration/wallaba2.svg)](https://dash.yunohost.org/appci/app/wallabag2)
