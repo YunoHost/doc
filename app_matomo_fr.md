@@ -1,4 +1,4 @@
-# <img src="/images/matomo_Logo.svg" width="80px" alt="logo de Matomo"> Matomo
+# <img src="/images/matomo_Logo.svg" height="80px" alt="logo de Matomo"> Matomo
 
 [![Installer matomo avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=matomo) [![Integration level](https://dash.yunohost.org/integration/matomo.svg)](https://dash.yunohost.org/appci/app/matomo)
 

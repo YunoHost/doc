@@ -1,4 +1,4 @@
-# <img src="/images/zerobin_logo.svg" width="80px" alt="logo Zerobin"> Zerobin 
+# <img src="/images/zerobin_logo.svg" height="80px" alt="logo Zerobin"> Zerobin 
 
 [![Install Zerobin avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=zerobin) [![Integration level](https://dash.yunohost.org/integration/zerobin.svg)](https://dash.yunohost.org/appci/app/zerobin)
 
