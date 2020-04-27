@@ -1,4 +1,4 @@
-# <img src="/images/lstu_logo.svg" width="80px" alt="logo de LSTU"> LSTU
+# <img src="/images/lstu_logo.svg" heigth="80px" alt="logo de LSTU"> LSTU
 
 [![Installer LSTU avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=lstu) [![Niveau d'intégration](https://dash.yunohost.org/integration/lstu.svg)](https://dash.yunohost.org/appci/app/lstu)
 
