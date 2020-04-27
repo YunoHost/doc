@@ -18,4 +18,4 @@ Because the online editor doesn't support uploading files, using git is the pref
 
 ## Syntax
 
-This page uses the markdown syntax, please refer to the [documentation](https://guides.github.com/features/mastering-markdown/) for further information.
+This page uses the markdown syntax, please refer to the [documentation](doc_markdown_guide) for further information.
