@@ -7,6 +7,7 @@ Here is a list of YunoHost sponsors, providing infrastructure and services to th
 - [GLOBENET](http://www.globenet.org): activist association, at the service of freedom of expression, offering internet services.
 - [LDN-NET](https://ldn-fai.net/) : association for the defense of a free, neutral and decentralized Internet whose main means of action is to be an Internet access provider associative and local.
 - [NBS System](https://www.nbs-system.com/): company specialized in hosting, securing Clouds, outsourcing (Information Systems, SaaS Applications, Web Platforms) and managed services.
+- [NLNET](https://nlnet.nl/): The NLnet Foundation supports organizations and people that contribute to an open information society.
 - [TETANEUTRAL-NET](https://tetaneutral.net/): associative Internet access provider currently operating a radio network in Toulouse and its surroundings and a hoster.
 
 Here is a list of YunoHost partners:
