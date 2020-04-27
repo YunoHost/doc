@@ -36,7 +36,7 @@
     * [Updating the system](/update) and [apps](/app_update)
     * [Security](/security)
 * Going further
-  * Domain names
+    * Domain names
         * [Noho.st / nohost.me / ynh.fr domain names](/dns_nohost_me)
         * [Configure a dynamic DNS with a dynamic IP address](/dns_dynamicip)
         * [DNS and subdomains for apps](/dns_subdomains)
