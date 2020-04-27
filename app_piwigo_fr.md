@@ -28,8 +28,5 @@ En plus des [fonctionnalités principales](http://piwigo.org/basics/features) de
 
 + Site web : [Site Piwigo](https://piwigo.org)
 + Documentation officielle : [Documentation](https://piwigo.org/doc/doku.php)
-+ Dépôt logiciel de l'application : [ (Dépôt logiciel de l'application :)
 + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/piwigo](https://github.com/YunoHost-Apps/piwigo_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/piwigo/issues](https://github.com/YunoHost-Apps/piwigo_ynh/issues)
-
-
