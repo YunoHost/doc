@@ -14,4 +14,4 @@ La documentation de YunoHost est gérée par un [dépot Git](https://github.com/
 
 ## Syntaxe
 
-La documentation utilise la syntaxe Markdown. Veuillez vous référer à la [documentation](https://guides.github.com/features/mastering-markdown/) (en) pour plus d’informations.
+La documentation utilise la syntaxe Markdown. Veuillez vous référer à la [documentation](doc_markdown_guide) pour plus d’informations.
