@@ -1,9 +1,11 @@
 # <img src="/images/wallabag_logo.svg" height="80px" alt="Wallabag's Logo"> Wallabag
 
+[![Install Wallabag v2 with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=wallabag2)
+[![Integration level](https://dash.yunohost.org/integration/wallaba2.svg)](https://dash.yunohost.org/appci/app/wallabag2)
+
+
 [Wallabag](https://www.wallabag.org/) is a self hostable Read-It-Later application allowing you to not miss any content anymore. Click, save, read it when you can.
 It extracts content so that you can read it when you have time.
-
-[![Install Wallabag v2 with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=wallabag2)
 
 It provides a web interface, browser (Firefox / Chrome / Opera) add-ons, mobile apps (Android / iOS / Windows Phone) and even on e-reader (PocketBook / Kobo)
 
@@ -16,12 +18,13 @@ this package:
  * Allow one user to be the administrator (set at the installation)
  * Asynchronous import using Redis (need to be enabled in the *Internal Settings*). RabbitMQ import not supported (yet ?)
 
-### Links
+### Useful Links
 
- * Report a bug: https://github.com/YunoHost-Apps/wallabag2_ynh/issues
- * Wallabag website: https://www.wallabag.org/
- * Wallabag documentation: https://doc.wallabag.org/ (fr/en/it/de)
- * [Video demo](https://vimeo.com/video/167435064)
++ Website: https://www.wallabag.org/
++ Wallabag documentation: https://doc.wallabag.org/ (fr/en/it/de)
++ Application software repository : [github.com - YunoHost-Apps/wallabag2](https://github.com/YunoHost-Apps/wallabag2_ynh)
++ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/wallabag2/issues](https://github.com/YunoHost-Apps/wallabag2_ynh/issues)
++ [Video demo](https://vimeo.com/video/167435064)
 
 ----
 
