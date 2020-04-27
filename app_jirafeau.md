@@ -1,4 +1,4 @@
-# <img src="/images/jirafeau_logo.jpg" width="80px" alt="Jirafeau's logo"> Jirafeau
+# <img src="/images/jirafeau_logo.svg" width="80px" alt="Jirafeau's logo"> Jirafeau
 
 [![Install Jirafeau with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=jirafeau) [![Integration level](https://dash.yunohost.org/integration/jirafeau.svg)](https://dash.yunohost.org/appci/app/jirafeau)
 
