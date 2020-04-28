@@ -26,7 +26,7 @@ Pour utiliser votre serveur personnel de synchronisation Firefox, vous allez dev
 
 ### Firefox mobile
 
-Avec les versions récentes de Firefox pour mobile la démarche est identique identique à la version bureau.
+Avec les versions récentes de Firefox pour mobile la démarche est identique à la version bureau.
 
 ## Limitations avec YunoHost
 
