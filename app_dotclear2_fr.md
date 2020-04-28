@@ -1,4 +1,4 @@
-# <img src="/images/dotclear_logo.png" width="80px" alt="Logo de Dotclear"> Dotclear 2
+# <img src="/images/dotclear_logo.png" height="80px" alt="Logo de Dotclear"> Dotclear 2
 
 [![Install dotclear2 with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=dotclear2) [![Integration level](https://dash.yunohost.org/integration/dotclear2.svg)](https://dash.yunohost.org/appci/app/dotclear2)
 
