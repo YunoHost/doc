@@ -117,6 +117,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [ProcessMaker](http://www.processmaker.com)
 - [ProtonMail’s WebClient](https://github.com/ProtonMail/WebClient)
 - [PyLoad](https://github.com/pyload/pyload)
+- [Pydio Cells](https://pydio.com/) A file sync and sharing software written in go. / [github](https://github.com/pydio/cells)
 - [Pump.io](http://pump.io) / [github](https://github.com/pump-io/pump.io)
 - [qBittorrent](https://github.com/qbittorrent/qBittorrent)
 - [racktables](http://racktables.org) / [github](https://github.com/RackTables/racktables)
