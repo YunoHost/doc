@@ -28,7 +28,7 @@ Le nom d’utilisateur à spécifier est `admin` suivi du mot de passe spécifiq
 
 Par défaut, Baikal est configuré pour importer les utilisateurs depuis
 l'annuaire LDAP de YunoHost. Les utilisateurs YunoHost apparaîtront dans le
-menu `Users and ressources` après une première authentification réussie.
+menu `Users and ressources` après une première authentification.
 
 ### Création d'un nouvel utilisateur
 
