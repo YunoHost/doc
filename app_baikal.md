@@ -24,10 +24,16 @@ Baïkal is a server for calendars and address books, which uses the CalDav and C
 To configure the app, go to the address: `sub.domain.tld/admin` or `domain.tld/baikal/admin`.
 The username to specify is `admin`, followed by the specific password you chose when installing Baïkal. The password can contain any special characters.
 
+### LDAP authentication
+
+By default, Baikal is configured to lookup users in YunoHost's LDAP
+directory. YunoHost's users will appear under `User and ressources` menu after their
+first successful authentication.
+
 ### Creating a new user
 
 Go to the `settings` tab, select `Digest` from `WebDAV authentication type`.
-Add users in the `Users and resources' tab.
+Add users in the `Users and resources` tab.
 
 ## CalDAV connection
 
