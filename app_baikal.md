@@ -26,7 +26,7 @@ The username to specify is `admin`, followed by the specific password you chose 
 
 ### LDAP authentication
 
-By default, Baikal is configured to lookup users in YunoHost's LDAP
+By default, Baikal is configured to look for users in YunoHost's LDAP
 directory. YunoHost's users will appear under `User and ressources` menu after their
 first authentication.
 
