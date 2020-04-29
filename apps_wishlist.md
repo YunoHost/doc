@@ -156,7 +156,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Wireguard](https://www.wireguard.com/) / [git](https://git.zx2c4.com/WireGuard/)
 - [Xibo](https://github.com/xibosignage) - A FLOSS digital signage solution (CMS?)
 - [Xonotic](http://xonotic.org) / [gitlab](https://gitlab.com/xonotic)
-- [YesWiki](https://yeswiki.net) / [github](https://github.com/YesWiki/yeswiki)
 - [Zammad](https://github.com/zammad/zammad)
 - [ZeroTier](https://github.com/zerotier/ZeroTierOne)
 - [Zoneminder](https://github.com/ZoneMinder/zoneminder)
