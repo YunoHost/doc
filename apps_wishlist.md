@@ -1,3 +1,5 @@
+<div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">La page demandée n'est pour le moment pas disponible en français. Voici à la place la version en anglais. Si vous souhaitez commencer une traduction de cette page, vous pouvez vous rendre sur [cette page](https://yunohost.org/#/apps_wishlist_fr).</div>
+
 # Apps wishlist
 
 <div class="alert alert-info">Before to add an app in wishlist please check your app is not already in apps list: see the <a href="/apps">apps list</a></div>
@@ -153,7 +155,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Wireguard](https://www.wireguard.com/) / [git](https://git.zx2c4.com/WireGuard/)
 - [Xibo](https://github.com/xibosignage) - A FLOSS digital signage solution (CMS?)
 - [Xonotic](http://xonotic.org) / [gitlab](https://gitlab.com/xonotic)
-- [YesWiki](https://yeswiki.net) / [github](https://github.com/YesWiki/yeswiki)
 - [Zammad](https://github.com/zammad/zammad)
 - [ZeroTier](https://github.com/zerotier/ZeroTierOne)
 - [Zoneminder](https://github.com/ZoneMinder/zoneminder)
