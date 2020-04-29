@@ -30,11 +30,6 @@ By default, Baikal is configured to look for users in YunoHost's LDAP
 directory. YunoHost's users will appear under `User and ressources` menu after their
 first authentication.
 
-### Creating a new user
-
-Go to the `settings` tab, select `Digest` from `WebDAV authentication type`.
-Add users in the `Users and resources` tab.
-
 ## CalDAV connection
 
 ### Connecting Thunderbird with Lightning
