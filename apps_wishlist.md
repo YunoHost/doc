@@ -142,6 +142,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Taiga](https://taiga.io) / [github](https://github.com/taigaio/)
 - [Taskwarrior](https://taskwarrior.org) / [github](https://github.com/GothenburgBitFactory/taskwarrior)
 - [Technitium DNS](https://technitium.com/dns/) / [github](https://github.com/TechnitiumSoftware/DnsServer)
+- [Teddy.io](https://teedy.io/#!/) Gestionnaire de documents / [Github](https://github.com/sismics/docs)
 - [TellForm](https://github.com/tellform/tellform) (Discontinued (see OhMyForm) but it can be great to have it since OhMyForm does only support Docker install)
 - [TMate](https://tmate.io/) / [github](https://github.com/tmate-io/tmate)
 - [Tracim](https://github.com/tracim/tracim)
