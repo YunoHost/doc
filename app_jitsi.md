@@ -1,0 +1,34 @@
+# <img src="/images/jitsi_logo.svg" width="80px" alt="Jitsi's logo"> Jitsi
+
+[![Install jitsi with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=jitsi) [![Integration level](https://dash.yunohost.org/integration/jitsi.svg)](https://dash.yunohost.org/appci/app/jitsi)
+
+### Index
+
+- [Limitations of YunoHost](#limitations-with-yunohost)
+- [Customer Applications](#customer-applications)
+- [Useful links](#useful-links)
+
+Jitsi Meet is an open source software (Apache) that offers high quality, secure and scalable video conferencing. Options for screen sharing, live chat, speech requests, as well as settings for
+video quality are offered to facilitate group meetings.
+
+## Limitations with YunoHost
+
+Jitsi-meet pour YunoHost est limité actuellement :
+
+* Il ne peut être utilisé qu'avec Chrome ou un navigateur basé sur Chromium (comme [Iron](https://www.srware.net/iron/) ou [Firefox](https://www.mozilla.org/fr/firefox/browsers/) (à partir de la version 76)
+* Il est actuellement limité à 2 participants par réunion
+
+
+## Customer applications
+
+| Nom de l'application | Plateforme | Multi-comptes | Autres réseaux supportés | Play Store | F-Droid | Apple Store | *Autres* |
+|-----------------------|------------|---------------|-------------------------|------------|---------|-------------|----------|
+| Jitsi Meet            | Android - iOS  |               |                      | [Jitsi Meet](https://play.google.com/store/apps/details?id=org.jitsi.meet) | [Jitsi Meet](https://f-droid.org/en/packages/org.jitsi.meet/) | [Jitsi Meet](https://apps.apple.com/us/app/jitsi-meet/id1165103905) |          |
+| Jitsi Meet Desktop    | Windows - MacOS - Linux  |  |                        |            |         |             | [Téléchargement](https://desktop.jitsi.org/Main/Download)  |
+
+## Useful links
+
+ + Website : [WEBSITE](https://jitsi.org)
+ + Official documentation: [DOCUMENTATION](https://jitsi.org/user-faq/)
+ + Application software repository:: [github.com - YunoHost-Apps/jitsi](https://github.com/YunoHost-Apps/jitsi_ynh)
+ + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/jitsi/issues](https://github.com/YunoHost-Apps/jitsi_ynh/issues)
