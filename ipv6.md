@@ -13,7 +13,7 @@ Here : https://yunohost.org/#/dns_subdomains
 
 ### Configure the server
 
-On the OVH panel, you will copy two element :
+On the OVH panel, you will copy 3 element :
 - the IPv6 address
 - the IPv6 gateway address
 - the IPv6 prefix. On OVH's VPS SSD, prefixes are `/128` because you have only *one* IPv6 address.
@@ -40,7 +40,7 @@ Now, save the file and restart the network service with : `service networking re
 Check your configuration with these commands :
 - `ip a` to display network interfaces and addresses
 - `hostname -I` to display the system IP addresses
-- try to ping an IPv6 server (for example you can use `ping ip6.yunohost.org`)
+- try to ping an IPv6 server (for example you can use `ping6 ip6.yunohost.org`)
 - try to ping your server from your PC (assuming your PC has IPv6 enabled)
 
 If it's ok, it's ok !
