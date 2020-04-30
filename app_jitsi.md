@@ -28,7 +28,7 @@ Jitsi-meet pour YunoHost est limité actuellement :
 
 ## Useful links
 
- + Website : [WEBSITE](https://jitsi.org)
- + Official documentation: [DOCUMENTATION](https://jitsi.org/user-faq/)
+ + Website : [jitsi.org](https://jitsi.org)
+ + Official documentation: [jitsi.org/user-faq](https://jitsi.org/user-faq/)
  + Application software repository:: [github.com - YunoHost-Apps/jitsi](https://github.com/YunoHost-Apps/jitsi_ynh)
  + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/jitsi/issues](https://github.com/YunoHost-Apps/jitsi_ynh/issues)
