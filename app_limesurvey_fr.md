@@ -1,4 +1,4 @@
-# <img src="/images/limesurvey_logo.svg" width="80px" alt="logo de LimeSurvey"> LimeSurvey
+# <img src="/images/limesurvey_logo.png" width="80px" alt="logo de LimeSurvey"> LimeSurvey
 
 [![Install LimeSurvey with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=limesurvey) [![Integration level](https://dash.yunohost.org/integration/limesurvey.svg)](https://dash.yunohost.org/appci/app/limesurvey)
 
@@ -12,11 +12,11 @@ LimeSurvey est un outil de création et diffusion de sondage/formulaire en ligne
 
 ## Configuration
 
-Pour configurer un questionnaire, il faut se rendre à `limesurvey.domaine.tld/admin`
+Pour configurer un questionnaire, il faut se rendre à `limesurvey.domaine.tld/admin`.
 
 ## Limitations avec YunoHost
 
-Le multi-utilisateurs n'est pas supporté
+Le multi-utilisateurs n'est pas supporté.
 
 ## Liens utiles
 
