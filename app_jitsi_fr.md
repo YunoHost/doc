@@ -14,7 +14,7 @@ Jitsi Meet est un logiciel libre (Apache) qui propose des vidéos-conférences d
 
 Jitsi-meet pour YunoHost est limité actuellement :
 
-* Il ne peut être utilisé qu'avec Chrome ou un navigateur basé sur Chromium (comme [Iron](https://www.srware.net/iron/) ou [Firefox](https://www.mozilla.org/fr/firefox/browsers/) (à partir de la version 76)
+* Il ne peut être utilisé qu'avec Chrome ou un navigateur basé sur Chromium (comme [Iron](https://www.srware.net/iron/)) ou [Firefox](https://www.mozilla.org/fr/firefox/browsers/) (à partir de la version 76)
 * Il est actuellement limité à 2 participants par réunion
 
 

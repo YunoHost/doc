@@ -13,18 +13,18 @@ video quality are offered to facilitate group meetings.
 
 ## Limitations with YunoHost
 
-Jitsi-meet pour YunoHost est limité actuellement :
+Jitsi for YunoHost for now as some limitations:
 
-* Il ne peut être utilisé qu'avec Chrome ou un navigateur basé sur Chromium (comme [Iron](https://www.srware.net/iron/) ou [Firefox](https://www.mozilla.org/fr/firefox/browsers/) (à partir de la version 76)
-* Il est actuellement limité à 2 participants par réunion
+* Can only be used using Chrome/Chromium (like [Iron](https://www.srware.net/iron/)) or [Firefox](https://www.mozilla.org/fr/firefox/browsers/) (since version 76)
+* Is limited to two participants
 
 
 ## Customer applications
 
-| Nom de l'application | Plateforme | Multi-comptes | Autres réseaux supportés | Play Store | F-Droid | Apple Store | *Autres* |
+| Application name | Platform | Multi-account | Other supported networks | Play Store | F-Droid | Apple Store | *Other* |
 |-----------------------|------------|---------------|-------------------------|------------|---------|-------------|----------|
 | Jitsi Meet            | Android - iOS  |               |                      | [Jitsi Meet](https://play.google.com/store/apps/details?id=org.jitsi.meet) | [Jitsi Meet](https://f-droid.org/en/packages/org.jitsi.meet/) | [Jitsi Meet](https://apps.apple.com/us/app/jitsi-meet/id1165103905) |          |
-| Jitsi Meet Desktop    | Windows - MacOS - Linux  |  |                        |            |         |             | [Téléchargement](https://desktop.jitsi.org/Main/Download)  |
+| Jitsi Meet Desktop    | Windows - MacOS - Linux  |  |                        |            |         |             | [Download](https://desktop.jitsi.org/Main/Download)  |
 
 ## Useful links
 
