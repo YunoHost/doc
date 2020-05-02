@@ -22,6 +22,7 @@ help.en = "some help text in english" # optional
 help.fr = "some help text in french" # optional
 example = "an example value" # optional
 default = "some stuff" # optional, not available for all types
+optional = true # optional, will skip if not answered
 ```
 
 And in json:
@@ -39,7 +40,8 @@ And in json:
         "fr": "some help text in french"
     }
     "default", "some stuff", // optional, not available for all types
-    "example": "an example value" // optional
+    "example": "an example value", // optional
+    "optional": true, # optional, will skip if not answered
 },
 ```
 
