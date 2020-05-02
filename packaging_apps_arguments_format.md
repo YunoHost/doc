@@ -1,13 +1,13 @@
 # YunoHost Arguments Format
 
 In YunoHost application developpement there are several places where you end up
-writting questions for your user like in the `manifest.javascript/toml`, the
-`config_panel.javascript/toml` or `actions.json/toml`.
+writting questions for your user like in the `manifest.json/toml`, the
+`config_panel.json/toml` or `actions.json/toml`.
 
 This page documents this format and all available kind of questions you can ask
 your user. Unless it's stated otherwise, this format applies to everyplace it's
-usable (for now: installation arguments in `manifest.javascript/toml`,
-`config_panel.javascript/toml` and `actions.json/toml`)
+usable (for now: installation arguments in `manifest.json/toml`,
+`config_panel.json/toml` and `actions.json/toml`)
 
 ## YunoHost arguments general format
 
@@ -24,7 +24,7 @@ example = "an example value" # optional
 default = "some stuff" # optional, not available for all types
 ```
 
-And in javascript:
+And in json:
 
 ```javascript
 {
@@ -60,7 +60,7 @@ example = "an example value"  # optional
 default = "some stuff" # optional
 ```
 
-And in javascript:
+And in json:
 
 ```javascript
 {
@@ -91,7 +91,7 @@ choices = ["fr", "en"]
 default = "en" # optional
 ```
 
-And in javascript:
+And in json:
 
 ```javascript
 {
@@ -120,7 +120,7 @@ ask.en = "the question in english"
 ask.fr = "the question in french"
 ```
 
-And in javascript:
+And in json:
 
 ```javascript
 {
@@ -148,7 +148,7 @@ ask.fr = "the question in french"
 default = "/my_app"
 ```
 
-And in javascript:
+And in json:
 
 ```javascript
 {
@@ -177,7 +177,7 @@ ask.en = "the question in english"
 ask.fr = "the question in french"
 ```
 
-And in javascript:
+And in json:
 
 ```javascript
 {
@@ -204,7 +204,7 @@ ask.en = "the question in english"
 ask.fr = "the question in french"
 ```
 
-And in javascript:
+And in json:
 
 ```javascript
 {
@@ -231,7 +231,7 @@ ask.fr = "the question in french"
 default = true
 ```
 
-And in javascript:
+And in json:
 
 ```javascript
 {
@@ -259,7 +259,7 @@ ask.en = "the question in english"
 ask.fr = "the question in french"
 ```
 
-And in javascript:
+And in json:
 
 ```javascript
 {
@@ -284,7 +284,7 @@ ask.en = "the text in english"
 ask.fr = "the text in french"
 ```
 
-And in javascript:
+And in json:
 
 ```javascript
 {
