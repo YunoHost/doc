@@ -38,10 +38,10 @@ And in json:
     "help": {
         "en": "some help text in english",
         "fr": "some help text in french"
-    }
-    "default", "some stuff", // optional, not available for all types
+    },
     "example": "an example value", // optional
-    "optional": true, // optional, will skip if not answered
+    "default", "some stuff", // optional, not available for all types
+    "optional": true // optional, will skip if not answered
 },
 ```
 
