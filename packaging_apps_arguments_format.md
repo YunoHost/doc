@@ -197,6 +197,9 @@ And in json:
 This type will ask the user to input a password. This is generally used to
 input the password for creating an account on the application.
 
+In CLI it will behave like any password query and won't print any character on
+type (not "\*\*\*...") for security reasons.
+
 Example in toml:
 
 ```toml
