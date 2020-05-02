@@ -41,7 +41,7 @@ And in json:
     }
     "default", "some stuff", // optional, not available for all types
     "example": "an example value", // optional
-    "optional": true, # optional, will skip if not answered
+    "optional": true, // optional, will skip if not answered
 },
 ```
 
