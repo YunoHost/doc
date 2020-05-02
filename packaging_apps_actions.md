@@ -45,6 +45,11 @@ writing your manifest for the application installation.
 You need to write an `actions.toml` file in your application at the root level
 like the `manifest.toml`/`manifest.json`.
 
+<div class="alert alert-info">
+The arguments are written in **[YunoHost Arguments
+Format](#/packaging_apps_arguments_format)** like in `manifest.toml/json`
+</div>
+
 The general pattern looks like this:
 
 ```toml

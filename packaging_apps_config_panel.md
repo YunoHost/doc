@@ -60,6 +60,11 @@ REALLY wants it but we really don't recommend it has it is very error prone and
 frustrating to write by hand) that will be located at the root of you
 application, next to the manifest.json/toml. It looks like this:
 
+<div class="alert alert-info">
+The options are written in **[YunoHost Arguments
+Format](#/packaging_apps_arguments_format)** like in `manifest.toml/json`
+</div>
+
 ```toml
 version = "0.1"  # version number, not used yet but important
 name = "name that will be displayed on the admin"
