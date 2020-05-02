@@ -29,7 +29,7 @@ And in json:
 ```javascript
 {
     "name": "the_name",
-    "type": "one_of_the_available_type",  # "sting" is not specified
+    "type": "one_of_the_available_type",  // "sting" is not specified
     "ask": {
         "en": "the question in english",
         "fr": "the question in french"
@@ -38,8 +38,8 @@ And in json:
         "en": "some help text in english",
         "fr": "some help text in french"
     }
-    "default", "some stuff", # optional, not available for all types
-    "example": "an example value" # optional
+    "default", "some stuff", // optional, not available for all types
+    "example": "an example value" // optional
 },
 ```
 
@@ -65,12 +65,12 @@ And in json:
 ```javascript
 {
     "name": "the_name",
-    "type": "string",  # optional
+    "type": "string",  // optional
     "ask": {
         "en": "the question in english",
         "fr": "the question in french"
     },
-    "default": "some stuff", # optional
+    "default": "some stuff", // optional
     "example": "an example value"
 },
 ```
@@ -103,7 +103,7 @@ And in json:
     },
     "example": "an example value",
     "choices": ["fr", "en"],
-    "default": "en" # optional
+    "default": "en" // optional
 },
 ```
 
