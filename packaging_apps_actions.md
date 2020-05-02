@@ -72,7 +72,7 @@ accepted_return_codes = [0, 1, 2, 3]  # optional otherwise only "0" will be a no
         # here, you put a list of arguments exactly like in manifest.toml/json
         [first_action.arguments.first_argument]
         type = "string"
-        ask = "service to restart"
+        ask.en = "service to restart"
         example = "nginx"
 
         ...  # add more arguments here if needed
@@ -85,7 +85,7 @@ command = "systemctl restart some_service"
     [another_action.arguments]
         [another_action.arguments.argument_one]
         type = "string"
-        ask = "some stuff"
+        ask.en = "some stuff"
         example = "stuff"
 
         ...  # add more arguments here if needed
