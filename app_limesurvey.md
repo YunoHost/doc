@@ -1,4 +1,4 @@
-# <img src="/images/limesurvey_logo.svg" width="80px" alt="LimeSurvey's logo"> LimeSurvey
+# <img src="/images/limesurvey_logo.png" width="80px" alt="LimeSurvey's logo"> LimeSurvey
 
 [![Install LimeSurvey with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=limesurvey) [![Integration level](https://dash.yunohost.org/integration/limesurvey.svg)](https://dash.yunohost.org/appci/app/limesurvey)
 
@@ -16,7 +16,7 @@ To configure a questionnaire, go to `limesurvey.domain.tld/admin`.
 
 ## Limitations with YunoHost
 
-Multi-user is not supported
+Multi-user is not supported.
 
 ## Useful links
 
