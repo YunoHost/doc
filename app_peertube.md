@@ -6,7 +6,6 @@
 
 - [Useful links](#useful-links)
 
-**General presentation of the application.**
 PeerTube is a video hosting software project. It allows you to watch and share videos with others using your own server, be it a simple computer at home or in a datacenter. You don't need to host thousands of videos to make your instance interesting for daily use. In a federated fashion, it will talk with other servers of your choice to aggregate references to their videos without really hosting them locally. 
 
 
