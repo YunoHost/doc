@@ -16,8 +16,8 @@ Here is how it works:
 
 ## Useful links
 
-+ Website: [framadate.org/](https://framadate.org/)
-+ Official documentation: [docs.framasoft.org/fr/framadate/](https://docs.framasoft.org/en/framadate/)
-+ Demonstration: [Demo](https://framadate.org/)
++ Website: [framadate.org](https://framadate.org)
++ Official documentation: [docs.framasoft.org/fr/framadate](https://docs.framasoft.org/en/framadate)
++ Demonstration: [Demo](https://framadate.org)
 + Application software repository: [github.com - YunoHost-Apps/opensondage](https://github.com/YunoHost-Apps/opensondage_ynh)
 + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/opensondage/issues](https://github.com/YunoHost-Apps/opensondage_ynh/issues)
