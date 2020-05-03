@@ -2,7 +2,7 @@
 
 * [General ways of contributing to YunoHost](/contribute)
 * [Writing documentation](/write_documentation)
-  *  [Documentation wrinting guide](/doc_writing_guide)
+  *  [Documentation writing guide](/doc_writing_guide)
   *  [Markdown guide](/doc_markdown_guide)
   *  [Propulser son code avec Git & GitHub](/doc_use_git)
 * [Chat rooms](/chat_rooms)
