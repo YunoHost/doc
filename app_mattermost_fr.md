@@ -15,7 +15,7 @@ La plate-forme permet :
 
 ## Liens utiles
 
-+ Site web : [mattermost.com/](https://mattermost.com/)
++ Site web : [mattermost.com](https://mattermost.com/)
 + Documentation officielle : [docs.mattermost.com/guides/user.html](https://docs.mattermost.com/guides/user.html)
 + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/mattermost](https://github.com/YunoHost-Apps/mattermost_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/mattermost/issues](https://github.com/YunoHost-Apps/mattermost_ynh/issues)

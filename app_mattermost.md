@@ -15,7 +15,7 @@ The platform allows :
 
 ## Useful links
 
-+ Website: [mattermost.com/](https://mattermost.com/)
++ Website: [mattermost.com](https://mattermost.com)
 + Official documentation: [docs.mattermost.com/guides/user.html](https://docs.mattermost.com/guides/user.html)
 + Application software repository: [github.com - YunoHost-Apps/mattermost](https://github.com/YunoHost-Apps/mattermost_ynh)
 + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/mattermost/issues](https://github.com/YunoHost-Apps/mattermost_ynh/issues)
