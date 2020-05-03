@@ -1,4 +1,4 @@
-# Minidlna
+# Minidlna (Ready Meadia)
 
 [![Install minidlna with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=minidlna) [![Integration level](https://dash.yunohost.org/integration/minidlna.svg)](https://dash.yunohost.org/appci/app/minidlna)
 
@@ -7,7 +7,7 @@
 - [Configuration](#configuration)
 - [Useful links](#useful-links)
 
-Minidlna is a lightweight [dlna](https://fr.wikipedia.org/wiki/Digital_Living_Network_Alliance) server.
+Minidlna (Ready Media) is a lightweight [dlna](https://fr.wikipedia.org/wiki/Digital_Living_Network_Alliance) server.
 It allows to easily share multimedia files with any compatible devices present on the LAN.
 
 Minidlna does not have a graphical interface, but it does not require any special configuration.
@@ -20,7 +20,7 @@ Minidlna sharing the folder `/home/yunohost.multimedia/share`, which is common t
 
 ~~If [transmission](https://github.com/Kloadut/transmission_ynh) is installed, the downloaded media will be available in dlna.~~  
 
-### How to view and play media files shared by minidlna?
+### How to view and play media files shared by Minidlna ?
 To view and play media files, all you need is a compatible client DLNA/UPNP.
 
 The majority of set-top boxes provided by ISPs are DLNA compatible, simply look for sources of external media.

@@ -1,4 +1,4 @@
-# Minidlna
+# Minidlna (Ready Media)
 
 [![Install minidlna with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=minidlna) [![Integration level](https://dash.yunohost.org/integration/minidlna.svg)](https://dash.yunohost.org/appci/app/minidlna)
 
@@ -7,7 +7,7 @@
 - [Configuration](#configuration)
 - [Liens utiles](#liens-utiles)
 
-Minidlna est un serveur [dlna](https://fr.wikipedia.org/wiki/Digital_Living_Network_Alliance) ultra léger.
+Minidlna (renommé Ready Media) est un serveur [dlna](https://fr.wikipedia.org/wiki/Digital_Living_Network_Alliance) ultra léger.
 Il permet de partager très simplement les fichiers multimédias avec tous les appareils compatibles présents sur le réseau local.
 
 Minidlna ne dispose pas d’une interface graphique, mais ne nécessite pas de configuration particulière.
