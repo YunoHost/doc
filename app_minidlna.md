@@ -1,9 +1,18 @@
 # Minidlna
 
+[![Install minidlna with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=minidlna) [![Integration level](https://dash.yunohost.org/integration/minidlna.svg)](https://dash.yunohost.org/appci/app/minidlna)
+
+### Index
+
+- [Configuration](#configuration)
+- [Useful links](#useful-links)
+
 Minidlna is a lightweight [dlna](https://fr.wikipedia.org/wiki/Digital_Living_Network_Alliance) server.
 It allows to easily share multimedia files with any compatible devices present on the LAN.
 
 Minidlna does not have a graphical interface, but it does not require any special configuration.
+
+## Configuration
 
 ### What multimedia files are shared?
 Minidlna sharing the folder `/home/yunohost.multimedia/share`, which is common to each user in `/home/$USER/Multimedia/Share`.
@@ -23,3 +32,11 @@ In any case, it is generally sufficient to seek external sources, USB etc, to fi
 
 There are a multitude of DLNA client for all platforms, including the following [not exhaustive list](https://en.wikipedia.org/wiki/List_of_UPnP_AV_media_servers_and_clients#UPnP_AV_clients).
 In general, a DLNA client does not require any special configuration to access the media sharing.
+
+## Useful links
+
++ Website: [minidlna.sourceforge.net](http://minidlna.sourceforge.net)
++ Official : [help.ubuntu.com/community/MiniDLNA](https://help.ubuntu.com/community/MiniDLNA)
++ Application software repository: [github.com - YunoHost-Apps/minidlna](https://github.com/YunoHost-Apps/minidlna_ynh)
++ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/minidlna/issues](https://github.com/YunoHost-Apps/minidlna_ynh/issues)
+
