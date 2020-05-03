@@ -1,4 +1,4 @@
-# Minidlna (Ready Meadia)
+# <img src="/images/yunohost_package.png" height="80px" alt="Package"> Minidlna (Ready Meadia)
 
 [![Install minidlna with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=minidlna) [![Integration level](https://dash.yunohost.org/integration/minidlna.svg)](https://dash.yunohost.org/appci/app/minidlna)
 
