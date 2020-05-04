@@ -1,5 +1,6 @@
 <div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">La page demandée n'est pour le moment pas disponible en français. Voici à la place la version en anglais. Si vous souhaitez commencer une traduction de cette page, vous pouvez vous rendre sur [cette page](https://yunohost.org/#/apps_wishlist_fr).</div>
 
+
 # Apps wishlist
 
 <div class="alert alert-info">Before to add an app in wishlist please check your app is not already in apps list: see the <a href="/apps">apps list</a></div>
@@ -95,7 +96,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Museek+](https://github.com/eLvErDe/museek-plus)
 - [N8n.io](https://n8n.io)
 - [Netrunner](https://github.com/mtgred/netrunner)
-- [Nibbleblog](http://www.nibbleblog.com)/ [github](https://github.com/dignajar/nibbleblog)
 - [Nuage](https://nuage.kerjean.me/login) / [github](https://github.com/mickael-kerjean/filestash)
 - [OhMyForm](https://github.com/ohmyform) (Only support Docker install way and some VPS aren't compatible, see TellForm which support non-Docker install but is discontinued)
 - [Ombi](https://github.com/tidusjar/Ombi)
