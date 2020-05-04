@@ -1,4 +1,4 @@
-# <img src="/images/yunohost_package.png" height="80px" alt="Package"> Checky
+# <img src="/images/yunohost_package.png" height="80px" alt="Package"> Cheky
 
 [![Install Cheky with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=cheky) [![Integration level](https://dash.yunohost.org/integration/cheky.svg)](https://dash.yunohost.org/appci/app/cheky)
 
@@ -11,7 +11,7 @@ Cheky is a software written in PHP allowing you to receive new ads published on 
 
 ## Limitations with YunoHost
 
-Updates from the old LBCAlerte package are not possible, the application is only in French. Checky does not work with [SSO](https://yunohost.org/#/users).
+Updates from the old LBCAlerte package are not possible, the application is only in French. Cheky does not work with [SSO](https://yunohost.org/#/users).
 
 ## Useful links
 
