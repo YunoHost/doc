@@ -17,14 +17,6 @@ In addition to Wallabag core features, the following are made available with thi
  * Allow one user to be the administrator (set at the installation)
  * Asynchronous import using Redis (need to be enabled in the *Internal Settings*). RabbitMQ import not supported (yet ?)
 
-----
-
-### Upgrade from v1.x
-
-No automatic upgrade process is available. You need a manual (but simple) migration from [Wallabag v1](/app_wallabag).
-Please take a look at the [official documentation](https://doc.wallabag.org/en/user/import/wallabagv1.html).
-
-
 ## Useful links
 
 + Website : [www.wallabag.org](https://www.wallabag.org/)
@@ -32,3 +24,11 @@ Please take a look at the [official documentation](https://doc.wallabag.org/en/u
 + Demonstration : [Demo](https://vimeo.com/video/167435064)
 + Application software repository : [github.com - YunoHost-Apps/wallabag2](https://github.com/YunoHost-Apps/wallabag2_ynh)
 + Fix a bug or an improvement by creating a ticket (issue) : [github.com - YunoHost-Apps/wallabag2/issues](https://github.com/YunoHost-Apps/wallabag2_ynh/issues)
+
+----
+
+### Upgrade from v1.x
+
+No automatic upgrade process is available. You need a manual (but simple) migration from [Wallabag v1](/app_wallabag).
+Please take a look at the [official documentation](https://doc.wallabag.org/en/user/import/wallabagv1.html).
+

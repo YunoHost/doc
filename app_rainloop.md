@@ -24,7 +24,7 @@ Each user can add a remote carddav server from their own parameters interface.
 - If you use NextCloud, the CardDav address is: https://DOMAIN.TLD/nextcloud/remote.php/carddav/addressbooks/USER/contacts
 
 ### Domains
-Users can use Rainloop to access mailboxes other than the one provided by yunohost (e.g. gmail.com or laposte.net). The option is available through the "account -> add an account" button.
+Users can use Rainloop to access mailboxes other than the one provided by yunohost (e.g. gmail.com or live.com). The option is available through the "account -> add an account" button.
 The administrator must authorize the connection to third party domains, via a white list in the administration interface.
 
 ### PGP Keys

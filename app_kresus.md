@@ -11,7 +11,7 @@ graphs, and budgeting.
 
 * Find all your accounts in one interface and view their balance at a glance !
 * Set up simple email alerts on transaction amounts and balances to notify you of important events in your accounts.
-* Define your own wording, no more "Cheque n°168468"! Sort your transactions by category. Perform complex searches on your transactions, by period, category, amount or date !
+* Define your own wording, no more "n°168468"! Sort your transactions by category. Perform complex searches on your transactions, by period, category, amount or date !
 * Follow the evolution of your money movements at a glance with the graphs by category, by period and by type of movement (expenses or receipts of money).
 
 ## Useful links

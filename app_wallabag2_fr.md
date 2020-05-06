@@ -16,13 +16,6 @@ En plus des fonctionnalités principales de Wallabag, ce paquet propose égaleme
 * De permettre à un utilisateur d'être administrateur (réglage lors de l'installation)
 * Un import asynchrone utilisant Redis (à activer dans les *Paramètres Internes*). L'import via RabbitMQ n'est pas (encore ?) supporté.
 
-----
-
-### Mettre à niveau depuis la v1.x
-
-La mise à niveau depuis le paquet Yunohost de [Wallabag v1](/app_wallabag) demande une opération manuelle, c'est pourquoi un nouveau paquet est fourni. Pour le processus de migration, merci de vous référer à [la documentation officielle de Wallabag](https://doc.wallabag.org/fr/user/import/wallabagv1.html).
-
-
 ## Liens utiles
 
 + Site web : [www.wallabag.org](https://www.wallabag.org/)
@@ -30,3 +23,11 @@ La mise à niveau depuis le paquet Yunohost de [Wallabag v1](/app_wallabag) dema
 + Démonstration : [Démo](https://vimeo.com/video/167435064)
 + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/wallabag2](https://github.com/YunoHost-Apps/wallabag2_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/wallabag2/issues](https://github.com/YunoHost-Apps/wallabag2_ynh/issues)
+
+----
+
+### Mettre à niveau depuis la v1.x
+
+La mise à niveau depuis le paquet Yunohost de [Wallabag v1](/app_wallabag) demande une opération manuelle, c'est pourquoi un nouveau paquet est fourni. Pour le processus de migration, merci de vous référer à [la documentation officielle 
+de Wallabag](https://doc.wallabag.org/fr/user/import/wallabagv1.html).
+
