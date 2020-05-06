@@ -1,11 +1,12 @@
-# <img src="/images/friendica_logo.jpeg" width="80px" alt="Friendica's logo"> Friendica
+# <img src="/images/friendica_logo.svg" height="80px" alt="friendica's logo"> Friendica
 
-[![Install Friendica with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=friendica) [![Integration level](https://dash.yunohost.org/integration/friendica.svg)](https://dash.yunohost.org/appci/app/friendica)
+[![Install friendica with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=friendica) [![Integration level](https://dash.yunohost.org/integration/friendica.svg)](https://dash.yunohost.org/appci/app/friendica)
 
 ### Index
 
 - [Configuration](#configuration)
 - [Useful links](#useful-links)
+
 
 Friendica is a decentralized communication platform that integrates social communication. The platform is linked to independent social projects and business services.
 
@@ -20,12 +21,14 @@ Dedicated domain (must install under web root like https://hub.example.com/ not 
 
 Note:You can use accounts from YunoHost's LDAP. There are not yet active SSO.
 
+
 ## Useful links
 
-+ Website: [friendi.ca](https://friendi.ca/)
-+ Official documentation: [github.com - friendica/wiki](https://github.com/friendica/friendica/wiki)
-+ Application software repository: [github.com - YunoHost-Apps/friendica](https://github.com/YunoHost-Apps/friendica_ynh)
-+ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/friendica/issues](https://github.com/YunoHost-Apps/friendica_ynh/issues)
++ Website : [friendi.ca](http://friendi.ca/)
++ Official documentation : [github.com/friendica/friendica/wiki](https://github.com/friendica/friendica/wiki)
++ Demonstration : [Demo](http://dir.friendica.social/servers)
++ Application software repository : [github.com - YunoHost-Apps/friendica](https://github.com/YunoHost-Apps/friendica_ynh)
++ Fix a bug or an improvement by creating a ticket (issue) : [github.com - YunoHost-Apps/friendica/issues](https://github.com/YunoHost-Apps/friendica_ynh/issues)
 
 ------
 
