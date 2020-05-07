@@ -1,4 +1,4 @@
-# <img src="/images/wikijs_logo.svg" width="80px" alt="logo de Wiki.js"> Wiki.js
+# <img src="/images/wikijs_logo.svg" height="80px" alt="logo de Wiki.js"> Wiki.js
 
 [![Install Wiki.js with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=wikijs) [![Integration level](https://dash.yunohost.org/integration/wikijs.svg)](https://dash.yunohost.org/appci/app/wikijs)
 
