@@ -127,6 +127,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Request Tracker](https://bestpractical.com) / [github](https://github.com/bestpractical/rt)
 - [Restya](http://restya.com) / [github](https://github.com/RestyaPlatform/board/)
 - [Retroshare](https://retroshare.cc/) / [github](https://github.com/RetroShare/RetroShare)
+- [Rocket.chat](https://rocket.chat/) / [github](https://github.com/RocketChat/Rocket.Chat)
 - [ScenariChain-server](https://download.scenari.software/SCENARIchain-server/)
 - [Scuttlebutt Pub](https://www.scuttlebutt.nz/contributing)
 - [ShareLatex](https://www.sharelatex.com) / [github](https://github.com/overleaf/overleaf)
