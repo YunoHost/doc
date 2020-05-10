@@ -1,5 +1,7 @@
 <div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">La page demandée n'est pour le moment pas disponible en français. Voici à la place la version en anglais. Si vous souhaitez commencer une traduction de cette page, vous pouvez vous rendre sur [cette page](https://yunohost.org/#/apps_wishlist_fr).</div>
 
+<div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">La page demandée n'est pour le moment pas disponible en français. Voici à la place la version en anglais. Si vous souhaitez commencer une traduction de cette page, vous pouvez vous rendre sur [cette page](https://yunohost.org/#/apps_wishlist_fr).</div>
+
 
 # Apps wishlist
 
@@ -158,6 +160,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Xonotic](http://xonotic.org) / [gitlab](https://gitlab.com/xonotic)
 - [Zammad](https://github.com/zammad/zammad)
 - [ZeroTier](https://github.com/zerotier/ZeroTierOne)
+- [Zola](https://www.getzola.org/) - A static site generator in one binary
 - [Zoneminder](https://github.com/ZoneMinder/zoneminder)
 - [Zulip](https://zulipchat.com/) / [github](https://github.com/zulip/zulip)
 - [Yggdrasil](https://yggdrasil-network.github.io/) / [github](https://github.com/yggdrasil-network/yggdrasil-go)
