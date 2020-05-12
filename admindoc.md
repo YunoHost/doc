@@ -60,3 +60,4 @@
     * [Changing the administration password](/change_admin_password)
     * [Recover access to your server](/noaccess)
     * [Unban IPs in iptables/fail2ban](/fail2ban)
+    * [Configuring IPv6](/ipv6)

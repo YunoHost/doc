@@ -12,11 +12,11 @@ LimeSurvey est un outil de création et diffusion de sondage/formulaire en ligne
 
 ## Configuration
 
-Pour configurer un questionnaire, il faut se rendre à `limesurvey.domaine.tld/admin`
+Pour configurer un questionnaire, il faut se rendre à `limesurvey.domaine.tld/admin`.
 
 ## Limitations avec YunoHost
 
-Le multi-utilisateurs n'est pas supporté
+Le multi-utilisateurs n'est pas supporté.
 
 ## Liens utiles
 

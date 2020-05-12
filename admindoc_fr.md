@@ -60,3 +60,4 @@
     * [Changer le mot de passe d’administration](/change_admin_password)
     * [Récupérer l'accès à son serveur](/noaccess)
     * [Débannir une IP dans Fail2ban/IPtables](/fail2ban)
+    * [Configurer l'IPv6](/ipv6)

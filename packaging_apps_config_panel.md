@@ -60,6 +60,11 @@ REALLY wants it but we really don't recommend it has it is very error prone and
 frustrating to write by hand) that will be located at the root of you
 application, next to the manifest.json/toml. It looks like this:
 
+<div class="alert alert-info">
+The options are written in **[YunoHost Arguments
+Format](#/packaging_apps_arguments_format)** like in `manifest.toml/json`
+</div>
+
 ```toml
 version = "0.1"  # version number, not used yet but important
 name = "name that will be displayed on the admin"
@@ -72,7 +77,7 @@ name = "name of the section that will be displayed"
 
         # those arguments are in yunohost argument format like manifest.json
         [section_id.sub_section_id.option_id]
-        ask = "the text displayed for the option"
+        ask.en = "the text displayed for the option"
         type = "argument_option"
         default = true
         help = "A public Leed will be accessible for third party apps.<br>By turning on 'anonymous readers' in Leed configuration, you can made your feeds public."
@@ -108,7 +113,7 @@ name = "Leed configuration"
 
         # those arguments are in yunohost argument format
         [main.is_public.is_public]
-        ask = "Is it a public website ?"
+        ask.en = "Is it a public website ?"
         type = "boolean"
         default = true
         help = "A public Leed will be accessible for third party apps.<br>By turning on 'anonymous readers' in Leed configuration, you can made your feeds public."
@@ -118,13 +123,13 @@ name = "Leed configuration"
     name = "Overwriting config files"
 
         [main.overwrite_files.overwrite_nginx]
-        ask = "Overwrite the nginx config file ?"
+        ask.en = "Overwrite the nginx config file ?"
         type = "boolean"
         default = true
         help = "If the file is overwritten, a backup will be created."
 
         [main.overwrite_files.overwrite_phpfpm]
-        ask = "Overwrite the php-fpm config file ?"
+        ask.en = "Overwrite the php-fpm config file ?"
         type = "boolean"
         default = true
         help = "If the file is overwritten, a backup will be created."

@@ -16,7 +16,7 @@ To configure a questionnaire, go to `limesurvey.domain.tld/admin`.
 
 ## Limitations with YunoHost
 
-Multi-user is not supported
+Multi-user is not supported.
 
 ## Useful links
 
