@@ -91,7 +91,7 @@ Chaque application YunoHost possède un id inscrit dans le manifeste de l'applic
 Cet identifiant doit être unique entre chaque paquet d'application.
 Il est donc recommandé de vérifier sa disponibilité en consultant la liste des applications référencées dans les dépôts d'applications connus (apps, internetcube).
 
-De plus l'identifiant doit respecter l'expression régulière suivante `^[a-z1-9]((_|-)?[a-z1-9])+$`. Autrement dit, il doit respecter les règles suivantes :
+De plus l'identifiant doit respecter l'expression régulière suivante `^[a-z0-9]((_|-)?[a-z0-9])+$`. Autrement dit, il doit respecter les règles suivantes :
 * être en minuscule
 * commencer par une lettre ou un chiffre
 * être alphanumérique (le underscore est autorisé)
