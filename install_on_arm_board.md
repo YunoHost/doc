@@ -39,7 +39,7 @@ YunoHost doesn't yet support ARM64 boards. For more information, see [this issue
 
 ---
 
-## Install on top or ARMbian
+## Install on top of ARMbian
 
 <a class="btn btn-lg btn-default" href="https://www.armbian.com/download/">0. Download the ARMbian image for your board</a>
 
