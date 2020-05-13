@@ -1,15 +1,17 @@
-# <img src="/images/friendica_logo.JPEG" width="80px" alt="logo de Friendica"> Friendica
+# <img src="/images/friendica_logo.svg" height="80px" alt="logo de friendica"> Friendica
 
-[![Install Friendica with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=friendica) [![Integration level](https://dash.yunohost.org/integration/friendica.svg)](https://dash.yunohost.org/appci/app/friendica)
+[![Install friendica with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=friendica) [![Integration level](https://dash.yunohost.org/integration/friendica.svg)](https://dash.yunohost.org/appci/app/friendica)
 
 ### Index
 
 - [Configuration](#configuration)
 - [Liens utiles](#liens-utiles)
 
+
 Friendica est une plateforme de communication décentralisée qui intègre la communication sociale. La plate-forme est liée à des projets sociaux indépendants et à des services aux entreprises.
 
 Son objectif est de libérer les amis, la famille et les collègues des entreprises qui récoltent des données ; Friendica vise à ce que la communication sociale soit libre et ouverte, tout en circulant entre tous les fournisseurs aussi facilement que le courrier électronique.[¹](#sources)
+
 
 ## Configuration
 
@@ -20,12 +22,15 @@ Domaine dédié (doit être installé sous la racine web comme https://hub.examp
 
 Note : Vous pouvez utiliser les comptes du LDAP de YunoHost. Il n'y a pas encore de SSO actif.
 
+
 ## Liens utiles
 
- + Site web : [friendi.ca (en)](https://friendi.ca/)
- + Documentation officielle : [github.com - friendica/wiki (en)](https://github.com/friendica/friendica/wiki)
- + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/friendica](https://github.com/YunoHost-Apps/friendica_ynh)
- + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/friendica/issues](https://github.com/YunoHost-Apps/friendica_ynh/issues)
++ Site web : [friendi.ca](http://friendi.ca/)
++ Documentation officielle : [github.com/friendica/friendica/wiki](https://github.com/friendica/friendica/wiki)
++ Démonstration : [Démo](http://dir.friendica.social/servers)
++ Dépôt logiciel de l'application : [github.com - YunoHost-Apps/friendica](https://github.com/YunoHost-Apps/friendica_ynh)
++ Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/friendica/issues](https://github.com/YunoHost-Apps/friendica_ynh/issues)
+
 
 ------
 

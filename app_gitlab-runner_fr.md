@@ -1,4 +1,4 @@
-# <img src="/images/gitlab-runner_logo.png" width="80px" alt="logo de GitLab Runner"> GitLab Runner
+# <img src="/images/gitlab-runner_logo.png" height="80px" alt="logo de GitLab Runner"> GitLab Runner
 
 [![Install GitLab Runner with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gitlab-runner) [![Integration level](https://dash.yunohost.org/integration/gitlab-runner.svg)](https://dash.yunohost.org/appci/app/gitlab-runner)
 

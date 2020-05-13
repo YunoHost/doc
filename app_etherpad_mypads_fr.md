@@ -1,4 +1,4 @@
-# <img src="/images/etherpad_mypads_logo.svg" width="80px" alt="logo de Etherpad"> Etherpad (avec plugin mypads)
+# <img src="/images/etherpad_mypads_logo.svg" height="80px" alt="logo de Etherpad"> Etherpad (avec plugin mypads)
 
 [![Installer Etherpad avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=etherpad_mypads) [![Niveau d'intégration](https://dash.yunohost.org/integration/etherpad_mypads.svg)](https://dash.yunohost.org/appci/app/etherpad_mypads)
 
