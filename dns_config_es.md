@@ -35,6 +35,7 @@ _xmpp-server._tcp 3600 IN SRV 0 5 5269 tu.dominio.tld.
 muc 3600 IN CNAME @
 pubsub 3600 IN CNAME @
 vjud 3600 IN CNAME @
+xmpp-upload 3600 IN CNAME @
 
 #
 # Mail (MX, SPF, DKIM et DMARC)
@@ -48,18 +49,19 @@ _dmarc 3600 IN TXT "v=DMARC1; p=none"
 Pero puede ser un poco más fácil entenderla viéndola de esta manera :
 
 
-| Tipo    | Nombre                 | Valor                                                 |
+| Tipo    | Nombre                 | Valor                                                  |
 | :-----: | :--------------------: | :----------------------------------------------------: |
-|  **A**  |   **@**                |  `111.222.333.444` (tu IPv4)                        |
-|    A    |   *                    |  `111.222.333.444` (tu IPv4)                        |
-|  AAAA   |   @                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (tu IPv6) |
-|  AAAA   |   *                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (tu IPv6) |
-| **SRV** | **_xmpp-client._tcp**  |  `0 5 5222 tu.dominio.tld.`                         |
-| **SRV** | **_xmpp-server._tcp**  |  `0 5 5269 tu.dominio.tld.`                         |
+|  **A**  |   **@**                |  `111.222.333.444` (tu IPv4)                           |
+|    A    |   *                    |  `111.222.333.444` (tu IPv4)                           |
+|  AAAA   |   @                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (tu IPv6)    |
+|  AAAA   |   *                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (tu IPv6)    |
+| **SRV** | **_xmpp-client._tcp**  |  `0 5 5222 tu.dominio.tld.`                            |
+| **SRV** | **_xmpp-server._tcp**  |  `0 5 5269 tu.dominio.tld.`			    |
 |  CNAME  |   muc                  |  `@`                                                   |
 |  CNAME  |   pubsub               |  `@`                                                   |
 |  CNAME  |   vjud                 |  `@`                                                   |
-| **MX**  | **@**                  |  `tu.dominio.tld.`     (y prioridad: 10)            |
+|  CNAME  |   xmpp-upload          |  `@`                                                   |
+| **MX**  | **@**                  |  `tu.dominio.tld.`     (y prioridad: 10)               |
 |   TXT   |   @                    |  `"v=spf1 a mx ip4:111.222.33.44 -all"`                |
 |   TXT   |  mail._domainkey       |  `"v=DKIM1; k=rsa; p=uneGrannnndeClef"`                |
 |   TXT   |  _dmarc                |  `"v=DMARC1; p=none"`                                  |
