@@ -12,7 +12,7 @@ Minetest, c'est aussi un serveur qui permet d'accueillir vos amis ou simplement 
 
 ## Liens utiles
 
-+ Site web : [minetest.net](https://minetest.net)
++ Site web : [minetest.net](https://www.minetest.net/)
 + Documentation officielle : [wiki.minetest.net](https://wiki.minetest.net)
 + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/minetest](https://github.com/YunoHost-Apps/minetest_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/minetest/issues](https://github.com/YunoHost-Apps/minetest_ynh/issues)

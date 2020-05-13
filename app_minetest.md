@@ -12,7 +12,7 @@ Minetest is also a server that allows you to welcome your friends or just a few 
 
 ## Useful links
 
-+ Website: [minetest.net](https://minetest.net)
++ Website: [minetest.net](https://www.minetest.net/)
 + Official documentation: [wiki.minetest.net](https://wiki.minetest.net)
 + Application software repository: [github.com - YunoHost-Apps/minetest](https://github.com/YunoHost-Apps/minetest_ynh)
 + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/minetest/issues](https://github.com/YunoHost-Apps/minetest_ynh/issues)
