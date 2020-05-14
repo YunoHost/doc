@@ -7,8 +7,6 @@ Here come the time:
 - you know what means `¯\_(ツ)_/¯`
 - you use to say `Don't ask to ask, just ask` in the [YunoHost support room](https://yunohost.org/#/help)
 
-And now you want to improve your packaging speed before climbing into [Yunohost Core developpement](/dev).
-
 Here are few ideas that will help you.
 
 There are things that slow you down:
