@@ -69,6 +69,7 @@ suivante :
 |  CNAME  |   muc                  |  `@`                                                   |
 |  CNAME  |   pubsub               |  `@`                                                   |
 |  CNAME  |   vjud                 |  `@`                                                   |
+|  CNAME  |   xmpp-upload          |  `@`                                                   |
 | **MX**  | **@**                  |  `votre.domaine.tld.`     (et priorité: 10)            |
 |   TXT   |   @                    |  `"v=spf1 a mx ip4:111.222.33.44 -all"`                |
 |   TXT   |  mail._domainkey       |  `"v=DKIM1; k=rsa; p=uneGrannnndeClef"`                |

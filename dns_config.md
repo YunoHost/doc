@@ -68,6 +68,7 @@ Though it might be easier to understand it if displayed like this:
 |  CNAME  |   muc                  |  `@`                                                  |
 |  CNAME  |   pubsub               |  `@`                                                  |
 |  CNAME  |   vjud                 |  `@`                                                  |
+|  CNAME  |   xmpp-upload          |  `@`                                                  |
 | **MX**  | **@**                  |  `your.domain.tld.`     (and priority: 10)            |
 |   TXT   |   @                    |  `"v=spf1 a mx ip4:111.222.33.44 -all"`               |
 |   TXT   |  mail._domainkey       |  `"v=DKIM1; k=rsa; p=someHuuuuuuugeKey"`              |
