@@ -89,7 +89,7 @@ Each YunoHost application has an id registered in the application manifest.
 This identifier must be unique between each application packet.
 It is therefore recommended to verify its availability by consulting the list of applications referenced in the known applications repositories (official, community, internetcube).
 
-In addition, the identifier must respect the regular expression `^[a-z1-9]((_|-)?[A-z1-9])+$`. 
+In addition, the identifier must respect the regular expression `^[a-z0-9]((_|-)?[A-z0-9])+$`. 
 In other words, it must respect the following rules:
 * be in lowercase
 * start with a letter or number
