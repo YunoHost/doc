@@ -155,6 +155,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Volumio](https://volumio.org) / [github](https://github.com/volumio)
 - [WebODF](http://webodf.org) / [github](https://github.com/webodf/WebODF)
 - [Webhook.site](https://docs.webhook.site/) / [github](https://github.com/fredsted/webhook.site)
+- [Whoogle](https://github.com/benbusby/whoogle-search) - Self-hosted, ad-free, privacy-respecting Google metasearch engine.
 - [Wireguard](https://www.wireguard.com/) / [git](https://git.zx2c4.com/WireGuard/)
 - [Xibo](https://github.com/xibosignage) - A FLOSS digital signage solution (CMS?)
 - [Xonotic](http://xonotic.org) / [gitlab](https://gitlab.com/xonotic)
