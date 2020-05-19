@@ -1,7 +1,5 @@
 <div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">La page demandée n'est pour le moment pas disponible en français. Voici à la place la version en anglais. Si vous souhaitez commencer une traduction de cette page, vous pouvez vous rendre sur [cette page](https://yunohost.org/#/apps_wishlist_fr).</div>
 
-<div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">La page demandée n'est pour le moment pas disponible en français. Voici à la place la version en anglais. Si vous souhaitez commencer une traduction de cette page, vous pouvez vous rendre sur [cette page](https://yunohost.org/#/apps_wishlist_fr).</div>
-
 
 # Apps wishlist
 
@@ -57,6 +55,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Gollum](https://github.com/gollum/gollum)
 - [Goploader](https://github.com/Depado/goploader)
 - [Granary](https://github.com/snarfed/granary)
+- [Graphhopper](https://www.graphhopper.com/) / [github](https://github.com/graphhopper/graphhopper#get-started) or other routing service that can be plugged to [Nextcloud Maps](https://apps.nextcloud.com/apps/maps), e.g. OSRM (see below)
 - [Guacamole](http://guacamole.apache.org/)
 - [Habitica](https://habitica.com/) / [github](https://github.com/HabitRPG/habitica)
 - [HackMD CE](https://github.com/hackmdio/hackmd)
@@ -107,6 +106,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [openHAB](https://www.openhab.org/) - Smart home platform. / [github](https://github.com/openhab)
 - [OpenProject](https://github.com/opf/openproject)
 - [OpenSourceBilling](https://github.com/vteams/open-source-billing)
+- [OSRM](http://project-osrm.org/) / [github](https://github.com/Project-OSRM/osrm-backend/#quick-start) or other routing service that can be plugged to [Nextcloud Maps](https://apps.nextcloud.com/apps/maps), e.g. Graphhopper (see above)
 - [OX Open-Xchange](https://www.open-xchange.com) Linux groupware solution / [github](https://github.com/open-xchange/)
 - [Paperless](https://github.com/danielquinn/paperless)
 - [Paperwork](http://paperwork.rocks)
