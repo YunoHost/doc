@@ -1,3 +1,5 @@
+<div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">The page requested is not yet available in your favourite language. Instead, here is the english version. If you wish to start translating this page, please go to [this page](https://yunohost.org/#/apps_wishlist_de).</div>
+
 <div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">La page demandée n'est pour le moment pas disponible en français. Voici à la place la version en anglais. Si vous souhaitez commencer une traduction de cette page, vous pouvez vous rendre sur [cette page](https://yunohost.org/#/apps_wishlist_fr).</div>
 
 <div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">La page demandée n'est pour le moment pas disponible en français. Voici à la place la version en anglais. Si vous souhaitez commencer une traduction de cette page, vous pouvez vous rendre sur [cette page](https://yunohost.org/#/apps_wishlist_fr).</div>
@@ -124,6 +126,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Pydio Cells](https://pydio.com/) A file sync and sharing software written in go. / [github](https://github.com/pydio/cells)
 - [Pump.io](http://pump.io) / [github](https://github.com/pump-io/pump.io)
 - [qBittorrent](https://github.com/qbittorrent/qBittorrent)
+- [Questions2answer](https://www.question2answer.org/)
 - [racktables](http://racktables.org) / [github](https://github.com/RackTables/racktables)
 - [Radarr](https://github.com/Radarr/Radarr)
 - [Request Tracker](https://bestpractical.com) / [github](https://github.com/bestpractical/rt)
