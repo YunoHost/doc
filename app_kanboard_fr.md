@@ -13,6 +13,6 @@ L'outil est prévu pour fonctionner sur une petite machine tel qu'un Raspberry P
 
 + Site web : [kanboard.org](https://kanboard.org)
 + Documentation officielle : [docs.kanboard.org/en/latest](https://docs.kanboard.org/fr/latest)
-+ Démonstration: [Démo](https://framaboard.org)
++ Démonstration : [Démo](https://framaboard.org)
 + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/kanboard](https://github.com/YunoHost-Apps/kanboard_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/kanboard/issues](https://github.com/YunoHost-Apps/kanboard_ynh/issues)
