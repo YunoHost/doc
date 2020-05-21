@@ -14,6 +14,6 @@ Keeweb gère aussi des fichiers compatibles avec les autres gestionnaires de mot
 
 + Site web : [keeweb.info](https://keeweb.info)
 + Documentation officielle : [keeweb.info](https://keeweb.info)
-+ Démonstration: [Démo](https://app.keeweb.info)
++ Démonstration : [Démo](https://app.keeweb.info)
 + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/keeweb](https://github.com/YunoHost-Apps/keeweb_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/keeweb/issues](https://github.com/YunoHost-Apps/keeweb_ynh/issues)
