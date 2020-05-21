@@ -156,7 +156,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Xibo](https://github.com/xibosignage) - A FLOSS digital signage solution (CMS?)
 - [Xonotic](http://xonotic.org) / [gitlab](https://gitlab.com/xonotic)
 - [Zammad](https://github.com/zammad/zammad)
-- [ZeroTier](https://github.com/zerotier/ZeroTierOne)
 - [Zola](https://www.getzola.org/) - A static site generator in one binary
 - [Zoneminder](https://github.com/ZoneMinder/zoneminder)
 - [Zulip](https://zulipchat.com/) / [github](https://github.com/zulip/zulip)
