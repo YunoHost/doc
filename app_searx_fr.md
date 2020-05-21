@@ -14,6 +14,6 @@ En tant que logiciel décentralisé, searx est installé sur différentes instan
 
 + Site web : [searx.me](https://searx.me/)
 + Documentation officielle : [asciimoo.github.io/searx](https://asciimoo.github.io/searx/)
-+ Démonstration: [Démo](https://demo.yunohost.org/searx/)
++ Démonstration : [Démo](https://demo.yunohost.org/searx/)
 + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/searx](https://github.com/YunoHost-Apps/searx_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/searx/issues](https://github.com/YunoHost-Apps/searx_ynh/issues)
