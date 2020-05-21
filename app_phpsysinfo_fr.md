@@ -9,6 +9,6 @@ Un script PHP personnalisable qui affiche bien les informations sur votre systè
 ## Liens utiles
 
 + Site web : [phpsysinfo.github.io/phpsysinfo](https://phpsysinfo.github.io/phpsysinfo/)
-+ Démonstration: [Démo](https://phpsysinfo.github.io/phpsysinfo/demos.html)
++ Démonstration : [Démo](https://phpsysinfo.github.io/phpsysinfo/demos.html)
 + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/phpsysinfo](https://github.com/YunoHost-Apps/phpsysinfo_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/phpsysinfo/issues](https://github.com/YunoHost-Apps/phpsysinfo_ynh/issues)
