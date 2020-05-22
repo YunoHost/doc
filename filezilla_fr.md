@@ -64,7 +64,7 @@ Installez le programme et lancez *Filezilla*.
 
 Sources
 
-* [Documentation officielle](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(fr))
+* <a href="https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(fr)" title="FileZilla Client Tutorial (fr)">Documentation officielle en Français 
 * [Tutoriel général à Filezilla](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)
 
 ## Alternatives à Filezilla
