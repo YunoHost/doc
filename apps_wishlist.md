@@ -1,6 +1,6 @@
 # Apps wishlist
 
-<div class="alert alert-info">Before to add an app in wishlist please check your app is not already in official or community list: see the <a href="/apps">apps list</a></div>
+<div class="alert alert-info">Before to add an app in wishlist please check your app is not already in apps list: see the <a href="/apps">apps list</a></div>
 
 The following list is a compiled wishlist of applications that would be nice-to-have.
 
@@ -39,6 +39,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [ERPnext](https://erpnext.com/download) / [github](https://github.com/frappe/erpnext)
 - [EteSync](https://www.etesync.com/) / [github](https://github.com/etesync)
 - [Epicyon](https://epicyon.net/) / [gitlab](https://gitlab.com/bashrc2/epicyon)
+- [erine.email](https://erine.email/) / [gitlab](https://gitlab.com/mdavranche/erine.email)
 - [Ferdi server](https://github.com/getferdi/server) is the server to self host the data and configuration of the [ferdi](https://getferdi.com/) messaging aggregator client.
 - [FEX](http://fex.rus.uni-stuttgart.de/)
 - [FitTrackee](https://github.com/SamR1/FitTrackee)
@@ -51,6 +52,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Gollum](https://github.com/gollum/gollum)
 - [Goploader](https://github.com/Depado/goploader)
 - [Granary](https://github.com/snarfed/granary)
+- [Graphhopper](https://www.graphhopper.com/) / [github](https://github.com/graphhopper/graphhopper#get-started) or other routing service that can be plugged to [Nextcloud Maps](https://apps.nextcloud.com/apps/maps), e.g. OSRM (see below)
 - [Guacamole](http://guacamole.apache.org/)
 - [Habitica](https://habitica.com/) / [github](https://github.com/HabitRPG/habitica)
 - [HackMD CE](https://github.com/hackmdio/hackmd)
@@ -62,6 +64,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Invoice Ninja](https://www.invoiceninja.com) / [github](https://github.com/invoiceninja/invoiceninja)
 - [InvoicePlane](https://invoiceplane.com) / [github](https://github.com/InvoicePlane/InvoicePlane)
 - [IPFS](https://ipfs.io) / [github](https://github.com/ipfs/ipfs)
+- [Isso](https://posativ.org/isso) commenting server / [github](https://github.com/posativ/isso)
 - [Jellyfin](https://github.com/jellyfin)
 - [JS Bin](http://jsbin.com/help/2-second-setup) / [github](https://github.com/jsbin/)
 - [Joplin](http://joplin.cozic.net/) / [github](https://github.com/laurent22/joplin)
@@ -91,7 +94,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Museek+](https://github.com/eLvErDe/museek-plus)
 - [N8n.io](https://n8n.io)
 - [Netrunner](https://github.com/mtgred/netrunner)
-- [Nibbleblog](http://www.nibbleblog.com)/ [github](https://github.com/dignajar/nibbleblog)
 - [Nuage](https://nuage.kerjean.me/login) / [github](https://github.com/mickael-kerjean/filestash)
 - [OhMyForm](https://github.com/ohmyform) (Only support Docker install way and some VPS aren't compatible, see TellForm which support non-Docker install but is discontinued)
 - [Ombi](https://github.com/tidusjar/Ombi)
@@ -101,6 +103,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [openHAB](https://www.openhab.org/) - Smart home platform. / [github](https://github.com/openhab)
 - [OpenProject](https://github.com/opf/openproject)
 - [OpenSourceBilling](https://github.com/vteams/open-source-billing)
+- [OSRM](http://project-osrm.org/) / [github](https://github.com/Project-OSRM/osrm-backend/#quick-start) or other routing service that can be plugged to [Nextcloud Maps](https://apps.nextcloud.com/apps/maps), e.g. Graphhopper (see above)
 - [OX Open-Xchange](https://www.open-xchange.com) Linux groupware solution / [github](https://github.com/open-xchange/)
 - [Paperless](https://github.com/danielquinn/paperless)
 - [Paperwork](http://paperwork.rocks)
@@ -115,6 +118,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [ProcessMaker](http://www.processmaker.com)
 - [ProtonMail’s WebClient](https://github.com/ProtonMail/WebClient)
 - [PyLoad](https://github.com/pyload/pyload)
+- [Pydio Cells](https://pydio.com/) A file sync and sharing software written in go. / [github](https://github.com/pydio/cells)
 - [Pump.io](http://pump.io) / [github](https://github.com/pump-io/pump.io)
 - [qBittorrent](https://github.com/qbittorrent/qBittorrent)
 - [racktables](http://racktables.org) / [github](https://github.com/RackTables/racktables)
@@ -129,15 +133,16 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [SocialHome](https://github.com/jaywink/socialhome) (Socialhome is best described as a federated personal profile with social networking functionality) (https://socialhome.network)
 - [smokeping](https://packages.debian.org/buster/smokeping)   / [github](https://github.com/oetiker/SmokePing)
 - [Sonarr](https://sonarr.tv) / [github](https://github.com/Sonarr/Sonarr)
+- [Spacedeck](https://github.com/spacedeck) (A web based, real time, collaborative whiteboard application with rich media support.)
 - [Stackedit](https://stackedit.io) / [github](https://github.com/benweet/stackedit)
 - [StandardNotes](https://standardnotes.org) (a clean, simple, E2E-encrypted notes app) -- specifically, the server-side [StandardFile](https://standardfile.org) portion / [github](https://github.com/standardnotes/web)
 - [Streisand](https://github.com/jlund/streisand)
 - [Subspace](https://github.com/subspacecloud/subspace) (A simple WireGuard VPN server GUI)
-- [Spacedeck](https://github.com/spacedeck) (A web based, real time, collaborative whiteboard application with rich media support.)
 - [Syspass](http://www.syspass.org/) / [github](https://github.com/nuxsmin/sysPass)
 - [Taiga](https://taiga.io) / [github](https://github.com/taigaio/)
 - [Taskwarrior](https://taskwarrior.org) / [github](https://github.com/GothenburgBitFactory/taskwarrior)
 - [Technitium DNS](https://technitium.com/dns/) / [github](https://github.com/TechnitiumSoftware/DnsServer)
+- [Teddy.io](https://teedy.io/#!/) Gestionnaire de documents / [Github](https://github.com/sismics/docs)
 - [TellForm](https://github.com/tellform/tellform) (Discontinued (see OhMyForm) but it can be great to have it since OhMyForm does only support Docker install)
 - [TMate](https://tmate.io/) / [github](https://github.com/tmate-io/tmate)
 - [Tracim](https://github.com/tracim/tracim)
@@ -148,12 +153,12 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Volumio](https://volumio.org) / [github](https://github.com/volumio)
 - [WebODF](http://webodf.org) / [github](https://github.com/webodf/WebODF)
 - [Webhook.site](https://docs.webhook.site/) / [github](https://github.com/fredsted/webhook.site)
+- [Whoogle](https://github.com/benbusby/whoogle-search) - Self-hosted, ad-free, privacy-respecting Google metasearch engine.
 - [Wireguard](https://www.wireguard.com/) / [git](https://git.zx2c4.com/WireGuard/)
 - [Xibo](https://github.com/xibosignage) - A FLOSS digital signage solution (CMS?)
 - [Xonotic](http://xonotic.org) / [gitlab](https://gitlab.com/xonotic)
-- [YesWiki](https://yeswiki.net) / [github](https://github.com/YesWiki/yeswiki)
 - [Zammad](https://github.com/zammad/zammad)
-- [ZeroTier](https://github.com/zerotier/ZeroTierOne)
+- [Zola](https://www.getzola.org/) - A static site generator in one binary
 - [Zoneminder](https://github.com/ZoneMinder/zoneminder)
 - [Zulip](https://zulipchat.com/) / [github](https://github.com/zulip/zulip)
 - [Yggdrasil](https://yggdrasil-network.github.io/) / [github](https://github.com/yggdrasil-network/yggdrasil-go)
