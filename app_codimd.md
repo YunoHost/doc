@@ -6,8 +6,7 @@
 
 - [Useful links](#useful-links)
 
-CodiMD is a collaborative, real-time word processing web service. It uses Markdown language, which is a simple way to format text.
-CodiMD offers a wide range of features for all common uses of word processing, including title management, table of contents, insertion of images, tables, footnotes, video overlay, PDF viewers, etc.
+CodiMD is a collaborative, real-time word processing web service. It uses Markdown language, which is a simple way to format text.  CodiMD offers a wide range of features for all common uses of word processing, including title management, table of contents, insertion of images, tables, footnotes, video overlay, PDF viewers, LaTeX, etc.  Different levels of permission allow you to choose who can read or edit the document.
 
 ## Useful links
 
