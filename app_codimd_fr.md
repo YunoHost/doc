@@ -7,11 +7,12 @@
 - [Liens utiles](#liens-utiles)
 
 CodiMD est un service web de traitement de texte collaboratif en temps réel. Il utilise le langage Markdown, qui est un moyen simple pour formater un texte.  
-CodiMD propose un vaste choix de fonctionnalités pour toutes les utilisations courantes du traitement de texte parmis lesquels Gestion des titres, table de matières, insertion d'images, tableaux, notes de bas de page, incrustation de vidéos, de visualisateurs PDF, LaTeX, etc.  
+CodiMD propose un vaste choix de fonctionnalités pour toutes les utilisations courantes du traitement de texte parmi lesquelles gestion des titres, table de matières, insertion d’images, tableaux, notes de bas de page, incrustation de vidéos, visualisateurs PDF, expressions mathématiques LaTeX avec MathJax, diagrammes, etc.  
 Différents niveaux de permission permettent de choisir qui peut lire ou éditer le document.
 
 ## Liens utiles
 
-+ Site web : [https://demo.codimd.org/](https://demo.codimd.org/)
++ Démo officielle : [https://demo.codimd.org/](https://demo.codimd.org/)
++ Documentation officielle : [https://demo.codimd.org/s/features](https://demo.codimd.org/s/features)
 + Dépôt logiciel de l’application : [github.com - YunoHost-Apps/codimd](https://github.com/YunoHost-Apps/codimd_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/codimd/issues](https://github.com/YunoHost-Apps/codimd_ynh/issues)
