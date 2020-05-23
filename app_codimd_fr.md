@@ -6,8 +6,9 @@
 
 - [Liens utiles](#liens-utiles)
 
-CodiMD est un service web de traitement de texte collaboratif et en temps réel. Il utilise le langage Markdown, qui est un moyen simple pour formater un texte.
-CodiMD propose un vaste choix de fonctionnalités pour toutes les utilisations courantes du traitement de texte parmis lesquels Gestion des titres, table de matières, insertion d'images, tableaux, notes de bas de page, incrustation de vidéos, de visualisateurs PDF, etc.
+CodiMD est un service web de traitement de texte collaboratif en temps réel. Il utilise le langage Markdown, qui est un moyen simple pour formater un texte.  
+CodiMD propose un vaste choix de fonctionnalités pour toutes les utilisations courantes du traitement de texte parmis lesquels Gestion des titres, table de matières, insertion d'images, tableaux, notes de bas de page, incrustation de vidéos, de visualisateurs PDF, LaTeX, etc.  
+Différents niveaux de permission permettent de choisir qui peut lire ou éditer le document.
 
 ## Liens utiles
 
