@@ -363,7 +363,7 @@ $(document).ready(function () {
                  $('.app-card_'+ app_id + ' .app-title').append(' <span class="label label-'+app_badge_css_style+'">'+app_badge+'</span>');
             }
             if (typeof(infos.category) === "string") {
-                 category = temp1.find(function(el) { return el.id == infos.category; });
+                 category = data["categories"].find(function(el) { return el.id == infos.category; });
                  if (typeof(category) !== "undefined")
                  {
                     display = category["title"][default_lang] || category["title"]["en"];
