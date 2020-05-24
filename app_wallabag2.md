@@ -29,6 +29,6 @@ In addition to Wallabag core features, the following are made available with thi
 
 ### Upgrade from v1.x
 
-No automatic upgrade process is available. You need a manual (but simple) migration from [Wallabag v1](/app_wallabag).
+No automatic upgrade process is available. You need a manual (but simple) migration from Wallabag v1.
 Please take a look at the [official documentation](https://doc.wallabag.org/en/user/import/wallabagv1.html).
 
