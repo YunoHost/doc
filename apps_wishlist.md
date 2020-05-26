@@ -51,6 +51,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Goaccess](https://goaccess.io) Web log analyser (replaces piwik without js tracking scripts) / [github](https://github.com/allinurl/goaccess)
 - [Gollum](https://github.com/gollum/gollum)
 - [Goploader](https://github.com/Depado/goploader)
+- [Gpodder.net](https://gpoddernet.readthedocs.io/en/latest/index.html)
 - [Granary](https://github.com/snarfed/granary)
 - [Graphhopper](https://www.graphhopper.com/) / [github](https://github.com/graphhopper/graphhopper#get-started) or other routing service that can be plugged to [Nextcloud Maps](https://apps.nextcloud.com/apps/maps), e.g. OSRM (see below)
 - [Guacamole](http://guacamole.apache.org/)
