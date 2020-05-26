@@ -55,7 +55,7 @@ Most of non business IP provided by ISP are blacklisted.
 | Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
 | --- | --- | --- | --- | --- | --- | --- |
 | Sunrise | Multiple | No | Yes | No | - | - |
-| Swisscom | Multiple | No | Yes | No | - | - |
+| Swisscom | Multiple | No | Yes | No | No | No |
 | VTX | Multiple | No | Yes | No | - | - |
 
 If you want to add international ISPs information, please do consider [modifying this page](/write_documentation).
