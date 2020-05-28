@@ -1,9 +1,18 @@
-# Minidlna
+# <img src="/images/yunohost_package.png" height="80px" alt="Package"> Minidlna (Ready Media)
 
-Minidlna est un serveur [dlna](https://fr.wikipedia.org/wiki/Digital_Living_Network_Alliance) ultra léger.
+[![Install minidlna with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=minidlna) [![Integration level](https://dash.yunohost.org/integration/minidlna.svg)](https://dash.yunohost.org/appci/app/minidlna)
+
+### Index
+
+- [Configuration](#configuration)
+- [Liens utiles](#liens-utiles)
+
+Minidlna (renommé Ready Media) est un serveur [dlna](https://fr.wikipedia.org/wiki/Digital_Living_Network_Alliance) ultra léger.
 Il permet de partager très simplement les fichiers multimédias avec tous les appareils compatibles présents sur le réseau local.
 
 Minidlna ne dispose pas d’une interface graphique, mais ne nécessite pas de configuration particulière.
+
+## Configuration
 
 ### Quels fichiers multimédias sont partagés ?
 Minidlna partage le dossier `/home/yunohost.multimedia/share`, qui est commun à chaque utilisateur dans le dossier `/home/$USER/Multimedia/Share`.
@@ -23,3 +32,10 @@ Dans tous les cas, il suffit en général d’aller chercher les sources externe
 
 Il existe une multitude de clients DLNA pour toutes les plateformes, dont voici une [liste non exhaustive](https://en.wikipedia.org/wiki/List_of_UPnP_AV_media_servers_and_clients#UPnP_AV_clients).
 De manière générale, un client DLNA ne nécessite pas de configuration particulière pour accéder au partage de fichiers multimédias.
+
+## Liens utiles
+
+ + Site web : [minidlna.sourceforge.net](http://minidlna.sourceforge.net/)
+ + Documentation : [doc.ubuntu-fr.org/minidlna](https://doc.ubuntu-fr.org/minidlna)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/minidlna](https://github.com/YunoHost-Apps/minidlna_ynh)
+ + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/minidlna/issues](https://github.com/YunoHost-Apps/minidlna_ynh/issues)

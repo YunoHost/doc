@@ -139,6 +139,8 @@ YEP à respecter pour atteindre le niveau 7:
 **Le package d'application respecte toute les recommandations de packaging d'apps. C'est une app de très bonne qualité.**
 
 YEP à respecter pour atteindre le niveau 8:
+- [YEP 1.12](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-112) : Respect le modèle de l'application d'exemple
+- Prise en charge du changement d'URL
 - *[YEP 2.16](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-216---v%C3%A9rifier-la-disponibilit%C3%A9-des-d%C3%A9pendances-sur-arm-x86-et-x64----valid%C3%A9--manuel--official-) : Vérifier la disponibilité des dépendances sur ARM, x86 et x64*
 - [YEP 2.18.5](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-2185---ajouter-la-tuile-yunohost-pour-naviguer-facilement-entre-les-applications----valid%C3%A9--manuel--official-) : Ajouter la tuile YunoHost pour naviguer facilement entre les applications
 - [YEP 4.1](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines_fr.md#yep-41---lier-au-ldap----valid%C3%A9--manuel--official-) : Lier au ldap

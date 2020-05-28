@@ -31,12 +31,8 @@ You can also check out these pages for specific [registrar](/registrar) document
 
   **Warning**: If you choose this option, you will have more configuration possibilities, but nothing will be done for you. For example, if you want to use `webmail.my-server.org`, you must add it manually to the DNS records with your registrar.
 
-3. Your YunoHost instance has its own DNS service, which means it will automatically configure its own DNS records, and that you can leave the setup to the instance itself. To do this, you must explain to your **registrar** that your YunoHost instance is the authoritative DNS server for your domain name.
+3. (Advanced, not 100% supported...) Your YunoHost instance has its own DNS service, which means it will automatically configure its own DNS records, and that you can leave the setup to the instance itself. To do this, you must explain to your **registrar** that your YunoHost instance is the authoritative DNS server for your domain name.
 
-  **Warning**: If you choose this option, all configuration options will be done automatically, you will retain a good deal of flexibility, but if your server gets knocked offline you will run into many problems. **Choose this only if you are certain.**
-
-4. Once your DNS service is running, your server can use it but it needs to be configured, this is the [DNS resolver](/dns_resolver).
+  **Warning**: If you choose this option, all configuration options will be done automatically, you will retain a good deal of flexibility, but if your server gets knocked offline you will run into many problems. **Choose this only if you understand the implications.**
 
 
-### Dynamic IP
-If the global IP address is changing follow this [tutorial](/dns_dynamicip).

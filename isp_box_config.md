@@ -21,6 +21,8 @@ Identify what is the local IP of your server, either :
 
 A local IP address typically looks like `192.168.xx.yy`, or `10.0.xx.yy`.
 
+The local IP address needs to be static, so that the port forwards that you are going to set in the next step will always reach your server. You should go into your box/router and make sure that the local IP address of your server is static instead of dynamic.
+
 ### 3. Forwarding ports
 
 In your router admin interface, look for something like 'router configuration' or 'port forwarding'. The naming differs among the various kinds of boxes.

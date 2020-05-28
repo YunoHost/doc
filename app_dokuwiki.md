@@ -1,13 +1,27 @@
-DokuWiki
-========
+# <img src="/images/dokuwiki_logo.svg" height="80px" alt="Dokuwiki's logo"> DokuWiki
 
-Homepage: https://dokuwiki.org
+[![Installer DokuWiki grâce à YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=dokuwiki) [![Niveau d'intégration](https://dash.yunohost.org/integration/dokuwiki.svg)](https://dash.yunohost.org/appci/app/dokuwiki)
 
-DokuWiki is a wiki application licensed under GPLv2 and written in the PHP programming language. It works on plain text files and thus does not need a database. Its syntax is similar to the one used by MediaWiki.More at Wikipedia
+### Index
 
-Developer(s):Andreas Gohr, et al.
+- [Limitations with YunoHost](#limitations-with-yunohost)
+- [Useful links](#useful-links)
 
-Operating system:Cross-platform
-Platform:PHP
+DokuWiki is a standards-compliant, easy-to-use, standards-compliant GNU GPL free wiki engine whose main purpose is to create documentation of all kinds. This software is developed in PHP by Andreas Gohr. ...] It has a simple syntax that ensures the readability of data files outside of the wiki, and facilitates the creation of structured texts. All data is stored in text files, so no database is needed. [¹](#sources)
 
-License:GNU General Public License
+## Limitations with YunoHost
+
+It is currently impossible to add and use internal DokuWiki users, only YunoHost users.
+
+## Useful links
+
++ Website: [dokuwiki.org](https://dokuwiki.org)
++ Official documentation: [dokuwiki.org - Manual](https://www.dokuwiki.org/manual)
++ Application software repository: [github.com - YunoHost-App/dokuwiki](https://github.com/YunoHost-Apps/dokuwiki_ynh)
++ Fix a bug or an improvement by creating a ticket (issue): [github.com -YunoHost-Apps/dokuwiki/issues](https://github.com/YunoHost-Apps/dokuwiki_ynh/issues)
+
+------
+
+### Sources
+
+¹ [wikipedia.org - Dokuwiki (fr)](https://fr.wikipedia.org/wiki/DokuWiki)

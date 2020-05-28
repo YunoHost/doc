@@ -89,7 +89,7 @@ Each YunoHost application has an id registered in the application manifest.
 This identifier must be unique between each application packet.
 It is therefore recommended to verify its availability by consulting the list of applications referenced in the known applications repositories (official, community, internetcube).
 
-In addition, the identifier must respect the regular expression `^[a-z1-9]((_|-)?[A-z1-9])+$`. 
+In addition, the identifier must respect the regular expression `^[a-z0-9]((_|-)?[A-z0-9])+$`. 
 In other words, it must respect the following rules:
 * be in lowercase
 * start with a letter or number
@@ -119,9 +119,9 @@ For the `apps.json` list maintained by the project team, registration is on [the
 ##### Indicate the license associated with the package | draft | AUTO | WORKING |
 The license of the packet must be specified in a `LICENSE` file at the root of the packet. Be careful not to confuse with the license of the application that will be installed whose acronym is to be entered in the `license` field of the manifest.
 
-The application lists official.json and community.json only accept packages with a free license, as well as the license for the contained application. Some free applications require non-free dependencies (example: mp3, drivers, etc.). In this case, you should add `&dep-non-free` to the acronym and if possible give details in the README.md of the package, in this case the integration will be accepted on a case-by-case basis.
+The application list apps.json only accept packages with a free license, as well as the license for the contained application. Some free applications require non-free dependencies (example: mp3, drivers, etc.). In this case, you should add `&dep-non-free` to the acronym and if possible give details in the README.md of the package, in this case the integration will be accepted on a case-by-case basis.
 
-**NB:** Apps not included in offical lists may still be installed: either manually with the URL to the app, or in a more practical way using non-official lists (which can be created and maintained by the community).
+**NB:** Apps not included in apps.json lists may still be installed: either manually with the URL to the app, or in a more practical way using non-official lists (which can be created and maintained by the community).
 
 In the future, YunoHost will probably display details about the license of the application. To achieve this, the acronym must be the one from this [list of licenses listed in the SPDX](https://spdx.org/licenses/) (if there are 2 acronyms, the one containing the version number). For consistency, the case must be respected.
 

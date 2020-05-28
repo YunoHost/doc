@@ -65,7 +65,7 @@ you must request a domain reset on the forum
 If you wish to use a different automatic domain, you first have to remove
 your present domain registration. This is done in 3 steps:
 
-1. Remove the domain from your instance (via webadmin or the `yunohost doamin remove` CLI). 
+1. Remove the domain from your instance (via webadmin or the `yunohost domain remove` CLI). 
 **/!\ Caution: this will remove any app installed on this domain, along with its data.**
 2. Ask for registration removal [in the dedicated forum thread](https://forum.yunohost.org/t/nohost-domain-recovery/442).
 3. Remove automatic domain configuration files on your server, via CLI only : `sudo rm /etc/cron.d/yunohost-dyndns && sudo rm -r /etc/yunohost/dyndns`

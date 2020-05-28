@@ -35,10 +35,6 @@ Vous pouvez également consulter les documentations spécifiques à ces différe
 
 **Attention** : Si vous choisissez ce mode de fonctionnement, vous aurez plus de flexibilité, mais rien ne sera automatique. Par exemple si vous souhaitez utiliser `webmail.mon-serveur.org`, vous devrez l’ajouter manuellement chez votre registrar.
 
-3. Votre instance YunoHost possède un service DNS, ce qui veut dire qu’il configure automatiquement ses enregistrements DNS, et qu’il est possible de lui en déléguer la gestion. Pour ce faire, vous devez indiquer au **registrar** que c’est votre instance YunoHost qui est le serveur DNS de votre nom de domaine en créant un enregistrement glue (souvent appelé **glue record**) pointant vers l’IP de votre instance YunoHost.
-<br><br>**Attention** : Si vous choisissez ce mode de fonctionnement, toutes les configurations seront automatiques, vous disposerez d’une grande flexibilité, mais la perte de votre serveur entraînera potentiellement beaucoup d’ennuis. **Choisissez cette méthode si vous êtes sûr de vous.**
+3. (Avancé, pas 100% supporté...) Votre instance YunoHost possède un service DNS, ce qui veut dire qu’il configure automatiquement ses enregistrements DNS, et qu’il est possible de lui en déléguer la gestion. Pour ce faire, vous devez indiquer au **registrar** que c’est votre instance YunoHost qui est le serveur DNS de votre nom de domaine en créant un enregistrement glue (souvent appelé **glue record**) pointant vers l’IP de votre instance YunoHost.
+<br><br>**Attention** : Si vous choisissez ce mode de fonctionnement, toutes les configurations seront automatiques, vous disposerez d’une grande flexibilité, mais la perte de votre serveur entraînera potentiellement beaucoup d’ennuis. **Choisissez cette méthode seulement si vous êtes à l'aise et comprenez les conséquences**
 
-4. Une fois votre service DNS opérationnel, votre serveur peut l’utiliser mais il faut le configurer, c’est le [résolveur DNS](/dns_resolver).
-
-### IP Dynamique
-Si l’adresse IP publique change, suivez ce [tutoriel](/dns_dynamicip).

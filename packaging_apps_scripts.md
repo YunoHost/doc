@@ -45,7 +45,7 @@ For example, if in the manifest we have a question like this
         "de": "Wählen Sie bitte einen Domain für OpenSondage"
     },
     "example": "domain.org"
-},
+}
 ```
 
 The name of the question is `domain` so in the script we can access it with YNH_APP_ARG_DOMAIN. The usage is to create a shorter name in the script like this:

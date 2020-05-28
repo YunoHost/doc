@@ -294,7 +294,6 @@ Cette partie liste les kits de droits d’administration pour les différents gr
 - Rencontres à des évènements.
 - Réunions hebdomadaires Mumble.
 - [Forum](https://forum.yunohost.org).
-- Listes de diffusion : [contrib](https://list.yunohost.org/cgi-bin/mailman/listinfo/contrib) et [apps](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps)
 - [Bugtracker Redmine](https://dev.yunohost.org).
 - Forge git pour la review de code : [YunoHost](https://github.com/YunoHost) [YunoHost-Apps](https://github.com/YunoHost-Apps).
 - [Salons de discussions XMPP](https://yunohost.org/#/chat_rooms_fr)

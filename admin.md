@@ -10,28 +10,3 @@ You can access your administrator web interface at this address: https://example
 <img src="/images/webadmin.png" style="max-width:100%;">
 </div>
 
-
-### Reset admin password
-
-To reset the admin password (as root) :
-
-```bash
-$ yunohost-reset-ldap-password
-```
-
-A temporary password will be created, which you can use to define the new password.
-
-
-### How to move application folder
-
-To change an application folder, only a few commands are needed: move content, create a symlink and set access rights.
-
-Sample with WordPress:
-```bash
-# Move wordpress folder to an external hard drive
-$ sudo  mv /var/www/wordpress /media/externalharddrive 
-# Symbolic link
-$ sudo   ln -s /media/externalharddrive/wordpress /var/www/wordpress
-# Folder must belong to www-data
-$ sudo  chown -R www-data:www-data /media/externalharddrive/wordpress
-```

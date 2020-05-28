@@ -47,7 +47,7 @@ Our support relies on contributors like you. Just come to [the support chatroom]
 You can involve in the YunoHost's development regardless of your skill.    
 Sysadmins, web developers, designers and pythonists <a href="https://github.com/YunoHost" target="_blank">are welcome</a>!
 <br>
-Learn [how to contribute](/dev), and join us on the [development chat room](xmpp:dev@conference.yunohost.org?join) and the <a href="http://list.yunohost.org/cgi-bin/mailman/listinfo/contrib">mailing-list</a>.
+Learn [how to contribute](/dev), and join us on the [development chat room](xmpp:dev@conference.yunohost.org?join).
 </div>
 </div>
 

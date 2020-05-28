@@ -3,7 +3,7 @@ Qu'est-ce que YunoHost ?
 
 <img src="/images/YunoHost_logo_vertical.png" width=400>
 
-YunoHost est un **système d’exploitation** qui vise à simplifier autant que possible l'administration d'un **serveur** pour ainsi démocratiser [l’auto-hébergement](/selfhosting) tout en restant fiable, sécurisé, éthique et léger. C'est un projet de logiciel libre maintenu exclusivement par des bénévoles. Techniquement, il peut être vu comme une distribution basé sur [Debian GNU/Linux](https://debian.org) et peut s'installer sur [de nombreux types de matériel](/install).
+YunoHost est un **système d’exploitation** qui vise à simplifier autant que possible l'administration d'un **serveur** pour ainsi démocratiser [l’auto-hébergement](/selfhosting) tout en restant fiable, sécurisé, éthique et léger. C'est un projet de logiciel libre maintenu exclusivement par des bénévoles. Techniquement, il peut être vu comme une distribution basée sur [Debian GNU/Linux](https://debian.org) et peut s'installer sur [de nombreux types de matériel](/install).
 
 Fonctionnalités
 ---------------
@@ -17,8 +17,8 @@ Fonctionnalités
 - <img src="/images/icon-door.png" width=32 style="margin-right:5px"> connexion simultanée à toutes les apps via un **portail utilisateur** <small>(nginx, SSOwat)</small> ;
 - <img src="/images/icon-mail.png" width=32 style="margin-right:5px"> fourni avec un **serveur mail complet** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
 - <img src="/images/icon-messaging.png" width=32 style="margin-right:5px"> ... ainsi qu'un **serveur de messagerie instantanée** <small>(XMPP)</small> ;
-- <img src="/images/icon-lock.png" width=32 style="margin-right:5px"> gères les **certificats SSL** <small>(basé sur Let's Encrypt)</small> ;
-- <img src="/images/icon-shield.png" width=32 style="margin-right:5px"> ... et des **systèmes de sécurité** <small>(fail2ban, yunohost-firewall)</small> ;
+- <img src="/images/icon-lock.png" width=32 style="margin-right:5px"> gère les **certificats SSL** <small>(basé sur Let's Encrypt)</small> ;
+- <img src="/images/icon-shield.png" width=32 style="margin-right:5px"> … et des **systèmes de sécurité** <small>(fail2ban, yunohost-firewall)</small> ;
 
 Origine
 -------

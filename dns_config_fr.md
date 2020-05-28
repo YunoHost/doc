@@ -44,6 +44,7 @@ _xmpp-server._tcp 3600 IN SRV 0 5 5269 votre.domaine.tld.
 muc 3600 IN CNAME @
 pubsub 3600 IN CNAME @
 vjud 3600 IN CNAME @
+xmpp-upload 3600 IN CNAME @
 
 #
 # Mail (MX, SPF, DKIM et DMARC)
@@ -68,6 +69,7 @@ suivante :
 |  CNAME  |   muc                  |  `@`                                                   |
 |  CNAME  |   pubsub               |  `@`                                                   |
 |  CNAME  |   vjud                 |  `@`                                                   |
+|  CNAME  |   xmpp-upload          |  `@`                                                   |
 | **MX**  | **@**                  |  `votre.domaine.tld.`     (et priorité: 10)            |
 |   TXT   |   @                    |  `"v=spf1 a mx ip4:111.222.33.44 -all"`                |
 |   TXT   |  mail._domainkey       |  `"v=DKIM1; k=rsa; p=uneGrannnndeClef"`                |
@@ -81,3 +83,7 @@ suivante :
 - Les valeurs montrées ici sont des valeurs d'exemple ! Référez-vous à la configuration générée chez vous pour savoir quelles valeurs utiliser ;
 - Nous recommandons un [TTL](https://fr.wikipedia.org/wiki/Time_to_Live#Le_Time_to_Live_dans_le_DNS) de 3600 (1 heure). Mais vous pouvez utiliser une autre valeur si vous savez ce que vous faîtes ;
 - Ne mettez pas d'enregistrement IPv6 si vous n'êtes pas certains que l'IPv6 fonctionne sur votre serveur ! Vous aurez des problèmes avec Let's Encrypt si ce n'est pas le cas.
+
+### IP Dynamique
+
+Si votre adresse IP publique change constamment, suivez ce [tutoriel](/dns_dynamicip).

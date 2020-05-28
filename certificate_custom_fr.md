@@ -1,5 +1,10 @@
 **Note :** depuis la version 2.5, Yunohost intègre la gestion automatisée de certificats Let's Encrypt. Vous pouvez donc facilement et gratuitement [installer un certificat Let's Encrypt](/certificate). Le document suivant décrit la méthodologie pour installer un certificat, payant, d'une autre autorité de certification (**Gandi**, **RapidSSL**, **StartSSL**, **Cacert**).
 
+Quelques changements ont eu lieu qui impactent les procédures indiquées ci dessous :
+
+* le groupe metronome n'est plus utilisé directement mais ssl-cert
+* un repertoire /etc/yunohost/certs/DOMAIN.LTD-history/stamp est utilisé pour conserver chaque configuration créée et un lien symbolique est créé dessus.
+
 ### Ajout d’un certificat signé par une autorité (autre que Let's Encrypt)
 
 Après création du certificat auprès de votre autorité d’enregistrement, vous devez être en possession d’une clé privée, le fichier key et d’un certificat public, le fichier crt.

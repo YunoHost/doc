@@ -11,6 +11,7 @@ a registrar), you should manually configure your domain on your registrar's
 interface.
 
 ## Recommended DNS configuration
+
 NB: Examples here use the placeholder `your.domain.tld`, you have to replace it with your real domain, such as `www.yunohost.org`.
 
 YunoHost provides a recommended DNS configuration, available via :
@@ -42,6 +43,7 @@ _xmpp-server._tcp 3600 IN SRV 0 5 5269 your.domain.tld.
 muc 3600 IN CNAME @
 pubsub 3600 IN CNAME @
 vjud 3600 IN CNAME @
+xmpp-upload 3600 IN CNAME @
 
 #
 # Mail (MX, SPF, DKIM and DMARC)
@@ -66,6 +68,7 @@ Though it might be easier to understand it if displayed like this:
 |  CNAME  |   muc                  |  `@`                                                  |
 |  CNAME  |   pubsub               |  `@`                                                  |
 |  CNAME  |   vjud                 |  `@`                                                  |
+|  CNAME  |   xmpp-upload          |  `@`                                                  |
 | **MX**  | **@**                  |  `your.domain.tld.`     (and priority: 10)            |
 |   TXT   |   @                    |  `"v=spf1 a mx ip4:111.222.33.44 -all"`               |
 |   TXT   |  mail._domainkey       |  `"v=DKIM1; k=rsa; p=someHuuuuuuugeKey"`              |
@@ -79,3 +82,7 @@ Though it might be easier to understand it if displayed like this:
 - These are example values ! See your generated conf for the actual values you should use ;
 - We recommend a [TTL](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) of 3600 (1 hour). But you can use something else if you know what you're doing ;
 - Don't put an IPv6 record if you're not sure IPv6 really works on your server! You might have issues with Let's Encrypt if it doesn't.
+
+### Dynamic IP
+
+If your global IP address is constantly changing, follow this [tutorial](/dns_dynamicip).

@@ -1,4 +1,10 @@
-#<img src="/images/roundcube.png">Roundcube - Webmail libre
+# <img src="/images/roundcube_logo.svg" height="80px" alt="logo de roundcube"> Roundcube
+
+[![Install roundcube with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=roundcube) [![Integration level](https://dash.yunohost.org/integration/roundcube.svg)](https://dash.yunohost.org/appci/app/roundcube)
+
+### Index
+
+- [Liens utiles](#liens-utiles)
 
 Roundcube est un client web de courrier électronique libre ou aussi appelé un webmail.
 
@@ -15,5 +21,12 @@ Notez que si Baïkal ou ownCloud sont déjà installés, les carnets d'adresses 
 Si vous avez installé ownCloud après, voici comment ajouter vos carnets d'adresses :
 
 * Rendez-vous dans la section « Contacts » de votre espace ownCloud et cliquez sur l’icône représentant une roue dentée en bas à gauche. Ensuite, cliquez sur l’icône « Lien CardDAV » et copiez l’URL qui s’affiche en dessous.
-
 * Rendez-vous ensuite dans la section CardDAV des paramètres de Roundcube et entrez « ownCloud » dans le champ « Label », collez l’URL que vous venez de copier et enfin entrez votre nom d’utilisateur et votre mot de passe. Vos contacts sont désormais synchronisés !
+
+## Liens utiles
+
++ Site web : [roundcube.net](https://roundcube.net/)
++ Documentation officielle : [github.com/roundcube/roundcubemail/wiki](https://github.com/roundcube/roundcubemail/wiki)
++ Démonstration : [Démo](https://demo.yunohost.org/webmail/)
++ Dépôt logiciel de l'application : [github.com - YunoHost-Apps/roundcube](https://github.com/YunoHost-Apps/roundcube_ynh)
++ Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/roundcube/issues](https://github.com/YunoHost-Apps/roundcube_ynh/issues)

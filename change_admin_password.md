@@ -1,20 +1,20 @@
-#Change administration password 
+# Changing the administration password
 
-For security reasons you may have to change your administration password. To achieve this, 2 different methods exists.
+You may want to change your administrator password for security reason or because you forgot it.
 
-<div class="alert alert-warning">
-<span class="glyphicon glyphicon-warning-sign"></span>
-The current administration password is **required** to perform this task.
-</div>
+If you forgot your password or are unable to connect using the `admin` user, you
+may still be able to change the password if you're able to login as `root` on
+SSH (from your local network! or using a rescue mode if you're on a VPS...)
 
-##Web administration
+## Using the web administration interface
 
 First, connect to your [web administration](/admin).
 
-Then go to `Tools` > `Change administration password`.
+Then go to Tools > Change administration password.
 
 
-##Command line
+## Using the command line interface
+
 
 ```bash
 yunohost tools adminpw
