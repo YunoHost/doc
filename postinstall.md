@@ -2,6 +2,8 @@
 
 The step called "**post-installation**" is actually the initial configuration of YunoHost. It has to be done just after the installation of the system itself.
 
+NB: if you are in the process of restoring a server from scratch **and** you have a yunohost-made backup, you must skip this process and follow through with the "restoring during the postinstall" step, in the [backup](/backup) page.
+
 ### From the web interface
 
 You can perform the post-installation with the web interface by entering in your browser :
