@@ -100,6 +100,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Omeka S](https://omeka.org/s/) / [github](https://github.com/omeka/omeka-s)
 - [OpenBazaar](https://openbazaar.org) / [github](https://github.com/openbazaar)
 - [OpenCart](https://www.opencart.com) / [github](https://github.com/opencart/opencart)
+- [OpenEats](https://open-eats.github.io/) / [github](https://github.com/open-eats/OpenEats)
 - [openHAB](https://www.openhab.org/) - Smart home platform. / [github](https://github.com/openhab)
 - [OpenProject](https://github.com/opf/openproject)
 - [OpenSourceBilling](https://github.com/vteams/open-source-billing)
