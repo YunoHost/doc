@@ -169,7 +169,7 @@ name = "Leed configuration"
 
 Will be available under this name in the config script:
 
-```
+```bash
 YNH_CONFIG_MAIN_IS_PUBLIC_IS_PUBLIC
 ```
 

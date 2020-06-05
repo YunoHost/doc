@@ -11,7 +11,7 @@
 
 Les extensions rendent Piwigo facilement personnalisable. Cerise sur le gâteau, Piwigo est libre et gratuit.
 
-En plus des [fonctionnalités principales](http://piwigo.org/basics/features) de Piwigo, ce paquet propose également :
+En plus des [fonctionnalités principales](https://fr.piwigo.org/fonctionnalites) de Piwigo, ce paquet propose également :
 
 * une intégration avec le système de gestion des utilisateurs et le SSO de Yunohost :
    * installation privée : limitée aux utilisateurs de YunoHost
@@ -31,5 +31,7 @@ En plus des [fonctionnalités principales](http://piwigo.org/basics/features) de
 + Dépôt logiciel de l'application : [ (Dépôt logiciel de l'application :)
 + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/piwigo](https://github.com/YunoHost-Apps/piwigo_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/piwigo/issues](https://github.com/YunoHost-Apps/piwigo_ynh/issues)
+
+
 
 

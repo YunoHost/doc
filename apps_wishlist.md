@@ -1,8 +1,3 @@
-<div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">La page demandée n'est pour le moment pas disponible en français. Voici à la place la version en anglais. Si vous souhaitez commencer une traduction de cette page, vous pouvez vous rendre sur [cette page](https://yunohost.org/#/apps_wishlist_fr).</div>
-
-<div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">La page demandée n'est pour le moment pas disponible en français. Voici à la place la version en anglais. Si vous souhaitez commencer une traduction de cette page, vous pouvez vous rendre sur [cette page](https://yunohost.org/#/apps_wishlist_fr).</div>
-
-
 # Apps wishlist
 
 <div class="alert alert-info">Before to add an app in wishlist please check your app is not already in apps list: see the <a href="/apps">apps list</a></div>
@@ -57,6 +52,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Gollum](https://github.com/gollum/gollum)
 - [Goploader](https://github.com/Depado/goploader)
 - [Granary](https://github.com/snarfed/granary)
+- [Graphhopper](https://www.graphhopper.com/) / [github](https://github.com/graphhopper/graphhopper#get-started) or other routing service that can be plugged to [Nextcloud Maps](https://apps.nextcloud.com/apps/maps), e.g. OSRM (see below)
 - [Guacamole](http://guacamole.apache.org/)
 - [Habitica](https://habitica.com/) / [github](https://github.com/HabitRPG/habitica)
 - [HackMD CE](https://github.com/hackmdio/hackmd)
@@ -107,6 +103,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [openHAB](https://www.openhab.org/) - Smart home platform. / [github](https://github.com/openhab)
 - [OpenProject](https://github.com/opf/openproject)
 - [OpenSourceBilling](https://github.com/vteams/open-source-billing)
+- [OSRM](http://project-osrm.org/) / [github](https://github.com/Project-OSRM/osrm-backend/#quick-start) or other routing service that can be plugged to [Nextcloud Maps](https://apps.nextcloud.com/apps/maps), e.g. Graphhopper (see above)
 - [OX Open-Xchange](https://www.open-xchange.com) Linux groupware solution / [github](https://github.com/open-xchange/)
 - [Paperless](https://github.com/danielquinn/paperless)
 - [Paperwork](http://paperwork.rocks)
@@ -136,6 +133,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [SocialHome](https://github.com/jaywink/socialhome) (Socialhome is best described as a federated personal profile with social networking functionality) (https://socialhome.network)
 - [smokeping](https://packages.debian.org/buster/smokeping)   / [github](https://github.com/oetiker/SmokePing)
 - [Sonarr](https://sonarr.tv) / [github](https://github.com/Sonarr/Sonarr)
+- [Spacedeck](https://github.com/spacedeck) (A web based, real time, collaborative whiteboard application with rich media support.)
 - [Stackedit](https://stackedit.io) / [github](https://github.com/benweet/stackedit)
 - [StandardNotes](https://standardnotes.org) (a clean, simple, E2E-encrypted notes app) -- specifically, the server-side [StandardFile](https://standardfile.org) portion / [github](https://github.com/standardnotes/web)
 - [Streisand](https://github.com/jlund/streisand)
@@ -155,11 +153,11 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Volumio](https://volumio.org) / [github](https://github.com/volumio)
 - [WebODF](http://webodf.org) / [github](https://github.com/webodf/WebODF)
 - [Webhook.site](https://docs.webhook.site/) / [github](https://github.com/fredsted/webhook.site)
+- [Whoogle](https://github.com/benbusby/whoogle-search) - Self-hosted, ad-free, privacy-respecting Google metasearch engine.
 - [Wireguard](https://www.wireguard.com/) / [git](https://git.zx2c4.com/WireGuard/)
 - [Xibo](https://github.com/xibosignage) - A FLOSS digital signage solution (CMS?)
 - [Xonotic](http://xonotic.org) / [gitlab](https://gitlab.com/xonotic)
 - [Zammad](https://github.com/zammad/zammad)
-- [ZeroTier](https://github.com/zerotier/ZeroTierOne)
 - [Zola](https://www.getzola.org/) - A static site generator in one binary
 - [Zoneminder](https://github.com/ZoneMinder/zoneminder)
 - [Zulip](https://zulipchat.com/) / [github](https://github.com/zulip/zulip)

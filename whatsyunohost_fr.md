@@ -17,8 +17,8 @@ Fonctionnalités
 - <img src="/images/icon-door.png" width=32 style="margin-right:5px"> connexion simultanée à toutes les apps via un **portail utilisateur** <small>(nginx, SSOwat)</small> ;
 - <img src="/images/icon-mail.png" width=32 style="margin-right:5px"> fourni avec un **serveur mail complet** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
 - <img src="/images/icon-messaging.png" width=32 style="margin-right:5px"> ... ainsi qu'un **serveur de messagerie instantanée** <small>(XMPP)</small> ;
-- <img src="/images/icon-lock.png" width=32 style="margin-right:5px"> gères les **certificats SSL** <small>(basé sur Let's Encrypt)</small> ;
-- <img src="/images/icon-shield.png" width=32 style="margin-right:5px"> ... et des **systèmes de sécurité** <small>(fail2ban, yunohost-firewall)</small> ;
+- <img src="/images/icon-lock.png" width=32 style="margin-right:5px"> gère les **certificats SSL** <small>(basé sur Let's Encrypt)</small> ;
+- <img src="/images/icon-shield.png" width=32 style="margin-right:5px"> … et des **systèmes de sécurité** <small>(fail2ban, yunohost-firewall)</small> ;
 
 Origine
 -------

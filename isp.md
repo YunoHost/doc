@@ -14,6 +14,7 @@ A list of French and Belgian ISPs is available on the [french page](/isp).
 | Cox | Multiple | Yes | No. Only for business class customer. | No | No | Yes, as a business class customer |
 | Charter | Multiple | Yes | No. Only for business class customer. | No | No | Yes, as a business class customer |
 | DSLExtreme | Multiple | Yes | Yes | No | No | Yes, extra charge. |
+| AT&T| Multiple | Yes | No. Only for business class customer. | unknown. | unknown. | unknown. |
 
 ### UK
 | Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |

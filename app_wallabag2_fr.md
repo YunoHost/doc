@@ -28,6 +28,6 @@ En plus des fonctionnalités principales de Wallabag, ce paquet propose égaleme
 
 ### Mettre à niveau depuis la v1.x
 
-La mise à niveau depuis le paquet Yunohost de [Wallabag v1](/app_wallabag) demande une opération manuelle, c'est pourquoi un nouveau paquet est fourni. Pour le processus de migration, merci de vous référer à [la documentation officielle 
+La mise à niveau depuis le paquet Yunohost de Wallabag v1 demande une opération manuelle, c'est pourquoi un nouveau paquet est fourni. Pour le processus de migration, merci de vous référer à [la documentation officielle 
 de Wallabag](https://doc.wallabag.org/fr/user/import/wallabagv1.html).
 
