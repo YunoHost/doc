@@ -24,8 +24,7 @@ subdomains.
 Even if YunoHost allows the installation of applications on subdomains (for
 example, having the Owncloud application accessible from the
 `cloud.mydomain.org` address), this feature is not allowed with the `nohost.me`
-and `noho.st` domains and it is not possible to have a subdomain such as `my
-application.mydomain.nohost.me`.
+and `noho.st` domains and it is not possible to have a subdomain such as `my.application.mydomain.nohost.me`.
 
 To be able to enjoy applications that can only be installed at the root of a
 domain name, you must have your own domain name.
