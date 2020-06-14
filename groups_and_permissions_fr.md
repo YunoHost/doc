@@ -174,7 +174,7 @@ La webadmin émettra un avertissement si vous définissez une permission qui est
 Notes aux packageurs d'applications
 ------------------------
 
-L'installation d'une application crée l'autorisation `app.main` avec` all_users` autorisée par défaut.
+L'installation d'une application crée l'autorisation `app.main` avec `all_users` autorisée par défaut.
 
 Si vous souhaitez rendre l'application accessible au public, au lieu de l'ancien mécanisme `unprotected_urls`, vous devez donner accès au groupe spécial `visitors` :
 
@@ -188,20 +188,20 @@ Si vous souhaitez créer une autorisation personnalisée pour votre application 
 ynh_permission_create --permission "admin" --url "/admin" --allowed "$admin_user"
 ```
 
-Vous n'avez pas besoin de supprimer les autorisations ou de les sauvegarder / restaurer car elles sont gérées par le noyau de YunoHost.
+Vous n'avez pas besoin de supprimer les autorisations ou de les sauvegarder / restaurer car elles sont gérées par le core de YunoHost.
 
 ### Migration hors de la gestion des autorisations héritées
 
-Lors de la migration / correction d'une application utilisant toujours le système d'autorisations hérité, il faut comprendre que les accès doivent maintenant être gérés par des fonctionnalités du noyau, en dehors des scripts d'application !
+Lors de la migration / correction d'une application utilisant toujours le système d'autorisations hérité, il faut comprendre que les accès doivent maintenant être gérés par des fonctionnalités du core, en dehors des scripts d'application !
 
-Les scripts d'application ne devraient :
-- le cas échéant, pendant le script d'installation, initialisez l'autorisation principale de l'application en tant que public (`visitors`) ou privé (`all_users`) ou uniquement accessible à des groupes / utilisateurs spécifiques ;
-- le cas échéant, créez et initialisez toute autre autorisation spécifique (par exemple, sur une interface d'administration) dans le script d'installation (et *sans doute* dans certaines migrations se produisant dans le script de mise à niveau).
+Les scripts d'application devraient seulement :
+- le cas échéant, pendant le script d'installation, initialiser l'autorisation principale de l'application en tant que public (`visitors`) ou privé (`all_users`) ou uniquement accessible à des groupes / utilisateurs spécifiques ;
+- le cas échéant, créer et initialiser toute autre autorisation spécifique (par exemple, sur une interface d'administration) dans le script d'installation (et *sans doute* dans certaines migrations se produisant dans le script de mise à niveau).
 
-Les scripts d'applications ne devraient absolument **PAS** altérer les accès aux applications déjà existants (y compris les paramètres `unprotected` / `skipped_uris`), car *cela réinitialiserait toutes les règles d'accès définie par l'administrateur* !
+Les scripts d'applications ne devraient absolument **PAS** altérer les accès aux applications déjà existantes (y compris les paramètres `unprotected` / `skipped_uris`), car cela réinitialiserait toutes les règles d'accès définies par l'administrateur !
 
 Lors de la migration hors de l'autorisation héritée, vous devez :
-- supprimer toute gestion du paramètre de type `$is_public` ou `$admin_user`, sauf pour toute question manifeste destinée à *initialiser* l'application en tant qu'autorisations publiques / privées ou spécifiques ;
+- supprimer toute gestion du paramètre de type `$is_public` ou `$admin_user`, sauf pour toute question manifeste destinée à *initialiser* l'application avec des autorisations publiques / privées ou spécifiques ;
 - supprimer toute gestion des paramètres `skipped_`, `unprotected_` et `protected_uris` (et `_regex`) qui sont désormais considérés comme obsolètes et dépréciés. (NB : vous devez **les supprimer explicitement dans le script upgrade**). Au lieu de cela, vous devriez désormais vous fier aux nouveaux helpers `ynh_permission_ *`. Si vous sentez que vous avez encore besoin de les utiliser, veuillez contacter l'équipe core pour pouvoir être assisté ;
 Par exemple, dans le script *upgrade*, si vous avez utilisé la clé `protected_uris` auparavant, vous pouvez utiliser ce code dans la section `DOWNWARD COMPATIBILITY` :
 
@@ -214,8 +214,8 @@ if [ ! -z "$protected_uris" ]; then
 fi
 ```
 
-- Supprimez tout appel à `yunohost app addaccess` et les actions similaires qui sont désormais obsolètes et dépréciés.
-- Si votre application utilise LDAP et prend en charge le filtre, utilisez le filtre `(&(objectClass=posixAccount)(permission=cn=YOUR_APP.main,ou=permission,dc=yunohost,dc=org))'` pour autoriser les utilisateurs qui avait cette permission. (On trouvera une documentation sur LDAP [ici](https://moulinette.readthedocs.io/en/latest/ldap.html))
+- Supprimez tout appel à `yunohost app addaccess` et aux actions similaires qui sont désormais obsolètes et dépréciés.
+- Si votre application utilise LDAP et prend en charge le filtre, utilisez le filtre `(&(objectClass=posixAccount)(permission=cn=YOUR_APP.main,ou=permission,dc=yunohost,dc=org))'` pour autoriser les utilisateurs ayant cette permission. (On trouvera une documentation sur LDAP [ici](https://moulinette.readthedocs.io/en/latest/ldap.html))
 
 Voici un exemple de migration de code vers le nouveau système d'autorisation : [exemple](https://github.com/YunoHost/example_ynh/pull/111/files)
 
@@ -249,9 +249,9 @@ fi
 
 Dans cet exemple, si l'application est publique, le groupe `visitors` a accès à l'autorisation `create poll`, sinon le groupe est supprimé de cette autorisation.
 
-Créez ensuite deux fichiers dans le répertoire `hooks` à la racine du dépôt git de l'application :` post_app_addaccess` et `post_app_removeaccess`. Dans ces hooks, vous supprimerez ou rajouterez la protection contre les regex si le groupe `visitors` est ajouté ou supprimé de cette autorisation :
+Créez ensuite deux fichiers dans le répertoire `hooks` à la racine du dépôt git de l'application : `post_app_addaccess` et `post_app_removeaccess`. Dans ces hooks, vous supprimerez ou rajouterez la protection contre les regex si le groupe `visitors` est ajouté ou supprimé de cette autorisation :
 
-`post_app_addaccess` :
+`post_app_addaccess`
 
 ```bash
 #!/bin/bash
@@ -322,6 +322,6 @@ fi
 
 N'oubliez pas de remplacer `__APP__` pendant le script *install* / *upgrade*.
 
-Voici quelques applications qui utilisent ce cas spécifique : [Lutim](https://github.com/YunoHost-Apps/lutim_ynh/pull/44/files) et [Opensondage](https://github.com/YunoHost-Apps/opensondage_ynh/pull/59/files)
+Voici quelques applications qui utilisent ce cas spécifique : [Lutim](https://github.com/YunoHost-Apps/lutim_ynh/pull/44/files) et [OpenSondage](https://github.com/YunoHost-Apps/opensondage_ynh/pull/59/files)
 
 Si vous avez des questions, veuillez contacter un des membres du groupe apps.
