@@ -1,6 +1,6 @@
 # <img src="/images/codimd_logo.png" height="80px" alt="logo de CodiMD"> CodiMD
 
-[![Install CodiMD with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=codimd) [![Integration level](https://dash.yunohost.org/integration/codimd.svg)](https://dash.yunohost.org/appci/app/codimd)
+[![Installer CodiMD avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=codimd) [![Integration level](https://dash.yunohost.org/integration/codimd.svg)](https://dash.yunohost.org/appci/app/codimd)
 
 ### Index
 
@@ -13,6 +13,6 @@ Différents niveaux de permission permettent de choisir qui peut lire ou éditer
 ## Liens utiles
 
 + Démo officielle : [https://demo.codimd.org/](https://demo.codimd.org/)
-+ Documentation officielle : [https://demo.codimd.org/s/features](https://demo.codimd.org/s/features)
++ Documentation officielle : [github.com/codimd](https://github.com/codimd/server/tree/master/docs/)
 + Dépôt logiciel de l’application : [github.com - YunoHost-Apps/codimd](https://github.com/YunoHost-Apps/codimd_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/codimd/issues](https://github.com/YunoHost-Apps/codimd_ynh/issues)
