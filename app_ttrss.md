@@ -1,9 +1,15 @@
-# <img src="/images/ttrss.png">Tiny Tiny RSS
+# <img src="/images/ttrss.png" width="80px" alt="logo de Tiny Tiny RSS "> Tiny Tiny RSS
+
+[![Install Tiny Tiny RSS with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=ttrss) [![Integration level](https://dash.yunohost.org/integration/ttrss.svg)](https://dash.yunohost.org/appci/app/ttrss)
+
+### Index
+
+- [Liens utiles](#liens-utiles)
 
 Tiny Tiny RSS is a news feed reader using RSS and atom protocols.
 
 ### Exporting/importing feeds
-TTRSS allows you to save your feeds in opml format.
+Tiny Tiny RSS allows you to save your feeds in opml format.
 In order to do so, go to Actions -> Configuration -> feed tab -> OPML section -> Export/Import OPML.
 
 ### Android Client
@@ -12,9 +18,14 @@ You can read your feeds on Android using ttrss-reader application:
 
 **[ttrss-reader](https://f-droid.org/packages/org.ttrssreader/)**
 
-To use it, you need to go to Actions -> Configuration, in TTRSS web interface and select "Activate API".
-Then, in your android ttrss-reader, fill the TTRSS server adress: "https://yourdomain.org/ttrss", username, password (no need to use HTTP authentification).
+To use it, you need to go to Actions -> Configuration, in Tiny Tiny RSS web interface and select "Activate API".
+Then, in your android ttrss-reader, fill the Tiny Tiny RSS server adress: https://yourdomain.org/ttrss, username, password (no need to use HTTP authentification).
 
-**Note** : you may need to uninstall and reinstall the TTRSS application through the Yunohost admin panel in order to be able to connect.
+**Note**: you may need to uninstall and reinstall the Tiny Tiny RSS application through the Yunohost admin panel in order to be able to connect.
 
-* [Tiny Tiny RSS Website](https://git.tt-rss.org/git/tt-rss/wiki)
+## Useful links
+
+ + Website: [git.tt-rss.org/git/tt-rss/wiki](https://git.tt-rss.org/git/tt-rss/wiki)
+ + Official documentation: (login as `demo`, `demo`): [srv.tt-rss.org/tt-rss/](https://srv.tt-rss.org/tt-rss/)
+ + Application software repository: [github.com - YunoHost-Apps/lufi](https://github.com/YunoHost-Apps/ttrss_ynh)
+ + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/lufi/issues](https://github.com/YunoHost-Apps/ttrss_ynh/issues)
