@@ -1,6 +1,6 @@
 # <img src="/images/lufi_logo.svg" width="80px" alt="Lufi's logo"> Lufi
 
-[![Install lufi with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=lufi) [![Integration level](https://dash.yunohost.org/integration/lufi.svg)](https://dash.yunohost.org/appci/app/lufi)
+[![Install Lufi with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=lufi) [![Integration level](https://dash.yunohost.org/integration/lufi.svg)](https://dash.yunohost.org/appci/app/lufi)
 
 ### Index
 
@@ -13,7 +13,7 @@ The administrator can only see the file name, size and mime type (file type: vid
 ## Useful links
 
  + Website: [Framagit.org/luc/lufi](https://framagit.org/luc/lufi)
- + Demonstration : [demo.lufi.io](https://demo.lufi.io/)
- + Official documentation : [Framagit.org - fiat-tux](https://framagit.org/fiat-tux/hat-softwares/lufi/-/wikis/home)
- + Application software repository: : [github.com - YunoHost-Apps/lufi](https://github.com/YunoHost-Apps/lufi_ynh)
+ + Demonstration: [demo.lufi.io](https://demo.lufi.io/)
+ + Official documentation: [Framagit.org - fiat-tux](https://framagit.org/fiat-tux/hat-softwares/lufi/-/wikis/home)
+ + Application software repository: [github.com - YunoHost-Apps/lufi](https://github.com/YunoHost-Apps/lufi_ynh)
  + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/lufi/issues](https://github.com/YunoHost-Apps/lufi_ynh/issues)
