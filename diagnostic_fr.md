@@ -2,7 +2,7 @@
 
 Pour vérifier que tous les aspects critiques de votre serveur sont correctement
 configurés, il est recommandé d'utiliser le système de diagnostic disponible
-dans la webadmin de YunoHost. (Cette fonctionnalité a été ajouté dans la version
+dans la webadmin de YunoHost. (Cette fonctionnalité a été ajoutée dans la version
 3.8)
 
 TODO: elaborer le fait que le diagnostique tourne périodiquement, qu'un email
