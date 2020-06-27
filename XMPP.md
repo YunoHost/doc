@@ -43,7 +43,7 @@ Here is an exhaustive list of XMPP clients : https://xmpp.org/software/clients.
 
 ## Encrypt conversations with OMEMO
 
-XMPP chats can be made secure and private using [OMEMO] encryption (https://xmpp.org/extensions/xep-0384.html), for instance using Gajim:
+XMPP chats can be made secure and private using [OMEMO encryption](https://xmpp.org/extensions/xep-0384.html), for instance using Gajim:
 - Install `gajim` and the plugin `gajim-omemo`
 - Enable the plugin in `Tools > Plugins`
 - Enable it
