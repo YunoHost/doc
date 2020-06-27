@@ -90,7 +90,9 @@ lookup](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) for your public IPv4
 and/or IPv6 addresses, you must configure it. It will prevent you to be marked as
 spam by anti-spam filters.
 
-It means that if your public IPv4 address is `111.222.333.444` and your DNS
+**N.B. : the reverse DNS configuration happens on your Internet Service Provider or VPS provider. It is *not* handled by your domain's registrar.**
+
+If your public IPv4 address is `111.222.333.444` and your DNS
 domain is `domain.tld`, you should get following answer when using `nslookup`
 command tool:
 
@@ -99,8 +101,7 @@ $ nslookup 111.222.333.444
 444.333.222.111.in-addr.arpa    name = domain.tld.
 ```
 
-Most of the time, this setting is located in a dedicated section or could need
-a support request to your ISP or VPS provider.
+The diagnosis system available in the webadmin performs this checks automatically (in section Email).
 
 ### Dynamic IP
 
