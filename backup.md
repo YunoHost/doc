@@ -118,7 +118,9 @@ yunohost backup restore <archivename>
 
 ### Storing backups on a different drive
 
-If you want, you can connect and mount an external drive to store backup archives on it (among other things). For this, we first move the existing archives then add a symbolic link.
+If you want, you can connect and mount an external drive to store backup archives on it (among other things). For this, plug in the drive and make sure that next time it is mounted automatically, by following the instruction at [Adding an external storage to your server](https://yunohost.org/#/external_storage). 
+
+Then, move the existing archives and then add a symbolic link.
 
 ```bash
 PATH_TO_DRIVE="/media/my_external_drive" # For instance, depends of where you mounted your drive
