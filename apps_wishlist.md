@@ -55,7 +55,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Graphhopper](https://www.graphhopper.com/) / [github](https://github.com/graphhopper/graphhopper#get-started) or other routing service that can be plugged to [Nextcloud Maps](https://apps.nextcloud.com/apps/maps), e.g. OSRM (see below)
 - [Guacamole](http://guacamole.apache.org/)
 - [Habitica](https://habitica.com/) / [github](https://github.com/HabitRPG/habitica)
-- [HackMD CE](https://github.com/hackmdio/hackmd)
 - [Helpy](https://github.com/helpyio/helpy)
 - [Hexo](https://hexo.io/) / [github](https://github.com/hexojs/hexo)
 - [Icecast 2](http://www.icecast.org) / [gitlab](https://gitlab.xiph.org/xiph/icecast-server/)
