@@ -10,7 +10,7 @@ Un « **no** » puede implicar problemas de utilización del servidor o puede 
 
 *Nota que algunos de estos proveedores como OVH y Orange también están presentes en España.*
 
-Todos los proveedores de acceso a Internet [miembros de la Federación French Data Network] (http://www.ffdn.org/fr/membres) tienen una política a favor del auto-alojamiento / self-hosting.
+Todos los proveedores de acceso a Internet [miembros de la Federación French Data Network](http://www.ffdn.org/fr/membres) tienen una política a favor del auto-alojamiento / self-hosting.
 * ✔ : sí
 * ✘ : no
 

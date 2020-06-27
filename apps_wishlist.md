@@ -51,11 +51,11 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Goaccess](https://goaccess.io) Web log analyser (replaces piwik without js tracking scripts) / [github](https://github.com/allinurl/goaccess)
 - [Gollum](https://github.com/gollum/gollum)
 - [Goploader](https://github.com/Depado/goploader)
+- [Gpodder.net](https://gpoddernet.readthedocs.io/en/latest/index.html)
 - [Granary](https://github.com/snarfed/granary)
 - [Graphhopper](https://www.graphhopper.com/) / [github](https://github.com/graphhopper/graphhopper#get-started) or other routing service that can be plugged to [Nextcloud Maps](https://apps.nextcloud.com/apps/maps), e.g. OSRM (see below)
 - [Guacamole](http://guacamole.apache.org/)
 - [Habitica](https://habitica.com/) / [github](https://github.com/HabitRPG/habitica)
-- [HackMD CE](https://github.com/hackmdio/hackmd)
 - [Helpy](https://github.com/helpyio/helpy)
 - [Hexo](https://hexo.io/) / [github](https://github.com/hexojs/hexo)
 - [Icecast 2](http://www.icecast.org) / [gitlab](https://gitlab.xiph.org/xiph/icecast-server/)
@@ -100,6 +100,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Omeka S](https://omeka.org/s/) / [github](https://github.com/omeka/omeka-s)
 - [OpenBazaar](https://openbazaar.org) / [github](https://github.com/openbazaar)
 - [OpenCart](https://www.opencart.com) / [github](https://github.com/opencart/opencart)
+- [OpenEats](https://open-eats.github.io/) / [github](https://github.com/open-eats/OpenEats)
 - [openHAB](https://www.openhab.org/) - Smart home platform. / [github](https://github.com/openhab)
 - [OpenProject](https://github.com/opf/openproject)
 - [OpenSourceBilling](https://github.com/vteams/open-source-billing)
@@ -147,6 +148,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [TMate](https://tmate.io/) / [github](https://github.com/tmate-io/tmate)
 - [Tracim](https://github.com/tracim/tracim)
 - [Thredded](https://thredded.org/) / [github](https://github.com/thredded/thredded)
+- [Tryton](https://www.tryton.org/) A solid ERP system. GNU Health uses this as well.
 - [Twister](http://twister.net.co) / [github](https://github.com/miguelfreitas/twister-core/)
 - [TwitRSS.me](http://twitrss.me/) / [Github](https://github.com/ciderpunx/twitrssme) Scrapes Twitter to create RSS feeds.
 - [Uwazi](https://www.uwazi.io/) / [Github](https://github.com/huridocs/uwazi)
