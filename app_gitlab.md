@@ -1,6 +1,6 @@
-# <img src="/images/gitlab_logo.svg" height="80px" alt="Gitlab's logo"> Gitlab
+# <img src="/images/gitlab_logo.svg" height="80px" alt="GitLab's logo"> GitLab
 
-[![Install gitlab with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gitlab) [![Integration level](https://dash.yunohost.org/integration/gitlab.svg)](https://dash.yunohost.org/appci/app/gitlab)
+[![Install GitLab with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gitlab) [![Integration level](https://dash.yunohost.org/integration/gitlab.svg)](https://dash.yunohost.org/appci/app/gitlab)
 
 ### Index
 
@@ -8,11 +8,11 @@
 - [Customer Applications](#customer-applications)
 - [Useful links](#useful-links)
 
-Gitlab is a very complete software forge whose development is very dynamic: a new version is released every 22nd of the month. Gitlab is an open core software: there is a free community version and a proprietary enterprise version with more features. [¹](#sources)
+GitLab is a Git web app forge very complete whith a dynamic development (a new version is released every 22nd of the month). GitLab is an open core software with two versions: A free community version and a proprietary enterprise version with more features. [¹](#sources)
 
 ## Limitations with YunoHost
 
-The Gitlab application is not compatible with 32-bit architectures.
+The GitLab application is not compatible with 32-bit architectures.
 
 ## Customer applications
 
@@ -31,4 +31,4 @@ The Gitlab application is not compatible with 32-bit architectures.
 
 ### Sources
 
-¹ [framalibre.org - gitlab (fr)](https://framalibre.org/content/gitlab)
+¹ [framalibre.org - GitLab (fr)](https://framalibre.org/content/gitlab)
