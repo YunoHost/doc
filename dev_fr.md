@@ -32,7 +32,7 @@ bug tracker est [ici](https://github.com/yunohost/issues/issues) !
 
 C'est un petit framework "fait maison". [Son rôle principal](https://moulinette.readthedocs.io/en/latest/actionsmap.html) 
 est de permettre de construire une API Web et une API en ligne de commande à partir d'un même code Python et d'un schéma YAML que nous appelons 
-[l'actionmap] (https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/actionsmap/yunohost.yml).
+[l'actionmap](https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/actionsmap/yunohost.yml).
 
 Il prend en charge d'autres mécanismes tels que l'authentification, l'internationalisation et des petites fonctions utilitaires techniques (par ex. lecture/écriture de fichiers json).
 
