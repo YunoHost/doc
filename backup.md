@@ -124,8 +124,9 @@ Then, move the existing archives and then add a symbolic link.
 
 ```bash
 PATH_TO_DRIVE="/media/my_external_drive" # For instance, depends of where you mounted your drive
-mv /home/yunohost.backup/archives $PATH_TO_DRIVE/yunohost_backup_archives
-ln -s $PATH_TO_DRIVE/yunohost_backup_archives /home/yunohost.backup/archives
+mkdir $PATH_TO_DRIVE/yunohost_backup_archives # On your external drive create the folder where the backups will go
+mv /home/yunohost.backup/archives $PATH_TO_DRIVE/yunohost_backup_archives # Move the archive folder including existing backups (if you made them) to the new folder on the external drive
+ln -s $PATH_TO_DRIVE/yunohost_backup_archives /home/yunohost.backup/archives # Create a symbolic link from the old local folder to the new folder on the external drive
 ```
 
 ### Automatic backups
