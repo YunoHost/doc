@@ -146,6 +146,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [TMate](https://tmate.io/) / [github](https://github.com/tmate-io/tmate)
 - [Tracim](https://github.com/tracim/tracim)
 - [Thredded](https://thredded.org/) / [github](https://github.com/thredded/thredded)
+- [Tryton](https://www.tryton.org/) A solid ERP system. GNU Health uses this as well.
 - [Twister](http://twister.net.co) / [github](https://github.com/miguelfreitas/twister-core/)
 - [TwitRSS.me](http://twitrss.me/) / [Github](https://github.com/ciderpunx/twitrssme) Scrapes Twitter to create RSS feeds.
 - [Uwazi](https://www.uwazi.io/) / [Github](https://github.com/huridocs/uwazi)
