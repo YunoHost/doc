@@ -23,8 +23,11 @@ subdomains.
 
 YunoHost allows the installation of applications on subdomains (for
 example, having the Owncloud application accessible from the
-`cloud.mydomain.org` address), this feature is also allowed with the `nohost.me`, `noho.st` and `ynh.fr` domains and so it is possible to have a subdomain such as `my
-application.mydomain.nohost.me`. to create a subdomain for `nohost.me`, `noho.st` and `ynh.fr` domain you just have to add the subdomain to yunohost like any other domains.
+`cloud.mydomain.org` address), this feature is also allowed with the 
+`nohost.me`, `noho.st` and `ynh.fr` domains and so it is possible to 
+have a subdomain such as `my.application.mydomain.nohost.me`. to create 
+a subdomain for `nohost.me`, `noho.st` and `ynh.fr` domain you just have 
+to add the subdomain to yunohost like any other domains.
 
 
 ### Adding a nohost.me, noho.st or ynh.fr domain after the post-installation
