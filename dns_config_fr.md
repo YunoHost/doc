@@ -84,6 +84,27 @@ suivante :
 - Nous recommandons un [TTL](https://fr.wikipedia.org/wiki/Time_to_Live#Le_Time_to_Live_dans_le_DNS) de 3600 (1 heure). Mais vous pouvez utiliser une autre valeur si vous savez ce que vous faîtes ;
 - Ne mettez pas d'enregistrement IPv6 si vous n'êtes pas certains que l'IPv6 fonctionne sur votre serveur ! Vous aurez des problèmes avec Let's Encrypt si ce n'est pas le cas.
 
+### Résolution DNS inverse
+
+Si votre opérateur ou votre hébergeur le permet, nous vous encourageons à
+configurer une [résolution DNS
+inverse](https://fr.wikipedia.org/wiki/Domain_Name_System#R%C3%A9solution_inverse)
+pour vos adresses publiques IPv4 et/ou IPv6. Ceci vous évitera d'être marqué
+comme spammeur par les systèmes de filtrage anti-spams.
+
+**N.B. : la configuration du DNS inverse se passe au niveau de votre Fournisseur d'Accès à Internet, ou de votre hébergeur de VPS. Elle ne se fait *pas* sur le registrar de votre nom de domaine.**
+
+Cela signifie que si votre adresse IPv4 publique est `111.222.333.444` et que
+votre nom de domaine est `domain.tld`, vous devez obtenir le résultat suivant
+en utilisant la commande `nslookup` :
+
+```shell
+$ nslookup 111.222.333.444
+444.333.222.111.in-addr.arpa    name = domain.tld.
+```
+
+Le système de diagnostique présent dans l'interface d'administration fait cette vérification automatiquement (dans la section Email)
+
 ### IP Dynamique
 
 Si votre adresse IP publique change constamment, suivez ce [tutoriel](/dns_dynamicip).

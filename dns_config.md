@@ -83,6 +83,26 @@ Though it might be easier to understand it if displayed like this:
 - We recommend a [TTL](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) of 3600 (1 hour). But you can use something else if you know what you're doing;
 - Don't put an IPv6 record if you're not sure IPv6 really works on your server! You might have issues with Let's Encrypt if it doesn't.
 
+### Reverse DNS
+
+If your ISP or VPS provider let you define a [Reverse DNS
+lookup](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) for your public IPv4
+and/or IPv6 addresses, you must configure it. It will prevent you to be marked as
+spam by anti-spam filters.
+
+**N.B. : the reverse DNS configuration happens on your Internet Service Provider or VPS provider. It is *not* handled by your domain's registrar.**
+
+If your public IPv4 address is `111.222.333.444` and your DNS
+domain is `domain.tld`, you should get following answer when using `nslookup`
+command tool:
+
+```shell
+$ nslookup 111.222.333.444
+444.333.222.111.in-addr.arpa    name = domain.tld.
+```
+
+The diagnosis system available in the webadmin performs this checks automatically (in section Email).
+
 ### Dynamic IP
 
 If your global IP address is constantly changing, follow this [tutorial](/dns_dynamicip).
