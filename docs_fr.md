@@ -27,6 +27,7 @@ La documentation de YunoHost s’articule autour de deux sections :
    * [Salons de discussions](/chat_rooms)
    * [Communication extérieure](/communication)
    * [Support / Aide](/help)
+   * [Mécénes et partenaires](/sponsors_partners_fr)
 
 * Exemple d'utilisation:
    * [YunoHost pour les organisations à but non lucratif](/use_case_non-profit_organisations)
