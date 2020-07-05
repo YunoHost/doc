@@ -122,6 +122,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Pydio Cells](https://pydio.com/) A file sync and sharing software written in go. / [github](https://github.com/pydio/cells)
 - [Pump.io](http://pump.io) / [github](https://github.com/pump-io/pump.io)
 - [qBittorrent](https://github.com/qbittorrent/qBittorrent)
+- [Questions2answer](https://www.question2answer.org/)
 - [racktables](http://racktables.org) / [github](https://github.com/RackTables/racktables)
 - [Radarr](https://github.com/Radarr/Radarr)
 - [Request Tracker](https://bestpractical.com) / [github](https://github.com/bestpractical/rt)
