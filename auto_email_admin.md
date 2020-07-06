@@ -29,7 +29,7 @@ but can also be sent as a copy to an external e-mail, if the field "Transfer add
 Since version 3.8, Yunohost offers, in graphical form within the administration area and via command line, a complete automatic diagnostic tool
 indicating the offsets between the optimum settings for a server and the current situation.
 
-This report is sent by e-mail every 24 hours, if errors or faults are found, and have not already been set to "ignore".
+This report is sent periodically, if errors or faults are found, and have not already been set to "ignore".
 
 
 ## Certificate Renewal (Let's Encrypt)
@@ -53,7 +53,7 @@ Sometimes the renewal may have an error (temporary or permanent) which is sent t
 > This is an automated message from your beloved YunoHost server. Specific information for the application etherpad_mypads.
 
 Yunohost's packaging tools allow to propose, when installing a new application, to send an email to the root account with the operation information.
-As of today (July 2020), only the Etherpad_Mypads application uses this function.
+Not all apps use this functionnality.
 
 ## Mail not sent
 
@@ -71,7 +71,7 @@ When you use your mailbox (and thus the Yunohost server as a mail server) and th
 * Message body: 
 > yunohost: Apr 30 12:23:09: user1: 1 incorrect password attempt; TTY=pts/1; PWD=/var/www/nextcloud/config; USER=root; COMMAND=/bin/nano config.php
 
-When you try to log in several times using the `sudo' command and make a typo in your password, the account gets an email informing them of the error (and the potential bruteforce attempt for example).
+When you try to log in several times using the `sudo` command and make a typo in your password, the account gets an email informing them of the error (and the potential bruteforce attempt for example).
 
 ## The security bulletin
 
