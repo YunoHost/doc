@@ -29,7 +29,7 @@ mais peuvent également être envoyés en copie à un mail extérieur, si le cha
 Depuis la version 3.8, Yunohost propose en graphique au sein de l’espace d’administration et en ligne de commande, un outil de diagnostique automatique assez complet
 indiquant les décalages entre les réglages optimum pour un serveur et la situation réelle actuelle.
 
-Ce rapport est envoyé par mail chaque 24h, si des erreurs ou des défauts sont trouvés, et qu'ils n'ont pas déjà été réglés à "ignorer".
+Ce rapport est envoyé par mail périodiquement, si des erreurs ou des défauts sont trouvés, et qu'ils n'ont pas déjà été réglés à "ignorer".
 
 
 ## Renouvellement des certificats (Let’s Encrypt)
@@ -53,7 +53,7 @@ Parfois, le renouvellement peut présenter une erreur (temporaire ou  définitiv
 > This is an automated message from your beloved YunoHost server. Specific information for the application etherpad_mypads.
 
 Les outils de packaging de Yunohost permettent de proposer, à l’installation d’une nouvelle application, un envoi d'email sur le compte root avec les informations de l'opération.
-A ce jour (Juillet 2020) seule l'application Etherpad_Mypads utilise cette fonction.
+Toutes les applicatoins ne font pas appel à cette fonction.
 
 ## Mail non envoyé
 
