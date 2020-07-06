@@ -4,9 +4,8 @@ Si vous vous auto-hébergez à la maison et sans VPN, il vous faut rediriger les
 
 ### 0. Diagnostiquer les ports ouverts
 
-Une fois que vous aurez configuré la redirection, vous devriez pouvoir valider avec ce petit outil que vos ports sont bien redirigés :
-
-<a class="btn btn-default" href="http://ports.yunohost.org">Vérifier la redirection des ports</a>
+Une fois les redirections configurées, l'outil de diagnostic introduit dans
+YunoHost 3.8 vous permettra de vérifier si les ports sont correctement exposés.
 
 ### 1. Accéder à l'interface d'administration de votre box/routeur
 
@@ -19,8 +18,8 @@ fournis par votre fournisseur d'accès internet (FAI).
 Identifiez quelle est l'IP locale de votre serveur, soit :
 - depuis l'interface de votre routeur/box, qui liste peut-être les dispositifs
   connectés;
+- depuis la webadmin de Yunohost, dans 'Diagnostic', section 'Connectivité Internet', cliquer sur 'Details' à côté de la ligne sur IPv4.
 - depuis la webadmin de YunoHost, dans 'État du serveur', 'Réseau';
-- depuis la ligne de commande dans votre serveur, par exemple avec `ip a | grep "scope global" | awk '{print $2}'`.
 
 Une adresse IP locale ressemble généralement à `192.168.xx.yy`, ou `10.0.xx.yy`.
 

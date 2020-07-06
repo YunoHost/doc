@@ -2,6 +2,8 @@
 
 La etapa que llamamos « **post-instalación** » de hecho es la etapa de configuración inicial de Yunohost. Se ejecuta después de la **instalación** del sistema mismo.
 
+NB : Si estàs en el proceso de instalar de nuevo a un servidor **y** que ya tienes un archivo creada por yunohost, no debes seguir a està etapa y encontro seguir a la seccion "Restoring during the postinstall" de la pagina [backup](/backup).
+
 ### Vía la interfaz web
 
 Puedes acceder a la post-instalación gráfica entrando en un navegador web :

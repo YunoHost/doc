@@ -1,12 +1,11 @@
 # Configure port-forwarding
 
-If you are self-hosting at home and without a VPN, you need to forward ports on your home router ("Internet box"). If you want a short explanation on what is and why you need port forwarding, have a look in [this page](port_forwarding).
+If you are self-hosting at home and without a VPN, you need to forward ports on your home router ("Internet box"). If you want a short explanation on what is and why you need port forwarding, have a look to [this page](port_forwarding).
 
 ### 0. Diagnose ports opened
 
-After configuring port forwarding, you should be able to validate with this small tool that your ports are correctly forwarded : 
-
-<a class="btn btn-default" href="http://ports.yunohost.org">Check which ports are forwarded</a>
+The new diagnosis tool introduced in 3.8 can be used to diagnose that ports are
+correctly exposed.
 
 ### 1. Access your box/router administration interface
 
@@ -14,14 +13,14 @@ Your box/router admin interface is usually reachable via http://192.168.0.1 or h
 
 ### 2. Find the local IP of your server
 
-Identify what is the local IP of your server, either :
+Identify what is thei *local* IP of your server, either :
 - from your box/router interface, which might list devices connected
-- from the YunoHost webadmin, in 'State of the server', 'Network'
-- from the command line in your server, by running `ip a | grep "scope global" | awk '{print $2}'`
+- from the YunoHost webadmin, in 'Diagnosis', section 'Internet connectivity', click on 'Details' on the IPv4 report.
+- from the command line in your server, by running `hostname -I`
 
 A local IP address typically looks like `192.168.xx.yy`, or `10.0.xx.yy`.
 
-The local IP address needs to be static, so that the port forwards that you are going to set in the next step will always reach your server. You should go into your box/router and make sure that the local IP address of your server is static instead of dynamic.
+The local IP address needs to be static, so that the port forwards that you are going to configure in the next step will always reach your server. You should go into your box/router and make sure that the local IP address of your server is static instead of dynamic.
 
 ### 3. Forwarding ports
 

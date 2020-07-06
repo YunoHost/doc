@@ -171,6 +171,7 @@ $ yunohost user permission update mail --remove all_users --add bob
 ```
 
 The webadmin will issue a warning if you set a permission that is superseeded by a wider permission.
+
 ![](./images/groups_alerte-permission.png)
 
 Notes for apps packagers

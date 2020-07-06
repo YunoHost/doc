@@ -14,11 +14,11 @@ YunoHost.
 
 ### Sous-domaines
 
-Le service de domaines `nohost.me`, `noho.st` et `ynh.fr` n'autorise pas la création de sous-domaines.
+Le service de domaines `nohost.me`, `noho.st` et `ynh.fr` autorise la création de sous-domaines.
 
-Même si YunoHost permet l'installation d'applications sur des sous-domaines (par exemple avoir l'application Owncloud accessible depuis l'adresse `cloud.mondomaine.org`), cette fonctionnalité n'est pas permise avec les domaines `nohost.me` et `noho.st` et il n’est pas possible d’avoir un sous-sous-domaine tel `monapplication.mondomaine.nohost.me`.
+YunoHost permet l'installation d'applications sur des sous-domaines (par exemple avoir l'application Owncloud accessible depuis l'adresse `cloud.mondomaine.org`), cette fonctionnalité est aussi permise avec les domaines `nohost.me`, `noho.st` et `ynh.fr` et il est donc possible d’avoir un sous-sous-domaine tel `monapplication.mondomaine.nohost.me`.
 
-Pour pouvoir profiter des applications installables uniquement à la racine d’un nom de domaine, il faut avoir son propre nom de domaine.
+Pour créer un sous domaine à un domaine `nohost.me`, `noho.st` et `ynh.fr` il suffit d'ajouter celui-ci à Yunohost de la même manière que n'importe quel autre nom de domaine. 
 
 ### Ajouter un domaine nohost.me, noho.st ou ynh.fr après la post-installation
 

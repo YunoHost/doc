@@ -18,17 +18,17 @@ have **one such domain** setup at any given time.
 
 #### Subdomains
 
-The `nohost.me`, `noho.st` and `ynh.fr` domain service does not allow the creation of
+The `nohost.me`, `noho.st` and `ynh.fr` domain service does allow the creation of
 subdomains.
 
-Even if YunoHost allows the installation of applications on subdomains (for
+YunoHost allows the installation of applications on subdomains (for
 example, having the Owncloud application accessible from the
-`cloud.mydomain.org` address), this feature is not allowed with the `nohost.me`
-and `noho.st` domains and it is not possible to have a subdomain such as `my
-application.mydomain.nohost.me`.
+`cloud.mydomain.org` address), this feature is also allowed with the 
+`nohost.me`, `noho.st` and `ynh.fr` domains and so it is possible to 
+have a subdomain such as `my.application.mydomain.nohost.me`. to create 
+a subdomain for `nohost.me`, `noho.st` and `ynh.fr` domain you just have 
+to add the subdomain to yunohost like any other domains.
 
-To be able to enjoy applications that can only be installed at the root of a
-domain name, you must have your own domain name.
 
 ### Adding a nohost.me, noho.st or ynh.fr domain after the post-installation
 
