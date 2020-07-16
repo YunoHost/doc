@@ -11,10 +11,13 @@ A list of French and Belgian ISPs is available on the [french page](/isp).
 ### USA
 | Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
 | --- | --- | --- | --- | --- | --- | --- |
+| Amazon| n/a | n/a | Support ticket. | n/a | Support ticket. | Yes |
+| AT&T| Multiple | Yes | No. Only for business class customer. | unknown. | unknown. | unknown. |
 | Cox | Multiple | Yes | No. Only for business class customer. | No | No | Yes, as a business class customer |
 | Charter | Multiple | Yes | No. Only for business class customer. | No | No | Yes, as a business class customer |
+| Comcast| Multiple | Yes | No. Only for business class customer. | unknown. | unknown. | Yes, as a business class customer |
 | DSLExtreme | Multiple | Yes | Yes | No | No | Yes, extra charge. |
-| AT&T| Multiple | Yes | No. Only for business class customer. | unknown. | unknown. | unknown. |
+| DigitalOcean| n/a | n/a | Only for IPv4. IPv6 outbound is blocked. | n/a | Only for transient IPs, not for floating IPs. | Yes |
 
 ### UK
 | Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
