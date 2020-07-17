@@ -24,7 +24,7 @@ bug tracker est [ici](https://github.com/yunohost/issues/issues) !
    - **Cœur Python/ligne de commande** : allez dans `/ynh-dev/yunohost/`
    - **Interface d'administration web** : allez dans `/ynh-dev/yunohost-admin/`
    - Vous pouvez aussi travailler sur les autres projets liés sur lesquels
-     s'appuie YunoHost (SSOwat, moulinette) de façon similaire.
+     s'appuie YunoHost (SSOwat, Moulinette) de façon similaire.
 
 ### Vue d'ensemble des 4 morceaux principaux de YunoHost
 
@@ -40,18 +40,18 @@ Moulinette dispose de sa propre documentation [ici](https://moulinette.readthedo
 
 ##### YunoHost
 
-C'est le coeur même de YunoHost. Il contient :
+C'est le cœur même de YunoHost. Il contient :
 - [le code Python](https://github.com/YunoHost/yunohost/tree/stretch-unstable/src/yunohost) qui gère les utilisateurs, domaines, applications, services et autres
 - des [helpers bash](https://github.com/YunoHost/yunohost/tree/stretch-unstable/data/helpers.d) principalement utilisés par les packageurs d'applications dans les scripts de ces applications
-- des [hooks](https://github.com/YunoHost/yunohost/tree/stretch-unstable/data/hooks) et [templates](https://github.com/YunoHost/yunohost/tree/stretch-unstable/data/templates) qui sont utilisés pour configurer les différents éléments de l'écosystème tels que nginx, postfix, ....
+- des [hooks](https://github.com/YunoHost/yunohost/tree/stretch-unstable/data/hooks) et [templates](https://github.com/YunoHost/yunohost/tree/stretch-unstable/data/templates) qui sont utilisés pour configurer les différents éléments de l'écosystème tels que NGINX, Postfix...
 - des [chaînes internationalisées](https://github.com/YunoHost/yunohost/tree/stretch-unstable/locales)
 - des [tests](https://github.com/YunoHost/yunohost/tree/stretch-unstable/src/yunohost/tests)
 
 ##### SSOwat
 
-C'est le système de connexion unique (single sign-on) de YunoHost. Il contient principalement:
-- [du code LUA](https://github.com/YunoHost/ssowat) interfacé directement avec nginx et qui gère tous les aspects "techniques" de l'authentification et de la gestion des accès aux ressources.
-- le [portail web utilisateur](https://github.com/YunoHost/SSOwat/tree/stretch-unstable/portal) qui est l'interface finale visible par les utilisateurs de YunoHost
+C'est le système de connexion unique (single sign-on) de YunoHost. Il contient principalement :
+- [du code LUA](https://github.com/YunoHost/ssowat) interfacé directement avec NGINX et qui gère tous les aspects "techniques" de l'authentification et de la gestion des accès aux ressources.
+- le [portail web utilisateur](https://github.com/YunoHost/SSOwat/tree/stretch-unstable/portal) qui est l'interface finale visible par les utilisateurs de YunoHost.
 
 SSOwat est configuré via `/etc/ssowat/conf.json` qui est généré par YunoHost.
 
@@ -109,7 +109,7 @@ Il contient essentiellement :
 
 - L'interface web utilise une API pour communiquer avec YunoHost. Les
   commandes/requêtes de l'API sont également définies dans l'actionsmap. Par
-  exemple, accéder à la page ```https://domain.tld/yunohost/api/users```
+  exemple, accéder à la page `https://domain.tld/yunohost/api/users`
   correspond à une requête `GET /users` vers l'API YunoHost. Cette requête
   est mappée sur `user_list()`. Accéder à cette URL devrait afficher le json
   retourné par cette fonction. Les requêtes 'GET' sont typiquement destinées à
@@ -126,8 +126,8 @@ Il contient essentiellement :
   les données venant du JavaScript peuvent être utilisées avec la syntaxe
   `{{some-variable}}`, qui sera remplacée pendant la construction de la page.
   Il est également possible d'avoir des conditions avec la syntaxe 
-  d'[handlebars.js](http://handlebarsjs.com) : ```{{#if
-  some-variable}}<p>du HTML conditionnel ici !</p>{{/if}}```
+  d'[handlebars.js](http://handlebarsjs.com) : `{{#if
+  some-variable}}<p>du HTML conditionnel ici !</p>{{/if}}`
 
 - Pour l'internationalisation des messages, utilisez `y18n.t('some-string-code')` 
   dans le JavaScript, ou `{{t 'some-string-code'}}` dans le template HTML, et 
@@ -137,8 +137,8 @@ Il contient essentiellement :
 
 ##### N'oubliez pas
 
-- À chaque modification de l'actionsmap, il faut redémarrer l'API yunohost :
-  ```service yunohost-api restart```
+- À chaque modification de l'actionsmap, il faut redémarrer l'API YunoHost :
+  `service yunohost-api restart`
   (Il faudra retaper le mot de passe administrateur dans l'interface web)
 
 - Il faudra peut-être régulièrement forcer le rafraîchissement du cache
@@ -148,8 +148,8 @@ Il contient essentiellement :
 
 ### Votre fonctionnalité est prête et vous souhaitez qu'elle soit intégrée dans YunoHost 
 
-- Forkez le dépòt correspondant sur Github, et commitez vos changements dans
-  une nouvelle branche, Il est recommandé de nommer la branche avec la
+- Forkez le dépôt correspondant sur GitHub, et commitez vos changements dans
+  une nouvelle branche. Il est recommandé de nommer la branche avec la
   convention suivante :
   - Pour une nouvelle fonctionnalité ou amélioration : `enh-ISSUENUMBER-description-fonctionnalité`
   - Pour une correction de bug : `fix-REDMINETICKET-description-correctif`
@@ -160,5 +160,3 @@ Il contient essentiellement :
 
 - Après relecture, test et validation par les autres contributeurs, votre
   branche sera mergée dans `unstable` !
-
-
