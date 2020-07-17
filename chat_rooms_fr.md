@@ -2,7 +2,7 @@
 
 Parmi d’autres outils, le projet YunoHost se sert de salons de discussions pour communiquer.
 
-Vous pouvez rejoindre ces salons avec:
+Vous pouvez rejoindre ces salons avec :
 - un [Client IRC](https://fr.wikipedia.org/wiki/Liste_de_clients_IRC)
 - un [Client XMPP](https://fr.wikipedia.org/wiki/Clients_XMPP)
 - un [Client Matrix](https://linuxfr.org/news/matrix-pour-decentraliser-skype-whatsapp-signal-slack-et-discord)
@@ -15,7 +15,7 @@ Le salon d’[entraide](/help) est là pour permettre aux utilisateurs de YunoHo
 - XMPP : **[support@conference.yunohost.org](xmpp:support@conference.yunohost.org?join)**
 
 #### Développement
-Salon de développement du cœur de YunoHost:
+Salon de développement du cœur de YunoHost :
 - IRC : **#yunohost-dev** sur irc.freenode.net
 - Matrix : **#freenode_#yunohost-dev:matrix.org**
 - XMPP : **[dev@conference.yunohost.org](xmpp:dev@conference.yunohost.org?join)**
@@ -31,8 +31,8 @@ Il sert également à discuter de l’évolution du packaging, des outils d’in
 - XMPP : **[apps@conference.yunohost.org](xmpp:apps@conference.yunohost.org?join)**
 
 #### Documentation
-Le salon de documentation du projet Yunohost. Il permet aux contributeurs d'échanger, pour synchroniser et maintenir une documentation à jour sur les différents aspects du projet : backend, frontend, apps, projet, communauté...
-Vous pouvez aussi y partager vos communications au public à propos de Yunohost (présentations, vidéos...) pour permettre leur référencement dans la documentation.
-- IRC: **#yunohost-doc** sur irc.freenode.net
-- Matrix: **#freenode_#yunohost-doc:matrix.org**
-- XMPP: **[doc@conference.yunohost.org](xmpp:doc@conference.yunohost.org?join)**
+Le salon de documentation du projet YunoHost. Il permet aux contributeurs d'échanger, pour synchroniser et maintenir une documentation à jour sur les différents aspects du projet : backend, frontend, apps, projet, communauté...
+Vous pouvez aussi y partager vos communications au public à propos de YunoHost (présentations, vidéos...) pour permettre leur référencement dans la documentation.
+- IRC : **#yunohost-doc** sur irc.freenode.net
+- Matrix : **#freenode_#yunohost-doc:matrix.org**
+- XMPP : **[doc@conference.yunohost.org](xmpp:doc@conference.yunohost.org?join)**
