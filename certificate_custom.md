@@ -13,15 +13,15 @@ After the certificate creation with your registration authority, you must have a
 These two files should be copied to the server, if they are not already there.
 
 ```bash
-scp CERTIFICAT.crt admin@DOMAIN.TLD:ssl.crt
-scp CLE.key admin@DOMAIN.TLD:ssl.key
+scp CERTIFICATE.crt admin@DOMAIN.TLD:ssl.crt
+scp KEY.key admin@DOMAIN.TLD:ssl.key
 ```
 
 From Windows, scp can be used with Putty, by downloading the tool [pscp](http://the.earth.li/~sgtatham/putty/latest/x86/pscp.exe)
 
 ```bash
-pscp -P 22 CERTIFICAT.crt admin@DOMAIN.TLD:ssl.crt
-pscp -P 22 CLE.key admin@DOMAIN.TLD:ssl.key
+pscp -P 22 CERTIFICATE.crt admin@DOMAIN.TLD:ssl.crt
+pscp -P 22 KEY.key admin@DOMAIN.TLD:ssl.key
 ```
 
 As soon as the files are on the server, the rest of the work will be done on it. In [ssh](/ssh) or locally.
