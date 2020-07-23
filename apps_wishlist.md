@@ -66,6 +66,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [IPFS](https://ipfs.io) / [github](https://github.com/ipfs/ipfs)
 - [Isso](https://posativ.org/isso) commenting server / [github](https://github.com/posativ/isso)
 - [Jellyfin](https://github.com/jellyfin)
+- [Jitsi Meet](https://jitsi.org/jitsi-meet/) / [github](https://github.com/jitsi/jitsi-meet)
 - [JS Bin](http://jsbin.com/help/2-second-setup) / [github](https://github.com/jsbin/)
 - [Joplin](http://joplin.cozic.net/) / [github](https://github.com/laurent22/joplin)
 - [Joplin-web](https://github.com/foxmask/joplin-web) / [github](https://github.com/foxmask/joplin-web)
