@@ -1,6 +1,6 @@
 # Security
 
-YunoHost has been developed to provide the best security without too much complication. Every protocol used in YunoHost is **encrypted**, only password's hashes are stored and by default each user is able to access his personal directory only.
+YunoHost has been developed to provide the best security without too much complication. Every protocol used in YunoHost is **encrypted**, only password's hashes are stored and by default each user is able to access their personal directory only.
 
 Two things remain important to note:
 
@@ -125,7 +125,7 @@ In the case of a key authentication, a brute force attack has no chance of succe
 sudo adduser user_name
 ```
 Choose a strong password, since this user will be responsible with obtaining root privileges.
-Add the user to the sudo group to allow him/her to perform maintenance tasks that require root privileges.
+Add the user to the sudo group to allow them to perform maintenance tasks that require root privileges.
 ```bash
 sudo adduser user_name sudo
 ```
