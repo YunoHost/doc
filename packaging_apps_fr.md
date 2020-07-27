@@ -83,7 +83,7 @@ Vous trouverez ci-dessous une liste des points à vérifier concernant la qualit
 * Votre script d’installation utilise une méthode d’installation en ligne de commande plutôt qu’un appel curl via un formulaire web d’installation ;
 * Votre script d’installation enregistre les réponses de l’utilisateur ;
 * Vous avez vérifié les sources de l’application avec une somme de contrôle (sha256, sha1 ou md5) ou une signature PGP ;
-* Vos scripts ont été testés sur Debian Stretch 32 bits, 64 bits et ARM ;
+* Vos scripts ont été testés sur Debian Buster 32 bits, 64 bits et ARM ;
 * Les scripts backup et restore sont présents et fonctionnels.
 
 Pour mesurer la qualité d'un paquet, celui-ci obtiendra un [niveau](/packaging_apps_levels), déterminé en fonction de divers critères d'installation et selon le respect des [règles de packaging](/packaging_apps_guidelines).
@@ -114,4 +114,4 @@ Un serveur d'intégration continue est a disposition des packagers désirant tes
 
 **!! Section obsolète au 08/03/19** - Le fonctionnement du projet est en cours d'évolution sur ce point.
 
-Pour qu’une application devienne officielle, elle doit être suffisamment testée, stable et fonctionner sous Debian Stretch 64 bits, 32 bits et ARM. Si ces conditions vous paraissent réunies, demandez l’[intégration officielle](https://github.com/YunoHost/apps) de votre application.
+Pour qu’une application devienne officielle, elle doit être suffisamment testée, stable et fonctionner sous Debian Buster 64 bits, 32 bits et ARM. Si ces conditions vous paraissent réunies, demandez l’[intégration officielle](https://github.com/YunoHost/apps) de votre application.

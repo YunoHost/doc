@@ -101,7 +101,7 @@ Here is a list of best practices for application install scripts:
 * install script should use the command-line method instead of calls to curl through web install form;
 * install script should save install answers;
 * application sources should be checked with a control sum (sha256, sha1 or md5) or a PGP signature;
-* scripts should be tested on Debian Stretch 32 bits, 64 bits and ARM architectures;
+* scripts should be tested on Debian Buster 32 bits, 64 bits and ARM architectures;
 * backup and restore scripts should be present and functional.
 
 To be define the quality of a package, it'll obtained a [level](/packaging_apps_levels), determined according to somes criteria of installation and according to respect to [package guidelines](packaging_apps_guidelines).
@@ -132,4 +132,4 @@ A continuous integration server is available for packagers who want to test thei
 
 **!! This section is obsolete as of 08/03/19** - The project's organization regarging this point is to be changed.
 
-To become an official application, it must be tested well enough, be stable and should work on Debian Stretch 64 bits, 32 bits and ARM architectures. If you think those conditions are met, ask for [official integration](https://github.com/YunoHost/apps) of your application.
+To become an official application, it must be tested well enough, be stable and should work on Debian Buster 64 bits, 32 bits and ARM architectures. If you think those conditions are met, ask for [official integration](https://github.com/YunoHost/apps) of your application.
