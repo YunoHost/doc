@@ -10,5 +10,5 @@ Corresponding installation guides can be found on [this page](/install).
 ### Minimum requirements
 
 * 500 MHz CPU
-* 512 MB RAM (recommended : 1 GB in order to run all the services and apps properly)
+* 1024 MB RAM (recommended : 2 GB in order to run all the services and apps properly)
 * 8 GB storage capacity (recommended : 32 GB to store mails and documents)
