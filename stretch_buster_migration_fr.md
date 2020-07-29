@@ -51,3 +51,15 @@ Pour cela, vous pouvez aller dans la partie Diagnostic (section Système de base
 #### Vérifiez que les applications fonctionnent
 
 Vérifiez que vos applications installées fonctionnent... Si elles ne fonctionnent pas, il est recommandé de tenter de les mettre à jour. (ou bien de manière générale, il est recommandé de les mettre à jour même si elles fonctionnent !).
+
+## Soucis (mineurs) connus après la migration
+
+- Quelques fichiers de configurations (`/etc/nsswitch.conf` et `/etc/nslcd.conf`) apparaîtrons comme manuellement modifiés. Vous pouvez appliquer la regen-conf en toute sécurité pour régler le problème avec la commande:
+
+```bash
+yunohost tools regen-conf nsswitch nslcd --force
+```
+
+(nous allons essayer de corriger ceci automatiquement)
+
+- Il se peut que la migration postgresql (censée s'effectuer automatiquement après la migration à Buster) ne fonctionne pas correctement ... Certains utilisateurs ont rapporté que relancer la migration suffisait à résoudre le problème. (Nous allons voir pour comprendre et corriger ce soucis)

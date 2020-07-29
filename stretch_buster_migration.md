@@ -51,3 +51,15 @@ Also in the Diagnosis in the webadmin, make sure that no specific issue appeared
 #### Check that your applications are working
 
 Test that your applications are working. If they aren't, you should try to upgrade them (it is also a good idea to upgrade them even if they are working anyway).
+
+## Current known (minor) issues after the migration
+
+- Some file (`/etc/nsswitch.conf` and `/etc/nslcd.conf`) will appear as manually modified after the migration. You can safely apply the regen-conf with: 
+
+```bash
+yunohost tools regen-conf nsswitch nslcd --force
+```
+
+(we will try to do this automatically somehow)
+
+- Sometimes the postgresql migration (that is supposed to happen automatically after the buster migration is ran) fails to run properly … Some users reported that re-launching manually the postgresql migration fixed the issue (we will try to understand and fix this somehow)
