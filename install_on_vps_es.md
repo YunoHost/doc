@@ -8,7 +8,7 @@
 
 * Un servidor dedicado o virtual
 * con al menos **512MB** RAM
-* y **Debian 9.x (Stretch) 64bits** como sistema operativo
+* y **Debian 10.x (Buster) 64bits** como sistema operativo
 
 ---
 
