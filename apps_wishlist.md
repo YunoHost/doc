@@ -1,3 +1,5 @@
+<div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">La page demandée n'est pour le moment pas disponible en français. Voici à la place la version en anglais. Si vous souhaitez commencer une traduction de cette page, vous pouvez vous rendre sur [cette page](https://yunohost.org/#/apps_wishlist_fr).</div>
+
 # Apps wishlist
 
 <div class="alert alert-info">Before to add an app in wishlist please check your app is not already in apps list: see the <a href="/apps">apps list</a></div>
@@ -16,6 +18,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Auth0 SSO Dashboard](https://github.com/auth0-extensions/auth0-sso-dashboard-extension)
 - [Bitmessage](https://bitmessage.org/wiki/Compiling_instructions) / [github](https://github.com/Bitmessage/PyBitmessage)
 - [Beehive](https://github.com/muesli/beehive)
+- [Bibliogram](https://sr.ht/~cadence/bibliogram/)
 - [BigBlueButton](https://bigbluebutton.org) / [install instruction](http://docs.bigbluebutton.org/2.2/install.html) / [github](https://github.com/bigbluebutton/bigbluebutton) Complete open source web conferencing system.
 - [Bludit](https://www.bludit.com) / [github](https://github.com/bludit/bludit)
 - [Blynk](https://github.com/blynkkk/blynk-library)
@@ -58,6 +61,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Habitica](https://habitica.com/) / [github](https://github.com/HabitRPG/habitica)
 - [Helpy](https://github.com/helpyio/helpy)
 - [Hexo](https://hexo.io/) / [github](https://github.com/hexojs/hexo)
+- [Hometown](https://github.com/hometown-fork/hometown)
 - [Icecast 2](http://www.icecast.org) / [gitlab](https://gitlab.xiph.org/xiph/icecast-server/)
 - [ikiwiki](http://ikiwiki.info)
 - [Invidious](https://github.com/omarroth/invidious)
@@ -94,6 +98,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Museek+](https://github.com/eLvErDe/museek-plus)
 - [N8n.io](https://n8n.io)
 - [Netrunner](https://github.com/mtgred/netrunner)
+- [Nitter](https://github.com/zedeus/nitter)
 - [Nuage](https://nuage.kerjean.me/login) / [github](https://github.com/mickael-kerjean/filestash)
 - [OhMyForm](https://github.com/ohmyform) (Only support Docker install way and some VPS aren't compatible, see TellForm which support non-Docker install but is discontinued)
 - [Ombi](https://github.com/tidusjar/Ombi)
