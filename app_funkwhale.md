@@ -23,7 +23,7 @@ To install Funkwhale on your YunoHost server it is necessary to have a domain na
 + Website: [funkwhale.audio](https://funkwhale.audio/)
 + Official documentation: [docs.funkwhale.audio](https://docs.funkwhale.audio/)
 + Application software repository: [github.com - YunoHost-Apps/funkwhale](https://github.com/YunoHost-Apps/funkwhale_ynh)
-+ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/APPLICATION/issues](https://github.com/YunoHost-Apps/APPLICATION_ynh/issues)
++ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/funkwhale/issues](https://github.com/YunoHost-Apps/funkwhale_ynh/issues)
 
 -----
 
