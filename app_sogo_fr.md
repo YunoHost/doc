@@ -1,4 +1,4 @@
-# <img src="/images/logo_sogo.png" height="80px" alt="SOGo Logo"> SOGo
+# <img src="/images/sogo_logo.png" height="80px" alt="SOGo Logo"> SOGo
 
 [![Installer Sogo avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=sogo) [![Integration level](https://dash.yunohost.org/integration/sogo.svg)](https://dash.yunohost.org/appci/app/sogo)
 
