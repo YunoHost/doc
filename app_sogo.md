@@ -10,6 +10,6 @@ SOGo is an opensource groupware solution which has Webmail, a global address boo
 
 ## Useful links
 
-+ Application software repository: [sogo.nu](https://sogo.nu/a)
++ Application software repository: [sogo.nu](https://sogo.nu)
 + Fix a bug or an improvement by creating a ticket (issue): [github.com/YunoHost-Apps/sogo_ynh](https://github.com/YunoHost-Apps/sogo_ynh)
 
