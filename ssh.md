@@ -93,6 +93,6 @@ yunohost user ssh list-keys <username>
 
 ## Security and SSH
 
-N.B. : `fail2ban` will ban your IP for 10 mimutes if you perform 5 failed login attempts. If you need to unban the IP, have a look at the page about [fail2ban](/fail2ban)
+N.B. : `fail2ban` will ban your IP for 10 minutes if you perform 5 failed login attempts. If you need to unban the IP, have a look at the page about [fail2ban](/fail2ban)
 
 A more extensive discussion about security & SSH can be found on the [dedicated page](/security).

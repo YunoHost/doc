@@ -6,7 +6,7 @@ Here is a non-comprehensive list of internet service providers by country, which
 
 A "no" may cause problems for using your server or may require you to make additional configuration changes. Status in brackets indicates the default behavior.
 
-A list of French and Belgian ISPs is available on the [french page](/isp).
+A list of French and Belgian ISPs is available on the [french page](/isp_fr).
 
 ### USA
 | Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |

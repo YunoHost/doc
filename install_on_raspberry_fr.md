@@ -45,8 +45,8 @@ Nous déconseillons l'installation manuelle car elle est plus technique et plus 
 Les dernières versions de Raspbian nécessitent un écran et un clavier, car il n'est plus possible de se connecter directement en SSH au Raspberry par défaut. Néanmoins, il est possible de réactiver le lancement de SSH au boot : il suffit de placer dans la partition boot de la carte SD un fichier nommé `ssh`, vide et sans extension.
 </div>
 
-0. Installez Raspbian Stretch Lite ([instructions](https://www.raspberrypi.org/downloads/raspbian/)) sur la carte SD. 
-Le lien vers la Raspbian Stretch Lite est ici: https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-04-09/
+0. Installez Raspbian Buster Lite ([instructions](https://www.raspberrypi.org/downloads/raspbian/)) sur la carte SD. 
+Le lien vers la Raspbian Buster Lite est ici: https://downloads.raspberrypi.org/raspbian_lite/images/
 
 1. Connectez-vous en ssh au Raspberry Pi avec l'utilisateur pi. Définissez un mot de passe root avec 
 ```bash
