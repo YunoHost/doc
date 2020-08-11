@@ -18,7 +18,6 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Auth0 SSO Dashboard](https://github.com/auth0-extensions/auth0-sso-dashboard-extension)
 - [Bitmessage](https://bitmessage.org/wiki/Compiling_instructions) / [github](https://github.com/Bitmessage/PyBitmessage)
 - [Beehive](https://github.com/muesli/beehive)
-- [Bibliogram](https://sr.ht/~cadence/bibliogram/)
 - [BigBlueButton](https://bigbluebutton.org) / [install instruction](http://docs.bigbluebutton.org/2.2/install.html) / [github](https://github.com/bigbluebutton/bigbluebutton) Complete open source web conferencing system.
 - [Bludit](https://www.bludit.com) / [github](https://github.com/bludit/bludit)
 - [Blynk](https://github.com/blynkkk/blynk-library)
