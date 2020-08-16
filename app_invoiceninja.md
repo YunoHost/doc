@@ -1,4 +1,4 @@
-# Invoice Ninja
+# <img src="/images/invoiceninja_logo.png" height="80px" alt="Invoice Ninja logo"> Invoice Ninja
 
 [![Install Invoice Ninja with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=invoiceninja)
 [![Integration level](https://dash.yunohost.org/integration/invoiceninja.svg)](https://dash.yunohost.org/appci/app/invoiceninja)
