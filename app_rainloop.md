@@ -15,7 +15,7 @@ To configure it, go to http://DOMAIN.TLD/rainloop/app/?admin
 
 - The default login is : admin
 - The default password is : Password chosen during install
-- If you lost the admin password, you can retrieve it using ``sudo yunohost app settings rainloop password``
+- If you lost the admin password, you can retrieve it using ``sudo yunohost app setting rainloop password``
 
 ### Cardav
 Each user can add a remote carddav server from their own parameters interface.
