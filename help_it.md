@@ -3,7 +3,7 @@
 <h3>Connettiti alla chat di supporto</h3>
 <center>
 <div class="alert alert-info" markdown="1" style="max-width:700px;">
-<strong>ProTips�</strong>
+<strong>ProTips™</strong>
 <ul style="text-align:left;">
 <li>Non c'è bisogno di chiedere se puoi chiedere qualcosa, chiedi e basta !</li>
 <li><em>Sii paziente</em>, potrebbero servire alcuni minuti prima che qualcuno veda i tuoi messaggi.</li>
