@@ -13,7 +13,7 @@ Vor der Einrichtung eines Servers zuhause ist es empfehlenswert [mögliche Einsc
 
 ## Voraussetzungen
 
-- Einen Raspberry Pi 0, 1, 2 oder 3 ;
+- Einen Raspberry Pi 2, 3 oder 4 (RPi 0 and 1 may work but require some tweaking ... see [this issue](https://github.com/YunoHost/issues/issues/1423)) ;
 - Eine microSD Karte: **8GB** Speicherplatz (mindestens) und **Class 10** Geschwindigkeit werden empfohlen (wie zum Beispiel die [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
 - Ein Netzeil (entweder ein Steckernetzteil oder ein MicroUSB Kabel) ;
 - An Netzwerkkabel (RJ-45) um den Raspberry mit dem router zu verbinden. (Raspberry Pi Zero Nutzer können ein OTG Kabel nutzen, [Wifi dongle](https://core-electronics.com.au/tutorials/raspberry-pi-zerow-headless-wifi-setup.html).) ;

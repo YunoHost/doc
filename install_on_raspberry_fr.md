@@ -13,7 +13,7 @@ Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissan
 
 ## Prérequis
 
-- Un Raspberry Pi 0, 1, 2 ou 3 ;
+- Un Raspberry Pi 2, 3 ou 4 (Les RPi 0 et 1 peuvent fonctionner mais nécessitent de bricoler un peu ... voir [cette issue](https://github.com/YunoHost/issues/issues/1423)) ;
 - Un adaptateur secteur pour alimenter la carte ;
 - Une carte microSD : au moins **8 Go** et **Classe 10** (par exemple une [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
 - Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet. (Avec le Raspberry Pi 0, vous pouvez connecter votre carte avec un câble OTG et un adaptateur Wifi USB.)
