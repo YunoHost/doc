@@ -12,4 +12,4 @@ Navidrome est un serveur et un streamer de collection de musique en ligne open s
 
 + Site web : [navidrome.org (en)](https://www.navidrome.org/)
 + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/navidrome](https://github.com/YunoHost-Apps/navidrome_ynh)
-+ Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/navidrome/issues](https://github.com/YunoHost-Apps/anfora_ynh/issues)
++ Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/navidrome/issues](https://github.com/YunoHost-Apps/navidrome_ynh/issues)
