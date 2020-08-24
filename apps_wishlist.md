@@ -54,6 +54,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Gpodder.net](https://gpoddernet.readthedocs.io/en/latest/index.html)
 - [Granary](https://github.com/snarfed/granary)
 - [Graphhopper](https://www.graphhopper.com/) / [github](https://github.com/graphhopper/graphhopper#get-started) or other routing service that can be plugged to [Nextcloud Maps](https://apps.nextcloud.com/apps/maps), e.g. OSRM (see below)
+- [Grocy](https://grocy.info/) ERP beyond your fridge / [github](https://github.com/grocy/grocy)
 - [Guacamole](http://guacamole.apache.org/)
 - [Habitica](https://habitica.com/) / [github](https://github.com/HabitRPG/habitica)
 - [Helpy](https://github.com/helpyio/helpy)
