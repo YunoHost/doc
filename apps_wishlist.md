@@ -112,6 +112,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [Paperwork](http://paperwork.rocks)
 - [Passbolt](https://www.passbolt.com) Passwords manager / [github](https://github.com/passbolt)
 - [Pelias](https://github.com/pelias/pelias))
+- [Photoprism](https://photoprism.org/) / [github](https://github.com/photoprism/photoprism)
 - [PHPList](http://www.phplist.com) / [github](https://github.com/phpList)
 - [Phraseanet](https://docs.phraseanet.com/3.8/fr/index.html#) / [github](https://github.com/alchemy-fr/Phraseanet-Docs)
 - [Pico](http://picocms.org) / [github](https://github.com/picocms/Pico)
