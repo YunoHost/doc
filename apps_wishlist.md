@@ -145,6 +145,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 - [StandardNotes](https://standardnotes.org) (a clean, simple, E2E-encrypted notes app) -- specifically, the server-side [StandardFile](https://standardfile.org) portion / [github](https://github.com/standardnotes/web)
 - [Streisand](https://github.com/jlund/streisand)
 - [Subspace](https://github.com/subspacecloud/subspace) (A simple WireGuard VPN server GUI)
+- [Synapse-Admin](https://github.com/Awesome-Technologies/synapse-admin) (Management GUI for matrix-synapse)
 - [Syspass](http://www.syspass.org/) / [github](https://github.com/nuxsmin/sysPass)
 - [Taiga](https://taiga.io) / [github](https://github.com/taigaio/)
 - [Taskwarrior](https://taskwarrior.org) / [github](https://github.com/GothenburgBitFactory/taskwarrior)
