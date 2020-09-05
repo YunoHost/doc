@@ -4,18 +4,17 @@
 
 **SSH** steht für **S**ecure **Sh**ell, und bezeichnet ein Protokoll, dass es einem erlaubt über ein entferntes System auf die Kommandozeile (Command Line Interface, **CLI**) zuzugreifen. SSH ist standardmäßig auf jedem Terminal auf Linux oder Mac OS / OSX verfügbar. Für Windows ist Drittsoftware nötig, z.B. [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (Klicke nach dem Start auf Session und dann SSH).
 
-## Während der YunoHost installation
+## Während der YunoHost Installation
 
 #### Finde deine IP
 
 Solltest du auf einem VPS installieren, dann hat der VPS Provider die IP-Adresse, die du bei ihm erfragen solltest. 
 
 Wenn du Zuhause installierst (z.B. auf einem Raspberry Pi oder OLinuXino), dann musst du herausfinden, welche IP-Adresse dein Router dem System zugewiesen hat. Hierfür existieren mehrere Wege:
-
-- open a terminal and use `sudo arp-scan --local` to list the IP on your local network ;
-- if the arp-scan command displays a confusing number of devices, you can check which ones are open to ssh with `nmap -p 22 192.168.1.0/24` to sort them out (adapt the IP range to your local network)
-- use your internet box / router interface to list the machines connected, or check the logs ;
-- plug a screen on your server, log in and type `hostname --all-ip-address`.
+- Öffne ein Terminal und tippe `sudo arp-scan --local` ein, um eine Liste der aktiven IP-Adressen deines lokalen Netzwerks anzuzeigen;
+- wenn dir der arp-scan eine zu unübersichtliche Zahl an Adressen anzeigt, versuche mit `nmap -p 22 192.168.**x**.0/24` nur die anzuzeigen, deren SSH-Port 22 offen ist. (passe das **x** deinem Netzwerk an);
+- Prüfe die angezeigten Geräte in der Benutzeroberfläche deines Routers, ob du das Gerät findest;
+- Schließe einen Bildschirm und Tastatur an deinen Server, logge dich ein und tippe `hostname --all-ip-address`.
 
 #### Connect
 
