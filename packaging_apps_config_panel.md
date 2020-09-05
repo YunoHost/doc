@@ -62,7 +62,7 @@ application, next to the manifest.json/toml. It looks like this:
 
 <div class="alert alert-info">
 The options are written in **[YunoHost Arguments
-Format](#/packaging_apps_arguments_format)** like in `manifest.toml/json`
+Format](/packaging_apps_arguments_format)** like in `manifest.toml/json`
 </div>
 
 ```toml

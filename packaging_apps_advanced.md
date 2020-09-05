@@ -16,7 +16,7 @@ application, for example that could be:
 * start a procedure
 * regenerate a local cache
 
-[Full documentation](#/packaging_apps_actions)
+[Full documentation](packaging_apps_actions)
 
 Example in the admin:
 
@@ -33,7 +33,7 @@ possible inside the application itself.
 This is generally also the place where you want to add the option to make an
 application public or not.
 
-[Full documentation](#/packaging_apps_config_panel)
+[Full documentation](packaging_apps_config_panel)
 
 Example in the admin:
 
