@@ -88,7 +88,7 @@
 - [Shaarli](app_shaarli)
 - [Shellinabox](app_shellinabox)
 - [Simple-torrent](app_simple-torrent)
-- [Slingcode](app_slincode)
+- [Slingcode](app_slingcode)
 - [Sogo](app_sogo)
 - [Spip](app_spip)
 - [Strut](app_strut)
