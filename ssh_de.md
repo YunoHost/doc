@@ -11,7 +11,6 @@
 Solltest du auf einem VPS installieren, dann hat der VPS Provider die IP-Adresse, die du bei ihm erfragen solltest. 
 
 Wenn du Zuhause installierst (z.B. auf einem Raspberry Pi oder OLinuXino), dann musst du herausfinden, welche IP-Adresse dein Router dem System zugewiesen hat. Hierfür existieren mehrere Wege:
-
 - Öffne ein Terminal und tippe `sudo arp-scan --local` ein, um eine Liste der aktiven IP-Adressen deines lokalen Netzwerks anzuzeigen;
 - wenn dir der arp-scan eine zu unübersichtliche Zahl an Adressen anzeigt, versuche mit `nmap -p 22 192.168.**x**.0/24` nur die anzuzeigen, deren SSH-Port 22 offen ist. (passe das **x** deinem Netzwerk an);
 - Prüfe die angezeigten Geräte in der Benutzeroberfläche deines Routers, ob du das Gerät findest;

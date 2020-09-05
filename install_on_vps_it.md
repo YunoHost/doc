@@ -8,7 +8,7 @@
 
 * Un server dedicato o un server privato virtuale (VPS)
 * con almeno **512MB** di RAM
-* e **Debian 9.x (Stretch) 64bits** come sistema operativo
+* e **Debian 10.x (Buster) 64bits** come sistema operativo
 
 ---
 

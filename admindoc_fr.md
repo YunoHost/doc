@@ -55,6 +55,7 @@
     * [YunoHost avec un service caché Tor](/torhiddenservice)
     * [Utilisation de certificats autres que Let's Encrypt](/certificate_custom)
     * [Une discussion sur les avantages d'utiliser un VPN](/vpn_advantage)
+    * [Procedure de Migration Stretch->Buster](stretch_buster_migration)
     * [(vieux) Procedure de Migration Jessie->Stretch](jessie_stretch_migration)
 * Dépannage
     * [Changer le mot de passe d’administration](/change_admin_password)

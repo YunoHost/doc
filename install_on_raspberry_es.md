@@ -13,7 +13,7 @@ Antes de alojar tu propio servidor en tu casa, te recomendamos que consultes las
 
 ## Prerrequisitos
 
-- Un Raspberry Pi 0, 1, 2, 3 o 4 ;
+- Un Raspberry Pi 2, 3 o 4 (RPi 0 and 1 may work but require some tweaking ... see [this issue](https://github.com/YunoHost/issues/issues/1423)) ; ;
 - Un adaptador de corriente para alimentar la tarjeta ;
 - Una tarjeta microSD : al menos **8 Go** y **Clase 10** (por ejemplo una [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
 - Un cable ethernet/RJ-45 para conectar la tarjeta con tu enrutador o tu caja internet. (Con el Raspberry Pi 0, puedes conectar tu tarjeta con un cable OTG y un adaptador Wifi USB.)
@@ -45,7 +45,7 @@ No recomendamos la instalación manual porque es más técnica y más larga que 
 Las últimas versiones de Raspbian necesitan una pantalla y un teclado porque ya no es posible conectarse directamente por SSH al Raspberry por defecto. Sin embargo, es posible reactivar el inicio de SSH al boot : solo hay que poner un archivo llamado `ssh` (vacío, sin extensión) en la partición boot de la tarjeta SD.
 </div>
 
-0. Instalar Raspbian Stretch Lite ([instrucciones](https://www.raspberrypi.org/downloads/raspbian/)) en la tarjeta SD.
+0. Instalar Raspbian Buster Lite ([instrucciones](https://www.raspberrypi.org/downloads/raspbian/)) en la tarjeta SD.
 
 1. Conéctate con ssh al Raspberry Pi con el usuario pi. Define una contraseña root con 
 ```bash

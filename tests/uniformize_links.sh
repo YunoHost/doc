@@ -6,10 +6,10 @@ do
     sed -i -E 's@\(https://yunohost.org/#/(\w+)\)@(/\1)@g' $FILE
 
     # Replace (/foo_fr) to (foo)
-    sed -i -E 's@\(\/?((\w|-)+)_(en|fr|es|it|ar|de|oc)\)@(/\1)@g' $FILE
+    sed -i -E 's@\(\/?((\w|-)+)_(en|fr|es|it|ar|de|oc|ca)\)@(/\1)@g' $FILE
 
     # Replace href="/foo_fr" to href="foo"
-    sed -i -E 's@href="/?((\w|-)+)_(en|fr|es|it|ar|de|oc)"@href="/\1"@g' $FILE;
+    sed -i -E 's@href="/?((\w|-)+)_(en|fr|es|it|ar|de|oc|ca)"@href="/\1"@g' $FILE;
 done
 
 git checkout project_organization.md project_organization_fr.md

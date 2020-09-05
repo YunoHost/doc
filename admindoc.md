@@ -55,6 +55,7 @@
     * [Hide services with Tor](/torhiddenservice)
     * [Utilisation de certificats autres que Let's Encrypt](/certificate_custom)
     * [A discussion about the advantages of using a VPN](/vpn_advantage)
+    * [Stretch->Buster migration procedure](stretch_buster_migration)
     * [(old) Jessie->Stretch migration procedure](jessie_stretch_migration)
 * Troubleshooting
     * [Changing the administration password](/change_admin_password)
