@@ -53,6 +53,7 @@
 - [Jappix](app_jappix)
 - [Jirafeau](app_jirafeau)
 - [Jitsi](app_jitsi)
+- [Jupyterlab](app_jupyterlab)
 - [Keeweb](app_keeweb)
 - [Kresus](app_kresus)
 - [Leed](app_leed)
