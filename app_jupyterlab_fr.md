@@ -1,30 +1,16 @@
-#JupyterLab
-JupyterLab est l'interface utilisateur de nouvelle génération pour le Projet Jupyter. Elle offre tous les éléments de base familiers du bloc-notes classique Jupyter (bloc-notes, terminal, éditeur de texte, navigateur de fichiers, sorties riches, etc. ) dans une interface utilisateur flexible et puissante. JupyterLab remplacera à terme le bloc-notes classique Jupyter.
+# <img src="/images/logo-jupyterhub.png" height="80px" alt="Logo de JupyterHub"> JupyterLab
 
-### ScreenShots
-![](https://raw.githubusercontent.com/jupyterlab/jupyterlab/3e3a2c9e295703ff6d441589423e284cc6d5c245/docs/source/images/jupyterlab.png)
+[![Installer JupyterLab avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=jupyterlab) [![Integration level](https://dash.yunohost.org/integration/jupyterlab.svg)](https://dash.yunohost.org/appci/app/jupyterlab)
 
-## Demo
-* [Essayer JupyterLab sur Binder](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/master?urlpath=lab/tree/demo)
+### Index
 
-## Documentation
+- [Liens utiles](#liens-utiles)
 
-* Documentation officielle: [JupyterLab Documentation](https://jupyterlab.readthedocs.io/en/stable/)
+JupyterLab est une interface utilisateur de nouvelle génération pour le projet Jupyter offrant tous les modules de Jupyter Notebook (interpréteur Python, terminal, éditeur de texte, navigateur de fichiers, etc.) dans une interface utilisateur flexible et puissante. JupyterLab remplacera à terme Jupyter Notebook.
 
-## Caractéristiques spécifiques de YunoHost
+## Liens utiles
 
-#### Support aux utilisateurs multiples
-
-* LDAP auth supporté ? **Oui**
-* L'application peut-elle être utilisée par plusieurs utilisateurs ? **Oui**
-
-#### Architectures soutenues
-
-* x86-64 - [![Statut du Développement](https://ci-apps.yunohost.org/ci/logs/jupyterlab%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/jupyterlab/)
-* ARMv8-A - [![Statut du Développement](https://ci-apps-arm.yunohost.org/ci/logs/jupyterlab%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/jupyterlab/)
-
-## Liens
-
-* Signaler un bug : https://github.com/YunoHost-Apps/jupyterlab_ynh/issues
-* Site web de l'application : https://jupyter.org
-* Dépôt d'applications en amont : https://github.com/jupyterhub/jupyterhub
++ Site web : [github.com - JupyterHub](https://github.com/jupyterhub/jupyterhub)
++ Documentation officielle : [jupyterlab.readthedocs.io](https://jupyterlab.readthedocs.io/en/stable/)
++ Dépôt logiciel de l'application : [github.com - YunoHost-Apps/jupyterlab](https://github.com/YunoHost-Apps/jupyterlab_ynh)
++ Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/jupyterlab/issues](https://github.com/YunoHost-Apps/jupyterlab_ynh/issues)
