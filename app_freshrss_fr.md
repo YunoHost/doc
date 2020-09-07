@@ -33,5 +33,5 @@ API (mini) Comment faire :
 
  + Site web : [www.freshrss.org (en)](https://www.freshrss.org/)
  + Documentation officielle : [freshrss.github.io - FreshRSS](https://freshrss.github.io/FreshRSS/fr/)
- + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/freshrss](https://github.com/YunoHost-Apps/freshrss)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/freshrss](https://github.com/YunoHost-Apps/freshrss_ynh)
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/freshrss/issues](https://github.com/YunoHost-Apps/freshrss_ynh/issues)
