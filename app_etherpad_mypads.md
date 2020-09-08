@@ -1,4 +1,4 @@
-# <img src="/images/etherpad_mypads_logo.svg" height="80px" alt="Etherpad's logo"> Etherpad (with mypads's plugin)
+# <img src="/images/etherpad_mypads_logo.svg" height="80px" alt="Etherpad's logo"> Etherpad (with MyPads's plugin)
 
 [![Install Etherpad with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=etherpad_mypads) [![Integration level](https://dash.yunohost.org/integration/etherpad_mypads.svg)](https://dash.yunohost.org/appci/app/etherpad_mypads)
 
@@ -13,12 +13,12 @@ Etherpad is an online free text editor working in collaborative mode and in real
 
 Two control panels can be accessed:
   + for Etherpad: `domain.tld/admin`.
-  + for My Pads: `domain.tld/mypads/?/admin`.
+  + for MyPads: `domain.tld/mypads/?/admin`.
 
 ## Useful links
 
 + Website: [etherpad.org](https://etherpad.org/)
-+ Official documentation: [etherpad.org - doc](https://etherpad.org/doc/v1.7.0/)
++ Official documentation: [etherpad.org - doc](https://etherpad.org/doc/v1.8.4/)
 + Application software repository: [github.com - YunoHost-App/etherpad_mypads](https://github.com/YunoHost-Apps/etherpad_mypads_ynh)
 + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/etherpad_mypads/issues](https://github.com/YunoHost-Apps/etherpad_mypads_ynh/issues)
 
