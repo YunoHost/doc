@@ -47,7 +47,7 @@ like the `manifest.toml`/`manifest.json`.
 
 <div class="alert alert-info">
 The arguments are written in **[YunoHost Arguments
-Format](#/packaging_apps_arguments_format)** like in `manifest.toml/json`
+Format](/packaging_apps_arguments_format)** like in `manifest.toml/json`
 </div>
 
 The general pattern looks like this:

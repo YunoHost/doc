@@ -10,7 +10,14 @@ Cliquez sur l'onglet **Zone DNS**, puis sur **Ajouter une entrée**:
 
 <img src="/images/ovh_dns_zone.png" width=800>
 
-Il suffit maintenant d'ajouter les redirections DNS comme indiqué dans la [configuration DNS standard](/dns_config).
+Cliquer sur "Modifier en mode textuel", garder les 4 premières lignes :
+```bash
+$TTL 3600
+@	IN SOA dns104.ovh.net. tech.ovh.net. (2020083101 86400 3600 3600000 60)
+                         IN NS     dns104.ovh.net.
+                         IN NS     ns104.ovh.net.
+```
+puis effacer tout ce qu'il y a en-dessous, et le remplacer par la configuration donnée par votre serveur, comme indiqué dans la [configuration DNS standard](/dns_config).
 
 
 ###IP dynamique

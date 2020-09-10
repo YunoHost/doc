@@ -5,7 +5,7 @@ HTML_TARGETS=$(grep -nr -o -E 'href="\/?(\w|-)+\"' ./*.md | sed -E 's@href="/?@@
 
 ALL_TARGETS=$(echo $MARKDOWN_TARGETS $HTML_TARGETS)
 
-PAGES=$(ls *.md | sed -E 's/(_(fr|it|de|ar|oc|es|ru))?.md//g' | sort | uniq)
+PAGES=$(ls *.md | sed -E 's/(_(fr|it|de|ar|oc|es|ru|ca))?\.md//g' | sort | uniq)
 
 returncode=0
 

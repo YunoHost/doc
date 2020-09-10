@@ -11,10 +11,6 @@
 Before setting up a server at home, it is recommended that you know the [possible limitations imposed by your ISP](/isp). If they are too restrictive, you might consider using a VPN to bypass them.
 </div>
 
-<div class="alert alert-warning" markdown="1">
-YunoHost doesn't yet support ARM64 boards. For more information, see [this issue](https://github.com/YunoHost/issues/issues/438).
-</div>
-
 ## Pre-requisites
 
 - An ARM board with 500MHz CPU and 512MB RAM ;
@@ -27,7 +23,9 @@ YunoHost doesn't yet support ARM64 boards. For more information, see [this issue
 
 ## Install with the pre-installed image (recommended)
 
-<a class="btn btn-lg btn-default" href="/images">0. Download the pre-installed image for your board</a><br><small>If no pre-installed image exists for your board, you can follow the instructions to "Install on top of ARMbian"</small>
+<a class="btn btn-lg btn-default" href="/images">0. Download the pre-installed image for your board</a>
+<br>
+<small class="text-info">If no pre-installed image exists for your board, you can follow the instructions to "Install on top of ARMbian"</small>
 
 <a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Flash the SD card with the image</a>
 
