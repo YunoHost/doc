@@ -105,7 +105,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [ikiwiki](https://ikiwiki.info) |  |  |  |
 | internetarchive | Offline version of the Internet Archive | [Upstream](https://github.com/internetarchive/dweb-mirror) | [Package Draft](https://github.com/mitra42/internetarchive_ynh) |
 | Invidious |  | [Upstream](https://github.com/omarroth/invidious) |  |
-| [Invoice Ninja](https://www.invoiceninja.com) |  | [Upstream](https://github.com/invoiceninja/invoiceninja) |  |
 | [InvoicePlane](https://invoiceplane.com) |  | [Upstream](https://github.com/InvoicePlane/InvoicePlane) |  |
 | [IPFS](https://ipfs.io) |  | [Upstream](https://github.com/ipfs/ipfs) |  |
 | [Isso](https://posativ.org/isso) | Comment server | [Upstream](https://github.com/posativ/isso) |  |
@@ -307,4 +306,3 @@ You can [contribute to this list by adding something you'd like to be packaged](
 - [List of awesome sysadmin apps](https://github.com/kahun/awesome-sysadmin)
 - [List of awesome Node.js projects](https://github.com/sqreen/awesome-nodejs-projects)
 - [List of SIP softwares/applications](https://en.wikipedia.org/wiki/List_of_SIP_software#Free_and_open-source_license)
-
