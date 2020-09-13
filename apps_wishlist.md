@@ -238,7 +238,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | sickbeard | Automatic TV show downloader |  | [Package Draft](https://github.com/YunoHost-Apps/sickbeard_ynh) |
 | [sickrage](https://sickchill.github.io/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/YunoHost-Apps/sickrage_ynh) |
 | simpad | Simple markdown editor | [Upstream](https://github.com/beli3ver/SiMPad) | [Package Draft](https://github.com/YunoHost-Apps/simpad_ynh) |
-| [SimpleLogin](https://simplelogin.io) | Privacy-first email forwarding and identity provider service | [Upstream](https://github.com/simple-login/app) | |
+| [SimpleLogin](https://simplelogin.io) | Privacy-first e-mail forwarding and identity provider service | [Upstream](https://github.com/simple-login/app) | |
 | [smokeping](https://oss.oetiker.ch/smokeping/) |  | [Upstream](https://github.com/oetiker/SmokePing) |  |
 | [SocialHome](https://socialhome.network) | A federated personal profile | [Upstream](https://github.com/jaywink/socialhome) |  |
 | [Sonarr](https://sonarr.tv) |  | [Upstream](https://github.com/Sonarr/Sonarr) |  |
