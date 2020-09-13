@@ -179,6 +179,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [osmw](https://www.openstreetmap.org/) | Cartography software |  | [Package Draft](https://github.com/YunoHost-Apps/osmw_ynh) |
 | OSRM |  | [Upstream](https://github.com/Project-OSRM/osrm-backend) |  |
 | [OX Open-Xchange](https://www.open-xchange.com) | Linux groupware solution | [Upstream](https://github.com/open-xchange/) |  |
+| [Padloc](https://github.com/padloc/padloc) | Simple, secure password and data management for individuals and teams | [Upstream](https://github.com/padloc/padloc) | |
 | [pagure](https://pagure.io/pagure) | A Git forge |  | [Package Draft](https://github.com/YunoHost-Apps/pagure_ynh) |
 | Paperless |  | [Upstream](https://github.com/danielquinn/paperless) |  |
 | [Paperwork](https://paperwork.rocks) |  |  |  |
@@ -237,6 +238,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | sickbeard | Automatic TV show downloader |  | [Package Draft](https://github.com/YunoHost-Apps/sickbeard_ynh) |
 | [sickrage](https://sickchill.github.io/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/YunoHost-Apps/sickrage_ynh) |
 | simpad | Simple markdown editor | [Upstream](https://github.com/beli3ver/SiMPad) | [Package Draft](https://github.com/YunoHost-Apps/simpad_ynh) |
+| [SimpleLogin](https://simplelogin.io) | Privacy-first e-mail forwarding and identity provider service | [Upstream](https://github.com/simple-login/app) | |
 | [smokeping](https://oss.oetiker.ch/smokeping/) |  | [Upstream](https://github.com/oetiker/SmokePing) |  |
 | [SocialHome](https://socialhome.network) | A federated personal profile | [Upstream](https://github.com/jaywink/socialhome) |  |
 | [Sonarr](https://sonarr.tv) |  | [Upstream](https://github.com/Sonarr/Sonarr) |  |
