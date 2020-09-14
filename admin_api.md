@@ -1,10 +1,10 @@
 # Administration from the API or an external application
 
-All command line actions can also be ran from the web API. The API is available at https://your.server/yunohost/api. For now there's no documentation on the various routes ... but you can get an idea by looking at the actionmap [here](https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/actionsmap/yunohost.yml) (in particular the `api` stuff).
+All command line actions can also be ran from the web API. The API is available at https://your.server/yunohost/api. For now there's no documentation on the various routes... but you can get an idea by looking at the actionmap [here](https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/actionsmap/yunohost.yml) (in particular the `api` stuff).
 
-## Using `curl`
+## Using cURL
 
-You must first retrieve a login cookie to perform the actions. Here is an example via curl:
+You must first retrieve a login cookie to perform the actions. Here is an example with cURL:
 
 ```bash
 # Login (with admin password)

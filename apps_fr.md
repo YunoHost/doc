@@ -31,19 +31,19 @@ Search bar
 Disclaimers
 -->
 
-<div class="alert alert-info">L'équipe de packaging d'applications sera heureuse de recevoir vos commentaires! Si vous trouvez des problèmes ou des améliorations possibles en installant une app, n'hésitez pas à contribuer en créant un ticket (issue) directement sur le dépôt de code.</div>
+<div class="alert alert-info">L'équipe de packaging d'applications sera heureuse de recevoir vos commentaires ! Si vous trouvez des problèmes ou des améliorations possibles en installant une app, n'hésitez pas à contribuer en créant un ticket (issue) directement sur le dépôt de code.</div>
 
 <div id="bad-quality-apps-disclaimer" class="alert alert-warning">
     Les applications étiquettées <span class="label label-warning label-as-badge">low quality</span> fonctionnent peut-être, mais ne respectent pas les bonnes pratiques de packaging ou ne supportent pas certaines fonctionnalités comme les sauvegardes/restauration ou l'authentication unifiée. Soyez prudent si vous les installez.
 </div>
 
 <div id="broken-apps-disclaimer" class="alert alert-danger">
-    Les applications étiquettées <span class="label label-danger label-as-badge">not working</span> sont connues pour être cassées et/ou encore en développement. **Ne les installez pas** sur un serveur de production!
+    Les applications étiquettées <span class="label label-danger label-as-badge">not working</span> sont connues pour être cassées et/ou encore en développement. **Ne les installez pas** sur un serveur de production !
 </div>
 
 <div id="app-cards-list" class="app-cards-list"></div>
 
-<div class="alert alert-warning">Si vous ne trouvez pas une application précise que vous recherchez, vous pouvez chercher un dépôt nommé nomdelapp_ynh sur Github ou internet, ou bien l'ajouter à la <a href="/apps_wishlist">liste d'apps souhaitées</a>.</div>
+<div class="alert alert-warning">Si vous ne trouvez pas une application précise que vous recherchez, vous pouvez chercher un dépôt nommé nomdelapp_ynh sur GitHub ou internet, ou bien l'ajouter à la <a href="/apps_wishlist">liste d'apps souhaitées</a>.</div>
 
 <!--
 Custom CSS for this page

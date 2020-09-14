@@ -8,10 +8,10 @@
 
 Weblate is a web-based translation tool strongly linked to version control systems. Through a clear and simple user interface, Weblate allows the propagation of translations between sub-projects, can check the
 quality of the translations and is automatically linked to the source files.
-Weblate works very well with a GitLab, Github, Bitbucket server. It is possible to import already existing translations of a project, allowing everyone to contribute to the translation of a project via its web interface,
+Weblate works very well with a GitLab, GitHub, Bitbucket server. It is possible to import already existing translations of a project, allowing everyone to contribute to the translation of a project via its web interface,
 and then push the translations to the repository.
 There is a system for reviewing, suggesting, commenting on a translation.
-You can install a third party authentication, for example you can log in with your Github account. Our account then allows us to keep a history.
+You can install a third party authentication, for example you can log in with your GitHub account. Our account then allows us to keep a history.
 
 
 ## Useful links
