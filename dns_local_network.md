@@ -8,10 +8,10 @@ To resolve this issue, you need to configure your router dns or, failing, your h
 In order to configure DNS or hosts file, you must know the private IP adress of your server. This adress is only working in the server local network and is not linked to your public IP adress.
 
 You may retrieve your server private IP adress  through different means:
-- Using the Yunohost connection screen on the server:
+- Using the YunoHost connection screen on the server:
 <img src="/images/ynh_login.png" width=600>
 
-- Using Yunohost administration panel:
+- Using YunoHost administration panel:
     Go to Tools > State of the server > Network
 <img src="/images/ynh_admin_etat_ip.png" width=900>
 

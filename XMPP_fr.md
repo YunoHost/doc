@@ -1,6 +1,6 @@
 #Chat, VoIP et réseau social avec <img src="/images/XMPP_logo.png" width=100>
 
-Yunohost est installé par défaut avec un serveur de messagerie instantanée Metronome qui implémente le [protocole XMPP](https://fr.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol) (anciennement connu sous le nom Jabber).
+YunoHost est installé par défaut avec un serveur de messagerie instantanée Metronome qui implémente le [protocole XMPP](https://fr.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol) (anciennement connu sous le nom Jabber).
 
 Ce protocole est déjà utilisé par des millions de personnes dans le monde - c'est un protocole ouvert. Toutes les applications basées sur XMPP sont compatibles entre elles : lorsque vous utilisez un client XMPP, vous pouvez interagir avec quiconque possède un compte XMPP.
 
@@ -10,7 +10,7 @@ XMPP est un protocole extensible - cela signifie que les utilisateurs peuvent co
 
 Pour utiliser XMPP, il est nécessaire de disposer d'un compte dont l'identifiant prends la forme `utilisateur@domaine.tld`, ainsi qu’un mot de passe.
 
-Sous Yunohost, un compte XMPP est créé automatiquement pour chaque utilisateur. Les identifiants XMPP sont simplement l’adresse courriel principale de l'utilisateur ainsi que son mot de passe.
+Sous YunoHost, un compte XMPP est créé automatiquement pour chaque utilisateur. Les identifiants XMPP sont simplement l’adresse courriel principale de l'utilisateur ainsi que son mot de passe.
 
 ## Se connecter à son compte XMPP YunoHost
 
@@ -51,7 +51,7 @@ Il est possible de rendre les conversations plus sécurisées et privées en les
 
 ## Salon de discussion
 
-Pour créer un salon de discussion (Multi-user chat) sur votre serveur Yunohost utilisez l’identifiant nomsalon@muc.domaine.tld (où domaine.tld est le domaine principal de votre serveur).
+Pour créer un salon de discussion (Multi-user chat) sur votre serveur YunoHost utilisez l’identifiant nomsalon@muc.domaine.tld (où domaine.tld est le domaine principal de votre serveur).
 
 Si vous utilisez un nom de domaine personnel, il est nécessaire d’[ajouter une redirection de type CNAME pour le sous domaine `muc.`](/dns_config) au niveau de votre serveur DNS.
 

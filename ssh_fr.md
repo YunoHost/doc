@@ -57,7 +57,7 @@ Si vous avez configuré vos DNS (ou modifié votre `/etc/hosts`), vous pouvez ut
 ssh admin@votre.domaine.tld
 ```
 
-Si vous avez changé le port SSH, il faut rajouter `-p <numerodeport>` à la commande, par ex. :
+Si vous avez changé le port SSH, il faut rajouter `-p <numerodeport>` à la commande, par exemple :
 
 ```bash
 ssh -p 2244 admin@votre.domaine.tld
@@ -69,7 +69,7 @@ Si vous êtes connecté en tant qu'`admin` et souhaitez devenir `root` pour plus
 
 ## Quels utilisateurs ?
 
-Par défaut, seulement l'utilisateur `admin` peut se logger en SSH sur une instance Yunohost.
+Par défaut, seulement l'utilisateur `admin` peut se logger en SSH sur une instance YunoHost.
 
 Les utilisateurs YunoHost créés via l'interface d'administration sont gérés par la base de donnée LDAP. Par défaut, ils ne peuvent pas se connecter en SSH pour des raisons de sécurité. Si vous avez absolument besoin qu'un utilisateur dispose d'un accès SSH, vous pouvez utiliser la commande :
 ```bash

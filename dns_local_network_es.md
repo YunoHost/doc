@@ -8,10 +8,10 @@ Para resolver este problema, es preciso configurar el DNS de tu router o, por de
 A fin de configurar el DNS o el archivo hosts, tienes que conocer la dirección IP privada de tu servidor. Esta dirección sólo puede ser utilizada en la red local donde está el servidor, y no está vinculada con tu dirección pública utilizada en Internet.
 
 Puedes descubrir la dirección privada de tu servidor de varias maneras :
-- En la pantalla de conexión de Yunohost en el mismo servidor :
+- En la pantalla de conexión de YunoHost en el mismo servidor :
 <img src="/images/ynh_login.png" width=600>
 
-- Desde la interfaz de administración de tu servidor Yunohost :
+- Desde la interfaz de administración de tu servidor YunoHost :
     en Herramientas > Estado del servidor > Red
 <img src="/images/ynh_admin_etat_ip.png" width=900>
 

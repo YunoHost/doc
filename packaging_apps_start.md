@@ -2,13 +2,13 @@
 
 This documentation is here is to provide all the basic concepts and vocabulary needed to understand app packaging. eg: shell, parsing, system administration...
 
-We will detail what is a Yunohost application package, how it works, how to make your own package and how to find help if you need it.
+We will detail what is a YunoHost application package, how it works, how to make your own package and how to find help if you need it.
 
-## What is a Yunohost application package
+## What is a YunoHost application package
 
 Before we continue, we need to define what is exactly an application package.
 
-To be able to do that, we need to remember that Yunohost at its core is a server operating system whose mission is to simplify selfhosting of internet services. To accomplish that, Yunohost provides, among other things, an administration panel allowing application installation in a few clicks.
+To be able to do that, we need to remember that YunoHost at its core is a server operating system whose mission is to simplify selfhosting of internet services. To accomplish that, YunoHost provides, among other things, an administration panel allowing application installation in a few clicks.
 
 If you have ever installed a web application manually, you already know that the process is in reality far more complex, usually involving a lot of steps and discipline.
 
@@ -24,16 +24,16 @@ From the final user perspective, it is as simple as it can be:
 4. Application is ready to use
 
 There is more to see backstage:
-First, when the application is selected, Yunohost will retrieve the corresponding package from github. eg: [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh).
-Then, Yunohost will read the manifest.json file to know what questions to ask the user through the form.
+First, when the application is selected, YunoHost will retrieve the corresponding package from github. eg: [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh).
+Then, YunoHost will read the manifest.json file to know what questions to ask the user through the form.
 
 These seamingly trivial questions are very important. Usually you would need to ask for the domain on which to install, the path to access, the user that will be designated administrator and the default language for the application.
 
-These are critical to configure appropriately the web application during the installation process. To do so, Yunohost will retrieve the answers given by the user and send them to the installation script located in the package "*scripts*" folder.
+These are critical to configure appropriately the web application during the installation process. To do so, YunoHost will retrieve the answers given by the user and send them to the installation script located in the package "*scripts*" folder.
 
 The install script will handle the user answers to complete the process as you would have done manually.
 
-If the user wants to delete the application, Yunohost will use the remove script from the "*scripts*" folder. It will handle the cleaning process for the user and delete all folders and configuration files that was previsouly installed by the application.
+If the user wants to delete the application, YunoHost will use the remove script from the "*scripts*" folder. It will handle the cleaning process for the user and delete all folders and configuration files that was previsouly installed by the application.
 
 ### What is a script?
 

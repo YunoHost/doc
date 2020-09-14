@@ -1,12 +1,12 @@
 # Create a development environment with VirtualBox
 
-This documentation page aims at explaining how to setup a Yunohost virtual server, using VirtualBox, to work on application packaging.
+This documentation page aims at explaining how to setup a YunoHost virtual server, using VirtualBox, to work on application packaging.
 
-## Why use VirtualBox rather than an actual YunoHost production server to package an application ?
+## Why use VirtualBox rather than an actual YunoHost production server to package an application?
 
-There are mostly two reasons why one should prefer a virtual server rather than their own server :
+There are mostly two reasons why one should prefer a virtual server rather than their own server:
 
-- You can freely torture a virtual server without any risk of breaking it, since you can always restore it to a former working state. It would really be a pity to break your own real server !
+- You can freely torture a virtual server without any risk of breaking it, since you can always restore it to a former working state. It would really be a pity to break your own real server!
 - In a typical workflow, a virtual server state would be restored from a known snapshot before starting any work on it, so as to always keep a clean system, without any residues of a former installation. This allows to always be as close a possible to a user first installation.
 
 We will discuss VirtualBox in this guide, as it comes with an easy to use GUI. If you prefer a pure commandline approach to handling your virtual machine, you should use [ynh-dev](/dev) instead.
@@ -88,4 +88,4 @@ To easily copy the package files or use a graphical text editor, one can also co
 It's a simple matter of using the `sftp://admin@my.domain/` address.
 <img src="/images/virtualbox_packaging6.jpg" width=80%>
 
-> Note: on Windows or macOS, the file explorer does not natively support the `sftp` protocol…
+> Note: on Windows or macOS, the file explorer does not natively support the `sftp` protocol...

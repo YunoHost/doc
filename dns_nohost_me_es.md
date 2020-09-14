@@ -1,21 +1,21 @@
 # Nombres de dominios automáticos
 
-Para hacer que el auto-alojamiento esté lo más accesible posible, el Proyecto Yunohost provee un servicio de nombres de dominio *ofertos* y *automáticamente configurados*. Cuando utilizas este servicio, no tienes que configurar tú mismo la [configuración de los registros DNS](/dns_config) que es bastante técnica.
+Para hacer que el auto-alojamiento esté lo más accesible posible, el Proyecto YunoHost provee un servicio de nombres de dominio *ofertos* y *automáticamente configurados*. Cuando utilizas este servicio, no tienes que configurar tú mismo la [configuración de los registros DNS](/dns_config) que es bastante técnica.
 
 Los subdominios siguientes están propuestos :
 - `loquequieras.nohost.me` ;
 - `loquequieras.noho.st` ;
 - `loquequieras.ynh.fr`.
 
-Para aprovechar de este servicio, basta con elegir uno de estos tipos de dominios durante la post-instalación. ¡ Estará automáticamente configurado por Yunohost !
+Para aprovechar de este servicio, basta con elegir uno de estos tipos de dominios durante la post-instalación. ¡ Estará automáticamente configurado por YunoHost !
 
-N.B. : Por razones de equidad, sólo puedes tener un *único nombre de dominio* nohost.me por instalación de Yunohost.
+N.B. : Por razones de equidad, sólo puedes tener un *único nombre de dominio* nohost.me por instalación de YunoHost.
 
 ### Subdominios
 
 El servicio de dominios `nohost.me`, `noho.st` y `ynh.fr` no permite la creación de subdominios.
 
-Aunque Yunohost permita la instalación de aplicaciones en subdominios (por ejemplo teniendo la aplicación Nextcloud accesible desde la dirección `cloud.midominio.org`), esta función no está permitida con los dominios `nohost.me` y `noho.st` y no es posible tener un subdominio tal como `miaplicacion.midominio.nohost.me`.
+Aunque YunoHost permita la instalación de aplicaciones en subdominios (por ejemplo teniendo la aplicación Nextcloud accesible desde la dirección `cloud.midominio.org`), esta función no está permitida con los dominios `nohost.me` y `noho.st` y no es posible tener un subdominio tal como `miaplicacion.midominio.nohost.me`.
 
 Para poder aprovechar de las aplicaciones instalables únicamente a la raíz de un nombre de de dominio, hay que tener su propio nombre de dominio.
 
@@ -41,7 +41,7 @@ yunohost dyndns update
 
 ### Recuperar un dominio nohost.me, noho.st o ynh.fr
 
-Si reinstalas tu servidor y quieres utilizar un dominio automático que ya utilizaste, tienes que pedir una reinstalación del dominio al Proyecto Yunohost [en el hilo de discusión dedicado del foro](https://forum.yunohost.org/t/nohost-domain-recovery/442).
+Si reinstalas tu servidor y quieres utilizar un dominio automático que ya utilizaste, tienes que pedir una reinstalación del dominio al Proyecto YunoHost [en el hilo de discusión dedicado del foro](https://forum.yunohost.org/t/nohost-domain-recovery/442).
 
 ### Cambiar un dominio nohost.me, noho.st o ynh.fr
 Si quieres utilizar otro dominio automático en tu servidor, primero tienes que cancelar el que ya está configurado, siguiendo estas instrucciones :

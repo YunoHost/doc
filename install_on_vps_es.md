@@ -1,6 +1,6 @@
 # Instalación en un servidor dedicado
 
-*Encontrar otros medios de instalar Yunohost **[aquí](/install)**.*
+*Encontrar otros medios de instalar YunoHost **[aquí](/install)**.*
 
 ## Prerrequisitos
 

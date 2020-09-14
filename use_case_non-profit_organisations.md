@@ -160,7 +160,7 @@ You have several choices, or having an integrated forum in Drupal or using a ded
 ### Backup
 
 YunoHost provide is own backup system. Before any package upgrade, YunoHost backup the current version of the package and automaticaly restore it if the upgrade fails.
-Yunohost backup are stored localy in `/home/yunohost.backup/archives`.
+YunoHost backup are stored localy in `/home/yunohost.backup/archives`.
 
 But for production, localy stored backup are not enough, so you will need to implement aditional backup strategies:
 * Backup of the the Virtual Machine if provided by the hosting system.

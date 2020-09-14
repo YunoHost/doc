@@ -4,11 +4,11 @@
 
 **SSH** est un acrónimo por Secure Shell, y representa un protocolo que permite controlar remotamente una máquina vía la línea de comandos (CLI). También es un comando básico disponible en los terminales de Linux y MacOS / OSX. En Windows, hace falta utilizar el programa [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (después de haberlo iniciado, clicar sobre Session y luego SSH).
 
-## Durante la instalación de Yunohost
+## Durante la instalación de YunoHost
 
 #### Encontrar su IP
 
-Si instalas Yunohost en un VPS, tu proveedor debería haberte comunicado la dirección IP de tu servidor. 
+Si instalas YunoHost en un VPS, tu proveedor debería haberte comunicado la dirección IP de tu servidor. 
 
 Si instalas un servidor en tu casa (por ejemplo en Raspberry Pi u OLinuXino), tienes que encontrar el IP que fue atribuido a tu tarjeta cuando la conectaste a tu router / caja Internet. Hay varias maneras de hacerlo :
 
@@ -65,9 +65,9 @@ Si estás conectado como `admin` y quieres ser `root` para tener más confort (p
 
 ## ¿ Qué usuarios ?
 
-Por defecto, sólo el usuario `admin` puede conectarse en SSH en una instancia Yunohost.
+Por defecto, sólo el usuario `admin` puede conectarse en SSH en una instancia YunoHost.
 
-Los usuarios Yunohost creados vea la interfaz de administración están administrados por la base de datos LDAP. Por defecto, no pueden conectarse en SSH por razones de seguridad. Si necesitas absolutamente que uno de estos usuarios disponga de un acceso SSH, puedes utilizar el comando :
+Los usuarios YunoHost creados vea la interfaz de administración están administrados por la base de datos LDAP. Por defecto, no pueden conectarse en SSH por razones de seguridad. Si necesitas absolutamente que uno de estos usuarios disponga de un acceso SSH, puedes utilizar el comando :
 ```bash
 yunohost user ssh allow <username>
 ```

@@ -1,6 +1,6 @@
 # Instalación en un ordenador
 
-*Encontrar otros medios de instalar Yunohost **[aquí](/install)**.*
+*Encontrar otros medios de instalar YunoHost **[aquí](/install)**.*
 
 ## Prerrequisitos
 

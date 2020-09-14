@@ -1,6 +1,6 @@
 # Instalar Yunohost en una tarjeta ARM
 
-*Encontrar otros medios de instalar Yunohost **[aquí](/install)**.*
+*Encontrar otros medios de instalar YunoHost **[aquí](/install)**.*
 
 <center>
 <img src="/images/olinuxino.jpg" width=250 style="padding-bottom:20px">

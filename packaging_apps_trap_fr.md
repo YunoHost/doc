@@ -61,7 +61,7 @@ EXIT_PROPERLY () {
 }
 ```
 
-La fonction EXIT_PROPERLY doit indiquer à l'utilisateur l'échec de l'installation et nettoyer les résidus qui ne seront pas pris en charge par le script remove. Ce dernier sera automatiquement appelé à la suite de l'exit 1 avec Yunohost 2.4
+La fonction EXIT_PROPERLY doit indiquer à l'utilisateur l'échec de l'installation et nettoyer les résidus qui ne seront pas pris en charge par le script remove. Ce dernier sera automatiquement appelé à la suite de l'exit 1 avec YunoHost 2.4
 
 Après cette fonction, on peut mettre en place la capture des signaux par trap.
 

@@ -22,7 +22,7 @@ Salas de chat para el desarollo de YunoHost:
 - Matrix: **#freenode_#yunohost-dev:matrix.org** ;
 - XMPP: **[dev@conference.yunohost.org](xmpp:dev@conference.yunohost.org?join)**
 
-Actualmente, la sala principal de chat para contribuciones en Yunohost
+Actualmente, la sala principal de chat para contribuciones en YunoHost
 Para mas ayuda, vea la sala de chat **#yunohost** encima.
 
 #### Sala de chat para las integración de aplicaciones
@@ -33,7 +33,7 @@ Estos permite la ayuda mutua para los integradores de aplicaciones y también pa
 
 #### Sala de chat de Documentación 
 Lugar donde la comunidad conversa sincroniza y mantiene actualisado la documentación en los aspectos varios como (backend, frontend, apps, proyecto, comunidad...)
-Puede tambien compartir sus materiales sobre Yunohost (videos, presentaciones, etc.).
+Puede tambien compartir sus materiales sobre YunoHost (videos, presentaciones, etc.).
 - IRC: **#yunohost-doc** on irc.freenode.net
 - Matrix: **#freenode_#yunohost-doc:matrix.org**
 - XMPP: **[doc@conference.yunohost.org](xmpp:doc@conference.yunohost.org?join)**

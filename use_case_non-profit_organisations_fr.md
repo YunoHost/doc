@@ -159,7 +159,7 @@ Vous avez plusieurs choix, avoir un forum intégré dans Drupal ou utiliser un s
 ### Sauvegarde
 
 YunoHost fournit son propre système de sauvegarde. Avant toute mise à niveau de paquet, YunoHost sauvegarde la version actuelle du paquet et la restaure automatiquement si la mise à niveau échoue.
-Les sauvegardes Yunohost sont stockées localement dans `/home/yunohost.backup/archives`.
+Les sauvegardes YunoHost sont stockées localement dans `/home/yunohost.backup/archives`.
 
 Mais pour la production, la sauvegarde stockée localement ne suffit pas, vous devez donc mettre en œuvre des stratégies de sauvegarde supplémentaires :
 * Sauvegarde de la machine virtuelle si fournie par le système d'hébergement.

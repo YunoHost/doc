@@ -2,7 +2,7 @@
 
 La configuración de los DNS es una etapa crucial para que tu servidor esté accesible. En efecto, si tus DNS están mal configurados, con mucha certeza tendrás problemas de conexión a tu servidor vía tu nombre de dominio.
 
-*Aunque esta etapa de documentación parezca larga y compleja, sigue siendo muy importante si quieres entender correctamente las implicaciones de la denominación en Internet vía los nombres de dominio, que son necesarios para el funcionamiento de tu servidor Yunohost.*
+*Aunque esta etapa de documentación parezca larga y compleja, sigue siendo muy importante si quieres entender correctamente las implicaciones de la denominación en Internet vía los nombres de dominio, que son necesarios para el funcionamiento de tu servidor YunoHost.*
 
 ### ¿ Qué es ?
 

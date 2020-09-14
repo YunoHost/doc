@@ -2,7 +2,7 @@
 
 Los certificados sirven para garantizar la confidencialidad y la autenticidad de las comunicaciones entre un navegador web y tu servidor. En particular, permite proteger los visitantes contra atacantes que podrían intentar de robar la identidad del servidor.
 
-Por defecto, Yunohost provee un certificado **auto-firmado**, lo que significa que es tu servidor el que garantiza la validez del certificado. Es suficiente **en el caso de un uso personal**, porque puedes confiar en tu propio servidor, pero esto planteará problemas si piensas en abrir el acceso a tu servidor a personas anónimas, por ejemplo si quieres alojar un sitio web.
+Por defecto, YunoHost provee un certificado **auto-firmado**, lo que significa que es tu servidor el que garantiza la validez del certificado. Es suficiente **en el caso de un uso personal**, porque puedes confiar en tu propio servidor, pero esto planteará problemas si piensas en abrir el acceso a tu servidor a personas anónimas, por ejemplo si quieres alojar un sitio web.
 En efecto, los usuarios deberán pasar por una pantalla de este tipo :
 
 <img src="/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
@@ -11,7 +11,7 @@ Esta pantalla equivale a que te pidan ** ¿ Confías en el servidor que aloja es
 
 Para evitar esta confusión, es posible obtener un certificado, reconocido directamente por los navegadores, firmado por una autoridad « conocida » : **Let's Encrypt**, **Gandi**, **RapidSSL**, **StartSSL**, **Cacert**.
 
-**Let's Encrypt** propone certificados gratuitos. Desde la versión 2.5, Yunohost permite instalar directamente tales certificados desde la interfaz de administración o la línea de comandos. El resto del documento detalla la instalación y la firma de este tipo de certificado. También puedes [instalar un certificado de otra autoridad que Let's Encrypt](/certificate_custom).
+**Let's Encrypt** propone certificados gratuitos. Desde la versión 2.5, YunoHost permite instalar directamente tales certificados desde la interfaz de administración o la línea de comandos. El resto del documento detalla la instalación y la firma de este tipo de certificado. También puedes [instalar un certificado de otra autoridad que Let's Encrypt](/certificate_custom).
 
 ### Instalar un certificado Let's Encrypt
 
@@ -69,9 +69,7 @@ Si, después de una manipulación incorrecta, un certificado se encuentra en una
 yunohost domain cert-install tu.dominio.tld --self-signed --force
 ```
 
-Si Yunohost te dice que tu dominio está mal configurado mientras que has verificado tu configuración DNS y que tienes acceso a tu servidor en HTTP desde afuera, puedes intentar :
+Si YunoHost te dice que tu dominio está mal configurado mientras que has verificado tu configuración DNS y que tienes acceso a tu servidor en HTTP desde afuera, puedes intentar :
 
 - de añadir una línea `127.0.0.1 tu.dominio.tld` al archivo `/etc/hosts` en tu servidor ;
 - si la instalación todavía no funciona, desactiva las verificaciones añadiendo `--no-checks` al comando `cert-install`.
-
-

@@ -2,7 +2,7 @@
 
 To diagnose that all critical aspects of your server are properly configured,
 you should run a diagnosis from the webadmin in the "Diagnosis" section. (This
-feature was added in Yunohost 3.8).
+feature was added in YunoHost 3.8).
 
 TODO: elaborate on the fact that the diagnosis runs periodically, sends an email
 to root which is forwarded to the very first user created, and that issues

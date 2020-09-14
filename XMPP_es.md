@@ -1,6 +1,6 @@
 # Chat, VoIP y red local con <img src="/images/XMPP_logo.png" width=100>
 
-Yunohost está instalado con un servidor de mensajería instantánea Metronome que implementa el [protocolo  XMPP](https://es.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol).
+YunoHost está instalado con un servidor de mensajería instantánea Metronome que implementa el [protocolo  XMPP](https://es.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol).
 
 XMPP es un protocolo abierto y extensible que también permite crear salones de discusión, compartir status y datos, echar llamadas en VoIP y hacer videoconferencias. 
 
@@ -8,7 +8,7 @@ Todas las aplicaciones basadas en XMPP son compatibles entre ellas : cuando util
 
 ## Cuenta XMPP/Jabber
 
-Una cuenta XMPP/Jabber está basada en un ID bajo la forma `usuario@dominio.tld`, así como una contraseña. La contraseña es la de la cuenta del usuario de Yunohost.
+Una cuenta XMPP/Jabber está basada en un ID bajo la forma `usuario@dominio.tld`, así como una contraseña. La contraseña es la de la cuenta del usuario de YunoHost.
 
 ## Conectarse a XMPP
 
@@ -42,7 +42,7 @@ Es posible cifrar tu conversaciones XMPP con la ayuda de [OMEMO](https://xmpp.or
 
 ### Salón de discusión 
 
-Para crear un salón de discusión (Multi-user chat) en tu servidor Yunohost, utiliza el ID nombredelsalon@muc.dominio.tld (donde dominio.tld es el dominio principal de tu servidor).
+Para crear un salón de discusión (Multi-user chat) en tu servidor YunoHost, utiliza el ID nombredelsalon@muc.dominio.tld (donde dominio.tld es el dominio principal de tu servidor).
 
 Si utilizas un nombre de dominio personal, es necesario [añadir una redirección de tipo CNAME para el subdominio `muc.`](/dns_config) en tu servidor DNS.
 

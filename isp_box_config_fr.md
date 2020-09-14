@@ -18,7 +18,7 @@ fournis par votre fournisseur d'accès internet (FAI).
 Identifiez quelle est l'IP locale de votre serveur, soit :
 - depuis l'interface de votre routeur/box, qui liste peut-être les dispositifs
   connectés;
-- depuis la webadmin de Yunohost, dans 'Diagnostic', section 'Connectivité Internet', cliquer sur 'Details' à côté de la ligne sur IPv4.
+- depuis la webadmin de YunoHost, dans 'Diagnostic', section 'Connectivité Internet', cliquer sur 'Details' à côté de la ligne sur IPv4.
 - depuis la webadmin de YunoHost, dans 'État du serveur', 'Réseau';
 
 Une adresse IP locale ressemble généralement à `192.168.xx.yy`, ou `10.0.xx.yy`.

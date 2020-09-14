@@ -44,19 +44,19 @@ Install the program and run *Filezilla*.
 
 1. Connect to the Site created previously. *Your passwork might be asked again*
 
-   The left panel corresponds to your computer. The right panel corresponds to your remote Yunohost server. You can browse folders and drag-and-drop files between the two panels.
+   The left panel corresponds to your computer. The right panel corresponds to your remote YunoHost server. You can browse folders and drag-and-drop files between the two panels.
 
    ![view while connected to a remote server](images/filezilla_6.png)
 
 2. In the right panel, you can browse to `/home/yunohost.backup/archives/` to find [backup archives](/backup).
 
-   ![path where backups are located on Yunohost](images/filezilla_7.png)
+   ![path where backups are located on YunoHost](images/filezilla_7.png)
 
 <div class="alert alert-warning">
   <span class="glyphicon glyphicon-cloud-download"></span> Be sure to download both the `.tar.gz` and `.json` files.
 </div>
 
-![Copy backups from Yunohost to local computer](images/filezilla_8.png)
+![Copy backups from YunoHost to local computer](images/filezilla_8.png)
 
 ----
 

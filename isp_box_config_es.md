@@ -26,7 +26,7 @@ En general una dirección IP local se parece a `192.168.xx.yy`, o `10.0.xx.yy`.
 
 En la interfaz de administración de tu router/caja/box, tienes que encontrar una categoría que debe llamarse 'Configuración del router', o 'Redirección de puertos'. El nombre difiere según el tipo o la marca del router / de la caja Internet...
 
-Luego tienes que redirigir cada uno de los puertos listados a continuación hacia la IP local de tu router para que los varios servicios de Yunohost funcionen. Para cada uno de ellos, una redirección 'TCP' es necesaria. En algunas interfaces, tal vez encontrarás referencias a un puerto 'externo' y un puerto 'interno' : en nuestro caso, se trata del mismo número de puerto, que sea interno o externo.
+Luego tienes que redirigir cada uno de los puertos listados a continuación hacia la IP local de tu router para que los varios servicios de YunoHost funcionen. Para cada uno de ellos, una redirección 'TCP' es necesaria. En algunas interfaces, tal vez encontrarás referencias a un puerto 'externo' y un puerto 'interno' : en nuestro caso, se trata del mismo número de puerto, que sea interno o externo.
 
 * Web: 80 <small>(HTTP)</small>, 443 <small>(HTTPS)</small>
 * [SSH](/ssh): 22

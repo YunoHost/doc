@@ -1,6 +1,6 @@
 # Instalar YunoHost en VirtualBox
 
-*Encontrar otros medios de instalar Yunohost **[aquí](/install)**.*
+*Encontrar otros medios de instalar YunoHost **[aquí](/install)**.*
 
 ## Prerrequisitos
 

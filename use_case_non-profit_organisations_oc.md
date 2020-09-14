@@ -159,7 +159,7 @@ Avètz mantun possibilitats, aver un forum integrat a Drupal o utilizar un sist�
 ### Salvagarda
 
 YunoHost fornís son pròpri sistèma de salvagarda. Abans tota mesa a nivèl de paquet, YunoHost salvagarda la version actuala del paquet e la restaura automaticament se la mesa a nivèl se debana pas corrèctament.
-Las salvagardas Yunohost son gardadas localament dins `/home/yunohost.backup/archives`.
+Las salvagardas YunoHost son gardadas localament dins `/home/yunohost.backup/archives`.
 
 Mas per la produccion, la salvagarda gardada localament basta pas, vos cal emplegar d’estrategias de salvagarda suplementàrias :
 * Salvagarda de la maquina virtuala se fornida pel sistèma d’albergament.

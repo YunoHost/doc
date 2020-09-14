@@ -16,7 +16,7 @@ Il metodo di default attuale crea degli archivi `.tar.gz` contenenti tutti i fil
 
 Potete creare gli archivi di backup dalla pagina web di amministrazione andando in Backup > Archivi locali e cliccare su "Nuovo backup". Vi verrà chiesto di selezionare quale configurazione, dati e di quale app volete fare il backup.
 
-![picture of Yunohost's backup pannel](/images/backup.png)
+![picture of YunoHost's backup pannel](/images/backup.png)
 
 ### Dalla riga di comando
 
@@ -92,7 +92,7 @@ scp /path/to/your/<archivename>.tar.gz admin@your.domain.tld:/home/yunohost.back
 Dovete andare in Backup > Archivi locali e selezionare il vostro archivio. È possibile selezionare ciò che volete ripristinare e poi cliccare su 'Ripristina'.
 
 
-![picture of Yunohost's restore pannel](/images/restore.png)
+![picture of YunoHost's restore pannel](/images/restore.png)
 
 ### Dalla riga di comando
 

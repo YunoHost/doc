@@ -52,13 +52,13 @@ Installez le programme et lancez *Filezilla*.
 
 2. Dans le panneau de droite, vous pouvez aller dans `/home/yunohost.backup/archives/` pour trouver les archives de [sauvegardes](/backup).
 
-   ![le chemin où les sauvegardes sont situées sur Yunohost](images/filezilla_7.png)
+   ![le chemin où les sauvegardes sont situées sur YunoHost](images/filezilla_7.png)
 
 <div class="alert alert-warning">
   <span class="glyphicon glyphicon-cloud-download"></span> Assurez-vous de télécharger à la fois le fichier `.tar.gz` et le fichier `.json`
 </div>
 
-![Copier les sauvegardes de Yunohost sur l'ordinateur local](images/filezilla_8.png)
+![Copier les sauvegardes de YunoHost sur l'ordinateur local](images/filezilla_8.png)
 
 ----
 

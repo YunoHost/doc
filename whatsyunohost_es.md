@@ -1,12 +1,10 @@
-¿Qué es YunoHost?
-=================
+# ¿Qué es YunoHost?
 
 <img src="/images/YunoHost_logo_vertical.png" width=400>
 
 YunoHost es un **sistema operativo** que persigue simplificar la administración de un **servidor** para democratizar el [autoalojamiento](selfhosting), asegurando que se mantiene fiable, seguro, ético y ligero. Es un proyecto de software libre copyleft mantenido exclusivamente por voluntarios. Se puede considerar técnicamente como una distribución basada en [Debian GNU/Linux](https://debian.org) y se puede instalar en [muchos tipos de hardware](install).
 
-Características
----------------
+## Características
 
 - <img src="/images/icon-debian.png" width=32 style="margin-right:5px"> Basado en Debian ;
 - <img src="/images/icon-tools.png" width=32 style="margin-right:5px" width=64> Administra tu servidor mediante un **interfaz web amigable** ;
@@ -20,8 +18,7 @@ Características
 - <img src="/images/icon-lock.png" width=32 style="margin-right:5px"> Administra **certificados SSL** <small>(apoyándose en Let's Encrypt)</small> ;
 - <img src="/images/icon-shield.png" width=32 style="margin-right:5px"> … y **sistemas de seguridad** <small>(fail2ban, yunohost-firewall)</small> ;
 
-Origen
-------
+## Origen
 
 YunoHost se creó en Febrero de 2012 tras algo así:
 
@@ -35,8 +32,7 @@ Notando un entusiasmo creciente alrededor de YunoHost y el autoalojamiento en ge
 El nombre **YunoHost** viene de la jerga "Y U NO Host". El [meme de Internet ](https://en.wikipedia.org/wiki/Internet_meme) debería ilustrarlo:
 <div class="text-center"><img style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" src="/images/dude_yunohost.jpg"></div>
 
-¿Qué no es YunoHost?
---------------------
+## ¿Qué no es YunoHost?
 
 Incluso aunque YunoHost puede manejar multiples dominios y multiples usuarios, **no está diseñado para ser un sistema mancomunado**.
 
@@ -44,8 +40,7 @@ Primero, el software es demasiado joven, no está probado a gran escala y por ta
 
 Puedes alojar a tus amistades, tu familia y a tu compañía con facilidad y seguridad, pero tienes que **confiar en tus usarios**, y sobre todo ellos tienen que confiar en tí. Si aún así quieres proveer servicios YunoHost a desconocidos, creemos que es mejor un VPS por usuario.
 
-Arte
-----
+## Arte
 
 PNG con el logotipo de YunoHost en blanco y negro por ToZz (400 × 400 px):
 

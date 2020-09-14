@@ -2,7 +2,7 @@
 
 DNS (sistema de nombre de dominios) es un elemento esencial de Internet que permite convertir direcciones comprensibles por seres humanos (los nombres de dominio) en direcciones comprensibles por la máquina (los IPs). Para que tu servidor esté fácilemente por otros seres humanos, y para que servicios como el mail funcionen correctamente, es preciso configurar la zona DNS de tu dominio.
 
-Si utilizas un [dominio automático](/dns_nohost_me) provecho por el Proyecto Yunohost, la configuración debería ser automática. Si quieres utilizar tu propio nombre de dominio (comprado a un registrar), hay que configurar manualmente tu proprio nombre de dominio vía la interfaz de tu registrar.
+Si utilizas un [dominio automático](/dns_nohost_me) provecho por el Proyecto YunoHost, la configuración debería ser automática. Si quieres utilizar tu propio nombre de dominio (comprado a un registrar), hay que configurar manualmente tu proprio nombre de dominio vía la interfaz de tu registrar.
 
 
 ## Configuración DNS recomendada
