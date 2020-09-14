@@ -1,16 +1,15 @@
 # <img src="/images/weblate_logo.svg" height="80px" alt="logo de weblate"> Weblate
 
-[![Install weblate with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=weblate) [![Integration level](https://dash.yunohost.org/integration/weblate.svg)](https://dash.yunohost.org/appci/app/weblate)
+[![Install Weblate with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=weblate) [![Integration level](https://dash.yunohost.org/integration/weblate.svg)](https://dash.yunohost.org/appci/app/weblate)
 
 ### Index
 
 - [Liens utiles](#liens-utiles)
 
 Weblate est un outil de traduction en mode web fortement lié aux systèmes de contrôle de versions. A travers une interface utilisateur claire et simple, Weblate permet la propagation de traductions entre sous-projets, peut vérifier la qualité des traductions et est automatiquement lié aux fichiers sources.
-Weblate fonctionne très bien avec un serveur GitLab, GitHub, Bitbucket. Il est possible d'importer les traductions déjà existantes d'un projet, de permettre à tout le monde de contribuer à la traduction d'un projet via son interface web, et ensuite pousser les traductions sur le repository.
+Weblate fonctionne très bien avec un serveur GitLab, GitHub, Bitbucket. Il est possible d'importer les traductions déjà existantes d'un projet, de permettre à tout le monde de contribuer à la traduction d'un projet via son interface Web, et ensuite pousser les traductions sur le repository.
 Il y a un système de revue, de suggestions, de commentaires sur une traduction.
 On peut installer une authentification tiers, par exemple on peut se connecter avec son compte GitHub. Notre compte permet ensuite de garder un historique.
-
 
 ## Liens utiles
 

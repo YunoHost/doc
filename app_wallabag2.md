@@ -1,6 +1,6 @@
 # <img src="/images/wallabag2_logo.svg" height="80px" alt="wallabag2's logo"> Wallabag2
 
-[![Install wallabag2 with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=wallabag2) [![Integration level](https://dash.yunohost.org/integration/wallabag2.svg)](https://dash.yunohost.org/appci/app/wallabag2)
+[![Install Wallabag2 with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=wallabag2) [![Integration level](https://dash.yunohost.org/integration/wallabag2.svg)](https://dash.yunohost.org/appci/app/wallabag2)
 
 ### Index
 
@@ -31,4 +31,3 @@ In addition to Wallabag core features, the following are made available with thi
 
 No automatic upgrade process is available. You need a manual (but simple) migration from Wallabag v1.
 Please take a look at the [official documentation](https://doc.wallabag.org/en/user/import/wallabagv1.html).
-

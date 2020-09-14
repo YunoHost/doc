@@ -10,7 +10,7 @@ PluXml is a blog/CMS storing data in XML and not in a SQL database.
 
 ## Plugins and themes
 
-Plugins and themes should respectively be installed in the following folders : `/var/www/pluxml/plugins`, `/var/www/pluxml/themes`.
+Plugins and themes should respectively be installed in the following folders: `/var/www/pluxml/plugins`, `/var/www/pluxml/themes`.
 
 ## Backup
 

@@ -50,7 +50,7 @@ collection: calendar, book or collection concerned.
 permission: permission, r (read), w (write) or rw (read/write)
 ```
 *Rights* file contains several examples that can be exploited.  
-To validate changes to the */etc/radicale/rights* file, radical must be recharged via uwsgi service.
+To validate changes to the */etc/radicale/rights* file, radical must be recharged via uWSGI service.
 ```bash
 sudo service uwsgi restart
 ```
@@ -72,7 +72,7 @@ In both cases, the sharing works only using the full address of the calendar or 
 This limitation may be blocking for clients managing a single collection, as InfCloud. In this particular case, a solution overcomes this problem.
 
 #### Share resources directly in the collection of a user
-> This solution is functional, but is an hack ...
+> This solution is functional, but is an hack...
 
 To enable sharing to occur directly in the collection of a user, it must exploit the use of files in Radicale.  
 By simply creating a symbolic link to the resource sharing.
@@ -86,7 +86,7 @@ However, without recourse to the rules for each resource in the collection of us
 
 ### Making Radical log more verbose
 By default, the Radical log is set to INFO. This method savings the hard drive but does not debug Radicale in case of problems.  
-To pass Radicale in DEBUG mode, edit the */etc/radicale/logging* and change INFO to DEBUG in sections *[logger_root]* and *[handler_file]*. Then reload the uwsgi service.  
+To pass Radicale in DEBUG mode, edit the */etc/radicale/logging* and change INFO to DEBUG in sections *[logger_root]* and *[handler_file]*. Then reload the uWSGI service.  
 Now, the log displays all requests that are made to Radicale and analysis of *rights* file.  
 However, do not stay on this mode because the log is filled very quickly.
 

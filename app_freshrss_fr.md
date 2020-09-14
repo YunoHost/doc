@@ -21,7 +21,7 @@ API (mini) Comment faire :
 4. Configurez votre client avec :
     + username : ynh user
     + password : le mot de passe que vous venez de configurer
-    + url https://exemple.tld/rss/api/greader.php
+    + URL : https://exemple.tld/rss/api/greader.php
 
 ## Applications clientes
 

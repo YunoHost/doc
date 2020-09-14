@@ -7,11 +7,9 @@
 - [Configuration](#configuration)
 - [Liens utiles](#liens-utiles)
 
-
 Friendica est une plateforme de communication décentralisée qui intègre la communication sociale. La plate-forme est liée à des projets sociaux indépendants et à des services aux entreprises.
 
 Son objectif est de libérer les amis, la famille et les collègues des entreprises qui récoltent des données ; Friendica vise à ce que la communication sociale soit libre et ouverte, tout en circulant entre tous les fournisseurs aussi facilement que le courrier électronique.[¹](#sources)
-
 
 ## Configuration
 
@@ -22,7 +20,6 @@ Domaine dédié (doit être installé sous la racine web comme https://hub.examp
 
 Note : Vous pouvez utiliser les comptes du LDAP de YunoHost. Il n'y a pas encore de SSO actif.
 
-
 ## Liens utiles
 
 + Site web : [friendi.ca](http://friendi.ca/)
@@ -30,7 +27,6 @@ Note : Vous pouvez utiliser les comptes du LDAP de YunoHost. Il n'y a pas encore
 + Démonstration : [Démo](http://dir.friendica.social/servers)
 + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/friendica](https://github.com/YunoHost-Apps/friendica_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/friendica/issues](https://github.com/YunoHost-Apps/friendica_ynh/issues)
-
 
 ------
 

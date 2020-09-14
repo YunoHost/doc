@@ -1,10 +1,10 @@
-# <img src="/images/phpsysinfo_logo.png" height="80px" alt="logo de phpsysinfo"> Phpsysinfo
+# <img src="/images/phpsysinfo_logo.png" height="80px" alt="logo de phpsysinfo"> phpSysInfo
 
-[![Install phpsysinfo with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=phpsysinfo) [![Integration level](https://dash.yunohost.org/integration/phpsysinfo.svg)](https://dash.yunohost.org/appci/app/phpsysinfo)
+[![Install phpSysInfo with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=phpsysinfo) [![Integration level](https://dash.yunohost.org/integration/phpsysinfo.svg)](https://dash.yunohost.org/appci/app/phpsysinfo)
 
 ### Index
 
-Un script PHP personnalisable qui affiche bien les informations sur votre système (CPU, Ram, disques...).
+phpSysInfo est un script PHP personnalisable qui affiche bien les informations sur votre système (CPU, RAM, disques...).
 
 ## Liens utiles
 

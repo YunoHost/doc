@@ -1,6 +1,6 @@
-# <img src="/images/peertube_logo.svg" height="80px" alt="peertube's logo"> Peertube
+# <img src="/images/peertube_logo.svg" height="80px" alt="peertube's logo"> PeerTube
 
-[![Install peertube with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=peertube) [![Integration level](https://dash.yunohost.org/integration/peertube.svg)](https://dash.yunohost.org/appci/app/peertube)
+[![Install PeerTube with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=peertube) [![Integration level](https://dash.yunohost.org/integration/peertube.svg)](https://dash.yunohost.org/appci/app/peertube)
 
 ### Index
 

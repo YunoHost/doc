@@ -7,8 +7,7 @@
 - [Useful links](#useful-links)
 
 Leed (short for Light Feed) is a minimalist RSS/ATOM aggregator which offers fast RSS consultation and non-intrusive features.
-This aggregator works with a system of automatic tasks in order to process the information transparently and display it as quickly as possible when you log in.
-
+This aggregator works with a system of automatic tasks in order to process the information transparently and display it as quickly as possible when you login.
 
 ## Useful links
 

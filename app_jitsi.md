@@ -8,8 +8,7 @@
 - [Customer Applications](#customer-applications)
 - [Useful links](#useful-links)
 
-Jitsi Meet is an open source software (Apache) that offers high quality, secure and scalable video conferencing. Options for screen sharing, live chat, speech requests, as well as settings for
-video quality are offered to facilitate group meetings.
+Jitsi Meet is an open source software (Apache) that offers high quality, secure and scalable video conferencing. Options for screen sharing, live chat, speech requests, as well as settings for video quality are offered to facilitate group meetings.
 
 ## Limitations with YunoHost
 

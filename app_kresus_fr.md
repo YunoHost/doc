@@ -13,7 +13,6 @@ Kresus est un gestionnaire de finances personnelles gratuit et libre qui tourne 
 * Définissez vos propres libellés, finis les « Chèque n°168468 » ! Triez vos opérations par catégories. Effectuez des recherches complexes sur vos transactions, par période, catégorie, montant ou date !
 * Suivez l'évolution de vos mouvements d'argent en un clin d'œil avec les graphiques par catégorie, par période et par type de mouvement (dépenses ou rentrées d'argent).
 
-
 ## Liens utiles
 
 + Site web : [kresus.org](https://kresus.org/)

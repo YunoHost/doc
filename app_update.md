@@ -1,8 +1,8 @@
-#Upgrade your applications
+# Upgrade your applications
 
 Once you installed applications, you may need to upgrade them, sooner or later. 
 
-** Caution: ** please be advised to backup your databases (using phpmyadmin application for example) and files before any upgrade.
+**Caution:** please be advised to backup your databases (using phpMyAdmin application for example) and files before any upgrade.
 
 ### Upgrade using the admin panel
 Go to Tools > Update system
@@ -14,19 +14,19 @@ First, connect to your server through SSH and type in the following command (Wor
 ```bash
 yunohost app upgrade wordpress
 ```
-** Note: ** in case you have multiple instances of the same type (ex: 2 wordpress) installed, you will need to specify the instance name (ex: wordpress or wordpress__2).
+**Note:** in case you have multiple instances of the same type (ex: 2 wordpress) installed, you will need to specify the instance name (ex: wordpress or wordpress__2).
 
 #### Upgrade an unofficial application
-Specify the git repository containing the upgrade. 
+Specify the Git repository containing the upgrade. 
 
 For intance, to upgrade LimeSurvey:
 ```bash
 yunohost app upgrade limesurvey -u https://github.com/zamentur/limesurvey_ynh
 ```
 
-** Note: ** be cautious when installing unofficial applications and upgrades. Be sure that theses updates are stables and are not a step in the development process. There may be a good reason if an application is not listed in the official repository.
+**Note:** be cautious when installing unofficial applications and upgrades. Be sure that theses updates are stables and are not a step in the development process. There may be a good reason if an application is not listed in the official repository.
 
-** Caution: ** be sure to check the content of any update; installing or upgrading an unofficial application allows it to run scripts with the highest privileges.
+**Caution:** be sure to check the content of any update; installing or upgrading an unofficial application allows it to run scripts with the highest privileges.
 
 #### Command line options
 

@@ -9,7 +9,7 @@
 - [Limitations with YunoHost](#limitations-with-yunohost)
 - [Useful links](#useful-links)
 
-Invoice Ninja is the #1 open-source platform to create & email invoices, track payments and expenses, and time billable tasks & projects for clients.
+Invoice Ninja is an open-source platform to create and email invoices, track payments, expenses, time billable tasks and projects for clients.
 
 
 ## Limitations with YunoHost

@@ -9,7 +9,6 @@
 Lufi is a free file hosting software. Files sent on an instance of Lufi are encrypted before being sent to the server: the server administrator cannot see the content of your files.
 The administrator can only see the file name, size and mime type (file type: video, text, etc.).
 
-
 ## Useful links
 
  + Website: [Framagit.org/luc/lufi](https://framagit.org/luc/lufi)

@@ -15,13 +15,13 @@ FreshRSS has a lot of features including.
 ## Configuration
 
 API (mini) How To
-1. Into your user profile : `Settings > profil`
+1. Into your user profile: `Settings > profil`
 2. Setup an API password
-3. Check the API is working : https://exemple.tld/rss/api/greader.php
-4. Setup your client with :
-    + username : ynh user
-    + password : the password you just setup
-    + url https://exemple.tld/rss/api/greader.php
+3. Check the API is working: https://exemple.tld/rss/api/greader.php
+4. Setup your client with:
+    + username: ynh user
+    + password: the password you just setup
+    + URL: https://exemple.tld/rss/api/greader.php
 
 ## Customer applications
 

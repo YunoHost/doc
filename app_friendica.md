@@ -7,7 +7,6 @@
 - [Configuration](#configuration)
 - [Useful links](#useful-links)
 
-
 Friendica is a decentralized communication platform that integrates social communication. The platform is linked to independent social projects and business services.
 
 Its aim is to free up friends, family and colleagues from companies that collect data; Friendica aims to make social communication free and open, while circulating between all providers as easily as email.[¹](#sources)
@@ -19,8 +18,7 @@ Before installing, read the Friendica installation instructions for important in
 SSL certificate validation requirement (now with support for Let's Encrypt!). See Installation section below.
 Dedicated domain (must install under web root like https://hub.example.com/ not https://example.com/hub/ )
 
-Note:You can use accounts from YunoHost's LDAP. There are not yet active SSO.
-
+Note: You can use accounts from YunoHost's LDAP. There are not yet active SSO.
 
 ## Useful links
 

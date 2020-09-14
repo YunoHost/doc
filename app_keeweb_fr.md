@@ -1,14 +1,14 @@
-# <img src="/images/keeweb_logo.png" height="80px" alt="logo de keeweb"> Keeweb
+# <img src="/images/keeweb_logo.png" height="80px" alt="logo de keeweb"> KeeWeb
 
-[![Install keeweb with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=keeweb) [![Integration level](https://dash.yunohost.org/integration/keeweb.svg)](https://dash.yunohost.org/appci/app/keeweb)
+[![Install KeeWeb with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=keeweb) [![Integration level](https://dash.yunohost.org/integration/keeweb.svg)](https://dash.yunohost.org/appci/app/keeweb)
 
 ### Index
 
 - [Liens utiles](#liens-utiles)
 
-Un gestionnaire web élégant et efficace pour gérer vos mots de passe à distance.
-Le fichier contenant les mots de passe (.kdbx) peut vous suivre en local sur votre PC, sur une clef USB ou être stocké sur votre serveur en webdav.
-Keeweb gère aussi des fichiers compatibles avec les autres gestionnaires de mots de passe comme [KeePass](http://keepass.info), [KeePassX](https://www.keepassx.org/) ou [KeepassXC](https://keepassxc.org/).
+Un gestionnaire Web élégant et efficace pour gérer vos mots de passe à distance.
+Le fichier contenant les mots de passe (.kdbx) peut vous suivre en local sur votre PC, sur une clef USB ou être stocké sur votre serveur en WebDAV.
+KeeWeb gère aussi des fichiers compatibles avec les autres gestionnaires de mots de passe comme [KeePass](http://keepass.info), [KeePassX](https://www.keepassx.org/) ou [KeePassXC](https://keepassxc.org/).
 
 ## Liens utiles
 

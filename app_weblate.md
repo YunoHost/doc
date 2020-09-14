@@ -1,6 +1,6 @@
 # <img src="/images/weblate_logo.svg" height="80px" alt="weblate's logo"> Weblate
 
-[![Install weblate with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=weblate) [![Integration level](https://dash.yunohost.org/integration/weblate.svg)](https://dash.yunohost.org/appci/app/weblate)
+[![Install Weblate with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=weblate) [![Integration level](https://dash.yunohost.org/integration/weblate.svg)](https://dash.yunohost.org/appci/app/weblate)
 
 ### Index
 
@@ -12,7 +12,6 @@ Weblate works very well with a GitLab, GitHub, Bitbucket server. It is possible 
 and then push the translations to the repository.
 There is a system for reviewing, suggesting, commenting on a translation.
 You can install a third party authentication, for example you can log in with your GitHub account. Our account then allows us to keep a history.
-
 
 ## Useful links
 

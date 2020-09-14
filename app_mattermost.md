@@ -1,14 +1,14 @@
 # <img src="/images/mattermost_logo.svg" height="80px" alt="mattermost's logo"> Mattermost
 
-[![Install mattermost with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mattermost) [![Integration level](https://dash.yunohost.org/integration/mattermost.svg)](https://dash.yunohost.org/appci/app/mattermost)
+[![Install Mattermost with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mattermost) [![Integration level](https://dash.yunohost.org/integration/mattermost.svg)](https://dash.yunohost.org/appci/app/mattermost)
 
 ### Index
 
 - [Useful links](#useful-links)
 
 Mattermost is a decentralized team communication software. For Slack enthusiasts, importing your data is possible, allowing a smooth transition to this free tool.
-The platform allows :
 
+The platform allows:
 * The sharing of messages and files on different devices: PCs, computers and tablets thanks to dedicated applications.
 * The formatting of messages is done with the Markdown language.
 * Continuous archiving and instant search, and support for notifications and integrations with your existing tools.

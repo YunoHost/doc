@@ -1,13 +1,12 @@
 # <img src="/images/searx_logo.svg" height="80px" alt="searx's logo"> Searx
 
-[![Install searx with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=searx) [![Integration level](https://dash.yunohost.org/integration/searx.svg)](https://dash.yunohost.org/appci/app/searx)
+[![Install Searx with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=searx) [![Integration level](https://dash.yunohost.org/integration/searx.svg)](https://dash.yunohost.org/appci/app/searx)
 
 ### Index
 
 - [Useful links](#useful-links)
 
-Searx is a free and decentralized meta-search engine. The queries made are not saved by searx in order to protect the privacy of the user-rice-s.
-As a metasearch engine, searx collects and displays results from dozens of search engines. The search engines used (or not) can be configured in the preferences.
+Searx is a free and decentralized meta-search engine. The queries made are not saved by Searx in order to protect the privacy of the user. As a metasearch engine, searx collects and displays results from dozens of search engines. The search engines used (or not) can be configured in the preferences.
 As a decentralized software, searx is installed on different instances (different servers). In France, associations such as Framasoft, Aquilenet or La Quadrature du Net have installed it on their servers.
 
 ## Useful links

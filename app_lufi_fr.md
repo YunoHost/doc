@@ -6,10 +6,8 @@
 
 - [Liens utiles](#liens-utiles)
 
-
 Lufi est un logiciel libre d’hébergement de fichiers. Les fichiers envoyés sur une instance de Lufi sont chiffrés avant l’envoi au serveur : l’administrateur du serveur ne peut pas voir le contenu de vos fichiers.
 L’administrateur ne peut voir que le nom du fichier, sa taille et son type mime (son type de fichier : vidéo, texte, etc.).[¹](#sources)
-
 
 ## Liens utiles
 

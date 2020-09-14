@@ -11,19 +11,19 @@ Nextcloud est un service d'hébergement de fichiers, de nombreuses applications 
 
 ## Découverte de l'environnement de Nextcloud<a name="EnvironnementNextcloud" href=""></a>
 
-Du fait de la constitution de Nextcloud, une base avec des applications tiers à installer, ce chapitre ne concernera que la base de nextcloud sans applications ajoutés. Plus d'informations sur les applications dans la partie dédiée ou sur le catalogue d'application de nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com).  
+Du fait de la constitution de Nextcloud, une base avec des applications tiers à installer, ce chapitre ne concernera que la base de nextcloud sans applications ajoutés. Plus d'informations sur les applications dans la partie dédiée ou sur le catalogue d'application de Nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com).  
 Nextcloud est avant tout un service de cloud (comme Seafile et d'autres logiciels), il permet une synchronisation et le partage de fichiers sur internet et entre plusieurs terminaux (ordinateurs, smartphone) mais aussi avec plusieurs personnes.
 
 ## Logiciels Clients<a name="LogicielsClients" href=""></a>
 
-Il existe des logiciels clients pour de nombreux terminaux. Vous pouvez les retrouver sur le site de nextcloud : [nextcloud.com/install/#install-clients](https://nextcloud.com/install/#install-clients)
+Il existe des logiciels clients pour de nombreux terminaux. Vous pouvez les retrouver sur le site de Nextcloud : [nextcloud.com/install/#install-clients](https://nextcloud.com/install/#install-clients)
 
 ## Manipulations utiles & problèmes rencontrés<a name="ManipulationsUtiles" href=""></a>
 
 ### Ajouter de l'espace à Nextcloud<a name="AjoutEspace" href=""></a>
 
 La solution I. permet d'ajouter un lien vers un dossier local ou distant.  
-La solution II. permet de déplacer l'espace de stockage principal de nextcloud.
+La solution II. permet de déplacer l'espace de stockage principal de Nextcloud.
 
 #### I. Ajouter un espace de stockage externe
 
@@ -41,7 +41,7 @@ Enfin cliquer sur la coche pour valider le dossier.
 
 **Remarque** : Remplacez `nextcloud` par le nom de son instance, si vous avez plusieurs apps Nextcloud installées.
 
-Commencez par éteindre le serveur web avec la commande:
+Commencez par éteindre le serveur web avec la commande :
 ```bash
 systemctl stop nginx  
 ```
@@ -50,7 +50,7 @@ systemctl stop nginx
 
 **Cas A : Stockage vierge, exclusif à Nextcloud**
 
-Pour l'instant seul root peut y écrire dans `/media/stockage`; ce qui signifie que nginx et nextcloud ne pourront donc pas l'utiliser.
+Pour l'instant seul root peut y écrire dans `/media/stockage` ; ce qui signifie que NGINX et Nextcloud ne pourront donc pas l'utiliser.
 
 ```bash
 chown -R nextcloud:nextcloud /media/stockage
@@ -77,7 +77,7 @@ Cas B : cp -ir /home/yunohost.app/nextcloud /media/stockage/nextcloud_data
 ```
 
 L'option `i` permet de vous demander quoi faire en cas de conflit de fichier, notamment si vous écrasez un ancien dossier de données Owncloud ou Nextcloud.  
-Pour vérifier que tout s'est bien passé, comparer ce qu'affichent ces deux commandes (le contenu doit être identique):
+Pour vérifier que tout s'est bien passé, comparer ce qu'affichent ces deux commandes (le contenu doit être identique) :
 
 ```bash
 ls -la /home/yunohost.app/nextcloud
@@ -88,13 +88,13 @@ Cas B : ls -al /media/stockage/nextcloud_data/nextcloud
 
 ##### Configurer Nextcloud
 
-Pour informer Nextcloud de son nouveau répertoire, modifiez le fichier `/var/www/nextcloud/config/config.php` avec la commande:
+Pour informer Nextcloud de son nouveau répertoire, modifiez le fichier `/var/www/nextcloud/config/config.php` avec la commande :
 
 ```bash
 nano /var/www/nextcloud/config/config.php
 ```
 
-Cherchez la ligne:
+Cherchez la ligne :
 
 ```bash
 'datadirectory' => '/home/yunohost.app/nextcloud/data',
@@ -154,16 +154,16 @@ Les options à désactiver (Off) sont :
 - Rocket Loader
 - Email Obfuscation
 
-Sauvegarder et nettoyer vos caches (Cloudflare, navigateur, ...) et le tour est joué.
+Sauvegarder et nettoyer vos caches (Cloudflare, navigateur...) et le tour est joué.
 
 ## Applications Tiers<a name="AppsTiers" href=""></a>
 
  + [Calendrier](/app_nextcloud_calendar)
- + [contact](/app_nextcloud_contact)
+ + [Contact](/app_nextcloud_contact)
  + [KeeWeb](/app_nextcloud_keeweb)
  + [Carnet](/app_nextcloud_carnet)
 
 ## Quelques liens utiles<a name="liensutiles" href=""></a>
 
 + Site officiel : [nextcloud.com (en)](https://nextcloud.com/)
-+ Catalogue d'application pour nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com/)
++ Catalogue d'application pour Nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com/)

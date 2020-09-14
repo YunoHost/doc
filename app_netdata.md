@@ -78,7 +78,7 @@ We don't allow YunoHost packages to make sensible changes to system files. So he
    Each node may have different metrics retention policy and run with or without health monitoring.
 
  - **time-series back-ends supported**<br/>
-   can archive its metrics on `graphite`, `opentsdb`, `prometheus`, json document DBs, in the same or lower detail
+   can archive its metrics on `graphite`, `opentsdb`, `prometheus`, JSON document DBs, in the same or lower detail
    (lower: to prevent it from congesting these servers due to the amount of data collected)
 
 ![netdata](https://cloud.githubusercontent.com/assets/2662304/14092712/93b039ea-f551-11e5-822c-beadbf2b2a2e.gif)

@@ -1,6 +1,6 @@
 # <img src="/images/mailman_logo.svg" height="80px" alt="logo de mailman"> Mailman
 
-[![Install mailman with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mailman) [![Integration level](https://dash.yunohost.org/integration/mailman.svg)](https://dash.yunohost.org/appci/app/mailman)
+[![Install Mailman with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mailman) [![Integration level](https://dash.yunohost.org/integration/mailman.svg)](https://dash.yunohost.org/appci/app/mailman)
 
 ### Index
 

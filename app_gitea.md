@@ -12,7 +12,7 @@ Gitea is a painless self-hosted Git service. It is similar to GitHub, Bitbucket,
 
 ## Limitations with YunoHost
 
-If you want to use the git command (like git clone, git pull, git push), you need to set this app as public.
+If you want to use Git commands (like `git clone`, `git pull`, `git push`), you need to set this app as public.
 
 ## Customer applications
 

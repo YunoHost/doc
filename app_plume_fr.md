@@ -1,6 +1,6 @@
 # <img src="/images/plume_logo.svg" height="80px" alt="logo de plume"> Plume
 
-[![Install plume with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=plume) [![Integration level](https://dash.yunohost.org/integration/plume.svg)](https://dash.yunohost.org/appci/app/plume)
+[![Install Plume with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=plume) [![Integration level](https://dash.yunohost.org/integration/plume.svg)](https://dash.yunohost.org/appci/app/plume)
 
 ### Index
 
