@@ -1,4 +1,4 @@
-# <img src="/images/mattermost_logo.svg" height="80px" alt="mattermost's logo"> Mattermost
+# <img src="/images/mattermost_logo.svg" height="80px" alt="Mattermost's logo"> Mattermost
 
 [![Install Mattermost with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mattermost) [![Integration level](https://dash.yunohost.org/integration/mattermost.svg)](https://dash.yunohost.org/appci/app/mattermost)
 

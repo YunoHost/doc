@@ -1,6 +1,6 @@
-# <img src="/images/mattermost_logo.svg" height="80px" alt="logo de mattermost"> Mattermost
+# <img src="/images/mattermost_logo.svg" height="80px" alt="logo de Mattermost"> Mattermost
 
-[![Installer Mattermost with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mattermost) [![Integration level](https://dash.yunohost.org/integration/mattermost.svg)](https://dash.yunohost.org/appci/app/mattermost)
+[![Install Mattermost with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mattermost) [![Integration level](https://dash.yunohost.org/integration/mattermost.svg)](https://dash.yunohost.org/appci/app/mattermost)
 
 ### Index
 
@@ -15,7 +15,7 @@ La plate-forme permet :
 
 ## Liens utiles
 
-+ Site Web : [mattermost.com](https://mattermost.com/)
++ Site web : [mattermost.com](https://mattermost.com/)
 + Documentation officielle : [docs.mattermost.com/guides/user.html](https://docs.mattermost.com/guides/user.html)
 + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/mattermost](https://github.com/YunoHost-Apps/mattermost_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/mattermost/issues](https://github.com/YunoHost-Apps/mattermost_ynh/issues)
