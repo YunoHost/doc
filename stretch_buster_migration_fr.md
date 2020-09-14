@@ -46,7 +46,7 @@ Pour cela, vous pouvez aller dans la partie Diagnostic (section Système de base
 
 #### Vérifiez que le diagnostic ne rapporte pas de problème particulier
 
-Également dans la section Diagnostic de la webadmin, vérifiez qu'il n'y a pas de problème apparu suite à la migration (par exemple un service qui ne tournerais plus ...)
+Également dans la section Diagnostic de la webadmin, vérifiez qu'il n'y a pas de problème apparu suite à la migration (par exemple un service qui ne tournerais plus...)
 
 #### Vérifiez que les applications fonctionnent
 
@@ -62,4 +62,4 @@ yunohost tools regen-conf nsswitch nslcd --force
 
 (nous allons essayer de corriger ceci automatiquement)
 
-- Il se peut que la migration postgresql (censée s'effectuer automatiquement après la migration à Buster) ne fonctionne pas correctement ... Certains utilisateurs ont rapporté que relancer la migration suffisait à résoudre le problème. (Nous allons voir pour comprendre et corriger ce soucis)
+- Il se peut que la migration postgresql (censée s'effectuer automatiquement après la migration à Buster) ne fonctionne pas correctement... Certains utilisateurs ont rapporté que relancer la migration suffisait à résoudre le problème. (Nous allons voir pour comprendre et corriger ce soucis)

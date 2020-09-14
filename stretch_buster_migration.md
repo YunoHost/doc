@@ -62,4 +62,4 @@ yunohost tools regen-conf nsswitch nslcd --force
 
 (we will try to do this automatically somehow)
 
-- Sometimes the postgresql migration (that is supposed to happen automatically after the buster migration is ran) fails to run properly … Some users reported that re-launching manually the postgresql migration fixed the issue (we will try to understand and fix this somehow)
+- Sometimes the postgresql migration (that is supposed to happen automatically after the buster migration is ran) fails to run properly... Some users reported that re-launching manually the postgresql migration fixed the issue (we will try to understand and fix this somehow)

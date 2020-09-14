@@ -13,10 +13,10 @@ Before setting up a server at home, it is recommended that you know the [possibl
 
 ## Pre-requisites
 
-- An ARM board with 500MHz CPU and 512MB RAM ;
-- A power supply for your board ;
-- A microSD card: **8GB** capacity (at least) and **Class 10** speed rate are highly recommended (like the [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO)) ;
-- An ethernet cable (RJ-45) to connect your board to your router ;
+- An ARM board with 500MHz CPU and 512 MB of RAM;
+- A power supply for your board;
+- A microSD card: **8GB** capacity (at least) and **Class 10** speed rate are highly recommended (like the [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO));
+- An ethernet cable (RJ-45) to connect your board to your router;
 - A [reasonable ISP](/isp), preferably with a good and unlimited upload bandwidth.
 
 ---

@@ -1,4 +1,4 @@
-#Try YunoHost
+# Try YunoHost
 
 <div class="alert alert-warning" markdown="1">
 **Note:** This demo server could be down from time to time.

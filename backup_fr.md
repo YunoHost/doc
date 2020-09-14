@@ -1,10 +1,8 @@
-Sauvegarder son serveur et ses apps
-===================================
+# Sauvegarder son serveur et ses apps
 
-Dans le contexte de l'auto-hébergement, les sauvegardes (backup) sont un élément important pour pallier les événements inattendus (incendies, corruption de base de données, perte d'accès au serveur, serveur compromis, ...). La politique de sauvegardes à mettre en place dépend de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez être très prudent si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les sauvegardes *dans un endroit différent*.
+Dans le contexte de l'auto-hébergement, les sauvegardes (backup) sont un élément important pour pallier les événements inattendus (incendies, corruption de base de données, perte d'accès au serveur, serveur compromis...). La politique de sauvegardes à mettre en place dépend de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez être très prudent si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les sauvegardes *dans un endroit différent*.
 
-Les sauvegardes avec YunoHost
------------------------------
+## Les sauvegardes avec YunoHost
 
 YunoHost contient un système de sauvegarde, qui permet de sauvegarder (et restaurer) les configurations du système, les données "système" (comme les mails) et les applications si elles le supportent.
 
@@ -12,8 +10,7 @@ Vous pouvez gérer vos sauvegardes via la ligne de commande (`yunohost backup --
 
 La méthode de sauvegarde actuelle consiste à créer des archives `.tar.gz` qui contiennent les fichiers pertinents. Pour le futur, YunoHost envisage de supporter nativement [Borg](https://www.borgbackup.org/) qui est une solution plus flexible, performante et puissante pour gérer des sauvegardes.
 
-Créer des sauvegardes
----------------------
+## Créer des sauvegardes
 
 #### Depuis la webadmin
 
@@ -23,7 +20,7 @@ Vous pouvez facilement créer des archives depuis la webadmin en allant dans Sau
 
 #### Depuis la ligne de commande
 
-Vous pouvez créer de nouvelles archives depuis la ligne de commande. Voici quelques exemples de commandes et leur comportement correspondant:
+Vous pouvez créer de nouvelles archives depuis la ligne de commande. Voici quelques exemples de commandes et leur comportement correspondant :
 
 - Tout sauvegarder (système et apps)
 ```bash
@@ -59,8 +56,7 @@ Lors d'une mise à jour, les apps contenant une grande quantité de données eff
 
 Pour désactiver manuellement la sauvegarde des données volumineuses, pour les applications qui implémentent cette fonctionnalité, vous pouvez définir la variable `BACKUP_CORE_ONLY`. Pour ce faire, la variable doit être définie avant la commande de backup : `sudo BACKUP_CORE_ONLY=1 yunohost backup create --apps nextcloud`. Soyez prudent : il vous faudra alors sauvegarder vous-même les données des utilisateurs de Nextcloud. Choisir ce type de sauvegarde vous permettra de mettre en place manuellement des sauvegardes incrémentielles ou différentielles (que YunoHost ne permet pas encore de faire automatiquement).
 
-Télécharger et téléverser des sauvegardes
------------------------------------------
+## Télécharger et téléverser des sauvegardes
 
 Après avoir créé des sauvegardes, il est possible de les lister et de les inspecter grâce aux vues correspondantes dans la webadmin, ou via `yunohost backup list` et `yunohost backup info <nom_d'archive>` depuis la ligne de commande. Par défaut, les sauvegardes sont stockées dans `/home/yunohost.backup/archives/`.
 
@@ -80,8 +76,7 @@ De façon similaire, vous pouvez téléverser une sauvegarde depuis une machine 
 scp /path/to/your/<nom_d'archive>.tar.gz admin@your.domain.tld:/home/yunohost.backup/archives/
 ```
 
-Restaurer des sauvegardes
--------------------------
+## Restaurer des sauvegardes
 
 #### Depuis la webadmin
 
@@ -115,9 +110,7 @@ mv /chemin/vers/<nom_d'archive> /home/yunohost.backup/archives/
 yunohost backup restore <nom_d'archive>
 ``` 
 
-
-Pour aller plus loin
---------------------
+##  Pour aller plus loin
 
 #### Stocker les archives sur un autre disque
 

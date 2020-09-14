@@ -1,6 +1,6 @@
 # Backing up your server and apps
 
-Backing up your server, apps and data is an important concern when administrating a server. This protects you from unexpected events that could happen (server lost in a fire, database corruption, loss of access, server compromised, ...). The backup policy you will put in place depends of the importance of the services and data hosted. For instance you won't care too much about having backup on a test server, but you will care about having a backup of critical data of your association or company, and having this backup *in a different physical place*.
+Backing up your server, apps and data is an important concern when administrating a server. This protects you from unexpected events that could happen (server lost in a fire, database corruption, loss of access, server compromised...). The backup policy you will put in place depends of the importance of the services and data hosted. For instance you won't care too much about having backup on a test server, but you will care about having a backup of critical data of your association or company, and having this backup *in a different physical place*.
 
 ## Backups in the context of YunoHost
 
@@ -20,9 +20,9 @@ You can easily create backup archives from the webadmin by going in Backups > Lo
 
 ### From the command line
 
-You can create a new backup archive with the command line. Here are a few simple example of commands and their corresponding behavior :
+You can create a new backup archive with the command line. Here are a few simple example of commands and their corresponding behavior:
 
-- Backing up everything (all system parts and apps) :
+- Backing up everything (all system parts and apps):
 
   ```bash
   yunohost backup create
@@ -61,7 +61,6 @@ When performing an upgrade, apps with large quantity of data will, usually, do a
 
 To manually disable the backup of large data, for application that implement that feature, you can set the variable `BACKUP_CORE_ONLY`. To do so, the variable have to be set before the backup command: `sudo BACKUP_CORE_ONLY=1 yunohost backup create --apps nextcloud`. Be careful though that mean you will have to backup user data yourself. But doing so, you will be able to do incremental or differential backups of this large amount of data (which is not an option provided by yunohost yet).
 
-
 ## Downloading and uploading backups
 
 After creating backup archives, it is possible to list and inspect them via the corresponding views in the webadmin, or via `yunohost backup list` and `yunohost backup info <archivename>` from the command line. By default, backups are stored in `/home/yunohost.backup/archives/`.
@@ -96,7 +95,7 @@ From the command line, you can run `yunohost backup restore <archivename>` (with
 
 ### Constraints
 
-To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app which is already installed ... which means that to restore an old version of an app, you must first uninstall it.
+To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app which is already installed... which means that to restore an old version of an app, you must first uninstall it.
 
 ### Restoring during the postinstall
 
@@ -131,39 +130,39 @@ ln -s $PATH_TO_DRIVE/yunohost_backup_archives /home/yunohost.backup/archives # C
 
 ### Automatic backups
 
-You can add a simple cron job to trigger automatic backups regularly. For instance, to backup your wordpress weekly, create a file `/etc/cron.weekly/backup-wordpress` with the following content :
+You can add a simple cron job to trigger automatic backups regularly. For instance, to backup your wordpress weekly, create a file `/etc/cron.weekly/backup-wordpress` with the following content:
 
 ```bash
 #!/bin/bash
 yunohost backup create --apps wordpress
 ```
 
-then make it executable :
+then make it executable:
 
 ```bash
 chmod +x /etc/cron.weekly/backup-wordpress
 ```
 
-Be careful what you backup exactly and when : you don't want to end up with your whole disk space saturated because you backuped 30 GB of data every day.
+Be careful what you backup exactly and when: you don't want to end up with your whole disk space saturated because you backuped 30 GB of data every day.
 
 #### Backing your server on a remote server
 
-You can follow this tutorial on the forum to setup Borg between two servers : <https://forum.yunohost.org/t/how-to-backup-your-yunohost-server-on-another-server/3153>
+You can follow this tutorial on the forum to setup Borg between two servers: <https://forum.yunohost.org/t/how-to-backup-your-yunohost-server-on-another-server/3153>
 
-Alternatively, the app Archivist allows to setup a similar system : <https://forum.yunohost.org/t/new-app-archivist/3747>
+Alternatively, the app Archivist allows to setup a similar system: <https://forum.yunohost.org/t/new-app-archivist/3747>
 
 #### Avoiding the backup of some folders
 If needed, you can specify that some `/home/user` folders are left out of the `yunohost backup` command, by creating a blank file named `.nobackup` in them.
 
 #### Full backup with `dd`
 
-If you are using an ARM board, another method for doing a full backup can be to create an image of the SD card. For this, poweroff your ARM board, get the SD card in your computer then create a full image with something like :
+If you are using an ARM board, another method for doing a full backup can be to create an image of the SD card. For this, poweroff your ARM board, get the SD card in your computer then create a full image with something like:
 
 ```bash
 dd if=/dev/mmcblk0 of=./backup.img status=progress
 ```
 
-(replace `/dev/mmcblk0` with the actual device of your sd card)
+(replace `/dev/mmcblk0` with the actual device of your SD card)
 
 You can also create a compressed image using gzip this way:
 ```bash
