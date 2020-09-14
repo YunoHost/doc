@@ -6,9 +6,8 @@
 
 - [Useful links](#useful-links)
 
-Mumble is an efficient and stable Voice over IP software that allows you to create audio rooms for multiple people. It is a VoIP software that allows its users to benefit from very low latency and very high quality.
-providing excellent sound quality. Mumble also incorporates a visual overlay that discreetly positions itself above the other windows to provide a view of the microphone activation of the people you are talking to.
-Here is the 'Murmur' server that you will install on your instance of Yunohost.
+Mumble is an efficient and stable Voice over IP software that allows you to create audio rooms for multiple people. It is a VoIP software that allows its users to benefit from very low latency and very high quality while providing excellent sound quality. Mumble also incorporates a visual overlay that discreetly positions itself above the other windows to provide a view of the microphone activation of the people you are talking to.
+Here is the 'Murmur' server that you will install on your instance of YunoHost.
 
 It is necessary to use a [Mumble client](https://wiki.mumble.info/wiki/3rd_Party_Applications) to use it for each interlocutor.
 

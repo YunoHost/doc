@@ -4,12 +4,12 @@
 
 ### Index
 
-- [Limitations avec Yunohost](#limitations-avec-yunohost)
+- [Limitations avec YunoHost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
 Halcyon est un client web pour Mastodon et Pleroma qui vise à recréer l'interface utilisateur simple et belle de Twitter tout en conservant tous les avantages des réseaux décentralisés.[¹](#sources)
 
-## Limitations avec Yunohost
+## Limitations avec YunoHost
 
 L'application nécessite un domaine dédié comme `halcyon.domaine.tld`
 

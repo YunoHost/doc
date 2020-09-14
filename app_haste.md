@@ -11,7 +11,7 @@ Haste is an open-source pastebin software written in Node.js, which is easily in
 
 ## Configuration
 
-This Haste package for Yunohost includes the [`haste` command](https://github.com/diethnis/standalones/blob/master/hastebin.sh), allowing you to share content from terminal:
+This Haste package for YunoHost includes the [`haste` command](https://github.com/diethnis/standalones/blob/master/hastebin.sh), allowing you to share content from terminal:
 
 ```bash
 cat something | haste

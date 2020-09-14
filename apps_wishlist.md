@@ -124,7 +124,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Koozip](https://koozic.net) |  | [Upstream](https://github.com/DocMarty84/koozic) |  |
 | L'atelier |  |  [Upstream](https://github.com/jbl2024/latelier) |  |
 | [LBCAlerte](https://alerte.ilatumi.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/LBCAlerte_ynh) |
-| lektor | A static website generator |  | [Package Draft](https://github.com/Yunohost-Apps/lektor_ynh) |
+| lektor | A static website generator |  | [Package Draft](https://github.com/YunoHost-Apps/lektor_ynh) |
 | [Lemmy](https://dev.lemmy.ml) | A federated alternative to Reddit | [Upstream](https://github.com/dessalines/lemmy) |  |
 | [Lessy](https://lessy.io) |  | [Upstream](https://github.com/lessy-community/lessy) |  |
 | [LibreOffice Online](https://www.libreoffice.org/download/libreoffice-online/) |  |  |  |

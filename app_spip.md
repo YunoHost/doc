@@ -6,7 +6,7 @@ SPIP is an Internet publishing system that focuses on collective functioning, mu
 
 Source:[spip.net](https://www.spip.net/fr_rubrique91.html_rubrique91.html)
 
-#### Application functionality for Yunohost
+#### Application functionality for YunoHost
 
 * Installation of the base without going through the installation system
 * Multilingual support

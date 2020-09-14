@@ -15,7 +15,7 @@
 
 Baïkal is a server for calendars and address books, which uses the CalDav and CardDav protocol. Baïkal can be synced with a lot of clients, like Thunderbird + Lightning.
 
-**WARNING**: Baikal will not work if you have installed a **Nextcloud** ( their cardav/caldav functions conflict).
+**WARNING**: Baïkal will not work if you have installed a **Nextcloud** ( their cardav/caldav functions conflict).
 
 ## Configuration
 
@@ -26,7 +26,7 @@ The username to specify is `admin`, followed by the specific password you chose 
 
 ### LDAP authentication
 
-By default, Baikal is configured to look for users in YunoHost's LDAP
+By default, Baïkal is configured to look for users in YunoHost's LDAP
 directory. YunoHost's users will appear under `User and ressources` menu after their
 first authentication.
 
@@ -36,7 +36,7 @@ first authentication.
 
 Add a new agenda with type "Network" and "CalDAV"
 
-The new URL to add is :
+The new URL to add is:
 
 https://domain.org/baikal/cal.php/calendars/username/default
 
@@ -44,7 +44,7 @@ Be careful to replace "domain.org" by your own domain and the "username" by your
 
 ### Connecting to AgenDAV
 
-AgenDAV is a web client for using your calendars. It's packaged for Yunohost and you can used it after installing Baïkal.
+AgenDAV is a web client for using your calendars. It's packaged for YunoHost and you can used it after installing Baïkal.
 
 AgenDAV is already connected to Baïkal, any other configuration is necessary. If you create a new entry in Thunderbird + Lightning calendar, refresh your AgenDAV page is enough to see your modifications.
 

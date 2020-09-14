@@ -7,7 +7,7 @@
 - [Limitations avec YunoHost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
-## Limitations avec Yunohost
+## Limitations avec YunoHost
 
 L'authentification LDAP et HTTP n'est pas prise en charge.
 

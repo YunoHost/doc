@@ -6,7 +6,7 @@ SPIP est un système de publication pour l’Internet qui s’attache particuli�
 
 Source : [spip.net](https://www.spip.net/fr_rubrique91.html)
 
-### Fonctionnalité de l'application pour Yunohost
+### Fonctionnalité de l'application pour YunoHost
 
 * Installation de la base sans passer par le système d'installation
 * Support multilingue

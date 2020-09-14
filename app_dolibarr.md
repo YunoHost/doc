@@ -11,14 +11,14 @@ Dolibarr ERP CRM is an open source, free software package for small and medium c
 
 ## Limitations with YunoHost
 
-Dolibarr must be a non-public application to be able to link yunohost accounts. The deletion of an account is not taken into account in Dolibarr.
+Dolibarr must be a non-public application to be able to link YunoHost accounts. The deletion of an account is not taken into account in Dolibarr.
 
 ## Useful links
 
 + Website: [www.dolibarr.org](https://www.dolibarr.org/)
 + Official documentation: [www.dolibarr.org - documentation-home](https://www.dolibarr.org/documentation-home)
-+ Application software repository: [github.com - YunoHost-Apps/dolibarr](https://github.com/Yunohost-Apps/dolibarr_ynh)
-+ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/dolibarr/issues](https://github.com/Yunohost-Apps/dolibarr_ynh/issues)
++ Application software repository: [github.com - YunoHost-Apps/dolibarr](https://github.com/YunoHost-Apps/dolibarr_ynh)
++ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/dolibarr/issues](https://github.com/YunoHost-Apps/dolibarr_ynh/issues)
 
 -----
 

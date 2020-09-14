@@ -7,7 +7,7 @@
 - [Liens utiles](#liens-utiles)
 
 Mumble est un logiciel de voix sur IP efficace et stable qui vous permet de créer des salons audio pour plusieurs interlocuteurs. C'est un logiciel de VoIP qui fait bénéficier à ses utilisateurs d'une latence très faible tout en fournissant une qualité de son excellente. Mumble intègre également une surcouche visuelle qui se positionne discrètement au dessus des autres fenêtres afin d'avoir une vision sur l'activation des micros des gens avec qui vous parlez.
-Ici, c'est la partir serveur 'Murmur' que vous installerez sur votre instance de Yunohost.
+Ici, c'est la partir serveur 'Murmur' que vous installerez sur votre instance de YunoHost.
 
 Il est nécessaire d'utiliser un [client Mumble](https://wiki.mumble.info/wiki/3rd_Party_Applications) pour l'utiliser pour chaque interlocuteur·rice.
 

@@ -11,7 +11,7 @@ Halcyon is a webclient for Mastodon and Pleroma which aims to recreate the simpl
 
 ## Limitations with YunoHost
 
-The app require a dedicaed domain like `halcyon.domain.tld`
+The app require a dedicated domain like `halcyon.domain.tld`
 
 ## Useful links
 
