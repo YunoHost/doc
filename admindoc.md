@@ -60,5 +60,5 @@
 * Troubleshooting
     * [Changing the administration password](/change_admin_password)
     * [Recover access to your server](/noaccess)
-    * [Unban IPs in IPiptables/Fail2ban](/fail2ban)
+    * [Unban IPs in IPiptables/Fail2Ban](/fail2ban)
     * [Configuring IPv6](/ipv6)

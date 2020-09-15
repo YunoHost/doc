@@ -34,7 +34,7 @@ sudo fail2ban-client set recidive unbanip 11.22.33.44
 
 If you don’t want a "legitimate" IP address to be blocked by **YunoHost** anymore, then you have to fill it in the whitelist of the `jail` configuration file.
 
-When updating the **Fail2ban** software, the original `/etc/fail2ban/jail.conf` file is overwritten. So it is on a new dedicated file that we will store the changes. They will thus be preserved over time.
+When updating the **Fail2Ban** software, the original `/etc/fail2ban/jail.conf` file is overwritten. So it is on a new dedicated file that we will store the changes. They will thus be preserved over time.
 
 1. Start by creating the new jail configuration file which will be called `yunohost-whitelist.conf`:
 

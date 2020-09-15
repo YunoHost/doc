@@ -41,5 +41,5 @@
     * [Migriere E-Mails zu Yunohost](/email_migration)
     * [Verstecke Services mit Tor](/torhiddenservice)
 * Hinweise zur Fehlersuche
-    * [Entsperren von IPs in Fail2ban](/fail2ban)
+    * [Entsperren von IPs in Fail2Ban](/fail2ban)
     * [Administrator-Passwort ändern](/change_admin_password)

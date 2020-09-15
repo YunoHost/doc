@@ -1,11 +1,8 @@
 # Récupérer l'accès à son YunoHost
 
-
 Il existe de nombreuses causes pouvant empêcher totalement ou partiellement d'accéder en administrateur à un serveur YunoHost. Dans de nombreux cas, un des moyens d'accès est inaccessible, mais les autres sont fonctionnels.
 
 Cette page va vous aider à diagnostiquer, obtenir un accès et si besoin réparer votre système. Les pannes les plus courantes sont priorisées de haut en bas. Il vous suffit de tester chaque hypothèse.
-
-
 
 
 ## Vous avez accès au serveur via l'adresse IP, mais pas avec le nom de domaine ?
@@ -32,8 +29,6 @@ Vous pouvez valider que les enregistrements DNS sont corrects en comparant le r�
 - Vous avez une IP dynamique. Dans ce cas, il faut mettre en place un script qui se charge de mettre à jour régulièrement votre IP (ou d'utiliser un nom de domaine en nohost.me, noho.st ou ynh.fr qui inclue un tel mécanisme)
 
 
-
-
 ## Vous êtes face à une erreur de certificat qui vous empêche d'accéder à la webadmin
 
 Si vous venez d'installer votre serveur ou d'ajouter un nouveau domaine, il utilise pour le moment un certificat auto-signé. Dans ce cas, il devrait être possible et légitime d'ajouter *exceptionnellement* une exception de sécurité le temps d'[installer un certificat Let's Encrypt](/certificate) à condition d'être sur une connexion internet sûre (pas avec Tor Browser par exemple).
@@ -41,10 +36,7 @@ Si vous venez d'installer votre serveur ou d'ajouter un nouveau domaine, il util
 Une erreur de certificat peut également être affichée dans certain cas où vous avez fait une faute de frappe dans la barre d'adresse de votre navigateur.
 
 
-
-
 ## Vous avez accès en SSH mais pas à la Web admin ou inversement
-
 
 #### Vous essayez de vous connecter en SSH avec `root` plutôt qu'avec `admin`
 
@@ -54,25 +46,25 @@ Lorsque vous exécutez des commandes `yunohost` en tant qu'admin, il faut les pr
 
 #### Vous avez été banni temporairement
 
-Votre serveur YunoHost inclut un mécanisme (fail2ban) qui banni automatiquement les IPs qui échouent plusieurs fois à s'authentifier. Dans certains cas, il peut s'agir d'un programme (par exemple un client Nextcloud) qui est configuré avec un ancien mot de passe ou d'un utilisateur qui utilise la même IP que vous.
+Votre serveur YunoHost inclut un mécanisme (Fail2Ban) qui banni automatiquement les IPs qui échouent plusieurs fois à s'authentifier. Dans certains cas, il peut s'agir d'un programme (par exemple un client Nextcloud) qui est configuré avec un ancien mot de passe ou d'un utilisateur qui utilise la même IP que vous.
 
 Si vous avez été banni en tentant d'accéder à une page web, seul les pages web sont inaccessibles, vous devriez donc pouvoir accéder au serveur en SSH. De même, si vous avez été banni en SSH vous devriez pouvoir accéder à la webadmin.
 
 Si vous avez été banni à la fois en SSH et à la webadmin, vous pouvez essayer d'accéder à votre serveur avec une autre IP, par exemple en utilisant la 4G d'un smartphone ou en utilisant Tor Browser.
 
-Voir aussi: [débannir une IP sur Fail2ban](/fail2ban)
+Voir aussi : [débannir une IP sur Fail2Ban](/fail2ban)
 
-NB: le bannissement dure en général 10 à 12 minutes. Le bannissement n'est actif qu'en IPv4.
+NB : le bannissement dure en général 10 à 12 minutes. Le bannissement n'est actif qu'en IPv4.
 
 
-#### Le serveur web nginx est cassé
+#### Le serveur web NGINX est cassé
 
-Peut-être que le serveur web nginx est en panne. Vous pouvez vérifier cela [en ssh](/ssh) avec `yunohost service status ssh`. Si il est en panne, vérifiez que la configuration ne comporte pas d'erreur avec `nginx -t`. Si la configuration est cassée, ceci est peut-être du à une l'installation ou désinstallation d'une application de mauvaise qualité... Si vous êtes perdu, [demandez de l'aide](/help).
+Peut-être que le serveur web NGINX est en panne. Vous pouvez vérifier cela [en ssh](/ssh) avec `yunohost service status ssh`. Si il est en panne, vérifiez que la configuration ne comporte pas d'erreur avec `nginx -t`. Si la configuration est cassée, ceci est peut-être du à une l'installation ou désinstallation d'une application de mauvaise qualité... Si vous êtes perdu, [demandez de l'aide](/help).
 
-Il se peut également que le serveur web (nginx) ou le serveur ssh aient été tués suite à un manque d'espace disque ou de RAM / swap.
+Il se peut également que le serveur web (NGINX) ou le serveur ssh aient été tués suite à un manque d'espace disque ou de RAM / swap.
 - Tentez de relancer le service avec `systemctl restart nginx`.
 - Vous pouvez contrôler l'espace disque utilisé avec `df -h`. Si une de vos partitions est remplie à 100%, il faut identifier ce qui prend de la place sur votre système et faire de la place. Il est possible d'installer l'utilitaire `ncdu` avec `apt install ncdu` puis de faire `ncdu /` pour analyser la taille des dossiers de  toute l'arborescence.
-- Vous pouvez contrôler l'utilisation de la RAM / swap avec `free -h`. En fonction des résultats, il peut être nécessaire d'optimiser votre serveur pour qu'il utilise moins de RAM (suppression d'app lourdes et inutiles, ...), d'ajouter de la RAM ou d'ajouter un fichier de swap.
+- Vous pouvez contrôler l'utilisation de la RAM / swap avec `free -h`. En fonction des résultats, il peut être nécessaire d'optimiser votre serveur pour qu'il utilise moins de RAM (suppression d'app lourdes et inutiles...), d'ajouter de la RAM ou d'ajouter un fichier de swap.
 
 #### Votre serveur est accessible en IPv6 mais pas en IPv4 ou inversement
 
@@ -85,16 +77,9 @@ Dans ce cas il faut résoudre votre problème de connectivité.
 Dans certains, cas une mise à jour de votre box a activé l'IPv6, entraînant des problèmes de configuration au niveau de votre nom de domaine.
 
 
-
-
-
-
-
 ## La webadmin fonctionne, mais certaines applications web me renvoient une erreur 502.
 
 Il est fort probablement que le service correspondant à ces applications soit en panne (typiquement pour les applications PHP, il s'agit de php7.0-fpm ou php7.3-fpm). Vous pouvez alors tenter de relancer le service, et si cela ne fonctionne pas, regarder les logs du service correspondant et/ou [demander de l'aide](/help).
-
-
 
 
 ## Vous avez perdu votre mot de passe administrateur ? (ou bien le mot de passe est refusé)
@@ -139,9 +124,6 @@ Dans ce cas il faut accéder au disque avec un autre système (mode `rescue` du 
 Si les disques sont corrompus et difficiles à monter, il faut sauvegarder les données et potentiellement refaire un formatage/réinstaller et/ou changer le disque. Si on arrive à monter le disque, il est possible d'utiliser `systemd-nspawn` pour entrer dans la base de données.
 
 Sinon, relancer `grub-update` et `grub-install` en `chroot` ou avec `systemd-nspawn`.
-
-
-
 
 
 ## L'accès en VNC ou via écran ne fonctionne pas
