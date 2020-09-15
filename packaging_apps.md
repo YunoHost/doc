@@ -31,8 +31,8 @@ Since YunoHost has a unified architecture, you will be able to guess most of the
 
 <a class="btn btn-lg btn-default" href="/packaging_apps_arguments_management">Arguments management</a>
 
-### Nginx configuration
-<a class="btn btn-lg btn-default" href="/packaging_apps_nginx_conf">Nginx configuration</a>
+### NGINX configuration
+<a class="btn btn-lg btn-default" href="/packaging_apps_nginx_conf">NGINX configuration</a>
 
 ### Multi-instance
 <a class="btn btn-lg btn-default" href="/packaging_apps_multiinstance">Multi-instance</a>

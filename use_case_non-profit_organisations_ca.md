@@ -68,7 +68,7 @@ YunoHost de base ofereix:
 * Un sistema d'aplicacions
 * Una interfície web
 * Una interfície per línia de comandes (CLI): Moulinette
-* Un servidor web: Nginx
+* Un servidor web: NGINX
 * Un servidor DNS: Dnsmasq
 * Una base de dades: MariaDB
 * Un sistema de còpies de seguretat

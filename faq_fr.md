@@ -115,7 +115,7 @@ Réponse moyenne : Par le passé, les apps étaient gérées via des .deb. C’
 
 <p>Il se trouve que l’objectif des paquets d’application YunoHost est subtilement différent de celui des paquets traditionnels (comme les .deb de Debian) qui remplissent le rôle d’installer des éléments bas-niveau tels que des fichiers, commandes, programmes ou services sur le système. Il est à la charge de l’administrateur de les configurer ensuite proprement, simplement parce qu’il n’existe pas d’environnement standard. Typiquement, les applications web requièrent beaucoup de configuration car elles ont besoin de s’interfacer avec un serveur web et une base de données (et le système de connexion unique / SSO).</p>
 
-<p>YunoHost manipule des abstractions haut-niveau (apps, domaines, utilisateurs…) et définit un environnement standard (Nginx, Postfix, Metronome, SSOwat…) et, grâce à cela, peut gérer la configuration à la place de l’administrateur.</p>
+<p>YunoHost manipule des abstractions haut-niveau (apps, domaines, utilisateurs…) et définit un environnement standard (NGINX, Postfix, Metronome, SSOwat...) et, grâce à cela, peut gérer la configuration à la place de l’administrateur.</p>
 
 <p>Si vous restez persuadé que l’on peut néanmoins bricoler les paquets .deb pour gérer tout cela, voir les réponses précédentes.</p>
 </div>

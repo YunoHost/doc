@@ -125,7 +125,7 @@ Medium answer: Apps were packaged in .deb in the past. It was a nightmare. We're
 
 <p>Turns out, YunoHost apps packaging holds a subtly different purpose than traditional packaging like .deb. Debian packages fulfill the low-level purpose of installing files, commands, programs and services on the system. It is often your duty to configure them properly, simply because there is no standard server setup. Typically, web apps requires a lot of configuration because they rely on a web server and a database (and the single sign-on).</p>
 
-<p>YunoHost manipulates high-level abstractions (apps, domains, users, ...) and defines a standard setup (Nginx, Postfix, Metronome, SSOwat, ...) and, because of this, can handle the configuration for the user.</p>
+<p>YunoHost manipulates high-level abstractions (apps, domains, users...) and defines a standard setup (NGINX, Postfix, Metronome, SSOwat...) and, because of this, can handle the configuration for the user.</p>
 
 <p>If you still think it's possible to handle everything by fiddling with .deb packages, see previous answers.</p>
 </div>

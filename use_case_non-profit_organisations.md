@@ -68,7 +68,7 @@ Out of the box YunoHost provide:
 * A system of application
 * A web interface
 * A command-line interface (CLI): Moulinette
-* A web server: Nginx
+* A web server: NGINX
 * A DNS server: Dnsmasq
 * A database: MariaDB
 * A backup system

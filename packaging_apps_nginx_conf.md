@@ -1,7 +1,7 @@
-# Nginx configuration
-This tutorial aim to help setup Nginx configuration for application packaging.
+# NGINX configuration
+This tutorial aim to help setup NGINX configuration for application packaging.
 
-#### Nginx configuration
+#### NGINX configuration
 Configuration must be in `conf/nginx.conf`. We must use **FastCGI** or a **proxy_pass** following the application:
 * **FastCGI** is used with PHP applications:
 ```nginx
@@ -44,15 +44,15 @@ sed -i "s@YNH_EXAMPLE_PATH@$path@g" ../conf/nginx.conf
 sed -i "s@YNH_EXAMPLE_PORT@$port@g" ../conf/nginx.conf
 sed -i "s@YNH_EXEMPLE_DOMAIN@$domain@g" ../conf/nginx.conf
 ```
-We must move that configuration file in Nginx configuration, then reload Nginx configuration:
+We must move that configuration file in NGINX configuration, then reload NGINX configuration:
 ```bash
 cp ../conf/nginx.conf /etc/nginx/conf.d/$domain.d/$app.conf
 sudo service nginx reload
 ```
-If Nginx won't restart, it's possible that this configuration file isn't right.
+If NGINX won't restart, it's possible that this configuration file isn't right.
 
 #### Remove script
-We must remove Nginx configuration of this application, then reload Nginx configuration:
+We must remove NGINX configuration of this application, then reload NGINX configuration:
 ```bash
 rm -f /etc/nginx/conf.d/$domain.d/$app.conf
 sudo service nginx reload

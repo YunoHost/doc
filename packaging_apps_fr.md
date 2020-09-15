@@ -33,8 +33,8 @@ Comme les instances de YunoHost possèdent une architecture unifiée, vous serez
 
 <a class="btn btn-lg btn-default" href="/packaging_apps_arguments_management">Gestion des arguments</a>
 
-### Configuration Nginx
-<a class="btn btn-lg btn-default" href="/packaging_apps_nginx_conf">Configuration Nginx</a>
+### Configuration NGINX
+<a class="btn btn-lg btn-default" href="/packaging_apps_nginx_conf">Configuration NGINX</a>
 
 ### Multi-instance
 <a class="btn btn-lg btn-default" href="/packaging_apps_multiinstance">Multi-instance</a>
@@ -50,7 +50,7 @@ Dans de nombreuses situations, vous pouvez vouloir indexer un fichier de log pou
 
 Il est possible de spécifier la date de début en commençant le nom de fichier par la date `YYYYMMDD-HHMMSS`.
 
-Exemple de fichier de log d'indexation:
+Exemple de fichier de log d'indexation :
 ```bash
 log_path: /chemin/vers/le/fichier.log
 ```

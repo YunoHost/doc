@@ -20,7 +20,7 @@ permet d’avoir un `agenda.mondomaine.fr`, un `blog.mondomaine.fr` etc…
 
 ### Installer une application sur un sous-domaine
 
-Pour installer une application sur un sous-domaine, par exemple `blog.mondomaine.fr`, dans YunoHost, tout se fait via la partie administration. On ajoute tout d’abord le sous-domaine à la liste des domaines disponibles. La création d’un sous-domaine dans YunoHost créera les fichiers de configuration correspondants pour Nginx (le serveur web de YunoHost).
+Pour installer une application sur un sous-domaine, par exemple `blog.mondomaine.fr`, dans YunoHost, tout se fait via la partie administration. On ajoute tout d’abord le sous-domaine à la liste des domaines disponibles. La création d’un sous-domaine dans YunoHost créera les fichiers de configuration correspondants pour NGINX (le serveur web de YunoHost).
 
 Puis dans la partie installation d’une application, on installe l’application de façon traditionnelle en choisissant ce sous-domaine comme domaine (par exemple `blog.mondomaine.fr`) et en indiquant comme chemin `/` (et non `/wordpress` qui est le chemin par défaut). On a alors un message d’avertissement indiquant qu’on ne pourra plus installer d’applications sur ce sous-domaine. On valide. Ça s’installe.
 

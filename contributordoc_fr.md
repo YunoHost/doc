@@ -16,7 +16,7 @@
    * [Scripts](/packaging_apps_scripts)
    * [Gestion des arguments](/packaging_apps_arguments_management)
    * [Format des arguments](/packaging_apps_arguments_format)
-   * [Configuration nginx](/packaging_apps_nginx_conf)
+   * [Configuration NGINX](/packaging_apps_nginx_conf)
    * [Multi-instance](/packaging_apps_multiinstance)
    * [Fonctions utiles](/packaging_apps_helpers)
    * [Utilisation de 'trap'](/packaging_apps_trap)

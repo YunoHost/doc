@@ -67,7 +67,7 @@ YunoHost provesís sul pic:
 * Un sistèma d'aplicacion
 * Una interfàcia web
 * Una interfàcia en linha de comanda (CLI) : Moulinette
-* Un servidor Web : Nginx
+* Un servidor Web : NGINX
 * Un servidor DNS : Dnsmasq
 * Una basa de donadas : MariaDB
 * Un sistèma de salvagarda

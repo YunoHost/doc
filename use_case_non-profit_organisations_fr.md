@@ -67,7 +67,7 @@ YunoHost fournit immédiatement:
 * Un système d'application
 * Une interface web
 * Une interface de ligne de commande (CLI): Moulinette
-* Un serveur Web : Nginx
+* Un serveur Web : NGINX
 * Un serveur DNS : Dnsmasq
 * Une base de données: MariaDB
 * Un système de sauvegarde

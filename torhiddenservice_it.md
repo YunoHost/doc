@@ -43,7 +43,7 @@ Se non vuoi essere rediretto al portale SSO al login puoi disattivare SSOwat spe
 #access_by_lua_file /usr/share/ssowat/access.lua;
 ```
 
-### Riavvia nginx
+### Riavvia NGINX
 ```bash
 service nginx restart
 ```
