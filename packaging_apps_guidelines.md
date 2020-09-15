@@ -1,4 +1,4 @@
-# Packing Applications : Good Practise Guidelines
+# Packing Applications: Good Practise Guidelines
 
 <div class="alert alert-danger">
 <b>
@@ -69,8 +69,8 @@ Each YEP is associated with:
 | YEP 3.6 | Update versions containing CVE | draft | manual | OFFICIAL (6) |
 | | | | | |
 | ** YEP 4 ** | ** Integrate an app ** | ** Status ** | ** Test ** | ** Level ** |
-| 4.1 | Link to ldap | validated | manual | OFFICIAL (4) |
-| YEP 4.2 | Link authentication to sso | validated | manual | OFFICIAL (4) |
+| 4.1 | Link to LDAP | validated | manual | OFFICIAL (4) |
+| YEP 4.2 | Link authentication to SSO | validated | manual | OFFICIAL (4) |
 | YEP 4.2.1 | Sign Out | validated | manual | OFFICIAL (9) |
 | YEP 4.3 | Provide YunoHost Backup Script Functional | validated | Home | OFFICIAL (6) |
 | YEP 4.4 | Provide a YunoHost Restore Functional script | validated | Home | OFFICIAL (6) |
@@ -99,7 +99,7 @@ In other words, it must respect the following rules:
 
 For application names containing spaces, virtually all current packages simply remove them without replacing them with dashes or underscores.
 
-By convention, the YunoHost application repositories are always named their ID followed by the string "\ _ynh". Thus one can distinguish the upstream repository of the application, the deposit of the yunohost package. This notation also makes it possible to find applications not listed by the search engines of platforms offering version managers (GitHub for example).
+By convention, the YunoHost application repositories are always named their ID followed by the string "\_ynh". Thus one can distinguish the upstream repository of the application, the deposit of the YunoHost package. This notation also makes it possible to find applications not listed by the search engines of platforms offering version managers (GitHub for example).
 
 Example: ID: Example Filing Name: example_ynh
 
@@ -119,13 +119,13 @@ For the `apps.json` list maintained by the project team, registration is on [the
 ##### Indicate the license associated with the package | draft | AUTO | WORKING |
 The license of the packet must be specified in a `LICENSE` file at the root of the packet. Be careful not to confuse with the license of the application that will be installed whose acronym is to be entered in the `license` field of the manifest.
 
-The application list apps.json only accept packages with a free license, as well as the license for the contained application. Some free applications require non-free dependencies (example: mp3, drivers, etc.). In this case, you should add `&dep-non-free` to the acronym and if possible give details in the README.md of the package, in this case the integration will be accepted on a case-by-case basis.
+The application list apps.json only accept packages with a free license, as well as the license for the contained application. Some free applications require non-free dependencies (example: MP3, drivers, etc.). In this case, you should add `&dep-non-free` to the acronym and if possible give details in the README.md of the package, in this case the integration will be accepted on a case-by-case basis.
 
 **NB:** Apps not included in apps.json lists may still be installed: either manually with the URL to the app, or in a more practical way using non-official lists (which can be created and maintained by the community).
 
 In the future, YunoHost will probably display details about the license of the application. To achieve this, the acronym must be the one from this [list of licenses listed in the SPDX](https://spdx.org/licenses/) (if there are 2 acronyms, the one containing the version number). For consistency, the case must be respected.
 
-If the license is not present in the list, in this case it is necessary to indicate `free` or `non-free` depending on whether it is free or not and give the user the opportunity to inquire in the README .md (link, explanations, ...).
+If the license is not present in the list, in this case it is necessary to indicate `free` or `non-free` depending on whether it is free or not and give the user the opportunity to inquire in the README.md (link, explanations...).
 
 Example: for a GNU Lesser General Public License (LGPL), version 3 the acronym is `LGPL-3.0` if non-free dependencies are used in this case it will be necessary to put LGPL-3.0 & dep-non-free `in the manifesto.
 
@@ -160,7 +160,7 @@ To follow the evolution of YunoHost more generally:
 
 #### YEP 1.7
 ##### Add the app to the [YunoHost-Apps Organization](https://github.com/YunoHost-Apps) | validated | manual | OFFICIAL |
-Adding an app to the [YunoHost-Apps organization](https://github.com/YunoHost-Apps) lets you share apps with other contributors who might be tempted to package the targeted application .
+Adding an app to the [YunoHost-Apps organization](https://github.com/YunoHost-Apps) lets you share apps with other contributors who might be tempted to package the targeted application.
 
 It is also a way to quickly deploy a security patch if necessary in the event that the maintainer is unavailable.
 
@@ -203,7 +203,7 @@ There is also README.md, which must and can contain:
 * instructions to use it (for example to connect your smartphone or computer)
 * the location to report a malfunction / request
 * the roadmap / TODO
-* possibly prerequisites in terms of ram memories, processor etc. (some equipment has less than 512MB of ram)
+* possibly prerequisites in terms of RAM memories, processor etc. (some equipment has less than 512 MB of RAM)
 
 #### YEP 1.10
 ##### Keep a clean version history | draft | manual | OFFICIAL |
@@ -225,11 +225,11 @@ The manifest allows to describe an app so that YunoHost can apply the good treat
 
 #### YEP 2.2
 ##### Using bash for main scripts | validated | Home | WORKING |
-Action scripts (install, upgrade, remove, backup and restore) must be in the bash so that the cli / api yunohost can call them correctly.
+Action scripts (install, upgrade, remove, backup and restore) must be in the bash so that the CLI/API YunoHost can call them correctly.
 
 That being said, there is nothing to prevent other scripts or function libraries from using these scripts. These are not obliged to be in bash.
 
-However, careful attention must be paid to the correct display of logs of information, warning, or errors. So that a user of the cli / api yunohost can understand the operation of the script just executed and if necessary repair its YunoHost instance.
+However, careful attention must be paid to the correct display of logs of information, warning, or errors. So that a user of the CLI/API YunoHost can understand the operation of the script just executed and if necessary repair its YunoHost instance.
 
 #### YEP 2.3
 ##### Save the answers during the installation | validated | manual | WORKING |
@@ -238,12 +238,12 @@ During installation, it is necessary to save each answer to the questions in the
 #### YEP 2.4
 ##### Detecting and Managing Errors | draft | manual | WORKING |
 The install, upgrade, backup, and restore scripts must detect errors to avoid further scripting in case of blocking error or empty variable usage.
-The use of trap and set -eu is recommended to detect and treat errors ([Discussion in progress](https://forum.yunohost.org/t/gestion-des-erreurs-set-e-and-or-trap/2249/5))
+The use of trap and `set -eu` is recommended to detect and treat errors ([Discussion in progress](https://forum.yunohost.org/t/gestion-des-erreurs-set-e-and-or-trap/2249/5))
 It is also necessary to check the contents of the variables before removing the remove script. For example, an `rm -Rf /var/www/$app` with `$app` empty would have a disastrous result.
 
-At the beginning of the scripts, before any modifications, it is necessary to check the existence of the users mentioned at the installation, as well as the availability of the requested path, the availability of the final file of the application and the size of the passwords if necessary .
+At the beginning of the scripts, before any modifications, it is necessary to check the existence of the users mentioned at the installation, as well as the availability of the requested path, the availability of the final file of the application and the size of the passwords if necessary.
 
- Do not forget that in case of installation error the removal script will be launched automatically by the yunohost cli.
+ Do not forget that in case of installation error the removal script will be launched automatically by the YunoHost CLI.
 
 #### YEP 2.5
 ##### Copy files correctly | draft | manual | WORKING |
@@ -251,7 +251,7 @@ At the beginning of the scripts, before any modifications, it is necessary to ch
 ##### Cancel action if input values ​​are incorrect | validated | manual | WORKING |
 Each script should verify that the input values ​​are correct.
 
-Here are some examples :
+Here are some examples:
 * Check that the domain name exists
 * Check that the user exists
 * Check that the chosen path is available
@@ -304,7 +304,7 @@ The goal is to find a more reliable method than sed to modify the configuration 
 ##### Check availability of dependencies on ARM, x86, and x64 | validated | manual | OFFICIAL |
 YunoHost installs on ARM, x86 and x64. A package should therefore be tested on these three processor architectures.
 
-Some packages are not available on ARM, in this case it is advisable to study other solutions or to indicate in the README.md that the application does not work on ARM and to block the installation by detection of type d 'architecture.
+Some packages are not available on ARM, in this case it is advisable to study other solutions or to indicate in the README.md that the application does not work on ARM and to block the installation by detection of type d'architecture.
 
 #### YEP 2.17
 ##### Take the original version into account when updating | validated | manual | OFFICIAL |
@@ -341,7 +341,7 @@ A web app should be able to install on a path `/path`.
 
 #### YEP 2.18.5
 ##### Manage the YunoHost tile to easily navigate between applications | validated | manual | OFFICIAL |
-Except in rare cases it is advisable to integrate the tile YunoHost which allows to return to the menu of the SSO. This integration is done in the nginx configuration.
+Except in rare cases it is advisable to integrate the tile YunoHost which allows to return to the menu of the SSO. This integration is done in the NGINX configuration.
 
 Some users have replaced this square with a script adding a menu at the top of each webapp.
 
@@ -356,7 +356,7 @@ It should also be checked whether the port should be open on the router, beyond 
 
 #### YEP 3.3
 ##### Facilitating Source Integrity Control | draft | manual | OFFICIAL |
-The upstream application should not be integrated into tarball in the source folder of the package, as this adds to the package and the git repository and does not allow verification of the integrity of the source.
+The upstream application should not be integrated into tarball in the source folder of the package, as this adds to the package and the Git repository and does not allow verification of the integrity of the source.
 The source must be downloaded from the official website, then its integrity must be checked before installing it.
 
 #### YEP 3.4
