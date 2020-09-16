@@ -122,7 +122,7 @@ Vous pouvez également installer un serveur Matrix :
 
 Pour une organisation à but non lucratif, un bon moyen de mettre en œuvre un intranet est de fournir un wiki permettant aux utilisateurs internes de lire, éditer et ajouter du contenu. Voici quelques paquets pour implémenter un wiki :
 * [DokuWiki](https://github.com/YunoHost-Apps/docuwiki_ynh) utilisant une syntax wiki
-* [Wiki.js](https://github.com/YunoHost-Apps/wikijs_ynh) utilisant une syntax Warkdown
+* [Wiki.js](https://github.com/YunoHost-Apps/wikijs_ynh) utilisant une syntax Markdown
 
 ### ERP / Comptabilité
 
