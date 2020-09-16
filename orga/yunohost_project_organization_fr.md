@@ -15,7 +15,7 @@ Le but de YunoHost est de rendre accessibles au plus grand nombre l’installati
 
 #### Un logiciel libre et communautaire
 
-YunoHost est un logiciel sous licence libre, entièrement communautaire, et reposant sur des applications elles-mêmes communautaires et souvent libres (roundcube, baikal, etc...).
+YunoHost est un logiciel sous licence libre, entièrement communautaire, et reposant sur des applications elles-mêmes communautaires et souvent libres (Roundcube, Baïkal, etc.).
 
 
 #### Que chacun peut s'approprier
@@ -51,7 +51,7 @@ La constitution de groupes part du constat que YunoHost compte beaucoup de sous-
 
 - ##### Groupe Infra/Adminsys
  - Infrastructure
- - Site web (wiki, forum, salon de discussion, redmine, mumble)
+ - Site web (wiki, forum, salon de discussion, Redmine, Mumble)
  - Démo
  - Services
     - [ip.yunohost.org](https://ip.yunohost.org/) et ip6.yunohost.org
@@ -90,7 +90,7 @@ Le Conseil est indépendant des groupes et réunit les contributeurs souhaitant 
 
 Le choix d'un outil de communication est laissé au Conseil, ses décisions doivent néanmoins être consultables par l'ensemble de la communauté de contributeurs.
 Pour participer aux votes du Conseil, il faut avoir contribué au projet et avoir obtenu un droit de vote (ou d'entrée) au sein du Conseil. Ce droit est délivré par le Conseil (éventuellement sur demande). Le Conseil est libre à tout moment de modifier le processus de décision.
-Être membre du Conseil n'implique pas forcément d'avoir l'ensemble des accès (infrastructure, dépôt etc...).
+Être membre du Conseil n'implique pas forcément d'avoir l'ensemble des accès (infrastructure, dépôt etc.).
 
 ### Processus de validation des pull requests
 
@@ -100,7 +100,7 @@ Si un consensus ne peut être trouvé au sein d'un groupe en suivant le processu
 
 #### 1. Proposition
 
-N'importe quel contributeur peut proposer une pull request (abrégée PR dans la suite) dans les divers dépôts liés au projet YunoHost (core, apps, infra, ...).
+N'importe quel contributeur peut proposer une pull request (abrégée PR dans la suite) dans les divers dépôts liés au projet YunoHost (core, apps, infra...).
 
 L'auteur est vivement encouragé à décrire sa proposition en donnant le maximum  des informations
 pertinentes. Le groupe peut, à cette fin, proposer un modèle des informations à
@@ -112,17 +112,17 @@ inclure, comme par exemple :
 
 L'auteur est vivement encouragé à respecter les bonnes pratiques suivantes :
 - une PR doit concerner exclusivement un sujet précis. Par exemple, elle ne doit pas à la fois résoudre un bug et ajouter une fonctionnalité (à moins que l'un implique l'autre) ;
-- avant de débuter l'implémentation d'une fonctionnalité qui fait intervenir des choix de conception (nom et format de commande ou d'option, nouvelle API, interface utilisateur, ...), discuter en amont de manière informelle avec le groupe pour s'assurer que l'implémentation imaginée convienne au plus grand nombre et reste dans l'esprit du projet ;
+- avant de débuter l'implémentation d'une fonctionnalité qui fait intervenir des choix de conception (nom et format de commande ou d'option, nouvelle API, interface utilisateur...), discuter en amont de manière informelle avec le groupe pour s'assurer que l'implémentation imaginée convienne au plus grand nombre et reste dans l'esprit du projet ;
 - nommer sa PR avec un titre explicite, et la branche associée avec un nom explicite ;
-- donner les références vers d'autres éléments liés à la PR (rapport de bug sur le bugtracker, message sur le forum, ...)
+- donner les références vers d'autres éléments liés à la PR (rapport de bug sur le bugtracker, message sur le forum...)
 
 Une PR peut être créée même si son auteur juge qu'elle n'est pas encore terminée. Dans ce cas, il doit déclarer explicitement dans le fil de discussion de la PR lorsqu'il juge la PR prête. Cela n'empêche pas les autres contributeurs d'émettre des avis sur la PR pendant ce temps.
 
 Il appartient aussi à l'auteur de la PR de juger de son importance. (Ce jugement pourra cependant être contesté par les autres membres du groupe concerné par la PR.) Les niveaux d'importance utilisés sont les suivants :
 - **micro** : concerne uniquement un détail de forme et/ou qui ne nécessite pas d'être débattue et testée. Elle doit être facilement réversible.
-- **mineure** : impacte de manière légère le projet (e.g. refactoring d'une petite partie de code, réparation d'un bug, ...)
+- **mineure** : impacte de manière légère le projet (e.g. refactoring d'une petite partie de code, réparation d'un bug...)
 - **moyenne** : impacte de manière significative l'architecture d'une partie du code (e.g. refactoring de tout un aspect ou de tout un fichier, ajout d'une fonctionnalité importante, sortie d'une version testing, ...)
-- **majeure** : impacte lourdement l'ensemble du projet (e.g. migration d'une dépendance critique, changement de version de Debian, sortie d'une version stable,  ...)
+- **majeure** : impacte lourdement l'ensemble du projet (e.g. migration d'une dépendance critique, changement de version de Debian, sortie d'une version stable...)
 
 
 #### 2. Revue et validation collective
@@ -131,7 +131,7 @@ Il appartient aussi à l'auteur de la PR de juger de son importance. (Ce jugemen
 
 Une fois la PR déclarée comme terminée, les contributeurs sont invités à donner leurs avis, relire et tester les changements proposés pour les valider. Lorsque des bugs ou des implémentations mauvaises ou incomplètes sont trouvées, les relecteurs rapportent cordialement le problème à l'auteur de la PR sur le fil de discussion. Si le problème trouvé est simple à corriger (e.g. typo ou détail de forme), le relecteur est encouragé à amender la PR pour corriger le problème lui-même. Sinon, l'auteur fait de son mieux pour corriger les problèmes soulevés.
 
-Les relecteurs rapportent également le degré de relecture et de tests effectués (c.f. liste ci-dessous). Selon l'importance de la PR (mineure, moyenne ou majeure), différents quotas de tests et approbations sont à remplir pour que celle-ci soit validée. Les relecteurs peuvent valider une fois chaque type de relecture/test nécessaire (par exemple, un relecteur peut donner un point d'accord sur le principe, un autre point de relecture en diagonale, et un autre point de test dans des cas simples.). L'auteur de la PR ne compte pas dans ces quotas de validation. La proposition doit aussi passer les tests automatiques disponibles dans le groupe (CI, tests unitaires/fonctionnels, linter, ...).  
+Les relecteurs rapportent également le degré de relecture et de tests effectués (c.f. liste ci-dessous). Selon l'importance de la PR (mineure, moyenne ou majeure), différents quotas de tests et approbations sont à remplir pour que celle-ci soit validée. Les relecteurs peuvent valider une fois chaque type de relecture/test nécessaire (par exemple, un relecteur peut donner un point d'accord sur le principe, un autre point de relecture en diagonale, et un autre point de test dans des cas simples.). L'auteur de la PR ne compte pas dans ces quotas de validation. La proposition doit aussi passer les tests automatiques disponibles dans le groupe (CI, tests unitaires/fonctionnels, linter...).  
 
 |                                   | **Mineure** | **Moyenne**  | **Majeure** |
 |-----------------------------------|-------------|--------------|-------------|
@@ -170,7 +170,7 @@ Une PR peut être développée par plusieurs personnes. Chacun est invité à y 
 
 Si ces commits sont conséquents, dans ce cas on peut prendre **partiellement** en compte l'avis des auteurs dans les quotas de relectures et de tests. 
 
-Exemple: si une PR est écrite par A et B (50/50), A et B pourront relire le code de l'autre. Dans ce cas, on pourra par exemple compter une relecture pour ces 2 relectures partielles.
+Exemple : si une PR est écrite par A et B (50/50), A et B pourront relire le code de l'autre. Dans ce cas, on pourra par exemple compter une relecture pour ces 2 relectures partielles.
 
 
 ##### Validation "allégé" en cas de manque de relecteurs
@@ -255,14 +255,14 @@ Cette partie liste les kits de droits d’administration pour les différents gr
 
 ## Décisions à venir pour les groupes
 ### Conseil
-- Faut-il élire les membres du Conseil plutôt que de les coopter ? Risque de se transformer en "campagne politique"!
+- Faut-il élire les membres du Conseil plutôt que de les coopter ? Risque de se transformer en "campagne politique" !
 - Faut-il limiter l'ouverture des groupes d'intérêts par cooptation comme pour le Conseil ?
 - Proposition de changer Conseil en Collégiale
-- Migrer le serveur d’infrastructure du projet sous YunoHost. (avec apps déjà packagées pad, gogs, mumble?)
+- Migrer le serveur d’infrastructure du projet sous YunoHost. (avec apps déjà packagées pad, Gogs, Mumble?)
 - Nouveau système pour la documentation
 - Amélioration de la documentation
 - Migration du serveur XMPP
-- Hébergement de notre forge git
+- Hébergement de notre forge Git
 - Revoir système de build : stable <— testing <— branches
 - Gel de nohost.me et question de l'abandon des services
 
@@ -271,7 +271,7 @@ Cette partie liste les kits de droits d’administration pour les différents gr
    - Chaque ticket fait l'objet d'une branche et d'un ticket, tu fais une pull/merge request, la communauté vérifie que ça fonctionne, une décision est prise d'intégrer.
 
 ### Groupe Apps
- -  Pour les apps communautaires, les issues sont bien sur Github, les discussions sur le forum
+ -  Pour les apps communautaires, les issues sont bien sur GitHub, les discussions sur le forum
 
 ### Groupe Communication
 - Rapport de bug à partir du forum
@@ -295,5 +295,5 @@ Cette partie liste les kits de droits d’administration pour les différents gr
 - Réunions hebdomadaires Mumble.
 - [Forum](https://forum.yunohost.org).
 - [Bugtracker Redmine](https://dev.yunohost.org).
-- Forge git pour la review de code : [YunoHost](https://github.com/YunoHost) [YunoHost-Apps](https://github.com/YunoHost-Apps).
+- Forge Git pour la review de code : [YunoHost](https://github.com/YunoHost) [YunoHost-Apps](https://github.com/YunoHost-Apps).
 - [Salons de discussions XMPP](https://yunohost.org/#/chat_rooms_fr)
