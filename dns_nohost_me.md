@@ -51,6 +51,8 @@ yunohost dyndns update
 
 # Set it as the main domain
 yunohost tools maindomain --new-domain whateveryouwant.nohost.me
+# this seems to be the old way, not working anomore ? I had to use the following :
+yunohost domain main-domain -n whateveryouwant.nohost.me
 ```
 
 #### Retrieve a nohost.me, noho.st or ynh.fr domain
