@@ -20,9 +20,9 @@ Organisations à but non lucratif, ONG ou tout type d'association.
 
 ## Quoi
 
-Les organisations à but non lucratif doivent généralement fournir différents services à différents publics:
+Les organisations à but non lucratif doivent généralement fournir différents services à différents publics :
 
-* Conseil d'administration / Comité directeur / Bénévoles avec:
+* Conseil d'administration / Comité directeur / Bénévoles avec :
   * [Mails](#mails)
   * [Calendrier](#calendrier)
   * [Contact](#contact)
@@ -30,13 +30,13 @@ Les organisations à but non lucratif doivent généralement fournir différents
   * [Communication instantanée](#communication-instantan-e)
   * [Intranet / Base de connaissances](#intranet)
   * [ERP / Comptabilité](#erp-comptabilit-)
-* Membres avec:
+* Membres avec :
   * [Site Web public avec accès privé et individuel](#site-web-public)
   * [Adhésion](#adh-sion)
   * [Inscriptions aux événements](#inscriptions-aux-v-nements)
   * [Mailings](#newsletter-mailing)
   * [Forum](#forum)
-* Public avec:
+* Public avec :
   * [Site Web public](#site-web-public)
   * [Newsletter](#newsletter-mailing)
 
@@ -65,16 +65,16 @@ YunoHost est une distribution basée sur Debian GNU/Linux qui automatise l’ins
 
 YunoHost fournit immédiatement:
 * Un système d'application
-* Une interface web
-* Une interface de ligne de commande (CLI): Moulinette
+* Une interface Web
+* Une interface de ligne de commande (CLI) : Moulinette
 * Un serveur Web : NGINX
 * Un serveur DNS : Dnsmasq
-* Une base de données: MariaDB
+* Une base de données : MariaDB
 * Un système de sauvegarde
-* Un SSO: SSOwat
+* Un SSO : SSOwat
 * OpenLDAP
 * Email :
-  * SMTP: Postfix
+  * SMTP : Postfix
   * IMAP & POP3 : Dovecot
   * Un antispam : rspamd, rmilter
 * Serveur XMPP de messagerie instantanée : Metronome IM
@@ -85,7 +85,7 @@ La première chose dont vous aurez besoin pour implémenter un serveur YunoHost 
 
 ### Mails
 
-De base, YunoHost fournit un système de messagerie disponible en utilisant POP / IMAP / SMTP.
+YunoHost fournit par défaut un système de messagerie disponible en utilisant POP / IMAP / SMTP.
 Les comptes de messagerie seront gérés à l'aide de l'interface Web ou de la ligne de commande. Les comptes créés sont stockés dans OpenLDAP.
 
 Des packages supplémentaires peuvent être installés pour fournir davantage de fonctionnalités au système de messagerie YunoHost :
@@ -103,7 +103,7 @@ Pour fournir des calendriers personnels ou partagés, vous devrez installer :
 
 Pour fournir un système de contact personnel, vous devrez installer :
 * [Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh)
-* [Baikal](https://github.com/YunoHost-Apps/baikal_ynh)
+* [Baïkal](https://github.com/YunoHost-Apps/baikal_ynh)
 
 ### Fichiers partagés
 
@@ -112,17 +112,17 @@ Les fichiers seront disponibles à partir d'une interface Web ou à l'aide d'un 
 
 ### Communication instantanée
 
-De base, YunoHost fournit immédiatement un serveur XMPP pour lequel vous pouvez installer un client Web:  [Jappix](https://github.com/YunoHost-Apps/jappix_ynh)
+Par défaut, YunoHost fournit immédiatement un serveur XMPP pour lequel vous pouvez installer un client Web : [Jappix](https://github.com/YunoHost-Apps/jappix_ynh)
 
 Vous pouvez également installer un serveur Matrix :
-* Le serveur: [Synapse](https://github.com/YunoHost-Apps/synapse_ynh)
-* Un client web: [Riot](https://github.com/YunoHost-Apps/riot_ynh)
+* Le serveur : [Synapse](https://github.com/YunoHost-Apps/synapse_ynh)
+* Un client Web : [Element](https://github.com/YunoHost-Apps/element_ynh)
 
 ### Intranet
 
 Pour une organisation à but non lucratif, un bon moyen de mettre en œuvre un intranet est de fournir un wiki permettant aux utilisateurs internes de lire, éditer et ajouter du contenu. Voici quelques paquets pour implémenter un wiki :
-* [DokuWiki](https://github.com/YunoHost-Apps/docuwiki_ynh) using wiki syntax
-* [Wiki.js](https://github.com/YunoHost-Apps/wikijs_ynh) using markdown syntax
+* [DokuWiki](https://github.com/YunoHost-Apps/docuwiki_ynh) utilisant une syntax wiki
+* [Wiki.js](https://github.com/YunoHost-Apps/wikijs_ynh) utilisant une syntax Warkdown
 
 ### ERP / Comptabilité
 
@@ -133,12 +133,12 @@ Pour une organisation à but non lucratif, un bon moyen de mettre en œuvre un i
 ### Site Web Public
 
 Il existe plusieurs façons d'implémenter un site Web public :
-* Un simple site HTML, CSS, etc... en utilisant : [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh)
-* Utiliser un CMS (système de gestion de contenu) comme  [Wordpress](https://github.com/YunoHost-Apps/_ynh), [Drupal](https://github.com/YunoHost-Apps/drupal_ynh) , [Grav](https://github.com/YunoHost-Apps/grav_ynh), [PluXml](https://github.com/YunoHost-Apps/pluxml_ynh)
+* Un simple site HTML, CSS, etc. en utilisant : [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh)
+* Utiliser un CMS (système de gestion de contenu) comme  [WordPress](https://github.com/YunoHost-Apps/_ynh), [Drupal](https://github.com/YunoHost-Apps/drupal_ynh), [Grav](https://github.com/YunoHost-Apps/grav_ynh), [PluXml](https://github.com/YunoHost-Apps/pluxml_ynh)
 
-Mais nous proposerons quelque chose de plus puissant : [CiviCRM on Drupal 7](https://github.com/YunoHost-Apps/civicrm_drupal7_ynh):
+Mais nous proposerons quelque chose de plus puissant : [CiviCRM on Drupal 7](https://github.com/YunoHost-Apps/civicrm_drupal7_ynh) :
 * Drupal qui est un puissant framework de gestion de contenu
-* avec CiviCRM qui est un CRM OpenSource à destination des organisations à but non lucratif
+* avec CiviCRM qui est un CRM open source à destination des organisations à but non lucratif
 
 #### Adhésion
 
