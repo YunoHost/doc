@@ -37,7 +37,7 @@
   <div dir="auto" class="call-to-action">
     <a class="btn btn-primary btn-lg" href="/try">تجريب</a>
     <a class="btn btn-success btn-lg" href="/install">تنصيب</a>
-    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-6-release-sortie-de-yunohost-3-6/8359">YunoHost v3.6</a></small></p>
+    <h2 style="margin-top: 0"><small><a href="https://forum.yunohost.org/c/announcement">Latest news</a></small></h2>
   </div>
 
   <hr />
