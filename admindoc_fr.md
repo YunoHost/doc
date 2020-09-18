@@ -46,7 +46,7 @@
         * [Orange](/isp_orange)
         * [Free](/isp_free)
     * [Documentation spécifique à certaines apps](/appsdoc)
-    * [Equivalence entre service framasoft et apps](/apps_framasoft)
+    * [Equivalence entre service Framasoft et apps](/apps_framasoft)
     * [Échanger des fichiers avec son serveur à l'aide d'une interface graphique](/filezilla)
     * [Modifier l'apparence du portail utilisateur](/theming)
     * [Ajouter un stockage externe](/external_storage)

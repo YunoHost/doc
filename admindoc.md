@@ -46,7 +46,7 @@
         * [Orange](/isp_orange)
         * [Free](/isp_free) 
     * [Specific apps documentations](/appsdoc)
-    * [Equivalence between framasoft service and apps](/apps_framasoft)
+    * [Equivalence between Framasoft service and apps](/apps_framasoft)
     * [Exchange files with your server using a graphical interface](/filezilla)
     * [Customize the appearance of the YunoHost portal](/theming)
     * [Adding an external storage](/external_storage)
