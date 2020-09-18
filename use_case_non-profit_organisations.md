@@ -1,4 +1,4 @@
-# YunoHost for non-profit
+# YunoHost for non-profit organizations
 
 ## Table of Contents
 * [Introduction](#introduction) 

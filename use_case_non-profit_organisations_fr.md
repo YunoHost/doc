@@ -1,6 +1,6 @@
-# YunoHost for non-profit
+# YunoHost pour les organisations à but non lucratif
 
-## Table of Contents
+## Table des matières
 * [Introduction](#introduction) 
 * [Qui ](#qui) 
 * [Quoi](#quoi) 
