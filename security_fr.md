@@ -1,4 +1,3 @@
-
 # Sécurité
 
 YunoHost a été développé dans l’optique de fournir une sécurité maximale tout en restant accessible et facilement installable.

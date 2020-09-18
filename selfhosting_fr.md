@@ -1,4 +1,4 @@
-# L'auto-hébergement
+# L’auto-hébergement
 
 L'auto-hébergement est le fait d'avoir et d'administrer son propre serveur, typiquement chez soi, pour héberger soi-même ses données personnelles et des services plutôt que de se reposer exclusivement sur des tiers. Par exemple, il est possible d'auto-héberger son blog de sorte qu'il "vive" dans une machine que vous contrôlez, au lieu qu'il soit sur l'ordinateur de quelqu'un d'autre (a.k.a. le Cloud) en échange d'argent, de publicités ou de données privées.
 

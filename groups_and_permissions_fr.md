@@ -1,14 +1,13 @@
-Groupes et permissions
-===========================
+# Groupes et permissions
 
 Vous pouvez accéder à l'interface de gestion des *groupes et des permissions* depuis la webadmin
 en allant dans la section "Utilisateurs" et en cliquant sur le bouton correspondant :
 
 ![](./images/button_to_go_to_permission_interface_fr.png)
 
-Gestion des groupes
----------------
-Le mécanisme de groupe peut être utilisé pour définir des groupes d'utilisateurs qui peuvent ensuite être utilisés pour restreindre les autorisations pour les applications et autres services (tels que l'email ou xmpp). Notez qu'il n'est *pas* obligatoire de créer un groupe pour ce faire : vous pouvez également restreindre l'accès à une application ou à un service de manière individuelle.
+## Gestion des groupes
+
+Le mécanisme de groupe peut être utilisé pour définir des groupes d'utilisateurs qui peuvent ensuite être utilisés pour restreindre les autorisations pour les applications et autres services (tels que l'email ou XMPP). Notez qu'il n'est *pas* obligatoire de créer un groupe pour ce faire : vous pouvez également restreindre l'accès à une application ou à un service de manière individuelle.
 
 L'utilisation de groupes est cependant utile pour la sémantique, par exemple si vous hébergez plusieurs groupes d'amis, des associations ou des entreprises sur votre serveur, vous pouvez créer des groupes comme "association1" et "association2" et ajouter les membres de chaque association au groupe concerné.
 
@@ -96,10 +95,9 @@ Pour supprimer le groupe `yolo_crew` dans CLI, vous pouvez exécuter
 $ yunohost user group delete yolo_crew
 ```
 
-Gestion des permissions
---------------------
+## Gestion des permissions
 
-Le mécanisme de permissions permet de restreindre l'accès aux services (par exemple mail, xmpp, ...) et aux applications, ou même à des parties spécifiques des applications (par exemple l'interface d'administration de wordpress).
+Le mécanisme de permissions permet de restreindre l'accès aux services (par exemple mail, XMPP...) et aux applications, ou même à des parties spécifiques des applications (par exemple l'interface d'administration de WordPress).
 
 ### Liste des permissions
 
@@ -120,7 +118,7 @@ permissions:
   xmpp.main:
     allowed: all_users
 ```
-Ici, nous constatons que tous les utilisateurs enregistrés peuvent utiliser le courrier électronique, xmpp, et accéder au blog wordpress. Cependant, personne ne peut accéder à l'interface d'administration de wordpress.
+Ici, nous constatons que tous les utilisateurs enregistrés peuvent utiliser le courrier électronique, XMPP, et accéder au blog WordPress. Cependant, personne ne peut accéder à l'interface d'administration de WordPress.
 
 Plus de détails peuvent être affichés en ajoutant l'option `--full` qui affichera la liste des utilisateurs correspondant aux groupes autorisés, ainsi que les urls associées à une permission (pertinent pour les applications web).
 
@@ -130,7 +128,7 @@ Pour ajouter une permission à un groupe, il suffit de cliquer sur le bouton "+"
 
 ![](./images/groups_add-permission-group.png)
 
-Pour permettre à un groupe d'accéder à l'interface d'administration de wordpress via la CLI :
+Pour permettre à un groupe d'accéder à l'interface d'administration de WordPress via la CLI :
 
 ```shell
 $ yunohost user permission update wordpress.admin --add yolo_crew
@@ -146,7 +144,7 @@ ou en CLI :
 $ yunohost user permission update wordpress.admin --add alice
 ```
 
-Et maintenant, nous pouvons voir que YoloCrew et Alice ont tous deux accès à l'interface d'administration de Wordpress :
+Et maintenant, nous pouvons voir que YoloCrew et Alice ont tous deux accès à l'interface d'administration de WordPress :
 
 ```shell
 $ yunohost user permission list
@@ -171,8 +169,7 @@ La webadmin émettra un avertissement si vous définissez une permission qui est
 ![](./images/groups_alerte-permission.png)
 
 
-Notes aux packageurs d'applications
-------------------------
+## Notes aux packageurs d'applications
 
 L'installation d'une application crée l'autorisation `app.main` avec `all_users` autorisée par défaut.
 
@@ -249,7 +246,7 @@ fi
 
 Dans cet exemple, si l'application est publique, le groupe `visitors` a accès à l'autorisation `create poll`, sinon le groupe est supprimé de cette autorisation.
 
-Créez ensuite deux fichiers dans le répertoire `hooks` à la racine du dépôt git de l'application : `post_app_addaccess` et `post_app_removeaccess`. Dans ces hooks, vous supprimerez ou rajouterez la protection contre les regex si le groupe `visitors` est ajouté ou supprimé de cette autorisation :
+Créez ensuite deux fichiers dans le répertoire `hooks` à la racine du dépôt Git de l'application : `post_app_addaccess` et `post_app_removeaccess`. Dans ces hooks, vous supprimerez ou rajouterez la protection contre les regex si le groupe `visitors` est ajouté ou supprimé de cette autorisation :
 
 `post_app_addaccess`
 

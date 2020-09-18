@@ -1,4 +1,4 @@
-# Qu'est-ce que YunoHost ?
+# Qu’est-ce que YunoHost ?
 
 <img src="/images/YunoHost_logo_vertical.png" width=400>
 

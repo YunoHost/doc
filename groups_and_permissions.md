@@ -1,15 +1,13 @@
-User groups and permissions
-===========================
+# User groups and permissions
 
 You can access the *groups and permissions* management interface from the webadmin
 by going into the 'Users' section and clicking the corresponding button:
 
 ![](./images/button_to_go_to_permission_interface.png)
 
-Managing groups
----------------
+## Managing groups
 
-The group mechanism can be used to define groups of users which then can be used to restrict permissions for applications and other services (such as mail or xmpp). Note that it is *not* mandatory to create a group to do so: you can also restrict access to an app or service on a user-per-user basis.
+The group mechanism can be used to define groups of users which then can be used to restrict permissions for applications and other services (such as mail or XMPP). Note that it is *not* mandatory to create a group to do so: you can also restrict access to an app or service on a user-per-user basis.
 
 Using groups is however useful for semantics, for example if you host multiple groups of friends, associations or businesses on your server, you might want to create groups like `association1` and `association2` and add members of each association to the relevant group.
 
@@ -71,7 +69,7 @@ $ yunohost user group update yolo_crew --add charlie delphine
 
 (similarly, `--remove` can be used to remove members from a group)
 
-Now in the group list we should see :
+Now in the group list we should see:
 
 ```shell
 $ yunohost user group list
@@ -100,10 +98,9 @@ To delete the group `yolo_crew` in CLI, you may run
 $ yunohost user group delete yolo_crew
 ```
 
-Managing permissions
---------------------
+## Managing permissions
 
-The permission mechanism allow to restrict access to services (for example mail, xmpp, ...) and apps, or even specific parts of the apps (for example the administration interface of wordpress).
+The permission mechanism allow to restrict access to services (for example mail, XMPP...) and apps, or even specific parts of the apps (for example the administration interface of WordPress).
 
 ### List permissions
 
@@ -126,7 +123,7 @@ permissions:
     allowed: all_users
 ```
 
-Here, we find that all registered users can use email, xmpp, and access the wordpress blog. However, nobody can access the wordpress admin interface.
+Here, we find that all registered users can use email, XMPP, and access the WordPress blog. However, nobody can access the WordPress admin interface.
 
 More details can be displayed by adding the `--full` option which will display the list of users corresponding to groups allowed, as well as urls associated to a permission (relevant for web apps).
 
@@ -136,7 +133,7 @@ To add a permission to a group, simply click the "+" button in the group panel, 
 
 ![](./images/groups_add-permission-group.png)
 
-To allow a group to access the wordpress admin interface in CLI:
+To allow a group to access the WordPress admin interface in CLI:
 
 ```shell
 $ yunohost user permission update wordpress.admin --add yolo_crew
@@ -152,7 +149,7 @@ or in CLI:
 $ yunohost user permission update wordpress.admin --add alice
 ```
 
-And now we may see that both the YoloCrew and Alice have access to the wordpress admin interface :
+And now we may see that both the YoloCrew and Alice have access to the WordPress admin interface:
 
 ```shell
 $ yunohost user permission list
@@ -164,7 +161,7 @@ $ yunohost user permission list
   [...]
 ```
 
-Note that, for example, if we want to restrict permission for email so that only Bob is allowed to email, we should also remove `all_users` from the permission, by deleting it from the `all_users` group panel, or in CLI :
+Note that, for example, if we want to restrict permission for email so that only Bob is allowed to email, we should also remove `all_users` from the permission, by deleting it from the `all_users` group panel, or in CLI:
 
 ```shell
 $ yunohost user permission update mail --remove all_users --add bob
@@ -174,8 +171,7 @@ The webadmin will issue a warning if you set a permission that is superseeded by
 
 ![](./images/groups_alerte-permission.png)
 
-Notes for apps packagers
-------------------------
+## Notes for apps packagers
 
 Installing an app creates the permission `app.main` with `all_users` allowed by default.
 
@@ -228,7 +224,7 @@ If you still need to use regex to protect or unprotect urls, you can't use the n
 
 But you can create a fake permission and use hooks to handle if there is a change in this faked permission.
 
-In the install script, create the fake permission (with no url):
+In the install script, create the fake permission (with no URL):
 
 `ynh_permission_create --permission="create poll" --allowed "visitors" "all_users"`
 

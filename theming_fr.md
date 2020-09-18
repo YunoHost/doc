@@ -1,4 +1,4 @@
-# Personnaliser l'apparence du portail utilisateur
+# Personnaliser l’apparence du portail utilisateur
 
 ## Utiliser un thème
 

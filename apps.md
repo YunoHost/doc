@@ -1,7 +1,7 @@
 # Application catalog
 
 <span class="javascriptDisclaimer">
-This page requires Javascript enabled to display properly :s.
+This page requires JavaScript enabled to display properly :s.
 <br/>
 <br/>
 </span>

@@ -1,7 +1,7 @@
-# Catalogue d'applications
+# Catalogue d’applications
 
 <span class="javascriptDisclaimer">
-Cette page requiert que Javascript soit activé pour s'afficher correctement :s.
+Cette page requiert que JavaScript soit activé pour s'afficher correctement :s.
 <br/>
 <br/>
 </span>
