@@ -1,4 +1,4 @@
-#Documentation
+# Documentation
 
 <p class="lead">
 Die YunoHost Dokumentation ist in 2 Bereiche aufgeteilt:

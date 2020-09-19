@@ -1,4 +1,4 @@
-# Déplacer un dossier d'application vers un autre espace de stockage
+# Déplacer un dossier d’application vers un autre espace de stockage
 
 Les dossiers d'application se trouvent (*habituellement*) dans `/var/www/$nom_application`
 

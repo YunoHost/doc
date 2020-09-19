@@ -1,4 +1,4 @@
-#Documentation
+# Documentation
 
 <p class="lead">
 YunoHost's documentation has 2 different sections:

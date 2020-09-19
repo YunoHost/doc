@@ -1,4 +1,4 @@
-# Instalar Yunohost en una tarjeta ARM
+# Instalar YunoHost en una tarjeta ARM
 
 *Encontrar otros medios de instalar YunoHost **[aquí](/install)**.*
 

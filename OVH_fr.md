@@ -1,4 +1,4 @@
-#Configuration DNS avec OVH
+# Configuration DNS avec OVH
 
 Nous allons voir comment configurer le DNS avec [OVH](http://www.ovh.com).
 

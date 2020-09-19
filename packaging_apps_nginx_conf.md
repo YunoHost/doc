@@ -1,4 +1,5 @@
 # NGINX configuration
+
 This tutorial aim to help setup NGINX configuration for application packaging.
 
 #### NGINX configuration

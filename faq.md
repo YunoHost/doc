@@ -1,6 +1,5 @@
 # Frequently Asked Questions
 
-
 #### Under which license is YunoHost distributed?
 
 YunoHost packages are under free licenses GNU AGPL v.3.
@@ -28,10 +27,10 @@ YunoHost may be called a distribution or an operating system, but it's actually
 "just" a simple layer added over the top of Debian, which does most of the hard
 work for you.
 
-For instance, if you wanted to install Wordpress, you would need to type a bunch
+For instance, if you wanted to install WordPress, you would need to type a bunch
 of commands to create some users, setup a web server, setup a SQL server,
-download the Wordpress archive, uncompress it, configure the web server,
-configure the SQL database, and finally configure Wordpress. YunoHost handles
+download the WordPress archive, uncompress it, configure the web server,
+configure the SQL database, and finally configure WordPress. YunoHost handles
 the technical details and "types all these commands for you", so that you can focus
 on what really matters.
 

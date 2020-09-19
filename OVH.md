@@ -1,4 +1,4 @@
-#DNS Configuration with OVH
+# DNS Configuration with OVH
 
 Let's see how to properly set the DNS redirections with [OVH](http://www.ovh.com).
 

@@ -1,7 +1,7 @@
-# Échanger des fichiers avec son serveur à l'aide d'une interface graphique
+# Échanger des fichiers avec son serveur à l’aide d’une interface graphique
 
 Cette page explique comment échanger des fichiers (sauvegardes, musiques,
-photos, films, ...) avec son serveur à l'aide d'un outil graphique. C'est donc
+photos, films...) avec son serveur à l'aide d'un outil graphique. C'est donc
 une méthode alternative au fait d'utiliser la commande `scp` qui peut être jugée
 technique et cryptique, ou de devoir installer Nextcloud.
 

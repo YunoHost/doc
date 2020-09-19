@@ -1,4 +1,4 @@
-#Documentazione
+# Documentazione
 
 <p class="lead">
 La documentazione di YunoHost ha 2 differenti sezioni:
