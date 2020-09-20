@@ -6,7 +6,7 @@
 
 - [Liens utiles](#liens-utiles)
 
-Collabora est une suite bureautique en ligne basée sur LibreOffice et utilisable avec Nextcloud ou Owncloud. Elle permet d'éditer des documents textes, des tableaux, des diaporamas. L'édition en ligne peut se faire en simultanée et permet d'exporter et d'imprimer des documents grâce au format PDF généré.
+Collabora est une suite bureautique en ligne basée sur LibreOffice et utilisable avec Nextcloud ou ownCloud. Elle permet d'éditer des documents textes, des tableaux, des diaporamas. L'édition en ligne peut se faire en simultanée et permet d'exporter et d'imprimer des documents grâce au format PDF généré.
 
 ## Liens utiles
 

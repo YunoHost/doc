@@ -21,10 +21,9 @@ Para poder aprovechar de las aplicaciones instalables únicamente a la raíz de 
 
 ### Añadir un dominio nohost.me, noho.st o ynh.fr después de la post-instalación
 
-Si ya has hecho la post-instalación y quieres añadir un dominio de tipo nohost.me, puedes utilizar la categoría "Dominios" de la interfaz web, eligiendo la opción "no tengo nombre de dominio..."
+Si ya has hecho la post-instalación y quieres añadir un dominio de tipo nohost.me, puedes utilizar la categoría "Dominios" de la interfaz web, eligiendo la opción "No tengo nombre de dominio..."
 
 También puedes utilizar los comandos siguientes desde línea de comandos.
-
 
 ```bash
 # Añadir el dominio
@@ -37,6 +36,9 @@ yunohost dyndns subscribe -d loquequieras.nohost.me
 
 # Actualizar la configuración DNS
 yunohost dyndns update
+
+# Configurarlo como dominio principal
+yunohost tools maindomain --new-domain loquequieras.nohost.me
 ```
 
 ### Recuperar un dominio nohost.me, noho.st o ynh.fr
@@ -44,10 +46,10 @@ yunohost dyndns update
 Si reinstalas tu servidor y quieres utilizar un dominio automático que ya utilizaste, tienes que pedir una reinstalación del dominio al Proyecto YunoHost [en el hilo de discusión dedicado del foro](https://forum.yunohost.org/t/nohost-domain-recovery/442).
 
 ### Cambiar un dominio nohost.me, noho.st o ynh.fr
+
 Si quieres utilizar otro dominio automático en tu servidor, primero tienes que cancelar el que ya está configurado, siguiendo estas instrucciones :
 1. Suprimir el dominio de tu instancia (vía webadmin o `yunohost domain remove`). **Cuidado : esto suprimirá todas las aplicaciones instaladas en este dominio así como sus datos**.
 2. Pedir la supresión de tu suscripción [en el hilo de discusión dedicado del foro](https://forum.yunohost.org/t/nohost-domain-recovery/442).
 3. Suprimir los archivos de configuración automática de tu instancia (únicamente desde la linea de comando por ahora) : `sudo rm /etc/cron.d/yunohost-dyndns && sudo rm -r /etc/yunohost/dyndns`
-
 
 Luego podrás registrar un nuevo dominio automático. 
