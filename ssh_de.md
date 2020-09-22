@@ -2,7 +2,7 @@
 
 ## Was ist SSH?
 
-**SSH** steht für **S**ecure **Sh**ell, und bezeichnet ein Protokoll, dass es einem erlaubt über ein entferntes System auf die Kommandozeile (Command Line Interface, **CLI**) zuzugreifen. SSH ist standardmäßig auf jedem Terminal auf Linux oder Mac OS / OSX verfügbar. Für Windows ist Drittsoftware nötig, z.B. [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (Klicke nach dem Start auf Session und dann SSH).
+**SSH** steht für **S**ecure **Sh**ell, und bezeichnet ein Protokoll, dass es einem erlaubt über ein entferntes System auf die Kommandozeile (Command Line Interface, **CLI**) zuzugreifen. SSH ist standardmäßig auf jedem Terminal auf GNU/Linux oder macOS verfügbar. Für Windows ist Drittsoftware nötig, z.B. [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (Klicke nach dem Start auf Session und dann SSH).
 
 ## Während der YunoHost Installation
 
@@ -68,7 +68,7 @@ If you are connected as `admin` and would like to become `root` for more comfort
 
 ## Which users?
 
-By default, only the `admin` user can log in to YunoHost ssh server.
+By default, only the `admin` user can log in to YunoHost SSH server.
 
 YunoHost's users created via the administration interface are managed by the LDAP directory. By default, they can't connect via SSH for security reasons. If you want some users to have SSH access enabled, use the command:
 
@@ -76,13 +76,13 @@ YunoHost's users created via the administration interface are managed by the LDA
 yunohost user ssh allow <username>
 ```
 
-It is also possible to remove ssh access using the following:
+It is also possible to remove SSH access using the following:
 
 ```bash
 yunohost user ssh disallow <username>
 ```
 
-Finally, it is possible to add, delete and list ssh keys, to improve ssh access security, using the commands:
+Finally, it is possible to add, delete and list SSH keys, to improve SSH access security, using the commands:
 
 ```bash
 yunohost user ssh add-key <username> <key>
@@ -92,6 +92,6 @@ yunohost user ssh list-keys <username>
 
 ## Security and SSH
 
-N.B. : `fail2ban` will ban your IP for 10 mimutes if you perform 5 failed login attempts. If you need to unban the IP, have a look at the page about [fail2ban](/fail2ban)
+N.B. : `fail2ban` will ban your IP for 10 mimutes if you perform 5 failed login attempts. If you need to unban the IP, have a look at the page about [Fail2Ban](/fail2ban)
 
 A more extensive discussion about security & SSH can be found on the [dedicated page](/security).

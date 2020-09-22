@@ -43,6 +43,6 @@ For older devices, you might want to burn a CD/DVD. The software to use depends 
 
 * On Windows, use [ImgBurn](http://www.imgburn.com/) to write the image file on the disc
 
-* On Mac OS, use [Disk Utility](http://support.apple.com/kb/ph7025)
+* On macOS, use [Disk Utility](http://support.apple.com/kb/ph7025)
 
 * On GNU/Linux, you have plenty of choices, like [Brasero](https://wiki.gnome.org/Apps/Brasero) or [K3b](http://www.k3b.org/)

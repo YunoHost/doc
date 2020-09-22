@@ -43,6 +43,6 @@ Pour les anciens matériels, il vous faut peut-être utiliser un CD/DVD. Le logi
 
 * Sur Windows, utilisez [ImgBurn](http://www.imgburn.com/) pour écrire l’image sur le disque
 
-* Sur Mac OS, utilisez [Disk Utility](http://support.apple.com/kb/ph7025)
+* Sur macOS, utilisez [Disk Utility](http://support.apple.com/kb/ph7025)
 
 * Sur GNU/Linux, vous avez plusieurs choix, tels que [Brasero](https://wiki.gnome.org/Apps/Brasero) ou [K3b](http://www.k3b.org/)

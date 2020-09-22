@@ -2,7 +2,7 @@
 
 ## Qu’est-ce que SSH ?
 
-**SSH** est un acronyme pour Secure Shell, et désigne un protocole qui permet de contrôler à distance une machine via la ligne de commande (CLI). C'est aussi une commande disponible de base dans les terminaux de Linux et Mac OS / OSX. Sous Windows, il vous faudra utiliser le logiciel [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (après l'avoir lancé, cliquer sur Session puis SSH).
+**SSH** est un acronyme pour Secure Shell, et désigne un protocole qui permet de contrôler à distance une machine via la ligne de commande (CLI). C'est aussi une commande disponible de base dans les terminaux de GNU/Linux et macOS. Sous Windows, il vous faudra utiliser le logiciel [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (après l'avoir lancé, cliquer sur Session puis SSH).
 
 ## Pendant l’installation de YunoHost
 
@@ -13,7 +13,7 @@ Si vous installez YunoHost sur un VPS, votre fournisseur devrait vous avoir comm
 Si vous installez un serveur à la maison (par ex. sur Raspberry Pi ou OLinuXino), il vous faut trouver l'IP qui a été attribuée à votre carte après que vous l'ayez connectée à votre box internet / routeur. Il y a plusieurs façons de faire cela :
 
 - ouvrez un terminal et tapez `sudo arp-scan --local` pour lister les IP des machines sur le réseau local ;
-- si la commande arp-scan vous affiche beaucoup de machines, vous pouvez vérifier lesquelles sont ouvertes au ssh avec `nmap -p 22 192.168.1.0/24` pour faire du tri (adaptez la plage IP selon votre réseau local)
+- si la commande arp-scan vous affiche beaucoup de machines, vous pouvez vérifier lesquelles sont ouvertes au SSH avec `nmap -p 22 192.168.1.0/24` pour faire du tri (adaptez la plage IP selon votre réseau local)
 - utilisez l'interface de votre box internet pour lister les machines connectées, ou regarder les logs ;
 - branchez un écran sur votre serveur, loggez-vous et tapez `hostname --all-ip-address`.
 
@@ -76,12 +76,12 @@ Les utilisateurs YunoHost créés via l'interface d'administration sont gérés 
 yunohost user ssh allow <username>
 ```
 
-De même, il est possible de supprimer l'accès ssh à un utilisateur avec la commande :
+De même, il est possible de supprimer l'accès SSH à un utilisateur avec la commande :
 ```bash
 yunohost user ssh disallow <username>
 ```
 
-Enfin, il est possible d'ajouter, de supprimer et de lister des clés ssh, pour améliorer la sécurité de l'accès ssh, avec les commandes :
+Enfin, il est possible d'ajouter, de supprimer et de lister des clés SSH, pour améliorer la sécurité de l'accès SSH, avec les commandes :
 ```bash
 yunohost user ssh add-key <username> <key>
 yunohost user ssh remove-key <username> <key>
@@ -90,6 +90,6 @@ yunohost user ssh list-keys <username>
 
 ## SSH et sécurité
 
-N.B. : `fail2ban` bannira votre IP pour 10 minutes si vous échouez plus de 5 fois à vous identifier. Pour débannir une IP, vous pouvez regarder la page sur [fail2ban](/fail2ban)
+N.B. : `fail2ban` bannira votre IP pour 10 minutes si vous échouez plus de 5 fois à vous identifier. Pour débannir une IP, vous pouvez regarder la page sur [Fail2Ban](/fail2ban)
 
 Une discussion plus complète de la sécurité et de SSH peut être trouvée sur [la page dédiée](/security).

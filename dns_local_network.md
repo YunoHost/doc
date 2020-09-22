@@ -19,7 +19,7 @@ You may retrieve your server private IP adress  through different means:
 
 ## Configure DNS of Internet box or router
 
-The goal here is to create a network wide redirection handled by your router. The idea is to create a DNS redirection to your server's IP. You should access your router's configuration and look for DNS configuration, then add a redirection to your server's IP (e.g. redirect "yunohost.local" to 192.168.1.21).
+The goal here is to create a network wide redirection handled by your router. The idea is to create a DNS redirection to your server's IP. You should access your router's configuration and look for DNS configuration, then add a redirection to your server's IP (e.g. redirect `yunohost.local` to `192.168.1.21`).
 
 ### SFR Box
 If you haven't found your server private IP, you may find it using the SFR box admin panel:  
@@ -36,7 +36,7 @@ Modifying hosts file should be done only if you cannot alter your box's DNS or r
 - Windows hosts file is located at:
     `%SystemRoot%\system32\drivers\etc\`
     > You MUST activate hidden and system file display to see the hosts file.
-- UNIX systems (GNU/Linux, Mac OS) hosts file is located at:
+- UNIX systems (GNU/Linux, macOS) hosts file is located at:
     `/etc/hosts`
     > You MUST have root privileges to modify the file.
 

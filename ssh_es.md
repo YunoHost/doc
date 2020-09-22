@@ -2,7 +2,7 @@
 
 ## ¿ Qué es SSH ?
 
-**SSH** est un acrónimo por Secure Shell, y representa un protocolo que permite controlar remotamente una máquina vía la línea de comandos (CLI). También es un comando básico disponible en los terminales de Linux y MacOS / OSX. En Windows, hace falta utilizar el programa [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (después de haberlo iniciado, clicar sobre Session y luego SSH).
+**SSH** est un acrónimo por Secure Shell, y representa un protocolo que permite controlar remotamente una máquina vía la línea de comandos (CLI). También es un comando básico disponible en los terminales de GNU/Linux y macOS. En Windows, hace falta utilizar el programa [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (después de haberlo iniciado, clicar sobre Session y luego SSH).
 
 ## Durante la instalación de YunoHost
 
@@ -86,6 +86,6 @@ yunohost user ssh list-keys <username>
 
 ## SSH y seguridad
 
-N.B. : `fail2ban` proscribirá tu IP durante 10 minutos si fracasas más de 5 veces consecutivas en identificarte. Si esto ocurre y que quieres re-validar tu IP, puedes echar un vistazo a la página [fail2ban](/fail2ban)
+N.B. : `fail2ban` proscribirá tu IP durante 10 minutos si fracasas más de 5 veces consecutivas en identificarte. Si esto ocurre y que quieres re-validar tu IP, puedes echar un vistazo a la página [Fail2Ban](/fail2ban)
 
 Encontrarás explicaciones más completa sobre la seguridad y SSH en [la página dedicada](/security).

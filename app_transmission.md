@@ -30,7 +30,7 @@ scp (-r) /your/file/ root@your-domain.org:/home/yunohost.transmission/completed
 ```
 
 ##### How to download a complete folder?
-Once connected to your server, using [SSH](ssh), move to the download folder and ZIP it:
+Once connected to your server, using [SSH](/ssh), move to the download folder and ZIP it:
 ```bash
 cd /home/yunohost.transmission/completed
 zip -r your_archive.zip [dossier]

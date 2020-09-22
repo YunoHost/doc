@@ -19,7 +19,7 @@ Puedes descubrir la dirección privada de tu servidor de varias maneras :
 
 ## Configurar el DNS de la caja Internet o del router
 
-Vas a crear una redirección que estará activa en toda tu red local. El objetivo es crear una redirección DNS hacia el IP de tu servidor en tu caja Internet. Hay que acceder a la interfaz de configuración de tu caja y a los parámetros DNS, y luego crear una redirección local (por ejemplo, yunohost.local puede redigir hacia 192.168.21).
+Vas a crear una redirección que estará activa en toda tu red local. El objetivo es crear una redirección DNS hacia el IP de tu servidor en tu caja Internet. Hay que acceder a la interfaz de configuración de tu caja y a los parámetros DNS, y luego crear una redirección local (por ejemplo, `yunohost.local` puede redigir hacia `192.168.1.21`).
 
 ## Configurar el archivo [hosts](https://es.wikipedia.org/wiki/Archivo_hosts) del ordenador cliente
 Sólo deberías modificar el archivo hosts si no puedes modificar el DNS de tu caja Internet / router, porque el archivo hosts únicamente afectará el ordenador en el cual el archivo esté modificado.
@@ -27,7 +27,7 @@ Sólo deberías modificar el archivo hosts si no puedes modificar el DNS de tu c
 - En Windows, encontrarás el archivo hosts aquí :
     `%SystemRoot%\system32\drivers\etc\`
     > Es preciso visualizar los archivos y sistemas escondidos para ver el archivo hosts.
-- En sistemas UNIX (GNU/Linux, Mac OS), lo encontrarás aquí :
+- En sistemas UNIX (GNU/Linux, macOS), lo encontrarás aquí :
     `/etc/hosts`
     > Necesitarás derechos root para modificar el archivo.
 

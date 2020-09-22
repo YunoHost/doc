@@ -45,7 +45,7 @@ Voici une liste plus exhaustive des clients XMPP : https://fr.wikipedia.org/wik
 
 Il est possible de rendre les conversations plus sécurisées et privées en les chiffrants à l'aide de [OMEMO](https://xmpp.org/extensions/xep-0384.html), notamment en utilisant Gajim :
 - Installer `gajim` et le plugin `gajim-omemo`
-- Activez le plugins dans `Outils > Plugins`
+- Activez le plugin dans `Outils > Plugins`
 - Activez le chiffrement dans une conversation avec un contact disposant de OMEMO.
 
 ## Salon de discussion

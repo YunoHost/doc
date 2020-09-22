@@ -42,12 +42,12 @@ No recomendamos la instalación manual porque es más técnica y más larga que 
 </div>
 
 <div class="alert alert-warning" markdown="1">
-Las últimas versiones de Raspbian necesitan una pantalla y un teclado porque ya no es posible conectarse directamente por SSH al Raspberry por defecto. Sin embargo, es posible reactivar el inicio de SSH al boot : solo hay que poner un archivo llamado `ssh` (vacío, sin extensión) en la partición boot de la tarjeta SD.
+Las últimas versiones de Raspberry Pi OS necesitan una pantalla y un teclado porque ya no es posible conectarse directamente por SSH al Raspberry por defecto. Sin embargo, es posible reactivar el inicio de SSH al boot : solo hay que poner un archivo llamado `ssh` (vacío, sin extensión) en la partición boot de la tarjeta SD.
 </div>
 
-0. Instalar Raspbian Buster Lite ([instrucciones](https://www.raspberrypi.org/downloads/raspbian/)) en la tarjeta SD.
+0. Instalar Raspberry Pi OS Lite ([instrucciones](https://www.raspberrypi.org/downloads/raspberry-pi-os/)) en la tarjeta SD.
 
-1. Conéctate con ssh al Raspberry Pi con el usuario pi. Define una contraseña root con 
+1. Conéctate con SSHal Raspberry Pi con el usuario pi. Define una contraseña root con 
 ```bash
 sudo passwd root
 ```

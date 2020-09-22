@@ -10,7 +10,7 @@ DNS significa « Domain Name Server » en inglés, y está frecuentemente empl
 
 **Por ejemplo** : `yunohost.org` apunta hacia `88.191.153.110`.
 
-Este sistema fue creado para poder memorizar más fácilmente las direcciones de servidores. Existen registros DNS en los cuales hay que apuntarse. Esto se hace con **registrars** que te alquilarán estos nombres de dominio a cambio de cierto importe (entre 5 y algunas centenas de euros). Estos [registrars](registrar) son entidades privadas autorizadas por el [ICANN](https://es.wikipedia.org/wiki/Corporaci%C3%B3n_de_Internet_para_la_Asignaci%C3%B3n_de_Nombres_y_N%C3%BAmeros), tales como [Gandi](http://gandi.net), [OVH](http://ovh.com) o [BookMyName](http://bookmyname.com).
+Este sistema fue creado para poder memorizar más fácilmente las direcciones de servidores. Existen registros DNS en los cuales hay que apuntarse. Esto se hace con **registrars** que te alquilarán estos nombres de dominio a cambio de cierto importe (entre cinco y algunas centenas de euros). Estos [registrars](registrar) son entidades privadas autorizadas por el [ICANN](https://es.wikipedia.org/wiki/Corporaci%C3%B3n_de_Internet_para_la_Asignaci%C3%B3n_de_Nombres_y_N%C3%BAmeros), tales como [Gandi](http://gandi.net), [OVH](http://ovh.com) o [BookMyName](http://bookmyname.com).
 
 Es importante notar que los subdominios no necesariamente apuntan al dominio principal.
 
