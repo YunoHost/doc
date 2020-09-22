@@ -20,7 +20,7 @@ Sur le panneau de gestion d'OVH, vous aller récupérer 3 informations :
 
 Sur votre VPS, vous aller créer une sauvegarde de votre fichier de configuration des interfaces réseau dans votre répertoire home avec la commande : `cp /etc/network/interfaces ~/interfaces`.
 
-Ensuite, vous pouvez modifier le fichier de configuration `/etc/network/interfaces`).
+Ensuite, vous pouvez modifier le fichier de configuration `/etc/network/interfaces`.
 <div class="alert alert-warning" markdown="1">
 Dans cet exemple, nous considérons que votre interface réseau est `eth0`. Si elle est différente (vérifiez avec `ip a`) vous devez adapter l'exemple pour correspondre à votre situation.
 </div>

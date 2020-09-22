@@ -21,12 +21,13 @@ También puedes utilizar un cliente Desktop como :
 - [Gajim](https://gajim.org/es/) (Linux, Windows)
 - [Dino](https://dino.im) (Linux)
 - [Thunderbird](https://www.thunderbird.net/es-ES/) (multiplataformas)
+- [Beagle IM](https://beagle.im/) (macOS)
 - [Profanity](https://profanity-im.github.io/) (Linux)
 
 ... o un cliente smartphone :
 - [Conversations](https://conversations.im/) (Android)
 - [Xabber](http://xabber.com) (Android)
-- [Movim sous Android](https://movim.eu)
+- [Movim](https://movim.eu) (Android)
 - [Siskin IM](https://siskin.im/) (iOS)
 - [Monal](https://monal.im/) (iOS)
 - [Kaidan](https://www.kaidan.im/) (Ubuntu Touch / Plasma Mobile)

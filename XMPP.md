@@ -24,29 +24,28 @@ You can connect to your YunoHost XMPP account in different ways.
 
 ### Desktop clients
 
-- [Gajim](http://gajim.org/) (Linux,Windows)
+- [Gajim](http://gajim.org/) (Linux, Windows)
 - [Dino](https://dino.im) (Linux)
 - [Thunderbird](https://www.thunderbird.net/fr/) (multiplatform)
-- [Beagle IM](https://beagle.im/) (Mac OS)
+- [Beagle IM](https://beagle.im/) (macOS)
 - [Profanity](https://profanity-im.github.io/) (Linux)
 
 ### Mobile clients
 
 - [Conversations](https://conversations.im/) (Android)
 - [Xabber](http://xabber.com) (Android)
-- [Movim under Android](https://movim.eu)
+- [Movim](https://movim.eu) (Android)
 - [Monal](https://monal.im/) (iOS)
 - [Siskin IM](https://siskin.im/) (iOS)
 - [Kaidan](https://www.kaidan.im/) (Ubuntu Touch / Plasma Mobile)
 
-Here is an exhaustive list of XMPP clients : https://xmpp.org/software/clients.html
+Here is an exhaustive list of XMPP clients: https://xmpp.org/software/clients.html
 
 ## Encrypt conversations with OMEMO
 
 XMPP chats can be made secure and private using [OMEMO encryption](https://xmpp.org/extensions/xep-0384.html), for instance using Gajim:
 - Install `gajim` and the plugin `gajim-omemo`
 - Enable the plugin in `Tools > Plugins`
-- Enable it
 - Enable the encryption in the chat with somebody who also has OMEMO
 
 ## Chatrooms

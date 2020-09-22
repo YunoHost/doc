@@ -24,17 +24,17 @@ Il existe différents types de clients pour se connecter à XMPP.
 
 ### Clients de bureau
 
-- [Gajim](http://gajim.org/fr/) (Linux,Windows)
+- [Gajim](http://gajim.org/fr/) (Linux, Windows)
 - [Dino](https://dino.im) (Linux)
 - [Thunderbird](https://www.thunderbird.net/) (multiplateforme)
-- [Beagle IM](https://beagle.im/) (Mac OS)
+- [Beagle IM](https://beagle.im/) (macOS)
 - [Profanity](https://profanity-im.github.io/) (Linux)
 
 ### Clients sur mobile
 
 - [Conversations](https://conversations.im/) (Android)
 - [Xabber](http://xabber.com) (Android)
-- [Movim sous Android](https://movim.eu)
+- [Movim](https://movim.eu) (Android)
 - [Monal](https://monal.im/) (iOS)
 - [Siskin IM](https://siskin.im/) (iOS)
 - [Kaidan](https://www.kaidan.im/) (Ubuntu Touch / Plasma Mobile)
@@ -46,7 +46,6 @@ Voici une liste plus exhaustive des clients XMPP : https://fr.wikipedia.org/wik
 Il est possible de rendre les conversations plus sécurisées et privées en les chiffrants à l'aide de [OMEMO](https://xmpp.org/extensions/xep-0384.html), notamment en utilisant Gajim :
 - Installer `gajim` et le plugin `gajim-omemo`
 - Activez le plugins dans `Outils > Plugins`
-- L'activer
 - Activez le chiffrement dans une conversation avec un contact disposant de OMEMO.
 
 ## Salon de discussion

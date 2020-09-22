@@ -62,4 +62,4 @@ Lors d’une mise à jour du logiciel **Fail2Ban**, le fichier d’origine `/etc
     sudo fail2ban-client reload
     ```
 
-Félicitations, plus de risques de se bannir de son propre serveur YunoHost!
+Félicitations, plus de risques de se bannir de son propre serveur YunoHost !
