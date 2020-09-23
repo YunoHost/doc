@@ -40,7 +40,7 @@ yunohost dyndns subscribe -d cequevousvoulez.nohost.me
 yunohost dyndns update
 
 # Le définir comme nouveau domain principal
-yunohost tools maindomain --new-domain cequevousvoulez.nohost.me
+yunohost domain main-domain -n cequevousvoulez.nohost.me
 ```
 
 ### Récupérer un domaine nohost.me, noho.st ou ynh.fr
