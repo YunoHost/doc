@@ -23,7 +23,7 @@ Jitsi for YunoHost for now as some limitations:
 | Application name | Platform | Multi-account | Other supported networks | Play Store | F-Droid | Apple Store | *Other* |
 |-----------------------|------------|---------------|-------------------------|------------|---------|-------------|----------|
 | Jitsi Meet            | Android - iOS  |               |                      | [Jitsi Meet](https://play.google.com/store/apps/details?id=org.jitsi.meet) | [Jitsi Meet](https://f-droid.org/en/packages/org.jitsi.meet/) | [Jitsi Meet](https://apps.apple.com/us/app/jitsi-meet/id1165103905) |          |
-| Jitsi Meet Desktop    | Windows - MacOS - Linux  |  |                        |            |         |             | [Download](https://desktop.jitsi.org/Main/Download)  |
+| Jitsi Meet Desktop    | Windows - macOS - GNU/Linux  |  |                        |            |         |             | [Download](https://desktop.jitsi.org/Main/Download)  |
 
 ## Useful links
 

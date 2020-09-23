@@ -27,10 +27,7 @@ Branchez votre clef USB, selectionnez l'ISO YunoHost puis cliquez sur 'OK'
 
 ### Avec `dd`
 
-Si vous êtes familier avec la ligne de commande, il est possible de flasher la
-clef USB ou carte SD avec `dd`.  Vous pouvez identifier le nom du périphérique
-avec `fdisk -l` ou `lsblk`. Une carte SD s'apelle typiquement `/dev/mmcblk0`.
-ATTENTION à faire attention de prendre le bon nom!
+Si vous êtes familier avec la ligne de commande, il est possible de flasher la clef USB ou carte SD avec `dd`.  Vous pouvez identifier le nom du périphérique avec `fdisk -l` ou `lsblk`. Une carte SD s'apelle typiquement `/dev/mmcblk0`. ATTENTION à faire attention de prendre le bon nom !
 
 ```bash
 # Remplacer /dev/mmcblk0 par le nom de votre périphérique

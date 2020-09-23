@@ -13,7 +13,7 @@ We will discuss VirtualBox in this guide, as it comes with an easy to use GUI. I
 
 ## Installing VirtualBox
 
-From a GNU Linux system, simply install the `virtualbox-qt` package.
+From a GNU/Linux system, simply install the `virtualbox-qt` package.
 From a Windows or macOS machine, you'd have to refer to the [VirtualBox download page](https://www.virtualbox.org/wiki/Downloads) to fetch the appropriate installation package. The virtualbox package is deprecated since Debian 9, a `.deb` installation package is available on the abovementioned referenced page.
 
 Whatever your system, there should be no need to install the extension pack or the guest addons.

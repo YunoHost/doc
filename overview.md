@@ -4,7 +4,7 @@ This page provide an overview of the ecosystem of a YunoHost server. While this 
 
 ![](images/ecosystem.png)
 
-Everything starts with the special user **admin**. This is the administrator of the machine who can install, configure and manage things on the server through the web administration interface, or via SSH and the command line interface. *(If you are already familiar with Linux, it is quite similar to root. YunoHost has this additional 'admin' user for several technical reasons.)*
+Everything starts with the special user **admin**. This is the administrator of the machine who can install, configure and manage things on the server through the web administration interface, or via SSH and the command line interface. *(If you are already familiar with GNU/Linux, it is quite similar to root. YunoHost has this additional 'admin' user for several technical reasons.)*
 
 The administrator can create users and install applications, among other admin actions. Users automatically have their own email adress as well as an XMPP account when they get created. Users will also be able to connect to the user portal (SSO) to access applications. Some applications can typically be installed either as publicly-accessible, or as private, i.e. only some users will have access to it.
 

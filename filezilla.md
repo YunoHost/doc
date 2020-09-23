@@ -6,7 +6,7 @@ This is an alternative to using `scp` which can be deemed technical and cryptic,
 or using an app like Nextcloud.
 
 [FileZilla](https://filezilla-project.org/) can be used for this. It is a free
-software and is available for Windows, Linux and macOS.
+software and is available for Windows, GNU/Linux and macOS.
 
 ## Download and install FileZilla
 
@@ -67,9 +67,9 @@ Sources
 
 ## Alternatives to Filezilla
 
-### Linux
+### GNU/Linux
 
-From any recent Linux, you should be able to use the `file manager` to reach your server.
+From any recent GNU/Linux, you should be able to use the `file manager` to reach your server.
 
 Nautilus from Gnome3 has features similar to FileZilla, out of the box.
 

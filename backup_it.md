@@ -73,7 +73,7 @@ Attualmente il modo più semplice per scaricare gli archivi è usando il program
 Una soluzione alternativa è quella di installare Netxcloud o un'applicazione simile e configurarle per accedere ai file contenuti in `/home/yunohost.backup/archives/` da un browser.
 
 
-Un'altra soluzione è quella di usare `scp` (un programma che si basa su [`ssh`](/ssh)) per copiare i file fra due computer usando la riga di comando. In questo modo usando un computer con Linux potete copiare uno specifico backup con questo comando:
+Un'altra soluzione è quella di usare `scp` (un programma che si basa su [`ssh`](/ssh)) per copiare i file fra due computer usando la riga di comando. In questo modo usando un computer con GNU/Linux potete copiare uno specifico backup con questo comando:
 
 ```bash
 scp admin@your.domain.tld:/home/yunohost.backup/archives/<archivename>.tar.gz ./

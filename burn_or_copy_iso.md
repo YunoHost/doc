@@ -26,9 +26,7 @@ Put your USB stick on, select your YunoHost ISO and click "OK"
 
 ### With `dd`
 
-If you are on Linux / Mac and know your way around command line, you may also
-flash your USK stick or SD card with `dd`. You can identify which device corresponds to your
-USB stick or SD card with `fdisk -l` or `lsblk`. An SD card name typically is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.
+If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.
 
 Then run :
 

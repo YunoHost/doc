@@ -75,7 +75,7 @@ When creating a pull request from a fork, to ease the work of the reviewers, **d
 
 Following the [YEP 1.7](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines.md#yep-17), your app has to be into the YunoHost-Apps organization, but if you have never contributed to an app before or never had any app into this organization you may not have the permission.
 
-First, you need the permission to write into the organization, to do so, ask to the Apps group on the Apps xmpp room.
+First, you need the permission to write into the organization, to do so, ask to the Apps group on the Apps XMPP room.
 
 To transfer your app to the YunoHost-Apps organization, go to your repository and to *Settings* tab.  
 At the bottom of the page, you will find *Transfer ownership*.  

@@ -1,12 +1,8 @@
 # Échanger des fichiers avec son serveur à l’aide d’une interface graphique
 
-Cette page explique comment échanger des fichiers (sauvegardes, musiques,
-photos, films...) avec son serveur à l'aide d'un outil graphique. C'est donc
-une méthode alternative au fait d'utiliser la commande `scp` qui peut être jugée
-technique et cryptique, ou de devoir installer Nextcloud.
+Cette page explique comment échanger des fichiers (sauvegardes, musiques, photos, films...) avec son serveur à l'aide d'un outil graphique. C'est donc une méthode alternative au fait d'utiliser la commande `scp` qui peut être jugée technique et cryptique, ou de devoir installer Nextcloud.
 
-[FileZilla](https://filezilla-project.org/) permet d'accomplir cela. Il s'agit
-d'un logiciel libre disponible pour Windows, Linux et MacOS.
+[FileZilla](https://filezilla-project.org/) permet d'accomplir cela. Il s'agit d'un logiciel libre disponible pour Windows, GNU/Linux et macOS.
 
 ## Télécharger et installer FileZilla
 
@@ -69,9 +65,9 @@ Sources
 
 ## Alternatives à Filezilla
 
-### Sous Linux
+### Sous GNU/Linux
 
-Depuis n'importe quel Linux récent, vous devriez pouvoir utiliser le gestionnaire de fichiers pour accéder à votre serveur.
+Depuis n'importe quel GNU/Linux récent, vous devriez pouvoir utiliser le gestionnaire de fichiers pour accéder à votre serveur.
 
 Nautilus de Gnome3 intègre de base des fonctionnalités similaires à FileZilla :
 
@@ -82,6 +78,6 @@ Nautilus de Gnome3 intègre de base des fonctionnalités similaires à FileZilla
 
 * [WinSCP](https://winscp.net/) est aussi un bon candidat pour Windows
 
-### Sous MacOS
+### Sous macOS
 
-* [Cyberduck](https://cyberduck.io/) logiciel libre pour MacOS
+* [Cyberduck](https://cyberduck.io/) logiciel libre pour macOS

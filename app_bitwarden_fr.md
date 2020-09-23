@@ -11,7 +11,7 @@
 
 Bitwarden est un gestionnaire de mots de passe freemium et open source sous licence AGPL, qui permet de générer et de conserver des mots de passe de manière sécurisée. Ces éléments sont protégés par un seul et unique mot de passe appelé « mot de passe maître ». Il est créé en 2016 par Kyle Spearrin, un architecte logiciel.
 
-Le logiciel est disponible sur la plupart des systèmes d'exploitation (Linux, Windows, macOS, iOS, Android ainsi qu'en ligne de commande), et comme module d'extension pour navigateur web. Il est également possible de consulter ses mot de passe depuis un site web.[¹](#sources)
+Le logiciel est disponible sur la plupart des systèmes d'exploitation (GNU/Linux, Windows, macOS, iOS, Android ainsi qu'en ligne de commande), et comme module d'extension pour navigateur web. Il est également possible de consulter ses mot de passe depuis un site web.[¹](#sources)
 
 ## Configuration
 
@@ -25,7 +25,7 @@ Les authentification HTTP et LDAP ne sont pas pris en charges.
 
 | Nom de l'application [²] | Plateforme | Multi-comptes | Source | Play Store | F-Droid | Apple Store |
 |--------------------------|------------|---------------|--------|------------|---------|-------------|
-| Bitwarden | Linux / Mac / Windows  | Oui | [bitwarden.com - download](https://bitwarden.com/#download) |
+| Bitwarden | GNU/Linux / macOS / Windows  | Oui | [bitwarden.com - download](https://bitwarden.com/#download) |
 | Bitwarden | Android / iOS | ? |  | [Playstore - Birwarden](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden) | X | [App Store - Bitwarden](https://itunes.apple.com/app/bitwarden-free-password-manager/id1137397744?mt=8) |
 
 
