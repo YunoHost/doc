@@ -47,7 +47,7 @@ Las últimas versiones de Raspberry Pi OS necesitan una pantalla y un teclado po
 
 0. Instalar Raspberry Pi OS Lite ([instrucciones](https://www.raspberrypi.org/downloads/raspberry-pi-os/)) en la tarjeta SD.
 
-1. Conéctate con SSHal Raspberry Pi con el usuario pi. Define una contraseña root con 
+1. Conéctate con SSH al Raspberry Pi con el usuario pi. Define una contraseña root con 
 ```bash
 sudo passwd root
 ```
