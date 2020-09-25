@@ -43,7 +43,7 @@ For now the CLI API for the config panel is not very good at all, you can still
 use it but it's really impracticable.
 
 * `yunohost app config show-panel $app_id` will show the panel. **But for now
-it's very broken and will asked question for unfilled value of the panel**.
+it's very broken and will ask question for unfilled value of the panel**.
 
 * `yunohost app config apply` will call the script with apply and... no values
   since you aren't passing them, except if you are ready to play with the `-a`
