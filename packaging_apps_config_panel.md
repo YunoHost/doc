@@ -43,7 +43,7 @@ For now the CLI API for the config panel is not very good at all, you can still
 use it but it's really impracticable.
 
 * `yunohost app config show-panel $app_id` will show the panel. **But for now
-it's very broken and will asked question for unfilled value of the panel**.
+it's very broken and will ask question for unfilled value of the panel**.
 
 * `yunohost app config apply` will call the script with apply and... no values
   since you aren't passing them, except if you are ready to play with the `-a`
@@ -55,8 +55,8 @@ In conclusion: don't use the CLI for now, we need to design something better.
 
 ### config_panel.toml
 
-Firs, you need to write a `config_panel.toml` (or `config_panel.json` if you
-REALLY wants it but we really don't recommend it has it is very error prone and
+First, you need to write a `config_panel.toml` (or `config_panel.json` if you
+REALLY want to but we really don't recommend it as it is very error prone and
 frustrating to write by hand) that will be located at the root of you
 application, next to the manifest.json/toml. It looks like this:
 
@@ -140,13 +140,13 @@ name = "Leed configuration"
 ### the scripts/config script
 
 To make your configuration panel functional you need write a "config" script
-that will be location in the "script" folder like the "install" script. This
-script will be called at 2 different occasions:
+that will be located in the "script" folder (like the "install" script). This
+script will be called in two different occasions:
 
 * when the configuration panel is displayed and yunohost needs to fill the values
 * when the configuration is modified by the user
 
-Every option of the configuration panel will be send to the script
+Every option of the configuration panel will be sent to the script
 following this naming convention:
 
 ```bash
@@ -252,12 +252,12 @@ The "apply" part is called when the user click on "submit" on the configuration
 page on the admin interface. This part is simpler to write:
 
 - the scripts/config will be called with "apply"
-- all the value in the config panel (modified or not) are available as global
-  variable in the script following the format `YNH_{section_id}_{sub_section_id}_{option_id}`
+- all the values in the config panel (modified or not) are available as global
+  variables in the script following the format `YNH_{section_id}_{sub_section_id}_{option_id}`
   (exactly the same than for show)
 - the script is responsible for doing whatever it wants with those information
-- once the script as succeeded, the admin interface display the config panel
-  again so the script is called again in "show" mode
+- once the script has succeeded, the admin interface displays the config panel
+  again and triggers the same script in "show" mode
 
 Expanding the previous script that could look like that:
 
@@ -278,7 +278,7 @@ esac
 ```
 
 Or if you want a full useless simple script that store the value in a file,
-this can looks like this:
+this can look like this:
 
 ```bash
 dummy_config_file="dummy_config_file.ini"
