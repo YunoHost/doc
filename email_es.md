@@ -16,6 +16,8 @@ Para validar que tu configuración es correcta :
 
 Una nota de al menos 8~9/10 es un objetivo razonable.
 
+**Cuidado:** El proceso de copia de seguridad no incluye las *llaves DKIM* necesarias para firmar los correos electrónicos salientes. Por lo tanto, esta configuración debe ser rehecha cuando se restaure un nuevo servidor con su copia de seguridad. Ver [este *issue*.](https://github.com/YunoHost/issues/issues/1342)
+
 ## Clientes de mensajería 
 
 Para interactuar con el servidor de mail, o sea leer y mandar emails, puedes instalar un cliente web como Roundcube o Rainloop en tu servidor - o configurar un cliente de Desktop o móvil como descrito en [esta página][cette page](/email_configure_client).
