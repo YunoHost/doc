@@ -16,6 +16,8 @@ To validate your setup:
 
 A score of at least 8~9/10 is a reasonnable goal.
 
+**Warning:** The backup process does not include the *DKIM keys* needed to sign outgoing emails. Therefore, this setup must be redone when restauring a fresh server with your backcup. See [this issue.](https://github.com/YunoHost/issues/issues/1342)
+
 ## Email clients
 
 To interact with the email sever (read and send emails), you can either install a webclient such as Roundcube or Rainloop on your server - or configure a desktop/mobile client as described in [this page](email_configure_client).
