@@ -10,6 +10,9 @@ You can manage backups either from the command line (`yunohost backup --help`) o
 
 The current default method consists in creating a `.tar.gz` archive containing all relevant files. In the future, YunoHost plans to support [Borg](https://www.borgbackup.org/) which is a more flexible, efficient and powerful solution.
 
+**Warning:** The backup process does not include the *DKIM keys* needed to sign outgoing emails. Therefore, this setup must be redone when restauring a fresh server with your backcup. See [this issue.](https://github.com/YunoHost/issues/issues/1342)
+
+
 ## Creating backups
 
 ### From the webadmin
