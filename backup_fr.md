@@ -16,6 +16,8 @@ La méthode de sauvegarde actuelle consiste à créer des archives `.tar.gz` qui
 
 Vous pouvez facilement créer des archives depuis la webadmin en allant dans Sauvegardes > Archives locales et en cliquant sur "Nouvelle sauvegarde". Vous pourrez ensuite sélectionner les éléments à sauvegarder (configuration, données "système", applications).
 
+**Attention :** le système de sauvegarde n'inclut pas les *clés DKIM* utilisées pour signer les emails sortants. Cette configuration doit donc être refaite lorsque vous restaurez un nouveau serveur avec votre sauvegarde. Voir [cette *issue*.](https://github.com/YunoHost/issues/issues/1342)
+
 ![](/images/backup.png)
 
 #### Depuis la ligne de commande
