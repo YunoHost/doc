@@ -16,6 +16,8 @@ Il metodo di default attuale crea degli archivi `.tar.gz` contenenti tutti i fil
 
 Potete creare gli archivi di backup dalla pagina web di amministrazione andando in Backup > Archivi locali e cliccare su "Nuovo backup". Vi verrà chiesto di selezionare quale configurazione, dati e di quale app volete fare il backup.
 
+**Attenzione:** Il processo di backup non include i *tasti DKIM* necessari per firmare le email in uscita. Pertanto, questa configurazione deve essere rifatta quando si ripristina un nuovo server con il backcup. Vedere [questo numero.](https://github.com/YunoHost/issues/issues/1342)
+
 ![picture of YunoHost's backup pannel](/images/backup.png)
 
 ### Dalla riga di comando
