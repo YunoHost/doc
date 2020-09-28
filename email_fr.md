@@ -16,6 +16,8 @@ Pour valider que votre configuration est correcte :
 
 Un score d'au moins 8~9/10 est un but raisonnable.
 
+**Attention :** le système de sauvegarde n'inclut pas les *clés DKIM* utilisées pour signer les emails sortants. Cette configuration doit donc être refaite lorsque vous restaurez un nouveau serveur avec votre sauvegarde. Voir [cette issue.](https://github.com/YunoHost/issues/issues/1342)
+
 ## Clients de messagerie
 
 Pour interagir avec le serveur de mail, c'est-à-dire lire et envoyer des emails, vous pouvez soit installer un client web comme Roundcube ou Rainloop sur votre serveur - ou configurer un client de bureau ou mobile comme décrit dans [cette page](email_configure_client).
