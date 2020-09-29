@@ -24,11 +24,9 @@ Baïkal est un serveur de calendriers et de contacts accessible par les protocol
 Pour configurer l'appliation il faut se rendre à l'adresse : `sous.domaine.tld/admin` ou `domaine.tld/baikal/admin`
 Le nom d’utilisateur à spécifier est `admin` suivi du mot de passe spécifique que vous avez choisi lors de l’installation de Baïkal. Attention, le mot de passe ne doit pas contenir de carractères spéciaux.
 
-### Authentification LDAp
+### Authentification LDAP
 
-Par défaut, Baikal est configuré pour importer les utilisateurs depuis
-l'annuaire LDAP de YunoHost. Les utilisateurs YunoHost apparaîtront dans le
-menu `Users and ressources` après une première authentification.
+Par défaut, Baïkal est configuré pour importer les utilisateurs depuis l'annuaire LDAP de YunoHost. Les utilisateurs YunoHost apparaîtront dans le menu `Users and ressources` après une première authentification.
 
 ## Connexion CalDAV
 

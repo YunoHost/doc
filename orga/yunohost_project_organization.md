@@ -17,7 +17,7 @@ The goal of YunoHost is to make accessible to the largest number of people, the 
 
 #### A free and community-based software
 
-YunoHost is a software under free licence, fully community-based and based on applications which are themselves community-based and often free (roundcube, baikal, etc.)
+YunoHost is a software under free licence, fully community-based and based on applications which are themselves community-based and often free (Roundcube, baïkal, etc.)
 
 #### That everyone can appropriate
 

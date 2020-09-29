@@ -29,7 +29,7 @@ Vous pouvez valider que les enregistrements DNS sont corrects en comparant le r�
 - Vous avez une IP dynamique. Dans ce cas, il faut mettre en place un script qui se charge de mettre à jour régulièrement votre IP (ou d'utiliser un nom de domaine en nohost.me, noho.st ou ynh.fr qui inclue un tel mécanisme)
 
 
-## Vous êtes face à une erreur de certificat qui vous empêche d'accéder à la webadmin
+## Vous êtes face à une erreur de certificat qui vous empêche d’accéder à la webadmin
 
 Si vous venez d'installer votre serveur ou d'ajouter un nouveau domaine, il utilise pour le moment un certificat auto-signé. Dans ce cas, il devrait être possible et légitime d'ajouter *exceptionnellement* une exception de sécurité le temps d'[installer un certificat Let's Encrypt](/certificate) à condition d'être sur une connexion internet sûre (pas avec Tor Browser par exemple).
 
@@ -111,7 +111,7 @@ Vous pouvez aussi essayer avec le domaine `yunohost.local` s'il n'y a qu'un seul
 
 Il faut voir avec votre fournisseur de VPN pour renouveler le VPN et mettre à jour les paramètre de l'app VPN Client.
 
-TODO: à compléter
+TODO : à compléter
 
 ## Votre serveur est coincé au démarrage
 
@@ -119,14 +119,14 @@ Dans certains cas, votre serveur peut rester coincé au démarrage. Il peut s'ag
 
 Si vous êtes en mode `rescue` avec `grub`, dans ce cas il peut s'agir d'un problème de configuration de `grub` ou d'un disque corrompu.
 
-Dans ce cas il faut accéder au disque avec un autre système (mode `rescue` du fournisseur, live usb, lire la carte SD ou le disque dur avec un autre ordinateur) et essayer de vérifier l'intégrité des partitions avec `smartctl`, `fsck` et `mount`.
+Dans ce cas il faut accéder au disque avec un autre système (mode `rescue` du fournisseur, live USB, lire la carte SD ou le disque dur avec un autre ordinateur) et essayer de vérifier l'intégrité des partitions avec `smartctl`, `fsck` et `mount`.
 
 Si les disques sont corrompus et difficiles à monter, il faut sauvegarder les données et potentiellement refaire un formatage/réinstaller et/ou changer le disque. Si on arrive à monter le disque, il est possible d'utiliser `systemd-nspawn` pour entrer dans la base de données.
 
 Sinon, relancer `grub-update` et `grub-install` en `chroot` ou avec `systemd-nspawn`.
 
 
-## L'accès en VNC ou via écran ne fonctionne pas
+## L’accès en VNC ou via écran ne fonctionne pas
 
 Dans ce cas il peut s'agir d'un problème matériel sur votre serveur physique ou d'un problème d'hyperviseur si c'est un VPS.
 

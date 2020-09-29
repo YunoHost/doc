@@ -104,7 +104,7 @@ Per oferir calendaris personals o compartits haureu d'instal·lar:
 
 Per oferir un sistema de contactes personal haureu d'instal·lar:
 * [Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh)
-* [Baikal](https://github.com/YunoHost-Apps/baikal_ynh)
+* [Baïkal](https://github.com/YunoHost-Apps/baikal_ynh)
 
 ### Fitxers compartits
 

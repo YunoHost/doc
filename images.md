@@ -88,7 +88,7 @@ N.B. : Even if the image does not corresponds to the latest version of YunoHost,
 <script>
 /*
 ###############################################################################
-  Script that loads the infos from javascript and creates the corresponding
+  Script that loads the infos from JavaScript and creates the corresponding
   cards
 ###############################################################################
 */

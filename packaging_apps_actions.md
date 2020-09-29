@@ -94,7 +94,7 @@ command = "systemctl restart some_service"
 
 You can have as much actions as you want and from zero to as many arguments you want.
 
-If you prefer, you can also write your actions in json like manifest.json:
+If you prefer, you can also write your actions in JSON like manifest.json:
 
 ```json
 [{

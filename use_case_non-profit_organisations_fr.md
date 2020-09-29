@@ -97,7 +97,7 @@ Des packages supplémentaires peuvent être installés pour fournir davantage de
 
 Pour fournir des calendriers personnels ou partagés, vous devrez installer :
 * [Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh)
-* [Baikal](https://github.com/YunoHost-Apps/baikal_ynh)
+* [Baïkal](https://github.com/YunoHost-Apps/baikal_ynh)
 
 ### Contact
 

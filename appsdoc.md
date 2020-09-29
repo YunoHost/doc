@@ -3,7 +3,7 @@
 - [Anarchism](app_anarchism)
 - [Anfora](app_anfora)
 - [Archivist](app_archivist)
-- [Baikal](app_baikal)
+- [Baïkal](app_baikal)
 - [Bitwarden](app_bitwarden)
 - [Bibliogram](app_bibliogram)
 - [Blogotext](app_blogotext)

@@ -97,7 +97,7 @@ De paquets suplementaris pòdon èsser installats per provesir mai de foncionali
 
 Per fornir de calendièrs personals o partejats, vos calrà installar :
 * [Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh)
-* [Baikal](https://github.com/YunoHost-Apps/baikal_ynh)
+* [Baïkal](https://github.com/YunoHost-Apps/baikal_ynh)
 
 ### Contacte
 

@@ -61,7 +61,7 @@ It is an *optional* dependency of YunoHost and corresponds to an interface for t
 
 It essentially contains:
 - [view templates](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/views)
-- corresponding [javascript controllers](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/js/yunohost/controllers) that interact with the YunoHost API
+- corresponding [JavaScript controllers](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/js/yunohost/controllers) that interact with the YunoHost API
 - and [internationalized strings](https://github.com/YunoHost/yunohost-admin/tree/stretch-unstable/src/locales)
 
 ### Working on the YunoHost Python/CLI core
@@ -109,12 +109,12 @@ It essentially contains:
   commands/requests are also defined via the actionsmap. For instance, accessing
   the page `https://domain.tld/yunohost/api/users` corresponds to a `GET
   /users` requests on the YunoHost API. It is mapped to the function
-  `user_list()`. Accessing the URL should display the json returned by this
+  `user_list()`. Accessing the URL should display the JSON returned by this
   function. 'GET' requests are typically meant to ask information to the server.
   'POST' requests are meant to ask the server to edit/change some information,
   or to execute some actions.
 
-- `js/yunohost/controllers` contains the javascript parts,
+- `js/yunohost/controllers` contains the JavaScript parts,
   and define which requests to make to the API when loading a specific page of
   the interface, and how to process the data to generate the page, using
   templates.
