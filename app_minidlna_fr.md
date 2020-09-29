@@ -7,7 +7,7 @@
 - [Configuration](#configuration)
 - [Liens utiles](#liens-utiles)
 
-MiniDLNA (renommé Ready Media) est un serveur [dlna](https://fr.wikipedia.org/wiki/Digital_Living_Network_Alliance) ultra léger.
+MiniDLNA (renommé Ready Media) est un serveur [DLNA](https://fr.wikipedia.org/wiki/Digital_Living_Network_Alliance) ultra léger.
 Il permet de partager très simplement les fichiers multimédias avec tous les appareils compatibles présents sur le réseau local.
 
 MiniDLNA ne dispose pas d’une interface graphique, mais ne nécessite pas de configuration particulière.
@@ -15,7 +15,7 @@ MiniDLNA ne dispose pas d’une interface graphique, mais ne nécessite pas de c
 ## Configuration
 
 ### Quels fichiers multimédias sont partagés ?
-Minidlna partage le dossier `/home/yunohost.multimedia/share`, qui est commun à chaque utilisateur dans le dossier `/home/$USER/Multimedia/Share`.
+MiniDLNA partage le dossier `/home/yunohost.multimedia/share`, qui est commun à chaque utilisateur dans le dossier `/home/$USER/Multimedia/Share`.
 [Plus d’informations sur les dossiers multimédias](https://github.com/YunoHost-Apps/yunohost.multimedia).
 
 ~~Si [Transmission](https://github.com/Kloadut/transmission_ynh) est installé, les médias téléchargés seront disponibles en DLNA.~~
