@@ -9,23 +9,23 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Name   | Description | Upstream | Package draft |
 | ------ | ----------- | -------- | ------------- |
 | 10er10 |  | [Upstream](https://github.com/dready92/10er10) |  |
-| [abantecart](https://abantecart.com) | Create an e-commerce website |  | [Package Draft](https://github.com/YunoHost-Apps/abantecart_ynh) |
-| adguard |  | [Upstream](https://github.com/AdguardTeam/AdGuardHome) | [Package Draft](https://github.com/YunoHost-Apps/adguard_ynh) |
+| [AbanteCart](https://abantecart.com) | Create an e-commerce website |  | [Package Draft](https://github.com/YunoHost-Apps/abantecart_ynh) |
+| AdGuard |  | [Upstream](https://github.com/AdguardTeam/AdGuardHome) | [Package Draft](https://github.com/YunoHost-Apps/adguard_ynh) |
 | adhocserver | An ad hoc server for the Sony PSP |  | [Package Draft](https://github.com/matlink/adhocserver_ynh) |
 | [agora](https://www.agora-project.net/) | Create collaborative and creative digital space |  | [Package Draft](https://github.com/YunoHost-Apps/agora_ynh) |
 | [Ajenti](https://ajenti.org) |  | [Upstream](https://github.com/ajenti/ajenti/) |  |
 | Akaunting | Manage payments/invoices/expenses | [Upstream](https://github.com/akaunting/akaunting) |  |
 | [askbot](https://askbot.com/) | Questions and answers |  | [Package Draft](https://github.com/zamentur/askbot_ynh) |
 | Beehive |  | [Upstream](https://github.com/muesli/beehive) |  |
-| [bicbucstriim](https://projekte.textmulch.de/bicbucstriim/) | Manage an e-book collection |  | [Package Draft](https://github.com/YunoHost-Apps/bicbucstriim_ynh) |
+| [BicBucStriim](https://projekte.textmulch.de/bicbucstriim/) | Manage an e-book collection |  | [Package Draft](https://github.com/YunoHost-Apps/bicbucstriim_ynh) |
 | [BigBlueButton](https://bigbluebutton.org) | Web conferencing system | [Upstream](https://github.com/bigbluebutton/bigbluebutton) |  |
 | [Bitmessage](https://bitmessage.org/) |  | [Upstream](https://github.com/Bitmessage/PyBitmessage) |  |
 | [Bludit](https://www.bludit.com) |  | [Upstream](https://github.com/bludit/bludit) |  |
 | Blynk |  | [Upstream](https://github.com/blynkkk/blynk-library) |  |
-| [bolt](https://bolt.cm/) | Content Management Tool |  | [Package Draft](https://github.com/realitygaps/bolt_ynh) |
+| [Bolt](https://bolt.cm/) | Content Management Tool |  | [Package Draft](https://github.com/realitygaps/bolt_ynh) |
 | [Bookstack](https://www.bookstackapp.com/) |  | [Upstream](https://github.com/BookStackApp/BookStack) |  |
-| btcpayserver |  | [Upstream](https://github.com/btcpayserver/btcpayserver) |  |
-| [caliopen](https://www.caliopen.org) | A unified inteface for all your private communications |  | [Package Draft](https://github.com/YunoHost-Apps/caliopen_ynh) |
+| BTCPay Server |  | [Upstream](https://github.com/btcpayserver/btcpayserver) |  |
+| [Caliopen](https://www.caliopen.org) | A unified inteface for all your private communications |  | [Package Draft](https://github.com/YunoHost-Apps/caliopen_ynh) |
 | [cgit](https://git.zx2c4.com/cgit/about) |  |  |  |
 | [CheckUp](https://sourcegraph.github.io/checkup) |  | [Upstream](https://github.com/sourcegraph/checkup) |  |
 | chtickynotes | Note manager |  | [Package Draft](https://github.com/YunoHost-Apps/chtickynotes_ynh) |
@@ -35,23 +35,23 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Commafeed |  | [Upstream](https://github.com/Athou/commafeed) |  |
 | [Converse.js](https://conversejs.org) | Web client for XMPP | [Upstream](https://github.com/jcbrand/converse.js) |  |
 | cops | Calibre OPDS |  | [Package Draft](https://github.com/YunoHost-Apps/cops_ynh) |
-| coquelicot | A “one-click” file sharing web application |  | [Package Draft](https://github.com/YunoHost-Apps/coquelicot_ynh) |
-| [Couchdb](https://couchdb.apache.org/) | Database management |  |  |
+| Coquelicot | A “one-click” file sharing web application |  | [Package Draft](https://github.com/YunoHost-Apps/coquelicot_ynh) |
+| [CouchDB](https://couchdb.apache.org/) | Database management |  |  |
 | [Cozy](https://cozy.io/en/) |  |  |  |
 | Croodle | Vote for a schedule / polling | [Upstream](https://github.com/jelhan/croodle) |  |
 | Darkwire.io |  | [Upstream](https://github.com/seripap/darkwire.io) |  |
-| [democracyos](https://democracyos.org/) | Vote / make decisions in a collective |  | [Package Draft](https://github.com/YunoHost-Apps/democracyos_ynh) |
+| [democracyOS](https://democracyos.org/) | Vote / make decisions in a collective |  | [Package Draft](https://github.com/YunoHost-Apps/democracyos_ynh) |
 | [diasporadocker](https://diasporafoundation.org/) | A open and powerfull social network |  | [Package Draft](https://github.com/aymhce/diasporadocker_ynh) |
 | DirectoryLister |  | [Upstream](https://github.com/DirectoryLister/DirectoryLister) |  |
-| django_app | Skeleton for django apps |  | [Package Draft](https://github.com/Jojo144/django_app_ynh) |
-| docker_container | Deploy applications with Docker |  | [Package Draft](https://github.com/scith/docker_container_ynh) |
-| docker_rstudio | A web development environment for statistics with R |  | [Package Draft](https://github.com/scith/docker_rstudio_ynh) |
-| docker-registry |  | [Upstream](https://github.com/docker/distribution/) | [Package Draft](https://github.com/plopoyop/docker-registry_ynh) |
-| dockerui | Deploy applications with Docker |  | [Package Draft](https://github.com/YunoHost-Apps/dockerui_ynh) |
-| [domoticz](https://domoticz.com) | Home automation system web application |  | [Package Draft](https://github.com/anubister/domoticz_ynh) |
+| Django_app | Skeleton for django apps |  | [Package Draft](https://github.com/Jojo144/django_app_ynh) |
+| Docker_container | Deploy applications with Docker |  | [Package Draft](https://github.com/scith/docker_container_ynh) |
+| Docker_rstudio | A web development environment for statistics with R |  | [Package Draft](https://github.com/scith/docker_rstudio_ynh) |
+| Docker-registry |  | [Upstream](https://github.com/docker/distribution/) | [Package Draft](https://github.com/plopoyop/docker-registry_ynh) |
+| DockerUI | Deploy applications with Docker |  | [Package Draft](https://github.com/YunoHost-Apps/dockerui_ynh) |
+| [Domoticz](https://domoticz.com) | Home automation system web application |  | [Package Draft](https://github.com/anubister/domoticz_ynh) |
 | Draw.io | Online diagram creation | [Upstream](https://github.com/jgraph/drawio) |  |
-| [duniter](https://duniter.org) | Participate in the Duniter blockchain |  | [Package Draft](https://github.com/YunoHost-Apps/duniter_ynh) |
-| dynette | Dynette is a dyndns server | [Upstream](https://github.com/YunoHost/dynette) | [Package Draft](https://github.com/YunoHost-Apps/dynette_ynh) |
+| [Duniter](https://duniter.org) | Participate in the Duniter blockchain |  | [Package Draft](https://github.com/YunoHost-Apps/duniter_ynh) |
+| Dynette | Dynette is a dyndns server | [Upstream](https://github.com/YunoHost/dynette) | [Package Draft](https://github.com/YunoHost-Apps/dynette_ynh) |
 | [EasyAppointments](https://easyappointments.org/) | Online appointment booker |  |  |
 | [eLabFTW](https://www.elabftw.net/) | Electronic lab notebook | [Upstream](https://github.com/elabftw/elabftw) |  |
 | Emoncms |  | [Upstream](https://github.com/emoncms/emoncms) |  |
@@ -59,17 +59,17 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [erine.email](https://erine.email/) |  | [Upstream](https://gitlab.com/mdavranche/erine.email) |  |
 | [ERPnext](https://erpnext.com/) |  | [Upstream](https://github.com/frappe/erpnext) |  |
 | [EteSync](https://www.etesync.com/) |  | [Upstream](https://github.com/etesync) |  |
-| [ethercalc](https://ethercalc.net/) | Collaborative spreadsheet editor |  | [Package Draft](https://github.com/YunoHost-Apps/ethercalc_ynh) |
-| facette | |  | [Package Draft](https://github.com/YunoHost-Apps/facette_ynh) |
+| [Ethercalc](https://ethercalc.net/) | Collaborative spreadsheet editor |  | [Package Draft](https://github.com/YunoHost-Apps/ethercalc_ynh) |
+| Facette | |  | [Package Draft](https://github.com/YunoHost-Apps/facette_ynh) |
 | [Ferdi server](https://getferdi.com) | Messaging aggregation | [Upstream](https://github.com/getferdi/server) |  |
 | [FEX](https://fex.rus.uni-stuttgart.de/) |  |  |  |
 | [Filestash](https://www.filestash.app/) |  | [Upstream](https://github.com/mickael-kerjean/filestash) |  |
 | FitTrackee |  | [Upstream](https://github.com/SamR1/FitTrackee) |  |
-| flask | Skeleton for flask apps |  | [Package Draft](https://github.com/YunoHost-Apps/flask_ynh) |
+| Flask | Skeleton for flask apps |  | [Package Draft](https://github.com/YunoHost-Apps/flask_ynh) |
 | [foodsoft](https://foodcoops.github.io/foodsoft-hosting/) | Manage a non-profit food cooperative |  | [Package Draft](https://github.com/YunoHost-Apps/foodsoft_ynh) |
 | [Fossil](https://www.fossil-scm.org) |  |  |  |
-| framaestro | Online service aggregator | [Upstream](https://framagit.org/framasoft/framaestro) | [Package Draft](https://github.com/YunoHost-Apps/framaestro_ynh) |
-| framaestro_hub | Online service aggregator hub | [Upstream](https://github.com/mozilla/togetherjs.git) | [Package Draft](https://github.com/YunoHost-Apps/framaestro_hub_ynh) |
+| Framaestro | Online service aggregator | [Upstream](https://framagit.org/framasoft/framaestro) | [Package Draft](https://github.com/YunoHost-Apps/framaestro_ynh) |
+| Framaestro_hub | Online service aggregator hub | [Upstream](https://github.com/mozilla/togetherjs.git) | [Package Draft](https://github.com/YunoHost-Apps/framaestro_hub_ynh) |
 | [freeboard](https://freeboard.io/) | A real-time dashboard builder for IOT |  | [Package Draft](https://github.com/YunoHost-Apps/freeboard_ynh) |
 | [freepbx](https://freepbx.org) | VOIP |  | [Package Draft](https://github.com/YunoHost-Apps/freepbx_ynh) |
 | [ftssolr](https://wiki.dovecot.org/Plugins/FTS/Solr) | Full-text search via IMAP through a Solr indexing server |  | [Package Draft](https://github.com/YunoHost-Apps/ftssolr_ynh) |
