@@ -53,7 +53,7 @@ Lo servidor YunoHost pòt èsser albergat a diferents endreches :
 
 ## Perque
 
-YunoHost pòt correspondre als besonhs d'una organizacion sens tòca lucrativa e li permetre de servar lo mestritge  de sas donadas.
+YunoHost pòt correspondre als besonhs d'una organizacion sens tòca lucrativa e li permetre de servar lo mestritge de sas donadas.
 
 ## Cossí
 

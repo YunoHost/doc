@@ -1,6 +1,6 @@
 # Chat, VoIP y red local con <img src="/images/XMPP_logo.png" width=100>
 
-YunoHost está instalado con un servidor de mensajería instantánea Metronome que implementa el [protocolo  XMPP](https://es.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol).
+YunoHost está instalado con un servidor de mensajería instantánea Metronome que implementa el [protocolo XMPP](https://es.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol).
 
 XMPP es un protocolo abierto y extensible que también permite crear salones de discusión, compartir status y datos, echar llamadas en VoIP y hacer videoconferencias. 
 

@@ -53,7 +53,7 @@ Lors d’une mise à jour du logiciel **Fail2Ban**, le fichier d’origine `/etc
     ```bash
     [DEFAULT]
 
-    ignoreip = 127.0.0.1/8 XXX.XXX.XXX.XXX #<= l'adresse IP (on peut en mettre  plusieurs, séparées par un espace) que vous voulez passer en liste blanche / whitelist
+    ignoreip = 127.0.0.1/8 XXX.XXX.XXX.XXX #<= l'adresse IP (on peut en mettre plusieurs, séparées par un espace) que vous voulez passer en liste blanche / whitelist
     ```
 
 4. Sauvegardez le fichier et rechargez la configuration de Fail2Ban :

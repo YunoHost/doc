@@ -63,7 +63,7 @@ Peut-être que le serveur web NGINX est en panne. Vous pouvez vérifier cela [en
 
 Il se peut également que le serveur web (NGINX) ou le serveur ssh aient été tués suite à un manque d'espace disque ou de RAM / swap.
 - Tentez de relancer le service avec `systemctl restart nginx`.
-- Vous pouvez contrôler l'espace disque utilisé avec `df -h`. Si une de vos partitions est remplie à 100%, il faut identifier ce qui prend de la place sur votre système et faire de la place. Il est possible d'installer l'utilitaire `ncdu` avec `apt install ncdu` puis de faire `ncdu /` pour analyser la taille des dossiers de  toute l'arborescence.
+- Vous pouvez contrôler l'espace disque utilisé avec `df -h`. Si une de vos partitions est remplie à 100%, il faut identifier ce qui prend de la place sur votre système et faire de la place. Il est possible d'installer l'utilitaire `ncdu` avec `apt install ncdu` puis de faire `ncdu /` pour analyser la taille des dossiers de toute l'arborescence.
 - Vous pouvez contrôler l'utilisation de la RAM / swap avec `free -h`. En fonction des résultats, il peut être nécessaire d'optimiser votre serveur pour qu'il utilise moins de RAM (suppression d'app lourdes et inutiles...), d'ajouter de la RAM ou d'ajouter un fichier de swap.
 
 #### Votre serveur est accessible en IPv6 mais pas en IPv4 ou inversement

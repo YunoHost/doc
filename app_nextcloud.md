@@ -7,7 +7,7 @@
  - [Third Party Applications](#AppsTiers)  
  - [Useful links](#UsefulLinks)  
 
-Nextcloud is a file hosting service, many applications can be installed to offer it new features such as a calendar, a directory, notes and many others (you can find some applications in the [third-party applications](#AppsTiers) part  but there are many others depending on your needs).
+Nextcloud is a file hosting service, many applications can be installed to offer it new features such as a calendar, a directory, notes and many others (you can find some applications in the [third-party applications](#AppsTiers) part but there are many others depending on your needs).
 
 ## Discovering the Nextcloud environment <a name="EnvironmentNextcloud" href=""></a>
 

@@ -3,7 +3,7 @@
 Amoung other communication tools, YunoHost project use chat rooms to communicate.
 
 You could join those chat rooms using:
-- an [IRC Client](https://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_clients) for example [kiwiirc](https://kiwiirc.com/client/irc.freenode.net/yunohost)
+- an [IRC Client](https://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_clients) for example [KiwiIRC](https://kiwiirc.com/client/irc.freenode.net/yunohost)
 - an [XMPP client](https://en.wikipedia.org/wiki/Comparison_of_instant_messaging_clients)
 - a [Matrix client](https://matrix.org/docs/guides/faq.html#what-clients-are-available%3F)
 

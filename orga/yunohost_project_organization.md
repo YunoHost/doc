@@ -52,7 +52,7 @@ Groups are structured as a result of the fact that YunoHost counts many sub-proj
 
 - ##### Infra/Sysadmin Group
  - Infrastructure
- - Website (wiki, forum, chat room, redmine, mumble)
+ - Website (wiki, forum, chat room, redmine, Mumble)
  - Demo
  - Services
     - [ip.yunohost.org](https://ip.yunohost.org/) and ip6.yunohost.org

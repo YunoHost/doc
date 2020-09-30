@@ -6,7 +6,7 @@ In particular, **Fail2Ban** monitors `SSH` connection attempts. After 5 failed S
 
 ## Unban an IP address
 
-To unblock an IP address, you must first access your server by some means (for example from another IP  address or from another internet connection than the banned one).
+To unblock an IP address, you must first access your server by some means (for example from another IP address or from another internet connection than the banned one).
 
 Then, look at the **Fail2Ban’s log** to identify in which `jail` the IP address has been banned:
 

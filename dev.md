@@ -30,11 +30,11 @@ If you're looking for stuff to implement or fix, the bug-tracker is
 
 It is a small "homemade" framework. [Its major role](https://moulinette.readthedocs.io/en/latest/actionsmap.html) 
 is to allow us to build both a web API and a command-line API from the same 
-Python code thanks to a YAML schema  which we call 
+Python code thanks to a YAML schema which we call 
 [the actionmap](https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/actionsmap/yunohost.yml).
 
 It handles other mechanisms like authentication, internationalization and
-small technical utilitary functions (e.g. reading/writing json).
+small technical utilitary functions (e.g. reading/writing JSON).
 
 Moulinette has its own documentation available [here](https://moulinette.readthedocs.io/en/latest/).
 

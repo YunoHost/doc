@@ -3,14 +3,14 @@
 Parmi d’autres outils, le projet YunoHost se sert de salons de discussions pour communiquer.
 
 Vous pouvez rejoindre ces salons avec :
-- un [Client IRC](https://fr.wikipedia.org/wiki/Liste_de_clients_IRC)
+- un [Client IRC](https://fr.wikipedia.org/wiki/Liste_de_clients_IRC) par exemple [KiwiIRC](https://kiwiirc.com/client/irc.freenode.net/yunohost)
 - un [Client XMPP](https://fr.wikipedia.org/wiki/Clients_XMPP)
 - un [Client Matrix](https://linuxfr.org/news/matrix-pour-decentraliser-skype-whatsapp-signal-slack-et-discord)
 
 
 #### Salon d'entraide et de support
 Le salon d’[entraide](/help) est là pour permettre aux utilisateurs de YunoHost de s'aider mutuellement.
-- IRC : **#yunohost** sur irc.freenode.net (voir kiwiirc ci-dessus)
+- IRC : **#yunohost** sur irc.freenode.net (voir KiwiIRC ci-dessus)
 - Matrix : **#freenode_#yunohost:matrix.org**
 - XMPP : **[support@conference.yunohost.org](xmpp:support@conference.yunohost.org?join)**
 

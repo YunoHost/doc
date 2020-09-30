@@ -3,7 +3,7 @@
 El proyecto YunoHost utiliza salas de chat como medio de communicación.
 
 Puede unirse a una sala de chat utilizando :
-- un [cliente IRC](https://es.wikipedia.org/wiki/Anexo:Clientes_IRC) por  ejemplo [kiwiirc](https://kiwiirc.com/client/irc.freenode.net/yunohost)
+- un [cliente IRC](https://es.wikipedia.org/wiki/Anexo:Clientes_IRC) por ejemplo [KiwiIRC](https://kiwiirc.com/client/irc.freenode.net/yunohost)
 - un [cliente XMPP](https://es.wikipedia.org/wiki/Anexo:Comparaci%C3%B3n_de_clientes_de_mensajer%C3%ADa_instant%C3%A1nea)
 - un [cliente Matrix](https://matrix.org/docs/guides/faq.html#what-clients-are-available%3F)
 

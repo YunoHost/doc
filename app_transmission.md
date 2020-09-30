@@ -1,6 +1,6 @@
 # <img src="/images/transmission.png"> Transmission
 
-### What is  Transmission?
+### What is Transmission?
 
 Transmission is a share software based on BitTorrent protocol.
 * [Transmission web site](http://transmissionbt.com/)

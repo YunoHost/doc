@@ -102,7 +102,7 @@ Si un consensus ne peut être trouvé au sein d'un groupe en suivant le processu
 
 N'importe quel contributeur peut proposer une pull request (abrégée PR dans la suite) dans les divers dépôts liés au projet YunoHost (core, apps, infra...).
 
-L'auteur est vivement encouragé à décrire sa proposition en donnant le maximum  des informations
+L'auteur est vivement encouragé à décrire sa proposition en donnant le maximum des informations
 pertinentes. Le groupe peut, à cette fin, proposer un modèle des informations à
 inclure, comme par exemple :
 - status actuel de la PR (ex. : non terminé, en attente de revues, choix techniques à faire...)
@@ -121,7 +121,7 @@ Une PR peut être créée même si son auteur juge qu'elle n'est pas encore term
 Il appartient aussi à l'auteur de la PR de juger de son importance. (Ce jugement pourra cependant être contesté par les autres membres du groupe concerné par la PR.) Les niveaux d'importance utilisés sont les suivants :
 - **micro** : concerne uniquement un détail de forme et/ou qui ne nécessite pas d'être débattue et testée. Elle doit être facilement réversible.
 - **mineure** : impacte de manière légère le projet (e.g. refactoring d'une petite partie de code, réparation d'un bug...)
-- **moyenne** : impacte de manière significative l'architecture d'une partie du code (e.g. refactoring de tout un aspect ou de tout un fichier, ajout d'une fonctionnalité importante, sortie d'une version testing, ...)
+- **moyenne** : impacte de manière significative l'architecture d'une partie du code (e.g. refactoring de tout un aspect ou de tout un fichier, ajout d'une fonctionnalité importante, sortie d'une version testing...)
 - **majeure** : impacte lourdement l'ensemble du projet (e.g. migration d'une dépendance critique, changement de version de Debian, sortie d'une version stable...)
 
 
@@ -148,7 +148,7 @@ Si l'auteur ne fait pas parti du groupe concerné par la PR, tous ces quotas son
 
 Une fois les quotas de relecture remplis, et si aucun refus n'a été prononcé et qu'aucune demande de changement n'est en attente, n'importe quel membre du groupe peut alors déclarer et marquer la PR comme "prête à être mergée".
 
-Pendant une durée de 3 jours suivant cette déclaration, les membres du groupe peuvent encore relire, demander des changements ou émettre un refus vis-à-vis de la PR. Dans ce cas, le merge est interrompu et le processus retourne à la partie 2). Pour les PRs moyennes et majeures, la durée est augmentée jusqu'à ce qu'il se soit écoulé au moins une semaine par rapport au moment où la PR a été déclarée comme prête par son auteur.
+Pendant une durée de 3 jours suivant cette déclaration, les membres du groupe peuvent encore relire, demander des changements ou émettre un refus vis-à-vis de la PR. Dans ce cas, le merge est interrompu et le processus retourne à la partie 2. Pour les PRs moyennes et majeures, la durée est augmentée jusqu'à ce qu'il se soit écoulé au moins une semaine par rapport au moment où la PR a été déclarée comme prête par son auteur.
 
 À l'issue de cette durée, n'importe quel membre du groupe peut merger la PR. Lorsque celle-ci comporte plusieurs commits, il est recommandé d'utiliser la fonction "squash and merge" pour garder l'historique de commit propre.
 
