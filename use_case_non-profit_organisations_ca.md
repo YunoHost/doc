@@ -134,7 +134,7 @@ Arribats a un cert punt una organització sense ànim de lucre podria necessitar
 ### Pàgina web pública
 
 Hi ha múltiples maneres d'implementar una pàgina web pública:
-* Un pàgina simple amb html, css, etc... utilitzant: [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh)
+* Un pàgina simple amb HTML, CSS, etc. utilitzant: [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh)
 * Utilitzant un CMS (sistema de gestió de contingut) com [Wordpress](https://github.com/YunoHost-Apps/_ynh), [Drupal](https://github.com/YunoHost-Apps/drupal_ynh) , [Grav](https://github.com/YunoHost-Apps/grav_ynh), [PluXml](https://github.com/YunoHost-Apps/pluxml_ynh)
 
 Però us proposem una alternativa una mica més potent: [CiviCRM on Drupal 7](https://github.com/YunoHost-Apps/civicrm_drupal7_ynh):

@@ -16,7 +16,7 @@ agenda         CNAME         mondomaine.fr.
 blog         CNAME         mondomaine.fr.
 rss         CNAME         mondomaine.fr.
 ```
-permet d’avoir un `agenda.mondomaine.fr`, un `blog.mondomaine.fr` etc…
+permet d’avoir un `agenda.mondomaine.fr`, un `blog.mondomaine.fr` etc.
 
 ### Installer une application sur un sous-domaine
 

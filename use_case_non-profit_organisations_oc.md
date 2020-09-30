@@ -133,10 +133,10 @@ Arriba un moment ont a l’organizacion sens tòca lucrativa li pòsca far beson
 ### Site Web Public
 
 Existís mantuns biaisses de construire un site Web public :
-* Un simple site HTML, CSS, etc... en utilizant : [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh)
-* Utilizar un CMS (sistèma de gestion de contengut) coma  [Wordpress](https://github.com/YunoHost-Apps/_ynh), [Drupal](https://github.com/YunoHost-Apps/drupal_ynh) , [Grav](https://github.com/YunoHost-Apps/grav_ynh), [PluXml](https://github.com/YunoHost-Apps/pluxml_ynh)
+* Un simple site HTML, CSS, etc. en utilizant : [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh)
+* Utilizar un CMS (sistèma de gestion de contengut) coma  [Wordpress](https://github.com/YunoHost-Apps/_ynh), [Drupal](https://github.com/YunoHost-Apps/drupal_ynh), [Grav](https://github.com/YunoHost-Apps/grav_ynh), [PluXml](https://github.com/YunoHost-Apps/pluxml_ynh)
 
-Mas prepausam quicòm de mai potent : [CiviCRM on Drupal 7](https://github.com/YunoHost-Apps/civicrm_drupal7_ynh):
+Mas prepausam quicòm de mai potent : [CiviCRM on Drupal 7](https://github.com/YunoHost-Apps/civicrm_drupal7_ynh) :
 * Drupal qu’es un framework potent de gestion de contengut
 * amb CiviCRM qu’es un CRM OpenSource a destinacion de las organizacions sens tòca lucrativa
 

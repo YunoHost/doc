@@ -7,7 +7,7 @@
 - [Limitations avec YunoHost](#limitations-avec-yunohost)
 - [Liens utiles](#liens-utiles)
 
-Discourse dispose des fonctionnalités usuelles d’un forum de discussion : utilisateurs, discussions, recherche, messages privés, etc.Le mode « liste de diffusion » permet d’utiliser la plupart des fonctionnalités du forum via des courriers électroniques. Écrit en ruby et en JavaScript, il nécessite une base de données PostgreSQL et un serveur d’envoi de courrier électronique.[¹](#sources)
+Discourse dispose des fonctionnalités usuelles d’un forum de discussion : utilisateurs, discussions, recherche, messages privés, etc. Le mode « liste de diffusion » permet d’utiliser la plupart des fonctionnalités du forum via des courriers électroniques. Écrit en ruby et en JavaScript, il nécessite une base de données PostgreSQL et un serveur d’envoi de courrier électronique.[¹](#sources)
 
 ## Limitations avec YunoHost
 

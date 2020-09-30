@@ -7,7 +7,7 @@
 - [Limitations with YunoHost](#limitations-with-yunohost)
 - [Useful links](#useful-links)
 
-Garradin (a word meaning silver in an Aboriginal dialect of northern Australia, pronounced "gar-a-dine "em) is a software program for associative management. It is the tool of choice to manage an association, a sports club, an NGO, etc. It is designed to meet the needs of a small to medium-sized structure: membership management, accounting, website, note-taking at meetings, archiving and sharing of the association's operating documents, discussion between members, etc. etc.[¹](#sources)
+Garradin (a word meaning silver in an Aboriginal dialect of northern Australia, pronounced "gar-a-dine "em) is a software program for associative management. It is the tool of choice to manage an association, a sports club, an NGO, etc. It is designed to meet the needs of a small to medium-sized structure: membership management, accounting, website, note-taking at meetings, archiving and sharing of the association's operating documents, discussion between members, etc.¹](#sources)
 
 ## Limitations with YunoHost
 

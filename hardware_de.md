@@ -1,7 +1,7 @@
 # Hardware
 
 YunoHost kann auf folgender Hardware installiert werden:
-- ARM Boards (Raspberry Pi, Olinuxino LIME1 & 2, Orange Pi, etc...) ;
+- ARM Boards (Raspberry Pi, Olinuxino LIME1 & 2, Orange Pi, etc.) ;
 - 'Alte' Desktop Computer oder Laptops/Notebooks ;
 - Remote servers, auch bekannt als Virtual Private Servers (VPS).
 
