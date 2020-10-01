@@ -17,6 +17,7 @@
    * [Arguments management](packaging_apps_arguments_management)
    * [Arguments format](packaging_apps_arguments_format)
    * [NGINX configuration](packaging_apps_nginx_conf)
+   * [User groups and permissions](/groups_and_permissions)
    * [Multi-instance](packaging_apps_multiinstance)
    * [Helpers](packaging_apps_helpers)
    * [Trap usage](/packaging_apps_trap)
