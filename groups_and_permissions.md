@@ -248,7 +248,7 @@ fi
 
 In this example, if the app is public the group `visitors` has access to the permission `create poll`, the group is removed from this permission otherwise.
 
-Then create two files in the directory `hooks` at the root of the git repository: `post_app_addaccess` and `post_app_removeaccess`. In these hooks, you'll remove or readd the regex protection if the `visitors` group is added or removed from this permission:
+Then create two files in the directory `hooks` at the root of the Git repository: `post_app_addaccess` and `post_app_removeaccess`. In these hooks, you'll remove or readd the regex protection if the `visitors` group is added or removed from this permission:
 
 `post_app_addaccess`:
 

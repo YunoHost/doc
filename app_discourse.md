@@ -11,7 +11,7 @@ Discourse has all the usual features of a discussion forum: users, discussions, 
 
 ## Limitations with YunoHost
 
-In the administration dashboard, The installed version is shown as unknown (due the fact that we don't use git for installation); you can safely ignore that as the YunoHost package will be maintained. On ARM devices, default generated avatars are missing the profile initials (they are only a plain discus).
+In the administration dashboard, The installed version is shown as unknown (due the fact that we don't use Git for installation); you can safely ignore that as the YunoHost package will be maintained. On ARM devices, default generated avatars are missing the profile initials (they are only a plain discus).
 
 ## Useful links
 

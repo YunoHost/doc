@@ -11,7 +11,7 @@ Discourse dispose des fonctionnalités usuelles d’un forum de discussion : uti
 
 ## Limitations avec YunoHost
 
-Dans le tableau de bord de l'administration, la version installée est indiquée comme inconnue (du fait que nous n'utilisons pas git pour l'installation) ; vous pouvez ignorer cela sans risque car le paquet YunoHost sera maintenu. Sur les appareils ARM, les avatars générés par défaut ne portent pas les initiales du profil (il ne s'agit que d'un simple disque).
+Dans le tableau de bord de l'administration, la version installée est indiquée comme inconnue (du fait que nous n'utilisons pas Git pour l'installation) ; vous pouvez ignorer cela sans risque car le paquet YunoHost sera maintenu. Sur les appareils ARM, les avatars générés par défaut ne portent pas les initiales du profil (il ne s'agit que d'un simple disque).
 
 ## Liens utiles
 

@@ -8,7 +8,7 @@ Si vous cherchez quelque chose à implémenter ou un bug à réparer, le bug tra
 
 ### Mettre en place un environnement de développement
 
-- **Utilisez [ynh-dev](https://github.com/YunoHost/ynh-dev)** (voir le README) pour mettre en place un environnement de développement - en local sur une machine virtuelle, ou bien sur un VPS. Ceci installera une instance fonctionelle de YunoHost, en utilisant directement les dépôts git à l'aide de liens symboliques. De cette façon, il vous sera possible de modifier les fichiers, de tester les changements en temps réel, et de commiter et push/pull directement depuis cet environnement.
+- **Utilisez [ynh-dev](https://github.com/YunoHost/ynh-dev)** (voir le README) pour mettre en place un environnement de développement - en local sur une machine virtuelle, ou bien sur un VPS. Ceci installera une instance fonctionelle de YunoHost, en utilisant directement les dépôts Git à l'aide de liens symboliques. De cette façon, il vous sera possible de modifier les fichiers, de tester les changements en temps réel, et de commiter et push/pull directement depuis cet environnement.
 
 - **Implémentez et testez votre fonctionnalité**. Suivant ce sur quoi vous
   voulez travailler :

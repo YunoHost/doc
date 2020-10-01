@@ -4,8 +4,8 @@ The purpose of this document is to teach you how to package an application for Y
 
 ### Requirements
 To package an application, here are the requirements:
-* An account on a git server (e.g. [GitHub](https://github.com/)) to publish the application;
-* Basic knowledge of [git](/packaging_apps_git), bash shell and other programming stuff;
+* An account on a Git server (e.g. [GitHub](https://github.com/)) to publish the application;
+* Basic knowledge of [Git](/packaging_apps_git), bash shell and other programming stuff;
 * A testing [virtual machine or a distant server](/install), or a development environement, [ynh-dev](https://github.com/yunohost/ynh-dev) or [VirtualBox](/packaging_apps_virtualbox), to package and test the package.
 
 ### Content

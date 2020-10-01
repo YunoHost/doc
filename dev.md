@@ -13,7 +13,7 @@ If you're looking for stuff to implement or fix, the bug-tracker is
 
 - **Use [ynh-dev](https://github.com/YunoHost/ynh-dev)** (see the README) to
   setup a development environment - locally in a virtual machine, or on a VPS.
-  This will setup a working YunoHost instance, using directly the git repositories
+  This will setup a working YunoHost instance, using directly the Git repositories
   (with symlinks). That way, you will be able to edit files, test your changes in real
   time, commit stuff and push/pull directly from your development environment.
 

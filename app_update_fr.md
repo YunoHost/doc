@@ -18,7 +18,7 @@ yunohost app upgrade wordpress
 **Note :** dans le cas où plusieurs applications du même type (ex : deux WordPress) sont installées sur le serveur, il est nécessaire de spécifier le nom d’instance (ex : wordpress ou wordpress__2).
 
 #### Mise à jour d’une application non officielle
-Il faut pour cela indiquer le dépôt git qui contient la mise à jour. 
+Il faut pour cela indiquer le dépôt Git qui contient la mise à jour. 
 
 Par exemple, pour mettre à jour LimeSurvey, entrer :
 ```bash

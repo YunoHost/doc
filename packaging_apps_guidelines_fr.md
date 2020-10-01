@@ -114,7 +114,7 @@ Ces dépôts ont plusieurs fonctions :
 * indiquer l'état de fonctionnement du paquet ;
 * indiquer des informations sur le support d'un paquet.
 
-Pour la liste `apps.json` maintenue par l'équipe du projet YunoHost, l'inscription se fait sur [le dépôt git "apps"](https://github.com/YunoHost/apps). D'autres listes non-officielles (notamment celles incluant des applications non-libres) peuvent exister, se réferer au [Forum](https://forum.yunohost.org) de la communauté.
+Pour la liste `apps.json` maintenue par l'équipe du projet YunoHost, l'inscription se fait sur [le dépôt Git "apps"](https://github.com/YunoHost/apps). D'autres listes non-officielles (notamment celles incluant des applications non-libres) peuvent exister, se réferer au [Forum](https://forum.yunohost.org) de la communauté.
 
 #### YEP 1.3
 ##### Indiquer la licence associée au paquet  | brouillon | AUTO | WORKING |
