@@ -13,13 +13,11 @@ ONLYOFFICE Server est une suite bureautique collaborative en ligne gratuite comp
 
 1. Install [OnlyOffice Server](https://github.com/YunoHost-Apps/onlyoffice_ynh)
 Le serveur OnlyOffice doit être installé dans un domaine différent de celui utilisé par Nextcloud.
-Par exemple:
-	- OnlyOffice Server -> `https://onlyoffice.domain.org`
-	- Nextcloud         -> `https://domain.org/nextcloud`
+Par exemple : `https://onlyoffice.domain.org` et `https://domain.org/nextcloud`
 
 2. Installer [ONLYOFFICE connector](https://apps.nextcloud.com/apps/onlyoffice) dans Nextcloud
-- Connectez-vous à Nextcloud en tant qu'administrateur -> Applications -> installez ONLYOFFICE. (Le numéro de version d'ONLYOFFICE Connector n'a pas besoin d'avoir le même numéro de version qu'OnlyOffice Server).
-- Dans paramètres -> ONLYOFFICE, entrez l'adresse de votre serveur OnlyOffice : `https://onlyoffice.domain.org`
+- Connectez-vous à Nextcloud en tant qu'administrateur et installer ONLYOFFICE Connector : -> Applications -> installez ONLYOFFICE. (Le numéro de version d'ONLYOFFICE Connector n'a pas besoin d'avoir le même numéro de version qu'OnlyOffice Server).
+- Dans paramètres -> ONLYOFFICE, entrez l'adresse de votre serveur OnlyOffice Server (par exemple) `https://onlyoffice.domain.org`
 
 OnlyOffice Server est maintenant connecté à Nextcloud.
 
