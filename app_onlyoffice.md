@@ -9,13 +9,13 @@
 
 ONLYOFFICE Server is a free collaborative online office suite comprising viewers and editors for texts, spreadsheets and presentations, fully compatible with Office Open XML formats: .docx, .xlsx, .pptx and enabling collaborative editing in real time.
 
-## Connect OnlyOffice Server with Nextcloud <a name="Connect-nextcloud" href=""></a>
+## Connect OnlyOffice Server with Nextcloud
 
-1. Install [OnlyOffice Server](https://github.com/YunoHost-Apps/onlyoffice_ynh) in a different domain than the one used by Nextcloud. For example: `https://onlyoffice.domain.org` and `https://domain.org/nextcloud`
+1. Install [OnlyOffice Server](https://github.com/YunoHost-Apps/onlyoffice_ynh) in a different domain than the one used by Nextcloud: `https://onlyoffice.domain.org` and `https://domain.org/nextcloud` (for example)
 
 2. Install [ONLYOFFICE connector](https://apps.nextcloud.com/apps/onlyoffice) in Nextcloud
 - Connect to Nextcloud as admin and install ONLYOFFICE Connector: -> Applications -> install ONLYOFFICE. (ONLYOFFICE Connector doesn't need to match your OnlyOffice Server version number).
-- In settings -> ONLYOFFICE, enter the address of your OnlyOffice Server (for example) `https://onlyoffice.domain.org`
+- In Settings (`https://domain.org/nextcloud/settings/admin/onlyoffice`), enter the address of your OnlyOffice Server `https://onlyoffice.domain.org` (for example)
 
 OnlyOffice Server is now connected to Nextcloud.
 
