@@ -265,6 +265,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | TellForm |  | [Upstream](https://github.com/tellform/tellform) |  |
 | [tes3mp](https://tes3mp.com/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/tes3mp_ynh) |
 | Thredded |  | [Upstream](https://github.com/thredded/thredded) |  |
+| Tinylist |  | [Upstream](https://github.com/baggachipz/tinylist) |  |
 | [TMate](https://tmate.io/) |  | [Upstream](https://github.com/tmate-io/tmate) |  |
 | torrelay |  |  | [Package Draft](https://github.com/matlink/torrelay_ynh) |
 | Tracim |  | [Upstream](https://github.com/tracim/tracim) |  |
