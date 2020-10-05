@@ -115,6 +115,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Joplin](https://joplin.cozic.net/) |  | [Upstream](https://github.com/laurent22/joplin) |  |
 | Joplin-web |  | [Upstream](https://github.com/foxmask/joplin-web) |  |
 | [JS Bin](https://jsbin.com/) |  | [Upstream](https://github.com/jsbin/jsbin) |  |
+| [Karaoke-forever](https://www.karaoke-forever.com/) | Organize karaoke parties | [Upstream](https://github.com/bhj/karaoke-forever) | |
 | kiwiirc | Web IRC client |  | [Package Draft](https://github.com/YunoHost-Apps/kiwiirc_ynh) |
 | [Kiwix](https://www.kiwix.org/) | Offline Wikipedia or other sites | [Upstream](https://github.com/kiwix/) |  |
 | [Known](https://withknown.com) |  | [Upstream](https://github.com/idno/known) |  |
@@ -215,6 +216,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Questions2answer](https://www.question2answer.org/) |  |  |  |
 | [racktables](https://racktables.org) |  | [Upstream](https://github.com/RackTables/racktables) |  |
 | Radarr |  | [Upstream](https://github.com/Radarr/Radarr) |  |
+| Race for the galaxy | | [Upstream](https://github.com/bnordli/rftg) | |
 | [redmine](https://www.redmine.org/) | A flexible project management web application |  | [Package Draft](https://github.com/YunoHost-Apps/redmine_ynh) |
 | remoteStorage | A remoteStorage server implementation written in PHP | [Upstream](https://github.com/fkooman/php-remote-storage) | [Package Draft](https://github.com/YunoHost-Apps/RemoteStorage_ynh) |
 | [Request Tracker](https://bestpractical.com) |  | [Upstream](https://github.com/bestpractical/rt) |  |
