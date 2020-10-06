@@ -68,4 +68,4 @@ votre navigateur ou la ligne de commande, alors félicitations !
 - Ne soyez pas trop effrayé par [l'avertissement à propos du
   certificat](/certificate), vous aurez probablement la possibilité
   d'installer un certificat Let's Encrypt :).
-- Jetez un oeil aux [applications disponibles](/apps) !
+- Jetez un œil aux [applications disponibles](/apps) !
