@@ -1,5 +1,3 @@
-<div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">The page requested is not yet available in your favourite language. Instead, here is the english version. If you wish to start translating this page, please go to [this page](https://yunohost.org/#/apps_wishlist_de).</div>
-
 # Apps wishlist
 
 The following list is a compiled wishlist of applications that would be nice-to-have.
@@ -137,10 +135,10 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | lychee | Self-hosted photo-management done right |  | [Package Draft](https://github.com/titoko/lychee_ynh) |
 | [MaidSafe](https://maidsafe.net) |  | [Upstream](https://github.com/maidsafe) |  |
 | [mailman3](https://docs.mailman3.org/) | Electronic mailing list manager |  | [Package Draft](https://github.com/YunoHost-Apps/mailman3_ynh) |
-| [Mailpile](https://www.mailpile.is) |  | [Upstream](https://github.com/mailpile/Mailpile) |  | [Matterbridge for Mattermost](https://github.com/42wim/matterbridge) 
+| [Mailpile](https://www.mailpile.is) |  | [Upstream](https://github.com/mailpile/Mailpile) |  |
 | [Mailtrain](https://mailtrain.org/) |  | [Upstream](https://github.com/Mailtrain-org/mailtrain) |  |
+| Matterbridge | | [Upstream](https://github.com/42wim/matterbridge) | [Package Draft](https://github.com/YunoHost-Apps/matterbridge_ynh) |
 | [Mautic](https://github.com/mautic/mautic) |  |  |  |
-|
 | mediadrop | Video Platform |  | [Package Draft](https://github.com/YunoHost-Apps/mediadrop_ynh) |
 | [medusa](https://pymedusa.com/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/guigot/medusa_ynh) |
 | microblog.pub |  | [Upstream](https://github.com/tsileo/microblog.pub) |  |
