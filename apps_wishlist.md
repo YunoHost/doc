@@ -146,7 +146,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [mineweb](https://mineweb.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/mineweb_ynh) |
 | miniflux | Minimal RSS reader |  | [Package Draft](https://github.com/mat-mo/miniflux_ynh) |
 | [Mirakel](https://mirakel.azapps.de/taskwarrior.html) |  | [Upstream](https://github.com/GothenburgBitFactory/taskwarrior) |  |
-| Matterbridge | Bridge different chat protocols | [Upstream](https://github.com/42wim/matterbridge) | |
+| Matterbridge | Bridge different chat protocols | [Upstream](https://github.com/42wim/matterbridge) | [Package Draft](https://github.com/YunoHost-Apps/matterbridge_ynh) |
 | modernpaste | A modern, feature-rich Pastebin alternative | [Upstream](https://github.com/LINKIWI/modern-paste) | [Package Draft](https://github.com/YunoHost-Apps/modernpaste_ynh) |
 | [Modoboa](https://modoboa.org) |  | [Upstream](https://github.com/modoboa/) |  |
 | [mopidy](https://www.mopidy.com/) | An extensible music server |  | [Package Draft](https://github.com/YunoHost-Apps/mopidy_ynh) |
