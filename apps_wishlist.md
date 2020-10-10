@@ -142,7 +142,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | mediadrop | Video Platform |  | [Package Draft](https://github.com/YunoHost-Apps/mediadrop_ynh) |
 | [medusa](https://pymedusa.com/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/guigot/medusa_ynh) |
 | microblog.pub |  | [Upstream](https://github.com/tsileo/microblog.pub) |  |
-| [mindmaps](https://www.mindmaps.app/) | Tool for making mind maps |  | [Package Draft](https://github.com/YunoHost-Apps/mindmaps_ynh) |
 | [mineweb](https://mineweb.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/mineweb_ynh) |
 | miniflux | Minimal RSS reader |  | [Package Draft](https://github.com/mat-mo/miniflux_ynh) |
 | [Mirakel](https://mirakel.azapps.de/taskwarrior.html) |  | [Upstream](https://github.com/GothenburgBitFactory/taskwarrior) |  |
