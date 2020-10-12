@@ -1,3 +1,5 @@
+<div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">The page requested is not yet available in your favourite language. Instead, here is the english version. If you wish to start translating this page, please go to [this page](https://yunohost.org/#/apps_wishlist_de).</div>
+
 # Apps wishlist
 
 The following list is a compiled wishlist of applications that would be nice-to-have.
@@ -221,6 +223,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Request Tracker](https://bestpractical.com) |  | [Upstream](https://github.com/bestpractical/rt) |  |
 | [Restya](https://restya.com) |  | [Upstream](https://github.com/RestyaPlatform/board/) |  |
 | [Retroshare](https://retroshare.cc/) |  | [Upstream](https://github.com/RetroShare/RetroShare) |  |
+| [richdocument_arm64](https://github.com/CollaboraOnline/richdocumentscode#richdocumentscode) | Collabora Online Office for ARM64 |  |
 | [roadiz](https://www.roadiz.io) | Create a modern website |  | [Package Draft](https://github.com/YunoHost-Apps/roadiz_ynh) |
 | [rocketchat](https://rocket.chat) | A chat platform |  | [Package Draft](https://github.com/YunoHost-Apps/rocketchat_ynh) |
 | rs-short | An URL shortener | [Upstream](https://git.42l.fr/42l/rs-short) |  |
