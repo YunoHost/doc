@@ -20,7 +20,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [BicBucStriim](https://projekte.textmulch.de/bicbucstriim/) | Manage an e-book collection |  | [Package Draft](https://github.com/YunoHost-Apps/bicbucstriim_ynh) |
 | [BigBlueButton](https://bigbluebutton.org) | Web conferencing system | [Upstream](https://github.com/bigbluebutton/bigbluebutton) |  |
 | [Bitmessage](https://bitmessage.org/) |  | [Upstream](https://github.com/Bitmessage/PyBitmessage) |  |
-| [Bludit](https://www.bludit.com) |  | [Upstream](https://github.com/bludit/bludit) |  |
 | Blynk |  | [Upstream](https://github.com/blynkkk/blynk-library) |  |
 | [Bolt](https://bolt.cm/) | Content Management Tool |  | [Package Draft](https://github.com/realitygaps/bolt_ynh) |
 | [Bookstack](https://www.bookstackapp.com/) |  | [Upstream](https://github.com/BookStackApp/BookStack) |  |
