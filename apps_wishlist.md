@@ -48,6 +48,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Docker_rstudio | A web development environment for statistics with R |  | [Package Draft](https://github.com/scith/docker_rstudio_ynh) |
 | Docker-registry |  | [Upstream](https://github.com/docker/distribution/) | [Package Draft](https://github.com/plopoyop/docker-registry_ynh) |
 | DockerUI | Deploy applications with Docker |  | [Package Draft](https://github.com/YunoHost-Apps/dockerui_ynh) |
+| [DomainMOD](https://domainmod.org) | Domain portfolio management application | | |
 | [Domoticz](https://domoticz.com) | Home automation system web application |  | [Package Draft](https://github.com/anubister/domoticz_ynh) |
 | Draw.io | Online diagram creation | [Upstream](https://github.com/jgraph/drawio) |  |
 | [Duniter](https://duniter.org) | Participate in the Duniter blockchain |  | [Package Draft](https://github.com/YunoHost-Apps/duniter_ynh) |
@@ -92,7 +93,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Granary |  | [Upstream](https://github.com/snarfed/granary) |  |
 | [Graphhopper](https://www.graphhopper.com/) |  | [Upstream](https://github.com/graphhopper/graphhopper) |  |
 | [Grocy](https://grocy.info/) | Fridge ERP | [Upstream](https://github.com/grocy/grocy) |  |
-| [Guacamole](https://guacamole.apache.org/) | clientless remote desktop gateway |  |  |
+| [Guacamole](https://guacamole.apache.org/) | Clientless remote desktop gateway |  |  |
 | [Habitica](https://habitica.com/) |  | [Upstream](https://github.com/HabitRPG/habitica) |  |
 | headphones | Automatic music downloader |  | [Package Draft](https://github.com/YunoHost-Apps/headphones_ynh) |
 | Helpy |  | [Upstream](https://github.com/helpyio/helpy) |  |
