@@ -35,11 +35,11 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Commafeed |  | [Upstream](https://github.com/Athou/commafeed) |  |
 | [Converse.js](https://conversejs.org) | Web client for XMPP | [Upstream](https://github.com/jcbrand/converse.js) |  |
 | cops | Calibre OPDS |  | [Package Draft](https://github.com/YunoHost-Apps/cops_ynh) |
-| [Coquelicot](https://coquelicot.potager.org/) | A “one-click” file sharing web application |  | [Package Draft](https://github.com/YunoHost-Apps/coquelicot_ynh) |
+| Coquelicot | A “one-click” file sharing web application |  | [Package Draft](https://github.com/YunoHost-Apps/coquelicot_ynh) |
 | [CouchDB](https://couchdb.apache.org/) | Database management |  |  |
 | [Cozy](https://cozy.io/en/) |  |  |  |
 | Croodle | Vote for a schedule / polling | [Upstream](https://github.com/jelhan/croodle) |  |
-| [Darkwire.io](https://darkwire.io/) | End-to-end encrypted instant web chat | [Upstream](https://github.com/seripap/darkwire.io) |  |
+| Darkwire.io |  | [Upstream](https://github.com/seripap/darkwire.io) |  |
 | [democracyOS](https://democracyos.org/) | Vote / make decisions in a collective |  | [Package Draft](https://github.com/YunoHost-Apps/democracyos_ynh) |
 | [diasporadocker](https://diasporafoundation.org/) | A open and powerfull social network |  | [Package Draft](https://github.com/aymhce/diasporadocker_ynh) |
 | DirectoryLister |  | [Upstream](https://github.com/DirectoryLister/DirectoryLister) |  |
@@ -48,6 +48,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Docker_rstudio | A web development environment for statistics with R |  | [Package Draft](https://github.com/scith/docker_rstudio_ynh) |
 | Docker-registry |  | [Upstream](https://github.com/docker/distribution/) | [Package Draft](https://github.com/plopoyop/docker-registry_ynh) |
 | DockerUI | Deploy applications with Docker |  | [Package Draft](https://github.com/YunoHost-Apps/dockerui_ynh) |
+| [DomainMOD](https://domainmod.org) | Domain portfolio management application | | |
 | [Domoticz](https://domoticz.com) | Home automation system web application |  | [Package Draft](https://github.com/anubister/domoticz_ynh) |
 | Draw.io | Online diagram creation | [Upstream](https://github.com/jgraph/drawio) |  |
 | [Duniter](https://duniter.org) | Participate in the Duniter blockchain |  | [Package Draft](https://github.com/YunoHost-Apps/duniter_ynh) |
@@ -92,7 +93,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Granary |  | [Upstream](https://github.com/snarfed/granary) |  |
 | [Graphhopper](https://www.graphhopper.com/) |  | [Upstream](https://github.com/graphhopper/graphhopper) |  |
 | [Grocy](https://grocy.info/) | Fridge ERP | [Upstream](https://github.com/grocy/grocy) |  |
-| [Guacamole](https://guacamole.apache.org/) | clientless remote desktop gateway |  |  |
+| [Guacamole](https://guacamole.apache.org/) |  |  |  |
 | [Habitica](https://habitica.com/) |  | [Upstream](https://github.com/HabitRPG/habitica) |  |
 | headphones | Automatic music downloader |  | [Package Draft](https://github.com/YunoHost-Apps/headphones_ynh) |
 | Helpy |  | [Upstream](https://github.com/helpyio/helpy) |  |
