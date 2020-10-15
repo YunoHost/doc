@@ -44,7 +44,7 @@ Pour pouvoir envoyer des mails, passer le blocage en « inactif ».
 
 #### Fonction NAS de la Freebox
 
-Attention : la freebox utilise une ancienne version du protocole CIFS qui est maintenant obsolete sur systèmes récents (en clair, ça ne fonctionne plus).
+Attention : la Freebox utilise une ancienne version du protocole CIFS qui est maintenant obsolète sur systèmes récents (en clair, ça ne fonctionne plus).
 
 Il faut installer le paquet `cifs-utils`
 ```bash
