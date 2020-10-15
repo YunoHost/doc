@@ -272,6 +272,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Tracim |  | [Upstream](https://github.com/tracim/tracim) |  |
 | transpay | Interface to receive and manage donations with Stripe |  | [Package Draft](https://github.com/YunoHost-Apps/transpay_ynh) |
 | transwhat | A gateway to WhatsApp from Jabber |  | [Package Draft](https://github.com/Josue-T/transwhat_ynh) |
+| [Trilium Notes](https://github.com/zadam/trilium) | Trilium Notes is a hierarchical note taking application with focus on building large personal knowledge bases. | | |
 | [Tryton](https://www.tryton.org/) | A solid ERP system |  |  |
 | [turtl](https://turtlapp.com/) | A secure collaboratite notebook |  | [Package Draft](https://github.com/YunoHost-Apps/turtl_ynh) |
 | tutao | End-to-end encrypted e-mail client | [Upstream](https://github.com/tutao/tutanota/) | [Package Draft](https://github.com/YunoHost-Apps/tutao_ynh) |
