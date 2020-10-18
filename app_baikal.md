@@ -15,7 +15,7 @@
 
 Baïkal is a server for calendars and address books, which uses the CalDav and CardDav protocol. Baïkal can be synced with a lot of clients, like Thunderbird + Lightning.
 
-**WARNING**: Baïkal will not work if you have installed a **Nextcloud** ( their cardav/caldav functions conflict).
+**WARNING**: Baïkal will not work if you have installed a **Nextcloud** (the Nextcloud CardDav/CalDav functions conflict).
 
 ## Configuration
 
@@ -40,7 +40,7 @@ The new URL to add is:
 
 https://domain.org/baikal/cal.php/calendars/username/default
 
-Be careful to replace "domain.org" by your own domain and the "username" by your user name.
+Be careful to replace "domain.org" with your own domain and the "username" with your username.
 
 ### Connecting to AgenDAV
 
@@ -70,5 +70,5 @@ Now, the adressbook is accessible.
 
  + Website: [www.baikal-server.com](http://www.baikal-server.com/)
  + Official documentation: [sabre.io - baikal](https://sabre.io/baikal/)
- + Application software repository: [github.com - YunoHost-Apps/bikal](https://github.com/YunoHost-apps/baikal_ynh)
- + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/baikal/issues](https://github.com/YunoHost-apps/baikal_ynh/issues)
+ + Apps software repository: [github.com - YunoHost-Apps/bikal](https://github.com/YunoHost-apps/baikal_ynh)
+ + Fix a bug or suggest an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/baikal/issues](https://github.com/YunoHost-apps/baikal_ynh/issues)
