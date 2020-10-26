@@ -162,6 +162,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | nexusoss | Sonatype Nexus Repository manager OSS |  | [Package Draft](https://github.com/YunoHost-Apps/nexusoss_ynh) |
 | Nitter |  | [Upstream](https://github.com/zedeus/nitter) |  |
 | [ntopng](https://www.ntop.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/ntopng_ynh) |
+| [Odoo](https://www.odoo.com/) | An open source ERP and CRM | [Upstream](https://github.com/odoo/odoo) | [Package Draft](https://github.com/YunoHost-Apps/libreerp_ynh) |
 | ofbiz | Apache-OFBiz ERP |  | [Package Draft](https://github.com/nomakaFr/ofbiz_ynh) |
 | OhMyForm |  | [Upstream](https://github.com/ohmyform) |  |
 | Ombi |  | [Upstream](https://github.com/tidusjar/Ombi) |  |
