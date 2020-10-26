@@ -26,7 +26,7 @@
     * [Web-Administrations-Interface](/admin)
     * [SSH](/ssh) and [command-line administration](/commandline)
     * [Benutzer und SSO (Single-Sign-On)](/users)
-    * [Applicationen](/apps_overview)
+    * [Applikationen](/apps_overview)
     * [Domains, DNS und Zertifikate](/domains)
     * [E-Mail](/email)
     * [XMPP](/XMPP)
