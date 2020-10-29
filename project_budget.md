@@ -9,6 +9,7 @@
 
 ## Expected expenses
 
+* Development: 20K€
 * Server renting: 500€
    * VPS Scaleway: 20.33*12: 243.96€/year
    * VPS Digital O. (forum): 172.80€/year
