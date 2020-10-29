@@ -4,15 +4,15 @@
 
 ## Revenus attendus
 
-* Dons via Liberapay : environ 45 €/semaine, soit environ 2340 €/an
-* Subvention de NLNet : 20K €, à utiliser pour la R&D (TODO : publier le plan de projet une fois validé avec NLnet)
+* Dons via Liberapay : 3000€
+* Subvention de NLNet : 20K€
 
 ## Dépenses prévues
 
-* Location Server : ~1000 €
-   * Forum : 14.4 €/mois soit 172.80 €/ans
-   * CI : 20 €/mois (à confirmer) soit 240 €/mois
-   * Migration du serveur *Bearnaise* sur une nouvelle machine : 587.2 €
+* Development : 20K€
+* Location Server : ~500 €
+   * VPS Scaleway: 20.33*12: 243.96€/year
+   * VPS Digital O. (forum): 172.80€/year
 * Noms de domaine : ~150 €
    * nohost.me : 11.99 €HT/ans
    * ynh.fr : 6.99 €HT/ans (doit être confirmer avec frju?)
@@ -21,8 +21,15 @@
    * yunohost.com : 9.99 €HT/ans
    * labriqueinter.net : 12.49 €Ht/ans
    * internetcu.be : 17.99 €HT/ans
-* Communication : ~200 €
-* Déplacements (ex. : aller aux conférences) : ~500 €
+* Communication : ~400 €    
+   * Stickers: 100€
+   * Flyer: 100€
+   * T shirt: 200€
+* Déplacements (ex. : aller aux conférences) : ~700 €    
+   * AG FFDN 2020: 225€ (en tout) 
+   * Event colibris: 150€
+   * FOSDEM ou autre conf: 300€
 * Compte banquaire fees : 7×12 € soit ~100 €
+* Brique Camp: 500€
 
-**Total** : environ 2000 €
+**Balance 2020-2021** : +650 €
