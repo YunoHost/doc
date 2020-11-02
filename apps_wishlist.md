@@ -297,7 +297,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Xibo | A FLOSS digital signage solution | [Upstream](https://github.com/xibosignage) |  |
 | [Xonotic](https://xonotic.org) |  | [Upstream](https://gitlab.com/xonotic) |  |
 | yacy | Free and decentrelized search engine |  | [Package Draft](https://github.com/YunoHost-Apps/yacy_ynh) |
-| [yellowcms](https://datenstrom.se/yellow/) | CMS for simple websites |  | [Package Draft](https://github.com/YunoHost-Apps/yellowcms_ynh) |
 | [Yggdrasil](https://yggdrasil-network.github.io/) |  | [Upstream](https://github.com/yggdrasil-network/yggdrasil-go) |  |
 | youtube-dl-webui | Web interface for youtube-dl |  | [Package Draft](https://github.com/YunoHost-Apps/youtube-dl-webui_ynh) |
 | yunofav | A page of favorite links |  | [Package Draft](https://github.com/YunoHost-Apps/yunofav_ynh) |
