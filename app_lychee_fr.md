@@ -8,7 +8,7 @@
 
 Lychee est un outil de gestion de photos gratuit, qui fonctionne sur votre serveur ou votre espace Web. L'installation est une question de secondes. Téléchargez, gérez et partagez des photos comme à partir d'une application native. Lychee est livré avec tout ce dont vous avez besoin et toutes vos photos sont stockées en toute sécurité.
 
-## ## Liens utiles
+## Liens utiles
 
  + Site web : [lycheeorg.github.io](https://lycheeorg.github.io/)
  + Site de démonstration : [lycheeorg.github.io/demo](https://lycheeorg.github.io/demo/)
