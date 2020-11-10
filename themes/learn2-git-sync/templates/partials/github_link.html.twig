@@ -1,0 +1,55 @@
+{% if theme_config.github.tree  %}
+  {% set git_repo_link_url = theme_config.github.tree %}
+  {% if 'github' in git_repo_link_url %}
+    {% set git_repo_link_icon = "github" %}
+  {% elseif 'gitlab' in git_repo_link_url %}
+    {% set git_repo_link_icon = "gitlab" %}
+  {% elseif 'bitbucket' in git_repo_link_url %}
+    {% set git_repo_link_icon = "bitbucket" %}
+  {% else %}
+   {% set git_repo_link_icon = "git" %}
+  {% endif %}
+  {% if theme_config.github.icon %}
+    {% set git_repo_link_icon = theme_config.github.icon %}
+  {% endif %}
+  {% set git_repo_edit_link_url = git_repo_link_url ~  ('/'~page.filePathClean)|replace({'/user/':'/'}) %}
+  <a class="github-link" href="{{ git_repo_edit_link_url }} " target="_blank">
+  <i class="fa fa-{{ git_repo_link_icon }}"></i>
+  {{ 'THEME_LEARN2_GIT_EDIT_THIS_PAGE'|t }}</a>
+{% else %}
+  {% if not config.plugins['git-sync'].enabled  %}
+    {% set admin_panel_appearance_url = grav.base_url ~ '/admin/plugins/' %}
+    <a class="github-link" href="{{ admin_panel_appearance_url }}" title="{{ 'THEME_LEARN2_GIT_ADD_SETUP_GIT_SYNC_PLUGIN'|t }}">
+    <i class="fa fa-cog" aria-hidden="true"></i>
+    {{ 'THEME_LEARN2_GIT_ADD_SETUP_GIT_SYNC_PLUGIN'|t }}</a>
+  {% else %}
+    {% if config.plugins['git-sync'].enabled and config.plugins['git-sync'].repository is empty %}
+      {% set admin_panel_appearance_url = grav.base_url ~ '/admin/plugins/git-sync' %}
+      <a class="github-link" href="{{ admin_panel_appearance_url }}" title="{{ 'THEME_LEARN2_GIT_SETUP_GIT_SYNC_PLUGIN'|t }}">
+      <i class="fa fa-cog" aria-hidden="true"></i>
+      {{ 'THEME_LEARN2_GIT_SETUP_GIT_SYNC_PLUGIN'|t }}</a>
+    {% else %}
+    {% set git_sync_repo = config.plugins['git-sync'].repository %}
+    {% set git_sync_repo_link = (git_sync_repo | replace({'.git': '/'})) %}
+    {% if 'github' in git_sync_repo_link %}
+      {% set git_repo_link_icon = "github" %}
+      {% set git_repo_edit_link_url = git_sync_repo_link ~ 'blob/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
+    {% elseif 'gitlab' in git_sync_repo_link %}
+      {% set git_repo_link_icon = "gitlab" %}
+      {% set git_repo_edit_link_url = git_sync_repo_link ~ 'blob/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
+    {% elseif 'bitbucket' in git_sync_repo_link %}
+      {% set git_repo_link_icon = "bitbucket" %}
+      {% set git_repo_edit_link_url = git_sync_repo_link ~ 'src/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
+    {% else %}
+	    {% set git_repo_link_icon = "git" %}
+      {% set git_repo_edit_link_url = git_sync_repo_link ~ 'blob/master' ~ (page.filePathClean)|replace({'user/':'/'}) %}
+	  {% endif %}
+      {% if theme_config.github.icon %}
+        {% set git_repo_link_icon = theme_config.github.icon %}
+      {% endif %}
+      <a class="github-link" href="{{ git_repo_edit_link_url }} " title="{{ 'THEME_LEARN2_GIT_EDIT_THIS_PAGE'|t }}" target="_blank">
+      <i class="fa fa-{{ git_repo_link_icon }}"></i>
+      {{ 'THEME_LEARN2_GIT_EDIT_THIS_PAGE'|t }}</a>
+    {% endif %}
+  {% endif %}
+{% endif %}

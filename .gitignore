@@ -1,2 +1,6 @@
 *~
 *.sw[op]
+/*
+!/pages
+!/images
+!/themes
