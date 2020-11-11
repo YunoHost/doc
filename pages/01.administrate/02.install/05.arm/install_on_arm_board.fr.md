@@ -1,4 +1,9 @@
-# Installer YunoHost sur carte ARM
+---
+title: Installer YunoHost sur carte ARM
+template: docs
+taxonomy:
+    category: docs
+---
 
 *Toutes les autres façons d’installer YunoHost sont listées **[ici](/install)**.*
 

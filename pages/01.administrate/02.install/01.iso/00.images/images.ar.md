@@ -1,4 +1,9 @@
-# الصور
+---
+title: الصور
+template: docs
+taxonomy:
+    category: docs
+---
 
 <div id="cards-list">
 </div>

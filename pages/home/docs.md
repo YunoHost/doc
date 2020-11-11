@@ -1,4 +1,9 @@
-# Documentation
+---
+title: Documentation
+template: docs
+taxonomy:
+    category: docs
+---
 
 <p class="lead">
 YunoHost's documentation has 2 different sections:

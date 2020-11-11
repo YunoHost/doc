@@ -1,4 +1,9 @@
-# Docker and YunoHost
+---
+title: Docker and YunoHost
+template: docs
+taxonomy:
+    category: docs
+---
 
 <div class="alert alert-danger">
 <b>

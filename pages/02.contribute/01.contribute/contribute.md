@@ -1,4 +1,9 @@
-# Get involved
+---
+title: Get involved
+template: docs
+taxonomy:
+    category: docs
+---
 
 <p class="lead">
 YunoHost depends exclusively on the participation of people like you.

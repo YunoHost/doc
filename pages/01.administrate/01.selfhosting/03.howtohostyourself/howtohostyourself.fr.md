@@ -1,4 +1,9 @@
-# Choisir son mode d’autohébergement
+---
+title: Choisir son mode dautohébergement
+template: docs
+taxonomy:
+    category: docs
+---
 
 Vous pouvez vous auto-héberger à la maison (sur un petit ordinateur), ou sur un serveur distant. Chaque solution a ses avantages et inconvénients :
 

@@ -1,4 +1,11 @@
-# <img src="/images/pleroma_logo.png" alt="logo de Pleroma"> Pleroma
+---
+title: Pleroma
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/pleroma_logo.png" alt="logo de Pleroma"> Pleroma
 
  - [Découverte de l'interface de Pleroma](#d%C3%A9couverte-de-linterface-de-pleroma)
  - [Logiciels Clients pour mobile et ordinateur](#applications-clients)

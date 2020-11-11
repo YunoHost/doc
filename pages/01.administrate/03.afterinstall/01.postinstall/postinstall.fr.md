@@ -1,4 +1,9 @@
-# Post-Installation
+---
+title: Post-installation
+template: docs
+taxonomy:
+    category: docs
+---
 
 L’étape appelée « **post-installation** » est en fait l’étape de configuration initiale de YunoHost. Il faut l’exécuter après l’**installation** du système en lui-même.
 

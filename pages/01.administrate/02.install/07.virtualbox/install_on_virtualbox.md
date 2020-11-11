@@ -1,4 +1,9 @@
-# Install YunoHost on VitualBox
+---
+title: Install YunoHost on VitualBox
+template: docs
+taxonomy:
+    category: docs
+---
 
 *Find other ways to install YunoHost **[here](/install)**.*
 

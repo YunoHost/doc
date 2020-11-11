@@ -1,4 +1,11 @@
-# Packaging d’applications <img src="/images/yunohost_package.png" width=100/>
+---
+title: Packaging dapplications
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/yunohost_package.png" width=100/>
 
 Ce document a pour but de vous apprendre à packager une application pour YunoHost.
 

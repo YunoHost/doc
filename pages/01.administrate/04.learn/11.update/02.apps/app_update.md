@@ -1,4 +1,9 @@
-# Upgrade your applications
+---
+title: Upgrade your applications
+template: docs
+taxonomy:
+    category: docs
+---
 
 Once you installed applications, you may need to upgrade them, sooner or later. 
 

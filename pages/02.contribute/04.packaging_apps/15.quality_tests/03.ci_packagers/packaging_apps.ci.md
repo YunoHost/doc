@@ -1,4 +1,9 @@
-# Continuous integration
+---
+title: Continuous integration
+template: docs
+taxonomy:
+    category: docs
+---
 
 A continuous integration server is available for any packager willing to test an app with [Package_check](https://github.com/YunoHost/package_check).
 

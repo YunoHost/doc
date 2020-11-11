@@ -1,4 +1,9 @@
-# Rédaction de la documentation
+---
+title: Rédaction de la documentation
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Sur le site
 

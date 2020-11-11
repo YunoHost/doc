@@ -1,4 +1,9 @@
-# Looking for help?
+---
+title: Looking for help?
+template: docs
+taxonomy:
+    category: docs
+---
 
 <h3>Connect to the support chatroom</h3>
 <center>

@@ -1,6 +1,10 @@
-<a class="btn btn-lg btn-default" href="/packaging_apps">Packaging d’application</a>
+---
+title: Gestion des arguments
+template: docs
+taxonomy:
+    category: docs
+---
 
-## Gestion des arguments
 #### Récupérer les arguments du manifeste dans le script d’installation
 Les arguments sont passés au script d’installation dans l’ordre du manifeste. Par exemple pour Roundcube, les arguments `domain` et `path` seront respectivement récupérés via les variables d’environnement ou les paramètres `$1` et `$2` dans le script d’installation.
 

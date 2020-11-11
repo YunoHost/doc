@@ -1,4 +1,11 @@
-# <img src="/images/discourse_logo.svg" height="80px" alt="logo de Discourse"> Discourse
+---
+title: Discourse
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/discourse_logo.svg" height="80px" alt="logo de Discourse"> Discourse
 
 [![Install Discourse with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=discourse) [![Integration level](https://dash.yunohost.org/integration/discourse.svg)](https://ci-apps.yunohost.org/jenkins/job/discourse%20%28Community%29/lastBuild/consoleFull)
 

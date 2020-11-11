@@ -1,4 +1,9 @@
-# SSH
+---
+title: SSH
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Was ist SSH?
 

@@ -1,4 +1,11 @@
-# <img src="/images/cowyo_logo.png" height="80px" alt="Cowyo's logo"> Cowyo
+---
+title: Cowyo
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/cowyo_logo.png" height="80px" alt="Cowyo's logo"> Cowyo
 
 [![Install cowyo with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=cowyo) [![Integration level](https://dash.yunohost.org/integration/cowyo.svg)](https://ci-apps.yunohost.org/ci/apps/cowyo/)
 

@@ -1,4 +1,9 @@
-# YunoHost per a organitzacions sense ànim de lucre
+---
+title: YunoHost per a organitzacions sense ànim de lucre
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Taula de continguts
 * [Introducció](#introduction)

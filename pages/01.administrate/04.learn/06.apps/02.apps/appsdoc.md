@@ -1,3 +1,10 @@
+---
+title: Apps list
+template: docs
+taxonomy:
+    category: docs
+---
+
 - [Adminer](app_adminer)
 - [Airsonic](app_airsonic)
 - [Ampache](app_ampache)

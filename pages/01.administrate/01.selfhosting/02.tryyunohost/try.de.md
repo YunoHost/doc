@@ -1,4 +1,9 @@
-# YunoHost ausprobieren
+---
+title: YunoHost ausprobieren
+template: docs
+taxonomy:
+    category: docs
+---
 
 <div class="alert alert-warning" markdown="1">
 **Hinweis:** Dieser Demo-Server könnte zeitweilig nicht erreichbar sein.

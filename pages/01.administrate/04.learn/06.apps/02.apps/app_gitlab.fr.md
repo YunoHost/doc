@@ -1,4 +1,11 @@
-# <img src="/images/gitlab_logo.svg" height="80px" alt="logo de GitLab"> GitLab
+---
+title: Gitlab
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/gitlab_logo.svg" height="80px" alt="logo de GitLab"> GitLab
 
 [![Install GitLab with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gitlab) [![Integration level](https://dash.yunohost.org/integration/gitlab.svg)](https://dash.yunohost.org/appci/app/gitlab)
 

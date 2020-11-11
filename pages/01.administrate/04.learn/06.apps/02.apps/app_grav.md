@@ -1,4 +1,11 @@
-# <img src="/images/grav_logo.png" width="80px" alt="Grav's logo"> Grav
+---
+title: Grav
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/grav_logo.png" width="80px" alt="Grav's logo"> Grav
 
 [![Install Grav with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=grav) [![Integration level](https://dash.yunohost.org/integration/grav.svg)](https://dash.yunohost.org/appci/app/grav)
 

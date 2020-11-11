@@ -1,4 +1,9 @@
-# YunoHost project organisation
+---
+title: YunoHost project organisation
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Document objective
 

@@ -1,4 +1,9 @@
-# Documentation My_webapp
+---
+title: My_webapp
+template: docs
+taxonomy:
+    category: docs
+---
 
 En complément du Readme.md de l'application, voici des astuces utiles.
 

@@ -1,4 +1,9 @@
-# Proveedores de acceso a Internet
+---
+title: Proveedores de acceso a Internet
+template: docs
+taxonomy:
+    category: docs
+---
 
 <a class="btn btn-lg btn-default" href="/isp_box_config"> Configuración general del router</a>
 

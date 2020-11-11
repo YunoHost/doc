@@ -1,5 +1,11 @@
+---
+title: التنصيب على ديبيان
+template: docs
+taxonomy:
+    category: docs
+---
+
 <div dir="RTL" align="right" style="direction:rtl;text-align:right;">
-# التنصيب على ديبيان
 
 *يمكنكم الإطلاع على طُرق أخرى لتنصيب واي يونوهوست  YunoHost **[هنا](/install)**.*
 

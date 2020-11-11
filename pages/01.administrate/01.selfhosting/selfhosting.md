@@ -1,4 +1,9 @@
-# Self-hosting
+---
+title: Self-hosting
+template: docs
+taxonomy:
+    category: docs
+---
 
 Self-hosting is the activity of having and administrating your own server, typically at home, to host your personal data and services yourself instead of relying exclusively on third-parties. For instance, you can self-host your blog, such that it 'lives' on a machine that you have control of, instead of having it on somebody else's computer (a.k.a. The Cloud) in exchange for money, advertisement or private data.
 

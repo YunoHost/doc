@@ -1,4 +1,9 @@
-# Communication
+---
+title: Communication
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Talks / conf
 

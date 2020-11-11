@@ -1,4 +1,9 @@
-# Noalyss
+---
+title: Noalyss
+template: docs
+taxonomy:
+    category: docs
+---
 
 Logiciel de comptabilité open source développé en PHP.
 

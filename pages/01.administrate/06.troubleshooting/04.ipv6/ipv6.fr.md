@@ -1,4 +1,9 @@
-# Configuration de l’IPv6
+---
+title: Configuration de l'IPv6
+template: docs
+taxonomy:
+    category: docs
+---
 
 L'IPv6 peut fonctionner directement dans certains cas. Mais dans d'autres, ou chez certains hébergeurs spécifiques, vous devez activer l'IPv6 manuellement.
 

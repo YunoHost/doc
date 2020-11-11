@@ -1,4 +1,9 @@
-# Create a development environment with VirtualBox
+---
+title: Create a development environment with VirtualBox
+template: docs
+taxonomy:
+    category: docs
+---
 
 This documentation page aims at explaining how to setup a YunoHost virtual server, using VirtualBox, to work on application packaging.
 

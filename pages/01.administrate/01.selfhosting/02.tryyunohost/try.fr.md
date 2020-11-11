@@ -1,4 +1,9 @@
-# Essayer YunoHost
+---
+title: Essayer YunoHost
+template: docs
+taxonomy:
+    category: docs
+---
 
 <div class="alert alert-warning" markdown="1">
 **Note :** Cette démo peut cesser de fonctionner de temps en temps.

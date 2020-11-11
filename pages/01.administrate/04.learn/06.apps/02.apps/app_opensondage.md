@@ -1,4 +1,11 @@
-# <img src="/images/opensondage_logo.png" height="80px" alt="opensondage's logo"> Opensondage
+---
+title: Opensondage
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/opensondage_logo.png" height="80px" alt="opensondage's logo"> Opensondage
 
 [![Install Opensondage with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=opensondage) [![Integration level](https://dash.yunohost.org/integration/opensondage.svg)](https://dash.yunohost.org/appci/app/opensondage)
 

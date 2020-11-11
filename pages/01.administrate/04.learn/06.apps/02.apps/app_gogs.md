@@ -1,4 +1,11 @@
-# <img src="/images/gogs_logo.svg" height="80px" alt="Gogs's logo"> Gogs
+---
+title: Gogs
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/gogs_logo.svg" height="80px" alt="Gogs's logo"> Gogs
 
 [![Install Gogs with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gogs) [![Integration level](https://dash.yunohost.org/integration/gogs.svg)](https://dash.yunohost.org/appci/app/gogs)
 

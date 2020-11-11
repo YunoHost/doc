@@ -1,4 +1,9 @@
-# Shaarli
+---
+title: Shaarli
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Présentation
 

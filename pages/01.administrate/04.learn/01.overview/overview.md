@@ -1,4 +1,9 @@
-# Overview of the YunoHost ecosystem
+---
+title: Overview of the YunoHost ecosystem
+template: docs
+taxonomy:
+    category: docs
+---
  
 This page provide an overview of the ecosystem of a YunoHost server. While this overview contains several approximations, the purpose here is to introduce the global picture before digging into the different aspects.
 

@@ -1,4 +1,9 @@
-# Diagnostic du bon fonctionnement de YunoHost
+---
+title: Diagnostic du bon fonctionnement de YunoHost
+template: docs
+taxonomy:
+    category: docs
+---
 
 Pour vérifier que tous les aspects critiques de votre serveur sont correctement
 configurés, il est recommandé d'utiliser le système de diagnostic disponible

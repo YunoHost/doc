@@ -1,4 +1,9 @@
-# Emails
+---
+title: Emails
+template: docs
+taxonomy:
+    category: docs
+---
 
 YunoHost integra un ecosistema completo de servidor mail, permitiéndote de alojar tu propia mensajería electrónica, y pues de tener tus propias direcciones email en `algo@tu.dominio.tld`.
 

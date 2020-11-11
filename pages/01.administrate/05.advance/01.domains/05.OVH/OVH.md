@@ -1,4 +1,9 @@
-# DNS Configuration with OVH
+---
+title: DNS Configuration with OVH
+template: docs
+taxonomy:
+    category: docs
+---
 
 Let's see how to properly set the DNS redirections with [OVH](http://www.ovh.com).
 

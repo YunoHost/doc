@@ -1,4 +1,9 @@
-# Write documentation
+---
+title: Write documentation
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Online
 

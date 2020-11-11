@@ -1,4 +1,9 @@
-# Exchange files with your server using a graphical interface
+---
+title: Exchange files with your server using a graphical interface
+template: docs
+taxonomy:
+    category: docs
+---
 
 This page explains how to exchange files (backup archives, music, pictures,
 movies...) with your server using a graphical interface for the (S)FTP protocol. 

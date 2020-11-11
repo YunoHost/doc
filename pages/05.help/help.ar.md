@@ -1,4 +1,9 @@
-# <div dir=rtl>هل تبحث عن مساعدة ؟</div>
+---
+title: هل تبحث عن مساعدة
+template: docs
+taxonomy:
+    category: docs
+---
 
 <h3 dir="rtl">إتصل بغرفة المساعدة</h3>
 <center>

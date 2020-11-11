@@ -1,4 +1,9 @@
-# NGINX configuration
+---
+title: NGINX configuration
+template: docs
+taxonomy:
+    category: docs
+---
 
 This tutorial aim to help setup NGINX configuration for application packaging.
 

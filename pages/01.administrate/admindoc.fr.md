@@ -1,4 +1,9 @@
-# Documentation pour les administrateurs YunoHost
+---
+title: Documentation pour les administrateurs YunoHost
+template: docs
+taxonomy:
+    category: docs
+---
 
 * Découvrir l'auto-hébergement
     * [Qu'est-ce que l'auto-hébergement](/selfhosting)

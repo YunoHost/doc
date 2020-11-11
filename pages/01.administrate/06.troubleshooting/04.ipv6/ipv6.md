@@ -1,4 +1,9 @@
-# Setting up IPv6
+---
+title: Setting up IPv6
+template: docs
+taxonomy:
+    category: docs
+---
 
 IPv6 may work out of the box in many cases. But in some cases or some specific provider, you may need to tweak things manually to enable IPv6.
 

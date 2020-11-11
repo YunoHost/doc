@@ -1,4 +1,9 @@
-# Users and the SSO
+---
+title: Users and the SSO
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Users
 

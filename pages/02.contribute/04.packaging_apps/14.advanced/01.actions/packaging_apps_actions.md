@@ -1,4 +1,9 @@
-# Applications Actions
+---
+title: Actions
+template: docs
+taxonomy:
+    category: docs
+---
 
 <div class="alert alert-warning">For now, all those features are <b>EXPERIMENTAL</b>
 and aren't ready for production and are probably going to change again, if you

@@ -1,4 +1,9 @@
-# Changing the administration password
+---
+title: Changing the administration password
+template: docs
+taxonomy:
+    category: docs
+---
 
 You may want to change your administrator password for security reason or because you forgot it.
 

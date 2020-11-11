@@ -1,4 +1,9 @@
-# Installazione su Debian
+---
+title: Installazione su Debian
+template: docs
+taxonomy:
+    category: docs
+---
 
 *Altri sistemi per installare Debian **[qui](/install)**.*
 

@@ -1,4 +1,11 @@
-# <img src="/images/wekan_logo.svg" height="80px" alt="logo de wekan"> Wekan
+---
+title: Wekan
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/wekan_logo.svg" height="80px" alt="logo de wekan"> Wekan
 
 [![Install Wekan with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=wekan) [![Integration level](https://dash.yunohost.org/integration/wekan.svg)](https://dash.yunohost.org/appci/app/wekan)
 

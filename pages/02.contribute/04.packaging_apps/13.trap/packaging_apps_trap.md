@@ -1,4 +1,9 @@
-# Trap usage
+---
+title: Trap
+template: docs
+taxonomy:
+    category: docs
+---
 
 Trap is an internal shell command used to capture the output signals of commands executed in the current shell and its subshells.
 

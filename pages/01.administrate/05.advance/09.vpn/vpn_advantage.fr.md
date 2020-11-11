@@ -1,4 +1,9 @@
-# Avantage d’un VPN pour l’auto-hébergement
+---
+title: Avantage dun VPN pour lauto-hébergement
+template: docs
+taxonomy:
+    category: docs
+---
 
 L'installation d'un serveur chez soi étant une pratique peu courante, la plupart des connexions Internet fournies aux particuliers sont inadaptées à sa mise en pratique. Un VPN respectant la neutralité du net et fournissant une adresse IPv4 fixe et des adresses IPv6 peut permettre de contourner certaines limitations ou certaines difficultés.
 

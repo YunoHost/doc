@@ -1,4 +1,9 @@
-# SPIP for YunoHost
+---
+title: SPIP
+template: docs
+taxonomy:
+    category: docs
+---
 
 #### SPIP is what?
 

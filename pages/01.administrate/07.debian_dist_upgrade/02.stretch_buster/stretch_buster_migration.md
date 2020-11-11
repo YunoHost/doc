@@ -1,4 +1,9 @@
-# Migrating an existing instance to Buster
+---
+title: Migrating an existing instance to Buster
+template: docs
+taxonomy:
+    category: docs
+---
 
 This page is dedicated to help you migrating an instance from YunoHost 3.8.x (running on Debian Stretch/9.x) to YunoHost 4.x (running on Debian Buster/10.x).
 

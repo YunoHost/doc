@@ -1,4 +1,9 @@
-# DNS zone configuration
+---
+title: DNS zone configuration
+template: docs
+taxonomy:
+    category: docs
+---
 
 DNS (domain name system) is a system that converts human-readable addresses
 (domain names) into machine-understandable addresses (IP). For your server to be

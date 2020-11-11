@@ -1,4 +1,9 @@
-# Documentation
+---
+title: Documentation
+template: docs
+taxonomy:
+    category: docs
+---
 
 <p class="lead">
 Die YunoHost Dokumentation ist in 2 Bereiche aufgeteilt:

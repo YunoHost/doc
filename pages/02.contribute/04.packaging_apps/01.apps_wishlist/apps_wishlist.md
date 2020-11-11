@@ -1,4 +1,9 @@
-# Apps wishlist
+---
+title: Apps wishlist
+template: docs
+taxonomy:
+    category: docs
+---
 
 The following list is a compiled wishlist of applications that would be nice-to-have.
 

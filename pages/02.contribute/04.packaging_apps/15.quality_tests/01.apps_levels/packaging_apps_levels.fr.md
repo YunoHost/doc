@@ -1,4 +1,9 @@
-# Niveaux de qualité des packages d’applications YunoHost
+---
+title: Niveaux de qualité des packages dapplications YunoHost
+template: docs
+taxonomy:
+    category: docs
+---
 
 Afin de faciliter le packaging d'applications par des étapes successives à atteindre, chaque package est affublé d'un niveau de qualité, de 0 à 10.  
 Un package doit satisfaire un certain nombre de critères pour atteindre chaque niveau. De plus pour atteindre un niveau, le package doit avoir préalablement atteint le niveau précédent.

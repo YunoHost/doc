@@ -1,4 +1,9 @@
-# How to update the system
+---
+title: Update the system
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## From the webadmin
 

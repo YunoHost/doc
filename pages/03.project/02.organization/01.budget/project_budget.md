@@ -1,4 +1,9 @@
-# Project budget
+---
+title: Project budget
+template: docs
+taxonomy:
+    category: docs
+---
 
 # Estimated budget for 2020/2021
 

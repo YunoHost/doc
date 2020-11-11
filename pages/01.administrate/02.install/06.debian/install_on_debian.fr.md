@@ -1,4 +1,9 @@
-# Installation sur Debian
+---
+title: Installation sur Debian
+template: docs
+taxonomy:
+    category: docs
+---
 
 *Trouvez d’autres moyens d’installer YunoHost **[ici](/install)**.*
 

@@ -1,4 +1,9 @@
-# Installer YunoHost sur VirtualBox
+---
+title: Installer YunoHost sur VirtualBox
+template: docs
+taxonomy:
+    category: docs
+---
 
 *Trouvez d’autres moyens d’installer YunoHost **[ici](/install)**.*
 

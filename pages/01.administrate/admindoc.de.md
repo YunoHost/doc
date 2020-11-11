@@ -1,4 +1,9 @@
-# Administrator-Dokumentation
+---
+title: Administrator-Dokumentation
+template: docs
+taxonomy:
+    category: docs
+---
 
 * Self-Hosting entdecken
     * [Was ist Self-Hosting](/selfhosting)

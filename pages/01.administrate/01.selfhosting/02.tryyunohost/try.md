@@ -1,4 +1,9 @@
-# Try YunoHost
+---
+title: Try YunoHost
+template: docs
+taxonomy:
+    category: docs
+---
 
 <div class="alert alert-warning" markdown="1">
 **Note:** This demo server could be down from time to time.

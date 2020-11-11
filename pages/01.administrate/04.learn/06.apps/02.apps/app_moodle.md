@@ -1,4 +1,11 @@
-# <img src="/images/moodle_logo.svg" height="80px" alt="moodle's logo"> Moodle
+---
+title: Moodle
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/moodle_logo.svg" height="80px" alt="moodle's logo"> Moodle
 
 [![Install Moodle with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=moodle) [![Integration level](https://dash.yunohost.org/integration/moodle.svg)](https://dash.yunohost.org/appci/app/moodle)
 

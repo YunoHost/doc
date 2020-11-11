@@ -1,4 +1,9 @@
-# Pre-installed images
+---
+title: Pre-installed images
+template: docs
+taxonomy:
+    category: docs
+---
 
 <span class="javascriptDisclaimer">
 This page requires Javascript enabled to display properly :s.

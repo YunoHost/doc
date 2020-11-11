@@ -1,4 +1,9 @@
-# Radicale
+---
+title: Radicale
+template: docs
+taxonomy:
+    category: docs
+---
 
 Radicale est un serveur de calendrier et de contact CalDAV/CardDAV. Il ne dispose pas d’interface graphique d’administration.
 

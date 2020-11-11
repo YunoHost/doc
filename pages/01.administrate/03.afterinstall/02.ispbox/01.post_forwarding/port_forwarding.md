@@ -1,4 +1,9 @@
-# Port forwarding
+---
+title: Port forwarding
+template: docs
+taxonomy:
+    category: docs
+---
 
 The sketch below tries to briefly summarize the role and necessity of port
 forwarding when setting up a server at home.

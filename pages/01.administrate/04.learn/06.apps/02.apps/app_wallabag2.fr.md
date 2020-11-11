@@ -1,4 +1,11 @@
-# <img src="/images/wallabag2_logo.svg" height="80px" alt="logo de wallabag2"> Wallabag2
+---
+title: Wallabag2
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/wallabag2_logo.svg" height="80px" alt="logo de wallabag2"> Wallabag2
 
 [![Install Wallabag2 with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=wallabag2) [![Integration level](https://dash.yunohost.org/integration/wallabag2.svg)](https://dash.yunohost.org/appci/app/wallabag2)
 

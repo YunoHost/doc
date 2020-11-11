@@ -1,4 +1,9 @@
-## Salas de chat
+---
+title: Salas de chat
+template: docs
+taxonomy:
+    category: docs
+---
 
 El proyecto YunoHost utiliza salas de chat como medio de communicación.
 

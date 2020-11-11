@@ -1,6 +1,9 @@
-<a class="btn btn-lg btn-default" href="/packaging_apps">Packaging d’application</a>
-
-## Les scripts
+---
+title: Scripts
+template: docs
+taxonomy:
+    category: docs
+---
 
 Un paquet YunoHost doit contenir cinq scripts Shell : `install`, `remove`, `upgrade`, `backup` et `restore`. Un 6ème script `change_url` peut aussi être ajouté de façon optionnelle.
 Ces scripts seront exécutés en tant que `root` sur les serveurs YunoHost.

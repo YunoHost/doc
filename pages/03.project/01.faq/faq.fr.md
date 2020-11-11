@@ -1,4 +1,9 @@
-# Foire aux questions
+---
+title: Foire aux questions
+template: docs
+taxonomy:
+    category: docs
+---
 
 #### Sous quelle licence est distribué YunoHost ?
 

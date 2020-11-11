@@ -1,4 +1,11 @@
-# <img src="/images/bludit_logo.png" width="80px" alt="logo de Bludit> Bludit
+---
+title: Bludit 
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/bludit_logo.png" width="80px" alt="logo de Bludit> Bludit
 
 [![Install Bludit with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=bludit) [![Integration level](https://dash.yunohost.org/integration/bludit.svg)](https://dash.yunohost.org/appci/app/bludit)
 

@@ -1,4 +1,9 @@
-# Administrator web interface
+---
+title: Administrator web interface
+template: docs
+taxonomy:
+    category: docs
+---
 
 YunoHost has an administrator web interface. The other way to administrate your YunoHost install is through the [command line](/commandline).
 

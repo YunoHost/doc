@@ -1,4 +1,11 @@
-# <img src="/images/etherpad_mypads_logo.svg" height="80px" alt="Etherpad's logo"> Etherpad (with MyPads's plugin)
+---
+title: Etherpad with MyPads plugin
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/etherpad_mypads_logo.svg" height="80px" alt="Etherpad's logo"> Etherpad (with MyPads plugin)
 
 [![Install Etherpad with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=etherpad_mypads) [![Integration level](https://dash.yunohost.org/integration/etherpad_mypads.svg)](https://dash.yunohost.org/appci/app/etherpad_mypads)
 

@@ -1,4 +1,11 @@
-# <img src="/images/yunohost_package.png" height="80px" alt="Package"> Calibre-Web
+---
+title: Calibre-web
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/yunohost_package.png" height="80px" alt="Package"> Calibre-Web
 
 [![Install calibreweb with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=calibreweb) [![Integration level](https://dash.yunohost.org/integration/calibreweb.svg)](https://ci-apps.yunohost.org/jenkins/job/calibreweb%20%28Community%29/lastBuild/consoleFull)
 

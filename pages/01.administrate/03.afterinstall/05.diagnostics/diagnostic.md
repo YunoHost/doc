@@ -1,4 +1,9 @@
-# Diagnose YunoHost functioning
+---
+title: Diagnose YunoHost functioning
+template: docs
+taxonomy:
+    category: docs
+---
 
 To diagnose that all critical aspects of your server are properly configured,
 you should run a diagnosis from the webadmin in the "Diagnosis" section. (This

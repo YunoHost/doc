@@ -1,4 +1,9 @@
-#Mettre à jour ses applications
+---
+title: Mettre à jour ses applications
+template: docs
+taxonomy:
+    category: docs
+---
 
 Une fois que vous avez installé des applications, il est nécessaire de les mettre à jour. Plusieurs méthodes existent et sont détaillées ci-dessous.
 

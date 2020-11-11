@@ -1,4 +1,9 @@
-# Organisation du projet YunoHost
+---
+title: Organisation du projet YunoHost
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Objectif du document
 Ce document a pour objectif de permettre aux contributeurs de se sentir légitimes d’effectuer une contribution dans le projet YunoHost avec un avis collectif. Il vise également à renforcer le projet en le structurant autour de groupes de travail autonomes pouvant résister au départ ou à l'absence de certains contributeurs.

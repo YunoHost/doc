@@ -1,4 +1,9 @@
-# Personnaliser l’apparence du portail utilisateur
+---
+title: Personnaliser lapparence du portail utilisateur
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Utiliser un thème
 

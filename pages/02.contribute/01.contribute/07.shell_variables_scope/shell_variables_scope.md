@@ -1,4 +1,9 @@
-### General scope of variables
+---
+title: General scope of variables
+template: docs
+taxonomy:
+    category: docs
+---
 
 Variables exists for the current shell and its children only.  
 Another script executed from the script is not a child, it's another shell which herited only the environment variables from its caller script, not its globals or locals variables.

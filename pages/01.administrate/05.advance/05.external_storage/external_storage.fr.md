@@ -1,4 +1,9 @@
-# Ajouter un stockage externe à son serveur
+---
+title: Ajouter un stockage externe à son serveur
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Introduction
 

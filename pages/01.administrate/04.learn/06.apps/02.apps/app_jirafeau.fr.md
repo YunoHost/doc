@@ -1,4 +1,11 @@
-# <img src="/images/Jirafeau_logo.jpg" width="80px" alt="logo de Jirafeau"> Jirafeau
+---
+title: Jirafeau
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/Jirafeau_logo.jpg" width="80px" alt="logo de Jirafeau"> Jirafeau
 
 [![Install Jirafeau with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=jirafeau) [![Integration level](https://dash.yunohost.org/integration/jirafeau.svg)](https://dash.yunohost.org/appci/app/jirafeau)
 

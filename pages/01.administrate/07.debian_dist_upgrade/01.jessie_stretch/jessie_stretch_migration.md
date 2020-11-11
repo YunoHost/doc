@@ -1,4 +1,9 @@
-# Migrating an existing instance to Stretch
+---
+title: Migrating an existing instance to Stretch
+template: docs
+taxonomy:
+    category: docs
+---
 
 This page is dedicated to help you migrating an instance from YunoHost 2.7.x (running on Debian Jessie/8.x) to YunoHost 3.0 (running on Debian Stretch/9.x).
 

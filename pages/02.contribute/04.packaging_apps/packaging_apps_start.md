@@ -1,4 +1,9 @@
-# Introduction to packaging
+---
+title: Introduction to packaging
+template: docs
+taxonomy:
+    category: docs
+---
 
 This documentation is here is to provide all the basic concepts and vocabulary needed to understand app packaging. eg: shell, parsing, system administration...
 

@@ -1,4 +1,9 @@
-# Configuration DNS avec OVH
+---
+title: Configuration DNS avec OVH
+template: docs
+taxonomy:
+    category: docs
+---
 
 Nous allons voir comment configurer le DNS avec [OVH](http://www.ovh.com).
 

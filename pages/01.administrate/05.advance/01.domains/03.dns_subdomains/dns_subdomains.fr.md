@@ -1,4 +1,9 @@
-## DNS et sous-domaines pour les applications
+---
+title: DNS et sous-domaines pour les applications
+template: docs
+taxonomy:
+    category: docs
+---
 
 ### Sous-domaines
 

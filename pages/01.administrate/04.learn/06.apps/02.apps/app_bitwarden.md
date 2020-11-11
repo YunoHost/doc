@@ -1,4 +1,11 @@
-# <img src="/images/bitwarden_logo.png" width="80px" alt="Bitwarden's logo"> Bitwarden
+---
+title: Bitwarden
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/bitwarden_logo.png" width="80px" alt="Bitwarden's logo"> Bitwarden
 
 [![Install Bitwarden with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=bitwarden) [![Integration level](https://dash.yunohost.org/integration/bitwarden.svg)](https://dash.yunohost.org/appci/app/bitwarden)
 

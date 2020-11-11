@@ -1,4 +1,9 @@
-# Budget du projet
+---
+title: Budget du projet
+template: docs
+taxonomy:
+    category: docs
+---
 
 # Budget prévisionnel pour 2019/2020
 

@@ -1,4 +1,9 @@
-## Salons de discussions
+---
+title: Salons de discussions
+template: docs
+taxonomy:
+    category: docs
+---
 
 Parmi d’autres outils, le projet YunoHost se sert de salons de discussions pour communiquer.
 

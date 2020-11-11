@@ -1,4 +1,9 @@
-# Conseil généraux
+---
+title: Conseil généraux
+template: docs
+taxonomy:
+    category: docs
+---
 
 Cette page énumère quelques conseils et lignes directrices que tout administrateur de YunoHost devrait connaître pour prendre soin de son serveur :).
 

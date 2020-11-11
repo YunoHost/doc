@@ -1,4 +1,9 @@
-# Self-Hosting
+---
+title: Self-Hosting
+template: docs
+taxonomy:
+    category: docs
+---
 
 Self-Hosting ist das Hosten von Daten oder Software auf eigener IT-Infrastruktur.
 Ihren eigenen Server zu Hause zu haben und zu verwalten, um Ihre persönlichen Daten und Dienste selbst zu hosten, anstatt sich ausschließlich auf Dritte zu verlassen. Beispielsweise können Sie Ihren Blog selbst hosten, sodass er auf einem Computer "lebt", über den Sie die Kontrolle haben, anstatt ihn im Austausch gegen Geld, Werbung oder private Daten auf dem Computer eines anderen Benutzers (a.k.a. The Cloud) zu haben.

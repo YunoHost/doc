@@ -1,4 +1,9 @@
-# Configuration de la zone DNS
+---
+title: Configuration de la zone DNS
+template: docs
+taxonomy:
+    category: docs
+---
 
 DNS (système de nom de domaine) est un élément essentiel d'Internet qui permet
 de convertir des adresses compréhensible par les êtres humains (les noms de

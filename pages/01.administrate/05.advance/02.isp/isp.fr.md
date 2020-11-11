@@ -1,4 +1,9 @@
-# Fournisseurs d’accès à Internet
+---
+title: Fournisseurs daccès à Internet
+template: docs
+taxonomy:
+    category: docs
+---
 
 <a class="btn btn-lg btn-default" href="/isp_box_config"> Configuration générale box</a>
 

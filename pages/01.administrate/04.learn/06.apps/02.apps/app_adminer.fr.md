@@ -1,4 +1,11 @@
-# <img src="/images/adminer_logo.png" height="80px" alt="logo d'Adminer"> Adminer
+---
+title: Adminer
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/adminer_logo.png" height="80px" alt="logo d'Adminer"> Adminer
 
 [![Install Adminer with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=adminer) [![Integration level](https://dash.yunohost.org/integration/adminer.svg)](https://dash.yunohost.org/appci/app/adminer)
 

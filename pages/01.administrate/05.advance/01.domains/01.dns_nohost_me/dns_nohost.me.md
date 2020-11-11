@@ -1,4 +1,9 @@
-# Nohost.me domains
+---
+title: Nohost.me domains
+template: docs
+taxonomy:
+    category: docs
+---
 
 In order to make self-hosting as accessible as possible, the YunoHost Project provides a *free* and *automatically configured* domain name service. By using this service, you won't have to [configure DNS records](/dns_config) yourself, which can be tedious and technical.
 

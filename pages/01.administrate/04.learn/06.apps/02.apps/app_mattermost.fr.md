@@ -1,4 +1,11 @@
-# <img src="/images/mattermost_logo.svg" height="80px" alt="logo de Mattermost"> Mattermost
+---
+title: Mattermost
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/mattermost_logo.svg" height="80px" alt="logo de Mattermost"> Mattermost
 
 [![Install Mattermost with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mattermost) [![Integration level](https://dash.yunohost.org/integration/mattermost.svg)](https://dash.yunohost.org/appci/app/mattermost)
 

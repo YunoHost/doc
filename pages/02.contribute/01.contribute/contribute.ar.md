@@ -1,4 +1,9 @@
-# <div dir="rtl">المساهمة</div>
+---
+title: المساهمة
+template: docs
+taxonomy:
+    category: docs
+---
 
 <p dir="rtl" class="lead">
 إنّ مصير واي يونوهوست YunoHost يُقرّره أناس و أنتم مِن بين هؤلاء

@@ -1,4 +1,9 @@
-# Packing Applications: Good Practise Guidelines
+---
+title: Packing Applications: Good Practise Guidelines
+template: docs
+taxonomy:
+    category: docs
+---
 
 <div class="alert alert-danger">
 <b>

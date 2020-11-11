@@ -1,4 +1,9 @@
-# Administrator documentation
+---
+title: Administrator documentation
+template: docs
+taxonomy:
+    category: docs
+---
 
 * Discovering self-hosting
     * [What is Self-hosting](/selfhosting)

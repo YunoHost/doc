@@ -1,4 +1,9 @@
-# Webtrees
+---
+title: Webtrees
+template: docs
+taxonomy:
+    category: docs
+---
 
 webtrees is the web's leading online collaborative genealogy application.
 

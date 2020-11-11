@@ -1,4 +1,11 @@
-# Yunofav: (unofficial) Page of favorite links for YunoHost
+---
+title: Yunofav
+template: docs
+taxonomy:
+    category: docs
+---
+
+### Page of favorite links for YunoHost
 
 homepage: https://github.com/YunoHost-Apps/yunofav_ynh
 

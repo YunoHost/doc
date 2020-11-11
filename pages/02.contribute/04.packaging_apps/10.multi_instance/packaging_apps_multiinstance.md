@@ -1,6 +1,10 @@
-<a class="btn btn-lg btn-default" href="/packaging_apps">Application packaging</a>
+---
+title: Multi-instances
+template: docs
+taxonomy:
+    category: docs
+---
 
-### Multi-instance
 Multi-instance is application capacity to be installed several times.
 
 #### Scripts

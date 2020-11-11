@@ -1,4 +1,11 @@
-# <img src="/images/phpsysinfo_logo.png" height="80px" alt="logo de phpsysinfo"> phpSysInfo
+---
+title: phpSysInfo
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/phpsysinfo_logo.png" height="80px" alt="logo de phpsysinfo"> phpSysInfo
 
 [![Install phpSysInfo with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=phpsysinfo) [![Integration level](https://dash.yunohost.org/integration/phpsysinfo.svg)](https://dash.yunohost.org/appci/app/phpsysinfo)
 

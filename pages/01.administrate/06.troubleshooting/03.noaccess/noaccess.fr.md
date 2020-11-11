@@ -1,4 +1,9 @@
-# Récupérer l’accès à son YunoHost
+---
+title: Récupérer laccès à son YunoHost
+template: docs
+taxonomy:
+    category: docs
+---
 
 Il existe de nombreuses causes pouvant empêcher totalement ou partiellement d'accéder en administrateur à un serveur YunoHost. Dans de nombreux cas, un des moyens d'accès est inaccessible, mais les autres sont fonctionnels.
 

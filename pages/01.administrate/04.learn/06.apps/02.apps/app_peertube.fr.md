@@ -1,4 +1,11 @@
-# <img src="/images/peertube_logo.svg" height="80px" alt="logo de peertube"> PeerTube
+---
+title: PeerTube
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/peertube_logo.svg" height="80px" alt="logo de peertube"> PeerTube
 
 [![Install PeerTube with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=peertube) [![Integration level](https://dash.yunohost.org/integration/peertube.svg)](https://dash.yunohost.org/appci/app/peertube)
 

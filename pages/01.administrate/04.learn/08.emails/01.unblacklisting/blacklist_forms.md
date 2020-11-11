@@ -1,4 +1,9 @@
-# Blacklist forms
+---
+title: Unblacklisting forms
+template: docs
+taxonomy:
+    category: docs
+---
 
 It could happen sometimes that your IP is blacklisted by some email provider, or anti-spam services.
 

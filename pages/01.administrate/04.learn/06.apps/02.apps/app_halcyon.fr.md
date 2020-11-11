@@ -1,4 +1,11 @@
-# <img src="/images/halcyon_logo.png" width="80px" alt="logo de Halcyon"> Halcyon
+---
+title: Halcyon
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/halcyon_logo.png" width="80px" alt="logo de Halcyon"> Halcyon
 
 [![Install Halcyon with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=halcyon) [![Integration level](https://dash.yunohost.org/integration/halcyon.svg)](https://dash.yunohost.org/appci/app/halcyon)
 

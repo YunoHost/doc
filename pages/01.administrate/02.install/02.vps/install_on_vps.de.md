@@ -1,4 +1,9 @@
-# Installation auf einem dedizierten Server
+---
+title: Installation auf einem dedizierten Server
+template: docs
+taxonomy:
+    category: docs
+---
 
 *Andere Wege Yunohost zu installieren findest Du  **[hier](/install)**.*
 

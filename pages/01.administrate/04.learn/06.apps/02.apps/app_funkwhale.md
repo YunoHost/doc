@@ -1,4 +1,11 @@
-# <img src="/images/funkwhale_logo.png" width="80px" alt="Funkwhale's logo"> Funkwhale
+---
+title: Funkwhale
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/funkwhale_logo.png" width="80px" alt="Funkwhale's logo"> Funkwhale
 
 [![Install Funkwhale with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=funkwhale) [![Integration level](https://dash.yunohost.org/integration/funkwhale.svg)](https://dash.yunohost.org/appci/app/funkwhale)
 

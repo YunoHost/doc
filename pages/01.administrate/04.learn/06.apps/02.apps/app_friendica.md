@@ -1,4 +1,11 @@
-# <img src="/images/friendica_logo.svg" height="80px" alt="friendica's logo"> Friendica
+---
+title: Friendica
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/friendica_logo.svg" height="80px" alt="friendica's logo"> Friendica
 
 [![Install friendica with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=friendica) [![Integration level](https://dash.yunohost.org/integration/friendica.svg)](https://dash.yunohost.org/appci/app/friendica)
 

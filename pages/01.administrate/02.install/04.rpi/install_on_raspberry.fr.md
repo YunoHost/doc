@@ -1,4 +1,9 @@
-# Installer YunoHost sur Raspberry Pi
+---
+title: Installer YunoHost sur Raspberry Pi
+template: docs
+taxonomy:
+    category: docs
+---
 
 *Toutes les autres façons d’installer YunoHost sont listées **[ici](/install)**.*
 

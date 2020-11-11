@@ -1,4 +1,9 @@
-# Administration depuis l’API ou une application externe
+---
+title: Administration depuis l'API ou une application externe
+template: docs
+taxonomy:
+    category: docs
+---
 
 Toutes les actions exécutables en ligne de commande le sont également via une API. L’API est accessible à l’adresse https://votre.serveur/yunohost/api.
 Pour le moment, il n'existe pas de documentation des différentes routes... mais vous pouvez trouver l'actionmap [ici](https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/actionsmap/yunohost.yml) (en particulier les clefs `api`)

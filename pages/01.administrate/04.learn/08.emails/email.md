@@ -1,4 +1,9 @@
-# Emails
+---
+title: Emails
+template: docs
+taxonomy:
+    category: docs
+---
 
 YunoHost comes with a complete mail stack allowing you to host your own email server, and therefore to have your own email addresses in `something@your.domain.tld`.
 

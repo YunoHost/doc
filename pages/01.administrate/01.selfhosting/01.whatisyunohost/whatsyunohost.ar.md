@@ -1,4 +1,9 @@
-#<div dir="rtl">ماذا نعني بـ واي يونوهوست YunoHost ؟</div>
+---
+title: ماذا نعني بـ واي يونوهوست YunoHost 
+template: docs
+taxonomy:
+    category: docs
+---
 
 <div dir="rtl">
 واي يونوهوست YunoHost هو **نظام لتشغيل الخوادم** صُمِّم لتسهيل الإستضافة الذاتية لخدمات الإنترنت.

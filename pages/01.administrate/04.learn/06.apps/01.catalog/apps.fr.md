@@ -1,4 +1,9 @@
-# Catalogue d’applications
+---
+title: Catalogue dapplications
+template: docs
+taxonomy:
+    category: docs
+---
 
 <span class="javascriptDisclaimer">
 Cette page requiert que JavaScript soit activé pour s'afficher correctement :s.

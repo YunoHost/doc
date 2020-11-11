@@ -1,4 +1,9 @@
-# YunoHost per organizacion sens tòca lucrativa
+---
+title: YunoHost per organizacion sens tòca lucrativa
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Ensenhador
 * [Introduccion](#introduccion) 

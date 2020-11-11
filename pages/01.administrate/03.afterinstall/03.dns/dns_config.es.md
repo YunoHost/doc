@@ -1,4 +1,9 @@
-# Configuración de la zona DNS
+---
+title: Configuración de la zona DNS
+template: docs
+taxonomy:
+    category: docs
+---
 
 DNS (sistema de nombre de dominios) es un elemento esencial de Internet que permite convertir direcciones comprensibles por seres humanos (los nombres de dominio) en direcciones comprensibles por la máquina (los IPs). Para que tu servidor esté fácilemente por otros seres humanos, y para que servicios como el mail funcionen correctamente, es preciso configurar la zona DNS de tu dominio.
 

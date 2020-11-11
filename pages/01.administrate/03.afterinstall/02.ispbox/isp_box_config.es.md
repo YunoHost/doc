@@ -1,4 +1,9 @@
-# Configurar la redirección de los puertos
+---
+title: Configurar la redirección de los puertos
+template: docs
+taxonomy:
+    category: docs
+---
 
 Si te estás auto-alojando en casa y sin VPN, tienes que redirigirse los puertos de tu router (caja/box). Si quieres una explicación sencilla de lo que es y por qué necesitas redirigir los puertos, puedes echar un vistazo a [esta página](/port_forwarding). [Esta página](https://www.testdevelocidad.es/configuraciones/abrir-correctamente-los-puertos-router/) también propone explicaciones detalladas sobre el funcionamiento de los puertos, y las etapas de configuración para un router genérico.
 

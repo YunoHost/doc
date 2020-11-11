@@ -1,4 +1,9 @@
-#<div dir="auto">تجريب YunoHost</div>
+---
+title: تجريب YunoHost
+template: docs
+taxonomy:
+    category: docs
+---
 
 <div dir=rtl class="alert alert-warning" markdown="1">
 **ملاحظة :** يمكن لهذا السيرفر التجريبي أن يتوقف من وقت إلى آخر.

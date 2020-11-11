@@ -1,4 +1,11 @@
-# <img src="/images/gotify_logo.png" width="80px" alt="Gotify's logo"> Gotify
+---
+title: Gotify
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/gotify_logo.png" width="80px" alt="Gotify's logo"> Gotify
 
 [![Install Gotify with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gotify) [![Integration level](https://dash.yunohost.org/integration/gotify.svg)](https://dash.yunohost.org/appci/app/gotify)
 

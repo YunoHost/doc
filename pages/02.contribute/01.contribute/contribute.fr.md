@@ -1,4 +1,9 @@
-# Contribuer
+---
+title: Contribuer
+template: docs
+taxonomy:
+    category: docs
+---
 
 <p class="lead">
 YunoHost dépend entièrement de la participation de gens comme vous.

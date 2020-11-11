@@ -1,4 +1,11 @@
-# <img src="/images/plume_logo.svg" height="80px" alt="logo de plume"> Plume
+---
+title: Plume
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/plume_logo.svg" height="80px" alt="logo de plume"> Plume
 
 [![Install Plume with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=plume) [![Integration level](https://dash.yunohost.org/integration/plume.svg)](https://dash.yunohost.org/appci/app/plume)
 

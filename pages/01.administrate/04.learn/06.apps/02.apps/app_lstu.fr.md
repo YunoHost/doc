@@ -1,4 +1,11 @@
-# <img src="/images/lstu_logo.svg" height="80px" alt="logo de lstu"> Lstu
+---
+title: Lstu
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/lstu_logo.svg" height="80px" alt="logo de lstu"> Lstu
 
 [![Install lstu with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=lstu) [![Integration level](https://dash.yunohost.org/integration/lstu.svg)](https://dash.yunohost.org/appci/app/lstu)
 

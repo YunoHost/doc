@@ -1,4 +1,9 @@
-# So hosten Sie selbst ?
+---
+title: So hosten Sie selbst ?
+template: docs
+taxonomy:
+    category: docs
+---
 
 Sie können zu Hause (auf einem kleinen Computer) oder auf einem Remote-Server hosten. Jede Lösung hat ihre Vor- und Nachteile:
 

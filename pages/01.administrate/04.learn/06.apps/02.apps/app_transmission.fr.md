@@ -1,4 +1,11 @@
-# <img src="/images/transmission.png"> Transmission
+---
+title: Transmission
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/transmission.png"> Transmission
 
 ### C’est quoi Transmission ?
 Transmission est un logiciel de téléchargement et de partage de fichiers basé sur le protocole BitTorrent.

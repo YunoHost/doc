@@ -1,4 +1,11 @@
-# <img src="/images/anarchism_logo.svg" height="80px" alt="Anarchism's logo"> Anarchism
+---
+title: Anarchism
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/anarchism_logo.svg" height="80px" alt="Anarchism's logo"> Anarchism
 
 [![Install anarchism with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=anarchism) [![Integration level](https://dash.yunohost.org/integration/anarchism.svg)](https://dash.yunohost.org/appci/app/anarchism)
 

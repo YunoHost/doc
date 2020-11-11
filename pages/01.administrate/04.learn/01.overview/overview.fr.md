@@ -1,5 +1,10 @@
-# Vue d’ensemble de l’écosystème YunoHost
- 
+---
+title: Vue densemble de lécosystème YunoHost
+template: docs
+taxonomy:
+    category: docs
+---
+
 Cette page pose une vue d'ensemble de l'écosystème d'un serveur sous YunoHost. Bien que celle-ci contienne des approximations et des raccourcis, elle permet de poser une première représentation générale avant de rentrer plus dans le détail des différents aspects.
 
 ![](images/ecosystem_fr.png)

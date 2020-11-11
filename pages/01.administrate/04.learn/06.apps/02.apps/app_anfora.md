@@ -1,4 +1,11 @@
-# <img src="/images/anfora_logo.svg" height="80px" alt="Anfora's logo"> Anfora
+---
+title: Anfora
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/anfora_logo.svg" height="80px" alt="Anfora's logo"> Anfora
 
 [![Install Anfora with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=anfora) [![Integration level](https://dash.yunohost.org/integration/anfora.svg)](https://dash.yunohost.org/appci/app/anfora)
 

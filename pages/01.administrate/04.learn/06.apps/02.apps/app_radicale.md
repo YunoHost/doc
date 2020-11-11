@@ -1,8 +1,13 @@
-# Radicale
+---
+title: Radicale
+template: docs
+taxonomy:
+    category: docs
+---
 
-Radical is a calendar and contact server CalDAV/CardDAV. It does not have a graphical administration interface.
+Radicale is a calendar and contact server CalDAV/CardDAV. It does not have a graphical administration interface.
 
-Radical is installed by default with the web client InfCloud that will view and edit your calendars and address books.
+Radicale is installed by default with the web client InfCloud that will view and edit your calendars and address books.
 
 To connect another client to radical, we must inform these addresses:
 
@@ -19,8 +24,7 @@ To connect another client to radical, we must inform these addresses:
 - Exemple: https://example.org/radicale/me/AddressBook.vcf/
 
 ### Create a new schedule or a new address book
-Create a new schedule or a new address book is very simple with radical, just go there! Radical create all new calendar or notebook to nonexistent addresses if you try to access it.
-
+Create a new schedule or a new address book is very simple with Radicale, just go there! Radicale creates all new calendar or notebook to nonexistent addresses if you try to access it.
 So just log on (as before) to a calendar or a nonexistent address book to create it.  
 This can be done simply with a browser, to appear in a collection already connected to a client.
 

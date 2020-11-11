@@ -1,4 +1,9 @@
-# Usage des hooks YunoHost
+---
+title: Hooks
+template: docs
+taxonomy:
+    category: docs
+---
 
 Les hooks permettent de déclencher un script lorsqu'une action est effectuée par le système.  
 Le cas le plus évident, est l'ajout d'un utilisateur. Si l'app dispose d'un hook `post_user_create`, ce hook sera déclenché dés qu'un utilisateur sera ajouté.  

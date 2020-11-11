@@ -1,4 +1,9 @@
-# Security team
+---
+title: Security team
+template: docs
+taxonomy:
+    category: docs
+---
 
 Contact the security team by mail: `security@yunohost.org`.
 

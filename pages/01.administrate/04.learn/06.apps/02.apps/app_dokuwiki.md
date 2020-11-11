@@ -1,4 +1,11 @@
-# <img src="/images/dokuwiki_logo.svg" height="80px" alt="Dokuwiki's logo"> DokuWiki
+---
+title: DokuWiki
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/dokuwiki_logo.svg" height="80px" alt="Dokuwiki's logo"> DokuWiki
 
 [![Installer DokuWiki grâce à YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=dokuwiki) [![Niveau d'intégration](https://dash.yunohost.org/integration/dokuwiki.svg)](https://dash.yunohost.org/appci/app/dokuwiki)
 

@@ -1,4 +1,9 @@
-# How to host yourself?
+---
+title: How to host yourself?
+template: docs
+taxonomy:
+    category: docs
+---
 
 You can host yourself at home (on a small computer), or on a remote server. Each solution has their pros and cons:
 

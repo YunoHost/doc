@@ -1,4 +1,9 @@
-# PluXml
+---
+title: PluXml
+template: docs
+taxonomy:
+    category: docs
+---
 
 ![PluXml_logo](images/PluXml_logo.png)
 

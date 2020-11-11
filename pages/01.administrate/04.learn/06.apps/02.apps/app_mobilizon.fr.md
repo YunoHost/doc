@@ -1,4 +1,11 @@
-# <img src="/images/mobilizon_logo.svg" height="80px" alt="logo de mobilizon"> Mobilizon
+---
+title: Mobilizon
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/mobilizon_logo.svg" height="80px" alt="logo de mobilizon"> Mobilizon
 
 [![Install mobilizon with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mobilizon) [![Integration level](https://dash.yunohost.org/integration/mobilizon.svg)](https://dash.yunohost.org/appci/app/mobilizon)
 

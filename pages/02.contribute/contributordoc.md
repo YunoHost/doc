@@ -1,4 +1,9 @@
-# Contributor documentation
+---
+title: Contributor documentation
+template: docs
+taxonomy:
+    category: docs
+---
 
 * [General ways of contributing to YunoHost](/contribute)
 * [Writing documentation](/write_documentation)

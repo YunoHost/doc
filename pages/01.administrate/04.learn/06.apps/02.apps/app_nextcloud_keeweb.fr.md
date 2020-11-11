@@ -1,4 +1,9 @@
-# L'application KeeWeb pour NextCloud
+---
+title: KeeWeb pour Nextcloud
+template: docs
+taxonomy:
+    category: docs
+---
 
 L'application Keeweb sur le catalogue de nextcloud - [apps.nextcloud.com/keeweb](https://apps.nextcloud.com/apps/keeweb)
 

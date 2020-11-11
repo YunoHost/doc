@@ -1,4 +1,11 @@
-# <img src="/images/unattended_upgrades_logo.svg" height="80px" alt="logo de unattended_upgrades"> Unattended_upgrades
+---
+title: Unattented upgrades
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/unattended_upgrades_logo.svg" height="80px" alt="logo de unattended_upgrades"> Unattended_upgrades
 
 [![Install unattended_upgrades with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=unattended_upgrades) [![Integration level](https://dash.yunohost.org/integration/unattended_upgrades.svg)](https://dash.yunohost.org/appci/app/unattended_upgrades)
 

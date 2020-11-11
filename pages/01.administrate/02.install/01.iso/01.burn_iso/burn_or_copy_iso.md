@@ -1,4 +1,9 @@
-# Flashing the YunoHost ISO
+---
+title: Flashing the YunoHost ISO
+template: docs
+taxonomy:
+    category: docs
+---
 
 Now that you downloaded the ISO image of YunoHost, you should flash/burn it on a physical medium. Typically, this is done on a **USB stick** or an **SD card**.
 

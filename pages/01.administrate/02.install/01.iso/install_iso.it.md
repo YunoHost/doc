@@ -1,4 +1,9 @@
-# Installazione in un computer
+---
+title: Installazione in un computer
+template: docs
+taxonomy:
+    category: docs
+---
 
 *Altri modi per installare YunoHost **[Clicca qui](/install)**.*
 

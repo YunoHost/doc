@@ -1,4 +1,9 @@
-## DNS and subdomains for the applications
+---
+title: DNS and subdomains for the applications
+template: docs
+taxonomy:
+    category: docs
+---
 
 ### Subdomains
 

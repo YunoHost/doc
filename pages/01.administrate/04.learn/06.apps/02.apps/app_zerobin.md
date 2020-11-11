@@ -1,4 +1,11 @@
-# <img src="/images/zerobin_logo.svg" height="80px" alt="zerobin's logo"> Zerobin
+---
+title: Zerobin
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/zerobin_logo.svg" height="80px" alt="zerobin's logo"> Zerobin
 
 [![Install zerobin with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=zerobin) [![Integration level](https://dash.yunohost.org/integration/zerobin.svg)](https://dash.yunohost.org/appci/app/zerobin)
 

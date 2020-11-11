@@ -1,4 +1,9 @@
-# Installation graphique
+---
+title: Installation graphique
+template: docs
+taxonomy:
+    category: docs
+---
 
 Maintenant que vous possédez un support YunoHost, vous pouvez procéder à l’installation.
 

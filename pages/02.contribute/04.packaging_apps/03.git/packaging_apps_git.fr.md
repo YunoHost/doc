@@ -1,4 +1,9 @@
-# Comment utiliser Git pour packager les applications
+---
+title: Utiliser Git pour packager les applications
+template: docs
+taxonomy:
+    category: docs
+---
 
 Git... Notre cher Git bien-aimé, que l'on peut aussi décrire comme "Goddamn Idiotic Truckload of sh*t"  (Un stupide putain gros tas de m\*rde), selon Linus.  
 Si vous ne connaissez pas encore Git, soyez sûr que vous serez bientôt d'accord avec cette description.

@@ -1,4 +1,9 @@
-# Installer YunoHost manuellement
+---
+title: Installer YunoHost manuellement
+template: docs
+taxonomy:
+    category: docs
+---
 
 <div class="alert alert-info">
 Cette procédure fonctionne seulement sur des machines avec **Debian 10** <small>(et **kernel >= 3.12**)</small>)

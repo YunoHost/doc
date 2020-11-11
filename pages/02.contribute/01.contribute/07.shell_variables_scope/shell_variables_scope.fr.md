@@ -1,4 +1,9 @@
-### Portée générales des variables
+---
+title: Portée générales des variables
+template: docs
+taxonomy:
+    category: docs
+---
 
 Les variables existent pour le shell courant et ses enfants uniquement.  
 Un script exécuté depuis le script n'est pas un enfant, c'est un autre shell qui n'héritera que des variables d'environnement du script appelant, pas des variables globales ou locales.

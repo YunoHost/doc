@@ -1,4 +1,9 @@
-# Packaging d’applications : les bonnes pratiques
+---
+title: Packaging d'applications : les bonnes pratiques
+template: docs
+taxonomy:
+    category: docs
+---
 
 <div class="alert alert-danger">
 <b>

@@ -1,4 +1,9 @@
-# What is YunoHost?
+---
+title: What is YunoHost?
+template: docs
+taxonomy:
+    category: docs
+---
 
 <img src="/images/YunoHost_logo_vertical.png" width=400>
 

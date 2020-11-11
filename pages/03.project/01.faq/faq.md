@@ -1,4 +1,9 @@
-# Frequently Asked Questions
+---
+title: Frequently Asked Questions
+template: docs
+taxonomy:
+    category: docs
+---
 
 #### Under which license is YunoHost distributed?
 

@@ -1,4 +1,9 @@
-# Intégration continue
+---
+title: Intégration continue
+template: docs
+taxonomy:
+    category: docs
+---
 
 Un serveur d'intégration continue est disponible pour tout packager souhaitant tester une application avec [Package_check](https://github.com/YunoHost/package_check).
 

@@ -1,4 +1,9 @@
-# Guide to writing application documentation
+---
+title: Guide to writing application documentation
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Users / Administrators documentation pages
 

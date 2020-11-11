@@ -1,4 +1,9 @@
-# YunoHost pour les organisations à but non lucratif
+---
+title: YunoHost pour les organisations à but non lucratif
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Table des matières
 * [Introduction](#introduction) 

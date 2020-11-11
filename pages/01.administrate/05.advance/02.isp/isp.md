@@ -1,4 +1,9 @@
-# Internet service providers
+---
+title: Internet service providers
+template: docs
+taxonomy:
+    category: docs
+---
 
 <a class="btn btn-lg btn-default" href="/isp_box_config"> Main configuration box</a>
 

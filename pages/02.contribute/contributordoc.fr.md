@@ -1,4 +1,9 @@
-# Guide du contributeur
+---
+title: Guide du contributeur
+template: docs
+taxonomy:
+    category: docs
+---
 
 * [Liste des façons de contribuer à YunoHost](/contribute)
 * [Écrire de la documentation](/write_documentation)

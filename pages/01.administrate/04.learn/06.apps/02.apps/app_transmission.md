@@ -1,4 +1,11 @@
-# <img src="/images/transmission.png"> Transmission
+---
+title: Transmission
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/transmission.png"> Transmission
 
 ### What is Transmission?
 

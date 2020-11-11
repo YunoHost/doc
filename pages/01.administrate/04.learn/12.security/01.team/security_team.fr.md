@@ -1,4 +1,9 @@
-# Équipe sécurité
+---
+title: Équipe sécurité
+template: docs
+taxonomy:
+    category: docs
+---
 
 Contactez l'équipe sécurité par email : `security@yunohost.org`.
 

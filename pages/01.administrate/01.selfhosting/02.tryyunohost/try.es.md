@@ -1,4 +1,9 @@
-# Probar YunoHost
+---
+title: Probar YunoHost
+template: docs
+taxonomy:
+    category: docs
+---
 
 <div class="alert alert-warning" markdown="1">
 **Nota :** Este demo puede dejar de functionar de vez en cuando.

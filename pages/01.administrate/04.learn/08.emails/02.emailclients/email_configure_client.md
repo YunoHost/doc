@@ -1,4 +1,9 @@
-## Configuring email client
+---
+title: Configuring email client
+template: docs
+taxonomy:
+    category: docs
+---
 
 You can fetch and send emails using your YunoHost instance from desktop email clients such as Mozilla Thunderbird or on your smartphone with applications like K-9 Mail.
 

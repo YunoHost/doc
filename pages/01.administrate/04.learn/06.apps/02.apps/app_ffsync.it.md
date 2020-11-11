@@ -1,4 +1,10 @@
-# Firefox Sync
+---
+title: FireFox Sync
+template: docs
+taxonomy:
+    category: docs
+---
+
 Firefox Sync permette la sincronizzazione di plugin, schede, segnalibri, preferiti e cronologia fra diverse istanze di Firefox.
 
 ## Configurazione di Firefox

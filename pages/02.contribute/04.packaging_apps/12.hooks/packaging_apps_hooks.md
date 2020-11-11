@@ -1,4 +1,9 @@
-# The use of YunoHost hooks
+---
+title: Hooks
+template: docs
+taxonomy:
+    category: docs
+---
 
 Hooks allow you to trigger a script when an action is performed by the system.  
 The most obvious case is adding a user. If the app has a `post_user_create` hook, this hook will be triggered as soon as a user is added.  

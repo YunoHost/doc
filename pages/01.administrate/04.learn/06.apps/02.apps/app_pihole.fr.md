@@ -1,4 +1,11 @@
-# <img src="/images/pihole_logo.png" alt="logo de Pi-hole"> Pi-hole
+---
+title: Pi-hole
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/pihole_logo.png" alt="logo de Pi-hole"> Pi-hole
 
 [![Installer Pi-hole avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=pihole)[![Niveau d'intégration](https://dash.yunohost.org/integration/pihole.svg)](https://dash.yunohost.org/appci/app/pihole)
 

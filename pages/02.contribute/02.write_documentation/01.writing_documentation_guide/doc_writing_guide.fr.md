@@ -1,4 +1,9 @@
-# Guide de rédaction de la documentation des applications
+---
+title: Guide de rédaction de la documentation des applications
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Page de documentation utilisateurs·rices / administrateurs⋅rices
 

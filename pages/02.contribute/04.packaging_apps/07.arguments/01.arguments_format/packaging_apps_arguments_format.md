@@ -1,4 +1,9 @@
-# YunoHost Arguments Format
+---
+title: YunoHost Arguments Format
+template: docs
+taxonomy:
+    category: docs
+---
 
 In YunoHost application developpement there are several places where you end up
 writting questions for your user like in the `manifest.json/toml`, the

@@ -1,4 +1,9 @@
-# Install on a regular computer
+---
+title: Install on a regular computer
+template: docs
+taxonomy:
+    category: docs
+---
 
 *Find other ways to install YunoHost **[here](/install)**.*
 

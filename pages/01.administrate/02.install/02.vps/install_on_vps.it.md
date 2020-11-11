@@ -1,4 +1,9 @@
-# Installa su un server dedicato
+---
+title: Installa su un server dedicato
+template: docs
+taxonomy:
+    category: docs
+---
 
 *Scopri altri modi di installare YunoHost **[qui](/install)**.*
 

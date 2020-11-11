@@ -1,4 +1,9 @@
-## NetData
+---
+title: NetData
+template: docs
+taxonomy:
+    category: docs
+---
 
 [NetData](http://my-netdata.io/) is a system for **distributed real-time performance and health monitoring**.
 It provides **unparalleled insights, in real-time**, of everything happening on the

@@ -1,4 +1,11 @@
-# <img src="/images/kresus_logo.png" height="80px" alt="logo de kresus"> Kresus
+---
+title: Kresus
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/kresus_logo.png" height="80px" alt="logo de kresus"> Kresus
 
 [![Install kresus with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=kresus) [![Integration level](https://dash.yunohost.org/integration/kresus.svg)](https://dash.yunohost.org/appci/app/kresus)
 

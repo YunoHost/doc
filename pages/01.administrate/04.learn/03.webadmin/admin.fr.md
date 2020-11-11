@@ -1,4 +1,9 @@
-# L’interface d’administration Web
+---
+title: Linterface dadministration Web
+template: docs
+taxonomy:
+    category: docs
+---
 
 YunoHost est fourni avec une interface graphique d’administration. L’autre méthode est d’utiliser la [ligne de commande](/commandline).
 

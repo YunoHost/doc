@@ -1,4 +1,9 @@
-#<div dir="auto">الدليل</div>
+---
+title: الدليل
+template: docs
+taxonomy:
+    category: docs
+---
 
 <p dir="rtl" class="lead">
 دليل واي يونوهوست YunoHost يرتكز أساسًا على ثلاثة محاور :

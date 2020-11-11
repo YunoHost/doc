@@ -1,4 +1,9 @@
-## Chat rooms
+---
+title: Chat rooms
+template: docs
+taxonomy:
+    category: docs
+---
 
 Amoung other communication tools, YunoHost project use chat rooms to communicate.
 

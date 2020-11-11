@@ -1,4 +1,9 @@
-# Moving an app folder to a different storage
+---
+title: Moving an app folder to a different storage
+template: docs
+taxonomy:
+    category: docs
+---
 
 Applications folder are (*usually*) located in `/var/www/$appname`
 

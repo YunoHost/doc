@@ -1,4 +1,11 @@
-# <img src="/images/blogotext_logo.png" width="80px" alt="BlogoText's logo"> BlogoText
+---
+title: BlogoText
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/blogotext_logo.png" width="80px" alt="BlogoText's logo"> BlogoText
 
 [![Install BlogoText with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=blogotext) [![Integration level](https://dash.yunohost.org/integration/blogotext.svg)](https://dash.yunohost.org/appci/app/blogotext)
 

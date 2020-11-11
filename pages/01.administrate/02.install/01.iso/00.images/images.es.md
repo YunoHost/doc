@@ -1,4 +1,9 @@
-# Imagenes
+---
+title: Imagenes
+template: docs
+taxonomy:
+    category: docs
+---
 
 <span class="javascriptDisclaimer">
 Esta página requiere que Javascript esté instalado par aparecer correctamente :s.

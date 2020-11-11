@@ -1,4 +1,11 @@
-# <img src="/images/yunohost_package.png" height="80px" alt="Package"> Archivist
+---
+title: Archivist
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/yunohost_package.png" height="80px" alt="Package"> Archivist
 
 [![Install archivist with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=archivist) [![Integration level](https://dash.yunohost.org/integration/archivist.svg)](https://dash.yunohost.org/appci/app/archivist)
 

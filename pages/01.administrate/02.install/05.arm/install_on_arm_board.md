@@ -1,4 +1,9 @@
-# Install YunoHost on ARM board
+---
+title: Install YunoHost on ARM board
+template: docs
+taxonomy:
+    category: docs
+---
 
 *Find other ways to install YunoHost **[here](/install)**.*
 

@@ -1,3 +1,10 @@
+---
+title: App helpers
+template: docs
+taxonomy:
+    category: docs
+---
+
 <!-- NO_MARKDOWN_PARSING -->
 
 <h1>App helpers</h1>

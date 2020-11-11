@@ -1,4 +1,9 @@
-# Noalyss
+---
+title: Noalyss
+template: docs
+taxonomy:
+    category: docs
+---
 
 Open source accounting software developed in PHP.
 

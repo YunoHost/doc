@@ -1,4 +1,9 @@
-# Changer le mot de passe d’administration
+---
+title: Changer le mot de passe dadministration
+template: docs
+taxonomy:
+    category: docs
+---
 
 Vous voudrez peut-être changer votre mot de passe d'administrateur pour des raisons de sécurité ou parce que vous l'avez oublié.
 

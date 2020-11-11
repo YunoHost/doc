@@ -1,4 +1,9 @@
-# Équivalence avec les applications Framasoft
+---
+title: Équivalence avec les applications Framasoft
+template: docs
+taxonomy:
+    category: docs
+---
 
 | App Framasoft  | Équivalent          | Package                                                                                                |
 | :---:          | :---:               | :---:                                                                                                  |

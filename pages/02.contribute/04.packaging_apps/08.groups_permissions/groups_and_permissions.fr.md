@@ -1,4 +1,9 @@
-# Groupes et permissions
+---
+title: Groupes et permissions
+template: docs
+taxonomy:
+    category: docs
+---
 
 Vous pouvez accéder à l'interface de gestion des *groupes et des permissions* depuis la webadmin
 en allant dans la section "Utilisateurs" et en cliquant sur le bouton correspondant :

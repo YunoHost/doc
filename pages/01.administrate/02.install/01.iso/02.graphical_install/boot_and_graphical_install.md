@@ -1,4 +1,9 @@
-# Graphical installation
+---
+title: Graphical installation
+template: docs
+taxonomy:
+    category: docs
+---
 
 Now that your YunoHost install medium, you can start with the installation.
 

@@ -1,4 +1,9 @@
-# Prova YunoHost
+---
+title: Prova YunoHost
+template: docs
+taxonomy:
+    category: docs
+---
 
 <div class="alert alert-warning" markdown="1">
 **Nota:** A volte questo server demo può essere irraggiungibile

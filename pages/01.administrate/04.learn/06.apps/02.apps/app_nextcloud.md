@@ -1,4 +1,11 @@
-# <img src="/images/nextcloud_logo.png" alt="logo de Nextcloud"> Nextcloud  
+---
+title: Nextcloud
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/nextcloud_logo.png" alt="logo de Nextcloud"> Nextcloud  
 
  - [Discovering the Nextcloud environment](#EnvironmentNextcloud)  
  - [Mobile and computer client software](#ClientSoftware)  

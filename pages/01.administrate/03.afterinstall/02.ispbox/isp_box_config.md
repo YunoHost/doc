@@ -1,4 +1,9 @@
-# Configure port-forwarding
+---
+title: Configure port-forwarding
+template: docs
+taxonomy:
+    category: docs
+---
 
 If you are self-hosting at home and without a VPN, you need to forward ports on your home router ("Internet box"). If you want a short explanation on what is and why you need port forwarding, have a look to [this page](port_forwarding).
 

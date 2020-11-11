@@ -1,4 +1,9 @@
-# Cerchi aiuto?
+---
+title: Cerchi aiuto?
+template: docs
+taxonomy:
+    category: docs
+---
 
 <h3>Connettiti alla chat di supporto</h3>
 <center>

@@ -1,4 +1,9 @@
-# Mettre à jour le système
+---
+title: Mettre à jour le système
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Depuis la webadmin
 

@@ -1,4 +1,9 @@
-# Application catalog
+---
+title: Application catalog
+template: docs
+taxonomy:
+    category: docs
+---
 
 <span class="javascriptDisclaimer">
 This page requires JavaScript enabled to display properly :s.

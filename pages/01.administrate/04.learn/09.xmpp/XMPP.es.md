@@ -1,4 +1,11 @@
-# Chat, VoIP y red local con <img src="/images/XMPP_logo.png" width=100>
+---
+title: Chat, VoIP y red local con XMPP
+template: docs
+taxonomy:
+    category: docs
+---
+
+<img src="/images/XMPP_logo.png" width=100>
 
 YunoHost está instalado con un servidor de mensajería instantánea Metronome que implementa el [protocolo XMPP](https://es.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol).
 

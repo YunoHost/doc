@@ -1,4 +1,9 @@
-# How to use Git to package apps
+---
+title: Use Git to package apps
+template: docs
+taxonomy:
+    category: docs
+---
 
 Git... Our dear beloved Git, which can be described also as "Goddamn Idiotic Truckload of sh*t", according to Linus.  
 Be sure if you don't know Git yet that you will soon agree with that description.

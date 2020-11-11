@@ -1,4 +1,9 @@
-# Customize the appearance of the user portal
+---
+title: Customize the appearance of the user portal
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Using a theme
 

@@ -1,6 +1,10 @@
-<a class="btn btn-lg btn-default" href="/packaging_apps">Application packaging</a>
+---
+title: Arguments management
+template: docs
+taxonomy:
+    category: docs
+---
 
-## Arguments management
 #### Retrieve arguments in the install script from manifest
 Arguments are given to the install script from the manifest in it's order. For instance, for Roundcube, `domain` and `path` arguments will respectively be retreived from environment variables or from `$1` and `$2` parameters in the install script.
 

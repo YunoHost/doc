@@ -1,4 +1,9 @@
-# Migrating email from an email provider to a YunoHost instance
+---
+title: Migrating email from an email provider to a YunoHost instance
+template: docs
+taxonomy:
+    category: docs
+---
 
 *[Documentation linked to YunoHost email](/email)*.
 

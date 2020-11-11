@@ -1,4 +1,9 @@
-# Adding an external storage to your server
+---
+title: Adding an external storage to your server
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Introduction
 

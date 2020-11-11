@@ -1,4 +1,10 @@
-## Using YunoHost as a Tor Hidden Service
+---
+title: Using YunoHost as a Tor Hidden Service
+template: docs
+taxonomy:
+    category: docs
+---
+
 <div class="alert alert-warning">
 This tuto is not finished ! Some data could leak with this setup like the main domain of your yunohost, so it's not a "Hidden Service".
 </div>

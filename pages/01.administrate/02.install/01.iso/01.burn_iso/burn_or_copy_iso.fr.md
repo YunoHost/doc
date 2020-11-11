@@ -1,4 +1,9 @@
-# Flasher l’ISO YunoHost
+---
+title: Flasher lISO YunoHost
+template: docs
+taxonomy:
+    category: docs
+---
 
 Maintenant que vous avez téléchargé l’image ISO de YunoHost, vous devez la mettre sur un support physique. Classiquement, il s'agit d'une **Clé USB** ou d'une **Carte SD**.
 

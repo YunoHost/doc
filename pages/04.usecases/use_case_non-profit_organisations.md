@@ -1,4 +1,9 @@
-# YunoHost for non-profit organizations
+---
+title: YunoHost for non-profit organizations
+template: docs
+taxonomy:
+    category: docs
+---
 
 ## Table of Contents
 * [Introduction](#introduction) 
