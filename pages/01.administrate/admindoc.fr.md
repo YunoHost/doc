@@ -1,5 +1,5 @@
 ---
-title: Documentation pour les administrateurs YunoHost
+title: Guide de l'administrateur
 template: docs
 taxonomy:
     category: docs
