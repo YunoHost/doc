@@ -1,5 +1,5 @@
 ---
-title: Linterface dadministration Web
+title: L'interface d'administration Web
 template: docs
 taxonomy:
     category: docs

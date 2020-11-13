@@ -1,5 +1,5 @@
 ---
-title: Choisir son mode dautohébergement
+title: Choisir son mode d'autohébergement
 template: docs
 taxonomy:
     category: docs

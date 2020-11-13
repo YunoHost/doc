@@ -1,5 +1,5 @@
 ---
-title: Personnaliser lapparence du portail utilisateur
+title: Personnaliser l'apparence du portail utilisateur
 template: docs
 taxonomy:
     category: docs

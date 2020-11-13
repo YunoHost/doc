@@ -1,5 +1,5 @@
 ---
-title: Vue densemble de lécosystème YunoHost
+title: Vue d'ensemble de l'écosystème YunoHost
 template: docs
 taxonomy:
     category: docs

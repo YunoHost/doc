@@ -1,5 +1,5 @@
 ---
-title: Guide dinstallation
+title: Guide d'installation
 template: docs
 taxonomy:
     category: docs

@@ -1,5 +1,5 @@
 ---
-title: Changer le mot de passe dadministration
+title: Changer le mot de passe d'administration
 template: docs
 taxonomy:
     category: docs

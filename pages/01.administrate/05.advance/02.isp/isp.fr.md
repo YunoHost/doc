@@ -1,5 +1,5 @@
 ---
-title: Fournisseurs daccès à Internet
+title: Fournisseurs d'accès à Internet
 template: docs
 taxonomy:
     category: docs

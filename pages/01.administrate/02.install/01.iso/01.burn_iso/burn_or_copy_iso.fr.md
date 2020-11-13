@@ -1,5 +1,5 @@
 ---
-title: Flasher lISO YunoHost
+title: Flasher l'ISO YunoHost
 template: docs
 taxonomy:
     category: docs

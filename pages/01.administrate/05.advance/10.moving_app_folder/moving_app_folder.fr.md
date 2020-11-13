@@ -1,5 +1,5 @@
 ---
-title: Déplacer un dossier dapplication vers un autre espace de stockage
+title: Déplacer un dossier d'application vers un autre espace de stockage
 template: docs
 taxonomy:
     category: docs

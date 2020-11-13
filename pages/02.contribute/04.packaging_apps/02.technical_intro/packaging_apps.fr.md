@@ -1,5 +1,5 @@
 ---
-title: Packaging dapplications
+title: Packaging d'applications
 template: docs
 taxonomy:
     category: docs

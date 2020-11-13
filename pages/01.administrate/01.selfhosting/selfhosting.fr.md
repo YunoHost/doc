@@ -1,5 +1,5 @@
 ---
-title: Lauto-hébergement
+title: L'auto-hébergement
 template: docs
 taxonomy:
     category: docs

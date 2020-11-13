@@ -1,5 +1,5 @@
 ---
-title: Catalogue dapplications
+title: Catalogue d'applications
 template: docs
 taxonomy:
     category: docs

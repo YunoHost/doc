@@ -1,5 +1,5 @@
 ---
-title: Avantage dun VPN pour lauto-hébergement
+title: Avantage d'un VPN pour l'auto-hébergement
 template: docs
 taxonomy:
     category: docs

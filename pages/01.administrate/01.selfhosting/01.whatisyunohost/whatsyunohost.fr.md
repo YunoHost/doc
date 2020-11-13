@@ -1,5 +1,5 @@
 ---
-title: Quest-ce que YunoHost ?
+title: Qu'est-ce que YunoHost ?
 template: docs
 taxonomy:
     category: docs

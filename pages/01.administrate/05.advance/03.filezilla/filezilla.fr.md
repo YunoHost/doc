@@ -1,5 +1,5 @@
 ---
-title: Échanger des fichiers avec son serveur à laide dune interface graphique
+title: Échanger des fichiers avec son serveur à l'aide d'une interface graphique
 template: docs
 taxonomy:
     category: docs

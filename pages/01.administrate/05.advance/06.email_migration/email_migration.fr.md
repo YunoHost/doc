@@ -1,5 +1,5 @@
 ---
-title: Migrer ses emails dun ancien serveur mail vers YunoHost
+title: Migrer ses emails d'un ancien serveur mail vers YunoHost
 template: docs
 taxonomy:
     category: docs

@@ -1,5 +1,5 @@
 ---
-title: Niveaux de qualité des packages dapplications YunoHost
+title: Niveaux de qualité des packages d'applications YunoHost
 template: docs
 taxonomy:
     category: docs

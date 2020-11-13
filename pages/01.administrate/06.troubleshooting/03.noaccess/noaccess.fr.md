@@ -1,5 +1,5 @@
 ---
-title: Récupérer laccès à son YunoHost
+title: Récupérer l'accès à son YunoHost
 template: docs
 taxonomy:
     category: docs
