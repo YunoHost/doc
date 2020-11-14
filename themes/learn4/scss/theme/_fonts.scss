@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../fonts/metropolis-bold-webfont.woff2') format('woff2'),
+         url('../fonts/metropolis-bold-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Public Sans';
+    src: url('../fonts/PublicSans-Light.woff2') format('woff2'),
+         url('../fonts/PublicSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Public Sans';
+    src: url('../fonts/PublicSans-SemiBold.woff2') format('woff2'),
+         url('../fonts/PublicSans-SemiBold.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hack';
+    src: url('../fonts/hack-regular-subset.woff2') format('woff2'),
+         url('../fonts/hack-regular-subset.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}

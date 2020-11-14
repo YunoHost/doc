@@ -1,0 +1,11 @@
+enabled: true
+production-mode: false
+grid-size: grid-lg
+github:
+  note: true
+  link: true
+  tree: https://github.com/getgrav/grav-learn/blob/develop/
+  commits: https://github.com/getgrav/grav-learn/commits/develop/
+spectre:
+  exp: false
+  icons: false
