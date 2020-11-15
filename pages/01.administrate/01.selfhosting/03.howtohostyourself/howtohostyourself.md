@@ -12,7 +12,7 @@ You can host yourself at home (on a small computer), or on a remote server. Each
 You can host yourself at home with an ARM board or a re-purposed regular computer, connected to your home router/box. 
 
 - **Pros**  : you will have physical control of the machine and only need to buy the hardware;
-- **Cons**  : you will have to [manually configure your internet box](isp_box_config) and [might be limited by your ISP](isp).
+- **Cons**  : you will have to [manually configure your internet box](/administrate/postinstall/ispbox) and [might be limited by your ISP](/administrate/advance/isp).
 
 ### At home, behind a VPN
 

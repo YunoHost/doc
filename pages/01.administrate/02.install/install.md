@@ -5,91 +5,66 @@ taxonomy:
     category: docs
 ---
 
-There are multiple ways to install YunoHost. The process may differ slightly depending on whether it takes place at home or on a remote server, and depending on the hardware used: **[See the requirements](/hardware)**
+There are multiple ways to install YunoHost. The process may differ slightly depending on whether it takes place at home or on a remote server, and depending on the hardware used: **[See the requirements](hardware)**.
 
 This page lists a few installation guides.
 
----
+## Give it a try
 
-<h1 style="font-weight: 100">Give it a try</h1>
+[columns][center]
 
-<div class="row">
+[[figure caption="Demo server"]![](image://logo.png?resize=150&class=inline)[/figure]](/administrate/selfhosting/tryyunohost)
 
-<div class="col col-md-3 text-center">
-<a href="/try"><img height=150 src="/images/logo.png" style="vertical-align:bottom"><b><p>Demo server</p></b></a>
-</div>
+[[figure caption="Try with VirtualBox"]
+![](image://virtualbox.png?resize=150&class=inline)
+[/figure]](/administrate/install/virtualbox)
 
-<div class="col col-md-3 text-center">
-<a href="/install_on_virtualbox"><img src="/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>Try in VirtualBox</p></b></a>
-</div>
+[/center][/columns]
 
-</div>
+## Install at home
 
+[columns count=3][center]
 
+[[figure class="nomargin" caption="On a Raspberry Pi"]
+![](image://raspberrypi.jpg?resize=150,150)
+[/figure]](/administrate/install/rpi)
+  
+[[figure class="nomargin" caption="On an ARM board"]
+![](image://olinuxino.jpg?resize=150,150)
+[/figure]](/administrate/install/arm)
+  
+[[figure class="nomargin" caption="On a regular computer"]
+![](image://computer.png?resize=150,150)
+[/figure]](/administrate/install/iso)
 
+[/center][/columns]
 
-</div>
+## Install on a remote server
 
-<br>
+!!! [fa=fa-heart /] Local associative ISP near you might be able to provide you with a *Virtual Private Server* (VPS), managed by human beings who respect users and care about [Net Neutrality](https://en.wikipedia.org/wiki/Net_neutrality) ! Check out [this page](https://db.ffdn.org/) for more information.
 
----
+[center]
 
-<h1 style="font-weight: 100">Install at home</h1>
+[[figure class="nomargin" caption="On a dedicated or virtual private server"]
+![](image://vps.png?resize=150,150)
+[/figure]](/administrate/install/vps)
 
-<div class="row">
+[/center]
 
-<div class="col col-md-3 text-center">
-<a href="/install_on_raspberry"><img src="/images/raspberrypi.jpg" height=150 style="vertical-align:bottom"><b><p>On a Raspberry Pi</p></b></a>
-</div>
+## Advanced / others
 
-<div class="col col-md-3 text-center">
-<a href="/install_on_arm_board"><img src="/images/olinuxino.jpg" height=150 style="vertical-align:bottom; padding:20px"><b><p>On an ARM board</p></b></a>
-</div>
+[columns count=3][center]
 
-<div class="col col-md-3 text-center">
-<a href="/install_iso"><img src="/images/computer.png" height=150 style="vertical-align:bottom"><b><p>On a regular computer</p></b></a>
-</div>
+[[figure class="nomargin" caption="On Debian 10 Buster"]
+![](image://debian-logo.png?resize=150,150)
+[/figure]](/administrate/install/debian)
 
-</div>
+[[figure class="nomargin" caption="Dev environment in LXD/LXC"]
+![](image://lxc.png?resize=150,150)
+[/figure]](/contribute/dev)
 
-<br>
+[[figure class="nomargin" caption="(Non-official!) Docker images"]
+![](image://docker.png?resize=150,150)
+[/figure]](/administrate/install/docker)
 
-
----
-
-<h1 style="font-weight: 100">Install on a remote server</h1>
-
-<div class="alert alert-info" markdown="1">
-<span class="glyphicon glyphicon-heart"></span> Local associative ISP near you might be able to provide you with a *Virtual Private Server* (VPS), managed by human beings who respect users and care about [Net Neutrality](https://en.wikipedia.org/wiki/Net_neutrality) ! Check out [this page](https://db.ffdn.org/) for more information.
-</div>
-
-<div class="row">
-
-<div class="block-center text-center">
-<a href="/install_on_vps"><img src="/images/vps.png" height=150 style="vertical-align:bottom; text-align:center"><b><p>On a dedicated or virtual private server</p></b></a>
-</div>
-
-</div>
-
-<br>
-
----
-
-<h1 style="font-weight: 100">Advanced / others</h1>
-
-<div class="row">
-
-<div class="col col-md-3 text-center">
-<a href="/install_on_debian"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
-<b><p>On Debian 10/Buster</p></b></a>
-</div>
-
-<div class="col col-md-3 text-center">
-<a href="/dev"><img src="/images/lxc.png" height=150 style="vertical-align:bottom"><b><p>Dev environment in LXD/LXC</p></b></a>
-</div>
-
-<div class="col col-md-3 text-center">
-<a href="/docker"><img src="/images/docker.png" height=150 style="vertical-align:bottom"><b><p>(Non-official!) Docker images</p></b></a>
-</div>
-
-</div>
+[/center][/columns]

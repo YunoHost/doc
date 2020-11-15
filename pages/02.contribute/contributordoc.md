@@ -1,5 +1,5 @@
 ---
-title: Contributor documentation
+title: Contribute
 template: docs
 taxonomy:
     category: docs

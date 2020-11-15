@@ -27,10 +27,9 @@
   {% set current_page = p.active ? ' active' : '' %}
   <h5 class="{{ parent_page }}{{ current_page }}">
     {% if p.activeChild or p.active %}
-      <i class="fa fa-chevron-down fa-fw"></i>
+      <a href="{{ p.url }}"><i class="fa fa-chevron-down fa-fw"></i>{{ p.menu }}</a>
     {% else %}
-      <i class="fa fa-plus fa-fw"></i>
+      <a href="{{ p.url }}"><i class="fa fa-plus fa-fw"></i>{{ p.menu }}</a>
     {% endif %}
-    <a href="{{ p.url }}">{{ p.menu }}</a>
   </h5>
 {% endmacro %}

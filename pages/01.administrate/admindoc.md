@@ -1,69 +1,10 @@
 ---
-title: Administrator documentation
-template: docs
+title: Administrate
+template: chapter
 taxonomy:
     category: docs
 ---
 
-* Discovering self-hosting
-    * [What is Self-hosting](/selfhosting)
-    * [What is YunoHost](/whatsyunohost)
-    * [Try YunoHost](/try)
-    * [How to host yourself](howtohostyourself)
-        * [Choosing hardware](/hardware)
-        * [About the friendliness of internet service providers](/isp)
-* [Installing YunoHost](/install)
-    * [On a regular computer](/install_iso)
-    * [On a dedicated or a virtual private server](/install_on_vps)
-    * [On a Raspberry Pi](/install_on_raspberry)
-    * [On an ARM board](/install_on_arm_board)
-    * [On Debian](/install_on_debian)
-    * [On VirtualBox](/install_on_virtualbox)
-* Finalizing your setup
-    * [Post-installation](/postinstall)
-    * [Configuring port forwarding](/isp_box_config)
-    * [Configuring DNS records](/dns_config)
-    * [Installing an SSL certificate](/certificate)
-    * [Diagnose if your setup is working properly](/diagnostic)
-* Getting to know YunoHost
-    * [Overview of YunoHost](/overview)
-    * [General advices and guidelines](/guidelines)
-    * [Web administration interface](/admin)
-    * [SSH](/ssh) and [command-line administration](/commandline)
-    * [Users and the SSO](/users)
-    * [Groups and permissions](/groups_and_permissions)
-    * [Applications](/apps_overview)
-    * [Domains, DNS and certificates](/domains)
-    * [Email](/email)
-       * [Forms to remove its IP address from the black lists](/blacklist_forms)
-    * [XMPP](/XMPP)
-    * [Backup](/backup)
-    * [Updating the system](/update) and [apps](/app_update)
-    * [Security](/security)
-* Going further
-    * Domain names
-        * [Noho.st / nohost.me / ynh.fr domain names](/dns_nohost_me)
-        * [Configure a dynamic DNS with a dynamic IP address](/dns_dynamicip)
-        * [DNS and subdomains for apps](/dns_subdomains)
-        * [Managing DNS records at OVH](/OVH)
-    * Notes about some French ISPs
-        * [SFR](/isp_sfr)
-        * [Orange](/isp_orange)
-        * [Free](/isp_free) 
-    * [Specific apps documentations](/appsdoc)
-    * [Equivalence between Framasoft service and apps](/apps_framasoft)
-    * [Exchange files with your server using a graphical interface](/filezilla)
-    * [Customize the appearance of the YunoHost portal](/theming)
-    * [Adding an external storage](/external_storage)
-    * [Moving an app folder to an other storage](/moving_app_folder)
-    * [Migrating emails to YunoHost](/email_migration)
-    * [Hide services with Tor](/torhiddenservice)
-    * [Using certificates other than Let's Encrypt](/certificate_custom)
-    * [A discussion about the advantages of using a VPN](/vpn_advantage)
-    * [Stretch->Buster migration procedure](stretch_buster_migration)
-    * [(old) Jessie->Stretch migration procedure](jessie_stretch_migration)
-* Troubleshooting
-    * [Changing the administration password](/change_admin_password)
-    * [Recover access to your server](/noaccess)
-    * [Unban IPs in IPiptables/Fail2Ban](/fail2ban)
-    * [Configuring IPv6](/ipv6)
+### Administrate
+
+# Discover self-hosting, how to install and use YunoHost

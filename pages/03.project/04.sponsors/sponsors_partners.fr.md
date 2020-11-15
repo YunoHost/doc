@@ -1,4 +1,9 @@
-# Mécénes et partenaires
+---
+title: Mécénes et partenaires
+template: docs
+taxonomy:
+    category: docs
+---
 
 Afin d'avancer et de faire fonctionner le projet, en plus du travail des bénévoles et des dons, YunoHost bénéficie du soutien de mécénes et de partenaires.
 

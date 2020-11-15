@@ -1,5 +1,5 @@
 ---
-title: Organisation du projet YunoHost
+title: Organisation du projet
 template: docs
 taxonomy:
     category: docs

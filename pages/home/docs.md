@@ -5,26 +5,16 @@ taxonomy:
     category: docs
 ---
 
-<p class="lead">
 YunoHost's documentation has 2 different sections:
-</p>
 
-<div class="row text-center">
+[<i class="fa fa-lock"></i> Administrator's guide](/administrate?classes=btn,btn-lg,btn-primary)  
+Including installation, server management, and application management.
 
-<div class="col col-md-4 col-md-offset-1">
-<a class="btn btn-primary btn-lg" href="/admindoc"><span class="glyphicon glyphicon-lock"></span> Administrator guide</a>
-<p><small class="text-muted">Including installation, server management and application management</small></p>
-</div>
-
-<div class="col col-md-4 col-md-offset-1">
-<a class="btn btn-danger btn-lg" href="/contributordoc"><span class="glyphicon glyphicon-heart"></span> Contributor guide</a>
-<p><small class="text-muted">Which contains everything you have to know about us and the way we work</small></p>
-</div>
-
-</div>
+[<i class="fa fa-heart"></i> Contributor's guide](/contribute?classes=btn,btn-lg,btn-error)  
+Which contains everything you have to know about us and the way we work.
 
 * Project's life:
-   * [Frequently asked questions](/faq)
+   * [Frequently asked questions](/help/faq)
    * [Project news](/news)
    * [Project organization](/project_organization)
    * [Project budget](/project_budget)

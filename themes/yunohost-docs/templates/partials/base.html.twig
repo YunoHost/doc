@@ -1,3 +1,4 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
 {% set github_config = theme_var('github') %}
 {% set grid_size = theme_var('grid-size') %}
 {% set compress = theme_var('production-mode') ? '.min.css' : '.css' %}
