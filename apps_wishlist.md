@@ -278,6 +278,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [TwitRSS.me](https://twitrss.me/) | Create RSS feeds from Twitter | [Upstream](https://github.com/ciderpunx/twitrssme) |  |
 | [umap](https://umap.openstreetmap.fr/) | Cartography software |  | [Package Draft](https://github.com/YunoHost-Apps/umap_ynh) |
 | [unbound](https://nlnetlabs.nl/projects/unbound/about/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/unbound_ynh) |
+| [upmpdcli](https://www.lesbonscomptes.com/upmpdcli/) |  | [Upstream](https://framagit.org/medoc92/upmpdcli) |  |
 | [Uwazi](https://www.uwazi.io/) |  | [Upstream](https://github.com/huridocs/uwazi) |  |
 | [Volumio](https://volumio.org) |  | [Upstream](https://github.com/volumio) |  |
 | [vpnserver](https://openvpn.net) | Create/provide VPNs from your server |  | [Package Draft](https://github.com/YunoHost-Apps/vpnserver_ynh) |
