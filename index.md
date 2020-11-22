@@ -16,6 +16,7 @@
       <span class="yolo 8" style="color: #FF6600;">john@doe.org</span>
       <span class="yolo 9" style="color: #FF5050;">dude, Y U NO Host?!</span>
       <span class="yolo 10" style="color: #66FF33;">Keep calm and host yourself</span>
+      <span class="yolo 11" style="color: #3366FF;">Be the cloud you want to see in the world</span>
     </p>
     <button class="btn btn-primary btn-lg btn-block yolobtn">What?</button>
   </div>
