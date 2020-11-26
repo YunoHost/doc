@@ -63,6 +63,8 @@
 - [Lstu](app_lstu)
 - [Lufi](app_lufi)
 - [Lutim](app_lutim)
+- [Lychee](app_lychee)
+- [Mattermost](app_mattermost)
 - [Mailman](app_mailman)
 - [Mantis](app_mantis)
 - [Mattermost](app_mattermost)
