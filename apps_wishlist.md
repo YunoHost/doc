@@ -145,6 +145,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Matterbridge | Bridge different chat protocols | [Upstream](https://github.com/42wim/matterbridge) | [Package Draft](https://github.com/YunoHost-Apps/matterbridge_ynh) |
 | modernpaste | A modern, feature-rich Pastebin alternative | [Upstream](https://github.com/LINKIWI/modern-paste) | [Package Draft](https://github.com/YunoHost-Apps/modernpaste_ynh) |
 | [Modoboa](https://modoboa.org) |  | [Upstream](https://github.com/modoboa/) |  |
+| [MongoPassion](https://mongopassion.24eme.fr/demo/) | Web-based project for management of MongoDB databases | [Upstream](https://github.com/24eme/MongoPassion) |  |
 | [mopidy](https://www.mopidy.com/) | An extensible music server |  | [Package Draft](https://github.com/YunoHost-Apps/mopidy_ynh) |
 | [mosquitto](https://mosquitto.org) |  |  | [Package Draft](https://github.com/YunoHost-Apps/mosquitto_ynh) |
 | MotionEye |  | [Upstream](https://github.com/ccrisan/motioneye) |  |
