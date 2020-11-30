@@ -1,4 +1,4 @@
-# <img src="/images/hedgedoc_logo.png" height="80px" alt="HedgeDoc’s logo"> HedgeDoc
+# <img src="/images/HedgeDoc-Logo.png" height="80px" alt="HedgeDoc’s logo"> HedgeDoc
 
 [![Install HedgeDoc with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=hedgedoc) [![Integration level](https://dash.yunohost.org/integration/hedgedoc.svg)](https://dash.yunohost.org/appci/app/hedgedoc)
 
