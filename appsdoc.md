@@ -48,6 +48,7 @@
 - [Grav](app_grav)
 - [Halcyon](app_halcyon)
 - [Haste](app_haste)
+- [HedgeDoc](app_hedgedoc)
 - [Hextris](app_hextris)
 - [Horde](app_horde)
 - [Hubzilla](app_hubzilla)
