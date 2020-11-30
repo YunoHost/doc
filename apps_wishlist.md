@@ -138,6 +138,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Mailtrain](https://mailtrain.org/) |  | [Upstream](https://github.com/Mailtrain-org/mailtrain) |  |
 | [Mautic](https://github.com/mautic/mautic) |  |  |  |
 | mediadrop | Video Platform |  | [Package Draft](https://github.com/YunoHost-Apps/mediadrop_ynh) |
+| [Mediagoblin](https://mediagoblin.org/) | Video streaming platform | [Upstream](https://savannah.gnu.org/projects/mediagoblin) |  |
 | [medusa](https://pymedusa.com/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/guigot/medusa_ynh) |
 | microblog.pub |  | [Upstream](https://github.com/tsileo/microblog.pub) |  |
 | miniflux | Minimal RSS reader |  | [Package Draft](https://github.com/mat-mo/miniflux_ynh) |
