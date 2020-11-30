@@ -123,6 +123,7 @@
     </div>
   </div>
 
+</div>
 
 <script type="text/javascript">
     jQuery('.teasing-part').css({

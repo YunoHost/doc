@@ -87,7 +87,7 @@
     <div class="text-center">
     <h1>Hey ! Nous sommes humains !<br />
     <small>Si vous avez une question, un problème, ou que vous êtes tout simplement intéressé, passez dire « Bonjour » sur notre forum ou le chat!</small></h1>
-
+    </div>
     <div class="col-md-4 col-md-offset-4 button-list">
       <a class="btn btn-lg btn-block btn-info" href="/docs"><span class="glyphicon glyphicon-book"></span> Documentation</a>
       <a class="btn btn-lg btn-block btn-danger btn-support" href="/help"><span class="glyphicon glyphicon-comment"></span> Forum et chat</a>
@@ -95,6 +95,29 @@
       <a class="btn btn-lg btn-block btn-primary" href="https://donate.yunohost.org/" style="background-color: #ffd236; border-color: #ffd236;"><span class="glyphicon glyphicon-usd"></span> Faire un don</a>
      </div>
   </div>
+
+  <hr />
+
+  <div class="row cf">
+    <div class="text-center">
+    <h1>Nos soutiens &lt;3<br />
+    <small>Nous sommes reconnaissant envers nos mécènes <br/>qui nous soutiennent financièrement ou via des dons d'infrastructure
+    </h1>
+    <p style="margin-left:auto;margin-right:auto;">
+    <a style="padding: 5px;" href="https://nlnet.nl"><img src="/images/logo_nlnet.png" width="150px"/></a>
+    <a style="padding: 5px;" href="https://www.ngi.eu"><img src="/images/logo_ngi.png" width="130px"/></a>
+    <a style="padding: 5px;" href="https://www.codelutin.com"><img src="/images/logo_codelutin.png" width="100px"/></a>
+    </p>
+    <p style="margin-left:auto;margin-right:auto;">
+    <a style="padding: 5px;" href="https://www.globenet.org"><img src="/images/logo_globenet.png" width="150px"/></a>
+    <a style="padding: 5px;" href="https://www.gitoyen.net"><img src="/images/logo_gitoyen.png" width="150px"/></a>
+    <a style="padding: 5px;" href="https://tetaneutral.net"><img src="/images/logo_tetaneutral.png" width="90px"/></a>
+    <a style="padding: 5px;" href="https://ldn-fai.net"><img src="/images/logo_ldn.png" width="120px"/></a>
+    <a style="padding: 5px;" href="https://www.nbs-system.com"><img src="/images/logo_nbs.png" width="130px"/></a>
+    </p>
+    </div>
+  </div>
+
 
 </div><!-- boring-part -->
 
