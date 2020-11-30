@@ -91,6 +91,7 @@
 - [Pleroma](app_pleroma)
 - [Plume](app_plume)
 - [Pluxml](app_pluxml)
+- [PrivateBin](app_privatebin)
 - [Radicale](app_radicale)
 - [Rainloop](app_rainloop)
 - [Searx](app_searx)
