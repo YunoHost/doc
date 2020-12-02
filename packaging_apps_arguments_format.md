@@ -250,6 +250,34 @@ And in json:
 },
 ```
 
+### Number
+
+Like string except the user needs to enter a number
+
+Example in toml:
+
+```toml
+[maybe.some.stuff.before.the_name]
+type = "number"
+ask.en = "the question in english"
+ask.fr = "the question in french"
+default = 0
+```
+
+And in json:
+
+```javascript
+{
+    "name": "the_name",
+    "type": "number",
+    "ask": {
+        "en": "the question in english",
+        "fr": "the question in french"
+    },
+    "default": 0
+},
+```
+
 ### App
 
 This type will ask the user to select an application in the list of installed
