@@ -87,7 +87,7 @@ Example in toml:
 [maybe.some.stuff.before.the_name]
 type = "string"
 ask.en = "the question in english"
-ask.fr = "the question in french"
+ask.fr = "la question en français"
 example = "an example value"  # optional
 choices = ["fr", "en"]
 default = "en" # optional
