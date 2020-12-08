@@ -8,6 +8,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 
 | Name   | Description | Upstream | Package draft |
 | ------ | ----------- | -------- | ------------- |
+| [Instances-Peertube](https://Peertube.com) | Deploy your own Instance Peertube |  | [Package](https://framagit.org/framasoft/peertube/instances-peertube#peertube-auto-follow) |
 | 10er10 |  | [Upstream](https://github.com/dready92/10er10) |  |
 | [AbanteCart](https://abantecart.com) | Create an e-commerce website |  | [Package Draft](https://github.com/YunoHost-Apps/abantecart_ynh) |
 | AdGuard |  | [Upstream](https://github.com/AdguardTeam/AdGuardHome) | [Package Draft](https://github.com/YunoHost-Apps/adguard_ynh) |
