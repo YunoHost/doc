@@ -1,3 +1,5 @@
+<div class="alert alert-warning" markdown="1" style="margin-right: 120px; margin-top: 12px">La page demandée n'est pour le moment pas disponible en français. Voici à la place la version en anglais. Si vous souhaitez commencer une traduction de cette page, vous pouvez vous rendre sur [cette page](https://yunohost.org/#/apps_wishlist_fr).</div>
+
 # Apps wishlist
 
 The following list is a compiled wishlist of applications that would be nice-to-have.
@@ -256,6 +258,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | studs | A survey tool, the ancestor of OpenSondage |  | [Package Draft](https://github.com/YunoHost-Apps/studs_ynh) |
 | subsonic | Subsonic is an open source, web-based media server |  | [Package Draft](https://github.com/drfred1981/subsonic_ynh) |
 | Subspace | A simple WireGuard VPN server GUI | [Upstream](https://github.com/subspacecloud/subspace) |  |
+| Sydent | Identity-serverfor matrix | [Upstream](https://github.com/matrix-org/sydent) |  |
 | [sympa](https://www.sympa.org/) | Mailing List manager |  | [Package Draft](https://github.com/YunoHost-Apps/sympa_ynh) |
 | Synapse-Admin | Management GUI for matrix-synapse | [Upstream](https://github.com/Awesome-Technologies/synapse-admin) |  |
 | [Syspass](https://www.syspass.org/) |  | [Upstream](https://github.com/nuxsmin/sysPass) |  |
