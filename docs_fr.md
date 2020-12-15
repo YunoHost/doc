@@ -31,3 +31,4 @@ La documentation de YunoHost s’articule autour de deux sections :
 
 * Exemple d'utilisation :
    * [YunoHost pour les organisations à but non lucratif](/use_case_non-profit_organisations)
+   * [YunoHost pour les CHATONS (Collectif des Hébergeurs Alternatifs, Transparents, Ouverts, Neutres et Solidaires)](https://wiki.chatons.org/doku.php/yunohost)
