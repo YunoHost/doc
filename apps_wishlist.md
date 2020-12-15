@@ -267,6 +267,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | telegram_chatbot | Telegram chatbot - mini chatbot for Telegram |  | [Package Draft](https://github.com/YunoHost-Apps/telegram_chatbot_ynh) |
 | TellForm |  | [Upstream](https://github.com/tellform/tellform) |  |
 | [tes3mp](https://tes3mp.com/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/tes3mp_ynh) |
+|[Theia-IDE](https://theia-ide.org/) | VS Code-like cloud IDE |[Upstream](https://hub.docker.com/r/theiaide/theia-full)| |
 | Thredded |  | [Upstream](https://github.com/thredded/thredded) |  |
 | Tinylist |  | [Upstream](https://github.com/baggachipz/tinylist) |  |
 | [TMate](https://tmate.io/) |  | [Upstream](https://github.com/tmate-io/tmate) |  |
