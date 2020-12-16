@@ -41,6 +41,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Cozy](https://cozy.io/en/) |  |  |  |
 | Croodle | Vote for a schedule / polling | [Upstream](https://github.com/jelhan/croodle) |  |
 | [Darkwire.io](https://darkwire.io/) | End-to-end encrypted instant web chat | [Upstream](https://github.com/seripap/darkwire.io) |  |
+| Dendrite | Next-gen Matrix server in Go | [Upstream](https://github.com/matrix-org/dendrite) | |
 | [democracyOS](https://democracyos.org/) | Vote / make decisions in a collective |  | [Package Draft](https://github.com/YunoHost-Apps/democracyos_ynh) |
 | [diasporadocker](https://diasporafoundation.org/) | A open and powerfull social network |  | [Package Draft](https://github.com/aymhce/diasporadocker_ynh) |
 | DirectoryLister |  | [Upstream](https://github.com/DirectoryLister/DirectoryLister) |  |
