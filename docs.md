@@ -31,3 +31,4 @@ YunoHost's documentation has 2 different sections:
 
 * Use example:
    * [YunoHost for non-profit organisations](/use_case_non-profit_organisations)
+   * (FR) [YunoHost for CHATONS (A collective of independant, transparent, open, neutral and ethical hosters providing FLOSS-based online services.)](https://wiki.chatons.org/doku.php/yunohost) 
