@@ -15,7 +15,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [agora](https://www.agora-project.net/) | Create collaborative and creative digital space |  | [Package Draft](https://github.com/YunoHost-Apps/agora_ynh) |
 | [Ajenti](https://ajenti.org) |  | [Upstream](https://github.com/ajenti/ajenti/) |  |
 | Akaunting | Manage payments/invoices/expenses | [Upstream](https://github.com/akaunting/akaunting) |  |
-| Anki Sync Server | a personal Anki server |[Upstream](https://github.com/ankicommunity/anki-sync-server) |  |
 | [askbot](https://askbot.com/) | Questions and answers |  | [Package Draft](https://github.com/zamentur/askbot_ynh) |
 | Beehive |  | [Upstream](https://github.com/muesli/beehive) |  |
 | [BicBucStriim](https://projekte.textmulch.de/bicbucstriim/) | Manage an e-book collection |  | [Package Draft](https://github.com/YunoHost-Apps/bicbucstriim_ynh) |
@@ -142,6 +141,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | mediadrop | Video Platform |  | [Package Draft](https://github.com/YunoHost-Apps/mediadrop_ynh) |
 | [Mediagoblin](https://mediagoblin.org/) | Video streaming platform | [Upstream](https://savannah.gnu.org/projects/mediagoblin) |  |
 | [medusa](https://pymedusa.com/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/guigot/medusa_ynh) |
+| [Megaglest](https://megaglest.org/) | realtime stategy game | [Upstream](https://megaglest.org/linux-packages.html) | |
 | microblog.pub |  | [Upstream](https://github.com/tsileo/microblog.pub) |  |
 | miniflux | Minimal RSS reader |  | [Package Draft](https://github.com/mat-mo/miniflux_ynh) |
 | [Mirakel](https://mirakel.azapps.de/taskwarrior.html) |  | [Upstream](https://github.com/GothenburgBitFactory/taskwarrior) |  |
