@@ -189,6 +189,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Passbolt](https://www.passbolt.com) | Password manager | [Upstream](https://github.com/passbolt) |  |
 | Pelias |  | [Upstream](https://github.com/pelias/pelias) |  |
 | Pelican | Pelican Static Site Generator |  | [Package Draft](https://github.com/YunoHost-Apps/pelican_ynh) |
+| [P2p Matrix/Dendrite](https://github.com/matrix-org/dendrite/blob/master/docs/p2p.md) | P2p version of riot(element)/matrix chat |  |  |
 | [Photoprism](https://photoprism.org/) |  | [Upstream](https://github.com/photoprism/photoprism) |  |
 | [phpbb](https://www.phpbb.com/) | Bulletin board software | [Upstream](https://github.com/phpbb) | [Package Draft](https://github.com/YunoHost-apps/phpbb_ynh) |
 | [phpboost](https://www.phpboost.com/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/phpboost_ynh) |
@@ -220,6 +221,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Race for the galaxy | | [Upstream](https://github.com/bnordli/rftg) | |
 | [redmine](https://www.redmine.org/) | A flexible project management web application |  | [Package Draft](https://github.com/YunoHost-Apps/redmine_ynh) |
 | remoteStorage | A remoteStorage server implementation written in PHP | [Upstream](https://github.com/fkooman/php-remote-storage) | [Package Draft](https://github.com/YunoHost-Apps/RemoteStorage_ynh) |
+| [rendezvous](https://github.com/libp2p/js-libp2p-websocket-star) | websocket star relay server (to use with dendrite p2p matrix)|  |  |
 | [Request Tracker](https://bestpractical.com) |  | [Upstream](https://github.com/bestpractical/rt) |  |
 | [Restya](https://restya.com) |  | [Upstream](https://github.com/RestyaPlatform/board/) |  |
 | [Retroshare](https://retroshare.cc/) |  | [Upstream](https://github.com/RetroShare/RetroShare) |  |
