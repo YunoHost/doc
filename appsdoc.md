@@ -68,6 +68,7 @@
 - [Mattermost](app_mattermost)
 - [Mailman](app_mailman)
 - [Mantis](app_mantis)
+- [Matomo](app_matomo)
 - [Mattermost](app_mattermost)
 - [Mediawiki](app_mediawiki)
 - [Mindmaps](app_mindmaps)
