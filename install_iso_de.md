@@ -1,8 +1,6 @@
-
-
 # Instalation auf einem normalen Computer
 
-*Um andere Wege zu finden, Yunohost zu instalieren, klicke **[hier](/install)**.*
+*Um andere Wege zu finden, YunoHost zu instalieren, klicke **[hier](/install)**.*
 
 ### Anforderungen
 
@@ -10,7 +8,7 @@
 <img src="/images/desktop.jpg">
 <img src="/images/nettop.jpg">
 
-* Einen x86-kompatibele Hardware für Yunohost: Laptop, Netbook oder Desktop.    
+* Einen x86-kompatibele Hardware für YunoHost: Laptop, Netbook oder Desktop.    
 Du kannst jeden Computer nutzen der **256MB RAM oder mehr** hat.
 * Einen anderen Computer, um diesen Guide zu lesen und der auf deinen Server zugreift.
 * Einen [angemessenen Internet-Provider](/isp), am besten mit guter und unlimitierter Bandweite.
@@ -22,7 +20,7 @@ Du kannst jeden Computer nutzen der **256MB RAM oder mehr** hat.
 ## Instalationsschritte
 
 
-<a class="btn btn-lg btn-default" href="/images">0. Lade die Yunohost ISO Imagedatei herunter image</a>
+<a class="btn btn-lg btn-default" href="/images">0. Lade die YunoHost ISO Imagedatei herunter image</a>
 
 <a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Brenne die Iso-Datei auf einen USB-Stick oder eine CD</a>
 
@@ -35,5 +33,3 @@ Du kannst jeden Computer nutzen der **256MB RAM oder mehr** hat.
 Um dich direkt mit dem Computer oder mit [SSH](/ssh) (only on local network) zu verbinden:
 * Benutzername: **root**
 * Passwort: **yunohost**
-
-
