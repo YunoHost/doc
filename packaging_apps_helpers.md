@@ -1757,7 +1757,7 @@ ynh_exec_fully_quiet "your_command | other_command"</code>
   <div class="helper-card-body">
     <div data-toggle="collapse" href="#collapse-ynh_return" style="cursor:pointer">
         <h5 class="helper-card-title"><tt>ynh_return</tt></h5>
-        <h6 class="helper-card-subtitle text-muted">Return data to the Yunohost core for later processing
+        <h6 class="helper-card-subtitle text-muted">Return data to the YunoHost core for later processing
 (to be used by special hooks like app config panel and core diagnosis)</h6>
     </div>
     <div id="collapse-ynh_return" class="collapse" role="tabpanel">
