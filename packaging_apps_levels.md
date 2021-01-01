@@ -22,7 +22,7 @@ The following summarizes the current definition of the levels.
 
 The exact definitions are likely to shift over time and are heavily dependent on:
 - the [package linter](https://github.com/YunoHost/package_linter) which performs a static analysis of the app scripts and files to detect issues or deprecated practices
-- the [package check system](https://github.com/YunoHost/package_check) which actually tests the various operations (installs, upgrades, backup, ...)
+- the [package check system](https://github.com/YunoHost/package_check) which actually tests the various operations (installs, upgrades, backup...)
 
 #### Level 0
 
@@ -65,10 +65,8 @@ The application is long-term good quality, meaning it's been at least level 5 in
 
 ### Level 9
 
-The application is considered ["high-quality"](https://github.com/YunoHost/apps/blob/master/hq_validation_template.md): it is well-integrated with Yunohost (in particular SSO/LDAP) and follows the recommended development workflow.
+The application is considered ["high-quality"](https://github.com/YunoHost/apps/blob/master/hq_validation_template.md): it is well-integrated with YunoHost (in particular SSO/LDAP) and follows the recommended development workflow.
 
 ### Level 10
 
 (No definition yet)
-
-
