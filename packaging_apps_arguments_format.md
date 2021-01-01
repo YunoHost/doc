@@ -137,7 +137,7 @@ And in json:
 
 ### Path
 
-This type will ask the user to chose an url path (generally to happen it to a
+This type will ask the user to chose an URL path (generally to happen it to a
 domain) like "/path/to/my/app"
 
 Example in toml:
