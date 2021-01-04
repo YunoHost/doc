@@ -27,6 +27,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | BTCPay Server |  | [Upstream](https://github.com/btcpayserver/btcpayserver) |  |
 | [Cagette](https://www.cagette.net/) | A marketplace for local farmers and producers | [Upstream](https://github.com/CagetteNet/cagette) | |
 | [Caliopen](https://www.caliopen.org) | A unified inteface for all your private communications |  | [Package Draft](https://github.com/YunoHost-Apps/caliopen_ynh) |
+| [Castopod](https://podlibre.org/tag/castopod-server/) | Hosting platform made for podcasters  | [Upstream](https://code.podlibre.org/podlibre/castopod) |  |
 | [cgit](https://git.zx2c4.com/cgit/about) |  |  |  |
 | [CheckUp](https://sourcegraph.github.io/checkup) |  | [Upstream](https://github.com/sourcegraph/checkup) |  |
 | chtickynotes | Note manager |  | [Package Draft](https://github.com/YunoHost-Apps/chtickynotes_ynh) |
