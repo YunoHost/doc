@@ -216,22 +216,22 @@ Applications scripts should absolutely **NOT** mess up with any already-existing
 
 When migrating away from the legacy permission, you should:
 - remove any management of `$is_public`-like or `$admin_user`-like setting, except for any manifest question meant to either *initialize* the app as public/private or specific permissions ;
-- remove any management of `skipped_`, `unprotected_` and `protected_uris` (and `_regex`) settings that are now considered obsolete and deprecated. (N.B.: you should **explicitly delete them in the upgrade script**). Instead, you should now rely on the new `ynh_permission_*` helpers instead. If you do feel like you still need to use them, please contact the core team to provide your feedback and we'll figure out something ;
-For example, in the upgrade script if you used the `protected_uris` key before, you may use this code in the `DOWNWARD COMPATIBILITY` section:
+- remove the old legacy permissions. Check out the recommended way to proceed in the example_ynh app (in particular [this code snippet](https://github.com/YunoHost/example_ynh/pull/111/files#diff-57aeb84da86cb7420dfedd8e49bc644fb799d5413d01927a0417bde753e8922f))
 
+It should boil down to : 
 ```bash
-protected_uris=$(ynh_app_setting_get --app=$app --key=protected_uris)
+if ynh_legacy_permissions_exists; then
+	ynh_legacy_permissions_delete_all
 
-# Unused with the permission system
-if [ ! -z "$protected_uris" ]; then
-	ynh_app_setting_delete --app=$app --key=protected_uris
+	ynh_app_setting_delete --app=$app --key=is_public
+
+	# Create the permission using the new framework (if your app has relevant additional permissions)
+	ynh_permission_create --permission="admin" --url="/admin" --allowed=$admin
 fi
 ```
 
 - remove any call to `yunohost app addaccess` and similar actions that are now obsolete and deprecated.
 - if your app use LDAP and support filter, use the filter `'(&(objectClass=posixAccount)(permission=cn=YOUR_APP.main,ou=permission,dc=yunohost,dc=org))'` to allow users who have this permission. (A complete documentation of LDAP [here](https://moulinette.readthedocs.io/en/latest/ldap.html) if you want to undestand how it works with YunoHost)
-
-Here an example of how to migrate the code from legacy to new permission system: [example](https://github.com/YunoHost/example_ynh/pull/111/files)
 
 #### Additional features from 4.1
 
