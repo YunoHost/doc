@@ -2,7 +2,7 @@
 
 La configuración de los DNS es una etapa crucial para que tu servidor esté accesible. En efecto, si tus DNS están mal configurados, con mucha certeza tendrás problemas de conexión a tu servidor vía tu nombre de dominio.
 
-*Aunque esta etapa de documentación parezca larga y compleja, sigue siendo muy importante si quieres entender correctamente las implicaciones de la denominación en Internet vía los nombres de dominio, que son necesarios para el funcionamiento de tu servidor Yunohost.*
+*Aunque esta etapa de documentación parezca larga y compleja, sigue siendo muy importante si quieres entender correctamente las implicaciones de la denominación en Internet vía los nombres de dominio, que son necesarios para el funcionamiento de tu servidor YunoHost.*
 
 ### ¿ Qué es ?
 
@@ -10,7 +10,7 @@ DNS significa « Domain Name Server » en inglés, y está frecuentemente empl
 
 **Por ejemplo** : `yunohost.org` apunta hacia `88.191.153.110`.
 
-Este sistema fue creado para poder memorizar más fácilmente las direcciones de servidores. Existen registros DNS en los cuales hay que apuntarse. Esto se hace con **registrars** que te alquilarán estos nombres de dominio a cambio de cierto importe (entre 5 y algunas centenas de euros). Estos [registrars](registrar) son entidades privadas autorizadas por el [ICANN](https://es.wikipedia.org/wiki/Corporaci%C3%B3n_de_Internet_para_la_Asignaci%C3%B3n_de_Nombres_y_N%C3%BAmeros), tales como [Gandi](http://gandi.net), [OVH](http://ovh.com) o [BookMyName](http://bookmyname.com).
+Este sistema fue creado para poder memorizar más fácilmente las direcciones de servidores. Existen registros DNS en los cuales hay que apuntarse. Esto se hace con **registrars** que te alquilarán estos nombres de dominio a cambio de cierto importe (entre cinco y algunas centenas de euros). Estos [registrars](registrar) son entidades privadas autorizadas por el [ICANN](https://es.wikipedia.org/wiki/Corporaci%C3%B3n_de_Internet_para_la_Asignaci%C3%B3n_de_Nombres_y_N%C3%BAmeros), tales como [Gandi](http://gandi.net), [OVH](http://ovh.com) o [BookMyName](http://bookmyname.com).
 
 Es importante notar que los subdominios no necesariamente apuntan al dominio principal.
 
@@ -33,10 +33,5 @@ También puedes consultar las documentaciones específicas a estas varias [ofici
 
 **Atención** : Si eliges este modo de funcionamiento, tendrás más flexibilidad, pero nada será automático. Por ejemplo si quieres utilizar `webmail.mi-servidor.org`, tendrás que añadirlo manualmente en la interfaz de tu registrar.
 
-3. Tu instancia tiene un servicio DNS, lo que quiere decir que configura automáticamente sus registros DNS y que es posible delegarle la administración de estos registros. Por eso, tienes que indicar al **registrar** que es tu instancia Yunohost que es el servidor DNS de tu nombre de dominio creando un registro glue (a menudo denominado **glue record**) apuntando hacia la IP de tu instancia Yunohost.
+3. (Advanced, not 100% supported, do this only if you know what you're doing) Tu instancia tiene un servicio DNS, lo que quiere decir que configura automáticamente sus registros DNS y que es posible delegarle la administración de estos registros. Por eso, tienes que indicar al **registrar** que es tu instancia YunoHost que es el servidor DNS de tu nombre de dominio creando un registro glue (a menudo denominado **glue record**) apuntando hacia la IP de tu instancia YunoHost.
 <br><br>**Atención** : Si eliges este modo de funcionamiento, todas las configuraciones serán automatizadas, tendrás mucha flexibilidad pero la pérdida de tu servidor potencialmente traerá muchos problemas. **Elige este método si estás muy seguro de los que estás haciendo.**
-
-4. Una vez que tu servicio DNS está operacional, tu servidor puede utilizarlo pero hay que configurarlo, es el [revolvedor DNS](/dns_resolver).
-
-### IP Dinámica
-Si la dirección IP pública cambia, sigue este [tutorial](/dns_dynamicip).

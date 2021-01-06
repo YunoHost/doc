@@ -3,18 +3,18 @@
 <h3>Connettiti alla chat di supporto</h3>
 <center>
 <div class="alert alert-info" markdown="1" style="max-width:700px;">
-<strong>ProTips�</strong>
+<strong>ProTips™</strong>
 <ul style="text-align:left;">
-<li>Non chiedere tanto per chiedere, chiedi e basta !</li>
+<li>Non c'è bisogno di chiedere se puoi chiedere qualcosa, chiedi e basta !</li>
 <li><em>Sii paziente</em>, potrebbero servire alcuni minuti prima che qualcuno veda i tuoi messaggi.</li>
 </ul>
 </div>
 
-<iframe src="https://kiwiirc.com/client/irc.freenode.org:+6697/?nick=foobar|?&theme=mini#yunohost" style="border:0; width:100%; height:450px;"></iframe>
+<iframe src="https://kiwiirc.com/nextclient/?settings=7b72a0a81838360686798199ed53624f" style="width:100%;height:450px;border:0;display:block"></iframe>
 
 </br>
 </br>
-<em>Nota : questa stanza e disponibile via IRC (#yunohost su freenode - <a href="https://kiwiirc.com/client/irc.freenode.org:+6697/?nick=foobar|?&theme=mini#yunohost">usando kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, o Matrix <small>(#freenode_#yunohost:matrix.org - <a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">usando Riot</a>)</small></em>
+<em>Nota : questa stanza e disponibile via IRC (#yunohost su freenode - <a href="https://kiwiirc.com/nextclient/?settings=7b72a0a81838360686798199ed53624f">usando kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, o Matrix <small>(#freenode_#yunohost:matrix.org - <a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">usando Riot</a>)</small></em>
 </center>
 
 <h3>... o chiedi nel forum !</h3>

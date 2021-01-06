@@ -1,6 +1,6 @@
-# <img src="/images/transmission.png">Transmission
+# <img src="/images/transmission.png"> Transmission
 
-### What is  Transmission?
+### What is Transmission?
 
 Transmission is a share software based on BitTorrent protocol.
 * [Transmission web site](http://transmissionbt.com/)
@@ -30,10 +30,10 @@ scp (-r) /your/file/ root@your-domain.org:/home/yunohost.transmission/completed
 ```
 
 ##### How to download a complete folder?
-Once connected to your server, using [SSH](ssh), move to the download folder and zip it :
+Once connected to your server, using [SSH](/ssh), move to the download folder and ZIP it:
 ```bash
 cd /home/yunohost.transmission/completed
 zip -r your_archive.zip [dossier]
 ```
 
-More informations about file transfer using *scp*: http://doc.ubuntu-fr.org/ssh#transfert_-_copie_de_fichiers (french, need english documentation)
+More informations about file transfer using *scp*: http://doc.ubuntu-fr.org/ssh#transfert_-_copie_de_fichiers (French, need English documentation)

@@ -6,14 +6,15 @@ La configuration des DNS est une étape cruciale pour que votre serveur soit acc
 
 ### Qu’est-ce que c’est ?
 
-**N’hésitez pas à regarder la très bonne conférence de Stéphane Bortzmeyer :     
-http://www.iletaitunefoisinternet.fr/dns-bortzmeyer/**
+**N’hésitez pas à regarder la très bonne conférence de Stéphane Bortzmeyer :**   
+
+https://www.iletaitunefoisinternet.fr/post/1-dns-bortzmeyer/
 
 DNS signifie « Domain Name Server » en anglais, et est souvent employé pour désigner la configuration de vos noms de domaine. Vos noms de domaines doivent en effet pointer vers quelque chose (en général une adresse IP).
 
 **Par exemple** : `yunohost.org` renvoie vers `88.191.153.110`.
 
-Ce système a été créé pour pouvoir retenir plus facilement les adresses de serveur. Il existe donc des registres DNS dans lesquels il faut s’inscrire. Ceci peut être fait auprès de **registrars** qui vous feront louer ces noms de domaine contre une certaine somme (entre 5 et quelques centaines d’euros). Ces [registrars](registrar) sont des entités privées autorisées par l’[ICANN](http://fr.wikipedia.org/wiki/ICANN), telles que [Gandi](http://gandi.net), [OVH](http://ovh.com) ou [BookMyName](http://bookmyname.com).
+Ce système a été créé pour pouvoir retenir plus facilement les adresses de serveur. Il existe donc des registres DNS dans lesquels il faut s’inscrire. Ceci peut être fait auprès de **registrars** qui vous feront louer ces noms de domaine contre une certaine somme (entre cinq et quelques centaines d’euros). Ces [registrars](registrar) sont des entités privées autorisées par l’[ICANN](http://fr.wikipedia.org/wiki/ICANN), telles que [Gandi](http://gandi.net), [OVH](http://ovh.com) ou [BookMyName](http://bookmyname.com).
 
 Il est important de noter que les sous-domaines ne renvoient pas nécessairement au domaine principal.
 Si `yunohost.org` renvoie vers `88.191.153.110`, ça ne signifie pas que `backup.yunohost.org` renvoie vers la même IP. Vous devez donc configurer **tous** les domaines et sous-domaines que vous souhaitez utiliser.
@@ -35,10 +36,5 @@ Vous pouvez également consulter les documentations spécifiques à ces différe
 
 **Attention** : Si vous choisissez ce mode de fonctionnement, vous aurez plus de flexibilité, mais rien ne sera automatique. Par exemple si vous souhaitez utiliser `webmail.mon-serveur.org`, vous devrez l’ajouter manuellement chez votre registrar.
 
-3. Votre instance YunoHost possède un service DNS, ce qui veut dire qu’il configure automatiquement ses enregistrements DNS, et qu’il est possible de lui en déléguer la gestion. Pour ce faire, vous devez indiquer au **registrar** que c’est votre instance YunoHost qui est le serveur DNS de votre nom de domaine en créant un enregistrement glue (souvent appelé **glue record**) pointant vers l’IP de votre instance YunoHost.
-<br><br>**Attention** : Si vous choisissez ce mode de fonctionnement, toutes les configurations seront automatiques, vous disposerez d’une grande flexibilité, mais la perte de votre serveur entraînera potentiellement beaucoup d’ennuis. **Choisissez cette méthode si vous êtes sûr de vous.**
-
-4. Une fois votre service DNS opérationnel, votre serveur peut l’utiliser mais il faut le configurer, c’est le [résolveur DNS](/dns_resolver).
-
-### IP Dynamique
-Si l’adresse IP publique change, suivez ce [tutoriel](/dns_dynamicip).
+3. (Avancé, pas 100% supporté...) Votre instance YunoHost possède un service DNS, ce qui veut dire qu’il configure automatiquement ses enregistrements DNS, et qu’il est possible de lui en déléguer la gestion. Pour ce faire, vous devez indiquer au **registrar** que c’est votre instance YunoHost qui est le serveur DNS de votre nom de domaine en créant un enregistrement glue (souvent appelé **glue record**) pointant vers l’IP de votre instance YunoHost.
+<br><br>**Attention** : Si vous choisissez ce mode de fonctionnement, toutes les configurations seront automatiques, vous disposerez d’une grande flexibilité, mais la perte de votre serveur entraînera potentiellement beaucoup d’ennuis. **Choisissez cette méthode seulement si vous êtes à l'aise et comprenez les conséquences**

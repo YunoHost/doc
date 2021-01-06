@@ -41,7 +41,7 @@
   <div class="call-to-action">
     <a class="btn btn-primary btn-lg" href="/try">Provalo</a>
     <a class="btn btn-success btn-lg" href="/install">Per cominciare</a>
-    <p class="text-muted"><small><a href="https://forum.yunohost.org/t/yunohost-3-6-release-sortie-de-yunohost-3-6/8359">YunoHost v3.6</a></small></p>
+    <h2 style="margin-top: 0"><small><a href="https://forum.yunohost.org/c/announcement">Latest news</a></small></h2>
   </div>
 
   <div class="row cf">
@@ -112,6 +112,29 @@
     </p>
 
   </div>
+
+  <hr />
+
+  <div class="row cf">
+    <div class="text-center">
+    <h1>They support us &lt;3<br />
+    <small>We are thankful for our sponsors <br/>providing us with infrastructure and grants!
+    </h1>
+    <p style="margin-left:auto;margin-right:auto;">
+    <a style="padding: 5px;" href="https://nlnet.nl"><img src="/images/logo_nlnet.png" width="150px"/></a>
+    <a style="padding: 5px;" href="https://www.ngi.eu"><img src="/images/logo_ngi.png" width="130px"/></a>
+    <a style="padding: 5px;" href="https://www.codelutin.com"><img src="/images/logo_codelutin.png" width="100px"/></a>
+    </p>
+    <p style="margin-left:auto;margin-right:auto;">
+    <a style="padding: 5px;" href="https://www.globenet.org"><img src="/images/logo_globenet.png" width="150px"/></a>
+    <a style="padding: 5px;" href="https://www.gitoyen.net"><img src="/images/logo_gitoyen.png" width="150px"/></a>
+    <a style="padding: 5px;" href="https://tetaneutral.net"><img src="/images/logo_tetaneutral.png" width="90px"/></a>
+    <a style="padding: 5px;" href="https://ldn-fai.net"><img src="/images/logo_ldn.png" width="120px"/></a>
+    <a style="padding: 5px;" href="https://www.nbs-system.com"><img src="/images/logo_nbs.png" width="130px"/></a>
+    </p>
+    </div>
+  </div>
+
 
 </div><!-- boring-part -->
 

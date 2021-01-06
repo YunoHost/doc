@@ -1,4 +1,4 @@
-# Migrer ses emails d'un ancien serveur mail vers YunoHost
+# Migrer ses emails d’un ancien serveur mail vers YunoHost
 
 *[Documentation en rapport avec l’email de YunoHost](/email)*.
 

@@ -1,12 +1,11 @@
 # Administration depuis l’API ou une application externe
 
 Toutes les actions exécutables en ligne de commande le sont également via une API. L’API est accessible à l’adresse https://votre.serveur/yunohost/api.
-Pour le moment, il n'existe pas de documentation des différentes routes ... mais
-vous pouvez trouver l'actionmap [ici](https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/actionsmap/yunohost.yml) (en particulier les clefs `api`)
+Pour le moment, il n'existe pas de documentation des différentes routes... mais vous pouvez trouver l'actionmap [ici](https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/actionsmap/yunohost.yml) (en particulier les clefs `api`)
 
-## Avec `curl`
+## Avec cURL
 
-Il faut d’abord récupérer un cookie de connexion pour ensuite réaliser les actions. Voici un exemple via curl :
+Il faut d’abord récupérer un cookie de connexion pour ensuite réaliser les actions. Voici un exemple avec cURL :
 
 ```bash
 # Login (avec mot de passe admin)
@@ -22,11 +21,11 @@ curl -k -i -H "Accept: application/json" \
         | grep } | python -mjson.tool
 ```
 
-# Avec une classe PHP
+## Avec une classe PHP
 
 Pour simplifier l’administration à distance d’une instance YunoHost dans le cadre d’un projet CHATONS/Librehosters, des classes API ont été développées par des utilisateurs.
 
-Par exemple, cette [classe PHP](https://github.com/scith/yunohost-api-php) vous permettra d’administrer votre instance YunoHost depuis une application PHP (site web, outil de gestion de capacité…).
+Par exemple, cette [classe PHP](https://github.com/scith/yunohost-api-php) vous permettra d’administrer votre instance YunoHost depuis une application PHP (site Web, outil de gestion de capacité...).
 
 Voici un exemple de code PHP permettant d’ajouter un utilisateur dans votre instance YunoHost :
 
@@ -55,4 +54,3 @@ if ($ynh->login()) {
     exit;
 }
 ```
-

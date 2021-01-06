@@ -1,18 +1,12 @@
-# Échanger des fichiers avec son serveur à l'aide d'une interface graphique
+# Échanger des fichiers avec son serveur à l’aide d’une interface graphique
 
-Cette page explique comment échanger des fichiers (sauvegardes, musiques,
-photos, films, ...) avec son serveur à l'aide d'un outil graphique. C'est donc
-une méthode alternative au fait d'utiliser la commande `scp` qui peut être jugée
-technique et cryptique, ou de devoir installer Nextcloud.
+Cette page explique comment échanger des fichiers (sauvegardes, musiques, photos, films...) avec son serveur à l'aide d'un outil graphique. C'est donc une méthode alternative au fait d'utiliser la commande `scp` qui peut être jugée technique et cryptique, ou de devoir installer Nextcloud.
 
-[FileZilla](https://filezilla-project.org/) permet d'accomplir cela. Il s'agit
-d'un logiciel libre disponible pour Windows, Linux et MacOS.
+[FileZilla](https://filezilla-project.org/) permet d'accomplir cela. Il s'agit d'un logiciel libre disponible pour Windows, GNU/Linux et macOS.
 
 ## Télécharger et installer FileZilla
 
-Vous pouvez télécharger FileZilla depuis [cette page](https://filezilla-project.org/download.php?type=client).
-Le site devrait détecter automatiquement la version nécessaire pour votre ordinateur.
-Sinon, suivez les instructions pour [installer le client](https://wiki.filezilla-project.org/Client_Installation)
+Vous pouvez télécharger FileZilla depuis [cette page](https://filezilla-project.org/download.php?type=client). Le site devrait détecter automatiquement la version nécessaire pour votre ordinateur. Sinon, suivez les instructions pour [installer le client](https://wiki.filezilla-project.org/Client_Installation)
 
 Installez le programme et lancez *Filezilla*.
 
@@ -52,13 +46,13 @@ Installez le programme et lancez *Filezilla*.
 
 2. Dans le panneau de droite, vous pouvez aller dans `/home/yunohost.backup/archives/` pour trouver les archives de [sauvegardes](/backup).
 
-   ![le chemin où les sauvegardes sont situées sur Yunohost](images/filezilla_7.png)
+   ![le chemin où les sauvegardes sont situées sur YunoHost](images/filezilla_7.png)
 
 <div class="alert alert-warning">
   <span class="glyphicon glyphicon-cloud-download"></span> Assurez-vous de télécharger à la fois le fichier `.tar.gz` et le fichier `.json`
 </div>
 
-![Copier les sauvegardes de Yunohost sur l'ordinateur local](images/filezilla_8.png)
+![Copier les sauvegardes de YunoHost sur l'ordinateur local](images/filezilla_8.png)
 
 ----
 
@@ -69,9 +63,9 @@ Sources
 
 ## Alternatives à Filezilla
 
-### Sous Linux
+### Sous GNU/Linux
 
-Depuis n'importe quel Linux récent, vous devriez pouvoir utiliser le gestionnaire de fichiers pour accéder à votre serveur.
+Depuis n'importe quel GNU/Linux récent, vous devriez pouvoir utiliser le gestionnaire de fichiers pour accéder à votre serveur.
 
 Nautilus de Gnome3 intègre de base des fonctionnalités similaires à FileZilla :
 
@@ -82,6 +76,6 @@ Nautilus de Gnome3 intègre de base des fonctionnalités similaires à FileZilla
 
 * [WinSCP](https://winscp.net/) est aussi un bon candidat pour Windows
 
-### Sous MacOS
+### Sous macOS
 
-* [Cyberduck](https://cyberduck.io/) logiciel libre pour MacOS
+* [Cyberduck](https://cyberduck.io/) logiciel libre pour macOS

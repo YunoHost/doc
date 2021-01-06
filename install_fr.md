@@ -70,7 +70,7 @@ Cette page liste plusieurs types d’installations, classés par catégories.
 
 <div class="col col-md-3 text-center">
 <a href="/install_on_debian"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
-<b><p>Sur Debian 9/Stretch</p></b></a>
+<b><p>Sur Debian 10/Buster</p></b></a>
 </div>
 
 <div class="col col-md-3 text-center">
@@ -78,7 +78,7 @@ Cette page liste plusieurs types d’installations, classés par catégories.
 </div>
 
 <div class="col col-md-3 text-center">
-<a href="/docker"><img src="/images/docker.png" height=150 style="vertical-align:bottom"><b><p>(Non-officiel!) Images docker</p></b></a>
+<a href="/docker"><img src="/images/docker.png" height=150 style="vertical-align:bottom"><b><p>(Non-officiel !) Images docker</p></b></a>
 </div>
 
 </div>

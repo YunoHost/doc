@@ -1,5 +1,4 @@
-Domaines, configuration DNS et certificats
-==========================================
+# Domaines, configuration DNS et certificats
 
 YunoHost permet de gérer et de servir plusieurs domaines sur un même serveur. Vous pouvez donc héberger, par exemple, un blog et un Nextcloud sur un premier domaine `yolo.com`, et un client de messagerie web sur un second domaine `swag.nohost.me`. Chaque domaine est automatiquement configuré pour pouvoir gérer des services web, des courriels et une messagerie instantannée XMPP.
 
@@ -9,25 +8,21 @@ Le domaine choisi lors de la postinstall est défini comme le domaine principal 
 
 Enfin, il faut noter que, dans le contexte de YunoHost, il n'y a pas de hiérarchie entre les domaines qu'il connaît. Dans l'exemple précédent, on peut ajouter un troisième domaine `foo.yolo.com` - mais il serait considéré comme un domaine indépendant de `yolo.com`.
 
-Caractères non latins
------------------
+## Caractères non latins
 
 Si votre domain contient des caractères spéciaux, non latins, vous devez utiliser sa [version internationalisée](https://fr.wikipedia.org/wiki/Nom_de_domaine_internationalis%C3%A9) en [Punycode](https://fr.wikipedia.org/wiki/Punycode). Vous pouvez utiliser [ce convertisseur](https://www.charset.org/punycode), et utiliser le nom de domaine converti dans YunoHost.
 
-Configuration DNS
------------------
+## Configuration DNS
 
 DNS (Domain Name System) est un système qui permet aux ordinateurs du monde entier de traduire les noms de domaine lisibles par l'homme (comme `yolo.com`) en adresses IP compréhensibles par les machines (comme `11.22.33.44`). Pour que cette traduction (et d'autres fonctionnalités) fonctionne, il faut configurer soigneusement les enregistrements DNS. 
 
 YunoHost peut générer une configuration DNS recommandée pour chaque domaine, y compris les enregistrements nécessaires pour les parties emails et XMPP. La configuration DNS recommandée est disponible dans l'administrateur web via Domaine > (le domaine) > configuration DNS, ou avec la commande `yunohost domain dns-conf the.domain.tld`.
 
-Certificats SSL/HTTPS
-----------------------
+## Certificats SSL/HTTPS
 
 Un autre aspect important de la configuration des domaines est le certificat SSL/HTTPS. YunoHost est intégré avec Let's Encrypt, de sorte qu'une fois que votre serveur est correctement accessible depuis n'importe qui sur Internet via le nom de domaine, l'administrateur peut demander l'installation d'un certificat Let's Encrypt. Voir la documentation sur les [certificats](/certificate) pour plus d'informations.
 
-Sous-chemins vs. domaines individuels par application
------------------------------------------------------
+## Sous-chemins vs. domaines individuels par application
 
 Dans le contexte de YunoHost, il est assez courant d'avoir un seul (ou quelques) domaines sur lesquels plusieurs applications sont installées dans des "sous-chemins", de sorte que l'on se retrouve avec quelque chose comme ceci : 
 

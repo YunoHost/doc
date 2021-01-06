@@ -1,4 +1,4 @@
-## Collegarsi a Yunohost attraverso un Hidden Service
+## Collegarsi a YunoHost attraverso un Hidden Service
 <div class="alert alert-warning">
 Questo tutorial non è completo! Con queste impostazioni alcuni dati possono essere rivelati come ad esempio il dominio principale del tuo yunohost, di conseguenza non può essere considerato un reale "Hidden service".
 </div>
@@ -31,7 +31,7 @@ cat /var/lib/tor/hidden_service/hostname
 
 Il dominio dell'hidden service sarà una cosa tipo *random123456789.onion*
 
-### Aggiungi il dominio .onion a Yunohost
+### Aggiungi il dominio .onion a YunoHost
 ```bash
 yunohost domain add random123456789.onion
 ```
@@ -43,7 +43,7 @@ Se non vuoi essere rediretto al portale SSO al login puoi disattivare SSOwat spe
 #access_by_lua_file /usr/share/ssowat/access.lua;
 ```
 
-### Riavvia nginx
+### Riavvia NGINX
 ```bash
 service nginx restart
 ```

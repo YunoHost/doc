@@ -26,9 +26,7 @@ Put your USB stick on, select your YunoHost ISO and click "OK"
 
 ### With `dd`
 
-If you are on Linux / Mac and know your way around command line, you may also
-flash your USK stick or SD card with `dd`. You can identify which device corresponds to your
-USB stick or SD card with `fdisk -l` or `lsblk`. An SD card name typically is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.
+If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.
 
 Then run :
 
@@ -43,6 +41,6 @@ For older devices, you might want to burn a CD/DVD. The software to use depends 
 
 * On Windows, use [ImgBurn](http://www.imgburn.com/) to write the image file on the disc
 
-* On Mac OS, use [Disk Utility](http://support.apple.com/kb/ph7025)
+* On macOS, use [Disk Utility](http://support.apple.com/kb/ph7025)
 
 * On GNU/Linux, you have plenty of choices, like [Brasero](https://wiki.gnome.org/Apps/Brasero) or [K3b](http://www.k3b.org/)

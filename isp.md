@@ -6,7 +6,7 @@ Here is a non-comprehensive list of internet service providers by country, which
 
 A "no" may cause problems for using your server or may require you to make additional configuration changes. Status in brackets indicates the default behavior.
 
-A list of French and Belgian ISPs is available on the [french page](/isp).
+A list of French and Belgian ISPs is available on the [french page](/isp_fr).
 
 ### USA
 | Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
@@ -14,11 +14,12 @@ A list of French and Belgian ISPs is available on the [french page](/isp).
 | Cox | Multiple | Yes | No. Only for business class customer. | No | No | Yes, as a business class customer |
 | Charter | Multiple | Yes | No. Only for business class customer. | No | No | Yes, as a business class customer |
 | DSLExtreme | Multiple | Yes | Yes | No | No | Yes, extra charge. |
+| AT&T| Multiple | Yes | No. Only for business class customer. | unknown. | unknown. | unknown. |
 
 ### UK
 | Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
 | --- | --- | --- | --- | --- | --- | --- |
-| BT Internet | - | - | Yes| - | - | No |
+| BT Internet | Yes | - | Yes| - | - | No |
 | Virgin Media | Yes | - | - | - | No | No |
 
 ### Brazil
@@ -54,7 +55,7 @@ Most of non business IP provided by ISP are blacklisted.
 | Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
 | --- | --- | --- | --- | --- | --- | --- |
 | Sunrise | Multiple | No | Yes | No | - | - |
-| Swisscom | Multiple | No | Yes | No | - | - |
+| Swisscom | Multiple | No | Yes | No | No | No |
 | VTX | Multiple | No | Yes | No | - | - |
 
 If you want to add international ISPs information, please do consider [modifying this page](/write_documentation).

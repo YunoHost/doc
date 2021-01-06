@@ -1,4 +1,4 @@
-#Blacklist forms
+# Blacklist forms
 
 It could happen sometimes that your IP is blacklisted by some email provider, or anti-spam services.
 

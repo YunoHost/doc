@@ -1,6 +1,6 @@
 # Backing up your server and apps
 
-Backing up your server, apps and data is an important concern when administrating a server. This protects you from unexpected events that could happen (server lost in a fire, database corruption, loss of access, server compromised, ...). The backup policy you will put in place depends of the importance of the services and data hosted. For instance you won't care too much about having backup on a test server, but you will care about having a backup of critical data of your association or company, and having this backup *in a different physical place*.
+Backing up your server, apps and data is an important concern when administrating a server. This protects you from unexpected events that could happen (server lost in a fire, database corruption, loss of access, server compromised...). The backup policy you will put in place depends of the importance of the services and data hosted. For instance you won't care too much about having backup on a test server, but you will care about having a backup of critical data of your association or company, and having this backup *in a different physical place*.
 
 ## Backups in the context of YunoHost
 
@@ -16,13 +16,13 @@ The current default method consists in creating a `.tar.gz` archive containing a
 
 You can easily create backup archives from the webadmin by going in Backups > Local storage and clicking on "New backup". You will then be asked to select which configuration, data and apps you want to backup.
 
-![picture of Yunohost's backup pannel](/images/backup.png)
+![picture of YunoHost's backup pannel](/images/backup.png)
 
 ### From the command line
 
-You can create a new backup archive with the command line. Here are a few simple example of commands and their corresponding behavior :
+You can create a new backup archive with the command line. Here are a few simple example of commands and their corresponding behavior:
 
-- Backing up everything (all system parts and apps) :
+- Backing up everything (all system parts and apps):
 
   ```bash
   yunohost backup create
@@ -61,7 +61,6 @@ When performing an upgrade, apps with large quantity of data will, usually, do a
 
 To manually disable the backup of large data, for application that implement that feature, you can set the variable `BACKUP_CORE_ONLY`. To do so, the variable have to be set before the backup command: `sudo BACKUP_CORE_ONLY=1 yunohost backup create --apps nextcloud`. Be careful though that mean you will have to backup user data yourself. But doing so, you will be able to do incremental or differential backups of this large amount of data (which is not an option provided by yunohost yet).
 
-
 ## Downloading and uploading backups
 
 After creating backup archives, it is possible to list and inspect them via the corresponding views in the webadmin, or via `yunohost backup list` and `yunohost backup info <archivename>` from the command line. By default, backups are stored in `/home/yunohost.backup/archives/`.
@@ -70,7 +69,7 @@ Currently, the most accessible way to download archives is to use the program Fi
 
 Alternatively, a solution can be to install Nextcloud or a similar app and configure it to be able to access files in `/home/yunohost.backup/archives/` from a web browser.
 
-One solution consists in using `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. Hence, from a machine running Linux, you should be able to run the following to download a specific backup:
+One solution consists in using `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. Hence, from a machine running GNU/Linux, you should be able to run the following to download a specific backup:
 
 ```bash
 scp admin@your.domain.tld:/home/yunohost.backup/archives/<archivename>.tar.gz ./
@@ -88,7 +87,7 @@ scp /path/to/your/<archivename>.tar.gz admin@your.domain.tld:/home/yunohost.back
 
 Go in Backup > Local storage and select your archive. You can then select which items you want to restore, then click on 'Restore'.
 
-![picture of Yunohost's restore pannel](/images/restore.png)
+![picture of YunoHost's restore pannel](/images/restore.png)
 
 ### From the command line
 
@@ -96,7 +95,7 @@ From the command line, you can run `yunohost backup restore <archivename>` (with
 
 ### Constraints
 
-To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app which is already installed ... which means that to restore an old version of an app, you must first uninstall it.
+To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app which is already installed... which means that to restore an old version of an app, you must first uninstall it.
 
 ### Restoring during the postinstall
 
@@ -118,49 +117,52 @@ yunohost backup restore <archivename>
 
 ### Storing backups on a different drive
 
-If you want, you can connect and mount an external drive to store backup archives on it (among other things). For this, we first move the existing archives then add a symbolic link.
+If you want, you can connect and mount an external drive to store backup archives on it (among other things). For this, plug in the drive and make sure that next time it is mounted automatically, by following the instruction at [Adding an external storage to your server](https://yunohost.org/#/external_storage). 
+
+Then, move the existing archives and then add a symbolic link.
 
 ```bash
 PATH_TO_DRIVE="/media/my_external_drive" # For instance, depends of where you mounted your drive
-mv /home/yunohost.backup/archives $PATH_TO_DRIVE/yunohost_backup_archives
-ln -s $PATH_TO_DRIVE/yunohost_backup_archives /home/yunohost.backup/archives
+mkdir $PATH_TO_DRIVE/yunohost_backup_archives # On your external drive create the folder where the backups will go
+mv /home/yunohost.backup/archives $PATH_TO_DRIVE/yunohost_backup_archives # Move the archive folder including existing backups (if you made them) to the new folder on the external drive
+ln -s $PATH_TO_DRIVE/yunohost_backup_archives /home/yunohost.backup/archives # Create a symbolic link from the old local folder to the new folder on the external drive
 ```
 
 ### Automatic backups
 
-You can add a simple cron job to trigger automatic backups regularly. For instance, to backup your wordpress weekly, create a file `/etc/cron.weekly/backup-wordpress` with the following content :
+You can add a simple cron job to trigger automatic backups regularly. For instance, to backup your wordpress weekly, create a file `/etc/cron.weekly/backup-wordpress` with the following content:
 
 ```bash
 #!/bin/bash
 yunohost backup create --apps wordpress
 ```
 
-then make it executable :
+then make it executable:
 
 ```bash
 chmod +x /etc/cron.weekly/backup-wordpress
 ```
 
-Be careful what you backup exactly and when : you don't want to end up with your whole disk space saturated because you backuped 30 GB of data every day.
+Be careful what you backup exactly and when: you don't want to end up with your whole disk space saturated because you backuped 30 GB of data every day.
 
 #### Backing your server on a remote server
 
-You can follow this tutorial on the forum to setup Borg between two servers : <https://forum.yunohost.org/t/how-to-backup-your-yunohost-server-on-another-server/3153>
+You can follow this tutorial on the forum to setup Borg between two servers: <https://forum.yunohost.org/t/how-to-backup-your-yunohost-server-on-another-server/3153>
 
-Alternatively, the app Archivist allows to setup a similar system : <https://forum.yunohost.org/t/new-app-archivist/3747>
+Alternatively, the app Archivist allows to setup a similar system: <https://forum.yunohost.org/t/new-app-archivist/3747>
 
 #### Avoiding the backup of some folders
 If needed, you can specify that some `/home/user` folders are left out of the `yunohost backup` command, by creating a blank file named `.nobackup` in them.
 
 #### Full backup with `dd`
 
-If you are using an ARM board, another method for doing a full backup can be to create an image of the SD card. For this, poweroff your ARM board, get the SD card in your computer then create a full image with something like :
+If you are using an ARM board, another method for doing a full backup can be to create an image of the SD card. For this, poweroff your ARM board, get the SD card in your computer then create a full image with something like:
 
 ```bash
 dd if=/dev/mmcblk0 of=./backup.img status=progress
 ```
 
-(replace `/dev/mmcblk0` with the actual device of your sd card)
+(replace `/dev/mmcblk0` with the actual device of your SD card)
 
 You can also create a compressed image using gzip this way:
 ```bash

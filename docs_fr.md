@@ -1,4 +1,4 @@
-#Documentation
+# Documentation
 
 <p class="lead">
 La documentation de YunoHost s’articule autour de deux sections :
@@ -27,6 +27,8 @@ La documentation de YunoHost s’articule autour de deux sections :
    * [Salons de discussions](/chat_rooms)
    * [Communication extérieure](/communication)
    * [Support / Aide](/help)
+   * [Mécénes et partenaires](/sponsors_partners_fr)
 
-* Exemple d'utilisation:
+* Exemple d'utilisation :
    * [YunoHost pour les organisations à but non lucratif](/use_case_non-profit_organisations)
+   * [YunoHost pour les CHATONS (Collectif des Hébergeurs Alternatifs, Transparents, Ouverts, Neutres et Solidaires)](https://wiki.chatons.org/doku.php/yunohost)

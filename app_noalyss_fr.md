@@ -6,7 +6,7 @@ Toute les infos sur ce logiciel sont disponible sur le [site du projet](http://w
 
 Pour apprendre à l'utiliser je vous invite à lire le [wiki du projet](http://www.noalyss.eu/?page_id=46&lang=fr_FR)
 
-Le github du module Yunohost est [ici](https://github.com/YunoHost-Apps/noalyss_ynh)
+Le github du module YunoHost est [ici](https://github.com/YunoHost-Apps/noalyss_ynh)
 
 Vous pouvez essayer le projet [ici](http://demo.noalyss.eu/index.php) avec les identifiants : demo /demo
 

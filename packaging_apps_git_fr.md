@@ -75,7 +75,7 @@ Lors de la création d'une pull request à partir d'un fork, pour faciliter le t
 
 Conformément à la [YEP 1.7](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines.md#yep-17), votre application doit être intégrée à l'organisation YunoHost-Apps, mais si vous n'avez jamais contribué à une application auparavant ou si vous n'avez jamais eu d'application dans cette organisation, vous n'en aurez peut-être pas l'autorisation.
 
-Tout d'abord, vous devez avoir la permission d'écrire dans l'organisation, pour ce faire, demandez au groupe Apps sur le salon xmpp Apps.
+Tout d'abord, vous devez avoir la permission d'écrire dans l'organisation, pour ce faire, demandez au groupe Apps sur le salon XMPP Apps.
 
 Pour transférer votre application sur l'organisation YunoHost-Apps, allez dans votre dépôt et dans l'onglet *Settings*.  
 En bas de la page, vous trouverez *Transfer ownership*.  

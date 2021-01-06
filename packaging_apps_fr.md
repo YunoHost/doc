@@ -4,8 +4,8 @@ Ce document a pour but de vous apprendre à packager une application pour YunoHo
 
 ### Prérequis
 Pour packager une application, voici les prérequis :
-* Un compte sur un serveur git comme [GitHub](https://github.com/) pour pouvoir ensuite publier l’application ;
-* Maîtriser un minimum [git](/packaging_apps_git), le Shell et d’autres notions de programmation ;
+* Un compte sur un serveur Git comme [GitHub](https://github.com/) pour pouvoir ensuite publier l’application ;
+* Maîtriser un minimum [Git](/packaging_apps_git), le Shell et d’autres notions de programmation ;
 * Une [machine virtuelle ou sur un serveur distant](/install) ou un environnement de développement, [ynh-dev](https://github.com/yunohost/ynh-dev) ou [VirtualBox](/packaging_apps_virtualbox), pour packager et tester son paquet.
 
 
@@ -33,8 +33,8 @@ Comme les instances de YunoHost possèdent une architecture unifiée, vous serez
 
 <a class="btn btn-lg btn-default" href="/packaging_apps_arguments_management">Gestion des arguments</a>
 
-### Configuration Nginx
-<a class="btn btn-lg btn-default" href="/packaging_apps_nginx_conf">Configuration Nginx</a>
+### Configuration NGINX
+<a class="btn btn-lg btn-default" href="/packaging_apps_nginx_conf">Configuration NGINX</a>
 
 ### Multi-instance
 <a class="btn btn-lg btn-default" href="/packaging_apps_multiinstance">Multi-instance</a>
@@ -50,7 +50,7 @@ Dans de nombreuses situations, vous pouvez vouloir indexer un fichier de log pou
 
 Il est possible de spécifier la date de début en commençant le nom de fichier par la date `YYYYMMDD-HHMMSS`.
 
-Exemple de fichier de log d'indexation:
+Exemple de fichier de log d'indexation :
 ```bash
 log_path: /chemin/vers/le/fichier.log
 ```
@@ -83,7 +83,7 @@ Vous trouverez ci-dessous une liste des points à vérifier concernant la qualit
 * Votre script d’installation utilise une méthode d’installation en ligne de commande plutôt qu’un appel curl via un formulaire web d’installation ;
 * Votre script d’installation enregistre les réponses de l’utilisateur ;
 * Vous avez vérifié les sources de l’application avec une somme de contrôle (sha256, sha1 ou md5) ou une signature PGP ;
-* Vos scripts ont été testés sur Debian Stretch 32 bits, 64 bits et ARM ;
+* Vos scripts ont été testés sur Debian Buster 32 bits, 64 bits et ARM ;
 * Les scripts backup et restore sont présents et fonctionnels.
 
 Pour mesurer la qualité d'un paquet, celui-ci obtiendra un [niveau](/packaging_apps_levels), déterminé en fonction de divers critères d'installation et selon le respect des [règles de packaging](/packaging_apps_guidelines).
@@ -114,4 +114,4 @@ Un serveur d'intégration continue est a disposition des packagers désirant tes
 
 **!! Section obsolète au 08/03/19** - Le fonctionnement du projet est en cours d'évolution sur ce point.
 
-Pour qu’une application devienne officielle, elle doit être suffisamment testée, stable et fonctionner sous Debian Stretch 64 bits, 32 bits et ARM. Si ces conditions vous paraissent réunies, demandez l’[intégration officielle](https://github.com/YunoHost/apps) de votre application.
+Pour qu’une application devienne officielle, elle doit être suffisamment testée, stable et fonctionner sous Debian Buster 64 bits, 32 bits et ARM. Si ces conditions vous paraissent réunies, demandez l’[intégration officielle](https://github.com/YunoHost/apps) de votre application.

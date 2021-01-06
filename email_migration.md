@@ -2,7 +2,7 @@
 
 *[Documentation linked to YunoHost email](/email)*.
 
-Migration of his emails from a server to an other can be done with two recommended tools: ImapSync or Larch.
+Migration of emails from one server to another can be done with two recommended tools: ImapSync or Larch.
 
 This tool must be installed on your desktop computer. The transfer method looks at this schema:
 
@@ -16,7 +16,7 @@ Install ImapSync on your client computer by following this [guide](http://imapsy
 ```bash
 sudo dnf install imapsync # Under Fedora
 ```
-Transfer emails from a server to an other:
+Transfer emails from one server to another:
 ```bash
 imapsync --host1 <domain/IP> --port1 993 --ssl1 --user1 <user> --password1 <password> \
 --host2 <domain/IP> --port2 993 --ssl2 --user2 <user> --password2 <password>
@@ -32,8 +32,8 @@ After beforehand installed `gem`, install `larch` on your client computer:
 ```bash
 sudo gem install larch
 ```
-Transfer emails from a server to an other:
+Transfer emails from one server to another:
 ```bash
 larch -a -f imaps://serveur_d'origine.org -t imaps://serveur_de_destination.org
 ```
-For other type of tranfer refer you to Larch documentation.
+For other types of transfer refer to [Larch documentation](https://github.com/rgrove/larch#label-Usage).

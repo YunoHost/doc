@@ -1,6 +1,6 @@
 # Instalación en un ordenador
 
-*Encontrar otros medios de instalar Yunohost **[aquí](/install)**.*
+*Encontrar otros medios de instalar YunoHost **[aquí](/install)**.*
 
 ## Prerrequisitos
 
@@ -10,9 +10,9 @@
 
 * Un ordenador compatible x86 dedicado a YunoHost : portátil, netbook, ordenador de escritorio. Puedes reutilizar calquiera máquina con **256 Mo de RAM mínimo**
 * Otro ordenador para examinar esta guía y acceder a tu servidor
-* Un [proveedor de Internet ético](/isp), de preferencia con acceso de buena velocidad   (ascendente)
+* Un [proveedor de Internet ético](/isp), de preferencia con acceso de buena velocidad (ascendente)
 * Una **memoria USB** con capacidad mínima de 1Go **O** un **CD en blanco** estándar
-* ***Casos particulares*** : si tu servidor no tiene tarjeta gráfica, hay que preparar un iso que se inicie sobre el puerto de serie](https://github.com/luffah/debian-mkserialiso).
+* ***Casos particulares*** : si tu servidor no tiene tarjeta gráfica, hay que preparar un ISO que se inicie sobre el puerto de serie](https://github.com/luffah/debian-mkserialiso).
 
 ---
 

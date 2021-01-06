@@ -14,16 +14,16 @@ disrupting their core function._
 **Customization brought by the package:**
 
 * grant MySQL statistics access via a `netdata` user
-* nginx root log statistics via putting `netdata` user in the `adm` group
+* NGINX root log statistics via putting `netdata` user in the `adm` group
 * Dovecot statistics via giving access to Dovecot stats stocket to `netdata` user (works only with Dovecot 2.2.16+)
 
 **Further recommendations:**
 We don't allow YunoHost packages to make sensible changes to system files. So here are further customizations you can make to allow more monitoring:
 
-* Nginx: 
+* NGINX: 
   * requests/connections: follow [these recommandations](https://github.com/firehol/netdata/tree/master/python.d#nginx) to enable `/stab_status` (for example by putting the `location` section in `/etc/nginx/conf.d/yunohost_admin.conf`
-  * weblogs: you can monitor all your nginx weblogs for errors; follow [these recommendations](https://github.com/firehol/netdata/tree/master/python.d#nginx_log)
-* phpfpm: follow [these recommandations](https://github.com/firehol/netdata/tree/master/python.d#phpfpm)
+  * weblogs: you can monitor all your NGINX weblogs for errors; follow [these recommendations](https://github.com/firehol/netdata/tree/master/python.d#nginx_log)
+* PHP-FPM: follow [these recommandations](https://github.com/firehol/netdata/tree/master/python.d#phpfpm)
 
 ## Features
 
@@ -50,15 +50,15 @@ We don't allow YunoHost packages to make sensible changes to system files. So he
 
  - **Extensible**<br/>
    you can monitor anything you can get a metric for,
-   using its Plugin API (anything can be a netdata plugin,
-   BASH, python, perl, node.js, java, Go, ruby, etc)
+   using its Plugin API (anything can be a NetData plugin,
+   BASH, Python, Perl, Node.JS, Java, Go, Ruby, etc.)
 
  - **Embeddable**<br/>
    it can run anywhere a Linux kernel runs (even IoT)
    and its charts can be embedded on your web pages too
 
  - **Customizable**<br/>
-   custom dashboards can be built using simple HTML (no javascript necessary)
+   custom dashboards can be built using simple HTML (no JavaScript necessary)
 
  - **Zero configuration**<br/>
    auto-detects everything, it can collect up to 5000 metrics
@@ -78,7 +78,7 @@ We don't allow YunoHost packages to make sensible changes to system files. So he
    Each node may have different metrics retention policy and run with or without health monitoring.
 
  - **time-series back-ends supported**<br/>
-   can archive its metrics on `graphite`, `opentsdb`, `prometheus`, json document DBs, in the same or lower detail
+   can archive its metrics on `graphite`, `opentsdb`, `prometheus`, JSON document DBs, in the same or lower detail
    (lower: to prevent it from congesting these servers due to the amount of data collected)
 
 ![netdata](https://cloud.githubusercontent.com/assets/2662304/14092712/93b039ea-f551-11e5-822c-beadbf2b2a2e.gif)
@@ -112,18 +112,18 @@ This is a list of what it currently monitors:
 
 - **IPv4 networking**<br/>
   bandwidth, packets, errors, fragments,
-  tcp: connections, packets, errors, handshake,
-  udp: packets, errors,
+  TCP: connections, packets, errors, handshake,
+  UDP: packets, errors,
   broadcast: bandwidth, packets,
   multicast: bandwidth, packets
 
 - **IPv6 networking**<br/>
   bandwidth, packets, errors, fragments, ECT,
-  udp: packets, errors,
-  udplite: packets, errors,
+  UDP: packets, errors,
+  UDP-Lite: packets, errors,
   broadcast: bandwidth,
   multicast: bandwidth, packets,
-  icmp: messages, errors, echos, router, neighbor, MLDv2, group membership,
+  ICMP: messages, errors, echos, router, neighbor, MLDv2, group membership,
   break down by type
 
 - **Interprocess Communication - IPC**<br/>
@@ -171,7 +171,7 @@ This is a list of what it currently monitors:
 - **Apache and lighttpd web servers**<br/>
    `mod-status` (v2.2, v2.4) and cache log statistics, for multiple servers
 
-- **Nginx web servers**<br/>
+- **NGINX web servers**<br/>
   `stub-status`, for multiple servers
 
 - **Tomcat**<br/>
@@ -193,13 +193,13 @@ This is a list of what it currently monitors:
   multiple servers, each showing: operations, hit rate, memory, keys, clients, slaves
 
 - **mongodb**<br/>
-  operations, clients, transactions, cursors, connections, asserts, locks, etc
+  operations, clients, transactions, cursors, connections, asserts, locks, etc.
 
 - **memcached databases**<br/>
   multiple servers, each showing: bandwidth, connections, items
 
 - **elasticsearch**<br/>
-  search and index performance, latency, timings, cluster statistics, threads statistics, etc
+  search and index performance, latency, timings, cluster statistics, threads statistics, etc.
 
 - **ISC Bind name servers**<br/>
   multiple servers, each showing: clients, requests, queries, updates, failures and several per view metrics
@@ -225,10 +225,10 @@ This is a list of what it currently monitors:
   multiple servers, each showing: clients bandwidth and requests, servers bandwidth and requests
 
 - **HAproxy**<br/>
-  bandwidth, sessions, backends, etc
+  bandwidth, sessions, backends, etc.
 
 - **varnish**<br/>
-  threads, sessions, hits, objects, backends, etc
+  threads, sessions, hits, objects, backends, etc.
 
 - **OpenVPN**<br/>
   status per tunnel

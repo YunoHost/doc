@@ -1,5 +1,9 @@
 # Installer YunoHost manuellement
 
+<div class="alert alert-info">
+Cette procédure fonctionne seulement sur des machines avec **Debian 10** <small>(et **kernel >= 3.12**)</small>)
+</div>
+
 Une fois que vous avez accès à votre serveur (directement ou par SSH), vous pouvez installer YunoHost en exécutant cette commande en tant que root :
 
 ```bash
@@ -14,5 +18,5 @@ Une fois l'installation terminée, il vous faudra [**procéder à la post-instal
 
 **Note pour les utilisateurs avancés inquiets à propos de l'approche `curl|bash`**
 
-Si vous êtes suspicieux de la tendance à utiliser `curl|bash` (ou commandes similaires) pour déployer des logiciels, prenez le temps de lire ["Is curl|bash insecure?"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) sur le blog de Sandstom, et possiblement [cette discussion sur Hacker News](https://news.ycombinator.com/item?id=12766350).
+Si vous êtes suspicieux de la tendance à utiliser `curl|bash` (ou commandes similaires) pour déployer des logiciels, prenez le temps de lire ["Is curl|bash insecure?"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) sur le blog de Sandstorm, et possiblement [cette discussion sur Hacker News](https://news.ycombinator.com/item?id=12766350).
 

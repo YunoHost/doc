@@ -1,4 +1,4 @@
-# Flasher l'ISO YunoHost
+# Flasher l’ISO YunoHost
 
 Maintenant que vous avez téléchargé l’image ISO de YunoHost, vous devez la mettre sur un support physique. Classiquement, il s'agit d'une **Clé USB** ou d'une **Carte SD**.
 
@@ -27,10 +27,7 @@ Branchez votre clef USB, selectionnez l'ISO YunoHost puis cliquez sur 'OK'
 
 ### Avec `dd`
 
-Si vous êtes familier avec la ligne de commande, il est possible de flasher la
-clef USB ou carte SD avec `dd`.  Vous pouvez identifier le nom du périphérique
-avec `fdisk -l` ou `lsblk`. Une carte SD s'apelle typiquement `/dev/mmcblk0`.
-ATTENTION à faire attention de prendre le bon nom!
+Si vous êtes familier avec la ligne de commande, il est possible de flasher la clef USB ou carte SD avec `dd`.  Vous pouvez identifier le nom du périphérique avec `fdisk -l` ou `lsblk`. Une carte SD s'apelle typiquement `/dev/mmcblk0`. ATTENTION à faire attention de prendre le bon nom !
 
 ```bash
 # Remplacer /dev/mmcblk0 par le nom de votre périphérique
@@ -43,6 +40,6 @@ Pour les anciens matériels, il vous faut peut-être utiliser un CD/DVD. Le logi
 
 * Sur Windows, utilisez [ImgBurn](http://www.imgburn.com/) pour écrire l’image sur le disque
 
-* Sur Mac OS, utilisez [Disk Utility](http://support.apple.com/kb/ph7025)
+* Sur macOS, utilisez [Disk Utility](http://support.apple.com/kb/ph7025)
 
 * Sur GNU/Linux, vous avez plusieurs choix, tels que [Brasero](https://wiki.gnome.org/Apps/Brasero) ou [K3b](http://www.k3b.org/)

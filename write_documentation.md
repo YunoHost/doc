@@ -12,10 +12,10 @@ Once edited, you are able to submit your change by filling an email address.
 
 ## Via GitHub
 
-The YunoHost documentation is managed through a [git repository](https://github.com/YunoHost/doc). You can send pull-requests, and do not forget to report your issues.
+The YunoHost documentation is managed through a [Git repository](https://github.com/YunoHost/doc). You can send pull-requests, and do not forget to report your issues.
 
-Because the online editor doesn't support uploading files, using git is the prefered way if you need to upload media (e.g. images).
+Because the online editor doesn't support uploading files, using Git is the prefered way if you need to upload media (e.g. images).
 
 ## Syntax
 
-This page uses the markdown syntax, please refer to the [documentation](https://guides.github.com/features/mastering-markdown/) for further information.
+This page uses the markdown syntax, please refer to the [documentation](doc_markdown_guide) for further information.

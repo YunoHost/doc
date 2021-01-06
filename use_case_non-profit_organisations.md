@@ -1,4 +1,4 @@
-# YunoHost for non-profit
+# YunoHost for non-profit organizations
 
 ## Table of Contents
 * [Introduction](#introduction) 
@@ -68,11 +68,11 @@ Out of the box YunoHost provide:
 * A system of application
 * A web interface
 * A command-line interface (CLI): Moulinette
-* A web server: Nginx
+* A web server: NGINX
 * A DNS server: Dnsmasq
 * A database: MariaDB
 * A backup system
-* An SSO : SSOwat
+* An SSO: SSOwat
 * OpenLDAP
 * Email:
   * SMTP: Postfix
@@ -98,13 +98,13 @@ Additional package can be installed to provide more functionality to the YunoHos
 
 To provide personal or shared calendars you will need to install:
 * [Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh)
-* [Baikal](https://github.com/YunoHost-Apps/baikal_ynh)
+* [Baïkal](https://github.com/YunoHost-Apps/baikal_ynh)
 
 ### Contact
 
 To provide personal contact system you will need to install:
 * [Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh)
-* [Baikal](https://github.com/YunoHost-Apps/baikal_ynh)
+* [Baïkal](https://github.com/YunoHost-Apps/baikal_ynh)
 
 ### Shared files
 
@@ -117,13 +117,13 @@ Out of the box, YunoHost provide an XMPP server, for which you can install a web
 
 You can also install a matrix server:
 * The server: [Synapse](https://github.com/YunoHost-Apps/synapse_ynh)
-* A web client: [Riot](https://github.com/YunoHost-Apps/riot_ynh)
+* A web client: [Element](https://github.com/YunoHost-Apps/element_ynh)
 
 ### Intranet
 
 For an non-profit organization a good way to implement an intranet is to provide a wiki to let internal users read, edit and add content. Here are some packages to implement a wiki:
 * [DokuWiki](https://github.com/YunoHost-Apps/docuwiki_ynh) using wiki syntax
-* [Wiki.js](https://github.com/YunoHost-Apps/wikijs_ynh) using markdown syntax
+* [Wiki.js](https://github.com/YunoHost-Apps/wikijs_ynh) using Markdown syntax
 
 ### ERP / Accounting
 
@@ -134,8 +134,8 @@ At some time a non-profit organization could need an accounting/erp system, here
 ### Public Web Site
 
 There are several way to implement a Public Web Site:
-* Simple html, css, etc... Website using: [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh)
-* Using a CMS (Content Management System) like [Wordpress](https://github.com/YunoHost-Apps/_ynh), [Drupal](https://github.com/YunoHost-Apps/drupal_ynh) , [Grav](https://github.com/YunoHost-Apps/grav_ynh), [PluXml](https://github.com/YunoHost-Apps/pluxml_ynh)
+* Simple HTML, CSS, etc. Website using: [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh)
+* Using a CMS (Content Management System) like [WordPress](https://github.com/YunoHost-Apps/_ynh), [Drupal](https://github.com/YunoHost-Apps/drupal_ynh), [Grav](https://github.com/YunoHost-Apps/grav_ynh), [PluXml](https://github.com/YunoHost-Apps/pluxml_ynh)
 
 But we will propose something more powerful: [CiviCRM on Drupal 7](https://github.com/YunoHost-Apps/civicrm_drupal7_ynh):
 * Drupal that is a powerful open source content management framework
@@ -160,13 +160,13 @@ You have several choices, or having an integrated forum in Drupal or using a ded
 ### Backup
 
 YunoHost provide is own backup system. Before any package upgrade, YunoHost backup the current version of the package and automaticaly restore it if the upgrade fails.
-Yunohost backup are stored localy in `/home/yunohost.backup/archives`.
+YunoHost backup are stored localy in `/home/yunohost.backup/archives`.
 
 But for production, localy stored backup are not enough, so you will need to implement aditional backup strategies:
 * Backup of the the Virtual Machine if provided by the hosting system.
 * [Archivist](https://github.com/YunoHost-Apps/archivist_ynh) is an automatic backup system for your server. Your backups can be send to many other places, local or distant.
 * [Borg](https://github.com/YunoHost-Apps/borg_ynh) and [Borg Server](https://github.com/YunoHost-Apps/borgserver_ynh) allow to externalize backups.
-* [Fallback](https://github.com/YunoHost-Apps/fallback_ynh), if you have two yunohost servers, provide a way to have a secondary server which you can used if your main server goes down. This secondary server will allow you to deploy a copy of your server to bring back your YunoHost during your break down.
+* [Fallback](https://github.com/YunoHost-Apps/fallback_ynh), if you have two YunoHost servers, provide a way to have a secondary server which you can used if your main server goes down. This secondary server will allow you to deploy a copy of your server to bring back your YunoHost during your break down.
 
 ### Go further
 

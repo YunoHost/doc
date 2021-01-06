@@ -2,7 +2,7 @@
 
 DNS configuration is a crucial stage for rendering your server accessible to the wider Internet. If your DNS is poorly configured, you are liable to have a lot of problems in connecting to your server via your domain name.
 
-*Even though this page appears long and complex, it is very important to understand the implications of Internet domain names, which are necessary for the proper function of your Yunohost server.*
+*Even though this page appears long and complex, it is very important to understand the implications of Internet domain names, which are necessary for the proper function of your YunoHost server.*
 
 ### What is it?
 
@@ -20,7 +20,7 @@ There are also different **types** of DNS records, which means that a domain can
 
 ### How to (properly) set up a DNS name?
 
-You have several choices here. Note that you can mix and match solutions if you have multiple domains: for example, you can have `my-server.nohost.me` using solution **1.**, and `my-server.org` using solution **2.**, both leading to the same Yunohost server.
+You have several choices here. Note that you can mix and match solutions if you have multiple domains: for example, you can have `my-server.nohost.me` using solution **1.**, and `my-server.org` using solution **2.**, both leading to the same YunoHost server.
 
 1. You can use [YunoHost's DNS service](/dns_nohost_me), which will automatically configure your DNS for you. You must choose a domain that ends with `.nohost.me`, `.noho.st` or `.ynh.fr` for this, which may be inconvenient for you (you would then only be able to use an email address like `john@my-server.noho.st`).
 
@@ -31,12 +31,8 @@ You can also check out these pages for specific [registrar](/registrar) document
 
   **Warning**: If you choose this option, you will have more configuration possibilities, but nothing will be done for you. For example, if you want to use `webmail.my-server.org`, you must add it manually to the DNS records with your registrar.
 
-3. Your YunoHost instance has its own DNS service, which means it will automatically configure its own DNS records, and that you can leave the setup to the instance itself. To do this, you must explain to your **registrar** that your YunoHost instance is the authoritative DNS server for your domain name.
+3. (Advanced, not 100% supported...) Your YunoHost instance has its own DNS service, which means it will automatically configure its own DNS records, and that you can leave the setup to the instance itself. To do this, you must explain to your **registrar** that your YunoHost instance is the authoritative DNS server for your domain name.
 
-  **Warning**: If you choose this option, all configuration options will be done automatically, you will retain a good deal of flexibility, but if your server gets knocked offline you will run into many problems. **Choose this only if you are certain.**
-
-4. Once your DNS service is running, your server can use it but it needs to be configured, this is the [DNS resolver](/dns_resolver).
+  **Warning**: If you choose this option, all configuration options will be done automatically, you will retain a good deal of flexibility, but if your server gets knocked offline you will run into many problems. **Choose this only if you understand the implications.**
 
 
-### Dynamic IP
-If the global IP address is changing follow this [tutorial](/dns_dynamicip).

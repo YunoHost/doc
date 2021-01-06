@@ -26,7 +26,7 @@
     * [Web-Administrations-Interface](/admin)
     * [SSH](/ssh) and [command-line administration](/commandline)
     * [Benutzer und SSO (Single-Sign-On)](/users)
-    * [Applicationen](/apps_overview)
+    * [Applikationen](/apps_overview)
     * [Domains, DNS und Zertifikate](/domains)
     * [E-Mail](/email)
     * [XMPP](/XMPP)
@@ -41,5 +41,5 @@
     * [Migriere E-Mails zu Yunohost](/email_migration)
     * [Verstecke Services mit Tor](/torhiddenservice)
 * Hinweise zur Fehlersuche
-    * [Entsperren von IPs in fail2ban](/fail2ban)
+    * [Entsperren von IPs in Fail2Ban](/fail2ban)
     * [Administrator-Passwort ändern](/change_admin_password)

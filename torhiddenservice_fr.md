@@ -42,7 +42,7 @@ Si vous voulez éviter d’être redirigé vers le portail à la connexion pour 
 #access_by_lua_file /usr/share/ssowat/access.lua;
 ```
 
-### Vérifier que l'on a pas fait d'erreurs dans la configuration de Nginx
+### Vérifier que l'on a pas fait d'erreurs dans la configuration de NGINX
 ```bash
 nginx -t
 ```

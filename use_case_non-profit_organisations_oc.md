@@ -53,7 +53,7 @@ Lo servidor YunoHost pòt èsser albergat a diferents endreches :
 
 ## Perque
 
-YunoHost pòt correspondre als besonhs d'una organizacion sens tòca lucrativa e li permetre de servar lo mestritge  de sas donadas.
+YunoHost pòt correspondre als besonhs d'una organizacion sens tòca lucrativa e li permetre de servar lo mestritge de sas donadas.
 
 ## Cossí
 
@@ -67,7 +67,7 @@ YunoHost provesís sul pic:
 * Un sistèma d'aplicacion
 * Una interfàcia web
 * Una interfàcia en linha de comanda (CLI) : Moulinette
-* Un servidor Web : Nginx
+* Un servidor Web : NGINX
 * Un servidor DNS : Dnsmasq
 * Una basa de donadas : MariaDB
 * Un sistèma de salvagarda
@@ -97,7 +97,7 @@ De paquets suplementaris pòdon èsser installats per provesir mai de foncionali
 
 Per fornir de calendièrs personals o partejats, vos calrà installar :
 * [Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh)
-* [Baikal](https://github.com/YunoHost-Apps/baikal_ynh)
+* [Baïkal](https://github.com/YunoHost-Apps/baikal_ynh)
 
 ### Contacte
 
@@ -133,10 +133,10 @@ Arriba un moment ont a l’organizacion sens tòca lucrativa li pòsca far beson
 ### Site Web Public
 
 Existís mantuns biaisses de construire un site Web public :
-* Un simple site HTML, CSS, etc... en utilizant : [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh)
-* Utilizar un CMS (sistèma de gestion de contengut) coma  [Wordpress](https://github.com/YunoHost-Apps/_ynh), [Drupal](https://github.com/YunoHost-Apps/drupal_ynh) , [Grav](https://github.com/YunoHost-Apps/grav_ynh), [PluXml](https://github.com/YunoHost-Apps/pluxml_ynh)
+* Un simple site HTML, CSS, etc. en utilizant : [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh)
+* Utilizar un CMS (sistèma de gestion de contengut) coma  [Wordpress](https://github.com/YunoHost-Apps/_ynh), [Drupal](https://github.com/YunoHost-Apps/drupal_ynh), [Grav](https://github.com/YunoHost-Apps/grav_ynh), [PluXml](https://github.com/YunoHost-Apps/pluxml_ynh)
 
-Mas prepausam quicòm de mai potent : [CiviCRM on Drupal 7](https://github.com/YunoHost-Apps/civicrm_drupal7_ynh):
+Mas prepausam quicòm de mai potent : [CiviCRM on Drupal 7](https://github.com/YunoHost-Apps/civicrm_drupal7_ynh) :
 * Drupal qu’es un framework potent de gestion de contengut
 * amb CiviCRM qu’es un CRM OpenSource a destinacion de las organizacions sens tòca lucrativa
 
@@ -159,7 +159,7 @@ Avètz mantun possibilitats, aver un forum integrat a Drupal o utilizar un sist�
 ### Salvagarda
 
 YunoHost fornís son pròpri sistèma de salvagarda. Abans tota mesa a nivèl de paquet, YunoHost salvagarda la version actuala del paquet e la restaura automaticament se la mesa a nivèl se debana pas corrèctament.
-Las salvagardas Yunohost son gardadas localament dins `/home/yunohost.backup/archives`.
+Las salvagardas YunoHost son gardadas localament dins `/home/yunohost.backup/archives`.
 
 Mas per la produccion, la salvagarda gardada localament basta pas, vos cal emplegar d’estrategias de salvagarda suplementàrias :
 * Salvagarda de la maquina virtuala se fornida pel sistèma d’albergament.

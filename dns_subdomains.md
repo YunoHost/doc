@@ -21,7 +21,7 @@ then you can access `agenda.mydomain.com`, `blog.mydomain.com` and `rss.mydomain
 
 ### Install an application on a subdomain
 
-To install an application on a subdomain in YunoHost, for example `blog.mydomain.com`, the configuration is done in the administration panel. One first add the subdomain to the available domains list. The creation of a subdomain in Yunohost will create the corresponding configuration files  for Nginx (the web server used in YunoHost).
+To install an application on a subdomain in YunoHost, for example `blog.mydomain.com`, the configuration is done in the administration panel. One first add the subdomain to the available domains list. The creation of a subdomain in YunoHost will create the corresponding configuration files for NGINX (the web server used in YunoHost).
 
 Then, in the applications>install panel, one follows the classic installation process by choosing the desired subdomain as domain (for example `blog.mydomain.com`). One needs to choose the path `/` (in place of `/wordpress` for example). A warning message will appear telling that it won't be possible to install other application to this subdomain. After validation, the installation starts.
 

@@ -20,9 +20,9 @@ Wir bieten eine Software an, die es für jeden möglichst einfach machen soll, e
 
 #### Aber was *macht* YunoHost überhaupt ?
 
-YunoHost könnte einen Distribution oder ein Betriebssystem genannt werden, aber es ist eigentlich "nur" eine Ebene, die über Debian betrieben wird und welche die meiste, schwierige Arbeit für Sie übernimmt.
+YunoHost könnte eine Distribution oder ein Betriebssystem genannt werden, aber es ist eigentlich "nur" eine Ebene, die über Debian betrieben wird und welche die meiste, schwierige Arbeit für Sie übernimmt.
 
-Zum Beispiel, wenn Sie Wordpress installieren möchten, müssten Sie einige Befehle eintippen, um Benutzer zu generieren, einen Webserver einrichten, einen SQL Server einrichten, das Wordpress Archiv herunterladen, entpacken, den Webserver kofigurieren, die SQL Datenbank konfigurieren und schließlich Wordpress einrichten. YunoHost übernimmt all das für Sie, zähmt das technische Chaos und "tippt alle Befehle für Sie", sodass Sie sich auf das konzentrieren können, was wirklich wichtig ist.
+Zum Beispiel, wenn Sie Wordpress installieren möchten, müssten Sie einige Befehle eintippen, um Benutzer zu generieren, einen Webserver einrichten, einen SQL Server einrichten, das Wordpress Archiv herunterladen, entpacken, den Webserver konfigurieren, die SQL Datenbank konfigurieren und schließlich Wordpress einrichten. YunoHost übernimmt all das für Sie, zähmt das technische Chaos und "tippt alle Befehle für Sie", sodass Sie sich auf das konzentrieren können, was wirklich wichtig ist.
 
 Mehr Informationen finden Sie [hier](whatsyunohost) !
 
@@ -102,7 +102,7 @@ Mittellange Antwort: Früher wurden die Apps in .deb gepackt. Was für ein Albtr
 
 <p>Es hat sich herausgestellt, dass das Packen für YunoHost einen leicht anderen Zweck erfüllt als das Erstellen klassischer Pakete wie .deb. Debian Pakete haben nur den Anspruch Dateien, Befehle, Programme und Dienste auf dem System zu installieren. Es bleibt oft an Ihnen diese richtig zu konfigurieren, weil es einfach keinen standardisierte Server-Konfiguration gibt. Typischerweise erfordern Web-Apps einen sehr hohen Konfigurationsaufwand, weil sie auf dem Webserver und einer Datenbank (und dem single sign-on) aufbauen.</p>
 
-<p>YunoHost richtet Konzepte auf höchster Ebene ein (Apps, Domain-Namen, Benutzer, ...) und definiert eine standardmäßige Einrichtung (Nginx, Postfix, Metronome, SSOwat, ...) und kann deshalb die Konfiguration für den Anwender übernehmen.</p>
+<p>YunoHost richtet Konzepte auf höchster Ebene ein (Apps, Domain-Namen, Benutzer...) und definiert eine standardmäßige Einrichtung (NGINX, Postfix, Metronome, SSOwat...) und kann deshalb die Konfiguration für den Anwender übernehmen.</p>
 
 <p>Wer trotzdem glaubt, man könne deb Pakete dazu bringen, all dies zu leisten, möge sich die vorherige Antwort anschauen.</p>
 </div>

@@ -1,4 +1,4 @@
-#Local network access to your server
+# Local network access to your server
 
 After completing your server installation, it is most likely that your domain will not be accessible through the local network. This is a know issue known as [hairpinning](http://en.wikipedia.org/wiki/Hairpinning).
 
@@ -8,10 +8,10 @@ To resolve this issue, you need to configure your router dns or, failing, your h
 In order to configure DNS or hosts file, you must know the private IP adress of your server. This adress is only working in the server local network and is not linked to your public IP adress.
 
 You may retrieve your server private IP adress  through different means:
-- Using the Yunohost connection screen on the server:
+- Using the YunoHost connection screen on the server:
 <img src="/images/ynh_login.png" width=600>
 
-- Using Yunohost administration panel:
+- Using YunoHost administration panel:
     Go to Tools > State of the server > Network
 <img src="/images/ynh_admin_etat_ip.png" width=900>
 
@@ -19,7 +19,7 @@ You may retrieve your server private IP adress  through different means:
 
 ## Configure DNS of Internet box or router
 
-The goal here is to create a network wide redirection handled by your router. The idea is to create a DNS redirection to your server's IP. You should access your router's configuration and look for DNS configuration, then add a redirection to your server's IP (e.g. redirect "yunohost.local" to 192.168.1.21).
+The goal here is to create a network wide redirection handled by your router. The idea is to create a DNS redirection to your server's IP. You should access your router's configuration and look for DNS configuration, then add a redirection to your server's IP (e.g. redirect `yunohost.local` to `192.168.1.21`).
 
 ### SFR Box
 If you haven't found your server private IP, you may find it using the SFR box admin panel:  
@@ -36,7 +36,7 @@ Modifying hosts file should be done only if you cannot alter your box's DNS or r
 - Windows hosts file is located at:
     `%SystemRoot%\system32\drivers\etc\`
     > You MUST activate hidden and system file display to see the hosts file.
-- UNIX systems (GNU/Linux, Mac OS) hosts file is located at:
+- UNIX systems (GNU/Linux, macOS) hosts file is located at:
     `/etc/hosts`
     > You MUST have root privileges to modify the file.
 

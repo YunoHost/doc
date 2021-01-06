@@ -4,9 +4,9 @@ The purpose of this document is to teach you how to package an application for Y
 
 ### Requirements
 To package an application, here are the requirements:
-* An account on a git server (e.g. [GitHub](https://github.com/)) to publish the application;
-* Basic knowledge of [git](/packaging_apps_git), bash shell and other programming stuff;
-* A testing [virtual machine or a distant server](/install), or a development environement, [ynh-dev](https://github.com/yunohost/ynh-dev) or [VirtualBox](/packaging_apps_virtualbox), to package and test the package.
+* An account on a Git server (e.g. [GitHub](https://github.com/)) to publish the application;
+* Basic knowledge of [Git](/packaging_apps_git), bash shell and other programming stuff;
+* A testing [virtual machine or a distant server](/install) or [VirtualBox](/packaging_apps_virtualbox), to package and test the package. Alternatively you can also use [ynh-dev](https://github.com/yunohost/ynh-dev), it is meant for the core but can totally be used for developping apps, but be aware that for now the documentation on this part is lacking.
 
 ### Content
 A YunoHost package is composed of:
@@ -31,8 +31,8 @@ Since YunoHost has a unified architecture, you will be able to guess most of the
 
 <a class="btn btn-lg btn-default" href="/packaging_apps_arguments_management">Arguments management</a>
 
-### Nginx configuration
-<a class="btn btn-lg btn-default" href="/packaging_apps_nginx_conf">Nginx configuration</a>
+### NGINX configuration
+<a class="btn btn-lg btn-default" href="/packaging_apps_nginx_conf">NGINX configuration</a>
 
 ### Multi-instance
 <a class="btn btn-lg btn-default" href="/packaging_apps_multiinstance">Multi-instance</a>
@@ -101,7 +101,7 @@ Here is a list of best practices for application install scripts:
 * install script should use the command-line method instead of calls to curl through web install form;
 * install script should save install answers;
 * application sources should be checked with a control sum (sha256, sha1 or md5) or a PGP signature;
-* scripts should be tested on Debian Stretch 32 bits, 64 bits and ARM architectures;
+* scripts should be tested on Debian Buster 32 bits, 64 bits and ARM architectures;
 * backup and restore scripts should be present and functional.
 
 To be define the quality of a package, it'll obtained a [level](/packaging_apps_levels), determined according to somes criteria of installation and according to respect to [package guidelines](packaging_apps_guidelines).
@@ -132,4 +132,4 @@ A continuous integration server is available for packagers who want to test thei
 
 **!! This section is obsolete as of 08/03/19** - The project's organization regarging this point is to be changed.
 
-To become an official application, it must be tested well enough, be stable and should work on Debian Stretch 64 bits, 32 bits and ARM architectures. If you think those conditions are met, ask for [official integration](https://github.com/YunoHost/apps) of your application.
+To become an official application, it must be tested well enough, be stable and should work on Debian Buster 64 bits, 32 bits and ARM architectures. If you think those conditions are met, ask for [official integration](https://github.com/YunoHost/apps) of your application.

@@ -1,6 +1,10 @@
 # Instalar YunoHost manualmente
 
-Una vez que tienes acceso a tu servidor (directamente o con SSH), puedes instalar Yunohost ejecutando este comando como root :
+<div class="alert alert-info">
+This procedure only works on **Debian 10** machines <small>(with **kernel >= 3.12**)</small>)
+</div>
+
+Una vez que tienes acceso a tu servidor (directamente o con SSH), puedes instalar YunoHost ejecutando este comando como root :
 
 ```bash
 curl https://install.yunohost.org | bash

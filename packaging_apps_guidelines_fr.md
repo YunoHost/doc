@@ -70,8 +70,8 @@ Chaque YEP est associée à :
 | YEP 3.7 | Modifier correctement les dépots sources | draft | manuel | NOTWORKING (0) |
 | | | | | |
 | **YEP 4** | **Intégrer une app** | **Statut** | **Test** | **Niveau** |
-| 4.1 | Lier au ldap   | validé | manuel | OFFICIAL (4) |
-| YEP 4.2 | Lier l'authentification au sso   | validé | manuel | OFFICIAL (4) |
+| 4.1 | Lier au LDAP   | validé | manuel | OFFICIAL (4) |
+| YEP 4.2 | Lier l'authentification au SSO   | validé | manuel | OFFICIAL (4) |
 | YEP 4.2.1 | Déconnexion   | validé | manuel | OFFICIAL (9) |
 | YEP 4.3 | Fournir un script de sauvegarde YunoHost fonctionnel   | validé | auto | OFFICIAL (6) |
 | YEP 4.4 | Fournir un script de restauration YunoHost fonctionnel   | validé | auto | OFFICIAL (6) |
@@ -91,7 +91,7 @@ Chaque application YunoHost possède un id inscrit dans le manifeste de l'applic
 Cet identifiant doit être unique entre chaque paquet d'application.
 Il est donc recommandé de vérifier sa disponibilité en consultant la liste des applications référencées dans les dépôts d'applications connus (apps, internetcube).
 
-De plus l'identifiant doit respecter l'expression régulière suivante `^[a-z1-9]((_|-)?[a-z1-9])+$`. Autrement dit, il doit respecter les règles suivantes :
+De plus l'identifiant doit respecter l'expression régulière suivante `^[a-z0-9]((_|-)?[a-z0-9])+$`. Autrement dit, il doit respecter les règles suivantes :
 * être en minuscule
 * commencer par une lettre ou un chiffre
 * être alphanumérique (le underscore est autorisé)
@@ -100,7 +100,7 @@ De plus l'identifiant doit respecter l'expression régulière suivante `^[a-z1-9
 
 Pour les noms d'applications contenant des espaces la quasi-totalité des paquets actuels les retirent simplement sans les remplacer par des tirets ou underscores.
 
-Par convention, les dépôts d'applications YunoHost sont toujours nommés de leur ID suivis de la chaîne de caractère "\_ynh". Ainsi on peut distinguer le dépôt upstream de l'application, du dépôt du paquet yunohost. Cette notation permet également de trouver des applications non répertoriées à travers les moteurs de recherche des plateformes proposant des gestionnaires de version (GitHub par exemple).
+Par convention, les dépôts d'applications YunoHost sont toujours nommés de leur ID suivis de la chaîne de caractère "\_ynh". Ainsi on peut distinguer le dépôt upstream de l'application, du dépôt du paquet YunoHost. Cette notation permet également de trouver des applications non répertoriées à travers les moteurs de recherche des plateformes proposant des gestionnaires de version (GitHub par exemple).
 
 Exemple : ID : exemple Nom de dépôt : exemple_ynh
 
@@ -114,31 +114,31 @@ Ces dépôts ont plusieurs fonctions :
 * indiquer l'état de fonctionnement du paquet ;
 * indiquer des informations sur le support d'un paquet.
 
-Pour la liste `apps.json` maintenue par l'équipe du projet Yunohost, l'inscription se fait sur [le dépôt git "apps"](https://github.com/YunoHost/apps). D'autres listes non-officielles (notamment celles incluant des applications non-libres) peuvent exister, se réferer au [Forum](https://forum.yunohost.org) de la communauté.
+Pour la liste `apps.json` maintenue par l'équipe du projet YunoHost, l'inscription se fait sur [le dépôt Git "apps"](https://github.com/YunoHost/apps). D'autres listes non-officielles (notamment celles incluant des applications non-libres) peuvent exister, se réferer au [Forum](https://forum.yunohost.org) de la communauté.
 
 #### YEP 1.3
 ##### Indiquer la licence associée au paquet  | brouillon | AUTO | WORKING |
 La licence du paquet est à indiquer dans un fichier `LICENSE` à la racine du paquet. Attention à ne pas confondre avec la licence de l'application qui va être installée dont l'acronyme est à renseigner dans le champ `license` du manifeste.
 
-La liste d'application apps.json n'accepte que les paquets dont la licence est libre, de même pour la licence de l'application contenue. Certaines applications libres nécessitent des dépendances non-libres (exemple: mp3, drivers, etc.). Dans ce cas, il faut ajouter `&dep-non-free` à l'acronyme et si possible donner des précisions dans le README.md du paquet, l'intégration sera dans ce cas acceptée au cas par cas.
+La liste d'application apps.json n'accepte que les paquets dont la licence est libre, de même pour la licence de l'application contenue. Certaines applications libres nécessitent des dépendances non-libres (exemple: MP3, drivers, etc.). Dans ce cas, il faut ajouter `&dep-non-free` à l'acronyme et si possible donner des précisions dans le README.md du paquet, l'intégration sera dans ce cas acceptée au cas par cas.
 
 **NB :** Les applications non-présentes dans la liste maintenue par le projet peuvent tout de même être installées : soit manuellement via le lien de l'application, soit de manière plus intégrée via des listes non-officielles (qui peuvent être créées et maintenues par la communauté).
 
 Dans le futur, YunoHost affichera sans doute des détails sur la licence de l'application. Pour y parvenir, l'acronyme doit être celui issu de cette [liste de licences répertoriées du SPDX](https://spdx.org/licenses/) (si il y a 2 acronymes, il faut prendre celui contenant le numéro de version). Pour plus de cohérence, la casse doit être respectée.
 
-Si la licence n'est pas présente dans la liste, dans ce cas il faut indiquer `free` ou `non-free` selon qu'elle est libre ou non et donner l'occasion à l'utilisateur de se renseigner dans le README.md (lien, explications, ...).
+Si la licence n'est pas présente dans la liste, dans ce cas il faut indiquer `free` ou `non-free` selon qu'elle est libre ou non et donner l'occasion à l'utilisateur de se renseigner dans le README.md (lien, explications...).
 
-Exemple: pour une licence `GNU Lesser General Public License (LGPL), version 3` l'acronyme est `LGPL-3.0` si toutefois des dépendances non libres sont utilisées dans ce cas il faudra mettre `LGPL-3.0&dep-non-free` dans le manifeste.
+Exemple : pour une licence `GNU Lesser General Public License (LGPL), version 3` l'acronyme est `LGPL-3.0` si toutefois des dépendances non libres sont utilisées dans ce cas il faudra mettre `LGPL-3.0&dep-non-free` dans le manifeste.
 
-Si une application a des modules liés avec une autre licence (Exemple: Odoo 9 LGPL-3.0 + un module sous licence AGPL-3.0 ), dans ce cas on indiquera les deux licences séparées par un `&`.
+Si une application a des modules liés avec une autre licence (Exemple : Odoo 9 LGPL-3.0 + un module sous licence AGPL-3.0 ), dans ce cas on indiquera les deux licences séparées par un `&`.
 
 Si deux applications distinctes sont dans le même paquet d'installation et ont des licences distinctes, dans ce cas on peut utiliser le `,` pour séparer les licences.
 
 Dans les deux cas, le mainteneur est encouragé à réfléchir à la possibilité de créer deux paquets distincts. Le manifeste de chaque application permet de poser des questions de type `app` de façon à faire référence à une autre application déjà installée.
 
-Rappel: une question de type `app` prend pour réponse l'identifiant d'une des apps déjà installée.
+Rappel : une question de type `app` prend pour réponse l'identifiant d'une des apps déjà installée.
 
-Quelques liens intéressants pour aider au choix de licence:
+Quelques liens intéressants pour aider au choix de licence :
 * [Des fiches explicatives sur les licences libres](https://www.inria.fr/content/download/5896/48452/version/2/file/INRIA_recueil_fiches_licences_libres_vf.pdf)
 * [La documentation sur les licences du projet GNU](https://www.gnu.org/licenses/licenses.fr.html)
 * [Un guide du projet GNU pour aider au choix d'une licence](https://www.gnu.org/licenses/license-recommendations.fr.html)
@@ -204,7 +204,7 @@ Il y a également le README.md, ce dernier doit et peut contenir :
 * des instructions pour l'utiliser (par exemple pour relier son smartphone ou son ordinateur)
 * l'endroit pour signaler un dysfonctionnement / une demande
 * la roadmap/TODO
-* éventuellement les pré-requis en termes de mémoires ram, processeur etc. (certains équipements ont moins de 512Mo de ram)
+* éventuellement les pré-requis en termes de mémoires RAM, processeur etc. (certains équipements ont moins de 512 Mo de RAM)
 
 #### YEP 1.10
 ##### Garder un historique de version propre   | brouillon | manuel | OFFICIAL |
@@ -226,11 +226,11 @@ Le manifeste permet de décrire une app afin que YunoHost puisse lui appliquer l
 
 #### YEP 2.2
 ##### Utiliser bash pour les scripts principaux  | validé | auto | WORKING |
-Les scripts d'action (install, upgrade, remove, backup et restore) doivent être en bash afin que la cli/api yunohost puisse correctement les appeler.
+Les scripts d'action (install, upgrade, remove, backup et restore) doivent être en bash afin que la CLI/API YunoHost puisse correctement les appeler.
 
 Ceci étant, rien n'empêche à l'intérieur de ces scripts de faire appel à d'autres scripts ou bibliothèques de fonction. Ceux-ci ne sont pas obligés d'être en bash.
 
-Cependant, il faudra porter une attention particulière à l'affichage correct des logs d'information, de warning, ou d'erreurs. Afin qu'un utilisateur de la cli/api yunohost puisse comprendre le fonctionnement du script venant d'être exécuté et au besoin réparer son instance YunoHost.
+Cependant, il faudra porter une attention particulière à l'affichage correct des logs d'information, de warning, ou d'erreurs. Afin qu'un utilisateur de la CLI/API YunoHost puisse comprendre le fonctionnement du script venant d'être exécuté et au besoin réparer son instance YunoHost.
 
 #### YEP 2.3
 ##### Sauvegarder les réponses lors de l'installation  | validé | manuel | WORKING |
@@ -239,12 +239,12 @@ Lors de l'installation, il est nécessaire de sauvegarder chaque réponse aux qu
 #### YEP 2.4
 ##### Détecter et gérer les erreurs  | brouillon | manuel | WORKING |
 Les scripts install, upgrade, backup et restore doivent détecter les erreurs pour éviter la poursuite des scripts en cas d'erreur bloquante ou d'usage de variable vide.  
-L'usage de trap et de set -eu est recommandé pour détecter et traiter les erreurs ([Discussion en cours à ce sujet](https://forum.yunohost.org/t/gestion-des-erreurs-set-e-et-ou-trap/2249/5))  
+L'usage de trap et de `set -eu` est recommandé pour détecter et traiter les erreurs ([Discussion en cours à ce sujet](https://forum.yunohost.org/t/gestion-des-erreurs-set-e-et-ou-trap/2249/5))  
 Il est nécessaire également de vérifier le contenu des variables avant les suppressions du script remove. Par exemple un `rm -Rf /var/www/$app` avec `$app` vide aurait un résultat désastreux.
 
 Au début des scripts, avant toutes modifications, il faut vérifier l'existence des utilisateurs mentionné à l'installation, ainsi que la disponibilité du path demandé, la disponibilité du dossier final de l'application et la taille des mots de passe le cas échéant.
 
- N'oubliez pas qu'en cas d'erreur d'installation le script de suppression sera lancé automatiquement par la cli yunohost.
+ N'oubliez pas qu'en cas d'erreur d'installation le script de suppression sera lancé automatiquement par la CLI YunoHost.
 
 #### YEP 2.5
 ##### Copier correctement des fichiers   | brouillon | manuel | WORKING |
@@ -262,7 +262,7 @@ Dans le cas où l'une des valeurs est incorrecte, il est alors nécessaire d'ann
 
 #### YEP 2.7
 ##### Donner des permissions suffisantes aux instructions bash   | validé | auto | WORKING |
-Certaines instructions nécessitent les droits sudo. Il faut dans ce cas ne pas oublier de préfixer ces instructions par `sudo `.
+Certaines instructions nécessitent les droits sudo. Il faut dans ce cas ne pas oublier de préfixer ces instructions par `sudo`.
 
 Dans d'autres cas il est nécessaire de donner des droits à l'aide de chmod et de chown.
 
@@ -343,7 +343,7 @@ Une web app devraient pouvoir s'installer sur un chemin `/path`.
 
 #### YEP 2.18.5
 ##### Gérer la tuile YunoHost pour naviguer facilement entre les applications   | validé | manuel | OFFICIAL |
-Sauf dans de rare cas il est conseillé d'intégrer la tuile YunoHost qui permet de retourner sur le menu du SSO. Cette intégration se fait dans la configuration nginx.
+Sauf dans de rare cas il est conseillé d'intégrer la tuile YunoHost qui permet de retourner sur le menu du SSO. Cette intégration se fait dans la configuration NGINX.
 
 Certains utilisateurs ont remplacé ce carré par un script ajoutant un menu en haut de chaque webapp.
 
@@ -358,13 +358,13 @@ Il convient également de vérifier si le port doit être ouvert sur le routeur,
 
 #### YEP 3.3
 ##### Faciliter le contrôle de l'intégrité des sources   | brouillon | manuel | OFFICIAL |
-L'application upstream ne doit pas être intégrée en tarball dans le dossier source du package, car cela alourdit le package et le dépôt git et ne permet pas la vérification de l'intégrité de la source.  
+L'application upstream ne doit pas être intégrée en tarball dans le dossier source du package, car cela alourdit le package et le dépôt Git et ne permet pas la vérification de l'intégrité de la source.  
 La source doit donc être téléchargée depuis le site officiel, puis son intégritée doit être vérifiée avant de l'installer.
 
 #### YEP 3.4
 ##### Isoler l'app   | brouillon | manuel | OFFICIAL |
 Afin d'éviter des effets de bords en cas de compromission éventuelle de l'application, celle-ci doit être isolée pour ne pas risquer d'impacter les autres applications.  
-Pour cela, il convient d'isoler l'application dans son dossier d'exécution en restreignant son environnement par un chroot, soit par un mécanisme interne à l'application lorsque c'est possible (par exemple pour un serveur ftp), soit par l'usage de phpfpm.  
+Pour cela, il convient d'isoler l'application dans son dossier d'exécution en restreignant son environnement par un chroot, soit par un mécanisme interne à l'application lorsque c'est possible (par exemple pour un serveur FTP), soit par l'usage de PHP-FPM.  
 De même, pour restreindre la portée de l'utilisateur exécutant l'application, il est préférable d'utiliser un utilisateur dédiée à l'application. Dont les droits sont restreint à l'usage de l'application uniquement.  
 Toutefois, cela ne doit pas exempter d'une restriction maximale des droits sur les fichiers de l'application. Autant que possible, les fichiers doivent appartenir à root, et l'utilisateur dédié ne doit avoir de droits d'écriture que sur les fichiers le réclamant expressément.
 
@@ -400,7 +400,7 @@ Dans tous les cas, une app ne devrait pas modifier les dépôts sources pour les
 Cette meta YEP traite de l'intégration d'une app avec l'environnement YunoHost. Une bonne intégration est en général un gage de qualité et de confort pour les utilisateurs.
 
 #### YEP 4.2
-##### Lier l'authentification au sso   | validé | manuel | OFFICIAL |
+##### Lier l'authentification au SSO   | validé | manuel | OFFICIAL |
 Le Single Sign On permet d'éviter d'avoir à créer les mêmes utilisateurs pour chaque app. Ainsi, un utilisateur YunoHost pourra se connecter via le Single Sign On à l'ensemble des apps.
 
 Pour se faire, il convient de lier son app au LDAP et/ou d'utiliser des hooks pour dupliquer les identifiants du compte dans la base de données de l'app.

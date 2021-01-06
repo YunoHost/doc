@@ -8,7 +8,7 @@
   - [Restaurer le réseau](#restaurer-le-réseau)
 - [Liens utiles](#liens-utiles)
 
-Pi-hole est un bloqueur de publicité au niveau du réseau qui agit comme un DNS menteur et éventuellement un serveur DHCP3, destiné à être utilisé sur un réseau privé. Il est conçu pour être installé sur des périphériques intégrés dotés de capacités réseau, tels que le Raspberry Pi, mais il peut être utilisé sur d'autres machines exécutant Linux ou dans des environnements virtualisés.
+Pi-hole est un bloqueur de publicité au niveau du réseau qui agit comme un DNS menteur et éventuellement un serveur DHCP3, destiné à être utilisé sur un réseau privé. Il est conçu pour être installé sur des périphériques intégrés dotés de capacités réseau, tels que le Raspberry Pi, mais il peut être utilisé sur d'autres machines exécutant GNU/Linux ou dans des environnements virtualisés.
 
 ## Utiliser Pi-Hole comme serveur DHCP
 
@@ -70,3 +70,4 @@ sudo ifconfig eth0 0.0.0.0 && sudo dhclient eth0
  + Documentation officielle : [docs.pi-hole.net (en)](https://docs.pi-hole.net/)
  + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/pihole](https://github.com/YunoHost-Apps/pihole_ynh)
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/pihole/issues](https://github.com/YunoHost-Apps/pihole_ynh/issues)
+ 

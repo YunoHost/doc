@@ -1,12 +1,10 @@
-Qu'est-ce que YunoHost ?
-========================
+# Qu’est-ce que YunoHost ?
 
 <img src="/images/YunoHost_logo_vertical.png" width=400>
 
 YunoHost est un **système d’exploitation** qui vise à simplifier autant que possible l'administration d'un **serveur** pour ainsi démocratiser [l’auto-hébergement](/selfhosting) tout en restant fiable, sécurisé, éthique et léger. C'est un projet de logiciel libre maintenu exclusivement par des bénévoles. Techniquement, il peut être vu comme une distribution basée sur [Debian GNU/Linux](https://debian.org) et peut s'installer sur [de nombreux types de matériel](/install).
 
-Fonctionnalités
----------------
+## Fonctionnalités
 
 - <img src="/images/icon-debian.png" width=32 style="margin-right:5px"> basé sur Debian ;
 - <img src="/images/icon-tools.png" width=32 style="margin-right:5px"> administration via une **interface web simple et claire** ;
@@ -17,11 +15,10 @@ Fonctionnalités
 - <img src="/images/icon-door.png" width=32 style="margin-right:5px"> connexion simultanée à toutes les apps via un **portail utilisateur** <small>(nginx, SSOwat)</small> ;
 - <img src="/images/icon-mail.png" width=32 style="margin-right:5px"> fourni avec un **serveur mail complet** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
 - <img src="/images/icon-messaging.png" width=32 style="margin-right:5px"> ... ainsi qu'un **serveur de messagerie instantanée** <small>(XMPP)</small> ;
-- <img src="/images/icon-lock.png" width=32 style="margin-right:5px"> gères les **certificats SSL** <small>(basé sur Let's Encrypt)</small> ;
-- <img src="/images/icon-shield.png" width=32 style="margin-right:5px"> ... et des **systèmes de sécurité** <small>(fail2ban, yunohost-firewall)</small> ;
+- <img src="/images/icon-lock.png" width=32 style="margin-right:5px"> gère les **certificats SSL** <small>(basé sur Let's Encrypt)</small> ;
+- <img src="/images/icon-shield.png" width=32 style="margin-right:5px"> ... et des **systèmes de sécurité** <small>(Fail2Ban, yunohost-firewall)</small> ;
 
-Origine
--------
+## Origine
 
 YunoHost est un projet né en février 2012 à la suite d’à peu près ça :
 
@@ -35,8 +32,7 @@ Constatant l’engouement croissant autour de YunoHost et de l’auto-hébergeme
 Le nom **YunoHost** vient de l’argot Internet anglais « Y U NO Host » signifiant approximativement « Pourquoi toi ne pas héberger ». Le [mème Internet](http://fr.wikipedia.org/wiki/M%C3%A8me_Internet) qui l’illustre est à peu près celui-ci :
 <div class="text-center"><img style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" src="/images/dude_yunohost.jpg"></div>
 
-Qu’est-ce que YunoHost n’est pas ?
-----------------------------------
+## Qu’est-ce que YunoHost n’est pas ?
 
 Même si YunoHost est multi-domaine et multi-utilisateur, il reste **inapproprié pour un usage mutualisé**.
 
@@ -44,10 +40,9 @@ Premièrement parce que le logiciel est trop jeune, donc non-testé et non-optim
 
 Vous pouvez héberger vos amis, votre famille ou votre entreprise sans problème, mais vous devez **avoir confiance** en vos utilisateurs, et ils doivent de la même façon avoir confiance en vous. Si vous souhaitez tout de même fournir des services YunoHost à des inconnus, **un VPS entier par utilisateur** sera la meilleure solution.
 
-Logo
-----
+## Logo
 
-Logo Yunohost noir et blanc réalisé par ToZz (400 × 400 px) :
+Logo YunoHost noir et blanc réalisé par ToZz (400 × 400 px) :
 
 <a href="/images/ynh_logo_black_300dpi.png"><img src="/images/ynh_logo_black_300dpi.png" width=220></a>
 

@@ -16,7 +16,7 @@ Il metodo di default attuale crea degli archivi `.tar.gz` contenenti tutti i fil
 
 Potete creare gli archivi di backup dalla pagina web di amministrazione andando in Backup > Archivi locali e cliccare su "Nuovo backup". Vi verrà chiesto di selezionare quale configurazione, dati e di quale app volete fare il backup.
 
-![picture of Yunohost's backup pannel](/images/backup.png)
+![picture of YunoHost's backup pannel](/images/backup.png)
 
 ### Dalla riga di comando
 
@@ -73,7 +73,7 @@ Attualmente il modo più semplice per scaricare gli archivi è usando il program
 Una soluzione alternativa è quella di installare Netxcloud o un'applicazione simile e configurarle per accedere ai file contenuti in `/home/yunohost.backup/archives/` da un browser.
 
 
-Un'altra soluzione è quella di usare `scp` (un programma che si basa su [`ssh`](/ssh)) per copiare i file fra due computer usando la riga di comando. In questo modo usando un computer con Linux potete copiare uno specifico backup con questo comando:
+Un'altra soluzione è quella di usare `scp` (un programma che si basa su [`ssh`](/ssh)) per copiare i file fra due computer usando la riga di comando. In questo modo usando un computer con GNU/Linux potete copiare uno specifico backup con questo comando:
 
 ```bash
 scp admin@your.domain.tld:/home/yunohost.backup/archives/<archivename>.tar.gz ./
@@ -92,7 +92,7 @@ scp /path/to/your/<archivename>.tar.gz admin@your.domain.tld:/home/yunohost.back
 Dovete andare in Backup > Archivi locali e selezionare il vostro archivio. È possibile selezionare ciò che volete ripristinare e poi cliccare su 'Ripristina'.
 
 
-![picture of Yunohost's restore pannel](/images/restore.png)
+![picture of YunoHost's restore pannel](/images/restore.png)
 
 ### Dalla riga di comando
 

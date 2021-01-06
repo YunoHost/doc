@@ -1,6 +1,6 @@
 # Chat, VoIP y red local con <img src="/images/XMPP_logo.png" width=100>
 
-Yunohost está instalado con un servidor de mensajería instantánea Metronome que implementa el [protocolo  XMPP](https://es.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol).
+YunoHost está instalado con un servidor de mensajería instantánea Metronome que implementa el [protocolo XMPP](https://es.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol).
 
 XMPP es un protocolo abierto y extensible que también permite crear salones de discusión, compartir status y datos, echar llamadas en VoIP y hacer videoconferencias. 
 
@@ -8,7 +8,7 @@ Todas las aplicaciones basadas en XMPP son compatibles entre ellas : cuando util
 
 ## Cuenta XMPP/Jabber
 
-Una cuenta XMPP/Jabber está basada en un ID bajo la forma `usuario@dominio.tld`, así como una contraseña. La contraseña es la de la cuenta del usuario de Yunohost.
+Una cuenta XMPP/Jabber está basada en un ID bajo la forma `usuario@dominio.tld`, así como una contraseña. La contraseña es la de la cuenta del usuario de YunoHost.
 
 ## Conectarse a XMPP
 
@@ -21,12 +21,13 @@ También puedes utilizar un cliente Desktop como :
 - [Gajim](https://gajim.org/es/) (Linux, Windows)
 - [Dino](https://dino.im) (Linux)
 - [Thunderbird](https://www.thunderbird.net/es-ES/) (multiplataformas)
+- [Beagle IM](https://beagle.im/) (macOS)
 - [Profanity](https://profanity-im.github.io/) (Linux)
 
 ... o un cliente smartphone :
 - [Conversations](https://conversations.im/) (Android)
 - [Xabber](http://xabber.com) (Android)
-- [Movim sous Android](https://movim.eu)
+- [Movim](https://movim.eu) (Android)
 - [Siskin IM](https://siskin.im/) (iOS)
 - [Monal](https://monal.im/) (iOS)
 - [Kaidan](https://www.kaidan.im/) (Ubuntu Touch / Plasma Mobile)
@@ -42,7 +43,7 @@ Es posible cifrar tu conversaciones XMPP con la ayuda de [OMEMO](https://xmpp.or
 
 ### Salón de discusión 
 
-Para crear un salón de discusión (Multi-user chat) en tu servidor Yunohost, utiliza el ID nombredelsalon@muc.dominio.tld (donde dominio.tld es el dominio principal de tu servidor).
+Para crear un salón de discusión (Multi-user chat) en tu servidor YunoHost, utiliza el ID nombredelsalon@muc.dominio.tld (donde dominio.tld es el dominio principal de tu servidor).
 
 Si utilizas un nombre de dominio personal, es necesario [añadir una redirección de tipo CNAME para el subdominio `muc.`](/dns_config) en tu servidor DNS.
 

@@ -28,7 +28,7 @@ They appear like this:
 
 To type a line break without creating a new paragraph, it is necessary to type **two consecutive spaces**. Otherwise, the text will continue in a row respecting the general constraints of the page style.
 
-By writing this :
+By writing this:
 
 ```markdown
 For text in *italic you have to frame it with an asterisk* `*`
@@ -53,7 +53,7 @@ To create a link to a site outside of the YunoHost documentation:
 will be displayed as such:
 [Text to display](https://lelien.tld)
 
-It is the same for the documentation pages, except that the link is internal. It refers to the wiki file, without language and file extension (the `_fr.md`) :
+It is the same for the documentation pages, except that the link is internal. It refers to the wiki file, without language and file extension (the `_fr.md`):
 ```markdown
 [Wiki Page](/write_documentation)
 ```
@@ -87,16 +87,16 @@ All that remains is to designate the anchor to the text you want to make interac
 To display images, the principle is the same as for links, except that a `!` is added before the text to be displayed, which is considered here as the text to be displayed if the image cannot be loaded. A description of the image is appropriate.
 
 ```markdown
-![Yunohost Logo](/images/logo.png)
+![YunoHost Logo](/images/logo.png)
 ```
-![Yunohost Logo](/images/logo.png)
+![YunoHost Logo](/images/logo.png)
 
 
-It is possible to make a link with an image, for example :
+It is possible to make a link with an image, for example:
 ```markdown
-[![Yunohost Logo](/images/logo.png)](/write_documentation)
+[![YunoHost Logo](/images/logo.png)](/write_documentation)
 ```
-[![Yunohost Logo](/images/logo.png)](/write_documentation)
+[![YunoHost Logo](/images/logo.png)](/write_documentation)
 
 The insert of *text to be displayed if the image cannot be loaded* between the brackets in the image link is not mandatory but strongly recommended.
 
@@ -111,7 +111,7 @@ Quotes are used to highlight a statement made by another person, the wiki itself
 >> And a second quote
 >> with double rafters
 ```
-Will be displayed :
+Will be displayed:
 
 >First level quotation text
 >which can be formatted in different lines

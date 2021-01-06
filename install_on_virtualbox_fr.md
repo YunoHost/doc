@@ -12,7 +12,7 @@
 <div class="alert alert-warning" markdown="1">
 N.B. : Installer YunoHost dans une VirtualBox est utile pour tester la
 distribution. Pour réellement s'autohéberger sur le long terme, il vous faudra
-probablement une machine physique (vieil ordinateur, carte ARM, ..) ou un VPS en
+probablement une machine physique (vieil ordinateur, carte ARM...) ou un VPS en
 ligne.
 </div>
 
@@ -26,7 +26,7 @@ ligne.
 
 * Ce n'est pas grave si seulement la version 32-bit est dispo, mais dans ce cas soyez sur d'avoir téléchargé l'image 32 bit précédemment.
 * 256Mo de RAM est le minimum requis, 512Mo est recommandé (1Go ou plus si vous pouvez).
-* 8Go de stockage minimum requis.
+* 8Go de stockage minimum requis pour le système, y ajouter l'espace pour vos applications.
 
 ---
 

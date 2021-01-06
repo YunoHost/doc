@@ -1,4 +1,4 @@
-# Besoin d'aide ?
+# Besoin d’aide ?
 
 <h3>Connectez-vous au salon de support</h3>
 <center>
@@ -10,11 +10,11 @@
 </ul>
 </div>
 
-<iframe src="https://kiwiirc.com/client/irc.freenode.org:+6697/?nick=foobar|?&theme=mini#yunohost" style="border:0; width:100%; height:450px;"></iframe>
+<iframe src="https://kiwiirc.com/nextclient/?settings=78e5074440caaa9141c9e30629f6b29d" style="width:100%;height:450px;border:0;display:block"></iframe>
 
 </br>
 </br>
-<em>Note : ce salon est accessible via IRC (#yunohost sur freenode en utilisant <a href="https://kiwiirc.com/client/irc.freenode.org:+6697/?nick=foobar|?&theme=mini#yunohost">Kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, ou Matrix <small>(#freenode_#yunohost:matrix.org - <a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">en utilisant Riot</a>)</small>.</em>
+<em>Note : ce salon est accessible via IRC (#yunohost sur freenode en utilisant <a href="https://kiwiirc.com/nextclient/?settings=78e5074440caaa9141c9e30629f6b29d">Kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, ou Matrix <small>(#freenode_#yunohost:matrix.org - <a target="_blank" href="https://app.element.io/#/room/#yunohost:matrix.org">en utilisant Element</a>)</small>.</em>
 </center>
 
 <h3>... ou demandez sur le forum !</h3>

@@ -29,10 +29,10 @@ Puis ajouter dans ce fichier le texte suivent :
 
 Enregistrer le fichier (**CTRL** + **o**) et quitter nano (**CTRL** + **c**).
 
-Ensuite lancer un scan en tant que root:
+Ensuite lancer un scan en tant que root :
 
 ```bash
 sudo -u nextcloud php /var/www/nextcloud/occ files:scan --all
 ```
 
-A présent, le problème est corrigé.
+À présent, le problème est corrigé.

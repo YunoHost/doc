@@ -17,7 +17,7 @@ The goal of YunoHost is to make accessible to the largest number of people, the 
 
 #### A free and community-based software
 
-YunoHost is a software under free licence, fully community-based and based on applications which are themselves community-based and often free (roundcube, baikal, etc.)
+YunoHost is a software under free licence, fully community-based and based on applications which are themselves community-based and often free (Roundcube, baïkal, etc.)
 
 #### That everyone can appropriate
 
@@ -52,7 +52,7 @@ Groups are structured as a result of the fact that YunoHost counts many sub-proj
 
 - ##### Infra/Sysadmin Group
  - Infrastructure
- - Website (wiki, forum, chat room, redmine, mumble)
+ - Website (wiki, forum, chat room, redmine, Mumble)
  - Demo
  - Services
     - [ip.yunohost.org](https://ip.yunohost.org/) and ip6.yunohost.org
@@ -318,7 +318,6 @@ This part list administration rights for differents groups of YunoHost project:
 - Get-togethers at events
 - Weekly Mumble meetings
 - [Forum](https://forum.yunohost.org).
-- Mailing lists: [contrib](https://list.yunohost.org/cgi-bin/mailman/listinfo/contrib) and [apps](https://list.yunohost.org/cgi-bin/mailman/listinfo/apps)
 - [Bugtracker Redmine](https://dev.yunohost.org).
 - Git Forge for code reviews: [YunoHost](https://github.com/YunoHost) [YunoHost-Apps](https://github.com/YunoHost-Apps).
 - [XMPP chat rooms](https://yunohost.org/#/chat_rooms)

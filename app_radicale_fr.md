@@ -19,7 +19,7 @@ Pour connecter un autre client au serveur radicale, il faut renseigner ces adres
 - Exemple : https://example.org/radicale/moi/AddressBook.vcf/
 
 ### Créer un nouveau calendrier ou un nouveau carnet d’adresses
-Créer un nouveau calendrier ou un nouveau carnet d’adresses est très simple avec radicale, il suffit d’y accéder! Radicale créera tout nouveau calendrier ou carnet d’adresses inexistant si vous tentez d’y accéder.
+Créer un nouveau calendrier ou un nouveau carnet d’adresses est très simple avec radicale, il suffit d’y accéder ! Radicale créera tout nouveau calendrier ou carnet d’adresses inexistant si vous tentez d’y accéder.
 
 Il suffit donc de se connecter (comme précédemment) à un calendrier ou un carnet d’adresses inexistant pour le créer.
 Cela peut être fait simplement avec un navigateur, pour le voir apparaître dans une collection déjà connectée à un client.
@@ -50,7 +50,7 @@ collection: calendrier, carnet ou collection concernée.
 permission: permission, r (lecture), w (écriture) ou rw (lecture/écriture)
 ```
 Le fichier *rights* contient plusieurs exemples pouvant être exploités.
-Pour valider les modifications apportées au fichier */etc/radicale/rights*, radicale doit être rechargé via le service uwsgi.
+Pour valider les modifications apportées au fichier */etc/radicale/rights*, radicale doit être rechargé via le service uWSGI.
 ```bash
 sudo service uwsgi restart
 ```
@@ -72,7 +72,7 @@ Dans les deux cas, le partage ne fonctionnera qu’en utilisant l’adresse comp
 Cette limitation peut s’avérer bloquante pour des clients gérant une seule collection, tel que InfCloud. Pour ce cas particulier, une solution permet de contourner ce problème.
 
 #### Partager des ressources directement dans la collection d’un utilisateur
-> Cette solution est fonctionnelle, mais reste du bidouillage…
+> Cette solution est fonctionnelle, mais reste du bidouillage...
 
 Pour permettre à un partage d’apparaître directement dans la collection d’un utilisateur, il faut exploiter l’usage des fichiers sous Radicale.
 En créant simplement un lien symbolique de la ressource à partager.
@@ -86,7 +86,7 @@ En revanche, sans avoir recours à des règles pour chaque ressource de la colle
 
 ### Rendre le log de Radicale plus loquace
 Par défaut, le log de Radicale est réglé sur INFO. Ce mode épargne le disque dur mais ne permet pas de débugger Radicale en cas de problème.  
-Pour passer Radicale en mode DEBUG, il faut éditer le fichier */etc/radicale/logging* et passer INFO à DEBUG dans les sections *[logger_root]* et *[handler_file]* puis recharger le service uwsgi.  
+Pour passer Radicale en mode DEBUG, il faut éditer le fichier */etc/radicale/logging* et passer INFO à DEBUG dans les sections *[logger_root]* et *[handler_file]* puis recharger le service uWSGI.  
 Dès lors, le log affiche toutes les requêtes qui sont faites à Radicale ainsi que l’analyse du fichier *rights*.
 Il est toutefois déconseillé de rester sur ce mode, car le log se remplie très rapidement.
 

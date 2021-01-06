@@ -1,7 +1,8 @@
-
 # Post-Installation
 
 L’étape appelée « **post-installation** » est en fait l’étape de configuration initiale de YunoHost. Il faut l’exécuter après l’**installation** du système en lui-même.
+
+NB : Si vous êtes en train de restaurer un système complet **et** que vous disposez d'un fichier de sauvegarde généré par YunoHost, vous devez sauter cette étape et vous référer à la section "Restaurer durant la postinstallation" sur la page [sauvegardes](/backup).
 
 ### Via l'interface web
 
@@ -67,5 +68,4 @@ votre navigateur ou la ligne de commande, alors félicitations !
 - Ne soyez pas trop effrayé par [l'avertissement à propos du
   certificat](/certificate), vous aurez probablement la possibilité
   d'installer un certificat Let's Encrypt :).
-- Jetez un oeil aux [applications disponibles](/apps) !
-
+- Jetez un œil aux [applications disponibles](/apps) !

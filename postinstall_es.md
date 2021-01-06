@@ -1,6 +1,8 @@
 # Post-instalación
 
-La etapa que llamamos « **post-instalación** » de hecho es la etapa de configuración inicial de Yunohost. Se ejecuta después de la **instalación** del sistema mismo.
+La etapa que llamamos « **post-instalación** » de hecho es la etapa de configuración inicial de YunoHost. Se ejecuta después de la **instalación** del sistema mismo.
+
+NB : Si estàs en el proceso de instalar de nuevo a un servidor **y** que ya tienes un archivo creada por yunohost, no debes seguir a està etapa y encontro seguir a la seccion "Restoring during the postinstall" de la pagina [backup](/backup).
 
 ### Vía la interfaz web
 
@@ -30,7 +32,7 @@ También puedes acceder a la post-instalación entrando el comando `yunohost too
 
 Es el nombre de dominio que permitirá el acceso a tu servidor así como al portal de autenticación de los usuarios. Entonces estará **visible por todo el mundo** : elígelo en consecuencia.
 
-* YunoHost te propone un DNS dinámico, proveando nombres de dominio del tipo *midominio.nohost.me*, *midominio.noho.st* o *midominio.ynh.fr*. Si no posees un nombre de dominio y/o que quieres aprovechar de este servicio, elige un dominio terminando con `.nohost.me`, `.noho.st` o `.ynh.fr`. Si no está utlizado ya, el dominio automáticamente estará vinculado a tu servidor Yunohost, y no tendrás más etapas de configuración.
+* YunoHost te propone un DNS dinámico, proveando nombres de dominio del tipo *midominio.nohost.me*, *midominio.noho.st* o *midominio.ynh.fr*. Si no posees un nombre de dominio y/o que quieres aprovechar de este servicio, elige un dominio terminando con `.nohost.me`, `.noho.st` o `.ynh.fr`. Si no está utlizado ya, el dominio automáticamente estará vinculado a tu servidor YunoHost, y no tendrás más etapas de configuración.
 
 * Si, en cambio, dominas la noción de **DNS**, puedes utilizar tu propio nombre de dominio. En este caso, refiérete a la página [yunohost.org/dns](/dns) por más información.
 
@@ -49,7 +51,7 @@ De manera general, ésta es la **llave de entrada en tu sistema**, pues piensa e
 
 ## Enhorabuena !
 
-Si llegas aquí después de haber visto “Yunohost fue instalado con éxito" desde tu navegador ou tu interfaz de línea de comando, pues felicitaciones !
+Si llegas aquí después de haber visto “YunoHost fue instalado con éxito" desde tu navegador ou tu interfaz de línea de comando, pues felicitaciones !
 
 
 ### ¿ Y ahora ?

@@ -1,12 +1,8 @@
 # Exchange files with your server using a graphical interface
 
-This page explains how to exchange files (backup archives, music, pictures,
-movies, ...) with your server using a graphical interface for the (S)FTP protocol. 
-This is an alternative to using `scp` which can be deemed technical and cryptic, 
-or using an app like Nextcloud.
+This page explains how to exchange files (backup archives, music, pictures, movies...) with your server using a graphical interface for the (S)FTP protocol. This is an alternative to using `scp` which can be deemed technical and cryptic, or using an app like Nextcloud.
 
-[FileZilla](https://filezilla-project.org/) can be used for this. It is a free
-software and is available for Windows, Linux and macOS.
+[FileZilla](https://filezilla-project.org/) can be used for this. It is a free software and is available for Windows, GNU/Linux and macOS.
 
 ## Download and install FileZilla
 
@@ -44,19 +40,19 @@ Install the program and run *Filezilla*.
 
 1. Connect to the Site created previously. *Your passwork might be asked again*
 
-   The left panel corresponds to your computer. The right panel corresponds to your remote Yunohost server. You can browse folders and drag-and-drop files between the two panels.
+   The left panel corresponds to your computer. The right panel corresponds to your remote YunoHost server. You can browse folders and drag-and-drop files between the two panels.
 
    ![view while connected to a remote server](images/filezilla_6.png)
 
 2. In the right panel, you can browse to `/home/yunohost.backup/archives/` to find [backup archives](/backup).
 
-   ![path where backups are located on Yunohost](images/filezilla_7.png)
+   ![path where backups are located on YunoHost](images/filezilla_7.png)
 
 <div class="alert alert-warning">
   <span class="glyphicon glyphicon-cloud-download"></span> Be sure to download both the `.tar.gz` and `.json` files.
 </div>
 
-![Copy backups from Yunohost to local computer](images/filezilla_8.png)
+![Copy backups from YunoHost to local computer](images/filezilla_8.png)
 
 ----
 
@@ -67,9 +63,9 @@ Sources
 
 ## Alternatives to Filezilla
 
-### Linux
+### GNU/Linux
 
-From any recent Linux, you should be able to use the `file manager` to reach your server.
+From any recent GNU/Linux, you should be able to use the `file manager` to reach your server.
 
 Nautilus from Gnome3 has features similar to FileZilla, out of the box.
 
@@ -80,6 +76,6 @@ Nautilus from Gnome3 has features similar to FileZilla, out of the box.
 
 * [WinSCP](https://winscp.net/) is also a nice candidate for Windows
 
-### MacOS
+### macOS
 
-* [Cyberduck](https://cyberduck.io/) is a free software available on MacOS
+* [Cyberduck](https://cyberduck.io/) is a free software available on macOS

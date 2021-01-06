@@ -1,10 +1,10 @@
 # SSH
 
-## What's SSH?
+## Cos'è SSH?
 
-**SSH** sta per Secure Shell, un protocollo che permette di controllare da remoto un computer usando l'interfaccia a linea di comando (command line interface, CLI in inglese). È disponibile di default in ogni emulazione di terminale su Linux e MacOS / OSX. Su Windows è possibile usare [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (dopo averlo avviato si deve cliccare su Session e poi SSH).
+**SSH** sta per Secure Shell, un protocollo che permette di controllare da remoto un computer usando l'interfaccia a linea di comando (command line interface, CLI in inglese). È disponibile di default in ogni emulazione di terminale su GNU/Linux e macOS. Su Windows è possibile usare [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (dopo averlo avviato si deve cliccare su Session e poi SSH).
 
-## Durante l'installazione di Yunohost
+## Durante l'installazione di YunoHost
 
 #### Individuare il proprio IP
 
@@ -63,7 +63,7 @@ Se sei loggato come `admin` ma vuoi usare l'utente `root` per maggiore comodità
 
 ## Utenti abilitati
 
-Di default solo l'utente `admin` può loggarsi al server ssh di YunoHost.
+Di default solo l'utente `admin` può loggarsi al server SSH di YunoHost.
 
 Gli utenti creati dall'interfaccia di amministrazione sono gestiti dalla directory LDAP e di default non possono connettersi via SSH per ragioni di sicurezza. Se invece vuoi abilitare all'accesso SSH alcuni utenti usa il comando:
 
@@ -71,13 +71,13 @@ Gli utenti creati dall'interfaccia di amministrazione sono gestiti dalla directo
 yunohost user ssh allow <username>
 ```
 
-È sempre possibile eliminare l'accesso ssh con il comando:
+È sempre possibile eliminare l'accesso SSH con il comando:
 
 ```bash
 yunohost user ssh disallow <username>
 ```
 
-Infine è possibile aggiungere, eliminare ed elencare le chiavi ssh, usate per migliorare la sicurezza degli accessi ssh con i comandi:
+Infine è possibile aggiungere, eliminare ed elencare le chiavi SSH, usate per migliorare la sicurezza degli accessi SSH con i comandi:
 
 ```bash
 yunohost user ssh add-key <username> <key>
@@ -87,6 +87,6 @@ yunohost user ssh list-keys <username>
 
 ## Sicurezza e SSH
 
-N.B.: `fail2ban` bannerà il tuo IP per 10 minuti nel caso di almeno 5 tentativi di accesso falliti. Se devi togliere il ban al tuo IP leggi la pagina relativa [fail2ban](/fail2ban)
+N.B.: `fail2ban` bannerà il tuo IP per 10 minuti nel caso di almeno 5 tentativi di accesso falliti. Se devi togliere il ban al tuo IP leggi la pagina relativa [Fail2Ban](/fail2ban)
 
 Una discussione più approfondita relativa a sicurezza & SSH è su [questa pagina](/security).
