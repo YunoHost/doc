@@ -1,11 +1,11 @@
 # Guide du contributeur
 
 * [Liste des façons de contribuer à YunoHost](/contribute)
+* [Salons de discussion](/chat_rooms)
 * [Écrire de la documentation](/write_documentation)
   *  [Guide de redaction de la documentation](/doc_writing_guide)
   *  [Guide Markdown](/doc_markdown_guide)
   *  [Propulser son code avec Git & GitHub](/doc_use_git)
-* [Salons de discussion](/chat_rooms)
 * Packaging d'application
    * [Liste d'applications souhaitées par la communauté](/apps_wishlist)
    * [Introduction générale au packaging d'apps](/packaging_apps_start)
@@ -21,6 +21,7 @@
    * [Multi-instance](/packaging_apps_multiinstance)
    * [Fonctions utiles](/packaging_apps_helpers)
    * [Utilisation de 'trap'](/packaging_apps_trap)
+   * [App permissions](/packaging_apps_permissions)
    * [Ajouter son application à la liste des apps](https://github.com/YunoHost/Apps/#contributing)
    * [Feature de packaging avancées](/packaging_apps_advanced)
        * [Actions pour une application](/packaging_apps_actions)
@@ -42,4 +43,4 @@
        * [Images Raspberry Pi](https://github.com/YunoHost/rpi-image)
        * [Autres images pour cartes ARM](https://github.com/YunoHost/arm-images)
 * [Utiliser l'API YunoHost en dehors de la webadmin](/admin_api)
-* [Une discussion sur la portée des variables en bash](shell_variables_scope)
+* [Une discussion sur la portée des variables en bash](/shell_variables_scope)
