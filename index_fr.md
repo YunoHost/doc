@@ -101,7 +101,7 @@
   <div class="row cf">
     <div class="text-center">
     <h1>Nos soutiens &lt;3<br />
-    <small>Nous sommes reconnaissant envers nos mécènes <br/>qui nous soutiennent financièrement ou via des dons d'infrastructure
+    <small>Nous sommes reconnaissant envers nos mécènes <br/>qui nous soutiennent financièrement ou via des dons d'infrastructure</small>
     </h1>
     <p style="margin-left:auto;margin-right:auto;">
     <a style="padding: 5px;" href="https://nlnet.nl"><img src="/images/logo_nlnet.png" width="150px"/></a>

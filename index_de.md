@@ -118,7 +118,7 @@ Self-Hosting für alle ermöglicht.</small></h1>
   <div class="row cf">
     <div class="text-center">
     <h1>They support us &lt;3<br />
-    <small>We are thankful for our sponsors <br/>providing us with infrastructure and grants!
+    <small>We are thankful for our sponsors <br/>providing us with infrastructure and grants!</small>
     </h1>
     <p style="margin-left:auto;margin-right:auto;">
     <a style="padding: 5px;" href="https://nlnet.nl"><img src="/images/logo_nlnet.png" width="150px"/></a>
