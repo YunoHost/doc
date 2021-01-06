@@ -170,16 +170,17 @@ Note that, for example, if we want to restrict permission for email so that only
 $ yunohost user permission update mail --remove all_users --add bob
 ```
 
-Note that for some reason the packager of the application can decide to protect a permission to avoid to add or remove the visitor of the permission. Generaly this because it make non sens for the admin to modify this permission.
+Note that some permissions may be "protected", meaning that you won't be able to add/remove the visitor group to this permission. Generally, this is because it would make no sense (or is a security risk) to do so.
 
 The webadmin will issue a warning if you set a permission that is superseeded by a wider permission.
 ![](./images/groups_alerte-permission.png)
 
-### Manage SSO tile
+### Hide/display specific tiles in the user portal
 
-Since yunohost 3.8 you can add or remove a tile in the SSO. For each permission which has an url defined you can enable or disable the tile in the SSO. By example CLI you can enalble the tile for the permission `wordpress.admin`:
+Since yunohost 4.1, you can choose to hide/display specific tiles in the SSO. In the webadmin, you can do so by going in the corresponding app view, go in "Manage label and tiles" and check/uncheck the option "Display the tile in the user portal" for the corresponding permission. In command line, this may be done with :
 
 ```shell
+# Enable the tile for the wordpress admin interface
 $ yunohost user permission update wordpress.admin --show_tile True
 ```
 
@@ -232,20 +233,20 @@ fi
 
 Here an example of how to migrate the code from legacy to new permission system: [example](https://github.com/YunoHost/example_ynh/pull/111/files)
 
-#### Extended permission
+#### Additional features from 4.1
 
-Since yunohost 3.8 some new feature of permission has been integrated. Theses new feature should solve some issue with the permission system.
+- Label customization : this is the name displayed to end users in the user portal. You can provide a default label (for example app.admin maybe be labelled 'Admin interface'). The label may be changed later by the admin after installation.
+- Enabling/disabling tile : this toggles wether or not an app is shown in the user portal (if the user has the corresponding permission). The corresponding option is called `show_tile` which may be `True` or `False`. A single app may have multiple tiles in the SSO. The url of each tile corresponds to the `url` parameter of the permission.
+- Multiple url support: a permission may have additional urls associated to it. This give the possiblity to protect many url with the same permission - in particular for tricky use case (for example several pieces of admin interfaces spread over different subpaths).
+- Protecting permission: As a packager, you may choose to "protect" a permission if you believe that it's not relevant for the admin to add/remove this permission to/from the visitors group. For example, this is the case for the API permission of Nextcloud, which in the vast majority of cases should be kept publicly because mobile client won't go through the SSO. Note that when using the helper `ynh_permission_update`, it's still possible to add/remove the `visitor` group of this permission.
+- Disabling auth header: some app authentification mecanism do not appreciate that SSOwat injects the Authorization header (which is an essential mecanism for single sign-on). You can now choose to disable the auth header injection from SSOwat to fix this (instead of the previous hack of using `skipped_uris`)
 
-The new feature are:
-- Tile and label support: You can now define a label for this permission. This label dedicated to the user. It will be shown on the webadmin to explain to the user what do this permission. If you set the parameter `show_tile` to `True` a new tile will be available on the SSO for the allowed user. This give the possiblity to have multiple tile on the SSO for the same app. The url of this tile will be the `url` this permission.
-- Multiple url support: Now you can add multiple `url` for the same permission. This give the possiblity to protect many url with the same permission.
-- Protection: If you don't want as packager that the admin play with the visitor group with a permission you can protect it. So the admin won't have the possiblity to add/remove the `visitor` group of this permission. Note that with the helper `ynh_permission_update` you keep the possibility to add/remove the `visitor` group of this permission.
-- Auth header management: some app don't work with the auth header from SSOwat. You can know define for each permission if you want to set the auth header or not. To resume this folling array show the equivalent with permission of the old settings `protected_uris`, `unprotected_uris`, `skipped_uris`.
+##### Correspondance between the old and new permission mecanism
 
 |             | with auth header | no auth header |
 | :---------- | :--------------- | :------------- |
 | **public**  | unprotected_uris | skipped_uris   |
-| **private** | protected_uris   | not available  |
+| **private** | protected_uris   | N/A            |
 
 |             | with auth header                            | no auth header                               |
 | :---------- | :------------------------------------------ | :------------------------------------------- |
@@ -258,4 +259,4 @@ All of theses feature are managable by theses following helper:
 - `ynh_permission_url`
 - `ynh_permission_update`
 
-If you have any question, please contact someone from the apps-group.
+If you have any question, please contact the app team
