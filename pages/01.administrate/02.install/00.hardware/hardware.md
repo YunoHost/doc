@@ -10,9 +10,7 @@ YunoHost can be installed on the following hardware :
 - 'Old' desktop computers or laptops ;
 - Remote servers, a.k.a Virtual Private Servers (VPS).
 
-Corresponding installation guides can be found on [this page](/administrate/install).
-
-### Minimum requirements
+## Minimum requirements
 
 * 500 MHz CPU
 * 512 MB RAM (recommended : 1 GB in order to run all the services and apps properly)
