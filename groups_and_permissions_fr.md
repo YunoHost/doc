@@ -172,9 +172,9 @@ La webadmin émettra un avertissement si vous définissez une permission qui est
 
 ### Montrer/cacher les tuiles dans le portail utilisateur
 
-Depuis Yunohost 4.1, il est possible de montrer/cacher certaines tuiles dans le portail. Depuis la webadmin, vous pouvez changer cela en allant dans la vue de l'application à manipuler, puis dans "Gérer les tuiles et les labels", et cocher/décocher l'option "Montrer cette tuile dans le portail utilisateur" pour la permissison correspondante. En ligne de commande, le même genre de chose peut être fait avec :
+Depuis YunoHost 4.1, il est possible de montrer/cacher certaines tuiles dans le portail. Depuis la webadmin, vous pouvez changer cela en allant dans la vue de l'application à manipuler, puis dans "Gérer les tuiles et les labels", et cocher/décocher l'option "Montrer cette tuile dans le portail utilisateur" pour la permissison correspondante. En ligne de commande, le même genre de chose peut être fait avec :
 
 ```shell
-# Activer la tuile pour l'interface d'admin de wordpress
+# Activer la tuile pour l'interface d'admin de WordPress
 $ yunohost user permission update wordpress.admin --show_tile True
 ```

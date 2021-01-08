@@ -175,10 +175,9 @@ The webadmin will issue a warning if you set a permission that is superseeded by
 
 ### Hide/display specific tiles in the user portal
 
-Since yunohost 4.1, you can choose to hide/display specific tiles in the SSO. In the webadmin, you can do so by going in the corresponding app view, go in "Manage label and tiles" and check/uncheck the option "Display the tile in the user portal" for the corresponding permission. In command line, this may be done with :
+Since YunoHost 4.1, you can choose to hide/display specific tiles in the SSO. In the webadmin, you can do so by going in the corresponding app view, go in "Manage label and tiles" and check/uncheck the option "Display the tile in the user portal" for the corresponding permission. In command line, this may be done with:
 
 ```shell
-# Enable the tile for the wordpress admin interface
+# Enable the tile for the WordPress admin interface
 $ yunohost user permission update wordpress.admin --show_tile True
 ```
-
