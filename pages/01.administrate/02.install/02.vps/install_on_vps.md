@@ -9,7 +9,7 @@ taxonomy:
 
 ### Pre-requisite
 
-<img src="/images/vps.png" width=250>
+![VPS](image://vps.png?resize=250)
 
 * A dedicated or virtual private server
 * with at least **512MB** RAM
@@ -19,6 +19,6 @@ taxonomy:
 
 ## Installation steps
 
-<a class="btn btn-lg btn-default" href="/install_manually">1. Install manually</a>
+[1. Install manually](/administrate/install/manualinstall?classes=btn,btn-lg,btn-primary)
 
-<a class="btn btn-lg btn-default" href="/postinstall">2. Proceed with the initial configuration (post-installation)</a>
+[2. Proceed with the initial configuration (post-installation)](/administrate/postinstall?classes=btn,btn-lg,btn-primary)

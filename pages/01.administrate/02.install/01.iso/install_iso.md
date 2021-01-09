@@ -26,15 +26,15 @@ You can use any computer with **256MB RAM or more**.
 
 [0. Download the YunoHost ISO image](/administrate/install/iso/images?classes=btn,btn-lg,btn-primary)
 
-<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Burn the ISO image on a USB stick</a>
+[1. Burn the ISO image on a USB stick](/administrate/install/iso/burn_iso?classes=btn,btn-lg,btn-primary)
 
-<a class="btn btn-lg btn-default" href="/boot_and_graphical_install">2. Boot the machine and run the installation</a>
+[2. Boot the machine and run the installation](/administrate/install/iso/graphical_install?classes=btn,btn-lg,btn-primary)
 
-<a class="btn btn-lg btn-default" href="/postinstall">3. Proceed with the initial configuration (post-installation)</a>
+[3. Proceed with the initial configuration (post-installation)](/administrate/postinstall?classes=btn,btn-lg,btn-primary)
 
 ---
 
 To connect directly to your computer or with [SSH](/ssh) (only on local network:
-* User: **root**
-* Password: **yunohost**
+* User: `root`
+* Password: `yunohost`
 

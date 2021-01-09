@@ -7,16 +7,20 @@ taxonomy:
 
 Now that you downloaded the ISO image of YunoHost, you should flash/burn it on a physical medium. Typically, this is done on a **USB stick** or an **SD card**.
 
-<img src="/images/sdcard.jpg" width=100>
-<img src="/images/micro-sd-card.jpg" width=100>
-<img src="/images/usb_key.png" width=150>
-<img src="/images/cd.jpg" width=100>
+[center]
+![SD card](image://sdcard.jpg?resize=100,100&class=inline)
+![Micro SD card](image://micro-sd-card.jpg?resize=100,100&class=inline)
+![USB drive](image://usb_key.png?resize=100,100&class=inline)
+![CD](image://cd.jpg?resize=100,100&class=inline)
+[/center]
 
 ### (Recommended) With Etcher
 
-Download <a href="https://etcher.io/" target="_blank">Etcher</a> for your operating system and install it.
+Download <a href="https://www.balena.io/etcher/" target="_blank">Etcher</a> for your operating system and install it.
 
-<img src="/images/etcher.gif">
+[center]
+![Etcher](image://etcher.gif?resize=100%&class=inline)
+[/center]
 
 Plug your USB stick, select your YunoHost ISO and click "Flash"
 
@@ -24,7 +28,9 @@ Plug your USB stick, select your YunoHost ISO and click "Flash"
 
 Download <a href="https://unetbootin.github.io/">UNetbootin</a> for your operating system and install it.
 
-<img src="/images/unetbootin.png">
+[center]
+![UNetbootin](image://unetbootin.png?resize=100%&class=inline)
+[/center]
 
 Put your USB stick on, select your YunoHost ISO and click "OK"
 
