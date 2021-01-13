@@ -36,7 +36,7 @@ Attention une fois la zone DNS enregistrée, le relais SMTP peut envoyer des e-m
 
 Pour que YunoHost soit capable d'utiliser le relais, il faut paramétrer 3 choses.
 1. Votre url de relais SMTP (on utilisera `smtprelay.tld`).
-2. Votre nom d'utilisateur smtp (on utilisera `username`).
+2. Votre nom d'utilisateur SMTP (on utilisera `username`).
 3. Votre mot de passe smtp (on utilisera `password`).
 
 Le fournisseur SMTP vous fournit ces trois informations.
@@ -68,5 +68,4 @@ Maintenant le relais SMTP est capable de lire et d'utiliser toutes les informati
 ## Vérifier la configuration
 
 Vous pouvez vérifier vos paramètres en envoyant un mail et voir si cela fonctionne. Certains relais SMTP vous confirment l'e-mail envoyé. Bien sur vous pouvez vérifier sur mail-tester.com pour prendre connaissance d’éventuelles problèmes.
-
 
