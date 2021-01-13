@@ -38,6 +38,7 @@
 - [FreshRSS](app_freshrss)
 - [Friendica](app_friendica)
 - [Funkwhale](app_funkwhale)
+- [Galene](app_galene)
 - [Garradin](app_garradin)
 - [Gitea](app_gitea)
 - [GitLab](app_gitlab)
