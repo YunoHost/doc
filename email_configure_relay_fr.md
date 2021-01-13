@@ -55,8 +55,7 @@ sudo yunohost settings set smtp.relay.user -v username
 sudo yunohost settings set smtp.relay.password -v password
 ```
 
-C'est une bonne idée de confirmer les informations en faisant 
-sudo yunohost settings list
+C'est une bonne idée de confirmer les informations en faisant `sudo yunohost settings list`
 
 Votre relais SMTP est maintenant configuré !
 
