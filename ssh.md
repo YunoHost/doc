@@ -4,7 +4,7 @@
 
 **SSH** stands for Secure Shell, and refers to a protocol that allows to remotely control and administrate a machine using the command line interface (CLI). It is available by default in any terminal on GNU/Linux and macOS. On Windows, you may want to use [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (after launching it, click on Session then SSH).
 
-## What address to use to connect to your server ?
+## What address to use to connect to your server?
 
 If you are **installing at home** (e.g. on a Raspberry Pi or OLinuXino or old computer):
    - you should be able to connect to your server using `yunohost.local`. 
@@ -48,7 +48,7 @@ ssh admin@your.domain.tld
 ssh admin@yunohost.local
 ```
 
-If you changed the SSH port, you need to add `-p <portnumber>` to the command, e.g. :
+If you changed the SSH port, you need to add `-p <portnumber>` to the command, e.g.:
 
 ```bash
 ssh -p 2244 admin@your.domain.tld

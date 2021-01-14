@@ -28,7 +28,7 @@ Durant la postinstallation, vous avez défini un mot de passe d'administration. 
 
 ## Se connecter
 
-Une commande SSH ressemble typiquement à:
+Une commande SSH ressemble typiquement à :
 
 ```bash
 # avant la postinstall:
@@ -38,7 +38,7 @@ ssh root@11.22.33.44
 ssh admin@11.22.33.44
 ```
 
-Ou bien en utilisant le nom de domaine plutôt que l'IP (plus pratique):
+Ou bien en utilisant le nom de domaine plutôt que l'IP (plus pratique) :
 
 ```bash
 ssh admin@votre.domaine.tld
@@ -46,7 +46,7 @@ ssh admin@votre.domaine.tld
 ssh admin@yunohost.local
 ```
 
-Si vous avez changer le port SSH, il faut rajouter l'option `-p <numerodeport>` à la commande, par ex.:
+Si vous avez changer le port SSH, il faut rajouter l'option `-p <numerodeport>` à la commande, par ex. :
 
 ```bash
 ssh -p 2244 admin@votre.domaine.tld
