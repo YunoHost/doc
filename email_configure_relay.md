@@ -74,4 +74,4 @@ From now on, a non trusty SMTP relay provider could read or use the data of all 
 
 You can check your setup by sending emails and try if everything works.
 Some of the SMTP relay will give you insights about the emails you send so that can also be a good way to check that everythings works as needed.
-Of course, you can always have a try with [mail-tester.com](mail-tester.com) to check for any problem or discrepancy.
+Of course, you can always have a try with [mail-tester.com](https://www.mail-tester.com/) to check for any problem or discrepancy.
