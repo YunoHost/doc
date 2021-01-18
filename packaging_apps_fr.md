@@ -104,7 +104,7 @@ Un serveur d'intégration continue est a disposition des packagers désirant tes
 
 ### Publiez et demandez des tests de votre application
 
-* Demandez des tests et des retours sur votre application en publiant un [post sur le Forum](https://forum.yunohost.org/) dans la [catégorie `App Support`](https://forum.yunohost.org/c/discuss/discuss-apps/).
+* Demandez des tests et des retours sur votre application en publiant un [post sur le Forum](https://forum.yunohost.org/) dans la [catégorie `Discussion > Apps`](https://forum.yunohost.org/c/discuss/discuss-apps/).
 
 * Si votre paquet et l'application qu'il contient sont sous licence libre, faites une demande d’ajout de votre application dans le [dépôt des applications](https://github.com/YunoHost/apps) (voir aussi [la liste des apps](/apps)). Vous pouvez ajouter une application même si celle-ci n'est pour le moment pas fonctionelle : l'état d'avancement peut être `notworking`, `inprogress` ou `working`.
 
