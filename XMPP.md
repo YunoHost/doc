@@ -37,6 +37,7 @@ You can connect to your YunoHost XMPP account in different ways.
 - [Conversations](https://conversations.im/) (Android)
 - [Xabber](https://xabber.com) (Android)
 - [Movim](https://movim.eu) (Android)
+- [ChatSecure] (https://chatsecure.org/) (iOS)
 - [Monal](https://monal.im/) (iOS)
 - [Siskin IM](https://siskin.im/) (iOS)
 - [Kaidan](https://www.kaidan.im/) (Ubuntu Touch / Plasma Mobile)
