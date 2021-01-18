@@ -122,7 +122,7 @@ A continuous integration server is available for packagers who want to test thei
 
 ### Publish and ask for testing your application
 
-* Publishing a [post on the Forum](https://forum.yunohost.org/) with the [`App integration` category](https://forum.yunohost.org/c/discuss/discuss-apps/), to ask for testing and feedback on your application.
+* Publishing a [post on the Forum](https://forum.yunohost.org/) in the [`Discuss > Apps` category](https://forum.yunohost.org/c/discuss/discuss-apps/), to ask for testing and feedback on your application.
 
 * If your application is released under a free software license, you may ask the YunoHost app team to integrate your application to the [app repository](https://github.com/YunoHost/apps) (c.f. also the [app list](/apps)). You can add your application even if it is not stable or working yet : the current state can be specified to `notworking`, `inprogress`, or `working`.
 
