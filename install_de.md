@@ -1,6 +1,6 @@
 # Installationsanleitung
 
-Es gibt mehrere Möglichkeiten, YunoHost zu installieren. Das konkrete Vorgehen hängt von einigen Faktoren, wie der verwendeten Hardware oder dem Serverstandort (Zuhause oder auf einem entferntem Server): Hier kannst du die **[Voraussetzungen](/hardware)** sehen, die eine Installation von YunoHost erfordert.
+Es gibt mehrere Möglichkeiten, YunoHost zu installieren. Das konkrete Vorgehen hängt von einigen Faktoren, wie der verwendeten Hardware oder dem Serverstandort (Zuhause oder auf einem entferntem Server): Hier kannst du die **[Voraussetzungen](/hardware_de)** sehen, die eine Installation von YunoHost erfordert.
 
 ---
 
