@@ -74,7 +74,7 @@ Nous n'autorisons pas les paquets YunoHost à apporter des modifications sensibl
 
 ## Qu'est-ce qu'il surveille ?
 
-Netdata collecte plusieurs milliers de mesures par appareil.
+NetData collecte plusieurs milliers de mesures par appareil.
 Toutes ces mesures sont collectées et visualisées en temps réel.
 
 > _Presque toutes les métriques sont auto-détectées, sans aucune configuration._
