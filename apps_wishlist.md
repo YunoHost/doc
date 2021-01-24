@@ -24,6 +24,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Blynk |  | [Upstream](https://github.com/blynkkk/blynk-library) |  |
 | [Bolt](https://bolt.cm/) | Content Management Tool |  | [Package Draft](https://github.com/realitygaps/bolt_ynh) |
 | [Bookstack](https://www.bookstackapp.com/) |  | [Upstream](https://github.com/BookStackApp/BookStack) |  |
+| BookWyrm | Social reading and reviewing, decentralized with ActivityPub | [Upstream](https://github.com/mouse-reeve/bookwyrm) |  |
 | BTCPay Server |  | [Upstream](https://github.com/btcpayserver/btcpayserver) |  |
 | [Cagette](https://www.cagette.net/) | A marketplace for local farmers and producers | [Upstream](https://github.com/CagetteNet/cagette) | |
 | [Caliopen](https://www.caliopen.org) | A unified inteface for all your private communications |  | [Package Draft](https://github.com/YunoHost-Apps/caliopen_ynh) |
