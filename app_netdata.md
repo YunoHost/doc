@@ -9,7 +9,7 @@ _netdata is **fast** and **efficient**, designed to permanently run on all syste
 (**physical** & **virtual** servers, **containers**, **IoT** devices), without
 disrupting their core function._
 
-[![Install Piwigo with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=piwigo)
+[![Install Netdata with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=netdata)
 
 **Customization brought by the package:**
 
