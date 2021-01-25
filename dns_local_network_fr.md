@@ -1,27 +1,24 @@
 # Accéder à son serveur depuis le réseau local
 
-Après installation de votre serveur, il est probable que votre nom de domaine ne soit pas accessible depuis le réseau local où se trouve le serveur. Ceci est un problème connu sous le nom de [hairpinning](http://fr.wikipedia.org/wiki/Hairpinning).
+Après installation de votre serveur, il est possible que votre nom de domaine ne soit pas accessible depuis le réseau local où se trouve le serveur. Ceci est un problème connu sous le nom de [hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) - une fonctionnalité mal supportée par certaines box internet.
 
-Pour résoudre ce problème, il est nécessaire de configurer le DNS de votre routeur ou, à défaut, le ou les fichiers hosts de vos ordinateurs clients.
+Pour résoudre ce problème:
+- il est nécessaire de configurer le DNS de votre routeur 
+- à défaut, il est possible de modifier le ou les fichiers /etc/hosts de vos ordinateurs clients.
 
-### Obtenir l’adresse IP locale du serveur
-Afin de configurer le DNS ou le fichier hosts, il vous faut connaître l’adresse IP privée de votre serveur. Cette adresse est utilisable uniquement sur le réseau local où se trouve le serveur et n’est pas liée à votre adresse publique utilisée sur Internet.
+### Trouver l’adresse IP locale du serveur
 
-Vous pouvez retrouver l’adresse privée de votre serveur de différentes manières :
-- Sur l’écran de connexion de YunoHost sur le serveur lui-même :
-<img src="/images/ynh_login.png" width=600>
+Tout d'abord il vous faut trouver l'adresse IP locale du serveur
+- soit en utilisant l'une de astuces expliquées [ici](finding_your_local_ip)
+- ou en utilisant la webadmin, dans l'écran Diagnostique, section Connection Internet, IPv4, cliquer sur 'Détails' et vous devriez trouver une entrée pour 'IP locale'.
+- ou en ligne de commande sur le serveur: `hostname -I`
 
-- Depuis l’interface d’administration de votre serveur YunoHost :
-    dans Outils > État du serveur > Réseau
-<img src="/images/ynh_admin_etat_ip.png" width=900>
-
-- Ou depuis votre routeur ou votre box, selon son modèle.
-
-## Configurer le DNS de la box ou du routeur
+## Configurer le DNS de la box
 
 L'idée ici est de créer une redirection qui sera active sur tout votre réseau. Le but est de créer une redirection DNS vers l'ip de votre serveur YunoHost dans votre box. Il faut donc accéder à l'interface de configuration de votre box et aux paramétrages DNS, puis créer la redirection locale (par exemple, `yunohost.local` renvoi sur `192.168.1.21`).
 
 ### Box SFR
+
 Si vous ne disposez toujours pas de l’adresse IP privée de votre serveur, vous pouvez la trouver sur l’interface de votre box SFR :  
     Dans l’onglet Réseau puis Général
 <img src="/images/ip_serveur.png" width=800>
@@ -31,6 +28,7 @@ Rendez-vous dans l’onglet Réseau puis DNS pour ajouter votre nom de domaine a
 <img src="/images/dns_9box.png" width=800>
 
 ## Configurer le fichier [hosts](http://fr.wikipedia.org/wiki/Hosts) de l’ordinateur client
+
 La modification du fichier hosts devrait être effectuée seulement si vous ne pouvez pas modifier le DNS de votre box ou de votre routeur, car le fichier hosts impactera uniquement l’ordinateur sur lequel le fichier est modifié.
 
 - Sous Windows, vous trouverez le fichier hosts ici :

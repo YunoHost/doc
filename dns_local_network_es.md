@@ -1,21 +1,17 @@
-# Acceder a tu servidor desde la red local
+# Local network access to your server
 
-Después de haber instalado tu servidor, es probable que tu nombre de dominio no esté accesible desde la red local donde se encuentra el servidor. Esto es un problema que se llama el [hairpinning](https://en.wikipedia.org/wiki/Hairpinning).
+After completing your server installation, it is possible that your domain will not be accessible through the local network. This is an issue known as [hairpinning](http://en.wikipedia.org/wiki/Hairpinning) - a feature that is not well supported by some internet routers.
 
-Para resolver este problema, es preciso configurar el DNS de tu router o, por defecto, el o los archivos hosts de tu ordenadores clientes.
+To solve this issue you can:
+- configure your router's DNS
+- or alternatively -  your /etc/hosts files on your clients workstation
 
-### Obtener la dirección IP local del servidor
-A fin de configurar el DNS o el archivo hosts, tienes que conocer la dirección IP privada de tu servidor. Esta dirección sólo puede ser utilizada en la red local donde está el servidor, y no está vinculada con tu dirección pública utilizada en Internet.
+### Find the local IP address of your server
 
-Puedes descubrir la dirección privada de tu servidor de varias maneras :
-- En la pantalla de conexión de YunoHost en el mismo servidor :
-<img src="/images/ynh_login.png" width=600>
-
-- Desde la interfaz de administración de tu servidor YunoHost :
-    en Herramientas > Estado del servidor > Red
-<img src="/images/ynh_admin_etat_ip.png" width=900>
-
-- O desde tu router o tu caja Internet, dependiendo de su modelo.
+First you need to find out the local IP of your server
+- either using the tricks lister [here](finding_your_local_ip)
+- or if in the webadmin, in the Diagnosis section, under Internet Connectivity, IPv4, click on 'Details' and you should find an entry for 'Local IP'
+- or using the command line on the server : `hostname -I`
 
 ## Configurar el DNS de la caja Internet o del router
 

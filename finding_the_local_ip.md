@@ -1,8 +1,8 @@
 # Finding your server's local IP
 
-Your server should typically be accessible using the `yunohost.local` domain. If for any reason this does not work, you may need to find the *local* IP of your server.
+On an installation at home, your server should typically be accessible using the `yunohost.local` domain. If for any reason this does not work, you may need to find the *local* IP of your server.
 
-The local IP is the address used to refer to your server inside the local network (typically your home) where multiple devices are connected to a router (your internet box). The local IP typically lookks like `192.168.x.y` (or sometimes `10.0.x.y`)
+The local IP is the address used to refer to your server inside the local network (typically your home) where multiple devices are connected to a router (your internet box). The local IP typically looks like `192.168.x.y` (or sometimes `10.0.x.y`)
 
 Any of these tricks should allow you to find the local IP of your server:
 
