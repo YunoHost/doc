@@ -9,7 +9,7 @@ To solve this issue you can:
 ### Find the local IP address of your server
 
 First you need to find out the local IP of your server
-- either using the tricks lister [here](finding_your_local_ip)
+- either using the tricks lister [here](finding_the_local_ip)
 - or if in the webadmin, in the Diagnosis section, under Internet Connectivity, IPv4, click on 'Details' and you should find an entry for 'Local IP'
 - or using the command line on the server : `hostname -I`
 
