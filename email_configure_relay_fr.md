@@ -5,7 +5,7 @@ Si votre fournisseur internet bloque le port 25, ou si vous rencontrez un probl�
 ## Qu'est ce qu'un relais SMTP
 
 C'est un serveur SMTP tiers qui va envoyer les e-mails à la place de votre propre serveur SMTP.
-Une fois correctement installer le changement et totalement transparent pour l’utilisateur. Vos correspondants verront vos e-mails comme s’il venait de votre propre serveur, mais ils auront été envoyés depuis le relais SMTP que vous aurez choisi et configurez.
+Une fois correctement installé, le changement est totalement transparent pour l’utilisateur. Vos correspondants verront vos e-mails comme s’ils venaient de votre propre serveur, mais ils auront été envoyés depuis le relais SMTP que vous aurez choisi et configuré.
 
 <div class="alert alert-warning" markdown="1">
 <span class="glyphicon glyphicon-warning-sign"></span> 
