@@ -9,6 +9,7 @@
 - [Bibliogram](app_bibliogram)
 - [Bludit](app_bludit)
 - [Blogotext](app_blogotext)
+- [BookStack](app_bookstack)
 - [Borg](app_borg)
 - [BoZoN](app_bozon)
 - [Calibre-Web](app_calibreweb)
