@@ -22,6 +22,7 @@ A list of French and Belgian ISPs is available on the [french page](/isp_fr).
 | --- | --- | --- | --- | --- | --- | --- |
 | BT Internet | Yes | - | Yes| - | - | No |
 | Virgin Media | Yes | - | - | - | No | No |
+| ZEN Internet | Yes | - | Yes | - | Yes | - |
 | PlusNet | Yes | Yes | Yes | No | - | Small one off Charge |
 
 ### Brazil
