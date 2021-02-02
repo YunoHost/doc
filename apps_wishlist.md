@@ -34,7 +34,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Cockpit](https://cockpit-project.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/cockpit_ynh) |
 | coin | Member dashboard for non profit ISP | [Upstream](https://code.ffdn.org/FFDN/coin/) | [Package Draft](https://github.com/YunoHost-Apps/coin_ynh) |
 | Commafeed |  | [Upstream](https://github.com/Athou/commafeed) |  |
-| [Converse.js](https://conversejs.org) | Web client for XMPP | [Upstream](https://github.com/jcbrand/converse.js) |  |
 | cops | Calibre OPDS |  | [Package Draft](https://github.com/YunoHost-Apps/cops_ynh) |
 | [Coquelicot](https://coquelicot.potager.org/) | A “one-click” file sharing web application |  | [Package Draft](https://github.com/YunoHost-Apps/coquelicot_ynh) |
 | [CouchDB](https://couchdb.apache.org/) | Database management |  |  |
@@ -93,7 +92,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Gpodder.net |  |  |  |
 | Granary |  | [Upstream](https://github.com/snarfed/granary) |  |
 | [Graphhopper](https://www.graphhopper.com/) |  | [Upstream](https://github.com/graphhopper/graphhopper) |  |
-| [Grocy](https://grocy.info/) | Fridge ERP | [Upstream](https://github.com/grocy/grocy) |  |
 | [Guacamole](https://guacamole.apache.org/) | Clientless remote desktop gateway |  |  |
 | [Habitica](https://habitica.com/) |  | [Upstream](https://github.com/HabitRPG/habitica) |  |
 | headphones | Automatic music downloader |  | [Package Draft](https://github.com/YunoHost-Apps/headphones_ynh) |
@@ -145,7 +143,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | microblog.pub |  | [Upstream](https://github.com/tsileo/microblog.pub) |  |
 | miniflux | Minimal RSS reader |  | [Package Draft](https://github.com/mat-mo/miniflux_ynh) |
 | [Mirakel](https://mirakel.azapps.de/taskwarrior.html) |  | [Upstream](https://github.com/GothenburgBitFactory/taskwarrior) |  |
-| Matterbridge | Bridge different chat protocols | [Upstream](https://github.com/42wim/matterbridge) | [Package Draft](https://github.com/YunoHost-Apps/matterbridge_ynh) |
 | modernpaste | A modern, feature-rich Pastebin alternative | [Upstream](https://github.com/LINKIWI/modern-paste) | [Package Draft](https://github.com/YunoHost-Apps/modernpaste_ynh) |
 | [Modoboa](https://modoboa.org) |  | [Upstream](https://github.com/modoboa/) |  |
 | [MongoPassion](https://mongopassion.24eme.fr/demo/) | Web-based project for management of MongoDB databases | [Upstream](https://github.com/24eme/MongoPassion) |  |
@@ -176,7 +173,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [OpenNote](https://foxusa.github.io/OpenNote/OpenNote/) | An alternative to Microsoft OneNote and EverNote |  | [Package Draft](https://github.com/YunoHost-Apps/OpenNote_ynh) |
 | openproject |  | [Upstream](https://github.com/opf/openproject) | [Package Draft](https://github.com/moutonjr/openproject_ynh) |
 | OpenSourceBilling |  | [Upstream](https://github.com/vteams/open-source-billing) |  |
-| [opentracker](https://erdgeist.org/arts/software/opentracker/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/opentracker_ynh) |
 | [osada](https://zotlabs.com/osada/) | A decentralized publication platform and social network |  | [Package Draft](https://github.com/YunoHost-Apps/osada_ynh) |
 | [osjs](https://www.os-js.org/) | Desktop you have access to through your web-browser |  | [Package Draft](https://github.com/YunoHost-Apps/osjs_ynh) |
 | [osmw](https://www.openstreetmap.org/) | Cartography software |  | [Package Draft](https://github.com/YunoHost-Apps/osmw_ynh) |
