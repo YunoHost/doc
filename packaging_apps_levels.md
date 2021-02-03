@@ -55,18 +55,18 @@ The application triggers no errors on the package linter
 
 The application repository is part of the YunoHost-Apps organization, which allows the community to contribute to its maintainance.
 
-### Level 7
+#### Level 7
 
 The application triggers no warnings on the package linter.
 
-### Level 8
+#### Level 8
 
 The application is long-term good quality, meaning it's been at least level 5 in the application catalog for a certain amount of time (when writing this: level 5+ 90% of the time during the last year)
 
-### Level 9
+#### Level 9
 
 The application is considered ["high-quality"](https://github.com/YunoHost/apps/blob/master/hq_validation_template.md): it is well-integrated with YunoHost (in particular SSO/LDAP) and follows the recommended development workflow.
 
-### Level 10
+#### Level 10
 
 (No definition yet)
