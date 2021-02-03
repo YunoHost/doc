@@ -159,9 +159,10 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Museek+ |  | [Upstream](https://github.com/eLvErDe/museek-plus) |  |
 | [MyBB](https://mybb.com/) |  | [Upstream](https://github.com/mybb) |  |
 | mycryptochat | Encrypted IM |  | [Package Draft](https://github.com/mrtino/mycryptochat_ynh) |
+| mx-puppet-discord | A bridge between Matrix and Discord | [Upstream](https://github.com/matrix-discord/mx-puppet-discord) |  |
 | [N8n.io](https://n8n.io) |  |  |  |
 | Netrunner |  | [Upstream](https://github.com/mtgred/netrunner) |  |
-| nexusoss | Sonatype Nexus Repository manager OSS |  | [Package Draft](https://github.com/YunoHost-Apps/nexusoss_ynh) |
+| nexusoss | Sonatype Nexus Repository manager OSS |  | [Package Draft](https://github.com/YunoHost-Apps/nexusoss_ynh) | 
 | Nitter |  | [Upstream](https://github.com/zedeus/nitter) |  |
 | [ntopng](https://www.ntop.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/ntopng_ynh) |
 | [Odoo](https://www.odoo.com/) | An open source ERP and CRM | [Upstream](https://github.com/odoo/odoo) | [Package Draft](https://github.com/YunoHost-Apps/libreerp_ynh) |
