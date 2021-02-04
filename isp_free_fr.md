@@ -28,6 +28,11 @@ La présence conjointe de ces deux règles permettent d'accéder à votre serveu
 ##### Freebox v6
 [Tutoriel d’ouverture des ports sur Freebox](http://www.astuces-pratiques.fr/informatique/ouvrir-un-port-sur-la-freebox-revolution)
 
+Au préalable, il sera généralement nécessaire d'activer les fonctions ci-dessous dans l'espace abonné (https://adsl.free.fr/):
+- Demander une adresse IP fixe V4 full-stack (si vous êtes en fibre ZMD)
+- Personnaliser mon reverse DNS
+- Blocage du protocole SMTP sortant (voir ci-dessous)
+
 
 #### Déblocage de l’envoi de courriel
 
@@ -38,6 +43,8 @@ Depuis le menu Ma freebox aller sur « Blocage SMTP sortant ».
 Pour pouvoir envoyer des mails, passer le blocage en « inactif ».
 
 #### Fonction NAS de la Freebox
+
+Attention : la Freebox utilise une ancienne version du protocole CIFS qui est maintenant obsolète sur systèmes récents (en clair, ça ne fonctionne plus).
 
 Il faut installer le paquet `cifs-utils`
 ```bash
