@@ -2,69 +2,58 @@
 
 ## Qu’est-ce que SSH ?
 
-**SSH** est un acronyme pour Secure Shell, et désigne un protocole qui permet de contrôler à distance une machine via la ligne de commande (CLI). C'est aussi une commande disponible de base dans les terminaux de GNU/Linux et macOS. Sous Windows, il vous faudra utiliser le logiciel [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (après l'avoir lancé, cliquer sur Session puis SSH).
+**SSH** est un acronyme pour Secure Shell, et désigne un protocole qui permet de contrôler et administrer à distance une machine via la ligne de commande (CLI). C'est aussi une commande disponible de base dans les terminaux de GNU/Linux et macOS. Sous Windows, il vous faudra utiliser le logiciel [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (après l'avoir lancé, cliquer sur Session puis SSH).
 
-## Pendant l’installation de YunoHost
+## Quelle adresse utiliser pour se connecter au serveur ?
 
-#### Trouver son IP
+Si vous hébergez votre serveur **à la maison** (par ex. Raspberry Pi ou OLinuXino ou vieil ordinateur)
+   - vous devriez pouvoir vous connecter à la machine en utilisant `yunohost.local`. 
+   - si `yunohost.local` ne fonctionne pas, il vous faut [trouver l'IP locale de votre serveur](/finding_the_local_ip).
+   - si vous avez installé votre serveur à la maison mais essayez d'y accéder depuis l'extérieur du réseau local, assurez-vous d'avoir bien configuré une redirection de port pour le port 22
 
-Si vous installez YunoHost sur un VPS, votre fournisseur devrait vous avoir communiqué l'adresse IP de votre serveur. 
+Si il s'agit d'une machine distante (VPS), votre fournisseur devrait vous avoir communiqué l'IP de votre machine
 
-Si vous installez un serveur à la maison (par ex. sur Raspberry Pi ou OLinuXino), il vous faut trouver l'IP qui a été attribuée à votre carte après que vous l'ayez connectée à votre box internet / routeur. Il y a plusieurs façons de faire cela :
+Dans tous les cas, si vous avez déjà configuré un nom de domaine qui pointe sur l'IP appropriée, il est plus pratique d'utiliser `votre.domaine.tld` plutôt que l'adresse IP
 
-- ouvrez un terminal et tapez `sudo arp-scan --local` pour lister les IP des machines sur le réseau local ;
-- si la commande arp-scan vous affiche beaucoup de machines, vous pouvez vérifier lesquelles sont ouvertes au SSH avec `nmap -p 22 192.168.1.0/24` pour faire du tri (adaptez la plage IP selon votre réseau local)
-- utilisez l'interface de votre box internet pour lister les machines connectées, ou regarder les logs ;
-- branchez un écran sur votre serveur, loggez-vous et tapez `hostname --all-ip-address`.
+## Identifiants pour se connecter
 
-#### Se connecter
+### AVANT la post-installation
 
-En supposant que votre adresse IP est `111.222.333.444`, ouvrez un terminal et tapez :
+- Si vous faites une **installation à la maison**, les identifiants par défaut sont login:  `root`, mot de passe: `yunohost`
+- Si vous faites une **installation sur un serveur distant (VPS)**, votre fournisseur devrait vous avoir communiqué le login et mot de passe (ou vous proposer de configurer une clef SSH)
 
-```bash
-ssh root@111.222.333.444
-```
+### APRÈS la post-installation
 
-Un mot de passe sera demandé. Si c'est un VPS, votre fournisseur devrait également vous avoir communiqué un mot de passe. Si vous avez utilisé une image pré-installée (pour x86 ou cartes ARM), le password devrait être `yunohost`.
+Durant la postinstallation, vous avez défini un mot de passe d'administration. C'est ce mot de passe qui devient le nouveau mot de passe pour les utilisateurs `root` et `admin`. De plus, **le connection en SSH avec l'utilisateur `root` est désactivée et il vous faut utiliser l'utilisateur `admin` !**. L'exception à cette règle est qu'il reste possible de se logger en root *depuis le réseau local - ou depuis une console en direct sur la machine* (ce qui peut être utile dans l'éventualité ou le serveur LDAP est inactif et l'utilisateur admin ne fonctionne plus)
 
-<div class="alert alert-warning">
-Depuis YunoHost 3.4, après avoir effectué la postinstallation, il ne sera plus possible de se logguer avec l'utilisateur `root`. À la place, il vous faut **vous logguer avec l'utilisateur `admin` !** Dans l'éventualité où le serveur LDAP serait cassé, rendant l'utilisateur `admin` inutilisable, vous devriez cependant pouvoir vous logguer avec l'utilisateur `root` depuis le réseau local.
-</div>
+## Se connecter
 
-#### Changer le mot de passe root !
-
-Après vous être connecté pour la première fois, il vous faut changer le mot de passe `root`. Le serveur vous demandera peut-être automatiquement de le faire. Si ce n'est pas le cas, il faut utiliser la commande `passwd`. Il est important de choisir un mot de passe raisonnablement compliqué. Notez que ce mot de passe sera écrasé ensuite par le mot de passe admin choisi lors de la postinstallation.
-
-#### En avant pour la configuration !
-
-Tout est prêt pour passer à la [post-installation](postinstall).
-
-## Sur une instance déjà installée
-
-Si vous avez installé votre serveur à la maison et que vous cherchez à vous connecter depuis l'extérieur du réseau local, assurez-vous d'avoir bien redirigé le port 22 vers votre serveur. (Rappel : depuis la version 3.4, il vous faut vous logguer avec l'utilisateur `admin` !)
-
-Si vous connaissez seulement l'IP de votre serveur :
+Une commande SSH ressemble typiquement à :
 
 ```bash
-ssh admin@111.222.333.444
+# avant la postinstall:
+ssh root@11.22.33.44
+
+# ou après la postinstall:
+ssh admin@11.22.33.44
 ```
 
-Ensuite, entrez le mot de passe administrateur défini pendant la [post-installation](postinstall).
-
-Si vous avez configuré vos DNS (ou modifié votre `/etc/hosts`), vous pouvez utiliser votre nom de domaine :
+Ou bien en utilisant le nom de domaine plutôt que l'IP (plus pratique) :
 
 ```bash
 ssh admin@votre.domaine.tld
+# ou avec le nom de domaine spécial yunohost.local:
+ssh admin@yunohost.local
 ```
 
-Si vous avez changé le port SSH, il faut rajouter `-p <numerodeport>` à la commande, par exemple :
+Si vous avez changer le port SSH, il faut rajouter l'option `-p <numerodeport>` à la commande, par ex. :
 
 ```bash
 ssh -p 2244 admin@votre.domaine.tld
 ```
 
 <div class="alert alert-info">
-Si vous êtes connecté en tant qu'`admin` et souhaitez devenir `root` pour plus de confort (par exemple, ne pas avoir à taper `sudo` à chaque commande), vous pouvez devenir `root` en tapant `sudo su`.
+Si vous êtes connecté en tant qu'`admin` et souhaitez devenir `root` pour plus de confort (par exemple, ne pas avoir à taper `sudo` à chaque commande), vous pouvez devenir `root` en tapant `sudo su` ou `sudo -i`.
 </div>
 
 ## Quels utilisateurs ?
