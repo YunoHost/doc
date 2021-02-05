@@ -66,4 +66,5 @@ postinstall) or 'YunoHost has been correctly configured', then congratulations!
 - Don't be too afraid of the [certificate warning](certificate), you'll probably
   be able to install a Let's Encrypt certificate :).
 - Have a look at [the available apps](apps) !
+- If you have an external SSD drive, you may want to use it as a storage for apps like [NextCloud](app_nextcloud) or [anything else](external_storage).
 
