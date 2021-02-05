@@ -1,6 +1,6 @@
 # Documentation My_webapp
 
-In addition to the application's Readme.md, here are some useful tips.
+In addition to the application's [Readme.md](https://github.com/YunoHost-Apps/my_webapp_ynh/blob/testing/README.md), here are some useful tips.
 
 ## Automatic update of the site content
 
