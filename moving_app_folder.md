@@ -36,3 +36,5 @@ chmod g+rx /media/externalharddrive
 (but it depends on your exact setup... Please update this doc page if you figure
 out what to do exactly)
 
+If you want to do it with *NextCloud*, see [this Tutorial](app_nextcloud).
+
