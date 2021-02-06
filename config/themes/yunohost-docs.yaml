@@ -4,8 +4,8 @@ grid-size: grid-xl
 github:
   note: false
   link: true
-  tree: https://github.com/tituspijean/doc/blob/grav/
-  commits: https://github.com/tituspijean/doc/commits/grav/
+  tree: https://github.com/yunohost/doc/blob/grav/
+  commits: https://github.com/yunohost/doc/commits/grav/
 spectre:
   exp: false
   icons: false
