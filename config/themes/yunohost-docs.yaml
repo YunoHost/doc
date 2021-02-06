@@ -1,0 +1,12 @@
+enabled: true
+production-mode: false
+grid-size: grid-xl
+github:
+  note: false
+  link: true
+  tree: https://github.com/tituspijean/doc/blob/grav/
+  commits: https://github.com/tituspijean/doc/commits/grav/
+spectre:
+  exp: false
+  icons: false
+top_level_version: true
