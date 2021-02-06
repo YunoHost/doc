@@ -10,7 +10,7 @@ routes:
 Vous pouvez accéder à l'interface de gestion des *groupes et des permissions* depuis la webadmin
 en allant dans la section "Utilisateurs" et en cliquant sur le bouton correspondant :
 
-![](./images/button_to_go_to_permission_interface_fr.png)
+![](image://button_to_go_to_permission_interface_fr.png)
 
 ## Gestion des groupes
 
@@ -29,7 +29,7 @@ Vous ne pouvez pas changer le contenu de ces groupes, seulement les permissions 
 ### Lister les groupes existants
 Les groupes existants sont listés en haut de la page *groupes et autorisations*.
 
-![](./images/groups_default-groups.png)
+![](image://groups_default-groups.png)
 
 Pour obtenir la liste des groupes existants en CLI :
 
@@ -48,7 +48,7 @@ groups:
 ### Créer un nouveau groupe
 Pour créer un nouveau groupe, il suffit de cliquer sur le bouton "Nouveau groupe" en haut de la page. Vous ne pouvez choisir qu'un nom formé de lettres (majuscules et minuscules) et d'espaces. Le groupe est créé vide et sans aucune permissions.
 
-![](./images/groups_button-new-group.png)
+![](image://groups_button-new-group.png)
 
 Dans la CLI, pour créer un nouveau groupe appelé `yolo_crew`, il faut utiliser
 
@@ -59,11 +59,11 @@ $ yunohost user group create yolo_crew
 ### Mettre à jour un groupe
 Ajoutons un premier utilisateur à ce groupe : dans le panneau du groupe, cliquez sur le bouton "ajouter un utilisateur" et faites défiler jusqu'à l'utilisateur souhaité, puis cliquez dessus.
 
-![](./images/groups_button-add-user.png)
+![](image://groups_button-add-user.png)
 
 Pour supprimer un utilisateur, cliquez sur la croix à côté de son nom d'utilisateur, dans le panneau du groupe.
 
-![](./images/groups_button-remove-user.png)
+![](image://groups_button-remove-user.png)
 
 En CLI, utilisez la commande suivante pour ajouter `charlie` et `delphine` au groupe `yolo_crew` :
 
@@ -94,7 +94,7 @@ groups:
 
 Pour supprimer un groupe, cliquez sur la croix rouge en haut à droite du panneau du groupes. Une confirmation vous sera demandée.
 
-![](./images/groups_button-delete-group.png)
+![](image://groups_button-delete-group.png)
 
 Pour supprimer le groupe `yolo_crew` dans CLI, vous pouvez exécuter
 
@@ -110,7 +110,7 @@ Le mécanisme de permissions permet de restreindre l'accès aux services (par ex
 
 La page des groupes liste les permissions données à chaque groupe, y compris les groupes spéciaux `all_users` et `visitors`.
 
-![](./images/groups_default-with-permissions.png)
+![](image://groups_default-with-permissions.png)
 
 Pour répertorier les permissions et les accès correspondants en CLI :
 ```shell
@@ -133,7 +133,7 @@ Plus de détails peuvent être affichés en ajoutant l'option `--full` qui affic
 
 Pour ajouter une permission à un groupe, il suffit de cliquer sur le bouton "+" dans le panneau du groupe, de faire défiler jusqu'à la permission souhaitée, puis de cliquer dessus.
 
-![](./images/groups_add-permission-group.png)
+![](image://groups_add-permission-group.png)
 
 Pour permettre à un groupe d'accéder à l'interface d'administration de WordPress via la CLI :
 
@@ -143,7 +143,7 @@ $ yunohost user permission update wordpress.admin --add yolo_crew
 
 Notez que vous pouvez également autoriser un seul utilisateur, en utilisant le panneau spécifique en bas de la page.
 
-![](./images/groups_add-permission-user.png)
+![](image://groups_add-permission-user.png)
 
 ou en CLI :
 
@@ -175,7 +175,7 @@ Notez que certaines permissions peuvent être "protégées", ce qui signifie que
 
 La webadmin émettra un avertissement si vous définissez une permission qui est remplacée par une permission plus large.
 
-![](./images/groups_alerte-permission.png)
+![](image://groups_alerte-permission.png)
 
 ### Montrer/cacher les tuiles dans le portail utilisateur
 

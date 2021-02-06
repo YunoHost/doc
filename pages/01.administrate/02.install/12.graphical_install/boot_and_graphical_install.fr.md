@@ -24,7 +24,7 @@ Démarrez votre serveur avec la clé USB ou le CD-ROM inséré, et sélectionnez
 
 Vous devriez voir un écran comme ça :
 
-<img src="/images/virtualbox_3.png">
+![](image://virtualbox_3.png)
 
 
 * Sélectionnez `Graphical install`

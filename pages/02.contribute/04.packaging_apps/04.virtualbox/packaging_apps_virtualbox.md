@@ -47,14 +47,14 @@ Before starting to play with the virtual machine, now is a good time to take a f
 First, stop the virtual machine.
 
 Managing snapshots is done in the 'Snapshots' tab
-<img src="/images/virtualbox_packaging1-en.png" width=80%>
+![](image://virtualbox_packaging1-en.png)
 
 Here, we're creating a first snapshot
-<img src="/images/virtualbox_packaging2-en.png" width=30%>
+![](image://virtualbox_packaging2-en.png)
 
 We can now start to work on the virtual machine and create as many snapshots as desired for each milestone of our modifications.
 
-<img src="/images/virtualbox_packaging3-en.png" width=80%>
+![](image://virtualbox_packaging3-en.png)
 
 In this example, after having validated our particular package removal works fine, we can easily get back in time by restoring the virtual machine to its previous state with the package still installed.
 Once the package will be fully functional, it will just be a matter of deleting the snaphots associated with this package work to get the virtual machine back to its initial state.
@@ -64,14 +64,14 @@ For our next test, we will then be back to a freshly installed YunoHost serveur,
 
 In addition to successive snapshots, it is also possible to create a new machine state and additional snapshots from an older machine snapshot/state.
 
-<img src="/images/virtualbox_packaging4-en.png" width=80%>
+![](image://virtualbox_packaging4-en.png)
 
 In this example, I have created two branches since my successful package installation, so as to independently test just the application removal, upgrade and backup/restore steps.
 I eventually got back to the virtual machine base state to start a new test on another package, without dropping my former test whatsoever.
 At any time, it is possible to get back to a previous snapshot simply by restoring it.
 The machine always start on the "Current state" state.
 
-<img src="/images/virtualbox_packaging5-en.png" width=80%>
+![](image://virtualbox_packaging5-en.png)
 
 > It is always possible to create a new snapshot, whether the machine is stopped or not. To restore a snapshot however, the machine cannot be running.
 
@@ -93,6 +93,6 @@ We can now work on the virtual machine using the commandline.
 To easily copy the package files or use a graphical text editor, one can also connect via `sftp` using a file explorer.
 
 It's a simple matter of using the `sftp://admin@my.domain/` address.
-<img src="/images/virtualbox_packaging6.jpg" width=80%>
+![](image://virtualbox_packaging6.jpg)
 
 > Note: on Windows or macOS, the file explorer does not natively support the `sftp` protocol...

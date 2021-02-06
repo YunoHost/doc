@@ -7,7 +7,7 @@ routes:
   default: '/app_phpsysinfo'
 ---
 
-<img src="/images/phpsysinfo_logo.png" height="80px" alt="phpsysinfo's logo"> phpSysInfo
+![phpsysinfo's logo](image://phpsysinfo_logo.png?height=80)
 
 [![Install phpSysInfo with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=phpsysinfo) [![Integration level](https://dash.yunohost.org/integration/phpsysinfo.svg)](https://dash.yunohost.org/appci/app/phpsysinfo)
 

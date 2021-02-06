@@ -7,7 +7,7 @@ routes:
   default: '/app_mantis'
 ---
 
-<img src="/images/mantis_logo.png" height="80px" alt="Mantis's logo"> Mantis
+![Mantis's logo](image://mantis_logo.png?height=80)
 
 [![Install Mantis with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mantis) [![Integration level](https://dash.yunohost.org/integration/mantis.svg)](https://dash.yunohost.org/appci/app/mantis)
 

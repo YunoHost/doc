@@ -7,7 +7,7 @@ routes:
   default: '/app_lychee'
 ---
 
-<img src="/images/lychee_logo.png" width="80px" alt="Lyfee's logo"> Lychee
+![logo de Lychee](image://lychee_logo.png?width=80)
 
 [![Installer Lychee avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=lychee) [![Integration level](https://dash.yunohost.org/integration/lychee.svg)](https://dash.yunohost.org/appci/app/lychee)
 

@@ -42,6 +42,6 @@ Here, we will use the client provided by the box, which is the more easy way.
 
 Enter the login of the dynamic DNS and its public IP address in your box (interface details may vary by ISP).
 
-<img src="/images/dns_dynamic-ip_box_conf.png" width=600>
+![](image://dns_dynamic-ip_box_conf.png?resize=600)
 
 You're good to go !

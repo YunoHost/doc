@@ -7,7 +7,7 @@ routes:
   default: '/app_phpmyadmin'
 ---
 
-<img src="/images/phpmyadmin_logo.svg" height="80px" alt="phpmyadmin's logo"> phpMyAdmin
+![phpmyadmin's logo](image://phpmyadmin_logo.svg?height=80)
 
 [![Install phpMyAdmin with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=phpmyadmin) [![Integration level](https://dash.yunohost.org/integration/phpmyadmin.svg)](https://dash.yunohost.org/appci/app/phpmyadmin)
 

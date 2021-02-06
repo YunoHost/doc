@@ -19,20 +19,24 @@ A continuación puedes encontrar los elementos a configurar en el cliente de cor
 | IMAP     | 993  | SSL/TLS    | Normal password | `nombre_de_usuario` (sin `@domain.tld`) |
 | SMTP     | 587  | STARTTLS   | Normal password | `nombre_de_usuario` (sin `@domain.tld`) |
 
-### <img src="images/thunderbird.png" width=50> Configurar Mozilla Thunderbird (en un ordenador)
+![](image://thunderbird.png?resize=50)
+
+### Configurar Mozilla Thunderbird (en un ordenador)
 
 Para configurar manualmente un nuevo cuenta en Thunderbird, añadir las informaciones de la cuenta, y después seleccionar el puerto 993 con SSL/TLS para IMAP, y puerto 587 con STARTTLS para SMTP. Después seleccionar 'Normal Password' para Autenticación y haz click en el botón 'Advanced Config'. Se puede que tendrás que aceptar los certificados para que todo funciona normalmente.
 
-<img src="/images/thunderbird_config_1.png" width=900>
-<img src="/images/thunderbird_config_2.png" width=900>
+![](image://thunderbird_config_1.png?resize=900)
+![](image://thunderbird_config_2.png?resize=900)
 
 * [Gestionar un alias para una dirección de correo electrónico](https://support.mozilla.org/es/kb/configurar-un-alias-para-una-direccin-de-correo-el)
 
-### <img src="images/k9mail.png" width=50> Configurar K-9 Mail (en Android)
+![](image://k9mail.png?resize=50)
+
+### Configurar K-9 Mail (en Android)
 
 Seguir los pasos a continuación. (Como para Thunderbird, se puede que tendrás que aceptar los certificados para que funciona normalmente.)
 
-<a href="/images/k9mail_config_1.png"><img src="/images/k9mail_config_1.png" width=200/></a>
-<a href="/images/k9mail_config_2.png"><img src="/images/k9mail_config_2.png" width=200/></a>
-<a href="/images/k9mail_config_3.png"><img src="/images/k9mail_config_3.png" width=200/></a>
-<a href="/images/k9mail_config_4.png"><img src="/images/k9mail_config_4.png" width=200/></a>
+![](image://k9mail_config_1.png?resize=300)
+![](image://k9mail_config_2.png?resize=300)
+![](image://k9mail_config_3.png?resize=300)
+![](image://k9mail_config_4.png?resize=300)

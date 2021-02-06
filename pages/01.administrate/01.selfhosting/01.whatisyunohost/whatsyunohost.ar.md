@@ -12,7 +12,7 @@ routes:
 هو مُرتكز و منسجم كافة الإنسجام مع توزيعة [غنو/لينكس ديبيان](https://debian.org).
 </div>
 
-<img src="/images/debian-logo.png" width=100>
+![](image://debian-logo.png?resize=100)
 
 ---
 
@@ -29,7 +29,7 @@ routes:
 - نظام لإعادة توليد الإعدادات و الخدمات
 </div>
 
-<img src="/images/YunoHost_logo_vertical.png" width=400>
+![](image://YunoHost_logo_vertical.png?resize=400)
 
 ---
 
@@ -62,7 +62,7 @@ Constatant l’engouement croissant autour de YunoHost et de l’auto-hébergeme
 
 <div dir="rtl">
 **YunoHost** مُستمَدٌّ مِن لُغة الإنترنت العاميّة « Y U NO Host » و بالمعنى التقريبي « لماذا لا تستضيف نفسك بنفسك ». [ميم الإنترنت](https://ar.m.wikipedia.org/wiki/%D9%85%D9%8A%D9%85_%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA) الذي يصف المعنى بالتقريب هو :
-<div class="text-center"><img style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" src="/images/dude_yunohost.jpg"></div>
+![](image://dude_yunohost.jpg)
 </div>
 
 ---

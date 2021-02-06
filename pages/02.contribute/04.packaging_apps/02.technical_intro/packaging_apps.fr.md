@@ -7,7 +7,7 @@ routes:
   default: '/packaging_apps'
 ---
 
-<img src="/images/yunohost_package.png" width=100/>
+![](image://yunohost_package.png?resize=100)
 
 Ce document a pour but de vous apprendre à packager une application pour YunoHost.
 

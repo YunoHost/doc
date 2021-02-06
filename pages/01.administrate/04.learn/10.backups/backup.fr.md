@@ -23,7 +23,7 @@ La méthode de sauvegarde actuelle consiste à créer des archives `.tar.gz` qui
 
 Vous pouvez facilement créer des archives depuis la webadmin en allant dans Sauvegardes > Archives locales et en cliquant sur "Nouvelle sauvegarde". Vous pourrez ensuite sélectionner les éléments à sauvegarder (configuration, données "système", applications).
 
-![](/images/backup.png)
+![](image://backup.png)
 
 #### Depuis la ligne de commande
 
@@ -89,7 +89,7 @@ scp /path/to/your/<nom_d'archive>.tar.gz admin@your.domain.tld:/home/yunohost.ba
 
 Allez dans Sauvegardes > Sauvegardes locales et sélectionnez l'archive. Vous pouvez ensuite choisir les différents éléments que vous voulez restaurer puis cliquer sur "Restaurer".
 
-![](/images/restore.png)
+![](image://restore.png)
 
 #### Depuis la ligne de commande
 

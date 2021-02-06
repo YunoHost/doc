@@ -7,7 +7,7 @@ routes:
   default: '/app_funkwhale'
 ---
 
-<img src="/images/funkwhale_logo.png" width="80px" alt="logo de Funkwhale"> Funkwhale
+![logo de Funkwhale](image://funkwhale_logo.png?width=80)
 
 [![Install Funkwhale with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=funkwhale) [![Integration level](https://dash.yunohost.org/integration/funkwhale.svg)](https://dash.yunohost.org/appci/app/funkwhale)
 

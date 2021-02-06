@@ -7,7 +7,7 @@ routes:
   default: '/app_jitsi'
 ---
 
-<img src="/images/jitsi_logo.svg" width="80px" alt="logo de jitsi"> Jitsi
+![logo de jitsi](image://jitsi_logo.svg?width=80)
 
 [![Install jitsi with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=jitsi) [![Integration level](https://dash.yunohost.org/integration/jitsi.svg)](https://dash.yunohost.org/appci/app/jitsi)
 

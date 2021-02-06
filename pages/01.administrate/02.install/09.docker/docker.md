@@ -20,11 +20,7 @@ there are other problems link to the firewall and services).
 
 However, community images exist and are available on Docker Hub:
 
-  * AMD64 (classic)
-    * https://hub.docker.com/r/domainelibre/yunohost/ (YunoHost v4+)
-  * I386 (old computers)
-    * https://hub.docker.com/r/domainelibre/yunohost-i386/ (YunoHost v4+)
-  * ARMV7 (Raspberry Pi 2/3 ...)
-    * https://hub.docker.com/r/domainelibre/yunohost-arm/ (YunoHost v4+)
-  * ARMV6 (Raspberry Pi 1)
-    * https://hub.docker.com/r/tuxalex/yunohost-armv6/ (old yunoHost version)
+  * [AMD64 (classic) (ancienne version de YunoHost)](https://hub.docker.com/r/domainelibre/yunohost/)
+  * [I386 (old computers) (ancienne version de YunoHost)](https://hub.docker.com/r/domainelibre/yunohost-i386/)
+  * [ARMV7 (Raspberry Pi 2/3 ...) (ancienne version de YunoHost)](https://hub.docker.com/r/domainelibre/yunohost-arm/)
+  * [ARMV6 (Raspberry Pi 1) (old yunoHost version)](https://hub.docker.com/r/tuxalex/yunohost-armv6/)

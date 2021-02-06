@@ -7,7 +7,7 @@ routes:
   default: '/app_nextcloud'
 ---
 
-<img src="/images/nextcloud_logo.png" alt="logo de Nextcloud"> Nextcloud  
+![Nextcloud's logo](image://nextcloud_logo.png)
 
  - [Discovering the Nextcloud environment](#EnvironmentNextcloud)  
  - [Mobile and computer client software](#ClientSoftware)  

@@ -7,7 +7,7 @@ routes:
   default: '/app_framaforms'
 ---
 
-<img src="/images/framaforms_logo.png" height="80px" alt="logo de framaforms"> Framaforms
+![logo de framaforms](image://framaforms_logo.png?height=80)
 
 [![Install framaforms with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=framaforms) [![Integration level](https://dash.yunohost.org/integration/framaforms.svg)](https://dash.yunohost.org/appci/app/framaforms)
 

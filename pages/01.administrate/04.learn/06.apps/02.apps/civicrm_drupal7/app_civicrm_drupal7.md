@@ -7,7 +7,7 @@ routes:
   default: '/app_civicrm_drupal7'
 ---
 
-<img src="/images/civicrm_logo.png" height="80px" alt="CiviCRM's logo"> CiviCRM
+![CiviCRM's logo](image://civicrm_logo.png?height=80)
 
 [![Install CiviCRM on Drupal 7 with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=civicrm_drupal7) [![Integration level](https://dash.yunohost.org/integration/civicrm_drupal7.svg)](https://dash.yunohost.org/appci/app/civicrm_drupal7)
 

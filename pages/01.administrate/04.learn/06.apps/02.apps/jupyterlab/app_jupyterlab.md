@@ -7,7 +7,7 @@ routes:
   default: '/app_jupyterlab'
 ---
 
-<img src="/images/logo-jupyterhub.png" height="80px" alt="JupyterLab Logo"> JupyterLab
+![JupyterLab's Logo](image://logo-jupyterhub.png?height=80)
 
 [![Install JupyterLab with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=jupyterlab) [![Integration level](https://dash.yunohost.org/integration/jupyterlab.svg)](https://dash.yunohost.org/appci/app/jupyterlab)
 

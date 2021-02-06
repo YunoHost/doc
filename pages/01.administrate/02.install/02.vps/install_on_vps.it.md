@@ -11,7 +11,7 @@ routes:
 
 ### Pre-requisiti
 
-<img src="/images/vps.png" width=250>
+![](image://vps.png?resize=250)
 
 * Un server dedicato o un server privato virtuale (VPS)
 * con almeno **512MB** di RAM

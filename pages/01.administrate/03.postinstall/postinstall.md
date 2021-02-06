@@ -21,7 +21,7 @@ During the first visit, you will very likely encounter a security warning relate
 
 You should then land on this page :
 
-<img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="/images/postinstall_web.png">
+![](image://postinstall_web.png)
 
 <em><p class="text-muted">Preview of the Web post-installation</p></em>
 
@@ -29,7 +29,7 @@ You should then land on this page :
 
 You can also perform the postinstallation with the command `yunohost tools postinstall` directly on the server, or [via SSH](/ssh).
 
-<img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="/images/postinstall_cli.png">
+![](image://postinstall_cli.png)
 
 <em><p class="text-muted">Preview of the command-line post-installation</p></em>
 

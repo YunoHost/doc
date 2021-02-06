@@ -94,16 +94,16 @@ All that remains is to designate the anchor to the text you want to make interac
 To display images, the principle is the same as for links, except that a `!` is added before the text to be displayed, which is considered here as the text to be displayed if the image cannot be loaded. A description of the image is appropriate.
 
 ```markdown
-![YunoHost Logo](/images/logo.png)
+![YunoHost Logo](image://logo.png)
 ```
-![YunoHost Logo](/images/logo.png)
+![YunoHost Logo](image://logo.png)
 
 
 It is possible to make a link with an image, for example:
 ```markdown
-[![YunoHost Logo](/images/logo.png)](/write_documentation)
+[![YunoHost Logo](image://logo.png)](/write_documentation)
 ```
-[![YunoHost Logo](/images/logo.png)](/write_documentation)
+[![YunoHost Logo](image://logo.png)](/write_documentation)
 
 The insert of *text to be displayed if the image cannot be loaded* between the brackets in the image link is not mandatory but strongly recommended.
 
@@ -217,14 +217,14 @@ To create an array, use the vertical bar `|` and dashes `--`. It is mandatory to
 | **One table** | One column | One second | As many as you want |
 |:-------------:|:----------:|:----------:|:-------------------:|
 | | And formatted line | | And bold text | | Or *italic* |
-| More lines | |![An image](/images/cd.jpg) | [Or a link](/contributordoc) |
+| More lines | |![An image](image://cd.jpg) | [Or a link](/contributordoc) |
 ```
 Which would say this:
 
 | **One table** | One column | One second | As many as you want |
 |:-------------:|:----------:|:----------:|:-------------------:|
 | | And formatted line | | And bold text | | Or *italic* |
-| More lines | |![An image](/images/cd.jpg) | [Or a link](/contributordoc) |
+| More lines | |![An image](image://cd.jpg) | [Or a link](/contributordoc) |
 
 ## Code block
 
