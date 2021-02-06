@@ -1,5 +1,5 @@
 ---
-title: YunoHost per organizacion sens tòca lucrativa
+title: Use cases for NGOs
 template: docs
 taxonomy:
     category: docs
