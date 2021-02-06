@@ -10,7 +10,7 @@ L'IPv6 peut fonctionner directement dans certains cas. Mais dans d'autres, ou ch
 ## Avec un VPS chez OVH
 
 OVH donne une adresse IPv4 et une IPv6 pour ses VPS, mais par défaut, seule l'IPv4 fonctionne.
-La documentation d'OVH à ce sujet est ici : https://docs.ovh.com/gb/en/vps/configuring-ipv6/
+La documentation d'OVH à ce sujet est ici : https://docs.ovh.com/fr/vps/configurer-ipv6/
 
 ### Configurer le serveur DNS
 

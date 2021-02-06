@@ -32,9 +32,7 @@ Vor der Einrichtung eines Servers zuhause ist es empfehlenswert [mögliche Einsc
 
 <a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Flash the SD card with the image</a>
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot">2. Plug & boot</a>
-
-<a class="btn btn-lg btn-default" href="/ssh">3. Connect to your server with SSH</a>
+<a class="btn btn-lg btn-default" href="/plug_and_boot">2. Boot the board and connect to the web interface at `yunohost.local`</a>
 
 <a class="btn btn-lg btn-default" href="/postinstall">4. Proceed to post-installation</a>
 

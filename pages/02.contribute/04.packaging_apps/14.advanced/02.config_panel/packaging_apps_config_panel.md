@@ -34,7 +34,7 @@ Here how it looks like in the admin interface:
 
 ### Admin interface
 
-The configuration panel for an application can be accessed with this url:
+The configuration panel for an application can be accessed with this URL:
 
     https://my_domain.tld/yunohost/admin/#/apps/$app_id/config-panel
 

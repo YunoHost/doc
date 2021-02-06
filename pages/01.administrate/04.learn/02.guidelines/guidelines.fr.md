@@ -11,7 +11,7 @@ Cette page énumère quelques conseils et lignes directrices que tout administra
 
 En d'autres termes : votre serveur est soit un "serveur de production" (destiné à fonctionner), soit un serveur de test sur lequel vous vous permettez d'expérimenter.
 
-Si votre but est d'avoir un serveur de production, alors s'il vous plaît.. :
+Si votre but est d'avoir un serveur de production :
 - soyez conscient qu'un serveur est un système fragile : restez prudent, méthodique et patient ;
 - limitez les expérimentations et la personnalisation - notamment des fichiers de config ;
 - n'installez pas des douzaines d'applications juste pour voir de quoi elles ont l'air ;
@@ -23,7 +23,7 @@ Si votre but est d'avoir un serveur de production, alors s'il vous plaît.. :
 YunoHost est conçu pour fonctionner avec des cas d'utilisation généraux et simples. S'écarter de ces conditions rendra les choses plus difficiles et vous aurez besoin de connaissances techniques pour les faire fonctionner. Par exemple,
 - n'essayez pas d'exécuter YunoHost dans un contexte où vous ne pouvez pas avoir le contrôle des ports 80 et 443 (ou pas d'Internet du tout) ;
 - n'essayez pas d'héberger cinq serveurs derrière la même connexion Internet si vous n'êtes pas déjà un utilisateur avancé ;
-- ne tombez pas dans des caprices de nerd tels que vouloir remplacer nginx par Apache (ou faire tourner les deux à la fois) ;
+- ne tombez pas dans des caprices de nerd tels que vouloir remplacer NGINX par Apache (ou faire tourner les deux à la fois) ;
 - n'essayez pas d'utiliser des certificats SSL personnalisés si vous n'en avez pas vraiment besoin ;
 - ...
 
@@ -50,4 +50,3 @@ Enfin, gardez à l'esprit que YunoHost est un logiciel libre maintenu par des vo
 Si vous aimez YunoHost et que vous voulez que le projet soit maintenu en vie et progresse, n'hésitez pas à laisser une note de remerciement et à [faire un don](https://liberapay.com/YunoHost) au projet et à en parler autour de vous !
 
 Pour finir, puisque YunoHost est un projet de logiciel libre, vous êtes légitime et bienvenu pour [venir contribuer](/contribute) au projet, que ce soit sur les aspects techniques (c.-à-d. code) et moins techniques (comme par exemple contribuer à cette documentation ;)) !
-

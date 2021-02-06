@@ -7,72 +7,63 @@ taxonomy:
 
 ## What's SSH?
 
-**SSH** stands for Secure Shell, and refers to a protocol that allows to remotly control a machine using the command line interface (CLI). It is available by default in any terminal on GNU/Linux and macOS. On Windows, you may want to use [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (after launching it, click on Session then SSH).
+**SSH** stands for Secure Shell, and refers to a protocol that allows to remotely control and administrate a machine using the command line interface (CLI). It is available by default in any terminal on GNU/Linux and macOS. On Windows, you may want to use [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (after launching it, click on Session then SSH).
 
-## During YunoHost installation
+## What address to use to connect to your server?
 
-#### Find your IP
+If you are **installing at home** (e.g. on a Raspberry Pi or OLinuXino or old computer):
+   - you should be able to connect to your server using `yunohost.local`. 
+   - if `yunohost.local` does not work, your need to [find out the local IP of the server](/finding_the_local_ip).
+   - if you installed a server at home but are attempting to connect from outside your local network, make sure port 22 is correctly forwarded to your server.
 
-If you are installing on a VPS, then your VPS provider should have gave you your IP address. 
+If you server is a remote server (VPS), your provider should have communicated you the IP address of the machine
 
-If you are installing at home (e.g. on a Raspberry Pi or OLinuXino), then you need to find out which IP has been attributed to your board after you plugged it to your internet box / router. Several ways exists to find your server's IP:
+In any cases, if you already configured a domain name pointing to the appropriate IP, it's much better to use `yourdomain.tld` instead of the IP address.
 
-- open a terminal and use `sudo arp-scan --local` to list the IP on your local network;
-- if the arp-scan command displays a confusing number of devices, you can check which ones are open to SSH with `nmap -p 22 192.168.1.0/24` to sort them out (adapt the IP range to your local network)
-- use your internet box / router interface to list the machines connected, or check the logs;
-- plug a screen on your server, log in and type `hostname --all-ip-address`.
 
-#### Connect
+## Login credentials
 
-Assuming your IP address is `111.222.333.444`, open a terminal and enter:
+### BEFORE running the post-installation
 
-```bash
-ssh root@111.222.333.444
-```
+- If you are **installing at home**, the default credentials are login: `root` and password: `yunohost`
+- If you are **installing a remote server (VPS)**, your provider should have communicated you the login and password (or allowed you to configure an SSH key)
 
-A password will be asked. If this is a VPS, your VPS provided should have communicated you the password. If you used a pre-installed image (for x86 computer or ARM board), the password should be `yunohost`.
+### AFTER running the post-installation
 
-<div class="alert alert-warning">
-Since YunoHost 3.4, after running the postinstallation, you won't be able to login as `root` anymore. Instead, **you should login using the `admin` user !** In the event that the LDAP server is broken and the `admin` user is unusable, you may still however still be able to login using `root` from the local network.
-</div>
+During the postinstall, you've been asked to choose an administration password. This password becomes the new password for the `root` and `admin` users. Additionally, **the `root` SSH login becomes disabled after the postinstall and you should log in using the `admin` user !**. The only exception is that you may still be able to login using `root` *from the local network - or from a direct console on the server* (this is to cover the event where the LDAP server is broken and the `admin` user is unusable).
 
-#### Change the password!
 
-After logging in for the first time, you should change the root password. The server might automatically ask you to do so. If not, use the command `passwd`. It is important to choose a reasonably strong password. Note that the root password will be overriden by the admin password when you perform the postinstallation.
+## Connecting
 
-#### Let's configure!
-
-We're now ready to begin the [post-installation](postinstall).
-
-## After installing YunoHost
-
-If you installed your server at home and are attempting to connect from outside your local network, make sure port 22 is correctly forwarded to your server. (Reminder: since YunoHost 3.4 you should connect using the `admin` user!)
-
-If you only know the IP address of your server:
+The SSH command typically looks like: 
 
 ```bash
-ssh admin@111.222.333.444
+# before the postinstall:
+ssh root@11.22.33.44
+
+# or after the postinstall:
+ssh admin@11.22.33.44
 ```
 
-Then, you need to enter your administrator password created at [post-installation step](postinstall).
-
-If you configured your DNS (or tweaked your `/etc/hosts`), you can simply use your domain name:
+Or using the domain name instead of the IP (more convenient): 
 
 ```bash
 ssh admin@your.domain.tld
+# or with the special .local domain:
+ssh admin@yunohost.local
 ```
 
-If you changed the SSH port, you need to add `-p <portnumber>` to the command, e.g. :
+If you changed the SSH port, you need to add `-p <portnumber>` to the command, e.g.:
 
 ```bash
 ssh -p 2244 admin@your.domain.tld
 ```
 
 <div class="alert alert-info">
-If you are connected as `admin` and would like to become `root` for more comfort (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su`.
+If you connected as `admin` and would like to become `root` for convenience (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su` or `sudo -i`.
 </div>
 
-## Which users?
+## Which other users may connect to the server?
 
 By default, only the `admin` user can log in to YunoHost SSH server.
 

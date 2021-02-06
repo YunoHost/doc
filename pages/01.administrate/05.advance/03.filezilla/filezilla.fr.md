@@ -11,9 +11,7 @@ Cette page explique comment échanger des fichiers (sauvegardes, musiques, photo
 
 ## Télécharger et installer FileZilla
 
-Vous pouvez télécharger FileZilla depuis [cette page](https://filezilla-project.org/download.php?type=client).
-Le site devrait détecter automatiquement la version nécessaire pour votre ordinateur.
-Sinon, suivez les instructions pour [installer le client](https://wiki.filezilla-project.org/Client_Installation)
+Vous pouvez télécharger FileZilla depuis [cette page](https://filezilla-project.org/download.php?type=client). Le site devrait détecter automatiquement la version nécessaire pour votre ordinateur. Sinon, suivez les instructions pour [installer le client](https://wiki.filezilla-project.org/Client_Installation)
 
 Installez le programme et lancez *Filezilla*.
 

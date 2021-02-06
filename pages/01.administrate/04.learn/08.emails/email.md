@@ -45,3 +45,7 @@ To ensure that your servers’ IP address isn’t into this blacklists and to re
 ## Migrating email from an email provider to a YunoHost instance
 
 See [this page](email_migration).
+
+## Configuring SMTP relay
+
+See [this page](email_configure_relay).

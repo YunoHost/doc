@@ -108,9 +108,6 @@ et de le compléter ainsi :
 ```ini
 [sshd]
 port = <votre_numero_de_port_ssh>
-
-[sshd-ddos]
-port = <votre_numero_de_port_ssh>
 ```
 
 Il reste enfin à relancer `fail2ban` pour prendre en compte la nouvelle configuration 

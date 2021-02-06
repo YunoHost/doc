@@ -16,27 +16,18 @@ Les applications et leurs paquets ont leurs licences respectives.
 
 #### Quel est l’objectif de YunoHost ?
 
-Nous pensons que la décentralisation d’Internet, et la reprise du contrôle et
-de la responsabilité des données et services par les citoyens est un enjeu
-crucial pour garantir une société libre et démocratique.
+Nous pensons que la décentralisation d’Internet, et la reprise du contrôle et de la responsabilité des données et services par les citoyens est un enjeu crucial pour garantir une société libre et démocratique.
 
 Le projet YunoHost cherche à démocratiser l’auto-hébergement.
 
-Nous fournissons un logiciel qui cherche à rendre simple le fait de gérer et
-d’administrer un serveur soi-même, en minimisant les compétences et le temps
-requis.
+Nous fournissons un logiciel qui cherche à rendre simple le fait de gérer et d’administrer un serveur soi-même, en minimisant les compétences et le temps requis.
 
 
 #### Mais qu’est-ce que ça fait *vraiment* ?
 
-YunoHost peut être appelé une distribution ou un système d’exploitation, mais
-dans les faits, c’est une « simple » sur-couche à Debian, qui gère les
-manipulations pénibles à votre place.
+YunoHost peut être appelé une distribution ou un système d’exploitation, mais dans les faits, c’est une « simple » sur-couche à Debian, qui gère les manipulations pénibles à votre place.
 
-Par exemple, pour installer un WordPress à la main, il vous faudrait taper
-toute une série de commandes pour créer des utilisateurs, mettre en place un
-serveur web, mettre en place un serveur SQL, télécharger l’archive de WordPress,
-la décompresser, configurer le serveur web, configurer la base de données SQL, et finalement configurer WordPress. YunoHost gère toute cette partie technique et « tape les commandes à votre place », pour que vous puissiez vous concentrer sur ce qui compte vraiment.
+Par exemple, pour installer un WordPress à la main, il vous faudrait taper toute une série de commandes pour créer des utilisateurs, mettre en place un serveur web, mettre en place un serveur SQL, télécharger l’archive de WordPress, la décompresser, configurer le serveur web, configurer la base de données SQL, et finalement configurer WordPress. YunoHost gère toute cette partie technique et « tape les commandes à votre place », pour que vous puissiez vous concentrer sur ce qui compte vraiment.
 
 Plus d’informations sur [cette page](whatsyunohost) !
 
@@ -44,8 +35,7 @@ Plus d’informations sur [cette page](whatsyunohost) !
 #### Puis-je gérer mon propre site web avec YunoHost ?
 
 Oui ! Il faut regarder du côté de [cette app](https://github.com/YunoHost-Apps/my_webapp_ynh).
-Elle fournit une « coquille vide » : après l’installation, il suffit d’envoyer vos fichiers (via SSH/SCP ou SFTP) au bon endroit. Il est aussi possible 
-d’avoir du PHP et une base de donnée SQL si besoin.
+Elle fournit une « coquille vide » : après l’installation, il suffit d’envoyer vos fichiers (via SSH/SCP ou SFTP) au bon endroit. Il est aussi possible d’avoir du PHP et une base de donnée SQL si besoin.
 
 
 #### Peut-on héberger plusieurs sites indépendants avec des noms de domaines différents ?
@@ -81,13 +71,7 @@ Il existe [plusieurs façons de contribuer](contribute) :).
 
 N’hésitez pas à venir nous parler de vos idées !
 
-Une idée répandue parmi les nouveaux contributeurs aux logiciels libres est
-de ne pas être « assez compétent ». En pratique, croyez-le, personne n’est
-compétent :). Ce qui compte vraiment est : [d’aimer ce que vous faites](https://www.youtube.com/watch?v=zIbR5TAz2xQ&t=113s),
-être sympathique avec les autres êtres humains du projet, être patient et têtu
-avec les machines, et avoir du temps libre. À part ça, juste faire ce que vous
-pouvez, c’est déjà trop cool !
-
+Une idée répandue parmi les nouveaux contributeurs aux logiciels libres est de ne pas être « assez compétent ». En pratique, croyez-le, personne n’est compétent :). Ce qui compte vraiment est : [d’aimer ce que vous faites](https://www.youtube.com/watch?v=zIbR5TAz2xQ&t=113s), être sympathique avec les autres êtres humains du projet, être patient et têtu avec les machines, et avoir du temps libre. À part ça, juste faire ce que vous pouvez, c’est déjà trop cool !
 
 #### Quel est le modèle politique de YunoHost ?
 

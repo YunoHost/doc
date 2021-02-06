@@ -13,7 +13,7 @@ The purpose of this document is to teach you how to package an application for Y
 To package an application, here are the requirements:
 * An account on a Git server (e.g. [GitHub](https://github.com/)) to publish the application;
 * Basic knowledge of [Git](/packaging_apps_git), bash shell and other programming stuff;
-* A testing [virtual machine or a distant server](/install), or a development environement, [ynh-dev](https://github.com/yunohost/ynh-dev) or [VirtualBox](/packaging_apps_virtualbox), to package and test the package.
+* A testing [virtual machine or a distant server](/install) or [VirtualBox](/packaging_apps_virtualbox), to package and test the package. Alternatively you can also use [ynh-dev](https://github.com/yunohost/ynh-dev), it is meant for the core but can totally be used for developping apps, but be aware that for now the documentation on this part is lacking.
 
 ### Content
 A YunoHost package is composed of:
@@ -129,7 +129,7 @@ A continuous integration server is available for packagers who want to test thei
 
 ### Publish and ask for testing your application
 
-* Publishing a [post on the Forum](https://forum.yunohost.org/) with the [`App integration` category](https://forum.yunohost.org/c/app-integration), to ask for testing and feedback on your application.
+* Publishing a [post on the Forum](https://forum.yunohost.org/) in the [`Discuss > Apps` category](https://forum.yunohost.org/c/discuss/discuss-apps/), to ask for testing and feedback on your application.
 
 * If your application is released under a free software license, you may ask the YunoHost app team to integrate your application to the [app repository](https://github.com/YunoHost/apps) (c.f. also the [app list](/apps)). You can add your application even if it is not stable or working yet : the current state can be specified to `notworking`, `inprogress`, or `working`.
 

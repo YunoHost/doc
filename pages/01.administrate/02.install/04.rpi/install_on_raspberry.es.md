@@ -34,9 +34,7 @@ Antes de alojar tu propio servidor en tu casa, te recomendamos que consultes las
 
 <a class="btn btn-lg btn-default" href="/plug_and_boot">3. Conectar y encender</a>
 
-<a class="btn btn-lg btn-default" href="/ssh">4. Conectarse en SSH</a>
-
-<a class="btn btn-lg btn-default" href="/postinstall">5. Proceder a la post-instalación</a>
+<a class="btn btn-lg btn-default" href="/postinstall">4. Proceder a la post-instalación</a>
 
 ---
 

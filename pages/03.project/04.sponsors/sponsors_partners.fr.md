@@ -5,13 +5,13 @@ taxonomy:
     category: docs
 ---
 
-Afin d'avancer et de faire fonctionner le projet, en plus du travail des bénévoles et des dons, YunoHost bénéficie du soutien de mécénes et de partenaires.
+Afin d'avancer et de faire fonctionner le projet, en plus du travail des bénévoles et des dons, YunoHost bénéficie du soutien de mécènes et de partenaires.
 
-Une liste des mécénes de YunoHost, fournissant l'infrastructure et des services au projets :
+Une liste des mécènes de YunoHost, fournissant l'infrastructure et des services aux projets :
 - [GITOYEN](https://gitoyen.net) : association regroupant plusieurs entreprises et associations intervenant comme fournisseur d’infrastructure d’hébergement et d’accès à Internet. 
 - [GLOBENET](http://www.globenet.org) : association militante, au service de la liberté d’expression, proposant des services Internet.
 - [LDN-NET](https://ldn-fai.net/) : association pour la défense d’un Internet libre, neutre et décentralisé dont le moyen d’action principale est d’être un fournisseur d’accès Internet (FAI) assocatif et local.
-- [NBS System](https://www.nbs-system.com/): société spécialisée dans l’hébergement, la sécurisation de des Clouds, l’infogérance (Systèmes d’information, Applications SaaS, Plateformes web) et les services managés.
+- [NBS System](https://www.nbs-system.com/): société spécialisée dans l’hébergement, la sécurisation des Clouds, l’infogérance (Systèmes d’information, Applications SaaS, Plateformes web) et les services managés.
 - [NLNET](https://nlnet.nl/) : La Fondation NLnet soutient les organisations et les personnes qui contribuent à une société de l'information ouverte.
 - [TETANEUTRAL-NET](https://tetaneutral.net/) : fournisseur d'accès à Internet associatif opérant actuellement un réseau radio sur Toulouse et ses environs et un hébergeur.
 

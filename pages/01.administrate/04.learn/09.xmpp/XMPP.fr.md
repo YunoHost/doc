@@ -43,6 +43,7 @@ Il existe différents types de clients pour se connecter à XMPP.
 - [Xabber](http://xabber.com) (Android)
 - [Movim](https://movim.eu) (Android)
 - [Monal](https://monal.im/) (iOS)
+- [ChatSecure](https://chatsecure.org/) (iOS)
 - [Siskin IM](https://siskin.im/) (iOS)
 - [Kaidan](https://www.kaidan.im/) (Ubuntu Touch / Plasma Mobile)
 

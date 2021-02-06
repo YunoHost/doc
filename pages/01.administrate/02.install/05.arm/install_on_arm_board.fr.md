@@ -32,11 +32,9 @@ Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissan
 
 <a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Flasher la carte SD avec l'image</a>
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot">2. Brancher la carte et la laisser démarrer</a>
+<a class="btn btn-lg btn-default" href="/plug_and_boot">2. Démarrer la carte et se connecter à l'interface web sur `yunohost.local`</a>
 
-<a class="btn btn-lg btn-default" href="/ssh">3. Se connecter en SSH sur le serveur</a>
-
-<a class="btn btn-lg btn-default" href="/postinstall">4. Effectuer la configuration initiale (post-installation)</a>
+<a class="btn btn-lg btn-default" href="/postinstall">3. Effectuer la configuration initiale (post-installation)</a>
 
 ---
 
