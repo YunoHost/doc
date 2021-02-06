@@ -1,5 +1,5 @@
 ---
-title: YunoHost pour les organisations à but non lucratif
+title: Cas d'usages pour associations
 template: docs
 taxonomy:
     category: docs
