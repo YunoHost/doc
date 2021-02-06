@@ -13,7 +13,7 @@ YunoHost provides a **self-signed** certificate, it means that your server guara
 
 In practice, visitors will see a screen list this:
 
-<img src="/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+![](image://postinstall_error.png)
 
 Which basically asks the visitor : **"Do you trust the server hosting this website?"**. This can rightfully frighten a lot of people.
 
@@ -27,19 +27,19 @@ Before attempting to install a Let's Encrypt certificate, you should make sure t
 
 Go to the 'Domain' part of the admin interface, then in the section dedicated to your.domain.tld. You should find a 'SSL certificate' button:
 
-![](./images/domain-certificate-button.png)
+![](image://domain-certificate-button.png)
 
 In the 'SSL certificate' section, you can see the status of the current certificate. If you just added the domain, it should be a self-signed certificate.
 
-![](./images/certificate-before-LE.png)
+![](image://certificate-before-LE.png)
 
 If your domain is correctly configured, it is then possible to install the Let's Encrypt certificate via the green button.
 
-![](./images/certificate-after-LE.png)
+![](image://certificate-after-LE.png)
 
 Once the install is made, you can check that the certificate is live via your browser by going to your domain in HTTPS. The certificate will automatically be renewed every three months.
 
-![](./images/certificate-signed-by-LE.png)
+![](image://certificate-signed-by-LE.png)
 
 #### From the command line interface 
 

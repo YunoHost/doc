@@ -9,10 +9,10 @@ routes:
 
 Maintenant que vous avez téléchargé l’image ISO de YunoHost, vous devez la mettre sur un support physique. Classiquement, il s'agit d'une **Clé USB** ou d'une **Carte SD**.
 
-<img src="/images/sdcard.jpg" width=100>
-<img src="/images/micro-sd-card.jpg" width=100>
-<img src="/images/usb_key.png" width=150>
-<img src="/images/cd.jpg" width=100>
+![](image://sdcard.jpg?resize=100)
+![](image://micro-sd-card.jpg?resize=100)
+![](image://usb_key.png?resize=150)
+![](image://cd.jpg?resize=100)
 
 ---
 
@@ -20,7 +20,7 @@ Maintenant que vous avez téléchargé l’image ISO de YunoHost, vous devez la 
 
 Téléchargez <a href="https://etcher.io/" target="_blank">Etcher</a> pour votre système d'exploitation et installez-le.
 
-<img src="/images/etcher.gif">
+![](image://etcher.gif)
 
 Branchez votre clef USB, selectionnez l'ISO YunoHost puis cliquez sur 'Flash'
 
@@ -28,7 +28,7 @@ Branchez votre clef USB, selectionnez l'ISO YunoHost puis cliquez sur 'Flash'
 
 Téléchargez <a href="https://unetbootin.github.io/">UNetbootin</a> pour votre système d'exploitation et installez-le.
 
-<img src="/images/unetbootin.png">
+![](image://unetbootin.png)
 
 Branchez votre clef USB, selectionnez l'ISO YunoHost puis cliquez sur 'OK'
 

@@ -7,7 +7,7 @@ routes:
   default: '/app_pleroma'
 ---
 
-<img src="/images/pleroma_logo.png" alt="logo de Pleroma"> Pleroma
+![logo de Pleroma](image://pleroma_logo.png)
 
  - [Découverte de l'interface de Pleroma](#d%C3%A9couverte-de-linterface-de-pleroma)
  - [Logiciels Clients pour mobile et ordinateur](#applications-clients)
@@ -21,18 +21,18 @@ Pour celles et ceux qui n'ont pas ou peu l'habitude des réseaux sociaux, voici 
 
 ### Accueil de l'interface
 
-<img src="/images/capture_globale.png" alt="Capture écran accueil de Pleroma">
+![Capture écran accueil de Pleroma](image://capture_globale.png)
 
 1. Barre de menu  
-   + <img src="/images/capture_menu_gauche.png" alt="Capture du bouton à gauche de la barre de menu"> Le bouton à gauche portant le nom de l'instance - dans la capture ci-dessus *Meta - Pleroma* - renvoie vers la page d'accueil de l'instance. Dans le cas où vous êtes connecté⋅e cela vous renverra vers la visualisation de votre *journal*, si ce n'est pas le cas vers *Le réseau connu*.
-   + <img src="/images/capture_menu_droite.png" alt="Capture des boutons à droite de la barre de menu"> Si vous êtes connecté⋅e vous aurez trois boutons, si vous ne l'êtes pas il n'y en aura que deux. Dans l'ordre, de gauche à droite : 
-      + <img src="/images/capture_menu_droite_chercher_utilisateur.png" alt="Capture bouton chercher un⋅e utilisateur⋅trice"> Permet d'ajouter de nouveaux utilisateurs et nouvelles utilisatrices afin de les suivre et ainsi vous abonner à leurs publications. Il est possible de rechercher un·e utilisateur·trice avec seulement son pseudonyme (par exemple : *yunohost*) ou alors sous la forme @pseudonyme@instance.domaine (par exemple : *@yunohost@mastodon.social*) 
-      + <img src="/images/capture_menu_droite_preferences.png" alt="Capture bouton préférences"> Permet d'accéder aux paramétres d'affichages de votre session.  
+   + ![Capture du bouton à gauche de la barre de menu](image://capture_menu_gauche.png) Le bouton à gauche portant le nom de l'instance - dans la capture ci-dessus *Meta - Pleroma* - renvoie vers la page d'accueil de l'instance. Dans le cas où vous êtes connecté⋅e cela vous renverra vers la visualisation de votre *journal*, si ce n'est pas le cas vers *Le réseau connu*.
+   + ![Capture des boutons à droite de la barre de menu](image://capture_menu_droite.png) Si vous êtes connecté⋅e vous aurez trois boutons, si vous ne l'êtes pas il n'y en aura que deux. Dans l'ordre, de gauche à droite : 
+      + ![Capture bouton chercher un⋅e utilisateur⋅trice](image://capture_menu_droite_chercher_utilisateur.png) Permet d'ajouter de nouveaux utilisateurs et nouvelles utilisatrices afin de les suivre et ainsi vous abonner à leurs publications. Il est possible de rechercher un·e utilisateur·trice avec seulement son pseudonyme (par exemple : *yunohost*) ou alors sous la forme @pseudonyme@instance.domaine (par exemple : *@yunohost@mastodon.social*) 
+      + ![Capture bouton préférences](image://capture_menu_droite_preferences.png) Permet d'accéder aux paramétres d'affichages de votre session.  
       /!\ Si vous n'êtes pas connecté·e les modifications effectuées ne seront valables qu'un temps (jusqu'à ce que les cookies de fonctionnement soient effacés).
-      + <img src="/images/capture_menu_droite_deconnexion.png" alt="Capture Déconnexion"> Permet de se déconnecter de l'instance. Si vous n'êtes pas sur votre ordinateur personnel pensez-y !
+      + ![Capture Déconnexion](image://capture_menu_droite_deconnexion.png) Permet de se déconnecter de l'instance. Si vous n'êtes pas sur votre ordinateur personnel pensez-y !
 
 2. Espace de Publications / Fenêtre de connexion    
-<img src="/images/capture_espace_connexion.png" alt="Fenêtre de connexion à la place de la zone de publications"> Si vous êtes connecté·e cet espace vous permet de publier vos messages et d'y joindre un média (images, GIF, vidéos, etc). Vous êtes limité⋅e dans le nombre de caractères, avec Pleroma la limitation est définie par l'administrateur·trice de l'instance. Si vous avez des questions envoyez lui un message.
+![Fenêtre de connexion à la place de la zone de publications](image://capture_espace_connexion.png) Si vous êtes connecté·e cet espace vous permet de publier vos messages et d'y joindre un média (images, GIF, vidéos, etc). Vous êtes limité⋅e dans le nombre de caractères, avec Pleroma la limitation est définie par l'administrateur·trice de l'instance. Si vous avez des questions envoyez lui un message.
 
 3. Fenêtre de visualisations  
 C'est ici le centre ~~du monde~~ de Pleroma, vous pourrez y voir les différentes publications de vos contacts ou qui circulent sur l'instance ainsi que les re-toots et qui a publié. 

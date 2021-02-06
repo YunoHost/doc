@@ -7,7 +7,7 @@ routes:
   default: '/app_keeweb'
 ---
 
-<img src="/images/keeweb_logo.png" height="80px" alt="logo de keeweb"> KeeWeb
+![logo de keeweb](image://keeweb_logo.png?height=80)
 
 [![Install KeeWeb with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=keeweb) [![Integration level](https://dash.yunohost.org/integration/keeweb.svg)](https://dash.yunohost.org/appci/app/keeweb)
 

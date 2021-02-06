@@ -7,7 +7,7 @@ routes:
   default: '/app_ttrss'
 ---
 
-<img src="/images/ttrss.png" width="80px" alt="logo de Tiny Tiny RSS"> Tiny Tiny RSS
+![logo de Tiny Tiny RSS](image://ttrss.png?width=80)
 
 [![Installer Tiny Tiny RSS avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=ttrss) [![Integration level](https://dash.yunohost.org/integration/ttrss.svg)](https://dash.yunohost.org/appci/app/ttrss)
 

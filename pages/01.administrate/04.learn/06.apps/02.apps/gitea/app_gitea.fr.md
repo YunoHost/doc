@@ -7,7 +7,7 @@ routes:
   default: '/app_gitea'
 ---
 
-<img src="/images/gitea_logo.png" width="80px" alt="logo de Gitea"> Gitea
+![logo de Gitea](image://gitea_logo.png?width=80)
 
 [![Install Gitea with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gitea) [![Integration level](https://dash.yunohost.org/integration/gitea.svg)](https://dash.yunohost.org/appci/app/gitea)
 

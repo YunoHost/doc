@@ -7,7 +7,7 @@ routes:
   default: '/app_gitlab-runner'
 ---
 
-<img src="/images/gitlab-runner_logo.png" height="80px" alt="logo de GitLab Runner"> GitLab Runner
+![logo de GitLab Runner](image://gitlab-runner_logo.png?height=80)
 
 [![Install GitLab Runner with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gitlab-runner) [![Integration level](https://dash.yunohost.org/integration/gitlab-runner.svg)](https://dash.yunohost.org/appci/app/gitlab-runner)
 

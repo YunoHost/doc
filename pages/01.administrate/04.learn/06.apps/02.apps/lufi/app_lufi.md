@@ -7,7 +7,7 @@ routes:
   default: '/app_lufi'
 ---
 
-<img src="/images/lufi_logo.svg" width="80px" alt="Lufi's logo"> Lufi
+![Lufi's logo](image://lufi_logo.svg?width=80)
 
 [![Install Lufi with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=lufi) [![Integration level](https://dash.yunohost.org/integration/lufi.svg)](https://dash.yunohost.org/appci/app/lufi)
 

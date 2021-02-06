@@ -7,7 +7,7 @@ routes:
   default: '/app_strut'
 ---
 
-<img src="/images/strut_logo.png" height="80px" alt="strut's logo"> Strut
+![strut's logo](image://strut_logo.png?height=80)
 
 [![Install Strut with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=strut) [![Integration level](https://dash.yunohost.org/integration/strut.svg)](https://dash.yunohost.org/appci/app/strut)
 

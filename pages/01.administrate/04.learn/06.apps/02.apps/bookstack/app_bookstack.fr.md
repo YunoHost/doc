@@ -7,7 +7,7 @@ routes:
   default: '/app_bookstack'
 ---
 
-<img src="/images/logo-bookstack.png" height="80px" alt="Logo BookStack"> BookStack
+![Logo BookStack](image://logo-bookstack.png?height=80)
 
 [![Installer BookStack avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=bookstack) [![Integration level](https://dash.yunohost.org/integration/bookstack.svg)](https://dash.yunohost.org/appci/app/bookstack)
 

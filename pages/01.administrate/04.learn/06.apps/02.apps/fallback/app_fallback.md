@@ -7,7 +7,7 @@ routes:
   default: '/app_fallback'
 ---
 
-<img src="/images/yunohost_package.png" height="80px" alt="Package"> Fallback
+![Fallback](image://yunohost_package.png?height=80)
 
 [![Install Fallback with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=fallback) [![Integration level](https://dash.yunohost.org/integration/fallback.svg)](https://dash.yunohost.org/appci/app/fallback)
 

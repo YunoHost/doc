@@ -9,10 +9,8 @@ routes:
 
 *Find other ways to install YunoHost **[here](/install)**.*
 
-<center>
-<img src="/images/olinuxino.jpg" width=250 style="padding-bottom:20px">
-<img src="/images/micro-sd-card.jpg">
-</center>
+![](image://olinuxino.jpg?resize=250)
+![](image://micro-sd-card.jpg)
 
 <div class="alert alert-info" markdown="1">
 Before setting up a server at home, it is recommended that you know the [possible limitations imposed by your ISP](/isp). If they are too restrictive, you might consider using a VPN to bypass them.

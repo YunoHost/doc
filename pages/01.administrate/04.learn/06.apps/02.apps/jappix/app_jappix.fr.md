@@ -7,6 +7,6 @@ routes:
   default: '/app_jappix'
 ---
 
-<img src="/images/jappix_logo.png" height="80px" alt="Jappix logo"> Jappix
+![logo de Jappix](image://jappix_logo.png?height=80)
 
 Jappix est un client web [XMPP](/XMPP).

@@ -7,7 +7,7 @@ routes:
   default: '/app_pihole'
 ---
 
-<img src="/images/pihole_logo.png" width="80px" alt="Pi-hole's logo"> Pi-hole
+![Pi-hole's logo](image://pihole_logo.png?width=80)
 
 [![Install Pi-hole with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=pihole) [![Integration level](https://dash.yunohost.org/integration/pihole.svg)](https://dash.yunohost.org/appci/app/pihole)
 

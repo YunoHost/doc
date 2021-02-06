@@ -35,4 +35,4 @@ routes:
 
 You can also boot your server with a screen and keyboard connected to it to see how the boot process is going on (which can also be useful to troubleshoot issues) and to have a direct access to it.
 
-<div class="text-center"><img src="/images/boot_screen.png"></div>
+![](image://boot_screen.png)

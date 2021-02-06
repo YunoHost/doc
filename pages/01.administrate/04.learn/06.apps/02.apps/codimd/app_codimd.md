@@ -7,7 +7,7 @@ routes:
   default: '/app_codimd'
 ---
 
-<img src="/images/codimd_logo.png" height="80px" alt="CodiMD’s logo"> CodiMD
+![CodiMD’s logo](image://codimd_logo.png?height=80)
 
 [![Install CodiMD with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=codimd) [![Integration level](https://dash.yunohost.org/integration/codimd.svg)](https://dash.yunohost.org/appci/app/codimd)
 

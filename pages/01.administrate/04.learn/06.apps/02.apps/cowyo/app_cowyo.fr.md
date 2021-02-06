@@ -7,7 +7,7 @@ routes:
   default: '/app_cowyo'
 ---
 
-<img src="/images/cowyo_logo.png" height="80px" alt="Logo de Cowyo"> Cowyo
+![Logo de Cowyo](image://cowyo_logo.png?height=80)
 
 [![Install cowyo with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=cowyo) [![Integration level](https://dash.yunohost.org/integration/cowyo.svg)](https://ci-apps.yunohost.org/ci/apps/cowyo/)
 

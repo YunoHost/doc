@@ -20,11 +20,7 @@ services).
 
 Cependant il existe des images communautaires disponibles sur Docker Hub :
 
-  * AMD64 (classique)
-    * https://hub.docker.com/r/domainelibre/yunohost/ (YunoHost v4+)
-  * I386 (anciens pc)
-    * https://hub.docker.com/r/domainelibre/yunohost-i386/ (YunoHost v4+)
-  * ARMV7 (Raspberry Pi 2/3 ...)
-    * https://hub.docker.com/r/domainelibre/yunohost-arm/ (YunoHost v4+)
-  * ARMV6 (Raspberry Pi 1)
-    * https://hub.docker.com/r/tuxalex/yunohost-armv6/ (ancienne version de YunoHost)
+  * [AMD64 (classique) (YunoHost v4+)](https://hub.docker.com/r/domainelibre/yunohost/)
+  * [I386 (anciens pc) (YunoHost v4+)](https://hub.docker.com/r/domainelibre/yunohost-i386/)
+  * [ARMV7 (Raspberry Pi 2/3 ...) (YunoHost v4+)](https://hub.docker.com/r/domainelibre/yunohost-arm/)
+  * [ARMV6 (Raspberry Pi 1) (ancienne version de YunoHost)](https://hub.docker.com/r/tuxalex/yunohost-armv6/)

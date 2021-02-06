@@ -7,7 +7,7 @@ routes:
   default: '/app_archivist'
 ---
 
-<img src="/images/yunohost_package.png" height="80px" alt="Package"> Archivist
+![Package](image://yunohost_package.png?height=80)
 
 [![Install archivist with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=archivist) [![Integration level](https://dash.yunohost.org/integration/archivist.svg)](https://dash.yunohost.org/appci/app/archivist)
 

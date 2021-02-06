@@ -11,7 +11,7 @@ routes:
 
 ## Prerrequisitos
 
-<img src="/images/vps.png" width=250>
+![](image://vps.png?resize=250)
 
 * Un servidor dedicado o virtual
 * con al menos **512MB** RAM

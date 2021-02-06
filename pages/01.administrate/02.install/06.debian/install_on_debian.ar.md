@@ -13,7 +13,7 @@ routes:
 
 ## المتطلبات
 
-<img width=100 src="/images/debian-logo.png">
+![](image://debian-logo.png?resize=100)
 
 على منصة ARM أو على خادوم إفتراضي خاص أو على خادوم إستضافة أو على حاسوب x86 عادي أو على حاسوب ماكينطوش قديم … إلخ
 
