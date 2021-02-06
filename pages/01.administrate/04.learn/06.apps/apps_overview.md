@@ -19,7 +19,7 @@ The full list of application can be browsed at [this page](/apps).
 
 ## Integration and quality levels
 
-Automated tests are being ran regularly to test the integration and quality of all official apps, as well as community apps who were declared to be 'working'. The result is a level between 0 and 7, whose meaning is detailed on [this page](/packaging_apps_levels). Some tests results may also be available [on this dashboard](https://dash.yunohost.org/appci/branch/stable).
+Automated tests are being run regularly to test the integration and quality of all official apps, as well as community apps who were declared to be 'working'. The result is a level between 0 and 7, whose meaning is detailed on [this page](/packaging_apps_levels). Some tests results may also be available [on this dashboard](https://dash.yunohost.org/appci/branch/stable).
 
 ## LDAP / SSO integration
 

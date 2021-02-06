@@ -35,6 +35,7 @@ También puedes utilizar un cliente Desktop como :
 - [Conversations](https://conversations.im/) (Android)
 - [Xabber](http://xabber.com) (Android)
 - [Movim](https://movim.eu) (Android)
+- [ChatSecure](https://chatsecure.org/) (iOS)
 - [Siskin IM](https://siskin.im/) (iOS)
 - [Monal](https://monal.im/) (iOS)
 - [Kaidan](https://www.kaidan.im/) (Ubuntu Touch / Plasma Mobile)

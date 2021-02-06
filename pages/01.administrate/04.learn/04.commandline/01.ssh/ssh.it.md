@@ -5,7 +5,7 @@ taxonomy:
     category: docs
 ---
 
-## What's SSH?
+## Cos'è SSH?
 
 **SSH** sta per Secure Shell, un protocollo che permette di controllare da remoto un computer usando l'interfaccia a linea di comando (command line interface, CLI in inglese). È disponibile di default in ogni emulazione di terminale su GNU/Linux e macOS. Su Windows è possibile usare [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (dopo averlo avviato si deve cliccare su Session e poi SSH).
 

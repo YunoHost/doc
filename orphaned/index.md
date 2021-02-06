@@ -16,6 +16,7 @@
       <span class="yolo 8" style="color: #FF6600;">john@doe.org</span>
       <span class="yolo 9" style="color: #FF5050;">dude, Y U NO Host?!</span>
       <span class="yolo 10" style="color: #66FF33;">Keep calm and host yourself</span>
+      <span class="yolo 11" style="color: #3366FF;">Be the cloud you want to see in the world</span>
     </p>
     <button class="btn btn-primary btn-lg btn-block yolobtn">What?</button>
   </div>
@@ -97,9 +98,32 @@
       <a class="btn btn-lg btn-block btn-success" href="/contribute"><span class="glyphicon glyphicon-heart"></span> Get involved</a>
       <a class="btn btn-lg btn-block btn-primary" href="https://donate.yunohost.org/" style="background-color: #ffd236; border-color: #ffd236;"><span class="glyphicon glyphicon-usd"></span> Donate</a>
     </div>
+    </div>
  </div>
 
-</div><!-- boring-part -->
+  <hr />
+
+  <div class="row cf">
+    <div class="text-center">
+    <h1>They support us &lt;3<br />
+    <small>We are thankful for our sponsors <br/>providing us with infrastructure and grants!</small>
+    </h1>
+    <p style="margin-left:auto;margin-right:auto;">
+    <a style="padding: 5px;" href="https://nlnet.nl"><img src="/images/logo_nlnet.png" width="150px"/></a>
+    <a style="padding: 5px;" href="https://www.ngi.eu"><img src="/images/logo_ngi.png" width="130px"/></a>
+    <a style="padding: 5px;" href="https://www.codelutin.com"><img src="/images/logo_codelutin.png" width="100px"/></a>
+    </p>
+    <p style="margin-left:auto;margin-right:auto;">
+    <a style="padding: 5px;" href="https://www.globenet.org"><img src="/images/logo_globenet.png" width="150px"/></a>
+    <a style="padding: 5px;" href="https://www.gitoyen.net"><img src="/images/logo_gitoyen.png" width="150px"/></a>
+    <a style="padding: 5px;" href="https://tetaneutral.net"><img src="/images/logo_tetaneutral.png" width="90px"/></a>
+    <a style="padding: 5px;" href="https://ldn-fai.net"><img src="/images/logo_ldn.png" width="120px"/></a>
+    <a style="padding: 5px;" href="https://www.nbs-system.com"><img src="/images/logo_nbs.png" width="130px"/></a>
+    </p>
+    </div>
+  </div>
+
+</div>
 
 <script type="text/javascript">
     jQuery('.teasing-part').css({

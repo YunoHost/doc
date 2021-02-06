@@ -92,7 +92,7 @@ Example in toml:
 [maybe.some.stuff.before.the_name]
 type = "string"
 ask.en = "the question in english"
-ask.fr = "the question in french"
+ask.fr = "la question en français"
 example = "an example value"  # optional
 choices = ["fr", "en"]
 default = "en" # optional
@@ -142,7 +142,7 @@ And in json:
 
 ### Path
 
-This type will ask the user to chose an url path (generally to happen it to a
+This type will ask the user to chose an URL path (generally to happen it to a
 domain) like "/path/to/my/app"
 
 Example in toml:
@@ -252,6 +252,34 @@ And in json:
         "fr": "the question in french"
     },
     "default": true
+},
+```
+
+### Number
+
+Like string except the user needs to enter a number
+
+Example in toml:
+
+```toml
+[maybe.some.stuff.before.the_name]
+type = "number"
+ask.en = "the question in english"
+ask.fr = "the question in french"
+default = 0
+```
+
+And in json:
+
+```javascript
+{
+    "name": "the_name",
+    "type": "number",
+    "ask": {
+        "en": "the question in english",
+        "fr": "the question in french"
+    },
+    "default": 0
 },
 ```
 

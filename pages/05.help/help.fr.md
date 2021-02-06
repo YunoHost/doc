@@ -19,7 +19,7 @@ taxonomy:
 
 </br>
 </br>
-<em>Note : ce salon est accessible via IRC (#yunohost sur freenode en utilisant <a href="https://kiwiirc.com/nextclient/?settings=78e5074440caaa9141c9e30629f6b29d">Kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, ou Matrix <small>(#freenode_#yunohost:matrix.org - <a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">en utilisant Riot</a>)</small>.</em>
+<em>Note : ce salon est accessible via IRC (#yunohost sur freenode en utilisant <a href="https://kiwiirc.com/nextclient/?settings=78e5074440caaa9141c9e30629f6b29d">Kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, ou Matrix <small>(#freenode_#yunohost:matrix.org - <a target="_blank" href="https://app.element.io/#/room/#yunohost:matrix.org">en utilisant Element</a>)</small>.</em>
 </center>
 
 <h3>... ou demandez sur le forum !</h3>

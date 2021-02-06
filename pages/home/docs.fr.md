@@ -34,5 +34,6 @@ La documentation de YunoHost s’articule autour de deux sections :
    * [Support / Aide](/help)
    * [Mécénes et partenaires](/sponsors_partners_fr)
 
-* Exemple d'utilisation:
+* Exemple d'utilisation :
    * [YunoHost pour les organisations à but non lucratif](/use_case_non-profit_organisations)
+   * [YunoHost pour les CHATONS (Collectif des Hébergeurs Alternatifs, Transparents, Ouverts, Neutres et Solidaires)](https://wiki.chatons.org/doku.php/yunohost)

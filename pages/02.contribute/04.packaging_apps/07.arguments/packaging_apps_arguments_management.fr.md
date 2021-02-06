@@ -20,13 +20,13 @@ Les scripts remove, upgrade, backup et restore peuvent avoir besoin de ces argum
 Pour cela, YunoHost peut sauvegarder les arguments avec cette commande :
 ```bash
 # Store config on YunoHost instance
-ynh_app_setting_set "$app" domain "$domain"
+ynh_app_setting_set --app="$app" --key="domain" --value="$domain"
 ```
 Elle est généralement utilisée dans le script d’installation.
 
 Ensuite, le script peut récupérer les arguments sauvegardés avec cette commande :
 ```bash
-domain=$(ynh_app_setting_get $app domain)
+domain=$(ynh_app_setting_get --app "$app" --key=domain)
 ```
 
 Ces données sont sauvegardées dans `/etc/yunohost/apps/<app_name>/settings.yml`.

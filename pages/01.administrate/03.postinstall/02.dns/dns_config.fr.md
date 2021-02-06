@@ -108,7 +108,7 @@ $ nslookup 111.222.333.444
 444.333.222.111.in-addr.arpa    name = domain.tld.
 ```
 
-Le système de diagnostique présent dans l'interface d'administration fait cette vérification automatiquement (dans la section Email)
+Le système de diagnostic présent dans l'interface d'administration fait cette vérification automatiquement (dans la section Email)
 
 ### IP Dynamique
 

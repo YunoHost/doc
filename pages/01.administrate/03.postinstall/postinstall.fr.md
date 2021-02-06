@@ -12,7 +12,7 @@ NB : Si vous êtes en train de restaurer un système complet **et** que vous dis
 ### Via l'interface web
 
 Vous pouvez accéder à la post-installation graphique en entrant dans un navigateur web :
-* l’adresse **IP locale de votre serveur** si celui-ci est connecté à votre réseau local (généralement `192.168.x.x`, voir ['Trouver son IP' sur la page sur SSH](/ssh))
+* l'adresse **`yunohost.local`** OU l’adresse **IP locale de votre serveur** si celui-ci est connecté à votre réseau local (généralement `192.168.x.x`, voir ['Trouver son IP locale'](/finding_the_local_ip))
 * l’adresse **IP publique de votre serveur** si celui-ci n’est pas connecté à votre réseau local (par exemple dans le cas d'un VPS, votre fournisseur devrait vous avoir transmis l'adresse IP).
 
 Lors de la première visite, vous rencontrerez très probablement un avertissement de sécurité lié au certificat utilisé. Pour le moment, votre serveur utilise un certificat auto-signé. Vous pourrez plus tard ajouter un certificat automatiquement reconnus par les navigateurs comme décrit dans la page sur les [Certificats](/certificate). En attendant, ajoutez une exception de sécurité pour accepter le certificat actuel.

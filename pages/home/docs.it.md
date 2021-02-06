@@ -32,5 +32,5 @@ La documentazione di YunoHost ha 2 differenti sezioni:
    * [Communication](/communication)
    * [Supporto / Aiuto](/help)
 
-* Usa l'esempio:
+* Usa l'esempio :
    * [YunoHost per le organizzazioni senza scopo di lucro](/use_case_non-profit_organisations)

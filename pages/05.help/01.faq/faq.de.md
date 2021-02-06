@@ -25,9 +25,9 @@ Wir bieten eine Software an, die es für jeden möglichst einfach machen soll, e
 
 #### Aber was *macht* YunoHost überhaupt ?
 
-YunoHost könnte einen Distribution oder ein Betriebssystem genannt werden, aber es ist eigentlich "nur" eine Ebene, die über Debian betrieben wird und welche die meiste, schwierige Arbeit für Sie übernimmt.
+YunoHost könnte eine Distribution oder ein Betriebssystem genannt werden, aber es ist eigentlich "nur" eine Ebene, die über Debian betrieben wird und welche die meiste, schwierige Arbeit für Sie übernimmt.
 
-Zum Beispiel, wenn Sie Wordpress installieren möchten, müssten Sie einige Befehle eintippen, um Benutzer zu generieren, einen Webserver einrichten, einen SQL Server einrichten, das Wordpress Archiv herunterladen, entpacken, den Webserver kofigurieren, die SQL Datenbank konfigurieren und schließlich Wordpress einrichten. YunoHost übernimmt all das für Sie, zähmt das technische Chaos und "tippt alle Befehle für Sie", sodass Sie sich auf das konzentrieren können, was wirklich wichtig ist.
+Zum Beispiel, wenn Sie Wordpress installieren möchten, müssten Sie einige Befehle eintippen, um Benutzer zu generieren, einen Webserver einrichten, einen SQL Server einrichten, das Wordpress Archiv herunterladen, entpacken, den Webserver konfigurieren, die SQL Datenbank konfigurieren und schließlich Wordpress einrichten. YunoHost übernimmt all das für Sie, zähmt das technische Chaos und "tippt alle Befehle für Sie", sodass Sie sich auf das konzentrieren können, was wirklich wichtig ist.
 
 Mehr Informationen finden Sie [hier](whatsyunohost) !
 

@@ -20,12 +20,15 @@ A list of French and Belgian ISPs is available on the [french page](/isp_fr).
 | Charter | Multiple | Yes | No. Only for business class customer. | No | No | Yes, as a business class customer |
 | DSLExtreme | Multiple | Yes | Yes | No | No | Yes, extra charge. |
 | AT&T| Multiple | Yes | No. Only for business class customer. | unknown. | unknown. | unknown. |
+| Xfinity (Comcast)| Multiple | Yes | No. Only for business class customer. | unknown. | unknown. |  Yes, as a business class customer|
 
 ### UK
 | Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
 | --- | --- | --- | --- | --- | --- | --- |
 | BT Internet | Yes | - | Yes| - | - | No |
 | Virgin Media | Yes | - | - | - | No | No |
+| ZEN Internet | Yes | - | Yes | - | Yes | - |
+| PlusNet | Yes | Yes | Yes | No | - | Small one off Charge |
 
 ### Brazil
 | Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
@@ -62,5 +65,13 @@ Most of non business IP provided by ISP are blacklisted.
 | Sunrise | Multiple | No | Yes | No | - | - |
 | Swisscom | Multiple | No | Yes | No | No | No |
 | VTX | Multiple | No | Yes | No | - | - |
+
+### South Korea
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| LG U+ (HelloVision) | Multiple | Yes | Yes (Without ISP Router) | No | - | Partial |
+| KT(SkyLife, Qook&Show) | Multiple | Yes | Yes | No | - | Partial |
+| SKT (SK Broadband) | Multiple | Yes | Yes | No | - | Partial |
 
 If you want to add international ISPs information, please do consider [modifying this page](/write_documentation).

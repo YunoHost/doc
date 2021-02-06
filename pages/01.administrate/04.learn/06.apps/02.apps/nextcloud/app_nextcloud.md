@@ -142,7 +142,7 @@ It's over now. Now test if everything is fine, try connecting to your Nextcloud 
 
 ### Nextcloud and Cloudflare
 
-If you use Cloudflare for your DNS, *which may be useful if you have a dynamic IP*, you will most likely have authentication problems with the Nextcloud application. On the Internet many people propose to create a rule that disables all options related to security and Cloudflare speed for the url pointing to your Nextcloud instance. Although it works, it is not the optimal solution. I propose, certainly to create a rule for the url pointing to your Nextcloud instance but to disable only 2 options. So here's how:
+If you use Cloudflare for your DNS, *which may be useful if you have a dynamic IP*, you will most likely have authentication problems with the Nextcloud application. On the Internet many people propose to create a rule that disables all options related to security and Cloudflare speed for the URL pointing to your Nextcloud instance. Although it works, it is not the optimal solution. I propose, certainly to create a rule for the URL pointing to your Nextcloud instance but to disable only 2 options. So here's how:
 
 #### Cloudflare Page Rules
 

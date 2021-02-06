@@ -52,7 +52,7 @@ Pour savoir quoi écrire dans un script bash, je vous conseille de commencer par
 
 Avant d'envisager de faire un package d'application, il faut réussir à installer correctement la dites application. Car le script ne fera que ce que vous lui direz de faire.
 
-Ensuite, il faut aller lire (et oui encore) la documentation sur le packaging, mais la vrai cette fois, [celle qui emploie des mots bizarres](/packaging_apps).  
+Ensuite, il faut aller lire (et oui encore) la documentation sur le packaging, mais la vraie cette fois, [celle qui emploie des mots bizarres](/packaging_apps).  
 Mais maintenant vous devriez les comprendre tout ces mots étranges.
 
 Mais heureusement, vous n'êtes pas seul pour affronter cette épreuve titanesque, il y a d'autres packageurs que vous pouvez venir rencontrer sur le [forum](https://forum.yunohost.org/c/apps-packaging) et sur le [salon de discussion](xmpp:apps@conference.yunohost.org?join).  

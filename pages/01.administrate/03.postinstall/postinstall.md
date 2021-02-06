@@ -7,12 +7,12 @@ taxonomy:
 
 The step called "**post-installation**" is actually the initial configuration of YunoHost. It has to be done just after the installation of the system itself.
 
-NB: if you are in the process of restoring a server from scratch **and** you have a yunohost-made backup, you must skip this process and follow through with the "restoring during the postinstall" step, in the [backup](/backup) page.
+NB: if you are in the process of restoring a server from scratch **and** you have a yunohost-made backup, you can skip this process and follow through with the "restoring during the postinstall" step, in the [backup](/backup) page.
 
 ### From the web interface
 
 You can perform the post-installation with the web interface by entering in your browser :
-* **the local IP address of your server** if it is on your local network (e.g. at home !). The address typically looks like `192.168.x.y` (see 'Find your IP' on [the page about SSH](/ssh))
+* **`yunohost.local`** OR **the local IP address of your server** if it is on your local network (e.g. at home !). The address typically looks like `192.168.x.y` (see [finding your local IP](/finding_the_local_ip))
 * **the public IP address of your server** if your server is not on your local network. Typically, if you own a VPS, your VPS provider should have given you the IP of the server.
 
 During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). For now, you should add a security exception to accept the current certificate.
@@ -43,7 +43,7 @@ This is the first domain name linked to your YunoHost server, but also the one w
 
 * If you do know what **DNS** is, you probably want to configure your own domain name here. In this case, please refer to the [DNS page](/dns) page for more informations.
 
-* If you don't own a domain name and don't want a **.nohost.me**, **.noho.st** or **.ynh.fr**, you can use a local domain. The idea is to configure your router to redirect a local domain name to your server. For example you could create the yunohost.local domain redirecting to your server in your router, and now every device on the network will be redirected to your server when accessing yunohost.local. More information on how to setup a local domain can be found [here](dns_local_network).
+* If you don't own a domain name and don't want a **.nohost.me**, **.noho.st** or **.ynh.fr**, you can use a local domain. More information on how to setup a local domain can be found [here](dns_local_network).
 
 ### Administration password
 

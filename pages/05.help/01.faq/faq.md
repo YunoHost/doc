@@ -16,38 +16,24 @@ Applications and applications packages have their own licenses.
 
 #### What's YunoHost goal?
 
-We believe that decentralizing the Internet, and empowering people to take control and
-responsibility back over their own data and services, is a crucial issue to guarantee
-a free and democratic society.
+We believe that decentralizing the Internet, and empowering people to take control and responsibility back over their own data and services, is a crucial issue to guarantee a free and democratic society.
 
 The YunoHost project aims to democratize self-hosting.
 
-It provides a software that aims to make it easy for people to run and
-administrate their own server, with minimal knowledge and required time.
+It provides a software that aims to make it easy for people to run and administrate their own server, with minimal knowledge and required time.
 
 
 #### But what does YunoHost exactly *do*?
 
-YunoHost may be called a distribution or an operating system, but it's actually
-"just" a simple layer added over the top of Debian, which does most of the hard
-work for you.
+YunoHost may be called a distribution or an operating system, but it's actually "just" a simple layer added over the top of Debian, which does most of the hard work for you.
 
-For instance, if you wanted to install WordPress, you would need to type a bunch
-of commands to create some users, setup a web server, setup a SQL server,
-download the WordPress archive, uncompress it, configure the web server,
-configure the SQL database, and finally configure WordPress. YunoHost handles
-the technical details and "types all these commands for you", so that you can focus
-on what really matters.
+For instance, if you wanted to install WordPress, you would need to type a bunch of commands to create some users, setup a web server, setup a SQL server, download the WordPress archive, uncompress it, configure the web server, configure the SQL database, and finally configure WordPress. YunoHost handles the technical details and "types all these commands for you", so that you can focus on what really matters.
 
-More info on [this page](whatsyunohost) !
+More info on [this page](whatsyunohost)!
 
 #### Can I host my own personal website with YunoHost?
 
-Yes! Have a look at the [Custom Web app](https://github.com/YunoHost-Apps/my_webapp_ynh).
-It provides an "empty shell" : after installing it, just upload your files
-(via SSH/SCP or SFTP) to the right location. You can have PHP and a SQL database
-if you need.
-
+Yes! Have a look at the [Custom Web app](https://github.com/YunoHost-Apps/my_webapp_ynh). It provides an "empty shell" : after installing it, just upload your files (via SSH/SCP or SFTP) to the right location. You can have PHP and a SQL database if you need.
 
 #### Can I host many independent websites with different domain names?
 
@@ -61,27 +47,20 @@ The [SSO](https://github.com/Kloadut/SSOwat/) (single sign-on) cannot properly a
 
 #### What's YunoHost's business model?
 
-At the moment, YunoHost is maintained only by volunteers working in their free
-time. Basically no money is involved in the project (apart from server fees
-or stickers :P).
+At the moment, YunoHost is maintained only by volunteers working in their free time. Basically no money is involved in the project (apart from server fees or stickers :P).
 
-Considering that a few contributors are investing a large amount of time in the
-project, we are thinking about ways to make the project sustainable.
+Considering that a few contributors are investing a large amount of time in the project, we are thinking about ways to make the project sustainable.
 
-This could be achieved via donations, grants, and a few contributors
-have professional activities related to YunoHost.
+This could be achieved via donations, grants, and a few contributors have professional activities related to YunoHost.
 
 
 #### Can I donate to the project?
 
-Yes, you can! YunoHost needs money to pay servers and domain names. We would
-also like contributors to be able to continue contributing rather than look for
-jobs elsewhere.
+Yes, you can! YunoHost needs money to pay servers and domain names. We would also like contributors to be able to continue contributing rather than look for jobs elsewhere.
 
 You can donate using [our donation interface](https://donate.yunohost.org)
 
-If you can, you can also make in-kind contributions, like servers (some of our
-infrastructure relies on servers from a few associations).
+If you can, you can also make in-kind contributions, like servers (some of our infrastructure relies on servers from a few associations).
 
 
 #### How can I contribute to the project?
@@ -90,11 +69,7 @@ There are [many ways to contribute](contribute) :).
 
 Don't hesitate to come talk to us about your ideas!
 
-A common misconception for newcomers in free software projects is to think that
-they are "not skilled enough". In practice, nobody is "skilled" :). What really
-matter is : [liking what you do](https://www.youtube.com/watch?v=zIbR5TAz2xQ&t=113s),
-being friendly with other human beings, being patient and stubborn with machines,
-and having some free time. Other than that, just doing what you can is already awesome!
+A common misconception for newcomers in free software projects is to think that they are "not skilled enough". In practice, nobody is "skilled" :). What really matter is: [liking what you do](https://www.youtube.com/watch?v=zIbR5TAz2xQ&t=113s), being friendly with other human beings, being patient and stubborn with machines, and having some free time. Other than that, just doing what you can is already awesome!
 
 
 #### What's YunoHost's political model?
@@ -116,7 +91,7 @@ Short answer: No. We don't have the energy for it and this is irrelevant.
 </div>
 
 
-#### I checked how apps packaging work. Why are you reinventing [insert favorite package format] ?
+#### I checked how apps packaging work. Why are you reinventing [insert favorite package format]?
 
 Short answer: We are not.
 
