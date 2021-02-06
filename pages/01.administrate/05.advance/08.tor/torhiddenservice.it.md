@@ -3,6 +3,8 @@ title: Collegarsi a YunoHost attraverso un Hidden Service
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/torhiddenservice'
 ---
 
 <div class="alert alert-warning">

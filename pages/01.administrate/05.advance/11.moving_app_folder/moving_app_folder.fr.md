@@ -3,6 +3,8 @@ title: Déplacer un dossier d'application vers un autre espace de stockage
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/moving_app_folder'
 ---
 
 Les dossiers d'application se trouvent (*habituellement*) dans `/var/www/$nom_application`
