@@ -3,6 +3,8 @@ title: Configuration de la zone DNS
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/dns_config'
 ---
 
 DNS (système de nom de domaine) est un élément essentiel d'Internet qui permet

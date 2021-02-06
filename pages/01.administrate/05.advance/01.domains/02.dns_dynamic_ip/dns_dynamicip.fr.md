@@ -3,6 +3,8 @@ title: DNS avec une IP dynamique
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/dns_dynamicip'
 ---
 
 <div class="alert alert-warning">Avant d’aller plus loin, assurez-vous que votre adresse IP publique est dynamique à l’aide de : [ip.yunohost.org](http://ip.yunohost.org/). L’adresse IP publique de votre box change à peu près tous les jours.</div>
@@ -27,13 +29,13 @@ Voici des sites qui proposent un service de DynDNS gratuitement :
 Créer un compte chez l’un d’eux.
 
 #### 2. Déplacer les zones DNS
-Déplacer les [zones DNS](dns_config), à l’exception des champs NS, du [bureau d’enregistrement](/registrar) où vous avez acheté votre nom de domaine vers le DNS dynamique où vous avez créé un compte à l’étape 1.
+Déplacer les [zones DNS](/dns_config), à l’exception des champs NS, du [bureau d’enregistrement](/registrar) où vous avez acheté votre nom de domaine vers le DNS dynamique où vous avez créé un compte à l’étape 1.
 
 #### 3. Basculer la gestion de votre nom de domaine vers le serveur DNS dynamique
 Cette étape consiste à faire savoir au [bureau d’enregistrement](/registrar) que le service de DNS sera assuré par le service de DynDNS.
 Redirigez le champ NS vers l’adresse IP donnée par le service de DynDNS.
 
-Ensuite, supprimez les [zones DNS](dns_config), à l’exception des champs NS, du [bureau d’enregistrement](/registrar).
+Ensuite, supprimez les [zones DNS](/dns_config), à l’exception des champs NS, du [bureau d’enregistrement](/registrar).
 
 #### 4. Créer un identifiant de DNS dynamique
 Sur le service de DNS dynamique créer un identifiant qui sera entré dans un client de DNS dynamique.

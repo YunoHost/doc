@@ -3,6 +3,8 @@ title: Introduction au packaging
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_start'
 ---
 
 Petite introduction au packaging d'application, pour comprendre de quoi nous parlons et comment ça marche.

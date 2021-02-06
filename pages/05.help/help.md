@@ -3,6 +3,8 @@ title: Looking for help?
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/help'
 ---
 
 <h3>Connect to the support chatroom</h3>

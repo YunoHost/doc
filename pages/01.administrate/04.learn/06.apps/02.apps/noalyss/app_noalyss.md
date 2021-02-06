@@ -3,6 +3,8 @@ title: Noalyss
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_noalyss'
 ---
 
 Open source accounting software developed in PHP.

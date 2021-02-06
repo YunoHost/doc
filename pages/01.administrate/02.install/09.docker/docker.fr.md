@@ -3,6 +3,8 @@ title: Docker et YunoHost
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/docker'
 ---
 
 <div class="alert alert-danger">

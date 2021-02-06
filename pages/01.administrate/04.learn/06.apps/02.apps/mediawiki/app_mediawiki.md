@@ -3,6 +3,8 @@ title: MediaWiki
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_mediawiki'
 ---
 
 <img src="images/mediawiki_logo.svg" height="80px" alt="logo de MediaWiki"> MediaWiki

@@ -3,6 +3,8 @@ title: هل تبحث عن مساعدة
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/help'
 ---
 
 <h3 dir="rtl">إتصل بغرفة المساعدة</h3>

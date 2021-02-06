@@ -3,6 +3,8 @@ title: Lutim
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_lutim'
 ---
 
 <img src="/images/lutim_logo.png" height="80px" alt="Lutim's logo"> Lutim

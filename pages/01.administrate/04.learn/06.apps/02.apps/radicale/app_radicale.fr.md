@@ -3,6 +3,8 @@ title: Radicale
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_radicale'
 ---
 
 Radicale est un serveur de calendrier et de contact CalDAV/CardDAV. Il ne dispose pas d’interface graphique d’administration.

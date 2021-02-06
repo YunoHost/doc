@@ -3,6 +3,8 @@ title: Mettre à jour le système
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/update'
 ---
 
 ## Depuis la webadmin

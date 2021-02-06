@@ -3,6 +3,8 @@ title: Hooks
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_hooks'
 ---
 
 Les hooks permettent de déclencher un script lorsqu'une action est effectuée par le système.  

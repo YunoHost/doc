@@ -3,6 +3,8 @@ title: Contributing to the YunoHost core
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/dev'
 ---
 
 You wish to add a new feature in the YunoHost core, but don't know how to

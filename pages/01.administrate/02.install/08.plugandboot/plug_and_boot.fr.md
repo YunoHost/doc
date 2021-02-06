@@ -3,6 +3,8 @@ title: Brancher et démarrer votre serveur
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/plug_and_boot'
 ---
 
 * Mettez la carte SD dans le serveur (pour le cas des cartes ARM)

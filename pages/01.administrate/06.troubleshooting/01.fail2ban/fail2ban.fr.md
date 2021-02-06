@@ -3,6 +3,8 @@ title: Fail2Ban
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/fail2ban'
 ---
 
 **Fail2Ban** est un logiciel de prévention des intrusions qui protège les serveurs informatiques contre les attaques de brute-force. Il surveille certains journaux et bannira les adresses IP qui montrent un comportement de brute-forcing.

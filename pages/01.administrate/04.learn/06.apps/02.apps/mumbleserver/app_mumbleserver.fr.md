@@ -3,6 +3,8 @@ title: Mumble server
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_mumbleserver'
 ---
 
 <img src="/images/mumbleserver_logo.svg" height="80px" alt="logo de mumbleserver"> Mumble server

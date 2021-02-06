@@ -3,6 +3,8 @@ title: Piwigo
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_piwigo'
 ---
 
 <img src="/images/piwigo_logo.png" width="80px" alt="Piwigo's logo"> Piwigo

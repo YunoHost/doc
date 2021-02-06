@@ -3,6 +3,8 @@ title: Horde
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_horde'
 ---
 
 <img src="/images/horde_logo.png" height="80px" alt="logo de Horde"> Horde

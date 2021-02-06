@@ -3,6 +3,8 @@ title: NGINX configuration
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_nginx_conf'
 ---
 
 This tutorial aim to help setup NGINX configuration for application packaging.

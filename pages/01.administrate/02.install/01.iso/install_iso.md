@@ -3,6 +3,8 @@ title: Install on a regular computer
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/install_iso'
 ---
 
 ## Requirements

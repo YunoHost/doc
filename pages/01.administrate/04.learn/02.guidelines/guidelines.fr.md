@@ -3,6 +3,8 @@ title: Conseil généraux
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/guidelines'
 ---
 
 Cette page énumère quelques conseils et lignes directrices que tout administrateur de YunoHost devrait connaître pour prendre soin de son serveur :).

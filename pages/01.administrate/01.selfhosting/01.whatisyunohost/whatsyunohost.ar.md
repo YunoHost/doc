@@ -3,6 +3,8 @@ title: ماذا نعني بـ واي يونوهوست YunoHost
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/whatsyunohost'
 ---
 
 <div dir="rtl">

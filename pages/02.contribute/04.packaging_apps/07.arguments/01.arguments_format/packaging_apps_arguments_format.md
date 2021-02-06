@@ -3,6 +3,8 @@ title: YunoHost Arguments Format
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_arguments_format'
 ---
 
 In YunoHost application developpement there are several places where you end up

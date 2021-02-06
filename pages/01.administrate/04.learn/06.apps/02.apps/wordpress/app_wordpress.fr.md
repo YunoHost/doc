@@ -3,6 +3,8 @@ title: WordPress
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_wordpress'
 ---
 
 <img src="https://yunohost.org/images/wordpress_logo.svg" height="80px" alt="logo de WordPress"> WordPress

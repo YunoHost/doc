@@ -3,6 +3,8 @@ title: Prova YunoHost
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/try'
 ---
 
 <div class="alert alert-warning" markdown="1">

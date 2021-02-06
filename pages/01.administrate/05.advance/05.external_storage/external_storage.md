@@ -3,6 +3,8 @@ title: Adding an external storage to your server
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/external_storage'
 ---
 
 ## Introduction

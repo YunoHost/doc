@@ -3,6 +3,8 @@ title: Foire aux questions
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/faq'
 ---
 
 #### Sous quelle licence est distribué YunoHost ?
@@ -29,7 +31,7 @@ YunoHost peut être appelé une distribution ou un système d’exploitation, ma
 
 Par exemple, pour installer un WordPress à la main, il vous faudrait taper toute une série de commandes pour créer des utilisateurs, mettre en place un serveur web, mettre en place un serveur SQL, télécharger l’archive de WordPress, la décompresser, configurer le serveur web, configurer la base de données SQL, et finalement configurer WordPress. YunoHost gère toute cette partie technique et « tape les commandes à votre place », pour que vous puissiez vous concentrer sur ce qui compte vraiment.
 
-Plus d’informations sur [cette page](whatsyunohost) !
+Plus d’informations sur [cette page](/whatsyunohost) !
 
 
 #### Puis-je gérer mon propre site web avec YunoHost ?
@@ -67,7 +69,7 @@ Si vous le pouvez, vous pouvez aussi faire des contributions en nature (une part
 
 #### Comment puis-je contribuer au projet ?
 
-Il existe [plusieurs façons de contribuer](contribute) :).
+Il existe [plusieurs façons de contribuer](/contribute) :).
 
 N’hésitez pas à venir nous parler de vos idées !
 
@@ -75,7 +77,7 @@ Une idée répandue parmi les nouveaux contributeurs aux logiciels libres est de
 
 #### Quel est le modèle politique de YunoHost ?
 
-Il est décrit dans [ce document](project_organization) :).
+Il est décrit dans [ce document](/project_organization) :).
 
 
 #### Pouvez-vous porter YunoHost sur [ma distro préférée] ?

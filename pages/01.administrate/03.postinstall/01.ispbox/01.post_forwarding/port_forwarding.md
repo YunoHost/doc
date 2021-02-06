@@ -3,6 +3,8 @@ title: Port forwarding
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/port_forwarding'
 ---
 
 The sketch below tries to briefly summarize the role and necessity of port

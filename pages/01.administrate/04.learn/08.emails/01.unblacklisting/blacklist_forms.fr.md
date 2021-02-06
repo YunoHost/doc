@@ -3,6 +3,8 @@ title: Formulaires de retrait de liste noire
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/blacklist_forms'
 ---
 
 Il peut arriver que votre serveur (son adresse IP) soit ajouté à la liste noire de certains fournisseurs d’adresse de courrier électronique ou de services anti-spam. Les courriels envoyés à ces adresses sont alors filtrés et n’arrivent pas à destination.

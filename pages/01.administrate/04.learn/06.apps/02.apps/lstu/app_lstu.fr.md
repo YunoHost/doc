@@ -3,6 +3,8 @@ title: Lstu
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_lstu'
 ---
 
 <img src="/images/lstu_logo.svg" height="80px" alt="logo de lstu"> Lstu

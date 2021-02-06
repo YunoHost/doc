@@ -3,6 +3,8 @@ title: Installation graphique
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/boot_and_graphical_install'
 ---
 
 Maintenant que vous possédez un support YunoHost, vous pouvez procéder à l’installation.

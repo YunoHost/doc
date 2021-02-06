@@ -3,6 +3,8 @@ title: Cerchi aiuto?
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/help'
 ---
 
 <h3>Connettiti alla chat di supporto</h3>

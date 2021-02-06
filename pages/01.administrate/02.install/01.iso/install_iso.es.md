@@ -3,6 +3,8 @@ title: Instalación en un ordenador
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/install_iso'
 ---
 
 *Encontrar otros medios de instalar YunoHost **[aquí](/install)**.*

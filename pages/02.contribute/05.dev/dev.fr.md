@@ -3,6 +3,8 @@ title: Contribuer au cœur de YunoHost
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/dev'
 ---
 
 Vous souhaitez ajouter une nouvelle fonctionnalité au cœur de YunoHost, mais ne savez pas comment procéder ? Ce guide parcourt les étapes du développement et du processus de contribution.

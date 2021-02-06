@@ -3,6 +3,8 @@ title: Continuous integration
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps'
 ---
 
 A continuous integration server is available for any packager willing to test an app with [Package_check](https://github.com/YunoHost/package_check).

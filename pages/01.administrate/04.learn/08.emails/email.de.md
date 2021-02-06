@@ -3,6 +3,8 @@ title: E-Mails
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/email'
 ---
 
 YunoHost wird mit einem kompletten Mail-Stack geliefert, der es Ihnen ermöglicht, Ihren eigenen E-Mail-Server zu hosten und somit Ihre eigenen E-Mail-Adressen in ```irgendjemand@deine.domain.tld``` zu haben.

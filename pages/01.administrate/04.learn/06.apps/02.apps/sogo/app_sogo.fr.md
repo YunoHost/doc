@@ -3,6 +3,8 @@ title: SOGo
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_sogo'
 ---
 
 <img src="/images/sogo_logo.png" height="80px" alt="SOGo Logo"> SOGo
@@ -13,7 +15,7 @@ taxonomy:
 
 - [Liens utiles](#liens-utiles)
 
-SOGo est un service de webmail pour votre serveur email, c'est une alternative à [RoundCube](app_roundcube). Il permet aussi la gestion des agendas et contacts présents sur le serveur.
+SOGo est un service de webmail pour votre serveur email, c'est une alternative à [RoundCube](/app_roundcube). Il permet aussi la gestion des agendas et contacts présents sur le serveur.
 
 ## Quelques liens utiles
 

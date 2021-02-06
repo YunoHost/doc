@@ -3,6 +3,8 @@ title: SSH
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/ssh'
 ---
 
 ## Was ist SSH?
@@ -41,7 +43,7 @@ After logging in for the first time, you should change the root password. The se
 
 #### Let's configure !
 
-We're now ready to begin the [post-installation](postinstall).
+We're now ready to begin the [post-installation](/postinstall).
 
 ## After installing YunoHost
 
@@ -53,7 +55,7 @@ If you only know the IP address of your server :
 ssh admin@111.222.333.444
 ```
 
-Then, you need to enter your administrator password created at [post-installation step](postinstall).
+Then, you need to enter your administrator password created at [post-installation step](/postinstall).
 
 If you configured your DNS (or tweaked your `/etc/hosts`), you can simply use your domain name :
 

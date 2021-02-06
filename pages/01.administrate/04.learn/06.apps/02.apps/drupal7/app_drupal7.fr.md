@@ -3,6 +3,8 @@ title: Drupal 7
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_drupal7'
 ---
 
 <img src="/images/drupal_logo.svg" height="80px" alt="Logo de Drupal"> Drupal 7

@@ -3,6 +3,8 @@ title: Borg
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_borg'
 ---
 
 <img src="/images/borg_logo.svg" height="80px" alt="logo de Borg"> Borg

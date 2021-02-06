@@ -3,6 +3,8 @@ title: Zerobin
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_zerobin'
 ---
 
 <img src="/images/zerobin_logo.svg" height="80px" alt="logo de zerobin"> Zerobin

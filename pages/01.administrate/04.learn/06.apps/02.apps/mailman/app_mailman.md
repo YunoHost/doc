@@ -3,6 +3,8 @@ title: Mailman
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_mailman'
 ---
 
 <img src="/images/mailman_logo.svg" height="80px" alt="mailman's logo"> Mailman

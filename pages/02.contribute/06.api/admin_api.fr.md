@@ -3,6 +3,8 @@ title: Administration depuis l'API ou une application externe
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/admin_api'
 ---
 
 Toutes les actions exécutables en ligne de commande le sont également via une API. L’API est accessible à l’adresse https://votre.serveur/yunohost/api.

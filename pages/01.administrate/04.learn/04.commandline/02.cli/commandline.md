@@ -3,6 +3,8 @@ title: Administrate YunoHost in command line
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/commandline'
 ---
 
 The command line interface (CLI) is, in the computer world, the original (and more technical) way of interacting with a computer compared to graphical interface. Command line interfaces are generally said to be more complete, powerful or efficient than a graphical interface, though it is more difficult to learn.

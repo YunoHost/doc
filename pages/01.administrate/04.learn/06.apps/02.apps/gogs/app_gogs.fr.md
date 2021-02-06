@@ -3,6 +3,8 @@ title: Gogs
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_gogs'
 ---
 
 <img src="/images/gogs_logo.svg" height="80px" alt="logo de Gogs"> Gogs

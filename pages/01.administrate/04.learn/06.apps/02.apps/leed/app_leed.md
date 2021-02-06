@@ -3,6 +3,8 @@ title: Leed
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_leed'
 ---
 
 <img src="/images/leed_logo.png" height="80px" alt="leed's logo"> Leed

@@ -3,6 +3,8 @@ title: DokuWiki
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_dokuwiki'
 ---
 
 <img src="/images/dokuwiki_logo.svg" height="80px" alt="Dokuwiki's logo"> DokuWiki

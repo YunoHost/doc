@@ -3,6 +3,8 @@ title: App helpers
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_helpers'
 ---
 
 <!-- NO_MARKDOWN_PARSING -->

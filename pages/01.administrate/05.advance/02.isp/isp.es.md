@@ -3,6 +3,8 @@ title: Proveedores de acceso a Internet
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/isp'
 ---
 
 <a class="btn btn-lg btn-default" href="/isp_box_config"> Configuración general del router</a>

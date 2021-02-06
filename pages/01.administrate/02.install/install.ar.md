@@ -3,6 +3,8 @@ title: دليل التنصيب
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/install'
 ---
 
 <div dir="rtl">

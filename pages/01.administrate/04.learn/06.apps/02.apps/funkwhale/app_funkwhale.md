@@ -3,6 +3,8 @@ title: Funkwhale
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_funkwhale'
 ---
 
 <img src="/images/funkwhale_logo.png" width="80px" alt="Funkwhale's logo"> Funkwhale

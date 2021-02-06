@@ -3,6 +3,8 @@ title: Guide to writing application documentation
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/doc_writing_guide'
 ---
 
 ## Users / Administrators documentation pages

@@ -3,6 +3,8 @@ title: Migrer vers Buster
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/stretch_buster_migration'
 ---
 
 L'objectif cette page est de décrire le processus de migration d'une instance en YunoHost 3.8.x (tournant sous Debian Stretch/9.x) vers YunoHost 4.x (tournant sous Debian Buster/10.x)

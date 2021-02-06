@@ -3,6 +3,8 @@ title: Install YunoHost on a Raspberry Pi
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/install_on_raspberry'
 ---
 
 *Find all the ways to install YunoHost **[here](/install)**.*

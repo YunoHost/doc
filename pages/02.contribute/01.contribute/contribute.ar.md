@@ -3,6 +3,8 @@ title: المساهمة
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/contribute'
 ---
 
 <p dir="rtl" class="lead">

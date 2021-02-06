@@ -3,6 +3,8 @@ title: Security
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/security'
 ---
 
 YunoHost has been developed to provide the best security without too much complication. Every protocol used in YunoHost is **encrypted**, only password's hashes are stored and by default each user is able to access their personal directory only.

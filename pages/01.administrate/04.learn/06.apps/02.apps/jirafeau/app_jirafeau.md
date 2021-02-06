@@ -3,6 +3,8 @@ title: Jirafeau
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_jirafeau'
 ---
 
 <img src="/images/Jirafeau_logo.jpg" width="80px" alt="Jirafeau's logo"> Jirafeau

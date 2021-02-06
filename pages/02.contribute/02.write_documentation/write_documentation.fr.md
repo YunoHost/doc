@@ -3,6 +3,8 @@ title: Rédaction de la documentation
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/write_documentation'
 ---
 
 ## Sur le site
@@ -19,4 +21,4 @@ La documentation de YunoHost est gérée par un [dépot Git](https://github.com/
 
 ## Syntaxe
 
-La documentation utilise la syntaxe Markdown. Veuillez vous référer à la [documentation](doc_markdown_guide) pour plus d’informations.
+La documentation utilise la syntaxe Markdown. Veuillez vous référer à la [documentation](/doc_markdown_guide) pour plus d’informations.

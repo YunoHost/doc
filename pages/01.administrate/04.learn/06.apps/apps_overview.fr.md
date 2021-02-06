@@ -3,6 +3,8 @@ title: Les applications
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/apps_overview'
 ---
 
 L'une des fonctionnalités principales de YunoHost est la possibilité d'installer facilement des applications immédiatement utilisables. Pour donner des exemples d'application, il est possible d'installer un système de blog, un "cloud" (pour héberger et synchroniser des fichiers), un site web, un lecteur RSS...
@@ -31,8 +33,8 @@ Certaines applications peuvent être installées plusieurs fois (à différents 
 
 ## Gestion de l'accès des utilisateurs
 
-L'accès aux applications peut être limité à certains utilisateurs seulement. Ceci peut être configuré via la webadmin sur la page [Groupes et permissions](groups_and_permissions), ou de la même manière via la sous-catégorie de commandes `yunohost user permission`.
+L'accès aux applications peut être limité à certains utilisateurs seulement. Ceci peut être configuré via la webadmin sur la page [Groupes et permissions](/groups_and_permissions), ou de la même manière via la sous-catégorie de commandes `yunohost user permission`.
 
 ## Packaging d'applications
 
-Si vous voulez apprendre ou contribuer à l'empaquetage des applications, veuillez consulter la [documentation des contributeurs](contributordoc).
+Si vous voulez apprendre ou contribuer à l'empaquetage des applications, veuillez consulter la [documentation des contributeurs](/contributordoc).

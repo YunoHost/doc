@@ -3,6 +3,8 @@ title: Mindmaps
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_mindmaps'
 ---
 
 [![Installer Mindmaps avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mindmaps) [![Integration level](https://dash.yunohost.org/integration/mindmaps.svg)](https://dash.yunohost.org/appci/app/mindmaps)

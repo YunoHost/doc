@@ -3,6 +3,8 @@ title: Kanboard
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_kanboard'
 ---
 
 <img src="/images/kanboard_logo.png" height="80px" alt="logo de kanboard"> Kanboard

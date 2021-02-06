@@ -3,6 +3,8 @@ title: CodiMD
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_codimd'
 ---
 
 <img src="/images/codimd_logo.png" height="80px" alt="CodiMD’s logo"> CodiMD

@@ -3,6 +3,8 @@ title: Migrating email from an email provider to a YunoHost instance
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/email_migration'
 ---
 
 *[Documentation linked to YunoHost email](/email)*.

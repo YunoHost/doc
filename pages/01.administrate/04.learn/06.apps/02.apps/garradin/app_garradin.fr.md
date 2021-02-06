@@ -3,6 +3,8 @@ title: Garradin
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_garradin'
 ---
 
 <img src="/images/garradin_logo.svg" height="80px" alt="logo de Garradin"> Garradin

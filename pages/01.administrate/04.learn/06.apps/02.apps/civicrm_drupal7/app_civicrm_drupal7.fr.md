@@ -3,6 +3,8 @@ title: CiviCRM
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_civicrm_drupal7'
 ---
 
 <img src="/images/civicrm_logo.png" height="80px" alt="logo de CiviCRM"> CiviCRM

@@ -3,6 +3,8 @@ title: Customize the appearance of the user portal
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/theming'
 ---
 
 ## Using a theme

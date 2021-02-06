@@ -3,6 +3,8 @@ title: Nextcloud
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_nextcloud'
 ---
 
 <img src="/images/nextcloud_logo.png" alt="logo de Nextcloud"> Nextcloud  
@@ -165,10 +167,10 @@ Save and clean your caches (Cloudflare, browser...) and that's it.
 
 ## Third Party Applications <a name="AppsTiers" href=""></a>
 
- - [Calendrier](app_nextcloud_calendar)
- - [Contact](app_nextcloud_contact)
- - [KeeWeb](app_nextcloud_keeweb)
- - [Carnet](app_nextcloud_carnet)
+ - [Calendrier](/app_nextcloud_calendar)
+ - [Contact](/app_nextcloud_contact)
+ - [KeeWeb](/app_nextcloud_keeweb)
+ - [Carnet](/app_nextcloud_carnet)
 
 ## Useful links <a name="UsefulLinks" href=""></a>
 

@@ -3,6 +3,8 @@ title: Airsonic
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_airsonic'
 ---
 
 <img src="/images/airsonic_logo.png" height="80px" alt="logo de Airsonic"> Airsonic

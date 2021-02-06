@@ -3,6 +3,8 @@ title: Bludit
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_bludit'
 ---
 
 <img src="/images/bludit_logo.png" width="80px" alt="logo de Bludit> Bludit

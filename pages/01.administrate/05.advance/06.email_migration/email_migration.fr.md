@@ -3,6 +3,8 @@ title: Migrer ses emails d'un ancien serveur mail vers YunoHost
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/email_migration'
 ---
 
 *[Documentation en rapport avec l’email de YunoHost](/email)*.

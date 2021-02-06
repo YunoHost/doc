@@ -3,6 +3,8 @@ title: Pre-installed images
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/images'
 ---
 
 <span class="javascriptDisclaimer">

@@ -3,6 +3,8 @@ title: Pleroma
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_pleroma'
 ---
 
 <img src="/images/pleroma_logo.png" alt="logo de Pleroma"> Pleroma

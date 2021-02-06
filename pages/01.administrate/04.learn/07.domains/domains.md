@@ -3,11 +3,13 @@ title: Domains, DNS conf, and certificate
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/domains'
 ---
 
 YunoHost allows you to manage and serve several domains on the same server. For instance, you can host a blog and Nextcloud on a first domain `yolo.com`, and a web mail client on a second domain `swag.nohost.me`. Each domain is automatically configured to handle web services, mail services and XMPP services.
 
-Domains can be managed in the 'Domain' section of the webadmin, or through the `yunohost domain` category of the command line. Each time you add a domain, it is expected that you bought it (or own it) on a domain registrar, so you can manage the [DNS configuration](dns). The exception is the [`.nohost.me`, `.noho.st` and `ynh.fr` domains](/dns_nohost_me) which are paid for by the YunoHost Project, and can be directly integrated with YunoHost thanks to an automated dynDNS setup. (To limit costs and abuses, each instance may only have one of these domains setup at any given time).
+Domains can be managed in the 'Domain' section of the webadmin, or through the `yunohost domain` category of the command line. Each time you add a domain, it is expected that you bought it (or own it) on a domain registrar, so you can manage the [DNS configuration](/dns). The exception is the [`.nohost.me`, `.noho.st` and `ynh.fr` domains](/dns_nohost_me) which are paid for by the YunoHost Project, and can be directly integrated with YunoHost thanks to an automated dynDNS setup. (To limit costs and abuses, each instance may only have one of these domains setup at any given time).
 
 The domain chosen during the postinstall is defined as the main domain of the server : this is where the SSO and the web admin interface will be available. The main domain can later be changed through the web admin in Domains > (the domain) > Set default, or with the command line `yunohost tools maindomain`.
 
@@ -25,7 +27,7 @@ YunoHost can generate a recommended DNS configuration for each domain, including
 
 ## SSL/HTTPS certificates
 
-Another important aspect of domain configuration is the SSL/HTTPS certificate. YunoHost is integrated with Let's Encrypt, so once your server is correctly reachable from anybody on the internet through the domain name, the administrator can request a Let's Encrypt certificate. See the documentation about [certificates](certificate) for more information.
+Another important aspect of domain configuration is the SSL/HTTPS certificate. YunoHost is integrated with Let's Encrypt, so once your server is correctly reachable from anybody on the internet through the domain name, the administrator can request a Let's Encrypt certificate. See the documentation about [certificates](/certificate) for more information.
 
 ## Subpaths vs. individual domains per apps
 

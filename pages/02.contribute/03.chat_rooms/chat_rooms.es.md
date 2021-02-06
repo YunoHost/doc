@@ -3,6 +3,8 @@ title: Salas de chat
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/chat_rooms'
 ---
 
 El proyecto YunoHost utiliza salas de chat como medio de communicación.

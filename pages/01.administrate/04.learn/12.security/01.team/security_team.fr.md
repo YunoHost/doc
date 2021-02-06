@@ -3,6 +3,8 @@ title: Équipe sécurité
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/security_team'
 ---
 
 Contactez l'équipe sécurité par email : `security@yunohost.org`.

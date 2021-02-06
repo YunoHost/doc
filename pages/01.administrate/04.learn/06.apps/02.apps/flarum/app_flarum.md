@@ -3,6 +3,8 @@ title: Flarum
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_flarum'
 ---
 
 <img src="/images/flarum_logo.png" width="80px" alt="Flarum's logo"> Flarum

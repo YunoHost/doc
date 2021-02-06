@@ -3,6 +3,8 @@ title: Minetest
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_minetest'
 ---
 
 <img src="/images/minetest_logo.svg" height="80px" alt="minetest's logo"> Minetest

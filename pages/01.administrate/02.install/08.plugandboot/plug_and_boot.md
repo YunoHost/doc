@@ -3,6 +3,8 @@ title: Plug and boot your server up
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/plug_and_boot'
 ---
 
 # Boot and connect to your server

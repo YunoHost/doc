@@ -3,6 +3,8 @@ title: Strut
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_strut'
 ---
 
 <img src="/images/strut_logo.png" height="80px" alt="logo de strut"> Strut

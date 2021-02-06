@@ -3,6 +3,8 @@ title: Diagram.net
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_diagramsnet'
 ---
 
 <img src="/images/diagramsnet_logo.jpg" width="80px" alt="logo de Diagrams.net"> Diagrams.net

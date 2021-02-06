@@ -3,6 +3,8 @@ title: Emails
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/email'
 ---
 
 YunoHost est livré avec un écosystème complet de serveur mail, vous permettant d'héberger votre propre serveur de messagerie, et donc d'avoir vos propres adresses email dans `quelquechose@votre.domaine.tld`.
@@ -14,16 +16,16 @@ Cet écosystème comprend un serveur SMTP (postfix), un serveur IMAP (Dovecot), 
 Les emails sont un écosystème compliqué et un grand nombre de détails peuvent les empêcher de fonctionner correctement.
 
 Pour valider que votre configuration est correcte :
-- si vous vous hébergez chez vous et n'utilisez pas de VPN, assurez-vous que [votre FAI ne bloque pas le port 25](isp) ;
-- routez les ports selon [cette documentation](isp_box_config) ;
-- configurez soigneusement les enregistrements DNS du courrier électronique selon [cette documentation](dns_config) ;
+- si vous vous hébergez chez vous et n'utilisez pas de VPN, assurez-vous que [votre FAI ne bloque pas le port 25](/isp) ;
+- routez les ports selon [cette documentation](/isp_box_config) ;
+- configurez soigneusement les enregistrements DNS du courrier électronique selon [cette documentation](/dns_config) ;
 - Testez votre configuration en utilisant [Mail-tester.com](https://mail-tester.com) <small>(attention : seuls 3 tests par domaine et par jour sont autorisés)</small> ;
 
 Un score d'au moins 8~9/10 est un but raisonnable.
 
 ## Clients de messagerie
 
-Pour interagir avec le serveur de mail, c'est-à-dire lire et envoyer des emails, vous pouvez soit installer un client web comme Roundcube ou Rainloop sur votre serveur - ou configurer un client de bureau ou mobile comme décrit dans [cette page](email_configure_client).
+Pour interagir avec le serveur de mail, c'est-à-dire lire et envoyer des emails, vous pouvez soit installer un client web comme Roundcube ou Rainloop sur votre serveur - ou configurer un client de bureau ou mobile comme décrit dans [cette page](/email_configure_client).
 
 Les clients de bureau ou mobile ont l'avantage de copier vos emails sur l'équipement permettant ainsi la consultation hors ligne et une protection relative face à d'éventuelles pannes matériel de votre serveur.
 
@@ -46,5 +48,5 @@ Pour s’assurer que l’adresse IP de votre serveur n’est pas dans ces listes
 
 ## Pour aller plus loin
 
-- Il existe une page de documentation pour [migrer ses emails d'un fournisseur de messagerie vers une instance YunoHost](email_migration).
+- Il existe une page de documentation pour [migrer ses emails d'un fournisseur de messagerie vers une instance YunoHost](/email_migration).
 - Pour approfondir votre compréhension du courriel et de ses protocoles, voici une [conférence éclairante](https://www.octopuce.fr/conference-lemail-vaste-sujet-par-benjamin-sonntag/)(en français).

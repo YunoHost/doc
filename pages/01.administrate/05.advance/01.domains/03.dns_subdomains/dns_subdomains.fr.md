@@ -3,6 +3,8 @@ title: DNS et sous-domaines pour les applications
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/dns_subdomains'
 ---
 
 ### Sous-domaines

@@ -3,6 +3,8 @@ title: Project organisation
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/yunohost_project_organization'
 ---
 
 ## Document objective

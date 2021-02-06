@@ -3,6 +3,8 @@ title: Firefly III
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_firefly-iii'
 ---
 
 <img src="/images/firefly_iii_logo.png" width="80px" alt="logo de Firefly III"> Firefly III
