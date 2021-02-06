@@ -11,7 +11,7 @@ routes:
 
 ### Requirements
 
-<img width=100 src="/images/debian-logo.png">
+![](image://debian-logo.png?resize=100)
 
 An ARM box, a VPS, a dedicated server, a standard x86 computer, an old Macintosh, ...
 

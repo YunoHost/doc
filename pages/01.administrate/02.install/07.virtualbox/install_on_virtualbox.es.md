@@ -11,7 +11,7 @@ routes:
 
 ## Prerrequisitos
 
-<img src="/images/virtualbox.png" width=200>
+![](image://virtualbox.png?resize=200)
 
 * Un ordenador x86 con VirtualBox instalado y bastante RAM disponible para iniciar una pequeña máquina virtual.
 * La última **imagen ISO YunoHost** estable, disponible [aquí](/images).
@@ -24,7 +24,7 @@ N.B. : Instalar YunoHost en VirtualBox es útil para probar la distribución. Pa
 
 ## <small>1.</small> Crear una nueva máquina virtual
 
-<img src="/images/virtualbox_1.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+![](image://virtualbox_1.png)
 
 <br>
 
@@ -38,7 +38,7 @@ N.B. : Instalar YunoHost en VirtualBox es útil para probar la distribución. Pa
 
 Ir a **Settings** > **Network** :
 
-<img src="/images/virtualbox_2.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+![](image://virtualbox_2.png)
 
 <br>
 
@@ -54,7 +54,7 @@ Ir a **Settings** > **Network** :
 
 Inicia tu máquina virtual
 
-<img src="/images/virtualbox_2.1.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+![](image://virtualbox_2.1.png)
 
 <br>
 
@@ -66,7 +66,7 @@ Si te encuentras con el error "VT-x is not available", probablement hay que acti
 
 <br>
    
-<img src="/images/virtualbox_3.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+![](image://virtualbox_3.png)
 
 <br>
 

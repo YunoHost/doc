@@ -11,7 +11,7 @@ routes:
 
 ## Requirements
 
-<img src="/images/virtualbox.png" width=200>
+![](image://virtualbox.png?resize=200)
 
 * An x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine.
 * The latest stable **YunoHost ISO image**, available [here](/images).
@@ -26,7 +26,7 @@ machine (old computer, ARM board...) or a VPS online.
 
 ## <small>1.</small> Create a new virtual machine
 
-<img src="/images/virtualbox_1.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+![](image://virtualbox_1.png)
 
 <br>
 
@@ -42,7 +42,7 @@ machine (old computer, ARM board...) or a VPS online.
 
 Go to **Settings** > **Network**:
 
-<img src="/images/virtualbox_2.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+![](image://virtualbox_2.png)
 
 <br>
 
@@ -58,7 +58,7 @@ Go to **Settings** > **Network**:
 
 Start the virtual machine
 
-<img src="/images/virtualbox_2.1.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+![](image://virtualbox_2.1.png)
 
 <br>
 
@@ -70,7 +70,7 @@ If you encounter the error "VT-x is not available", you need probably need to en
 
 <br>
 
-<img src="/images/virtualbox_3.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+![](image://virtualbox_3.png)
 
 <br>
 

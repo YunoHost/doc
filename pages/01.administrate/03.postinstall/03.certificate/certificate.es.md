@@ -12,7 +12,7 @@ Los certificados sirven para garantizar la confidencialidad y la autenticidad de
 Por defecto, YunoHost provee un certificado **auto-firmado**, lo que significa que es tu servidor el que garantiza la validez del certificado. Es suficiente **en el caso de un uso personal**, porque puedes confiar en tu propio servidor, pero esto planteará problemas si piensas en abrir el acceso a tu servidor a personas anónimas, por ejemplo si quieres alojar un sitio web.
 En efecto, los usuarios deberán pasar por una pantalla de este tipo :
 
-<img src="/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+![](image://postinstall_error.png)
 
 Esta pantalla equivale a que te pidan ** ¿ Confías en el servidor que aloja este sitio ? ***. Esto puede asustar tu usuarios (con toda la razón).
 

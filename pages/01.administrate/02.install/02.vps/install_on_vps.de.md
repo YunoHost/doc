@@ -11,7 +11,7 @@ routes:
 
 ### Vorraussetzungen
 
-<img src="/images/vps.png" width=250>
+![](image://vps.png?resize=250)
 
 * Ein dedizierter (Root-Server) oder virtueller privater Server (VPS)
 * mit mindestens **512MB** RAM

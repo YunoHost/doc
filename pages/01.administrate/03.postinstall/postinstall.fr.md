@@ -21,7 +21,7 @@ Lors de la première visite, vous rencontrerez très probablement un avertisseme
 
 Vous arrivez ensuite sur cette page :
 
-<img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="/images/postinstall_web.png">
+![](image://postinstall_web.png)
 
 *<p class="text-muted">Aperçu de la post-installation Web</p>*
 
@@ -29,7 +29,7 @@ Vous arrivez ensuite sur cette page :
 
 Vous pouvez aussi y accéder en entrant la commande `yunohost tools postinstall` directement sur le serveur ou [en SSH](/ssh).
 
-<img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="/images/postinstall_cli.png">
+![](image://postinstall_cli.png)
 
 *<p class="text-muted">Aperçu de la post-installation en ligne de commande</p>*
 

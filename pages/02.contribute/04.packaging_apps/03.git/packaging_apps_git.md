@@ -30,14 +30,14 @@ The master branch is the branch that contains the version of the app users will 
 The usual thing to do is to work from the testing branch, and when everything is settled and tested, you can merge the testing branch in master, so users will enjoy the new release of your package.
 
 To see and change the current branch, use this button:  
-<img src="/images/github_branch.png" width=100%>
+![](image://github_branch.png)
 
 #### Edit a file
 
 Now that you're on the right branch, let's see how to edit a file on GitHub.
 
 You can edit any file by using the small pencil icon:  
-<img src="/images/github_edit.png" width=100%>
+![](image://github_edit.png)
 
 If you don't have the permission to write on the repository, you will see (as on the picture) that you're going to create a fork (we'll see below what a fork is).  
 If you have the permission to write, you will just edit the file, without forking.
@@ -46,7 +46,7 @@ If you have the permission to write, you will just edit the file, without forkin
 
 When you're done with your modification on the file, you can commit your changes.  
 Behind that word, the idea is quite simple, you're just going to save your changes...  
-<img src="/images/github_commit.png" width=100%>
+![](image://github_commit.png)
 
 The first field is the name of your commit, a very short sentence to explain why you did this modification.  
 The second field is a large one for a more complete explanation, if you need it.
@@ -74,7 +74,7 @@ You may still need to fork on your own account to be able to save your modificat
 After you have committed your changes, whether on a branch or a fork, you want to propose your modifications to be integrated into the main repository, or the original branch.  
 To do so, you're going to *create a pull request*. GitHub usually ask you directly if you want to do so.  
 Otherwise, you'll find the button to create a pull request just here:  
-<img src="/images/github_pull_request.png" width=100%>
+![](image://github_pull_request.png)
 
 When creating a pull request from a fork, to ease the work of the reviewers, **do never** uncheck the checkbox *Allow edits from maintainers*. That option simply allow the maintainers of the original repository to edit directly your work.
 
@@ -123,7 +123,7 @@ In the context of a new package, you will also need to create a repository on Gi
 Which is as simple as a big green *New* button.  
 Don't bother with README, .gitignore or license. Just create the repository itself.  
 you can now git clone that new repository.  
-<img src="/images/github_create_new_repo.png" width=100%>
+![](image://github_create_new_repo.png)
 
 You now have 2 repositories cloned on your computer.  
 Copy all the files from the example_ynh app, **except the .git directory** (You just want the files themselves) to your new package.  

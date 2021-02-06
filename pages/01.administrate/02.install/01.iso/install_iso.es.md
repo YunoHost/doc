@@ -11,9 +11,9 @@ routes:
 
 ## Prerrequisitos
 
-<img src="/images/laptop.png" width=200>
-<img src="/images/desktop.jpg">
-<img src="/images/nettop.jpg">
+![](image://laptop.png?resize=200)
+![](image://desktop.jpg)
+![](image://nettop.jpg)
 
 * Un ordenador compatible x86 dedicado a YunoHost : portátil, netbook, ordenador de escritorio. Puedes reutilizar calquiera máquina con **256 Mo de RAM mínimo**
 * Otro ordenador para examinar esta guía y acceder a tu servidor

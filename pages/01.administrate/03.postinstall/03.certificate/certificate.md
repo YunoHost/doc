@@ -13,7 +13,7 @@ YunoHost provides a **self-signed** certificate, it means that your server guara
 
 In practice, visitors will see a screen list this:
 
-<img src="/images/postinstall_error.png" style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);">
+![](image://postinstall_error.png)
 
 Which basically asks the visitor : **"Do you trust the server hosting this website?"**. This can rightfully frighten a lot of people.
 

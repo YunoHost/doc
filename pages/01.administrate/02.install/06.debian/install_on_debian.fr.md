@@ -11,7 +11,7 @@ routes:
 
 ## Prérequis
 
-<img width=100 src="/images/debian-logo.png">
+![](image://debian-logo.png?resize=100)
 
 Sur une plateforme ARM, un VPS, un serveur dédié, un ordinateur x86 standard, un vieux Macintosh,...
 

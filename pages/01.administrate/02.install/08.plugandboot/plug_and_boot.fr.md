@@ -33,4 +33,4 @@ routes:
 
 * Il est possible de brancher un écran et clavier sur votre serveur pour vérifier que le processus de démarrage (boot) se passe bien et pour avoir un accès direct en console.
 
-<div class="text-center"><img src="/images/boot_screen.png"></div>
+![](image://boot_screen.png)

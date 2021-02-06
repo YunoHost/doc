@@ -28,10 +28,9 @@ routes:
 
 ## Articles / Press review
 
-<a href="https://linuxfr.org/news/yunohost-2-0-l-auto-hebergement-a-portee-de-clic"><img src="/images/Linuxfr.png" width=180></a>
-<a href="https://linuxfr.org/news/yunohost-2-0-l-auto-hebergement-a-portee-de-clic"><img src="/images/Linuxfr.png" width=180></a>
-<a href="https://www.linux-pratique.com/2016/07/et-si-vous-passiez-a-lauto-hebergement/"><img src="/images/linux-pratique-96.jpg" width=150 /></a>
-<a href="http://www.linux-magazine.com/Issues/2018/208/YunoHost"><img src="/images/linux-magazine-208.jpg" width=150 /></a>
+[![](image://Linuxfr.png?resize=180)](https://linuxfr.org/news/yunohost-2-0-l-auto-hebergement-a-portee-de-clic)
+[![](image://linux-pratique-96.jpg?resize=150)](https://www.linux-pratique.com/2016/07/et-si-vous-passiez-a-lauto-hebergement/)
+[![](image://linux-magazine-208.jpg?resize=150)](https://www.linux-magazine.com/Issues/2018/208/YunoHost)
 * LinuxFr (french):
   - [YunoHost 2.0 : self hosting at click range](https://linuxfr.org/news/yunohost-2-0-l-auto-hebergement-a-portee-de-clic)
   - [Internet cube and YunoHost projects evolutions](https://linuxfr.org/news/evolutions-des-projets-la-brique-internet-et-yunohost-des-versions-2-2-2-4-et-2-5)
