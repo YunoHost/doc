@@ -19,7 +19,9 @@ You should be careful about who you give your server access to. In terms of secu
 
 ## The user portal, or SSO
 
-<center><img src="images/user_panel.png" style="max-width: 650px; border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);"></center>
+[center]
+![](image://user_panel.png)
+[/center]
 
 The user portal, also called the SSO for 'Single Sign On' allows user to browse easily between the different apps they have access to. In particular, the term 'Single Sign On' comes from the fact that user only need to log in the portal to automatically be logged to all apps that require authentication (or at least those who are integrated with the SSO/LDAP, since this is sometimes technically complicated or not possible at all).
 
