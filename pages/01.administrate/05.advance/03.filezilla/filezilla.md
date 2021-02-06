@@ -21,23 +21,23 @@ Install the program and run *Filezilla*.
 
 1. Click the *Site Manager* icon in the upper left to begin.
 
-   ![Main screen of Filezilla](images/filezilla_1.png)
+   ![Main screen of Filezilla](image://filezilla_1.png)
 
 2. Click **New Site** and give a name the server you will be using : *Family* here. Fill the settings as on the screenshot (replace the server adress with your own), and click on **Connect**. (N.B. : if you want to interact with the [custom webapp](https://github.com/YunoHost-Apps/my_webapp_ynh) files, you should use a different user than `admin`. Refer to the custom webapp documentation.)
 
-   ![Site manager screen](images/filezilla_2.png)
+   ![Site manager screen](image://filezilla_2.png)
 
 3. You will get a warning as you connect for the first time to the server. *You can ignore it safely the first time you get it.*
 
-   ![warning about the unknown fingerprint of the server](images/filezilla_3.png)
+   ![warning about the unknown fingerprint of the server](image://filezilla_3.png)
 
 4. Filezilla is now asking the `admin` password to connect to your server.
 
-   ![credential screen asking for the password](images/filezilla_4.png)
+   ![credential screen asking for the password](image://filezilla_4.png)
 
 5. Once bookmarked, your server will be backup up and you will get this screen.
 
-   ![View of the "site manager" with the newly server added](images/filezilla_5.png)
+   ![View of the "site manager" with the newly server added](image://filezilla_5.png)
 
 <div class="alert alert-success">
   <span class="glyphicon glyphicon-chevron-right"></span> You can now use your new bookmark to connect to the server
@@ -49,17 +49,17 @@ Install the program and run *Filezilla*.
 
    The left panel corresponds to your computer. The right panel corresponds to your remote YunoHost server. You can browse folders and drag-and-drop files between the two panels.
 
-   ![view while connected to a remote server](images/filezilla_6.png)
+   ![view while connected to a remote server](image://filezilla_6.png)
 
 2. In the right panel, you can browse to `/home/yunohost.backup/archives/` to find [backup archives](/backup).
 
-   ![path where backups are located on YunoHost](images/filezilla_7.png)
+   ![path where backups are located on YunoHost](image://filezilla_7.png)
 
 <div class="alert alert-warning">
   <span class="glyphicon glyphicon-cloud-download"></span> Be sure to download both the `.tar.gz` and `.json` files.
 </div>
 
-![Copy backups from YunoHost to local computer](images/filezilla_8.png)
+![Copy backups from YunoHost to local computer](image://filezilla_8.png)
 
 ----
 

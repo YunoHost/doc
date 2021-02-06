@@ -7,13 +7,13 @@ routes:
   default: '/app_pluxml'
 ---
 
-![PluXml_logo](images/PluXml_logo.png)
+![PluXml_logo](image://PluXml_logo.png)
 
 PluXml is a blog/CMS storing data in XML and not in a SQL database.
 
 ## Overview
 
-![PluXml_screenshot](images/PluXml_screenshot.jpg)
+![PluXml_screenshot](image://PluXml_screenshot.jpg)
 
 ## Plugins and themes
 

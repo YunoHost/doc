@@ -30,7 +30,7 @@ doable and very worth it if you need it.
 
 Here how it looks like in the admin interface:
 
-![actions admin screenshot](images/config_panel_example.png)
+![actions admin screenshot](image://config_panel_example.png)
 
 ## Usage
 
@@ -104,7 +104,7 @@ name = "stuff"
 
 And a real world example with the rendered admin:
 
-![config_panel_toml_example](images/config_panel_toml_example.png)
+![config_panel_toml_example](image://config_panel_toml_example.png)
 
 As a text format:
 
