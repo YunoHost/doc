@@ -46,7 +46,7 @@ ssh admin@votre.domaine.tld
 ssh admin@yunohost.local
 ```
 
-Si vous avez changer le port SSH, il faut rajouter l'option `-p <numerodeport>` à la commande, par ex. :
+Si vous avez changé le port SSH, il faut rajouter l'option `-p <numerodeport>` à la commande, par ex. :
 
 ```bash
 ssh -p 2244 admin@votre.domaine.tld
