@@ -3,6 +3,8 @@ title: Simple Torrent
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_simple-torrent'
 ---
 
 <img src="/images/simple-torrent_logo.png" width="80px" alt="simple-torrent's logo"> Simple Torrent

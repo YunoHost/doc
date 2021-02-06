@@ -3,6 +3,8 @@ title: How to host yourself?
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/howtohostyourself'
 ---
 
 You can host yourself at home (on a small computer), or on a remote server. Each solution has their pros and cons:

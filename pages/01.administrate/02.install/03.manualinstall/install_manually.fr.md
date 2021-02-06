@@ -3,6 +3,8 @@ title: Installer YunoHost manuellement
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/install_manually'
 ---
 
 <div class="alert alert-info">

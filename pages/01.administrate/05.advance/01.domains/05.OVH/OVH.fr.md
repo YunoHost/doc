@@ -3,6 +3,8 @@ title: Configuration DNS avec OVH
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/OVH'
 ---
 
 Nous allons voir comment configurer le DNS avec [OVH](http://www.ovh.com).

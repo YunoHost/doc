@@ -3,6 +3,8 @@ title: Upgrade your applications
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/app_update'
 ---
 
 Once you installed applications, you may need to upgrade them, sooner or later. 

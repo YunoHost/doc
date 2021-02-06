@@ -3,6 +3,8 @@ title: Galène
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_galene'
 ---
 
 [![Installer Galène avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=galene) [![Integration level](https://dash.yunohost.org/integration/galene.svg)](https://dash.yunohost.org/appci/app/galene)

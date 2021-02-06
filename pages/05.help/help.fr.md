@@ -3,6 +3,8 @@ title: Besoin d'aide ?
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/help'
 ---
 
 <h3>Connectez-vous au salon de support</h3>

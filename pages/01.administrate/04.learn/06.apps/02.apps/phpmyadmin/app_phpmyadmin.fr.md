@@ -3,6 +3,8 @@ title: phpMyAdmin
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_phpmyadmin'
 ---
 
 <img src="/images/phpmyadmin_logo.svg" height="80px" alt="logo de phpmyadmin"> phpMyAdmin

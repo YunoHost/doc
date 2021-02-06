@@ -3,6 +3,8 @@ title: Scripts
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_scripts'
 ---
 
 Un paquet YunoHost doit contenir cinq scripts Shell : `install`, `remove`, `upgrade`, `backup` et `restore`. Un 6ème script `change_url` peut aussi être ajouté de façon optionnelle.

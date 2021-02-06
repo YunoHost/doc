@@ -3,6 +3,8 @@ title: Webtrees
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_webtrees'
 ---
 
 webtrees is the web's leading online collaborative genealogy application.

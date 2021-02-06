@@ -3,6 +3,8 @@ title: KeeWeb
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_keeweb'
 ---
 
 <img src="/images/keeweb_logo.png" height="80px" alt="logo de keeweb"> KeeWeb

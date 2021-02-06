@@ -3,6 +3,8 @@ title: Matomo
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_matomo'
 ---
 
 <img src="/images/matomo_logo.png" height="80px" alt="Matomo's logo"> Matomo

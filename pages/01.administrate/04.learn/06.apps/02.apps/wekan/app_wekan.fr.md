@@ -3,6 +3,8 @@ title: Wekan
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_wekan'
 ---
 
 <img src="/images/wekan_logo.svg" height="80px" alt="logo de wekan"> Wekan

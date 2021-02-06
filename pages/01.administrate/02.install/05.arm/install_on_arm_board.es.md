@@ -3,6 +3,8 @@ title: Instalar YunoHost en una tarjeta ARM
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/install_on_arm_board'
 ---
 
 *Encontrar otros medios de instalar YunoHost **[aquí](/install)**.*

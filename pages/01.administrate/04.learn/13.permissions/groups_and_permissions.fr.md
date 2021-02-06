@@ -3,6 +3,8 @@ title: Groupes et permissions
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/groups_and_permissions'
 ---
 
 Vous pouvez accéder à l'interface de gestion des *groupes et des permissions* depuis la webadmin

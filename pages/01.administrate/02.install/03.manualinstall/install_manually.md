@@ -3,6 +3,8 @@ title: Installing YunoHost manually
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/install_manually'
 ---
 
 ! This procedure only works on **Debian 10** machines <small>(with **kernel >= 3.12**)</small>)

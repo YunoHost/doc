@@ -3,6 +3,8 @@ title: Wiki.js
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_wikijs'
 ---
 
 <img src="/images/wikijs_logo.svg" height="80px" alt="logo de Wiki.js"> Wiki.js

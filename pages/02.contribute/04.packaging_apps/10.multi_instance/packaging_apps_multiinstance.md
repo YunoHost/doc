@@ -3,6 +3,8 @@ title: Multi-instances
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_multiinstance'
 ---
 
 Multi-instance is application capacity to be installed several times.

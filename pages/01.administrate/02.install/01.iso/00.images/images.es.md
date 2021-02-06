@@ -3,6 +3,8 @@ title: Imagenes
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/images'
 ---
 
 <span class="javascriptDisclaimer">

@@ -3,6 +3,8 @@ title: Instalación en un servidor dedicado
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/install_on_vps'
 ---
 
 *Encontrar otros medios de instalar YunoHost **[aquí](/install)**.*

@@ -3,6 +3,8 @@ title: Rédaction de la documentation
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/write_documentation'
 ---
 
 ## Sur le site

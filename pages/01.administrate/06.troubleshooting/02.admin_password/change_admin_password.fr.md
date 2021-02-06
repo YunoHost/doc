@@ -3,6 +3,8 @@ title: Changer le mot de passe d'administration
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/change_admin_password'
 ---
 
 Vous voudrez peut-être changer votre mot de passe d'administrateur pour des raisons de sécurité ou parce que vous l'avez oublié.

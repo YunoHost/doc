@@ -3,6 +3,8 @@ title: Propulser une contribution avec Git
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/doc_use_git'
 ---
 
 Il est bien sûr possible de contribuer directement sur la documentation de YunoHost, mais ce n’est pas la manière la plus pratique de le faire tant pour le·la contributeur·rice que pour la personne qui va injecter votre contribution dans la documentation. Voici un tutoriel pour comprendre et créer une contribution à la documentation de YunoHost en utilisant l’outil [Git (en)](https://git-scm.com/) et [github.com](http://github.com/) qui est le service de forge Git qui héberge et stocke le code source de YunoHost ainsi que sa documentation.

@@ -3,6 +3,8 @@ title: التنصيب على ديبيان
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/install_on_debian'
 ---
 
 <div dir="RTL" align="right" style="direction:rtl;text-align:right;">

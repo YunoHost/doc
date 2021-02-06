@@ -3,6 +3,8 @@ title: Les utilisateurs et le SSO
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/users'
 ---
 
 ## Utilisateurs

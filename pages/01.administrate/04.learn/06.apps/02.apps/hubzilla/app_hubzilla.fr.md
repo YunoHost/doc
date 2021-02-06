@@ -3,6 +3,8 @@ title: Hubzilla
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_hubzilla'
 ---
 
 <img src="/images/hubzilla_logo.png" width="80px" alt="logo de Hubzilla"> Hubzilla

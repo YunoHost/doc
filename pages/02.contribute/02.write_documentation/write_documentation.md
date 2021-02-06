@@ -3,6 +3,8 @@ title: Write documentation
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/write_documentation'
 ---
 
 ## Online

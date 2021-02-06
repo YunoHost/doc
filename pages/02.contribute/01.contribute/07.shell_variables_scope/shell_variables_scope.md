@@ -3,6 +3,8 @@ title: General scope of variables
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/shell_variables_scope'
 ---
 
 Variables exists for the current shell and its children only.  

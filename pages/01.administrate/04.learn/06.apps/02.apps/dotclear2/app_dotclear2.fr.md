@@ -3,6 +3,8 @@ title: Dotclear 2
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_dotclear2'
 ---
 
 <img src="/images/dotclear_logo.png" width="80px" alt="Logo de Dotclear"> Dotclear 2

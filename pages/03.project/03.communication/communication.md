@@ -3,6 +3,8 @@ title: Communication
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/communication'
 ---
 
 ## Talks / conf

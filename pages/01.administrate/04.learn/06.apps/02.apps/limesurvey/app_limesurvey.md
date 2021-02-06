@@ -3,6 +3,8 @@ title: LimeSurvey
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_limesurvey'
 ---
 
 <img src="/images/limesurvey_logo.svg" height="80px" alt="LimeSurvey's logo"> LimeSurvey

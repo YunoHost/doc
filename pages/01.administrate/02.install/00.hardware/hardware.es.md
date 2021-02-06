@@ -3,6 +3,8 @@ title: Hardware
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/hardware'
 ---
 
 YunoHost puede ser instalado en este hardware :

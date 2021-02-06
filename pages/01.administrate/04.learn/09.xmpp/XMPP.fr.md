@@ -3,6 +3,8 @@ title: Chat, VoIP et réseau social avec XMPP
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/XMPP'
 ---
 
 <img src="/images/XMPP_logo.png" width=100>

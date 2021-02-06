@@ -3,6 +3,8 @@ title: Unattented upgrades
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_unattended_upgrades'
 ---
 
 <img src="/images/unattended_upgrades_logo.svg" height="80px" alt="logo de unattended_upgrades"> Unattended_upgrades

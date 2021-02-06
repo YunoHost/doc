@@ -3,6 +3,8 @@ title: Dolibarr
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_dolibarr'
 ---
 
 <img src="/images/dolibarr_logo.png" width="80px" alt="logo de Dolibarr"> Dolibarr

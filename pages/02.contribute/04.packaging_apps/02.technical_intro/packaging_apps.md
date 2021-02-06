@@ -3,6 +3,8 @@ title: App packaging
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps'
 ---
 
 <img src="/images/yunohost_package.png" width=100/>

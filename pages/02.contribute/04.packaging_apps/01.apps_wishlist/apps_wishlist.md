@@ -3,6 +3,8 @@ title: Apps wishlist
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/apps_wishlist'
 ---
 
 The following list is a compiled wishlist of applications that would be nice-to-have.

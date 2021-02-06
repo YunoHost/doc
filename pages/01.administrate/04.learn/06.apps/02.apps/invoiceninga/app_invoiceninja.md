@@ -3,6 +3,8 @@ title: Invoice Ninja
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_invoiceninja'
 ---
 
 <img src="/images/invoiceninja_logo.png" height="80px" alt="Invoice Ninja logo"> Invoice Ninja

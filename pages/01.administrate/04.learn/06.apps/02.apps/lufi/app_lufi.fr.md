@@ -3,6 +3,8 @@ title: Lufi
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_lufi'
 ---
 
 <img src="/images/lufi_logo.svg" width="80px" alt="logo de Lufi"> Lufi

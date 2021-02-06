@@ -3,6 +3,8 @@ title: Nextcloud
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_nextcloud'
 ---
 
 <img src="/images/nextcloud_logo.png" alt="logo de Nextcloud"> Nextcloud  

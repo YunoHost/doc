@@ -3,6 +3,8 @@ title: Gotify
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_gotify'
 ---
 
 <img src="/images/gotify_logo.png" width="80px" alt="Gotify's logo"> Gotify

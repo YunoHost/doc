@@ -3,6 +3,8 @@ title: JupyterLab
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_jupyterlab'
 ---
 
 <img src="/images/logo-jupyterhub.png" height="80px" alt="Logo de JupyterHub"> JupyterLab

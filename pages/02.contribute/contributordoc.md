@@ -3,6 +3,8 @@ title: Contribute
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/contributordoc'
 ---
 
 * [General ways of contributing to YunoHost](/contribute)

@@ -3,6 +3,8 @@ title: Concret5
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_concrete5'
 ---
 
 <img src="/images/concrete5_logo.png" height="80px" alt="Concrete5's logo"> Concret5

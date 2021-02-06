@@ -3,6 +3,8 @@ title: PluXml
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_pluxml'
 ---
 
 ![PluXml_logo](images/PluXml_logo.png)

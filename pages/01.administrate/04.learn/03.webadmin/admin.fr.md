@@ -3,6 +3,8 @@ title: L'interface d'administration Web
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/admin'
 ---
 
 YunoHost est fourni avec une interface graphique d’administration. L’autre méthode est d’utiliser la [ligne de commande](/commandline).

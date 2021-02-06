@@ -3,6 +3,8 @@ title: Slingcode
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_slingcode'
 ---
 
 <img src="/images/slingcode_logo.svg" height="80px" alt="logo de Slingcode"> Slingcode

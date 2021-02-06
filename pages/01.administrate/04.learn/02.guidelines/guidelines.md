@@ -3,6 +3,8 @@ title: Advices and guidelines
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/guidelines'
 ---
 
 This page lists a few advices and guidelines which every YunoHost administrator should be aware to take care of a YunoHost server :).

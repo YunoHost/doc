@@ -3,6 +3,8 @@ title: Fournisseurs d'accès à Internet
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/isp'
 ---
 
 <a class="btn btn-lg btn-default" href="/isp_box_config"> Configuration générale box</a>

@@ -3,6 +3,8 @@ title: Packaging d'applications : les bonnes pratiques
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_guidelines'
 ---
 
 <div class="alert alert-danger">

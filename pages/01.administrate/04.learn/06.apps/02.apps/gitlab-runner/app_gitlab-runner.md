@@ -3,6 +3,8 @@ title: Gitlab Runner
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_gitlab-runner'
 ---
 
 <img src="/images/gitlab-runner_logo.png" height="80px" alt="GitLab Runner's logo"> GitLab Runner

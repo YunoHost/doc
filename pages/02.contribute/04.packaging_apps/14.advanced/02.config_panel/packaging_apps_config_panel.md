@@ -3,6 +3,8 @@ title: Configuration panel
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_config_panel'
 ---
 
 <div class="alert alert-warning">For now, all those features are <b>EXPERIMENTAL</b>

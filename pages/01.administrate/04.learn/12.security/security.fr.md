@@ -3,6 +3,8 @@ title: Sécurité
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/security'
 ---
 
 YunoHost a été développé dans l’optique de fournir une sécurité maximale tout en restant accessible et facilement installable.

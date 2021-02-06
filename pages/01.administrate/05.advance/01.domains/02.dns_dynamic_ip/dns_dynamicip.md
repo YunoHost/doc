@@ -3,6 +3,8 @@ title: DNS with a dynamic IP
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/dns_dynamicip'
 ---
 
 <div class="alert alert-warning">Before going further, make sure your global IP address is dynamic with: [ip.yunohost.org](http://ip.yunohost.org/). The global IP address of your box changes almost every day.</div>

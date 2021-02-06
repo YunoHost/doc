@@ -3,6 +3,8 @@ title: Navidrome
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_navidrome'
 ---
 
 <img src="/images/navidrome_logo.png" height="80px" alt="logo de Navidrome"> Navidrome

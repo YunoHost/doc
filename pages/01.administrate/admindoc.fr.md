@@ -3,6 +3,8 @@ title: Administrer
 template: chapter
 taxonomy:
     category: docs
+routes:
+  default: '/admindoc'
 ---
 
 ### Administrer

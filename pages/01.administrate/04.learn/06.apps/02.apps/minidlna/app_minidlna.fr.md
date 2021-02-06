@@ -3,6 +3,8 @@ title: MiniDLNA (Ready Media)
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_minidlna'
 ---
 
 <img src="/images/yunohost_package.png" height="80px" alt="Package"> MiniDLNA (Ready Media)

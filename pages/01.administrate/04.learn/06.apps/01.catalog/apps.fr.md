@@ -3,6 +3,8 @@ title: Catalogue d'applications
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/apps'
 ---
 
 <span class="javascriptDisclaimer">

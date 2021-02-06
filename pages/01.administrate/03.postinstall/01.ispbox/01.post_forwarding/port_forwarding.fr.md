@@ -3,6 +3,8 @@ title: Redirection de ports
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/port_forwarding'
 ---
 
 Le schéma ci-dessous tente d'expliquer brièvement le rôle de la redirection des

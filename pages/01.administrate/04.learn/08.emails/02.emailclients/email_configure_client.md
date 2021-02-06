@@ -3,6 +3,8 @@ title: Configuring email client
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/email_configure_client'
 ---
 
 You can fetch and send emails using your YunoHost instance from desktop email clients such as Mozilla Thunderbird or on your smartphone with applications like K-9 Mail.

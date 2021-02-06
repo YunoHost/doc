@@ -3,6 +3,8 @@ title: YunoHost pour les organisations à but non lucratif
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/use_case_non-profit_organisations'
 ---
 
 ## Table des matières

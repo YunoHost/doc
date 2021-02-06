@@ -3,6 +3,8 @@ title: Bibliogram
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_bibliogram'
 ---
 
 <img src="/images/logo-bibliogram.png" height="80px" alt="Bibliogram Logo"> Bibliogram

@@ -3,6 +3,8 @@ title: Apps list
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/appsdoc'
 ---
 
 - [Adminer](app_adminer)

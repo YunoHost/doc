@@ -3,6 +3,8 @@ title: Security team
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/security_team'
 ---
 
 Contact the security team by mail: `security@yunohost.org`.

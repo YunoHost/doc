@@ -3,6 +3,8 @@ title: Firefox Sync
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_ffsync'
 ---
 
 <img src="/images/ffsync_logo.png" width="80px" alt="Firefox Sync's logo"> Firefox Sync

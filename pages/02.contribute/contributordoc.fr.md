@@ -3,6 +3,8 @@ title: Guide du contributeur
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/contributordoc'
 ---
 
 * [Liste des façons de contribuer à YunoHost](/contribute)

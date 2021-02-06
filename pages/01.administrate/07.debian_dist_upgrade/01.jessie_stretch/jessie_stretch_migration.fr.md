@@ -3,6 +3,8 @@ title: Migrer vers Stretch
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/jessie_stretch_migration'
 ---
 
 L'objectif cette page est de décrire le processus de migration d'une instance en YunoHost 2.7.x (tournant sous Debian Jessie/8.x) vers YunoHost 3.0 (tournant sous Debian Stretch/9.x)

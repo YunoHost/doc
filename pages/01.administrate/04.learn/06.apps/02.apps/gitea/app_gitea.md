@@ -3,6 +3,8 @@ title: Gitea
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_gitea'
 ---
 
 <img src="/images/gitea_logo.png" width="80px" alt="Gitea's logo"> Gitea

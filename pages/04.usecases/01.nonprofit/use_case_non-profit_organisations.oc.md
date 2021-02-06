@@ -3,6 +3,8 @@ title: YunoHost per organizacion sens tòca lucrativa
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/use_case_non-profit_organisations'
 ---
 
 ## Ensenhador

@@ -3,6 +3,8 @@ title: Certificate
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/certificate'
 ---
 
 Certificates are used to guarantee the confidentiality and authenticity of the communication between a web browser and your server. In particular, they protect against attackers trying to impersonate your server.

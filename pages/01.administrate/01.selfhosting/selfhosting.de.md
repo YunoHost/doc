@@ -3,6 +3,8 @@ title: Self-Hosting
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/selfhosting'
 ---
 
 Self-Hosting ist das Hosten von Daten oder Software auf eigener IT-Infrastruktur.

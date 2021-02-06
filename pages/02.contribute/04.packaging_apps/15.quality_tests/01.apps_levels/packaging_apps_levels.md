@@ -3,6 +3,8 @@ title: Quality levels of YunoHost application packages
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_levels'
 ---
 
 In order to facilitate the packaging of applications by providing successive steps to achieve, each package is assigned a quality level, from 0 to 10.  

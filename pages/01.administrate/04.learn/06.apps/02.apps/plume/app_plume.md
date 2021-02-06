@@ -3,6 +3,8 @@ title: Plume
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_plume'
 ---
 
 <img src="/images/plume_logo.svg" height="80px" alt="plume's logo"> Plume

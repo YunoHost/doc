@@ -3,6 +3,8 @@ title: Guide Markdown
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/doc_markdown_guide'
 ---
 
 Markdown is a markup language created in 2004, many add-ons developing the possibilities of this language exist. The objective of this guide is to aim for the exhaustiveness of the possibilities of this formatting language within the framework of the YunoHost documentation and not Markdown languages in general.

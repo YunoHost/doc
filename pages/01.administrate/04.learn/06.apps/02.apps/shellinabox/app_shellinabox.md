@@ -3,6 +3,8 @@ title: Shellinabox
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_shellinabox'
 ---
 
 <img src="/images/yunohost_package.png" height="80px" alt="Package"> Shellinabox

@@ -3,6 +3,8 @@ title: Collabora
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_collabora'
 ---
 
 <img src="/images/collabora_logo.png" height="80px" alt="collabora's logo"> Collabora

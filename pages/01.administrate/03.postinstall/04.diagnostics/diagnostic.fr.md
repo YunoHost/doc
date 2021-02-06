@@ -3,6 +3,8 @@ title: Diagnostic du bon fonctionnement de YunoHost
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/diagnostic'
 ---
 
 Pour vérifier que tous les aspects critiques de votre serveur sont correctement

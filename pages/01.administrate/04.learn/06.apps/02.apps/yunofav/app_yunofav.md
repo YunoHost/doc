@@ -3,6 +3,8 @@ title: Yunofav
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_yunofav'
 ---
 
 ### Page of favorite links for YunoHost

@@ -3,6 +3,8 @@ title: DNS zone configuration
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/dns_config'
 ---
 
 DNS (domain name system) is a system that converts human-readable addresses

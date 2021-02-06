@@ -3,6 +3,8 @@ title: Kresus
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_kresus'
 ---
 
 <img src="/images/kresus_logo.png" height="80px" alt="kresus's logo"> Kresus

@@ -3,6 +3,8 @@ title: My_webapp
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_my_webapp'
 ---
 
 En complément du Readme.md de l'application, voici des astuces utiles.

@@ -3,6 +3,8 @@ title: Grav
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_grav'
 ---
 
 <img src="/images/grav_logo.png" width="80px" alt="logo de Grav"> Grav

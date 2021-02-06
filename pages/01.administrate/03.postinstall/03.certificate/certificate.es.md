@@ -3,6 +3,8 @@ title: Certificado
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/certificate'
 ---
 
 Los certificados sirven para garantizar la confidencialidad y la autenticidad de las comunicaciones entre un navegador web y tu servidor. En particular, permite proteger los visitantes contra atacantes que podrían intentar de robar la identidad del servidor.

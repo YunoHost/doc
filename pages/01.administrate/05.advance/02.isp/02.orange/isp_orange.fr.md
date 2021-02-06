@@ -3,6 +3,8 @@ title: Orange
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/isp_orange'
 ---
 
 *Trouvez la liste d’autres fournisseurs d’accès Internet **[ici](/isp)**.*
