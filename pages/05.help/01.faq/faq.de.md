@@ -29,7 +29,7 @@ YunoHost könnte eine Distribution oder ein Betriebssystem genannt werden, aber 
 
 Zum Beispiel, wenn Sie Wordpress installieren möchten, müssten Sie einige Befehle eintippen, um Benutzer zu generieren, einen Webserver einrichten, einen SQL Server einrichten, das Wordpress Archiv herunterladen, entpacken, den Webserver konfigurieren, die SQL Datenbank konfigurieren und schließlich Wordpress einrichten. YunoHost übernimmt all das für Sie, zähmt das technische Chaos und "tippt alle Befehle für Sie", sodass Sie sich auf das konzentrieren können, was wirklich wichtig ist.
 
-Mehr Informationen finden Sie [hier](whatsyunohost) !
+Mehr Informationen finden Sie [hier](/whatsyunohost) !
 
 
 #### Kann ich meine eigene, persönliche Internetseite mit YunoHost betreiben ?
@@ -68,7 +68,7 @@ Wenn Ihnen das möglich ist, können Sie auch gerne Sachspenden leisten (ein Tei
 
 #### Wie kann ich zum Projekt beitragen ?
 
-Es gibt viele Wege [zum Projekt beizutragen](contribute) :).
+Es gibt viele Wege [zum Projekt beizutragen](/contribute) :).
 
 Zögern Sie nicht, mit uns über Ihre Ideen zu sprechen!
 
@@ -77,7 +77,7 @@ Es ist ein weit verbreitetes Missverständnis, dass Neulinge bei offenen Softwar
 
 #### Was sind YunoHost organisatorische Grundsätze ?
 
-Das beschreiben wir in [diesem Dokument](project_organization) :).
+Das beschreiben wir in [diesem Dokument](/project_organization) :).
 
 
 #### Werdet ihr YunoHosts für [Lieblingsdistribution hier einfügen] portieren ?

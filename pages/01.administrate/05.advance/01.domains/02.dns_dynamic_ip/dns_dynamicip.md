@@ -25,14 +25,14 @@ Here are sites which offer a DynDNS service free of charge:
 Register to one of them. It should provide you with one (or more) IP address to reach the service, and a login (that you may be able to self-define).
 
 #### 2. Move the DNS zones
-Copy the [DNS zones](dns_config), except for the NS fields, from the [registrar](/registrar) where you bought your domain name from to the dynamic DNS service you registrer at in step 1.
+Copy the [DNS zones](/dns_config), except for the NS fields, from the [registrar](/registrar) where you bought your domain name from to the dynamic DNS service you registrer at in step 1.
 
 #### 3. Switch the management of your domain name to the dynamic DNS server
 This step consists in declaring to your [registrar](/registrar) that the DNS service will now be managed by the DynDNS service provider. 
 
 For this, fisrt declare in the NS field(s) the IP address provided by the DynDNS service.
 
-Then, remove any other item in the [DNS zones](dns_config) (except the previous NS fields), from the [registrar](/registrar).
+Then, remove any other item in the [DNS zones](/dns_config) (except the previous NS fields), from the [registrar](/registrar).
 
 #### 4. Configure the client
 This client could be your ISP-box, or a package installed on your server, such as `ddclient`.

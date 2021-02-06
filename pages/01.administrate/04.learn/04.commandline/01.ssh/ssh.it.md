@@ -48,7 +48,7 @@ Se conosci esclusivamente l'indirizzo IP del tuo server:
 ssh admin@111.222.333.444
 ```
 
-Dopo di che dovrai inserire la password di amministratore creata nella [procedura di postinstallazione](postinstall).
+Dopo di che dovrai inserire la password di amministratore creata nella [procedura di postinstallazione](/postinstall).
 
 Se invece hai configurato il DNS (o hai modificato il file `/etc/hosts`), puoi semplicemente usare il tuo nome di dominio:
 

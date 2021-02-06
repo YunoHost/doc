@@ -35,4 +35,4 @@ Access to apps can be restricted to some users only. This can be configured via 
 
 ## Packaging applications 
 
-If you want to learn or contribute to app packaging, please check the [contributor documentation](contributordoc). 
+If you want to learn or contribute to app packaging, please check the [contributor documentation](/contributordoc). 

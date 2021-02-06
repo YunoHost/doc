@@ -9,7 +9,7 @@ taxonomy:
     * [Was ist Self-Hosting](/selfhosting)
     * [Was ist YunoHost](/whatsyunohost)
     * [Probiere YunoHost aus](/try)
-    * [Wie du selber hostest](howtohostyourself)
+    * [Wie du selber hostest](/howtohostyourself)
         * [Wähle die Hardware](/hardware)
         * [Über die Freundlichkeit von Internet-Service-Providern](/isp)
 * [YunoHost installieren](/install)

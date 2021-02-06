@@ -43,7 +43,7 @@ This is the first domain name linked to your YunoHost server, but also the one w
 
 * If you do know what **DNS** is, you probably want to configure your own domain name here. In this case, please refer to the [DNS page](/dns) page for more informations.
 
-* If you don't own a domain name and don't want a **.nohost.me**, **.noho.st** or **.ynh.fr**, you can use a local domain. More information on how to setup a local domain can be found [here](dns_local_network).
+* If you don't own a domain name and don't want a **.nohost.me**, **.noho.st** or **.ynh.fr**, you can use a local domain. More information on how to setup a local domain can be found [here](/dns_local_network).
 
 ### Administration password
 
@@ -61,14 +61,14 @@ postinstall) or 'YunoHost has been correctly configured', then congratulations!
 ### What now ?
 
 - If you're self-hosting at home and without a VPN, you need to [make sure to
-  correctly forward ports on your router/Internet box](isp_box_config) ;
+  correctly forward ports on your router/Internet box](/isp_box_config) ;
 - If you're using your own domain name (i.e. not a .nohost.me / .noho.st), you
   need to [configure it according to the recommended DNS
-  configuration](dns_config) ;
+  configuration](/dns_config) ;
 - If you cannot configure your domain name yet (because you didn't register it
   yet, or because this is a test domain), see last paragraph
-  [here](dns_local_network) for a workaround ;
-- Don't be too afraid of the [certificate warning](certificate), you'll probably
+  [here](/dns_local_network) for a workaround ;
+- Don't be too afraid of the [certificate warning](/certificate), you'll probably
   be able to install a Let's Encrypt certificate :).
-- Have a look at [the available apps](apps) !
+- Have a look at [the available apps](/apps) !
 

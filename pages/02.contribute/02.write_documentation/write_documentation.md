@@ -23,4 +23,4 @@ Because the online editor doesn't support uploading files, using Git is the pref
 
 ## Syntax
 
-This page uses the markdown syntax, please refer to the [documentation](doc_markdown_guide) for further information.
+This page uses the markdown syntax, please refer to the [documentation](/doc_markdown_guide) for further information.

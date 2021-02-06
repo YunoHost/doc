@@ -13,7 +13,7 @@ taxonomy:
 
 - [Liens utiles](#liens-utiles)
 
-SOGo est un service de webmail pour votre serveur email, c'est une alternative à [RoundCube](app_roundcube). Il permet aussi la gestion des agendas et contacts présents sur le serveur.
+SOGo est un service de webmail pour votre serveur email, c'est une alternative à [RoundCube](/app_roundcube). Il permet aussi la gestion des agendas et contacts présents sur le serveur.
 
 ## Quelques liens utiles
 

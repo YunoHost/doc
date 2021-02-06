@@ -14,16 +14,16 @@ The mail stack includes a SMTP server (postfix), an IMAP server (Dovecot), an an
 Email is a complicated ecosystem and quite a few details can prevent it from working properly.
 
 To validate your setup:
-- if you are self-hosting at home and not using a VPN, ensure [your ISP won't block port 25](isp) ;
-- route ports according to [this documentation](isp_box_config) ;
-- carefully configure mail DNS records according to [this documentation](dns_config) ;
+- if you are self-hosting at home and not using a VPN, ensure [your ISP won't block port 25](/isp) ;
+- route ports according to [this documentation](/isp_box_config) ;
+- carefully configure mail DNS records according to [this documentation](/dns_config) ;
 - test your setup using [Mail-tester.com](https://mail-tester.com) <small>(be careful : only 3 tests per domain per day are allowed)</small> ;
 
 A score of at least 8~9/10 is a reasonnable goal.
 
 ## Email clients
 
-To interact with the email sever (read and send emails), you can either install a webclient such as Roundcube or Rainloop on your server - or configure a desktop/mobile client as described in [this page](email_configure_client).
+To interact with the email sever (read and send emails), you can either install a webclient such as Roundcube or Rainloop on your server - or configure a desktop/mobile client as described in [this page](/email_configure_client).
 
 Desktop and mobile clients have the advantage of copying your emails to the device, allowing offline viewing and relative protection against possible hardware failures of your server.
 
@@ -44,8 +44,8 @@ To ensure that your servers’ IP address isn’t into this blacklists and to re
 
 ## Migrating email from an email provider to a YunoHost instance
 
-See [this page](email_migration).
+See [this page](/email_migration).
 
 ## Configuring SMTP relay
 
-See [this page](email_configure_relay).
+See [this page](/email_configure_relay).

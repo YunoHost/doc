@@ -29,7 +29,7 @@ YunoHost may be called a distribution or an operating system, but it's actually 
 
 For instance, if you wanted to install WordPress, you would need to type a bunch of commands to create some users, setup a web server, setup a SQL server, download the WordPress archive, uncompress it, configure the web server, configure the SQL database, and finally configure WordPress. YunoHost handles the technical details and "types all these commands for you", so that you can focus on what really matters.
 
-More info on [this page](whatsyunohost)!
+More info on [this page](/whatsyunohost)!
 
 #### Can I host my own personal website with YunoHost?
 
@@ -65,7 +65,7 @@ If you can, you can also make in-kind contributions, like servers (some of our i
 
 #### How can I contribute to the project?
 
-There are [many ways to contribute](contribute) :).
+There are [many ways to contribute](/contribute) :).
 
 Don't hesitate to come talk to us about your ideas!
 
@@ -74,7 +74,7 @@ A common misconception for newcomers in free software projects is to think that 
 
 #### What's YunoHost's political model?
 
-It is described in [this document](project_organization) :).
+It is described in [this document](/project_organization) :).
 
 
 #### Will you port YunoHost to [insert favorite distro]?

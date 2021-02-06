@@ -111,7 +111,7 @@ Here is a list of best practices for application install scripts:
 * scripts should be tested on Debian Buster 32 bits, 64 bits and ARM architectures;
 * backup and restore scripts should be present and functional.
 
-To be define the quality of a package, it'll obtained a [level](/packaging_apps_levels), determined according to somes criteria of installation and according to respect to [package guidelines](packaging_apps_guidelines).
+To be define the quality of a package, it'll obtained a [level](/packaging_apps_levels), determined according to somes criteria of installation and according to respect to [package guidelines](/packaging_apps_guidelines).
 
 ### Package script checker
 <a class="btn btn-lg btn-default" href="https://github.com/YunoHost/package_checker">Package checker</a>
