@@ -7,23 +7,23 @@ routes:
   default: '/whatsyunohost'
 ---
 
-<img src="/images/YunoHost_logo_vertical.png" width=400>
+![](image://YunoHost_logo_vertical.png?resize=400)
 
 YunoHost ist ein **Betriebssystem**, das auf die einfachste Verwaltung eines **Servers** abzielt und daher das [Self-Hosting](/selfhosting) demokratisiert, wobei sichergestellt wird, dass es zuverlässig, sicher, ethisch einwandfrei und leichtgewichtig bleibt. Es ist ein Copylefted-Libre-Softwareprojekt, das ausschließlich von Freiwilligen betrieben wird. Technisch gesehen kann es als eine Distribution angesehen werden, die auf [Debian GNU/Linux](https://debian.org) basiert und auf [vielen Arten von Hardware](/install) installiert werden kann.
 
 ## Features
 
-- <img src="/images/icon-debian.png" width=32 style="margin-right:5px"> Basierend auf Debian ;
-- <img src="/images/icon-tools.png" width=32 style="margin-right:5px" width=64> Verwalten Sie Ihren Server über eine **benutzerfreundliche Weboberfläche** ;
-- <img src="/images/icon-package.png" width=32 style="margin-right:5px"> Bereitstellen von **Apps mit nur wenigen Klicks** ;
-- <img src="/images/icon-users.png" width=32 style="margin-right:5px"> Verwalten Sie **Benutzer** <small>(basierend auf LDAP)</small> ;
-- <img src="/images/icon-globe.png" width=32 style="margin-right:5px"> Verwalten Sie Ihre **Domainnamen** ;
-- <img src="/images/icon-medic.png" width=32 style="margin-right:5px"> Erstellen und Wiederherstellen von **Backups** ;
-- <img src="/images/icon-door.png" width=32 style="margin-right:5px"> Stellen Sie über das **Benutzerportal** <small>(NGINX, SSOwat)</small> gleichzeitig eine Verbindung zu allen Apps her ;
-- <img src="/images/icon-mail.png" width=32 style="margin-right:5px"> Enthält einen **vollständigen E-Mail-Stack** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
-- <img src="/images/icon-messaging.png" width=32 style="margin-right:5px"> … sowie **einen Instant Messaging Server** <small>(XMPP)</small> ;
-- <img src="/images/icon-lock.png" width=32 style="margin-right:5px"> Verwaltet **SSL-Zertifikate** <small>(basierend auf Let's Encrypt)</small> ;
-- <img src="/images/icon-shield.png" width=32 style="margin-right:5px"> … und **Sicherheitssysteme** <small>(fail2ban, yunohost-firewall)</small> ;
+- ![](image://icon-debian.png?resize=32&classes=inline) Basierend auf Debian ;
+- ![](image://icon-tools.png?resize=32&classes=inline) Verwalten Sie Ihren Server über eine **benutzerfreundliche Weboberfläche** ;
+- ![](image://icon-package.png?resize=32&classes=inline) Bereitstellen von **Apps mit nur wenigen Klicks** ;
+- ![](image://icon-users.png?resize=32&classes=inline) Verwalten Sie **Benutzer** <small>(basierend auf LDAP)</small> ;
+- ![](image://icon-globe.png?resize=32&classes=inline) Verwalten Sie Ihre **Domainnamen** ;
+- ![](image://icon-medic.png?resize=32&classes=inline) Erstellen und Wiederherstellen von **Backups** ;
+- ![](image://icon-door.png?resize=32&classes=inline) Stellen Sie über das **Benutzerportal** <small>(NGINX, SSOwat)</small> gleichzeitig eine Verbindung zu allen Apps her ;
+- ![](image://icon-mail.png?resize=32&classes=inline) Enthält einen **vollständigen E-Mail-Stack** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
+- ![](image://icon-messaging.png?resize=32&classes=inline) … sowie **einen Instant Messaging Server** <small>(XMPP)</small> ;
+- ![](image://icon-lock.png?resize=32&classes=inline) Verwaltet **SSL-Zertifikate** <small>(basierend auf Let's Encrypt)</small> ;
+- ![](image://icon-shield.png?resize=32&classes=inline) … und **Sicherheitssysteme** <small>(fail2ban, yunohost-firewall)</small> ;
 
 ## Ursprung
 
@@ -36,7 +36,7 @@ Alles, was benötigt wurde, war eine Administrationsoberfläche für Beudbeud's 
 Angesichts der wachsenden Begeisterung für YunoHost und für das Selbst-Hosting im Allgemeinen beschlossen die ursprünglichen Entwickler zusammen mit neuen Mitarbeitern, mit der Arbeit an Version 2 zu beginnen, einer erweiterbaren, leistungsfähigeren, benutzerfreundlicheren und damit einfacheren Version eine schöne Tasse Fairtrade-Kaffee für die Elfen von Lappland.
 
 Der Name **YunoHost** stammt aus dem Jargon "Y U NO Host". Das [Internet meme](https://en.wikipedia.org/wiki/Internet_meme) sollte dies veranschaulichen:
-<div class="text-center"><img style="border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" src="/images/dude_yunohost.jpg"></div>
+![](image://dude_yunohost.jpg)
 
 ## Was YunoHost nicht ist?
 
@@ -50,9 +50,8 @@ Sie können Ihre Freunde, Ihre Familie und Ihr Unternehmen sicher und problemlos
 
 Schwarz und Weiss YunoHost PNG logo by ToZz (400 × 400 px):
 
-<a href="/images/ynh_logo_black_300dpi.png"><img src="/images/ynh_logo_black_300dpi.png" width=220></a>
-
-<a href="/images/ynh_logo_white_300dpi.png"><img src="/images/ynh_logo_white_300dpi.png" width=220></a>
+[![](image://ynh_logo_black_300dpi.png?resize=220)](image://ynh_logo_black_300dpi.png)
+[![](image://ynh_logo_white_300dpi.png?resize=220)](image://ynh_logo_white_300dpi.png)
 
 Zum download Klicken.
 

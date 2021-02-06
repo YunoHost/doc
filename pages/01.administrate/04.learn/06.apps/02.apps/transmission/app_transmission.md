@@ -7,7 +7,7 @@ routes:
   default: '/app_transmission'
 ---
 
-<img src="/images/transmission.png"> Transmission
+![Transmission's logo](image://transmission.png)
 
 ### What is Transmission?
 

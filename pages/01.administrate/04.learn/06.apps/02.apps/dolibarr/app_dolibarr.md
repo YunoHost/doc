@@ -7,7 +7,7 @@ routes:
   default: '/app_dolibarr'
 ---
 
-<img src="/images/dolibarr_logo.png" width="80px" alt="Dolibarr's logo"> Dolibarr
+![Dolibarr's logo](image://dolibarr_logo.png?width=80)
 
 [![Install Dolibarr with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=dolibarr) [![Integration level](https://dash.yunohost.org/integration/dolibarr.svg)](https://dash.yunohost.org/appci/app/dolibarr)
 

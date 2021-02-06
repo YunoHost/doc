@@ -15,7 +15,7 @@ routes:
 
 <br>
 
-<div class="text-center"><img src="/images/boot_screen.png">
+![](image://boot_screen.png)
 
 <p markdown="1">
 *Nota el valor `IP` visible en la pantalla : esto es **la dirección IP local** de tu servidor.*

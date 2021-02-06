@@ -7,7 +7,7 @@ routes:
   default: '/app_haste'
 ---
 
-<img src="/images/yunohost_package.png" height="80px" alt="Package"> Haste
+![Haste's logo](image://yunohost_package.png?height=80)
 
 [![Install Haste with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=haste) [![Integration level](https://dash.yunohost.org/integration/haste.svg)](https://dash.yunohost.org/appci/app/haste)
 

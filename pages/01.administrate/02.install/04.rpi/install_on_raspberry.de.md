@@ -9,10 +9,8 @@ routes:
 
 *Alle Arten YunoHost zu installieren findest du **[hier](/install)**.*
 
-<center>
-<img src="/images/raspberrypi.jpg" width=300 style="padding-bottom:20px">
-<img src="/images/micro-sd-card.jpg">
-</center>
+![](image://raspberrypi.jpg?resize=300)
+![](image://micro-sd-card.jpg)
 
 <div class="alert alert-info" markdown="1">
 Vor der Einrichtung eines Servers zuhause ist es empfehlenswert [mögliche Einschränkungen deines Providers](/isp) zu kennen. Wenn er zu viele Einschränkungen vornimmt, kann es sinnvoll sein ein VPN zu nutzen um diese zum umgehen.

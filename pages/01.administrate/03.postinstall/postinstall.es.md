@@ -21,7 +21,7 @@ Durante la primera visita, encontrarás muy probablemente una advertencia de seg
 
 Luego, llegas en esta página :
 
-<img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="/images/postinstall_web.png">
+![](image://postinstall_web.png)
 
 *<p class="text-muted">Vistazo de la post-instalación Web</p>*
 
@@ -29,7 +29,7 @@ Luego, llegas en esta página :
 
 También puedes acceder a la post-instalación entrando el comando `yunohost tools postinstall` directamente en el servidor o [en SSH](/ssh).
 
-<img style="max-width:100%;border-radius: 5px;border: 1px solid rgba(0,0,0,0.15);box-shadow: 0 5px 15px rgba(0,0,0,0.35);" src="/images/postinstall_cli.png">
+![](image://postinstall_cli.png)
 
 *<p class="text-muted">Vistazo de la post-instalación con línea de comando</p>*
 

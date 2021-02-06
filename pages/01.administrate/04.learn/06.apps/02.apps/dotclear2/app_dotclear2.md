@@ -7,7 +7,7 @@ routes:
   default: '/app_dotclear2'
 ---
 
-<img src="/images/dotclear_logo.png" width="80px" alt="Dotclear's logo"> Dotclear 2
+![Dotclear's logo](image://dotclear_logo.png?width=80)
 
 [![Install dotclear2 with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=dotclear2) [![Integration level](https://dash.yunohost.org/integration/dotclear2.svg)](https://dash.yunohost.org/appci/app/dotclear2)
 

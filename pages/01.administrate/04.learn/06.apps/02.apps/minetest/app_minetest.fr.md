@@ -7,7 +7,7 @@ routes:
   default: '/app_minetest'
 ---
 
-<img src="/images/minetest_logo.svg" height="80px" alt="logo de minetest"> Minetest
+![logo de minetest](image://minetest_logo.svg?height=80)
 
 [![Install minetest with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=minetest) [![Integration level](https://dash.yunohost.org/integration/minetest.svg)](https://dash.yunohost.org/appci/app/minetest)
 

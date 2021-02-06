@@ -7,7 +7,7 @@ routes:
   default: '/XMPP'
 ---
 
-<img src="/images/XMPP_logo.png" width=100>
+![](image://XMPP_logo.png?resize=100)
 
 YunoHost est installé par défaut avec un serveur de messagerie instantanée Metronome qui implémente le [protocole XMPP](https://fr.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol) (anciennement connu sous le nom Jabber).
 

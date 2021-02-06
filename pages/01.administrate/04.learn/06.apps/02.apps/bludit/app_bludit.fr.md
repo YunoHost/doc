@@ -7,7 +7,7 @@ routes:
   default: '/app_bludit'
 ---
 
-<img src="/images/bludit_logo.png" width="80px" alt="logo de Bludit> Bludit
+![](image://bludit_logo.png?width=80)
 
 [![Install Bludit with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=bludit) [![Integration level](https://dash.yunohost.org/integration/bludit.svg)](https://dash.yunohost.org/appci/app/bludit)
 

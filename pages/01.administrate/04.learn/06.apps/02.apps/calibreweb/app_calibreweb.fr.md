@@ -7,7 +7,7 @@ routes:
   default: '/app_calibreweb'
 ---
 
-<img src="/images/yunohost_package.png" height="80px" alt="Package"> Calibre-Web
+![Calibre-Web](image://yunohost_package.png?height=80)
 
 [![Install calibreweb with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=calibreweb) [![Integration level](https://dash.yunohost.org/integration/calibreweb.svg)](https://ci-apps.yunohost.org/jenkins/job/calibreweb%20%28Community%29/lastBuild/consoleFull)
 

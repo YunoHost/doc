@@ -7,7 +7,7 @@ routes:
   default: '/app_roundcube'
 ---
 
-<img src="/images/roundcube_logo.svg" height="80px" alt="roundcube's logo"> Roundcube
+![roundcube's logo](image://roundcube_logo.svg?height=80)
 
 [![Install Roundcube with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=roundcube) [![Integration level](https://dash.yunohost.org/integration/roundcube.svg)](https://dash.yunohost.org/appci/app/roundcube)
 

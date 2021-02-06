@@ -7,7 +7,7 @@ routes:
   default: '/app_fluxbb'
 ---
 
-<img src="/images/fluxbb_logo.png" height="80px" alt="logo de FluxBB"> FluxBB
+![logo de FluxBB](image://fluxbb_logo.png?height=80)
 
 [![Install FluxBB with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=fluxbb) [![Integration level](https://dash.yunohost.org/integration/fluxbb.svg)](https://dash.yunohost.org/appci/app/fluxbb)
 

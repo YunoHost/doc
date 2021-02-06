@@ -11,11 +11,11 @@ Let's see how to properly set the DNS redirections with [OVH](http://www.ovh.com
 
 Once you bought your domain name, got to the Web Control Panel, and click on you domain name on the left side:
 
-<img src="/images/ovh_control_panel.png" width=800>
+![](image://ovh_control_panel.png?resize=800)
 
 Click on the **DNS Zone** tab, then on **Add an entry**:
 
-<img src="/images/ovh_dns_zone.png" width=800>
+![](image://ovh_dns_zone.png?resize=800)
 
 Now you need to add the DNS redirections as specified by the [standard DNS zone configuration](/dns_config)
 

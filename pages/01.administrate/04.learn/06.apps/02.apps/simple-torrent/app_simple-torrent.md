@@ -7,7 +7,7 @@ routes:
   default: '/app_simple-torrent'
 ---
 
-<img src="/images/simple-torrent_logo.png" width="80px" alt="simple-torrent's logo"> Simple Torrent
+![simple-torrent's logo](image://simple-torrent_logo.png?width=80)
 
 [![Install Simple Torrent with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=simple-torrent) [![Integration level](https://dash.yunohost.org/integration/simple-torrent.svg)](https://dash.yunohost.org/appci/app/simple-torrent)
 

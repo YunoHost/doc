@@ -23,7 +23,7 @@ The current default method consists in creating a `.tar.gz` archive containing a
 
 You can easily create backup archives from the webadmin by going in Backups > Local storage and clicking on "New backup". You will then be asked to select which configuration, data and apps you want to backup.
 
-![picture of YunoHost's backup pannel](/images/backup.png)
+![picture of YunoHost's backup pannel](image://backup.png)
 
 ### From the command line
 
@@ -94,7 +94,7 @@ scp /path/to/your/<archivename>.tar.gz admin@your.domain.tld:/home/yunohost.back
 
 Go in Backup > Local storage and select your archive. You can then select which items you want to restore, then click on 'Restore'.
 
-![picture of YunoHost's restore pannel](/images/restore.png)
+![picture of YunoHost's restore pannel](image://restore.png)
 
 ### From the command line
 

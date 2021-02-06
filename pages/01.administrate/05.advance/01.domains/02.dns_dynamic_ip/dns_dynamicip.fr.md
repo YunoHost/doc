@@ -45,4 +45,4 @@ Nous allons utiliser le client de la box qui est plus simple à mettre en place.
 #### 5. Configurer la box
 Mettez l’identifiant du DNS dynamique et l’[adresse IP publique](http://ip.yunohost.org/) dans votre box.
 
-<img src="/images/dns_dynamic-ip_box_conf.png" width=600>
+![](image://dns_dynamic-ip_box_conf.png?resize=600)

@@ -7,7 +7,7 @@ routes:
   default: '/app_hedgedoc'
 ---
 
-<img src="/images/HedgeDoc-Logo.png" height="80px" alt="HedgeDoc’s logo"> HedgeDoc
+![HedgeDoc’s logo](image://HedgeDoc-Logo.png?height=80)
 
 [![Install HedgeDoc with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=hedgedoc) [![Integration level](https://dash.yunohost.org/integration/hedgedoc.svg)](https://dash.yunohost.org/appci/app/hedgedoc)
 

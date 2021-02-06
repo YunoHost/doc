@@ -7,7 +7,7 @@ routes:
   default: '/app_bozon'
 ---
 
-<img src="/images/yunohost_package.png" height="80px" alt="Package"> BoZoN
+![BoZoN](image://yunohost_package.png?height=80)
 
 [![Install BoZoN with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=bozon) [![Integration level](https://dash.yunohost.org/integration/bozon.svg)](https://ci-apps.yunohost.org/jenkins/job/bozon%20%28Community%29/lastBuild/consoleFull)
 

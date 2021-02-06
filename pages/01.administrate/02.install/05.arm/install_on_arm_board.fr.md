@@ -9,10 +9,8 @@ routes:
 
 *Toutes les autres façons d’installer YunoHost sont listées **[ici](/install)**.*
 
-<center>
-<img src="/images/olinuxino.jpg" width=250 style="padding-bottom:20px">
-<img src="/images/micro-sd-card.jpg">
-</center>
+![](image://olinuxino.jpg?resize=250)
+![](image://micro-sd-card.jpg)
 
 <div class="alert alert-info" markdown="1">
 Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissance des [possibles limitations liées à votre FAI](/isp). Si votre FAI est trop contraignant, vous pouvez envisager d'utiliser un VPN pour contourner ces limitations.

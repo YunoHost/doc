@@ -7,7 +7,7 @@ routes:
   default: '/app_shellinabox'
 ---
 
-<img src="/images/shellinabox_logo.svg" height="80px" alt="logo de shellinabox"> Shellinabox
+![logo de shellinabox](image://shellinabox_logo.svg?height=80)
 
 [![Install Shellinabox with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=shellinabox) [![Integration level](https://dash.yunohost.org/integration/shellinabox.svg)](https://dash.yunohost.org/appci/app/shellinabox)
 

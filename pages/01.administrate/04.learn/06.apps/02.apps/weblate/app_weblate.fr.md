@@ -7,7 +7,7 @@ routes:
   default: '/app_weblate'
 ---
 
-<img src="/images/weblate_logo.svg" height="80px" alt="logo de weblate"> Weblate
+![logo de weblate](image://weblate_logo.svg?height=80)
 
 [![Install Weblate with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=weblate) [![Integration level](https://dash.yunohost.org/integration/weblate.svg)](https://dash.yunohost.org/appci/app/weblate)
 
