@@ -1,4 +1,11 @@
-# <img src="/images/lychee_logo.png" width="80px" alt="Lyfee's logo"> Lychee
+---
+title: Lychee
+template: docs
+taxonomy:
+    category: docs, apps
+---
+
+<img src="/images/lychee_logo.png" width="80px" alt="Lyfee's logo"> Lychee
 
 [![Installer Lychee avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=lychee) [![Integration level](https://dash.yunohost.org/integration/lychee.svg)](https://dash.yunohost.org/appci/app/lychee)
 

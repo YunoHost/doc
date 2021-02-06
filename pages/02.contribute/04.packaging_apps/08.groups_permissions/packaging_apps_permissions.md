@@ -1,4 +1,9 @@
-# User groups and permissions
+---
+title: User groups and permissions
+template: docs
+taxonomy:
+    category: docs
+---
 
 Installing an app creates the permission `app.main` with `all_users` allowed by default.
 

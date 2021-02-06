@@ -1,4 +1,11 @@
-# <img src="/images/zerobin_logo.svg" height="80px" alt="logo de privatebin"> PrivateBin
+---
+title: PrivateBin
+template: docs
+taxonomy:
+    category: docs, apps
+---
+
+<img src="/images/zerobin_logo.svg" height="80px" alt="logo de privatebin"> PrivateBin
 
 [![Install PrivateBin with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=privatebin) [![Integration level](https://dash.yunohost.org/integration/privatebin.svg)](https://dash.yunohost.org/appci/app/privatebin)
 

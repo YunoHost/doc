@@ -1,4 +1,9 @@
-## NetData
+---
+title: NetData
+template: docs
+taxonomy:
+    category: docs, apps
+---
 
 [NetData](http://my-netdata.io/) est un système distribué de **surveillance des performances et de la santé en temps réel**.
 Il fournit un **aperçu inégalé, en temps réel**, de tout ce qui se passe sur lesystème qu'il exécute (y compris les applications telles que les serveurs web et de base de données), en utilisantdes **tableaux de bord modernes et interactifs sur le web**.

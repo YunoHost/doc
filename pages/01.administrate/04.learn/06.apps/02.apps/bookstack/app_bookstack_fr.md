@@ -1,4 +1,11 @@
-# <img src="/images/logo-bookstack.png" height="80px" alt="Logo BookStack"> BookStack
+---
+title: Bookstack
+template: docs
+taxonomy:
+    category: docs, apps
+---
+
+<img src="/images/logo-bookstack.png" height="80px" alt="Logo BookStack"> BookStack
 
 [![Installer BookStack avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=bookstack) [![Integration level](https://dash.yunohost.org/integration/bookstack.svg)](https://dash.yunohost.org/appci/app/bookstack)
 

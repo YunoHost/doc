@@ -1,4 +1,9 @@
-# Finding your server's local IP
+---
+title: Finding your server's local IP
+template: docs
+taxonomy:
+    category: docs
+---
 
 On an installation at home, your server should typically be accessible using the `yunohost.local` domain. If for any reason this does not work, you may need to find the *local* IP of your server.
 

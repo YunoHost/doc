@@ -1,4 +1,9 @@
-# Trouver l'IP locale de son serveur
+---
+title: Trouver l'IP locale de son serveur
+template: docs
+taxonomy:
+    category: docs
+---
 
 Dans le cas d'une installation à la maison, votre serveur devrait typiquement être accessible (depuis son réseau local) avec le domaine `yunohost.local`. Si pour une raison cela ne fonctionne pas, il vous faut peut-être trouver l'IP locale de votre serveur.
 
