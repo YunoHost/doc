@@ -4,7 +4,7 @@ template: docs
 taxonomy:
     category: docs, apps
 routes:
-  default: '/app_hedgedoc_fr'
+  default: '/app_hedgedoc'
 ---
 
 <img src="/images/HedgeDoc-Logo.png" height="80px" alt="Logo de HedgeDoc"> HedgeDoc

@@ -4,7 +4,7 @@ template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/install_iso_de'
+  default: '/install_iso'
 ---
 
 *Um andere Wege zu finden, YunoHost zu instalieren, klicke **[hier](/install)**.*

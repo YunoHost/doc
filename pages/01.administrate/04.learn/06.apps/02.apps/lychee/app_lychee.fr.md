@@ -4,7 +4,7 @@ template: docs
 taxonomy:
     category: docs, apps
 routes:
-  default: '/app_lychee_fr'
+  default: '/app_lychee'
 ---
 
 <img src="/images/lychee_logo.png" width="80px" alt="Lyfee's logo"> Lychee

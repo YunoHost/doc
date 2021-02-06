@@ -4,7 +4,7 @@ template: docs
 taxonomy:
     category: docs, apps
 routes:
-  default: '/app_mantis_fr'
+  default: '/app_mantis'
 ---
 
 <img src="/images/mantis_logo.png" height="80px" alt="logo de Mantis"> Mantis

@@ -4,7 +4,7 @@ template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/finding_the_local_ip_fr'
+  default: '/finding_the_local_ip'
 ---
 
 Dans le cas d'une installation à la maison, votre serveur devrait typiquement être accessible (depuis son réseau local) avec le domaine `yunohost.local`. Si pour une raison cela ne fonctionne pas, il vous faut peut-être trouver l'IP locale de votre serveur.

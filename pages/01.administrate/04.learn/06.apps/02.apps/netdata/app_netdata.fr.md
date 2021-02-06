@@ -4,7 +4,7 @@ template: docs
 taxonomy:
     category: docs, apps
 routes:
-  default: '/app_netdata_fr'
+  default: '/app_netdata'
 ---
 
 [NetData](http://my-netdata.io/) est un système distribué de **surveillance des performances et de la santé en temps réel**.
