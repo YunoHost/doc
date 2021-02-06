@@ -42,7 +42,7 @@ For example those could be:
 
 Actions looks like this in the admin interface:
 
-![actions admin screenshot](images/actions_example.png)
+![actions admin screenshot](image://actions_example.png)
 
 ## How to add actions to your application
 

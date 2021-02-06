@@ -27,7 +27,7 @@ application, for example that could be:
 
 Example in the admin:
 
-![actions admin screenshot](images/actions_example.png)
+![actions admin screenshot](image://actions_example.png)
 
 ## Configuration Panel
 
@@ -44,4 +44,4 @@ application public or not.
 
 Example in the admin:
 
-![actions admin screenshot](images/config_panel_example.png)
+![actions admin screenshot](image://config_panel_example.png)
