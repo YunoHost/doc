@@ -7,7 +7,7 @@ routes:
   default: '/app_leed'
 ---
 
-<img src="/images/leed_logo.png" height="80px" alt="logo de leed"> Leed
+![logo de leed](image://leed_logo.png?height=80)
 
 [![Install Leed with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=leed) [![Integration level](https://dash.yunohost.org/integration/leed.svg)](https://dash.yunohost.org/appci/app/leed)
 

@@ -7,7 +7,7 @@ routes:
   default: '/app_matomo'
 ---
 
-<img src="/images/matomo_logo.png" height="80px" alt="Matomo's logo"> Matomo
+![Matomo's logo](image://matomo_logo.png?height=80)
 
 [![Install Matomo with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=matomo) [![Integration level](https://dash.yunohost.org/integration/matomo.svg)](https://dash.yunohost.org/appci/app/matomo)
 

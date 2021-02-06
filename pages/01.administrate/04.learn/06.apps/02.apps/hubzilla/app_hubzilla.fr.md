@@ -7,7 +7,7 @@ routes:
   default: '/app_hubzilla'
 ---
 
-<img src="/images/hubzilla_logo.png" width="80px" alt="logo de Hubzilla"> Hubzilla
+![logo de Hubzilla](image://hubzilla_logo.png?width=80)
 
 [![Install Hubzilla with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=hubzilla) [![Integration level](https://dash.yunohost.org/integration/hubzilla.svg)](https://dash.yunohost.org/appci/app/hubzilla)
 

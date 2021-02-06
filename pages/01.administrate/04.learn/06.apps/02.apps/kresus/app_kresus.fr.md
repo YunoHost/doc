@@ -7,7 +7,7 @@ routes:
   default: '/app_kresus'
 ---
 
-<img src="/images/kresus_logo.png" height="80px" alt="logo de kresus"> Kresus
+![logo de kresus](image://kresus_logo.png?height=80)
 
 [![Install kresus with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=kresus) [![Integration level](https://dash.yunohost.org/integration/kresus.svg)](https://dash.yunohost.org/appci/app/kresus)
 

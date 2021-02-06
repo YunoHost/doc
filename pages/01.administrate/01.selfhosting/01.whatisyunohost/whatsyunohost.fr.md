@@ -51,9 +51,8 @@ Vous pouvez héberger vos amis, votre famille ou votre entreprise sans problème
 
 Logo YunoHost noir et blanc réalisé par ToZz (400 × 400 px) :
 
-<a href="/images/ynh_logo_black_300dpi.png">![](image://ynh_logo_black_300dpi.png?resize=220)</a>
-
-<a href="/images/ynh_logo_white_300dpi.png">![](image://ynh_logo_white_300dpi.png?resize=220)</a>
+[![](image://ynh_logo_black_300dpi.png?resize=220)](image://ynh_logo_black_300dpi.png)
+[![](image://ynh_logo_white_300dpi.png?resize=220)](image://ynh_logo_white_300dpi.png)
 
 Cliquer pour télécharger.
 

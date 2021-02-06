@@ -51,9 +51,8 @@ Puedes alojar a tus amistades, tu familia y a tu compañía con facilidad y segu
 
 PNG con el logotipo de YunoHost en blanco y negro por ToZz (400 × 400 px):
 
-<a href="/images/ynh_logo_black_300dpi.png">![](image://ynh_logo_black_300dpi.png?resize=220)</a>
-
-<a href="/images/ynh_logo_white_300dpi.png">![](image://ynh_logo_white_300dpi.png?resize=220)</a>
+[![](image://ynh_logo_black_300dpi.png?resize=220)](image://ynh_logo_black_300dpi.png)
+[![](image://ynh_logo_white_300dpi.png?resize=220)](image://ynh_logo_white_300dpi.png)
 
 Clic para descargar.
 

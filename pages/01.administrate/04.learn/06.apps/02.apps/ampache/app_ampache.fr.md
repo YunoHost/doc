@@ -7,7 +7,7 @@ routes:
   default: '/app_ampache'
 ---
 
-<img src="/images/ampache_logo.png" height="80px" alt="logo de Ampache"> Ampache
+![logo de Ampache](image://ampache_logo.png?height=80)
 
 [![Install Ampache with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=ampache) [![Integration level](https://dash.yunohost.org/integration/ampache.svg)](https://dash.yunohost.org/appci/app/ampache)
 

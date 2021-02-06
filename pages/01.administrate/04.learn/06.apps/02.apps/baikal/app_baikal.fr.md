@@ -7,7 +7,7 @@ routes:
   default: '/app_baikal'
 ---
 
-<img src="/images/baikal_logo.png" height="80px" alt="Baïkal's logo"> Baïkal
+![Baïkal's logo](image://baikal_logo.png?height=80)
 
 [![Install Baïkal with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=baikal) [![Integration level](https://dash.yunohost.org/integration/baikal.svg)](https://dash.yunohost.org/appci/app/baikal)
 

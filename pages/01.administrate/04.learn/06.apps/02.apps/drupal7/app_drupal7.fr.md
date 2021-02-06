@@ -7,7 +7,7 @@ routes:
   default: '/app_drupal7'
 ---
 
-<img src="/images/drupal_logo.svg" height="80px" alt="Logo de Drupal"> Drupal 7
+![Logo de Drupal](image://drupal_logo.svg?height=80)
 
 [![Install Drupal with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=drupal) [![Integration level](https://dash.yunohost.org/integration/drupal.svg)](https://dash.yunohost.org/appci/app/drupal)
 

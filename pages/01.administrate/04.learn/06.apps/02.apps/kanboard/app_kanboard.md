@@ -7,7 +7,7 @@ routes:
   default: '/app_kanboard'
 ---
 
-<img src="/images/kanboard_logo.png" height="80px" alt="kanboard's logo"> Kanboard
+![kanboard's logo](image://kanboard_logo.png?height=80)
 
 [![Install kanboard with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=kanboard) [![Integration level](https://dash.yunohost.org/integration/kanboard.svg)](https://dash.yunohost.org/appci/app/kanboard)
 

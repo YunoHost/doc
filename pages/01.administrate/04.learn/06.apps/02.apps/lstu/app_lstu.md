@@ -7,7 +7,7 @@ routes:
   default: '/app_lstu'
 ---
 
-<img src="/images/lstu_logo.svg" height="80px" alt="lstu's logo"> Lstu
+![lstu's logo](image://lstu_logo.svg?height=80)
 
 [![Install lstu with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=lstu) [![Integration level](https://dash.yunohost.org/integration/lstu.svg)](https://dash.yunohost.org/appci/app/lstu)
 

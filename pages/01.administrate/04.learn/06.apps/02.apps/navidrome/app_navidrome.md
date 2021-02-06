@@ -7,7 +7,7 @@ routes:
   default: '/app_navidrome'
 ---
 
-<img src="/images/navidrome_logo.png" height="80px" alt="Navidrome's logo"> Navidrome
+![Navidrome's logo](image://navidrome_logo.png?height=80)
 
 [![Install Navidrome with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=navidrome) [![Integration level](https://dash.yunohost.org/integration/navidrome.svg)](https://dash.yunohost.org/appci/app/navidrome)
 
