@@ -14,7 +14,7 @@ YunoHost es un **sistema operativo** que persigue simplificar la administración
 ## Características
 
 - <img src="/images/icon-debian.png" width=32 style="margin-right:5px"> Basado en Debian ;
-- <img src="/images/icon-tools.png" width=32 style="margin-right:5px" width=64> Administra tu servidor mediante un **interfaz web amigable** ;
+- <img src="/images/icon-tools.png" width=32 style="margin-right:5px"> Administra tu servidor mediante un **interfaz web amigable** ;
 - <img src="/images/icon-package.png" width=32 style="margin-right:5px"> Despliega **apps en sólo unos pocos clics** ;
 - <img src="/images/icon-users.png" width=32 style="margin-right:5px"> Administra **usuarios** <small>(con soporte en LDAP)</small>;
 - <img src="/images/icon-globe.png" width=32 style="margin-right:5px"> Administra **nombres de dominio** ;
