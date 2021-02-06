@@ -13,76 +13,58 @@ Esta página enumera varios tipos de instalaciones, clasificados por categorías
 
 ---
 
-<h1 style="font-weight: 100">Probar</h1>
+## Probar
 
-<div class="row">
+[columns][center]
 
-<div class="col col-md-3 text-center">
-<a href="/try"><img height=150 src="/images/logo.png" style="vertical-align:bottom"><b><p>Servidor de demo</p></b></a>
-</div>
+[[figure caption="Servidor de demo"]![](image://logo.png?resize=150&class=inline)[/figure]](/try)
 
-<div class="col col-md-3 text-center">
-<a href="/install_on_virtualbox"><img src="/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>Probar en una máquina virtual</p></b></a>
-</div>
+[[figure caption="Probar en una máquina virtual"]
+![](image://virtualbox.png?resize=150&class=inline)
+[/figure]](/install_on_virtualbox)
 
-</div>
+[/center][/columns]
 
-<br>
+## Instalar en casa
 
----
+[columns count=3][center]
 
-<h1 style="font-weight: 100">Instalar en casa</h1>
+[[figure class="nomargin" caption="En un Raspberry Pi"]
+![](image://raspberrypi.jpg?resize=150,150)
+[/figure]](/install_on_raspberry)
+  
+[[figure class="nomargin" caption="En un ARM board"]
+![](image://olinuxino.jpg?resize=150,150)
+[/figure]](/install_on_arm_board)
+  
+[[figure class="nomargin" caption="En un ordenador estándar"]
+![](image://computer.png?resize=150,150)
+[/figure]](/install_iso)
 
-<div class="row">
+[/center][/columns]
 
-<div class="col col-md-3 text-center">
-<a href="/install_on_raspberry"><img src="/images/raspberrypi.jpg" height=150 style="vertical-align:bottom"><b><p>En un Raspberry Pi</p></b></a>
-</div>
+## Instalación remota
 
-<div class="col col-md-3 text-center">
-<a href="/install_on_arm_board"><img src="/images/olinuxino.jpg" height=150 style="vertical-align:bottom; padding:20px"><b><p>En un ARM board</p></b></a>
-</div>
+!!! [fa=fa-heart /] Proveedores de Internet asociativos cerna de ti pueden proponerte un *Servidor Virtual Privado* (VPS), administrado por humanos que respetan los usuarios y la [Neutralitad de Internet](https://es.wikipedia.org/wiki/Neutralidad_de_red) ! Ver [esta página](https://db.ffdn.org/) por mas informaciones.
 
-<div class="col col-md-3 text-center">
-<a href="/install_iso"><img src="/images/computer.png" height=150 style="vertical-align:bottom"><b><p>En un ordenador estándar</p></b></a>
-</div>
+[center]
 
-</div>
+[[figure class="nomargin" caption="En un servidor dedicado o virtual (VPS)"]
+![](image://vps.png?resize=150,150)
+[/figure]](/install_on_vps)
 
-<br>
+[/center]
 
----
+## Avanzado / otros
 
-<h1 style="font-weight: 100">Instalación remota</h1>
+[columns count=2][center]
 
-<div class="alert alert-info" markdown="1">
-<span class="glyphicon glyphicon-heart"></span> Proveedores de Internet asociativos cerna de ti pueden proponerte un *Servidor Virtual Privado* (VPS), administrado por humanos que respetan los usuarios y la [Neutralitad de Internet](https://es.wikipedia.org/wiki/Neutralidad_de_red) ! Ver [esta página](https://db.ffdn.org/) por mas informaciones.
-</div>
+[[figure class="nomargin" caption="Sur Debian 10/Buster"]
+![](image://debian-logo.png?resize=150,150)
+[/figure]](/install_on_debian)
 
-<div class="row">
+[[figure class="nomargin" caption="Dev environment in LXD/LXC"]
+![](image://lxc.png?resize=150,150)
+[/figure]](/dev)
 
-<div class="block-center text-center">
-<a href="/install_on_vps"><img src="/images/vps.png" height=150 style="vertical-align:bottom; text-align:center"><b><p>En un servidor dedicado o virtual (VPS)</p></b></a>
-</div>
-
-</div>
-
-<br>
-
----
-
-<h1 style="font-weight: 100">Avanzado / otros</h1>
-
-<div class="row">
-
-<div class="col col-md-3 text-center">
-<a href="/install_on_debian"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
-<b><p>Sur Debian 10/Buster</p></b></a>
-</div>
-
-<div class="col col-md-3 text-center">
-<a href="/dev"><img src="/images/lxc.png" height=150 style="vertical-align:bottom"><b><p>Dev environment in LXD/LXC</p></b></a>
-</div>
-
-
-</div>
+[/center][/columns]

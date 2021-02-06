@@ -15,11 +15,11 @@ This page lists a few installation guides.
 
 [columns][center]
 
-[[figure caption="Demo server"]![](image://logo.png?resize=150&class=inline)[/figure]](/administrate/selfhosting/tryyunohost)
+[[figure caption="Demo server"]![](image://logo.png?resize=150&class=inline)[/figure]](/try)
 
 [[figure caption="Try with VirtualBox"]
 ![](image://virtualbox.png?resize=150&class=inline)
-[/figure]](/administrate/install/virtualbox)
+[/figure]](/install_on_virtualbox)
 
 [/center][/columns]
 
@@ -29,15 +29,15 @@ This page lists a few installation guides.
 
 [[figure class="nomargin" caption="On a Raspberry Pi"]
 ![](image://raspberrypi.jpg?resize=150,150)
-[/figure]](/administrate/install/rpi)
+[/figure]](/install_on_raspberry)
   
 [[figure class="nomargin" caption="On an ARM board"]
 ![](image://olinuxino.jpg?resize=150,150)
-[/figure]](/administrate/install/arm)
+[/figure]](/install_on_arm_board)
   
 [[figure class="nomargin" caption="On a regular computer"]
 ![](image://computer.png?resize=150,150)
-[/figure]](/administrate/install/iso)
+[/figure]](/install_iso)
 
 [/center][/columns]
 
@@ -49,7 +49,7 @@ This page lists a few installation guides.
 
 [[figure class="nomargin" caption="On a dedicated or virtual private server"]
 ![](image://vps.png?resize=150,150)
-[/figure]](/administrate/install/vps)
+[/figure]](/install_on_vps)
 
 [/center]
 
@@ -59,14 +59,14 @@ This page lists a few installation guides.
 
 [[figure class="nomargin" caption="On Debian 10 Buster"]
 ![](image://debian-logo.png?resize=150,150)
-[/figure]](/administrate/install/debian)
+[/figure]](/install_on_debian)
 
 [[figure class="nomargin" caption="Dev environment in LXD/LXC"]
 ![](image://lxc.png?resize=150,150)
-[/figure]](/contribute/dev)
+[/figure]](/dev)
 
 [[figure class="nomargin" caption="(Non-official!) Docker images"]
 ![](image://docker.png?resize=150,150)
-[/figure]](/administrate/install/docker)
+[/figure]](/docker)
 
 [/center][/columns]

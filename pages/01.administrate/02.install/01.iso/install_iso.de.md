@@ -11,9 +11,11 @@ routes:
 
 ### Anforderungen
 
-![](image://laptop.png?resize=200)
-![](image://desktop.jpg)
-![](image://nettop.jpg)
+[center]
+![Laptop](image://laptop.png?resize=200,200&class=inline)
+![Desktop](image://desktop.jpg?resize=200,200&class=inline)
+![Nettop](image://nettop.jpg?resize=200,200&class=inline)
+[/center]
 
 * Einen x86-kompatibele Hardware für YunoHost: Laptop, Netbook oder Desktop.    
 Du kannst jeden Computer nutzen der **256MB RAM oder mehr** hat.
