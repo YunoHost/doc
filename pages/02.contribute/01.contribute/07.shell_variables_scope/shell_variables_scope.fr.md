@@ -3,6 +3,8 @@ title: Portée générales des variables
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/shell_variables_scope'
 ---
 
 Les variables existent pour le shell courant et ses enfants uniquement.  

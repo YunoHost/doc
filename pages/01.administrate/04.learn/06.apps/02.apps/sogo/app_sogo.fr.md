@@ -3,6 +3,8 @@ title: SOGo
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_sogo'
 ---
 
 <img src="/images/sogo_logo.png" height="80px" alt="SOGo Logo"> SOGo

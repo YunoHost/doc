@@ -3,6 +3,8 @@ title: Discourse
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_discourse'
 ---
 
 <img src="/images/discourse_logo.svg" height="80px" alt="Discourse's logo"> Discourse

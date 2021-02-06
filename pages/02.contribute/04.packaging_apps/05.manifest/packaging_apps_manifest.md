@@ -3,6 +3,8 @@ title: Application packaging
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_manifest'
 ---
 
 ## Manifest

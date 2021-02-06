@@ -3,6 +3,8 @@ title: Wallabag2
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_wallabag2'
 ---
 
 <img src="/images/wallabag2_logo.svg" height="80px" alt="logo de wallabag2"> Wallabag2

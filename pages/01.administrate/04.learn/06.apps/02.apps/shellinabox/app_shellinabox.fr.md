@@ -3,6 +3,8 @@ title: Shellinabox
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_shellinabox'
 ---
 
 <img src="/images/shellinabox_logo.svg" height="80px" alt="logo de shellinabox"> Shellinabox

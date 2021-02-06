@@ -3,6 +3,8 @@ title: Glowing Bear
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_glowing_bear'
 ---
 
 <img src="/images/glowing_bear_logo.svg" height="80px" alt="logo de Glowing Bear"> Glowing Bear

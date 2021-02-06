@@ -3,6 +3,8 @@ title: Utiliser Git pour packager les applications
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_git'
 ---
 
 Git... Notre cher Git bien-aimé, que l'on peut aussi décrire comme "Goddamn Idiotic Truckload of sh*t"  (Un stupide putain gros tas de m\*rde), selon Linus.  

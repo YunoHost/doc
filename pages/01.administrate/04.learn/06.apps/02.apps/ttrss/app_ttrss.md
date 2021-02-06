@@ -3,6 +3,8 @@ title: Tiny Tiny RSS
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_ttrss'
 ---
 
 <img src="/images/ttrss.png" width="80px" alt="logo de Tiny Tiny RSS"> Tiny Tiny RSS

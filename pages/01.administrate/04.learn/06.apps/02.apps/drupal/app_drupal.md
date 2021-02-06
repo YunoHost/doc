@@ -3,6 +3,8 @@ title: Drupal
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_drupal'
 ---
 
 <img src="/images/drupal_logo.svg" height="80px" alt="Drupal's logo"> Drupal

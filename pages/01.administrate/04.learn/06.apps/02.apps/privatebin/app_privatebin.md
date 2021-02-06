@@ -3,6 +3,8 @@ title: PrivateBin
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_privatebin'
 ---
 
 <img src="/images/zerobin_logo.svg" height="80px" alt="PrivateBin's logo"> Privatebin

@@ -3,6 +3,8 @@ title: Administrator web interface
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/admin'
 ---
 
 YunoHost has an administrator web interface. The other way to administrate your YunoHost install is through the [command line](/commandline).

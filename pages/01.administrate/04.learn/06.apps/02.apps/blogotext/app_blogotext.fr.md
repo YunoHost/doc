@@ -3,6 +3,8 @@ title: BlogoText
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_blogotext'
 ---
 
 <img src="/images/blogotext_logo.png" width="80px" alt="logo de BlogoText"> BlogoText

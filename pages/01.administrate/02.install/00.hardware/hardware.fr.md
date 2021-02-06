@@ -3,6 +3,8 @@ title: Matériel
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/hardware'
 ---
 
 YunoHost peut être installé sur les types de matériel suivants :

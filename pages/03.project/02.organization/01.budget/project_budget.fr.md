@@ -3,6 +3,8 @@ title: Budget du projet
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/project_budget'
 ---
 
 # Budget prévisionnel pour 2019/2020

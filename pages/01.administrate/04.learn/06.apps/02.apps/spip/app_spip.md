@@ -3,6 +3,8 @@ title: SPIP
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_spip'
 ---
 
 #### SPIP is what?

@@ -3,6 +3,8 @@ title: Applications
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/apps_overview'
 ---
 
 One of the key feature of YunoHost is the ability to easily install applications which are then immediately usable. Example of applications include a blog system, a "cloud" (to host and sync files), a website, an RSS reader...

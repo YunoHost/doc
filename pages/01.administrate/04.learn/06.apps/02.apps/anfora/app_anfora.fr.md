@@ -3,6 +3,8 @@ title: Anfora
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_anfora'
 ---
 
 <img src="/images/anfora_logo.svg" height="80px" alt="logo de Anfora"> Anfora

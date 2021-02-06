@@ -3,6 +3,8 @@ title: Unattended upgrades
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_unattended_upgrades'
 ---
 
 <img src="/images/yunohost_package.png" height="80px" alt="Package"> Unattended_upgrades

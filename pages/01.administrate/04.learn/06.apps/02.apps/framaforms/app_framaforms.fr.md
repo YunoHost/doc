@@ -3,6 +3,8 @@ title: Framaforms
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_framaforms'
 ---
 
 <img src="/images/framaforms_logo.png" height="80px" alt="logo de framaforms"> Framaforms

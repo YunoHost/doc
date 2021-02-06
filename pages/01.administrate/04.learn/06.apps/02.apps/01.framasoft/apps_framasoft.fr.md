@@ -3,6 +3,8 @@ title: Équivalence avec les applications Framasoft
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/apps_framasoft'
 ---
 
 | App Framasoft  | Équivalent          | Package                                                                                                |

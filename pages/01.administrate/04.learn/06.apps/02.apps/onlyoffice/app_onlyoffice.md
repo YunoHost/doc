@@ -3,6 +3,8 @@ title: OnlyOffice Server
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_onlyoffice'
 ---
 
 <img src="/images/OnlyOffice_logo.png" height="80px" alt="OnlyOffice Logo"> OnlyOffice Server

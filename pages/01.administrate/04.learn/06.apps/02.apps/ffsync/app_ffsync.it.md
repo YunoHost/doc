@@ -3,6 +3,8 @@ title: FireFox Sync
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_ffsync'
 ---
 
 Firefox Sync permette la sincronizzazione di plugin, schede, segnalibri, preferiti e cronologia fra diverse istanze di Firefox.

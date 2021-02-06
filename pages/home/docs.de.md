@@ -3,6 +3,8 @@ title: Documentation
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/docs'
 ---
 
 <p class="lead">

@@ -3,6 +3,8 @@ title: FluxBB
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_fluxbb'
 ---
 
 <img src="/images/fluxbb_logo.png" height="80px" alt="FluxBB's logo"> FluxBB

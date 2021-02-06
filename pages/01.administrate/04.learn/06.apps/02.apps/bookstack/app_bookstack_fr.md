@@ -3,6 +3,8 @@ title: Bookstack
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_bookstack_fr'
 ---
 
 <img src="/images/logo-bookstack.png" height="80px" alt="Logo BookStack"> BookStack

@@ -3,6 +3,8 @@ title: FreshRSS
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_freshrss'
 ---
 
 <img src="/images/freshrss_logo.svg" height="80px" alt="logo de FreshRSS"> FreshRSS

@@ -3,6 +3,8 @@ title: Frequently Asked Questions
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/faq'
 ---
 
 #### Under which license is YunoHost distributed?

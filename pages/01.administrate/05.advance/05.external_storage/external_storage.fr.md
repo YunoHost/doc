@@ -3,6 +3,8 @@ title: Ajouter un stockage externe à son serveur
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/external_storage'
 ---
 
 ## Introduction

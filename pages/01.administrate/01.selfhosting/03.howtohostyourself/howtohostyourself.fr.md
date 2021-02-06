@@ -3,6 +3,8 @@ title: Choisir son mode d'autohébergement
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/howtohostyourself'
 ---
 
 Vous pouvez vous auto-héberger à la maison (sur un petit ordinateur), ou sur un serveur distant. Chaque solution a ses avantages et inconvénients :

@@ -3,6 +3,8 @@ title: Mattermost
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_mattermost'
 ---
 
 <img src="/images/mattermost_logo.svg" height="80px" alt="logo de Mattermost"> Mattermost

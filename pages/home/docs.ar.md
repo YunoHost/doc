@@ -3,6 +3,8 @@ title: الدليل
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/docs'
 ---
 
 <p dir="rtl" class="lead">

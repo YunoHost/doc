@@ -3,6 +3,8 @@ title: Friendica
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_friendica'
 ---
 
 <img src="/images/friendica_logo.svg" height="80px" alt="friendica's logo"> Friendica

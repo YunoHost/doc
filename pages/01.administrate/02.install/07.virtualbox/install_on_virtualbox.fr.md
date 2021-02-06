@@ -3,6 +3,8 @@ title: Installer YunoHost sur VirtualBox
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/install_on_virtualbox'
 ---
 
 *Trouvez d’autres moyens d’installer YunoHost **[ici](/install)**.*

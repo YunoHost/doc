@@ -3,6 +3,8 @@ title: Get involved
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/contribute'
 ---
 
 <p class="lead">

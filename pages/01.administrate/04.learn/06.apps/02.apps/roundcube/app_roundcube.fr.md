@@ -3,6 +3,8 @@ title: Roundcube
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_roundcube'
 ---
 
 <img src="/images/roundcube_logo.svg" height="80px" alt="logo de roundcube"> Roundcube

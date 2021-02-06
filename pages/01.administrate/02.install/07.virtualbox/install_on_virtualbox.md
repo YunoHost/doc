@@ -3,6 +3,8 @@ title: Install YunoHost on VitualBox
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/install_on_virtualbox'
 ---
 
 *Find other ways to install YunoHost **[here](/install)**.*

@@ -3,6 +3,8 @@ title: SSH
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/ssh'
 ---
 
 ## Cos'è SSH?

@@ -3,6 +3,8 @@ title: Cowyo
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_cowyo'
 ---
 
 <img src="/images/cowyo_logo.png" height="80px" alt="Cowyo's logo"> Cowyo

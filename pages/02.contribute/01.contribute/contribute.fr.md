@@ -3,6 +3,8 @@ title: Contribuer
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/contribute'
 ---
 
 <p class="lead">

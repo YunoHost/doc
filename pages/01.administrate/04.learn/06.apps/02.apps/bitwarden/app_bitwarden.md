@@ -3,6 +3,8 @@ title: Bitwarden
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_bitwarden'
 ---
 
 <img src="/images/bitwarden_logo.png" width="80px" alt="Bitwarden's logo"> Bitwarden

@@ -3,6 +3,8 @@ title: Post-instalación
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/postinstall'
 ---
 
 La etapa que llamamos « **post-instalación** » de hecho es la etapa de configuración inicial de YunoHost. Se ejecuta después de la **instalación** del sistema mismo.

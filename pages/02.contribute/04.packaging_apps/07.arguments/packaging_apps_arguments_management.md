@@ -3,6 +3,8 @@ title: Arguments management
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_arguments_management'
 ---
 
 #### Retrieve arguments in the install script from manifest

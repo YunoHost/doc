@@ -3,6 +3,8 @@ title: Calibre-web
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_calibreweb'
 ---
 
 <img src="/images/yunohost_package.png" height="80px" alt="Package"> Calibre-Web

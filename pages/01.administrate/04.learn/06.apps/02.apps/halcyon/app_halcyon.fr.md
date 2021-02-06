@@ -3,6 +3,8 @@ title: Halcyon
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_halcyon'
 ---
 
 <img src="/images/halcyon_logo.png" width="80px" alt="logo de Halcyon"> Halcyon

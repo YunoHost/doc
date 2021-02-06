@@ -3,6 +3,8 @@ title: Lychee
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_lychee_fr'
 ---
 
 <img src="/images/lychee_logo.png" width="80px" alt="Lyfee's logo"> Lychee

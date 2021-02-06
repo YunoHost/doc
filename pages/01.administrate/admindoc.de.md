@@ -3,6 +3,8 @@ title: Administrator-Dokumentation
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/admindoc'
 ---
 
 * Self-Hosting entdecken

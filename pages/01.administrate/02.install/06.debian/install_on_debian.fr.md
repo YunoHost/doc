@@ -3,6 +3,8 @@ title: Installation sur Debian
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/install_on_debian'
 ---
 
 *Trouvez d’autres moyens d’installer YunoHost **[ici](/install)**.*

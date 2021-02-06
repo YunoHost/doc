@@ -3,6 +3,8 @@ title: osTicket
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_osticket'
 ---
 
 <img src="/images/osticket_logo.svg" height="80px" alt="osticket's logo"> osTicket

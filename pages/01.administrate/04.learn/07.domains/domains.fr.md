@@ -3,6 +3,8 @@ title: Domaines, configurations DNS, et certificats
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/domains'
 ---
 
 YunoHost permet de gérer et de servir plusieurs domaines sur un même serveur. Vous pouvez donc héberger, par exemple, un blog et un Nextcloud sur un premier domaine `yolo.com`, et un client de messagerie web sur un second domaine `swag.nohost.me`. Chaque domaine est automatiquement configuré pour pouvoir gérer des services web, des courriels et une messagerie instantannée XMPP.

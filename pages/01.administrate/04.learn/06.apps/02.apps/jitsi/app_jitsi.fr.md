@@ -3,6 +3,8 @@ title: Jitsi
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_jitsi'
 ---
 
 <img src="/images/jitsi_logo.svg" width="80px" alt="logo de jitsi"> Jitsi

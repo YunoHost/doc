@@ -3,6 +3,8 @@ title: Transmission
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_transmission'
 ---
 
 <img src="/images/transmission.png"> Transmission

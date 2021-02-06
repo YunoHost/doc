@@ -3,6 +3,8 @@ title: Самостоятельное развертывание (свой хо�
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/selfhosting'
 ---
 
 #### Значение

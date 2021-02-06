@@ -3,6 +3,8 @@ title: PeerTube
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_peertube'
 ---
 
 <img src="/images/peertube_logo.svg" height="80px" alt="logo de peertube"> PeerTube

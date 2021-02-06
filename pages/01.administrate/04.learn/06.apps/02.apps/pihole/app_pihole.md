@@ -3,6 +3,8 @@ title: Pi-hole
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_pihole'
 ---
 
 <img src="/images/pihole_logo.png" width="80px" alt="Pi-hole's logo"> Pi-hole

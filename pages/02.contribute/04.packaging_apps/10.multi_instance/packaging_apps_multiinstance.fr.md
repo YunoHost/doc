@@ -3,6 +3,8 @@ title: Multi-instances
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_multiinstance'
 ---
 
 Le multi-instance est la capacité d’une application à être installée plusieurs fois.

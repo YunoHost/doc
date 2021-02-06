@@ -3,6 +3,8 @@ title: Moving an app folder to a different storage
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/moving_app_folder'
 ---
 
 Applications folder are (*usually*) located in `/var/www/$appname`

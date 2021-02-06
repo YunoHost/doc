@@ -3,6 +3,8 @@ title: Installazione su Debian
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/install_on_debian'
 ---
 
 *Altri sistemi per installare Debian **[qui](/install)**.*

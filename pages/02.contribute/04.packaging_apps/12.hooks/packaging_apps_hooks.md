@@ -3,6 +3,8 @@ title: Hooks
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_hooks'
 ---
 
 Hooks allow you to trigger a script when an action is performed by the system.  

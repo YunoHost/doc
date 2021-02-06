@@ -3,6 +3,8 @@ title: Install YunoHost on ARM board
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/install_on_arm_board'
 ---
 
 *Find other ways to install YunoHost **[here](/install)**.*

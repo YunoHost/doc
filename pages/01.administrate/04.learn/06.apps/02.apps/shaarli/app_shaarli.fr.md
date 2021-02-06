@@ -3,6 +3,8 @@ title: Shaarli
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_shaarli'
 ---
 
 ## Présentation

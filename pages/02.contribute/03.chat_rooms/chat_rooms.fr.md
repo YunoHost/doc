@@ -3,6 +3,8 @@ title: Salons de discussions
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/chat_rooms'
 ---
 
 Parmi d’autres outils, le projet YunoHost se sert de salons de discussions pour communiquer.

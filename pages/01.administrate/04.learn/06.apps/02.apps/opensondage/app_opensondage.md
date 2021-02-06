@@ -3,6 +3,8 @@ title: Opensondage
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_opensondage'
 ---
 
 <img src="/images/opensondage_logo.png" height="80px" alt="opensondage's logo"> Opensondage

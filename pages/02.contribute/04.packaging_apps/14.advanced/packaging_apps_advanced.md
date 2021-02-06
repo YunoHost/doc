@@ -3,6 +3,8 @@ title: Advanced features of apps packaging
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_advanced'
 ---
 
 <div class="alert alert-warning">For now, all those features are <b>EXPERIMENTALS</b>

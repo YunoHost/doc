@@ -3,6 +3,8 @@ title: NetData
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_netdata'
 ---
 
 [NetData](http://my-netdata.io/) is a system for **distributed real-time performance and health monitoring**.

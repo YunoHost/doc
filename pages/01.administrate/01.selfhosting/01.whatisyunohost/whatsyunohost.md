@@ -3,6 +3,8 @@ title: What is YunoHost?
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/whatsyunohost'
 ---
 
 ![YunoHost logo](image://YunoHost_logo_vertical.png?resize=400)

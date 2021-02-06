@@ -3,6 +3,8 @@ title: تجريب YunoHost
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/try'
 ---
 
 <div dir=rtl class="alert alert-warning" markdown="1">

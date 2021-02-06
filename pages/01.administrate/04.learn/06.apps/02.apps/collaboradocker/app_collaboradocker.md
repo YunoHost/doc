@@ -3,6 +3,8 @@ title: Collabora via Docker
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_collaboradocker'
 ---
 
 # Install Collabora with Nextcloud, using Docker

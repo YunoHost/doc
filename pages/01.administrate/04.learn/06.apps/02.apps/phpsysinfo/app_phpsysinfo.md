@@ -3,6 +3,8 @@ title: phpSysInfo
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_phpsysinfo'
 ---
 
 <img src="/images/phpsysinfo_logo.png" height="80px" alt="phpsysinfo's logo"> phpSysInfo

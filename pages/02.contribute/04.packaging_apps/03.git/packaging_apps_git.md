@@ -3,6 +3,8 @@ title: Use Git to package apps
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_git'
 ---
 
 Git... Our dear beloved Git, which can be described also as "Goddamn Idiotic Truckload of sh*t", according to Linus.  

@@ -3,6 +3,8 @@ title: Adminer
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_adminer'
 ---
 
 <img src="/images/adminer_logo.png" height="80px" alt="logo d'Adminer"> Adminer

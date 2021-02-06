@@ -3,6 +3,8 @@ title: Guide Markdown
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/doc_markdown_guide'
 ---
 
 Le Markdown est un langage de balisage créé en 2004, de nombreux add-on développant les possibilités de ce langage existent. L'objectif de ce guide est de tendre vers l’exhaustivité des possibilités de ce langage de formatage dans le cadre de la documentation de YunoHost et non des langages Markdown en général.

@@ -3,6 +3,8 @@ title: Fallback
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_fallback'
 ---
 
 <img src="/images/yunohost_package.png" height="80px" alt="Package"> Fallback

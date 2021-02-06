@@ -3,6 +3,8 @@ title: Hextris
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_hextris'
 ---
 
 <img src="/images/hextris_logo.png" width="80px" alt="Hextris's logo"> Hextris

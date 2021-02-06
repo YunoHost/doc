@@ -3,6 +3,8 @@ title: Niveaux de qualité des packages d'applications YunoHost
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_levels'
 ---
 
 Afin de faciliter le packaging d'applications par des étapes successives à atteindre, chaque package est affublé d'un niveau de qualité, de 0 à 10.  

@@ -3,6 +3,8 @@ title: الصور
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/images'
 ---
 
 <div id="cards-list">

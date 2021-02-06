@@ -3,6 +3,8 @@ title: Canevas pour la documentation des apps
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_writing_guide'
 ---
 
 <img src="/images/APPLICATION_logo.svg" height="80px" alt="logo de APPLICATION"> APPLICATION

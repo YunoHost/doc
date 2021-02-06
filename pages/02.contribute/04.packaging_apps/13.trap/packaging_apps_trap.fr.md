@@ -3,6 +3,8 @@ title: Trap
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/packaging_apps_trap'
 ---
 
 Trap est une commande interne du shell permettant de capturer les signaux de sorties des commandes exécutées dans le shell courant et ses sous-shell.

@@ -3,6 +3,8 @@ title: Setting up IPv6
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/ipv6'
 ---
 
 IPv6 may work out of the box in many cases. But in some cases or some specific provider, you may need to tweak things manually to enable IPv6.

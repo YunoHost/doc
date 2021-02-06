@@ -3,6 +3,8 @@ title: Utiliser YunoHost comme un service caché Tor
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/torhiddenservice'
 ---
 
 <div class="alert alert-warning">

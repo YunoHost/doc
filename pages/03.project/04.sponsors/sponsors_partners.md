@@ -3,6 +3,8 @@ title: Sponsors and partners
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/sponsors_partners'
 ---
 
 In order to advance and make the project works, in addition to the work of volunteers and donations, YunoHost benefits from the support of sponsors and partners.

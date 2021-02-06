@@ -3,6 +3,8 @@ title: Cheky
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_cheky'
 ---
 
 <img src="/images/yunohost_package.png" height="80px" alt="Package"> Cheky

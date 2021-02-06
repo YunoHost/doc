@@ -3,6 +3,8 @@ title: Guida all'installazione
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/install'
 ---
 
 Ci sono diverse maniere per installare YunoHost. Il procedimento può essere leggermente diverso a seconda che si esegua a casa o su un server remoto, e dipende dall'hardware usato:

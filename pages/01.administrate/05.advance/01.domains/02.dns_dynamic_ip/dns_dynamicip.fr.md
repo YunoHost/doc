@@ -3,6 +3,8 @@ title: DNS avec une IP dynamique
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/dns_dynamicip'
 ---
 
 <div class="alert alert-warning">Avant d’aller plus loin, assurez-vous que votre adresse IP publique est dynamique à l’aide de : [ip.yunohost.org](http://ip.yunohost.org/). L’adresse IP publique de votre box change à peu près tous les jours.</div>

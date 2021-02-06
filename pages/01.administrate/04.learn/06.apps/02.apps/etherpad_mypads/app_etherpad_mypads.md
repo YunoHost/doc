@@ -3,6 +3,8 @@ title: Etherpad with MyPads plugin
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_etherpad_mypads'
 ---
 
 <img src="/images/etherpad_mypads_logo.svg" height="80px" alt="Etherpad's logo"> Etherpad (with MyPads plugin)

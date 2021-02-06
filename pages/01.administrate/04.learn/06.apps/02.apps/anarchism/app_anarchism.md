@@ -3,6 +3,8 @@ title: Anarchism
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_anarchism'
 ---
 
 <img src="/images/anarchism_logo.svg" height="80px" alt="Anarchism's logo"> Anarchism

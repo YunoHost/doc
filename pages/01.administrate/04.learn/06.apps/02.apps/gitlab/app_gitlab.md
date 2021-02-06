@@ -3,6 +3,8 @@ title: Gitlab
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_gitlab'
 ---
 
 <img src="/images/gitlab_logo.svg" height="80px" alt="GitLab's logo"> GitLab

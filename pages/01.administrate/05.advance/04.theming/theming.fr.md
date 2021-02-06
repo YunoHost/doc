@@ -3,6 +3,8 @@ title: Personnaliser l'apparence du portail utilisateur
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/theming'
 ---
 
 ## Utiliser un thème

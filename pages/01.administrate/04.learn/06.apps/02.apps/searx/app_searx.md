@@ -3,6 +3,8 @@ title: Searx
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_searx'
 ---
 
 <img src="/images/searx_logo.svg" height="80px" alt="searx's logo"> Searx

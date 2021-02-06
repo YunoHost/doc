@@ -3,6 +3,8 @@ title: Baikal
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_baikal'
 ---
 
 <img src="/images/baikal_logo.png" height="80px" alt="Baïkal's logo"> Baïkal

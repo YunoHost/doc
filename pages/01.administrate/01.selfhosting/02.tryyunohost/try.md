@@ -3,6 +3,8 @@ title: Try YunoHost
 template: docs
 taxonomy:
     category: docs
+routes:
+  default: '/try'
 ---
 
 ! This demo server could be down from time to time.

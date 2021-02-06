@@ -3,6 +3,8 @@ title: KeeWeb pour Nextcloud
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_nextcloud_keeweb'
 ---
 
 L'application Keeweb sur le catalogue de nextcloud - [apps.nextcloud.com/keeweb](https://apps.nextcloud.com/apps/keeweb)

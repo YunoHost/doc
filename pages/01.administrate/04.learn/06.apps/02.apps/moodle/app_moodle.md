@@ -3,6 +3,8 @@ title: Moodle
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_moodle'
 ---
 
 <img src="/images/moodle_logo.svg" height="80px" alt="moodle's logo"> Moodle

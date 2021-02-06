@@ -3,6 +3,8 @@ title: Weblate
 template: docs
 taxonomy:
     category: docs, apps
+routes:
+  default: '/app_weblate'
 ---
 
 <img src="/images/weblate_logo.svg" height="80px" alt="logo de weblate"> Weblate
