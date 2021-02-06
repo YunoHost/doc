@@ -17,9 +17,9 @@ You don't have to give your first and last names, you can use a nickname (when y
 To fork the source code allows you to create a new branch of development of a software source code or in this case the source code of the documentation. By creating a new branch, this allows you to modify the code and add your contributions without altering the code of the `master` branch, which is the public release of the documentation. This allows you not to have to write down everything at once, but to do it in several steps. (Especially for contributions that require more time).
 
 Forking a project on GitHub is extremely simple, just click on the Fork button, this will create a new repository on your GitHub account.
-![Screenshot GitHub fork button screenshot](/images/dug_fork.png)
+![Screenshot GitHub fork button screenshot](image://dug_fork.png)
 In the title of the new repository, you will see where the repository comes from, in this case `YunoHost/doc`.
-![Screenshots title and subtitle of the repository](/images/dug_fork_source.png)
+![Screenshots title and subtitle of the repository](image://dug_fork_source.png)
 
 > **Point of vigilance !**
 > If you forge the repository of another contributor than yunohost, you'll get the same files. Except that when you send your changes, they will be sent to the contributor and not to the yunohost repository. The advantage is that it allows you to develop another branch created by the contributor and work with another person on an improvement before submitting it to the main repository.
