@@ -1,0 +1,417 @@
+/*
+  WCAG color contrast formula
+  https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G18#G18-procedure
+
+  @see https://codepen.io/giana/project/full/ZWbGzD
+
+  This pen uses the non-standard Sass pow() function
+  https://css-tricks.com/snippets/sass/power-function/
+  Using it outside of CodePen requires you provide your own pow() function with support for decimals
+
+  To generate random colors, we're also using a two-variable random() function includded with compass.
+*/
+
+@function pow($number, $exponent) {
+  @if (round($exponent) != $exponent) {
+    @return exp($exponent * ln($number));
+  }
+    
+  $value: 1;
+  
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+     $value: $value * $number;
+    }
+  } @else if $exponent < 0 {
+    @for $i from 1 through -$exponent {
+      $value: $value / $number;
+    }
+  }
+
+  @return $value;
+}
+
+@function factorial($value) {
+  $result: 1;
+
+  @if $value == 0 {
+    @return $result;
+  }
+  
+  @for $index from 1 through $value {
+    $result: $result * $index;
+  }
+  
+  @return $result;
+}
+
+@function summation($iteratee, $input, $initial: 0, $limit: 100) {
+  $sum: 0;
+  
+  @for $index from $initial to $limit {
+    $sum: $sum + call($iteratee, $input, $index);
+  }
+  
+  @return $sum;
+}
+
+@function exp-maclaurin($x, $n) {
+  @return (pow($x, $n) / factorial($n));
+}
+
+@function exp($value) {
+  @return summation(exp-maclaurin, $value, 0, 100);
+}
+
+@function ln-maclaurin($x, $n) {
+  @return (pow(-1, $n + 1) / $n) * (pow($x - 1, $n));
+}
+
+@function ln($value) {
+  $ten-exp: 1;
+  $ln-ten: 2.30258509;
+  
+  @while ($value > pow(10, $ten-exp)) {
+    $ten-exp: $ten-exp + 1;
+  }
+  
+  @return summation(ln-maclaurin, $value / pow(10, $ten-exp), 1, 100) + $ten-exp * $ln-ten;
+}
+
+
+
+// Check if value is not a number, eg, NaN or Infinity
+@function is-nan($value) {
+  @return $value / $value != 1;
+}
+
+// Constrain number between two values
+@function clip($value, $min : 0.0001, $max : 0.9999) {
+  @return if($value > $max, $max, if($value < $min, $min, $value));
+}
+
+// Checks if value is within specified bounds, inclusive
+@function in-bounds($value, $min : 0, $max : 1) {
+  @return if($value >= $min and $value <= $max, true, false);
+}
+
+//== Step one: Convert
+
+// Returns an RGB channel processed as XYZ... or partly at least
+// See w3.org link for formula
+@function xyz($channel) {
+  $channel: $channel / 255;
+  
+  @return if($channel <= 0.03928, $channel / 12.92, pow((($channel + 0.055) / 1.055), 2.4));
+}
+
+// Reverse of xyz(). Returns XYZ value to RGB channel
+// https://en.wikipedia.org/wiki/SRGB
+@function srgb($channel) {  
+  @return 255 * if($channel <= 0.0031308, $channel * 12.92, 1.055 * pow($channel, 1/2.4) - 0.055);
+}
+
+//== Step two: Measure brightness
+
+// Returns relative luminance of color
+// See w3.org link for formula
+@function luminance($color) {
+  $red:   xyz(red($color));
+  $green: xyz(green($color));
+  $blue:  xyz(blue($color));
+  
+  @return $red * 0.2126 + $green * 0.7152 + $blue * 0.0722;
+}
+
+//== Step three: Check contrast
+
+// Checks if two colors pass minimum contrast requirements, option to return ratio instead of true/false
+// See w3.org link for formula
+@function check-contrast($color1, $color2 : #fff, $min-ratio : 'AA', $return-ratio : false) {
+  // Accept keywords for ratio
+  @if($min-ratio == 'AA' or $min-ratio == 'AAALG') { $min-ratio: 4.5; } 
+  @elseif($min-ratio == 'AALG') { $min-ratio: 3; } 
+  @elseif($min-ratio == 'AAA') { $min-ratio: 7; }
+  
+  // Check brightness of each color
+  $lum1: luminance($color1);
+  $lum2: luminance($color2);
+  
+  // Measure contrast ratio
+  $ratio: (max($lum1, $lum2) + 0.05) / (min($lum1, $lum2) + 0.05);
+  
+  // Return ratio if option set
+  @if($return-ratio) { @return $ratio; }
+  
+  // Else return boolean
+  @return if($ratio >= $min-ratio, true, false);
+}
+
+//== Step four: Scale luminance and lightness
+
+// Takes color, scales luminance, spits out new color
+@function scale-luminance($color, $target-luminance) {
+  // First, scale the channels by the required amount
+  $scale: $target-luminance / luminance($color);
+  
+  // And clip them, so we don't end up dividing by zero... among other things I forget
+  $red: clip(xyz(red($color))) * $scale;
+  $green: clip(xyz(green($color))) * $scale;
+  $blue: clip(xyz(blue($color))) * $scale;
+  
+  // Sometimes, that's not enough and one channel hits #ff or #00. We'll need to scale the other channels to compensate
+  $red-passes: in-bounds($red);
+  $green-passes: in-bounds($green);
+  $blue-passes: in-bounds($blue);
+  
+  @if(not $red-passes or not $green-passes or not $blue-passes) {
+    // First, pick a channel to be a baseline, so the rest can be expressed as ratios
+    $baseline: min($red, $green, $blue);
+
+    // Then set up the variables expressed in terms of the baseline
+    $r: $red / $baseline;
+    $g: $green / $baseline;
+    $b: $blue / $baseline;
+    
+    // Subtract any channel no longer in bounds
+    //-- TODO This needs to DRY. how to dry. help
+    @if(not $red-passes) {
+      $target-luminance: $target-luminance - 0.2126;
+      $r: 0;
+    }
+
+    @if(not $green-passes) {
+      $target-luminance: $target-luminance - 0.7152;
+      $g: 0;
+    }
+
+    @if (not $blue-passes) {
+      $target-luminance: $target-luminance - 0.0722;
+      $b: 0;
+    }
+    
+    // Now get the required difference by using the luminance() formula
+    $x: $target-luminance / ($r * 0.2126 + $g * 0.7152 + $b * 0.0722);
+
+    // And multiply the channels by this new per-channel luminance
+    @if($red-passes) { $red:   $r * $x; }
+    @if($green-passes) { $green: $g * $x; }
+    @if($blue-passes) { $blue:  $b * $x; }
+  }
+  
+  // Return the new color
+  @return rgb(srgb($red), srgb($green), srgb($blue));
+}
+
+// Scales lightness by 0.1% while checking contrast ratio. This is just a last-ditch effort to correct rounding errors
+@function scale-light($color1, $color2, $min-ratio, $operation, $iterations) {
+  // Loop this function for however many iterations are passed
+  @for $n from 1 through $iterations {
+    // Return color unchanged if it passes contrast check
+    @if(check-contrast($color1, $color2, $min-ratio)) {
+      @return $color1;
+    } @else {
+      // Otherwise use the built-in lighten() and darken() functions, which change the lightness channel (ie, the L in HSL)
+      // Our previous scale-luminance() function changes both saturation and lightness
+      $color1: if($operation == lighten, lighten($color1, 0.1%), darken($color1, 0.1%));
+    }
+  }
+
+  // Return the best color we've got
+  @return $color1;
+}
+
+//== Step six: Fix colors
+
+// Tries to fix contrast by adjusting $color1
+@function fix-color($color1, $color2 : #fff, $min-ratio : 'AA', $iterations : 5) {
+  // Accept keywords for ratio
+  @if($min-ratio == 'AA' or $min-ratio == 'AAALG') { $min-ratio: 4.5; }
+  @elseif($min-ratio == 'AALG') { $min-ratio: 3; }
+  @elseif($min-ratio == 'AAA') { $min-ratio: 7; }
+  
+  // If check fails, begin conversion
+  @if(not check-contrast($color1, $color2, $min-ratio)) {
+    // First get both luminances and clip so #fff and #000 don't break anything
+    $lum1: clip(luminance($color1));
+    $lum2: clip(luminance($color2));
+
+    // Defaults we'll set later
+    $target-luminance: $lum1;
+    $operation: '';
+    
+    // If the same luminance is passed, lighten/darken one to make conversion possible
+    @if($lum1 == $lum2) {
+      // Darken light colors and lighten dark colors, so we have more room to scale them (eg, we won't hit #fff or #000 before we can fix them)
+      @if($lum1 > 0.5) {
+        $color1: darken($color1, 1%);
+        $lum1: luminance($color1);
+      } @else {
+        $color1: lighten($color1, 1%);
+        $lum1: luminance($color1);
+      }
+    }
+    
+    // Now let's get the target luminance. This basically reverses check-contrast(), so we know what luminance to aim for
+    @if(max($lum1, $lum2) == $lum1) {
+      $target-luminance: (($lum2 + 0.05) * $min-ratio - 0.05);
+      $operation: lighten;
+    } @else {
+      $target-luminance: (($lum2 + 0.05) / $min-ratio - 0.05);
+      $operation: darken;
+    }
+    
+    // Skip the whole conversion if we just need #fff or #000
+    @if($target-luminance >= 1) { @return #fff; } 
+    @elseif ($target-luminance <= 0) { @return #000; } 
+    @else {      
+      // Scale color by calculated difference to arrive at target luminance
+      $color1: scale-luminance($color1, $target-luminance);
+
+      // Try to fix any rounding errors by lightening or darkening
+      $color1: scale-light($color1, $color2, $min-ratio, $operation, $iterations);      
+    }
+
+  }
+  
+  // Tada
+  @return $color1;
+}
+
+// Tries to fix contrast of both colors by weighted balance (0–100)
+// 0 = don't change first color, change second color; 
+// 100 = change first color, don't change second color
+@function fix-contrast($color1, $color2, $min-ratio : 'AA', $balance : 50) {
+  @if(not check-contrast($color1, $color2, $min-ratio)) {
+    // Fix colors
+    $color-fixed-1: fix-color($color1, $color2, $min-ratio);
+    $color-fixed-2: fix-color($color2, $color1, $min-ratio);
+
+    // We're just fixing both colors, then mixing back the original color using the native Sass function. Easy-peasy
+    $color1: mix($color-fixed-1, $color1, $balance);
+    $color2: mix($color2, $color-fixed-2, $balance);
+
+    // If the current configuration doesn't work, try to fix it
+    @if (not check-contrast($color1, $color2, $min-ratio)) {
+      // This happens if, again, we reach #fff or #000 before we want to
+      @if(not in-bounds(luminance($color-fixed-2), 0.00002, 0.99936)) {
+        // So we scale the opposite color to compensate
+        $color1: fix-color($color1, $color2, $min-ratio);
+        @warn "Your settings didn't work. Modifying first color in an attempt to fix."
+      }
+      @if(not in-bounds(luminance($color-fixed-1), 0.00002, 0.99936)) {
+        $color2: fix-color($color2, $color1, $min-ratio);
+        @warn "Your settings didn't work. Modifying second color in an attempt to fix."
+      }
+    }
+  }
+
+  // Returns a list with both colors, use nth($result, 1) and nth($result, 2) to get colors. See below for example 
+  @return $color1, $color2;
+}
+
+// Get the best contrast when given three colors
+@function best-contrast($color, $color1, $color2, $ratio1 : 'AA', $ratio2 : $ratio1) {
+  @if(not check-contrast($color, $color1, $ratio1) or not check-contrast($color, $color2, $ratio2)) {     
+    // First get the luminance of the two static colors
+    $lum1: luminance(fix-color($color1, $color1, $ratio1));
+    $lum2: luminance(fix-color($color2, $color2, $ratio2));
+
+    // Average the luminance together to get the maximum difference
+    $average-lum: ($lum1 + $lum2) / 2;
+
+    // Then set changing color to this luminance
+    $color: scale-luminance($color, $average-lum);
+
+    // Warn if it fails contrast check
+    @if(not check-contrast($color, $color1, $ratio1)) {
+      @warn 'Your color fails to contrast with #{$color1}';
+    }
+
+    @if(not check-contrast($color, $color2, $ratio2)) {
+      @warn 'Your color fails to contrast with #{$color2}';
+    }
+  }
+  
+  @return $color;
+}
+
+
+//====== Helper functions
+
+@function randomColor() {
+  $color: hsl(random(360), random(100), random(100));
+  @return $color;
+}
+
+@mixin show-color($color) {
+  background: $color;
+  color: if(luminance($color) > 0.55, #000, #fff);
+  
+  &::after {
+    content: '#{$color}';
+  }
+}
+
+//====== Put in your own settings here
+$ratio: random(21); // A number between 1 and 21
+$balance: random(100); // A number between 0 and 100
+
+// Any valid color
+$color1: randomColor(); 
+$color2: scale-luminance(randomColor(), luminance($color1) + 0.1);
+$color3: randomColor();
+
+.ratio::after { content: '#{$ratio}'; }
+.balance::after { content: '#{$balance}'; }
+
+.color-block .color1 { @include show-color($color1); }
+.color-block .color2 { @include show-color($color2); }
+
+.fix-color {
+  .color:nth-child(2) { @include show-color(fix-color($color1, $color2, $ratio)); }
+  .color:nth-child(3) { @include show-color(fix-color($color2, $color1, $ratio)); }
+}
+
+.fix-contrast {
+  .color:nth-child(2) { @include show-color(nth(fix-contrast($color1, $color2, $ratio, $balance),1)); }
+  .color:nth-child(3) { @include show-color(nth(fix-contrast($color1, $color2, $ratio, $balance),2)); }
+}
+
+.best-contrast {
+  .color:nth-child(2) { @include show-color($color3); }
+  .color:nth-child(3) { @include show-color(best-contrast($color3, $color1, $color2, $ratio, $ratio)); }
+}
+
+.scale-luminance {
+  .color:nth-child(2) { @include show-color(scale-luminance($color1, luminance($color2))); }
+}
+
+.check-contrast {
+  .result::after { content: '#{check-contrast($color1, $color2, $ratio)}' ;}
+}
+
+.luminance {
+  .result::after { content: '#{luminance($color1), luminance($color2)}' ;}
+}
+
+
+// Amplify (strengthen) color by percentage
+// @see https://www.scrivito.com/blog/sass-magic
+@function amplify($color, $percentage) {  
+  @if (lightness( $color ) <= 50) {
+    @return darken($color, $percentage);
+  }
+  @else {
+    @return lighten($color, $percentage);
+  }
+}
+// Diminish (weaken) color by percentage
+@function diminish($color, $percentage) {  
+  @if (lightness( $color ) >= 50) {
+    @return darken($color, $percentage);
+  }
+  @else {
+    @return lighten($color, $percentage);
+  }
+}

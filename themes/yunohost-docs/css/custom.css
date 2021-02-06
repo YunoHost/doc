@@ -1,0 +1,45 @@
+.off-canvas .learn-sidebar:before {
+ background: linear-gradient(150deg, #8E1313 0, #0B1B41 100%);
+}
+
+.highlightable h5:first-of-type {
+ margin-top: 2rem;
+}
+
+.highlightable h5 {
+ margin-top: 1rem;
+ color: #ECECFE;
+}
+
+#chapter {
+ max-width: 80%;
+}
+
+img.inline {
+ display:inline;
+ margin:5px 15px 5px 5px;
+ vertical-align: middle;
+}
+
+img.center {
+ display: block;
+ margin:5px 15px 5px 5px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.nomargin * {
+ margin: 0px auto;
+}
+
+#top-bar #breadcrumbs > span span, #top-bar #breadcrumbs > a span {
+ padding: 0 !important;
+}
+
+#top-bar #breadcrumbs > span, #top-bar #breadcrumbs > a {
+ padding: 0 !important;
+}
+
+#top-bar #breadcrumbs > a {
+ padding: 0;
+}

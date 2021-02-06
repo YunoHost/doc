@@ -1,0 +1,5 @@
+git:
+    learn2:
+        url: https://github.com/getgrav/grav-theme-learn2
+        path: user/themes/learn2
+        branch: master

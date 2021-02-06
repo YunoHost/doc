@@ -1,0 +1,24 @@
+%button {
+	display: inline-block;
+	padding: 7px 12px;
+	&:active {
+		margin: 2px 0 -2px 0;
+	}
+}
+
+@mixin button-color($color) {
+	background: $color !important;
+	color: maximize-color-contrast($color) !important;
+	box-shadow: 0 3px 0 amplify($color, 6%) !important;
+	&:hover {
+		background: amplify($color, 6%) !important;
+		box-shadow: 0 3px 0 amplify($color, 12%) !important;
+		color: maximize-color-contrast($color) !important;
+	}
+	&:active {
+		box-shadow: 0 1px 0 amplify($color, 12%) !important;
+	}
+	i {
+		color: maximize-color-contrast($color) !important;
+	}
+}

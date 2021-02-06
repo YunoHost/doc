@@ -1,0 +1,252 @@
+title: Presentation Options
+extends@:
+  type: default
+  context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        content:
+          type: tab
+          fields:
+
+            content:
+              default: "# Your First Slide Title\n\n### Slide Subtitle\n\n---\n\n# Your Second Slide Title\n\nYour slide text goes here."
+
+            links:
+              type: presentation_button_bar
+              ordering@: content
+              fields:
+                view:
+                  type: presentation_dropdown
+                  ordering@: links
+                  fields:
+                    view:
+                      label: PLUGIN_PRESENTATION.ADMIN.LINKS.VIEW
+                      mode: view
+                    view_notes:
+                      label: PLUGIN_PRESENTATION.ADMIN.LINKS.VIEW_NOTES
+                      mode: view_notes
+                speaker:
+                  type: presentation_dropdown
+                  ordering@: view
+                  fields:
+                    speaker:
+                      label: PLUGIN_PRESENTATION.ADMIN.LINKS.SPEAKER
+                      mode: admin
+                    speaker_notes:
+                      label: PLUGIN_PRESENTATION.ADMIN.LINKS.SPEAKER_NOTES
+                      mode: admin_notes
+                print:
+                  type: presentation_dropdown
+                  ordering@: speaker
+                  fields:
+                    print:
+                      label: PLUGIN_PRESENTATION.ADMIN.LINKS.PRINT
+                      mode: print
+                    print_notes:
+                      label: PLUGIN_PRESENTATION.ADMIN.LINKS.PRINT_NOTES
+                      mode: print_notes
+                    print_styled:
+                      label: PLUGIN_PRESENTATION.ADMIN.LINKS.PRINT_STYLED
+                      mode: print_styled
+                    print_styled_notes:
+                      label: PLUGIN_PRESENTATION.ADMIN.LINKS.PRINT_STYLED_NOTES
+                      mode: print_styled_notes
+                save:
+                  type: presentation_dropdown
+                  ordering@: print
+                  label: PLUGIN_PRESENTATION.ADMIN.ADVANCED.SAVE.ASYNC.LABEL
+                  prefix: PLUGIN_PRESENTATION.ADMIN.ADVANCED.SAVE.PREFIX
+            textsize:
+              type: section
+              title: PLUGIN_PRESENTATION.ADMIN.OPTIONS.TEXTSIZE.TITLE
+              underline: true
+              fields:
+                header.textsize.scale:
+                  type: select
+                  label: PLUGIN_PRESENTATION.ADMIN.OPTIONS.TEXTSIZE.SCALE.LABEL
+                  description: PLUGIN_PRESENTATION.ADMIN.OPTIONS.TEXTSIZE.SCALE.DESCRIPTION
+                  data-options@: '\Grav\Plugin\PresentationPlugin::getModularScaleBlueprintOptions'
+                header.textsize.modifier:
+                  type: number
+                  label: PLUGIN_PRESENTATION.ADMIN.OPTIONS.TEXTSIZE.MODIFIER.LABEL
+                  description: PLUGIN_PRESENTATION.ADMIN.OPTIONS.TEXTSIZE.MODIFIER.DESCRIPTION
+                  validate:
+                    type: int
+                    min: 0
+                    max: 100
+                    step: 0.05
+            style:
+              type: section
+              title: PLUGIN_PRESENTATION.ADMIN.STYLE.TITLE
+              underline: true
+              fields:
+                header.style.header-font-family:
+                  type: text
+                  label: PLUGIN_PRESENTATION.ADMIN.STYLE.FONT.HEADER.LABEL
+                  description: PLUGIN_PRESENTATION.ADMIN.STYLE.FONT.HEADER.DESCRIPTION
+                header.style.header-color:
+                  type: colorpicker
+                  label: PLUGIN_PRESENTATION.ADMIN.STYLE.FONT.HEADER_COLOR.LABEL
+                  description: PLUGIN_PRESENTATION.ADMIN.STYLE.FONT.HEADER_COLOR.DESCRIPTION
+                header.style.block-font-family:
+                  type: text
+                  label: PLUGIN_PRESENTATION.ADMIN.STYLE.FONT.BLOCK.LABEL
+                  description: PLUGIN_PRESENTATION.ADMIN.STYLE.FONT.BLOCK.DESCRIPTION
+                header.style.block-color:
+                  type: colorpicker
+                  label: PLUGIN_PRESENTATION.ADMIN.STYLE.FONT.BLOCK_COLOR.LABEL
+                  description: PLUGIN_PRESENTATION.ADMIN.STYLE.FONT.BLOCK_COLOR.DESCRIPTION
+                header.style.background-color:
+                  type: colorpicker
+                  label: PLUGIN_PRESENTATION.ADMIN.STYLE.BACKGROUND-COLOR.LABEL
+                header.style.background-image:
+                  type: filepicker
+                  folder: "@self"
+                  preview_images: true
+                  label: PLUGIN_PRESENTATION.ADMIN.STYLE.BACKGROUND-IMAGE.LABEL
+                  accept:
+                    - .png
+                    - .jpg
+                    - .gif
+                    - "image/*"
+                header.style.background-size:
+                  type: select
+                  label: PLUGIN_PRESENTATION.ADMIN.STYLE.BACKGROUND-SIZE.LABEL
+                  options:
+                    "": PLUGIN_PRESENTATION.ADMIN.COMMON.NONE
+                    auto: PLUGIN_PRESENTATION.ADMIN.STYLE.BACKGROUND-SIZE.OPTIONS.AUTO
+                    cover: PLUGIN_PRESENTATION.ADMIN.STYLE.BACKGROUND-SIZE.OPTIONS.COVER
+                    contain: PLUGIN_PRESENTATION.ADMIN.STYLE.BACKGROUND-SIZE.OPTIONS.CONTAIN
+                    initial: PLUGIN_PRESENTATION.ADMIN.COMMON.INITIAL
+                    inherit: PLUGIN_PRESENTATION.ADMIN.COMMON.INHERIT
+                header.style.background-repeat:
+                  type: select
+                  label: PLUGIN_PRESENTATION.ADMIN.STYLE.BACKGROUND-REPEAT.LABEL
+                  options:
+                    "": PLUGIN_PRESENTATION.ADMIN.COMMON.NONE
+                    no-repeat: PLUGIN_PRESENTATION.ADMIN.STYLE.BACKGROUND-REPEAT.OPTIONS.NO-REPEAT
+                    repeat: PLUGIN_PRESENTATION.ADMIN.STYLE.BACKGROUND-REPEAT.OPTIONS.REPEAT
+                    repeat-x: PLUGIN_PRESENTATION.ADMIN.STYLE.BACKGROUND-REPEAT.OPTIONS.REPEAT-X
+                    repeat-y: PLUGIN_PRESENTATION.ADMIN.STYLE.BACKGROUND-REPEAT.OPTIONS.REPEAT-Y
+                    space: PLUGIN_PRESENTATION.ADMIN.STYLE.BACKGROUND-REPEAT.OPTIONS.SPACE
+                    round: PLUGIN_PRESENTATION.ADMIN.STYLE.BACKGROUND-REPEAT.OPTIONS.ROUND
+                    initial: PLUGIN_PRESENTATION.ADMIN.COMMON.INITIAL
+                    inherit: PLUGIN_PRESENTATION.ADMIN.COMMON.INHERIT
+                header.style.justify-content:
+                  type: select
+                  label: PLUGIN_PRESENTATION.ADMIN.STYLE.JUSTIFY-CONTENT.LABEL
+                  help: PLUGIN_PRESENTATION.ADMIN.STYLE.JUSTIFY-CONTENT.HELP
+                  options:
+                    "": PLUGIN_PRESENTATION.ADMIN.COMMON.NONE
+                    center: PLUGIN_PRESENTATION.ADMIN.STYLE.JUSTIFY-CONTENT.OPTIONS.CENTER
+                    start: PLUGIN_PRESENTATION.ADMIN.STYLE.JUSTIFY-CONTENT.OPTIONS.START
+                    end: PLUGIN_PRESENTATION.ADMIN.STYLE.JUSTIFY-CONTENT.OPTIONS.END
+                    flex-start: PLUGIN_PRESENTATION.ADMIN.STYLE.JUSTIFY-CONTENT.OPTIONS.FLEX-START
+                    flex-end: PLUGIN_PRESENTATION.ADMIN.STYLE.JUSTIFY-CONTENT.OPTIONS.FLEX-END
+                    left: PLUGIN_PRESENTATION.ADMIN.STYLE.JUSTIFY-CONTENT.OPTIONS.LEFT
+                    right: PLUGIN_PRESENTATION.ADMIN.STYLE.JUSTIFY-CONTENT.OPTIONS.RIGHT
+                    normal: PLUGIN_PRESENTATION.ADMIN.STYLE.JUSTIFY-CONTENT.OPTIONS.NORMAL
+                    space-between: PLUGIN_PRESENTATION.ADMIN.STYLE.JUSTIFY-CONTENT.OPTIONS.SPACE-BETWEEN
+                    space-around: PLUGIN_PRESENTATION.ADMIN.STYLE.JUSTIFY-CONTENT.OPTIONS.SPACE-AROUND
+                    space-evenly: PLUGIN_PRESENTATION.ADMIN.STYLE.JUSTIFY-CONTENT.OPTIONS.SPACE-EVENLY
+                    stretch: PLUGIN_PRESENTATION.ADMIN.STYLE.JUSTIFY-CONTENT.OPTIONS.STRETCH
+                    initial: PLUGIN_PRESENTATION.ADMIN.COMMON.INITIAL
+                    inherit: PLUGIN_PRESENTATION.ADMIN.COMMON.INHERIT
+                header.style.align-items:
+                  type: select
+                  label: PLUGIN_PRESENTATION.ADMIN.STYLE.ALIGN-ITEMS.LABEL
+                  help: PLUGIN_PRESENTATION.ADMIN.STYLE.ALIGN-ITEMS.HELP
+                  options:
+                    "": PLUGIN_PRESENTATION.ADMIN.COMMON.NONE
+                    center: PLUGIN_PRESENTATION.ADMIN.STYLE.ALIGN-ITEMS.OPTIONS.CENTER
+                    start: PLUGIN_PRESENTATION.ADMIN.STYLE.ALIGN-ITEMS.OPTIONS.START
+                    end: PLUGIN_PRESENTATION.ADMIN.STYLE.ALIGN-ITEMS.OPTIONS.END
+                    flex-start: PLUGIN_PRESENTATION.ADMIN.STYLE.ALIGN-ITEMS.OPTIONS.FLEX-START
+                    flex-end: PLUGIN_PRESENTATION.ADMIN.STYLE.ALIGN-ITEMS.OPTIONS.FLEX-END
+                    self-start: PLUGIN_PRESENTATION.ADMIN.STYLE.ALIGN-ITEMS.OPTIONS.SELF-START
+                    self-end: PLUGIN_PRESENTATION.ADMIN.STYLE.ALIGN-ITEMS.OPTIONS.SELF-END
+                    normal: PLUGIN_PRESENTATION.ADMIN.STYLE.ALIGN-ITEMS.OPTIONS.NORMAL
+                    baseline: PLUGIN_PRESENTATION.ADMIN.STYLE.ALIGN-ITEMS.OPTIONS.BASELINE
+                    'first baseline': PLUGIN_PRESENTATION.ADMIN.STYLE.ALIGN-ITEMS.OPTIONS.FIRST-BASELINE
+                    'last baseline': PLUGIN_PRESENTATION.ADMIN.STYLE.ALIGN-ITEMS.OPTIONS.LAST-BASELINE
+                    initial: PLUGIN_PRESENTATION.ADMIN.COMMON.INITIAL
+                    inherit: PLUGIN_PRESENTATION.ADMIN.COMMON.INHERIT
+                header.horizontal:
+                  type: toggle
+                  label: PLUGIN_PRESENTATION.ADMIN.OPTIONS.HORIZONTAL.LABEL
+                  help: PLUGIN_PRESENTATION.ADMIN.OPTIONS.HORIZONTAL.HELP
+                  description: PLUGIN_PRESENTATION.ADMIN.OPTIONS.HORIZONTAL.DESCRIPTION
+                  highlight: 0
+                  options:
+                    1: PLUGIN_PRESENTATION.ADMIN.OPTIONS.HORIZONTAL.OPTIONS.HORIZONTAL
+                    0: PLUGIN_PRESENTATION.ADMIN.OPTIONS.HORIZONTAL.OPTIONS.VERTICAL
+                  validate:
+                    type: bool
+        options:
+          type: tab
+          fields:
+            options:
+              type: section
+              title: PLUGIN_PRESENTATION.ADMIN.COMMON.TITLE
+              underline: true
+              fields:
+                header.class:
+                  type: selectize
+                  label: PLUGIN_PRESENTATION.ADMIN.OPTIONS.CLASS.LABEL
+                  help: PLUGIN_PRESENTATION.ADMIN.OPTIONS.CLASS.HELP
+                  validate:
+                    type: commalist
+                header.footer:
+                  type: text
+                  label: PLUGIN_PRESENTATION.ADMIN.ADVANCED.FOOTER.LABEL
+                  description: PLUGIN_PRESENTATION.ADMIN.ADVANCED.FOOTER.DESCRIPTION
+                header.shortcodes:
+                  type: toggle
+                  label: PLUGIN_PRESENTATION.ADMIN.ADVANCED.SHORTCODES.LABEL
+                  description: PLUGIN_PRESENTATION.ADMIN.ADVANCED.SHORTCODES.DESCRIPTION
+                  highlight: 1
+                  options:
+                    1: PLUGIN_ADMIN.ENABLED
+                    0: PLUGIN_ADMIN.DISABLED
+                  validate:
+                    type: bool
+        advanced:
+          type: tab
+          fields:
+            advanced:
+              type: section
+              title: PLUGIN_PRESENTATION.ADMIN.ADVANCED.TAB_TITLE
+              underline: true
+              fields:
+                header.presentation.content:
+                  type: select
+                  label: PLUGIN_PRESENTATION.ADMIN.ADVANCED.CONTENT.LABEL
+                  description: PLUGIN_PRESENTATION.ADMIN.ADVANCED.CONTENT.DESCRIPTION
+                  data-options@:
+                    [
+                      '\Grav\Plugin\PresentationPlugin::getClassNamesBlueprintOptions',
+                      "Content",
+                    ]
+                header.presentation.parser:
+                  type: select
+                  label: PLUGIN_PRESENTATION.ADMIN.ADVANCED.PARSER.LABEL
+                  description: PLUGIN_PRESENTATION.ADMIN.ADVANCED.PARSER.DESCRIPTION
+                  data-options@:
+                    [
+                      '\Grav\Plugin\PresentationPlugin::getClassNamesBlueprintOptions',
+                      "Parser",
+                    ]
+                header.presentation.styles:
+                  type: select
+                  label: PLUGIN_PRESENTATION.ADMIN.ADVANCED.STYLES.LABEL
+                  description: PLUGIN_PRESENTATION.ADMIN.ADVANCED.STYLES.DESCRIPTION
+                  data-options@:
+                    [
+                      '\Grav\Plugin\PresentationPlugin::getClassNamesBlueprintOptions',
+                      "Transport",
+                    ]

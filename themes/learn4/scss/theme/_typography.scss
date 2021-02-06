@@ -1,0 +1,452 @@
+html {
+    @include fluid-type($size-xs, $size-xl, $min-responsive-font-size, $html-font-size);
+}
+
+body {
+    font-weight: 300;
+    letter-spacing: -0.015rem;
+    ::selection {
+        background: $selection-color;
+    }
+}
+
+div {
+    min-width: 0;
+}
+
+pre {
+    padding: 1em;
+}
+
+mark {
+    padding: 0;
+}
+
+// Header Overrides
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font-family;
+    letter-spacing: -0.05rem;
+    margin-top: 2rem;
+    color: darken($body-font-color, 10%);
+    line-height: 1;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+
+    @include breakpoint(sm) {
+        font-size: 2rem;
+    }
+}
+
+a {
+    @extend .default-animation;
+
+    &:hover, &:focus, &:active, &.active {
+        color: $link-color-dark;
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    &:visited {
+        color: $link-color;
+    }
+}
+
+// Tables
+.table-keycol {
+    overflow: hidden;
+}
+
+.table {
+    width: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    overflow-x: auto;
+
+    margin-bottom: 1.5rem;
+
+    @if $rtl == true {
+        text-align: right;
+    } @else {
+        text-align: left;
+    }
+
+    tbody {
+        tr:nth-of-type(odd) {
+            background: $bg-color;
+        }
+        tr {
+            &.active {
+                background: $bg-color-dark;
+            }
+        }
+    }
+
+    td,
+    th {
+        border-bottom: $border-width solid $border-color;
+        padding: $unit-3 $unit-2;
+    }
+    th {
+        border-bottom-width: $border-width-lg;
+    }
+
+    .table-keycol & {
+        tr > td:first-child, tr > th:first-child  {
+            white-space: nowrap;
+            width: 15%;
+        }
+    }
+}
+
+
+img, .video-container {
+    max-width: 100%;
+    margin: 3rem auto;
+    display: block;
+    text-align: center;
+
+
+    &.border {
+        border: 2px solid #e6e6e6 !important;
+        padding: 2px;
+    }
+
+    &.shadow {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid $border-color;
+}
+
+ul, ol {
+    margin: 0 0 1.2rem 0;
+
+    ul, ol {
+        margin: 0;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    li {
+        padding-top: 0;
+    }
+}
+
+#chapter {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+
+    h3 {
+        opacity: 0.7;
+
+        & + h1 {
+            display: inline-block;
+            margin: 1rem auto 2rem;
+            border-bottom: 3px solid $gray-color-light;
+
+            @include breakpoint(sm) {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+#body-inner {
+
+    :target:before {
+        content: "";
+        display: block;
+        margin-top: -60px;
+        height: 60px;
+        width: 1px;
+    }
+}
+
+// Debug Code Blocks
+pre.xdebug-var-dump {
+    background: #fafafa;
+    display: block;
+    padding: 1rem;
+    line-height: 1.5;
+    color: inherit;
+    border-radius: 2px;
+    overflow-x: auto;
+}
+
+#body-inner {
+
+    pre {
+        margin: 0.5rem 0;
+        ::selection {
+            background: $selection-color;
+        }
+    }
+
+    code {
+        word-break: break-word;
+    }
+
+    .code-toolbar {
+        margin: 0.5rem 0;
+        pre[class*="language-"] {
+            margin: 0;
+        }
+    }
+
+    code[class*="language-"], pre[class*="language-"] {
+        font-family: $mono-font-family;
+    }
+
+    pre[class*="language-"] {
+        font-size: .7rem;
+        code {
+            padding: initial;
+            font-size: .7rem;
+        }
+    }
+
+    .no-margin-top {
+        margin-top: -1em;
+        .code-toolbar {
+            margin-top: 0;
+            > pre {
+                padding-top: 3px;
+            }
+        }
+
+    }
+
+    .no-margin-bottom .code-toolbar {
+        margin-bottom: 0;
+    }
+
+    .line-highlight {
+        background: linear-gradient(to right, rgba($highlight-color, 0.3) 70%, rgba($highlight-color, 0));
+        &:before {
+            background-color: darken($highlight-color, 30%);
+            //color: #999;
+            box-shadow: none;
+            top: 0.15rem;
+        }
+    }
+}
+
+// Icon Tweaks
+i.fa {
+    &.fa-heart, &.fa-heart-o {
+        &.pulse {
+            color: #920
+        }
+    }
+}
+
+// Font Weights
+b,
+strong {
+    font-weight: 500;
+}
+
+.heavy {
+    font-weight: 700;
+}
+
+.light {
+    font-weight: 200;
+}
+
+// Error configuration
+#error {
+    text-align: center;
+    position: relative;
+    margin-top: 5rem;
+
+    .icon {
+        font-size: 50px;
+    }
+}
+
+// Messages
+#messages {
+    margin-bottom: 1rem;
+
+    .icon {
+        font-size: 1rem;
+    }
+}
+
+// Lists
+ul,
+ol {
+    margin-left: $unit-8;
+
+    ul,
+    ol {
+        margin-left: $unit-8;
+    }
+}
+
+ul {
+    list-style: disc outside;
+}
+
+ol {
+    list-style: decimal outside;
+}
+
+#navigation {
+    a.github-link {
+        font-size: inherit !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+
+        i {
+            padding-right: 5px;
+        }
+    }
+}
+
+// Tabs
+$tabs-color: #767693;
+$tabs-bg: #F8F9FA;
+.tabs-wrapper {
+
+    &.ui-theme-badges {
+        background: $tabs-bg;
+        border: 1px solid darken($tabs-bg, 2%);
+        border-radius: 0;
+
+        .tabs-nav {
+            margin: 0.25rem;
+
+            & > li {
+                margin-top: 0;
+            }
+            li {
+                a {
+                    color: $tabs-color;
+                    background: darken($tabs-bg, 6%);
+                    border-radius: 0;
+                }
+                &.current {
+                    a {
+                        background: darken($tabs-bg, 40%);
+                        color: #fff;
+                    }
+                }
+                &:not(.current) {
+                    a:hover {
+                        background: darken($tabs-bg, 9%)
+                    }
+                }
+            }
+        }
+
+        .tabs {
+            .tab {
+                padding: 0.25rem 0;
+
+                pre {
+                    margin-top: 0.5rem !important;
+                    margin-bottom: 0.5rem !important;
+                }
+
+
+            }
+        }
+
+    }
+
+}
+
+// Notices
+.notices {
+    margin: 1.5rem 0;
+    padding: 0.4rem;
+
+    p {
+        margin: 0 0 1.5rem 0.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &.info {
+        border-left: 5px solid #f0ad4e;
+        background: #fcf8f2;
+        color: #df8a13;
+    }
+
+    &.warning {
+        border-left: 5px solid #d9534f;
+        background: #fdf7f7;
+        color: #b52b27;
+    }
+
+    &.note {
+        border-left: 5px solid #5bc0de;
+        background: #f4f8fa;
+        color: #28a1c5;
+    }
+
+    &.tip {
+        border-left: 5px solid #5cb85c;
+        background: #f1f9f1;
+        color: #3d8b3d;
+    }
+
+}
+
+
+// Wrap fixes
+audio {
+    max-width: 100%;
+}
+
+pre {
+    max-width: 100%;
+}
+
+pre[class*="language-"]:not(.command-line) {
+
+    &, &>code[class*="language-"] {
+        word-break: break-word;
+        white-space: pre-wrap;
+    }
+}
+
+.tntsearch-results em {
+    @include label-variant($body-font-color, $highlight-color);
+    border-bottom: $unit-o solid darken($highlight-color, 15%);
+    border-radius: $border-radius;
+    padding: $unit-o $unit-h 0;
+}
+
+//pre.command-line {
+//    &, & > code {
+//        word-break: initial;
+//        white-space: pre
+//    }
+//}
+
