@@ -11,9 +11,11 @@ routes:
 
 ### Requisiti
 
-![](image://laptop.png?resize=200)
-![](image://desktop.jpg)
-![](image://nettop.jpg)
+[center]
+![Laptop](image://laptop.png?resize=200,200&class=inline)
+![Desktop](image://desktop.jpg?resize=200,200&class=inline)
+![Nettop](image://nettop.jpg?resize=200,200&class=inline)
+[/center]
 
 * Un computer con architettura x86: laptop, nettop, netbook, desktop.    
 Puoi usare qualsiasi computer con minimo 256 MB di ram**.

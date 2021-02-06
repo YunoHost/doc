@@ -16,75 +16,58 @@ routes:
 
 ---
 
-<h1 div dir="rtl" style="font-weight: 100">التجريب</h1>
+## التجريب
 
-<div class="row">
+[columns][center]
 
-<div class="col col-md-3 text-center">
-<a href="/try"><img height=150 src="/images/logo.png" style="vertical-align:bottom"><b><p>الخادوم التجريبي</p></b></a>
-</div>
+[[figure caption="الخادوم التجريبي"]![](image://logo.png?resize=150&class=inline)[/figure]](/try)
 
-<div class="col col-md-3 text-center">
-<a href="/install_on_virtualbox"><img src="/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>التجريب على خادوم إفتراضي</p></b></a>
-</div>
+[[figure caption="التجريب على خادوم إفتراضي"]
+![](image://virtualbox.png?resize=150&class=inline)
+[/figure]](/install_on_virtualbox)
 
-</div>
+[/center][/columns]
 
-<br>
+## عملية النتصيب في المنزل
 
----
+[columns count=3][center]
 
-<h1 dir="rtl" style="font-weight: 100">عملية النتصيب في المنزل</h1>
+[[figure class="nomargin" caption="على راسبيري باي"]
+![](image://raspberrypi.jpg?resize=150,150)
+[/figure]](/install_on_raspberry)
+  
+[[figure class="nomargin" caption="على بطاقة أي أر آم ARM"]
+![](image://olinuxino.jpg?resize=150,150)
+[/figure]](/install_on_arm_board)
+  
+[[figure class="nomargin" caption="على حاسوب عادي"]
+![](image://computer.png?resize=150,150)
+[/figure]](/install_iso)
 
-<div class="row">
+[/center][/columns]
 
-<div class="col col-md-3 text-center">
-<a href="/install_on_raspberry"><img src="/images/raspberrypi.jpg" height=150 style="vertical-align:bottom"><b><p>على راسبيري باي</p></b></a>
-</div>
+## التنصيب عن بُعد
 
-<div class="col col-md-3 text-center">
-<a href="/install_on_arm_board"><img src="/images/cubieboard2.png" height=150 style="vertical-align:bottom"><b><p dir="rtl">على بطاقة أي أر آم ARM</p></b></a>
-</div>
+!!! [fa=fa-heart /] بإِمكانْ جمعيات مُزَوِّدي الإنترنت القريبة منكم أن تُوفّر لكم *خادوماً إفتراضياً خاصاً* (VPS) ، خادوم يُديره بشرٌ و يحترمُ قيمةَ المُستخدِمين و [حِياديّةَ الإنترنت](https://en.wikipedia.org/wiki/Net_neutrality) ! إطّلعوا على [هذه الصفحة](https://db.ffdn.org/) للمزيد مِن المعلومات.
 
-<div class="col col-md-3 text-center">
-<a href="/install_iso"><img src="/images/computer.png" height=150 style="vertical-align:bottom"><b><p>على حاسوب عادي</p></b></a>
-</div>
+[center]
 
-</div>
+[[figure class="nomargin" caption="على خادوم مُستضاف أو خادوم إفتراضي خاص (VPS)"]
+![](image://vps.png?resize=150,150)
+[/figure]](/install_on_vps)
 
-<br>
+[/center]
 
----
+## طُرُق مُتَقدِّمة / أخرى
 
-<h1 dir="rtl" style="font-weight: 100">التنصيب عن بُعد</h1>
+[columns count=2][center]
 
-<div dir="rtl" class="alert alert-info" markdown="1">
-<span class="glyphicon glyphicon-heart"></span> بإِمكانْ جمعيات مُزَوِّدي الإنترنت القريبة منكم أن تُوفّر لكم *خادوماً إفتراضياً خاصاً* (VPS) ، خادوم يُديره بشرٌ و يحترمُ قيمةَ المُستخدِمين و [حِياديّةَ الإنترنت](https://fr.wikipedia.org/wiki/Neutralit%C3%A9_du_r%C3%A9seau) ! إطّلعوا على [هذه الصفحة](https://db.ffdn.org/) للمزيد مِن المعلومات.
-</div>
+[[figure class="nomargin" caption="على ديبيان 9 / ستريتش"]
+![](image://debian-logo.png?resize=150,150)
+[/figure]](/install_on_debian)
 
-<div class="row">
+[[figure class="nomargin" caption="Dev environment in LXD/LXC"]
+![](image://lxc.png?resize=150,150)
+[/figure]](/dev)
 
-<div class="block-center text-center">
-<a href="/install_on_vps"><img src="/images/vps.png" height=150 style="vertical-align:bottom; text-align:center"><b><p dir="rtl">على خادوم مُستضاف أو خادوم إفتراضي خاص (VPS)</p></b></a>
-</div>
-
-</div>
-
-<br>
-
----
-
-<h1 dir="rtl" style="font-weight: 100">طُرُق مُتَقدِّمة / أخرى</h1>
-
-<div class="row">
-
-<div class="col col-md-3 text-center">
-<a href="/install_on_debian"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
-<b><p>على ديبيان 9 / ستريتش</p></b></a>
-</div>
-
-<div class="col col-md-3 text-center">
-<a href="/dev"><img src="/images/lxc.png" height=150 style="vertical-align:bottom"><b><p>Dev environment in LXD/LXC</p></b></a>
-</div>
-
-</div>
+[/center][/columns]

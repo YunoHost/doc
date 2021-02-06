@@ -14,83 +14,58 @@ Questa pagina elenca alcune guide all'installazione.
 
 ---
 
-<h1 style="font-weight: 100">Provalo</h1>
+## Provalo
 
-<div class="row">
+[columns][center]
 
-<div class="col col-md-3 text-center">
-<a href="/try"><img height=150 src="/images/logo.png" style="vertical-align:bottom"><b><p>Server demo</p></b></a>
-</div>
+[[figure caption="Server demo"]![](image://logo.png?resize=150&class=inline)[/figure]](/try)
 
-<div class="col col-md-3 text-center">
-<a href="/install_on_virtualbox"><img src="/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>Provalo in VirtualBox</p></b></a>
-</div>
+[[figure caption="Provalo in VirtualBox"]
+![](image://virtualbox.png?resize=150&class=inline)
+[/figure]](/install_on_virtualbox)
 
-</div>
+[/center][/columns]
 
+## Installalo a casa
 
+[columns count=3][center]
 
+[[figure class="nomargin" caption="Su un Raspberry Pi"]
+![](image://raspberrypi.jpg?resize=150,150)
+[/figure]](/install_on_raspberry)
+  
+[[figure class="nomargin" caption="Su una scheda ARM"]
+![](image://olinuxino.jpg?resize=150,150)
+[/figure]](/install_on_arm_board)
+  
+[[figure class="nomargin" caption="Su un computer normale"]
+![](image://computer.png?resize=150,150)
+[/figure]](/install_iso)
 
-</div>
+[/center][/columns]
 
-<br>
+## Installalo su un server remoto
 
----
+!!! [fa=fa-heart /] ISP locali potrebbero essere in grado di fornire un *Server Privato Vrituale* (VPS), gesito da esseri umani che rispettano gli utenti e si preoccupano della [Net Neutrality](https://en.wikipedia.org/wiki/Net_neutrality) ! Guarda [questa pagina](https://db.ffdn.org/) per maggiori informazioni.
 
-<h1 style="font-weight: 100">Installalo a casa</h1>
+[center]
 
-<div class="row">
+[[figure class="nomargin" caption="Su un server dedicato o un server privato virtuale (VPS)"]
+![](image://vps.png?resize=150,150)
+[/figure]](/install_on_vps)
 
-<div class="col col-md-3 text-center">
-<a href="/install_on_raspberry"><img src="/images/raspberrypi.jpg" height=150 style="vertical-align:bottom"><b><p>Su un Raspberry Pi</p></b></a>
-</div>
+[/center]
 
-<div class="col col-md-3 text-center">
-<a href="/install_on_arm_board"><img src="/images/olinuxino.jpg" height=150 style="vertical-align:bottom; padding:20px"><b><p>Su una scheda ARM</p></b></a>
-</div>
+## Avanzate / altri
 
-<div class="col col-md-3 text-center">
-<a href="/install_iso"><img src="/images/computer.png" height=150 style="vertical-align:bottom"><b><p>Su un computer normale</p></b></a>
-</div>
+[columns count=2][center]
 
-</div>
+[[figure class="nomargin" caption="Su Debian 10/Buster"]
+![](image://debian-logo.png?resize=150,150)
+[/figure]](/install_on_debian)
 
-<br>
+[[figure class="nomargin" caption="Dev environment in LXD/LXC"]
+![](image://lxc.png?resize=150,150)
+[/figure]](/dev)
 
-
----
-
-<h1 style="font-weight: 100">Installalo su un server remoto</h1>
-
-<div class="alert alert-info" markdown="1">
-<span class="glyphicon glyphicon-heart"></span> ISP locali potrebbero essere in grado di fornire un *Server Privato Vrituale* (VPS), gesito da esseri umani che rispettano gli utenti e si preoccupano della [Net Neutrality](https://en.wikipedia.org/wiki/Net_neutrality) ! Guarda [questa pagina](https://db.ffdn.org/) per maggiori informazioni.
-</div>
-
-<div class="row">
-
-<div class="block-center text-center">
-<a href="/install_on_vps"><img src="/images/vps.png" height=150 style="vertical-align:bottom; text-align:center"><b><p>Su un server dedicato o un server privato virtuale (VPS)</p></b></a>
-</div>
-
-</div>
-
-<br>
-
----
-
-<h1 style="font-weight: 100">Avanzate / altri</h1>
-
-<div class="row">
-
-<div class="col col-md-3 text-center">
-<a href="/install_on_debian"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
-<b><p>Su Debian 10/Buster</p></b></a>
-</div>
-
-<div class="col col-md-3 text-center">
-<a href="/dev"><img src="/images/lxc.png" height=150 style="vertical-align:bottom"><b><p>Dev environment in LXD/LXC</p></b></a>
-</div>
-
-</div>
-
-<br>
+[/center][/columns]
