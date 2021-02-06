@@ -33,24 +33,24 @@ de votre serveur) et que votre site est accessible en HTTP depuis l'extérieur
 Rendez-vous dans la partie 'Domaine' de l'interface d'administration, puis dans
 la section dédiée à votre domaine. Vous trouverez un bouton 'Certificat SSL'.
 
-![](./images/domain-certificate-button-fr.png)
+![](image://domain-certificate-button-fr.png)
 
 Dans la section 'Certificat SSL', vous pourrez voir l'état actuel du certificat.
 Si vous venez d'ajouter le domaine, il dispose d'un certificat auto-signé.
 
-![](./images/certificate-before-LE-fr.png)
+![](image://certificate-before-LE-fr.png)
 
 Si votre domaine est correctement configuré, il vous est alors possible de
 passer à un certificat Let's Encrypt via le bouton vert.
 
-![](./images/certificate-after-LE-fr.png)
+![](image://certificate-after-LE-fr.png)
 
 Une fois l'installation effectuée, vous pouvez vous rendre sur votre domaine
 via votre navigateur, en HTTPS, pour vérifier que votre certificat est bien
 signé par Let's Encrypt. Le certificat sera renouvelé automatiquement tous les
 trois mois environ.
 
-![](./images/certificate-signed-by-LE.png)
+![](image://certificate-signed-by-LE.png)
 
 #### Via la ligne de commande
 
