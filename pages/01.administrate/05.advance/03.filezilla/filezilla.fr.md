@@ -21,23 +21,23 @@ Installez le programme et lancez *Filezilla*.
 
 1. Cliquez sur l'icône *Gestionnaire de Sites* en haut à gauche de sorte à crééer une configuration utilisable ultérieurement.
 
-   ![écran principal de Filezilla](images/filezilla_1.png)
+   ![écran principal de Filezilla](image://filezilla_1.png)
 
 2. Cliquez sur **Nouveau site** et donnez un nom au serveur que vous allez utiliser. Par exemple "Famille". Remplissez les paramètres comme sur la capture d'écran (en remplaçant l'adresse du serveur par la votre). Une fois terminé, cliquez sur **Connexion**. (N.B. : si vous souhaitez éditer les fichiers de l'application [custom webapp](https://github.com/YunoHost-Apps/my_webapp_ynh), il vous faudra utiliser un autre utilisateur que admin. Se référer à la documentation de custom webapp.)
 
-   ![écran du gestionnaire de site](images/filezilla_2.png)
+   ![écran du gestionnaire de site](image://filezilla_2.png)
 
 3. Vous recevrez un avertissement. *Vous pouvez l'ignorer si il s'agit de la première connexion*.
 
-   ![avertissement au sujet de l'empreinte inconnue du serveur](images/filezilla_3.png)
+   ![avertissement au sujet de l'empreinte inconnue du serveur](image://filezilla_3.png)
 
 4. Filezilla vous demande maintenant le mot de passe `admin` pour vous connecter à votre serveur
 
-   ![écran d'identification demandant le mot de passe](images/filezilla_4.png)
+   ![écran d'identification demandant le mot de passe](image://filezilla_4.png)
 
 5. Une fois cette configuration créée, elle sera réutilisable les fois suivanteS.
 
-   ![la vue du "gestionnaire de site" avec le nouveau serveur ajouté](images/filezilla_5.png)
+   ![la vue du "gestionnaire de site" avec le nouveau serveur ajouté](image://filezilla_5.png)
 
 <div class="alert alert-success">
   <span class="glyphicon glyphicon-chevron-right"></span> Vous pouvez désormais utiliser cette configuration pour vous connecter.
@@ -49,17 +49,17 @@ Installez le programme et lancez *Filezilla*.
 
    La partie gauche correspond à votre ordinateur. La partie droite correspond au serveur YunoHost distant. Vous pouvez naviguer dans les dossiers et faire des glisser-déposer entre les deux panneaux.
 
-   ![la vue pendant la connexion à un serveur distant](images/filezilla_6.png)
+   ![la vue pendant la connexion à un serveur distant](image://filezilla_6.png)
 
 2. Dans le panneau de droite, vous pouvez aller dans `/home/yunohost.backup/archives/` pour trouver les archives de [sauvegardes](/backup).
 
-   ![le chemin où les sauvegardes sont situées sur YunoHost](images/filezilla_7.png)
+   ![le chemin où les sauvegardes sont situées sur YunoHost](image://filezilla_7.png)
 
 <div class="alert alert-warning">
   <span class="glyphicon glyphicon-cloud-download"></span> Assurez-vous de télécharger à la fois le fichier `.tar.gz` et le fichier `.json`
 </div>
 
-![Copier les sauvegardes de YunoHost sur l'ordinateur local](images/filezilla_8.png)
+![Copier les sauvegardes de YunoHost sur l'ordinateur local](image://filezilla_8.png)
 
 ----
 
