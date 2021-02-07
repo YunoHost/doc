@@ -31,6 +31,7 @@
     * [Les domaines, la configuration DNS et les certificats](/domains)
     * [Les emails](/email)
        * [Formulaires pour enlever son adresse IP des listes noires](/blacklist_forms)
+       * [Emails automatiques](/auto_email_admin)
     * [XMPP](/XMPP)
     * [Les sauvegardes](/backup)
     * [Mettre à jour le système](/update) et [les applications](/app_update)
