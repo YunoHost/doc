@@ -152,7 +152,7 @@ body .off-canvas .learn-sidebar .learn-nav ul li ul li.active > a {
     border-left: black 2px solid;
 }
 
-body .off-canvas .learn-sidebar .learn-nav .read-icon, body .off-canvas .learn-sidebar .searchbox {
+body .off-canvas .learn-sidebar .learn-nav .read-icon, body .off-canvas .learn-sidebar .searchbox, body .off-canvas .learn-sidebar .search-options .version-chooser select {
     color: rgba(0, 0, 0, 0.6);
 }
 
