@@ -87,3 +87,7 @@ img#whitelogo {
     background-color: gray;
     padding: 10px;
 }
+
+.learn-nav h5:first-child {
+    display: none;
+}
