@@ -1,5 +1,5 @@
 ---
-visible: false
+hidemenu: true
 ---
 
 test ?
