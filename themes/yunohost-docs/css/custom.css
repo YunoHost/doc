@@ -88,6 +88,7 @@ img#whitelogo {
     padding: 10px;
 }
 
-.learn-nav h5:first-child {
+/* Hide home page in menu */
+.simplebar-content h5:first-child {
     display: none;
 }
