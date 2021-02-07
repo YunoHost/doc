@@ -27,13 +27,13 @@ routes:
 
 ## Etapas de instalación
 
-<a class="btn btn-lg btn-default" href="/images">0. Descargar la imagen ISO</a>
+[0. Descargar la imagen ISO](/images?classes=btn,btn-lg,btn-primary)
 
-<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Copiar la imagen ISO</a>
+[1. Copiar la imagen ISO](/burn_or_copy_iso?classes=btn,btn-lg,btn-primary)
 
-<a class="btn btn-lg btn-default" href="/boot_and_graphical_install">2. Encender e instalar</a>
+[2. Encender e instalar](/boot_and_graphical_install?classes=btn,btn-lg,btn-primary)
 
-<a class="btn btn-lg btn-default" href="/postinstall">3. Post-instalación</a>
+[3. Post-instalación](/postinstall?classes=btn,btn-lg,btn-primary)
 
 ---
 

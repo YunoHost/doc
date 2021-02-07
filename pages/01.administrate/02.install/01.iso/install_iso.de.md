@@ -28,14 +28,13 @@ Du kannst jeden Computer nutzen der **256MB RAM oder mehr** hat.
 
 ## Instalationsschritte
 
+[0. Lade die YunoHost ISO Imagedatei herunter image](/images?classes=btn,btn-lg,btn-primary)
 
-<a class="btn btn-lg btn-default" href="/images">0. Lade die YunoHost ISO Imagedatei herunter image</a>
+[1. Brenne die Iso-Datei auf einen USB-Stick oder eine CD](/burn_or_copy_iso?classes=btn,btn-lg,btn-primary)
 
-<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Brenne die Iso-Datei auf einen USB-Stick oder eine CD</a>
+[2. Starte die Maschine und führe die Instalation aus](/boot_and_graphical_install?classes=btn,btn-lg,btn-primary)
 
-<a class="btn btn-lg btn-default" href="/boot_and_graphical_install">2. Starte die Maschine und führe die Instalation aus </a>
-
-<a class="btn btn-lg btn-default" href="/postinstall">3. Fahre fort mit der Erstkonfiguration (Nachinstalation)</a>
+[3. Fahre fort mit der Erstkonfiguration (Nachinstalation)](/postinstall?classes=btn,btn-lg,btn-primary)
 
 ---
 
