@@ -17,7 +17,7 @@ Two things remain important to note:
 
 *If you need advice, do not hesitate to [ask us](/help).*
 
-*To talk about security flaws, contact the [YunoHost security team](/security_team).*
+*To discuss security flaws, contact the [YunoHost security team](/security_team).*
 
 ---
 
