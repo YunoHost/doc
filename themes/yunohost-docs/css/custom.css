@@ -1,5 +1,5 @@
 .off-canvas .learn-sidebar:before {
- background: linear-gradient(150deg, #8E1313 0, #0B1B41 100%);
+ background: dimgrey;
 }
 
 .highlightable h5:first-of-type {
@@ -8,7 +8,7 @@
 
 .highlightable h5 {
  margin-top: 1rem;
- color: #ECECFE;
+ color: #333;
 }
 
 #chapter {
@@ -42,4 +42,25 @@ img.center {
 
 #top-bar #breadcrumbs > a {
  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: "Source Sans Pro";
+}
+
+.simplebar-content h5 .fa {
+   font-size: 0.75em;
+   margin-right: 0.2em;
+   margin-left: 0.4em;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro', "Metropolis", "Helvetica Neue", sans-serif;
+    src: url('../fonts/SourceSansPro-Bold-webfont.eot');
+    src: url('../fonts/SourceSansPro-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SourceSansPro-Bold-webfont.woff') format('woff'),
+         url('../fonts/SourceSansPro-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/SourceSansPro-Bold-webfont.svg#fonts/SourceSansProBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
 }
