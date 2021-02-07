@@ -503,6 +503,8 @@ This is the first domain name linked to your YunoHost server, but also the one w
 This password will be used to access to your server's [administration interface](/admin). You would also use it to connect via **SSH** or **SFTP**. In general terms, this is your **system's key**, [choose it carefully](http://www.wikihow.com/Choose-a-Secure-Password).
 [/details]
 
+At this step, if you got so far and saw 'YunoHost has been successfully installed' (web postinstall) or 'YunoHost has been correctly configured', then congratulations!
+
 ## Create a first user
 You should create a first user. 
 
@@ -565,3 +567,7 @@ yunohost domain cert-install
 [/ui-tab]
 [/ui-tabs]
 {% endif %}
+
+## Congratz!
+
+You have now a pretty well configured server. You can now try to install apps if you need (don't keep apps on your server if you don't need it) and configure a backup.
