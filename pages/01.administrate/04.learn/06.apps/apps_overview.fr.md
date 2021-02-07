@@ -13,11 +13,7 @@ Les applications doivent être packagées manuellement par les packageurs/mainte
 
 Les applications peuvent être installées et gérées via l'interface webadmin dans la partie 'Applications', ou via les commandes de la catégorie `yunohost app`.
 
-## Listes d'applications
-
-Du point de vue technique, les applications sont des dépôts de code public (comme [celui-ci](https://github.com/YunoHost-Apps/wordpress_ynh)). Les applications existantes sont indexées à l'aide de "listes d'applications". Ces listes peuvent être gérées dans Applications > Installer > Gérer les listes d'applications, ou avec des commandes telles que `yunohost app fetchlist`.
-
-La liste des applications existantes peut être consultée sur [cette page](/apps).
+Il est possible de naviguer dans le catalogue d'application dans la webadmin (dans Applications > Installer) ou bien [ici](/apps).
 
 ## Niveaux d'intégration et de qualité
 
