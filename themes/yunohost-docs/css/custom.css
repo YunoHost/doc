@@ -28,6 +28,14 @@ img.center {
  margin-right: auto;
 }
 
+figure img {
+ margin: auto;
+}
+
+figure figcaption {
+ font-style: italic;
+}
+
 .nomargin * {
  margin: 0px auto;
 }
