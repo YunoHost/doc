@@ -7,23 +7,13 @@ routes:
   default: '/docs'
 ---
 
-<p dir="rtl" class="lead">
 دليل واي يونوهوست YunoHost يرتكز أساسًا على ثلاثة محاور :
-</p>
 
-<div class="row text-center">
+[[fa=fa-lock /] دليل المدير](/administrate?classes=btn,btn-lg,btn-primary)  
+يتطرق إلى طريقة التنصيب و إدارة السيرفر و التطبيقات
 
-<div dir="rtl" class="col col-md-4 col-md-offset-1">
-<a class="btn btn-primary btn-lg" href="/admindoc"><span class="glyphicon glyphicon-lock"></span> دليل المدير</a>
-<p><small class="text-muted">يتطرق إلى طريقة التنصيب و إدارة السيرفر و التطبيقات</small></p>
-</div>
-
-<div dir="rtl" class="col col-md-4 col-md-offset-1">
-<a class="btn btn-danger btn-lg" href="/contributordoc"><span class="glyphicon glyphicon-heart"></span> دليل المساهم</a>
-<p><small class="text-muted">يحتوي على كافة المعلومات التي تخصنا و أسلوب عملنا و مساهمتنا</small></p>
-</div>
-
-</div>
+[[fa=fa-heart /] دليل المساهم](/contribute?classes=btn,btn-lg,btn-error)  
+يحتوي على كافة المعلومات التي تخصنا و أسلوب عملنا و مساهمتنا
 
 * Project's life:
    * [Frequently asked questions](/faq)
