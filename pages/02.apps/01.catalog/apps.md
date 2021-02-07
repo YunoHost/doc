@@ -178,18 +178,16 @@ Custom CSS for this page
     {% endif %}
     {% set description = manifest.description[descr_lang] %}
 
-{{ app }}
-{{ infos.url }}
-
 [div class="app-card_{{app_id}} app-card panel panel-default"]
 [div class="app-title"]{{ manifest.name }}[/div]
 [div class="app-descr"]{{ description }}[/div]
 [div class="app-footer"]
 [div class="app-buttons btn-group" role="group"]
-[test]()
-<a href="{{infos.url}}" target="_BLANK" type="button" class="btn btn-default col-sm-4">[fa=globe /] Code</a>
-<a href="#/app_{{app_id}}" target="_BLANK" type="button" class="btn btn-default col-sm-4">[fa=book /] Doc</a>
-<a href="https://install-app.yunohost.org/?app={{app_id}}" target="_BLANK" type="button" class="btn btn-todo_app_install_css_style col-sm-4 active">[fa=plus /] Install</a>
+
+[div class="btn btn-default col-sm-4"] [[fa=globe /] Code](fixme) [/div]
+[div class="btn btn-default col-sm-4"] [[fa=book /] Doc](/fixme) [/div]
+[div class="btn btn-success col-sm-4"] [[fa=plus /] Install](https://install-app.yunohost.org/?app={{app_id}}) [/div]
+
 [/div]
 [/div]
 [/div]
