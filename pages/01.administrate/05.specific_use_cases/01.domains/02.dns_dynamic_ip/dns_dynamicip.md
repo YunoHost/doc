@@ -13,6 +13,13 @@ This tutorial aim to get around dynamic IP issue which is: when the IP public ad
 
 The method proposed here consists of automatizing the fact the box annonces its global IP adress change to the dynamic DNS, so that the DNS zone will automatically be updated.
 
+Here are some examples of registrars, companies where you can buy domain names:
+* [OVH](http://ovh.com/)
+* [GoDaddy](https://godaddy.com/)
+* [Gandi](http://gandi.net/)
+* [Namecheap](https://www.namecheap.com/)
+* [BookMyName](https://www.bookmyname.com/)
+
 If you own a domain name at **OVH**, you may go to step 4 and follow this [tutorial](/OVH), given that OVH proposes a DynDNS service.
 
 #### 1. Create an account to a Dynamic DNS service
@@ -34,7 +41,12 @@ This step consists in declaring to your [registrar](/registrar) that the DNS ser
 
 For this, fisrt declare in the NS field(s) the IP address provided by the DynDNS service.
 
-Then, remove any other item in the [DNS zones](/dns_config) (except the previous NS fields), from the [registrar](/registrar).
+Then, remove any other item in the [DNS zones](/dns_config) (except the previous NS fields), from the registrar. Here are from examples of registrars:
+* [OVH](http://ovh.com/)
+* [GoDaddy](https://godaddy.com/)
+* [Gandi](http://gandi.net/)
+* [Namecheap](https://www.namecheap.com/)
+* [BookMyName](https://www.bookmyname.com/)
 
 #### 4. Configure the client
 This client could be your ISP-box, or a package installed on your server, such as `ddclient`.
