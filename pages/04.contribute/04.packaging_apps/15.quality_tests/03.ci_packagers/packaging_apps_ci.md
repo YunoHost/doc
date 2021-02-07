@@ -4,12 +4,12 @@ template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/packaging_apps'
+  default: '/packaging_apps_ci'
 ---
 
 A continuous integration server is available for any packager willing to test an app with [Package_check](https://github.com/YunoHost/package_check).
 
-[div class="btn btn-lg btn-default"] [ci-apps-dev](https://ci-apps-dev.yunohost.org) [/div]
+[ci-apps-dev](https://ci-apps-dev.yunohost.org?classes=btn,btn-lg,btn-primary)
 
 This server is free to use for any of you, you just need an account.  
 To do so, ask to a member of the Apps group on our [Applications chatroom](/chat_rooms)
