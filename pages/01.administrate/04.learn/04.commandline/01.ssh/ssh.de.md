@@ -33,9 +33,7 @@ ssh root@111.222.333.444
 
 A password will be asked. If this is a VPS, your VPS provided should have communicated you the password. If you used a pre-installed image (for x86 computer or ARM board), the password should be `yunohost`.
 
-<div class="alert alert-warning">
-Since YunoHost 3.4, after running the postinstallation, you won't be able to login as `root` anymore. Instead, **you should login using the `admin` user !** In the event that the LDAP server is broken and the `admin` user is unusable, you may still however still be able to login using `root` from the local network.
-</div>
+! Since YunoHost 3.4, after running the postinstallation, you won't be able to login as `root` anymore. Instead, **you should login using the `admin` user !** In the event that the LDAP server is broken and the `admin` user is unusable, you may still however still be able to login using `root` from the local network.
 
 #### Change the password!
 

@@ -40,13 +40,9 @@ Antes de alojar tu propio servidor en tu casa, te recomendamos que consultes las
 
 ## Instalación manual (desaconsejada)
 
-<div class="alert alert-warning" markdown="1">
-No recomendamos la instalación manual porque es más técnica y más larga que la instalación vía la imagen per-instalada. Esta documentación sobre todo está destinada a los usuarios expertos.
-</div>
+! No recomendamos la instalación manual porque es más técnica y más larga que la instalación vía la imagen per-instalada. Esta documentación sobre todo está destinada a los usuarios expertos.
 
-<div class="alert alert-warning" markdown="1">
-Las últimas versiones de Raspberry Pi OS necesitan una pantalla y un teclado porque ya no es posible conectarse directamente por SSH al Raspberry por defecto. Sin embargo, es posible reactivar el inicio de SSH al boot : solo hay que poner un archivo llamado `ssh` (vacío, sin extensión) en la partición boot de la tarjeta SD.
-</div>
+! Las últimas versiones de Raspberry Pi OS necesitan una pantalla y un teclado porque ya no es posible conectarse directamente por SSH al Raspberry por defecto. Sin embargo, es posible reactivar el inicio de SSH al boot : solo hay que poner un archivo llamado `ssh` (vacío, sin extensión) en la partición boot de la tarjeta SD.
 
 0. Instalar Raspberry Pi OS Lite ([instrucciones](https://www.raspberrypi.org/downloads/raspberry-pi-os/)) en la tarjeta SD.
 

@@ -33,9 +33,7 @@ ssh root@111.222.333.444
 
 Ahora te piden una contraseña. Si es un VPS, tu proveedor ya te hará comunicado la contraseña. Si utilizaste una imagen pre-instalada (para x86 o tarjetas ARM), el password debería ser `yunohost`.
 
-<div class="alert alert-warning">
-Desde YunoHost 3.4, después de la post-instalación ya no es posible conectarse con el usuario `root`. En lugar de eso, hace falta **conectarse con el usuario `admin`**. Incluso si el servidor LDAP fuera quebrado (haciendo que el usuario `admin` ya no fuera utilizable) todavía deberías poder conectarte con el usuario `root` desde la red local.
-</div>
+! Desde YunoHost 3.4, después de la post-instalación ya no es posible conectarse con el usuario `root`. En lugar de eso, hace falta **conectarse con el usuario `admin`**. Incluso si el servidor LDAP fuera quebrado (haciendo que el usuario `admin` ya no fuera utilizable) todavía deberías poder conectarte con el usuario `root` desde la red local.
 
 #### ¡ Cambiar la contraseña root !
 

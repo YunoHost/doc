@@ -40,13 +40,9 @@ Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissan
 
 ## Installation manuelle (déconseillée)
 
-<div class="alert alert-warning" markdown="1">
-Nous déconseillons l'installation manuelle car elle est plus technique et plus longue que l'installation via l'image pré-installée. Cette documentation est surtout destinée aux utilisateurs avancés.
-</div>
+! Nous déconseillons l'installation manuelle car elle est plus technique et plus longue que l'installation via l'image pré-installée. Cette documentation est surtout destinée aux utilisateurs avancés.
 
-<div class="alert alert-warning" markdown="1">
-Les dernières versions de Raspbian nécessitent un écran et un clavier, car il n'est plus possible de se connecter directement en SSH au Raspberry par défaut. Néanmoins, il est possible de réactiver le lancement de SSH au boot : il suffit de placer dans la partition boot de la carte SD un fichier nommé `ssh`, vide et sans extension.
-</div>
+! Les dernières versions de Raspbian nécessitent un écran et un clavier, car il n'est plus possible de se connecter directement en SSH au Raspberry par défaut. Néanmoins, il est possible de réactiver le lancement de SSH au boot : il suffit de placer dans la partition boot de la carte SD un fichier nommé `ssh`, vide et sans extension.
 
 0. Installez Raspberry Pi OS Lite ([instructions](https://www.raspberrypi.org/downloads/raspberry-pi-os/)) sur la carte SD. 
 Le lien vers Raspberry Pi OS Lite est ici : https://downloads.raspberrypi.org/raspbian_lite/images/

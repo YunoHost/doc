@@ -16,9 +16,7 @@ routes:
 * Un ordenador x86 con VirtualBox instalado y bastante RAM disponible para iniciar una pequeña máquina virtual.
 * La última **imagen ISO YunoHost** estable, disponible [aquí](/images).
 
-<div class="alert alert-warning" markdown="1">
-N.B. : Instalar YunoHost en VirtualBox es útil para probar la distribución. Para realmente autoalojarse a largo plazo, probablement necesitarás una máquina virtual (viejo ordenador, tarjeta ARM...) o un VPS.
-</div>
+! N.B. : Instalar YunoHost en VirtualBox es útil para probar la distribución. Para realmente autoalojarse a largo plazo, probablement necesitarás una máquina virtual (viejo ordenador, tarjeta ARM...) o un VPS.
 
 ---
 

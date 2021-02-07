@@ -34,9 +34,7 @@ Vous devrez peut-être forcer le rafraîchissement du cache de votre navigateur 
 
 Vous pouvez ajouter des thèmes créés par d'autres personnes en téléchargeant et en extrayant les fichiers correspondants dans un nouveau dossier `nom_du_theme` dans `/usr/share/ssowat/portal/assets/themes/`.
 
-<div class="alert alert-warning" markdown="1">
-**Attention** : l'ajout de thèmes provenant d'inconnus sur Internet **est un risque de sécurité**. Cela équivaut à exécuter du code écrit par quelqu'un d'autre sur votre machine, et peut donc être utilisé à des fins malveillantes comme voler des mots de passe !
-</div> 
+! **Attention** : l'ajout de thèmes provenant d'inconnus sur Internet **est un risque de sécurité**. Cela équivaut à exécuter du code écrit par quelqu'un d'autre sur votre machine, et peut donc être utilisé à des fins malveillantes comme voler des mots de passe !
 
 ## Créer votre propre thème
 

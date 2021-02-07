@@ -16,11 +16,7 @@ routes:
 * An x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine.
 * The latest stable **YunoHost ISO image**, available [here](/images).
 
-<div class="alert alert-warning" markdown="1">
-N.B. : Installing YunoHost in a VirtualBox is usually intended for testing. To
-run an actual server on the long-term, you usually need a dedicated physical
-machine (old computer, ARM board...) or a VPS online.
-</div>
+! N.B. : Installing YunoHost in a VirtualBox is usually intended for testing. To run an actual server on the long-term, you usually need a dedicated physical machine (old computer, ARM board...) or a VPS online.
 
 ---
 

@@ -7,7 +7,7 @@ routes:
   default: '/dns_dynamicip'
 ---
 
-<div class="alert alert-warning">Before going further, make sure your global IP address is dynamic with: [ip.yunohost.org](http://ip.yunohost.org/). The global IP address of your box changes almost every day.</div>
+! Before going further, make sure your global IP address is dynamic with: [ip.yunohost.org](http://ip.yunohost.org/). The global IP address of your box changes almost every day.
 
 This tutorial aim to get around dynamic IP issue which is: when the IP public address of your (Internet Service Provider-) box changes, the DNS zone is not updated to point towards the new IP address, and consequently your server is no more reachable via its domain name. After setting up the solution proposed in this tutorial, the redirection from your domain name to the actual IP address of your server will not be lost anymore.
 

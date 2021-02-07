@@ -44,9 +44,7 @@ mmcblk0     179:0    0  14.9G  0 disk
 
 Here, `mmcblk0` corresponds to an SD card of 16Go (the partitions `mmcblk0p1` et `mmcblk0p2` are used as the boot partition `/boot` and the system partition `/`). The external drive is `sda` which is about 1TB and has only one partition `sda1` which is not mounted (no "MOUNTPOINT").
 
-<div class="alert alert-warning" markdown="1">
-<span class="glyphicon glyphicon-warning-sign"></span> On a different setup, your system partition might be `sda` and so your external drive might be `sdb` for instance.
-</div>
+! <span class="glyphicon glyphicon-warning-sign"></span> On a different setup, your system partition might be `sda` and so your external drive might be `sdb` for instance.
 
 ## 2. (Optional) Format the disk
 

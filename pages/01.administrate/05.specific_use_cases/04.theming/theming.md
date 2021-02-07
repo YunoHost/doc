@@ -34,9 +34,7 @@ You might need to force the refresh of your browser's cache for the theme to ful
 
 You may add themes created by other people by downloading and extracting the corresponding files in a new folder `the_theme_name` in `/usr/share/ssowat/portal/assets/themes/`.
 
-<div class="alert alert-warning" markdown="1">
-**Beware** that adding third-party themes from random strangers on the internet **is a security risk**. It is equivalent to running someone's else code on your machine, which can be used for malicious purpose such as stealing credentials!
-</div>
+! **Beware** that adding third-party themes from random strangers on the internet **is a security risk**. It is equivalent to running someone's else code on your machine, which can be used for malicious purpose such as stealing credentials!
 
 ## Creating your own theme
 

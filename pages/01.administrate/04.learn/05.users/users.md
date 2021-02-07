@@ -13,9 +13,7 @@ Users are human being who have access to applications and other services on your
 
 The first user created also automatically gets email aliases `root@main.domain.tld` and `admin@main.domain.tld`, such that mail sent to these adresses will end up in the first user's mailbox.
 
-<div class="alert alert-warning" markdown="1">
-You should be careful about who you give your server access to. In terms of security, this largely increase the attack surface for someone who wants to mess with the server one way or another.
-</div>
+! You should be careful about who you give your server access to. In terms of security, this largely increase the attack surface for someone who wants to mess with the server one way or another.
 
 ## The user portal, or SSO
 
@@ -39,6 +37,4 @@ See [this dedicated page](/groups_and_permissions).
 
 Users can also be allowed to connect through SSH, and SSH keys can be added for this purpose. So far, this can only be configured via the command line. See `yunohost user ssh --help` for specific commands.
 
-<div class="alert alert-warning" markdown="1">
-Be careful who you give SSH access to. This increases even more the attack surface available to a malicious user.
-</div>
+! Be careful who you give SSH access to. This increases even more the attack surface available to a malicious user.
