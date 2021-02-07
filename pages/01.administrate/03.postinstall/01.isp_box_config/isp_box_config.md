@@ -5,9 +5,13 @@ taxonomy:
     category: docs
 routes:
   default: '/isp_box_config'
+  aliases:
+    - '/port_forwarding'
 ---
 
-If you are self-hosting at home and without a VPN, you need to forward ports on your home router ("Internet box"). If you want a short explanation on what is and why you need port forwarding, have a look to [this page](/port_forwarding).
+If you are self-hosting at home and without a VPN, you need to forward ports on your home router ("Internet box"). The sketch below tries to briefly summarize the role and necessity of port forwarding when setting up a server at home.
+
+[figure caption="Illustration of the importance of port-forwarding"]![](image://portForwarding_en.png)[/figure]
 
 ### 0. Diagnose ports opened
 
