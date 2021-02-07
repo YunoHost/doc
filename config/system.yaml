@@ -31,6 +31,9 @@ languages:
   override_locale: false
   content_fallback: {  }
   pages_fallback_only: true
+  translations_fallback:
+    en: 'fr,de,es'
+    de: 'en,fr,es'
 home:
   alias: /home
   hide_in_urls: false
@@ -210,6 +213,3 @@ strict_mode:
   yaml_compat: true
   twig_compat: true
   blueprint_compat: true
-translations_fallback:
-  en: 'fr,de,es'
-  de: 'en,fr,es'
