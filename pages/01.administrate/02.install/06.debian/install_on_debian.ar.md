@@ -7,8 +7,6 @@ routes:
   default: '/install_on_debian'
 ---
 
-<div dir="RTL" align="right" style="direction:rtl;text-align:right;">
-
 *يمكنكم الإطلاع على طُرق أخرى لتنصيب واي يونوهوست  YunoHost **[هنا](/install)**.*
 
 ## المتطلبات

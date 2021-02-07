@@ -7,23 +7,13 @@ routes:
   default: '/docs'
 ---
 
-<p class="lead">
 La documentazione di YunoHost ha 2 differenti sezioni:
-</p>
 
-<div class="row text-center">
+[[fa=fa-lock /] Guida di amministrazione](/administrate?classes=btn,btn-lg,btn-primary)  
+Include l'installazione, la gestione del server e delle applicazioni.
 
-<div class="col col-md-4 col-md-offset-1">
-<a class="btn btn-primary btn-lg" href="/admindoc"><span class="glyphicon glyphicon-lock"></span> Guida di amministrazione</a>
-<p><small class="text-muted">Include l'installazione, la gestione del server e delle applicazioni</small></p>
-</div>
-
-<div class="col col-md-4 col-md-offset-1">
-<a class="btn btn-danger btn-lg" href="/contributordoc"><span class="glyphicon glyphicon-heart"></span> Guida del contributore</a>
-<p><small class="text-muted">Contiene tutto quello che devi sapere su di noi e su come lavoriamo</small></p>
-</div>
-
-</div>
+[[fa=fa-heart /] Guida del contributore](/contribute?classes=btn,btn-lg,btn-error)  
+Contiene tutto quello che devi sapere su di noi e su come lavoriamo.
 
 * Vita del progetto :
    * [Frequently asked questions](/faq)
