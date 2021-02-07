@@ -32,7 +32,7 @@ You can rent a virtual private server or a dedicated machine from [associative](
 
 ### Summary
 
-<table class="table">
+<table>
     <thead>
       <tr>
         <th></th>
@@ -67,7 +67,7 @@ You can rent a virtual private server or a dedicated machine from [associative](
       </tr>
       <tr>
         <td style="text-align:center;">Possible ISP limitations</td>
-        <td style="text-align:center;" class="danger">Yes <br><small>(see [here](/isp))</small></td>
+        <td style="text-align:center;" class="danger">Yes <br><small>(see <a href="/isp">here</a>)</small></td>
         <td style="text-align:center;" class="success">Bypassed by VPN</td>
         <td style="text-align:center;" class="success">Typically no</td>
       </tr>
@@ -88,3 +88,15 @@ You can rent a virtual private server or a dedicated machine from [associative](
       </tr>
     </tbody>
 </table>
+
+<style>
+.danger{
+  background-color: #f2dede;
+}
+.warning {
+  background-color: #fcf8e3;
+}
+.success {
+  background-color: #dff0d8;
+}
+</style>

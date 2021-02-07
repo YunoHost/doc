@@ -32,7 +32,7 @@ Vous pouvez louer un serveur privé virtuel ou une machine dédiée à des hébe
 
 ### Résumé
 
-<table class="table">
+<table>
     <thead>
       <tr>
         <th></th>
@@ -67,7 +67,7 @@ Vous pouvez louer un serveur privé virtuel ou une machine dédiée à des hébe
       </tr>
       <tr>
         <td style="text-align:center;">Limitation possibles <br >par le FAI</td>
-        <td style="text-align:center;" class="danger">Oui <br><small>(voir [ici](/isp))</small></td>
+        <td style="text-align:center;" class="danger">Oui <br><small>(voir <a href="/isp">ici</a>)</small></td>
         <td style="text-align:center;" class="success">Contournées par le VPN</td>
         <td style="text-align:center;" class="success">Généralement non</td>
       </tr>
@@ -88,3 +88,15 @@ Vous pouvez louer un serveur privé virtuel ou une machine dédiée à des hébe
       </tr>
     </tbody>
 </table>
+
+<style>
+.danger{
+  background-color: #f2dede;
+}
+.warning {
+  background-color: #fcf8e3;
+}
+.success {
+  background-color: #dff0d8;
+}
+</style>
