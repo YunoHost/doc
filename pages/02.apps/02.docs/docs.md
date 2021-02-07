@@ -23,7 +23,7 @@ errors:
 
 Test
 
-{% set test = read_file('/var/www/app_yunohost/apps/apps.json') %}
+{% set test = '/var/www/app_yunohost/apps/apps.json'|get_file_content %}
 
 {{ test }}
 
