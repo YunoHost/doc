@@ -62,7 +62,8 @@ routes:
 
 <style>
 .hardware.active {
-    border: 4px solid #5a5;
+    border: 3px solid #5a5;
+    border-radius: 15px;
 }
 </style>
 Select the hardware on which you want install YunoHost :
