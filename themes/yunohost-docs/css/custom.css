@@ -36,6 +36,16 @@ figure figcaption {
  font-style: italic;
 }
 
+.flex-container {
+ display: flex;
+ justify-content: space-around;
+}
+
+.flex-child {
+ display: inline-flex;
+ text-align: center;
+}
+
 .nomargin * {
  margin: 0px auto;
 }
