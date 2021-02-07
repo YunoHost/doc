@@ -4,7 +4,7 @@ template: chapter
 taxonomy:
     category: docs
 routes:
-  default: '/admindoc'
+    default: /admindoc
 ---
 
 ### Administrate
