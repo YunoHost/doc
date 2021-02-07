@@ -28,6 +28,14 @@ img.center {
  margin-right: auto;
 }
 
+figure img {
+ margin: auto;
+}
+
+figure figcaption {
+ font-style: italic;
+}
+
 .flex-container {
  display: flex;
  justify-content: space-around;
@@ -36,7 +44,7 @@ img.center {
 .flex-child {
  display: inline-flex;
  text-align: center;
-}  
+}
 
 .nomargin * {
  margin: 0px auto;
@@ -73,4 +81,9 @@ h1, h2, h3, h4, h5, h6 {
          url('../fonts/SourceSansPro-Bold-webfont.svg#fonts/SourceSansProBold') format('svg');
     font-weight: 700;
     font-style: normal;
+}
+
+img#whitelogo {
+    background-color: gray;
+    padding: 10px;
 }

@@ -9,7 +9,7 @@ routes:
 
 The step called "**post-installation**" is actually the initial configuration of YunoHost. It has to be done just after the installation of the system itself.
 
-NB: if you are in the process of restoring a server from scratch **and** you have a yunohost-made backup, you can skip this process and follow through with the "restoring during the postinstall" step, in the [backup](/backup) page.
+! If you are in the process of restoring a server from scratch **and** you have a yunohost-made backup, you can skip this process and follow through with the "restoring during the postinstall" step, in the [backup](/backup) page.
 
 ### From the web interface
 
@@ -21,21 +21,16 @@ During the first visit, you will very likely encounter a security warning relate
 
 You should then land on this page :
 
-![](image://postinstall_web.png)
-
-<em><p class="text-muted">Preview of the Web post-installation</p></em>
+[figure caption="Preview of the Web post-installation"]![](image://postinstall_web.png)[/figure]
 
 ### From the command line
 
 You can also perform the postinstallation with the command `yunohost tools postinstall` directly on the server, or [via SSH](/ssh).
 
-![](image://postinstall_cli.png)
 
-<em><p class="text-muted">Preview of the command-line post-installation</p></em>
+[figure caption="Preview of the command-line post-installation"]![](image://postinstall_cli.png)[/figure]
 
-<br>
-
-## Informations asked
+## Asked information
 
 ### Main domain
 

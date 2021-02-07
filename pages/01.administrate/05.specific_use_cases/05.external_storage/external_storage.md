@@ -62,7 +62,7 @@ Check with `lsblk` that your disk really does contain a single partition.
 
 Before you can use your disk it has to be formatted.
 
-You should be aware that **formating a drive implies to erasing every data on it !** If your disk is already "clean", you may ignore this step.
+! You should be aware that **formating a drive implies to erasing every data on it!** If your disk is already "clean", you may ignore this step.
 
 To format the partition :
 

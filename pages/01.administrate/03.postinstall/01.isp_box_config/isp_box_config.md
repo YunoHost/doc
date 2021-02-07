@@ -5,9 +5,13 @@ taxonomy:
     category: docs
 routes:
   default: '/isp_box_config'
+  aliases:
+    - '/port_forwarding'
 ---
 
-If you are self-hosting at home and without a VPN, you need to forward ports on your home router ("Internet box"). If you want a short explanation on what is and why you need port forwarding, have a look to [this page](/port_forwarding).
+If you are self-hosting at home and without a VPN, you need to forward ports on your home router ("Internet box"). The sketch below tries to briefly summarize the role and necessity of port forwarding when setting up a server at home.
+
+[figure caption="Illustration of the importance of port-forwarding"]![](image://portForwarding_en.png)[/figure]
 
 ### 0. Diagnose ports opened
 
@@ -16,7 +20,7 @@ correctly exposed.
 
 ### 1. Access your box/router administration interface
 
-Your box/router admin interface is usually reachable via http://192.168.0.1 or http://192.168.1.1. Then, you will probably need to authenticate yourself with your internet server provider's credentials.
+Your box/router admin interface is usually reachable via [http://192.168.0.1](http://192.168.0.1) or [http://192.168.1.1](http://192.168.1.1). Then, you will probably need to authenticate yourself the credentials given by your internet server provider.
 
 ### 2. Find the local IP of your server
 

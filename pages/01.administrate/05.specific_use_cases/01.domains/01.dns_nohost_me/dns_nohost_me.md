@@ -4,7 +4,7 @@ template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/dns_nohost'
+  default: '/dns_nohost_me'
 ---
 
 In order to make self-hosting as accessible as possible, the YunoHost Project provides a *free* and *automatically configured* domain name service. By using this service, you won't have to [configure DNS records](/dns_config) yourself, which can be tedious and technical.
@@ -16,7 +16,7 @@ The following (sub)domains are proposed:
 
 To use this service, you simply have to choose such a domain during the post-installation. It will then be automatically configured by YunoHost!
 
-N.B.: As a fairness measure, each instance may only have **one such domain** setup at any given time.
+!!! As a fairness measure, each instance may only have **one such domain** setup at any given time.
 
 ### Subdomains
 
@@ -56,8 +56,7 @@ If you reinstall your server and want to use a domain already used previously, y
 
 If you wish to use a different automatic domain, you first have to remove your present domain registration. This is done in 3 steps:
 
-1. Remove the domain from your instance (via webadmin or the `yunohost domain remove` CLI). 
-**/!\ Caution: this will remove any app installed on this domain, along with its data.**
+1. Remove the domain from your instance (via webadmin or the `yunohost domain remove` in the CLI). 
 2. Ask for registration removal [in the dedicated forum thread](https://forum.yunohost.org/t/nohost-domain-recovery/442).
 3. Remove automatic domain configuration files on your server, via CLI only: `sudo rm /etc/cron.d/yunohost-dyndns && sudo rm -r /etc/yunohost/dyndns`
 
