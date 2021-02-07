@@ -7,7 +7,7 @@ routes:
   default: '/app_wallabag2'
 ---
 
-![wallabag2's logo](image://wallabag2_logo.svg?height=80)
+![wallabag2's logo](image://wallabag2_logo.svg?resize=,80)
 
 [![Install Wallabag2 with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=wallabag2) [![Integration level](https://dash.yunohost.org/integration/wallabag2.svg)](https://dash.yunohost.org/appci/app/wallabag2)
 

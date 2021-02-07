@@ -7,7 +7,7 @@ routes:
   default: '/app_peertube'
 ---
 
-![logo de peertube](image://peertube_logo.svg?height=80)
+![logo de peertube](image://peertube_logo.svg?resize=,80)
 
 [![Install PeerTube with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=peertube) [![Integration level](https://dash.yunohost.org/integration/peertube.svg)](https://dash.yunohost.org/appci/app/peertube)
 

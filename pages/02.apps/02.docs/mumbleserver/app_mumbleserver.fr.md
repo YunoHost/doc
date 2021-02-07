@@ -7,7 +7,7 @@ routes:
   default: '/app_mumbleserver'
 ---
 
-![logo de mumbleserver](image://mumbleserver_logo.svg?height=80)
+![logo de mumbleserver](image://mumbleserver_logo.svg?resize=,80)
 
 [![Install Mumble server with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mumbleserver) [![Integration level](https://dash.yunohost.org/integration/mumbleserver.svg)](https://dash.yunohost.org/appci/app/mumbleserver)
 

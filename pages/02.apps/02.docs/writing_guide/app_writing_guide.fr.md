@@ -7,7 +7,7 @@ routes:
   default: '/app_writing_guide'
 ---
 
-![logo de APPLICATION](image://APPLICATION_logo.svg?height=80)
+![logo de APPLICATION](image://APPLICATION_logo.svg?resize=,80)
 
 [![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=APPLICATION) [![Integration level](https://dash.yunohost.org/integration/APPLICATION.svg)](https://dash.yunohost.org/appci/app/APPLICATION)
 

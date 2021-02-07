@@ -7,7 +7,7 @@ routes:
   default: '/app_plume'
 ---
 
-![plume's logo](image://plume_logo.svg?height=80)
+![plume's logo](image://plume_logo.svg?resize=,80)
 
 [![Install Plume with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=plume) [![Integration level](https://dash.yunohost.org/integration/plume.svg)](https://dash.yunohost.org/appci/app/plume)
 

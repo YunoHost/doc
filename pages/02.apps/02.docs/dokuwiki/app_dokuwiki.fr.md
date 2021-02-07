@@ -7,7 +7,7 @@ routes:
   default: '/app_dokuwiki'
 ---
 
-![logo de Dokuwiki](image://dokuwiki_logo.svg?height=80)
+![logo de Dokuwiki](image://dokuwiki_logo.svg?resize=,80)
 
 [![Installer DokuWiki grâce à YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=dokuwiki) [![Niveau d'intégration](https://dash.yunohost.org/integration/dokuwiki.svg)](https://dash.yunohost.org/appci/app/dokuwiki)
 
