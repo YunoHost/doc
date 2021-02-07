@@ -1,5 +1,5 @@
 ---
-title: Mettre à jour le système
+title: Mises à jour
 template: docs
 taxonomy:
     category: docs
