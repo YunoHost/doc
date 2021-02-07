@@ -213,24 +213,65 @@ However, community images exist and are available on Docker Hub:
 
 {% if at_home %}
 ## Download the YunoHost image
+<div class="hardware-image">
 <div id="cards-list">
-<div id="regularcomputer64" class="card panel panel-default" style="max-width:400px">
+</div>
+</div>
+<script type="text/template" id="image-template">
+<div id="{id}" class="card panel panel-default">
         <div class="panel-body text-center">
-            <h3>Regular computer</h3>
-            <div class="card-comment">64 bits - default</div>
+            <h3>{name}</h3>
+            <div class="card-comment">{comment}</div>
             <div class="card-desc text-center">
-![Regular computer](image://computer.png?resize=100,100)
+<img src="/user/images/{image}" height=100 style="vertical-align:middle">
             </div>
         </div>
-        <div class="annotations">
-            <div class="col-sm-6 annotation"><a href="https://build.yunohost.org/yunohost-buster-4.1.6-amd64-stable.iso.sha256sum"><span class="glyphicon glyphicon-barcode" aria-hidden="true"></span> Checksum</a></div>
-            <div class="col-sm-6 annotation"><a href="https://build.yunohost.org/yunohost-buster-4.1.6-amd64-stable.iso.sig"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> Signature</a></div>
+        <div class="annotations flex-container">
+            <div class="flex-child annotation"><a href="{file}.sha256sum">[fa=barcode] Checksum</a></div>
+            <div class="flex-child annotation"><a href="{file}.sig">[fa=tag] Signature</a></div>
         </div>
         <div class="btn-group" role="group">
-            <a href="https://build.yunohost.org/yunohost-buster-4.1.6-amd64-stable.iso" target="_BLANK" type="button" class="btn btn-info col-sm-12"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Télécharger <small>v.4.1.6</small></a>
+            <a href="{file}" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=download] Download <small>{version}</small></a>
         </div>
 </div>
-</div>
+</script>
+<script>
+var hardware = "{{ hardware|escape('js') }}";
+/*
+###############################################################################
+  Script that loads the infos from JavaScript and creates the corresponding
+  cards
+###############################################################################
+*/
+$(document).ready(function () {
+    console.log("in load");
+    $.getJSON('https://build.yunohost.org/images.json', function (images) {
+        $.each(images, function(k, infos) {
+            if (infos.tuto.indexOf(hardware) == -1) return;
+            // Fill the template
+            html = $('#image-template').html()
+             .replace('{id}', infos.id)
+             .replace('{name}', infos.name)
+             .replace('{comment}', infos.comment || "&nbsp;")
+             .replace('{image}', infos.image)
+             .replace('{version}', infos.version);
+ 
+            if (infos.file.startsWith("http"))
+                html = html.replace(/{file}/g, infos.file);
+            else
+                html = html.replace(/{file}/g, "https://build.yunohost.org/"+infos.file);
+   
+            if ((typeof(infos.has_sig_and_sums) !== 'undefined') && infos.has_sig_and_sums == false)
+            {
+                var $html = $(html);
+                $html.find(".annotations").html("&nbsp;");
+                html = $html[0];
+            } 
+            $('#cards-list').append(html);
+        });
+    });
+});
+</script>
 
 {% if regular %}
 !!! ***Particular case*** : If your server has no graphic card, [prepare iso for booting with serial port](https://github.com/luffah/debian-mkserialiso).
