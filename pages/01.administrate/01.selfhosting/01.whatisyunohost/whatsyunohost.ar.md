@@ -7,12 +7,12 @@ routes:
   default: '/whatsyunohost'
 ---
 
+![](image://YunoHost_logo_vertical.png?resize=400) 
+
 <div dir="rtl">
 واي يونوهوست YunoHost هو **نظام لتشغيل الخوادم** صُمِّم لتسهيل الإستضافة الذاتية لخدمات الإنترنت.
 هو مُرتكز و منسجم كافة الإنسجام مع توزيعة [غنو/لينكس ديبيان](https://debian.org).
 </div>
-
-![](image://debian-logo.png?resize=100)
 
 ---
 
@@ -33,7 +33,7 @@ routes:
 
 ---
 
-###<div dir="rtl"> أصل فكرة المشروع</div>
+### <div dir="rtl"> أصل فكرة المشروع</div>
 
 <div dir="rtl">
 تعود نشأة فكرة مشروع واي يونوهوست YunoHost إلى شهر فيفري مِن عام 2012 بعد محادثة بدأت على هذا الشكل تقريبًا :
@@ -73,6 +73,7 @@ YunoHost est développé pour être le plus **simple** et le moins intrusif poss
 
 Le tout est bien entendu **entièrement libre**. La philosophie de l’[الإستضافة الذاتية](/selfhosting) étant à nos yeux incompatible avec tout autre modèle de développement logiciel.
 
+<div dir="rtl">
 لا تتردّدوا في زيارة صفحة « [ساهموا](/contribute) ».
 </div>
 
@@ -80,15 +81,15 @@ Le tout est bien entendu **entièrement libre**. La philosophie de l’[الإس
 
 ###<div dir="rtl"> الأمان</div>
 
-لقد بُذِلت كل المجهودات مِن أجل تأمين واي يونوهوست YunoHost و **تعمية و تشفير البروتوكولات** . بإمكانكم الإطلاع على الشرح بتفاصيليه [هنا](/security).
+<div dir="rtl">لقد بُذِلت كل المجهودات مِن أجل تأمين واي يونوهوست YunoHost و **تعمية و تشفير البروتوكولات** . بإمكانكم الإطلاع على الشرح بتفاصيليه [هنا](/security).
 </div>
 ---
 
-###<div dir="rtl"> واي يونوهوست YunoHost ليس
+###<div dir="rtl"> واي يونوهوست YunoHost ليس</div>
 
 Même si YunoHost est multi-domaine et multi-utilisateur, il reste **inapproprié pour un usage mutualisé**.
 
 Premièrement parce que le logiciel est trop jeune, donc non-testé et non-optimisé pour être mis en production pour des centaines d’utilisateurs en même temps. Et quand bien même, ce n’est pas le chemin que l’on souhaite faire suivre à YunoHost. La virtualisation se démocratise, et c’est une façon bien plus étanche et sécurisée de faire de la mutualisation.
 
 Vous pouvez héberger vos amis, votre famille ou votre entreprise sans problème, mais vous devez **avoir confiance** en vos utilisateurs, et ils doivent de la même façon avoir confiance en vous. Si vous souhaitez tout de même fournir des services YunoHost à des inconnus, **un VPS entier par utilisateur** sera la meilleure solution.
-</div>
+
