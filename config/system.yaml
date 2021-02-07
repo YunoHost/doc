@@ -30,7 +30,7 @@ languages:
   http_accept_language: false
   override_locale: false
   content_fallback: {  }
-  pages_fallback_only: false
+  pages_fallback_only: true
 home:
   alias: /home
   hide_in_urls: false
