@@ -4,7 +4,7 @@ template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/dns_nohost'
+  default: '/dns_nohost_me'
 ---
 
 In order to make self-hosting as accessible as possible, the YunoHost Project provides a *free* and *automatically configured* domain name service. By using this service, you won't have to [configure DNS records](/dns_config) yourself, which can be tedious and technical.
