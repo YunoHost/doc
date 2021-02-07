@@ -7,7 +7,7 @@ routes:
   default: '/app_wikijs'
 ---
 
-![Wiki.js's logo](image://wikijs_logo.svg?height=80)
+![Wiki.js's logo](image://wikijs_logo.svg?resize=,80)
 
 [![Install Wiki.js with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=wikijs) [![Integration level](https://dash.yunohost.org/integration/wikijs.svg)](https://dash.yunohost.org/appci/app/wikijs)
 

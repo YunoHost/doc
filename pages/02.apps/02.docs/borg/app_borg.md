@@ -7,7 +7,7 @@ routes:
   default: '/app_borg'
 ---
 
-![borg's logo](image://borg_logo.svg?height=80)
+![borg's logo](image://borg_logo.svg?resize=,80)
 
 [![Install Borg with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=borg) [![Integration level](https://dash.yunohost.org/integration/borg.svg)](https://dash.yunohost.org/appci/app/borg)
 

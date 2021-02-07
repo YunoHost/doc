@@ -7,7 +7,7 @@ routes:
   default: '/app_privatebin'
 ---
 
-![PrivateBin's logo](image://zerobin_logo.svg?height=80)
+![PrivateBin's logo](image://zerobin_logo.svg?resize=,80)
 
 [![Install PrivateBin with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=privatebin) [![Integration level](https://dash.yunohost.org/integration/privatebin.svg)](https://dash.yunohost.org/appci/app/privatebin)
 

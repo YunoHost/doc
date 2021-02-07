@@ -7,7 +7,7 @@ routes:
   default: '/app_freshrss'
 ---
 
-![logo de FreshRSS](image://freshrss_logo.svg?height=80)
+![logo de FreshRSS](image://freshrss_logo.svg?resize=,80)
 
 [![Install FreshRSS with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=freshrss) [![Integration level](https://dash.yunohost.org/integration/freshrss.svg)](https://dash.yunohost.org/appci/app/freshrss)
 

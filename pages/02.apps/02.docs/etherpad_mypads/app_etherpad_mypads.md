@@ -7,7 +7,7 @@ routes:
   default: '/app_etherpad_mypads'
 ---
 
-![Etherpad's logo](image://etherpad_mypads_logo.svg?height=80)
+![Etherpad's logo](image://etherpad_mypads_logo.svg?resize=,80)
 
 [![Install Etherpad with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=etherpad_mypads) [![Integration level](https://dash.yunohost.org/integration/etherpad_mypads.svg)](https://dash.yunohost.org/appci/app/etherpad_mypads)
 

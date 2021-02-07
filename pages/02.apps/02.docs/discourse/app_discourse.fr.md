@@ -7,7 +7,7 @@ routes:
   default: '/app_discourse'
 ---
 
-![logo de Discourse](image://discourse_logo.svg?height=80)
+![logo de Discourse](image://discourse_logo.svg?resize=,80)
 
 [![Install Discourse with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=discourse) [![Integration level](https://dash.yunohost.org/integration/discourse.svg)](https://ci-apps.yunohost.org/jenkins/job/discourse%20%28Community%29/lastBuild/consoleFull)
 

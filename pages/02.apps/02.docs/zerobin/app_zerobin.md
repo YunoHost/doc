@@ -7,7 +7,7 @@ routes:
   default: '/app_zerobin'
 ---
 
-![zerobin's logo](image://zerobin_logo.svg?height=80)
+![zerobin's logo](image://zerobin_logo.svg?resize=,80)
 
 [![Install zerobin with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=zerobin) [![Integration level](https://dash.yunohost.org/integration/zerobin.svg)](https://dash.yunohost.org/appci/app/zerobin)
 

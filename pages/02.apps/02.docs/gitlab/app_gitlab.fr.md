@@ -7,7 +7,7 @@ routes:
   default: '/app_gitlab'
 ---
 
-![logo de GitLab](image://gitlab_logo.svg?height=80)
+![logo de GitLab](image://gitlab_logo.svg?resize=,80)
 
 [![Install GitLab with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gitlab) [![Integration level](https://dash.yunohost.org/integration/gitlab.svg)](https://dash.yunohost.org/appci/app/gitlab)
 
