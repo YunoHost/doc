@@ -87,3 +87,8 @@ img#whitelogo {
     background-color: gray;
     padding: 10px;
 }
+
+/* Hide home page in menu */
+.simplebar-content h5:first-child {
+    display: none;
+}

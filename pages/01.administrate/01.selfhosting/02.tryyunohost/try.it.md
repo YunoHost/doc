@@ -9,22 +9,16 @@ routes:
 
 ! **Nota:** A volte questo server demo può essere irraggiungibile
 
-<br>
+[center]
+[columns]
+[[fa=user /] Interfaccia utente](https://demo.yunohost.org/?target=_blank&classes=btn,btn-lg,btn-success)  
+Nome utente: demo  
+Password: demo
 
-  <div class="row text-center">
-    <div class="col-md-6">
-      <a href="https://demo.yunohost.org/" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-user"></span> Interfaccia utente</a>
-      <p class="text-muted">Nome utente: demo<br>Password: demo</p>
-    </div>
-    <div class="col-md-5">
-      <a href="https://demo.yunohost.org/yunohost/admin" target="_blank" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-lock"></span> Interfaccia amministrazione</a>
-      <p class="text-muted">Password: demo</p>
-    </div>
-  </div>
+[[fa=cog /] Interfaccia amministrazione](https://demo.yunohost.org/yunohost/admin/?target=_blank&classes=btn,btn-lg,btn-primary)  
+Password: demo
 
-<br>
+[/columns]
+[/center]
 
-<p class="text-center" markdown="1">
-***Il server demo è gentilmente fornito da 
-<a href="https://www.gitoyen.net" target="_blank">Gitoyen</a>***
-</p>
+!!!! **Il server demo è gentilmente fornito da  [Gitoyen](https://www.gitoyen.net?target=_blank) [fa=heart /]**
