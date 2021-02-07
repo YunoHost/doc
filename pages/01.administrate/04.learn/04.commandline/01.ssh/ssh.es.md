@@ -64,9 +64,7 @@ Si cambiaste el puerto SSH, hay que añadir `-p <numerodelpuerto>` al comando, p
 ssh -p 2244 admin@tu.dominio.tld
 ```
 
-<div class="alert alert-info">
-Si estás conectado como `admin` y quieres ser `root` para tener más confort (por ejemplo, para no teclear `sudo` con cada comando), puedes convertirte en `root` tecleando `sudo su`.
-</div>
+!!! Si estás conectado como `admin` y quieres ser `root` para tener más confort (por ejemplo, para no teclear `sudo` con cada comando), puedes convertirte en `root` tecleando `sudo su`.
 
 ## ¿ Qué usuarios ?
 

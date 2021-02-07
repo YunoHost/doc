@@ -67,9 +67,7 @@ If you changed the SSH port, you need to add `-p <portnumber>` to the command, e
 ssh -p 2244 admin@your.domain.tld
 ```
 
-<div class="alert alert-info">
-If you are connected as `admin` and would like to become `root` for more comfort (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su`.
-</div>
+!!! If you are connected as `admin` and would like to become `root` for more comfort (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su`.
 
 ## Which users?
 

@@ -37,8 +37,7 @@ Vous devriez voir un écran comme ça :
 
 * Laissez l’installateur faire le reste, il téléchargera les paquets requis et les installera.
 
-   <div class="alert alert-info">Si cette opération échoue, vous avez probablement un problème de connexion à Internet.    
-Vérifiez que votre serveur est bien branché et réessayez.</div>
+!!! Si cette opération échoue, vous avez probablement un problème de connexion à Internet. Vérifiez que votre serveur est bien branché et réessayez.
 
 * L’ordinateur devrait redémarrer automatiquement à la fin de l’installation.
 

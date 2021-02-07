@@ -26,9 +26,7 @@ Then you can use `nano /etc/ssowat/conf.json.persistent` to enable the theme you
 }
 ```
 
-<div class="alert alert-info" markdown="1">
-You might need to force the refresh of your browser's cache for the theme to fully propagate. You can do so with Ctrl+Shift+R on Firefox.
-</div>
+!!! You might need to force the refresh of your browser's cache for the theme to fully propagate. You can do so with Ctrl+Shift+R on Firefox.
 
 ## Adding someone else's theme
 

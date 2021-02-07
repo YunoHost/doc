@@ -38,7 +38,7 @@ Search bar
 Disclaimers
 -->
 
-<div class="alert alert-info">L'équipe de packaging d'applications sera heureuse de recevoir vos commentaires ! Si vous trouvez des problèmes ou des améliorations possibles en installant une app, n'hésitez pas à contribuer en créant un ticket (issue) directement sur le dépôt de code.</div>
+!!! L'équipe de packaging d'applications sera heureuse de recevoir vos commentaires ! Si vous trouvez des problèmes ou des améliorations possibles en installant une app, n'hésitez pas à contribuer en créant un ticket (issue) directement sur le dépôt de code.
 
 ! Les applications étiquettées <span class="label label-warning label-as-badge">low quality</span> fonctionnent peut-être, mais ne respectent pas les bonnes pratiques de packaging ou ne supportent pas certaines fonctionnalités comme les sauvegardes/restauration ou l'authentication unifiée. Soyez prudent si vous les installez.
 

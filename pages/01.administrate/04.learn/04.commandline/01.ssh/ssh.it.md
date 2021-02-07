@@ -62,9 +62,7 @@ Se hai modificato la porta in ascolto per SSH devi aggiungere l'opzione `-p <por
 ssh -p 2244 admin@your.domain.tld
 ```
 
-<div class="alert alert-info">
-Se sei loggato come `admin` ma vuoi usare l'utente `root` per maggiore comodità (ad esempio per evitare di scrivere `sudo` prima di ogni comando) puoi usare il comando `sudo su`.
-</div>
+!!! Se sei loggato come `admin` ma vuoi usare l'utente `root` per maggiore comodità (ad esempio per evitare di scrivere `sudo` prima di ogni comando) puoi usare il comando `sudo su`.
 
 ## Utenti abilitati
 
