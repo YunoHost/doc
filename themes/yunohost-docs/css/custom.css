@@ -148,11 +148,6 @@ body .off-canvas .learn-sidebar .learn-brand #logo path {
     fill: black!important;
 }
 
-
-body .off-canvas .learn-sidebar .searchbox ::placeholder {
-
-}
-
 body #top-bar #breadcrumbs > span span, #top-bar #breadcrumbs > a span {
     font-size: 0.7rem;
 }
