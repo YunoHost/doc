@@ -109,8 +109,7 @@ Nous avons besoin de tester YunoHost profondément. Si vous trouvez un bug, essa
 [/center]
 
 [center]
-Vous pouvez vous impliquer dans le développement de YunoHost peu importe votre niveau. Administrateurs système, développeurs web, designers et pythonistes <a href="https://github.com/YunoHost" target="_blank">sont les bienvenus</a>.<br>
-Découvrez [comment contribuer](/dev), et rejoignez-nous sur le [salon de discussion](xmpp:dev@conference.yunohost.org?join) !
+Vous pouvez vous impliquer dans le développement de YunoHost peu importe votre niveau. Administrateurs système, développeurs web, designers et pythonistes <a href="https://github.com/YunoHost" target="_blank">sont les bienvenus</a>. Découvrez [comment contribuer](/dev), et rejoignez-nous sur le [salon de discussion](xmpp:dev@conference.yunohost.org?join) !
 [/center]
 [/columns]
 
