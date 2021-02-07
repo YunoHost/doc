@@ -20,7 +20,7 @@ This page lists a few installation guides.
 [/div]
 
 [div class="flex-child"]
-[[figure caption="Try with VirtualBox"]![](image://virtualbox.png?height=150)[/figure]](/install_on_virtualbox)
+[[figure caption="Try with VirtualBox"]![](image://virtualbox.png?height=150)[/figure]](/install_process/hardware:virtualbox)
 [/div]
 
 [/div]
@@ -30,15 +30,15 @@ This page lists a few installation guides.
 [div class="flex-container"]
 
 [div class="flex-child"]
-[[figure caption="On a Raspberry Pi"]![](image://raspberrypi.jpg?height=150)[/figure]](/install_on_raspberry)
+[[figure caption="On a Raspberry Pi"]![](image://raspberrypi.jpg?height=150)[/figure]](/install_process/hardware:rpi2plus)
 [/div]
 
 [div class="flex-child"]
-[[figure caption="On an ARM board"]![](image://olinuxino.jpg?height=150)[/figure]](/install_on_arm_board)
+[[figure caption="On an ARM board"]![](image://olinuxino.jpg?height=150)[/figure]](/install_process/hardware:arm_sup)
 [/div]
 
 [div class="flex-child"]
-[[figure caption="On a regular computer"]![](image://computer.png?height=150)[/figure]](/install_iso)
+[[figure caption="On a regular computer"]![](image://computer.png?height=150)[/figure]](/install_process/hardware:regular)
 [/div]
 
 [/div]
@@ -51,7 +51,7 @@ This page lists a few installation guides.
 
 [div class="flex-child"]
 
-[[figure caption="On a dedicated or virtual private server"]![](image://vps.png?height=150)[/figure]](/install_on_vps)
+[[figure caption="On a dedicated or virtual private server"]![](image://vps.png?height=150)[/figure]](/install_process/hardware:vps_debian)
 
 [/div]
 
@@ -62,7 +62,7 @@ This page lists a few installation guides.
 [div class="flex-container"]
 
 [div class="flex-child"]
-[[figure caption="On Debian 10 Buster"]![](image://debian-logo.png?height=150)[/figure]](/install_on_debian)
+[[figure caption="On Debian 10 Buster"]![](image://debian-logo.png?height=150)[/figure]](/install_process:hardware)
 [/div]
 
 [div class="flex-child"]
@@ -70,7 +70,7 @@ This page lists a few installation guides.
 [/div]
 
 [div class="flex-child"]
-[[figure caption="(Non-official!) Docker images"]![](image://docker.png?height=150)[/figure]](/docker)
+[[figure caption="(Non-official!) Docker images"]![](image://docker.png?height=150)[/figure]](/install_process/hardware:docker)
 [/div]
 
 [/div]
