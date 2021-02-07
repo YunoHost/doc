@@ -7,32 +7,25 @@ routes:
   default: '/docs'
 ---
 
-<p dir="rtl" class="lead">
 دليل واي يونوهوست YunoHost يرتكز أساسًا على ثلاثة محاور :
-</p>
 
-<div class="row text-center">
+[<i class="fa fa-lock"></i> دليل المدير](/administrate?classes=btn,btn-lg,btn-primary)
+يتطرق إلى طريقة التنصيب و إدارة السيرفر و التطبيقات
 
-<div dir="rtl" class="col col-md-4 col-md-offset-1">
-<a class="btn btn-primary btn-lg" href="/admindoc"><span class="glyphicon glyphicon-lock"></span> دليل المدير</a>
-<p><small class="text-muted">يتطرق إلى طريقة التنصيب و إدارة السيرفر و التطبيقات</small></p>
-</div>
-
-<div dir="rtl" class="col col-md-4 col-md-offset-1">
-<a class="btn btn-danger btn-lg" href="/contributordoc"><span class="glyphicon glyphicon-heart"></span> دليل المساهم</a>
-<p><small class="text-muted">يحتوي على كافة المعلومات التي تخصنا و أسلوب عملنا و مساهمتنا</small></p>
-</div>
-
-</div>
+[<i class="fa fa-heart"></i> دليل المساهم](/contribute?classes=btn,btn-lg,btn-error) 
+يحتوي على كافة المعلومات التي تخصنا و أسلوب عملنا و مساهمتنا
 
 * Project's life:
-   * [Frequently asked questions](/faq)
+   * [Frequently asked questions](/help/faq)
+   * [Project news](/news)
    * [Project organization](/project_organization)
-   * [Blog](https://forum.yunohost.org/c/announcement)
+   * [Project budget](/project_budget)
    * [Forum](https://forum.yunohost.org)
    * [Chat rooms](/chat_rooms)
    * [Communication](/communication)
    * [Support / Help](/help)
+   * [Sponsors and partners](/sponsors_partners)
 
 * استخدم مثال:
    * [YunoHost للمنظمات غير الهادفة للربح](/use_case_non-profit_organisations)
+   * (FR) [YunoHost for CHATONS (A collective of independant, transparent, open, neutral and ethical hosters providing FLOSS-based online services.)](https://wiki.chatons.org/doku.php/yunohost) 
