@@ -7,11 +7,7 @@ routes:
   default: '/torhiddenservice'
 ---
 
-<div class="alert alert-warning">
-This tuto is not finished ! Some data could leak with this setup like the main domain of your yunohost, so it's not a "Hidden Service".
-</div>
-
-See https://www.torproject.org/docs/tor-hidden-service.html.en
+! This tuto is not finished ! Some data could leak with this setup like the main domain of your yunohost, so it's not a "Hidden Service". See https://www.torproject.org/docs/tor-hidden-service.html.en
 
 ### Installing Tor
 ```bash

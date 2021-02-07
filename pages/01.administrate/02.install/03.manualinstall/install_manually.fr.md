@@ -7,9 +7,7 @@ routes:
   default: '/install_manually'
 ---
 
-<div class="alert alert-info">
-Cette procédure fonctionne seulement sur des machines avec **Debian 10** <small>(et **kernel >= 3.12**)</small>)
-</div>
+!!! Cette procédure fonctionne seulement sur des machines avec **Debian 10** <small>(et **kernel >= 3.12**)</small>)
 
 Une fois que vous avez accès à votre serveur (directement ou par SSH), vous pouvez installer YunoHost en exécutant cette commande en tant que root :
 

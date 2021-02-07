@@ -39,10 +39,6 @@ Installez le programme et lancez *Filezilla*.
 
    ![la vue du "gestionnaire de site" avec le nouveau serveur ajouté](image://filezilla_5.png)
 
-<div class="alert alert-success">
-  <span class="glyphicon glyphicon-chevron-right"></span> Vous pouvez désormais utiliser cette configuration pour vous connecter.
-</div>
-
 ## Utilisation
 
 1. Connectez-vous au Site créé précédemment. *Il se peut que le mot de passe soit redemandé.*
@@ -55,9 +51,7 @@ Installez le programme et lancez *Filezilla*.
 
    ![le chemin où les sauvegardes sont situées sur YunoHost](image://filezilla_7.png)
 
-<div class="alert alert-warning">
-  <span class="glyphicon glyphicon-cloud-download"></span> Assurez-vous de télécharger à la fois le fichier `.tar.gz` et le fichier `.json`
-</div>
+! <span class="glyphicon glyphicon-cloud-download"></span> Assurez-vous de télécharger à la fois le fichier `.tar.gz` et le fichier `.json`
 
 ![Copier les sauvegardes de YunoHost sur l'ordinateur local](image://filezilla_8.png)
 

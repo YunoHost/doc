@@ -12,9 +12,7 @@ routes:
 ![](image://olinuxino.jpg?resize=250)
 ![](image://micro-sd-card.jpg)
 
-<div class="alert alert-info" markdown="1">
-Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissance des [possibles limitations liées à votre FAI](/isp). Si votre FAI est trop contraignant, vous pouvez envisager d'utiliser un VPN pour contourner ces limitations.
-</div>
+!!! Avant d'héberger un serveur chez vous, il est recommandé de prendre connaissance des [possibles limitations liées à votre FAI](/isp). Si votre FAI est trop contraignant, vous pouvez envisager d'utiliser un VPN pour contourner ces limitations.
 
 - Une carte ARM avec un processeur de 500 MHz et 512 Mo de mémoire vive ; 
 - Un adaptateur secteur pour alimenter la carte ;

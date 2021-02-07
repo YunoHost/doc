@@ -26,17 +26,13 @@ Then you can use `nano /etc/ssowat/conf.json.persistent` to enable the theme you
 }
 ```
 
-<div class="alert alert-info" markdown="1">
-You might need to force the refresh of your browser's cache for the theme to fully propagate. You can do so with Ctrl+Shift+R on Firefox.
-</div>
+!!! You might need to force the refresh of your browser's cache for the theme to fully propagate. You can do so with Ctrl+Shift+R on Firefox.
 
 ## Adding someone else's theme
 
 You may add themes created by other people by downloading and extracting the corresponding files in a new folder `the_theme_name` in `/usr/share/ssowat/portal/assets/themes/`.
 
-<div class="alert alert-warning" markdown="1">
-**Beware** that adding third-party themes from random strangers on the internet **is a security risk**. It is equivalent to running someone's else code on your machine, which can be used for malicious purpose such as stealing credentials!
-</div>
+! **Beware** that adding third-party themes from random strangers on the internet **is a security risk**. It is equivalent to running someone's else code on your machine, which can be used for malicious purpose such as stealing credentials!
 
 ## Creating your own theme
 

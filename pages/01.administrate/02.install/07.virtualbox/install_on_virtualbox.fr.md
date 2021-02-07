@@ -16,12 +16,7 @@ routes:
 * Un ordinateur x86 avec VirtualBox installé et assez de RAM disponible pour lancer une petite machine virtuelle.
 * La dernière **image ISO YunoHost** stable, disponible [ici](/images).
 
-<div class="alert alert-warning" markdown="1">
-N.B. : Installer YunoHost dans une VirtualBox est utile pour tester la
-distribution. Pour réellement s'autohéberger sur le long terme, il vous faudra
-probablement une machine physique (vieil ordinateur, carte ARM...) ou un VPS en
-ligne.
-</div>
+! N.B. : Installer YunoHost dans une VirtualBox est utile pour tester la distribution. Pour réellement s'autohéberger sur le long terme, il vous faudra probablement une machine physique (vieil ordinateur, carte ARM...) ou un VPS en ligne.
 
 ---
 

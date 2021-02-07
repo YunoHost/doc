@@ -7,11 +7,7 @@ routes:
   default: '/try'
 ---
 
-<div class="alert alert-warning" markdown="1">
-**Nota:** Aquest és un servidor de demostració, podria estar caigut de tant en tant.
-<br>
-
-</div>
+! **Nota:** Aquest és un servidor de demostració, podria estar caigut de tant en tant.
 
 <br>
 

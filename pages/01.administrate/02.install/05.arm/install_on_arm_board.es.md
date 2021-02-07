@@ -12,9 +12,7 @@ routes:
 ![](image://olinuxino.jpg?resize=250)
 ![](image://micro-sd-card.jpg)
 
-<div class="alert alert-info" markdown="1">
-Antes de alojar tu propio servidor en tu casa, te recomendamos que consultes las [posibles restricciones impuestas por tu Proveedor de Internet](/isp). Si tu proveedor es demasiado restrictivo, puedes utilizar un VPN para eludir estas restricciones.
-</div>
+!!! Antes de alojar tu propio servidor en tu casa, te recomendamos que consultes las [posibles restricciones impuestas por tu Proveedor de Internet](/isp). Si tu proveedor es demasiado restrictivo, puedes utilizar un VPN para eludir estas restricciones.
 
 - Una tarjeta ARM con un procesador de 500 MHz et 512 Mo de memoria RAM ; 
 - Un adaptador de corriente para alimentar la tarjeta ;

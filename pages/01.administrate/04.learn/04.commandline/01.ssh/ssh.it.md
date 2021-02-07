@@ -32,9 +32,7 @@ ssh root@111.222.333.444
 
 Ti verrà richiesta una password. Nel caso tu stia utilizzando un VPS questa ti dovrebbe essere stata comunicata dal provider. Se invece stai utilizzando un'immagine pre-installata (per computer di tipo x86 o ARM) la password sarà `yunohost`.
 
-<div class="alert alert-warning">
-Dalla versione 3.4 di YunoHost, dopo aver completato il processo di post installazione, non sarà più possibile fare login da `root`: invece **sarà necessario fare login usando l'utente `admin`!**. Nel caso in cui il server LDAP non stia funzionando e l'utente `admin` sia inutilizzabile sarà sempre possibile fare login da `root` solo dalla rete locale.
-</div>
+! Dalla versione 3.4 di YunoHost, dopo aver completato il processo di post installazione, non sarà più possibile fare login da `root`: invece **sarà necessario fare login usando l'utente `admin`!**. Nel caso in cui il server LDAP non stia funzionando e l'utente `admin` sia inutilizzabile sarà sempre possibile fare login da `root` solo dalla rete locale.
 
 #### Cambio della password
 
@@ -64,9 +62,7 @@ Se hai modificato la porta in ascolto per SSH devi aggiungere l'opzione `-p <por
 ssh -p 2244 admin@your.domain.tld
 ```
 
-<div class="alert alert-info">
-Se sei loggato come `admin` ma vuoi usare l'utente `root` per maggiore comodità (ad esempio per evitare di scrivere `sudo` prima di ogni comando) puoi usare il comando `sudo su`.
-</div>
+!!! Se sei loggato come `admin` ma vuoi usare l'utente `root` per maggiore comodità (ad esempio per evitare di scrivere `sudo` prima di ogni comando) puoi usare il comando `sudo su`.
 
 ## Utenti abilitati
 

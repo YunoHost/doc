@@ -39,19 +39,15 @@ Search bar
 Disclaimers
 -->
 
-<div class="alert alert-info">The application packaging team will welcome your feedback! If you install an app and find issues or possible improvements, do not hesitate to contribute by reporting your issues directly on the corresponding code repositories.</div>
+!!! The application packaging team will welcome your feedback! If you install an app and find issues or possible improvements, do not hesitate to contribute by reporting your issues directly on the corresponding code repositories.
 
-<div id="bad-quality-apps-disclaimer" class="alert alert-warning">
-    Applications flagged as <span class="label label-warning label-as-badge">low quality</span> may be working, but they may not respect good packaging practices or lack integration of some features like backup/restore or single authentication. Be cautious when installing them.
-</div>
+! Applications flagged as <span class="label label-warning label-as-badge">low quality</span> may be working, but they may not respect good packaging practices or lack integration of some features like backup/restore or single authentication. Be cautious when installing them.
 
-<div id="broken-apps-disclaimer" class="alert alert-danger">
-    Applications flagged as <span class="label label-danger label-as-badge">not working</span> are known to be broken and/or are still in development. **Do not install them** in a production environment!
-</div>
+!!!! Applications flagged as <span class="label label-danger label-as-badge">not working</span> are known to be broken and/or are still in development. **Do not install them** in a production environment!
 
 <div id="app-cards-list" class="app-cards-list"></div>
 
-<div class="alert alert-warning">If you don't find the app you are looking for, you can try to look for a appname_ynh repository on GitHub or on the internet, or add it to the <a href="/apps_wishlist">apps wishlist</a>.</div>
+! If you don't find the app you are looking for, you can try to look for a appname_ynh repository on GitHub or on the internet, or add it to the <a href="/apps_wishlist">apps wishlist</a>.
 
 <!--
 Custom CSS for this page

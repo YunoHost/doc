@@ -12,9 +12,7 @@ routes:
 ![](image://raspberrypi.jpg?resize=300)
 ![](image://micro-sd-card.jpg)
 
-<div class="alert alert-info" markdown="1">
-Vor der Einrichtung eines Servers zuhause ist es empfehlenswert [mögliche Einschränkungen deines Providers](/isp) zu kennen. Wenn er zu viele Einschränkungen vornimmt, kann es sinnvoll sein ein VPN zu nutzen um diese zum umgehen.
-</div>
+!!! Vor der Einrichtung eines Servers zuhause ist es empfehlenswert [mögliche Einschränkungen deines Providers](/isp) zu kennen. Wenn er zu viele Einschränkungen vornimmt, kann es sinnvoll sein ein VPN zu nutzen um diese zum umgehen.
 
 ## Voraussetzungen
 
@@ -40,13 +38,9 @@ Vor der Einrichtung eines Servers zuhause ist es empfehlenswert [mögliche Einsc
 
 ## Manual installation (advanced users)
 
-<div class="alert alert-warning" markdown="1">
-We do not recommend the manual installation because it is more technical and longer than using the pre-installed image. This documentation is only intended for advanced users.
-</div>
+!  We do not recommend the manual installation because it is more technical and longer than using the pre-installed image. This documentation is only intended for advanced users.
 
-<div class="alert alert-warning" markdown="1">
-The latest Raspberry Pi OS Lite images requires a screen and a keyboard, as it is no longer possible to connect directly to the Raspberry through SSH. Nevertheless it is possible to re-enable SSH at boot: before starting your Raspberry, put in the boot partition of the SD card an empty file named `ssh` (without extension).
-</div>
+! The latest Raspberry Pi OS Lite images requires a screen and a keyboard, as it is no longer possible to connect directly to the Raspberry through SSH. Nevertheless it is possible to re-enable SSH at boot: before starting your Raspberry, put in the boot partition of the SD card an empty file named `ssh` (without extension).
 
 0. Install Raspberry Pi OS Lite on the SD card ([instructions](https://www.raspberrypi.org/downloads/raspberry-pi-os/)).
 

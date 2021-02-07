@@ -28,9 +28,7 @@ On the OVH panel, you will copy 3 element :
 On your VPS, create a backup of the network configuration with : `cp /etc/network/interfaces ~/interfaces` in home directory.
 Then, you can edit the configuration file (`/etc/network/interfaces`) with the following. It is assumed that :
 
-<div class="alert alert-warning" markdown="1">
-In this example, it is assumed that your network interface is `eth0`. If it's different (check with `ip a`) you need to adapt the example below.
-</div>
+! In this example, it is assumed that your network interface is `eth0`. If it's different (check with `ip a`) you need to adapt the example below.
 
 ```plaintext
 iface eth0 inet6 static

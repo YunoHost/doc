@@ -41,9 +41,7 @@ Par défaut, l’authentification SSH se fait avec le mot de passe d’administr
 ssh-keygen
 ssh-copy-id -i ~/.ssh/id_rsa.pub <votre_serveur_yunohost>
 ```
-<div class="alert alert-info" markdown="1">
-Si vous êtes sur Ubuntu 16.04 vous devez faire  `ssh-add` pour initialiser l'agent ssh
-</div>
+!!! Si vous êtes sur Ubuntu 16.04 vous devez faire  `ssh-add` pour initialiser l'agent ssh
 
 Entrez le mot de passe d’administration et votre clé publique devrait être copiée sur votre serveur.
 
@@ -132,9 +130,7 @@ ssh -p <votre_numero_de_port_ssh> admin@<votre_serveur_yunohost>
 
 Afin d’éviter de multiples tentatives de forçage du login admin par des robots, on peut éventuellement changer l’utilisateur autorisé à se connecter.
 
-<div class="alert alert-info" markdown="1">
-Dans le cas d’une authentification par clé, la force brute n’a aucune chance de réussir. Cette étape n’est donc pas vraiment utile dans ce cas
-</div>
+!!! Dans le cas d’une authentification par clé, la force brute n’a aucune chance de réussir. Cette étape n’est donc pas vraiment utile dans ce cas
 
 **Sur votre serveur**, ajoutez un utilisateur.
 ```bash

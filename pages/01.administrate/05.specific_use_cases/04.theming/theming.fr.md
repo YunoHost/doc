@@ -26,17 +26,13 @@ Ensuite, vous pouvez utiliser `nano /etc/ssowat/conf.json.persistent` pour activ
 }
 ```
 
-<div class="alert alert-info" markdown="1">
-Vous devrez peut-être forcer le rafraîchissement du cache de votre navigateur pour que le thème se propage complètement. Vous pouvez le faire avec Ctrl+Maj+R sur Firefox.
-</div>
+!!! Vous devrez peut-être forcer le rafraîchissement du cache de votre navigateur pour que le thème se propage complètement. Vous pouvez le faire avec Ctrl+Maj+R sur Firefox.
 
 ## Ajouter le thème de quelqu'un d'autre
 
 Vous pouvez ajouter des thèmes créés par d'autres personnes en téléchargeant et en extrayant les fichiers correspondants dans un nouveau dossier `nom_du_theme` dans `/usr/share/ssowat/portal/assets/themes/`.
 
-<div class="alert alert-warning" markdown="1">
-**Attention** : l'ajout de thèmes provenant d'inconnus sur Internet **est un risque de sécurité**. Cela équivaut à exécuter du code écrit par quelqu'un d'autre sur votre machine, et peut donc être utilisé à des fins malveillantes comme voler des mots de passe !
-</div> 
+! **Attention** : l'ajout de thèmes provenant d'inconnus sur Internet **est un risque de sécurité**. Cela équivaut à exécuter du code écrit par quelqu'un d'autre sur votre machine, et peut donc être utilisé à des fins malveillantes comme voler des mots de passe !
 
 ## Créer votre propre thème
 

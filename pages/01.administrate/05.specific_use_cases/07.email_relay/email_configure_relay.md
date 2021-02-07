@@ -14,10 +14,7 @@ If your ISP blocks port 25, if you can't set a reverseDNS on your server, or if 
 A SMTP relay is basically a third party hosted SMTP server that will send emails on behalf of your own SMTP server (Postfix service on YunoHost).
 Once setup correctly on YunoHost, it will operate in a totally transparent manner, both for you and for your correspondents: they will see emails as coming from your YunoHost main URL, but all the sending will be delegated to the SMTP relay you have chosen and configured.
 
-<div class="alert alert-warning" markdown="1">
-<span class="glyphicon glyphicon-warning-sign"></span> 
-It's important to note that using a SMTP relay has to be seen as a (big) compromise in the world of self-hosting. Indeed, when using a SMTP relay, you will not only let a third party send emails on your behalf, but also be able to access to the full content of all the emails you'll send. Be also aware that a SMTP relay is setup for your whole YunoHost server: you can't choose which emails or which users go through it because all future emails will.
-</div>
+! <span class="glyphicon glyphicon-warning-sign"></span> It's important to note that using a SMTP relay has to be seen as a (big) compromise in the world of self-hosting. Indeed, when using a SMTP relay, you will not only let a third party send emails on your behalf, but also be able to access to the full content of all the emails you'll send. Be also aware that a SMTP relay is setup for your whole YunoHost server: you can't choose which emails or which users go through it because all future emails will.
 
 ## How to use a SMTP relay with YunoHost?
 
@@ -37,10 +34,7 @@ Usually, the SMTP relay provider will provide you with a guide on how to modify 
 
 Please note that modifying your DNS records could sometimes take over 24h to take effect, so be patient!
 
-<div class="alert alert-warning" markdown="1">
-<span class="glyphicon glyphicon-warning-sign"></span> 
-From now on, a non trusty SMTP relay provider could send emails from your main domain without telling you.
-</div>
+! <span class="glyphicon glyphicon-warning-sign"></span> From now on, a non trusty SMTP relay provider could send emails from your main domain without telling you.
 
 ### Step 3: Setup YunoHost correctly
 
@@ -72,10 +66,7 @@ sudo yunohost settings list
 
 Your SMTP relay is now configured!
 
-<div class="alert alert-warning" markdown="1">
-<span class="glyphicon glyphicon-warning-sign"></span> 
-From now on, a non trusty SMTP relay provider could read or use the data of all the emails you send without telling you (but still won't be able to read nor to use the data from emails you receive).
-</div>
+! <span class="glyphicon glyphicon-warning-sign"></span> From now on, a non trusty SMTP relay provider could read or use the data of all the emails you send without telling you (but still won't be able to read nor to use the data from emails you receive).
 
 ### Step 4: Check your setup
 

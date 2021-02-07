@@ -39,10 +39,6 @@ Install the program and run *Filezilla*.
 
    ![View of the "site manager" with the newly server added](image://filezilla_5.png)
 
-<div class="alert alert-success">
-  <span class="glyphicon glyphicon-chevron-right"></span> You can now use your new bookmark to connect to the server
-</div>
-
 ## Usage
 
 1. Connect to the Site created previously. *Your passwork might be asked again*
@@ -55,9 +51,7 @@ Install the program and run *Filezilla*.
 
    ![path where backups are located on YunoHost](image://filezilla_7.png)
 
-<div class="alert alert-warning">
-  <span class="glyphicon glyphicon-cloud-download"></span> Be sure to download both the `.tar.gz` and `.json` files.
-</div>
+! <span class="glyphicon glyphicon-cloud-download"></span> Be sure to download both the `.tar.gz` and `.json` files.
 
 ![Copy backups from YunoHost to local computer](image://filezilla_8.png)
 
