@@ -43,9 +43,7 @@ Disclaimers
 
 ! Applications flagged as <span class="label label-warning label-as-badge">low quality</span> may be working, but they may not respect good packaging practices or lack integration of some features like backup/restore or single authentication. Be cautious when installing them.
 
-<div id="broken-apps-disclaimer" class="alert alert-danger">
-    Applications flagged as <span class="label label-danger label-as-badge">not working</span> are known to be broken and/or are still in development. **Do not install them** in a production environment!
-</div>
+!!!! Applications flagged as <span class="label label-danger label-as-badge">not working</span> are known to be broken and/or are still in development. **Do not install them** in a production environment!
 
 <div id="app-cards-list" class="app-cards-list"></div>
 

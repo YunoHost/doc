@@ -39,10 +39,6 @@ Installez le programme et lancez *Filezilla*.
 
    ![la vue du "gestionnaire de site" avec le nouveau serveur ajouté](image://filezilla_5.png)
 
-<div class="alert alert-success">
-  <span class="glyphicon glyphicon-chevron-right"></span> Vous pouvez désormais utiliser cette configuration pour vous connecter.
-</div>
-
 ## Utilisation
 
 1. Connectez-vous au Site créé précédemment. *Il se peut que le mot de passe soit redemandé.*

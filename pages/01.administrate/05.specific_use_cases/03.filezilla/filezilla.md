@@ -39,10 +39,6 @@ Install the program and run *Filezilla*.
 
    ![View of the "site manager" with the newly server added](image://filezilla_5.png)
 
-<div class="alert alert-success">
-  <span class="glyphicon glyphicon-chevron-right"></span> You can now use your new bookmark to connect to the server
-</div>
-
 ## Usage
 
 1. Connect to the Site created previously. *Your passwork might be asked again*
