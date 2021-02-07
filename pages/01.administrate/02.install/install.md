@@ -13,60 +13,64 @@ This page lists a few installation guides.
 
 ## Give it a try
 
-[columns][center]
+[div class="flex-container"]
 
-[[figure caption="Demo server"]![](image://logo.png?resize=150&class=inline)[/figure]](/try)
+[div class="flex-child"]
+[[figure caption="Demo server"]![](image://logo.png?height=150)[/figure]](/try)
+[/div]
 
-[[figure caption="Try with VirtualBox"]
-![](image://virtualbox.png?resize=150&class=inline)
-[/figure]](/install_on_virtualbox)
+[div class="flex-child"]
+[[figure caption="Try with VirtualBox"]![](image://virtualbox.png?height=150)[/figure]](/install_on_virtualbox)
+[/div]
 
-[/center][/columns]
+[/div]
 
 ## Install at home
 
-[columns count=3][center]
+[div class="flex-container"]
 
-[[figure class="nomargin" caption="On a Raspberry Pi"]
-![](image://raspberrypi.jpg?resize=150,150)
-[/figure]](/install_on_raspberry)
-  
-[[figure class="nomargin" caption="On an ARM board"]
-![](image://olinuxino.jpg?resize=150,150)
-[/figure]](/install_on_arm_board)
-  
-[[figure class="nomargin" caption="On a regular computer"]
-![](image://computer.png?resize=150,150)
-[/figure]](/install_iso)
+[div class="flex-child"]
+[[figure caption="On a Raspberry Pi"]![](image://raspberrypi.jpg?height=150)[/figure]](/install_on_raspberry)
+[/div]
 
-[/center][/columns]
+[div class="flex-child"]
+[[figure caption="On an ARM board"]![](image://olinuxino.jpg?height=150)[/figure]](/install_on_arm_board)
+[/div]
+
+[div class="flex-child"]
+[[figure caption="On a regular computer"]![](image://computer.png?height=150)[/figure]](/install_iso)
+[/div]
+
+[/div]
 
 ## Install on a remote server
 
 !!! [fa=fa-heart /] Local associative ISP near you might be able to provide you with a *Virtual Private Server* (VPS), managed by human beings who respect users and care about [Net Neutrality](https://en.wikipedia.org/wiki/Net_neutrality) ! Check out [this page](https://db.ffdn.org/) for more information.
 
-[center]
+[div class="flex-container"]
 
-[[figure class="nomargin" caption="On a dedicated or virtual private server"]
-![](image://vps.png?resize=150,150)
-[/figure]](/install_on_vps)
+[div class="flex-child"]
 
-[/center]
+[[figure caption="On a dedicated or virtual private server"]![](image://vps.png?height=150)[/figure]](/install_on_vps)
+
+[/div]
+
+[/div]
 
 ## Advanced / others
 
-[columns count=3][center]
+[div class="flex-container"]
 
-[[figure class="nomargin" caption="On Debian 10 Buster"]
-![](image://debian-logo.png?resize=150,150)
-[/figure]](/install_on_debian)
+[div class="flex-child"]
+[[figure caption="On Debian 10 Buster"]![](image://debian-logo.png?height=150)[/figure]](/install_on_debian)
+[/div]
 
-[[figure class="nomargin" caption="Dev environment in LXD/LXC"]
-![](image://lxc.png?resize=150,150)
-[/figure]](/dev)
+[div class="flex-child"]
+[[figure caption="Dev environment in LXD/LXC"]![](image://lxc.png?height=150)[/figure]](/dev)
+[/div]
 
-[[figure class="nomargin" caption="(Non-official!) Docker images"]
-![](image://docker.png?resize=150,150)
-[/figure]](/docker)
+[div class="flex-child"]
+[[figure caption="(Non-official!) Docker images"]![](image://docker.png?height=150)[/figure]](/docker)
+[/div]
 
-[/center][/columns]
+[/div]

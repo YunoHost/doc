@@ -18,56 +18,60 @@ routes:
 
 ## التجريب
 
-[columns][center]
+[div class="flex-container"]
 
-[[figure caption="الخادوم التجريبي"]![](image://logo.png?resize=150&class=inline)[/figure]](/try)
+[div class="flex-child"]
+[[figure caption="الخادوم التجريبي"]![](image://logo.png?height=150)[/figure]](/try)
+[/div]
 
-[[figure caption="التجريب على خادوم إفتراضي"]
-![](image://virtualbox.png?resize=150&class=inline)
-[/figure]](/install_on_virtualbox)
+[div class="flex-child"]
+[[figure caption="التجريب على خادوم إفتراضي"]![](image://virtualbox.png?height=150)[/figure]](/install_on_virtualbox)
+[/div]
 
-[/center][/columns]
+[/div]
 
 ## عملية النتصيب في المنزل
 
-[columns count=3][center]
+[div class="flex-container"]
 
-[[figure class="nomargin" caption="على راسبيري باي"]
-![](image://raspberrypi.jpg?resize=150,150)
-[/figure]](/install_on_raspberry)
-  
-[[figure class="nomargin" caption="على بطاقة أي أر آم ARM"]
-![](image://olinuxino.jpg?resize=150,150)
-[/figure]](/install_on_arm_board)
-  
-[[figure class="nomargin" caption="على حاسوب عادي"]
-![](image://computer.png?resize=150,150)
-[/figure]](/install_iso)
+[div class="flex-child"]
+[[figure caption="على راسبيري باي"]![](image://raspberrypi.jpg?height=150)[/figure]](/install_on_raspberry)
+[/div]
 
-[/center][/columns]
+[div class="flex-child"]
+[[figure caption="على بطاقة أي أر آم ARM"]![](image://olinuxino.jpg?height=150)[/figure]](/install_on_arm_board)
+[/div]
+
+[div class="flex-child"]
+[[figure caption="على حاسوب عادي"]![](image://computer.png?height=150)[/figure]](/install_iso)
+[/div]
+
+[/div]
 
 ## التنصيب عن بُعد
 
 !!! [fa=fa-heart /] بإِمكانْ جمعيات مُزَوِّدي الإنترنت القريبة منكم أن تُوفّر لكم *خادوماً إفتراضياً خاصاً* (VPS) ، خادوم يُديره بشرٌ و يحترمُ قيمةَ المُستخدِمين و [حِياديّةَ الإنترنت](https://en.wikipedia.org/wiki/Net_neutrality) ! إطّلعوا على [هذه الصفحة](https://db.ffdn.org/) للمزيد مِن المعلومات.
 
-[center]
+[div class="flex-container"]
 
-[[figure class="nomargin" caption="على خادوم مُستضاف أو خادوم إفتراضي خاص (VPS)"]
-![](image://vps.png?resize=150,150)
-[/figure]](/install_on_vps)
+[div class="flex-child"]
 
-[/center]
+[[figure caption="على خادوم مُستضاف أو خادوم إفتراضي خاص (VPS)"]![](image://vps.png?height=150)[/figure]](/install_on_vps)
+
+[/div]
+
+[/div]
 
 ## طُرُق مُتَقدِّمة / أخرى
 
-[columns count=2][center]
+[div class="flex-container"]
 
-[[figure class="nomargin" caption="على ديبيان 9 / ستريتش"]
-![](image://debian-logo.png?resize=150,150)
-[/figure]](/install_on_debian)
+[div class="flex-child"]
+[[figure caption="على ديبيان 9 / ستريتش"]![](image://debian-logo.png?height=150)[/figure]](/install_on_debian)
+[/div]
 
-[[figure class="nomargin" caption="Dev environment in LXD/LXC"]
-![](image://lxc.png?resize=150,150)
-[/figure]](/dev)
+[div class="flex-child"]
+[[figure caption="Dev environment in LXD/LXC"]![](image://lxc.png?height=150)[/figure]](/dev)
+[/div]
 
-[/center][/columns]
+[/div]
