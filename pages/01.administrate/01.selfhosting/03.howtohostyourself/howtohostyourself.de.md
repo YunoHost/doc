@@ -32,7 +32,7 @@ Sie können einen virtuellen privaten Server oder eine dedizierte Maschine von [
 
 ### Summary
 
-<table class="table">
+<table>
     <thead>
       <tr>
         <th></th>
@@ -67,7 +67,7 @@ Sie können einen virtuellen privaten Server oder eine dedizierte Maschine von [
       </tr>
       <tr>
         <td style="text-align:center;">Mögliche ISP-Einschränkungen</td>
-        <td style="text-align:center;" class="danger">Ja <br><small>(siehe [hier](/isp))</small></td>
+        <td style="text-align:center;" class="danger">Ja <br><small>(siehe <a href="/isp">hier</a>)</small></td>
         <td style="text-align:center;" class="success">Per VPN umgangen</td>
         <td style="text-align:center;" class="success">Normalerweise nein</td>
       </tr>
@@ -88,3 +88,15 @@ Sie können einen virtuellen privaten Server oder eine dedizierte Maschine von [
       </tr>
     </tbody>
 </table>
+
+<style>
+.danger{
+  background-color: #f2dede;
+}
+.warning {
+  background-color: #fcf8e3;
+}
+.success {
+  background-color: #dff0d8;
+}
+</style>
