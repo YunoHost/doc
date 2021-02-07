@@ -42,7 +42,7 @@ Disclaimers
 
 ! Les applications étiquettées <span class="label label-warning label-as-badge">low quality</span> fonctionnent peut-être, mais ne respectent pas les bonnes pratiques de packaging ou ne supportent pas certaines fonctionnalités comme les sauvegardes/restauration ou l'authentication unifiée. Soyez prudent si vous les installez.
 
-!!!! Les applications étiquettées <span class="label label-danger label-as-badge">not working</span> sont connues pour être cassées et/ou encore en développement. **Ne les installez pas** sur un serveur de production !
+!! Les applications étiquettées <span class="label label-danger label-as-badge">not working</span> sont connues pour être cassées et/ou encore en développement. **Ne les installez pas** sur un serveur de production !
 
 <div id="app-cards-list" class="app-cards-list"></div>
 

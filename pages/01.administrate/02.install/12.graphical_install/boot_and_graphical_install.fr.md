@@ -33,7 +33,7 @@ Vous devriez voir un écran comme ça :
 
 * Si un écran de partitionnement apparaît, confirmez simplement.
 
-!!!! <b>Attention :</b> Cette opération effacera totalement les données sur votre disque dur
+!! [strong]Attention[/strong] : Cette opération effacera totalement les données sur votre disque dur
 
 * Laissez l’installateur faire le reste, il téléchargera les paquets requis et les installera.
 
