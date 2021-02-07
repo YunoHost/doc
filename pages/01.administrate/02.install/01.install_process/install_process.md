@@ -339,11 +339,10 @@ Go to **Settings** > **Network**:
 !!! Note: if you want the network configuration to be set up automatically, you have to plug your server with an Ethernet cable right behind your main router.[details="If you have confident in your skills, it's possible to connect your server through WiFi"]If you want your server to connect using WiFi, you may configure it as explained [here](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md). Alternatively, you can mount the second partition of the SD card and edit the `wpa-supplicant.conf` file prior to boot the card for the first time. On Windows you can use [Paragon ExtFS](https://www.paragon-software.com/home/extfs-windows/) for this - just don't forget to unmount everytime for changes to take effect.[/details]
 * Plug the SD card
 * Power up the board
-!!! You can also boot your server with a screen and keyboard connected to it to see how the boot process is going on.[details="See more"]This method can also be useful to troubleshoot issues and to have a direct access to it.<div class="text-center"><img src="/images/boot_screen.png"></div>[/details]
+!!! You can also boot your server with a screen and keyboard connected to it to see how the boot process is going on.[details="See more"]This method can also be useful to troubleshoot issues and to have a direct access to it.[/details]
 * Wait a couple minutes for your server to boot and to resize automatically partition
 * Make sure that your computer (desktop/laptop) is connected to the same local network (i.e. same internet box) as your server.
 
-TODO improve details feature ?
 
 {% elseif virtualbox %}
 ## Boot up the virtual machine
@@ -361,7 +360,7 @@ You will have to select your ISO image here, then you should see the YunoHost's 
 ## Boot the machine on your usb stick and run the installation
 * Plug the ethernet cable. 
 !!! Note: if you want the network configuration to be set up automatically, you have to plug your server with an Ethernet cable right behind your main router. The wireless connections are not supported yet, and if you use intermediate routers, the network ports opening will not be automatic: Your server will not be accessible externally.
-* If your server was under windows 7+, ask for windows to boot on the USB stick TODO
+* If your server was under windows 8+, go on Advanced startup options of windows to ask windows for booting on the USB stick.
 * Boot up your server with the USB stick or a CD-ROM inserted, and select it as **bootable device** by pressing one of the following keys (hardware specific):    
 ```<ESC>```, ```<F9>```, ```<F10>```, ```<F11>```, ```<F12>``` or ```<DEL>```
 {% endif %}
