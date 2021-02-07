@@ -47,6 +47,6 @@ log in. You can log with the following credentials :
 
 ## 5. Proceed to post-installation
 
-<a class="btn btn-lg btn-default" href="/administrate/postinstall">Post-install documentation</a>
+[div class="btn btn-lg btn-default"] [Post-install documentation](/administrate/postinstall) [/div]
 
 

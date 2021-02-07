@@ -21,6 +21,6 @@ routes:
 
 ## Étapes d’installation
 
-<a class="btn btn-lg btn-default" href="/install_manually">1. Installer manuellement</a>
+[div class="btn btn-lg btn-default"] [1. Installer manuellement](/install_manually) [/div]
 
-<a class="btn btn-lg btn-default" href="/postinstall">2. Effectuer la configuration initiale (post-installation)</a>
+[div class="btn btn-lg btn-default"] [2. Effectuer la configuration initiale (post-installation)](/postinstall) [/div]

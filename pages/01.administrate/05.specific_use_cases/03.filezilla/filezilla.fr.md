@@ -51,7 +51,7 @@ Installez le programme et lancez *Filezilla*.
 
    ![le chemin où les sauvegardes sont situées sur YunoHost](image://filezilla_7.png)
 
-! <span class="glyphicon glyphicon-cloud-download"></span> Assurez-vous de télécharger à la fois le fichier `.tar.gz` et le fichier `.json`
+! [fa=cloud-download /] Assurez-vous de télécharger à la fois le fichier `.tar.gz` et le fichier `.json`
 
 ![Copier les sauvegardes de YunoHost sur l'ordinateur local](image://filezilla_8.png)
 

@@ -8,14 +8,12 @@ routes:
 ---
 
 <h3>Connettiti alla chat di supporto</h3>
+
+!!! **ProTips™**
+!!! - Non c'è bisogno di chiedere se puoi chiedere qualcosa, chiedi e basta !
+!!! - *Sii paziente*, potrebbero servire alcuni minuti prima che qualcuno veda i tuoi messaggi.
+
 <center>
-<div class="alert alert-info" markdown="1" style="max-width:700px;">
-<strong>ProTips™</strong>
-<ul style="text-align:left;">
-<li>Non c'è bisogno di chiedere se puoi chiedere qualcosa, chiedi e basta !</li>
-<li><em>Sii paziente</em>, potrebbero servire alcuni minuti prima che qualcuno veda i tuoi messaggi.</li>
-</ul>
-</div>
 
 <iframe src="https://kiwiirc.com/nextclient/?settings=7b72a0a81838360686798199ed53624f" style="width:100%;height:450px;border:0;display:block"></iframe>
 

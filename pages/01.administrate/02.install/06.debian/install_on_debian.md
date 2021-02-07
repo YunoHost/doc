@@ -25,7 +25,7 @@ An ARM box, a VPS, a dedicated server, a standard x86 computer, an old Macintosh
 
 ## Installation steps
 
-<a class="btn btn-lg btn-default" href="/install_manually">1. Install manually</a>
+[div class="btn btn-lg btn-default"] [1. Install manually](/install_manually) [/div]
 
-<a class="btn btn-lg btn-default" href="/postinstall">2. Post-install</a>
+[div class="btn btn-lg btn-default"] [2. Post-install](/postinstall) [/div]
 

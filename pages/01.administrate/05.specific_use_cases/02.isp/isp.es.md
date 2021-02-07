@@ -7,7 +7,7 @@ routes:
   default: '/isp'
 ---
 
-<a class="btn btn-lg btn-default" href="/isp_box_config"> Configuración general del router</a>
+[div class="btn btn-lg btn-default"] [ Configuración general del router](/isp_box_config) [/div]
 
 Aquí tienes una lista (no exhaustiva) de proveedores de acceso a Internet por país, con criterios de compatibilidad con el [self-hosting](/selfhosting).
 

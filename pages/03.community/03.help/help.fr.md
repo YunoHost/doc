@@ -8,14 +8,12 @@ routes:
 ---
 
 <h3>Connectez-vous au salon de support</h3>
+
+!!! **ProTips™**
+!!! - Pas besoin de demander si vous pouvez poser une question - posez-la directement !
+!!! - *Soyez patient*, cela peut prendre plusieurs minutes avant que quelqu'un remarque vos messages.
+
 <center>
-<div class="alert alert-info" markdown="1" style="max-width:750px;">
-<strong>ProTips™</strong>
-<ul style="text-align:left;">
-<li>Pas besoin de demander si vous pouvez poser une question - posez-la directement !</li>
-<li><em>Soyez patient</em>, cela peut prendre plusieurs minutes avant que quelqu'un remarque vos messages.</li>
-</ul>
-</div>
 
 <iframe src="https://kiwiirc.com/nextclient/?settings=78e5074440caaa9141c9e30629f6b29d" style="width:100%;height:450px;border:0;display:block"></iframe>
 

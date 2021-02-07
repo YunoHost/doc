@@ -33,7 +33,7 @@ Vous devriez voir un écran comme ça :
 
 * Si un écran de partitionnement apparaît, confirmez simplement.
 
-!!!! <b>Attention :</b> Cette opération effacera totalement les données sur votre disque dur
+!! **Attention** : Cette opération effacera totalement les données sur votre disque dur
 
 * Laissez l’installateur faire le reste, il téléchargera les paquets requis et les installera.
 
@@ -52,5 +52,5 @@ identifiants suivants :
 
 ## <small>5.</small> Procéder à la post-installation
 
-<a class="btn btn-lg btn-default" href="/postinstall">Documentation de la post-installation</a>
+[div class="btn btn-lg btn-default"] [Documentation de la post-installation](/postinstall) [/div]
 

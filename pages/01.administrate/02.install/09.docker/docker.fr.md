@@ -7,7 +7,7 @@ routes:
   default: '/docker'
 ---
 
-!!!! [strong]YunoHost ne supporte plus officiellement Docker depuis les problèmes rencontrés avec la version 2.4+. En cause, YunoHost dépend désormait de systemd et docker a décidé qu’ils ne le supporteraient pas nativement (et il y a d'autres problèmes liés au firewall et aux services).[/strong]
+!! **YunoHost ne supporte plus officiellement Docker depuis les problèmes rencontrés avec la version 2.4+. En cause, YunoHost dépend désormait de systemd et docker a décidé qu’ils ne le supporteraient pas nativement (et il y a d'autres problèmes liés au firewall et aux services).**
 
 ## Images communautaires
 

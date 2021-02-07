@@ -7,7 +7,7 @@ routes:
   default: '/isp'
 ---
 
-<a class="btn btn-lg btn-default" href="/isp_box_config"> Main configuration box</a>
+[div class="btn btn-lg btn-default"] [ Main configuration box](/isp_box_config) [/div]
 
 Here is a non-comprehensive list of internet service providers by country, which contains criteria about tolerance to self-hosting.
 
