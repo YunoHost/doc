@@ -50,6 +50,41 @@ routes:
   {% set docker = true %}
 {% endif %}
 
+<style>
+
+</style>
+Select the hardware on which you want install YunoHost :
+[div class="flex-container"]
+
+[div class="flex-child"]
+[[figure caption="VirtualBox"]![](image://virtualbox.png?height=75)[/figure]](/install_process/hardware:virtualbox)
+[/div]
+
+[div class="flex-child"]
+[[figure caption="Raspberry Pi"]![](image://raspberrypi.jpg?height=75)[/figure]](/install_process/hardware:rpi2plus)
+[/div]
+
+[div class="flex-child"]
+[[figure caption="ARM board"]![](image://olinuxino.jpg?height=75)[/figure]](/install_process/hardware:arm_sup)
+[/div]
+
+[div class="flex-child"]
+[[figure caption="Regular computer"]![](image://computer.png?height=75)[/figure]](/install_process/hardware:regular)
+[/div]
+
+[div class="flex-child"]
+[[figure caption="Dedicated or virtual private server"]![](image://vps.png?height=75)[/figure]](/install_process/hardware:vps_debian)
+[/div]
+
+[div class="flex-child"]
+[[figure caption="(Non-official!) Docker"]![](image://docker.png?height=75)[/figure]](/install_process/hardware:docker)
+[/div]
+
+[/div]
+
+
+
+
 {% if docker %}
 !! **YunoHost doesn’t support Docker officially since issues with versions 2.4+. In question, YunoHost 2.4+ doesn’t work anymore on Docker because YunoHost requires systemd and Docker has chosen to not support it natively (and there are other problems link to the firewall and services).**
 !!
@@ -67,10 +102,6 @@ However, community images exist and are available on Docker Hub:
 
 
 ## Pre-requisites
-
-[figure class="nomargin" caption="On a regular computer"]
-![](image://computer.png?resize=150,150&class=inline)
-[/figure]
 
 {% if regular %}
 * A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop ...
@@ -325,7 +356,7 @@ curl https://install.yunohost.org | bash
 [ui-tab title="From the web interface"]
 You can perform the post-installation with the web interface by entering in your browser {%if at_home %} **`{% if internetcube %}internetcube.local{% else %}yunohost.local{% endif %}`** OR **the local IP address of your server** if it is on your local network (e.g. at home !). The address typically looks like `192.168.x.y` (see [finding your local IP](/finding_the_local_ip)){% else %} **the public IP address of your server** if your server is not on your local network. Typically, if you own a VPS, your VPS provider should have given you the IP of the server.{% endif %}
 
-During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). For now, you should add a security exception to accept the current certificate.
+! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). For now, you should add a security exception to accept the current certificate. PLEASE, don't take the habit to blindly accept this kind of alert !
 
 {% if not internetcube %}
 You should then land on this page :
@@ -348,7 +379,8 @@ You can also perform the postinstallation with the command `yunohost tools posti
 [/ui-tabs]
 
 {% if not internetcube %}
-### Informations asked
+
+[details="Details on information asked during initial configuration"]
 
 #### Main domain
 
@@ -363,13 +395,21 @@ This is the first domain name linked to your YunoHost server, but also the one w
 #### Administration password
 
 This password will be used to access to your server's [administration interface](/admin). You would also use it to connect via **SSH** or **SFTP**. In general terms, this is your **system's key**, [choose it carefully](http://www.wikihow.com/Choose-a-Secure-Password).
-
+[/details]
 
 ## Create a first user
+You should create a first user. 
+
+!!! This user will received special emails `root@`, `admin@`, `postmaster@`, `webmaster@` and `abuse@`. These emails are used to send you mails about your server.
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
 [/ui-tab]
 [ui-tab title="From the command line"]
+You can create your first user by running this command, it will ask you some information.
+```
+yunohost user create johndoe
+```
 [/ui-tab]
 [/ui-tabs]
 {% endif %}

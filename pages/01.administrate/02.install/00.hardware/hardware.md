@@ -1,5 +1,5 @@
 ---
-title: Hardware
+title: Choose your hardware
 template: docs
 taxonomy:
     category: docs
