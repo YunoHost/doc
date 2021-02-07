@@ -11,7 +11,27 @@ content:
 twig_first: true
 process:
     twig: true
+debugger:
+  enabled: true                        # Enable Grav debugger and following settings
+  shutdown:
+    close_connection: true
+twig:
+    debug: true
+errors:
+  display: true
 ---
+
+Test
+
+{% set test = page.find('apps.json') %}
+
+{{ test }}
+
+![mytext](plugins://apps/apps.json)
+
+{% for app in catalog["apps"] %}
+    {{ app }}
+{% endfor %}
 
 <ul>
 {% for p in page.collection %}
