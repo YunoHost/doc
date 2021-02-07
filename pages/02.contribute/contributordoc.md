@@ -1,52 +1,123 @@
 ---
-title: Contribute
+title: Get involved
 template: docs
 taxonomy:
     category: docs
 routes:
   default: '/contributordoc'
+  aliases:
+    - '/contribute'
 ---
 
-* [General ways of contributing to YunoHost](/contribute)
-* [Chat rooms](/chat_rooms)
-* [Writing documentation](/write_documentation)
-  *  [Documentation writing guide](/doc_writing_guide)
-  *  [Markdown guide](/doc_markdown_guide)
-  *  [Power your code using Git & GitHub](/doc_use_git)
-* Application packaging
-   * [Apps wishlist](/apps_wishlist)
-   * [General introduction to app packaging](/packaging_apps_start)
-   * [Technical introduction to app packaging](/packaging_apps)
-   * [How to use Git to package apps](/packaging_apps_git)
-   * [Setting up a dev environment with VirtualBox](/packaging_apps_virtualbox)
-   * [Manifest](/packaging_apps_manifest)
-   * [Scripts](/packaging_apps_scripts)
-   * [Arguments management](/packaging_apps_arguments_management)
-   * [Arguments format](/packaging_apps_arguments_format)
-   * [NGINX configuration](/packaging_apps_nginx_conf)
-   * [User groups and permissions](/groups_and_permissions)
-   * [Multi-instance](/packaging_apps_multiinstance)
-   * [Helpers](/packaging_apps_helpers)
-   * [Trap usage](/packaging_apps_trap)
-   * [App permissions](/packaging_apps_permissions)
-   * [Adding your app to the apps list](https://github.com/YunoHost/Apps/#contributing)
-   * [Advanced packaging features](/packaging_apps_advanced)
-       * [Application actions](/packaging_apps_actions)
-       * [Application configuration panel](/packaging_apps_config_panel)
-   * Quality tests
-       * [Package linter](https://github.com/YunoHost/package_linter)
-       * [Package check](https://github.com/YunoHost/package_check)
-       * [Applications levels](/packaging_apps_levels)
-       * [App Continuous Integration](https://ci-apps.yunohost.org)
-       * [App CI dashboard](https://dash.yunohost.org/appci/branch/stable)
-       * [App Continuous Integration for packagers](/packaging_apps_ci)
-       * [YEP - YunoHost Enhancement Proposals](/packaging_apps_guidelines)
-* [Contributing to the YunoHost core](/dev)
-   * [Setting up a dev environment with ynh-dev](https://github.com/YunoHost/ynh-dev/blob/master/README.md)
-   * [Deb build chain](https://github.com/YunoHost/vinaigrette/blob/master/README.md)
-   * Image building
-       * [x86 ISO](https://github.com/YunoHost/cd_build)
-       * [Raspberry Pi images](https://github.com/YunoHost/rpi-image)
-       * [Other ARM board images](https://github.com/YunoHost/arm-images)
-* [Using the YunoHost API outside of the webadmin](/admin_api)
-* [A discussion about shell variable scope](/shell_variables_scope)
+<p class="lead">
+YunoHost depends exclusively on the participation of people like you.
+</p>
+
+<hr style="margin-bottom: 30px;">
+
+[columns]
+[center]
+[size=30]
+[fa=heart /] Spread the word
+[/size]
+[/center]
+
+[center]
+Talk about software freedom, [self-hosting](/selfhosting) and YunoHost to your relatives and at your work. We rely on Datalove evangelists like you <3
+[/center]
+[/columns]
+
+<hr style="margin-bottom: 30px;">
+
+[columns]
+[center]
+[size=30]
+[fa=user /] Helping users
+[/size]
+[/center]
+
+[center]
+Our support relies on contributors like you. Just come to [the support chatroom](/help) and help new users getting started, or pick a question on the <a href="https://forum.yunohost.org/" target="_blank">Forum</a>.
+[/center]
+[/columns]
+
+<hr style="margin-bottom: 30px;">
+
+[columns]
+[center]
+[size=30]
+[fa=edit /] Write
+[/size]
+[/center]
+
+[center]
+Improve this documentation by [writing new pages](/write_documentation) or translating existing ones to your language.
+[/center]
+[/columns]
+
+<hr style="margin-bottom: 30px;">
+
+[columns]
+[center]
+[size=30]
+[fa=globe /] Localization
+[/size]
+[/center]
+
+[center]
+Get involved by making YunoHost interfaces available in your language
+<a href="https://translate.yunohost.org/" target="_blank">Get started</a>!
+[/center]
+[/columns]
+
+<hr style="margin-bottom: 30px;">
+
+[columns]
+[center]
+[size=30]
+[fa=flask /] Testing
+[/size]
+[/center]
+
+[center]
+We need people able to test YunoHost deeply. If you find a bug, try to identify it, and report it on our <a href="https://github.com/YunoHost/issues/issues" target="_blank">bug tracker</a>.
+[/center]
+[/columns]
+
+<hr style="margin-bottom: 30px;">
+
+[columns]
+[center]
+[size=30]
+[fa=gift /] Packaging
+[/size]
+[/center]
+
+[center]
+Extend YunoHost capabilities by [packaging new services and web applications](/packaging_apps).
+Have a look of [what has been done yet](/apps)!
+[/center]
+[/columns]
+
+<hr style="margin-bottom: 30px;">
+
+[columns]
+[center]
+[size=30]
+[fa=cog /] Coding
+[/size]
+[/center]
+
+[center]
+You can involve in the YunoHost's development regardless of your skill.
+Sysadmins, web developers, designers and pythonists <a href="https://github.com/YunoHost" target="_blank">are welcome</a>!
+Learn [how to contribute](/dev), and join us on the [development chat room](xmpp:dev@conference.yunohost.org?join).
+[/center]
+[/columns]
+
+
+---
+
+[center]
+### In any case, please come chat with us on [the dev chatroom](/chat_rooms) :-)
+[/center]
