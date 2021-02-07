@@ -523,17 +523,21 @@ yunohost user create johndoe
 
 ## Run diagnostic and fix DNS or Router issues if needed
 To diagnose that all critical aspects of your server are properly configured,
-you should run a diagnosis from the webadmin in the "Diagnosis" section. (This
-feature was added in YunoHost 3.8).
+you should run a diagnosis. After the first run, the diagnosis will run twice a day to alert you if something break. 
+Email are sent to the first user created.
 
-TODO: elaborate on the fact that the diagnosis runs periodically, sends an email
-to root which is forwarded to the very first user created, and that issues
-should either be fixed or ignored (if they are understood/not relevant)
-otherwise an email will be sent twice a day..
+You need to fix red issues if you want to be able to access your server outside your local network.
 
-TODO: Redirect on good links about DNS and router
+!!! If an alert is not relevant you should go on `Webadmin > Diagnosis` and click on the ignore button for this specifc unrelevant issue.
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommended) From the web interface"]
+To run a diagnosis, go on `Web Admin` in the `Diagnosis` section. You should get a screen like this :
+
+[figure class="nomargin" caption="Preview of the diagnostic panel"]
+![](image://diagnostic.png?resize=100%&class=inline)
+[/figure]
+
 [/ui-tab]
 [ui-tab title="From the command line"]
 ```
@@ -545,8 +549,15 @@ yunohost diagnosis run
 ## Get a Let's Encrypt certificate
 If your DNS and router configuration are ok, you can next ask for a Let's Encrypt certificate.
 
+For more detailled instructions or know more about TLS certificate, see [here](/certificate)
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
+
+[figure class="nomargin" caption="Preview of the diagnostic panel"]
+![](image://certificate-before-LE.png?resize=100%&class=inline)
+[/figure]
+
 [/ui-tab]
 [ui-tab title="From the command line"]
 ```
