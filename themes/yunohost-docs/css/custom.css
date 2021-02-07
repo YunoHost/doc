@@ -145,5 +145,5 @@ body .off-canvas .learn-sidebar .learn-nav ul li.active > a {
 }
 
 body .off-canvas .learn-sidebar .learn-brand #logo path {
-    background: black!important;
+    fill: black!important;
 }
