@@ -27,13 +27,13 @@ routes:
 
 ## Étapes d’installation
 
-<a class="btn btn-lg btn-default" href="/images">0. Télécharger l'image ISO de YunoHost</a>
+[0. Télécharger l'image ISO de YunoHost](/images?classes=btn,btn-lg,btn-primary)
 
-<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Flasher l’image ISO sur une clef USB</a>
+[1. Flasher l’image ISO sur une clef USB](/burn_or_copy_iso?classes=btn,btn-lg,btn-primary)
 
-<a class="btn btn-lg btn-default" href="/boot_and_graphical_install">2. Démarrer la machine et installer YunoHost</a>
+[2. Démarrer la machine et installer YunoHost](/boot_and_graphical_install?classes=btn,btn-lg,btn-primary)
 
-<a class="btn btn-lg btn-default" href="/postinstall">3. Effectuer la configuration initiale (post-installation)</a>
+[3. Effectuer la configuration initiale (post-installation)](/postinstall?classes=btn,btn-lg,btn-primary)
 
 ---
 

@@ -28,14 +28,13 @@ Puoi usare qualsiasi computer con minimo 256 MB di ram**.
 
 ## Installazione
 
+[0. Scarica l'ISO di YunoHost](/images?classes=btn,btn-lg,btn-primary)
 
-<a class="btn btn-lg btn-default" href="/images">0. Scarica l'ISO di YunoHost</a>
+[1. Scrivi l'immagine disco su una chiavetta USB](/burn_or_copy_iso?classes=btn,btn-lg,btn-primary)
 
-<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Scrivi l'immagine disco su una chiavetta USB</a>
+[2. Accendi il computer facendo il boot da USB](/boot_and_graphical_install?classes=btn,btn-lg,btn-primary)
 
-<a class="btn btn-lg btn-default" href="/boot_and_graphical_install">2. Accendi il computer facendo il boot da USB</a>
-
-<a class="btn btn-lg btn-default" href="/postinstall">3. Procedi con la prima configurazione (post-installation)</a>
+[3. Procedi con la prima configurazione (post-installation)](/postinstall?classes=btn,btn-lg,btn-primary)
 
 ---
 

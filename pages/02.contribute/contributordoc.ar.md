@@ -5,6 +5,8 @@ taxonomy:
     category: docs
 routes:
   default: '/contribute'
+  aliases:
+    - '/contribute'
 ---
 
 <p dir="rtl" class="lead">
