@@ -11,7 +11,7 @@ routes:
 
 <div dir="rtl">
 واي يونوهوست YunoHost هو **نظام لتشغيل الخوادم** صُمِّم لتسهيل الإستضافة الذاتية لخدمات الإنترنت.
-هو مُرتكز و منسجم كافة الإنسجام مع توزيعة [غنو/لينكس ديبيان](https://debian.org).
+هو مُرتكز و منسجم كافة الإنسجام مع توزيعة <a href="https://debian.org">غنو/لينكس ديبيان</a>.
 </div>
 
 ---
@@ -61,7 +61,7 @@ Constatant l’engouement croissant autour de YunoHost et de l’auto-hébergeme
 ###<div dir="rtl"> التسمية</div>
 
 <div dir="rtl">
-**YunoHost** مُستمَدٌّ مِن لُغة الإنترنت العاميّة « Y U NO Host » و بالمعنى التقريبي « لماذا لا تستضيف نفسك بنفسك ». [ميم الإنترنت](https://ar.m.wikipedia.org/wiki/%D9%85%D9%8A%D9%85_%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA) الذي يصف المعنى بالتقريب هو :
+**YunoHost** مُستمَدٌّ مِن لُغة الإنترنت العاميّة « Y U NO Host » و بالمعنى التقريبي « لماذا لا تستضيف نفسك بنفسك ». <a href="https://ar.m.wikipedia.org/wiki/%D9%85%D9%8A%D9%85_%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA">ميم الإنترنت</a> الذي يصف المعنى بالتقريب هو :
 ![](image://dude_yunohost.jpg)
 </div>
 
@@ -74,14 +74,14 @@ YunoHost est développé pour être le plus **simple** et le moins intrusif poss
 Le tout est bien entendu **entièrement libre**. La philosophie de l’[الإستضافة الذاتية](/selfhosting) étant à nos yeux incompatible avec tout autre modèle de développement logiciel.
 
 <div dir="rtl">
-لا تتردّدوا في زيارة صفحة « [ساهموا](/contribute) ».
+لا تتردّدوا في زيارة صفحة « <a href="/contribute">ساهموا</a>».
 </div>
 
 ---
 
 ###<div dir="rtl"> الأمان</div>
 
-<div dir="rtl">لقد بُذِلت كل المجهودات مِن أجل تأمين واي يونوهوست YunoHost و **تعمية و تشفير البروتوكولات** . بإمكانكم الإطلاع على الشرح بتفاصيليه [هنا](/security).
+<div dir="rtl">لقد بُذِلت كل المجهودات مِن أجل تأمين واي يونوهوست YunoHost و **تعمية و تشفير البروتوكولات** . بإمكانكم الإطلاع على الشرح بتفاصيليه <a href="/security">هنا</a>.
 </div>
 ---
 
