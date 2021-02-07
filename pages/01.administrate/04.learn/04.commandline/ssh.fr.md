@@ -1,5 +1,5 @@
 ---
-title: SSH
+title: SSH et la ligne de commande
 template: docs
 taxonomy:
     category: docs

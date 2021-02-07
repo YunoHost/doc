@@ -1,5 +1,5 @@
 .off-canvas .learn-sidebar:before {
- background: dimgrey;
+    background: none;
 }
 
 .highlightable h5:first-of-type {
@@ -15,6 +15,7 @@
  max-width: 80%;
 }
 
+/* Images helper classes */
 img.inline {
  display:inline;
  margin:5px 15px 5px 5px;
@@ -28,6 +29,11 @@ img.center {
  margin-right: auto;
 }
 
+td img {
+ margin: 0.2rem auto;
+}
+
+/* Figures and caption */
 figure img {
  margin: auto;
 }
@@ -36,9 +42,33 @@ figure figcaption {
  font-style: italic;
 }
 
+/* List spacing */
+ul li, ol li {
+ margin-top: 0;
+}
+
+ul, ol {
+ margin-bottom: 0;
+}
+
+li p {
+ margin: inherit;
+}
+
+/* Paragraphs */
+p {
+ margin: 0 0 1rem;
+}
+
+.notices p {
+ margin: 0 0 0 0.5rem;
+}
+
+/* Flex */
 .flex-container {
  display: flex;
  justify-content: space-around;
+ flex-wrap: wrap;
 }
 
 .flex-child {
@@ -50,6 +80,7 @@ figure figcaption {
  margin: 0px auto;
 }
 
+/* Breadcrums */
 #top-bar #breadcrumbs > span span, #top-bar #breadcrumbs > a span {
  padding: 0 !important;
 }
@@ -62,8 +93,12 @@ figure figcaption {
  padding: 0;
 }
 
+/* Fonts and headings */
+
 h1, h2, h3, h4, h5, h6 {
    font-family: "Source Sans Pro", "Metropolis", "Helvetica Neue", sans-serif;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
 }
 
 .simplebar-content h5 .fa {
@@ -83,6 +118,7 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
 }
 
+/* Give a gray background to the white logo*/
 img#whitelogo {
     background-color: gray;
     padding: 10px;
