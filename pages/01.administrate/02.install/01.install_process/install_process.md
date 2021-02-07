@@ -8,6 +8,9 @@ twig_first: true
 process:
     markdown: true
     twig: true
+page-toc:
+  active: true
+  depth: 2
 routes:
   default: '/install_process'
   aliases: 
@@ -24,64 +27,112 @@ routes:
     - '/boot_and_graphical_install'
 ---
 {% set arm, at_home, regular, rpi2plus, rpi1, rpi0, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, internetcube, docker = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
-{% if uri.param('hardware') == 'regular' %}
+{% set hardware = uri.param('hardware')  %}
+{% if hardware == '' %}
+  {% set hardware = 'vps_debian' %}
+{% endif %}
+
+{% if hardware == 'regular' %}
   {% set regular = true %}
-{% elseif uri.param('hardware') == 'internetcube' %}
+{% elseif hardware == 'internetcube' %}
   {% set arm, arm_sup, internetcube = true, true, true %}
-{% elseif uri.param('hardware') == 'rpi2plus' %}
+{% elseif hardware == 'rpi2plus' %}
   {% set arm, rpi2plus = true, true %}
-{% elseif uri.param('hardware') == 'rpi1' %}
+{% elseif hardware == 'rpi1' %}
   {% set arm, rpi1 = true, true %}
-{% elseif uri.param('hardware') == 'rpi0' %}
+{% elseif hardware == 'rpi0' %}
   {% set arm, rpi0 = true, true %}
-{% elseif uri.param('hardware') == 'arm_sup' %}
+{% elseif hardware == 'arm_sup' %}
   {% set arm, arm_sup = true, true %}
-{% elseif uri.param('hardware') == 'arm_unsup' %}
+{% elseif hardware == 'arm_unsup' %}
   {% set arm, arm_unsup = true, true %}
-{% elseif uri.param('hardware') == 'vpsdebian' %}
+{% elseif hardware == 'vps_debian' %}
   {% set vps, vps_debian = true, true %}
-{% elseif uri.param('hardware') == 'vpsynh' %}
+{% elseif hardware == 'vps_ynh' %}
   {% set vps, vps_ynh = true, true %}
-{% elseif uri.param('hardware') == 'virtualbox' %}
+{% elseif hardware == 'virtualbox' %}
   {% set at_home, virtualbox = true, true %}
-{% elseif arm or regular %}
-  {% set at_home = true %}
-{% elseif uri.param('hardware') == 'docker' %}
+{% elseif hardware == 'docker' %}
   {% set docker = true %}
 {% endif %}
 
-<style>
+{% if arm or regular %}
+  {% set at_home = true %}
+{% endif %}
 
+<style>
+.hardware.active {
+    border: 7px solid #5a5;
+}
 </style>
 Select the hardware on which you want install YunoHost :
 [div class="flex-container"]
 
-[div class="flex-child"]
+[div class="flex-child hardware{%if virtualbox %} active{% endif %}"]
 [[figure caption="VirtualBox"]![](image://virtualbox.png?height=75)[/figure]](/install_process/hardware:virtualbox)
 [/div]
 
-[div class="flex-child"]
+[div class="flex-child hardware{%if rpi2plus or rpi1 or rpi0 %} active{% endif %}"]
 [[figure caption="Raspberry Pi"]![](image://raspberrypi.jpg?height=75)[/figure]](/install_process/hardware:rpi2plus)
 [/div]
 
-[div class="flex-child"]
+[div class="flex-child hardware{%if arm_sup or arm_unsup or internetcube %} active{% endif %}"]
 [[figure caption="ARM board"]![](image://olinuxino.jpg?height=75)[/figure]](/install_process/hardware:arm_sup)
 [/div]
 
-[div class="flex-child"]
+[div class="flex-child hardware{%if regular %} active{% endif %}"]
 [[figure caption="Regular computer"]![](image://computer.png?height=75)[/figure]](/install_process/hardware:regular)
 [/div]
 
-[div class="flex-child"]
-[[figure caption="Dedicated or virtual private server"]![](image://vps.png?height=75)[/figure]](/install_process/hardware:vps_debian)
+[div class="flex-child hardware{%if vps_debian or vps_ynh %} active{% endif %}"]
+[[figure caption="Remote server"]![](image://vps.png?height=75)[/figure]](/install_process/hardware:vps_debian)
 [/div]
 
-[div class="flex-child"]
+[div class="flex-child hardware{%if docker %} active{% endif %}"]
 [[figure caption="(Non-official!) Docker"]![](image://docker.png?height=75)[/figure]](/install_process/hardware:docker)
 [/div]
 
 [/div]
+[div class="flex-container"]
 
+{% if rpi2plus or rpi1 or rpi0 %}
+[div class="flex-child hardware{%if rpi2plus %} active{% endif %}"]
+[[figure caption="Raspberry Pi 2, 3 or 4"]![](image://raspberrypi.jpg?height=25)[/figure]](/install_process/hardware:rpi2plus)
+[/div]
+
+[div class="flex-child hardware{%if rpi1 %} active{% endif %}"]
+[[figure caption="Raspberry Pi 1"]![](image://raspberrypi.jpg?height=25)[/figure]](/install_process/hardware:rpi1)
+[/div]
+
+[div class="flex-child hardware{%if rpi0 %} active{% endif %}"]
+[[figure caption="Raspberry Pi zero"]![](image://raspberrypi.jpg?height=25)[/figure]](/install_process/hardware:rpi0)
+[/div]
+{% elseif arm_sup or arm_unsup or internetcube %}
+
+[div class="flex-child hardware{%if internetcube %} active{% endif %}"]
+[[figure caption="Internet cube With VPN"]![](image://olinuxino.jpg?height=25)[/figure]](/install_process/hardware:internetcube)
+[/div]
+
+[div class="flex-child hardware{%if arm_sup and not internetcube %} active{% endif %}"]
+[[figure caption="Olinuxino lime1&2 or Orange Pi PC+"]![](image://olinuxino.jpg?height=25)[/figure]](/install_process/hardware:arm_sup)
+[/div]
+
+[div class="flex-child hardware{%if arm_unsup %} active{% endif %}"]
+[[figure caption="Others boards"]![](image://olinuxino.jpg?height=25)[/figure]](/install_process/hardware:arm_unsup)
+[/div]
+{% elseif vps_debian or vps_ynh %}
+
+[div class="flex-child hardware{%if vps_debian %} active{% endif %}"]
+[[figure caption="VPS or dedicated server with Debian 10"]![](image://vps.png?height=25)[/figure]](/install_process/hardware:vps_debian)
+[/div]
+
+[div class="flex-child hardware{%if vps_ynh %} active{% endif %}"]
+[[figure caption="VPS or dedicated server with YunoHost pre-installed"]![](image://vps.png?height=25)[/figure]](/install_process/hardware:vps_ynh)
+[/div]
+
+{% endif %}
+
+[/div]
 
 
 
@@ -102,29 +153,28 @@ However, community images exist and are available on Docker Hub:
 
 
 ## Pre-requisites
-
 {% if regular %}
-* A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop ...
+* A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop with 512MB RAM and 15GB capacity (at least)
 {% elseif rpi2plus %}
-* A Raspberry Pi 2, 3 or 4 ...
+* A Raspberry Pi 2, 3 or 4 with 512MB RAM (at least)
 {% elseif rpi1 %}
-* A RPi 1 ...
+* A Raspberry Pi 1 with 512MB RAM (at least)
 {% elseif rpi0 %}
-* A RPi zero ...
+* A Raspberry Pi zero with 512MB RAM (at least)
 {% elseif arm_sup %}
-* An Orange Pi PC+, or an Onlinuxino Lime 1 or 2 ...
+* A VPN with a dedicated IP and a .cube file
+* An Orange Pi PC+ or an Onlinuxino Lime 1 or 2
+{% elseif arm_sup %}
+* An Orange Pi PC+ or an Onlinuxino Lime 1 or 2
 {% elseif arm_unsup %}
-* An ARM board with 500MHz CPU ...
+* An ARM board with 500MHz CPU and 512MB RAM (at least)
 {% elseif vps_debian %}
-* A dedicated or virtual private server with Debian 10 <small>(with **kernel >= 3.12**)</small>)
-preinstalled ...
+* A dedicated or virtual private server with Debian 10 <small>(with **kernel >= 3.12**)</small>) preinstalled, 512MB RAM and 15GB capacity (at least)
 {% elseif vps_ynh %}
-* A dedicated or virtual private server with yunohost preinstalled ...
+* A dedicated or virtual private server with yunohost preinstalled, 512MB RAM and 15GB capacity (at least)
 {% elseif virtualbox %}
-* An x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine ...
+* An x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine with 512MB RAM and 8GB capacity (at least)
 {% endif %}
-* ... with 512MB RAM{% if not arm %} and 15GB capacity{% endif %} (at least)
-
 {% if arm %}
 * A power supply (either an adapter or a MicroUSB cable) for your board;
 * A microSD card: 16GB capacity (at least) and Class 10 speed rate are highly recommended (like the Transcend 300x);
@@ -148,6 +198,17 @@ preinstalled ...
 {% if virtualbox %}
 ! N.B. : Installing YunoHost in a VirtualBox is usually intended for testing. To run an actual server on the long-term, you usually need a dedicated physical machine (old computer, ARM board...) or a VPS online.
 {% endif %}
+
+
+
+
+
+
+
+
+
+
+
 
 {% if at_home %}
 ## Download the YunoHost image
@@ -175,6 +236,11 @@ preinstalled ...
 {% elseif virtualbox %}
 !!! If your host OS is 32 bits, be sure that you downloaded the 32-bit image previously.
 {% endif %}
+
+
+
+
+
 
 
 {% if not virtualbox %}
@@ -273,11 +339,10 @@ Go to **Settings** > **Network**:
 !!! Note: if you want the network configuration to be set up automatically, you have to plug your server with an Ethernet cable right behind your main router.[details="If you have confident in your skills, it's possible to connect your server through WiFi"]If you want your server to connect using WiFi, you may configure it as explained [here](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md). Alternatively, you can mount the second partition of the SD card and edit the `wpa-supplicant.conf` file prior to boot the card for the first time. On Windows you can use [Paragon ExtFS](https://www.paragon-software.com/home/extfs-windows/) for this - just don't forget to unmount everytime for changes to take effect.[/details]
 * Plug the SD card
 * Power up the board
-!!! You can also boot your server with a screen and keyboard connected to it to see how the boot process is going on.[details="See more"]This method can also be useful to troubleshoot issues and to have a direct access to it.<div class="text-center"><img src="/images/boot_screen.png"></div>[/details]
+!!! You can also boot your server with a screen and keyboard connected to it to see how the boot process is going on.[details="See more"]This method can also be useful to troubleshoot issues and to have a direct access to it.[/details]
 * Wait a couple minutes for your server to boot and to resize automatically partition
 * Make sure that your computer (desktop/laptop) is connected to the same local network (i.e. same internet box) as your server.
 
-TODO improve details feature ?
 
 {% elseif virtualbox %}
 ## Boot up the virtual machine
@@ -295,7 +360,7 @@ You will have to select your ISO image here, then you should see the YunoHost's 
 ## Boot the machine on your usb stick and run the installation
 * Plug the ethernet cable. 
 !!! Note: if you want the network configuration to be set up automatically, you have to plug your server with an Ethernet cable right behind your main router. The wireless connections are not supported yet, and if you use intermediate routers, the network ports opening will not be automatic: Your server will not be accessible externally.
-* If your server was under windows 7+, ask for windows to boot on the USB stick TODO
+* If your server was under windows 8+, go on Advanced startup options of windows to ask windows for booting on the USB stick.
 * Boot up your server with the USB stick or a CD-ROM inserted, and select it as **bootable device** by pressing one of the following keys (hardware specific):    
 ```<ESC>```, ```<F9>```, ```<F10>```, ```<F11>```, ```<F12>``` or ```<DEL>```
 {% endif %}
@@ -331,7 +396,7 @@ TODO what to do with default credentials info ?
 
 
 
-{% else %}
+{% elseif vps_debian %}
 ## Run the install script
 
 Once you have access to a command line on your server (either directly or through SSH), you can install YunoHost by running command as root :
@@ -415,18 +480,36 @@ yunohost user create johndoe
 {% endif %}
 
 ## Run diagnostic and fix DNS or Router issues if needed
+To diagnose that all critical aspects of your server are properly configured,
+you should run a diagnosis from the webadmin in the "Diagnosis" section. (This
+feature was added in YunoHost 3.8).
+
+TODO: elaborate on the fact that the diagnosis runs periodically, sends an email
+to root which is forwarded to the very first user created, and that issues
+should either be fixed or ignored (if they are understood/not relevant)
+otherwise an email will be sent twice a day..
+
+TODO: Redirect on good links about DNS and router
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommended) From the web interface"]
 [/ui-tab]
 [ui-tab title="From the command line"]
+```
+yunohost diagnosis run
+```
 [/ui-tab]
 [/ui-tabs]
 
-## Let's Encrypt
+## Get a Let's Encrypt certificate
+If your DNS and router configuration are ok, you can next ask for a Let's Encrypt certificate.
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
 [/ui-tab]
 [ui-tab title="From the command line"]
+```
+yunohost domain cert-install
+```
 [/ui-tab]
 [/ui-tabs]
 {% endif %}
