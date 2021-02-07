@@ -212,6 +212,7 @@ However, community images exist and are available on Docker Hub:
 
 {% if at_home %}
 ## Download the YunoHost image
+<div class="hardware-image">
 <div id="cards-list">
 <div id="regularcomputer64" class="card panel panel-default" style="max-width:400px">
         <div class="panel-body text-center">
@@ -221,13 +222,14 @@ However, community images exist and are available on Docker Hub:
 ![Regular computer](image://computer.png?resize=100,100)
             </div>
         </div>
-        <div class="annotations">
-            <div class="col-sm-6 annotation"><a href="https://build.yunohost.org/yunohost-buster-4.1.6-amd64-stable.iso.sha256sum"><span class="glyphicon glyphicon-barcode" aria-hidden="true"></span> Checksum</a></div>
-            <div class="col-sm-6 annotation"><a href="https://build.yunohost.org/yunohost-buster-4.1.6-amd64-stable.iso.sig"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> Signature</a></div>
+        <div class="annotations flex-container">
+            <div class="flex-child annotation"><a href="https://build.yunohost.org/yunohost-buster-4.1.6-amd64-stable.iso.sha256sum">[fa=barcode] Checksum</a></div>
+            <div class="flex-child annotation"><a href="https://build.yunohost.org/yunohost-buster-4.1.6-amd64-stable.iso.sig">[fa=tag] Signature</a></div>
         </div>
         <div class="btn-group" role="group">
             <a href="https://build.yunohost.org/yunohost-buster-4.1.6-amd64-stable.iso" target="_BLANK" type="button" class="btn btn-info col-sm-12"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Télécharger <small>v.4.1.6</small></a>
         </div>
+</div>
 </div>
 </div>
 
