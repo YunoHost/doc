@@ -14,7 +14,7 @@ Si votre fournisseur internet bloque le port 25, ou si vous rencontrez un probl�
 C'est un serveur SMTP tiers qui va envoyer les e-mails à la place de votre propre serveur SMTP.
 Une fois correctement installé, le changement est totalement transparent pour l’utilisateur. Vos correspondants verront vos e-mails comme s’ils venaient de votre propre serveur, mais ils auront été envoyés depuis le relais SMTP que vous aurez choisi et configuré.
 
-! <span class="glyphicon glyphicon-warning-sign"></span> Il est important de noter que dans le monde de l'auto-hébergement, utiliser un relai SMTP est un énorme compromis ! En effet, le relais SMTP ne sera pas seulement capable d'envoyer les e-mails, mais il a également accès au contenu entier de l’e-mail que vous envoyez. Il faut faire attention également que vous n'aurez pas le choix, tout le trafic e-mails passera par ce relais une fois la configuration terminée.
+! [fa=exclamation-triangle /] Il est important de noter que dans le monde de l'auto-hébergement, utiliser un relai SMTP est un énorme compromis ! En effet, le relais SMTP ne sera pas seulement capable d'envoyer les e-mails, mais il a également accès au contenu entier de l’e-mail que vous envoyez. Il faut faire attention également que vous n'aurez pas le choix, tout le trafic e-mails passera par ce relais une fois la configuration terminée.
 
 ## Comment utiliser le relais SMTP avec YunoHost ?
 
@@ -30,7 +30,7 @@ Une fois inscrit, le paramétrage du relais SMTP demande de modifier la zone DNS
 
 Habituellement les fournisseurs ont une documentation à ce sujet.
 
-! <span class="glyphicon glyphicon-warning-sign"></span> Attention une fois la zone DNS enregistrée, le relais SMTP peut envoyer des e-mails à votre nom sans que vous ne le sachiez
+! [fa=exclamation-triangle /] Attention une fois la zone DNS enregistrée, le relais SMTP peut envoyer des e-mails à votre nom sans que vous ne le sachiez
 
 ## Étape 3 :Configurer YunoHost correctement
 
@@ -59,7 +59,7 @@ C'est une bonne idée de confirmer les informations en faisant `sudo yunohost se
 
 Votre relais SMTP est maintenant configuré !
 
-! <span class="glyphicon glyphicon-warning-sign"></span> Maintenant le relais SMTP est capable de lire et d'utiliser toutes les informations contenues dans les emails que vous envoyer sans votre accord. Mais ne sera pas capable de lire les informations des emails que vous recevez.
+! [fa=exclamation-triangle /] Maintenant le relais SMTP est capable de lire et d'utiliser toutes les informations contenues dans les emails que vous envoyer sans votre accord. Mais ne sera pas capable de lire les informations des emails que vous recevez.
 
 ## Vérifier la configuration
 

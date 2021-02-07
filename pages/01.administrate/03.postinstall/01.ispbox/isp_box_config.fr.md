@@ -43,7 +43,7 @@ Il vous faut ensuite rediriger chacun des ports listés ci-dessous vers l'IP loc
 * [XMPP](/XMPP): 5222 <small>(clients)</small>, 5269 <small>(servers)</small>
 * [Email](/email): 25, 587 <small>(SMTP)</small>, 993 <small>(IMAP)</small>
 
-! <span class="glyphicon glyphicon-warning-sign"></span> Certains fournisseurs d'accès internet bloquent le port 25 (mail SMTP) par défaut pour combattre le spam. D'autres (plus rares) ne permettent pas d'utiliser librement les ports 80/443. En fonction de votre FAI, il peut être possible d'ouvrir ces ports dans l'interface... Voir [cette page](/isp) pour plus d'informations.
+! [fa=exclamation-triangle /] Certains fournisseurs d'accès internet bloquent le port 25 (mail SMTP) par défaut pour combattre le spam. D'autres (plus rares) ne permettent pas d'utiliser librement les ports 80/443. En fonction de votre FAI, il peut être possible d'ouvrir ces ports dans l'interface... Voir [cette page](/isp) pour plus d'informations.
 
 ## Redirection automatique / UPnP
 
