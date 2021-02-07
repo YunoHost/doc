@@ -5,6 +5,9 @@ taxonomy:
     category: docs
 routes:
   default: '/apps'
+twig_first: true
+process:
+    twig: true
 ---
 
 <span class="javascriptDisclaimer">
@@ -162,24 +165,35 @@ Custom CSS for this page
 
 
 
-{% set catalog = read_file('/var/www/app_yunohost/apps/apps.json')|json_decode(true) %}
+{% set catalog = read_file('/var/www/app_yunohost/apps/builds/default/v2/apps.json')|json_decode(true) %}
 
-{% for app, infos in catalog %}
+
+{% for app_id, infos in catalog.apps %}
+
+    {% set manifest = infos.manifest %}
+    {% if grav.language.getActive in manifest.description %}
+        {% set descr_lang = grav.language.getActive %}
+    {% else %}
+        {% set descr_lang = 'en' %}
+    {% endif %}
+    {% set description = manifest.description[descr_lang] %}
+
 {{ app }}
-{{ infos }}
+{{ infos.url }}
+
+[div class="app-card_{{app_id}} app-card panel panel-default"]
+[div class="app-title"]{{ manifest.name }}[/div]
+[div class="app-descr"]{{ description }}[/div]
+[div class="app-footer"]
+[div class="app-buttons btn-group" role="group"]
+[test]()
+<a href="{{infos.url}}" target="_BLANK" type="button" class="btn btn-default col-sm-4">[fa=globe /] Code</a>
+<a href="#/app_{{app_id}}" target="_BLANK" type="button" class="btn btn-default col-sm-4">[fa=book /] Doc</a>
+<a href="https://install-app.yunohost.org/?app={{app_id}}" target="_BLANK" type="button" class="btn btn-todo_app_install_css_style col-sm-4 active">[fa=plus /] Install</a>
+[/div]
+[/div]
+[/div]
 {% endfor %}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!--
@@ -279,7 +293,7 @@ $(document).ready(function () {
 
     // Fetch application catalog
 
-    $.getJSON('https://app.yunohost.org/default/v2/apps.json', {}, function(data) {
+    //$.getJSON('https://app.yunohost.org/default/v2/apps.json', {}, function(data) {
 
         catalog = $.map(data["apps"], function(el) { return el; });
 
@@ -397,8 +411,8 @@ $(document).ready(function () {
             }
         });
 
-        filter();
-    });
+    //    filter();
+    //});
     //=================================================
 });
 </script>
