@@ -16,7 +16,7 @@ correctly exposed.
 
 ### 1. Access your box/router administration interface
 
-Your box/router admin interface is usually reachable via http://192.168.0.1 or http://192.168.1.1. Then, you will probably need to authenticate yourself with your internet server provider's credentials.
+Your box/router admin interface is usually reachable via [http://192.168.0.1](http://192.168.0.1) or [http://192.168.1.1](http://192.168.1.1). Then, you will probably need to authenticate yourself the credentials given by your internet server provider.
 
 ### 2. Find the local IP of your server
 
