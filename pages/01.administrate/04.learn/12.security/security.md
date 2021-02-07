@@ -15,16 +15,16 @@ Two things remain important to note:
 
 * The fact that YunoHost is a well-spread software increases the chances of an attack. If a flaw is discovered, it could potentially affect all the YunoHost instances at once. Keep your system **up-to-date** to remain safe.
 
-*If you need advice, do not hesitate to [ask us](/help).*
+!!!! If you need advice, do not hesitate to [ask us](/help).
 
-*To discuss security flaws, contact the [YunoHost security team](/security_team).*
+!! [fa=shield /] To discuss security flaws, contact the [YunoHost security team](/security_team).
 
 ---
 
 ## Improve security
 If your YunoHost server is used in a critical production environment, or if you want to improve its safety, you may want to follow those good practices.
 
-**Attention:** *Following those instructions requires advanced knowledge of system administration.*
+! **Attention:** Following those instructions requires advanced knowledge of system administration.
 
 ### SSH authentication via key
 By default, the SSH authentication uses the administration password. Deactivating this kind of authentication and replacing it by a key mechanism is advised.

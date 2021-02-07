@@ -176,7 +176,7 @@ $ yunohost user permission update mail --remove all_users --add bob
 
 Note that some permissions may be "protected", meaning that you won't be able to add/remove the visitor group to this permission. Generally, this is because it would make no sense (or is a security risk) to do so.
 
-The webadmin will issue a warning if you set a permission that is superseeded by a wider permission.
+The webadmin will issue a warning if you set a permission that is superseded by a wider permission.
 
 ![](image://groups_alerte-permission.png)
 
