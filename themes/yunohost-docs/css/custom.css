@@ -1,5 +1,5 @@
 .off-canvas .learn-sidebar:before {
- background: dimgrey;
+    background: none;
 }
 
 .highlightable h5:first-of-type {
@@ -127,4 +127,131 @@ img#whitelogo {
 /* Hide home page in menu */
 .simplebar-content h5:first-child {
     display: none;
+}
+
+/* Sidebar */
+
+#sidebar-id {
+    background-color: #fffefe;
+}
+
+body .off-canvas .learn-sidebar a {
+    color: #364149;
+}
+
+body .off-canvas .learn-sidebar .learn-nav ul li.active > a {
+    color: black;
+    background-color: transparent;
+}
+
+body .off-canvas .learn-sidebar .learn-brand #logo path {
+    fill: black!important;
+}
+
+body #top-bar #breadcrumbs > span span, #top-bar #breadcrumbs > a span {
+    font-size: 0.7rem;
+}
+
+body #top-bar a:visited {
+    color: #3e7694;
+}
+
+body #top-bar a:hover {
+    text-decoration: underline;
+}
+
+body .off-canvas .learn-sidebar .searchbox ::placeholder {
+    color: rgba(68, 68, 68, 0.8);
+}
+
+body .off-canvas .learn-sidebar a:hover {
+    color: #37419a;
+}
+
+body #header .off-canvas .learn-sidebar a:hover {
+    color: black;
+    text-decoration: underline black;
+}
+
+body .off-canvas .learn-sidebar .learn-nav ul li a > span > b {
+    color: black;
+}
+
+body .off-canvas .learn-sidebar .learn-nav ul li ul li.active > a {
+    background-color: #7f7f7f3d;
+    border-left: black 2px solid;
+}
+
+body .off-canvas .learn-sidebar .learn-nav .read-icon, body .off-canvas .learn-sidebar .searchbox, body .off-canvas .learn-sidebar .search-options .version-chooser select {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+body .off-canvas .learn-sidebar .searchbox input {
+    color: rgb(78, 78, 78);
+}
+
+/*
+###############################################################################
+  Style sheet for the cards
+###############################################################################
+*/
+.hardware-image #cards-list:after {
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.hardware-image .card {
+    margin-bottom:20px;
+    width:270px;
+    float:left;
+    min-height: 1px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.hardware-image .card .panel-body >  h3 {
+    margin-top:0;
+    margin-bottom:5px;
+    font-size:1.2em;
+}
+
+.hardware-image .card-desc {
+    height:135px;
+    overflow: hidden;
+}
+
+.hardware-image .card .btn-group {
+    width:100%;
+    margin-left: 0px;
+}
+.hardware-image .card > .btn-group > .btn{
+    border-bottom:0;
+}
+.hardware-image .card > .btn-group {   
+    border-left:0;
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+    margin-left: 0px;
+}
+.hardware-image .card-comment {
+    font-size: 0.8em;
+    margin-top:-5px;
+}
+.hardware-image .card > .annotations {
+    text-align:center;
+    font-size:small;
+}
+.hardware-image .card img {
+    margin: 1rem auto;
+}
+.hardware-image .btn-group .btn.btn-info {
+    color: #ffffff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+.hardware-image .btn-group .btn.btn-info:hover, .btn.btn-info:focus {
+    color: #ffffff;
+    background-color: #39b3d7;
+    border-color: #269abc;
 }

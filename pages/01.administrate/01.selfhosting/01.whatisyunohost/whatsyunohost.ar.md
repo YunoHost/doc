@@ -25,10 +25,14 @@ routes:
 - نظام للنسخ الإحتياطي
 - نظام لإعادة توليد الإعدادات و الخدمات
 
+---
+
 ### أصل فكرة المشروع
 
+
 تعود نشأة فكرة مشروع واي يونوهوست YunoHost إلى شهر فيفري مِن عام 2012 بعد محادثة بدأت على هذا الشكل تقريبًا :
- <blockquote><p>« تبًا، لقد سئِمتُ مِن إعادة إعداد خادم البريد الإلكتروني ... Beudbeud، كيف قُمتَ بإعداد خادومك الجميل حول LDAP ؟ »</p>
+
+ <blockquote>« تبًا، لقد سئِمتُ مِن إعادة إعداد خادم البريد الإلكتروني ... Beudbeud، كيف قُمتَ بإعداد خادومك الجميل حول LDAP ؟ »
 <small>Kload، فيفري 2012</small></blockquote>
 
 Il ne manquait en fait qu’une interface d’administration au serveur de Beudbeud pour en faire quelque chose d’exploitable, alors Kload a décidé de la développer. Finalement, après l’automatisation de quelques configurations et le packaging de quelques applications web, la première version de YunoHost était sortie.
@@ -38,6 +42,7 @@ Constatant l’engouement croissant autour de YunoHost et de l’auto-hébergeme
 ---
 
 ### الهدف
+
 يهدف واي يونوهوست YunoHost إلى تسهيل عملية تنصيب و تثبيت و إدارة أي خادمٍ لأكبر عدد ممكن مِن الناس و ذلك دون المساس بجودة و موثوقية البرمجيات. 
 
 لم يُدَّخر أي جهد لتسهيل عملية التنصيب و الإنبساط وذلك على أكبر عدد ممكن مِن الأجهزة مهما اختلفت مميزات كل جهاز (في المنزل أو على خادوم إستضافة أو على خادوم شخصي إفتراضي)
@@ -64,6 +69,7 @@ Le tout est bien entendu **entièrement libre**. La philosophie de l’[الإس
 ### الأمان
 
 لقد بُذِلت كل المجهودات مِن أجل تأمين واي يونوهوست YunoHost و **تعمية و تشفير البروتوكولات** . بإمكانكم الإطلاع على الشرح بتفاصيليه <a href="/security">هنا</a>.
+
 ---
 
 ### واي يونوهوست YunoHost ليس

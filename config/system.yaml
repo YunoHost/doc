@@ -23,14 +23,17 @@ languages:
     - ar
   default_lang: null
   include_default_lang: true
-  include_default_lang_file_extension: true
+  include_default_lang_file_extension: false
   translations: true
   translations_fallback: true
   session_store_active: true
-  http_accept_language: false
+  http_accept_language: true
   override_locale: false
-  content_fallback: {  }
-  pages_fallback_only: false
+  content_fallback:
+    en: 'fr,de,es'
+    de: 'en,fr,es'
+    es: 'en,fr,de'
+  pages_fallback_only: true
 home:
   alias: /home
   hide_in_urls: false
