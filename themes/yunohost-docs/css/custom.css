@@ -171,7 +171,6 @@ body .off-canvas .learn-sidebar .searchbox ::placeholder {
 }
 
 body .off-canvas .learn-sidebar a:hover {
-    color: black;
-    text-decoration: underline black;
+    color: #bbb;
 }
 
