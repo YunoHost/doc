@@ -16,13 +16,16 @@ routes:
 يحتوي على كافة المعلومات التي تخصنا و أسلوب عملنا و مساهمتنا
 
 * Project's life:
-   * [Frequently asked questions](/faq)
+   * [Frequently asked questions](/help/faq)
+   * [Project news](/news)
    * [Project organization](/project_organization)
-   * [Blog](https://forum.yunohost.org/c/announcement)
+   * [Project budget](/project_budget)
    * [Forum](https://forum.yunohost.org)
    * [Chat rooms](/chat_rooms)
    * [Communication](/communication)
    * [Support / Help](/help)
+   * [Sponsors and partners](/sponsors_partners)
 
 * استخدم مثال:
    * [YunoHost للمنظمات غير الهادفة للربح](/use_case_non-profit_organisations)
+   * (FR) [YunoHost for CHATONS (A collective of independant, transparent, open, neutral and ethical hosters providing FLOSS-based online services.)](https://wiki.chatons.org/doku.php/yunohost) 
