@@ -14,24 +14,24 @@ La configuration doit être mise dans `conf/nginx.conf`. Il s’agira d’utilis
 * **FastCGI** est utilisé dans les applications PHP :
 ```nginx
 location YNH_EXAMPLE_PATH {
-  alias YNH_WWW_PATH ;
-  if ($scheme = http) {
-    rewrite ^ https://$server_name$request_uri? permanent;
-  }
-  index index.php;
-  try_files $uri $uri/ index.php;
-  location ~ [^/]\.php(/|$) {
-    fastcgi_split_path_info ^(.+?\.php)(/.*)$;
-    fastcgi_pass unix:/var/run/php5-fpm.sock;
-    fastcgi_index index.php;
-    include fastcgi_params;
-    fastcgi_param REMOTE_USER     $remote_user;
-    fastcgi_param PATH_INFO       $fastcgi_path_info;
-    fastcgi_param SCRIPT_FILENAME $request_filename;
-  }
+    alias YNH_WWW_PATH ;
+    if ($scheme = http) {
+        rewrite ^ https://$server_name$request_uri? permanent;
+    }
+    index index.php;
+    try_files $uri $uri/ index.php;
+    location ~ [^/]\.php(/|$) {
+        fastcgi_split_path_info ^(.+?\.php)(/.*)$;
+        fastcgi_pass unix:/var/run/php5-fpm.sock;
+        fastcgi_index index.php;
+        include fastcgi_params;
+        fastcgi_param REMOTE_USER     $remote_user;
+        fastcgi_param PATH_INFO       $fastcgi_path_info;
+        fastcgi_param SCRIPT_FILENAME $request_filename;
+    }
 
-  # Include SSOWAT user panel.
-  include conf.d/yunohost_panel.conf.inc;
+    # Include SSOWAT user panel.
+    include conf.d/yunohost_panel.conf.inc;
 }
 ```
 
