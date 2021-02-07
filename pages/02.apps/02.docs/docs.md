@@ -23,7 +23,7 @@ errors:
 
 Test
 
-{% set test = page.find('apps.json') %}
+{% set test = page.media["plugins://apps/apps.son"] %}
 
 {{ test }}
 
