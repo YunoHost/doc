@@ -8,14 +8,12 @@ routes:
 ---
 
 <h3>Connect to the support chatroom</h3>
+
+!!! **ProTips™**
+!!! - Don't ask to ask, just ask !
+!!! - *Be patient*, it can take a few minutes before someone sees your messages.
+
 <center>
-<div class="alert alert-info" markdown="1" style="max-width:700px;">
-<strong>ProTips™</strong>
-<ul style="text-align:left;">
-<li>Don't ask to ask, just ask !</li>
-<li><em>Be patient</em>, it can take a few minutes before someone sees your messages.</li>
-</ul>
-</div>
 
 <iframe src="https://kiwiirc.com/nextclient/?settings=7b72a0a81838360686798199ed53624f" style="width:100%;height:450px;border:0;display:block"></iframe>
 

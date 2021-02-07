@@ -8,14 +8,15 @@ routes:
 ---
 
 <h3 dir="rtl">إتصل بغرفة المساعدة</h3>
+
+!!! **ProTips™**
+!!! - Non c'è bisogno di chiedere se puoi chiedere qualcosa, chiedi e basta !
+!!! - *Sii paziente*, potrebbero servire alcuni minuti prima che qualcuno veda i tuoi messaggi.
+!!! - لا تطرح سؤالا لمُجرّد الطرح، بل إطرح سؤالك !
+!!! - تحلّى بالصبر، في بعض الأحيان يمكن أن تمر بضع دقائق قبل أن يرى أحد المستخدمين سؤالك.
+
 <center>
-<div class="alert alert-info" markdown="1" style="max-width:700px;">
-<strong>ProTips™</strong>
-<ul dir="rtl" style="text-align:right;">
-<li>لا تطرح سؤالا لمُجرّد الطرح، بل إطرح سؤالك !</li>
-<li><em>تحلّى بالصبر</em>، في بعض الأحيان يمكن أن تمر بضع دقائق قبل أن يرى أحد المستخدمين سؤالك.</li>
-</ul>
-</div>
+
 <div dir="rtl"><strong>الإسم المستعار</strong> : <input id="nickname" value="ynhuser__" type="text">
 </div>
 
