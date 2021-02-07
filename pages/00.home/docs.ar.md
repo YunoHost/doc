@@ -9,10 +9,10 @@ routes:
 
 دليل واي يونوهوست YunoHost يرتكز أساسًا على ثلاثة محاور :
 
-[<i class="fa fa-lock"></i> دليل المدير](/administrate?classes=btn,btn-lg,btn-primary)
+[[fa=fa-lock /] دليل المدير](/administrate?classes=btn,btn-lg,btn-primary)  
 يتطرق إلى طريقة التنصيب و إدارة السيرفر و التطبيقات
 
-[<i class="fa fa-heart"></i> دليل المساهم](/contribute?classes=btn,btn-lg,btn-error) 
+[[fa=fa-heart /] دليل المساهم](/contribute?classes=btn,btn-lg,btn-error)  
 يحتوي على كافة المعلومات التي تخصنا و أسلوب عملنا و مساهمتنا
 
 * Project's life:

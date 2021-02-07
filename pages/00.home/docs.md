@@ -9,10 +9,10 @@ routes:
 
 YunoHost's documentation has 2 different sections:
 
-[<i class="fa fa-lock"></i> Administrator's guide](/administrate?classes=btn,btn-lg,btn-primary)  
+[[fa=fa-lock /] Administrator's guide](/administrate?classes=btn,btn-lg,btn-primary)  
 Including installation, server management, and application management.
 
-[<i class="fa fa-heart"></i> Contributor's guide](/contribute?classes=btn,btn-lg,btn-error)  
+[[fa=fa-heart /] Contributor's guide](/contribute?classes=btn,btn-lg,btn-error)  
 Which contains everything you have to know about us and the way we work.
 
 * Project's life:

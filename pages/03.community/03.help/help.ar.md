@@ -7,7 +7,7 @@ routes:
   default: '/help'
 ---
 
-<h3 dir="rtl">إتصل بغرفة المساعدة</h3>
+<h3>إتصل بغرفة المساعدة</h3>
 
 !!! **ProTips™**
 !!! - Non c'è bisogno di chiedere se puoi chiedere qualcosa, chiedi e basta !
@@ -17,25 +17,21 @@ routes:
 
 <center>
 
-<div dir="rtl"><strong>الإسم المستعار</strong> : <input id="nickname" value="ynhuser__" type="text">
-</div>
+<strong>الإسم المستعار</strong> : <input id="nickname" value="ynhuser__" type="text">
 
 <iframe src="https://kiwiirc.com/nextclient/?settings=7b72a0a81838360686798199ed53624f" style="border:0; width:100%; height:450px;"></iframe>
 
 </br>
 </br>
-<div dir="rtl">
 <em>ملاحظة : يمكن الإتصال كذلك بغرفة المحادثة باستخدام تطبيق XMPP الخاص بك على العنوان التالي </br>
 support@conference.yunohost.org </br>
 <a target="_blank" href="https://kiwiirc.com/nextclient/?settings=7b72a0a81838360686798199ed53624f">kiwiirc</a>  باستخدام   freenode على #yunohost IRC أو </br>
 <a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">Riot</a> باستخدام Matrix أو </br>
 </em>
-</div>
 </center>
 
-<h3 dir="rtl">... أو إطرح سؤالك في المنتدى !</h3>
+<h3>... أو إطرح سؤالك في المنتدى !</h3>
 
-<div dir="rtl">
 <center>
 <button id="goForum" type="button" class="btn btn-success" style="font-weight:bold;">
             <span class="glyphicon glyphicon-comment"></span> إنتقل إلى المنتدى
@@ -47,7 +43,6 @@ support@conference.yunohost.org </br>
 <center>
 <br>
 <em>يرجى الإبلاغ عن المشاكل على أداة متعقّب الأخطاء الخاصة بالمشروع أو إتصل بالمطوّرين</em><br><br>
-</div>
 <button id="goBugtracker" type="button" class="btn btn-warning" style="font-weight:bold;">
             <span class="glyphicon glyphicon-exclamation-sign"></span> أبلِغ عن عِلّة أو خلل
           </button>
@@ -58,7 +53,6 @@ support@conference.yunohost.org </br>
 </br>
 </br>
 <center>
-<div dir="rtl">
 <em>ملاحظة : يمكن الإتصال كذلك بغرفة التطوير باستخدام تطبيق XMPP الخاص بك على العناوين التالية </br>
 dev@conference.yunohost.org and apps@conference.yunohost.org</em>
 </center>

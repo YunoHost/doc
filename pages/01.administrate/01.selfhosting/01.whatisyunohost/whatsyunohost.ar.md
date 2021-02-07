@@ -7,7 +7,7 @@ routes:
   default: '/whatsyunohost'
 ---
 
-![](image://YunoHost_logo_vertical.png?resize=400) 
+![YunoHost logo](image://YunoHost_logo_vertical.png?resize=400)
 
 واي يونوهوست YunoHost هو **نظام لتشغيل الخوادم** صُمِّم لتسهيل الإستضافة الذاتية لخدمات الإنترنت.
 هو مُرتكز و منسجم كافة الإنسجام مع توزيعة <a href="https://debian.org">غنو/لينكس ديبيان</a>.
@@ -16,7 +16,6 @@ routes:
 ---
 
 ### خصائصه
-
 
 - متعدد المستعملين مع تكامُل LDAP
 - متعدد النطاقات
@@ -27,16 +26,10 @@ routes:
 - نظام للنسخ الإحتياطي
 - نظام لإعادة توليد الإعدادات و الخدمات
 
-![](image://YunoHost_logo_vertical.png?resize=400)
-
----
-
 ### أصل فكرة المشروع
 
-
 تعود نشأة فكرة مشروع واي يونوهوست YunoHost إلى شهر فيفري مِن عام 2012 بعد محادثة بدأت على هذا الشكل تقريبًا :
-
- <blockquote>« تبًا، لقد سئِمتُ مِن إعادة إعداد خادم البريد الإلكتروني ... Beudbeud، كيف قُمتَ بإعداد خادومك الجميل حول LDAP ؟ »
+ <blockquote><p>« تبًا، لقد سئِمتُ مِن إعادة إعداد خادم البريد الإلكتروني ... Beudbeud، كيف قُمتَ بإعداد خادومك الجميل حول LDAP ؟ »</p>
 <small>Kload، فيفري 2012</small></blockquote>
 
 
@@ -48,7 +41,6 @@ Constatant l’engouement croissant autour de YunoHost et de l’auto-hébergeme
 ---
 
 ### الهدف
-
 يهدف واي يونوهوست YunoHost إلى تسهيل عملية تنصيب و تثبيت و إدارة أي خادمٍ لأكبر عدد ممكن مِن الناس و ذلك دون المساس بجودة و موثوقية البرمجيات. 
 
 لم يُدَّخر أي جهد لتسهيل عملية التنصيب و الإنبساط وذلك على أكبر عدد ممكن مِن الأجهزة مهما اختلفت مميزات كل جهاز (في المنزل أو على خادوم إستضافة أو على خادوم شخصي إفتراضي)
@@ -58,10 +50,8 @@ Constatant l’engouement croissant autour de YunoHost et de l’auto-hébergeme
 
 ### التسمية
 
-<div dir="rtl">
 **YunoHost** مُستمَدٌّ مِن لُغة الإنترنت العاميّة « Y U NO Host » و بالمعنى التقريبي « لماذا لا تستضيف نفسك بنفسك ». <a href="https://ar.m.wikipedia.org/wiki/%D9%85%D9%8A%D9%85_%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA">ميم الإنترنت</a> الذي يصف المعنى بالتقريب هو :
 ![](image://dude_yunohost.jpg)
-</div>
 
 ---
 
@@ -71,7 +61,6 @@ YunoHost est développé pour être le plus **simple** et le moins intrusif poss
 
 Le tout est bien entendu **entièrement libre**. La philosophie de l’[الإستضافة الذاتية](/selfhosting) étant à nos yeux incompatible avec tout autre modèle de développement logiciel.
 
-
 لا تتردّدوا في زيارة صفحة « <a href="/contribute">ساهموا</a>».
 
 ---
@@ -79,7 +68,6 @@ Le tout est bien entendu **entièrement libre**. La philosophie de l’[الإس
 ### الأمان
 
 لقد بُذِلت كل المجهودات مِن أجل تأمين واي يونوهوست YunoHost و **تعمية و تشفير البروتوكولات** . بإمكانكم الإطلاع على الشرح بتفاصيليه <a href="/security">هنا</a>.
-
 ---
 
 ### واي يونوهوست YunoHost ليس
