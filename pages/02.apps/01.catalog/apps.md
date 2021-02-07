@@ -28,7 +28,7 @@ Search bar
             <span id="current-quality-filter" data-filter="decent">Only decent quality apps</span> <span class="caret"></span>
         </button>
 
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu" style="display: none;">
             <li><a href="#" data-quality-filter="high">Only high quality apps</a></li>
             <li><a href="#" data-quality-filter="decent">Only decent quality apps</a></li>
             <li><a href="#" data-quality-filter="working">Only working apps</a></li>
@@ -117,9 +117,9 @@ Custom CSS for this page
 }
 
 .app-descr {
-    height:100px;
+    height:120px;
     overflow: hidden;
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 1rem;
 }
 
 .app-footer {
