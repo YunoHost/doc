@@ -186,8 +186,12 @@ body .off-canvas .learn-sidebar .learn-nav ul li ul li.active > a {
     background-color: #2f2f2f52;
 }
 
-body .off-canvas .learn-sidebar .learn-nav .read-icon {
+body .off-canvas .learn-sidebar .learn-nav .read-icon, body .off-canvas .learn-sidebar .searchbox {
     color: rgba(0, 0, 0, 0.6);
+}
+
+body .off-canvas .learn-sidebar .searchbox input {
+    color: rgb(78, 78, 78);
 }
 
 /*
