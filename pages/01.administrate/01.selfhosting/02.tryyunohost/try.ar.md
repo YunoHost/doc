@@ -9,24 +9,16 @@ routes:
 
 ! **ملاحظة :** يمكن لهذا السيرفر التجريبي أن يتوقف من وقت إلى آخر.
 
-<br>
+[center]
+[columns]
+[[fa=user /] واجهة المستخدم](https://demo.yunohost.org/?target=_blank&classes=btn,btn-lg,btn-success)  
+إسم المستخدم : demo  
+كلمة السر : demo
 
-  <div dir=rtl class="row text-center">
-    <div dir=rtl class="col-md-6">
-      <a href="https://demo.yunohost.org/" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-user"></span> واجهة المستخدم</a>
-      <p class="text-muted">إسم المستخدم : demo<br>كلمة السر : demo</p>
-    </div>
-    <div dir=rtl class="col-md-5">
-      <a href="https://demo.yunohost.org/yunohost/admin" target="_blank" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-lock"></span> واجهة الإدارة</a>
-      <p dir=rtl class="text-muted">كلمة السر : demo</p>
-    </div>
-  </div>
+[[fa=cog /] واجهة الإدارة](https://demo.yunohost.org/yunohost/admin/?target=_blank&classes=btn,btn-lg,btn-primary)  
+كلمة السر : demo
 
-<br>
+[/columns]
+[/center]
 
-<p dir=rtl class="text-center" markdown="1">
-***تم توفير الخادم التجريبي بفضل    
-<a href="https://www.gitoyen.net" target="_blank">Gitoyen</a>***
-</p>
-
-
+!!!! **تم توفير الخادم التجريبي بفضل [Gitoyen](https://www.gitoyen.net?target=_blank) [fa=heart /]**
