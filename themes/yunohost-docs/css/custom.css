@@ -135,7 +135,7 @@ body .off-canvas .learn-sidebar .searchbox ::placeholder {
 }
 
 body .off-canvas .learn-sidebar a:hover {
-    color: #bbb;
+    color: #37419a;
 }
 
 body #header .off-canvas .learn-sidebar a:hover {
@@ -143,7 +143,17 @@ body #header .off-canvas .learn-sidebar a:hover {
     text-decoration: underline black;
 }
 
+body .off-canvas .learn-sidebar .learn-nav ul li a > span > b {
+    color: black;
+}
 
+body .off-canvas .learn-sidebar .learn-nav ul li ul li.active > a {
+    background-color: #2f2f2f52;
+}
+
+body .off-canvas .learn-sidebar .learn-nav .read-icon {
+    color: rgba(0, 0, 0, 0.6);
+}
 
 /*
 ###############################################################################
