@@ -160,6 +160,28 @@ Custom CSS for this page
 /*===============================================*/
 </style>
 
+
+
+{% set catalog = read_file('/var/www/app_yunohost/apps/apps.json')|json_decode(true) %}
+
+{% for app, infos in catalog %}
+{{ app }}
+{{ infos }}
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--
 App card template
 -->

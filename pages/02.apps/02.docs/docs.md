@@ -11,25 +11,7 @@ content:
 twig_first: true
 process:
     twig: true
-debugger:
-  enabled: true                        # Enable Grav debugger and following settings
-  shutdown:
-    close_connection: true
-twig:
-    debug: true
-errors:
-  display: true
 ---
-
-Test
-
-{% set test = '/var/www/app_yunohost/apps/apps.json'|get_file_content %}
-
-{{ test }}
-
-{% for app in catalog %}
-    {{ app }}
-{% endfor %}
 
 <ul>
 {% for p in page.collection %}
