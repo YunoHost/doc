@@ -26,13 +26,13 @@ routes:
 
 ## Instalación con la imagen pre-instalada (recomendada)
 
-<a class="btn btn-lg btn-default" href="/images">1. Descargar la imagen para Raspberry Pi</a>
+[div class="btn btn-lg btn-default"] [1. Descargar la imagen para Raspberry Pi](/images) [/div]
 
-<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">2. Poner la imagen en tu tarjeta SD</a>
+[div class="btn btn-lg btn-default"] [2. Poner la imagen en tu tarjeta SD](/burn_or_copy_iso) [/div]
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot">3. Conectar y encender</a>
+[div class="btn btn-lg btn-default"] [3. Conectar y encender](/plug_and_boot) [/div]
 
-<a class="btn btn-lg btn-default" href="/postinstall">4. Proceder a la post-instalación</a>
+[div class="btn btn-lg btn-default"] [4. Proceder a la post-instalación](/postinstall) [/div]
 
 ---
 

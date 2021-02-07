@@ -29,30 +29,30 @@ Un paquet YunoHost est composé :
 * d’un fichier `LICENSE` contenant la licence du paquet
 * d’une page de présentation du paquet contenu dans un fichier `README.md`
 
-<a class="btn btn-lg btn-default" href="https://github.com/YunoHost/example_ynh">Paquet de base</a> n’hésitez pas à vous en servir comme base de travail.
+[div class="btn btn-lg btn-default"] [Paquet de base](https://github.com/YunoHost/example_ynh) [/div] n’hésitez pas à vous en servir comme base de travail.
 
 ## Manifeste
-<a class="btn btn-lg btn-default" href="/packaging_apps_manifest">Manifeste</a>
+[div class="btn btn-lg btn-default"] [Manifeste](/packaging_apps_manifest) [/div]
 
 ## Les scripts
-<a class="btn btn-lg btn-default" href="/packaging_apps_scripts">Scripts</a>
+[div class="btn btn-lg btn-default"] [Scripts](/packaging_apps_scripts) [/div]
 
 ### Architecture et arguments
 Comme les instances de YunoHost possèdent une architecture unifiée, vous serez capable de deviner la plupart des réglages nécessaires. Mais si vous avez besoin de réglages spécifiques, comme le nom de domaine ou un chemin web pour configurer l’application, vous devrez les demander aux administrateurs lors de l’installation (voir la section `arguments` dans le § **Manifeste** ci-dessus).
 
-<a class="btn btn-lg btn-default" href="/packaging_apps_arguments_management">Gestion des arguments</a>
+[div class="btn btn-lg btn-default"] [Gestion des arguments](/packaging_apps_arguments_management) [/div]
 
 ### Configuration NGINX
-<a class="btn btn-lg btn-default" href="/packaging_apps_nginx_conf">Configuration NGINX</a>
+[div class="btn btn-lg btn-default"] [Configuration NGINX](/packaging_apps_nginx_conf) [/div]
 
 ### Multi-instance
-<a class="btn btn-lg btn-default" href="/packaging_apps_multiinstance">Multi-instance</a>
+[div class="btn btn-lg btn-default"] [Multi-instance](/packaging_apps_multiinstance) [/div]
 
 ### Hooks
-<a class="btn btn-lg btn-default" href="/packaging_apps_hooks">Hooks</a>
+[div class="btn btn-lg btn-default"] [Hooks](/packaging_apps_hooks) [/div]
 
 ### Commandes pratiques
-<a class="btn btn-lg btn-default" href="/packaging_apps_helpers">Commandes pratiques</a>
+[div class="btn btn-lg btn-default"] [Commandes pratiques](/packaging_apps_helpers) [/div]
 
 ### Référencement des logs
 Dans de nombreuses situations, vous pouvez vouloir indexer un fichier de log pour qu'il soit affiché dans la webadmin. Pour indexer un log, il faut créer un fichier d'indexation dans `/var/log/yunohost/categories/app/APPNAME.yml`.
@@ -98,7 +98,7 @@ Vous trouverez ci-dessous une liste des points à vérifier concernant la qualit
 Pour mesurer la qualité d'un paquet, celui-ci obtiendra un [niveau](/packaging_apps_levels), déterminé en fonction de divers critères d'installation et selon le respect des [règles de packaging](/packaging_apps_guidelines).
 
 ### Script de vérification du paquet
-<a class="btn btn-lg btn-default" href="https://github.com/YunoHost/package_checker">Vérificateur de paquets</a>
+[div class="btn btn-lg btn-default"] [Vérificateur de paquets](https://github.com/YunoHost/package_checker) [/div]
 
 Il s’agit d’un script Python qui vérifie :
 * que le paquet est à jour concernant les dernières spécifications
@@ -109,7 +109,7 @@ Il s’agit d’un script Python qui vérifie :
 ### Intégration continue
 
 Un serveur d'intégration continue est a disposition des packagers désirant tester leurs applications.  
-<a class="btn btn-lg btn-default" href="packaging_apps_ci">Intégration continue</a>
+[div class="btn btn-lg btn-default"] [Intégration continue](packaging_apps_ci) [/div]
 
 ### Publiez et demandez des tests de votre application
 

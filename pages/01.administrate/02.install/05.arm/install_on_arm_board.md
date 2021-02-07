@@ -26,26 +26,26 @@ routes:
 
 ## Install with the pre-installed image (recommended)
 
-<a class="btn btn-lg btn-default" href="/images">0. Download the pre-installed image for your board</a>
+[div class="btn btn-lg btn-default"] [0. Download the pre-installed image for your board](/images) [/div]
 <br>
 <small class="text-info">If no pre-installed image exists for your board, you can follow the instructions to "Install on top of ARMbian"</small>
 
-<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Flash the SD card with the image</a>
+[div class="btn btn-lg btn-default"] [1. Flash the SD card with the image](/burn_or_copy_iso) [/div]
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot">2. Boot the board and connect to the web interface at `yunohost.local`</a>
+[div class="btn btn-lg btn-default"] [2. Boot the board and connect to the web interface at `yunohost.local`](/plug_and_boot) [/div]
 
-<a class="btn btn-lg btn-default" href="/postinstall">3. Proceed with the initial configuration (post-installation)</a>
+[div class="btn btn-lg btn-default"] [3. Proceed with the initial configuration (post-installation)](/postinstall) [/div]
 
 ---
 
 ## Install on top of ARMbian
 
-<a class="btn btn-lg btn-default" href="https://www.armbian.com/download/">0. Download the ARMbian image for your board</a>
+[div class="btn btn-lg btn-default"] [0. Download the ARMbian image for your board](https://www.armbian.com/download/) [/div]
 
-<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Flash the SD card with the image</a>
+[div class="btn btn-lg btn-default"] [1. Flash the SD card with the image](/burn_or_copy_iso) [/div]
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot">2. Plug & boot</a>
+[div class="btn btn-lg btn-default"] [2. Plug & boot](/plug_and_boot) [/div]
 
-<a class="btn btn-lg btn-default" href="/ssh">3. Connect to your server with SSH</a>
+[div class="btn btn-lg btn-default"] [3. Connect to your server with SSH](/ssh) [/div]
 
-<a class="btn btn-lg btn-default" href="/install_manually">4. Follow the generic install procedure</a>
+[div class="btn btn-lg btn-default"] [4. Follow the generic install procedure](/install_manually) [/div]

@@ -9,7 +9,7 @@ routes:
 
 A continuous integration server is available for any packager willing to test an app with [Package_check](https://github.com/YunoHost/package_check).
 
-<a class="btn btn-lg btn-default" href="https://ci-apps-dev.yunohost.org">ci-apps-dev</a>
+[div class="btn btn-lg btn-default"] [ci-apps-dev](https://ci-apps-dev.yunohost.org) [/div]
 
 This server is free to use for any of you, you just need an account.  
 To do so, ask to a member of the Apps group on our [Applications chatroom](/chat_rooms)

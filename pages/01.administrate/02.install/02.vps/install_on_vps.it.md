@@ -21,7 +21,7 @@ routes:
 
 ## Procedura di installazione 
 
-<a class="btn btn-lg btn-default" href="/install_manually">1. Installa manualmente</a>
+[div class="btn btn-lg btn-default"] [1. Installa manualmente](/install_manually) [/div]
 
-<a class="btn btn-lg btn-default" href="/postinstall">2. Post-installazione</a>
+[div class="btn btn-lg btn-default"] [2. Post-installazione](/postinstall) [/div]
 

@@ -52,5 +52,5 @@ identifiants suivants :
 
 ## <small>5.</small> Procéder à la post-installation
 
-<a class="btn btn-lg btn-default" href="/postinstall">Documentation de la post-installation</a>
+[div class="btn btn-lg btn-default"] [Documentation de la post-installation](/postinstall) [/div]
 

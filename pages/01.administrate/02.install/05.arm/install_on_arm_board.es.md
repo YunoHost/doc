@@ -24,27 +24,27 @@ routes:
 
 ## Instalación con la imagen pre-instalada (recomendada)
 
-<a class="btn btn-lg btn-default" href="/images">0. Descargar la imagen pre-instalada para tu tarjeta ARM</a>
+[div class="btn btn-lg btn-default"] [0. Descargar la imagen pre-instalada para tu tarjeta ARM](/images) [/div]
 <br>
 <small class="text-info">Si no existe una imagen dedicada a tu tarjeta, puedes seguir la sección "Instalación encima de ARMbian".</small>
 
-<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Poner la imagen en tu tarjeta SD</a>
+[div class="btn btn-lg btn-default"] [1. Poner la imagen en tu tarjeta SD](/burn_or_copy_iso) [/div]
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot">2. Conectar y encender</a>
+[div class="btn btn-lg btn-default"] [2. Conectar y encender](/plug_and_boot) [/div]
 
-<a class="btn btn-lg btn-default" href="/postinstall">3. Proceder a la post-instalación</a>
+[div class="btn btn-lg btn-default"] [3. Proceder a la post-instalación](/postinstall) [/div]
 
 ---
 
 ## Instalación encima de ARMbian
 
-<a class="btn btn-lg btn-default" href="https://www.armbian.com/download/">0. Descargar la imagen ARMbian para tu tarjeta ARM</a>
+[div class="btn btn-lg btn-default"] [0. Descargar la imagen ARMbian para tu tarjeta ARM](https://www.armbian.com/download/) [/div]
 
-<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Poner la imagen en tu tarjeta SD</a>
+[div class="btn btn-lg btn-default"] [1. Poner la imagen en tu tarjeta SD](/burn_or_copy_iso) [/div]
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot">2. Conectar y encender</a>
+[div class="btn btn-lg btn-default"] [2. Conectar y encender](/plug_and_boot) [/div]
 
-<a class="btn btn-lg btn-default" href="/ssh">3. Conectarse en SSH</a>
+[div class="btn btn-lg btn-default"] [3. Conectarse en SSH](/ssh) [/div]
 
-<a class="btn btn-lg btn-default" href="/install_manually">4. Proceder a la post-instalación genérica</a>
+[div class="btn btn-lg btn-default"] [4. Proceder a la post-instalación genérica](/install_manually) [/div]
 

@@ -81,7 +81,7 @@ If you encounter the error "VT-x is not available", you need probably need to en
 After the reboot, the system should ask you to proceed with the
 post-installation
 
-<a class="btn btn-lg btn-default" href="/postinstall">Post-install documentation</a>
+[div class="btn btn-lg btn-default"] [Post-install documentation](/postinstall) [/div]
 
 
 

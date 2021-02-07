@@ -25,6 +25,6 @@ Su un computer ARM, un VPS, un server dedicato, un computer x86 standard, un vec
 
 ## Passi per l'installazione
 
-<a class="btn btn-lg btn-default" href="/install_manually">1. Installazione manuale</a>
+[div class="btn btn-lg btn-default"] [1. Installazione manuale](/install_manually) [/div]
 
-<a class="btn btn-lg btn-default" href="/postinstall">2. Post-installazione</a>
+[div class="btn btn-lg btn-default"] [2. Post-installazione](/postinstall) [/div]

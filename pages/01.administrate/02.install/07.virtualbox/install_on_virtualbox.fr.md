@@ -79,5 +79,4 @@ Si vous rencontrez l'erreur "VT-x is not available", il vous faut probablement a
 Après le redémarrage, la machine devrait vous proposer d'effectuer la
 post-installation :
 
-<a class="btn btn-lg btn-default" href="/postinstall">Post-install
-documentation</a>
+[div class="btn btn-lg btn-default"] [Documentation de la postinstall](/postinstall) [/div]

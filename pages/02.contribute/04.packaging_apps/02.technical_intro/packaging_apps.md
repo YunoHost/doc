@@ -26,25 +26,25 @@ A YunoHost package is composed of:
 * A `LICENSE` file containing the license of the package
 * A presentation page of your package in a `README.md` file
 
-<a class="btn btn-lg btn-default" href="https://github.com/YunoHost/example_ynh"> A basic package</a>
+[div class="btn btn-lg btn-default"] [ A basic package](https://github.com/YunoHost/example_ynh) [/div]
 feel free to use it as a framework.
 
 ## Manifest
-<a class="btn btn-lg btn-default" href="/packaging_apps_manifest">Manifest</a>
+[div class="btn btn-lg btn-default"] [Manifest](/packaging_apps_manifest) [/div]
 
 ## Scripts
-<a class="btn btn-lg btn-default" href="/packaging_apps_scripts">Scripts</a>
+[div class="btn btn-lg btn-default"] [Scripts](/packaging_apps_scripts) [/div]
 
 ### Architecture and arguments
 Since YunoHost has a unified architecture, you will be able to guess most of the settings you need. But if you need variable ones, like the domain or web path, you will have to ask the administrator at installation (see `arguments` section in the manifest above).
 
-<a class="btn btn-lg btn-default" href="/packaging_apps_arguments_management">Arguments management</a>
+[div class="btn btn-lg btn-default"] [Arguments management](/packaging_apps_arguments_management) [/div]
 
 ### NGINX configuration
-<a class="btn btn-lg btn-default" href="/packaging_apps_nginx_conf">NGINX configuration</a>
+[div class="btn btn-lg btn-default"] [NGINX configuration](/packaging_apps_nginx_conf) [/div]
 
 ### Multi-instance
-<a class="btn btn-lg btn-default" href="/packaging_apps_multiinstance">Multi-instance</a>
+[div class="btn btn-lg btn-default"] [Multi-instance](/packaging_apps_multiinstance) [/div]
 
 ### Hooks
 YunoHost provides a hook system, which is accessible via the packager's script callbacks in command line.
@@ -55,7 +55,7 @@ The scripts have to be placed in the `hooks` repository at the root of the YunoH
 Take a look at the [Nextcloud package](https://github.com/YunoHost-Apps/nextcloud_ynh/) for a working example.
 
 ### Helpers
-<a class="btn btn-lg btn-default" href="/packaging_apps_helpers">Helpers</a>
+[div class="btn btn-lg btn-default"] [Helpers](/packaging_apps_helpers) [/div]
 
 ### Registering a log file
 
@@ -116,7 +116,7 @@ Here is a list of best practices for application install scripts:
 To be define the quality of a package, it'll obtained a [level](/packaging_apps_levels), determined according to somes criteria of installation and according to respect to [package guidelines](/packaging_apps_guidelines).
 
 ### Package script checker
-<a class="btn btn-lg btn-default" href="https://github.com/YunoHost/package_checker">Package checker</a>
+[div class="btn btn-lg btn-default"] [Package checker](https://github.com/YunoHost/package_checker) [/div]
 
 This Python script checks:
 * that the package is up to date wich last specifications
@@ -127,7 +127,7 @@ This Python script checks:
 ### Continuous integration
 
 A continuous integration server is available for packagers who want to test their apps.  
-<a class="btn btn-lg btn-default" href="packaging_apps_ci">Continuous integration</a>
+[div class="btn btn-lg btn-default"] [Continuous integration](packaging_apps_ci) [/div]
 
 ### Publish and ask for testing your application
 

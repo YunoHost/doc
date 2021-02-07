@@ -29,13 +29,13 @@ routes:
 
 ## Install with the pre-installed image (recommended)
 
-<a class="btn btn-lg btn-default" href="/images">0. Download the pre-installed image for Raspberry Pi</a>
+[div class="btn btn-lg btn-default"] [0. Download the pre-installed image for Raspberry Pi](/images) [/div]
 
-<a class="btn btn-lg btn-default" href="/burn_or_copy_iso">1. Flash the SD card with the image</a>
+[div class="btn btn-lg btn-default"] [1. Flash the SD card with the image](/burn_or_copy_iso) [/div]
 
-<a class="btn btn-lg btn-default" href="/plug_and_boot">2. Boot the board and connect to the web interface at `yunohost.local`</a>
+[div class="btn btn-lg btn-default"] [2. Boot the board and connect to the web interface at `yunohost.local`](/plug_and_boot) [/div]
 
-<a class="btn btn-lg btn-default" href="/postinstall">3. Proceed with the initial configuration (post-installation)</a>
+[div class="btn btn-lg btn-default"] [3. Proceed with the initial configuration (post-installation)](/postinstall) [/div]
 
 ---
 

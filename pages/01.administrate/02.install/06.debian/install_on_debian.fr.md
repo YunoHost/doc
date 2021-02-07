@@ -25,7 +25,7 @@ Sur une plateforme ARM, un VPS, un serveur dédié, un ordinateur x86 standard, 
 
 ## Étapes d’installation
 
-<a class="btn btn-lg btn-default" href="/install_manually">1. Installer manuellement</a>
+[div class="btn btn-lg btn-default"] [1. Installer manuellement](/install_manually) [/div]
 
-<a class="btn btn-lg btn-default" href="/postinstall">2. Post-installation</a>
+[div class="btn btn-lg btn-default"] [2. Post-installation](/postinstall) [/div]
 

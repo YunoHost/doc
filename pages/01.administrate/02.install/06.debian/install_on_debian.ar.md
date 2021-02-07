@@ -25,7 +25,7 @@ routes:
 
 ## خطوات التنصيب
 
-<a class="btn btn-lg btn-default" href="/install_manually">1. التنصيب يدويًا</a>
+[div class="btn btn-lg btn-default"] [1. التنصيب يدويًا](/install_manually) [/div]
 
-<a class="btn btn-lg btn-default" href="/postinstall">2. ما بعد التنصيب</a>
+[div class="btn btn-lg btn-default"] [2. ما بعد التنصيب](/postinstall) [/div]
 
