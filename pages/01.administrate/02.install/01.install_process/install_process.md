@@ -24,6 +24,11 @@ routes:
     - '/boot_and_graphical_install'
 ---
 {% set arm, at_home, regular, rpi2plus, rpi1, rpi0, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, internetcube, docker = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
+{% set hardware = uri.param('hardware')  %}
+{% if not hardware %}
+  {% set hardware = 'vps_debian' %}
+{% endif %}
+
 {% if uri.param('hardware') == 'regular' %}
   {% set regular = true %}
 {% elseif uri.param('hardware') == 'internetcube' %}
@@ -38,50 +43,93 @@ routes:
   {% set arm, arm_sup = true, true %}
 {% elseif uri.param('hardware') == 'arm_unsup' %}
   {% set arm, arm_unsup = true, true %}
-{% elseif uri.param('hardware') == 'vpsdebian' %}
+{% elseif uri.param('hardware') == 'vps_debian' %}
   {% set vps, vps_debian = true, true %}
-{% elseif uri.param('hardware') == 'vpsynh' %}
+{% elseif uri.param('hardware') == 'vps_ynh' %}
   {% set vps, vps_ynh = true, true %}
 {% elseif uri.param('hardware') == 'virtualbox' %}
   {% set at_home, virtualbox = true, true %}
-{% elseif arm or regular %}
-  {% set at_home = true %}
 {% elseif uri.param('hardware') == 'docker' %}
   {% set docker = true %}
 {% endif %}
 
-<style>
+{% if arm or regular %}
+  {% set at_home = true %}
+{% endif %}
 
+<style>
+.hardware.active {
+    border: 7px solid #5a5;
+}
 </style>
 Select the hardware on which you want install YunoHost :
 [div class="flex-container"]
 
-[div class="flex-child"]
+[div class="flex-child hardware{%if virtualbox %} active{% endif %}"]
 [[figure caption="VirtualBox"]![](image://virtualbox.png?height=75)[/figure]](/install_process/hardware:virtualbox)
 [/div]
 
-[div class="flex-child"]
+[div class="flex-child hardware{%if rpi2plus or rpi1 or rpi0 %} active{% endif %}"]
 [[figure caption="Raspberry Pi"]![](image://raspberrypi.jpg?height=75)[/figure]](/install_process/hardware:rpi2plus)
 [/div]
 
-[div class="flex-child"]
+[div class="flex-child hardware{%if arm_sup or arm_unsup or internetcube %} active{% endif %}"]
 [[figure caption="ARM board"]![](image://olinuxino.jpg?height=75)[/figure]](/install_process/hardware:arm_sup)
 [/div]
 
-[div class="flex-child"]
+[div class="flex-child hardware{%if regular %} active{% endif %}"]
 [[figure caption="Regular computer"]![](image://computer.png?height=75)[/figure]](/install_process/hardware:regular)
 [/div]
 
-[div class="flex-child"]
-[[figure caption="Dedicated or virtual private server"]![](image://vps.png?height=75)[/figure]](/install_process/hardware:vps_debian)
+[div class="flex-child hardware{%if vps_debian or vps_ynh %} active{% endif %}"]
+[[figure caption="Remote server"]![](image://vps.png?height=75)[/figure]](/install_process/hardware:vps_debian)
 [/div]
 
-[div class="flex-child"]
+[div class="flex-child hardware{%if docker %} active{% endif %}"]
 [[figure caption="(Non-official!) Docker"]![](image://docker.png?height=75)[/figure]](/install_process/hardware:docker)
 [/div]
 
 [/div]
+[div class="flex-container"]
 
+{% if rpi2plus or rpi1 or rpi0 %}
+[div class="flex-child hardware{%if rpi2plus %} active{% endif %}"]
+[[figure caption="Raspberry Pi 2, 3 or 4"]![](image://raspberrypi.jpg?height=25)[/figure]](/install_process/hardware:rpi2plus)
+[/div]
+
+[div class="flex-child hardware{%if rpi1 %} active{% endif %}"]
+[[figure caption="Raspberry Pi 1"]![](image://raspberrypi.jpg?height=25)[/figure]](/install_process/hardware:rpi1)
+[/div]
+
+[div class="flex-child hardware{%if rpi0 %} active{% endif %}"]
+[[figure caption="Raspberry Pi zero"]![](image://raspberrypi.jpg?height=25)[/figure]](/install_process/hardware:rpi0)
+[/div]
+{% elseif arm_sup or arm_unsup or internetcube %}
+
+[div class="flex-child hardware{%if internetcube %} active{% endif %}"]
+[[figure caption="Internet cube With VPN"]![](image://olinuxino.jpg?height=25)[/figure]](/install_process/hardware:internetcube)
+[/div]
+
+[div class="flex-child hardware{%if arm_sup and not internetcube %} active{% endif %}"]
+[[figure caption="Olinuxino lime1&2 or Orange Pi PC+"]![](image://olinuxino.jpg?height=25)[/figure]](/install_process/hardware:arm_sup)
+[/div]
+
+[div class="flex-child hardware{%if arm_unsup %} active{% endif %}"]
+[[figure caption="Others boards"]![](image://olinuxino.jpg?height=25)[/figure]](/install_process/hardware:arm_unsup)
+[/div]
+{% elseif vps_debian or vps_ynh %}
+
+[div class="flex-child hardware{%if vps_debian %} active{% endif %}"]
+[[figure caption="VPS or dedicated server with Debian 10"]![](image://vps.png?height=25)[/figure]](/install_process/hardware:vps_debian)
+[/div]
+
+[div class="flex-child hardware{%if vps_ynh %} active{% endif %}"]
+[[figure caption="VPS or dedicated server with YunoHost pre-installed"]![](image://vps.png?height=25)[/figure]](/install_process/hardware:vps_ynh)
+[/div]
+
+{% endif %}
+
+[/div]
 
 
 
@@ -124,7 +172,6 @@ preinstalled ...
 * An x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine ...
 {% endif %}
 * ... with 512MB RAM{% if not arm %} and 15GB capacity{% endif %} (at least)
-
 {% if arm %}
 * A power supply (either an adapter or a MicroUSB cable) for your board;
 * A microSD card: 16GB capacity (at least) and Class 10 speed rate are highly recommended (like the Transcend 300x);
@@ -422,11 +469,16 @@ yunohost user create johndoe
 [/ui-tab]
 [/ui-tabs]
 
-## Let's Encrypt
+## Get a Let's Encrypt certificate
+If your DNS and router configuration are ok, you can next ask for a Let's Encrypt certificate.
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
 [/ui-tab]
 [ui-tab title="From the command line"]
+```
+yunohost domain cert-install
+```
 [/ui-tab]
 [/ui-tabs]
 {% endif %}
