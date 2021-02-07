@@ -23,13 +23,11 @@ errors:
 
 Test
 
-{% set test = page.media["plugins://apps/apps.son"] %}
+{% set test = read_file('/var/www/app_yunohost/apps/apps.json') %}
 
 {{ test }}
 
-![mytext](plugins://apps/apps.json)
-
-{% for app in catalog["apps"] %}
+{% for app in catalog %}
     {{ app }}
 {% endfor %}
 
