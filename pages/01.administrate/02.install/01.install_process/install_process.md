@@ -8,6 +8,9 @@ twig_first: true
 process:
     markdown: true
     twig: true
+page-toc:
+  active: true
+  depth: 2
 routes:
   default: '/install_process'
   aliases: 
@@ -25,31 +28,31 @@ routes:
 ---
 {% set arm, at_home, regular, rpi2plus, rpi1, rpi0, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, internetcube, docker = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
 {% set hardware = uri.param('hardware')  %}
-{% if not hardware %}
+{% if hardware == '' %}
   {% set hardware = 'vps_debian' %}
 {% endif %}
 
-{% if uri.param('hardware') == 'regular' %}
+{% if hardware == 'regular' %}
   {% set regular = true %}
-{% elseif uri.param('hardware') == 'internetcube' %}
+{% elseif hardware == 'internetcube' %}
   {% set arm, arm_sup, internetcube = true, true, true %}
-{% elseif uri.param('hardware') == 'rpi2plus' %}
+{% elseif hardware == 'rpi2plus' %}
   {% set arm, rpi2plus = true, true %}
-{% elseif uri.param('hardware') == 'rpi1' %}
+{% elseif hardware == 'rpi1' %}
   {% set arm, rpi1 = true, true %}
-{% elseif uri.param('hardware') == 'rpi0' %}
+{% elseif hardware == 'rpi0' %}
   {% set arm, rpi0 = true, true %}
-{% elseif uri.param('hardware') == 'arm_sup' %}
+{% elseif hardware == 'arm_sup' %}
   {% set arm, arm_sup = true, true %}
-{% elseif uri.param('hardware') == 'arm_unsup' %}
+{% elseif hardware == 'arm_unsup' %}
   {% set arm, arm_unsup = true, true %}
-{% elseif uri.param('hardware') == 'vps_debian' %}
+{% elseif hardware == 'vps_debian' %}
   {% set vps, vps_debian = true, true %}
-{% elseif uri.param('hardware') == 'vps_ynh' %}
+{% elseif hardware == 'vps_ynh' %}
   {% set vps, vps_ynh = true, true %}
-{% elseif uri.param('hardware') == 'virtualbox' %}
+{% elseif hardware == 'virtualbox' %}
   {% set at_home, virtualbox = true, true %}
-{% elseif uri.param('hardware') == 'docker' %}
+{% elseif hardware == 'docker' %}
   {% set docker = true %}
 {% endif %}
 
@@ -196,6 +199,17 @@ However, community images exist and are available on Docker Hub:
 ! N.B. : Installing YunoHost in a VirtualBox is usually intended for testing. To run an actual server on the long-term, you usually need a dedicated physical machine (old computer, ARM board...) or a VPS online.
 {% endif %}
 
+
+
+
+
+
+
+
+
+
+
+
 {% if at_home %}
 ## Download the YunoHost image
 <div id="cards-list">
@@ -222,6 +236,11 @@ However, community images exist and are available on Docker Hub:
 {% elseif virtualbox %}
 !!! If your host OS is 32 bits, be sure that you downloaded the 32-bit image previously.
 {% endif %}
+
+
+
+
+
 
 
 {% if not virtualbox %}
@@ -378,7 +397,7 @@ TODO what to do with default credentials info ?
 
 
 
-{% else %}
+{% elseif vps_debian %}
 ## Run the install script
 
 Once you have access to a command line on your server (either directly or through SSH), you can install YunoHost by running command as root :
@@ -462,10 +481,23 @@ yunohost user create johndoe
 {% endif %}
 
 ## Run diagnostic and fix DNS or Router issues if needed
+To diagnose that all critical aspects of your server are properly configured,
+you should run a diagnosis from the webadmin in the "Diagnosis" section. (This
+feature was added in YunoHost 3.8).
+
+TODO: elaborate on the fact that the diagnosis runs periodically, sends an email
+to root which is forwarded to the very first user created, and that issues
+should either be fixed or ignored (if they are understood/not relevant)
+otherwise an email will be sent twice a day..
+
+TODO: Redirect on good links about DNS and router
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommended) From the web interface"]
 [/ui-tab]
 [ui-tab title="From the command line"]
+```
+yunohost diagnosis run
+```
 [/ui-tab]
 [/ui-tabs]
 
