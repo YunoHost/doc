@@ -170,21 +170,28 @@ Custom CSS for this page
 
 {% for app_id, infos in catalog.apps %}
 
-    {% set manifest = infos.manifest %}
-    {% if grav.language.getActive in manifest.description %}
-        {% set descr_lang = grav.language.getActive %}
-    {% else %}
-        {% set descr_lang = 'en' %}
-    {% endif %}
-    {% set description = manifest.description[descr_lang] %}
+{% set manifest = infos.manifest %}
+{% if grav.language.getActive in manifest.description %}
+    {% set descr_lang = grav.language.getActive %}
+{% else %}
+    {% set descr_lang = 'en' %}
+{% endif %}
+{% set description = manifest.description[descr_lang] %}
+
+{% set category_display_name = None %}
+{% for category in categories %}
+   {% if category.id == infos.category %}
+   {% set category_display_name = category.title.en %}
+   {% endif %}
+{% endfor %}
 
 [div class="app-card_{{app_id}} app-card panel panel-default"]
-[div class="app-title"]{{ manifest.name }}[/div]
+[div class="app-title"]{{ manifest.name }} [span class="label label-default"]category_display_name [/label] [/div]
 [div class="app-descr"]{{ description }}[/div]
 [div class="app-footer"]
 [div class="app-buttons btn-group" role="group"]
 
-[div class="btn btn-default col-sm-4"] [[fa=globe /] Code](fixme) [/div]
+[div class="btn btn-default col-sm-4"] [[fa=code /] Code](fixme) [/div]
 [div class="btn btn-default col-sm-4"] [[fa=book /] Doc](/fixme) [/div]
 [div class="btn btn-success col-sm-4"] [[fa=plus /] Install](https://install-app.yunohost.org/?app={{app_id}}) [/div]
 
@@ -222,21 +229,6 @@ Javascript helpers
 -->
 
 <script>
-
-function timeConverter(UNIX_timestamp) {
-    var a = new Date(UNIX_timestamp*1000);
-    var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-    var year = a.getFullYear();
-    var month = months[a.getMonth()];
-    var date = a.getDate();
-    var hour = a.getHours();
-    var min = a.getMinutes();
-    if (hour < 10) { hour = '0' + hour; }
-    if (min < 10) { min = '0' + min; }
-    var time = date+' '+month+' '+year;//+' at '+hour+':'+min
-    return time;
-}
-
 
 $(document).ready(function () {
 
@@ -287,130 +279,44 @@ $(document).ready(function () {
     //=================================================
     // Upload apps lists
     //=================================================
-    var catalog = undefined;
-
-    // Fetch application catalog
-
-    //$.getJSON('https://app.yunohost.org/default/v2/apps.json', {}, function(data) {
-
-        catalog = $.map(data["apps"], function(el) { return el; });
-
-        // Clarify high quality state, and level if undefined or inprogress or notworking...
-
-        $.each(catalog, function(k, infos) {
-            if ((infos.level === undefined) || (infos.level === 0) || (infos.state === "inprogress") || (infos.state === "notworking")) {
-                infos.level = null;
-            }
-            if ((infos.high_quality === true) && (infos.level === 8)) {
-                infos.state = "high quality";
-            }
-            else if ((infos.state === "working") && (infos.level !== null) && (infos.level <= 4)) {
-                infos.state = "low quality";
-            }
-        });
-
-        // Sort apps according to their state and level...
-
-        catalog.sort(function(a, b){
-            a_state = (a.state === "high quality")?4:(a.level > 4)?3:(a.state > 0)?2:1;
-            b_state = (b.state === "high quality")?4:(b.level > 4)?3:(b.state > 0)?2:1;
-            if (a_state < b_state || a_state == b_state && a.level < b.level || a_state == b_state && a.level == b.level && a.manifest.id > b.manifest.id) {return 1;}
-            else if (a.manifest.id == b.manifest.id) {return 0;}
-            return -1;
-        });
-
-        // Add the card for each app
-
-        $.each(catalog, function(k, infos) {
-
-            app_id = infos.manifest.id;
-
-            // Define what style to use for state, level and install button
-            // according to the app quality ....
-
-            if (infos.state === "high quality") {
-                app_quality = "high,decent,working,none";
-                app_badge = "high quality";
-                app_badge_css_style = "epic";
-                app_install_css_style = "success";
-            } else if ((infos.state === "working") && (infos.level > 4)) {
-                app_quality = "decent,working,none";
-                app_badge = null;
-                app_badge_css_style = "success";
-                app_install_css_style = "success";
-            } else if (infos.state === "low quality") {
-                app_quality = "working,none";
-                app_badge = "low quality";
-                app_badge_css_style = "warning";
-                app_install_css_style = "warning";
-            } else {
-                app_quality = "none";
-                app_badge = "not working";
-                app_badge_css_style = "danger";
-                app_install_css_style = "danger";
-            }
-
-            // If level is null, we wanna display '?'
-            if (infos.level == null) {
-                infos.level = '?';
-            }
-
-            // Fill the template
-            html = $('#app-template2').html()
-             .replace(/{app_id}/g, app_id)
-             .replace(/{app_name}/g, infos.manifest.name)
-             .replace('{app_description}', infos.manifest.description[default_lang] || infos.manifest.description["en"])
-             .replace(/{app_git}/g, infos.git.url)
-             .replace('{app_branch}', infos.git.branch)
-             .replace('{app_level}', infos.level)
-             .replace('{app_quality}', app_quality)
-             .replace('{app_update}', timeConverter(infos.lastUpdate))
-             .replace('{app_install_css_style}', app_install_css_style);
-
-            // Handle the maintainer info
-            if (infos.maintained == false)
-            {
-               html = html
-                 .replace('{maintained_state}', 'unmaintained')
-                 .replace('{maintained_icon}', 'warning-sign')
-                 .replace('{app_maintainer}', "Unmaintained")
-                 .replace('{maintained_help}', "This package is currently unmaintained. Feel free to propose yourself as the new maintainer !");
-            }
-            else {
-                html = html
-                 .replace('{maintained_state}', 'maintained')
-                 .replace('{maintained_icon}', 'user')
-                 .replace('{maintained_help}', "Current maintainer of this package");
-
-                if ((infos.manifest.developer) && (infos.manifest.developer.name)) {
-                    html = html.replace('{app_maintainer}', infos.manifest.developer.name);
-                }
-                else if ((infos.manifest.maintainer) && (infos.manifest.maintainer.name)) {
-                    html = html.replace('{app_maintainer}', infos.manifest.maintainer.name);
-                }
-                else {
-                    html = html.replace('{app_maintainer}', "???");
-                }
-            }
-
-            // Fill the template
-            $('#app-cards-list').append(html);
-            $('.app-card_'+ app_id).attr('id', 'app-card_'+ app_id);
-            if (app_badge !== null) {
-                 $('.app-card_'+ app_id + ' .app-title').append(' <span class="label label-'+app_badge_css_style+'">'+app_badge+'</span>');
-            }
-            if (typeof(infos.category) === "string") {
-                 category = data["categories"].find(function(el) { return el.id == infos.category; });
-                 if (typeof(category) !== "undefined")
-                 {
-                    display = category["title"][default_lang] || category["title"]["en"];
-                    $('.app-card_'+ app_id + ' .app-title').append(' <span class="label label-default">'+display.toLowerCase()+'</span>');
-                 }
-            }
-        });
-
-    //    filter();
-    //});
-    //=================================================
+/*
+//        // Clarify high quality state, and level if undefined or inprogress or notworking...
+//
+//        $.each(catalog, function(k, infos) {
+//            if ((infos.level === undefined) || (infos.level === 0) || (infos.state === "inprogress") || (infos.state === "notworking")) {
+//                infos.level = null;
+//            }
+//            if ((infos.high_quality === true) && (infos.level === 8)) {
+//                infos.state = "high quality";
+//            }
+//            else if ((infos.state === "working") && (infos.level !== null) && (infos.level <= 4)) {
+//                infos.state = "low quality";
+//            }
+//        });
+//
+//        // Sort apps according to their state and level...
+//
+//        catalog.sort(function(a, b){
+//            a_state = (a.state === "high quality")?4:(a.level > 4)?3:(a.state > 0)?2:1;
+//            b_state = (b.state === "high quality")?4:(b.level > 4)?3:(b.state > 0)?2:1;
+//            if (a_state < b_state || a_state == b_state && a.level < b.level || a_state == b_state && a.level == b.level && a.manifest.id > b.manifest.id) {return 1;}
+//            else if (a.manifest.id == b.manifest.id) {return 0;}
+//            return -1;
+//        });
+//
+//        // Add the card for each app
+//
+//        $.each(catalog, function(k, infos) {
+//
+//            // if (infos.maintained == false)
+//
+//            // Fill the template
+//            $('#app-cards-list').append(html);
+//            $('.app-card_'+ app_id).attr('id', 'app-card_'+ app_id);
+//            if (app_badge !== null) {
+//                 $('.app-card_'+ app_id + ' .app-title').append(' <span class="label label-'+app_badge_css_style+'">'+app_badge+'</span>');
+//            }
+//        });
+*/
 });
 </script>
