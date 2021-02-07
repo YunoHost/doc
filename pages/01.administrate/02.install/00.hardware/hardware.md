@@ -16,4 +16,4 @@ YunoHost can be installed on the following hardware:
 
 * 500 MHz CPU
 * 512 MB RAM (recommended : 1 GB in order to run all the services and apps properly)
-* 8 GB storage capacity (recommended : 32 GB to store mails and documents)
+* 16 GB storage capacity (recommended : 32 GB to store mails and documents)

@@ -143,3 +143,70 @@ body #header .off-canvas .learn-sidebar a:hover {
     text-decoration: underline black;
 }
 
+
+
+/*
+###############################################################################
+  Style sheet for the cards
+###############################################################################
+*/
+.hardware-image #cards-list:after {
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.hardware-image .card {
+    margin-bottom:20px;
+    width:270px;
+    float:left;
+    min-height: 1px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.hardware-image .card .panel-body >  h3 {
+    margin-top:0;
+    margin-bottom:5px;
+    font-size:1.2em;
+}
+
+.hardware-image .card-desc {
+    height:135px;
+    overflow: hidden;
+}
+
+.hardware-image .card .btn-group {
+    width:100%;
+    margin-left: 0px;
+}
+.hardware-image .card > .btn-group > .btn{
+    border-bottom:0;
+}
+.hardware-image .card > .btn-group {   
+    border-left:0;
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+    margin-left: 0px;
+}
+.hardware-image .card-comment {
+    font-size: 0.8em;
+    margin-top:-5px;
+}
+.hardware-image .card > .annotations {
+    text-align:center;
+    font-size:small;
+}
+.hardware-image .card img {
+    margin: 1rem auto;
+}
+.hardware-image .btn-group .btn.btn-info {
+    color: #ffffff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+.hardware-image .btn-group .btn.btn-info:hover, .btn.btn-info:focus {
+    color: #ffffff;
+    background-color: #39b3d7;
+    border-color: #269abc;
+}
