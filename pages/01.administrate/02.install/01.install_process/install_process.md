@@ -150,28 +150,28 @@ However, community images exist and are available on Docker Hub:
 
 
 ## Pre-requisites
-
 {% if regular %}
-* A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop ...
+* A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop with 512MB RAM and 15GB capacity (at least)
 {% elseif rpi2plus %}
-* A Raspberry Pi 2, 3 or 4 ...
+* A Raspberry Pi 2, 3 or 4 with 512MB RAM (at least)
 {% elseif rpi1 %}
-* A RPi 1 ...
+* A Raspberry Pi 1 with 512MB RAM (at least)
 {% elseif rpi0 %}
-* A RPi zero ...
+* A Raspberry Pi zero with 512MB RAM (at least)
 {% elseif arm_sup %}
-* An Orange Pi PC+, or an Onlinuxino Lime 1 or 2 ...
+* A VPN with a dedicated IP and a .cube file
+* An Orange Pi PC+ or an Onlinuxino Lime 1 or 2
+{% elseif arm_sup %}
+* An Orange Pi PC+ or an Onlinuxino Lime 1 or 2
 {% elseif arm_unsup %}
-* An ARM board with 500MHz CPU ...
+* An ARM board with 500MHz CPU and 512MB RAM (at least)
 {% elseif vps_debian %}
-* A dedicated or virtual private server with Debian 10 <small>(with **kernel >= 3.12**)</small>)
-preinstalled ...
+* A dedicated or virtual private server with Debian 10 <small>(with **kernel >= 3.12**)</small>) preinstalled, 512MB RAM and 15GB capacity (at least)
 {% elseif vps_ynh %}
-* A dedicated or virtual private server with yunohost preinstalled ...
+* A dedicated or virtual private server with yunohost preinstalled, 512MB RAM and 15GB capacity (at least)
 {% elseif virtualbox %}
-* An x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine ...
+* An x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine with 512MB RAM and 8GB capacity (at least)
 {% endif %}
-* ... with 512MB RAM{% if not arm %} and 15GB capacity{% endif %} (at least)
 {% if arm %}
 * A power supply (either an adapter or a MicroUSB cable) for your board;
 * A microSD card: 16GB capacity (at least) and Class 10 speed rate are highly recommended (like the Transcend 300x);

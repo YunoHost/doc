@@ -62,7 +62,7 @@ This page lists a few installation guides.
 [div class="flex-container"]
 
 [div class="flex-child"]
-[[figure caption="On Debian 10 Buster"]![](image://debian-logo.png?height=150)[/figure]](/install_process:hardware)
+[[figure caption="On Debian 10 Buster"]![](image://debian-logo.png?height=150)[/figure]](/install_process/hardware:vps_debian)
 [/div]
 
 [div class="flex-child"]
