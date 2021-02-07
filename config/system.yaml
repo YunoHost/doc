@@ -210,3 +210,6 @@ strict_mode:
   yaml_compat: true
   twig_compat: true
   blueprint_compat: true
+translations_fallback:
+  en: 'fr,de,es'
+  de: 'en,fr,es'
