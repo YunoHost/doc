@@ -9,22 +9,16 @@ routes:
 
 ! **Nota:** Aquest és un servidor de demostració, podria estar caigut de tant en tant.
 
-<br>
+[center]
+[columns]
+[[fa=user /] Interfície d'usuària](https://demo.yunohost.org/?target=_blank&classes=btn,btn-lg,btn-success)  
+Nom d'usuària: demo  
+Contrasenya: demo
 
-  <div class="row text-center">
-    <div class="col-md-6">
-      <a href="https://demo.yunohost.org/" target="_blank" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-user"></span> Interfície d'usuària</a>
-      <p class="text-muted">Nom d'usuària: demo<br>Contrasenya: demo</p>
-    </div>
-    <div class="col-md-5">
-      <a href="https://demo.yunohost.org/yunohost/admin" target="_blank" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-lock"></span> Interfície d'administració</a>
-      <p class="text-muted">Contrasenya: demo</p>
-    </div>
-  </div>
+[[fa=cog /] Interfície d'administració](https://demo.yunohost.org/yunohost/admin/?target=_blank&classes=btn,btn-lg,btn-primary)  
+Contrasenya: demo
 
-<br>
+[/columns]
+[/center]
 
-<p class="text-center" markdown="1">
-***Servidor de demostració amablement ofert per    
-<a href="https://www.gitoyen.net" target="_blank">Gitoyen</a>***
-</p>
+!!!! **Servidor de demostració amablement ofert per [Gitoyen](https://www.gitoyen.net?target=_blank) [fa=heart /]**
