@@ -5,6 +5,10 @@ taxonomy:
     category: docs
 routes:
   default: '/ssh'
+  aliases:
+    - '/commandline'
+page-toc:
+  active: true
 ---
 
 ## Was ist SSH?
@@ -98,3 +102,29 @@ yunohost user ssh list-keys <username>
 N.B. : `fail2ban` will ban your IP for 10 mimutes if you perform 5 failed login attempts. If you need to unban the IP, have a look at the page about [Fail2Ban](/fail2ban)
 
 A more extensive discussion about security & SSH can be found on the [dedicated page](/security).
+
+
+## Yunohost command line
+
+!!! Providing a full tutorial about the command line is quite beyond the scope of the YunoHost documentation : for this, consider reading a dedicated tutorial such as [this one](https://ryanstutorials.net/linuxtutorial/) or [this one](http://linuxcommand.org/). But be reassured that you don't need to be a CLI expert to start using it !
+
+The `yunohost` command can be used to administrate your server and perform the various actions similarly to what you do on the webadmin. The command must be launched either from the `root` user or from the `admin` user by preceeding them with `sudo`. (ProTip™ : you can become `root` with the command `sudo su` as `admin`).
+
+YunoHost commands usually have this kind of structure : 
+
+```bash
+yunohost app install wordpress --label Webmail
+          ^    ^        ^             ^
+          |    |        |             |
+    category  action  argument      options
+```
+
+Don't hesitate to browse and ask for more information about a given category or action using the the `--help` option. For instance, those commands : 
+
+```bash
+yunohost --help
+yunohost user --help
+yunohost user create --help
+```
+
+will successively list all the categories available, then the actions available in the `user` category, then the usage of the action `user create`. You might notice that the YunoHost command tree is built with a structure similar to the YunoHost admin pages.
