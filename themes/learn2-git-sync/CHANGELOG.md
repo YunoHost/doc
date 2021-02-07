@@ -1,8 +1,26 @@
+# v1.6.2
+## 01/26/2021
+
+1. [](#improved)
+    * Updated theme blueprints for Grav 1.7
+
+# v1.6.1
+## 01/15/2021
+
+1. [](#new)
+    * GoogleSlides shortcode updated to handle double `_` characters in URL (thanks @GeorgesPapas)
+
+# v1.6.0
+## 01/05/2021
+
+1. [](#new)
+    * Initial NextGen Editor support for GoogleSlides, H5P and PDF shortcodes
+
 # v1.5.9
 ## 05/19/2020
 
 1. [](#improved)
-    * Updated inherited theme file paths for multisite compatibility (thanks to @tituspijean for the PR!)
+    * Updated inherited theme file paths for multisite compatibility (thanks to @tituspijean for the PR and @mahagr for the debugging!)
 
 # v1.5.8
 ## 12/05/2019

@@ -8,7 +8,7 @@
     	<div id="body-inner">
     		<h1>{{ 'PLUGIN_ERROR.ERROR'|t }} {{ header.http_response_code }}</h1>
 
-            {{ page.content }}
+            {{ page.content|raw }}
 
 		</div>
     </div>

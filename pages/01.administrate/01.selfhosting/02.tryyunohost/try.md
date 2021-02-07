@@ -11,13 +11,14 @@ routes:
 
 [center]
 [columns]
-[<i class="fa fa-user"></i> User interface](https://demo.yunohost.org/?target=_blank&classes=btn,btn-lg,btn-success)  
+[[fa=user /] User interface](https://demo.yunohost.org/?target=_blank&classes=btn,btn-lg,btn-success)  
 Username: demo  
 Password: demo
 
-[<i class="fa fa-user"></i> Administration interface](https://demo.yunohost.org/yunohost/admin?target=_blank&classes=btn,btn-lg,btn-primary)  
-Password: demo</p>
+[[fa=cog /] Administration interface](https://demo.yunohost.org/yunohost/admin/?target=_blank&classes=btn,btn-lg,btn-primary)  
+Password: demo
+
 [/columns]
 [/center]
 
-!!! **Demo server gracefully provided by [Gitoyen](https://www.gitoyen.net?target=_blank)**
+!!!! **Demo server gracefully provided by [Gitoyen](https://www.gitoyen.net?target=_blank) [fa=heart /]**

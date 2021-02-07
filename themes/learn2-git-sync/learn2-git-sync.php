@@ -17,9 +17,27 @@ class Learn2GitSync extends Learn2
         return [
             'onTwigInitialized' => ['onTwigInitialized', 0],
             'onThemeInitialized' => ['onThemeInitialized', 0],
+            'onShortcodeHandlers' => ['onShortcodeHandlers', 0],
             'onTwigSiteVariables' => ['onTwigSiteVariables', 0],
-            'onTNTSearchIndex' => ['onTNTSearchIndex', 0]
+            'onTNTSearchIndex' => ['onTNTSearchIndex', 0],
+            'registerNextGenEditorPlugin' => ['registerNextGenEditorPluginShortcodes', 0]
         ];
+    }
+
+    public function onShortcodeHandlers()
+    {
+        $this->grav['shortcode']->registerAllShortcodes('user://themes/learn2-git-sync/shortcodes');
+    }
+
+    public function registerNextGenEditorPluginShortcodes($event) {
+        $plugins = $event['plugins'];
+
+        $plugins['js'][] = 'user://themes/learn2-git-sync/nextgen-editor/shortcodes/googleslides.js';
+        $plugins['js'][] = 'user://themes/learn2-git-sync/nextgen-editor/shortcodes/h5p.js';
+        $plugins['js'][] = 'user://themes/learn2-git-sync/nextgen-editor/shortcodes/pdf.js';
+
+        $event['plugins']  = $plugins;
+        return $event;
     }
 
     public function onTwigSiteVariables()

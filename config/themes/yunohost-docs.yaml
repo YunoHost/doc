@@ -1,11 +1,17 @@
+streams:
+  schemes:
+    theme:
+      type: ReadOnlyStream
+      prefixes:
+        '': [user/themes/yunohost-docs, user/themes/learn4]
 enabled: true
 production-mode: false
 grid-size: grid-xl
 github:
   note: false
   link: true
-  tree: https://github.com/yunohost/doc/blob/grav/
-  commits: https://github.com/yunohost/doc/commits/grav/
+  tree: 'https://github.com/yunohost/doc/blob/grav/'
+  commits: 'https://github.com/yunohost/doc/commits/grav/'
 spectre:
   exp: false
   icons: false
