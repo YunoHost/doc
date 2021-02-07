@@ -1,5 +1,5 @@
 .off-canvas .learn-sidebar:before {
- background: dimgrey;
+    background: none;
 }
 
 .highlightable h5:first-of-type {
@@ -92,3 +92,19 @@ img#whitelogo {
 .simplebar-content h5:first-child {
     display: none;
 }
+
+/* Sidebar */
+
+#sidebar-id {
+    background-color: white;
+}
+
+body .off-canvas .learn-sidebar a {
+    color: #364149;
+}
+
+body .off-canvas .learn-sidebar .learn-nav ul li.active > a {
+    color: black;
+    border-right: black 1px solid;
+}
+
