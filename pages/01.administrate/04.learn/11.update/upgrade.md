@@ -1,5 +1,5 @@
 ---
-title: Update the system
+title: Upgrades
 template: docs
 taxonomy:
     category: docs
