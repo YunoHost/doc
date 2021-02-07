@@ -5,9 +5,15 @@ taxonomy:
     category: docs
 routes:
   default: '/isp_box_config'
+  aliases:
+    - '/port_forwarding'
 ---
 
-Si vous vous auto-hébergez à la maison et sans VPN, il vous faut rediriger les ports de votre routeur ("machin-box"). Si vous souhaitez une explication courte de ce qu'est et pourquoi vous avez besoin de rediriger les ports, vous pouvez jeter un œil à [cette page-ci](/port_forwarding). [Cette page-là](https://craym.eu/tutoriels/utilitaires/ouvrir_les_ports_de_sa_box.html) propose également des explications détaillées sur le fonctionnement des ports, et les étapes de configuration pour différents routeurs.
+Si vous vous auto-hébergez à la maison et sans VPN, il vous faut rediriger les ports de votre routeur ("machin-box"). Le schéma ci-dessous tente d'expliquer brièvement le rôle de la redirection des ports lors de la mise en place d'un serveur à la maison.
+
+[figure caption="Illustration de l'importance de la redirection des ports"]![](image://portForwarding_fr.png)[/figure]
+
+[Cette page](https://craym.eu/tutoriels/utilitaires/ouvrir_les_ports_de_sa_box.html) propose également des explications détaillées sur le fonctionnement des ports, et les étapes de configuration pour différents routeurs
 
 ### 0. Diagnostiquer les ports ouverts
 

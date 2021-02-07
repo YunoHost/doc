@@ -9,9 +9,7 @@ routes:
 
 Applications folder are (*usually*) located in `/var/www/$appname`
 
-If an application folder is expected to get bigger because of the amount of data
-it contains, it might be relevant to move it to another storage (like an
-external hard drive).
+If an application folder is expected to get bigger because of the amount of data it contains, it might be relevant to move it to another storage (like an external hard drive).
 
 Here's a summary of how to do this the application wordpress. Here, is is assumed that
 [you already mounted the external hard-drive](/external_storage).
