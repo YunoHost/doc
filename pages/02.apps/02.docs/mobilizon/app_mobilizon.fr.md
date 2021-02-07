@@ -7,7 +7,7 @@ routes:
   default: '/app_mobilizon'
 ---
 
-![logo de mobilizon](image://mobilizon_logo.svg?height=80)
+![logo de mobilizon](image://mobilizon_logo.svg?resize=,80)
 
 [![Install mobilizon with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mobilizon) [![Integration level](https://dash.yunohost.org/integration/mobilizon.svg)](https://dash.yunohost.org/appci/app/mobilizon)
 

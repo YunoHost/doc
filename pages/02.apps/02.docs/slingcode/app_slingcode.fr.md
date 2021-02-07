@@ -7,7 +7,7 @@ routes:
   default: '/app_slingcode'
 ---
 
-![logo de Slingcode](image://slingcode_logo.svg?height=80)
+![logo de Slingcode](image://slingcode_logo.svg?resize=,80)
 
 [![Install Slingcode with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=slingcode) [![Integration level](https://dash.yunohost.org/integration/slingcode.svg)](https://dash.yunohost.org/appci/app/slingcode)
 

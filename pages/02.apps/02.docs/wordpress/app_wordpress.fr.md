@@ -7,7 +7,7 @@ routes:
   default: '/app_wordpress'
 ---
 
-![logo de WordPress](image://wordpress_logo.svg?height=80)
+![logo de WordPress](image://wordpress_logo.svg?resize=,80)
 
 [![Install Wordpress with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=wordpress) [![Integration level](https://dash.yunohost.org/integration/wordpress.svg)](https://dash.yunohost.org/appci/app/wordpress)
 

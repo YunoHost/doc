@@ -7,7 +7,7 @@ routes:
   default: '/app_gogs'
 ---
 
-![logo de Gogs](image://gogs_logo.svg?height=80)
+![logo de Gogs](image://gogs_logo.svg?resize=,80)
 
 [![Installer Gogs avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gogs) [![Integration level](https://dash.yunohost.org/integration/gogs.svg)](https://dash.yunohost.org/appci/app/gogs)
 

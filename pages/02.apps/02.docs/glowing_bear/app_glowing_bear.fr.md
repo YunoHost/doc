@@ -7,7 +7,7 @@ routes:
   default: '/app_glowing_bear'
 ---
 
-![logo de Glowing Bear](image://glowing_bear_logo.svg?height=80)
+![logo de Glowing Bear](image://glowing_bear_logo.svg?resize=,80)
 
 [![Install Glowing Bear with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=glowingbear) [![Integration level](https://dash.yunohost.org/integration/glowingbear.svg)](https://dash.yunohost.org/appci/app/glowingbear)
 

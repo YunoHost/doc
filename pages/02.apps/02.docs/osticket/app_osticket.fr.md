@@ -7,7 +7,7 @@ routes:
   default: '/app_osticket'
 ---
 
-![logo de osticket](image://osticket_logo.svg?height=80)
+![logo de osticket](image://osticket_logo.svg?resize=,80)
 
 [![Install osTicket with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=osticket) [![Integration level](https://dash.yunohost.org/integration/osticket.svg)](https://dash.yunohost.org/appci/app/osticket)
 

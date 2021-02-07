@@ -7,7 +7,7 @@ routes:
   default: '/app_anarchism'
 ---
 
-![Anarchism's logo](image://anarchism_logo.svg?height=80)
+![Anarchism's logo](image://anarchism_logo.svg?resize=,80)
 
 [![Install anarchism with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=anarchism) [![Integration level](https://dash.yunohost.org/integration/anarchism.svg)](https://dash.yunohost.org/appci/app/anarchism)
 
