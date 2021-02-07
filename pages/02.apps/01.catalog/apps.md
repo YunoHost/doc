@@ -101,7 +101,7 @@ Custom CSS for this page
     font-weight: 700;
     line-height: 1.1;
     color: black;
-    padding: 15px;
+    padding: 1rem 1rem;
     padding-bottom: 0;
 }
 .app-title .label {
@@ -119,7 +119,7 @@ Custom CSS for this page
 .app-descr {
     height:100px;
     overflow: hidden;
-    padding: 0 15px;
+    padding: 0.5rem 1rem;
 }
 
 .app-footer {
@@ -178,51 +178,21 @@ Custom CSS for this page
 {% endif %}
 {% set description = manifest.description[descr_lang] %}
 
-{% set category_display_name = None %}
-{% for category in categories %}
-   {% if category.id == infos.category %}
-   {% set category_display_name = category.title.en %}
-   {% endif %}
+<div class="app-card_{{app_id}} app-card panel panel-default">
+<div class="app-title">{{ manifest.name }} <span class="label label-default">{{infos.category}}<span></div>
+<div class="app-descr">{{ description }}</div>
+<div class="app-footer">
+<div class="app-buttons btn-group" role="group">
+
+<a href="{{infos.url}}" target="_BLANK" type="button" class="btn btn-default col-sm-4"> <i class="fa fa-code"></i> Code </a>
+<a href="fixme" target="_BLANK" type="button" class="btn btn-default col-sm-4"> <i class="fa fa-book"></i> Doc </a>
+<a href="https://install-app.yunohost.org/?app={{app_id}}" target="_BLANK" type="button" class="btn btn-success col-sm-4 active"> <i class="fa fa-plus"></i> Install </a>
+
+</div>
+</div>
+</div>
 {% endfor %}
 
-[div class="app-card_{{app_id}} app-card panel panel-default"]
-[div class="app-title"]{{ manifest.name }} [span class="label label-default"]category_display_name [/label] [/div]
-[div class="app-descr"]{{ description }}[/div]
-[div class="app-footer"]
-[div class="app-buttons btn-group" role="group"]
-
-[div class="btn btn-default col-sm-4"] [[fa=code /] Code](fixme) [/div]
-[div class="btn btn-default col-sm-4"] [[fa=book /] Doc](/fixme) [/div]
-[div class="btn btn-success col-sm-4"] [[fa=plus /] Install](https://install-app.yunohost.org/?app={{app_id}}) [/div]
-
-[/div]
-[/div]
-[/div]
-{% endfor %}
-
-
-<!--
-App card template
--->
-
-<script type="text/template" id="app-template2">
-    <div class="app-card_{app_id} app-card panel panel-default" data-quality="{app_quality}">
-
-        <div class="app-title">{app_name}</div>
-        <div class="app-descr">{app_description}</div>
-        <div class="app-footer">
-            <div class="app-maintainer">
-                <span class="glyphicon glyphicon-refresh"></span> {app_update} -
-                <span title="{maintained_help}" class="{maintained_state}"><span class="glyphicon glyphicon-{maintained_icon}"></span> {app_maintainer}</span>
-            </div>
-            <div class="app-buttons btn-group" role="group">
-                <a href="{app_git}" target="_BLANK" type="button" class="btn btn-default col-sm-4"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Code</a>
-                <a href="#/app_{app_id}" target="_BLANK" type="button" class="btn btn-default col-sm-4"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Doc</a>
-                <a href="https://install-app.yunohost.org/?app={app_id}" target="_BLANK" type="button" class="btn btn-{app_install_css_style} col-sm-4 active"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Install</a>
-            </div>
-       </div>
-    </div>
-</script>
 
 <!--
 Javascript helpers
