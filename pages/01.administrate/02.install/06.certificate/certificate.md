@@ -23,7 +23,8 @@ To avoid this confusion, it's possible to get a certificate signed a known autho
 
 Before attempting to install a Let's Encrypt certificate, you should make sure that your DNS is correctly configured (your.domain.tld should point to your server's IP) and that your domain is accessible through HTTP from outside your local network (i.e. at least port 80 should be forwarded to your server).
 
-#### From the web administration interface
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="From the web interface"]
 
 Go to the 'Domain' part of the admin interface, then in the section dedicated to your.domain.tld. You should find a 'SSL certificate' button:
 
@@ -41,7 +42,8 @@ Once the install is made, you can check that the certificate is live via your br
 
 ![](image://certificate-signed-by-LE.png)
 
-#### From the command line interface 
+[/ui-tab]
+[ui-tab title="From the command line"]
 
 Connect to your server through SSH.
 
@@ -65,6 +67,9 @@ Success! Successfully installed Let's Encrypt certificate for domain DOMAIN.TLD!
 ```
 
 Once this is done, you can check that the certificate is live via your browser by going to your domain in HTTPS. The certificate will automatically be renewed every three months.
+
+[/ui-tab]
+[/ui-tabs]
 
 ##### Troubleshooting
 
