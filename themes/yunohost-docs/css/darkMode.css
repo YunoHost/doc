@@ -151,3 +151,13 @@ body.dark-mode .success {
     background-color: rgb(25, 44, 19);
     color: rgb(122, 197, 122);
 }
+
+#ynhlogo {
+    filter: invert(1);
+}
+
+/* Give a gray background to the white logo*/
+img#whitelogo {
+    background-color: unset;
+    padding: 0;
+}

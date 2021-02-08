@@ -7,7 +7,7 @@ routes:
   default: '/whatsyunohost'
 ---
 
-![YunoHost logo](image://YunoHost_logo_vertical.png?resize=400)
+![YunoHost logo](image://YunoHost_logo_vertical.png?resize=400&id=ynhlogo)
 
 واي يونوهوست YunoHost هو **نظام لتشغيل الخوادم** صُمِّم لتسهيل الإستضافة الذاتية لخدمات الإنترنت.
 هو مُرتكز و منسجم كافة الإنسجام مع توزيعة <a href="https://debian.org">غنو/لينكس ديبيان</a>.
