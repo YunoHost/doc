@@ -21,20 +21,8 @@ Search bar
 -->
 
 <div class="input-group">
-    <span id="basic-addon1" class="input-group-addon" ><span class="glyphicon glyphicon-search"></span></span>
+    <span class="input-group-addon"><i class="fa fa-search"></i></span>
     <input id="filter-app-cards" type="text" class="form-control"  placeholder="Search for apps..." aria-describedby="basic-addon1"/>
-    <div class="input-group-btn">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span id="current-quality-filter" data-filter="decent">Only decent quality apps</span> <span class="caret"></span>
-        </button>
-
-        <ul class="dropdown-menu" style="display: none;">
-            <li><a href="#" data-quality-filter="high">Only high quality apps</a></li>
-            <li><a href="#" data-quality-filter="decent">Only decent quality apps</a></li>
-            <li><a href="#" data-quality-filter="working">Only working apps</a></li>
-            <li><a href="#" data-quality-filter="none">All apps</a></li>
-        </ul>
-    </div>
 </div>
 <br />
 
@@ -46,9 +34,9 @@ Disclaimers
 
 ! Applications flagged as <span class="label label-warning label-as-badge">low quality</span> may be working, but they may not respect good packaging practices or lack integration of some features like backup/restore or single authentication. Be cautious when installing them.
 
-!! Applications flagged as <span class="label label-danger label-as-badge">not working</span> are known to be broken and/or are still in development. **Do not install them** in a production environment!
+<div id="app-cards-list" class="app-cards-list">
 
-<div id="app-cards-list" class="app-cards-list"></div>
+</div>
 
 ! If you don't find the app you are looking for, you can try to look for a appname_ynh repository on GitHub or on the internet, or add it to the <a href="/apps_wishlist">apps wishlist</a>.
 
@@ -57,10 +45,6 @@ Custom CSS for this page
 -->
 
 <style>
-#wrapper {
-   max-width: 1100px;
-}
-
 /*=================================================
  Search bar
 =================================================*/
