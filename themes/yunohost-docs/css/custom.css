@@ -227,6 +227,10 @@ body .off-canvas .learn-sidebar .searchbox input {
     color: rgb(78, 78, 78);
 }
 
+body #top-bar #breadcrumbs > span, body #top-bar .progress {
+    display: none;
+}
+
 /*
 ###############################################################################
   Style sheet for the cards
