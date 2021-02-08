@@ -7,6 +7,8 @@ routes:
   default: '/write_documentation'
 ---
 
+! This page is outdated and should be reworked
+
 ## Sur le site
 
 Ce site permet d’éditer le contenu directement en ligne.

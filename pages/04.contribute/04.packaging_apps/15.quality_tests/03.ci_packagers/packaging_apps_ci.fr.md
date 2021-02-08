@@ -7,6 +7,8 @@ routes:
   default: '/packaging_apps_ci'
 ---
 
+! This page is outdated and should be reworked
+
 Un serveur d'intégration continue est disponible pour tout packager souhaitant tester une application avec [Package_check](https://github.com/YunoHost/package_check).
 
 [ci-apps-dev](https://ci-apps-dev.yunohost.org?classes=btn,btn-lg,btn-primary)

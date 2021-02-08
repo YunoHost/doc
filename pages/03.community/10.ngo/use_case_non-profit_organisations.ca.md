@@ -5,19 +5,9 @@ taxonomy:
     category: docs
 routes:
   default: '/use_case_non-profit_organisations'
+page-toc:
+  active: true
 ---
-
-## Taula de continguts
-* [Introducció](#introduction)
-* [Qui](#who)
-* [Què](#what)
-* [Quan](#when)
-* [On](#where)
-* [Per què](#why)
-* [Com](#how)
-* [Conclusió](#conclusion)
-
-## Introducció
 
 L'objectiu d'aquest document és presentar un cas d'ús específic de [YunoHost](https://yunohost.org) per a organitzacions sense ànim de lucre.
 
