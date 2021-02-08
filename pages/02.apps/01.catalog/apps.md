@@ -53,10 +53,12 @@ Disclaimers
 {% endif %}
 {{ infos.name }} 
 <span class="label label-default">{{infos.category}}</span>
-{% if infos.level <= 0 %}
+{% if infos.broken %}
 <span class="label label-error">broken</span>
-{% elif infos.bad_quality %}
+{% else %}
+{% if infos.bad_quality %}
 <span class="label label-warning">low quality</span>
+{% endif %}
 {% endif %}
 </div>
 <div class="app-descr">{{ infos.description[descr_lang] }}</div>
@@ -203,7 +205,7 @@ $(document).ready(function () {
             // we look for the name of the app (h3) and try to find the user input
             // + we check this app match the current quality filter
             var text = $(this).find('.app-title').text().toLowerCase() + " " + $(this).find('.app-descr').text().toLowerCase();
-            if (text.indexOf(user_input_in_search_field) >= 0 && $(this).data("quality").indexOf(current_quality_filter) >= 0)
+            if (text.indexOf(user_input_in_search_field) >= 0)
             {
                 $(this).show();
             }
