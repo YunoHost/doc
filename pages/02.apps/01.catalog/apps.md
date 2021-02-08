@@ -10,30 +10,18 @@ process:
     twig: true
 ---
 
-<span class="javascriptDisclaimer">
+<div class="javascriptDisclaimer">
 This page requires JavaScript enabled to display properly :s.
-<br/>
-<br/>
-</span>
-
-<!--
-Search bar
--->
+</div>
 
 <div class="input-group">
-    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+    <span id="filter-app-icon" class="input-group-addon"><i class="fa fa-search"></i></span>
     <input id="filter-app-cards" type="text" class="form-control"  placeholder="Search for apps..." aria-describedby="basic-addon1"/>
 </div>
-<br />
-
-<!--
-Disclaimers
--->
 
 !!! The application packaging team will welcome your feedback! If you install an app and find issues or possible improvements, do not hesitate to contribute by reporting your issues directly on the corresponding code repositories.
 
 ! Applications flagged as <span class="label label-warning label-as-badge">low quality</span> may be working, but they may not respect good packaging practices or lack integration of some features like backup/restore or single authentication. Be cautious when installing them.
-
 
 {% set catalog = read_file('/var/www/app_yunohost/apps/builds/default/doc_catalog/apps.json')|json_decode(true) %}
 
@@ -85,6 +73,11 @@ Custom CSS for this page
 /*=================================================
  Search bar
 =================================================*/
+#filter-app-icon {
+    padding: 6px 12px;
+    margin-right: -2px;
+    background-color: #f0f0f0;
+}
 #filter-app-cards, #app-cards-list {
     width:100%;
 }
