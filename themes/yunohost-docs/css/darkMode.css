@@ -36,14 +36,6 @@ body.dark-mode .label.label-secondary {
   background-color:#3f4755
 }
 
-body.dark-mode .btn,body.dark-mode .button {
-  background:#171b21
-}
-
-body.dark-mode .btn:focus,body.dark-mode .btn:hover,body.dark-mode .button:focus,body.dark-mode .button:hover {
-  background:#111418
-}
-
 body.dark-mode .pagination li {
   border-color:#3f4755;
   background:#111418
@@ -66,12 +58,7 @@ body.dark-mode .form-input,body.dark-mode .search-input,body.dark-mode [data-gra
 }
 
 body.dark-mode img {
-  filter:brightness(0.85) contrast(1.2)}.dark-mode-switcher {
-  padding-left:5px !important
-}
-
-#header,.btn,.button {
-  transition:none !important
+  filter:brightness(0.85) contrast(1.2)
 }
 
 
