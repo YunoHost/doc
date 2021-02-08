@@ -66,7 +66,7 @@ Disclaimers
 <div class="app-buttons btn-group" role="group">
 
 <a href="{{infos.url}}" target="_BLANK" type="button" class="btn btn-default col-sm-4"> <i class="fa fa-code"></i> Code </a>
-<a href="fixme" target="_BLANK" type="button" class="btn btn-default col-sm-4"> <i class="fa fa-book"></i> Doc </a>
+<a href="app_{{app_id}}" target="_BLANK" type="button" class="btn btn-default col-sm-4"> <i class="fa fa-book"></i> Doc </a>
 <a href="https://install-app.yunohost.org/?app={{app_id}}" target="_BLANK" type="button" class="btn btn-{% if infos.bad_quality %}error{% else %}success{% endif %} col-sm-4 active"> <i class="fa fa-plus"></i> Install </a>
 
 </div>
@@ -88,7 +88,6 @@ Custom CSS for this page
 #filter-app-cards, #app-cards-list {
     width:100%;
 }
-/*===============================================*/
 
 /*=================================================
  Force return space after card list
@@ -98,24 +97,23 @@ Custom CSS for this page
     display:block;
     clear: both;
 }
-/*===============================================*/
 
 /*=================================================
  App card
 =================================================*/
 
-.app-card {
-    margin-bottom:20px;
-    width:31.2%;
+#app-cards-list .app-card {
+    margin-bottom:30px;
+    width:28%;
     float:left;
     min-height: 1px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
     border-radius: 3px;
     position: relative;
     height: 230px;
 }
-.app-title {
+#app-cards-list .app-title {
     margin-top: 0;
     margin-bottom: 5px;
     font-size: 1.2em;
@@ -125,7 +123,7 @@ Custom CSS for this page
     padding: 1rem 1rem;
     padding-bottom: 0;
 }
-.app-title .label {
+#app-cards-list .app-title .label {
     font-size: 0.5em;
     display: inline-block;
     vertical-align: middle;
@@ -133,52 +131,37 @@ Custom CSS for this page
     padding-bottom: 0.3em;
 }
 
-.label-epic {
-    background-color: darkorchid;
-}
-
-.app-descr {
+#app-cards-list .app-descr {
     height:120px;
     overflow: hidden;
     padding: 0.2rem 1rem;
 }
 
-.app-footer {
+#app-cards-list .app-footer {
    width:100%;
    position: absolute;
    bottom: 0;
 }
 
-.app-maintainer {
-    font-size: 0.7em;
-    text-align: right;
-    margin-right: 5px;
-}
-
-.app-card .unmaintained {
-   color: #e0aa33;
-}
-
 /*===============================================
  App buttons
 =================================================*/
-.app-buttons {
+#app-cards-list .app-buttons {
+    border-top: 0.05rem solid #ddd;
     width:100%;
 }
-.app-buttons > .btn {
-    border-bottom:0;
+#app-cards-list .app-buttons > .btn {
+    border: 0;
     font-size: 0.9em;
     line-height: 1.58;
 }
-.app-buttons > .btn:first-child {
-    border-left:0;
-    border-top-left-radius:0;
+
+#app-cards-list .app-buttons > .btn-default {
+    color: #222;
 }
-.app-buttons > .btn:last-child {
-    border-right:0;
-    border-top-right-radius:0;
-    margin-left: 0px;
-    width: 33.6%;
+
+#app-cards-list .app-buttons > .btn:first-child {
+    border-right: 0.1rem solid #ddd;
 }
 
 /*===============================================*/
