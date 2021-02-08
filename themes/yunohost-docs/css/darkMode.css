@@ -152,12 +152,12 @@ body.dark-mode .notices.green {
     color: rgb(122, 197, 122);
 }
 
-#ynhlogo {
+body.dark-mode #ynhlogo {
     filter: invert(1);
 }
 
 /* Give a gray background to the white logo*/
-img#whitelogo {
+body.dark-mode img#whitelogo {
     background-color: unset;
     padding: 0;
 }
