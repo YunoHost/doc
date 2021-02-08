@@ -2,15 +2,6 @@
     background: none;
 }
 
-.highlightable h5:first-of-type {
- margin-top: 2rem;
-}
-
-.highlightable h5 {
- margin-top: 1rem;
- color: #333;
-}
-
 #chapter {
  max-width: 80%;
 }
@@ -112,11 +103,6 @@ h1, h2, h3, h4, h5, h6 {
    border-top: 1px solid #ddd;
    padding: 0.8em 0;
    margin: 0;
-}
-
-/* Hide home page in menu */
-.simplebar-content h5:first-child {
-    display: none;
 }
 
 @font-face {

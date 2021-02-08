@@ -5,6 +5,7 @@ taxonomy:
     category: docs
 routes:
   default: '/docs'
+visible: false
 ---
 
 ! This page is obsolete and should be reworked
