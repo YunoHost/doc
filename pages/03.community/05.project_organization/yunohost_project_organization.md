@@ -7,6 +7,8 @@ routes:
   default: '/yunohost_project_organization'
 ---
 
+! This page is outdated and should be reworked
+
 ## Document objective
 
 This document aims at allowing contributors to feel legitimate in contributing to the YunoHost project together with collective feedback.

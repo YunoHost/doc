@@ -7,15 +7,10 @@ routes:
   default: '/packaging_apps_guidelines'
 ---
 
-<div class="alert alert-danger">
-<b>
-Cette page est en cours d'élaboration. Tant que cet avertissement n'est pas enlevé. Considérez ces informations comme potentiellement fausse.
-Le nom YEP n'est à priori pas définitif, ni les niveaux, ni les bonnes pratiques en elle-même.
-</b>
-</div>
-
 ### Introduction
 Ce document a pour but de lister les différentes bonnes pratiques concernant la création de paquet d'application YunoHost.
+
+!!! This page is outdated and should be reworked
 
 Chaque bonne pratique est numérotée avec un numéro suffixé par les lettres YEP (YunoHost Enhancement Proposals), ceci afin de pouvoir y faire référence facilement dans les outils d'analyse automatique de paquet ([package checker](https://github.com/YunoHost/package_check), [package linter](https://github.com/YunoHost/package_linter)), mais également lors des revues de code.
 

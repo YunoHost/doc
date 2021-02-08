@@ -7,6 +7,8 @@ routes:
   default: '/docs'
 ---
 
+! This page is obsolete and should be reworked
+
 La documentation de YunoHost s’articule autour de deux sections :
 
 [[fa=fa-lock /] Guide de l’administrateur](/administrate?classes=btn,btn-lg,btn-primary)  

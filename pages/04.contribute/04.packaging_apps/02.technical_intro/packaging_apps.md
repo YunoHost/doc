@@ -11,6 +11,8 @@ routes:
 
 The purpose of this document is to teach you how to package an application for YunoHost.
 
+! This page is outdated and should be reworked
+
 ### Requirements
 To package an application, here are the requirements:
 * An account on a Git server (e.g. [GitHub](https://github.com/)) to publish the application;
@@ -56,37 +58,6 @@ Take a look at the [Nextcloud package](https://github.com/YunoHost-Apps/nextclou
 
 ### Helpers
 [div class="btn btn-lg btn-default"] [Helpers](/packaging_apps_helpers) [/div]
-
-### Registering a log file
-
-In a lot of case, you might want to register a log file created by your app, to make it available in the webadmin. To register a log, you can create a reference file `/var/log/yunohost/categories/app/APPNAME.yml`.
-
-You can specify a start date by starting the file name with the date formatted as `YYYYMMDD-HHMMSS`.
-
-Example of yml metadata log file:
-```bash
-log_path: /path/to/your/log/file.log
-```
-
-If you want display some context info, you can add:
-```bash
-extra:
-  env:
-    args1: value1
-    args2: value2
-    args3: value3
-```
-
-You can attach the log to an app, domain, service or user like this :
-```bash
-related_to:
-    - ['app', 'APPNAME']
-    - ['service', 'SERVICE1']
-    - ['service', 'SERVICE2']
-    - ['domain', 'DOMAIN.TLD']
-```
-
-This will be used to filter logs and display all log related to an entity like a user, a domain, an app or a service.
 
 ### Test it!
 In order to test your package, you can execute your script standalone as `admin` (do not forget to append required arguments):

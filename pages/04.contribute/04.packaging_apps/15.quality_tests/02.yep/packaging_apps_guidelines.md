@@ -7,15 +7,10 @@ routes:
   default: '/packaging_apps_guidelines'
 ---
 
-<div class="alert alert-danger">
-<b>
-This page is under development. As long as this warning is not removed. Consider this information as potentially false.
-The name YEP is not a priori definitive, neither the levels nor the good practices in itself.
-</b>
-</div>
-
 ### Introduction
 The purpose of this document is to list the various best practices concerning the creation of YunoHost application packages.
+
+!!! This page is outdated and should be reworked
 
 Each good practice is numbered with a number suffixed by the letters YEP (YunoHost Enhancement Proposals), so that it can be easily referenced in the ([package checker](https://github.com/YunoHost/package_check) and [package linter](https://github.com/YunoHost/package_linter)) tools, but also during the reviews of code.
 

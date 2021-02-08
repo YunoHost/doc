@@ -11,6 +11,8 @@ routes:
 
 Ce document a pour but de vous apprendre à packager une application pour YunoHost.
 
+! This page is outdated and should be reworked
+
 ### Prérequis
 Pour packager une application, voici les prérequis :
 * Un compte sur un serveur Git comme [GitHub](https://github.com/) pour pouvoir ensuite publier l’application ;
@@ -53,36 +55,6 @@ Comme les instances de YunoHost possèdent une architecture unifiée, vous serez
 
 ### Commandes pratiques
 [div class="btn btn-lg btn-default"] [Commandes pratiques](/packaging_apps_helpers) [/div]
-
-### Référencement des logs
-Dans de nombreuses situations, vous pouvez vouloir indexer un fichier de log pour qu'il soit affiché dans la webadmin. Pour indexer un log, il faut créer un fichier d'indexation dans `/var/log/yunohost/categories/app/APPNAME.yml`.
-
-Il est possible de spécifier la date de début en commençant le nom de fichier par la date `YYYYMMDD-HHMMSS`.
-
-Exemple de fichier de log d'indexation :
-```bash
-log_path: /chemin/vers/le/fichier.log
-```
-
-Il est possible d'afficher des infos complémentaires, la variable env sera affichée dans la partie "Contexte" :
-```bash
-extra:
-  env:
-    args1: value1
-    args2: value2
-    args3: value3
-```
-
-Il est possible de rattacher le log à une application précise et/ou un service, un nom de domaine, une personne :
-```bash
-related_to:
-    - ['app', 'APPNAME']
-    - ['service', 'SERVICE1']
-    - ['service', 'SERVICE2']
-    - ['domain', 'DOMAIN.TLD']
-```
-
-Ces informations seront utilisées pour permettre de filtrer les logs en relation avec une de ces entités application, service, domaine, personne.
 
 
 ### Améliorer la qualité du paquet d’installation
