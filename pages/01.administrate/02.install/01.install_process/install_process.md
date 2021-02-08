@@ -25,6 +25,7 @@ routes:
     - '/plug_and_boot'
     - '/burn_or_copy_iso'
     - '/boot_and_graphical_install'
+    - '/postinstall'
 ---
 {% set arm, at_home, regular, rpi2plus, rpi1, rpi0, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, internetcube, docker = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
 {% set hardware = uri.param('hardware')  %}
@@ -81,10 +82,6 @@ Select the hardware on which you want install YunoHost :
 
 [div class="flex-child hardware{%if vps_debian or vps_ynh %} active{% endif %}"]
 [[figure caption="Remote server"]![](image://vps.png?height=75)[/figure]](/install_process/hardware:vps_debian)
-[/div]
-
-[div class="flex-child hardware{%if docker %} active{% endif %}"]
-[[figure caption="(Non-official!) Docker"]![](image://docker.png?height=75)[/figure]](/install_process/hardware:docker)
 [/div]
 
 [/div]
