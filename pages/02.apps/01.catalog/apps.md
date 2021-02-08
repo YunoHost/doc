@@ -63,7 +63,7 @@ Disclaimers
 
 <a href="{{infos.url}}" target="_BLANK" type="button" class="btn btn-default col-sm-4"> <i class="fa fa-code"></i> Code </a>
 <a href="fixme" target="_BLANK" type="button" class="btn btn-default col-sm-4"> <i class="fa fa-book"></i> Doc </a>
-<a href="https://install-app.yunohost.org/?app={{app_id}}" target="_BLANK" type="button" class="btn btn-success col-sm-4 active"> <i class="fa fa-plus"></i> Install </a>
+<a href="https://install-app.yunohost.org/?app={{app_id}}" target="_BLANK" type="button" class="btn btn-{% if infos.bad_quality %}warning{% else %}success{% endif %} col-sm-4 active"> <i class="fa fa-plus"></i> Install </a>
 
 </div>
 </div>
