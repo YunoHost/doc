@@ -88,15 +88,3 @@ Vous pouvez louer un serveur privé virtuel ou une machine dédiée à des hébe
       </tr>
     </tbody>
 </table>
-
-<style>
-.danger{
-  background-color: #f2dede;
-}
-.warning {
-  background-color: #fcf8e3;
-}
-.success {
-  background-color: #dff0d8;
-}
-</style>

@@ -88,15 +88,3 @@ Sie können einen virtuellen privaten Server oder eine dedizierte Maschine von [
       </tr>
     </tbody>
 </table>
-
-<style>
-.danger{
-  background-color: #f2dede;
-}
-.warning {
-  background-color: #fcf8e3;
-}
-.success {
-  background-color: #dff0d8;
-}
-</style>
