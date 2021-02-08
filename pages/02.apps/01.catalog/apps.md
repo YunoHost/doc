@@ -53,7 +53,9 @@ Disclaimers
 {% endif %}
 {{ infos.name }} 
 <span class="label label-default">{{infos.category}}</span>
-{% if infos.bad_quality %}
+{% if infos.level <= 0 %}
+<span class="label label-error">broken</span>
+{% elif infos.bad_quality %}
 <span class="label label-warning">low quality</span>
 {% endif %}
 </div>
@@ -63,7 +65,7 @@ Disclaimers
 
 <a href="{{infos.url}}" target="_BLANK" type="button" class="btn btn-default col-sm-4"> <i class="fa fa-code"></i> Code </a>
 <a href="fixme" target="_BLANK" type="button" class="btn btn-default col-sm-4"> <i class="fa fa-book"></i> Doc </a>
-<a href="https://install-app.yunohost.org/?app={{app_id}}" target="_BLANK" type="button" class="btn btn-{% if infos.bad_quality %}warning{% else %}success{% endif %} col-sm-4 active"> <i class="fa fa-plus"></i> Install </a>
+<a href="https://install-app.yunohost.org/?app={{app_id}}" target="_BLANK" type="button" class="btn btn-{% if infos.bad_quality %}error{% else %}success{% endif %} col-sm-4 active"> <i class="fa fa-plus"></i> Install </a>
 
 </div>
 </div>
