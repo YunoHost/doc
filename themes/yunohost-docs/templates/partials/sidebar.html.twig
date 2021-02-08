@@ -2,7 +2,7 @@
 
 <div class="learn-brand">
     <div id="header">
-        <a id="logo" href="{{ theme_config.home_url ?: base_url_absolute }}">{% include 'partials/logo.html.twig' %}</a>
+        <a id="logo" href="{{ base_url_absolute }}">{% include 'partials/logo.html.twig' %}</a>
         <div class="searchbox">
             <label for="search-by"><i class="fa fa-search"></i></label>
             <input id="search-by" type="text" placeholder="{{ 'THEME_LEARN4_SEARCH_DOCUMENTATION'|t }}"
@@ -17,24 +17,14 @@
 </div>
 <div class="learn-nav" data-simplebar>
     <div class="highlightable">
-        {% if theme_config.top_level_version %}
-            {% for slug, ver in pages.children %}
-                {{ macros.version(ver) }}
-                <ul id="{{ slug }}" class="topics">
-                {% if ver.activeChild or ver.active %}
-                    {{ macros.loop(ver, '') }}
-                {% endif %}
-                </ul>
-            {% endfor %}
-        {% else %}
-            <ul class="topics">
-                {% if theme_config.root_page %}
-                    {{ macros.loop(page.find(theme_config.root_page), '') }}
-                {% else %}
-            {{ macros.loop(pages, '') }}
-                {% endif %}
+        {% for slug, ver in pages.children.visible %}
+            {{ macros.version(ver) }}
+            <ul id="{{ slug }}" class="topics">
+            {% if ver.activeChild or ver.active %}
+                {{ macros.loop(ver, '') }}
+            {% endif %}
             </ul>
-        {% endif %}
+        {% endfor %}
         <hr />
 
         <a class="side-tools padding" href="#" data-clear-history-toggle>

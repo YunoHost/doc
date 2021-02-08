@@ -5,6 +5,7 @@ taxonomy:
     category: docs
 routes:
   default: '/docs'
+visible: false
 ---
 
 دليل واي يونوهوست YunoHost يرتكز أساسًا على ثلاثة محاور :

@@ -5,6 +5,7 @@ taxonomy:
     category: docs
 routes:
   default: '/docs'
+visible: false
 ---
 
 La documentazione di YunoHost ha 2 differenti sezioni:
