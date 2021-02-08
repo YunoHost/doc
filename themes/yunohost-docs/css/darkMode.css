@@ -128,25 +128,25 @@ body.dark-mode .success {
   background-color: #6a7964;
 }
 
-.notices.yellow {
+body.dark-mode .notices.yellow {
     border-left-color: rgb(147, 91, 12);
     background-color: rgb(49, 34, 11);
     color: rgb(238, 160, 52);
 }
 
-.notices.red {
+body.dark-mode .notices.red {
     border-left-color: rgb(137, 33, 30);
     background-color: rgb(46, 11, 11);
     color: rgb(219, 90, 86);
 }
 
-.notices.note {
+body.dark-mode .notices.note {
     border-left-color: rgb(27, 110, 134);
     background-color: rgb(19, 34, 42);
     color: rgb(75, 185, 218);
 }
 
-.notices.green {
+body.dark-mode .notices.green {
     border-left-color: rgb(52, 120, 52);
     background-color: rgb(25, 44, 19);
     color: rgb(122, 197, 122);
