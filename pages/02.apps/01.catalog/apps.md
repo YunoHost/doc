@@ -65,101 +65,6 @@ This page requires JavaScript enabled to display properly :s.
 
 ! If you don't find the app you are looking for, you can add it to the [apps wishlist](/apps_wishlist).
 
-<!--
-Custom CSS for this page
--->
-
-<style>
-/*=================================================
- Search bar
-=================================================*/
-#filter-app-icon {
-    padding: 6px 12px;
-    margin-right: -2px;
-    background-color: #f0f0f0;
-}
-#filter-app-cards, #app-cards-list {
-    width:100%;
-}
-
-/*=================================================
- Force return space after card list
-=================================================*/
-#app-cards-list:after {
-    content:'';
-    display:block;
-    clear: both;
-}
-
-/*=================================================
- App card
-=================================================*/
-
-#app-cards-list .app-card {
-    margin-bottom:30px;
-    width:28%;
-    float:left;
-    min-height: 1px;
-    margin-right: 15px;
-    margin-left: 15px;
-    border-radius: 3px;
-    position: relative;
-    height: 230px;
-}
-#app-cards-list .app-title {
-    margin-top: 0;
-    margin-bottom: 5px;
-    font-size: 1.2em;
-    font-weight: 700;
-    line-height: 1.1;
-    color: black;
-    padding: 1rem 1rem;
-    padding-bottom: 0;
-}
-#app-cards-list .app-title .label {
-    font-size: 0.5em;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0.5em 0.6em;
-    padding-bottom: 0.3em;
-}
-
-#app-cards-list .app-descr {
-    height:120px;
-    overflow: hidden;
-    padding: 0.2rem 1rem;
-}
-
-#app-cards-list .app-footer {
-   width:100%;
-   position: absolute;
-   bottom: 0;
-}
-
-/*===============================================
- App buttons
-=================================================*/
-#app-cards-list .app-buttons {
-    border-top: 0.05rem solid #ddd;
-    width:100%;
-}
-#app-cards-list .app-buttons > .btn {
-    border: 0;
-    font-size: 0.9em;
-    line-height: 1.58;
-}
-
-#app-cards-list .app-buttons > .btn-default {
-    color: #222;
-}
-
-#app-cards-list .app-buttons > .btn:first-child {
-    border-right: 0.1rem solid #ddd;
-}
-
-/*===============================================*/
-</style>
-
 
 
 <!--
@@ -192,9 +97,7 @@ $(document).ready(function () {
         });
     }
 
-    console.log("test");
     function sort() {
-        console.log("pwet");
         var sorted = $('.app-card').sort(function (a, b) {
             var level_a = Math.min(parseInt($(a).data('level')), 8);
             var level_b = Math.min(parseInt($(b).data('level')), 8);
