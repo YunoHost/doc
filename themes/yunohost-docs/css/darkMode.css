@@ -97,13 +97,28 @@ body.dark-mode .simplebar-content h5 {
    border-top: 1px solid #3f4755;
 }
 
+body.dark-mode .off-canvas .learn-sidebar .learn-nav ul.searched a {
+    color: #e8e9eb
+}
+
 body.dark-mode .off-canvas .learn-sidebar .learn-nav ul li.active > a {
     color: #a5a9af
 }
 
+body.dark-mode .off-canvas .learn-sidebar .searchbox ::placeholder {
+    color: #a5a9af
+}
+
+body.dark-mode .off-canvas .learn-sidebar .searchbox input {
+    color: #e8e9eb
+}
+
+body .off-canvas .learn-sidebar .learn-nav ul.searched .search-match a:hover, body  .off-canvas .learn-sidebar .learn-nav ul.searched .search-match a {
+    color: #666c9c;
+}
+
 body.dark-mode .off-canvas .learn-sidebar .learn-nav .read-icon, body.dark-mode .off-canvas .learn-sidebar .searchbox, body.dark-mode .off-canvas .learn-sidebar .search-options .version-chooser select,
-body.dark-mode .off-canvas .learn-sidebar a, body.dark-mode .off-canvas .learn-sidebar .learn-nav ul li a > span > b, body.dark-mode .off-canvas .learn-sidebar .learn-nav ul li a > i,
-body.dark-mode .off-canvas .learn-sidebar .learn-nav ul.searched .search-match a:hover, .off-canvas .learn-sidebar .learn-nav ul.searched .search-match a
+body.dark-mode .off-canvas .learn-sidebar a, body.dark-mode .off-canvas .learn-sidebar .learn-nav ul li a > span > b, body.dark-mode .off-canvas .learn-sidebar .learn-nav ul li a > i
 {
     color: #e8e9eb
 }
