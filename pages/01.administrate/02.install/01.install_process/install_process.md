@@ -60,12 +60,6 @@ routes:
   {% set at_home = true %}
 {% endif %}
 
-<style>
-.hardware.active {
-    border: 3px solid #5a5;
-    border-radius: 15px;
-}
-</style>
 Select the hardware on which you want install YunoHost :
 [div class="flex-container"]
 
@@ -94,7 +88,7 @@ Select the hardware on which you want install YunoHost :
 [/div]
 
 [/div]
-[div class="flex-container"]
+[div class="flex-container pt-2"]
 
 {% if rpi2plus or rpi1 or rpi0 %}
 [div class="flex-child hardware{%if rpi2plus %} active{% endif %}"]

@@ -195,6 +195,12 @@ body .off-canvas .learn-sidebar .searchbox input {
   Style sheet for the cards
 ###############################################################################
 */
+
+.hardware.active {
+    box-shadow: 0 0 15px #bbb;
+    border-radius: 5px;
+}
+
 .hardware-image #cards-list:after {
     content:'';
     display:block;
