@@ -75,7 +75,7 @@ Disclaimers
 {% endfor %}
 </div>
 
-! If you don't find the app you are looking for, you can try to look for a appname_ynh repository on GitHub or on the internet, or add it to the [apps wishlist](/apps_wishlist).
+! If you don't find the app you are looking for, you can add it to the [apps wishlist](/apps_wishlist).
 
 <!--
 Custom CSS for this page
@@ -220,8 +220,8 @@ $(document).ready(function () {
     function sort() {
         console.log("pwet");
         var sorted = $('.app-card').sort(function (a, b) {
-            var level_a = parseInt($(a).data('level'));
-            var level_b = parseInt($(b).data('level'));
+            var level_a = Math.min(parseInt($(a).data('level')), 8);
+            var level_b = Math.min(parseInt($(b).data('level')), 8);
             if (level_a > level_b)
             {
                 return -1;
