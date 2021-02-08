@@ -210,7 +210,7 @@ body .off-canvas .learn-sidebar .learn-nav ul li a > span > b {
     color: black;
 }
 
-body .off-canvas .learn-sidebar .learn-nav ul.topics > li.parent {
+body .off-canvas .learn-sidebar .learn-nav ul.topics > li.active, body .off-canvas .learn-sidebar .learn-nav ul.topics > li.parent {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
