@@ -115,11 +115,11 @@ Select the hardware on which you want install YunoHost :
 {% elseif vps_debian or vps_ynh %}
 
 [div class="flex-child hardware{%if vps_debian %} active{% endif %}"]
-[[figure caption="VPS or dedicated server with Debian 10"]![](image://vps.png?height=50)[/figure]](/install/hardware:vps_debian)
+[[figure caption="VPS or dedicated server with Debian 10"]![](image://debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
 [/div]
 
 [div class="flex-child hardware{%if vps_ynh %} active{% endif %}"]
-[[figure caption="VPS or dedicated server with YunoHost pre-installed"]![](image://vps.png?height=50)[/figure]](/install/hardware:vps_ynh)
+[[figure caption="VPS or dedicated server with YunoHost pre-installed"]![](image://logo.png?height=50)[/figure]](/install/hardware:vps_ynh)
 [/div]
 
 {% endif %}
