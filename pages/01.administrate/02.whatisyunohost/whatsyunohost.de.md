@@ -50,9 +50,7 @@ Sie können Ihre Freunde, Ihre Familie und Ihr Unternehmen sicher und problemlos
 
 Schwarz und Weiss YunoHost PNG logo by ToZz (400 × 400 px):
 
-[![](image://ynh_logo_black_300dpi.png?resize=220)](image://ynh_logo_black_300dpi.png)
-[![](image://ynh_logo_white_300dpi.png?resize=220)](image://ynh_logo_white_300dpi.png)
-
-Zum download Klicken.
+![](image://ynh_logo_black_300dpi.png?resize=220)
+![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)
 
 Licence: CC-BY-SA 4.0

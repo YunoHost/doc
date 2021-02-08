@@ -51,7 +51,7 @@ You can host your friends, your family and your company safely and with ease, bu
 
 Black and white YunoHost PNG logo by ToZz (400 × 400 px):
 
-[![](image://ynh_logo_black_300dpi.png?resize=220)](image://ynh_logo_black_300dpi.png)
-[![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)](image://ynh_logo_white_300dpi.png)
+![](image://ynh_logo_black_300dpi.png?resize=220)
+![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)
 
 Licence: CC-BY-SA 4.0

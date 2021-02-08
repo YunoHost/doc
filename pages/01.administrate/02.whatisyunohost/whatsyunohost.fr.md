@@ -54,6 +54,4 @@ Logo YunoHost noir et blanc réalisé par ToZz (400 × 400 px) :
 [![](image://ynh_logo_black_300dpi.png?resize=220)](image://ynh_logo_black_300dpi.png)
 [![](image://ynh_logo_white_300dpi.png?resize=220)](image://ynh_logo_white_300dpi.png)
 
-Cliquer pour télécharger.
-
 Licence: CC-BY-SA 4.0
