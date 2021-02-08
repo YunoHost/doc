@@ -34,11 +34,44 @@ Disclaimers
 
 ! Applications flagged as <span class="label label-warning label-as-badge">low quality</span> may be working, but they may not respect good packaging practices or lack integration of some features like backup/restore or single authentication. Be cautious when installing them.
 
+
+{% set catalog = read_file('/var/www/app_yunohost/apps/builds/default/doc_catalog/apps.json')|json_decode(true) %}
+
 <div id="app-cards-list" class="app-cards-list">
+{% for app_id, infos in catalog.apps %}
+
+{% if grav.language.getActive in infos.description %}
+    {% set descr_lang = grav.language.getActive %}
+{% else %}
+    {% set descr_lang = 'en' %}
+{% endif %}
+
+<div class="app-card_{{app_id}} app-card panel panel-default">
+<div class="app-title">
+{% if infos.good_quality %}
+<i class="fa fa-star" style="color: gold"></i>
+{% endif %}
+{{ infos.name }} 
+<span class="label label-default">{{infos.category}}</span>
+{% if infos.bad_quality %}
+<span class="label label-warning">low quality</span>
+{% endif %}
+</div>
+<div class="app-descr">{{ infos.description[descr_lang] }}</div>
+<div class="app-footer">
+<div class="app-buttons btn-group" role="group">
+
+<a href="{{infos.url}}" target="_BLANK" type="button" class="btn btn-default col-sm-4"> <i class="fa fa-code"></i> Code </a>
+<a href="fixme" target="_BLANK" type="button" class="btn btn-default col-sm-4"> <i class="fa fa-book"></i> Doc </a>
+<a href="https://install-app.yunohost.org/?app={{app_id}}" target="_BLANK" type="button" class="btn btn-success col-sm-4 active"> <i class="fa fa-plus"></i> Install </a>
 
 </div>
+</div>
+</div>
+{% endfor %}
+</div>
 
-! If you don't find the app you are looking for, you can try to look for a appname_ynh repository on GitHub or on the internet, or add it to the <a href="/apps_wishlist">apps wishlist</a>.
+! If you don't find the app you are looking for, you can try to look for a appname_ynh repository on GitHub or on the internet, or add it to the [apps wishlist](/apps_wishlist).
 
 <!--
 Custom CSS for this page
@@ -149,35 +182,6 @@ Custom CSS for this page
 
 
 
-{% set catalog = read_file('/var/www/app_yunohost/apps/builds/default/v2/apps.json')|json_decode(true) %}
-
-
-{% for app_id, infos in catalog.apps %}
-
-{% set manifest = infos.manifest %}
-{% if grav.language.getActive in manifest.description %}
-    {% set descr_lang = grav.language.getActive %}
-{% else %}
-    {% set descr_lang = 'en' %}
-{% endif %}
-{% set description = manifest.description[descr_lang] %}
-
-<div class="app-card_{{app_id}} app-card panel panel-default">
-<div class="app-title">{{ manifest.name }} <span class="label label-default">{{infos.category}}<span></div>
-<div class="app-descr">{{ description }}</div>
-<div class="app-footer">
-<div class="app-buttons btn-group" role="group">
-
-<a href="{{infos.url}}" target="_BLANK" type="button" class="btn btn-default col-sm-4"> <i class="fa fa-code"></i> Code </a>
-<a href="fixme" target="_BLANK" type="button" class="btn btn-default col-sm-4"> <i class="fa fa-book"></i> Doc </a>
-<a href="https://install-app.yunohost.org/?app={{app_id}}" target="_BLANK" type="button" class="btn btn-success col-sm-4 active"> <i class="fa fa-plus"></i> Install </a>
-
-</div>
-</div>
-</div>
-{% endfor %}
-
-
 <!--
 Javascript helpers
 -->
@@ -186,15 +190,10 @@ Javascript helpers
 
 $(document).ready(function () {
 
-    var default_lang = "en";
-
-    // Hide warrant about states when we're using the default filter
-    $('#state-disclaimer').hide();
-    var quality_filters = "decent";
+    $(".javascriptDisclaimer").hide();
 
     function filter(){
 
-        var current_quality_filter = $('#current-quality-filter').data("filter");
         var user_input_in_search_field = $('#filter-app-cards').val().toLowerCase();
 
         $('.app-card').each(function() {
@@ -211,10 +210,6 @@ $(document).ready(function () {
                 $(this).hide();
             }
         });
-
-        // Display or hide the disclaimers depending on the current filter...
-        ((current_quality_filter == "working") || (current_quality_filter == "none")) ? $("#bad-quality-apps-disclaimer").show() : $("#bad-quality-apps-disclaimer").hide();
-        ((current_quality_filter == "none")) ? $("#broken-apps-disclaimer").show() : $("#broken-apps-disclaimer").hide();
     }
 
     //=================================================
@@ -230,47 +225,5 @@ $(document).ready(function () {
 
     filter();
 
-    //=================================================
-    // Upload apps lists
-    //=================================================
-/*
-//        // Clarify high quality state, and level if undefined or inprogress or notworking...
-//
-//        $.each(catalog, function(k, infos) {
-//            if ((infos.level === undefined) || (infos.level === 0) || (infos.state === "inprogress") || (infos.state === "notworking")) {
-//                infos.level = null;
-//            }
-//            if ((infos.high_quality === true) && (infos.level === 8)) {
-//                infos.state = "high quality";
-//            }
-//            else if ((infos.state === "working") && (infos.level !== null) && (infos.level <= 4)) {
-//                infos.state = "low quality";
-//            }
-//        });
-//
-//        // Sort apps according to their state and level...
-//
-//        catalog.sort(function(a, b){
-//            a_state = (a.state === "high quality")?4:(a.level > 4)?3:(a.state > 0)?2:1;
-//            b_state = (b.state === "high quality")?4:(b.level > 4)?3:(b.state > 0)?2:1;
-//            if (a_state < b_state || a_state == b_state && a.level < b.level || a_state == b_state && a.level == b.level && a.manifest.id > b.manifest.id) {return 1;}
-//            else if (a.manifest.id == b.manifest.id) {return 0;}
-//            return -1;
-//        });
-//
-//        // Add the card for each app
-//
-//        $.each(catalog, function(k, infos) {
-//
-//            // if (infos.maintained == false)
-//
-//            // Fill the template
-//            $('#app-cards-list').append(html);
-//            $('.app-card_'+ app_id).attr('id', 'app-card_'+ app_id);
-//            if (app_badge !== null) {
-//                 $('.app-card_'+ app_id + ' .app-title').append(' <span class="label label-'+app_badge_css_style+'">'+app_badge+'</span>');
-//            }
-//        });
-*/
 });
 </script>
