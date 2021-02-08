@@ -194,11 +194,18 @@ However, community images exist and are available on Docker Hub:
 
 
 
+{% if vps_ynh %}
+## YunoHost VPS providers
+Here are some VPS providers supporting YunoHost natively :
 
+[div class="flex-container"]
 
+[div class="flex-child"]
+[[figure caption="Alsace Réseau Neutre - FR"]![](image://vps_ynh_arn.png?height=50)[/figure]](https://vps.arn-fai.net)
+[/div]
 
-
-
+[/div]
+{% endif %}
 
 
 
