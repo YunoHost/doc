@@ -93,11 +93,11 @@ Select the hardware on which you want install YunoHost :
 [/div]
 
 [div class="flex-child hardware{%if rpi1 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 1"]![](image://raspberrypi.jpg?height=50)[/figure]](/install/hardware:rpi1)
+[[figure caption="Raspberry Pi 1"]![](image://rpi1.jpg?height=50)[/figure]](/install/hardware:rpi1)
 [/div]
 
 [div class="flex-child hardware{%if rpi0 %} active{% endif %}"]
-[[figure caption="Raspberry Pi zero"]![](image://raspberrypi.jpg?height=50)[/figure]](/install/hardware:rpi0)
+[[figure caption="Raspberry Pi zero"]![](image://rpi0.jpg?height=50)[/figure]](/install/hardware:rpi0)
 [/div]
 {% elseif arm_sup or arm_unsup or internetcube %}
 
@@ -110,7 +110,7 @@ Select the hardware on which you want install YunoHost :
 [/div]
 
 [div class="flex-child hardware{%if arm_unsup %} active{% endif %}"]
-[[figure caption="Others boards"]![](image://olinuxino.jpg?height=50)[/figure]](/install/hardware:arm_unsup)
+[[figure caption="Others boards"]![](image://odroidhc4.png?height=50)[/figure]](/install/hardware:arm_unsup)
 [/div]
 {% elseif vps_debian or vps_ynh %}
 
