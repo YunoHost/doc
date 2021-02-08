@@ -46,7 +46,7 @@ Disclaimers
     {% set descr_lang = 'en' %}
 {% endif %}
 
-<div class="app-card_{{app_id}} app-card panel panel-default">
+<div class="app-card panel panel-default" data-appid="{{ app_id }}" data-level="{{ infos.level }}">
 <div class="app-title">
 {% if infos.good_quality %}
 <i class="fa fa-star" style="color: gold"></i>
@@ -196,7 +196,7 @@ $(document).ready(function () {
 
     $(".javascriptDisclaimer").hide();
 
-    function filter(){
+    function filter() {
 
         var user_input_in_search_field = $('#filter-app-cards').val().toLowerCase();
 
@@ -216,6 +216,29 @@ $(document).ready(function () {
         });
     }
 
+    console.log("test");
+    function sort() {
+        console.log("pwet");
+        var sorted = $('.app-card').sort(function (a, b) {
+            var level_a = parseInt($(a).data('level'));
+            var level_b = parseInt($(b).data('level'));
+            if (level_a > level_b)
+            {
+                return -1;
+            }
+            else if (level_a < level_b)
+            {
+                return 1;
+            }
+            else {
+                var id_a = $(a).data('appid');
+                var id_b = $(b).data('appid');
+                return id_a > id_b ? 1 : -1;
+            }
+        });
+        $("#app-cards-list").html(sorted);
+    }
+
     //=================================================
     // Search & filter bar event
     //=================================================
@@ -227,6 +250,7 @@ $(document).ready(function () {
         filter();
     });
 
+    sort();
     filter();
 
 });
