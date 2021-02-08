@@ -12,7 +12,7 @@ page-toc:
   active: true
   depth: 2
 routes:
-  default: '/install_process'
+  default: '/install'
   aliases: 
     - '/docker'
     - '/install_iso'
