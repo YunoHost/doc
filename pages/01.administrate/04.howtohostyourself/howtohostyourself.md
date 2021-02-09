@@ -88,15 +88,3 @@ You can rent a virtual private server or a dedicated machine from [associative](
       </tr>
     </tbody>
 </table>
-
-<style>
-.danger{
-  background-color: #f2dede;
-}
-.warning {
-  background-color: #fcf8e3;
-}
-.success {
-  background-color: #dff0d8;
-}
-</style>
