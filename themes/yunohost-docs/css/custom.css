@@ -115,8 +115,11 @@ body.light-mode .off-canvas .learn-sidebar .learn-nav ul li a > span > b {
 body.light-mode .off-canvas .learn-sidebar a:hover {
   color: #111418;
 }
-body.light-mode #filter-app-icon {
+body.light-mode #filter-app-icon,
+body.light-mode #filter-app-cards {
+  color: #171b21;
   background-color: #f0f0f0;
+  border: none;
 }
 body.light-mode #app-cards-list .app-title {
   color: #242931;
@@ -299,8 +302,11 @@ body.dark-mode .off-canvas .learn-sidebar .learn-nav ul li a > span > b {
 body.dark-mode .off-canvas .learn-sidebar a:hover {
   color: #a5a9af;
 }
-body.dark-mode #filter-app-icon {
+body.dark-mode #filter-app-icon,
+body.dark-mode #filter-app-cards {
+  color: #e8e9eb;
   background-color: #111418;
+  border: none;
 }
 body.dark-mode #app-cards-list .app-title {
   color: white;

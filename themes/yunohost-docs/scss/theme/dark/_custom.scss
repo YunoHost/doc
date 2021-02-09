@@ -160,8 +160,11 @@ body.dark-mode {
    App catalog
   =================================================*/
 
-  #filter-app-icon {
+  #filter-app-icon,
+  #filter-app-cards {
+    color: $text-color;
     background-color: $card-bg-color;
+    border: none;
   }
 
   #app-cards-list .app-title {
