@@ -14,7 +14,7 @@ body.light-mode {
 
   // Main body background
   background-color: $background-color;
-  
+
   ::selection {
     background-color: $border-color;
   }
@@ -168,7 +168,7 @@ body.light-mode {
     color: $text-accent-color;
     background-color: $border-color;
   }
-  
+
   #app-cards-list .app-buttons > .btn:first-child {
     border-right: 0.1rem solid $card-bg-color;
   }
@@ -180,6 +180,23 @@ body.light-mode {
   #app-cards-list .label {
     color: $text-darker-color;
     background-color: $card-bg-color;
+  }
+
+  /*=================================================
+   Hardware image
+  =================================================*/
+
+  .hardware-image .card {
+    background-color: $background-color !important;
+  }
+
+  .hardware-image .btn-group .btn.btn-info {
+    color: $card-bg-color;
+  }
+
+  .hardware-image .btn-group .btn.btn-info:hover,
+  .btn.btn-info:focus {
+    color: $card-bg-color;
   }
 
   /*=================================================

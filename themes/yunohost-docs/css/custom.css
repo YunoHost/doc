@@ -1,3 +1,11 @@
+/*########################################
+##########################################
+    PLEASE DO NOT MODIFY THE CSS FILE    
+IF YOU WANT TO CHANGE THE CSS, DO IT IN THE
+      SCSS FILES AND "COMPILE" THEM:      
+       https://sass-lang.com/guide
+##########################################
+########################################*/
 body.light-mode {
   background-color: white;
   /*=================================================
@@ -5,6 +13,9 @@ body.light-mode {
   =================================================*/
   /*=================================================
    App catalog
+  =================================================*/
+  /*=================================================
+   Hardware image
   =================================================*/
   /*=================================================
    Other
@@ -127,6 +138,16 @@ body.light-mode #app-cards-list .label {
   color: #111418;
   background-color: #f0f0f0;
 }
+body.light-mode .hardware-image .card {
+  background-color: white !important;
+}
+body.light-mode .hardware-image .btn-group .btn.btn-info {
+  color: #f0f0f0;
+}
+body.light-mode .hardware-image .btn-group .btn.btn-info:hover,
+body.light-mode .btn.btn-info:focus {
+  color: #f0f0f0;
+}
 body.light-mode table tbody tr:nth-of-type(2n + 1) {
   background: #f0f0f0;
 }
@@ -175,6 +196,9 @@ body.dark-mode {
   =================================================*/
   /*=================================================
    App catalog
+  =================================================*/
+  /*=================================================
+   Hardware image
   =================================================*/
   /*=================================================
    Other
@@ -296,6 +320,16 @@ body.dark-mode #app-cards-list .app-card {
 body.dark-mode #app-cards-list .label {
   color: #a5a9af;
   background-color: #111418;
+}
+body.dark-mode .hardware-image .card {
+  background-color: #171b21 !important;
+}
+body.dark-mode .hardware-image .btn-group .btn.btn-info {
+  color: #111418;
+}
+body.dark-mode .hardware-image .btn-group .btn.btn-info:hover,
+body.dark-mode .btn.btn-info:focus {
+  color: #111418;
 }
 body.dark-mode table tbody tr:nth-of-type(2n + 1) {
   background: #111418;
@@ -567,14 +601,12 @@ body .off-canvas .learn-sidebar .learn-nav ul li ul li.active > a {
 }
 
 .hardware-image .btn-group .btn.btn-info {
-  color: #ffffff;
   background-color: #5bc0de;
   border-color: #46b8da;
 }
 
 .hardware-image .btn-group .btn.btn-info:hover,
 .btn.btn-info:focus {
-  color: #ffffff;
   background-color: #39b3d7;
   border-color: #269abc;
 }
