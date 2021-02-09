@@ -5,14 +5,11 @@
     </div>
   {% endif %}
 
-  {% if config.plugins.breadcrumbs.enabled %}
-    {% include 'partials/breadcrumbs.html.twig' %}
-  {% endif %}
-
   <div id="navigation">
     {% if theme_var('github.link') %}
       {% include 'partials/github-link.html.twig' %}
     {% endif %}
+    {% include 'partials/darkmodeswitcher.html.twig' %}
     {% if not progress.isFirst(page.path) %}
       <a class="nav-prev tooltip tooltip-bottom" data-tooltip="Previous Page [&larr;]" href="{{ progress.nextSibling(page.path).url }}"> <i class="fa fa-angle-left"></i></a>
     {% else %}

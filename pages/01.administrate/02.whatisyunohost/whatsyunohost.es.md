@@ -7,7 +7,7 @@ routes:
   default: '/whatsyunohost'
 ---
 
-![](image://YunoHost_logo_vertical.png?resize=400)
+![](image://YunoHost_logo_vertical.png?resize=400&id=ynhlogo)
 
 YunoHost es un **sistema operativo** que persigue simplificar la administración de un **servidor** para democratizar el [autoalojamiento](/selfhosting), asegurando que se mantiene fiable, seguro, ético y ligero. Es un proyecto de software libre copyleft mantenido exclusivamente por voluntarios. Se puede considerar técnicamente como una distribución basada en [Debian GNU/Linux](https://debian.org) y se puede instalar en [muchos tipos de hardware](/install).
 
@@ -51,9 +51,7 @@ Puedes alojar a tus amistades, tu familia y a tu compañía con facilidad y segu
 
 PNG con el logotipo de YunoHost en blanco y negro por ToZz (400 × 400 px):
 
-[![](image://ynh_logo_black_300dpi.png?resize=220)](image://ynh_logo_black_300dpi.png)
-[![](image://ynh_logo_white_300dpi.png?resize=220)](image://ynh_logo_white_300dpi.png)
-
-Clic para descargar.
+![](image://ynh_logo_black_300dpi.png?resize=220)
+![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)
 
 Licencia: CC-BY-SA 4.0
