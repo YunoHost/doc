@@ -227,9 +227,11 @@ body .off-canvas .learn-sidebar .learn-nav ul li ul li.active > a {
   App catalog
 =================================================*/
 
-#filter-app-icon {
+#filter-app-icon,
+#filter-app-cards {
   padding: 6px 12px;
   margin-right: -2px;
+  border: none;
 }
 
 #filter-app-cards,

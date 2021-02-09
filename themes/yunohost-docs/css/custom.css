@@ -86,6 +86,9 @@ body.light-mode .off-canvas .learn-sidebar .learn-brand #logo path {
 body.light-mode .simplebar-content h5 {
   border-top-color: #dddddd;
 }
+body.light-mode .off-canvas #sidebar-id {
+  border-right: 0.05rem solid #dddddd;
+}
 body.light-mode .off-canvas .learn-sidebar .learn-nav ul.searched a,
 body.light-mode .off-canvas .learn-sidebar .searchbox input {
   color: #171b21;
@@ -119,7 +122,6 @@ body.light-mode #filter-app-icon,
 body.light-mode #filter-app-cards {
   color: #171b21;
   background-color: #f0f0f0;
-  border: none;
 }
 body.light-mode #app-cards-list .app-title {
   color: #242931;
@@ -273,6 +275,9 @@ body.dark-mode .off-canvas .learn-sidebar .learn-brand #logo path {
 body.dark-mode .simplebar-content h5 {
   border-top-color: #3f4755;
 }
+body.dark-mode .off-canvas #sidebar-id {
+  border-right: 0.05rem solid #3f4755;
+}
 body.dark-mode .off-canvas .learn-sidebar .learn-nav ul.searched a,
 body.dark-mode .off-canvas .learn-sidebar .searchbox input {
   color: #e8e9eb;
@@ -306,7 +311,6 @@ body.dark-mode #filter-app-icon,
 body.dark-mode #filter-app-cards {
   color: #e8e9eb;
   background-color: #111418;
-  border: none;
 }
 body.dark-mode #app-cards-list .app-title {
   color: white;
@@ -622,9 +626,11 @@ body .off-canvas .learn-sidebar .learn-nav ul li ul li.active > a {
 /*=================================================
   App catalog
 =================================================*/
-#filter-app-icon {
+#filter-app-icon,
+#filter-app-cards {
   padding: 6px 12px;
   margin-right: -2px;
+  border: none;
 }
 
 #filter-app-cards,
