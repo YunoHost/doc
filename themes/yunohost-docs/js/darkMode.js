@@ -13,6 +13,10 @@ const currentTheme = localStorage.getItem("theme") ? localStorage.getItem("theme
 if (currentTheme == "dark" || (currentTheme == null && prefersDarkScheme)) {
     document.body.classList.add("dark-mode");
 }
+else
+{
+    document.body.classList.add("light-mode");
+}
 
 // Get all elements with switch class
 const switches = document.querySelectorAll(".dark-mode-switcher");
@@ -29,6 +33,7 @@ function darkModeSwith(event) {
 
     // Toggle the .dark-theme class
     document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("light-mode");
 
     // If the body contains the .dark-theme class...
     // Then save the choice in localStorage
