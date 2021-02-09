@@ -1,7 +1,7 @@
 # Essayer YunoHost
 
 <div class="alert alert-warning" markdown="1">
-**Note :** Cette démo peut cesser de fonctionner de temps en temps.
+**Note :** Cette démo peut cesser de fonctionner de temps en temps, mais au moins vous pouvez tester, et ça c’est vraiment chouette :)
 <br>
 
 </div>
