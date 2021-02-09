@@ -47,6 +47,9 @@ N.B. : Even if the image does not corresponds to the latest version of YunoHost,
 ###############################################################################
 */
 $(document).ready(function () {
+
+    $(".javascriptDisclaimer").hide();
+
     console.log("in load");
     $.getJSON('https://build.yunohost.org/images.json', function (images) {
         $.each(images, function(k, infos) {
