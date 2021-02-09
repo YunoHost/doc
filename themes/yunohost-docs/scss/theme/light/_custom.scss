@@ -105,6 +105,10 @@ body.light-mode {
     border-top-color: $border-color;
   }
 
+  .off-canvas #sidebar-id {
+    border-right: 0.05rem solid $border-color;
+  }
+
   // Text in the sidebar during a search
   .off-canvas .learn-sidebar .learn-nav ul.searched a,
   .off-canvas .learn-sidebar .searchbox input {
@@ -156,7 +160,6 @@ body.light-mode {
   #filter-app-cards {
     color: $text-color;
     background-color: $card-bg-color;
-    border: none;
   }
 
   #app-cards-list .app-title {
