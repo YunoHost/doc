@@ -140,6 +140,7 @@ body.light-mode #app-cards-list .label {
 }
 body.light-mode .hardware-image .card {
   background-color: white !important;
+  border-color: #dddddd;
 }
 body.light-mode .hardware-image .btn-group .btn.btn-info {
   color: #f0f0f0;
@@ -323,6 +324,7 @@ body.dark-mode #app-cards-list .label {
 }
 body.dark-mode .hardware-image .card {
   background-color: #171b21 !important;
+  border-color: #3f4755;
 }
 body.dark-mode .hardware-image .btn-group .btn.btn-info {
   color: #111418;
