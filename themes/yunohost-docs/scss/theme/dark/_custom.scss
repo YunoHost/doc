@@ -19,9 +19,6 @@ body.dark-mode {
   $warning: rgb(132, 88, 4);
   $success: rgb(51, 87, 35);
 
-  $code-bg-color: rgb(58, 58, 58);
-  $code-text-color: rgb(236, 229, 173);
-
   // Main body background
   background-color: $background-color;
 
@@ -39,12 +36,6 @@ body.dark-mode {
   // Darker blue for links
   a {
     color: $link-color;
-  }
-
-  // Dark version of code `stuff`
-  code {
-    background: $code-bg-color;
-    color: $code-text-color;
   }
 
   // Card, header and dropdown have darker background
@@ -304,5 +295,10 @@ body.dark-mode {
     border-left-color: rgb(52, 120, 52);
     background-color: rgb(25, 44, 19);
     color: rgb(122, 197, 122);
+  }
+
+  code {
+    background: rgb(58, 58, 58);
+    color: rgb(236, 229, 173);
   }
 }
