@@ -1,4 +1,5 @@
 ---
+title: Documentations
 content:
     order:
         by: basename
