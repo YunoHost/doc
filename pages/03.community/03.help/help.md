@@ -18,9 +18,9 @@ routes:
 [/center]
 
 !!! **Note:** this room is available via
-!!! - IRC (#yunohost on freenode, [using kiwiirc](https://kiwiirc.com/nextclient/?settings=7b72a0a81838360686798199ed53624f&target=blank))
-!!! - XMPP (*support@conference.yunohost.org*)
-!!! - Matrix (*#freenode_#yunohost:matrix.org*) [using Riot](https://riot.im/app/#/room/#yunohost:matrix.org?target=_blank))
+!!! - Matrix (`#freenode_#yunohost:matrix.org` [using Element](https://riot.im/app/#/room/#yunohost:matrix.org?target=_blank))
+!!! - IRC (`#yunohost` on freenode, [using kiwiirc](https://kiwiirc.com/nextclient/?settings=7b72a0a81838360686798199ed53624f&target=blank))
+!!! - XMPP (`support@conference.yunohost.org`)
 
 ## ... or ask on the forum !
 
@@ -38,5 +38,4 @@ routes:
 
 [/center]
 
-!!! Note : you can also connect to the devrooms using your favorite XMPP client, to dev@conference.yunohost.org and apps@conference.yunohost.org  
-!!! or with a Matrix client to [#freenode_#yunohost-dev:matrix.org](https://matrix.to/#/#freenode_#yunohost-dev:matrix.org)
+!!! Note : you can also connect to the dev and apps chatrooms, see [the corresponding page](/chat_rooms)

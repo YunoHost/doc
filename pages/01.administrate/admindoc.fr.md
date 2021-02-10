@@ -1,5 +1,5 @@
 ---
-title: Administrer
+title: Guide d'administration
 template: chapter
 taxonomy:
     category: docs

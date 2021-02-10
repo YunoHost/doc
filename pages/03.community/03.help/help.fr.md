@@ -7,60 +7,35 @@ routes:
   default: '/help'
 ---
 
-<h3>Connectez-vous au salon de support</h3>
+## Connectez-vous au salon de support
 
 !!! **ProTips™**
-!!! - Pas besoin de demander si vous pouvez poser une question - posez-la directement !
-!!! - *Soyez patient*, cela peut prendre plusieurs minutes avant que quelqu'un remarque vos messages.
+!!! - Don't ask to ask, just ask !
+!!! - *Be patient*, it can take a few minutes before someone sees your messages.
 
-<center>
+[center]
+<iframe src="https://kiwiirc.com/nextclient/?settings=7b72a0a81838360686798199ed53624f" style="width:100%;height:450px;border:0;display:block"></iframe>
+[/center]
 
-<iframe src="https://kiwiirc.com/nextclient/?settings=78e5074440caaa9141c9e30629f6b29d" style="width:100%;height:450px;border:0;display:block"></iframe>
+!!! **Note:** ce salon est accessible via
+!!! - Matrix (`#freenode_#yunohost:matrix.org` [en utilisant Element](https://app.element.io/#/room/#freenode_yunohost:matrix.org))
+!!! - IRC (`#yunohost` on freenode, [en utilisant Kiwiirc](https://kiwiirc.com/nextclient/?settings=7b72a0a81838360686798199ed53624f&target=blank))
+!!! - XMPP (`support@conference.yunohost.org`)
 
-</br>
-</br>
-<em>Note : ce salon est accessible via IRC (#yunohost sur freenode en utilisant <a href="https://kiwiirc.com/nextclient/?settings=78e5074440caaa9141c9e30629f6b29d">Kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, ou Matrix <small>(#freenode_#yunohost:matrix.org - <a target="_blank" href="https://app.element.io/#/room/#yunohost:matrix.org">en utilisant Element</a>)</small>.</em>
-</center>
+## ... or ask on the forum !
 
-<h3>... ou demandez sur le forum !</h3>
+[center]
+[[fa=comment /] Aller sur le forum](https://forum.yunohost.org/?target=_blank&classes=btn,btn-lg,btn-success)
+[/center]
 
-<center>
-<button id="goForum" type="button" class="btn btn-success" style="font-weight:bold;">
-            <span class="glyphicon glyphicon-comment"></span> Aller sur le forum
-          </button>
-</center>
+## You've found a bug ?
 
-<h3>Vous avez trouvé un bug ?</h3>
+!!!! Please report bugs on our bugtracker or contact the developers
 
-<center>
-<br>
-<em>Vous pouvez rapporter le bug sur le bugtracker ou contacter les développeurs</em><br><br>
-<button id="goBugtracker" type="button" class="btn btn-warning" style="font-weight:bold;">
-            <span class="glyphicon glyphicon-exclamation-sign"></span> Rapporter un bug
-          </button>
-<button id="goDevroom" type="button" class="btn btn-warning" style="font-weight:bold; margin-left:40px">
-            <span class="glyphicon glyphicon-comment"></span> Contacter les développeurs
-          </button>
-</br>
-</br>
-<em>Note : vous pouvez aussi vous connecter aux salons de dev, via votre client XMPP favori, à</br>
-dev@conference.yunohost.org et apps@conference.yunohost.org</br>
-ou bien via votre client matrix préféré, à</br>
-#freenode_#yunohost-dev:matrix.org</em>
-</center>
+[center]
 
-<script>
-document.getElementById("goForum").onclick = function() {
-    window.location.href = "https://forum.yunohost.org/latest";
-}
-document.getElementById("goBugtracker").onclick = function() {
-    window.location.href = "https://github.com/yunohost/issues/issues";
-}
-document.getElementById("goDevroom").onclick = function() {
-    window.location.href = "https://kiwiirc.com/client/irc.freenode.net/yunohost-dev";
-}
-document.getElementById("goForum").onclick = function() {
-    window.location.href = "https://forum.yunohost.org";
-}
-</script>
+[[fa=exclamation-circle /] Rapporter un bug](https://github.com/yunohost/issues/issues?target=_blank&classes=btn,btn-lg,btn-warning) [[fa=comment /] Contacter les développeur.euse.s](https://kiwiirc.com/client/irc.freenode.net/yunohost-dev?target=_blank&classes=btn,btn-lg,btn-warning)
 
+[/center]
+
+!!! Note : vous pouvez aussi vous connecter aux salons de discussions dev et apps, voir [la page correspondante](/chat_rooms)
