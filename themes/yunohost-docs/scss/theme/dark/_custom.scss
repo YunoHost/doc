@@ -1,6 +1,6 @@
 /*!
  * Dark Mode Theme
- * 
+ *
  * Inspired by Louis Charette
  * https://github.com/lcharette/website/blob/cc855a6eb29693613e5e4e1d589a17ba7faf4aa9/themes/quark-custom/css/darkMode.scss
  */
@@ -19,6 +19,9 @@ body.dark-mode {
   $warning: rgb(132, 88, 4);
   $success: rgb(51, 87, 35);
 
+  $code-bg-color: rgb(58, 58, 58);
+  $code-text-color: rgb(236, 229, 173);
+
   // Main body background
   background-color: $background-color;
 
@@ -36,6 +39,12 @@ body.dark-mode {
   // Darker blue for links
   a {
     color: $link-color;
+  }
+
+  // Dark version of code `stuff`
+  code {
+    background: $code-bg-color;
+    color: $code-text-color;
   }
 
   // Card, header and dropdown have darker background
