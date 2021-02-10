@@ -146,36 +146,36 @@ However, community images exist and are available on Docker Hub:
 
 ## Pre-requisites
 {% if regular %}
-* A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop with 512MB RAM and 15GB capacity (at least)
+* A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop with 512MB RAM and 16GB capacity (at least)
 {% elseif rpi2plus %}
-* A Raspberry Pi 2, 3 or 4 with 512MB RAM (at least)
+* A Raspberry Pi 2, 3 or 4
 {% elseif rpi1 %}
-* A Raspberry Pi 1 with 512MB RAM (at least)
+* A Raspberry Pi 1 with at least 512MB RAM
 {% elseif rpi0 %}
-* A Raspberry Pi zero with 512MB RAM (at least)
+* A Raspberry Pi zero
 {% elseif arm_sup %}
-* A VPN with a dedicated IP and a .cube file
+* A VPN with a dedicated IP and a `.cube` file
 * An Orange Pi PC+ or an Onlinuxino Lime 1 or 2
 {% elseif arm_sup %}
 * An Orange Pi PC+ or an Onlinuxino Lime 1 or 2
 {% elseif arm_unsup %}
-* An ARM board with 500MHz CPU and 512MB RAM (at least)
+* An ARM board with at least 512MB RAM
 {% elseif vps_debian %}
-* A dedicated or virtual private server with Debian 10 <small>(with **kernel >= 3.12**)</small>) preinstalled, 512MB RAM and 15GB capacity (at least)
+* A dedicated or virtual private server with Debian 10 <small>(with **kernel >= 3.12**)</small>) preinstalled, 512MB RAM and 16GB capacity (at least)
 {% elseif vps_ynh %}
-* A dedicated or virtual private server with yunohost preinstalled, 512MB RAM and 15GB capacity (at least)
+* A dedicated or virtual private server with yunohost preinstalled, 512MB RAM and 16GB capacity (at least)
 {% elseif virtualbox %}
-* An x86 computer with VirtualBox installed and enough RAM capacity to be able to run a small virtual machine with 512MB RAM and 8GB capacity (at least)
+* An x86 computer with [VirtualBox installed](https://www.virtualbox.org/wiki/Downloads) and enough RAM capacity to be able to run a small virtual machine with 512MB RAM and 8GB capacity (at least)
 {% endif %}
 {% if arm %}
 * A power supply (either an adapter or a MicroUSB cable) for your board;
-* A microSD card: 16GB capacity (at least) and Class 10 speed rate are highly recommended (like the Transcend 300x);
+* A microSD card: 16GB capacity (at least) and Class 10 speed rate are highly recommended (like the [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO));
 {% endif %}
 {% if regular %}
-* A USB stick of at least 1GB capacity OR a standard blank CD
+* A USB stick at least 1GB capacity) OR a standard blank CD
 {% endif %}
 {% if at_home %}
-* A reasonable ISP, preferably with a good and unlimited upstream bandwidth
+* A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
 {% if rpi0 %}
 * An usb OTG or a wifi dongle to connect your Raspberry Pi Zero
 {% else %}
@@ -208,9 +208,14 @@ Here are some VPS providers supporting YunoHost natively :
 {% endif %}
 
 
-
 {% if at_home %}
-## Download the YunoHost image
+## [fa=download /] Download the YunoHost image
+
+{% if virtualbox %}
+!!! If your host OS 32 bits, be sure to download the 32-bit image.
+{% endif %}
+
+
 <div class="hardware-image">
 <div id="cards-list">
 </div>
@@ -271,46 +276,34 @@ $(document).ready(function () {
 });
 </script>
 
-{% if regular %}
-!!! ***Particular case*** : If your server has no graphic card, [prepare iso for booting with serial port](https://github.com/luffah/debian-mkserialiso).
-{% elseif virtualbox %}
-!!! If your host OS is 32 bits, be sure that you downloaded the 32-bit image previously.
-{% endif %}
-
-
-
-
-
-
 
 {% if not virtualbox %}
-## Flash the YunoHost image
-Now that you downloaded the image of YunoHost, you should flash it on {% if arm %}a SD card{% else %}a USB stick or a CD.{% endif %}
 
 {% if arm %}
-![SD card](image://sdcard.jpg?resize=100,100&class=inline)
-![Micro SD card](image://micro-sd-card.jpg?resize=100,100&class=inline)
+## ![microSD card with adapter](image://sdcard_with_adapter.png?resize=100,75&class=inline) Flash the YunoHost image
 {% else %}
-![USB drive](image://usb_key.png?resize=100,100&class=inline)
-![CD](image://cd.jpg?resize=100,100&class=inline)
+## ![USB drive](image://usb_key.png?resize=100,100&class=inline) Flash the YunoHost image
 {% endif %}
+
+Now that you downloaded the image of YunoHost, you should flash it on {% if arm %}a SD card{% else %}a USB stick or a CD.{% endif %}
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommended) With Etcher"]
 
 Download <a href="https://www.balena.io/etcher/" target="_blank">Etcher</a> for your operating system and install it.
 
+Plug your USB stick, select your YunoHost image and click "Flash"
+
 ![Etcher](image://etcher.gif?resize=100%&class=inline)
 
-Plug your USB stick, select your YunoHost ISO and click "Flash"
 [/ui-tab]
 [ui-tab title="With UNetbootin"]
 
-Download <a href="https://unetbootin.github.io/">UNetbootin</a> for your operating system and install it.
+Download <a href="https://unetbootin.github.io/" target="_blank">UNetbootin</a> for your operating system and install it.
+
+Put your USB stick on, select your YunoHost image and click "OK"
 
 ![UNetbootin](image://unetbootin.png?resize=100%&class=inline)
-
-Put your USB stick on, select your YunoHost ISO and click "OK"
 
 
 [/ui-tab]
@@ -339,29 +332,22 @@ For older devices, you might want to burn a CD/DVD. The software to use depends 
 [/ui-tabs]
 
 {% else %}
+
 ## Create a new virtual machine
 
 ![](image://virtualbox_1.png?class=inline)
 
-
----
-
 ## Change network settings
 
-**NB:** You must carry out this step. If not, the install will fail. 
+! This step is important to properly expose the virtual machine on the network
 
 Go to **Settings** > **Network**:
 
-![](image://virtualbox_2.png?class=inline)
-
 * Select `Bridged adapter`
-
 * Select your interface's name:
-
     **wlan0** if you are connected wirelessly, else **eth0**.
 
----
-
+![](image://virtualbox_2.png?class=inline)
 
 {% endif %}
 
@@ -374,39 +360,39 @@ Go to **Settings** > **Network**:
 
 
 {% if arm %}
-## Power up the board
-* Plug the ethernet cable. 
-!!! Note: if you want the network configuration to be set up automatically, you have to plug your server with an Ethernet cable right behind your main router.[details="If you have confident in your skills, it's possible to connect your server through WiFi"]If you want your server to connect using WiFi, you may configure it as explained [here](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md). Alternatively, you can mount the second partition of the SD card and edit the `wpa-supplicant.conf` file prior to boot the card for the first time. On Windows you can use [Paragon ExtFS](https://www.paragon-software.com/home/extfs-windows/) for this - just don't forget to unmount everytime for changes to take effect.[/details]
+## [fa=plug /] Power up the board
+
+* Plug the ethernet cable (one side on your main router, the other on your board).
+    * For advanced users willing to configure the board to connect to WiFi instead, see for example [here](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
 * Plug the SD card
+* (Optional) You can connect a screen+keyboard directly on your board if you want to troubleshoot the boot process or if you're more comfortable to "see what happens" or want a direct access to the board.[/details]
 * Power up the board
-!!! You can also boot your server with a screen and keyboard connected to it to see how the boot process is going on.[details="See more"]This method can also be useful to troubleshoot issues and to have a direct access to it.[/details]
-* Wait a couple minutes for your server to boot and to resize automatically partition
+* Wait a couple minutes while the board autoconfigure itself during the first boot
 * Make sure that your computer (desktop/laptop) is connected to the same local network (i.e. same internet box) as your server.
 
-
 {% elseif virtualbox %}
-## Boot up the virtual machine
+## [fa=plug /] Boot up the virtual machine
 
-Start the virtual machine
+Start the virtual machine after selecting the YunoHost image.
 
 ![](image://virtualbox_2.1.png?class=inline)
-
-You will have to select your ISO image here, then you should see the YunoHost's boot screen.
 
 ! If you encounter the error "VT-x is not available", you need probably need to enable Virtualization in the BIOS of your computer.
 
 
 {% else %}
-## Boot the machine on your usb stick and run the installation
-* Plug the ethernet cable. 
-!!! Note: if you want the network configuration to be set up automatically, you have to plug your server with an Ethernet cable right behind your main router. The wireless connections are not supported yet, and if you use intermediate routers, the network ports opening will not be automatic: Your server will not be accessible externally.
-* If your server was under windows 8+, go on Advanced startup options of windows to ask windows for booting on the USB stick.
-* Boot up your server with the USB stick or a CD-ROM inserted, and select it as **bootable device** by pressing one of the following keys (hardware specific):    
-```<ESC>```, ```<F9>```, ```<F10>```, ```<F11>```, ```<F12>``` or ```<DEL>```
+## [fa=plug /] Boot the machine on your USB stick
+
+* Plug the ethernet cable (one side on your main router, the other on your server).
+* Boot up your server with the USB stick or a CD-ROM inserted, and select it as **bootable device** by pressing one of the following keys (hardware specific):
+`<ESC>`, `<F9>`, `<F10>`, `<F11>`, `<F12>` or `<DEL>`.
+    * N.B. : if the server was previously installed with a recent version of Windows (8+), you first need to tell Windows, to "actually reboot". This can be done somewhere in "Advanced startup options".
 {% endif %}
 
 {% if regular or virtualbox %}
-## Launch graphical install
+## [fa=rocket /] Launch graphical install
+
+!! N.B. : The installation will totally erase the data on the server's hard drive!
 
 You should see a screen like this:
 
@@ -416,52 +402,44 @@ You should see a screen like this:
 
   1. Select `Graphical install`
   2. Select your language, your location and your keyboard layout
-  3. If a partitioning screen appears, confirm.
-    !! This will totally erase the data on your hard drive
-  4. Let the installer do the rest, it will download required packages and install them.
-
-    ! If it fails, you probably have an Internet connection issue.  
-    ! Check that your computer is physically connected and retry.
-
-  5. It should reboot automatically.
-
-TODO what to do with default credentials info ?
+  3. The installer will then download and install all required packages.
 
 {% endif %}
 
 
 
-
-
-
-
-
 {% elseif vps_debian %}
-## Run the install script
+## [fa=rocket /] Run the install script
 
-Once you have access to a command line on your server (either directly or through SSH), you can install YunoHost by running command as root :
+Once you have access to a command line on your server (either directly or [through SSH](/ssh)), you can install YunoHost by running (as root) :
 
 ```bash
 curl https://install.yunohost.org | bash
 ```
 
-!!! If `curl` is not installed on your system, you might need to install it with `apt install curl`.  
+!!! If `curl` is not installed on your system, you might need to install it with `apt install curl`.
 !!! Otherwise, if the command does not do anything, you might want to `apt install ca-certificates`
 
----
-
-!!! **Note for advanced users concerned with the `curl|bash` approach:**  
-!!! If you strongly object to the `curl|bash` way (and similar commands) of installing software, consider reading ["Is curl|bash insecure?"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) on Sandstom's blog, and possibly [this discussion on Hacker News](https://news.ycombinator.com/item?id=12766350).
+!!! **Note for advanced users concerned with the `curl|bash` approach:** consider reading ["Is curl|bash insecure?"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) on Sandstom's blog, and possibly [this discussion on Hacker News](https://news.ycombinator.com/item?id=12766350&noprocess).
 
 {% endif %}
-## Proceed with initial configuration or restore an archive
-!!! if you are in the process of restoring a server from scratch **and** you have a yunohost-made backup, you can skip this process and follow through with the "restoring during the postinstall" step, in the [backup](/backup) page.
+
+
+## Proceed with initial configuration
+
+!!! If you are in the process of restoring a server using a YunoHost backup, you should skip this step and instead [restore the backup instead of the postinstall step](/backup#restoring-during-the-postinstall).
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
-You can perform the post-installation with the web interface by entering in your browser {%if at_home %} **`{% if internetcube %}internetcube.local{% else %}yunohost.local{% endif %}`** OR **the local IP address of your server** if it is on your local network (e.g. at home !). The address typically looks like `192.168.x.y` (see [finding your local IP](/finding_the_local_ip)){% else %} **the public IP address of your server** if your server is not on your local network. Typically, if you own a VPS, your VPS provider should have given you the IP of the server.{% endif %}
+{%if at_home %}
+In an internet browser, type **{% if internetcube %}`https://internetcube.local`{% else %}`https://yunohost.local`{% endif %}**.
 
-! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). For now, you should add a security exception to accept the current certificate. PLEASE, don't take the habit to blindly accept this kind of alert !
+!!! If this doesn't work, you can look for the **the local IP address of your server** (see [finding your local IP](/finding_the_local_ip)). The address typically looks like `192.168.x.y`, and you should therefore type `https://192.168.x.y` in your browser's address bar.
+{% else %}
+You can perform the post-installation with the web interface **the public IP address of your server**. Typically, your VPS provider should have provided you with the IP of the server.
+{% endif %}
+
+! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). For now, you should add a security exception to accept the current certificate. (Though PLEASE, don't take the habit to blindly accepting this kind of security alerts !)
 
 {% if not internetcube %}
 You should then land on this page :
@@ -485,54 +463,58 @@ You can also perform the postinstallation with the command `yunohost tools posti
 
 {% if not internetcube %}
 
-[details="Details on information asked during initial configuration"]
+#### [fa=globe /] Main domain
 
-#### Main domain
+This will be the domain used by your server's users to access the **authentication portal**. It can later be changed if needed.
 
-This is the first domain name linked to your YunoHost server, but also the one which will be used by your server's users to access the **authentication portal**. It will thus be **visible by everyone**, choose it wisely.
+* If you're new to self-hosting and do not already have a domain name, you might want to choose a sub-domain of **.nohost.me**, **.noho.st** or **.ynh.fr** (e.g. `homersimpson.nohost.me`). Provided that it's not already taken, the domain will be configured automatically and you won't need any further configuration step. Please note that the downside is that you won't have full-control over the DNS configuration.
 
-* If you do not have a domain name, or if you want to use the YunoHost's DynDNS service, choose a sub-domain of **.nohost.me**, **.noho.st** or **.ynh.fr** (e.g. `homersimpson.nohost.me`). Provided that it's not already taken, the domain will be configured automatically and you won't need any further configuration step.
+* If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/dns).
 
-* If you do know what **DNS** is, you probably want to configure your own domain name here. In this case, please refer to the [DNS page](/dns) page for more informations.
+!!! Yes, you *have to* configure a domain name. If you don't have any domain name and don't want a **.nohost.me** / **.noho.st** / **.ynh.fr** either, you can set up a dummy domain such as `yolo.test` and tweak your `/etc/hosts` file such that this dummy domain points to the appropriate IP, as explained [here](/dns_local_network)).
 
-* If you don't own a domain name and don't want a **.nohost.me**, **.noho.st** or **.ynh.fr**, you can use a local domain. More information on how to setup a local domain can be found [here](/dns_local_network).
+#### [fa=key /] Administration password
 
-#### Administration password
+This password will be used to access to your server's administration interface. You would also use it to connect via **SSH** or **SFTP**. In general terms, this is your **system's key**, choose it carefully!
 
-This password will be used to access to your server's [administration interface](/admin). You would also use it to connect via **SSH** or **SFTP**. In general terms, this is your **system's key**, [choose it carefully](http://www.wikihow.com/Choose-a-Secure-Password).
-[/details]
+## [fa=user /] Create a first user
 
-At this step, if you got so far and saw 'YunoHost has been successfully installed' (web postinstall) or 'YunoHost has been correctly configured', then congratulations!
+Once the postinstall is done, you should be able to connect to actually log in the web admin interface using the administration password.
 
-## Create a first user
-You should create a first user. 
+So far, your server has an `admin` user - but this user is not a "regular" user and *can't* be used to log on [the user portal](/users).
 
-!!! This user will received special emails `root@`, `admin@`, `postmaster@`, `webmaster@` and `abuse@`. These emails are used to send you mails about your server.
+Let's therefore add a first user.
+
+!!! The first user you create is a bit special : it will receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld`. These emails may be used to send technical informations or alerts.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
+
+Go in Users > Add
+
+TODO: add a screenshot
 [/ui-tab]
 [ui-tab title="From the command line"]
-You can create your first user by running this command, it will ask you some information.
 ```
 yunohost user create johndoe
 ```
+TODO : copypasta an actual shell session will all info asked etc..
+
 [/ui-tab]
 [/ui-tabs]
 {% endif %}
 
-## Run diagnostic and fix DNS or Router issues if needed
-To diagnose that all critical aspects of your server are properly configured,
-you should run a diagnosis. After the first run, the diagnosis will run twice a day to alert you if something break. 
-Email are sent to the first user created.
+## [fa=stethoscope /] Run the initial diagnosis
 
-You need to fix red issues if you want to be able to access your server outside your local network.
+The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured. The diagnosis will run twice a day and send an alert if something's not okay.
 
-!!! If an alert is not relevant you should go on `Webadmin > Diagnosis` and click on the ignore button for this specifc unrelevant issue.
+!!! N.B. : **don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/dns) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain) and/or [port forwarding](/isp_box_config) (if hosting at home).
+
+!!! If an alert is not relevant (for example because you don't intend on using a specific feature), it is perfectly fine to flag the issue as 'ignored' by going in the webadmin > Diagnosis, and clicking the ignore button for this specifc issue.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommended) From the web interface"]
-To run a diagnosis, go on `Web Admin` in the `Diagnosis` section. You should get a screen like this :
+To run a diagnosis, go on Web Admin in the Diagnosis section. You should get a screen like this :
 
 [figure class="nomargin" caption="Preview of the diagnostic panel"]
 ![](image://diagnostic.png?resize=100%&class=inline)
@@ -542,14 +524,16 @@ To run a diagnosis, go on `Web Admin` in the `Diagnosis` section. You should get
 [ui-tab title="From the command line"]
 ```
 yunohost diagnosis run
+yunohost diagnosis show --issues --human-readable
 ```
 [/ui-tab]
 [/ui-tabs]
 
-## Get a Let's Encrypt certificate
-If your DNS and router configuration are ok, you can next ask for a Let's Encrypt certificate.
+## [fa=lock /] Get a Let's Encrypt certificate
 
-For more detailled instructions or know more about TLS certificate, see [here](/certificate)
+Once your DNS and router configuration are ok, you should be able to install a a Let's Encrypt certificate. This will get rid of the spooky security warning from earlier for new visitors.
+
+For more detailled instructions, or to lear more about SSL/TLS certificates, see [the corresponding page here](/certificate).
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
@@ -567,6 +551,6 @@ yunohost domain cert-install
 [/ui-tabs]
 {% endif %}
 
-## Congratz!
+## ![](image://tada.png?resize=32&classes=inline) Congratz!
 
-You have now a pretty well configured server. You can now try to install apps if you need (don't keep apps on your server if you don't need it) and configure a backup.
+You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install applications](/apps). Don't forget to [configure backups](/backups) !

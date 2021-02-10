@@ -6,7 +6,7 @@ body.light-mode {
   $text-darker-color: rgb(17, 20, 24);
   $card-bg-color: rgb(240, 240, 240);
   $border-color: rgb(221, 221, 221);
-  $link-color: rgb(114, 182, 236);
+  $link-color: rgb(0, 112, 211);
 
   $danger: rgb(242, 222, 222);
   $warning: rgb(252, 248, 227);
@@ -127,6 +127,12 @@ body.light-mode {
   .off-canvas .learn-sidebar .learn-nav ul.searched .search-match a:hover,
   .off-canvas .learn-sidebar .learn-nav ul.searched .search-match a {
     color: $link-color;
+  }
+
+  // Background for selected submenu in the navbar
+  .off-canvas .learn-sidebar .learn-nav ul.topics > li.active,
+  .off-canvas .learn-sidebar .learn-nav ul.topics > li.parent {
+    color: rgba(0, 0, 0, 0.1);
   }
 
   // Icons
