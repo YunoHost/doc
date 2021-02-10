@@ -222,7 +222,7 @@ Here are some VPS providers supporting YunoHost natively :
 </div>
 <script type="text/template" id="image-template">
 <div id="{id}" class="card panel panel-default">
-        <div class="panel-body text-center">
+        <div class="panel-body text-center pt-2">
             <h3>{name}</h3>
             <div class="card-comment">{comment}</div>
             <div class="card-desc text-center">
