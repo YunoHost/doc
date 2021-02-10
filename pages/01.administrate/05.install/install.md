@@ -425,7 +425,7 @@ curl https://install.yunohost.org | bash
 {% endif %}
 
 
-## Proceed with initial configuration
+## [fa=cog /] Proceed with initial configuration
 
 !!! If you are in the process of restoring a server using a YunoHost backup, you should skip this step and instead [restore the backup instead of the postinstall step](/backup#restoring-during-the-postinstall).
 
@@ -463,7 +463,7 @@ You can also perform the postinstallation with the command `yunohost tools posti
 
 {% if not internetcube %}
 
-#### [fa=globe /] Main domain
+##### [fa=globe /] Main domain
 
 This will be the domain used by your server's users to access the **authentication portal**. It can later be changed if needed.
 
@@ -473,7 +473,7 @@ This will be the domain used by your server's users to access the **authenticati
 
 !!! Yes, you *have to* configure a domain name. If you don't have any domain name and don't want a **.nohost.me** / **.noho.st** / **.ynh.fr** either, you can set up a dummy domain such as `yolo.test` and tweak your `/etc/hosts` file such that this dummy domain points to the appropriate IP, as explained [here](/dns_local_network)).
 
-#### [fa=key /] Administration password
+##### [fa=key /] Administration password
 
 This password will be used to access to your server's administration interface. You would also use it to connect via **SSH** or **SFTP**. In general terms, this is your **system's key**, choose it carefully!
 

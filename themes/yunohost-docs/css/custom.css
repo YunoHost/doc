@@ -144,8 +144,7 @@ body.light-mode #app-cards-list .app-card {
   border-color: #dddddd;
 }
 body.light-mode #app-cards-list .label {
-  color: #111418;
-  background-color: #f0f0f0;
+  color: black;
 }
 body.light-mode .hardware-image .card {
   background-color: white !important;
@@ -337,8 +336,7 @@ body.dark-mode #app-cards-list .app-card {
   border-color: #3f4755;
 }
 body.dark-mode #app-cards-list .label {
-  color: #a5a9af;
-  background-color: #111418;
+  color: black;
 }
 body.dark-mode .hardware-image .card {
   background-color: #171b21 !important;

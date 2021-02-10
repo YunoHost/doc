@@ -24,19 +24,20 @@ If you are **installing at home** (e.g. on a Raspberry Pi or OLinuXino or old co
    - if `yunohost.local` does not work, your need to [find out the local IP of the server](/finding_the_local_ip).
    - if you installed a server at home but are attempting to connect from outside your local network, make sure port 22 is correctly forwarded to your server.
 
-If you server is a remote server (VPS), your provider should have communicated you the IP address of the machine
+
+If your server is a remote server (VPS), your provider should have communicated you the IP address of the machine
 
 In any cases, if you already configured a domain name pointing to the appropriate IP, it's much better to use `yourdomain.tld` instead of the IP address.
 
 
 ## Login credentials
 
-### BEFORE running the post-installation
+#### BEFORE running the post-installation
 
 - If you are **installing at home**, the default credentials are login: `root` and password: `yunohost`
 - If you are **installing a remote server (VPS)**, your provider should have communicated you the login and password (or allowed you to configure an SSH key)
 
-### AFTER running the post-installation
+#### AFTER running the post-installation
 
 During the postinstall, you've been asked to choose an administration password. This password becomes the new password for the `root` and `admin` users. Additionally, **the `root` SSH login becomes disabled after the postinstall and you should log in using the `admin` user !**. The only exception is that you may still be able to login using `root` *from the local network - or from a direct console on the server* (this is to cover the event where the LDAP server is broken and the `admin` user is unusable).
 
