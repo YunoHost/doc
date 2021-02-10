@@ -145,6 +145,7 @@ However, community images exist and are available on Docker Hub:
 
 
 ## Pre-requisites
+
 {% if regular %}
 * A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop with 512MB RAM and 16GB capacity (at least)
 {% elseif rpi2plus %}
@@ -153,15 +154,15 @@ However, community images exist and are available on Docker Hub:
 * A Raspberry Pi 1 with at least 512MB RAM
 {% elseif rpi0 %}
 * A Raspberry Pi zero
-{% elseif arm_sup %}
-* A VPN with a dedicated IP and a `.cube` file
+{% elseif internetcube %}
 * An Orange Pi PC+ or an Onlinuxino Lime 1 or 2
+* A VPN with a dedicated IP and a `.cube` file
 {% elseif arm_sup %}
 * An Orange Pi PC+ or an Onlinuxino Lime 1 or 2
 {% elseif arm_unsup %}
 * An ARM board with at least 512MB RAM
 {% elseif vps_debian %}
-* A dedicated or virtual private server with Debian 10 <small>(with **kernel >= 3.12**)</small>) preinstalled, 512MB RAM and 16GB capacity (at least)
+* A dedicated or virtual private server with Debian 10 (Buster) <small>(with **kernel >= 3.12**)</small> preinstalled, 512MB RAM and 16GB capacity (at least)
 {% elseif vps_ynh %}
 * A dedicated or virtual private server with yunohost preinstalled, 512MB RAM and 16GB capacity (at least)
 {% elseif virtualbox %}
@@ -169,7 +170,7 @@ However, community images exist and are available on Docker Hub:
 {% endif %}
 {% if arm %}
 * A power supply (either an adapter or a MicroUSB cable) for your board;
-* A microSD card: 16GB capacity (at least) and Class 10 speed rate are highly recommended (like the [Transcend 300x](http://www.amazon.fr/Transcend-microSDHC-adaptateur-TS32GUSDU1E-Emballage/dp/B00CES44EO));
+* A microSD card: 16GB capacity (at least), [class "A1"](https://en.wikipedia.org/wiki/SD_card#Class) highly recommended (such as [this SanDisk A1 card](https://www.amazon.fr/SanDisk-microSDHC-Adaptateur-homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/));
 {% endif %}
 {% if regular %}
 * A USB stick at least 1GB capacity) OR a standard blank CD
@@ -178,13 +179,13 @@ However, community images exist and are available on Docker Hub:
 * A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
 {% if rpi0 %}
 * An usb OTG or a wifi dongle to connect your Raspberry Pi Zero
-{% else %}
+{% elseif not virtualbox %}
 * An ethernet cable (RJ-45) to connect your server to your router.
 {% endif %}
-* A computer to read this guide, write the image and access to your server.
+* A computer to read this guide, flash the image and access your server.
 {% endif %}
 {% if not at_home %}
-* A computer or a smartphone to read this guide and access to your server.
+* A computer or a smartphone to read this guide and access your server.
 {% endif %}
 
 {% if virtualbox %}
@@ -209,10 +210,10 @@ Here are some VPS providers supporting YunoHost natively :
 
 
 {% if at_home %}
-## [fa=download /] Download the YunoHost image
+## [fa=download /] Download the pre-installed image
 
 {% if virtualbox %}
-!!! If your host OS 32 bits, be sure to download the 32-bit image.
+!!! If your host OS is 32 bits, be sure to download the 32-bit image.
 {% endif %}
 
 
@@ -292,19 +293,18 @@ Now that you downloaded the image of YunoHost, you should flash it on {% if arm 
 
 Download <a href="https://www.balena.io/etcher/" target="_blank">Etcher</a> for your operating system and install it.
 
-Plug your USB stick, select your YunoHost image and click "Flash"
+Plug your {% if arm %}SD card{% else %}USB stick{% endif %}, select your YunoHost image and click "Flask"
 
-![Etcher](image://etcher.gif?resize=100%&class=inline)
+![Etcher](image://etcher.gif?resize=700&class=inline)
 
 [/ui-tab]
-[ui-tab title="With UNetbootin"]
+[ui-tab title="With USBimager"]
 
-Download <a href="https://unetbootin.github.io/" target="_blank">UNetbootin</a> for your operating system and install it.
+Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.
 
-Put your USB stick on, select your YunoHost image and click "OK"
+Plug your {% if arm %}SD card{% else %}USB stick{% endif %}, select your YunoHost image and click "Write"
 
-![UNetbootin](image://unetbootin.png?resize=100%&class=inline)
-
+![USBimager](image://usbimager.png?resize=700&class=inline)
 
 [/ui-tab]
 [ui-tab title="With dd"]
@@ -337,7 +337,7 @@ For older devices, you might want to burn a CD/DVD. The software to use depends 
 
 ![](image://virtualbox_1.png?class=inline)
 
-## Change network settings
+## Tweak network settings
 
 ! This step is important to properly expose the virtual machine on the network
 
@@ -345,7 +345,7 @@ Go to **Settings** > **Network**:
 
 * Select `Bridged adapter`
 * Select your interface's name:
-    **wlan0** if you are connected wirelessly, else **eth0**.
+    **wlan0** if you are connected wirelessly, or **eth0** otherwise.
 
 ![](image://virtualbox_2.png?class=inline)
 
@@ -364,8 +364,8 @@ Go to **Settings** > **Network**:
 
 * Plug the ethernet cable (one side on your main router, the other on your board).
     * For advanced users willing to configure the board to connect to WiFi instead, see for example [here](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
-* Plug the SD card
-* (Optional) You can connect a screen+keyboard directly on your board if you want to troubleshoot the boot process or if you're more comfortable to "see what happens" or want a direct access to the board.[/details]
+* Plug the SD card in your board
+* (Optional) You can connect a screen+keyboard directly on your board if you want to troubleshoot the boot process or if you're more comfortable to "see what happens" or want a direct access to the board.
 * Power up the board
 * Wait a couple minutes while the board autoconfigure itself during the first boot
 * Make sure that your computer (desktop/laptop) is connected to the same local network (i.e. same internet box) as your server.
@@ -377,7 +377,7 @@ Start the virtual machine after selecting the YunoHost image.
 
 ![](image://virtualbox_2.1.png?class=inline)
 
-! If you encounter the error "VT-x is not available", you need probably need to enable Virtualization in the BIOS of your computer.
+! If you encounter the error "VT-x is not available", you probably need to enable Virtualization in the BIOS of your computer.
 
 
 {% else %}
@@ -390,7 +390,7 @@ Start the virtual machine after selecting the YunoHost image.
 {% endif %}
 
 {% if regular or virtualbox %}
-## [fa=rocket /] Launch graphical install
+## [fa=rocket /] Launch the graphical install
 
 !! N.B. : The installation will totally erase the data on the server's hard drive!
 
@@ -425,7 +425,7 @@ curl https://install.yunohost.org | bash
 {% endif %}
 
 
-## [fa=cog /] Proceed with initial configuration
+## [fa=cog /] Proceed with the initial configuration
 
 !!! If you are in the process of restoring a server using a YunoHost backup, you should skip this step and instead [restore the backup instead of the postinstall step](/backup#restoring-during-the-postinstall).
 
@@ -465,9 +465,9 @@ You can also perform the postinstallation with the command `yunohost tools posti
 
 ##### [fa=globe /] Main domain
 
-This will be the domain used by your server's users to access the **authentication portal**. It can later be changed if needed.
+This will be the domain used by your server's users to access the **authentication portal**. You can later add other domains, and change which one is the main domain if needed.
 
-* If you're new to self-hosting and do not already have a domain name, you might want to choose a sub-domain of **.nohost.me**, **.noho.st** or **.ynh.fr** (e.g. `homersimpson.nohost.me`). Provided that it's not already taken, the domain will be configured automatically and you won't need any further configuration step. Please note that the downside is that you won't have full-control over the DNS configuration.
+* If you're new to self-hosting and do not already have a domain name, we recommend using a **.nohost.me** / **.noho.st** / **.ynh.fr** (e.g. `homersimpson.nohost.me`). Provided that it's not already taken, the domain will be configured automatically and you won't need any further configuration step. Please note that the downside is that you won't have full-control over the DNS configuration.
 
 * If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/dns).
 
@@ -475,15 +475,15 @@ This will be the domain used by your server's users to access the **authenticati
 
 ##### [fa=key /] Administration password
 
-This password will be used to access to your server's administration interface. You would also use it to connect via **SSH** or **SFTP**. In general terms, this is your **system's key**, choose it carefully!
+This password will be used to access to your server's administration interface. You will also use it to connect [via **SSH**](/ssh) or [**SFTP**](/filezilla). In general terms, this is your **system's key**, choose it carefully!
 
 ## [fa=user /] Create a first user
 
-Once the postinstall is done, you should be able to connect to actually log in the web admin interface using the administration password.
+Once the postinstall is done, you should be able to actually log in the web admin interface using the administration password.
 
-So far, your server has an `admin` user - but this user is not a "regular" user and *can't* be used to log on [the user portal](/users).
+So far, your server knows about the `admin` user - but `admin` is not a "regular" user and *can't* be used to log on [the user portal](/users).
 
-Let's therefore add a first user.
+Let's therefore add a first "regular" user.
 
 !!! The first user you create is a bit special : it will receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld`. These emails may be used to send technical informations or alerts.
 
@@ -506,7 +506,7 @@ TODO : copypasta an actual shell session will all info asked etc..
 
 ## [fa=stethoscope /] Run the initial diagnosis
 
-The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured. The diagnosis will run twice a day and send an alert if something's not okay.
+The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured - and guide you in how to fix issues. The diagnosis will run twice a day and send an alert if issues are detected.
 
 !!! N.B. : **don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/dns) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain) and/or [port forwarding](/isp_box_config) (if hosting at home).
 
@@ -531,9 +531,9 @@ yunohost diagnosis show --issues --human-readable
 
 ## [fa=lock /] Get a Let's Encrypt certificate
 
-Once your DNS and router configuration are ok, you should be able to install a a Let's Encrypt certificate. This will get rid of the spooky security warning from earlier for new visitors.
+Once you configured DNS records and port forwarding (if needed), you should be able to install a a Let's Encrypt certificate. This will get rid of the spooky security warning from earlier for new visitors.
 
-For more detailled instructions, or to lear more about SSL/TLS certificates, see [the corresponding page here](/certificate).
+For more detailled instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/certificate).
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
@@ -553,4 +553,4 @@ yunohost domain cert-install
 
 ## ![](image://tada.png?resize=32&classes=inline) Congratz!
 
-You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install applications](/apps). Don't forget to [configure backups](/backups) !
+You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](/apps). Don't forget to [configure backups](/backups) !
