@@ -1,5 +1,5 @@
 ---
-title: Administrate
+title: Admin guide
 template: chapter
 taxonomy:
     category: docs
