@@ -15,9 +15,9 @@ body.dark-mode {
   $border-color: rgb(63, 71, 85);
   $link-color: rgb(114, 182, 236);
 
-  $danger: rgb(128, 108, 108);
-  $warning: rgb(107, 104, 89);
-  $success: rgb(106, 121, 100);
+  $danger: rgb(113, 44, 44);
+  $warning: rgb(132, 88, 4);
+  $success: rgb(51, 87, 35);
 
   // Main body background
   background-color: $background-color;
@@ -135,6 +135,12 @@ body.dark-mode {
   .off-canvas .learn-sidebar .learn-nav ul.searched .search-match a:hover,
   .off-canvas .learn-sidebar .learn-nav ul.searched .search-match a {
     color: $link-color;
+  }
+
+  // Background for selected submenu in the navbar
+  .off-canvas .learn-sidebar .learn-nav ul.topics > li.active,
+  .off-canvas .learn-sidebar .learn-nav ul.topics > li.parent {
+    color: rgba(255, 255, 255, 0.1);
   }
 
   // Icons
