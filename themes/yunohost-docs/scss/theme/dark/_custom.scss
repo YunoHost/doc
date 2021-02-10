@@ -140,7 +140,7 @@ body.dark-mode {
   // Background for selected submenu in the navbar
   .off-canvas .learn-sidebar .learn-nav ul.topics > li.active,
   .off-canvas .learn-sidebar .learn-nav ul.topics > li.parent {
-    color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
   // Icons
