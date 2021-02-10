@@ -194,7 +194,7 @@ body.light-mode img#whitelogo {
 
 /*!
  * Dark Mode Theme
- * 
+ *
  * Inspired by Louis Charette
  * https://github.com/lcharette/website/blob/cc855a6eb29693613e5e4e1d589a17ba7faf4aa9/themes/quark-custom/css/darkMode.scss
  */
@@ -223,6 +223,10 @@ body.dark-mode #page-wrapper {
 }
 body.dark-mode a {
   color: #72b6ec;
+}
+body.dark-mode code {
+  background: #3a3a3a;
+  color: #ece5ad;
 }
 body.dark-mode .card,
 body.dark-mode #footer,
