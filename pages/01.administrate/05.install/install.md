@@ -407,6 +407,35 @@ You should see a screen like this:
 {% endif %}
 
 
+{% if rpi1 or rpi0 %}
+## [fa=bug /] Hotfix the image
+Raspberry pi 1 or zero are not totally supported due to issues with  metronome (XMPP) and with miniupnpc (router autoconfig).
+
+However, it is possible to fix by yourself the image before to run the initial configuration.
+
+To achieve this, you need to connect on your raspberry pi as root user [via SSH](/ssh) with the temporary password `yunohost`:
+```
+ssh root@yunohost.local
+```
+
+Then run the following commands to work around the metronome issue:
+```
+mv /usr/bin/metronome{,.bkp}   
+mv /usr/bin/metronomectl{,.bkp} 
+ln -s /usr/bin/true /usr/bin/metronome
+ln -s /usr/bin/true /usr/bin/metronomectl
+```
+
+And this one to work around the upnpc issue:
+```
+sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/firewall.py
+```
+
+! This last command need to be run after each yunohost upgrade :/
+
+{% endif %}
+
+
 
 {% elseif vps_debian %}
 ## [fa=rocket /] Run the install script
