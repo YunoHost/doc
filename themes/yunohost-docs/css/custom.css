@@ -224,10 +224,6 @@ body.dark-mode #page-wrapper {
 body.dark-mode a {
   color: #72b6ec;
 }
-body.dark-mode code {
-  background: #3a3a3a;
-  color: #ece5ad;
-}
 body.dark-mode .card,
 body.dark-mode #footer,
 body.dark-mode .dropmenu ul ul {
@@ -411,6 +407,10 @@ body.dark-mode .notices.green {
   background-color: #192c13;
   color: #7ac57a;
 }
+body.dark-mode code {
+  background: #3a3a3a;
+  color: #ece5ad;
+}
 
 .learn-sidebar:before {
   background: none !important;
@@ -544,6 +544,10 @@ body #top-bar #navigation {
 /*=================================================
  SIDE BAR
 =================================================*/
+body.off-canvas .learn-sidebar .learn-brand {
+  box-shadow: none;
+}
+
 body .off-canvas .learn-sidebar .learn-nav ul li ul li.active > a {
   background-color: rgba(0, 0, 0, 0.1);
   border-left: 4px solid mediumturquoise;
