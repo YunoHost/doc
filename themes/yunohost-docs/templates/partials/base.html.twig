@@ -26,6 +26,7 @@
 
 {% block javascripts %}
     {% do assets.addJs('jquery', 101) %}
+    {% do assets.addJs('theme://js/simplebar.min.js', { group:'bottom' }) %}
     {% do assets.addJs('theme://js/learn4.js', { group:'bottom' }) %}
     {% do assets.addJs('theme://js/darkMode.js', { group:'bottom' }) %}
 {% endblock %}
@@ -74,7 +75,6 @@
     </div>
 
     {% block bottom %}
-        <script src="https://unpkg.com/simplebar@4.0.0-alpha.4/dist/simplebar.min.js"></script>
         {{ assets.js('bottom')|raw }}
     {% endblock %}
 </body>
