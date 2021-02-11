@@ -81,7 +81,7 @@ Cas B : shopt -s dotglob
 Pour vérifier que tout s'est bien passé, comparez ce qu'affichent ces deux commandes (le contenu doit être identique) :
 
 ```bash
-ls -la /home/yunohost.app/nextcloud/data
+ls -la /home/yunohost.app/nextcloud
 
 Cas A : ls -al /media/stockage
 Cas B : ls -al /media/stockage/nextcloud_data
@@ -104,8 +104,8 @@ Cherchez la ligne :
 Que vous modifiez :
 
 ```bash
-CAS A : 'datadirectory' => '/media/stockage',
-CAS B : 'datadirectory' => '/media/stockage/nextcloud_data',
+CAS A : 'datadirectory' => '/media/stockage/data',
+CAS B : 'datadirectory' => '/media/stockage/nextcloud_data/data',
 ```
 
 Sauvegardez avec `ctrl+x` puis `y` ou `o` (dépend de la locale de votre serveur).
