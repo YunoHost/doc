@@ -137,6 +137,10 @@ body #top-bar #navigation {
  SIDE BAR
 =================================================*/
 
+body.off-canvas .learn-sidebar .learn-brand {
+  box-shadow: none;
+}
+
 body .off-canvas .learn-sidebar .learn-nav ul li ul li.active > a {
   background-color: rgba(0, 0, 0, 0.1);
   border-left: 4px solid mediumturquoise;
