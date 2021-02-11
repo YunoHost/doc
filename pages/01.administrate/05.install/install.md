@@ -27,7 +27,7 @@ routes:
     - '/boot_and_graphical_install'
     - '/postinstall'
 ---
-{% set image_name = 'YunoHost' %}
+{% set image_type = 'YunoHost' %}
 {% set arm, at_home, regular, rpi2plus, rpi1, rpi0, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, internetcube, docker = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
 {% set hardware = uri.param('hardware')  %}
 {% if hardware == '' %}
@@ -217,6 +217,14 @@ Here are some VPS providers supporting YunoHost natively :
 
 {% if virtualbox %}
 !!! If your host OS is 32 bits, be sure to download the 32-bit image.
+{% elseif arm_unsup %}
+<div class="hardware-image">
+<div class="card panel panel-default">
+    <div class="btn-group" role="group">
+        <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=download] Download</a>
+    </div>
+</div>
+</div>
 {% endif %}
 
 
@@ -293,7 +301,7 @@ $(document).ready(function () {
 ## ![USB drive](image://usb_key.png?resize=100,100&class=inline) Flash the YunoHost image
 {% endif %}
 
-Now that you downloaded the image of {image_type}, you should flash it on {% if arm %}a SD card{% else %}a USB stick or a CD.{% endif %}
+Now that you downloaded the image of {{image_type}}, you should flash it on {% if arm %}a SD card{% else %}a USB stick or a CD.{% endif %}
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommended) With Etcher"]
