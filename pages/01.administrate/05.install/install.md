@@ -465,7 +465,9 @@ ssh root@192.168.x.xxx
 {% if vps_debian or arm_unsup %}
 ## [fa=rocket /] Run the install script
 
-Once you have access to a command line on your server (either directly or [through SSH](/ssh)), you can install YunoHost by running (as root) :
+- Open a command line prompt on your server (either directly or [through SSH](/ssh))
+- Make sure you are root (or type `sudo -i` to become root)
+- Run the following command:
 
 ```bash
 curl https://install.yunohost.org | bash
