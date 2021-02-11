@@ -33,7 +33,7 @@ Para configurar manualmente un nuevo cuenta en Thunderbird, añadir las informac
 
 Seguir los pasos a continuación. (Como para Thunderbird, se puede que tendrás que aceptar los certificados para que funciona normalmente.)
 
-![](image://k9mail_config_1.png?resize=300&classes=inline)
-![](image://k9mail_config_2.png?resize=300&classes=inline)
-![](image://k9mail_config_3.png?resize=300&classes=inline)
-![](image://k9mail_config_4.png?resize=300&classes=inline)
+![](image://k9mail_config_1.png?resize=280&classes=inline)
+![](image://k9mail_config_2.png?resize=280&classes=inline)
+![](image://k9mail_config_3.png?resize=280&classes=inline)
+![](image://k9mail_config_4.png?resize=280&classes=inline)

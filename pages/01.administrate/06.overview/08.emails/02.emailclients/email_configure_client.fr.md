@@ -34,10 +34,10 @@ Pour configurer manuellement un nouveau compte dans Thunderbird commencez par re
 
 Suivez les instructions suivantes. (Comme pour Thunderbird, il vous faudra peut-être accepter des certificats à un moment)
 
-![](image://k9mail_config_1.png?resize=300&classes=inline)
-![](image://k9mail_config_2.png?resize=300&classes=inline)
-![](image://k9mail_config_3.png?resize=300&classes=inline)
-![](image://k9mail_config_4.png?resize=300&classes=inline)
+![](image://k9mail_config_1.png?resize=280&classes=inline)
+![](image://k9mail_config_2.png?resize=280&classes=inline)
+![](image://k9mail_config_3.png?resize=280&classes=inline)
+![](image://k9mail_config_4.png?resize=280&classes=inline)
 
 ### ![](image://dekko-app.png?resize=50&classes=inline) Configure Dekko (on Ubuntu Touch)
 
@@ -45,7 +45,7 @@ La première fois, vous pouvez simplement choisir "Ajouter un compte". Si vous a
 
 Sélectionnez ensuite IMAP. Remplissez les champs et appuyez sur Suivant. Dekko va ensuite chercher la configuration. Vérifiez que tous les champs sont corrects. Assurez-vous d'avoir votre nom d'utilisateur yunohost, PAS votre adresse email et choisissez "Autoriser les certificats non fiables". Faites ceci pour IMAP et SMTP et appuyez sur Suivant. Dekko va ensuite synchroniser le compte après quoi vous aurez terminé. Félicitations !
 
-![](image://dekko_config_1.png?resize=300&classes=inline)
-![](image://dekko_config_2.png?resize=300&classes=inline)
-![](image://dekko_config_3.png?resize=300&classes=inline)
-![](image://dekko_config_4.png?resize=300&classes=inline)
+![](image://dekko_config_1.png?resize=280&classes=inline)
+![](image://dekko_config_2.png?resize=280&classes=inline)
+![](image://dekko_config_3.png?resize=280&classes=inline)
+![](image://dekko_config_4.png?resize=280&classes=inline)
