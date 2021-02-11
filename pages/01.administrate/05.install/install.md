@@ -553,4 +553,4 @@ yunohost domain cert-install
 
 ## ![](image://tada.png?resize=32&classes=inline) Congratz!
 
-You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](/apps). Don't forget to [configure backups](/backups) !
+You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](/apps). Don't forget to [configure backups](/backup) !
