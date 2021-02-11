@@ -154,18 +154,22 @@ Il existe aussi l'application Archivist qui permet un système similaire : https
 #### Éviter de sauvegarder certains dossiers
 Si besoin, vous pouvez spécifier que certains dossiers `home` d'utilisateurs ne soient pas sauvegardés par la commande `yunohost backup`, en créant un fichier vide nommé `.nobackup` à l'intérieur.
 
-#### Backup complet avec `dd`
 
-Si vous êtes sur une carte ARM, une autre méthode pour créer une sauvegarde complète consiste à créer une image (copie) de la carte SD. Pour cela, éteignez votre serveur, insérez la carte SD dans votre ordinateur et créez une image avec une commande comme :
+#### Pour les cartes ARM: backup complet avec USBimager ou `dd`
+
+Si vous êtes sur une carte ARM, une autre méthode de backup consiste à créer une image de la carte SD.
+
+Ceci peut être effectué avec [USBimager](https://bztsrc.gitlab.io/usbimager/) (N.B. : assurez-vous de télécharger la version 'Read-write' ! Pas la version 'Write-only' !). Le processus consiste ensuite à "l'inverse" du processus de flashage de la carte SD:
+- Éteignez votre serveur
+- Récupérez la carte SD et branchez la dans votre ordinateur
+- Dans USBimager, cliquez "Read" pour créer une image ("photographie") de la carte SD. Vous pouvez utiliser le fichier obtenu pour plus tard restaurer le système en entier.
+
+Plus de détails dans [la doc d'USBimager](https://gitlab.com/bztsrc/usbimager/#creating-backup-image-file-from-device)
+
+Il est possible d'obtenir la même chose avec `dd` si vous êtes à l'aise avec la ligne de commande:
 
 ```bash
-dd if=/dev/mmcblk0 of=./backup.img status=progress
+dd if=/dev/mmcblk0 | gzip > ./my_snapshot.gz
 ```
 
 (remplacez `/dev/mmcblk0` par le vrai nom de votre carte SD)
-
-Vous pouvez aussi compresser l'image à l'aide de gzip :
-
-```bash
-dd if=/dev/mmcblk0 | gzip > ./image.gz
-```
