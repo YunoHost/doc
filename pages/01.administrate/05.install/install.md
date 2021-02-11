@@ -27,6 +27,7 @@ routes:
     - '/boot_and_graphical_install'
     - '/postinstall'
 ---
+{% set image_type = 'YunoHost' %}
 {% set arm, at_home, regular, rpi2plus, rpi1, rpi0, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, internetcube, docker = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
 {% set hardware = uri.param('hardware')  %}
 {% if hardware == '' %}
@@ -37,6 +38,7 @@ routes:
   {% set regular = true %}
 {% elseif hardware == 'internetcube' %}
   {% set arm, arm_sup, internetcube = true, true, true %}
+  {% set image_type = 'Internet Cube' %}
 {% elseif hardware == 'rpi2plus' %}
   {% set arm, rpi2plus = true, true %}
 {% elseif hardware == 'rpi1' %}
@@ -47,6 +49,7 @@ routes:
   {% set arm, arm_sup = true, true %}
 {% elseif hardware == 'arm_unsup' %}
   {% set arm, arm_unsup = true, true %}
+  {% set image_type = 'Armbian' %}
 {% elseif hardware == 'vps_debian' %}
   {% set vps, vps_debian = true, true %}
 {% elseif hardware == 'vps_ynh' %}
@@ -210,10 +213,18 @@ Here are some VPS providers supporting YunoHost natively :
 
 
 {% if at_home %}
-## [fa=download /] Download the pre-installed image
+## [fa=download /] Download the {{image_type}} image
 
 {% if virtualbox %}
 !!! If your host OS is 32 bits, be sure to download the 32-bit image.
+{% elseif arm_unsup %}
+<div class="hardware-image">
+<div class="card panel panel-default">
+    <div class="btn-group" role="group">
+        <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=download] Download</a>
+    </div>
+</div>
+</div>
 {% endif %}
 
 
@@ -278,22 +289,26 @@ $(document).ready(function () {
 </script>
 
 
+
+
+
+
 {% if not virtualbox %}
 
 {% if arm %}
-## ![microSD card with adapter](image://sdcard_with_adapter.png?resize=100,75&class=inline) Flash the YunoHost image
+## ![microSD card with adapter](image://sdcard_with_adapter.png?resize=100,75&class=inline) Flash the {{image_type}} image
 {% else %}
 ## ![USB drive](image://usb_key.png?resize=100,100&class=inline) Flash the YunoHost image
 {% endif %}
 
-Now that you downloaded the image of YunoHost, you should flash it on {% if arm %}a SD card{% else %}a USB stick or a CD.{% endif %}
+Now that you downloaded the image of {{image_type}}, you should flash it on {% if arm %}a SD card{% else %}a USB stick or a CD.{% endif %}
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommended) With Etcher"]
 
 Download <a href="https://www.balena.io/etcher/" target="_blank">Etcher</a> for your operating system and install it.
 
-Plug your {% if arm %}SD card{% else %}USB stick{% endif %}, select your YunoHost image and click "Flask"
+Plug your {% if arm %}SD card{% else %}USB stick{% endif %}, select your image and click "Flask"
 
 ![Etcher](image://etcher.gif?resize=700&class=inline)
 
@@ -302,7 +317,7 @@ Plug your {% if arm %}SD card{% else %}USB stick{% endif %}, select your YunoHos
 
 Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.
 
-Plug your {% if arm %}SD card{% else %}USB stick{% endif %}, select your YunoHost image and click "Write"
+Plug your {% if arm %}SD card{% else %}USB stick{% endif %}, select your image and click "Write"
 
 ![USBimager](image://usbimager.png?resize=700&class=inline)
 
@@ -407,8 +422,47 @@ You should see a screen like this:
 {% endif %}
 
 
+{% if rpi1 or rpi0 %}
+## [fa=bug /] Connect to the board and hotfix the image
+Raspberry pi 1 or zero are not totally supported due to issues with  metronome (XMPP) and with miniupnpc (router autoconfig).
 
-{% elseif vps_debian %}
+However, it is possible to fix by yourself the image before to run the initial configuration.
+
+To achieve this, you need to connect on your raspberry pi as root user [via SSH](/ssh) with the temporary password `yunohost`:
+```
+ssh root@yunohost.local
+```
+
+Then run the following commands to work around the metronome issue:
+```
+mv /usr/bin/metronome{,.bkp}   
+mv /usr/bin/metronomectl{,.bkp} 
+ln -s /usr/bin/true /usr/bin/metronome
+ln -s /usr/bin/true /usr/bin/metronomectl
+```
+
+And this one to work around the upnpc issue:
+```
+sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/firewall.py
+```
+
+! This last command need to be run after each yunohost upgrade :/
+
+{% elseif arm_unsup %}
+## [fa=bug /] Connect to the board
+
+Next you need to [find the local IP address of your server](/finding_the_local_ip) to connect as root user [via SSH](/ssh) with the temporary password `1234`.
+
+```
+ssh root@192.168.x.xxx
+```
+
+{% endif %}
+
+{% endif %}
+
+
+{% if vps_debian or arm_unsup %}
 ## [fa=rocket /] Run the install script
 
 - Open a command line prompt on your server (either directly or [through SSH](/ssh))

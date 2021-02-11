@@ -13,6 +13,7 @@ The local IP is the address used to refer to your server inside the local networ
 
 Any of these tricks should allow you to find the local IP of your server:
 
+- Use the [AngryIP](https://angryip.org/download/) software
 - Connect to your internet box / router interface to list the machines connected, or check the logs;
 - If you're using Linux, you can open a terminal and use `sudo arp-scan --local` to list the IP on your local network (this may also work in Windows);
     - If the `arp-scan` command displays a confusing number of devices, you can check which ones are open to SSH with `nmap -p 22 192.168.1.0/24` to sort them out (adapt the IP range to your local network)
