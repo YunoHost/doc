@@ -164,13 +164,21 @@ Potete seguire questo tutorial sul forum per impostare Borg fra due server: <htt
 
 Alternativamente, la app Archivist permette di impostare un sistema simile: <https://forum.yunohost.org/t/new-app-archivist/3747>
 
-#### Backup completo con `dd`
+#### For ARM boards: full backup with USBimager or `dd`
 
-Se state usando una board ARM un altro metodo per eseguire un backup completo è quello di creare un'immagine della card SD. Per fare questo innanzitutto spegnete la vostra board ARM, prendete la card SD e createne un'immagine completa con un comando come il seguente:
+If you are using an ARM board, another method for doing a full backup can be to create an image of the SD card.
 
+This can be done easily using [USBimager](https://bztsrc.gitlab.io/usbimager/) (N.B. be sure to get the Read-Write version! Not the write-only version!). The process is basically the *reverse* of flashing the SD card.
+- Poweroff your server
+- Get the SD card and plug it into your computer
+- Using USBimager, click the *Read* button to create an image (snapshot) of the sd card. You can use it later to restore the entire system. 
+
+More details [in the USBimager doc](https://gitlab.com/bztsrc/usbimager/#creating-backup-image-file-from-device)
+
+Alternatively you can use `dd` if you're comfortable with the command line with something like:
 
 ```bash
-dd if=/dev/mmcblk0 of=./backup.img status=progress
+dd if=/dev/mmcblk0 | gzip > ./my_snapshot.gz
 ```
 
-(modificate `/dev/mmcblk0` con il device reale della vostra card)
+(replace `/dev/mmcblk0` with the actual device of your SD card)

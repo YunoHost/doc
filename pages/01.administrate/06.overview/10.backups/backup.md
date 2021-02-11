@@ -161,17 +161,21 @@ Alternatively, the app Archivist allows to setup a similar system: <https://foru
 #### Avoiding the backup of some folders
 If needed, you can specify that some `/home/user` folders are left out of the `yunohost backup` command, by creating a blank file named `.nobackup` in them.
 
-#### Full backup with `dd`
+#### For ARM boards: full backup with USBimager or `dd`
 
-If you are using an ARM board, another method for doing a full backup can be to create an image of the SD card. For this, poweroff your ARM board, get the SD card in your computer then create a full image with something like:
+If you are using an ARM board, another method for doing a full backup can be to create an image of the SD card.
+
+This can be done easily using [USBimager](https://bztsrc.gitlab.io/usbimager/) (N.B. be sure to get the Read-Write version! Not the write-only version!). The process is basically the *reverse* of flashing the SD card.
+- Poweroff your server
+- Get the SD card and plug it into your computer
+- Using USBimager, click the *Read* button to create an image (snapshot) of the sd card. You can use it later to restore the entire system. 
+
+More details [in the USBimager doc](https://gitlab.com/bztsrc/usbimager/#creating-backup-image-file-from-device)
+
+Alternatively you can use `dd` if you're comfortable with the command line with something like:
 
 ```bash
-dd if=/dev/mmcblk0 of=./backup.img status=progress
+dd if=/dev/mmcblk0 | gzip > ./my_snapshot.gz
 ```
 
 (replace `/dev/mmcblk0` with the actual device of your SD card)
-
-You can also create a compressed image using gzip this way:
-```bash
-dd if=/dev/mmcblk0 | gzip > ./image.gz
-```
