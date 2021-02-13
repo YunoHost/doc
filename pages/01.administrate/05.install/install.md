@@ -30,9 +30,6 @@ routes:
 {% set image_type = 'YunoHost' %}
 {% set arm, at_home, regular, rpi2plus, rpi1, rpi0, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, internetcube, docker = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
 {% set hardware = uri.param('hardware')  %}
-{% if hardware == '' %}
-  {% set hardware = 'vps_debian' %}
-{% endif %}
 
 {% if hardware == 'regular' %}
   {% set regular = true %}
@@ -130,6 +127,7 @@ Select the hardware on which you want install YunoHost :
 [/div]
 
 
+{% if hardware != '' %}
 
 {% if docker %}
 !! **YunoHost doesn’t support Docker officially since issues with versions 2.4+. In question, YunoHost 2.4+ doesn’t work anymore on Docker because YunoHost requires systemd and Docker has chosen to not support it natively (and there are other problems link to the firewall and services).**
@@ -140,9 +138,9 @@ Select the hardware on which you want install YunoHost :
 
 However, community images exist and are available on Docker Hub:
 
-  * [AMD64 (classic) (ancienne version de YunoHost)](https://hub.docker.com/r/domainelibre/yunohost/)
-  * [I386 (old computers) (ancienne version de YunoHost)](https://hub.docker.com/r/domainelibre/yunohost-i386/)
-  * [ARMV7 (Raspberry Pi 2/3 ...) (ancienne version de YunoHost)](https://hub.docker.com/r/domainelibre/yunohost-arm/)
+  * [AMD64 (classic) (old YunoHost version)](https://hub.docker.com/r/domainelibre/yunohost/)
+  * [I386 (old computers) (old YunoHost version)](https://hub.docker.com/r/domainelibre/yunohost-i386/)
+  * [ARMV7 (Raspberry Pi 2/3 ...) (old YunoHost version)](https://hub.docker.com/r/domainelibre/yunohost-arm/)
   * [ARMV6 (Raspberry Pi 1) (old yunoHost version)](https://hub.docker.com/r/tuxalex/yunohost-armv6/)
 {% else %}
 
@@ -158,10 +156,10 @@ However, community images exist and are available on Docker Hub:
 {% elseif rpi0 %}
 * A Raspberry Pi zero
 {% elseif internetcube %}
-* An Orange Pi PC+ or an Onlinuxino Lime 1 or 2
-* A VPN with a dedicated IP and a `.cube` file
+* An Orange Pi PC+ or an Olinuxino Lime 1 or 2
+* A VPN with a dedicated public IP and a `.cube` file
 {% elseif arm_sup %}
-* An Orange Pi PC+ or an Onlinuxino Lime 1 or 2
+* An Orange Pi PC+ or an Olinuxino Lime 1 or 2
 {% elseif arm_unsup %}
 * An ARM board with at least 512MB RAM
 {% elseif vps_debian %}
@@ -176,7 +174,7 @@ However, community images exist and are available on Docker Hub:
 * A microSD card: 16GB capacity (at least), [class "A1"](https://en.wikipedia.org/wiki/SD_card#Class) highly recommended (such as [this SanDisk A1 card](https://www.amazon.fr/SanDisk-microSDHC-Adaptateur-homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/));
 {% endif %}
 {% if regular %}
-* A USB stick at least 1GB capacity) OR a standard blank CD
+* A USB stick with at least 1GB capacity OR a standard blank CD
 {% endif %}
 {% if at_home %}
 * A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
@@ -192,7 +190,7 @@ However, community images exist and are available on Docker Hub:
 {% endif %}
 
 {% if virtualbox %}
-! N.B. : Installing YunoHost in a VirtualBox is usually intended for testing. To run an actual server on the long-term, you usually need a dedicated physical machine (old computer, ARM board...) or a VPS online.
+! N.B. : Installing YunoHost in a VirtualBox is usually intended for testing. To run an actual server on the long-term, you usually need a dedicated physical machine (old computer, ARM board...) or a server online.
 {% endif %}
 
 
@@ -215,7 +213,7 @@ Here are some VPS providers supporting YunoHost natively :
 {% if at_home %}
 ## [fa=download /] Download the {{image_type}} image
 
-{% if virtualbox %}
+{% if virtualbox or regular %}
 !!! If your host OS is 32 bits, be sure to download the 32-bit image.
 {% elseif arm_unsup %}
 <div class="hardware-image">
@@ -301,7 +299,7 @@ $(document).ready(function () {
 ## ![USB drive](image://usb_key.png?resize=100,100&class=inline) Flash the YunoHost image
 {% endif %}
 
-Now that you downloaded the image of {{image_type}}, you should flash it on {% if arm %}a SD card{% else %}a USB stick or a CD.{% endif %}
+Now that you downloaded the image of {{image_type}}, you should flash it on {% if arm %}a microSD card{% else %}a USB stick or a CD/DVD.{% endif %}
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommended) With Etcher"]
@@ -351,6 +349,8 @@ For older devices, you might want to burn a CD/DVD. The software to use depends 
 ## Create a new virtual machine
 
 ![](image://virtualbox_1.png?class=inline)
+
+! It's okay if you can only have 32-bit versions, just be sure that you downloaded the 32-bit image previously.
 
 ## Tweak network settings
 
@@ -449,7 +449,7 @@ sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/fir
 ! This last command need to be run after each yunohost upgrade :/
 
 {% elseif arm_unsup %}
-## [fa=bug /] Connect to the board
+## [fa=terminal /] Connect to the board
 
 Next you need to [find the local IP address of your server](/finding_the_local_ip) to connect as root user [via SSH](/ssh) with the temporary password `1234`.
 
@@ -490,9 +490,9 @@ curl https://install.yunohost.org | bash
 {%if at_home %}
 In an internet browser, type **{% if internetcube %}`https://internetcube.local`{% else %}`https://yunohost.local`{% endif %}**.
 
-!!! If this doesn't work, you can look for the **the local IP address of your server** (see [finding your local IP](/finding_the_local_ip)). The address typically looks like `192.168.x.y`, and you should therefore type `https://192.168.x.y` in your browser's address bar.
+!!! If this doesn't work, you can [look for the the local IP address of your server](/finding_the_local_ip). The address typically looks like `192.168.x.y`, and you should therefore type `https://192.168.x.y` in your browser's address bar.
 {% else %}
-You can perform the post-installation with the web interface **the public IP address of your server**. Typically, your VPS provider should have provided you with the IP of the server.
+You can perform the initial configuration with the web interface by typing in the adress bar of your web browser **the public IP address of your server**. Typically, your VPS provider should have provided you with the IP of the server.
 {% endif %}
 
 ! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). For now, you should add a security exception to accept the current certificate. (Though PLEASE, don't take the habit to blindly accepting this kind of security alerts !)
@@ -610,3 +610,5 @@ yunohost domain cert-install
 ## ![](image://tada.png?resize=32&classes=inline) Congratz!
 
 You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](/apps). Don't forget to [configure backups](/backup) !
+
+{% endif %}
