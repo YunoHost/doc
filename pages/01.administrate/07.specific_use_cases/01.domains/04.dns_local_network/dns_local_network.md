@@ -1,4 +1,11 @@
-# Local network access to your server
+---
+title: Local network access to your server
+template: docs
+taxonomy:
+  category: docs
+routes:
+  default: '/dns_local_network'
+---
 
 After completing your server installation, it is possible that your domain will not be accessible through the local network. This is an issue known as [hairpinning](http://en.wikipedia.org/wiki/Hairpinning) - a feature that is not well supported by some internet routers.
 
