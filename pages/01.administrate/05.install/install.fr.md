@@ -533,22 +533,22 @@ C’est le mot de passe qui vous permettra d’accéder à l’interface d’adm
 
 ## [fa=user /] Créer un premier utilisateur
 
-Once the postinstall is done, you should be able to actually log in the web admin interface using the administration password.
+Une fois la configuration initiale faite, vous devriez être capable de vous connecter à l'interface d'administration web en utilisant le mot de passe d'administration.
 
-So far, your server knows about the `admin` user - but `admin` is not a "regular" user and *can't* be used to log on [the user portal](/users).
+Bien que votre serveur connaisse l'utilisateur `admin`, cet utilisateur `admin` n'est pas un utilisateur "standard" et ne peut pas se connecter sur le [portail utilisateur](/users).
 
-Let's therefore add a first "regular" user.
+Par conséquent, vous devriez ajouter un premier utilisateur "standard".
 
-!!! The first user you create is a bit special : it will receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld`. These emails may be used to send technical informations or alerts.
+!!! Le premier utilisateur que vous créez est un peu spéciale : il recevra les emails envoyé à `root@votredomaine.tld` et `admin@votredomaine.tld`. Ces emails peuvent être utilisés pour envoyer des informations ou des alertes techniques.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="From the web interface"]
+[ui-tab title="A partir de l'interface web"]
 
 Allez dans `Users > Add`
 
 TODO: add a screenshot
 [/ui-tab]
-[ui-tab title="From the command line"]
+[ui-tab title="A partir de la ligne de commande"]
 ```
 yunohost user create johndoe
 ```
@@ -560,22 +560,22 @@ TODO : copypasta an actual shell session will all info asked etc..
 
 ## [fa=stethoscope /] Lancer le diagnostic
 
-The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured - and guide you in how to fix issues. The diagnosis will run twice a day and send an alert if issues are detected.
+Le système de diagnostique est conçu pour fournir un moyen facile de valider que tous les aspects critiques de votre serveur sont proprement configuré et pour vous guider dans la résolutions des problèmes soulevés. Le diagnostique se lance 2 fois par jour et envoie une alerte si un dysfonctionnement est détecté.
 
-!!! N.B. : **don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/dns) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain) and/or [port forwarding](/isp_box_config) (if hosting at home).
+!!! N.B. : **ne partez pas en courant** ! La première fois que vous lancerez le diagnostique, c'est assez normal d'avoir un tas  d'alertes rouges ou jaunes parce que vous devez généralement [configurer les enregistrements DNS](/dns) (si vous n'utilisez pas un domaine `.nohost.me`, `.noho.st` ou `.ynh.fr`){%if at_home %} et/ou [configurer la redirection des ports](/isp_box_config){% endif %}.
 
-!!! If an alert is not relevant (for example because you don't intend on using a specific feature), it is perfectly fine to flag the issue as 'ignored' by going in the webadmin > Diagnosis, and clicking the ignore button for this specifc issue.
+!!! Si une alerte n'est pas pertinente (par exemple parce que vous ne pensez pas utiliser une fonctionnalité spécifique), il est tout à fait convenable d'indiquer le dysfonctionnement comme "A ignorer" en allant dans l'administration web > Diagnostic, et en cliquant sur bouton "Ignorer" pour ce dysfonctionnement spécifique.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="(Recommended) From the web interface"]
-To run a diagnosis, go on Web Admin in the Diagnosis section. You should get a screen like this :
+[ui-tab title="(Recommandé) A partir de l'interface web"]
+Pour lancer le diagnostique, allez dans l'Administration Web dans la partie Diagnostique. Vous devriez obtenir un écran comme celui-ci :
 
-[figure class="nomargin" caption="Preview of the diagnostic panel"]
+[figure class="nomargin" caption="Capture d'écran du panneau de diagnostic"]
 ![](image://diagnostic.png?resize=100%&class=inline)
 [/figure]
 
 [/ui-tab]
-[ui-tab title="From the command line"]
+[ui-tab title="A partir de la ligne de commande"]
 ```
 yunohost diagnosis run
 yunohost diagnosis show --issues --human-readable
@@ -585,19 +585,19 @@ yunohost diagnosis show --issues --human-readable
 
 ## [fa=lock /] Obtenir un certificat Let's Encrypt
 
-Once you configured DNS records and port forwarding (if needed), you should be able to install a a Let's Encrypt certificate. This will get rid of the spooky security warning from earlier for new visitors.
+Une fois que vous avez configuré, si nécessaire, les enregistrements DNS et la redirection de ports, vous devriez être en mesure d'installer un certificat Let's Encrypt. Ceci permettra de supprimer l'étrange alerte de sécurité vue plus tôt.
 
-For more detailled instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/certificate).
+Pour plus d'instructions détaillées, ou pour en savoir plus à propos des certificats SSL/TLS, voir [la page correspondante ici](/certificate).
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="From the web interface"]
+[ui-tab title="A partir de l'interface web"]
 
-[figure class="nomargin" caption="Preview of the diagnostic panel"]
+[figure class="nomargin" caption="Capture d'écran du panneau pour installer un certificat Let's Encrypt"]
 ![](image://certificate-before-LE.png?resize=100%&class=inline)
 [/figure]
 
 [/ui-tab]
-[ui-tab title="From the command line"]
+[ui-tab title="A partir de la ligne de commande"]
 ```
 yunohost domain cert-install
 ```
@@ -607,6 +607,6 @@ yunohost domain cert-install
 
 ## ![](image://tada.png?resize=32&classes=inline) Félicitation !
 
-You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](/apps). Don't forget to [configure backups](/backup) !
+Vous avez maintenant un serveur plutôt bien configuré. Si vous découvrez YunoHost, nous vous recommandons de jeter un oeil à [la visite guidée](/overview). Vous devriez aussi être en mesure d'[installer  vos applications favorites](/apps). N'oubliez pas de [configurer les sauvegardes](/backup) !
 
 {% endif %}
