@@ -21,22 +21,25 @@ languages:
     - de
     - es
     - ar
-  default_lang: null
+    - oc
+    - it
+    - ru
+  default_lang: en
   include_default_lang: true
-  include_default_lang_file_extension: false
+  include_default_lang_file_extension: true
   translations: true
   translations_fallback: true
-  session_store_active: true
+  session_store_active: false
   http_accept_language: true
   override_locale: false
   content_fallback:
     en: 'fr,de,es'
     de: 'en,fr,es'
     es: 'en,fr,de'
-  pages_fallback_only: true
+  pages_fallback_only: false
 home:
   alias: /home
-  hide_in_urls: false
+  hide_in_urls: true
 pages:
   type: regular
   theme: yunohost-docs
@@ -84,7 +87,7 @@ pages:
   expires: 604800
   cache_control: null
   last_modified: false
-  etag: false
+  etag: true
   vary_accept_encoding: false
   redirect_default_route: false
   redirect_default_code: '302'
@@ -114,10 +117,10 @@ cache:
   clear_images_by_default: true
   cli_compatibility: false
   lifetime: 604800
-  gzip: false
+  gzip: true
   allow_webserver_gzip: false
   redis:
-    socket: null
+    socket: '0'
     server: null
     port: null
     password: null
@@ -129,7 +132,7 @@ cache:
     port: null
 twig:
   cache: true
-  debug: true
+  debug: false
   auto_reload: true
   autoescape: false
   undefined_functions: true
@@ -169,7 +172,7 @@ images:
   cache_perms: '0755'
   debug: false
   auto_fix_orientation: true
-  seofriendly: false
+  seofriendly: true
   defaults:
     loading: auto
 media:
@@ -190,7 +193,7 @@ session:
   split: true
   path: null
 gpm:
-  releases: testing
+  releases: stable
   proxy_url: null
   method: auto
   verify_peer: true

@@ -1,7 +1,17 @@
-title: YunoHost documentation
+title: 'Yunohost Documentation'
+default_lang: en
 author:
-  name: YunoHost contributors
-  email: 'yunohost@yunohost.org'
+  name: Yunohost
+  email: yunohost@yunohost.org
+taxonomies:
+  - category
+  - tag
 metadata:
-    description: 'The multi-language documentation for the selfhosting system YunoHost'
-
+  description: 'Yunohost Documentation'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+redirects: null
+routes: null
