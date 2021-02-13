@@ -1,34 +1,30 @@
 ---
-title: Documentation
+title: Bienvenue!
 template: docs
 taxonomy:
     category: docs
 routes:
   default: '/docs'
+  aliases:
+    - '/'
 visible: false
 ---
 
-! This page is obsolete and should be reworked
+Ce site contiens la documentation de [YunoHost, un système d'exploitation libre qui vise à simplifier l'administration d'un serveur et à démocratiser l'auto-hébergement](/whatsyunohost).
 
-La documentation de YunoHost s’articule autour de deux sections :
+En tant que futur jardinier de votre propre serveur, commencez par visiter le [guide de l'administrateur](/admindoc) pour en savoir plus sur l'autohébergement, comment installer votre serveur, et installer vos premières applications.
 
-[[fa=fa-lock /] Guide de l’administrateur](/administrate?classes=btn,btn-lg,btn-primary)  
-Incluant l’installation, la gestion du serveur et des applications.
+Vous pouvez explorer ici le [catalogue d'application](/apps) installable sur votre serveur (bien qu'il soit aussi consultable directement depuis votre interface d'administration !)
 
-[[fa=fa-heart /] Guide du contributeur](/contribute?classes=btn,btn-lg,btn-error)  
-Qui contient tout ce que vous devez savoir à propos de nous et de notre manière de travailler.
+La [communauté](/community) est là si vous avez besoin d'aide : venez discuter sur les [salons de discussions](/chat_rooms) ou posez vos questions sur le [forum](/community/forum) !
 
-* Vie du projet :
-   * [Foire aux questions](/faq)
-   * [Nouvelles du projet](/news)
-   * [Organisation du projet](/project_organization)
-   * [Budget previsionnel](/project_budget)
-   * [Forum](https://forum.yunohost.org)
-   * [Salons de discussions](/chat_rooms)
-   * [Communication extérieure](/communication)
-   * [Support / Aide](/help)
-   * [Mécénes et partenaires](/sponsors_partners_fr)
+[center]
 
-* Exemple d'utilisation :
-   * [YunoHost pour les organisations à but non lucratif](/use_case_non-profit_organisations)
-   * [YunoHost pour les CHATONS (Collectif des Hébergeurs Alternatifs, Transparents, Ouverts, Neutres et Solidaires)](https://wiki.chatons.org/doku.php/yunohost)
+<a href="/docbeta/en/admindoc" class="btn btn-lg btn-primary inline"><i class="fa fa-cogs"></i> Guide d'administration</a>
+<a href="/docbeta/en/apps" class="btn btn-lg btn-success inline"><i class="fa fa-cubes"></i> Applications</a>
+<a href="/docbeta/en/contribute" class="btn btn-lg btn-primary" style="background: blueviolet;border-color: blueviolet;"><i class="fa fa-users"></i> Communauté</a>
+<a href="/docbeta/en/contribute" style="background: orange; border-color: orange;" class="btn btn-lg btn-error"><i class="fa fa-heart"></i> Contribuer</a>
+
+[/center]
+
+!!!! Pour naviguer dans cette documentation, vous pouvez utiliser les flèches gauches et droites. Utilisez le [fa=bars /] panneau latéral pour aller directement dans les sections qui vous intéresse ou en utilisant la [fa=search /] barre de recherche. Enjoy!

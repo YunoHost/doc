@@ -15,7 +15,7 @@ SSH (from your local network! or using a rescue mode if you're on a VPS...)
 
 ## Using the web administration interface
 
-First, connect to your [web administration](/admin).
+First, connect to your web administration.
 
 Then go to Tools > Change administration password.
 

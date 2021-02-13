@@ -7,4 +7,4 @@ routes:
   default: '/app_pleroma'
 ---
 
-Unfortunately, this page only exists [in french here](/app_pleroma_fr) for now.
+Unfortunately, this page only exists in french for now.
