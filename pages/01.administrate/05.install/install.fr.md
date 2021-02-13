@@ -1,5 +1,5 @@
 ---
-title: Install YunoHost
+title: Installer YunoHost
 template: docs
 taxonomy:
     category: docs
