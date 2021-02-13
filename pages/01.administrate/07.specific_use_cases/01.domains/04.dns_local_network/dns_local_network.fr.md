@@ -1,4 +1,11 @@
-# Accéder à son serveur depuis le réseau local
+---
+title: Accéder à son serveur depuis le réseau local
+template: docs
+taxonomy:
+  category: docs
+routes:
+  default: '/dns_local_network'
+---
 
 Après installation de votre serveur, il est possible que votre nom de domaine ne soit pas accessible depuis le réseau local où se trouve le serveur. Ceci est un problème connu sous le nom de [hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) - une fonctionnalité mal supportée par certaines box internet.
 
