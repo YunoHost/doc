@@ -521,7 +521,7 @@ C’est le nom de domaine qui permettra l’accès à votre serveur ainsi qu’a
 
 * Si l'auto-hébergement est tout neuf pour vous et que vous n'avez pas encore de nom de domaine, nous recommandons d'utiliser un domaine en **.nohost.me** / **.noho.st** / **.ynh.fr** (exemple : `homersimpson.nohost.me`). S'il n'est pas déjà utilisé, le domaine sera automatiquement rattaché à votre serveur YunoHost, et vous n’aurez pas d’étape de configuration supplémentaire. Toutefois, notez que l'utilisation d'un de ces noms de domaines implique que vous n'aurez pas le contôle complet sur votre configuration DNS.
 
-* SI en revanche vous avez déjà votre propre nom de domaine, vous souhaitez probablement l'utiliser. Vous aurez donc besoin ensuite de configurer les enregistrements DNS comme expliqué [ici](/dns).
+* SI en revanche vous avez déjà votre propre nom de domaine, vous souhaitez probablement l'utiliser. Vous aurez donc besoin ensuite de configurer les enregistrements DNS comme expliqué [ici](/dns_config).
 
 !!! Oui, vous *devez* configurer un nom de domaine. Si vous n'avez pas de nom de domaine et que vous n'en voulez pas en **.nohost.me**, **.noho.st** ou **.ynh.fr**, vous pouvez utilisez un "faux" domaine comme par exemple `yolo.test` et modifier votre fichier `/etc/hosts` pour que ce domaine pointe vers l'IP de votre serveur, comme expliqué [ici](/dns_local_network).
 
@@ -559,7 +559,7 @@ TODO : copypasta an actual shell session will all info asked etc..
 
 Le système de diagnostique est conçu pour fournir un moyen facile de valider que tous les aspects critiques de votre serveur sont proprement configuré et pour vous guider dans la résolution des problèmes soulevés. Le diagnostique se lance deux fois par jour et envoie une alerte si un dysfonctionnement est détecté.
 
-!!! N.B. : **ne partez pas en courant** ! La première fois que vous lancerez le diagnostique, il est assez normal d'avoir plusieurs alertes rouges ou jaunes car vous devez généralement [configurer les enregistrements DNS](/dns) (si vous n'utilisez pas un domaine `.nohost.me`, `.noho.st` ou `.ynh.fr`){%if at_home %} et/ou [configurer la redirection des ports](/isp_box_config){% endif %}.
+!!! N.B. : **ne partez pas en courant** ! La première fois que vous lancerez le diagnostique, il est assez normal d'avoir plusieurs alertes rouges ou jaunes car vous devez généralement [configurer les enregistrements DNS](/dns_config) (si vous n'utilisez pas un domaine `.nohost.me`, `.noho.st` ou `.ynh.fr`){%if at_home %} et/ou [configurer la redirection des ports](/isp_box_config){% endif %}.
 
 !!! Si une alerte n'est pas pertinente (par exemple parce que vous ne pensez pas utiliser une fonctionnalité spécifique), il est tout à fait convenable d'indiquer le dysfonctionnement comme "A ignorer" en allant dans l'administration web > Diagnostic, et en cliquant sur bouton "Ignorer" pour ce dysfonctionnement spécifique.
 

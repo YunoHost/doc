@@ -17,11 +17,11 @@ Dans la configuration de son DNS, on aura donc une entrée A avec l’adresse IP
 Nom Type Valeur
 ```bash
 @         A         XYZ.XYZ.XYZ.XYZ
-@         AAAA        1234:1234:1234:FFAA:FFAA:FFAA:FFAA:AAFF
-*         CNAME         mondomaine.fr.
-agenda         CNAME         mondomaine.fr.
-blog         CNAME         mondomaine.fr.
-rss         CNAME         mondomaine.fr.
+@         AAAA      1234:1234:1234:FFAA:FFAA:FFAA:FFAA:AAFF
+*         CNAME     mondomaine.fr.
+agenda    CNAME     mondomaine.fr.
+blog      CNAME     mondomaine.fr.
+rss       CNAME     mondomaine.fr.
 ```
 permet d’avoir un `agenda.mondomaine.fr`, un `blog.mondomaine.fr` etc.
 
