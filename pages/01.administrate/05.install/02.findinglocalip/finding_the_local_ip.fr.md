@@ -17,18 +17,19 @@ L'une de ces astuces devrait permettre de trouver l'IP locale de votre serveur :
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommandé) Avec AngryIP"]
 
-Vous pouvez utiliser le logiciel [AngryIP](https://angryip.org/download/) pour y parvenir. Vous devez juste scanner ces plages d'IP dans cet ordre jusqu'à trouver des IP actives :
-- 192.168.0.0 -> 192.168.0.255
-- 192.168.1.0 -> 192.168.1.255
-- 192.168.2.0 -> 192.168.255.255
-- 10.0.0.0 -> 10.0.255.255
-- 172.16.0.0 -> 172.31.255.255
+Vous pouvez utiliser le logiciel [AngryIP](https://angryip.org/download/) pour y parvenir. Vous devez juste scanner ces plages d'IP dans cet ordre jusqu'à trouver l'IP correspondante à votre serveur :
+- `192.168.0.0` -> `192.168.0.255`
+- `192.168.1.0` -> `192.168.1.255`
+- `192.168.2.0` -> `192.168.255.255`
+- `10.0.0.0` -> `10.0.255.255`
+- `172.16.0.0` -> `172.31.255.255`
 
-!!! Astuce: vous pouvez ordonner par ping comme dans cette image.
+!!! **Astuces**:
+!!! - vous pouvez ordonner par ping comme dans cette capture d'écran, pour voir plus facilement toutes les IP effectivement actives.
+!!! - votre serveur devrait être monté comme écoutant sur les ports 80 et 443
+!!! - en cas de doute, tapez directement dans votre navigateur `https://192.168.x.y` pour voir si c'est un Yunohost ou non.
 
 ![](image://angryip.png?class=inline)
-
-Si vous trouvez des IPs avec un ping, vous pouvez essayer de les taper directement dans le navigateur pour voir si c'est une YunoHost ou non.
 
 [/ui-tab]
 [ui-tab title="Avec votre box internet"]
@@ -42,12 +43,13 @@ Si la commande `arp-scan` vous affiche beaucoup de machines, vous pouvez vérifi
 [ui-tab title="With a screen"]
 Branchez un écran sur votre serveur, loggez-vous et tapez `hostname --all-ip-address`.
 
-Si vous ne connaissez pas les identifiants pour vous connecter, essayez les identifiants par défaut suivant :
+Les identifiants par défaut (avant la post-installation!) sont:
+- login: root
+- mot de passe: yunohost
 
-| login | mot de passe |
-|---|---|
-| root | yunohost |
-| root | 1234 |
+(Si vous utilisez une image Armbian brute plutôt que les images Yunohost pré-installées, les identifiants sont root / 1234)
+
+
 
 [/ui-tab]
 [/ui-tabs]

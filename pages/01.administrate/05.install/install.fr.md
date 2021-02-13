@@ -13,7 +13,7 @@ page-toc:
   depth: 2
 routes:
   default: '/install'
-  aliases: 
+  aliases:
     - '/docker'
     - '/install_iso'
     - '/install_on_vps'
@@ -177,7 +177,7 @@ Cependant, ces images communautaires existent et sont disponibles sur Docker Hub
 * Une clé USB avec au moins 1Go de capacité OU un CD viege standard
 {% endif %}
 {% if at_home %}
-* Un [fournisseur d'accès correct](/isp), de préférence avec une bonne vitesse d’upload
+* Un [fournisseur d'accès internet correct](/isp), de préférence avec une bonne vitesse d’upload
 {% if rpi0 %}
 * Un câble OTG ou un adaptateur Wifi USB pour connecter votre Raspberry Pi Zero
 {% elseif not virtualbox %}
@@ -190,7 +190,7 @@ Cependant, ces images communautaires existent et sont disponibles sur Docker Hub
 {% endif %}
 
 {% if virtualbox %}
-! N.B. : Installer YunoHost dans une VirtualBox est utile pour tester la distribution. Pour réellement s'autohéberger sur le long terme, il vous faudra probablement une machine physique (vieil ordinateur, carte ARM...) ou un serveur en ligne. 
+! N.B. : Installer YunoHost dans une VirtualBox est utile pour tester la distribution. Pour réellement s'autohéberger sur le long terme, il vous faudra probablement une machine physique (vieil ordinateur, carte ARM...) ou un serveur en ligne.
 {% endif %}
 
 
@@ -216,13 +216,9 @@ Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 {% if virtualbox or regular %}
 !!! Si votre hôte est en 32 bits, faite bien attention à télécharger l'image 32 bits.
 {% elseif arm_unsup %}
-<div class="hardware-image">
-<div class="card panel panel-default">
-    <div class="btn-group" role="group">
-        <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=download] Télécharger</a>
-    </div>
-</div>
-</div>
+<a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=external-link] Télécharger l'image pour votre carte sur le site d'Armbian</a>
+
+!!! N.B.: il vous faut télécharger l'image Armbian Buster.
 {% endif %}
 
 
@@ -378,13 +374,14 @@ Allez dans **Réglages** > **Réseau** :
 
 {% if arm %}
 ## [fa=plug /] Démarrer la carte
-* Branchez le cable ethernet (un cé à votre box, de l'autre côté à votre carte).
+
+* Branchez le câble ethernet (un côté sur votre box, l'autre côté à votre carte).
     * Pour les utilisateurs et utilisatrices souhaitant configurer la carte pour la connecter via le WiFi à la place, voir [cet exemple](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
 * Mettez la carte SD dans le serveur
 * (Faculatif) Il est possible de brancher un écran et clavier sur votre serveur en cas de soucis ou pour vérifier que le processus de démarrage (boot) se passe bien ou encore pour avoir un accès direct en console.
 * Branchez l'alimentation
 * Laissez quelques minutes à votre serveur pour s'autoconfigurer durant le premier démarrage
-* Assurez vous que votre ordianteur (de bureau ou portable) est connecté au même réseau local (c'est-à-dire la même box internet) que votre serveur.
+* Assurez vous que votre ordinateur (de bureau ou portable) est connecté au même réseau local (c'est-à-dire la même box internet) que votre serveur.
 
 {% elseif virtualbox %}
 ## [fa=plug /] Lancer la machine virtuelle
@@ -424,7 +421,7 @@ Vous devriez voir un écran comme ça :
 
 {% if rpi1 or rpi0 %}
 ## [fa=bug /] Se connecter à la carte et corriger l'image
-Les Raspberry Pi 1 et zero ne sont pas totalement supportés à cause de dysfonctionnements avec metronome (XMPP) et avec miniupnpc (autoconfiguration de la box).
+Les Raspberry Pi 1 et 0 ne sont pas totalement supportés à cause de [problèmes de compilation pour cette architecture](https://github.com/YunoHost/issues/issues/1423).
 
 Cependant, il est possible de corriger l'image par vous même avant de lancer la configuration initiale.
 
@@ -435,8 +432,8 @@ ssh root@yunohost.local
 
 Ensuite, lancez les commandes suivantes pour contourner le dysfonctionnement de metronome :
 ```
-mv /usr/bin/metronome{,.bkp}   
-mv /usr/bin/metronomectl{,.bkp} 
+mv /usr/bin/metronome{,.bkp}
+mv /usr/bin/metronomectl{,.bkp}
 ln -s /usr/bin/true /usr/bin/metronome
 ln -s /usr/bin/true /usr/bin/metronomectl
 ```
@@ -451,7 +448,7 @@ sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/fir
 {% elseif arm_unsup %}
 ## [fa=terminal /] Se connecter à la carte
 
-Ensuite, il vous faut [trouver l'adresse IP locale de votre serveur(/finding_the_local_ip) pour vous connecter en tant que root [via SSH](/ssh) avec le mot de passe temporaire `1234`.
+Ensuite, il vous faut [trouver l'adresse IP locale de votre serveur](/finding_the_local_ip) pour vous connecter en tant que root [via SSH](/ssh) avec le mot de passe temporaire `1234`.
 
 ```
 ssh root@192.168.x.xxx
@@ -526,7 +523,7 @@ C’est le nom de domaine qui permettra l’accès à votre serveur ainsi qu’a
 
 * SI en revanche vous avez déjà votre propre nom de domaine, vous souhaitez probablement l'utiliser. Vous aurez donc besoin ensuite de configurer les enregistrements DNS comme expliqué [ici](/dns).
 
-!!! Oui, vous *devez* configurer un nom de domaine. Si vous n'avez pas de nom de domaine et que vous n'en voulez pas en **.nohost.me**, **.noho.st** ou **.ynh.fr**, vous pouvez utilisez un un faux domaine comme par exemple `yolo.test` et modifier votre fichier `/etc/hosts` pour que ce domaine pointe vers l'IP de votre serveur, comme expliqué [ici](/dns_local_network).
+!!! Oui, vous *devez* configurer un nom de domaine. Si vous n'avez pas de nom de domaine et que vous n'en voulez pas en **.nohost.me**, **.noho.st** ou **.ynh.fr**, vous pouvez utilisez un "faux" domaine comme par exemple `yolo.test` et modifier votre fichier `/etc/hosts` pour que ce domaine pointe vers l'IP de votre serveur, comme expliqué [ici](/dns_local_network).
 
 ##### [fa=key /] Mot de passe d’administration
 C’est le mot de passe qui vous permettra d’accéder à l’interface d’administration de votre serveur. Vous pourrez également l’utiliser pour vous connecter à distance [via SSH](/ssh), ou [en SFTP](/filezilla) pour transférer des fichiers. De manière générale, c’est la **clé d’entrée à votre système**, pensez donc à la choisir attentivement.
@@ -535,7 +532,7 @@ C’est le mot de passe qui vous permettra d’accéder à l’interface d’adm
 
 Une fois la configuration initiale faite, vous devriez être capable de vous connecter à l'interface d'administration web en utilisant le mot de passe d'administration.
 
-Bien que votre serveur connaisse l'utilisateur `admin`, cet utilisateur `admin` n'est pas un utilisateur "standard" et ne peut pas se connecter sur le [portail utilisateur](/users).
+Bien que votre serveur dispose maintenant d'un utilisateur `admin`, cet utilisateur `admin` n'est pas un utilisateur "standard" et ne peut pas se connecter sur le [portail utilisateur](/users).
 
 Par conséquent, vous devriez ajouter un premier utilisateur "standard".
 
@@ -560,9 +557,9 @@ TODO : copypasta an actual shell session will all info asked etc..
 
 ## [fa=stethoscope /] Lancer le diagnostic
 
-Le système de diagnostique est conçu pour fournir un moyen facile de valider que tous les aspects critiques de votre serveur sont proprement configuré et pour vous guider dans la résolutions des problèmes soulevés. Le diagnostique se lance 2 fois par jour et envoie une alerte si un dysfonctionnement est détecté.
+Le système de diagnostique est conçu pour fournir un moyen facile de valider que tous les aspects critiques de votre serveur sont proprement configuré et pour vous guider dans la résolution des problèmes soulevés. Le diagnostique se lance deux fois par jour et envoie une alerte si un dysfonctionnement est détecté.
 
-!!! N.B. : **ne partez pas en courant** ! La première fois que vous lancerez le diagnostique, c'est assez normal d'avoir un tas  d'alertes rouges ou jaunes parce que vous devez généralement [configurer les enregistrements DNS](/dns) (si vous n'utilisez pas un domaine `.nohost.me`, `.noho.st` ou `.ynh.fr`){%if at_home %} et/ou [configurer la redirection des ports](/isp_box_config){% endif %}.
+!!! N.B. : **ne partez pas en courant** ! La première fois que vous lancerez le diagnostique, il est assez normal d'avoir plusieurs alertes rouges ou jaunes car vous devez généralement [configurer les enregistrements DNS](/dns) (si vous n'utilisez pas un domaine `.nohost.me`, `.noho.st` ou `.ynh.fr`){%if at_home %} et/ou [configurer la redirection des ports](/isp_box_config){% endif %}.
 
 !!! Si une alerte n'est pas pertinente (par exemple parce que vous ne pensez pas utiliser une fonctionnalité spécifique), il est tout à fait convenable d'indiquer le dysfonctionnement comme "A ignorer" en allant dans l'administration web > Diagnostic, et en cliquant sur bouton "Ignorer" pour ce dysfonctionnement spécifique.
 
@@ -605,8 +602,8 @@ yunohost domain cert-install
 [/ui-tabs]
 {% endif %}
 
-## ![](image://tada.png?resize=32&classes=inline) Félicitation !
+## ![](image://tada.png?resize=32&classes=inline) Félicitations !
 
-Vous avez maintenant un serveur plutôt bien configuré. Si vous découvrez YunoHost, nous vous recommandons de jeter un oeil à [la visite guidée](/overview). Vous devriez aussi être en mesure d'[installer  vos applications favorites](/apps). N'oubliez pas de [configurer les sauvegardes](/backup) !
+Vous avez maintenant un serveur plutôt bien configuré. Si vous découvrez YunoHost, nous vous recommandons de jeter un oeil à [la visite guidée](/overview). Vous devriez aussi être en mesure d'[installer  vos applications favorites](/apps). N'oubliez pas de [prévoir des sauvegardes](/backup) !
 
 {% endif %}

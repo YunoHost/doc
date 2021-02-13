@@ -17,18 +17,19 @@ Any of these tricks should allow you to find the local IP of your server:
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommended) With AngryIP"]
 
-You can use the [AngryIP](https://angryip.org/download/) software to achieve that. You just need to scan these local ip ranges in this order until you find some active IP:
-- 192.168.0.0 -> 192.168.0.255
-- 192.168.1.0 -> 192.168.1.255
-- 192.168.2.0 -> 192.168.255.255
-- 10.0.0.0 -> 10.0.255.255
-- 172.16.0.0 -> 172.31.255.255
+You can use the [AngryIP](https://angryip.org/download/) software to achieve that. You just need to scan these local ip ranges in this order until you find the active IP corresponding to your server:
+- `192.168.0.0` -> `192.168.0.255`
+- `192.168.1.0` -> `192.168.1.255`
+- `192.168.2.0` -> `192.168.255.255`
+- `10.0.0.0` -> `10.0.255.255`
+- `172.16.0.0` -> `172.31.255.255`
 
-!!! Tips: you can order by ping like on this image.
+!!! **Tips**:
+!!! - you can order by ping like on this screenshot to easily see effectively-used IP.
+!!! - your server should typically be displayed as listening on port 80 and 443
+!!! - in case of doubt, just type `https://192.168.x.y` in your browser to check if it's a Yunohost or not.
 
 ![](image://angryip.png?class=inline)
-
-If you find some IPs with a ping, you can try to type it directly in a browser and see if it's a yunohost or not.
 
 [/ui-tab]
 [ui-tab title="With your internet router / box"]
@@ -39,15 +40,14 @@ If you're using Linux, you can open a terminal and use `sudo arp-scan --local` t
 
 If the `arp-scan` command displays a confusing number of devices, you can check which ones are open to SSH with `nmap -p 22 192.168.1.0/24` to sort them out (adapt the IP range to your local network)
 [/ui-tab]
-[ui-tab title="With a screen"]
+[ui-tab title="With a direct access on the server"]
 Plug a screen on your server, log in and type `hostname --all-ip-address`.
 
-If you don't know credentials to login, try the following default credentials:
+The default credentials (before post-installation!) to log in are:
+- login: root
+- password: yunohost
 
-| login | password |
-|---|---|
-| root | yunohost |
-| root | 1234 |
+(If you are using a raw Armbian image instead of the pre-installed Yunohost image, the credentials are root / 1234)
 
 [/ui-tab]
 [/ui-tabs]

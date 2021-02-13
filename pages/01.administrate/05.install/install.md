@@ -216,13 +216,9 @@ Here are some VPS providers supporting YunoHost natively :
 {% if virtualbox or regular %}
 !!! If your host OS is 32 bits, be sure to download the 32-bit image.
 {% elseif arm_unsup %}
-<div class="hardware-image">
-<div class="card panel panel-default">
-    <div class="btn-group" role="group">
-        <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=download] Download</a>
-    </div>
-</div>
-</div>
+<a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=external-link] Download the image for your board on Armbian's website</a>
+
+!!! N.B.: you should download the image Armbian Buster.
 {% endif %}
 
 
@@ -424,7 +420,7 @@ You should see a screen like this:
 
 {% if rpi1 or rpi0 %}
 ## [fa=bug /] Connect to the board and hotfix the image
-Raspberry pi 1 or zero are not totally supported due to issues with  metronome (XMPP) and with miniupnpc (router autoconfig).
+Raspberry Pi 1 and 0 are not totally supported due to [compilation issues for this architecture](https://github.com/YunoHost/issues/issues/1423).
 
 However, it is possible to fix by yourself the image before to run the initial configuration.
 
@@ -537,7 +533,7 @@ This password will be used to access to your server's administration interface. 
 
 Once the postinstall is done, you should be able to actually log in the web admin interface using the administration password.
 
-So far, your server knows about the `admin` user - but `admin` is not a "regular" user and *can't* be used to log on [the user portal](/users).
+So far, your server now has an `admin` user - but `admin` is not a "regular" user and *can't* be used to log on [the user portal](/users).
 
 Let's therefore add a first "regular" user.
 
@@ -609,6 +605,6 @@ yunohost domain cert-install
 
 ## ![](image://tada.png?resize=32&classes=inline) Congratz!
 
-You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](/apps). Don't forget to [configure backups](/backup) !
+You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](/apps). Don't forget to [plan backups](/backup) !
 
 {% endif %}
