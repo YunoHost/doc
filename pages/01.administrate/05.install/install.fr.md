@@ -1,119 +1,612 @@
 ---
-title: Guide d'installation
+title: Install YunoHost
 template: docs
 taxonomy:
     category: docs
+never_cache_twig: true
+twig_first: true
+process:
+    markdown: true
+    twig: true
+page-toc:
+  active: true
+  depth: 2
 routes:
   default: '/install'
+  aliases: 
+    - '/docker'
+    - '/install_iso'
+    - '/install_on_vps'
+    - '/install_manually'
+    - '/install_on_raspberry'
+    - '/install_on_arm_board'
+    - '/install_on_debian'
+    - '/install_on_virtualbox'
+    - '/plug_and_boot'
+    - '/burn_or_copy_iso'
+    - '/boot_and_graphical_install'
+    - '/postinstall'
 ---
+{% set image_type = 'YunoHost' %}
+{% set arm, at_home, regular, rpi2plus, rpi1, rpi0, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, internetcube, docker = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
+{% set hardware = uri.param('hardware')  %}
 
-On which hardware do you want install Yunohost ?
-<select>
-    <option value="" disabled>An ARM board (raspberry pi, olinuxino...)
-    <option id="install_internetcube" value="">→ An internetcube with .cube VPN
-    <option id="install_rpi2p" value="">→ A Rpi 2, 3 or 4
-    <option id="install_arm_supported" value="">→ An Orange Pi PC+ / Olinuxino Lime 1&2
-    <option id="install_rpi1" value="">→ A Rpi 1 (no xmpp features)
-    <option id="install_rpi0" value="">→ A Rpi 0 (no xmpp features)
-    <option id="install_arm_others" value="">→ An other arm board
-    <option id="install_x86athome" value="">→ A regular computer
-    <option value="" disabled>A dedicated or a virtual private server
-    <option id="install_vpsdebian10" value="">→ with debian 10
-    <option id="install_vpsyunohost" value="">→ with yunohost pre-installed
-    <option id="install_virtualbox" value="">virtualbox
-</select>
+{% if hardware == 'regular' %}
+  {% set regular = true %}
+{% elseif hardware == 'internetcube' %}
+  {% set arm, arm_sup, internetcube = true, true, true %}
+  {% set image_type = 'La Brique Internet' %}
+{% elseif hardware == 'rpi2plus' %}
+  {% set arm, rpi2plus = true, true %}
+{% elseif hardware == 'rpi1' %}
+  {% set arm, rpi1 = true, true %}
+{% elseif hardware == 'rpi0' %}
+  {% set arm, rpi0 = true, true %}
+{% elseif hardware == 'arm_sup' %}
+  {% set arm, arm_sup = true, true %}
+{% elseif hardware == 'arm_unsup' %}
+  {% set arm, arm_unsup = true, true %}
+  {% set image_type = 'Armbian' %}
+{% elseif hardware == 'vps_debian' %}
+  {% set vps, vps_debian = true, true %}
+{% elseif hardware == 'vps_ynh' %}
+  {% set vps, vps_ynh = true, true %}
+{% elseif hardware == 'virtualbox' %}
+  {% set at_home, virtualbox = true, true %}
+{% elseif hardware == 'docker' %}
+  {% set docker = true %}
+{% endif %}
+
+{% if arm or regular %}
+  {% set at_home = true %}
+{% endif %}
+
+Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
+[div class="flex-container"]
+
+[div class="flex-child hardware{%if virtualbox %} active{% endif %}"]
+[[figure caption="VirtualBox"]![](image://virtualbox.png?height=75)[/figure]](/install/hardware:virtualbox)
+[/div]
+
+[div class="flex-child hardware{%if rpi2plus or rpi1 or rpi0 %} active{% endif %}"]
+[[figure caption="Raspberry Pi"]![](image://raspberrypi.jpg?height=75)[/figure]](/install/hardware:rpi2plus)
+[/div]
+
+[div class="flex-child hardware{%if arm_sup or arm_unsup or internetcube %} active{% endif %}"]
+[[figure caption="Carte ARM"]![](image://olinuxino.jpg?height=75)[/figure]](/install/hardware:arm_sup)
+[/div]
+
+[div class="flex-child hardware{%if regular %} active{% endif %}"]
+[[figure caption="Ordinateur standard"]![](image://computer.png?height=75)[/figure]](/install/hardware:regular)
+[/div]
+
+[div class="flex-child hardware{%if vps_debian or vps_ynh %} active{% endif %}"]
+[[figure caption="Serveur distant"]![](image://vps.png?height=75)[/figure]](/install/hardware:vps_debian)
+[/div]
+
+[/div]
+[div class="flex-container pt-2"]
+
+{% if rpi2plus or rpi1 or rpi0 %}
+[div class="flex-child hardware{%if rpi2plus %} active{% endif %}"]
+[[figure caption="Raspberry Pi 2, 3 ou 4"]![](image://raspberrypi.jpg?height=50)[/figure]](/install/hardware:rpi2plus)
+[/div]
+
+[div class="flex-child hardware{%if rpi1 %} active{% endif %}"]
+[[figure caption="Raspberry Pi 1"]![](image://rpi1.jpg?height=50)[/figure]](/install/hardware:rpi1)
+[/div]
+
+[div class="flex-child hardware{%if rpi0 %} active{% endif %}"]
+[[figure caption="Raspberry Pi zero"]![](image://rpi0.jpg?height=50)[/figure]](/install/hardware:rpi0)
+[/div]
+{% elseif arm_sup or arm_unsup or internetcube %}
+
+[div class="flex-child hardware{%if internetcube %} active{% endif %}"]
+[[figure caption="La Brique Internet avec un VPN"]![](image://internetcube.png?height=50)[/figure]](/install/hardware:internetcube)
+[/div]
+
+[div class="flex-child hardware{%if arm_sup and not internetcube %} active{% endif %}"]
+[[figure caption="Olinuxino lime1&2 ou Orange Pi PC+"]![](image://olinuxino.jpg?height=50)[/figure]](/install/hardware:arm_sup)
+[/div]
+
+[div class="flex-child hardware{%if arm_unsup %} active{% endif %}"]
+[[figure caption="Autres cartes ARM"]![](image://odroidhc4.png?height=50)[/figure]](/install/hardware:arm_unsup)
+[/div]
+{% elseif vps_debian or vps_ynh %}
+
+[div class="flex-child hardware{%if vps_debian %} active{% endif %}"]
+[[figure caption="VPS ou serveur dédié avec Debian 10"]![](image://debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
+[/div]
+
+[div class="flex-child hardware{%if vps_ynh %} active{% endif %}"]
+[[figure caption="VPS ou serveur dédié avec YunoHost pre-installé"]![](image://logo.png?height=50)[/figure]](/install/hardware:vps_ynh)
+[/div]
+
+{% endif %}
+
+[/div]
+
+
+{% if hardware != '' %}
+
+{% if docker %}
+!! **YunoHost ne supporte plus officiellement Docker depuis les problèmes rencontrés avec la version 2.4+. En cause, YunoHost dépend désormait de systemd et docker a décidé qu’ils ne le supporteraient pas nativement (et il y a d'autres problèmes liés au firewall et aux services).**
+!!
+!! **Nous vous décourageons fortement d'utiliser YunoHost sur docker avec ces images**
+
+## Images communautaires
+
+Cependant, ces images communautaires existent et sont disponibles sur Docker Hub:
+
+  * [AMD64 (classic) (ancienne version de YunoHost)](https://hub.docker.com/r/domainelibre/yunohost/)
+  * [I386 (old computers) (ancienne version de YunoHost)](https://hub.docker.com/r/domainelibre/yunohost-i386/)
+  * [ARMV7 (Raspberry Pi 2/3 ...) (ancienne version de YunoHost)](https://hub.docker.com/r/domainelibre/yunohost-arm/)
+  * [ARMV6 (Raspberry Pi 1) (ancienne version de YunoHost)](https://hub.docker.com/r/tuxalex/yunohost-armv6/)
+{% else %}
+
+
+## [fa=list-alt /] Pré-requis
+
+{% if regular %}
+* Un matériel compatible x86 dédié à YunoHost : portable, netbook, ordinateur avec 512Mo de RAM et 16Go de capacité de stockage (au moins)
+{% elseif rpi2plus %}
+* Un Raspberry Pi 2, 3 ou 4
+{% elseif rpi1 %}
+* Un Raspberry Pi 1 avec au moins 512Mo de RAM
+{% elseif rpi0 %}
+* Un Raspberry Pi zero
+{% elseif internetcube %}
+* Un Orange Pi PC+ ou une Olinuxino Lime 1 ou 2
+* Un VPN avec une IP publique dédiée et un fichier `.cube`
+{% elseif arm_sup %}
+* Un Orange Pi PC+ ou une Olinuxino Lime 1 ou 2
+{% elseif arm_unsup %}
+* Une carte ARM avec au moins 512Mo de RAM
+{% elseif vps_debian %}
+* Un serveur dédié ou virtuel avec Debian 10 (Buster) pré-installé <small>(avec un **kernel >= 3.12**)</small>, 512Mo de RAM et 16Go de capacité de stockage (au moins)
+{% elseif vps_ynh %}
+* Un serveur dédié ou virtuel avec YunoHost pré-installé, 512Mo de RAM et 16Go de capacité de stockage (au moins)
+{% elseif virtualbox %}
+* Un ordinateur x86 avec [VirtualBox installé](https://www.virtualbox.org/wiki/Downloads) et assez de RAM disponible pour lancer une petite machine virtuelle avec 512Mo de RAM et 8Go de capacité de stockage (au moins)
+{% endif %}
+{% if arm %}
+* Une alimentation électrique (soit un adaptateur, soit un cable microUSB) pour alimenter la carte;
+* Une carte microSD: 16Go de capacité (au moins), [classe "A1"](https://fr.wikipedia.org/wiki/Carte_SD#Vitesse) hautement recommandée (comme par exemple [cette carte SanDisk A1](https://www.amazon.fr/SanDisk-microSDHC-Adaptateur-homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/));
+{% endif %}
+{% if regular %}
+* Une clé USB avec au moins 1Go de capacité OU un CD viege standard
+{% endif %}
+{% if at_home %}
+* Un [fournisseur d'accès correct](/isp), de préférence avec une bonne vitesse d’upload
+{% if rpi0 %}
+* Un câble OTG ou un adaptateur Wifi USB pour connecter votre Raspberry Pi Zero
+{% elseif not virtualbox %}
+* Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet.
+{% endif %}
+* Un ordinateur pour lire ce guide, flasher l'image et accéder à votre serveur.
+{% endif %}
+{% if not at_home %}
+* Un ordinateur ou un smartphone pour lire ce guide et accéder à votre serveur.
+{% endif %}
+
+{% if virtualbox %}
+! N.B. : Installer YunoHost dans une VirtualBox est utile pour tester la distribution. Pour réellement s'autohéberger sur le long terme, il vous faudra probablement une machine physique (vieil ordinateur, carte ARM...) ou un serveur en ligne. 
+{% endif %}
 
 
 
 
+{% if vps_ynh %}
+## Fournisseurs de VPS YunoHost
+Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 
-Il existe plusieurs manières d’installer YunoHost. La méthode d’installation diffère légèrement si vous souhaitez l’installer chez vous ou à distance, et du matériel utilisé : **[voir le matériel compatible](/hardware)**
+[div class="flex-container"]
 
-Cette page liste plusieurs types d’installations, classés par catégories.
+[div class="flex-child"]
+[[figure caption="Alsace Réseau Neutre - FR"]![](image://vps_ynh_arn.png?height=50)[/figure]](https://vps.arn-fai.net)
+[/div]
 
----
-
-
-
-
-
+[/div]
+{% endif %}
 
 
+{% if at_home %}
+## [fa=download /] Télécharger l'image {{image_type}}
 
-
-<h1 style="font-weight: 100">Essayer</h1>
-
-<div class="row">
-
-<div class="col col-md-3 text-center">
-<a href="/try"><img height=150 src="/images/logo.png" style="vertical-align:bottom"><b><p>Serveur de démo</p></b></a>
+{% if virtualbox or regular %}
+!!! Si votre hôte est en 32 bits, faite bien attention à télécharger l'image 32 bits.
+{% elseif arm_unsup %}
+<div class="hardware-image">
+<div class="card panel panel-default">
+    <div class="btn-group" role="group">
+        <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=download] Télécharger</a>
+    </div>
 </div>
-
-<div class="col col-md-3 text-center">
-<a href="/install_on_virtualbox"><img src="/images/virtualbox.png" height=150 style="vertical-align:bottom"><b><p>Essayer dans une machine virtuelle</p></b></a>
 </div>
+{% endif %}
 
+
+<div class="hardware-image">
+<div id="cards-list">
 </div>
-
-<br>
-
----
-
-<h1 style="font-weight: 100">Installer à la maison</h1>
-
-<div class="row">
-
-<div class="col col-md-3 text-center">
-<a href="/install_on_raspberry"><img src="/images/raspberrypi.jpg" height=150 style="vertical-align:bottom"><b><p>Sur un Raspberry Pi</p></b></a>
 </div>
-
-<div class="col col-md-3 text-center">
-<a href="/install_on_arm_board"><img src="/images/olinuxino.jpg" height=150 style="vertical-align:bottom; padding:20px"><b><p>Sur une carte ARM</p></b></a>
+<script type="text/template" id="image-template">
+<div id="{id}" class="card panel panel-default">
+        <div class="panel-body text-center pt-2">
+            <h3>{name}</h3>
+            <div class="card-comment">{comment}</div>
+            <div class="card-desc text-center">
+<img src="/user/images/{image}" height=100 style="vertical-align:middle">
+            </div>
+        </div>
+        <div class="annotations flex-container">
+            <div class="flex-child annotation"><a href="{file}.sha256sum">[fa=barcode] Somme de contrôle</a></div>
+            <div class="flex-child annotation"><a href="{file}.sig">[fa=tag] Signature</a></div>
+        </div>
+        <div class="btn-group" role="group">
+            <a href="{file}" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=download] Télécharger <small>{version}</small></a>
+        </div>
 </div>
+</script>
+<script>
+var hardware = "{{ hardware|escape('js') }}";
+/*
+###############################################################################
+  Script that loads the infos from JavaScript and creates the corresponding
+  cards
+###############################################################################
+*/
+$(document).ready(function () {
+    console.log("in load");
+    $.getJSON('https://build.yunohost.org/images.json', function (images) {
+        $.each(images, function(k, infos) {
+            if (infos.tuto.indexOf(hardware) == -1) return;
+            // Fill the template
+            html = $('#image-template').html()
+             .replace('{id}', infos.id)
+             .replace('{name}', infos.name)
+             .replace('{comment}', infos.comment || "&nbsp;")
+             .replace('{image}', infos.image)
+             .replace('{version}', infos.version);
+ 
+            if (infos.file.startsWith("http"))
+                html = html.replace(/{file}/g, infos.file);
+            else
+                html = html.replace(/{file}/g, "https://build.yunohost.org/"+infos.file);
+   
+            if ((typeof(infos.has_sig_and_sums) !== 'undefined') && infos.has_sig_and_sums == false)
+            {
+                var $html = $(html);
+                $html.find(".annotations").html("&nbsp;");
+                html = $html[0];
+            } 
+            $('#cards-list').append(html);
+        });
+    });
+});
+</script>
 
-<div class="col col-md-3 text-center">
-<a href="/install_iso"><img src="/images/computer.png" height=150 style="vertical-align:bottom"><b><p>Sur un ordinateur standard</p></b></a>
-</div>
 
-</div>
 
-<br>
 
----
 
-<h1 style="font-weight: 100">Installer à distance</h1>
 
-<div class="alert alert-info" markdown="1">
-<span class="glyphicon glyphicon-heart"></span> Des FAI associatifs près de chez vous sont peut-être capable de vous fournir un *Serveur Privé Virtuel* (VPS), géré par des humains qui respectent les utilisateurs et la [Neutralité du Net](https://fr.wikipedia.org/wiki/Neutralit%C3%A9_du_r%C3%A9seau) ! Voir [cette page](https://db.ffdn.org/) pour plus d'informations.
-</div>
+{% if not virtualbox %}
 
-<div class="row">
+{% if arm %}
+## ![microSD card with adapter](image://sdcard_with_adapter.png?resize=100,75&class=inline) Flasher l'image {{image_type}}
+{% else %}
+## ![USB drive](image://usb_key.png?resize=100,100&class=inline) Flasher l'image YunoHost
+{% endif %}
 
-<div class="block-center text-center">
-<a href="/install_on_vps"><img src="/images/vps.png" height=150 style="vertical-align:bottom; text-align:center"><b><p>Sur un serveur dédié ou virtuel (VPS)</p></b></a>
-</div>
+Maintenant que vous avez téléchargé l’image de {{image_type}}, vous devez la mettre sur {% if arm %}une carte microSD{% else %}une clé USB ou un CD/DVD.{% endif %}
 
-</div>
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="(Recommandé) Avec Etcher"]
 
-<br>
+Téléchargez <a href="https://www.balena.io/etcher/" target="_blank">Etcher</a> pour votre système d'exploitation et installez-le.
 
----
+Branchez votre {% if arm %}carte microSD{% else %}clé USB{% endif %}, selectionnez votre image et cliquez "Flash".
 
-<h1 style="font-weight: 100">Avancé / autres</h1>
+![Etcher](image://etcher.gif?resize=700&class=inline)
 
-<div class="row">
+[/ui-tab]
+[ui-tab title="Avec USBimager"]
 
-<div class="col col-md-3 text-center">
-<a href="/install_on_debian"><img height=150 src="/images/debian-logo.png" style="vertical-align:bottom">
-<b><p>Sur Debian 10/Buster</p></b></a>
-</div>
+Téléchargez [USBimager](https://bztsrc.gitlab.io/usbimager/) pour votre système d'exploitation et installez-le.
 
-<div class="col col-md-3 text-center">
-<a href="/dev"><img src="/images/lxc.png" height=150 style="vertical-align:bottom"><b><p>Environnement de dev avec LXD/LXC</p></b></a>
-</div>
+Branchez votre {% if arm %}carte microSD{% else %}clé USB{% endif %}, selectionnez votre image et cliquez "Write".
 
-<div class="col col-md-3 text-center">
-<a href="/docker"><img src="/images/docker.png" height=150 style="vertical-align:bottom"><b><p>(Non-officiel !) Images docker</p></b></a>
-</div>
+![USBimager](image://usbimager.png?resize=700&class=inline)
 
-</div>
+[/ui-tab]
+[ui-tab title="Avec dd"]
+
+Si vous êtes sur GNU/Linux / macOS et que vous êtes familier avec la ligne de commande, il est possible de flasher la clef USB ou carte SD avec dd. Vous pouvez identifier le nom du périphérique avec `fdisk -l` ou `lsblk`. Une carte SD s'apelle typiquement `/dev/mmcblk0`. ATTENTION à faire attention de prendre le bon nom !
+
+Ensuite lancez :
+
+```bash
+# Remplacez /dev/mmcblk0 si le nom de votre périphérique est différent...
+dd if=/path/to/yunohost.img of=/dev/mmcblk0
+```
+
+[/ui-tab]
+{% if regular %}
+[ui-tab title="Copier un CD/DVD"]
+Pour les anciens matériels, il vous faut peut-être utiliser un CD/DVD. Le logiciel à utiliser est différent suivant votre système d’exploitation.
+
+* Sur Windows, utilisez [ImgBurn](http://www.imgburn.com/) pour écrire l’image sur le disque
+
+* Sur macOS, utilisez [Disk Utility](http://support.apple.com/kb/ph7025)
+
+* Sur GNU/Linux, vous avez plusieurs choix, tels que [Brasero](https://wiki.gnome.org/Apps/Brasero) ou [K3b](http://www.k3b.org/)
+
+[/ui-tab]
+{% endif %}
+[/ui-tabs]
+
+{% else %}
+
+## Créer une nouvelle machine virtuelle
+
+![](image://virtualbox_1.png?class=inline)
+
+! Ce n'est pas grave si seulement la version 32-bit est dispo, mais dans ce cas soyez sur d'avoir téléchargé l'image 32 bit précédemment.
+
+## Modifier la configuration réseau
+
+! Cette étape est importante pour exposer proprement la machine virtuelle sur le réseau
+
+Allez dans **Réglages** > **Réseau** :
+
+* Sélectionnez `Accès par pont`
+* Choisissez votre interface selon son nom :
+    **wlan0** si vous êtes connecté sans-fil, **eth0** or **eno1** sinon.
+
+![](image://virtualbox_2.png?class=inline)
+
+{% endif %}
+
+
+
+
+
+
+
+
+
+{% if arm %}
+## [fa=plug /] Démarrer la carte
+* Branchez le cable ethernet (un cé à votre box, de l'autre côté à votre carte).
+    * Pour les utilisateurs et utilisatrices souhaitant configurer la carte pour la connecter via le WiFi à la place, voir [cet exemple](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
+* Mettez la carte SD dans le serveur
+* (Faculatif) Il est possible de brancher un écran et clavier sur votre serveur en cas de soucis ou pour vérifier que le processus de démarrage (boot) se passe bien ou encore pour avoir un accès direct en console.
+* Branchez l'alimentation
+* Laissez quelques minutes à votre serveur pour s'autoconfigurer durant le premier démarrage
+* Assurez vous que votre ordianteur (de bureau ou portable) est connecté au même réseau local (c'est-à-dire la même box internet) que votre serveur.
+
+{% elseif virtualbox %}
+## [fa=plug /] Lancer la machine virtuelle
+
+Démarrez votre machine virtuelle aprés avoir sélectionné l'image YunoHost.
+
+![](image://virtualbox_2.1.png?class=inline)
+
+! Si vous rencontrez l'erreur "VT-x is not available", il vous faut probablement activer (enable) la virtualisation dans les options du BIOS de votre ordinateur.
+
+{% else %}
+## [fa=plug /] Démarrer la machine sur la clé USB
+
+* Branchez le cable ethernet (un cé à votre box, de l'autre côté à votre carte).
+* Démarrez votre serveur avec la clé USB ou le CD-ROM inséré, et sélectionnez-le comme **périphérique de démarrage (bootable device)** en pressant l’une des touches suivantes (dépendant de votre ordinateur) :
+`<ESC>`, `<F9>`, `<F10>`, `<F11>`, `<F12>` or `<DEL>`.
+    * N.B. : si le serveur était précédemment installé avec une version récente de Windows (8+), vous devez d'abord demander à Windows de "redémarrer réellement". Vous pouvez le faire dans une oiption du menu "Options de démarrage avancées".
+{% endif %}
+
+{% if regular or virtualbox %}
+## [fa=rocket /] Lancer l’installation graphique
+
+!! N.B. : L'installation effacera totalement les données sur votre disque dur!
+
+Vous devriez voir un écran comme ça :
+
+[figure class="nomargin" caption="Capture d'écran du menu de l'ISO"]
+![](image://virtualbox_3.png?class=inline)
+[/figure]
+
+  1. Sélectionnez `Graphical install`
+  2. Sélectionnez votre langue, votre localisation et votre agencement de clavier.
+  3. L'installateur va ensuite télécharger les paquets requis et les installer.
+
+{% endif %}
+
+
+{% if rpi1 or rpi0 %}
+## [fa=bug /] Se connecter à la carte et corriger l'image
+Les Raspberry Pi 1 et zero ne sont pas totalement supportés à cause de dysfonctionnements avec metronome (XMPP) et avec miniupnpc (autoconfiguration de la box).
+
+Cependant, il est possible de corriger l'image par vous même avant de lancer la configuration initiale.
+
+Pour y parvenir, vous devez vous connectez à votre Raspberry Pi en tant que root [via SSH](/ssh) avec le mot de passe temporaire `yunohost`:
+```
+ssh root@yunohost.local
+```
+
+Ensuite, lancez les commandes suivantes pour contourner le dysfonctionnement de metronome :
+```
+mv /usr/bin/metronome{,.bkp}   
+mv /usr/bin/metronomectl{,.bkp} 
+ln -s /usr/bin/true /usr/bin/metronome
+ln -s /usr/bin/true /usr/bin/metronomectl
+```
+
+Et celle-ci pour contourner celui de upnpc :
+```
+sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/firewall.py
+```
+
+! Cette dernière commande nécessite d'être lancée après chaque mise à jour de YunoHost :/
+
+{% elseif arm_unsup %}
+## [fa=terminal /] Se connecter à la carte
+
+Ensuite, il vous faut [trouver l'adresse IP locale de votre serveur(/finding_the_local_ip) pour vous connecter en tant que root [via SSH](/ssh) avec le mot de passe temporaire `1234`.
+
+```
+ssh root@192.168.x.xxx
+```
+
+{% endif %}
+
+{% endif %}
+
+
+{% if vps_debian or arm_unsup %}
+## [fa=rocket /] Lancer le script d'installation
+
+- Ouvrez la ligne de commande sur votre serveur (soit directement, soit avec [SSH](/ssh))
+- Assurez-vous d'être connecté en tant que root (ou tapez `sudo -i` pour le devenir)
+- Lancez la commande suivante :
+
+```bash
+curl https://install.yunohost.org | bash
+```
+!!! Si `curl` n'est pas installé sur votre système, il vous faudra peut-être l'installer avec `apt install curl`.
+!!! Autrement, si la commande n'affiche rien du tout, vous pouvez tenter `apt install ca-certificates`
+
+!!! **Note pour les utilisateurs avancés inquiets à propos de l'approche `curl|bash` :** prenez le temps de lire ["Is curl|bash insecure?"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) sur le blog de Sandstorm, et possiblement [cette discussion sur Hacker News](https://news.ycombinator.com/item?id=12766350&noprocess).
+
+{% endif %}
+
+
+## [fa=cog /] Lancer la configuration initiale
+
+!!! Si vous êtes en train de restaurer une sauvegarde YunoHost, vous devez sauter cette étape et vous référer à la section [Restaurer durant la postinstallation à la place de cette étape de configuration initiale](/backup#restoring-during-the-postinstall).
+
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="A partir de l'interface web"]
+{%if at_home %}
+Dans un navigateur web, tapez dans la barre d'adresse **{% if internetcube %}`https://internetcube.local`{% else %}`https://yunohost.local`{% endif %}**.
+
+!!! Si ça ne fonctionne pas, vous devez [chercher l'adresse IP locale du serveur](/finding_the_local_ip). L'adresse ressemble typiquement à `192.168.x.y`, et vous devriez taper `https://192.168.x.y` dans la barre d'adresse du navigateur.
+{% else %}
+Vous pouvez lancer la configuration initiale à partir du navigateur en tapant l'**adresse IP publique de votre serveur**. Généralement, votre fournisseur de VPS vous indique l'IP dans un mail ou sur sa console de gestion.
+{% endif %}
+
+! Lors de la première visite, vous rencontrerez très probablement un avertissement de sécurité lié au certificat utilisé. Pour le moment, votre serveur utilise un certificat auto-signé. Vous pourrez plus tard ajouter un certificat automatiquement reconnus par les navigateurs comme décrit dans [la page sur les certificats](/certificate). En attendant, ajoutez une exception de sécurité pour accepter le certificat actuel. Toutefois, **s'il-vous-plait**, ne prenez pas l'habitude d'accepter ce genre d'alerte de sécurité !
+
+{% if not internetcube %}
+Vous devriez ensuite obtenir cette page :
+
+[figure class="nomargin" caption="Capture d'écran de la page de configuration initiale"]
+![Page de configuration initiale](image://postinstall_web.png?resize=100%&class=inline)
+[/figure]
+
+{% endif %}
+[/ui-tab]
+[ui-tab title="A partir de la ligne de commande"]
+
+Vous pouvez aussi lancer la post-installation avec la commande`yunohost tools postinstall` directement sur le serveur ou [via SSH](/ssh).
+
+[figure class="nomargin" caption="Capture d'écran de la configuration initiale en ligne de commande"]
+![Configuration initiale en ligne de commande](image://postinstall_cli.png?resize=100%&class=inline)
+[/figure]
+
+[/ui-tab]
+[/ui-tabs]
+
+{% if not internetcube %}
+
+##### [fa=globe /] Domaine principal
+
+C’est le nom de domaine qui permettra l’accès à votre serveur ainsi qu’au **portail d’authentification** des utilisateurs. Vous pourrez ensuite ajouter d'autres domaines, et changer celui qui sera le domaine principale si besoin.
+
+* Si l'auto-hébergement est tout neuf pour vous et que vous n'avez pas encore de nom de domaine, nous recommandons d'utiliser un domaine en **.nohost.me** / **.noho.st** / **.ynh.fr** (exemple : `homersimpson.nohost.me`). S'il n'est pas déjà utilisé, le domaine sera automatiquement rattaché à votre serveur YunoHost, et vous n’aurez pas d’étape de configuration supplémentaire. Toutefois, notez que l'utilisation d'un de ces noms de domaines implique que vous n'aurez pas le contôle complet sur votre configuration DNS.
+
+* SI en revanche vous avez déjà votre propre nom de domaine, vous souhaitez probablement l'utiliser. Vous aurez donc besoin ensuite de configurer les enregistrements DNS comme expliqué [ici](/dns).
+
+!!! Oui, vous *devez* configurer un nom de domaine. Si vous n'avez pas de nom de domaine et que vous n'en voulez pas en **.nohost.me**, **.noho.st** ou **.ynh.fr**, vous pouvez utilisez un un faux domaine comme par exemple `yolo.test` et modifier votre fichier `/etc/hosts` pour que ce domaine pointe vers l'IP de votre serveur, comme expliqué [ici](/dns_local_network).
+
+##### [fa=key /] Mot de passe d’administration
+C’est le mot de passe qui vous permettra d’accéder à l’interface d’administration de votre serveur. Vous pourrez également l’utiliser pour vous connecter à distance [via SSH](/ssh), ou [en SFTP](/filezilla) pour transférer des fichiers. De manière générale, c’est la **clé d’entrée à votre système**, pensez donc à la choisir attentivement.
+
+## [fa=user /] Créer un premier utilisateur
+
+Once the postinstall is done, you should be able to actually log in the web admin interface using the administration password.
+
+So far, your server knows about the `admin` user - but `admin` is not a "regular" user and *can't* be used to log on [the user portal](/users).
+
+Let's therefore add a first "regular" user.
+
+!!! The first user you create is a bit special : it will receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld`. These emails may be used to send technical informations or alerts.
+
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="From the web interface"]
+
+Allez dans `Users > Add`
+
+TODO: add a screenshot
+[/ui-tab]
+[ui-tab title="From the command line"]
+```
+yunohost user create johndoe
+```
+TODO : copypasta an actual shell session will all info asked etc..
+
+[/ui-tab]
+[/ui-tabs]
+{% endif %}
+
+## [fa=stethoscope /] Lancer le diagnostic
+
+The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured - and guide you in how to fix issues. The diagnosis will run twice a day and send an alert if issues are detected.
+
+!!! N.B. : **don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/dns) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain) and/or [port forwarding](/isp_box_config) (if hosting at home).
+
+!!! If an alert is not relevant (for example because you don't intend on using a specific feature), it is perfectly fine to flag the issue as 'ignored' by going in the webadmin > Diagnosis, and clicking the ignore button for this specifc issue.
+
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="(Recommended) From the web interface"]
+To run a diagnosis, go on Web Admin in the Diagnosis section. You should get a screen like this :
+
+[figure class="nomargin" caption="Preview of the diagnostic panel"]
+![](image://diagnostic.png?resize=100%&class=inline)
+[/figure]
+
+[/ui-tab]
+[ui-tab title="From the command line"]
+```
+yunohost diagnosis run
+yunohost diagnosis show --issues --human-readable
+```
+[/ui-tab]
+[/ui-tabs]
+
+## [fa=lock /] Obtenir un certificat Let's Encrypt
+
+Once you configured DNS records and port forwarding (if needed), you should be able to install a a Let's Encrypt certificate. This will get rid of the spooky security warning from earlier for new visitors.
+
+For more detailled instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/certificate).
+
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="From the web interface"]
+
+[figure class="nomargin" caption="Preview of the diagnostic panel"]
+![](image://certificate-before-LE.png?resize=100%&class=inline)
+[/figure]
+
+[/ui-tab]
+[ui-tab title="From the command line"]
+```
+yunohost domain cert-install
+```
+[/ui-tab]
+[/ui-tabs]
+{% endif %}
+
+## ![](image://tada.png?resize=32&classes=inline) Félicitation !
+
+You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](/apps). Don't forget to [configure backups](/backup) !
+
+{% endif %}
