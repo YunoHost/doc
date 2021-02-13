@@ -5,6 +5,8 @@ taxonomy:
     category: docs
 routes:
   default: '/yunohost_project_organization'
+  aliases:
+    - '/project_organization'
 ---
 
 ! This page is outdated and should be reworked

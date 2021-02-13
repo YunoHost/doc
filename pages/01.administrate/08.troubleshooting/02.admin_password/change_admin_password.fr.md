@@ -15,7 +15,7 @@ SSH (à partir de votre réseau local ! ou en utilisant un mode rescure si vous 
 
 ## Sur l'interface d'administration web
 
-1. Connectez-vous à [l’administration web](/admin).
+1. Connectez-vous à l'interface web d'administration.
 2. Allez dans la section Outis > Changer le mot de passe d’administration.
 
 
