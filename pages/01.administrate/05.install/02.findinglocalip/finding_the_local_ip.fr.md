@@ -7,17 +7,53 @@ routes:
   default: '/finding_the_local_ip'
 ---
 
-Dans le cas d'une installation à la maison, votre serveur devrait typiquement être accessible (depuis son réseau local) avec le domaine `yunohost.local`. Si pour une raison cela ne fonctionne pas, il vous faut peut-être trouver l'IP locale de votre serveur.
+Dans le cas d'une installation à la maison, votre serveur devrait typiquement être accessible (depuis son réseau local) avec le domaine `yunohost.local`. Si pour une raison quelconque cela ne fonctionne pas, il vous faut peut-être trouver l'IP locale de votre serveur.
 
-L'IP locale d'une machine est utilisée pour y faire référence à l'intérieur d'un réseau local (typiquement le réseau dans une maison) où plusieurs appareils se connectent à un même routeur (votre box internet). Une adresse IP locale ressemble généralement à `192.168.x.y` (ou parfois `10.0.x.y`)
+## Qu'est ce qu'une IP locale ?
+L'IP locale d'une machine est utilisée pour y faire référence à l'intérieur d'un réseau local (typiquement le réseau dans une maison) où plusieurs appareils se connectent à un même routeur (votre box internet). Une adresse IP locale ressemble généralement à `192.168.x.y` (ou parfois `10.0.x.y` ou `172.16.x.y`)
 
+## Comment la trouver ?
 L'une de ces astuces devrait permettre de trouver l'IP locale de votre serveur :
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="(Recommandé) Avec AngryIP"]
 
-- Utilisez l'interface de votre box internet pour lister les machines connectées, ou regarder les logs ;
-- Si vous êtes sous Linux, ouvrez un terminal et tapez `sudo arp-scan --local` pour lister les IP des machines sur le réseau local (ceci fonctionne aussi peut-être sous Windows) ;
-    - Si la commande `arp-scan` vous affiche beaucoup de machines, vous pouvez vérifier lesquelles sont ouvertes au SSH avec `nmap -p 22 192.168.1.0/24` pour faire du tri (adaptez la plage IP selon votre réseau local)
-- Branchez un écran sur votre serveur, loggez-vous et tapez `hostname --all-ip-address`.
+Vous pouvez utiliser le logiciel [AngryIP](https://angryip.org/download/) pour y parvenir. Vous devez juste scanner ces plages d'IP dans cet ordre jusqu'à trouver des IP actives :
+- 192.168.0.0 -> 192.168.0.255
+- 192.168.1.0 -> 192.168.1.255
+- 192.168.2.0 -> 192.168.255.255
+- 10.0.0.0 -> 10.0.255.255
+- 172.16.0.0 -> 172.31.255.255
 
+!!! Astuce: vous pouvez ordonner par ping comme dans cette image.
+
+![](image://angryip.png?class=inline)
+
+Si vous trouvez des IPs avec un ping, vous pouvez essayer de les taper directement dans le navigateur pour voir si c'est une YunoHost ou non.
+
+[/ui-tab]
+[ui-tab title="Avec votre box internet"]
+Utilisez l'interface de votre box internet pour lister les machines connectées.
+[/ui-tab]
+[ui-tab title="With arp-scan"]
+Si vous êtes sous Linux, ouvrez un terminal et tapez `sudo arp-scan --local` pour lister les IP des machines sur le réseau local (ceci fonctionne aussi peut-être sous Windows) ;
+
+Si la commande `arp-scan` vous affiche beaucoup de machines, vous pouvez vérifier lesquelles sont ouvertes au SSH avec `nmap -p 22 192.168.1.0/24` pour faire du tri (adaptez la plage IP selon votre réseau local)
+[/ui-tab]
+[ui-tab title="With a screen"]
+Branchez un écran sur votre serveur, loggez-vous et tapez `hostname --all-ip-address`.
+
+Si vous ne connaissez pas les identifiants pour vous connecter, essayez les identifiants par défaut suivant :
+
+| login | mot de passe |
+|---|---|
+| root | yunohost |
+| root | 1234 |
+
+[/ui-tab]
+[/ui-tabs]
+
+
+## Je ne trouve toujours pas mon IP locale
 Si vous n'êtes pas capable de trouver votre serveur avec les méthodes précédentes, alors peut-être que votre serveur n'a pas démarré correctement
 
 - Assurez-vous que le serveur est correctement branché ;
