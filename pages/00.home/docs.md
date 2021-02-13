@@ -10,23 +10,21 @@ routes:
 visible: false
 ---
 
-This is the documentation for YunoHost, a libre operating system whose aim is to democratize self-hosting and server administration.
+This is the documentation for [YunoHost, a libre operating system aiming to simplify server administration and democratize self-hosting](/whatsyunohost).
 
 As a soon-to-be administrator of your own server, go to the [Admin guide](/admindoc) to learn more about self-hosting, how to install your YunoHost server and install your first apps.
 
-Your server's administration interface offers an [Apps catalog](/apps). If you are eager to see which apps have been packaged for YunoHost, you can explore it here too!
+You can check out the [application catalog](/apps) to browse apps that can be installed on a server (though you can also explore it directly from your admin interface !)
 
-The [Community](/community) is here for you, if you need some help to [chat](/chat_rooms) with us or reach the [forum](/community/forum), or read more about our project organization.
+The [Community](/community) is here for you if you need some help : come [chat](/chat_rooms) with us or reach out on the [forum](/community/forum) !
 
 [center]
-[[fa=fa-cogs /] Administrator's guide](/admindoc?classes=btn,btn-lg,btn-primary,inline)
-[[fa=fa-cubes /] Applications](/apps?classes=btn,btn-lg,btn-success,inline)
-[[fa=fa-users /] Community](/contribute?classes=btn,btn-lg,btn-primary)
-[[fa=fa-heart /] Get involved](/contribute?classes=btn,btn-lg,btn-error)
+
+<a href="/docbeta/en/admindoc" class="btn btn-lg btn-primary inline"><i class="fa fa-cogs"></i> Administrator's guide</a>
+<a href="/docbeta/en/apps" class="btn btn-lg btn-success inline"><i class="fa fa-cubes"></i> Applications</a>
+<a href="/docbeta/en/contribute" class="btn btn-lg btn-primary" style="background: blueviolet;border-color: blueviolet;"><i class="fa fa-users"></i> Community</a>
+<a href="/docbeta/en/contribute" style="background: orange; border-color: orange;" class="btn btn-lg btn-error"><i class="fa fa-heart"></i> Get involved</a>
+
 [/center]
 
-If you are curious about what YunoHost can do, you can check out our use examples:
-* [YunoHost for non-profit organisations](/use_case_non-profit_organisations)
-* (FR) [YunoHost for CHATONS (A collective of independent, transparent, open, neutral and ethical hosters providing FLOSS-based online services.)](https://wiki.chatons.org/doku.php/yunohost)  
-
-!!!! To navigate this documentation, you can use your left and right arrow keys. Browse directly to the section you want with the [fa=bars /] side panel, which also shows you the pages you have already read and offers a [[fa=search /] search box](/search/query:hosting). Enjoy!
+!!!! To navigate this documentation, you can use your left and right arrow keys. Browse directly to the section you want with the [fa=bars /] side panel, or using the [fa=search /] search box. Enjoy!
