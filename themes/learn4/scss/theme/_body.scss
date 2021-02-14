@@ -1,0 +1,113 @@
+.center-content {
+    #start {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.learn-content {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    #start {
+        padding: 2rem 3rem;
+
+        @include breakpoint(xl) {
+            padding: 2rem 2rem;
+        }
+
+        @include breakpoint(lg) {
+            padding: 2rem 1rem;
+        }
+    }
+}
+
+#footer {
+    border-top: 1px solid $gray-color-light;
+    margin-top: 1rem;
+    text-align: center;
+    p {
+        margin: 1rem 0;
+    }
+}
+
+.page-toc {
+    float: right;
+    width: 250px;
+    padding: 0.5rem 0.75rem;
+    background: darken($bg-color, 2%);
+    margin-left: 1.5rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    margin-top: 10px;
+    font-size: 0.7rem;
+    overflow: hidden;
+
+    @include breakpoint(sm) {
+        float: none;
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .toc-toggle {
+        font-size: 1.2rem;
+        display: block;
+        float: right;
+        margin-top: -8px;
+        margin-right: -10px;
+        padding: 5px 10px;
+        line-height: 1;
+        color: lighten($body-font-color, 20%);
+        cursor: pointer;
+    }
+
+    &.toc-closed {
+        height: 40px;
+        margin-bottom: 0.5rem;
+
+        .toc-toggle .fa:before {
+            content: '\f107';
+        }
+    }
+
+    h5 {
+        margin: 0 0 1rem;
+    }
+
+    ul {
+        margin-left: 1rem;
+        margin-bottom: 0;
+    }
+
+    li {
+        margin-top: 0;
+        list-style: decimal;
+        color: lighten($body-font-color, 30%);
+        li {
+            list-style: decimal;
+            li {
+                list-style: square;
+            }
+        }
+
+    }
+
+    ul > li.first.last {
+        list-style: none;
+        margin: 0;
+        margin-left: -1rem;
+    }
+
+    // Fix issue with notices going under TOC
+    & + #body-inner {
+        > .notices, > .code-toolbar {
+            overflow: hidden;
+        }
+    }
+
+}

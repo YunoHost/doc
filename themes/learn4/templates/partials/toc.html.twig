@@ -1,0 +1,10 @@
+{% if config.get('plugins.page-toc.active') or attribute(page.header, 'page-toc').active %}
+  <div class="page-toc">
+    {% set table_of_contents = toc(page.content) %}
+    {% if table_of_contents is not empty %}
+      <span class="toc-toggle"><i class="fa fa-angle-up"></i></span>
+      <h5>Quick Menu</h5>
+      {{ table_of_contents|raw }}
+    {% endif %}
+  </div>
+{% endif %}

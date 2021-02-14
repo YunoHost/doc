@@ -1,0 +1,34 @@
+{% import 'macros/macros.html.twig' as macros %}
+
+<div class="learn-brand">
+    <div id="header">
+        <a id="logo" href="{{ base_url_absolute }}">{% include 'partials/logo.html.twig' %}</a>
+        <div class="searchbox">
+            <label for="search-by"><i class="fa fa-search"></i></label>
+            <input id="search-by" type="text" placeholder="{{ 'THEME_LEARN4_SEARCH_DOCUMENTATION'|t }}"
+                   data-search-input="{{ base_url_relative }}/s/q"/>
+            <span data-search-clear><i class="fa fa-close"></i></span>
+        </div>
+        <div class="search-options columns">
+            <div class="adv-search column col-8"><i class="fa fa-sliders"></i> <a href="/search?q=">{{ 'THEME_LEARN4_SEARCH_ADVANCED'|t }}</a></div>
+            {% include 'partials/versions.html.twig' %}
+        </div>
+    </div>
+</div>
+<div class="learn-nav" data-simplebar>
+    <div class="highlightable">
+        {% for slug, ver in pages.children.visible %}
+            {{ macros.version(ver) }}
+            <ul id="{{ slug }}" class="topics">
+            {% if ver.activeChild or ver.active %}
+                {{ macros.loop(ver, '') }}
+            {% endif %}
+            </ul>
+        {% endfor %}
+        <hr />
+
+        <a class="side-tools padding" href="#" data-clear-history-toggle>
+            <i class="fa fa-fw fa-history"></i> {{ 'THEME_LEARN4_CLEAR_HISTORY'|t }}
+        </a><br/>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+name: YunoHost Docs
+slug: yunohost-docs
+type: theme
+version: 0.1.0
+description: YunoHost Documentation theme, based off Grav Learn4
+icon: rebel
+author:
+  name: tituspijean
+  email: tituspijean@outlook.com
+#homepage: https://github.com/tituspijean/grav-theme-yunohost-docs
+#demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+#bugs: https://github.com/tituspijean/grav-theme-yuno-host-docs/issues
+#readme: https://github.com/tituspijean/grav-theme-yuno-host-docs/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
