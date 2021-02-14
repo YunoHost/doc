@@ -1,5 +1,5 @@
 ---
-title: Bienvenue!
+title: Bienvenue !
 template: docs
 taxonomy:
     category: docs
@@ -10,7 +10,7 @@ routes:
 visible: false
 ---
 
-Ce site contiens la documentation de [YunoHost, un système d'exploitation libre qui vise à simplifier l'administration d'un serveur et à démocratiser l'auto-hébergement](/whatsyunohost).
+Ce site contient la documentation de [YunoHost, un système d'exploitation libre qui vise à simplifier l'administration d'un serveur et à démocratiser l'auto-hébergement](/whatsyunohost).
 
 En tant que futur jardinier de votre propre serveur, commencez par visiter le [guide de l'administrateur](/admindoc) pour en savoir plus sur l'autohébergement, comment installer votre serveur, et installer vos premières applications.
 
@@ -28,7 +28,7 @@ La [communauté](/community) est là si vous avez besoin d'aide : venez discuter
 [/center]
 
 [center]
-<a href="/" class="btn btn-lg inline"><i class="fa fa-fw fa-arrow-left"></i> Retourner à la page d'acceuil du site</a>
+<a href="/" class="btn btn-lg inline"><i class="fa fa-fw fa-arrow-left"></i> Retourner à la page d'accueil du site</a>
 [/center]
 
 

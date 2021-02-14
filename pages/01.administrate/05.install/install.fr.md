@@ -148,40 +148,40 @@ Cependant, ces images communautaires existent et sont disponibles sur Docker Hub
 ## [fa=list-alt /] Pré-requis
 
 {% if regular %}
-* Un matériel compatible x86 dédié à YunoHost : portable, netbook, ordinateur avec 512Mo de RAM et 16Go de capacité de stockage (au moins)
+* Un matériel compatible x86 dédié à YunoHost : portable, netbook, ordinateur avec 512Mo de RAM et 16Go de capacité de stockage (au moins) ;
 {% elseif rpi2plus %}
-* Un Raspberry Pi 2, 3 ou 4
+* Un Raspberry Pi 2, 3 ou 4 ;
 {% elseif rpi1 %}
-* Un Raspberry Pi 1 avec au moins 512Mo de RAM
+* Un Raspberry Pi 1 avec au moins 512Mo de RAM ;
 {% elseif rpi0 %}
-* Un Raspberry Pi zero
+* Un Raspberry Pi zero ;
 {% elseif internetcube %}
-* Un Orange Pi PC+ ou une Olinuxino Lime 1 ou 2
-* Un VPN avec une IP publique dédiée et un fichier `.cube`
+* Un Orange Pi PC+ ou une Olinuxino Lime 1 ou 2 ;
+* Un VPN avec une IP publique dédiée et un fichier `.cube` ;
 {% elseif arm_sup %}
-* Un Orange Pi PC+ ou une Olinuxino Lime 1 ou 2
+* Un Orange Pi PC+ ou une Olinuxino Lime 1 ou 2 ;
 {% elseif arm_unsup %}
-* Une carte ARM avec au moins 512Mo de RAM
+* Une carte ARM avec au moins 512Mo de RAM ;
 {% elseif vps_debian %}
-* Un serveur dédié ou virtuel avec Debian 10 (Buster) pré-installé <small>(avec un **kernel >= 3.12**)</small>, 512Mo de RAM et 16Go de capacité de stockage (au moins)
+* Un serveur dédié ou virtuel avec Debian 10 (Buster) pré-installé <small>(avec un **kernel >= 3.12**)</small>, 512Mo de RAM et 16Go de capacité de stockage (au moins) ;
 {% elseif vps_ynh %}
-* Un serveur dédié ou virtuel avec YunoHost pré-installé, 512Mo de RAM et 16Go de capacité de stockage (au moins)
+* Un serveur dédié ou virtuel avec YunoHost pré-installé, 512Mo de RAM et 16Go de capacité de stockage (au moins) ;
 {% elseif virtualbox %}
-* Un ordinateur x86 avec [VirtualBox installé](https://www.virtualbox.org/wiki/Downloads) et assez de RAM disponible pour lancer une petite machine virtuelle avec 512Mo de RAM et 8Go de capacité de stockage (au moins)
+* Un ordinateur x86 avec [VirtualBox installé](https://www.virtualbox.org/wiki/Downloads) et assez de RAM disponible pour lancer une petite machine virtuelle avec 512Mo de RAM et 8Go de capacité de stockage (au moins) ;
 {% endif %}
 {% if arm %}
-* Une alimentation électrique (soit un adaptateur, soit un cable microUSB) pour alimenter la carte;
-* Une carte microSD: 16Go de capacité (au moins), [classe "A1"](https://fr.wikipedia.org/wiki/Carte_SD#Vitesse) hautement recommandée (comme par exemple [cette carte SanDisk A1](https://www.amazon.fr/SanDisk-microSDHC-Adaptateur-homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/));
+* Une alimentation électrique (soit un adaptateur, soit un cable microUSB) pour alimenter la carte ;
+* Une carte microSD : 16Go de capacité (au moins), [classe « A1 »](https://fr.wikipedia.org/wiki/Carte_SD#Vitesse) hautement recommandée (comme par exemple [cette carte SanDisk A1](https://www.amazon.fr/SanDisk-microSDHC-Adaptateur-homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/)) ;
 {% endif %}
 {% if regular %}
-* Une clé USB avec au moins 1Go de capacité OU un CD viege standard
+* Une clé USB avec au moins 1Go de capacité OU un CD viege standard ;
 {% endif %}
 {% if at_home %}
-* Un [fournisseur d'accès internet correct](/isp), de préférence avec une bonne vitesse d’upload
+* Un [fournisseur d'accès internet correct](/isp), de préférence avec une bonne vitesse d’upload ;
 {% if rpi0 %}
-* Un câble OTG ou un adaptateur Wifi USB pour connecter votre Raspberry Pi Zero
+* Un câble OTG ou un adaptateur Wifi USB pour connecter votre Raspberry Pi Zero ;
 {% elseif not virtualbox %}
-* Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet.
+* Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet ;
 {% endif %}
 * Un ordinateur pour lire ce guide, flasher l'image et accéder à votre serveur.
 {% endif %}
@@ -302,7 +302,7 @@ Maintenant que vous avez téléchargé l’image de {{image_type}}, vous devez l
 
 Téléchargez <a href="https://www.balena.io/etcher/" target="_blank">Etcher</a> pour votre système d'exploitation et installez-le.
 
-Branchez votre {% if arm %}carte microSD{% else %}clé USB{% endif %}, selectionnez votre image et cliquez "Flash".
+Branchez votre {% if arm %}carte microSD{% else %}clé USB{% endif %}, sélectionnez votre image et cliquez sur « Flash ».
 
 ![Etcher](image://etcher.gif?resize=700&class=inline)
 
@@ -311,14 +311,14 @@ Branchez votre {% if arm %}carte microSD{% else %}clé USB{% endif %}, selection
 
 Téléchargez [USBimager](https://bztsrc.gitlab.io/usbimager/) pour votre système d'exploitation et installez-le.
 
-Branchez votre {% if arm %}carte microSD{% else %}clé USB{% endif %}, selectionnez votre image et cliquez "Write".
+Branchez votre {% if arm %}carte microSD{% else %}clé USB{% endif %}, sélectionnez votre image et cliquez sur « Write ».
 
 ![USBimager](image://usbimager.png?resize=700&class=inline)
 
 [/ui-tab]
 [ui-tab title="Avec dd"]
 
-Si vous êtes sur GNU/Linux / macOS et que vous êtes familier avec la ligne de commande, il est possible de flasher la clef USB ou carte SD avec dd. Vous pouvez identifier le nom du périphérique avec `fdisk -l` ou `lsblk`. Une carte SD s'apelle typiquement `/dev/mmcblk0`. ATTENTION à faire attention de prendre le bon nom !
+Si vous êtes sur GNU/Linux / macOS et que vous êtes familier avec la ligne de commande, il est possible de flasher la clef USB ou carte SD avec dd. Vous pouvez identifier le nom du périphérique avec `fdisk -l` ou `lsblk`. Une carte SD s'appelle typiquement `/dev/mmcblk0`. ATTENTION à faire attention de prendre le bon nom !
 
 Ensuite lancez :
 
@@ -348,7 +348,7 @@ Pour les anciens matériels, il vous faut peut-être utiliser un CD/DVD. Le logi
 
 ![](image://virtualbox_1.png?class=inline)
 
-! Ce n'est pas grave si seulement la version 32-bit est dispo, mais dans ce cas soyez sur d'avoir téléchargé l'image 32 bit précédemment.
+! Ce n'est pas grave si seulement la version 32-bit est disponible, mais dans ce cas soyez sûr d'avoir téléchargé l'image 32 bit précédemment.
 
 ## Modifier la configuration réseau
 
@@ -358,7 +358,7 @@ Allez dans **Réglages** > **Réseau** :
 
 * Sélectionnez `Accès par pont`
 * Choisissez votre interface selon son nom :
-    **wlan0** si vous êtes connecté sans-fil, **eth0** or **eno1** sinon.
+    **wlan0** si vous êtes connecté sans-fil, **eth0** ou **eno1** sinon.
 
 ![](image://virtualbox_2.png?class=inline)
 
@@ -377,10 +377,10 @@ Allez dans **Réglages** > **Réseau** :
 
 * Branchez le câble ethernet (un côté sur votre box, l'autre côté à votre carte).
     * Pour les utilisateurs et utilisatrices souhaitant configurer la carte pour la connecter via le WiFi à la place, voir [cet exemple](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
-* Mettez la carte SD dans le serveur
+* Mettez la carte SD dans le serveur.
 * (Faculatif) Il est possible de brancher un écran et clavier sur votre serveur en cas de soucis ou pour vérifier que le processus de démarrage (boot) se passe bien ou encore pour avoir un accès direct en console.
-* Branchez l'alimentation
-* Laissez quelques minutes à votre serveur pour s'autoconfigurer durant le premier démarrage
+* Branchez l'alimentation.
+* Laissez quelques minutes à votre serveur pour s'autoconfigurer durant le premier démarrage.
 * Assurez vous que votre ordinateur (de bureau ou portable) est connecté au même réseau local (c'est-à-dire la même box internet) que votre serveur.
 
 {% elseif virtualbox %}
@@ -395,16 +395,16 @@ Démarrez votre machine virtuelle aprés avoir sélectionné l'image YunoHost.
 {% else %}
 ## [fa=plug /] Démarrer la machine sur la clé USB
 
-* Branchez le cable ethernet (un cé à votre box, de l'autre côté à votre carte).
+* Branchez le cable ethernet (un côté à votre box, de l'autre côté à votre carte).
 * Démarrez votre serveur avec la clé USB ou le CD-ROM inséré, et sélectionnez-le comme **périphérique de démarrage (bootable device)** en pressant l’une des touches suivantes (dépendant de votre ordinateur) :
 `<ESC>`, `<F9>`, `<F10>`, `<F11>`, `<F12>` or `<DEL>`.
-    * N.B. : si le serveur était précédemment installé avec une version récente de Windows (8+), vous devez d'abord demander à Windows de "redémarrer réellement". Vous pouvez le faire dans une oiption du menu "Options de démarrage avancées".
+    * N.B. : si le serveur était précédemment installé avec une version récente de Windows (8+), vous devez d'abord demander à Windows de « redémarrer réellement ». Vous pouvez le faire dans une oiption du menu « Options de démarrage avancées ».
 {% endif %}
 
 {% if regular or virtualbox %}
 ## [fa=rocket /] Lancer l’installation graphique
 
-!! N.B. : L'installation effacera totalement les données sur votre disque dur!
+!! N.B. : L'installation effacera totalement les données sur votre disque dur !
 
 Vous devriez voir un écran comme ça :
 
@@ -482,7 +482,7 @@ curl https://install.yunohost.org | bash
 !!! Si vous êtes en train de restaurer une sauvegarde YunoHost, vous devez sauter cette étape et vous référer à la section [Restaurer durant la postinstallation à la place de cette étape de configuration initiale](/backup#restoring-during-the-postinstall).
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="A partir de l'interface web"]
+[ui-tab title="À partir de l'interface web"]
 {%if at_home %}
 Dans un navigateur web, tapez dans la barre d'adresse **{% if internetcube %}`https://internetcube.local`{% else %}`https://yunohost.local`{% endif %}**.
 
@@ -491,7 +491,7 @@ Dans un navigateur web, tapez dans la barre d'adresse **{% if internetcube %}`ht
 Vous pouvez lancer la configuration initiale à partir du navigateur en tapant l'**adresse IP publique de votre serveur**. Généralement, votre fournisseur de VPS vous indique l'IP dans un mail ou sur sa console de gestion.
 {% endif %}
 
-! Lors de la première visite, vous rencontrerez très probablement un avertissement de sécurité lié au certificat utilisé. Pour le moment, votre serveur utilise un certificat auto-signé. Vous pourrez plus tard ajouter un certificat automatiquement reconnus par les navigateurs comme décrit dans [la page sur les certificats](/certificate). En attendant, ajoutez une exception de sécurité pour accepter le certificat actuel. Toutefois, **s'il-vous-plait**, ne prenez pas l'habitude d'accepter ce genre d'alerte de sécurité !
+! Lors de la première visite, vous rencontrerez très probablement un avertissement de sécurité lié au certificat utilisé. Pour le moment, votre serveur utilise un certificat auto-signé. Vous pourrez plus tard ajouter un certificat automatiquement reconnus par les navigateurs comme décrit dans [la page sur les certificats](/certificate). En attendant, ajoutez une exception de sécurité pour accepter le certificat actuel. Toutefois, **s'il-vous-plaît**, ne prenez pas l'habitude d'accepter ce genre d'alerte de sécurité !
 
 {% if not internetcube %}
 Vous devriez ensuite obtenir cette page :
@@ -502,9 +502,9 @@ Vous devriez ensuite obtenir cette page :
 
 {% endif %}
 [/ui-tab]
-[ui-tab title="A partir de la ligne de commande"]
+[ui-tab title="À partir de la ligne de commande"]
 
-Vous pouvez aussi lancer la post-installation avec la commande`yunohost tools postinstall` directement sur le serveur ou [via SSH](/ssh).
+Vous pouvez aussi lancer la post-installation avec la commande `yunohost tools postinstall` directement sur le serveur ou [via SSH](/ssh).
 
 [figure class="nomargin" caption="Capture d'écran de la configuration initiale en ligne de commande"]
 ![Configuration initiale en ligne de commande](image://postinstall_cli.png?resize=100%&class=inline)
@@ -521,9 +521,9 @@ C’est le nom de domaine qui permettra l’accès à votre serveur ainsi qu’a
 
 * Si l'auto-hébergement est tout neuf pour vous et que vous n'avez pas encore de nom de domaine, nous recommandons d'utiliser un domaine en **.nohost.me** / **.noho.st** / **.ynh.fr** (exemple : `homersimpson.nohost.me`). S'il n'est pas déjà utilisé, le domaine sera automatiquement rattaché à votre serveur YunoHost, et vous n’aurez pas d’étape de configuration supplémentaire. Toutefois, notez que l'utilisation d'un de ces noms de domaines implique que vous n'aurez pas le contôle complet sur votre configuration DNS.
 
-* SI en revanche vous avez déjà votre propre nom de domaine, vous souhaitez probablement l'utiliser. Vous aurez donc besoin ensuite de configurer les enregistrements DNS comme expliqué [ici](/dns_config).
+* Si en revanche vous avez déjà votre propre nom de domaine, vous souhaitez probablement l'utiliser. Vous aurez donc besoin ensuite de configurer les enregistrements DNS comme expliqué [ici](/dns_config).
 
-!!! Oui, vous *devez* configurer un nom de domaine. Si vous n'avez pas de nom de domaine et que vous n'en voulez pas en **.nohost.me**, **.noho.st** ou **.ynh.fr**, vous pouvez utilisez un "faux" domaine comme par exemple `yolo.test` et modifier votre fichier `/etc/hosts` pour que ce domaine pointe vers l'IP de votre serveur, comme expliqué [ici](/dns_local_network).
+!!! Oui, vous *devez* configurer un nom de domaine. Si vous n'avez pas de nom de domaine et que vous n'en voulez pas en **.nohost.me**, **.noho.st** ou **.ynh.fr**, vous pouvez utilisez un « faux » domaine comme par exemple `yolo.test` et modifier votre fichier `/etc/hosts` pour que ce domaine pointe vers l'IP de votre serveur, comme expliqué [ici](/dns_local_network).
 
 ##### [fa=key /] Mot de passe d’administration
 C’est le mot de passe qui vous permettra d’accéder à l’interface d’administration de votre serveur. Vous pourrez également l’utiliser pour vous connecter à distance [via SSH](/ssh), ou [en SFTP](/filezilla) pour transférer des fichiers. De manière générale, c’est la **clé d’entrée à votre système**, pensez donc à la choisir attentivement.
@@ -534,7 +534,7 @@ Une fois la configuration initiale faite, vous devriez être capable de vous con
 
 Bien que votre serveur dispose maintenant d'un utilisateur `admin`, cet utilisateur `admin` n'est pas un utilisateur "standard" et ne peut pas se connecter sur le [portail utilisateur](/users).
 
-Par conséquent, vous devriez ajouter un premier utilisateur "standard".
+Par conséquent, vous devriez ajouter un premier utilisateur « standard ».
 
 !!! Le premier utilisateur que vous créez est un peu spéciale : il recevra les emails envoyé à `root@votredomaine.tld` et `admin@votredomaine.tld`. Ces emails peuvent être utilisés pour envoyer des informations ou des alertes techniques.
 
@@ -561,7 +561,7 @@ Le système de diagnostique est conçu pour fournir un moyen facile de valider q
 
 !!! N.B. : **ne partez pas en courant** ! La première fois que vous lancerez le diagnostique, il est assez normal d'avoir plusieurs alertes rouges ou jaunes car vous devez généralement [configurer les enregistrements DNS](/dns_config) (si vous n'utilisez pas un domaine `.nohost.me`, `.noho.st` ou `.ynh.fr`){%if at_home %} et/ou [configurer la redirection des ports](/isp_box_config){% endif %}.
 
-!!! Si une alerte n'est pas pertinente (par exemple parce que vous ne pensez pas utiliser une fonctionnalité spécifique), il est tout à fait convenable d'indiquer le dysfonctionnement comme "A ignorer" en allant dans l'administration web > Diagnostic, et en cliquant sur bouton "Ignorer" pour ce dysfonctionnement spécifique.
+!!! Si une alerte n'est pas pertinente (par exemple parce que vous ne pensez pas utiliser une fonctionnalité spécifique), il est tout à fait convenable d'indiquer le dysfonctionnement comme « À ignorer » en allant dans l'administration web > Diagnostic, et en cliquant sur bouton « Ignorer » pour ce dysfonctionnement spécifique.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommandé) A partir de l'interface web"]
