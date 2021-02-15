@@ -1674,59 +1674,80 @@ This helper will check if another app uses the same version of node,</br>if not,
 [details summary="<i>Create a new permission for the app</i>" class="helper-card-subtitle text-muted"]
 <p></p>
 
-**Usage**: `ynh_permission_create --permission="permission" [--url="url"] [--additional_urls="second-url" [ "third-url" ]] [--auth_header=true|false]
-                                                       [--allowed=group1 [ group2 ]] [--label="label"] [--show_tile=true|false]
-                                                       [--protected=true|false]
-|                                          Not that if 'show_tile' is enabled, this URL will be the URL of the tile.
-|                                     Default is "APP_LABEL (permission name)".
-|                                     Default is false (for the permission different than 'main').
-|                             won't be able to add or remove the visitors group of this permission.
-|                             By default it's 'false'`
-    
+**Usage**: `ynh_permission_create --permission="permission" 
+    [--url="url"] 
+    [--additional_urls="second-url" [ "third-url" ]] 
+    [--auth_header=true|false]
+    [--allowed=group1 [ group2 ]] 
+    [--label="label"] 
+    [--show_tile=true|false]
+    [--protected=true|false]`
 
 **Arguments**:  
-        
-            
-- `-p,`: - the name for the permission (by default a permission named "main" already exist)
-            
-        
-            
-- `-u,`: - (optional) URL for which access will be allowed/forbidden.
-            
-        
-            
-- `-A,`: - (optional) List of additional URL for which access will be allowed/forbidden
-            
-        
-            
-- `-h,`: - (optional) Define for the URL of this permission, if SSOwat pass the authentication header to the application. Default is true
-            
-        
-            
-- `-a,`: - (optional) A list of group/user to allow for the permission
-            
-        
-            
-- `-l,`: - (optional) Define a name for the permission. This label will be shown on the SSO and in the admin.
-            
-        
-            
-- `-t,`: - (optional) Define if a tile will be shown in the SSO. If yes the name of the tile will be the 'label' parameter.
-            
-        
-            
-- `-P,`: - (optional) Define if this permission is protected. If it is protected the administrator
-            
-        
-    
-    
-    
-    
-    
 
-**Details**:  
-example 1: ynh\_permission\_create --permission=admin --url=/admin --additional\_urls=domain.tld/admin /superadmin --allowed=alice bob \</br>                                 --label="My app admin" --show\_tile=true</br></br>This example will create a new permission permission with this following effect:</br>- A tile named "My app admin" in the SSO will be available for the users alice and bob. This tile will point to the relative url '/admin'.</br>- Only the user alice and bob will have the access to theses following url: /admin, domain.tld/admin, /superadmin</br></br>example 2: ynh\_permission\_create --permission=api --url=domain.tld/api --auth\_header=false --allowed=visitors \</br>                                 --label="MyApp API" --protected=true</br></br>This example will create a new protected permission. So the admin won't be able to add/remove the visitors group of this permission.</br>In case of an API with need to be always public it avoid that the admin break anything.</br>With this permission all client will be allowed to access to the url 'domain.tld/api'.</br>Note that in this case no tile will be show on the SSO.</br>Note that the auth\_header parameter is to 'false'. So no authentication header will be passed to the application.</br>Generally the API is requested by an application and enabling the auth\_header has no advantage and could bring some issues in some case.</br>So in this case it's better to disable this option for all API.</br></br>If provided, 'url' or 'additional\_urls' is assumed to be relative to the app domain/path if they</br>start with '/'.  For example:</br>   /                             -> domain.tld/app</br>   /admin                        -> domain.tld/app/admin</br>   domain.tld/app/api            -> domain.tld/app/api</br></br>'url' or 'additional\_urls' can be treated as a PCRE (not lua) regex if it starts with "re:".</br>For example:</br>   re:/api/[A-Z]*$               -> domain.tld/app/api/[A-Z]*$</br>   re:domain.tld/app/api/[A-Z]*$ -> domain.tld/app/api/[A-Z]*$</br></br>Note that globally the parameter 'url' and 'additional\_urls' are same. The only difference is:</br>- 'url' is only one url, 'additional\_urls' can be a list of urls. There are no limitation of 'additional\_urls'</br>- 'url' is used for the url of tile in the SSO (if enabled with the 'show\_tile' parameter)</br></br>About the authentication header (auth\_header parameter).</br>The SSO pass (by default) to the application theses following HTTP header (linked to the authenticated user) to the application:</br>       - "Auth-User": username</br>       - "Remote-User": username</br>       - "Email": user email</br></br>Generally this feature is usefull to authenticate automatically the user in the application but in some case the application don't work with theses header and theses header need to be disabled to have the application to work correctly.</br>See https://github.com/YunoHost/issues/issues/1420 for more informations</br></br>Requires YunoHost version 3.7.0 or higher.</br></br>
-    
+- `-p`,`--permission`: - the name for the permission (by default a permission named "main" already exist)
+
+- `-u`,`--url`: - (optional) URL for which access will be allowed/forbidden. Note that if 'show_tile' is enabled, this URL will be the URL of the tile.
+
+- `-A`,`--additional_urls`: - (optional) List of additional URL for which access will be allowed/forbidden
+
+- `-h`,`--auth-header`: - (optional) Define for the URL of this permission, if SSOwat pass the authentication header to the application. Default is true
+
+- `-a`,`--allowed`: - (optional) A list of group/user to allow for the permission
+
+- `-l`,`--label`: - (optional) Define a name for the permission. This label will be shown on the SSO and in the admin. Default is "APP_LABEL (permission name)".
+
+- `-t`,`--show_tile`: - (optional) Define if a tile will be shown in the SSO. If yes the name of the tile will be the 'label' parameter. Default is false (for the permission different than 'main').
+
+- `-P`,`--protected`: - (optional) Define if this permission is protected. If it is protected the administrator won't be able to add or remove the visitors group of this permission. Default is 'false'.
+
+**Details**:
+
+Example 1: `ynh_permission_create --permission=admin --url=/admin --additional_urls=domain.tld/admin /superadmin --allowed=alice bob --label="My app admin" --show_tile=true`
+
+This example will create a new permission permission with this following effect:
+- A tile named "My app admin" in the SSO will be available for the users alice and bob. This tile will point to the relative url `/admin`.
+- Only the user alice and bob will have the access to theses following url: `/admin`, `domain.tld/admin`, `/superadmin`
+
+Example 2: `ynh_permission_create --permission=api --url=domain.tld/api --auth_header=false --allowed=visitors --label="MyApp API" --protected=true`
+
+This example will create a new protected permission. So the admin won't be able to add/remove the visitors group of this permission.
+In case of an API with need to be always public it avoid that the admin break anything.
+With this permission all client will be allowed to access to the url `domain.tld/api`.
+Note that in this case no tile will be show on the SSO.
+Note that the `auth_header` parameter is to `false`. So no authentication header will be passed to the application.
+Generally the API is requested by an application and enabling the `auth_header` has no advantage and could bring some issues in some case.
+So in this case it's better to disable this option for all API.
+
+If provided, `url` or `additional_urls` is assumed to be relative to the app domain/path if they
+start with '/'.  For example:
+
+    /                             -> domain.tld/app
+    /admin                        -> domain.tld/app/admin
+    domain.tld/app/api            -> domain.tld/app/api
+
+`url` or `additional_urls` can be treated as a PCRE (not lua) regex if it starts with "re:".
+For example:
+
+    re:/api/[A-Z]*$               -> domain.tld/app/api/[A-Z]*$
+    re:domain.tld/app/api/[A-Z]*$ -> domain.tld/app/api/[A-Z]*$
+
+Note that globally the parameter `url` and `additional_urls` are same. The only difference is:
+- `url` is only one url, `additional_urls` can be a list of urls. There are no limitation of `additional_urls`
+- `url` is used for the url of tile in the SSO (if enabled with the `show_tile` parameter)
+
+About the authentication header (`auth_header` parameter).
+The SSO pass (by default) to the application theses following HTTP header (linked to the authenticated user) to the application:
+- `Auth-User`: username
+- `Remote-User`: username
+- `Email`: user email
+
+Generally this feature is usefull to authenticate automatically the user in the application but in some case the application don't work with theses header and theses header need to be disabled to have the application to work correctly.
+
+See https://github.com/YunoHost/issues/issues/1420 for more informations
+
+Requires YunoHost version 3.7.0 or higher.
+
 
 [Dude, show me the code!](https://github.com/YunoHost/yunohost/blob/adc83b4c9c2c30e9ef75f3609c538b646f91f1db/data/helpers.d/permission#L69)
 [/details]
