@@ -72,18 +72,19 @@ chmod 775 -R /media/storage/nextcloud_data
 Migrate your data to the new disk. To do this *(be patient, it can take a long time)*:
 
 ```bash
-Case A: cp -ia /home/yunohost.app/nextcloud /media/storage
-Case B: cp -ia /home/yunohost.app/nextcloud /media/storage/nextcloud_data
+Case A: shopt -s dotglob
+        cp -a /home/yunohost.app/nextcloud/data /media/storage
+Case B: shopt -s dotglob
+        cp -a /home/yunohost.app/nextcloud/data /media/storage/nextcloud_data
 ```
 
-The `i` option allows you to ask yourself what to do if there is a file conflict, especially if you overwrite an old Owncloud or Nextcloud data folder.  
 To check that everything went well, compare what these two commands display (the content must be identical):
 
 ```bash
 ls -la /home/yunohost.app/nextcloud
 
 Case A: ls -al /media/storage
-Case B: ls -al /media/storage/nextcloud_data/nextcloud
+Case B: ls -al /media/storage/nextcloud_data
 ```
 
 ##### Configure Nextcloud
@@ -103,8 +104,8 @@ Look for the line:
 That you modify:
 
 ```bash
-CASE A:'datadirectory' =>'/media/storage',
-CASE B:'datadirectory' =>'/media/storage/nextcloud_data/nextcloud/data',
+CASE A:'datadirectory' =>'/media/storage/data',
+CASE B:'datadirectory' =>'/media/storage/nextcloud_data/data',
 ```
 
 Back up with `ctrl+x` then `y` or `o` (depending on your server locale).
@@ -114,15 +115,6 @@ Restart the web server:
 ```bash
 systemctl start nginx
 ```
-
-Add the.ocdata file
-```bash
-CASE A: nano /media/storage/.ocdata
-CASE B: nano /media/storage/nextcloud_data/nextcloud/data/.ocdata
-```
-Add a space to the file to be able to save it
-
-Back up with `ctrl+x` then `y` or `o` (depending on your server locale).
 
 Run a scan of the new directory by Nextcloud:
 
