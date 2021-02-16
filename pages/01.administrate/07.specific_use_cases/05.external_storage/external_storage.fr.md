@@ -19,6 +19,27 @@ Vous devez également être connecté en root sur votre système, par exemple vi
 
 Il peut être utile de [faire un backup](/backup) de votre installation.
 
+Vous voulez savoir s'il vous reste de la place sur votre carte micro-SD post-installation et après des installations d'applications ?
+C'est possible en étant connecté en admin via [SSH](/ssh) avec la commande suivante :
+
+```bash
+df -h
+```
+Cette commande df (disk free) renseigne sur l'espace disque total disponible ; l'option -h  affiche des tailles dans des formats lisibles par un être humain. La commande renvoie quelque chose comme :
+
+```bash
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        15G  5.6G  8.2G  41% /
+devtmpfs        430M     0  430M   0% /dev
+tmpfs           463M  8.0K  463M   1% /dev/shm
+tmpfs           463M   18M  445M   4% /run
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           463M     0  463M   0% /sys/fs/cgroup
+/dev/mmcblk0p1  253M   48M  205M  19% /boot
+tmpfs            93M     0   93M   0% /run/user/100
+```
+Ici la carte micro-SD de 16 Go a une partition de démarrage `/boot` de 253 Mo dont 48 Mo utilisés, soit une utilisation de 19%. Il reste donc 205 Mo disponibles.
+
 Vous devez également disposer d'un disque dur supplémentaire (branché en USB ou en SATA).
 
 ## 1. Connecter et identifier le disque
