@@ -15,7 +15,7 @@ page-toc:
 
 **SSH** est un acronyme pour Secure Shell, et désigne un protocole qui permet de contrôler et administrer à distance une machine via la ligne de commande (CLI). C'est aussi une commande disponible de base dans les terminaux de GNU/Linux et macOS. Sous Windows, il vous faudra utiliser le logiciel [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (après l'avoir lancé, cliquer sur Session puis SSH).
 
-L'interface en ligne de commande (CLI) est, en informatique, la manière originale (et plus technique) d'interagir avec un ordinateur comparé aux interfaces graphiques. La ligne de commande est généralement considéré comme plus complète, puissante et efficace que les interfaces graphiques, bien que plus difficile à apprendre.
+L'interface en ligne de commande (CLI) est, en informatique, la manière originale (et plus technique) d'interagir avec un ordinateur comparé aux interfaces graphiques. La ligne de commande est généralement considérée comme plus complète, puissante et efficace que les interfaces graphiques, bien que plus difficile à apprendre.
 
 ## Quelle adresse utiliser pour se connecter au serveur ?
 
@@ -24,9 +24,9 @@ Si vous hébergez votre serveur **à la maison** (par ex. Raspberry Pi ou OLinuX
    - si `yunohost.local` ne fonctionne pas, il vous faut [trouver l'IP locale de votre serveur](/finding_the_local_ip).
    - si vous avez installé votre serveur à la maison mais essayez d'y accéder depuis l'extérieur du réseau local, assurez-vous d'avoir bien configuré une redirection de port pour le port 22
 
-Si il s'agit d'une machine distante (VPS), votre fournisseur devrait vous avoir communiqué l'IP de votre machine
+S'il s'agit d'une machine distante (VPS), votre fournisseur devrait vous avoir communiqué l'IP de votre machine.
 
-Dans tous les cas, si vous avez déjà configuré un nom de domaine qui pointe sur l'IP appropriée, il est plus pratique d'utiliser `votre.domaine.tld` plutôt que l'adresse IP
+Dans tous les cas, si vous avez déjà configuré un nom de domaine qui pointe sur l'IP appropriée, il est plus pratique d'utiliser `votre.domaine.tld` plutôt que l'adresse IP.
 
 ## Identifiants pour se connecter
 
@@ -37,7 +37,7 @@ Dans tous les cas, si vous avez déjà configuré un nom de domaine qui pointe s
 
 ### APRÈS la post-installation
 
-Durant la postinstallation, vous avez défini un mot de passe d'administration. C'est ce mot de passe qui devient le nouveau mot de passe pour les utilisateurs `root` et `admin`. De plus, **le connection en SSH avec l'utilisateur `root` est désactivée et il vous faut utiliser l'utilisateur `admin` !**. L'exception à cette règle est qu'il reste possible de se logger en root *depuis le réseau local - ou depuis une console en direct sur la machine* (ce qui peut être utile dans l'éventualité ou le serveur LDAP est inactif et l'utilisateur admin ne fonctionne plus)
+Durant la postinstallation, vous avez défini un mot de passe d'administration. C'est ce mot de passe qui devient le nouveau mot de passe pour les utilisateurs `root` et `admin`. De plus, **la connexion en SSH avec l'utilisateur `root` est désactivée et il vous faut utiliser l'utilisateur `admin` !**. L'exception à cette règle est qu'il reste possible de se logger en root *depuis le réseau local - ou depuis une console en direct sur la machine* (ce qui peut être utile dans l'éventualité ou le serveur LDAP est inactif et l'utilisateur admin ne fonctionne plus).
 
 ## Se connecter
 
@@ -90,13 +90,13 @@ yunohost user ssh list-keys <username>
 
 ## SSH et sécurité
 
-N.B. : `fail2ban` bannira votre IP pour 10 minutes si vous échouez plus de 5 fois à vous identifier. Pour débannir une IP, vous pouvez regarder la page sur [Fail2Ban](/fail2ban)
+N.B. : `fail2ban` bannira votre IP pour 10 minutes si vous échouez plus de 5 fois à vous identifier. Pour débannir une IP, vous pouvez regarder la page sur [Fail2Ban](/fail2ban).
 
 Une discussion plus complète de la sécurité et de SSH peut être trouvée sur [la page dédiée](/security).
 
 ## La ligne de commande Yunohost
 
-!!! Fournir un tutorial complet sur la ligne de commande est bien au dela du cadre de la documentation de YunoHost : pour cela, référez-vous à des tutoriaux comme [celui-ci](https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande) ou [celui-ci (en)](http://linuxcommand.org/). Mais soyez rassuré qu'il n'y a pas besoin d'être un expert pour commencer à l'utiliser !
+!!! Fournir un tutoriel complet sur la ligne de commande est bien au-delà du cadre de la documentation de YunoHost : pour cela, référez-vous à des tutoriels comme [celui-ci](https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande) ou [celui-ci (en)](http://linuxcommand.org/). Mais soyez rassuré qu'il n'y a pas besoin d'être un expert pour commencer à l'utiliser !
 
 La commande `yunohost` peut être utilisée pour administrer votre serveur ou réaliser les mêmes actions que celles disponibles sur la webadmin. Elle doit être lancée en depuis l'utilisateur `root`, ou bien depuis l'utilisateur `admin` en précédant la commande de `sudo`. (ProTip™ : il est possible de devenir `root` via la commande `sudo su` en tant qu'`admin`.)
 
@@ -109,7 +109,7 @@ yunohost app install wordpress --label Webmail
    categorie  action  argument     options
 ```
 
-N'hesitez pas à naviguer et demander des informations à propos d'une catégorie ou action donnée via l'option `--help`. Par exemple, ces commandes :
+N'hésitez pas à naviguer et demander des informations à propos d'une catégorie ou action donnée via l'option `--help`. Par exemple, ces commandes :
 
 ```bash
 yunohost --help
