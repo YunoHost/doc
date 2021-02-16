@@ -42,7 +42,7 @@ mmcblk0     179:0    0  14.9G  0 disk
 └─mmcblk0p2 179:2    0  14.8G  0 part /
 ```
 
-Ici, `mmcblk0` corresponds à une carte SD de 16Go (on voit que les partitions `mmcblk0p1` et `mmcblk0p2` correspondent à la partition de démarrage `/boot` et à la partition système `/`). Le disque dur branché correspond à `sda` qui fait environ 1To, et contient une seule partition `sda1` qui n'est pas monté (pas de "MOUNTPOINT").
+Ici, `mmcblk0` correspond à une carte SD de 16Go (on voit que les partitions `mmcblk0p1` et `mmcblk0p2` correspondent à la partition de démarrage `/boot` et à la partition système `/`). Le disque dur branché correspond à `sda` qui fait environ 1To, et contient une seule partition `sda1` qui n'est pas monté (pas de "MOUNTPOINT").
 
 ! [fa=exclamation-triangle /] Sur un autre système, il se peut que votre système soit installé sur `sda` et que votre disque soit alors `sdb` par exemple.
 
@@ -76,9 +76,9 @@ mkfs.ext4 /dev/VOTRE_DISQUE1
 
 ## 3. Monter le disque
 
-"Monter" un disque corresponds à le rendre effectivement accessible dans l'arborescence des fichiers. Nous allons choisir arbitrairement de monter le disque dans `/media/stockage` mais vous pouvez le nommer différement (par exemple `/media/mon_disque` ...).
+"Monter" un disque signifie le rendre effectivement accessible dans l'arborescence des fichiers. Nous allons choisir arbitrairement de monter le disque dans `/media/stockage` mais vous pouvez le nommer différemment (par exemple `/media/mon_disque` ...).
 
-Commençons par cŕeer le répertoire :
+Commençons par créer le répertoire :
 ```bash
 mkdir /media/stockage
 ```
@@ -89,7 +89,7 @@ Puis nous pouvons monter le disque manuellement avec :
 mount /dev/VOTRE_DISQUE1 /media/stockage
 ```
 
-(Ici, `/dev/VOTRE_DISQUE1` corresponds à la première partition sur le disque)
+(Ici, `/dev/VOTRE_DISQUE1` correspond à la première partition sur le disque)
 
 Ensuite, vous devriez pouvoir créer des fichiers dans `/media/stockage`, et, par exemple, ajouter `/media/stockage` comme périphérique externe dans Nextcloud.
 
