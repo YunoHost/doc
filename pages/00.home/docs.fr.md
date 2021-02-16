@@ -20,10 +20,10 @@ La [communauté](/community) est là si vous avez besoin d'aide : venez discuter
 
 [center]
 
-<a href="/docbeta/en/admindoc" class="btn btn-lg btn-primary inline"><i class="fa fa-cogs"></i> Guide d'administration</a>
-<a href="/docbeta/en/apps" class="btn btn-lg btn-success inline"><i class="fa fa-cubes"></i> Applications</a>
-<a href="/docbeta/en/contribute" class="btn btn-lg btn-primary" style="background: blueviolet;border-color: blueviolet;"><i class="fa fa-users"></i> Communauté</a>
-<a href="/docbeta/en/contribute" style="background: orange; border-color: orange;" class="btn btn-lg btn-error"><i class="fa fa-heart"></i> Contribuer</a>
+<a href="/admindoc" class="btn btn-lg btn-primary inline"><i class="fa fa-cogs"></i> Guide d'administration</a>
+<a href="/apps" class="btn btn-lg btn-success inline"><i class="fa fa-cubes"></i> Applications</a>
+<a href="/community" class="btn btn-lg btn-primary" style="background: blueviolet;border-color: blueviolet;"><i class="fa fa-users"></i> Communauté</a>
+<a href="/contribute" style="background: orange; border-color: orange;" class="btn btn-lg btn-error"><i class="fa fa-heart"></i> Contribuer</a>
 
 [/center]
 
