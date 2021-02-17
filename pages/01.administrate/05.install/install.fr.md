@@ -560,7 +560,7 @@ TODO : copypasta an actual shell session will all info asked etc..
 
 Le système de diagnostique est conçu pour fournir un moyen facile de valider que tous les aspects critiques de votre serveur sont proprement configuré et pour vous guider dans la résolution des problèmes soulevés. Le diagnostique se lance deux fois par jour et envoie une alerte si un dysfonctionnement est détecté.
 
-!!! N.B. : **ne partez pas en courant** ! La première fois que vous lancerez le diagnostique, il est assez normal d'avoir plusieurs alertes rouges ou jaunes car vous devez généralement [configurer les enregistrements DNS](/dns_config) (si vous n'utilisez pas un domaine `.nohost.me`, `.noho.st` ou `.ynh.fr`){%if at_home %} et/ou [configurer la redirection des ports](/isp_box_config){% endif %}.
+!!! N.B. : **ne partez pas en courant** ! La première fois que vous lancerez le diagnostique, il est assez normal d'avoir plusieurs alertes rouges ou jaunes car vous devez généralement [configurer les enregistrements DNS](/dns_config) (si vous n'utilisez pas un domaine `.nohost.me`, `.noho.st` ou `.ynh.fr`), ajouter un fichier de swap {%if at_home %} et/ou [configurer la redirection des ports](/isp_box_config){% endif %}.
 
 !!! Si une alerte n'est pas pertinente (par exemple parce que vous ne pensez pas utiliser une fonctionnalité spécifique), il est tout à fait convenable d'indiquer le dysfonctionnement comme « À ignorer » en allant dans l'administration web > Diagnostic, et en cliquant sur bouton « Ignorer » pour ce dysfonctionnement spécifique.
 
