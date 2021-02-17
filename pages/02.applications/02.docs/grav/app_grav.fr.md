@@ -20,7 +20,7 @@ Grav est une plateforme Web rapide, simple et flexible, basée sur des fichiers.
 ## Liens utiles
 
  + Site web : [getgrav.org (en)](https://getgrav.org/)
- + Documentation officielle : [learn.getgrav.org (en)](https://learn.getgrav.org/16)
+ + Documentation officielle : [learn.getgrav.org (en)](https://learn.getgrav.org/)
  + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/grav](https://github.com/YunoHost-Apps/grav_ynh)
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/grav/issues](https://github.com/YunoHost-Apps/grav_ynh/issues)
 

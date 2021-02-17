@@ -7,7 +7,7 @@ routes:
   default: '/app_my_webapp'
 ---
 
-En complément du Readme.md de l'application, voici des astuces utiles.
+En complément du [Readme_fr.md](https://github.com/YunoHost-Apps/my_webapp_ynh/blob/testing/README_fr.md) de l'application, voici des astuces utiles.
 
 ## Mise à jour automatique du contenu du site.
 

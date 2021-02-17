@@ -71,6 +71,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [EteSync](https://www.etesync.com/) |  | [Upstream](https://github.com/etesync) |  |
 | [Ethercalc](https://ethercalc.net/) | Collaborative spreadsheet editor |  | [Package Draft](https://github.com/YunoHost-Apps/ethercalc_ynh) |
 | Facette | |  | [Package Draft](https://github.com/YunoHost-Apps/facette_ynh) |
+| [Federated wiki](http://fed.wiki.org/view/welcome-visitors/view/federated-wiki) | Farm for fedwiki sites | [Upstream](https://github.com/fedwiki) |  |
 | [Ferdi server](https://getferdi.com) | Messaging aggregation | [Upstream](https://github.com/getferdi/server) |  |
 | [FEX](https://fex.rus.uni-stuttgart.de/) |  |  |  |
 | [Filestash](https://www.filestash.app/) |  | [Upstream](https://github.com/mickael-kerjean/filestash) |  |

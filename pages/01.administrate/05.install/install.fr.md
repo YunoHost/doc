@@ -138,9 +138,10 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 
 Cependant, ces images communautaires existent et sont disponibles sur Docker Hub:
 
-  * [AMD64 (classic) (ancienne version de YunoHost)](https://hub.docker.com/r/domainelibre/yunohost/)
-  * [I386 (old computers) (ancienne version de YunoHost)](https://hub.docker.com/r/domainelibre/yunohost-i386/)
-  * [ARMV7 (Raspberry Pi 2/3 ...) (ancienne version de YunoHost)](https://hub.docker.com/r/domainelibre/yunohost-arm/)
+  * [AMD64 (classic) (YunoHost 4.x)](https://hub.docker.com/r/domainelibre/yunohost/)
+  * [I386 (old computers) (YunoHost 4.x)](https://hub.docker.com/r/domainelibre/yunohost-i386/)
+  * [ARM64V8 (Raspberry Pi 4) (YunoHost 4.x)](https://hub.docker.com/r/cms0/yunohost/)
+  * [ARMV7 (Raspberry Pi 2/3 ...) (YunoHost 4.x)](https://hub.docker.com/r/domainelibre/yunohost-arm/)
   * [ARMV6 (Raspberry Pi 1) (ancienne version de YunoHost)](https://hub.docker.com/r/tuxalex/yunohost-armv6/)
 {% else %}
 
