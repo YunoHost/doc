@@ -130,7 +130,7 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 {% if hardware != '' %}
 
 {% if docker %}
-!! **YunoHost ne supporte plus officiellement Docker depuis les problèmes rencontrés avec la version 2.4+. En cause, YunoHost dépend désormait de systemd et docker a décidé qu’ils ne le supporteraient pas nativement (et il y a d'autres problèmes liés au firewall et aux services).**
+!! **YunoHost ne supporte plus officiellement Docker depuis les problèmes rencontrés avec la version 2.4+. En cause, YunoHost dépend désormais de systemd et Docker a décidé qu’il ne le supporterait pas nativement (et il y a d'autres problèmes liés au firewall et aux services).**
 !!
 !! **Nous vous décourageons fortement d'utiliser YunoHost sur docker avec ces images**
 
@@ -175,7 +175,7 @@ Cependant, ces images communautaires existent et sont disponibles sur Docker Hub
 * Une carte microSD : 16Go de capacité (au moins), [classe « A1 »](https://fr.wikipedia.org/wiki/Carte_SD#Vitesse) hautement recommandée (comme par exemple [cette carte SanDisk A1](https://www.amazon.fr/SanDisk-microSDHC-Adaptateur-homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/)) ;
 {% endif %}
 {% if regular %}
-* Une clé USB avec au moins 1Go de capacité OU un CD viege standard ;
+* Une clé USB avec au moins 1Go de capacité OU un CD vierge standard ;
 {% endif %}
 {% if at_home %}
 * Un [fournisseur d'accès internet correct](/isp), de préférence avec une bonne vitesse d’upload ;
@@ -353,7 +353,7 @@ Pour les anciens matériels, il vous faut peut-être utiliser un CD/DVD. Le logi
 
 ## Modifier la configuration réseau
 
-! Cette étape est importante pour exposer proprement la machine virtuelle sur le réseau
+! Cette étape est importante pour exposer proprement la machine virtuelle sur le réseau.
 
 Allez dans **Réglages** > **Réseau** :
 
@@ -382,12 +382,12 @@ Allez dans **Réglages** > **Réseau** :
 * (Faculatif) Il est possible de brancher un écran et clavier sur votre serveur en cas de soucis ou pour vérifier que le processus de démarrage (boot) se passe bien ou encore pour avoir un accès direct en console.
 * Branchez l'alimentation.
 * Laissez quelques minutes à votre serveur pour s'autoconfigurer durant le premier démarrage.
-* Assurez vous que votre ordinateur (de bureau ou portable) est connecté au même réseau local (c'est-à-dire la même box internet) que votre serveur.
+* Assurez-vous que votre ordinateur (de bureau ou portable) est connecté au même réseau local (c'est-à-dire la même box internet) que votre serveur.
 
 {% elseif virtualbox %}
 ## [fa=plug /] Lancer la machine virtuelle
 
-Démarrez votre machine virtuelle aprés avoir sélectionné l'image YunoHost.
+Démarrez votre machine virtuelle après avoir sélectionné l'image YunoHost.
 
 ![](image://virtualbox_2.1.png?class=inline)
 
@@ -396,7 +396,7 @@ Démarrez votre machine virtuelle aprés avoir sélectionné l'image YunoHost.
 {% else %}
 ## [fa=plug /] Démarrer la machine sur la clé USB
 
-* Branchez le cable ethernet (un côté à votre box, de l'autre côté à votre carte).
+* Branchez le câble ethernet (un côté à votre box, de l'autre côté à votre carte).
 * Démarrez votre serveur avec la clé USB ou le CD-ROM inséré, et sélectionnez-le comme **périphérique de démarrage (bootable device)** en pressant l’une des touches suivantes (dépendant de votre ordinateur) :
 `<ESC>`, `<F9>`, `<F10>`, `<F11>`, `<F12>` or `<DEL>`.
     * N.B. : si le serveur était précédemment installé avec une version récente de Windows (8+), vous devez d'abord demander à Windows de « redémarrer réellement ». Vous pouvez le faire dans une oiption du menu « Options de démarrage avancées ».
@@ -424,7 +424,7 @@ Vous devriez voir un écran comme ça :
 ## [fa=bug /] Se connecter à la carte et corriger l'image
 Les Raspberry Pi 1 et 0 ne sont pas totalement supportés à cause de [problèmes de compilation pour cette architecture](https://github.com/YunoHost/issues/issues/1423).
 
-Cependant, il est possible de corriger l'image par vous même avant de lancer la configuration initiale.
+Cependant, il est possible de corriger l'image par vous-même avant de lancer la configuration initiale.
 
 Pour y parvenir, vous devez vous connectez à votre Raspberry Pi en tant que root [via SSH](/ssh) avec le mot de passe temporaire `yunohost`:
 ```
@@ -492,7 +492,7 @@ Dans un navigateur web, tapez dans la barre d'adresse **{% if internetcube %}`ht
 Vous pouvez lancer la configuration initiale à partir du navigateur en tapant l'**adresse IP publique de votre serveur**. Généralement, votre fournisseur de VPS vous indique l'IP dans un mail ou sur sa console de gestion.
 {% endif %}
 
-! Lors de la première visite, vous rencontrerez très probablement un avertissement de sécurité lié au certificat utilisé. Pour le moment, votre serveur utilise un certificat auto-signé. Vous pourrez plus tard ajouter un certificat automatiquement reconnus par les navigateurs comme décrit dans [la page sur les certificats](/certificate). En attendant, ajoutez une exception de sécurité pour accepter le certificat actuel. Toutefois, **s'il-vous-plaît**, ne prenez pas l'habitude d'accepter ce genre d'alerte de sécurité !
+! Lors de la première visite, vous rencontrerez très probablement un avertissement de sécurité lié au certificat utilisé. Pour le moment, votre serveur utilise un certificat auto-signé. Vous pourrez plus tard ajouter un certificat automatiquement reconnus par les navigateurs comme décrit dans [la page sur les certificats](/certificate). En attendant, ajoutez une exception de sécurité pour accepter le certificat actuel. Toutefois, **s'il vous plaît**, ne prenez pas l'habitude d'accepter ce genre d'alerte de sécurité !
 
 {% if not internetcube %}
 Vous devriez ensuite obtenir cette page :
@@ -518,7 +518,7 @@ Vous pouvez aussi lancer la post-installation avec la commande `yunohost tools p
 
 ##### [fa=globe /] Domaine principal
 
-C’est le nom de domaine qui permettra l’accès à votre serveur ainsi qu’au **portail d’authentification** des utilisateurs. Vous pourrez ensuite ajouter d'autres domaines, et changer celui qui sera le domaine principale si besoin.
+C’est le nom de domaine qui permettra l’accès à votre serveur ainsi qu’au **portail d’authentification** des utilisateurs. Vous pourrez ensuite ajouter d'autres domaines, et changer celui qui sera le domaine principal si besoin.
 
 * Si l'auto-hébergement est tout neuf pour vous et que vous n'avez pas encore de nom de domaine, nous recommandons d'utiliser un domaine en **.nohost.me** / **.noho.st** / **.ynh.fr** (exemple : `homersimpson.nohost.me`). S'il n'est pas déjà utilisé, le domaine sera automatiquement rattaché à votre serveur YunoHost, et vous n’aurez pas d’étape de configuration supplémentaire. Toutefois, notez que l'utilisation d'un de ces noms de domaines implique que vous n'aurez pas le contôle complet sur votre configuration DNS.
 
@@ -537,7 +537,7 @@ Bien que votre serveur dispose maintenant d'un utilisateur `admin`, cet utilisat
 
 Par conséquent, vous devriez ajouter un premier utilisateur « standard ».
 
-!!! Le premier utilisateur que vous créez est un peu spéciale : il recevra les emails envoyé à `root@votredomaine.tld` et `admin@votredomaine.tld`. Ces emails peuvent être utilisés pour envoyer des informations ou des alertes techniques.
+!!! Le premier utilisateur que vous créez est un peu spécial : il recevra les emails envoyés à `root@votredomaine.tld` et `admin@votredomaine.tld`. Ces emails peuvent être utilisés pour envoyer des informations ou des alertes techniques.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="A partir de l'interface web"]
@@ -558,15 +558,15 @@ TODO : copypasta an actual shell session will all info asked etc..
 
 ## [fa=stethoscope /] Lancer le diagnostic
 
-Le système de diagnostique est conçu pour fournir un moyen facile de valider que tous les aspects critiques de votre serveur sont proprement configuré et pour vous guider dans la résolution des problèmes soulevés. Le diagnostique se lance deux fois par jour et envoie une alerte si un dysfonctionnement est détecté.
+Le système de diagnostic est conçu pour fournir un moyen facile de valider que tous les aspects critiques de votre serveur sont proprement configurés et pour vous guider dans la résolution des problèmes soulevés. Le diagnostic se lance deux fois par jour et envoie une alerte si un dysfonctionnement est détecté.
 
-!!! N.B. : **ne partez pas en courant** ! La première fois que vous lancerez le diagnostique, il est assez normal d'avoir plusieurs alertes rouges ou jaunes car vous devez généralement [configurer les enregistrements DNS](/dns_config) (si vous n'utilisez pas un domaine `.nohost.me`, `.noho.st` ou `.ynh.fr`), ajouter un fichier de swap {%if at_home %} et/ou [configurer la redirection des ports](/isp_box_config){% endif %}.
+!!! N.B. : **ne partez pas en courant** ! La première fois que vous lancerez le diagnostic, il est assez normal d'avoir plusieurs alertes rouges ou jaunes car vous devez généralement [configurer les enregistrements DNS](/dns_config) (si vous n'utilisez pas un domaine `.nohost.me`, `.noho.st` ou `.ynh.fr`), ajouter un fichier de swap {%if at_home %} et/ou [configurer la redirection des ports](/isp_box_config){% endif %}.
 
 !!! Si une alerte n'est pas pertinente (par exemple parce que vous ne pensez pas utiliser une fonctionnalité spécifique), il est tout à fait convenable d'indiquer le dysfonctionnement comme « À ignorer » en allant dans l'administration web > Diagnostic, et en cliquant sur bouton « Ignorer » pour ce dysfonctionnement spécifique.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommandé) A partir de l'interface web"]
-Pour lancer le diagnostique, allez dans l'Administration Web dans la partie Diagnostique. Vous devriez obtenir un écran comme celui-ci :
+Pour lancer le diagnostic, allez dans l'Administration Web dans la partie Diagnostic. Vous devriez obtenir un écran comme celui-ci :
 
 [figure class="nomargin" caption="Capture d'écran du panneau de diagnostic"]
 ![](image://diagnostic.png?resize=100%&class=inline)
