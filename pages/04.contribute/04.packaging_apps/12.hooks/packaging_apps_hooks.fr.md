@@ -36,9 +36,9 @@ Après l'effacement de toute les règles d'accès sur une application.
 - `post_app_install`
 Après l'installation d'une application.
 - `post_app_upgrade`
-Après l'upgrade d'une applications.
+Après l'upgrade d'une application.
 - `post_app_remove`
-Après la supression d'une applications.
+Après la supression d'une application.
 - `post_app_change_url`
 Après avoir modifié le chemin et/ou le nom de domaine d'une application.
 - `post_cert_update`
@@ -66,13 +66,13 @@ Services pris en charge par `regen-conf` :
 
 À l'exception du hook `conf_regen`, tout les hooks s'utilisent de la même manière.  
 Tout d'abord, il faut comprendre qu'un hook est un simple script bash qui sera exécuté par YunoHost lorsque l'évènement indiqué se présentera.  
-Pour ajouter un hook à YunoHost, il faut utiliser un dossier "hooks" à la racine du package de l'application. Puis dans celui-ci mettre votre script sous le nom du hooks correspondant.
+Pour ajouter un hook à YunoHost, il faut utiliser un dossier "hooks" à la racine du package de l'application. Puis dans celui-ci mettre votre script sous le nom du hook correspondant.
 
 > Par exemple :  
 Pour un hook `post_user_create`, le script qui devra être exécuté pour ce hook doit simplement être placé dans `hooks/post_user_create` dans le package.
 
 Lors de l'installation et de l'upgrade, les scripts dans le dossier hooks seront dupliqués dans le dossier `/etc/yunohost/hooks.d/` dans le dossier correspondant au hook, puis sous le nom `50-$app`.  
-Lors de la suppression de l'application, tout les hooks lui appartenant seront supprimés.
+Lors de la suppression de l'application, tous les hooks lui appartenant seront supprimés.
 
 ### Construire un script de hook
 
@@ -125,7 +125,7 @@ backup_name=$1
 Les variables utilisables dans ces scripts sont les mêmes que celles disponibles dans [les scripts d'actions associés](/packaging_apps_scripts).
 
 
-Example : pour `post_app_install` les variables sont les mêmes que pour le script `install`
+Exemple : pour `post_app_install` les variables sont les mêmes que pour le script `install`
 
 ##### `post_app_addaccess` et `post_app_removeaccess`
 
@@ -162,7 +162,7 @@ cp hook_regen_conf /usr/share/yunohost/hooks/conf_regen/50-SERVICE_$app
 
 ##### Construire un script de hook conf_regen
 
-Un hook `conf_regen` est appelé 2 fois, une première fois après analyse de la configuration et avant une éventuelle modification des fichiers, puis une seconde fois après application des modifications, si il y a eu des modifications.
+Un hook `conf_regen` est appelé 2 fois, une première fois après analyse de la configuration et avant une éventuelle modification des fichiers, puis une seconde fois après application des modifications, s' il y a eu des modifications.
 
 Un script de hook `conf_regen` devrait donc ressembler à ça :
 
