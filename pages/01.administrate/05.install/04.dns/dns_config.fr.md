@@ -8,7 +8,7 @@ routes:
 ---
 
 DNS (système de nom de domaine) est un élément essentiel d'Internet qui permet
-de convertir des adresses compréhensible par les êtres humains (les noms de
+de convertir des adresses compréhensibles par les êtres humains (les noms de
 domaines) en adresses compréhensibles par la machine (les IPs). Pour que
 votre serveur soit facilement accessible par d'autres êtres humains, et pour
 que certains services comme le mail fonctionnent correctement, il est nécessaire
@@ -86,7 +86,7 @@ suivante :
 
 - Tous ces enregistrements ne sont pas nécessaires. Pour une installation minimale, seuls les enregistrements en gras sont nécessaires ;
 - Le point à la fin de `votre.domaine.tld.` est important ;) ;
-- `@` corresponds à `votre.domaine.tld`, et par ex. `muc` corresponds à `muc.votre.domaine.tld` ;
+- `@` correspond à `votre.domaine.tld`, et par ex. `muc` correspond à `muc.votre.domaine.tld` ;
 - Les valeurs montrées ici sont des valeurs d'exemple ! Référez-vous à la configuration générée chez vous pour savoir quelles valeurs utiliser ;
 - Nous recommandons un [TTL](https://fr.wikipedia.org/wiki/Time_to_Live#Le_Time_to_Live_dans_le_DNS) de 3600 (1 heure). Mais vous pouvez utiliser une autre valeur si vous savez ce que vous faîtes ;
 - Ne mettez pas d'enregistrement IPv6 si vous n'êtes pas certains que l'IPv6 fonctionne sur votre serveur ! Vous aurez des problèmes avec Let's Encrypt si ce n'est pas le cas.
