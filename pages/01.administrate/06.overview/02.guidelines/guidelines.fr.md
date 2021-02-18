@@ -17,7 +17,7 @@ Si votre but est d'avoir un serveur de production :
 - soyez conscient qu'un serveur est un système fragile : restez prudent, méthodique et patient ;
 - limitez les expérimentations et la personnalisation - notamment des fichiers de config ;
 - n'installez pas des douzaines d'applications juste pour voir de quoi elles ont l'air ;
-- utilisez les applications non-officielles avec prudence, et interdisez vous d'utiliser celles 'in progress', 'not working' ou qui on un niveau 0 ;
+- utilisez les applications non-officielles avec prudence, et interdisez-vous d'utiliser celles 'in progress', 'not working' ou qui on un niveau 0 ;
 - si quelque chose casse, réfléchissez à deux fois avant de tenter de le réparer vous-même si vous ne savez pas ce que vous faites. <small>(Par exemple, n'essayez pas de recréer vous-même l'utilisateur admin juste parce qu'il a mystérieusement disparu...)</small>
 
 ## Keep it simple !
@@ -35,7 +35,7 @@ Gardez les choses aussi simples que possible !
 
 Certaines personnes ont tendance à tomber dans la "spirale de la réinstallation" - où chaque fois que quelque chose casse dans le serveur et qu'il n'est pas évident comment le réparer, ou parce que le serveur est devenu "sale", l'administrateur finit par réinstaller le serveur entier à partir de zéro car cela semble une solution "facile" et rapide pour remettre les choses à plat.
 
-Ne faites pas ça. La réinstallation est une opération lourde et n'est pas une bonne stratégie à long terme pour résoudre les problèmes. Vous vous fatiguerez et n'apprendrez rien. Oubliez le rêve d'avoir un serveur "propre" : un serveur de la vraie vie fini toujours par être "sale". De plus, vous devez apprendre (progressivement) à résoudre les problèmes lorsque vous les rencontrez. [Demandez de l'aide](/help) en fournissant des détails sur les symptômes, ce que vous essayez de faire et de ce qu'il se passe, et corrigez les problèmes. Avec le temps, vous aurez un bien meilleur contrôle sur votre serveur plutôt que réinstaller aveuglément à chaque fois.
+Ne faites pas ça. La réinstallation est une opération lourde et n'est pas une bonne stratégie à long terme pour résoudre les problèmes. Vous vous fatiguerez et n'apprendrez rien. Oubliez le rêve d'avoir un serveur "propre" : un serveur de la vraie vie finit toujours par être "sale". De plus, vous devez apprendre (progressivement) à résoudre les problèmes lorsque vous les rencontrez. [Demandez de l'aide](/help) en fournissant des détails sur les symptômes, ce que vous essayez de faire et de ce qu'il se passe, et corrigez les problèmes. Avec le temps, vous aurez un bien meilleur contrôle sur votre serveur plutôt que réinstaller aveuglément à chaque fois.
 
 ## Faites des sauvegardes
 
@@ -47,7 +47,7 @@ En tant qu'administrateur, vous devriez configurer un client de messagerie pour 
 
 ## YunoHost est un logiciel gratuit, maintenu par des bénévoles.
 
-Enfin, gardez à l'esprit que YunoHost est un logiciel libre maintenu par des volontaires - et que le but de YunoHost (démocratiser l'auto-hébergement) n'est pas simple ! Le logiciel n'est fourni sans aucune garantie. L'équipe de bénévoles fait de son mieux pour maintenir et fournir la meilleure expérience possible - pourtant les fonctionnalités, les applications et YunoHost dans son ensemble sont loin d'être parfaits et vous ferez face tôt ou tard à de petit ou gros problèmes. Lorsque cela se produit, venez gentiment [demander de l'aide sur le chat ou le forum, ou signaler le problème](/help) :) !
+Enfin, gardez à l'esprit que YunoHost est un logiciel libre maintenu par des volontaires - et que le but de YunoHost (démocratiser l'auto-hébergement) n'est pas simple ! Le logiciel est fourni sans aucune garantie. L'équipe de bénévoles fait de son mieux pour maintenir et fournir la meilleure expérience possible - pourtant les fonctionnalités, les applications et YunoHost dans son ensemble sont loin d'être parfaits et vous ferez face tôt ou tard à de petit ou gros problèmes. Lorsque cela se produit, venez gentiment [demander de l'aide sur le chat ou le forum, ou signaler le problème](/help) :) !
 
 Si vous aimez YunoHost et que vous voulez que le projet soit maintenu en vie et progresse, n'hésitez pas à laisser une note de remerciement et à [faire un don](https://liberapay.com/YunoHost) au projet et à en parler autour de vous !
 

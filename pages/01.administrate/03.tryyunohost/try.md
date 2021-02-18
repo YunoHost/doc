@@ -7,7 +7,7 @@ routes:
   default: '/try'
 ---
 
-! This demo server could be down from time to time.
+! This demo server could be down from time to time, but at least you can test and that's really cool :)
 
 [center]
 [columns]

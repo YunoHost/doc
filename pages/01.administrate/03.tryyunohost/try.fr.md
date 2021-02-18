@@ -7,7 +7,7 @@ routes:
   default: '/try'
 ---
 
-! **Note :** Cette démo peut cesser de fonctionner de temps en temps.
+! **Note :** Cette démo peut cesser de fonctionner de temps en temps, mais au moins vous pouvez tester, et ça c’est vraiment chouette :)
 
 [center]
 [columns]

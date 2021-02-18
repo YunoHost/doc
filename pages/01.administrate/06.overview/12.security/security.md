@@ -33,8 +33,9 @@ By default, the SSH authentication uses the administration password. Deactivatin
 
 ```bash
 ssh-keygen
-ssh-copy-id -i ~/.ssh/id_rsa.pub <your_yunohost_server>
+ssh-copy-id -i ~/.ssh/id_rsa.pub <username@your_yunohost_server>
 ```
+!!! If you meet permissions issues, set `username` as owner of the dir `~/.ssh` with `chown`. Be careful, for security reason this directory should be in mode `700`.
 
 Type your admnistration password and your key will be copied on your server.
 

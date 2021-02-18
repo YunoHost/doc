@@ -138,9 +138,10 @@ Select the hardware on which you want install YunoHost :
 
 However, community images exist and are available on Docker Hub:
 
-  * [AMD64 (classic) (old YunoHost version)](https://hub.docker.com/r/domainelibre/yunohost/)
-  * [I386 (old computers) (old YunoHost version)](https://hub.docker.com/r/domainelibre/yunohost-i386/)
-  * [ARMV7 (Raspberry Pi 2/3 ...) (old YunoHost version)](https://hub.docker.com/r/domainelibre/yunohost-arm/)
+  * [AMD64 (classic) (YunoHost 4.x)](https://hub.docker.com/r/domainelibre/yunohost/)
+  * [I386 (old computers) (YunoHost 4.x)](https://hub.docker.com/r/domainelibre/yunohost-i386/)
+  * [ARM64V8 (Raspberry Pi 4) (YunoHost 4.x)](https://hub.docker.com/r/cms0/yunohost/)
+  * [ARMV7 (Raspberry Pi 2/3 ...) (YunoHost 4.x)](https://hub.docker.com/r/domainelibre/yunohost-arm/)
   * [ARMV6 (Raspberry Pi 1) (old yunoHost version)](https://hub.docker.com/r/tuxalex/yunohost-armv6/)
 {% else %}
 
@@ -560,7 +561,7 @@ TODO : copypasta an actual shell session will all info asked etc..
 
 The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured - and guide you in how to fix issues. The diagnosis will run twice a day and send an alert if issues are detected.
 
-!!! N.B. : **don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/dns_config) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain){% if at_home %} and/or [port forwarding](/isp_box_config){% endif %}.
+!!! N.B. : **don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/dns_config) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain), add a swapfile if not enough ram {% if at_home %} and/or [port forwarding](/isp_box_config){% endif %}.
 
 !!! If an alert is not relevant (for example because you don't intend on using a specific feature), it is perfectly fine to flag the issue as 'ignored' by going in the webadmin > Diagnosis, and clicking the ignore button for this specifc issue.
 
