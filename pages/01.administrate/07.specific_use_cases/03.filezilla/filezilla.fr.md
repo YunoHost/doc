@@ -19,15 +19,15 @@ Installez le programme et lancez *Filezilla*.
 
 ## Configuration
 
-1. Cliquez sur l'icône *Gestionnaire de Sites* en haut à gauche de sorte à crééer une configuration utilisable ultérieurement.
+1. Cliquez sur l'icône *Gestionnaire de Sites* en haut à gauche de sorte à créer une configuration utilisable ultérieurement.
 
    ![écran principal de Filezilla](image://filezilla_1.png)
 
-2. Cliquez sur **Nouveau site** et donnez un nom au serveur que vous allez utiliser. Par exemple "Famille". Remplissez les paramètres comme sur la capture d'écran (en remplaçant l'adresse du serveur par la votre). Une fois terminé, cliquez sur **Connexion**. (N.B. : si vous souhaitez éditer les fichiers de l'application [custom webapp](https://github.com/YunoHost-Apps/my_webapp_ynh), il vous faudra utiliser un autre utilisateur que admin. Se référer à la documentation de custom webapp.)
+2. Cliquez sur **Nouveau site** et donnez un nom au serveur que vous allez utiliser. Par exemple "Famille". Remplissez les paramètres comme sur la capture d'écran (en remplaçant l'adresse du serveur par la vôtre). Une fois terminé, cliquez sur **Connexion**. (N.B. : si vous souhaitez éditer les fichiers de l'application [custom webapp](https://github.com/YunoHost-Apps/my_webapp_ynh), il vous faudra utiliser un autre utilisateur que admin. Se référer à la documentation de custom webapp.)
 
    ![écran du gestionnaire de site](image://filezilla_2.png)
 
-3. Vous recevrez un avertissement. *Vous pouvez l'ignorer si il s'agit de la première connexion*.
+3. Vous recevrez un avertissement. *Vous pouvez l'ignorer s'il s'agit de la première connexion*.
 
    ![avertissement au sujet de l'empreinte inconnue du serveur](image://filezilla_3.png)
 
@@ -35,7 +35,7 @@ Installez le programme et lancez *Filezilla*.
 
    ![écran d'identification demandant le mot de passe](image://filezilla_4.png)
 
-5. Une fois cette configuration créée, elle sera réutilisable les fois suivanteS.
+5. Une fois cette configuration créée, elle sera réutilisable les fois suivantes.
 
    ![la vue du "gestionnaire de site" avec le nouveau serveur ajouté](image://filezilla_5.png)
 
