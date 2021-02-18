@@ -140,6 +140,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [LibreOffice Online](https://www.libreoffice.org/download/libreoffice-online/) |  |  |  |
 | linuxdash | Low-overhead monitoring web dashboard | [Upstream](https://github.com/afaqurk/linux-dash) | [Package Draft](https://github.com/YunoHost-Apps/linuxdash_ynh) |
 | [LiquidSoap](https://www.liquidsoap.info/) | Audio and video streaming language | [Upstream](https://github.com/savonet/liquidsoap) |  |
+| [listmonk](https://listmonk.app) | Self-hosted newsletter & mailing list manager | [Upstream](https://github.com/knadh/listmonk) | |
 | LocomotiveCMS |  | [Upstream](https://github.com/locomotivecms/engine) |  |
 | [Loki](https://docs.loki.network/ServiceNodes/DebianPackageGuide/)| Service node for the Loki Network | [Upstream](https://github.com/loki-project/) |  |
 | [Loomio](https://www.loomio.org) |  | [Upstream](https://github.com/loomio/loomio/) |  |
