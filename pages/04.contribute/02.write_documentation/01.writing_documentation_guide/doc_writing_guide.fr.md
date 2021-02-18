@@ -27,11 +27,11 @@ Classement des applications disponibles par tags (genre, Git, gestion associatio
  2. Une partie configuration de l'application.
  1. Une partie administration de l'application.
  1. Une partie sur les limitations liées à YunoHost.
- 1. Une partie sur les clients desktop (si il en existe). Lien vers différentes applications tierces si il en existe plusieurs (lien possible avec le catalogue d'applications [framalibre.org](https://framalibre.org)) ou un lien vers la page concernant les applications desktop si des applications officielles sont fournies.
+ 1. Une partie sur les clients desktop (s'il en existe). Lien vers différentes applications tierces s'il en existe plusieurs (lien possible avec le catalogue d'applications [framalibre.org](https://framalibre.org)) ou un lien vers la page concernant les applications desktop si des applications officielles sont fournies.
  1. Une partie avec :
     - le lien vers le site officiel
     - le lien vers la documentation officielle
-    - Les liens vers le package de YunoHost et issues
+    - les liens vers le package de YunoHost et issues
 
 Trame pour la rédaction des pages de documentations : [ici](/app_writing_guide)
 
@@ -39,5 +39,5 @@ Trame pour la rédaction des pages de documentations : [ici](/app_writing_guide)
 
 1. Documenter les applications.
    1. Documenter les applications au travail (marqué : work) niveau 8/7/6.
-   1. Traduire la page de documentation à minima en français et en anglais.
+   1. Traduire la page de documentation a minima en français et en anglais.
    1. Faire une PR sur le dépôt de l'application concernée vers la page de documentation.
