@@ -34,7 +34,7 @@ However, to prevent any security issues, your ssh connection will be very limite
 You can only use `sftp` or `rsync` to copy your apps into that directory. `Git` isn't available, neither most of the usual bash commands.  
 To ease your usage of this CI, a small script can be used to copy your apps to your directory.
 
-Copy this [script](https://raw.githubusercontent.com/YunoHost/CI_package_check/master/dev_CI/send_to_dev_ci.sh) into your usual working directory and fill it with your info.
+Copy this [script](https://raw.githubusercontent.com/YunoHost/CI_package_check/master/lib/dev_ci/send_to_dev_ci.sh) into your usual working directory and fill it with your info.
 
 Make sure the content of your `check_process` file is correct then transfer your files.
 When your files have been transfered, you can monitor the CI pipeline on https://ci-apps-dev.yunohost.org.
