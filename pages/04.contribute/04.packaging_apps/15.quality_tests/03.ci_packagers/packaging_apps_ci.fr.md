@@ -34,7 +34,7 @@ Cependant, pour éviter tout problème de sécurité, votre connexion ssh sera t
 Vous ne pouvez utiliser que `sftp` ou `rsync` pour copier vos applications dans ce répertoire. `Git` n'est pas disponible, ni la plupart des commandes bash habituelles.  
 Pour faciliter votre utilisation de ce CI, un petit script peut être utilisé pour copier vos applications dans votre répertoire.
 
-Copiez ce [script](https://raw.githubusercontent.com/YunoHost/CI_package_check/master/dev_CI/send_to_dev_ci.sh) dans votre répertoire de travail habituel et indiquez vos informations.
+Copiez ce [script](https://raw.githubusercontent.com/YunoHost/CI_package_check/master/lib/dev_ci/send_to_dev_ci.sh) dans votre répertoire de travail habituel et indiquez vos informations.
 
 ---
 
