@@ -168,7 +168,7 @@ However, community images exist and are available on Docker Hub:
 {% elseif vps_ynh %}
 * A dedicated or virtual private server with yunohost preinstalled, 512MB RAM and 16GB capacity (at least)
 {% elseif virtualbox %}
-* An x86 computer with [VirtualBox installed](https://www.virtualbox.org/wiki/Downloads) and enough RAM capacity to be able to run a small virtual machine with 512MB RAM and 8GB capacity (at least)
+* An x86 computer with [VirtualBox installed](https://www.virtualbox.org/wiki/Downloads) and enough RAM capacity to be able to run a small virtual machine with 1024MB RAM and 8GB capacity (at least)
 {% endif %}
 {% if arm %}
 * A power supply (either an adapter or a MicroUSB cable) for your board;
