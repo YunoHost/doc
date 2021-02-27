@@ -7,7 +7,6 @@ routes:
   default: '/write_documentation'
 ---
 
-! This page is outdated and should be reworked
 
 ## Via GitHub
 
