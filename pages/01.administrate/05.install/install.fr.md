@@ -168,7 +168,7 @@ Cependant, ces images communautaires existent et sont disponibles sur Docker Hub
 {% elseif vps_ynh %}
 * Un serveur dédié ou virtuel avec YunoHost pré-installé, 512Mo de RAM et 16Go de capacité de stockage (au moins) ;
 {% elseif virtualbox %}
-* Un ordinateur x86 avec [VirtualBox installé](https://www.virtualbox.org/wiki/Downloads) et assez de RAM disponible pour lancer une petite machine virtuelle avec 512Mo de RAM et 8Go de capacité de stockage (au moins) ;
+* Un ordinateur x86 avec [VirtualBox installé](https://www.virtualbox.org/wiki/Downloads) et assez de RAM disponible pour lancer une petite machine virtuelle avec 1024Mo de RAM et 8Go de capacité de stockage (au moins) ;
 {% endif %}
 {% if arm %}
 * Une alimentation électrique (soit un adaptateur, soit un cable microUSB) pour alimenter la carte ;
