@@ -20,7 +20,7 @@ Vous pouvez vous héberger chez vous, sur une carte ARM ou un vieil ordinateur, 
 
 Un VPN est un tunnel chiffré entre deux machines. En pratique, cela permet de faire « comme si » une machine était connectée depuis ailleurs. Ceci permet de s'auto-héberger à la maison tout en contournant les limitations du fournisseur d'accès internet. Voir aussi [le projet Brique Internet](https://labriqueinter.net/) et [la FFDN](https://www.ffdn.org/).
 
-- **Avantages** : vous aurez un contrôle physique sur la machine, et le VPN permettra de cacher votre trafic vis-à-vis de votre FAI ainsi que de contourner ses limitations ;
+- **Avantages** : vous aurez un contrôle physique sur la machine, et le VPN permettra de cacher votre trafic vis-à-vis de votre FAI ainsi que de contourner ses limitations
 - **Inconvénients** : il vous faudra payer des frais mensuels pour le VPN.
 
 ### Sur un serveur distant (VPS ou serveur dédié)
