@@ -1,5 +1,5 @@
 ---
-title: Pre-installed images
+title: Vorinstallierte Images
 template: docs
 taxonomy:
     category: docs
@@ -8,12 +8,12 @@ routes:
 ---
 
 <span class="javascriptDisclaimer">
-This page requires Javascript enabled to display properly :s.
+Für diese Seite muss JavaScript aktiviert sein, damit sie korrekt angezeigt werden kann :s.
 <br/>
 <br/>
 </span>
 
-N.B. : Even if the image does not corresponds to the latest version of YunoHost, you can still use it and do a regular system upgrade after setting up!
+N B : Auch wenn das Image nicht der neuesten Version von YunoHost entspricht, können Sie es dennoch verwenden und anschließend ein Systemupdate durchführen
 
 <div class="hardware-image">
 <div id="cards-list">
