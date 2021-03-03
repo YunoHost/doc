@@ -97,7 +97,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | gnusocial | Create a federated comunication node |  | [Package Draft](https://github.com/YunoHost-Apps/gnusocial_ynh) |
 | [Goaccess](https://goaccess.io) | Web log analyzer | [Upstream](https://github.com/allinurl/goaccess) |  |
 | gogs_webhost | Turn a Gogs repository to static web hosting |  | [Package Draft](https://github.com/YunoHost-Apps/gogs_webhost_ynh) |
-| Gollum | A simple Git-powered wiki | [Upstream](https://github.com/gollum/gollum) | [Package Draft](https://github.com/ketsapiwiq/gollum_ynh) |
+| Gollum | A simple Git-powered wiki | [Upstream](https://github.com/gollum/gollum) | [Package Draft](https://github.com/YunoHost-Apps/gollum_ynh) |
 | Goploader |  | [Upstream](https://github.com/Depado/goploader) |  |
 | Gpodder.net |  |  |  |
 | Granary |  | [Upstream](https://github.com/snarfed/granary) |  |
