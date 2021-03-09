@@ -9,7 +9,7 @@ routes:
 
 ## Users / Administrators documentation pages
 
-Add a one-click install button (such as https://yunohost.org/#/app_piwigo_fr) and a button on the application integration level.
+Add a one-click install button (such as https://yunohost.org/en/app_piwigo) and a button on the application integration level.
 
 Classification of available applications by tags (genre, Git, association management, e-mails, etc.).
 
