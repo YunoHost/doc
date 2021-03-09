@@ -5,6 +5,8 @@ taxonomy:
     category: docs
 routes:
   default: '/dns_config'
+  aliases:
+    - '/dns'
 ---
 
 DNS (système de nom de domaine) est un élément essentiel d'Internet qui permet

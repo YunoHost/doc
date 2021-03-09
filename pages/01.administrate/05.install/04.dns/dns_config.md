@@ -5,6 +5,8 @@ taxonomy:
     category: docs
 routes:
   default: '/dns_config'
+  aliases:
+    - '/dns'
 ---
 
 DNS (domain name system) is a system that converts human-readable addresses
