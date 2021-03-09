@@ -60,13 +60,15 @@ To create a link to a site outside of the YunoHost documentation:
 will be displayed as such:
 [Text to display](https://lelien.tld)
 
-It is the same for the documentation pages, except that the link is internal. It refers to the wiki file, without language and file extension (the `_fr.md`):
+It is the same for the documentation pages, except that the link is internal. The page name is its default route, as defined in its page header:
 ```markdown
 [Wiki Page](/write_documentation)
 ```
 
-The link will return to the page with the correct language setting if the page exists.
+The link will return to the page with the correct language setting if the page exists, or defaults to the next available language (French, usually):
 [Wiki page](/write_documentation)
+
+! Note that language codes are thus not to be included at the beginning of the links to other documentation pages: `/en`, `/fr`, etc. are superfluous.
 
 ### Create anchors
 An anchor allows you to make a link to a specific point in a page, that's how the indexes at the top of the page work. To create an anchor, you need to insert code at the anchor location in the following form :
