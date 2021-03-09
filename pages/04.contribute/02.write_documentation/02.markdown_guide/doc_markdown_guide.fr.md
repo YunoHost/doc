@@ -68,7 +68,7 @@ C'est identique pour les pages de la documentation, excepté que le lien est int
 Le lien renverra vers la page avec la bonne configuration de langue si la page existe, ou vers une autre langue disponible (l'anglais, généralement) si elle n'existe pas.
 [Page du wiki](/write_documentation)
 
-! Notez qu'il ne faut donc pas préciser le code de langue au début des liens: `/fr`, `/en`, etc. sont superflus.
+! Notez qu'il ne faut donc pas préciser le code de langue au début des liens vers d'autres pages de la documentation : `/fr`, `/en`, etc. sont superflus.
 
 ### Créer des ancres
 Une ancre permet de faire un lien vers un point précis dans une page, c'est comme ça que fonctionnent les index en haut de page. Pour créer une ancre, il faut insérer du code à l'endroit de l'ancre sous la forme suivante :
