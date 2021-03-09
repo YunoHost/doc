@@ -78,6 +78,8 @@ routes:
 
 You can use Markdown syntax, refer to the [documentation](/doc_markdown_guide) for further information.
 
+! Note that language codes are not to be included at the beginning of the links to other documentation pages: `/en`, `/fr`, etc. are superfluous.
+
 To improve Markdown capabilities, additional plugins are installed in Grav. You can refer to their own documentation on GitHub to see how to use them.
 ```text
 anchors

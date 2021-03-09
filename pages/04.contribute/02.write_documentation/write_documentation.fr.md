@@ -77,6 +77,8 @@ routes:
 
 Vous pouvez utiliser la syntaxe Markdown, consultez la page de [documentation dédiée](/doc_markdown_guide) pour plus d'information.
 
+! Notez qu'il ne faut pas préciser le code de langue au début des liens vers d'autres pages de la documentation : `/fr`, `/en`, etc. sont superflus.
+
 Pour étendre les fonctionnalités de Markdown, des extensions ont été ajoutées à Grav. Vous pouvez consulter leur propre documentation sur GitHub pour découvrir comment vous en servir.
 ```text
 anchors

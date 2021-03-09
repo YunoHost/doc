@@ -60,13 +60,15 @@ Pour créer un lien vers un site hors de la documentation de YunoHost :
 s'affichera comme tel :
 [Texte à afficher](https://lelien.tld)
 
-C'est identique pour les pages de la documentation, excepté que le lien est interne. Il renvoie au fichier du wiki, sans extension de langue et de fichier (le `_fr.md`) :
+C'est identique pour les pages de la documentation, excepté que le lien est interne. Le nom de la page est sa route par défault définie dans son *header*:
 ```markdown
 [Page du wiki](/write_documentation)
 ```
 
-Le lien renverra vers la page avec la bonne configuration de langue si la page existe.
+Le lien renverra vers la page avec la bonne configuration de langue si la page existe, ou vers une autre langue disponible (l'anglais, généralement) si elle n'existe pas.
 [Page du wiki](/write_documentation)
+
+! Notez qu'il ne faut donc pas préciser le code de langue au début des liens vers d'autres pages de la documentation : `/fr`, `/en`, etc. sont superflus.
 
 ### Créer des ancres
 Une ancre permet de faire un lien vers un point précis dans une page, c'est comme ça que fonctionnent les index en haut de page. Pour créer une ancre, il faut insérer du code à l'endroit de l'ancre sous la forme suivante :
