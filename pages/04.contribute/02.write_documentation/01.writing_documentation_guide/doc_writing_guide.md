@@ -15,7 +15,6 @@ Classification of available applications by tags (genre, Git, association manage
 
 ## Some typical and general uses (writing framework)
 
- + When a link points to a page that is not in the language of the original page, it is customary to add `(en)` (for a link that points to a page in English).
  + rename the images in the following order:`description_application.ext`.
 
 ### General frame application documentation
