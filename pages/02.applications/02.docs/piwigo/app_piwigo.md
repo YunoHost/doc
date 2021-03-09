@@ -36,10 +36,11 @@ this package:
  * Allow one YunoHost user to be the administrator (set at the installation)
 
 ## Customer Applications
-
-| Application name | Platform | Multi-account | Play Store | F-Droid | Apple Store |
-|-----------------------|------------|---------------|------------|---------|-------------|
-| Piwigo | Android / iOS | ? | [Playstore - Piwigo](https://play.google.com/store/apps/details?id=org.piwigo.android&hl=en) | [Piwigo - F-Droid](https://f-droid.org/packages/org.piwigo.android/)| [App Store - Piwigo](https://apps.apple.com/fr/app/piwigo/id472225196) |
+| Application name | Platform | Multi-account | Play Store | F-Droid | Apple Store | *Other* |
+|------------------|----------|---------------|------------|---------|-------------|---------|
+| Piwigo | Android / iOS | ? | [Playstore - Piwigo](https://play.google.com/store/apps/details?id=org.piwigo.android&hl=en) | [Piwigo - F-Droid](https://f-droid.org/packages/org.piwigo.android/)| [App Store - Piwigo](https://apps.apple.com/fr/app/piwigo/id472225196) | |
+| digiKam | GNU/Linux / macOS / Windows | ? |    |    |    | [digiKam Download](https://www.digikam.org/download/) |
+| Shotwell | GNU/Linux | ? |    |    |    | [Install Shotwell](https://wiki.gnome.org/Apps/Shotwell/BuildingAndInstalling) |
 
 ## Useful links
 
