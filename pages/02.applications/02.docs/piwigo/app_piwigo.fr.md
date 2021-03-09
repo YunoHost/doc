@@ -28,7 +28,7 @@ En plus des [fonctionnalités principales](https://fr.piwigo.org/fonctionnalites
       * permet de gérer l'accès à d'autres utilisateurs, et mode invité possible
 * de permettre à un utilisateur d'être administrateur (réglage lors de l'installation)
 
-![](http://piwigo.org/screenshots/homepage/piwigo-batch-manager.png)
+![](https://piwigo.org/screenshots/homepage/piwigo-batch-manager.png)
 
 ## Liens utiles
 
