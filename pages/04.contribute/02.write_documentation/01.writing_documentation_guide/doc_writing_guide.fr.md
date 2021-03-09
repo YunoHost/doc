@@ -9,7 +9,7 @@ routes:
 
 ## Page de documentation utilisateurs·rices / administrateurs⋅rices
 
-Ajouter un bouton installer en un clic (comme par exemple : https://yunohost.org/#/app_piwigo_fr) et un bouton sur le niveau d'intégration de l'application.
+Ajouter un bouton installer en un clic (comme par exemple : https://yunohost.org/app_piwigo) et un bouton sur le niveau d'intégration de l'application.
 
 Classement des applications disponibles par tags (genre, Git, gestion associations, courriels, etc.).
 

@@ -9,13 +9,12 @@ routes:
 
 ## Users / Administrators documentation pages
 
-Add a one-click install button (such as https://yunohost.org/#/app_piwigo_fr) and a button on the application integration level.
+Add a one-click install button (such as https://yunohost.org/app_piwigo) and a button on the application integration level.
 
 Classification of available applications by tags (genre, Git, association management, e-mails, etc.).
 
 ## Some typical and general uses (writing framework)
 
- + When a link points to a page that is not in the language of the original page, it is customary to add `(en)` (for a link that points to a page in English).
  + rename the images in the following order:`description_application.ext`.
 
 ### General frame application documentation
