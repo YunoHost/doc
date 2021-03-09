@@ -19,6 +19,9 @@ routes:
 
 Les extensions rendent Piwigo facilement personnalisable. Cerise sur le gâteau, Piwigo est libre et gratuit.
 
+## Fonctionnalités
+
+
 En plus des [fonctionnalités principales](https://fr.piwigo.org/fonctionnalites) de Piwigo, ce paquet propose également :
 
 * une intégration avec le système de gestion des utilisateurs et le SSO de YunoHost :
