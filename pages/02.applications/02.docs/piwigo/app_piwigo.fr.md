@@ -13,14 +13,15 @@ routes:
 
 ### Index
 
+- [Fonctionnalités](#fonctionnalités)
+- [Applications clientes](#applications-clientes)
 - [Liens utiles](#liens-utiles)
 
-[Piwigo](https://fr.piwigo.org) est un logiciel de galerie photos pour le Web, bâti par une communauté active d'utilisateurs et de développeurs.
+**[Piwigo](https://fr.piwigo.org)** est un logiciel de galerie photos pour le Web, bâti par une communauté active d'utilisateurs et de développeurs.
 
 Les extensions rendent Piwigo facilement personnalisable. Cerise sur le gâteau, Piwigo est libre et gratuit.
 
 ## Fonctionnalités
-
 
 En plus des [fonctionnalités principales](https://fr.piwigo.org/fonctionnalites) de Piwigo, ce paquet propose également :
 
@@ -32,6 +33,12 @@ En plus des [fonctionnalités principales](https://fr.piwigo.org/fonctionnalites
 * de permettre à un utilisateur d'être administrateur (réglage lors de l'installation)
 
 ![Capture d'écran de Piwigo](image://piwigo_screenshot.jpg)
+
+## Applications clientes
+
+| Nom de l'application | Plateforme | Multi-comptes | Play Store | F-Droid | Apple Store |
+|-----------------------|------------|---------------|------------|---------|-------------|
+| Piwigo | Android / iOS | ? | [Playstore - Piwigo](https://play.google.com/store/apps/details?id=org.piwigo.android&hl=fr) | [Piwigo - F-Droid](https://f-droid.org/packages/org.piwigo.android/)| [App Store - Piwigo](https://apps.apple.com/fr/app/piwigo/id472225196) |
 
 ## Liens utiles
 
