@@ -7,7 +7,7 @@ routes:
   default: '/app_piwigo'
 ---
 
-![logo de Piwigo](image://piwigo.org.svg?width=80)
+![logo de Piwigo](image://piwigo_logo-2.png?width=80)
 
 [![Installer Piwigo avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=piwigo) [![Niveau d'intégration](https://dash.yunohost.org/integration/piwigo.svg)](https://dash.yunohost.org/appci/app/piwigo)
 
