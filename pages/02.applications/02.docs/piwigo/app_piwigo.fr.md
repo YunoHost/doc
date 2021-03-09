@@ -36,9 +36,11 @@ En plus des [fonctionnalités principales](https://fr.piwigo.org/fonctionnalites
 
 ## Applications clientes
 
-| Nom de l'application | Plateforme | Multi-comptes | Play Store | F-Droid | Apple Store |
-|-----------------------|------------|---------------|------------|---------|-------------|
-| Piwigo | Android / iOS | ? | [Playstore - Piwigo](https://play.google.com/store/apps/details?id=org.piwigo.android&hl=fr) | [Piwigo - F-Droid](https://f-droid.org/packages/org.piwigo.android/)| [App Store - Piwigo](https://apps.apple.com/fr/app/piwigo/id472225196) |
+| Nom de l'application | Plateforme | Multi-comptes | Play Store | F-Droid | Apple Store | Autre |
+|-----------------------|------------|---------------|------------|---------|-------------|---------|
+| Piwigo | Android / iOS | ? | [Playstore - Piwigo](https://play.google.com/store/apps/details?id=org.piwigo.android&hl=fr) | [Piwigo - F-Droid](https://f-droid.org/packages/org.piwigo.android/)| [App Store - Piwigo](https://apps.apple.com/fr/app/piwigo/id472225196) |  |
+| digiKam | GNU/Linux / macOS / Windows | ? |    |    |    | [digiKam Download](https://www.digikam.org/download/) |
+| Shotwell | GNU/Linux | ? |    |    |    | [Install Shotwell](https://wiki.gnome.org/Apps/Shotwell/BuildingAndInstalling) |
 
 ## Liens utiles
 
