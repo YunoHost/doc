@@ -13,12 +13,14 @@ routes:
 
 ### Index
 
+- [Features](#features)
 - [Useful links](#useful-links)
 
 [Piwigo](http://piwigo.org) is a photo gallery software for the Web, built by an active community of users and developers.
+
 Extensions make Piwigo easily customizable. Icing on the cake, Piwigo is free and opensource.
 
-![](https://piwigo.org/screenshots/homepage/piwigo-batch-manager.png)
+![Screenshot Piwigo](image://piwigo_screenshot.jpg)
 
 ## Features
 
@@ -32,7 +34,9 @@ this package:
      * allow other users management, and guest mode
  * Allow one YunoHost user to be the administrator (set at the installation)
 
-## Links
+## Useful links
 
- * Report a bug: https://github.com/YunoHost-Apps/piwigo_ynh/issues
- * Piwigo website: http://piwigo.org/
++ Website: [Piwigo](http://piwigo.org/)
++ Official documentation: [Documentation](https://piwigo.org/doc/doku.php)
++ Application software repository: [github.com - YunoHost-Apps/piwigo](https://github.com/YunoHost-Apps/piwigo_ynh)
++ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/piwigo/issues](https://github.com/YunoHost-Apps/piwigo_ynh/issues)
