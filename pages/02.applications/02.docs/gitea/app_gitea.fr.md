@@ -14,7 +14,7 @@ routes:
 ### Index
 
 - [Limitations avec YunoHost](#limitations-avec-yunohost)
-- [Applications clientes](#applications-clients)
+- [Applications clientes](#applications-clientes)
 - [Liens utiles](#liens-utiles)
 
 Gitea est un service Git auto-hébergé très simple à installer et à utiliser. Il est similaire à GitHub, Bitbucket ou GitLab. Le développement initial provient sur Gogs, mais il a été forké puis renommé Gitea.[¹](#sources)
