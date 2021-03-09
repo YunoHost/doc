@@ -18,7 +18,7 @@ routes:
 [Piwigo](http://piwigo.org) is a photo gallery software for the Web, built by an active community of users and developers.
 Extensions make Piwigo easily customizable. Icing on the cake, Piwigo is free and opensource.
 
-![](http://piwigo.org/screenshots/homepage/piwigo-batch-manager.png)
+![](https://piwigo.org/screenshots/homepage/piwigo-batch-manager.png)
 
 ## Features
 
