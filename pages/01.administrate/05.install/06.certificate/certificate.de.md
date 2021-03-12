@@ -12,7 +12,7 @@ Digitale Zertifikate werden verwendet, um die Vertraulichkeit und Echtheit der K
 YunoHost bietet ein **selbstsigniertes-Zertifikat**. Es bedeutet, dass Ihr Server die Gültigkeit des Zertifikats garantiert. Es genügt **für eine persönliche Verwendung**, weil Sie Ihrem eigenen Server vertrauen. Dies könnte jedoch ein Problem sein, wenn Sie den Zugriff auf einem Fremden, wie Webbenutzer, für eine Website öffnen möchten.
 Und zwar, werden die Benutzer eine solche Warnung auf dem Bildschirm sehen:
 
-![](image://postinstall_error.png)
+![](image://postinstall_error_de.png)
 
 Was im Wesentlichen den Besucher fragt: **"Vertrauen Sie dem Server, der diese Website hostet? "**.
 Dies kann viele Menschen selbstverständlich erschrecken.
