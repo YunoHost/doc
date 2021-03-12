@@ -58,7 +58,7 @@ xmpp-upload 3600 IN CNAME @
 # Mail (MX, SPF, DKIM and DMARC)
 #
 @ 3600 IN MX 10 your.domain.tld.
-@ 3600 IN TXT "v=spf1 a mx ip4:111.222.33.44 -all"
+@ 3600 IN TXT "v=spf1 a mx -all"
 mail._domainkey 3600 IN TXT "v=DKIM1; k=rsa; p=someHuuuuuuugeKey"
 _dmarc 3600 IN TXT "v=DMARC1; p=none"
 ```
@@ -79,7 +79,7 @@ Though it might be easier to understand it if displayed like this:
 |  CNAME  |   vjud                 |  `@`                                                  |
 |  CNAME  |   xmpp-upload          |  `@`                                                  |
 | **MX**  | **@**                  |  `your.domain.tld.`     (and priority: 10)            |
-|   TXT   |   @                    |  `"v=spf1 a mx ip4:111.222.33.44 -all"`               |
+|   TXT   |   @                    |  `"v=spf1 a mx -all"`               |
 |   TXT   |  mail._domainkey       |  `"v=DKIM1; k=rsa; p=someHuuuuuuugeKey"`              |
 |   TXT   |  _dmarc                |  `"v=DMARC1; p=none"`                                 |
 
