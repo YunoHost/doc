@@ -59,7 +59,7 @@ xmpp-upload 3600 IN CNAME @
 # Mail (MX, SPF, DKIM et DMARC)
 #
 @ 3600 IN MX 10 votre.domaine.tld.
-@ 3600 IN TXT "v=spf1 a mx ip4:111.222.33.44 -all"
+@ 3600 IN TXT "v=spf1 a mx -all"
 mail._domainkey 3600 IN TXT "v=DKIM1; k=rsa; p=uneGrannnnndeClef"
 _dmarc 3600 IN TXT "v=DMARC1; p=none"
 ```
@@ -80,7 +80,7 @@ suivante :
 |  CNAME  |   vjud                 |  `@`                                                   |
 |  CNAME  |   xmpp-upload          |  `@`                                                   |
 | **MX**  | **@**                  |  `votre.domaine.tld.`     (et priorité: 10)            |
-|   TXT   |   @                    |  `"v=spf1 a mx ip4:111.222.33.44 -all"`                |
+|   TXT   |   @                    |  `"v=spf1 a mx -all"`                |
 |   TXT   |  mail._domainkey       |  `"v=DKIM1; k=rsa; p=uneGrannnndeClef"`                |
 |   TXT   |  _dmarc                |  `"v=DMARC1; p=none"`                                  |
 
