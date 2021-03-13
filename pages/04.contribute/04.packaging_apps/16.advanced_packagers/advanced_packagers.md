@@ -1,4 +1,11 @@
-# Packing Applications : Advanced Packagers
+---
+title: Packing Applications : Advanced Packagers
+template: docs
+taxonomy:
+    category: docs
+routes:
+  default: '/advanced_packagers'
+---
 
 Here comes the time:
 - you know all the [YEPs](/packaging_apps_guidelines)
