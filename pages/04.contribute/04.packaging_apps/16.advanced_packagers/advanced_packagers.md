@@ -1,5 +1,5 @@
 ---
-title: Advanced Packagers
+title: Advanced packagers
 template: docs
 taxonomy:
     category: docs
