@@ -25,7 +25,6 @@
        * [App CI dashboard](https://dash.yunohost.org/appci/branch/stable)
        * [App Continuous Integration for packagers](/packaging_apps_ci)
        * [YEP - YunoHost Enhancement Proposals](/packaging_apps_guidelines)
-   * [Advanced packaging](/packaging_apps_final_boss)
 * [Contributing to the YunoHost core](/dev)
    * [Setting up a dev environment with ynh-dev](https://github.com/YunoHost/ynh-dev/blob/master/README.md)
    * [Deb build chain](https://github.com/YunoHost/vinaigrette/blob/master/README.md)
