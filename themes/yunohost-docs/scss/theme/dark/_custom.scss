@@ -1,0 +1,304 @@
+/*!
+ * Dark Mode Theme
+ *
+ * Inspired by Louis Charette
+ * https://github.com/lcharette/website/blob/cc855a6eb29693613e5e4e1d589a17ba7faf4aa9/themes/quark-custom/css/darkMode.scss
+ */
+
+body.dark-mode {
+  // Variables
+  $background-color: rgb(23, 27, 33);
+  $text-color: rgb(232, 233, 235);
+  $text-accent-color: white;
+  $text-darker-color: rgb(165, 169, 175);
+  $card-bg-color: rgb(17, 20, 24);
+  $border-color: rgb(63, 71, 85);
+  $link-color: rgb(114, 182, 236);
+
+  $danger: rgb(113, 44, 44);
+  $warning: rgb(132, 88, 4);
+  $success: rgb(51, 87, 35);
+
+  // Main body background
+  background-color: $background-color;
+
+  ::selection {
+    background-color: $border-color;
+  }
+
+  // Page wrapper
+  #body-wrapper,
+  #page-wrapper {
+    background-color: $background-color;
+    color: $text-color;
+  }
+
+  // Darker blue for links
+  a {
+    color: $link-color;
+  }
+
+  // Card, header and dropdown have darker background
+  .card,
+  #footer,
+  .dropmenu ul ul {
+    background-color: $card-bg-color !important;
+  }
+
+  // Headers have whiter color
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  #header a {
+    color: $text-accent-color;
+  }
+
+  // Labels are grey
+  .label.label-primary {
+    color: $text-accent-color;
+    background-color: $link-color;
+  }
+  .label.label-secondary {
+    color: $text-color;
+    background-color: $border-color;
+  }
+
+  // Pagination border is slighly different than the text
+  .pagination li {
+    border-color: $border-color;
+    background: $card-bg-color;
+  }
+
+  #sidebar-id {
+    background: $background-color;
+  }
+  // Sidebar menu use darker text color for focus
+  .menu,
+  .learn-brand,
+  .learn-nav {
+    color: $text-darker-color;
+  }
+
+  .menu .menu-item > a:focus,
+  .menu .menu-item > a:hover,
+  #top-bar #navigation > a:hover {
+    background: $card-bg-color;
+  }
+
+  #sidebar ul.related-pages li {
+    border-bottom-color: $border-color;
+  }
+
+  // Form background
+  .form-input,
+  .search-input,
+  [data-grav-field="array"] input,
+  [data-grav-field="array"] textarea {
+    background: $card-bg-color;
+  }
+
+  /*=================================================
+  Side Bar
+  =================================================*/
+  // Change logo color
+  .off-canvas .learn-sidebar .learn-brand #logo path {
+    fill: $text-color !important;
+  }
+
+  // Sidebar separator
+  .simplebar-content h5 {
+    border-top-color: $border-color;
+  }
+
+  .off-canvas #sidebar-id {
+    border-right: 0.05rem solid $border-color;
+  }
+
+  // Text in the sidebar during a search
+  .off-canvas .learn-sidebar .learn-nav ul.searched a,
+  .off-canvas .learn-sidebar .searchbox input {
+    color: $text-color;
+  }
+
+  // Selected text in the sidebar
+  .off-canvas .learn-sidebar .learn-nav ul li.active > a,
+  // Placeholder of the searching bar
+  .off-canvas .learn-sidebar .searchbox ::placeholder {
+    color: $text-darker-color;
+    background-color: transparent;
+  }
+
+  // Matching text in the sidebar
+  .off-canvas .learn-sidebar .learn-nav ul.searched .search-match a:hover,
+  .off-canvas .learn-sidebar .learn-nav ul.searched .search-match a {
+    color: $link-color;
+  }
+
+  // Background for selected submenu in the navbar
+  .off-canvas .learn-sidebar .learn-nav ul.topics > li.active,
+  .off-canvas .learn-sidebar .learn-nav ul.topics > li.parent {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  // Icons
+  .off-canvas .learn-sidebar .learn-nav .read-icon,
+  .off-canvas .learn-sidebar .searchbox {
+    color: $text-color;
+  }
+
+  // Language selector
+  .off-canvas .learn-sidebar .search-options .version-chooser select {
+    color: $text-color;
+  }
+
+  // Default text color
+  .off-canvas .learn-sidebar a,
+  .off-canvas .learn-sidebar .learn-nav ul li a,
+  .off-canvas .learn-sidebar .learn-nav ul li a > i,
+  .off-canvas .learn-sidebar .learn-nav ul li a > span > b {
+    color: $text-color;
+  }
+
+  .off-canvas .learn-sidebar a:hover {
+    color: $text-darker-color;
+  }
+
+  /*=================================================
+   App catalog
+  =================================================*/
+
+  #filter-app-icon,
+  #filter-app-cards {
+    color: $text-color;
+    background-color: $card-bg-color;
+  }
+
+  #app-cards-list .app-title {
+    color: $text-accent-color;
+  }
+
+  #app-cards-list .app-buttons {
+    border-top: 0.05rem solid $card-bg-color;
+  }
+
+  #app-cards-list .app-buttons > .btn-default {
+    color: $text-accent-color;
+    background-color: $border-color;
+  }
+
+  #app-cards-list .app-buttons > .btn:first-child {
+    border-right: 0.1rem solid $card-bg-color;
+  }
+
+  #app-cards-list .app-card {
+    border-color: $border-color;
+  }
+
+  #app-cards-list .label {
+    color: black;
+  }
+
+  /*=================================================
+   Hardware image
+  =================================================*/
+
+  .hardware-image .card {
+    background-color: $background-color !important;
+    border-color: $border-color;
+  }
+
+  .hardware-image .btn-group .btn.btn-info {
+    color: $card-bg-color;
+  }
+
+  .hardware-image .btn-group .btn.btn-info:hover,
+  .btn.btn-info:focus {
+    color: $card-bg-color;
+  }
+
+  /*=================================================
+   Other
+  =================================================*/
+
+  // Html tables
+  table tbody tr:nth-of-type(2n + 1) {
+    background: $card-bg-color;
+  }
+
+  table td,
+  table th {
+    border-bottom-color: $border-color;
+  }
+
+  // Color utils
+  .danger {
+    background-color: $danger;
+  }
+  .warning {
+    background-color: $warning;
+  }
+  .success {
+    background-color: $success;
+  }
+
+  .page-toc {
+    background-color: $card-bg-color;
+  }
+
+  .page-toc li,
+  .page-toc li > a {
+    color: $text-accent-color;
+  }
+}
+
+/*=================================================
+ Dark mode specific
+=================================================*/
+body.dark-mode {
+  // Dim images
+  img {
+    filter: brightness(0.85) contrast(1.2);
+  }
+
+  img#whitelogo {
+    background-color: unset;
+    padding: 10px;
+  }
+
+  #ynhlogo {
+    filter: invert(1);
+  }
+
+  .notices.yellow {
+    border-left-color: rgb(147, 91, 12);
+    background-color: rgb(49, 34, 11);
+    color: rgb(238, 160, 52);
+  }
+
+  .notices.red {
+    border-left-color: rgb(137, 33, 30);
+    background-color: rgb(46, 11, 11);
+    color: rgb(219, 90, 86);
+  }
+
+  .notices.blue,
+  .notices.note {
+    border-left-color: rgb(27, 110, 134);
+    background-color: rgb(19, 34, 42);
+    color: rgb(75, 185, 218);
+  }
+
+  .notices.green {
+    border-left-color: rgb(52, 120, 52);
+    background-color: rgb(25, 44, 19);
+    color: rgb(122, 197, 122);
+  }
+
+  code {
+    background: rgb(58, 58, 58);
+    color: rgb(236, 229, 173);
+  }
+}

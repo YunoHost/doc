@@ -1,0 +1,17 @@
+{% set body_classes = body_classes ~ ' ' ~ page.header.body_classes %}
+{% extends 'partials/base.html.twig' %}
+
+{% set tags = page.taxonomy.tag %}
+{% if tags %}
+    {% set progress = page.collection({'items':{'@taxonomy':{'category': 'docs', 'tag': tags}},'order': {'by': 'default', 'dir': 'asc'}}) %}
+{% else %}
+    {% set progress = page.collection({'items':{'@taxonomy':{'category': 'docs'}},'order': {'by': 'default', 'dir': 'asc'}}) %}
+{% endif %}
+
+{% block content %}
+    {% include 'partials/toc.html.twig' %}
+
+    {% include 'partials/page.html.twig' %}
+
+    {% include 'partials/github-note.html.twig' %}
+{% endblock %}

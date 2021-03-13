@@ -1,0 +1,303 @@
+.learn-sidebar:before {
+  background: none !important;
+}
+
+#chapter {
+  max-width: 80%;
+}
+
+/* Images helper classes */
+img.inline {
+  display: inline;
+  margin: 5px 15px 5px 5px;
+  vertical-align: middle;
+}
+
+img.center {
+  display: block;
+  margin: 5px 15px 5px 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td img {
+  margin: 0.2rem auto;
+}
+
+/* Figures and caption */
+figure img {
+  margin: auto;
+}
+
+figure figcaption {
+  font-style: italic;
+}
+
+/* List spacing */
+ul li,
+ol li {
+  margin-top: 0;
+}
+
+ul,
+ol {
+  margin-bottom: 0;
+}
+
+li p {
+  margin: inherit;
+}
+
+/* Paragraphs */
+p {
+  margin: 0 0 1rem;
+}
+
+.notices p {
+  margin: 0 0 0 0.5rem;
+}
+
+/* Flex */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex-child {
+  display: inline-flex;
+  text-align: center;
+}
+
+.nomargin * {
+  margin: 0px auto;
+}
+
+/* Fonts and headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", "Metropolis", "Helvetica Neue", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.simplebar-content h5 .fa {
+  font-size: 0.75em;
+  margin-right: 0.2em;
+  margin-left: 0.4em;
+}
+
+.simplebar-content h5 {
+  letter-spacing: 0em;
+  border-top: 1px solid;
+  padding: 0.8em 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/SourceSansPro-Bold-webfont.eot");
+  src: url("../fonts/SourceSansPro-Bold-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SourceSansPro-Bold-webfont.woff") format("woff"),
+    url("../fonts/SourceSansPro-Bold-webfont.ttf") format("truetype"),
+    url("../fonts/SourceSansPro-Bold-webfont.svg#fonts/SourceSansProBold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*=================================================
+ TOP BAR
+=================================================*/
+
+body #top-bar {
+  background: none;
+  border-bottom: none;
+}
+
+body #top-bar #navigation > a,
+body #top-bar #navigation > span {
+  border-left: none;
+}
+
+body #top-bar .progress {
+  display: none;
+}
+
+body #top-bar #navigation {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/*=================================================
+ SIDE BAR
+=================================================*/
+
+body .off-canvas .learn-sidebar .learn-brand {
+  box-shadow: none;
+}
+
+body .off-canvas .learn-sidebar .learn-nav ul li ul li.active > a {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-left: 4px solid mediumturquoise;
+}
+
+/*=================================================
+ SHORTCODE UI
+=================================================*/
+
+.tabs-wrapper.ui-theme-lite .tab {
+  background-color: inherit !important;
+}
+
+/*
+###############################################################################
+  Style sheet for the cards
+###############################################################################
+*/
+
+.hardware.active {
+  box-shadow: 0 0 15px #bbb;
+  border-radius: 5px;
+}
+
+.hardware-image #cards-list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.hardware-image .card {
+  margin-bottom: 20px;
+  width: 270px;
+  float: left;
+  min-height: 1px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.hardware-image .card .panel-body > h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.hardware-image .card-desc {
+  height: 135px;
+  overflow: hidden;
+}
+
+.hardware-image .card .btn-group {
+  width: 100%;
+  margin-left: 0px;
+}
+.hardware-image .card > .btn-group > .btn {
+  border-bottom: 0;
+}
+.hardware-image .card > .btn-group {
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-left: 0px;
+}
+.hardware-image .card-comment {
+  font-size: 0.8em;
+  margin-top: -5px;
+}
+.hardware-image .card > .annotations {
+  text-align: center;
+  font-size: small;
+}
+.hardware-image .card img {
+  margin: 1rem auto;
+}
+
+.hardware-image .btn-group .btn.btn-info {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+.hardware-image .btn-group .btn.btn-info:hover,
+.btn.btn-info:focus {
+  background-color: #39b3d7;
+  border-color: #269abc;
+}
+
+/*=================================================
+  App catalog
+=================================================*/
+
+#filter-app-icon,
+#filter-app-cards {
+  padding: 6px 12px;
+  margin-right: -2px;
+  border: none;
+}
+
+#filter-app-cards,
+#app-cards-list {
+  width: 100%;
+}
+
+#app-cards-list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#app-cards-list .app-card {
+  margin-bottom: 30px;
+  width: 28%;
+  float: left;
+  min-height: 1px;
+  margin-right: 15px;
+  margin-left: 15px;
+  border-radius: 3px;
+  position: relative;
+  height: 230px;
+}
+
+#app-cards-list .app-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.1;
+  padding: 1rem 1rem;
+  padding-bottom: 0;
+}
+
+#app-cards-list .app-title .label {
+  font-size: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.5em 0.6em;
+  padding-bottom: 0.3em;
+}
+
+#app-cards-list .app-descr {
+  height: 120px;
+  overflow: hidden;
+  padding: 0.2rem 1rem;
+}
+
+#app-cards-list .app-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+#app-cards-list .app-buttons {
+  width: 100%;
+}
+
+#app-cards-list .app-buttons > .btn {
+  border: 0;
+  font-size: 0.9em;
+  line-height: 1.58;
+  -webkit-appearance: none;
+}

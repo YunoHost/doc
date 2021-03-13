@@ -1,0 +1,17 @@
+title: 'Yunohost Documentation'
+default_lang: en
+author:
+  name: Yunohost
+  email: yunohost@yunohost.org
+taxonomies:
+  - category
+  - tag
+metadata:
+  description: 'Yunohost Documentation'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+redirects: null
+routes: null
