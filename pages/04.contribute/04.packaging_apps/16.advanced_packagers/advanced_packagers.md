@@ -1,5 +1,5 @@
 ---
-title: Packing Applications : Advanced Packagers
+title: Advanced Packagers
 template: docs
 taxonomy:
     category: docs
