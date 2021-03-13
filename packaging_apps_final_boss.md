@@ -1,20 +1,20 @@
 # Packing Applications : Advanced
 
-Here come the time:
+Here comes the time:
 - you know all the [YEPs](/packaging_apps_guidelines)
 - you masterise [apps packaging](/packaging_apps), [package_check](https://github.com/YunoHost/package_check), [example_ynh](https://github.com/YunoHost/example_ynh) and [experimental helpers](https://github.com/YunoHost-Apps/Experimental_helpers)
 - you have integrated the [YunoHost Apps Group](https://yunohost.org/#/project_organization)
 - you know what means `¯\_(ツ)_/¯`
 - you use to say `Don't ask to ask, just ask` in the [YunoHost support room](https://yunohost.org/#/help)
 
-Here are few ideas that will help you.
+Here are few ideas that could help you to improve YunoHost apps packaging.
 
-There are things that slow you down:
+Usually, there are things that slow you down:
 - Installing your freshly done package because of dependencies installation or npm/rust/elixir/composer builds
 - Waiting a package_check to see the level of your package
 - etc...
 
-The idea is to use YunoHost stuff to help you improve this lost time.
+The idea is to use YunoHost stuffs to help you improve this lost time.
 
 ## Building your infrastructure
 First idea is to build several VMs or LXCs with YunoHost to let you parallelize actions, like having the first one installing an apps, the second installing another apps, the third one debugging an apps upgrade, etc...
