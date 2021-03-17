@@ -17,7 +17,7 @@ XMPP est un protocole extensible - cela signifie que les utilisateurs peuvent co
 
 ## Compte XMPP
 
-Pour utiliser XMPP, il est nécessaire de disposer d'un compte dont l'identifiant prends la forme `utilisateur@domaine.tld`, ainsi qu’un mot de passe.
+Pour utiliser XMPP, il est nécessaire de disposer d'un compte dont l'identifiant prend la forme `utilisateur@domaine.tld`, ainsi qu’un mot de passe.
 
 Sous YunoHost, un compte XMPP est créé automatiquement pour chaque utilisateur. Les identifiants XMPP sont simplement l’adresse courriel principale de l'utilisateur ainsi que son mot de passe.
 
@@ -49,7 +49,7 @@ Il existe différents types de clients pour se connecter à XMPP.
 - [Siskin IM](https://siskin.im/) (iOS)
 - [Kaidan](https://www.kaidan.im/) (Ubuntu Touch / Plasma Mobile)
 
-Voici une liste plus exhaustive des clients XMPP : https://fr.wikipedia.org/wiki/Liste_de_clients_XMPP
+Voici une liste plus exhaustive des clients XMPP : [https://fr.wikipedia.org/wiki/Liste_de_clients_XMPP](https://fr.wikipedia.org/wiki/Clients_XMPP)
 
 ## Chiffrer ses conversations avec OMEMO
 
