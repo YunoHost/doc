@@ -11,7 +11,7 @@ routes:
 
 ## Depuis la webadmin
 
-Dans la partie administration, choisir Mettre à jour le système. YunoHost va mettre à jour le catalogue des paquets sytème et le catalogue des applications, et afficher les mise à jour disponibles.
+Dans la partie administration, choisir Mettre à jour le système. YunoHost va mettre à jour le catalogue des paquets système et le catalogue des applications, et afficher les mise à jour disponibles.
 
 Cliquez sur les boutons verts pour lancer les mises à jours du système et des applications.
 
