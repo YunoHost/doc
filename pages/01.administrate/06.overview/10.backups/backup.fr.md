@@ -147,9 +147,9 @@ Soyez prudent à propos de ce que vous sauvegardez et de la fréquence : il vaut
 
 #### Sauvegarder sur un serveur distant
 
-Vous pouvez suivre ce tutoriel sur le forum pour mettre en place Borg entre deux serveurs : https://forum.yunohost.org/t/how-to-backup-your-yunohost-server-on-another-server/3153
+Vous pouvez suivre ce tutoriel sur le forum pour mettre en place Borg entre deux serveurs : [https://forum.yunohost.org/t/how-to-backup-your-yunohost-server-on-another-server/3153](https://forum.yunohost.org/t/how-to-backup-your-yunohost-server-on-another-server/3153)
 
-Il existe aussi l'application Archivist qui permet un système similaire : https://forum.yunohost.org/t/new-app-archivist/3747
+Il existe aussi l'application Archivist qui permet un système similaire : [https://forum.yunohost.org/t/new-app-archivist/3747](https://forum.yunohost.org/t/new-app-archivist/3747)
 
 #### Éviter de sauvegarder certains dossiers
 Si besoin, vous pouvez spécifier que certains dossiers `home` d'utilisateurs ne soient pas sauvegardés par la commande `yunohost backup`, en créant un fichier vide nommé `.nobackup` à l'intérieur.
