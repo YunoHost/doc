@@ -9,7 +9,7 @@ routes:
 
 ### Sous-domaines
 
-YunoHost permet l’usage de sous-domaine. Il faut avoir un nom de domaine par exemple mon `domaine.fr` et créer au niveau de la configuration DNS (chez Gandi par exemple) des sous domaines.
+YunoHost permet l’usage de sous-domaine. Il faut avoir un nom de domaine par exemple mon `domaine.fr` et créer au niveau de la configuration DNS (chez Gandi par exemple) des sous-domaines.
 
 ### Configuration chez Gandi
 
