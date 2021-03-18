@@ -29,7 +29,7 @@ imapsync --host1 <domaine/IP> --port1 993 --ssl1 --user1 <utilisateur> --passwor
 --host2 <domaine/IP> --port2 993 --ssl2 --user2 <utilisateur> --password2 <mot de passe>
 ```
 
-Notez que les paramètres de transfert `--port 993` et `--ssl` sont spécifique à un serveur de mail YunoHost.
+Notez que les paramètres de transfert `--port 993` et `--ssl` sont spécifiques à un serveur de mail YunoHost.
 
 ### Larch
 
