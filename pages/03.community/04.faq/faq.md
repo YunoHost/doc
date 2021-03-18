@@ -22,7 +22,7 @@ We believe that decentralizing the Internet, and empowering people to take contr
 
 The YunoHost project aims to democratize self-hosting.
 
-It provides a software that aims to make it easy for people to run and administrate their own server, with minimal knowledge and required time.
+It provides a software that aims to make it easy for people to run and administer their own server, with minimal knowledge and required time.
 
 
 #### But what does YunoHost exactly *do*?
