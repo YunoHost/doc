@@ -15,6 +15,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 
 | Name   | Description | Upstream | Package draft |
 | ------ | ----------- | -------- | ------------- |
+| 2FAuth | Manage and Generate 2FA Codes | [Upstream](https://github.com/Bubka/2FAuth) |  |
 | 10er10 |  | [Upstream](https://github.com/dready92/10er10) |  |
 | [AbanteCart](https://abantecart.com) | Create an e-commerce website |  | [Package Draft](https://github.com/YunoHost-Apps/abantecart_ynh) |
 | AdGuard |  | [Upstream](https://github.com/AdguardTeam/AdGuardHome) | [Package Draft](https://github.com/YunoHost-Apps/adguard_ynh) |
