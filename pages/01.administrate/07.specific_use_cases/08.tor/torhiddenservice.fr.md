@@ -7,7 +7,7 @@ routes:
   default: '/torhiddenservice'
 ---
 
-! Ce tuto n'est pas complet ! Des données peuvent être récupérée avec cette installation comme le nom de domaine principal de votre yunohost, donc ce n'est pas un "service caché". Voir https://www.torproject.org/docs/tor-hidden-service.html.en (anglais)
+! Ce tuto n'est pas complet ! Des données peuvent être récupérées avec cette installation comme le nom de domaine principal de votre yunohost, donc ce n'est pas un "service caché". Voir https://www.torproject.org/docs/tor-hidden-service.html.en (anglais)
 
 ### Installer Tor
 ```bash
