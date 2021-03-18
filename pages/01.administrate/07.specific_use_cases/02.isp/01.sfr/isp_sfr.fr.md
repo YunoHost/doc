@@ -20,4 +20,4 @@ Pour pouvoir envoyer des mails, il faut désactiver le filtrage.
 
 ![](image://sfr-filtrage.png?resize=600)
 
-Source : https://assistance.sfr.fr/sfrmail-appli/sfrmail/envoyer-e-mail-serveur-smtp.html
+Source : [https://assistance.sfr.fr/sfrmail-appli/sfrmail/envoyer-e-mail-serveur-smtp.html](https://assistance.sfr.fr/sfrmail-appli/sfrmail/envoyer-e-mail-serveur-smtp.html)
