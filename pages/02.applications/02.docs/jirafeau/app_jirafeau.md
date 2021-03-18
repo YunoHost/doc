@@ -33,7 +33,7 @@ If you update the installation, then only the `tos.original.txt` file may change
 
 ### Administration
 
-To administrate the files within Jirafeau it is enough to go to the address `jirafeau.domaine.tld/admin.php`.
+To administer the files within Jirafeau it is enough to go to the address `jirafeau.domaine.tld/admin.php`.
 
 ## Useful links
 
