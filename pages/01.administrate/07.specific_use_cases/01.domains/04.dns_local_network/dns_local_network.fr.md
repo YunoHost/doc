@@ -17,7 +17,7 @@ Pour résoudre ce problème:
 
 Tout d'abord il vous faut trouver l'adresse IP locale du serveur
 - soit en utilisant l'une de astuces expliquées [ici](/finding_the_local_ip)
-- ou en utilisant la webadmin, dans l'écran Diagnostique, section Connection Internet, IPv4, cliquer sur 'Détails' et vous devriez trouver une entrée pour 'IP locale'.
+- ou en utilisant la webadmin, dans l'écran Diagnostic, section Connexion Internet, IPv4, cliquer sur 'Détails' et vous devriez trouver une entrée pour 'IP locale'.
 - ou en ligne de commande sur le serveur: `hostname -I`
 
 ## Configurer le DNS de la box
