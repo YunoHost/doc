@@ -9,7 +9,7 @@ routes:
 
 Nous allons voir comment configurer le DNS avec [OVH](http://www.ovh.com).
 
-Après achat de votre nom de domaine, rendez vous dans l'espace client pour retrouver le panneau de configuration d'OVH, et cliquez sur votre domaine à gauche :
+Après achat de votre nom de domaine, rendez-vous dans l'espace client pour retrouver le panneau de configuration d'OVH, et cliquez sur votre domaine à gauche :
 
 ![](image://ovh_control_panel.png?resize=800)
 
