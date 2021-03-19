@@ -11,9 +11,9 @@ routes:
 
 La documentation de YunoHost est gérée sur un [dépôt Git](https://github.com/YunoHost/doc).
 
-Si vous n'êtes pas familier avec GitHub, il y a un bouton "Éditer" en haut de chaque page qui vous redirigera vers l'éditeur en ligne de GitHub et qui vous aidera à proposer vos modifications (appelées *Pull Requests*).
+Si vous n'êtes pas familier avec GitHub, il y a un bouton "Éditer" en haut de chaque page qui vous redirigera vers l'éditeur en ligne de GitHub et qui vous aidera à proposer vos modifications (appelées *Pull Requests*, PR).
 
-Directement sur GitHub, vous pouvez faire un *fork* du dépôt, y faire vos modifications, et envoyer vos *pull requests*.
+Cependant, si vous êtes lancé sur une série de contributions, vous devriez faire un *fork* du dépôt sur GitHub. Vous pouvez ensuite faire toutes les modifications (*commits*) que vous voulez sur votre dépôt, et les soumettres tous ensemble dans la même PR. L'étiquette sur GitHub vous encouragerait à rassembler dans une même PR tous les *commits* d'une même thématique.
 
 Puisque l'éditeur en ligne ne permet pas d'ajouter des fichiers, utiliser Git par la ligne de commande est la méthode recommandée si vous voulez ajouter des médias (comme des images).
 
