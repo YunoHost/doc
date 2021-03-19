@@ -276,6 +276,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [sympa](https://www.sympa.org/) | Mailing List manager |  | [Package Draft](https://github.com/YunoHost-Apps/sympa_ynh) |
 | Synapse-Admin | Management GUI for matrix-synapse | [Upstream](https://github.com/Awesome-Technologies/synapse-admin) |  |
 | [Syspass](https://www.syspass.org/) |  | [Upstream](https://github.com/nuxsmin/sysPass) |  |
+| [Tahoe-LAFS](https://tahoe-lafs.org/) | Decentralized cloud storage system | [Upstream](https://github.com/tahoe-lafs/tahoe-lafs) |  |
 | [Taiga](https://taiga.io) |  | [Upstream](https://github.com/taigaio/) |  |
 | [Taskwarrior](https://taskwarrior.org) |  | [Upstream](https://github.com/GothenburgBitFactory/taskwarrior) |  |
 | [teampass](https://www.teampass.net) | Passwords Manager |  | [Package Draft](https://github.com/YunoHost-Apps/teampass_ynh) |
@@ -284,7 +285,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | telegram_chatbot | Telegram chatbot - mini chatbot for Telegram |  | [Package Draft](https://github.com/YunoHost-Apps/telegram_chatbot_ynh) |
 | TellForm |  | [Upstream](https://github.com/tellform/tellform) |  |
 | [tes3mp](https://tes3mp.com/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/tes3mp_ynh) |
-|[Theia-IDE](https://theia-ide.org/) | VS Code-like cloud IDE |[Upstream](https://hub.docker.com/r/theiaide/theia-full)| |
+| [Theia-IDE](https://theia-ide.org/) | VS Code-like cloud IDE |[Upstream](https://hub.docker.com/r/theiaide/theia-full)| |
 | Thredded |  | [Upstream](https://github.com/thredded/thredded) |  |
 | Tinylist |  | [Upstream](https://github.com/baggachipz/tinylist) |  |
 | [TMate](https://tmate.io/) |  | [Upstream](https://github.com/tmate-io/tmate) |  |
