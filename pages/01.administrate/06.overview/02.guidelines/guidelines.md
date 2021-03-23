@@ -7,7 +7,7 @@ routes:
   default: '/guidelines'
 ---
 
-This page lists a few advices and guidelines which every YunoHost administrator should be aware to take care of a YunoHost server :).
+This page lists some advice and guidelines which every YunoHost administrator should be aware to take care of a YunoHost server :)
 
 ## Do not break YunoHost
 
@@ -25,7 +25,7 @@ If your goal is to run a production server:
 YunoHost is designed to work with general and simple use cases in mind. Deviating from those conditions will make things harder and you will need technical knowledge to make it work. For instance, 
 - do not try to run YunoHost in a context where you cannot have control over ports 80 and 443 (or no internet at all); 
 - do not try to host five servers behind the same internet connection if you are not already an advanced user; 
-- do not fall into nerd whims such as willing to replace NGINX by Apache (or run both at the same time); 
+- do not fall into nerd whims such as willing to replace NGINX with Apache (or run both at the same time); 
 - do not try to use custom SSL certificates if you don't really need them;
 - ...
 
