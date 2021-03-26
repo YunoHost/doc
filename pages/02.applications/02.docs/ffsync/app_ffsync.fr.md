@@ -24,13 +24,14 @@ Firefox Sync permet la synchronisation des favoris, des marques-pages, de l’hi
 ## Configuration
 
 Une fois installé, le site `domain.tld/path` devrait afficher une page expliquant comment le configurer.
-Pour utiliser votre serveur personnel de synchronisation Firefox, vous allez devoir configurer votre explorateur internet [Firefox](https://www.mozilla.org/fr/firefox/new/).
+
+Pour utiliser votre serveur personnel de synchronisation Firefox, vous allez devoir configurer votre navigateur [Firefox](https://www.mozilla.org/fr/firefox/new/).
 
 ### Firefox bureau
 
-1. Une fois Firefox lancé ouvrer cette adresse URL : `about:config`
-2. Recherchez : `identity.sync.tokenserver.uri`
-3. Remplacez l’URL par la vôtre : `https://mondomaine.tld/adresse/token/1.0/sync/1.5`
+1. Une fois Firefox lancé, rendez-vous à l’adresse : `about:config`
+2. Recherchez la clé : `identity.sync.tokenserver.uri`
+3. Remplacez l’URL par la vôtre : `https://mondomaine.tld/path/token/1.0/sync/1.5`
 4. Créez un compte chez Mozilla : https://accounts.firefox.com/signup
 
 ### Firefox mobile
@@ -39,7 +40,7 @@ Avec les versions récentes de Firefox pour mobile la démarche est identique à
 
 ## Limitations avec YunoHost
 
-Par défaut, un serveur configuré reportera l'authentification sur le serveur de comptes hébergé par Mozilla à l'adresse https://accounts.firefox.com. Vous devrez donc toujours vous authentifier sur Mozilla, mais le stockage de vos informations se fera sur votre hôte.
+Par défaut, l'authentification s’effectuera toujours à l’aide de comptes hébergés par Mozilla à l'adresse https://accounts.firefox.com. Vous devrez donc toujours vous authentifier chez Mozilla, mais le stockage de vos informations se fera bien sur votre serveur.
 
 ## Liens utiles
 
