@@ -303,7 +303,7 @@ Now that you downloaded the image of {{image_type}}, you should flash it on {% i
 
 Download <a href="https://www.balena.io/etcher/" target="_blank">Etcher</a> for your operating system and install it.
 
-Plug your {% if arm %}SD card{% else %}USB stick{% endif %}, select your image and click "Flask"
+Plug your {% if arm %}SD card{% else %}USB stick{% endif %}, select your image and click "Flash"
 
 ![Etcher](image://etcher.gif?resize=700&class=inline)
 
