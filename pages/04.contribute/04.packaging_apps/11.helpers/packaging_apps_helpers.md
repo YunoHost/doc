@@ -1614,7 +1614,27 @@ Requires YunoHost version 2.7.2 or higher.</br></br>
     
 
 **Details**:  
-ynh\_use\_nodejs has to be used in any app scripts before using node for the first time.</br>This helper will provide alias and variables to use in your scripts.</br></br>To use npm or node, use the alias `ynh\_npm` and `ynh\_node`</br>Those alias will use the correct version installed for the app</br>For example: use `ynh\_npm install` instead of `npm install`</br></br>With `sudo` or `ynh\_exec\_as`, use instead the fallback variables `$ynh\_npm` and `$ynh\_node`</br>And propagate $PATH to sudo with $ynh\_node\_load\_PATH</br>Exemple: `ynh\_exec\_as $app $ynh\_node\_load\_PATH $ynh\_npm install`</br></br>$PATH contains the path of the requested version of node.</br>However, $PATH is duplicated into $node\_PATH to outlast any manipulation of $PATH</br>You can use the variable `$ynh\_node\_load\_PATH` to quickly load your node version</br> in $PATH for an usage into a separate script.</br>Exemple: $ynh\_node\_load\_PATH $final\_path/script\_that\_use\_npm.sh`</br></br>Finally, to start a nodejs service with the correct version, 2 solutions</br> Either the app is dependent of node or npm, but does not called it directly.</br> In such situation, you need to load PATH</br>   `Environment="\_\_NODE\_ENV\_PATH\_\_"`</br>   `ExecStart=\_\_FINALPATH\_\_/my\_app`</br>    You will replace \_\_NODE\_ENV\_PATH\_\_ with $ynh\_node\_load\_PATH</br></br>Or node start the app directly, then you don't need to load the PATH variable</br>   `ExecStart=\_\_YNH\_NODE\_\_ my\_app run`</br>    You will replace \_\_YNH\_NODE\_\_ with $ynh\_node</br></br>2 other variables are also available</br>  - $nodejs\_path: The absolute path to node binaries for the chosen version.</br>  - $nodejs\_version: Just the version number of node for this app. Stored as 'nodejs\_version' in settings.yml.</br></br>Requires YunoHost version 2.7.12 or higher.</br></br>
+`ynh_use_nodejs` has to be used in any app scripts before using node for the first time.</br>
+This helper will provide alias and variables to use in your scripts.</br></br>
+
+To use npm or node, use the alias `ynh_npm` and `ynh_node`</br>
+Those alias will use the correct version installed for the app</br>
+For example: use `ynh_npm install` instead of `npm install`</br></br>
+
+With `sudo` or `ynh_exec_as`, use instead the fallback variables `$ynh_npm` and `$ynh_node`</br>
+And propagate `$PATH` to sudo with `$ynh_node_load_PATH`</br>
+Exemple: `ynh_exec_as $app $ynh_node_load_PATH $ynh_npm install`</br></br>
+
+`$PATH` contains the path of the requested version of node.</br>
+However, `$PATH` is duplicated into `$node_PATH` to outlast any manipulation of `$PATH`</br>
+You can use the variable `$ynh_node_load_PATH` to quickly load your node version in `$PATH` for an usage into a separate script.</br>
+
+Exemple: `$ynh_node_load_PATH $final_path/script_that_use_npm.sh`</br></br>
+Finally, to start a nodejs service with the correct version, two solutions</br> Either the app is dependent of node or npm, but does not called it directly.</br> In such situation, you need to load PATH</br>   `Environment="__NODE_ENV_PATH__"`</br>   `ExecStart=__FINALPATH__/my_app`</br>    You will replace `__NODE_ENV_PATH__` with `$ynh_node_load_PATH`</br></br>
+
+Or node start the app directly, then you don't need to load the PATH variable</br>   `ExecStart=__YNH_NODE__ my_app run`</br>    You will replace `__YNH_NODE__` with `$ynh_node`</br></br>
+
+2 other variables are also available</br>  - `$nodejs_path`: The absolute path to node binaries for the chosen version.</br>  - `$nodejs_version`: Just the version number of node for this app. Stored as `nodejs_version` in `settings.yml`.</br></br>Requires YunoHost version 2.7.12 or higher.</br></br>
     
 
 [Dude, show me the code!](https://github.com/YunoHost/yunohost/blob/adc83b4c9c2c30e9ef75f3609c538b646f91f1db/data/helpers.d/nodejs#L68)
