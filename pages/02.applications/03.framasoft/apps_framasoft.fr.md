@@ -16,7 +16,7 @@ routes:
 | Framabookin    | BicBucStriim        | [[fa=git /]](https://github.com/YunoHost-Apps/bicbucstriim_ynh)    ![](https://ci-apps.yunohost.org/ci/badges/bicbucstriim.status.svg)    ![](https://dash.yunohost.org/integration/bicbucstriim.svg) |
 | Framacalc      | Ethercalc           | [[fa=git /]](https://github.com/YunoHost-Apps/ethercalc_ynh)       ![](https://ci-apps.yunohost.org/ci/badges/ethercalc.status.svg)       ![](https://dash.yunohost.org/integration/ethercalc.svg) |
 | Framacarte     | uMap                | [[fa=git /]](https://github.com/YunoHost-Apps/umap_ynh)            ![](https://ci-apps.yunohost.org/ci/badges/umap.status.svg)            ![](https://dash.yunohost.org/integration/umap.svg) |
-| Framaclic      | Matomo              | [[fa=git /]](https://github.com/YunoHost-Apps/matomo_ynh)          ![](https://ci-apps.yunohost.org/ci/badges/matomo.status.svg)          ![](https://dash.yunohost.org/integration/matomo.svg) |
+| Framaclic      | Dolomon              | Non Packagé |
 | Framadate      | OpenSondage         | [[fa=git /]](https://github.com/YunoHost-Apps/opensondage_ynh)     ![](https://ci-apps.yunohost.org/ci/badges/opensondage.status.svg)     ![](https://dash.yunohost.org/integration/opensondage.svg) |
 | Framadrive     | Nextcloud           | [[fa=git /]](https://github.com/YunoHost-apps/nextcloud_ynh)       ![](https://ci-apps.yunohost.org/ci/badges/nextcloud.status.svg)       ![](https://dash.yunohost.org/integration/nextcloud.svg) |
 | Framadrop      | Lufi                | [[fa=git /]](https://github.com/YunoHost-Apps/lufi_ynh)            ![](https://ci-apps.yunohost.org/ci/badges/lufi.status.svg)            ![](https://dash.yunohost.org/integration/lufi.svg) |
@@ -25,10 +25,8 @@ routes:
 | Framagames     | Framagames          | [[fa=git /]](https://github.com/YunoHost-Apps/framagames_ynh)      ![](https://ci-apps.yunohost.org/ci/badges/framagames.status.svg)      ![](https://dash.yunohost.org/integration/framagames.svg) |
 | Framagenda     | (Agenda Nextcloud)  | c.f. Nextcloud                                        |
 | Framagit       | GitLab              | [[fa=git /]](https://github.com/YunoHost-Apps/gitlab_ynh)          ![](https://ci-apps.yunohost.org/ci/badges/gitlab.status.svg)          ![](https://dash.yunohost.org/integration/gitlab.svg) |
-|                | Gogs                | [[fa=git /]](https://github.com/YunoHost-Apps/gogs_ynh)            ![](https://ci-apps.yunohost.org/ci/badges/gogs.status.svg)            ![](https://dash.yunohost.org/integration/gogs.svg) |
 | Frama.link     | Lstu                | [[fa=git /]](https://github.com/YunoHost-Apps/lstu_ynh)            ![](https://ci-apps.yunohost.org/ci/badges/lstu.status.svg)            ![](https://dash.yunohost.org/integration/lstu.svg) |
-| Framalistes    | Mailman             | [[fa=git /]](https://github.com/YunoHost-Apps/mailman_ynh)         ![](https://ci-apps.yunohost.org/ci/badges/mailman.status.svg)         ![](https://dash.yunohost.org/integration/mailman.svg) |
-|                | Sympa               | [[fa=git /]](https://github.com/alexAubin/sympa_ynh)               ![](https://ci-apps.yunohost.org/ci/badges/sympa.status.svg)           ![](https://dash.yunohost.org/integration/sympa.svg) |
+| Framalistes    | Sympa               | [[fa=git /]](https://github.com/alexAubin/sympa_ynh)               ![](https://ci-apps.yunohost.org/ci/badges/sympa.status.svg)           ![](https://dash.yunohost.org/integration/sympa.svg) |
 | Framanews      | TinyTinyRSS         | [[fa=git /]](https://github.com/YunoHost-apps/ttrss_ynh)           ![](https://ci-apps.yunohost.org/ci/badges/ttrss.status.svg)           ![](https://dash.yunohost.org/integration/ttrss.svg) |
 | Framanotes     | Turtl               | [[fa=git /]](https://github.com/YunoHost-Apps/turtl_ynh)           ![](https://ci-apps.yunohost.org/ci/badges/turtl.status.svg)           ![](https://dash.yunohost.org/integration/turtl.svg) |
 | Framapad       | Etherpad + mypads   | [[fa=git /]](https://github.com/YunoHost-Apps/etherpad_mypads_ynh) ![](https://ci-apps.yunohost.org/ci/badges/etherpad_mypads.status.svg) ![](https://dash.yunohost.org/integration/etherpad_mypads.svg) |
@@ -39,7 +37,7 @@ routes:
 | Framasphère    | Diaspora            | [[fa=git /]](https://github.com/aymhce/diaspora_ynh)               ![](https://ci-apps.yunohost.org/ci/badges/diaspora.status.svg)        ![](https://dash.yunohost.org/integration/diaspora.svg) |
 | Framatalk      | Jitsi Meet          | [[fa=git /]](https://github.com/YunoHost-Apps/jitsi_ynh)           ![](https://ci-apps.yunohost.org/ci/badges/jitsi.status.svg)           ![](https://dash.yunohost.org/integration/jitsi.svg) |
 | Framateam      | Mattermost          | [[fa=git /]](https://github.com/YunoHost-Apps/mattermost_ynh)      ![](https://ci-apps.yunohost.org/ci/badges/mattermost.status.svg)      ![](https://dash.yunohost.org/integration/mattermost.svg) |
-| Framatrad      | ?                    | Non packagé                                          |
+| Framatrad      | Weblate             | [[fa=git /]](https://github.com/YunoHost-Apps/weblate_ynh                                      |
 | Framatube      | Peertube            | [[fa=git /]](https://github.com/YunoHost-Apps/peertube_ynh)        ![](https://ci-apps.yunohost.org/ci/badges/peertube.status.svg)        ![](https://dash.yunohost.org/integration/peertube.svg) |
 | Framavectoriel | SVG-Edit            | [[fa=git /]](https://github.com/YunoHost-Apps/svgedit_ynh)            ![](https://ci-apps.yunohost.org/ci/badges/svgedit.status.svg)      ![](https://dash.yunohost.org/integration/svgedit.svg) |
 | Framavox       | Loomio              | Non packagé                                          |
