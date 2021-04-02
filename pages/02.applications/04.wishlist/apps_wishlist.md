@@ -220,7 +220,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Pydio Cells](https://pydio.com/) |  | [Upstream](https://github.com/pydio/cells) |  |
 | [pyload](https://pyload.net/) |  | [Upstream](https://github.com/pyload/pyload) | [Package Draft](https://github.com/YunoHost-Apps/pyload_ynh) |
 | qBittorrent |  | [Upstream](https://github.com/qbittorrent/qBittorrent) |  |
-| [Questions2answer](https://www.question2answer.org/) |  |  |  |
 | [racktables](https://racktables.org) |  | [Upstream](https://github.com/RackTables/racktables) |  |
 | Radarr |  | [Upstream](https://github.com/Radarr/Radarr) |  |
 | Race for the galaxy | | [Upstream](https://github.com/bnordli/rftg) | |
