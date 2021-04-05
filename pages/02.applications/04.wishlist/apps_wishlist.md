@@ -99,7 +99,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | gogs_webhost | Turn a Gogs repository to static web hosting |  | [Package Draft](https://github.com/YunoHost-Apps/gogs_webhost_ynh) |
 | Gollum | A simple Git-powered wiki | [Upstream](https://github.com/gollum/gollum) | [Package Draft](https://github.com/YunoHost-Apps/gollum_ynh) |
 | Goploader |  | [Upstream](https://github.com/Depado/goploader) |  |
-| Gpodder.net |  |  |  |
 | Granary |  | [Upstream](https://github.com/snarfed/granary) |  |
 | [Graphhopper](https://www.graphhopper.com/) |  | [Upstream](https://github.com/graphhopper/graphhopper) |  |
 | [Habitica](https://habitica.com/) |  | [Upstream](https://github.com/HabitRPG/habitica) |  |
@@ -134,7 +133,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [LBCAlerte](https://alerte.ilatumi.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/LBCAlerte_ynh) |
 | lektor | A static website generator |  | [Package Draft](https://github.com/YunoHost-Apps/lektor_ynh) |
 | [Lessy](https://lessy.io) |  | [Upstream](https://github.com/lessy-community/lessy) |  |
-| [LibreOffice Online](https://www.libreoffice.org/download/libreoffice-online/) |  |  |  |
 | linuxdash | Low-overhead monitoring web dashboard | [Upstream](https://github.com/afaqurk/linux-dash) | [Package Draft](https://github.com/YunoHost-Apps/linuxdash_ynh) |
 | [LiquidSoap](https://www.liquidsoap.info/) | Audio and video streaming language | [Upstream](https://github.com/savonet/liquidsoap) |  |
 | [listmonk](https://listmonk.app) | Self-hosted newsletter & mailing list manager | [Upstream](https://github.com/knadh/listmonk) | |
