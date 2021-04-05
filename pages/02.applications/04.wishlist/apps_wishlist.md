@@ -196,6 +196,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Pelias |  | [Upstream](https://github.com/pelias/pelias) |  |
 | Pelican | Pelican Static Site Generator |  | [Package Draft](https://github.com/YunoHost-Apps/pelican_ynh) |
 | [Photoprism](https://photoprism.org/) |  | [Upstream](https://github.com/photoprism/photoprism) |  |
+| [Photostructure](https://photostructure.com/) |  | [Upstream](https://github.com/photostructure/photostructure-for-servers) |  |
 | [phpbb](https://www.phpbb.com/) | Bulletin board software | [Upstream](https://github.com/phpbb) | [Package Draft](https://github.com/YunoHost-apps/phpbb_ynh) |
 | [phpboost](https://www.phpboost.com/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/phpboost_ynh) |
 | [phpipam](https://phpipam.net/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/phpipam_ynh) |
