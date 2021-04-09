@@ -120,38 +120,6 @@ ssh -p <new_ssh_port_number> admin@<your_yunohost_server>
 
 ---
 
-### Change the user authorized to connect via SSH
-
-To avoid multiple forced login attempts to the admin account by robots, change the authorized user who can connect.
-
-!!! In the case of a key authentication, a brute force attack has no chance of succeeding. This step is not really useful in this case.
-
-**On your server**, add a user
-```bash
-sudo adduser user_name
-```
-Choose a strong password, since this user will be responsible with obtaining root privileges.
-Add the user to the sudo group to allow them to perform maintenance tasks that require root privileges.
-```bash
-sudo adduser user_name sudo
-```
-
-Now, change the SSH configuration to allow the new user to connect.
-**On your server**, edit the SSH configuration file
-```bash
-sudo nano /etc/ssh/sshd_config
-
-# Look for the section "Authentication" and add at the end of it:
-AllowUsers user_name
-```
-Only users listed in the AllowUsers directive will then be allowed to connect via SSH, which excludes the admin user.
-
-Save and restart the SSH daemon.
-```bash
-systemctl restart ssh
-```
----
-
 ### Change cipher compatibility configuration
 
 The default TLS configuration for services tends to offer good compatibility to support old devices. You can tune this policy for specific services like SSH and NGINX. By default, the NGINX configuration follows the [intermediate compatibility recommendation](https://wiki.mozilla.org/Security/Server_Side_TLS#Intermediate_compatibility_.28default.29) from Mozilla. You can choose to switch to the 'modern' configuration which uses more recent security recommendations, but decreases the compatibility, which may be an issue for your users and visitors using older devices. More details about the compatibility can be found on [this page](https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility).
@@ -175,12 +143,3 @@ YunoHost administration is accessible through an **HTTP API**, served on the 678
 sudo systemctl disable yunohost-api
 sudo systemctl stop yunohost-api
 ```
-
-### YunoHost penetration test
-
-Some [pentests](https://en.wikipedia.org/wiki/Penetration_test) have been done on a YunoHost 2.4 instance (french):
-
-- [1) Preparation](https://exadot.fr/blog/2016-07-03-pentest-dune-instance-yunohost-1-preparation)
-- [2) The functionning](https://exadot.fr/blog/2016-07-12-pentest-dune-instance-yunohost-2-le-fonctionnement)
-- [3) Black Box Audit](https://exadot.fr/blog/2016-08-26-pentest-dune-instance-yunohost-3-audit-en-black-box)
-- [4) Grey Box Audit](https://exadot.fr/blog/2016-11-03-pentest-dune-instance-yunohost-4-audit-en-grey-box)
