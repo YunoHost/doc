@@ -58,7 +58,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | DockerUI | Deploy applications with Docker |  | [Package Draft](https://github.com/YunoHost-Apps/dockerui_ynh) |
 | Docspell | Simple document organizer | [Upstream](https://github.com/eikek/docspell) |  |
 | [DomainMOD](https://domainmod.org) | Domain portfolio management application | | |
-| [Domoticz](https://domoticz.com) | Home automation system web application |  | [Package Draft](https://github.com/anubister/domoticz_ynh) |
 | Draw.io | Online diagram creation | [Upstream](https://github.com/jgraph/drawio) |  |
 | Dynette | Dynette is a dyndns server | [Upstream](https://github.com/YunoHost/dynette) | [Package Draft](https://github.com/YunoHost-Apps/dynette_ynh) |
 | [EasyAppointments](https://easyappointments.org/) | Online appointment booker |  |  |
