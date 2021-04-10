@@ -274,6 +274,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Taskwarrior](https://taskwarrior.org) |  | [Upstream](https://github.com/GothenburgBitFactory/taskwarrior) |  |
 | [teampass](https://www.teampass.net) | Passwords Manager |  | [Package Draft](https://github.com/YunoHost-Apps/teampass_ynh) |
 | [Technitium DNS](https://technitium.com/dns/) |  | [Upstream](https://github.com/TechnitiumSoftware/DnsServer) |  |
+| [teddit](https://teddit.net/) | Alternative Reddit front-end focused on privacy | [Upstream](https://codeberg.org/teddit/teddit) |  |
 | [Teddy.io](https://teedy.io/) | Document manager | [Upstream](https://github.com/sismics/docs) |  |
 | telegram_chatbot | Telegram chatbot - mini chatbot for Telegram |  | [Package Draft](https://github.com/YunoHost-Apps/telegram_chatbot_ynh) |
 | TellForm |  | [Upstream](https://github.com/tellform/tellform) |  |
