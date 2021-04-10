@@ -101,6 +101,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Goploader |  | [Upstream](https://github.com/Depado/goploader) |  |
 | Granary |  | [Upstream](https://github.com/snarfed/granary) |  |
 | [Graphhopper](https://www.graphhopper.com/) |  | [Upstream](https://github.com/graphhopper/graphhopper) |  |
+| [Greenlight](https://blabla.aquilenet.fr/b) | A really simple end-user interface for your BigBlueButton server | [Upstream](https://github.com/bigbluebutton/greenlight) |  |
 | [Habitica](https://habitica.com/) |  | [Upstream](https://github.com/HabitRPG/habitica) |  |
 | headphones | Automatic music downloader |  | [Package Draft](https://github.com/YunoHost-Apps/headphones_ynh) |
 | Helpy |  | [Upstream](https://github.com/helpyio/helpy) |  |
@@ -134,6 +135,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | lektor | A static website generator |  | [Package Draft](https://github.com/YunoHost-Apps/lektor_ynh) |
 | [Lessy](https://lessy.io) |  | [Upstream](https://github.com/lessy-community/lessy) |  |
 | [LibreTranslate](https://libretranslate.com/) | Free and Open Source Machine Translation API: 100% self-hosted, no limits, no ties to proprietary services, built on top of Argos Translate | [Upstream](https://github.com/uav4geo/LibreTranslate) |  |
+| [Lingva Translate](https://lingva.ml/) | Alternative front-end for Google Translate | [Upstream](https://github.com/TheDavidDelta/lingva-translate) |  |
 | linuxdash | Low-overhead monitoring web dashboard | [Upstream](https://github.com/afaqurk/linux-dash) | [Package Draft](https://github.com/YunoHost-Apps/linuxdash_ynh) |
 | [LiquidSoap](https://www.liquidsoap.info/) | Audio and video streaming language | [Upstream](https://github.com/savonet/liquidsoap) |  |
 | [listmonk](https://listmonk.app) | Self-hosted newsletter & mailing list manager | [Upstream](https://github.com/knadh/listmonk) | |
@@ -273,6 +275,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Taskwarrior](https://taskwarrior.org) |  | [Upstream](https://github.com/GothenburgBitFactory/taskwarrior) |  |
 | [teampass](https://www.teampass.net) | Passwords Manager |  | [Package Draft](https://github.com/YunoHost-Apps/teampass_ynh) |
 | [Technitium DNS](https://technitium.com/dns/) |  | [Upstream](https://github.com/TechnitiumSoftware/DnsServer) |  |
+| [teddit](https://teddit.net/) | Alternative Reddit front-end focused on privacy | [Upstream](https://codeberg.org/teddit/teddit) |  |
 | [Teddy.io](https://teedy.io/) | Document manager | [Upstream](https://github.com/sismics/docs) |  |
 | telegram_chatbot | Telegram chatbot - mini chatbot for Telegram |  | [Package Draft](https://github.com/YunoHost-Apps/telegram_chatbot_ynh) |
 | TellForm |  | [Upstream](https://github.com/tellform/tellform) |  |
