@@ -215,7 +215,7 @@ Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 ## [fa=download /] Télécharger l'image {{image_type}}
 
 {% if virtualbox or regular %}
-!!! Si votre hôte est en 32 bits, faite bien attention à télécharger l'image 32 bits.
+!!! Si votre hôte est en 32 bits, faites bien attention à télécharger l'image 32 bits.
 {% elseif arm_unsup %}
 <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=external-link] Télécharger l'image pour votre carte sur le site d'Armbian</a>
 
@@ -492,7 +492,7 @@ Dans un navigateur web, tapez dans la barre d'adresse **{% if internetcube %}`ht
 Vous pouvez lancer la configuration initiale à partir du navigateur en tapant l'**adresse IP publique de votre serveur**. Généralement, votre fournisseur de VPS vous indique l'IP dans un mail ou sur sa console de gestion.
 {% endif %}
 
-! Lors de la première visite, vous rencontrerez très probablement un avertissement de sécurité lié au certificat utilisé. Pour le moment, votre serveur utilise un certificat auto-signé. Vous pourrez plus tard ajouter un certificat automatiquement reconnus par les navigateurs comme décrit dans [la page sur les certificats](/certificate). En attendant, ajoutez une exception de sécurité pour accepter le certificat actuel. Toutefois, **s'il vous plaît**, ne prenez pas l'habitude d'accepter ce genre d'alerte de sécurité !
+! Lors de la première visite, vous rencontrerez très probablement un avertissement de sécurité lié au certificat utilisé. Pour le moment, votre serveur utilise un certificat auto-signé. Vous pourrez plus tard ajouter un certificat automatiquement reconnu par les navigateurs comme décrit dans [la page sur les certificats](/certificate). En attendant, ajoutez une exception de sécurité pour accepter le certificat actuel. Toutefois, **s'il vous plaît**, ne prenez pas l'habitude d'accepter ce genre d'alerte de sécurité !
 
 {% if not internetcube %}
 Vous devriez ensuite obtenir cette page :
