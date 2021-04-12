@@ -22,6 +22,6 @@ Different levels of permission allow you to choose who can read or edit the docu
 ## Useful links
 
 + Official demo: [https://demo.hedgedoc.org/](https://demo.hedgedoc.org/)
-+ Official documentation: [github.com/hedgedoc](https://github.com/hedgedoc/hedgedoc/tree/master/docs)
++ Official documentation: [https://docs.hedgedoc.org/](https://docs.hedgedoc.org/)
 + Application software repository: [github.com - YunoHost-Apps/hedgedoc](https://github.com/YunoHost-Apps/hedgedoc_ynh)
 + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/hedgedoc/issues](https://github.com/YunoHost-Apps/hedgedoc_ynh/issues)
