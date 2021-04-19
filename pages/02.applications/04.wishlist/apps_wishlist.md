@@ -135,6 +135,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [LessPass](https://www.lesspass.com/) |  | [Upstream](https://github.com/lesspass/lesspass) |  |
 | [Lessy](https://lessy.io) |  | [Upstream](https://github.com/lessy-community/lessy) |  |
 | LibreSpeed | Self-hosted Speedtest |  [Upstream](https://github.com/librespeed/speedtest) |  |
+| [LibreTranslate](https://libretranslate.com/) | Translation API | [Upstream](https://github.com/uav4geo/LibreTranslate) |  |
 | [Lingva Translate](https://lingva.ml/) | Alternative front-end for Google Translate | [Upstream](https://github.com/TheDavidDelta/lingva-translate) |  |
 | linuxdash | Low-overhead monitoring web dashboard | [Upstream](https://github.com/afaqurk/linux-dash) | [Package Draft](https://github.com/YunoHost-Apps/linuxdash_ynh) |
 | [LiquidSoap](https://www.liquidsoap.info/) | Audio and video streaming language | [Upstream](https://github.com/savonet/liquidsoap) |  |
@@ -220,8 +221,8 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | pydio | File sharing platform |  | [Package Draft](https://github.com/YunoHost-Apps/pydio_ynh) |
 | [Pydio Cells](https://pydio.com/) |  | [Upstream](https://github.com/pydio/cells) |  |
 | [pyload](https://pyload.net/) |  | [Upstream](https://github.com/pyload/pyload) | [Package Draft](https://github.com/YunoHost-Apps/pyload_ynh) |
-| qBittorrent |  | [Upstream](https://github.com/qbittorrent/qBittorrent) |  |
-| [Questions2answer](https://www.question2answer.org/) |  |  |  |
+| [qBit MatUI](https://qbit-material-webui-demo.herokuapp.com/) | A WebUI for qBittorrent | [Upstream](https://github.com/bill-ahmed/qbit-matUI) |  |
+| [qBittorrent](https://www.qbittorrent.org/) |  | [Upstream](https://github.com/qbittorrent/qBittorrent) |  |
 | [racktables](https://racktables.org) |  | [Upstream](https://github.com/RackTables/racktables) |  |
 | Radarr |  | [Upstream](https://github.com/Radarr/Radarr) |  |
 | Race for the galaxy | | [Upstream](https://github.com/bnordli/rftg) | |

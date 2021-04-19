@@ -120,7 +120,7 @@ mv /path/to/<archivename> /home/yunohost.backup/archives/
 yunohost backup restore <archivename>
 ``` 
 
-## To go futher
+## To go further
 
 ### Storing backups on a different drive
 
