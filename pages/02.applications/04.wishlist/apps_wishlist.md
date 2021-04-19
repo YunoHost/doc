@@ -134,7 +134,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | lektor | A static website generator |  | [Package Draft](https://github.com/YunoHost-Apps/lektor_ynh) |
 | [LessPass](https://www.lesspass.com/) |  | [Upstream](https://github.com/lesspass/lesspass) |  |
 | [Lessy](https://lessy.io) |  | [Upstream](https://github.com/lessy-community/lessy) |  |
-| LibreSpeed | A Free and Open Source Speedtest for HTML5 and more |  [Upstream](https://github.com/librespeed/speedtest) |  |
+| LibreSpeed | Self-hosted Speedtest |  [Upstream](https://github.com/librespeed/speedtest) |  |
 | [Lingva Translate](https://lingva.ml/) | Alternative front-end for Google Translate | [Upstream](https://github.com/TheDavidDelta/lingva-translate) |  |
 | linuxdash | Low-overhead monitoring web dashboard | [Upstream](https://github.com/afaqurk/linux-dash) | [Package Draft](https://github.com/YunoHost-Apps/linuxdash_ynh) |
 | [LiquidSoap](https://www.liquidsoap.info/) | Audio and video streaming language | [Upstream](https://github.com/savonet/liquidsoap) |  |
