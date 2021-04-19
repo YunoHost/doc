@@ -12,9 +12,9 @@ routes:
 
 The YunoHost documentation is managed through a [Git repository](https://github.com/YunoHost/doc).
 
-If you are not familiar with GitHub, there is an "Edit" button at the top of each page that will redirect you to the GitHub online editor that will help you make  change proposals (Pull Requests).
+If you are not familiar with GitHub, there is an "Edit" button at the top of each page that will redirect you to the GitHub online editor that will help you make change proposals (Pull Requests, PR).
 
-Directly on GitHub, you can fork the repository, make your changes, and send pull requests.
+However, if you are on an editing spree, you should fork the repository. You can then make all the commits (changes) you want on your forked repository, and submit them all at once in the same pull requests. GitHub's etiquette would advise you to gather in the same PR all related commits.
 
 Because the online editor doesn't support uploading files, using Git is the prefered way if you need to upload media (e.g. images).
 
