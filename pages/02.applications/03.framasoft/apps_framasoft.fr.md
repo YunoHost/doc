@@ -37,9 +37,9 @@ routes:
 | Framasphère    | Diaspora            | [[fa=git /]](https://github.com/aymhce/diaspora_ynh)               ![](https://ci-apps.yunohost.org/ci/badges/diaspora.status.svg)        ![](https://dash.yunohost.org/integration/diaspora.svg) |
 | Framatalk      | Jitsi Meet          | [[fa=git /]](https://github.com/YunoHost-Apps/jitsi_ynh)           ![](https://ci-apps.yunohost.org/ci/badges/jitsi.status.svg)           ![](https://dash.yunohost.org/integration/jitsi.svg) |
 | Framateam      | Mattermost          | [[fa=git /]](https://github.com/YunoHost-Apps/mattermost_ynh)      ![](https://ci-apps.yunohost.org/ci/badges/mattermost.status.svg)      ![](https://dash.yunohost.org/integration/mattermost.svg) |
-| Framatrad      | Weblate             | [[fa=git /]](https://github.com/YunoHost-Apps/weblate_ynh                                      |
+| Framatrad      | Weblate             | [[fa=git /]](https://github.com/YunoHost-Apps/weblate_ynh)         ![](https://ci-apps.yunohost.org/ci/badges/weblate.status.svg)      ![](https://dash.yunohost.org/integration/weblate.svg) |
 | Framatube      | Peertube            | [[fa=git /]](https://github.com/YunoHost-Apps/peertube_ynh)        ![](https://ci-apps.yunohost.org/ci/badges/peertube.status.svg)        ![](https://dash.yunohost.org/integration/peertube.svg) |
-| Framavectoriel | SVG-Edit            | [[fa=git /]](https://github.com/YunoHost-Apps/svgedit_ynh)            ![](https://ci-apps.yunohost.org/ci/badges/svgedit.status.svg)      ![](https://dash.yunohost.org/integration/svgedit.svg) |
+| Framavectoriel | SVG-Edit            | [[fa=git /]](https://github.com/YunoHost-Apps/svgedit_ynh)         ![](https://ci-apps.yunohost.org/ci/badges/svgedit.status.svg)      ![](https://dash.yunohost.org/integration/svgedit.svg) |
 | Framavox       | Loomio              | Non packagé                                          |
 | Framemo        | Scrumblr            | [[fa=git /]](https://github.com/YunoHost-Apps/scrumblr_ynh)        ![](https://ci-apps.yunohost.org/ci/badges/scrumblr.status.svg)        ![](https://dash.yunohost.org/integration/scrumblr.svg) |
 | Framindmap     | Wisemapping         | [[fa=git /]](https://github.com/YunoHost-Apps/wisemapping_ynh)     ![](https://ci-apps.yunohost.org/ci/badges/wisemapping.status.svg)     ![](https://dash.yunohost.org/integration/wisemapping.svg) |
