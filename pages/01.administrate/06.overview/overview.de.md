@@ -8,7 +8,7 @@ routes:
   default: '/overview'
 ---
 
-Diese Seite bietet eine Übersicht über das Ökosystem eines YunoHost-Servers. Diese Übersicht macht mehrere Vereinfachungenun zielt wesentlich daruaf ab, ein globales Bild zu vermitteln, bevor tiefer auf die verschiedenen Aspekte eingegangen wird.
+Diese Seite bietet eine Übersicht über das Ökosystem eines YunoHost-Servers. Diese Übersicht macht mehrere Vereinfachungen und zielt wesentlich darauf ab, ein globales Bild zu vermitteln, bevor tiefer auf die verschiedenen Aspekte eingegangen wird.
 
 
 ![](image://ecosystem.png)
