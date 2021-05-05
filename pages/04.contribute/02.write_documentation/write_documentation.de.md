@@ -104,8 +104,8 @@ Einige Seiten der Dokumentation werden automatisch oder dynamisch generiert.
 
 ! Diese Anweisungen müssen noch vollständig getestet werden. Bitte helfen Sie uns, indem Sie Probleme melden, die Sie möglicherweise mit ihnen haben. 
 
-0. Fork YunoHost Dokumentation Repository 
-1. YunoHost Pakets Grav installieren: `yunohost app install grav` 
+0. Forken Sie das YunoHost Dokumentations Repository 
+1. Installieren Sie das YunoHost-Paket Grav : `yunohost app install grav` 
 2. Installieren Sie die folgenden Plugins durch das Grav Admin-Panel oder CLI: 
 ``` 
 anchors
