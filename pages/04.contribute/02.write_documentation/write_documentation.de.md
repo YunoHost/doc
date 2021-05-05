@@ -130,11 +130,11 @@ tntsearch
    4. Grundeinstellungen> Ordner im Sync: `pages`` images` `themes` 
    5. Git Repo-Einstellungen> Benutzer nicht erforderlich: Aktiviert 
    6. Git Repo-Einstellungen> Web Hooks-Geheimnis: Aktiviert 
-   7. Erweiterte Einstellungen> Lokaler Zweig:`master` 
-   8. Erweiterte Einstellungen> Remote Zweig: `master` 
-(Sie können` master` ändern, wenn Sie an einem anderen Zweig arbeiten möchten, aber vergessen Sie nicht, ihn zuerst auf GitHub zu erstellen.) 
-   9. Erweiterte Einstellungen> Committer-Name: Ihr GitHub-Benutzername 
-  10. Erweiterte Einstellungen> Committer-E-Mail : Ihre E-Mail auf GitHub 
+   7. Erweiterte Einstellungen> Lokaler Branch:`master` 
+   8. Erweiterte Einstellungen> Remote Branch: `master`  
+      (Sie können` master` ändern, wenn Sie an einem anderen Zweig arbeiten möchten, aber vergessen Sie nicht, ihn zuerst auf GitHub zu erstellen.) 
+   9. Erweiterte Einstellungen> Committer-Name: Ihr GitHub-Benutzername
+   10. Erweiterte Einstellungen> Committer-E-Mail : Ihre E-Mail auf GitHub 
 4. Lokale Kopie speichern und zurücksetzen
 5. Konfigurieren Sie `commits` und `tree` in `config/theme/yunohost-docs.yaml`, so das sie auf Ihren Fork des Repositorys verweisen. 
 6. Stellen Sie sicher, dass die Verzeichnisse `user/pages/01.home` und `user/pages/02.typography` gelöscht werden. 
