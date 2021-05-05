@@ -63,13 +63,13 @@ template: docs
 taxonomie: 
     category: docs 
 routes: 
-  default: '/write_documentation' 
+  default: `/write_documentation` 
 --- 
 ``` 
 1. Die Kopfzeile beginnt und endet mit einer Zeile, die `---` enthält
-2. Der 'title:' verwaltet die erste Titel-Überschrift der Seite, ihren Namen im Navigationsmenü links und den Namen des Browser-Tab's
-3. Die Punkte 'template' und 'taxonomie' sollten immer unverändert bleiben. Sie weisen Grav an, das richtige Theme zu verwenden und die Seiten richtig auf zu bauen. 
-4. Die Schlüssel 'routes' und 'default' machen die Seite standardmäßig unter "https://yunohost.org/docs/write_documentation" verfügbar, um sie nicht unter "https://yunohost.org/docs/contribute/write_documentation" aufrufen zu müssen, wo sie in der Verzeichnishierarchie gespeichert ist. 
+2. Der `title:` verwaltet die erste Titel-Überschrift der Seite, ihren Namen im Navigationsmenü links und den Namen des Browser-Tab`s
+3. Die Punkte `template` und `taxonomie` sollten immer unverändert bleiben. Sie weisen Grav an, das richtige Theme zu verwenden und die Seiten richtig auf zu bauen. 
+4. Die Schlüssel `routes` und `default` machen die Seite standardmäßig unter `https://yunohost.org/docs/write_documentation` verfügbar, um sie nicht unter `https://yunohost.org/docs/contribute/write_documentation` aufrufen zu müssen, wo sie in der Verzeichnishierarchie gespeichert ist. 
 
 ## Syntax 
 
