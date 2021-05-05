@@ -1,5 +1,5 @@
 ---
-title: Write documentation
+title: Dokumentation schreiben
 template: docs
 taxonomy:
     category: docs
@@ -77,7 +77,7 @@ Sie können die Markdown-Syntax verwenden. Weitere Informationen finden Sie in d
 
 ! Beachten Sie, dass Sprachcodes nicht am Anfang der Links zu anderen Dokumentationsseiten stehen dürfen: `/en`,` /fr` usw. sind überflüssig. 
 
-Um die Markdown-Funktionen zu verbessern, werden zusätzliche Plugins in Grav installiert. In der eigenen Dokumentation zu GitHub erfahren Sie, wie Sie sie verwenden. 
+Um die Markdown-Funktionen zu verbessern, werden zusätzliche Plugins in Grav installiert. In der eigenen Dokumentation auf GitHub erfahren Sie, wie Sie sie verwenden. 
 ```
 anchors
 external_links
@@ -96,8 +96,8 @@ Einige Seiten der Dokumentation werden automatisch oder dynamisch generiert.
 
 | Seite | Pfad | Anmerkungen | 
 | --------------- | ------- | ------- |
-| Apps-Katalog | `/pages/02.applications/01.catalog/apps.md` | Ruft [app.json] ab und verarbeitet sie (https://github.com/YunoHost/apps/blob/master/apps.json?target=_blank) | 
-| Apps-Helfer | `pages/04.contribute/04.packaging_apps/11.helpers/package_apps_helpers.md` | Erstellt von diesem [Skript] (https://github.com/YunoHost/yunohost/blob/dev/doc/generate_helper_doc.py?target=_blank) aus dieser [Vorlage](https://github.com/YunoHost/). yunohost/blob/dev/doc/helper_doc_template.md?target=_blank) | 
+| Apps-Katalog | `/pages/02.applications/01.catalog/apps.md` | Ruft [app.json](https://github.com/YunoHost/apps/blob/master/apps.json?target=_blank) ab und verarbeitet sie | 
+| Apps-Helfer | `pages/04.contribute/04.packaging_apps/11.helpers/package_apps_helpers.md` | Erstellt von diesem [Skript](https://github.com/YunoHost/yunohost/blob/dev/doc/generate_helper_doc.py?target=_blank) aus dieser [Vorlage](https://github.com/YunoHost/yunohost/blob/dev/doc/helper_doc_template.md?target=_blank) | 
 | Pro-App-Dokumentation | `pages/02.applications/02.docs/docs.md` | Listet die Unterseiten im selben Verzeichnis auf, deren Header "taxonomy.category: docs, apps" enthält 
 
 ## Hosten Sie Ihre eigene Testdokumentation
@@ -105,8 +105,8 @@ Einige Seiten der Dokumentation werden automatisch oder dynamisch generiert.
 ! Diese Anweisungen müssen noch vollständig getestet werden. Bitte helfen Sie uns, indem Sie Probleme melden, die Sie möglicherweise mit ihnen haben. 
 
 0. Fork YunoHost Dokumentation Repository 
-1. YunoHost Pakets Grav installieren: `yunohost App installieren grav` 
-2. Installieren Sie die folgenden Plugins durch Grav des Admin-Panel oder CLI: 
+1. YunoHost Pakets Grav installieren: `yunohost app install grav` 
+2. Installieren Sie die folgenden Plugins durch das Grav Admin-Panel oder CLI: 
 ``` 
 anchors
 breadcrumbs
@@ -123,26 +123,26 @@ presentation-deckset
 shortcode-core
 tntsearch 
 ``` 
-3. Git Sync Plugin einrichten . 
-   1. Wählen Sie GitHub und Ihre Anmeldeinformationen auf GitHub
+3. Git Sync Plugin einrichten. 
+   1. Melden Sie sich mit Ihren Anmeldeinformationen auf GitHub an
    2. Legen Sie das Repo fest, z. B. "https://github.com/username/doc". 
    3. Kopieren Sie die URL des Webhooks, z. B. "https://grav.example/_git-sync-ca25c111f0de". 
-   4. Grundeinstellungen> Ordner in Synchronisieren: `Seiten`` Bilder` `Themen` 
+   4. Grundeinstellungen> Ordner im Sync: `pages`` images` `themes` 
    5. Git Repo-Einstellungen> Benutzer nicht erforderlich: Aktiviert 
    6. Git Repo-Einstellungen> Web Hooks-Geheimnis: Aktiviert 
-   7. Erweiterte Einstellungen> Lokaler Zweig:` Master` 
+   7. Erweiterte Einstellungen> Lokaler Zweig:`master` 
    8. Erweiterte Einstellungen> Remote Zweig: `master` 
 (Sie können` master` ändern, wenn Sie an einem anderen Zweig arbeiten möchten, aber vergessen Sie nicht, ihn zuerst auf GitHub zu erstellen.) 
    9. Erweiterte Einstellungen> Committer-Name: Ihr GitHub-Benutzername 
   10. Erweiterte Einstellungen> Committer-E-Mail : Ihre E-Mail auf GitHub 
-  11 gespeichert. Lokale Kopie speichern und zurücksetzen
-  12. Setzen Sie die Schlüssel "Commits" und "Tree" in "config / theme / yunohost-docs.yaml", um auf das Repository Ihrer Gabel zu verweisen. 
-4. Stellen Sie sicher, dass "user / pages / 01.home" und "user / pages / 02". Typografie-Verzeichnisse werden gelöscht. 
-5. Konfiguration> System: 
+4. Lokale Kopie speichern und zurücksetzen
+5. Konfigurieren Sie "commits" und "tree" in "config/theme/yunohost-docs.yaml", so das sie auf Ihren Fork des Repositorys verweisen. 
+6. Stellen Sie sicher, dass die Verzeichnisse "user/pages/01.home" und "user/pages/02.typography" gelöscht werden. 
+7. Konfiguration> System: 
    1. Sprache> Unterstützt: `en`` fr` `de`` es` `ar` 
    2. Sprache> Standardsprache überschreiben:` en` 
    3. Sprache> Sprache vom Browser einstellen: `Ja` 
    4. HTTP-Header> Etag: `Ja` 
    5. Erweitert> Blueprint-Kompatibilität:` Ja` 
    6. Erweitert> YAML-Kompatibilität: `Ja` 
-   7. Erweitert> Zweigkompatibilität:` Ja`
+   7. Erweitert> Twig-Kompatibilität:` Ja`
