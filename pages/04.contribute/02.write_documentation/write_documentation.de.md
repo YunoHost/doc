@@ -63,7 +63,7 @@ template: docs
 taxonomie: 
     category: docs 
 routes: 
-  default: `/write_documentation` 
+  default: '/write_documentation' 
 --- 
 ``` 
 1. Die Kopfzeile beginnt und endet mit einer Zeile, die `---` enthält
@@ -98,7 +98,7 @@ Einige Seiten der Dokumentation werden automatisch oder dynamisch generiert.
 | --------------- | ------- | ------- |
 | Apps-Katalog | `/pages/02.applications/01.catalog/apps.md` | Ruft [app.json](https://github.com/YunoHost/apps/blob/master/apps.json?target=_blank) ab und verarbeitet sie | 
 | Apps-Helfer | `pages/04.contribute/04.packaging_apps/11.helpers/package_apps_helpers.md` | Erstellt von diesem [Skript](https://github.com/YunoHost/yunohost/blob/dev/doc/generate_helper_doc.py?target=_blank) aus dieser [Vorlage](https://github.com/YunoHost/yunohost/blob/dev/doc/helper_doc_template.md?target=_blank) | 
-| Pro-App-Dokumentation | `pages/02.applications/02.docs/docs.md` | Listet die Unterseiten im selben Verzeichnis auf, deren Header "taxonomy.category: docs, apps" enthält 
+| Pro-App-Dokumentation | `pages/02.applications/02.docs/docs.md` | Listet die Unterseiten im selben Verzeichnis auf, deren Header `taxonomy.category: docs, apps` enthält 
 
 ## Hosten Sie Ihre eigene Testdokumentation
 
@@ -125,8 +125,8 @@ tntsearch
 ``` 
 3. Git Sync Plugin einrichten. 
    1. Melden Sie sich mit Ihren Anmeldeinformationen auf GitHub an
-   2. Legen Sie das Repo fest, z. B. "https://github.com/username/doc". 
-   3. Kopieren Sie die URL des Webhooks, z. B. "https://grav.example/_git-sync-ca25c111f0de". 
+   2. Legen Sie das Repo fest, z. B. `https://github.com/username/doc`. 
+   3. Kopieren Sie die URL des Webhooks, z. B. `https://grav.example/_git-sync-ca25c111f0de`. 
    4. Grundeinstellungen> Ordner im Sync: `pages`` images` `themes` 
    5. Git Repo-Einstellungen> Benutzer nicht erforderlich: Aktiviert 
    6. Git Repo-Einstellungen> Web Hooks-Geheimnis: Aktiviert 
@@ -136,10 +136,10 @@ tntsearch
    9. Erweiterte Einstellungen> Committer-Name: Ihr GitHub-Benutzername 
   10. Erweiterte Einstellungen> Committer-E-Mail : Ihre E-Mail auf GitHub 
 4. Lokale Kopie speichern und zurücksetzen
-5. Konfigurieren Sie "commits" und "tree" in "config/theme/yunohost-docs.yaml", so das sie auf Ihren Fork des Repositorys verweisen. 
-6. Stellen Sie sicher, dass die Verzeichnisse "user/pages/01.home" und "user/pages/02.typography" gelöscht werden. 
+5. Konfigurieren Sie `commits` und `tree` in `config/theme/yunohost-docs.yaml`, so das sie auf Ihren Fork des Repositorys verweisen. 
+6. Stellen Sie sicher, dass die Verzeichnisse `user/pages/01.home` und `user/pages/02.typography` gelöscht werden. 
 7. Konfiguration> System: 
-   1. Sprache> Unterstützt: `en`` fr` `de`` es` `ar` 
+   1. Sprache> Unterstützt: `en` `fr` `de` `es` `ar` 
    2. Sprache> Standardsprache überschreiben:` en` 
    3. Sprache> Sprache vom Browser einstellen: `Ja` 
    4. HTTP-Header> Etag: `Ja` 
