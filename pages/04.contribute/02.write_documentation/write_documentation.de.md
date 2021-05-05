@@ -11,9 +11,9 @@ routes:
 
 Die YunoHost-Dokumentation wird über ein [Git-Repository](https://github.com/YunoHost/doc) verwaltet.
 
-Wenn Sie mit GitHub nicht vertraut sind, befindet sich oben auf jeder Seite eine Schaltfläche "Edit", mit der Sie zum GitHub-Online-Editor weitergeleitet werden, mit dem Sie Änderungsvorschläge machen können (Pull Requests, PR).
+Wenn Sie mit GitHub nicht vertraut sind, oben auf jeder Seite befindet sich die Schaltfläche "Edit", mit der Sie zum GitHub-Online-Editor weitergeleitet werden, mit dem Sie Änderungsvorschläge machen können (Pull Requests, PR).
 
-Wenn Sie sich jedoch in einer Bearbeitungsphase befinden, sollten Sie das Repository forken. Sie können dann alle gewünschten Commits (Änderungen) in Ihrem Fork vornehmen und alle gleichzeitig in dem selben Pull-Requests senden. Die Etikette von GitHub empfiehlt Ihnen, alle damit verbundenen Commits in derselben PR zusammenzufassen.
+Wenn Sie sich jedoch mehrere Bearbeitungen vornehmen oder aktiv mitarbeiten wollen, sollten Sie das Repository forken. Sie können dann alle gewünschten Commits (Änderungen) in Ihrem Fork vornehmen und alle gleichzeitig in dem selben Pull-Requests senden. Die Etikette von GitHub empfiehlt Ihnen, alle damit verbundenen Commits in derselben PR zusammenzufassen.
 
 Da der Online-Editor das Hochladen von Dateien nicht unterstützt, ist die Verwendung von Git die bevorzugte Methode, wenn Sie Medien (z. B. Bilder) hochladen müssen.
 
@@ -30,9 +30,9 @@ Die Struktur des Repositorys wird nachfolgend beschrieben:
    + -- themes 
        + -- yunohost-docs.yaml
           # Einige Einstellungen für das Dokumentationstheme
-+ -- Bilder 
++ -- images
    # Enthält die auf den Dokumentationsseiten verwendeten Bilder. 
-+ -- Seiten 
++ -- pages 
    # Das Verzeichnis mit den Dokumentationsseiten. 
    # Die Seitenhierarchie spiegelt sich in der Verzeichnishierarchie wider. 
    + -- 00.home 
@@ -58,36 +58,36 @@ Jede Seite beginnt mit einem Header, der Grav Anweisungen zur Verarbeitung gibt.
 
 ``` 
 --- 
-Titel: Dokumentation schreiben 
+title: Dokumentation schreiben 
 template: docs 
 taxonomie: 
-    Kategorie: docs 
+    category: docs 
 routes: 
   default: '/write_documentation' 
 --- 
 ``` 
 1. Die Kopfzeile beginnt und endet mit einer Zeile, die `---` enthält
-2. Der "Titel:" verwaltet die erste Titel-Überschrift der Seite, ihren Namen im Navigationsmenü links und den Namen des Browser-Tab's
-3. Die Punkte "template" und "taxonomie" sollten immer unverändert bleiben. Sie weisen Grav an, das richtige Theme zu verwenden und die Seiten richtig auf zu bauen. 
-4. Die Schlüssel "routes" und "default" machen die Seite standardmäßig unter "https: //yunohost.org/docs/write_documentation" verfügbar, um sie nicht unter "https://yunohost.org/docs/contribute/write_documentation" aufrufen zu müssen, wo sie in der Verzeichnishierarchie gespeichert ist. 
+2. Der 'title:' verwaltet die erste Titel-Überschrift der Seite, ihren Namen im Navigationsmenü links und den Namen des Browser-Tab's
+3. Die Punkte 'template' und 'taxonomie' sollten immer unverändert bleiben. Sie weisen Grav an, das richtige Theme zu verwenden und die Seiten richtig auf zu bauen. 
+4. Die Schlüssel 'routes' und 'default' machen die Seite standardmäßig unter "https://yunohost.org/docs/write_documentation" verfügbar, um sie nicht unter "https://yunohost.org/docs/contribute/write_documentation" aufrufen zu müssen, wo sie in der Verzeichnishierarchie gespeichert ist. 
 
 ## Syntax 
 
-Sie können die Markdown-Syntax verwenden. Weitere Informationen finden Sie in der [Dokumentation](/ doc_markdown_guide).
+Sie können die Markdown-Syntax verwenden. Weitere Informationen finden Sie in der [Dokumentation](/doc_markdown_guide).
 
 ! Beachten Sie, dass Sprachcodes nicht am Anfang der Links zu anderen Dokumentationsseiten stehen dürfen: `/en`,` /fr` usw. sind überflüssig. 
 
 Um die Markdown-Funktionen zu verbessern, werden zusätzliche Plugins in Grav installiert. In der eigenen Dokumentation zu GitHub erfahren Sie, wie Sie sie verwenden. 
 ```
-Textanker 
-external_links 
-flex-Objekte 
-Highlight 
-Bildbeschriftungen 
-Abschlags-Mitteilungen 
-Präsentation 
-Präsentations deckset 
-Shortcode -Kern 
+anchors
+external_links
+flex-objects
+highlight
+image-captions
+markdown-notices
+presentation
+presentation-deckset
+shortcode-core
 ``` 
 
 ## Sonderseiten 
