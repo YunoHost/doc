@@ -267,6 +267,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | squid3| A caching proxy |  | [Package Draft](https://github.com/YunoHost-Apps/squid3_ynh) |
 | [Stackedit](https://stackedit.io) |  | [Upstream](https://github.com/benweet/stackedit) |  |
 | [StandardNotes](https://standardfile.org/) | A clean, simple, E2E-encrypted notes app | [Upstream](https://github.com/standardnotes/web) |  |
+| [Storj](https://www.storj.io/node) |  | [Upstream](https://github.com/storj/storj) |  |
 | Streisand |  | [Upstream](https://github.com/jlund/streisand) |  |
 | studs | A survey tool, the ancestor of OpenSondage |  | [Package Draft](https://github.com/YunoHost-Apps/studs_ynh) |
 | subsonic | Subsonic is an open source, web-based media server |  | [Package Draft](https://github.com/drfred1981/subsonic_ynh) |
