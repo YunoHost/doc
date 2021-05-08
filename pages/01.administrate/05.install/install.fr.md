@@ -26,6 +26,7 @@ routes:
     - '/burn_or_copy_iso'
     - '/boot_and_graphical_install'
     - '/postinstall'
+    - '/hardware'
 ---
 {% set image_type = 'YunoHost' %}
 {% set arm, at_home, regular, rpi2plus, rpi1, rpi0, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, internetcube, docker = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
