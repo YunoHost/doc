@@ -21,7 +21,7 @@ Différents niveaux de permission permettent de choisir qui peut lire ou éditer
 
 ## Liens utiles
 
-+ Démo officielle : [https://demo.codimd.org/](https://demo.codimd.org/)
-+ Documentation officielle : [github.com/codimd](https://github.com/codimd/server/tree/master/docs/)
++ Dépôt officiel : [https://github.com/hackmdio/codimd](https://github.com/hackmdio/codimd)
++ Documentation officielle : [hackmd.io/c/codimd-documentation](https://hackmd.io/c/codimd-documentation)
 + Dépôt logiciel de l’application : [github.com - YunoHost-Apps/codimd](https://github.com/YunoHost-Apps/codimd_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/codimd/issues](https://github.com/YunoHost-Apps/codimd_ynh/issues)

@@ -21,7 +21,7 @@ Different levels of permission allow you to choose who can read or edit the docu
 
 ## Useful links
 
-+ Official demo: [https://demo.codimd.org/](https://demo.codimd.org/)
-+ Official documentation: [github.com/codimd](https://github.com/codimd/server/tree/master/docs/)
++ Official software repository: [https://github.com/hackmdio/codimd](https://github.com/hackmdio/codimds)
++ Official documentation: [hackmd.io/c/codimd-documentation](https://hackmd.io/c/codimd-documentation)
 + Application software repository: [github.com - YunoHost-Apps/codimd](https://github.com/YunoHost-Apps/codimd_ynh)
 + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/codimd/issues](https://github.com/YunoHost-Apps/codimd_ynh/issues)
