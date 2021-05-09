@@ -16,7 +16,7 @@ The application creates a new user with limited rights: it can connect (with a p
 This configuration requires updating the site content manually, with a password connection.
 
 If you want to automate things, you need to be able to connect without typing a password (i.e. "non-interactive"). Here are the steps to follow to get there:
-- Enable public key connection, in `/etc/ssh/ssh/sshd_config`, on the server
+- Enable public key connection, in `/etc/ssh/sshd_config`, on the server
 - Create a public/private key pair for your script on the "writing" computer - without a protective passphrase.
 - Copy the public key to the server, in `/var/www/my_webapp(__#)/.ssh/authorized_keys`
 - Set the user `webapp#` as owner of the file and directory
