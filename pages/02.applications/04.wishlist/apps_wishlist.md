@@ -279,6 +279,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Syspass](https://www.syspass.org/) |  | [Upstream](https://github.com/nuxsmin/sysPass) |  |
 | [Tahoe-LAFS](https://tahoe-lafs.org/) | Decentralized cloud storage system | [Upstream](https://github.com/tahoe-lafs/tahoe-lafs) |  |
 | [Taiga](https://taiga.io) |  | [Upstream](https://github.com/taigaio/) |  |
+| [Tailscale](https://tailscale.com/) | [Wireguard](https://www.wireguard.com/)-based Mesh-VPN | [Upstream](https://github.com/tailscale/tailscale) |  |
 | [Taskwarrior](https://taskwarrior.org) |  | [Upstream](https://github.com/GothenburgBitFactory/taskwarrior) |  |
 | [teampass](https://www.teampass.net) | Passwords Manager |  | [Package Draft](https://github.com/YunoHost-Apps/teampass_ynh) |
 | [Technitium DNS](https://technitium.com/dns/) |  | [Upstream](https://github.com/TechnitiumSoftware/DnsServer) |  |
@@ -324,6 +325,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | yunofav | A page of favorite links |  | [Package Draft](https://github.com/YunoHost-Apps/yunofav_ynh) |
 | [yunohost](https://yunohost.org) | YunoHost in YunoHost, crazy :D ! |  | [Package Draft](https://github.com/aymhce/yunohost_ynh) |
 | Zammad |  | [Upstream](https://github.com/zammad/zammad) |  |
+| [zigbee2mqtt.io](https://www.zigbee2mqtt.io/) | [Zigbee](https://en.wikipedia.org/wiki/Zigbee)-to-[MQTT](https://en.wikipedia.org/wiki/MQTT) software-bridge supporting [more than 1000 Zigbee devices](https://www.zigbee2mqtt.io/information/supported_devices.html) | [Upstream](https://github.com/koenkk/zigbee2mqtt) |  |
 | [Zola](https://www.getzola.org/) | Static site generator |  |  |
 | zomburl | An URL shortening service |  | [Package Draft](https://github.com/courgette/zomburl_ynh) |
 | Zoneminder |  | [Upstream](https://github.com/ZoneMinder/zoneminder) |  |
