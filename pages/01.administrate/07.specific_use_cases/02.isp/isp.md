@@ -76,4 +76,10 @@ Most of non business IP provided by ISP are blacklisted.
 | KT(SkyLife, Qook&Show) | Multiple | Yes | Yes | No | - | Partial |
 | SKT (SK Broadband) | Multiple | Yes | Yes | No | - | Partial |
 
+### Hungary
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| DIGI Távközlési és Szolgáltató Kft. | Yes | No | No. Business only. | No | No | No. Business only |
+
 If you want to add international ISPs information, please do consider [modifying this page](/write_documentation).
