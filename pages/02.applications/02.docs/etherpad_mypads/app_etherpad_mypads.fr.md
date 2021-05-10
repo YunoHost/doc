@@ -27,7 +27,7 @@ Il est possible d'accéder à deux panneaux de configurations :
 ## Liens utiles
 
 + Site web : [etherpad.org (en)](https://etherpad.org/)
-+ Documentation officielle : [etherpad.org - doc (en)](https://etherpad.org/doc/v1.8.4/)
++ Documentation officielle : [etherpad.org - doc (en)](https://etherpad.org/doc/v1.8.13/)
 + Dépôt logiciel de l'application : [github.com - YunoHost-App/etherpad_mypads](https://github.com/YunoHost-Apps/etherpad_mypads_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/etherpad_mypads/issues](https://github.com/YunoHost-Apps/etherpad_mypads_ynh/issues)
 
