@@ -70,6 +70,13 @@ Your SMTP relay is now configured!
 
 ### Step 4: Check your setup
 
-You can check your setup by sending emails and try if everything works.
+You can check your setup by sending emails and try if everything works. Log into your YunoHost server using SSH and send a test email and check the logs, e.g.:
+
+```bash
+ssh admin@yourdomain.tld
+echo "Subject: Yunohost sendmail test" | sendmail -v your@external-email-address.tld
+tail /var/log/mail.log
+```
+
 Some of the SMTP relay will give you insights about the emails you send so that can also be a good way to check that everythings works as needed.
 Of course, you can always have a try with [mail-tester.com](https://www.mail-tester.com/) to check for any problem or discrepancy.
