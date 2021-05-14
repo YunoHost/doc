@@ -41,7 +41,7 @@ Please note that modifying your DNS records could sometimes take over 24h to tak
 In order to setup your YunoHost to use your SMTP relay, you will have to configure three things:
 1. Your SMTP relay URL (for this tutorial we will use `smtprelay.tld`)
 2. Your SMTP relay username (for this tutorial we will use `username`)
-3. Your SMTP relay password (for this tutorial we will use `password`)
+3. Your SMTP relay password (for this tutorial we will use `password`) Note: To be saved: use a ASCII only password.
 
 Your SMTP relay will obviously provide you with these three things, that should be available in your control panel or whatsoever.
 
