@@ -217,6 +217,10 @@ Here are some VPS providers supporting YunoHost natively :
 
 {% if virtualbox or regular %}
 !!! If your host OS is 32 bits, be sure to download the 32-bit image.
+{% if virtualbox %}
+! If your host OS is OSx 64-bit, you should download [VirtualBox 6.1.16](https://download.virtualbox.org/virtualbox/6.1.16/VirtualBox-6.1.16-140961-OSX.dmg) to avoid a [bug that prevents loading the startup image](https://forums.virtualbox.org/viewtopic.php?f=8&t=101717) (tested on OSx Big Sur).
+
+
 {% elseif arm_unsup %}
 <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=external-link] Download the image for your board on Armbian's website</a>
 
