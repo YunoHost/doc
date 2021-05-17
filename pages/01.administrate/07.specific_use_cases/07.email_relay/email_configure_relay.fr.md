@@ -14,7 +14,7 @@ Si votre fournisseur internet bloque le port 25, ou si vous rencontrez un probl�
 C'est un serveur SMTP tiers qui va envoyer les e-mails à la place de votre propre serveur SMTP.
 Une fois correctement installé, le changement est totalement transparent pour l’utilisateur. Vos correspondants verront vos e-mails comme s’ils venaient de votre propre serveur, mais ils auront été envoyés depuis le relais SMTP que vous aurez choisi et configuré.
 
-! [fa=exclamation-triangle /] Il est important de noter que dans le monde de l'auto-hébergement, utiliser un relai SMTP est un énorme compromis ! En effet, le relais SMTP ne sera pas seulement capable d'envoyer les e-mails, mais il a également accès au contenu entier de l’e-mail que vous envoyez. Il faut faire attention également que vous n'aurez pas le choix, tout le trafic e-mails passera par ce relais une fois la configuration terminée.
+! [fa=exclamation-triangle /] Il est important de noter que dans le monde de l'auto-hébergement, utiliser un relai SMTP est un énorme compromis ! En effet, le relais SMTP ne sera pas seulement capable d'envoyer les e-mails, mais il a également accès au contenu entier de l’e-mail que vous envoyez et peut éventuellement les modifier (Par exemple, MailJet réécrit les hyperliens html contenus dans vos mails, afin de traquer l'activité). Il faut faire attention également que vous n'aurez pas le choix, tout le trafic e-mails passera par ce relais une fois la configuration terminée.
 
 ## Comment utiliser le relais SMTP avec YunoHost ?
 
@@ -34,10 +34,11 @@ Habituellement les fournisseurs ont une documentation à ce sujet.
 
 ## Étape 3 :Configurer YunoHost correctement
 
-Pour que YunoHost soit capable d'utiliser le relais, il faut paramétrer 3 choses.
+Pour que YunoHost soit capable d'utiliser le relais, il faut paramétrer 4 choses.
 1. Votre url de relais SMTP (on utilisera `smtprelay.tld`).
-2. Votre nom d'utilisateur SMTP (on utilisera `username`).
-3. Votre mot de passe SMTP (on utilisera `password`).
+2  Le port sur lequel on accède au relais (on suppose le port 2525 ci-dessous) 
+3. Votre nom d'utilisateur SMTP (on utilisera `username`).
+4. Votre mot de passe SMTP (on utilisera `password`).
 
 Le fournisseur SMTP vous fournit ces trois informations.
 
@@ -51,6 +52,7 @@ Ensuite, mettre à jour les informations suivantes :
 
 ```bash
 sudo yunohost settings set smtp.relay.host -v smtprelay.tld
+sudo yunohost settings set smtp.relay.port -v 2525
 sudo yunohost settings set smtp.relay.user -v username
 sudo yunohost settings set smtp.relay.password -v password
 ```
