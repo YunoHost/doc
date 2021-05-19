@@ -7,9 +7,9 @@ routes:
   default: '/packaging_apps_start'
 ---
 
-This documentation is here is to provide all the basic concepts and vocabulary needed to understand app packaging. eg: shell, parsing, system administration...
+This documentation is here to provide all the basic concepts and vocabulary needed to understand app packaging. eg: shell, parsing, system administration...
 
-We will detail what is a YunoHost application package, how it works, how to make your own package and how to find help if you need it.
+We will detail what a YunoHost application package is, how it works, how to make your own package and how to find help if you need it.
 
 ## What is a YunoHost application package
 
