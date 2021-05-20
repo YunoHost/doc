@@ -39,7 +39,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Caliopen](https://www.caliopen.org) | A unified inteface for all your private communications |  | [Package Draft](https://github.com/YunoHost-Apps/caliopen_ynh) |
 | [cgit](https://git.zx2c4.com/cgit/about) |  |  |  |
 | [CheckUp](https://sourcegraph.github.io/checkup) |  | [Upstream](https://github.com/sourcegraph/checkup) |  |
-| chtickynotes | Note manager |  | [Package Draft](https://github.com/YunoHost-Apps/chtickynotes_ynh) |
 | [Citadel-suite](https://www.citadel.org) | Groupware platform |  |  |
 | [Cockpit](https://cockpit-project.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/cockpit_ynh) |
 | coin | Member dashboard for non profit ISP | [Upstream](https://code.ffdn.org/FFDN/coin/) | [Package Draft](https://github.com/YunoHost-Apps/coin_ynh) |
