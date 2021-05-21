@@ -60,7 +60,7 @@ To prevent SSH connection attempts by robots that scan the Internet for any serv
 This is handled by a system setting, which takes care of updating the SSH and Fail2Ban configuration.
 
 ```bash
-sudo yunohost settings set security.ssh.port -p <new_ssh_port_number>
+sudo yunohost settings set security.ssh.port -v <new_ssh_port_number>
 ```
 
 **For the next SSH connections **, you need to add the `-p` option followed by the SSH port number.
