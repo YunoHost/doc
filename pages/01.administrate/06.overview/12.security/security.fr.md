@@ -69,12 +69,12 @@ Pour éviter des tentatives de connexion SSH par des robots qui scannent tout In
 C'est géré par un paramètre système, qui se charge de configurer les services SSH et Fail2Ban.
 
 ```bash
-sudo yunohost settings set security.ssh.port -p <votre_numero_de_port_ssh>
+sudo yunohost settings set security.ssh.port -v <votre_numero_de_port_ssh>
 ```
 
-**For the next SSH connections **, you need to add the `-p` option followed by the SSH port number.
+**Lors de la prochaine connexion SSH**, vous devrez ajouter le paramètre `-p` suivi du port SSH.
 
-**Sample**:
+**Exemple**:
 
 ```bash
 ssh -p <votre_numero_de_port_ssh> admin@<votre_serveur_yunohost>
