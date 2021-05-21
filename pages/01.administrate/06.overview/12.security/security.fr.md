@@ -66,66 +66,19 @@ systemctl restart ssh
 ### Modifier le port SSH
 
 Pour éviter des tentatives de connexion SSH par des robots qui scannent tout Internet pour tenter des connexions SSH avec tout serveur accessible, on peut modifier le port SSH.
-
-**Sur votre serveur**, éditez le fichier de configuration SSH, pour modifier le port SSH.
+C'est géré par un paramètre système, qui se charge de configurer les services SSH et Fail2Ban.
 
 ```bash
-nano /etc/ssh/sshd_config
+sudo yunohost settings set security.ssh.port -p <votre_numero_de_port_ssh>
 ```
 
-**Recherchez la ligne « Port »** et remplacez le numéro du port (par défaut 22) par un autre numéro non utilisé
+**For the next SSH connections **, you need to add the `-p` option followed by the SSH port number.
 
-```bash
-Port 22 # à remplacer par exemple par 9777
-```
-
-**Ouvrez le port** choisi dans le parefeu (vous pouvez utiliser l'option `-6` pour interdire la connexion via ipv4)
-
-```bash
-yunohost firewall allow TCP <votre_numero_de_port_ssh>
-```
-
-Sauvegardez et relancez le démon SSH.
-
-```bash
-systemctl restart ssh
-```
-
-Ensuite redémarrez le firewall iptables et fermez l’ancien port dans iptables.
-
-```bash
-yunohost firewall reload
-yunohost firewall disallow TCP <votre numéro de port> # port par défaut 22
-``` 
-
-Il convient également de donner à `fail2ban` le nouveau port SSH à bloquer en cas de bannissement d'une adresse IP.
-
-Pour cela il suffit de créer le fichier de configuration `my_ssh_port.conf` avec
-
-```bash
-nano /etc/fail2ban/jail.d/my_ssh_port.conf
-``` 
-
-et de le compléter ainsi :
-
-```ini
-[sshd]
-port = <votre_numero_de_port_ssh>
-```
-
-Il reste enfin à relancer `fail2ban` pour prendre en compte la nouvelle configuration 
-
-```bash
-systemctl restart fail2ban
-``` 
-
-**Pour les prochaines connexions SSH**, il faudra ajouter l’option `-p` suivie du numéro de port SSH.
-
-**Exemple** :
+**Sample**:
 
 ```bash
 ssh -p <votre_numero_de_port_ssh> admin@<votre_serveur_yunohost>
-``` 
+```
 
 ---
 
