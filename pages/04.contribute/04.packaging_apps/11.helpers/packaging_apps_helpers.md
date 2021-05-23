@@ -1419,7 +1419,7 @@ Requires YunoHost version 2.7.12 or higher.
 - `-p`, `--permission=`: the name for the permission (by default a permission named "main" already exist)
 - `-u`, `--url=`: (optional) URL for which access will be allowed/forbidden. Note that if 'show_tile' is enabled, this URL will be the URL of the tile.
 - `-A`, `--additional_urls=`: (optional) List of additional URLs for which access will be allowed/forbidden
-- `-h`, `--auth_header=`: (optional) Define for the URL carrying this permission, if SSOwat should pass the authentication header to the app. The default is "true".
+- `-h`, `--auth_header=`: (optional) Define for the URL carrying this permission, if SSOwat should pass the authentication header to the application. The default is "true".
 - `-a`, `--allowed=`: (optional) A list of allowed group/user for the permission
 - `-l`, `--label=`: (optional) Define a name for the permission. This label will be shown on the SSO and in the admin. The default is "APP_LABEL (permission name)".
 - `-t`, `--show_tile=`: (optional) Define if a tile will be shown in the SSO. If "yes", the name of the tile will be the 'label' parameter. Defaults to "false" for the permission different than 'main'.
