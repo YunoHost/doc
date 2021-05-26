@@ -16,9 +16,9 @@ Une fois correctement installé, le fonctionnement est transparent pour l’util
 
 ## Inconvénients des relais SMTP ! [fa=exclamation-triangle /]
 
-Il est important de noter que dans le monde de l'auto-hébergement, utiliser un relai SMTP est un énorme compromis ! En effet, le relais SMTP ne sera pas seulement capable d'envoyer les e-mails, mais il a également accès au contenu entier de vos e-mails et peut éventuellement les modifier (Par exemple, par défaut, MailJet réécrit les hyperliens html contenus dans vos mails, afin de traquer l'activité de vos correspondants). Il faut faire attention également que vous n'aurez pas le choix, tout le trafic e-mail sortant passera par ce relais.
+Il est important de noter que dans le monde de l'auto-hébergement, utiliser un relais SMTP est un énorme compromis ! En effet, le relais SMTP ne sera pas seulement capable d'envoyer les e-mails, mais il a également accès au contenu entier de vos e-mails et peut éventuellement les modifier (Par exemple, par défaut, MailJet réécrit les hyperliens html contenus dans vos mails, afin de traquer l'activité de vos correspondants). Il faut également savoir qu'une fois mis en place, tout le trafic e-mail sortant de votre serveur passera par ce relais; il n'est pas possible de choisir de l'utiliser ou pas selon l'expéditeur ou la destination.
 
-Au delà des considérations de confidentialité ci-dessus, un relai SMTP peut imposer des limitations techniques que l'on n'aurait pas si le port 25 était ouvert. Par exemple, avec la plupart des relais, si un utilisateur de votre serveur Yunohost déclare **une "adresse de transfert" extérieure** dans le but de transférer automatiquement les messages reçus sur votre serveur Yunohost vers une autre boîte mail, **ce transfert ne fonctionnera pas**, sans qu'il soit en averti. En effet, en général les relais exigent que les messages qu'ils transmettent aient un adresse d'expéditeur de votre domaine (pour lutter contre le spam et présever la réputation de leurs services), ce qui n'est pas le cas pour un "forward automatique" où l'expéditeur originel du mail est conservé; le message est alors bloqué par le relai (qui, normalement, prévient l'admin Yunohost, mais seulement après coup).
+Au delà des considérations de confidentialité ci-dessus, un relais SMTP peut imposer des limitations techniques que l'on n'aurait pas si le port 25 était ouvert. Par exemple, avec la plupart des relais, si un utilisateur de votre serveur Yunohost déclare **une "adresse de transfert" extérieure** dans le but de transférer automatiquement les messages reçus sur votre serveur Yunohost vers une autre boîte mail, **ce transfert ne fonctionnera pas** pour les courriels venant de l'extérieur de votre serveur, sans qu'il soit en averti. En effet, les relais exigent généralement que les messages qu'ils transmettent aient un adresse d'expéditeur de votre domaine (pour lutter contre le spam et présever la réputation de leurs services), ce qui n'est pas le cas pour un "forward automatique" où l'expéditeur originel du mail est conservé; le message est alors bloqué par le relais (qui, normalement, prévient votre admin Yunohost, mais seulement après coup).
 
 ## Comment utiliser un relais SMTP avec YunoHost ?
 
@@ -40,7 +40,7 @@ Habituellement les fournisseurs ont une documentation à ce sujet.
 
 Pour que YunoHost soit capable d'utiliser le relais, il faut paramétrer 4 choses.
 1. Votre url de relais SMTP (on utilisera `smtprelay.tld`).
-2  Le port sur lequel on accède au relais (on suppose le port 2525 ci-dessous) 
+2  Le port sur lequel on accède au relais (on utilisera le port 2525 ci-dessous) 
 3. Votre nom d'utilisateur SMTP (on utilisera `username`).
 4. Votre mot de passe SMTP (on utilisera `password`).
 
