@@ -117,7 +117,7 @@ Puis on ajoute cette ligne :
 UUID="cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7" /media/stockage ext4 defaults,nofail 0 0
 ```
 
-(il faut adapter cette ligne en fonction des informations et choix précédents)
+(il faut adapter cette ligne en fonction des informations et choix précédents. A priori, les guillements autour de l'UUID sont à enlever)
 
 Utiliser Ctrl+X puis `o` pour sauvegarder.
 
