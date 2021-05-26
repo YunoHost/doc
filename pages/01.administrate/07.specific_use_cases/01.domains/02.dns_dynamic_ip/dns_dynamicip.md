@@ -43,7 +43,7 @@ Copy the [DNS zones](/dns_config), except for the NS fields, from the [registrar
 #### 3. Switch the management of your domain name to the dynamic DNS server
 This step consists in declaring to your [registrar](#registrar) that the DNS service will now be managed by the DynDNS service provider.
 
-For this, fisrt declare in the NS field(s) the IP address provided by the DynDNS service.
+For this, first declare in the NS field(s) the IP address provided by the DynDNS service.
 
 Then, remove any other item in the [DNS zones](/dns_config) (except the previous NS fields), from the [registrar](#registrar).
 

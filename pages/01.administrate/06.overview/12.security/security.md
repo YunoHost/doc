@@ -57,60 +57,13 @@ systemctl restart ssh
 ### Modify the SSH port
 
 To prevent SSH connection attempts by robots that scan the Internet for any server with SSH enabled, you can change the SSH port.
-
-**On your server**, edit the ssh configuration file, in order to modify the SSH port.
-
-```bash
-nano /etc/ssh/sshd_config
-```
-**Search the line "Port" and replace** port number (by default 22) by another unused number
-```bash
-# What ports, IPs and protocols we listen for
-Port 22 # to replace by 9777 for example
-```
-
-**Open the port** in the firewall (you can use `-6` option to deny ipv4 connection)
-```bash
-yunohost firewall allow TCP 9777
-```
-
-Save and restart the SSH daemon. Switch over to the new port by restarting SSH.
-```bash
-systemctl restart ssh
-```
-Then restart the iptables firewall and close the old port in iptables.
+This is handled by a system setting, which takes care of updating the SSH and Fail2Ban configuration.
 
 ```bash
-yunohost firewall reload
-yunohost firewall disallow TCP <your_old_ssh_port_number> # port by default 22
+sudo yunohost settings set security.ssh.port -v <new_ssh_port_number>
 ```
 
-You also need to give `fail2ban` the new SSH port.
-
-To do that you need to create the configuration file `my_ssh_port.conf` with the command
-
-
-```bash
-nano /etc/fail2ban/jail.d/my_ssh_port.conf
-```
-
-and you can then fill it in with
-
-```ini
-[sshd]
-port = <your_ssh_port>
-
-[sshd-ddos]
-port = <your_ssh_port>
-```
-
-Finally you have to restart `fail2ban` in order to apply the new configuration
-
-```bash
-systemctl restart fail2ban
-```
-
-**For the next SSH connections **, you need to add the `-p` option followed by the SSH port number.
+**For the next SSH connections**, you need to add the `-p` option followed by the SSH port number.
 
 **Sample**:
 
