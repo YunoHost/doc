@@ -7,7 +7,7 @@ routes:
   default: '/email'
 ---
 
-YunoHost est livré avec un écosystème complet de serveur mail, vous permettant d'héberger votre propre serveur de messagerie, et donc d'avoir vos propres adresses email dans `quelquechose@votre.domaine.tld`.
+YunoHost est livré avec un écosystème complet de serveur mail, vous permettant d'héberger votre propre serveur de messagerie, et donc d'avoir vos propres adresses email dans le style `quelquechose@votre.domaine.tld`.
 
 Cet écosystème comprend un serveur SMTP (postfix), un serveur IMAP (Dovecot), un antispam (rspamd) et une configuration DKIM.
 
