@@ -15,18 +15,20 @@ Two things remain important to note:
 
 * The fact that YunoHost is a well-spread software increases the chances of an attack. If a flaw is discovered, it could potentially affect all the YunoHost instances at once. Keep your system **up-to-date** to remain safe.
 
-!!!! If you need advice, do not hesitate to [ask us](/help).
+*If you need advice, do not hesitate to [ask us](/help).*
 
-!! [fa=shield /] To discuss security flaws, contact the [YunoHost security team](/security_team).
+*To discuss security flaws, contact the [YunoHost security team](/security_team).*
 
 ---
 
 ## Improve security
+
 If your YunoHost server is used in a critical production environment, or if you want to improve its safety, you may want to follow those good practices.
 
-! **Attention:** Following those instructions requires advanced knowledge of system administration.
+**WARNING:** *Following those instructions requires advanced knowledge of system administration.*
 
 ### SSH authentication via key
+
 By default, the SSH authentication uses the administration password. Deactivating this kind of authentication and replacing it by a key mechanism is advised.
 
 **On your client**:
@@ -35,7 +37,8 @@ By default, the SSH authentication uses the administration password. Deactivatin
 ssh-keygen
 ssh-copy-id -i ~/.ssh/id_rsa.pub <username@your_yunohost_server>
 ```
-!!! If you meet permissions issues, set `username` as owner of the dir `~/.ssh` with `chown`. Be careful, for security reason this directory should be in mode `700`.
+
+*If you meet permissions issues, set `username` as owner of the dir `~/.ssh` with `chown`.* Be careful, for security reason this directory should be in mode `700`.
 
 Type your admnistration password and your key will be copied on your server.
 
