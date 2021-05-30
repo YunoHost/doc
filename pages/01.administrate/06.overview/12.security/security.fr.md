@@ -42,9 +42,9 @@ ssh-keygen
 ssh-copy-id -i ~/.ssh/id_rsa.pub <nom_utilisateur@otre_serveur_yunohost>
 ```
 
-!!! Si vous avez des problèmes de permissions, donnez à `nom_utilisateur` la possession du dossier `~/.ssh` avec `chown`. Attention, pour des raisons de sécurité, ce dossier doit être en mode 700 !
+*Si vous avez des problèmes de permissions, donnez à `nom_utilisateur` la possession du dossier `~/.ssh` avec `chown`.* Attention, pour des raisons de sécurité, ce dossier doit être en mode 700 !
 
-!!! Si vous êtes sur Ubuntu 16.04 vous devez faire  `ssh-add` pour initialiser l'agent ssh
+*Si vous êtes sur Ubuntu 16.04 vous devez faire  `ssh-add` pour initialiser l'agent ssh.*
 
 Entrez le mot de passe d’administration et votre clé publique devrait être copiée sur votre serveur.
 
