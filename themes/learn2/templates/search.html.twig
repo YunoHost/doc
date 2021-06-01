@@ -1,0 +1,11 @@
+{% embed 'partials/base.html.twig' with { github_link_position: false } %}
+
+    {% block content %}
+        {{ page.content|raw }}
+
+        {% include 'partials/tntsearch.html.twig' with { in_page: true, placeholder: "Search the Grav documentation..." }%}
+    {% endblock %}
+
+    {% block footer %}{% endblock %}
+
+{% endembed %}
