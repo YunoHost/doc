@@ -17,3 +17,11 @@ Nell'attesa che possiate occuparvi di un vostro server, potete cominciare a cons
 Potete esplorare il [catalogo delle applicazioni](/apps) installabili sul vostro server (che può essere comunque consultato direttamente dalla vostra interfaccia d'amministrazione!)
 
 La [comunità](/community) è disponibile se avete bisogno di aiuto: potete venire a discutere nelle [stanze di discussione](/chat_rooms) oppure porre le vostre domande sul [forum](/community/forum)!
+
+[center]
+
+<a href="/admindoc" class="btn btn-lg btn-primary inline"><i class="fa fa-cogs"></i> Guida d'amministrazione</a>
+<a href="/apps" class="btn btn-lg btn-success inline"><i class="fa fa-cubes"></i> Applicazioni</a>
+<a href="/community" class="btn btn-lg btn-primary" style="background: blueviolet;border-color: blueviolet;"><i class="fa fa-users"></i> Comunità</a>
+<a href="/contribute" style="background: orange; border-color: orange;" class="btn btn-lg btn-error"><i class="fa fa-heart"></i> Contribuire</a>
+
