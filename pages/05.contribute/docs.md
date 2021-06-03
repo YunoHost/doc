@@ -1,12 +1,12 @@
 ---
-title: Get involved
+title: 'Get involved'
 template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/contributordoc'
-  aliases:
-    - '/contribute'
+    default: /contributordoc
+    aliases:
+        - /contribute
 ---
 
 <p class="lead">
