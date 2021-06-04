@@ -82,4 +82,15 @@ Most of non business IP provided by ISP are blacklisted.
 | --- | --- | --- | --- | --- | --- | --- |
 | DIGI Távközlési és Szolgáltató Kft. | Yes | No | No. Business only. | No | No | No. Business only |
 
+### Finland
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+
+| DNA | Multiple | Yes | No. Regulations in Finland prohibit the use of Port 25 for consumers. | Yes | No | No. Only for business. |
+
+| Elisa | Multiple | Yes | No. Regulations in Finland prohibit the use of Port 25 for consumers. | Yes | Not available for consumers | No. Only for Business. |
+
+| Telia | Multiple | Yes | No. Regulations in Finland prohibit the use of Port 25 for consumers. | Yes | Not available for consumers | No. Only for Business. |
+
 If you want to add international ISPs information, please do consider [modifying this page](/write_documentation).
