@@ -11,7 +11,7 @@ Here are some general advices when encountering issues with your server.
 
 ## 0. Don't panic.
 
-Stay calm. Most issues are less worse than newcomers usually think. For the love of God <small>(or your favourite deity / animal / food)</small>, please don't jump into the "reinstallation spiral" thinking reinstalling your serve from scratch will magically fix stuff. Reinstalling is a heavy operation and is not a good long-term strategy for fixing problems. You will get tired and won't learn anything.
+Stay calm. Most issues are less worse than newcomers usually think. For the love of God <small>(or your favourite deity / animal / food)</small>, please don't jump into the "reinstallation spiral" thinking reinstalling your server from scratch will magically fix stuff. Reinstalling is a heavy operation and is not a good long-term strategy for fixing problems. You will get tired and won't learn anything.
 
 ## 1. Look for similar issues on the forum or bugtrackers.
 
