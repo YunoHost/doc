@@ -1,5 +1,5 @@
 ---
-title: Admin guide
+title: 'Admin guide'
 template: chapter
 taxonomy:
     category: docs
