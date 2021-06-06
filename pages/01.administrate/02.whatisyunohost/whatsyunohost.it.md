@@ -17,13 +17,13 @@ YunoHost è un **sistema operativo** che mira a rendere il più semplice possibi
 - ![](image://icon-tools.png?resize=32&classes=inline) Amministra il tuo server attraverso una **semplice interfaccia grafica** ;
 - ![](image://icon-package.png?resize=32&classes=inline) Installa **applicazioni e servizi in pochi click**;
 - ![](image://icon-users.png?resize=32&classes=inline) Gestisci gli **utenti** <small>(basato su LDAP)</small>;
-- ![](image://icon-globe.png?resize=32&classes=inline) Manage **domain names**;
-- ![](image://icon-medic.png?resize=32&classes=inline) Create and restore **backups**;
-- ![](image://icon-door.png?resize=32&classes=inline) Connect to all apps simultaneously through the **user portal** <small>(NGINX, SSOwat)</small>;
-- ![](image://icon-mail.png?resize=32&classes=inline) Includes a **full e-mail stack** <small>(Postfix, Dovecot, Rspamd, DKIM)</small>;
-- ![](image://icon-messaging.png?resize=32&classes=inline)... as well as **an instant messaging server** <small>(XMPP)</small>;
-- ![](image://icon-lock.png?resize=32&classes=inline) Manages **SSL certificates** <small>(based on Let's Encrypt)</small> ;
-- ![](image://icon-shield.png?resize=32&classes=inline)... and **security systems** <small>(Fail2ban, yunohost-firewall)</small>;
+- ![](image://icon-globe.png?resize=32&classes=inline) Gestisci **i nomi di dominio**;
+- ![](image://icon-medic.png?resize=32&classes=inline) Crea e ripristina **backup**;
+- ![](image://icon-door.png?resize=32&classes=inline) Connettiti a tutte la app contemporaneamente attraverso il **portale utente** <small>(NGINX, SSOwat)</small>;
+- ![](image://icon-mail.png?resize=32&classes=inline) Include una **configurazione completa per l'email** <small>(Postfix, Dovecot, Rspamd, DKIM)</small>;
+- ![](image://icon-messaging.png?resize=32&classes=inline)... come anche **un server di messaggistica istantanea** <small>(XMPP)</small>;
+- ![](image://icon-lock.png?resize=32&classes=inline) Gestisci **i certificati SSL** <small>(usando Let's Encrypt)</small> ;
+- ![](image://icon-shield.png?resize=32&classes=inline)... e **sistemi di sicurezza** <small>(Fail2ban, yunohost-firewall)</small>;
 
 ## Origine
 
