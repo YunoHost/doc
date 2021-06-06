@@ -14,7 +14,7 @@ Si votre fournisseur internet bloque le port 25, ou si vous rencontrez un probl�
 C'est un serveur SMTP tiers qui va envoyer les e-mails aux destinataires à la place de votre propre serveur SMTP.
 Une fois correctement installé, le fonctionnement est transparent pour l’utilisateur. Vos correspondants verront vos e-mails comme s’ils venaient de votre propre serveur, mais ils seront passés par le relais SMTP que vous aurez choisi et configuré.
 
-## Inconvénients des relais SMTP ! [fa=exclamation-triangle /]
+## [fa=exclamation-triangle /] Inconvénients des relais SMTP
 
 Il est important de noter que dans le monde de l'auto-hébergement, utiliser un relais SMTP est un énorme compromis ! En effet, le relais SMTP sera non seulement capable d'envoyer les e-mails de votre part, mais il a également accès au contenu intégral de vos e-mails et peut éventuellement les modifier (Par exemple, par défaut, MailJet réécrit les hyperliens html contenus dans vos mails, afin de traquer l'activité de vos correspondants). Il faut également savoir qu'une fois mis en place, tout le trafic e-mail sortant de votre serveur passera par ce relais; il n'est pas possible de choisir de l'utiliser ou pas selon l'expéditeur ou la destination.
 
@@ -40,7 +40,7 @@ Habituellement les fournisseurs ont une documentation à ce sujet.
 
 Pour que YunoHost soit capable d'utiliser le relais, il faut paramétrer 4 choses.
 1. Votre url de relais SMTP (on utilisera `smtprelay.tld`).
-2  Le port sur lequel on accède au relais (on utilisera le port 2525 ci-dessous) 
+2.  Le port sur lequel on accède au relais (on utilisera le port 2525 ci-dessous) 
 3. Votre nom d'utilisateur SMTP (on utilisera `username`).
 4. Votre mot de passe SMTP (on utilisera `password`).
 
