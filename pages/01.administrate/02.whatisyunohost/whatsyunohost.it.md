@@ -44,13 +44,13 @@ Sebbene YunoHost possa gestire domini e utenti multipli **non è pensato per ess
 
 Innanzitutto il software è troppo giovane e non testato in produzione, di conseguenza probabilmente non è ottimizzato per essere utilizzato con centinaia di utenti contemporanei.
 
- With that said, we do not want to lead the software in that direction. Virtualization democratizes, and its usage is recommended since it is a more watertight way to achieve mutualization than a "full-stack" system like YunoHost.
+Detto questo non è nostra intenzione sviluppare il software in quella direzione. La virtualizzazione semplifica e usarla è raccomandabile poiché è una modalità più stabile per ottenere un sistema condiviso rispetto ad un sistema "full-stack" come YunoHost.
 
-You can host your friends, your family and your company safely and with ease, but you must **trust your users**, and they must trust you above all. If you want to provide YunoHost services for unknown persons anyway, a full VPS per user will be just fine, and we believe a better way to go.
+È possibile ospitare in sicurezza e con facilità i propri amici, familiari e la tua ditta ma è necessario **avere utenti fidati** e soprattutto questi devono potersi fidare di te. Se invece vuoi offrire i servizi di YunoHost per persone sconosciute una VPS dedicata per ogni utente è preferibile e secondo noi è un modo migliore.
 
-## Artworks
+## Artwork
 
-Black and white YunoHost PNG logo by ToZz (400 × 400 px):
+Logo di YunoHost in bianco e nero creato da ToZz (400 × 400 px):
 
 ![](image://ynh_logo_black_300dpi.png?resize=220)
 ![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)
