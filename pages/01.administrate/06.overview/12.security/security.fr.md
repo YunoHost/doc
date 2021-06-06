@@ -17,9 +17,9 @@ Deux points sont néanmoins importants à noter :
 
 * Le fait que YunoHost soit un logiciel répandu augmente les chances de subir une attaque. Si une faille est découverte, elle peut potentiellement **toucher toutes les instances YunoHost** à un temps donné. Nous nous efforçons de corriger ces failles le plus rapidement possible, pensez donc à **mettre à jour régulièrement** votre système.
 
-*Si vous avez besoin de conseil, n’hésitez pas à [nous demander](/help).*
+!!!! Si vous avez besoin de conseil, n’hésitez pas à [nous demander](/help).
 
-*Pour discuter d'une faille de sécurité, contactez l'[équipe sécurité de YunoHost](/security_team).*
+!! [fa=shield /] Pour discuter d'une faille de sécurité, contactez l'[équipe sécurité de YunoHost](/security_team).
 
 ---
 
@@ -27,7 +27,7 @@ Deux points sont néanmoins importants à noter :
 
 Si votre serveur YunoHost est dans un environnement de production critique ou que vous souhaitez améliorer sa sécurité, il est bon de suivre quelques bonnes pratiques.
 
-**Attention :** *l’application des conseils suivants nécessite une connaissance avancée du fonctionnement et de l’administration d’un serveur. Pensez à vous renseigner avant de procéder à cette mise en place.*
+! **Attention :** l’application des conseils suivants nécessite une connaissance avancée du fonctionnement et de l’administration d’un serveur. Pensez à vous renseigner avant de procéder à cette mise en place.
 
 ### Authentification SSH par clé
 
@@ -42,9 +42,9 @@ ssh-keygen
 ssh-copy-id -i ~/.ssh/id_rsa.pub <nom_utilisateur@otre_serveur_yunohost>
 ```
 
-*Si vous avez des problèmes de permissions, donnez à `nom_utilisateur` la possession du dossier `~/.ssh` avec `chown`.* Attention, pour des raisons de sécurité, ce dossier doit être en mode 700 !
+!!! Si vous avez des problèmes de permissions, donnez à `nom_utilisateur` la possession du dossier `~/.ssh` avec `chown`. Attention, pour des raisons de sécurité, ce dossier doit être en mode 700 !
 
-*Si vous êtes sur Ubuntu 16.04 vous devez faire  `ssh-add` pour initialiser l'agent ssh.*
+!!! Si vous êtes sur Ubuntu 16.04 vous devez faire  `ssh-add` pour initialiser l'agent SSH.
 
 Entrez le mot de passe d’administration et votre clé publique devrait être copiée sur votre serveur.
 

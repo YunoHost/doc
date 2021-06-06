@@ -15,9 +15,9 @@ Two things remain important to note:
 
 * The fact that YunoHost is a well-spread software increases the chances of an attack. If a flaw is discovered, it could potentially affect all the YunoHost instances at once. Keep your system **up-to-date** to remain safe.
 
-*If you need advice, do not hesitate to [ask us](/help).*
+!!!! If you need advice, do not hesitate to [ask us](/help).
 
-*To discuss security flaws, contact the [YunoHost security team](/security_team).*
+!! [fa=shield /] To discuss security flaws, contact the [YunoHost security team](/security_team).
 
 ---
 
@@ -25,7 +25,7 @@ Two things remain important to note:
 
 If your YunoHost server is used in a critical production environment, or if you want to improve its safety, you may want to follow those good practices.
 
-**WARNING:** *Following those instructions requires advanced knowledge of system administration.*
+! **WARNING:** Following those instructions requires advanced knowledge of system administration.
 
 ### SSH authentication via key
 
@@ -38,7 +38,9 @@ ssh-keygen
 ssh-copy-id -i ~/.ssh/id_rsa.pub <username@your_yunohost_server>
 ```
 
-*If you meet permissions issues, set `username` as owner of the dir `~/.ssh` with `chown`.* Be careful, for security reason this directory should be in mode `700`.
+!!! If you meet permissions issues, set `username` as owner of the dir `~/.ssh` with `chown`. Be careful, for security reason this directory should be in mode `700`.
+
+!!! If you are on Ubuntu 16.04 you should run `ssh-add` to initialize the SSH agent.
 
 Type your admnistration password and your key will be copied on your server.
 
