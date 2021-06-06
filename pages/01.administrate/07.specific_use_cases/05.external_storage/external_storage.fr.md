@@ -13,9 +13,9 @@ En dehors du système de monitoring qui s'assure que les partitions de votre sys
 
 Si vous vous hébergez sur une carte ARM avec une carte SD ou sur un serveur avec un petit disque SSD, vous pourriez, pour des raisons de fiabilité ou de manque de place, vouloir ajouter un ou des disques à votre serveur.
 
-! Si vous n'avez plus du tout de place sur votre serveur, vous pouvez dés à présent taper `apt clean` pour essayer d'en gagner un peu le temps de faire le ménage ou suivre les opérations qui vont suivre.
+! Si vous n'avez plus du tout de place sur votre serveur, vous pouvez dès à présent taper `apt clean` pour essayer d'en gagner un peu le temps de faire le ménage ou suivre les opérations qui vont suivre.
 
-Ci-dessous, vous trouverez des explications pour parvenir à déplacer vos données sur un disque dur de façon correcte avec un minimum d'impact vis à vis du fonctionnement de YunoHost. Cette opération peut se faire lors de l'installation ou, a posteriori, lorsque vos besoins de stockage ont augmenté ou lorsque vous n'avez plus confiance dans votre carte SD.
+Ci-dessous, vous trouverez des explications pour parvenir à déplacer vos données sur un disque dur de façon correcte avec un minimum d'impact vis-à-vis du fonctionnement de YunoHost. Cette opération peut se faire lors de l'installation ou, a posteriori, lorsque vos besoins de stockage ont augmenté ou lorsque vous n'avez plus confiance dans votre carte SD.
 
 !!! La méthode présentée ici va d'abord monter l'unique partition du disque dur, puis utiliser un ou des sous-dossiers de ce disque pour créer différents points de montage sur l'arborescence de votre système. Cette méthode est préférable à l'usage de liens symboliques, car ces derniers peuvent perturber certaines applications dont le système de sauvegarde de YunoHost. On pourrait aussi choisir de monter des partitions plutôt que des sous-dossiers, mais il est parfois difficile d'estimer à l'avance l'évolution du poids d'un dossier à l'avance.
 
@@ -25,7 +25,7 @@ Ci-dessous, vous trouverez des explications pour parvenir à déplacer vos donn�
 
 * Savoir se connecter en root sur votre système, par exemple via [SSH](/ssh). (Note : en étant connecté en tant qu'utilisateur `admin`, vous pouvez passer root avec `sudo su`)
 
-* Connaitre les commandes basiques `cd`, `ls`, `mkdir`, `rm`
+* Connaître les commandes basiques `cd`, `ls`, `mkdir`, `rm`
 
 * Avoir une sauvegarde au cas où ça ne se passe pas comme prévu
 
@@ -39,8 +39,8 @@ Ci-dessous, une explication de certains chemins qui peuvent prendre du poids ave
 
 | Chemin | Contenu  | Conseils |
 |--------|---|---|
-| /home                       | Dossiers utilisateurs accessible via SFTP | Déplaçable sur un disque dur  |
-| /home/yunohost.backup       | Sauvegardes YunoHost  | Selon votre stratégie de sauvegarde, il peut être préférable de placer ce dossier sur un disque distinct de celui où se trouve vos données ou vos base de données |
+| /home                       | Dossiers utilisateurs accessibles via SFTP | Déplaçable sur un disque dur  |
+| /home/yunohost.backup       | Sauvegardes YunoHost  | Selon votre stratégie de sauvegarde, il peut être préférable de placer ce dossier sur un disque distinct de celui où se trouvent vos données ou vos bases de données |
 | /home/yunohost.app          | Données lourdes des applications yunohost (nextcloud, matrix...) | Déplaçable sur un disque dur |
 | /home/yunohost.multimedia   | Données lourdes partagées entre plusieurs applications | Déplaçable sur un disque dur |
 | /var/lib/mysql              | Base de données utilisées par les applications | A laisser idéalement sur le SSD pour des raisons de performances |
@@ -76,7 +76,7 @@ Ici, `mmcblk0` correspond à une carte SD de 16Go (on voit que les partitions `m
 
 ! [fa=exclamation-triangle /] Sur un autre système, il se peut que votre système soit installé sur `sda` et que votre disque soit alors `sdb` par exemple.
 
-!!! Astuce: si la taille du disque ne vous suffit pas pour le reconnaitre, vous pouvez débrancher le disque lancer la commande `lsblk`, puis rebrancher le disque, lancer `lsblk` et en déduire les différences.
+!!! Astuce: si la taille du disque ne vous suffit pas pour le reconnaître, vous pouvez débrancher le disque lancer la commande `lsblk`, puis rebrancher le disque, lancer `lsblk` et en déduire les différences.
 
 ## 3. (Optionnel) Formater le disque
 
@@ -109,7 +109,7 @@ Remplacez `VOTRE_DISQUE1` par le nom de la première partition sur le disque par
 
 ## 4. Monter le disque
 
-Contrairement à Windows où les disques sont accessible avec des lettres (C:/), sous linux, les disques sont rendus accessibles via l'arborescence. "Monter" un disque signifie le rendre effectivement accessible dans l'arborescence des fichiers. Nous allons choisir arbitrairement de monter le disque dans `/mnt/hdd` mais vous pouvez le nommer différemment (par exemple `/mnt/disque` ...).
+Contrairement à Windows où les disques sont accessibles avec des lettres (C:/), sous linux, les disques sont rendus accessibles via l'arborescence. "Monter" un disque signifie le rendre effectivement accessible dans l'arborescence des fichiers. Nous allons choisir arbitrairement de monter le disque dans `/mnt/hdd` mais vous pouvez le nommer différemment (par exemple `/mnt/disque` ...).
 
 Commençons par créer le répertoire :
 ```bash
@@ -130,7 +130,7 @@ mount /dev/VOTRE_DISQUE1 /mnt/hdd
 Ici on va considérer que vous souhaitez déplacer les grosses données des applications qui se trouvent dans /home/yunohost.app ainsi que les mails sur votre disque dur.
 
 ### 5.1 Création des sous-dossiers sur le disque
-Pour commencer, on créé un dossier dans le disque dur
+Pour commencer, on crée un dossier dans le disque dur
 
 ```bash
 mkdir -p /mnt/hdd/home/yunohost.app
@@ -175,7 +175,7 @@ mount --bind /mnt/hdd/var/mail /var/mail
 
 ### 5.4 Copie des données
 
-Puis, on copie les données en conservant toutes les propriétés des dossiers et des fichiers. Cette opération peut prendre un peu de temps, avec un autre terminal, vous pourrez controler l'évolution en observant le poids associés au point de montage avec `df -h`
+Puis, on copie les données en conservant toutes les propriétés des dossiers et des fichiers. Cette opération peut prendre un peu de temps, avec un autre terminal, vous pourrez controler l'évolution en observant le poids associé au point de montage avec `df -h`
 
 ```bash
 cp -a /home/yunohost.app.bkp/. /home/yunohost.app/
@@ -204,9 +204,9 @@ A partir de cette étape, vos services tournent avec leurs données sur le disqu
 ## 6. Monter automatiquement au démarrage
 
 
-Jusqu'ici, nous avons monté manuellement le disque et les sous-dossies. Cependant, il est nécessaire de configurer le système pour qu'il monte automatiquement le disque après un démarrage.
+Jusqu'ici, nous avons monté manuellement le disque et les sous-dossiers. Cependant, il est nécessaire de configurer le système pour qu'il monte automatiquement le disque après un démarrage.
 
-Si vos tests sont concluant, il faut pérreniser les points de montages, sinon dépéchez-vous de faire machine arrière en commençant par remettre en maintenance.
+Si vos tests sont concluants, il faut pérenniser les points de montages, sinon dépêchez-vous de faire machine arrière en commençant par remettre en maintenance.
 
 Pour commencer, trouvons l'UUID (identifiant universel) de notre disque avec :
 
@@ -237,7 +237,7 @@ Utiliser Ctrl+X puis `o` pour sauvegarder.
 Vous pouvez ensuite tester de redémarrer le système pour vérifier si le disque et les sous-dossiers sont montés automatiquement.
 
 ## 7. Nettoyer les anciennes données
-Dés que votre nouveau setup est validé, vous pouvez procéder à la suppresion des anciennes données issues de l'étape 6.3:
+Dès que votre nouveau setup est validé, vous pouvez procéder à la suppression des anciennes données issues de l'étape 6.3:
 
 ```bash
 rm -Rf /home/yunohost.app.bkp
