@@ -13,27 +13,27 @@ Questa pagina elenca qualche consiglio e delle linee guida che tutti gli amminis
 
 In altre parole: il tuo server può essere un "server in produzione" (destinato a funzionare), oppure un server di test che ti permette di sperimentare.
 
-Si il tuo obiettivo è avere un server in produzione:
+Se il tuo obiettivo è avere un server in produzione:
 - sii consapevole che i server sono sistemi fragili: sii prudente, metodico e paziente;
-- limita gli esperimenti e le personalizzazioni (per le instanze il file config)
+- limita gli esperimenti e le personalizzazioni (per le istanze il file config)
 - non installare dozzine di installazioni solo per vedere come sono;
 - usa le applicazioni non ufficiali con prudenza, e evita di usare quelle 'in progress', 'not working' o che hanno un livello 0;
-- se qualcosa dovesse rompersi, pensate due volte prima di cercare di riparare da soli se non sapete quello che state facendo. <small>(Per esempio, non tentate di ricreare da soli l'utente admin solo perchè sembra che sia misteriosamente scomparso...)</small>
+- se qualcosa dovesse rompersi, pensate due volte prima di cercare di riparare da soli se non sapete quello che state facendo. <small>(Per esempio, non tentate di ricreare da soli l'utente admin solo perché sembra che sia misteriosamente scomparso...)</small>
 
 ## Keep it simple !
 
-YunoHost è progettato per funzionare in casi d'uso generici e semplici. Deviare da queste condizioni renderà le cose più difficili e avrai bisogno di conoscenze tecniche perchè tutto funzioni. Per esempio,
+YunoHost è progettato per funzionare in casi d'uso generici e semplici. Deviare da queste condizioni renderà le cose più difficili e avrai bisogno di conoscenze tecniche perché tutto funzioni. Per esempio,
 - non provare ad eseguire YunoHost in un contesto dove non puoi controllare le porte 80 e 443 (o senza Internet del tutto);
 - non provare a hostare cinque server dietro la stessa connessione Internet se non sei un utente esperto;
 - non cadere nei capricci dei nerd che vogliono sostituire NGINX con Apache (o farli girare tutti e due insieme);
-- non cercare di usare certificati SSL personalizzati se non ne avete veramente bisogno;
+- non cercare di usare certificati SSL personalizzati se non ne hai veramente bisogno;
 - ...
 
 Tenete le cose più semplici possibili!
 
 ## Non reinstallate tutti i giorni
 
-Alcune persone hanno la tendenza a cadere nella "spirale di reinstallazione" - dove ogni volta che qualcosa nel server si rompe e non è semplice capire come ripararlo, o perchè il server diventa "sporco", l'amministratore decide di reinstallare tutto il server da zero perchè sembra una soluzione "facile" e veloce per rimettere le cose a posto.
+Alcune persone hanno la tendenza a cadere nella "spirale di reinstallazione" - dove ogni volta che qualcosa nel server si rompe e non è semplice capire come ripararlo, o perché il server diventa "sporco", l'amministratore decide di reinstallare tutto il server da zero perché sembra una soluzione "facile" e veloce per rimettere le cose a posto.
 
 Non farlo. La reinstallazione è un'operazione difficile e non è un buona strategia a lungo termine per risolvere i problemi. Ti stancherai e non imparerai niente. Dimentica il sogno di avere un server "pulito". Nella vita reale il server sarà sempre "sporco". In più, dovrai imparare (progressivamente) a risolvere i problemi che incontrerai. [Chiedi aiuto](/help) con i dettagli dei sintomi, quello che hai provato a fare e cosa è successo e correggi i problemi. Con il tempo, avrai un controllo migliore sul tuo server piuttosto che reinstallare alla cieca tutte le volte.
 
