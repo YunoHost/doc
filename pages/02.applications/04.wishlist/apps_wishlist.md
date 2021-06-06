@@ -271,6 +271,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | studs | A survey tool, the ancestor of OpenSondage |  | [Package Draft](https://github.com/YunoHost-Apps/studs_ynh) |
 | subsonic | Subsonic is an open source, web-based media server |  | [Package Draft](https://github.com/drfred1981/subsonic_ynh) |
 | Subspace | A simple WireGuard VPN server GUI | [Upstream](https://github.com/subspacecloud/subspace) |  |
+| Superalgos | Free, open-source crypto trading bot, automated bitcoin / cryptocurrency trading software, algorithmic trading bots. | [Upstream](https://github.com/Superalgos/Superalgos) |  | 
 | Sydent | Identity-serverfor matrix | [Upstream](https://github.com/matrix-org/sydent) |  |
 | [sympa](https://www.sympa.org/) | Mailing List manager |  | [Package Draft](https://github.com/YunoHost-Apps/sympa_ynh) |
 | Synapse-Admin | Management GUI for matrix-synapse | [Upstream](https://github.com/Awesome-Technologies/synapse-admin) |  |
