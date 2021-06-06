@@ -7,11 +7,11 @@ routes:
   default: '/howtohostyourself'
 ---
 
-Puoi fare self-hosting in casa (su un piccolo computer), o su un server distante. Ogni soluzione ha i suoi pro e i suoi contro:
+Puoi fare self-hosting in casa (su un piccolo computer), o su un server remoto. Ogni soluzione ha i suoi pro e i suoi contro:
 
 ### In casa, per esempio con una scheda ARM o con un vecchio computer
 
-Puoi fare self-hosting in prioprio, con una scheda ARM o con un vecchio computer, connesso con il tuo router.
+Puoi fare self-hosting in proprio, con una scheda ARM o con un vecchio computer, connesso con il tuo router.
 
 - **Pro**: avrai un controllo fisico sulla macchina e avrai bisogno solo di acquistare il materiale per iniziare;
 - **Contro**: dovrai [configurare manualmente il router](/isp_box_config) e probabilmente ci saranno dei [limiti rispetto al tuo fornitore di accesso a internet](/isp)
@@ -25,8 +25,7 @@ Una VPN è un tunnel criptato tra due macchine. In pratica permette di avere una
 
 ### Su un server distante (VPS o server dedicato)
 
-Puoi 
-Vffittare un server virtuale privato o un macchina dedicata da fornitori "Cloud" come [associazioni](https://db/ffdn.org) o commerciali
+Puoi affittare un server virtuale privato o un macchina dedicata da fornitori "Cloud" come [associazioni](https://db.ffdn.org) o commerciali
 
 - **Pro**: il tuo server e la connessione saranno veloci;
 - **Contro**: dovrai pagare un canone mensile per la macchina e non avrai il controllo fisico del tuo server.
@@ -67,7 +66,7 @@ Vffittare un server virtuale privato o un macchina dedicata da fornitori "Cloud"
         <td style="text-align:center;" class="success">No</td>
       </tr>
       <tr>
-        <td style="text-align:center;">Possibili limitazione <br >dall'ISP</td>
+        <td style="text-align:center;">Possibili limitazioni <br >dall'ISP</td>
         <td style="text-align:center;" class="danger">Si <br><small>(vedere <a href="/isp">qui</a>)</small></td>
         <td style="text-align:center;" class="success">Aggirati dalla VPN</td>
         <td style="text-align:center;" class="success">Generalmente no</td>
