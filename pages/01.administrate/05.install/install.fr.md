@@ -406,18 +406,63 @@ Démarrez votre machine virtuelle après avoir sélectionné l'image YunoHost.
 {% if regular or virtualbox %}
 ## [fa=rocket /] Lancer l’installation graphique
 
-!! N.B. : L'installation effacera totalement les données sur votre disque dur !
-
 Vous devriez voir un écran comme ça :
 
 [figure class="nomargin" caption="Capture d'écran du menu de l'ISO"]
 ![](image://virtualbox_3.png?class=inline)
 [/figure]
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="Installation classique sur un disque entier"]
+
+!! N.B. : A partir du moment où vous aurez validé l'agencement du clavier, l'installation sera lancée et effacera totalement les données sur votre disque dur !
 
   1. Sélectionnez `Graphical install`
-  2. Sélectionnez votre langue, votre localisation et votre agencement de clavier.
+  2. Sélectionnez votre langue, votre localisation, votre agencement de clavier et éventuellement votre timezone.
   3. L'installateur va ensuite télécharger les paquets requis et les installer.
 
+[/ui-tab]
+[ui-tab title="Installation en mode expert"]
+
+Le projet YunoHost a simplifié au maximum l'installation classique afin d'éviter au plus grand nombre d'être perdues avec des questions trop techniques ou liées à des cas particuliers.
+
+Avec l'installation en mode expert, vous avez plus de possibilités notamment concernant le partitionnement exacte de vos supports de stockages. Vous pouvez aussi décider d'utiliser le mode classique et [ajouter vos disques après coup](/external_storage). 
+
+### Résumé des étapes en mode expert:
+  1. Sélectionnez `Expert graphical install`
+  2. Sélectionnez votre langue, votre localisation, votre agencement de clavier et éventuellement votre timezone.
+  3. Partitionner vos disques. C'est à cette étape que vous pouvez configurer un RAID ou chiffrer tout ou partie du serveur.
+  4. Indiquez un éventuel proxy HTTP à utiliser pour l'installation des paquets
+  5. Indiquez sur quelles volumes grub doit être installé
+
+### A propos du partitionnement
+
+De façon générale, nous recommandons d'éviter de partitionner /var, /opt, /usr, /bin, /etc, /lib, /tmp et /root sur des partitions distinctes. Ceci vous évitera des soucis de partitions pleines qui pourraient mettre en panne votre machine, faire échouer l'installation d'app, voir même altérer vos bases de données.
+
+Pour des raisons de performances, il est recommandé de monter votre stockage le plus rapide (SSD) sur la racine / .
+
+Si vous avez un ou des disques durs pour stocker les données, vous pouvez choisir de les monter sur un de ces dossiers selon votre utilisation.
+
+| Chemin | Contenu  |
+|--------|---|
+| /home                       | Dossiers utilisateurs accessibles via SFTP |
+| /home/yunohost.backup/archives       | Sauvegardes YunoHost à placer idéalement ailleurs que sur les disques qui gérent les données |
+| /home/yunohost.app          | Données lourdes des applications YunoHost (nextcloud, matrix...) |
+| /home/yunohost.multimedia   | Données lourdes partagées entre plusieurs applications |
+| /var/mail                   | Mails des usagers  |
+
+Si vous souhaitez de la souplesse et ne pas avoir à (re-)dimensionner des partitions, vous pouvez aussi choisir de monter sur /mnt/hdd et de suivre ce [tutoriel pour monter l'ensemble de ces dossiers avec `mount --bind`](/external_storage).
+
+### A propos du chiffrement
+Prenez bien en compte que si vous chiffrez tout ou partie de vos disques, vous aurez à taper la phrase de passe à chaque redémarrage de votre serveur, ce qui peut poser problème si vous n'êtes pas sur place. Il existe toutefois des solutions (assez difficiles à mettre en oeuvre) qui permettent de tapper la phrase via SSH ou via une page web (cherchez "dropbear encrypted disk").
+
+### A propos du RAID
+Ne perdez pas de vue que:
+ * les disques de vos RAID doivent être de marque, d'usure ou de lots distincts (surtout si ce sont des SSD)
+ * un RAID 1 (même sans disque de spare) est plus fiable qu'un RAID5 d'un point de vue probabilité
+ * les raid matériels sont dépendant de la carte raid, si celle-ci fait défaut il en faudra une de remplacement pour pouvoir lire et reconstruire la grappe
+
+[/ui-tab]
+[/ui-tabs]
 {% endif %}
 
 
