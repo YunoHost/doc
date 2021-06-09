@@ -7,7 +7,7 @@ routes:
   default: '/fail2ban'
 ---
 
-**Fail2Ban** è un programma di prevenzione delle intrusioni che protegge i server contro gli attacchi di forza bruta (brute-force), controllando alcuni log e bannando gli indirizzi IP che mostrano questo tipo di comportamento.
+**Fail2Ban** è un programma di prevenzione delle intrusioni che protegge i server contro gli attacchi di forza bruta (brute-force), controllando alcuni log e bannando (cioè impedendo ulteriori connessioni) gli indirizzi IP che mostrano questo tipo di comportamento.
 
 In particolare, **Fail2Ban** controlla tentativi di connessione su `SSH`. Dopo cinque tentativi di connessione falliti, Fail2Ban banna l'indirizzo IP impedendogli la connessione SSH per 10 minuti. Se la cosa si ripete altre volte viene bannato per una settimana.
 
