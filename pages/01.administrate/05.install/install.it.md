@@ -150,7 +150,7 @@ However, community images exist and are available on Docker Hub:
 ## [fa=list-alt /] Pre-requisites
 
 {% if regular %}
-* A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop with 512MB RAM and 16GB capacity (at least)
+* Un x86-compatibile con hardware dedicato a YunoHost: laptop, nettop, netbook, desktop con almeno 512MB di RAM e almeno 16GB di memoria di massa
 {% elseif rpi2plus %}
 * A Raspberry Pi 2, 3 or 4
 {% elseif rpi1 %}
