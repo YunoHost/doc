@@ -37,7 +37,7 @@ sudo fail2ban-client set sshd unbanip 11.22.33.44
 sudo fail2ban-client set recidive unbanip 11.22.33.44
 ```
 
-## Whitelist un indirizzo IP
+## Aggiungere un indirizzo IP alla whitelist
 
 Se vuoi impedire che un indirizzo IP "legittimo" venga bloccato da **YunoHost** ancora devi compilare la whitelist del file di configurazione della `jail`.
 
@@ -49,7 +49,7 @@ Aggiornando **Fail2Ban** il file `/etc/fail2ban/jail.conf` originale verrà sovr
     sudo touch /etc/fail2ban/jail.d/yunohost-whitelist.conf
     ```
 
-2. Modifica questo nuovo file con il tuo editor preferito:
+2. Modifica questo nuovo file con il tuo editor preferito (in questo esempio viene usato `nano`):
 
     ```bash
     sudo nano /etc/fail2ban/jail.d/yunohost-whitelist.conf
