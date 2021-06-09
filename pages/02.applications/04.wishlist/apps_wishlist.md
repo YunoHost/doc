@@ -143,6 +143,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [LiquidSoap](https://www.liquidsoap.info/) | Audio and video streaming language | [Upstream](https://github.com/savonet/liquidsoap) |  |
 | [listmonk](https://listmonk.app) | Self-hosted newsletter & mailing list manager | [Upstream](https://github.com/knadh/listmonk) | |
 | LocomotiveCMS |  | [Upstream](https://github.com/locomotivecms/engine) |  |
+| [Logitech Media Server](https://en.wikipedia.org/wiki/Logitech_Media_Server) | (formerly SlimServer, SqueezeCenter and Squeezebox Server) is a streaming audio server | [Debian package](http://mysqueezebox.com/download) [Source](https://github.com/Logitech/slimserver) | [Package Draft](https://github.com/lunarok/squeezebox_ynh) |
 | [Loki](https://docs.loki.network/ServiceNodes/DebianPackageGuide/)| Service node for the Loki Network | [Upstream](https://github.com/loki-project/) |  |
 | [Loomio](https://www.loomio.org) |  | [Upstream](https://github.com/loomio/loomio/) |  |
 | [MaidSafe](https://maidsafe.net) |  | [Upstream](https://github.com/maidsafe) |  |
@@ -208,6 +209,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [pia](https://github.com/LINCnil/pia) | A tool to help carrying out Privacy Impact Assessments |  | [Package Draft](https://github.com/YunoHost-Apps/pia_ynh) |
 | [PicApport](https://www.picapport.de/) | Self-hosted private photo server |  |  |
 | Pico |  | [Upstream](https://github.com/picocms/Pico) |  |
+| [Plausible Analytics](https://plausible.io) |  Simple, Open Source, and privacy-friendly web analytics alternative to Google Analytics. | [Upstream](https://github.com/plausible/analytics) | |
 | Playmaker |  | [Upstream](https://github.com/NoMore201/playmaker) |  |
 | [plonecms](plone.org) | Create a modern website with a CMS written in Python |  | [Package Draft](https://github.com/YunoHost-Apps/plonecms_ynh) |
 | [Presentator](https://presentator.io/) | A design collaboration platform |  |  |
@@ -270,6 +272,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | studs | A survey tool, the ancestor of OpenSondage |  | [Package Draft](https://github.com/YunoHost-Apps/studs_ynh) |
 | subsonic | Subsonic is an open source, web-based media server |  | [Package Draft](https://github.com/drfred1981/subsonic_ynh) |
 | Subspace | A simple WireGuard VPN server GUI | [Upstream](https://github.com/subspacecloud/subspace) |  |
+| Superalgos | Free, open-source crypto trading bot, automated bitcoin / cryptocurrency trading software, algorithmic trading bots. | [Upstream](https://github.com/Superalgos/Superalgos) |  | 
 | Sydent | Identity-serverfor matrix | [Upstream](https://github.com/matrix-org/sydent) |  |
 | [sympa](https://www.sympa.org/) | Mailing List manager |  | [Package Draft](https://github.com/YunoHost-Apps/sympa_ynh) |
 | Synapse-Admin | Management GUI for matrix-synapse | [Upstream](https://github.com/Awesome-Technologies/synapse-admin) |  |
