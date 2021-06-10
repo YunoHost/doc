@@ -5,6 +5,8 @@ taxonomy:
     category: docs
 routes:
   default: '/external_storage'
+  aliases:
+    - '/moving_app_folder'
 ---
 
 ## Introduction
