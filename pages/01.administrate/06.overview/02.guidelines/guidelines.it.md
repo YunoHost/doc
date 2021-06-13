@@ -37,18 +37,18 @@ Alcune persone hanno la tendenza a cadere nella "spirale di reinstallazione" - d
 
 Non farlo. La reinstallazione è un'operazione difficile e non è un buona strategia a lungo termine per risolvere i problemi. Ti stancherai e non imparerai niente. Dimentica il sogno di avere un server "pulito". Nella vita reale il server sarà sempre "sporco". In più, dovrai imparare (progressivamente) a risolvere i problemi che incontrerai. [Chiedi aiuto](/help) con i dettagli dei sintomi, quello che hai provato a fare e cosa è successo e correggi i problemi. Con il tempo, avrai un controllo migliore sul tuo server piuttosto che reinstallare alla cieca tutte le volte.
 
-## Faites des sauvegardes
+## Fai i backup
 
-Si vous hébergez des services et des données qui sont importants pour vos utilisateurs, il est important que vous mettiez en place une politique de sauvegarde. Les sauvegardes peuvent être facilement créées à partir de l'interface d'administration web - bien qu'elles ne puissent actuellement pas être téléchargées à partir de celle-ci (mais elles peuvent être téléchargées par d'autres moyens). Vous devez effectuer régulièrement des sauvegardes et les conserver dans un endroit sûr et physiquement différent de votre serveur. Plus d'infos dans [la documentation des sauvegardes](/backup).
+Se ospiti dei servizi e dei dati che sono importanti per i tuoi utenti, è importante mettere in atto una policy di backup. I backup possono essere creati facilmente a partire dall'interfaccia web di amministrazione - anche se non possono attualmente essere scaricati da li (ma possono essere scaricati con un altro mezzo). Dovrai effettuare regolarmente dei backup e custodirli in un luogo fisico diverso dal tuo server. Trovi altre informazioni nella [documentazione di backup](/backup).
 
-## Lisez les emails envoyés à root
+## Controlla le mail inviate a root
 
-En tant qu'administrateur, vous devriez configurer un client de messagerie pour vérifier les e-mails envoyés à `root@your.domain.tld` (qui doit être un alias pour le premier utilisateur que vous avez ajouté) ou les transférer à une autre adresse que vous vérifiez activement. Ces courriels peuvent contenir des informations sur ce qui se passe sur votre serveur, comme les tâches périodiques automatisées.
+Come amministratore, dovrai configurare un client di posta per controllare le mail inviate a `root@your.domani.tld` (che dovrà essere un alias per il primo utente che aggiungerai) o trasferitele ad un altro indirizzo mail che controlli attivamente. Queste mail possono contenere informazioni riguardo quello che avviene sul tuo server, come i compiti periodici automatici.
 
-## YunoHost est un logiciel gratuit, maintenu par des bénévoles.
+## YunoHost è software libero, mantenuto da volontari.
 
-Enfin, gardez à l'esprit que YunoHost est un logiciel libre maintenu par des volontaires - et que le but de YunoHost (démocratiser l'auto-hébergement) n'est pas simple ! Le logiciel est fourni sans aucune garantie. L'équipe de bénévoles fait de son mieux pour maintenir et fournir la meilleure expérience possible - pourtant les fonctionnalités, les applications et YunoHost dans son ensemble sont loin d'être parfaits et vous ferez face tôt ou tard à de petit ou gros problèmes. Lorsque cela se produit, venez gentiment [demander de l'aide sur le chat ou le forum, ou signaler le problème](/help) :) !
+Infine, tieni presente che YunoHost è software libero mantenuto da volontari - e che l'obiettivo di YunoHost (democratizzare il self-hosting)non è semplice! Il software è fornito senza nessuna garanzia. Il team di volontari fa del suo meglio per mantenere e fornire la migliore esperienza possibile - quindi le funzionalità, le applicazioni e YunoHost nel suo insieme sono lontani dall'essere perfetti e presto o tardi incontrerai piccoli o grossi problemi. Quando accadrà potrai [chiedere aiuto sulla chat o nel forum, o segnalare il problema](/help) :)!
 
-Si vous aimez YunoHost et que vous voulez que le projet soit maintenu en vie et progresse, n'hésitez pas à laisser une note de remerciement et à [faire un don](https://liberapay.com/YunoHost) au projet et à en parler autour de vous !
+Se ti piace YunoHost e vuoi vedere il progetto aggiornato e svilupatto, non esitare a lasciare un commento di ringraziamento e a [dare un contributo](https://liberpay.com/YunoHost) al progetto e a parlarne agli altri!
 
-Pour finir, puisque YunoHost est un projet de logiciel libre, vous êtes légitime et bienvenu pour [venir contribuer](/contribute) au projet, que ce soit sur les aspects techniques (c.-à-d. code) et moins techniques (comme par exemple contribuer à cette documentation ;)) !
+Infine, poichè YunoHOst è un progetto di software libero, sei autorizzato e benvenuto a [contribuire](/contribute) al progetto, sia per quanto riguarda gli aspetti tecnici (per esempio il codice) e meno tecnici (come per esempio contribuire a questa documentazione ;))!
