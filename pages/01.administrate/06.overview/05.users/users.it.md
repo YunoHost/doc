@@ -1,5 +1,5 @@
 ---
-title: Les utilisateurs et le SSO
+title: Gli utenti e il SSO
 template: docs
 taxonomy:
     category: docs
@@ -7,11 +7,11 @@ routes:
   default: '/users'
 ---
 
-## Utilisateurs
+## Utenti
 
-Les utilisateurs sont les êtres humains qui ont accès aux applications et autres services sur votre serveur. L'administrateur peut ajouter et gérer des utilisateurs via l'administration web (dans la catégorie Utilisateurs) ou via la catégorie `yunohost user` de la ligne de commande. Après cela, les utilisateurs obtiennent une adresse e-mail personnelle (choisie par l'administrateur), un compte XMPP, et peuvent se connecter au portail utilisateur (SSO) pour accéder aux applications pour lesquelles ils ont des permissions et configurer d'autres paramètres.
+Gli utenti sono gli esseri umani che hanno l'accesso alle applicazione e agli altri servizi sul tuo server. L'amministraore può aggiungere e gestire degli utenti tramite l'amministrazione web (nella categoria Utenti) o con la linea di comando (vedi `yunohost user --help`). Dopo queste operazioni, gli utenti avranno un indirizzo mail personale (scelto dall'amministratore), un account XMPP, e potranno connettersi al portale dell'utente (SSO) per accedere alle applicazioni di cui hanno i permessi e configurare altri parametri.
 
-Le premier utilisateur créé reçoit aussi automatiquement les alias email `root@main.domain.tld` et `admin@main.domain.tld`, de sorte que le courrier envoyé à ces adresses se retrouvera dans la boîte aux lettres de cet utilisateur.
+Il primo utente creato avrà automaticamente l'alias mail `root@main.domani.tld` e `admin@main.domani.tld`, in modo che le mail inviate a quegli indirizzi saranno ricevute nella casella mail di questo utente.
 
 ! Vous devriez faire attention à qui vous donnez l'accès à votre serveur. En termes de sécurité, cela augmente considérablement la surface d'attaque pour quelqu'un qui veut perturber le serveur d'une manière ou d'une autre.
 
