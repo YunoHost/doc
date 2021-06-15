@@ -227,7 +227,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [qBit MatUI](https://qbit-material-webui-demo.herokuapp.com/) | A WebUI for qBittorrent | [Upstream](https://github.com/bill-ahmed/qbit-matUI) |  |
 | [qBittorrent](https://www.qbittorrent.org/) |  | [Upstream](https://github.com/qbittorrent/qBittorrent) |  |
 | [racktables](https://racktables.org) |  | [Upstream](https://github.com/RackTables/racktables) |  |
-| Radarr |  | [Upstream](https://github.com/Radarr/Radarr) |  |
 | Race for the galaxy | | [Upstream](https://github.com/bnordli/rftg) | |
 | [redmine](https://www.redmine.org/) | A flexible project management web application |  | [Package Draft](https://github.com/YunoHost-Apps/redmine_ynh) |
 | remoteStorage | A remoteStorage server implementation written in PHP | [Upstream](https://github.com/fkooman/php-remote-storage) | [Package Draft](https://github.com/YunoHost-Apps/RemoteStorage_ynh) |
