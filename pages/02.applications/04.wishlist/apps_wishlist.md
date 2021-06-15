@@ -164,7 +164,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [mosquitto](https://mosquitto.org) |  |  | [Package Draft](https://github.com/YunoHost-Apps/mosquitto_ynh) |
 | MotionEye |  | [Upstream](https://github.com/ccrisan/motioneye) |  |
 | mumble_admin_plugin | Mumble-server web interface |  | [Package Draft](https://github.com/matlink/mumble_admin_plugin_ynh) |
-| Mumble-web  |  Mumble web interface |  [Upstream](https://github.com/Johni0702/mumble-web) | [Package Draft](https://github.com/YunoHost-Apps/mumbleserver_ynh/pull/32) | 
 | munin | Resource monitoring tool |  | [Package Draft](https://github.com/YunoHost-Apps/munin_ynh) |
 | Museek+ |  | [Upstream](https://github.com/eLvErDe/museek-plus) |  |
 | [MyBB](https://mybb.com/) |  | [Upstream](https://github.com/mybb) |  |
