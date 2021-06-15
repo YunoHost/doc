@@ -29,7 +29,7 @@ YunoHost è progettato per funzionare in casi d'uso generici e semplici. Deviare
 - non cercare di usare certificati SSL personalizzati se non ne hai veramente bisogno;
 - ...
 
-Tenete le cose più semplici possibili!
+Tieni le cose più semplici possibili!
 
 ## Non reinstallate tutti i giorni
 
