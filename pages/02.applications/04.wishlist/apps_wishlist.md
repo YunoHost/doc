@@ -68,7 +68,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [erine.email](https://erine.email/) |  | [Upstream](https://gitlab.com/mdavranche/erine.email) |  |
 | [ERPnext](https://erpnext.com/) |  | [Upstream](https://github.com/frappe/erpnext) |  |
 | [EteSync](https://www.etesync.com/) |  | [Upstream](https://github.com/etesync) |  |
-| [Ethercalc](https://ethercalc.net/) | Collaborative spreadsheet editor |  | [Package Draft](https://github.com/YunoHost-Apps/ethercalc_ynh) |
 | [Excalibur](https://excalibur-py.readthedocs.io/en/master/) | A web interface to extract tabular data from PDFs (based on Camelot) | [Upstream](https://github.com/camelot-dev/excalibur) |  |
 | Facette | |  | [Package Draft](https://github.com/YunoHost-Apps/facette_ynh) |
 | [Federated wiki](http://fed.wiki.org/view/welcome-visitors/view/federated-wiki) | Farm for fedwiki sites | [Upstream](https://github.com/fedwiki) |  |
@@ -152,6 +151,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Mailtrain](https://mailtrain.org/) |  | [Upstream](https://github.com/Mailtrain-org/mailtrain) |  |
 | [Mautic](https://github.com/mautic/mautic) |  |  |  |
 | mediadrop | Video Platform |  | [Package Draft](https://github.com/YunoHost-Apps/mediadrop_ynh) |
+| [Mealie](https://hay-kot.github.io/mealie/) | Recipe manager and meal planner  | [Upstream](https://github.com/hay-kot/mealie/) |  |
 | [Mediagoblin](https://mediagoblin.org/) | Video streaming platform | [Upstream](https://savannah.gnu.org/projects/mediagoblin) |  |
 | [medusa](https://pymedusa.com/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/guigot/medusa_ynh) |
 | [Megaglest](https://megaglest.org/) | realtime stategy game | [Upstream](https://megaglest.org/linux-packages.html) | |
@@ -164,7 +164,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [mosquitto](https://mosquitto.org) |  |  | [Package Draft](https://github.com/YunoHost-Apps/mosquitto_ynh) |
 | MotionEye |  | [Upstream](https://github.com/ccrisan/motioneye) |  |
 | mumble_admin_plugin | Mumble-server web interface |  | [Package Draft](https://github.com/matlink/mumble_admin_plugin_ynh) |
-| Mumble-web  |  Mumble web interface |  [Upstream](https://github.com/Johni0702/mumble-web) | [Package Draft](https://github.com/YunoHost-Apps/mumbleserver_ynh/pull/32) | 
 | munin | Resource monitoring tool |  | [Package Draft](https://github.com/YunoHost-Apps/munin_ynh) |
 | Museek+ |  | [Upstream](https://github.com/eLvErDe/museek-plus) |  |
 | [MyBB](https://mybb.com/) |  | [Upstream](https://github.com/mybb) |  |
@@ -228,7 +227,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [qBit MatUI](https://qbit-material-webui-demo.herokuapp.com/) | A WebUI for qBittorrent | [Upstream](https://github.com/bill-ahmed/qbit-matUI) |  |
 | [qBittorrent](https://www.qbittorrent.org/) |  | [Upstream](https://github.com/qbittorrent/qBittorrent) |  |
 | [racktables](https://racktables.org) |  | [Upstream](https://github.com/RackTables/racktables) |  |
-| Radarr |  | [Upstream](https://github.com/Radarr/Radarr) |  |
 | Race for the galaxy | | [Upstream](https://github.com/bnordli/rftg) | |
 | [redmine](https://www.redmine.org/) | A flexible project management web application |  | [Package Draft](https://github.com/YunoHost-Apps/redmine_ynh) |
 | remoteStorage | A remoteStorage server implementation written in PHP | [Upstream](https://github.com/fkooman/php-remote-storage) | [Package Draft](https://github.com/YunoHost-Apps/RemoteStorage_ynh) |
@@ -260,7 +258,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [SimpleLogin](https://simplelogin.io) | Privacy-first e-mail forwarding and identity provider service | [Upstream](https://github.com/simple-login/app) | |
 | [smokeping](https://oss.oetiker.ch/smokeping/) |  | [Upstream](https://github.com/oetiker/SmokePing) |  |
 | [SocialHome](https://socialhome.network) | A federated personal profile | [Upstream](https://github.com/jaywink/socialhome) |  |
-| [Sonarr](https://sonarr.tv) |  | [Upstream](https://github.com/Sonarr/Sonarr) |  |
 | [sonerezh](https://www.sonerezh.bzh) | Stream music from everywhere |  | [Package Draft](https://github.com/YunoHost-Apps/sonerezh_ynh) |
 | Spacedeck | A real-time collaborative whiteboard | [Upstream](https://github.com/spacedeck/spacedeck-open) |  |
 | sphinx |  | [Upstream](https://github.com/sphinx-doc/sphinx) | [Package Draft](https://github.com/YunoHost-Apps/sphinx_ynh) |
