@@ -53,13 +53,15 @@ Il tuo server YunoHost include il servizio Fail2Ban che banna automaticamente gl
 
 Se sei stato bannato provando ad accedere ad una pagina web sarà irraggiungibile solo questa e potrai collegarti al tuo server via SSH. Viceversa se sei stato bannati da SSH la pagina di amministrazione funzionerà.
 
-If you have been banned from both SSH and webadmin, you can try to reach your server through another IP address. For example through the cellular network of your phone, a VPN, Tor, or another proxy.
+Se sei stato bannato sia da SSH che dalla pagina di amministrazione puoi provare a raggiungere il tuo server attraverso un altro indirizzo IP. Ad esempio puoi provare a collegarti usando la connessione cellulare del tuo telefono, attraverso una VPN, Tor o un altro proxy.
 
-See also : [unban an IP on Fail2Ban](/fail2ban)
+Vedi anche: [togliere il ban ad un indirizzo](/fail2ban)
 
-!!!! Ban are usually 10 to 12-minute-long, and on IPv4 only.
+!!!! I ban normalmente durano dai 0 ai 12 minuti e solo su IPv4.
 
-#### NGINX web server is broken
+#### Il server web NGINX non funziona
+
+Può essere che il server web NGINX non stia funzionando.
 
 Maybe the NGINX web server is out of order. You can check that [trough SSH](/ssh) with the command `yunohost service status ssh`. If it is failinf, check that its configuration is correct by running `nginx -t`. If it is indeed broken, it may be due to the installation or removal of a low-quality app... If you need support, [ask for it](/help).
 
