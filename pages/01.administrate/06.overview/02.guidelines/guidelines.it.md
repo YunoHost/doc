@@ -47,8 +47,8 @@ Come amministratore, dovrai configurare un client di posta per controllare le ma
 
 ## YunoHost è software libero, mantenuto da volontari.
 
-Infine, tieni presente che YunoHost è software libero mantenuto da volontari - e che l'obiettivo di YunoHost (democratizzare il self-hosting)non è semplice! Il software è fornito senza nessuna garanzia. Il team di volontari fa del suo meglio per mantenere e fornire la migliore esperienza possibile - quindi le funzionalità, le applicazioni e YunoHost nel suo insieme sono lontani dall'essere perfetti e presto o tardi incontrerai piccoli o grossi problemi. Quando accadrà potrai [chiedere aiuto sulla chat o nel forum, o segnalare il problema](/help) :)!
+Infine, tieni presente che YunoHost è software libero mantenuto da volontari - e che l'obiettivo di YunoHost (democratizzare il self-hosting) non è semplice! Il software è fornito senza nessuna garanzia. Il team di volontari fa del suo meglio per mantenere e fornire la migliore esperienza possibile - quindi le funzionalità, le applicazioni e YunoHost nel suo insieme sono lontani dall'essere perfetti e presto o tardi incontrerai piccoli o grossi problemi. Quando accadrà potrai [chiedere aiuto sulla chat o nel forum, o segnalare il problema](/help) :)!
 
-Se ti piace YunoHost e vuoi vedere il progetto aggiornato e svilupatto, non esitare a lasciare un commento di ringraziamento e a [dare un contributo](https://liberpay.com/YunoHost) al progetto e a parlarne agli altri!
+Se ti piace YunoHost e vuoi vedere il progetto aggiornato e sviluppato, non esitare a lasciare un commento di ringraziamento e a [dare un contributo](https://liberpay.com/YunoHost) al progetto e a parlarne agli altri!
 
-Infine, poichè YunoHOst è un progetto di software libero, sei autorizzato e benvenuto a [contribuire](/contribute) al progetto, sia per quanto riguarda gli aspetti tecnici (per esempio il codice) e meno tecnici (come per esempio contribuire a questa documentazione ;))!
+Infine, poiché YunoHost è un progetto di software libero, sei autorizzato e benvenuto a [contribuire](/contribute) al progetto, sia per quanto riguarda gli aspetti tecnici (per esempio il codice) e meno tecnici (come per esempio contribuire a questa documentazione ;))!
