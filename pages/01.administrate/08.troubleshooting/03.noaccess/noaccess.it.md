@@ -47,11 +47,11 @@ Di default è possibile loggarsi via SSH solo come `admin`. È possibile loggars
 
 Se stai provando ad avviare i comandi `yunohost` dalla riga di comando come `admin` è necessario avviarlo preceduto dal comando `sudo` (ad esempio `sudo yunohost user list`). È possibile diventare `root` anche con il comando `sudo su`.
 
-#### You have been temporarily banned
+#### Sei stato bannato temporaneamente
 
-Your YunoHost server includes a service, Fail2ban, which automatically bans IPs that fail several times in a row to log in. In some cases it can be software (e.g. Nextcloud client) that are confifured with an old password, or a user who has the same IP as you have.
+Il tuo server YunoHost include il servizio Fail2Ban che banna automaticamente gli indirizzi IP che falliscono più volte di seguito. In alcuni casi possono essere programmi configurati con password vecchie (ad esempio client Nextcloud) oppure un utente che ha il tuo stesso IP.
 
-If you have been banned while trying to access a web page, and only web pages are unreachable, you may have access to your server via SSH. Similarly, if you have been banned from SSH, webadmin access may work.
+Se sei stato bannato provando ad accedere ad una pagina web sarà irraggiungibile solo questa e potrai collegarti al tuo server via SSH. Viceversa se sei stato bannati da SSH la pagina di amministrazione funzionerà.
 
 If you have been banned from both SSH and webadmin, you can try to reach your server through another IP address. For example through the cellular network of your phone, a VPN, Tor, or another proxy.
 
