@@ -61,12 +61,12 @@ See also : [unban an IP on Fail2Ban](/fail2ban)
 
 #### NGINX web server is broken
 
-Maybe the NGINX web server is out of order. You can check that [trough SSH](/ssh) with the command `yunohost service status ssh`. If it is failinf, check that its configuration is correct by running `nginx -t`. If it is indeed broken, it may be due to the installation or removal of a low-quality app... If you need support, [ask for it](/help).
+Maybe the NGINX web server is out of order. You can check that [trough SSH](/ssh) with the command `yunohost service status nginx`. If it is failing, check that its configuration is correct by running `nginx -t`. If it is indeed broken, it may be due to the installation or removal of a low-quality app... If you need support, [ask for it](/help).
 
 The NGINX or SSH servers may have been killed due to a lack of storage space, RAM, or swap.
 
 - Try restarting the service with `systemctl restart nginx`.
-- You can check used storage with `df -h`. If one of your partitions is full, you need to identify what fills it and make rooù. You can use `ncdu` command (install it with `apt install ncdu` to browse from the root directory: `ncdu /`
+- You can check used storage with `df -h`. If one of your partitions is full, you need to identify what fills it and make room. You can use `ncdu` command (install it with `apt install ncdu` to browse from the root directory: `ncdu /`
 - You can check RAM and swap usage with `free -h`. Depending on the result, it may be necessary to optimize your server to use less RAM (removal of heavy or unused apps...), add more RAM or add a swap file.
 
 #### Your server is reachable by IPv6, but not IPv4, or inversely

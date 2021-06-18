@@ -66,7 +66,7 @@ NB : le bannissement dure en général 10 à 12 minutes. Le bannissement n'est a
 
 #### Le serveur web NGINX est cassé
 
-Peut-être que le serveur web NGINX est en panne. Vous pouvez vérifier cela [en ssh](/ssh) avec `yunohost service status ssh`. Si il est en panne, vérifiez que la configuration ne comporte pas d'erreur avec `nginx -t`. Si la configuration est cassée, ceci est peut-être du à une l'installation ou désinstallation d'une application de mauvaise qualité... Si vous êtes perdu, [demandez de l'aide](/help).
+Peut-être que le serveur web NGINX est en panne. Vous pouvez vérifier cela [en ssh](/ssh) avec `yunohost service status nginx`. Si il est en panne, vérifiez que la configuration ne comporte pas d'erreur avec `nginx -t`. Si la configuration est cassée, ceci est peut-être du à une l'installation ou désinstallation d'une application de mauvaise qualité... Si vous êtes perdu, [demandez de l'aide](/help).
 
 Il se peut également que le serveur web (NGINX) ou le serveur ssh aient été tués suite à un manque d'espace disque ou de RAM / swap.
 - Tentez de relancer le service avec `systemctl restart nginx`.
