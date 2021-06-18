@@ -5,6 +5,8 @@ taxonomy:
     category: docs, apps
 routes:
   default: '/app_vaultwarden'
+  aliases:
+    - '/app_bitwarden'
 ---
 
 ![Bitwarden's logo](image://bitwarden_logo.png?width=80)
