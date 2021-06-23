@@ -120,7 +120,7 @@ If you are in "rescue" mode with `grub`, it may be due a misconfiguration of `gr
 
 In that case, access the storage drive from another system (your provider's "rescue" mode, live USB drive, read the SD or drive on another computer) and try to check partitions integrity with `smartctl`, `fsck`, and `mount`.
 
-If disks are corrupted or hard to _miunt_, you have to save your data and maybe reformat, reinstall, and/or change the drive. If you succeed in mounting the drive, you can use `systemd-nspawn` to access its database.
+If disks are corrupted or hard to mount, you have to save your data and maybe reformat, reinstall, and/or change the drive. If you succeed in mounting the drive, you can use `systemd-nspawn` to access its database.
 
 Otherwise, run `grub-update`, `grub-install` again with `chroot` or with `systemd-nspawn`.
 
