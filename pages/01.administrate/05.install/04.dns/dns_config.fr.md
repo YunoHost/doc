@@ -28,9 +28,19 @@ YunoHost fournit une configuration DNS recommandée, accessible via :
 - la webadmin, dans Domaines > votre.domain.tld > Configuration DNS ;
 - ou la ligne de commande, `yunohost domain dns-conf votre.domaine.tld`
 
+Cette configuration est générée à partir des paramètres d'un nom de domaine. Ceux-ci sont modifiables via la commande `yunohost domain setting set votre.domaine.tld cle valeur`
+Pour avoir la liste des paramètres actuels d'un nom de domain, vous pouvez utiliser la commande `yunohost domain info votre.domaine.tld`
+
+Voici la liste des clés et de leur signification:
+- mail: (True, False, Défaut : True) Activer le mail sur ce nom de domaine
+- xmpp: (True, False, Défaut : True) Activer le XMPP pour ce nom de domaine
+- dns_zone: (Chaîne de caractères) Nom du domaine de niveau supérieur ou égal qui est une zone DNS
+- ttl: (Nombre, Défaut: 3600) Taille du cache DNS
+
+
 Pour certains besoins ou installations particulières, et si vous savez ce que
 vous faites, il vous faudra peut-être modifier cette recommandation ou ajouter
-d'autres enregistrements (e.g. pour gérer des sous-domaines).
+d'autres enregistrements.
 
 La configuration recommandée ressemble typiquement à :
 
@@ -113,6 +123,23 @@ $ nslookup 111.222.333.444
 ```
 
 Le système de diagnostic présent dans l'interface d'administration fait cette vérification automatiquement (dans la section Email)
+
+## Uploader la configuration DNS automatiquement
+
+Il est possible de permettre à Yunohost d'envoyer votre configuration DNS chez votre registrar de manière automatique. 
+
+Pour ce faire, il faut donner à yunohost quelques informations qui dépendent du registrar. Ceci est possible à l'aide de la commande suivante :
+```
+root@ynh:~# yunohost domain registrar set {domain} {registrar}
+Enter value for 'auth_entrypoint':: 
+```
+
+Pour obtenir la liste des registrars disponibles, il est possible d'utiliser la commande `yunohost domain registrar catalog`. Ajouter l'options `-f` ou `--full` pour avoir également la liste des clés à entrer par registrar.
+Il faut ensuite donner les bonnes informations pour chaque paramètre de connexion à renseigner. Une documentation spécifique, au moins pour les plus grands registrars, est prévue pour vous aider à récupérer ces informations.
+
+Si tout s'est bien passé, la commande `yunohost domain registrar info votre.domaine.tld` vous retournera les informations que vous avez entrées. 
+
+Il suffit ensuite de lancer la commande `yunohost domain push_config votre.domaine.tld` pour envoyer la configuration chez le registrar.
 
 ### IP Dynamique
 
