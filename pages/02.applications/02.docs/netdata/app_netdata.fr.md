@@ -24,7 +24,7 @@ _netdata est **rapide** et **efficient**, conçu pour fonctionner en permanence 
 Nous n'autorisons pas les paquets YunoHost à apporter des modifications sensibles aux fichiers du système. Voici donc d'autres personnalisations que vous pouvez faire pour permettre une meilleure surveillance :
 
 * NGINX: 
-  * Requêtes et connexions : suivez [ces recommandations](https://github.com/firehol/netdata/tree/master/python.d#nginx) pour activer `/stab_status` (par exemple en mettant la section `location` dans `/etc/nginx/conf.d/yunohost_admin.conf`).
+  * Requêtes et connexions : suivez [ces recommandations](https://github.com/netdata/netdata/blob/master/docs/guides/step-by-step/step-06.md#example-enable-the-nginx-collector) pour activer `/stab_status` (par exemple en mettant la section `location` dans `/etc/nginx/conf.d/yunohost_admin.conf`).
   * Journaux web : vous pouvez surveiller tous vos journaux web (weblogs) NGINX pour détecter les erreurs ; suivez [ces recommandations](https://github.com/firehol/netdata/tree/master/python.d#nginx_log).
 * PHP-FPM : suivez [ces recommandations](https://github.com/firehol/netdata/tree/master/python.d#phpfpm).
 
