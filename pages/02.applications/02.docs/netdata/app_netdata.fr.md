@@ -26,7 +26,7 @@ Nous n'autorisons pas les paquets YunoHost à apporter des modifications sensibl
 * NGINX: 
   * Requêtes et connexions : suivez [ces recommandations](https://github.com/firehol/netdata/tree/master/python.d#nginx) pour activer `/stab_status` (par exemple en mettant la section `location` dans `/etc/nginx/conf.d/yunohost_admin.conf`).
   * Journaux web : vous pouvez surveiller tous vos journaux web (weblogs) NGINX pour détecter les erreurs ; suivez [ces recommandations](https://github.com/firehol/netdata/tree/master/python.d#nginx_log).
-* PHP-FPM : suivez [ces recommandations](https://github.com/firehol/netdata/tree/master/python.d#phpfpm).
+* PHP-FPM : suivez [ces recommandations](https://github.com/netdata/netdata/tree/master/collectors/python.d.plugin/phpfpm).
 
 ## Fonctionnalités
 
