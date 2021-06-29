@@ -9,7 +9,9 @@ routes:
 
 [div class="btn btn-lg btn-default"] [ Configuration générale box](/isp_box_config) [/div]
 
-Voici une liste non exhaustive des fournisseurs d’accès à Internet par pays, contenant les critères de tolérance à l’[auto-hébergement](/selfhosting).
+Voici une liste non exhaustive des fournisseurs d’accès à Internet pour quelques pays francophones, contenant les critères de tolérance à l’[auto-hébergement](/selfhosting).
+
+!!!! Pour une liste internationale un peu plus complète, référez-vous à [la version anglaise de cette page](/../en/isp).
 
 Un « **non** » peut entraîner des problèmes d’utilisation de votre serveur ou peut vous obliger à faire des configurations supplémentaires. Le statut entre parenthèses indique le comportement par défaut.
 

@@ -11,9 +11,9 @@ routes:
 
 Here is a non-comprehensive list of internet service providers by country, which contains criteria about tolerance to self-hosting.
 
-A "no" may cause problems for using your server or may require you to make additional configuration changes. Status in brackets indicates the default behavior.
+!!!! For a list of French-speaking countries ISP, check [the french version of this page](../fr/isp).
 
-(For the list of ISP in France/Belgian, check the french version of this page)
+A "no" may cause problems for using your server or may require you to make additional configuration changes. Status in brackets indicates the default behavior.
 
 ### USA
 | Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |

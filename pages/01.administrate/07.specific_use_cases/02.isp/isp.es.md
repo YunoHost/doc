@@ -11,6 +11,8 @@ routes:
 
 Aquí tienes una lista (no exhaustiva) de proveedores de acceso a Internet por país, con criterios de compatibilidad con el [self-hosting](/selfhosting).
 
+!!!! Una lista más completa de proveedores de acceso a Internet es disponible por [la versión en inglés de esta página](../en/isp).
+
 Un « **no** » puede implicar problemas de utilización del servidor o puede obligarte a hacer configuraciones adicionales. El estatus entre paréntesis indica el comportamiento por defecto.
 
 ### Francia
