@@ -30,11 +30,13 @@ routes:
 
 ## You've found a bug ?
 
-!!!! Please report bugs on our bugtracker or contact the developers
+!!!! Please report bugs on our bugtrackers or contact the developers
 
 [center]
 
-[[fa=exclamation-circle /] Report a bug](https://github.com/yunohost/issues/issues?target=_blank&classes=btn,btn-lg,btn-warning) [[fa=comment /] Contact the developers](https://kiwiirc.com/client/irc.freenode.net/yunohost-dev?target=_blank&classes=btn,btn-lg,btn-warning)
+[[fa=exclamation-circle /] Report a bug in YunoHost's core](https://github.com/yunohost/issues/issues?target=_blank&classes=btn,btn-lg,btn-warning)
+[[fa=exclamation-circle /] Report a bug in one of YunoHost's apps](https://github.com/YunoHost-Apps?target=_blank&classes=btn,btn-lg,btn-warning)
+[[fa=comment /] Contact the developers](https://kiwiirc.com/client/irc.freenode.net/yunohost-dev?target=_blank&classes=btn,btn-lg,btn-warning)
 
 [/center]
 
