@@ -27,14 +27,17 @@ La structure du dépôt est décrite ici:
 +-- config
    +-- site.yaml
    +-- system.yaml
+   +-- plugins
+       # Contient les fichiers de configuration des plugins.
+       # Attention, ne partagez pas d'information sensible ou des identifiants.
    +-- themes
        +-- yunohost-docs.yaml
           # Quelques paramètres pour le thème de la documentation
 +-- images
-   # Contains the images used in the documentation pages.
+   # Contient les images utilisées dans la documentation
 +-- pages
-   # The directory containing the documentation pages.
-   # The pages hierarchy is reflected by the directory hierarchy.
+   # Le dossier contenant les pages de la documentation
+   # La hiérarchie entre les pages est gouvernée par celle entre les dossiers.
    +-- 00.home
    +-- 01.administrate
    +-- 02.applications
@@ -90,7 +93,12 @@ markdown-notices
 presentation
 presentation-deckset
 shortcode-core
+smartypants
 ```
+
+!!! L'extension `smartypants` se charge de remplacer automatiquement les apostrophes `'` et guillemets `"`
+!!! par leurs équivalents typographiquement corrects, `’`, `“` et `”`.
+!!! Les guillemets « et » peuvent être obtenus ainsi : `<< et >>`. Notez les espaces.
 
 ## Pages spéciales
 
@@ -123,6 +131,7 @@ markdown-notices
 presentation
 presentation-deckset
 shortcode-core
+smartypants
 tntsearch
 ```
 3. Paramétrez l'extension Git Sync.

@@ -28,6 +28,9 @@ The structure of the repository is described below:
 +-- config
    +-- site.yaml
    +-- system.yaml
+   +-- plugins
+       # Contains configuration files for the plugins.
+       # Be careful, do NOT share sensitive information and credentials.
    +-- themes
        +-- yunohost-docs.yaml
           # Some settings for the documentation theme
@@ -91,7 +94,12 @@ markdown-notices
 presentation
 presentation-deckset
 shortcode-core
+smartypants
 ```
+
+!!! `smartypants` extension takes care of replacing apostrophes, single `'` and double `"` quotation marks
+!!! by their typographically correct relatives `’`, `“` and `”`.  
+!!! French quotation marks « and » can be obtained like this `<< and >>`. Note the spaces.
 
 ## Special pages
 
@@ -124,6 +132,7 @@ markdown-notices
 presentation
 presentation-deckset
 shortcode-core
+smartypants
 tntsearch
 ```
 3. Set-up Git Sync plugin.
