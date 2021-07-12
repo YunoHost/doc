@@ -100,7 +100,7 @@ N.B. : `fail2ban` will ban your IP for 10 minutes if you perform 5 failed login 
 
 A more extensive discussion about security & SSH can be found on the [dedicated page](/security).
 
-## Yunohost command line
+## YunoHost command line
 
 !!! Providing a full tutorial about the command line is quite beyond the scope of the YunoHost documentation : for this, consider reading a dedicated tutorial such as [this one](https://ryanstutorials.net/linuxtutorial/) or [this one](http://linuxcommand.org/). But be reassured that you don't need to be a CLI expert to start using it !
 

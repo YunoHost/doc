@@ -24,7 +24,7 @@ Se stai installando su un VPS allora il provider dovrebbe averti indicato il tuo
 Se stai installando su un computer casalingo (ad esempio un Raspberry Pi o un OLinuXino) devi individuare l'indirizzo IP che è stato attribuito al computer dopo averlo collegato al router. Questi sono alcuni sistemi:
 - avvia un terminale e dai il comando `sudo arp-scan --local` per elencare gli indirizzi IP sulla rete locale;
 - usa l'interfaccia del router per vedere la lista dei computer collegati o controllane i log;
-- collega un monitor al tuo server yunohost, fai login e digita `hostname --all-ip-address`.
+- collega un monitor al tuo server YunoHost, fai login e digita `hostname --all-ip-address`.
 
 #### Collegamento
 
@@ -98,7 +98,7 @@ N.B.: `fail2ban` bannerà il tuo IP per 10 minuti nel caso di almeno 5 tentativi
 
 Una discussione più approfondita relativa a sicurezza & SSH è su [questa pagina](/security).
 
-## Yunohost command line
+## YunoHost command line
 
 !!! Providing a full tutorial about the command line is quite beyond the scope of the YunoHost documentation : for this, consider reading a dedicated tutorial such as [this one](https://ryanstutorials.net/linuxtutorial/) or [this one](http://linuxcommand.org/). But be reassured that you don't need to be a CLI expert to start using it !
 

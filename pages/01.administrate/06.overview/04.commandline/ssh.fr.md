@@ -94,7 +94,7 @@ N.B. : `fail2ban` bannira votre IP pour 10 minutes si vous échouez plus de 5 fo
 
 Une discussion plus complète de la sécurité et de SSH peut être trouvée sur [la page dédiée](/security).
 
-## La ligne de commande Yunohost
+## La ligne de commande YunoHost
 
 !!! Fournir un tutoriel complet sur la ligne de commande est bien au-delà du cadre de la documentation de YunoHost : pour cela, référez-vous à des tutoriels comme [celui-ci](https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande) ou [celui-ci (en)](http://linuxcommand.org/). Mais soyez rassuré qu'il n'y a pas besoin d'être un expert pour commencer à l'utiliser !
 
