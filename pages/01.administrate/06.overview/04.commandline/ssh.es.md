@@ -84,7 +84,6 @@ yunohost user permission add ssh.main <username>
 Del mismo modo, es posible cancelar el acceso SSH de un usuario con el comando :
 ```bash
 yunohost user permission remove ssh.main <username>
-
 ```
 
 Finalmente, es posible añadir, suprimir y listar llaves SSH, para mejorar la seguridad del acceso SSH, con estos comandos :
