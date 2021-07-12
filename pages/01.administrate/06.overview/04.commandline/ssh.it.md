@@ -75,13 +75,13 @@ Di default solo l'utente `admin` può loggarsi al server SSH di YunoHost.
 Gli utenti creati dall'interfaccia di amministrazione sono gestiti dalla directory LDAP e di default non possono connettersi via SSH per ragioni di sicurezza. Se invece vuoi abilitare all'accesso SSH alcuni utenti usa il comando:
 
 ```bash
-yunohost user ssh allow <username>
+yunohost user permission add ssh.main <username>
 ```
 
 È sempre possibile eliminare l'accesso SSH con il comando:
 
 ```bash
-yunohost user ssh disallow <username>
+yunohost user permission remove ssh.main <username>
 ```
 
 Infine è possibile aggiungere, eliminare ed elencare le chiavi SSH, usate per migliorare la sicurezza degli accessi SSH con i comandi:
