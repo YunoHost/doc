@@ -69,16 +69,16 @@ ssh -p 2244 admin@votre.domaine.tld
 
 ## Quels utilisateurs ?
 
-Par défaut, seulement l'utilisateur `admin` peut se logger en SSH sur une instance YunoHost.
+Par défaut, seul l'utilisateur `admin` peut se logger en SSH sur une instance YunoHost.
 
 Les utilisateurs YunoHost créés via l'interface d'administration sont gérés par la base de donnée LDAP. Par défaut, ils ne peuvent pas se connecter en SSH pour des raisons de sécurité. Si vous avez absolument besoin qu'un utilisateur dispose d'un accès SSH, vous pouvez utiliser la commande :
 ```bash
-yunohost user ssh allow <username>
+yunohost user permission add ssh.main <username>
 ```
 
 De même, il est possible de supprimer l'accès SSH à un utilisateur avec la commande :
 ```bash
-yunohost user ssh disallow <username>
+yunohost user permission remove ssh.main <username>
 ```
 
 Enfin, il est possible d'ajouter, de supprimer et de lister des clés SSH, pour améliorer la sécurité de l'accès SSH, avec les commandes :
@@ -94,7 +94,7 @@ N.B. : `fail2ban` bannira votre IP pour 10 minutes si vous échouez plus de 5 fo
 
 Une discussion plus complète de la sécurité et de SSH peut être trouvée sur [la page dédiée](/security).
 
-## La ligne de commande Yunohost
+## La ligne de commande YunoHost
 
 !!! Fournir un tutoriel complet sur la ligne de commande est bien au-delà du cadre de la documentation de YunoHost : pour cela, référez-vous à des tutoriels comme [celui-ci](https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande) ou [celui-ci (en)](http://linuxcommand.org/). Mais soyez rassuré qu'il n'y a pas besoin d'être un expert pour commencer à l'utiliser !
 
