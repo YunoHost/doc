@@ -47,7 +47,7 @@ Les identifiants par défaut (avant la post-installation!) sont:
 - login: root
 - mot de passe: yunohost
 
-(Si vous utilisez une image Armbian brute plutôt que les images Yunohost pré-installées, les identifiants sont root / 1234)
+(Si vous utilisez une image Armbian brute plutôt que les images YunoHost pré-installées, les identifiants sont root / 1234)
 
 
 

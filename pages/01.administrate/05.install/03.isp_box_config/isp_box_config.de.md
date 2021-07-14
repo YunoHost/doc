@@ -26,7 +26,7 @@ Ihre Box/Router-Administrationsoberfläche ist in der Regel erreichbar über [ht
 
 Identifizieren Sie die lokale IP Ihres Servers, entweder :
 - von Ihrer Box/Router-Schnittstelle, die möglicherweise angeschlossene Geräte auflistet
-- über die Yunohost-Schnittstelle, Abschnitt "Internetkonnektivität", dann auf "Details" im IPv4-Bericht klicken.
+- über die YunoHost-Schnittstelle, Abschnitt "Internetkonnektivität", dann auf "Details" im IPv4-Bericht klicken.
 - von der Befehlszeile Ihres Servers aus, indem Sie `hostname -I` ausführen
 
 Eine lokale IP-Adresse sieht typischerweise so aus:`192.168.xx.yy`, oder `10.0.xx.yy`.

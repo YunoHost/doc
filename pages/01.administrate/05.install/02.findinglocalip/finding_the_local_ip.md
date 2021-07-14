@@ -47,7 +47,7 @@ The default credentials (before post-installation!) to log in are:
 - login: root
 - password: yunohost
 
-(If you are using a raw Armbian image instead of the pre-installed Yunohost image, the credentials are root / 1234)
+(If you are using a raw Armbian image instead of the pre-installed YunoHost image, the credentials are root / 1234)
 
 [/ui-tab]
 [/ui-tabs]
