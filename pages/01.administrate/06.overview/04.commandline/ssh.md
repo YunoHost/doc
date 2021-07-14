@@ -17,7 +17,26 @@ page-toc:
 
 The command line interface (CLI) is, in the computer world, the original (and more technical) way of interacting with a computer compared to graphical interface. Command line interfaces are generally said to be more complete, powerful or efficient than a graphical interface, though also more difficult to learn.
 
-## What address to use to connect to your server?
+## How to connect
+### Login credentials
+
+
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="Before running the initial configuration (post-installation)"]
+
+- If you are **installing at home**, the default credentials are login: `root` and password: `yunohost` (or `1234` if you flashed an armbian image)
+- If you are **installing a remote server (VPS)**, your provider should have communicated you the login and password (or allowed you to configure an SSH key)
+
+[/ui-tab]
+[ui-tab title="After"]
+
+During the postinstall, you've been asked to choose an administration password. This password becomes the new password for the `root` and `admin` users. Additionally, **the `root` SSH login becomes disabled after the postinstall and you should log in using the `admin` user !**. The only exception is that you may still be able to login using `root` *from the local network - or from a direct console on the server* (this is to cover the event where the LDAP server is broken and the `admin` user is unusable).
+
+!!! If you connected as `admin` and would like to become `root` for convenience (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su` or `sudo -i`.
+[/ui-tab]
+[/ui-tabs]
+
+### Address to use
 
 If you are **installing at home** (e.g. on a Raspberry Pi or OLinuXino or old computer):
    - you should be able to connect to your server using `yunohost.local`. 
@@ -30,19 +49,7 @@ If your server is a remote server (VPS), your provider should have communicated 
 In any cases, if you already configured a domain name pointing to the appropriate IP, it's much better to use `yourdomain.tld` instead of the IP address.
 
 
-## Login credentials
-
-#### BEFORE running the post-installation
-
-- If you are **installing at home**, the default credentials are login: `root` and password: `yunohost`
-- If you are **installing a remote server (VPS)**, your provider should have communicated you the login and password (or allowed you to configure an SSH key)
-
-#### AFTER running the post-installation
-
-During the postinstall, you've been asked to choose an administration password. This password becomes the new password for the `root` and `admin` users. Additionally, **the `root` SSH login becomes disabled after the postinstall and you should log in using the `admin` user !**. The only exception is that you may still be able to login using `root` *from the local network - or from a direct console on the server* (this is to cover the event where the LDAP server is broken and the `admin` user is unusable).
-
-
-## Connecting
+### Connecting
 
 The SSH command typically looks like: 
 
@@ -52,57 +59,69 @@ ssh root@11.22.33.44
 
 # or after the postinstall:
 ssh admin@11.22.33.44
-```
 
-Or using the domain name instead of the IP (more convenient): 
+# avec le nom de domaine plutôt que l'ip (plus pratique):
+ssh admin@votre.domaine.tld
 
-```bash
-ssh admin@your.domain.tld
-# or with the special .local domain:
+# using the domain name instead of the IP (more convenient)
 ssh admin@yunohost.local
+
+# if you changed the SSH port
+ssh -p 2244 admin@votre.domaine.tld
 ```
 
-If you changed the SSH port, you need to add `-p <portnumber>` to the command, e.g.:
-
-```bash
-ssh -p 2244 admin@your.domain.tld
-```
-
-!!! If you connected as `admin` and would like to become `root` for convenience (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su` or `sudo -i`.
+N.B. : `fail2ban` will ban your IP for 10 minutes if you perform 10 failed login attempts. If you need to unban the IP, have a look at the page about [Fail2Ban](/fail2ban)
 
 ## Which other users may connect to the server?
 
 By default, only the `admin` user can log in to YunoHost SSH server.
 
-YunoHost's users created via the administration interface are managed by the LDAP directory. By default, they can't connect via SSH for security reasons. If you want some users to have SSH access enabled, use the command:
+YunoHost's users created via the administration interface are managed by the LDAP directory. By default, they can't connect via SSH for security reasons. Via the permissions system it is possible to allow the connection in SFTP or if it is really necessary in SSH. 
 
-```bash
-yunohost user ssh allow <username>
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="From the web interface"]
+Go to `Users > Manage groups and permissions`.
+
+From here, you can add SFTP or SSH permissions to any user or group.
+
+If you want to add an SSH public key to the user, you have to do it from the command line, as the web interface does not yet offer this feature.
+[/ui-tab]
+[ui-tab title="From the command line"]
+To allow a user or group to access via SFTP or SSH:
+``bash
+# SFTP
+yunohost user permission add sftp <username>
+# SSH
+yunohost user permission add ssh <username>
 ```
 
-It is also possible to remove SSH access using the following:
-
+To remove permission:
 ```bash
-yunohost user ssh disallow <username>
+# SFTP
+yunohost user permission remove sftp <username>
+# SSH
+yunohost user permission remove ssh <username>
 ```
 
 Finally, it is possible to add, delete and list SSH keys, to improve SSH access security, using the commands:
-
-```bash
+``bash
 yunohost user ssh add-key <username> <key>
 yunohost user ssh remove-key <username> <key>
 yunohost user ssh list-keys <username>
 ```
+[/ui-tab]
+[/ui-tabs]
+
 
 ## Security and SSH
 
-N.B. : `fail2ban` will ban your IP for 10 minutes if you perform 5 failed login attempts. If you need to unban the IP, have a look at the page about [Fail2Ban](/fail2ban)
-
 A more extensive discussion about security & SSH can be found on the [dedicated page](/security).
 
-## Yunohost command line
+## The command line
 
 !!! Providing a full tutorial about the command line is quite beyond the scope of the YunoHost documentation : for this, consider reading a dedicated tutorial such as [this one](https://ryanstutorials.net/linuxtutorial/) or [this one](http://linuxcommand.org/). But be reassured that you don't need to be a CLI expert to start using it !
+
+### The `yunohost` command
 
 The `yunohost` command can be used to administer your server and perform the various actions similarly to what you do on the webadmin. The command must be launched either from the `root` user or from the `admin` user by preceeding them with `sudo`. (ProTip™ : you can become `root` with the command `sudo su` as `admin`).
 
@@ -124,3 +143,35 @@ yunohost user create --help
 ```
 
 will successively list all the categories available, then the actions available in the `user` category, then the usage of the action `user create`. You might notice that the YunoHost command tree is built with a structure similar to the YunoHost admin pages.
+
+### The `yunopaste` command
+This command allow you to share with an other person the output of a command.
+
+Example:
+```bash
+yunohost tools diagnosis | yunopaste
+```
+
+### The `ynh-vpnclient-loadcubefile.sh` command
+This command is only available if you have the `VPN Client` application installed. You can use it to load a new .cube in case you can't get to the VPN Client interface to do so. 
+
+```bash
+ynh-vpnclient-loadcubefile.sh -u <username> -p <password> -c <path>.cube
+```
+
+### Some useful commands
+
+If your administration web interface indicates that the API is unreachable, try starting `yunohost-api`:
+```bash
+systemctl start yunohost-api
+```
+
+If you can no longer connect with the user `admin` via SSH and via the web interface, the `slapd` service may be down, try restarting it:
+```bash
+systemctl restart slapd
+```
+
+If you have manually modified configurations and want to know the changes:
+```bash
+yunohost tools regen-conf --with-diff --dry-run
+```
