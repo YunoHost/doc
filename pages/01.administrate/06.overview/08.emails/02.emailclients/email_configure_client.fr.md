@@ -21,7 +21,10 @@ Voici les éléments que vous devrez entrer pour configurer manuellement votre c
 | SMTP      | 587  | STARTTLS    | Mot de passe normal | `nom_dutilisateur` (sans `@domain.tld`) |
 
 
-### ![](image://thunderbird.png?resize=50&classes=inline) Configurer Mozilla Thunderbird
+### Client by client
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="Mozilla Thunderbird"]
+##### ![](image://thunderbird.png?resize=50&classes=inline) Configurer Mozilla Thunderbird
 
 Pour configurer manuellement un nouveau compte dans Thunderbird commencez par remplir les informations de base (Nom, adresse et mot de passe), cliquez sur Continuer puis Configuration Manuelle. Enlevez le `.` avant le nom de domaine. Sélectionnez le port 993 avec SSL/TLS pour IMAP, et le port 587 avec STARTTLS pour SMTP. Sélectionnez 'Mot de passe normal' pour l'authentification. Testez la configuration puis validez. (Il vous faudra ensuite possiblement accepter des certificats pour que tout fonctionne correctement.)
 
@@ -30,7 +33,9 @@ Pour configurer manuellement un nouveau compte dans Thunderbird commencez par re
 
 * [Gérer les alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
 
-### ![](image://k9mail.png?resize=50&classes=inline) Configurer K-9 Mail (sur Android)
+[/ui-tab]
+[ui-tab title="K-9 Mail"]
+##### ![](image://k9mail.png?resize=50&classes=inline) Configurer K-9 Mail (sur Android)
 
 Suivez les instructions suivantes. (Comme pour Thunderbird, il vous faudra peut-être accepter des certificats à un moment)
 
@@ -39,7 +44,9 @@ Suivez les instructions suivantes. (Comme pour Thunderbird, il vous faudra peut-
 ![](image://k9mail_config_3.png?resize=280&classes=inline)
 ![](image://k9mail_config_4.png?resize=280&classes=inline)
 
-### ![](image://dekko-app.png?resize=50&classes=inline) Configure Dekko (on Ubuntu Touch)
+[/ui-tab]
+[ui-tab title="Dekko"]
+##### ![](image://dekko-app.png?resize=50&classes=inline) Configure Dekko (on Ubuntu Touch)
 
 La première fois, vous pouvez simplement choisir "Ajouter un compte". Si vous avez déjà un compte configuré, appuyez sur le menu hamburger puis sur le rouage, choisissez Courrier, Comptes et appuyez sur le symbole " + ".
 
@@ -49,3 +56,5 @@ Sélectionnez ensuite IMAP. Remplissez les champs et appuyez sur Suivant. Dekko 
 ![](image://dekko_config_2.png?resize=280&classes=inline)
 ![](image://dekko_config_3.png?resize=280&classes=inline)
 ![](image://dekko_config_4.png?resize=280&classes=inline)
+[/ui-tab]
+[/ui-tabs]
