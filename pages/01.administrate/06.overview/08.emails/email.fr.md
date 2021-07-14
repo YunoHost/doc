@@ -19,9 +19,7 @@ Pour valider que votre configuration est correcte :
 - si vous vous hébergez chez vous et n'utilisez pas de VPN, assurez-vous que [votre FAI ne bloque pas le port 25](/isp) ;
 - routez les ports selon [cette documentation](/isp_box_config) ;
 - configurez soigneusement les enregistrements DNS du courrier électronique selon [cette documentation](/dns_config) ;
-- Testez votre configuration en utilisant [Mail-tester.com](https://mail-tester.com) <small>(attention : seuls 3 tests par domaine et par jour sont autorisés)</small> ;
-
-Un score d'au moins 8~9/10 est un but raisonnable.
+- Testez votre configuration en utilisant les fonctionnalités de diagnostique (`Webadmin > Diagnostic > Email`). Vous pouvez également utiliser le service [mail-tester.com](https://mail-tester.com), un score d'au moins 8~9/10 est un but raisonnable <small>(attention : seuls 3 tests par domaine et par jour sont autorisés)</small> ;
 
 ## Clients de messagerie
 
@@ -45,8 +43,14 @@ Il est possible que les emails envoyés depuis votre instance YunoHost soient co
 Il est possible que l’adresse IP de votre serveur ait, autrefois, été utilisée pour envoyer du spam ou que ces services de mails considèrent votre serveur comme émetteur de spams.
 Pour s’assurer que l’adresse IP de votre serveur n’est pas dans ces listes et pour l’enlever dans le cas échéant suivez ce [lien](/blacklist_forms).
 
+## Migration des emails d'un fournisseur d'emails vers une instance de YunoHost
+
+Voir [cette page](/email_migration).
+
+## Configuration du relais SMTP
+
+Voir [cette page](/email_configure_relay).
 
 ## Pour aller plus loin
 
-- Il existe une page de documentation pour [migrer ses emails d'un fournisseur de messagerie vers une instance YunoHost](/email_migration).
-- Pour approfondir votre compréhension du courriel et de ses protocoles, voici une [conférence éclairante](https://www.octopuce.fr/conference-lemail-vaste-sujet-par-benjamin-sonntag/) (en français).
+Pour approfondir votre compréhension du courriel et de ses protocoles, voici une [conférence éclairante](https://www.octopuce.fr/conference-lemail-vaste-sujet-par-benjamin-sonntag/) (en français).

@@ -19,9 +19,7 @@ To validate your setup:
 - if you are self-hosting at home and not using a VPN, ensure [your ISP won't block port 25](/isp) ;
 - route ports according to [this documentation](/isp_box_config) ;
 - carefully configure mail DNS records according to [this documentation](/dns_config) ;
-- test your setup using [Mail-tester.com](https://mail-tester.com) <small>(be careful : only 3 tests per domain per day are allowed)</small> ;
-
-A score of at least 8~9/10 is a reasonnable goal.
+- test your configuration using the diagnostic features (`Webadmin > Diagnosis > Email`). You can also use [mail-tester.com](https://mail-tester.com), a score of at least 8~9/10 is a reasonnable goal <small>(be careful : only 3 tests per domain per day are allowed)</small> 
 
 ## Email clients
 
