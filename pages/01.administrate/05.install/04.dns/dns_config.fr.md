@@ -28,13 +28,13 @@ YunoHost fournit une configuration DNS recommandée, accessible via :
 - la webadmin, dans Domaines > votre.domain.tld > Configuration DNS ;
 - ou la ligne de commande, `yunohost domain dns-conf votre.domaine.tld`
 
-Cette configuration est générée à partir des paramètres d'un nom de domaine. Ceux-ci sont modifiables via la commande `yunohost domain setting set votre.domaine.tld cle valeur`
+Cette configuration est générée à partir des paramètres d'un nom de domaine. Ceux-ci sont modifiables via la commande `yunohost domain setting votre.domaine.tld cle -v valeur`
 Pour avoir la liste des paramètres actuels d'un nom de domain, vous pouvez utiliser la commande `yunohost domain info votre.domaine.tld`
 
 Voici la liste des clés et de leur signification:
 - mail: (True, False, Défaut : True) Activer le mail sur ce nom de domaine
 - xmpp: (True, False, Défaut : True) Activer le XMPP pour ce nom de domaine
-- dns_zone: (Chaîne de caractères) Nom du domaine de niveau supérieur ou égal qui est une zone DNS
+- dns_zone: (Chaîne de caractères) Nom du domaine de niveau supérieur ou égal qui est une zone DNS. Configuré automatiquement.
 - ttl: (Nombre, Défaut: 3600) Taille du cache DNS
 
 
@@ -42,7 +42,7 @@ Pour certains besoins ou installations particulières, et si vous savez ce que
 vous faites, il vous faudra peut-être modifier cette recommandation ou ajouter
 d'autres enregistrements.
 
-La configuration recommandée ressemble typiquement à :
+La configuration recommandée par défaut ressemble typiquement à :
 
 ```bash
 #
