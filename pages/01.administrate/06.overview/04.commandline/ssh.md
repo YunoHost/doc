@@ -78,6 +78,8 @@ By default, only the `admin` user can log in to YunoHost SSH server.
 
 YunoHost's users created via the administration interface are managed by the LDAP directory. By default, they can't connect via SSH for security reasons. Via the permissions system it is possible to allow the connection in SFTP or if it is really necessary in SSH. 
 
+! Be careful who you give SSH access to. This increases even more the attack surface available to a malicious user.
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
 Go to `Users > Manage groups and permissions`.
