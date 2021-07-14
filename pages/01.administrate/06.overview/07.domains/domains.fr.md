@@ -9,9 +9,11 @@ routes:
 
 YunoHost permet de gérer et de servir plusieurs domaines sur un même serveur. Vous pouvez donc héberger, par exemple, un blog et un Nextcloud sur un premier domaine `yolo.com`, et un client de messagerie web sur un second domaine `swag.nohost.me`. Chaque domaine est automatiquement configuré pour pouvoir gérer des services web, des courriels et une messagerie instantannée XMPP.
 
-Les domaines peuvent être gérés dans la section 'Domaine' de la webadmin, ou via la catégorie `yunohost domain` de la ligne de commande. Chaque fois que vous ajoutez un domaine, il est supposé que vous avez acheté (ou en tout cas que vous contrôliez) le domaine, de sorte que vous puissiez gérer la [configuration DNS](/dns_config) de celui-ci. Une exception concerne les [domaines en `.nohost.me`, `.noho.st` et `ynh.fr`](/dns_nohost_me) qui sont offerts par le Projet YunoHost, et peuvent être directement intégrés avec YunoHost grâce à une configuration dynDNS automatique. (Pour limiter les abus et les coûts, une instance ne peut avoir qu'un seul domaine offert à la fois).
+Les domaines peuvent être gérés dans la section 'Domaine' de la webadmin, ou via la catégorie `yunohost domain` de la ligne de commande.
 
-Le domaine choisi lors de la postinstall est défini comme le domaine principal du serveur : c'est là que le SSO et l'interface d'administration web seront disponibles. Le domaine principal peut être modifié ultérieurement via la webadmin dans Domaines > (le domaine) > Définir par défaut, ou avec la ligne de commande `yunohost tools maindomain`.
+Chaque fois que vous ajoutez un domaine, il est supposé que vous avez acheté (ou en tout cas que vous contrôlez) le domaine, de sorte que vous puissiez gérer la [configuration DNS](/dns_config) de celui-ci. Une exception concerne les [domaines en `.nohost.me`, `.noho.st` et `ynh.fr`](/dns_nohost_me) qui sont offerts par le Projet YunoHost, et peuvent être directement intégrés avec YunoHost grâce à une configuration dynDNS automatique. Pour limiter les abus et les coûts, une instance ne peut avoir qu'un seul domaine offert à la fois, toutefois vous pouvez ajouter autant de sous-domaine de celui-ci que vous le souhaitez. Par exemple, ci vous choisissez `example.ynh.fr` vous pourrez par la suite ajouter les domaines `video.example.ynh.fr` ou `www.example.ynh.fr` ou tout autre sous-domaine dont vous pourriez avoir l'utilité.
+
+Le domaine choisi lors de la configuration initiale (post-installation) est défini comme le domaine principal du serveur : c'est là que le SSO et l'interface d'administration web seront disponibles. Le domaine principal peut être modifié ultérieurement via la webadmin dans Domaines > (le domaine) > Définir par défaut, ou avec la ligne de commande `yunohost tools maindomain`.
 
 Enfin, il faut noter que, dans le contexte de YunoHost, il n'y a pas de hiérarchie entre les domaines qu'il connaît. Dans l'exemple précédent, on peut ajouter un troisième domaine `foo.yolo.com` - mais il serait considéré comme un domaine indépendant de `yolo.com`.
 
@@ -41,7 +43,7 @@ yolo.com
      ├─── /wiki  : DokuWiki (un wiki)
 ```
 
-Alternativement, on peut choisir d'installer chaque application (ou certaines) sur un domaine dédié. Cela peut sembler plus joli pour les utilisateurs finaux, mais est généralement considéré comme plus compliqué et moins efficace dans le contexte de YunoHost, car vous devez ajouter un nouveau domaine à chaque fois. Néanmoins, certaines applications peuvent avoir besoin d'un domaine entier qui leur est dédié, pour des raisons techniques.
+Alternativement, on peut choisir d'installer chaque application (ou certaines) sur un domaine dédié. Au delà de la question esthétique, utiliser des sous-domaines au lieu de sous-chemin permet de laisser la possibilité de déplacer un service sur un autre serveur plus facilement. Par ailleurs, certaines applications peuvent avoir besoin d'un domaine entier qui leur est dédié, pour des raisons techniques. L'inconvénient est que vous devez ajouter un nouveau domaine à chaque fois, et donc potentiellement configurer des enregistrements DNS supplémentaire, relancer le diagnostique et l'installation d'un nouveau certificat Let's Encrypt.
 
 Si toutes les applications de l'exemple précédent étaient installées sur un domaine séparé, cela donnerait quelque chose comme ceci :
 
@@ -51,3 +53,5 @@ cloud.yolo.com : Nextcloud (un service de cloud)
 rss.yolo.com   : TinyTiny RSS (un lecteur RSS)
 wiki.yolo.com  : DokuWiki (un wiki)
 ```
+
+!!! De nombreuses applications intégrent une fonctionnalité qui vous permet de changer l'URL de votre application. Ce choix entre sous-chemin et sous-domaine peut donc dans certains cas être réversible via une simple manipulation dans l'interface d'administration.

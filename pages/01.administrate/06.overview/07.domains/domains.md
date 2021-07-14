@@ -9,9 +9,11 @@ routes:
 
 YunoHost allows you to manage and serve several domains on the same server. For instance, you can host a blog and Nextcloud on a first domain `yolo.com`, and a web mail client on a second domain `swag.nohost.me`. Each domain is automatically configured to handle web services, mail services and XMPP services.
 
-Domains can be managed in the 'Domain' section of the webadmin, or through the `yunohost domain` category of the command line. Each time you add a domain, it is expected that you bought it (or own it) on a domain registrar, so you can manage the [DNS configuration](/dns_config). The exception is the [`.nohost.me`, `.noho.st` and `ynh.fr` domains](/dns_nohost_me) which are paid for by the YunoHost Project, and can be directly integrated with YunoHost thanks to an automated dynDNS setup. (To limit costs and abuses, each instance may only have one of these domains setup at any given time).
+Domains can be managed in the 'Domain' section of the webadmin, or through the `yunohost domain` category of the command line.
 
-The domain chosen during the postinstall is defined as the main domain of the server : this is where the SSO and the web admin interface will be available. The main domain can later be changed through the web admin in Domains > (the domain) > Set default, or with the command line `yunohost tools maindomain`.
+Each time you add a domain, it is expected that you bought it (or own it) on a domain registrar, so you can manage the [DNS configuration](/dns_config). The exception is the [`.nohost.me`, `.noho.st` and `ynh.fr` domains](/dns_nohost_me) which are paid for by the YunoHost Project, and can be directly integrated with YunoHost thanks to an automated dynDNS setup. To limit costs and abuses, each instance may only have one of these domains setup at any given time, however you can add as many sub-domains of it as you wish. For example, if you choose `example.noho.st` you can later add the domains `video.example.noho.st` or `www.example.ynh.noho.st` or any other sub-domain you may need.
+
+The domain chosen during the initial configuration (post-install) is defined as the main domain of the server : this is where the SSO and the web admin interface will be available. The main domain can later be changed through the web admin in Domains > (the domain) > Set default, or with the command line `yunohost tools maindomain`.
 
 Finally, take note that, in the context of YunoHost, there is no hierarchy between the domains it knows. In the previous example, you may add a third domain `foo.yolo.com` - but it would be considered as a domain independent of `yolo.com`.
 
@@ -41,7 +43,9 @@ yolo.com
      ├── /wiki  : DokuWiki (a wiki)
 ```
 
-Alternatively, you may choose to install each (or some) apps on a dedicated domain. This might look prettier for end users, but is generally considered more complicated and less efficient in the context of YunoHost, since you need to add a new domain each time. Nevertheless, some apps might need an entire domain dedicated to them, for technical reasons.
+Alternatively, you may choose to install each (or some) apps on a dedicated domain. Beyond the aesthetic, using sub-domains instead of sub-paths allows the possibility to move a service to another server more easily. Also, some applications may need an entire domain dedicated to them, for technical reasons. The disadvantage is that you have to add a new domain each time, and therefore potentially configure additional DNS records, restart the diagnostics and install a new Let's Encrypt certificate.
+
+This might look prettier for end users, but is generally considered more complicated and less efficient in the context of YunoHost, since you need to add a new domain each time. Nevertheless, some apps might need an entire domain dedicated to them, for technical reasons.
 
 If all apps from the previous example were installed on a separate domain, this would give something like this:
 
@@ -52,3 +56,4 @@ rss.yolo.com   : TinyTiny RSS (a RSS reader)
 wiki.yolo.com  : DokuWiki (a wiki)
 ```
 
+!!! Many applications integrate a functionality that allows you to change the URL of your application. This choice between subpath and subdomain can be reversed in some cases via a simple manipulation in the administration interface.
