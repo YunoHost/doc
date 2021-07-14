@@ -9,7 +9,7 @@ routes:
 
 Voici quelques conseils généraux à suivre lorsque vous rencontrez des problèmes avec votre serveur.
 
-## 0. Ne paniquez pas.
+## 0. Ne paniquez pas
 
 Restez calme. La plupart des problèmes sont moins grave que ce que les débutants pensent. Pour l'amour de Dieu <small>(ou de votre déité, animal, nourriture préférée)</small>, ne sautez pas à pieds joint dans la "spirate de réinstallation" en pensant que réinstaller à partir de zéro va magiquement résoudre vos problèmes. Réinstaller est une opération lourde et n'est pas une bonne stratégie sur le long-terme pour résoudre les problèmes. Vous finirez par vous lasser et n'apprendrez rien.
 
@@ -21,6 +21,6 @@ Cherchez dans [le forum](https://forum.yunohost.org) des fils de discussions qui
 
 Soit sur [le forum](https://forum.yunohost.org) ou bien le chat : c.f. [cette page](/help)
 
-!!! POUR L'AMOUR DE DIEU, PRIÈRE DE fournir du contexte ! Les bénévoles ne peuvent PAS vous aider si vous ne prenez pas *cinq* petites minutes pour décrire votre contexte : quel type de hardware, quelle version de Yunohost, qu'est-ce que vous essayez de faire, ce qui s'est passé, et **les journaux (logs) correspondants**.
+!!! POUR L'AMOUR DE DIEU, PRIÈRE DE fournir du contexte ! Les bénévoles ne peuvent PAS vous aider si vous ne prenez pas *cinq* petites minutes pour décrire votre contexte : quel type de hardware, quelle version de YunoHost, qu'est-ce que vous essayez de faire, ce qui s'est passé, et **les journaux (logs) correspondants**.
 
 

@@ -19,8 +19,8 @@ Search [the forum](https://forum.yunohost.org) for topics similar to the issue y
 
 ## 2. Ask for help
 
-Either on [the forum](https://forum.yunohost.org) or the chat : c.f. [this page](/help)
+Either on [the forum](https://forum.yunohost.org) or the chat: c.f. [this page](/help)
 
-!!! FOR THE LOVE OF GOD, PLEASE provide basic context ! Volunteers can NOT help you if you do not take *five* minutes to describe your context : which kind of hardware, which Yunohost version, what you are trying to do, what you tried, what happened and **the corresponding logs**.
+!!! FOR THE LOVE OF GOD, PLEASE provide basic context! Volunteers can NOT help you if you do not take *five* minutes to describe your context: which kind of hardware, which YunoHost version, what you are trying to do, what you tried, what happened and **the corresponding logs**.
 
 
