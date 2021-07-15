@@ -54,4 +54,4 @@ rss.yolo.com   : TinyTiny RSS (un lecteur RSS)
 wiki.yolo.com  : DokuWiki (un wiki)
 ```
 
-!!! De nombreuses applications intégrent une fonctionnalité qui vous permet de changer l'URL de votre application. Ce choix entre sous-chemin et sous-domaine peut donc dans certains cas être réversible via une simple manipulation dans l'interface d'administration.
+!!! De nombreuses applications intègrent une fonctionnalité qui vous permet de changer l'URL de votre application. Ce choix entre sous-chemin et sous-domaine peut donc dans certains cas être réversible via une simple manipulation dans l'interface d'administration.
