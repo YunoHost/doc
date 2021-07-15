@@ -47,7 +47,7 @@ Die Standard-Anmeldedaten (vor der Nachinstallation!) zum Einloggen sind:
 - login: root
 - password: yunohost
 
-(Wenn Sie ein rohes Armbian-Image anstelle des vorinstallierten Yunohost-Images verwenden, lauten die Anmeldedatenen root / 1234)
+(Wenn Sie ein rohes Armbian-Image anstelle des vorinstallierten YunoHost-Images verwenden, lauten die Anmeldedatenen root / 1234)
 
 [/ui-tab]
 [/ui-tabs]
