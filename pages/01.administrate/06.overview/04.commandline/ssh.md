@@ -90,7 +90,7 @@ If you want to add an SSH public key to the user, you have to do it from the com
 [/ui-tab]
 [ui-tab title="From the command line"]
 To allow a user or group to access via SFTP or SSH:
-``bash
+```bash
 # SFTP
 yunohost user permission add sftp <username>
 # SSH
@@ -106,7 +106,7 @@ yunohost user permission remove ssh <username>
 ```
 
 Finally, it is possible to add, delete and list SSH keys, to improve SSH access security, using the commands:
-``bash
+```bash
 yunohost user ssh add-key <username> <key>
 yunohost user ssh remove-key <username> <key>
 yunohost user ssh list-keys <username>
