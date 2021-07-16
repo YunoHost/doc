@@ -143,11 +143,6 @@ scp admin@your.domain.tld:/home/yunohost.backup/archives/<nom_d'archive>.tar.gz 
 
 ! N'oubliez pas de stocker votre sauvegarde dans un lieu différents de celui ou se trouve votre serveur.
 
-De façon similaire, vous pouvez téléverser une sauvegarde depuis une machine vers votre serveur avec :
-
-```bash
-scp /path/to/your/<nom_d'archive>.tar.gz admin@your.domain.tld:/home/yunohost.backup/archives/
-```
 
 ### Sauvegarder automatiquement via une app (méthode conseillée)
 
