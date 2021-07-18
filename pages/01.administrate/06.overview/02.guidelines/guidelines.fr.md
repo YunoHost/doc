@@ -1,5 +1,5 @@
 ---
-title: Conseil généraux
+title: Conseils généraux
 template: docs
 taxonomy:
     category: docs
