@@ -25,7 +25,7 @@ Si votre but est d'avoir un serveur de production :
 YunoHost est conçu pour fonctionner avec des cas d'utilisation généraux et simples. S'écarter de ces conditions rendra les choses plus difficiles et vous aurez besoin de connaissances techniques pour les faire fonctionner. Par exemple,
 - n'essayez pas d'exécuter YunoHost dans un contexte où vous ne pouvez pas avoir le contrôle des ports 80 et 443 (ou pas d'Internet du tout) ;
 - n'essayez pas d'héberger cinq serveurs derrière la même connexion Internet si vous n'êtes pas déjà un utilisateur avancé ;
-- ne tombez pas dans des caprices de nerd tels que vouloir remplacer NGINX par Apache (ou faire tourner les deux à la fois) ;
+- ne vous tourmentez pas à vouloir remplacer NGINX par Apache (ou faire tourner les deux à la fois) ;
 - n'essayez pas d'utiliser des certificats SSL personnalisés si vous n'en avez pas vraiment besoin ;
 - ...
 
@@ -35,7 +35,7 @@ Gardez les choses aussi simples que possible !
 
 Certaines personnes ont tendance à tomber dans la "spirale de la réinstallation" - où chaque fois que quelque chose casse dans le serveur et qu'il n'est pas évident de le réparer, ou parce que le serveur est devenu instable, l'administrateur finit par réinstaller le serveur entier à partir de zéro car cela semble une solution "facile" et rapide pour remettre les choses à plat.
 
-Ne faites pas ça. La réinstallation est une opération lourde et n'est pas une bonne stratégie à long terme pour résoudre les problèmes. Vous vous fatiguerez et n'apprendrez rien. Oubliez le rêve d'avoir un serveur "propre" : un serveur de la vraie vie finit toujours par être "sale". De plus, vous devez apprendre (progressivement) à résoudre les problèmes lorsque vous les rencontrez. [Demandez de l'aide](/help) en fournissant des détails sur les symptômes, ce que vous essayez de faire et de ce qu'il se passe, et corrigez les problèmes. Avec le temps, vous aurez un bien meilleur contrôle sur votre serveur plutôt que réinstaller aveuglément à chaque fois.
+Ne faites pas ça. La réinstallation est une opération lourde et n'est pas une bonne stratégie à long terme pour résoudre les problèmes. Vous vous fatiguerez et n'apprendrez rien. Oubliez le rêve d'avoir un serveur infaillible : un serveur utilisé quotidiennement finit toujours par être instable. De plus, vous devez apprendre (progressivement) à résoudre les problèmes lorsque vous les rencontrez. [Demandez de l'aide](/help) en fournissant des détails sur les symptômes, ce que vous essayez de faire et de ce qu'il se passe, et corrigez les problèmes. Avec le temps, vous aurez un bien meilleur contrôle sur votre serveur plutôt que réinstaller aveuglément à chaque fois.
 
 ## Faites des sauvegardes
 
