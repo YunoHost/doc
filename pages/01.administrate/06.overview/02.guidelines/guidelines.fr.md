@@ -33,7 +33,7 @@ Gardez les choses aussi simples que possible !
 
 ## Ne réinstallez pas tous les jours
 
-Certaines personnes ont tendance à tomber dans la "spirale de la réinstallation" - où chaque fois que quelque chose casse dans le serveur et qu'il n'est pas évident comment le réparer, ou parce que le serveur est devenu "sale", l'administrateur finit par réinstaller le serveur entier à partir de zéro car cela semble une solution "facile" et rapide pour remettre les choses à plat.
+Certaines personnes ont tendance à tomber dans la "spirale de la réinstallation" - où chaque fois que quelque chose casse dans le serveur et qu'il n'est pas évident de le réparer, ou parce que le serveur est devenu instable, l'administrateur finit par réinstaller le serveur entier à partir de zéro car cela semble une solution "facile" et rapide pour remettre les choses à plat.
 
 Ne faites pas ça. La réinstallation est une opération lourde et n'est pas une bonne stratégie à long terme pour résoudre les problèmes. Vous vous fatiguerez et n'apprendrez rien. Oubliez le rêve d'avoir un serveur "propre" : un serveur de la vraie vie finit toujours par être "sale". De plus, vous devez apprendre (progressivement) à résoudre les problèmes lorsque vous les rencontrez. [Demandez de l'aide](/help) en fournissant des détails sur les symptômes, ce que vous essayez de faire et de ce qu'il se passe, et corrigez les problèmes. Avec le temps, vous aurez un bien meilleur contrôle sur votre serveur plutôt que réinstaller aveuglément à chaque fois.
 
