@@ -315,6 +315,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Whoogle | A metasearch engine | [Upstream](https://github.com/benbusby/whoogle-search) |  |
 | [wildfly](https://wildfly.org) |  |  | [Package Draft](https://github.com/YunoHost-Apps/wildfly_ynh) |
 | Wisemapping | An online mind mapping editor | [Upstream](https://bitbucket.org/wisemapping/wisemapping-open-source) | [Package Draft](https://github.com/YunoHost-Apps/wisemapping_ynh) |
+| WorkAdventure | A web-based collaborative workspace for small to medium teams | [Upstream](https://github.com/thecodingmachine/workadventure) |  |
 | Xibo | A FLOSS digital signage solution | [Upstream](https://github.com/xibosignage) |  |
 | [Xonotic](https://xonotic.org) |  | [Upstream](https://gitlab.com/xonotic) |  |
 | yacy | Free and decentrelized search engine |  | [Package Draft](https://github.com/YunoHost-Apps/yacy_ynh) |
