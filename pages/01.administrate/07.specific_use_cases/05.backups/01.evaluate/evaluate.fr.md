@@ -31,10 +31,10 @@ Enfin, une bonne sauvegarde est une sauvegarde **restaurable dans des délais ac
 
 ## Quelques méthodes possibles
 
-* **[générer une archive et la télécharger manuellement (méthode par défaut de YunoHost)](/backup#sauvegarde-manuelle)**
-* **[sauvegarder automatiquement (méthode conseillée)](/backup#sauvegarde-automatique-ou-distante)**
-* **[générer une archive directement sur un autre disque](/external_storage)**
-* **[faire une image du disque ou un snapshot](/backup/clone_filesystem)**
+* [générer une archive et la télécharger manuellement (méthode par défaut de YunoHost)](/backup#sauvegarde-manuelle)
+* [sauvegarder automatiquement (méthode conseillée)](/backup#sauvegarde-automatique-ou-distante)
+* [générer une archive directement sur un autre disque](/external_storage)
+* [faire une image du disque ou un snapshot](/backup/clone_filesystem)
 * [sauvegarder les données utiles via une méthode personnalisée](/backup/custom_backup_methods) 
 
 ## Risques
