@@ -33,6 +33,4 @@ See [this dedicated page](/groups_and_permissions).
 
 ## SSH access
 
-Users can also be allowed to connect through SSH, and SSH keys can be added for this purpose. So far, this can only be configured via the command line. See `yunohost user ssh --help` for specific commands.
-
-! Be careful who you give SSH access to. This increases even more the attack surface available to a malicious user.
+See [this dedicated page](/ssh).
