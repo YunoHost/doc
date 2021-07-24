@@ -133,8 +133,6 @@ Depuis la ligne de commande, vous pouvez utiliser `yunohost backup restore <nom_
 [/ui-tab]
 [/ui-tabs]
 
-##### Contraintes
-
 Pour restaurer une application, le domaine sur laquelle elle est installée doit déjà être configuré (ou il vous faut restaurer en même temps la configuration correspondante). Aussi, il n'est pas possible de restaurer une application déjà installée... ce qui veut dire que pour restaurer une sauvegarde d'une app, il vous faut déjà la désinstaller.
 
 #### Téléverser une archive
@@ -159,119 +157,18 @@ scp /path/to/your/<nom_d'archive>.tar.gz admin@your.domain.tld:/home/yunohost.ba
 
 ## Sauvegarde automatique ou distante
 
-### Sauvegarder
 Il existe 3 applications YunoHost qui proposent d'étendre YunoHost avec une méthode de sauvegarde automatisées.
 
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="BorgBackup (conseillée)"]
-Cette application propose:
-* la sauvegarde des données sur un disque externe ou sur un dépot borg distant
-* la déduplication et la compression des fichiers ce qui permet de conserver de nombreuses copies antèrieures
-* le chiffrement des données, ce qui permet de pouvoir stocker chez un tiers
-
-Le paquet permet aussi de définir finement la fréquence et le type de données à sauvegarder et intégre un système d'alerte mail en cas de défaut de sauvegarde.
-
-Il existe des [fournisseurs de dépots borg distant](https://www.borgbackup.org/support/commercial.html), il est également possible de créer son propre dépot sur un autre YunoHost avec l'[application borgserver](https://github.com/YunoHost-Apps/borgserver_ynh).
-
-La future méthode de sauvegarde intégrée par défaut dans YunoHost sera basée sur ce logiciel.
-
-!!! Pour la mise en place, il faut d'abord installé l'[application borg](https://github.com/YunoHost-Apps/borg_ynh), puis éventuellement l'[application borgserver](https://github.com/YunoHost-Apps/borgserver_ynh).
-
-
-[/ui-tab]
-[ui-tab title="Restic"]
-Cette application propose:
-* la sauvegarde des données sur un stockage distant (support de différents types de stockage)
-* la déduplication et la compression des fichiers ce qui permet de conserver de nombreuses copies antèrieures
-* le chiffrement des données, ce qui permet de pouvoir stocker chez un tiers
-
-Le paquet permet aussi de définir finement la fréquence et le type de données à sauvegarder et intégre un système d'alerte mail en cas de défaut de sauvegarde.
-
-
-[/ui-tab]
-[ui-tab title="Archivist (rsync)"]
-
-Il existe aussi l'application Archivist qui se base sur rsync : [https://forum.yunohost.org/t/new-app-archivist/3747](https://forum.yunohost.org/t/new-app-archivist/3747)
-
-[/ui-tab]
-[/ui-tabs]
-
-### Tester
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="Archive borg"]
-Avec les apps borg un email est envoyé pour dire si la sauvegarde échoue ou si le repo distant n'a rien reçu. On peut toutefois analyser manuellement pour s'assurer que tout va bien de façon plus complète.
-
-```bash
-# Lister les fichiers
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg list "$(yunohost app setting $app repository)" | less
-
-# Lister les exports de base de données
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg list "$(yunohost app setting $app repository)" | grep "(db|dump)\.sql"
-
-# Lister les fichiers de l'archive
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg list "$(yunohost app setting $app repository)::ARCHIVE" | less
-
-# Voir les infos de l'archive
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg info "$(yunohost app setting $app repository)::ARCHIVE"
-
-# Vérifier l'intégrité des données
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg check "$(yunohost app setting $app repository)::ARCHIVE" --verify-data
-```
-[/ui-tab]
-[/ui-tabs]
-
-### Restaurer
-
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="BorgBackup (conseillée)"]
-Si on est dans le cas d'une migration ou d'une réinstallation, il faut réinstaller borg de la même façon. Si le repo est distant il faut changer la clé publique.
-
-Lister les archives disponibles
-```
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg list "$(yunohost app setting $app repository)"
-```
-
-Créer les archives tar (une archive par app et partie de système)
-```
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg export-tar "$(yunohost app setting $app repository)::ARCHIVE" /home/yunohost/archives/ARCHIVE.tar
-```
-
-Puis restaurer l'archive allégée de façon classique.
-[/ui-tab]
-[/ui-tabs]
-
-## Restaurer des grosses archives
-Si l'espace disponible est inférieur au poids de votre archive, des données décompréssées et des dépendances, vous devrez restaurer partie par partie, app par app.
-
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="Archive tar"]
-### Générer une archive par app, à partir d'une grosse archive
-
-TODO
-
-### Retirer les fichiers lourds d'une archive
-
-TODO
-
-[/ui-tab]
-[ui-tab title="Archive borg"]
-Si restaurer app par app ne suffit pas OU si une archive est trop grosse, il peut être judicieux de génerer une archive tar sans les "grosses" données d'une app comme si elle avait étét générée avec l'[option BACKUP_CORE_ONLY](#ne-pas-sauvegarder-les-grosses-quantites-de-donnees). Exemple avec nextcloud:
-```
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg export-tar -e apps/nextcloud/backup/home/yunohost.app "$(yunohost app setting $app repository)::ARCHIVE" /home/yunohost/archives/ARCHIVE.tar
-```
-
-Il faudra ensuite extraire ces données directement avec borg
-```
-cd /home/yunohost.app/
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg extract "$(yunohost app setting $app repository)::ARCHIVE" apps/nextcloud/backup/home/yunohost.app/
-mv apps/nextcloud/backup/home/yunohost.app/nextcloud ./
-rm -r apps
-```
-
-Puis restaurer de façon classique
-[/ui-tab]
-[/ui-tabs]
+ * [BorgBackup](/backup/borgbackup)
+ * [Restic](/backup/restic)
+ * [Archivist](/backup/archivist)
 
 ## Aller plus loin
 
+ * [Évaluer la qualité de sa sauvegarde](/backup/strategies)
+ * [Cloner son système de fichier](/backup/clone_filesystem)
+ * [Éviter une panne matérielle](/backup/avoid_hardware_failure)
+ * [Inclure/exclure des fichiers](/backup/include_exclude_files)
+ * [Méthodes personnalisées](/backup/custom_backup_methods)
+ * [Migrer ou fusionner des serveurs](/backup/migrate_or_merge_servers)
 
