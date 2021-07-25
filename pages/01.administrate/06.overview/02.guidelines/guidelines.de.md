@@ -51,4 +51,4 @@ Schließlich sollten Sie bedenken, dass YunoHost eine freie Software ist, die vo
 
 Allerdings, wenn Ihnen YunoHost gefällt und Sie möchten, dass das Projekt am Leben erhalten wird und weiter voranschreitet, hinterlassen Sie bitte eine Dankesnachricht und [spenden](https://liberapay.com/YunoHost) für das Projekt und erzählen Sie anderen davon!
 
-Und schließlich, da YunoHost ein Open-Source-Projekt ist, sind Sie herzlich eingeladen, zum Projekt [beizutragen](/contribute), sowohl zu technischen (d.h. Code) als auch zu weniger technischen Aspekten (wie z.B. das Mitwirken an dieser Dokumentation ;))!
+Und schließlich, da YunoHost ein Open-Source-Projekt ist, sind Sie herzlich eingeladen, zum Projekt [beizutragen](/contribute), sowohl zu technischen (d.h. Code) als auch zu weniger technischen Aspekten (wie z.B. das Mitwirken an dieser Dokumentation ;) )!
