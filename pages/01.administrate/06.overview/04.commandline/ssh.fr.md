@@ -90,7 +90,7 @@ yunohost user ssh list-keys <username>
 
 ## SSH et sécurité
 
-N.B. : `fail2ban` bannira votre IP pour 10 minutes si vous échouez plus de 5 fois à vous identifier. Pour débannir une IP, vous pouvez regarder la page sur [Fail2Ban](/fail2ban).
+N.B. : `fail2ban` bannira votre IP pour 10 minutes si vous échouez plus de 5 fois à vous identifier. Pour rétablir une IP, vous pouvez regarder la page sur [Fail2Ban](/fail2ban).
 
 Une discussion plus complète de la sécurité et de SSH peut être trouvée sur [la page dédiée](/security).
 
@@ -106,7 +106,7 @@ Les commandes YunoHost ont ce type de structure :
 yunohost app install wordpress --label Webmail
           ^    ^        ^             ^
           |    |        |             |
-   categorie  action  argument     options
+   catégorie  action  argument     options
 ```
 
 N'hésitez pas à naviguer et demander des informations à propos d'une catégorie ou action donnée via l'option `--help`. Par exemple, ces commandes :
