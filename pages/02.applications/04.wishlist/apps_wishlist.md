@@ -179,7 +179,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | ofbiz | Apache-OFBiz ERP |  | [Package Draft](https://github.com/nomakaFr/ofbiz_ynh) |
 | OhMyForm |  | [Upstream](https://github.com/ohmyform) |  |
 | Ombi |  | [Upstream](https://github.com/tidusjar/Ombi) |  |
-| [Omeka S](https://omeka.org/s/) |  | [Upstream](https://github.com/omeka/omeka-s) |  |
 | [OpenBazaar](https://openbazaar.org) |  | [Upstream](https://github.com/openbazaar) |  |
 | [OpenCart](https://www.opencart.com) |  | [Upstream](https://github.com/opencart/opencart) |  |
 | [OpenEats](https://open-eats.github.io/) |  | [Upstream](https://github.com/open-eats/OpenEats) |  |
