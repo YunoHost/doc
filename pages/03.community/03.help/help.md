@@ -18,8 +18,8 @@ routes:
 [/center]
 
 !!! **Note:** this room is available via
-!!! - Matrix (`#freenode_#yunohost:matrix.org` [using Element](https://riot.im/app/#/room/#yunohost:matrix.org?target=_blank))
-!!! - IRC (`#yunohost` on freenode, [using kiwiirc](https://kiwiirc.com/nextclient/?settings=7b72a0a81838360686798199ed53624f&target=blank))
+!!! - Matrix (`#yunohost:libera.chat` [using Element](https://riot.im/app/#/room/#yunohost:libera.chat?target=_blank))
+!!! - IRC (`#yunohost` on libera.chat, [using kiwiirc](https://web.libera.chat/#yunohost))
 !!! - XMPP (`support@conference.yunohost.org`)
 
 ## ... or ask on the forum !
@@ -36,7 +36,7 @@ routes:
 
 [[fa=exclamation-circle /] Report a bug in YunoHost's core](https://github.com/yunohost/issues/issues?target=_blank&classes=btn,btn-lg,btn-warning)
 [[fa=exclamation-circle /] Report a bug in one of YunoHost's apps](https://github.com/YunoHost-Apps?target=_blank&classes=btn,btn-lg,btn-warning)
-[[fa=comment /] Contact the developers](https://kiwiirc.com/client/irc.freenode.net/yunohost-dev?target=_blank&classes=btn,btn-lg,btn-warning)
+[[fa=comment /] Contact the developers](https://web.libera.chat/#yunohost-dev&classes=btn,btn-lg,btn-warning)
 
 [/center]
 
