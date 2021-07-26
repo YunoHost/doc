@@ -24,7 +24,7 @@ Vous pouvez utiliser le logiciel [AngryIP](https://angryip.org/download/) pour y
 - `10.0.0.0` -> `10.0.255.255`
 - `172.16.0.0` -> `172.31.255.255`
 
-!!! **Astuces**:
+!!! **Astuces** :
 !!! - vous pouvez ordonner par ping comme dans cette capture d'écran, pour voir plus facilement toutes les IP effectivement actives.
 !!! - votre serveur devrait être monté comme écoutant sur les ports 80 et 443
 !!! - en cas de doute, tapez directement dans votre navigateur `https://192.168.x.y` pour voir si c'est un YunoHost ou non.
@@ -43,9 +43,9 @@ Si la commande `arp-scan` vous affiche beaucoup de machines, vous pouvez vérifi
 [ui-tab title="With a screen"]
 Branchez un écran sur votre serveur, loggez-vous et tapez `hostname --all-ip-address`.
 
-Les identifiants par défaut (avant la post-installation!) sont:
-- login: root
-- mot de passe: yunohost
+Les identifiants par défaut (avant la post-installation!) sont :
+- login : root
+- mot de passe : yunohost
 
 (Si vous utilisez une image Armbian brute plutôt que les images YunoHost pré-installées, les identifiants sont root / 1234)
 
