@@ -28,7 +28,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [ArchiveBox](https://archivebox.io/) | Open source self-hosted web archiving |[Upstream](https://github.com/ArchiveBox/ArchiveBox)|  |
 | [askbot](https://askbot.com/) | Questions and answers |  | [Package Draft](https://github.com/zamentur/askbot_ynh) |
 | [Baserow](https://baserow.io/) | Open source no-code database tool and Airtable alternative. | [Upstream](https://gitlab.com/bramw/baserow) |  |
-| [BicBucStriim](https://projekte.textmulch.de/bicbucstriim/) | Manage an e-book collection |  | [Package Draft](https://github.com/YunoHost-Apps/bicbucstriim_ynh) |
 | [BigBlueButton](https://bigbluebutton.org) | Web conferencing system | [Upstream](https://github.com/bigbluebutton/bigbluebutton) |  |
 | [Bitmessage](https://bitmessage.org/) |  | [Upstream](https://github.com/Bitmessage/PyBitmessage) |  |
 | Blynk |  | [Upstream](https://github.com/blynkkk/blynk-library) |  |
