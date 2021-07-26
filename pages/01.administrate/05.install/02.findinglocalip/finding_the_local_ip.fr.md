@@ -27,7 +27,7 @@ Vous pouvez utiliser le logiciel [AngryIP](https://angryip.org/download/) pour y
 !!! **Astuces**:
 !!! - vous pouvez ordonner par ping comme dans cette capture d'écran, pour voir plus facilement toutes les IP effectivement actives.
 !!! - votre serveur devrait être monté comme écoutant sur les ports 80 et 443
-!!! - en cas de doute, tapez directement dans votre navigateur `https://192.168.x.y` pour voir si c'est un Yunohost ou non.
+!!! - en cas de doute, tapez directement dans votre navigateur `https://192.168.x.y` pour voir si c'est un YunoHost ou non.
 
 ![](image://angryip.png?class=inline)
 
