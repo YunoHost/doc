@@ -476,6 +476,8 @@ curl https://install.yunohost.org | bash
 
 !!! **Note for advanced users concerned with the `curl|bash` approach:** consider reading ["Is curl|bash insecure?"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) on Sandstom's blog, and possibly [this discussion on Hacker News](https://news.ycombinator.com/item?id=12766350&noprocess).
 
+!!! If `dialog` is not installed on your system, you will soon be shown an empty prompt which hangs. Exit the script with <kbd>Ctrl</kbd> + <kbd>C</kbd> and install it with `apt install dialog`.
+
 {% endif %}
 
 
