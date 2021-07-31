@@ -5,6 +5,8 @@ taxonomy:
     category: docs
 routes:
   default: '/email_configure_relay'
+  aliases: 
+    - '/smtp_relay'
 ---
 
 Si votre fournisseur internet bloque le port 25, ou si vous rencontrez un problème d’utilisation du serveur SMTP natif de YunoHost, vous pouvez configurer votre serveur YunoHost pour utiliser un relais SMTP.

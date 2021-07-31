@@ -5,6 +5,8 @@ taxonomy:
     category: docs
 routes:
   default: '/email_configure_relay'
+  aliases: 
+    - '/smtp_relay'
 ---
 
 If your ISP blocks port 25, if you can't set a reverseDNS on your server, or if you have any other troubles using the built-in SMTP server on YunoHost, you may want to setup your YunoHost server to use an SMTP relay.
