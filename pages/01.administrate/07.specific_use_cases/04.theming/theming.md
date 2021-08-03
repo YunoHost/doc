@@ -34,6 +34,8 @@ You may add themes created by other people by downloading and extracting the cor
 
 ! **Beware** that adding third-party themes from random strangers on the internet **is a security risk**. It is equivalent to running someone's else code on your machine, which can be used for malicious purpose such as stealing credentials!
 
+There are a handful of themes listed [on Github](https://github.com/yunohost-themes)
+
 ## Creating your own theme
 
 You can create your own theme by copying the existing theme of your choice. For instance starting from the light theme: 
@@ -49,6 +51,8 @@ Then, edit the files the CSS and JS files in `/usr/share/ssowat/portal/assets/th
 - `custom_portal.js` can be used to add custom JS code to be ran both on the user portal or when injecting the small YunoHost button / overlay.
 
 You can also add your own images and assets which can then be used by the CSS and JS files.
+
+!!! Share your custom theme with the community! https://github.com/yunohost-themes
 
 ### Example : customizing the logo
 
