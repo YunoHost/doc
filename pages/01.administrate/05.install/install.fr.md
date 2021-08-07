@@ -133,11 +133,11 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 {% if docker %}
 !! **YunoHost ne supporte plus officiellement Docker depuis les problèmes rencontrés avec la version 2.4+. En cause, YunoHost dépend désormais de systemd et Docker a décidé qu’il ne le supporterait pas nativement (et il y a d'autres problèmes liés au firewall et aux services).**
 !!
-!! **Nous vous décourageons fortement d'utiliser YunoHost sur docker avec ces images**
+!! **Nous vous décourageons fortement d'utiliser YunoHost sur docker avec ces images.**
 
 ## Images communautaires
 
-Cependant, ces images communautaires existent et sont disponibles sur Docker Hub:
+Cependant, ces images communautaires existent et sont disponibles sur Docker Hub :
 
   * [AMD64 (classic) (YunoHost 4.x)](https://hub.docker.com/r/domainelibre/yunohost/)
   * [I386 (old computers) (YunoHost 4.x)](https://hub.docker.com/r/domainelibre/yunohost-i386/)
@@ -156,7 +156,7 @@ Cependant, ces images communautaires existent et sont disponibles sur Docker Hub
 {% elseif rpi1 %}
 * Un Raspberry Pi 1 avec au moins 512Mo de RAM ;
 {% elseif rpi0 %}
-* Un Raspberry Pi zero ;
+* Un Raspberry Pi Zero ;
 {% elseif internetcube %}
 * Un Orange Pi PC+ ou une Olinuxino Lime 1 ou 2 ;
 * Un VPN avec une IP publique dédiée et un fichier `.cube` ;
@@ -165,15 +165,15 @@ Cependant, ces images communautaires existent et sont disponibles sur Docker Hub
 {% elseif arm_unsup %}
 * Une carte ARM avec au moins 512Mo de RAM ;
 {% elseif vps_debian %}
-* Un serveur dédié ou virtuel avec Debian 10 (Buster) pré-installé <small>(avec un **kernel >= 3.12**)</small>, 512Mo de RAM et 16Go de capacité de stockage (au moins) ;
+* Un serveur dédié ou virtuel avec Debian 10 (Buster) pré-installé <small>(avec un **kernel >= 3.12**)</small>, avec au moins 512Mo de RAM et 16Go de capacité de stockage ;
 {% elseif vps_ynh %}
-* Un serveur dédié ou virtuel avec YunoHost pré-installé, 512Mo de RAM et 16Go de capacité de stockage (au moins) ;
+* Un serveur dédié ou virtuel avec YunoHost pré-installé, avec au moins 512Mo de RAM et 16Go de capacité de stockage ;
 {% elseif virtualbox %}
-* Un ordinateur x86 avec [VirtualBox installé](https://www.virtualbox.org/wiki/Downloads) et assez de RAM disponible pour lancer une petite machine virtuelle avec 1024Mo de RAM et 8Go de capacité de stockage (au moins) ;
+* Un ordinateur x86 avec [VirtualBox installé](https://www.virtualbox.org/wiki/Downloads) et assez de RAM disponible pour lancer une petite machine virtuelle avec au moins 1024Mo de RAM et 8Go de capacité de stockage ;
 {% endif %}
 {% if arm %}
-* Une alimentation électrique (soit un adaptateur, soit un cable microUSB) pour alimenter la carte ;
-* Une carte microSD : 16Go de capacité (au moins), [classe « A1 »](https://fr.wikipedia.org/wiki/Carte_SD#Vitesse) hautement recommandée (comme par exemple [cette carte SanDisk A1](https://www.amazon.fr/SanDisk-microSDHC-Adaptateur-homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/)) ;
+* Une alimentation électrique (soit un adaptateur, soit un câble microUSB) pour alimenter la carte ;
+* Une carte microSD : au moins 16Go de capacité, [classe « A1 »](https://fr.wikipedia.org/wiki/Carte_SD#Vitesse) hautement recommandée (comme par exemple [cette carte SanDisk A1](https://www.amazon.fr/SanDisk-microSDHC-Adaptateur-homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/)) ;
 {% endif %}
 {% if regular %}
 * Une clé USB avec au moins 1Go de capacité OU un CD vierge standard ;
@@ -320,7 +320,7 @@ Branchez votre {% if arm %}carte microSD{% else %}clé USB{% endif %}, sélectio
 [/ui-tab]
 [ui-tab title="Avec dd"]
 
-Si vous êtes sur GNU/Linux / macOS et que vous êtes familier avec la ligne de commande, il est possible de flasher la clef USB ou carte SD avec dd. Vous pouvez identifier le nom du périphérique avec `fdisk -l` ou `lsblk`. Une carte SD s'appelle typiquement `/dev/mmcblk0`. ATTENTION à faire attention de prendre le bon nom !
+Si vous êtes sur GNU/Linux / macOS et que vous êtes familier avec la ligne de commande, il est possible de flasher la clé USB ou carte SD avec dd. Vous pouvez identifier le nom du périphérique avec `fdisk -l` ou `lsblk`. Une carte SD s'appelle typiquement `/dev/mmcblk0`. ATTENTION à bien prendre le bon nom !
 
 Ensuite lancez :
 
@@ -377,13 +377,13 @@ Allez dans **Réglages** > **Réseau** :
 {% if arm %}
 ## [fa=plug /] Démarrer la carte
 
-* Branchez le câble ethernet (un côté sur votre box, l'autre côté à votre carte).
+* Branchez le câble Ethernet (un côté sur votre box, l'autre côté à votre carte).
     * Pour les utilisateurs et utilisatrices souhaitant configurer la carte pour la connecter via le WiFi à la place, voir [cet exemple](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
 * Mettez la carte SD dans le serveur.
-* (Faculatif) Il est possible de brancher un écran et clavier sur votre serveur en cas de soucis ou pour vérifier que le processus de démarrage (boot) se passe bien ou encore pour avoir un accès direct en console.
+* (Facultatif) Il est possible de brancher un écran et un clavier sur votre serveur en cas de soucis, pour vérifier que le processus de démarrage (boot) se passe bien, ou encore pour avoir un accès direct en console.
 * Branchez l'alimentation.
 * Laissez quelques minutes à votre serveur pour s'autoconfigurer durant le premier démarrage.
-* Assurez-vous que votre ordinateur (de bureau ou portable) est connecté au même réseau local (c'est-à-dire la même box internet) que votre serveur.
+* Assurez-vous que votre ordinateur (de bureau ou portable) est connecté au même réseau local (c'est-à-dire la même box Internet) que votre serveur.
 
 {% elseif virtualbox %}
 ## [fa=plug /] Lancer la machine virtuelle
@@ -397,10 +397,10 @@ Démarrez votre machine virtuelle après avoir sélectionné l'image YunoHost.
 {% else %}
 ## [fa=plug /] Démarrer la machine sur la clé USB
 
-* Branchez le câble ethernet (un côté à votre box, de l'autre côté à votre carte).
+* Branchez le câble Ethernet (un côté à votre box, de l'autre côté à votre carte).
 * Démarrez votre serveur avec la clé USB ou le CD-ROM inséré, et sélectionnez-le comme **périphérique de démarrage (bootable device)** en pressant l’une des touches suivantes (dépendant de votre ordinateur) :
 `<ESC>`, `<F9>`, `<F10>`, `<F11>`, `<F12>` or `<DEL>`.
-    * N.B. : si le serveur était précédemment installé avec une version récente de Windows (8+), vous devez d'abord demander à Windows de « redémarrer réellement ». Vous pouvez le faire dans une oiption du menu « Options de démarrage avancées ».
+    * N.B. : si le serveur était précédemment installé avec une version récente de Windows (8+), vous devez d'abord demander à Windows de « redémarrer réellement ». Vous pouvez le faire dans une option du menu « Options de démarrage avancées ».
 {% endif %}
 
 {% if regular or virtualbox %}
@@ -408,7 +408,7 @@ Démarrez votre machine virtuelle après avoir sélectionné l'image YunoHost.
 
 !! N.B. : L'installation effacera totalement les données sur votre disque dur !
 
-Vous devriez voir un écran comme ça :
+Votre écran devrait ressembler à la capture ci-dessous :
 
 [figure class="nomargin" caption="Capture d'écran du menu de l'ISO"]
 ![](image://virtualbox_3.png?class=inline)
@@ -423,16 +423,16 @@ Vous devriez voir un écran comme ça :
 
 {% if rpi1 or rpi0 %}
 ## [fa=bug /] Se connecter à la carte et corriger l'image
-Les Raspberry Pi 1 et 0 ne sont pas totalement supportés à cause de [problèmes de compilation pour cette architecture](https://github.com/YunoHost/issues/issues/1423).
+Les Raspberry Pi 1 et Zero ne sont pas totalement supportés à cause de [problèmes de compilation pour cette architecture](https://github.com/YunoHost/issues/issues/1423).
 
 Cependant, il est possible de corriger l'image par vous-même avant de lancer la configuration initiale.
 
-Pour y parvenir, vous devez vous connectez à votre Raspberry Pi en tant que root [via SSH](/ssh) avec le mot de passe temporaire `yunohost`:
+Pour y parvenir, vous devez vous connecter à votre Raspberry Pi en tant que root [via SSH](/ssh) avec le mot de passe temporaire `yunohost`:
 ```
 ssh root@yunohost.local
 ```
 
-Ensuite, lancez les commandes suivantes pour contourner le dysfonctionnement de metronome :
+Ensuite, lancez les commandes suivantes pour contourner le dysfonctionnement de Metronome :
 ```
 mv /usr/bin/metronome{,.bkp}
 mv /usr/bin/metronomectl{,.bkp}
@@ -481,7 +481,7 @@ curl https://install.yunohost.org | bash
 
 ## [fa=cog /] Lancer la configuration initiale
 
-!!! Si vous êtes en train de restaurer une sauvegarde YunoHost, vous devez sauter cette étape et vous référer à la section [Restaurer durant la postinstallation à la place de cette étape de configuration initiale](/backup#restoring-during-the-postinstall).
+!!! Si vous êtes en train de restaurer une sauvegarde YunoHost, vous devez sauter cette étape et vous référer à la section [Restaurer durant la post-installation à la place de cette étape de configuration initiale](/backup#restoring-during-the-postinstall).
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="À partir de l'interface web"]
@@ -490,7 +490,7 @@ Dans un navigateur web, tapez dans la barre d'adresse **{% if internetcube %}`ht
 
 !!! Si ça ne fonctionne pas, vous devez [chercher l'adresse IP locale du serveur](/finding_the_local_ip). L'adresse ressemble typiquement à `192.168.x.y`, et vous devriez taper `https://192.168.x.y` dans la barre d'adresse du navigateur.
 {% else %}
-Vous pouvez lancer la configuration initiale à partir du navigateur en tapant l'**adresse IP publique de votre serveur**. Généralement, votre fournisseur de VPS vous indique l'IP dans un mail ou sur sa console de gestion.
+Vous pouvez lancer la configuration initiale à partir du navigateur en tapant l'**adresse IP publique de votre serveur**. Généralement, votre fournisseur de VPS vous indique l'IP dans un email ou sur sa console de gestion.
 {% endif %}
 
 ! Lors de la première visite, vous rencontrerez très probablement un avertissement de sécurité lié au certificat utilisé. Pour le moment, votre serveur utilise un certificat auto-signé. Vous pourrez plus tard ajouter un certificat automatiquement reconnu par les navigateurs comme décrit dans [la page sur les certificats](/certificate). En attendant, ajoutez une exception de sécurité pour accepter le certificat actuel. Toutefois, **s'il vous plaît**, ne prenez pas l'habitude d'accepter ce genre d'alerte de sécurité !
@@ -521,7 +521,7 @@ Vous pouvez aussi lancer la post-installation avec la commande `yunohost tools p
 
 C’est le nom de domaine qui permettra l’accès à votre serveur ainsi qu’au **portail d’authentification** des utilisateurs. Vous pourrez ensuite ajouter d'autres domaines, et changer celui qui sera le domaine principal si besoin.
 
-* Si l'auto-hébergement est tout neuf pour vous et que vous n'avez pas encore de nom de domaine, nous recommandons d'utiliser un domaine en **.nohost.me** / **.noho.st** / **.ynh.fr** (exemple : `homersimpson.nohost.me`). S'il n'est pas déjà utilisé, le domaine sera automatiquement rattaché à votre serveur YunoHost, et vous n’aurez pas d’étape de configuration supplémentaire. Toutefois, notez que l'utilisation d'un de ces noms de domaines implique que vous n'aurez pas le contôle complet sur votre configuration DNS.
+* Si l'auto-hébergement est tout neuf pour vous et que vous n'avez pas encore de nom de domaine, nous recommandons d'utiliser un domaine en **.nohost.me** / **.noho.st** / **.ynh.fr** (exemple : `homersimpson.nohost.me`). S'il n'est pas déjà utilisé, le domaine sera automatiquement rattaché à votre serveur YunoHost, et vous n’aurez pas d’étape de configuration supplémentaire. Toutefois, notez que l'utilisation d'un de ces noms de domaines implique que vous n'aurez pas le contrôle complet sur votre configuration DNS.
 
 * Si en revanche vous avez déjà votre propre nom de domaine, vous souhaitez probablement l'utiliser. Vous aurez donc besoin ensuite de configurer les enregistrements DNS comme expliqué [ici](/dns_config).
 
@@ -534,20 +534,20 @@ C’est le mot de passe qui vous permettra d’accéder à l’interface d’adm
 
 Une fois la configuration initiale faite, vous devriez être capable de vous connecter à l'interface d'administration web en utilisant le mot de passe d'administration.
 
-Bien que votre serveur dispose maintenant d'un utilisateur `admin`, cet utilisateur `admin` n'est pas un utilisateur "standard" et ne peut pas se connecter sur le [portail utilisateur](/users).
+Bien que votre serveur dispose maintenant d'un utilisateur `admin`, cet utilisateur `admin` n'est pas un utilisateur « standard » et ne peut pas se connecter sur le [portail utilisateur](/users).
 
 Par conséquent, vous devriez ajouter un premier utilisateur « standard ».
 
 !!! Le premier utilisateur que vous créez est un peu spécial : il recevra les emails envoyés à `root@votredomaine.tld` et `admin@votredomaine.tld`. Ces emails peuvent être utilisés pour envoyer des informations ou des alertes techniques.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="A partir de l'interface web"]
+[ui-tab title="À partir de l'interface web"]
 
-Allez dans `Users > Add`
+Allez dans `Utilisateurs > Nouvel utilisateur`.
 
 TODO: add a screenshot
 [/ui-tab]
-[ui-tab title="A partir de la ligne de commande"]
+[ui-tab title="À partir de la ligne de commande"]
 ```
 yunohost user create johndoe
 ```
@@ -563,7 +563,7 @@ Le système de diagnostic est conçu pour fournir un moyen facile de valider que
 
 !!! N.B. : **ne partez pas en courant** ! La première fois que vous lancerez le diagnostic, il est assez normal d'avoir plusieurs alertes rouges ou jaunes car vous devez généralement [configurer les enregistrements DNS](/dns_config) (si vous n'utilisez pas un domaine `.nohost.me`, `.noho.st` ou `.ynh.fr`), ajouter un fichier de swap {%if at_home %} et/ou [configurer la redirection des ports](/isp_box_config){% endif %}.
 
-!!! Si une alerte n'est pas pertinente (par exemple parce que vous ne pensez pas utiliser une fonctionnalité spécifique), il est tout à fait convenable d'indiquer le dysfonctionnement comme « À ignorer » en allant dans l'administration web > Diagnostic, et en cliquant sur bouton « Ignorer » pour ce dysfonctionnement spécifique.
+!!! Si une alerte n'est pas pertinente (par exemple parce que vous ne pensez pas utiliser une fonctionnalité spécifique), il est tout à fait convenable d'indiquer le dysfonctionnement comme « À ignorer » en allant dans l'administration web > Diagnostic, et en cliquant sur le bouton « Ignorer » pour ce dysfonctionnement spécifique.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommandé) A partir de l'interface web"]
@@ -574,7 +574,7 @@ Pour lancer le diagnostic, allez dans l'Administration Web dans la partie Diagno
 [/figure]
 
 [/ui-tab]
-[ui-tab title="A partir de la ligne de commande"]
+[ui-tab title="À partir de la ligne de commande"]
 ```
 yunohost diagnosis run
 yunohost diagnosis show --issues --human-readable
@@ -589,14 +589,14 @@ Une fois que vous avez configuré, si nécessaire, les enregistrements DNS et la
 Pour plus d'instructions détaillées, ou pour en savoir plus à propos des certificats SSL/TLS, voir [la page correspondante ici](/certificate).
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="A partir de l'interface web"]
+[ui-tab title="À partir de l'interface web"]
 
 [figure class="nomargin" caption="Capture d'écran du panneau pour installer un certificat Let's Encrypt"]
 ![](image://certificate-before-LE.png?resize=100%&class=inline)
 [/figure]
 
 [/ui-tab]
-[ui-tab title="A partir de la ligne de commande"]
+[ui-tab title="À partir de la ligne de commande"]
 ```
 yunohost domain cert-install
 ```
@@ -606,6 +606,6 @@ yunohost domain cert-install
 
 ## ![](image://tada.png?resize=32&classes=inline) Félicitations !
 
-Vous avez maintenant un serveur plutôt bien configuré. Si vous découvrez YunoHost, nous vous recommandons de jeter un oeil à [la visite guidée](/overview). Vous devriez aussi être en mesure d'[installer  vos applications favorites](/apps). N'oubliez pas de [prévoir des sauvegardes](/backup) !
+Vous avez maintenant un serveur plutôt bien configuré. Si vous découvrez YunoHost, nous vous recommandons de jeter un œil à [la visite guidée](/overview). Vous devriez aussi être en mesure d'[installer vos applications favorites](/apps). N'oubliez pas de [prévoir des sauvegardes](/backup) !
 
 {% endif %}
