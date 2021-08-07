@@ -36,6 +36,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | BookWyrm | Social reading and reviewing, decentralized with ActivityPub | [Upstream](https://github.com/mouse-reeve/bookwyrm) |  |
 | BTCPay Server |  | [Upstream](https://github.com/btcpayserver/btcpayserver) |  |
 | [Cagette](https://www.cagette.net/) | A marketplace for local farmers and producers | [Upstream](https://github.com/CagetteNet/cagette) | |
+| [Calendso](https://calendso.com/) | Volunteer shift management and meeting scheduling | [Upstream](https://github.com/calendso) | |
 | [Caliopen](https://www.caliopen.org) | A unified inteface for all your private communications |  | [Package Draft](https://github.com/YunoHost-Apps/caliopen_ynh) |
 | [cgit](https://git.zx2c4.com/cgit/about) |  |  |  |
 | [CheckUp](https://sourcegraph.github.io/checkup) |  | [Upstream](https://github.com/sourcegraph/checkup) |  |
