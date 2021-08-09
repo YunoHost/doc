@@ -64,6 +64,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [DomainMOD](https://domainmod.org) | Domain portfolio management application | | |
 | Draw.io | Online diagram creation | [Upstream](https://github.com/jgraph/drawio) |  |
 | Dynette | Dynette is a dyndns server | [Upstream](https://github.com/YunoHost/dynette) | [Package Draft](https://github.com/YunoHost-Apps/dynette_ynh) |
+| DrakonHub | Online editor for Drakon diagrams | [Upstream](https://github.com/stepan-mitkin/drakonhub) | |
 | [EasyAppointments](https://easyappointments.org/) | Online appointment booker |  |  |
 | [eLabFTW](https://www.elabftw.net/) | Electronic lab notebook | [Upstream](https://github.com/elabftw/elabftw) |  |
 | Emoncms |  | [Upstream](https://github.com/emoncms/emoncms) |  |
