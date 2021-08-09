@@ -346,3 +346,4 @@ You can [contribute to this list by adding something you'd like to be packaged](
 - [List of awesome sysadmin apps](https://github.com/kahun/awesome-sysadmin)
 - [List of awesome Node.js projects](https://github.com/sqreen/awesome-nodejs-projects)
 - [List of SIP softwares/applications](https://en.wikipedia.org/wiki/List_of_SIP_software#Free_and_open-source_license)
+- [Awesomeopensource.com](https://awesomeopensource.com) : topic-based list of open source projects sorted by github-stars
