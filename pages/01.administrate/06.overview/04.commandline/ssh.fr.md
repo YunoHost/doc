@@ -15,7 +15,7 @@ page-toc:
 
 **SSH** est un acronyme pour Secure Shell, et désigne un protocole qui permet de contrôler et administrer à distance une machine via la ligne de commande (CLI). C'est aussi une commande disponible de base dans les terminaux de GNU/Linux et macOS. Sous Windows, il vous faudra utiliser le logiciel [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (après l'avoir lancé, cliquer sur Session puis SSH).
 
-L'interface en ligne de commande (CLI) est, en informatique, la manière originale (et plus technique) d'interagir avec un ordinateur comparé aux interfaces graphiques. La ligne de commande est généralement considérée comme plus complète, puissante et efficace que les interfaces graphiques, bien que plus difficile à apprendre.
+L'interface en ligne de commande (CLI) est, en informatique, la manière originale (et plus technique) d'interagir avec un ordinateur, comparée aux interfaces graphiques. La ligne de commande est généralement considérée comme plus complète, puissante et efficace que les interfaces graphiques, bien que plus difficile à apprendre.
 
 ## Comment se connecter ?
 ### Identifiant à utiliser
@@ -23,13 +23,13 @@ L'interface en ligne de commande (CLI) est, en informatique, la manière origina
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Avant la configuration initiale (post-installation)"]
 
-- Si vous faites une **installation à la maison**, les identifiants par défaut sont login:  `root`, mot de passe: `yunohost` (ou `1234` si vous partez d'une image armbian)
-- Si vous faites une **installation sur un serveur distant (VPS)**, votre fournisseur devrait vous avoir communiqué le login et mot de passe (ou vous proposer de configurer une clef SSH)
+- Si vous faites une **installation à la maison**, les identifiants par défaut sont login: `root`, mot de passe: `yunohost` (ou `1234` si vous partez d'une image armbian).
+- Si vous faites une **installation sur un serveur distant (VPS)**, votre fournisseur devrait vous avoir communiqué le login et le mot de passe (ou vous proposer de configurer une clé SSH).
 
 [/ui-tab]
 [ui-tab title="Après"]
 
-Durant la postinstallation, vous avez défini un mot de passe d'administration. C'est ce mot de passe qui devient le nouveau mot de passe pour les utilisateurs `root` et `admin`. De plus, **la connexion en SSH avec l'utilisateur `root` est désactivée et il vous faut utiliser l'utilisateur `admin` !**. L'exception à cette règle est qu'il reste possible de se logger en root *depuis le réseau local - ou depuis une console en direct sur la machine* (ce qui peut être utile dans l'éventualité ou le serveur LDAP est inactif et l'utilisateur admin ne fonctionne plus).
+Durant la post-installation, vous avez défini un mot de passe d'administration. C'est ce mot de passe qui devient le nouveau mot de passe pour les utilisateurs `root` et `admin`. De plus, **la connexion en SSH avec l'utilisateur `root` est désactivée et il vous faut utiliser l'utilisateur `admin` !**. L'exception à cette règle est qu'il reste possible de se logger en root *depuis le réseau local - ou depuis une console en direct sur la machine* (ce qui peut être utile dans l'éventualité où le serveur LDAP est inactif et l'utilisateur admin ne fonctionne plus).
 
 !!! Si vous êtes connecté en tant qu'`admin` et souhaitez devenir `root` pour plus de confort (par exemple, ne pas avoir à taper `sudo` à chaque commande), vous pouvez devenir `root` en tapant `sudo su` ou `sudo -i`.
 [/ui-tab]
@@ -40,7 +40,7 @@ Durant la postinstallation, vous avez défini un mot de passe d'administration. 
 Si vous hébergez votre serveur **à la maison** (par ex. Raspberry Pi ou OLinuXino ou vieil ordinateur)
    - vous devriez pouvoir vous connecter à la machine en utilisant `yunohost.local`. 
    - si `yunohost.local` ne fonctionne pas, il vous faut [trouver l'IP locale de votre serveur](/finding_the_local_ip).
-   - si vous avez installé votre serveur à la maison mais essayez d'y accéder depuis l'extérieur du réseau local, assurez-vous d'avoir bien configuré une redirection de port pour le port 22
+   - si vous avez installé votre serveur à la maison mais essayez d'y accéder depuis l'extérieur du réseau local, assurez-vous d'avoir bien configuré une redirection de port pour le port 22.
 
 S'il s'agit d'une machine distante (VPS), votre fournisseur devrait vous avoir communiqué l'IP de votre machine.
 
@@ -57,7 +57,7 @@ ssh root@11.22.33.44
 # après la postinstall:
 ssh admin@11.22.33.44
 
-# avec le nom de domaine plutôt que l'ip (plus pratique):
+# avec le nom de domaine plutôt que l'IP (plus pratique):
 ssh admin@votre.domaine.tld
 
 # avec le nom de domaine spécial yunohost.local:
@@ -67,13 +67,13 @@ ssh admin@yunohost.local
 ssh -p 2244 admin@votre.domaine.tld
 ```
 
-!!! `fail2ban` bannira votre IP pour 10 minutes si vous échouez plus de 10 fois à vous identifier. Pour débannir une IP, vous pouvez regarder la page sur [Fail2Ban](/fail2ban).
+!!! `fail2ban` bannira votre IP pendant 10 minutes si vous échouez plus de 10 fois à vous identifier. Pour débannir une IP, vous pouvez regarder la page sur [Fail2Ban](/fail2ban).
 
 ## Autoriser un utilisateur YunoHost standard
 
 Par défaut, seul l'utilisateur `admin` peut se logger en SSH sur une instance YunoHost.
 
-Les utilisateurs YunoHost créés via l'interface d'administration sont gérés par la base de donnée LDAP. Par défaut, ils ne peuvent pas se connecter en SSH pour des raisons de sécurité. Via le système des permissions il est possible d'autoriser la connexion en SFTP ou si c'est vraiment nécessaire en SSH.
+Les utilisateurs YunoHost créés via l'interface d'administration sont gérés par la base de données LDAP. Par défaut, ils ne peuvent pas se connecter en SSH pour des raisons de sécurité. Via le système des permissions il est possible d'autoriser la connexion en SFTP ou si c'est vraiment nécessaire en SSH.
 
 ! Faites attention à qui vous donnez accès à SSH. Cela augmente encore plus la surface d'attaque disponible pour un utilisateur malveillant.
 
@@ -86,7 +86,7 @@ A partir de là, il est possible d'ajouter les permissions SFTP ou SSH à un uti
 Si vous souhaitez ajouter une clé publique SSH à l'utilisateur, vous devez le faire en ligne de commande, l'interface web ne proposant pas encore cette fonctionnalité.
 [/ui-tab]
 [ui-tab title="A partir de la ligne de commande"]
-Pour autoriser un utilisateur ou un groupe à accéder en SFTP ou en SSH:
+Pour autoriser un utilisateur ou un groupe à accéder en SFTP ou en SSH :
 ```bash
 # SFTP
 yunohost user permission add sftp <username>
@@ -94,7 +94,7 @@ yunohost user permission add sftp <username>
 yunohost user permission add ssh <username>
 ```
 
-Pour enlever la permission:
+Pour enlever la permission :
 ```bash
 # SFTP
 yunohost user permission remove sftp <username>
@@ -113,11 +113,11 @@ yunohost user ssh list-keys <username>
 
 ## SSH et sécurité
 
-Une discussion plus complète de la sécurité et de SSH peut être trouvée sur [la page dédiée](/security).
+Une discussion plus complète sur la sécurité de SSH peut être trouvée sur [la page dédiée](/security).
 
 ## La ligne de commande
 
-!!! Fournir un tutoriel complet sur la ligne de commande est bien au-delà du cadre de la documentation de YunoHost : pour cela, référez-vous à des tutoriels comme [celui-ci](https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande) ou [celui-ci (en)](http://linuxcommand.org/). Mais soyez rassuré qu'il n'y a pas besoin d'être un expert pour commencer à l'utiliser !
+!!! Fournir un tutoriel complet sur la ligne de commande est bien au-delà du cadre de la documentation de YunoHost : pour cela, référez-vous à des tutoriels comme [celui-ci](https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande) ou [celui-ci (en)](http://linuxcommand.org/). Mais soyez rassuré, il n'y a pas besoin d'être un expert pour commencer à l'utiliser !
 
 ### La commande `yunohost`
 
@@ -129,7 +129,7 @@ Les commandes YunoHost ont ce type de structure :
 yunohost app install wordpress --label Webmail
           ^    ^        ^             ^
           |    |        |             |
-   categorie  action  argument     options
+   catégorie  action  argument     options
 ```
 
 N'hésitez pas à naviguer et demander des informations à propos d'une catégorie ou action donnée via l'option `--help`. Par exemple, ces commandes :
@@ -159,17 +159,17 @@ ynh-vpnclient-loadcubefile.sh -u <username> -p <password> -c <path>.cube
 
 ### Quelques commandes utiles
 
-Si votre interface web d'administration indique que l'API est injoignable, essayez de démarrer `yunohost-api`:
+Si votre interface web d'administration indique que l'API est injoignable, essayez de démarrer `yunohost-api` :
 ```bash
 systemctl start yunohost-api
 ```
 
-Si vous ne parvenez plus à vous connecter avec l'utilisateur `admin` via SSH et via l'interface web, le service `slapd` est peut être éteint, essayez de le redémarrer :
+Si vous ne parvenez plus à vous connecter avec l'utilisateur `admin` via SSH et via l'interface web, le service `slapd` est peut-être éteint, essayez de le redémarrer :
 ```bash
 systemctl restart slapd
 ```
 
-Si vous avez des configurations modifiées manuellement et souhaitez connaitre les modifications :
+Si vous avez des configurations modifiées manuellement et souhaitez connaître les modifications :
 ```bash
 yunohost tools regen-conf --with-diff --dry-run
 ```

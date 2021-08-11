@@ -25,7 +25,7 @@ Certaines applications ont besoin de vous communiquer des instructions, des URL 
 
 Des tests automatisés sont exécutés régulièrement pour tester l'intégration et la qualité de toutes les applications qui ont été déclarées "working" par leur packageurs. Le résultat est un niveau entre 0 et 8, dont la signification est détaillée sur [cette page](/packaging_apps_levels). Certains résultats de tests peuvent également être disponibles sur [ce tableau de bord](https://dash.yunohost.org/appci/branch/stable).
 
-Par défaut, seuls les applications d'une qualité suffisante vous sont proposées. Lorsque la qualité d'une application chute, les mises à jour sont mises en attente et l'installation n'est plus possible, le temps que le problème soit résolu.
+Par défaut, seules les applications d'une qualité suffisante vous sont proposées. Lorsque la qualité d'une application chute, les mises à jour sont mises en attente et l'installation n'est plus possible, le temps que le problème soit résolu.
 
 ## Intégration LDAP / SSO
 

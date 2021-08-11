@@ -21,7 +21,7 @@ curl -k -H "X-Requested-With: customscript" \
         -dump-header headers \
         https://your.server/yunohost/api/login
 
-# Example de GET
+# Exemple de GET
 curl -k -i -H "Accept: application/json" \
            -H "Content-Type: application/json" \
            -L -b headers -X GET https://your.server/yunohost/api/ROUTE \

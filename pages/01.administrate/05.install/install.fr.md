@@ -179,7 +179,7 @@ Cependant, ces images communautaires existent et sont disponibles sur Docker Hub
 * Une clé USB avec au moins 1Go de capacité OU un CD vierge standard ;
 {% endif %}
 {% if at_home %}
-* Un [fournisseur d'accès internet correct](/isp), de préférence avec une bonne vitesse d’upload ;
+* Un [fournisseur d'accès à Internet correct](/isp), de préférence avec une bonne vitesse d’upload ;
 {% if rpi0 %}
 * Un câble OTG ou un adaptateur Wifi USB pour connecter votre Raspberry Pi Zero ;
 {% elseif not virtualbox %}
