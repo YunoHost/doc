@@ -13,7 +13,7 @@ page-toc:
 
 In the context of self-hosting, backups are an important element to compensate for unexpected events (fire, database corruption, loss of access to the server, compromised server...). The backup policy to implement depends on the importance of the services and data you manage. For example, backing up a test server will be of little interest, while you will want to be very careful if you are managing critical data for an association or a company - and in such cases, you will want to store the backups *in a different location or locations*.
 
-## What is a good backup?
+## What is a good backup ?
 A good backup consists of at least **3 copies of the data** (including the original data), on at least **2 separate storages**, in at least **2 separate locations** (far enough apart) and ideally with 2 separate methods. If your backups are encrypted **these rules also apply to the decryption phrase/key**.
 
 A good backup is also in many cases, a recent backup, so it takes either a lot of rigor or **automate** the process.
