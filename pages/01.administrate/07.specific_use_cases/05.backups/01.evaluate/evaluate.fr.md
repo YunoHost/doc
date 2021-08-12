@@ -22,11 +22,11 @@ Une bonne sauvegarde est vérifiée régulièrement afin de s'assurer de l'effec
 Enfin, une bonne sauvegarde est une sauvegarde **restaurable dans des délais acceptables** pour vous. Pensez notamment à documenter votre méthode de restauration et à estimer le temps de transfert d'une copie notamment si les connexions internet en jeu ne sont pas symétriques.
 
 !!! Exemple d'**une combinaison** robuste et comfortable:
-!!!  * une sauvegarde distante et automatique avec borg
-!!!  * une sauvegarde sur disque externe et automatique avec borg
-!!!  * un snapshot/image régulier (et avant les mises à jour)
-!!!  * une grappe RAID 1 monitorée (ou un VPS du commerce qui sera aussi sur une grappe)
-!!!  * une passphrase de déchiffrement stockée sur 3 supports dans 2 lieux
+* une sauvegarde distante et automatique avec borg
+* une sauvegarde sur disque externe et automatique avec borg
+* un snapshot/image régulier (et avant les mises à jour)
+* une grappe RAID 1 monitorée (ou un VPS du commerce qui sera aussi sur une grappe)
+* une passphrase de déchiffrement stockée sur 3 supports dans 2 lieux
 
 
 ## Quelques méthodes possibles
