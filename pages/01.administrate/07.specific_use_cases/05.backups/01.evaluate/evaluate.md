@@ -16,19 +16,19 @@ In the context of self-hosting, backups are an important element to compensate f
 ## What is a good backup ?
 A good backup consists of at least **3 copies of the data** (including the original data), on at least **2 separate storages**, in at least **2 separate locations** (far enough apart) and ideally with 2 separate methods. If your backups are encrypted **these rules also apply to the decryption phrase/key**.
 
-A good backup is also in many cases, a recent backup, so it takes either a lot of rigor or **automate** the process.
+A good backup is also in many cases, a recent backup, so it takes either a lot of rigor or to **automate** the process.
 
 A good backup is checked regularly to ensure the effectiveness and integrity of the data.
 
 Finally, a good backup is one that is **restorable within an acceptable timeframe** for you. Remember to document your restoration method and to estimate the transfer time of a copy, especially if the Internet connections involved are not symmetrical.
 
 
-!!! Example of **a strong and comfortable suit**:
-!!!  * a remote and automatic backup with borg
-!!!  * a backup on external disk and automatic with borg
-!!!  * a regular snapshot/image (and before updates)
-!!!  * a monitored RAID 1 array (or a commercial VPS that will also be on an array)
-!!!  * a decryption passphrase stored on 3 media in 2 locations
+!!! Example of **a robust and comfortable combination**:
+* a remote and automatic backup with borg
+* a backup on external disk and automatic with borg
+* a regular snapshot/image (and before updates)
+* a monitored RAID 1 array (or a commercial VPS that will also be on an array)
+* a decryption passphrase stored on 3 media in 2 locations
 
 ## Some possible methods
 
@@ -44,17 +44,17 @@ Below, a list of risks sorted from the most to the least probable, whose probabi
 
 !!! Keep in mind that real accidents are linked to the occurrence of 2 events simultaneously. 
 
-* Lack of rigor**: strategies based on manual backups require a lot of rigor in the regularity
-* Bad handling**: it can happen that a backup is erased by mistake during a restoration or if you rely on a synchronization system, you could delete a file and the deletion would be synchronized instantly
-* Cryptolocker**: this is a virus that encrypts files and demands a ransomware. If your users are using nextcloud and windows, an infected windows could synchronize encrypted files and thus you lose your copy.
-* Hardware failure**: SD cards are the least reliable media over time (~2 years of life in a server), followed by SSD disks (about 3 years of life) and hard drives (3 years). Note that a new equipment has also probability to break down during the first 6 months. In all cases, your copies should not be on the same physical media.
-* Software failure/bug**: a software bug may result in data deletion or you may not know how to fix a problem and want to restore your system.
-* Electricity or internet failure: do you have a plan if this happens? What if you are on vacation?
-* Disaster or natural or unnatural event**: a small child, a cat, lightning or a simple leak can destroy your equipment. Fires or floods can also destroy your backup copy at the other end of your home...
-* Server compromise**: a malicious person or a robot could attack your server and delete your data
-* Machine theft**: a burglary or theft of a computer on which your password manager is located to decrypt your backups
-* Search**: whether you are guilty or not, a search can result in the seizure of the entire computer equipment of a place (or even several)
-* Death/health problem**: you may not be able to type your passphrase anymore
+* **Lack of rigor**: strategies based on manual backups require a lot of rigor in the regularity
+* **Bad handling**: it can happen that a backup is erased by mistake during a restoration or if you rely on a synchronization system, you could delete a file and the deletion would be synchronized instantly
+* **Cryptolocker**: this is a virus that encrypts files and demands a ransomware. If your users are using nextcloud and windows, an infected windows could synchronize encrypted files and thus you lose your copy.
+* **Hardware failure**: SD cards are the least reliable media over time (~2 years of life in a server), followed by SSD disks (about 3 years of life) and hard drives (3 years). Note that a new equipment has also probability to break down during the first 6 months. In all cases, your copies should not be on the same physical media.
+* **Software failure/bug**: a software bug may result in data deletion or you may not know how to fix a problem and want to restore your system.
+* **Electricity or internet failure**: do you have a plan if this happens? What if you are on vacation?
+* **Disaster or natural or unnatural event**: a small child, a cat, lightning or a simple leak can destroy your equipment. Fires or floods can also destroy your backup copy at the other end of your home...
+* **Server compromise**: a malicious person or a robot could attack your server and delete your data
+* **Machine theft**: a burglary or theft of a computer on which your password manager is located to decrypt your backups
+* **Search**: whether you are guilty or not, a search can result in the seizure of the entire computer equipment of a place (or even several)
+* **Death/health problem**: you may not be able to type your passphrase anymore
 
 ## About Nextcloud or Thunderbird (IMAP) synchronization
 A method that allows a partial backup is to backup files and emails via synchronization software like Nextcloud client or ThunderBird. This way, you avoid the risk of hardware failure. 
