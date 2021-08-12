@@ -28,7 +28,7 @@ votre DNS est correctement configuré (votre.domaine.tld doit pointer sur l'IP
 de votre serveur) et que votre site est accessible en HTTP depuis l'extérieur
 (c.-à-d. qu'au moins le port 80 est correctement redirigé vers votre serveur).
 
-#### Via l'interface d'administration web
+#### Via la webadmin
 
 Rendez-vous dans la partie 'Domaines' de l'interface d'administration, puis dans
 la section dédiée à votre domaine. Vous trouverez un bouton 'Certificat SSL'.

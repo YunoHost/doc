@@ -532,7 +532,7 @@ C’est le mot de passe qui vous permettra d’accéder à l’interface d’adm
 
 ## [fa=user /] Créer un premier utilisateur
 
-Une fois la configuration initiale faite, vous devriez être capable de vous connecter à l'interface d'administration web en utilisant le mot de passe d'administration.
+Une fois la configuration initiale faite, vous devriez être capable de vous connecter à la webadmin en utilisant le mot de passe d'administration.
 
 Bien que votre serveur dispose maintenant d'un utilisateur `admin`, cet utilisateur `admin` n'est pas un utilisateur « standard » et ne peut pas se connecter sur le [portail utilisateur](/users).
 

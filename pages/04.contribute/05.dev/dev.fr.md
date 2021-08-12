@@ -20,7 +20,7 @@ Si vous cherchez quelque chose à implémenter ou un bug à réparer, le bug tra
 - **Implémentez et testez votre fonctionnalité**. Suivant ce sur quoi vous
   voulez travailler :
    - **Cœur Python/ligne de commande** : allez dans `/ynh-dev/yunohost/`
-   - **Interface d'administration web** : allez dans `/ynh-dev/yunohost-admin/`
+   - **Webadmin** : allez dans `/ynh-dev/yunohost-admin/`
    - Vous pouvez aussi travailler sur les autres projets liés sur lesquels s'appuie YunoHost (SSOwat, Moulinette) de façon similaire.
 
 ### Vue d'ensemble des 4 morceaux principaux de YunoHost
@@ -79,7 +79,7 @@ Il contient essentiellement :
 
 - Mettre un `_` devant les noms des fonctions "privées".
 
-### Travailler sur l'interface d'administration web
+### Travailler sur la webadmin
 
 - Allez dans `/ynh-dev/yunohost-admin/src/`.
 
