@@ -67,7 +67,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [EasyAppointments](https://easyappointments.org/) | Online appointment booker |  |  |
 | [eLabFTW](https://www.elabftw.net/) | Electronic lab notebook | [Upstream](https://github.com/elabftw/elabftw) |  |
 | Emoncms |  | [Upstream](https://github.com/emoncms/emoncms) |  |
-| [Epicyon](https://epicyon.net/) |  | [Upstream](https://gitlab.com/bashrc2/epicyon) |  |
 | [erine.email](https://erine.email/) |  | [Upstream](https://gitlab.com/mdavranche/erine.email) |  |
 | [ERPnext](https://erpnext.com/) |  | [Upstream](https://github.com/frappe/erpnext) |  |
 | [EteSync](https://www.etesync.com/) |  | [Upstream](https://github.com/etesync) |  |
