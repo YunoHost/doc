@@ -89,7 +89,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [freeboard](https://freeboard.io/) | A real-time dashboard builder for IOT |  | [Package Draft](https://github.com/YunoHost-Apps/freeboard_ynh) |
 | [freepbx](https://freepbx.org) | VOIP |  | [Package Draft](https://github.com/YunoHost-Apps/freepbx_ynh) |
 | [ftssolr](https://wiki.dovecot.org/Plugins/FTS/Solr) | Full-text search via IMAP through a Solr indexing server |  | [Package Draft](https://github.com/YunoHost-Apps/ftssolr_ynh) |
-| galette | Membership management for non-profit organizations |  | [Package Draft](https://github.com/YunoHost-Apps/galette_ynh) |
 | [Gancio](https://gancio.org/) |  | [Upstream](https://framagit.org/les/gancio) |  |
 | gateone | HTML5-powered terminal emulator and SSH client |  | [Package Draft](https://github.com/Kloadut/gateone_ynh) |
 | [Gatsby](https://www.gatsbyjs.com/) | Build blazing fast, modern apps and websites with React | [Upstream](https://github.com/gatsbyjs/gatsby) |  |
@@ -161,7 +160,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Mediagoblin](https://mediagoblin.org/) | Video streaming platform | [Upstream](https://savannah.gnu.org/projects/mediagoblin) |  |
 | [medusa](https://pymedusa.com/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/guigot/medusa_ynh) |
 | [Megaglest](https://megaglest.org/) | realtime stategy game | [Upstream](https://megaglest.org/linux-packages.html) | |
-| [Metabase](https://www.metabase.com/) | analytics dashboard | [Upstream](https://github.com/metabase/metabase) | |
 | microblog.pub |  | [Upstream](https://github.com/tsileo/microblog.pub) |  |
 | [Mirakel](https://mirakel.azapps.de/taskwarrior.html) |  | [Upstream](https://github.com/GothenburgBitFactory/taskwarrior) |  |
 | modernpaste | A modern, feature-rich Pastebin alternative | [Upstream](https://github.com/LINKIWI/modern-paste) | [Package Draft](https://github.com/YunoHost-Apps/modernpaste_ynh) |
@@ -191,7 +189,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | openid-simplesamlphp | OpenID provider based on SimpleSAMLphp |  | [Package Draft](https://github.com/julienmalik/openid-simplesamlphp_ynh) |
 | openproject |  | [Upstream](https://github.com/opf/openproject) | [Package Draft](https://github.com/moutonjr/openproject_ynh) |
 | OpenSourceBilling |  | [Upstream](https://github.com/vteams/open-source-billing) |  |
-| [osada](https://zotlabs.com/osada/) | A decentralized publication platform and social network |  | [Package Draft](https://github.com/YunoHost-Apps/osada_ynh) |
 | [osjs](https://www.os-js.org/) | Desktop you have access to through your web-browser |  | [Package Draft](https://github.com/YunoHost-Apps/osjs_ynh) |
 | [osmw](https://www.openstreetmap.org/) | Cartography software |  | [Package Draft](https://github.com/YunoHost-Apps/osmw_ynh) |
 | OSRM |  | [Upstream](https://github.com/Project-OSRM/osrm-backend) |  |
@@ -204,9 +201,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Pelias |  | [Upstream](https://github.com/pelias/pelias) |  |
 | Pelican | Pelican Static Site Generator |  | [Package Draft](https://github.com/YunoHost-Apps/pelican_ynh) |
 | [Photoprism](https://photoprism.org/) |  | [Upstream](https://github.com/photoprism/photoprism) |  |
-| [phpbb](https://www.phpbb.com/) | Bulletin board software | [Upstream](https://github.com/phpbb) | [Package Draft](https://github.com/YunoHost-apps/phpbb_ynh) |
-| [phpboost](https://www.phpboost.com/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/phpboost_ynh) |
-| [phpipam](https://phpipam.net/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/phpipam_ynh) |
 | phplicensewatcher | A license manager |  | [Package Draft](https://github.com/YunoHost-Apps/phplicensewatcher_ynh) |
 | [PHPList](https://www.phplist.com) |  | [Upstream](https://github.com/phpList) |  |
 | [Phraseanet](https://docs.phraseanet.com/3.8/fr/index.html#) |  | [Upstream](https://github.com/alchemy-fr/Phraseanet-Docs) |  |
