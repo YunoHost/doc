@@ -24,10 +24,10 @@ Voici quelques exemples de ligne de commande correspondantes :
 yunohost tools update
 
 # Mettre à jour tous les paquets systèmes
-yunohost tools upgrade --system
+yunohost tools upgrade system
 
 # Mettre à jour toutes les applications
-yunohost tools upgrade --apps
+yunohost tools upgrade apps
 
 # Mettre à jour une application en particulier
 yunohost app upgrade wordpress
