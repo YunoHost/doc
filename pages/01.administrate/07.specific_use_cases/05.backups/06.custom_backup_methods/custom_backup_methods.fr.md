@@ -12,7 +12,7 @@ page-toc:
 
 Il est possible de créer votre propre méthode de sauvegarde et de la lier au système de collecte de fichiers à sauvegarder de YunoHost. Ceci peut être utile si vous souhaitez utiliser votre propre logiciel de sauvegarde ou mener des opérations de montages démontages de disques par exemple.
 
-Cette opération se fait à l'aide d'un hook et vous permetra de lancer une sauvegarde de cette façon:
+Cette opération se fait à l'aide d'un hook et vous permettra de lancer une sauvegarde de cette façon:
 ```
 yunohost backup create --method custom
 ```
