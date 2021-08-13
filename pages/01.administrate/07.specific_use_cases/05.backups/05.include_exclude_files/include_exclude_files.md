@@ -75,7 +75,7 @@ ynh_restore_dest (){
 ynh_abort_if_errors
 
 # Openvpn
-app="custom_openvpn" # Cette variable est importante pour le helper suivant
+app="custom_openvpn" # This variable is important for the following helper
 ynh_install_app_dependencies "openvpn openvpn-auth-ldap samba"
 
 ynh_restore_dest "conf/custom/openvpn"
@@ -85,7 +85,7 @@ ynh_restore_file "/etc/fail2ban/jail.d/openvpn.conf"
 ynh_restore_file "/etc/fail2ban/filter.d/openvpn.conf"
 
 # Samba
-app="custom_samba" # Cette variable est importante pour le helper suivant
+app="custom_samba" # This variable is important for the following helper
 ynh_install_app_dependencies "samba"
 
 ynh_restore_dest "conf/custom/samba"
