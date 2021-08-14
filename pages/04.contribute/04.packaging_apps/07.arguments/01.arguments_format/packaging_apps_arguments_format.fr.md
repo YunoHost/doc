@@ -1,5 +1,5 @@
 ---
-title: YunoHost Arguments Format
+title: Format des arguments Yunohost
 template: docs
 taxonomy:
     category: docs
