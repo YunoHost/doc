@@ -566,7 +566,7 @@ Le système de diagnostic est conçu pour fournir un moyen facile de valider que
 !!! Si une alerte n'est pas pertinente (par exemple parce que vous ne pensez pas utiliser une fonctionnalité spécifique), il est tout à fait convenable d'indiquer le dysfonctionnement comme « À ignorer » en allant dans l'administration web > Diagnostic, et en cliquant sur le bouton « Ignorer » pour ce dysfonctionnement spécifique.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="(Recommandé) A partir de l'interface web"]
+[ui-tab title="(Recommandé) À partir de l'interface web"]
 Pour lancer le diagnostic, allez dans l'Administration Web dans la partie Diagnostic. Vous devriez obtenir un écran comme celui-ci :
 
 [figure class="nomargin" caption="Capture d'écran du panneau de diagnostic"]
