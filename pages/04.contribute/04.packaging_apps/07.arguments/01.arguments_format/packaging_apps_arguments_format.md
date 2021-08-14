@@ -56,7 +56,7 @@ optional = true # optional, will skip if not answered
 
 ## All avaiable types
 
-### string
+### String
 
 This one is the simpliest one and is the default type if you don't specify one.
 
@@ -88,7 +88,7 @@ default = "some stuff" # optional
 [/ui-tab]
 [/ui-tabs]
 
-### string with choices
+### String with choices
 
 Like string except the user needs to chose in a list of specifics strings.
 [ui-tabs position="top-left" active="0" theme="lite"]
@@ -120,7 +120,7 @@ default = "en" # optional
 [/ui-tab]
 [/ui-tabs]
 
-### domain
+### Domain
 
 This type will ask the user to chose one of the domains of their YunoHost instance.
 [ui-tabs position="top-left" active="0" theme="lite"]
@@ -332,7 +332,7 @@ ask.fr = "la question en français"
 [/ui-tab]
 [/ui-tabs]
 
-### display_text
+### Display text
 
 This is a special type that allows the application packager to write some text
 that will be simply displayed. This is useful to provide more context.
