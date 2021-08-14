@@ -24,9 +24,9 @@ The general format for an argument looks like this in toml:
 [maybe.some.stuff.before.the_name]
 type = "one_of_the_available_type"
 ask.en = "the question in english"
-ask.fr = "the question in french"
+ask.fr = "la question en français"
 help.en = "some help text in english" # optional
-help.fr = "some help text in french" # optional
+help.fr = "un peu d aide en français" # optional
 example = "an example value" # optional
 default = "some stuff" # optional, not available for all types
 optional = true # optional, will skip if not answered
@@ -40,11 +40,11 @@ And in json:
     "type": "one_of_the_available_type",  // "sting" is not specified
     "ask": {
         "en": "the question in english",
-        "fr": "the question in french"
+        "fr": "la question en français"
     },
     "help": {
         "en": "some help text in english",
-        "fr": "some help text in french"
+        "fr": "un peu d aide en français"
     },
     "example": "an example value", // optional
     "default", "some stuff", // optional, not available for all types
@@ -64,7 +64,7 @@ Example in toml:
 [maybe.some.stuff.before.the_name]
 type = "string"  # optional
 ask.en = "the question in english"
-ask.fr = "the question in french"
+ask.fr = "la question en français"
 example = "an example value"  # optional
 default = "some stuff" # optional
 ```
@@ -77,7 +77,7 @@ And in json:
     "type": "string",  // optional
     "ask": {
         "en": "the question in english",
-        "fr": "the question in french"
+        "fr": "la question en français"
     },
     "default": "some stuff", // optional
     "example": "an example value"
@@ -108,7 +108,7 @@ And in json:
     "type": "string",
     "ask": {
         "en": "the question in english",
-        "fr": "the question in french"
+        "fr": "la question en français"
     },
     "example": "an example value",
     "choices": ["fr", "en"],
@@ -126,7 +126,7 @@ Example in toml:
 [maybe.some.stuff.before.the_name]
 type = "domain"
 ask.en = "the question in english"
-ask.fr = "the question in french"
+ask.fr = "la question en français"
 ```
 
 And in json:
@@ -137,7 +137,7 @@ And in json:
     "type": "domain",
     "ask": {
         "en": "the question in english",
-        "fr": "the question in french"
+        "fr": "la question en français"
     }
 },
 ```
@@ -153,7 +153,7 @@ Example in toml:
 [maybe.some.stuff.before.the_name]
 type = "path"
 ask.en = "the question in english"
-ask.fr = "the question in french"
+ask.fr = "la question en français"
 default = "/my_app"
 ```
 
@@ -165,7 +165,7 @@ And in json:
     "type": "path",
     "ask": {
         "en": "the question in english",
-        "fr": "the question in french"
+        "fr": "la question en français"
     },
     "default": "/my_app"
 },
@@ -183,7 +183,7 @@ Example in toml:
 [maybe.some.stuff.before.the_name]
 type = "user"
 ask.en = "the question in english"
-ask.fr = "the question in french"
+ask.fr = "la question en français"
 ```
 
 And in json:
@@ -194,7 +194,7 @@ And in json:
     "type": "user",
     "ask": {
         "en": "the question in english",
-        "fr": "the question in french"
+        "fr": "la question en français"
     }
 },
 ```
@@ -213,7 +213,7 @@ Example in toml:
 [maybe.some.stuff.before.the_name]
 type = "password"
 ask.en = "the question in english"
-ask.fr = "the question in french"
+ask.fr = "la question en français"
 ```
 
 And in json:
@@ -224,7 +224,7 @@ And in json:
     "type": "password",
     "ask": {
         "en": "the question in english",
-        "fr": "the question in french"
+        "fr": "la question en français"
     }
 },
 ```
@@ -239,7 +239,7 @@ Example in toml:
 [maybe.some.stuff.before.the_name]
 type = "boolean"
 ask.en = "the question in english"
-ask.fr = "the question in french"
+ask.fr = "la question en français"
 default = true
 ```
 
@@ -251,7 +251,7 @@ And in json:
     "type": "boolean",
     "ask": {
         "en": "the question in english",
-        "fr": "the question in french"
+        "fr": "la question en français"
     },
     "default": true
 },
@@ -267,7 +267,7 @@ Example in toml:
 [maybe.some.stuff.before.the_name]
 type = "number"
 ask.en = "the question in english"
-ask.fr = "the question in french"
+ask.fr = "la question en français"
 default = 0
 ```
 
@@ -279,7 +279,7 @@ And in json:
     "type": "number",
     "ask": {
         "en": "the question in english",
-        "fr": "the question in french"
+        "fr": "la question en français"
     },
     "default": 0
 },
@@ -296,7 +296,7 @@ Example in toml:
 [maybe.some.stuff.before.the_name]
 type = "app"
 ask.en = "the question in english"
-ask.fr = "the question in french"
+ask.fr = "la question en français"
 ```
 
 And in json:
@@ -307,7 +307,7 @@ And in json:
     "type": "app",
     "ask": {
         "en": "the question in english",
-        "fr": "the question in french"
+        "fr": "la question en français"
     }
 },
 ```
@@ -321,7 +321,7 @@ that will be simply displayed. This is useful to provide more context.
 [maybe.some.stuff.before.the_name]
 type = "display_text"
 ask.en = "the text in english"
-ask.fr = "the text in french"
+ask.fr = "le text en français"
 ```
 
 And in json:
@@ -332,7 +332,7 @@ And in json:
     "type": "display_text",
     "ask": {
         "en": "the text in english",
-        "fr": "the text in french"
+        "fr": "le text en français"
     }
 },
 ```
