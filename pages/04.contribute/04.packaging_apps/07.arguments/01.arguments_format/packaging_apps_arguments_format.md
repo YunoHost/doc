@@ -60,7 +60,6 @@ optional = true # optional, will skip if not answered
 
 This one is the simpliest one and is the default type if you don't specify one.
 
-Example in toml:
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
 ```toml
@@ -354,6 +353,163 @@ ask.fr = "le text en français"
     "ask": {
         "en": "the text in english",
         "fr": "le text en français"
+    }
+},
+```
+[/ui-tab]
+[/ui-tabs]
+
+### Range
+This type will ask the user to specify a numeric value between two terminals.
+Te precise value, however, is not considered important.
+
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="in toml"]
+```toml
+[maybe.some.stuff.before.the_name]
+type = "email"
+ask.en = "Put a range"
+ask.fr = "Indiquer "
+```
+[/ui-tab]
+[ui-tab title="in json"]
+```javascript
+{
+    "name": "the_name",
+    "type": "email",
+    "ask": {
+        "en": "the email address",
+        "fr": "l adresse courriel"
+    }
+},
+```
+[/ui-tab]
+[/ui-tabs]
+
+### Email
+This type will ask the user to input a email address.
+
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="in toml"]
+```toml
+[maybe.some.stuff.before.the_name]
+type = "email"
+ask.en = "the email address"
+ask.fr = "l adresse courriel"
+```
+[/ui-tab]
+[ui-tab title="in json"]
+```javascript
+{
+    "name": "the_name",
+    "type": "email",
+    "ask": {
+        "en": "the email address",
+        "fr": "l adresse courriel"
+    }
+},
+```
+[/ui-tab]
+[/ui-tabs]
+
+### Url
+This type will ask the user to input a url.
+
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="in toml"]
+```toml
+[maybe.some.stuff.before.the_name]
+type = "email"
+ask.en = "the url"
+ask.fr = "l url"
+```
+[/ui-tab]
+[ui-tab title="in json"]
+```javascript
+{
+    "name": "the_name",
+    "type": "url",
+    "ask": {
+        "en": "the url",
+        "fr": "l url"
+    }
+},
+```
+[/ui-tab]
+[/ui-tabs]
+
+### Date
+This type will ask the user to input a date.
+
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="in toml"]
+```toml
+[maybe.some.stuff.before.the_name]
+type = "date"
+ask.en = "the date"
+ask.fr = "la date "
+```
+[/ui-tab]
+[ui-tab title="in json"]
+```javascript
+{
+    "name": "the_name",
+    "type": "date",
+    "ask": {
+        "en": "the date",
+        "fr": "la date"
+    }
+},
+```
+[/ui-tab]
+[/ui-tabs]
+
+### Time
+This type will ask the user to input a Time (hours and minutes).
+
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="in toml"]
+```toml
+[maybe.some.stuff.before.the_name]
+type = "time"
+ask.en = "time"
+ask.fr = "l horaire"
+```
+[/ui-tab]
+[ui-tab title="in json"]
+```javascript
+{
+    "name": "the_name",
+    "type": "date",
+    "ask": {
+        "en": "time",
+        "fr": "l horaire"
+    }
+},
+```
+[/ui-tab]
+[/ui-tabs]
+
+### File
+This type will ask the user to input a file.
+
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="in toml"]
+```toml
+[maybe.some.stuff.before.the_name]
+type = file""
+ask.en = "the file"
+ask.fr = "le fichier"
+```
+[/ui-tab]
+[ui-tab title="in json"]
+```javascript
+{
+    "name": "the_name",
+    "type": "file",
+    "ask": {
+        "en": "the file",
+        "fr": "le fichier"
     }
 },
 ```
