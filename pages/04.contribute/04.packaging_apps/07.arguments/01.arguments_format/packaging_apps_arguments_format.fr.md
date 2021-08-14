@@ -113,9 +113,38 @@ default = "en" # optional
         "en": "the question in english",
         "fr": "la question en français"
     },
-    "example": "an example value",
+    "example": "Un exemple de valeur",
     "choices": ["fr", "en"],
-    "default": "en" // optional
+    "default": "en" // optionel
+},
+```
+[/ui-tab]
+[/ui-tabs]
+
+### Nombre
+
+Comme le type chaîne de caractères (en anglais: `string`) mais uniquement pour les nombres.
+
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="in toml"]
+```toml
+[maybe.some.stuff.before.the_name]
+type = "number"
+ask.en = "the question in english"
+ask.fr = "la question en français"
+default = 0
+```
+[/ui-tab]
+[ui-tab title="in json"]
+```javascript
+{
+    "name": "the_name",
+    "type": "number",
+    "ask": {
+        "en": "the question in english",
+        "fr": "la question en français"
+    },
+    "default": 0
 },
 ```
 [/ui-tab]
@@ -263,35 +292,6 @@ default = true
         "fr": "la question en français"
     },
     "default": true
-},
-```
-[/ui-tab]
-[/ui-tabs]
-
-### Nombre
-
-Comme le type string mais uniquement pour les nombres.
-
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="in toml"]
-```toml
-[maybe.some.stuff.before.the_name]
-type = "number"
-ask.en = "the question in english"
-ask.fr = "la question en français"
-default = 0
-```
-[/ui-tab]
-[ui-tab title="in json"]
-```javascript
-{
-    "name": "the_name",
-    "type": "number",
-    "ask": {
-        "en": "the question in english",
-        "fr": "la question en français"
-    },
-    "default": 0
 },
 ```
 [/ui-tab]

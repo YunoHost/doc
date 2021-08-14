@@ -118,6 +118,37 @@ default = "en" # optional
 ```
 [/ui-tab]
 [/ui-tabs]
+### Number
+
+Like string except the user needs to enter a number
+
+Example in toml:
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="in toml"]
+
+```toml
+[maybe.some.stuff.before.the_name]
+type = "number"
+ask.en = "the question in english"
+ask.fr = "la question en français"
+default = 0
+```
+[/ui-tab]
+[ui-tab title="in json"]
+```javascript
+{
+    "name": "the_name",
+    "type": "number",
+    "ask": {
+        "en": "the question in english",
+        "fr": "la question en français"
+    },
+    "default": 0
+},
+```
+[/ui-tab]
+[/ui-tabs]
+
 
 ### Domain
 
@@ -265,37 +296,6 @@ default = true
         "fr": "la question en français"
     },
     "default": true
-},
-```
-[/ui-tab]
-[/ui-tabs]
-
-### Number
-
-Like string except the user needs to enter a number
-
-Example in toml:
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="in toml"]
-
-```toml
-[maybe.some.stuff.before.the_name]
-type = "number"
-ask.en = "the question in english"
-ask.fr = "la question en français"
-default = 0
-```
-[/ui-tab]
-[ui-tab title="in json"]
-```javascript
-{
-    "name": "the_name",
-    "type": "number",
-    "ask": {
-        "en": "the question in english",
-        "fr": "la question en français"
-    },
-    "default": 0
 },
 ```
 [/ui-tab]
