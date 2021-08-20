@@ -1,0 +1,64 @@
+<!DOCTYPE html> <html lang="{{ (grav.language.getActive ?: 
+grav.config.site.default_lang)|e }}"> <head> {% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e }}{% endif %}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png')|e }}" />
+    <link rel="canonical" href="{{ page.canonical(true)|e }}" />
+{% endblock head %}
+
+{% block stylesheets %}
+    {% do assets.addCss('theme://css/bootstrap.min.css', 98) %}
+    {% do assets.addCss('theme://css/hl.css', 97) %}
+    {% do assets.addCss('theme://css/agate.css', 96) %}
+    {% do assets.addCss('theme://css/fonts.css', 95) %}
+    {% do assets.addCss('theme://css/style.css', 94) %}
+{% endblock %}
+
+{% block javascripts %}
+    {% do assets.addJs('theme://js/jquery-1.10.2.min.js', 100) %}
+    {% do assets.addJs('theme://js/sammy-latest.min.js', 99) %}
+    {% do assets.addJs('theme://js/sammy.storage.js', 98) %}
+    {% do assets.addJs('theme://js/highlight.min.js', 97) %}
+    {% do assets.addJs('theme://js/marked.js', 96) %}
+    {% do assets.addJs('theme://js/bootstrap.min.js', 95) %}
+    {% do assets.addJs('theme://js/app.js', 94) %}
+{% endblock %}
+
+{% block assets deferred %}
+    {{ assets.css()|raw }}
+    {{ assets.js()|raw }}
+{% endblock %}
+</head>
+<body class="{{ page.header.body_classes|e }}">
+
+{% block body %}
+    <div id="wrapper">
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <footer class="cf">
+       <span class="javascriptDisclaimer">Some features and pages on this website requires Javascript to be enabled.</br></br></span>
+       @YunoHost on
+       • <a rel="me" href="https://mastodon.social/@yunohost">Mastodon</a>
+       • <a href="https://framasphere.org/people/01868d20330c013459cf2a0000053625">Diaspora*</a>
+       • <a href="https://twitter.com/yunohost">Twitter</a>
+       • <a href="/docs" data-i18n="sitemap">Sitemap</a>
+       • Datalove <span class="glyphicon glyphicon-heart"></span>
+    </footer>
+{% endblock %}
+
+{% block bottom %}
+    {{ assets.js('bottom')|raw }}
+{% endblock %}
+
+</body>
+</html>
