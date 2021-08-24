@@ -259,6 +259,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Signal Proxy](https://signal.org/blog/help-iran-reconnect/) | Fight censorship and bypass traffic securely to the Signal service | [Upstream](https://github.com/signalapp/Signal-TLS-Proxy) | |
 | simpad | Simple markdown editor | [Upstream](https://github.com/beli3ver/SiMPad) | [Package Draft](https://github.com/YunoHost-Apps/simpad_ynh) |
 | [SimpleLogin](https://simplelogin.io) | Privacy-first e-mail forwarding and identity provider service | [Upstream](https://github.com/simple-login/app) | |
+| [Sitemagic CMS](https://sitemagic.org/) | Create beautiful and captivating websites | [Upstream](https://github.com/Jemt/SitemagicCMS) |  |
 | [smokeping](https://oss.oetiker.ch/smokeping/) |  | [Upstream](https://github.com/oetiker/SmokePing) |  |
 | [SocialHome](https://socialhome.network) | A federated personal profile | [Upstream](https://github.com/jaywink/socialhome) |  |
 | [sonerezh](https://www.sonerezh.bzh) | Stream music from everywhere |  | [Package Draft](https://github.com/YunoHost-Apps/sonerezh_ynh) |
