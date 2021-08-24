@@ -13,7 +13,7 @@ Si vous avez oublié votre mot de passe ou si vous ne pouvez pas vous connecter 
 pouvez peut-être encore changer le mot de passe en vous connectant en tant que "root" sur
 SSH (à partir de votre réseau local ! ou en utilisant un mode rescure si vous êtes sur un VPS...)
 
-## Sur l'interface d'administration web
+## Sur la webadmin
 
 1. Connectez-vous à l'interface web d'administration.
 2. Allez dans la section Outis > Changer le mot de passe d’administration.

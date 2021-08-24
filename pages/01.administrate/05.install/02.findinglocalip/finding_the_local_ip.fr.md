@@ -49,16 +49,13 @@ Les identifiants par défaut (avant la post-installation!) sont :
 
 (Si vous utilisez une image Armbian brute plutôt que les images YunoHost pré-installées, les identifiants sont root / 1234)
 
-
-
 [/ui-tab]
 [/ui-tabs]
 
-
 ## Je ne trouve toujours pas mon IP locale
-Si vous n'êtes pas capable de trouver votre serveur avec les méthodes précédentes, alors peut-être que votre serveur n'a pas démarré correctement
+Si vous n'êtes pas capable de trouver votre serveur avec les méthodes précédentes, alors peut-être que votre serveur n'a pas démarré correctement.
 
 - Assurez-vous que le serveur est correctement branché ;
-- Si votre serveur a une carte SD, essayez de vous assurer que la connectique n'est pas trop poussièreuse ;
+- Si votre serveur a une carte SD, essayez de vous assurer que la connectique n'est pas trop poussiéreuse ;
 - Branchez un écran sur le serveur et essayez de le redémarrer pour valider que le serveur démarre bien ;
-- Assurez-vous que le cable ethernet est fonctionnel et correctement branché ;
+- Assurez-vous que le câble Ethernet est fonctionnel et correctement branché ;

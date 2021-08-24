@@ -11,7 +11,7 @@ routes:
 
 DNS (système de nom de domaine) est un élément essentiel d'Internet qui permet
 de convertir des adresses compréhensibles par les êtres humains (les noms de
-domaines) en adresses compréhensibles par la machine (les IPs). Pour que
+domaines) en adresses compréhensibles par la machine (les adresses IP). Pour que
 votre serveur soit facilement accessible par d'autres êtres humains, et pour
 que certains services comme le mail fonctionnent correctement, il est nécessaire
 de configurer la zone DNS de votre domaine.
@@ -64,7 +64,7 @@ mail._domainkey 3600 IN TXT "v=DKIM1; k=rsa; p=uneGrannnnndeClef"
 _dmarc 3600 IN TXT "v=DMARC1; p=none"
 ```
 
-Mais il est peut-être plus facile de la comprendre si affichée de la façon
+Mais il est peut-être plus facile de la comprendre affichée de la façon
 suivante :
 
 | Type    | Nom                    | Valeur                                                 |
@@ -91,7 +91,7 @@ suivante :
 - `@` correspond à `votre.domaine.tld`, et par ex. `muc` correspond à `muc.votre.domaine.tld` ;
 - Les valeurs montrées ici sont des valeurs d'exemple ! Référez-vous à la configuration générée chez vous pour savoir quelles valeurs utiliser ;
 - Nous recommandons un [TTL](https://fr.wikipedia.org/wiki/Time_to_Live#Le_Time_to_Live_dans_le_DNS) de 3600 (1 heure). Mais vous pouvez utiliser une autre valeur si vous savez ce que vous faîtes ;
-- Ne mettez pas d'enregistrement IPv6 si vous n'êtes pas certains que l'IPv6 fonctionne sur votre serveur ! Vous aurez des problèmes avec Let's Encrypt si ce n'est pas le cas.
+- Ne mettez pas d'enregistrement IPv6 si vous n'êtes pas certain que l'IPv6 fonctionne sur votre serveur ! Vous aurez des problèmes avec Let's Encrypt si ce n'est pas le cas.
 
 ### Résolution DNS inverse
 
@@ -101,7 +101,7 @@ inverse](https://fr.wikipedia.org/wiki/Domain_Name_System#R%C3%A9solution_invers
 pour vos adresses publiques IPv4 et/ou IPv6. Ceci vous évitera d'être marqué
 comme spammeur par les systèmes de filtrage anti-spams.
 
-**N.B. : la configuration du DNS inverse se passe au niveau de votre Fournisseur d'Accès à Internet, ou de votre hébergeur de VPS. Elle ne se fait *pas* sur le registrar de votre nom de domaine.**
+**N.B. : la configuration du DNS inverse se passe au niveau de votre fournisseur d'accès à Internet, ou de votre hébergeur de VPS. Elle ne se fait *pas* sur le registrar de votre nom de domaine.**
 
 Cela signifie que si votre adresse IPv4 publique est `111.222.333.444` et que
 votre nom de domaine est `domain.tld`, vous devez obtenir le résultat suivant

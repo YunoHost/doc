@@ -37,7 +37,7 @@ Malheureusement, aucun des FAI français les plus courants ne respecte la totali
 Pour pallier cela, l'usage d'un VPN respectant ces points peut être une alternative.
 
 ### Confiance
-Enfin, si vous ne souhaitez pas que le contenu des communications de votre serveur soit espionnable par des équipements présents sur le réseau de votre Fournisseur d'Accès Internet, vous pouvez utiliser un VPN pour chiffrer vos communications et déporter votre confiance sur un fournisseur de VPN. Rappel, depuis 2015, le gouvernement déploie officiellement des boîtes noires chez les gros opérateurs réseau qui ont pour objectif de mettre sur écoute l'ensemble des communications numériques françaises entre autre pour préserver les intérêts scientifiques, économiques et industrielles de la France.
+Enfin, si vous ne souhaitez pas que le contenu des communications de votre serveur soit espionnable par des équipements présents sur le réseau de votre fournisseur d'accès à Internet, vous pouvez utiliser un VPN pour chiffrer vos communications et déporter votre confiance sur un fournisseur de VPN. Rappel, depuis 2015, le gouvernement déploie officiellement des boîtes noires chez les gros opérateurs réseau qui ont pour objectif de mettre sur écoute l'ensemble des communications numériques françaises entre autre pour préserver les intérêts scientifiques, économiques et industrielles de la France.
 
 ## Inconvénient
 ### Coût

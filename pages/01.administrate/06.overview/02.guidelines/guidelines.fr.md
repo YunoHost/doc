@@ -11,13 +11,13 @@ Cette page énumère quelques conseils et lignes directrices que tout administra
 
 ## Ne cassez pas YunoHost
 
-En d'autres termes : votre serveur est soit un "serveur de production" (destiné à fonctionner), soit un serveur de test sur lequel vous vous permettez d'expérimenter.
+En d'autres termes : votre serveur est soit un « serveur de production » (destiné à fonctionner), soit un serveur de test sur lequel vous vous permettez d'expérimenter.
 
 Si votre but est d'avoir un serveur de production :
 - soyez conscient qu'un serveur est un système fragile : restez prudent, méthodique et patient ;
 - limitez les expérimentations et la personnalisation - notamment des fichiers de config ;
 - n'installez pas des douzaines d'applications juste pour voir de quoi elles ont l'air ;
-- utilisez les applications non-officielles avec prudence, et interdisez-vous d'utiliser celles 'in progress', 'not working' ou qui on un niveau 0 ;
+- utilisez les applications non-officielles avec prudence, et interdisez-vous d'utiliser celles marquées 'in progress', 'not working' ou qui sont en niveau 0 ;
 - si quelque chose casse, réfléchissez à deux fois avant de tenter de le réparer vous-même si vous ne savez pas ce que vous faites. <small>(Par exemple, n'essayez pas de recréer vous-même l'utilisateur admin juste parce qu'il a mystérieusement disparu...)</small>
 
 ## Keep it simple !
@@ -35,15 +35,15 @@ Gardez les choses aussi simples que possible !
 
 Certaines personnes ont tendance à tomber dans la "spirale de la réinstallation" - où chaque fois que quelque chose casse dans le serveur et qu'il n'est pas évident de le réparer, ou parce que le serveur est devenu instable, l'administrateur finit par réinstaller le serveur entier à partir de zéro car cela semble une solution "facile" et rapide pour remettre les choses à plat.
 
-Ne faites pas ça. La réinstallation est une opération lourde et n'est pas une bonne stratégie à long terme pour résoudre les problèmes. Vous vous fatiguerez et n'apprendrez rien. Oubliez le rêve d'avoir un serveur infaillible : un serveur utilisé quotidiennement finit toujours par être instable. De plus, vous devez apprendre (progressivement) à résoudre les problèmes lorsque vous les rencontrez. [Demandez de l'aide](/help) en fournissant des détails sur les symptômes, ce que vous essayez de faire et de ce qu'il se passe, et corrigez les problèmes. Avec le temps, vous aurez un bien meilleur contrôle sur votre serveur plutôt que réinstaller aveuglément à chaque fois.
+Ne faites pas ça. La réinstallation est une opération lourde et n'est pas une bonne stratégie à long terme pour résoudre les problèmes. Vous vous fatiguerez et n'apprendrez rien. Oubliez le rêve d'avoir un serveur infaillible : un serveur utilisé quotidiennement finit toujours par être instable. De plus, vous devez apprendre (progressivement) à résoudre les problèmes lorsque vous les rencontrez. [Demandez de l'aide](/help) en fournissant des détails sur les symptômes, ce que vous essayez de faire et ce qu'il se passe, et corrigez les problèmes. Avec le temps, vous aurez un bien meilleur contrôle sur votre serveur que si vous réinstallez aveuglément à chaque fois.
 
 ## Faites des sauvegardes
 
-Si vous hébergez des services et des données qui sont importants pour vos utilisateurs, il est important que vous mettiez en place une politique de sauvegarde. Les sauvegardes peuvent être facilement créées à partir de l'interface d'administration web - bien qu'elles ne puissent actuellement pas être téléchargées à partir de celle-ci (mais elles peuvent être téléchargées par d'autres moyens). Vous devez effectuer régulièrement des sauvegardes et les conserver dans un endroit sûr et physiquement différent de votre serveur. Plus d'infos dans [la documentation des sauvegardes](/backup).
+Si vous hébergez des services et des données qui sont importants pour vos utilisateurs, il est important que vous mettiez en place une politique de sauvegarde. Les sauvegardes peuvent être facilement créées à partir de la webadmin - bien qu'elles ne puissent actuellement pas être téléchargées à partir de celle-ci (mais elles peuvent être téléchargées par d'autres moyens). Vous devez effectuer régulièrement des sauvegardes et les conserver dans un endroit sûr et physiquement différent de votre serveur. Plus d'infos dans [la documentation des sauvegardes](/backup).
 
 ## Lisez les emails envoyés à root
 
-En tant qu'administrateur, vous devriez configurer un client de messagerie pour vérifier les e-mails envoyés à `root@your.domain.tld` (qui doit être un alias pour le premier utilisateur que vous avez ajouté) ou les transférer à une autre adresse que vous vérifiez activement. Ces courriels peuvent contenir des informations sur ce qui se passe sur votre serveur, comme les tâches périodiques automatisées.
+En tant qu'administrateur, vous devriez configurer un client de messagerie pour vérifier les e-mails envoyés à `root@votre.domaine.tld` (qui doit être un alias pour le premier utilisateur que vous avez ajouté) ou les transférer à une autre adresse que vous vérifiez activement. Ces courriels peuvent contenir des informations sur ce qui se passe sur votre serveur, comme les tâches périodiques automatisées.
 
 ## YunoHost est un logiciel gratuit, maintenu par des bénévoles.
 

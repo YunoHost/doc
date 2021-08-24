@@ -33,7 +33,7 @@ puis effacer tout ce qu'il y a en-dessous, et le remplacer par la configuration 
 
 Cette partie est à suivre, que si votre IP est dynamique.
 
-Pour savoir si votre fournisseur d’accès internet vous fournit une IP dynamique [voir ici](/isp).
+Pour savoir si votre fournisseur d’accès à Internet vous fournit une IP dynamique [voir ici](/isp).
 
 Commencez par créer un identifiant DynHost.
 
