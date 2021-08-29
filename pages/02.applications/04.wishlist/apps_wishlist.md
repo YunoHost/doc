@@ -25,7 +25,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Akaunting | Manage payments/invoices/expenses | [Upstream](https://github.com/akaunting/akaunting) |  |
 | Anki Sync Server | a personal Anki server |[Upstream](https://github.com/ankicommunity/anki-sync-server) |  |
 | [AnonAddy](https://anonaddy.com/) | Anonymous email forwarding - Create Unlimited Email Aliases For Free | [Upstream](https://github.com/anonaddy/anonaddy) |  |
-| [ArchiveBox](https://archivebox.io/) | Open source self-hosted web archiving |[Upstream](https://github.com/ArchiveBox/ArchiveBox)|  |
 | [askbot](https://askbot.com/) | Questions and answers |  | [Package Draft](https://github.com/zamentur/askbot_ynh) |
 | [Astral](https://astralapp.com/) | Organize Your GitHub Stars With Ease |[Upstream](https://github.com/astralapp/astral)|  |
 | [Baserow](https://baserow.io/) | Open source no-code database tool and Airtable alternative. | [Upstream](https://gitlab.com/bramw/baserow) |  |
@@ -150,7 +149,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Loki](https://docs.loki.network/ServiceNodes/DebianPackageGuide/)| Service node for the Loki Network | [Upstream](https://github.com/loki-project/) |  |
 | [Loomio](https://www.loomio.org) |  | [Upstream](https://github.com/loomio/loomio/) |  |
 | [MaidSafe](https://maidsafe.net) |  | [Upstream](https://github.com/maidsafe) |  |
-| [mailman3](https://docs.mailman3.org/) | Electronic mailing list manager |  | [Package Draft](https://github.com/YunoHost-Apps/mailman3_ynh) |
 | [Mailpile](https://www.mailpile.is) |  | [Upstream](https://github.com/mailpile/Mailpile) |  |
 | [Mailtrain](https://mailtrain.org/) |  | [Upstream](https://github.com/Mailtrain-org/mailtrain) |  |
 | [Mautic](https://github.com/mautic/mautic) |  |  |  |
@@ -226,7 +224,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [pyload](https://pyload.net/) |  | [Upstream](https://github.com/pyload/pyload) | [Package Draft](https://github.com/YunoHost-Apps/pyload_ynh) |
 | [qBit MatUI](https://qbit-material-webui-demo.herokuapp.com/) | A WebUI for qBittorrent | [Upstream](https://github.com/bill-ahmed/qbit-matUI) |  |
 | [qBittorrent](https://www.qbittorrent.org/) |  | [Upstream](https://github.com/qbittorrent/qBittorrent) |  |
-| Quizzes | Multiple choice quiz platform with results analysis interface (in French) | [Upstream](https://github.com/hipay/quizzes) |  |
 | [racktables](https://racktables.org) |  | [Upstream](https://github.com/RackTables/racktables) |  |
 | Race for the galaxy | | [Upstream](https://github.com/bnordli/rftg) | |
 | [redmine](https://www.redmine.org/) | A flexible project management web application |  | [Package Draft](https://github.com/YunoHost-Apps/redmine_ynh) |
@@ -259,7 +256,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Signal Proxy](https://signal.org/blog/help-iran-reconnect/) | Fight censorship and bypass traffic securely to the Signal service | [Upstream](https://github.com/signalapp/Signal-TLS-Proxy) | |
 | simpad | Simple markdown editor | [Upstream](https://github.com/beli3ver/SiMPad) | [Package Draft](https://github.com/YunoHost-Apps/simpad_ynh) |
 | [SimpleLogin](https://simplelogin.io) | Privacy-first e-mail forwarding and identity provider service | [Upstream](https://github.com/simple-login/app) | |
-| [Sitemagic CMS](https://sitemagic.org/) | Create beautiful and captivating websites | [Upstream](https://github.com/Jemt/SitemagicCMS) |  |
 | [smokeping](https://oss.oetiker.ch/smokeping/) |  | [Upstream](https://github.com/oetiker/SmokePing) |  |
 | [SocialHome](https://socialhome.network) | A federated personal profile | [Upstream](https://github.com/jaywink/socialhome) |  |
 | [sonerezh](https://www.sonerezh.bzh) | Stream music from everywhere |  | [Package Draft](https://github.com/YunoHost-Apps/sonerezh_ynh) |
