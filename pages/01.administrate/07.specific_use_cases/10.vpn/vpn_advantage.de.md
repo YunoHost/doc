@@ -46,6 +46,6 @@ Ein neutrales VPN ist mit Kosten verbunden, da der Betreiber, der es bereitstell
 ### Packet Routing
 Wenn Sie ein VPN auf Ihrem Server einrichten, wird die Übertragung einer Datei von einem Computer im lokalen Netzwerk zum Server, der das VPN nutzt, über das Ende des VPN, d.h. über den Server des VPN-Anbieters, laufen, wenn Sie keine besondere Konfiguration einrichten.
 
-Um dies zu vermeiden, gibt es zwei Lösungen:
+Um dies zu vermeiden, gibt es zwei Lösungen :
 - Wenn Sie den Server in einen Router umwandeln und die Heimgeräte daran anschließen, profitieren auch diese Geräte von der VPN-Vertraulichkeit.
 - Verwenden Sie den YunoHost-Server als DNS-Resolver, wenn Sie zu Hause sind, um die Domänennamen des Servers auf die lokale IP und nicht auf die öffentliche IP umzuleiten. Dies kann entweder auf jedem Gerät oder auf dem Router erfolgen (sofern letzterer dies zulässt).
