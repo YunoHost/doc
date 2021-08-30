@@ -14,7 +14,7 @@ L'installation d'un serveur chez soi étant une pratique peu courante, la plupar
 ## Avantages
 
 ### Plug & Play
-En configurant un VPN sur votre serveur, vous serez en mesure de le rendre accessible au reste d'Internet sans avoir à modifier la configuration du routeur auxquel vous le branchez. Ce point peut être vraiment pratique si vous partez en vacances, que vous déménagez ou si vous avez une coupure d'Internet, car vous serez en mesure de le brancher facilement chez une personne de confiance sans avoir besoin de configurer le routeur de la personne qui vous aide.
+En configurant un VPN sur votre serveur, vous serez en mesure de le rendre accessible au reste d'Internet sans avoir à modifier la configuration du routeur auquel vous le branchez. Ce point peut être vraiment pratique si vous partez en vacances, que vous déménagez ou si vous avez une coupure d'Internet, car vous serez en mesure de le brancher facilement chez une personne de confiance sans avoir besoin de configurer le routeur de la personne qui vous aide.
 
 De la même façon, vous vous économisez l'ouverture des ports de votre routeur ainsi que le contournement du hairpinning.
 
