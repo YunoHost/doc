@@ -26,7 +26,7 @@ With a neutral VPN, this problem is circumvented because the VPN can be compared
 ### The case of email
 Email is one of the most complex protocols to self-host, usually it is what a user self-hosts last. Indeed, it is very easy to find yourself in a situation where emails sent by the server are refused by the recipient SMTP servers.
 
-To avoid this you need to :
+To avoid this you need to:
 - configure the reverse DNS of the server's Internet connection (or VPN)
 - a fixed IPv4
 - that this IPv4 is removable from all blacklists (notably the IP must not be on the DUL)
