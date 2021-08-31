@@ -293,6 +293,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Tinylist |  | [Upstream](https://github.com/baggachipz/tinylist) |  |
 | [TMate](https://tmate.io/) |  | [Upstream](https://github.com/tmate-io/tmate) |  |
 | torrelay |  |  | [Package Draft](https://github.com/matlink/torrelay_ynh) |
+| [Torrents.csv](https://torrents-csv.ml/) |  | [Upstream](https://codeberg.org/heretic/torrents-csv-server) |  |
 | Tracim |  | [Upstream](https://github.com/tracim/tracim) |  |
 | Traccar | Modern GPS Tracking Platform | [Upstream](https://github.com/traccar/traccar) |  |
 | transpay | Interface to receive and manage donations with Stripe |  | [Package Draft](https://github.com/YunoHost-Apps/transpay_ynh) |
