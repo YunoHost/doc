@@ -27,7 +27,7 @@ You can use the [AngryIP](https://angryip.org/download/) software to achieve tha
 !!! **Tips**:
 !!! - you can order by ping like on this screenshot to easily see effectively-used IP.
 !!! - your server should typically be displayed as listening on port 80 and 443
-!!! - in case of doubt, just type `https://192.168.x.y` in your browser to check if it's a Yunohost or not.
+!!! - in case of doubt, just type `https://192.168.x.y` in your browser to check if it's a YunoHost or not.
 
 ![](image://angryip.png?class=inline)
 

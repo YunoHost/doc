@@ -39,7 +39,7 @@ Par défaut, l’authentification SSH se fait avec le mot de passe d’administr
 
 ```bash
 ssh-keygen
-ssh-copy-id -i ~/.ssh/id_rsa.pub <nom_utilisateur@otre_serveur_yunohost>
+ssh-copy-id -i ~/.ssh/id_rsa.pub <nom_utilisateur@votre.domaine.tld>
 ```
 
 !!! Si vous avez des problèmes de permissions, donnez à `nom_utilisateur` la possession du dossier `~/.ssh` avec `chown`. Attention, pour des raisons de sécurité, ce dossier doit être en mode 700 !
@@ -84,9 +84,9 @@ ssh -p <votre_numero_de_port_ssh> admin@<votre_serveur_yunohost>
 
 ### Durcir la sécurité de la configuration des services
 
-La configuration TLS par défaut des services tend à offrir une bonne compatibilité avec les vieux appareils. Vous pouvez régler cette politique pour les services SSH et NGINX. Par défaut, la configuration du NGINX suit la [recommandation de compatibilité intermédiaire](https://wiki.mozilla.org/Security/Server_Side_TLS#Intermediate_compatibility_.28default.29) de Mozilla. Vous pouvez choisir de passer à la configuration "moderne" qui utilise des recommandations de sécurité plus récentes, mais qui diminue la compatibilité, ce qui peut poser un problème pour vos utilisateurs et visiteurs qui utilisent de vieux appareils. Plus de détails peuvent être trouvés sur [cette page](https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility).
+La configuration TLS par défaut des services tend à offrir une bonne compatibilité avec les vieux appareils. Vous pouvez régler cette politique pour les services SSH et NGINX. Par défaut, la configuration du NGINX suit la [recommandation de compatibilité intermédiaire](https://wiki.mozilla.org/Security/Server_Side_TLS#Intermediate_compatibility_.28default.29) de Mozilla. Vous pouvez choisir de passer à la configuration « moderne » qui utilise des recommandations de sécurité plus récentes, mais qui diminue la compatibilité, ce qui peut poser un problème pour vos utilisateurs et visiteurs qui utilisent de vieux appareils. Plus de détails peuvent être trouvés sur [cette page](https://wiki.mozilla.org/Security/Server_Side_TLS#Modern_compatibility).
 
-Changer le niveau de compatibilité n'est pas définitif et il est possible de rechanger le paramètre si vous concluez qu'il faille revenir en arrière.
+Changer le niveau de compatibilité n'est pas définitif et il est possible de rechanger le paramètre si vous concluez qu'il faut revenir en arrière.
 
 **Sur votre serveur**, modifiez la politique pour NGINX :
 ```bash
@@ -100,7 +100,7 @@ sudo yunohost settings set security.ssh.compatibility -v modern
 
 ### Désactivation de l’API YunoHost
 
-YunoHost est administrable via une **API HTTP**, servie sur le port 6787 par défaut (seulement sur `localhost`). Elle permet d’administrer une grande partie de votre serveur, et peut donc être utilisée à des **fins malveillantes**. La meilleure chose à faire si vous êtes habitués aux lignes de commande est de désactiver le service `yunohost-api`, et **utiliser la [ligne de commande](/commandline)** en SSH.
+YunoHost est administrable via une **API HTTP**, servie sur le port 6787 par défaut (seulement sur `localhost`). Elle permet d’administrer une grande partie de votre serveur, et peut donc être utilisée à des **fins malveillantes**. La meilleure chose à faire si vous êtes habitués à la ligne de commande est de désactiver le service `yunohost-api`, et **utiliser la [ligne de commande](/commandline)** en SSH.
 
 ```bash
 sudo systemctl disable yunohost-api

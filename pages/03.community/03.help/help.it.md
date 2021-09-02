@@ -15,11 +15,11 @@ routes:
 
 <center>
 
-<iframe src="https://kiwiirc.com/nextclient/?settings=7b72a0a81838360686798199ed53624f" style="width:100%;height:450px;border:0;display:block"></iframe>
+<iframe src="https://web.libera.chat/#yunohost" style="width:100%;height:450px;border:0;display:block"></iframe>
 
 </br>
 </br>
-<em>Nota : questa stanza e disponibile via IRC (#yunohost su freenode - <a href="https://kiwiirc.com/nextclient/?settings=7b72a0a81838360686798199ed53624f">usando kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, o Matrix <small>(#freenode_#yunohost:matrix.org - <a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">usando Riot</a>)</small></em>
+<em>Nota : questa stanza e disponibile via IRC (#yunohost su libera.chat - <a href="https://web.libera.chat/#yunohost">usando kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, o Matrix <small>(#yunohost:libera.chat - <a target="_blank" href="https://riot.im/app/#/room/#yunohost:libera.chat">usando Riot</a>)</small></em>
 </center>
 
 <h3>... o chiedi nel forum !</h3>
@@ -56,7 +56,7 @@ document.getElementById("goBugtracker").onclick = function() {
     window.location.href = "https://github.com/yunohost/issues/issues";
 }
 document.getElementById("goDevroom").onclick = function() {
-    window.location.href = "https://kiwiirc.com/client/irc.freenode.net/yunohost-dev";
+    window.location.href = "https://web.libera.chat/#yunohost-dev";
 }
 </script>
 

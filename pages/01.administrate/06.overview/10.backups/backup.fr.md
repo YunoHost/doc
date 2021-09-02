@@ -10,13 +10,13 @@ page-toc:
   depth: 3
 ---
 
-Dans le contexte de l'auto-hébergement, les sauvegardes (backup) sont un élément important pour pallier les événements inattendus (incendies, corruption de base de données, perte d'accès au serveur, serveur compromis...). La politique de sauvegardes à mettre en place dépend de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez être très prudent si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les sauvegardes *dans un ou des endroits différents*.
+Dans le contexte de l'auto-hébergement, les sauvegardes (backups) sont un élément important pour pallier les événements inattendus (incendies, corruption de base de données, perte d'accès au serveur, serveur compromis...). La politique de sauvegardes à mettre en place dépend de l'importance des services et des données que vous gérez. Par exemple, sauvegarder un serveur de test aura peu d'intérêt, tandis que vous voudrez être très prudent si vous gérez des données critiques pour une association ou une entreprise - et dans ce genre de cas, vous souhaiterez stocker les sauvegardes *dans un endroit différent*.
 
 ## Sauvegarde manuelle
 
 ### Sauvegarder
 
-YunoHost contient un système de sauvegarde, qui permet de sauvegarder (et restaurer) les configurations du système, les données "système" (comme les mails) et les applications si elles le supportent.
+YunoHost contient un système de sauvegarde, qui permet de sauvegarder (et restaurer) les configurations du système, les données « système » (comme les mails) et les applications si elles le supportent.
 
 Vous pouvez gérer vos sauvegardes via la ligne de commande (`yunohost backup --help`) ou la webadmin (dans la section Sauvegardes) bien que certaines fonctionnalités ne soient pas disponibles via celle-ci.
 
@@ -29,6 +29,7 @@ La méthode de sauvegarde actuelle consiste à créer des archives `.tar` qui co
 
 Vous pouvez facilement créer des archives depuis la webadmin en allant dans `Sauvegardes > Archives locales` et en cliquant sur `Nouvelle sauvegarde`. Vous pourrez ensuite sélectionner les éléments à sauvegarder (configuration, données "système", applications).
 
+
 ![Image de l'écran de sauvegarde de YunoHost dans la webadmin](image://backup.png)
 
 [/ui-tab]
@@ -36,27 +37,27 @@ Vous pouvez facilement créer des archives depuis la webadmin en allant dans `Sa
 
 Vous pouvez créer de nouvelles archives depuis la ligne de commande. Voici quelques exemples de commandes et leur comportement correspondant :
 
-- Tout sauvegarder (système et apps)
+- Tout sauvegarder (système et apps) :
 ```bash
 yunohost backup create
 ```
 
-- Sauvegarder seulement les apps
+- Sauvegarder seulement les apps :
 ```bash
 yunohost backup create --apps
 ```
 
-- Sauvegarder seulement deux apps (WordPress et Shaarli)
+- Sauvegarder seulement deux apps (WordPress et Shaarli) :
 ```bash
 yunohost backup create --apps wordpress shaarli
 ```
 
-- Sauvegarder seulement les mails
+- Sauvegarder seulement les mails :
 ```bash
 yunohost backup create --system data_mail
 ```
 
-- Sauvegarder les mails et WordPress
+- Sauvegarder les mails et WordPress :
 ```bash
 yunohost backup create --system data_mail --apps wordpress
 ```
@@ -86,7 +87,7 @@ Les commandes `yunohost backup list` et `yunohost backup info <nom_d'archive>` p
 Il est possible d'utiliser `scp` (un programme basé sur [`ssh`](/ssh)) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous GNU/Linux, vous pouvez utiliser la commande suivante pour télécharger une archive :
 
 ```bash
-scp admin@your.domain.tld:/home/yunohost.backup/archives/<nom_d'archive>.tar ./
+scp admin@votre.domaine.tld:/home/yunohost.backup/archives/<nom_darchive>.tar.gz ./
 ```
 [/ui-tab]
 [/ui-tabs]
@@ -153,8 +154,6 @@ scp /path/to/your/<nom_d'archive>.tar.gz admin@your.domain.tld:/home/yunohost.ba
 [/ui-tab]
 [/ui-tabs]
 
-
-
 ## Sauvegarde automatique ou distante
 
 Il existe 3 applications YunoHost qui proposent d'étendre YunoHost avec une méthode de sauvegarde automatisées.
@@ -171,4 +170,3 @@ Il existe 3 applications YunoHost qui proposent d'étendre YunoHost avec une mé
  * [Inclure/exclure des fichiers](/backup/include_exclude_files)
  * [Méthodes personnalisées](/backup/custom_backup_methods)
  * [Migrer ou fusionner des serveurs](/backup/migrate_or_merge_servers)
-

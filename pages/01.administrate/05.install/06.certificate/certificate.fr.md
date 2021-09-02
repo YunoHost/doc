@@ -28,9 +28,9 @@ votre DNS est correctement configuré (votre.domaine.tld doit pointer sur l'IP
 de votre serveur) et que votre site est accessible en HTTP depuis l'extérieur
 (c.-à-d. qu'au moins le port 80 est correctement redirigé vers votre serveur).
 
-#### Via l'interface d'administration web
+#### Via la webadmin
 
-Rendez-vous dans la partie 'Domaine' de l'interface d'administration, puis dans
+Rendez-vous dans la partie 'Domaines' de l'interface d'administration, puis dans
 la section dédiée à votre domaine. Vous trouverez un bouton 'Certificat SSL'.
 
 ![](image://domain-certificate-button-fr.png)
@@ -56,13 +56,13 @@ trois mois environ.
 
 Connectez-vous sur votre serveur en SSH.
 
-Vous pouvez vérifier le statut actuel de votre certificat via
+Vous pouvez vérifier le statut actuel de votre certificat via :
 
 ```bash
 yunohost domain cert-status votre.domaine.tld
 ```
 
-Installez le certificat Let's Encrypt via
+Installez le certificat Let's Encrypt via :
 
 ```bash
 yunohost domain cert-install votre.domaine.tld
@@ -72,7 +72,7 @@ Cette commande doit retourner :
 
 ```bash
 Success! The SSOwat configuration has been generated
-Success! Successfully installed Let's Encrypt certificate for domain DOMAIN.TLD!
+Success! Successfully installed Let's Encrypt certificate for domain votre.domaine.tld!
 ```
 
 Une fois l'installation effectuée, vous pouvez vous rendre sur votre domaine
@@ -82,7 +82,7 @@ trois mois environ.
 
 ##### En cas de problème
 
-Si suite à une mauvaise manipulation, un certificat se retrouve dans une
+Si, suite à une mauvaise manipulation, un certificat se retrouve dans une
 situation fâcheuse (e.g. perte du certificat ou impossible de lire le
 certificat), il est possible de repartir sur des bases propres en regénérant un
 certificat auto-signé :
@@ -96,6 +96,4 @@ avez bien vérifié votre configuration DNS et avez bien accès à votre serveur
 HTTP depuis l'extérieur, vous pouvez tenter :
 
 - d'ajouter une ligne `127.0.0.1 votre.domaine.tld` au fichier `/etc/hosts` sur votre serveur ;
-- si l'installation ne fonctionne toujours pas, désactiver les vérifications en ajoutant `--no-checks` à la commande `cert-install`.
-
-
+- si l'installation ne fonctionne toujours pas, de désactiver les vérifications en ajoutant `--no-checks` à la commande `cert-install`.

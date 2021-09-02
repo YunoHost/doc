@@ -19,19 +19,19 @@ Pour valider que votre configuration est correcte :
 - si vous vous hébergez chez vous et n'utilisez pas de VPN, assurez-vous que [votre FAI ne bloque pas le port 25](/isp) ;
 - routez les ports selon [cette documentation](/isp_box_config) ;
 - configurez soigneusement les enregistrements DNS du courrier électronique selon [cette documentation](/dns_config) ;
-- Testez votre configuration en utilisant les fonctionnalités de diagnostique (`Webadmin > Diagnostic > Email`). Vous pouvez également utiliser le service [mail-tester.com](https://mail-tester.com), un score d'au moins 8~9/10 est un but raisonnable <small>(attention : seuls 3 tests par domaine et par jour sont autorisés)</small> ;
+- Testez votre configuration en utilisant les fonctionnalités de diagnostic (`Webadmin > Diagnostic > Email`). Vous pouvez également utiliser le service [mail-tester.com](https://mail-tester.com), un score d'au moins 8~9/10 est un but raisonnable <small>(attention : seuls 3 tests par domaine et par jour sont autorisés)</small> ;
 
 ## Clients de messagerie
 
-Pour interagir avec le serveur de mail, c'est-à-dire lire et envoyer des emails, vous pouvez soit installer un client web comme Roundcube ou Rainloop sur votre serveur - ou configurer un client de bureau ou mobile comme décrit dans [cette page](/email_configure_client).
+Pour interagir avec le serveur de mail, c'est-à-dire lire et envoyer des emails, vous pouvez soit installer un client web comme Roundcube ou Rainloop sur votre serveur, soit configurer un client de bureau ou mobile comme décrit dans [cette page](/email_configure_client).
 
-Les clients de bureau ou mobile ont l'avantage de copier vos emails sur l'équipement permettant ainsi la consultation hors ligne et une protection relative face à d'éventuelles pannes matériel de votre serveur.
+Les clients de bureau ou mobile ont l'avantage de copier vos emails sur l'équipement permettant ainsi la consultation hors ligne et une protection relative face à d'éventuelles pannes matérielles de votre serveur.
 
 ## Configuration des alias de messagerie et des redirections automatiques
 
-Des alias de messagerie et des redirections peuvent être configurés pour chaque utilisateur. Par exemple, le premier utilisateur créé sur le serveur dispose automatiquement d'un alias `root@votre.domaine.tld` - ce qui signifie qu'un email envoyé vers cette adresse se retrouvera dans la boîte de réception de cet utilisateur. Les redirections automatiques peuvent être configurées, par exemple si un utilisateur ne veut pas configurer un compte de messagerie supplémentaire et souhaite simplement recevoir des courriels du serveur sur, disons, son adresse gmail.
+Des alias de messagerie et des redirections peuvent être configurés pour chaque utilisateur. Par exemple, le premier utilisateur créé sur le serveur dispose automatiquement d'un alias `root@votre.domaine.tld` - ce qui signifie qu'un email envoyé vers cette adresse se retrouvera dans la boîte de réception de cet utilisateur. Les redirections automatiques peuvent être configurées, par exemple si un utilisateur ne veut pas configurer un compte de messagerie supplémentaire et souhaite simplement recevoir des courriels du serveur sur, disons, son adresse Gmail.
 
-Une autre fonctionnalité méconnue est l'utilisation de suffixe commencant par "+". Par exemple, les emails envoyés à `johndoe+sncf@votre.domaine.tld` atteriront dans le dossier 'sncf' de la boîte mail de John Doe (ou bien directement dans la boîle mail si ce dossier n'existe pas). C'est une technique pratique pour par exemple fournir une adresse mail à un site puis facilement trier (via des filtres automatiques) les courriers venant de ce site.
+Une autre fonctionnalité méconnue est l'utilisation de suffixes commencant par "+". Par exemple, les emails envoyés à `johndoe+sncf@votre.domaine.tld` atteriront dans le dossier 'sncf' de la boîte mail de John Doe (ou bien directement dans la boîte mail si ce dossier n'existe pas). C'est une technique pratique pour, par exemple, fournir une adresse mail à un site puis facilement trier (via des filtres automatiques) les courriers venant de ce site.
 
 ## Que se passe-t-il si mon serveur devient indisponible ?
 
@@ -53,4 +53,4 @@ Voir [cette page](/email_configure_relay).
 
 ## Pour aller plus loin
 
-Pour approfondir votre compréhension du courriel et de ses protocoles, voici une [conférence éclairante](https://www.octopuce.fr/conference-lemail-vaste-sujet-par-benjamin-sonntag/) (en français).
+Pour approfondir votre compréhension de l'email et de ses protocoles, voici une [conférence éclairante](https://www.octopuce.fr/conference-lemail-vaste-sujet-par-benjamin-sonntag/) (en français).

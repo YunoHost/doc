@@ -5,4 +5,4 @@ Voici une liste des bureaux d’enregistrement pour acheter un nom de domaine :
 * [Gandi](http://gandi.net/)
 * [Namecheap](https://www.namecheap.com/)
 * [BookMyName](https://www.bookmyname.com/)
-* [GoDaddy](https://godaddy.com/) /!\ GoDaddy is [not a good example about censorship](https://en.wikipedia.org/wiki/GoDaddy#Controversies)
+* [GoDaddy](https://godaddy.com/) /!\ GoDaddy [n'est pas un bon exemple pour la censure](https://en.wikipedia.org/wiki/GoDaddy#Controversies)

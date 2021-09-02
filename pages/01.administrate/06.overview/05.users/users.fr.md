@@ -23,9 +23,9 @@ Le premier utilisateur créé reçoit aussi automatiquement les alias email `roo
 
 Le portail utilisateur, également appelé SSO pour 'Single Sign On', permet à l'utilisateur de naviguer facilement entre les différentes applications auxquelles il a accès. En particulier, le terme 'Single Sign On' vient du fait que l'utilisateur n'a qu'à se connecter au portail pour être automatiquement connecté à toutes les applications qui nécessitent une authentification (ou du moins celles qui sont intégrées avec le SSO/LDAP, car cela est parfois techniquement compliqué ou pas possible du tout).
 
-Dans le portail, les utilisateurs peuvent également cliquer sur l'avatar en haut à gauche pour configurer d'autres paramètres tels que leur identité, les alias de messagerie, les transferts automatiques de courrier ou changer leur mot de passe.
+Dans le portail, les utilisateurs peuvent également cliquer sur l'avatar en haut à gauche pour configurer d'autres paramètres tels que leur identité, les alias de messagerie, les transferts automatiques de courrier ou leur mot de passe.
 
-!!! Vous devez être conscient que le SSO ne peut être atteint que par le nom de domaine (c.-à-d. `https://the.domain.tld/yunohost/sso`), et non pas en utilisant l'IP du serveur (c.-à-d. `https://11.22.33.44/yunohost/sso`), contrairement à l'administrateur web ! C'est un peu déroutant dans certaines situations, mais c'est nécessaire pour des raisons techniques. Si vous êtes dans une situation où vous avez besoin d'accéder au SSO sans avoir votre DNS correctement configuré pour une raison quelconque, vous pouvez envisager de modifier votre `/etc/hosts` comme décrit dans [cette page](/dns_local_network).
+!!! Vous devez être conscient que le SSO ne peut être atteint que par le nom de domaine (c.-à-d. `https://the.domain.tld/yunohost/sso`), et non pas en utilisant l'IP du serveur (c.-à-d. `https://11.22.33.44/yunohost/sso`), contrairement à la webadmin ! C'est un peu déroutant dans certaines situations, mais c'est nécessaire pour des raisons techniques. Si vous êtes dans une situation où vous avez besoin d'accéder au SSO sans avoir votre DNS correctement configuré pour une raison quelconque, vous pouvez envisager de modifier votre `/etc/hosts` comme décrit dans [cette page](/dns_local_network).
 
 ## Gestion des groupes d'utilisateurs et permissions
 
