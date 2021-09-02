@@ -16,20 +16,20 @@ Dans le contexte de l'auto-hébergement, les sauvegardes (backup) sont un élém
 
 ### Sauvegarder
 
-YunoHost contient un système de sauvegarde, qui permet de sauvegarder (et restaurer) les configurations du système, les données "système" (comme les mails) et les applications (niveau 4+).
+YunoHost contient un système de sauvegarde, qui permet de sauvegarder (et restaurer) les configurations du système, les données "système" (comme les mails) et les applications si elles le supportent.
 
 Vous pouvez gérer vos sauvegardes via la ligne de commande (`yunohost backup --help`) ou la webadmin (dans la section Sauvegardes) bien que certaines fonctionnalités ne soient pas disponibles via celle-ci.
 
 La méthode de sauvegarde actuelle consiste à créer des archives `.tar` qui contiennent les fichiers pertinents.
 
-##### Créer une sauvegarde
+#### Créer une sauvegarde
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="À partir de l'interface web"]
 
-Vous pouvez facilement créer des archives depuis la webadmin en allant dans Sauvegardes > Archives locales et en cliquant sur "Nouvelle sauvegarde". Vous pourrez ensuite sélectionner les éléments à sauvegarder (configuration, données "système", applications).
+Vous pouvez facilement créer des archives depuis la webadmin en allant dans `Sauvegardes > Archives locales` et en cliquant sur `Nouvelle sauvegarde`. Vous pourrez ensuite sélectionner les éléments à sauvegarder (configuration, données "système", applications).
 
-![](image://backup.png)
+![Image de l'écran de sauvegarde de YunoHost dans la webadmin](image://backup.png)
 
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
@@ -66,7 +66,7 @@ Pour plus d'informations et d'options sur la création d'archives, consultez `yu
 [/ui-tab]
 [/ui-tabs]
 
-##### Télécharger la sauvegarde
+#### Télécharger la sauvegarde
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="À partir de l'interface web"]
 Après avoir créé des sauvegardes, il est possible de les lister et de les inspecter grâce aux vues correspondantes dans l'interface d'administration web. Un bouton propose de télécharger l'archive. Si l'archive fait plus de 3Go, il peut être préférable de procéder via SFTP.
@@ -86,7 +86,7 @@ Les commandes `yunohost backup list` et `yunohost backup info <nom_d'archive>` p
 Il est possible d'utiliser `scp` (un programme basé sur [`ssh`](/ssh)) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous GNU/Linux, vous pouvez utiliser la commande suivante pour télécharger une archive :
 
 ```bash
-scp admin@your.domain.tld:/home/yunohost.backup/archives/<nom_d'archive>.tar.gz ./
+scp admin@your.domain.tld:/home/yunohost.backup/archives/<nom_d'archive>.tar ./
 ```
 [/ui-tab]
 [/ui-tabs]

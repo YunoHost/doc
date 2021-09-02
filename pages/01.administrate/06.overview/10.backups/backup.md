@@ -1,5 +1,5 @@
 ---
-title: Backing up your server and apps
+title: Backing up your server
 template: docs
 taxonomy:
     category: docs
@@ -7,25 +7,29 @@ routes:
   default: '/backup'
 ---
 
-Backing up your server, apps and data is an important concern when administrating a server. This protects you from unexpected events that could happen (server lost in a fire, database corruption, loss of access, server compromised...). The backup policy you will put in place depends of the importance of the services and data hosted. For instance you won't care too much about having backup on a test server, but you will care about having a backup of critical data of your association or company, and having this backup *in a different physical place*.
+In the context of self-hosting, backups are an important element to compensate for unexpected events (fire, database corruption, loss of access to the server, compromised server...). The backup policy to implement depends on the importance of the services and data you manage. For example, backing up a test server will be of little interest, while you will want to be very careful if you are managing critical data for an association or a company - and in such cases, you will want to store the backups *in a different location or locations*.
 
-## Backups in the context of YunoHost
+## Manual backup
+
+### Backup
 
 YunoHost comes with a backup system, that allows to backup (and restore) system configurations and data (e.g. mails) and apps if they support it.
 
 You can manage backups either from the command line (`yunohost backup --help`) or from the web administration (in the Backups section) though some features are not yet available in the webadmin.
 
-The current default method consists in creating a `.tar.gz` archive containing all relevant files. In the future, YunoHost plans to support [Borg](https://www.borgbackup.org/) which is a more flexible, efficient and powerful solution.
+The current default method consists in creating a `.tar` archive containing all relevant files.
 
-## Creating backups
+#### Creating backups
 
-### From the webadmin
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="From the webadmin"]
 
-You can easily create backup archives from the webadmin by going in Backups > Local storage and clicking on "New backup". You will then be asked to select which configuration, data and apps you want to backup.
+You can easily create backup archives from the webadmin by going in `Backups > Local storage` and clicking on `New backup`. You will then be asked to select which configuration, data and apps you want to backup.
 
 ![picture of YunoHost's backup pannel](image://backup.png)
 
-### From the command line
+[/ui-tab]
+[ui-tab title="From the command line"]
 
 You can create a new backup archive with the command line. Here are a few simple example of commands and their corresponding behavior:
 
@@ -60,122 +64,110 @@ You can create a new backup archive with the command line. Here are a few simple
   ```
 
 For more informations and options about backup creation, consult `yunohost backup create --help`. You can also list system parts that can be backuped with `yunohost hook list backup`.
+[/ui-tab]
+[/ui-tabs]
 
-### Apps-specific configuration
+#### Downloading backups
 
-Some apps such as Nextcloud may be related to a large quantity of data. If you want you can backup the app without the user data. This practice is referred to "backing up only the core" (of the app).  
-When performing an upgrade, apps with large quantity of data will, usually, do a backup without those data.
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="From the webadmin"]
+After creating backups, it is possible to list and inspect them using the corresponding views in the web administration interface. A button offers to download the archive. If the archive is larger than 3GB, it may be better to proceed via SFTP.
 
-To manually disable the backup of large data, for application that implement that feature, you can set the variable `BACKUP_CORE_ONLY`. To do so, the variable have to be set before the backup command: `sudo BACKUP_CORE_ONLY=1 yunohost backup create --apps nextcloud`. Be careful though that mean you will have to backup user data yourself. But doing so, you will be able to do incremental or differential backups of this large amount of data (which is not an option provided by yunohost yet).
+`Backup > Local Archives > <Archive name> > Download`
 
-## Downloading and uploading backups
+[/ui-tab]
+[ui-tab title="With a SFTP client"]
+Currently, the most accessible way to download big archives is to use the program FileZilla as explained in [this page](/filezilla).
 
-After creating backup archives, it is possible to list and inspect them via the corresponding views in the webadmin, or via `yunohost backup list` and `yunohost backup info <archivename>` from the command line. By default, backups are stored in `/home/yunohost.backup/archives/`.
+By default, backups are stored in `/home/yunohost.backup/archives/`.
 
-Currently, the most accessible way to download archives is to use the program FileZilla as explained in [this page](/filezilla).
+[/ui-tab]
+[ui-tab title="From the command line"]
+The `yunohost backup list` and `yunohost backup info <archive_name>` commands provide information about the names and sizes of backups.
 
-Alternatively, a solution can be to install Nextcloud or a similar app and configure it to be able to access files in `/home/yunohost.backup/archives/` from a web browser.
-
-One solution consists in using `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. Hence, from a machine running GNU/Linux, you should be able to run the following to download a specific backup:
+It is possible to use `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. So, from a GNU/Linux machine, you can use the following command to download an archive:
 
 ```bash
-scp admin@your.domain.tld:/home/yunohost.backup/archives/<archivename>.tar.gz ./
+scp admin@your.domain.tld:/home/yunohost.backup/archives/<archive_name>.tar ./
 ```
+[/ui-tab]
+[/ui-tabs]
 
-Similarly, you can upload a backup from a machine to your server with:
+! Don't forget to store your backup in a different place than your server.
 
+
+!!! If you want, you can connect an external disk to your server so that the archives arrive directly on it. See this guide for [Add an external storage to your server](/external_storage)
+
+### Testing
+
+You should regularly test your backups by at least listing the contents of the archives and checking the weight of the associated data. It is best to practice restoring regularly.
 ```bash
-scp /path/to/your/<archivename>.tar.gz admin@your.domain.tld:/home/yunohost.backup/archives/
+# List the files
+tar -tvf /home/yunohost.backup/archives/ARCHIVE.tar | less
+
+# List database exports
+tar -tvf /home/yunohost.backup/archives/ARCHIVE.tar | grep "(db|dump)`.sql"
+
+# Check the weight
+ls -lh /home/yunohost.backup/archives/ARCHIVE.tar
 ```
 
-## Restoring backups
+### Restoring backups
+!!! SPOILER: The larger your data volume and the more applications you have, the more complex your recovery will be.
 
-### From the webadmin
+#### Simple case: little data, archive already present
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="From the webadmin"]
 
-Go in Backup > Local storage and select your archive. You can then select which items you want to restore, then click on 'Restore'.
+Go in `Backup > Local storage` and select your archive. You can then select which items you want to restore, then click on 'Restore'.
 
 ![picture of YunoHost's restore pannel](image://restore.png)
 
-### From the command line
+[/ui-tab]
+[ui-tab title="From the command line"]
 
-From the command line, you can run `yunohost backup restore <archivename>` (without the `.tar.gz`) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use for instance `yunohost backup restore --apps wordpress` which will restore only the wordpress app.
+From the command line, you can run `yunohost backup restore <archivename>` (without the `.tar`) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use for instance `yunohost backup restore --apps wordpress` which will restore only the wordpress app.
 
-### Constraints
+!!! In the case of a complete restoration, it is possible to restore instead of launching the initial configuration.
+[/ui-tab]
+[/ui-tabs]
 
 To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app which is already installed... which means that to restore an old version of an app, you must first uninstall it.
 
-### Restoring during the postinstall
+#### Upload an archive
 
-One specific feature is the ability to restore a full archive *instead* of the postinstall step. This makes it useful when you want to reinstall a system entirely from an existing backup. To be able to do this, you will need to upload the archive on the server and place it in `/home/yunohost.backup/archives`. Then, **instead of** `yunohost tools postinstall` you can run:
+In many cases, the archive is not on the server on which you want to restore it. So it has to be uploaded, which depending on its weight can take more or less time.
+
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="With an SFTP client"]
+Currently, the most accessible solution for uploading backups is to use the FileZilla program as explained in [this page](/filezilla).
+
+By default, backups are to be placed in `/home/yunohost.backup/archives/`.
+[/ui-tab]
+[ui-tab title="From the command line"]
+You can upload a backup from a machine to your server with :
 
 ```bash
-yunohost backup restore <archivename>
+scp /path/to/your/<archive_name>.tar.gz admin@your.domain.tld:/home/yunohost.backup/archives/
 ```
+[/ui-tab]
+[/ui-tabs]
 
-Note: If your archive isn't in `/home/yunohost.backup/archives`, you can create the directory, move the archive into it, and restore it like this:
+## Automatic or remote backup
 
-```bash
-mkdir -p /home/yunohost.backup/archives
-mv /path/to/<archivename> /home/yunohost.backup/archives/
-yunohost backup restore <archivename>
-``` 
+There are 3 YunoHost applications that offer to extend YunoHost with an automated backup method.
 
-## To go further
+ * [BorgBackup](/backup/borgbackup)
+ * [Restic](/backup/restic)
+ * [Archivist](/backup/archivist)
 
-### Storing backups on a different drive
+## Go further
 
-If you want, you can connect and mount an external drive to store backup archives on it (among other things). For this, plug in the drive and make sure that next time it is mounted automatically, by following the instruction at [Adding an external storage to your server](https://yunohost.org/#/external_storage). 
+ * [Evaluate the quality of your backup](/backup/strategies)
+ * [Clone your file system](/backup/clone_filesystem)
+ * [Avoid a hardware failure](/backup/avoid_hardware_failure)
+ * [Include/exclude files](/backup/include_exclude_files)
+ * [Custom methods](/backup/custom_backup_methods)
+ * [Migrate or merge servers](/backup/migrate_or_merge_servers)
 
-Then, move the existing archives and then add a symbolic link.
 
-```bash
-PATH_TO_DRIVE="/media/my_external_drive" # For instance, depends of where you mounted your drive
-mkdir $PATH_TO_DRIVE/yunohost_backup_archives # On your external drive create the folder where the backups will go
-mv /home/yunohost.backup/archives $PATH_TO_DRIVE/yunohost_backup_archives # Move the archive folder including existing backups (if you made them) to the new folder on the external drive
-ln -s $PATH_TO_DRIVE/yunohost_backup_archives /home/yunohost.backup/archives # Create a symbolic link from the old local folder to the new folder on the external drive
-```
-
-### Automatic backups
-
-You can add a simple cron job to trigger automatic backups regularly. For instance, to backup your wordpress weekly, create a file `/etc/cron.weekly/backup-wordpress` with the following content:
-
-```bash
-#!/bin/bash
-yunohost backup create --apps wordpress
-```
-
-then make it executable:
-
-```bash
-chmod +x /etc/cron.weekly/backup-wordpress
-```
-
-Be careful what you backup exactly and when: you don't want to end up with your whole disk space saturated because you backuped 30 GB of data every day.
-
-#### Backing your server on a remote server
-
-You can follow this tutorial on the forum to setup Borg between two servers: <https://forum.yunohost.org/t/how-to-backup-your-yunohost-server-on-another-server/3153>
-
-Alternatively, the app Archivist allows to setup a similar system: <https://forum.yunohost.org/t/new-app-archivist/3747>
-
-#### Avoiding the backup of some folders
-If needed, you can specify that some `/home/user` folders are left out of the `yunohost backup` command, by creating a blank file named `.nobackup` in them.
-
-#### For ARM boards: full backup with USBimager or `dd`
-
-If you are using an ARM board, another method for doing a full backup can be to create an image of the SD card.
-
-This can be done easily using [USBimager](https://bztsrc.gitlab.io/usbimager/) (N.B. be sure to get the Read-Write version! Not the write-only version!). The process is basically the *reverse* of flashing the SD card.
-- Poweroff your server
-- Get the SD card and plug it into your computer
-- Using USBimager, click the *Read* button to create an image (snapshot) of the sd card. You can use it later to restore the entire system. 
-
-More details [in the USBimager doc](https://gitlab.com/bztsrc/usbimager/#creating-backup-image-file-from-device)
-
-Alternatively you can use `dd` if you're comfortable with the command line with something like:
-
-```bash
-dd if=/dev/mmcblk0 | gzip > ./my_snapshot.gz
-```
-
-(replace `/dev/mmcblk0` with the actual device of your SD card)
