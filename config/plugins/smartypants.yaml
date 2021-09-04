@@ -1,0 +1,10 @@
+enabled: true
+twig_filter: true
+enabled_in_admin: false
+process_title: true
+process_content: true
+options: qDewgf
+dq_open:  “
+dq_close: ”
+sq_open:  ‘
+sq_close: ’
