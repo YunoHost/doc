@@ -5,7 +5,7 @@ streams:
       prefixes:
         '': [user/themes/yunohost-docs, user/themes/learn4]
 enabled: true
-production-mode: false
+production-mode: true
 grid-size: grid-xl
 github:
   note: false
