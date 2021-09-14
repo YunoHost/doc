@@ -1,5 +1,5 @@
 ---
-title: Mécénes et partenaires
+title: Mécènes et partenaires
 template: docs
 taxonomy:
     category: docs
