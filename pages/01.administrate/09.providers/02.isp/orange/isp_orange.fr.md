@@ -4,7 +4,9 @@ template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/isp_orange'
+  default: '/providers/isp/orange'
+  aliases:
+    - '/isp_orange'
 ---
 
 *Trouvez la liste d’autres fournisseurs d’accès à Internet **[ici](/isp)**.*

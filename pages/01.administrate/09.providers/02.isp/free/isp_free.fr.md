@@ -4,7 +4,9 @@ template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/isp_free'
+  default: '/providers/isp/free'
+  aliases:
+    - '/isp_free'
 ---
 
 *Trouvez la liste d’autres fournisseurs d’accès à Internet **[ici](/isp)**.*
