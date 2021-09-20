@@ -4,7 +4,9 @@ template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/OVH'
+  default: '/providers/registrar/ovh'
+  aliases:
+    - '/OVH'
 ---
 
 Let's see how to properly set the DNS redirections with [OVH](http://www.ovh.com).
