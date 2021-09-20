@@ -7,9 +7,9 @@ routes:
   default: '/registar_api_gandi'
 ---
 
-This page is meant to guide you in obtaining an API key from Gandi in order to configure Yunohost's automatic DNS configuration mecanism
+This page is meant to guide you in obtaining an API key from Gandi in order to configure YunoHost's automatic DNS configuration mecanism
 
-! NB. : **DO NOT share your API tokens with anybody!** A malicious attacker obtaining your tokens could take over your domain, and possibly your server !
+! NB. : **DO NOT share your API tokens with anybody!** A malicious attacker obtaining your tokens could take over your domain, and possibly your server!
 
 1. Go to https://account.gandi.net/
 
