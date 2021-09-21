@@ -4,7 +4,7 @@ template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/providers/registrar/ovh'
+  default: '/providers/registrar/ovh/manualdns'
   aliases:
     - '/OVH'
 ---
