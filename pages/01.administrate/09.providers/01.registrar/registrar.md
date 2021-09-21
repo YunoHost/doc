@@ -19,8 +19,8 @@ However, some registrar are not compatible/tested with this feature or are more 
 The list bellow can help you to choose a registrar if you plan to buy a domain name to use it with YunoHost.
 
 
-| Registrar | Compatibility | Easy setup process |
+| Registrar | Compatibility | Easy to obtain an API key |
 | --------- | ------------- | ------------------ |
-| [Gandi](https://www.gandi.net)     | ✔ (tested)    | ✔                  |
-| [OVH](https://www.ovh.com/domaines/)       | ✔ (tested)    | ✘ [Tutorial](/providers/registrar/ovh)  |
+| [Gandi](https://www.gandi.net)     | ✔ (tested)    | ✔  [Tutorial](/providers/registrar/gandi/autodns)                |
+| [OVH](https://www.ovh.com/domaines/)       | ✔ (tested)    | ✘ [Tutorial](/providers/registrar/ovh/autodns)  |
 | [Namecheap](https://www.namecheap.com/) | ✘ (in lexicon but untested)    | ✘✘✘ API not available without 50$ on the account  |
