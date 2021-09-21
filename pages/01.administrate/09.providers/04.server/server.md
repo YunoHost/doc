@@ -20,7 +20,7 @@ routes:
 
 ## YunoHost IT outsourcing
 
- * [ReflexLibre](https://reflexlibre.net) <span class="chatons">CHATONS</span>
+ * [ReflexLibre](https://reflexlibre.net) (France only) <span class="chatons">CHATONS</span>
 
 <style>
 .ffdn {
