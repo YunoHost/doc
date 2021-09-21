@@ -10,11 +10,15 @@ process:
     twig: true
 routes:
   default: '/providers/registrar'
+  aliases:
+    - '/autodns'
 ---
 
-In order to ease the [DNS configuration process](/dns_config), YunoHost 4.3+ come with a feature allowing to automatically push the configuration to your registrar (the website where you buy a domain name).
+Since version 4.3, YunoHost includes a mecanism to interface your server with your DNS registrar API, with the purpos of simplifying and automatizing DNS records registration and maintenance.
 
-However, some registrar are not compatible/tested with this feature or are more difficult to configure with cause the registrar user interface to get credentials are too complicated.
+The procedure does require an initial configuration where you will need to generate an API key on your registrar's interface.
+
+Not all registrars are supported though. So far, the community tested and validated the interface with [Gandi](https://gandi.net) and [OVH](https://ovh.com), which are recommended. The interface with other registrar may work but is still considered experimental until we gather feedback from the community.
 
 The list bellow can help you to choose a registrar if you plan to buy a domain name to use it with YunoHost.
 
