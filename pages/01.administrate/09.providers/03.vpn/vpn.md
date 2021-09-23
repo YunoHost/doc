@@ -42,7 +42,7 @@ Below, you can find a list of providers compatible for self-hosting and especial
 
 | Fournisseurs | Compatibilité [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) | IPv6 | rDNS IPv4 | rDNS IPv6 | Prix | Adhésion | Neutralité du net |
 | ------------ | ----------------------- | ---- | --------- | --------- | ----- | -------------- |
-| [Aquilenet](https://www.aquilenet.fr/vpn/)    | ✔ (.cube)               | ✔    | ?         | ?         | 3 à 5 / mois | ~15€¹ /an | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
+| [Aquilenet](https://www.aquilenet.fr/vpn/)    | ✔ (.cube)               | ✔    | ✔         | ✔         | 3 à 5 / mois | ~15€¹ /an | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
 | [Alsace Réseau Neutre](https://arn-fai.net/vpn)    | ✔ (.cube + [internetcube](https://internetcu.be))               | ✔    | ✔         | ✔         | 4 € (ou [Ğ1](https://duniter.org/fr/monnaie-libre-g1/)) / mois | 15€ / an | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
 | [Baionet](https://www.baionet.fr/nos-services/vpn/)    | ✘ (wireguard)               | ?    | ?         | ?         | 2,5 € ou 5 € / mois | 5€ ou 40€ / an | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
 | [FAImaison](https://www.faimaison.net/services/vpn.html)    | ✔ (.cube)               | ✘   | ✔         | ✘        | Prix libre | 8 ou 16€ / an | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
