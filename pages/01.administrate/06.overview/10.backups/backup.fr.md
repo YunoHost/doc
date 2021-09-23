@@ -128,7 +128,10 @@ Allez dans `Sauvegardes > Archives locales` et sélectionnez l'archive. Vous pou
 
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
-Depuis la ligne de commande, vous pouvez utiliser `yunohost backup restore <nom_d'archive>` (sans le `.tar`) pour restaurer une archive. Tout comme `yunohost backup create`, cela restaure tout le contenu par défaut. Si vous souhaitez restaurer seulement certaines parties, vous pouvez utiliser par exemple `yunohost backup restore --apps wordpress` qui restaurera seulement l'app WordPress.
+
+À partir de la ligne de commande, vous pouvez exécuter `yunohost backup list` pour obtenir les noms des archives disponibles. Il s'agit essentiellement de leur nom de fichier sans extension.
+
+Vous pouvez ensuite exécuter `yunohost backup restore <archivename>` (donc sans son extension .tar) pour restaurer une archive. Comme pour `yunohost backup create`, cela restaurera tout ce qui se trouve dans l'archive par défaut. Si vous voulez restaurer uniquement des éléments spécifiques, vous pouvez utiliser par exemple `yunohost backup restore <archivename> --apps wordpress` qui restaurera uniquement l'application wordpress.
 
 !!! Dans le cas d'une restauration complète, il est possible de restaurer à la place de lancer la configuration initiale.
 [/ui-tab]
