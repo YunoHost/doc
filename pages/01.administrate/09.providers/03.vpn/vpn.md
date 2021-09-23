@@ -58,7 +58,7 @@ Below, you can find a list of providers compatible for self-hosting and especial
 | [Rézine](https://www.rezine.org/acces_internet/tunnels_chiffr%C3%A9s/)    | ✔ (manuelle)               | ✔   | ✔         | ✔        | 5 à 10€ / mois | Prix libre | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
 | [Swiss Neutral Network](https://www.swissneutral.net/?page_id=31)    | ✔ (.cube)               | ✔    |  ✔        | ✔         | 30.- CHF/mois | 50.- CHF / an<br>Réservé aux suisses | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
 | [Tetaneutral](https://tetaneutral.net/adherer/)    | ✘ (wireguard)               | ?    | ?         | ?         | 5€¹ / mois | 5 à 100€¹ / an | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
-| [Touraine Data Network](https://tdn-fai.net/)    | ✔ (.cube + [internetcube](https://internetcu.be))               | ✔    | ?         | ?         | 5€ / an | 10 à 20€ / an | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
+| [Touraine Data Network](https://tdn-fai.net/)    | ✔ (.cube + [internetcube](https://internetcu.be))               | ✔    | ?         | ?         | 5€ / mois | 10 à 20€ / an | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
 
 ¹ Prix libre
 
