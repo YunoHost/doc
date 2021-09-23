@@ -175,6 +175,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [N8n.io](https://n8n.io) |  | [Upstream](https://github.com/n8n-io/n8n) |  |
 | Netrunner |  | [Upstream](https://github.com/mtgred/netrunner) |  |
 | nexusoss | Sonatype Nexus Repository manager OSS |  | [Package Draft](https://github.com/YunoHost-Apps/nexusoss_ynh) | 
+| NocoDB | Airtable alternative / turn any SQL db into a smart spreadsheet | [Upstream](https://github.com/nocodb/nocodb) | |
 | [ntopng](https://www.ntop.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/ntopng_ynh) |
 | [Odoo](https://www.odoo.com/) | An open source ERP and CRM | [Upstream](https://github.com/odoo/odoo) | [Package Draft](https://github.com/YunoHost-Apps/libreerp_ynh) |
 | ofbiz | Apache-OFBiz ERP |  | [Package Draft](https://github.com/nomakaFr/ofbiz_ynh) |
