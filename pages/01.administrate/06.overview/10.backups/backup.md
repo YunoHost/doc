@@ -126,7 +126,9 @@ Go in `Backup > Local storage` and select your archive. You can then select whic
 [/ui-tab]
 [ui-tab title="From the command line"]
 
-From the command line, you can run `yunohost backup restore <archivename>` (without the `.tar`) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use for instance `yunohost backup restore --apps wordpress` which will restore only the wordpress app.
+From the command line, you can run `yunohost backup list` to get the available archive names. They are basically their file name without extension.
+
+You can then run `yunohost backup restore <archivename>` (hence without its `.tar` extension) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use for instance `yunohost backup restore <archivename> --apps wordpress` which will restore only the wordpress app.
 
 !!! In the case of a complete restoration, it is possible to restore instead of launching the initial configuration.
 [/ui-tab]
