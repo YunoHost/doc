@@ -35,7 +35,7 @@ Le chiffre risque de changer selon quel serveur démarre en premier, donc ne com
 !! Malheureusement, les appareils Android ne semblent pas écouter le protocole mDNS.
 !! Pour profiter des domaines `.local` sur vos appareils Android, vous devez entrer l'adresse IP locale de votre serveur YunoHost dans leur paramètre DNS.
 
-# Configuration DNS
+## Configuration DNS
 
 DNS (Domain Name System) est un système qui permet aux ordinateurs du monde entier de traduire les noms de domaine lisibles par l'homme (comme `yolo.com`) en adresses IP compréhensibles par les machines (comme `11.22.33.44`). Pour que cette traduction (et d'autres fonctionnalités) fonctionne, il faut configurer soigneusement les enregistrements DNS. 
 
