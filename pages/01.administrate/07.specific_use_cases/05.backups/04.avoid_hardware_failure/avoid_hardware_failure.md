@@ -29,7 +29,10 @@ If it is above 10:
 sysctl vm.swappiness=10
 nano /etc/sysctl.conf
 ```
-And edit the value `vm.swapiness`.
+If present, change the vm.swappiness value to 10. Otherwise add the line:
+```
+vm.swappiness = 10
+```
 
 ## Storage redundancy
 In order to limit hardware failures of storage media, it can be relevant to set up a cluster of mirrored disks (RAID, ZFS). The idea here is that everything that is written to one disk will be written to the other. This way, if one fails, the other continues to work and the server is still fully functional.
