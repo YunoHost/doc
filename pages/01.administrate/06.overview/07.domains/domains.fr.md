@@ -17,7 +17,25 @@ Le domaine choisi lors de la configuration initiale (post-installation) est déf
 
 Enfin, il faut noter que, dans le contexte de YunoHost, il n'y a pas de hiérarchie entre les domaines qu'il connaît. Dans l'exemple précédent, on peut ajouter un troisième domaine `foo.yolo.com` - mais il serait considéré comme un domaine indépendant de `yolo.com`.
 
-## Configuration DNS
+## Domaines locaux
+
+À partir de YunoHost v4.3, les domaines finissant par `.local` sont pleinement supportés, en plus du `yunohost.local` par défaut.
+Ils n'utilisent pas le protocole DNS mais mDNS (appelé aussi Zeroconf, Bonjour), qui permet leur diffusion sans configuration particulière mais exclusivement sur votre réseau local, ou votre VPN.
+Leur utilisation est donc parfaitement adaptée si vous ne prévoyez pas de rendre une de vos apps disponible sur l'Internet.
+
+!!!! Le protocole mDNS ne permet pas d'ajouter des sous-domaines. Ainsi `domaine.local` est valide, `sous.domain.local` ne l'est pas.
+
+C'est le service `yunomdns` qui se charge de diffuser l'existence de vos domaines `.local` sur votre réseau.
+Il possède un fichier de configuration, `/etc/yunohost/mdns.yml`, qui permet de choisir quels domaines sont diffusés, et sur quelles interfaces réseau.
+Ce fichier est régénéré automatiquement dès que vous ajoutez ou supprimez un domaine `.local`.
+
+Le service cherchera toujours à diffuser le domaine `yunohost.local`. Si vous avez plusieurs serveurs YunoHost sur votre réseau, alors tentez `yunohost-2.local`, etc.
+Le chiffre risque de changer selon quel serveur démarre en premier, donc ne comptez pas dessus pour y installer des apps : créez vos propres domaines locaux.
+
+!! Malheureusement, les appareils Android ne semblent pas écouter le protocole mDNS.
+!! Pour profiter des domaines `.local` sur vos appareils Android, vous devez entrer l'adresse IP locale de votre serveur YunoHost dans leur paramètre DNS.
+
+# Configuration DNS
 
 DNS (Domain Name System) est un système qui permet aux ordinateurs du monde entier de traduire les noms de domaine lisibles par l'homme (comme `yolo.com`) en adresses IP compréhensibles par les machines (comme `11.22.33.44`). Pour que cette traduction (et d'autres fonctionnalités) fonctionne, il faut configurer soigneusement les enregistrements DNS. 
 

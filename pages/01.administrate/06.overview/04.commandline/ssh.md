@@ -39,8 +39,8 @@ During the postinstall, you've been asked to choose an administration password. 
 ### Address to use
 
 If you are **installing at home** (e.g. on a Raspberry Pi or OLinuXino or old computer):
-   - you should be able to connect to your server using `yunohost.local`. 
-   - if `yunohost.local` does not work, your need to [find out the local IP of the server](/finding_the_local_ip).
+   - you should be able to connect to your server using `yunohost.local` (or `yunohost-2.local`, depending on how many servers are on your network). 
+   - if `yunohost.local` and the like do not work, your need to [find out the local IP of the server](/finding_the_local_ip).
    - if you installed a server at home but are attempting to connect from outside your local network, make sure port 22 is correctly forwarded to your server.
 
 
@@ -60,10 +60,10 @@ ssh root@11.22.33.44
 # or after the postinstall:
 ssh admin@11.22.33.44
 
-# avec le nom de domaine plutôt que l'ip (plus pratique):
+# using the domain name instead of the IP (more convenient)
 ssh admin@votre.domaine.tld
 
-# using the domain name instead of the IP (more convenient)
+# using the local domain name instead of the IP (for local access)
 ssh admin@yunohost.local
 
 # if you changed the SSH port
