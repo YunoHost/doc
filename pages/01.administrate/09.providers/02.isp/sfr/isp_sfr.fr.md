@@ -4,7 +4,9 @@ template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/isp_sfr'
+  default: '/providers/isp/sfr'
+  aliases:
+    - '/isp_sfr'
 ---
 
 *Trouvez la liste d’autres fournisseurs d’accès à Internet **[ici](/isp)**.*

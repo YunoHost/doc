@@ -4,7 +4,9 @@ template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/registar_api_ovh'
+  default: '/providers/registrar/ovh/autodns'
+  aliases:
+    - '/registar_api_ovh'
 ---
 
 This page is meant to guide you in obtaining an API key from OVH in order to configure YunoHost's automatic DNS configuration mecanism

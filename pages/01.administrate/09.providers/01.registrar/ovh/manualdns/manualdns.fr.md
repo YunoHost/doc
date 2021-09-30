@@ -4,7 +4,9 @@ template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/OVH'
+  default: '/providers/registrar/ovh/manualdns'
+  aliases:
+    - '/OVH'
 ---
 
 Nous allons voir comment configurer le DNS avec [OVH](http://www.ovh.com).
