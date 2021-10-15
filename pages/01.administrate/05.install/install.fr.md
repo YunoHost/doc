@@ -545,7 +545,10 @@ Par conséquent, vous devriez ajouter un premier utilisateur « standard ».
 
 Allez dans `Utilisateurs > Nouvel utilisateur`.
 
-TODO: add a screenshot
+[figure class="nomargin" caption="Aperçu de l'interface de création utilisateur"]
+![Création d'un utilisateur](image://create-first-user.png?resize=100%&class=inline)
+[/figure]
+
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
 ```
