@@ -546,7 +546,10 @@ Let's therefore add a first "regular" user.
 
 Go in Users > Add
 
-TODO: add a screenshot
+[figure class="nomargin" caption="Preview of the user creation UI"]
+![User creation](image://create-first-user.png?resize=100%&class=inline)
+[/figure]
+
 [/ui-tab]
 [ui-tab title="From the command line"]
 ```
