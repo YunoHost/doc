@@ -191,6 +191,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [osjs](https://www.os-js.org/) | Desktop you have access to through your web-browser |  | [Package Draft](https://github.com/YunoHost-Apps/osjs_ynh) |
 | [osmw](https://www.openstreetmap.org/) | Cartography software |  | [Package Draft](https://github.com/YunoHost-Apps/osmw_ynh) |
 | OSRM |  | [Upstream](https://github.com/Project-OSRM/osrm-backend) |  |
+| [Owncast](https://owncast.online) | Livestreaming server | [Upstream](https://github.com/owncast/owncast) |  |
 | [OX Open-Xchange](https://www.open-xchange.com) | Linux groupware solution | [Upstream](https://github.com/open-xchange/) |  |
 | [Padloc](https://padloc.app/) | Simple, secure password and data management for individuals and teams | [Upstream](https://github.com/padloc/padloc) | |
 | [pagure](https://pagure.io/pagure) | A Git forge |  | [Package Draft](https://github.com/YunoHost-Apps/pagure_ynh) |
