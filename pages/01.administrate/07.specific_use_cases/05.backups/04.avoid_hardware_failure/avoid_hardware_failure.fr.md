@@ -28,7 +28,10 @@ Si elle est au-dessus de 10:
 sysctl vm.swappiness=10
 nano /etc/sysctl.conf
 ```
-Et éditer la valeur `vm.swapiness`.
+Si la ligne est présente, changez la valeur vm.swappiness à 10.Sinon, ajoutez la ligne:
+```
+vm.swappiness = 10
+```
 
 ## Redondance de stockage
 Afin de limiter les pannes matérielles des supports de stockage, il peut être pertinent de mettre en place une grappe de disques en miroir (RAID, ZFS). L'idée ici est que tout ce qui est écrit sur un disque le sera sur l'autre. Ainsi, si l'un tombe en panne, l'autre continue de fonctionner et le serveur est toujours pleinement fonctionnel.
