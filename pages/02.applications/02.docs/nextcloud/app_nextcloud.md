@@ -116,7 +116,7 @@ CASE A:'datadirectory' =>'/media/storage',
 CASE B:'datadirectory' =>'/media/storage/nextcloud_data/nextcloud/data',
 ```
 
-Back up with `ctrl+x` then `y` or `o` (depending on your server locale).
+Save it with `ctrl+x` then `y` or `o` (depending on your server locale).
 
 Restart the web server:
 
