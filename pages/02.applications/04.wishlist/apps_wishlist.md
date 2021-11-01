@@ -307,7 +307,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [umap](https://umap.openstreetmap.fr/) | Cartography software |  | [Package Draft](https://github.com/YunoHost-Apps/umap_ynh) |
 | [unbound](https://nlnetlabs.nl/projects/unbound/about/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/unbound_ynh) |
 | [upmpdcli](https://www.lesbonscomptes.com/upmpdcli/) |  | [Upstream](https://framagit.org/medoc92/upmpdcli) |  |
-| [Uptime Kuma](https://uptime.kuma.pet/) | Self-hosted Uptime Robot | [Upstream](https://github.com/louislam/uptime-kuma) | [Package Draft](https://github.com/ketsapiwiq/uptime-kuma_ynh) |
+| [Uptime Kuma](https://uptime.kuma.pet/) | Self-hosted Uptime Robot | [Upstream](https://github.com/louislam/uptime-kuma) | [Package Draft](https://github.com/YunoHost-Apps/uptime-kuma_ynh) |
 | [Uwazi](https://www.uwazi.io/) |  | [Upstream](https://github.com/huridocs/uwazi) |  |
 | [Volumio](https://volumio.org) |  | [Upstream](https://github.com/volumio) |  |
 | [vpnserver](https://openvpn.net) | Create/provide VPNs from your server |  | [Package Draft](https://github.com/YunoHost-Apps/vpnserver_ynh) |
