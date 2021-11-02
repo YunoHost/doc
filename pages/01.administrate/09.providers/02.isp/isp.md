@@ -207,7 +207,7 @@ Most of non business IP provided by ISP are blacklisted.
 | --- | --- | --- | --- | --- | --- | --- |
 | BT Internet | Yes | - | Yes| - | - | No |
 | Virgin Media | Yes | - | - | - | No | No |
-| ZEN Internet | Yes | - | Yes | - | Yes | - |
+| ZEN Internet | Yes | - | Yes | - | Yes | Yes |
 | PlusNet | Yes | Yes | Yes | No | Yes, if you raise a ticket | Small one off Charge |
 
 {% elseif country == 'usa' %}
