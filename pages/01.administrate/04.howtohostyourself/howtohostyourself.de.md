@@ -1,5 +1,5 @@
 ---
-title: So hosten Sie selbst ?
+title: So hosten Sie selbst!
 template: docs
 taxonomy:
     category: docs
