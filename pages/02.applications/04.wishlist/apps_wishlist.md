@@ -18,7 +18,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | 2FAuth | Manage and Generate 2FA Codes | [Upstream](https://github.com/Bubka/2FAuth) |  |
 | 10er10 |  | [Upstream](https://github.com/dready92/10er10) |  |
 | [AbanteCart](https://abantecart.com) | Create an e-commerce website |  | [Package Draft](https://github.com/YunoHost-Apps/abantecart_ynh) |
-| AdGuard |  | [Upstream](https://github.com/AdguardTeam/AdGuardHome) | [Package Draft](https://github.com/YunoHost-Apps/adguard_ynh) |
 | adhocserver | An ad hoc server for the Sony PSP |  | [Package Draft](https://github.com/matlink/adhocserver_ynh) |
 | [agora](https://www.agora-project.net/) | Create collaborative and creative digital space |  | [Package Draft](https://github.com/YunoHost-Apps/agora_ynh) |
 | [Ajenti](https://ajenti.org) |  | [Upstream](https://github.com/ajenti/ajenti/) |  |
@@ -126,8 +125,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Joplin-web |  | [Upstream](https://github.com/foxmask/joplin-web) |  |
 | [JS Bin](https://jsbin.com/) |  | [Upstream](https://github.com/jsbin/jsbin) |  |
 | [Karaoke-forever](https://www.karaoke-forever.com/) | Organize karaoke parties | [Upstream](https://github.com/bhj/karaoke-forever) | |
-| [Kill the newsletter](https://kill-the-newsletter.com/) | Convert email newsletters to RSS feeds | [Upstream](https://github.com/leafac/kill-the-newsletter.com) | |
-| kiwiirc | Web IRC client |  | [Package Draft](https://github.com/YunoHost-Apps/kiwiirc_ynh) |
+| [Kill the newsletter](https://kill-the-newsletter.com/) | Convert email newsletters to RSS feeds | [Upstream](https://github.com/leafac/kill-the-newsletter.com) | |N
 | [Kiwix](https://www.kiwix.org/) | Offline Wikipedia or other sites | [Upstream](https://github.com/kiwix/) |  |
 | [Known](https://withknown.com) |  | [Upstream](https://github.com/idno/known) |  |
 | [kodi](https://kodi.tv) | Media center application |  | [Package Draft](https://github.com/YunoHost-Apps/kodi_ynh) |
@@ -169,10 +167,8 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | mumble_admin_plugin | Mumble-server web interface |  | [Package Draft](https://github.com/matlink/mumble_admin_plugin_ynh) |
 | munin | Resource monitoring tool |  | [Package Draft](https://github.com/YunoHost-Apps/munin_ynh) |
 | Museek+ |  | [Upstream](https://github.com/eLvErDe/museek-plus) |  |
-| [MyBB](https://mybb.com/) |  | [Upstream](https://github.com/mybb) |  |
 | mycryptochat | Encrypted IM |  | [Package Draft](https://github.com/mrtino/mycryptochat_ynh) |
 | mx-puppet-discord | A bridge between Matrix and Discord | [Upstream](https://github.com/matrix-discord/mx-puppet-discord) |  |
-| [N8n.io](https://n8n.io) |  | [Upstream](https://github.com/n8n-io/n8n) |  |
 | Netrunner |  | [Upstream](https://github.com/mtgred/netrunner) |  |
 | nexusoss | Sonatype Nexus Repository manager OSS |  | [Package Draft](https://github.com/YunoHost-Apps/nexusoss_ynh) | 
 | NocoDB | Airtable alternative / turn any SQL db into a smart spreadsheet | [Upstream](https://github.com/nocodb/nocodb) | |
