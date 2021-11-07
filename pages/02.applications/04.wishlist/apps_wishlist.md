@@ -321,7 +321,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Xonotic](https://xonotic.org) |  | [Upstream](https://gitlab.com/xonotic) |  |
 | yacy | Free and decentrelized search engine |  | [Package Draft](https://github.com/YunoHost-Apps/yacy_ynh) |
 | [Yggdrasil](https://yggdrasil-network.github.io/) |  | [Upstream](https://github.com/yggdrasil-network/yggdrasil-go) |  |
-| your_spotify | Self hosted Spotify tracking dashboard | [Upstream](https://github.com/Yooooomi/your_spotify 'your_spotify source code on GitHub') | |
+| your_spotify | Self hosted Spotify tracking dashboard | [Upstream](https://github.com/Yooooomi/your_spotify) | |
 | youtube-dl-webui | Web interface for youtube-dl |  | [Package Draft](https://github.com/YunoHost-Apps/youtube-dl-webui_ynh) |
 | yunofav | A page of favorite links |  | [Package Draft](https://github.com/YunoHost-Apps/yunofav_ynh) |
 | [yunohost](https://yunohost.org) | YunoHost in YunoHost, crazy :D ! |  | [Package Draft](https://github.com/aymhce/yunohost_ynh) |
