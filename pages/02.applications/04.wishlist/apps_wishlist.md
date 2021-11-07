@@ -197,6 +197,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Pelias |  | [Upstream](https://github.com/pelias/pelias) |  |
 | Pelican | Pelican Static Site Generator |  | [Package Draft](https://github.com/YunoHost-Apps/pelican_ynh) |
 | [Penpot](https://penpot.app/) | Design Freedom for Teams |  [Upstream](https://github.com/penpot) |  |
+| personal-management-system | Your web application for managing personal data. | [Upstream](https://github.com/Volmarg/personal-management-system 'source code on GitHub') |  |
 | [Photoprism](https://photoprism.org/) |  | [Upstream](https://github.com/photoprism/photoprism) |  |
 | phplicensewatcher | A license manager |  | [Package Draft](https://github.com/YunoHost-Apps/phplicensewatcher_ynh) |
 | [PHPList](https://www.phplist.com) |  | [Upstream](https://github.com/phpList) |  |
@@ -320,6 +321,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Xonotic](https://xonotic.org) |  | [Upstream](https://gitlab.com/xonotic) |  |
 | yacy | Free and decentrelized search engine |  | [Package Draft](https://github.com/YunoHost-Apps/yacy_ynh) |
 | [Yggdrasil](https://yggdrasil-network.github.io/) |  | [Upstream](https://github.com/yggdrasil-network/yggdrasil-go) |  |
+| your_spotify | Self hosted Spotify tracking dashboard | [Upstream](https://github.com/Yooooomi/your_spotify 'your_spotify source code on GitHub') | |
 | youtube-dl-webui | Web interface for youtube-dl |  | [Package Draft](https://github.com/YunoHost-Apps/youtube-dl-webui_ynh) |
 | yunofav | A page of favorite links |  | [Package Draft](https://github.com/YunoHost-Apps/yunofav_ynh) |
 | [yunohost](https://yunohost.org) | YunoHost in YunoHost, crazy :D ! |  | [Package Draft](https://github.com/aymhce/yunohost_ynh) |
