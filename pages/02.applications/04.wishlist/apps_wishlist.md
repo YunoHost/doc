@@ -197,7 +197,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Pelias |  | [Upstream](https://github.com/pelias/pelias) |  |
 | Pelican | Pelican Static Site Generator |  | [Package Draft](https://github.com/YunoHost-Apps/pelican_ynh) |
 | [Penpot](https://penpot.app/) | Design Freedom for Teams |  [Upstream](https://github.com/penpot) |  |
-| personal-management-system | Your web application for managing personal data. | [Upstream](https://github.com/Volmarg/personal-management-system 'source code on GitHub') |  |
+| personal-management-system | Your web application for managing personal data. | [Upstream](https://github.com/Volmarg/personal-management-system) |  |
 | [Photoprism](https://photoprism.org/) |  | [Upstream](https://github.com/photoprism/photoprism) |  |
 | phplicensewatcher | A license manager |  | [Package Draft](https://github.com/YunoHost-Apps/phplicensewatcher_ynh) |
 | [PHPList](https://www.phplist.com) |  | [Upstream](https://github.com/phpList) |  |
