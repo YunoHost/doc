@@ -431,6 +431,7 @@ Pour y parvenir, vous devez vous connecter à votre Raspberry Pi en tant que roo
 ```
 ssh root@yunohost.local
 ```
+(utilisez `yunohost-2.local`, etc. s'il y a plusieurs serveurs YunoHost sur le réseau)
 
 Ensuite, lancez les commandes suivantes pour contourner le dysfonctionnement de Metronome :
 ```
@@ -486,7 +487,7 @@ curl https://install.yunohost.org | bash
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="À partir de l'interface web"]
 {%if at_home %}
-Dans un navigateur web, tapez dans la barre d'adresse **{% if internetcube %}`https://internetcube.local`{% else %}`https://yunohost.local`{% endif %}**.
+Dans un navigateur web, tapez dans la barre d'adresse **{% if internetcube %}`https://internetcube.local`{% else %}`https://yunohost.local` (utilisez `yunohost-2.local`, etc. s'il y a plusieurs serveurs YunoHost sur le réseau){% endif %}**.
 
 !!! Si ça ne fonctionne pas, vous devez [chercher l'adresse IP locale du serveur](/finding_the_local_ip). L'adresse ressemble typiquement à `192.168.x.y`, et vous devriez taper `https://192.168.x.y` dans la barre d'adresse du navigateur.
 {% else %}

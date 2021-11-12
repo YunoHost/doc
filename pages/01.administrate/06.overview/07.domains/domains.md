@@ -21,6 +21,24 @@ Finally, take note that, in the context of YunoHost, there is no hierarchy betwe
 
 If your domain has special, non-latin characters, you need to use its [internationalized version](https://en.wikipedia.org/wiki/Internationalized_domain_name) through [Punycode](https://en.wikipedia.org/wiki/Punycode). You can use [this converter](https://www.charset.org/punycode), and use the converted domain name in your YunoHost configuration. 
 
+## Local domains
+
+Starting from YunoHost v4.3, domains ending by `.local` are fully supported, in addition to the default `yunohost.local`.
+They do not use the DNS protocol, but the mDNS one (also known as Zeroconf, Bonjour), which allows them to be published with no specific configuration but exclusively on your local network or VPN.
+Their use is this especially suitable when you do not want one of your apps to be available on the Internet.
+
+!!!! mDNS protocol does not allow for subdomains to be created. So `domain.local` will work, while `sub.domain.local` is not possible.
+
+`Yunomdns` service takes care of publishing your `.local` domains on your network.
+It has a configuration file, `/etc/yunohost/mdns.yml`, which allows you to choose which domains are published, and on which network interfaces.
+This file is automatically regenerated whenever you add or delete a `.local` domain.
+
+The service will always try to publish `yunohost.local`. If you have multiple YunoHost servers on your network, try `yunohost-2.local`, and so on.
+The number may change depending on which server starts first, so do not rely on it to use actual apps and create your own domains.
+
+!! Unfortunately, Android devices do not seem to be listening to mDNS protocol.
+!! To be able to reach `.local` domains on your Android devices, you will have to add in their DNS settings your YunoHost server's local IP address.
+
 ## DNS configuration
 
 DNS (Domain Name System) is a system that allows computers from around the world to translate human-readable domain names (such as `yolo.com`) to machine-understandable adresses called IP addresses (such as `11.22.33.44`). For this translation (and other features) to work, you must carefully configure DNS records. 

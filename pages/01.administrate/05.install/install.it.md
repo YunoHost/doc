@@ -430,6 +430,7 @@ To achieve this, you need to connect on your raspberry pi as root user [via SSH]
 ```
 ssh root@yunohost.local
 ```
+(o `yunohost-2.local`, e così via se più server YunoHost sono sulla tua rete)
 
 Then run the following commands to work around the metronome issue:
 ```
@@ -486,7 +487,7 @@ curl https://install.yunohost.org | bash
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
 {%if at_home %}
-In an internet browser, type **{% if internetcube %}`https://internetcube.local`{% else %}`https://yunohost.local`{% endif %}**.
+In an internet browser, type **{% if internetcube %}`https://internetcube.local`{% else %}`https://yunohost.local` (o `yunohost-2.local`, e così via se più server YunoHost sono sulla tua rete){% endif %}**.
 
 !!! If this doesn't work, you can [look for the the local IP address of your server](/finding_the_local_ip). The address typically looks like `192.168.x.y`, and you should therefore type `https://192.168.x.y` in your browser's address bar.
 {% else %}

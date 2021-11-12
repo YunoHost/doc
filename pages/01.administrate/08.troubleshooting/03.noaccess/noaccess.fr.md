@@ -117,7 +117,7 @@ Pour connaître votre IP locale, certaines BOX proposent une cartographie du ré
 sudo arp-scan --local
 ```
 
-Vous pouvez aussi essayer avec le domaine `yunohost.local` s'il n'y a qu'un seul YunoHost sur votre réseau.
+Vous pouvez aussi essayer avec le domaine `yunohost.local`, `yunohost-2.local`, etc. selon le nombre de serveurs YunoHost sur votre réseau.
 
 Il faut voir avec votre fournisseur de VPN pour renouveler le VPN et mettre à jour les paramètre de l'app VPN Client.
 
