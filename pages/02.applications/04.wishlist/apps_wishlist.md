@@ -62,7 +62,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | DockerUI | Deploy applications with Docker |  | [Package Draft](https://github.com/YunoHost-Apps/dockerui_ynh) |
 | Docspell | Simple document organizer | [Upstream](https://github.com/eikek/docspell) |  |
 | [DomainMOD](https://domainmod.org) | Domain portfolio management application | | |
-| Draw.io | Online diagram creation | [Upstream](https://github.com/jgraph/drawio) |  |
 | Dynette | Dynette is a dyndns server | [Upstream](https://github.com/YunoHost/dynette) | [Package Draft](https://github.com/YunoHost-Apps/dynette_ynh) |
 | DrakonHub | Online editor for Drakon diagrams | [Upstream](https://github.com/stepan-mitkin/drakonhub) | |
 | [eLabFTW](https://www.elabftw.net/) | Electronic lab notebook | [Upstream](https://github.com/elabftw/elabftw) |  |
@@ -207,6 +206,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [PicApport](https://www.picapport.de/) | Self-hosted private photo server |  |  |
 | Pico |  | [Upstream](https://github.com/picocms/Pico) |  |
 | Pol | RSS generator website | [Upstream](https://github.com/taroved/pol) |  |
+| [Planka](https://planka.app/) |  Free open source kanban board for workgroups. | [Upstream](https://github.com/plankanban/planka) | |
 | [Plausible Analytics](https://plausible.io) |  Simple, Open Source, and privacy-friendly web analytics alternative to Google Analytics. | [Upstream](https://github.com/plausible/analytics) | |
 | Playmaker |  | [Upstream](https://github.com/NoMore201/playmaker) |  |
 | [plonecms](plone.org) | Create a modern website with a CMS written in Python |  | [Package Draft](https://github.com/YunoHost-Apps/plonecms_ynh) |
@@ -264,6 +264,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [SocialHome](https://socialhome.network) | A federated personal profile | [Upstream](https://github.com/jaywink/socialhome) |  |
 | [sonerezh](https://www.sonerezh.bzh) | Stream music from everywhere |  | [Package Draft](https://github.com/YunoHost-Apps/sonerezh_ynh) |
 | Spacedeck | A real-time collaborative whiteboard | [Upstream](https://github.com/spacedeck/spacedeck-open) |  |
+| [SparkleShare (Dazzle)](https://www.sparkleshare.org/) | SparkleShare host  | [Upstream](https://github.com/hbons/Dazzle) |  |
 | sphinx |  | [Upstream](https://github.com/sphinx-doc/sphinx) | [Package Draft](https://github.com/YunoHost-Apps/sphinx_ynh) |
 | squid3| A caching proxy |  | [Package Draft](https://github.com/YunoHost-Apps/squid3_ynh) |
 | [Stackedit](https://stackedit.io) |  | [Upstream](https://github.com/benweet/stackedit) |  |
@@ -281,7 +282,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Taiga](https://taiga.io) |  | [Upstream](https://github.com/taigaio/) |  |
 | [Tailscale](https://tailscale.com/) | [Wireguard](https://www.wireguard.com/)-based Mesh-VPN | [Upstream](https://github.com/tailscale/tailscale) |  |
 | [Taskwarrior](https://taskwarrior.org) |  | [Upstream](https://github.com/GothenburgBitFactory/taskwarrior) |  |
-| [teampass](https://www.teampass.net) | Passwords Manager |  | [Package Draft](https://github.com/YunoHost-Apps/teampass_ynh) |
 | [Technitium DNS](https://technitium.com/dns/) |  | [Upstream](https://github.com/TechnitiumSoftware/DnsServer) |  |
 | [teddit](https://teddit.net/) | Alternative Reddit front-end focused on privacy | [Upstream](https://codeberg.org/teddit/teddit) |  |
 | [Teddy.io](https://teedy.io/) | Document manager | [Upstream](https://github.com/sismics/docs) |  |
