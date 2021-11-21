@@ -209,6 +209,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [pia](https://github.com/LINCnil/pia) | A tool to help carrying out Privacy Impact Assessments |  | [Package Draft](https://github.com/YunoHost-Apps/pia_ynh) |
 | [PicApport](https://www.picapport.de/) | Self-hosted private photo server |  |  |
 | Pico |  | [Upstream](https://github.com/picocms/Pico) |  |
+| [Pinry](https://docs.getpinry.com/) |  Open source tiling image board | [Upstream](https://github.com/pinry/pinry/) | |
 | Pol | RSS generator website | [Upstream](https://github.com/taroved/pol) |  |
 | [Planka](https://planka.app/) |  Free open source kanban board for workgroups. | [Upstream](https://github.com/plankanban/planka) | |
 | [Plausible Analytics](https://plausible.io) |  Simple, Open Source, and privacy-friendly web analytics alternative to Google Analytics. | [Upstream](https://github.com/plausible/analytics) | |
