@@ -19,14 +19,14 @@ Puede unirse a una sala de chat utilizando :
 
 Existen salas publicas de chat de [soporte](/help) y ayuda para YunoHost:
 - IRC: **#yunohost** on libera.chat ;
-- Matrix: **#yunohost:libera.chat** ;
+- Matrix: **[#yunohost:libera.chat](https://matrix.to/#/#yunohost:libera.chat)** ;
 - XMPP: **[support@conference.yunohost.org](xmpp:support@conference.yunohost.org?join)**
 
 #### sala de chat para desarrolladores
 
 Salas de chat para el desarollo de YunoHost:
 - IRC: **#yunohost-dev** on libera.chat ;
-- Matrix: **#yunohost-dev:matrix.org** ;
+- Matrix: **#[yunohost-dev:matrix.org](https://matrix.to/#/#yunohost-dev:libera.chat)** ;
 - XMPP: **[dev@conference.yunohost.org](xmpp:dev@conference.yunohost.org?join)**
 
 Actualmente, la sala principal de chat para contribuciones en YunoHost
@@ -35,12 +35,12 @@ Para mas ayuda, vea la sala de chat **#yunohost** encima.
 #### Sala de chat para las integración de aplicaciones
 Estos permite la ayuda mutua para los integradores de aplicaciones y también para conversar de evoluciones et de herramientas de integración continua.
 - IRC: **#yunohost-apps** en libera.chat
-- Matrix: **#yunohost-apps:matrix.org**
+- Matrix: **[#yunohost-apps:matrix.org](https://matrix.to/#/#yunohost-apps:matrix.org)**
 - XMPP: **[apps@conference.yunohost.org](xmpp:apps@conference.yunohost.org?join)**
 
 #### Sala de chat de Documentación 
 Lugar donde la comunidad conversa sincroniza y mantiene actualisado la documentación en los aspectos varios como (backend, frontend, apps, proyecto, comunidad...)
 Puede tambien compartir sus materiales sobre YunoHost (videos, presentaciones, etc.).
 - IRC: **#yunohost-doc** on libera.chat
-- Matrix: **#yunohost-doc:matrix.org**
+- Matrix: **[#yunohost-doc:matrix.org](https://matrix.to/#/#yunohost-doc:matrix.org)**
 - XMPP: **[doc@conference.yunohost.org](xmpp:doc@conference.yunohost.org?join)**
