@@ -494,7 +494,7 @@ In an internet browser, type **{% if internetcube %}`https://internetcube.local`
 You can perform the initial configuration with the web interface by typing in the adress bar of your web browser **the public IP address of your server**. Typically, your VPS provider should have provided you with the IP of the server.
 {% endif %}
 
-! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). For now, you should add a security exception to accept the current certificate. (Though PLEASE, don't take the habit to blindly accepting this kind of security alerts !)
+! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). For now, you should add a security exception to accept the current certificate. (Though PLEASE, don't take the habit to blindly accepting this kind of security alert!)
 
 {% if not internetcube %}
 You should then land on this page :
