@@ -26,6 +26,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [AnonAddy](https://anonaddy.com/) | Anonymous email forwarding - Create Unlimited Email Aliases For Free | [Upstream](https://github.com/anonaddy/anonaddy) |  |
 | [Apache Superset](https://superset.apache.org/) | Apache Superset is a Data Visualization and Data Exploration Platform | [Upstream](https://github.com/apache/superset) |  |
 | [askbot](https://askbot.com/) | Questions and answers |  | [Package Draft](https://github.com/zamentur/askbot_ynh) |
+| [Archivematica](https://www.archivematica.org/) | Mature digital preservation system designed to maintain standards-based, long-term access to collections of digital objects. | [Upstream](https://github.com/artefactual/archivematica) |  |
 | [Astral](https://astralapp.com/) | Organize Your GitHub Stars With Ease |[Upstream](https://github.com/astralapp/astral)|  |
 | [Baserow](https://baserow.io/) | Open source no-code database tool and Airtable alternative. | [Upstream](https://gitlab.com/bramw/baserow) |  |
 | [Beeper](https://www.beeper.com/) | A unified inbox for 15 chat networks. | [Upstream](https://gitlab.com/beeper) |  |
