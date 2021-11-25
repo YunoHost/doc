@@ -27,6 +27,8 @@ If your YunoHost server is used in a critical production environment, or if you 
 
 ! **WARNING:** Following those instructions requires advanced knowledge of system administration.
 
+!!!! **TIP** Never close your current SSH connection before checking that your alterations work. Test your new configuration by opening a new terminal or window. That way, you can undo your alterations if anything goes wrong.
+
 ### SSH authentication via key
 
 By default, the SSH authentication uses the administration password. Deactivating this kind of authentication and replacing it by a key mechanism is advised.
