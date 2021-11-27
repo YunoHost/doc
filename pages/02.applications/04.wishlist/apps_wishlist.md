@@ -330,6 +330,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Wisemapping | An online mind mapping editor | [Upstream](https://bitbucket.org/wisemapping/wisemapping-open-source) | [Package Draft](https://github.com/YunoHost-Apps/wisemapping_ynh) |
 | WildDuck | Opinionated email server | [Upstream](https://github.com/nodemailer/wildduck) |  |
 | WorkAdventure | A web-based collaborative workspace for small to medium teams | [Upstream](https://github.com/thecodingmachine/workadventure) |  |
+| [xBrowserSync](https://www.xbrowsersync.org/) | A self-hosted bookmark sync tool, with browser plugins and mobile clients available | [Upstream](https://github.com/xbrowsersync/api) |  |
 | Xibo | A FLOSS digital signage solution | [Upstream](https://github.com/xibosignage) |  |
 | [Xonotic](https://xonotic.org) |  | [Upstream](https://gitlab.com/xonotic) |  |
 | yacy | Free and decentrelized search engine |  | [Package Draft](https://github.com/YunoHost-Apps/yacy_ynh) |
