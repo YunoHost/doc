@@ -29,7 +29,7 @@ Si votre serveur YunoHost est dans un environnement de production critique ou qu
 
 ! **Attention :** l’application des conseils suivants nécessite une connaissance avancée du fonctionnement et de l’administration d’un serveur. Pensez à vous renseigner avant de procéder à cette mise en place.
 
-!!!! **Astuce :** Ne fermez jamais votre connection SSH initiale sans avoir vérifié que vos modifications fonctionnent. Testez vos modifications dans une nouvelle fenêtre ou terminal. Ainsi, vous pourrez défaire vos modifications sans vous retrouver bloqués.
+!!!! **Astuce :** Ne fermez jamais votre connexion SSH initiale sans avoir vérifié que vos modifications fonctionnent. Testez vos modifications dans une nouvelle fenêtre ou terminal. Ainsi, vous pourrez défaire vos modifications sans vous retrouver bloqués.
 
 ### Authentification SSH par clé
 
