@@ -95,6 +95,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Framaestro_hub | Online service aggregator hub | [Upstream](https://github.com/mozilla/togetherjs.git) | [Package Draft](https://github.com/YunoHost-Apps/framaestro_hub_ynh) |
 | [freeboard](https://freeboard.io/) | A real-time dashboard builder for IOT |  | [Package Draft](https://github.com/YunoHost-Apps/freeboard_ynh) |
 | [freepbx](https://freepbx.org) | VOIP |  | [Package Draft](https://github.com/YunoHost-Apps/freepbx_ynh) |
+| [Freescout](https://freescout.net/) |  Helpdesk & Shared Mailbox |  | [Upstream](https://github.com/freescout-helpdesk/freescout) |
 | [ftssolr](https://wiki.dovecot.org/Plugins/FTS/Solr) | Full-text search via IMAP through a Solr indexing server |  | [Package Draft](https://github.com/YunoHost-Apps/ftssolr_ynh) |
 | [Gancio](https://gancio.org/) |  | [Upstream](https://framagit.org/les/gancio) |  |
 | gateone | HTML5-powered terminal emulator and SSH client |  | [Package Draft](https://github.com/Kloadut/gateone_ynh) |
