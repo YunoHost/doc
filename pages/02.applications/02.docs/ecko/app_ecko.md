@@ -17,7 +17,9 @@ routes:
 - [Useful links](#useful-links)
 - [Compatible Apps](#compatible-apps)
 
-Ecko is community-driven fork of Mastodon's federated social network software that is managed by the Magic Stone community using the Collaborative Code Construction Contract (C4).
+---
+
+Ecko is community-driven fork of Mastodon's federated social networking software that is managed by Magic Stone using the Collaborative Code Construction Contract (C4). See the website for more information about Magic Stone and C4.
 
 ## Limitations with YunoHost
 
@@ -25,15 +27,20 @@ Some configuration parameters such as post-length and poll options can only be u
 
 ## Useful links
 
-+ Website: [magicstone.dev](https://magicstone.dev/)
++ Having a problem? Create an issue at [github.com -YunoHost-Apps/ecko_ynh/issues](https://github.com/YunoHost-Apps/ecko_ynh/issues)
 + YunoHost application package repository: [github.com - YunoHost-Apps/Ecko\_ynh](https://github.com/YunoHost-Apps/ecko_ynh)
-+ Fix a bug or an improvement by creating a ticket (issue): [github.com -YunoHost-Apps/ecko_ynh/issues](https://github.com/YunoHost-Apps/ecko_ynh/issues)
++ Website: [magicstone.dev](https://magicstone.dev/)
 
 ## Compatible Apps
-https://tusky.app/
-https://twidere.com/
-https://fedilab.app/
-https://apps.apple.com/us/app/mastodon-for-iphone/id1571998974
-https://apps.apple.com/us/app/mast-for-mastodon/id1437429129
-https://apps.apple.com/us/app/mercury-for-mastodon/id1486749200
+[Tusky](https://tusky.app/)
+
+[Twidere](https://twidere.com/)
+
+[Fedilab](https://fedilab.app/)
+
+[Mastodon for iOS](https://apps.apple.com/us/app/mastodon-for-iphone/id1571998974)
+
+[Mast for Mastodon](https://apps.apple.com/us/app/mast-for-mastodon/id1437429129)
+
+[Mercury for Mastodon](https://apps.apple.com/us/app/mercury-for-mastodon/id1486749200)
 
