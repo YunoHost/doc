@@ -30,6 +30,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Archivematica](https://www.archivematica.org/) | Mature digital preservation system designed to maintain standards-based, long-term access to collections of digital objects. | [Upstream](https://github.com/artefactual/archivematica) |  |
 | [ArchivesSpace](https://archivesspace.org/) | Archives information management application for managing and providing Web access to archives, manuscripts and digital objects. | [Upstream](https://github.com/archivesspace/archivesspace) |  |
 | [Astral](https://astralapp.com/) | Organize Your GitHub Stars With Ease |[Upstream](https://github.com/astralapp/astral)|  |
+| [Azuracast](https://https://azuracast.com/) | A Simple, Self-Hosted Web Radio Management Suite |[Upstream](https://github.com/AzuraCast/AzuraCast)|  |
 | [Baserow](https://baserow.io/) | Open source no-code database tool and Airtable alternative. | [Upstream](https://gitlab.com/bramw/baserow) |  |
 | [Beeper](https://www.beeper.com/) | A unified inbox for 15 chat networks. | [Upstream](https://gitlab.com/beeper) |  |
 | [BigBlueButton](https://bigbluebutton.org) | Web conferencing system | [Upstream](https://github.com/bigbluebutton/bigbluebutton) |  |
