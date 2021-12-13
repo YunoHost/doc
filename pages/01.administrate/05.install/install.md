@@ -589,7 +589,7 @@ yunohost diagnosis show --issues --human-readable
 
 ## [fa=lock /] Get a Let's Encrypt certificate
 
-Once you configured DNS records and port forwarding (if needed), you should be able to install a a Let's Encrypt certificate. This will get rid of the spooky security warning from earlier for new visitors.
+Once you configured DNS records and port forwarding (if needed), you should be able to install a Let's Encrypt certificate. This will get rid of the spooky security warning from earlier for new visitors.
 
 For more detailled instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/certificate).
 
