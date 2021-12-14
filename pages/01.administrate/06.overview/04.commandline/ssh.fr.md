@@ -78,14 +78,14 @@ Les utilisateurs YunoHost créés via l'interface d'administration sont gérés 
 ! Faites attention à qui vous donnez accès à SSH. Cela augmente encore plus la surface d'attaque disponible pour un utilisateur malveillant.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="A partir de l'interface web"]
+[ui-tab title="À partir de l'interface web"]
 Se rendre dans `Utilisateurs > Gérer les groupes et les autorisations`
 
-A partir de là, il est possible d'ajouter les permissions SFTP ou SSH à un utilisateur ou un groupe au choix.
+À partir de là, il est possible d'ajouter les permissions SFTP ou SSH à un utilisateur ou un groupe au choix.
 
 Si vous souhaitez ajouter une clé publique SSH à l'utilisateur, vous devez le faire en ligne de commande, l'interface web ne proposant pas encore cette fonctionnalité.
 [/ui-tab]
-[ui-tab title="A partir de la ligne de commande"]
+[ui-tab title="À partir de la ligne de commande"]
 Pour autoriser un utilisateur ou un groupe à accéder en SFTP ou en SSH :
 ```bash
 # SFTP
@@ -145,7 +145,7 @@ vont successivement lister toutes les catégories disponibles, puis les actions 
 ### La commande `yunopaste`
 Cette commande est utile lorsque vous voulez communiquer à une autre personne le retour d'une commande.
 
-Exemple:
+Exemple :
 ```bash
 yunohost tools diagnosis | yunopaste
 ```
