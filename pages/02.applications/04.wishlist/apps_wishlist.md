@@ -338,7 +338,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [xBrowserSync](https://www.xbrowsersync.org/) | A self-hosted bookmark sync tool, with browser plugins and mobile clients available | [Upstream](https://github.com/xbrowsersync/api) |  |
 | Xibo | A FLOSS digital signage solution | [Upstream](https://github.com/xibosignage) |  |
 | [Xonotic](https://xonotic.org) |  | [Upstream](https://gitlab.com/xonotic) |  |
-| yacy | Free and decentrelized search engine |  | [Package Draft](https://github.com/YunoHost-Apps/yacy_ynh) |
+| [YaCy](https://yacy.net/) | Free distributed search engine, built on principles of peer-to-peer (P2P) networks | [Upstream])(https://github.com/yacy/yacy_search_server) | [Package Draft](https://github.com/YunoHost-Apps/yacy_ynh) |
 | [Yggdrasil](https://yggdrasil-network.github.io/) |  | [Upstream](https://github.com/yggdrasil-network/yggdrasil-go) |  |
 | your_spotify | Self hosted Spotify tracking dashboard | [Upstream](https://github.com/Yooooomi/your_spotify) | |
 | youtube-dl-webui | Web interface for youtube-dl |  | [Package Draft](https://github.com/YunoHost-Apps/youtube-dl-webui_ynh) |
