@@ -320,6 +320,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Twake](https://twake.app/fr)| All of the organizational tools you need to make your projects succeed brought together on one platform.| | |
 | Twister |  | [Upstream](https://github.com/miguelfreitas/twister-core/) |  |
 | [TwitRSS.me](https://twitrss.me/) | Create RSS feeds from Twitter | [Upstream](https://github.com/ciderpunx/twitrssme) |  |
+| [ultrasonics](https://github.com/XDGFX/ultrasonics) | Sync music playlists between all your music services: Spotify, Deezer, Apple Music, Plex, etc. | [Upstream](https://github.com/XDGFX/ultrasonics) |  |
 | [umap](https://umap.openstreetmap.fr/) | Cartography software |  | [Package Draft](https://github.com/YunoHost-Apps/umap_ynh) |
 | [unbound](https://nlnetlabs.nl/projects/unbound/about/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/unbound_ynh) |
 | [upmpdcli](https://www.lesbonscomptes.com/upmpdcli/) |  | [Upstream](https://framagit.org/medoc92/upmpdcli) |  |
