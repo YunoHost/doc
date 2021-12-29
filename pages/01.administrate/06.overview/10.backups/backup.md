@@ -13,9 +13,9 @@ In the context of self-hosting, backups are an important element to compensate f
 
 ### Backup
 
-YunoHost comes with a backup system, that allows to backup (and restore) system configurations and data (e.g. mails) and apps if they support it.
+YunoHost comes with a backup system, that allows you to backup (and restore) system configurations and data (e.g. emails) and apps if they support it.
 
-You can manage backups either from the command line (`yunohost backup --help`) or from the web administration (in the Backups section) though some features are not yet available in the webadmin.
+You can manage backups either from the command line (`yunohost backup --help`) or from the web administration (in the Backups section), though some features are not yet available in the webadmin.
 
 The current default method consists in creating a `.tar` archive containing all relevant files.
 
@@ -24,14 +24,14 @@ The current default method consists in creating a `.tar` archive containing all 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the webadmin"]
 
-You can easily create backup archives from the webadmin by going in `Backups > Local storage` and clicking on `New backup`. You will then be asked to select which configuration, data and apps you want to backup.
+You can easily create backup archives from the webadmin by going to `Backups > Local storage` and clicking on `New backup`. You will then be asked to select which configuration, data and apps you want to backup.
 
 ![picture of YunoHost's backup pannel](image://backup.png)
 
 [/ui-tab]
 [ui-tab title="From the command line"]
 
-You can create a new backup archive with the command line. Here are a few simple example of commands and their corresponding behavior:
+You can create a new backup archive from the command line. Here are a few simple examples of commands and their corresponding behavior:
 
 - Backing up everything (all system parts and apps):
 
@@ -51,19 +51,19 @@ You can create a new backup archive with the command line. Here are a few simple
   yunohost backup create --apps wordpress shaarli
   ```
 
-- Backing up only mails
+- Backing up only emails
 
   ```bash
   yunohost backup create --system data_mail
   ```
 
-- Backing up mails and wordpress
+- Backing up emails and wordpress
 
   ```bash
   yunohost backup create --system data_mail --apps wordpress
   ```
 
-For more informations and options about backup creation, consult `yunohost backup create --help`. You can also list system parts that can be backuped with `yunohost hook list backup`.
+For more information and options about backup creation, consult `yunohost backup create --help`. You can also list the system parts that can be backed up with `yunohost hook list backup`.
 [/ui-tab]
 [/ui-tabs]
 
@@ -71,7 +71,7 @@ For more informations and options about backup creation, consult `yunohost backu
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the webadmin"]
-After creating backups, it is possible to list and inspect them using the corresponding views in the web administration interface. A button offers to download the archive. If the archive is larger than 3GB, it may be better to proceed via SFTP.
+After creating backups, it is possible to list and inspect them using the corresponding views in the web administration interface. A button allows you to download the archive. If the archive is larger than 3GB, it may be better to proceed via SFTP.
 
 `Backup > Local Archives > <Archive name> > Download`
 
@@ -93,14 +93,14 @@ scp admin@your.domain.tld:/home/yunohost.backup/archives/<archive_name>.tar ./
 [/ui-tab]
 [/ui-tabs]
 
-! Don't forget to store your backup in a different place than your server.
+! Don't forget to store your backup in a different place to your server.
 
 
-!!! If you want, you can connect an external disk to your server so that the archives arrive directly on it. See this guide for [Add an external storage to your server](/external_storage)
+!!! If you want, you can connect an external disk to your server so that the archives arrive directly on it. See this guide to [Adding external storage to your server](/external_storage)
 
 ### Testing
 
-You should regularly test your backups by at least listing the contents of the archives and checking the weight of the associated data. It is best to practice restoring regularly.
+You should regularly test your backups by at least listing the contents of the archives and checking the size of the associated data. It is best to practice restoring regularly.
 ```bash
 # List the files
 tar -tvf /home/yunohost.backup/archives/ARCHIVE.tar | less
@@ -128,7 +128,7 @@ Go in `Backup > Local storage` and select your archive. You can then select whic
 
 From the command line, you can run `yunohost backup list` to get the available archive names. They are basically their file name without extension.
 
-You can then run `yunohost backup restore <archivename>` (hence without its `.tar` extension) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use for instance `yunohost backup restore <archivename> --apps wordpress` which will restore only the wordpress app.
+You can then run `yunohost backup restore <archivename>` (hence without its `.tar` extension) to restore an archive. As for `yunohost backup create`, this will restore everything in the archive by default. If you want to restore only specific items, you can use something like `yunohost backup restore <archivename> --apps wordpress`, which will restore only the wordpress app.
 
 !!! In the case of a complete restoration, it is possible to restore instead of launching the initial configuration.
 [/ui-tab]
@@ -138,7 +138,7 @@ To restore an app, the domain on which it was installed should already be config
 
 #### Upload an archive
 
-In many cases, the archive is not on the server on which you want to restore it. So it has to be uploaded, which depending on its weight can take more or less time.
+In many cases, the archive is not on the server on which you want to restore it. So it has to be uploaded, which depending on its size can take more or less time.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="With an SFTP client"]
