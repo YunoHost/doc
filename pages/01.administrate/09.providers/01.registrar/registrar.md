@@ -14,13 +14,13 @@ routes:
     - '/autodns'
 ---
 
-Since version 4.3, YunoHost includes a mecanism to interface your server with your DNS registrar API, with the purpos of simplifying and automatizing DNS records registration and maintenance.
+Since version 4.3, YunoHost includes a mechanism to interface your server with your DNS registrar API, with the purpose of simplifying and automatizing DNS records registration and maintenance.
 
-The procedure does require an initial configuration where you will need to generate an API key on your registrar's interface.
+The procedure requires an initial configuration where you need to generate an API key on your registrar's interface.
 
-Not all registrars are supported though. So far, the community tested and validated the interface with [Gandi](https://gandi.net) and [OVH](https://ovh.com), which are recommended. The interface with other registrar may work but is still considered experimental until we gather feedback from the community.
+Not all registrars are supported. So far, the community tested and validated the interface with [Gandi](https://gandi.net) and [OVH](https://ovh.com), which are recommended. The interface with other registrars may work, but is still considered experimental until we gather feedback from the community.
 
-The list bellow can help you to choose a registrar if you plan to buy a domain name to use it with YunoHost.
+The list below can help you to choose a registrar if you plan to buy a domain name to use it with YunoHost.
 
 
 | Registrar | Compatibility | Easy to obtain an API key | Howto |
