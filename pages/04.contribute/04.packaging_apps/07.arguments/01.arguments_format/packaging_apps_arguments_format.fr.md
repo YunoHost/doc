@@ -1,5 +1,5 @@
 ---
-title: YunoHost Arguments Format
+title: Format des arguments Yunohost
 template: docs
 taxonomy:
     category: docs
@@ -7,16 +7,17 @@ routes:
   default: '/packaging_apps_arguments_format'
 ---
 
-In YunoHost application developpement there are several places where you end up
-writting questions for your user like in the `manifest.json/toml`, the
-`config_panel.json/toml` or `actions.json/toml`.
+Dans le développement d'applications YunoHost, il y a plusieurs endroits où vous pouvez écrire des questions pour votre
+utilisateur comme dans `manifest.json/toml`, `config_panel.json/toml` ou `actions.json/toml`.
 
-This page documents this format and all available kind of questions you can ask
-your user. Unless it's stated otherwise, this format applies to everyplace it's
-usable (for now: installation arguments in `manifest.json/toml`,
-`config_panel.json/toml` and `actions.json/toml`)
+Cette page documente ce format et tous les types de questions disponibles que vous pouvez poser à votre utilisateur.
+Sauf indication contraire, ce format s'applique partout où il est utilisable ( à l'heure actuelle :
+les arguments d'installation dans `manifest.json/toml`, `config_panel.json/toml` et `actions.json/toml`)
 
-## YunoHost arguments general format
+Pour aider à la comprehension, les titres sont en français.i Cependant dans le code toml ou javascript,
+le type doit être en anglais (comme dans les exemples).
+
+## Format général des arguments Yunohost
 
 The general format for an argument looks like this:
 [ui-tabs position="top-left" active="0" theme="lite"]
@@ -54,11 +55,11 @@ optional = true # optional, will skip if not answered
 [/ui-tab]
 [/ui-tabs]
 
-## All avaiable types
+## Tous les types disponibles
 
-### String
+### Chaîne de caractères
 
-This one is the simpliest one and is the default type if you don't specify one.
+C'est le type le plus simple et le type par défaut si vous n'en spécifiez pas.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
@@ -87,9 +88,10 @@ default = "some stuff" # optional
 [/ui-tab]
 [/ui-tabs]
 
-### String with choices
+### Chaîne de caractères avec choix
 
-Like string except the user needs to chose in a list of specifics strings.
+Comme la chaine de caractères, sauf que l'utilisateur doit choisir dans une liste de chaîne de caractères spécifiques. 
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
 ```toml
@@ -111,21 +113,20 @@ default = "en" # optional
         "en": "the question in english",
         "fr": "la question en français"
     },
-    "example": "an example value",
+    "example": "Un exemple de valeur",
     "choices": ["fr", "en"],
-    "default": "en" // optional
+    "default": "en" // optionel
 },
 ```
 [/ui-tab]
 [/ui-tabs]
-### Number
 
-Like string except the user needs to enter a number
+### Nombre
 
-Example in toml:
+Comme le type chaîne de caractères (en anglais: `string`) mais uniquement pour les nombres.
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
-
 ```toml
 [maybe.some.stuff.before.the_name]
 type = "number"
@@ -149,10 +150,10 @@ default = 0
 [/ui-tab]
 [/ui-tabs]
 
+### Domaine
 
-### Domain
+Ce type demandera à l'utilisateur de choisir l'un des domaines de son instance YunoHost. 
 
-This type will ask the user to chose one of the domains of their YunoHost instance.
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
 ```toml
@@ -176,10 +177,10 @@ ask.fr = "la question en français"
 [/ui-tab]
 [/ui-tabs]
 
-### Path
+### Chemin (en: Path)
 
-This type will ask the user to chose an URL path (generally to happen it to a
-domain) like "/path/to/my/app"
+Ce type demandera à l'utilisateur de choisir le chemin de l'url (généralement pour arriver à un domaine)
+comme "chemin/vers/mon/application"
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
@@ -200,22 +201,21 @@ default = "/my_app"
         "en": "the question in english",
         "fr": "la question en français"
     },
-    "default": "/my_app"
+    "default": "/my_app"cd
+
 },
 ```
 [/ui-tab]
 [/ui-tabs]
 
-### User
+### Utilisateur
 
-This type will ask the user to select a user in the list of users in their
-YunoHost installation. Generally this is used to select who is going to be the
-admin or who is going to have access to this application.
+Ce type demandera à l'utilisateur de selectionner un utilisateur dans la liste des utilisateurs
+de son instance Yunohost. Généralement, cela est utilisé pour sélectionner celui qui va être l'administrateur
+ou qui va avoir accès à cette application.
 
-Example in toml:
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
-
 ```toml
 [maybe.some.stuff.before.the_name]
 type = "user"
@@ -237,23 +237,22 @@ ask.fr = "la question en français"
 [/ui-tab]
 [/ui-tabs]
 
-### Password
+### Mot de passe
 
-This type will ask the user to input a password. This is generally used to
-input the password for creating an account on the application.
+Ce type demande à l'utilisateur de saisir un mot de passe.
+Celui-ci est généralement utilisé pour saisir le mot de passe permettant
+de créer un compte sur l'application.
 
-In CLI it will behave like any password query and won't print any character on
-type (not "\*\*\*...") for security reasons.
+En ligne de command, il s comporte comme n'importe quelle demande de mot de passe
+et n'affichera aucun caractère (pas de "\*\*\*...") pour des questions de sécurité.
 
-Example in toml:
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
-
 ```toml
 [maybe.some.stuff.before.the_name]
 type = "password"
-ask.en = "the question in english"
-ask.fr = "la question en français"
+ask.en = "the password"
+ask.fr = "le mot de passe"
 ```
 [/ui-tab]
 [ui-tab title="in json"]
@@ -262,22 +261,19 @@ ask.fr = "la question en français"
     "name": "the_name",
     "type": "password",
     "ask": {
-        "en": "the question in english",
-        "fr": "la question en français"
+        "en": "the password",
+        "fr": "le mot de passe"
     }
 },
 ```
 [/ui-tab]
 [/ui-tabs]
 
-### Boolean
+### Booléen
+Ce type demande à l'utilisateur de répondre à question par Vrais ou Faux
 
-This type will ask the user to answer true or false to a question.
-
-Example in toml:
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
-
 ```toml
 [maybe.some.stuff.before.the_name]
 type = "boolean"
@@ -301,15 +297,13 @@ default = true
 [/ui-tab]
 [/ui-tabs]
 
-### App
+### Application
 
-This type will ask the user to select an application in the list of installed
-application on their YunoHost.
+Ce type demande à l'utilisateur de selectionner une application dans la liste
+des apllications installées sur l'instance Yunohost.
 
-Example in toml:
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
-
 ```toml
 [maybe.some.stuff.before.the_name]
 type = "app"
@@ -331,10 +325,10 @@ ask.fr = "la question en français"
 [/ui-tab]
 [/ui-tabs]
 
-### Display text
+### Information
 
-This is a special type that allows the application packager to write some text
-that will be simply displayed. This is useful to provide more context.
+C'est un type spécial qui permet au packageur de l'application à écrire un text
+qui est simplement affiché. C'est utile pour spécifier un peu le context.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
@@ -359,9 +353,10 @@ ask.fr = "le text en français"
 [/ui-tab]
 [/ui-tabs]
 
-### Range
-This type will ask the user to specify a numeric value between two terminals.
-Te precise value, however, is not considered important.
+### Plage de valeurs
+
+Ce type demande à l'utilisateur de choisir une valeur numérique entre de bornes.
+Une valeur précise n'est cependant pas concidérée comme importante.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
@@ -386,8 +381,9 @@ ask.fr = "Indiquer "
 [/ui-tab]
 [/ui-tabs]
 
-### Email
-This type will ask the user to input a email address.
+### Adresse courriel (email)
+
+Ce type demande à l'utilisateur de renseigner une adresse courriel.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
@@ -413,7 +409,8 @@ ask.fr = "l adresse courriel"
 [/ui-tabs]
 
 ### Url
-This type will ask the user to input a url.
+
+Ce type demande à l'utilisateur de renseigner une url.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
@@ -439,7 +436,7 @@ ask.fr = "l url"
 [/ui-tabs]
 
 ### Date
-This type will ask the user to input a date.
+Ce type demande à l'utilisateur de renseigner une date.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
@@ -464,8 +461,9 @@ ask.fr = "la date "
 [/ui-tab]
 [/ui-tabs]
 
-### Time
-This type will ask the user to input a Time (hours and minutes).
+### Temps | Horaire
+
+Ce type demande à l'utilisateur de renseigner un horaire.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
@@ -490,8 +488,9 @@ ask.fr = "l horaire"
 [/ui-tab]
 [/ui-tabs]
 
-### File
-This type will ask the user to input a file.
+### Fichier
+
+Ce type demande à l'utilisateur d'ajouter un fichier.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="in toml"]
