@@ -251,7 +251,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Retroshare](https://retroshare.cc/) |  | [Upstream](https://github.com/RetroShare/RetroShare) |  |
 | [Revolt](https://revolt.chat/) | Chat software similar to Discord | [Upstream](https://github.com/revoltchat) |  |
 | [roadiz](https://www.roadiz.io) | Create a modern website |  | [Package Draft](https://github.com/YunoHost-Apps/roadiz_ynh) |
-| [rocketchat](https://rocket.chat) | A chat platform |  | [Package Draft](https://github.com/YunoHost-Apps/rocketchat_ynh) |
 | rs-short | An URL shortener | [Upstream](https://git.42l.fr/42l/rs-short) |  |
 | RSS-proxy | RSS-proxy allows you to do create an RSS or ATOM feed of almost any website, just by analyzing just the static HTML structure.  | [Upstream](https://github.com/damoeb/rss-proxy) |  |
 | RSSHub | open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything | [Upstream](https://github.com/DIYgod/RSSHub) |  |
