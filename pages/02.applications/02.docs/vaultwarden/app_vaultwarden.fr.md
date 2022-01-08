@@ -26,7 +26,7 @@ Le logiciel est disponible sur la plupart des systèmes d'exploitation (GNU/Linu
 
 ## Configuration
 
-Pour configurer l'appliation il faut se rendre à l'adresse : `sous.domaine.tld/admin`
+Pour configurer l'application il faut se rendre à l'adresse : `sous.domaine.tld/admin`
 
 ## Limitations avec YunoHost
 

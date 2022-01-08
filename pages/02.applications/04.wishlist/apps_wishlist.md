@@ -25,6 +25,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Akaunting | Manage payments/invoices/expenses | [Upstream](https://github.com/akaunting/akaunting) |  |
 | Anki Sync Server | a personal Anki server |[Upstream](https://github.com/ankicommunity/anki-sync-server) |  |
 | [AnonAddy](https://anonaddy.com/) | Anonymous email forwarding - Create Unlimited Email Aliases For Free | [Upstream](https://github.com/anonaddy/anonaddy) |  |
+| [Ansible Matrix Docker Deploy](https://github.com/spantaleev/matrix-docker-ansible-deploy) | Full Featured Matrix Server Setup with All Bridges and Integrations | [Upstream](https://github.com/spantaleev/matrix-docker-ansible-deploy) |  |
 | [Apache Superset](https://superset.apache.org/) | Apache Superset is a Data Visualization and Data Exploration Platform | [Upstream](https://github.com/apache/superset) |  |
 | [askbot](https://askbot.com/) | Questions and answers |  | [Package Draft](https://github.com/zamentur/askbot_ynh) |
 | [Archivematica](https://www.archivematica.org/) | Mature digital preservation system designed to maintain standards-based, long-term access to collections of digital objects. | [Upstream](https://github.com/artefactual/archivematica) |  |
@@ -127,6 +128,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Icecast 2](https://www.icecast.org) |  | [Upstream](https://gitlab.xiph.org/xiph/icecast-server/) |  |
 | [ikiwiki](https://ikiwiki.info) |  |  |  |
 | internetarchive | Offline version of the Internet Archive | [Upstream](https://github.com/internetarchive/dweb-mirror) | [Package Draft](https://github.com/mitra42/internetarchive_ynh) |
+| [Inventaire](https://inventaire.io) | a libre collaborative resource mapper powered by open-knowledge, starting with books! 📚 | [Upstream](https://github.com/inventaire/inventaire) |  |
 | [InvoicePlane](https://invoiceplane.com) |  | [Upstream](https://github.com/InvoicePlane/InvoicePlane) |  |
 | [IPFS](https://ipfs.io) |  | [Upstream](https://github.com/ipfs/ipfs) |  |
 | [Isso](https://posativ.org/isso) | Comment server | [Upstream](https://github.com/posativ/isso) |  |
@@ -182,6 +184,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Museek+ |  | [Upstream](https://github.com/eLvErDe/museek-plus) |  |
 | mycryptochat | Encrypted IM |  | [Package Draft](https://github.com/mrtino/mycryptochat_ynh) |
 | mx-puppet-discord | A bridge between Matrix and Discord | [Upstream](https://github.com/matrix-discord/mx-puppet-discord) |  |
+| [Nautilus](https://myactivity.stream/) | Turn your website into an ActivityPub profile  | [Upstream](https://github.com/aaronpk/Nautilus) |  |
 | Netrunner |  | [Upstream](https://github.com/mtgred/netrunner) |  |
 | nexusoss | Sonatype Nexus Repository manager OSS |  | [Package Draft](https://github.com/YunoHost-Apps/nexusoss_ynh) | 
 | NocoDB | Airtable alternative / turn any SQL db into a smart spreadsheet | [Upstream](https://github.com/nocodb/nocodb) | |
@@ -249,7 +252,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Retroshare](https://retroshare.cc/) |  | [Upstream](https://github.com/RetroShare/RetroShare) |  |
 | [Revolt](https://revolt.chat/) | Chat software similar to Discord | [Upstream](https://github.com/revoltchat) |  |
 | [roadiz](https://www.roadiz.io) | Create a modern website |  | [Package Draft](https://github.com/YunoHost-Apps/roadiz_ynh) |
-| [rocketchat](https://rocket.chat) | A chat platform |  | [Package Draft](https://github.com/YunoHost-Apps/rocketchat_ynh) |
 | rs-short | An URL shortener | [Upstream](https://git.42l.fr/42l/rs-short) |  |
 | RSS-proxy | RSS-proxy allows you to do create an RSS or ATOM feed of almost any website, just by analyzing just the static HTML structure.  | [Upstream](https://github.com/damoeb/rss-proxy) |  |
 | RSSHub | open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything | [Upstream](https://github.com/DIYgod/RSSHub) |  |
@@ -261,7 +263,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [ScenariChain-server](https://download.scenari.software/SCENARIchain-server/) |  |  |  |
 | [Schleuder](https://schleuder.org/schleuder/docs/concept.html) | A GPG-enabled mailing list manager |  |  |
 | scm-manager | Share and manage Git, Mercurial and Subversion repositories |  | [Package Draft](https://github.com/drfred1981/scm-manager_ynh) |
-| scrumblr | Software for notes |  | [Package Draft](https://github.com/YunoHost-Apps/scrumblr_ynh) |
 | [Scuttlebutt Pub](https://www.scuttlebutt.nz/contributing) |  |  |  |
 | [SearXNG](https://searxng.github.io/searxng/) | Fork of SearX, a privacy-respecting metasearch engine | [Upstream](https://github.com/searxng/searxng) |  |
 | [seenthis](https://www.seenthis.net/) | Short-blogging destiné à la veille d’actualité |  | [Package Draft](https://github.com/magikcypress/seenthis_ynh) |
@@ -318,6 +319,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Twake](https://twake.app/fr)| All of the organizational tools you need to make your projects succeed brought together on one platform.| | |
 | Twister |  | [Upstream](https://github.com/miguelfreitas/twister-core/) |  |
 | [TwitRSS.me](https://twitrss.me/) | Create RSS feeds from Twitter | [Upstream](https://github.com/ciderpunx/twitrssme) |  |
+| [ultrasonics](https://github.com/XDGFX/ultrasonics) | Sync music playlists between all your music services: Spotify, Deezer, Apple Music, Plex, etc. | [Upstream](https://github.com/XDGFX/ultrasonics) |  |
 | [umap](https://umap.openstreetmap.fr/) | Cartography software |  | [Package Draft](https://github.com/YunoHost-Apps/umap_ynh) |
 | [unbound](https://nlnetlabs.nl/projects/unbound/about/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/unbound_ynh) |
 | [upmpdcli](https://www.lesbonscomptes.com/upmpdcli/) |  | [Upstream](https://framagit.org/medoc92/upmpdcli) |  |
