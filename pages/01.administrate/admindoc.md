@@ -1,5 +1,5 @@
 ---
-title: Admin guide
+title: Administration guide
 template: chapter
 taxonomy:
     category: docs
@@ -7,6 +7,6 @@ routes:
   default: '/admindoc'
 ---
 
-### Administrator
+### Administer
 
 # Learn about self-hosting, how to install and use YunoHost
