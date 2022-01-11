@@ -141,7 +141,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Kill the newsletter](https://kill-the-newsletter.com/) | Convert email newsletters to RSS feeds | [Upstream](https://github.com/leafac/kill-the-newsletter.com) | |
 | [Kiwix](https://www.kiwix.org/) | Offline Wikipedia or other sites | [Upstream](https://github.com/kiwix/) |  |
 | [Known](https://withknown.com) |  | [Upstream](https://github.com/idno/known) |  |
-| [kodi](https://kodi.tv) | Media center application |  | [Package Draft](https://github.com/YunoHost-Apps/kodi_ynh) |
 | [Koel](https://koel.phanan.net) |  | [Upstream](https://github.com/phanan/koel) |  |
 | Kontalk |  | [Upstream](https://github.com/kontalk) |  |
 | [Koozip](https://koozic.net) |  | [Upstream](https://github.com/DocMarty84/koozic) |  |
