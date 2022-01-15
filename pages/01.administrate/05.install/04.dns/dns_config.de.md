@@ -14,18 +14,18 @@ Ihr Server für andere leicht erreichbar ist und bestimmte Dienste, wie z. B. E-
 Wenn Sie eine [automatische Domain](/dns_nohost_me) verwenden, die vom YunoHost-Projekt bereitgestellt wird,
 sollte die Konfiguration automatisch erfolgen. Wenn Sie Ihren eigenen Domainname
 (z. B. von einem Registrar erworben), müssen Sie manuell Ihre
-Domain über die Schnittstelle Ihres Registrars.
+Domain über die Schnittstelle Ihres Registrars konfigurieren.
 
 ## Empfohlene DNS-Konfiguration
 _N.B. : Die Beispiele hier verwenden den Text: `your.domain.tld`, der durch Ihre eigene Domain (z. B.`www.yunohost.org`) zu ersetzen ist._
 
 YunoHost bietet eine empfohlene DNS-Konfiguration, die auf zwei Arten zugänglich ist :
-- mit dem Webadmin, unter Domains > your.domain.ltd > DNS-Konfiguration ;
-- oder auf der Kommandozeile  `yunohost domain dns-conf ihre.domaine.tld`
+- mit dem Webadmin, unter Domänen > your.domain.tld > DNS-Konfiguration ;
+- oder auf der Kommandozeile  `yunohost domain dns-conf your.domain.tld`
 
 Für einige spezielle Anforderungen oder Installationen und wenn Sie wissen, 
 was Sie tun, müssen Sie diese Empfehlung möglicherweise ändern oder
-hinzufügen andere Dadensätze (z. B. zur Behandlung von Subdomains).
+andere Datensätze hinzufügen (z. B. zur Behandlung von Subdomains).
 
 Die empfohlene Konfiguration sieht typischerweise so aus:
 
@@ -84,16 +84,15 @@ dargestellt wird:
    - Nicht alle dieser Aufzeichnungen sind notwendig. Für eine Minimalinstallation werden nur die fett gedruckten Datensätze benötigt;
 - Der Punkt am Ende `your.domain.tld.` ist wichtig ;) ;
 - `@` entspricht `your.domain.tld`, und z. B.. `muc` entspricht `muc.your.domain.tld` ;
-- Die hier gezeigten Werte sind nur Beispiele! Beziehen Sie sich auf die generierte Konfiguration, um herauszufinden, welche Werte verwenden;
-- Wir empfehlen eine [TTL](https://fr.wikipedia.org/wiki/Time_to_Live#Le_Time_to_Live_dans_le_DNS) von 3600 (1 Stunde). Es ist aber auch möglich einen anderen Wert zu verwenden, wenn Sie wissen, was Sie tun ;
+- Die hier gezeigten Werte sind nur Beispiele! Beziehen Sie sich auf die generierte Konfiguration, um herauszufinden, welche Werte zu verwenden sind;
+- Wir empfehlen eine [TTL](https://de.wikipedia.org/wiki/Time_to_Live#Domain_Name_System) von 3600 (1 Stunde). Es ist aber auch möglich einen anderen Wert zu verwenden, wenn Sie wissen, was Sie tun ;
 - Legen Sie keinen IPv6-Eintrag an, wenn Sie nicht sicher sind, daß IPv6 auf Ihrem Server funktioniert! Sie werden Probleme mit Let's Encrypt haben, wenn dies nicht der Fall ist.
 
 ### Reverse DNS
 
 Wenn Ihr ISP oder Host dies zulässt, empfehlen wir Ihnen, eine
- [Reverse-DNS-Konfiguration](https://fr.wikipedia.org/wiki/Domain_Name_System#R%C3%A9solution_inverse)
-für Ihre öffentlichen IPv4- und/oder IPv6-Adressen. Dadurch wird verhindert, dass Sie markiert werden
-als Spammer von den Anti-Spam-Filtersystemen.
+ [Reverse-DNS-Konfiguration](https://de.wikipedia.org/wiki/Reverse_DNS)
+für Ihre öffentlichen IPv4- und/oder IPv6-Adressen. Dadurch wird verhindert, dass Sie als Spammer von den Anti-Spam-Filtersystemen markiert werden.
 
 **N.B. : Die Reverse-DNS-Konfiguration erfolgt bei Ihrem Internet Service Provider bzw. VPS-Host. Es betrifft *nicht* den Registrar Ihres Domainnamens.**
 
