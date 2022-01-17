@@ -32,8 +32,8 @@ Ce fichier est régénéré automatiquement dès que vous ajoutez ou supprimez u
 Le service cherchera toujours à diffuser le domaine `yunohost.local`. Si vous avez plusieurs serveurs YunoHost sur votre réseau, alors tentez `yunohost-2.local`, etc.
 Le chiffre risque de changer selon quel serveur démarre en premier, donc ne comptez pas dessus pour y installer des apps : créez vos propres domaines locaux.
 
-!! Malheureusement, les appareils Android ne semblent pas écouter le protocole mDNS.
-!! Pour profiter des domaines `.local` sur vos appareils Android, vous devez entrer l'adresse IP locale de votre serveur YunoHost dans leur paramètre DNS.
+! Malheureusement, les appareils Android avant la version 12 (sortie en 2021) ne semblent pas écouter le protocole mDNS.
+! Pour profiter des domaines `.local` sur vos appareils Android, vous devez entrer l'adresse IP locale de votre serveur YunoHost dans leur paramètre DNS.
 
 ## Configuration DNS
 

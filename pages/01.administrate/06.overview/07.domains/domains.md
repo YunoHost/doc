@@ -36,8 +36,8 @@ This file is automatically regenerated whenever you add or delete a `.local` dom
 The service will always try to publish `yunohost.local`. If you have multiple YunoHost servers on your network, try `yunohost-2.local`, and so on.
 The number may change depending on which server starts first, so do not rely on it to use actual apps and create your own domains.
 
-!! Unfortunately, Android devices do not seem to be listening to mDNS protocol.
-!! To be able to reach `.local` domains on your Android devices, you will have to add in their DNS settings your YunoHost server's local IP address.
+! Unfortunately, Android devices before version 12 (released in 2021) do not seem to be listening to mDNS protocol.
+! To be able to reach `.local` domains on your Android devices, you will have to add in their DNS settings your YunoHost server's local IP address.
 
 ## DNS configuration
 
