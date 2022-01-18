@@ -18,6 +18,8 @@ routes:
 
  * [Scaleway Dedibox](https://www.scaleway.com/en/dedibox/operating-systems/) (dedicated server)
 
+* [ECOWAN](https://ecowan.fr/) (VPS)
+
 ## YunoHost IT outsourcing
 
  * [ReflexLibre](https://reflexlibre.net) (France only) <span class="chatons">CHATONS</span>
