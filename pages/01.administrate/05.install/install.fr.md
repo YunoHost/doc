@@ -223,6 +223,7 @@ Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 !!! N.B.: il vous faut télécharger l'image Armbian Buster.
 {% endif %}
 
+!!! Si vous souhaitez vérifier la validité de nos images signées, vous pouvez [télécharger notre clé publique](https://forge.yunohost.org/yunohost.asc).
 
 <div class="hardware-image">
 <div id="cards-list">
