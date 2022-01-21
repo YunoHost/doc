@@ -46,18 +46,10 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub <username@your_yunohost_server>
 
 Type your admnistration password and your key will be copied on your server.
 
-**On your server**, edit the SSH configuration file, in order to deactivate the password authentication.
+**On your server**, the edition of the SSH configuration file in order to deactivate the password authentication is handled by a system setting:
 
 ```bash
-nano /etc/ssh/sshd_config
-
-# Modify or add the following line
-PasswordAuthentication no
-```
-
-Save and restart the SSH daemon.
-```bash
-systemctl restart ssh
+sudo yunohost settings set security.ssh.password_authentication -v no
 ```
 ---
 

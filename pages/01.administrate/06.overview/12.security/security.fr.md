@@ -50,17 +50,10 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub <nom_utilisateur@votre.domaine.tld>
 
 Entrez le mot de passe d’administration et votre clé publique devrait être copiée sur votre serveur.
 
-**Sur votre serveur**, éditez le fichier de configuration SSH, pour désactiver l’authentification par mot de passe.
-```bash
-nano /etc/ssh/sshd_config
+**Sur votre serveur**, l'édition du fichier de configuration SSH pour désactiver l’authentification par mot de passe est gérée par un paramètre système :
 
-# Modifiez ou ajoutez la ligne suivante
-PasswordAuthentication no
-```
-
-Sauvegardez et relancez le démon SSH.
 ```bash
-systemctl restart ssh
+sudo yunohost settings set security.ssh.password_authentication -v no
 ```
 
 ---
