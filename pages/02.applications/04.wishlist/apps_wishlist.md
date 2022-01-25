@@ -181,6 +181,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Museek+ |  | [Upstream](https://github.com/eLvErDe/museek-plus) |  |
 | mycryptochat | Encrypted IM |  | [Package Draft](https://github.com/mrtino/mycryptochat_ynh) |
 | mx-puppet-discord | A bridge between Matrix and Discord | [Upstream](https://github.com/matrix-discord/mx-puppet-discord) |  |
+| [n8n](https://n8n.io/) | Connect APIs and automate workflows. Alternative to Zapier. | [Upstream](https://github.com/n8n-io/n8n) |  |
 | [Nautilus](https://myactivity.stream/) | Turn your website into an ActivityPub profile  | [Upstream](https://github.com/aaronpk/Nautilus) |  |
 | Netrunner |  | [Upstream](https://github.com/mtgred/netrunner) |  |
 | nexusoss | Sonatype Nexus Repository manager OSS |  | [Package Draft](https://github.com/YunoHost-Apps/nexusoss_ynh) | 
