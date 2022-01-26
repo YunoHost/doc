@@ -1,2 +1,5 @@
-*~
-*.sw[op]
+/*
+!/pages
+!/images
+!/themes
+/themes/learn4
