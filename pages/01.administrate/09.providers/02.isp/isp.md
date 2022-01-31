@@ -34,7 +34,8 @@ Here is a non-comprehensive list of internet service providers by country, which
 [/ui-tab]
 [ui-tab title="Europa"]
 
- * [Belgium](/isp/country:bel)
+ * [Belgium (nl)](/isp/country:belnl)
+ * [Belgium (fr)](/isp/country:belfr)
  * [Finland](/isp/country:fin)
  * [France](/isp/country:fra)
  * [Hungary](/isp/country:hun)
@@ -64,7 +65,7 @@ A "no" may cause problems for using your server or may require you to make addit
 
 {% endif %}
 
-{% if country == 'bel' %}
+{% if country == 'belfr' %}
 
 ### Belgique
 
@@ -75,6 +76,19 @@ A "no" may cause problems for using your server or may require you to make addit
 | **Scarlet** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
 
 **Proximus** ne serait pas ouvert à l’auto-hébergement. L’ouverture des ports serait plus difficile afin d’éviter tout SPAM. Il serait préférable de passer par [Neutrinet](http://neutrinet.be), un des [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres).
+
+
+{% elseif country == 'belnl' %}
+
+### België
+
+| Service provider | Box/ router | uPnP beschikbaar | [Poort 25 openen mogelijk](/email)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | vaste IP |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Proximus** | BBox2 | ja (geactiveerd) | ja | **nee** | **nee** | **nee** |
+| | BBox3 | ja (geactiveerd) | ja | **nee** | **nee** | **nee** |
+| **Scarlet** | BBox2 | ja (geactiveerd) | ja | **nee** | **nee** | **nee** |
+
+**Proximus** zou niet openstaan voor self-hosting. Het openen van de poorten zou moeilijker zijn om SPAM te voorkomen. Het loont de moeite om een vpn te gebruiken.
 
 
 {% elseif country == 'bra' %}
