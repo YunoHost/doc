@@ -161,6 +161,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Loki](https://docs.loki.network/ServiceNodes/DebianPackageGuide/)| Service node for the Loki Network | [Upstream](https://github.com/loki-project/) |  |
 | [Loomio](https://www.loomio.org) |  | [Upstream](https://github.com/loomio/loomio/) |  |
 | [MaidSafe](https://maidsafe.net) |  | [Upstream](https://github.com/maidsafe) |  |
+| [Mail-in-a-Box](https://mailinabox.email) |  | [Upstream](https://github.com/mail-in-a-box/mailinabox)|  |
 | [Mailpile](https://www.mailpile.is) |  | [Upstream](https://github.com/mailpile/Mailpile) |  |
 | [Mailtrain](https://mailtrain.org/) |  | [Upstream](https://github.com/Mailtrain-org/mailtrain) |  |
 | mediadrop | Video Platform |  | [Package Draft](https://github.com/YunoHost-Apps/mediadrop_ynh) |
