@@ -23,5 +23,5 @@ Différents niveaux de permission permettent de choisir qui peut lire ou éditer
 
 + Démo officielle : [https://demo.hedgedoc.org/](https://demo.hedgedoc.org/)
 + Documentation officielle : [github.com/hedgedoc](https://github.com/hedgedoc/hedgedoc/tree/master/docs)
-+ Dépôt logiciel de l’application : [github.com - YunoHost-Apps/hedgedoc](https://github.com/YunoHost-Apps/codimd_ynh)
++ Dépôt logiciel de l’application : [github.com - YunoHost-Apps/hedgedoc](https://github.com/YunoHost-Apps/hedgedoc_ynh)
 + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com -YunoHost-Apps/hedgedoc/issues](https://github.com/YunoHost-Apps/hedgedoc_ynh/issues)
