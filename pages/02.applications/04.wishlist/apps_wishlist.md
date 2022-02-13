@@ -11,7 +11,7 @@ The following list is a compiled wishlist of applications that would be nice-to-
 
 You can [contribute to this list by adding something you'd like to be packaged](/write_documentation), or learn more on [how to package applications](/packaging_apps) to create a new package or improve a package draft.
 
-<div class="alert alert-info">Before adding an app in this wish-list, please check your app is not <a href="/apps">already available in YunoHost's app catalogue</a></div>
+! Before adding an app in this wish-list, please check your app is not [already available in YunoHost's app catalogue](/apps) or [about to be added into it](https://github.com/YunoHost/apps/pulls)
 
 | Name   | Description | Upstream | Package draft |
 | ------ | ----------- | -------- | ------------- |
