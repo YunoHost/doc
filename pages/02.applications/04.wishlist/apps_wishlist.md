@@ -79,7 +79,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [erine.email](https://erine.email/) |  | [Upstream](https://gitlab.com/mdavranche/erine.email) |  |
 | [ERPnext](https://erpnext.com/) |  | [Upstream](https://github.com/frappe/erpnext) |  |
 | [EteSync](https://www.etesync.com/) |  | [Upstream](https://github.com/etesync) |  |
-| [Excalibur](https://excalibur-py.readthedocs.io/en/master/) | A web interface to extract tabular data from PDFs (based on Camelot) | [Upstream](https://github.com/camelot-dev/excalibur) |  |
+| [Excalibur](https://excalibur-py.readthedocs.io/en/master/) | A web interface to extract tabular data from PDFs (based on Camelot) | [Upstream](https://github.com/camelot-dev/excalibur) | [Package Draft](https://github.com/YunoHost-Apps/excalidraw_ynh) |
 | [Excalidraw](https://excalidraw.com/) | Virtual whiteboard for sketching hand-drawn like diagrams | [Upstream](https://github.com/excalidraw/excalidraw) |  |
 | Facette | |  | [Package Draft](https://github.com/YunoHost-Apps/facette_ynh) |
 | [Federated wiki](http://fed.wiki.org/view/welcome-visitors/view/federated-wiki) | Farm for fedwiki sites | [Upstream](https://github.com/fedwiki) |  |
