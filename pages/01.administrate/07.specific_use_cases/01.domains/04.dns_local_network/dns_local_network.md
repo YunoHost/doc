@@ -27,12 +27,12 @@ The goal here is to create a network wide redirection handled by your router. Th
 ### SFR Box
 If you haven't found your server private IP, you may find it using the SFR box admin panel:  
     Go to Network tab > General
-<img src="/images/ip_serveur.png" width=800>
+<img src="/user/images/ip_serveur.png" width=800>
 
 #### Configure SFR box's DNS
 
 Go to Network tab > DNS and add your domain name to the box's DNS.
-<img src="/images/dns_9box.png" width=800>
+<img src="/user/images/dns_9box.png" width=800>
 
 ## Configure [hosts](https://en.wikipedia.org/wiki/Host_%28Unix%29) file on client workstation
 
