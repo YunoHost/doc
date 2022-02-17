@@ -227,6 +227,9 @@ Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 
 !!! Si vous souhaitez vérifier la validité de nos images signées, vous pouvez [télécharger notre clé publique](https://forge.yunohost.org/yunohost.asc).
 
+! Les images actuelles sont basées sur Debian Buster (YunoHost v4.x) et nécessitent que vous fassiez la commande `apt update` en SSH ou ligne de commande pour continuer les mises à jour.
+! Répondez Oui à l'avertissement à propos du changement de `stable` vers `oldstable`.
+
 <div class="hardware-image">
 <div id="cards-list">
 </div>
