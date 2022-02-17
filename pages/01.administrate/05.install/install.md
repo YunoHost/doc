@@ -225,6 +225,9 @@ Here are some VPS providers supporting YunoHost natively :
 
 !!! If you wish to check the validity of our signed images, you can [download our public key](https://forge.yunohost.org/yunohost.asc).
 
+! Current images are from Debian Buster (YunoHost v4.x) and will require that you perform a manual apt update command in SSH or CLI to continue updating.
+! Answer Yes to the warning about switching from stable to oldstable.
+
 <div class="hardware-image">
 <div id="cards-list">
 </div>
