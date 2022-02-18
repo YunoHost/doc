@@ -120,7 +120,7 @@ Pour désactiver temporairement la sauvegarde des données volumineuses, pour le
 BACKUP_CORE_ONLY=1 yunohost backup create --apps nextcloud
 ```
 
-Faites montre de prudence : il vous faudra alors sauvegarder vous-même les données des utilisateurs et utilisatrices de Nextcloud.
+Faites attention : il vous faudra alors sauvegarder vous-même les données des utilisateurs et utilisatrices de Nextcloud.
 
 Si vous souhaitez que ce comportement soit permanent:
 ```bash
