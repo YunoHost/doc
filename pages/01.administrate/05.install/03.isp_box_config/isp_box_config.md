@@ -58,3 +58,4 @@ A technology called UPnP is available on some internet boxes / routers and allow
 sudo yunohost firewall reload
 ```
 
+On some routers, UPnP can actually get in the way. If some or all ports are inaccessible from outside your network, try turning UPnP off in your router's settings and setting up port forwarding manually. You can easily test port accessibility using tools like [CanYouSeeMe](https://canyouseeme.org/).
