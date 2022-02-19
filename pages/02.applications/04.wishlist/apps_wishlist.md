@@ -243,6 +243,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [qBittorrent](https://www.qbittorrent.org/) |  | [Upstream](https://github.com/qbittorrent/qBittorrent) |  |
 | [racktables](https://racktables.org) |  | [Upstream](https://github.com/RackTables/racktables) |  |
 | Race for the galaxy | | [Upstream](https://github.com/bnordli/rftg) | |
+| [Raspap](https://raspap.com/) | | [Upstream](https://github.com/RaspAP/raspap-webgui) | |
 | Redash | Connect to any data source, easily visualize, dashboard and share your data. | [Upstream](https://github.com/getredash/redash) | |
 | [redmine](https://www.redmine.org/) | A flexible project management web application |  | [Package Draft](https://github.com/YunoHost-Apps/redmine_ynh) |
 | remoteStorage | A remoteStorage server implementation written in PHP | [Upstream](https://github.com/fkooman/php-remote-storage) | [Package Draft](https://github.com/YunoHost-Apps/RemoteStorage_ynh) |
