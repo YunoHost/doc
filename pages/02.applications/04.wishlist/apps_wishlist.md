@@ -162,7 +162,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Mailtrain](https://mailtrain.org/) |  | [Upstream](https://github.com/Mailtrain-org/mailtrain) |  |
 | mediadrop | Video Platform |  | [Package Draft](https://github.com/YunoHost-Apps/mediadrop_ynh) |
 | [Mealie](https://hay-kot.github.io/mealie/) | Recipe manager and meal planner  | [Upstream](https://github.com/hay-kot/mealie/) |  |
-| [Mediagoblin](https://mediagoblin.org/) | Video streaming platform | [Upstream](https://savannah.gnu.org/projects/mediagoblin) | [Package Draft]https://github.com/YunoHost-Apps/mediagoblin_ynh) |
+| [Mediagoblin](https://mediagoblin.org/) | Video streaming platform | [Upstream](https://savannah.gnu.org/projects/mediagoblin) | [Package Draft](https://github.com/YunoHost-Apps/mediagoblin_ynh) |
 | [medusa](https://pymedusa.com/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/YunoHost-Apps/medusa_ynh) |
 | [Megaglest](https://megaglest.org/) | realtime stategy game | [Upstream](https://megaglest.org/linux-packages.html) | |
 | microblog.pub |  | [Upstream](https://github.com/tsileo/microblog.pub) |  |
