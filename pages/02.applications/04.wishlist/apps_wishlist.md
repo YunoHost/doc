@@ -107,7 +107,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | gitolite | Git server |  | [Package Draft](https://github.com/matlink/gitolite_ynh) |
 | gitrepositories |  |  | [Package Draft](https://github.com/YunoHost-Apps/gitrepositories_ynh) |
 | gitweb | Git forge (c.f. Gitolite) |  | [Package Draft](https://github.com/matlink/gitweb_ynh) |
-| glpi | Create a beautiful blog or website easily |  | [Package Draft](https://github.com/abeudin/glpi_ynh) |
+| glpi | Create a beautiful blog or website easily |  | [Package Draft](https://github.com/YunoHost-Apps/glpi_ynh) |
 | gnusocial | Create a federated comunication node |  | [Package Draft](https://github.com/YunoHost-Apps/gnusocial_ynh) |
 | [Goaccess](https://goaccess.io) | Web log analyzer | [Upstream](https://github.com/allinurl/goaccess) |  |
 | gogs_webhost | Turn a Gogs repository to static web hosting |  | [Package Draft](https://github.com/YunoHost-Apps/gogs_webhost_ynh) |
