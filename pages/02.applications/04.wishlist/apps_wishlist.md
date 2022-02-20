@@ -274,7 +274,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Spacedeck | A real-time collaborative whiteboard | [Upstream](https://github.com/spacedeck/spacedeck-open) |  |
 | [SparkleShare (Dazzle)](https://www.sparkleshare.org/) | SparkleShare host  | [Upstream](https://github.com/hbons/Dazzle) |  |
 | sphinx |  | [Upstream](https://github.com/sphinx-doc/sphinx) | [Package Draft](https://github.com/YunoHost-Apps/sphinx_ynh) |
-| squid3| A caching proxy |  | [Package Draft](https://github.com/YunoHost-Apps/squid3_ynh) |
 | [Stackedit](https://stackedit.io) |  | [Upstream](https://github.com/benweet/stackedit) |  |
 | [Storj](https://www.storj.io/node) |  | [Upstream](https://github.com/storj/storj) |  |
 | Streisand |  | [Upstream](https://github.com/jlund/streisand) |  |
