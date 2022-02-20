@@ -131,7 +131,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [IPFS](https://ipfs.io) |  | [Upstream](https://github.com/ipfs/ipfs) |  |
 | [Isso](https://posativ.org/isso) | Comment server | [Upstream](https://github.com/posativ/isso) |  |
 | jappix_mini | Jappix Mini XMPP chat website integration |  | [Package Draft](https://github.com/YunoHost-Apps/jappix_mini_ynh) |
-| [Jitsi](https://jitsi.org/) | Video conferencing web application |  | [Package Draft](https://github.com/YunoHost-Apps/jitsi_ynh) |
 | [joomla](https://www.joomla.org) | A content management system |  | [Package Draft](https://github.com/YunoHost-Apps/joomla_ynh) |
 | [Joplin](https://joplin.cozic.net/) |  | [Upstream](https://github.com/laurent22/joplin) |  |
 | Joplin-web |  | [Upstream](https://github.com/foxmask/joplin-web) |  |
