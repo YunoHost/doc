@@ -259,7 +259,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [seenthis](https://www.seenthis.net/) | Short-blogging destiné à la veille d’actualité |  | [Package Draft](https://github.com/magikcypress/seenthis_ynh) |
 | [Semantic MediaWiki](https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki) | lets you store and query data with­in the [MediaWiki](https://en.wikipedia.org/wiki/MediaWiki)'s pages | [Upstream](https://github.com/SemanticMediaWiki/SemanticMediaWiki) |  |
 | [shadowsocks](https://shadowsocks.org) | A SOCKS5 proxy to protect your Internet traffic |  | [Package Draft](https://github.com/YunoHost-Apps/shadowsocks_ynh) |
-| [ShareLatex](https://www.sharelatex.com) |  | [Upstream](https://github.com/overleaf/overleaf) |  |
 | shinken | A flexible and scalable monitoring framework | [Upstream](https://github.com/naparuba/shinken) | [Package Draft](https://github.com/YunoHost-apps/shinken_ynh) |
 | shuri | URL Shortener | [Upstream](https://github.com/pips-/shuri) | [Package Draft](https://github.com/YunoHost-Apps/shuri_ynh) |
 | sickbeard | Automatic TV show downloader |  | [Package Draft](https://github.com/YunoHost-Apps/sickbeard_ynh) |
