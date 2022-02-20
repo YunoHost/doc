@@ -219,7 +219,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Playmaker |  | [Upstream](https://github.com/NoMore201/playmaker) |  |
 | [plonecms](plone.org) | Create a modern website with a CMS written in Python |  | [Package Draft](https://github.com/YunoHost-Apps/plonecms_ynh) |
 | [Presentator](https://presentator.io/) | A design collaboration platform |  |  |
-| [prestashop](https://www.prestashop.com/) | Create an e-commerce website |  | [Package Draft](https://github.com/YunoHost-Apps/prestashop_ynh) |
 | [Privoxy](https://www.privoxy.org) |  |  |  |
 | [ProcessMaker](https://www.processmaker.com) |  |  |  |
 | proftpd |  |  | [Package Draft](https://github.com/abeudin/proftpd_ynh) |
