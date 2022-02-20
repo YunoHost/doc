@@ -222,7 +222,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Privoxy](https://www.privoxy.org) |  |  |  |
 | [ProcessMaker](https://www.processmaker.com) |  |  |  |
 | proftpd |  |  | [Package Draft](https://github.com/abeudin/proftpd_ynh) |
-| [Prosody](https://prosody.im/) | Prosody is a server for Jabber/XMPP written in Lua. It aims to be easy to use and light on resources |[Upstream](https://hg.prosody.im/)| |
 | ProtonMail’s WebClient |  | [Upstream](https://github.com/ProtonMail/WebClient) |  |
 | [psitransfer](https://psi.cx/tags/PsiTransfer/) | Transfer files or images without problems |  | [Package Draft](https://github.com/YunoHost-Apps/psitransfer_ynh) |
 | [pterodactyl](https://pterodactyl.io/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/pterodactyl_ynh) |
