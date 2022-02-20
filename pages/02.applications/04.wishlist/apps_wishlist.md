@@ -146,7 +146,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | lektor | A static website generator |  | [Package Draft](https://github.com/YunoHost-Apps/lektor_ynh) |
 | [LessPass](https://www.lesspass.com/) |  | [Upstream](https://github.com/lesspass/lesspass) |  |
 | [Lessy](https://lessy.io) |  | [Upstream](https://github.com/lessy-community/lessy) |  |
-| [LibreTranslate](https://libretranslate.com/) | Translation API | [Upstream](https://github.com/uav4geo/LibreTranslate) |  |
+| [LibreTranslate](https://libretranslate.com/) | Translation API | [Upstream](https://github.com/uav4geo/LibreTranslate) | [Package Draft](https://github.com/YunoHost-Apps/libretranslate_ynh) |
 [Libreddit](https://libredd.it/) | An alternative private front-end to Reddit | [Upstream](https://github.com/spikecodes/libreddit) |  |
 | [Lila](https://lichess.org/) | Online chess game server | [Upstream](https://github.com/ornicar/lila) |  |
 | [Lingva Translate](https://lingva.ml/) | Alternative front-end for Google Translate | [Upstream](https://github.com/TheDavidDelta/lingva-translate) |  |
@@ -162,7 +162,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Mailtrain](https://mailtrain.org/) |  | [Upstream](https://github.com/Mailtrain-org/mailtrain) |  |
 | mediadrop | Video Platform |  | [Package Draft](https://github.com/YunoHost-Apps/mediadrop_ynh) |
 | [Mealie](https://hay-kot.github.io/mealie/) | Recipe manager and meal planner  | [Upstream](https://github.com/hay-kot/mealie/) |  |
-| [Mediagoblin](https://mediagoblin.org/) | Video streaming platform | [Upstream](https://savannah.gnu.org/projects/mediagoblin) |  |
+| [Mediagoblin](https://mediagoblin.org/) | Video streaming platform | [Upstream](https://savannah.gnu.org/projects/mediagoblin) | [Package Draft]https://github.com/YunoHost-Apps/mediagoblin_ynh) |
 | [medusa](https://pymedusa.com/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/guigot/medusa_ynh) |
 | [Megaglest](https://megaglest.org/) | realtime stategy game | [Upstream](https://megaglest.org/linux-packages.html) | |
 | microblog.pub |  | [Upstream](https://github.com/tsileo/microblog.pub) |  |
