@@ -163,7 +163,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | mediadrop | Video Platform |  | [Package Draft](https://github.com/YunoHost-Apps/mediadrop_ynh) |
 | [Mealie](https://hay-kot.github.io/mealie/) | Recipe manager and meal planner  | [Upstream](https://github.com/hay-kot/mealie/) |  |
 | [Mediagoblin](https://mediagoblin.org/) | Video streaming platform | [Upstream](https://savannah.gnu.org/projects/mediagoblin) | [Package Draft]https://github.com/YunoHost-Apps/mediagoblin_ynh) |
-| [medusa](https://pymedusa.com/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/guigot/medusa_ynh) |
+| [medusa](https://pymedusa.com/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/YunoHost-Apps/medusa_ynh) |
 | [Megaglest](https://megaglest.org/) | realtime stategy game | [Upstream](https://megaglest.org/linux-packages.html) | |
 | microblog.pub |  | [Upstream](https://github.com/tsileo/microblog.pub) |  |
 | [Mirakel](https://mirakel.azapps.de/taskwarrior.html) |  | [Upstream](https://github.com/GothenburgBitFactory/taskwarrior) |  |
@@ -196,7 +196,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [osmw](https://www.openstreetmap.org/) | Cartography software |  | [Package Draft](https://github.com/YunoHost-Apps/osmw_ynh) |
 | OSRM |  | [Upstream](https://github.com/Project-OSRM/osrm-backend) |  |
 | [OX Open-Xchange](https://www.open-xchange.com) | Linux groupware solution | [Upstream](https://github.com/open-xchange/) |  |
-| [OverLeaf](https://github.com/overleaf/overleaf) | open-source online real-time collaborative LaTeX editor | [Upstream](https://github.com/overleaf/overleaf) |  |
+| [OverLeaf](https://github.com/overleaf/overleaf) | open-source online real-time collaborative LaTeX editor | [Upstream](https://github.com/overleaf/overleaf) | [Package Draft](https://github.com/YunoHost-Apps/overleaf_ynh) |
 | [Padloc](https://padloc.app/) | Simple, secure password and data management for individuals and teams | [Upstream](https://github.com/padloc/padloc) | |
 | [pagure](https://pagure.io/pagure) | A Git forge |  | [Package Draft](https://github.com/YunoHost-Apps/pagure_ynh) |
 | Paperless-ng |  | [Upstream](https://github.com/jonaswinkler/paperless-ng) |  |
