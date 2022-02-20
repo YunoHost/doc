@@ -107,7 +107,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | gitolite | Git server |  | [Package Draft](https://github.com/matlink/gitolite_ynh) |
 | gitrepositories |  |  | [Package Draft](https://github.com/YunoHost-Apps/gitrepositories_ynh) |
 | gitweb | Git forge (c.f. Gitolite) |  | [Package Draft](https://github.com/matlink/gitweb_ynh) |
-| [glitch-soc](https://glitch-soc.github.io/docs/) | A libre and federated social network |  | [Package Draft](https://github.com/Tagadda/glitch-soc_ynh) |
 | glpi | Create a beautiful blog or website easily |  | [Package Draft](https://github.com/abeudin/glpi_ynh) |
 | gnusocial | Create a federated comunication node |  | [Package Draft](https://github.com/YunoHost-Apps/gnusocial_ynh) |
 | [Goaccess](https://goaccess.io) | Web log analyzer | [Upstream](https://github.com/allinurl/goaccess) |  |
