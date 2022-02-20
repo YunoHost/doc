@@ -17,7 +17,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | ------ | ----------- | -------- | ------------- |
 | 2FAuth | Manage and Generate 2FA Codes | [Upstream](https://github.com/Bubka/2FAuth) |  |
 | 10er10 | 10er10 is an HTML5 audio jukebox | [Upstream](https://github.com/dready92/10er10) |  |
-| [AbanteCart](https://abantecart.com) | Create an e-commerce website |  | [Package Draft](https://github.com/YunoHost-Apps/abantecart_ynh) |
 | [Access to Memory (AtoM)](https://www.accesstomemory.org/) | Web-based, open source application for standards-based archival description and access in a multilingual, multi-repository environment. | [Upstream](https://github.com/artefactual/atom) |  |
 | adhocserver | An ad hoc server for the Sony PSP |  | [Package Draft](https://github.com/matlink/adhocserver_ynh) |
 | [agora](https://www.agora-project.net/) | Create collaborative and creative digital space |  | [Package Draft](https://github.com/YunoHost-Apps/agora_ynh) |
