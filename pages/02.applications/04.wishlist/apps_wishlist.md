@@ -183,7 +183,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | nexusoss | Sonatype Nexus Repository manager OSS |  | [Package Draft](https://github.com/YunoHost-Apps/nexusoss_ynh) | 
 | NocoDB | Airtable alternative / turn any SQL db into a smart spreadsheet | [Upstream](https://github.com/nocodb/nocodb) | |
 | [ntopng](https://www.ntop.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/ntopng_ynh) |
-| ofbiz | Apache-OFBiz ERP |  | [Package Draft](https://github.com/nomakaFr/ofbiz_ynh) |
 | OhMyForm |  | [Upstream](https://github.com/ohmyform) |  |
 | Ombi |  | [Upstream](https://github.com/tidusjar/Ombi) |  |
 | [OpenBazaar](https://openbazaar.org) |  | [Upstream](https://github.com/openbazaar) |  |
