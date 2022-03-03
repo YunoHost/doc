@@ -125,7 +125,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | huginn | Build agents that monitor and act on your behalf |  | [Package Draft](https://github.com/YunoHost-Apps/huginn_ynh) |
 | [Icecast 2](https://www.icecast.org) |  | [Upstream](https://gitlab.xiph.org/xiph/icecast-server/) |  |
 | [ikiwiki](https://ikiwiki.info) |  |  |  |
-| internetarchive | Offline version of the Internet Archive | [Upstream](https://github.com/internetarchive/dweb-mirror) | [Package Draft](https://github.com/mitra42/internetarchive_ynh) |
 | [Inventaire](https://inventaire.io) | a libre collaborative resource mapper powered by open-knowledge, starting with books! 📚 | [Upstream](https://github.com/inventaire/inventaire) |  |
 | [InvoicePlane](https://invoiceplane.com) |  | [Upstream](https://github.com/InvoicePlane/InvoicePlane) |  |
 | [IPFS](https://ipfs.io) |  | [Upstream](https://github.com/ipfs/ipfs) | [Package Draft](https://github.com/YunoHost-Apps/ipfs_ynh) |
