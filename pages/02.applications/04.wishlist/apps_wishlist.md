@@ -183,6 +183,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [ntopng](https://www.ntop.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/ntopng_ynh) |
 | OhMyForm |  | [Upstream](https://github.com/ohmyform) |  |
 | Ombi |  | [Upstream](https://github.com/tidusjar/Ombi) |  |
+| [Omnivore](https://omnivore.app) | Omnivore is a complete, open source read-it-later solution for people who like reading. | [Upstream](https://github.com/omnivore-app/omnivore) | |
 | [OpenBazaar](https://openbazaar.org) |  | [Upstream](https://github.com/openbazaar) |  |
 | [OpenCart](https://www.opencart.com) |  | [Upstream](https://github.com/opencart/opencart) |  |
 | [OpenEats](https://open-eats.github.io/) |  | [Upstream](https://github.com/open-eats/OpenEats) |  |
@@ -230,6 +231,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [qBittorrent](https://www.qbittorrent.org/) |  | [Upstream](https://github.com/qbittorrent/qBittorrent) |  |
 | [racktables](https://racktables.org) |  | [Upstream](https://github.com/RackTables/racktables) |  |
 | Race for the galaxy | | [Upstream](https://github.com/bnordli/rftg) | |
+| [Raindrop](https://raindrop.io) | All-in-one bookmark manager | [Upstream](https://github.com/raindropio/app) | |
 | [Raspap](https://raspap.com/) | | [Upstream](https://github.com/RaspAP/raspap-webgui) | |
 | Redash | Connect to any data source, easily visualize, dashboard and share your data. | [Upstream](https://github.com/getredash/redash) | |
 | [redmine](https://www.redmine.org/) | A flexible project management web application |  | [Package Draft](https://github.com/YunoHost-Apps/redmine_ynh) |
