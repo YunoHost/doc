@@ -30,7 +30,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Archivematica](https://www.archivematica.org/) | Mature digital preservation system designed to maintain standards-based, long-term access to collections of digital objects. | [Upstream](https://github.com/artefactual/archivematica) |  |
 | [ArchivesSpace](https://archivesspace.org/) | Archives information management application for managing and providing Web access to archives, manuscripts and digital objects. | [Upstream](https://github.com/archivesspace/archivesspace) |  |
 | [Astral](https://astralapp.com/) | Organize Your GitHub Stars With Ease |[Upstream](https://github.com/astralapp/astral)|  |
-| [Azuracast](https://https://azuracast.com/) | A Simple, Self-Hosted Web Radio Management Suite |[Upstream](https://github.com/AzuraCast/AzuraCast)|  |
+| [Azuracast](https://azuracast.com/) | A Simple, Self-Hosted Web Radio Management Suite |[Upstream](https://github.com/AzuraCast/AzuraCast)|  |
 | [Baserow](https://baserow.io/) | Open source no-code database tool and Airtable alternative. | [Upstream](https://gitlab.com/bramw/baserow) |  |
 | [Beeper](https://www.beeper.com/) | A unified inbox for 15 chat networks. | [Upstream](https://gitlab.com/beeper) |  |
 | [BigBlueButton](https://bigbluebutton.org) | Web conferencing system | [Upstream](https://github.com/bigbluebutton/bigbluebutton) |  |
@@ -58,6 +58,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Coquelicot](https://coquelicot.potager.org/) | A “one-click” file sharing web application |  | [Package Draft](https://github.com/YunoHost-Apps/coquelicot_ynh) |
 | [Cozy](https://cozy.io/en/) |  |  |  |
 | Croodle | Vote for a schedule / polling | [Upstream](https://github.com/jelhan/croodle) |  |
+| [Cusdis](https://cusdis.com/) | Cusdis is an open-source, lightweight (~5kb gzip), privacy-friendly alternative to Disqus. |[Upstream](https://github.com/djyde/cusdis)|  |
 | [CyberChef](https://www.giters.com/gchq/CyberChef) - The Cyber Swiss Army Knife | a web app for encryption, encoding, compression and data analysis | [Upstream](https://github.com/gchq/CyberChef) |  |
 | [Darkwire.io](https://darkwire.io/) | End-to-end encrypted instant web chat | [Upstream](https://github.com/seripap/darkwire.io) |  |
 | [Dataverse](https://dataverse.org) | Open source research data repository software | [Upstream](https://github.com/IQSS/dataverse) |  |
