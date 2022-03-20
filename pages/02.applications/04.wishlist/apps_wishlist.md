@@ -34,11 +34,12 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Baserow](https://baserow.io/) | Open source no-code database tool and Airtable alternative. | [Upstream](https://gitlab.com/bramw/baserow) |  |
 | [Beeper](https://www.beeper.com/) | A unified inbox for 15 chat networks. | [Upstream](https://gitlab.com/beeper) |  |
 | [BigBlueButton](https://bigbluebutton.org) | Web conferencing system | [Upstream](https://github.com/bigbluebutton/bigbluebutton) |  |
+| [BitcardCC](https://bitcartcc.com) | BitcartCC is a self-hosted, open-source cryptocurrency all-in-one solution. It's secure, private, censorship-resistant and free | [Upstream](https://github.com/bitcartcc/bitcart)  |  |
 | [Bitmessage](https://bitmessage.org/) | P2P communication protocol used to send encrypted messages | [Upstream](https://github.com/Bitmessage/PyBitmessage) |  |
 | Blynk |  | [Upstream](https://github.com/blynkkk/blynk-library) |  |
 | [Bolt](https://bolt.cm/) | Content Management Tool |  | [Package Draft](https://github.com/realitygaps/bolt_ynh) |
 | BookWyrm | Social reading and reviewing, decentralized with ActivityPub | [Upstream](https://github.com/mouse-reeve/bookwyrm) |  |
-| BTCPay Server |  | [Upstream](https://github.com/btcpayserver/btcpayserver) |  |
+| [BTCPay Server](https://btcpayserver.org) | BTCPay Server is a free and open-source Bitcoin payment processor which allows you to accept bitcoin without fees or intermediaries | [Upstream](https://github.com/btcpayserver/btcpayserver) |  |
 | [Cactus Comments](https://cactus.chat/) | Federated comment system, to embed into your webpages, based on the Matrix protocol. | [Upstream](https://gitlab.com/cactus-comments) | [Package Draft](https://github.com/h3ndrik/cactus-comments_ynh) |
 | [Cagette](https://www.cagette.net/) | A marketplace for local farmers and producers | [Upstream](https://github.com/CagetteNet/cagette) | |
 | [Calendso](https://calendso.com/) | Volunteer shift management and meeting scheduling | [Upstream](https://github.com/calendso) | |
@@ -52,6 +53,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [CloudTube](https://tube.cadence.moe/) | CloudTube front-end for YouTube | [Upstream](https://git.sr.ht/~cadence/cloudtube) |  |
 | [Cockpit](https://cockpit-project.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/cockpit_ynh) |
 | coin | Member dashboard for non profit ISP | [Upstream](https://code.ffdn.org/FFDN/coin/) | [Package Draft](https://github.com/YunoHost-Apps/coin_ynh) |
+| CommentoPlusPlus | Commento++ allows you to foster discussion on your website | [Upstream](https://github.com/souramoo/commentoplusplus) | [Pakage Draft](https://github.com/YunoHost-Apps/commento_ynh/tree/plusplus) |
 | Commafeed |  | [Upstream](https://github.com/Athou/commafeed) |  |
 | [Conduit](https://conduit.rs/) |  Conduit is a lightweight open-source server implementation of the Matrix Specification with a focus on easy setup and low system requirements.  | [Upstream](https://gitlab.com/famedly/conduit) | [Package Draft](https://github.com/YunoHost-Apps/conduit_ynh) |
 | cops | Calibre OPDS |  | [Package Draft](https://github.com/YunoHost-Apps/cops_ynh) |
