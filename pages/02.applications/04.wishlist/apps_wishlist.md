@@ -254,6 +254,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Scuttlebutt Pub](https://www.scuttlebutt.nz/contributing) |  |  |  |
 | [SearXNG](https://searxng.github.io/searxng/) | Fork of SearX, a privacy-respecting metasearch engine | [Upstream](https://github.com/searxng/searxng) |  |
 | [seenthis](https://www.seenthis.net/) | Short-blogging destiné à la veille d’actualité |  | [Package Draft](https://github.com/magikcypress/seenthis_ynh) |
+| [selfoss](https://selfoss.aditu.de/) | Web based rss reader and aggregator | [Upstream](https://github.com/fossar/selfoss) | |
 | [Semantic MediaWiki](https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki) | lets you store and query data with­in the [MediaWiki](https://en.wikipedia.org/wiki/MediaWiki)'s pages | [Upstream](https://github.com/SemanticMediaWiki/SemanticMediaWiki) |  |
 | [shadowsocks](https://shadowsocks.org) | A SOCKS5 proxy to protect your Internet traffic |  | [Package Draft](https://github.com/YunoHost-Apps/shadowsocks_ynh) |
 | shinken | A flexible and scalable monitoring framework | [Upstream](https://github.com/naparuba/shinken) | [Package Draft](https://github.com/YunoHost-apps/shinken_ynh) |
