@@ -1,0 +1,7 @@
+shortcode-inline[name="mark"] > .sc-content > span {
+  background: #ffe9b3;
+  border-bottom: .05rem solid #ffd367;
+  border-radius: .1rem;
+  color: #50596c;
+  padding: .05rem .1rem 0;
+}

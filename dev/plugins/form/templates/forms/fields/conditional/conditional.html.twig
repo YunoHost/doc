@@ -1,0 +1,19 @@
+{% extends "forms/field.html.twig" %}
+
+{% block field %}
+{% set value = evaluate(field.condition) %}
+{% set value = value == 'true' ? 1 : value %}
+{% set value = value == 'false' ? 0 : value %}
+
+{% if value %}
+    {% if field.classes %}
+    <div class="{{ field.classes }}">
+    {% endif %}
+
+    {% include 'forms/default/fields.html.twig' with {name: field.name, fields: field.fields} %}
+
+    {% if field.classes %}
+    </div>
+    {% endif %}
+{% endif %}
+{% endblock %}

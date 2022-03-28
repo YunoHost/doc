@@ -1,0 +1,20 @@
+{% embed 'partials/login.html.twig' with {title:'Grav 2-Factor Authentication', redirect: admin.session.redirect} %}
+
+{% block integration %}
+{% endblock %}
+
+{% block form %}
+    {% embed 'forms/default/fields.html.twig' with {name: null, fields: form.fields} %}
+        {% block inner_markup_field_open %}<div>{% endblock %}
+        {% block inner_markup_field_close %}</div>{% endblock %}
+    {% endembed %}
+
+    <div class="{{ form_button_outer_classes ?: 'form-actions primary-accent' }}">
+        <div class="form-actions primary-accent">
+            <button type="submit" class="button primary" name="task" value="twofa"><i class="fa fa-sign-in"></i> {{ 'PLUGIN_LOGIN.BTN_LOGIN'|t }}</button>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% endembed %}

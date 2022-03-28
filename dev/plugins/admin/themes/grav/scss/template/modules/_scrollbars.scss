@@ -1,0 +1,18 @@
+@mixin native-scrollbars($bar, $track) {
+    & {
+        scrollbar-width: thin;
+        scrollbar-color: $bar $track;
+    }
+
+    /* Works on Chrome/Edge/Safari */
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $track;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $bar;
+    }
+}

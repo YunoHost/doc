@@ -1,0 +1,37 @@
+{# flex-objects/page.html.twig #}
+
+{%- set options = options ?? {} %}
+{%- set flex = grav.get('flex_objects') %}
+{%- set list = list ?? options.list ?? (options.directories ?? flex.defaultDirectories())|keys %}
+
+{%- if page_assets.css ?? config.get('plugins.flex-objects.built_in_css') ?? true %}
+    {% do assets.addCss('plugin://flex-objects/css/site.css') %}
+{% endif %}
+{%- if page_assets.jss ?? true %}
+    {% do assets.addJs('plugin://flex-objects/js/list.min.js') %}
+{% endif %}
+
+{%- if type %}
+    {%- set options = options.directories[type] ?? options %}
+
+    {%- if type not in list %}
+        {# Display error page #}
+        {% include 'flex-objects/views/404.html.twig' %}
+
+    {%- elseif id %}
+        {% set options = options.object ?? options %}
+
+        {# Display specified object #}
+        {% include 'flex-objects/views/object.html.twig' with { type: type, id: id, options: options } %}
+
+    {%- else %}
+        {% set options = options.collection ?? options %}
+
+        {# Display specified directory #}
+        {% include 'flex-objects/views/directory.html.twig' with { type: type, options: options } %}
+    {%- endif %}
+
+{%- else %}
+    {# Display list of directories #}
+    {% include 'flex-objects/views/directories.html.twig' with { options: options, list: list } %}
+{% endif %}

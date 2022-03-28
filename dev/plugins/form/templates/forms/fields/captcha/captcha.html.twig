@@ -1,0 +1,100 @@
+{% extends "forms/field.html.twig" %}
+
+{% set config = grav.config %}
+{% set site_key = field.recaptcha_site_key and field.recaptcha_site_key != 'ENTER_YOUR_CAPTCHA_SITE_KEY' ? field.recaptcha_site_key : config.plugins.form.recaptcha.site_key %}
+{% set action = (page.route|trim('/') ~ '-' ~ form.name)|underscorize %}
+{% set formName = form.name|underscorize %}
+{% set theme = config.plugins.form.recaptcha.theme ?? 'light' %}
+
+{% block label %}{% endblock %}
+
+{% block input %}
+  {% if not site_key %}
+      <script type="application/javascript">console && console.error('site_key was not defined for form "{{ form.name }}" (Grav Form Plugin)')</script>
+  {% elseif config.plugins.form.recaptcha.version == 3 %}
+      {% do assets.addJs('https://www.google.com/recaptcha/api.js?render='~site_key~'&theme=' ~ theme) %}
+      {#<script src='https://www.google.com/recaptcha/api.js?render={{ site_key }}&theme={{ theme }}'></script>#}
+      <script type="application/javascript">
+          window.gRecaptchaInstances = window.gRecaptchaInstances || {};
+          window.gRecaptchaInstances['{{ form.id }}'] = {
+              element: document.querySelector('form#{{ form.id }}'),
+              submit: function (event) {
+                  event.preventDefault();
+                  grecaptcha.ready(function () {
+                      grecaptcha.execute('{{ site_key }}', {action: '{{ action }}'}).then(function (token) {
+                          var tokenElement = document.createElement('input');
+                          tokenElement.setAttribute('type', 'hidden');
+                          tokenElement.setAttribute('name', 'data[token]');
+                          tokenElement.setAttribute('value', token);
+
+                          var actionElement = document.createElement('input');
+                          actionElement.setAttribute('type', 'hidden');
+                          actionElement.setAttribute('name', 'data[action]');
+                          actionElement.setAttribute('value', '{{ action }}');
+
+                          const form = window.gRecaptchaInstances['{{ form.id }}'].element;
+                          const submit = window.gRecaptchaInstances['{{ form.id }}'].submit;
+                          form.insertBefore(tokenElement, form.firstChild);
+                          form.insertBefore(actionElement, form.firstChild);
+                          form.removeEventListener('submit', submit);
+                          form.submit();
+                      });
+                  });
+              }
+          };
+
+          window.gRecaptchaInstances['{{ form.id }}'].element.addEventListener('submit', window.gRecaptchaInstances['{{ form.id }}'].submit);
+      </script>
+  {% elseif config.plugins.form.recaptcha.version == '2-invisible' %}
+      <script type="application/javascript">
+          function captchaOnloadCallback_{{ formName }}() {
+              var form = document.querySelector('form#{{ form.id }}');
+              var submits = form.querySelectorAll('[type="submit"]') || [];
+              submits.forEach(function(submit) {
+                  submit.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      var captchaElement = form.querySelector('#g-recaptcha-{{ formName }}');
+
+                      if (captchaElement) {
+                          captchaElement.remove();
+                      }
+
+                      captchaElement = document.createElement('div');
+                      captchaElement.setAttribute('id', 'g-recaptcha-{{ formName }}');
+                      form.appendChild(captchaElement);
+
+                      var widgetReference = grecaptcha.render('g-recaptcha-{{ formName }}', {
+                          sitekey: '{{ site_key }}', size: 'invisible',
+                          callback: function(/* token */) {
+                              form.submit();
+                          }
+                      });
+
+                      grecaptcha.execute(widgetReference);
+                  });
+              });
+          }
+      </script>
+
+      <script src="https://www.google.com/recaptcha/api.js?onload=captchaOnloadCallback_{{ formName }}&hl={{ grav.language.language }}&theme={{ theme }}"
+              async defer></script>
+  {% else %}
+    <script type="application/javascript">
+        var captchaOnloadCallback_{{ formName }} = function captchaOnloadCallback_{{ formName }}() {
+            grecaptcha.render('g-recaptcha-{{ formName }}', {
+                'sitekey': "{{ site_key }}",
+                'callback': captchaValidatedCallback_{{ formName }},
+                'expired-callback': captchaExpiredCallback_{{ formName }}
+            });
+        };
+
+        var captchaValidatedCallback_{{ formName }} = function captchaValidatedCallback_{{ formName }}() {};
+        var captchaExpiredCallback_{{ formName }} = function captchaExpiredCallback_{{ formName }}() {
+            grecaptcha.reset();
+        };
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=captchaOnloadCallback_{{ formName }}&render=explicit&hl={{ grav.language.language }}&theme={{ theme }} "
+        async defer></script>
+    <div class="g-recaptcha" id="g-recaptcha-{{ formName }}" data-theme="{{ theme }}"></div>
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,4 @@
+{% set task = task ?? 'save' %}
+<button id="titlebar-button-save" class="button" type="submit" name="task" value="{{ task }}" form="blueprints" data-flex-safe-action>
+    <i class="fa fa-check"></i> {{ "PLUGIN_ADMIN.SAVE"|tu }}
+</button>

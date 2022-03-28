@@ -1,0 +1,27 @@
+figure.image-caption {
+    text-align: center;
+    margin: 1rem;
+}
+
+figure.image-caption figcaption {
+    opacity: 0.7;
+    font-size: 90%;
+}
+
+figure.figure-right {
+    float: right;
+    margin-right: 0;
+}
+
+figure.figure-left {
+    float: left;
+    margin-left: 0;
+}
+
+figure.caption-left figcaption {
+    text-align: left;
+}
+
+figure.caption-right figcaption {
+    text-align: right;
+}

@@ -1,0 +1,12 @@
+{% extends "forms/field.html.twig" %}
+{% set scope = field.nest_id ? scope ~ field.name ~ '.' : scope %}
+
+{% block field %}
+<fieldset {% if field.id is defined %}id="{{ field.id }}"{% endif %} {% if field.classes is defined %}class="{{ field.classes }}" {% endif %}>
+  {% if field.legend %}
+    <legend>{{ field.legend|t }}</legend>
+  {% endif %}
+
+  {% include 'forms/default/fields.html.twig' with {name: field.name, fields: field.fields} %}
+</fieldset>
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends "forms/field.html.twig" %}
+
+{% if not grav.admin %}
+{% do assets.addJs('plugin://form/assets/form.vendor.js', { 'group': 'bottom', 'loading': 'defer' }) %}
+{% do assets.addJs('plugin://form/assets/form.min.js', { 'group': 'bottom', 'loading': 'defer' }) %}
+{% endif %}
+
+{% block field %}
+<div class="form-tabs {{ field.class }} {{ field.classes }}">
+
+  {% set fields = prepare_form_fields(field.fields, field.name) %}
+  {% if fields|length %}
+    {% set tabs = {} %}
+    {% for tab in fields %}
+        {% if tab.type == 'tab' and not tab.validate.ignore and (tab.security is empty or authorize(array(tab.security))) %}
+        {% set tabs = tabs|merge([tab]) %}
+        {% endif %}
+    {% endfor %}
+    {% set count = tabs|length %}
+
+    {% if count == 0 %}
+        {# Nothing to display #}
+    {% elseif count == 1 and not admin %}
+        {% set fields = (tabs|first).fields %}
+        {% for field in fields %}
+            {% set value = field.name ? (form ? form.value(field.name) : data.value(field.name)) : data.toArray %}
+            {% set field_templates = include_form_field(field.type, field_layout, 'text') %}
+            {% include field_templates %}
+        {% endfor %}
+    {% else %}
+        {% set tabsKey = form.name ~ '-' ~ fields|keys|join(':')|md5 %}
+        {% set storedValue = grav.admin ? get_cookie('grav-tabs-state')|default('{}')|json_decode : [] %}
+        {% set storedTab = attribute(storedValue, 'tab-' ~ tabsKey) %}
+        {% if storedTab is empty %}
+            {% set active = uri.params.tab ?? field.active ?? 1 %}
+        {% endif %}
+
+        <div class="tabs-nav">
+            {% for tab in tabs %}
+                {% if tab.type == 'tab' and (tab.condition is null or tab.condition == true) %}
+                <a class="tab__link {{ (storedTab == scope ~ tab.name) or active == loop.index ? 'active' : '' }}" data-tabid="tab-{{ tabsKey ~ loop.index }}" data-tabkey="tab-{{ tabsKey }}" data-scope="{{ scope ~ tab.name }}">
+                <span>{{ tab.title|t }}</span>
+                {% endif %}
+            </a>
+        {% endfor %}
+        </div>
+        <div class="tabs-content">
+            {% embed 'forms/default/fields.html.twig' with {name: field.name, fields: fields} %}
+                {% block inner_markup_field_open %}
+                    <div id="tab-{{ tabsKey ~ loop.index }}" class="tab__content {{ (storedTab == scope ~ field.name) or active == loop.index ? 'active' : '' }}">
+                {% endblock %}
+                {% block inner_markup_field_close %}
+                    </div>
+                {% endblock %}
+            {% endembed %}
+        </div>
+    {% endif %}
+{% endif %}
+</div>
+{% endblock %}

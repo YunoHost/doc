@@ -1,0 +1,46 @@
+{% extends 'partials/base.html.twig' %}
+{% use 'flex-objects/types/default/titlebar/types.html.twig' %}
+
+{% set flex = grav['flex_objects'] %}
+
+{# These variables can be overridden from the main template file #}
+{% set back_route = back_route ?? ('/' ~ route.getRoute(1, -1)) %}
+{% set configure_route = '/plugins/flex-objects' %}
+
+{% block body %}
+    {% set back_url = admin_route(back_route) %}
+    {% set configure_url = configure_route ? admin_route(configure_route) : null %}
+
+    {{ parent() }}
+{% endblock body %}
+
+{% block content %}
+
+    <h1>{{ 'PLUGIN_FLEX_OBJECTS.TYPES_TITLE'|tu }}</h1>
+
+    <div id="types" class="card-row grid fixed-blocks pure-g">
+        {% for name,directory in flex.directories if directory.enabled and directory.config('admin.hidden', false) is not same as(true) and not directory.config('admin.menu') %}
+            {% try %}
+            {% set collection = directory.collection %}
+            {% if flex.adminRoute(collection) %}
+            <div class="card-item pure-u-1-3">
+
+                <h2><a href="{{ admin_route(flex.adminRoute(collection)) }}">{{ directory.title|tu }}</a> <span class="badge">{{ collection.isAuthorized('list', 'admin', user).count }}</span></h2>
+                <p>
+                    {{ directory.description }}
+                </p>
+            </div>
+            {% endif %}
+            {% catch %}
+            <div class="card-item pure-u-1-3">
+                <h2>{{ 'PLUGIN_FLEX_OBJECTS.ERROR.BAD_DIRECTORY'|tu }} '{{ name }}'</h2>
+                <p>
+                    {{ e.message }}
+                </p>
+            </div>
+            {% endcatch %}
+        {% endfor %}
+
+    </div>
+
+{% endblock %}

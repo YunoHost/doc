@@ -1,0 +1,7 @@
+{%- set authorize = directory.config('admin.views.configure.authorize') ?? directory.config('admin.configure.authorize') ?? 'admin.super' %}
+
+{%- if configure_url and user.authorize(authorize) %}
+<a id="titlebar-button-configure" class="button" href="{{ configure_url }}">
+    <i class="fa fa-cog"></i> {{ 'PLUGIN_ADMIN.CONFIGURATION'|tu }}
+</a>
+{% endif %}

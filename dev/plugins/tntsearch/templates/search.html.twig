@@ -1,0 +1,7 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    {{ page.content|raw }}
+
+    {% include 'partials/tntsearch.html.twig' with { in_page: true }%}
+{% endblock %}

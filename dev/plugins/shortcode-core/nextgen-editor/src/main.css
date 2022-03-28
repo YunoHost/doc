@@ -1,0 +1,278 @@
+shortcode-block {
+  background: #fff;
+  border: 1px solid #ccc;
+  display: block;
+  margin: 16px 0;
+}
+
+#admin-main .ck.ck-editor__editable_inline > :first-child {
+  margin-top: 16px;
+}
+#admin-main .ck.ck-editor__editable_inline > :last-child {
+  margin-bottom: 16px;
+}
+
+#admin-main .ck-editor shortcode-block.ck-shortcode-child:hover {
+  outline-color: #1f89e5;
+}
+
+#admin-main .ck-editor shortcode-block > .sc-header > .sc-title > p,
+#admin-main .ck-editor shortcode-block > .sc-header > .sc-titlebar > p,
+#admin-main .ck-editor shortcode-block > .sc-header > .sc-settings > p,
+#admin-main .ck-editor shortcode-block > .sc-add > p,
+#admin-main .ck-editor shortcode-block > .sc-move > p {
+  margin: 0;
+}
+
+shortcode-block > .sc-header {
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 8px 8px;
+}
+
+shortcode-block > .sc-header > .sc-title > p > .sc-value {
+  font-weight: 700;
+}
+
+shortcode-block > .sc-header > .sc-titlebar {
+  margin-left: 24px;
+}
+
+shortcode-block > .sc-header > .sc-settings {
+  color: #ffc83d;
+  cursor: pointer;
+  font-size: 0;
+  line-height: 0;
+  margin-left: auto;
+  opacity: 0;
+  transition: opacity .2s ease, color .2s ease;
+}
+
+shortcode-block > .sc-header > .sc-settings:hover,
+shortcode-block.ck-shortcode-child > .sc-header > .sc-settings,
+shortcode-block.ck-widget_selected > .sc-header > .sc-settings {
+  color: #1f89e5;
+}
+
+shortcode-block.ck-widget_selected > .sc-header > .sc-settings:hover,
+shortcode-block.ck-shortcode-child > .sc-header > .sc-settings:hover {
+  opacity: .5
+}
+
+shortcode-block:hover > .sc-header > .sc-settings,
+shortcode-block.ck-widget_selected > .sc-header > .sc-settings {
+  opacity: 1;
+}
+
+shortcode-block > .sc-header > .sc-settings > p > svg {
+  height: 24px;
+  width: 24px;
+}
+
+shortcode-block-editable,
+shortcode-block-readonly {
+  display: block;
+  padding: 0 8px;
+}
+
+shortcode-block-readonly > [data-cke-filler] {
+  display: none;
+}
+
+#admin-main .ck-editor shortcode-block-editable > :first-child {
+  margin-top: 14px;
+}
+
+#admin-main .ck-editor shortcode-block.ck-shortcode-child .ck-widget__type-around__button_after,
+#admin-main .ck-editor shortcode-block.ck-shortcode-child .ck-widget__type-around__button_before {
+  display: none;
+}
+
+shortcode-block > .sc-add-child {
+  align-items: center;
+  display: none;
+  justify-content: center;
+  margin: 16px 0;
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+shortcode-block > .sc-add-child.sc-visible {
+  display: flex;
+}
+
+shortcode-block:hover > .sc-add-child,
+shortcode-block.ck-widget_selected > .sc-add-child {
+  opacity: 1;
+  z-index: 1;
+}
+
+shortcode-block > .sc-add-child > p {
+  align-items: center;
+  background: #ffc83d;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  margin: 0!important;
+  transition: opacity .2s ease, background .2s ease;
+  width: 24px;
+}
+
+shortcode-block > .sc-add-child > p:hover,
+shortcode-block.ck-widget_selected > .sc-add-child > p {
+  background: #1f89e5;
+}
+
+shortcode-block.ck-widget_selected > .sc-add-child > p:hover {
+  opacity: .5;
+}
+
+shortcode-block > .sc-add-child > p > svg {
+  color: #fff;
+  height: 20px;
+  transition: opacity .2s ease;
+  width: 20px;
+}
+
+shortcode-block > .sc-add {
+  left: 30px;
+  opacity: 0;
+  position: absolute;
+  transition: opacity .2s ease;
+  top: -12px;
+}
+
+shortcode-block > .sc-add-after {
+  bottom: -11px;
+  left: auto;
+  right: 30px;
+  top: auto;
+}
+
+shortcode-block:hover > .sc-add {
+  opacity: 1;
+  z-index: 1;
+}
+
+shortcode-block > .sc-add > p {
+  align-items: center;
+  background: #1f89e5;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  width: 20px;
+}
+
+shortcode-block > .sc-add > p > svg {
+  color: #fff;
+  height: 16px;
+  transition: opacity .2s ease;
+  width: 16px;
+}
+
+shortcode-block > .sc-add:hover > p > svg {
+  opacity: .5;
+}
+
+shortcode-block > .sc-move {
+  background: #1f89e5;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  opacity: 0;
+  position: absolute;
+  right: -12px;
+  transition: opacity .2s ease;
+  width: 20px;
+  top: 46px;
+}
+
+shortcode-block > .sc-move-up {
+  transform: rotate(180deg);
+}
+
+shortcode-block:first-child > .sc-move-up,
+shortcode-block:last-child > .sc-move-down {
+  display: none;
+}
+
+shortcode-block > .sc-move-down {
+  bottom: 4px;
+  left: auto;
+  top: auto;
+}
+
+shortcode-block:hover > .sc-move {
+  opacity: 1;
+  z-index: 1;
+}
+
+shortcode-block > .sc-move > p > svg {
+  color: #fff;
+  height: 20px;
+  left: 1.5px;
+  position: absolute;
+  top: 2px;
+  transition: opacity .2s ease;
+  width: 20px;
+}
+
+shortcode-block > .sc-move:hover > p > svg {
+  opacity: .5;
+}
+
+shortcode-inline {
+  background: #fff;
+  border: 1px solid #ccc;
+  display: inline-flex;
+  margin-left: 2px;
+  margin-right: 1px;
+  vertical-align: middle;
+}
+
+shortcode-inline-editable,
+shortcode-inline-readonly {
+  display: inline;
+  padding: 1px 4px 2px;
+}
+
+shortcode-inline > .sc-content {
+  display: inline-flex;
+  align-items: center;
+}
+
+shortcode-inline > .sc-settings {
+  align-items: center;
+  border-left: 1px solid #ccc;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0;
+  line-height: 0;
+  padding: 0 2px;
+  transition: opacity .2s ease, color .2s ease;
+}
+
+shortcode-inline:hover > .sc-settings {
+  color: #ffc83d;
+}
+
+shortcode-inline > .sc-settings:hover,
+shortcode-inline.ck-widget_selected > .sc-settings {
+  color: #1f89e5;
+}
+
+shortcode-inline.ck-widget_selected > .sc-settings:hover {
+  opacity: .5;
+}
+
+shortcode-inline > .sc-settings > svg {
+  height: 16px;
+  width: 16px;
+}

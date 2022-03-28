@@ -1,0 +1,21 @@
+title: Flex Directory
+extends@: default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          fields:
+
+            header.flex.directory:
+              ordering@: 2
+              type: select
+              label: Flex Directory
+              style: vertical
+              data-options@: 'Grav\Plugin\FlexObjectsPlugin::directoryOptions'
+              options:
+                '': 'Directory List'

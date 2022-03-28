@@ -1,0 +1,48 @@
+{% block titlebar %}
+    {% block titlebar_button_bar %}
+    <div class="button-bar">
+        {# BACK #}
+        {% block back_button %}
+            {% include ['flex-objects/types/' ~ target ~ '/buttons/back.html.twig', 'flex-objects/types/default/buttons/back.html.twig'] %}
+        {% endblock back_button %}
+
+        {# EXPORT #}
+        {% if can_export %}
+        {% block export_button %}
+            {% include ['flex-objects/types/' ~ target ~ '/buttons/export.html.twig', 'flex-objects/types/default/buttons/export.html.twig'] with {export: directory.config('admin.views.export') ?? directory.config('admin.export') ?? []} %}
+        {% endblock export_button %}
+        {% endif %}
+
+        {# CREATE #}
+        {% if can_create %}
+        {% block create_button %}
+            {% include ['flex-objects/types/' ~ target ~ '/buttons/add.html.twig', 'flex-objects/types/default/buttons/add.html.twig'] %}
+        {% endblock create_button %}
+        {% endif %}
+
+        {# LANGUAGES #}
+        {% if can_translate %}
+        {% block languages_button %}
+            {% include ['flex-objects/types/' ~ target ~ '/buttons/languages.html.twig', 'flex-objects/types/default/buttons/languages.html.twig'] %}
+        {% endblock languages_button %}
+        {% endif %}
+
+        {# CONFIGURE #}
+        {% block configure %}
+            {% include 'flex-objects/types/default/buttons/configuration.html.twig' %}
+        {% endblock configure %}
+    </div>
+    {% endblock titlebar_button_bar %}
+
+    {% block titlebar_title %}
+    <h1>
+        {% if allowed %}
+            <i class="fa fa-fw {{ directory ? title_icon : 'fa-exclamation-triangle' }}"></i>
+            {{ directory ? title|tu : 'Error' }}
+        {% else %}
+            <i class="fa fa-fw fa-exclamation-triangle"></i>
+            {{ 'PLUGIN_ADMIN.ERROR'|tu }}
+         {% endif %}
+    </h1>
+    {% endblock titlebar_title %}
+{% endblock %}
