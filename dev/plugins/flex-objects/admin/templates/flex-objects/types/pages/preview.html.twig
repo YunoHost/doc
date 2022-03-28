@@ -1,0 +1,16 @@
+{% extends 'flex-objects/types/default/preview.html.twig' %}
+
+{% set can_translate = can_translate ?? (admin.multilang and object.hasFlexFeature('page-translate')) %}
+
+{% block back_button %}
+    {% include ['flex-objects/types/' ~ target ~ '/buttons/back.html.twig', 'flex-objects/types/pages/buttons/back.html.twig']
+        with { back_url: back_url } %}
+{% endblock back_button %}
+
+{% block body %}
+    {% set parent = object.parent %}
+
+    {% set preview_url = preview_url ?: (object.home ? '/' : '') %}
+
+    {{ parent() }}
+{% endblock body %}

@@ -1,0 +1,158 @@
+{% if not field.validate.ignore  %}
+
+{% use 'forms/layouts/field-variables.html.twig' %}
+{% block field_override_variables_before %}{% endblock %}
+
+{% set field_name = (scope ~ field.name)|fieldName %}
+{% set vertical = field.style == 'vertical' %}
+
+{% if not blueprints or (blueprints.schema.type(field.type)['input@'] ?? true) is same as(true) %}
+    {% set default = field.default %}
+    {% set toggleable = field.toggleable ?? false %}
+    {% if toggleable %}
+        {% set originalValue = originalValue ?? value %}
+        {% set toggleableChecked = originalValue is not null %}
+    {% elseif field.overridable %}
+        {% set toggleable = true %}
+        {% set default = form.getDefaultValue(field.name) ?? default %}
+        {% set toggleableChecked = value is not null and value != default %}
+    {% endif %}
+
+    {% set cookie_name = 'forms-' ~ form.name ~ '-' ~ field.name %}
+    {% set value = value ?? get_cookie(cookie_name) %}
+    {% set has_value = value is not same as(null) %}
+    {% if not has_value %}
+        {% set value = default %}
+    {% endif %}
+
+    {% if (field.yaml or field.validate.type == 'yaml') and value is iterable %}
+        {% set value = value|yaml %}
+    {% endif %}
+{% else %}
+    {% set toggleable = false %}
+{% endif %}
+
+{# DEPRECATED: Needed by old form fields; remove when backwards compatibility breaks are allowed #}
+{% set isDisabledToggleable = toggleable and not toggleableChecked %}
+
+{% if toggleable %}
+  {% set form_field_toggleable %}
+    {% include 'forms/default/toggleable.html.twig' with {checked: toggleableChecked} %}
+  {% endset %}
+{% endif %}
+
+{% set errors = attribute(form.messages, field.name) %}
+{% set required = client_side_validation and field.validate.required in ['on', 'true', 1] %}
+{% set autofocus = (inline_errors == false) and field.autofocus in ['on', 'true', 1] %}
+
+{% if inline_errors and errors %}
+    {% set autofocus = true %}
+{% endif %}
+
+{% set embed_outer_field_classes %}
+  {% block outer_field_classes %}{% endblock %}
+{% endset %}
+
+{# Field Classes #}
+{%- if errors %}{% set form_field_outer_core = form_field_outer_core ~ ' has-errors'  %}{% endif -%}
+{%- if toggleable %}{% set form_field_outer_core = form_field_outer_core ~ ' form-field-toggleable' %}{% endif -%}
+
+{% set layout_form_field_outer_classes = field.outerclasses %}
+{% set layout_form_field_outer_classes = layout_form_field_outer_classes|trim ~ ' ' ~ form_field_outer_classes %}
+{% set layout_form_field_outer_classes = layout_form_field_outer_classes|trim ~ ' ' ~ embed_outer_field_classes %}
+
+{# Show Label logic #}
+{% set show_label = field.label is not same as(false) and field.display_label is not same as(false )%}
+
+{# Label Classes #}
+{% set layout_form_field_outer_label_classes = ((form_field_outer_label_classes ?: 'form-label') ~ ' ' ~ field.labelclasses)|trim %}
+{% set layout_form_field_label_classes = (form_field_label_classes ?: 'inline')|trim %}
+{% set form_field_label_trim = toggleable ? 'toggleable' %}
+
+{# Field Outer Data classes #}
+{% set layout_form_field_outer_data_classes = ((form_field_outer_data_classes ?: ' form-data') ~ ' ' ~ field.dataclasses)|trim  %}
+
+{# Field Wrapper classes #}
+{% set layout_form_field_wrapper_classes = ((form_field_wrapper_classes ?: ' form-input-wrapper') ~ ' ' ~ field.wrapper_classes)|trim %}
+
+{# Field input classes #}
+{% if field|of_type('array') %}
+  {% if field.classes %}
+    {% set field = field|merge({'classes': field.classes ~ ' ' ~ block('field_input_classes')|trim }) %}
+  {% else %}
+    {% set field = field|merge({'classes': block('field_input_classes') }) %}
+  {% endif %}
+{% endif %}
+{% set layout_form_field_input_classes = (form_field_input_classes ~ ' ' ~ field.classes)|trim %}
+
+{# Inline error classes #}
+{% set form_field_inline_error_classes = form_field_inline_error_classes ?: ' form-errors' %}
+
+{# Field extra classes #}
+{% set form_field_extra_wrapper_classes = 'form-extra-wrapper ' ~ field.wrapper_classes %}
+
+{# Field For #}
+{% set form_field_for = toggleable ? 'toggleable_' ~ field.name : field.id|e %}
+
+{# Field Label #}
+{% set form_field_label = field.markdown ? field.label|markdown(false) : field.label %}
+{% set form_field_label = form_field_label|default(field.name|capitalize)|t %}
+
+{# Field Help #}
+{% if field.help %}
+    {% set form_field_help = field.markdown ? field.help|t|markdown(false)|e : field.help|t|e %}
+{% endif %}
+
+{# Field Requied #}
+{% set form_field_required = field.validate.required in ['on', 'true', 1] ? true : false %}
+
+{# Field Description #}
+{% set form_field_description = field.markdown ? field.description|t|markdown(false)|raw : field.description|t|raw %}
+
+{% extends 'forms/layouts/field.html.twig' %}
+
+{% block global_attributes %}
+  data-grav-field="{{ field.type }}"
+  data-grav-disabled="{{ toggleable and toggleableChecked }}"
+  data-grav-default="{{ default|json_encode()|e('html_attr') }}"
+{% endblock %}
+
+{% block input_attributes %}
+  class="{{ layout_form_field_input_classes|trim }} {{ field.size }}"
+  {% if field.id is defined %}id="{{ field.id|e }}" {% endif %}
+  {% if field.style is defined %}style="{{ field.style|e }}" {% endif %}
+  {% if field.disabled or isDisabledToggleable %}disabled="disabled"{% endif %}
+  {% if field.placeholder %}placeholder="{{ field.placeholder|t|e('html_attr') }}"{% endif %}
+  {% if autofocus %}autofocus="autofocus"{% endif %}
+  {% if field.novalidate in ['on', 'true', 1] %}novalidate="novalidate"{% endif %}
+  {% if field.readonly in ['on', 'true', 1] %}readonly="readonly"{% endif %}
+  {% if field.autocomplete is defined %}autocomplete="{{ field.autocomplete }}"{% endif %}
+  {% if field.autocapitalize in ['off', 'characters', 'words', 'sentences'] %}autocapitalize="{{ field.autocapitalize }}"{% endif %}
+  {% if field.inputmode in ['none', 'text', 'decimal', 'numeric', 'tel', 'search', 'email', 'url'] %}inputmode="{{ field.inputmode }}"{% endif %}
+  {% if field.tabindex %}tabindex="{{ field.tabindex }}"{% endif %}
+  {% if field.spellcheck in ['true', 'false'] %}spellcheck="{{ field.spellcheck }}"{% endif %}
+  {% if required %}required="required"{% endif %}
+  {% if field.validate.pattern %}pattern="{{ field.validate.pattern|e }}"{% endif %}
+  {% if field.validate.message %}title="{{ field.validate.message|t|e }}"
+  {% elseif field.title is defined %}title="{{ field.title|t|e }}" {% endif %}
+
+  {# Support key/value and .name/.value styles #}
+  {% if field.attributes is defined %}
+    {% for key,attribute in field.attributes %}
+      {% if attribute|of_type('array') %}
+        {{ attribute.name }}="{{ attribute.value|e('html_attr') }}"
+      {% else %}
+        {{ key }}="{{ attribute|e('html_attr') }}"
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {# Support for Custom data attributes#}
+  {% if field.datasets %}
+    {% for key, attribute in field.datasets %}
+      data-{{ key }}="{{ attribute|e('html_attr') }}"
+    {% endfor %}
+  {% endif %}
+{% endblock %}
+
+{% endif %}

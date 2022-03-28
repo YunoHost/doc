@@ -1,0 +1,41 @@
+{% extends 'flex-objects/types/default/list/list.html.twig' %}
+
+{% block modals %}
+  <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+    {% include 'partials/blueprints-new.html.twig' with { blueprints: admin.blueprints('admin/pages/new'), data: obj_data, form_id: 'new-page' } %}
+  </div>
+
+  <div class="remodal" data-remodal-id="modal-folder" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+    {% include 'partials/blueprints-new-folder.html.twig' with { blueprints: admin.blueprints('admin/pages/new_folder'), data: obj_data, form_id: 'new-folder' } %}
+  </div>
+
+  <div class="remodal" data-remodal-id="module" data-remodal-options="hashTracking: false">
+    {% include 'partials/blueprints-new.html.twig' with { blueprints: admin.blueprints('admin/pages/modular_new'), data: obj_data, form_id: 'new-module' } %}
+  </div>
+
+  {% for key, add_modal in config.plugins.admin.add_modals %}
+  <div class="remodal {{ add_modal.modal_classes|defined('') }}" data-remodal-id="modal-add_modal-{{ key }}" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+    {% include add_modal.template|defined('partials/blueprints-new.html.twig') with {
+      blueprints: admin.blueprints(add_modal.blueprint),
+      data: obj_data,
+      form_id: 'add-modal'
+    }|merge(add_modal.with|defined({})) %}
+  </div>
+  {% endfor %}
+
+  <div class="remodal" data-remodal-id="modal-page-copy" data-remodal-options="hashTracking: false">
+    {% include 'partials/blueprints-copy.html.twig' with { blueprints: admin.blueprints('admin/pages/copy'), data: obj_data, form_id: 'copy' } %}
+  </div>
+
+  <div class="remodal parents-container" data-remodal-id="parents" data-remodal-options="hashTracking: false, stack: true">
+    <form>
+      <h1>Parents</h1>
+      <div class="grav-loading"><div class="grav-loader">{{ 'PLUGIN_FLEX_OBJECTS.STATE.LOADING'|tu }}</div></div>
+      <div class="parents-content"></div>
+      <div class="button-bar">
+        <a class="button secondary remodal-cancel" data-remodal-action="cancel" href="#"><i class="fa fa-fw fa-close"></i> {{ "PLUGIN_ADMIN.CANCEL"|tu }}</a>
+        <a class="button" data-parents-select href="#"><i class="fa fa-fw fa-check"></i> {{ "PLUGIN_ADMIN.CONTINUE"|tu }}</a>
+      </div>
+    </form>
+  </div>
+{% endblock %}

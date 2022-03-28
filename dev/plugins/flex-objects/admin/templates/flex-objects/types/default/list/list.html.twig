@@ -1,0 +1,112 @@
+{% block directory %}
+<div id="directory">
+    {% if not fields %}
+        {% block no_list %}
+        <div class="no-entries">
+            <p>{{ 'PLUGIN_FLEX_OBJECTS.ERROR.BLUEPRINT_NO_LIST'|tu( target, null )|raw }}</p>
+            <ul>
+                <li>
+                    {{ 'PLUGIN_FLEX_OBJECTS.ERROR.BLUEPRINT_NO_LIST_ADVISE'|tu }}
+                </li>
+                <li>
+                    {{ 'PLUGIN_FLEX_OBJECTS.ERROR.BLUEPRINT_NO_LIST_TEMPLATE'|tu( target, null )|raw }}
+                </li>
+            </ul>
+        </div>
+        {% endblock %}
+    {% elseif not collection.count %}
+        {% block no_entries %}
+        <div class="no-entries">
+            {% if directory.isAuthorized('create', 'admin', user) %}
+                {% set createLink = admin_route(flex.adminRoute(collection, {action: 'add'})) %}
+                {{ 'PLUGIN_FLEX_OBJECTS.ERROR.LIST_EMPTY_ADD'|tu(createLink, null)|raw }}
+            {% else %}
+                {{ 'PLUGIN_FLEX_OBJECTS.ERROR.LIST_EMPTY'|tu }}
+            {% endif %}
+        </div>
+        {% endblock %}
+    {% else %}
+        {% block entries %}
+        {% set per_page = per_page ?? directory_config.per_page %}
+
+        {% set tableFields = [] %}
+        {% set searchFields = [] %}
+        {% for key, options in fields %}
+            {% set name = key %}
+            {% set sortField = options.sort.field ?? key %}
+            {% set title = (options.field.label ?? schema.get(options.alias ?? key).label)|tu %}
+            {% set width = options.width ?: ((100-fields_width) / ((fields_count-fields_set) ?: 1))|round(3) %}
+            {% set title_class = options.title_class ?: '' %}
+            {% set data_class = options.data_class ?: '' %}
+
+            {# Vuetable doesn't like field names with `.` in them, so we convert name and sortField to `_` #}
+            {% set tableFields = tableFields|merge([
+                {
+                    name: name|replace({'.': '_'}),
+                    sortField: sortField,
+                    title: title ?? 'N/A',
+                    width: width ~ '%',
+                    titleClass: title_class,
+                    dataClass: data_class
+                }
+            ]) %}
+
+            {# FIXME: Search fields should be passed and individually customizable, right now defaulting to all fields selected #}
+            {% set searchFields = searchFields|merge([key|replace({'.': '_'})]) %}
+        {% endfor %}
+        {% set tableFields = tableFields|merge([{ name: '_actions_', title: 'Actions', titleClass: 'right' }]) %}
+
+
+        {% set list = table.jsonSerialize %}
+
+        <div
+            id="flex-objects-list"
+            data-initial-store="{{
+                {
+                    data: list,
+                    api: grav.uri.currentRoute().withExtension('json').uri()|string,
+                    perPage: per_page,
+                    fields: tableFields,
+                    searchFields: searchFields,
+                    sortOrder: [{ field: directory_config.order.by, direction: directory_config.order.dir }],
+                    searchPlaceholder: "PLUGIN_ADMIN.RESOURCE_FILTER"|tu,
+                    paginationInfo: "PLUGIN_FLEX_OBJECTS.LIST_INFO"|tu,
+                    emptyResult: "PLUGIN_FLEX_OBJECTS.EMPTY_RESULT"|tu
+                }|json_encode|e('html_attr')
+            }}">
+            <svg viewBox="0 0 1060 {{ 31 * (min(per_page, list.data|count) + 2) }}">
+            {% for i in 0..((min(per_page, list.data|count) + 3) - 1) %}
+                <rect clip-path="url(#clip-path-{{ i }})" x="0" y="0" width="1060" height="{{ 31 * per_page }}" style="fill: url(#linear-gradient-{{ i }})"></rect>
+                <defs>
+                    <clipPath id="clip-path-{{ i }}">
+                        <rect x="13" y="{{ 31 * i + 10 }}" rx="6" ry="6" width="{{ 200 * random([0.7, 0.8, 0.9, 1]) }}" height="12"></rect>
+                        <rect x="533" y="{{ 31 * i + 10 }}" rx="6" ry="6" width="{{ 63 * random([0.7, 0.8, 0.9, 1]) }}" height="12"></rect>
+                        <rect x="653" y="{{ 31 * i + 10 }}" rx="6" ry="6" width="{{ 78 * random([0.7, 0.8, 0.9, 1]) }}" height="12"></rect>
+                        <rect x="755" y="{{ 31 * i + 10 }}" rx="6" ry="6" width="{{ 117 * random([0.7, 0.8, 0.9, 1]) }}" height="12"></rect>
+                        <rect x="938" y="{{ 31 * i + 10 }}" rx="6" ry="6" width="{{ 83 * random([0.7, 0.8, 0.9, 1]) }}" height="12"></rect>
+
+                        <rect x="0" y="{{ 31 * i }}" rx="6" ry="6" width="1060" height=".3"></rect>
+                    </clipPath>
+                    <linearGradient id="linear-gradient-{{ i }}">
+                        <stop offset="-0.60016" stop-color="#d9d9d9" stop-opacity="1">
+                            <animate attributeName="offset" values="-3; 1" dur="2s" repeatCount="indefinite"></animate>
+                        </stop>
+                        <stop offset="0.39984" stop-color="#ecebeb" stop-opacity="1">
+                            <animate attributeName="offset" values="-2; 2" dur="2s" repeatCount="indefinite"></animate>
+                        </stop>
+                        <stop offset="1.39984" stop-color="#d9d9d9" stop-opacity="1">
+                            <animate attributeName="offset" values="-1; 3" dur="2s" repeatCount="indefinite"></animate>
+                        </stop>
+                    </linearGradient>
+                </defs>
+            {% endfor %}
+            </svg>
+        </div>
+        {% endblock %}
+    {% endif %}
+
+    {% block modals %}
+    {% include 'flex-objects/types/default/modals/remove.html.twig' with { name: target } %}
+    {% endblock %}
+</div>
+{% endblock %}

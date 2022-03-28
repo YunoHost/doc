@@ -1,0 +1,98 @@
+{% extends 'partials/base.html.twig' %}
+{% use 'flex-objects/types/default/titlebar/list.html.twig' %}
+
+{# Allowed actions #}
+{% set export = directory.config('admin.views.export') ?? directory.config('admin.export') ?? [] %}
+{% set can_export = can_export ?? (export['enabled'] ?? export|array|count)|bool %}
+{% set can_create = can_create ?? directory.isAuthorized('create', 'admin', user) %}
+{% set can_translate = can_translate ?? (admin.multilang and directory.object.hasFlexFeature('flex-translate')) %}
+
+{% set per_page = per_page ?? grav.uri.currentUri.queryParam('per_page') %}
+
+{# Translations #}
+{% if can_translate %}
+    {% set translate_include_default = translate_include_default ?? grav.config.get('system.languages.include_default_lang_file_extension', true) %}
+    {% set all_languages = grav.admin.siteLanguages %}
+    {% set admin_languages = admin.languages_enabled %}
+    {% set default_language = grav.language.default %}
+    {% set language = controller.language %}
+    {#
+    {% if translate_include_default %}
+        {% set all_languages = all_languages|merge({'': 'Default'}) %}
+        {% set admin_languages = admin_languages|merge({'': ''}) %}
+    {% else %}
+    #}
+        {% set language = language ?: default_language %}
+    {# endif #}
+{% endif %}
+
+{# These variables can be overridden from the main template file #}
+{% set allowed = allowed ?? (directory and directory.isAuthorized('list', 'admin', user)) %}
+{% set back_route = back_route ?? route.getRoute(1, -1) %}
+
+{% set configure_path = directory.config('admin.router.actions.configure.path') %}
+{% set configure_route = configure_route ?? (configure_path ? route.withRoute(admin_route(configure_path)|trim('/')) : null) %}
+{% set configure_route = configure_route ?? route.withGravParam('', 'configure') %}
+
+{% set title_icon = title_icon ?? view_config['icon'] ?? directory.config.admin.menu.list.icon ?? 'fa-file-text-o' %}
+{% set title -%}
+    {%- set title_config = view_config['title'] ?? null -%}
+    {%- if title_config.template -%}
+        {{- include(template_from_string(title_config.template, 'configure title template')) -}}
+    {%- else -%}
+        {{- directory.title|tu -}}
+    {% endif %}
+{%- endset %}
+
+{% set schema = directory.blueprint.schema %}
+
+{% do assets.addJs('plugin://flex-objects/js/flex-objects.js', { 'group': 'bottom', 'loading': 'defer' }) %}
+
+{% block body %}
+    {% set collection = directory ? collection.isAuthorized('list', 'admin', user) %}
+    {% set directory_config = view_config['options'] ?? config.get('plugins.flex-objects.admin_list', { per_page: 15, order: { by: 'updated_timestamp', dir: 'desc' }}) %}
+    {% set per_page = max(1, per_page ?? directory_config.per_page) %}
+    {% set table = directory ? flex.dataTable(collection.flexDirectory(), {  collection: collection, limit: per_page, sort: directory_config.order.by ~ '|' ~ directory_config.order.dir }) %}
+    {% set back_url = admin_route(back_route) %}
+    {% set configure_url = (directory.config('admin.views.configure.hidden') ?? directory.config('admin.configure.hidden', false)) is not same as(true) ? configure_route.toString(true) %}
+
+    {% set fields = table.getColumns() %}
+    {% set fields_count = fields ? count(fields) : 0 %}
+    {% set fields_width = 8 %}
+    {% set fields_set = 0 %}
+    {% set title_field = view_config['title'] %}
+    {% for key,options in fields %}
+        {% set fields_width = fields_width + options.width ?: 0 %}
+        {% set fields_set = fields_set + (options.width ? 1 : 0) %}
+        {% if not title_field and options.link == 'edit' %}
+            {% set title_field = key %}
+        {% endif %}
+    {% endfor %}
+
+    {{ parent() }}
+{% endblock body %}
+
+{% block content_top %}
+{% if allowed and user.authorize('admin.super') %}
+    {% set save_location = directory.getStorageFolder() %}
+    <div class="alert notice">{{ "PLUGIN_ADMIN.SAVE_LOCATION"|tu }}: <b>{{ url(save_location, false, true)|trim('/') }}</b></div>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+{% if allowed %}
+    {% block content_list %}
+    {% include ['flex-objects/types/' ~ target ~ '/list/list.html.twig', 'flex-objects/types/default/list/list.html.twig'] %}
+    {% endblock %}
+{% else %}
+    {% do page.modifyHeader('http_response_code', 404) %}
+    <div class="error-block">
+        <h1>{{ 'PLUGIN_ADMIN.ERROR'|tu }} 404</h1>
+        <div class="padding">
+            <p>
+                {{ 'PLUGIN_FLEX_OBJECTS.ERROR.PAGE_NOT_EXIST'|tu }}
+            </p>
+        </div>
+    </div>
+{% endif %}
+{% endblock %}

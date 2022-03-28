@@ -1,0 +1,8 @@
+shortcode-block[name="details"] summary {
+  margin: 8px 8px;
+}
+
+shortcode-block[name="details"] summary > p {
+  display: inline;
+  margin: 0;
+}

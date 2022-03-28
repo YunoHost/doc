@@ -1,0 +1,69 @@
+{% extends "forms/field.html.twig" %}
+
+{% macro spanToggle(input, length) %}
+    {% set space = repeat('&nbsp;&nbsp;', (length - input|length) / 2) %}
+    {{ (space ~ input ~ space)|raw }}
+{% endmacro %}
+
+{% import _self as macro %}
+
+{% set value = (value is null ? field.default : value) %}
+
+{% block global_attributes %}
+    {{ parent() }}
+    data-grav-field-name="{{ (scope ~ field.name)|fieldName }}"
+{% endblock %}
+
+{% block input %}
+    {% set flex = grav['flex_objects'] %}
+    {% set all = flex.blueprints %}
+    {% if all|count %}
+    {% set legacy = flex.getLegacyBlueprintMap() %}
+    {% for label, directory in all %}
+        {% set url = directory.blueprintFile %}
+        {% set found = url in value %}
+        {% if not found and legacy[url] is defined %}
+            {% set found = legacy[url] in value %}
+        {% endif %}
+
+        <div class="form-data block size-2-3" data-grav-field="toggle" data-grav-disabled="" data-grav-default="null" data-grav-field-name="{{ (scope ~ field.name)|fieldName }}[{{ loop.index0 }}]">
+        <div class="switch-toggle switch-grav switch-2">
+            {% set maxLen = 0 %}
+            {% for text in ['PLUGIN_ADMIN.ENABLED', 'PLUGIN_ADMIN.DISABLED'] %}
+                {% set translation = grav.twig.twig.filters['tu'] is defined ? text|tu : text|t %}
+                {% set maxLen = max(translation|length, maxLen) %}
+            {% endfor %}
+
+            {% set id = "toggle_" ~ field.name ~ '_' ~ label %}
+
+            <input type="radio"
+                   value="{{ url }}"
+                   id="{{ id ~ '_yes' }}"
+                   name="{{ (scope ~ field.name)|fieldName }}[{{ loop.index0 }}]"
+                   class="highlight"
+                   {% if found %}
+                   checked="checked"
+                   {% endif %}
+            />
+            {% set text = 'PLUGIN_ADMIN.ENABLED' %}
+            {% set translation = (grav.twig.twig.filters['tu'] is defined ? text|tu : text|t)|trim %}
+            <label for="{{ id ~ '_yes' }}">{{ (macro.spanToggle(translation, maxLen)|trim)|raw }}</label>
+            <input type="radio"
+                   value=""
+                   name="{{ (scope ~ field.name)|fieldName }}[{{ loop.index0 }}]"
+                   id="{{ id ~ '_no' }}"
+                   {% if not found %}
+                   checked="checked"
+                   {% endif %}
+            />
+            {% set text = 'PLUGIN_ADMIN.DISABLED' %}
+            {% set translation = (grav.twig.twig.filters['tu'] is defined ? text|tu : text|t)|trim %}
+            <label for="{{ id ~ '_no' }}">{{ (macro.spanToggle(translation, maxLen)|trim)|raw }}</label>
+        </div>
+        <span title="{{ directory.description|tu }}">{{ directory.title|tu }}</span>
+        </div>
+    {% endfor %}
+    {% else %}
+        <div>{{ 'PLUGIN_FLEX_OBJECTS.ERROR.NO_FLEX_DIRECTORIES'|tu }}</div>
+    {% endif %}
+{% endblock %}

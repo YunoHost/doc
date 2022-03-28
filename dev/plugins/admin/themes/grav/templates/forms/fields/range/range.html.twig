@@ -1,0 +1,28 @@
+{% extends "forms/field.html.twig" %}
+
+{% block input_attributes %}
+    type="range"
+    class="rangefield {% if field.classes is defined %}{{ field.classes }} {% endif %}"
+    {% if field.validate.min %}min="{{ field.validate.min }}"{% endif %}
+    {% if field.validate.max %}max="{{ field.validate.max }}"{% endif %}
+    {% if field.validate.step %}step="{{ field.validate.step }}"{% endif %}
+    {{ parent() }}
+{% endblock %}
+{% block append %}
+    <input
+        type="number"
+        class="rangefield {% if field.classes is defined %}{{ field.classes }} {% endif %}"
+        {% if field.validate.min %}min="{{ field.validate.min }}"{% endif %}
+        {% if field.validate.max %}max="{{ field.validate.max }}"{% endif %}
+        {% if field.validate.step %}step="{{ field.validate.step }}"{% endif %}
+        {% if value is defined %}
+            value="{{ value }}"
+        {% elseif field.default is defined %}
+            value="{{ field.default }}"
+        {% else %}
+            value="0"
+        {% endif %}
+    />
+    <span class="range-append">{{ field.append }}</span>
+
+{% endblock append %}

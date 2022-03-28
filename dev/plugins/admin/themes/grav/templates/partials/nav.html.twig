@@ -1,0 +1,47 @@
+{% set nav_hover = config.plugins.admin.sidebar.activate == 'hover' %}
+{% if authorize(['admin.login', 'admin.super']) %}
+    <nav id="admin-sidebar" data-quickopen="{{ config.plugins.admin.sidebar.activate == 'hover' ? 'true' : 'false' }}" data-quickopen-delay="{{ config.plugins.admin.sidebar.hover_delay }}">
+
+        <div id="admin-logo" class="{{ nav_hover ? 'nav-hover' }}">
+            {% if not nav_hover %}
+                <div id="open-handle" data-sidebar-toggle><i class="fa fa-angle-right"></i></div>
+            {% endif %}
+            {% include 'partials/logo.html.twig' %}
+        </div>
+
+        {% include 'partials/nav-user-details.html.twig' %}
+
+        {% include 'partials/nav-quick-tray.html.twig' %}
+
+        <div data-simplebar class="admin-menu-wrapper">
+            <ul id="admin-menu">
+                {% for label, item in grav.twig.plugins_hooked_nav %}
+                    {% set route = (item.route ?? item.location)|trim('/') %}
+                    {% set location = (item.location ?? item.route)|trim('/') ~ '/' %}
+                    {% set auth_rule = item.authorize is iterable ? item.authorize : [item.authorize ?: 'admin.' ~ route, 'admin.super'] %}
+                    {% if authorize(auth_rule) %}
+                        <li class="{{ nav_route|starts_with(location) ? 'selected' : '' }}">
+                            <a href="{{ admin_route(route) }}">
+                                <i class="fa fa-fw {{ item.icon }}"></i>
+                                <em>{{ label|t }}</em>
+                                {% set badge = item.badge ?? null %}
+                                {% if badge %}
+                                <span class="badges {% if badge.updates %}with-updates{% endif %}">
+                                    {% if badge.updates is defined %}<span class="badge updates">{{ badge.updates ?: '' }}</span>{% endif %}
+                                    <span class="badge count">{{ badge.count }}</span>
+                                </span>
+                                {% endif %}
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+
+                {% include 'partials/nav-pro.html.twig' ignore missing %}
+
+                <li>
+                    <a href="{{ uri.addNonce(base_url_relative ~ '/task' ~ config.system.param_sep ~ 'logout', 'logout-form', 'logout-nonce') }}"><i class="fa fa-fw fa-sign-out"></i><em>{{ "PLUGIN_ADMIN.LOGOUT"|t }}</em></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+{% endif %}

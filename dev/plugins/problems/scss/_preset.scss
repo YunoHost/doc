@@ -1,0 +1,90 @@
+.report-output {
+
+  #admin-main .admin-block & {
+
+    .toast {
+      .btn {
+
+        color: $white;
+        border: 1px solid darken($flat-nephritis, 5%);
+        background-color: darken($flat-nephritis, 3%);
+
+        &:hover {
+          border-color: darken($flat-nephritis, 7%);
+          background-color: darken($flat-nephritis, 5%);
+        }
+
+        &.btn-error {
+          border: 1px solid darken($flat-pomegranate, 5%);
+          background-color: darken($flat-pomegranate, 3%);
+
+          &:hover {
+            border-color: darken($flat-pomegranate, 7%);
+            background-color: darken($flat-pomegranate, 5%);
+          }
+        }
+
+        &.btn-warning {
+          border: 1px solid darken($flat-carrot, 5%);
+          background-color: darken($flat-carrot, 3%);
+
+          &:hover {
+            border-color: darken($flat-carrot, 7%);
+            background-color: darken($flat-carrot, 5%);
+          }
+        }
+      }
+    }
+  }
+
+  ul.problems {
+    background-color: $content-bg;
+    color: $content-text;
+
+    .toast {
+      color: $white;
+
+      &.toast-success {
+        background-color: $flat-nephritis;
+      }
+
+      &.toast-error {
+        background-color: $flat-pomegranate;
+      }
+
+      &.toast-warning {
+        background-color: $flat-carrot;
+      }
+    }
+
+    ul.details {
+      background-color: $content-bg;
+
+      code {
+        color: $content-link;
+        @if (lightness($content-bg) < 50) {
+          background: rgba(#f0f7fe, 0.1);
+        } @else {
+          background: rgba(#f0f7fe, 0.8);
+        }
+
+      }
+
+      .menu-item {
+        border-top: 1px solid $underline;
+      }
+
+      .menu-badge {
+        .label {
+          &.label-success {
+            background: $flat-nephritis;
+          }
+
+          &.label-error {
+            background: $flat-pomegranate;
+          }
+        }
+      }
+    }
+  }
+}

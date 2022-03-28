@@ -1,0 +1,5 @@
+{% if object.routable and object.published %}
+<a id="titlebar-button-preview" href="{{ route.withGravParam('', 'preview') }}" class="button" title="{{ "PLUGIN_ADMIN.PREVIEW"|tu }}">
+    <i class="fa fa-eye"></i>
+</a>
+{% endif %}

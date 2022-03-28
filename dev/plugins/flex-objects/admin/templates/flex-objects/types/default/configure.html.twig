@@ -1,0 +1,103 @@
+{% extends 'partials/base.html.twig' %}
+{% use 'flex-objects/types/default/titlebar/configure.html.twig' %}
+
+{% set name = view_config['form'] %}
+{% set form = form ?? directory.directoryForm(name) %}
+
+{# Allowed actions #}
+{% set can_save = can_save ?? user.authorize(view_config['authorize'] ?? 'admin.super') %}
+
+{# These variables can be overridden from the main template file #}
+{% set allowed = allowed ?? (directory and form and can_save) %}
+{% set back_route = back_route ?? ('/' ~ route.getRoute(1)) %}
+{% set title_icon = title_icon ?? view_config['icon'] ?? 'fa-cog' %}
+{% set title -%}
+    {%- set title_config = view_config['title'] ?? null -%}
+    {%- if title_config.template -%}
+        {{- include(template_from_string(title_config.template, 'configure title template')) -}}
+    {%- else -%}
+        {{- directory.title|tu }} - {{ 'PLUGIN_ADMIN.CONFIGURATION'|tu -}}
+    {% endif %}
+{%- endset %}
+
+{% macro spanToggle(input, length) %}
+    {{ (repeat('&nbsp;&nbsp;', (length - input|length) / 2) ~ input ~ repeat('&nbsp;&nbsp;', (length - input|length) / 2))|raw }}
+{% endmacro %}
+{% import _self as macro %}
+
+{% block body %}
+    {% set back_url = back_url ?? admin_route(back_route) %}
+
+    {{ parent() }}
+{% endblock body %}
+
+{% block content_top %}
+    {% if allowed and user.authorize('admin.super') %}
+        {% set save_location = directory.getDirectoryConfigUri(name) %}
+        <div class="alert notice">{{ "PLUGIN_ADMIN.SAVE_LOCATION"|tu }}: <b>{{ url(save_location, false, true)|trim('/') }}</b></div>
+    {% endif %}
+{% endblock %}
+
+{% block topbar %}
+    {% if user.authorize('admin.super') %}
+    <form id="admin-mode-toggle">
+        {% set normalText = 'PLUGIN_ADMIN.NORMAL'|tu %}
+        {% set expertText = 'PLUGIN_ADMIN.EXPERT'|tu %}
+        {% set maxLen = max([normalText|length, expertText|length]) %}
+        {% set normalText = macro.spanToggle(normalText, maxLen) %}
+        {% set expertText = macro.spanToggle(expertText, maxLen) %}
+
+        <div class="switch-toggle switch-grav">
+            <input type="radio" value="normal" data-leave-url="{{ route.withGravParam('mode', 'normal').toString(true) }}" id="normal" name="mode-switch" class="highlight" {% if admin.session.expert == '0' %} checked="checked"{% endif %}>
+            <label for="normal">{{ normalText|raw }}</label>
+            <input type="radio" value="expert" data-leave-url="{{ route.withGravParam('mode', 'expert').toString(true) }}" id="expert" name="mode-switch" class="highlight" {% if admin.session.expert == '1' %} checked="checked"{% endif %}>
+            <label for="expert">{{ expertText|raw }}</label>
+            <a></a>
+        </div>
+    </form>
+    {% endif %}
+{% endblock topbar %}
+
+{% block content %}
+    {{ parent() }}
+
+    {% if allowed %}
+        <div class="clear directory admin-flex-config">
+            <div class="admin-form-wrapper">
+                {# TODO: RAW MODE
+                <div id="admin-topbar">
+                    {{ block('topbar') }}
+                </div>
+                #}
+                {% block edit %}
+                    {% include 'partials/blueprints.html.twig' with { form: form, data: form.data } %}
+                {% endblock %}
+            </div>
+        </div>
+
+        {% include 'partials/modal-changes-detected.html.twig' %}
+
+    {% else %}
+
+        {% do page.modifyHeader('http_response_code', 404) %}
+        <div class="error-block">
+            <h1>{{ 'PLUGIN_ADMIN.ERROR'|tu }} 404</h1>
+            <div class="padding">
+                <p>
+                    {{ 'PLUGIN_FLEX_OBJECTS.ERROR.PAGE_NOT_EXIST'|tu }}
+                </p>
+            </div>
+        </div>
+
+    {% endif %}
+{% endblock %}
+
+{% block bottom %}
+    {{ parent() }}
+
+    {# TODO: RAW MODE
+    <script>
+        $('.admin-flex-config .form-tabs .tabs-nav').css('margin-right', ($('#admin-topbar').width() + 20) + 'px');
+    </script>
+    #}
+{% endblock bottom %}

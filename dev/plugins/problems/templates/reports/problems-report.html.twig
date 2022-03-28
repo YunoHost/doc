@@ -1,0 +1,33 @@
+<ul class="problems">
+  {% for problem in problems %}
+    {% set status = problem.status ? 'success' : problem.level == 'critical' ? 'error' : 'warning' %}
+    <li class="menu">
+      <div class="toast toast-{{ status }}">
+        <strong>{{ problem.id }}:</strong>
+        {{ problem.msg|raw }}
+        {% if problem.help %}<a href="{{ problem.help }}" class="btn btn-sm btn-{{ status }}" target="_blank"><i class="icon icon-bookmark"></i> Help</a>{% endif %}
+      </div>
+      {% if problem.details is iterable %}
+        <ul class="details">
+          {% for key,value in problem.details.errors %}
+            <li class="menu-item">
+              <div class="menu-badge">
+                <label class="label label-error"><i class="icon icon-cross"></i></label>
+              </div>
+              <span class="active"><code>{{ key }}</code> - {{ value|raw }}</span>
+            </li>
+          {% endfor %}
+
+          {% for key,value in problem.details.success %}
+            <li class="menu-item">
+              <div class="menu-badge">
+                <label class="label label-success"><i class="icon icon-check"></i></label>
+              </div>
+              <span class=""><code>{{ key }}</code> - {{ value|raw }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

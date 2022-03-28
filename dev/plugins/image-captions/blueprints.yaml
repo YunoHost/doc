@@ -1,0 +1,76 @@
+name: Image Captions
+version: 2.0.3
+type: plugin
+slug: image-captions
+description: "Looks for images with defined title attribute and converts them to fig-captions."
+icon: image
+author:
+  name: Trilby Media, LLC
+  email: devs@trilby.media
+homepage: https://github.com/trilbymedia/grav-plugin-image-captions
+keywords: image, caption, figure, figcaption, grav, plugin
+bugs: https://github.com/trilbymedia/grav-plugin-image-captions/issues
+docs: https://github.com/trilbymedia/grav-plugin-image-captions/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    built_in_css:
+      type: toggle
+      label: Built-in CSS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    entire_page:
+      type: toggle
+      label: Scan the entire page
+      help: With this disabled, only the content is scanned
+      highlight: 0
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    source:
+      type: select
+      label: Source
+      size: small
+      default: title
+      help: Defines which attribute will use as the caption source - title or alt
+      options:
+        title: Title
+        alt: Alt
+
+    scope:
+      type: text
+      label: Scope
+      placeholder: img.caption
+      help: img.caption will search for <img> tags with class='caption'
+
+    figure_class:
+      type: text
+      label: Figure class
+      placeholder: image-caption
+
+    figcaption_class:
+      type: text
+      label: Figcaption class
+
+

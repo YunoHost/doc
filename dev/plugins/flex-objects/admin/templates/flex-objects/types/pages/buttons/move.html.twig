@@ -1,0 +1,6 @@
+<a id="titlebar-button-move" class="button" href="#" data-remodal-target="move" data-parents="data[route]">
+    <i class="fa fa-arrows"></i> {{ "PLUGIN_ADMIN.MOVE"|tu }}
+</a>
+<div class="remodal parents-container" data-remodal-id="move" data-remodal-options="hashTracking: false">
+    {% include 'partials/page-move.html.twig' with { blueprints: admin.blueprints('admin/pages/move'), data: context } %}
+</div>

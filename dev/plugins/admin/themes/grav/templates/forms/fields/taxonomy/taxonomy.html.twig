@@ -1,0 +1,39 @@
+{% extends "forms/field.html.twig" %}
+
+{% block field %}
+{% set object = form.object %}
+{% set taxonomies = taxonomies ?? field.taxonomies ?? admin.data('config/site').taxonomies ?? [] %}
+{% set parentname = field.name %}
+{% set options = field.options %}
+{% set default = field.default %}
+
+{% for name in taxonomies %}
+    {% set field_name = parentname ~ '.' ~ name %}
+    {% set value = form ? form.value(field_name) : data.value(field_name) %}
+    {% set value = (value ?? default[name] ?? [])|array %}
+    {% if object %}
+        {% set can_translate = can_translate ?? (admin.multilang and object.hasFlexFeature('flex-translate')) %}
+        {% set index = object.getFlexDirectory().getIndex() %}
+        {% set translated = can_translate ? index.withTranslated(admin.language) : index %}
+        {% set sub_taxonomies = translated.getDistinctValues(field_name) %}
+    {% else %}
+        {% set sub_taxonomies = (attribute(grav.taxonomy.taxonomy, name) ?? [])|keys %}
+    {% endif %}
+    {% set list = (options[name] ?? [])|merge(sub_taxonomies)|merge(value)|array_unique %}
+
+    {% set field = {
+        type: 'select',
+        classes: 'fancy create',
+        label: name|capitalize,
+        name: field_name,
+        multiple: true,
+        options: list,
+        style: field.style,
+        selectize: {
+            create: true
+        }
+    } %}
+
+    {% include 'forms/fields/select/select.html.twig' %}
+{% endfor %}
+{% endblock %}

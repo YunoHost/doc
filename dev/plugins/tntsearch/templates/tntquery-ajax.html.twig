@@ -1,0 +1,19 @@
+<div class="row">
+    <p class="info">
+        {% if config.get('plugins.tntsearch.display_hits') %}
+            <span class="hits">{{ "PLUGIN_TNTSEARCH.FOUND_RESULTS"|t(tntsearch_results.number_of_hits)|raw }}</span>
+        {% endif %}
+        {% if config.get('plugins.tntsearch.display_time') %}
+            <span class="time">{{ "PLUGIN_TNTSEARCH.FOUND_IN"|t(tntsearch_results.execution_time)|raw }}</span>
+        {% endif %}
+    </p>
+    {% for key, val in tntsearch_results.hits  %}
+        <h5 class="title">
+            <a href="{{ base_url ~ val.link }}">{{ val.title|raw }}</a>
+        </h5>
+        {% if config.get('plugins.tntsearch.display_route') %}
+            <h6 class="route">{{ val.link|raw }}</h6>
+        {% endif %}
+        <p>{{ val.content|raw }}</p>
+    {% endfor %}
+</div>

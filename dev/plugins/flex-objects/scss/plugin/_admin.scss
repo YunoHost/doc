@@ -1,0 +1,215 @@
+/* Flex-Objects Admin Styles */
+
+#types {
+    padding: 3rem;
+
+    .card-item {
+        max-width: 100%;
+
+        p {
+            margin: 1rem 0 0;
+        }
+    }
+
+}
+
+#directory {
+
+    .no-entries {
+        padding: 3rem;
+    }
+
+    .search-wrapper {
+        margin: .5rem 1rem;
+    }
+
+    #pager .selectize-control {
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .tablesorter-filter.disabled {
+        display: none;
+    }
+
+    .edit-action {
+        float: left;
+    }
+
+    .delete-action {
+        float: right;
+    }
+
+    table {
+        display: table;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tbody {
+        display: table-row-group;
+    }
+
+    tr {
+        display: table-row;
+        flex: none;
+    }
+
+    td, th {
+        display: table-cell;
+        flex: none;
+        &:focus {
+            outline: 0 !important;
+        }
+    }
+
+    td {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    td:last-child {
+        text-align: right;
+        white-space: nowrap;
+        a {
+            float: none;
+            display: inline-block;
+            padding-left: 5px;
+        }
+    }
+
+    .tablesorter .filtered {
+        display: none;
+    }
+
+    #pager {
+        margin: 50px 0;
+        text-align: center;
+
+        .pagedisplay {
+            padding: 0 10px;
+        }
+
+        .button {
+            border: 0;
+        }
+
+        input, select {
+            display: inline-block;
+            width: auto;
+        }
+
+        select {
+            vertical-align: middle;
+        }
+    }
+
+    .flex-list-pagination {
+        margin: 1rem 0 -1rem;
+        padding: .5rem 1rem;
+        display: flex;
+        align-items: center;
+
+        .vuetable-pagination-info, .flex-objects-pagination {
+            flex: 1;
+        }
+
+        .flex-objects-pagination {
+            text-align: right;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -ms-user-select: none;
+
+            .button {
+                border-radius: 4px;
+                background: transparent;
+
+                &.disabled {
+                    &:active {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* FILTERS */
+// form .checkboxes input[type=checkbox]:checked+label:before
+#pages-filters {
+    .checkboxes {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none;
+
+        &.status-indeterminate {
+            input[type="checkbox"] + label:before {
+                content: "\f00d";
+                font-family: "FontAwesome", sans-serif;
+                font-size: 1.2rem;
+                line-height: 1;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/** Defaults **/
+/* Admin Styles */
+#directory .search-wrapper input, #directory .search-wrapper select {
+  color: #646e7c;
+  border: 1px solid #e6e6e6;
+  background-color: #fcfcfc;
+}
+#directory .search-wrapper input::-webkit-input-placeholder, #directory .search-wrapper select::-webkit-input-placeholder {
+  color: #a7afb8;
+}
+#directory .search-wrapper input::-moz-placeholder, #directory .search-wrapper select::-moz-placeholder {
+  color: #a7afb8;
+}
+#directory .search-wrapper input:-moz-placeholder, #directory .search-wrapper select:-moz-placeholder {
+  color: #a7afb8;
+}
+#directory .search-wrapper input:-ms-input-placeholder, #directory .search-wrapper select:-ms-input-placeholder {
+  color: #a7afb8;
+}
+#directory .edit-action {
+  color: #0090D9 !important;
+}
+#directory .delete-action {
+  color: #F45857 !important;
+}
+#directory thead tr {
+  background: #fafafa;
+}
+#directory tbody tr:nth-child(even) {
+  background: white;
+}
+#directory i.published {
+  color: #27AE60;
+}
+#directory i.unpublished {
+  color: #E74C3C;
+}
+#directory .flex-list-pagination {
+  background: #fcfcfc;
+  border-top: 1px solid #f2f2f2;
+}
+#directory .flex-list-pagination .flex-objects-pagination .button {
+  color: #414147;
+}
+#directory .flex-list-pagination .flex-objects-pagination .button.active {
+  color: #ffffff;
+  background: #0090D9;
+}
+#directory .flex-list-pagination .flex-objects-pagination .button.disabled {
+  color: #99a2ad;
+}
+

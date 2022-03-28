@@ -1,0 +1,23 @@
+{# flex-objects/views/object.html.twig #}
+
+{% set flex = grav.get('flex_objects') %}
+{% set directory = flex.directory(type) %}
+{% set object = directory.getObject(id) %}
+
+{% if object %}
+    {%- set title = options.title -%}
+    {%- if title matches '/\{/' -%}
+        {%- set title = include(template_from_string(title, 'object title template'))|trim -%}
+    {%- endif -%}
+    {% if title %}
+        {% do page.title(title) %}
+    {% endif %}
+
+    {% set layout = options.layout ?? 'default' %}
+    {% set context = options ?? {} %}
+
+    {% render object layout: layout with context|merge({title: title}) %}
+
+{% else %}
+    {% include 'flex-objects/views/404.html.twig' %}
+{% endif %}

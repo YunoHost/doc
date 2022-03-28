@@ -1,0 +1,137 @@
+[data-remodal-id="wizard"] .button[disabled], [data-remodal-id="wizard"] .button[disabled]:hover, [data-remodal-id="reset-local"] .button[disabled], [data-remodal-id="reset-local"] .button[disabled]:hover {
+  background: #ccc;
+  cursor: default; }
+
+[data-remodal-id="wizard"] .button[disabled]:active, [data-remodal-id="reset-local"] .button[disabled]:active {
+  margin: 0; }
+
+[data-remodal-id="wizard"] form [class^="step-"] a:not(.button):not([target]), [data-remodal-id="reset-local"] form [class^="step-"] a:not(.button):not([target]) {
+  vertical-align: middle;
+  color: #5591c7; }
+  [data-remodal-id="wizard"] form [class^="step-"] a:not(.button):not([target]):hover, [data-remodal-id="reset-local"] form [class^="step-"] a:not(.button):not([target]):hover {
+    color: #366188; }
+
+[data-remodal-id="wizard"] .step-1 a, [data-remodal-id="reset-local"] .step-1 a {
+  vertical-align: middle; }
+
+[data-remodal-id="wizard"] .access-tokens h3, [data-remodal-id="reset-local"] .access-tokens h3 {
+  margin-top: 1rem; }
+
+[data-remodal-id="wizard"] .access-tokens a, [data-remodal-id="reset-local"] .access-tokens a {
+  vertical-align: inherit !important; }
+
+[data-remodal-id="wizard"] .access-tokens-details > p, [data-remodal-id="reset-local"] .access-tokens-details > p {
+  margin-top: 0; }
+
+[data-remodal-id="wizard"] .access-tokens-details > div > ul, [data-remodal-id="reset-local"] .access-tokens-details > div > ul {
+  margin-bottom: 0; }
+
+[data-remodal-id="wizard"] .center, [data-remodal-id="reset-local"] .center {
+  text-align: center; }
+
+[data-remodal-id="wizard"] h1, [data-remodal-id="reset-local"] h1 {
+  margin-bottom: 0;
+  padding-top: 0.5rem;
+  border-top: 3px solid transparent; }
+
+[data-remodal-id="wizard"] .wizard-padding, [data-remodal-id="reset-local"] .wizard-padding {
+  padding: 0 3rem; }
+  [data-remodal-id="wizard"] .wizard-padding p, [data-remodal-id="reset-local"] .wizard-padding p {
+    padding: 0; }
+
+[data-remodal-id="wizard"] input[disabled], [data-remodal-id="reset-local"] input[disabled] {
+  background: #efefef;
+  border-color: #ddd; }
+
+[data-remodal-id="wizard"] input.invalid, [data-remodal-id="reset-local"] input.invalid {
+  border-color: #f4516d;
+  color: #f4516d; }
+
+[data-remodal-id="wizard"] label.disabled, [data-remodal-id="reset-local"] label.disabled {
+  color: #ccc; }
+
+[data-remodal-id="wizard"] label img, [data-remodal-id="reset-local"] label img {
+  max-width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem; }
+
+[data-remodal-id="wizard"] label a, [data-remodal-id="reset-local"] label a {
+  margin-left: 0.5rem; }
+
+[data-remodal-id="wizard"] .columns, [data-remodal-id="reset-local"] .columns {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  [data-remodal-id="wizard"] .columns .column, [data-remodal-id="reset-local"] .columns .column {
+    flex: 1; }
+    [data-remodal-id="wizard"] .columns .column:first-child, [data-remodal-id="reset-local"] .columns .column:first-child {
+      width: 35%;
+      flex: none;
+      border-right: 1px solid #ddd;
+      margin-right: 2rem; }
+
+[data-remodal-id="wizard"] .step-1 div.column:nth-child(1), [data-remodal-id="reset-local"] .step-1 div.column:nth-child(1) {
+  flex-grow: 1.5;
+  width: 15%; }
+  [data-remodal-id="wizard"] .step-1 div.column:nth-child(1) > label:nth-child(4), [data-remodal-id="reset-local"] .step-1 div.column:nth-child(1) > label:nth-child(4) {
+    width: 110%; }
+
+[data-remodal-id="wizard"] .step-1 div.column:nth-child(2), [data-remodal-id="reset-local"] .step-1 div.column:nth-child(2) {
+  margin-left: 25px; }
+
+[data-remodal-id="wizard"] .step-1 div.column:nth-child(2) > label:nth-child(1) > input:nth-child(1), [data-remodal-id="wizard"] .step-1 div.column:nth-child(2) > label:nth-child(2) > input:nth-child(1), [data-remodal-id="reset-local"] .step-1 div.column:nth-child(2) > label:nth-child(1) > input:nth-child(1), [data-remodal-id="reset-local"] .step-1 div.column:nth-child(2) > label:nth-child(2) > input:nth-child(1) {
+  width: 100%; }
+
+[data-remodal-id="wizard"] .step-1 .no_user, [data-remodal-id="reset-local"] .step-1 .no_user {
+  float: right;
+  font-size: .8rem;
+  padding: 0; }
+  [data-remodal-id="wizard"] .step-1 .no_user input, [data-remodal-id="reset-local"] .step-1 .no_user input {
+    margin-right: 0; }
+
+[data-remodal-id="wizard"] .step-2 .info, [data-remodal-id="reset-local"] .step-2 .info {
+  margin: 0.2rem 0;
+  padding: 0.5rem 1.5rem; }
+
+[data-remodal-id="wizard"] .step-2 ol, [data-remodal-id="wizard"] .step-2 ul, [data-remodal-id="reset-local"] .step-2 ol, [data-remodal-id="reset-local"] .step-2 ul {
+  padding-left: 1rem; }
+
+[data-remodal-id="wizard"] .step-4 .info, [data-remodal-id="reset-local"] .step-4 .info {
+  font-size: 100%;
+  margin: 0.2rem 0; }
+
+[data-remodal-id="wizard"] .step-4 .alert, [data-remodal-id="wizard"] .step-4 .warning, [data-remodal-id="reset-local"] .step-4 .alert, [data-remodal-id="reset-local"] .step-4 .warning {
+  padding: 0.5rem 1.5rem; }
+
+[data-remodal-id="wizard"] .step-4 .fa.fa-warning, [data-remodal-id="reset-local"] .step-4 .fa.fa-warning {
+  color: #ff7d3b;
+  font-size: 1.2rem; }
+
+[data-remodal-id="wizard"] .step-4 .wizard-padding label > *, [data-remodal-id="reset-local"] .step-4 .wizard-padding label > * {
+  vertical-align: middle; }
+
+[data-remodal-id="wizard"] .step-4 .info-desc, [data-remodal-id="reset-local"] .step-4 .info-desc {
+  color: #0091ff;
+  float: right;
+  margin-right: .5rem;
+  font-size: 1.2rem; }
+
+[data-remodal-id="wizard"] .step-4 hr, [data-remodal-id="reset-local"] .step-4 hr {
+  margin: .5rem 0; }
+
+#admin-main [data-grav-field="git-wizard"] {
+  margin: 0 1rem; }
+  #admin-main [data-grav-field="git-wizard"] .danger.button-bar {
+    margin: 0;
+    padding: 0;
+    background: transparent; }
+  #admin-main [data-grav-field="git-wizard"] .button {
+    top: 0 !important;
+    -webkit-transform: translateY(0) !important;
+    -moz-transform: translateY(0) !important;
+    -ms-transform: translateY(0) !important;
+    -o-transform: translateY(0) !important;
+    transform: translateY(0) !important; }
+
+/*# sourceMappingURL=git-sync.css.map */

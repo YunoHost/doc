@@ -1,0 +1,4 @@
+{# DEPRECATED: Do not override this file! Use forms/layouts/field/[FORM_LAYOUT]-field.html.twig instead #}
+
+{% set layout = layout ?? form.layout ?? 'default' %}
+{% extends ["forms/layouts/field/#{layout}-field.html.twig", 'forms/layouts/field/default-field.html.twig'] %}

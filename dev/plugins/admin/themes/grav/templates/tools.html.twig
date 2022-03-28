@@ -1,0 +1,50 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set tools_slug = uri.basename %}
+{% if tools_slug == 'tools' %}{% set tools_slug = 'backups' %}{% endif %}
+{% set title = "PLUGIN_ADMIN.TOOLS"|t ~ ": " ~ ("PLUGIN_ADMIN." ~ tools_slug|underscorize|upper)|t %}
+{% set tools = admin.tools() %}
+
+{% set titlebar -%}
+    {% include 'partials/tools-' ~ tools_slug ~ '-titlebar.html.twig' ignore missing %}
+{%- endset %}
+
+{% block titlebar %}
+    {% if titlebar %}
+        {{ titlebar }}
+    {% else %}
+    <div class="button-bar">
+        <a class="button" href="{{ base_url }}"><i class="fa fa-reply"></i> {{ "PLUGIN_ADMIN.BACK"|t }}</a>
+    </div>
+    <h1><i class="fa fa-fw fa-briefcase"></i> {{ "PLUGIN_ADMIN.TOOLS"|t }} - {{ ("PLUGIN_ADMIN." ~ tools_slug|underscorize|upper)|t }}</h1>
+    {% endif %}
+{% endblock %}
+
+{% block content_top %}
+    {% if tools|length > 1 %}
+    <div class="form-tabs">
+        <div class="tabs-nav">
+        {% for slug,tool in tools %}
+            {% set perms = tool|first %}
+            {% set name = tool|last %}
+            {% if authorize(perms) %}
+            <a href="{{ admin_route('/tools/' ~ slug|hyphenize) }}" {% if tools_slug == slug|hyphenize %}class="active"{% endif %}>
+                {{ name|t|capitalize }}
+            </a>
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {% set perms = tools[tools_slug]|first %}
+
+    {% if authorize(perms) %}
+        {% include 'partials/tools-' ~ tools_slug ~ '.html.twig' ignore missing %}
+    {% else %}
+        <h1>Unauthorized</h1>
+    {% endif %}
+{% endblock %}
+

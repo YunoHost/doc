@@ -1,0 +1,73 @@
+{% extends "forms/field.html.twig" %}
+
+{% block global_attributes %}
+    data-grav-selectize="{{ (field.selectize is defined ? field.selectize : {})|json_encode()|e('html_attr') }}"
+    {{ parent() }}
+{% endblock %}
+
+{% block input %}
+    <div class="{{ form_field_wrapper_classes ?: 'form-select-wrapper' }} {{ field.size }} {{ field.wrapper_classes }}">
+        <select name="{{ (scope ~ field.name)|fieldName ~ (field.multiple ? '[]' : '') }}"
+                class="{{ form_field_select_classes }} {{ field.classes }} {{ field.size }}"
+                {% if field.id is defined %}id="{{ field.id|e }}" {% endif %}
+                {% if field.style is defined %}style="{{ field.style|e }}" {% endif %}
+                {% if field.disabled %}disabled="disabled"{% endif %}
+                {% if field.autofocus in ['on', 'true', 1] %}autofocus="autofocus"{% endif %}
+                {% if field.novalidate in ['on', 'true', 1] %}novalidate="novalidate"{% endif %}
+                {% if required %}required="required"{% endif %}
+                {% if field.multiple in ['on', 'true', 1] %}multiple="multiple"{% endif %}
+                {% if field.disabled or isDisabledToggleable %}disabled="disabled"{% endif %}
+                {% if field.tabindex %}tabindex="{{ field.tabindex }}"{% endif %}
+                {% if field.form %}form="{{ field.form }}"{% endif %}
+                {% if field.autocomplete is defined %}autocomplete="{{ field.autocomplete }}"{% endif %}
+                {% if field.key %}
+                    data-key-observe="{{ (scope ~ field.name)|fieldName }}"
+                {% endif %}
+                {% if field.datasets %}
+                    {% for datakey, datavalue in field.datasets %}
+                        data-{{ datakey }}="{{ datavalue|e('html_attr') }}"
+                    {% endfor %}
+                {% endif %}
+                >
+            {% if field.placeholder %}<option value="" disabled selected>{{ field.placeholder|t|raw }}</option>{% endif %}
+
+            {% set options = field.options %}
+            {% if field.selectize.create and value %}
+              {% set custom_value = field.multiple ? value : { (value): value } %}
+              {% set options = options|merge(custom_value|default([]))|array_unique %}
+            {% endif %}
+
+            {% set value = value is iterable ? value : value|string %}
+            {% for key, item_value in options %}
+                {% if item_value is iterable and item_value.value %}
+                    {% set akey = field.selectize and field.multiple ? item_value : key %}
+                    {% set avalue = item_value.value|t %}
+                    <option {{ item_value.disabled ? 'disabled="disabled"' : '' }}
+                        {{ item_value.selected or key == value ? 'selected="selected"' : '' }}
+                        {{ item_value.label    ? 'label=' ~ item_value.label : '' }}
+                        value="{{ akey }}"
+                    >
+                        {{ avalue|raw }}
+                    </option>
+                {% elseif item_value is iterable %}
+                    {% set optgroup_label = item_value|keys|first %}
+                    <optgroup label="{{ optgroup_label|t|e('html_attr') }}">
+                      {% for subkey, suboption in field.options[key][optgroup_label] %}
+                          {% set subkey = subkey|string %}
+                          {% set item_value = (field.selectize and field.multiple ? suboption : subkey)|string %}
+                          {% set selected = (field.selectize ? suboption : subkey)|string %}
+                          <option {% if subkey is same as (value) or (field.multiple and selected in value) %}selected="selected"{% endif %} value="{{ subkey }}">
+                            {{ suboption|t|raw }}
+                          </option>
+                      {% endfor %}
+                    </optgroup>
+                {% else %}
+                    {% set val = (field.selectize and field.multiple ? item_value : key)|string %}
+                    {% set selected = (field.selectize ? item_value : key)|string %}
+                    <option {% if val is same as (value) or (field.multiple and selected in value) %}selected="selected"{% endif %} value="{{ val }}">{{ item_value|t|raw }}</option>
+                {% endif %}
+            {% endfor %}
+
+        </select>
+    </div>
+{% endblock %}

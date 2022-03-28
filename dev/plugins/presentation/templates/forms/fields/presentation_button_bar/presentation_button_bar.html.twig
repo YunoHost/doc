@@ -1,0 +1,30 @@
+{% extends "forms/field.html.twig" %}
+
+{% block contents %}
+    <div class="button-bar" style="margin:0;padding:0;text-align:left;background:0;z-index:2;">
+        {%- if field.fields -%}
+        {%- for child in field.fields -%}
+            {%- if child.name != 'save' -%}
+            {%-
+                include [
+                    "forms/fields/#{child.type}/#{child.type}.html.twig",
+                    'forms/fields/text/text.html.twig'
+                ] with { field: child, value: null }
+            -%}
+            {%- else -%}
+                {% if config.plugins['presentation'].admin_async_save and context.modified != null %}
+                <div style="float:right;padding-right:1.5rem;display:flex;align-items:center;justify-content:center;">
+                    <div id="last-saved" style="display:none;margin-right:1em;">
+                        <span>{{ child.prefix|t|e('html_attr') }}</span>
+                        <span id="last-saved-value"></span>
+                    </div>
+                    <div class="button-group">
+                        <button id="presentation-save" class="button" style="padding: 0.3rem 1.25rem 0.3rem 1rem;"><i class="fa fa-bolt"></i> {{ child.label|t|e('html_attr') }}</button>
+                    </div>
+                </div>
+                {% endif %}
+            {%- endif -%}
+        {%- endfor -%}
+        {%- endif -%}
+    </div>
+{% endblock %}
