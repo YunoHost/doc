@@ -1,0 +1,7 @@
+{% set value = iterable ? value|join(', ') : value|string %}
+
+{% if link -%}
+    <a href="{{ link|e }}">{{ value|e }}</a>
+{%- else -%}
+    {{ value|e }}
+{%- endif %}

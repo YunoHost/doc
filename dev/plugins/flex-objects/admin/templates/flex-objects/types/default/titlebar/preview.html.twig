@@ -1,0 +1,30 @@
+{% block titlebar %}
+    {% block titlebar_button_bar %}
+    <div class="button-bar">
+        {# BACK #}
+        {% block back_button %}
+            {% include ['flex-objects/types/' ~ target ~ '/buttons/back.html.twig', 'flex-objects/types/default/buttons/back.html.twig'] %}
+        {% endblock back_button %}
+
+        {# PREVIEW #}
+        {% if can_preview %}
+        {% block preview_button %}
+            {% include ['flex-objects/types/' ~ target ~ '/buttons/preview-open.html.twig', 'flex-objects/types/default/buttons/preview-open.html.twig'] %}
+        {% endblock preview_button %}
+        {% endif %}
+    </div>
+    {% endblock titlebar_button_bar %}
+
+    {% block titlebar_title %}
+    <h1>
+        {% if allowed %}
+            <i class="fa fa-fw {{ title_icon }}"></i>
+            {{ "PLUGIN_ADMIN.PREVIEW"|tu }}: {{ not object.exists ? '[' ~ 'PLUGIN_FLEX_OBJECTS.NEW'|tu|upper ~ ']' }} <strong>{{ title }}</strong>
+        {% else %}
+            <i class="fa fa-fw fa-exclamation-triangle"></i>
+            {{ 'PLUGIN_ADMIN.ERROR'|tu }}
+        {% endif %}
+    </h1>
+    {% endblock titlebar_title %}
+
+{% endblock %}

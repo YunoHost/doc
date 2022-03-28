@@ -1,0 +1,208 @@
+{% set form = form ?? grav.session.getFlashObject('form') %}
+{% set layout = layout ?? form.layout ?? 'default' %}
+{% set field_layout = field_layout ?? layout %}
+
+{# Keep here for Backwards Compatibility #}
+{% include 'partials/form-messages.html.twig' %}
+
+{% set scope = scope ?: form.scope is defined ? form.scope : 'data.' %}
+{% set multipart = '' %}
+{% set blueprints = blueprints ?? form.blueprint() %}
+{% set method = form.method|upper|default('POST') %}
+{% set client_side_validation = form.client_side_validation is not null ? form.client_side_validation : config.plugins.form.client_side_validation|defined(true) %}
+{% set inline_errors = form.inline_errors is not null ? form.inline_errors : config.plugins.form.inline_errors(false) %}
+
+{% set data = data ?? form.data %}
+{% set context = context ?? data %}
+
+{% for field in form.fields %}
+    {% if (method == 'POST' and field.type == 'file') %}
+        {% set multipart = ' enctype="multipart/form-data"' %}
+    {% endif %}
+{% endfor %}
+
+{% set action = action ?? (form.action ?: page.route ~ uri.params) %}
+{% set action = (action starts with 'http') or (action starts with '#') ? action : base_url ~ action %}
+{% set action = action|trim('/', 'right') %}
+
+{% if (action == base_url_relative) %}
+    {% set action = base_url_relative ~ '/' %}
+{% endif %}
+
+{% if form.keep_alive %}
+    {% if grav.browser.browser == 'msie' and grav.browser.version < 12 %}
+        {% do assets.addJs('plugin://form/assets/object.assign.polyfill.js') %}
+    {% endif %}
+    {% do assets.addJs('plugin://form/assets/form.vendor.js', { 'group': 'bottom', 'loading': 'defer' }) %}
+    {% do assets.addJs('plugin://form/assets/form.min.js', { 'group': 'bottom', 'loading': 'defer' }) %}
+{% endif %}
+
+{% do assets.addInlineJs("
+    window.GravForm = window.GravForm || {};
+    window.GravForm.config = {
+        current_url: '" ~ grav.route.withoutParams() ~"',
+        current_params: " ~ grav.route.params|json_encode ~ ",
+        param_sep: '" ~ config.system.param_sep ~ "',
+        base_url_relative: '" ~ base_url_relative ~ "',
+        form_nonce: '" ~ form.getNonce() ~ "',
+        session_timeout: " ~ config.system.session.timeout ~ "
+    };
+    window.GravForm.translations = Object.assign({}, window.GravForm.translations || {}, { PLUGIN_FORM: {} });
+", {'group': 'bottom', 'position': 'before', 'priority': 100}) %}
+
+{# Backwards Compatibility for block overrides #}
+{% set override_form_classes %}
+  {% block form_classes -%}
+    {{ form_outer_classes }} {{ form.classes }}
+  {%- endblock %}
+{% endset %}
+
+{% set override_inner_markup_fields_start %}
+  {% block inner_markup_fields_start %}{% endblock %}
+{% endset %}
+
+{% set override_inner_markup_fields_end %}
+  {% block inner_markup_fields_end %}{% endblock %}
+{% endset %}
+
+{% set override_inner_markup_fields %}
+  {% block inner_markup_fields %}
+    {% for field_name, field in form.fields %}
+      {% set field = prepare_form_field(field, field_name) %}
+      {% if field %}
+        {% set value = form ? form.value(field.name) : data.value(field.name) %}
+        {% set field_templates = include_form_field(field.type, field_layout) %}
+
+        {% block inner_markup_field_open %}{% endblock %}
+        {% block field %}
+          {% include field_templates ignore missing %}
+        {% endblock %}
+        {% block inner_markup_field_close %}{% endblock %}
+      {% endif %}
+    {% endfor %}
+  {% endblock %}
+{% endset %}
+
+{% set override_inner_markup_buttons_start %}
+  {% block inner_markup_buttons_start %}
+  <div class="{{ form_button_outer_classes ?: 'buttons'}}">
+  {% endblock %}
+{% endset %}
+
+{% set override_inner_markup_buttons_end %}
+  {% block inner_markup_buttons_end %}
+  </div>
+  {% endblock %}
+{% endset %}
+
+{# Embed for HTML layout #}
+{% embed 'forms/layouts/form.html.twig' %}
+
+  {% block embed_form_core %}
+    name="{{ form.name }}"
+    action="{{ action }}"
+    method="{{ method }}"{{ multipart|raw }}
+    {% if form.id %}id="{{ form.id }}"{% endif %}
+    {% if form.novalidate %}novalidate{% endif %}
+    {% if form.keep_alive %}data-grav-keepalive="true"{% endif %}
+    {% if form.attributes is defined %}
+      {% for key,attribute in form.attributes %}
+        {% if attribute|of_type('array') %}
+          {{ attribute.name }}="{{ attribute.value|e('html_attr') }}"
+        {% else %}
+          {{ key }}="{{ attribute|e('html_attr') }}"
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endblock %}
+
+  {% block embed_form_classes -%}
+    class="{{ parent() }} {{ override_form_classes|trim }}"
+  {%- endblock %}
+
+  {% block embed_form_custom_attributes %}
+    {% for k, v in blueprints.form.attributes %}
+      {{ k }}="{{ v|e }}"
+    {% endfor %}
+  {% endblock %}
+
+  {% block embed_fields %}
+    {{ override_inner_markup_fields_start|raw }}
+    {{ override_inner_markup_fields|raw }}
+
+    {% if form.isEnabled() ?? true %}
+    {% include include_form_field('formname', field_layout, 'hidden') %}
+    {% include include_form_field('formtask', field_layout, 'hidden') %}
+    {% include include_form_field('uniqueid', field_layout, 'hidden') %}
+    {% include include_form_field('nonce', field_layout, 'hidden') %}
+    {% endif %}
+
+    {{ override_inner_markup_fields_end|raw }}
+  {% endblock %}
+
+  {% block embed_buttons %}
+    {{ override_inner_markup_buttons_start|raw }}
+
+    {% if form.isEnabled() ?? true %}
+    {% for button in form.buttons %}
+      {% if not button.access or authorize(button.access) %}
+      {% if button.outerclasses is defined %}<div class="{{ button.outerclasses }}">{% endif %}
+
+      {% if button.url %}
+      {% set button_url = button.url starts with 'http' ? button.url : base_url ~ button.url %}
+      {% endif %}
+
+      {% embed 'forms/layouts/button.html.twig' %}
+        {% block embed_button_core %}
+          {% if button.id %}id="{{ button.id }}"{% endif %}
+          {% if button.disabled %}disabled="disabled"{% endif %}
+          {% if button.name %}
+            name="{{ button.name }}"
+          {% else %}
+            {% if button.task %}name="task" value="{{ button.task }}"{% endif %}
+          {% endif %}
+          type="{{ button.type|default('submit') }}"
+          {% if button.attributes is defined %}
+            {% for key,attribute in button.attributes %}
+              {% if attribute|of_type('array') %}
+                {{ attribute.name }}="{{ attribute.value|e('html_attr') }}"
+              {% else %}
+                {{ key }}="{{ attribute|e('html_attr') }}"
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endblock %}
+
+        {% block embed_button_classes %}
+          {% block button_classes %}
+            class="{{ form_button_classes ?: 'button' }} {{ button.classes }}"
+          {% endblock %}
+        {% endblock %}
+
+        {% block embed_button_content -%}
+          {%- set button_value = button.value|t|default('Submit') -%}
+          {%- if button.html -%}
+            {{- button_value|trim|raw -}}
+          {%- else -%}
+            {{- button_value|trim|e -}}
+          {%- endif -%}
+        {%- endblock %}
+
+      {% endembed %}
+
+      {% if button.outerclasses is defined %}</div>{% endif %}
+      {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    {{ override_inner_markup_buttons_end }}
+  {% endblock %}
+
+{% endembed %}
+
+
+{% if config.forms.dropzone.enabled %}
+<div id="dropzone-template" style="display:none;">
+    {% include 'forms/dropzone/template.html.twig' %}
+</div>
+{% endif %}

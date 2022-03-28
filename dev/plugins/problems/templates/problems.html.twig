@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Grav Problems</title>
+    <meta name="description" content="Grav is an easy to use, yet powerful, open source flat-file CMS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ problems_url }}/css/spectre.min.css" type="text/css" />
+    <link rel="stylesheet" href="{{ problems_url }}/css/spectre-icons.min.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container grid-md">
+      <div class="columns">
+        <div class="column">
+
+          <div class="text-center">
+            <img class="logo" src="{{ problems_url }}/assets/grav-logo.svg" />
+
+            <p class="reload toast toast-primary">
+              Please <strong>Review</strong> and <strong>Resolve</strong> before continuing <a href="{{ base_url }}" class="btn btn-primary"><i class="icon icon-refresh"></i> Reload Page</a>
+            </p>
+          </div>
+
+          {% include 'reports/problems-report.html.twig' %}
+
+          <p class="footer text-center">
+            <a href="http://getgrav.org">Grav</a> was <img src="{{ problems_url }}/assets/code-3.svg" /> with <img class="love" src="{{ problems_url }}/assets/heart.svg" /> by <a href="https://trilby.media">Trilby Media</a>.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

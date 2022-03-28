@@ -1,0 +1,40 @@
+{# Format specification: https://www.rssboard.org/rss-specification #}
+{% set collection = collection|default(page.collection) %}
+{% set lastBuildDate = 0 %}
+{% for page in collection %}
+    {%- set lastBuildDate = max(lastBuildDate, page.date) %}
+    {%- if collection.params.show_last_modified %}
+        {%- set lastBuildDate = max(feed_updated, page.modified) %}
+    {%- endif %}
+{% endfor %}
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>{{ collection.params.title }}</title>
+        <link>{{ page.url(true) }}</link>
+        <atom:link href="{{ uri.rootUrl(true)~uri.uri() }}" rel="self" type="application/rss+xml"/>
+        <description>{{ collection.params.description }}</description>
+        <language>{{ grav.language.getLanguage|default(config.system.language.default_lang)|default('en') }}</language>
+        <lastBuildDate>{{ lastBuildDate|date('D, d M Y H:i:s O') }}</lastBuildDate>
+        {% for item in collection %}
+        {% set banner = item.media.images|first %}
+        <item>
+            <title>{{ item.title|e }}</title>
+            <link>{{ item.url(true) }}</link>
+            <guid>{{ item.url(true) }}</guid>
+            <pubDate>{{ item.date|date('D, d M Y H:i:s O') }}</pubDate>
+            <description>
+                <![CDATA[
+                {% if banner %}
+                {{ banner.cropZoom(1200,800).html|absolute_url|raw }}
+                {% endif %}
+                {{ item.content|safe_truncate_html(collection.params.length)|raw }}
+                ]]>
+            </description>
+            {% for tag in item.taxonomy.tag %}
+                <category>{{ tag|e }}</category>
+            {% endfor %}
+        </item>
+        {% endfor %}
+    </channel>
+</rss>

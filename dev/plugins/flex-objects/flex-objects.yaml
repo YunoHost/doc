@@ -1,0 +1,14 @@
+enabled: true
+
+built_in_css: true
+extra_admin_twig_path: 'theme://admin/templates'
+admin_list:
+  per_page: 15
+  order:
+    by: updated_timestamp
+    dir: desc
+
+directories:
+  - 'blueprints://flex-objects/pages.yaml'
+  - 'blueprints://flex-objects/user-accounts.yaml'
+  - 'blueprints://flex-objects/user-groups.yaml'

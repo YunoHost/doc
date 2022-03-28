@@ -1,0 +1,29 @@
+{% set layout = layout ?? form.layout ?? 'default' %}
+{% set field_layout = layout %}
+
+{% set client_side_validation = form.client_side_validation is not null ? form.client_side_validation : config.plugins.form.client_side_validation|default(true) %}
+{% set inline_errors = form.inline_errors is not null ? form.inline_errors : config.plugins.form.inline_errors(false) %}
+
+<section id="grav-login">
+  {{ content|raw }}
+
+  <form method="post" action="{{ (base_url_relative ~ uri.path)|e }}">
+    {% for field in form.fields %}
+      {% set field = prepare_form_field(field, field_name) %}
+      {% if field %}
+        {% set value = field.name == 'username' ? username : '' %}
+        {# {% set value = form.value(field.name) %} #}
+        {% set field_templates = include_form_field(field.type, field_layout) %}
+        {% block field %}
+          {% include field_templates ignore missing %}
+        {% endblock %}
+      {% endif %}
+    {% endfor %}
+
+    <div class="form-actions secondary-accent">
+        <button type="submit" class="button primary" name="task" value="login.forgot"><i class="fa fa-paper-plane"></i> {{ "PLUGIN_LOGIN.BTN_SEND_INSTRUCTIONS"|t }}</button>
+    </div>
+
+    {{ nonce_field('forgot-form', 'forgot-form-nonce')|raw }}
+  </form>
+</section>

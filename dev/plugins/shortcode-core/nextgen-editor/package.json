@@ -1,0 +1,24 @@
+{
+  "name": "nextgen-editor",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.13",
+    "@vue/cli-plugin-eslint": "~4.5.13",
+    "@vue/cli-service": "~4.5.13",
+    "@vue/eslint-config-airbnb": "^5.3.0",
+    "babel-eslint": "^10.1.0",
+    "directory-named-webpack-plugin": "^4.0.1",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-vue": "^7.18.0",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.1.0"
+  }
+}

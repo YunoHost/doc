@@ -1,0 +1,43 @@
+# Global plugin configurations
+
+enabled: true                 # Set to false to disable this plugin completely
+built_in_css: true            # Use built-in CSS of the plugin
+weight: 0                     # Set the weight (order of execution)
+
+# Default options for External Links configuration
+
+exclude:
+  classes: [exclude]          # Exclude all links with this class
+  domains:                    # A list of domains to be excluded e.g
+  # - localhost/*             # (any RegExp can be used)
+  # - img.domain.com/*
+
+links:
+  www: false                  # Autom. link any hostname that starts with "www."
+  redirects: false            # Also mark links as external, that link to pages that redirect to an external URL
+
+  schemes:                    # Allowed schemes
+    - 'http'
+    - 'https'
+    - 'ftp'
+    - 'irc'
+    - 'mailto'
+    - 'news'
+    - 'nntp'
+    - 'rtsp'
+    - 'sftp'
+    - 'ssh'
+    - 'tel'
+    - 'telnet'
+    - 'webcal'
+
+# Global and page specific configurations
+
+process: true                 # Filter external links
+
+title: false                  # Sets default title for external links
+no_follow: true               # Add rel="nofollow" to all external links
+target: "_blank"              # Set target attribute of link
+
+mode: "active"                # active = process and parse all links;
+                              # passive = parse links, but don't set CSS classes

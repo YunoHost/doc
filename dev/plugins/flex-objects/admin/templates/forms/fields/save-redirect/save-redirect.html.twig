@@ -1,0 +1,37 @@
+{% extends "forms/field.html.twig" %}
+
+{% set originalValue = value %}
+{% set value = (value is null ? field.default : value) %}
+{% set isNew = key ? false : true %}
+{% set savedOption = grav.session.post_entries_save|default('create-new') %}
+
+{% if isNew %}
+    {% set options = {'create-new':'PLUGIN_FLEX_OBJECTS.ACTION.CREATE_NEW', 'edit':'PLUGIN_FLEX_OBJECTS.ACTION.EDIT_ITEM', 'list':'PLUGIN_FLEX_OBJECTS.ACTION.LIST_ITEMS'} %}
+{% else %}
+    {% set options = {'edit':'PLUGIN_FLEX_OBJECTS.ACTION.EDIT_ITEM', 'list':'PLUGIN_FLEX_OBJECTS.ACTION.LIST_ITEMS'} %}
+{% endif %}
+
+{% block input %}
+    {% set savedOption = not isNew and savedOption == 'create-new' ? 'edit' : savedOption %}
+    {% for key, text in options %}
+        {% set id = field.id|default(field.name) ~ '-' ~ key %}
+
+        {% if savedOption == key %}
+            {% set value = savedOption %}
+        {% endif %}
+
+        <span class="radio">
+            <input type="radio"
+                   value="{{ key|e }}"
+                   id="{{ id|e }}"
+                   name="{{ (field.name)|fieldName }}"
+                   {% if key == value %}checked="checked" {% endif %}
+                    {% if field.disabled or isDisabledToggleable %}disabled="disabled"{% endif %}
+                    {% if field.validate.required in ['on', 'true', 1] %}required="required"{% endif %}
+            />
+            <label style="display: inline" class="inline" for="{{ id|e }}">{{ text|tu|e }}</label>
+        </span>
+
+
+    {% endfor %}
+{% endblock %}

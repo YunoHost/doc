@@ -1,0 +1,27 @@
+{
+  "name": "grav-plugin-markdown-notices",
+  "type": "grav-plugin",
+  "description": "Markdown notices plugin for Grav CMS",
+  "keywords": ["notices"],
+  "homepage": "https://github.com/getgrav/grav-plugin-markdown-notices/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Team Grav",
+      "email": "devs@getgrav.org",
+      "homepage": "http://getgrav.org",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "autoload": {
+    "classmap":  ["markdown-notices.php"]
+  },
+  "config": {
+    "platform": {
+      "php": "7.1.3"
+    }
+  }
+}

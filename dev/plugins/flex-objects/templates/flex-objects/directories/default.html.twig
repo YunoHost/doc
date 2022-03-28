@@ -1,0 +1,30 @@
+<table id="data-table" class="table">
+    <colgroup>
+        <col width="20" />
+        <col width="80" />
+    </colgroup>
+    <thead>
+    <tr>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for type, directory in directories %}
+        {%- set title = options.directories[type]['title'] ?? options.directories[type]['collection']['title'] ?? directory.title -%}
+        {%- if title matches '/\{/' -%}
+            {%- set title = include(template_from_string(title, 'collection title template'))|trim -%}
+        {%- endif -%}
+        {%- set description = options.directories[type]['description'] ?? options.directories[type]['collection']['description'] ?? directory.description -%}
+
+        <tr>
+            <td>
+                <a href="{{ url(directory_url ~ '/directory:' ~ type)|e }}">{{ title|e }}</a>
+            </td>
+            <td>
+                {{ description|e }}
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
