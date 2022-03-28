@@ -1,0 +1,288 @@
+name: TNT Search
+type: plugin
+slug: tntsearch
+version: 3.3.1
+testing: false
+description: Powerful indexed-based full text search engine powered by TNTSearch
+icon: binoculars
+author:
+  name: Trilby Media, LLC
+  email: devs@trilby.media
+homepage: https://github.com/trilbymedia/grav-plugin-tntsearch
+keywords: grav, plugin, search, search-engine
+bugs: https://github.com/trilbymedia/grav-plugin-tntsearch/issues
+docs: https://github.com/trilbymedia/grav-plugin-tntsearch/blob/develop/README.md
+license: MIT
+
+dependencies:
+    - { name: grav, version: '>=1.6.21' }
+
+form:
+  validation: strict
+
+  fields:
+
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    index_title:
+      type: spacer
+      title: Indexer Settings
+
+    index_status:
+      type: indexstatus
+      label: Search Index Status
+
+    enable_admin_page_events:
+      type: toggle
+      label: Enable Admin Page Events
+      help: Disable this if you are having problems with timeouts during page saving
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    scheduled_index.enabled:
+      type: toggle
+      label: Enable Index Scheduled Job
+      help: Use the Grav Scheduler to kick off a background index job
+      highlight: 0
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    scheduled_index.at:
+      type: cron
+      label: Scheduled Job Frequency
+      size: medium
+      help: Use 'cron' format
+      default: '0 */3 * * *'
+      placeholder: '0 */3 * * *'
+
+    scheduled_index.logs:
+      type: text
+      label: Scheduled Job Log File
+      placeholder: 'logs/tntsearch-index.out'
+      size: medium
+
+    ui_title:
+      type: spacer
+      title: UI Settings
+
+    built_in_css:
+      type: toggle
+      label: Built-in CSS
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    built_in_js:
+      type: toggle
+      label: Built-in Javascript
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    search_title:
+      type: spacer
+      title: Search Settings
+
+    built_in_search_page:
+      type: toggle
+      label: Built-in Search Page
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+
+
+    search_route:
+      type: text
+      size: medium
+      label: Search Page Route
+      help: The route for the built-in search page, leave empty if you wish to not have a dedicated search page.
+
+    query_route:
+      type: text
+      size: medium
+      label: Query Route
+      help: The route used to retrieve search results.
+
+    search_type:
+      type: select
+      size: small
+      classes: fancy
+      label: Search Type
+      help: Configure how TNTSearch will use the search query term
+      default: auto
+      options:
+        auto: Auto
+        basic: Basic
+        boolean: Boolean
+
+    fuzzy:
+      type: toggle
+      label: Fuzzy Search
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    phrases:
+      type: toggle
+      label: Match quoted phrases
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+        
+    stemmer:
+      type: select
+      size: small
+      classes: fancy
+      label: Stemmer
+      help: An automated process which produces a base string in an attempt to represent related words. If your content is not in the language listed, for best search results it is recommended to disable the stemmer.
+      options:
+        default: Default (English)
+        no: Disabled
+        arabic: Arabic
+        porter: English
+        german: German
+        italian: Italian
+        russian: Russian
+        ukrainian: Ukrainian
+
+    display_route:
+      type: toggle
+      label: Display Route
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    live_uri_update:
+      type: toggle
+      label: Live URI Update
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    display_hits:
+      type: toggle
+      label: Display Hits
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    display_time:
+      type: toggle
+      label: Display Time
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    limit:
+      type: text
+      label: Results Limit
+      default: 20
+
+    min:
+      type: text
+      label: Min Chars Before Search
+      default: 3
+
+    snippet:
+      type: text
+      label: Results Text Limit
+      default: 300
+
+    index_page_by_default:
+      type: toggle
+      label: Index Every Page
+      help: 'Index every page by default unless a page specifically declares `tntsearch: process: false`. Disabling this requires a `process: true` declartion to be added to each page that should be indexed.'
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    filter.items:
+      type: textarea
+      size: large
+      rows: 4
+      label: Search Filter
+      help: Use a standard collections based filter definition to restrict search to only these pages
+      yaml: true
+      placeholder: 'taxonomy@: { category: [news] }'
+      validate:
+        type: yaml
+
+    powered_by:
+      type: toggle
+      label: Powered By
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    adv_title:
+      type: spacer
+      title: Advanced Settings
+
+    search_object_type:
+      type: text
+      label: Search Object Type
+      help: Allows for overriding the deafult search type to a custom type provided by a plugin.
+      default: Grav

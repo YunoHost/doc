@@ -1,0 +1,42 @@
+{% extends "partials/base.html.twig" %}
+
+{% set object = form.object %}
+{% if object is null %}
+  {% throw 404 'Not Found' %}
+{% endif %}
+
+{% if form.flash.exists() %}
+  {% set draft = true %}
+  {% try %}
+    {% set object = form.updateObject() %}
+  {% catch %}
+  {% endcatch %}
+{% endif %}
+
+{% if header.title %}
+  {% do page.title('Edit ' ~ object.title) %}
+{% endif %}
+
+{% block content %}
+  {% include 'partials/messages.html.twig' ignore missing %}
+
+  <section id="default-page" class="basic-row">
+    <div class="container grid-sm form">
+      {{ page.content()|raw }}
+
+      {#
+      <div class="unsaved-changes d-hide">You have unsaved changes</div>
+      #}
+
+      {% include "forms/form.html.twig" %}
+    </div>
+  </section>
+
+  {% block modals %}
+    {#
+    {% if form.buttons.preview %}
+      {% include 'modals/flex-preview.html.twig' %}
+    {% endif %}
+    #}
+  {% endblock %}
+{% endblock %}

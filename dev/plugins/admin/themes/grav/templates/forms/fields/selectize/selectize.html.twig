@@ -1,0 +1,19 @@
+{% extends "forms/field.html.twig" %}
+
+{% block global_attributes %}
+    {% if field.selectize is defined %}
+        {% set fieldSelectize = {create: field.selectize.create ?? true}|merge(field.selectize ?? {}) %}
+        {% if field.merge_items %}
+            {% set fieldSelectize = fieldSelectize|merge({'items':value}) %}
+        {% endif %}
+    {% else %}
+        {% set fieldSelectize = {'create': true} %}
+    {% endif %}
+    data-grav-selectize="{{ fieldSelectize|json_encode()|e('html_attr') }}"
+    {{ parent() }}
+{% endblock %}
+
+{% block input_attributes %}
+    type="text"
+    {{ parent() }}
+{% endblock %}

@@ -1,0 +1,91 @@
+%button {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    vertical-align: middle;
+    outline: none;
+
+    &:active {
+        margin: 1px 0 -1px 0;
+    }
+
+    i {
+        //margin-right: 5px;
+    }
+
+    &.button-small {
+        padding: 4px 8px;
+        font-size: 95%;
+    }
+
+    &.button-x-small {
+        padding: 2px 5px;
+        font-size: 90%;
+    }
+
+    &:disabled {
+        opacity: .6;
+        cursor: no-drop;
+    }
+
+}
+
+@mixin button-color($color, $text:$white, $lighter:null) {
+    color: rgba(red($text), green($text), blue($text), opacity($text) - 0.15);
+
+	border-radius: $border-radius;
+    background: $color;
+
+    @if ($lighter == null) {
+        $lighter: lightness($color) > 50;
+    }
+
+    @if ($lighter) {
+        &:focus,
+        &:hover {
+            background: shade($color,15%);
+            color: $text;
+        }
+        &.dropdown-toggle {
+            border-left: 1px solid lighten($color, 5%);
+        }
+    } @else {
+        &:focus,
+        &:hover {
+            background: tint($color,15%);
+            color: $text;
+        }
+        &.dropdown-toggle {
+            border-left: 1px solid darken($color, 5%);
+        }
+    }
+}
+
+@mixin button-color-border($color, $text:$white, $lighter:null) {
+    color: $text;
+    border-radius: $border-radius;
+    border: 1px solid $color;
+
+    @if ($lighter == null) {
+        $lighter: lightness($color) > 50;
+    }
+
+    @if ($lighter) {
+        &:hover {
+            border-color: shade($color,15%);
+            color: $text;
+        }
+        &.dropdown-toggle {
+            border-left: 1px solid lighten($color, 5%);
+        }
+    } @else {
+        &:hover {
+            border-color: tint($color,15%);
+            color: $text;
+        }
+        &.dropdown-toggle {
+            border-left: 1px solid darken($color, 5%);
+        }
+    }
+}

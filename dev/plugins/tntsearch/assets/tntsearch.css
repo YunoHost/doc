@@ -1,0 +1,71 @@
+.tntsearch-form .form-input {
+    height: 2.4rem;
+    padding-left: 1rem;
+}
+
+#tntsearch-wrapper {
+    position: relative;
+}
+
+.tntsearch-clear {
+    border-radius: 100%;
+    padding: 0 1rem;
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    font-size: 2rem;
+    top: 0;
+    cursor: pointer;
+}
+
+.tntsearch-field-inpage {
+    width: 100%;
+}
+
+.tntsearch-dropdown ~ .tntsearch-results {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.tntsearch-dropdown ~ .tntsearch-results .row {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    background: #fff;
+    box-shadow: 0 2px 20px rgba(0,0,0, 0.1);
+    padding: 10px;
+    z-index: 2;
+}
+
+.tntsearch-results .info {
+    color: #999;
+    font-size: 90%;
+}
+
+.tntsearch-results .title {
+    margin-bottom: 10px;
+}
+
+.tntsearch-results .route {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.tntsearch-results .row > p {
+    margin-top: 0;
+}
+
+.tntsearch-results em {
+    font-style: normal;
+    background-color: #ffff33;
+}
+
+.tntsearch-powered-by {
+    text-align: center;
+    font-size: 14px;
+}
+
+.tntsearch-dropdown ~ .tntsearch-powered-by {
+    display: none;
+}

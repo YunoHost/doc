@@ -1,0 +1,14 @@
+{% embed 'partials/login.html.twig' with {title:'Grav Reset Password'} %}
+
+    {% block form %}
+        {% embed 'forms/default/fields.html.twig' with {name: null, fields: form.fields} %}
+            {% block inner_markup_field_open %}<div>{% endblock %}
+            {% block inner_markup_field_close %}</div>{% endblock %}
+        {% endembed %}
+        <div class="form-actions primary-accent">
+            <button type="submit" class="button primary" name="task" value="reset"><i class="fa fa-key"></i> {{ 'PLUGIN_ADMIN.LOGIN_BTN_RESET'|t }}</button>
+        </div>
+    {% endblock %}
+
+{% endembed %}
+

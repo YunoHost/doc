@@ -1,0 +1,15 @@
+{% extends "forms/field.html.twig" %}
+
+{% block field %}
+
+{#  Used if the field is being used directly outside of form #}
+{% set value = value ?? field.value ?? (field.evaluate ? evaluate(field.default) : field.default) %}
+
+{# Evaluate support for the form #}
+{% if not has_value and value and field.evaluate %}
+    {% set value = evaluate(value) %}
+{% endif %}
+{% set input_value = value is iterable ? value|join(',') : value|string %}
+
+<input data-grav-field="hidden" data-grav-disabled="false" {% if field.id is defined %}id="{{ field.id|e }}" {% endif %}type="hidden" class="input" name="{{ (scope ~ field.name)|fieldName }}" value="{{ input_value|e('html_attr') }}" />
+{% endblock %}

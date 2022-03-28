@@ -1,0 +1,12 @@
+dependencies:
+  reveal.js: 3.8.0
+lockfileVersion: 5
+packages:
+  /reveal.js/3.8.0:
+    dev: false
+    engines:
+      node: '>=9.0.0'
+    resolution:
+      integrity: sha512-MQ+UBXIIL9IyBXhkLZWb/AG5h5/BedmnHXHIEavMBawNLVfAayvTrwNlDjGn4tf/CQ2CTJR8jSyIdu4RpfoLpg==
+specifiers:
+  reveal.js: ^3.8.0

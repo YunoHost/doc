@@ -1,0 +1,16 @@
+type: flex-objects
+
+form:
+  fields:
+
+    # Don't mess with this stuff below unless you know what you are doing
+    tools_section:
+      type: section
+      field_classes: overlay bottom
+
+      fields:
+        _post_entries_save:
+          label: PLUGIN_FLEX_OBJECTS.AFTER_SAVE
+          type: save-redirect
+          default: create-new
+

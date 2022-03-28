@@ -9,6 +9,11 @@ Please report [issues on YunoHost bugtracker](https://github.com/YunoHost/issues
 
 You can refer to the page on [writing documentation](https://yunohost.org/write_documentation).
 
+If you know docker, you can run:
+```
+docker-compose up
+```
+
 ## Regenerate the css
 
 We use scss to manage the css. If you want to change it, you must rebuild it.

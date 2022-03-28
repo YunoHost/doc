@@ -1,0 +1,12 @@
+version: "3"
+services:
+  grav:
+    build: ./
+    ports:
+      - 8000:80
+    volumes:
+      - ./themes:/var/www/html/user/themes
+      - ./config:/var/www/html/user/config
+      - ./pages:/var/www/html/user/pages
+      - ./images:/var/www/html/user/images
+      - ./dev/plugins:/var/www/html/user/plugins

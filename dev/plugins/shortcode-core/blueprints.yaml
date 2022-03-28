@@ -1,0 +1,127 @@
+name: Shortcode Core
+slug: shortcode-core
+type: plugin
+version: 5.1.1
+description: "This plugin provides the core functionality for shortcode plugins"
+icon: code
+author:
+  name: Team Grav
+  email: devs@getgrav.org
+  url: http://getgrav.org
+homepage: https://github.com/getgrav/grav-plugin-shortcode-core
+demo: http://learn.getgrav.org
+keywords: gui, plugin, tabs, twig
+bugs: https://github.com/getgrav/grav-plugin-shortcode-core/issues
+license: MIT
+
+dependencies:
+    - { name: grav, version: '>=1.6.4' }
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin Enabled
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    active:
+      type: toggle
+      label: Activated
+      help: Site-Wide activation
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    active_admin:
+      type: toggle
+      label: Activated in Admin
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    admin_pages_only:
+      type: toggle
+      label: Admin Real-Pages Only
+      help: When activate, only process real-pages
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    parser:
+      type: select
+      size: medium
+      classes: fancy
+      label: Processor
+      help: Which built-in processor to use. WordPress (fastest), Regular (customizable), Regex (solid)
+      options:
+          wordpress: WordpressParser
+          regex: RegexParser
+          regular: RegularParser
+
+    custom_shortcodes:
+      type: text
+      label: Custom Shortcodes
+      help: The path to a location where you store custom shortcodes.
+      placeholder: '/user/custom/shortcodes'
+      size: large
+
+    css.notice_enabled:
+      type: toggle
+      label: Enable Notice Shortcode CSS
+      help: Enable the default notice CSS by default. Disable if you want to use your own custom CSS.
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    fontawesome.load:
+      type: toggle
+      label: Load Fontawesome Library
+      help: Used by the `safe-email` shortcode if your theme doesn't already load it
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    fontawesome.url:
+      type: text
+      label: Fontawesome URL
+      help: You can change the location of fontawesome by changing this URL
+      size: large
+
+    fontawesome.v5:
+      type: toggle
+      label: Use Fontawesome Version 5
+      help: Allows usage of the 'fab', 'fas' and other new font families of Fontawesome 5.
+      highlight: 0
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool

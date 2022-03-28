@@ -1,0 +1,26 @@
+{%- set object_context = object ?? {} -%}
+{%- set object_layout = object_context.layout ?? ('list-' ~ layout) -%}
+
+<div id="flex-objects">
+  <div class="text-center">
+    <input class="form-input search" type="text" placeholder="Search by name, email, etc" />
+    <button class="button button-primary sort asc" data-sort="name">
+      Sort by Name
+    </button>
+  </div>
+
+  <ul class="list">
+    {% for object in collection.filterBy({ published: true }) %}
+      <li>
+        {% render object layout: object_layout with object_context %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<script>
+    var options = {
+        valueNames: [ 'name', 'email', 'website', 'entry-extra' ]
+    };
+    var flexList = new List('flex-objects', options);
+</script>

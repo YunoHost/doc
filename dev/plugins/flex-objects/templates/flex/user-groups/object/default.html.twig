@@ -1,0 +1,14 @@
+<h4>
+    {% if object.icon %}<i class="fa fa-{{ object.icon|e }}"></i>{% endif %}
+    {{ object.readableName|e }}
+</h4>
+{% if object.description %}
+    <div>
+        {{ object.description|e }}
+    </div>
+{% endif %}
+{% if link %}
+    <div>
+        <a href="{{ link }}">See Details</a>
+    </div>
+{% endif %}

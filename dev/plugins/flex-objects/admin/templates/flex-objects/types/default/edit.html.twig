@@ -1,0 +1,121 @@
+{% extends 'partials/base.html.twig' %}
+{% use 'flex-objects/types/default/titlebar/edit.html.twig' %}
+
+{# Avoid defining form and object twice: object should always come from the form! #}
+{% if form is not defined %}
+  {% set form = object.form %}
+  {% set object = form.object %}
+{% endif %}
+
+{# Allowed actions #}
+{% set can_list = can_list ?? directory.isAuthorized('list', 'admin', user) %}
+{% set can_read = can_read ?? (object.exists ? object.isAuthorized('read', 'admin', user) : directory.isAuthorized('create', 'admin', user)) %}
+{% set can_create = can_create ?? object.isAuthorized('create', 'admin', user) %}
+{% set can_save = can_save ?? (object.exists ? object.isAuthorized('update', 'admin', user) : directory.isAuthorized('create', 'admin', user)) %}
+{% set can_delete = can_delete ?? (object.exists and object.isAuthorized('delete', 'admin', user)) %}
+{% set can_translate = can_translate ?? (admin.multilang and object.hasFlexFeature('flex-translate')) %}
+{% set can_preview = can_preview ?? (can_read and object.exists and (directory.config('admin.views.preview.enabled') ?? directory.config('admin.preview.enabled', false))) %}
+
+{# Translations #}
+{% if can_translate %}
+    {% set translate_include_default = translate_include_default ?? grav.config.get('system.languages.include_default_lang_file_extension', true) %}
+    {% set all_languages = grav.admin.siteLanguages %}
+    {% set admin_languages = admin.languages_enabled %}
+    {% set default_language = grav.language.default %}
+    {% set object_language = object.language %}
+    {% set language = controller.language %}
+    {% set has_translation = object.hasTranslation(language, false) %}
+
+    {#
+    {% if translate_include_default %}
+        {% set all_languages = all_languages|merge({'': 'Default'}) %}
+        {% set admin_languages = admin_languages|merge({'': ''}) %}
+        {% set object_languages = object.languages(true) %}
+    {% else %}
+    #}
+        {% set language = language ?: default_language %}
+        {% set object_language = object_language ?: default_language %}
+        {% set object_languages = object.languages(false) %}
+    {# endif #}
+{% endif %}
+
+{# These variables can be overridden from the main template file #}
+{% set allowed = allowed ?? (directory and (object.exists and (can_read or can_save)) or (action == 'add' and can_read)) %}
+{% set back_route = back_route ?? ('/' ~ (action != 'edit' and not key ? route.getRoute(1, not can_list ? -1 : null) : route.getRoute(1, not can_list ? -2 : -1))) %}
+{% set title_icon = title_icon ?? view_config['icon'] ?? directory.config.admin.menu.list.icon ?? 'fa-file-text-o' %}
+{% set title -%}
+    {%- set title_config = view_config['title'] -%}
+    {%- if title_config.template -%}
+        {{- include(template_from_string(title_config.template, 'edit title template')) -}}
+    {%- else -%}
+        {{- title ?? object.form.getValue('title') ?? object.title ?? key -}}
+    {% endif %}
+{%- endset %}
+
+{% block body %}
+    {% set back_url = back_url ?? admin_route(back_route) %}
+    {% set id = key %}
+    {% set blueprint = blueprint ?? form.blueprint %}
+
+    {{ parent() }}
+{% endblock body %}
+
+{% block content_top %}
+    {% if allowed and user.authorize('admin.super') %}
+        {% if directory and object or action == 'add' %}
+            {% set save_location = object.getStorageFolder() ?? directory.getStorageFolder() %}
+            <div class="alert notice">{{ "PLUGIN_ADMIN.SAVE_LOCATION"|tu }}: <b>{{ url(save_location, false, true)|trim('/') }} {{ not object.exists ? '[' ~ 'PLUGIN_FLEX_OBJECTS.NEW'|tu|upper ~ ']' }}</b></div>
+        {% endif %}
+    {% endif %}
+    {% if object.exists and form.flash.exists %}
+        <div class="alert secondary-accent">
+            <i class="fa fa-lightbulb-o"></i> {{ 'PLUGIN_FLEX_OBJECTS.STATE.EDITING_DRAFT'|tu }} <button class="button button-link" type="submit" name="task" value="reset" form="blueprints">{{ "PLUGIN_ADMIN.RESET"|tu }}</button>
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {% if allowed %}
+        <div class="clear directory admin-{{ target }}">
+            <div class="admin-form-wrapper">
+                <div id="admin-topbar">
+                    {% block topbar %}{% endblock %}
+                </div>
+                {% block edit %}
+                    {% include 'partials/blueprints.html.twig' with { form: form, context: object, data: object } %}
+                {% endblock %}
+            </div>
+        </div>
+
+        {% include 'partials/modal-changes-detected.html.twig' %}
+
+        {% if can_delete %}
+            {% include ['flex-objects/types/' ~ target ~ '/modals/remove.html.twig', 'flex-objects/types/default/modals/remove.html.twig'] with { name: target } %}
+        {% endif %}
+
+    {% elseif (object.exists) %}
+
+        {% do page.modifyHeader('http_response_code', 403) %}
+        <div class="error-block">
+            <h1>{{ 'PLUGIN_ADMIN.ERROR'|tu }} 403</h1>
+            <div class="padding">
+                <p>
+                    {{ 'PLUGIN_FLEX_OBJECTS.ERROR.PAGE_FORBIDDEN'|tu }}
+                </p>
+            </div>
+        </div>
+
+    {% else %}
+
+        {% do page.modifyHeader('http_response_code', 404) %}
+        <div class="error-block">
+            <h1>{{ 'PLUGIN_ADMIN.ERROR'|tu }} 404</h1>
+            <div class="padding">
+                <p>
+                    {{ 'PLUGIN_FLEX_OBJECTS.ERROR.PAGE_NOT_EXIST'|tu }}
+                </p>
+            </div>
+        </div>
+
+    {% endif %}
+{% endblock %}

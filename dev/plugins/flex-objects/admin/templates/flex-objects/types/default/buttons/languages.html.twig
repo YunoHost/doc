@@ -1,0 +1,18 @@
+<div id="titlebar-languages" class="button-group">
+    <button type="button" class="button disabled">
+        <i class="fa fa-flag-o"></i>
+        {{ all_languages[language] ?? language }}
+    </button>
+    {%  if admin_languages|length > (language in admin_languages)|int %}
+        <button type="button" class="button dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <ul class="dropdown-menu language-switcher">
+            {% for lang_code in admin_languages %}
+                {% if lang_code != language %}
+                    <li><a href="{{ admin_route(route.getRoute(1), lang_code) }}">{{ all_languages[lang_code] ?? lang_code }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+</div>
