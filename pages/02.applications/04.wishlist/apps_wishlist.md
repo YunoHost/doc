@@ -83,7 +83,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [FEX](https://fex.rus.uni-stuttgart.de/) |  |  |  |
 | [FIDI](https://docs.firefly-iii.org/data-importer) | Import data from banks to Firefly |  |  |
 | [Filestash](https://www.filestash.app/) |  | [Upstream](https://github.com/mickael-kerjean/filestash) |  |
-| [FilePizza](https://file.pizza/) |  | [Upstream](https://github.com/kern/filepizza) |  |
 | [fishnet](https://lichess.org/get-fishnet) | Distributed Stockfish analysis for lichess.org | [Upstream](https://github.com/niklasf/fishnet) |  |
 | FitTrackee |  | [Upstream](https://github.com/SamR1/FitTrackee) |  |
 | Flask | Skeleton for flask apps |  | [Package Draft](https://github.com/YunoHost-Apps/flask_ynh) |
