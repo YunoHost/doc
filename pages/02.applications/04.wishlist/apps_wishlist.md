@@ -232,6 +232,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Restya](https://restya.com) |  | [Upstream](https://github.com/RestyaPlatform/board/) |  |
 | [Retroshare](https://retroshare.cc/) |  | [Upstream](https://github.com/RetroShare/RetroShare) |  |
 | [Revolt](https://revolt.chat/) | Chat software similar to Discord | [Upstream](https://github.com/revoltchat) |  |
+| [Rimgo](https://i.bcow.xyz/) | An alternative frontend for Imgur | [Upstream](https://codeberg.org/video-prize-ranch/rimgo) |  |
 | [roadiz](https://www.roadiz.io) | Create a modern website |  | [Package Draft](https://github.com/YunoHost-Apps/roadiz_ynh) |
 | rs-short | An URL shortener | [Upstream](https://git.42l.fr/42l/rs-short) |  |
 | RSS-proxy | RSS-proxy allows you to do create an RSS or ATOM feed of almost any website, just by analyzing just the static HTML structure.  | [Upstream](https://github.com/damoeb/rss-proxy) |  |
