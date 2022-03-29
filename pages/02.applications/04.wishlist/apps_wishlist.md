@@ -83,6 +83,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [FEX](https://fex.rus.uni-stuttgart.de/) |  |  |  |
 | [FIDI](https://docs.firefly-iii.org/data-importer) | Import data from banks to Firefly |  |  |
 | [Filestash](https://www.filestash.app/) |  | [Upstream](https://github.com/mickael-kerjean/filestash) |  |
+| [FilePizza](https://file.pizza/) |  | [Upstream](https://github.com/kern/filepizza) |  |
 | [fishnet](https://lichess.org/get-fishnet) | Distributed Stockfish analysis for lichess.org | [Upstream](https://github.com/niklasf/fishnet) |  |
 | FitTrackee |  | [Upstream](https://github.com/SamR1/FitTrackee) |  |
 | Flask | Skeleton for flask apps |  | [Package Draft](https://github.com/YunoHost-Apps/flask_ynh) |
@@ -214,6 +215,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [ProcessMaker](https://www.processmaker.com) |  |  |  |
 | proftpd |  |  | [Package Draft](https://github.com/abeudin/proftpd_ynh) |
 | ProtonMail’s WebClient |  | [Upstream](https://github.com/ProtonMail/WebClient) |  |
+| [ProxiTok](https://proxitok.herokuapp.com/) | Browse TikTok without having to worry about privacy concerns | [Upstream](https://github.com/pablouser1/ProxiTok) |  |
 | [psitransfer](https://psi.cx/tags/PsiTransfer/) | Transfer files or images without problems |  | [Package Draft](https://github.com/YunoHost-Apps/psitransfer_ynh) |
 | [pterodactyl](https://pterodactyl.io/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/pterodactyl_ynh) |
 | [pufferpanel](https://emby.media/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/pufferpanel_ynh) |
@@ -231,7 +233,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Restya](https://restya.com) |  | [Upstream](https://github.com/RestyaPlatform/board/) |  |
 | [Retroshare](https://retroshare.cc/) |  | [Upstream](https://github.com/RetroShare/RetroShare) |  |
 | [Revolt](https://revolt.chat/) | Chat software similar to Discord | [Upstream](https://github.com/revoltchat) |  |
-| [Rimgo](https://i.bcow.xyz/) | An alternative frontend for Imgur | [Upstream](https://codeberg.org/video-prize-ranch/rimgo) |  |
 | [roadiz](https://www.roadiz.io) | Create a modern website |  | [Package Draft](https://github.com/YunoHost-Apps/roadiz_ynh) |
 | rs-short | An URL shortener | [Upstream](https://git.42l.fr/42l/rs-short) |  |
 | RSS-proxy | RSS-proxy allows you to do create an RSS or ATOM feed of almost any website, just by analyzing just the static HTML structure.  | [Upstream](https://github.com/damoeb/rss-proxy) |  |
