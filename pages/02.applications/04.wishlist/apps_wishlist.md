@@ -305,6 +305,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | webogram | Webogram - a new era of messaging | [Upstream](https://github.com/zhukov/webogram) | [Package Draft](https://github.com/YunoHost-Apps/webogram_ynh) |
 | [WebThings Gateway](https://iot.mozilla.org/gateway/) |  | [Upstream](https://github.com/mozilla-iot/) |  |
 | Whoogle | A metasearch engine | [Upstream](https://github.com/benbusby/whoogle-search) |  |
+| [Wikiless](https://wikiless.org/) | A free open source alternative Wikipedia front-end focused on privacy. | [Upstream](https://codeberg.org/orenom/wikiless) |  |
 | [wildfly](https://wildfly.org) |  |  | [Package Draft](https://github.com/YunoHost-Apps/wildfly_ynh) |
 | Wisemapping | An online mind mapping editor | [Upstream](https://bitbucket.org/wisemapping/wisemapping-open-source) | [Package Draft](https://github.com/YunoHost-Apps/wisemapping_ynh) |
 | WildDuck | Opinionated email server | [Upstream](https://github.com/nodemailer/wildduck) |  |
