@@ -31,6 +31,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Astral](https://astralapp.com/) | Organize Your GitHub Stars With Ease |[Upstream](https://github.com/astralapp/astral)|  |
 | [Azuracast](https://https://azuracast.com/) | A Simple, Self-Hosted Web Radio Management Suite |[Upstream](https://github.com/AzuraCast/AzuraCast)|  |
 | [Baserow](https://baserow.io/) | Open source no-code database tool and Airtable alternative. | [Upstream](https://gitlab.com/bramw/baserow) |  |
+| [Beatbump](https://beatbump.ml/home) | An alternative frontend for YouTube Music | [Upstream](https://github.com/snuffyDev/Beatbump) |  |
 | [Beeper](https://www.beeper.com/) | A unified inbox for 15 chat networks. | [Upstream](https://gitlab.com/beeper) |  |
 | [BigBlueButton](https://bigbluebutton.org) | Web conferencing system | [Upstream](https://github.com/bigbluebutton/bigbluebutton) |  |
 | [Bitmessage](https://bitmessage.org/) | P2P communication protocol used to send encrypted messages | [Upstream](https://github.com/Bitmessage/PyBitmessage) |  |
