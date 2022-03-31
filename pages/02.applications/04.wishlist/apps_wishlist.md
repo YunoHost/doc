@@ -194,7 +194,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Paperwork](https://paperwork.cloud) |  | [Upstream](https://github.com/paperwork/paperwork) |  |
 | [Passbolt](https://www.passbolt.com) | Password manager | [Upstream](https://github.com/passbolt) |  |
 | Pelias |  | [Upstream](https://github.com/pelias/pelias) |  |
-| Pelican | Pelican Static Site Generator |  | [Package Draft](https://github.com/YunoHost-Apps/pelican_ynh) |
 | [Penpot](https://penpot.app/) | Design Freedom for Teams |  [Upstream](https://github.com/penpot) |  |
 | personal-management-system | Your web application for managing personal data. | [Upstream](https://github.com/Volmarg/personal-management-system) |  |
 | [Photoprism](https://photoprism.org/) |  | [Upstream](https://github.com/photoprism/photoprism) |  |
