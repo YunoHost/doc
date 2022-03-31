@@ -239,7 +239,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Semantic MediaWiki](https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki) | lets you store and query data with­in the [MediaWiki](https://en.wikipedia.org/wiki/MediaWiki)'s pages | [Upstream](https://github.com/SemanticMediaWiki/SemanticMediaWiki) |  |
 | [shadowsocks](https://shadowsocks.org) | A SOCKS5 proxy to protect your Internet traffic |  | [Package Draft](https://github.com/YunoHost-Apps/shadowsocks_ynh) |
 | shinken | A flexible and scalable monitoring framework | [Upstream](https://github.com/naparuba/shinken) | [Package Draft](https://github.com/YunoHost-apps/shinken_ynh) |
-| shuri | URL Shortener | [Upstream](https://github.com/pips-/shuri) | [Package Draft](https://github.com/YunoHost-Apps/shuri_ynh) |
 | sickbeard | Automatic TV show downloader |  | [Package Draft](https://github.com/YunoHost-Apps/sickbeard_ynh) |
 | [sickrage](https://sickchill.github.io/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/YunoHost-Apps/sickrage_ynh) |
 | [Signal Proxy](https://signal.org/blog/help-iran-reconnect/) | Fight censorship and bypass traffic securely to the Signal service | [Upstream](https://github.com/signalapp/Signal-TLS-Proxy) | |
