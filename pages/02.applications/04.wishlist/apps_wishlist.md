@@ -218,7 +218,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [pterodactyl](https://pterodactyl.io/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/pterodactyl_ynh) |
 | [pufferpanel](https://emby.media/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/pufferpanel_ynh) |
 | Pump.io | File sharing and synchronization | [Upstream](https://github.com/pump-io/pump.io) |  |
-| [pyload](https://pyload.net/) |  | [Upstream](https://github.com/pyload/pyload) | [Package Draft](https://github.com/YunoHost-Apps/pyload_ynh) |
 | [qBit MatUI](https://qbit-material-webui-demo.herokuapp.com/) | A WebUI for qBittorrent | [Upstream](https://github.com/bill-ahmed/qbit-matUI) |  |
 | [qBittorrent](https://www.qbittorrent.org/) |  | [Upstream](https://github.com/qbittorrent/qBittorrent) |  |
 | [racktables](https://racktables.org) |  | [Upstream](https://github.com/RackTables/racktables) |  |
