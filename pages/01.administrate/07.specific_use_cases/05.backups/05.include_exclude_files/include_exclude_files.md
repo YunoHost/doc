@@ -113,7 +113,7 @@ There is no mechanism to exclude specific files from a YunoHost backup, other th
 ### Avoid backing up certain `/home` folders
 If needed, you can specify that certain user `home` folders not be backed up by the `yunohost backup` command, by creating an empty file named `.nobackup` inside.
 
-Cuation: this setup only works with **first-level subfolders of `/home`**, such as `/home/user1` or `/home/yunohost.multimedia`. It does not work for other levels of subfolders, like `/home/user1/bigfolder/`.
+Caution: this setup only works with **first-level subfolders of `/home`**, such as `/home/user1` or `/home/yunohost.multimedia`. It does not work for other levels of subfolders, like `/home/user1/bigfolder/`.
 
 ### Do not backup large amounts of data
 
