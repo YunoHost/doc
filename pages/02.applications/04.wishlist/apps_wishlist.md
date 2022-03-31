@@ -144,7 +144,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [LibreTranslate](https://libretranslate.com/) | Translation API | [Upstream](https://github.com/uav4geo/LibreTranslate) | [Package Draft](https://github.com/YunoHost-Apps/libretranslate_ynh) |
 | [Lila](https://lichess.org/) | Online chess game server | [Upstream](https://github.com/ornicar/lila) |  |
 | [Lingva Translate](https://lingva.ml/) | Alternative front-end for Google Translate | [Upstream](https://github.com/TheDavidDelta/lingva-translate) |  |
-| linuxdash | Low-overhead monitoring web dashboard | [Upstream](https://github.com/afaqurk/linux-dash) | [Package Draft](https://github.com/YunoHost-Apps/linuxdash_ynh) |
 | [LiquidSoap](https://www.liquidsoap.info/) | Audio and video streaming language | [Upstream](https://github.com/savonet/liquidsoap) |  |
 | [listmonk](https://listmonk.app) | Self-hosted newsletter & mailing list manager | [Upstream](https://github.com/knadh/listmonk) | |
 | LocomotiveCMS |  | [Upstream](https://github.com/locomotivecms/engine) |  |
