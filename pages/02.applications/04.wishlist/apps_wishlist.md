@@ -117,7 +117,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Hexo](https://hexo.io/) |  | [Upstream](https://github.com/hexojs/hexo) |  |
 | Hometown |  | [Upstream](https://github.com/hometown-fork/hometown) |  |
 | [htpc-manager](https://htpc.io) | Manage your HTPC from anywhere |  | [Package Draft](https://github.com/scith/htpc-manager_ynh) |
-| huginn | Build agents that monitor and act on your behalf |  | [Package Draft](https://github.com/YunoHost-Apps/huginn_ynh) |
 | [Icecast 2](https://www.icecast.org) |  | [Upstream](https://gitlab.xiph.org/xiph/icecast-server/) |  |
 | [ikiwiki](https://ikiwiki.info) |  |  |  |
 | [Inventaire](https://inventaire.io) | a libre collaborative resource mapper powered by open-knowledge, starting with books! 📚 | [Upstream](https://github.com/inventaire/inventaire) |  |
