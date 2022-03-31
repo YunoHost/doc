@@ -27,7 +27,7 @@ Si vous cherchez quelque chose à implémenter ou un bug à réparer, le bug tra
 
 ##### Moulinette
 
-C'est un petit framework "fait maison". [Son rôle principal](https://moulinette.readthedocs.io/en/latest/actionsmap.html) est de permettre de construire une API Web et une API en ligne de commande à partir d'un même code Python et d'un schéma YAML que nous appelons [l'actionmap](https://github.com/YunoHost/yunohost/blob/dev/data/actionsmap/yunohost.yml).
+C'est un petit framework "fait maison". [Son rôle principal](https://moulinette.readthedocs.io/en/latest/actionsmap.html) est de permettre de construire une API Web et une API en ligne de commande à partir d'un même code Python et d'un schéma YAML que nous appelons [l'actionmap](https://github.com/YunoHost/yunohost/blob/dev/share/actionsmap.yml).
 
 Il prend en charge d'autres mécanismes tels que l'authentification, l'internationalisation et des petites fonctions utilitaires techniques (par ex. lecture/écriture de fichiers JSON).
 
@@ -36,11 +36,11 @@ Moulinette dispose de sa propre documentation [ici](https://moulinette.readthedo
 ##### YunoHost
 
 C'est le cœur même de YunoHost. Il contient :
-- [le code Python](https://github.com/YunoHost/yunohost/tree/dev/src/yunohost) qui gère les utilisateurs, domaines, applications, services et autres
-- des [helpers bash](https://github.com/YunoHost/yunohost/tree/dev/data/helpers.d) principalement utilisés par les packageurs d'applications dans les scripts de ces applications
-- des [hooks](https://github.com/YunoHost/yunohost/tree/dev/data/hooks) et [templates](https://github.com/YunoHost/yunohost/tree/dev/data/templates) qui sont utilisés pour configurer les différents éléments de l'écosystème tels que NGINX, Postfix...
+- [le code Python](https://github.com/YunoHost/yunohost/tree/dev/src) qui gère les utilisateurs, domaines, applications, services et autres
+- des [helpers bash](https://github.com/YunoHost/yunohost/tree/dev/helpers) principalement utilisés par les packageurs d'applications dans les scripts de ces applications
+- des [hooks](https://github.com/YunoHost/yunohost/tree/dev/hooks) et [templates](https://github.com/YunoHost/yunohost/tree/dev/conf) qui sont utilisés pour configurer les différents éléments de l'écosystème tels que NGINX, Postfix...
 - des [chaînes internationalisées](https://github.com/YunoHost/yunohost/tree/dev/locales)
-- des [tests](https://github.com/YunoHost/yunohost/tree/dev/src/yunohost/tests)
+- des [tests](https://github.com/YunoHost/yunohost/tree/dev/tests)
 
 ##### SSOwat
 
@@ -55,9 +55,9 @@ SSOwat est configuré via `/etc/ssowat/conf.json` qui est généré par YunoHost
 C'est une dépendance *optionnelle* de YunoHost et correspond à une interface pour l'API web créée par YunoHost et Moulinette (service `yunohost-api`).
 
 Il contient essentiellement :
-- [des templates pour les vues](https://github.com/YunoHost/yunohost-admin/tree/dev/src/views)
+- [des templates pour les vues](https://github.com/YunoHost/yunohost-admin/tree/dev/app/src/views)
 - les [contrôleurs JavaScript](https://github.com/YunoHost/yunohost-admin/tree/dev/src/js/yunohost/controllers) correspondants, qui interagissent avec l'API YunoHost
-- et ses [chaînes internationalisées](https://github.com/YunoHost/yunohost-admin/tree/dev/src/locales)
+- et ses [chaînes internationalisées](https://github.com/YunoHost/yunohost-admin/tree/dev/app/src/i18n/locales)
 
 ### Travailler sur le cœur Python / ligne de commande
 

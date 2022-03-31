@@ -225,6 +225,9 @@ Here are some VPS providers supporting YunoHost natively :
 
 !!! If you wish to check the validity of our signed images, you can [download our public key](https://forge.yunohost.org/yunohost.asc).
 
+! Current images are from Debian Buster (YunoHost v4.x) and will require that you perform a manual apt update command in SSH or CLI to continue updating.
+! Answer Yes to the warning about switching from stable to oldstable.
+
 <div class="hardware-image">
 <div id="cards-list">
 </div>
@@ -546,7 +549,7 @@ Let's therefore add a first "regular" user.
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
 
-Go in Users > Add
+Go in Users > Click on "+ New User" button
 
 [figure class="nomargin" caption="Preview of the user creation UI"]
 ![User creation](image://create-first-user.png?resize=100%&class=inline)
@@ -573,7 +576,7 @@ The diagnosis system is meant to provide an easy way to validate that all critic
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommended) From the web interface"]
-To run a diagnosis, go on Web Admin in the Diagnosis section. You should get a screen like this :
+To run a diagnosis, go on Web Admin in the Diagnosis section. Click Run initial diagnosis and you should get a screen like this :
 
 [figure class="nomargin" caption="Preview of the diagnostic panel"]
 ![](image://diagnostic.png?resize=100%&class=inline)
@@ -592,10 +595,12 @@ yunohost diagnosis show --issues --human-readable
 
 Once you configured DNS records and port forwarding (if needed), you should be able to install a Let's Encrypt certificate. This will get rid of the spooky security warning from earlier for new visitors.
 
-For more detailled instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/certificate).
+For more detailed instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/certificate).
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
+
+Go in Domains > Click on your domain > SSL Certificate
 
 [figure class="nomargin" caption="Preview of the diagnostic panel"]
 ![](image://certificate-before-LE.png?resize=100%&class=inline)

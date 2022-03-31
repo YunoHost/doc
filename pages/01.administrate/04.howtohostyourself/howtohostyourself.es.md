@@ -1,5 +1,5 @@
 ---
-title: Alegir son manera de autohospedaje
+title: Elegir manera de autohospedaje
 template: docs
 taxonomy:
     category: docs
@@ -11,7 +11,7 @@ Puedes autohospedarte desde tu casa (desde un pequeño ordenador), o desde un se
 
 ### En casa, por ejemplo con una tarjeta ARM o un ordenador antiguo
 
-Puedes autoalojarte en casa , desde una tarjeta ARM o un viejo ordenador conectado a tu internet.
+Puedes autoalojarte en casa, desde una tarjeta ARM o un viejo ordenador conectado a tu internet.
 
 - **Ventajas**: Tienes el control físico de la máquina y solo tienes que conseguir el hardware inicial.
 - **Desventajas**: Probablemente necesitas [configurer manualmente tu router](/isp_box_config) y puede que [tu operador de internet te limite](/isp).
@@ -23,7 +23,7 @@ Una VPN es un tunel encriptado entre dos máquinas. En la práctica, permite hac
 - **Ventajas** : Tienes el control físico de la máquina y la VPN permite ocultarte del rastro de tu operador de internet, y esquivar limitaciones.
 - **Desventajas** : Las VPN suelen ser de pago, y tendrás que costearla mensualmente.
 
-### En un sevidor remoto (VPS o servidor dedicado)
+### En un servidor remoto (VPS o servidor dedicado)
 
 Puedes alquilar un servidor privado virtual (VPS) o una máquina dedicada a alojamientos [asociativos](https://db.ffdn.org/) o comerciales.
 

@@ -207,7 +207,9 @@ Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 [div class="flex-child"]
 [[figure caption="Alsace Réseau Neutre - FR"]![](image://vps_ynh_arn.png?height=50)[/figure]](https://vps.arn-fai.net)
 [/div]
-
+[div class="flex-child"]
+[[figure caption="Association ECOWAN - FR"]![](https://cdn.ecowan.fr/charte-graphique/ecowan/logo/bleu-blanc/logo-bleu-clair.svg?height=50)[/figure]](https://www.ecowan.fr/vps-linux)
+[/div]
 [/div]
 {% endif %}
 
@@ -224,6 +226,9 @@ Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 {% endif %}
 
 !!! Si vous souhaitez vérifier la validité de nos images signées, vous pouvez [télécharger notre clé publique](https://forge.yunohost.org/yunohost.asc).
+
+! Les images actuelles sont basées sur Debian Buster (YunoHost v4.x) et nécessitent que vous fassiez la commande `apt update` en SSH ou ligne de commande pour continuer les mises à jour.
+! Répondez Oui à l'avertissement à propos du changement de `stable` vers `oldstable`.
 
 <div class="hardware-image">
 <div id="cards-list">
