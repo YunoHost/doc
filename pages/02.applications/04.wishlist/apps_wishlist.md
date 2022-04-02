@@ -40,7 +40,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | BTCPay Server |  | [Upstream](https://github.com/btcpayserver/btcpayserver) |  |
 | [Cactus Comments](https://cactus.chat/) | Federated comment system, to embed into your webpages, based on the Matrix protocol. | [Upstream](https://gitlab.com/cactus-comments) | [Package Draft](https://github.com/h3ndrik/cactus-comments_ynh) |
 | [Cagette](https://www.cagette.net/) | A marketplace for local farmers and producers | [Upstream](https://github.com/CagetteNet/cagette) | |
-| [Calendso](https://calendso.com/) | Volunteer shift management and meeting scheduling | [Upstream](https://github.com/calendso) | |
+| [Cal.com](https://cal.com/) | Formerly Calendso. Volunteer shift management and meeting scheduling. "The open source Calendly alternative." | [Upstream](https://github.com/calendso) | |
 | [Caliopen](https://www.caliopen.org) | A unified inteface for all your private communications |  |  |
 | [cgit](https://git.zx2c4.com/cgit/about) |  |  |  |
 | Chaskiq | A full featured Live Chat, Support & Marketing platform, alternative to Intercom, Drift, Crisp | [Upstream](https://github.com/chaskiq/chaskiq) |  |
