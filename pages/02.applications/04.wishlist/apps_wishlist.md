@@ -211,6 +211,8 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Pump.io | File sharing and synchronization | [Upstream](https://github.com/pump-io/pump.io) |  |
 | [qBit MatUI](https://qbit-material-webui-demo.herokuapp.com/) | A WebUI for qBittorrent | [Upstream](https://github.com/bill-ahmed/qbit-matUI) |  |
 | [qBittorrent](https://www.qbittorrent.org/) |  | [Upstream](https://github.com/qbittorrent/qBittorrent) |  |
+| [QGis server](https://qgis.org/fr/site/) | QGis server allows to publish QGis desktop projets and maps as OGC-compliant services, that can be used in openlayers, leaflet etc. | [Upstream](https://github.com/qgis/QGIS) | |  
+| [QWC2](https://github.com/qgis/qwc2) | QWC (Qgis Web Client) is a react and openlayers-based web UI to publish and display qgis desktop projects. | [Upstream](https://github.com/qgis/qwc2) | |  
 | [racktables](https://racktables.org) |  | [Upstream](https://github.com/RackTables/racktables) |  |
 | Race for the galaxy | | [Upstream](https://github.com/bnordli/rftg) | |
 | [Raspap](https://raspap.com/) | | [Upstream](https://github.com/RaspAP/raspap-webgui) | |
