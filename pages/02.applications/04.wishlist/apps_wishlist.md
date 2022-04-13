@@ -144,7 +144,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Lila](https://lichess.org/) | Online chess game server | [Upstream](https://github.com/ornicar/lila) |  |
 | [Lingva Translate](https://lingva.ml/) | Alternative front-end for Google Translate | [Upstream](https://github.com/TheDavidDelta/lingva-translate) |  |
 | [LiquidSoap](https://www.liquidsoap.info/) | Audio and video streaming language | [Upstream](https://github.com/savonet/liquidsoap) |  |
-| [listmonk](https://listmonk.app) | Self-hosted newsletter & mailing list manager | [Upstream](https://github.com/knadh/listmonk) | |
 | LocomotiveCMS |  | [Upstream](https://github.com/locomotivecms/engine) |  |
 | [Logitech Media Server](https://en.wikipedia.org/wiki/Logitech_Media_Server) | (formerly SlimServer, SqueezeCenter and Squeezebox Server) is a streaming audio server | [Debian package](http://mysqueezebox.com/download) [Source](https://github.com/Logitech/slimserver) | [Package Draft](https://github.com/lunarok/squeezebox_ynh) |
 | [Loki](https://docs.loki.network/ServiceNodes/DebianPackageGuide/)| Service node for the Loki Network | [Upstream](https://github.com/loki-project/) |  |
@@ -174,6 +173,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [ntopng](https://www.ntop.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/ntopng_ynh) |
 | OhMyForm |  | [Upstream](https://github.com/ohmyform) |  |
 | Ombi |  | [Upstream](https://github.com/tidusjar/Ombi) |  |
+| [Omnivore](https://omnivore.app) | a complete, open source read-it-later solution for people who like reading. | [Upstream](https://github.com/omnivore-app/omnivore/) |  |
 | [OpenBazaar](https://openbazaar.org) |  | [Upstream](https://github.com/openbazaar) |  |
 | [OpenCart](https://www.opencart.com) |  | [Upstream](https://github.com/opencart/opencart) |  |
 | [OpenEats](https://open-eats.github.io/) |  | [Upstream](https://github.com/open-eats/OpenEats) |  |
