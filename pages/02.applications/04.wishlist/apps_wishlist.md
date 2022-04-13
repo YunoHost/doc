@@ -156,6 +156,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [medusa](https://pymedusa.com/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/YunoHost-Apps/medusa_ynh) |
 | [Megaglest](https://megaglest.org/) | realtime stategy game | [Upstream](https://megaglest.org/linux-packages.html) | |
 | microblog.pub |  | [Upstream](https://github.com/tsileo/microblog.pub) |  |
+| meteor-movielist | An open source web app for managing movie lists built with self-hosting in mind. Movie information is fetched from TMDb. | [Upstream](https://github.com/nunof07/meteor-movielist) |  |
 | [Mirakel](https://mirakel.azapps.de/taskwarrior.html) |  | [Upstream](https://github.com/GothenburgBitFactory/taskwarrior) |  |
 | modernpaste | A modern, feature-rich Pastebin alternative | [Upstream](https://github.com/LINKIWI/modern-paste) | [Package Draft](https://github.com/YunoHost-Apps/modernpaste_ynh) |
 | [Modoboa](https://modoboa.org) |  | [Upstream](https://github.com/modoboa/) |  |
