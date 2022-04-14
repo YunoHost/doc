@@ -15,11 +15,9 @@ You can [contribute to this list by adding something you'd like to be packaged](
 
 | Name   | Description | Upstream | Package draft |
 | ------ | ----------- | -------- | ------------- |
-| 2FAuth | Manage and Generate 2FA Codes | [Upstream](https://github.com/Bubka/2FAuth) |  |
 | 10er10 | 10er10 is an HTML5 audio jukebox | [Upstream](https://github.com/dready92/10er10) |  |
 | [Access to Memory (AtoM)](https://www.accesstomemory.org/) | Web-based, open source application for standards-based archival description and access in a multilingual, multi-repository environment. | [Upstream](https://github.com/artefactual/atom) |  |
 | adhocserver | An ad hoc server for the Sony PSP |  | [Package Draft](https://github.com/matlink/adhocserver_ynh) |
-| [agora](https://www.agora-project.net/) | Create collaborative and creative digital space |  | [Package Draft](https://github.com/YunoHost-Apps/agora_ynh) |
 | [Ajenti](https://ajenti.org) | Ajenti is a Linux & BSD modular server admin panel | [Upstream](https://github.com/ajenti/ajenti/) |  |
 | Akaunting | Manage payments/invoices/expenses | [Upstream](https://github.com/akaunting/akaunting) |  |
 | Anki Sync Server | a personal Anki server |[Upstream](https://github.com/ankicommunity/anki-sync-server) |  |
@@ -32,6 +30,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Astral](https://astralapp.com/) | Organize Your GitHub Stars With Ease |[Upstream](https://github.com/astralapp/astral)|  |
 | [Azuracast](https://https://azuracast.com/) | A Simple, Self-Hosted Web Radio Management Suite |[Upstream](https://github.com/AzuraCast/AzuraCast)|  |
 | [Baserow](https://baserow.io/) | Open source no-code database tool and Airtable alternative. | [Upstream](https://gitlab.com/bramw/baserow) |  |
+| [Beatbump](https://beatbump.ml/home) | An alternative frontend for YouTube Music | [Upstream](https://github.com/snuffyDev/Beatbump) |  |
 | [Beeper](https://www.beeper.com/) | A unified inbox for 15 chat networks. | [Upstream](https://gitlab.com/beeper) |  |
 | [BigBlueButton](https://bigbluebutton.org) | Web conferencing system | [Upstream](https://github.com/bigbluebutton/bigbluebutton) |  |
 | [Bitmessage](https://bitmessage.org/) | P2P communication protocol used to send encrypted messages | [Upstream](https://github.com/Bitmessage/PyBitmessage) |  |
@@ -41,7 +40,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | BTCPay Server |  | [Upstream](https://github.com/btcpayserver/btcpayserver) |  |
 | [Cactus Comments](https://cactus.chat/) | Federated comment system, to embed into your webpages, based on the Matrix protocol. | [Upstream](https://gitlab.com/cactus-comments) | [Package Draft](https://github.com/h3ndrik/cactus-comments_ynh) |
 | [Cagette](https://www.cagette.net/) | A marketplace for local farmers and producers | [Upstream](https://github.com/CagetteNet/cagette) | |
-| [Calendso](https://calendso.com/) | Volunteer shift management and meeting scheduling | [Upstream](https://github.com/calendso) | |
+| [Cal.com](https://cal.com/) | Formerly Calendso. Volunteer shift management and meeting scheduling. "The open source Calendly alternative." | [Upstream](https://github.com/calcom/cal.com) | |
 | [Caliopen](https://www.caliopen.org) | A unified inteface for all your private communications |  |  |
 | [cgit](https://git.zx2c4.com/cgit/about) |  |  |  |
 | Chaskiq | A full featured Live Chat, Support & Marketing platform, alternative to Intercom, Drift, Crisp | [Upstream](https://github.com/chaskiq/chaskiq) |  |
@@ -50,8 +49,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Citadel-suite](https://www.citadel.org) | Groupware platform |  |  |
 | [CKAN](https://ckan.org/) | A tool for making open data websites | [Upstream](https://github.com/ckan/ckan) |  |
 | [CloudTube](https://tube.cadence.moe/) | CloudTube front-end for YouTube | [Upstream](https://git.sr.ht/~cadence/cloudtube) |  |
-| [Cockpit](https://cockpit-project.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/cockpit_ynh) |
-| coin | Member dashboard for non profit ISP | [Upstream](https://code.ffdn.org/FFDN/coin/) | [Package Draft](https://github.com/YunoHost-Apps/coin_ynh) |
 | Commafeed |  | [Upstream](https://github.com/Athou/commafeed) |  |
 | [Conduit](https://conduit.rs/) |  Conduit is a lightweight open-source server implementation of the Matrix Specification with a focus on easy setup and low system requirements.  | [Upstream](https://gitlab.com/famedly/conduit) | [Package Draft](https://github.com/YunoHost-Apps/conduit_ynh) |
 | cops | Calibre OPDS |  | [Package Draft](https://github.com/YunoHost-Apps/cops_ynh) |
@@ -80,13 +77,12 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [ERPnext](https://erpnext.com/) |  | [Upstream](https://github.com/frappe/erpnext) |  |
 | [EteSync](https://www.etesync.com/) |  | [Upstream](https://github.com/etesync) |  |
 | [Excalibur](https://excalibur-py.readthedocs.io/en/master/) | A web interface to extract tabular data from PDFs (based on Camelot) | [Upstream](https://github.com/camelot-dev/excalibur) | |
-| [Excalidraw](https://excalidraw.com/) | Virtual whiteboard for sketching hand-drawn like diagrams | [Upstream](https://github.com/excalidraw/excalidraw) | [Package Draft](https://github.com/YunoHost-Apps/excalidraw_ynh) |
+| [Fab Manager](https://www.fab-manager.com/) | Simplify the daily management of your Third place/Fablab and boost your community | [Upstream](https://github.com/sleede/fab-manager) | |
 | [Federated wiki](http://fed.wiki.org/view/welcome-visitors/view/federated-wiki) | Farm for fedwiki sites | [Upstream](https://github.com/fedwiki) |  |
 | [Ferdi server](https://getferdi.com) | Messaging aggregation | [Upstream](https://github.com/getferdi/server) |  |
 | [FEX](https://fex.rus.uni-stuttgart.de/) |  |  |  |
 | [FIDI](https://docs.firefly-iii.org/data-importer) | Import data from banks to Firefly |  |  |
 | [Filestash](https://www.filestash.app/) |  | [Upstream](https://github.com/mickael-kerjean/filestash) |  |
-| [FilePizza](https://file.pizza/) |  | [Upstream](https://github.com/kern/filepizza) |  |
 | [fishnet](https://lichess.org/get-fishnet) | Distributed Stockfish analysis for lichess.org | [Upstream](https://github.com/niklasf/fishnet) |  |
 | FitTrackee |  | [Upstream](https://github.com/SamR1/FitTrackee) |  |
 | Flask | Skeleton for flask apps |  | [Package Draft](https://github.com/YunoHost-Apps/flask_ynh) |
@@ -107,7 +103,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | gitolite | Git server |  | [Package Draft](https://github.com/matlink/gitolite_ynh) |
 | gitrepositories |  |  | [Package Draft](https://github.com/YunoHost-Apps/gitrepositories_ynh) |
 | gitweb | Git forge (c.f. Gitolite) |  | [Package Draft](https://github.com/matlink/gitweb_ynh) |
-| glpi | Create a beautiful blog or website easily |  | [Package Draft](https://github.com/YunoHost-Apps/glpi_ynh) |
 | gnusocial | Create a federated comunication node |  | [Package Draft](https://github.com/YunoHost-Apps/gnusocial_ynh) |
 | [Goaccess](https://goaccess.io) | Web log analyzer | [Upstream](https://github.com/allinurl/goaccess) |  |
 | gogs_webhost | Turn a Gogs repository to static web hosting |  | [Package Draft](https://github.com/YunoHost-Apps/gogs_webhost_ynh) |
@@ -116,13 +111,12 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Granary |  | [Upstream](https://github.com/snarfed/granary) |  |
 | [Graphhopper](https://www.graphhopper.com/) |  | [Upstream](https://github.com/graphhopper/graphhopper) |  |
 | [Greenlight](https://blabla.aquilenet.fr/b) | A really simple end-user interface for your BigBlueButton server | [Upstream](https://github.com/bigbluebutton/greenlight) |  |
+| [Grist](https://www.getgrist.com/) | The evolution of spreadsheets | [Upstream](https://github.com/gristlabs/grist-core/) |  |
 | [Habitica](https://habitica.com/) |  | [Upstream](https://github.com/HabitRPG/habitica) |  |
-| headphones | Automatic music downloader |  | [Package Draft](https://github.com/YunoHost-Apps/headphones_ynh) |
 | Helpy |  | [Upstream](https://github.com/helpyio/helpy) |  |
 | [Hexo](https://hexo.io/) |  | [Upstream](https://github.com/hexojs/hexo) |  |
 | Hometown |  | [Upstream](https://github.com/hometown-fork/hometown) |  |
 | [htpc-manager](https://htpc.io) | Manage your HTPC from anywhere |  | [Package Draft](https://github.com/scith/htpc-manager_ynh) |
-| huginn | Build agents that monitor and act on your behalf |  | [Package Draft](https://github.com/YunoHost-Apps/huginn_ynh) |
 | [Icecast 2](https://www.icecast.org) |  | [Upstream](https://gitlab.xiph.org/xiph/icecast-server/) |  |
 | [ikiwiki](https://ikiwiki.info) |  |  |  |
 | [Inventaire](https://inventaire.io) | a libre collaborative resource mapper powered by open-knowledge, starting with books! 📚 | [Upstream](https://github.com/inventaire/inventaire) |  |
@@ -145,13 +139,11 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | lektor | A static website generator |  | [Package Draft](https://github.com/YunoHost-Apps/lektor_ynh) |
 | [LessPass](https://www.lesspass.com/) |  | [Upstream](https://github.com/lesspass/lesspass) |  |
 | [Lessy](https://lessy.io) |  | [Upstream](https://github.com/lessy-community/lessy) |  |
+| [Librarian](https://lbry.bcow.xyz/) | An alternative frontend for LBRY/Odysee | [Upstream](https://codeberg.org/librarian/librarian) |  |
 | [LibreTranslate](https://libretranslate.com/) | Translation API | [Upstream](https://github.com/uav4geo/LibreTranslate) | [Package Draft](https://github.com/YunoHost-Apps/libretranslate_ynh) |
-[Libreddit](https://libredd.it/) | An alternative private front-end to Reddit | [Upstream](https://github.com/spikecodes/libreddit) |  |
 | [Lila](https://lichess.org/) | Online chess game server | [Upstream](https://github.com/ornicar/lila) |  |
 | [Lingva Translate](https://lingva.ml/) | Alternative front-end for Google Translate | [Upstream](https://github.com/TheDavidDelta/lingva-translate) |  |
-| linuxdash | Low-overhead monitoring web dashboard | [Upstream](https://github.com/afaqurk/linux-dash) | [Package Draft](https://github.com/YunoHost-Apps/linuxdash_ynh) |
 | [LiquidSoap](https://www.liquidsoap.info/) | Audio and video streaming language | [Upstream](https://github.com/savonet/liquidsoap) |  |
-| [listmonk](https://listmonk.app) | Self-hosted newsletter & mailing list manager | [Upstream](https://github.com/knadh/listmonk) | |
 | LocomotiveCMS |  | [Upstream](https://github.com/locomotivecms/engine) |  |
 | [Logitech Media Server](https://en.wikipedia.org/wiki/Logitech_Media_Server) | (formerly SlimServer, SqueezeCenter and Squeezebox Server) is a streaming audio server | [Debian package](http://mysqueezebox.com/download) [Source](https://github.com/Logitech/slimserver) | [Package Draft](https://github.com/lunarok/squeezebox_ynh) |
 | [Loki](https://docs.loki.network/ServiceNodes/DebianPackageGuide/)| Service node for the Loki Network | [Upstream](https://github.com/loki-project/) |  |
@@ -159,12 +151,12 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [MaidSafe](https://maidsafe.net) |  | [Upstream](https://github.com/maidsafe) |  |
 | [Mailpile](https://www.mailpile.is) |  | [Upstream](https://github.com/mailpile/Mailpile) |  |
 | [Mailtrain](https://mailtrain.org/) |  | [Upstream](https://github.com/Mailtrain-org/mailtrain) |  |
-| mediadrop | Video Platform |  | [Package Draft](https://github.com/YunoHost-Apps/mediadrop_ynh) |
 | [Mealie](https://hay-kot.github.io/mealie/) | Recipe manager and meal planner  | [Upstream](https://github.com/hay-kot/mealie/) |  |
 | [Mediagoblin](https://mediagoblin.org/) | Video streaming platform | [Upstream](https://savannah.gnu.org/projects/mediagoblin) | [Package Draft](https://github.com/YunoHost-Apps/mediagoblin_ynh) |
 | [medusa](https://pymedusa.com/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/YunoHost-Apps/medusa_ynh) |
 | [Megaglest](https://megaglest.org/) | realtime stategy game | [Upstream](https://megaglest.org/linux-packages.html) | |
 | microblog.pub |  | [Upstream](https://github.com/tsileo/microblog.pub) |  |
+| meteor-movielist | An open source web app for managing movie lists built with self-hosting in mind. Movie information is fetched from TMDb. | [Upstream](https://github.com/nunof07/meteor-movielist) |  |
 | [Mirakel](https://mirakel.azapps.de/taskwarrior.html) |  | [Upstream](https://github.com/GothenburgBitFactory/taskwarrior) |  |
 | modernpaste | A modern, feature-rich Pastebin alternative | [Upstream](https://github.com/LINKIWI/modern-paste) | [Package Draft](https://github.com/YunoHost-Apps/modernpaste_ynh) |
 | [Modoboa](https://modoboa.org) |  | [Upstream](https://github.com/modoboa/) |  |
@@ -178,8 +170,9 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | mx-puppet-discord | A bridge between Matrix and Discord | [Upstream](https://github.com/matrix-discord/mx-puppet-discord) |  |
 | [Nautilus](https://myactivity.stream/) | Turn your website into an ActivityPub profile  | [Upstream](https://github.com/aaronpk/Nautilus) |  |
 | Netrunner |  | [Upstream](https://github.com/mtgred/netrunner) |  |
+| [NewsBlur](https://www.newsblur.com) | This is the most complete RSS reader that exists to date
+ | [Upstream](https://github.com/samuelclay/NewsBlur) |  |
 | nexusoss | Sonatype Nexus Repository manager OSS |  | [Package Draft](https://github.com/YunoHost-Apps/nexusoss_ynh) | 
-| NocoDB | Airtable alternative / turn any SQL db into a smart spreadsheet | [Upstream](https://github.com/nocodb/nocodb) | |
 | [ntopng](https://www.ntop.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/ntopng_ynh) |
 | OhMyForm |  | [Upstream](https://github.com/ohmyform) |  |
 | Ombi |  | [Upstream](https://github.com/tidusjar/Ombi) |  |
@@ -189,20 +182,16 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [OpenEats](https://open-eats.github.io/) |  | [Upstream](https://github.com/open-eats/OpenEats) |  |
 | [openHAB](https://www.openhab.org/) | Smart home platform | [Upstream](https://github.com/openhab) |  |
 | openid-simplesamlphp | OpenID provider based on SimpleSAMLphp |  | [Package Draft](https://github.com/julienmalik/openid-simplesamlphp_ynh) |
-| openproject |  | [Upstream](https://github.com/opf/openproject) | [Package Draft](https://github.com/moutonjr/openproject_ynh) |
 | OpenSourceBilling |  | [Upstream](https://github.com/vteams/open-source-billing) |  |
-| [osjs](https://www.os-js.org/) | Desktop you have access to through your web-browser |  | [Package Draft](https://github.com/YunoHost-Apps/osjs_ynh) |
 | [osmw](https://www.openstreetmap.org/) | Cartography software |  | [Package Draft](https://github.com/YunoHost-Apps/osmw_ynh) |
 | OSRM |  | [Upstream](https://github.com/Project-OSRM/osrm-backend) |  |
 | [OX Open-Xchange](https://www.open-xchange.com) | Linux groupware solution | [Upstream](https://github.com/open-xchange/) |  |
 | [OverLeaf](https://github.com/overleaf/overleaf) | open-source online real-time collaborative LaTeX editor | [Upstream](https://github.com/overleaf/overleaf) | [Package Draft](https://github.com/YunoHost-Apps/overleaf_ynh) |
 | [Padloc](https://padloc.app/) | Simple, secure password and data management for individuals and teams | [Upstream](https://github.com/padloc/padloc) | |
-| [pagure](https://pagure.io/pagure) | A Git forge |  | [Package Draft](https://github.com/YunoHost-Apps/pagure_ynh) |
 | Paperless-ng |  | [Upstream](https://github.com/jonaswinkler/paperless-ng) |  |
 | [Paperwork](https://paperwork.cloud) |  | [Upstream](https://github.com/paperwork/paperwork) |  |
 | [Passbolt](https://www.passbolt.com) | Password manager | [Upstream](https://github.com/passbolt) |  |
 | Pelias |  | [Upstream](https://github.com/pelias/pelias) |  |
-| Pelican | Pelican Static Site Generator |  | [Package Draft](https://github.com/YunoHost-Apps/pelican_ynh) |
 | [Penpot](https://penpot.app/) | Design Freedom for Teams |  [Upstream](https://github.com/penpot) |  |
 | personal-management-system | Your web application for managing personal data. | [Upstream](https://github.com/Volmarg/personal-management-system) |  |
 | [Photoprism](https://photoprism.org/) |  | [Upstream](https://github.com/photoprism/photoprism) |  |
@@ -222,11 +211,8 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [ProcessMaker](https://www.processmaker.com) |  |  |  |
 | proftpd |  |  | [Package Draft](https://github.com/abeudin/proftpd_ynh) |
 | ProtonMail’s WebClient |  | [Upstream](https://github.com/ProtonMail/WebClient) |  |
-| [psitransfer](https://psi.cx/tags/PsiTransfer/) | Transfer files or images without problems |  | [Package Draft](https://github.com/YunoHost-Apps/psitransfer_ynh) |
 | [pterodactyl](https://pterodactyl.io/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/pterodactyl_ynh) |
-| [pufferpanel](https://emby.media/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/pufferpanel_ynh) |
 | Pump.io | File sharing and synchronization | [Upstream](https://github.com/pump-io/pump.io) |  |
-| [pyload](https://pyload.net/) |  | [Upstream](https://github.com/pyload/pyload) | [Package Draft](https://github.com/YunoHost-Apps/pyload_ynh) |
 | [qBit MatUI](https://qbit-material-webui-demo.herokuapp.com/) | A WebUI for qBittorrent | [Upstream](https://github.com/bill-ahmed/qbit-matUI) |  |
 | [qBittorrent](https://www.qbittorrent.org/) |  | [Upstream](https://github.com/qbittorrent/qBittorrent) |  |
 | [racktables](https://racktables.org) |  | [Upstream](https://github.com/RackTables/racktables) |  |
@@ -234,17 +220,16 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Raindrop](https://raindrop.io) | All-in-one bookmark manager | [Upstream](https://github.com/raindropio/app) | |
 | [Raspap](https://raspap.com/) | | [Upstream](https://github.com/RaspAP/raspap-webgui) | |
 | Redash | Connect to any data source, easily visualize, dashboard and share your data. | [Upstream](https://github.com/getredash/redash) | |
-| [redmine](https://www.redmine.org/) | A flexible project management web application |  | [Package Draft](https://github.com/YunoHost-Apps/redmine_ynh) |
 | remoteStorage | A remoteStorage server implementation written in PHP | [Upstream](https://github.com/fkooman/php-remote-storage) | [Package Draft](https://github.com/YunoHost-Apps/RemoteStorage_ynh) |
 | [Request Tracker](https://bestpractical.com) |  | [Upstream](https://github.com/bestpractical/rt) |  |
 | [Restya](https://restya.com) |  | [Upstream](https://github.com/RestyaPlatform/board/) |  |
 | [Retroshare](https://retroshare.cc/) |  | [Upstream](https://github.com/RetroShare/RetroShare) |  |
 | [Revolt](https://revolt.chat/) | Chat software similar to Discord | [Upstream](https://github.com/revoltchat) |  |
+| [Rimgo](https://i.bcow.xyz/) | An alternative frontend for Imgur | [Upstream](https://codeberg.org/video-prize-ranch/rimgo) |  |
 | [roadiz](https://www.roadiz.io) | Create a modern website |  | [Package Draft](https://github.com/YunoHost-Apps/roadiz_ynh) |
 | rs-short | An URL shortener | [Upstream](https://git.42l.fr/42l/rs-short) |  |
 | RSS-proxy | RSS-proxy allows you to do create an RSS or ATOM feed of almost any website, just by analyzing just the static HTML structure.  | [Upstream](https://github.com/damoeb/rss-proxy) |  |
 | RSSHub | open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything | [Upstream](https://github.com/DIYgod/RSSHub) |  |
-| [rspamdui](https://rspamd.com/webui) | A web UI for the Rspamd spam filtering system |  | [Package Draft](https://github.com/YunoHost-Apps/rspamdui_ynh) |
 | [RustDesk](https://rustdesk.com/server 'RustDesk Server') | [TeamViewer](https://teamviewer.com) alternative | [Upstream](https://github.com/rustdesk/rustdesk-server 'RustDesk Server on GitHub') |  |
 | rutorrent | Torrent client |  | [Package Draft](https://github.com/CotzaDev/rutorrent_ynh) |
 | rwtxt | Minimalist CMS | [Upstream](https://github.com/schollz/rwtxt) |  |
@@ -258,7 +243,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Semantic MediaWiki](https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki) | lets you store and query data with­in the [MediaWiki](https://en.wikipedia.org/wiki/MediaWiki)'s pages | [Upstream](https://github.com/SemanticMediaWiki/SemanticMediaWiki) |  |
 | [shadowsocks](https://shadowsocks.org) | A SOCKS5 proxy to protect your Internet traffic |  | [Package Draft](https://github.com/YunoHost-Apps/shadowsocks_ynh) |
 | shinken | A flexible and scalable monitoring framework | [Upstream](https://github.com/naparuba/shinken) | [Package Draft](https://github.com/YunoHost-apps/shinken_ynh) |
-| shuri | URL Shortener | [Upstream](https://github.com/pips-/shuri) | [Package Draft](https://github.com/YunoHost-Apps/shuri_ynh) |
 | sickbeard | Automatic TV show downloader |  | [Package Draft](https://github.com/YunoHost-Apps/sickbeard_ynh) |
 | [sickrage](https://sickchill.github.io/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/YunoHost-Apps/sickrage_ynh) |
 | [Signal Proxy](https://signal.org/blog/help-iran-reconnect/) | Fight censorship and bypass traffic securely to the Signal service | [Upstream](https://github.com/signalapp/Signal-TLS-Proxy) | |
@@ -284,7 +268,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Tailscale](https://tailscale.com/) | [Wireguard](https://www.wireguard.com/)-based Mesh-VPN | [Upstream](https://github.com/tailscale/tailscale) |  |
 | [Taskwarrior](https://taskwarrior.org) |  | [Upstream](https://github.com/GothenburgBitFactory/taskwarrior) |  |
 | [Technitium DNS](https://technitium.com/dns/) |  | [Upstream](https://github.com/TechnitiumSoftware/DnsServer) |  |
-| [teddit](https://teddit.net/) | Alternative Reddit front-end focused on privacy | [Upstream](https://codeberg.org/teddit/teddit) |  |
 | [Teddy.io](https://teedy.io/) | Document manager | [Upstream](https://github.com/sismics/docs) |  |
 | telegram_chatbot | Telegram chatbot - mini chatbot for Telegram |  | [Package Draft](https://github.com/YunoHost-Apps/telegram_chatbot_ynh) |
 | TellForm |  | [Upstream](https://github.com/tellform/tellform) |  |
@@ -299,7 +282,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | transpay | Interface to receive and manage donations with Stripe |  | [Package Draft](https://github.com/YunoHost-Apps/transpay_ynh) |
 | transwhat | A gateway to WhatsApp from Jabber |  | [Package Draft](https://github.com/Josue-T/transwhat_ynh) |
 | [Tryton](https://www.tryton.org/) | A solid ERP system |  |  |
-| [turtl](https://turtlapp.com/) | A secure collaboratite notebook |  | [Package Draft](https://github.com/YunoHost-Apps/turtl_ynh) |
 | tutao | End-to-end encrypted e-mail client | [Upstream](https://github.com/tutao/tutanota/) | [Package Draft](https://github.com/YunoHost-Apps/tutao_ynh) |
 | [Twake](https://twake.app/fr)| All of the organizational tools you need to make your projects succeed brought together on one platform.| | |
 | Twister |  | [Upstream](https://github.com/miguelfreitas/twister-core/) |  |
@@ -316,6 +298,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | webogram | Webogram - a new era of messaging | [Upstream](https://github.com/zhukov/webogram) | [Package Draft](https://github.com/YunoHost-Apps/webogram_ynh) |
 | [WebThings Gateway](https://iot.mozilla.org/gateway/) |  | [Upstream](https://github.com/mozilla-iot/) |  |
 | Whoogle | A metasearch engine | [Upstream](https://github.com/benbusby/whoogle-search) |  |
+| [Wikiless](https://wikiless.org/) | A free open source alternative Wikipedia front-end focused on privacy. | [Upstream](https://codeberg.org/orenom/wikiless) |  |
 | [wildfly](https://wildfly.org) |  |  | [Package Draft](https://github.com/YunoHost-Apps/wildfly_ynh) |
 | Wisemapping | An online mind mapping editor | [Upstream](https://bitbucket.org/wisemapping/wisemapping-open-source) | [Package Draft](https://github.com/YunoHost-Apps/wisemapping_ynh) |
 | WildDuck | Opinionated email server | [Upstream](https://github.com/nodemailer/wildduck) |  |
@@ -323,7 +306,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [xBrowserSync](https://www.xbrowsersync.org/) | A self-hosted bookmark sync tool, with browser plugins and mobile clients available | [Upstream](https://github.com/xbrowsersync/api) |  |
 | Xibo | A FLOSS digital signage solution | [Upstream](https://github.com/xibosignage) |  |
 | [Xonotic](https://xonotic.org) |  | [Upstream](https://gitlab.com/xonotic) |  |
-| yacy | Free and decentrelized search engine |  | [Package Draft](https://github.com/YunoHost-Apps/yacy_ynh) |
 | [Yggdrasil](https://yggdrasil-network.github.io/) |  | [Upstream](https://github.com/yggdrasil-network/yggdrasil-go) |  |
 | your_spotify | Self hosted Spotify tracking dashboard | [Upstream](https://github.com/Yooooomi/your_spotify) | |
 | youtube-dl-webui | Web interface for youtube-dl |  | [Package Draft](https://github.com/YunoHost-Apps/youtube-dl-webui_ynh) |
