@@ -7,7 +7,7 @@ routes:
   default: '/app_misskey'
 ---
 
-![misskey's logo](image://misskey_logo.png?resize=80)
+![misskey's logo](image://misskey_logo.png?resize=100)
 
 [![Install Misskey with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=misskey) [![Integration level](https://dash.yunohost.org/integration/misskey.svg)](https://dash.yunohost.org/appci/app/misskey)
 
