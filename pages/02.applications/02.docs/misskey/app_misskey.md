@@ -7,7 +7,7 @@ routes:
   default: '/app_misskey'
 ---
 
-![misskey's logo](image://misskey_logo.png?resize=,80)
+![misskey's logo](image://misskey_logo.png?resize=80)
 
 [![Install Misskey with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=misskey) [![Integration level](https://dash.yunohost.org/integration/misskey.svg)](https://dash.yunohost.org/appci/app/misskey)
 
@@ -43,7 +43,7 @@ screen -r
 
 ## Useful links
 
-* Official app website: https://misskey-hub.net/
-* Upstream app code repository: https://github.com/misskey-dev/misskey
+* Official app website: [https://misskey-hub.net/](https://misskey-hub.net/)
+* Upstream app code repository: [https://github.com/misskey-dev/misskey](https://github.com/misskey-dev/misskey)
 * Demonstration : [https://demo.misskey.io](https://demo.misskey.io)
-* Report a bug: https://github.com/YunoHost-Apps/misskey_ynh/issues
+* Report a bug: [https://github.com/YunoHost-Apps/misskey_ynh/issues](https://github.com/YunoHost-Apps/misskey_ynh/issues)
