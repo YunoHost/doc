@@ -7,7 +7,7 @@ routes:
   default: '/app_firefly-iii'
 ---
 
-![logo de Firefly III](image://firefly_iii_logo.png?width=80)
+![logo de Firefly III](image://firefly-logo.png?height=100)
 
 [![Install Firefly III with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=firefly-iii) [![Integration level](https://dash.yunohost.org/integration/firefly-iii.svg)](https://dash.yunohost.org/appci/app/firefly-iii)
 
