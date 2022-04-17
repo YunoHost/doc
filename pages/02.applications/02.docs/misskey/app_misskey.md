@@ -16,6 +16,7 @@ routes:
 - [Configuration](#configuration)
 - [Useful links](#useful-links)
 
+
 Misskey is a decentralized and open source microblogging platform. It has "Reactions" that allow you to easily express your feeling, "Drive" that allow you to manage files in one place, and a highly customizable UI that makes it more fun to share something.
 
 Misskey also implements ActivityPub, so it can communicate with other platforms like Mastodon, Pleroma, Friendica and more interactively.
@@ -27,6 +28,7 @@ Misskey also implements ActivityPub, so it can communicate with other platforms 
 - If installing from command line use of screen is rerecorded to avoid disconnection. See below.
 - After installation, first page can take time to load and may show timeout error. Give it time to make itself ready for you. Refresh page after 2-3 minutes.
 - The first account created will be an admin user and will have all the admin rights.
+
 
 Using screen in case of disconnects
 
