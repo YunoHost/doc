@@ -5,11 +5,12 @@ taxonomy:
     category: docs
 routes:
   default: '/external_storage'
+  aliases:
+    - '/moving_app_folder'
 ---
 
 ## Introduction
-
-Appart 
+ 
 
 Apart from the monitoring system that ensures that your system's partitions are not too small, YunoHost does not currently deal with the organisation of your partitions and disks.
 
@@ -53,19 +54,20 @@ Below is an explanation of some of the paths that can take up weight with some c
 | /opt | Program and dependency of some YunoHost applications. | Ideally leave it on the SSD for performance reasons. For nodejs applications it is possible to do some cleanup of unused versions.
 | /boot | Kernels and boot files | Do not move unless you know what you are doing. It can happen that too many kernels are kept, it is possible to do some cleanup.
 
+
 ## 2. Connect and identify the disk
 
 Start by connecting your disk to your system. You must then identify the name under which the disk is designated by the system.
 
 To do this, use the command :
 
-``bash
+```bash
 lsblk
 ```
 
 It may return something like :
 
-``bash
+```bash
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 8:0 0 931.5G 0 disk
 └─sda1 8:1 0 931.5G 0 part
@@ -86,7 +88,7 @@ This operation is optional if your disk is already formatted with a file system 
 
 Let's create a partition on the disk:
 
-``bash
+```bash
 fdisk /dev/YOUR_DISK
 ```
 
@@ -100,7 +102,7 @@ Before you can use your disk, it must be formatted.
 
 To format the :
 
-``bash
+```bash
 mkfs.ext4 /dev/YOUR_DISK1
 # then 'y' to validate
 ```
@@ -114,13 +116,13 @@ Replace `YOUR_DISK1` with the name of the first partition on the disk e.g. `sda1
 Unlike Windows where disks are accessed with letters (C:/), under Linux, disks are made accessible via the file tree. "Mounting" a disk means making it effectively accessible in the file tree. We will arbitrarily choose to mount the disk in `/mnt/hdd` but you can name it differently (e.g. `/mnt/disk` ...).
 
 Let's start by creating the directory :
-``bash
+```bash
 mkdir /mnt/hdd
 ```
 
 Then we can mount the disk manually with :
 
-``bash
+```bash
 mount /dev/YOUR_DISK1 /mnt/hdd
 ```
 
@@ -143,13 +145,13 @@ Then, ideally, we switch to maintenance mode the applications that might be writ
 
 Example, for nextcloud:
 
-``bash
+```bash
 sudo -u nextcloud /var/www/occ maintenance:mode --on
 ```
 
 Example, for mail:
 
-``bash
+```bash
 systemctl stop postfix
 systemctl stop dovecot
 ```
@@ -169,22 +171,23 @@ mkdir /var/mail
 
 We can then use the `mount --bind` command to mount the folder on our hard drive to the new empty location in the tree.
 
-``bash
+```bash
 mount --bind /mnt/hdd/home/yunohost.app /home/yunohost.app
 mount --bind /mnt/hdd/var/mail /var/mail
 ```
+
 ### 5.4 Copying the data
 
 Next, we copy the data, keeping all the folder and file properties. This operation can take a little time, with another terminal, you can control the evolution by observing the weight associated with the mount point with `df -h`
 
-``bash
+```bash
 cp -a /home/yunohost.app.bkp/. /home/yunohost.app/
 cp -a /var/mail.bkp/. /var/mail/
 ```
 
 Once this is done, check with `ls` that the contents are there:
 
-``bash
+```bash
 ls -la /home/yunohost.app/
 ls -la /var/mail/
 ```
@@ -193,7 +196,7 @@ ls -la /var/mail/
 
 From here you can stop maintenance mode, the command below is to be adapted depending on the services you have stopped.
 
-``bash
+```bash
 sudo -u nextcloud /var/www/occ maintenance:mode --off
 systemctl start postfix
 systemctl start dovecot
@@ -210,7 +213,7 @@ If your tests are successful, you should keep the mount points, otherwise you sh
 
 To begin with, let's find the UUID (universal identifier) of our disk with :
 
-``bash
+```bash
 blkid | grep "/dev/YOUR_DISK1:"
 # Returns something like :
 # /dev/sda1:UUID="cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7" TYPE="ext4" PARTUUID="34e4b02c-02"
@@ -218,13 +221,13 @@ blkid | grep "/dev/YOUR_DISK1:"
 
 Let's add a line to the `/etc/fstab` file that handles the mounting of disks at boot time. So we open the file with `nano` :
 
-``bash
+```bash
 nano /etc/fstab
 ```
 
 Then add these lines to the end of the file:
 
-``bash
+```bash
 UUID="cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7" /mnt/hdd ext4 defaults,nofail 0 0
 /mnt/hdd/home/yunohost.app /home/yunohost.app none defaults,bind 0 0
 /mnt/hdd/var/mail /var/mail none defaults,bind 0 0
@@ -239,7 +242,7 @@ You can then try rebooting the system to check if the disk and subfolders are mo
 ## 7. Clean up old data
 Once your new setup is validated, you can proceed to delete the old data from step 6.3:
 
-``bash
+```bash
 rm -Rf /home/yunohost.app.bkp
 rm -Rf /var/mail.bkp
 ```

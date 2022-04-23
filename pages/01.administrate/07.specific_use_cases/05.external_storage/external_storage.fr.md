@@ -168,7 +168,7 @@ mv /var/mail /var/mail.bkp
 mkdir /var/mail
 ```
 
-On peut alors grâce à la commande `mount --bind` monter le dossier de notre disque dur sur le nouvel emplacement vide l'arborescence.
+On peut alors grâce à la commande `mount --bind` monter le dossier de notre disque dur sur le nouvel emplacement vide de l'arborescence.
 
 ```bash
 mount --bind /mnt/hdd/home/yunohost.app /home/yunohost.app
