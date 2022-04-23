@@ -9,6 +9,8 @@ page-toc:
   active: true
 ---
 
+! TODO: this page should be updated.
+
 L'objectiu d’aqueste document es de presentar una utilizacion especifica de [YunoHost](https://yunohost.org/) per d’organizacions sens tòca lucrativa.
 
 ## Qual
