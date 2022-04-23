@@ -1,6 +1,6 @@
 ---
 title: Vue d'ensemble de l'écosystème YunoHost
-menu: Visite guidée
+menu: Visite guidée pour l'administrateur
 template: docs
 taxonomy:
     category: docs

@@ -1,6 +1,6 @@
 ---
 title: Overview of the YunoHost ecosystem
-menu: Guided tour
+menu: Guided tour for the admin
 template: docs
 taxonomy:
     category: docs

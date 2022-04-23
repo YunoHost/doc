@@ -46,3 +46,28 @@ L'accès aux applications peut être limité à certains utilisateurs seulement.
 ## Packaging d'applications
 
 Si vous voulez apprendre ou contribuer à l'empaquetage des applications, veuillez consulter la [documentation des contributeurs](/contributordoc).
+
+## Sous-chemins vs. domaines individuels par application
+
+Dans le contexte de YunoHost, il est assez courant d'avoir un seul (ou quelques) domaines sur lesquels plusieurs applications sont installées dans des "sous-chemins", de sorte que l'on se retrouve avec quelque chose comme ceci : 
+
+```bash
+yolo.com
+     ├─── /blog  : Wordpress (un blog)
+     ├─── /cloud : Nextcloud (un service de cloud)
+     ├─── /rss   : TinyTiny RSS (un lecteur RSS)
+     ├─── /wiki  : DokuWiki (un wiki)
+```
+
+Alternativement, on peut choisir d'installer chaque application (ou certaines) sur un domaine dédié. Au delà de la question esthétique, utiliser des sous-domaines au lieu de sous-chemins permet de laisser la possibilité de déplacer un service sur un autre serveur plus facilement. Par ailleurs, certaines applications peuvent avoir besoin d'un domaine entier qui leur est dédié, pour des raisons techniques. L'inconvénient est que vous devez ajouter un nouveau domaine à chaque fois, et donc potentiellement configurer des enregistrements DNS supplémentaire, relancer le diagnostique et l'installation d'un nouveau certificat Let's Encrypt.
+
+Si toutes les applications de l'exemple précédent étaient installées sur un domaine séparé, cela donnerait quelque chose comme ceci :
+
+```bash
+blog.yolo.com  : Wordpress (un blog)
+cloud.yolo.com : Nextcloud (un service de cloud)
+rss.yolo.com   : TinyTiny RSS (un lecteur RSS)
+wiki.yolo.com  : DokuWiki (un wiki)
+```
+
+!!! De nombreuses applications intègrent une fonctionnalité qui vous permet de changer l'URL de votre application. Ce choix entre sous-chemin et sous-domaine peut donc dans certains cas être réversible via une simple manipulation dans l'interface d'administration.

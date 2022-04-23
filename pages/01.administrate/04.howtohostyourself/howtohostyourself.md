@@ -1,5 +1,5 @@
 ---
-title: How to host yourself?
+title: Choose your selfhosting method and providers
 template: docs
 taxonomy:
     category: docs
@@ -25,7 +25,7 @@ A VPN is an encrypted tunnel between two machines. In practice, it makes it "as 
 
 ### On a remote server (VPS or dedicated server)
 
-You can rent a virtual private server or a dedicated machine from [associative](https://db.ffdn.org/) or commercial "Cloud" providers.
+You can rent a virtual private server or a dedicated machine from [associative](https://db.ffdn.org/) or [commercial](/providers/server) "Cloud" providers.
 
 - **Pros** : your server and its internet connectivity will be fast;
 - **Cons** : you will have to pay a monthly subscription and won't have physical control of your server.

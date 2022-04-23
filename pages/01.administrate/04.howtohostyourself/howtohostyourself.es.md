@@ -1,5 +1,5 @@
 ---
-title: Elegir manera de autohospedaje
+title: Elegir manera y proveedores de autohospedaje
 template: docs
 taxonomy:
     category: docs
@@ -25,7 +25,7 @@ Una VPN es un tunel encriptado entre dos máquinas. En la práctica, permite hac
 
 ### En un servidor remoto (VPS o servidor dedicado)
 
-Puedes alquilar un servidor privado virtual (VPS) o una máquina dedicada a alojamientos [asociativos](https://db.ffdn.org/) o comerciales.
+Puedes alquilar un servidor privado virtual (VPS) o una máquina dedicada a alojamientos [asociativos](https://db.ffdn.org/) o [comerciales](/providers/server).
 
 - **Ventajas**: Tu servidor será rápido y su conexión veloz.
 - **Desventajas**: Ocasiona un gasto mensual por la máquina, y no tienes control físico.
