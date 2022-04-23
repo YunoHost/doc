@@ -9,6 +9,8 @@ page-toc:
   active: true
 ---
 
+! TODO: this page should be updated.
+
 The purpose of this document is to present a specific use of [YunoHost](https://yunohost.org/) for non-profit organizations.
 
 ## Who
