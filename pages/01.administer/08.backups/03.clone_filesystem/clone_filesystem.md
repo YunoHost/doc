@@ -10,6 +10,7 @@ page-toc:
   depth: 3
 ---
 
+!! Images are missing on this page
 
 YunoHost's backup tool only backs up useful files and relies on restore scripts to reinstall the dependencies of your applications. In other words, YunoHost's mechanism amounts to reinstalling and then reincorporating the data.
 
@@ -36,13 +37,13 @@ Below, some documentation for the most known suppliers:
 [/ui-tab]
 [ui-tab title="VirtualBox"]
 Select the virtual machine and click `Snapshots`, then specify the snapshot name and click `OK`.
-![The snapshot button is located at the top right](image://administrate/specific_use_cases/virtualbox-snapshot2.webp)
+![The snapshot button is located at the top right](image://virtualbox-snapshot2.webp)
 
 To restore, select the virtual machine, click on `Snapshots` then `Restore Snapshot option`.
-![](image://administrate/specific_use_cases/virtualbox-snapshot3.webp)
+![](image://virtualbox-snapshot3.webp)
 
 Then click on `Restore Snapshot`.
-![](image://administrate/specific_use_cases/virtualbox-snapshot4.webp)
+![](image://virtualbox-snapshot4.webp)
 [/ui-tab]
 [ui-tab title="Proxmox"]
 

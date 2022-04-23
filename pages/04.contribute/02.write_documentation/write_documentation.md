@@ -37,7 +37,7 @@ The structure of the repository is described below:
    # The directory containing the documentation pages.
    # The pages hierarchy is reflected by the directory hierarchy.
    +-- 00.home
-   +-- 01.administrate
+   +-- 01.administer
    +-- 02.applications
    +-- 03.community
    +-- 04.contribute

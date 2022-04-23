@@ -36,7 +36,7 @@ Die Struktur des Repositorys wird nachfolgend beschrieben:
    # Das Verzeichnis mit den Dokumentationsseiten. 
    # Die Seitenhierarchie spiegelt sich in der Verzeichnishierarchie wider. 
    + -- 00.home 
-   + -- 01.administrate 
+   + -- 01.administer 
    + -- 02.applications 
    + -- 03.community 
    + -- 04.contribute 

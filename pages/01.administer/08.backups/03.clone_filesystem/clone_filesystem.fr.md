@@ -9,6 +9,9 @@ page-toc:
   active: true
   depth: 3
 ---
+
+!! Les images de cette page sont manquantes
+
 L'outil de sauvegarde de YunoHost ne sauvegarde que les fichiers utiles et se base sur des scripts de restauration pour réinstaller les dépendances de vos applications. Autrement dit, le mécanisme de YunoHost revient à réinstaller, puis réincorporer les données.
 
 Réaliser des images complètes du système peut être un moyen complémentaire ou alternatif de sauvegarder votre machine. L'intérêt est que votre système pourra être restauré dans l'état exact du moment de la sauvegarde.
@@ -34,13 +37,13 @@ Ci-dessous, quelques documentations pour les fournisseurs les plus connus:
 [/ui-tab]
 [ui-tab title="VirtualBox"]
 Sélectionner la machine virtuelle et cliquer sur `Snapshots`, puis spécifier le nom du snapshot et cliquer sur `OK`.
-![Le bouton snapshot se trouve en haut à droite](image://administrate/specific_use_cases/virtualbox-snapshot2.webp)
+![Le bouton snapshot se trouve en haut à droite](image://virtualbox-snapshot2.webp)
 
 Pour restaurer, sélectionner la machine virtuelle, cliquer sur `Snapshots` puis `Restore Snapshot option`.
-![](image://administrate/specific_use_cases/virtualbox-snapshot3.webp)
+![](image://virtualbox-snapshot3.webp)
 
 Ensuite cliquer sur `Restore Snapshot`.
-![](image://administrate/specific_use_cases/virtualbox-snapshot4.webp)
+![](image://virtualbox-snapshot4.webp)
 [/ui-tab]
 [ui-tab title="Proxmox"]
 
