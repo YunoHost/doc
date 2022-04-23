@@ -1,5 +1,6 @@
 ---
 title: Documentations
+visible: false
 content:
     order:
         by: basename
@@ -12,6 +13,7 @@ content:
 twig_first: true
 process:
     twig: true
+    
 ---
 
 <ul>
