@@ -1,0 +1,21 @@
+{% extends "forms/field.html.twig" %}
+{% set title_level = grav['admin'] is defined ? 'h1' : field.title_level|default('h3') %}
+
+{% block field %}
+{% if field.security is empty or authorize(array(field.security)) %}
+<div class="{{ field.classes }}">
+    {% if field.title or field.underline %}
+    <{{ title_level }} class="{% if not field.underline %}no_underline{% endif %}">{{ field.title|t }}</{{ title_level }}>
+    {% endif %}
+
+    {% if field.text %}
+    <p>{{ field.text|t|raw }}</p>
+    {% endif %}
+
+  {% embed 'forms/default/fields.html.twig' with {name: field.name, fields: field.fields} %}
+    {% block outer_markup_field_open %}<div class="form-section">{% endblock %}
+    {% block outer_markup_field_close %}</div>{% endblock %}
+  {% endembed %}
+</div>
+{% endif %}
+{% endblock %}

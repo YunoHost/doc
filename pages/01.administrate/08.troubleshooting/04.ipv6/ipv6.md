@@ -11,7 +11,7 @@ IPv6 may work out of the box in many cases. But in some cases or some specific p
 
 ## With a VPS from OVH
 
-OVH give one IPv4 address and one IPv6 address for VPS but by default, only IPv4 is OK.
+OVH gives one IPv4 address and one IPv6 address for VPS but by default, only IPv4 is OK.
 The OVH's documentation is here : https://docs.ovh.com/gb/en/vps/configuring-ipv6/
 
 ### Configure the DNS server
@@ -20,13 +20,13 @@ Here : https://yunohost.org/#/dns_subdomains
 
 ### Configure the server
 
-On the OVH panel, you will copy 3 element :
+On the OVH panel, you will copy 3 elements:
 - the IPv6 address
 - the IPv6 gateway address
 - the IPv6 prefix. On OVH's VPS SSD, prefixes are `/128` because you have only *one* IPv6 address.
 
 On your VPS, create a backup of the network configuration with : `cp /etc/network/interfaces ~/interfaces` in home directory.
-Then, you can edit the configuration file (`/etc/network/interfaces`) with the following. It is assumed that :
+Then, you can edit the configuration file (`/etc/network/interfaces`) with the following. 
 
 ! In this example, it is assumed that your network interface is `eth0`. If it's different (check with `ip a`) you need to adapt the example below.
 

@@ -20,7 +20,10 @@ Here are the element you should enter to manually configure your mail client (`d
 | IMAP     | 993  | SSL/TLS    | Normal password | `username` (without the `@domain.tld`) |
 | SMTP     | 587  | STARTTLS   | Normal password | `username` (without the `@domain.tld`) |
 
-### ![](image://thunderbird.png?resize=50&classes=inline) Configure Mozilla Thunderbird (on a desktop computer)
+### Client by client
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="Mozilla Thunderbird"]
+##### ![](image://thunderbird.png?resize=50&classes=inline) Configure Mozilla Thunderbird (on a desktop computer)
 
 To manually configure a new account in Thunderbird, add the account information, then select port 993 with SSL/TLS for IMAP, and port 587 with STARTTLS for SMTP. Afterwards select 'Normal Password' for Authentication and click on 'Advanced Config'. You may need to accept the certificate exceptions for fetching mails and after you send your first mail. Don't forget to remove the dot before the domain name.
 
@@ -29,7 +32,9 @@ To manually configure a new account in Thunderbird, add the account information,
 
 * [Manage alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
 
-### ![](image://k9mail.png?resize=50&classes=inline) Configure K-9 Mail (on Android)
+[/ui-tab]
+[ui-tab title="K-9 Mail"]
+##### ![](image://k9mail.png?resize=50&classes=inline) Configure K-9 Mail (on Android)
 
 Follow the following steps. (As for Thunderbird, you might need to accept certificates at some points)
 
@@ -39,7 +44,9 @@ Follow the following steps. (As for Thunderbird, you might need to accept certif
 ![](image://k9mail_config_4.png?resize=280&classes=inline)
 
 
-### ![](image://dekko-app.png?resize=50&classes=inline) Configure Dekko (on Ubuntu Touch)
+[/ui-tab]
+[ui-tab title="Dekko"]
+##### ![](image://dekko-app.png?resize=50&classes=inline) Configure Dekko (on Ubuntu Touch)
 
 The first time you can simply choose "Add account". If you already have an account configured, tap the hamburger menu then tap the gear, choose Mail, Accounts and press the '+'-symbol.
 
@@ -49,3 +56,5 @@ Then you choose IMAP. Fill in the fields and press Next. Now Dekko will look for
 ![](image://dekko_config_2.png?resize=280&classes=inline)
 ![](image://dekko_config_3.png?resize=280&classes=inline)
 ![](image://dekko_config_4.png?resize=280&classes=inline)
+[/ui-tab]
+[/ui-tabs]

@@ -61,12 +61,12 @@ See also : [unban an IP on Fail2Ban](/fail2ban)
 
 #### NGINX web server is broken
 
-Maybe the NGINX web server is out of order. You can check that [trough SSH](/ssh) with the command `yunohost service status ssh`. If it is failinf, check that its configuration is correct by running `nginx -t`. If it is indeed broken, it may be due to the installation or removal of a low-quality app... If you need support, [ask for it](/help).
+Maybe the NGINX web server is out of order. You can check that [trough SSH](/ssh) with the command `yunohost service status nginx`. If it is failing, check that its configuration is correct by running `nginx -t`. If it is indeed broken, it may be due to the installation or removal of a low-quality app... If you need support, [ask for it](/help).
 
 The NGINX or SSH servers may have been killed due to a lack of storage space, RAM, or swap.
 
 - Try restarting the service with `systemctl restart nginx`.
-- You can check used storage with `df -h`. If one of your partitions is full, you need to identify what fills it and make rooù. You can use `ncdu` command (install it with `apt install ncdu` to browse from the root directory: `ncdu /`
+- You can check used storage with `df -h`. If one of your partitions is full, you need to identify what fills it and make room. You can use `ncdu` command (install it with `apt install ncdu` to browse from the root directory: `ncdu /`
 - You can check RAM and swap usage with `free -h`. Depending on the result, it may be necessary to optimize your server to use less RAM (removal of heavy or unused apps...), add more RAM or add a swap file.
 
 #### Your server is reachable by IPv6, but not IPv4, or inversely
@@ -108,7 +108,7 @@ In that case, contact your VPN provider to renew it and update the parameters of
 
 Meanwhile, try reaching your server if it is at home, by:
 - its local IP, retrievable from your router configuration panel or `sudo arp-scan --local`
-- reaching it at `yunohost.local`, if it is at home and that you have only one YunoHost server in your network.
+- reaching it at `yunohost.local`, or `yunohost-2.local`, etc. depending on how many YunoHost servers are on your network.
 
 !!! To be completed.
 
@@ -120,7 +120,7 @@ If you are in "rescue" mode with `grub`, it may be due a misconfiguration of `gr
 
 In that case, access the storage drive from another system (your provider's "rescue" mode, live USB drive, read the SD or drive on another computer) and try to check partitions integrity with `smartctl`, `fsck`, and `mount`.
 
-If disks are corrupted or hard to miunt, you have to save your data and maybe reformat, reinstall, and/or change the drive. If you succeed in mounting the drive, you can use `systemd-nspawn` to access its database.
+If disks are corrupted or hard to mount, you have to save your data and maybe reformat, reinstall, and/or change the drive. If you succeed in mounting the drive, you can use `systemd-nspawn` to access its database.
 
 Otherwise, run `grub-update`, `grub-install` again with `chroot` or with `systemd-nspawn`.
 

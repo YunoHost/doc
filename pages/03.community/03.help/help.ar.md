@@ -19,14 +19,14 @@ routes:
 
 <strong>الإسم المستعار</strong> : <input id="nickname" value="ynhuser__" type="text">
 
-<iframe src="https://kiwiirc.com/nextclient/?settings=7b72a0a81838360686798199ed53624f" style="border:0; width:100%; height:450px;"></iframe>
+<iframe src="https://web.libera.chat/#yunohost" style="border:0; width:100%; height:450px;"></iframe>
 
 </br>
 </br>
 <em>ملاحظة : يمكن الإتصال كذلك بغرفة المحادثة باستخدام تطبيق XMPP الخاص بك على العنوان التالي </br>
 support@conference.yunohost.org </br>
-<a target="_blank" href="https://kiwiirc.com/nextclient/?settings=7b72a0a81838360686798199ed53624f">kiwiirc</a>  باستخدام   freenode على #yunohost IRC أو </br>
-<a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">Riot</a> باستخدام Matrix أو </br>
+<a target="_blank" href="https://web.libera.chat/#yunohost">kiwiirc</a>  باستخدام   libera.chat على #yunohost IRC أو </br>
+<a target="_blank" href="https://riot.im/app/#/room/#yunohost:libera.chat">Riot</a> باستخدام Matrix أو </br>
 </em>
 </center>
 
@@ -65,6 +65,6 @@ document.getElementById("goBugtracker").onclick = function() {
     window.location.href = "https://github.com/yunohost/issues/issues";
 }
 document.getElementById("goDevroom").onclick = function() {
-    window.location.href = "https://kiwiirc.com/client/irc.freenode.net/yunohost-dev";
+    window.location.href = "https://web.libera.chat/#yunohost";
 }
 </script>

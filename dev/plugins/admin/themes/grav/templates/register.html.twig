@@ -1,0 +1,24 @@
+{% embed 'partials/register.html.twig' with {title:'Grav Register Admin User', classes:'wide'} %}
+
+    {% block instructions %}
+    <div class="instructions">
+        {{ page.content|raw }}
+    </div>
+    {% endblock %}
+
+    {% block form %}
+        {% embed 'forms/default/fields.html.twig' with {name: null, fields: form.fields} %}
+            {% block inner_markup_field_open %}<div class="wrapper-{{ field.name }}">{% endblock %}
+            {% block inner_markup_field_close %}</div>{% endblock %}
+        {% endembed %}
+
+        <div class="form-actions primary-accent">
+
+            <button type="reset" class="button secondary"><i class="fa fa-exclamation-circle"></i> {{ 'PLUGIN_ADMIN.LOGIN_BTN_CLEAR'|t }}</button>
+            <button type="submit" class="button primary" name="task" value="register"><i class="fa fa-sign-in"></i> {{ 'PLUGIN_ADMIN.LOGIN_BTN_CREATE_USER'|t }}</button>
+
+        </div>
+
+    {% endblock %}
+
+{% endembed %}

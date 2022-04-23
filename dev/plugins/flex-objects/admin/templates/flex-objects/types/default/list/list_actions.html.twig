@@ -1,0 +1,39 @@
+{% set object_title = title_field ? "'" ~ object[title_field]|join(' ') ~ "'" : 'Item' %}
+{% set can_read = object.isAuthorized('read', 'admin', user) %}
+{% set can_update = object.isAuthorized('update', 'admin', user) %}
+{% set can_delete = object.isAuthorized('delete', 'admin', user) %}
+
+{% if can_read and object.getRoute() %}
+    {% block action_preview %}
+        <a href="{{ route.withAddedPath(object.getKey()).withoutParams().withQueryParam('preview', 1).getUri() }}" title="{{ "PLUGIN_ADMIN.PREVIEW"|tu }}" class="preview-action">
+            <i class="fa fa-eye"></i>
+        </a>
+    {% endblock %}
+{% endif %}
+
+{% if can_update %}
+    {% block action_edit %}
+    <a href="{{ route.withAddedPath(object.getKey()).withoutParams().getUri() }}" title="Edit {{ object_title }}" class="edit-action">
+        <i class="fa fa-pencil"></i>
+    </a>
+    {% endblock %}
+{% elseif can_read %}
+    {% block action_read %}
+    <a href="{{ route.withAddedPath(object.getKey()).withoutParams().getUri() }}" title="View {{ object_title }}" class="edit-action">
+        <i class="fa fa-search"></i>
+    </a>
+    {% endblock %}
+{% endif %}
+
+{% if can_delete %}
+    {% block action_delete %}
+    <a href="#delete"
+       class="page-delete delete-action"
+       title="Delete {{ object_title }}"
+       data-remodal-target="delete"
+       data-delete-url="{{ grav.uri.addNonce(route.withAddedPath(object.getKey()).withoutParams().withGravParam('task', 'delete').getUri(), 'admin-form', 'admin-nonce') }}"
+    >
+        <i class="fa fa-close"></i>
+    </a>
+    {% endblock %}
+{% endif %}

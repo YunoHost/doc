@@ -28,7 +28,7 @@ Pour créer un sous domaine à un domaine `nohost.me`, `noho.st` et `ynh.fr` il 
 
 ### Ajouter un domaine nohost.me, noho.st ou ynh.fr après la post-installation
 
-Si vous avez déjà effectué la postinstallation et souhaitez ajouter un domaine
+Si vous avez déjà effectué la post-installation et souhaitez ajouter un domaine
 de type `nohost.me`, vous pouvez utiliser la catégorie "Domaines" de l'interface web,
 en choisissant l'option "Je n'ai pas de nom de domaine..."
 

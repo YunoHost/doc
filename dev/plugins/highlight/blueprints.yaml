@@ -1,0 +1,145 @@
+name: Highlight
+version: 1.5.0
+description: "This plugin provides code highlighting functionality via the [Highlight.js](https://highlightjs.org/) jQuery plugin."
+icon: code
+author:
+  name: Team Grav
+  email: devs@getgrav.org
+  url: http://getgrav.org
+homepage: https://github.com/getgrav/grav-plugin-highlight
+demo: http://learn.getgrav.org
+keywords: highlight, plugin, code
+bugs: https://github.com/getgrav/grav-plugin-highlight/issues
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.4' }
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    lines:
+      type: toggle
+      label: Line Numbers
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    theme:
+      type: select
+      label: CSS Theme
+      default: default
+      options:
+        default: Default
+        a11y-dark: A11y Dark
+        a11y-light: A11y Light
+        agate: Agate
+        an-old-hope: An Old Hope
+        androidstudio: Android Studio
+        arduino-light: Arduino Light
+        arta: Arta
+        ascetic: Ascetic
+        atelier-cave-dark: Atelier Cave Dark
+        atelier-cave-light: Atelier Cave Light
+        atelier-dune-dark: Atelier Dune Dark
+        atelier-dune-light: Atelier Dune Light
+        atelier-estuary-dark: Atelier Estuary Dark
+        atelier-estuary-light: Atelier Estuary Light
+        atelier-forest-dark: Atelier Forest Dark
+        atelier-forest-light: Atelier Forest Light
+        atelier-heath-dark: Atelier Heath Dark
+        atelier-heath-light: Atelier Heath Light
+        atelier-lakeside-dark: Atelier Lakeside Dark
+        atelier-lakeside-light: Atelier Lakeside Light
+        atelier-plateau-dark: Atelier Plateau Dark
+        atelier-plateau-light: Atelier Plateau Light
+        atelier-savanna-dark: Atelier Savanna Dark
+        atelier-savanna-light: Atelier Savanna Light
+        atelier-seaside-dark: Atelier Seaside Dark
+        atelier-seaside-light: Atelier Seaside Light
+        atelier-sulphurpool-dark: Atelier Sulphurpool Dark
+        atelier-sulphurpool-light: Atelier Sulphurpool Light
+        atom-one-dark: Atom One Dark
+        atom-one-dark-reasonable: Atom One Dark Reasonable
+        atom-one-light: Atom One Light
+        brown-paper: Brown Paper
+        codepen-embed: Codepen Embed
+        color-brewer: Color Brewer
+        darcula: Darcula
+        dark: Dark
+        docco: Docco
+        dracula: Dracula
+        far: Far
+        foundation: Foundation
+        github: Github
+        github-gist: Github Gist
+        gml: GML
+        googlecode: GoogleCode
+        gradient-dark: Gradient Dark
+        gradient-light: Gradient Light
+        grayscale: Grayscale
+        gruvbox-dark: Gruvbox Dark
+        gruvbox-light: Gruvbox Light
+        hopscotch: Hopscotch
+        hybrid: Hybrid
+        idea: Idea
+        ir-black: IR-Black
+        isbl-editor-dark: ISBL Editor Dark
+        isbl-editor-light: ISBL Editor Light
+        kimbie.dark: Kimbie Dark
+        kimbie.light: Kimbie Light
+        learn: Grav Learn
+        lightfair: Lightfair
+        lioshi: Lioshi
+        magula: Magula
+        mono-blue: Mono Blue
+        monokai: Monokai
+        monokai-sublime: Monokai Sublime
+        night-owl: Night Owl
+        nnfx-dark: NNFX Dark
+        nnfx: NNFX
+        nord: Nord
+        obsidian: Obsidian
+        ocean: Ocean
+        paraiso-dark: Paraiso Dark
+        paraiso-light: Paraiso Light
+        pojoaque: Pojoaque
+        purebasic: Purebasic
+        qtcreator_dark: Qt Creator Dark
+        qtcreator_light: Qt Creator Light
+        railscasts: Railscasts
+        rainbow: Rainbow
+        routeros: Routeros
+        school-book: School Book
+        shades-of-purple: Shades Of Purple
+        solarized-dark: Solarized Dark
+        solarized-light: Solarized Light
+        srcery: Srcery
+        stackoverflow-dark: Stackoverflow Dark
+        stackoverflow-light: Stackoverflow Light
+        sunburst: Sunburst
+        tomorrow: Tomorrow
+        tomorrow-night: Tomorrow Night
+        tomorrow-night-blue: Tomorrow Night Blue
+        tomorrow-night-bright: Tomorrow Night Bright
+        tomorrow-night-eighties: Tomorrow Night Eighties
+        vs: Visual Studio
+        vs2015: Visual Studio 2015
+        xcode: XCode
+        xt256: xt256
+        zenburn: Zenburn

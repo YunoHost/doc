@@ -1,0 +1,32 @@
+shortcode-block[name="h1"] .sc-content,
+shortcode-block[name="h2"] .sc-content,
+shortcode-block[name="h3"] .sc-content,
+shortcode-block[name="h4"] .sc-content,
+shortcode-block[name="h5"] .sc-content,
+shortcode-block[name="h6"] .sc-content {
+  font-weight: 700;
+}
+
+shortcode-block[name="h1"] .sc-content {
+  font-size: 30px;
+}
+
+shortcode-block[name="h2"] .sc-content {
+  font-size: 24px;
+}
+
+shortcode-block[name="h3"] .sc-content {
+  font-size: 20px;
+}
+
+shortcode-block[name="h4"] .sc-content {
+  font-size: 18px;
+}
+
+shortcode-block[name="h5"] .sc-content {
+  font-size: 16px;
+}
+
+shortcode-block[name="h6"] .sc-content {
+  font-size: 14px;
+}

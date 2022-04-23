@@ -48,7 +48,7 @@ Or puisque votre serveur, sur lequel est installé YunoHost, ne dispose pas d'un
 
 Les scripts d'un package ne sont donc qu'une succession de commandes bash, comme si vous les aviez tapées directement dans la console ssh pour installer l'application.
 
-Pour savoir quoi écrire dans un script bash, je vous conseille de commencer par la lecture d'un [tuto simple](https://debian-facile.org/doc:programmation:shells:debuter-avec-les-scripts-shell-bash). Et si vous avez vraiment envie de lire, il y a aussi un [tuto plus complet](http://aral.iut-rodez.fr/fr/sanchis/enseignement/bash/index.html)
+Pour savoir quoi écrire dans un script bash, je vous conseille de commencer par la lecture d'un [tuto simple](https://debian-facile.org/doc:programmation:shells:debuter-avec-les-scripts-shell-bash).
 
 ### Ok, je crois que j'ai compris ! Par où on commence ?
 

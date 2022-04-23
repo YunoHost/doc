@@ -1,0 +1,9 @@
+<span class="checkboxes toggleable" data-grav-field="toggleable" data-grav-field-name="{{ field_name }}">
+    <input type="checkbox"
+           id="toggleable_{{ field.name }}"
+           name="toggleable_{{ field_name }}"
+           value="1"
+           {% if checked %}checked="checked"{% endif %}
+    >
+    <label for="toggleable_{{ field.name }}"></label>
+</span>

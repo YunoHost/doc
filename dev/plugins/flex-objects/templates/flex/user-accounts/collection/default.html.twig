@@ -1,0 +1,25 @@
+{%- set request = grav.request -%}
+{%- set object_context = object ?? {} -%}
+{%- set object_layout = object_context.layout ?? ('list-' ~ layout) -%}
+{% if blacklist %}
+    {% set collection = collection.unselect(blacklist) %}
+{% endif %}
+
+<div id="flex-objects">
+    {% if title %}
+        <h2>{{ title|e }}</h2>
+    {% endif %}
+
+    {% if content %}
+        <div>{{ content|markdown }}</div>
+    {% endif %}
+
+    <ul class="list">
+        {% for object in collection %}
+            {% set link = request.uri ~ '/id:' ~ object.key %}
+            <li>
+                {% render object layout: object_layout with object_context|merge({link: link}) %}
+            </li>
+        {% endfor %}
+    </ul>
+</div>

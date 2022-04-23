@@ -27,7 +27,7 @@ Verwenden Sie dazu die [AngryIP](https://angryip.org/download/) Software. Sie Br
 !!! **Tricks**:
 !!! - Die Reihenfolge nach Ping festlegen, um die effektiv genutzten IP-Adressen zu sehen, wie unten agegeben.
 !!! - Ihr Server sollte normalerweise auf Port 80 und 443 als lauschend angezeigt werden
-!!! - im Zweifelsfall, einfach `https://192.168.x.y` in Ihrem Browser eingeben, um zu prüfen, ob es sich um Yunohost handelt.
+!!! - im Zweifelsfall, einfach `https://192.168.x.y` in Ihrem Browser eingeben, um zu prüfen, ob es sich um YunoHost handelt.
 
 ![](image://angryip.png?class=inline)
 
@@ -47,7 +47,7 @@ Die Standard-Anmeldedaten (vor der Nachinstallation!) zum Einloggen sind:
 - login: root
 - password: yunohost
 
-(Wenn Sie ein rohes Armbian-Image anstelle des vorinstallierten Yunohost-Images verwenden, lauten die Anmeldedatenen root / 1234)
+(Wenn Sie ein rohes Armbian-Image anstelle des vorinstallierten YunoHost-Images verwenden, lauten die Anmeldedatenen root / 1234)
 
 [/ui-tab]
 [/ui-tabs]

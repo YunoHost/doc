@@ -7,23 +7,39 @@ routes:
   default: '/domains'
 ---
 
-YunoHost permet de gérer et de servir plusieurs domaines sur un même serveur. Vous pouvez donc héberger, par exemple, un blog et un Nextcloud sur un premier domaine `yolo.com`, et un client de messagerie web sur un second domaine `swag.nohost.me`. Chaque domaine est automatiquement configuré pour pouvoir gérer des services web, des courriels et une messagerie instantannée XMPP.
+YunoHost permet de gérer et de servir plusieurs domaines sur un même serveur. Vous pouvez donc héberger, par exemple, un blog et un Nextcloud sur un premier domaine `yolo.com`, et un client de messagerie web sur un second domaine `swag.nohost.me`. Chaque domaine est automatiquement configuré pour pouvoir gérer des services web, des courriels et une messagerie instantanée XMPP.
 
-Les domaines peuvent être gérés dans la section 'Domaine' de la webadmin, ou via la catégorie `yunohost domain` de la ligne de commande. Chaque fois que vous ajoutez un domaine, il est supposé que vous avez acheté (ou en tout cas que vous contrôliez) le domaine, de sorte que vous puissiez gérer la [configuration DNS](/dns_config) de celui-ci. Une exception concerne les [domaines en `.nohost.me`, `.noho.st` et `ynh.fr`](/dns_nohost_me) qui sont offerts par le Projet YunoHost, et peuvent être directement intégrés avec YunoHost grâce à une configuration dynDNS automatique. (Pour limiter les abus et les coûts, une instance ne peut avoir qu'un seul domaine offert à la fois).
+Les domaines peuvent être gérés dans la section 'Domaines' de la webadmin, ou via la catégorie `yunohost domain` de la ligne de commande.
 
-Le domaine choisi lors de la postinstall est défini comme le domaine principal du serveur : c'est là que le SSO et l'interface d'administration web seront disponibles. Le domaine principal peut être modifié ultérieurement via la webadmin dans Domaines > (le domaine) > Définir par défaut, ou avec la ligne de commande `yunohost tools maindomain`.
+Chaque fois que vous ajoutez un domaine, il est supposé que vous avez acheté (ou en tout cas que vous contrôlez) le domaine, de sorte que vous puissiez gérer la [configuration DNS](/dns_config) de celui-ci. Une exception concerne les [domaines en `.nohost.me`, `.noho.st` et `ynh.fr`](/dns_nohost_me) qui sont offerts par le Projet YunoHost, et peuvent être directement intégrés avec YunoHost grâce à une configuration DynDNS automatique. Pour limiter les abus et les coûts, une instance ne peut avoir qu'un seul domaine offert à la fois, toutefois vous pouvez ajouter autant de sous-domaines de celui-ci que vous le souhaitez. Par exemple, ci vous choisissez `exemple.ynh.fr` vous pourrez par la suite ajouter les domaines `video.exemple.ynh.fr` ou `www.exemple.ynh.fr` ou tout autre sous-domaine dont vous pourriez avoir l'utilité.
+
+Le domaine choisi lors de la configuration initiale (post-installation) est défini comme le domaine principal du serveur : c'est là que le SSO et la webadmin seront disponibles. Le domaine principal peut être modifié ultérieurement via la webadmin dans Domaines > (le domaine) > Définir par défaut, ou avec la ligne de commande `yunohost tools maindomain`.
 
 Enfin, il faut noter que, dans le contexte de YunoHost, il n'y a pas de hiérarchie entre les domaines qu'il connaît. Dans l'exemple précédent, on peut ajouter un troisième domaine `foo.yolo.com` - mais il serait considéré comme un domaine indépendant de `yolo.com`.
 
-## Caractères non latins
+## Domaines locaux
 
-Si votre domaine contient des caractères spéciaux, non latins, vous devez utiliser sa [version internationalisée](https://fr.wikipedia.org/wiki/Nom_de_domaine_internationalis%C3%A9) en [Punycode](https://fr.wikipedia.org/wiki/Punycode). Vous pouvez utiliser [ce convertisseur](https://www.charset.org/punycode), et utiliser le nom de domaine converti dans YunoHost.
+À partir de YunoHost v4.3, les domaines finissant par `.local` sont pleinement supportés, en plus du `yunohost.local` par défaut.
+Ils n'utilisent pas le protocole DNS mais mDNS (appelé aussi Zeroconf, Bonjour), qui permet leur diffusion sans configuration particulière mais exclusivement sur votre réseau local, ou votre VPN.
+Leur utilisation est donc parfaitement adaptée si vous ne prévoyez pas de rendre une de vos apps disponible sur l'Internet.
+
+!!!! Le protocole mDNS ne permet pas d'ajouter des sous-domaines. Ainsi `domaine.local` est valide, `sous.domain.local` ne l'est pas.
+
+C'est le service `yunomdns` qui se charge de diffuser l'existence de vos domaines `.local` sur votre réseau.
+Il possède un fichier de configuration, `/etc/yunohost/mdns.yml`, qui permet de choisir quels domaines sont diffusés, et sur quelles interfaces réseau.
+Ce fichier est régénéré automatiquement dès que vous ajoutez ou supprimez un domaine `.local`.
+
+Le service cherchera toujours à diffuser le domaine `yunohost.local`. Si vous avez plusieurs serveurs YunoHost sur votre réseau, alors tentez `yunohost-2.local`, etc.
+Le chiffre risque de changer selon quel serveur démarre en premier, donc ne comptez pas dessus pour y installer des apps : créez vos propres domaines locaux.
+
+! Malheureusement, les appareils Android avant la version 12 (sortie en 2021) ne semblent pas écouter le protocole mDNS.
+! Pour profiter des domaines `.local` sur vos appareils Android, vous devez entrer l'adresse IP locale de votre serveur YunoHost dans leur paramètre DNS.
 
 ## Configuration DNS
 
 DNS (Domain Name System) est un système qui permet aux ordinateurs du monde entier de traduire les noms de domaine lisibles par l'homme (comme `yolo.com`) en adresses IP compréhensibles par les machines (comme `11.22.33.44`). Pour que cette traduction (et d'autres fonctionnalités) fonctionne, il faut configurer soigneusement les enregistrements DNS. 
 
-YunoHost peut générer une configuration DNS recommandée pour chaque domaine, y compris les enregistrements nécessaires pour les parties emails et XMPP. La configuration DNS recommandée est disponible dans l'administrateur web via Domaine > (le domaine) > configuration DNS, ou avec la commande `yunohost domain dns-conf the.domain.tld`.
+YunoHost peut générer une configuration DNS recommandée pour chaque domaine, y compris les enregistrements nécessaires pour les parties emails et XMPP. La configuration DNS recommandée est disponible dans l'administrateur web via Domaines > (le domaine) > configuration DNS, ou avec la commande `yunohost domain dns-conf the.domain.tld`.
 
 ## Certificats SSL/HTTPS
 
@@ -41,7 +57,7 @@ yolo.com
      ├─── /wiki  : DokuWiki (un wiki)
 ```
 
-Alternativement, on peut choisir d'installer chaque application (ou certaines) sur un domaine dédié. Cela peut sembler plus joli pour les utilisateurs finaux, mais est généralement considéré comme plus compliqué et moins efficace dans le contexte de YunoHost, car vous devez ajouter un nouveau domaine à chaque fois. Néanmoins, certaines applications peuvent avoir besoin d'un domaine entier qui leur est dédié, pour des raisons techniques.
+Alternativement, on peut choisir d'installer chaque application (ou certaines) sur un domaine dédié. Au delà de la question esthétique, utiliser des sous-domaines au lieu de sous-chemins permet de laisser la possibilité de déplacer un service sur un autre serveur plus facilement. Par ailleurs, certaines applications peuvent avoir besoin d'un domaine entier qui leur est dédié, pour des raisons techniques. L'inconvénient est que vous devez ajouter un nouveau domaine à chaque fois, et donc potentiellement configurer des enregistrements DNS supplémentaire, relancer le diagnostique et l'installation d'un nouveau certificat Let's Encrypt.
 
 Si toutes les applications de l'exemple précédent étaient installées sur un domaine séparé, cela donnerait quelque chose comme ceci :
 
@@ -51,3 +67,5 @@ cloud.yolo.com : Nextcloud (un service de cloud)
 rss.yolo.com   : TinyTiny RSS (un lecteur RSS)
 wiki.yolo.com  : DokuWiki (un wiki)
 ```
+
+!!! De nombreuses applications intègrent une fonctionnalité qui vous permet de changer l'URL de votre application. Ce choix entre sous-chemin et sous-domaine peut donc dans certains cas être réversible via une simple manipulation dans l'interface d'administration.

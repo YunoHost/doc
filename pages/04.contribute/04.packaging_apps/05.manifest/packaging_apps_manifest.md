@@ -64,7 +64,7 @@ The `manifest.json` file defines the app's constants, a bunch of values that Yun
 
 * **id**: ID of the app. You have to ensure that this ID is unique before submit an app integration request. See [packaging_apps_guidelines.md#yep-11](https://github.com/YunoHost/doc/blob/master/packaging_apps_guidelines.md#yep-11) for valid rules.
 
-- **packaging_format**: package version. Actual version is **1**. This key has been set up to make independant packaging evolution versions from YunoHost versions evolution.
+- **packaging_format**: package version. Current version is **1**. This key has been set up to make independant packaging evolution versions from YunoHost versions evolution.
 
 * **description**: complete app description. You can make it as detailed as you feel it should be. Only `en` is required right now, but you can translate the description by prepending the locale prefix.
 

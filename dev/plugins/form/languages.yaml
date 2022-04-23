@@ -1,0 +1,897 @@
+en:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Form not validated. One or more required fields are missing."
+    NONCE_NOT_VALIDATED: "Oops, your form has timed out, please reload the page and submit the form again."
+    FILES: "Files Upload"
+    FORM_ALREADY_SUBMITTED: "This form has already been submitted."
+    ALLOW_MULTIPLE: "Allow More than one file"
+    ALLOW_MULTIPLE_HELP: "Allows to select more than one file for upload."
+    DESTINATION: "Destination"
+    DESTINATION_HELP: "The location where the files should be uploaded to"
+    ACCEPT: "Allowed MIME Types"
+    ACCEPT_HELP: "A list of MIME Types that are allowed for upload"
+    ERROR_VALIDATING_CAPTCHA: "reCAPTCHA bot protection has identified this form submission is problematic"
+    DATA_SUMMARY: "Here is the summary of what you wrote to us:"
+    NO_FORM_DATA: "No form data available"
+    RECAPTCHA: "reCAPTCHA"
+    RECAPTCHA_VERSION: "Version"
+    RECAPTCHA_VERSION_V2_CHECKBOX: "v2 - Checkbox"
+    RECAPTCHA_VERSION_V2_INVISIBLE: "v2 - Invisible"
+    RECAPTCHA_VERSION_V3_LATEST: "v3 - Latest"
+    RECAPTCHA_THEME: "Theme"
+    RECAPTCHA_THEME_LIGHT: "Light Theme"
+    RECAPTCHA_THEME_DARK: "Dark Theme"
+    RECAPTCHA_SITE_KEY: "Site key"
+    RECAPTCHA_SITE_KEY_HELP: "For more info visit https://developers.google.com/recaptcha"
+    RECAPTCHA_SECRET_KEY: "Secret key"
+    RECAPTCHA_SECRET_KEY_HELP: "For more info visit https://developers.google.com/recaptcha"
+    GENERAL: "General"
+    USE_BUILT_IN_CSS: "Use built-in CSS"
+    USE_INLINE_CSS: "Use inline CSS"
+    FILEUPLOAD_PREVENT_SELF: 'Cannot use "%s" outside of pages.'
+    FILEUPLOAD_UNABLE_TO_UPLOAD: 'Unable to upload file %s: %s'
+    FILEUPLOAD_UNABLE_TO_MOVE: 'Unable to move file %s to "%s"'
+    FILEUPLOAD_ERR_OK: 'There is no error, the file uploaded with success'
+    FILEUPLOAD_ERR_INI_SIZE: 'The uploaded file exceeds the max upload size'
+    FILEUPLOAD_ERR_FORM_SIZE: 'The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML'
+    FILEUPLOAD_ERR_PARTIAL: 'The uploaded file was only partially uploaded'
+    FILEUPLOAD_ERR_NO_FILE: 'No file was uploaded'
+    FILEUPLOAD_ERR_NO_TMP_DIR: 'Missing a temporary folder'
+    FILEUPLOAD_ERR_CANT_WRITE: 'Failed to write file to disk'
+    FILEUPLOAD_ERR_EXTENSION: 'A PHP extension stopped the file upload'
+    FILEUPLOAD_ERR_UNKNOWN: 'Unknown file upload error'
+    DROPZONE_CANCEL_UPLOAD: 'Cancel upload'
+    DROPZONE_CANCEL_UPLOAD_CONFIRMATION: 'Are you sure you want to cancel this upload?'
+    DROPZONE_DEFAULT_MESSAGE: 'Drop your files here or <strong>click in this area</strong>'
+    DROPZONE_FALLBACK_MESSAGE: 'Your browser does not support drag and drop file uploads.'
+    DROPZONE_FALLBACK_TEXT: 'Please use the fallback form below to upload your files like in the olden days.'
+    DROPZONE_FILE_TOO_BIG: 'File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.'
+    DROPZONE_INVALID_FILE_TYPE: "You can't upload files of this type."
+    DROPZONE_MAX_FILES_EXCEEDED: "You can not upload any more files."
+    DROPZONE_REMOVE_FILE: "Remove file"
+    DROPZONE_REMOVE_FILE_CONFIRMATION: 'Are you sure you want to delete this file?'
+    DROPZONE_RESPONSE_ERROR: "Server responded with {{statusCode}} code."
+    YES: "Yes"
+    NO: "No"
+    REFRESH_PREVENTION: "Refresh prevention"
+    REFRESH_PREVENTION_HELP: "Use the form's unique ID to ensure the same form is not reprocessed when refreshing the browser"
+    LIMIT: "Limit"
+    LIMIT_HELP: "Maximum number of allowed files per field (multiple required)"
+    FILESIZE: "Max Filesize"
+    FILESIZE_HELP: "Maximum file size allowed (in MB), 0 = Use system default"
+    AVOID_OVERWRITING: "Avoid overwriting"
+    AVOID_OVERWRITING_HELP: "Prevent files with the same name to be overridden. Date prefix will be added"
+    RANDOM_NAME: "Random name"
+    RANDOM_NAME_HELP: "Generate a random 15 long string name for the uploaded files"
+    CLIENT_SIDE_VALIDATION: "Client-side validation"
+    CLIENT_SIDE_VALIDATION_HELP: "By default forms will use HTML5 client validation as first line of defense"
+    INLINE_ERRORS: "Inline errors"
+    INLINE_ERRORS_HELP: "Useful with 'client-side validation' off, shows inline contextual form errors"
+    RESOLUTION_MIN: "The {{attr}} was less than the minimum of {{min}}px <br />"
+    RESOLUTION_MAX: "The {{attr}} was more than the maximum of {{max}}px <br />"
+    DESTINATION_NOT_SPECIFIED: "Destination not specified"
+    INVALID_MIME_TYPE: "The MIME type %s for the file %s is not accepted."
+    INVALID_FILE_EXTENSION: "The File Extension for the file %s is not accepted."
+eu:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Formularioa ez da baliozkotu. Beharrezkoa den eremu bat edo gehiago falta dira."
+    NONCE_NOT_VALIDATED: "Arazo bat gertatu da. Egiaztatu sartutako informazioa eta bidali berriro formularioa."
+    FILES: "Fitxategi Kargatzea"
+    FORM_ALREADY_SUBMITTED: "Formulario hau dagoeneko bidali da."
+    ALLOW_MULTIPLE: "Onartu fitxategi bat baino gehiago"
+    ALLOW_MULTIPLE_HELP: "Fitxategi bat baino gehiago kargatzeko aukera ematen du."
+    DESTINATION: "Helmuga"
+    DESTINATION_HELP: "Fitxategiak non kokatu behar diren"
+    ACCEPT: "Baimendutako MIME motak"
+    ACCEPT_HELP: "Kargatu ahal diren MIME moten zerrenda"
+    ERROR_VALIDATING_CAPTCHA: "Errorea reCAPTCHA egiaztatzerakoan"
+    DATA_SUMMARY: "Hona hemen idatzi diguzunaren laburpena:"
+    NO_FORM_DATA: "Formularioaren datuak ez daude eskuragarri"
+    RECAPTCHA: "reCAPTCHA"
+    RECAPTCHA_VERSION: "Bertsioa"
+    RECAPTCHA_VERSION_V2_CHECKBOX: "v2 - Checkbox"
+    RECAPTCHA_VERSION_V2_INVISIBLE: "v2 - Invisible"
+    RECAPTCHA_VERSION_V3_LATEST: "v3 - Latest"
+    RECAPTCHA_THEME: "Itxura"
+    RECAPTCHA_THEME_LIGHT: "Itxura Argia"
+    RECAPTCHA_THEME_DARK: "Itxura Iluna"
+    RECAPTCHA_SITE_KEY: "Gunearen gakoa"
+    RECAPTCHA_SITE_KEY_HELP: "Gehiago jakiteko bisitatu https://developers.google.com/recaptcha"
+    RECAPTCHA_SECRET_KEY: "Gako Sekretua"
+    RECAPTCHA_SECRET_KEY_HELP: "Gehiago jakiteko bisitatu https://developers.google.com/recaptcha"
+    GENERAL: "Orokorra"
+    USE_BUILT_IN_CSS: "Erabili CSS integratua"
+    USE_INLINE_CSS: "Erabili CSS lerroan"
+    FILEUPLOAD_PREVENT_SELF: 'Ezin da "%s" erabili orrialdeetatik kanpo.'
+    FILEUPLOAD_UNABLE_TO_UPLOAD: '%s: %s fitxategia ezin da kargatu'
+    FILEUPLOAD_UNABLE_TO_MOVE: '%s fitxategia ezin da mugitu "%s"-ra'
+    DROPZONE_CANCEL_UPLOAD: 'Utzi kargatzea'
+    DROPZONE_CANCEL_UPLOAD_CONFIRMATION: 'Ziur al zaude kargatzea bertan behera utzi nahi duzula?'
+    DROPZONE_DEFAULT_MESSAGE: 'Utzi zure fitxategiak hemen edo <strong> klik egin eremu honetan </strong>'
+    DROPZONE_FALLBACK_MESSAGE: 'Zure nabigatzaileak ez du jasaten fitxategiak arrastratzea.'
+    DROPZONE_FALLBACK_TEXT: 'Mesedez erabili beheko formularioa zure fitxategiak kargatzeko.'
+    DROPZONE_FILE_TOO_BIG: 'Fitxategiak asko pisatzen du ({{filesize}}MiB). Gehienezko tamaina: {{maxFilesize}}MiB.'
+    DROPZONE_INVALID_FILE_TYPE: "Ezin dituzu mota honetako fitxategiak kargatu."
+    DROPZONE_MAX_FILES_EXCEEDED: "Ezin dituzu fitxategi gehiago kargatu."
+    DROPZONE_REMOVE_FILE: "Fitxategia ezabatu"
+    DROPZONE_REMOVE_FILE_CONFIRMATION: 'Zihur al zaude fitxategia ezabatu nahi duzula?'
+    DROPZONE_RESPONSE_ERROR: "Zerbitzariak{{statusCode}} kodearekin erantzun du."
+    YES: "Bai"
+    NO: "Ez"
+    REFRESH_PREVENTION: "Eguneratze prebentzioa"
+    REFRESH_PREVENTION_HELP: "Erabili formularioaren ID bakarra, zihurtatzeko ez dela berriro prozesatuko nabigatzailea eguneratzerakoan."
+    LIMIT: "Muga"
+    LIMIT_HELP: "Baimendutako gehienezko fitxategi kopurua eremu bakoitzeko (beharrezkoak dira fitxategi anitz)"
+    FILESIZE: "Gehienezko fitxategi tamaina"
+    FILESIZE_HELP: "Onartutako gehienezko fitxategi tamaina (MB-tan), 0 = Sistemaren lehenetsia"
+    AVOID_OVERWRITING: "Gainean idaztea ekidin"
+    AVOID_OVERWRITING_HELP: "Izen bereko fitxategiak gainean idaztea ekidin. Data aurrizkia gehituko da"
+    RANDOM_NAME: "Ausazko izena"
+    RANDOM_NAME_HELP: "Sortu ausazko 15 karakteredun kate luze bat, izen bezala, kargatutako fitxategientzat"
+    CLIENT_SIDE_VALIDATION: "Bezeroaren aldeko baliozkotzea"
+    CLIENT_SIDE_VALIDATION_HELP: "Lehenetsita, formularioek HTML5 bezeroaren aldeko baliozkotzea erabiliko dute lehenengo defentsa moduan."
+    INLINE_ERRORS: "Erroreak lerroan"
+    INLINE_ERRORS_HELP: "Erabilgarria den 'bezeroaren aldeko baliozkotzea' desgaituta dago, testuinguruko formulario erroreak erakusten ditu"
+    RESOLUTION_MIN: "{{Attr}} atributua {{min}}px gutxienekoa baino txikiagoa izan zen <br />"
+    RESOLUTION_MAX: "{{Attr}} atributua {{max}}px gehienekoa baino handiagoa izan da <br />"
+    DESTINATION_NOT_SPECIFIED: "Helmuga ez da zehaztu"
+    INVALID_MIME_TYPE: "%s fitxategiaren %s MIME mota ez da onartzen."
+    INVALID_FILE_EXTENSION: "%s fitxategiaren luzapena ez da onartzen."
+
+de:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Formularwerte nicht gültig. Für ein oder mehrere erforderliche Felder fehlen Werte."
+    NONCE_NOT_VALIDATED: "Ups, es gibt da ein Problem. Eingabewerte bitte noch mal prüfen und das Formular erneut absenden."
+    FILES: "Dateien hochladen"
+    FORM_ALREADY_SUBMITTED: "Formular wurde bereits versendet."
+    ALLOW_MULTIPLE: "Erlaube mehr als eine Datei"
+    ALLOW_MULTIPLE_HELP: "Erlaubt es, mehr als eine Datei zum Hochladen auszuwählen."
+    DESTINATION: "Ziel"
+    DESTINATION_HELP: "Das Ziel, wohin die Dateien hochgeladen werden sollen."
+    ACCEPT: "Erlaubte MIME-Typen"
+    ACCEPT_HELP: "Eine Liste von MIME-Typen, die hochgeladen werden dürfen."
+    ERROR_VALIDATING_CAPTCHA: "Die Überprüfung des Captcha ist fehlgeschlagen."
+    DATA_SUMMARY: "Hier die Zusammenfassung dessen, was du geschrieben hast:"
+    YES: "Ja"
+    NO: "Nein"
+    NO_FORM_DATA: "Keine Formulardaten vorhanden"
+    RECAPTCHA: "ReCaptcha"
+    RECAPTCHA_SITE_KEY: "Seitenschlüssel"
+    RECAPTCHA_SITE_KEY_HELP: "Für mehr Informationen besuche https://developers.google.com/recaptcha"
+    RECAPTCHA_SECRET_KEY: "Privater Schlüssel"
+    RECAPTCHA_SECRET_KEY_HELP: "Für mehr Informationen besuche https://developers.google.com/recaptcha"
+    GENERAL: "General"
+    USE_BUILT_IN_CSS: "Benutze eingebautes CSS"
+    USE_INLINE_CSS: "Benutze inline CSS"
+    FILEUPLOAD_PREVENT_SELF: '"%s" kann nicht ausserhalb der Seiten verwendet werden.'
+    FILEUPLOAD_UNABLE_TO_UPLOAD: 'Upload-Fehler %s: %s'
+    FILEUPLOAD_UNABLE_TO_MOVE: 'Fehler beim Verschieben von %s nach "%s"'
+    DROPZONE_CANCEL_UPLOAD: 'Upload abgebrochen'
+    DROPZONE_CANCEL_UPLOAD_CONFIRMATION: 'Bist du sicher, dass du diesen Upload abbrechen möchtest??'
+    DROPZONE_DEFAULT_MESSAGE: 'Ziehe deine Dateien hierhin: <strong>Klicke hier</strong>'
+    DROPZONE_FALLBACK_MESSAGE: 'Dein Browser unterstützt kein "drag and drop".'
+    DROPZONE_FILE_TOO_BIG: 'Datei zu gross ({{filesize}}MiB). Maximale Dateigrösse: {{maxFilesize}}MiB.'
+    DROPZONE_INVALID_FILE_TYPE: "Du kannst keine Dateien dieses Typs hochladen."
+    DROPZONE_MAX_FILES_EXCEEDED: "Du kannst keine weiteren Dateien hochladen."
+    DROPZONE_REMOVE_FILE: "Datei entfernen"
+    DROPZONE_REMOVE_FILE_CONFIRMATION: 'Möchtest du diese Datei wirklich löschen?'
+    DROPZONE_RESPONSE_ERROR: "Server antwortet mit {{statusCode}}."
+    LIMIT_HELP: "Maximale anzahl erlaubter Dateien (Mehrfachauswahl erforderlich) "
+    FILESIZE: "Maximale Dateigrösse"
+    FILESIZE_HELP: "Maximale Dateigrösse (in MB), 0 = Benutze Standart"
+    AVOID_OVERWRITING: "Überschreiben verhindern"
+    AVOID_OVERWRITING_HELP: "Verhindert das Überschreiben und fügt einen Dateipräfix hinzu."
+    RANDOM_NAME: "Zufälliger Name"
+    RANDOM_NAME_HELP: "Generiert einen 15 Zeichen langen Zufallsnamen."
+    CLIENT_SIDE_VALIDATION: "Klientseitige Überprüfung"
+    INLINE_ERRORS: "Inline-Fehler"
+    DESTINATION_NOT_SPECIFIED: "Zielort nicht definiert"
+    INVALID_MIME_TYPE: "Der MIME-Typ %s für die Datei %s ist nicht erlaubt."
+    INVALID_FILE_EXTENSION: "Die Dateiendung %s ist nicht erlaubt."
+
+es:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Falló la validación del formulario. Uno o más campos obligatorios no fueron cubiertos."
+    NONCE_NOT_VALIDATED: "Oops, hay un problema, por favor revise la información e intente enviar el formulario otra vez."
+    FILES: "Subida de Ficheros"
+    FORM_ALREADY_SUBMITTED: "Este formulario ya ha sido enviado"
+    ALLOW_MULTIPLE: "Permitir más de un fichero"
+    ALLOW_MULTIPLE_HELP: "Permitir seleccionar más de un fichero para subir."
+    DESTINATION: "Destino"
+    DESTINATION_HELP: "El lugar de destino al que subir los ficheros"
+    ACCEPT: "MIME Types permitidos"
+    ACCEPT_HELP: "Una lista de  MIME Types que se permiten subir."
+    ERROR_VALIDATING_CAPTCHA: "Error al comprobar el Captcha"
+    DATA_SUMMARY: "Este es el resumen de lo que nos has escrito:"
+    NO_FORM_DATA: "No hay datos disponibles del formulario"
+    RECAPTCHA: "ReCaptcha"
+    RECAPTCHA_SITE_KEY: "Site key"
+    RECAPTCHA_SITE_KEY_HELP: "Para más información visita https://developers.google.com/recaptcha"
+    RECAPTCHA_SECRET_KEY: "Secret key"
+    RECAPTCHA_SECRET_KEY_HELP: "Para más información visita https://developers.google.com/recaptcha"
+    GENERAL: "General"
+    USE_BUILT_IN_CSS: "Utilizar CSS incorporado"
+    USE_INLINE_CSS: "Utilizar CSS en línea"
+    FILEUPLOAD_PREVENT_SELF: 'No se puede utilizar "%s" fuera de las páginas'
+    FILEUPLOAD_UNABLE_TO_UPLOAD: 'No se puede subir el fichero %s: %s'
+    FILEUPLOAD_UNABLE_TO_MOVE: 'No se puede mover el fichero %s to "%s"'
+    DROPZONE_CANCEL_UPLOAD: 'Cancelar subida'
+    DROPZONE_CANCEL_UPLOAD_CONFIRMATION: '¿Estas seguro que quieres cancelar esta subida?'
+    DROPZONE_DEFAULT_MESSAGE: 'Arrastra tus ficheros aquí o <strong>haz click en esta área</strong>'
+    DROPZONE_FALLBACK_MESSAGE: 'Tu navegador no soporta el arrastrar y soltar ficheros de subida.'
+    DROPZONE_FALLBACK_TEXT: 'Por favor utiliza el formulario alternativo que esta debajo, para subir ficheros como antiguamente.'
+    DROPZONE_FILE_TOO_BIG: 'Fichero demasiado grande ({{filesize}}MiB). Máximo tamaño: {{maxFilesize}}MiB.'
+    DROPZONE_INVALID_FILE_TYPE: "No puedes subir ficheros de este tipo."
+    DROPZONE_MAX_FILES_EXCEEDED: "No puedes subir mas ficheros."
+    DROPZONE_REMOVE_FILE: "Borrar fichero"
+    DROPZONE_REMOVE_FILE_CONFIRMATION: '¿Estas seguro de que quieres borrar este fichero?'
+    DROPZONE_RESPONSE_ERROR: "El servidor respondió con el código de estado {{statusCode}}."
+    YES: "Si"
+    NO: "No"
+    REFRESH_PREVENTION: "Prevenir refresco"
+    REFRESH_PREVENTION_HELP: "Utiliza el ID único del formulario para garantizar que el este no se vuelve a procesar cuando se refresca el navegador"
+    LIMIT: "Límite"
+    LIMIT_HELP: "Máximo número de ficheros permitidos por campo (múltiples requeridos)"
+    FILESIZE: "Tamaño máximo de fichero"
+    FILESIZE_HELP: "Tamaño máximo de fichero permitido (en MB), 0 = Utiliza el de por defecto del sistema"
+    AVOID_OVERWRITING: "Evitar sobreescribir"
+    AVOID_OVERWRITING_HELP: "Evita que los ficheros con el mismo nombre sean sobreescritos. Se agregará el prefijo de fecha"
+    RANDOM_NAME: "Nombre aleatorio"
+    RANDOM_NAME_HELP: "Genera una cadela aleatoria de 15 caracteres como nombre de fichero a subir"
+    CLIENT_SIDE_VALIDATION: "Validación del lado del cliente"
+    CLIENT_SIDE_VALIDATION_HELP: "Por defecto los formularios usarán validación HTML5 del lado del cliente como primera línea de defensa"
+    INLINE_ERRORS: "Errores en línea"
+    INLINE_ERRORS_HELP: "Útil con 'validación del lado del cliente' desactivado, muestra errores en el formulario contextual en línea"
+    RESOLUTION_MIN: "{{attr}} fué menor que el mínimo {{min}}px <br />"
+    RESOLUTION_MAX: "{{attr}} fué mayor que el máximo {{max}}px <br />"
+
+fr:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Formulaire non validé. Un ou plusieurs champs obligatoires sont manquants."
+    NONCE_NOT_VALIDATED: "Oups, un problème est survenu. Veuillez vérifier votre saisie et soumettre à nouveau le formulaire."
+    FILES: "Fichiers chargés"
+    FORM_ALREADY_SUBMITTED: "Le formulaire a déjà été envoyé."
+    ALLOW_MULTIPLE: "Autoriser plus d'un fichier"
+    ALLOW_MULTIPLE_HELP: "Permet la sélection de plusieurs fichiers pour chargement."
+    DESTINATION: "Destination"
+    DESTINATION_HELP: "L'emplacement où les fichiers doivent être chargés."
+    ACCEPT: "Autoriser les Types MIME"
+    ACCEPT_HELP: "Liste des Types MIME autorisés au chargement"
+    ERROR_VALIDATING_CAPTCHA: "Erreur lors de la validation du Captcha"
+    DATA_SUMMARY: "Voici le résumé de ce que vous nous avez écrit :"
+    NO_FORM_DATA: "Aucune donnée de formulaire disponible"
+    RECAPTCHA: "ReCaptcha"
+    RECAPTCHA_SITE_KEY: "Clé du site"
+    RECAPTCHA_SITE_KEY_HELP: "Pour plus d'informations veuillez vous rendre sur https://developers.google.com/recaptcha"
+    RECAPTCHA_SECRET_KEY: "Clé secrète"
+    RECAPTCHA_SECRET_KEY_HELP: "Pour plus d'informations veuillez vous rendre sur https://developers.google.com/recaptcha"
+    GENERAL: "Général"
+    USE_BUILT_IN_CSS: "Utiliser les CSS natifs"
+    FILEUPLOAD_PREVENT_SELF: "Impossible d'utiliser '%s' en dehors des pages."
+    FILEUPLOAD_UNABLE_TO_UPLOAD: "Impossible de charger le fichier %s: %s"
+    FILEUPLOAD_UNABLE_TO_MOVE: 'Impossible de déplacer le fichier %s vers "%s"'
+    DROPZONE_CANCEL_UPLOAD: "Annuler le chargement"
+    DROPZONE_CANCEL_UPLOAD_CONFIRMATION: "Êtes-vous certain de vouloir annuler ce téléchargement ?"
+    DROPZONE_DEFAULT_MESSAGE: "Glissez vos fichiers ici ou <strong>cliquez dans cette zone</strong>"
+    DROPZONE_FALLBACK_MESSAGE: "Votre navigateur ne prend pas en charge les téléchargements par glissé-déposé."
+    DROPZONE_FALLBACK_TEXT: "Veuillez utiliser le formulaire de secours ci-dessous pour transférer vos fichiers."
+    DROPZONE_FILE_TOO_BIG: "Le fichier est trop volumineux ({{filesize}}MiB). Taille maximale de fichier : {{maxFilesize}}MiB."
+    DROPZONE_INVALID_FILE_TYPE: "Vous ne pouvez pas charger des fichiers de ce type."
+    DROPZONE_MAX_FILES_EXCEEDED: "Vous ne pouvez plus télécharger de fichiers."
+    DROPZONE_REMOVE_FILE: "Supprimer le fichier"
+    DROPZONE_REMOVE_FILE_CONFIRMATION: "Êtes-vous sûr de vouloir supprimer ce fichier ?"
+    DROPZONE_RESPONSE_ERROR: "Le serveur a répondu avec le code {{statusCode}}."
+    YES: "Oui"
+    NO: "Non"
+    REFRESH_PREVENTION: "Prévenir la redondance"
+    REFRESH_PREVENTION_HELP: "Utilise l’identifiant unique du formulaire pour s’assurer qu’il n’est pas pris deux fois en compte si l’on recharge le navigateur."
+    LIMIT: "Limite"
+    LIMIT_HELP: "Nombre maximum de fichiers par champ (quand multiple)"
+    FILESIZE: "Poids du fichier max."
+    FILESIZE_HELP: "Poids maximum autorisé pour le fichier (en MB), 0 = utiliser la valeur du système par défaut"
+    AVOID_OVERWRITING: "Éviter la réécriture"
+    AVOID_OVERWRITING_HELP: "Évite qu’un fichier avec le même nom soit écrasé. Le nom sera préfixé de la date."
+    RANDOM_NAME: "Nom aléatoire"
+    RANDOM_NAME_HELP: "Génère une chaîne de caractère aléatoire de quinze caractères pour le nom du fichier uploadé."
+    CLIENT_SIDE_VALIDATION: "Validation côté client"
+    CLIENT_SIDE_VALIDATION_HELP: "Par défaut, les formulaires utiliseront la validation en HTML5 avant tout autre validation."
+    INLINE_ERRORS: "Erreurs en ligne"
+    INLINE_ERRORS_HELP: "Utile avec « Validation côté client » désactivé ; affiche des erreurs contextuelles en ligne."
+    RESOLUTION_MIN: "{{attr}} est inférieur au minimum de {{min}}px <br />"
+    RESOLUTION_MAX: "{{attr}} est supérieur au minimum de  {{max}}px <br />"
+    DESTINATION_NOT_SPECIFIED: "La destination n’est pas indiquée."
+    INVALID_MIME_TYPE: "Le type MIME %s pour le fichier %s n’est pas accepté."
+    INVALID_FILE_EXTENSION: "L’extension pour le fichier %s n’est pas acceptée."
+
+ru:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Форма не подтверждена. Отсутствует одно или несколько обязательных полей."
+    NONCE_NOT_VALIDATED: "Упс, у вас возникла проблема, проверьте свои данные и отправьте форму еще раз."
+    FILES: "Загрузка файлов"
+    FORM_ALREADY_SUBMITTED: "Эта форма уже была отправлена."
+    ALLOW_MULTIPLE: "Разрешить несколько файлов"
+    ALLOW_MULTIPLE_HELP: "Позволяет выбрать более одного файла для загрузки."
+    DESTINATION: "Место назначения"
+    DESTINATION_HELP: "Место, куда файлы должны быть загружены в"
+    ACCEPT: "Разрешенные MIME типы"
+    ACCEPT_HELP: "Список MIME типов, разрешенных для загрузки"
+    ERROR_VALIDATING_CAPTCHA: "Ошибка проверки Captcha"
+    DATA_SUMMARY: "Вот краткое изложение того, что вы нам написали:"
+    NO_FORM_DATA: "Данные формы отсутствуют"
+    RECAPTCHA: "reCAPTCHA"
+    RECAPTCHA_VERSION: "Версия"
+    RECAPTCHA_VERSION_V2_CHECKBOX: "v2 - Флажок"
+    RECAPTCHA_VERSION_V2_INVISIBLE: "v2 - Невидимый"
+    RECAPTCHA_VERSION_V3_LATEST: "v3 - Последний"
+    RECAPTCHA_THEME: "Тема"
+    RECAPTCHA_THEME_LIGHT: "Светлая тема"
+    RECAPTCHA_THEME_DARK: "Темная тема"
+    RECAPTCHA_SITE_KEY: "Ключ сайта (site key)"
+    RECAPTCHA_SITE_KEY_HELP: "Для получения дополнительной информации посетите https://developers.google.com/recaptcha"
+    RECAPTCHA_SECRET_KEY: "Секретный ключ (secret key)"
+    RECAPTCHA_SECRET_KEY_HELP: "Для получения дополнительной информации посетите https://developers.google.com/recaptcha"
+    GENERAL: "Общие"
+    USE_BUILT_IN_CSS: "Использовать встроенный CSS"
+    USE_INLINE_CSS: "Использовать inline CSS"
+    FILEUPLOAD_PREVENT_SELF: 'Нельзя использовать "%s" за пределами страниц.'
+    FILEUPLOAD_UNABLE_TO_UPLOAD: 'Не удалось загрузить файл %s: %s'
+    FILEUPLOAD_UNABLE_TO_MOVE: 'Не удалось переместить файл %s в "%s"'
+    DROPZONE_CANCEL_UPLOAD: 'Отменить загрузку'
+    DROPZONE_CANCEL_UPLOAD_CONFIRMATION: 'Вы действительно хотите отменить эту загрузку?'
+    DROPZONE_DEFAULT_MESSAGE: 'Перетащите свои файлы сюда или <strong>щелкните в этой области</strong>'
+    DROPZONE_FALLBACK_MESSAGE: 'Ваш браузер не поддерживает загрузку файлов с перетаскиванием.'
+    DROPZONE_FALLBACK_TEXT: 'Пожалуйста, используйте приведенную ниже форму для загрузки ваших файлов, как в старые времена.'
+    DROPZONE_FILE_TOO_BIG: 'Файл слишком большой ({{filesize}}мб). Максимальный размер файла: {{maxFilesize}}мб.'
+    DROPZONE_INVALID_FILE_TYPE: "Вы не можете загружать файлы этого типа."
+    DROPZONE_MAX_FILES_EXCEEDED: "Вы не можете загружать больше файлов."
+    DROPZONE_REMOVE_FILE: "Удалить файл"
+    DROPZONE_REMOVE_FILE_CONFIRMATION: 'Вы действительно хотите удалить этот файл?'
+    DROPZONE_RESPONSE_ERROR: "Сервер ответил кодом {{statusCode}}."
+    YES: "Да"
+    NO: "Нет"
+    REFRESH_PREVENTION: "Предотвращение обновления"
+    REFRESH_PREVENTION_HELP: "Используйте уникальный идентификатор формы, чтобы гарантировать, что одна и та же форма не будет отправляться заново при обновлении страницы браузера"
+    LIMIT: "Лимит"
+    LIMIT_HELP: "Максимальное количество разрешенных файлов в поле (требуется несколько)"
+    FILESIZE: "Максимальный размер файла"
+    FILESIZE_HELP: "Максимально допустимый размер файла (в МБ), 0 = Использовать системные установки по умолчанию"
+    AVOID_OVERWRITING: "Избегать перезаписи"
+    AVOID_OVERWRITING_HELP: "Не допускать перезаписи файлов с тем же именем. Будет добавлен префикс с датой"
+    RANDOM_NAME: "Случайное имя"
+    RANDOM_NAME_HELP: "Создавать случайное строковое имя из 15 символов для загруженных файлов"
+    CLIENT_SIDE_VALIDATION: "Проверка на стороне клиента"
+    CLIENT_SIDE_VALIDATION_HELP: "По умолчанию формы будут использовать HTML5 проверку клиента как первую степень защиты"
+    INLINE_ERRORS: "Встроенные ошибки"
+    INLINE_ERRORS_HELP: "Полезно с отключенной «проверкой на стороне клиента», отображает встроенные контекстные ошибки формы"
+    RESOLUTION_MIN: "{{attr}} меньше минимума {{min}}px <br />"
+    RESOLUTION_MAX: "The {{attr}} больше, чем максимум {{max}}px <br />"
+    DESTINATION_NOT_SPECIFIED: "Назначение не указано"
+    INVALID_MIME_TYPE: "Тип MIME %s для файла %s не принимается."
+    INVALID_FILE_EXTENSION: "Расширение файла %s не является допустимым для файла."
+
+uk:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Форма не підтверджена. Відсутнє одне або кілька обов'язкових полів."
+    NONCE_NOT_VALIDATED: "Упс, у вас виникла проблема, перевірте свої дані і відправте форму ще раз."
+    FILES: "Завантаження файлів"
+    FORM_ALREADY_SUBMITTED: "Ця форма вже була відправлена."
+    ALLOW_MULTIPLE: "Дозволити декілька файлів"
+    ALLOW_MULTIPLE_HELP: "Дозволяє вибрати більше одного файлу для завантаження."
+    DESTINATION: "Місце призначення"
+    DESTINATION_HELP: "Місце, куди файли повинні бути завантажені в"
+    ACCEPT: "Дозволені MIME типи"
+    ACCEPT_HELP: "Перелік MIME типів, дозволених для завантаження"
+    ERROR_VALIDATING_CAPTCHA: "Помилка перевірки Captcha"
+    DATA_SUMMARY: "Ось стислий виклад того, що ви нам написали:"
+    NO_FORM_DATA: "Дані форми відсутні"
+    RECAPTCHA: "reCAPTCHA"
+    RECAPTCHA_VERSION: "Версія"
+    RECAPTCHA_SITE_KEY: "Ключ сайту (site key)"
+    RECAPTCHA_SITE_KEY_HELP: "Для отримання додаткової інформації відвідайте https://developers.google.com/recaptcha"
+    RECAPTCHA_SECRET_KEY: "Секретний ключ (secret key)"
+    RECAPTCHA_SECRET_KEY_HELP: "Для отримання додаткової інформації відвідайте https://developers.google.com/recaptcha"
+    GENERAL: "Загальні"
+    USE_BUILT_IN_CSS: "Використовувати вбудований CSS"
+    USE_INLINE_CSS: "Використовувати inline CSS"
+    FILEUPLOAD_PREVENT_SELF: 'Не можна використовувати "%s" за межами сторінок.'
+    FILEUPLOAD_UNABLE_TO_UPLOAD: 'Не вдалося завантажити файл %s: %s'
+    FILEUPLOAD_UNABLE_TO_MOVE: 'Не вдалося перемістити файл %s до "%s"'
+    DROPZONE_CANCEL_UPLOAD: 'Скасувати завантаження'
+    DROPZONE_CANCEL_UPLOAD_CONFIRMATION: 'Ви дійсно хочете скасувати це завантаження?'
+    DROPZONE_DEFAULT_MESSAGE: 'Перетягніть свої файли сюди чи <strong>клацніть в цій області</strong>'
+    DROPZONE_FALLBACK_MESSAGE: 'Ваш браузер не підтримує завантаження файлів з перетягуванням.'
+    DROPZONE_FALLBACK_TEXT: 'Будь ласка, використовуйте цю форму для завантаження ваших файлів, як в старі часи.'
+    DROPZONE_FILE_TOO_BIG: 'Файл занадто великий ({{filesize}}мб). Максимальний розмір файлу: {{maxFilesize}}мб.'
+    DROPZONE_INVALID_FILE_TYPE: "Ви не можете завантажувати файли цього типу."
+    DROPZONE_MAX_FILES_EXCEEDED: "Ви не можете завантажувати більше файлів."
+    DROPZONE_REMOVE_FILE: "Видалити файл"
+    DROPZONE_REMOVE_FILE_CONFIRMATION: 'Ви дійсно хочете видалити цей файл?'
+    DROPZONE_RESPONSE_ERROR: "Сервер відповів кодом {{statusCode}}."
+    YES: "Так"
+    NO: "Ні"
+    REFRESH_PREVENTION: "Запобігання оновлення"
+    REFRESH_PREVENTION_HELP: "Використовуйте унікальний ідентифікатор форми, щоб гарантувати, що одна і та ж форма не буде відправлятися заново при оновленні сторінки браузера"
+    LIMIT: "Ліміт"
+    LIMIT_HELP: "Максимальна кількість дозволених файлів в поле (потрібно декілька)"
+    FILESIZE: "Максимальний розмір файлу"
+    FILESIZE_HELP: "Максимально допустимий розмір файлу (в МБ), 0 = Використовувати системні налаштування за замовчуванням"
+    AVOID_OVERWRITING: "Уникати перезапису"
+    AVOID_OVERWRITING_HELP: "Не допускати перезапису файлів з тим же ім'ям. Буде додано префікс з датою"
+    RANDOM_NAME: "Випадкове ім'я"
+    RANDOM_NAME_HELP: "Створювати випадкове строкове ім'я з 15 символів для завантажених файлів"
+    CLIENT_SIDE_VALIDATION: "Перевірка на стороні клієнта"
+    CLIENT_SIDE_VALIDATION_HELP: "За замовчуванням форми будуть використовувати HTML5 перевірку клієнта як першу ступінь захисту"
+    INLINE_ERRORS: "Вбудовані помилки"
+    INLINE_ERRORS_HELP: "Корисно з відключеною «перевіркою на стороні клієнта», відображає вбудовані контекстні помилки форми"
+    RESOLUTION_MIN: "{{attr}} менше, ніж мінімум {{min}}px <br />"
+    RESOLUTION_MAX: "The {{attr}} більше, ніж максимум {{max}}px <br />"
+    DESTINATION_NOT_SPECIFIED: "Призначення не вказано"
+    INVALID_MIME_TYPE: "Тип MIME %s для файла %s не приймається."
+    INVALID_FILE_EXTENSION: "Розширення файлу %s не є допустимим для файлу."
+
+hr:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Formular nije validiran. Jedan ili više traženih polja nedostaju."
+    NONCE_NOT_VALIDATED: "Ups, došlo je do problema, molimo provjerite svoj unos i pokušajte opet."
+    FILES: "Upload Fajlova"
+    ALLOW_MULTIPLE: "Dopusti više od jednog fajla"
+    DESTINATION: "Destinacija"
+    DESTINATION_HELP: "Lokacija gdje bi fajlovi trebali biti uploadani"
+    ACCEPT: "Dopušteni MIME Tipovi"
+    ACCEPT_HELP: "Lista dopuštenih MIME Tipova koji su dozvoljeni za upload"
+    ERROR_VALIDATING_CAPTCHA: "Greška pri validiranju Captcha"
+
+hu:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Érvénytelen az űrlap. Egy vagy több kötelező mező nincs kitöltve."
+    NONCE_NOT_VALIDATED: "Upsz, van egy kis probléma, kérlek nézd át az űrlapot, majd küldd el újra."
+    FILES: "Fájlok Feltöltése"
+    FORM_ALREADY_SUBMITTED: "Ez az űrlap már el lett küldve."
+    ALLOW_MULTIPLE: "Több fájl feltöltése"
+    ALLOW_MULTIPLE_HELP: "Engedélyezi egyszerre több állomány feltöltését."
+    DESTINATION: "Feltöltés Helye"
+    DESTINATION_HELP: "Ide lesznek feltöltve az állományok"
+    ACCEPT: "Engedélyezett MIME-típusok"
+    ACCEPT_HELP: "A feltölthető állományok MIME-típusainak listája"
+    ERROR_VALIDATING_CAPTCHA: "Hiba lépett fel a Captcha validálása során"
+    DATA_SUMMARY: "Üzenet összesítő:"
+    NO_FORM_DATA: "Űrlap adatok nem elérhetőek."
+    RECAPTCHA: "reCAPTCHA"
+    RECAPTCHA_VERSION: "Verzió"
+    RECAPTCHA_VERSION_V2_CHECKBOX: "v2 - Kijelölőnégyzet"
+    RECAPTCHA_VERSION_V2_INVISIBLE: "v2 - Láthatatlan"
+    RECAPTCHA_VERSION_V3_LATEST: "v3 - Legutolsó"
+    RECAPTCHA_THEME: "Téma"
+    RECAPTCHA_THEME_LIGHT: "Világos téma"
+    RECAPTCHA_THEME_DARK: "Sötét téma"
+    RECAPTCHA_SITE_KEY: "Site kulcs"
+    RECAPTCHA_SITE_KEY_HELP: "További információért látogass el ide a https://developers.google.com/recaptcha webhelyre."
+    RECAPTCHA_SECRET_KEY: "Secret kulcs"
+    RECAPTCHA_SECRET_KEY_HELP: "További információért látogass el ide a https://developers.google.com/recaptcha webhelyre."
+    GENERAL: "Általános"
+    USE_BUILT_IN_CSS: "Alapértelmezett CSS használata"
+    USE_INLINE_CSS: "Beágyazott CSS használata"
+    FILEUPLOAD_PREVENT_SELF: '"%s" nem használható oldalakon kívül.'
+    FILEUPLOAD_UNABLE_TO_UPLOAD: 'Sikertelen fájlfeltöltés %s: %s'
+    FILEUPLOAD_UNABLE_TO_MOVE: '%s áthelyezése sikertelen ide: "%s"'
+    DROPZONE_CANCEL_UPLOAD: 'Feltöltés megszakítása'
+    DROPZONE_CANCEL_UPLOAD_CONFIRMATION: 'Biztos megszakítsuk a feltöltést?'
+    DROPZONE_DEFAULT_MESSAGE: 'Húzza a fájlokat ide vagy <strong>kattintson a területre</strong>'
+    DROPZONE_FALLBACK_MESSAGE: 'A böngésző nem támogatja a drag and drop fájlfeltöltéseket.'
+    DROPZONE_FALLBACK_TEXT: 'Kérjük használja a kompatibilitási űrlapot vagy a hagyományos fájfeltöltést.'
+    DROPZONE_FILE_TOO_BIG: 'Túl nagy állomány ({{filesize}}MiB). Maximum fájlméret: {{maxFilesize}}MiB.'
+    DROPZONE_INVALID_FILE_TYPE: "Ilyen típusú fájlok feltöltése nem megengedett."
+    DROPZONE_MAX_FILES_EXCEEDED: "További fájlok feltöltése nem megengedett, elérte a maximumot."
+    DROPZONE_REMOVE_FILE: "Fájl eltávolítása"
+    DROPZONE_REMOVE_FILE_CONFIRMATION: 'Biztos az eltávolításban?'
+    DROPZONE_RESPONSE_ERROR: "Szerver hiba, kód: {{statusCode}}."
+    YES: "Igen"
+    NO: "Nem"
+    REFRESH_PREVENTION: "Újratöltési védelem"
+    REFRESH_PREVENTION_HELP: "Az űrlap egyedi azonosítójának használata annak érdekében hogy az űrlap ne legyen újrafeldolgozva oldalfrissítés esetén."
+    LIMIT: "Limit"
+    LIMIT_HELP: "Az egy mezőben megadható fájlok maximális száma. (multiple required)"
+    FILESIZE: "Maximum fájlméret"
+    FILESIZE_HELP: "Maximum engedélyezett fájlméret (MB-ban), 0 = Rendszer alapértelmezés használata."
+    AVOID_OVERWRITING: "Felülírás elkerülése"
+    AVOID_OVERWRITING_HELP: "A már létező fájlok felülírásának elkerülése, dátum előtag hozzáadásával a fájlnévhez."
+    RANDOM_NAME: "Véletlenszerű név"
+    RANDOM_NAME_HELP: "Generáljon egy 15 karakter hosszú véletlenszerű nevet a feltöltött fájloknak."
+    CLIENT_SIDE_VALIDATION: "Kliens oldali validáció"
+    CLIENT_SIDE_VALIDATION_HELP: "Az űrlapok HTML5 kliens oldali validációt használnak alapértelmezésként, mint első védelmi vonal."
+    INLINE_ERRORS: "Beágyazott hibaüzenetek"
+    INLINE_ERRORS_HELP: "Beágyazott kontextuális űrlaphibák megjelenítése, hasznos ha a 'Kliens oldali validáció' ki van kapcsolva."
+    RESOLUTION_MIN: "A(z) {{attr}} érték kisebb mint a minimum {{min}}px <br />"
+    RESOLUTION_MAX: "A(z) {{attr}} érték nagyobb mint a maximum {{max}}px <br />"
+    DESTINATION_NOT_SPECIFIED: "A feltöltés helye nincs megadva."
+    INVALID_MIME_TYPE: "MIME-típus %s nem engedélyezett. Állomány: %s."
+    INVALID_FILE_EXTENSION: "A(z) %s állomány kiterjesztése nem engedélyezett."
+
+it:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Il Form risulta invalido. Uno o più campi risultano omessi."
+    NONCE_NOT_VALIDATED: "Oops è stato riscontrato un errore, si prega di ricontrollare i dati inseriti e provare di nuovo."
+    FILES: "Invio dei Files"
+    ALLOW_MULTIPLE: "Consenti più di un file"
+    ALLOW_MULTIPLE_HELP: "Permette la selezione di più di un file per l'upload"
+    DESTINATION: "Destinazione"
+    DESTINATION_HELP: "La destinazione dove i files vengono uploadati"
+    ACCEPT: "Tipi di MIME Concessi"
+    ACCEPT_HELP: "Una lista di tipi di MIME che sono permessi per l'upload"
+    ERROR_VALIDATING_CAPTCHA: "Errore durante la validazione del Captcha"
+    DATA_SUMMARY: "Ecco il riassunto di ciò che ci hai scritto:"
+    NO_FORM_DATA: "Nessuna informazione disponibile"
+    RECAPTCHA: "ReCaptcha"
+    RECAPTCHA_SITE_KEY: "Site key"
+    RECAPTCHA_SITE_KEY_HELP: "Per maggiori informazioni visita https://developers.google.com/recaptcha"
+    RECAPTCHA_SECRET_KEY: "Chiave segreta"
+    RECAPTCHA_SECRET_KEY_HELP: "Per maggiori informazioni visita https://developers.google.com/recaptcha"
+    GENERAL: "Generale"
+    USE_BUILT_IN_CSS: "Usa CSS incorporato"
+    FILEUPLOAD_PREVENT_SELF: 'Non si può usare "%s" fuori dalle pagine.'
+    FILEUPLOAD_UNABLE_TO_UPLOAD: 'Impossibile caricare il file %s: %s'
+    FILEUPLOAD_UNABLE_TO_MOVE: 'Impossibile muovere il file %s to "%s"'
+    DROPZONE_CANCEL_UPLOAD: 'Trasferimento annullato'
+    DROPZONE_CANCEL_UPLOAD_CONFIRMATION: 'Sei sicuro di voler cancellare questo trasferimento?'
+    DROPZONE_DEFAULT_MESSAGE: "Trascina qui i tuoi file o <strong>clicca su quest'area</strong>"
+    DROPZONE_FALLBACK_MESSAGE: 'Il tuo browser non supporta il trascinamento dei file per il trasferimento.'
+    DROPZONE_FALLBACK_TEXT: 'Utilizza il modulo di riserva qui sotto per caricare i tuoi file come ai vecchi tempi.'
+    DROPZONE_FILE_TOO_BIG: 'Il file è troppo grande ({{filesize}}MiB). Dimensione massima consentita: {{maxFilesize}}MiB.'
+    DROPZONE_INVALID_FILE_TYPE: "Non puoi caricare questo tipo di file"
+    DROPZONE_MAX_FILES_EXCEEDED: "Non puoi caricare ulteriori file, hai raggiunto il limite consentito."
+    DROPZONE_REMOVE_FILE: "Rimuovi il file"
+    DROPZONE_REMOVE_FILE_CONFIRMATION: 'Sei sicuro di voler eliminare questo file??'
+    DROPZONE_RESPONSE_ERROR: "Il Server ha risposto con il codice {{statusCode}}."
+    YES: "Si"
+    NO: "No"
+
+ro:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Formularul nu a fost validat. Unul sau mai multe câmpuri sunt goale."
+    NONCE_NOT_VALIDATED: "Oops a apărut o problemă, vă rugăm verificați datele introduse și trimiteți formularul din nou."
+    FILES: "Încărcare fișiere"
+    ALLOW_MULTIPLE: "Permiteți mai multe fișiere"
+    ALLOW_MULTIPLE_HELP: "Vă permite să selectați mai multe fișiere pentru încărcare."
+    DESTINATION: "Destinație"
+    DESTINATION_HELP: "Locația unde vor fi încărcate fișierele."
+    ACCEPT: "Permite tipuri MIME "
+    ACCEPT_HELP: "O listă cu tipuri MIME care sunt permise la încărcare."
+    ERROR_VALIDATING_CAPTCHA: "Eroare la validarea Captcha."
+    DATA_SUMMARY: "Mai jos aveți un rezumat al mesajului pe care ni l-ați trimis:"
+    NO_FORM_DATA: "Nu e disponibilă nici o dată pentru formular"
+    RECAPTCHA: "ReCaptcha"
+    RECAPTCHA_SITE_KEY: "Cheia pentru Site"
+    RECAPTCHA_SITE_KEY_HELP: "Pentru mai multe detalii vă rugăm vizitați https://developers.google.com/recaptcha"
+    RECAPTCHA_SECRET_KEY: "Cheia secretă pentru Site"
+    RECAPTCHA_SECRET_KEY_HELP: "Pentru mai multe detalii vă rugăm vizitați  https://developers.google.com/recaptcha"
+
+cs:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Formulář nebyl ověřen. Chybí jedno nebo více povinných polí."
+    NONCE_NOT_VALIDATED: "Jejda, došlo k problému, zkontrolujte vstupní stránku a znovu odešlete formulář."
+    FILES: "Nahrávání souborů"
+    ALLOW_MULTIPLE: "Povolit více než jeden soubor"
+    ALLOW_MULTIPLE_HELP: "Umožňuje vybrat více než jeden soubor pro nahrání."
+    DESTINATION: "Cílové umístění"
+    DESTINATION_HELP: "Místo, kam mají být soubory nahrány"
+    ACCEPT: "Povolené MIME typy"
+    ACCEPT_HELP: "Seznam MIME typů souborů povolených pro upload"
+    ERROR_VALIDATING_CAPTCHA: "Nepodařilo se ověřit CAPTCHA (kontrola proti spamu)"
+    DATA_SUMMARY: "Shrnutí toho, co jste nám napsali:"
+    NO_FORM_DATA: "Formulář neobsahuje žádná data"
+    RECAPTCHA: "ReCaptcha"
+    RECAPTCHA_SITE_KEY: "Site key"
+    RECAPTCHA_SITE_KEY_HELP: "Více informací https://developers.google.com/recaptcha"
+    RECAPTCHA_SECRET_KEY: "Secret key"
+    RECAPTCHA_SECRET_KEY_HELP: "Více informací https://developers.google.com/recaptcha"
+    GENERAL: "Všeobecné"
+    USE_BUILT_IN_CSS: "Použít built-in CSS"
+    FILEUPLOAD_PREVENT_SELF: 'Nelze použít "% s" mimo stránky.'
+    FILEUPLOAD_UNABLE_TO_UPLOAD: 'Nelze nahrát soubor %s: %s'
+    FILEUPLOAD_UNABLE_TO_MOVE: 'Nelze přesunout soubor %s do "%s"'
+    DROPZONE_CANCEL_UPLOAD: 'Zrušit upload'
+    DROPZONE_CANCEL_UPLOAD_CONFIRMATION: 'Opravdu chcete zrušit nahrávání souboru?'
+    DROPZONE_DEFAULT_MESSAGE: 'Přetáhněte sem soubory nebo <strong>klikněte v tomto prostoru</strong>'
+    DROPZONE_FALLBACK_MESSAGE: 'Váš prohlížeč nepodporuje nahrávání souborů táhni a pusť.'
+    DROPZONE_FALLBACK_TEXT: 'Použijte níže uvedený formulář pro nahrání souborů, jako v minulých dnech.'
+    DROPZONE_FILE_TOO_BIG: 'Soubor je příliš velký ({{filesize}}MiB). Max. velikost souboru: {{maxFilesize}}MiB.'
+    DROPZONE_INVALID_FILE_TYPE: "Nelze nahrát soubory tohoto typu."
+    DROPZONE_MAX_FILES_EXCEEDED: "Nelze nahrát další soubory."
+    DROPZONE_REMOVE_FILE: "Odstranit soubor"
+    DROPZONE_REMOVE_FILE_CONFIRMATION: 'Opravdu chcete tento soubor smazat?'
+    DROPZONE_RESPONSE_ERROR: "Server vrátil chybový kód: {{statusCode}}."
+    YES: "Ano"
+    NO: "Ne"
+pl:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Formularz został odrzucony. Jedno lub więcej pól wymaga wypełnienia."
+    NONCE_NOT_VALIDATED: "Ups, pojawił się problem. Proszę sprawdzić, czy wszystkie pola zostały wypełnione i wysłać formularz ponownie."
+    FILES: "Plik przesłany."
+    FORM_ALREADY_SUBMITTED: "Ten formularz został już wysłany."
+    ALLOW_MULTIPLE: "Zezwól na więcej niż jeden plik."
+    ALLOW_MULTIPLE_HELP: "Zezwól na przesłanie więcej niż jednego pliku."
+    DESTINATION: "Cel"
+    DESTINATION_HELP: "Lokalizacja przesłanego pliku."
+    ACCEPT: "Dozwolone typy MIME"
+    ACCEPT_HELP: "Lista dozwolonych do przesłania typów MIME"
+    ERROR_VALIDATING_CAPTCHA: "Błąd walidacji Captcha"
+    DATA_SUMMARY: "Oto podsumowanie informacji, które do nas napisałeś:"
+    NO_FORM_DATA: "Brak dostępnych danych formularza"
+    RECAPTCHA: "ReCaptcha"
+    RECAPTCHA_SITE_KEY: "Klucz strony"
+    RECAPTCHA_SITE_KEY_HELP: "Aby uzyskać więcej informacji, odwiedź https://developers.google.com/recaptcha"
+    RECAPTCHA_SECRET_KEY: "Tajny klucz"
+    RECAPTCHA_SECRET_KEY_HELP: "Aby uzyskać więcej informacji, odwiedź https://developers.google.com/recaptcha"
+    GENERAL: "Ogólne"
+    USE_BUILT_IN_CSS: "Użyj wbudowanych stylów CSS"
+    USE_INLINE_CSS: "Użyj stylów inline CSS"
+    FILEUPLOAD_PREVENT_SELF: 'Nie można użyć "%s" poza stronami.'
+    FILEUPLOAD_UNABLE_TO_UPLOAD: 'Nie można przesłać pliku %s: %s'
+    FILEUPLOAD_UNABLE_TO_MOVE: 'Nie można przenieść pliku %s do "%s"'
+    DROPZONE_CANCEL_UPLOAD: 'Anuluj przesyłanie'
+    DROPZONE_CANCEL_UPLOAD_CONFIRMATION: 'Czy na pewno chcesz anulować to przesyłanie?'
+    DROPZONE_DEFAULT_MESSAGE: 'Upuść pliki tutaj lub <strong>kliknij w tym obszarze</strong>'
+    DROPZONE_FALLBACK_MESSAGE: 'Twoja przeglądarka nie wspiera przesyłania plików metodą przeciągnij i upuść.'
+    DROPZONE_FALLBACK_TEXT: 'Proszę użyć zapasowego formularza do przesyłania plików znajdującego się poniżej.'
+    DROPZONE_FILE_TOO_BIG: 'Plik jest zbyt duży ({{filesize}}MiB). Maksymalna wielkość pliku: {{maxFilesize}}MiB.'
+    DROPZONE_INVALID_FILE_TYPE: "Nie możesz przesłać pliku w tym formacie."
+    DROPZONE_MAX_FILES_EXCEEDED: "Nie możesz już przesłać więcej plików."
+    DROPZONE_REMOVE_FILE: "Usuń plik"
+    DROPZONE_REMOVE_FILE_CONFIRMATION: 'Czy na pewno chcesz usunąć ten plik?'
+    DROPZONE_RESPONSE_ERROR: "Serwer odpowiedział kodem {{statusCode}}."
+    YES: "Tak"
+    NO: "Nie"
+    REFRESH_PREVENTION: "Zapobiegaj odświeżaniu"
+    REFRESH_PREVENTION_HELP: "Użyj unikatowego identyfikatora ID, aby upewnić się, że przeglądarka nie przetworzy formularza ponownie."
+    LIMIT: "Limit"
+    LIMIT_HELP: "Maksymalna ilość dozwolonych plików na pole (wymagana liczba mnoga)"
+    FILESIZE: "Maksymalny rozmiar pliku"
+    FILESIZE_HELP: "Maksymalny dozwolony rozmiar pliku (w MB), 0 = użyj ustawień systemowych"
+    AVOID_OVERWRITING: "Unikaj nadpisywania"
+    AVOID_OVERWRITING_HELP: "Unikaj nadpisywania plików o tej samej nazwie. Zostanie dodany prefiks z datą"
+    RANDOM_NAME: "Losowa nazwa"
+    RANDOM_NAME_HELP: "Wygeneruj losowy ciąg 15 znaków jako nazwę dla przesyłanych plików"
+    CLIENT_SIDE_VALIDATION: "Weryfikacja po stronie klienta"
+    CLIENT_SIDE_VALIDATION_HELP: "Domyślnie formularze użyją weryfikacji HTML5 po stronie klienta jako pierwszej linii obrony"
+    INLINE_ERRORS: "Błędy inline"
+    INLINE_ERRORS_HELP: "Przydatne przy wyłączonej weryfikacji po stronie klienta, wyświetla kontekstowe błędy formularza"
+    RESOLUTION_MIN: "{{attr}} była mniejsza od minimum wynoszącego {{min}}px <br />"
+    RESOLUTION_MAX: "{{attr}} była większa od maksimum wynoszącego {{max}}px <br />"
+    DESTINATION_NOT_SPECIFIED: "Cel nie został określony"
+    INVALID_MIME_TYPE: "Typ MIME %s dla pliku %s nie jest dozwolony."
+    INVALID_FILE_EXTENSION: "Rozszerzenie pliku %s nie jest dozwolone."
+nl:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Formulier niet gevalideerd. Een of meerdere verplichte velden ontbreken."
+    NONCE_NOT_VALIDATED: "Oeps er was een probleem, controleer je input en stuur het formulier opnieuw."
+    FILES: "Bestanden geupload"
+    FORM_ALREADY_SUBMITTED: "Dit formulier is al eerder verstuurd."
+    ALLOW_MULTIPLE: "Meer dan een bestand toegestaan"
+    ALLOW_MULTIPLE_HELP: "Staat toe dat meer dan een bestand geselecteerd kan worden voor uploaden."
+    DESTINATION: "Bestemming"
+    DESTINATION_HELP: "De lokatie waar de bestanden naartoe moeten worden geupload"
+    ACCEPT: "Toegestane MIME types"
+    ACCEPT_HELP: "Een lijst van MIME types welke zijn toegestaan om te uploaden"
+    ERROR_VALIDATING_CAPTCHA: "Fout bij Captcha validatie"
+    DATA_SUMMARY: "Hier is de samenvatting van wat u ons heeft gestuurd:"
+    NO_FORM_DATA: "Geen formdata beschikbaar"
+    RECAPTCHA: "ReCaptcha"
+    RECAPTCHA_SITE_KEY: "Site sleutel"
+    RECAPTCHA_SITE_KEY_HELP: "Voor meer informatie ga naar https://developers.google.com/recaptcha"
+    RECAPTCHA_SECRET_KEY: "Geheime sleutel"
+    RECAPTCHA_SECRET_KEY_HELP: "Voor meer informatie ga naar https://developers.google.com/recaptcha"
+    GENERAL: "Algemeen"
+    USE_BUILT_IN_CSS: "Gebruik ingebouwde CSS"
+    FILEUPLOAD_PREVENT_SELF: 'Kan "%s" niet buiten paginas gebruiken.'
+    FILEUPLOAD_UNABLE_TO_UPLOAD: 'Niet mogelijk om bestand %s: %s te uploaden'
+    FILEUPLOAD_UNABLE_TO_MOVE: 'Niet mogelijk om bestand %s naar "%s" te verplaatsen'
+    DROPZONE_CANCEL_UPLOAD: 'Upload annuleren'
+    DROPZONE_CANCEL_UPLOAD_CONFIRMATION: 'Weet u zeker dat u deze upload wilt annuleren?'
+    DROPZONE_DEFAULT_MESSAGE: 'Sleep hier uw bestanden heen of <strong>klik in dit gebied</strong>'
+    DROPZONE_FALLBACK_MESSAGE: 'Uw browser ondersteund geen drag en drop bestand uploads.'
+    DROPZONE_FALLBACK_TEXT: 'Gebruik alsublieft het fallback formulier hieronder om uw bestanden te uploaden zoals vroeger.'
+    DROPZONE_FILE_TOO_BIG: 'Bestand is te groot ({{filesize}}MiB). Maximale bestandsgrootte: {{maxFilesize}}MiB.'
+    DROPZONE_INVALID_FILE_TYPE: "U kunt geen bestanden uploaden van dit type."
+    DROPZONE_MAX_FILES_EXCEEDED: "U kunt niet meer bestanden uploaden."
+    DROPZONE_REMOVE_FILE: "Verwijder bestand"
+    DROPZONE_REMOVE_FILE_CONFIRMATION: 'Weet u zeker dat u het bestand wilt verwijderen?'
+    DROPZONE_RESPONSE_ERROR: "Server reageert met {{statusCode}} code."
+    YES: "Ja"
+    NO: "Nee"
+    REFRESH_PREVENTION: "Verversbescherming"
+    REFRESH_PREVENTION_HELP: "Gebruik het unieke ID van her formulier om zeker te stellen dat hetzelfde formulier niet opnieuw wordt verwerkt als de browser ververst wordt"
+    LIMIT: "Limiet"
+    LIMIT_HELP: "Maximum aantal toegestande bestanden per veld (meerdere vereist)"
+    FILESIZE: "Maximale bestandsgrootte"
+    FILESIZE_HELP: "Maximale bestandsgrootte toegestaan (in MB), 0 = Gebruik systeem standaard"
+    AVOID_OVERWRITING: "Vermijd overschrijven"
+    AVOID_OVERWRITING_HELP: "Voorkom dat bestanden met dezelfde naam worden overschreven. Datum prefix wordt toegevoegd"
+    RANDOM_NAME: "Willekeurige naam"
+    RANDOM_NAME_HELP: "Genereer een willekeurige naam van 15 karakters voor de geuploade bestanden"
+pt:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Formulário não validado. Falta preencher um ou mais campos obrigatórios."
+    NONCE_NOT_VALIDATED: "Oops, houve um problema. Por favor verifique os dados informados e envie o formulário novamente."
+    FILES: "Envio de Arquivos"
+    FORM_ALREADY_SUBMITTED: "Este formulário já foi enviado."
+    ALLOW_MULTIPLE: "Permitir mais de um arquivo"
+    ALLOW_MULTIPLE_HELP: "Permite selecionar mais de um arquivo para enviar."
+    DESTINATION: "Destino"
+    DESTINATION_HELP: "O local para onde os arquivos devem ser enviados"
+    ACCEPT: "Tipos MIME Permitidos"
+    ACCEPT_HELP: "Uma lista de tipos MIME permitidos no upload"
+    ERROR_VALIDATING_CAPTCHA: "Erro ao validar o captcha"
+    DATA_SUMMARY: "Aqui está um resumo do que você escreveu:"
+    NO_FORM_DATA: "Nenhum dado de formulário disponível"
+    RECAPTCHA: "ReCaptcha"
+    RECAPTCHA_SITE_KEY: "Site key"
+    RECAPTCHA_SITE_KEY_HELP: "Para mais informações visite https://developers.google.com/recaptcha"
+    RECAPTCHA_SECRET_KEY: "Secret key"
+    RECAPTCHA_SECRET_KEY_HELP: "Para mais informações visite https://developers.google.com/recaptcha"
+    GENERAL: "Geral"
+    USE_BUILT_IN_CSS: "Usar CSS built-in"
+    USE_INLINE_CSS: "Usar CSS inline"
+    FILEUPLOAD_PREVENT_SELF: 'Não é permitido usar "%s" fora de páginas.'
+    FILEUPLOAD_UNABLE_TO_UPLOAD: 'Não foi possível enviar o arquivo %s: %s'
+    FILEUPLOAD_UNABLE_TO_MOVE: 'Não foi possível mover o arquivo %s para "%s"'
+    DROPZONE_CANCEL_UPLOAD: 'Cancelar envio'
+    DROPZONE_CANCEL_UPLOAD_CONFIRMATION: 'Tem certeza de que deseja cancelar este envio?'
+    DROPZONE_DEFAULT_MESSAGE: 'Arraste seus arquivos para cá ou <strong>clique nesta área</strong>'
+    DROPZONE_FALLBACK_MESSAGE: 'Seu navegador não suporta arrastar e soltar arquivos.'
+    DROPZONE_FALLBACK_TEXT: 'Por favor use o formulário abaixo para enviar seus arquivos como antigamente.'
+    DROPZONE_FILE_TOO_BIG: 'O arquivo é muito grande ({{filesize}}MiB). Tamanho máximo: {{maxFilesize}}MiB.'
+    DROPZONE_INVALID_FILE_TYPE: "Você não pode enviar arquivos deste tipo."
+    DROPZONE_MAX_FILES_EXCEEDED: "Você não pode enviar mais arquivos."
+    DROPZONE_REMOVE_FILE: "Remover arquivo"
+    DROPZONE_REMOVE_FILE_CONFIRMATION: 'Tem certeza de que deseja excluir este arquivo?'
+    DROPZONE_RESPONSE_ERROR: "O servidor respondeu com código {{statusCode}}."
+    YES: "Sim"
+    NO: "Não"
+    REFRESH_PREVENTION: "Evitar recarregamento"
+    REFRESH_PREVENTION_HELP: "Usar o ID do formulário para garantir que ele não seja reprocessado se o usuário recarregar a página"
+    LIMIT: "Limite"
+    LIMIT_HELP: "Número máximo de arquivos permitidos por campo (deve ser múltiplo)"
+    FILESIZE: "Tamanho máximo"
+    FILESIZE_HELP: "Tamanho máximo de arquivo permitido (em MB), 0 = Use o default do sistema"
+    AVOID_OVERWRITING: "Evitar sobrescrita"
+    AVOID_OVERWRITING_HELP: "Prevenir que arquivos com o mesmo nome sejam sobrescritos. Serão adicionados prefixos com a data"
+    RANDOM_NAME: "Nome aleatório"
+    RANDOM_NAME_HELP: "Gerar um nome aleatório de 15 caracteres para os arquivos recebidos"
+    CLIENT_SIDE_VALIDATION: "Validação no cliente"
+    CLIENT_SIDE_VALIDATION_HELP: "Por padrão os formulários usarão a validação HTML5 no cliente como primeira linha de defesa"
+    INLINE_ERRORS: "Erros inline"
+    INLINE_ERRORS_HELP: "Útil se a validação no cliente estiver desabilitada. Mostra os erros próximo aos respectivos campos"
+    RESOLUTION_MIN: "A {{attr}} é menor que o mínimo de {{min}}px <br />"
+    RESOLUTION_MAX: "A {{attr}} é maior que o máximo de {{max}}px <br />"
+da:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Formular ikke valideret. Et eller flere påkrævede felter mangler."
+    NONCE_NOT_VALIDATED: "Ups der var et problem, tjek venligst dit input og send formularen igen."
+    FILES: "Filupload"
+    FORM_ALREADY_SUBMITTED: "Denne formular er allerede blevet sendt."
+    ALLOW_MULTIPLE: "Tillad mere end én fil."
+    ALLOW_MULTIPLE_HELP: "Tillader at der vælges mere end én fil til upload."
+    DESTINATION: "Destination"
+    DESTINATION_HELP: "Lokationen hvor filerne skal uploades til"
+    ACCEPT: "Tilladte MIME Typer"
+    ACCEPT_HELP: "En liste af MIME Typer der er tilladte for upload"
+    ERROR_VALIDATING_CAPTCHA: "Fejl ved validering af Captcha"
+    DATA_SUMMARY: "Her er resuméet af det, du skrev til os:"
+    NO_FORM_DATA: "Ingen formular-data til rådighed"
+    RECAPTCHA: "ReCaptcha"
+    RECAPTCHA_SITE_KEY: "Site nøgle"
+    RECAPTCHA_SITE_KEY_HELP: "For mere info besøg https://developers.google.com/recaptcha"
+    RECAPTCHA_SECRET_KEY: "Hemmelig nøgle"
+    RECAPTCHA_SECRET_KEY_HELP: "For mere info besøg https://developers.google.com/recaptcha"
+    GENERAL: "Generel"
+    USE_BUILT_IN_CSS: "Brug indbygget CSS"
+    USE_INLINE_CSS: "Brug inline CSS"
+    FILEUPLOAD_PREVENT_SELF: 'Kan ikke bruge "%s" uden for sider.'
+    FILEUPLOAD_UNABLE_TO_UPLOAD: 'Kan ikke uploade filen %s: %s'
+    FILEUPLOAD_UNABLE_TO_MOVE: 'Kan ikke flytte fil %s til "%s"'
+    DROPZONE_CANCEL_UPLOAD: 'Annuller upload'
+    DROPZONE_CANCEL_UPLOAD_CONFIRMATION: 'Er du sikker på, at du vil annullere denne upload?'
+    DROPZONE_DEFAULT_MESSAGE: 'Drop dine filer her eller <strong>klik i dette område</ strong>'
+    DROPZONE_FALLBACK_MESSAGE: 'Din browser understøtter ikke træk-og-slip filoploads.'
+    DROPZONE_FALLBACK_TEXT: 'Brug venligst nedenstående formular til at uploade dine filer som i de gamle dage.'
+    DROPZONE_FILE_TOO_BIG: 'Filen er for stor ({{filesize}}MiB). Maks. filstørrelse: {{maxFilesize}}MiB.'
+    DROPZONE_INVALID_FILE_TYPE: "Du kan ikke uploade filer af denne type."
+    DROPZONE_MAX_FILES_EXCEEDED: "Du kan ikke uploade flere filer."
+    DROPZONE_REMOVE_FILE: "Fjern fil"
+    DROPZONE_REMOVE_FILE_CONFIRMATION: 'Er du sikker på, at du vil slette denne fil?'
+    DROPZONE_RESPONSE_ERROR: "Server svarede med {{statusCode}} kode."
+    YES: "Ja"
+    NO: "Nej"
+    REFRESH_PREVENTION: "Forebyg opdatering"
+    REFRESH_PREVENTION_HELP: "Brug formularens unikke ID for at sikre, at samme form ikke bearbejdes igen, når du opdaterer browseren"
+    LIMIT: "Begrænsning"
+    LIMIT_HELP: "Maksimum antal tilladte filer pr. felt (flere påkrævede)"
+    FILESIZE: "Maks. filstørrelse"
+    FILESIZE_HELP: "Maksimal filstørrelse tilladt (i MB), 0 = Brug systemstandard"
+    AVOID_OVERWRITING: "Undgå at overskrive"
+    AVOID_OVERWRITING_HELP: "Forhindre at filer med samme navn overskrives. Dato præfiks vil blive tilføjet"
+    RANDOM_NAME: "Tilfældigt navn"
+    RANDOM_NAME_HELP: "Generer et tilfældigt 15 tegn langt strengnavn for de uploadede filer"
+    CLIENT_SIDE_VALIDATION: "Validering på klientsiden"
+    CLIENT_SIDE_VALIDATION_HELP: "Som standard bruger formularer HTML5-klient validering som første forsvarslinje"
+    INLINE_ERRORS: "Inline fejl"
+    INLINE_ERRORS_HELP: "Nyttig med 'validering på klientsiden' deaktiveret, viser inline kontekstuelle form fejl"
+    RESOLUTION_MIN: "{{attr}} var mindre end minimum på {{min}}px <br />"
+    RESOLUTION_MAX: "{{attr}} var højere end maksimum på {{max}}px <br />"
+    DESTINATION_NOT_SPECIFIED: "Destination ikke angivet"
+    INVALID_MIME_TYPE: "MIME typen %s for filen %s er ikke accepteret."
+    INVALID_FILE_EXTENSION: "Filendelsen for filen %s er ikke accepteret."
+lt:
+  PLUGIN_FORM:
+    NOT_VALIDATED: "Forma nepatikrinta. Trūksta vieno ar daugiau privalomų laukų."
+    NONCE_NOT_VALIDATED: "Oi, įvyko klaida. Prašome patikrinti įvestus duomenis ir pateikti formą iš naujo."
+    FILES: "Bylų įkėlimas"
+    FORM_ALREADY_SUBMITTED: "Ši forma jau buvo pateikta."
+    ALLOW_MULTIPLE: "Leisti daugiau nei vieną bylą"
+    ALLOW_MULTIPLE_HELP: "Leidžia pasirinkti daugiau nei vieną bylą įkėlimui."
+    DESTINATION: "Tikslas"
+    DESTINATION_HELP: "Vieta, kur bylos turėtų būti įkeltos"
+    ACCEPT: "Leidžiami MIME tipai"
+    ACCEPT_HELP: "MIME tipų sąrašas, kuriuos galima įkelti"
+    ERROR_VALIDATING_CAPTCHA: "reCAPTCHA apsauga aptiko problemų pateikiant formą"
+    DATA_SUMMARY: "Čia yra santrauka to, ką mums parašėte:"
+    NO_FORM_DATA: "Nėra formos duomenų"
+    RECAPTCHA: "reCAPTCHA"
+    RECAPTCHA_VERSION: "Versija"
+    RECAPTCHA_VERSION_V2_CHECKBOX: "v2 - žymimasis langelis"
+    RECAPTCHA_VERSION_V2_INVISIBLE: "v2 - nematoma"
+    RECAPTCHA_VERSION_V3_LATEST: "v3 - naujausia"
+    RECAPTCHA_THEME: "Tema"
+    RECAPTCHA_THEME_LIGHT: "Šviesi tema"
+    RECAPTCHA_THEME_DARK: "Tamsi tema"
+    RECAPTCHA_SITE_KEY: "Puslapio raktas"
+    RECAPTCHA_SITE_KEY_HELP: "Daugiau informacijos - https://developers.google.com/recaptcha"
+    RECAPTCHA_SECRET_KEY: "Slaptas raktas"
+    RECAPTCHA_SECRET_KEY_HELP: "Daugiau informacijos - https://developers.google.com/recaptcha"
+    GENERAL: "Bendra"
+    USE_BUILT_IN_CSS: "Naudoti įdiegtą CSS"
+    USE_INLINE_CSS: "Naudoti įterptą (inline) CSS"
+    FILEUPLOAD_PREVENT_SELF: 'Negalima naudoti "%s" už puslapių ribų.'
+    FILEUPLOAD_UNABLE_TO_UPLOAD: 'Nepavyko įkelti bylos %s: %s'
+    FILEUPLOAD_UNABLE_TO_MOVE: 'Nepavyko perkelti bylos iš %s į "%s"'
+    FILEUPLOAD_ERR_OK: 'Klaidos nėra, byla įkelta sėkmingai'
+    FILEUPLOAD_ERR_INI_SIZE: 'Įkelta byla viršija maksimalų įkėlimo dydį'
+    FILEUPLOAD_ERR_FORM_SIZE: 'Įkelta byla viršija HTML nurodytą MAX_FILE_SIZE direktyvą'
+    FILEUPLOAD_ERR_PARTIAL: 'Įkeliama byla buvo įkelta tik dalinai'
+    FILEUPLOAD_ERR_NO_FILE: 'Nebuvo įkelta jokia byla'
+    FILEUPLOAD_ERR_NO_TMP_DIR: 'Nerastas laikinasis katalogas'
+    FILEUPLOAD_ERR_CANT_WRITE: 'Nepavyko įrašyti bylos į diską'
+    FILEUPLOAD_ERR_EXTENSION: 'PHP plėtinys sustabdė bylos įkėlimą'
+    FILEUPLOAD_ERR_UNKNOWN: 'Nežinoma bylos įkėlimo klaida'
+    DROPZONE_CANCEL_UPLOAD: 'Atšaukti įkėlimą'
+    DROPZONE_CANCEL_UPLOAD_CONFIRMATION: 'Ar tikrai norite atšaukti šį įkėlimą?'
+    DROPZONE_DEFAULT_MESSAGE: 'Tempkite bylas čia arba <strong>paspauskite šioje zonoje</strong>'
+    DROPZONE_FALLBACK_MESSAGE: 'Jūsų naršyklė nepalaiko bylų įtempimo (drag and drop).'
+    DROPZONE_FALLBACK_TEXT: 'Prašome bylų įkėlimui naudoti žemiau esantį atsarginį variantą, kaip senais laikais.'
+    DROPZONE_FILE_TOO_BIG: 'Byla per didelė ({{filesize}}MiB). Maks. dydis: {{maxFilesize}}MiB.'
+    DROPZONE_INVALID_FILE_TYPE: "Negalite įkelti šio tipo bylų."
+    DROPZONE_MAX_FILES_EXCEEDED: "Nebegalite įkelti daugiau bylų."
+    DROPZONE_REMOVE_FILE: "Šalinti bylą"
+    DROPZONE_REMOVE_FILE_CONFIRMATION: 'Ar tikrai norite ištrinti šią bylą?'
+    DROPZONE_RESPONSE_ERROR: "Serveris atsakė su {{statusCode}} kodu."
+    YES: "Taip"
+    NO: "Ne"
+    REFRESH_PREVENTION: "Atnaujinimo apsauga"
+    REFRESH_PREVENTION_HELP: "Naudoti formos unikalų ID, kad būtų sustabdytas formos pakartotinis apdorojimas atnaujinus puslapį"
+    LIMIT: "Riba"
+    LIMIT_HELP: "Maksimalus viename lauke leidžiamų bylų kiekis (privaloma leisti daugiau nei vieną)"
+    FILESIZE: "Maks. bylos dydis"
+    FILESIZE_HELP: "Maksimalus leidžiamas bylos dydis (MB), 0 = naudoti sistemos pagal nutylėjimą"
+    AVOID_OVERWRITING: "Išvengti perrašymo"
+    AVOID_OVERWRITING_HELP: "Neleisti perrašyti bylų tuo pačiu pavadinimu. Bus pridėtas datos priešdėlis"
+    RANDOM_NAME: "Atsitiktinis pavadinimas"
+    RANDOM_NAME_HELP: "Generuoti atsitiktinį 15-os simbolių ilgio pavadinimą įkeliamoms byloms"
+    CLIENT_SIDE_VALIDATION: "Tikrinimas kliento pusėje"
+    CLIENT_SIDE_VALIDATION_HELP: "Pagal nutylėjimą formos naudos HTML5 kliento tikrinimą kaip pirminį"
+    INLINE_ERRORS: "Įterptos klaidos"
+    INLINE_ERRORS_HELP: "Pravartu su išjungtu 'tikrinimu kliento pusėje' - parodo kontekstines formos klaidas"
+    RESOLUTION_MIN: "{{attr}} buvo mažiau nei minimalus {{min}}px <br />"
+    RESOLUTION_MAX: "{{attr}} buvo daugiau nei maksimalus {{max}}px <br />"
+    DESTINATION_NOT_SPECIFIED: "Nenurodytas tikslas"
+    INVALID_MIME_TYPE: "MIME tipas %s bylai %s nepriimtinas."
+    INVALID_FILE_EXTENSION: "Bylos išplėtimas bylai %s nepriimtinas."

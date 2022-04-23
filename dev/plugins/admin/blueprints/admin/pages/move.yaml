@@ -1,0 +1,5 @@
+form:
+  validation: loose
+  fields:
+    route:
+      type: hidden

@@ -1,0 +1,9 @@
+{% extends "forms/field.html.twig" %}
+
+{% block input_attributes %}
+    type="tel"
+    {% if field.size %}size="{{ field.size }}"{% endif %}
+    {% if field.minlength is defined or field.validate.min is defined %}minlength="{{ field.minlength | default(field.validate.min) }}"{% endif %}
+    {% if field.maxlength is defined or field.validate.max is defined %}maxlength="{{ field.maxlength | default(field.validate.max) }}"{% endif %}
+    {{ parent() }}
+{% endblock %}

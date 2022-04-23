@@ -1,0 +1,58 @@
+{
+    "name": "getgrav/grav-plugin-admin",
+    "type": "grav-plugin",
+    "description": "Admin plugin for Grav CMS",
+    "keywords": ["admin", "plugin", "manager", "panel"],
+    "homepage": "https://github.com/getgrav/grav-plugin-admin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Team Grav",
+            "email": "devs@getgrav.org",
+            "homepage": "https://getgrav.org",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/getgrav/grav-plugin-admin/issues",
+        "irc": "https://chat.getgrav.org",
+        "forum": "https://discourse.getgrav.org",
+        "docs": "https://github.com/getgrav/grav-plugin-admin/blob/master/README.md"
+    },
+    "require": {
+        "php": "^7.3.6 || ^8.0",
+        "ext-json": "*",
+        "p3k/picofeed": "@stable",
+        "scssphp/scssphp": "^1.7",
+        "laminas/laminas-zendframework-bridge": "^1.4"
+    },
+    "require-dev": {
+        "codeception/codeception": "^2.4",
+        "fzaninotto/faker": "^1.8",
+        "symfony/yaml": "~4.4",
+        "symfony/console": "~4.4",
+        "symfony/finder": "~4.4",
+        "symfony/event-dispatcher": "~4.4"
+    },
+    "replace": {
+        "symfony/polyfill-php72": "*",
+        "symfony/polyfill-php73": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Grav\\Plugin\\Admin\\": "classes/plugin"
+        },
+        "classmap":  [
+            "admin.php"
+        ]
+    },
+    "config": {
+        "platform": {
+            "php": "7.3.6"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/codecept run unit",
+        "test-windows": "vendor\\bin\\codecept run unit"
+    }
+}

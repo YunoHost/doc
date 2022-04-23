@@ -1,0 +1,180 @@
+.reveal.print {
+  html {
+    background: #ffffff;
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+  body {
+    background: #ffffff;
+    font-size: 20pt;
+    font-family: Georgia, "Times New Roman", Times, serif !important;
+    width: auto;
+    height: auto;
+    border: 0;
+    margin: 0 5%;
+    padding: 0;
+    overflow: visible;
+    float: none !important;
+  }
+  .nestedarrow,
+  .controls,
+  .fork-reveal,
+  .share-reveal,
+  .state-background,
+  .reveal .progress,
+  .reveal .backgrounds,
+  .reveal .slide-number {
+    display: none !important;
+  }
+  body,
+  p,
+  td,
+  li,
+  div {
+    font-size: 20pt !important;
+    color: #000000;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000000 !important;
+    height: auto;
+    line-height: normal;
+    font-family: Georgia, "Times New Roman", Times, serif !important;
+    text-shadow: 0 0 0 #000000 !important;
+    letter-spacing: normal;
+  }
+  h1 {
+    font-size: 28pt !important;
+  }
+  h2 {
+    font-size: 24pt !important;
+  }
+  h3 {
+    font-size: 22pt !important;
+  }
+  h4 {
+    font-size: 22pt !important;
+    font-variant: small-caps;
+  }
+  h5 {
+    font-size: 21pt !important;
+  }
+  h6 {
+    font-size: 20pt !important;
+    font-style: italic;
+  }
+  a:link,
+  a:visited {
+    color: #000000 !important;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  ul,
+  ol,
+  div,
+  p {
+    visibility: visible;
+    position: static;
+    width: auto;
+    height: auto;
+    display: block;
+    overflow: visible;
+    margin: 0;
+  }
+  .reveal pre,
+  .reveal table {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .reveal {
+    pre {
+      code {
+        padding: 20px;
+        border: 1px solid #dddddd;
+      }
+    }
+    blockquote {
+      margin: 20px 0;
+    }
+    .slides {
+      position: static !important;
+      width: auto !important;
+      height: auto !important;
+      left: 0 !important;
+      top: 0 !important;
+      margin-left: 0 !important;
+      margin-top: 0 !important;
+      padding: 0 !important;
+      zoom: 1 !important;
+      overflow: visible !important;
+      display: block !important;
+      -webkit-perspective: none;
+      -moz-perspective: none;
+      -ms-perspective: none;
+      perspective: none;
+      -webkit-perspective-origin: 50% 50%;
+      -moz-perspective-origin: 50% 50%;
+      -ms-perspective-origin: 50% 50%;
+      perspective-origin: 50% 50%;
+      section {
+        visibility: visible !important;
+        position: static !important;
+        width: auto !important;
+        height: auto !important;
+        display: block !important;
+        overflow: visible !important;
+        left: 0 !important;
+        top: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+        padding: 60px 20px !important;
+        z-index: auto !important;
+        opacity: 1 !important;
+        page-break-after: always !important;
+        -webkit-transform-style: flat !important;
+        -moz-transform-style: flat !important;
+        -ms-transform-style: flat !important;
+        transform-style: flat !important;
+        -webkit-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        transform: none !important;
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+        &.stack {
+          padding: 0 !important;
+        }
+      }
+    }
+    section {
+      &:last-of-type {
+        page-break-after: avoid !important;
+      }
+      .fragment {
+        opacity: 1 !important;
+        visibility: visible !important;
+        -webkit-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        transform: none !important;
+      }
+      img {
+        display: block;
+        margin: 15px 0px;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid #666;
+        box-shadow: none;
+      }
+      small {
+        font-size: 0.8em;
+      }
+    }
+  }
+}

@@ -78,12 +78,12 @@ Por defecto, sólo el usuario `admin` puede conectarse en SSH en una instancia Y
 
 Los usuarios YunoHost creados vea la interfaz de administración están administrados por la base de datos LDAP. Por defecto, no pueden conectarse en SSH por razones de seguridad. Si necesitas absolutamente que uno de estos usuarios disponga de un acceso SSH, puedes utilizar el comando :
 ```bash
-yunohost user ssh allow <username>
+yunohost user permission add ssh.main <username>
 ```
 
 Del mismo modo, es posible cancelar el acceso SSH de un usuario con el comando :
 ```bash
-yunohost user ssh disallow <username>
+yunohost user permission remove ssh.main <username>
 ```
 
 Finalmente, es posible añadir, suprimir y listar llaves SSH, para mejorar la seguridad del acceso SSH, con estos comandos :

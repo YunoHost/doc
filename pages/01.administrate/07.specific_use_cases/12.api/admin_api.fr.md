@@ -8,7 +8,7 @@ routes:
 ---
 
 Toutes les actions exécutables en ligne de commande le sont également via une API. L’API est accessible à l’adresse https://votre.serveur/yunohost/api.
-Pour le moment, il n'existe pas de documentation des différentes routes... mais vous pouvez trouver l'actionmap [ici](https://github.com/YunoHost/yunohost/blob/stretch-unstable/data/actionsmap/yunohost.yml) (en particulier les clefs `api`)
+Pour le moment, il n'existe pas de documentation des différentes routes... mais vous pouvez trouver l'actionmap [ici](https://github.com/YunoHost/yunohost/blob/dev/data/actionsmap/yunohost.yml) (en particulier les clefs `api`)
 
 ## Avec cURL
 
@@ -21,7 +21,7 @@ curl -k -H "X-Requested-With: customscript" \
         -dump-header headers \
         https://your.server/yunohost/api/login
 
-# Example de GET
+# Exemple de GET
 curl -k -i -H "Accept: application/json" \
            -H "Content-Type: application/json" \
            -L -b headers -X GET https://your.server/yunohost/api/ROUTE \

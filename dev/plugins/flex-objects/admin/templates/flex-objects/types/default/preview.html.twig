@@ -1,0 +1,62 @@
+{% extends 'partials/base.html.twig' %}
+{% use 'flex-objects/types/default/titlebar/preview.html.twig' %}
+
+{# Allowed actions #}
+{% set can_preview = can_preview ?? (object.exists and (view_config['enabled'] ?? false)) %}
+{% set can_translate = can_translate ?? (admin.multilang and object.hasFlexFeature('flex-translate')) %}
+
+{# These variables can be overridden from the main template file #}
+{% set allowed = allowed ?? (directory and (object.exists or action == 'add')) %}
+{% set back_route = back_route ?? ('/' ~ route.getRoute(1)) %}
+{% set title_icon = title_icon ?? view_config['icon'] ?? directory.config.admin.menu.list.icon ?? 'fa-file-text-o' %}
+{% set title -%}
+    {%- set title_config = view_config['title'] -%}
+    {%- if title_config.template -%}
+        {{- include(template_from_string(title_config.template, 'edit title template')) -}}
+    {%- else -%}
+        {{- title ?? object.form.getValue('title') ?? object.title ?? key -}}
+    {% endif %}
+{%- endset %}
+{% set preview_url -%}
+    {%- set route_config = view_config['route'] -%}
+    {%- if route_config.template -%}
+        {{- include(template_from_string(route_config.template, 'preview route template')) -}}
+    {%- else -%}
+        {{- preview_url ?? object.getRoute().uri ?: '' -}}
+    {%- endif -%}
+{% endset -%}
+
+{% block body %}
+    {% if not can_preview or not preview_url %}
+        {% set allowed = false %}
+    {% endif %}
+    {% set id = key %}
+    {% set blueprint = object.blueprint ?? directory.blueprint %}
+    {% set back_url = back_url ?? admin_route(back_route) %}
+
+    {{ parent() }}
+{% endblock body %}
+
+{% block content_wrapper %}
+{% if can_preview and allowed and preview_url %}
+    <div class="content-wrapper preview-wrapper">
+        <div class="content-padding" width="100%" height="100%">
+            <iframe width="100%" height="100%" frameborder="0" src="{{ preview_url }}"></iframe>
+        </div>
+    </div>
+{% else %}
+    {{ parent() }}
+{% endif %}
+{% endblock content_wrapper %}
+
+{% block content %}
+    {% do page.modifyHeader('http_response_code', 404) %}
+    <div class="error-block">
+        <h1>{{ 'PLUGIN_ADMIN.ERROR'|tu }} 404</h1>
+        <div class="padding">
+            <p>
+                {{ 'PLUGIN_FLEX_OBJECTS.ERROR.PAGE_NOT_EXIST'|tu }}
+            </p>
+        </div>
+    </div>
+{% endblock content %}
