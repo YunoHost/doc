@@ -2,10 +2,17 @@
 title: Communication
 template: docs
 taxonomy:
-    category: docs
+  category: docs
 routes:
-  default: '/communication'
+  default: '/press_kit'
+  aliases: 
+    - '/communication'
 ---
+
+! TODO: Add logo and kakemono file
+! TODO: Add kakemono photo https://matrix-client.matrix.org/_matrix/media/r0/download/pijean.ovh/TqtyOjqllOeSXYziawxeGzIP
+! TODO: Add "About YunoHost" section
+! TODO: Add email contact
 
 ## Talks / conf
 
