@@ -1,0 +1,3 @@
+[submodule "themes/learn4"]
+	path = themes/learn4
+	url = https://github.com/getgrav/grav-theme-learn4.git
