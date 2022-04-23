@@ -1,11 +1,11 @@
 ---
-title: Guided tour for the user
-menu: Guided tour for the user
+title: User guide
+menu: User guide
 template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/user_overview'
+  default: '/user_guide'
 ---
 
 !! This section is being worked on. 
