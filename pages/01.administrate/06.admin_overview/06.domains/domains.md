@@ -48,30 +48,3 @@ YunoHost can generate a recommended DNS configuration for each domain, including
 ## SSL/HTTPS certificates
 
 Another important aspect of domain configuration is the SSL/HTTPS certificate. YunoHost is integrated with Let's Encrypt, so once your server is correctly reachable from anybody on the internet through the domain name, the administrator can request a Let's Encrypt certificate. See the documentation about [certificates](/certificate) for more information.
-
-## Subpaths vs. individual domains per apps
-
-In the context of YunoHost, it is quite common to have a single (or a few) domains on which several apps are installed in "subpaths", so that you end up with something like this: 
-
-```bash
-yolo.com
-     ├── /blog  : Wordpress (a blog)
-     ├── /cloud : Nextcloud (a cloud service)
-     ├── /rss   : TinyTiny RSS (a RSS reader)
-     ├── /wiki  : DokuWiki (a wiki)
-```
-
-Alternatively, you may choose to install each (or some) apps on a dedicated domain. Beyond the aesthetic, using sub-domains instead of sub-paths allows the possibility to move a service to another server more easily. Also, some applications may need an entire domain dedicated to them, for technical reasons. The disadvantage is that you have to add a new domain each time, and therefore potentially configure additional DNS records, restart the diagnostics and install a new Let's Encrypt certificate.
-
-This might look prettier for end users, but is generally considered more complicated and less efficient in the context of YunoHost, since you need to add a new domain each time. Nevertheless, some apps might need an entire domain dedicated to them, for technical reasons.
-
-If all apps from the previous example were installed on a separate domain, this would give something like this:
-
-```bash
-blog.yolo.com  : Wordpress (a blog)
-cloud.yolo.com : Nextcloud (a cloud service)
-rss.yolo.com   : TinyTiny RSS (a RSS reader)
-wiki.yolo.com  : DokuWiki (a wiki)
-```
-
-!!! Many applications integrate a functionality that allows you to change the URL of your application. This choice between subpath and subdomain can be reversed in some cases via a simple manipulation in the administration interface.

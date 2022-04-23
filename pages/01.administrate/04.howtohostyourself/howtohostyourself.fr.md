@@ -1,5 +1,5 @@
 ---
-title: Choisir son mode d'autohébergement
+title: Choisir son mode et fournisseurs d'autohébergement
 template: docs
 taxonomy:
     category: docs
@@ -25,7 +25,7 @@ Un VPN est un tunnel chiffré entre deux machines. En pratique, cela permet de f
 
 ### Sur un serveur distant (VPS ou serveur dédié)
 
-Vous pouvez louer un serveur privé virtuel ou une machine dédiée à des hébergeurs [associatifs](https://db.ffdn.org/) ou commerciaux.
+Vous pouvez louer un serveur privé virtuel ou une machine dédiée à des hébergeurs [associatifs](https://db.ffdn.org/) ou [commerciaux](/providers/server).
 
 - **Avantages** : votre serveur sera rapide et la connectivité internet sera bonne ;
 - **Inconvénients** : il vous faudra payer des frais mensuels pour la machine, et vous n'aurez pas de contrôle physique dessus.

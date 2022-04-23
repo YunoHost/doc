@@ -1,5 +1,5 @@
 ---
-title: Scegliere il proprio self-hosting
+title: Scegliere il tuo metodo e provider de self-hosting
 template: docs
 taxonomy:
     category: docs
@@ -25,7 +25,7 @@ Una VPN è un tunnel criptato tra due macchine. In pratica permette di avere una
 
 ### Su un server distante (VPS o server dedicato)
 
-Puoi affittare un server virtuale privato o un macchina dedicata da fornitori "Cloud" come [associazioni](https://db.ffdn.org) o commerciali
+Puoi affittare un server virtuale privato o un macchina dedicata da fornitori "Cloud" come [associazioni](https://db.ffdn.org) o [commerciali](/providers/server)
 
 - **Pro**: il tuo server e la connessione saranno veloci;
 - **Contro**: dovrai pagare un canone mensile per la macchina e non avrai il controllo fisico del tuo server.

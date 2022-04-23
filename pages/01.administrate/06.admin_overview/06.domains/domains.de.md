@@ -33,6 +33,8 @@ Ein weiterer wichtiger Aspekt der Domain-Konfiguration ist das SSL/HTTPS-Zertifi
 
 ## Unterpfade vs. einzelne Domains pro Anwendungen
 
+!!!! Section to be moved to a translated /apps_overview page
+
 Im Zusammenhang mit YunoHost ist es durchaus üblich, eine einzige (oder einige wenige) Domains zu haben, auf denen mehrere Anwendungen in "Unterpfaden" installiert sind, so dass man am Ende etwas wie dieses erhält: 
 
 ```bash
