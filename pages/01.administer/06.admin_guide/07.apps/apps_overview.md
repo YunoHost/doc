@@ -32,19 +32,19 @@ For more information on these apps, and for more application use cases, have a l
 ! Be careful to stay reasonable on the number of installed applications. Each additional installation increases the attack surface and the risk of failure. Ideally, if you want to test, do it with another instance for example in [a virtual machine](/install/hardware:virtualbox).
 
 
-## Installing and configuring an app
+## Installing an app
 
 Let's say you want to install a *Custom Webapp*. Before actually running the installation steps, YunoHost will usually have you fill in a form to properly set it up for you.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the webadmin"]
 
-![Custom Webapp install form](image://app_install_form.png?resize=768&classes=caption "Pre-installation form of the Custom Webapp")
+![Custom Webapp install form](image://app_install_form.png?resize=512&classes=caption "Pre-installation form of the Custom Webapp")
 
 [/ui-tab]
 [ui-tab title="From the command line"]
 
-![Custom Webapp install form in CLI](image://app_install_form_cli.png?resize=768&classes=caption "Pre-installation form of the Custom Webapp in CLI")
+![Custom Webapp install form in CLI](image://app_install_form_cli.png?resize=512&classes=caption "Pre-installation form of the Custom Webapp in CLI")
 
 [/ui-tab]
 [/ui-tabs]
@@ -78,7 +78,7 @@ wiki.yolo.com  : DokuWiki (a wiki)
 
 !!! Many applications integrate a feature that allows you to change the URL of your application. This choice between subpath and subdomain can be reversed in some cases via a simple manipulation in the administration interface.
 
-### User access management
+### User access management and public apps
 
 The installation form usually asks whether or not the app should be publically accessible. If you choose to not make it public, only users logged in YunoHost will be able to reach it.
 
@@ -88,19 +88,82 @@ The installation form usually asks whether or not the app should be publically a
 
 Some applications need to give you instructions, URLs or credentials once they are installed. So remember to check the email of the first user account or the admin user selected before installation, if it was prompted.
 
+### Multi-instance applications
+
+Some applications support the ability to be installed several times (at different locations) ! To do so, just go another time in `Applications > [fa=plus /] Install`, and select again the application to install.
+
 ## LDAP / SSO integration
 
 Applications that allow users to register may support integration with the LDAP / Single Sign On of YunoHost, so that users who connect to the user portal can be automatically logged in all these apps.
 
 However, some applications do not support this as it can be either not implemented in the upstream, or the package does not work on this part yet. This information is usually available on the README of the application package.
 
-## Multi-instance applications
+## Application configuration
 
-Some applications support the ability to be installed several times (at different locations) ! To do so, just go another time in `Applications > [fa=plus /] Install`, and select again the application to install.
+After installation, some settings handled by YunoHost can be tweaked, such as user and group permissions, application's tile and label in the SSO page, or its access URL.
 
-## Tile management
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="From the webadmin"]
 
-Web applications can provide tiles available from the user portal, it is possible to choose whether or not to display them and redefine the text via the web administration interface `Applications > APP name > Operations > Manage labels and tiles` or via the command line: `yunohost app change-label <app> "New text"`.
+You can access the app's operations page by clicking its name in the applications list.
+
+![Application operations page](image://app_config_operations.png?resize=768&classes=caption "Application operations page in the webadmin")
+
+You can also delete the application from this page.
+
+[/ui-tab]
+[ui-tab title="From the command line"]
+
+From the command line, you can change:
+
+* the app's label in the SSO: `yunohost app change-label <app> <new_label>`
+* the app's url: `yunohost app change-url app [-d <DOMAIN>] [-p <PATH>]`
+
+You can also delete the app: `yunohost app remove <app>`
+
+`<app>` is to be replaced with the app's ID. If this is the first instance of the app, like Nextcloud, the ID is `nextcloud`. If this is the second, then it's `nextcloud__2` and so on. To list all your apps and check their ID, you can run `yunohost app info`.
+
+[/ui-tab]
+[/ui-tabs]
+
+### Configuration panels
+
+Some apps include a *configuration panel*, which features actions and settings specific for each app that they usually do not handle themselves. They can also spare you the need for altering configuration files by hand.
+
+!!!! Configuration panels are *not* meant to tweak every aspects of the apps. You will surely use their own administration panels more often than YunoHost's configuration panels.
+
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="From the webadmin"]
+
+The configuration panels are accessible in the webadmin in their operations page, trough the `[fa=cogs /] Config panel` button.
+
+![My Webapp configuration panel](image://app_config_panel.png?resize=768&classes=caption "Configuration panel for My Webapp")
+
+[/ui-tab]
+[ui-tab title="From the command line"]
+
+From the command line, you can list the configuration panel settings with the following command: `yunohost app config get <app>`
+
+```
+$ yunohost app config get my_webapp
+main.php_fpm_config.phpversion:
+  ask: PHP version
+  value: none
+main.sftp.password:
+  ask: Set a password for the SFTP access
+  value: **************
+main.sftp.with_sftp:
+  ask: Do you need a SFTP access?
+  value: yes
+```
+
+To change a setting, either use `yunohost app config set <app>` to get prompted about all the settings, or use `yunohost app config set <app> <key> -v <new_value>` to alter a specific one.
+
+The `<key>` is the setting name, for example `main.sftp.with_sftp` from above.
+
+[/ui-tab]
+[/ui-tabs]
+
 
 ## Applications packaging
 
