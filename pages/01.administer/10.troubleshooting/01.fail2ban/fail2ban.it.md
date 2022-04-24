@@ -1,5 +1,5 @@
 ---
-title: Fail2Ban
+title: Sbannare un indirizzo IP
 template: docs
 taxonomy:
     category: docs
