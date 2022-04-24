@@ -3,39 +3,55 @@ title: Applications
 template: docs
 taxonomy:
     category: docs
+page-toc:
+  active: true
 routes:
   default: '/apps_overview'
 ---
 
 One of the key feature of YunoHost is the ability to easily install applications which are then immediately usable. Example of applications include a blog system, a "cloud" (to host and sync files), a website, an RSS reader...
 
-Applications can be installed and managed through the webadmin interface in 'Applications' or through commands of the `yunohost app` category.
+Applications can be installed and managed through the webadmin interface in `[fa=cubes /] Applications` or through commands of the `yunohost app` category.
 
-The application catalog can be browsed in the webadmin (in Applications > Install) or [here](/apps).
+[center]
+![Apps list](image://apps_list.png?resize=512&classes=caption "Apps list in the webadmin, with its Install button.")
+[/center]
+
+The application catalog and its categories can be browsed directly from the webadmin by clicking on the `[fa=plus /] Install` button in the apps list, or from this documentation.
+
+<center><a href="/apps" style="background: orange; border-color: orange;" class="btn btn-lg btn-error"><i class="fa fa-cubes"></i> Applications catalog</a></center>
+
+### Useful applications
+
+If you already have a website ready to be deployed, consider using a **Custom Webapp**. It allows you to easily setup a directoty into which you can upload your HTML, PHP, CSS, JS files with SFTP, and a database if needed.
+
+If you want to use YunoHost as a reverse proxy, i.e. serve an app from another server or an internal web server (think NodeJS, ruby, Python, ...), you can use the **Redirect app**. The Redirect app can also simply create shortcuts for your users in their SSO page.
+
+For more information on these apps, and for more application use cases, have a look to the [Tutorials](/tutorials) section.
 
 ! Be careful to stay reasonable on the number of installed applications. Each additional installation increases the attack surface and the risk of failure. Ideally, if you want to test, do it with another instance for example in [a virtual machine](/install/hardware:virtualbox).
 
-Applications must be packaged manually by application packagers/maintainers. Apps can be integrated with YunoHost to support upgrades, backup/restore and LDAP/SSO integration among other things.
 
-## Instructions after installation
+## Installing an app
 
-Some applications need to give you instructions, URLs or credentials once they are installed. So remember to check the email of the first user account.
+Let's say you want to install a *Custom Webapp*. Before actually running the installation steps, YunoHost will usually have you fill in a form to properly set it up for you.
 
-## Integration and quality levels
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="From the webadmin"]
 
-Automated tests are being run regularly to test the integration and quality of all apps who were declared to be 'working' by packagers. The result is a level between 0 and 8, whose meaning is detailed on [this page](/packaging_apps_levels). Some tests results may also be available [on this dashboard](https://dash.yunohost.org/appci/branch/stable).
+![Custom Webapp install form](image://app_install_form.png?resize=512&classes=caption "Pre-installation form of the Custom Webapp")
 
-By default, only applications of sufficient quality are offered. When the quality of an application drops, updates are put on hold and installation is no longer possible, until the problem is resolved.
+[/ui-tab]
+[ui-tab title="From the command line"]
 
-## LDAP / SSO integration
+![Custom Webapp install form in CLI](image://app_install_form_cli.png?resize=512&classes=caption "Pre-installation form of the Custom Webapp in CLI")
 
-Applications may support integration with the LDAP / Single Sign On system, such that users who connects to the user portal can be automatically logged in all those apps. Some applications however do not support this as it can be either not implemented in the upstream, or the package didn't work on this part yet. This information is usually available on the README of the application package.
+[/ui-tab]
+[/ui-tabs]
 
-## Multi-instance applications
+### Subpaths vs. individual domains per apps
 
-Some applications support the ability to be installed several times (at different locations) ! To do so, just go another time in Applications > Install, and select again the application to install.
-
-## Subpaths vs. individual domains per apps
+Among specific questions, forms usually ask you to choose a domain and a path onto which the app will be accessible.
 
 In the context of YunoHost, it is quite common to have a single (or a few) domains on which several apps are installed in "subpaths", so that you end up with something like this: 
 
@@ -60,17 +76,104 @@ rss.yolo.com   : TinyTiny RSS (a RSS reader)
 wiki.yolo.com  : DokuWiki (a wiki)
 ```
 
-!!! Many applications integrate a functionality that allows you to change the URL of your application. This choice between subpath and subdomain can be reversed in some cases via a simple manipulation in the administration interface.
+!!! Many applications integrate a feature that allows you to change the URL of your application. This choice between subpath and subdomain can be reversed in some cases via a simple manipulation in the administration interface.
 
-## Tile management
+### User access management and public apps
 
-Web applications can provide tiles available from the user portal, it is possible to choose whether or not to display them and redefine the text via the web administration interface `Applications > APP name > Operations > Manage labels and tiles` or via the command line: `yunohost app change-label <app> "New text"`.
+The installation form usually asks whether or not the app should be publically accessible. If you choose to not make it public, only users logged in YunoHost will be able to reach it.
 
-## User access management
+!!!! After installation, this can be configured via the webadmin in the [Groups and permissions panel](/groups_and_permissions), or similarly via the command-line subcategory `yunohost user permission`.
 
-Access to apps can be restricted to some users only. This can be configured via the webadmin in the [Groups and permissions panel](/groups_and_permissions), or similarly via the command-line subcategory `yunohost user permission`.
+### Instructions after installation
 
-## Applications packaging 
+Some applications need to give you instructions, URLs or credentials once they are installed. So remember to check the email of the first user account or the admin user selected before installation, if it was prompted.
+
+### Multi-instance applications
+
+Some applications support the ability to be installed several times (at different locations) ! To do so, just go another time in `Applications > [fa=plus /] Install`, and select again the application to install.
+
+## LDAP / SSO integration
+
+Applications that allow users to register may support integration with the LDAP / Single Sign On of YunoHost, so that users who connect to the user portal can be automatically logged in all these apps.
+
+However, some applications do not support this as it can be either not implemented in the upstream, or the package does not work on this part yet. This information is usually available on the README of the application package.
+
+## Application configuration
+
+After installation, some settings handled by YunoHost can be tweaked, such as user and group permissions, application's tile and label in the SSO page, or its access URL.
+
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="From the webadmin"]
+
+You can access the app's operations page by clicking its name in the applications list.
+
+![Application operations page](image://app_config_operations.png?resize=768&classes=caption "Application operations page in the webadmin")
+
+You can also delete the application from this page.
+
+[/ui-tab]
+[ui-tab title="From the command line"]
+
+From the command line, you can change:
+
+* the app's label in the SSO: `yunohost app change-label <app> <new_label>`
+* the app's url: `yunohost app change-url app [-d <DOMAIN>] [-p <PATH>]`
+
+You can also delete the app: `yunohost app remove <app>`
+
+`<app>` is to be replaced with the app's ID. If this is the first instance of the app, like Nextcloud, the ID is `nextcloud`. If this is the second, then it's `nextcloud__2` and so on. To list all your apps and check their ID, you can run `yunohost app info`.
+
+[/ui-tab]
+[/ui-tabs]
+
+### Configuration panels
+
+Some apps include a *configuration panel*, which features actions and settings specific for each app that they usually do not handle themselves. They can also spare you the need for altering configuration files by hand.
+
+!!!! Configuration panels are *not* meant to tweak every aspects of the apps. You will surely use their own administration panels more often than YunoHost's configuration panels.
+
+[ui-tabs position="top-left" active="0" theme="lite"]
+[ui-tab title="From the webadmin"]
+
+The configuration panels are accessible in the webadmin in their operations page, trough the `[fa=cogs /] Config panel` button.
+
+![My Webapp configuration panel](image://app_config_panel.png?resize=768&classes=caption "Configuration panel for My Webapp")
+
+[/ui-tab]
+[ui-tab title="From the command line"]
+
+From the command line, you can list the configuration panel settings with the following command: `yunohost app config get <app>`
+
+```
+$ yunohost app config get my_webapp
+main.php_fpm_config.phpversion:
+  ask: PHP version
+  value: none
+main.sftp.password:
+  ask: Set a password for the SFTP access
+  value: **************
+main.sftp.with_sftp:
+  ask: Do you need a SFTP access?
+  value: yes
+```
+
+To change a setting, either use `yunohost app config set <app>` to get prompted about all the settings, or use `yunohost app config set <app> <key> -v <new_value>` to alter a specific one.
+
+The `<key>` is the setting name, for example `main.sftp.with_sftp` from above.
+
+[/ui-tab]
+[/ui-tabs]
+
+
+## Applications packaging
+
+Applications must be packaged manually by application packagers/maintainers. Apps can be integrated with YunoHost to support upgrades, backup/restore and LDAP/SSO integration among other things.
 
 If you want to learn or contribute to app packaging, please check the [contributor documentation](/contributordoc). 
+
+### Integration and quality levels
+
+Automated tests are being run regularly to test the integration and quality of all apps who were declared to be `working` by packagers. The result is a level between 0 and 8, whose meaning is detailed on [this page](/packaging_apps_levels). Some tests results may also be available [on this dashboard](https://dash.yunohost.org/appci/branch/stable).
+
+By default, only applications of sufficient quality are offered. When the quality of an application drops and until the problem is reolved, the app is hidden from the catalog to prevent its installation and its upgrades are put on hold.
 
