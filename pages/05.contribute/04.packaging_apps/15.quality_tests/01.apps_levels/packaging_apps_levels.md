@@ -7,7 +7,7 @@ routes:
   default: '/packaging_apps_levels'
 ---
 
-In order to facilitate the packaging of applications by providing successive steps to achieve, each package is assigned a quality level, from 0 to 10.  
+In order to facilitate the packaging of applications by providing successive steps to achieve, each package is assigned a quality level, from 0 to 9.  
 A package must meet a number of criteria to reach each level. In addition, to reach a level, the package must have previously reached the previous level.
 
 This classification of applications by levels has 3 advantages:
@@ -74,6 +74,4 @@ The application is long-term good quality, meaning it's been at least level 5 in
 
 The application is considered ["high-quality"](https://github.com/YunoHost/apps/blob/master/hq_validation_template.md): it is well-integrated with YunoHost (in particular SSO/LDAP) and follows the recommended development workflow.
 
-#### Level 10
-
-(No definition yet)
+! Using level 9 is being deprecated.

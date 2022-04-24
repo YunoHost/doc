@@ -3,9 +3,6 @@ title: Users and the SSO
 template: docs
 taxonomy:
     category: docs
-process:
-    markdown: true
-    twig: true
 page-toc:
   active: true
 routes:
