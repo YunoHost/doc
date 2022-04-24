@@ -21,15 +21,8 @@ The application catalog and its categories can be browsed directly from the weba
 
 <center><a href="/apps" style="background: orange; border-color: orange;" class="btn btn-lg btn-error"><i class="fa fa-cubes"></i> Applications catalog</a></center>
 
-### Useful applications
 
-If you already have a website ready to be deployed, consider using a **Custom Webapp**. It allows you to easily setup a directoty into which you can upload your HTML, PHP, CSS, JS files with SFTP, and a database if needed.
-
-If you want to use YunoHost as a reverse proxy, i.e. serve an app from another server or an internal web server (think NodeJS, ruby, Python, ...), you can use the **Redirect app**. The Redirect app can also simply create shortcuts for your users in their SSO page.
-
-For more information on these apps, and for more application use cases, have a look to the [Tutorials](/tutorials) section.
-
-! Be careful to stay reasonable on the number of installed applications. Each additional installation increases the attack surface and the risk of failure. Ideally, if you want to test, do it with another instance for example in [a virtual machine](/install/hardware:virtualbox).
+! Be careful and stay reasonable on the number of installed applications. Each additional installation increases the attack surface and the risk of failure. Ideally, if you want to test, do it with another instance for example in [a virtual machine](/install/hardware:virtualbox).
 
 
 ## Installing an app
