@@ -155,6 +155,7 @@ yunohost tools diagnosis | yunopaste
 ```
 
 ### The `ynh-vpnclient-loadcubefile.sh` command
+
 This command is only available if you have the `VPN Client` application installed. You can use it to load a new .cube in case you can't get to the VPN Client interface to do so. 
 
 ```bash

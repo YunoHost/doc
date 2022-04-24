@@ -149,14 +149,6 @@ Exemple :
 ```bash
 yunohost tools diagnosis | yunopaste
 ```
-
-### La commande `ynh-vpnclient-loadcubefile.sh`
-Cette commande n'est disponible que si vous avez l'application `VPN Client` installée. Vous pouvez vous en servir pour charger un nouveau .cube dans le cas où vous ne parvenez pas à aller sur l'interface de `VPN Client` pour le faire.
-
-```bash
-ynh-vpnclient-loadcubefile.sh -u <username> -p <password> -c <path>.cube
-```
-
 ### Quelques commandes utiles
 
 Si votre interface web d'administration indique que l'API est injoignable, essayez de démarrer `yunohost-api` :
