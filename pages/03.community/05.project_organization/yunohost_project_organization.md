@@ -9,7 +9,6 @@ routes:
     - '/project_organization'
 ---
 
-! This page is outdated and should be reworked
 
 # Goal of this document
 
