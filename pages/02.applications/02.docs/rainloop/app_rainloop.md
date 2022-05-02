@@ -7,7 +7,7 @@ routes:
   default: '/app_rainloop'
 ---
 
-![Rainloop's logo](image://freshrss_logo.png?height=100)
+![Rainloop's logo](image://ranloop_logo.png?height=100)
 
 [![Install Rainloop with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=rainloop) [![Integration level](https://dash.yunohost.org/integration/rainloop.svg)](https://dash.yunohost.org/appci/app/rainloop)
 
