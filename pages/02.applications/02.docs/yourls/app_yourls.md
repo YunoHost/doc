@@ -33,8 +33,8 @@ Running your own URL shortener is fun, geeky and useful: you own your data and d
 
 ## Useful links
 
-* Official app website: https://yourls.org/
-* Official admin documentation: https://docs.yourls.org/
-* Upstream app code repository: https://github.com/YOURLS/YOURLS
-* YunoHost documentation for this app: https://yunohost.org/app_yourls
-* Report a bug: https://github.com/YunoHost-Apps/yourls_ynh/issues
+* Official app website: [https://yourls.org/](https://yourls.org/)
+* Official admin documentation: [https://docs.yourls.org/](https://docs.yourls.org/)
+* Upstream app code repository: [https://github.com/YOURLS/YOURLS](https://github.com/YOURLS/YOURLS)
+* YunoHost documentation for this app: [https://yunohost.org/app_yourls](https://yunohost.org/app_yourls)
+* Report a bug: [https://github.com/YunoHost-Apps/yourls_ynh/issues](https://github.com/YunoHost-Apps/yourls_ynh/issues)
