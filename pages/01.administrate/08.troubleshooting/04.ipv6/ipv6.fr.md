@@ -27,9 +27,12 @@ Sur le panneau de gestion d'OVH, vous aller récupérer 3 informations :
 
 Sur votre VPS, vous aller créer une sauvegarde de votre fichier de configuration des interfaces réseau dans votre répertoire home avec la commande : `cp /etc/network/interfaces ~/interfaces`.
 
-Ensuite, vous pouvez modifier le fichier de configuration `/etc/network/interfaces`.
+2 possibilités pour inscrire vos données ipv6 :
+1/ vous pouvez modifier le fichier de configuration `/etc/network/interfaces` 
+2/ vous pouvez créer un autre fichier "à part" par la commande 'sudo nano /etc/network/interfaces.d/ovh-ipv6.cfg ( ce dernier fichier est pris en compte car appartenant au dossier )
 
-! Dans cet exemple, nous considérons que votre interface réseau est `eth0`. Si elle est différente (vérifiez avec `ip a`) vous devez adapter l'exemple pour correspondre à votre situation.
+! Découvrir et vérifier avec la commande `ip a` l'interface utilisée sur votre VPS ( généralement du type ENS3 chez OVH) 
+! Dans cet exemple, nous considérons que votre interface réseau est `eth0`. Vous devez adapter l'exemple pour correspondre à votre situation.
 
 ```plaintext
 iface eth0 inet6 static
