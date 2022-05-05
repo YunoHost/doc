@@ -42,7 +42,7 @@ routes:
 - Follow instructions in setup script. It will add database tables and set up your μlogger user
 - **Remember to remove or disable `scripts/setup.php` script**
 - Log in with your new user on your host,
-- You may also want to set your new user as an admin in config file `$admin_user = "";
+- You may also want to set your new user as an admin in config file `$admin_user = "";`
 
 ## Useful links
 
