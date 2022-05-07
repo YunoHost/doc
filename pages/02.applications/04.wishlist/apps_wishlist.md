@@ -116,7 +116,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Hashbase](https://github.com/beakerbrowser/hashbase/tree/master/docs) | A public peer service for Dat archives, provides a HTTP-accessible interface for creating an account and uploading Dats. | [Upstream](https://github.com/beakerbrowser/hashbase) |  |
 | Helpy |  | [Upstream](https://github.com/helpyio/helpy) |  |
 | [Hexo](https://hexo.io/) |  | [Upstream](https://github.com/hexojs/hexo) |  |
-| Hometown |  | [Upstream](https://github.com/hometown-fork/hometown) |  |
+| Hometown | A Mastodon fork with local-only posting, support for more content types, and other features and tweaks. | [Upstream](https://github.com/hometown-fork/hometown) |  |
 | [htpc-manager](https://htpc.io) | Manage your HTPC from anywhere |  | [Package Draft](https://github.com/scith/htpc-manager_ynh) |
 | [Icecast 2](https://www.icecast.org) |  | [Upstream](https://gitlab.xiph.org/xiph/icecast-server/) |  |
 | [ikiwiki](https://ikiwiki.info) |  |  |  |
