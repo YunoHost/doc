@@ -152,9 +152,10 @@ Pour une liste plus complète et précise, référez-vous à la très bonne docu
 
 | Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
 | --- | --- | --- | --- | --- | --- | --- |
-| DIGI Távközlési és Szolgáltató Kft. | Yes | No | No. Business only. | No | No | No. Business only |
+| DIGI Távközlési és Szolgáltató Kft. | Yes | Yes | No. Business only. | No | No. Business only | No. Business only |
+| Telekom Magyarország | Yes | Yes | No | No | No | No |
 
-
+**Notice** : DIGI allows non-business users to subscribe to their business plan, for roughly the same price as the regular plan. Fix IP is an additional subscription for business plan users.
 
 {% elseif country == 'irl' %}
 
