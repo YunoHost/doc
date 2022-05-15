@@ -99,7 +99,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | gateone | HTML5-powered terminal emulator and SSH client |  | [Package Draft](https://github.com/Kloadut/gateone_ynh) |
 | [Gatsby](https://www.gatsbyjs.com/) | Build blazing fast, modern apps and websites with React | [Upstream](https://github.com/gatsbyjs/gatsby) |  |
 | [Geneweb](https://geneweb.tuxfamily.org) |  | [Upstream](https://github.com/geneweb/geneweb) |  |
-| GetSimple CMS |  | [Upstream](https://github.com/GetSimpleCMS/GetSimpleCMS) |  |
 | gitolite | Git server |  | [Package Draft](https://github.com/matlink/gitolite_ynh) |
 | gitrepositories |  |  | [Package Draft](https://github.com/YunoHost-Apps/gitrepositories_ynh) |
 | gitweb | Git forge (c.f. Gitolite) |  | [Package Draft](https://github.com/matlink/gitweb_ynh) |
