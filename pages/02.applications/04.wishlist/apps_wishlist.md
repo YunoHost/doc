@@ -75,6 +75,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [FEX](https://fex.rus.uni-stuttgart.de/) |  |  |  |
 | [Filestash](https://www.filestash.app/) |  | [Upstream](https://github.com/mickael-kerjean/filestash) |  |
 | [fishnet](https://lichess.org/get-fishnet) | Distributed Stockfish analysis for lichess.org | [Upstream](https://github.com/niklasf/fishnet) |  |
+| [Fipamo](https://fipamo.blog/) | A simple no database blogging platform | [Upstream](https://code.playvicio.us/Are0h/Fipamo) |  |
 | FitTrackee |  | [Upstream](https://github.com/SamR1/FitTrackee) |  |
 | Flask | Skeleton for flask apps |  | [Package Draft](https://github.com/YunoHost-Apps/flask_ynh) |
 | [foodsoft](https://foodcoops.github.io/foodsoft-hosting/) | Manage a non-profit food cooperative |  | [Package Draft](https://github.com/YunoHost-Apps/foodsoft_ynh) |
@@ -233,6 +234,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Request Tracker](https://bestpractical.com) |  | [Upstream](https://github.com/bestpractical/rt) |  |
 | [Restya](https://restya.com) |  | [Upstream](https://github.com/RestyaPlatform/board/) |  |
 | [Retroshare](https://retroshare.cc/) |  | [Upstream](https://github.com/RetroShare/RetroShare) |  |
+| [Revolt](https://revolt.chat/) | A privacy-focused Discord-like chat | [Upstream](https://github.com/revoltchat) |  |
 | [roadiz](https://www.roadiz.io) | Create a modern website |  | [Package Draft](https://github.com/YunoHost-Apps/roadiz_ynh) |
 | [rocketchat](https://rocket.chat) | A chat platform |  | [Package Draft](https://github.com/YunoHost-Apps/rocketchat_ynh) |
 | rs-short | An URL shortener | [Upstream](https://git.42l.fr/42l/rs-short) |  |
