@@ -1,0 +1,29 @@
+{#
+DO NOT MODIFY!
+
+Default layout can be found in form plugin or your theme:
+
+templates/forms/layouts/form/default-form.html.twig
+templates/forms/layouts/field/default-field.html.twig
+templates/forms/layouts/button/default-button.html.twig
+
+If you want to use multiple different layouts in your site, you can do:
+
+```
+form:
+  name: my-form
+  layout: tailwind
+```
+
+and copy the above files to:
+
+templates/forms/layouts/form/tailwind-form.html.twig
+templates/forms/layouts/field/tailwind-field.html.twig
+templates/forms/layouts/button/tailwind-button.html.twig
+
+You can also override individual fields by copying (using text field as an example):
+
+templates/forms/fields/text/text.html.twig -> templates/forms/fields/text/tailwind-text.html.twig
+
+#}
+{% extends "forms/default/form.html.twig" %}

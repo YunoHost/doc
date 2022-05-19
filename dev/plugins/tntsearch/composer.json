@@ -1,0 +1,34 @@
+{
+  "name": "trilbymedia/grav-plugin-tntsearch",
+  "type": "grav-plugin",
+  "description": "TNTSearch plugin for Grav CMS",
+  "keywords": ["tntsearch","search"],
+  "homepage": "https://github.com/trilbymedia/grav-plugin-tntsearch",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Team Grav",
+      "email": "devs@getgrav.org",
+      "homepage": "http://getgrav.org",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3",
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "teamtnt/tntsearch": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\TNTSearch\\": "classes/",
+      "Grav\\Plugin\\Console\\": "cli/"
+    },
+    "classmap":  ["tntsearch.php"]
+  },
+  "config": {
+    "platform": {
+      "php": "7.1.3"
+    }
+  }
+}

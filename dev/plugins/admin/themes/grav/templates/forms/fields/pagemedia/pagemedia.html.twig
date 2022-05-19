@@ -1,0 +1,65 @@
+{% extends "forms/field.html.twig" %}
+
+{% set value = (value is null ? field.default : value) %}
+
+{% block field %}
+{% if context.folderExists %}
+    {% set pagemedia = config.get('plugins.admin.pagemedia') %}
+    {% set pagemedia_settings = {
+        resolution: {
+            min: {
+                width: pagemedia.res_min_width ?: null,
+                height: pagemedia.res_min_height ?: null
+            },
+            max: {
+                width: pagemedia.res_max_width ?: null,
+                height: pagemedia.res_max_height ?: null
+            }
+        },
+        resizeWidth: pagemedia.resize_width ?: null,
+        resizeHeight: pagemedia.resize_height ?: null,
+        resizeQuality: pagemedia.resize_quality ?: 0.8
+    } %}
+
+    {% set media_url = form.getMediaTaskRoute() ?: '/media/' ~ admin.route|trim('/') ~ '.json' %}
+    {% set media_local = form.getMediaRoute() ?: base_url_relative_frontend|rtrim('/') ~ '/' ~ admin.route|trim('/') %}
+    {% set media_path = url(context.relativePagePath) %}
+    {% set media_uri = context.mediaUri() %}
+    {% set dropzone_settings = { maxFilesize: form_max_filesize }|merge(pagemedia_settings) %}
+    {% set pageMediaStore = get_cookie('grav-admin-pagemedia')|default('{"width":200,"collapsed":false}')|json_decode %}
+
+    <div class="pagemedia-field form-field grid vertical {% if field.classes is defined %}{{ field.classes }}{% endif %}">
+    <div class="form-label">
+        <label class="media-collapser">
+          <i class="fa fa-fw small fa-chevron-{{ pageMediaStore.collapsed ? 'right' : 'down' }}"></i>
+          {{ field.label|t }} <span data-pagemedia-count>({{ admin.page.media|length }})</span>
+        </label>
+        <div class="{{ pageMediaStore.collapsed ? 'hidden' : '' }}">
+          <input type="range" min="70" step="10" max="200" value="{{ pageMediaStore.width }}" class="media-resizer">
+        </div>
+    </div>
+    <div class="form-data form-uploads-wrapper" style="{{ pageMediaStore.collapsed ? 'display: none;' : '' }}">
+        <div id="grav-dropzone"
+             class="dropzone"
+             data-media-url="{{ (base_url ~ media_url)|e('html_attr') }}"
+             data-media-local="{{ media_local|e('html_attr') }}"
+             data-media-path="{{ media_path|e('html_attr') }}"
+             data-media-uri="{{ media_uri|e('html_attr') }}"
+             data-dropzone-options="{{ dropzone_settings|json_encode|e('html_attr') }}"
+             data-dropzone-field="{{ (scope ~ field.name)|fieldName }}"></div>
+
+        {% if admin.session.expert == '0' or not user.authorize('admin.super') %}
+        <input type="hidden" name="{{ (scope ~ field.name)|fieldName }}" value="{{ value }}" />
+        {% endif %}
+    </div>
+</div>
+{% else %}
+<div class="form-tab">
+    <div class="form-field">
+        <div class="form-label">
+            {{ "PLUGIN_ADMIN.CANNOT_ADD_MEDIA_FILES_PAGE_NOT_SAVED"|t }}
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}

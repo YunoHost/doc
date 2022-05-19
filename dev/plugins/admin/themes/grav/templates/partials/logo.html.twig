@@ -1,0 +1,20 @@
+{% if config.plugins.admin.logo_text %}
+    <h3>
+        <a href="{{ admin_route('/') }}">
+            {{ config.plugins.admin.logo_text }}
+        </a>
+        <a class="front-end hint--left" data-hint="{{ "PLUGIN_ADMIN.VIEW_SITE_TIP"|t }}" target="_blank" href="{{ base_url_relative_frontend }}"> <i class="fa fa-external-link"></i></a>
+    </h3>
+{% else %}
+    <div class="admin-logo {{ custom_admin_logo ? 'custom-logo' : 'default-logo' }}">
+        <a href="{{ admin_route('/') }}">
+            {% if custom_admin_logo %}
+                <img src="{{ url(custom_admin_logo) }}" title="{{ site.title }}" />
+            {% else %}
+                {% include('@admin-images/grav-small.svg') %}
+                {% include('@admin-images/grav-regular.svg') %}
+            {% endif %}
+        </a>
+        <a class="front-end hint--left" data-hint="{{ "PLUGIN_ADMIN.VIEW_SITE_TIP"|t }}" target="_blank" href="{{ base_url_relative_frontend }}"> <i class="fa fa-external-link"></i></a>
+    </div>
+{% endif %}

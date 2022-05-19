@@ -18,7 +18,10 @@ Cette page va vous aider à diagnostiquer, obtenir un accès et si besoin répar
 
 Vérifier que vous arrivez à accéder au serveur en utilisant son IP globale (que vous pouvez trouver sur https://ip.yunohost.org). Si cela ne fonctionne pas:
    - Assurez-vous d'avoir [configuré les redirections de ports](/isp_box_config)
-   - Certaines box de FAI ne supportent pas le hairpinning et vous ne pouvez pas accéder à votre serveur depuis l'intérieur du réseau local (sauf à passer par l'IP locale). Pour contourner le problème, vous pouvez tester d'accéder à votre serveur en passant par un proxy comme proxfree.com
+   - Certaines box de FAI ne supportent pas le hairpinning et vous ne pouvez pas accéder à votre serveur depuis l'intérieur du réseau local (sauf à passer par l'IP locale). Pour contourner le problème, vous pouvez utiliser un des moyens suivants:
+       -  utiliser une connexion cellulaire (4/5G)
+       -  modifier le fichier /etc/hosts sur vos équipements
+       -  déclarer l'ip locale de yunohost comme resolveur DNS dans votre routeur (partie DHCP) et ouvrir le port 53 UDP sur votre yunohost en faisant attention de ne pas activer l'upnp sur le port 53. Surtout, n'ouvrez pas le port 53 de votre routeur.
 
 #### Il faut configurer vos enregistrement DNS
 
@@ -114,7 +117,7 @@ Pour connaître votre IP locale, certaines BOX proposent une cartographie du ré
 sudo arp-scan --local
 ```
 
-Vous pouvez aussi essayer avec le domaine `yunohost.local` s'il n'y a qu'un seul YunoHost sur votre réseau.
+Vous pouvez aussi essayer avec le domaine `yunohost.local`, `yunohost-2.local`, etc. selon le nombre de serveurs YunoHost sur votre réseau.
 
 Il faut voir avec votre fournisseur de VPN pour renouveler le VPN et mettre à jour les paramètre de l'app VPN Client.
 

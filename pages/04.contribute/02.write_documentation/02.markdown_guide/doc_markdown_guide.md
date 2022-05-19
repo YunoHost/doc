@@ -258,4 +258,4 @@ At least three low pitched accents at the opening and closing of the block and t
 
 ## Going further
 
-In a more general way, to understand how a text is formatted just inspect the source document with a note application. This does not mean that the YunoHost wiki will be able to exploit it. There are many other possibilities to use markdown syntax, feel free to add missing features. If you've noticed some missing features and/or have questions, please contact us on [the forum](https://forum.yunohost.org) or by direct message on the IRC room: **#yunohost** on [irc.freenode.net](https://irc.freenode.net).
+In a more general way, to understand how a text is formatted just inspect the source document with a note application. This does not mean that the YunoHost wiki will be able to exploit it. There are many other possibilities to use markdown syntax, feel free to add missing features. If you've noticed some missing features and/or have questions, please contact us on [the forum](https://forum.yunohost.org) or by direct message on the IRC room: **#yunohost** on [libera.chat](https://libera.chat).

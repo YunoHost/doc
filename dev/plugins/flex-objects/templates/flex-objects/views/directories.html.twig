@@ -1,0 +1,12 @@
+{# flex-objects/views/directories.html.twig #}
+
+{% set flex = grav.get('flex_objects') %}
+{% set directory_url = page.route() %}
+{% set list = list ?? options.list %}
+{% set directories = list ? flex.directories(list|array) : flex.defaultDirectories() %}
+{% set layout = options.layout ?: 'default' %}
+
+{% include [
+    'flex-objects/directories/' ~ layout ~ '.html.twig',
+    'flex-objects/directories/default.html.twig'
+] %}

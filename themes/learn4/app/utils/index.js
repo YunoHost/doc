@@ -1,2 +1,0 @@
-import './highlight';
-import './progress';

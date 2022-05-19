@@ -1,0 +1,29 @@
+{% extends 'flex-objects/types/default/list.html.twig' %}
+
+{% set can_create = true %}
+
+{% block back_button %}
+    {% include ['flex-objects/types/' ~ target ~ '/buttons/back.html.twig', 'flex-objects/types/pages/buttons/back.html.twig'] %}
+{% endblock back_button %}
+
+{% block create_button %}
+    {% for key, add_modal in config.plugins.admin.add_modals %}
+        {% if add_modal.show_in|default('bar') == 'bar' %}
+            <a class="button {{ add_modal.link_classes }}" href="#modal-add_modal-{{ key }}" data-remodal-target="modal-add_modal-{{ key }}"><i class="fa fa-plus"></i> {{ add_modal.label|tu }}</a>
+        {% endif %}
+    {% endfor %}
+
+    {% include ['flex-objects/types/' ~ target ~ '/buttons/add.html.twig', 'flex-objects/types/pages/buttons/add.html.twig'] %}
+{% endblock %}
+
+{% block content_top %}{% endblock %}
+
+{% block content_list %}
+    {% set list_layout = grav.uri.param('layout', 'columns') %}
+    {% include [
+        'flex-objects/types/' ~ target ~ '/list/' ~ list_layout ~ '.html.twig',
+        'flex-objects/types/pages/list/' ~ list_layout ~ '.html.twig',
+        'flex-objects/types/' ~ target ~ '/list/list.html.twig',
+        'flex-objects/types/pages/list/list.html.twig'
+        ] %}
+{% endblock %}

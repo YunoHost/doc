@@ -1,0 +1,39 @@
+a.external-link.icon, a.external-link.no-image, a.external, a.external {
+  background: url(../images/link.png) right center no-repeat;
+  padding-right: 12px;
+  position: relative;
+}
+a.mailto {
+  background: url(../images/mail.png) right center no-repeat;
+  padding-right: 12px;
+}
+
+.external-link[data-title]:after {
+  background-color: #444;
+  color: #fff;
+  content: attr(data-title);
+  display: inline;
+  font-size: xx-small;
+  font-weight: bold;
+  margin: -1em 0 0 16px;
+  min-width: 45em;
+  opacity: 0;
+  padding: .25em .5em;
+  position: absolute;
+  top: 50%;
+  transition: all 1s ease-in-out 1s;
+  visibility: hidden;
+}
+
+.external-link[data-title]:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hide link or mailto icons when printing. */
+@media print {
+  a.external, a.external-link, a.mailto {
+    background-image: none;
+    padding: 0;
+  }
+}

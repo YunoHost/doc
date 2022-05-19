@@ -1,0 +1,411 @@
+/**
+ * Presentation Plugin additions to Reveal.js
+ */
+
+/* Includes */
+@import "../node_modules/reveal.js/css/theme/template/mixins";
+@import "../node_modules/reveal.js/css/theme/template/settings";
+@import "../node_modules/include-media/dist/include-media";
+@import "./normalize";
+
+/* Responsive breakpoints */
+$breakpoints: (
+  extrasmall: 320px,
+  small: 576px,
+  medium: 768px,
+  large: 992px,
+  extralarge: 1200px,
+  massive: 1600px
+);
+
+@mixin maximizeSize(
+  $width: true,
+  $height: true,
+  $widthModifier: "0px",
+  $heightModifier: "0px",
+  $viewportWidth: false,
+  $viewportHeight: false
+) {
+  @if ($width) {
+    width: calc(100% - #{$widthModifier}) !important;
+    min-width: calc(100% - #{$widthModifier}) !important;
+    max-width: calc(100% - #{$widthModifier}) !important;
+
+    @if ($viewportWidth== "true") {
+      width: calc(100vw - #{$widthModifier}) !important;
+      min-width: calc(100vw - #{$widthModifier}) !important;
+      max-width: calc(100vw - #{$widthModifier}) !important;
+    }
+  }
+
+  @if ($height) {
+    height: calc(100% - #{$heightModifier}) !important;
+    min-height: calc(100% - #{$heightModifier}) !important;
+    max-height: calc(100% - #{$heightModifier}) !important;
+
+    @if ($viewportHeight== "true") {
+      width: calc(100vh - #{$heightModifier}) !important;
+      min-width: calc(100vh - #{$heightModifier}) !important;
+      max-width: calc(100vh - #{$heightModifier}) !important;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Structure */
+.reveal.overview {
+  .slides {
+    section {
+      @include maximizeSize(true, true);
+
+      section {
+        padding-top: 9rem !important;
+      }
+    }
+  }
+}
+
+.reveal:not(.overview) {
+  @include media("<extrasmall") {
+    font-size: 16px;
+  }
+
+  @include media(">=extrasmall") {
+    font-size: 18px;
+  }
+
+  @include media(">=small") {
+    font-size: 20px;
+  }
+
+  @include media(">=medium") {
+    font-size: 22px;
+  }
+
+  @include media(">=large") {
+    font-size: 24px;
+  }
+
+  @include media(">=extralarge") {
+    font-size: 26px;
+  }
+
+  @include media(">=massive") {
+    font-size: 28px;
+  }
+
+  .slides {
+    section {
+      @include maximizeSize(true, true, "0px", "0px", true, true);
+
+      section {
+        $base: 1.75;
+        @include maximizeSize(true, true);
+        padding: #{$base * 4}rem #{$base}rem #{$base * 2}rem #{$base}rem !important;
+
+        @include media("<extrasmall") {
+          $base: 0.5;
+          padding: #{$base * 2}rem #{$base}rem #{$base}rem #{$base}rem !important;
+        }
+
+        @include media(">=extrasmall") {
+          $base: 1;
+          padding: #{$base * 2}rem #{$base}rem #{$base}rem #{$base}rem !important;
+        }
+
+        @include media(">=small") {
+          $base: 1.5;
+          padding: #{$base * 3}rem #{$base}rem #{$base * 2}rem #{$base}rem !important;
+        }
+
+        @include media(">=medium") {
+          $base: 1.75;
+          padding: #{$base * 4}rem #{$base}rem #{$base * 2}rem #{$base}rem !important;
+        }
+
+        @include media(">=large") {
+          $base: 2;
+          padding: #{$base * 4}rem #{$base}rem #{$base * 2}rem #{$base}rem !important;
+        }
+
+        @include media(">=extralarge") {
+          $base: 2.25;
+          padding: #{$base * 4}rem #{$base}rem #{$base * 2}rem #{$base}rem !important;
+        }
+
+        @include media(">=massive") {
+          $base: 2.5;
+          padding: #{$base * 4}rem #{$base}rem #{$base * 2}rem #{$base}rem !important;
+        }
+
+        &.start {
+          @include maximizeSize(true, true);
+          padding: 0 !important;
+        }
+
+        &.skinny {
+          @include maximizeSize(true, true, "0px", "0px", true, true);
+          padding: 1rem !important;
+        }
+
+        &.end {
+          @include maximizeSize(true, true, "0px", "0px", true, true);
+          padding: 2rem 2rem !important;
+        }
+
+        h1 {
+          margin-bottom: 0.8rem;
+        }
+
+        h2 {
+          margin-bottom: 0.7rem;
+        }
+
+        h3 {
+          margin-bottom: 0.6rem;
+        }
+
+        h4 {
+          margin-bottom: 0.5rem;
+        }
+
+        h5 {
+          margin-bottom: 0.4rem;
+        }
+
+        h6 {
+          margin-bottom: 0.3rem;
+        }
+
+        blockquote {
+          margin: 0.75rem auto;
+        }
+      }
+    }
+  }
+}
+
+/* Style */
+.reveal,
+.reveal.center {
+  align-items: center;
+  justify-content: flex-start;
+  .slides {
+    justify-content: inherit;
+    section {
+      justify-content: inherit;
+      section {
+        display: flex;
+        justify-content: inherit;
+        box-sizing: border-box;
+        flex-direction: column;
+        font-size: 2rem;
+
+        @include media(">=massive") {
+          font-size: 3rem;
+        }
+
+        * {
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          max-height: 100%;
+        }
+
+        img,
+        canvas {
+          display: block;
+          object-fit: initial;
+          width: 100%;
+          height: auto;
+          max-width: 100%;
+          max-width: 100vh;
+          max-height: 100%;
+          max-height: 100vw;
+          margin: auto;
+        }
+
+        blockquote {
+          p {
+            margin: 0;
+          }
+        }
+
+        object {
+          width: 100%;
+          height: 100%;
+        }
+
+        iframe {
+          width: 100%;
+          width: -moz-available;
+          width: -webkit-fill-available;
+          width: fill-available;
+          height: 100%;
+          height: -moz-available;
+          height: -webkit-fill-available;
+          height: fill-available;
+        }
+
+        p {
+          margin: 0 0 1em 0;
+        }
+
+        ul,
+        ol {
+          width: calc(100% - 3em);
+          max-width: 100%;
+          margin: 0 1em 1em 2em;
+          list-style-position: outside;
+
+          ul,
+          ol {
+            margin: 0 0 0 1em;
+          }
+        }
+
+        audio {
+          min-height: 1em;
+          margin: 0 0 1em 0;
+        }
+
+        .fa {
+          width: auto;
+        }
+
+        .link-overlay {
+          display: block;
+          height: 100%;
+          width: 100%;
+          &:focus,
+          &:hover {
+            outline: solid;
+          }
+        }
+      }
+
+      &.skinny {
+        p {
+          margin: 0;
+        }
+      }
+
+      &.start {
+        top: 0 !important;
+
+        h2 {
+          $base: 2;
+          margin: 0;
+          height: calc(50% - #{$base * 3}rem) !important;
+          height: calc(50% - #{$base * 3}rem) !important;
+          min-height: calc(50% - #{$base * 3}rem) !important;
+          max-height: calc(50% - #{$base * 3}rem) !important;
+          @include maximizeSize(true, false, #{$base * 2}rem);
+          padding: #{$base * 3}rem #{$base}rem 0rem #{$base}rem;
+
+          @include media(">=massive") {
+            $base: 5;
+            height: calc(50% - #{$base * 3}rem) !important;
+            height: calc(50% - #{$base * 3}rem) !important;
+            min-height: calc(50% - #{$base * 3}rem) !important;
+            max-height: calc(50% - #{$base * 3}rem) !important;
+            @include maximizeSize(true, false, #{$base}rem);
+            padding: #{$base * 3}rem #{$base}rem 0rem #{$base}rem;
+          }
+        }
+
+        p {
+          &:first-of-type {
+            height: calc(50% - 4rem) !important;
+            min-height: calc(50% - 4rem) !important;
+            max-height: calc(50% - 4rem) !important;
+            @include maximizeSize(true, false, "4rem");
+            margin: 0;
+            padding: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  code {
+    color: #900900;
+    word-break: break-word;
+  }
+}
+
+.presentation-iframe {
+  width: 100%;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: fill-available;
+  height: 100%;
+  height: -moz-available;
+  height: -webkit-fill-available;
+  height: fill-available;
+}
+
+#clockbox {
+  padding: 0.1rem;
+  color: #222222;
+  font-size: 4rem;
+  font-family: Helvetica, sans-serif;
+  background: white;
+  border: 1px solid #9e9e9c;
+  position: absolute;
+  right: 0.25rem;
+  bottom: 0.25rem;
+  z-index: 9999;
+}
+
+#snackbar {
+  visibility: hidden;
+  color: #ffffff;
+  background-color: #dc3545;
+  text-align: center;
+  border-radius: 0.125em;
+  padding: 1em;
+  position: fixed;
+  z-index: 9999;
+  left: 2.5%;
+  bottom: 2.5%;
+
+  &.visible {
+    visibility: visible !important;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+}
+
+/* YouTube-plugin fix */
+.grav-youtube {
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+}
+
+.grav-youtube iframe {
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+}

@@ -1,5 +1,5 @@
 ---
-title: Probar YunoHost
+title: Prueba YunoHost
 template: docs
 taxonomy:
     category: docs
@@ -7,7 +7,7 @@ routes:
   default: '/try'
 ---
 
-! **Nota :** Este demo puede dejar de functionar de vez en cuando.
+! **Nota :** Esta demonstración puede no funcionar de vez en cuando, pero por lo menos puedes probarlo, y esto es genial :)
 
 [center]
 [columns]
@@ -21,4 +21,4 @@ Contraseña : demo
 [/columns]
 [/center]
 
-!!!! **El servidor de demo es ofrecido generosamente por [Gitoyen](https://www.gitoyen.net?target=_blank) [fa=heart /]**
+!!!! **El servidor de demostración es ofrecido generosamente por [Gitoyen](https://www.gitoyen.net?target=_blank) [fa=heart /]**

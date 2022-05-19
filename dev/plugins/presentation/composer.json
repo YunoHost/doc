@@ -1,0 +1,40 @@
+{
+  "name": "olevik/grav-plugin-presentation",
+  "type": "grav-plugin",
+  "description": "Fullscreen navigational slideshows through Reveal.js",
+  "keywords": [
+    "grav",
+    "plugin",
+    "presentation",
+    "fullscreen",
+    "slides",
+    "slideshow",
+    "reveal.js"
+  ],
+  "homepage": "https://github.com/OleVik/grav-plugin-presentation",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ole Vik",
+      "email": "git@olevik.net",
+      "homepage": "https://olevik.me",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "docs": "https://github.com/OleVik/grav-plugin-presentation/blob/master/README.md",
+    "issues": "https://github.com/OleVik/grav-plugin-presentation/issues"
+  },
+  "require": {
+    "php": ">=7.1.3",
+    "michelf/php-smartypants": "^1.8",
+    "composer/installers": "~1.0",
+    "thunderer/shortcode": "^0.7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\PresentationPlugin\\": "classes/",
+      "Grav\\Plugin\\PresentationPlugin\\API\\": "classes/"
+    }
+  }
+}

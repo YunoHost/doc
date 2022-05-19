@@ -1,0 +1,63 @@
+shortcode-block[name="notice"] .sc-notice {
+  color: #666;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 8px 8px;
+  position: relative;
+}
+
+shortcode-block[name="notice"] .sc-notice .sc-notice-wrapper {
+  padding: 4px 12px;
+}
+
+shortcode-block[name="notice"] .sc-notice .sc-notice-wrapper:before {
+  color: rgb(255, 255, 255);
+  content: "";
+  font-family: FontAwesome;
+  left: 10px;
+  position: absolute;
+  top: 2px;
+}
+
+shortcode-block[name="notice"] .sc-notice .sc-notice-wrapper:after {
+  color: #fff;
+  left: 30px;
+  position: absolute;
+  top: 3px;
+}
+
+shortcode-block[name="notice"] .sc-notice-info .sc-notice-wrapper {
+  border-top: 30px solid #F0B37E;
+  background: #FFF2DB;
+}
+
+shortcode-block[name="notice"] .sc-notice-warning .sc-notice-wrapper {
+  border-top: 30px solid #DF6F6C;
+  background: #FAE2E2;
+}
+
+shortcode-block[name="notice"] .sc-notice-note .sc-notice-wrapper {
+  border-top: 30px solid #6AB0DE;
+  background: #E7F2FA;
+}
+
+shortcode-block[name="notice"] .sc-notice-tip .sc-notice-wrapper {
+  border-top: 30px solid #77C577;
+  background: #E6F9E6;
+}
+
+shortcode-block[name="notice"] .sc-notice-info .sc-notice-wrapper:after {
+  content: 'Info';
+}
+
+shortcode-block[name="notice"] .sc-notice-warning .sc-notice-wrapper:after {
+  content: 'Warning';
+}
+
+shortcode-block[name="notice"] .sc-notice-note .sc-notice-wrapper:after {
+  content: 'Note';
+}
+
+shortcode-block[name="notice"] .sc-notice-tip .sc-notice-wrapper:after {
+  content: 'Tip';
+}

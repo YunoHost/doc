@@ -1,0 +1,8 @@
+{% extends "forms/field.html.twig" %}
+
+{% block field %}
+<div class="form-columns grid pure-g">
+    {% set cols = field.fields|length %}
+    {% include 'forms/default/fields.html.twig' with {name: field.name, fields: field.fields, fallback_field: 'column', cols: cols} %}
+</div>
+{% endblock %}

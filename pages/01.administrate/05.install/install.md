@@ -223,6 +223,10 @@ Here are some VPS providers supporting YunoHost natively :
 !!! N.B.: you should download the image Armbian Buster.
 {% endif %}
 
+!!! If you wish to check the validity of our signed images, you can [download our public key](https://forge.yunohost.org/yunohost.asc).
+
+! Current images are from Debian Buster (YunoHost v4.x) and will require that you perform a manual apt update command in SSH or CLI to continue updating.
+! Answer Yes to the warning about switching from stable to oldstable.
 
 <div class="hardware-image">
 <div id="cards-list">
@@ -430,6 +434,7 @@ To achieve this, you need to connect on your raspberry pi as root user [via SSH]
 ```
 ssh root@yunohost.local
 ```
+(or `yunohost-2.local`, and so on if multiple YunoHost servers are on your network)
 
 Then run the following commands to work around the metronome issue:
 ```
@@ -486,14 +491,14 @@ curl https://install.yunohost.org | bash
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
 {%if at_home %}
-In an internet browser, type **{% if internetcube %}`https://internetcube.local`{% else %}`https://yunohost.local`{% endif %}**.
+In an internet browser, type **{% if internetcube %}`https://internetcube.local`{% else %}`https://yunohost.local` (or `yunohost-2.local`, and so on if multiple YunoHost servers are on your network){% endif %}**.
 
 !!! If this doesn't work, you can [look for the the local IP address of your server](/finding_the_local_ip). The address typically looks like `192.168.x.y`, and you should therefore type `https://192.168.x.y` in your browser's address bar.
 {% else %}
 You can perform the initial configuration with the web interface by typing in the adress bar of your web browser **the public IP address of your server**. Typically, your VPS provider should have provided you with the IP of the server.
 {% endif %}
 
-! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). For now, you should add a security exception to accept the current certificate. (Though PLEASE, don't take the habit to blindly accepting this kind of security alerts !)
+! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). For now, you should add a security exception to accept the current certificate. (Though, PLEASE, do not take the habit of blindly accepting this kind of security alert!)
 
 {% if not internetcube %}
 You should then land on this page :
@@ -544,9 +549,12 @@ Let's therefore add a first "regular" user.
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
 
-Go in Users > Add
+Go in Users > Click on "+ New User" button
 
-TODO: add a screenshot
+[figure class="nomargin" caption="Preview of the user creation UI"]
+![User creation](image://create-first-user.png?resize=100%&class=inline)
+[/figure]
+
 [/ui-tab]
 [ui-tab title="From the command line"]
 ```
@@ -568,7 +576,7 @@ The diagnosis system is meant to provide an easy way to validate that all critic
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommended) From the web interface"]
-To run a diagnosis, go on Web Admin in the Diagnosis section. You should get a screen like this :
+To run a diagnosis, go on Web Admin in the Diagnosis section. Click Run initial diagnosis and you should get a screen like this :
 
 [figure class="nomargin" caption="Preview of the diagnostic panel"]
 ![](image://diagnostic.png?resize=100%&class=inline)
@@ -585,12 +593,14 @@ yunohost diagnosis show --issues --human-readable
 
 ## [fa=lock /] Get a Let's Encrypt certificate
 
-Once you configured DNS records and port forwarding (if needed), you should be able to install a a Let's Encrypt certificate. This will get rid of the spooky security warning from earlier for new visitors.
+Once you configured DNS records and port forwarding (if needed), you should be able to install a Let's Encrypt certificate. This will get rid of the spooky security warning from earlier for new visitors.
 
-For more detailled instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/certificate).
+For more detailed instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/certificate).
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
+
+Go in Domains > Click on your domain > SSL Certificate
 
 [figure class="nomargin" caption="Preview of the diagnostic panel"]
 ![](image://certificate-before-LE.png?resize=100%&class=inline)

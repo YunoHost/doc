@@ -108,7 +108,7 @@ In that case, contact your VPN provider to renew it and update the parameters of
 
 Meanwhile, try reaching your server if it is at home, by:
 - its local IP, retrievable from your router configuration panel or `sudo arp-scan --local`
-- reaching it at `yunohost.local`, if it is at home and that you have only one YunoHost server in your network.
+- reaching it at `yunohost.local`, or `yunohost-2.local`, etc. depending on how many YunoHost servers are on your network.
 
 !!! To be completed.
 

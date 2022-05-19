@@ -1,0 +1,460 @@
+{% set settings = config.plugins['git-sync'] %}
+{% set frontend_url = (uri.base ~ uri.rootUrl)|trim('/') %}
+
+<div class="remodal" data-remodal-id="wizard" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+
+    <h1>Git Sync - Wizard</h1>
+    {% if git_sync.git_installed %}
+    <div class="step-0">
+        <div class="panel">
+            <p>
+                This wizard will guide you through a few simple steps that will help you set up the plugin and your <i class="fa fa-fw fa-git"></i> repository. When done you will have a bi-directional synchronization link between your site and the <i class="fa fa-fw fa-git"></i> repository.
+            </p>
+
+            <p>
+                Press <strong>Next</strong> to continue.
+            </p>
+        </div>
+    </div>
+
+    <div class="step-1">
+        {% set selectedRepo = 'github.com' in settings.repository ? 'github' : selectedRepo %}
+        {% set selectedRepo = 'bitbucket.com' in settings.repository ? 'bitbucket' : selectedRepo %}
+        {% set selectedRepo = 'gitlab.com' in settings.repository ? 'gitlab' : selectedRepo %}
+        {% set selectedRepo = not (settings.repository is empty) and not selectedRepo ? 'allothers' : selectedRepo %}
+
+        <h1>Step 1 - Hosting Service</h1>
+        <div class="panel hidden disabled">
+            <p>
+                Select the <i class="fa fa-fw fa-git"></i> repository-hosting service that you will be using to remotely store your data. Once you picked one, insert the username and password or token to access the service. Passwords are saved securely.
+            </p>
+            <div class="columns wizard-padding">
+                <div class="column">
+                    <label>
+                        <input type="radio" value="github" name="gitsync[repository]" {{ selectedRepo == 'github' ? 'checked' : '' }} />
+                        <img src="{{ url('plugin://git-sync/images/repos/github.svg') }}" />
+                        <a href="https://github.com/join?source=header-home" target="_blank">(create account)</a>
+                    </label>
+                    <label>
+                        <input type="radio" value="bitbucket" name="gitsync[repository]" {{ selectedRepo == 'bitbucket' ? 'checked' : '' }} />
+                        <img src="{{ url('plugin://git-sync/images/repos/bitbucket.svg') }}" />
+                        <a href="https://bitbucket.org/account/signup/" target="_blank">(create account)</a>
+                    </label>
+                    <label>
+                        <input type="radio" value="gitlab" name="gitsync[repository]" {{ selectedRepo == 'gitlab' ? 'checked' : '' }} />
+                        <img src="{{ url('plugin://git-sync/images/repos/gitlab.svg') }}" />
+                        <a href="https://gitlab.com/users/sign_up" target="_blank">(create account)</a>
+                    </label>
+                     <label>
+                        <input type="radio" value="allothers" name="gitsync[repository]" {{ selectedRepo == 'allothers' ? 'checked' : '' }} />
+                        <img src="{{ url('plugin://git-sync/images/repos/gitlogo.svg') }}" />
+                         <small>(any Git service with webhooks)</small>
+                    </label>
+                </div>
+                <div class="column">
+                    <label for="gs-user-field">
+                        <span class="block">
+                            Git User
+                            <label for="gs-no-user" class="no_user">
+                                <input id="gs-no-user" type="checkbox" name="gitsync[no_user]" {{ settings.no_user ? 'checked' }}/>
+                                No User
+                            </label>
+                        </span>
+                        <input
+                            id="gs-user-field"
+                            type="text"
+                            name="gitsync[repo_user]"
+                            {% if settings.no_user %}
+                            disabled="disabled"
+                            {% endif %}
+                            placeholder="{{ settings.no_user ? '<username not required>' : 'Username, not email' }}"
+                            value="{{ settings.user|default('') }}"
+                        />
+                    </label>
+                    <label>
+                        Git Password or Token
+                        <input type="password" name="gitsync[repo_password]" placeholder="Password" value="" />
+                    </label>
+                </div>
+            </div>
+
+            <div class="access-tokens wizard-padding">
+                <h3>Access Tokens and 2FA (Two-factor Authentication)</h3>
+                <p>If you have never used Access Tokens or don't know what 2FA is, you most likely only need your <strong>regular password</strong> for the field above. You can then skip this step and press <strong>Next</strong> to continue.</p>
+                <p>However be aware that some services such as GitHub, don't accept your plain password any longer and require the use of Access Token. You should use the Access Token as you preferred method.</p>
+
+                <p><a href="#" class="button" data-access-tokens-details>More Details <i class="fa fa-fw fa-chevron-down"></i></a></p>
+
+                <div class="access-tokens-details" style="display: none;">
+                    <p>With GitSync you have the option to use an Access Token instead of your password, however if you have <strong>2FA (Two-factor authentication)</strong> enabled for your git service, you can only use Access Tokens.</p>
+
+                    <p>Using a token is more secure than using your password, because you can limit what can be done using it and it can be revoked without worrying about changing the password. As we are just syncing, we only need to give it read-and-write access to repositories and webhooks.
+                    </p>
+
+                    <div class="hidden-step-github hidden">
+                        <h4>GitHub</h4>
+                        <p>
+                            With <a href="https://help.github.com/articles/creating-an-access-token-for-command-line-use/" target="_blank">GitHub's Personal Access Tokens</a>, select the following Scopes:
+                        </p>
+
+                        <ul>
+                            <li><i class="fa fa-check-square-o"></i> <code>repo</code> (Full control of private repositories)</li>
+                            <li><i class="fa fa-check-square-o"></i> <code>admin:repo_hook</code> (Full control of repository hooks)</li>
+                        </ul>
+                    </div>
+
+                    <div class="hidden-step-bitbucket hidden">
+                        <h4>Bitbucket</h4>
+                        <p>
+                            With <a href="https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html" target="_blank">BitBucket's App Passwords</a>, select the following Permissions:
+                        </p>
+
+                        <ul>
+                            <li>Repositories:
+                                <ul>
+                                    <li><i class="fa fa-check-square-o"></i> <code>Read</code></li>
+                                    <li><i class="fa fa-check-square-o"></i> <code>Write</code></li>
+                                </ul>
+                            </li>
+                            <li>Webhooks
+                                <ul>
+                                    <li><i class="fa fa-check-square-o"></i> <code>Read and write</code></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="hidden-step-gitlab hidden">
+                        <h4>GitLab</h4>
+                        <p>
+                            For <a href="https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html" target="_blank">GitLab's Personal Access Tokens</a> select the following Scopes:
+                        </p>
+
+                        <ul>
+                            <li><i class="fa fa-check-square-o"></i> <code>API</code> (Access your API)</li>
+                        </ul>
+                    </div>
+
+                    <div class="hidden-step-allothers hidden">
+                        <h4>Other Git Repositories</h4>
+
+                        <p>Usually under your profile settings is where you can generate a new Access Token. You want to ensure that you have enough read/write access for the repository as well as <code>webhook</code> access</p>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                Press <strong>Next</strong> to continue.
+            </p>
+        </div>
+    </div>
+
+    <div class="step-2">
+        <h1>Step 2 - Setting up the Repository</h1>
+        <div class="panel hidden disabled">
+            <p>
+                If you already have a repository set up and ready to use, you can skip this step. Otherwise, please follow these steps:
+            </p>
+
+            <div class="wizard-padding">
+                <ol>
+                    <li>If you are creating a new repository (recommended), you must create an initial commit.
+                        <ul>
+                            <li>The service providers often ask you to do this when you made it.</li>
+                            <li>Check the box that says Initialize repository with a README or .gitignore</li>
+                            <li>This is required for GitSync to work.</li>
+                        </ul>
+                    </li>
+                    <li>Once you have made your repository, copy the full HTTPS URL and paste it into the box below.
+                        <ul>
+                            <li>Most services offer both SSH and HTTPS addresses, <strong>HTTPS is the recommended method.</strong>.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="hidden-step-github wizard-padding hidden">
+                <h4>GitHub</h4>
+                <p>
+                    Follow the instructions on <a href="https://help.github.com/articles/creating-a-new-repository/" target="_blank">GitHub Help</a> to create a new GitHub repository.
+                </p>
+            </div>
+            <div class="hidden-step-bitbucket wizard-padding hidden">
+                <h4>Bitbucket</h4>
+                <p>
+                    Follow the instructions on <a href="https://confluence.atlassian.com/bitbucket/create-a-git-repository-759857290.html" target="_blank">Atlassian Documentation</a> to create a new Bitbucket repository. Make sure you select <strong>Git</strong> as repository type.
+                </p>
+            </div>
+            <div class="hidden-step-gitlab wizard-padding hidden">
+                <h4>GitLab</h4>
+                <p>
+                    GitLab calls repositories "Projects". Follow the instructions on <a href="https://docs.gitlab.com/ce/gitlab-basics/create-project.html" target="_blank">GitLab Documentation</a> to create a new GitLab repository.
+                </p>
+            </div>
+            <div class="hidden-step-allothers wizard-padding hidden">
+              <h4>Other Git Repositories</h4>
+
+            </div>
+
+            <p class="hidden-step-bitbucket hidden">
+                When you copy the HTTPS URL from Bitbucket, it also adds <code>your-user@</code> at the beginning of the URL which is not needed and should be removed. The URL be something like <code>https://bitbucket.org/your-user/your-repository.git</code>
+            </p>
+
+            <p>
+                <label>
+                    Git Repository
+
+                    <input type="text" name="gitsync[repo_url]" placeholder="https://github.com/getgrav/grav.git" value="{{ settings.repository|default('') }}" />
+                </label>
+                <span>
+                    GitSync will use the above repository to store the <strong>user/</strong> folder items selected in Step 4.
+                </span>
+            </p>
+
+            <p>
+                <label>
+                    Repository Branch (master/main)
+
+                    <input type="text" name="gitsync[branch]" placeholder="master" value="{{ settings.branch }}">
+                </label>
+            </p>
+
+            <p class="center">
+                <a href="#" class="button" data-gitsync-action="test"><i class="fa fa-fw fa-plug"></i> Verify Authentication, Connection and Branch</a>
+            </p>
+
+            <p>
+                Press <strong>Next</strong> to continue.
+            </p>
+        </div>
+    </div>
+
+    <div class="step-3">
+        <h1>Step 3 - Setting up the Webhook</h1>
+        <div class="panel hidden disabled" data-gitsync-uribase="{{ frontend_url }}">
+            <p>
+                A Webhook synchronizes the site when a change happens in the repository, and is set up at the service provider. This is a special URL to your site, that you add to your repository's settings. We've auto-generated one for you below, but you can change this to whatever you'd like.</p>
+
+            <p>
+                <label>
+                    Webhook
+                    <input type="text" name="gitsync[webhook]" placeholder="/_git-sync" value="{{ settings.webhook|default('/_git-sync') }}" />
+                </label>
+            </p>
+
+            <p>
+                You can also use a secret token if your service provider supports it:</p>
+
+            <p class="webhook-secret-wrapper">
+                <label for="gitsync-webhook-secret-input">
+                    <input id="gitsync-webhook-secret-input" type="checkbox" name="gitsync[webhook_enabled]" {{ settings.webhook_enabled ? 'checked' }}>
+                    Use Webhook Secret
+                </label>
+                <label class="{{ not settings.webhook_enabled ? 'hidden' }}">
+                    Webhook Secret
+                    <input type="text" name="gitsync[webhook_secret]" placeholder="Your Web Hook Secret" value="{{ settings.webhook_secret }}" />
+                </label>
+            </p>
+
+            <p>
+                Follow the steps below to add the Webhook to your service provider.</p>
+
+            <div class="hidden-step-github wizard-padding hidden">
+                <h4>GitHub</h4>
+                <ol>
+                    <li>Head to the repository on GitHub and click on <code>Settings</code></li>
+                    <li>Click on <code>Webhooks</code> in the left sidebar</li>
+                    <li>Click on the <code>Add webhook</code>-button on the right</li>
+                    <li>
+                        Fill out the form as follows
+                        <ul>
+                            <li><strong>Payload URL</strong>: <code>{{ frontend_url }}<span class="gitsync-webhook">{{ settings.webhook|default('/_git-sync') }}</span></code></li>
+                            <li><strong>Content type</strong>: <code>application/json</code></li>
+                            <li><strong>Secret</strong>: <span class="gitsync-webhook-secret">{{ (settings.webhook_enabled and settings.webhook_secret ? '<code>' ~ settings.webhook_secret ~ '</code>' : '<em>leave empty</em>')|raw }}</span></li>
+                            <li><strong>Which events would you like to trigger this webhook?</strong> <code>Just the push event.</code></li>
+                            <li><strong>Active</strong>: <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </li>
+                    <li>Click the <code>Add webhook</code>-button</li>
+                </ol>
+            </div>
+
+            <div class="hidden-step-bitbucket wizard-padding hidden">
+                <h4>Bitbucket</h4>
+                <ol>
+                    <li>Head to the repository on Bitbucket and click on <code><i class="fa fa-cog"></i> Settings</code> in the sidebar (if the sidebar is collapsed, this is represented by just a <i class="fa fa-cog"></i>)</li>
+                    <li>Click on <code>Webhooks</code> on the left sidebar of the page that just loaded</li>
+                    <li>Click on the <code>Add webhook</code>-button at the top</li>
+                    <li>
+                        Fill out the form as follows
+                        <ul>
+                            <li><strong>Title</strong>: <em>any title you like, eg. GitSync</em></li>
+                            <li><strong>URL</strong>: <code>{{ frontend_url }}<span class="gitsync-webhook">{{ settings.webhook|default('/_git-sync') }}</span></code></li>
+                            <li><strong>Active</strong>: <i class="fa fa-check-square-o"></i></li>
+                            <li><strong>Repository push</strong>: <i class="fa fa-dot-circle-o"></i></li>
+                        </ul>
+                    </li>
+                    <li>Click the <code>Save</code>-button</li>
+                </ol>
+            </div>
+            <div class="hidden-step-gitlab wizard-padding hidden">
+                <h4>GitLab</h4>
+                <ol>
+                    <li>Head to the repository on GitLab and click on <code><i class="fa fa-cog"></i> <strong>Settings</strong></code> dropdown-button from the page sidebar</li>
+                    <li>Select <code>Integrations</code> (or <code>Webhooks</code> if < v8.16) from the list</li>
+                    <li>
+                        Fill out the form as follows
+                        <ul>
+                            <li><strong>URL</strong>: <code>{{ frontend_url }}<span class="gitsync-webhook">{{ settings.webhook|default('/_git-sync') }}</span></code></li>
+                            <li><strong>Secret Token</strong>: <span class="gitsync-webhook-secret">{{ (settings.webhook_enabled and settings.webhook_secret ? '<code>' ~ settings.webhook_secret ~ '</code>' : '<em>leave empty</em>')|raw }}</span></li>
+                            <li><strong>Push events</strong>: <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </li>
+                    <li>Click the <code>Add Webhook</code>-button</li>
+                </ol>
+            </div>
+
+            <div class="hidden-step-allothers wizard-padding hidden">
+                <h4>Other git systems (Generic)</h4>
+                <ol>
+                 <li>
+                  Locate the area where you add the webhook in the repository. This will likely be in the settings for the repository you are adding.
+                  </li>
+                  <li>
+                  Please note this is an advanced option and dependent on the choice of git solution in use.
+                  </li>
+                    <li>
+                        Compile the form as follows
+                        <ul>
+                            <li><strong>URL</strong>: <code>{{ frontend_url }}<span class="gitsync-webhook">{{ settings.webhook|default('/_git-sync') }}</span></code></li>
+                            <li><strong>Secret Token</strong>: <span class="gitsync-webhook-secret">{{ (settings.webhook_enabled and settings.webhook_secret ? '<code>' ~ settings.webhook_secret ~ '</code>' : '<em>leave empty</em>')|raw }}</span></li>
+                            <li><strong>Push events</strong>: <i class="fa fa-check-square-o"></i></li>
+                        </ul>
+                    </li>
+                    <li>Click the <code>Add Webhook</code> button</li>
+                </ol>
+            </div>
+
+            <p>
+                Press <strong>Next</strong> to continue.
+            </p>
+        </div>
+    </div>
+
+    <div class="step-4">
+        <h1>Step 4 - Choose What to Synchronize</h1>
+        <div class="panel hidden disabled">
+            <p>
+                Select which <strong>user/</strong> folders you would like to independently synchronize (default: Pages).
+            </p>
+            <div class="columns wizard-padding">
+                <div class="column">
+                    <label>
+                        <input type="checkbox" value="pages" name="gitsync[folders]" {{ not settings.folders or 'pages' in settings.folders ? 'checked' : '' }} />
+                        <span>Pages</span>
+                        <i class="info-desc fa fa-info-circle"></i>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="themes" name="gitsync[folders]" {{ 'themes' in settings.folders ? 'checked' : '' }} />
+                        <span>Themes</span>
+                        <i class="info-desc fa fa-info-circle"></i>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="plugins" name="gitsync[folders]" {{ 'plugins' in settings.folders ? 'checked' : '' }} />
+                        <span>Plugins</span>
+                        <i class="info-desc fa fa-info-circle"></i>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="config" name="gitsync[folders]" {{ 'config' in settings.folders ? 'checked' : '' }} />
+                        <span>Config</span>
+                        <span class="hint--right" data-hint="This folder might contain sensitive data"><i class="fa fa-warning"></i></span>
+                        <i class="info-desc fa fa-info-circle"></i>
+                    </label>
+                    <label>
+                        <input type="checkbox" value="data" name="gitsync[folders]"{{ 'data' in settings.folders ? 'checked' : '' }} />
+                        <span>Data</span>
+                        <span class="hint--right" data-hint="This folder might contain sensitive data"><i class="fa fa-warning"></i></span>
+                        <i class="info-desc fa fa-info-circle"></i>
+                    </label>
+                    {% if 'accounts' in settings.folders %}
+                        <label>
+                            <input type="checkbox" value="accounts" name="gitsync[folders]" {{ 'accounts' in settings.folders ? 'checked' : '' }} />
+                            <span>Accounts</span>
+                            <span class="hint--right" data-hint="This folder contains sensitive data"><i class="fa fa-warning"></i></span>
+                            <i class="info-desc fa fa-info-circle"></i>
+                        </label>
+                    {% endif %}
+
+                    {% for folder in settings.folders if '/' in folder %}
+                        {% if loop.index0 == 0%}<hr />{% endif %}
+                        <label>
+                            <input type="checkbox" value="{{ folder }}" name="gitsync[folders]" checked />
+                            <span>{{ folder }}</span>
+                            <i class="info-desc fa fa-info-circle"></i>
+                        </label>
+                    {% endfor %}
+                </div>
+                <div class="column">
+                    <div class="description">
+                        <p class="description-accounts hidden">
+                            This folder contains all the user accounts of the site.
+                        </p>
+                        <p class="description-config hidden">
+                            This folder contains all the site configurations.
+                        </p>
+                        <p class="description-data hidden">
+                            This folder contains all the stored data from plugins.
+                        </p>
+                        <p class="description-pages hidden">
+                            This folders contains all the pages of your site.
+                        </p>
+                        <p class="description-plugins hidden">
+                            This folders contains all the plugins installed in your site.
+                        </p>
+                        <p class="description-themes hidden">
+                            This folders contains all the themes installed in your site.
+                        </p>
+
+                        <p class="info warning description-accounts description-config description-data hidden">Careful! This folder can contain sensitive data and synchronizing it will potentially expose the data publicly. Private repository recommended.</p>
+
+                        <p class="info alert description-themes hidden">Note that changes happening in this folder can't be detected automatically by GitSync, therefore a manual synchronization will be required.</p>
+
+                        {% for folder in settings.folders if '/' in folder %}
+                            <p class="description-{{ folder|replace({'/': '-'}) }} hidden">
+                                This folders was manually added either by you in the settings or by your Skeleton.
+                            </p>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                Press <strong>Save</strong> to complete the setup.
+            </p>
+        </div>
+    </div>
+
+    <div class="button-bar">
+        <a class="button secondary float-left" data-remodal-action="cancel" href="#">Cancel</a>
+        <a class="button hidden" data-gitsync-action="previous" href="#"><i class="fa fa-fw fa-chevron-left"></i> Previous</a>
+        <a class="button" data-gitsync-action="next" href="#">Next <i class="fa fa-fw fa-chevron-right"></i></a>
+        <a class="button hidden" data-gitsync-action="save" href="#"><i class="fa fa-fw fa-check"></i> Save</a>
+    </div>
+    {% else %}
+        <div class="step-0">
+            <div class="panel">
+                <p>
+                    The <strong>GitSync</strong> plugin requires the <i class="fa fa-fw fa-git"></i> (Git) binary to be installed and accessible in order to work.</p>
+
+                <p>
+                    If <i class="fa fa-fw fa-git"></i> (Git) is missing from your hosting provider, you should open a ticket with them and request it to be installed.
+                </p>
+
+                <p>You can also specify a custom path in the Advanced section down below at the <strong>Git Binary Path</strong> field. If you are using <strong>Windows</strong> (VM, Azure or a local setup), you might have to change the location accordingly (quotes do matter), for example: <br /> <code>"D:\Program Files\Git\bin\git.exe"</code>.</p>
+            </div>
+        </div>
+        <div class="button-bar">
+            <a class="button secondary float-left" data-remodal-action="cancel" href="#">Close</a>
+        </div>
+    {% endif %}
+</div>

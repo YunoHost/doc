@@ -1,0 +1,21 @@
+{%- macro render_field(form, fields, scope) %}
+{%- import _self as self %}
+{%- for index, field in fields %}
+    {%- set show_field = attribute(field, "input@") ?? field.store ?? true %}
+    {%- if field.fields %}
+        {%- set new_scope = field.nest_id ? scope ~ field.name ~ '.' : scope -%}
+        {{- self.render_field(form, field.fields, new_scope) }}
+    {%- else %}
+        {%- if show_field %}
+            {%- set value = form.value(scope ~ (field.name ?? index)) -%}
+            {%- if value -%}
+            {{- field.label|t|e }}: {{ string(value is iterable ? value|json_encode : value) ~ "\n" }}
+            {%- endif -%}
+        {%- endif %}
+    {%- endif %}
+{%- endfor %}
+{%- endmacro %}
+{%- import _self as macro %}
+{%- autoescape false %}
+{{- macro.render_field(form, form.fields, '') ~ "\n" }}
+{%- endautoescape %}

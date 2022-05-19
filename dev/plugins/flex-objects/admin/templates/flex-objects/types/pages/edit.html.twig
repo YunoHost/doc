@@ -1,0 +1,236 @@
+{% extends 'flex-objects/types/default/edit.html.twig' %}
+
+{# Avoid defining form and object twice: object should always come from the form! #}
+{% set expert = user.authorize('admin.super') and admin.session.expert != '0' %}
+{% if expert or form is not defined %}
+    {% set form = object.form(expert ? 'raw' : '') %}
+    {% set object = form.object %}
+{% endif %}
+
+{% set title = title ?? form.getValue('header.title') ?? object.title ?? key %}
+{% set parent = object.parent %}
+{% set can_read = can_read ?? (object.exists ? object.isAuthorized('read', 'admin', user) : object.isAuthorized('create', 'admin', user))|bool %}
+{% set can_copy = can_copy ?? (parent.exists and parent.isAuthorized('create', 'admin', user)) %}
+{% set can_create = can_create ?? (object.exists and object.isAuthorized('create', 'admin', user)) %}
+{% set can_save = can_save ?? (object.exists ? object.isAuthorized('update', 'admin', user) : object.isAuthorized('create', 'admin', user))|bool %}
+{% set can_move = can_move ?? can_save and form.blueprint.schema.property('route').type is same as('parents') %}
+{% set can_translate = can_translate ?? (admin.multilang and object.hasFlexFeature('page-translate') and not object.root()) %}
+
+{% macro spanToggle(input, length) %}
+    {{ (repeat('&nbsp;&nbsp;', (length - input|length) / 2) ~ input ~ repeat('&nbsp;&nbsp;', (length - input|length) / 2))|raw }}
+{% endmacro %}
+{% import _self as macro %}
+
+{% block body %}
+    {% set current_route = '/' ~ route.getRoute(1) %}
+
+    {% if not object.root() %}
+    {% set child = object.children.first %}
+    {% set prev = object.prevSibling %}
+    {% set next = object.nextSibling %}
+
+    {% set parent_url = parent and not parent.root ? admin_route(back_route) %}
+    {% set child_url = can_read and child ? admin_route(current_route ~ '/' ~ child.slug) %}
+    {% set prev_url = can_read and prev ? admin_route(back_route ~ '/' ~ prev.slug) %}
+    {% set next_url = can_read and next ? admin_route(back_route ~ '/' ~ next.slug) %}
+    {% endif %}
+    {% set back_url = back_url ?? admin_route(flex.adminRoute(directory.getFlexType())) %}
+
+    {{ parent() }}
+{% endblock body %}
+
+{% block back_button %}
+    {% include ['flex-objects/types/' ~ target ~ '/buttons/back.html.twig', 'flex-objects/types/pages/buttons/back.html.twig']
+        with { back_url: back_url } %}
+    {% if not object.root() %}
+    {% include ['flex-objects/types/' ~ target ~ '/buttons/nav-prev.html.twig', 'flex-objects/types/pages/buttons/nav-prev.html.twig']
+        with { prev_url: prev_url, title: prev.route } %}
+    {% include ['flex-objects/types/' ~ target ~ '/buttons/nav-parent.html.twig', 'flex-objects/types/pages/buttons/nav-parent.html.twig']
+        with { parent_url: parent_url, title: parent.route } %}
+    {% include ['flex-objects/types/' ~ target ~ '/buttons/nav-child.html.twig', 'flex-objects/types/pages/buttons/nav-child.html.twig']
+        with { child_url: child_url, title: child.route } %}
+    {% include ['flex-objects/types/' ~ target ~ '/buttons/nav-next.html.twig', 'flex-objects/types/pages/buttons/nav-next.html.twig']
+        with { next_url: next_url, title: next.route } %}
+    {% endif %}
+{% endblock back_button %}
+
+{% block preview_button %}
+    {% if object.exists and not object.root() %}
+    {% include ['flex-objects/types/' ~ target ~ '/buttons/preview.html.twig', 'flex-objects/types/pages/buttons/preview.html.twig'] %}
+    {% endif %}
+{% endblock preview_button %}
+
+{% block delete_button %}
+    {# FIXME: add support for deleting root file only #}
+    {% if not object.root() %}
+    {% include ['flex-objects/types/' ~ target ~ '/buttons/delete.html.twig', 'flex-objects/types/pages/buttons/delete.html.twig'] %}
+    {% endif %}
+{% endblock delete_button %}
+
+{% block extra_buttons %}
+    {% if object.exists and not object.root() %}
+    {% if can_create %}
+    {% include ['flex-objects/types/' ~ target ~ '/buttons/add.html.twig', 'flex-objects/types/pages/buttons/add.html.twig'] %}
+    {% endif %}
+    {% if can_copy %}
+    {% include ['flex-objects/types/' ~ target ~ '/buttons/copy.html.twig', 'flex-objects/types/pages/buttons/copy.html.twig'] %}
+    {% endif %}
+    {% if can_move %}
+    {% include ['flex-objects/types/' ~ target ~ '/buttons/move.html.twig', 'flex-objects/types/pages/buttons/move.html.twig'] %}
+    {% endif %}
+    {% endif %}
+{% endblock extra_buttons %}
+
+{% block save_button %}
+    {% include ['flex-objects/types/' ~ target ~ '/buttons/save.html.twig', 'flex-objects/types/pages/buttons/save.html.twig'] %}
+{% endblock save_button %}
+
+{% block content_top %}
+    {% if allowed and user.authorize('admin.super') %}
+    <div class="alert notice">
+        {% set save_location = object.getStorageFolder() ?: directory.getStorageFolder() %}
+        {{ "PLUGIN_ADMIN.SAVE_LOCATION"|tu }}: <b>{{ url(save_location, false, true)|trim('/') }} {{ not object.exists ? '[' ~ 'PLUGIN_FLEX_OBJECTS.NEW'|tu|upper ~ ']' }}</b> (type: <b>{{ (form.getValue('name') ?: 'default') }}</b>)
+    </div>
+    {% endif %}
+    {% if object.exists and form.flash.exists %}
+        <div class="alert secondary-accent">
+            <i class="fa fa-lightbulb-o"></i> {{ 'PLUGIN_FLEX_OBJECTS.STATE.EDITING_DRAFT'|tu }} <button class="button button-link" type="submit" name="task" value="reset" form="blueprints">{{ "PLUGIN_ADMIN.RESET"|tu }}</button>
+        </div>
+    {% endif %}
+    {% if not object.exists %}
+        <div class="alert secondary-accent">
+            <i class="fa fa-lightbulb-o"></i> {{ 'PLUGIN_FLEX_OBJECTS.STATE.NOT_CREATED_YET'|tu }}
+        </div>
+    {% elseif can_translate %}
+        {% set is_default = language is same as(default_language) %}
+        {% if is_default and default_language in object_languages %}
+            {% if not translate_include_default and object.property('lang') %}
+            {# Handle default language extension #}
+            <div class="alert secondary-accent">
+                {% set overrideLanguage = all_languages[object_language] ?? object_language %}
+                {{ 'PLUGIN_FLEX_OBJECTS.LANGUAGE.USING_OVERRIDE'|tu(overrideLanguage, null)|raw }}
+                {{ object.hasTranslation('', false) ? 'PLUGIN_FLEX_OBJECTS.LANGUAGE.UNUSED_DEFAULT'|tu|raw }}
+            </div>
+            {% elseif translate_include_default %}
+                {%  if not object.property('lang') %}
+                    <div class="alert secondary-accent">
+                        {{ 'PLUGIN_FLEX_OBJECTS.LANGUAGE.USING_DEFAULT'|tu|raw }}
+                    </div>
+                {% elseif object.hasTranslation('', false) %}
+                    <div class="alert secondary-accent">
+                        {{ 'PLUGIN_FLEX_OBJECTS.LANGUAGE.UNUSED_DEFAULT'|tu|raw }}
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% elseif not has_translation %}
+        <div class="alert warning">
+            {% set overrideLanguage = all_languages[language] ?? object_language %}
+            {{ 'PLUGIN_FLEX_OBJECTS.LANGUAGE.NOT_TRANSLATED_YET'|tu(overrideLanguage, null)|raw }}
+            {% if language == object_language %}
+                {{ 'PLUGIN_FLEX_OBJECTS.LANGUAGE.NO_FALLBACK_FOUND'|tu|raw }}
+            {% else %}
+                {% set overrideLanguage = all_languages[object_language] ?? object_language %}
+                {{ 'PLUGIN_FLEX_OBJECTS.LANGUAGE.FALLING_BACK'|tu(overrideLanguage, null)|raw }}
+            {% endif %}
+        </div>
+        {% endif %}
+    {% endif %}
+{% endblock content_top %}
+
+{% block topbar %}
+    {% if can_translate %}
+        <div id="admin-lang-toggle" class="button-group">
+            <button type="button" class="button disabled">
+                <i class="fa fa-flag-o"></i>
+                {{ all_languages[object_language] ?? object_language }}
+            </button>
+            {% if count(object_languages) > (object_language in object_languages)|int %}
+                <button type="button" class="button dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <ul class="dropdown-menu language-switcher">
+                {% for lang_code in object_languages %}
+                    {% if lang_code != object_language %}
+                    <li>
+                        <a href="{{ admin_route(route.getRoute(1), lang_code) }}">{{ all_languages[lang_code] ?? lang_code }}</a>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    {% endif %}
+
+    {% if user.authorize('admin.super') %}
+    <form id="admin-mode-toggle">
+        {% set normalText = 'PLUGIN_ADMIN.NORMAL'|tu %}
+        {% set expertText = 'PLUGIN_ADMIN.EXPERT'|tu %}
+        {% set maxLen = max([normalText|length, expertText|length]) %}
+        {% set normalText = macro.spanToggle(normalText, maxLen) %}
+        {% set expertText = macro.spanToggle(expertText, maxLen) %}
+
+        <div class="switch-toggle switch-grav">
+            <input type="radio" value="normal" data-leave-url="{{ route.withGravParam('mode', 'normal').toString(true) }}" id="normal" name="mode-switch" class="highlight" {% if expert == '0' %} checked="checked"{% endif %}>
+            <label for="normal">{{ normalText }}</label>
+            <input type="radio" value="expert" data-leave-url="{{ route.withGravParam('mode', 'expert').toString(true) }}" id="expert" name="mode-switch" class="highlight" {% if expert == '1' %} checked="checked"{% endif %}>
+            <label for="expert">{{ expertText }}</label>
+            <a></a>
+        </div>
+    </form>
+    {% endif %}
+{% endblock topbar %}
+
+{% block edit %}
+    {% include 'partials/blueprints.html.twig' with { context: object, data: object, blueprints: form.blueprint } %}
+{% endblock edit %}
+
+{% block content %}
+    {{ parent() }}
+
+    {% include 'partials/modal-changes-detected.html.twig' %}
+
+    {% if object.exists %}
+        {% set modal_data = data({
+            route: '/' ~ object.key,
+            name: object.header.child_type ?? object.blueprint.child_type ?? 'default'
+        }) %}
+
+        <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+            {% include 'partials/blueprints-new.html.twig' with { form: null, blueprints: admin.blueprints('admin/pages/new'), data: modal_data, form_id: 'new-page' } %}
+        </div>
+
+        <div class="remodal" data-remodal-id="modal-folder" data-remodal-options="hashTracking: false">
+            {% include 'partials/blueprints-new-folder.html.twig' with { form: null, blueprints: admin.blueprints('admin/pages/new_folder'), data: modal_data, form_id: 'new-folder' } %}
+        </div>
+
+        <div class="remodal" data-remodal-id="module" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+            {% include 'partials/blueprints-new.html.twig' with { form: null, blueprints: admin.blueprints('admin/pages/modular_new'), data: modal_data, form_id: 'new-module' } %}
+        </div>
+
+        <div class="remodal" data-remodal-id="modal-page-copy" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+            {% include 'partials/blueprints-copy.html.twig' with { blueprints: admin.blueprints('admin/pages/copy'), data: data({ title: object.title ~ ' (Copy)', folder: object.slug ~ '-copy' }), form_id: 'copy' } %}
+        </div>
+    {% endif %}
+
+    {# TODO: regular pages support extra modals from admin config #}
+
+    <div class="remodal parents-container" data-remodal-id="parents" data-remodal-options="hashTracking: false, stack: true">
+        <form>
+            <h1>{{ 'PLUGIN_FLEX_OBJECTS.PARENTS'|tu }}</h1>
+            <div class="grav-loading"><div class="grav-loader">{{ 'PLUGIN_FLEX_OBJECTS.STATE.LOADING'|tu }}</div></div>
+            <div class="parents-content"></div>
+            <div class="button-bar">
+                <a class="button secondary remodal-cancel" data-remodal-action="cancel" href="#"><i class="fa fa-fw fa-close"></i> {{ "PLUGIN_ADMIN.CANCEL"|tu }}</a>
+                <a class="button" data-parents-select href="#"><i class="fa fa-fw fa-check"></i> {{ "PLUGIN_ADMIN.CONTINUE"|tu }}</a>
+            </div>
+        </form>
+    </div>
+
+{% endblock content %}
+
+{% block bottom %}
+    {{ parent() }}
+    <script>
+        $('.admin-pages .form-tabs .tabs-nav').css('margin-right', ($('#admin-topbar').width() + 20) + 'px');
+    </script>
+{% endblock bottom %}

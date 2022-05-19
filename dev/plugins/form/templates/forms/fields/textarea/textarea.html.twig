@@ -1,0 +1,51 @@
+{% extends "forms/field.html.twig" %}
+
+{% block input %}
+    <div class="{{ form_field_wrapper_classes ?: 'form-textarea-wrapper' }} {{ field.size }} {{ field.wrapper_classes }}">
+        {% block prepend %}{% endblock prepend %}
+        <textarea
+            {# required attribute structures #}
+            name="{{ (scope ~ field.name)|fieldName }}"
+            {# input attribute structures #}
+            {% block input_attributes %}
+                class="{{ form_field_textarea_classes }} {{ field.classes }} {{ field.size }}"
+                {% if field.id is defined %}id="{{ field.id|e }}" {% endif %}
+                {% if field.style is defined %}style="{{ field.style|e }}" {% endif %}
+                {% if field.disabled or isDisabledToggleable %}disabled="disabled"{% endif %}
+                {% if field.placeholder %}placeholder="{{ field.placeholder|t }}"{% endif %}
+                {% if field.autofocus in ['on', 'true', 1] %}autofocus="autofocus"{% endif %}
+                {% if field.novalidate in ['on', 'true', 1] %}novalidate="novalidate"{% endif %}
+                {% if field.readonly in ['on', 'true', 1] %}readonly="readonly"{% endif %}
+                {% if field.autocomplete in ['on', 'off'] %}autocomplete="{{ field.autocomplete }}"{% endif %}
+                {% if field.tabindex %}tabindex="{{ field.tabindex }}"{% endif %}
+                {% if required %}required="required"{% endif %}
+                {% if field.validate.pattern %}pattern="{{ field.validate.pattern }}"{% endif %}
+                {% if field.validate.message %}title="{{ field.validate.message|t|e }}"{% endif %}
+                {% if field.rows is defined %}rows="{{ field.rows }}"{% endif %}
+                {% if field.cols is defined %}cols="{{ field.cols }}"{% endif %}
+                {% if field.minlength is defined or field.validate.min is defined %}minlength="{{ field.minlength | default(field.validate.min) }}"{% endif %}
+                {% if field.maxlength is defined or field.validate.max is defined %}maxlength="{{ field.maxlength | default(field.validate.max) }}"{% endif %}
+                {% if field.datasets %}
+                    {% for datakey, datavalue in field.datasets %}
+                        data-{{ datakey }}="{{ datavalue|e('html_attr') }}"
+                    {% endfor %}
+                {% endif %}
+                {% if field.attributes is defined %}
+                  {% for key,attribute in field.attributes %}
+                    {% if attribute|of_type('array') %}
+                      {{ attribute.name }}="{{ attribute.value|e('html_attr') }}"
+                    {% else %}
+                      {{ key }}="{{ attribute|e('html_attr') }}"
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+            {% endblock %}
+            >{{ value|trim|e('html') }}</textarea>
+            {% block append %}{% endblock append %}
+            {% if inline_errors and errors %}
+                <div class="{{ form_errors_classes ?: 'form-errors' }}">
+                    <p class="form-message"><i class="fa fa-exclamation-circle"></i> {{ errors|first }}</p>
+                </div>
+            {% endif %}
+    </div>
+{% endblock %}
