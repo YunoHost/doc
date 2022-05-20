@@ -56,6 +56,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Cozy](https://cozy.io/en/) |  |  |  |
 | Croodle | Vote for a schedule / polling | [Upstream](https://github.com/jelhan/croodle) |  |
 | [CyberChef](https://www.giters.com/gchq/CyberChef) - The Cyber Swiss Army Knife | a web app for encryption, encoding, compression and data analysis | [Upstream](https://github.com/gchq/CyberChef) |  |
+| [Cypht](https://cypht.org/) | All your E-mail, from all your accounts, in one place. It's also a news reader. | [Upstream](https://github.com/jasonmunro/cypht/) | |
 | [Darkwire.io](https://darkwire.io/) | End-to-end encrypted instant web chat | [Upstream](https://github.com/seripap/darkwire.io) |  |
 | [Dataverse](https://dataverse.org) | Open source research data repository software | [Upstream](https://github.com/IQSS/dataverse) |  |
 | [DavMail](http://davmail.sourceforge.net/) | Gateway from OWA and O365 to IMAP, POP, and CalDav for email and calendars | [Upstream](https://github.com/mguessan/davmail) |  |
