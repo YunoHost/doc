@@ -27,6 +27,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [askbot](https://askbot.com/) | Questions and answers |  | [Package Draft](https://github.com/zamentur/askbot_ynh) |
 | [Archivematica](https://www.archivematica.org/) | Mature digital preservation system designed to maintain standards-based, long-term access to collections of digital objects. | [Upstream](https://github.com/artefactual/archivematica) |  |
 | [ArchivesSpace](https://archivesspace.org/) | Archives information management application for managing and providing Web access to archives, manuscripts and digital objects. | [Upstream](https://github.com/archivesspace/archivesspace) |  |
+| [ass](https://github.com/tycrek/ass) | ass is a self-hosted ShareX upload server written in Node.js. |[Upstream](https://github.com/tycrek/ass)|  |
 | [Astral](https://astralapp.com/) | Organize Your GitHub Stars With Ease |[Upstream](https://github.com/astralapp/astral)|  |
 | [Azuracast](https://https://azuracast.com/) | A Simple, Self-Hosted Web Radio Management Suite |[Upstream](https://github.com/AzuraCast/AzuraCast)|  |
 | [Baserow](https://baserow.io/) | Open source no-code database tool and Airtable alternative. | [Upstream](https://gitlab.com/bramw/baserow) |  |
