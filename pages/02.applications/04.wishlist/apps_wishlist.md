@@ -198,7 +198,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Phraseanet](https://docs.phraseanet.com/3.8/fr/index.html#) |  | [Upstream](https://github.com/alchemy-fr/Phraseanet-Docs) |  |
 | [pia](https://github.com/LINCnil/pia) | A tool to help carrying out Privacy Impact Assessments |  | [Package Draft](https://github.com/YunoHost-Apps/pia_ynh) |
 | [PicApport](https://www.picapport.de/) | Self-hosted private photo server |  |  |
-| Pico |  | [Upstream](https://github.com/picocms/Pico) |  |
 | [Pinry](https://docs.getpinry.com/) |  Open source tiling image board | [Upstream](https://github.com/pinry/pinry/) | |
 | Pol | RSS generator website | [Upstream](https://github.com/taroved/pol) |  |
 | [Planka](https://planka.app/) |  Free open source kanban board for workgroups. | [Upstream](https://github.com/plankanban/planka) | |
