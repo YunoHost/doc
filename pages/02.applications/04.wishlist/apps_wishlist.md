@@ -72,7 +72,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [DomainMOD](https://domainmod.org) | Domain portfolio management application | | |
 | Dynette | Dynette is a dyndns server | [Upstream](https://github.com/YunoHost/dynette) | [Package Draft](https://github.com/YunoHost-Apps/dynette_ynh) |
 | DrakonHub | Online editor for Drakon diagrams | [Upstream](https://github.com/stepan-mitkin/drakonhub) | |
-| [eLabFTW](https://www.elabftw.net/) | Electronic lab notebook | [Upstream](https://github.com/elabftw/elabftw) | [Package Draft](https://github.com/YunoHost-Apps/eLabFTW_ynh) |
 | Endlessh | SSH Tarpit | [upstream](https://github.com/skeeto/endlessh) |  |
 | [erine.email](https://erine.email/) |  | [Upstream](https://gitlab.com/mdavranche/erine.email) |  |
 | [ERPnext](https://erpnext.com/) |  | [Upstream](https://github.com/frappe/erpnext) |  |
@@ -187,7 +186,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [osmw](https://www.openstreetmap.org/) | Cartography software |  | [Package Draft](https://github.com/YunoHost-Apps/osmw_ynh) |
 | OSRM |  | [Upstream](https://github.com/Project-OSRM/osrm-backend) |  |
 | [OX Open-Xchange](https://www.open-xchange.com) | Linux groupware solution | [Upstream](https://github.com/open-xchange/) |  |
-| [OverLeaf](https://github.com/overleaf/overleaf) | open-source online real-time collaborative LaTeX editor | [Upstream](https://github.com/overleaf/overleaf) | [Package Draft](https://github.com/YunoHost-Apps/overleaf_ynh) |
 | [Padloc](https://padloc.app/) | Simple, secure password and data management for individuals and teams | [Upstream](https://github.com/padloc/padloc) | |
 | Paperless-ng |  | [Upstream](https://github.com/jonaswinkler/paperless-ng) |  |
 | [Paperwork](https://paperwork.cloud) |  | [Upstream](https://github.com/paperwork/paperwork) |  |
@@ -200,7 +198,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Phraseanet](https://docs.phraseanet.com/3.8/fr/index.html#) |  | [Upstream](https://github.com/alchemy-fr/Phraseanet-Docs) |  |
 | [pia](https://github.com/LINCnil/pia) | A tool to help carrying out Privacy Impact Assessments |  | [Package Draft](https://github.com/YunoHost-Apps/pia_ynh) |
 | [PicApport](https://www.picapport.de/) | Self-hosted private photo server |  |  |
-| Pico |  | [Upstream](https://github.com/picocms/Pico) |  |
 | [Pinry](https://docs.getpinry.com/) |  Open source tiling image board | [Upstream](https://github.com/pinry/pinry/) | |
 | Pol | RSS generator website | [Upstream](https://github.com/taroved/pol) |  |
 | [Planka](https://planka.app/) |  Free open source kanban board for workgroups. | [Upstream](https://github.com/plankanban/planka) | |
