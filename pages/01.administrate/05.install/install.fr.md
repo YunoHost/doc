@@ -561,7 +561,7 @@ Allez dans `Utilisateurs > Nouvel utilisateur`.
 ```
 yunohost user create johndoe
 ```
-TODO : copypasta an actual shell session will all info asked etc..
+[ynh_usercreate_cli](image://create-first-user-cli.png?resize=100%&class=inline)
 
 [/ui-tab]
 [/ui-tabs]
