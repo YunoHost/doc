@@ -7,7 +7,7 @@ routes:
   default: '/apps_overview'
 ---
 
-L'une des fonctionnalités principales de YunoHost est la possibilité d'installer facilement des applications immédiatement utilisables. Pour donner des exemples d'application, il est possible d'installer un système de blog, un "cloud" (pour héberger et synchroniser des fichiers), un site web, un lecteur RSS...
+L'une des fonctionnalités principales de YunoHost est la possibilité d'installer facilement des applications immédiatement utilisables. Pour donner des exemples d'application, il est possible d'installer un système de blog, un "cloud" (pour héberger et synchroniser des fichiers), un site web, un lecteur RSS…
 
 Les applications peuvent être installées et gérées via l'interface d'administration web dans la partie 'Applications', ou via les commandes de la catégorie `yunohost app`.
 
@@ -29,7 +29,7 @@ Par défaut, seules les applications d'une qualité suffisante vous sont propos�
 
 ## Intégration LDAP / SSO
 
-Les applications peuvent prendre en charge l'intégration avec le système LDAP / Single Sign On, de sorte que les utilisateurs qui se connectent au portail utilisateur peuvent être automatiquement authentifiés sur toutes ces applications. Certaines applications ne le supportent pas car cette fonctionnalité n'est, soit pas implémentée en amont du logiciel de l'application, soit le mainteneur n'a pas encore travaillé sur cette partie. Cette information est en général disponible sur le README du paquet d'application.
+Les applications peuvent prendre en charge l'intégration avec le système LDAP / Single Sign On, de sorte que les utilisateurs qui se connectent au portail utilisateur puissent être automatiquement authentifiés sur toutes ces applications. Certaines applications ne le supportent pas, soit parce que cette fonctionnalité n'est pas implémentée en amont du logiciel de l'application, soit parce que le mainteneur n'a pas encore travaillé sur cette partie. Cette information est en général disponible sur le README du paquet d'application.
 
 ## Applications multi-instances
 
