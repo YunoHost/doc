@@ -9,7 +9,7 @@ routes:
 
 Vous pouvez récupérer et envoyer des emails avec votre instance YunoHost grâce à des logiciels comme Mozilla Thunderbird, ou sur votre smartphone grâce à des applications comme K-9 Mail.
 
-Normalement, votre client email devrait recevoir la configuration automatiquement lorsque vous ajoutez un compte. Si cela ne fonctionne pas, il est possible de le faire manuellement en suivant les quelques étapes suivantes. (Cependant, cela devrait être compris comme étant un bug dans YunoHost, et le cas échéant, c'est cool si vous nous notifiez du problème pour que nous puissions tenter de reproduire et corriger le problème !)
+Normalement, votre client email devrait recevoir la configuration automatiquement lorsque vous ajoutez un compte. Si cela ne fonctionne pas, il est possible de le faire manuellement en suivant les quelques étapes suivantes. (Cependant, cela devrait être compris comme étant un bug dans YunoHost, et le cas échéant, c'est cool si vous nous notifiez du problème pour que nous puissions tenter de le reproduire et corriger !)
 
 ### Réglages génériques
 
@@ -21,7 +21,7 @@ Voici les éléments que vous devrez entrer pour configurer manuellement votre c
 | SMTP      | 587  | STARTTLS    | Mot de passe normal | `nom_utilisateur` (sans `@votre.domaine.tld`) |
 
 
-### Client by client
+### Client par client
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Mozilla Thunderbird"]
 ##### ![](image://thunderbird.png?resize=50&classes=inline) Configurer Mozilla Thunderbird
