@@ -251,6 +251,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Signature PDF](https://pdf.24eme.fr) | A free open source online PDF signing software | [Upstream](https://github.com/24eme/signaturepdf) | [Package Draft](https://github.com/YunoHost-Apps/signaturepdf_ynh) |
 | simpad | Simple markdown editor | [Upstream](https://github.com/beli3ver/SiMPad) | [Package Draft](https://github.com/YunoHost-Apps/simpad_ynh) |
 | [SimpleLogin](https://simplelogin.io) | Privacy-first e-mail forwarding and identity provider service | [Upstream](https://github.com/simple-login/app) | |
+| [SimplyTranslate-Web](https://simplytranslate.org/) | This is a simple web interface for SimplyTranslate | [Upstream](https://codeberg.org/SimpleWeb/SimplyTranslate-Web) |  |
 | [smokeping](https://oss.oetiker.ch/smokeping/) |  | [Upstream](https://github.com/oetiker/SmokePing) |  |
 | [SocialHome](https://socialhome.network) | A federated personal profile | [Upstream](https://github.com/jaywink/socialhome) |  |
 | [sonerezh](https://www.sonerezh.bzh) | Stream music from everywhere |  | [Package Draft](https://github.com/YunoHost-Apps/sonerezh_ynh) |
