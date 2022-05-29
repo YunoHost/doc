@@ -11,7 +11,7 @@ Dans YunoHost, depuis la gestion des permissions par l'interface d'administratio
 
 Cependant ces utilisateurs sont chrootés dans leur répertoire home pour des raisons de sécurité.
 
-Si vous désirez donenr accès à une application spécifique à traver SFTP, voici les actions à faire après avoir donné les droits à l'utilisateur dans l'interface d'adminstration web.
+Si vous désirez donner accès à une application spécifique à travers SFTP, voici les actions à faire après avoir donné les droits à l'utilisateur dans l'interface d'adminstration web.
 
 Dans les instructions suivantes USER est l'utilisateur à qui sont données les permissions d'éditer des fichiers wordpress.
 
