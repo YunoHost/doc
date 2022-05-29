@@ -7,7 +7,7 @@ routes:
   default: '/apps_overview'
 ---
 
-L'une des fonctionnalités principales de YunoHost est la possibilité d'installer facilement des applications immédiatement utilisables. Pour donner des exemples d'application, il est possible d'installer un système de blog, un "cloud" (pour héberger et synchroniser des fichiers), un site web, un lecteur RSS…
+L'une des fonctionnalités principales de YunoHost est la possibilité d'installer facilement des applications immédiatement utilisables. Pour donner des exemples d'application, il est possible d'installer un système de blog, un "cloud" (pour héberger et synchroniser des fichiers), un site web, un lecteur RSS...
 
 Les applications peuvent être installées et gérées via l'interface d'administration web dans la partie 'Applications', ou via les commandes de la catégorie `yunohost app`.
 
