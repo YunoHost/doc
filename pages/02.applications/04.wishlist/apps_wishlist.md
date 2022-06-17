@@ -106,6 +106,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | gitweb | Git forge (c.f. Gitolite) |  | [Package Draft](https://github.com/matlink/gitweb_ynh) |
 | gnusocial | Create a federated comunication node |  | [Package Draft](https://github.com/YunoHost-Apps/gnusocial_ynh) |
 | [Goaccess](https://goaccess.io) | Web log analyzer | [Upstream](https://github.com/allinurl/goaccess) |  |
+| [GoatCounter](https://www.goatcounter.com/) | privacy-friendly web analytics | [Upstream](https://github.com/arp242/goatcounter) |  |
 | gogs_webhost | Turn a Gogs repository to static web hosting |  | [Package Draft](https://github.com/YunoHost-Apps/gogs_webhost_ynh) |
 | Gollum | A simple Git-powered wiki | [Upstream](https://github.com/gollum/gollum) | [Package Draft](https://github.com/YunoHost-Apps/gollum_ynh) |
 | Goploader |  | [Upstream](https://github.com/Depado/goploader) |  |
