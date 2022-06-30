@@ -98,6 +98,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Freescout](https://freescout.net/) |  Helpdesk & Shared Mailbox | [Upstream](https://github.com/freescout-helpdesk/freescout) |  |
 | [ftssolr](https://wiki.dovecot.org/Plugins/FTS/Solr) | Full-text search via IMAP through a Solr indexing server |  | [Package Draft](https://github.com/YunoHost-Apps/ftssolr_ynh) |
 | [Gancio](https://gancio.org/) |  | [Upstream](https://framagit.org/les/gancio) |  |
+| [Garage](https://garagehq.deuxfleurs.fr) | A self-hostable distributed storage service (S3 compatible) | [Upstream](https://git.deuxfleurs.fr/Deuxfleurs/garage) |  |
 | gateone | HTML5-powered terminal emulator and SSH client |  | [Package Draft](https://github.com/Kloadut/gateone_ynh) |
 | [Gatsby](https://www.gatsbyjs.com/) | Build blazing fast, modern apps and websites with React | [Upstream](https://github.com/gatsbyjs/gatsby) |  |
 | [Geneweb](https://geneweb.tuxfamily.org) |  | [Upstream](https://github.com/geneweb/geneweb) |  |
