@@ -208,7 +208,7 @@ Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 [[figure caption="Alsace Réseau Neutre - FR"]![](image://vps_ynh_arn.png?height=50)[/figure]](https://vps.arn-fai.net)
 [/div]
 [div class="flex-child"]
-[[figure caption="Association ECOWAN - FR"]![](https://cdn.ecowan.fr/charte-graphique/ecowan/logo/bleu-blanc/logo-bleu-clair.svg?height=50)[/figure]](https://www.ecowan.fr/vps-linux)
+[[figure caption="Association ECOWAN - FR"]![](image://vps_ynh_ecowan.png?height=50)[/figure]](https://www.ecowan.fr/vps-linux)
 [/div]
 [/div]
 {% endif %}
