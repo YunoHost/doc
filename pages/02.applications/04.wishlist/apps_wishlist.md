@@ -266,6 +266,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Storj](https://www.storj.io/node) |  | [Upstream](https://github.com/storj/storj) |  |
 | [Strapi](https://strapi.io) | Open source Node.js Headless CMS to easily build customisable APIs | [Upstream](https://github.com/strapi/strapi) |  |
 | Streisand |  | [Upstream](https://github.com/jlund/streisand) |  |
+| [Stremio](https://strem.io) Web | a modern media center. | [Upstream frontend](https://github.com/Stremio/stremio-web) [Upstream backend](https://github.com/Stremio/stremio-core-web) |  |
 | studs | A survey tool, the ancestor of OpenSondage |  | [Package Draft](https://github.com/YunoHost-Apps/studs_ynh) |
 | subsonic | Subsonic is an open source, web-based media server |  | [Package Draft](https://github.com/drfred1981/subsonic_ynh) |
 | Subspace | A simple WireGuard VPN server GUI | [Upstream](https://github.com/subspacecloud/subspace) |  |
