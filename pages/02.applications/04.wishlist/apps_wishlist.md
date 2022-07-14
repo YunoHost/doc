@@ -47,6 +47,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [cgit](https://git.zx2c4.com/cgit/about) |  |  |  |
 | Chaskiq | A full featured Live Chat, Support & Marketing platform, alternative to Intercom, Drift, Crisp | [Upstream](https://github.com/chaskiq/chaskiq) |  |
 | changedetection.io | Self-hosted open source change monitoring of web pages | [Upstream](https://github.com/dgtlmoon/changedetection.io) |  |
+| [Chatterbox](https://element.io/solutions/chatterbox-embedded-live-chat-for-customer-service) | Chatterbox lets you securely embed Hydrogen on any website!  | [Upstream]([https://github.com/sourcegraph/checkup](https://github.com/vector-im/chatterbox)) |  |
 | [CheckUp](https://sourcegraph.github.io/checkup) |  | [Upstream](https://github.com/sourcegraph/checkup) |  |
 | [Citadel-suite](https://www.citadel.org) | Groupware platform |  |  |
 | [CKAN](https://ckan.org/) | A tool for making open data websites | [Upstream](https://github.com/ckan/ckan) |  |
