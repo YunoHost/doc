@@ -59,10 +59,13 @@ Pour cela, vous pouvez aller dans la partie Diagnostic (section Système de base
 
 Vérifiez que vos applications installées fonctionnent... Si elles ne fonctionnent pas, il est recommandé de tenter de les mettre à jour. (ou bien de manière générale, il est recommandé de les mettre à jour même si elles fonctionnent !).
 
+
 Si votre app est cassée et que vous étiez déjà sur la dernière version d'une application, vous pouvez relancer la mise à jour grâce à l'option `-f`:
 ```
 yunohost app upgrade -f NOM_APP
 ```
+
+!!! Nous savons que les applications suivantes doivent être mises à jour de force: my_webapp, jupiterlab, weblate. Contrairement, aux mises à jours majeures précédentes, la plupart des applications python3 comme borg ou django ne devraient plus nécessiter de mise à jour pour refonctionner.
 
 ## Soucis (mineurs) connus après la migration
 

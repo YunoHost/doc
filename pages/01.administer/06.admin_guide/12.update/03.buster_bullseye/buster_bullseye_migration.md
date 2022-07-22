@@ -64,5 +64,7 @@ If your app is broken and you were already with the last version, you can rerun 
 yunohost app upgrade -f APP_NAME
 ```
 
+!!! We know that the following applications need to be updated by force: my_webapp, jupiterlab, weblate. Contrary to previous major updates, most python3 applications like borg or django should not need an update to work again.
+
 ## Current known (minor) issues after the migration
 
