@@ -290,7 +290,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | torrelay |  |  | [Package Draft](https://github.com/matlink/torrelay_ynh) |
 | Tracim |  | [Upstream](https://github.com/tracim/tracim) |  |
 | Traccar | Modern GPS Tracking Platform | [Upstream](https://github.com/traccar/traccar) |  |
-| [Traggo](https://traggo.net/) | Tag-based time tracking tool | [Upstream](https://github.com/traggo/server) | |
 | transpay | Interface to receive and manage donations with Stripe |  | [Package Draft](https://github.com/YunoHost-Apps/transpay_ynh) |
 | transwhat | A gateway to WhatsApp from Jabber |  | [Package Draft](https://github.com/Josue-T/transwhat_ynh) |
 | [Tryton](https://www.tryton.org/) | A solid ERP system |  |  |
