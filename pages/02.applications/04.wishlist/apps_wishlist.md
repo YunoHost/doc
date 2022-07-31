@@ -311,6 +311,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Whoogle | A metasearch engine | [Upstream](https://github.com/benbusby/whoogle-search) |  |
 | [Wikiless](https://wikiless.org/) | A free open source alternative Wikipedia front-end focused on privacy. | [Upstream](https://codeberg.org/orenom/wikiless) |  |
 | [WikiSuite](https://wikisuite.org/Software) | The most comprehensive and integrated Open Source enterprise solution. | [Upstream](https://gitlab.com/wikisuite) |  |
+| [Winter CMS](https://wintercms.com/) | Powerful Laravel based CMS |  |  |
 | [wildfly](https://wildfly.org) |  |  | [Package Draft](https://github.com/YunoHost-Apps/wildfly_ynh) |
 | Wisemapping | An online mind mapping editor | [Upstream](https://bitbucket.org/wisemapping/wisemapping-open-source) | [Package Draft](https://github.com/YunoHost-Apps/wisemapping_ynh) |
 | WildDuck | Opinionated email server | [Upstream](https://github.com/nodemailer/wildduck) |  |
