@@ -1,5 +1,0 @@
-{% extends "forms/field.html.twig" %}
-
-{% block field %}
-<input type="hidden" name="__unique_form_id__" value="{{ form.uniqueid() ?? random_string(20) }}" />
-{% endblock %}
