@@ -73,7 +73,10 @@ RUN (crontab -l; echo "* * * * * cd /var/www/html;/usr/local/bin/php bin/grav sc
 RUN git clone --depth 1  https://github.com/getgrav/grav-theme-learn4 /var/www/html/user/themes/learn4
 
 # Copy plugins
-RUN git clone --depth 1 https://github.com/YunoHost/doc-dev /var/www/html/user/plugins
+RUN curl -o doc-dev.zip -SL https://github.com/YunoHost/doc-dev/archive/refs/heads/main.zip && \
+    unzip doc-dev.zip && \
+    mv -T /var/www/doc-dev-main/plugins /var/www/html/user/plugins && \
+    rm doc-dev.zip
 
 # Return to root user
 USER root
