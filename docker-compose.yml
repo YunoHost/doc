@@ -5,8 +5,7 @@ services:
     ports:
       - 8000:80
     volumes:
-      - ./themes:/var/www/html/user/themes
+      - ./themes/yunohost-docs:/var/www/html/user/themes/yunohost-docs
       - ./config:/var/www/html/user/config
       - ./pages:/var/www/html/user/pages
       - ./images:/var/www/html/user/images
-      - ./dev/plugins:/var/www/html/user/plugins
