@@ -63,20 +63,15 @@ WORKDIR /var/www
 RUN curl -o grav-admin.zip -SL https://getgrav.org/download/core/grav-admin/${GRAV_VERSION} && \
     unzip grav-admin.zip && \
     mv -T /var/www/grav-admin /var/www/html && \
-    rm grav-admin.zip && \
-    rm -rf /var/www/html/user/plugins
+    rm grav-admin.zip
+
+# Install plugins
+WORKDIR /var/www/html
+
+RUN bin/gpm install admin email feed git-sync langswitcher presentation shortcode-core anchors error flex-objects highlight login presentation-deckset tntsearch breadcrumbs external_links form image-captions markdown-notices problems
 
 # Create cron job for Grav maintenance scripts
 RUN (crontab -l; echo "* * * * * cd /var/www/html;/usr/local/bin/php bin/grav scheduler 1>> /dev/null 2>&1") | crontab -
-
-# Copy base theme
-RUN git clone --depth 1  https://github.com/getgrav/grav-theme-learn4 /var/www/html/user/themes/learn4
-
-# Copy plugins
-RUN curl -o doc-dev.zip -SL https://github.com/YunoHost/doc-dev/archive/refs/heads/main.zip && \
-    unzip doc-dev.zip && \
-    mv -T /var/www/doc-dev-main/plugins /var/www/html/user/plugins && \
-    rm doc-dev.zip
 
 # Return to root user
 USER root
