@@ -79,6 +79,8 @@ USER root
 # Copy init scripts
 # COPY docker-entrypoint.sh /entrypoint.sh
 
+COPY --chown=1000:1000 themes/learn4 /var/www/html/user/themes/learn4
+
 # provide container inside image for data persistence
 VOLUME ["/var/www/html/backup", "/var/www/html/user/themes/yunohost-docs", "/var/www/html/logs", "/var/www/html/user/pages", "/var/www/html/user/config", "/var/www/html/user/images"]
 
