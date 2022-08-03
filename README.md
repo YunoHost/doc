@@ -7,6 +7,13 @@ Please report [issues on YunoHost bugtracker](https://github.com/YunoHost/issues
 
 # Contributing
 
+This repo use a **submodule** to provide the theme. So when you clone use: 
+
+```shell
+git clone --recursive https://github.com/YunoHost/doc.git
+```
+
+
 You can refer to the page on [writing documentation](https://yunohost.org/write_documentation).
 
 If you know docker, you can run:
