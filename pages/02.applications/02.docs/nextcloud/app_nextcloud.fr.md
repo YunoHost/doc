@@ -146,7 +146,18 @@ sudo -u nextcloud php7.3 occ files:scan --all
 C'est terminé. À présent testez si tout va bien, essayez de vous connecter à votre instance Nextcloud, envoyer un fichier, vérifiez sa bonne synchronisation.
 
 ### Partager un dossier entre Nextcloud et une application
-Exemple avec Jellyfin, Funkwhale ou Transmission
+Il est relativement simple de monter des dossiers accessibles depuis nextcloud en lecture/écriture et de les 
+partager avec d'autres applications (par exemple [Jellyfin](app_jellyfin), [Funkwhale](app_funkwhale), [Transmission]
+(app_transmission), ...)
+
+Il Vous fait commencer par monter un dossier qui sera disponible pour votre application (je prends jellyfin dans mon 
+exemple). Je commence donc par créer un nouveau dossier.
+```bash
+mkdir /media/data/jellyfin
+```
+
+Il nous faut maintenant créer un groupe qui pourra faire la liaison entre les applications. Ici mon groupe se nomme 
+`multimedia`
 ```bash
 sudo su
 
@@ -155,8 +166,11 @@ groupadd multimedia
 usermord nextcloud -a -G multimedia
 usermord jellyfin -a -G multimedia
 
-chown nextcloud:multimedia -R /var/Multimedia
+chown nextcloud:multimedia -R /media/data/jellyfin
 ```
+
+Dans l'interface de vos applications vous pouvez ajouter ce chemin, il sera accessible pour les 2 applications, dans 
+`Nextcloud` > `Paramètres` > `Administration` > `Stockage externe`
 
 ### Nextcloud et Cloudflare
 
