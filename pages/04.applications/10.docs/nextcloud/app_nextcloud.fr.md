@@ -9,28 +9,31 @@ routes:
 
 ![logo de Nextcloud](image://nextcloud_logo.png)
 
- - [Découverte de l'environnement de Nextcloud](#EnvironnementNextcloud)
- - [Logiciels Clients pour mobile et ordinateur](#LogicielsClients)
- - [Manipulations & Problèmes rencontrés utiles](#ManipulationsUtiles)
-    - [Ajouter de l'espace à Nextcloud](#AjoutEspace)
- - [Applications tiers](#AppsTiers)
+ - [Découverte de l'environnement de Nextcloud](#environnement-nextcloud)
+ - [Logiciels Clients pour mobile et ordinateur](#logiciels-clients)
+ - [Manipulations & Problèmes rencontrés utiles](#manipulations-utiles)
+    - [Ajouter de l'espace à Nextcloud](#ajout-espace)
+    - [Partager un dossier entre nextcloud et une application](#partager-un-dossier-entre-nextcloud-et-une-application)
+    - [Nextcloud et Cloudlare](#nextcloud-et-cloudflare)
+ - [Applications tierce](#application-tierce)
+    - [A propos de keeweb](#à-propos-de-keeweb)
  - [Liens utiles](#liensutiles)
 
-Nextcloud est un service d'hébergement de fichiers, de nombreuses applications peuvent être installées afin de lui offrir de nouvelles fonctionnalités tel qu'un agenda, un répertoire de contacts, des notes et pleins d'autres possibles (vous pouvez trouver quelques applications dans la partie [applications tiers](#AppsTiers) mais il en existe une multitude suivant vos besoins).
+Nextcloud est un service d'hébergement de fichiers, de nombreuses applications peuvent être installées afin de lui offrir de nouvelles fonctionnalités tel qu'un agenda, un répertoire de contacts, des notes et pleins d'autres possibles (vous pouvez trouver quelques applications dans la partie [applications tiers](#application-tierce) mais il en existe une multitude suivant vos besoins).
 
-## Découverte de l'environnement de Nextcloud<a name="EnvironnementNextcloud" href=""></a>
 
+## Découverte de l'environnement de Nextcloud
 Du fait de la constitution de Nextcloud, une base avec des applications tiers à installer, ce chapitre ne concernera que la base de nextcloud sans applications ajoutés. Plus d'informations sur les applications dans la partie dédiée ou sur le catalogue d'application de Nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com).  
 Nextcloud est avant tout un service de cloud (comme Seafile et d'autres logiciels), il permet une synchronisation et le partage de fichiers sur internet et entre plusieurs terminaux (ordinateurs, smartphone) mais aussi avec plusieurs personnes.
 
-## Logiciels Clients<a name="LogicielsClients" href=""></a>
 
+## Logiciels Clients
 Il existe des logiciels clients pour de nombreux terminaux. Vous pouvez les retrouver sur le site de Nextcloud : [nextcloud.com/install/#install-clients](https://nextcloud.com/install/#install-clients)
 
-## Manipulations utiles & problèmes rencontrés<a name="ManipulationsUtiles" href=""></a>
 
-### Ajouter de l'espace à Nextcloud<a name="AjoutEspace" href=""></a>
+## Manipulations utiles & problèmes rencontrés
 
+### Ajouter de l'espace à Nextcloud
 La solution I. permet d'ajouter un lien vers un dossier local ou distant.  
 La solution II. permet de déplacer l'espace de stockage principal de Nextcloud.
 
@@ -142,6 +145,18 @@ sudo -u nextcloud php7.3 occ files:scan --all
 
 C'est terminé. À présent testez si tout va bien, essayez de vous connecter à votre instance Nextcloud, envoyer un fichier, vérifiez sa bonne synchronisation.
 
+### Partager un dossier entre Nextcloud et une application
+Exemple avec Jellyfin, Funkwhale ou Transmission
+```bash
+sudo su
+
+groupadd multimedia
+
+usermord nextcloud -a -G multimedia
+usermord jellyfin -a -G multimedia
+
+chown nextcloud:multimedia -R /var/Multimedia
+```
 
 ### Nextcloud et Cloudflare
 
@@ -164,6 +179,11 @@ Les options à désactiver (Off) sont :
 - Email Obfuscation
 
 Sauvegarder et nettoyer vos caches (Cloudflare, navigateur...) et le tour est joué.
+
+# Application Tierce
+Certaine application sont disponnible directement dans Nextcloud.
+![image](https://user-images.githubusercontent.com/3066684/182874942-c29356b4-046f-4138-96c9-eee88abe8448.png)
+
 
 ## À propos de Keeweb
 
