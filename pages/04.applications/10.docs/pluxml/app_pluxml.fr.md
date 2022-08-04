@@ -8,6 +8,7 @@ routes:
 ---
 
 ![PluXml_logo](image://PluXml_logo.png)
+
 [![Install PluXml with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=pluxml) [![Integration level](https://dash.yunohost.org/integration/pluxml.svg)](https://dash.yunohost.org/appci/app/pluxml)
 
 ### Index
