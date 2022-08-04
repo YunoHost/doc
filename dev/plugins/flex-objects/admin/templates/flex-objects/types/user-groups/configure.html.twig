@@ -1,0 +1,9 @@
+{% extends 'flex-objects/types/default/configure.html.twig' %}
+
+{% set back_route = back_route ?? ('/' ~ route.getRoute(1, -1)) %}
+
+{% block content_top %}
+    {% include 'flex-objects/layouts/accounts/partials/top.html.twig' %}
+
+    {{ parent() }}
+{% endblock %}

@@ -1,0 +1,32 @@
+{% set layout = layout ?? form.layout ?? 'default' %}
+{% set field_layout = layout %}
+
+{% set form = forms('login-twofa') %}
+{% set client_side_validation = form.client_side_validation is not null ? form.client_side_validation : config.plugins.form.client_side_validation|default(true) %}
+{% set inline_errors = form.inline_errors is not null ? form.inline_errors : config.plugins.form.inline_errors(false) %}
+
+<form method="post" action="{{ (base_url_relative ~ uri.path)|e }}" class="{{ form_outer_classes }} twofa-form">
+  {% for field in form.fields %}
+    {% set field = prepare_form_field(field, field_name) %}
+    {% if field %}
+      {% set value = field.name == 'username' ? username : '' %}
+      {# {% set value = form.value(field.name) %} #}
+      {% set field_templates = include_form_field(field.type, field_layout) %}
+      {% block field %}
+        {% include field_templates ignore missing %}
+      {% endblock %}
+    {% endif %}
+  {% endfor %}
+
+  {{ nonce_field('login-form', 'login-form-nonce')|raw }}
+
+  <div class="{{ form_button_outer_classes ?: 'form-actions secondary-accent' }}">
+      <div class="form-actions primary-accent">
+          <button type="submit" class="{{ form_button_classes ?: 'button primary' }}" name="task" value="login.twofa"><i class="fa fa-sign-in"></i>  {{ 'PLUGIN_LOGIN.BTN_LOGIN'|t }}</button>
+
+          <button type="submit" class="{{ form_button_classes ?: 'button secondary' }}" name="task" value="login.logout">{{ 'PLUGIN_LOGIN.BTN_CANCEL'|t }}</button>
+
+
+      </div>
+  </div>
+</form>

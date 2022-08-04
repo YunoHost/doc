@@ -1,0 +1,27 @@
+{% set mailto = object.fullname|default(object.key) ~ ' <' ~ object.email ~ '>' %}
+{% set avatar = object.getAvatarUrl %}
+
+<div class="entry-details">
+    {% if link %}
+    <a href="{{ link|e }}">
+        {{ block('avatar') }}
+    </a>
+    {% else %}
+    {% block avatar %}
+        <img src="{{ avatar|e }}" alt="">
+    {% endblock %}
+    {% endif %}
+    <div>
+        <a href="mailto:{{ mailto|e }}">{{ mailto|e }}</a>
+    </div>
+    {% if object.title %}
+    <div>
+        Role: {{ object.title|e }}
+    </div>
+    {% endif %}
+    {% if link %}
+    <div>
+        <a href="{{ link }}">See Details</a>
+    </div>
+    {% endif %}
+</div>

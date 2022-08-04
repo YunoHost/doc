@@ -1,0 +1,43 @@
+{# Format specification: https://www.jsonfeed.org/version/1/ #}
+{% set collection = collection|default(page.collection) %}
+{% set jsonfeed = {
+    "version" : "https://jsonfeed.org/version/1",
+    "title": collection.params.title,
+    "home_page_url": page.url(true),
+    "feed_url": uri.rootUrl(true)~uri.uri(),
+    "description": collection.params.description,
+    "author": {"name": site.author.name}
+} %}
+
+{% set itemList = [] %}
+{% for item in collection %}
+    {%- set post = {
+        "title": item.title|e,
+        "date_published": item.date|date('Y-m-d\\TH:i:sP'),
+        "id": item.url(true),
+        "url": item.url(true),
+        "content_html": item.content|safe_truncate_html(collection.params.length)
+    } %}
+    {% set banner = item.media.images|first %}
+
+    {% if item.header.metadata.description %}
+        {%- set post = post|merge({"summary": item.header.metadata.description|e}) %}
+    {% endif %}
+
+    {% if collection.params.show_last_modified %}
+        {%- set post = post|merge({"date_modified": item.modified|date('Y-m-d\\TH:i:sP')}) %}
+    {% endif %}
+
+    {% if item.taxonomy.tag %}
+        {%- set post = post|merge({"tags": item.taxonomy.tag}) %}
+    {% endif %}
+
+    {% set image = item.media.images|first %}
+    {% if image %}
+        {%- set post = post|merge({"image": image.url(true)}) %}
+    {% endif %}
+    {%- set itemList = itemList|merge([post]) %}
+{% endfor %}
+
+{% set jsonfeed = jsonfeed|merge({"items": itemList}) %}
+{{- jsonfeed|json_encode|raw }}

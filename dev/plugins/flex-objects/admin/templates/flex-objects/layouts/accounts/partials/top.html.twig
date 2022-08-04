@@ -1,0 +1,25 @@
+{% set active_html = 'class="active"' %}
+{% set is_configure = route.gravParam('') is same as('configure') %}
+{% set authorize = directory.config('admin.views.configure.authorize') ?? directory.config('admin.configure.authorize') ?? 'admin.super' %}
+
+{% if allowed %}
+<div class="form-tabs">
+    <div class="tabs-nav">
+        {% for name,title in {'user-accounts': 'PLUGIN_ADMIN.USERS', 'user-groups': 'PLUGIN_ADMIN.GROUPS'} %}
+        {% set current = flex.directory(name) %}
+        {% if current and current.isAuthorized('list', 'admin', user) %}
+        {% set active = not is_configure and nav_route|starts_with(flex.adminRoute(current)|trim('/') ~ '/') %}
+        <a {{active ? active_html|raw }} href="{{ admin_route(flex.adminRoute(current)) }}">
+            <span>{{ title|tu }}</span>
+        </a>
+        {% endif %}
+        {% endfor %}
+
+        {% if user.authorize(authorize) or user.authorize('admin.super') %}
+        <a {{is_configure ? active_html|raw }} href="{{ admin_route('/accounts/configure') }}">
+            <span>{{ 'PLUGIN_ADMIN.CONFIGURATION'|tu }}</span>
+        </a>
+        {% endif %}
+    </div>
+</div>
+{% endif %}

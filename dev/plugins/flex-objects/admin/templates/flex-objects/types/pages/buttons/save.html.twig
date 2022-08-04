@@ -1,0 +1,23 @@
+{% set task = task ?? 'save' %}
+<div id="titlebar-save" class="button-group">
+    <button class="button success" type="submit" name="task" value="{{ task }}" lang="{{ language }}" form="blueprints">
+        <i class="fa fa-check"></i> {{ "PLUGIN_ADMIN.SAVE"|tu }}
+    </button>
+    {% if can_translate %}
+        {% set untranslated = admin_languages|array_diff(object_languages|merge([language])) %}
+        {% if count(untranslated) %}
+            <button id="titlebar-button-save" type="button" class="button success dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu lang-switcher">
+                {% for lang_code in untranslated %}
+                    <li>
+                        <button class="button success task" type="submit" name="task" value="saveas" lang="{{ lang_code }}" form="blueprints">
+                            {{ "PLUGIN_ADMIN.SAVE_AS"|tu }} {{ all_languages[lang_code] ?? lang_code }}
+                        </button>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endif %}
+</div>

@@ -1,0 +1,4 @@
+{# DEPRECATED: Do not override this file! Use forms/layouts/button/[FORM_LAYOUT]-button.html.twig instead #}
+
+{% set layout = layout ?? form.layout ?? 'default' %}
+{% extends ["forms/layouts/button/#{layout}-button.html.twig", 'forms/layouts/button/default-button.html.twig'] %}

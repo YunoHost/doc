@@ -1,0 +1,21 @@
+<div id="offline-status">
+    <span><i class="fa fa-fw fa-plane"></i> You are offline</span>
+</div>
+{% set flex = grav['flex_objects'] ?? null %}
+{% set user = admin.user %}
+{% if flex and user.hasFlexFeature('user') %}
+    {% set route = flex.adminRoute(user) %}
+{% else %}
+    {% set route = '/user/' ~ user.username %}
+{% endif %}
+
+<div id="admin-user-details">
+    <a href="{{ admin_route(route) }}">
+        {% include 'partials/nav-user-avatar.html.twig' %}
+
+        <div class="admin-user-names">
+            <h4>{{ user.fullname }} {% if user.twofa_enabled and config.plugins.admin.twofa_enabled %}<span class="badge">2FA</span>{% endif %}</h4>
+            <h5>{{ user.title }}</h5>
+        </div>
+    </a>
+</div>

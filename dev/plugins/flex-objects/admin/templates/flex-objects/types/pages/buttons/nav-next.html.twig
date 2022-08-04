@@ -1,0 +1,9 @@
+{% if next_url %}
+<a id="titlebar-button-nav-next" class="button" href="{{ next_url }}" title="{{ title }}">
+    <i class="fa fa-chevron-right"></i>
+</a>
+{% else %}
+    <span class="button disabled">
+        <i class="fa fa-chevron-right"></i>
+    </span>
+{% endif %}

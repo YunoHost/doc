@@ -1,0 +1,34 @@
+{% set blueprints = blueprints ?? form.blueprint %}
+{% set data = data ?? form.data %}
+{% set form_id = form_id ?? 'blueprints' %}
+{% set scope = scope ?: 'data.' %}
+{% set field_layout = 'admin' %}
+
+{% if admin.findFormFields('file', blueprints.fields) %}
+    {% set multipart = ' enctype="multipart/form-data"' %}
+{% endif %}
+
+<form {% if form_action %}action="{{ form_action }}"{% endif %} id="{{ form_id }}" method="post" data-grav-form="{{ form_id }}" {% if form.novalidate %}novalidate{% endif %} data-grav-keepalive="true"{{ multipart|raw }}>
+    {% embed 'forms/default/fields.html.twig' with {name: null, fields: blueprints.fields} %}
+        {% block inner_markup_field_open %}<div class="block block-{{ field.type }}">{% endblock %}
+        {% block inner_markup_field_close %}</div>{% endblock %}
+    {% endembed %}
+
+    {% if data.extra %}
+    {% for name, value in data.extra %}
+        {% if name not in ['_json','task','admin-nonce'] %}
+            {% set field = {name: '_json.' ~ name} %}
+            {% set value = value|json_encode %}
+            {% include 'forms/fields/hidden/hidden.html.twig' %}
+        {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    {% if form %}
+        {% include "forms/fields/formname/formname.html.twig" %}
+        {% include 'forms/fields/uniqueid/uniqueid.html.twig' %}
+        {{ nonce_field(form.getNonceAction(), form.getNonceName())|raw }}
+    {% else %}
+        {{ nonce_field('admin-form', 'admin-nonce')|raw }}
+    {% endif %}
+</form>

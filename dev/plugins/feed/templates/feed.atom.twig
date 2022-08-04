@@ -1,0 +1,45 @@
+{# Format specification: https://tools.ietf.org/html/rfc4287 #}
+{% set collection = collection|default(page.collection) %}
+{% set feed_updated = 0 %}
+{% for page in collection %}
+    {%- set feed_updated = max(feed_updated, page.date) %}
+    {%- if collection.params.show_last_modified %}
+        {%- set feed_updated = max(feed_updated, page.modified) %}
+    {%- endif %}
+{% endfor %}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>{{ collection.params.title }}</title>
+    <link href="{{ uri.rootUrl(true)~uri.uri() }}" rel="self" />
+    <subtitle>{{ collection.params.description }}</subtitle>
+    <updated>{{ feed_updated|date("Y-m-d\\TH:i:sP") }}</updated>
+    <author>
+        <name>{{ site.author.name }}</name>
+    </author>
+    <id>{{ page.url(true) }}</id>
+    {% for item in collection %}
+    {% set banner = item.media.images|first %}
+    <entry>
+        <title>{{ item.title|e }}</title>
+        <id>{{ item.url(true) }}</id>
+        {% if collection.params.show_last_modified %}
+        <updated>{{ item.modified|date("Y-m-d\\TH:i:sP") }}</updated>
+        {% else %}
+        <updated>{{ item.date|date("Y-m-d\\TH:i:sP") }}</updated>
+        {% endif %}
+        <published>{{ item.date|date("Y-m-d\\TH:i:sP") }}</published>
+        <link href="{{ item.url(true) }}"/>
+        {% for tag in item.taxonomy.tag %}
+        <category term="{{ tag|e }}" />
+        {% endfor %}
+        <content type="html">
+            <![CDATA[
+            {% if banner %}
+            {{ banner.cropZoom(1200,800).html|raw }}
+            {% endif %}
+            {{ item.content|safe_truncate_html(collection.params.length)|raw }}
+            ]]>
+        </content>
+    </entry>
+    {% endfor %}
+</feed>

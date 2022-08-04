@@ -1,0 +1,155 @@
+{% macro toggle(id, title, filters, name = null) %}
+    {% set name = id|fieldName %}
+    {% set filter = filters[name] ?? null %}
+    {% set value = filter is null ? 0 : (not filter)|int+1 %}
+    {% set classes = ['status-unchecked', 'status-checked', 'status-indeterminate'] %}
+
+    <span class="checkboxes indeterminate toggleable {{ classes[value] }}" data-_check-status="{{ value }}">
+        <input type="checkbox" id="{{ id }}" name="{{ name }}" indeterminate="{{ value == 2 ? 'true' : 'false' }}" value="{{ filter }}" {% if value == 1 %}checked{% endif %}>
+        <label for="{{ id }}">{{ title }}</label>
+    </span>
+{% endmacro %}
+
+{% import _self as macros %}
+
+{% block directory %}
+    {% set filters = grav.request.getCookieParams()['grav-admin-flexpages']|base64_decode|json_decode(true)['filters'] %}
+    {% set hidePanel = filters|length == 0 or (filters|length == 1 and filters['filters[search]']) %}
+    <div id="pages-content-wrapper">
+        <div id="pages-filters">
+            <form>
+                <div class="filters-bar">
+                    <input type="text"
+                        placeholder="{{ 'PLUGIN_FLEX_OBJECTS.ACTION.SEARCH_PLACEHOLDER'|tu }}"
+                        name="filters[search]"
+                        value="{{ filters['filters[search]'] }}" />
+                    <a href="#" class="adv-options button-border {{ hidePanel ? 'close' : 'open' }}">
+                        {{ 'PLUGIN_FLEX_OBJECTS.ACTION.ADVANCED_OPTIONS'|tu }}
+                    </a>
+                </div>
+
+                <div class="filters-advanced {{ hidePanel ? 'hide' }}">
+                    <fieldset>
+                        <legend>
+                            {{ 'PLUGIN_FLEX_OBJECTS.FILTER.PAGE_ATTRIBUTES'|tu }}
+                        </legend>
+                        {{ macros.toggle('filters.routable', 'Routable', filters) }}
+                        {{ macros.toggle('filters.module', 'Module', filters) }}
+                        {{ macros.toggle('filters.visible', 'Visible', filters) }}
+                        {{ macros.toggle('filters.published', 'Published', filters) }}
+                        {{ macros.toggle('filters.translated', 'Translated', filters) }}
+                        {{ macros.toggle('filters.folder', 'Empty Folder', filters) }}
+                    </fieldset>
+
+                    {% set selected = filters['filters[page_type]']|split(',') %}
+                    {% set page_types = admin.types(null) %} {# directory.config('filters.ignore_page_types') #}
+                    <fieldset>
+                        <legend>
+                            {{ 'PLUGIN_FLEX_OBJECTS.FILTER.PAGE_TYPES'|tu }}
+                        </legend>
+                        {% for name,title in page_types %}
+                            <span class="checkboxes toggleable">
+                                <input type="checkbox" id="filters.type.{{ name }}" name="filters[page_type][]" value="{{ name }}" {% if name in selected %}checked{% endif %}>
+                                <label for="filters.type.{{ name }}">{{ title }}</label>
+                            </span>
+                        {% endfor %}
+                    </fieldset>
+
+                    {% set module_types = admin.modularTypes(null) %} {# directory.config('filters.ignore_module_types') #}
+                    {% if module_types %}
+                        <fieldset>
+                            <legend>
+                                {{ 'PLUGIN_FLEX_OBJECTS.FILTER.MODULAR_TYPES'|tu }}
+                            </legend>
+                            {% for name,title in module_types %}
+                                <span class="checkboxes toggleable">
+                                    <input type="checkbox" id="filters.type.{{ name }}" name="filters[page_type][]" value="{{ name }}" {% if name in selected %}checked{% endif %}>
+                                    <label for="filters.type.{{ name }}">{{ title }}</label>
+                                </span>
+                            {% endfor %}
+                        </fieldset>
+                    {% endif %}
+
+                    <a href="#" class="apply-filters button-border" data-filters="apply">
+                        {{ 'PLUGIN_FLEX_OBJECTS.ACTION.APPLY_FILTERS'|tu }}
+                    </a>
+                    <a href="#" class="reset-defaults button-border" data-filters="reset">
+                        {{ 'PLUGIN_FLEX_OBJECTS.ACTION.RESET_FILTERS'|tu }}
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        <div class="grav-loading">
+            <div class="grav-loader">{{ 'PLUGIN_FLEX_OBJECTS.STATE.LOADING'|tu }}</div>
+        </div>
+        <div id="pages-columns" style="margin-top: -1rem;"
+             data-lang-url="{{ grav.uri.getCurrentRoute.withoutParams.withExtension('').withLanguage('%LANG%').toString(true) }}"></div>
+
+    </div>
+
+    {# Modals #}
+    <div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+        {% include 'partials/blueprints-new.html.twig' with { blueprints: admin.blueprints('admin/pages/new'), data: obj_data, form_id: 'new-page' } %}
+    </div>
+
+    <div class="remodal" data-remodal-id="modal-folder" data-remodal-options="hashTracking: false">
+        {% include 'partials/blueprints-new-folder.html.twig' with { blueprints: admin.blueprints('admin/pages/new_folder'), data: obj_data, form_id: 'new-folder' } %}
+    </div>
+
+    <div class="remodal" data-remodal-id="module" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+        {% include 'partials/blueprints-new.html.twig' with { blueprints: admin.blueprints('admin/pages/modular_new'), data: obj_data, form_id: 'new-module' } %}
+    </div>
+
+    {% for key, add_modal in config.plugins.admin.add_modals %}
+    <div class="remodal {{ add_modal.modal_classes|defined('') }}" data-remodal-id="modal-add_modal-{{ key }}" data-remodal-options="hashTracking: false, closeOnOutsideClick: false">
+        {% include add_modal.template|defined('partials/blueprints-new.html.twig') with {
+            blueprints: admin.blueprints(add_modal.blueprint),
+            data: obj_data,
+            form_id: 'add-modal'
+        }|merge(add_modal.with|defined({})) %}
+    </div>
+    {% endfor %}
+
+    <div class="remodal" data-remodal-id="modal-page-copy" data-remodal-options="hashTracking: false">
+      {% include 'partials/blueprints-copy.html.twig' with { blueprints: admin.blueprints('admin/pages/copy'), data: obj_data, form_id: 'copy' } %}
+    </div>
+
+    <div class="remodal parents-container" data-remodal-id="parents"
+         data-remodal-options="hashTracking: false, stack: true">
+        <form>
+            <h1>Parents</h1>
+            <div class="grav-loading">
+                <div class="grav-loader">{{ 'PLUGIN_FLEX_OBJECTS.STATE.LOADING'|tu }}</div>
+            </div>
+            <div class="parents-content"></div>
+            <div class="button-bar">
+                <a class="button secondary remodal-cancel" data-remodal-action="cancel" href="#">
+                    <i class="fa fa-fw fa-close"></i> {{ "PLUGIN_ADMIN.CANCEL"|tu }}</a>
+                <a class="button" data-parents-select href="#">
+                    <i class="fa fa-fw fa-check"></i> {{ "PLUGIN_ADMIN.CONTINUE"|tu }}</a>
+            </div>
+        </form>
+    </div>
+
+    <div class="remodal" data-remodal-id="delete" data-remodal-options="hashTracking: false">
+        <form>
+            <h1>{{ "PLUGIN_ADMIN.MODAL_DELETE_PAGE_CONFIRMATION_REQUIRED_TITLE"|tu }}</h1>
+            <p class="bigger">
+                {% if context %}
+                    <strong>{{ "PLUGIN_ADMIN.PAGE"|tu }}: {{ context.title }}</strong>
+                {% endif %}
+            </p>
+            <p class="bigger">
+                {{ "PLUGIN_ADMIN.MODAL_DELETE_PAGE_CONFIRMATION_REQUIRED_DESC"|tu }}
+            </p>
+            <br>
+            <div class="button-bar">
+                <button data-remodal-action="cancel" class="button secondary remodal-cancel"><i
+                            class="fa fa-fw fa-close"></i> {{ "PLUGIN_ADMIN.CANCEL"|tu }}</button>
+                <a class="button disable-after-click" data-delete-action href="#"><i
+                            class="fa fa-fw fa-check"></i> {{ "PLUGIN_ADMIN.CONTINUE"|tu }}</a>
+            </div>
+        </form>
+    </div>
+{% endblock %}

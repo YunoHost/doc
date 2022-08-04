@@ -1,0 +1,161 @@
+{% set gpm = admin.gpm() %}
+{% set installed = gpm.isThemeInstalled(admin.route) %}
+{% set isTestingRelease = gpm.isTestingRelease(theme.slug) %}
+{% set gumroad_loaded = false %}
+
+{% set state = 'inactive' %}
+{% if (config.get('system.pages.theme') == theme.slug) %}{% set state = 'active' %}{% endif %}
+
+<div class="grav-update theme" data-gpm-theme="{{ admin.route }}">
+</div>
+
+<h1>
+    {{ theme.name }}
+    {% if admin.isTeamGrav(theme) %}
+        <small><span class="info-reverse"><i class="fa fa-check-circle" title="{{ "PLUGIN_ADMIN.GRAV_OFFICIAL_THEME"|t }}"></i></span></small>
+    {% endif %}
+    {% if admin.isPremiumProduct(theme) %}
+        <small><span class="badge warning premium"><i class="fa fa-star-o"></i> {{ "PLUGIN_ADMIN.PREMIUM_PRODUCT"|t }}</span></small>
+    {% endif %}
+    {% if theme.symlink %}
+    <small class="hint--bottom"  data-hint="{{ "PLUGIN_ADMIN.THEME_SYMBOLICALLY_LINKED"|t }}">
+        <i class="fa fa-fw fa-link"></i>
+    </small>
+    {% endif %}
+    <small>{{ theme.version ? 'v' ~ theme.version }}</small>
+    {% if isTestingRelease %}<span class="gpm-testing">test release</span>{% endif %}
+</h1>
+<div class="gpm-item-info">
+    <i class="gpm-item-icon fa fa-fw fa-{{  theme.icon }}"></i>
+    <table>
+        {% if theme.version %}
+        <tr>
+            <td>{{ "PLUGIN_ADMIN.VERSION"|t }}:</td>
+            <td class="double">{{ theme.version }}</td>
+        </tr>
+        {% endif %}
+        {% if theme.author %}
+            <tr>
+                <td>{{ "PLUGIN_ADMIN.AUTHOR"|t }}:</td>
+                <td class="double">
+                    {% if theme.author.url %}
+                        <a href="{{ theme.author.url }}" target="_blank" rel="noopener noreferrer">{{ theme.author.name }}</a>
+                    {% else %}
+                        {{ theme.author.name }}
+                    {% endif %}
+                    {% if theme.author.email %}
+                         - <a href="mailto:{{ theme.author.email }}">{{ theme.author.email }}</a>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endif %}
+        {% if theme.homepage %}
+        <tr>
+            <td>{{ "PLUGIN_ADMIN.HOMEPAGE"|t }}:</td>
+            <td class="double"><a href="{{ theme.homepage }}" target="_blank" rel="noopener noreferrer">{{ theme.homepage }}</a></td>
+        </tr>
+        {% endif %}
+        {% if theme.demo %}
+        <tr>
+            <td>{{ "PLUGIN_ADMIN.DEMO"|t }}:</td>
+            <td class="double"><a href="{{ theme.demo }}" target="_blank" rel="noopener noreferrer">{{ theme.demo }}</a></td>
+        </tr>
+        {% endif %}
+        {% if theme.bugs %}
+            <tr>
+                <td>{{ "PLUGIN_ADMIN.BUG_TRACKER"|t }}:</td>
+                <td class="double"><a href="{{ theme.bugs }}" target="_blank" rel="noopener noreferrer">{{ theme.bugs }}</a></td>
+            </tr>
+        {% endif %}
+        {% if theme.keywords %}
+            <tr>
+                <td>{{ "PLUGIN_ADMIN.KEYWORDS"|t }}:</td>
+                <td class="double">
+                   {{ theme.keywords|join(', ') }}
+                </td>
+            </tr>
+        {% endif %}
+        {% if theme.license %}
+            <tr>
+                <td>{{ "PLUGIN_ADMIN.LICENSE"|t }}:</td>
+                {% if theme.license|starts_with('http') %}
+                    <td class="double"><a href="{{ theme.license }}" target="_blank">{{ theme.license }}</a></td>
+                {% else %}
+                    <td class="double">{{ theme.license }}</td>
+                {% endif %}
+            </tr>
+        {% endif %}
+        {% if theme.description %}
+            <tr>
+                <td>{{ "PLUGIN_ADMIN.DESCRIPTION"|t }}:</td>
+                <td class="double">{{ theme.description_html|raw }}</td>
+            </tr>
+        {% endif %}
+
+        {% if theme.readme or theme.homepage %}
+            {% set readme_link = theme.readme ?: theme.docs|default(theme.homepage ~ '/blob/master/README.md') %}
+            <tr>
+                <td>{{ theme.readme ? "PLUGIN_ADMIN.README"|t : "PLUGIN_ADMIN.DOCS"|t }}:</td>
+                <td class="double"><a href="{{ readme_link }}" target="_blank" rel="noopener noreferrer">{{ readme_link }}</a></td>
+            </tr>
+        {% endif %}
+
+        {% if admin.gpm.findPackage(theme.slug, true).changelog %}
+        <tr>
+            <td>{{ "PLUGIN_ADMIN.CHANGELOG"|t }}:</td>
+            <td class="double"><a class="button button-small" href="#" data-remodal-target="changelog" data-remodal-changelog="{{ admin_route('/changelog/slug:' ~ theme.slug) }}"><i class="fa fa-binoculars"></i> View Changelog</a></td>
+        </tr>
+        {% endif %}
+    </table>
+</div>
+
+{% if installed %}
+  {% if state == 'active' %}
+    {% set data = admin.data('themes/' ~ admin.route) %}
+    {% include 'partials/blueprints.html.twig' with { data: data, blueprints: data.blueprints } %}
+  {% else %}
+    <div class="theme" data-gpm-theme="{{ theme.slug }}" data-gpm-name="{{ theme.name }}">
+      <div style="display:none;" class="gpm-name"><a>{{ theme.name }}</a></div>
+      <form>
+        <div class="form-field grid">
+          <div class="form-label block size-1-3">
+            <label>{{ "PLUGIN_ADMIN.ACTIVATION_REQUIRED"|t }}</label>
+          </div>
+          <div class="form-data block size-2-3">
+            <a class="button gpm-actions" data-remodal-target="theme-switch-warn" href="{{ uri.addNonce(base_url_relative ~ '/themes/' ~ theme.slug ~ '/task' ~ config.system.param_sep ~ 'activate', 'admin-form', 'admin-nonce') }}">
+              <i class="fa fa-power-off" aria-hidden="true"></i> {{ "PLUGIN_ADMIN.ACTIVATE"|t }} <strong>{{ theme.name }}</strong>
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="button-bar danger">
+      <span class="danger-zone"></span>
+      {% if not theme.symlink %}
+          <a class="button button-reinstall-package hidden" href="#" data-remodal-target="reinstall-package"><i class="fa fa-fw fa-repeat"></i> {{ "PLUGIN_ADMIN.REINSTALL_THEME"|t }}</a>
+      {% endif %}
+      <a class="button" href="#" data-remodal-target="remove-package"><i class="fa fa-fw fa-warning"></i> {{ "PLUGIN_ADMIN.REMOVE_THEME"|t }}</a>
+    </div>
+  {% endif %}
+{% else %}
+    <div class="button-bar success">
+        {% if (theme.premium and not admin.license(theme.slug)) %}
+            {% if not gumroad_loaded %}
+                {% set gumroad_loaded = true %}
+                <script src="//gumroad.com/js/gumroad.js"></script>
+            {% endif %}
+            <a class="gumroad-button button" href="https://gum.co/{{ theme.premium.permalink }}" target="_blank" data-gumroad-single-product="true"><i class="fa fa-shopping-cart"></i> {{ theme.premium.button|default('Purchase') }}</a>
+        {% else %}
+            <a class="button" href="#" data-remodal-target="add-package" data-packages-slugs="{{ theme.slug }}" data-theme-action="start-package-installation"><i class="fa fa-plus"></i> {{ "PLUGIN_ADMIN.INSTALL_THEME"|t }}</a>
+        {% endif %}
+    </div>
+{% endif %}
+
+{% include 'partials/modal-switch-theme.html.twig' with {theme_name: theme.name} %}
+{% include 'partials/modal-changes-detected.html.twig' %}
+{% include 'partials/modal-add-package.html.twig' with { type: 'theme' } %}
+{% include 'partials/modal-update-packages.html.twig' with { type: 'theme' } %}
+{% include 'partials/modal-remove-package.html.twig' with { type: 'theme', package: theme } %}
+{% include 'partials/modal-reinstall-package.html.twig' with { type: 'theme', package: theme } %}
+{% include 'partials/modal-changelog.html.twig' with { package: theme} %}

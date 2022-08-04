@@ -1,0 +1,36 @@
+{% macro loop(page, depth, twig_vars) %}
+    {% import _self as self %}
+
+    {% for p in page.children() %}
+        <li class="page-item" data-nav-id="{{ p.route }}">
+            <div class="row">
+                <span {{ p.children(0).count > 0 ? 'data-toggle="children"' : ''}} class="hint--bottom">
+                <i class="page-icon fa fa-fw fa-circle-o {{ p.children(0).count > 0 ? 'children-closed' : ''}} {{ p.isModule ? 'modular' : (not p.routable ? 'not-routable' : (not p.visible ? 'not-visible' : (not p.page ? 'folder' :  ''))) }}"></i>
+                </span>
+
+                <span data-hint="{{ p.header.routes.default ?: p.route }}" class="hint--bottom">
+                    <a data-page="{{ p.route }}" class="js__page-link page-link" href="#">{{ p.title }}</a>
+                </span>
+
+                <span class="page-home">{{ p.home ? '<i class="fa fa-home"></i>' }}</span>
+            </div>
+            {% if p.children().count > 0 %}
+
+                <ul class="depth-{{ depth + 1 }}" style="display:none;">
+                    {{ self.loop(p, depth + 1, twig_vars) }}
+                </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+{% endmacro %}
+
+{% import _self as macro %}
+
+<div class="pages-list-container clear block size-1-4">
+    <h5>{{ "PLUGIN_ADMIN.PAGES"|t }}</h5>
+    <div class="mediapicker-scroll">
+        <ul class="pages-list depth-0">
+            {{ macro.loop(pages, 0, _context) }}
+        </ul>
+    </div>
+</div>

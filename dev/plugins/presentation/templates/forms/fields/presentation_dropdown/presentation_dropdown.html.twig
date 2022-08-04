@@ -1,0 +1,47 @@
+{% extends "forms/field.html.twig" %}
+
+{% macro query(label, href, mode) %}
+    {% if mode is defined %}
+        {% if mode == 'view_notes' %}
+            {% set query = '?showNotes=true' %}
+        {% elseif mode == 'admin' %}
+            {% set query = '?admin=true' %}
+        {% elseif mode == 'admin_notes' %}
+            {% set query = '?admin=true&showNotes=true' %}
+        {% elseif mode == 'print' %}
+            {% set query = '?print-pdf=true' %}
+        {% elseif mode == 'print_notes' %}
+            {% set query = '?print-pdf=true&showNotes=true' %}
+        {% elseif mode == 'print_styled' %}
+            {% set query = '?print-pdf=true&theme=preset' %}
+        {% elseif mode == 'print_styled_notes' %}
+            {% set query = '?print-pdf=true&theme=preset&showNotes=true' %}
+        {% else %}
+            {% set query = '' %}
+        {% endif %}
+    {% endif %}
+    <a href="{{ href }}{{ query }}" target="_blank" class="button">{{ label|t|e('html_attr') }}</a>
+{% endmacro %}
+
+{% block field %}
+    {% import _self as self %}
+    {% if field.fields and context.modified != null %}
+        <div class="button-group">
+        {% set route = presentation_base_url ~ context.route %}
+        {% set first = field.fields|first %}
+        {{ self.query(first.label, route, first.mode) }}
+        {% if field.fields|length > 1 %}
+            <button type="button" class="button dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu">
+            {% for child in field.fields %}
+            {% if loop.index > 1 %}
+                <li>{{ self.query(child.label, route, child.mode) }}</li>
+            {% endif %}
+            {% endfor %}
+            </ul>
+        {% endif %}
+        </div>
+    {% endif %}
+{% endblock %}
