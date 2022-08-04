@@ -5,7 +5,7 @@ template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/overview'
+  default: '/admin_guide'
 ---
 
 Questa pagina provvede a fornire una vista d'insieme dell'ecosistema di un server YunoHost. Pur contenendo delle approssimazioni e delle scorciatoie, permette di avere una prima vista globale prima di entrare più nel dettaglio dei differenti aspetti.
