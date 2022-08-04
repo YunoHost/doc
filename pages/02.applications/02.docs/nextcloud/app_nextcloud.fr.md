@@ -181,8 +181,8 @@ Les options à désactiver (Off) sont :
 Sauvegarder et nettoyer vos caches (Cloudflare, navigateur...) et le tour est joué.
 
 # Application Tierce
-Certaine application sont disponnible directement dans Nextcloud.
-![image](https://user-images.githubusercontent.com/3066684/182874942-c29356b4-046f-4138-96c9-eee88abe8448.png)
+Certaine application son disponible directement depuis Nextcloud.
+![image](image://nextcloud_menu_parameter.jpg)
 
 
 ## À propos de Keeweb
