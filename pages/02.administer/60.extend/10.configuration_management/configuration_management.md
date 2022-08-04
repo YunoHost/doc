@@ -1,10 +1,10 @@
 ---
-title: Install unpackaged apps
+title: Configuration management
 template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/install_unpackaged_apps'
+  default: '/configuration_management'
 ---
 
 !! This page is to be written
