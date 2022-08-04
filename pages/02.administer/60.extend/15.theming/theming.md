@@ -7,6 +7,14 @@ routes:
   default: '/theming'
 ---
 
+## Globally disable the overlay
+
+You can disable the overlay by changing the dedicated settings:
+
+```
+yunohost settings set ssowat.panel_overlay.enabled -v 0
+```
+
 ## Using a theme
 
 Since YunoHost 3.5, you can change the theme of the user portal - though for now it requires tweaking via the command line.
