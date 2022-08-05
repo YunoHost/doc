@@ -11,7 +11,7 @@ YunoHost comprend un mécanisme de hooks déclenchés lors de nombreuses opérat
 Le cas le plus évident est l'ajout d'un utilisateur. Si vous aviez un hook `post_user_create`, ce hook sera déclenché dès qu'un utilisateur sera ajouté.
 
 ## Comment ajouter un hook personnalisé sur une instance spécifique
-! !! Nous imaginons ci-dessous que nous voulons lancer une commande après chaque création d'utilisateur pour ajouter l'utilisateur à l'utilisateur samba.
+!!! Nous imaginons ci-dessous que nous voulons lancer une commande après chaque création d'utilisateur pour ajouter l'utilisateur à l'utilisateur samba.
 
 Vous devez créer un répertoire avec le nom des hooks dans `/etc/yunohost/hooks.d/` :
 ```
