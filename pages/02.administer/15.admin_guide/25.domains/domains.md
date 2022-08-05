@@ -89,6 +89,11 @@ The domain chosen during the initial configuration (post-install) is defined as 
 
 More technically, the main domain is also used as hostname by SMTP protocol to send email (EHLO) and determine which value should be configured in the reverse DNS bind to your public IP. If this 2 values are mis-configured, the diagnosis tool will trigger you an alert.
 
+## Subdomains
+
+! Bear in mind, YunoHost considers domains and their subdomains independently.
+! You **need** to register all the domains and subdomains you want to use.
+
 ## About Non-latin characters
 
 If your domain has special, non-latin characters, it will be transformed by YunoHost into its [internationalized version](https://en.wikipedia.org/wiki/Internationalized_domain_name) through [Punycode](https://en.wikipedia.org/wiki/Punycode). So when you use the command line, you have to use the punycode format return for example by `yunohost domain list`.

@@ -21,6 +21,11 @@ Beachten Sie abschließend, dass es im Kontext von YunoHost keine Hierarchie zwi
 
 Wenn Ihre Domain spezielle, nicht-lateinische Zeichen enthält, müssen Sie ihre [internationalisierte Version](https://de.wikipedia.org/wiki/Internationalisierter_Domainname) über [Punycode](https://de.wikipedia.org/wiki/Punycode) verwenden. Sie können [diesen Konverter](https://www.charset.org/punycode) verwenden und den konvertierten Domainnamen in Ihrer YunoHost-Konfiguration verwenden. 
 
+## Subdomains
+
+! Bitte beachten Sie, dass YunoHost Domains und deren Subdomains unabhängig voneinander betrachtet.
+! Sie **müssen** alle Domains und Subdomains, die Sie nutzen möchten, registrieren.
+
 ## DNS-Konfiguration
 
 DNS (Domain Name System) ist ein System, das es Computern auf der ganzen Welt ermöglicht, von Menschen lesbare Domain-Namen (wie z.B. `yolo.com`) in maschinenverständliche Adressen, sogenannte IP-Adressen (wie z.B. `11.22.33.44`), zu übersetzen. Damit diese Übersetzung (und andere Funktionen) funktioniert, müssen Sie DNS-Einträge sorgfältig konfigurieren. 
