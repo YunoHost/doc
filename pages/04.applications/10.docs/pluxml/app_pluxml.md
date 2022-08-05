@@ -13,11 +13,11 @@ routes:
 	
 ### Index
 
-- [Configuration](#Configuration)
-  - [Login to admin interface](#Login-to-administration-interface)
-- [Overview](#Overview)
-- [Plugins and themes](#Plugins-and-themes)
-- [Backup](#Backup)
+- [Configuration](#configuration)
+  - [Login to admin interface](#connecting-to-the-administration-interface)
+- [Overview](#overview-1)
+- [Plugins and themes](#plugins-and-themes)
+- [Backup](#backup)
 - [Useful links](#useful-links)
 
 PluXml is a blog/CMS storing data in XML and not in a SQL database.

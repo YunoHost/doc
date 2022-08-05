@@ -13,11 +13,11 @@ routes:
 
 ### Index
 
-- [Configuration](#Configuration)
-  - [Connexion à l'interface d'administration](#Connexion-à-l-interface-d-administration)
-- [Captures d'écran](Captures-d-écran)
-- [Plugins et thèmes](Plugins-et-thèmes)
-- [Sauvegarde](#Sauvegarde)
+- [Configuration](#configuration)
+  - [Connexion à l'interface d'administration](#connexion-à-l’interface-d’administration)
+- [Capture d'écran](#capture-décran)
+- [Plugins et thèmes](#plugins-et-thèmes)
+- [Sauvegarde](#sauvegarde)
 - [Liens utiles](#liens-utiles)
 
 PluXml est un moteur de blog/CMS stockant ces données en XML et ne nécessitant pas de base de données SQL.
@@ -28,7 +28,7 @@ PluXml est un moteur de blog/CMS stockant ces données en XML et ne nécessitant
 
 Pour configurer l'application il faut se rendre à l'adresse : `https://domain.tld/path/core/admin`
 
-## Captures d'écran
+## Capture d'écran
 
 ![PluXml_screenshot](image://PluXml_screenshot.jpg)
 
