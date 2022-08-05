@@ -9,9 +9,26 @@ routes:
 
 ![PluXml_logo](image://PluXml_logo.png)
 
+[![Install PluXml with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=pluxml) [![Integration level](https://dash.yunohost.org/integration/pluxml.svg)](https://dash.yunohost.org/appci/app/pluxml)
+
+### Index
+
+- [Configuration](#Configuration)
+  - [Connexion à l'interface d'administration](#Connexion-à-l-interface-d-administration)
+- [Captures d'écran](Captures-d-écran)
+- [Plugins et thèmes](Plugins-et-thèmes)
+- [Sauvegarde](#Sauvegarde)
+- [Liens utiles](#liens-utiles)
+
 PluXml est un moteur de blog/CMS stockant ces données en XML et ne nécessitant pas de base de données SQL.
 
-## Aperçu
+## Configuration
+
+### Connexion à l’interface d’administration
+
+Pour configurer l'application il faut se rendre à l'adresse : `https://domain.tld/path/core/admin`
+
+## Captures d'écran
 
 ![PluXml_screenshot](image://PluXml_screenshot.jpg)
 
@@ -23,8 +40,11 @@ Les plugins et thèmes doivent être installés manuellement respectivement dans
 
 Pour sauvegarder votre blog, il est nécessaire de réaliser une copie du dossier `/var/www/pluxml/data`. Cette procédure de sauvegarde est également recommandée avant toute mise à jour de l'application.
 
-## Liens
+## Liens utiles
 
-PluXml : https://www.pluxml.org/  
-Documentation : https://wiki.pluxml.org/  
-Forum : https://forum.pluxml.org/
+ + Site web : [www.pluxml.org](https://www.pluxml.org/)
+ + Documentation officielle : [wiki.pluxml.org Wiki](https://wiki.pluxml.org/)
+ + Démo officielle : [https://demo.pluxml.org/](https://demo.pluxml.org/)
+ + Forum : [https://forum.pluxml.org/](https://forum.pluxml.org/)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/pluxml](https://github.com/YunoHost-Apps/pluxml_ynh)
+ + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/pluxml/issues](https://github.com/YunoHost-Apps/pluxml_ynh/issues)
