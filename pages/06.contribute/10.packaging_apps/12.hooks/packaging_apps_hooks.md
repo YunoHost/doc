@@ -9,7 +9,9 @@ routes:
 
 YunoHost includes a hook mechanism triggered on a lot of operation changing the system. You can use this mechanism in order to extend the behaviour of a yunohost command.
 
-## How to add a hooks
+The most obvious case is adding a user. If you had a `post_user_create` hook, this hook will be triggered as soon as a user is added.
+
+## How to add a custom hook on a specific instance
 !!! Bellow we imagine we want to run a command after each user creation to add the user to samba user.
 
 You should create a directory with the name of the hooks into `/etc/yunohost/hooks.d/`:
@@ -21,6 +23,17 @@ Next create a bash script inside this directory prefixed by 2 numbers and a dash
 ```bash
 nano /etc/yunohost/hooks.d/post_user_create/05-add-user-to-samba
 ```
+
+## How to add a hook in an app package
+If you are packaging an app, you should not set by yourself the hook into `/etc/yunohost/hooks.d` instead you should create a hooks dir at the root of your package.
+```
+.
+├── conf
+├── hooks
+├── scripts
+```
+
+In the hooks dir, create a bash script called with the type of hook you want to create for example `post_create_user`.
 
 ## Hooks referencies
 ### User and permissions
