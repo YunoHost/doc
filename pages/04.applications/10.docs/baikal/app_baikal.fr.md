@@ -30,7 +30,7 @@ Baïkal est un serveur de calendriers et de contacts accessible par les protocol
 
 ### Connexion à l’interface d’administration
 
-Pour configurer l'appliation il faut se rendre à l'adresse : `sous.domaine.tld/admin` ou `domaine.tld/baikal/admin`
+Pour configurer l'application il faut se rendre à l'adresse : `sous.domaine.tld/admin` ou `domaine.tld/baikal/admin`
 Le nom d’utilisateur à spécifier est `admin` suivi du mot de passe spécifique que vous avez choisi lors de l’installation de Baïkal. Attention, le mot de passe ne doit pas contenir de carractères spéciaux.
 
 ### Authentification LDAP
@@ -77,5 +77,5 @@ Le carnet d’adresses est maintenant accessible.
 
  + Site web : [www.baikal-server.com (en)](http://www.baikal-server.com/)
  + Documentation officielle : [sabre.io - baikal (en)](https://sabre.io/baikal/)
- + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/bikal](https://github.com/YunoHost-apps/baikal_ynh)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/baikal](https://github.com/YunoHost-apps/baikal_ynh)
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/baikal/issues](https://github.com/YunoHost-apps/baikal_ynh/issues)

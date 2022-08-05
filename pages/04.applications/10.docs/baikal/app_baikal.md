@@ -79,5 +79,5 @@ Now, the adressbook is accessible.
 
  + Website: [www.baikal-server.com](http://www.baikal-server.com/)
  + Official documentation: [sabre.io - baikal](https://sabre.io/baikal/)
- + Apps software repository: [github.com - YunoHost-Apps/bikal](https://github.com/YunoHost-apps/baikal_ynh)
+ + Apps software repository: [github.com - YunoHost-Apps/baikal](https://github.com/YunoHost-apps/baikal_ynh)
  + Fix a bug or suggest an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/baikal/issues](https://github.com/YunoHost-apps/baikal_ynh/issues)
