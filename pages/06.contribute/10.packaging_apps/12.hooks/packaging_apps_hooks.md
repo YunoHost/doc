@@ -73,12 +73,6 @@ The admin of $domain
 
 echo $message | mail -s "Welcome on $domain !" $YNH_USER_MAIL
 ```
-
-###### Add the user to samba
-
-##### Hook changelog
- -  
-
 [/details]
 
 
@@ -103,10 +97,6 @@ This hooks is run at the end of the command `yunohost user delete` or equivalent
 ```bash
 #!/bin/bash
 ```
-
-##### Hook changelog
- -  
-
 [/details]
 
 
@@ -146,11 +136,6 @@ If you have not asked for changing your password, you probably should contact th
 
 echo $message | mail -s "Your password has been changed on $domain !" $YNH_USER_USERNAME
 ```
-
-
-##### Hook changelog
- -  
-
 [/details]
 
 
@@ -172,10 +157,6 @@ This hooks is run at the end of the command `yunohost user permission add` or eq
 ##### No waited return
 
 ##### Examples
-
-##### Hook changelog
- -  
-
 [/details]
 
 
@@ -197,11 +178,6 @@ This hooks is run at the end of the command `yunohost user permission remove` or
 ##### No waited return
 
 ##### Examples
-
-
-##### Hook changelog
- -  
-
 [/details]
 
 
@@ -230,10 +206,6 @@ This hooks is run at the end of the command `yunohost domain add` or equivalent 
 ```bash
 
 ```
-
-##### Hook changelog
- -  
-
 [/details]
 
 
@@ -253,14 +225,6 @@ This hooks is run at the end of the command `yunohost domain remove` or equivale
 ##### No waited return
 
 ##### Examples
-
-###### 
-```bash
-```
-
-##### Hook changelog
- -  
-
 [/details]
 
 
@@ -283,12 +247,9 @@ This hooks is run at the end of the command `yunohost domain cert update` or equ
 
 ###### Restart a service after cert renewal
 ```bash
+#!/bin/bash
 systemctl restart gemserv
 ```
-
-##### Hook changelog
- -  
-
 [/details]
 
 
@@ -338,10 +299,6 @@ if [[ "$1" == "XXXX.nohost.me" ]] ; then
 fi
 
 ```
-
-##### Hook changelog
- -  
-
 [/details]
 
 
@@ -366,15 +323,8 @@ This hooks is run at the end of the command `yunohost app change-url` or equival
 ##### No waited return
 
 ##### Examples
-
-###### 
-```bash
-```
-
-##### Hook changelog
- -  
-
 [/details]
+
 ### post_app_upgrade
 [details summary="<i>Triggered on app upgrade</i>" class="helper-card-subtitle text-muted"]
 
@@ -411,12 +361,8 @@ if [[ "$app" == "etherpad_mypads" ]]; then
 fi
 
 ```
-
-##### Hook changelog
- -  
-
-
 [/details]
+
 ### post_app_install
 [details summary="<i>Triggered at the end of an app installation</i>" class="helper-card-subtitle text-muted"]
 
@@ -436,18 +382,9 @@ This hooks is run at the end of the command `yunohost app install` or equivalent
 ##### No waited return
 
 ##### Examples
-
-###### 
-```bash
-#!/bin/bash
-
-```
-
-##### Hook changelog
- -  
-
-
 [/details]
+
+
 ### post_app_remove
 [details summary="<i>Triggered after removing an app</i>" class="helper-card-subtitle text-muted"]
 
@@ -467,17 +404,6 @@ This hooks is run at the end of the command `yunohost app remove` or equivalent 
 ##### No waited return
 
 ##### Examples
-
-###### 
-```bash
-#!/bin/bash
-
-```
-
-##### Hook changelog
- -  
-
-
 [/details]
 
 ## Backup / Restore
@@ -524,11 +450,6 @@ ynh_backup "/etc/yunohost/hooks.d/backup/99-conf_custom"
 ynh_backup "/etc/yunohost/hooks.d/restore/99-conf_custom"
 
 ```
-
-##### Hook changelog
- -  
-
-
 [/details]
 
 ### restore
@@ -548,7 +469,7 @@ This hooks is run at the end of the command `yunohost backup restore` or equival
 
 ##### Examples
 
-###### 
+###### restore custom files
 ```bash
 #!/bin/bash
 
@@ -574,11 +495,8 @@ ynh_restore_file "/etc/yunohost/hooks.d/restore/99-conf_custom"
 
 ```
 
-##### Hook changelog
- -  
-
-
 [/details]
+
 ### backup_method
 [details summary="<i>Define a new way to backup and restore files</i>" class="helper-card-subtitle text-muted"]
 
@@ -640,11 +558,6 @@ esac
 exit 0
 
 ```
-
-##### Hook changelog
- -  
-
-
 [/details]
 
 ## Configuration and firewall
@@ -670,11 +583,6 @@ This hooks is run at the end of the command `yunohost firewall reload` or equiva
 #!/bin/bash
 iptables -A OUTPUT -p tcp -m tcp --dport 25 -j ACCEPT
 ```
-
-##### Hook changelog
- -  
-
-
 [/details]
 
 ### conf_regen
@@ -713,10 +621,5 @@ postfix_conf=$pending_dir/../postfix/etc/postfix/main.cf
 echo '
 compatibility_level = 2' >> $postfix_conf
 ```
-
-##### Hook changelog
- -  
-
-
 [/details]
 

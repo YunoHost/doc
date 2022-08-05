@@ -33,4 +33,4 @@ Si vous empaquetez une application, vous ne devez pas mettre vous-même le hook 
 ```
 Dans le dossier des hooks, créer un script bash appelé avec le type de hook que vous voulez créer par exemple `post_create_user`.
 
-## [Liste des hooks et leurs variables](/packaging_apps_hooks_fr)
+## -> [Liste des hooks et leurs variables](https://yunohost.org/en/packaging_apps_hooks)
