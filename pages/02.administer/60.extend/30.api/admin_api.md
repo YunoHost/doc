@@ -56,6 +56,7 @@ curl -k -i -H "Accept: application/json" \
       SwaggerUIBundle.presets.apis,
       SwaggerUIStandalonePreset
     ],
+    withCredentials: true,
     layout: "StandaloneLayout"
   });
 
