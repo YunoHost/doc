@@ -19,11 +19,4 @@ To expose the app on the web through nginx and be able to manage access permissi
 
 !!! You should use the proxy mode of the redirect app and not HTTP redirections mode.
 
-If you know a bit YunoHost, you can use the [yunohost helpers](/helpers) to do your install to be close to the way YunoHost install its packaged apps. To use those helpers, you have to initialize first your CLI by this way:
-
-```
-source /usr/share/yunohost/helpers
-app=YOURAPPNAME
-```
-
 You probably should create custom backup and restore hooks to integrate your app to your YunoHost backup/restore process. See [Backup and restore hooks]()
