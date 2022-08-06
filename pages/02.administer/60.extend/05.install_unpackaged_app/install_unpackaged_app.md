@@ -15,7 +15,7 @@ If your app is a PHP or HTML/JS app, you probably should use the `Custom Webapp`
 
 If you use an other techno, you should install it like on a classical debian.
 
-To expose the app on the web through nginx and be able to manage access permissions to the webapp, you could use the `redirect` app to create a nginx reverse proxy on your local ip/port running the service.
+To expose the app on the web through nginx and be able to manage access permissions to the webapp, you could use the [`redirect` app](https://github.com/YunoHost-Apps/redirect_ynh/) to create a nginx reverse proxy on your local ip/port running the service.
 
 !!! You should use the proxy mode of the redirect app and not HTTP redirections mode.
 
