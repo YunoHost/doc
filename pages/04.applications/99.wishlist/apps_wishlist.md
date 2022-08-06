@@ -29,7 +29,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [ArchivesSpace](https://archivesspace.org/) | Archives information management application for managing and providing Web access to archives, manuscripts and digital objects. | [Upstream](https://github.com/archivesspace/archivesspace) |  |
 | [ass](https://github.com/tycrek/ass) | ass is a self-hosted ShareX upload server written in Node.js. |[Upstream](https://github.com/tycrek/ass)|  |
 | [Astral](https://astralapp.com/) | Organize Your GitHub Stars With Ease |[Upstream](https://github.com/astralapp/astral)|  |
-| [Azuracast](https://https://azuracast.com/) | A Simple, Self-Hosted Web Radio Management Suite |[Upstream](https://github.com/AzuraCast/AzuraCast)|  |
+| [Azuracast](https://azuracast.com/) | A Simple, Self-Hosted Web Radio Management Suite |[Upstream](https://github.com/AzuraCast/AzuraCast)|  |
 | [Backstage.io](https://backstage.io/) | Open source Enterprise Developer Portal with Eco-System | [Upstream](https://github.com/backstage/backstage) |  |
 | [Baserow](https://baserow.io/) | Open source no-code database tool and Airtable alternative. | [Upstream](https://gitlab.com/bramw/baserow) |  |
 | [Beatbump](https://beatbump.ml/home) | An alternative frontend for YouTube Music | [Upstream](https://github.com/snuffyDev/Beatbump) |  |
@@ -47,6 +47,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [cgit](https://git.zx2c4.com/cgit/about) |  |  |  |
 | Chaskiq | A full featured Live Chat, Support & Marketing platform, alternative to Intercom, Drift, Crisp | [Upstream](https://github.com/chaskiq/chaskiq) |  |
 | changedetection.io | Self-hosted open source change monitoring of web pages | [Upstream](https://github.com/dgtlmoon/changedetection.io) |  |
+| [Chatterbox](https://element.io/solutions/chatterbox-embedded-live-chat-for-customer-service) | Embedded live chat for customer service | [Upstream]([https://github.com/sourcegraph/checkup](https://github.com/vector-im/chatterbox)) |  |
 | [CheckUp](https://sourcegraph.github.io/checkup) |  | [Upstream](https://github.com/sourcegraph/checkup) |  |
 | [Citadel-suite](https://www.citadel.org) | Groupware platform |  |  |
 | [CKAN](https://ckan.org/) | A tool for making open data websites | [Upstream](https://github.com/ckan/ckan) |  |
@@ -57,6 +58,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Coquelicot](https://coquelicot.potager.org/) | A “one-click” file sharing web application |  | [Package Draft](https://github.com/YunoHost-Apps/coquelicot_ynh) |
 | [Cozy](https://cozy.io/en/) |  |  |  |
 | Croodle | Vote for a schedule / polling | [Upstream](https://github.com/jelhan/croodle) |  |
+| [Cusdis](https://cusdis.com/) | A lightweight, privacy-friendly comment system alternative to Disqus. |[Upstream](https://github.com/djyde/cusdis)|  |
 | [CyberChef](https://www.giters.com/gchq/CyberChef) - The Cyber Swiss Army Knife | a web app for encryption, encoding, compression and data analysis | [Upstream](https://github.com/gchq/CyberChef) |  |
 | [Darkwire.io](https://darkwire.io/) | End-to-end encrypted instant web chat | [Upstream](https://github.com/seripap/darkwire.io) |  |
 | [Dataverse](https://dataverse.org) | Open source research data repository software | [Upstream](https://github.com/IQSS/dataverse) |  |
@@ -73,6 +75,8 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [DomainMOD](https://domainmod.org) | Domain portfolio management application | | |
 | Dynette | Dynette is a dyndns server | [Upstream](https://github.com/YunoHost/dynette) | [Package Draft](https://github.com/YunoHost-Apps/dynette_ynh) |
 | DrakonHub | Online editor for Drakon diagrams | [Upstream](https://github.com/stepan-mitkin/drakonhub) | |
+| [Drawpile](https://drawpile.net) | Collaborative drawing program that allows multiple users to sketch on the same canvas simultaneously | [Upstream](https://github.com/drawpile/Drawpile) | |
+| [Element Call](https://element.io/blog/element-call-beta-2-encryption-spatial-audio-walkie-talkie-mode-and-more/) | Showcase for full mesh video chat powered by Matrix | [Upstream](https://github.com/vector-im/element-call) |  |
 | Endlessh | SSH Tarpit | [upstream](https://github.com/skeeto/endlessh) |  |
 | [erine.email](https://erine.email/) |  | [Upstream](https://gitlab.com/mdavranche/erine.email) |  |
 | [ERPnext](https://erpnext.com/) |  | [Upstream](https://github.com/frappe/erpnext) |  |

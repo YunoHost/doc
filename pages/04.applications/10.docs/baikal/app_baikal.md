@@ -13,14 +13,15 @@ routes:
 
 ### Index
 
-- [Configuration](#Configuration)
-  - [Login to admin interface](#Login-to-administration-interface)
-  - [Creating a new user](#Create-a-new-user)
-- [CalDAV connection](#CalDAV-connection)
-  - [Connecting Thunderbird with Lightning](#Connecting-Thunderbird-with-Lightning)
-  - [Connecting to AgenDAV](#Connecting-to-AgenDAV)
-- [CardDAV Connection](#CardDAV-Connection)
-- [Useful links](#Useful-links)
+- [Configuration](#configuration)
+  - [Connecting to the administration interface](#connecting-to-the-administration-interface)
+  - [LDAP authentication](#ldap-authentication)
+- [CalDAV connection](#caldav-connection)
+  - [Connecting Thunderbird with Lightning](#connecting-thunderbird-with-lightning)
+  - [Connecting to AgenDAV](#connecting-to-agendav)
+- [CardDAV Connection](#carddav-connection)
+- [Useful links](#useful-links)
+
 
 Baïkal is a server for calendars and address books, which uses the CalDav and CardDav protocol. Baïkal can be synced with a lot of clients, like Thunderbird + Lightning.
 
@@ -79,5 +80,5 @@ Now, the adressbook is accessible.
 
  + Website: [www.baikal-server.com](http://www.baikal-server.com/)
  + Official documentation: [sabre.io - baikal](https://sabre.io/baikal/)
- + Apps software repository: [github.com - YunoHost-Apps/bikal](https://github.com/YunoHost-apps/baikal_ynh)
+ + Apps software repository: [github.com - YunoHost-Apps/baikal](https://github.com/YunoHost-apps/baikal_ynh)
  + Fix a bug or suggest an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/baikal/issues](https://github.com/YunoHost-apps/baikal_ynh/issues)

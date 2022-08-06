@@ -13,14 +13,15 @@ routes:
 
 ### Index
 
-- [Configuration](#Configuration)
-  - [Connexion à l'interface d'administration](#Connexion-à-l-interface-d-administration)
-  - [Création d'un nouvel utilisateur](#Création-d-un-nouvel-utilisateur)
-- [Connexion CalDAV](#Connexion-CalDAV)
-  - [Connexion de Thunderbird avec Lightning](#Connexion-de-Thunderbird-avec-Lightning)
-  - [Connexion de AgenDAV](#Connexion-de-AgenDAV)
-- [Connexion CardDAV](#Connexion-CardDAV)
+- [Configuration](#configuration)
+  - [Connexion à l'interface d'administration](#connexion-à-l’interface-d’administration)
+  - [Authentification LDAP](#authentification-ldap)
+- [Connexion CalDAV](#connexion-caldav)
+  - [Connexion de Thunderbird avec Lightning](#connexion-de-thunderbird-avec-lightning)
+  - [Connexion de AgenDAV](#connexion-de-agendav)
+- [Connexion CardDAV](#connexion-carddav)
 - [Liens utiles](#liens-utiles)
+
 
 Baïkal est un serveur de calendriers et de contacts accessible par les protocoles CalDAV (calendriers) et CardDAV (carnets d’adresses), autorisant ainsi la synchronisation avec de nombreux clients (Thunderbird + Lightning par exemple).
 
@@ -30,7 +31,7 @@ Baïkal est un serveur de calendriers et de contacts accessible par les protocol
 
 ### Connexion à l’interface d’administration
 
-Pour configurer l'appliation il faut se rendre à l'adresse : `sous.domaine.tld/admin` ou `domaine.tld/baikal/admin`
+Pour configurer l'application il faut se rendre à l'adresse : `sous.domaine.tld/admin` ou `domaine.tld/baikal/admin`
 Le nom d’utilisateur à spécifier est `admin` suivi du mot de passe spécifique que vous avez choisi lors de l’installation de Baïkal. Attention, le mot de passe ne doit pas contenir de carractères spéciaux.
 
 ### Authentification LDAP
@@ -77,5 +78,5 @@ Le carnet d’adresses est maintenant accessible.
 
  + Site web : [www.baikal-server.com (en)](http://www.baikal-server.com/)
  + Documentation officielle : [sabre.io - baikal (en)](https://sabre.io/baikal/)
- + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/bikal](https://github.com/YunoHost-apps/baikal_ynh)
+ + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/baikal](https://github.com/YunoHost-apps/baikal_ynh)
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/baikal/issues](https://github.com/YunoHost-apps/baikal_ynh/issues)
