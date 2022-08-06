@@ -58,7 +58,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Coquelicot](https://coquelicot.potager.org/) | A “one-click” file sharing web application |  | [Package Draft](https://github.com/YunoHost-Apps/coquelicot_ynh) |
 | [Cozy](https://cozy.io/en/) |  |  |  |
 | Croodle | Vote for a schedule / polling | [Upstream](https://github.com/jelhan/croodle) |  |
-| [Cusdis](https://cusdis.com/) | Cusdis is an open-source, lightweight (~5kb gzip), privacy-friendly alternative to Disqus. |[Upstream](https://github.com/djyde/cusdis)|  |
+| [Cusdis](https://cusdis.com/) | A lightweight, privacy-friendly comment system alternative to Disqus. |[Upstream](https://github.com/djyde/cusdis)|  |
 | [CyberChef](https://www.giters.com/gchq/CyberChef) - The Cyber Swiss Army Knife | a web app for encryption, encoding, compression and data analysis | [Upstream](https://github.com/gchq/CyberChef) |  |
 | [Darkwire.io](https://darkwire.io/) | End-to-end encrypted instant web chat | [Upstream](https://github.com/seripap/darkwire.io) |  |
 | [Dataverse](https://dataverse.org) | Open source research data repository software | [Upstream](https://github.com/IQSS/dataverse) |  |
