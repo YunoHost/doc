@@ -75,6 +75,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Dynette | Dynette is a dyndns server | [Upstream](https://github.com/YunoHost/dynette) | [Package Draft](https://github.com/YunoHost-Apps/dynette_ynh) |
 | DrakonHub | Online editor for Drakon diagrams | [Upstream](https://github.com/stepan-mitkin/drakonhub) | |
 | [Drawpile](https://drawpile.net) | Collaborative drawing program that allows multiple users to sketch on the same canvas simultaneously | [Upstream](https://github.com/drawpile/Drawpile) | |
+| [Element Call](https://element.io/blog/element-call-beta-2-encryption-spatial-audio-walkie-talkie-mode-and-more/) | Showcase for full mesh video chat powered by Matrix | [Upstream](https://github.com/vector-im/element-call) |  |
 | Endlessh | SSH Tarpit | [upstream](https://github.com/skeeto/endlessh) |  |
 | [erine.email](https://erine.email/) |  | [Upstream](https://gitlab.com/mdavranche/erine.email) |  |
 | [ERPnext](https://erpnext.com/) |  | [Upstream](https://github.com/frappe/erpnext) |  |
