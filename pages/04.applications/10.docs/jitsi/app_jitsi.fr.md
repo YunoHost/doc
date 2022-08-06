@@ -32,7 +32,7 @@ Jitsi-meet pour YunoHost est limité actuellement :
 | Nom de l'application | Plateforme | Multi-comptes | Autres réseaux supportés | Play Store | F-Droid | Apple Store | *Autres* |
 |-----------------------|------------|---------------|-------------------------|------------|---------|-------------|----------|
 | Jitsi Meet            | Android - iOS  |               |                      | [Jitsi Meet](https://play.google.com/store/apps/details?id=org.jitsi.meet) | [Jitsi Meet](https://f-droid.org/en/packages/org.jitsi.meet/) | [Jitsi Meet](https://apps.apple.com/us/app/jitsi-meet/id1165103905) |          |
-| Jitsi Meet Desktop    | Windows - macOS - GNU/Linux  |  |                        |            |         |             | [Téléchargement](https://desktop.jitsi.org/Main/Download)  |
+| Jitsi Meet Electron   | Windows - macOS - GNU/Linux  |  |                        |            |         |             | [Téléchargement](https://github.com/jitsi/jitsi-meet-electron)  |
 
 ## Liens utiles
 
