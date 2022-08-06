@@ -7,56 +7,60 @@ routes:
   default: '/admin_api'
 ---
 
-All command line actions can also be ran from the web API. The API is available at https://your.server/yunohost/api. For now there's no documentation on the various routes... but you can get an idea by looking at the actionmap [here](https://github.com/YunoHost/yunohost/blob/dev/data/actionsmap/yunohost.yml) (in particular the `api` stuff).
+All command line actions can also be ran from the web API. The API is available at https://your.server/yunohost/api.
 
-## Using cURL
-
-You must first retrieve a login cookie to perform the actions. Here is an example with cURL:
+## Test with curl
+You must first retrieve a login cookie thanks to the /login route to perform the other actions.
 
 ```bash
 # Login (with admin password)
 curl -k -H "X-Requested-With: customscript" \
-        -d "password=supersecretpassword" \
+        -d "credentials=supersecretpassword" \
         -dump-header headers \
         https://your.server/yunohost/api/login
 
 # GET example
 curl -k -i -H "Accept: application/json" \
            -H "Content-Type: application/json" \
+           -H 'Cookie: yunohost.admin="XXXXXXXX"' \
            -L -b headers -X GET https://your.server/yunohost/api/ROUTE \
         | grep } | python -mjson.tool
 ```
 
-## Using a PHP class
+## Test with our swagger doc
 
-To simplify the remote administration of a YunoHost instance in CHATONS/Librehosters projects, API classes have been developed by users.
+ 1. Login on the [Webadmin of demo.yunohost.org](https://demo.yunohost.org/yunohost/admin/)
+ 2. Use the `Try it out` button on the API endpoint you want to test
 
-For example, this [PHP class](https://github.com/scith/yunohost-api-php) will allow you to administer your YunoHost instance from a PHP application (website, capacity management tool...).
-
-Here is an example of PHP code to add a user to your YunoHost instance:
-
-```php 
-require("ynh_api.class.php");
-$ynh = new YNH_API("adresse IP du serveur YunoHost ou nom d’hôte", "mot de passe administrateur");
-
-if ($ynh->login()) {
-    $domains = $ynh->get("/domains");
-    $first_domain = $domains['domains'][0];
-
-    $arguments = array(
-        'username' => 'test',
-        'password' => 'yunohost', 
-        'firstname' => 'Prénom',
-        'lastname' => 'Nom',
-        'mail' => 'test@'.$first_domain,
-        'mailbox_quota' => '500M'
-    );
-
-    $user_add = $ynh->post("/users", $arguments);
-    print_r($user_add);
-
-} else {
-    print("Login to YunoHost failed.\n");
-    exit;
+<div id="swagger-ui"></div>
+<style>
+#swagger-ui .topbar {
+    display: none;
 }
-```
+</style>
+<link rel="stylesheet" type="text/css" href="/user/themes/yunohost-docs/css/swagger-ui.css" />
+<script src="/user/themes/yunohost-docs/js/swagger-ui-bundle.js" charset="UTF-8"> </script>
+<script src="/user/themes/yunohost-docs/js/swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
+<script src="/user/themes/yunohost-docs/js/openapi.js" type="text/javascript" language="javascript"></script>
+<script>
+    window.onload = function() {
+  //<editor-fold desc="Changeable Configuration Block">
+  // the following lines will be replaced by docker/configurator, when it runs in a docker-container
+  window.ui = SwaggerUIBundle({
+    spec: openapiJSON,
+    dom_id: '#swagger-ui',
+    deepLinking: true,
+    displayOperationId: true,
+    validatorUrl: null,
+    presets: [
+      SwaggerUIBundle.presets.apis,
+      SwaggerUIStandalonePreset
+    ],
+    layout: "StandaloneLayout"
+  });
+
+  //</editor-fold>
+};
+
+</script>
+
