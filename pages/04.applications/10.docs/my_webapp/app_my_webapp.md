@@ -19,7 +19,7 @@ If you want to automate things, you need to be able to connect without typing a 
 - Enable public key connection, in `/etc/ssh/sshd_config`, on the server
 - Create a public/private key pair for your script on the "writing" computer - without a protective passphrase.
 - Copy the public key to the server, in `/var/www/my_webapp(__#)/.ssh/authorized_keys`
-- Set the user `webapp#` as owner of the file and directory
+- Set the user `my_webapp(__#)` as owner of the `authorized_keys` file and `www/` directory
 - You can now connect without a password, with `sftp -b`, `lftp` or other SFTP clients.
 
 NB: The port number to use for the SFTP connection is the one used for the SSH, and configured in `/etc/ssh/sshd_config`.

@@ -19,7 +19,7 @@ Si vous souhaitez automatiser des choses, il vous faut une possibilité de conne
 - Activer la connexion par clé publique, dans `/etc/ssh/sshd_config`, sur le serveur
 - Créer une paire clé publique/privée pour votre script, sur l'ordinateur "de rédaction" - sans mettre de phrase de passe de protection.
 - Copier la clé publique sur le serveur, dans `/var/www/my_webapp(__#)/.ssh/authorized_keys`
-- Rentre l'utilisateur `webapp#` propriétaire du fichier et du dossier
+- Rentre l'utilisateur `my_webapp(__#)` propriétaire du fichier et du dossier
 - Vous pouvez maintenant vous connecter sans mot de passe, avec `sftp -b`, `lftp` ou bien d'autres clients SFTP.
 
 NB : Le numéro de port à utiliser pour la connection SFTP est celui utilisé pour le SSH, et configuré dans `/etc/ssh/sshd_config`.
