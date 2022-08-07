@@ -7,7 +7,7 @@ routes:
   default: '/buster_bullseye_migration'
 ---
 
-L'objectif cette page est de décrire le processus de migration d'une instance en YunoHost 4.4.x (tournant sous Debian Buster/10.x) vers YunoHost 11.x (tournant sous Debian Bullseye/11.x)
+L'objectif cette page est de décrire le processus de migration d'une instance en YunoHost 4.4.x (tournant sous Debian Buster/10.x) vers YunoHost 11.x (tournant sous Debian Bullseye/11.x). Notez que nous avons décidé de sauter les numéros de versions de 5 à 10 pour suivre les numéros de versions de Debian.
 
 ## Notes importantes
 
