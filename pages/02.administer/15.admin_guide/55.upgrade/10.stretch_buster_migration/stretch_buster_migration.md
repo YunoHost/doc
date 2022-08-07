@@ -1,5 +1,5 @@
 ---
-title: Migrating an existing instance to Buster
+title: Migrating from 3.x to 4.x
 template: docs
 taxonomy:
     category: docs

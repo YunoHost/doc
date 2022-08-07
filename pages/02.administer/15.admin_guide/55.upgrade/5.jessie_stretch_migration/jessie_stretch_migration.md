@@ -1,5 +1,5 @@
 ---
-title: Migrating an existing instance to Stretch
+title: Migrating from 2.4+ to 3.x
 template: docs
 taxonomy:
     category: docs
