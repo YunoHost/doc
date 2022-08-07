@@ -1,5 +1,5 @@
 ---
-title: Migrer vers Bullseye
+title: Migrer de 4.x vers 11.x
 template: docs
 taxonomy:
     category: docs
@@ -47,6 +47,28 @@ Si la migration a échoué a un moment donné, la première chose à faire est d
 
 ## Choses à vérifier après la migration
 
+#### Exécuter la migration pour réparer votre application python
+Après la mise à jour, vos applications python devraient être indisponibles car leur environnement virtuel doit être reconstruit.
+
+Pour ce faire, vous pouvez exécuter les migrations en cours dans `Webadmin > Mises à jour`. Les applications ci-dessous ne seront pas réparées automatiquement, vous devez les mettre à jour manuellement avec `yunohost app upgrade -f APP`.
+
+Les applications qui ne seront pas réparées automatiquement et nécessitent une mise à jour forcée :
+ * calibreweb
+ * django-for-runners
+ * ffsync (cette application est en python2 et n'est plus maintenue, aucune garantie)
+ * jupiterlab
+ * librephotos
+ * mautrix
+ * mediadrop
+ * mopidy
+ * pgadmin
+ * tracim
+ * synapse
+ * weblate
+
+
+! !! Si nécessaire, vous pouvez désactiver la reconstruction automatique pour une application python spécifique, en supprimant le fichier dédié terminé par `.requirements_backup_for_bullseye_upgrade.txt` avant d'appliquer la migration. Vous pouvez trouver ce fichier près du venv de votre application dans `/opt` ou `/var/www`.
+
 #### Vérifiez que vous êtes véritablement sous Debian Bullseye et YunoHost 11.x
 
 Pour cela, vous pouvez aller dans la partie Diagnostic (section Système de base). (Vous pouvez aussi regarder ce qui est affiché à droite dans le pied de page de la webadmin). En ligne de commande, vous pouvez aussi utiliser `lsb_release -a` et `yunohost --version`.
@@ -64,8 +86,6 @@ Si votre app est cassée et que vous étiez déjà sur la dernière version d'un
 ```
 yunohost app upgrade -f NOM_APP
 ```
-
-!!! Nous savons que les applications suivantes doivent être mises à jour de force: my_webapp, jupiterlab, weblate. Contrairement, aux mises à jours majeures précédentes, la plupart des applications python3 comme borg ou django ne devraient plus nécessiter de mise à jour pour refonctionner.
 
 ## Soucis (mineurs) connus après la migration
 

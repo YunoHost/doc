@@ -1,5 +1,5 @@
 ---
-title: Migrer vers Buster
+title: Migrer de 3.x vers 4.x
 template: docs
 taxonomy:
     category: docs

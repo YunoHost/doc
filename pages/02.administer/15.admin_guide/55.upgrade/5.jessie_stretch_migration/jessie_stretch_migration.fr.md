@@ -1,5 +1,5 @@
 ---
-title: Migrer vers Stretch
+title: Migrer de 2.4+ vers 3.x
 template: docs
 taxonomy:
     category: docs
