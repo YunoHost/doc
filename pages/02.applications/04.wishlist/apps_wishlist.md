@@ -34,7 +34,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Baserow](https://baserow.io/) | Open source no-code database tool and Airtable alternative. | [Upstream](https://gitlab.com/bramw/baserow) |  |
 | [Beeper](https://www.beeper.com/) | A unified inbox for 15 chat networks. | [Upstream](https://gitlab.com/beeper) |  |
 | [BigBlueButton](https://bigbluebutton.org) | Web conferencing system | [Upstream](https://github.com/bigbluebutton/bigbluebutton) |  |
-| [BitcardCC](https://bitcartcc.com) | BitcartCC is a self-hosted, open-source cryptocurrency all-in-one solution. It's secure, private, censorship-resistant and free | [Upstream](https://github.com/bitcartcc/bitcart)  |  |
+| [BitcartCC](https://bitcartcc.com) | BitcartCC is a self-hosted, open-source cryptocurrency all-in-one solution | [Upstream](https://github.com/bitcartcc/bitcart)  |  |
 | [Bitmessage](https://bitmessage.org/) | P2P communication protocol used to send encrypted messages | [Upstream](https://github.com/Bitmessage/PyBitmessage) |  |
 | Blynk |  | [Upstream](https://github.com/blynkkk/blynk-library) |  |
 | [Bolt](https://bolt.cm/) | Content Management Tool |  | [Package Draft](https://github.com/realitygaps/bolt_ynh) |
