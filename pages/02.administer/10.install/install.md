@@ -165,7 +165,7 @@ However, community images exist and are available on Docker Hub:
 {% elseif arm_unsup %}
 * An ARM board with at least 512MB RAM
 {% elseif vps_debian %}
-* A dedicated or virtual private server with Debian 10 (Buster) <small>(with **kernel >= 3.12**)</small> preinstalled, 512MB RAM and 16GB capacity (at least)
+* A dedicated or virtual private server with Debian 11 (Bullseye) <small>(with **kernel >= 3.12**)</small> preinstalled, 512MB RAM and 16GB capacity (at least)
 {% elseif vps_ynh %}
 * A dedicated or virtual private server with yunohost preinstalled, 512MB RAM and 16GB capacity (at least)
 {% elseif virtualbox %}
@@ -220,13 +220,15 @@ Here are some VPS providers supporting YunoHost natively :
 {% elseif arm_unsup %}
 <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=external-link] Download the image for your board on Armbian's website</a>
 
-!!! N.B.: you should download the image Armbian Buster.
+!!! N.B.: you should download the image Armbian Bullseye.
 {% endif %}
 
 !!! If you wish to check the validity of our signed images, you can [download our public key](https://forge.yunohost.org/yunohost.asc).
 
+{% if internetcube or arm_sup %}
 ! Current images are from Debian Buster (YunoHost v4.x) and will require that you perform a manual apt update command in SSH or CLI to continue updating.
 ! Answer Yes to the warning about switching from stable to oldstable.
+{% endif %}
 
 <div class="hardware-image">
 <div id="cards-list">

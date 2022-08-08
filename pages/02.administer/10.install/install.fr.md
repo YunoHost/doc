@@ -165,7 +165,7 @@ Cependant, ces images communautaires existent et sont disponibles sur Docker Hub
 {% elseif arm_unsup %}
 * Une carte ARM avec au moins 512Mo de RAM ;
 {% elseif vps_debian %}
-* Un serveur dédié ou virtuel avec Debian 10 (Buster) pré-installé <small>(avec un **kernel >= 3.12**)</small>, avec au moins 512Mo de RAM et 16Go de capacité de stockage ;
+* Un serveur dédié ou virtuel avec Debian 11 (Bullseye) pré-installé <small>(avec un **kernel >= 3.12**)</small>, avec au moins 512Mo de RAM et 16Go de capacité de stockage ;
 {% elseif vps_ynh %}
 * Un serveur dédié ou virtuel avec YunoHost pré-installé, avec au moins 512Mo de RAM et 16Go de capacité de stockage ;
 {% elseif virtualbox %}
@@ -222,13 +222,15 @@ Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 {% elseif arm_unsup %}
 <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=external-link] Télécharger l'image pour votre carte sur le site d'Armbian</a>
 
-!!! N.B.: il vous faut télécharger l'image Armbian Buster.
+!!! N.B.: il vous faut télécharger l'image Armbian Bullseye.
 {% endif %}
 
 !!! Si vous souhaitez vérifier la validité de nos images signées, vous pouvez [télécharger notre clé publique](https://forge.yunohost.org/yunohost.asc).
 
-! Les images actuelles sont basées sur Debian Buster (YunoHost v4.x) et nécessitent que vous fassiez la commande `apt update` en SSH ou ligne de commande pour continuer les mises à jour.
+{% if internetcube or arm_sup %}
+! Les images sont basées sur Debian Buster (YunoHost v4.x) et nécessitent que vous fassiez la commande `apt update` en SSH ou ligne de commande pour continuer les mises à jour.
 ! Répondez Oui à l'avertissement à propos du changement de `stable` vers `oldstable`.
+{% endif %}
 
 <div class="hardware-image">
 <div id="cards-list">
