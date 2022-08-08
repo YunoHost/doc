@@ -17,8 +17,9 @@ This page requires Javascript enabled to display properly :s.
 
 !!! If you wish to check the validity of our signed images, you can [download our public key](https://forge.yunohost.org/yunohost.asc).
 
-! Current images are from Debian Buster (YunoHost v4.x) and will require that you perform a manual `apt update` command in SSH or CLI to continue updating.
+! Some images are still in Debian Buster (YunoHost v4.x) and will require that you perform a manual `apt update` command in SSH or CLI to continue updating.
 ! Answer Yes to the warning about switching from `stable` to `oldstable`.
+! You don't need to do that for YunoHost 11.x (Bullseye images)
 
 <div class="hardware-image">
 <div id="cards-list">
