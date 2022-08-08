@@ -53,7 +53,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [CloudTube](https://tube.cadence.moe/) | CloudTube front-end for YouTube | [Upstream](https://git.sr.ht/~cadence/cloudtube) |  |
 | [Cockpit](https://cockpit-project.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/cockpit_ynh) |
 | coin | Member dashboard for non profit ISP | [Upstream](https://code.ffdn.org/FFDN/coin/) | [Package Draft](https://github.com/YunoHost-Apps/coin_ynh) |
-| CommentoPlusPlus | Commento++ allows you to foster discussion on your website | [Upstream](https://github.com/souramoo/commentoplusplus) | [Pakage Draft](https://github.com/YunoHost-Apps/commento_ynh/tree/plusplus) |
 | Commafeed |  | [Upstream](https://github.com/Athou/commafeed) |  |
 | [Conduit](https://conduit.rs/) |  Conduit is a lightweight open-source server implementation of the Matrix Specification with a focus on easy setup and low system requirements.  | [Upstream](https://gitlab.com/famedly/conduit) | [Package Draft](https://github.com/YunoHost-Apps/conduit_ynh) |
 | cops | Calibre OPDS |  | [Package Draft](https://github.com/YunoHost-Apps/cops_ynh) |
