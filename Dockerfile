@@ -65,6 +65,11 @@ RUN curl -o grav-admin.zip -SL https://getgrav.org/download/core/grav-admin/${GR
     mv -T /var/www/grav-admin /var/www/html && \
     rm grav-admin.zip
 
+# Install plugins
+WORKDIR /var/www/html
+
+RUN bin/gpm install admin email feed git-sync langswitcher presentation shortcode-core anchors error flex-objects highlight login presentation-deckset tntsearch breadcrumbs external_links form image-captions markdown-notices problems
+
 # Create cron job for Grav maintenance scripts
 RUN (crontab -l; echo "* * * * * cd /var/www/html;/usr/local/bin/php bin/grav scheduler 1>> /dev/null 2>&1") | crontab -
 
@@ -74,8 +79,10 @@ USER root
 # Copy init scripts
 # COPY docker-entrypoint.sh /entrypoint.sh
 
+COPY --chown=1000:1000 themes/learn4 /var/www/html/user/themes/learn4
+
 # provide container inside image for data persistence
-VOLUME ["/var/www/html/backup", "/var/www/html/logs", "/var/www/html/user/themes", "/var/www/html/user/pages", "/var/www/html/user/config", "/var/www/html/user/images"]
+VOLUME ["/var/www/html/backup", "/var/www/html/user/themes/yunohost-docs", "/var/www/html/logs", "/var/www/html/user/pages", "/var/www/html/user/config", "/var/www/html/user/images"]
 
 # ENTRYPOINT ["/entrypoint.sh"]
 # CMD ["apache2-foreground"]
