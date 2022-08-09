@@ -166,6 +166,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | microblog.pub |  | [Upstream](https://github.com/tsileo/microblog.pub) |  |
 | [Meshery](https://meshery.io/) | Cloudnative solution to bind multiple Service-Meshes together, not only K8s | [Upstream](https://github.com/meshery/meshery) |  |
 | meteor-movielist | An open source web app for managing movie lists built with self-hosting in mind. Movie information is fetched from TMDb. | [Upstream](https://github.com/nunof07/meteor-movielist) |  |
+| [Mindustry](https://mindustrygame.github.io/) | A sandbox tower-defense game | [Upstream](https://github.com/Anuken/Mindustry) | |
 | [Mirakel](https://mirakel.azapps.de/taskwarrior.html) |  | [Upstream](https://github.com/GothenburgBitFactory/taskwarrior) |  |
 | modernpaste | A modern, feature-rich Pastebin alternative | [Upstream](https://github.com/LINKIWI/modern-paste) | [Package Draft](https://github.com/YunoHost-Apps/modernpaste_ynh) |
 | [Modoboa](https://modoboa.org) |  | [Upstream](https://github.com/modoboa/) |  |
