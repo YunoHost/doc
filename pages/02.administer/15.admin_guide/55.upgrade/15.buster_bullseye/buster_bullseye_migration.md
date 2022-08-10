@@ -85,7 +85,7 @@ Test that your applications are working. If they aren't, you should try to upgra
 
 If your app is broken and you were already with the last version, you can rerun the upgrade thanks to the `-f` option:
 ```
-yunohost app upgrade -f APP_NAME
+yunohost app upgrade --force APP_NAME
 ```
 
 ## Current known (minor) issues after the migration
