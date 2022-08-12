@@ -1,9 +1,0 @@
-{% extends 'flex-objects/types/default/edit.html.twig' %}
-
-{% if not directory.isAuthorized('list', 'admin', user) %}
-    {% set back_route = '/' %}
-{% endif %}
-
-{% if not object.exists %}
-    {% do object.onPrepareRegistration() %}
-{% endif %}
