@@ -89,3 +89,5 @@ yunohost app upgrade --force NOM_APP
 
 ## Soucis (mineurs) connus après la migration
 
+Voir la [page anglaise](https://yunohost.org/en/buster_bullseye_migration#current-known-minor-issues-after-the-migration)
+
