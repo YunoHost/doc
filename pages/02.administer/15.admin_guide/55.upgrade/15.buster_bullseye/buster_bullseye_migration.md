@@ -111,6 +111,8 @@ We found this in Rpi documentation
 when the dhcpcd5 package is updated to the latest version (1:8.1.2-1+rpt1 -> 1:8.1.2-1+rpt2), the Raspberry Pi will fail to obtain a DHCP IP address following the next reboot or startup. This problem can be avoided by disabling and re-enabling the "System Options -> Network at Boot" option using the latest raspi-config after the dhcpcd5 package has been updated and prior to the system being shutdown or rebooted
 ```
 
+If you are using a rpi 4 (or maybe 3), see this [solution](https://forum.yunohost.org/t/aucun-acces-a-internet-suite-a-migration-4-4-to-11-depuis-raspberry-pi-4-pi-400/20652/17)
+
 ### Restore ynh4 backup onto a fresh ynh11
 
 If you can't restore your app but your system has been restored, you probably should use the regen conf to fix the nginx issues:
