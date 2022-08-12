@@ -84,7 +84,7 @@ Vérifiez que vos applications installées fonctionnent... Si elles ne fonctionn
 
 Si votre app est cassée et que vous étiez déjà sur la dernière version d'une application, vous pouvez relancer la mise à jour grâce à l'option `-f`:
 ```
-yunohost app upgrade -f NOM_APP
+yunohost app upgrade -F NOM_APP
 ```
 
 ## Soucis (mineurs) connus après la migration
