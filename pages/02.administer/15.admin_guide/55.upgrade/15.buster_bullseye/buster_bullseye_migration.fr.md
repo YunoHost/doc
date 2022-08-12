@@ -50,7 +50,7 @@ Si la migration a échoué a un moment donné, la première chose à faire est d
 #### Exécuter la migration pour réparer votre application python
 Après la mise à jour, vos applications python devraient être indisponibles car leur environnement virtuel doit être reconstruit.
 
-Pour ce faire, vous pouvez exécuter les migrations en cours dans `Webadmin > Mises à jour`. Les applications ci-dessous ne seront pas réparées automatiquement, vous devez les mettre à jour manuellement avec `yunohost app upgrade -f APP`.
+Pour ce faire, vous pouvez exécuter les migrations en cours dans `Webadmin > Mises à jour`. Les applications ci-dessous ne seront pas réparées automatiquement, vous devez les mettre à jour manuellement avec `yunohost app upgrade -F APP`.
 
 Les applications qui ne seront pas réparées automatiquement et nécessitent une mise à jour forcée :
  * calibreweb
@@ -84,7 +84,7 @@ Vérifiez que vos applications installées fonctionnent... Si elles ne fonctionn
 
 Si votre app est cassée et que vous étiez déjà sur la dernière version d'une application, vous pouvez relancer la mise à jour grâce à l'option `-f`:
 ```
-yunohost app upgrade --force NOM_APP
+yunohost app upgrade -F NOM_APP
 ```
 
 ## Soucis (mineurs) connus après la migration
