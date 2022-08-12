@@ -2,4 +2,6 @@
 !/pages
 !/images
 !/themes
-/themes/learn4
+!/Dockerfile
+!/docker-compose.yml
+!/dev/plugins
