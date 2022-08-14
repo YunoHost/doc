@@ -92,6 +92,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [fishnet](https://lichess.org/get-fishnet) | Distributed Stockfish analysis for lichess.org | [Upstream](https://github.com/niklasf/fishnet) |  |
 | FitTrackee |  | [Upstream](https://github.com/SamR1/FitTrackee) |  |
 | Flask | Skeleton for flask apps |  | [Package Draft](https://github.com/YunoHost-Apps/flask_ynh) |
+| [Flus](https://flus.fr/) | Aggregate, save and share links from all over the Web.  | [Upstream](https://github.com/flusio/flusio) | |
 | [foodsoft](https://foodcoops.github.io/foodsoft-hosting/) | Manage a non-profit food cooperative |  | [Package Draft](https://github.com/YunoHost-Apps/foodsoft_ynh) |
 | [Fossil](https://www.fossil-scm.org) |  |  |  |
 | full-text-rss |  | [Upstream](https://bitbucket.org/fivefilters/full-text-rss/src/master/) |  |
