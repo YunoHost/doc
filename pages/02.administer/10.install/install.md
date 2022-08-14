@@ -213,11 +213,13 @@ However, community images exist and are available on Docker Hub:
 
 {% if wsl %}
 ## Introduction
-WSL is a nice feature of Windows 10, making Linux pseudo-distributions available through command line. Let's say pseudo, because even though they are not really like virtual machines, they rely on virtualization capacities that make their integration with Windows almost seamless. Docker for Windows can now rely on WSL instead of Hyper-V, for example.
+WSL is a nice feature of Windows 10, making Linux pseudo-distributions available through command line. Let's say pseudo, because even though they are not really like virtual machines, they rely on virtualization capacities that make their integration with Windows almost seamless.
+Docker for Windows can now rely on WSL instead of Hyper-V, for example.
 
-! Bear in mind, this setup itself is *not* a container of any kind. If something breaks, there is no rollback capability. You may need to delete the Debian distro altogether and restore it whole.
+! Bear in mind, this setup itself is *not* a container of any kind. If something breaks, there is no rollback capability.
+! You may need to delete the Debian distro altogether and restore it whole.
 
-## Install Debian 10
+## Install Debian 11
 
 Let's install YunoHost into its own distro, not altering the default one. In a PowerShell terminal:
 
@@ -240,7 +242,7 @@ It is under Debian 9 Stretch, so let's upgrade it:
 
 ```bash
 # In WSL
-sudo sed -i 's/stretch/buster/g' /etc/apt/sources.list`
+sudo sed -i 's/stretch/bullseye/g' /etc/apt/sources.list`
 sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade
@@ -257,7 +259,8 @@ generateResolvConf = false
 
 ## Force the use of iptables-legacy
 
-Somehow the YunoHost post-installation does not like `nf_tables`, the new software replacing `iptables`. We can still explicitely use the good ol' `iptables` though:
+Somehow the YunoHost post-installation does not like `nf_tables`, the new software replacing `iptables`.
+We can still explicitely use the good ol' `iptables` though:
 
 ```bash
 # In WSL
@@ -267,12 +270,13 @@ sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 
 ## Install Systemd
 
-Debian on WSL does not have `systemd`, a service configuration software. This is a key element for YunoHost, and any decent Debian distro (seriously MS, what the heck). Let's install it:
+Debian on WSL does not have `systemd`, a service configuration software.
+This is a key element for YunoHost, and for any decent Debian distro (seriously MS, what the heck). Let's install it:
 
 1. Install dotNET runtime:
 ```bash
 # In WSL
-wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt update
 sudo apt install -y apt-transport-https
@@ -289,7 +293,7 @@ echo "deb [trusted=yes] https://wsl-translinux.arkane-systems.net/apt/ /" > /etc
 sudo apt update
 sudo apt install -y systemd-genie
 ```
-    
+
 ## Install YunoHost
 
 ```bash
@@ -311,7 +315,7 @@ Always call `genie -s` while starting your distro.
 
 ## Backup and restore the distro 
 ### Make your first distro backup
-As said before, there is no rollback capability. So let's export your fresh distro. :slight_smile: In PowerShell:
+As said before, there is no rollback capability. So let's export your fresh distro. In PowerShell:
 
 ```
 cd ~
