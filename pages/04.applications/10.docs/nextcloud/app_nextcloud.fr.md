@@ -19,11 +19,11 @@ routes:
     - [À propos de keeweb](#à-propos-de-keeweb)
  - [Liens utiles](#liensutiles)
 
-Nextcloud est un service d'hébergement de fichiers. De nombreuses applications peuvent être installées afin d'offrir à Nextcloud de nouvelles fonctionnalités telles qu'un agenda, un répertoire de contacts, des notes et plein d'autres possibles (vous pouvez trouver quelques applications dans la partie [applications tierces](#applications-tierces), il en existe une multitude suivant vos besoins).
+Nextcloud est un service d'hébergement de fichiers. De nombreuses applications peuvent être installées afin d'offrir à Nextcloud de nouvelles fonctionnalités telles qu'un agenda, un répertoire de contacts, des notes et plein d'autres possibles (vous pouvez trouver quelques applications dans la section [applications tierces](#applications-tierces), il en existe une multitude suivant vos besoins).
 
 
 ## Découverte de l'environnement de Nextcloud
-Du fait de la constitution de Nextcloud, une base avec des applications tiers à installer, ce chapitre ne concernera que la base de Nextcloud sans applications ajoutés. Plus d'informations sur les applications dans la partie dédiée ou sur le catalogue d'application de Nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com).  
+Du fait de la constitution de Nextcloud, une base avec des applications tierces à installer, ce chapitre ne concernera que la base de Nextcloud sans applications ajoutés. Plus d'informations sur les applications dans la partie dédiée ou sur le catalogue d'application de Nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com).  
 Nextcloud est avant tout un service de cloud (comme Seafile et d'autres logiciels), il permet une synchronisation et le partage de fichiers sur internet et entre plusieurs terminaux (ordinateurs, smartphone) mais aussi avec plusieurs personnes.
 
 
@@ -149,7 +149,7 @@ C'est terminé. À présent testez si tout va bien, essayez de vous connecter à
 Il est relativement simple de monter des dossiers accessibles depuis Nextcloud en lecture/écriture et de les 
 partager avec d'autres applications (par exemple [Jellyfin](app_jellyfin), [Funkwhale](app_funkwhale), [Transmission](app_transmission), ...)
 
-Il Vous faut commencer par monter un dossier qui sera disponible pour votre application (je prends jellyfin dans mon 
+Il vous faut commencer par monter un dossier qui sera disponible pour votre application (je prends jellyfin dans mon 
 exemple). Je commence donc par créer un nouveau dossier.
 ```bash
 mkdir /media/data/jellyfin
