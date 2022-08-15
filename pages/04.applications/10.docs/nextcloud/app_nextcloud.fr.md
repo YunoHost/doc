@@ -15,11 +15,11 @@ routes:
     - [Ajouter de l'espace à Nextcloud](#ajout-espace)
     - [Partager un dossier entre nextcloud et une application](#partager-un-dossier-entre-nextcloud-et-une-application)
     - [Nextcloud et Cloudlare](#nextcloud-et-cloudflare)
- - [Applications tierce](#application-tierce)
-    - [A propos de keeweb](#à-propos-de-keeweb)
+ - [Applications tierces](#applications-tierces)
+    - [À propos de keeweb](#à-propos-de-keeweb)
  - [Liens utiles](#liensutiles)
 
-Nextcloud est un service d'hébergement de fichiers, de nombreuses applications peuvent être installées afin de lui offrir de nouvelles fonctionnalités tel qu'un agenda, un répertoire de contacts, des notes et pleins d'autres possibles (vous pouvez trouver quelques applications dans la partie [applications tiers](#application-tierce) mais il en existe une multitude suivant vos besoins).
+Nextcloud est un service d'hébergement de fichiers. De nombreuses applications peuvent être installées afin d'offrir à Nextcloud de nouvelles fonctionnalités telles qu'un agenda, un répertoire de contacts, des notes et plein d'autres possibles (vous pouvez trouver quelques applications dans la partie [applications tierces](#applications-tierces), il en existe une multitude suivant vos besoins).
 
 
 ## Découverte de l'environnement de Nextcloud
@@ -193,7 +193,7 @@ Les options à désactiver (Off) sont :
 
 Sauvegarder et nettoyer vos caches (Cloudflare, navigateur...) et le tour est joué.
 
-# Application Tierce
+# Application Tierces
 Certaine application son disponible directement depuis Nextcloud.
 ![image](image://nextcloud_menu_parameter.jpg)
 
