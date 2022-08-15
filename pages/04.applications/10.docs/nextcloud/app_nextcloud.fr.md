@@ -147,8 +147,7 @@ C'est terminé. À présent testez si tout va bien, essayez de vous connecter à
 
 ### Partager un dossier entre Nextcloud et une application
 Il est relativement simple de monter des dossiers accessibles depuis nextcloud en lecture/écriture et de les 
-partager avec d'autres applications (par exemple [Jellyfin](app_jellyfin), [Funkwhale](app_funkwhale), [Transmission]
-(app_transmission), ...)
+partager avec d'autres applications (par exemple [Jellyfin](app_jellyfin), [Funkwhale](app_funkwhale), [Transmission](app_transmission), ...)
 
 Il Vous fait commencer par monter un dossier qui sera disponible pour votre application (je prends jellyfin dans mon 
 exemple). Je commence donc par créer un nouveau dossier.
@@ -179,7 +178,7 @@ Si vous utilisez Cloudflare pour vos DNS, *ce qui peut-être pratique si vous av
 #### Cloudflare Page Rules
 
 Dans le panneau de contrôle de Cloudflare, choisissez votre domaine et trouvez Page Rules
-l'URL dans votre barre d'addresse ressemblera à : https://dash.cloudflare.com/*/domain.tld/page-rules
+l'URL dans votre barre d'adresse ressemblera à : https://dash.cloudflare.com/*/domain.tld/page-rules
 
 #### Ajouter une règle
 
