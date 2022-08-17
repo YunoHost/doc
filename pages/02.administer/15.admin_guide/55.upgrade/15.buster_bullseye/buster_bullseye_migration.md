@@ -30,7 +30,7 @@ After upgrading to 4.4.x, go to Tools > Migrations to access the migrations inte
 After upgrading to 4.4.x, run : 
 
 ```bash
-sudo yunohost tools migrations migrate
+sudo yunohost tools migrations run
 ```
 
 then read carefully and accept the disclaimer.
