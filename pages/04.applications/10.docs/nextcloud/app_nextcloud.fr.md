@@ -9,28 +9,31 @@ routes:
 
 ![logo de Nextcloud](image://nextcloud_logo.png)
 
- - [Découverte de l'environnement de Nextcloud](#EnvironnementNextcloud)
- - [Logiciels Clients pour mobile et ordinateur](#LogicielsClients)
- - [Manipulations & Problèmes rencontrés utiles](#ManipulationsUtiles)
-    - [Ajouter de l'espace à Nextcloud](#AjoutEspace)
- - [Applications tiers](#AppsTiers)
+ - [Découverte de l'environnement de Nextcloud](#environnement-nextcloud)
+ - [Logiciels clients pour mobile et ordinateur](#logiciels-clients)
+ - [Manipulations & problèmes rencontrés utiles](#manipulations-utiles)
+    - [Ajouter de l'espace à Nextcloud](#ajout-espace)
+    - [Partager un dossier entre Nextcloud et une application](#partager-un-dossier-entre-nextcloud-et-une-application)
+    - [Nextcloud et Cloudlare](#nextcloud-et-cloudflare)
+ - [Applications tierces](#applications-tierces)
+    - [À propos de keeweb](#à-propos-de-keeweb)
  - [Liens utiles](#liensutiles)
 
-Nextcloud est un service d'hébergement de fichiers, de nombreuses applications peuvent être installées afin de lui offrir de nouvelles fonctionnalités tel qu'un agenda, un répertoire de contacts, des notes et pleins d'autres possibles (vous pouvez trouver quelques applications dans la partie [applications tiers](#AppsTiers) mais il en existe une multitude suivant vos besoins).
+Nextcloud est un service d'hébergement de fichiers. De nombreuses applications peuvent être installées afin d'offrir à Nextcloud de nouvelles fonctionnalités telles qu'un agenda, un répertoire de contacts, des notes et plein d'autres possibles (vous pouvez trouver quelques applications dans la section [applications tierces](#applications-tierces), il en existe une multitude suivant vos besoins).
 
-## Découverte de l'environnement de Nextcloud<a name="EnvironnementNextcloud" href=""></a>
 
-Du fait de la constitution de Nextcloud, une base avec des applications tiers à installer, ce chapitre ne concernera que la base de nextcloud sans applications ajoutés. Plus d'informations sur les applications dans la partie dédiée ou sur le catalogue d'application de Nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com).  
+## Découverte de l'environnement de Nextcloud
+Du fait de la constitution de Nextcloud, une base avec des applications tierces à installer, ce chapitre ne concernera que la base de Nextcloud sans applications ajoutés. Plus d'informations sur les applications dans la partie dédiée ou sur le catalogue d'application de Nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com).  
 Nextcloud est avant tout un service de cloud (comme Seafile et d'autres logiciels), il permet une synchronisation et le partage de fichiers sur internet et entre plusieurs terminaux (ordinateurs, smartphone) mais aussi avec plusieurs personnes.
 
-## Logiciels Clients<a name="LogicielsClients" href=""></a>
 
+## Logiciels clients
 Il existe des logiciels clients pour de nombreux terminaux. Vous pouvez les retrouver sur le site de Nextcloud : [nextcloud.com/install/#install-clients](https://nextcloud.com/install/#install-clients)
 
-## Manipulations utiles & problèmes rencontrés<a name="ManipulationsUtiles" href=""></a>
 
-### Ajouter de l'espace à Nextcloud<a name="AjoutEspace" href=""></a>
+## Manipulations utiles & problèmes rencontrés
 
+### Ajouter de l'espace à Nextcloud
 La solution I. permet d'ajouter un lien vers un dossier local ou distant.  
 La solution II. permet de déplacer l'espace de stockage principal de Nextcloud.
 
@@ -39,7 +42,7 @@ La solution II. permet de déplacer l'espace de stockage principal de Nextcloud.
 Paramètre => [Administration] Stockages externe.
 
 En bas de la liste vous pouvez rajouter un dossier (Il est possible de définir un sous dossier en utilisant la convention `dossier/sousDossier`.)  
-Sélectionner un type de stockage et indiquez les information de connexion demandés.  
+Sélectionner un type de stockage et indiquez les informations de connexion demandées.  
 Vous pouvez restreindre ce dossier à un ou plusieurs utilisateurs nextcloud avec la colonne `Disponible pour`.  
 Avec l'engrenage vous pouvez autoriser ou interdire la prévisualisation et le partage des fichiers.  
 Enfin cliquer sur la coche pour valider le dossier.
@@ -142,6 +145,31 @@ sudo -u nextcloud php7.3 occ files:scan --all
 
 C'est terminé. À présent testez si tout va bien, essayez de vous connecter à votre instance Nextcloud, envoyer un fichier, vérifiez sa bonne synchronisation.
 
+### Partager un dossier entre Nextcloud et une application
+Il est relativement simple de monter des dossiers accessibles depuis Nextcloud en lecture/écriture et de les 
+partager avec d'autres applications (par exemple [Jellyfin](app_jellyfin), [Funkwhale](app_funkwhale), [Transmission](app_transmission), ...)
+
+Il vous faut commencer par monter un dossier qui sera disponible pour votre application (je prends jellyfin dans mon 
+exemple). Je commence donc par créer un nouveau dossier.
+```bash
+mkdir /media/data/jellyfin
+```
+
+Il nous faut maintenant créer un groupe qui pourra faire la liaison entre les applications. Ici mon groupe se nomme 
+`multimedia`
+```bash
+sudo su
+
+groupadd multimedia
+
+usermord nextcloud -a -G multimedia
+usermord jellyfin -a -G multimedia
+
+chown nextcloud:multimedia -R /media/data/jellyfin
+```
+
+Dans l'interface de vos applications vous pouvez ajouter ce chemin, il sera accessible pour les 2 applications, dans 
+`Nextcloud` > `Paramètres` > `Administration` > `Stockage externe`
 
 ### Nextcloud et Cloudflare
 
@@ -150,7 +178,7 @@ Si vous utilisez Cloudflare pour vos DNS, *ce qui peut-être pratique si vous av
 #### Cloudflare Page Rules
 
 Dans le panneau de contrôle de Cloudflare, choisissez votre domaine et trouvez Page Rules
-l'URL dans votre barre d'addresse ressemblera à : https://dash.cloudflare.com/*/domain.tld/page-rules
+l'URL dans votre barre d'adresse ressemblera à : https://dash.cloudflare.com/*/domain.tld/page-rules
 
 #### Ajouter une règle
 
@@ -165,9 +193,14 @@ Les options à désactiver (Off) sont :
 
 Sauvegarder et nettoyer vos caches (Cloudflare, navigateur...) et le tour est joué.
 
+# Applications Tierces
+Certaines applications sont disponibles directement depuis Nextcloud.
+![image](image://nextcloud_menu_parameter.jpg)
+
+
 ## À propos de Keeweb
 
-L'application Keeweb sur le catalogue de nextcloud - [apps.nextcloud.com/keeweb](https://apps.nextcloud.com/apps/keeweb)
+L'application Keeweb sur le catalogue de Nextcloud - [apps.nextcloud.com/keeweb](https://apps.nextcloud.com/apps/keeweb)
 
 L'application KeeWeb est un gestionnaire de mots de passe incorporé à Nextcloud. Elle permet par exemple de lire un fichier de type KeePass (*.kdbx*) stocké sur votre instance Nextcloud.
 
