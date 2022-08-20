@@ -556,7 +556,8 @@ Go in Users > Add
 ```
 yunohost user create johndoe
 ```
-TODO : copypasta an actual shell session will all info asked etc..
+
+![creazione dell'utente CLI](image://create-first-user-cli.png?resize=100%&class=inline)
 
 [/ui-tab]
 [/ui-tabs]
@@ -603,7 +604,7 @@ For more detailled instructions, or to lean more about SSL/TLS certificates, see
 [/ui-tab]
 [ui-tab title="From the command line"]
 ```
-yunohost domain cert-install
+yunohost domain cert install
 ```
 [/ui-tab]
 [/ui-tabs]
