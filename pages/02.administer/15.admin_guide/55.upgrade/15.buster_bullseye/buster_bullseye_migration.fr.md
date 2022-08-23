@@ -82,9 +82,9 @@ Pour cela, vous pouvez aller dans la partie Diagnostic (section Système de base
 Vérifiez que vos applications installées fonctionnent... Si elles ne fonctionnent pas, il est recommandé de tenter de les mettre à jour. (ou bien de manière générale, il est recommandé de les mettre à jour même si elles fonctionnent !).
 
 
-Si votre app est cassée et que vous étiez déjà sur la dernière version d'une application, vous pouvez relancer la mise à jour grâce à l'option `-f`:
+Si votre app est cassée et que vous étiez déjà sur la dernière version d'une application, vous pouvez relancer la mise à jour grâce à l'option `-F`:
 ```
-yunohost app upgrade -F NOM_APP
+yunohost app upgrade --force NOM_APP
 ```
 
 ## Soucis (mineurs) connus après la migration
