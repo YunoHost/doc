@@ -563,7 +563,8 @@ Allez dans `Utilisateurs > Nouvel utilisateur`.
 ```
 yunohost user create johndoe
 ```
-TODO : copypasta an actual shell session will all info asked etc..
+
+![Création d'un utilisateur en ligne de commande](image://create-first-user-cli.png?resize=100%&class=inline)
 
 [/ui-tab]
 [/ui-tabs]
@@ -610,7 +611,7 @@ Pour plus d'instructions détaillées, ou pour en savoir plus à propos des cert
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
 ```
-yunohost domain cert-install
+yunohost domain cert install
 ```
 [/ui-tab]
 [/ui-tabs]
