@@ -557,7 +557,9 @@ Go in Users > Add
 yunohost user create johndoe
 ```
 
+[figure class="nomargin" caption="Anteprima dell'interfaccia utente di creazione dell'utente CLI"]
 ![creazione dell'utente CLI](image://create-first-user-cli.png?resize=100%&class=inline)
+[/figure]
 
 [/ui-tab]
 [/ui-tabs]
