@@ -720,8 +720,9 @@ Go in Users > Click on "+ New User" button
 yunohost user create johndoe
 ```
 
+[figure class="nomargin" caption="Preview of the user creation CLI"]
 ![User creation CLI](image://create-first-user-cli.png?resize=100%&class=inline)
-
+[/figure]
 
 [/ui-tab]
 [/ui-tabs]

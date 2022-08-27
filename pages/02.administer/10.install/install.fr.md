@@ -564,7 +564,9 @@ Allez dans `Utilisateurs > Nouvel utilisateur`.
 yunohost user create johndoe
 ```
 
+[figure class="nomargin" caption="Aperçu de l'interface de création utilisateur en ligne de commande"]
 ![Création d'un utilisateur en ligne de commande](image://create-first-user-cli.png?resize=100%&class=inline)
+[/figure]
 
 [/ui-tab]
 [/ui-tabs]
