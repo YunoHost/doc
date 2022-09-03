@@ -20,7 +20,7 @@ You could join those chat rooms using:
 There is a [support](/help) chat room for YunoHost users mutual support and help.
 
 - IRC: **#yunohost** on libera.chat
-- Matrix: **[#yunohost:libera.chat](https://matrix.to/#/#yunohost:libera.chat)**
+- Matrix: **[#yunohost:matrix.org](https://matrix.to/#/#yunohost:matrix.org)**
 - XMPP: **[support@conference.yunohost.org](xmpp:support@conference.yunohost.org?join)**
 
 #### Development chat room
