@@ -217,6 +217,8 @@ Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 {% if at_home %}
 ## [fa=download /] Télécharger l'image {{image_type}}
 
+! Les liens vers les images sont actuellement cassés. Pendant que nous travaillons sur le problème, trouvez-les directement à l'adresse https://build.yunohost.org/
+
 {% if virtualbox or regular %}
 !!! Si votre hôte est en 32 bits, faites bien attention à télécharger l'image 32 bits.
 {% elseif arm_unsup %}

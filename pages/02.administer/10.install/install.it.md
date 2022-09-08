@@ -215,6 +215,8 @@ Here are some VPS providers supporting YunoHost natively :
 {% if at_home %}
 ## [fa=download /] Download the {{image_type}} image
 
+! I link alle immagini sono attualmente interrotti. Mentre stiamo lavorando al problema, potete trovarli direttamente su https://build.yunohost.org/
+
 {% if virtualbox or regular %}
 !!! If your host OS is 32 bits, be sure to download the 32-bit image.
 {% elseif arm_unsup %}
