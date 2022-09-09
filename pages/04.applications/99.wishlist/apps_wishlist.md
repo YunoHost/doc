@@ -48,6 +48,8 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Chaskiq | A full featured Live Chat, Support & Marketing platform, alternative to Intercom, Drift, Crisp | [Upstream](https://github.com/chaskiq/chaskiq) |  |
 | changedetection.io | Self-hosted open source change monitoring of web pages | [Upstream](https://github.com/dgtlmoon/changedetection.io) |  |
 | [Chatterbox](https://element.io/solutions/chatterbox-embedded-live-chat-for-customer-service) | Embedded live chat for customer service | [Upstream]([https://github.com/sourcegraph/checkup](https://github.com/vector-im/chatterbox)) |  |
+| [Chatwoot](https://www.chatwoot.com/docs/self-hosted/) | Open-source customer engagement suite, an alternative to Intercom, Zendesk, Salesforce Service Cloud | [Upstream](https://github.com/chatwoot/chatwoot) |  |
+| [Chitchatter](https://chitchatter.im/) | chat p2p encrypted serverless ephemeral decentralized | [Upstream](https://github.com/jeremyckahn/chitchatter) |  |
 | [CheckUp](https://sourcegraph.github.io/checkup) |  | [Upstream](https://github.com/sourcegraph/checkup) |  |
 | [Citadel-suite](https://www.citadel.org) | Groupware platform |  |  |
 | [CKAN](https://ckan.org/) | A tool for making open data websites | [Upstream](https://github.com/ckan/ckan) |  |
@@ -160,6 +162,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [MaidSafe](https://maidsafe.net) |  | [Upstream](https://github.com/maidsafe) |  |
 | [Mailpile](https://www.mailpile.is) |  | [Upstream](https://github.com/mailpile/Mailpile) |  |
 | [Mailtrain](https://mailtrain.org/) |  | [Upstream](https://github.com/Mailtrain-org/mailtrain) |  |
+| [Tileserver-GL](https://maps.earth/) | Tile server light SVG for map service  | [Upstream](https://github.com/maptiler/tileserver-gl) |  |
 | [Mealie](https://hay-kot.github.io/mealie/) | Recipe manager and meal planner  | [Upstream](https://github.com/hay-kot/mealie/) |  |
 | [Mediagoblin](https://mediagoblin.org/) | Video streaming platform | [Upstream](https://savannah.gnu.org/projects/mediagoblin) | [Package Draft](https://github.com/YunoHost-Apps/mediagoblin_ynh) |
 | [medusa](https://pymedusa.com/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/YunoHost-Apps/medusa_ynh) |
@@ -316,6 +319,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [WebODF](https://webodf.org) |  | [Upstream](https://github.com/webodf/WebODF) |  |
 | webogram | Webogram - a new era of messaging | [Upstream](https://github.com/zhukov/webogram) | [Package Draft](https://github.com/YunoHost-Apps/webogram_ynh) |
 | [WebThings Gateway](https://iot.mozilla.org/gateway/) |  | [Upstream](https://github.com/mozilla-iot/) |  |
+| [wg-access-server](https://github.com/freifunkMUC/wg-access-server) | VPN Server OIDC ipv4 ipv6 | [Upstream](https://github.com/freifunkMUC/wg-access-server) |  |
 | Whoogle | A metasearch engine | [Upstream](https://github.com/benbusby/whoogle-search) |  |
 | [Wikiless](https://wikiless.org/) | A free open source alternative Wikipedia front-end focused on privacy. | [Upstream](https://codeberg.org/orenom/wikiless) |  |
 | [WikiSuite](https://wikisuite.org/Software) | The most comprehensive and integrated Open Source enterprise solution. | [Upstream](https://gitlab.com/wikisuite) |  |
