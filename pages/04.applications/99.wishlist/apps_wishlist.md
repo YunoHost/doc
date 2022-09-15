@@ -200,6 +200,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [osmw](https://www.openstreetmap.org/) | Cartography software |  | [Package Draft](https://github.com/YunoHost-Apps/osmw_ynh) |
 | OSRM |  | [Upstream](https://github.com/Project-OSRM/osrm-backend) |  |
 | [OX Open-Xchange](https://www.open-xchange.com) | Linux groupware solution | [Upstream](https://github.com/open-xchange/) |  |
+| [pd3f](https://pd3f.com/) | PDF text extraction (OCR) pipeline using machine-learning | [Upstream](https://github.com/pd3f/pd3f) | |
 | [Padloc](https://padloc.app/) | Simple, secure password and data management for individuals and teams | [Upstream](https://github.com/padloc/padloc) | |
 | Paperless-ng |  | [Upstream](https://github.com/jonaswinkler/paperless-ng) |  |
 | [Paperwork](https://paperwork.cloud) |  | [Upstream](https://github.com/paperwork/paperwork) |  |
