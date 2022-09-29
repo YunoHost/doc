@@ -40,6 +40,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Bolt](https://bolt.cm/) | Content Management Tool |  | [Package Draft](https://github.com/realitygaps/bolt_ynh) |
 | BookWyrm | Social reading and reviewing, decentralized with ActivityPub | [Upstream](https://github.com/mouse-reeve/bookwyrm) |  |
 | BTCPay Server |  | [Upstream](https://github.com/btcpayserver/btcpayserver) |  |
+| [Budibase](https://budibase.com/) | Low code platform for creating internal apps, workflows, and admin panels in minutes. | [Upstream](https://github.com/Budibase/budibase) |  |
 | [Cactus Comments](https://cactus.chat/) | Federated comment system, to embed into your webpages, based on the Matrix protocol. | [Upstream](https://gitlab.com/cactus-comments) | [Package Draft](https://github.com/h3ndrik/cactus-comments_ynh) |
 | [Cagette](https://www.cagette.net/) | A marketplace for local farmers and producers | [Upstream](https://github.com/CagetteNet/cagette) | |
 | [Cal.com](https://cal.com/) | Formerly Calendso. Volunteer shift management and meeting scheduling. "The open source Calendly alternative." | [Upstream](https://github.com/calcom/cal.com) | |
