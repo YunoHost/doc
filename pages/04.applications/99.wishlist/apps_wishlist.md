@@ -119,6 +119,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | gogs_webhost | Turn a Gogs repository to static web hosting |  | [Package Draft](https://github.com/YunoHost-Apps/gogs_webhost_ynh) |
 | Gollum | A simple Git-powered wiki | [Upstream](https://github.com/gollum/gollum) | [Package Draft](https://github.com/YunoHost-Apps/gollum_ynh) |
 | Goploader |  | [Upstream](https://github.com/Depado/goploader) |  |
+| gocd | ci/cd server | [Upstream](https://go.cd) | https://docs.gocd.org/current/installation/install/server/linux.html#debian-based-distributions-ie-ubuntu |
 | Granary |  | [Upstream](https://github.com/snarfed/granary) |  |
 | [Graphhopper](https://www.graphhopper.com/) |  | [Upstream](https://github.com/graphhopper/graphhopper) |  |
 | [Greenlight](https://blabla.aquilenet.fr/b) | A really simple end-user interface for your BigBlueButton server | [Upstream](https://github.com/bigbluebutton/greenlight) |  |
