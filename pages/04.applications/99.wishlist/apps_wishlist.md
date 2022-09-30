@@ -187,6 +187,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Nautilus](https://myactivity.stream/) | Turn your website into an ActivityPub profile  | [Upstream](https://github.com/aaronpk/Nautilus) |  |
 | Netrunner |  | [Upstream](https://github.com/mtgred/netrunner) |  |
 | [Netbird](https://netbird.io/) | Create an overlay peer-to-peer network connecting machines regardless of their location | [Upstream](https://github.com/netbirdio/netbird) | |
+| [Netlify CMS](https://netlifycms.org/) | A CMS for any static site generator that connects to a Gitlab/Github repo (requires netlify/gotrue) | [Upstream](https://github.com/netlify/netlify-cms) | |
 | [NewsBlur](https://www.newsblur.com) | This is the most complete RSS reader that exists to date | [Upstream](https://github.com/samuelclay/NewsBlur) |  |
 | nexusoss | Sonatype Nexus Repository manager OSS |  | [Package Draft](https://github.com/YunoHost-Apps/nexusoss_ynh) | 
 | [ntopng](https://www.ntop.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/ntopng_ynh) |
