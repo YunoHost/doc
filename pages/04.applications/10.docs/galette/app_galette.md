@@ -13,7 +13,7 @@ routes:
 
 - [Useful links](#useful-links)
 
-*Galette* Galette is a membership management web application towards non profit organizations. This is before all a free software (as in free speech), community and free (as in beer)! Galette works on any web server that handle PHP.
+*Galette* is a membership management web application towards non profit organizations. This is before all a free software (as in free speech), community and free (as in beer)! Galette works on any web server that handle PHP.
 
 ## Useful links
 
