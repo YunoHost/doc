@@ -14,7 +14,7 @@ routes:
 - [Liens utiles](#liens-utiles)
 
 *AllTube* est une interface web pour Youtube-dl.
-Pour configurer AllTube : éditez le fichier /var/www/alltube/config/config.yml via SSH.
+Pour configurer AllTube : éditez le fichier `/var/www/alltube/config/config.yml` via SSH.
 
 ## Liens utiles
 
