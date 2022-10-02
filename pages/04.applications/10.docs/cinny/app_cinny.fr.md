@@ -20,7 +20,7 @@ Cinny est facile à installer et a été construit sur la base de CodeIgniter4, 
 ## Avertissements / informations importantes
 
 Il n'y a pas de support LDAP (et il n'y en aura jamais).
-Cinny n'est qu'un client, vous devez déjà avoir un compte sur un serveur (voir l'application Yunohost de Synapse).
+Cinny n'est qu'un client, vous devez déjà avoir un compte sur un serveur (voir l'application YunoHost de Synapse).
 
 ## Liens utiles
 
