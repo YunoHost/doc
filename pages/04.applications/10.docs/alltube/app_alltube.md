@@ -14,7 +14,7 @@ routes:
 - [Useful links](#useful-links)
 
 *AllTube* is a web interface for Youtube-dl.
-To configure AllTube: edit the file /var/www/alltube/config/config.yml via SSH.
+To configure AllTube: edit the file `/var/www/alltube/config/config.yml` via SSH.
 
 ## Useful links
 
