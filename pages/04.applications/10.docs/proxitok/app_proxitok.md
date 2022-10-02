@@ -13,7 +13,7 @@ routes:
 
 - [Useful links](#useful-links)
 
-*ProxiTok* allows you to use TikTok via an alternative interface inspired by Nitter. All requests to TikTok are made on the server side, so you will never connect to their servers.
+*ProxiTok* allows you to use TikTok via an alternative interface inspired by Nitter. All requests made to TikTok are server-side, so you will never connect to their servers.
 
 ## Useful links
 
