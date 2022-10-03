@@ -55,7 +55,7 @@ Par défaut, Mosquitto va écouter sur 2 ports :
 
 ##### Mosquitto_pub et mosquitto_sub
 
-Ces deux programmes ne supportent pas le protocole websocket mais uniquement le mqtt : le paramétrage de base ne vous autorise donc pas à les utiliser pour communiquer depuis un client externe. Si vous les utilisez directement depuis votre serveur, ce genre de syntaxe devrait marcher:
+Ces deux programmes ne supportent pas le protocole websocket mais uniquement le MQTT : le paramétrage de base ne vous autorise donc pas à les utiliser pour communiquer depuis un client externe. Si vous les utilisez directement depuis votre serveur, ce genre de syntaxe devrait marcher :
 
 mosquitto_pub -u *user* -P *password* -h mqtt.your.domain.tld -p 1883 -t 'domoticz/in' -m '{ "idx" : 1, "nvalue" : 0, "svalue" : "25.0" }'
 
