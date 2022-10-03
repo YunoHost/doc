@@ -80,10 +80,9 @@ Si vous êtes sur le package ynh3 ou inférieur, Mosquitto n'est pas installé p
 
 ### Configuration
 
-
 #### Capteurs, langue...
 
-Toute la configuration de l'application a lieu dans l'application elle même
+Toute la configuration de l'application a lieu dans l'application elle-même.
 
 #### Access et API
 
@@ -112,7 +111,7 @@ Par exemple, pour ajouter la commmande json pour retrouver le statut d'un équip
     set $api "1";
     }
 ```
-Toutes les adresses IPv4 du réseau local (192.168.0.0/24) et toutes les adresses IPv6 sont autorisées pour l'API. À ma connaissance, il n'y a pas moyen d'effectuer un filtre pour les adresses IPv6 sur le réseau local, vous pouvez donc retirer leur autorisation en enlevant ou en commentant la ligne suivante dans `/etc/nginx/conf.d/yourdomain.tld.d/domoticz.conf:`
+Toutes les adresses IPv4 du réseau local (192.168.0.0/24) et toutes les adresses IPv6 sont autorisées pour l'API. À ma connaissance, il n'y a pas moyen d'effectuer un filtre pour les adresses IPv6 sur le réseau local, vous pouvez donc retirer leur autorisation en enlevant ou en commentant la ligne suivante dans `/etc/nginx/conf.d/yourdomain.tld.d/domoticz.conf` :
 
 `allow ::/1;`
 
