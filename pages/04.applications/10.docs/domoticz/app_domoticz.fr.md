@@ -63,7 +63,7 @@ De la même manière :
 
 `mosquitto_sub -u *user* -P *password* -h mqtt.your.domain.tld -p 1883 -t 'domoticz/out'`
 
-Si vous souhaitez ouvrir le protocole mqtt depuis l'extérieur afin de pouvoir les utiliser depuis un autre serveur, il vous faudra:
+Si vous souhaitez ouvrir le protocole MQTT depuis l'extérieur afin de pouvoir les utiliser depuis un autre serveur, il vous faudra :
 
     ouvrir le port 1883 sur le firewall Yunohost (Attention, risque de sécurité)
     autoriser les adresses IP souhaitées dans la configuration de mosquitto pour ce listener
