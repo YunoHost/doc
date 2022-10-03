@@ -13,7 +13,7 @@ routes:
 
 - [Liens utiles](#liens-utiles)
 
-Easy!Appointments est une application web hautement personnalisable qui permet aux clients de prendre rendez-vous avec vous via une interface web sophistiquée. De plus, elle offre la possibilité de synchroniser vos données avec Google Calendar afin que vous puissiez les utiliser avec d'autres services. Il s'agit d'un projet open source que vous pouvez télécharger et installer même pour un usage commercial. Easy!Appointments fonctionnera sans problème avec votre site web existant car il peut être installé dans un seul dossier du serveur et bien sûr partager une base de données existante.
+*Easy!Appointments* est une application web hautement personnalisable qui permet aux clients de prendre rendez-vous avec vous via une interface web sophistiquée. De plus, elle offre la possibilité de synchroniser vos données avec Google Calendar afin que vous puissiez les utiliser avec d'autres services. Il s'agit d'un projet open source que vous pouvez télécharger et installer même pour un usage commercial. Easy!Appointments fonctionnera sans problème avec votre site web existant car il peut être installé dans un seul dossier du serveur et bien sûr partager une base de données existante.
 
 ## Liens utiles
 
