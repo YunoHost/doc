@@ -66,7 +66,7 @@ De la même manière :
 Si vous souhaitez ouvrir le protocole MQTT depuis l'extérieur afin de pouvoir les utiliser depuis un autre serveur, il vous faudra :
 
     ouvrir le port 1883 sur le firewall Yunohost (Attention, risque de sécurité)
-    autoriser les adresses IP souhaitées dans la configuration de mosquitto pour ce listener
+    autoriser les adresses IP souhaitées dans la configuration de Mosquitto
     paramétrer le tls dans la configuration de mosquitto en donnant accès au crt.pem et key.pem de votre domaine mqtt en les paramétrant respectivement avec les variables certfile et keyfile. Ceci est obligatoire pour sécuriser la connexion.
 
 ##### Mise à jour depuis les versions n'ayant pas mosquittoo
