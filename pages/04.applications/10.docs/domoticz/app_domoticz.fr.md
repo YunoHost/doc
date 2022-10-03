@@ -51,7 +51,7 @@ sudo yunohost app setting domoticz mqtt_pwd
 Par défaut, Mosquitto va écouter sur 2 ports :
 
     Le 1883 sur localhost en protocole MQTT
-    Le 8883 en protocole websocket. Nginx redirige le port 443 externe vers ce port en interne.e Pour publier/souscrire sur un topic depuis l'exterieur, vous devez donc utiliser un programme supportant le protocole websocket (ex : la bibliothèque python paho).
+    Le 8883 en protocole websocket. NGINX redirige le port 443 externe vers ce port en interne. Pour publier/souscrire sur un topic depuis l'exterieur, vous devez donc utiliser un programme supportant le protocole websocket (ex : la bibliothèque Python paho-mqtt).
 
 ##### Mosquitto_pub et mosquitto_sub
 
