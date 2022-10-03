@@ -92,7 +92,7 @@ Par défaut, l'accès aux API JSON est autorisé sur cette URL /votredomaine.tld
 
 Par défaut, seuls la mise à jour de capteur et les interrupteurs sont autorisés. Pour autoriser une nouvelle commande, vous devez (pour l'instant) manuellement éditer le fichier de configuration NGINX :
 
-sudo nano /etc/nginx/conf.d/yourdomain.tld.d/domoticz.conf
+`sudo nano /etc/nginx/conf.d/yourdomain.tld.d/domoticz.conf`
 
 Puis éditer le bloc suivant en y ajoutant le regex de la commmande à autoriser :
 
