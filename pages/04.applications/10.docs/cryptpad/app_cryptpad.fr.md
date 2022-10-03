@@ -13,7 +13,7 @@ routes:
 
 - [Liens utiles](#liens-utiles)
 
-*CryptPad* est une suite logicielle cryptée de bout en bout et ouverte. Elle est conçue pour permettre un travail collaboratif, en synchronisant les modifications apportées aux documents en temps réel. Comme toutes les données sont cryptées, le service et ses administrateurs n'ont aucun moyen de voir le contenu édité et stocké.
+*CryptPad* est une suite logicielle chiffrée de bout en bout et ouverte. Elle est conçue pour permettre un travail collaboratif, en synchronisant les modifications apportées aux documents en temps réel. Comme toutes les données sont chiffrées, le service et ses administrateurs n'ont aucun moyen de voir le contenu édité et stocké.
 
 ## Avertissements / informations importantes
 
