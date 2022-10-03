@@ -23,11 +23,11 @@ Once CryptPad is installed, create an account via the Register button on the hom
 
     Copy the public key found in User Menu (avatar at the top right) > Settings > Account > Public Signing Key
     Paste this key in `/var/www/cryptpad/config/config.js` in the following array (uncomment and replace the placeholder):
-
+``` 
 adminKeys: [
         "[cryptpad-user1@my.awesome.website/YZgXQxKR0Rcb6r6CmxHPdAGLVludrAF2lEnkbx1vVOo=]",
 ],
-
+``` 
     Restart CryptPad service (In YunoHost webadmin -> Services -> cryptpad -> Restart)
 
 ## Useful links
