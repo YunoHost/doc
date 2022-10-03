@@ -75,7 +75,7 @@ Si vous êtes sur le package ynh3 ou inférieur, Mosquitto n'est pas installé p
 
     créez un domaine ou sous-domaine pour recevoir les informations (par exemple : 'mqtt.your.domain.tld')
     connecter vous en ligne de commande à votre serveur
-    taper la commande suivante : yunohost app setting domoticz mqtt_domain -v mqtt.your.domain.tld
+    tapez la commande suivante : `yunohost app setting domoticz mqtt_domain -v mqtt.your.domain.tld`
     Procédez à la mise à jour. Si vous êtes déjà sur la dernière version, utiliser la commmande suivante : `yunohost app upgrade domoticz --force`
 
 ### Configuration
