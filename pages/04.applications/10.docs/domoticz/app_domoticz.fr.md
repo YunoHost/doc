@@ -59,7 +59,7 @@ Ces deux programmes ne supportent pas le protocole websocket mais uniquement le 
 
 mosquitto_pub -u *user* -P *password* -h mqtt.your.domain.tld -p 1883 -t 'domoticz/in' -m '{ "idx" : 1, "nvalue" : 0, "svalue" : "25.0" }'
 
-De la même manière:c
+De la même manière :
 
 mosquitto_sub -u *user* -P *password* -h mqtt.your.domain.tld -p 1883 -t 'domoticz/out'
 
