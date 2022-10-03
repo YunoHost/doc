@@ -80,7 +80,6 @@ Si vous êtes sur le package ynh3 ou inférieur, mosquitto n'est pas installé p
 
 ### Configuration
 
-Sensors, language and this kind of stuff
 
 Main configuration of the app take place inside the app itself.
 
