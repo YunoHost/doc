@@ -82,7 +82,7 @@ Si vous êtes sur le package ynh3 ou inférieur, mosquitto n'est pas installé p
 
 
 
-#### Senseurs, langue et ce genre de choses
+#### Capteurs, langue...
 
 Toute la configuration de l'application a lieu dans l'application elle même
 
