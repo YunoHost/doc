@@ -90,7 +90,7 @@ Toute la configuration de l'application a lieu dans l'application elle même
 
 Par défaut, l'accès aux API JSON est autorisé sur cette URL /votredomaine.tld/api_/chemindedomoticz. Donc, si vous accédez à domoticz par https://votredomaine.tld/domoticz, utilisez le chemin suivant pour l'api: /votredomaine.tld/api_/domoticz/json.htm?votrecommandeapi
 
-Par défaut, seuls la mise à jour de senseur et les interrupteurs sont autorisés. Pour autoriser une nouvelle commande, vous devez (pour l'instant) manuellement éditer le fichier de configuration nginx :
+Par défaut, seuls la mise à jour de capteur et les interrupteurs sont autorisés. Pour autoriser une nouvelle commande, vous devez (pour l'instant) manuellement éditer le fichier de configuration NGINX :
 
 sudo nano /etc/nginx/conf.d/yourdomain.tld.d/domoticz.conf
 
