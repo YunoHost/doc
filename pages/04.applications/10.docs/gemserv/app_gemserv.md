@@ -13,7 +13,7 @@ routes:
 
 - [Useful links](#useful-links)
 
-*Gemserv* is a Gemini server written in rust.
+*Gemserv* is a Gemini server written in Rust.
 
 ### Disclaimers / important information
 
