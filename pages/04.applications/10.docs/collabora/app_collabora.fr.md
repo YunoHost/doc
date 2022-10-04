@@ -17,7 +17,7 @@ routes:
 
 Collabora est une suite bureautique en ligne basée sur LibreOffice et utilisable avec Nextcloud ou ownCloud. Elle permet d'éditer des documents textes, des tableaux, des diaporamas. L'édition en ligne peut se faire en simultanée et permet d'exporter et d'imprimer des documents grâce au format PDF généré.
 
-Cette application n'est pas compatible avec les architectures ARM. Le projet Collabora a bien développé une version spécifique ARM, mais celle-ci n'est compatible qu'avec Ubuntu, pas Debian, donc ne fonctionne pas sous Yunohost.
+Cette application n'est pas compatible avec les architectures ARM. Le projet Collabora a bien développé une version spécifique ARM, mais celle-ci n'est compatible qu'avec Ubuntu, pas Debian, donc ne fonctionne pas sous YunoHost.
 
 ### Architectures ARM
 
