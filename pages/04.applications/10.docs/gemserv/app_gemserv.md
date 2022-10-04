@@ -19,7 +19,7 @@ routes:
 
 Please note that Gemserv uses the TCP port 1965, so you can't use it for anything else.
 
-To add a gemini capsule, create a `/etc/gemserv/config.d/example.toml` file as following:
+To add a Gemini capsule, create a `/etc/gemserv/config.d/example.toml` file as following:
 
 ```
 [[server]]
