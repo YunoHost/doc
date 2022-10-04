@@ -230,7 +230,7 @@ sudo -u nextcloud php --define apc.enable_cli=1 -d memory_limit=512M /var/www/ne
 #### 2. Corriger la configuration de Nginx pour Nextcloud
 
 Pour que le CODE soit connecté à Nextcloud, le proxy doit faire le lien entre CODE (richdocumentscode_arm64) et Nextcloud.
-Or le fichier config par défaut de Nginx pour Nextcloud fait référence à richdocumentscode au lieu de rich documentscode_arm64, qui est le nom de l'application dans notre cas des architectures ARM.
+Or le fichier config par défaut de NGINX pour Nextcloud fait référence à richdocumentscode au lieu de rich documentscode_arm64, qui est le nom de l'application dans notre cas des architectures ARM.
 
 Il faut donc faire :
 
