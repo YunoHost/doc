@@ -28,7 +28,7 @@ routes:
 * vous devez aller dans le menu Grafana (icône Grafana), sélectionner le menu de votre compte et sélectionner Switch to Main Org.
 * vous pouvez maintenant accéder au tableau de bord NetData par défaut via le menu Accueil
 
-**N'hésitez pas à créer de nouveaux tableaux de bord** : le tableau de bord par défaut contient des métriques de NetData, mais uniquement des métriques génériques qui sont générées sur chaque machine. NetData détecte dynamiquement les services et applications (par exemple redis, nginx, etc.) et enrichit son tableau de bord et les métriques générées. De nombreuses métriques NetData n'apparaissent pas dans le tableau de bord Grafana fourni par défaut !
+**N'hésitez pas à créer de nouveaux tableaux de bord** : le tableau de bord par défaut contient des métriques de NetData, mais uniquement des métriques génériques qui sont générées sur chaque machine. NetData détecte dynamiquement les services et applications (par exemple Redis, NGINX, etc.) et enrichit son tableau de bord et les métriques générées. De nombreuses métriques NetData n'apparaissent pas dans le tableau de bord Grafana fourni par défaut !
 
 ### Caractéristiques spécifiques à YunoHost
 
