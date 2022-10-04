@@ -39,7 +39,7 @@ echo "/swapfile swap swap defaults 0 0" >> /etc/fstab
 1. ** L'application peut être installée par l'interface d'administration YunoHost ou par la commande suivante : **
 
 ```
-sudo yunohost installer l'application https://github.com/YunoHost-Apps/ghost_ynh
+sudo yunohost app install https://github.com/YunoHost-Apps/ghost_ynh
 ```
 
 2. Après l'installation, créez un compte administrateur en visitant `https://domain.tld/ghost/ghost`. Si vous choisissez de nommer votre instance Ghost "blog" pendant le processus d'installation de YunoHost, alors ce sera "https://domain.tld/blog/ghost". Cela vous permettra de continuer à configurer votre compte administrateur et à configurer vos paramètres.
