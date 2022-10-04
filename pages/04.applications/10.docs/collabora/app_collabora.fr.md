@@ -55,7 +55,7 @@ sudo nano nextcloud.conf
 ```
 Dans le fichier, repérer la ligne comportant "richdocumentscode", puis ajouter "_arm64" juste après, enregistrer (Ctrl+S) et sortir (Ctrl+X).
 
-Puis redémarrer Nginx (par exemple en redémarrant le serveur depuis l'interface d'aministration de Yunohost).
+Puis redémarrer NGINX (par exemple en redémarrant le serveur depuis l'interface d'aministration de YunoHost).
 
 #### 3. Télécharger et activer l'application Nextcloud Collabora, sous le nom de "Nextcloud Office"
 
