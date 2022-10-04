@@ -15,7 +15,7 @@ routes:
 
 *Kimai2* est la version actualisée du timetracker open source Kimai. Actuellement, il est dans une phase de développement précoce, il est utilisable mais certaines fonctionnalités avancées de Kimai v1 sont manquantes.
 
-Kimai v2 n'a rien en commun avec son prédécesseur Kimai v1 à part les idées de base du suivi du temps et l'équipe de développement actuelle. Il est basé sur un grand nombre d'excellents frameworks. Des remerciements spéciaux à Symfony v4, Doctrine, AdminThemeBundle (basé sur AdminLTE).
+Kimai v2 n'a rien en commun avec son prédécesseur Kimai v1 à part les idées de base du suivi du temps et l'équipe de développement actuelle.
 
 ### Avertissements / informations importantes
 
