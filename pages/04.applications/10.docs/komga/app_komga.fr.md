@@ -13,7 +13,7 @@ routes:
 
 - [Liens utiles](#liens-utiles)
 
-*Komga* est un serveur de bandes dessinées/mangas gratuit et open source.
+*Komga* est un serveur de bandes-dessinées/mangas gratuit et open source.
 
 ### Captures d'écran
 
