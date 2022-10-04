@@ -21,7 +21,7 @@ Cette application n'est pas compatible avec les architectures ARM. Le projet Col
 
 ### Architectures ARM
 
-Il existe une solution pour faire tourner Collabora Online Document Server sur des architectures ARM (Raspberry Pi, ...), via Nextcloud.
+Il existe une solution pour faire tourner Collabora Online Document Server sur des architectures ARM (Raspberry Pi...), via Nextcloud.
 
 #### 1. Télécharger et activer le Collabora Online Document Server
 
