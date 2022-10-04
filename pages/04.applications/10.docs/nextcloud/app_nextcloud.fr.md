@@ -205,7 +205,7 @@ Collabora permet d'éditer en ligne les documents stockés sur Nextcloud.
 
 Pour les serveurs ayant une architecture autre qu'ARM (x86...), le plus simple est d'utiliser l'application [https://yunohost.org/fr/app_collabora] Collabora, présente dans le catalogue d'applications de YunoHost.
 
-Cette application n'est cependant pas compatible avec les architectures ARM. Le projet Collabora a bien développé une version spécifique ARM, mais celle-ci n'est compatible qu'avec Ubuntu, pas Debian, donc ne fonctionne pas sous Yunohost.
+Cette application n'est cependant pas compatible avec les architectures ARM. Le projet Collabora a bien développé une version spécifique ARM, mais celle-ci n'est compatible qu'avec Ubuntu, pas Debian, donc ne fonctionne pas sous YunoHost.
 
 ### Architectures ARM
 
