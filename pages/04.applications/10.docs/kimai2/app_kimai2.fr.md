@@ -21,7 +21,7 @@ Kimai v2 n'a rien en commun avec son prédécesseur Kimai v1 à part les idées 
 
 * Il faut un domaine dédié comme **kimai.domain.tld**.
 * Cette application est multi-instance (vous pouvez avoir plus d'une instance Kimai sur un serveur YunoHost).
-* Comme le support de sqlite s'est arrêté à la version 1.14, si vous avez choisi une base de données sqlite pendant l'installation, la mise à jour de Kimai2 est bloquée à la version 1.13.
+* Comme le support de SQLite s'est arrêté à la version 1.14, si vous avez choisi une base de données SQLite pendant l'installation, la mise à jour de Kimai2 est bloquée à la version 1.13.
 
 #### Support multi-utilisateurs
 
