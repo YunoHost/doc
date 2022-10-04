@@ -21,7 +21,7 @@ routes:
 
 1. Pas de prise en charge LDAP.
 
-2. Vous avez besoin de plus de 1 Go de RAM. Si vous ne l'avez pas, veuillez créer une mémoire d'échange.
+2. Vous avez besoin de plus de 1 Go de RAM. Si vous ne l'avez pas, veuillez créer une mémoire swap.
 
 ```
 dd if=/dev/zero of=/swapfile bs=1024 count=1048576
