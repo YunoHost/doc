@@ -29,6 +29,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [ArchivesSpace](https://archivesspace.org/) | Archives information management application for managing and providing Web access to archives, manuscripts and digital objects. | [Upstream](https://github.com/archivesspace/archivesspace) |  |
 | [ass](https://github.com/tycrek/ass) | ass is a self-hosted ShareX upload server written in Node.js. |[Upstream](https://github.com/tycrek/ass)|  |
 | [Astral](https://astralapp.com/) | Organize Your GitHub Stars With Ease |[Upstream](https://github.com/astralapp/astral)|  |
+| [Athens](https://www.athensresearch.org/) | Athens helps research teams capture and synthesize knowledge together. Built on a graph database, Athens helps map and communicate complex knowledge in wicked domains. |[Upstream]((https://github.com/athensresearch/athens)|  |
 | [Azuracast](https://azuracast.com/) | A Simple, Self-Hosted Web Radio Management Suite |[Upstream](https://github.com/AzuraCast/AzuraCast)|  |
 | [Backstage.io](https://backstage.io/) | Open source Enterprise Developer Portal with Eco-System | [Upstream](https://github.com/backstage/backstage) |  |
 | [Baserow](https://baserow.io/) | Open source no-code database tool and Airtable alternative. | [Upstream](https://gitlab.com/bramw/baserow) |  |
