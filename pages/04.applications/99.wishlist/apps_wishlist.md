@@ -142,6 +142,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [JS Bin](https://jsbin.com/) |  | [Upstream](https://github.com/jsbin/jsbin) |  |
 | [Karaoke-forever](https://www.karaoke-forever.com/) | Organize karaoke parties | [Upstream](https://github.com/bhj/karaoke-forever) | |
 | Kenoma | Pleroma frontend | [Upstream](https://git.pleroma.social/lambadalambda/kenoma) | |
+| Keyoxide | Keyoxide is a privacy-friendly tool to create and verify decentralized online identities. | [Upstream](https://codeberg.org/keyoxide) | |
 | [Kill the newsletter](https://kill-the-newsletter.com/) | Convert email newsletters to RSS feeds | [Upstream](https://github.com/leafac/kill-the-newsletter.com) | |
 | [Known](https://withknown.com) |  | [Upstream](https://github.com/idno/known) |  |
 | [Koel](https://koel.phanan.net) |  | [Upstream](https://github.com/phanan/koel) |  |
