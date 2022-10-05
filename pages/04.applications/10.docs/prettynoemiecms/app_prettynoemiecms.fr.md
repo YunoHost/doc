@@ -24,7 +24,7 @@ La construction de votre site consistera à agencer à votre convenance des modu
 
 ### Configuration
 
-Comment configurer cette application: via le panneau d'administration à : `votre.domain.tld/votre_chemin/admin`
+Configurer cette application via le panneau d'administration : `votre.domain.tld/votre_chemin/admin`
 
 ### Essayez le !
 
