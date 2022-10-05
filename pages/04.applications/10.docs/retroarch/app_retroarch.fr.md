@@ -13,7 +13,7 @@ routes:
 
 - [Liens utiles](#liens-utiles)
 
-*RetroArch * est une interface pour les émulateurs, les moteurs de jeux et les lecteurs multimédias.
+*RetroArch* est une interface pour les émulateurs, les moteurs de jeux et les lecteurs multimédias.
 Il vous permet d'exécuter des jeux classiques sur un large éventail d'ordinateurs et de consoles grâce à son interface graphique élégante. Les paramètres sont également unifiés afin que la configuration soit effectuée une fois pour toutes.
 En outre, vous êtes en mesure d'exécuter des disques de jeux originaux (CD) à partir de RetroArch.
 RetroArch dispose de fonctions avancées telles que les shaders, le netplay, le rembobinage, les temps de réponse de l'image suivante, le runahead, la traduction automatique, les fonctions d'accessibilité aux aveugles, et bien plus encore !
