@@ -28,7 +28,7 @@ Il s'agit d'une plateforme de synchronisation et de partage de fichiers d'entrep
 Cette application supporte LDAP et l'authentification SSO.
 
 Si vous avez installé Seafile avant 7.x et que vous avez plus d'un domaine pour les utilisateurs dans YunoHost ou que l'application Seafile est installée sur un domaine différent, vous devez migrer vos comptes.
-Vous pouvez utiliser l'action fournie à https://domain.tld/yunohost/admin/#/apps/seafile/actions. Vous pouvez également utiliser la commande suivante pour migrer tous vos comptes :
+Vous pouvez utiliser l'action fournie à `https://domain.tld/yunohost/admin/#/apps/seafile/actions`. Vous pouvez également utiliser la commande suivante pour migrer tous vos comptes :
 ```
 yunohost app action run seafile migrate_user_email_to_mail_email
 ```
