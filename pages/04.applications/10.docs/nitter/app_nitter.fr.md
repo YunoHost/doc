@@ -13,7 +13,7 @@ routes:
 
 - [Liens utiles](#liens-utiles)
 
-*Nitter* est une interface alternative pour Twitter qui est plus rapide que le site officiel, respecte votre vie privée, est ne nécessite pas de s'enregistrer. Son nterface s'adapte aux écrans de toutes tailles. Nitter offre aussi de générer des flux RSS à partir des timelines des utilisateurs Twitter.
+*Nitter* est une interface alternative pour Twitter qui est plus rapide que le site officiel. Cette application respecte votre vie privée et ne nécessite pas de s'enregistrer. Son interface s'adapte aux écrans de toutes tailles. Nitter offre aussi de générer des flux RSS à partir des timelines des utilisateurs Twitter.
 
 ### Fonctionnalités
 
