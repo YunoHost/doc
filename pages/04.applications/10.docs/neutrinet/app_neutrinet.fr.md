@@ -30,7 +30,7 @@ Ceci exécute le script qui est dans `/opt/neutrinet/renew_cert/` :
 cd /opt/neutrinet/renew_cert
 sudo ./renew_cert_cron.sh
 ```
-Vous pouvez augmenter la verbosité, le verbiage avec l'option `-v` :
+Vous pouvez augmenter la verbosité avec l'option `-v` :
 ```
 sudo ./renew_cert_cron.sh -v
 ```
