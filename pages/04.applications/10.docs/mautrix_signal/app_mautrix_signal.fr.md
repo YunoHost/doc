@@ -22,7 +22,7 @@ La passerelle ["Mautrix-Signal"](https://docs.mau.fi/bridges/python/signal/index
 
 #### Liste de passerelles publiques
 
-* Demandez sur un des salons suivants: #mautrix_yunohost:matrix.fdn.fr or #signal:maunium.net
+* Demandez sur un des salons suivants: `#mautrix_yunohost:matrix.fdn.fr` ou `#signal:maunium.net`
 
 ### Usages de la passerelle
 ** Notez que plusieurs comptes Signal et Matrix peuvent être relayés, chaque compte Signal connecté a son propre Salon d'Administration. Si plusieurs utilisateur.ice.s du Robot sont dans un même groupe Signal, seul un Salon Matrix sera créé par la passerelle. **
