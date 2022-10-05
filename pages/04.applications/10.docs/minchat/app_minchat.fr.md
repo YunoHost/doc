@@ -13,7 +13,7 @@ routes:
 
 - [Liens utiles](#liens-utiles)
 
-*Minchat* est une application de chat libre et minimaliste. Elle est basée sur [wojtek77/chat](https://github.com/wojtek77/chat), elle-même basée sur [le tutoriel de Gabriel Nava](http://code.tutsplus.com/tutorials/how-to-create-a-simple-web-based-chat-application--net-5931)..
+*Minchat* est une application de chat libre et minimaliste. Elle est basée sur [wojtek77/chat](https://github.com/wojtek77/chat), elle-même basée sur [le tutoriel de Gabriel Nava](http://code.tutsplus.com/tutorials/how-to-create-a-simple-web-based-chat-application--net-5931).
 
 ### Captures d'écran
 
