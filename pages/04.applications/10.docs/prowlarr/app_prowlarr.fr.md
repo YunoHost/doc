@@ -13,7 +13,7 @@ routes:
 
 - [Liens utiles](#liens-utiles)
 
-*Prowlarr* est une application de gestion complète de vos indexeurs pour Radarr, Sonarr, Lidarr, ...
+*Prowlarr* est une application de gestion complète de vos indexeurs pour Radarr, Sonarr, Lidarr...
 
 ### Captures d'écran
 
