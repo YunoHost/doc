@@ -13,7 +13,7 @@ routes:
 
 - [Useful links](#useful-links)
 
-*Prowlarr* is a complete management of your indexers for Radarr, Sonarr, Lidarr, ...
+*Prowlarr* is a complete management of your indexers for Radarr, Sonarr, Lidarr...
 
 ### Screenshots
 
