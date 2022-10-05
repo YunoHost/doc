@@ -34,7 +34,7 @@ Vous pouvez augmenter la verbosité avec l'option `-v` :
 ```
 sudo ./renew_cert_cron.sh -v
 ```
-To install the app without checking for certificates, run `export PACKAGE_CHECK_EXEC=1`.
+Pour installer l'application sans vérifier les certificats : `export PACKAGE_CHECK_EXEC=1`.
 
 ## Liens utiles
 
