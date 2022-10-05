@@ -24,7 +24,7 @@ The construction of your site will consist of arranging at your convenience vari
 
 ## Configuration
 
-How to configure this app: by an admin panel at: `your.domain.tld/your_path/admin`
+Configure this app with the admin panel: `your.domain.tld/your_path/admin`
 
 ### Try it !
 
