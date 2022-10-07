@@ -61,7 +61,7 @@ app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ss
 
 Créer les archives tar (une archive par app et partie de système)
 ```
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg export-tar "$(yunohost app setting $app repository)::ARCHIVE" /home/yunohost/archives/ARCHIVE.tar
+app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg export-tar "$(yunohost app setting $app repository)::ARCHIVE" /home/yunohost.backup/archives/ARCHIVE.tar
 ```
 
 Puis restaurer l'archive de façon classique.
