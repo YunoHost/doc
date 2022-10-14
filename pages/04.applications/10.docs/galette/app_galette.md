@@ -15,6 +15,19 @@ routes:
 
 *Galette* is a membership management web application towards non profit organizations. This is before all a free software (as in free speech), community and free (as in beer)! Galette works on any web server that handle PHP.
 
+### Updating the application
+
+Once you have updated the application, you must go to the installer page which by default is `https://domaine/galette/installer.php`.
+
+Once on this page, a verification of the prerequisites is displayed.
+At the next step you will have to choose the type of installation: here `Update`.
+
+It is at this new step, where the fields are pre-filled, that you will have to fill in the database password.
+You will be able to find it by connecting to your server with SSH. You will have to switch to `root` and display the `config.inc.php` file in which the application password is located:
+>sudo su
+>
+>cat /var/www/galette/galette/config/config.inc.php
+
 ## Useful links
 
 + Website: [galette.eu (en)](https://galette.eu/site/)
