@@ -15,6 +15,19 @@ routes:
 
 *Galette* est une application web de gestion d’adhérents et de cotisations en ligne à destination des associations. C’est avant toute chose un logiciel libre, communautaire, et gratuit ! Galette fonctionne sur n’importe quel serveur web qui prend en charge PHP.
 
+### Mise à jour de l'application
+
+Une fois la mise à jour de l'application faite, vous devez vous rendre sur la page de l'installeur qui par défaut est de la forme `https://domaine/galette/installer.php`.
+
+Une fois sur cette page, une vérification des prérequis est affiché.
+À l'étape suivante vous allez devoir choisir le type d'installation : ici `Mise à jour`.
+
+C'est à cette nouvelle étape, où les champs sont pré-remplis, qu'il va falloir renseigner le mot de passe de la base de données.
+Vous allez pouvoir le retrouver en vous connectant en SSH à votre serveur. Il faudra passer en root et afficher le fichier `config.inc.php` dans lequel se trouve le mot de passe de l'application :
+>sudo su
+>
+>cat /var/www/galette/galette/config/config.inc.php
+
 ## Liens utiles
 
 + Site web : [galette.eu (fr)](https://galette.eu/site/fr/)
