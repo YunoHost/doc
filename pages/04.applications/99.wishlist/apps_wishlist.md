@@ -40,6 +40,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Bolt](https://bolt.cm/) | Content Management Tool |  | [Package Draft](https://github.com/realitygaps/bolt_ynh) |
 | BookWyrm | Social reading and reviewing, decentralized with ActivityPub | [Upstream](https://github.com/mouse-reeve/bookwyrm) |  |
 | BTCPay Server |  | [Upstream](https://github.com/btcpayserver/btcpayserver) |  |
+| [Budibase](https://budibase.com/) | Low code platform for creating internal apps, workflows, and admin panels in minutes. | [Upstream](https://github.com/Budibase/budibase) |  |
 | [Cactus Comments](https://cactus.chat/) | Federated comment system, to embed into your webpages, based on the Matrix protocol. | [Upstream](https://gitlab.com/cactus-comments) | [Package Draft](https://github.com/h3ndrik/cactus-comments_ynh) |
 | [Cagette](https://www.cagette.net/) | A marketplace for local farmers and producers | [Upstream](https://github.com/CagetteNet/cagette) | |
 | [Cal.com](https://cal.com/) | Formerly Calendso. Volunteer shift management and meeting scheduling. "The open source Calendly alternative." | [Upstream](https://github.com/calcom/cal.com) | |
@@ -118,6 +119,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | gogs_webhost | Turn a Gogs repository to static web hosting |  | [Package Draft](https://github.com/YunoHost-Apps/gogs_webhost_ynh) |
 | Gollum | A simple Git-powered wiki | [Upstream](https://github.com/gollum/gollum) | [Package Draft](https://github.com/YunoHost-Apps/gollum_ynh) |
 | Goploader |  | [Upstream](https://github.com/Depado/goploader) |  |
+| [gocd](https://go.cd) | CI/CD server | [Upstream](https://github.com/gocd/gocd) | |
 | Granary |  | [Upstream](https://github.com/snarfed/granary) |  |
 | [Graphhopper](https://www.graphhopper.com/) |  | [Upstream](https://github.com/graphhopper/graphhopper) |  |
 | [Greenlight](https://blabla.aquilenet.fr/b) | A really simple end-user interface for your BigBlueButton server | [Upstream](https://github.com/bigbluebutton/greenlight) |  |
@@ -140,9 +142,11 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [JS Bin](https://jsbin.com/) |  | [Upstream](https://github.com/jsbin/jsbin) |  |
 | [Karaoke-forever](https://www.karaoke-forever.com/) | Organize karaoke parties | [Upstream](https://github.com/bhj/karaoke-forever) | |
 | Kenoma | Pleroma frontend | [Upstream](https://git.pleroma.social/lambadalambda/kenoma) | |
+| Keyoxide | Keyoxide is a privacy-friendly tool to create and verify decentralized online identities. | [Upstream](https://codeberg.org/keyoxide) | |
 | [Kill the newsletter](https://kill-the-newsletter.com/) | Convert email newsletters to RSS feeds | [Upstream](https://github.com/leafac/kill-the-newsletter.com) | |
 | [Known](https://withknown.com) |  | [Upstream](https://github.com/idno/known) |  |
 | [Koel](https://koel.phanan.net) |  | [Upstream](https://github.com/phanan/koel) |  |
+| [Koha](https://koha-community.org/) | The world's first free and open source library system | [Upstream](https://git.koha-community.org/Koha-community/Koha) | |
 | Kontalk |  | [Upstream](https://github.com/kontalk) |  |
 | [Koozip](https://koozic.net) |  | [Upstream](https://github.com/DocMarty84/koozic) |  |
 | L'atelier |  |  [Upstream](https://github.com/jbl2024/latelier) |  |
@@ -185,6 +189,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Nautilus](https://myactivity.stream/) | Turn your website into an ActivityPub profile  | [Upstream](https://github.com/aaronpk/Nautilus) |  |
 | Netrunner |  | [Upstream](https://github.com/mtgred/netrunner) |  |
 | [Netbird](https://netbird.io/) | Create an overlay peer-to-peer network connecting machines regardless of their location | [Upstream](https://github.com/netbirdio/netbird) | |
+| [Netlify CMS](https://netlifycms.org/) | A CMS for any static site generator that connects to a Gitlab/Github repo (requires netlify/gotrue) | [Upstream](https://github.com/netlify/netlify-cms) | |
 | [NewsBlur](https://www.newsblur.com) | This is the most complete RSS reader that exists to date | [Upstream](https://github.com/samuelclay/NewsBlur) |  |
 | nexusoss | Sonatype Nexus Repository manager OSS |  | [Package Draft](https://github.com/YunoHost-Apps/nexusoss_ynh) | 
 | [ntopng](https://www.ntop.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/ntopng_ynh) |
@@ -213,6 +218,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Phraseanet](https://docs.phraseanet.com/3.8/fr/index.html#) |  | [Upstream](https://github.com/alchemy-fr/Phraseanet-Docs) |  |
 | [pia](https://github.com/LINCnil/pia) | A tool to help carrying out Privacy Impact Assessments |  | [Package Draft](https://github.com/YunoHost-Apps/pia_ynh) |
 | [PicApport](https://www.picapport.de/) | Self-hosted private photo server |  |  |
+| [Picsur](https://picsur.org/) | Simple open-source image host | [Upstream](https://github.com/rubikscraft/Picsur) | |
 | [Pinry](https://docs.getpinry.com/) |  Open source tiling image board | [Upstream](https://github.com/pinry/pinry/) | |
 | [Piped](https://github.com/TeamPiped/Piped/wiki/Instances) | An open-source alternative frontend for YouTube which is efficient by design. | [Upstream](https://github.com/TeamPiped/Piped) |  |
 | Pol | RSS generator website | [Upstream](https://github.com/taroved/pol) |  |
