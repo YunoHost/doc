@@ -31,9 +31,12 @@ C'est à cette nouvelle étape, où les champs sont pré-remplis, qu'il va fallo
 ![Galette MdP](https://github.com/YunoHost/doc/raw/master/images/Galette_2_fr_MdP.png)
 
 Vous allez pouvoir le retrouver en vous connectant en SSH à votre serveur. Il faudra passer en root et afficher le fichier `config.inc.php` dans lequel se trouve le mot de passe de l'application :
->sudo su
->
->cat /var/www/galette/galette/config/config.inc.php
+
+```
+sudo su
+
+cat /var/www/galette/galette/config/config.inc.php
+```
 
 ## Liens utiles
 

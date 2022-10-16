@@ -31,9 +31,12 @@ It is at this new step, where the fields are pre-filled, that you will have to f
 ![Galette Password](https://github.com/YunoHost/doc/raw/master/images/Galette_2_en_Passwd.png)
 
 You will be able to find it by connecting to your server with SSH. You will have to switch to `root` and display the `config.inc.php` file in which the application password is located:
->sudo su
->
->cat /var/www/galette/galette/config/config.inc.php
+
+```
+sudo su
+
+cat /var/www/galette/galette/config/config.inc.php
+```
 
 ## Useful links
 
