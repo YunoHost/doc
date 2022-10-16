@@ -199,13 +199,18 @@ Cependant, ces images communautaires existent et sont disponibles sur Docker Hub
 
 
 {% if vps_ynh %}
-## Fournisseurs de VPS YunoHost
+## Fournisseurs de VPS YunoHostInstaller YunoHost
+
+Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 
 [div class="flex-container"]
 
 [div class="flex-child"]
-[[figure caption="Alsace Réseau Neutre - FR"]![](image://vps_ynh_arn.png?height=50)[/figure]](https://vps.arn-fai.net)
+[figure caption="Alsace Réseau Neutre - FR"]![](image://vps_ynh_arn.png?height=50)[/figure]](https://vps.arn-fai.net)
+[/div]
+[div class="flex-child"]
+[[figure caption="FAImaison - FR"]![](image://vps_ynh_faimaison.svg?height=50)[/figure]](https://www.faimaison.net/services/vm.html)
 [/div]
 [div class="flex-child"]
 [[figure caption="Association ECOWAN - FR"]![](image://vps_ynh_ecowan.png?height=50)[/figure]](https://www.ecowan.fr/vps-linux)
