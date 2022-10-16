@@ -7,6 +7,8 @@ routes:
   default: '/app_galette'
 ---
 
+![logo de Galette](https://galette.eu/site/assets/img/galette.png?resize=,80)
+
 [![Installer Galette avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=galette) [![Integration level](https://dash.yunohost.org/integration/galette.svg)](https://dash.yunohost.org/appci/app/galette)
 
 ### Index
@@ -22,11 +24,11 @@ Une fois la mise à jour de l'application faite, vous devez vous rendre sur la p
 Une fois sur cette page, une vérification des prérequis est affiché.
 À l'étape suivante vous allez devoir choisir le type d'installation : ici `Mise à jour`.
 
-![Galette MAJ](https://github.com/YunoHost/doc/tree/master/images/Galette_1_fr_MAJ.png)
+![Galette MAJ](https://github.com/YunoHost/doc/blob/master/images/Galette_1_fr_MAJ.png)
 
 C'est à cette nouvelle étape, où les champs sont pré-remplis, qu'il va falloir renseigner le mot de passe de la base de données.
 
-![Galette MdP](https://github.com/YunoHost/doc/tree/master/images/Galette_2_fr_MdP.png)
+![Galette MdP](https://github.com/YunoHost/doc/blob/master/images/Galette_2_fr_MdP.png)
 
 Vous allez pouvoir le retrouver en vous connectant en SSH à votre serveur. Il faudra passer en root et afficher le fichier `config.inc.php` dans lequel se trouve le mot de passe de l'application :
 >sudo su
