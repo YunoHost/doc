@@ -126,6 +126,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Grist](https://www.getgrist.com/) | The evolution of spreadsheets | [Upstream](https://github.com/gristlabs/grist-core/) | [Package Draft](https://github.com/ketsapiwiq/grist_ynh) |
 | [Habitica](https://habitica.com/) |  | [Upstream](https://github.com/HabitRPG/habitica) |  |
 | [Hashbase](https://github.com/beakerbrowser/hashbase/tree/master/docs) | A public peer service for Dat archives, provides a HTTP-accessible interface for creating an account and uploading Dats. | [Upstream](https://github.com/beakerbrowser/hashbase) |  |
+| [Headscale](https://github.com/juanfont/headscale) | An open source, self-hosted implementation of the Tailscale Mesh-VPN control server | [Upstream Daemon](https://github.com/juanfont/headscale) [Upstream UI](https://github.com/gurucomputing/headscale-ui)  |   |
 | Helpy |  | [Upstream](https://github.com/helpyio/helpy) |  |
 | [Hexo](https://hexo.io/) |  | [Upstream](https://github.com/hexojs/hexo) |  |
 | Hometown | A Mastodon fork with local-only posting, support for more content types, and other features and tweaks. | [Upstream](https://github.com/hometown-fork/hometown) |  |
