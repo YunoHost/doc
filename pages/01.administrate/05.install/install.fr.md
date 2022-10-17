@@ -422,7 +422,7 @@ Votre écran devrait ressembler à la capture ci-dessous :
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Installation classique sur un disque entier"]
 
-!! N.B. : A partir du moment où vous aurez validé l'agencement du clavier, l'installation sera lancée et effacera totalement les données sur votre disque dur !
+!! N.B. : À partir du moment où vous aurez validé l'agencement du clavier, l'installation sera lancée et effacera totalement les données sur votre disque dur !
 
   1. Sélectionnez `Graphical install`
   2. Sélectionnez votre langue, votre localisation, votre agencement de clavier et éventuellement votre timezone.
