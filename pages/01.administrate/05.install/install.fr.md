@@ -444,7 +444,7 @@ Avec l'installation en mode expert, vous avez plus de possibilités notamment co
 
 ### A propos du partitionnement
 
-De façon générale, nous recommandons d'éviter de partitionner /var, /opt, /usr, /bin, /etc, /lib, /tmp et /root sur des partitions distinctes. Ceci vous évitera des soucis de partitions pleines qui pourraient mettre en panne votre machine, faire échouer l'installation d'app, voir même altérer vos bases de données.
+De façon générale, nous recommandons d'éviter de partitionner `/var`, `/opt`, `/usr`, `/bin`, `/etc`, `/lib`, `/tmp` et `/root` sur des partitions distinctes. Ceci vous évitera des soucis de partitions pleines qui pourraient mettre en panne votre machine, faire échouer l'installation d'app, voir même altérer vos bases de données.
 
 Pour des raisons de performances, il est recommandé de monter votre stockage le plus rapide (SSD) sur la racine / .
 
