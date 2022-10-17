@@ -7,7 +7,7 @@ routes:
   default: '/packaging_apps_git'
 ---
 
-Git... Notre cher Git bien-aimé, que l'on peut aussi décrire comme "Goddamn Idiotic Truckload of sh*t"  (Un stupide putain gros tas de m\*rde), selon Linus.  
+Git... Notre cher Git bien-aimé, que l'on peut aussi décrire comme "Goddamn Idiotic Truckload of sh\*t"  (Un stupide putain gros tas de m\*rde), selon Linus.  
 Si vous ne connaissez pas encore Git, soyez sûr que vous serez bientôt d'accord avec cette description.
 
 YunoHost et toutes nos applications sont sur la forge Git GitHub. Ce qui veut dire que si vous voulez travailler sur une application, tôt ou tard vous allez devoir faire face à Git.  
@@ -105,7 +105,7 @@ Quelle bonne idée !
 Le mieux est de commencer par l'[application d'exemple](https://github.com/YunoHost/example_ynh). Mais comme nous l'avons déjà expliqué, vous ne voulez pas forker, parce que si vous le faites, vous allez garder ce lien vers l'application d'exemple et c'est vraiment ennuyeux.  
 Donc, vous allez le faire différemment. Vous allez cloner !
 
-##### git clone
+##### `git clone`
 
 Pour cloner, vous allez faire :
 ```bash
@@ -142,9 +142,9 @@ Il vous suffit de cloner le dépôt, le répertoire .git est le lien vers le dé
 Vous avez bien votre copie local du dépôt, mais comme vous avez lu attentivement cette documentation jusque-là, vous savez que vous devez vous assurer d'être sur la branche testing avant de commencer à travailler.
 
 Pour voir les branches, et savoir sur quelle branche vous êtes réellement, alors que vous êtes dans le répertoire de votre dépôt, tapez `git branch`.  
-La branche courante est mise en évidence et précédée d'un "*".
+La branche courante est mise en évidence et précédée d'un "\*".
 
-#### git checkout
+#### `git checkout`
 
 S'il apparaît que vous n'êtes pas sur la branche où vous vouliez être, ou que vous êtes en fait sur master (ce qui est mal !), vous pouvez passer à une autre branche avec `git checkout`.
 ```bash
@@ -152,7 +152,7 @@ git checkout testing
 ```
 *Lisez attentivement ce que Git dit quand vous validez une commande, n'oubliez jamais que Git est sournois...*
 
-#### git pull avant tout
+#### `git pull` avant tout
 
 Vous êtes enfin dans la bonne branche, et prêt à travailler.  
 **Attendez ! Un vilain piège vous attend...**  
@@ -179,14 +179,14 @@ git add --all
 Pour vérifier l'état actuel de votre validation, vous pouvez utiliser `git status`. Il vous montrera quels fichiers seront inclus dans votre commit, et quels fichiers sont modifiés, mais pas encore inclus.  
 `git status -v` vous indiquera également quelle partie des fichiers est modifiée. Une bonne façon de s'assurer que vous n'avez pas fait d'erreur avant de faire un commit.
 
-#### git checkout -b
+#### `git checkout -b`
 
 Avant de faire un commit, ou après, ou avant de commencer à travailler. Quand vous en avez envie !  
 Vous devriez envisager d'ajouter votre travail à une branche séparée, de cette façon, il sera facile de créer une pull request dans la branche testing et de discuter avec les autres packagers de ce que vous suggérez de changer.
 
 Pour créer une nouvelle branche et passer à cette branche, vous pouvez utiliser `git checkout -b my_new_branch`.
 
-#### Commit
+#### `git commit`
 
 Faire un commit, c'est simplement valider son travail dans Git. Comme vous pouvez le faire dans GitHub.  
 Pour avoir les mêmes champs que vous aviez sur GitHub, avec le nom du commit, et une explication plus longue. Vous pouvez simplement utiliser `git commit`.  
@@ -198,7 +198,7 @@ Si vous voulez faire un commit avec seulement un nom pour votre commit, vous pou
 git commit -m "My commit name"
 ```
 
-#### Push vers le dépôt distant
+#### `git push` vers le dépôt distant
 
 Vos modifications sont validées, mais uniquement sur votre clone local du dépôt. Maintenant, vous devez renvoyer ces modifications sur le dépôt distant sur GitHub.  
 Pour ce faire, vous devez savoir quelle est votre branche actuelle. (Si vous ne le savez pas, `git branch` vous donnera cette information).  

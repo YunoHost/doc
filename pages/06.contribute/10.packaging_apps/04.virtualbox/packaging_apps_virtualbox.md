@@ -77,7 +77,7 @@ The machine always start on the "Current state" state.
 
 ## How do we connect to the virtual machine?
 
-Virtual machine connection is similar to any YunoHost server connection, that is by using `ssh`.
+Virtual machine connection is similar to any YunoHost server connection, that is by using SSH.
 
 ```bash
 ssh admin@my.domain
@@ -90,9 +90,9 @@ ssh admin@11.22.33.44
 
 We can now work on the virtual machine using the commandline.
 
-To easily copy the package files or use a graphical text editor, one can also connect via `sftp` using a file explorer.
+To easily copy the package files or use a graphical text editor, one can also connect via SFTP using a file explorer.
 
 It's a simple matter of using the `sftp://admin@my.domain/` address.
 ![](image://virtualbox_packaging6.jpg)
 
-> Note: on Windows or macOS, the file explorer does not natively support the `sftp` protocol...
+> Note: on Windows or macOS, the file explorer does not natively support the SFTP protocol...

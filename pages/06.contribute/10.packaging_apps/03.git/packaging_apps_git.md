@@ -7,7 +7,7 @@ routes:
   default: '/packaging_apps_git'
 ---
 
-Git... Our dear beloved Git, which can be described also as "Goddamn Idiotic Truckload of sh*t", according to Linus.  
+Git... Our dear beloved Git, which can be described also as "Goddamn Idiotic Truckload of sh\*t", according to Linus.  
 Be sure if you don't know Git yet that you will soon agree with that description.
 
 YunoHost and all our apps are on the Git forge GitHub. Which means that if you want to work on an app, sooner or later you're going to have to deal with Git.  
@@ -95,15 +95,15 @@ Your repo will be moved into the organization, you don't have to remove the orig
 As we have seen, you can do a lot of things directly on GitHub.  
 But when you need to edit multiple files, or when you need to work on your code on your own, it's better to work directly on your computer.
 
-Before going to the hellish part of Git, let's see 2 different ways to start working with Git.
+Before going to the hellish part of Git, let's see two different ways to start working with Git.
 
 #### First case: Creating a new package
 
 You have shockingly discovered that the wonderful app you love to use everyday does not yet have its YunoHost package. And because you're nice, you decided to create yourself the package, so everyone will enjoy that app the way you do.  
-What a good idea !
+What a good idea!
 
 The best is to start from the [example app](https://github.com/YunoHost/example_ynh). But as we have explained before, you don't want to fork, because if you do so, you're going to keep that link to the example app and it's really annoying.  
-So, you're going to do it differently. You're going to clone !
+So, you're going to do it differently. You're going to clone!
 
 ##### git clone
 
@@ -144,7 +144,7 @@ You do have your local copy of the repository, but because you have read careful
 To see the branches, and to know on which you actually are, while into the directory of your repository, type `git branch`.  
 The current branch is highlighted and preceded by a `*`.
 
-#### git checkout
+#### `git checkout`
 
 If it appears that you're not on the branch you wanted to be, or you're actually on master (which is bad !), you can move to another branch with `git checkout`
 ```bash
@@ -152,7 +152,7 @@ git checkout testing
 ```
 *Read carefully what Git says when you validate a command, do never forget that Git is sneaky...*
 
-#### Git pull before anything else
+#### `git pull` before anything else
 
 You're finally on the right branch, and ready to work.  
 **Wait ! A nasty trap is waiting for you...**  
@@ -179,14 +179,14 @@ git add --all
 To check the current status of your validation, you can use `git status`. It will show you which files will be included into your commit, and which files are modified, but not yet included.  
 `git status -v` will show also which part of the files are modified. A good way to be sure that you didn't make a mistake before committing.
 
-#### git checkout -b
+#### `git checkout -b`
 
 Before committing, or after, or before starting to work. Whenever you feel like it !  
 You should consider adding your work to a separate branch, that way, it will be easy to create a pull request to merge into the testing branch and discuss with the other packagers what you suggest to change.
 
 To create a new branch and move to this branch, you can use `git checkout -b my_new_branch`.
 
-#### Commit
+#### `git commit`
 
 To commit is simply to validate your work in Git. As you can do in GitHub.  
 To have the same fields that you had on GitHub, with the name of the commit, and a longer explanation. You can simply use `git commit`.  
