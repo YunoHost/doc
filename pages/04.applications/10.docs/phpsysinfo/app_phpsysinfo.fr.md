@@ -13,7 +13,7 @@ routes:
 
 ### Index
 
-phpSysInfo est un script PHP personnalisable qui affiche bien les informations sur votre système (CPU, RAM, disques...).
+*phpSysInfo* est un script PHP personnalisable qui affiche bien les informations sur votre système (CPU, RAM, disques...).
 
 ## Liens utiles
 

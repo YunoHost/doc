@@ -15,7 +15,7 @@ routes:
 
 - [Liens utiles](#liens-utiles)
 
-phpMyAdmin est un outil logiciel libre écrit en PHP, destiné à gérer l'administration de MySQL sur le Web. phpMyAdmin supporte un large éventail d'opérations sur MySQL et MariaDB. Les opérations fréquemment utilisées (gestion des bases de données, des tables, des colonnes, des relations, des index, des utilisateurs, des autorisations, etc.) peuvent être effectuées via l'interface utilisateur, tout en ayant la possibilité d'exécuter directement n'importe quelle instruction SQL.
+*phpMyAdmin* est un outil logiciel libre écrit en PHP, destiné à gérer l'administration de MySQL sur le Web. phpMyAdmin supporte un large éventail d'opérations sur MySQL et MariaDB. Les opérations fréquemment utilisées (gestion des bases de données, des tables, des colonnes, des relations, des index, des utilisateurs, des autorisations, etc.) peuvent être effectuées via l'interface utilisateur, tout en ayant la possibilité d'exécuter directement n'importe quelle instruction SQL.
 
 ## Liens utiles
 

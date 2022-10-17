@@ -19,7 +19,7 @@ routes:
 - [Configuration](#configuration)
 - [Useful links](#useful-links)
 
-Grocy is a web-based self-hosted groceries & household management solution for your home.
+*Grocy* is a web-based self-hosted groceries & household management solution for your home.
 
 ## Configuration
 

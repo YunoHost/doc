@@ -13,7 +13,7 @@ routes:
 
 - [Liens utiles](#liens-utiles)
 
-*Phpinfo* est un simple visualiseur d'informations php.
+*Phpinfo* est un simple visualiseur d'informations PHP.
 
 ## Liens utiles
 

@@ -15,7 +15,7 @@ routes:
 
 - [Useful links](#useful-links)
 
-phpSysInfo is a customizable PHP script that displays information about your system (CPU, RAM, disks).
+*phpSysInfo* is a customizable PHP script that displays information about your system (CPU, RAM, disks).
 
 ## Useful links
 
