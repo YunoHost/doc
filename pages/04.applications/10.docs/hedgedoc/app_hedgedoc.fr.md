@@ -15,7 +15,7 @@ routes:
 
 - [Liens utiles](#liens-utiles)
 
-HedgeDoc est un service web de traitement de texte collaboratif en temps réel. Il utilise le langage Markdown, qui est un moyen simple pour formater un texte.  
+*HedgeDoc* est un service web de traitement de texte collaboratif en temps réel. Il utilise le langage Markdown, qui est un moyen simple pour formater un texte.  
 HedgeDoc propose un vaste choix de fonctionnalités pour toutes les utilisations courantes du traitement de texte parmi lesquelles gestion des titres, table de matières, insertion d’images, tableaux, notes de bas de page, incrustation de vidéos, visualisateurs PDF, expressions mathématiques LaTeX avec MathJax, diagrammes, etc.  
 Différents niveaux de permission permettent de choisir qui peut lire ou éditer le document.
 
