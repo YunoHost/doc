@@ -446,19 +446,19 @@ Avec l'installation en mode expert, vous avez plus de possibilités notamment co
 
 De façon générale, nous recommandons d'éviter de partitionner `/var`, `/opt`, `/usr`, `/bin`, `/etc`, `/lib`, `/tmp` et `/root` sur des partitions distinctes. Ceci vous évitera des soucis de partitions pleines qui pourraient mettre en panne votre machine, faire échouer l'installation d'app, voir même altérer vos bases de données.
 
-Pour des raisons de performances, il est recommandé de monter votre stockage le plus rapide (SSD) sur la racine / .
+Pour des raisons de performances, il est recommandé de monter votre stockage le plus rapide (SSD) sur la racine `/`.
 
 Si vous avez un ou des disques durs pour stocker les données, vous pouvez choisir de les monter sur un de ces dossiers selon votre utilisation.
 
 | Chemin | Contenu  |
 |--------|---|
-| /home                       | Dossiers utilisateurs accessibles via SFTP |
-| /home/yunohost.backup/archives       | Sauvegardes YunoHost à placer idéalement ailleurs que sur les disques qui gérent les données |
-| /home/yunohost.app          | Données lourdes des applications YunoHost (nextcloud, matrix...) |
-| /home/yunohost.multimedia   | Données lourdes partagées entre plusieurs applications |
-| /var/mail                   | Mails des usagers  |
+| `/home`                                | Dossiers utilisateurs accessibles via SFTP |
+| `/home/yunohost.backup/archives`       | Sauvegardes YunoHost à placer idéalement ailleurs que sur les disques qui gérent les données |
+| `/home/yunohost.app`                   | Données lourdes des applications YunoHost (nextcloud, matrix...) |
+| `/home/yunohost.multimedia`            | Données lourdes partagées entre plusieurs applications |
+| `/var/mail`                            | Mails des usagers  |
 
-Si vous souhaitez de la souplesse et ne pas avoir à (re-)dimensionner des partitions, vous pouvez aussi choisir de monter sur /mnt/hdd et de suivre ce [tutoriel pour monter l'ensemble de ces dossiers avec `mount --bind`](/external_storage).
+Si vous souhaitez de la souplesse et ne pas avoir à (re-)dimensionner des partitions, vous pouvez aussi choisir de monter sur `/mnt/hdd` et de suivre ce [tutoriel pour monter l'ensemble de ces dossiers avec `mount --bind`](/external_storage).
 
 ### A propos du chiffrement
 Prenez bien en compte que si vous chiffrez tout ou partie de vos disques, vous aurez à taper la phrase de passe à chaque redémarrage de votre serveur, ce qui peut poser problème si vous n'êtes pas sur place. Il existe toutefois des solutions (assez difficiles à mettre en oeuvre) qui permettent de tapper la phrase via SSH ou via une page web (cherchez "dropbear encrypted disk").

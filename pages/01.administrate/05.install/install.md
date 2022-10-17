@@ -429,7 +429,7 @@ You should see a screen like this:
 [/ui-tab]
 [ui-tab title="Installation in expert mode"]
 
-The YunoHost project has simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to particular cases.
+The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.
 
 With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/external_storage). 
 
@@ -440,21 +440,21 @@ With the expert mode installation, you have more possibilities, especially conce
   4. Specify a possible HTTP proxy to use for the installation of the packages
   5. Specify on which volumes grub should be installed
 
-### About partitioning
+### Regarding partitioning
 
-In general, we recommend avoiding partitioning /var, /opt, /usr, /bin, /etc, /lib, /tmp and /root on separate partitions. This will prevent you from having to worry about full partitions that could crash your machine, cause app installations to fail, or even corrupt your databases.
+In general, we recommend against partitioning `/var`, `/opt`, `/usr`, `/bin`, `/etc`, `/lib`, `/tmp` and `/root` on separate partitions. This will prevent you from having to worry about full partitions that could crash your machine, cause app installations to fail, or even corrupt your databases.
 
-For performance reasons, it is recommended to mount your fastest storage (SSD) on the root / .
+For performance reasons, it is recommended to mount your fastest storage (SSD) on the root `/`.
 
 If you have one or more hard drives to store data, you can choose to mount it on one of these folders depending on your usage.
 
 | Path | Contents |
 |--------|---|
-| /home | User folders accessible via SFTP |
-| /home/yunohost.backup/archives | YunoHost backups to be placed ideally elsewhere than on the disks that manage the data |
-| /home/yunohost.app | Heavy data from YunoHost applications (nextcloud, matrix...) |
-| /home/yunohost.multimedia | Heavy data shared between several applications |
-| /var/mail | User mail
+| `/home` | User folders accessible via SFTP |
+| `/home/yunohost.backup/archives` | YunoHost backups to be placed ideally elsewhere than on the disks that manage the data |
+| `/home/yunohost.app` | Heavy data from YunoHost applications (nextcloud, matrix...) |
+| `/home/yunohost.multimedia` | Heavy data shared between several applications |
+| `/var/mail` | User mail
 
 If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/external_storage).
 
