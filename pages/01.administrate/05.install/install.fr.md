@@ -432,7 +432,7 @@ Votre écran devrait ressembler à la capture ci-dessous :
 [/ui-tab]
 [ui-tab title="Installation en mode expert"]
 
-Le projet YunoHost a simplifié au maximum l'installation classique afin d'éviter au plus grand nombre d'être perdues avec des questions trop techniques ou liées à des cas particuliers.
+Le projet YunoHost a simplifié au maximum l'installation classique afin d'éviter au plus grand nombre d'être perdu avec des questions trop techniques ou liées à des cas particuliers.
 
 Avec l'installation en mode expert, vous avez plus de possibilités notamment concernant le partitionnement exacte de vos supports de stockages. Vous pouvez aussi décider d'utiliser le mode classique et [ajouter vos disques après coup](/external_storage). 
 
