@@ -19,7 +19,7 @@ routes:
   - [Restore Network](#restore-network)
 - [Useful links](#useful-links)
 
-Pi-hole is a network-level ad blocker that acts as a DNS layer and possibly a DHCP3 server for use on a private network. It is designed to be installed on embedded devices with network capabilities, such as the Raspberry Pi, but can be used on other machines running GNU/Linux or in virtualised environments.
+*Pi-Hole* is a network-level ad blocker that acts as a DNS layer and possibly a DHCP3 server for use on a private network. It is designed to be installed on embedded devices with network capabilities, such as the Raspberry Pi, but can be used on other machines running GNU/Linux or in virtualised environments.
 
 ## Using Pi-Hole as a DHCP server
 
@@ -53,22 +53,25 @@ In this case, using Pi-hole's dns will allow you to connect to your server by it
 ### Restore network
 
 > Oops!
-Your Pi-hole server has crashed, and you don't have DHCP anymore.
+Your Pi-Hole server has crashed, and you don't have DHCP anymore.
 Don't panic. We'll get through this.
 
 Use your favorite device on your desktop computer.
 And first, get your network interface (usually `eth0`).
+
 ```bash
 sudo ifconfig
 ```
 
 Then change your IP to a static one.
+
 ```bash
 sudo ifconfig eth0 192.168.1.100
 ```
 
 Now you can connect to your router and reboot its DHCP server to use it again.
 You can now remove your static IP and get a dynamic IP again.
+
 ```bash
 sudo ifconfig eth0 0.0.0 && sudo dhclient eth0
 ```

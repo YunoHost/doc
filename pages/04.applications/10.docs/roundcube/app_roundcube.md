@@ -15,7 +15,7 @@ routes:
 
 - [Useful links](#useful-links)
 
-Roundcube is a web client for email messaging also called webmail.
+*Roundcube* is a web client for email messaging also called webmail.
 
 ### Synchronize your contacts
 

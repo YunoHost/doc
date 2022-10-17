@@ -67,10 +67,6 @@ Par défaut, le script crée `whitelist.txt` et ajoute les ponts principaux (voi
 
 Pour des raisons de simplicité, ce paquet YunoHost active tous les ponts par défaut.
 
-##### Multi-users support
-
-Cette application est publique et il n'y a pas de notion d'utilisateur.
-
 ## Liens utiles
 
 + Site web : [github.com/RSS-Bridge/rss-bridge](https://github.com/RSS-Bridge/rss-bridge)

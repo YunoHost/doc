@@ -11,15 +11,15 @@ routes:
 
 [![Installer Pi-hole avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=pihole)[![Niveau d'intégration](https://dash.yunohost.org/integration/pihole.svg)](https://dash.yunohost.org/appci/app/pihole)
 
-- [Utiliser Pi-Hole comme serveur DHCP](#utiliser-pi-hole-comme-serveur-dhcp)
-  - [Configurer Pi-Hole](#configurer-pi-hole)
+- [Utiliser Pi-hole comme serveur DHCP](#utiliser-pi-hole-comme-serveur-dhcp)
+  - [Configurer Pi-hole](#configurer-pi-hole)
   - [Configurer mon routeur](#configurer-mon-routeur)
   - [Restaurer le réseau](#restaurer-le-réseau)
 - [Liens utiles](#liens-utiles)
 
-Pi-hole est un bloqueur de publicité au niveau du réseau qui agit comme un DNS menteur et éventuellement un serveur DHCP3, destiné à être utilisé sur un réseau privé. Il est conçu pour être installé sur des périphériques intégrés dotés de capacités réseau, tels que le Raspberry Pi, mais il peut être utilisé sur d'autres machines exécutant GNU/Linux ou dans des environnements virtualisés.
+*Pi-hole* est un bloqueur de publicité au niveau du réseau qui agit comme un DNS menteur et éventuellement un serveur DHCP3, destiné à être utilisé sur un réseau privé. Il est conçu pour être installé sur des périphériques intégrés dotés de capacités réseau, tels que le Raspberry Pi, mais il peut être utilisé sur d'autres machines exécutant GNU/Linux ou dans des environnements virtualisés.
 
-## Utiliser Pi-Hole comme serveur DHCP
+## Utiliser Pi-hole comme serveur DHCP
 
 > **Attention, vous devez savoir que toucher à votre DHCP pourrait casser votre réseau.
 Dans le cas où votre serveur serait inaccessible, vous perdriez votre résolution dns et votre adresse IP.
@@ -56,17 +56,20 @@ Ne paniquez pas, on va surmonter ça \o/
 
 Utilisez votre terminal favori sur votre ordinateur de bureau.
 Et tout d'abord, récupérer votre interface réseau (Le plus souvent `eth0`).
+
 ``` bash
 sudo ifconfig
 ```
 
 Ensuite, changer votre ip pour une ip statique.
+
 ``` bash
 sudo ifconfig eth0 192.168.1.100
 ```
 
 Maintenant, vous pouvez vous connecter à votre routeur et rallumer son serveur DHCP pour l'utiliser à nouveau.
 Vous pouvez maintenant retirer votre ip statique et réobtenir une ip dynamique.
+
 ``` bash
 sudo ifconfig eth0 0.0.0.0 && sudo dhclient eth0
 ```
