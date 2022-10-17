@@ -11,7 +11,7 @@ Cette page de documentation va vous expliquer comment mettre en place un serveur
 
 ## Pourquoi utiliser VirtualBox plutôt qu’un serveur YunoHost de production pour packager une application ?
 
-Il y a principalement deux raisons pour préférer l'usage d'un serveur virtuel plutôt que votre propre serveur :
+Il y a principalement deux raisons pour préférer l'usage d'un serveur virtuel plutôt que votre propre serveur :
 
 - Vous pouvez torturer à loisir un serveur virtuel sans courir le risque de le casser, puisque vous pourrez toujours restaurer un état précédent. Alors qu'il serait dommage de casser son propre serveur !
 - Un serveur virtuel sera restauré avant de travailler dessus, pour garder en permanence un système sans résidus d'une précédente installation. Cela permet de se rapprocher au plus près d'une première installation par un utilisateur.
@@ -21,7 +21,7 @@ Nous parlerons ici de VirtualBox, pour son approche graphique facile à utiliser
 ## Installer VirtualBox
 
 Depuis un système GNU/Linux, installer simplement le paquet `virtualbox-qt`. 
-Depuis un système Windows ou macOS, il faudra se référer à la page de [téléchargement de VirtualBox](https://www.virtualbox.org/wiki/Downloads) pour récupérer le fichier d'installation adéquat. Le paquet virtualbox est déprécié depuis debian 9, un fichier d'installation .deb est disponible sur la même page.
+Depuis un système Windows ou macOS, il faudra se référer à la page de [téléchargement de VirtualBox](https://www.virtualbox.org/wiki/Downloads) pour récupérer le fichier d'installation adéquat. Le paquet virtualbox est déprécié depuis Debian 9, un fichier d'installation .deb est disponible sur la même page.
 
 Quel que soit votre système, il ne devrait pas être nécessaire d'installer l'extension pack ou les additions invités.
 
@@ -78,7 +78,7 @@ Mais pour restaurer un instantané, la machine ne doit pas être en cours d'exé
 
 ## Comment se connecter à la machine virtuelle ?
 
-On se connecte à la machine virtuelle comme à n'importe quel serveur YunoHost, en utilisant ssh.
+On se connecte à la machine virtuelle comme à n'importe quel serveur YunoHost, en utilisant SSH.
 
 ```bash
 ssh admin@mon.domain
@@ -91,9 +91,9 @@ ssh admin@11.22.33.44
 
 À présent, on peut travailler sur la machine virtuelle en CLI.
 
-Pour copier facilement les fichiers du package ou utiliser un éditeur de texte graphique, on peut également se connecter en sftp avec un explorateur de fichier.
+Pour copier facilement les fichiers du package ou utiliser un éditeur de texte graphique, on peut également se connecter en SFTP avec un explorateur de fichier.
 
 Il suffit de se connecter à l'adresse `sftp://admin@mon.domain/` avec l'explorateur.  
 ![](image://virtualbox_packaging6.jpg)
 
-> Sur Windows ou macOS, l'explorateur de fichier ne supporte pas nativement le protocole sftp…
+> Sur Windows ou macOS, l'explorateur de fichier ne supporte pas nativement le protocole SFTP...
