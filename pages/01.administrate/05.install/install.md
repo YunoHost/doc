@@ -456,7 +456,7 @@ If you have one or more hard drives to store data, you can choose to mount it on
 | /home/yunohost.multimedia | Heavy data shared between several applications |
 | /var/mail | User mail
 
-If you want flexibility and don't want to (re)size partitions, you can also choose to mount on /mnt/hdd and follow this [tutorial to mount all these folders with `mount --bind`](/external_storage).
+If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/external_storage).
 
 ### About encryption
 Be aware that if you encrypt all or part of your disks, you will have to type the passphrase every time you restart your server, which can be a problem if you are not on site. There are however solutions (quite difficult to implement) that allow you to type the passphrase via SSH or via a web page (search for "dropbear encrypted disk").
