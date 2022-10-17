@@ -68,12 +68,12 @@ lsblk
 It may return something like :
 
 ```bash
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-sda 8:0 0 931.5G 0 disk
-└─sda1 8:1 0 931.5G 0 part
-mmcblk0 179:0 0 14.9G 0 disk
-├─mmcblk0p1 179:1 0 47.7M 0 part /boot
-└─mmcblk0p2 179:2 0 14.8G 0 part /
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda           8:0    0 931.5G  0 disk
+└─sda1        8:1    0 931.5G  0 part
+mmcblk0     179:0    0  14.9G  0 disk
+├─mmcblk0p1 179:1    0  47.7M  0 part /boot
+└─mmcblk0p2 179:2    0  14.8G  0 part /
 ```
 
 Here, `mmcblk0` corresponds to a 16GB SD card (you can see that the `mmcblk0p1` and `mmcblk0p2` partitions correspond to the `/boot` partition and the `/` system partition). The hard drive connected corresponds to `sda` which is about 1TB, and contains a single `sda1` partition which is not mounted (no "MOUNTPOINT").
