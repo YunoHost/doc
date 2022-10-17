@@ -546,18 +546,64 @@ Start the virtual machine after selecting the YunoHost image.
 {% if regular or virtualbox %}
 ## [fa=rocket /] Launch the graphical install
 
-!! N.B. : The installation will totally erase the data on the server's hard drive!
-
 You should see a screen like this:
 
 [figure class="nomargin" caption="Preview of the ISO menu"]
 ![](image://virtualbox_3.png?class=inline)
 [/figure]
+[ui-tabs position="top-left" active="0" theme="lite"]
+
+[ui-tab title="Installation classique sur un disque entier"]
+
+!! N.B.: Once you have validated the keyboard layout, the installation will be launched and will completely erase the data on your hard disk!
 
   1. Select `Graphical install`
-  2. Select your language, your location and your keyboard layout
+  2. Select your language, your location, your keyboard layout, and eventually your timezone.
   3. The installer will then download and install all required packages.
 
+[/ui-tab]
+[ui-tab title="Installation in expert mode"]
+
+The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.
+
+With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/external_storage). 
+
+### Summary of the steps in expert mode:
+  1. Select `Expert graphical install`.
+  2. Select your language, location, keyboard layout and possibly your timezone.
+  3. Partition your disks. This is where you can set up a RAID or encrypt all or part of the server.
+  4. Specify a possible HTTP proxy to use for the installation of the packages
+  5. Specify on which volumes grub should be installed
+
+### Regarding partitioning
+
+In general, we recommend against partitioning `/var`, `/opt`, `/usr`, `/bin`, `/etc`, `/lib`, `/tmp` and `/root` on separate partitions. This will prevent you from having to worry about full partitions that could crash your machine, cause app installations to fail, or even corrupt your databases.
+
+For performance reasons, it is recommended to mount your fastest storage (SSD) on the root `/`.
+
+If you have one or more hard drives to store data, you can choose to mount it on one of these folders depending on your usage.
+
+| Path | Contents |
+|--------|---|
+| `/home` | User folders accessible via SFTP |
+| `/home/yunohost.backup/archives` | YunoHost backups to be placed ideally elsewhere than on the disks that manage the data |
+| `/home/yunohost.app` | Heavy data from YunoHost applications (nextcloud, matrix...) |
+| `/home/yunohost.multimedia` | Heavy data shared between several applications |
+| `/var/mail` | User mail
+
+If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/external_storage).
+
+### About encryption
+Be aware that if you encrypt all or part of your disks, you will have to type the passphrase every time you restart your server, which can be a problem if you are not on site. There are however solutions (quite difficult to implement) that allow you to type the passphrase via SSH or via a web page (search for "dropbear encrypted disk").
+
+### About RAID
+Keep in mind that:
+ * the disks in your RAIDs must be of different brands, wear and tear or batches (especially if they are SSDs)
+ * a RAID 1 (even without a spare) is more reliable than a RAID 5 from a probability point of view
+ * hardware raids are dependent on the raid card, if the card fails you will need a replacement to read and rebuild the array
+
+[/ui-tab]
+[/ui-tabs]
 {% endif %}
 
 
