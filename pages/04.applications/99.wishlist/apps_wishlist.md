@@ -49,6 +49,8 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Chaskiq | A full featured Live Chat, Support & Marketing platform, alternative to Intercom, Drift, Crisp | [Upstream](https://github.com/chaskiq/chaskiq) |  |
 | changedetection.io | Self-hosted open source change monitoring of web pages | [Upstream](https://github.com/dgtlmoon/changedetection.io) |  |
 | [Chatterbox](https://element.io/solutions/chatterbox-embedded-live-chat-for-customer-service) | Embedded live chat for customer service | [Upstream]([https://github.com/sourcegraph/checkup](https://github.com/vector-im/chatterbox)) |  |
+| [Chatwoot](https://www.chatwoot.com/docs/self-hosted/) | Open-source customer engagement suite, an alternative to Intercom, Zendesk, Salesforce Service Cloud | [Upstream](https://github.com/chatwoot/chatwoot) |  |
+| [Chitchatter](https://chitchatter.im/) | chat p2p encrypted serverless ephemeral decentralized | [Upstream](https://github.com/jeremyckahn/chitchatter) |  |
 | [CheckUp](https://sourcegraph.github.io/checkup) |  | [Upstream](https://github.com/sourcegraph/checkup) |  |
 | [Citadel-suite](https://www.citadel.org) | Groupware platform |  |  |
 | [CKAN](https://ckan.org/) | A tool for making open data websites | [Upstream](https://github.com/ckan/ckan) |  |
@@ -73,6 +75,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Docker-registry |  | [Upstream](https://github.com/docker/distribution/) | [Package Draft](https://github.com/plopoyop/docker-registry_ynh) |
 | DockerUI | Deploy applications with Docker |  | [Package Draft](https://github.com/YunoHost-Apps/dockerui_ynh) |
 | Docspell | Simple document organizer | [Upstream](https://github.com/eikek/docspell) |  |
+| Docusaurus | Static site generator/SPA to build documentations | [Upstream](https://github.com/facebook/docusaurus) |  |
 | [DomainMOD](https://domainmod.org) | Domain portfolio management application | | |
 | Dynette | Dynette is a dyndns server | [Upstream](https://github.com/YunoHost/dynette) | [Package Draft](https://github.com/YunoHost-Apps/dynette_ynh) |
 | DrakonHub | Online editor for Drakon diagrams | [Upstream](https://github.com/stepan-mitkin/drakonhub) | |
@@ -116,12 +119,14 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | gogs_webhost | Turn a Gogs repository to static web hosting |  | [Package Draft](https://github.com/YunoHost-Apps/gogs_webhost_ynh) |
 | Gollum | A simple Git-powered wiki | [Upstream](https://github.com/gollum/gollum) | [Package Draft](https://github.com/YunoHost-Apps/gollum_ynh) |
 | Goploader |  | [Upstream](https://github.com/Depado/goploader) |  |
+| [gocd](https://go.cd) | CI/CD server | [Upstream](https://github.com/gocd/gocd) | |
 | Granary |  | [Upstream](https://github.com/snarfed/granary) |  |
 | [Graphhopper](https://www.graphhopper.com/) |  | [Upstream](https://github.com/graphhopper/graphhopper) |  |
 | [Greenlight](https://blabla.aquilenet.fr/b) | A really simple end-user interface for your BigBlueButton server | [Upstream](https://github.com/bigbluebutton/greenlight) |  |
-| [Grist](https://www.getgrist.com/) | The evolution of spreadsheets | [Upstream](https://github.com/gristlabs/grist-core/) |  |
+| [Grist](https://www.getgrist.com/) | The evolution of spreadsheets | [Upstream](https://github.com/gristlabs/grist-core/) | [Package Draft](https://github.com/ketsapiwiq/grist_ynh) |
 | [Habitica](https://habitica.com/) |  | [Upstream](https://github.com/HabitRPG/habitica) |  |
 | [Hashbase](https://github.com/beakerbrowser/hashbase/tree/master/docs) | A public peer service for Dat archives, provides a HTTP-accessible interface for creating an account and uploading Dats. | [Upstream](https://github.com/beakerbrowser/hashbase) |  |
+| [Headscale](https://github.com/juanfont/headscale) | An open source, self-hosted implementation of the Tailscale Mesh-VPN control server | [Upstream Daemon](https://github.com/juanfont/headscale) [Upstream UI](https://github.com/gurucomputing/headscale-ui)  |   |
 | Helpy |  | [Upstream](https://github.com/helpyio/helpy) |  |
 | [Hexo](https://hexo.io/) |  | [Upstream](https://github.com/hexojs/hexo) |  |
 | Hometown | A Mastodon fork with local-only posting, support for more content types, and other features and tweaks. | [Upstream](https://github.com/hometown-fork/hometown) |  |
@@ -138,9 +143,11 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [JS Bin](https://jsbin.com/) |  | [Upstream](https://github.com/jsbin/jsbin) |  |
 | [Karaoke-forever](https://www.karaoke-forever.com/) | Organize karaoke parties | [Upstream](https://github.com/bhj/karaoke-forever) | |
 | Kenoma | Pleroma frontend | [Upstream](https://git.pleroma.social/lambadalambda/kenoma) | |
+| Keyoxide | Keyoxide is a privacy-friendly tool to create and verify decentralized online identities. | [Upstream](https://codeberg.org/keyoxide) | |
 | [Kill the newsletter](https://kill-the-newsletter.com/) | Convert email newsletters to RSS feeds | [Upstream](https://github.com/leafac/kill-the-newsletter.com) | |
 | [Known](https://withknown.com) |  | [Upstream](https://github.com/idno/known) |  |
 | [Koel](https://koel.phanan.net) |  | [Upstream](https://github.com/phanan/koel) |  |
+| [Koha](https://koha-community.org/) | The world's first free and open source library system | [Upstream](https://git.koha-community.org/Koha-community/Koha) | |
 | Kontalk |  | [Upstream](https://github.com/kontalk) |  |
 | [Koozip](https://koozic.net) |  | [Upstream](https://github.com/DocMarty84/koozic) |  |
 | L'atelier |  |  [Upstream](https://github.com/jbl2024/latelier) |  |
@@ -160,6 +167,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [MaidSafe](https://maidsafe.net) |  | [Upstream](https://github.com/maidsafe) |  |
 | [Mailpile](https://www.mailpile.is) |  | [Upstream](https://github.com/mailpile/Mailpile) |  |
 | [Mailtrain](https://mailtrain.org/) |  | [Upstream](https://github.com/Mailtrain-org/mailtrain) |  |
+| [Tileserver-GL](https://maps.earth/) | Tile server light SVG for map service  | [Upstream](https://github.com/maptiler/tileserver-gl) |  |
 | [Mealie](https://hay-kot.github.io/mealie/) | Recipe manager and meal planner  | [Upstream](https://github.com/hay-kot/mealie/) |  |
 | [Mediagoblin](https://mediagoblin.org/) | Video streaming platform | [Upstream](https://savannah.gnu.org/projects/mediagoblin) | [Package Draft](https://github.com/YunoHost-Apps/mediagoblin_ynh) |
 | [medusa](https://pymedusa.com/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/YunoHost-Apps/medusa_ynh) |
@@ -182,6 +190,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Nautilus](https://myactivity.stream/) | Turn your website into an ActivityPub profile  | [Upstream](https://github.com/aaronpk/Nautilus) |  |
 | Netrunner |  | [Upstream](https://github.com/mtgred/netrunner) |  |
 | [Netbird](https://netbird.io/) | Create an overlay peer-to-peer network connecting machines regardless of their location | [Upstream](https://github.com/netbirdio/netbird) | |
+| [Netlify CMS](https://netlifycms.org/) | A CMS for any static site generator that connects to a Gitlab/Github repo (requires netlify/gotrue) | [Upstream](https://github.com/netlify/netlify-cms) | |
 | [NewsBlur](https://www.newsblur.com) | This is the most complete RSS reader that exists to date | [Upstream](https://github.com/samuelclay/NewsBlur) |  |
 | nexusoss | Sonatype Nexus Repository manager OSS |  | [Package Draft](https://github.com/YunoHost-Apps/nexusoss_ynh) | 
 | [ntopng](https://www.ntop.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/ntopng_ynh) |
@@ -197,6 +206,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [osmw](https://www.openstreetmap.org/) | Cartography software |  | [Package Draft](https://github.com/YunoHost-Apps/osmw_ynh) |
 | OSRM |  | [Upstream](https://github.com/Project-OSRM/osrm-backend) |  |
 | [OX Open-Xchange](https://www.open-xchange.com) | Linux groupware solution | [Upstream](https://github.com/open-xchange/) |  |
+| [pd3f](https://pd3f.com/) | PDF text extraction (OCR) pipeline using machine-learning | [Upstream](https://github.com/pd3f/pd3f) | |
 | [Padloc](https://padloc.app/) | Simple, secure password and data management for individuals and teams | [Upstream](https://github.com/padloc/padloc) | |
 | Paperless-ng |  | [Upstream](https://github.com/jonaswinkler/paperless-ng) |  |
 | [Paperwork](https://paperwork.cloud) |  | [Upstream](https://github.com/paperwork/paperwork) |  |
@@ -209,6 +219,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Phraseanet](https://docs.phraseanet.com/3.8/fr/index.html#) |  | [Upstream](https://github.com/alchemy-fr/Phraseanet-Docs) |  |
 | [pia](https://github.com/LINCnil/pia) | A tool to help carrying out Privacy Impact Assessments |  | [Package Draft](https://github.com/YunoHost-Apps/pia_ynh) |
 | [PicApport](https://www.picapport.de/) | Self-hosted private photo server |  |  |
+| [Picsur](https://picsur.org/) | Simple open-source image host | [Upstream](https://github.com/rubikscraft/Picsur) | |
 | [Pinry](https://docs.getpinry.com/) |  Open source tiling image board | [Upstream](https://github.com/pinry/pinry/) | |
 | [Piped](https://github.com/TeamPiped/Piped/wiki/Instances) | An open-source alternative frontend for YouTube which is efficient by design. | [Upstream](https://github.com/TeamPiped/Piped) |  |
 | Pol | RSS generator website | [Upstream](https://github.com/taroved/pol) |  |
@@ -246,6 +257,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | rutorrent | Torrent client |  | [Package Draft](https://github.com/CotzaDev/rutorrent_ynh) |
 | rwtxt | Minimalist CMS | [Upstream](https://github.com/schollz/rwtxt) |  |
 | [sat](https://salut-a-toi.org) | An all-in-one tool to manage all your communications |  | [Package Draft](https://github.com/YunoHost-Apps/sat_ynh) |
+| [satdress] | Federated Lightning addresses server |  | [Upstream](https://github.com/nbd-wtf/satdress) |
 | [ScenariChain-server](https://download.scenari.software/SCENARIchain-server/) |  |  |  |
 | [Schleuder](https://schleuder.org/schleuder/docs/concept.html) | A GPG-enabled mailing list manager |  |  |
 | scm-manager | Share and manage Git, Mercurial and Subversion repositories |  | [Package Draft](https://github.com/drfred1981/scm-manager_ynh) |
@@ -299,6 +311,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | transpay | Interface to receive and manage donations with Stripe |  | [Package Draft](https://github.com/YunoHost-Apps/transpay_ynh) |
 | transwhat | A gateway to WhatsApp from Jabber |  | [Package Draft](https://github.com/Josue-T/transwhat_ynh) |
 | [Tryton](https://www.tryton.org/) | A solid ERP system |  |  |
+| [trivy](https://www.aquasec.com/products/trivy/) | OSS Vulnerability and Misconfiguration Scanning. |[Upstream](https://github.com/aquasecurity/trivy) | |
 | tutao | End-to-end encrypted e-mail client | [Upstream](https://github.com/tutao/tutanota/) | [Package Draft](https://github.com/YunoHost-Apps/tutao_ynh) |
 | [Twake](https://twake.app/fr)| All of the organizational tools you need to make your projects succeed brought together on one platform.| | |
 | Twister |  | [Upstream](https://github.com/miguelfreitas/twister-core/) |  |
@@ -314,6 +327,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [WebODF](https://webodf.org) |  | [Upstream](https://github.com/webodf/WebODF) |  |
 | webogram | Webogram - a new era of messaging | [Upstream](https://github.com/zhukov/webogram) | [Package Draft](https://github.com/YunoHost-Apps/webogram_ynh) |
 | [WebThings Gateway](https://iot.mozilla.org/gateway/) |  | [Upstream](https://github.com/mozilla-iot/) |  |
+| [wg-access-server](https://github.com/freifunkMUC/wg-access-server) | VPN Server OIDC ipv4 ipv6 | [Upstream](https://github.com/freifunkMUC/wg-access-server) |  |
 | Whoogle | A metasearch engine | [Upstream](https://github.com/benbusby/whoogle-search) |  |
 | [Wikiless](https://wikiless.org/) | A free open source alternative Wikipedia front-end focused on privacy. | [Upstream](https://codeberg.org/orenom/wikiless) |  |
 | [WikiSuite](https://wikisuite.org/Software) | The most comprehensive and integrated Open Source enterprise solution. | [Upstream](https://gitlab.com/wikisuite) |  |

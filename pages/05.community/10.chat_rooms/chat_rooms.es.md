@@ -19,7 +19,7 @@ Puede unirse a una sala de chat utilizando :
 
 Existen salas publicas de chat de [soporte](/help) y ayuda para YunoHost:
 - IRC: **#yunohost** on libera.chat ;
-- Matrix: **[#yunohost:libera.chat](https://matrix.to/#/#yunohost:libera.chat)** ;
+- Matrix: **[#yunohost:matrix.org](https://matrix.to/#/#yunohost:matrix.org)** ;
 - XMPP: **[support@conference.yunohost.org](xmpp:support@conference.yunohost.org?join)**
 
 #### sala de chat para desarrolladores

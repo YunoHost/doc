@@ -29,7 +29,7 @@ routes:
     - '/hardware'
 ---
 {% set image_type = 'YunoHost' %}
-{% set arm, at_home, regular, rpi2plus, rpi1, rpi0, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, internetcube, docker = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
+{% set arm, at_home, regular, rpi2plus, rpi1, rpi0, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, wsl, internetcube, docker = false, false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
 {% set hardware = uri.param('hardware')  %}
 
 {% if hardware == 'regular' %}
@@ -56,6 +56,8 @@ routes:
   {% set at_home, virtualbox = true, true %}
 {% elseif hardware == 'docker' %}
   {% set docker = true %}
+{% elseif hardware == 'wsl' %}
+  {% set wsl = true %}
 {% endif %}
 
 {% if arm or regular %}
@@ -79,6 +81,10 @@ Select the hardware on which you want install YunoHost :
 
 [div class="flex-child hardware{%if regular %} active{% endif %}"]
 [[figure caption="Regular computer"]![](image://computer.png?height=75)[/figure]](/install/hardware:regular)
+[/div]
+
+[div class="flex-child hardware{%if wsl %} active{% endif %}"]
+[[figure caption="WSL"]![](image://wsl.png?height=75)[/figure]](/install/hardware:wsl)
 [/div]
 
 [div class="flex-child hardware{%if vps_debian or vps_ynh %} active{% endif %}"]
@@ -130,6 +136,10 @@ Select the hardware on which you want install YunoHost :
 
 {% if hardware != '' %}
 
+{% if wsl %}
+!! This setup is mainly meant for local testing by advanced users. Due to limitations on WSL's side (changing IP address, notably), selfhosting from it can be tricky and will not be described here.
+{% endif %}
+
 {% if docker %}
 !! **YunoHost doesn’t support Docker officially since issues with versions 2.4+. In question, YunoHost 2.4+ doesn’t work anymore on Docker because YunoHost requires systemd and Docker has chosen to not support it natively (and there are other problems link to the firewall and services).**
 !!
@@ -178,6 +188,12 @@ However, community images exist and are available on Docker Hub:
 {% if regular %}
 * A USB stick with at least 1GB capacity OR a standard blank CD
 {% endif %}
+{% if wsl %}
+* Windows 10 and above
+* Administration rights
+* Windows Subsystem for Linux, installed from the Optional Features menu of Windows
+* *Recommended:* Windows Terminal (Preview) app, installed from the Microsoft Store. Much better than the standard Terminal, as it offers shortcuts to the WSL distros.
+{% endif %}
 {% if at_home %}
 * A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
 {% if rpi0 %}
@@ -195,8 +211,125 @@ However, community images exist and are available on Docker Hub:
 ! N.B. : Installing YunoHost in a VirtualBox is usually intended for testing. To run an actual server on the long-term, you usually need a dedicated physical machine (old computer, ARM board...) or a server online.
 {% endif %}
 
+{% if wsl %}
+## Introduction
+WSL is a nice feature of Windows 10, making Linux pseudo-distributions available through command line. Let's say pseudo, because even though they are not really like virtual machines, they rely on virtualization capacities that make their integration with Windows almost seamless.
+Docker for Windows can now rely on WSL instead of Hyper-V, for example.
 
+! Bear in mind, this setup itself is *not* a container of any kind. If something breaks, there is no rollback capability.
+! You may need to delete the Debian distro altogether and restore it whole.
 
+## Install Debian 11
+
+Let's install YunoHost into its own distro, not altering the default one. In a PowerShell terminal:
+
+```bash
+# Let's go in your home directory and prepare the working directories
+cd ~
+mkdir -p WSL\YunoHost
+# Download the Debian appx package and unzip it
+curl.exe -L -o debian.zip https://aka.ms/wsl-debian-gnulinux
+Expand-Archive .\debian.zip -DestinationPath .\debian
+# Import the Debian base into a new distro
+wsl --import YunoHost ~\WSL\YunoHost ~\debian\install.tar.gz --version 2
+# Cleanup
+rmdir .\debian -R
+```
+
+You can now access it: run `wsl.exe -d YunoHost`
+
+It is under Debian 9 Stretch, so let's upgrade it: 
+
+```bash
+# In WSL
+sudo sed -i 's/stretch/bullseye/g' /etc/apt/sources.list`
+sudo apt update
+sudo apt upgrade
+sudo apt dist-upgrade
+```
+## Prevent WSL from tweaking configuration files
+
+Edit `/etc/wsl.conf` and put the following code in it:
+
+```
+[network]
+generateHosts = false
+generateResolvConf = false
+```
+
+## Force the use of iptables-legacy
+
+Somehow the YunoHost post-installation does not like `nf_tables`, the new software replacing `iptables`.
+We can still explicitely use the good ol' `iptables` though:
+
+```bash
+# In WSL
+sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
+sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
+```
+
+## Install Systemd
+
+Debian on WSL does not have `systemd`, a service configuration software.
+This is a key element for YunoHost, and for any decent Debian distro (seriously MS, what the heck). Let's install it:
+
+1. Install dotNET runtime:
+```bash
+# In WSL
+wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+sudo apt update
+sudo apt install -y apt-transport-https
+sudo apt update
+sudo apt install -y dotnet-sdk-3.1
+```
+
+2. Install [Genie](https://github.com/arkane-systems/genie):
+```bash
+# In WSL
+# Add their repository
+echo "deb [trusted=yes] https://wsl-translinux.arkane-systems.net/apt/ /" > /etc/apt/sources.list.d/wsl-translinux.list
+# Install Genie
+sudo apt update
+sudo apt install -y systemd-genie
+```
+
+## Install YunoHost
+
+```bash
+# In WSL
+# Let's switch to the root user, if you were not already
+sudo su
+# Initialize the Genie bottle to have systemd running
+genie -s
+# Your hostname should have been appended with "-wsl"
+# Install YunoHost
+curl https://install.yunohost.org | bash -s -- -a
+```
+
+### Access the command line
+
+Always call `genie -s` while starting your distro.
+
+`wsl -d YunoHost -e genie -s`
+
+## Backup and restore the distro 
+### Make your first distro backup
+As said before, there is no rollback capability. So let's export your fresh distro. In PowerShell:
+
+```
+cd ~
+wsl --export YunoHost .\WSL\YunoHost.tar.gz
+```
+
+### In case of crash, delete and restore the whole distro
+
+```
+cd ~
+wsl --unregister YunoHost
+wsl --import YunoHost .\WSL\YunoHost .\WSL\YunoHost.tar.gz --version 2
+```
+{% endif %}
 
 {% if vps_ynh %}
 ## YunoHost VPS providers
@@ -214,6 +347,8 @@ Here are some VPS providers supporting YunoHost natively :
 
 {% if at_home %}
 ## [fa=download /] Download the {{image_type}} image
+
+! The links to the images are currently broken. While we resolve the issue, you can find them directly on https://build.yunohost.org/
 
 {% if virtualbox or regular %}
 !!! If your host OS is 32 bits, be sure to download the 32-bit image.
@@ -234,7 +369,7 @@ Here are some VPS providers supporting YunoHost natively :
 <div id="cards-list">
 </div>
 </div>
-<script type="text/template" id="image-template">
+<template id="image-template">
 <div id="{id}" class="card panel panel-default">
         <div class="panel-body text-center pt-2">
             <h3>{name}</h3>
@@ -251,7 +386,7 @@ Here are some VPS providers supporting YunoHost natively :
             <a href="{file}" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=download] Download <small>{version}</small></a>
         </div>
 </div>
-</script>
+</template>
 <script>
 var hardware = "{{ hardware|escape('js') }}";
 /*
@@ -270,13 +405,13 @@ $(document).ready(function () {
              .replace('{id}', infos.id)
              .replace('{name}', infos.name)
              .replace('{comment}', infos.comment || "&nbsp;")
+             .replace('%7Bimage%7D', infos.image)
              .replace('{image}', infos.image)
              .replace('{version}', infos.version);
  
-            if (infos.file.startsWith("http"))
-                html = html.replace(/{file}/g, infos.file);
-            else
-                html = html.replace(/{file}/g, "https://build.yunohost.org/"+infos.file);
+            if (!infos.file.startsWith("http"))
+                infos.file="https://build.yunohost.org/"+infos.file;
+            html = html.replace(/%7Bfile%7D/g, infos.file).replace(/{file}/g, infos.file);
    
             if ((typeof(infos.has_sig_and_sums) !== 'undefined') && infos.has_sig_and_sums == false)
             {
@@ -485,10 +620,11 @@ curl https://install.yunohost.org | bash
 
 {% endif %}
 
-
 ## [fa=cog /] Proceed with the initial configuration
 
 !!! If you are in the process of restoring a server using a YunoHost backup, you should skip this step and instead [restore the backup instead of the postinstall step](/backup#restoring-during-the-postinstall).
+
+{% if not wsl %}
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
@@ -500,7 +636,9 @@ In an internet browser, type **{% if internetcube %}`https://internetcube.local`
 You can perform the initial configuration with the web interface by typing in the adress bar of your web browser **the public IP address of your server**. Typically, your VPS provider should have provided you with the IP of the server.
 {% endif %}
 
-! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). For now, you should add a security exception to accept the current certificate. (Though, PLEASE, do not take the habit of blindly accepting this kind of security alert!)
+{% endif %}
+
+! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. {% if not wsl %}You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). {% endif %} For now, you should add a security exception to accept the current certificate. (Though, PLEASE, do not take the habit of blindly accepting this kind of security alert!)
 
 {% if not internetcube %}
 You should then land on this page :
@@ -528,11 +666,32 @@ You can also perform the postinstallation with the command `yunohost tools posti
 
 This will be the domain used by your server's users to access the **authentication portal**. You can later add other domains, and change which one is the main domain if needed.
 
+{% if not wsl %}
+
 * If you're new to self-hosting and do not already have a domain name, we recommend using a **.nohost.me** / **.noho.st** / **.ynh.fr** (e.g. `homersimpson.nohost.me`). Provided that it's not already taken, the domain will be configured automatically and you won't need any further configuration step. Please note that the downside is that you won't have full-control over the DNS configuration.
 
 * If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/dns_config).
 
 !!! Yes, you *have to* configure a domain name. If you don't have any domain name and don't want a **.nohost.me** / **.noho.st** / **.ynh.fr** either, you can set up a dummy domain such as `yolo.test` and tweak your `/etc/hosts` file such that this dummy domain points to the appropriate IP, as explained [here](/dns_local_network)).
+
+{% else %}
+
+You will have to choose a fake domain, since it will not be accessible from outside.
+For example, `ynh.wsl`. The tricky part is advertising this domain to your host.
+
+Alter your `C:\Windows\System32\drivers\etc\hosts` file. You should have a line starting by `::1`, update it or add it if needed to get:
+
+```
+::1    ynh.wsl localhost
+```
+
+If you want to create subdomains, do not forget to add them in the `hosts` file too:
+
+```
+::1    ynh.wsl subdomain.ynh.wsl localhost
+```
+
+{% endif %}
 
 ##### [fa=key /] Administration password
 
@@ -562,13 +721,20 @@ Go in Users > Click on "+ New User" button
 ```
 yunohost user create johndoe
 ```
-TODO : copypasta an actual shell session will all info asked etc..
+
+[figure class="nomargin" caption="Preview of the user creation CLI"]
+![User creation CLI](image://create-first-user-cli.png?resize=100%&class=inline)
+[/figure]
 
 [/ui-tab]
 [/ui-tabs]
 {% endif %}
 
 ## [fa=stethoscope /] Run the initial diagnosis
+
+{% if wsl %}
+! Reminder: YunoHost in WSL will likely not be reachable from outside, and real domains and certificates won't be able to be assigned to it.
+{% endif %}
 
 The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured - and guide you in how to fix issues. The diagnosis will run twice a day and send an alert if issues are detected.
 
@@ -611,7 +777,7 @@ Go in Domains > Click on your domain > SSL Certificate
 [/ui-tab]
 [ui-tab title="From the command line"]
 ```
-yunohost domain cert-install
+yunohost domain cert install
 ```
 [/ui-tab]
 [/ui-tabs]

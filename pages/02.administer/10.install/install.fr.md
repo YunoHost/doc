@@ -217,6 +217,8 @@ Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 {% if at_home %}
 ## [fa=download /] Télécharger l'image {{image_type}}
 
+! Les liens vers les images sont actuellement cassés. Pendant que nous travaillons sur le problème, trouvez-les directement à l'adresse https://build.yunohost.org/
+
 {% if virtualbox or regular %}
 !!! Si votre hôte est en 32 bits, faites bien attention à télécharger l'image 32 bits.
 {% elseif arm_unsup %}
@@ -236,7 +238,7 @@ Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 <div id="cards-list">
 </div>
 </div>
-<script type="text/template" id="image-template">
+<template id="image-template">
 <div id="{id}" class="card panel panel-default">
         <div class="panel-body text-center pt-2">
             <h3>{name}</h3>
@@ -246,14 +248,14 @@ Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
             </div>
         </div>
         <div class="annotations flex-container">
-            <div class="flex-child annotation"><a href="{file}.sha256sum">[fa=barcode] Somme de contrôle</a></div>
+            <div class="flex-child annotation"><a href="{file}.sha256sum">[fa=barcode] Checksum</a></div>
             <div class="flex-child annotation"><a href="{file}.sig">[fa=tag] Signature</a></div>
         </div>
         <div class="btn-group" role="group">
             <a href="{file}" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=download] Télécharger <small>{version}</small></a>
         </div>
 </div>
-</script>
+</template>
 <script>
 var hardware = "{{ hardware|escape('js') }}";
 /*
@@ -272,13 +274,13 @@ $(document).ready(function () {
              .replace('{id}', infos.id)
              .replace('{name}', infos.name)
              .replace('{comment}', infos.comment || "&nbsp;")
+             .replace('%7Bimage%7D', infos.image)
              .replace('{image}', infos.image)
              .replace('{version}', infos.version);
  
-            if (infos.file.startsWith("http"))
-                html = html.replace(/{file}/g, infos.file);
-            else
-                html = html.replace(/{file}/g, "https://build.yunohost.org/"+infos.file);
+            if (!infos.file.startsWith("http"))
+                infos.file="https://build.yunohost.org/"+infos.file;
+            html = html.replace(/%7Bfile%7D/g, infos.file).replace(/{file}/g, infos.file);
    
             if ((typeof(infos.has_sig_and_sums) !== 'undefined') && infos.has_sig_and_sums == false)
             {
@@ -563,7 +565,10 @@ Allez dans `Utilisateurs > Nouvel utilisateur`.
 ```
 yunohost user create johndoe
 ```
-TODO : copypasta an actual shell session will all info asked etc..
+
+[figure class="nomargin" caption="Aperçu de l'interface de création utilisateur en ligne de commande"]
+![Création d'un utilisateur en ligne de commande](image://create-first-user-cli.png?resize=100%&class=inline)
+[/figure]
 
 [/ui-tab]
 [/ui-tabs]
@@ -610,7 +615,7 @@ Pour plus d'instructions détaillées, ou pour en savoir plus à propos des cert
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
 ```
-yunohost domain cert-install
+yunohost domain cert install
 ```
 [/ui-tab]
 [/ui-tabs]

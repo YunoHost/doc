@@ -215,6 +215,8 @@ Here are some VPS providers supporting YunoHost natively :
 {% if at_home %}
 ## [fa=download /] Download the {{image_type}} image
 
+! I link alle immagini sono attualmente interrotti. Mentre stiamo lavorando al problema, potete trovarli direttamente su https://build.yunohost.org/
+
 {% if virtualbox or regular %}
 !!! If your host OS is 32 bits, be sure to download the 32-bit image.
 {% elseif arm_unsup %}
@@ -228,7 +230,7 @@ Here are some VPS providers supporting YunoHost natively :
 <div id="cards-list">
 </div>
 </div>
-<script type="text/template" id="image-template">
+<template id="image-template">
 <div id="{id}" class="card panel panel-default">
         <div class="panel-body text-center pt-2">
             <h3>{name}</h3>
@@ -245,7 +247,7 @@ Here are some VPS providers supporting YunoHost natively :
             <a href="{file}" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=download] Download <small>{version}</small></a>
         </div>
 </div>
-</script>
+</template>
 <script>
 var hardware = "{{ hardware|escape('js') }}";
 /*
@@ -264,13 +266,13 @@ $(document).ready(function () {
              .replace('{id}', infos.id)
              .replace('{name}', infos.name)
              .replace('{comment}', infos.comment || "&nbsp;")
+             .replace('%7Bimage%7D', infos.image)
              .replace('{image}', infos.image)
              .replace('{version}', infos.version);
  
-            if (infos.file.startsWith("http"))
-                html = html.replace(/{file}/g, infos.file);
-            else
-                html = html.replace(/{file}/g, "https://build.yunohost.org/"+infos.file);
+            if (!infos.file.startsWith("http"))
+                infos.file="https://build.yunohost.org/"+infos.file;
+            html = html.replace(/%7Bfile%7D/g, infos.file).replace(/{file}/g, infos.file);
    
             if ((typeof(infos.has_sig_and_sums) !== 'undefined') && infos.has_sig_and_sums == false)
             {
@@ -556,7 +558,10 @@ Go in Users > Add
 ```
 yunohost user create johndoe
 ```
-TODO : copypasta an actual shell session will all info asked etc..
+
+[figure class="nomargin" caption="Anteprima dell'interfaccia utente di creazione dell'utente CLI"]
+![creazione dell'utente CLI](image://create-first-user-cli.png?resize=100%&class=inline)
+[/figure]
 
 [/ui-tab]
 [/ui-tabs]
@@ -603,7 +608,7 @@ For more detailled instructions, or to lean more about SSL/TLS certificates, see
 [/ui-tab]
 [ui-tab title="From the command line"]
 ```
-yunohost domain cert-install
+yunohost domain cert install
 ```
 [/ui-tab]
 [/ui-tabs]

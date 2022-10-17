@@ -19,7 +19,7 @@ routes:
 [/center]
 
 !!! **Note:** this room is available via
-!!! - Matrix (`#yunohost:libera.chat` [using Element](https://riot.im/app/#/room/#yunohost:libera.chat?target=_blank))
+!!! - Matrix (`#yunohost:matrix.org` [using Element](https://riot.im/app/#/room/#yunohost:matrix.org?target=_blank))
 !!! - IRC (`#yunohost` on libera.chat, [using kiwiirc](https://web.libera.chat/#yunohost))
 !!! - XMPP (`support@conference.yunohost.org`)
 

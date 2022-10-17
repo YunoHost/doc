@@ -110,6 +110,8 @@ Il n'existe pas de mécanisme pour exclure d'une sauvegarde au format YunoHost d
 ### Éviter de sauvegarder certains dossiers du `/home`
 Si besoin, vous pouvez spécifier que certains dossiers `home` d'utilisateurs ou utilisatrices ne soient pas sauvegardés par la commande `yunohost backup`, en créant un fichier vide nommé `.nobackup` à l'intérieur.
 
+Attention ce mécanisme ne fonctionne que pour les **sous-dossiers de premier niveau** du `/home`, comme par exemple `/home/user1` ou `/home/yunohost.multimedia` . Cela ne fonctionne pas pour les autres dossiers ou sous-dossiers, comme par exemple `/home/user1/grosdossier`.
+
 ### Ne pas sauvegarder les grosses quantités de données
 
 Certaines apps comme Nextcloud sont potentiellement rattachées à des quantités importantes de données. Il est possible de ne pas les sauvegarder par défaut. Dans ce cas, on dit que l'app "sauvegarde uniquement le core" (de l'app).  

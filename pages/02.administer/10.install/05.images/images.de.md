@@ -20,13 +20,13 @@ N B : Auch wenn das Image nicht der neuesten Version von YunoHost entspricht, k√
 </div>
 </div>
 
-<script type="text/template" id="image-template">
-<div id="{id}" class="card panel panel-default">
+<template id="image-template">
+    <div id="{id}" class="card panel panel-default">
         <div class="panel-body text-center">
             <h3>{name}</h3>
             <div class="card-comment">{comment}</div>
             <div class="card-desc text-center">
-<img src="/user/images/{image}" height=100 style="vertical-align:middle">
+                <img src="/user/images/{image}" height=100 style="vertical-align:middle">
             </div>
         </div>
         <div class="annotations flex-container">
@@ -34,22 +34,20 @@ N B : Auch wenn das Image nicht der neuesten Version von YunoHost entspricht, k√
             <div class="flex-child annotation"><a href="{file}.sig">[fa=tag] Signature</a></div>
         </div>
         <div class="btn-group" role="group">
-            <a href="{file}" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=download] Download <small>{version}</small></a>
+            <a href="{file}" target="_BLANK" type="button" class="btn btn-info col-sm-12"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Download <small>{version}</small></a>
         </div>
-</div>
-</script>
+    </div>
+</template>
+
 
 <script>
 /*
 ###############################################################################
-  Script that loads the infos from JavaScript and creates the corresponding
+  Script that loads the infos from javascript and creates the corresponding
   cards
 ###############################################################################
 */
 $(document).ready(function () {
-
-    $(".javascriptDisclaimer").hide();
-
     console.log("in load");
     $.getJSON('https://build.yunohost.org/images.json', function (images) {
         $.each(images, function(k, infos) {
@@ -58,22 +56,22 @@ $(document).ready(function () {
              .replace('{id}', infos.id)
              .replace('{name}', infos.name)
              .replace('{comment}', infos.comment || "&nbsp;")
+             .replace('%7Bimage%7D', infos.image)
              .replace('{image}', infos.image)
              .replace('{version}', infos.version);
-
-            if (infos.file.startsWith("http"))
-                html = html.replace(/{file}/g, infos.file);
-            else
-                html = html.replace(/{file}/g, "https://build.yunohost.org/"+infos.file);
+            if (!infos.file.startsWith("http"))
+                infos.file="https://build.yunohost.org/"+infos.file;
+            html = html.replace(/%7Bfile%7D/g, infos.file).replace(/{file}/g, infos.file);
 
             if ((typeof(infos.has_sig_and_sums) !== 'undefined') && infos.has_sig_and_sums == false)
             {
                 var $html = $(html);
                 $html.find(".annotations").html("&nbsp;");
                 html = $html[0];
-            }
+            } 
             $('#cards-list').append(html);
         });
     });
 });
 </script>
+

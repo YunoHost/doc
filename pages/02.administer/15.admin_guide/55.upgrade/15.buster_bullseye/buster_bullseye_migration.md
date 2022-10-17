@@ -17,6 +17,8 @@ This page is dedicated to help you migrating an instance from YunoHost 4.4.x (ru
 
 - Please don't rush into thinking that you should need to reinstall your system from scratch thinking it would be "simpler" (sigh). (A common attitude is to be willing to reinstall a server at the slightest complication...) Instead, if you happen to run into issues, we encourage you to try to investigate and understand what's going on and [reach for help on the chat and the forum](/help).
 
+- **You should watch the known issues at the bottom of this page, to be sure your migrations will work properly.**
+
 ## Migration procedure
 
 #### From the webadmin
@@ -28,7 +30,7 @@ After upgrading to 4.4.x, go to Tools > Migrations to access the migrations inte
 After upgrading to 4.4.x, run : 
 
 ```bash
-sudo yunohost tools migrations migrate
+sudo yunohost tools migrations run
 ```
 
 then read carefully and accept the disclaimer.
@@ -54,7 +56,7 @@ For this, go in Diagnosis (category Base system) or look at the footer of the we
 #### Run the migration to repair your python app
 After upgrading, your python apps should be unavailable cause their virtual env need to be rebuild.
 
-To do that you can run the pending migrations in `Webadmin > Update`. The apps below won't be automatically repaired, you need to force upgrade them manually instead with `yunohost app upgrade -f APP`.
+To do that you can run the pending migrations in `Webadmin > Update`. The apps below won't be automatically repaired, you need to force upgrade them manually instead with `yunohost app upgrade -F APP`.
 
 Apps which won't be automatically repaired and need a force upgrade:
  * calibreweb
@@ -83,10 +85,40 @@ If the service php7.3-fpm appears to be dead, you should upgrade your PHP apps l
 
 Test that your applications are working. If they aren't, you should try to upgrade them (it is also a good idea to upgrade them even if they are working anyway).
 
-If your app is broken and you were already with the last version, you can rerun the upgrade thanks to the `-f` option:
+If your app is broken and you were already with the last version, you can rerun the upgrade thanks to the `-F` option:
 ```
 yunohost app upgrade --force APP_NAME
 ```
 
-## Current known (minor) issues after the migration
+## Current known issues after the migration
+
+### Can't run the migration due to `libc6-dev : Breaks: libgcc-8-dev issue`.
+Note: This issue should be resolved in yunohost_version: 4.4.2.13
+You have an app that depends of build-essential package.
+
+See this [solution](https://forum.yunohost.org/t/migration-to-11-wont-start-libc6-dev-breaks-libgcc-8-dev/20617/42) to fix it manually
+
+### DNSmasq is not running anymore
+
+We haven't yet a solution for this issues.
+
+### No ethernet connexion after a reboot after the migration on a rpi 4
+
+! If you have not yet rebooted your server, don't do it we are searching a solution, to avoid the use of a keyboard and screen.
+
+We found this in Rpi documentation
+```
+when the dhcpcd5 package is updated to the latest version (1:8.1.2-1+rpt1 -> 1:8.1.2-1+rpt2), the Raspberry Pi will fail to obtain a DHCP IP address following the next reboot or startup. This problem can be avoided by disabling and re-enabling the "System Options -> Network at Boot" option using the latest raspi-config after the dhcpcd5 package has been updated and prior to the system being shutdown or rebooted
+```
+
+If you are using a rpi 4 (or maybe 3), see this [solution](https://forum.yunohost.org/t/aucun-acces-a-internet-suite-a-migration-4-4-to-11-depuis-raspberry-pi-4-pi-400/20652/17)
+
+### Restore ynh4 backup onto a fresh ynh11
+
+If you can't restore your app but your system has been restored, you probably should use the regen conf to fix the nginx issues:
+```
+yunohost tools regenconf nginx --force
+```
+
+After what you should be able to restore your apps. Don't forget to force upgrade theme if you have 502 errors.
 
