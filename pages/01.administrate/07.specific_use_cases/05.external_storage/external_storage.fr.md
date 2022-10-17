@@ -41,17 +41,17 @@ Ci-dessous, une explication de certains chemins qui peuvent prendre du poids ave
 
 | Chemin | Contenu  | Conseils |
 |--------|---|---|
-| /home                       | Dossiers utilisateurs accessibles via SFTP | Déplaçable sur un disque dur  |
-| /home/yunohost.backup       | Sauvegardes YunoHost  | Selon votre stratégie de sauvegarde, il peut être préférable de placer ce dossier sur un disque distinct de celui où se trouvent vos données ou vos bases de données |
-| /home/yunohost.app          | Données lourdes des applications yunohost (nextcloud, matrix...) | Déplaçable sur un disque dur |
-| /home/yunohost.multimedia   | Données lourdes partagées entre plusieurs applications | Déplaçable sur un disque dur |
-| /var/lib/mysql              | Base de données utilisées par les applications | A laisser idéalement sur le SSD pour des raisons de performances |
-| /var/lib/postgresql         | Base de données utilisées par les applications | A laisser idéalement sur le SSD pour des raisons de performances  |
-| /var/mail                   | Mails des usagers  | Déplaçable sur un disque dur |
-| /var/www                    | Programme des applications web installées  | A laisser idéalement sur le SSD pour des raisons de performances |
-| /var/log                    | Journaux des évènements (pages consultées, tentative de connexion, erreurs matériels...). | Ce dossier ne devrait pas prendre trop de place, si il gonfle rapidement, il peut s'agir d'une erreur inscrite en boucle qu'il est préférable de résoudre  |
-| /opt                        | Programme et dépendance de certaines applications YunoHost. | A laisser idéalement sur le SSD pour des raisons de performances. Pour les applications nodejs il est possible de faire un peu de nettoyage des versions non utilisées.  |
-| /boot                       | Noyaux et fichiers de démarrage | Ne pas déplacer sauf si vous savez ce que vous faites. Il peut arriver que trop de noyaux soient conservés, il est possible de faire du nettoyage. |
+| `/home`                       | Dossiers utilisateurs accessibles via SFTP | Déplaçable sur un disque dur  |
+| `/home/yunohost.backup`       | Sauvegardes YunoHost  | Selon votre stratégie de sauvegarde, il peut être préférable de placer ce dossier sur un disque distinct de celui où se trouvent vos données ou vos bases de données |
+| `/home/yunohost.app`          | Données lourdes des applications yunohost (nextcloud, matrix...) | Déplaçable sur un disque dur |
+| `/home/yunohost.multimedia`   | Données lourdes partagées entre plusieurs applications | Déplaçable sur un disque dur |
+| `/var/lib/mysql`              | Base de données utilisées par les applications | A laisser idéalement sur le SSD pour des raisons de performances |
+| `/var/lib/postgresql`         | Base de données utilisées par les applications | A laisser idéalement sur le SSD pour des raisons de performances  |
+| `/var/mail`                   | Mails des usagers  | Déplaçable sur un disque dur |
+| `/var/www`                    | Programme des applications web installées  | A laisser idéalement sur le SSD pour des raisons de performances |
+| `/var/log`                    | Journaux des évènements (pages consultées, tentative de connexion, erreurs matériels...). | Ce dossier ne devrait pas prendre trop de place, si il gonfle rapidement, il peut s'agir d'une erreur inscrite en boucle qu'il est préférable de résoudre  |
+| `/opt`                        | Programme et dépendance de certaines applications YunoHost. | A laisser idéalement sur le SSD pour des raisons de performances. Pour les applications nodejs il est possible de faire un peu de nettoyage des versions non utilisées.  |
+| `/boot`                       | Noyaux et fichiers de démarrage | Ne pas déplacer sauf si vous savez ce que vous faites. Il peut arriver que trop de noyaux soient conservés, il est possible de faire du nettoyage. |
 
 ## 2. Connecter et identifier le disque
 
