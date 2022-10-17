@@ -129,7 +129,7 @@ mount /dev/VOTRE_DISQUE1 /mnt/hdd
 
 ## 5. Monter un dossier de /mnt/hdd sur un des dossiers dont on veut déplacer les données
 
-Ici on va considérer que vous souhaitez déplacer les grosses données des applications qui se trouvent dans /home/yunohost.app ainsi que les mails sur votre disque dur.
+Ici on va considérer que vous souhaitez déplacer les grosses données des applications qui se trouvent dans `/home/yunohost.app` ainsi que les mails sur votre disque dur.
 
 ### 5.1 Création des sous-dossiers sur le disque
 Pour commencer, on crée un dossier dans le disque dur
