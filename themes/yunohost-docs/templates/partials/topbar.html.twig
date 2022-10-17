@@ -1,0 +1,27 @@
+<div id="top-bar">
+  {% if  github_link_position == 'top' %}
+    <div id="top-github-link">
+      {% include 'partials/github-link.html.twig' %}
+    </div>
+  {% endif %}
+
+  <div id="navigation">
+    {% if theme_var('github.link') %}
+      {% include 'partials/github-link.html.twig' %}
+    {% endif %}
+    {% include 'partials/darkmodeswitcher.html.twig' %}
+    {% if not progress.isFirst(page.path) %}
+      <a class="nav-prev tooltip tooltip-bottom" data-tooltip="Previous Page [&larr;]" href="{{ progress.nextSibling(page.path).url }}"> <i class="fa fa-angle-left"></i></a>
+    {% else %}
+      <span class="disabled"><i class="fa fa-angle-left"></i></span>
+    {% endif %}
+    {% if not progress.isLast(page.path) %}
+      <a class="nav-next tooltip tooltip-bottom" data-tooltip="Next Page [&rarr;]" href="{{ progress.prevSibling(page.path).url }}"><i class="fa fa-angle-right"></i></a>
+    {% else %}
+      <span class="disabled"><i class="fa fa-angle-right"></i></span>
+    {% endif %}
+  </div>
+  <div class="progress"></div>
+</div>
+
+
