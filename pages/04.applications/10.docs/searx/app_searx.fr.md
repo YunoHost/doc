@@ -15,9 +15,9 @@ routes:
 
 - [Liens utiles](#liens-utiles)
 
-Searx est un métamoteur de recherche libre et décentralisé. Les requêtes effectuées ne sont pas enregistrées par Searx afin de protéger la vie privée des utilisateur·rice·s.
-En tant que métamoteur, searx collecte et affiche les résultats issus de plusieurs dizaines de moteurs de recherche. Les moteurs utilisés (ou non) sont paramétrables dans les préférences.
-En tant que logiciel décentralisé, searx est installé sur différentes instances (différents serveurs). En France, des associations comme Framasoft, Aquilenet ou La Quadrature du Net l'ont installé sur leurs serveurs.
+*Searx* est un métamoteur de recherche libre et décentralisé. Les requêtes effectuées ne sont pas enregistrées par Searx afin de protéger la vie privée des utilisateur·rice·s.
+En tant que métamoteur, Searx collecte et affiche les résultats issus de plusieurs dizaines de moteurs de recherche. Les moteurs utilisés (ou non) sont paramétrables dans les préférences.
+En tant que logiciel décentralisé, Searx est installé sur différentes instances (différents serveurs). En France, des associations comme Framasoft, Aquilenet ou La Quadrature du Net l'ont installé sur leurs serveurs.
 
 ## Liens utiles
 

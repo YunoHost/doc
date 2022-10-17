@@ -19,18 +19,6 @@ Source : [spip.net](https://www.spip.net/fr_rubrique91.html)
 * Support multilingue
 * Support LDAP
 
-#### Installation
-
-```bash
-$ sudo yunohost app install https://github.com/YunoHost-Apps/spip_ynh.git
-```
-
-#### Mise à jour
-
-```bash
-$ sudo yunohost app upgrade --verbose spip -u https://github.com/YunoHost-Apps/spip_ynh.git
-```
-
 #### Utilisation
 
 Accéder à l'administration du site en écrivant l'adresse suivante dans votre navigateur.

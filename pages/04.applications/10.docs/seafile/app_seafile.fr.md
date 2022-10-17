@@ -46,6 +46,7 @@ Seafile ne distribue pas de binaire pour les architectures génériques armhf ma
 #### Installation
 
 Depuis la ligne de commande :
+
 ```
 yunohost app install seafile
 ```
@@ -62,6 +63,7 @@ yunohost app setting synapse disable_backup_before_upgrade -v 1
 Après cela, les paramètres seront appliqués pour **toutes** les prochaines mises à jour.
 
 En ligne de commande :
+
 ```
 yunohost app upgrade seafile
 ```
@@ -93,10 +95,6 @@ En raison de la fonctionnalité de sauvegarde du noyau uniquement, le répertoir
 Depuis maintenant, il est possible de changer le domaine ou l'url de seafile.
 
 Pour cela lancez : `yunohost app change-url seafile -d new_domain.tld -p PATH new_path`.
-
-##### TODO
-
-- Trouvez un moyen de résoudre le problème https://github.com/YunoHost-Apps/seafile_ynh/issues/5
 
 ## Liens utiles
 

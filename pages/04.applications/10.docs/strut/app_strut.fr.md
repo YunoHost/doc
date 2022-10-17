@@ -15,7 +15,7 @@ routes:
 
 - [Liens utiles](#liens-utiles)
 
-Strut est un logiciel de création en ligne de diaporamas. Il permet de créer des diapositives simples en incluant textes, images, formes, sites web ou vidéos, ainsi que la disposition des diapos. Il utilise la librairie Impress.js et vous permet de sauvegarder votre projet en local ou de l'exporter en ZIP contenant les fichiers sources et le HTML.
+*Strut* est un logiciel de création en ligne de diaporamas. Il permet de créer des diapositives simples en incluant textes, images, formes, sites web ou vidéos, ainsi que la disposition des diapos. Il utilise la librairie Impress.js et vous permet de sauvegarder votre projet en local ou de l'exporter en ZIP contenant les fichiers sources et le HTML.
 
 ## Liens utiles
 

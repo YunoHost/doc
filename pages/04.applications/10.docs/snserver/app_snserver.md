@@ -13,7 +13,7 @@ routes:
 
 - [Useful links](#useful-links)
 
-*Standard Notes Server* is an end-to-end encrypted note-taking app for digitalists and professionals. Capture your notes, files, and life’s work all in one secure place.
+*Standard Notes Server* is an end-to-end encrypted note-taking app. Capture your notes, files, and life’s work all in one secure place.
 
 ### Disclaimers / important information
 

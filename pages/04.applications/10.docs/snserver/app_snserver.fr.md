@@ -13,7 +13,7 @@ routes:
 
 - [Liens utiles](#liens-utiles)
 
-*Standard Notes Server* est une application de prise de notes chiffrée de bout en bout pour les numériciens et les professionnels. Capturez vos notes, vos fichiers et le travail de votre vie en un seul endroit sécurisé.
+*Standard Notes Server* est une application de prise de notes chiffrée de bout en bout. Capturez vos notes, vos fichiers et le travail de votre vie en un seul endroit sécurisé.
 
 ### Avertissements / informations importantes
 

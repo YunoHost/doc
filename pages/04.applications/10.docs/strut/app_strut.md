@@ -15,8 +15,7 @@ routes:
 
 - [Useful links](#useful-links)
 
-Strut is an online slideshow creation software. It allows you to create simple slides by including text, images, shapes, websites or videos, as well as the layout of the slides. It uses the Impress.js library and
-allows you to save your project locally or export it as a ZIP file containing the source files and HTML.
+*Strut* is an online slideshow creation software. It allows you to create simple slides by including text, images, shapes, websites or videos, as well as the layout of the slides. It uses the Impress.js library and allows you to save your project locally or export it as a ZIP file containing the source files and HTML.
 
 ## Useful links
 

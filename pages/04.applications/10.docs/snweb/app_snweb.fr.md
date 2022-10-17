@@ -22,9 +22,9 @@ routes:
 ### Avertissements / informations importantes
 
 * Pas d'authentification unique ou d'intégration LDAP.
-* L'application nécessite jusqu'à 1500MB de RAM pour être installée.
+* L'application nécessite jusqu'à 1500 MB de RAM pour être installée.
 * L'application nécessite au moins 100 Mo de RAM pour fonctionner correctement.
-* L'application nécessite environ 3500MB de disque.
+* L'application nécessite environ 3500 MB de disque.
 
 * Un domaine dédié est nécessaire si vous voulez utiliser les extensions.
     * notes.votre-domaine.tld/ -> les extensions fonctionnent.

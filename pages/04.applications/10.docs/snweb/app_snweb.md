@@ -22,9 +22,9 @@ routes:
 ### Disclaimers / important information
 
 * No single-sign on or LDAP integration
-* The app requires up 1500MB of RAM to install
-* The app requires at least 100MB of RAM to work properly.
-* The app requires around 3500MB of disk.
+* The app requires up 1500 MB of RAM to install
+* The app requires at least 100 MB of RAM to work properly.
+* The app requires around 3500 MB of disk.
 
 * A dedicated domain is requierd if you want to use extensions.
     * notes.your-domain.tld/ -> Extensions are working
