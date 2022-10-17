@@ -594,7 +594,7 @@ This hook is called several times with different actions keywords (pre and post 
 
 ##### Environment variables
 
- - YNH_DOMAINS: The list of domains managed by Yunohost separated by comma
+ - YNH_DOMAINS: The list of domains managed by YunoHost separated by comma
  - YNH_MAIN_DOMAINS: The list of main domains separated by comma
 
 ##### Positionnal arguments
