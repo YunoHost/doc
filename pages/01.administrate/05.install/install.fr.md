@@ -413,7 +413,6 @@ Démarrez votre machine virtuelle après avoir sélectionné l'image YunoHost.
 ## [fa=rocket /] Lancer l’installation graphique
 
 !! N.B. : L'installation effacera totalement les données sur votre disque dur !
-Vous devriez voir un écran comme ça :
 
 Votre écran devrait ressembler à la capture ci-dessous :
 
