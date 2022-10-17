@@ -441,7 +441,7 @@ Avec l'installation en mode expert, vous avez plus de possibilités notamment co
   2. Sélectionnez votre langue, votre localisation, votre agencement de clavier et éventuellement votre timezone.
   3. Partitionner vos disques. C'est à cette étape que vous pouvez configurer un RAID ou chiffrer tout ou partie du serveur.
   4. Indiquez un éventuel proxy HTTP à utiliser pour l'installation des paquets
-  5. Indiquez sur quelles volumes grub doit être installé
+  5. Indiquez sur quels volumes grub doit être installé
 
 ### A propos du partitionnement
 
