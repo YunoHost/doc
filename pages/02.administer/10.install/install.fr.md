@@ -201,7 +201,6 @@ Cependant, ces images communautaires existent et sont disponibles sur Docker Hub
 {% if vps_ynh %}
 ## Fournisseurs de VPS YunoHost
 
-Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 
 [div class="flex-container"]
