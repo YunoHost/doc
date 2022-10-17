@@ -42,17 +42,17 @@ Below is an explanation of some of the paths that can take up weight with some c
 
 | Paths | Contents | Tips |
 |--------|---|---|
-| /home | User folders accessible via SFTP | Moveable to a hard disk |
-| /home/yunohost.backup       | YunoHost's backups  | Depending on your backup strategy, you may want to place this folder on a separate drive from your data or databases.
-| /home/yunohost.app          |Heavy data from yunohost applications (nextcloud, matrix...)|Moveable to a hard disk
-| /home/yunohost.multimedia | Heavy data shared between several applications | Moveable to a hard disk |
-| /var/lib/mysql | Database used by applications | Ideally leave on SSD for performance reasons |
-| /var/lib/postgresql | Database used by applications | Ideally leave on SSD for performance reasons | /var/mail
-| /var/mail | User e-mails | Movable to a hard disk |
-/var/www | Program of installed web applications | Ideally leave on SSD for performance reasons |
-| /var/log | Event logs (pages consulted, connection attempts, hardware errors...). | This directory should not take up too much space, if it grows quickly, it may be a looping error that should be resolved.
-| /opt | Program and dependency of some YunoHost applications. | Ideally leave it on the SSD for performance reasons. For nodejs applications it is possible to do some cleanup of unused versions.
-| /boot | Kernels and boot files | Do not move unless you know what you are doing. It can happen that too many kernels are kept, it is possible to do some cleanup.
+| `/home` | User folders accessible via SFTP | Moveable to a hard disk |
+| `/home/yunohost.backup`       | YunoHost's backups  | Depending on your backup strategy, you may want to place this folder on a separate drive from your data or databases.
+| `/home/yunohost.app`          |Heavy data from yunohost applications (nextcloud, matrix...)|Moveable to a hard disk
+| `/home/yunohost.multimedia` | Heavy data shared between several applications | Moveable to a hard disk |
+| `/var/lib/mysql` | Database used by applications | Ideally leave on SSD for performance reasons |
+| `/var/lib/postgresql` | Database used by applications | Ideally leave on SSD for performance reasons | /var/mail
+| `/var/mail` | User e-mails | Movable to a hard disk |
+| `/var/www` | Program of installed web applications | Ideally leave on SSD for performance reasons |
+| `/var/log` | Event logs (pages consulted, connection attempts, hardware errors...). | This directory should not take up too much space, if it grows quickly, it may be a looping error that should be resolved.
+| `/opt` | Program and dependency of some YunoHost applications. | Ideally leave it on the SSD for performance reasons. For nodejs applications it is possible to do some cleanup of unused versions.
+| `/boot` | Kernels and boot files | Do not move unless you know what you are doing. It can happen that too many kernels are kept, it is possible to do some cleanup.
 
 
 ## 2. Connect and identify the disk
