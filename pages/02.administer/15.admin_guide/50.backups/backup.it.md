@@ -83,13 +83,25 @@ Una soluzione alternativa è quella di installare Nextcloud o un'applicazione si
 Un'altra soluzione è quella di usare `scp` (un programma che si basa su [`ssh`](/ssh)) per copiare i file fra due computer usando la riga di comando. In questo modo usando un computer con GNU/Linux potete copiare uno specifico backup con questo comando:
 
 ```bash
-scp admin@your.domain.tld:/home/yunohost.backup/archives/<archivename>.tar.gz ./
+scp admin@your.domain.tld:/home/yunohost.backup/archives/<archivename>.tar ./
+```
+
+Se la porta ssh è diversa da 22 :
+
+```bash
+scp -P porta_ssh admin@your.domain.tld:/home/yunohost.backup/archives/<archivename>.tar ./
 ```
 
 Allo stesso modo potete copiare da un computer al vostro server con questo comando:
 
 ```bash
-scp /path/to/your/<archivename>.tar.gz admin@your.domain.tld:/home/yunohost.backup/archives/
+scp /path/to/your/<archivename>.tar admin@your.domain.tld:/home/yunohost.backup/archives/
+```
+
+Se la porta ssh è diversa da 22 :
+
+```bash
+scp -P porta_ssh /path/to/your/<archivename>.tar admin@your.domain.tld:/home/yunohost.backup/archives/
 ```
 
 ## Ripristinare i backup
