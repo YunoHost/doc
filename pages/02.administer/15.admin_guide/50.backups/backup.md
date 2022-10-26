@@ -90,6 +90,13 @@ It is possible to use `scp` (a program based on [`ssh`](/ssh)) to copy files bet
 ```bash
 scp admin@your.domain.tld:/home/yunohost.backup/archives/<archive_name>.tar ./
 ```
+
+If your SSH port is different from 22
+
+```bash
+scp -P ssh_port admin@your.domain.tld:/home/yunohost.backup/archives/<archive_name>.tar ./
+```
+
 [/ui-tab]
 [/ui-tabs]
 
@@ -150,8 +157,15 @@ By default, backups are to be placed in `/home/yunohost.backup/archives/`.
 You can upload a backup from a machine to your server with :
 
 ```bash
-scp /path/to/your/<archive_name>.tar.gz admin@your.domain.tld:/home/yunohost.backup/archives/
+scp /path/to/your/<archive_name>.tar admin@your.domain.tld:/home/yunohost.backup/archives/
 ```
+
+If your SSH port is different from 22
+
+```bash
+scp -P ssh_port /path/to/your/<archive_name>.tar admin@your.domain.tld:/home/yunohost.backup/archives/
+```
+
 [/ui-tab]
 [/ui-tabs]
 
