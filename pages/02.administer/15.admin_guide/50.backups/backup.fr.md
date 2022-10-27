@@ -87,8 +87,15 @@ Les commandes `yunohost backup list` et `yunohost backup info <nom_d'archive>` p
 Il est possible d'utiliser `scp` (un programme basé sur [`ssh`](/ssh)) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous GNU/Linux, vous pouvez utiliser la commande suivante pour télécharger une archive :
 
 ```bash
-scp admin@votre.domaine.tld:/home/yunohost.backup/archives/<nom_darchive>.tar.gz ./
+scp admin@votre.domaine.tld:/home/yunohost.backup/archives/<nom_darchive>.tar ./
 ```
+
+En cas de port SSH autre que 22 :
+
+```bash
+scp -P port_ssh admin@votre.domaine.tld:/home/yunohost.backup/archives/<nom_darchive>.tar ./
+```
+
 [/ui-tab]
 [/ui-tabs]
 
@@ -152,8 +159,15 @@ Par défaut, les sauvegardes sont à placer dans `/home/yunohost.backup/archives
 Vous pouvez téléverser une sauvegarde depuis une machine vers votre serveur avec :
 
 ```bash
-scp /path/to/your/<nom_d'archive>.tar.gz admin@your.domain.tld:/home/yunohost.backup/archives/
+scp /path/to/your/<nom_d'archive>.tar admin@your.domain.tld:/home/yunohost.backup/archives/
 ```
+
+En cas de port SSH autre que 22 :
+
+```bash
+scp -P port_ssh /path/to/your/<nom_d'archive>.tar admin@your.domain.tld:/home/yunohost.backup/archives/
+```
+
 [/ui-tab]
 [/ui-tabs]
 
