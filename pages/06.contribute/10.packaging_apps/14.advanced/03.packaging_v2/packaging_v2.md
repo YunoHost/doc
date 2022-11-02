@@ -61,3 +61,9 @@ This will edit the file in place and you should then carefully review and iterat
     - `doc/notifications/pre_upgrade.md` : a note to be displayed prior to any upgrade of this app.
     - `doc/notifications/pre_upgrade.d/{version}.md` : a note to be displayed prior to a specific version upgrade.
     - `doc/notifications/post_upgrade.md` : a note to be displayed after the app upgrade. For example in the context of Nextcloud, the fact that you may need to re-enable custom modules manually ?
+ - **Replace some historical names with more sensible ones**, or homogenize some practices:
+    - `final_path` is now `install_dir` (this migration should be automatically handled by the core and the `convert_app_to_packaging_v2.py` script)
+    - `path` is now always loaded as `$path`, no funky `$path_url`-but-it-is-saved-as-`path` anymore (this migration should be automatically handled by the core and the `convert_app_to_packaging_v2.py` script)
+    - `mysqldbpwd` and `psqlpwd` or whatever are now always saved as `db_pwd` (cf the `database` resource) (this migration should be automatically handled by the core and the `convert_app_to_packaging_v2.py` script)
+    - ports settings are now always named either `$port` or `$port_foo_bar` instead of `$foo_bar_port` (cf the `port` resource) (this migration should be automatically handled by the core and the `convert_app_to_packaging_v2.py` script)
+    - the install dir is to be set to `/var/www/$app` by default for web apps (or can be changed to `/opt/????` for non-webapps). Note that YunoHost will **automatically move** the old install dir to the new `install_dir` during the corresponding upgrade.
