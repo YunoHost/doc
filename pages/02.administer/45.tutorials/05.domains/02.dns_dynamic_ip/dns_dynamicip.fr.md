@@ -33,6 +33,7 @@ Voici des sites qui proposent un service de DynDNS gratuitement :
 * [ChangeIP](https://changeip.com)
 * [DynDNS (en italien)](https://dyndns.it)
 * [Duck DNS](https://www.duckdns.org/)
+* [ydns.io(https://ydns.io/)](en anglais, gratuit)
 
 Créer un compte chez l’un d’eux.
 
