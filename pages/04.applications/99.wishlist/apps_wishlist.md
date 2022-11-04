@@ -281,6 +281,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [sonerezh](https://www.sonerezh.bzh) | Stream music from everywhere |  | [Package Draft](https://github.com/YunoHost-Apps/sonerezh_ynh) |
 | [SparkleShare (Dazzle)](https://www.sparkleshare.org/) | SparkleShare host  | [Upstream](https://github.com/hbons/Dazzle) |  |
 | sphinx |  | [Upstream](https://github.com/sphinx-doc/sphinx) | [Package Draft](https://github.com/YunoHost-Apps/sphinx_ynh) |
+| Spreed standalone signaling server (Nextcloud Talk HPB) |  | [Upstream](https://github.com/strukturag/nextcloud-spreed-signaling) |  | 
 | [Stackedit](https://stackedit.io) |  | [Upstream](https://github.com/benweet/stackedit) |  |
 | [Storj](https://www.storj.io/node) |  | [Upstream](https://github.com/storj/storj) |  |
 | [Strapi](https://strapi.io) | Open source Node.js Headless CMS to easily build customisable APIs | [Upstream](https://github.com/strapi/strapi) |  |
