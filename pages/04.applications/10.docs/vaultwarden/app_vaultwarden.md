@@ -22,7 +22,7 @@ routes:
 
 Vaultwarden è un gestore di password gratuito con funzioni a pagamento, con licenza AGPL, che permette di generare e custodire password in maniera sicura. Una singola password, chiamata 'master password', protegge l'accesso alla cassaforte. Il progetto Bitwarden è stato iniziato nel 2016 da Kyle Spearrin, un ingegnere software.
 
-Il programma è disponibile sui principali sistemi operativi (GNU/Linux, Windows, MacOS, iOS, Android e da riga di comando), e come estensione per i browser. È, inoltre, possibile accedere alle password dal sito.[¹](#fonti)
+Il programma è disponibile sui principali sistemi operativi (GNU/Linux, Windows, macOS, iOS, Android e da riga di comando), e come estensione per i browser. È, inoltre, possibile accedere alle password dal sito.[¹](#fonti)
 
 ## Configurazione
 
