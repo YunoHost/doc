@@ -9,47 +9,52 @@ routes:
     - '/app_bitwarden'
 ---
 
-![Bitwarden's logo](image://bitwarden_logo.png?width=80)
+![Logo di Bitwarden](image://bitwarden_logo.png?width=80)
 
-[![Install Vaultwarden with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=vaultwarden) [![Integration level](https://dash.yunohost.org/integration/vaultwarden.svg)](https://dash.yunohost.org/appci/app/vaultwarden)
+[![Installa Vaultwarden con YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=vaultwarden) [![Livello di integrazione](https://dash.yunohost.org/integration/vaultwarden.svg)](https://dash.yunohost.org/appci/app/vaultwarden)
 
-### Index
+### Indice
 
-- [Configuration](#configuration)
-- [Limitations with YunoHost](#limitations-with-yunohost)
-- [Customer Applications](#customer-applications)
-- [Useful links](#useful-links)
+- [Configurazione](#configurazione)
+- [Limiti con YunoHost](#limiti-con-yunohost)
+- [Applicazioni per utenti](#applicazioni-per-utenti)
+- [Collegamenti utili](#collegamenti-utili)
 
-Vaultwarden is a freemium libre password manager under AGPL license, allowing generation and storage of passwords in a secure way. These are protected by a single password called the "master password". It was created in 2016 by Kyle Spearrin, a software architect.
+Vaultwarden è un gestore di password gratuito con funzioni a pagamento, con licenza AGPL, che permette di generare e custodire password in maniera sicura. Una singola password, chiamata 'master password', protegge l'accesso alla cassaforte. Il progetto Bitwarden è stato iniziato nel 2016 da Kyle Spearrin, un ingegnere software.
 
-The software is available for most operating systems (GNU/Linux, Windows, macOS, iOS, Android and command-line), and as a web browser plug-in. It is also possible to view passwords from a website.[¹](#sources)
+Il programma è disponibile sui principali sistemi operativi (GNU/Linux, Windows, MacOS, iOS, Android e da riga di comando), e come estensione per i browser. È, inoltre, possibile accedere alle password dal sito.[¹](#fonti)
 
-## Configuration
+## Configurazione
 
-To configure the app, go to this address: `sub.domain.tld/admin`
+Per configurare l'applicazione, visita: `sotto.dominio.tld/admin`
 
-## Limitations with YunoHost
+### Token admin
 
-HTTP and LDAP authentication are not supported.
+Se installata da web, Vaultwarden non comunica il token necessario per accedere all'interfaccia di amministrazione. Per recuperare la password, è necessario:
+- fare il login da riga di comando (`ssh admin@sotto.dominio.tld`) ed
+- eseguire `grep "admin_token" /etc/yunohost/apps/vaultwarden/settings.yml`
 
-## Customer applications
+## Limiti con YunoHost
 
-| Application name [²] | Platform | Multi-account | Source | Play Store | F-Droid | Apple Store |
+HTTP e l'autenticazione LDAP non sono supportati.
+
+## Applicazioni per utenti
+
+| Nome applicazione | Piattaforma | Multi-account | Fonte | Play Store | F-Droid | Apple Store |
 |----------------------|----------|---------------|--------|------------|---------|-------------|
-| Bitwarden | GNU/Linux / macOS / Windows  | Oui | [bitwarden.com - download](https://bitwarden.com/#download) |
-| Bitwarden | Android / iOS | ? |  | [Playstore - Birwarden](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden) | X | [App Store - Bitwarden](https://itunes.apple.com/app/bitwarden-free-password-manager/id1137397744?mt=8) |
+| Bitwarden | GNU/Linux / MacOS / Windows  | [Sì](https://bitwarden.com/help/account-switching/) | [bitwarden.com - download](https://bitwarden.com/download) |
+| Bitwarden | Android / iOS | [Sì](https://bitwarden.com/help/account-switching/) |  | [Playstore - Bitwarden](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden) | Sì ([repo da aggiungere](https://mobileapp.bitwarden.com/fdroid/)) | [App Store - Bitwarden](https://itunes.apple.com/app/bitwarden-free-password-manager/id1137397744?mt=8) |
 
-> [²]: (of) : Official / (un) : Unofficial
 
-## Useful links
+## Collegamenti utili
 
-+ Website: [bitwarden.com](https://bitwarden.com/)
-+ Official documentation: [help.bitwarden.com](https://help.bitwarden.com/)
-+ Application software repository: [github.com - YunoHost-Apps/vaultwarden](https://github.com/YunoHost-Apps/vaultwarden_ynh)
-+ Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/vaultwarden/issues](https://github.com/YunoHost-Apps/vaultwarden_ynh/issues)
++ Sito: [bitwarden.com](https://bitwarden.com/)
++ Documentazione ufficiale: [help.bitwarden.com](https://help.bitwarden.com/)
++ Repository dell'applicazione YunoHost: [github.com - YunoHost-Apps/vaultwarden](https://github.com/YunoHost-Apps/vaultwarden_ynh)
++ Segnala un problema o miglioramento aprendo una segnalazione (issue): [github.com - YunoHost-Apps/vaultwarden/issues](https://github.com/YunoHost-Apps/vaultwarden_ynh/issues)
 
 -----
 
-### Sources
+### Fonti
 
 ¹ [wikipedia.org - Bitwarden](https://en.wikipedia.org/wiki/Bitwarden)
