@@ -42,7 +42,7 @@ HTTP e l'autenticazione LDAP non sono supportati.
 
 | Nome applicazione | Piattaforma | Multi-account | Fonte | Play Store | F-Droid | Apple Store |
 |----------------------|----------|---------------|--------|------------|---------|-------------|
-| Bitwarden | GNU/Linux / MacOS / Windows  | [Sì](https://bitwarden.com/help/account-switching/) | [bitwarden.com - download](https://bitwarden.com/download) |
+| Bitwarden | GNU/Linux / macOS / Windows  | [Sì](https://bitwarden.com/help/account-switching/) | [bitwarden.com - download](https://bitwarden.com/download) |
 | Bitwarden | Android / iOS | [Sì](https://bitwarden.com/help/account-switching/) |  | [Playstore - Bitwarden](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden) | Sì ([repo da aggiungere](https://mobileapp.bitwarden.com/fdroid/)) | [App Store - Bitwarden](https://itunes.apple.com/app/bitwarden-free-password-manager/id1137397744?mt=8) |
 
 
