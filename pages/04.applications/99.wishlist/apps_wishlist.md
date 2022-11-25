@@ -263,6 +263,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [ScenariChain-server](https://download.scenari.software/SCENARIchain-server/) |  |  |  |
 | [Schleuder](https://schleuder.org/schleuder/docs/concept.html) | A GPG-enabled mailing list manager |  |  |
 | scm-manager | Share and manage Git, Mercurial and Subversion repositories |  | [Package Draft](https://github.com/drfred1981/scm-manager_ynh) |
+| [Screego](https://screego.net/) | Screen sharing webrtc | [Upstream](https://github.com/screego/server) |  |
 | [Scribe](https://scribe.rip/) | An alternative frontend to Medium | [Upstream](https://git.sr.ht/~edwardloveall/scribe) |  |
 | [Scuttlebutt Pub](https://www.scuttlebutt.nz/contributing) |  |  |  |
 | [SearXNG](https://searxng.github.io/searxng/) | Fork of SearX, a privacy-respecting metasearch engine | [Upstream](https://github.com/searxng/searxng) |  |
