@@ -360,7 +360,7 @@ Requires YunoHost version 2.6.4 or higher.
     
 
 **Details**:<br/>
-Use the registered path in backup_list by ynh_backup to restore the file at the right place.
+tregistered path in backup_list by ynh_backup to restore the file at the right place.
 
 If `DEST_PATH` already exists and is lighter than 500 Mo, a backup will be made in
 `/var/cache/yunohost/appconfbackup/`. Otherwise, the existing file is removed.
@@ -2301,13 +2301,13 @@ Requires YunoHost version 2.6.4 or higher.
 **Usage**: `ynh_add_config --template="template" --destination="destination"`
 
 **Arguments**:
-- `-t`, `--template=`: Template config file to use
+- `-t`, `--template=`: Template config file to use. The file will first be looked for in the `conf` directory of the package and if missing at the exact path given.
 - `-d`, `--destination=`: Destination of the config file
 
 **Examples**:
     
         
-- `   ynh_add_config --template=".env" --destination="$final_path/.env" use the template file "../conf/.env"`
+- `   ynh_add_config --template=".env" --destination="$final_path/.env"` uses the template file `"../conf/.env"`
         
     
         
