@@ -360,7 +360,7 @@ Requires YunoHost version 2.6.4 or higher.
     
 
 **Details**:<br/>
-tregistered path in backup_list by ynh_backup to restore the file at the right place.
+Use the registered path in backup_list by ynh_backup to restore the file at the right place.
 
 If `DEST_PATH` already exists and is lighter than 500 Mo, a backup will be made in
 `/var/cache/yunohost/appconfbackup/`. Otherwise, the existing file is removed.
