@@ -2307,7 +2307,7 @@ Requires YunoHost version 2.6.4 or higher.
 **Examples**:
     
         
-- `   ynh_add_config --template=".env" --destination="$final_path/.env"` uses the template file `"../conf/.env"`
+- `   ynh_add_config --template=".env" --destination="$final_path/.env"` uses the template file `../conf/.env`
         
     
         
