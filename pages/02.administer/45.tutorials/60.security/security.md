@@ -91,7 +91,13 @@ sudo yunohost settings set security.ssh.compatibility -v modern
 ```
 
 ### Disable the YunoHost API
-YunoHost administration is accessible through an **HTTP API**, served on the 6787 port by default (only on `localhost`). It can be used to administer a lot of things on your server, so malicious actors can also use it to damage your server. The best thing to do, if you know how to use the [command-line interface](/commandline), is to deactivate the `yunohost-api` service.
+
+YunoHost administration is accessible through an **HTTP API**, served on the 6787 port by default (only on `localhost`).
+It can be used to administer a lot of things on your server, so malicious actors can also use it to damage your server.
+The best thing to do, if you know how to use the [command-line interface](/commandline), is to deactivate the `yunohost-api` service.
+
+! This will completely disable both YunoHost's API and the web administration panel that relies on it.
+! Proceed only if you are confortable with the command line interface.
 
 ```bash
 sudo systemctl disable yunohost-api
