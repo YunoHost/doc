@@ -56,7 +56,7 @@ sudo yunohost settings set security.ssh.password_authentication -v no
 ### Modify the SSH port
 
 To prevent SSH connection attempts by robots that scan the internet for any server with SSH enabled, you can change the SSH port.
-This is handled by a system setting, which takes care of updating the SSH and Fail2Ban configuration.
+This is handled by a system setting, which takes care of updating the SSH and Fail2Ban configuration. Warning! If you modify anything in the /etc/ssh/sshd_config file, even if only the port, yunohost will no longer make and changes to this file. For this reason, always use the yunohost admin tools to make changes to the systems configuration files!
 
 ```bash
 sudo yunohost settings set security.ssh.port -v <new_ssh_port_number>
