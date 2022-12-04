@@ -67,7 +67,7 @@ We must modify `conf/nginx.conf` file with application arguments. For this, we u
 ```bash
 sed -i "s@YNH_EXAMPLE_PATH@$path@g" ../conf/nginx.conf
 sed -i "s@YNH_EXAMPLE_PORT@$port@g" ../conf/nginx.conf
-sed -i "s@YNH_EXEMPLE_DOMAIN@$domain@g" ../conf/nginx.conf
+sed -i "s@YNH_EXAMPLE_DOMAIN@$domain@g" ../conf/nginx.conf
 ```
 We must move that configuration file in NGINX configuration, then reload NGINX configuration:
 

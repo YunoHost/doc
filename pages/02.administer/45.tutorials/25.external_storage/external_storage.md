@@ -47,7 +47,7 @@ Below is an explanation of some of the paths that can take up weight with some c
 | `/home/yunohost.app`          |Heavy data from yunohost applications (nextcloud, matrix...)|Moveable to a hard disk
 | `/home/yunohost.multimedia` | Heavy data shared between several applications | Moveable to a hard disk |
 | `/var/lib/mysql` | Database used by applications | Ideally leave on SSD for performance reasons |
-| `/var/lib/postgresql` | Database used by applications | Ideally leave on SSD for performance reasons | /var/mail
+| `/var/lib/postgresql` | Database used by applications | Ideally leave on SSD for performance reasons |
 | `/var/mail` | User e-mails | Movable to a hard disk |
 | `/var/www` | Program of installed web applications | Ideally leave on SSD for performance reasons |
 | `/var/log` | Event logs (pages consulted, connection attempts, hardware errors...). | This directory should not take up too much space, if it grows quickly, it may be a looping error that should be resolved.

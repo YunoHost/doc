@@ -56,7 +56,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Citadel-suite](https://www.citadel.org) | Groupware platform |  |  |
 | [CKAN](https://ckan.org/) | A tool for making open data websites | [Upstream](https://github.com/ckan/ckan) |  |
 | [CloudTube](https://tube.cadence.moe/) | CloudTube front-end for YouTube | [Upstream](https://git.sr.ht/~cadence/cloudtube) |  |
-| Commafeed |  | [Upstream](https://github.com/Athou/commafeed) |  |
+| [Commafeed](https://www.commafeed.com/) | Self-hosted RSS reader  | [Upstream](https://github.com/Athou/commafeed) |  |
 | [Conduit](https://conduit.rs/) |  Conduit is a lightweight open-source server implementation of the Matrix Specification with a focus on easy setup and low system requirements.  | [Upstream](https://gitlab.com/famedly/conduit) | [Package Draft](https://github.com/YunoHost-Apps/conduit_ynh) |
 | cops | Calibre OPDS |  | [Package Draft](https://github.com/YunoHost-Apps/cops_ynh) |
 | [Coquelicot](https://coquelicot.potager.org/) | A “one-click” file sharing web application |  | [Package Draft](https://github.com/YunoHost-Apps/coquelicot_ynh) |
@@ -99,6 +99,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Flask | Skeleton for flask apps |  | [Package Draft](https://github.com/YunoHost-Apps/flask_ynh) |
 | [foodsoft](https://foodcoops.github.io/foodsoft-hosting/) | Manage a non-profit food cooperative |  | [Package Draft](https://github.com/YunoHost-Apps/foodsoft_ynh) |
 | [Fossil](https://www.fossil-scm.org) |  |  |  |
+| [Fractale](https://fractale.co/) | Fractale is a platform for self-organization.| [Upstream](https://github.com/fractal6/fractal6.go) |  |
 | full-text-rss |  | [Upstream](https://bitbucket.org/fivefilters/full-text-rss/src/master/) |  |
 | Framaestro | Online service aggregator | [Upstream](https://framagit.org/framasoft/framaestro) | [Package Draft](https://github.com/YunoHost-Apps/framaestro_ynh) |
 | Framaestro_hub | Online service aggregator hub | [Upstream](https://github.com/mozilla/togetherjs.git) | [Package Draft](https://github.com/YunoHost-Apps/framaestro_hub_ynh) |
@@ -263,6 +264,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [ScenariChain-server](https://download.scenari.software/SCENARIchain-server/) |  |  |  |
 | [Schleuder](https://schleuder.org/schleuder/docs/concept.html) | A GPG-enabled mailing list manager |  |  |
 | scm-manager | Share and manage Git, Mercurial and Subversion repositories |  | [Package Draft](https://github.com/drfred1981/scm-manager_ynh) |
+| [Screego](https://screego.net/) | Screen sharing webrtc | [Upstream](https://github.com/screego/server) |  |
 | [Scribe](https://scribe.rip/) | An alternative frontend to Medium | [Upstream](https://git.sr.ht/~edwardloveall/scribe) |  |
 | [Scuttlebutt Pub](https://www.scuttlebutt.nz/contributing) |  |  |  |
 | [SearXNG](https://searxng.github.io/searxng/) | Fork of SearX, a privacy-respecting metasearch engine | [Upstream](https://github.com/searxng/searxng) |  |
@@ -354,6 +356,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Zoneminder |  | [Upstream](https://github.com/ZoneMinder/zoneminder) |  |
 | [Zulip](https://zulipchat.com/) |  | [Upstream](https://github.com/zulip/zulip) |  |
 | Zusam | A truly private space for you and your friends | [Upstream](https://github.com/zusam/zusam) | [Package Draft](https://github.com/zusam/zusam_ynh) |
+| [XBackBone](https://xbackbone.app) | XBackBone is a simple and lightweight PHP file manager that support the instant sharing tool ShareX and NIX systems. | [Upstream](https://github.com/SergiX44/XBackBone) | |
 
 ### Other references listing self-hosted applications
 
