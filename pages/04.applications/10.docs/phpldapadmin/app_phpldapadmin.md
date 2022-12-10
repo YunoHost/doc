@@ -9,10 +9,6 @@ routes:
 
 [![Installer phpLDAPadmin with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=phpldapadmin) [![Integration level](https://dash.yunohost.org/integration/phpldapadmin.svg)](https://dash.yunohost.org/appci/app/phpldapadmin)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *phpLDAPadmin* is a web app for administering Lightweight Directory Access Protocol (LDAP) servers.
 
 ### Screenshots

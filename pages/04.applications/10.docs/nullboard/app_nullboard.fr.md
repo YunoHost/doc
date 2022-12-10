@@ -9,10 +9,6 @@ routes:
 
 [![Installer Nullboard avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nullboard) [![Integration level](https://dash.yunohost.org/integration/nullboard.svg)](https://dash.yunohost.org/appci/app/nullboard)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Nullboard* est un Kanban minimaliste, axé sur la compacité et la lisibilité.
 
 ### Captures d'écran

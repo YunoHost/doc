@@ -9,10 +9,6 @@ routes:
 
 [![Installer Droppy avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=droppy) [![Integration level](https://dash.yunohost.org/integration/droppy.svg)](https://dash.yunohost.org/appci/app/droppy)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Droppy* est un serveur de stockage de fichiers auto-hébergé avec une interface web et des capacités pour éditer des fichiers et visualiser des médias directement dans le navigateur.
 
 ### Avertissements / informations importantes

@@ -9,10 +9,6 @@ routes:
 
 [![Installer CryptPad avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=cryptpad) [![Integration level](https://dash.yunohost.org/integration/cryptpad.svg)](https://dash.yunohost.org/appci/app/cryptpad)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *CryptPad* est une suite logicielle chiffrée de bout en bout et ouverte. Elle est conçue pour permettre un travail collaboratif, en synchronisant les modifications apportées aux documents en temps réel. Comme toutes les données sont chiffrées, le service et ses administrateurs n'ont aucun moyen de voir le contenu édité et stocké.
 
 ## Avertissements / informations importantes

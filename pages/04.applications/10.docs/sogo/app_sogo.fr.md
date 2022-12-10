@@ -11,10 +11,6 @@ routes:
 
 [![Installer SOGo avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=sogo) [![Integration level](https://dash.yunohost.org/integration/sogo.svg)](https://dash.yunohost.org/appci/app/sogo)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 SOGo est un service de webmail pour votre serveur email, c'est une alternative à [RoundCube](/app_roundcube). Il permet aussi la gestion des agendas et contacts présents sur le serveur.
 
 ## Quelques liens utiles

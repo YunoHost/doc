@@ -9,10 +9,6 @@ routes:
 
 [![Installer The Lounge avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=thelounge) [![Integration level](https://dash.yunohost.org/integration/thelounge.svg)](https://dash.yunohost.org/appci/app/thelounge)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *The Lounge* est un client web IRC moderne conçu pour l'auto-hébergement.
 
 #### Caractéristiques:

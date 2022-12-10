@@ -9,10 +9,6 @@ routes:
 
 [![Installer Sitemagic CMS with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=sitemagiccms) [![Integration level](https://dash.yunohost.org/integration/sitemagiccms.svg)](https://dash.yunohost.org/appci/app/sitemagiccms)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Sitemagic CMS* is a Content Management System. It's very unique in its approach to design. Sitemagic CMS is a comprehensive Content Management System that allows anyone to easily manage pages, files, menu, forms, and external modules such as maps, social media plugins, videos, and more. But there's also a ton of hidden features that helps you save time such as automatic mobile and search engine optimizations (SEO).
 
 ### Screenshots

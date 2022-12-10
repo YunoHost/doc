@@ -9,10 +9,6 @@ routes:
 
 [![Installer RSS-Bridge avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=rss-bridge) [![Integration level](https://dash.yunohost.org/integration/rss-bridge.svg)](https://dash.yunohost.org/appci/app/rss-bridge)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *RSS-Bridge* est un projet PHP capable de générer des flux RSS et Atom pour les sites web qui n'en ont pas. Il peut être utilisé sur des serveurs web ou comme une application autonome en mode CLI.
 
 Important : RSS-Bridge n'est pas un lecteur de flux ou un agrégateur de flux, mais un outil pour générer des flux qui sont consommés par des lecteurs de flux et des agrégateurs de flux. Vous trouverez une liste d'agrégateurs de flux sur Wikipedia.

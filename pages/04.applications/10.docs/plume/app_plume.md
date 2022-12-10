@@ -11,10 +11,6 @@ routes:
 
 [![Install Plume with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=plume) [![Integration level](https://dash.yunohost.org/integration/plume.svg)](https://dash.yunohost.org/appci/app/plume)
 
-### Index
-
-- [Useful links](#useful-links)
-
 Plume is a decentralized and federated blog engine under development.
 
 * Decentralized: Each instance can follow one or more other Plume instances in order to allow its rice-users to view their videos.

@@ -9,10 +9,6 @@ routes:
 
 [![Installer Nitter avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nitter) [![Integration level](https://dash.yunohost.org/integration/nitter.svg)](https://dash.yunohost.org/appci/app/nitter)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Nitter* est une interface alternative pour Twitter qui est plus rapide que le site officiel. Cette application respecte votre vie privée et ne nécessite pas de s'enregistrer. Son interface s'adapte aux écrans de toutes tailles. Nitter offre aussi de générer des flux RSS à partir des timelines des utilisateurs Twitter.
 
 ### Fonctionnalités

@@ -11,11 +11,6 @@ routes:
 
 [![Installer Etherpad avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=etherpad_mypads) [![Niveau d'intégration](https://dash.yunohost.org/integration/etherpad_mypads.svg)](https://dash.yunohost.org/appci/app/etherpad_mypads)
 
-### Index
-
-- [Configuration](#configuration)
-- [Liens utiles](#liens-utiles)
-
 Etherpad est un éditeur de texte libre en ligne fonctionnant en mode collaboratif et en temps réel. Il permet à plusieurs personnes de partager l'élaboration simultanée d'un texte, et d'en discuter en parallèle, via une messagerie instantanée. Il peut avoir des usages pédagogiques, notamment pour l'apprentissage collaboratif.[¹](#sources)
 
 ## Configuration

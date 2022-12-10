@@ -11,11 +11,6 @@ routes:
 
 [![Install Wiki.js with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=wikijs) [![Integration level](https://dash.yunohost.org/integration/wikijs.svg)](https://dash.yunohost.org/appci/app/wikijs)
 
-### Index
-
-- [Configuration](#configuration)
-- [Useful links](#useful-links)
-
 Wiki.js is a free, modern and fast wiki based on Node.js, Git and Markdown.
 
 ## Configuration

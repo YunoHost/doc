@@ -9,10 +9,6 @@ routes:
 
 [![Installer OpenTracker avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=opentracker) [![Integration level](https://dash.yunohost.org/integration/opentracker.svg)](https://dash.yunohost.org/appci/app/opentracker)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *OpenTracker* est un tracker Bittorrent.
 
 ### Avertissements / informations importantes

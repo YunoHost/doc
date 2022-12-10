@@ -10,11 +10,6 @@ routes:
 [![Install Time Machine with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=timemachine) 
 [![Integration level](https://dash.yunohost.org/integration/timemachine.svg)](https://dash.yunohost.org/appci/app/timemachine)
 
-
-### Index
-
-- [Useful links](#useful-links)
-
 **Time Machine** creates a Samba Network Drive on your server which can be used by your Mac to create Time Machine backups. The local instance is automatically discovered in Time Machine and shows up as `*.local`
 
 

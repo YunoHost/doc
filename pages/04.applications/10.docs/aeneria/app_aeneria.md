@@ -9,10 +9,6 @@ routes:
 
 [![Install Æneria with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=aeneria) [![Integration level](https://dash.yunohost.org/integration/aeneria.svg)](https://dash.yunohost.org/appci/app/aeneria)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Æneria* is a web application which aims to help individuals to analyse their energy consumption. Because understanding one's consumption is already, without realising it, starting to reduce it.
 
 ## Useful links

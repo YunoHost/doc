@@ -9,10 +9,6 @@ routes:
 
 [![Installer ProxiTok avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=proxitok) [![Integration level](https://dash.yunohost.org/integration/proxitok.svg)](https://dash.yunohost.org/appci/app/proxitok)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *ProxiTok* vous permet d'utiliser TikTok via une interface alternative inspirée de Nitter. Toutes les requêtes adressées à TikTok sont effectuées côté serveur, vous ne vous connecterez donc jamais à leurs serveurs.
 
 ## Liens utiles

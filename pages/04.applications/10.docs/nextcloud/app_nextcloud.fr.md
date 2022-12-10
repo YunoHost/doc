@@ -9,16 +9,6 @@ routes:
 
 ![logo de Nextcloud](image://nextcloud_logo.png)
 
- - [Découverte de l'environnement de Nextcloud](#environnement-nextcloud)
- - [Logiciels clients pour mobile et ordinateur](#logiciels-clients)
- - [Manipulations & problèmes rencontrés utiles](#manipulations-utiles)
-    - [Ajouter de l'espace à Nextcloud](#ajout-espace)
-    - [Partager un dossier entre Nextcloud et une application](#partager-un-dossier-entre-nextcloud-et-une-application)
-    - [Nextcloud et Cloudlare](#nextcloud-et-cloudflare)
- - [Applications tierces](#applications-tierces)
-    - [À propos de keeweb](#à-propos-de-keeweb)
- - [Liens utiles](#liensutiles)
-
 Nextcloud est un service d'hébergement de fichiers. De nombreuses applications peuvent être installées afin d'offrir à Nextcloud de nouvelles fonctionnalités telles qu'un agenda, un répertoire de contacts, des notes et plein d'autres possibles (vous pouvez trouver quelques applications dans la section [applications tierces](#applications-tierces), il en existe une multitude suivant vos besoins).
 
 

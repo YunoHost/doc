@@ -9,10 +9,6 @@ routes:
 
 [![Installer Neutrinet avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=neutrinet) [![Integration level](https://dash.yunohost.org/integration/neutrinet.svg)](https://dash.yunohost.org/appci/app/neutrinet)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Neutrinet* est destinée aux membres Neutrinet qui ont un VPN Neutrinet. Elle vérifie et renouvelle automatiquement les certificats VPN. Ce package contient également une page web avec des informations de contact et d'autres liens utiles.
 
 ### Avertissements / informations importantes

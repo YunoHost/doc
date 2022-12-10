@@ -9,10 +9,6 @@ routes:
 
 [![Installer Plainpad avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=plainpad) [![Integration level](https://dash.yunohost.org/integration/plainpad.svg)](https://dash.yunohost.org/appci/app/plainpad)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Plainpad* est une application de prise de notes open source auto-hébergée qui est très facile à configurer sur votre serveur. Vos données ne quitteront jamais votre serveur et vous pourrez y accéder depuis n'importe quel appareil connecté à Internet.
 Avec Plainpad, vous pouvez autoriser plusieurs utilisateurs à accéder à l'application sans pouvoir voir les notes des autres. Les notes sont cryptées et stockées en toute sécurité dans la base de données.
 

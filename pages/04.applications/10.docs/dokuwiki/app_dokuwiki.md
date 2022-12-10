@@ -11,11 +11,6 @@ routes:
 
 [![Installer DokuWiki grâce à YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=dokuwiki) [![Niveau d'intégration](https://dash.yunohost.org/integration/dokuwiki.svg)](https://dash.yunohost.org/appci/app/dokuwiki)
 
-### Index
-
-- [Limitations with YunoHost](#limitations-with-yunohost)
-- [Useful links](#useful-links)
-
 DokuWiki is a standards-compliant, easy-to-use, standards-compliant GNU GPL free wiki engine whose main purpose is to create documentation of all kinds. This software is developed in PHP by Andreas Gohr. ...] It has a simple syntax that ensures the readability of data files outside of the wiki, and facilitates the creation of structured texts. All data is stored in text files, so no database is needed. [¹](#sources)
 
 ## Limitations with YunoHost

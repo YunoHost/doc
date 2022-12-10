@@ -11,11 +11,6 @@ routes:
 
 [![Install Discourse with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=discourse) [![Integration level](https://dash.yunohost.org/integration/discourse.svg)](https://ci-apps.yunohost.org/jenkins/job/discourse%20%28Community%29/lastBuild/consoleFull)
 
-### Index
-
-- [Limitations with YunoHost](#limitations-with-yunohost)
-- [Useful links](#useful-links)
-
 Discourse has all the usual features of a discussion forum: users, discussions, search, private messages, etc. The "mailing list" mode allows you to use most of the forum's functionalities via e-mail. Written in Ruby and JavaScript, it requires a PostgreSQL database and a mail server.[¹](#sources)
 
 ## Limitations with YunoHost

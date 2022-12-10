@@ -11,15 +11,6 @@ routes:
 
 [![Install PluXml with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=pluxml) [![Integration level](https://dash.yunohost.org/integration/pluxml.svg)](https://dash.yunohost.org/appci/app/pluxml)
 
-### Index
-
-- [Configuration](#configuration)
-  - [Connexion à l'interface d'administration](#connexion-à-l’interface-d’administration)
-- [Capture d'écran](#capture-décran)
-- [Plugins et thèmes](#plugins-et-thèmes)
-- [Sauvegarde](#sauvegarde)
-- [Liens utiles](#liens-utiles)
-
 PluXml est un moteur de blog/CMS stockant ces données en XML et ne nécessitant pas de base de données SQL.
 
 ## Configuration

@@ -9,10 +9,6 @@ routes:
 
 [![Installer BicBucStriim avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=bicbucstriim) [![Integration level](https://dash.yunohost.org/integration/bicbucstriim.svg)](https://dash.yunohost.org/appci/app/bicbucstriim)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *BicBucStriim* diffuse des livres, des livres numériques. Il a été conçu principalement pour combler une lacune dans la fonctionnalité des appareils NAS qui donnent accès à la musique, aux vidéos et aux photos -- mais pas aux livres. BicBucStriim comble cette lacune et fournit un accès basé sur le web à votre collection de livres électroniques.
 
 ## Avertissements / informations importantes 

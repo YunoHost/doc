@@ -9,10 +9,6 @@ routes:
 
 [![Install AllTube with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=alltube) [![Integration level](https://dash.yunohost.org/integration/alltube.svg)](https://dash.yunohost.org/appci/app/alltube)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *AllTube* is a web interface for Youtube-dl.
 To configure AllTube: edit the file `/var/www/alltube/config/config.yml` via SSH.
 

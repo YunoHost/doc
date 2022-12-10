@@ -11,10 +11,6 @@ routes:
 
 [![Install collabora with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=collabora) [![Integration level](https://dash.yunohost.org/integration/collabora.svg)](https://dash.yunohost.org/appci/app/collabora)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 Collabora est une suite bureautique en ligne basée sur LibreOffice et utilisable avec Nextcloud ou ownCloud. Elle permet d'éditer des documents textes, des tableaux, des diaporamas. L'édition en ligne peut se faire en simultanée et permet d'exporter et d'imprimer des documents grâce au format PDF généré.
 
 Cette application n'est pas compatible avec les architectures ARM. Le projet Collabora a bien développé une version spécifique ARM, mais celle-ci n'est compatible qu'avec Ubuntu, pas Debian, donc ne fonctionne pas sous YunoHost.

@@ -11,14 +11,6 @@ routes:
 
 [![Install Pi-hole with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=pihole) [![Integration level](https://dash.yunohost.org/integration/pihole.svg)](https://dash.yunohost.org/appci/app/pihole)
 
-### Index
-
-- [Using Pi-hole as a DHCP server](#using-pi-hole-as-a-dhcp-server)
-  - [Configure Pi-hole](#configure-pi-hole)
-  - [Configure my router](#configure-my-router)
-  - [Restore Network](#restore-network)
-- [Useful links](#useful-links)
-
 *Pi-hole* is a network-level ad blocker that acts as a DNS layer and possibly a DHCP3 server for use on a private network. It is designed to be installed on embedded devices with network capabilities, such as the Raspberry Pi, but can be used on other machines running GNU/Linux or in virtualised environments.
 
 ## Using Pi-hole as a DHCP server

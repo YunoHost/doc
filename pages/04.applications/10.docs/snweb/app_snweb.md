@@ -9,10 +9,6 @@ routes:
 
 [![Installer Standard Notes with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=snweb) [![Integration level](https://dash.yunohost.org/integration/snweb.svg)](https://dash.yunohost.org/appci/app/snweb)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Standard Notes* is a end-to-end encrypted note-taking app.
 
 ### Screenshots
