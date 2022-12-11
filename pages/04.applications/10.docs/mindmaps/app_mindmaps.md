@@ -9,10 +9,6 @@ routes:
 
 [![Install Mindmaps with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mindmaps) [![Integration level](https://dash.yunohost.org/integration/mindmaps.svg)](https://dash.yunohost.org/appci/app/mindmaps)
 
-### Index
-
-- [Useful links](#useful-links)
-
 Mindmaps is a HTML5 based mind mapping application. It lets you create neat looking mind maps in the browser.
 
 This project started in 2011 as an exploration into what's possible to do in browsers using modern APIs. Nowadays, most of this stuff is pretty common and the code base is a bit outdated. This was way before React, ES6, webpack. Heck, it doesn't even use Backbone.

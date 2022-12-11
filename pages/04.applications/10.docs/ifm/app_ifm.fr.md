@@ -9,10 +9,6 @@ routes:
 
 [![Installer IFM avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=ifm) [![Integration level](https://dash.yunohost.org/integration/ifm.svg)](https://dash.yunohost.org/appci/app/ifm)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *IFM* est un gestionnaire de fichiers basé sur le Web, qui se présente sous la forme d'un fichier unique utilisant HTML5, CSS3, JavaScript et PHP.
 
 ### Avertissements / informations importantes

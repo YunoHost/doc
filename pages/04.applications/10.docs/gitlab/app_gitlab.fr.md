@@ -11,12 +11,6 @@ routes:
 
 [![Install GitLab with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gitlab) [![Integration level](https://dash.yunohost.org/integration/gitlab.svg)](https://dash.yunohost.org/appci/app/gitlab)
 
-### Index
-
-- [Limitations avec YunoHost](#limitations-avec-yunohost)
-- [Applications clientes](#applications-clientes)
-- [Liens utiles](#liens-utiles)
-
 GitLab est une forge logicielle très complète dont le développement est très dynamique (une nouvelle version sort tous les 22 du mois). Elle permet d'héberger des projets collaboratifs utilisant Git ainsi que gérer des discussions, des rapports de bugs et la documentation... GitLab est un logiciel open source qui existe deux versions, une version communautaire libre et une version entreprise propriétaire possédant plus de fonctionnalités.[¹](#sources)
 
 ## Limitations avec YunoHost

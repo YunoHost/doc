@@ -11,10 +11,6 @@ routes:
 
 [![Install Lufi with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=lufi) [![Integration level](https://dash.yunohost.org/integration/lufi.svg)](https://dash.yunohost.org/appci/app/lufi)
 
-### Index
-
-- [Useful Links](#useful-links)
-
 Lufi is a free file hosting software. Files sent on an instance of Lufi are encrypted before being sent to the server: the server administrator cannot see the content of your files.
 The administrator can only see the file name, size and mime type (file type: video, text, etc.).
 

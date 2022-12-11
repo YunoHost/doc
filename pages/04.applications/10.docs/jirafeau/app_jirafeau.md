@@ -11,13 +11,6 @@ routes:
 
 [![Install Jirafeau with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=jirafeau) [![Integration level](https://dash.yunohost.org/integration/jirafeau.svg)](https://dash.yunohost.org/appci/app/jirafeau)
 
-### Index
-
-- [Configuration](#configuration)
-  - [Changing the conditions of use of the service](#changing-the-conditions-of-use-of-the-service)
-  - [Administration](#administration)
-- [Useful links](#useful-links)
-
 *Jirafeau* offers the possibility to host and share your files with ease. Choose a file, Jirafeau will provide you with a link with many options.
 It is possible to protect your links with a password as well as to choose how long the file will be kept on the server. The file and the link will self-destruct after this time.
 Downloads of transmitted files can be limited to a certain date, and each file can self-destruct after the first download.

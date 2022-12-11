@@ -11,10 +11,6 @@ routes:
 
 [![Install MediaWiki with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mediawiki) [![Integration level](https://dash.yunohost.org/integration/mediawiki.svg)](https://dash.yunohost.org/appci/app/mediawiki)
 
-### Index
-
-- [Useful links](#useful-links)
-
 MediaWiki is a free and open source software wiki package written in PHP, originally for use on Wikipedia.
 
 ## Useful links

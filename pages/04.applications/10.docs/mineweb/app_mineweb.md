@@ -9,10 +9,6 @@ routes:
 
 [![Installer MineWeb with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=mineweb) [![Integration level](https://dash.yunohost.org/integration/mineweb.svg)](https://dash.yunohost.org/appci/app/mineweb)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *MineWeb* is a CMS (i.e. a content management system), in simple terms, a completely customizable and intuitive site, which will fit perfectly on your Minecraft servers!
 
 You will be able to keep your players informed about news, have them buy items from the store... You can customize the CMS with all kinds of themes or plugins! These are available on the market or can be developed by yourself.

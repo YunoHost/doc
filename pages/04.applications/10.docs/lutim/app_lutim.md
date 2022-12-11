@@ -11,10 +11,6 @@ routes:
 
 [![Install Lutim with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=lutim) [![Integration level](https://dash.yunohost.org/integration/lutim.svg)](https://dash.yunohost.org/appci/app/lutim)
 
-### Index
-
-- [Useful links](#useful-links)
-
 Lutim is a free and anonymous image hosting service. It is also the name of the (free) software that provides this service.
 Images uploaded to Lutim can be stored indefinitely, or can be deleted on first viewing or after a period of time chosen from those offered.
 

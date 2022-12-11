@@ -11,11 +11,6 @@ routes:
 
 [![Install fallback with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=fallback) [![Integration level](https://dash.yunohost.org/integration/fallback.svg)](https://dash.yunohost.org/appci/app/fallback)
 
-### Index
-
-- [Configuration](#configuration)
-- [Liens utiles](#liens-utiles)
-
 Fallback est une application spéciale, uniquement par interface de ligne de commande, qui permet d'avoir un serveur secondaire que vous pouvez utiliser si votre serveur principal tombe en panne.
 Cet autre serveur vous permettra de déployer une copie de votre serveur pour vous ramener sur internet pendant votre panne.
 

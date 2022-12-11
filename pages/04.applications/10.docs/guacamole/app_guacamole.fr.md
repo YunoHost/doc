@@ -9,10 +9,6 @@ routes:
 
 [![Installer Guacamole avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=guacamole) [![Integration level](https://dash.yunohost.org/integration/guacamole.svg)](https://dash.yunohost.org/appci/app/guacamole)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Guacamole* est un service de bureau à distance sans client. Fonctionne avec des protocoles standard comme VNC, RDP, et SSH.
 
 ### Captures d'écran

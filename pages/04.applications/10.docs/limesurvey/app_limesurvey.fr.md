@@ -11,12 +11,6 @@ routes:
 
 [![Install LimeSurvey with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=limesurvey) [![Integration level](https://dash.yunohost.org/integration/limesurvey.svg)](https://dash.yunohost.org/appci/app/limesurvey)
 
-### Index
-
-- [Configuration](#configuration)
-- [Limitations avec YunoHost](#limitations-avec-yunohost)
-- [Liens utiles](#liens-utiles)
-
 LimeSurvey est un outil de création et diffusion de sondage/formulaire en ligne.
 
 ## Configuration

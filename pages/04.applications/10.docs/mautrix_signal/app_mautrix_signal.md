@@ -9,10 +9,6 @@ routes:
 
 [![Installer Matrix Signal bridge with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=mautrix_signal) [![Integration level](https://dash.yunohost.org/integration/mautrix_signal.svg)](https://dash.yunohost.org/appci/app/mautrix_signal)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Matrix Signal bridge* is a membership management web application towards non profit organizations. This is before all a free software (as in free speech), community and free (as in beer)! Matrix Signal bridge works on any web server that handle PHP.
 
 ### Disclaimers / important information

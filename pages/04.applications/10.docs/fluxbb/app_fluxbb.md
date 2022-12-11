@@ -11,11 +11,6 @@ routes:
 
 [![Install FluxBB with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=fluxbb) [![Integration level](https://dash.yunohost.org/integration/fluxbb.svg)](https://dash.yunohost.org/appci/app/fluxbb)
 
-### Index
-
-- [Limitations with YunoHost](#limitations-with-yunohost)
-- [Useful links](#useful-links)
-
 FluxBB is fast, light, user-friendly forum software for your website. FluxBB is designed as a lighter, faster alternative to some of the traditional feature heavy forum applications. It is easy to use and has a proven track record of stability and security making it an ideal choice of forum for your website.
 
 ## Limitations with YunoHost
