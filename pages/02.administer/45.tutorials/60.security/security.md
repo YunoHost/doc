@@ -97,7 +97,7 @@ It can be used to administer a lot of things on your server, so malicious actors
 The best thing to do, if you know how to use the [command-line interface](/commandline), is to deactivate the `yunohost-api` service.
 
 ! This will completely disable both YunoHost's API and the web administration panel that relies on it.
-! Proceed only if you are confortable with the command line interface.
+! Proceed only if you are comfortable with the command line interface.
 
 ```bash
 sudo systemctl disable yunohost-api
