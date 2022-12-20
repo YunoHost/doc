@@ -27,7 +27,7 @@ If your YunoHost server is used in a critical production environment, or if you 
 
 ! **WARNING:** Following these instructions requires advanced knowledge of system administration.
 
-!!!! **TIP** Never close your current SSH connection before checking that your alterations work. Test your new configuration by opening a new terminal or window. That way, you can undo your alterations if anything goes wrong.
+!!!! **TIP** Never close your current SSH connection before checking that your alterations work. Test your new configuration by opening a new terminal or window. That way, you can undo your alterations if anything goes wrong. Note that changing the SSH port cannot be tested.
 
 ### SSH authentication via key
 
@@ -58,6 +58,8 @@ sudo yunohost settings set security.ssh.password_authentication -v no
 To prevent SSH connection attempts by robots that scan the internet for any server with SSH enabled, you can change the SSH port.
 This is handled by a system setting, which takes care of updating the SSH and Fail2Ban configuration.
 
+! **Warning: ** Note that this alteration cannot be tested, as the ssh connection with the previous port will be closed, but you can still connect through the webadmin to open/close ports if required.
+
 ! If you modify anything in the `/etc/ssh/sshd_config` file, even if only the port, YunoHost will no longer manage this file. For this reason, always use the YunoHost admin tools to make changes to the systems configuration files!
 
 ```bash
@@ -66,7 +68,7 @@ sudo yunohost settings set security.ssh.port -v <new_ssh_port_number>
 
 **For subsequent SSH connections**, you need to add the `-p` option followed by the SSH port number.
 
-**Sample**:
+**Example**:
 
 ```bash
 ssh -p <new_ssh_port_number> admin@<your_yunohost_server>
