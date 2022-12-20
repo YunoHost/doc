@@ -105,7 +105,7 @@ sudo systemctl stop yunohost-api
 ```
 
 As yunohost-api is now disabled and not running, Diagnosis will report an error and cannot be ignored from the API.
-If you want to ignore this error, you can configure yunohost from the CLI.
+If you want to ignore this error, you can configure YunoHost from the CLI.
 
 ```bash
 sudo yunohost diagnosis ignore --filter services service=yunohost-api
