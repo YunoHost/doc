@@ -76,7 +76,7 @@ Le carnet d’adresses est maintenant accessible.
 
 ## Liens utiles
 
- + Site web : [www.baikal-server.com (en)](http://www.baikal-server.com/)
- + Documentation officielle : [sabre.io - baikal (en)](https://sabre.io/baikal/)
+ + Site web : [sabre.io - baikal (en)](https://sabre.io/baikal/)
+ + Documentation officielle : [sabre.io - baikal/dav (en)](https://sabre.io/dav/)
  + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/baikal](https://github.com/YunoHost-apps/baikal_ynh)
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/baikal/issues](https://github.com/YunoHost-apps/baikal_ynh/issues)
