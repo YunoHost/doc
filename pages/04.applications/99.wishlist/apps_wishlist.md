@@ -54,6 +54,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Chatwoot](https://www.chatwoot.com/docs/self-hosted/) | Open-source customer engagement suite, an alternative to Intercom, Zendesk, Salesforce Service Cloud | [Upstream](https://github.com/chatwoot/chatwoot) |  |
 | [Chitchatter](https://chitchatter.im/) | chat p2p encrypted serverless ephemeral decentralized | [Upstream](https://github.com/jeremyckahn/chitchatter) |  |
 | [CheckUp](https://sourcegraph.github.io/checkup) |  | [Upstream](https://github.com/sourcegraph/checkup) |  |
+| [Checkmk](https://checkmk.com/) | Checkmk provides powerful monitoring of networks, servers, clouds, containers and applications | [Upstream](https://github.com/tribe29/checkmk) | |
 | [Citadel-suite](https://www.citadel.org) | Groupware platform |  |  |
 | [CKAN](https://ckan.org/) | A tool for making open data websites | [Upstream](https://github.com/ckan/ckan) |  |
 | [CloudTube](https://tube.cadence.moe/) | CloudTube front-end for YouTube | [Upstream](https://git.sr.ht/~cadence/cloudtube) |  |
@@ -359,6 +360,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Zulip](https://zulipchat.com/) |  | [Upstream](https://github.com/zulip/zulip) |  |
 | Zusam | A truly private space for you and your friends | [Upstream](https://github.com/zusam/zusam) | [Package Draft](https://github.com/zusam/zusam_ynh) |
 | [XBackBone](https://xbackbone.app) | XBackBone is a simple and lightweight PHP file manager that support the instant sharing tool ShareX and NIX systems. | [Upstream](https://github.com/SergiX44/XBackBone) | |
+
 
 ### Other references listing self-hosted applications
 
