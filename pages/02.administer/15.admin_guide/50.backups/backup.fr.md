@@ -123,6 +123,14 @@ ls -lh /home/yunohost.backup/archives/ARCHIVE.tar
 ### Restaurer
 
 !!! SPOILER: Plus votre volume de données et le nombre d'applications sont important, plus votre restauration sera complexe.
+
+#### Restauration complète durant la post-installation
+
+copiez l'archive contenant la sauvegarde à restaurer (<archivename>.tar avec <archivename>.info.json associé) dans `/home/yunohost.backup/arhives/`
+A partir de la ligne de commande, vous pouvez exécuter `yunohost backup restore <archivename>` (sans son extension .tar) (pour mémoire, pour se logger en ligne de commande avant la fin de la configuration login:`root` motdepasse:`yunohost`)
+    
+Il ne vous reste plus qu'à patienter jusqu'à la fin de la restauration
+    
 #### Cas simple : peu de données, archive déjà présente
 
 [ui-tabs position="top-left" active="0" theme="lite"]
