@@ -100,6 +100,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | FitTrackee |  | [Upstream](https://github.com/SamR1/FitTrackee) |  |
 | Flask | Skeleton for flask apps |  | [Package Draft](https://github.com/YunoHost-Apps/flask_ynh) |
 | [foodsoft](https://foodcoops.github.io/foodsoft-hosting/) | Manage a non-profit food cooperative |  | [Package Draft](https://github.com/YunoHost-Apps/foodsoft_ynh) |
+| [Forem](https://www.forem.com/) | Forem is open source software for building communities. Communities for your peers, customers, fanbases, families, friends, and any other time and space where people need to come together to be part of a collective. | [Upstream](https://github.com/forem/selfhost) | |
 | [Forgejo](https://forgejo.org/) | A self-hosted lightweight software forge. | [Upstream](https://codeberg.org/forgejo/forgejo) | |
 | [Fossil](https://www.fossil-scm.org) |  |  |  |
 | [Fractale](https://fractale.co/) | Fractale is a platform for self-organization.| [Upstream](https://github.com/fractal6/fractal6.go) |  |
