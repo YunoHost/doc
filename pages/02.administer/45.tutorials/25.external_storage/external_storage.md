@@ -135,7 +135,7 @@ Here we will consider that you want to move the big data of the applications whi
 ### 5.1 Creating subfolders on the disk
 To begin with, we create a folder on the hard drive
 
-bash
+```bash
 mkdir -p /mnt/hdd/home/yunohost.app
 mkdir -p /mnt/hdd/var/mail
 ```
