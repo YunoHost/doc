@@ -194,7 +194,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | mycryptochat | Encrypted IM |  | [Package Draft](https://github.com/mrtino/mycryptochat_ynh) |
 | mx-puppet-discord | A bridge between Matrix and Discord | [Upstream](https://github.com/matrix-discord/mx-puppet-discord) |  |
 | [Nautilus](https://myactivity.stream/) | Turn your website into an ActivityPub profile  | [Upstream](https://github.com/aaronpk/Nautilus) |  |
-| [Nebula](https://nebula.defined.net/docs/) | Nebula, an open source scalable overlay networking tool with a focus on performance, simplicity and security. Tailscale & ZeroTier alternative. | [Upstream](https://github.com/slackhq/nebula) |  |
+| [Nebula](https://nebula.defined.net/docs/) | Scalable overlay networking tool with a focus on performance, simplicity and security. | [Upstream](https://github.com/slackhq/nebula) |  |
 | Netrunner |  | [Upstream](https://github.com/mtgred/netrunner) |  |
 | [Netbird](https://netbird.io/) | Create an overlay peer-to-peer network connecting machines regardless of their location | [Upstream](https://github.com/netbirdio/netbird) | |
 | [Netlify CMS](https://netlifycms.org/) | A CMS for any static site generator that connects to a Gitlab/Github repo (requires netlify/gotrue) | [Upstream](https://github.com/netlify/netlify-cms) | |
