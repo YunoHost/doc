@@ -9,10 +9,6 @@ routes:
 
 [![Installer Prowlarr with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=prowlarr) [![Integration level](https://dash.yunohost.org/integration/prowlarr.svg)](https://dash.yunohost.org/appci/app/prowlarr)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Prowlarr* is a complete management of your indexers for Radarr, Sonarr, Lidarr...
 
 ### Screenshots

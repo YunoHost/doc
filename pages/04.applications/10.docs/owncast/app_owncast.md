@@ -9,10 +9,6 @@ routes:
 
 [![Installer Owncast with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=owncast) [![Integration level](https://dash.yunohost.org/integration/owncast.svg)](https://dash.yunohost.org/appci/app/owncast)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Owncast* is an open source, self-hosted, decentralized, single user live streaming and chat server for running your own live streams similar in style to the large mainstream options. It offers complete ownership over your content, interface, moderation and audience.
 
 ### Screenshots

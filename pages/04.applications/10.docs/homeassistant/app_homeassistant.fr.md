@@ -9,10 +9,6 @@ routes:
 
 [![Installer Home Assistant avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=homeassistant) [![Integration level](https://dash.yunohost.org/integration/homeassistant.svg)](https://dash.yunohost.org/appci/app/homeassistant)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Home Assistant* est une plateforme domotique.
 
 ### Avertissements / informations importantes

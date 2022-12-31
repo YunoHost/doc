@@ -9,10 +9,6 @@ routes:
 
 [![Installer Streama avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=streama) [![Integration level](https://dash.yunohost.org/integration/streama.svg)](https://dash.yunohost.org/appci/app/streama)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Streama* est un serveur de streaming auto-hébergé.
 
 ### Captures d'écran

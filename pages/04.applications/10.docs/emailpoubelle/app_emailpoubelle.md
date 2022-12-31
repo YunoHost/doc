@@ -9,10 +9,6 @@ routes:
 
 [![Installer EmailPoubelle with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=emailpoubelle) [![Integration level](https://dash.yunohost.org/integration/emailpoubelle.svg)](https://dash.yunohost.org/appci/app/emailpoubelle)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *EmailPoubelle* (Trash email) is a script to create temporay email adresses that aims to your real email address.
 A YunoHost version of EmailPoubelle by David Mercereau. All thanks to David.
 

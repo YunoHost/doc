@@ -9,10 +9,6 @@ routes:
 
 [![Installer Standard Notes Server avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=snserver) [![Integration level](https://dash.yunohost.org/integration/snserver.svg)](https://dash.yunohost.org/appci/app/snserver)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Standard Notes Server* est une application de prise de notes chiffrée de bout en bout. Capturez vos notes, vos fichiers et le travail de votre vie en un seul endroit sécurisé.
 
 ### Avertissements / informations importantes

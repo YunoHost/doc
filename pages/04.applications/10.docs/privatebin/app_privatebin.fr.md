@@ -11,10 +11,6 @@ routes:
 
 [![Install PrivateBin with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=privatebin) [![Integration level](https://dash.yunohost.org/integration/privatebin.svg)](https://dash.yunohost.org/appci/app/privatebin)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 PrivateBin est un service web permettant de stocker temporairement et de partager du texte simple de manière chiffrée, sans stockage lisible sur le serveur. La clef de chiffrement/déchiffrement n'est pas stockée sur le serveur mais dans l'URL transmise. Ainsi vous pouvez partager des informations sensibles (mots de passe, codes d'accès, et même une discussion) de manière confidentielle en communiquant à vos interlocuteurs l'adresse spécifique de votre contenu. De plus ce contenu a une valeur limitée dans le temps et est détruit passé un délai personnalisable.
 
 ## Liens utiles

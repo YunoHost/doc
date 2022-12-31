@@ -11,12 +11,6 @@ routes:
 
 [![Install Funkwhale with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=funkwhale) [![Integration level](https://dash.yunohost.org/integration/funkwhale.svg)](https://dash.yunohost.org/appci/app/funkwhale)
 
-### Index
-
-- [Administration](#administration)
-- [Limitations avec YunoHost](#limitations-avec-yunohost)
-- [Liens utiles](#liens-utiles)
-
 Funkwhale est un serveur de flux continu de musique libre, auto-hébergé et fédéré. Chaque utilisateur⋅trice dispose d'une bibliothèque dans laquelle il/elle peut ajouter les titres qu'il/elle souhaite, et qu'il/elle peut partager avec d'autres utilisateurs, qu'ils soient sur la même instance ou non.[¹](#sources)
 
 ## Administration

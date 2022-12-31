@@ -9,10 +9,6 @@ routes:
 
 [![Installer Owncast avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=owncast) [![Integration level](https://dash.yunohost.org/integration/owncast.svg)](https://dash.yunohost.org/appci/app/owncast)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Owncast* est un serveur de diffusion en direct et de chat open source, auto-hébergé, décentralisé et à utilisateur unique pour exécuter vos propres diffusions en direct dans un style similaire aux grandes options grand public. Il offre une propriété complète sur votre contenu, votre interface, votre modération et votre audience.
 
 ### Captures d'écran

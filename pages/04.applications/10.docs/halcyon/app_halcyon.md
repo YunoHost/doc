@@ -11,11 +11,6 @@ routes:
 
 [![Install Halcyon with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=halcyon) [![Integration level](https://dash.yunohost.org/integration/halcyon.svg)](https://dash.yunohost.org/appci/app/halcyon)
 
-### Index
-
-- [Limitations with YunoHost](#limitations-with-yunohost)
-- [Useful links](#useful-links)
-
 Halcyon is a webclient for Mastodon and Pleroma which aims to recreate the simple and beautiful user interface of Twitter while keeping all advantages of decentral networks in focus.[¹](#sources)
 
 ## Limitations with YunoHost

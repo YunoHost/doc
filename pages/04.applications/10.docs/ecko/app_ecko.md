@@ -11,14 +11,6 @@ routes:
 
 [![Install APPLICATION with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=ecko) [![Integration level](https://dash.yunohost.org/integration/ecko.svg)](https://dash.yunohost.org/appci/app/ecko)
 
-### Index
-
-- [Limitations with YunoHost](#limitations-with-yunohost)
-- [Useful links](#useful-links)
-- [Compatible Apps](#compatible-apps)
-
----
-
 Ecko is community-driven fork of Mastodon's federated social networking software that is managed by Magic Stone using the Collaborative Code Construction Contract (C4). See the website for more information about Magic Stone and C4.
 
 ## Limitations with YunoHost

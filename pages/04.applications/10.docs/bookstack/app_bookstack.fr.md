@@ -11,10 +11,6 @@ routes:
 
 [![Installer BookStack avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=bookstack) [![Integration level](https://dash.yunohost.org/integration/bookstack.svg)](https://dash.yunohost.org/appci/app/bookstack)
 
-### Index
-
-- [Liens utiles](#useful-links)
-
 BookStack est une plate-forme simple, auto-hébergée et facile à utiliser pour organiser et stocker des informations.
 
 

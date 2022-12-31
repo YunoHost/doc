@@ -11,11 +11,6 @@ routes:
 
 [![Install Rainloop with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=rainloop) [![Integration level](https://dash.yunohost.org/integration/rainloop.svg)](https://dash.yunohost.org/appci/app/rainloop)
 
-### Index
-
-- [Configuration](#Configuration)
-- [Liens utiles](#liens-utiles)
-
 Rainloop est un webmail simple et léger.
 
 ## Configuration

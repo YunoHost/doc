@@ -11,10 +11,6 @@ routes:
 
 [![Install Mattermost with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mattermost) [![Integration level](https://dash.yunohost.org/integration/mattermost.svg)](https://dash.yunohost.org/appci/app/mattermost)
 
-### Index
-
-- [Useful links](#useful-links)
-
 Mattermost is a decentralized team communication software. For Slack enthusiasts, importing your data is possible, allowing a smooth transition to this free tool.
 
 The platform allows:

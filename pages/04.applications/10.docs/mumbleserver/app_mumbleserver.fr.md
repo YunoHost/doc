@@ -11,10 +11,6 @@ routes:
 
 [![Install Mumble server with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mumbleserver) [![Integration level](https://dash.yunohost.org/integration/mumbleserver.svg)](https://dash.yunohost.org/appci/app/mumbleserver)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 Mumble est un logiciel de voix sur IP efficace et stable qui vous permet de créer des salons audio pour plusieurs interlocuteurs. C'est un logiciel de VoIP qui fait bénéficier à ses utilisateurs d'une latence très faible tout en fournissant une qualité de son excellente. Mumble intègre également une surcouche visuelle qui se positionne discrètement au dessus des autres fenêtres afin d'avoir une vision sur l'activation des micros des gens avec qui vous parlez.
 Ici, c'est la partir serveur 'Murmur' que vous installerez sur votre instance de YunoHost.
 

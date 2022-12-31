@@ -11,10 +11,6 @@ routes:
 
 [![Installer Lychee avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=lychee) [![Integration level](https://dash.yunohost.org/integration/lychee.svg)](https://dash.yunohost.org/appci/app/lychee)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 Lychee est un outil de gestion de photos gratuit, qui fonctionne sur votre serveur ou votre espace Web. L'installation est une question de secondes. Téléchargez, gérez et partagez des photos comme à partir d'une application native. Lychee est livré avec tout ce dont vous avez besoin et toutes vos photos sont stockées en toute sécurité.
 
 ## Liens utiles

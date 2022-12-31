@@ -11,12 +11,6 @@ routes:
 
 [![Install jitsi with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=jitsi) [![Integration level](https://dash.yunohost.org/integration/jitsi.svg)](https://dash.yunohost.org/appci/app/jitsi)
 
-### Index
-
-- [Limitations of YunoHost](#limitations-with-yunohost)
-- [Customer Applications](#customer-applications)
-- [Useful links](#useful-links)
-
 Jitsi Meet is an open source software (Apache) that offers high quality, secure and scalable video conferencing. Options for screen sharing, live chat, speech requests, as well as settings for video quality are offered to facilitate group meetings.
 
 ## Limitations with YunoHost

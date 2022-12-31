@@ -9,10 +9,6 @@ routes:
 
 [![Installer Yellow avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=yellow) [![Integration level](https://dash.yunohost.org/integration/yellow.svg)](https://dash.yunohost.org/appci/app/yellow)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Yellow* est un système de gestion de contenu (CMS) pour un site simple.
 
 ## Captures d'écran

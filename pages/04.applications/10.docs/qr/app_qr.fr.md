@@ -9,10 +9,6 @@ routes:
 
 [![Installer LibreQR avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=qr) [![Integration level](https://dash.yunohost.org/integration/qr.svg)](https://dash.yunohost.org/appci/app/qr)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *LibreQR* est une interface Web pour générer des codes QR.
 
 ### Captures d'écran

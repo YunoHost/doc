@@ -9,10 +9,6 @@ routes:
 
 [![Installer Minchat avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=minchat) [![Integration level](https://dash.yunohost.org/integration/minchat.svg)](https://dash.yunohost.org/appci/app/minchat)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Minchat* est une application de chat libre et minimaliste. Elle est basée sur [wojtek77/chat](https://github.com/wojtek77/chat), elle-même basée sur [le tutoriel de Gabriel Nava](http://code.tutsplus.com/tutorials/how-to-create-a-simple-web-based-chat-application--net-5931).
 
 ### Captures d'écran

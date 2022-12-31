@@ -11,10 +11,6 @@ routes:
 
 [![Installer Gogs avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gogs) [![Integration level](https://dash.yunohost.org/integration/gogs.svg)](https://dash.yunohost.org/appci/app/gogs)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 Gogs est une forge logiciel minimaliste utilisant Git. Gogs a été conçu pour pouvoir fonctionner de manières optimale sur du matériel peu puissant type Raspberry Pi. Il est donc adapté à l'auto-hébergement d'une forge Git.
 Pour utiliser pleinement la puissance de Gogs vous devez avoir appréhender ce qu'est Git et l'utilisation d'un [logiciel de gestion de versions](https://fr.wikipedia.org/wiki/Logiciel_de_gestion_de_versions).
 

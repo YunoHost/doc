@@ -9,10 +9,6 @@ routes:
 
 [![Installer Miniflux with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=miniflux) [![Integration level](https://dash.yunohost.org/integration/miniflux.svg)](https://dash.yunohost.org/appci/app/miniflux)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Miniflux* is a minimalist and opinionated RSS feed reader.
 
 ### Screenshots

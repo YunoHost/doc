@@ -12,12 +12,6 @@ routes:
 [![Install Invoice Ninja with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=invoiceninja)
 [![Integration level](https://dash.yunohost.org/integration/invoiceninja.svg)](https://dash.yunohost.org/appci/app/invoiceninja)
 
-
-### Index
-
-- [Limitations with YunoHost](#limitations-with-yunohost)
-- [Useful links](#useful-links)
-
 Invoice Ninja is an open-source platform to create and email invoices, track payments, expenses, time billable tasks and projects for clients.
 
 

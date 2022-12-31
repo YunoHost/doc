@@ -9,10 +9,6 @@ routes:
 
 [![Installer Phpinfo with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=phpinfo) [![Integration level](https://dash.yunohost.org/integration/phpinfo.svg)](https://dash.yunohost.org/appci/app/phpinfo)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Phpinfo* is a simple phpinfo.
 
 ## Useful links

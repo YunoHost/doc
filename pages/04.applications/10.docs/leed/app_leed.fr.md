@@ -11,10 +11,6 @@ routes:
 
 [![Install Leed with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=leed) [![Integration level](https://dash.yunohost.org/integration/leed.svg)](https://dash.yunohost.org/appci/app/leed)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 Leed (contraction de Light Feed) est un agrégateur RSS/ATOM minimaliste qui permet la consultation de flux RSS de manière rapide et non intrusive.
 Cet agrégateur fonctionne avec un système de tâches automatiques afin de traiter les informations de manière transparente et de les afficher le plus rapidement possible lorsque vous vous y connectez.
 

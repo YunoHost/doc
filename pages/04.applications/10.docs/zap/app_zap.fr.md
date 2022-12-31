@@ -9,10 +9,6 @@ routes:
 
 [![Installer Zap avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=zap) [![Integration level](https://dash.yunohost.org/integration/zap.svg)](https://dash.yunohost.org/appci/app/zap)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Zap* est une alternative éthique au Fediverse qui fournit des fonctionnalités puissantes pour créer des sites web interconnectés avec une identité décentralisée, des communications et un cadre de permissions construit en utilisant la technologie commune des serveurs web.
 
 Compatible avec **Mastodon**, **Pleroma**, **Pixelfed**, **Friendica**, **Hubzilla**, **Funkwhale**, **Peertube**, **Plume**, **WriteFreely** et beaucoup, beaucoup d'autres.

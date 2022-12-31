@@ -13,13 +13,6 @@ routes:
 
 [![Install Vaultwarden with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=vaultwarden) [![Integration level](https://dash.yunohost.org/integration/vaultwarden.svg)](https://dash.yunohost.org/appci/app/vaultwarden)
 
-### Index
-
-- [Configuration](#configuration)
-- [Limitations avec YunoHost](#limitations-avec-yunohost)
-- [Applications clientes](#applications-clientes)
-- [Liens utiles](#liens-utiles)
-
 Vaultwarden est un gestionnaire de mots de passe freemium et open source sous licence AGPL, qui permet de générer et de conserver des mots de passe de manière sécurisée. Ces éléments sont protégés par un seul et unique mot de passe appelé « mot de passe maître ». Il est créé en 2016 par Kyle Spearrin, un architecte logiciel.
 
 Le logiciel est disponible sur la plupart des systèmes d'exploitation (GNU/Linux, Windows, macOS, iOS, Android ainsi qu'en ligne de commande), et comme module d'extension pour navigateur web. Il est également possible de consulter ses mot de passe depuis un site web.[¹](#sources)

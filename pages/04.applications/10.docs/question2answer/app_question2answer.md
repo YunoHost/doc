@@ -9,10 +9,6 @@ routes:
 
 [![Installer Question2Answer with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=question2answer) [![Integration level](https://dash.yunohost.org/integration/question2answer.svg)](https://dash.yunohost.org/appci/app/question2answer)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Question2Answer* (Q2A) is a popular open source Q&A platform for PHP/MySQL.
 
 ### Screenshots

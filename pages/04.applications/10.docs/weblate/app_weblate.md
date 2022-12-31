@@ -11,10 +11,6 @@ routes:
 
 [![Install Weblate with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=weblate) [![Integration level](https://dash.yunohost.org/integration/weblate.svg)](https://dash.yunohost.org/appci/app/weblate)
 
-### Index
-
-- [Useful links](#useful-links)
-
 Weblate is a web-based translation tool strongly linked to version control systems. Through a clear and simple user interface, Weblate allows the propagation of translations between sub-projects, can check the
 quality of the translations and is automatically linked to the source files.
 Weblate works very well with a GitLab, GitHub, Bitbucket server. It is possible to import already existing translations of a project, allowing everyone to contribute to the translation of a project via its web interface,

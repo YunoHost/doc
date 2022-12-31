@@ -11,12 +11,6 @@ routes:
 
 [![Install Funkwhale with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=funkwhale) [![Integration level](https://dash.yunohost.org/integration/funkwhale.svg)](https://dash.yunohost.org/appci/app/funkwhale)
 
-### Index
-
-- [Administration](#administration)
-- [Limitations with YunoHost](#limitations-with-yunohost)
-- [Useful links](#useful-links)
-
 Funkwhale is a self-hosted, federated free music streaming server. Each user has a library in which they can add the titles they want, and which they can share with other users, whether they are on the same instance or not. [¹](#sources)
 
 ## Administration

@@ -9,10 +9,6 @@ routes:
 
 [![Installer PrettyNoemie CMS with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=prettynoemiecms) [![Integration level](https://dash.yunohost.org/integration/prettynoemiecms.svg)](https://dash.yunohost.org/appci/app/prettynoemiecms)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *PrettyNoemie CMS* offers its users an ergonomic solution, simple and elegant to build in no time responsive windows sites with modern design.
 The construction of your site will consist of arranging at your convenience various modules, edit their content, and customize your site by choosing fonts, formatting text, and display colors.
 

@@ -13,12 +13,6 @@ routes:
 [![Install Grocy with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=grocy) 
 [![Integration level](https://dash.yunohost.org/integration/grocy.svg)](https://dash.yunohost.org/appci/app/grocy)
 
-
-### Index
-
-- [Configuration](#configuration)
-- [Useful links](#useful-links)
-
 *Grocy* is a web-based self-hosted groceries & household management solution for your home.
 
 ## Configuration

@@ -9,10 +9,6 @@ routes:
 
 [![Installer phpBB avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=phpbb) [![Integration level](https://dash.yunohost.org/integration/phpbb.svg)](https://dash.yunohost.org/appci/app/phpbb)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *phpBB* est une solution logicielle gratuite de forum "à plat" qui peut être utilisée pour rester en contact avec un groupe de personnes ou pour alimenter l'ensemble de votre site Web. Avec une vaste base de données d'extensions créées par les utilisateurs et une base de données de styles contenant des centaines de styles et d'images pour personnaliser votre forum, vous pouvez créer un forum unique en quelques minutes.
 
 ### Captures d'écran

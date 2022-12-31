@@ -9,10 +9,6 @@ routes:
 
 [![Installer Syncthing avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=syncthing) [![Integration level](https://dash.yunohost.org/integration/syncthing.svg)](https://dash.yunohost.org/appci/app/syncthing)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Syncthing* est un programme de synchronisation continue de fichiers. Il synchronise les fichiers entre deux ou plusieurs ordinateurs en temps réel, à l'abri des regards indiscrets. Vos données sont vos seules données et vous méritez de choisir où elles sont stockées, si elles sont partagées avec un tiers et comment elles sont transmises sur Internet.
 
 ### Captures d'écran

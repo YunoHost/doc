@@ -9,10 +9,6 @@ routes:
 
 [![Installer Converse avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=converse) [![Integration level](https://dash.yunohost.org/integration/converse.svg)](https://dash.yunohost.org/appci/app/converse)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Converse* est un client de chat XMPP gratuit et open-source écrit en JavaScript qui peut être étroitement intégré à n'importe quel site web.
 
 L'avantage d'utiliser converse.js plutôt que de s'appuyer sur une solution SaaS (software-as-a-service) est que vos utilisateurs peuvent bénéficier d'une expérience de chat en ligne beaucoup plus personnalisée, rationalisée et intégrée et que vous avez le contrôle des données. Ce dernier point est une exigence pour de nombreux sites traitant des informations sensibles.

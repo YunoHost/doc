@@ -9,10 +9,6 @@ routes:
 
 [![Installer PeerTube search-index avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=peertube-search-index) [![Integration level](https://dash.yunohost.org/integration/peertube-search-index.svg)](https://dash.yunohost.org/appci/app/peertube-search-index)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *PeerTube search-index* est un moteur de recherche pour les vidéos et les chaînes [PeerTube](https://joinpeertube.org/), développé par Framasoft.
 
 ### Captures d'écran

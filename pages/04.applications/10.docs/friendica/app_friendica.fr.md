@@ -11,11 +11,6 @@ routes:
 
 [![Install friendica with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=friendica) [![Integration level](https://dash.yunohost.org/integration/friendica.svg)](https://dash.yunohost.org/appci/app/friendica)
 
-### Index
-
-- [Configuration](#configuration)
-- [Liens utiles](#liens-utiles)
-
 Friendica est une plateforme de communication décentralisée qui intègre la communication sociale. La plate-forme est liée à des projets sociaux indépendants et à des services aux entreprises.
 
 Son objectif est de libérer les amis, la famille et les collègues des entreprises qui récoltent des données ; Friendica vise à ce que la communication sociale soit libre et ouverte, tout en circulant entre tous les fournisseurs aussi facilement que le courrier électronique.[¹](#sources)

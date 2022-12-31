@@ -11,12 +11,6 @@ routes:
 
 [![Install Gitea with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gitea) [![Integration level](https://dash.yunohost.org/integration/gitea.svg)](https://dash.yunohost.org/appci/app/gitea)
 
-### Index
-
-- [Limitations avec YunoHost](#limitations-avec-yunohost)
-- [Applications clientes](#applications-clientes)
-- [Liens utiles](#liens-utiles)
-
 Gitea est un service Git auto-hébergé très simple à installer et à utiliser. Il est similaire à GitHub, Bitbucket ou GitLab. Le développement initial provient sur Gogs, mais il a été forké puis renommé Gitea.[¹](#sources)
 
 ## Limitations avec YunoHost

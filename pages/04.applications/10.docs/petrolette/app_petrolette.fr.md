@@ -9,10 +9,6 @@ routes:
 
 [![Installer Petrolette avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=petrolette) [![Integration level](https://dash.yunohost.org/integration/petrolette.svg)](https://dash.yunohost.org/appci/app/petrolette)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Petrolette* est la page d'actu qui ne sait rien de toi.
 
 ### Captures d'écran

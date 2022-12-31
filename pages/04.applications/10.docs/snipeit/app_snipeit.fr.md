@@ -9,10 +9,6 @@ routes:
 
 [![Installer Snipe-IT avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=snipeit) [![Integration level](https://dash.yunohost.org/integration/snipeit.svg)](https://dash.yunohost.org/appci/app/snipeit)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Snipe-IT* est un gestionnaire de ressources informatiques.
 
 ### Captures d'écran

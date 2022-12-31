@@ -9,10 +9,6 @@ routes:
 
 [![Installer Mailman3 avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=mailman3) [![Integration level](https://dash.yunohost.org/integration/mailman3.svg)](https://dash.yunohost.org/appci/app/mailman3)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Mailman3* est un gestionnaire de liste de discussion par email.
 
 ## Captures d'écran

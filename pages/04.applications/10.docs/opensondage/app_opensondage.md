@@ -11,10 +11,6 @@ routes:
 
 [![Install Opensondage with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=opensondage) [![Integration level](https://dash.yunohost.org/integration/opensondage.svg)](https://dash.yunohost.org/appci/app/opensondage)
 
-### Index
-
-- [Useful links](#useful-links)
-
 Opensondage-Framadate is an online service for planning an appointment or making a decision quickly and easily. No registration is required. It's a community free/libre software alternative to Doodle.
 Here is how it works:
 

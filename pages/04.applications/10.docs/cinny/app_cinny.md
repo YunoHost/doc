@@ -9,10 +9,6 @@ routes:
 
 [![Install Cinny with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=cinny) [![Integration level](https://dash.yunohost.org/integration/cinny.svg)](https://dash.yunohost.org/appci/app/cinny)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Cinny* A Matrix client focusing primarily on simple, elegant and secure interface.
 
 ## Disclaimers / important information

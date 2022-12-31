@@ -11,11 +11,6 @@ routes:
 
 [![Install concrete5 with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=concrete5) [![Integration level](https://dash.yunohost.org/integration/concrete5.svg)](https://dash.yunohost.org/appci/app/concrete5)
 
-### Index
-
-- [Limitations with YunoHost](#limitations-with-yunohost)
-- [Useful links](#useful-links)
-
 ## Limitations with YunoHost
 
 LDAP and HTTP auth are not supported.

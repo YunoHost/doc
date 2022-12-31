@@ -9,10 +9,6 @@ routes:
 
 [![Installer my_capsule with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=my_capsule) [![Integration level](https://dash.yunohost.org/integration/my_capsule.svg)](https://dash.yunohost.org/appci/app/my_capsule)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *my_capsule* is a custom Gemini capsule with SFTP access and HtmGem to make your Gemini pages reachable on the web.
 
 ### Screenshots

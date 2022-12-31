@@ -11,10 +11,6 @@ routes:
 
 [![Install Wekan with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=wekan) [![Integration level](https://dash.yunohost.org/integration/wekan.svg)](https://dash.yunohost.org/appci/app/wekan)
 
-### Index
-
-- [Useful links](#useful-links)
-
 Wekan is an online collaborative task manager. It facilitates the management of projects through the development of todo lists.
 Wekan offers a wide range of features, making it a very complete service adapted to complex projects. If you are looking for a simpler kanban tool, you can use [Kanboard](/app_kanboard)
 

@@ -13,13 +13,6 @@ routes:
 [![Install μlogger with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=ulogger) 
 [![Integration level](https://dash.yunohost.org/integration/ulogger.svg)](https://dash.yunohost.org/appci/app/ulogger)
 
-
-### Index
-
-- [Features](#features)
-- [Configuration](#configuration)
-- [Useful links](#useful-links)
-
 **μlogger** is a web application for real-time collection of geolocation data, tracks viewing and management. Together with a dedicated μlogger mobile client (*F-Droid Store*) it may be used as a complete self hosted server–client solution for logging and monitoring users' geolocation.
 
 ## Features:

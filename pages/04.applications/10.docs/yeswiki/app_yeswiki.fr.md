@@ -9,10 +9,6 @@ routes:
 
 [![Installer YesWiki avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=yeswiki) [![Integration level](https://dash.yunohost.org/integration/yeswiki.svg)](https://dash.yunohost.org/appci/app/yeswiki)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *YesWiki* est un wiki conçu pour rester simple, très facile à installer, en français traduit en anglais, espagnol, catalan, flamand...
 
 Néanmoins, avec un YesWiki on peut fabriquer un site internet aux usages multiples :
