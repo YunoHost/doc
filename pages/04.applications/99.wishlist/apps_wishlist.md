@@ -194,6 +194,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | mycryptochat | Encrypted IM |  | [Package Draft](https://github.com/mrtino/mycryptochat_ynh) |
 | mx-puppet-discord | A bridge between Matrix and Discord | [Upstream](https://github.com/matrix-discord/mx-puppet-discord) |  |
 | [Nautilus](https://myactivity.stream/) | Turn your website into an ActivityPub profile  | [Upstream](https://github.com/aaronpk/Nautilus) |  |
+| [Nebula](https://nebula.defined.net/docs/) | Scalable overlay networking tool with a focus on performance, simplicity and security. | [Upstream](https://github.com/slackhq/nebula) |  |
 | Netrunner |  | [Upstream](https://github.com/mtgred/netrunner) |  |
 | [Netbird](https://netbird.io/) | Create an overlay peer-to-peer network connecting machines regardless of their location | [Upstream](https://github.com/netbirdio/netbird) | |
 | [nostr] |  |  (https://nostr.com/) | The simplest open protocol that is able to create a censorship-resistant global "social" network once for all.
