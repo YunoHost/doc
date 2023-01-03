@@ -98,6 +98,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Filestash](https://www.filestash.app/) |  | [Upstream](https://github.com/mickael-kerjean/filestash) |  |
 | [fishnet](https://lichess.org/get-fishnet) | Distributed Stockfish analysis for lichess.org | [Upstream](https://github.com/niklasf/fishnet) |  |
 | FitTrackee |  | [Upstream](https://github.com/SamR1/FitTrackee) |  |
+| FlareSolverr | Proxy server to bypass Cloudflare protection | [Upstream](https://github.com/FlareSolverr/FlareSolverr) | |
 | Flask | Skeleton for flask apps |  | [Package Draft](https://github.com/YunoHost-Apps/flask_ynh) |
 | [foodsoft](https://foodcoops.github.io/foodsoft-hosting/) | Manage a non-profit food cooperative |  | [Package Draft](https://github.com/YunoHost-Apps/foodsoft_ynh) |
 | [Forem](https://www.forem.com/) | Forem is open source software for building communities. | [Upstream](https://github.com/forem/selfhost) | |
