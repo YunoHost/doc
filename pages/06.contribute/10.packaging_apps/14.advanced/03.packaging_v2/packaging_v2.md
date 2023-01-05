@@ -56,13 +56,13 @@ This will edit the file in place and you should then carefully review and iterat
     - `DESCRIPTION.md` and the `screenshots/` folder are expected to be displayed prior to the app install form (similar to app stores on mobile)
     - `ADMIN.md` is expected to be made available somewhere in the info page and should contain technical admin notes. Other pages can be defined (just name it `WHATEVER.md`). Lang codes are also supported following the existing scheme for the README, eg `README_fr.md` is the French version, hence you can create `ADMIN_fr.md`, etc.
     - Note that the `ADMIN.md` page supports the `__FOOBAR__` notation that will be automatically replaced with the app's `foobar` setting
-- **The content of the `doc/notification/` folder is meant to replace the `ynh_send_readme_to_admin` mechanics**. The integration of these in the webadmin is still work in progress. You can create:
-    - `doc/notifications/pre_install.md`: a note to be displayed prior to the app install. Typically to warn of something unusual, such as "the app install will automatically add 1GB swap to the system".
-    - `doc/notifications/post_install.md`: a note to be displayed after the app install. Typically to explain post-install operations to be performed manually by the admin and that cannot be automated.
-    - `doc/notifications/pre_upgrade.md`: a note to be displayed prior to any upgrade of this app.
-    - `doc/notifications/pre_upgrade.d/{version}.md`: a note to be displayed prior to a specific version upgrade.
-    - `doc/notifications/post_upgrade.md`: a note to be displayed after the app upgrade. For example in the context of Nextcloud, the fact that you may need to re-enable custom modules manually?
-    - Note that the notifications supports the `__FOOBAR__` notation that will be automatically replaced with the app's `foobar` setting
+- **Special files called 'notifications' are meant to replace the `ynh_send_readme_to_admin` mechanics**. They are also to be added to the `doc` folder: 
+    - `doc/PRE_INSTALL.md`: a note to be displayed prior to the app install. Typically to warn of something unusual, such as "the app install will automatically add 1GB swap to the system".
+    - `doc/POST_INSTALL.md`: a note to be displayed after the app install. Typically to explain post-install operations to be performed manually by the admin and that cannot be automated.
+    - `doc/PRE_UPGRADE.md`: a note to be displayed prior to any upgrade of this app.
+    - `doc/PRE_UPGRADE.d/{version}.md`: a note to be displayed prior to a specific version upgrade.
+    - `doc/POST_UPGRADE.md`: a note to be displayed after the app upgrade. For example in the context of Nextcloud, the fact that you may need to re-enable custom modules manually?
+    - Note that the notifications, like `ADMIN.md`, supports the `__FOOBAR__` notation that will be automatically replaced with the app's `foobar` setting
  - **Replace some historical names with more sensible ones**, or homogenize some practices:
     - `final_path` is now `install_dir` (this migration should be automatically handled by the core and the `convert_app_to_packaging_v2.py` script)
     - `datadir` is now `data_dir` to be consistent with `install_dir` (this migration should be automatically handled by the core and the `convert_app_to_packaging_v2.py` script)
