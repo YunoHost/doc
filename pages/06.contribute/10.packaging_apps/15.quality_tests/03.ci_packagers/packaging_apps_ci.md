@@ -7,7 +7,28 @@ routes:
   default: '/packaging_apps_ci'
 ---
 
-! This page is outdated and should be reworked
+The YunoHost project manages a [Continuous Integration Server](https://ci-apps-dev.yunohost.org/ci/) you can use to regularly test your integration.
+It's running [package_check](https://github.com/YunoHost/package_check).
+
+For this You need to have:
+- Your repository transferred to [YunoHost-Apps repository](https://github.com/YunoHost-Apps)
+- A clean check_process file in your repo [See syntax description here](https://github.com/YunoHost/package_check#syntax-of-check_process)
+- It's recommended to have tested it locally before with [Package_check tool](https://github.com/YunoHost/package_check)
+
+Thanks to a github bot, it's very easy to run a test:
+- Just create a Pull Request in your github repo, and add the following comment: !testme
+- You should then be greeted almost immediatly by a comment from the bot like this
+![image](https://user-images.githubusercontent.com/771800/211145536-6f84c5f4-5172-4498-83cb-9acd5b96ba21.png)
+- Sometimes the bot is not being triggered... Just smile and try again !
+- Then clicking on this comment will go to the Continuous Integration Server with your status of test
+
+The test will be scheduled in a queue, once it is run and complete, the following will happen:
+- The bot will add the result in the PR as a new comment
+- Your README in the repository will be updated with the test result and the updated integration level of your application.
+
+At any time you can have a look at [the CI Server homepage](https://ci-apps-dev.yunohost.org/ci/) to see what tests are currently ongoing.
+
+! The rest of this page is outdated and should be reworked
 
 A continuous integration server is available for any packager willing to test an app with [Package_check](https://github.com/YunoHost/package_check).
 
