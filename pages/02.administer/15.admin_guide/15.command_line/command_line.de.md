@@ -43,9 +43,9 @@ Es wird nach einem Passwort gefragt. Handelt es sich um einen VPS, sollte der VP
 
 Nach dem allerersten Login sollte man das root Passwort ändern. Der Server könnte dazu automatisch auffordern. Falls nicht, ist der Befehl `passwd` zu benutzen. Es ist wichtig, ein einigermaßen starkes Passwort zu wählen. Beachte, dass das root Passwort durch das admin Passwort überschrieben wird, wenn man die Postinstallation durchführt.
 
-#### Let's configure !
+#### Auf ans Konfigurieren!
 
-We're now ready to begin the [post-installation](/postinstall).
+Wir sind nun bereit, mit der [Postinstallation](/postinstall) zu beginnen.
 
 ## After installing YunoHost
 
