@@ -11,10 +11,6 @@ routes:
 
 [![Install Simple Torrent with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=simple-torrent) [![Integration level](https://dash.yunohost.org/integration/simple-torrent.svg)](https://dash.yunohost.org/appci/app/simple-torrent)
 
-### Index
-
-- [Useful links](#useful-links)
-
 Simple Torrent is a a self-hosted remote torrent client, written in Go (golang). Started torrents remotely, download sets of files on the local disk of the server, which are then retrievable or streamable via HTTP.
 
 ## Useful links

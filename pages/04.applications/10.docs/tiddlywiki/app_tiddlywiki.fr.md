@@ -9,10 +9,6 @@ routes:
 
 [![Installer TiddlyWiki avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tiddlywiki) [![Integration level](https://dash.yunohost.org/integration/tiddlywiki.svg)](https://dash.yunohost.org/appci/app/tiddlywiki)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *TiddlyWiki* est un wiki interactif complet en JavaScript. Il peut être utilisé comme un simple fichier HTML dans le navigateur ou comme une puissante application Node.js. Il est hautement personnalisable : toute l'interface utilisateur est elle-même implémentée en WikiText paramétrable.
 
 ### Captures d'écran

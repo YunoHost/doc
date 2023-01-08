@@ -11,10 +11,6 @@ routes:
 
 [![Install Roundcube with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=roundcube) [![Integration level](https://dash.yunohost.org/integration/roundcube.svg)](https://dash.yunohost.org/appci/app/roundcube)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Roundcube* is a web client for email messaging also called webmail.
 
 ### Synchronize your contacts

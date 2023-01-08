@@ -11,11 +11,6 @@ routes:
 
 [![Install Ampache with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=ampache) [![Integration level](https://dash.yunohost.org/integration/ampache.svg)](https://dash.yunohost.org/appci/app/ampache)
 
-### Index
-
-- [Limitations avec YunoHost](#limitations-avec-yunohost)
-- [Liens utiles](#liens-utiles)
-
 Ampache est un logiciel libre de streaming audio.
 
 ## Limitations avec YunoHost

@@ -9,10 +9,6 @@ routes:
 
 [![Install AgenDAV with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=agendav) [![Integration level](https://dash.yunohost.org/integration/agendav.svg)](https://dash.yunohost.org/appci/app/agendav)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *AgenDAV* is a CalDAV web client which features an AJAX interface to allow users to manage their own calendars and shared ones.
 
 ## Useful links

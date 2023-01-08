@@ -9,10 +9,6 @@ routes:
 
 [![Installer Movim avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=movim) [![Integration level](https://dash.yunohost.org/integration/movim.svg)](https://dash.yunohost.org/appci/app/movim)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Movim* est un client XMPP multiplateforme basé sur le web.
 
 ### Captures d'écran

@@ -11,10 +11,6 @@ routes:
 
 [![Install Anfora with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=anfora) [![Integration level](https://dash.yunohost.org/integration/anfora.svg)](https://dash.yunohost.org/appci/app/anfora)
 
-### Index
-
-- [Useful links](#useful-links)
-
 Self-hosted photo gallery federated social network.
 
 ## Useful links

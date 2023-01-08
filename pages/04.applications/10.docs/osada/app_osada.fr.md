@@ -9,10 +9,6 @@ routes:
 
 [![Installer Osada avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=osada) [![Integration level](https://dash.yunohost.org/integration/osada.svg)](https://dash.yunohost.org/appci/app/osada)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Osada* utilise le protocole **Zot6** qui est la prochaine version du protocole **zot5**. Osada a un support natif pour le **protocole ActivityPub** (norme W3C) ainsi que pour les fonctionnalités plus avancées. Il peut inter-opérer avec d'autres applications et projets de réseaux sociaux dans l'un ou l'autre de ces espaces, notamment **Mastodon, Pleroma, Pixelfed, PeerTube, Funkwhale, Zap, Friendica, Hubzilla,** et bien d'autres.
 
 ### Captures d'écran

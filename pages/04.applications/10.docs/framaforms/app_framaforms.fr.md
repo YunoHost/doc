@@ -11,10 +11,6 @@ routes:
 
 [![Install framaforms with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=framaforms) [![Integration level](https://dash.yunohost.org/integration/framaforms.svg)](https://dash.yunohost.org/appci/app/framaforms)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 Framaforms est un service de formulaires et d'enquêtes en ligne. Les utilisateurs enregistrés sont autorisés à créer des formulaires, à les partager, à collecter et à visualiser les résultats par le biais d'une interface simple.
 Il est possible d'être notifié de chaque réponse, de récupérer les réponses sous forme graphiques ou de tableaux. Les questionnaires peuvent être aussi élaborés sur plusieurs pages et présenter des champs conditionnels ou obligatoires.
 

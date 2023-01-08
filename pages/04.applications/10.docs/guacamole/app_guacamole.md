@@ -9,10 +9,6 @@ routes:
 
 [![Installer Guacamole with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=guacamole) [![Integration level](https://dash.yunohost.org/integration/guacamole.svg)](https://dash.yunohost.org/appci/app/guacamole)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Guacamole* is a clientless remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH.
 
 ### Screenshots

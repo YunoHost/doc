@@ -9,10 +9,6 @@ routes:
 
 [![Installer Mopidy with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=mopidy) [![Integration level](https://dash.yunohost.org/integration/mopidy.svg)](https://dash.yunohost.org/appci/app/mopidy)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Mopidy* allows you to listen to music, podcasts and radio programs from the local disk and various streaming services.
 
 ### Screenshots

@@ -9,10 +9,6 @@ routes:
 
 [![Installer Gemserv with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=gemserv) [![Integration level](https://dash.yunohost.org/integration/gemserv.svg)](https://dash.yunohost.org/appci/app/gemserv)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Gemserv* is a Gemini server written in Rust.
 
 ### Disclaimers / important information

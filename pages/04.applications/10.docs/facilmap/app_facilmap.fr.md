@@ -9,10 +9,6 @@ routes:
 
 [![Installer Facilmap avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=facilmap) [![Integration level](https://dash.yunohost.org/integration/facilmap.svg)](https://dash.yunohost.org/appci/app/facilmap)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Facilmap* est une carte collaborative avec une interface simple et pratique.
 
 ## Liens utiles

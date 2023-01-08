@@ -9,10 +9,6 @@ routes:
 
 [![Installer OpenNote with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=opennote) [![Integration level](https://dash.yunohost.org/integration/opennote.svg)](https://dash.yunohost.org/appci/app/opennote)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *OpenNote* is a web based text editor/note taking software.
 
 ### Screenshots

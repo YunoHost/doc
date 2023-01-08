@@ -11,10 +11,6 @@ routes:
 
 [![Install MediaWiki with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mediawiki) [![Integration level](https://dash.yunohost.org/integration/mediawiki.svg)](https://dash.yunohost.org/appci/app/mediawiki)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 MediaWiki est un ensemble wiki à base de logiciels libres Open source, développé à l’origine pour Wikipédia.
 
 ## Liens utiles

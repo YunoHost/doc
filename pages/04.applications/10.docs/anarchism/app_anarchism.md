@@ -11,10 +11,6 @@ routes:
 
 [![Install anarchism with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=anarchism) [![Integration level](https://dash.yunohost.org/integration/anarchism.svg)](https://dash.yunohost.org/appci/app/anarchism)
 
-### Index
-
-- [Useful links](#useful-links)
-
 This is an anarchist FAQ. Its aim is to present what anarchism really stands for and indicate why you should become an anarchist.
 
 ## Useful links

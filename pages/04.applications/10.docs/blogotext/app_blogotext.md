@@ -11,8 +11,6 @@ routes:
 
 [![Install BlogoText with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=blogotext) [![Integration level](https://dash.yunohost.org/integration/blogotext.svg)](https://dash.yunohost.org/appci/app/blogotext)
 
-### Index
-
 - [Features](#features)
 - [Limitations with YunoHost](#limitations-with-yunohost)
 - [Useful links](#useful-links)

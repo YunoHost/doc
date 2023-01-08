@@ -9,10 +9,6 @@ routes:
 
 [![Installer h5ai avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=h5ai) [![Integration level](https://dash.yunohost.org/integration/h5ai.svg)](https://dash.yunohost.org/appci/app/h5ai)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *h5ai* est un serveur moderne d'index pour NGINX.
 
 ### Avertissements / informations importantes

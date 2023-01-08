@@ -11,10 +11,6 @@ routes:
 
 [![Install Wallabag2 with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=wallabag2) [![Integration level](https://dash.yunohost.org/integration/wallabag2.svg)](https://dash.yunohost.org/appci/app/wallabag2)
 
-### Index
-
-- [Useful links](#useful-links)
-
 Wallabag is a self hostable Read-It-Later application allowing you to not miss any content anymore. Click, save, read it when you can.
 It extracts content so that you can read it when you have time.
 

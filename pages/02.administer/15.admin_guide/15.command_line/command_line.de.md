@@ -27,25 +27,25 @@ Wenn du Zuhause installierst (z.B. auf einem Raspberry Pi oder OLinuXino), dann 
 - Prüfe die angezeigten Geräte in der Benutzeroberfläche deines Routers, ob du das Gerät findest;
 - Schließe einen Bildschirm und Tastatur an deinen Server, logge dich ein und tippe `hostname --all-ip-address`.
 
-#### Connect
+#### Verbinden
 
-Assuming your IP address is `111.222.333.444`, open a terminal and enter :
+Angenommen deine IP Addresse ist `111.222.333.444`, öffne einen Terminal und gib Folgendes ein:
 
 ```bash
 ssh root@111.222.333.444
 ```
 
-A password will be asked. If this is a VPS, your VPS provided should have communicated you the password. If you used a pre-installed image (for x86 computer or ARM board), the password should be `yunohost`.
+Es wird nach einem Passwort gefragt. Handelt es sich um einen VPS, sollte der VPS Provider dir das Passwort kommuniziert haben. Wenn du ein pre-installed image benutzt (für x86 Computer oder ARM boards), sollte das Passwort `yunohost` sein.
 
-! Since YunoHost 3.4, after running the postinstallation, you won't be able to login as `root` anymore. Instead, **you should login using the `admin` user !** In the event that the LDAP server is broken and the `admin` user is unusable, you may still however still be able to login using `root` from the local network.
+! Seit YunoHost 3.4 kann man sich nach dem Ausführen der Postinstallation nicht mehr als `root` anmelden. **Stattdessen sollte man sich mit dem `admin` Benutzer anmelden!** Für den Fall, dass der LDAP-Server defekt und der `admin` Benutzer nicht verwendbar ist, kann man sich eventuell trotzdem noch mit `root` über das lokale Netzwerk anmelden.
 
-#### Change the password!
+#### Ändere das Passwort!
 
-After logging in for the first time, you should change the root password. The server might automatically ask you to do so. If not, use the command `passwd`. It is important to choose a reasonably strong password. Note that the root password will be overriden by the admin password when you perform the postinstallation.
+Nach dem allerersten Login sollte man das root Passwort ändern. Der Server könnte dazu automatisch auffordern. Falls nicht, ist der Befehl `passwd` zu benutzen. Es ist wichtig, ein einigermaßen starkes Passwort zu wählen. Beachte, dass das root Passwort durch das admin Passwort überschrieben wird, wenn man die Postinstallation durchführt.
 
-#### Let's configure !
+#### Auf ans Konfigurieren!
 
-We're now ready to begin the [post-installation](/postinstall).
+Wir sind nun bereit, mit der [Postinstallation](/postinstall) zu beginnen.
 
 ## After installing YunoHost
 

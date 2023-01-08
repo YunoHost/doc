@@ -11,11 +11,6 @@ routes:
 
 [![Installer OnlyOffice avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=onlyoffice) [![Integration level](https://dash.yunohost.org/integration/onlyoffice.svg)](https://dash.yunohost.org/appci/app/onlyoffice)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-- [Configurer OnlyOffice Server avec Nextcloud](#Configurer-OnlyOffice-Server-avec-Nextcloud)  
-
 OnlyOffice Server est une suite bureautique collaborative en ligne gratuite comprenant des visualiseurs et des éditeurs de texte, de feuilles de calcul et de présentations, entièrement compatible avec les formats Office Open XML : .docx, .xlsx, .pptx et permettant l'édition collaborative en temps réel.
 
 ## Configurer OnlyOffice Server avec Nextcloud

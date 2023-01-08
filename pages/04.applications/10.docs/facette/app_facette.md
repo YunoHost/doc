@@ -9,10 +9,6 @@ routes:
 
 [![Installer Facette with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=facette) [![Integration level](https://dash.yunohost.org/integration/facette.svg)](https://dash.yunohost.org/appci/app/facette)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Facette* is a web application to display time series data from various sources — such as collectd, Graphite, InfluxDB or KairosDB — on graphs, designed to be easy to setup and to use.
 
 ## Useful links

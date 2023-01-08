@@ -9,10 +9,6 @@ routes:
 
 [![Installer Kimai2 avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=kimai2) [![Integration level](https://dash.yunohost.org/integration/kimai2.svg)](https://dash.yunohost.org/appci/app/kimai2)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Kimai2* est la version actualisée du timetracker open source Kimai. Actuellement, il est dans une phase de développement précoce, il est utilisable mais certaines fonctionnalités avancées de Kimai v1 sont manquantes.
 
 Kimai v2 n'a rien en commun avec son prédécesseur Kimai v1 à part les idées de base du suivi du temps et l'équipe de développement actuelle.

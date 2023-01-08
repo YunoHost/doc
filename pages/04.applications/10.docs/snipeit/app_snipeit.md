@@ -9,10 +9,6 @@ routes:
 
 [![Installer Snipe-IT with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=snipeit) [![Integration level](https://dash.yunohost.org/integration/snipeit.svg)](https://dash.yunohost.org/appci/app/snipeit)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Snipe-IT* is a manage assets for IT operations.
 
 ### Screenshots

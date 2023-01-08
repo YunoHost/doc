@@ -9,10 +9,6 @@ routes:
 
 [![Installer Vikunja avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=vikunja) [![Integration level](https://dash.yunohost.org/integration/vikunja.svg)](https://dash.yunohost.org/appci/app/vikunja)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Vikunja* est une application de liste de tâches Open Source auto-hébergée pour toutes les plateformes.
 
 ### Caractéristiques

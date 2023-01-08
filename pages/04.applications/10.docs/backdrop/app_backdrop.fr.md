@@ -9,10 +9,6 @@ routes:
 
 [![Installer Backdrop avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=backdrop) [![Integration level](https://dash.yunohost.org/integration/backdrop.svg)](https://dash.yunohost.org/appci/app/backdrop)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Backdrop* est un système de gestion de contenu complet qui permet aux utilisateurs non techniques de gérer une grande variété de contenus. Il peut être utilisé pour créer toutes sortes de sites web, notamment des blogs, des galeries d'images, des réseaux sociaux, des intranets, etc.
 
 ## Liens utiles

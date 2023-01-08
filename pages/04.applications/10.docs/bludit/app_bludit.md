@@ -11,10 +11,6 @@ routes:
 
 [![Install Bludit with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=bludit) [![Integration level](https://dash.yunohost.org/integration/bludit.svg)](https://dash.yunohost.org/appci/app/bludit)
 
-### Index
-
-- [Useful links](#useful-links)
-
 Bludit is a web application to build your own website or blog in seconds; it's completely free and open source. Bludit is a Flat-File CMS, which (in this case) means that Bludit uses files in the JSON format to store the content. You don't need to install or configure a database; you only need a web server with PHP support.
 
 ## Useful links

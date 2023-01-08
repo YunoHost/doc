@@ -9,10 +9,6 @@ routes:
 
 [![Installer Synapse with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=synapse) [![Integration level](https://dash.yunohost.org/integration/synapse.svg)](https://dash.yunohost.org/appci/app/synapse)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Synapse* is an instant messaging server Matrix network.
 
 YunoHost chatroom with Matrix: [https://matrix.to/#/#yunohost:matrix.org](https://matrix.to/#/#yunohost:matrix.org).

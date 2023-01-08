@@ -9,10 +9,6 @@ routes:
 
 [![Installer TeamPass with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=teampass) [![Integration level](https://dash.yunohost.org/integration/teampass.svg)](https://dash.yunohost.org/appci/app/teampass)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *TeamPass* is a Passwords Manager dedicated for managing passwords in a collaborative way by sharing them among team members.
 Teampass offers a large set of features permitting to manage your passwords and related data in an organized way in respect to the access rights defined for each users.
 

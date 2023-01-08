@@ -9,10 +9,6 @@ routes:
 
 [![Installer NodeBB with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nodebb) [![Integration level](https://dash.yunohost.org/integration/nodebb.svg)](https://dash.yunohost.org/appci/app/nodebb)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *NodeBB* is built using the Node.js server-side JavaScript platform, delivering unmatched performance.
 Building on this high performance platform means fast and dependable performance that will support even the biggest and most active community.
 

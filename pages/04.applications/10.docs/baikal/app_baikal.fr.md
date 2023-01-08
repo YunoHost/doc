@@ -11,18 +11,6 @@ routes:
 
 [![Install Baïkal with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=baikal) [![Integration level](https://dash.yunohost.org/integration/baikal.svg)](https://dash.yunohost.org/appci/app/baikal)
 
-### Index
-
-- [Configuration](#configuration)
-  - [Connexion à l'interface d'administration](#connexion-à-l’interface-d’administration)
-  - [Authentification LDAP](#authentification-ldap)
-- [Connexion CalDAV](#connexion-caldav)
-  - [Connexion de Thunderbird avec Lightning](#connexion-de-thunderbird-avec-lightning)
-  - [Connexion de AgenDAV](#connexion-de-agendav)
-- [Connexion CardDAV](#connexion-carddav)
-- [Liens utiles](#liens-utiles)
-
-
 Baïkal est un serveur de calendriers et de contacts accessible par les protocoles CalDAV (calendriers) et CardDAV (carnets d’adresses), autorisant ainsi la synchronisation avec de nombreux clients (Thunderbird + Lightning par exemple).
 
 **AVERTISSEMENT** : Baïkal ne fonctionnera pas si vous avez installé un **Nextcloud** (leurs fonctions cardav/caldav entrent en conflit).
@@ -76,7 +64,7 @@ Le carnet d’adresses est maintenant accessible.
 
 ## Liens utiles
 
- + Site web : [www.baikal-server.com (en)](http://www.baikal-server.com/)
- + Documentation officielle : [sabre.io - baikal (en)](https://sabre.io/baikal/)
+ + Site web : [sabre.io - baikal (en)](https://sabre.io/baikal/)
+ + Documentation officielle : [sabre.io - baikal/dav (en)](https://sabre.io/dav/)
  + Dépôt logiciel de l'application : [github.com - YunoHost-Apps/baikal](https://github.com/YunoHost-apps/baikal_ynh)
  + Remonter un bug ou une amélioration en créant un ticket (issue) : [github.com - YunoHost-Apps/baikal/issues](https://github.com/YunoHost-apps/baikal_ynh/issues)

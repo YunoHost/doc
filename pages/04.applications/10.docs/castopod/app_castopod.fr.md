@@ -9,10 +9,6 @@ routes:
 
 [![Installer Castopod avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=castopod) [![Integration level](https://dash.yunohost.org/integration/castopod.svg)](https://dash.yunohost.org/appci/app/castopod)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Castopod* est une plateforme d'hébergement gratuite et open-source conçue pour les podcasteurs qui souhaitent s'engager et interagir avec leur public.
 
 Castopod est facile à installer et a été construit sur la base de CodeIgniter4, un puissant framework PHP à l'empreinte très réduite.

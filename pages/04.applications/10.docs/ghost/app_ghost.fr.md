@@ -9,10 +9,6 @@ routes:
 
 [![Installer Ghost avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=ghost) [![Integration level](https://dash.yunohost.org/integration/ghost.svg)](https://dash.yunohost.org/appci/app/ghost)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Ghost* est une plateforme d'édition, d'adhésions, d'abonnements et de newsletters.
 
 ### Avertissements / informations importantes

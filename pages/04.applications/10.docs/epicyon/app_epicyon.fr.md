@@ -9,10 +9,6 @@ routes:
 
 [![Installer Epicyon avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=epicyon) [![Integration level](https://dash.yunohost.org/integration/epicyon.svg)](https://dash.yunohost.org/appci/app/epicyon)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Epicyon* est un Serveur ActivityPub mettant en œuvre les protocoles S2S et C2S, adapté aux ordinateurs monocartes. Comprend des fonctionnalités telles que des outils de modération, l'expiration des messages, des avertissements sur le contenu et des descriptions d'images.
 
 ## Liens utiles

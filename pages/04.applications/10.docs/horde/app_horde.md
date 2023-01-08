@@ -11,10 +11,6 @@ routes:
 
 [![Install Horde with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=horde) [![Integration level](https://dash.yunohost.org/integration/horde.svg)](https://dash.yunohost.org/appci/app/horde)
 
-### Index
-
-- [Useful links](#useful-links)
-
 Horde Groupware Webmail Edition is a free, enterprise ready, browser based communication suite. Users can read, send and organize email messages and manage and share calendars, contacts, tasks and notes with the standards compliant components from the Horde Project.[¹](#sources)
 
 ## Useful links

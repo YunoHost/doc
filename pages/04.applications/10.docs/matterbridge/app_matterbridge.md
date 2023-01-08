@@ -9,10 +9,6 @@ routes:
 
 [![Installer Matterbridge with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=matterbridge) [![Integration level](https://dash.yunohost.org/integration/matterbridge.svg)](https://dash.yunohost.org/appci/app/matterbridge)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Matterbridge* is a multi-protocols bridge for online communications.
 
 ### Configuration

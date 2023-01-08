@@ -9,10 +9,6 @@ routes:
 
 [![Installer Grafana with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=grafana) [![Integration level](https://dash.yunohost.org/integration/grafana.svg)](https://dash.yunohost.org/appci/app/grafana)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Grafana* is a metric & analytic dashboards for monitoring.
 
 ### Screenshots

@@ -9,10 +9,6 @@ routes:
 
 [![Installer Easy!Appointments with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=easyappointments) [![Integration level](https://dash.yunohost.org/integration/easyappointments.svg)](https://dash.yunohost.org/appci/app/easyappointments)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Easy!Appointments* is a highly customizable web application that allows customers to book appointments with you via a sophisticated web interface. Moreover, it provides the ability to sync your data with Google Calendar so you can use them with other services. It is an open source project that you can download and install even for commercial use. Easy!Appointments will run smoothly with your existing website as it can be installed in a single folder of the server and of course share an existing database.
 
 ## Useful links

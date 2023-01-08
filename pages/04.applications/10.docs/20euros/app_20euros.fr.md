@@ -9,10 +9,6 @@ routes:
 
 [![Installer 20 euros avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=20euros) [![Integration level](https://dash.yunohost.org/integration/20euros.svg)](https://dash.yunohost.org/appci/app/20euros)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *20 euros* est une variante de 2048 avec des pièces et des billets en euros.
 
 ## Liens utiles

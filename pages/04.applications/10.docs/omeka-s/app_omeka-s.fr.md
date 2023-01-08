@@ -9,10 +9,6 @@ routes:
 
 [![Installer Omeka S avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=omeka-s) [![Integration level](https://dash.yunohost.org/integration/omeka-s.svg)](https://dash.yunohost.org/appci/app/omeka-s)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Omeka S* est un système de publication web destiné aux universités, galeries, bibliothèques, archives et musées. Il s'agit d'un réseau local d'expositions organisées de manière indépendante et partageant un ensemble d'articles, de médias et de métadonnées construit en collaboration.
 
 ### Captures d'écran

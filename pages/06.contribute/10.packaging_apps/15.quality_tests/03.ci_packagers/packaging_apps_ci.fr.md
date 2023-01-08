@@ -7,7 +7,29 @@ routes:
   default: '/packaging_apps_ci'
 ---
 
-! This page is outdated and should be reworked
+Le projet Yunohost fournit un [Serveur D'Integration Continue](https://ci-apps-dev.yunohost.org/ci/) que tout le monde peut utiliser pour tester son application.
+Il execute [package_check](https://github.com/YunoHost/package_check) sur votre repository.
+
+Pour l'utiliser, il faut:
+- Que votre repository soit transféré à [YunoHost-Apps repository](https://github.com/YunoHost-Apps)
+- Avoir un fichier check_process correct [Sa description est ici](https://github.com/YunoHost/package_check#syntax-of-check_process)
+- Il est recommandé d'avoir fait les tests au préalable en local avec l'outil [Outil Package_check](https://github.com/YunoHost/package_check) 
+
+Il est très facile de demander un nouveau test, grâce à un bot github:
+- Il vous suffit de créer un Pull Request dans votre repository github, avec un commentaire contenant le texte suivant: !testme
+- Immédiatement, le bot va ajouter un commentaire vous informant que la demande de test a été prise en compte:
+![image](https://user-images.githubusercontent.com/771800/211145536-6f84c5f4-5172-4498-83cb-9acd5b96ba21.png)
+- Parfois le bot ne semble pas écouter... Il faut juste recommencer, avec le sourire si possible !
+- Si vous cliquez sur ce commentaire, vous verez le déroulement de votre test sur le serveur d'integration continue.
+
+Le test sera mis dans une file d'attente, une fois exécuté complètement, il va:
+- Ajouter le résultat du test and le Pull Request comme commentaire.
+- Mettre à jour le score d'intégration de votre application dans votre repository ainsi que dans votre fichier README.
+
+
+A tout moment vous pouvez regarder la [page d'accueil du Serveur d'Integration Continue](https://ci-apps-dev.yunohost.org/ci/) pour vous informer des différents tests en cours.
+
+! La suite de cette page est obsolète et doit être changé
 
 Un serveur d'intégration continue est disponible pour tout packager souhaitant tester une application avec [Package_check](https://github.com/YunoHost/package_check).
 

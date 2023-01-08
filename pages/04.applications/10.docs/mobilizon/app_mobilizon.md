@@ -11,10 +11,6 @@ routes:
 
 [![Install mobilizon with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mobilizon) [![Integration level](https://dash.yunohost.org/integration/mobilizon.svg)](https://dash.yunohost.org/appci/app/mobilizon)
 
-### Index
-
-- [Useful links](#useful-links)
-
 MobiliZon is your federated organization and mobilization platform. It's supported by Framasoft.
 MobiliZon aims to solve existing platform's problems to organize events in a decentralised, libre and privacy friendly way.
 Mobilizon is a tool designed to create platforms for managing communities and events. Its purpose is to help as many people as possible to free themselves from Facebook groups and events, from Meetup, etc.

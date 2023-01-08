@@ -9,10 +9,6 @@ routes:
 
 [![Installer Komga avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=komga) [![Integration level](https://dash.yunohost.org/integration/komga.svg)](https://dash.yunohost.org/appci/app/komga)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Komga* est un serveur de bandes dessinées/mangas gratuit et open source.
 
 ### Captures d'écran

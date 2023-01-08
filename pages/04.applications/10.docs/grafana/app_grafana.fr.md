@@ -9,10 +9,6 @@ routes:
 
 [![Installer Grafana avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=grafana) [![Integration level](https://dash.yunohost.org/integration/grafana.svg)](https://dash.yunohost.org/appci/app/grafana)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Grafana* est un tableaux de bord de supervision.
 
 ### Captures d'écran
