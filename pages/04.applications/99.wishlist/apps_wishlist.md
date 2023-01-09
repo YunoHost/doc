@@ -164,6 +164,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Lessy](https://lessy.io) |  | [Upstream](https://github.com/lessy-community/lessy) |  |
 | [Librarian](https://lbry.bcow.xyz/) | An alternative frontend for LBRY/Odysee | [Upstream](https://codeberg.org/librarian/librarian) |  |
 | [LibreTranslate](https://libretranslate.com/) | Translation API | [Upstream](https://github.com/uav4geo/LibreTranslate) | [Package Draft](https://github.com/YunoHost-Apps/libretranslate_ynh) |
+| [Lichen](https://git.sensorstation.co/lichen.git) |  | [Upstream](https://git.sensorstation.co/lichen.git) |  |
 | [Lila](https://lichess.org/) | Online chess game server | [Upstream](https://github.com/ornicar/lila) |  |
 | [Lingva Translate](https://lingva.ml/) | Alternative front-end for Google Translate | [Upstream](https://github.com/TheDavidDelta/lingva-translate) |  |
 | [LiquidSoap](https://www.liquidsoap.info/) | Audio and video streaming language | [Upstream](https://github.com/savonet/liquidsoap) |  |
