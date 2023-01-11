@@ -326,6 +326,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | transwhat | A gateway to WhatsApp from Jabber |  | [Package Draft](https://github.com/Josue-T/transwhat_ynh) |
 | [Tryton](https://www.tryton.org/) | A solid ERP system |  |  |
 | [trivy](https://www.aquasec.com/products/trivy/) | OSS Vulnerability and Misconfiguration Scanning. |[Upstream](https://github.com/aquasecurity/trivy) | |
+| tubesync | Syncs YouTube channels and playlists to a locally hosted media server | [Upstream](https://github.com/meeb/tubesync) |  |
 | tutao | End-to-end encrypted e-mail client | [Upstream](https://github.com/tutao/tutanota/) | [Package Draft](https://github.com/YunoHost-Apps/tutao_ynh) |
 | [Twake](https://twake.app/fr)| All of the organizational tools you need to make your projects succeed brought together on one platform.| | |
 | Twister |  | [Upstream](https://github.com/miguelfreitas/twister-core/) |  |
