@@ -45,14 +45,12 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Cactus Comments](https://cactus.chat/) | Federated comment system, to embed into your webpages, based on the Matrix protocol. | [Upstream](https://gitlab.com/cactus-comments) | [Package Draft](https://github.com/h3ndrik/cactus-comments_ynh) |
 | [Cagette](https://www.cagette.net/) | A marketplace for local farmers and producers | [Upstream](https://github.com/CagetteNet/cagette) | |
 | [Cal.com](https://cal.com/) | Formerly Calendso. Volunteer shift management and meeting scheduling. "The open source Calendly alternative." | [Upstream](https://github.com/calcom/cal.com) | |
-| [Calckey](https://i.calckey.cloud/) | A greatly enhanced fork of Misskey with better UI/UX, security, features, and more!| [Upstream](https://codeberg.org/calckey/calckey) | [Package_Draft](https://github.com/oufmilo/calckey_ynh) |
 | [Caliopen](https://www.caliopen.org) | A unified inteface for all your private communications |  |  |
 | [cgit](https://git.zx2c4.com/cgit/about) |  |  |  |
 | Chaskiq | A full featured Live Chat, Support & Marketing platform, alternative to Intercom, Drift, Crisp | [Upstream](https://github.com/chaskiq/chaskiq) |  |
 | changedetection.io | Self-hosted open source change monitoring of web pages | [Upstream](https://github.com/dgtlmoon/changedetection.io) |  |
 | [Chatterbox](https://element.io/solutions/chatterbox-embedded-live-chat-for-customer-service) | Embedded live chat for customer service | [Upstream]([https://github.com/sourcegraph/checkup](https://github.com/vector-im/chatterbox)) |  |
 | [Chatwoot](https://www.chatwoot.com/docs/self-hosted/) | Open-source customer engagement suite, an alternative to Intercom, Zendesk, Salesforce Service Cloud | [Upstream](https://github.com/chatwoot/chatwoot) |  |
-| [Chitchatter](https://chitchatter.im/) | chat p2p encrypted serverless ephemeral decentralized | [Upstream](https://github.com/jeremyckahn/chitchatter) |  |
 | [CheckUp](https://sourcegraph.github.io/checkup) |  | [Upstream](https://github.com/sourcegraph/checkup) |  |
 | [Checkmk](https://checkmk.com/) | Checkmk provides powerful monitoring of networks, servers, clouds, containers and applications | [Upstream](https://github.com/tribe29/checkmk) | |
 | [Citadel-suite](https://www.citadel.org) | Groupware platform |  |  |
@@ -102,7 +100,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Flask | Skeleton for flask apps |  | [Package Draft](https://github.com/YunoHost-Apps/flask_ynh) |
 | [foodsoft](https://foodcoops.github.io/foodsoft-hosting/) | Manage a non-profit food cooperative |  | [Package Draft](https://github.com/YunoHost-Apps/foodsoft_ynh) |
 | [Forem](https://www.forem.com/) | Forem is open source software for building communities. | [Upstream](https://github.com/forem/selfhost) | |
-| [Forgejo](https://forgejo.org/) | A self-hosted lightweight software forge. | [Upstream](https://codeberg.org/forgejo/forgejo) | |
 | [Fossil](https://www.fossil-scm.org) |  |  |  |
 | [Fractale](https://fractale.co/) | Fractale is a platform for self-organization.| [Upstream](https://github.com/fractal6/fractal6.go) |  |
 | full-text-rss |  | [Upstream](https://bitbucket.org/fivefilters/full-text-rss/src/master/) |  |
@@ -219,7 +216,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [OX Open-Xchange](https://www.open-xchange.com) | Linux groupware solution | [Upstream](https://github.com/open-xchange/) |  |
 | [pd3f](https://pd3f.com/) | PDF text extraction (OCR) pipeline using machine-learning | [Upstream](https://github.com/pd3f/pd3f) | |
 | [Padloc](https://padloc.app/) | Simple, secure password and data management for individuals and teams | [Upstream](https://github.com/padloc/padloc) | |
-| Paperless-ng |  | [Upstream](https://github.com/jonaswinkler/paperless-ng) |  |
 | [Paperwork](https://paperwork.cloud) |  | [Upstream](https://github.com/paperwork/paperwork) |  |
 | [Passbolt](https://www.passbolt.com) | Password manager | [Upstream](https://github.com/passbolt) |  |
 | Pelias |  | [Upstream](https://github.com/pelias/pelias) |  |
@@ -253,7 +249,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [racktables](https://racktables.org) |  | [Upstream](https://github.com/RackTables/racktables) |  |
 | Race for the galaxy | | [Upstream](https://github.com/bnordli/rftg) | |
 | [Raindrop](https://raindrop.io) | All-in-one bookmark manager | [Upstream](https://github.com/raindropio/app) | |
-| [Rallly](https://rallly.co/) | Group-meeting manager, alternative to Doodle | [Upstream](https://github.com/lukevella/rallly) | |
 | [Raspap](https://raspap.com/) | | [Upstream](https://github.com/RaspAP/raspap-webgui) | |
 | Redash | Connect to any data source, easily visualize, dashboard and share your data. | [Upstream](https://github.com/getredash/redash) | |
 | remoteStorage | A remoteStorage server implementation written in PHP | [Upstream](https://github.com/fkooman/php-remote-storage) | [Package Draft](https://github.com/YunoHost-Apps/RemoteStorage_ynh) |
@@ -285,7 +280,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | sickbeard | Automatic TV show downloader |  | [Package Draft](https://github.com/YunoHost-Apps/sickbeard_ynh) |
 | [sickrage](https://sickchill.github.io/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/YunoHost-Apps/sickrage_ynh) |
 | [Signal Proxy](https://signal.org/blog/help-iran-reconnect/) | Fight censorship and bypass traffic securely to the Signal service | [Upstream](https://github.com/signalapp/Signal-TLS-Proxy) | |
-| [Signature PDF](https://pdf.24eme.fr) | A free open source online PDF signing software | [Upstream](https://github.com/24eme/signaturepdf) | [Package Draft](https://github.com/YunoHost-Apps/signaturepdf_ynh) |
 | simpad | Simple markdown editor | [Upstream](https://github.com/beli3ver/SiMPad) | [Package Draft](https://github.com/YunoHost-Apps/simpad_ynh) |
 | [SimpleLogin](https://simplelogin.io) | Privacy-first e-mail forwarding and identity provider service | [Upstream](https://github.com/simple-login/app) | |
 | [SimplyTranslate-Web](https://simplytranslate.org/) | This is a simple web interface for SimplyTranslate | [Upstream](https://codeberg.org/SimpleWeb/SimplyTranslate-Web) |  |
