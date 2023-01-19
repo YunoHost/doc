@@ -39,7 +39,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Bitmessage](https://bitmessage.org/) | P2P communication protocol used to send encrypted messages | [Upstream](https://github.com/Bitmessage/PyBitmessage) |  |
 | Blynk |  | [Upstream](https://github.com/blynkkk/blynk-library) |  |
 | [Bolt](https://bolt.cm/) | Content Management Tool |  | [Package Draft](https://github.com/realitygaps/bolt_ynh) |
-| [BookWyrm](https://joinbookwyrm.com/fr/) | Social reading and reviewing, decentralized with ActivityPub | [Upstream](https://github.com/mouse-reeve/bookwyrm) | [Package_Draft](https://github.com/YunoHost-Apps/bookwyrm_ynh) |
 | [Budibase](https://budibase.com/) | Low code platform for creating internal apps, workflows, and admin panels in minutes. | [Upstream](https://github.com/Budibase/budibase) |  |
 | [BTCPay Server](https://btcpayserver.org) | BTCPay Server is a free and open-source Bitcoin payment processor | [Upstream](https://github.com/btcpayserver/btcpayserver) |  |
 | [Cactus Comments](https://cactus.chat/) | Federated comment system, to embed into your webpages, based on the Matrix protocol. | [Upstream](https://gitlab.com/cactus-comments) | [Package Draft](https://github.com/h3ndrik/cactus-comments_ynh) |
