@@ -44,24 +44,27 @@ Many things in Yunohost, and Yunohost app packaging format, are historical or we
 
 The **"v0" of app packaging** consisted in writing raw bash scripts with no real standardization / constrain.
 
-Over time, recurrent steps (such as installing dependencies with apt, or setting up the nginx config) where formalized into what were called into standardized bash functions that we call "helpers". This pretty much marked **the beginning of the "v1" packaging era**.
+Over time, recurrent steps (such as installing dependencies with apt, or setting up the nginx config) where formalized into standardized bash functions, a.k.a "helpers". This pretty much marked **the beginning of the "v1" packaging era**.
 
-Various tools where implemented to test the app and standardize their behavior.
+Various tools were implemented to test the app and standardize their behavior.
 
-After a while, a set of common practices and conventions emerged and is somewhat reflected and maintain in the `example_ynh` template application. While it is tempting for dev-oriented folks to change variable naming schemes or refactorize the structure of scripts, it is also quite important to stick to the common and seemingly arbitrary practices to ease the maintenance of all apps by any member of the packaging community!
+After a while, a set of common practices and conventions emerged and is somewhat reflected and maintain in the `example_ynh` template application. While it is tempting for dev-oriented folks to change variable naming schemes or refactorize the structure of scripts, it turns out that it is even more important to stick to the common set of practices (even though arbitrary and not elegant) to ease the maintenance of all apps by any member of the packaging community accross all repos!
 
-Nevertheless, even though helpers existed, the inherent structure of apps was hard and boring to maintain with too many redundant pieces of code or filled with funky historical conventions. **A new v2 format** [has been designed](https://github.com/YunoHost/yunohost/pull/1289) in the hope to modernize and simplify app packaging and improve the UI/UX of YunoHost.
+Nevertheless, even though helpers existed, the inherent structure of apps was hard and boring to maintain with too many redundant pieces of code or filled with funky historical conventions. **A new v2 format** [has been designed and added to YunoHost 11.1 in early 2023](https://github.com/YunoHost/yunohost/pull/1289) in the hope to modernize and simplify app packaging and improve the UI/UX of YunoHost.
 
-However, **a future v3 format** has yet to come to further simplify app packaging (such as taking care of nginx/systemd/... configurations, removing the need to manually write remove/backup/restore scripts, etc ...)
+However, [**a future v3 format** has yet to come](https://github.com/YunoHost/issues/issues/2136) to further simplify app packaging (such as taking care of nginx/systemd/... configurations, removing the need to manually write remove/backup/restore scripts, etc ...)
 
 
 # 4. General overview of a Yunohost app structure
 
-A YunoHost app consists in a Git repository. You should have a look at the [`helloworld_ynh`](https://github.com/YunoHost-Apps/helloworld_ynh) app and [`example_ynh`](https://github.com/YunoHost/example_ynh) app to get familiar with its structure. 
+A YunoHost app consists in a Git repository. We encourage you to have a look at those code repository to get familiar witch app repository structures:
+- the [`helloworld_ynh`](https://github.com/YunoHost-Apps/helloworld_ynh) app 
+- the [`example_ynh`](https://github.com/YunoHost/example_ynh) app which illustrates all common features and recommended formatting
+- your favourite "real-life" app in the [YunoHost-Apps organization](https://github.com/orgs/YunoHost-Apps/repositories))
 
 Among the file contained in a package, the most important ones are: 
 
-- the **app manifest** `manifest.json` <small>(possibly `.toml` in the future)</small>
+- the **app manifest** `manifest.toml` <small>(or `.json` in the past)</small>
     - this can be seen as the ID card of the application, containing various metadatas. 
     - it also contains the questions asked during the installation of the app.
 - **scripts/** contains a bunch of bash scripts corresponding to actions exposed in YunoHost
@@ -69,7 +72,7 @@ Among the file contained in a package, the most important ones are:
    - `install` / `remove` : the install and remove procedure
    - `upgrade` : the upgrade procedure
    - `backup` / `restore` : the backup/restore procedures 
-   - (`change_url`) : 
+   - (`change_url`) : changing where the app is installed in terms of web access url
 - **conf/** contains a bunch of configuration templates used when installing the app. Here are some example of commonly found files:
    - `app.src` : contains the URL and checksum to downlowd the application sources
    - `nginx.conf` : the nginx (=web server) configuration template for this app
