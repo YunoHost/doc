@@ -8,7 +8,7 @@ routes:
 ---
 
 
-App scripts are the essential logic defining what happens when an app is `install`ed, `remove`d, `upgrade`d, `backup`ed, or `restore`d. They are written in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) which is the same thing as stuff you type in interactive mode in a terminal, though we added a bunch of custom YunoHost functions that we call `helpers` to standardize many common operations - for example adding the nginx configuration.
+App scripts are the essential logic defining what happens when an app is `install`ed, `remove`d, `upgrade`d, `backup`ed, or `restore`d. They are written in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) which is the same stuff you type in interactive mode in a terminal, though we added a bunch of custom YunoHost functions that we call `helpers` to standardize many common operations - for example adding the nginx configuration.
 
 Note that starting from packaging v2, the logic or what happens when an app is installed, etc. is also contained partially in the resource configuration in the `manifest.toml`.
 
