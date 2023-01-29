@@ -9,10 +9,6 @@ routes:
 
 [![Installer Prometheus avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=prometheus) [![Integration level](https://dash.yunohost.org/integration/prometheus.svg)](https://dash.yunohost.org/appci/app/prometheus)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Prometheus* est une application de supervision chronologique de systèmes et services.
 
 ### Avertissements / informations importantes

@@ -9,10 +9,6 @@ routes:
 
 [![Installer Mindmaps avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mindmaps) [![Integration level](https://dash.yunohost.org/integration/mindmaps.svg)](https://dash.yunohost.org/appci/app/mindmaps)
 
-### Index
-
-- [Liens utiles](#useful-links)
-
 Mindmaps est une application de carte mentale basée sur HTML5. Il vous permet de créer des cartes mentales soignées dans le navigateur.
 
 Ce projet a commencé en 2011 comme une exploration de ce qu'il est possible de faire dans les navigateurs utilisant des API modernes. De nos jours, la plupart de ces choses sont assez courantes et la base de code est un peu dépassée. C'était bien avant React, ES6, webpack. Heck, il n'utilise même pas Backbone.

@@ -11,11 +11,6 @@ routes:
 
 [![Installer Haste avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=haste) [![Integration level](https://dash.yunohost.org/integration/haste.svg)](https://dash.yunohost.org/appci/app/haste)
 
-### Index
-
-- [Configuration](#Configuration)
-- [Liens utiles](#useful-links)
-
 Haste est un logiciel pastebin open-source écrit en Node.js, facilement installable sur n'importe quel réseau. Le projet YunoHost utilise Haste comme pastebin pour le partage de log : [paste.yunohost.org](https://paste.yunohost.org/)
 
 ## Configuration

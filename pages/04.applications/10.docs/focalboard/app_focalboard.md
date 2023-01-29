@@ -9,10 +9,6 @@ routes:
 
 [![Installer Focalboard with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=focalboard) [![Integration level](https://dash.yunohost.org/integration/focalboard.svg)](https://dash.yunohost.org/appci/app/focalboard)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Focalboard* is a project management tool that helps define, organize, track and manage work across teams, using a familiar kanban board view.
 
 ## Useful links

@@ -11,10 +11,6 @@ routes:
 
 [![Install Mailman with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mailman) [![Integration level](https://dash.yunohost.org/integration/mailman.svg)](https://dash.yunohost.org/appci/app/mailman)
 
-### Index
-
-- [Useful links](#useful-links)
-
 Mailman is a (lightweight) free software for managing electronic mail discussion and e-newsletter lists.
 
 ## Useful links

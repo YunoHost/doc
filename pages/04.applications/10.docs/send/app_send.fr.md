@@ -9,10 +9,6 @@ routes:
 
 [![Installer Send avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=send) [![Integration level](https://dash.yunohost.org/integration/send.svg)](https://dash.yunohost.org/appci/app/send)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Send* est un fork du Firefox Send de Mozilla. Mozilla a arrêté Send, et ce fork est un effort de la communauté pour maintenir le projet en vie.
 Send est une expérience de partage de fichiers qui permet d'envoyer des fichiers chiffrés à d'autres utilisateurs.
 

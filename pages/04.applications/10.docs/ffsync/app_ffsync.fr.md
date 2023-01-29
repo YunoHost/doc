@@ -11,14 +11,6 @@ routes:
 
 [![Install Firefox Sync with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=ffsync) [![Integration level](https://dash.yunohost.org/integration/ffsync.svg)](https://dash.yunohost.org/appci/app/ffsync)
 
-### Index
-
-- [Configuration](#configuration)
-  - [Firefox bureau](#firefox-bureau)
-  - [Firefox mobile](#firefox-mobile)
-- [Limitations avec YunoHost](#limitations-avec-yunohost)
-- [Liens utiles](#liens-utiles)
-
 Firefox Sync permet la synchronisation des favoris, des marques-pages, de l’historique, des onglets, des extensions entre plusieurs instances du navigateur web Firefox.
 
 ## Configuration

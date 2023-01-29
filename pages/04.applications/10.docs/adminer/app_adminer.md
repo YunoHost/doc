@@ -11,10 +11,6 @@ routes:
 
 [![Install Adminer with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=adminer) [![Integration level](https://dash.yunohost.org/integration/adminer.svg)](https://dash.yunohost.org/appci/app/adminer)
 
-### Index
-
-- [Useful links](#useful-links)
-
 Adminer (formerly phpMinAdmin better alternate to phpMyAdmin) is a full-featured database management tool (MySQL, MariaDB, PostgreSQL, SQLite, MS SQL, Oracle, SimpleDB, Elasticsearch, MongoDB). Replace phpMyAdmin with Adminer and you will get a tidier user interface, better support for MySQL features, higher performance and more security. [See detailed comparison](https://www.adminer.org/en/phpmyadmin).
 
 ## Useful links

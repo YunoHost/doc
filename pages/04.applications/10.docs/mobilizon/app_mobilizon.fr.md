@@ -11,9 +11,6 @@ routes:
 
 [![Install mobilizon with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=mobilizon) [![Integration level](https://dash.yunohost.org/integration/mobilizon.svg)](https://dash.yunohost.org/appci/app/mobilizon)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
 
 Mobilizon est un logiciel actuellement en cours de développement par Framasoft. Il permettra à chaque organisation ou individu de proposer sa propre plateforme de mobilisation.
 Il sera possible de :

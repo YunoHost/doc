@@ -11,10 +11,6 @@ routes:
 
 [![Install phpSysInfo with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=phpsysinfo) [![Integration level](https://dash.yunohost.org/integration/phpsysinfo.svg)](https://dash.yunohost.org/appci/app/phpsysinfo)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *phpSysInfo* is a customizable PHP script that displays information about your system (CPU, RAM, disks).
 
 ## Useful links

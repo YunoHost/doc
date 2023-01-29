@@ -9,10 +9,6 @@ routes:
 
 [![Installer Vikunja with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=vikunja) [![Integration level](https://dash.yunohost.org/integration/vikunja.svg)](https://dash.yunohost.org/appci/app/vikunja)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Vikunja* is a self-hosted open-source to-do list application for all platforms.
 
 ### Features

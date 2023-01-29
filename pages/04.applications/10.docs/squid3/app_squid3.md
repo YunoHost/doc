@@ -9,10 +9,6 @@ routes:
 
 [![Installer squid3 with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=squid3) [![Integration level](https://dash.yunohost.org/integration/squid3.svg)](https://dash.yunohost.org/appci/app/squid3)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *squid3* is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more. It reduces bandwidth and improves response times by caching and reusing frequently-requested web pages. Squid has extensive access controls and makes a great server accelerator.
 
 ### Disclaimers / important information

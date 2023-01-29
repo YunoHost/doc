@@ -11,11 +11,6 @@ routes:
 
 [![Install Cheky with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=cheky) [![Integration level](https://dash.yunohost.org/integration/cheky.svg)](https://dash.yunohost.org/appci/app/cheky)
 
-### Index
-
-- [Limitations avec YunoHost](#limitations-avec-yunohost)
-- [Liens utiles](#liens-utiles)
-
 Cheky est un logiciel écrit en PHP vous permettant de recevoir les nouvelles annonces publiées sur les sites internet Leboncoin.fr et SeLoger.com. Vous pouvez recevoir les alertes via différents canaux de communication.
 
 ## Limitations avec YunoHost

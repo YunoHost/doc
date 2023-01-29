@@ -9,10 +9,6 @@ routes:
 
 [![Installer Cubiks 2048 avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=cubiks-2048) [![Integration level](https://dash.yunohost.org/integration/cubiks-2048.svg)](https://dash.yunohost.org/appci/app/cubiks-2048)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Cubiks 2048* est un clone en 3D du jeu 2048.
 
 ## Liens utiles

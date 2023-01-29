@@ -11,11 +11,6 @@ routes:
 
 [![Install Dolibarr with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=dolibarr) [![Integration level](https://dash.yunohost.org/integration/dolibarr.svg)](https://dash.yunohost.org/appci/app/dolibarr)
 
-### Index
-
-- [Limitations avec YunoHost](#limitations-avec-yunohost)
-- [Liens utiles](#liens-utiles)
-
 Dolibarr ERP/CRM est un progiciel de gestion intégré (PGI, ERP en anglais) et gestion de la relation client (GRC, CRM en anglais) open source pour les petites et moyennes entreprises, les indépendants, auto-entrepreneurs ou les associations.[¹](#sources)
 
 ## Limitations avec YunoHost

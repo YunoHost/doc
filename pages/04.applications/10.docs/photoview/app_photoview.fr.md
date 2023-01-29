@@ -9,10 +9,6 @@ routes:
 
 [![Installer Photoview avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=photoview) [![Integration level](https://dash.yunohost.org/integration/photoview.svg)](https://dash.yunohost.org/appci/app/photoview)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Photoview* est une application de galerie photos simple et facile à utiliser, faite pour les photographes.
 
 ### Captures d'écran

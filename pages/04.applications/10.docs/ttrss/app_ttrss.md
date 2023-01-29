@@ -11,10 +11,6 @@ routes:
 
 [![Install Tiny Tiny RSS with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=ttrss) [![Integration level](https://dash.yunohost.org/integration/ttrss.svg)](https://dash.yunohost.org/appci/app/ttrss)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 Tiny Tiny RSS is a news feed reader using RSS and Atom protocols.
 
 ### Exporting/importing feeds

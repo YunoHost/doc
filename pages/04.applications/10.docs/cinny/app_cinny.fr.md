@@ -9,10 +9,6 @@ routes:
 
 [![Installer Cinny avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=cinny) [![Integration level](https://dash.yunohost.org/integration/cinny.svg)](https://dash.yunohost.org/appci/app/cinny)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Cinny* est une plateforme d'hébergement gratuite et open-source conçue pour les podcasteurs qui souhaitent s'engager et interagir avec leur public.
 
 Cinny est facile à installer et a été construit sur la base de CodeIgniter4, un puissant framework PHP à l'empreinte très réduite.

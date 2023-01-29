@@ -9,10 +9,6 @@ routes:
 
 [![Installer I Hate Money with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=ihatemoney) [![Integration level](https://dash.yunohost.org/integration/ihatemoney.svg)](https://dash.yunohost.org/appci/app/ihatemoney)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *I Hate Money* is a web application made to ease shared budget management. It keeps track of who bought what, when, and for whom; and helps to settle the bills.
 
 ### Screenshots

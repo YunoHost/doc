@@ -9,10 +9,6 @@ routes:
 
 [![Installer Domoticz avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=domoticz) [![Integration level](https://dash.yunohost.org/integration/domoticz.svg)](https://dash.yunohost.org/appci/app/domoticz)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Domoticz* est un système domotique open source très léger qui vous permet de surveiller et de configurer divers appareils.
 
 ### Avertissements/informations importantes

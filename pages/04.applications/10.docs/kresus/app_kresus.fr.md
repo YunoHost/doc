@@ -11,10 +11,6 @@ routes:
 
 [![Install kresus with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=kresus) [![Integration level](https://dash.yunohost.org/integration/kresus.svg)](https://dash.yunohost.org/appci/app/kresus)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 Kresus est un gestionnaire de finances personnelles gratuit et libre qui tourne sur votre serveur. Il récupère automatiquement et quotidiennement toutes vos nouvelles transactions bancaires et vous permet de les catégoriser, étudier via des graphiques, et établir un budget.
 
 * Retrouvez l'intégralité de vos comptes dans une même interface et visualisez leur solde en un coup d'œil !

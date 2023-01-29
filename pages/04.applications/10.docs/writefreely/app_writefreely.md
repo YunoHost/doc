@@ -13,13 +13,6 @@ routes:
 [![Install WriteFreely with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=writefreely) 
 [![Integration level](https://dash.yunohost.org/integration/writefreely.svg)](https://dash.yunohost.org/appci/app/writefreely)
 
-
-### Index
-
-- [Features](#features)
-- [Important information](#important-information)
-- [Useful links](#useful-links)
-
 **WriteFreely** is a clean, minimalist publishing platform made for writers. Start a blog, share knowledge within your organization, or build a community around the shared act of writing.
 
 ## Features:

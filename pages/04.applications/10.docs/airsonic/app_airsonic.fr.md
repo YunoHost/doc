@@ -11,10 +11,6 @@ routes:
 
 [![Install airsonic with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=airsonic) [![Integration level](https://dash.yunohost.org/integration/airsonic.svg)](https://dash.yunohost.org/appci/app/airsonic)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 Airsonic est un streamer de médias gratuit basé sur le web, offrant un accès constant à votre musique. Utilisez-le pour partager votre musique avec vos amis ou pour écouter votre propre musique au travail. Vous pouvez diffuser en continu sur plusieurs lecteurs simultanément, par exemple sur un lecteur dans votre cuisine et un autre dans votre salon.
 
 Airsonic est conçu pour gérer de très grandes collections de musique (des centaines de gigaoctets). Bien qu'il soit optimisé pour le streaming MP3, il fonctionne pour tout format audio ou vidéo pouvant être diffusé via HTTP, par exemple AAC et OGG. En utilisant des plug-ins de transcodage, Airsonic prend en charge la conversion et la diffusion en continu à la volée de pratiquement tous les formats audio, y compris WMA, FLAC, APE, Musepack, WavPack et Shorten.

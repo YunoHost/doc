@@ -9,10 +9,6 @@ routes:
 
 [![Install Coturn with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=coturn) [![Integration level](https://dash.yunohost.org/integration/coturn.svg)](https://dash.yunohost.org/appci/app/coturn)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Coturn* is a Free open source implementation of TURN and STUN Server.
 The TURN Server is a VoIP media traffic NAT traversal server and gateway. It can be used as a general-purpose network traffic TURN server and gateway, too.
 

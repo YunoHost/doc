@@ -11,10 +11,6 @@ routes:
 
 [![Install Borg with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=borg) [![Integration level](https://dash.yunohost.org/integration/borg.svg)](https://dash.yunohost.org/appci/app/borg)
 
-### Index
-
-- [Useful links](#useful-links)
-
 BorgBackup (short: Borg) is a deduplicating backup program. Optionally, it supports compression and authenticated encryption.
 
 The main goal of Borg is to provide an efficient and secure way to backup data. The data deduplication technique used makes Borg suitable for daily backups since only changes are stored. The authenticated encryption technique makes it suitable for backups to not fully trusted targets.[¹](#sources)

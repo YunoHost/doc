@@ -11,10 +11,6 @@ routes:
 
 [![Install KeeWeb with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=keeweb) [![Integration level](https://dash.yunohost.org/integration/keeweb.svg)](https://dash.yunohost.org/appci/app/keeweb)
 
-### Index
-
-- [Useful links](#useful-links)
-
 An elegant and efficient web manager to manage your passwords remotely.
 The file containing the passwords (.kdbx) can follow you locally on your PC, on a USB key or be stored on your server in WebDAV.
 KeeWeb also manages files compatible with other password managers such as [KeePass](http://keepass.info), [KeePassX](https://www.keepassx.org/) or [KePassXC](https://keepassxc.org/).

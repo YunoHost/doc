@@ -11,13 +11,6 @@ routes:
 
 [![Install Gotify with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=gotify) [![Integration level](https://dash.yunohost.org/integration/gotify.svg)](https://dash.yunohost.org/appci/app/gotify)
 
-### Index
-
-- [Configuration](#configuration)
-- [Limitations avec YunoHost](#limitations-avec-yunohost)
-- [Applications clientes](#applications-clientes)
-- [Liens utiles](#liens-utiles)
-
 Un simple serveur pour envoyer et recevoir des messages.
 
 ## Configuration

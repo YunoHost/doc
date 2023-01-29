@@ -9,10 +9,6 @@ routes:
 
 [![Installer Nitter with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nitter) [![Integration level](https://dash.yunohost.org/integration/nitter.svg)](https://dash.yunohost.org/appci/app/nitter)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Nitter* is a free and open source alternative Twitter front-end focused on privacy and performance. Inspired by the Invidious project.
 
 #### Features

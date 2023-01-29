@@ -9,10 +9,6 @@ routes:
 
 [![Installer NocoDB with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nocodb) [![Integration level](https://dash.yunohost.org/integration/nocodb.svg)](https://dash.yunohost.org/appci/app/nocodb)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *NocoDB* is an open source NoCode platform that turns any database into a smart spreadsheet, alternative to Airtable.
 
 * Connect to new/existing SQL database and turn them into spreadsheet.

@@ -9,10 +9,6 @@ routes:
 
 [![Installer myTinyTodo with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=mytinytodo) [![Integration level](https://dash.yunohost.org/integration/mytinytodo.svg)](https://dash.yunohost.org/appci/app/mytinytodo)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *myTinyTodo* is a simple way to manage your todo lists.
 
 ### Screenshots

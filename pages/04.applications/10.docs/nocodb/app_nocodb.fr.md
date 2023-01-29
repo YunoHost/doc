@@ -9,10 +9,6 @@ routes:
 
 [![Installer NocoDB avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=nocodb) [![Integration level](https://dash.yunohost.org/integration/nocodb.svg)](https://dash.yunohost.org/appci/app/nocodb)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *NocoDB* est une plateforme NoCode open source qui transforme n'importe quelle base de données en un tableur intelligent, c'est une alternative à Airtable.
 
 * Connectez-vous à une base de données SQL nouvelle/existante et transformez-la en feuille de calcul.

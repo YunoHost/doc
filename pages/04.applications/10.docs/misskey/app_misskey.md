@@ -11,12 +11,6 @@ routes:
 
 [![Install Misskey with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=misskey) [![Integration level](https://dash.yunohost.org/integration/misskey.svg)](https://dash.yunohost.org/appci/app/misskey)
 
-### Index
-
-- [Configuration](#configuration)
-- [Useful links](#useful-links)
-
-
 Misskey is a decentralized and open source microblogging platform. It has "Reactions" that allow you to easily express your feeling, "Drive" that allows you to manage files in one place, and a highly customizable UI that makes it more fun to share something.
 
 Misskey also implements ActivityPub, so it can communicate with other platforms like Mastodon, Pleroma, Friendica and more interactively.

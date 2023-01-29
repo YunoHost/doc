@@ -11,10 +11,6 @@ routes:
 
 [![Install Plume with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=plume) [![Integration level](https://dash.yunohost.org/integration/plume.svg)](https://dash.yunohost.org/appci/app/plume)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 Plume est un moteur de blog décentralisé et fédéré en cours de développement.
 
 * Décentralisé : Chaque instance peut suivre une ou plusieurs autres instances Plume afin de permettre à ses utilisateur·rices de visionner les vidéos de celles-ci.

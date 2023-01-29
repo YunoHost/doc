@@ -11,12 +11,6 @@ routes:
 
 [![Install FreshRSS with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=freshrss) [![Integration level](https://dash.yunohost.org/integration/freshrss.svg)](https://dash.yunohost.org/appci/app/freshrss)
 
-### Index
-
-- [Configuration](#configuration)
-- [Customer Applications](#customer-applications)
-- [Useful links](#useful-links)
-
 FreshRSS is an RSS aggregator and reader. It allows you to read and follow several news websites at a glance without the need to browse from one website to another.
 
 FreshRSS has a lot of features including.

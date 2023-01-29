@@ -9,10 +9,6 @@ routes:
 
 [![Installer Metabase with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=metabase) [![Integration level](https://dash.yunohost.org/integration/metabase.svg)](https://dash.yunohost.org/appci/app/metabase)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Metabase* is a web database management tool.
 
 ## Screenshots

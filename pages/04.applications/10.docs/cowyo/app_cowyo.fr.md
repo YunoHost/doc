@@ -11,11 +11,6 @@ routes:
 
 [![Install cowyo with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=cowyo) [![Integration level](https://dash.yunohost.org/integration/cowyo.svg)](https://ci-apps.yunohost.org/ci/apps/cowyo/)
 
-### Index
-
-- [Limitations avec YunoHost](#limitations-avec-yunohost)
-- [Liens utiles](#liens-utiles)
-
 Cowyo est un serveur wiki autonome qui permet de prendre des notes facilement et rapidement. La caractéristique la plus importante ici est la simplicité. Les autres caractéristiques sont le versionnage, le verrouillage des pages, les messages autodestructeurs, le cryptage et la lisibilité.
 
 ## Limitations avec YunoHost

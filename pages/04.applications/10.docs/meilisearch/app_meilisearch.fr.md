@@ -9,10 +9,7 @@ routes:
 
 [![Installer Meilisearch avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=meilisearch) [![Integration level](https://dash.yunohost.org/integration/meilisearch.svg)](https://dash.yunohost.org/appci/app/meilisearch)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
+### Ind
 *Meilisearch* est une API de recherche opensource de nouvelle génération.
 
 ### Captures d'écran

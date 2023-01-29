@@ -9,10 +9,6 @@ routes:
 
 [![Installer Tyto with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=tyto) [![Integration level](https://dash.yunohost.org/integration/tyto.svg)](https://dash.yunohost.org/appci/app/tyto)
 
-### Index
-
-- [Useful links](#useful-links)
-
 *Tyto* is an extensible and customizable management and organisation tool.
 
 ## Screenshots

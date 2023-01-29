@@ -9,10 +9,6 @@ routes:
 
 [![Installer RetroArch avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=retroarch) [![Integration level](https://dash.yunohost.org/integration/retroarch.svg)](https://dash.yunohost.org/appci/app/retroarch)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *RetroArch* est une interface pour les émulateurs, les moteurs de jeux et les lecteurs multimédias.
 Il vous permet d'exécuter des jeux classiques sur un large éventail d'ordinateurs et de consoles grâce à son interface graphique élégante. Les paramètres sont également unifiés afin que la configuration soit effectuée une fois pour toutes.
 En outre, vous êtes en mesure d'exécuter des disques de jeux originaux (CD) à partir de RetroArch.

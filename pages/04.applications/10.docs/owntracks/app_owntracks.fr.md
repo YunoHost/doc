@@ -9,10 +9,6 @@ routes:
 
 [![Installer OwnTracks avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=owntracks) [![Integration level](https://dash.yunohost.org/integration/owntracks.svg)](https://dash.yunohost.org/appci/app/owntracks)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *OwnTracks* permet de gérez votre historique de géolocalisation.
 
 ### Captures d'écran

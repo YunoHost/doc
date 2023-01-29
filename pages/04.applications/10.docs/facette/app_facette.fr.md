@@ -9,10 +9,6 @@ routes:
 
 [![Installer Facette avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=facette) [![Integration level](https://dash.yunohost.org/integration/facette.svg)](https://dash.yunohost.org/appci/app/facette)
 
-### Index
-
-- [Liens utiles](#liens-utiles)
-
 *Facette* est une application web qui permet d'afficher des séries de données temporelles provenant de diverses sources - telles que collectd, Graphite, InfluxDB ou KairosDB - sur des graphiques, conçue pour être facile à configurer et à utiliser.
 
 ## Liens utiles
