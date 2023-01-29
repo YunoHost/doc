@@ -111,6 +111,20 @@ Configuration templates are canonically stored provided in the `conf/` folder of
 
 In these templates, you can use the syntax `__FOOBAR__` which will automatically be replaced by the variable `$foobar` during runtime, when the conf is installed via the `ynh_add_*_config` helpers.
 
+For example, an app's NGINX conf snippet may look like:
+
+```text
+# The next line starting with '#sub_path_only' is automatically uncommented only when $path is not /
+#sub_path_only rewrite ^__PATH__$ __PATH__/ permanent;
+location __PATH__/ {
+
+  alias __INSTALL_DIR__/;
+
+  # Some headers and tweaks
+
+}
+```
+
 
 # App sources
 
