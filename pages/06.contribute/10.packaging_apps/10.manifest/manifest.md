@@ -12,7 +12,7 @@ The app's `manifest.toml` can be seen as the ID card of the app. It declares var
 In this page, the data are described according to a somewhat dummy app called `helloworld`
 
 
-# General information
+## General information
 
 ```toml
 packaging_format = 2
@@ -43,7 +43,7 @@ maintainers = ["alexAubin"]
 
 - `maintainers` (`list` or `str`) may allow to declare which person should be the referring person for this package (though packages are often maintained collectively and not really used in practice). This should contain a list of easily identifiable persons (eg your Github or Matrix username)
 
-# Upstream section
+## Upstream section
 
 This section is meant to provide various metadata about the app upstream such that YunoHost admins can easily obtain further information regarding this app (or, kinda important, try the upstream's demo before deciding to install it).
 
@@ -67,7 +67,7 @@ userdoc = ...
 - (optional) `userdoc` (`url`) : the url of the *upstream* project's user documentation, which may help YunoHost end-users with effectively using the app.
 - (optional) `cpe` (`str`) corresponds to the [Common Platform Enumerations code in NIST db](https://nvd.nist.gov/products/cpe). For example for Wekan this is `cpe:2.3:a:wekan_project:wekan`. Not really used at the moment, but may be used in the future to check for known vulnerabilities (CVE) in the app catalog.
 
-# Integration section
+## Integration section
 
 This section is meant to contain info related to the relation between the app and YunoHost, or things like typical resource usage.
 
@@ -93,7 +93,7 @@ ram.runtime = "1M"
 - `ram.runtime` (size) : an *estimate* minimum ram requirement when the app is active and running. For example: 50M, 400M, 1G, ...
 
 
-# Install questions
+## Install questions
 
 This section contains questions that should be asked to the admin prior to starting the actual install
 
@@ -144,7 +144,7 @@ The full list of question types is : `string`, `text`, `select`, `tags`, `email`
 `password`-type questions have special behavior and are NOT automatically saved as setting (user-chosen password should ideally not be stored, at least not hashed...)
 
 
-# Resource system
+## Resource system
 
 The resource section corresponds to recurring app needs that are to be provisioned/deprovisioned by the core of YunoHost. They include for example: system user, apt dependencies, install dir, data dir, port, permissions, SQL database... Each resource is to be provisioned *before* running the install script, deprovisioned *after* the remove script, and automatically upgraded if needed before running the upgrade script (or provisionned if introduced in the new app version, or deprovisioned if removed w.r.t. the previous app version)
 
@@ -167,6 +167,4 @@ In this example:
 - `permissions`: an SSOwat `$app.main` permission will be initialized such that the SSO allows access to the app's endpoint according to the chosen `init_main_permission` question. The `main.url = "/"` is here to tell that the main endpoint is the "root" of the app, that is `https://domain.tld/helloworld/` if the app is installed with `domain=domain.tld` and `path=/helloworld`
 - `apt`: the packages `nyancat`, `lolcat`, `sl` will be installed with `apt`. These are just dummy apt dependencies to illustrate the syntax.
 
-The full documentation on resources is available [here (FIXME!]()
-
-
+The full documentation on resources is available [here](/packaging_apps_resources)

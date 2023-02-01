@@ -60,7 +60,7 @@ ynh_add_nginx_config
 Note that the scripts are run with the `set -eu` options (except for the remove script), which means that any failing command or use of non-existing variable will trigger an error and stop the script execution.
 
 
-# Variables available in a script context
+## Variables available in a script context
 
 Special variables are automatically defined in the context of a script:
 
@@ -69,7 +69,7 @@ Special variables are automatically defined in the context of a script:
 - During other scripts, all app settings are also loaded and automatically available.
 - Note that some settings are automatically created/updated by app ressources. For example, the `install_dir` setting will automatically be available too and corresponds to typically `/var/www/$app`
 
-# Setting system
+## Setting system
 
 Application often need to store long term information in between scripts triggered by the admin. For this, YunoHost has a key-value store for each application called "setting" and is stored in `/etc/yunohost/apps/$app/settings.yml`.
 
@@ -83,7 +83,7 @@ db_name=$(ynh_app_setting_get --app=$app --key=db_name)
 ynh_app_setting_set --app=$app --key=db_name --value=$db_name
 ```
 
-# Helper system
+## Helper system
 
 We call helpers a set of custom bash function created by the YunoHost project to standardize common operations accross all apps. They are all prefixed with `ynh_`. The full list and documentation of these helpers is available on [this page](/packaging_apps_helpers). Some of these helpers are now partially obsolete as they are now handled by the core via app resources.
 
@@ -103,7 +103,7 @@ Here is the list of the major ones:
 - `ynh_secure_remove`
 - `ynh_backup` / `ynh_restore_file`
 
-# Configuration/template system
+## Configuration/template system
 
 App scripts will often need to create a bunch of configuration files.
 
@@ -126,7 +126,7 @@ location __PATH__/ {
 ```
 
 
-# App sources
+## App sources
 
 App scripts will often need to download the upsteam app sources to be deployed in the install dir, via `ynh_setup_source`.
 
@@ -144,13 +144,13 @@ SOURCE_EXTRACT=true                                                     # (yes, 
 ```
 
 
-# Common operations (TODO/FIXME)
+## Common operations (TODO/FIXME)
 
-### installing/upgrading app sources
-### adding configurations
-### adding a systemd service
-### curl / automatizing install forms
-### classic stuff for nodejs apps
-### classic stuff for php apps
-### classic stuff for python apps
-### classic stuff for ??? apps
+#### installing/upgrading app sources
+#### adding configurations
+#### adding a systemd service
+#### curl / automatizing install forms
+#### classic stuff for nodejs apps
+#### classic stuff for php apps
+#### classic stuff for python apps
+#### classic stuff for ??? apps

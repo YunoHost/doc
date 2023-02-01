@@ -9,7 +9,7 @@ routes:
 
 Properly documenting your app is important for user experience ;). YunoHost provides several mechanism to display information to users.
 
-# Extensive description : `doc/DESCRIPTION.md` and `doc/screenshots/`
+## Extensive description : `doc/DESCRIPTION.md` and `doc/screenshots/`
 
 You are encouraged to add a `doc/DESCRIPTION.md` which should contain a more extensive description than the short description contained in `manifest.toml`. This usually corresponds to listing the key features of the app.
 
@@ -21,7 +21,7 @@ You can also add translated versions of the `.md` file in, for example, `doc/DES
 
 If your app repository is part of the YunoHost-Apps org, the provided description will be used to auto-regenerate the README.md of your github repo via `yunohost-bot`.
 
-# Specific notes for admins : `doc/ADMIN.md`, `doc/<whatever>.md`
+## Specific notes for admins : `doc/ADMIN.md`, `doc/<whatever>.md`
 
 Sometimes, you may want to ship YunoHost-specific notes regarding the administration of this app. For example, integrating OnlyOffice inside Nextcloud.
 
@@ -31,7 +31,7 @@ Note that you can even use the `__FOOBAR__` syntax which will automatically be r
 
 These notes will be available in the app info page in the webadmin after the app installation.
 
-# Pre/post-install notes, pre/post-upgrade notes
+## Pre/post-install notes, pre/post-upgrade notes
 
 Sometimes, you may want to display important information to the admin at key points in the app's life cycle. You can do so by providing special markdown files:
 - `doc/PRE_INSTALL.md`: displayed right before the installation (for example to warn that « This app install is expected to take around 30 minutes, be patient! » or « This app will automatically add 1GB swap to your system »)
