@@ -130,7 +130,7 @@ Note that because multiple ports can be booked, each properties is prefixed by t
 
 ##### Example:
 ```toml
-[resources.port]
+[resources.ports]
 # (empty should be fine for most apps ... though you can customize stuff if absolutely needed)
 
 main.default = 12345    # if you really want to specify a prefered value .. but shouldnt matter in the majority of cases
