@@ -5,6 +5,8 @@ taxonomy:
     category: docs
 routes:
   default: '/packaging_apps_intro'
+  aliases:
+    - '/packaging_apps'
 ---
 
 This documentation is here to provide all the basic concepts and vocabulary needed to understand app packaging.
