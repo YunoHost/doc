@@ -13,7 +13,7 @@ All the information on this software is available on the [project website](http:
 
 To learn how to use it I invite you to read the [user documentation of the project](https://www.noalyss.eu/?page_id=1031).
 
-The github of the YunoHost module is [here](https://github.com/YunoHost-Apps/noalyss_ynh_ynh).
+The GitHub of the YunoHost module is [here](https://github.com/YunoHost-Apps/noalyss_ynh_ynh).
 
 You can try the project [here](http://demo.noalyss.eu/index.php) with the identifiers: demo / demo
 
