@@ -7,63 +7,35 @@ routes:
   default: '/packaging_apps_resources'
 ---
 
-## System User
 
 
-Provision a system user to be used by the app. The username is exactly equal to the app id
+## Apt
 
-##### Example:
-```toml
-[resources.system_user]
-# (empty - defaults are usually okay)
-```
-
-##### Properties:
-- `allow_ssh`: (default: False) Adds the user to the ssh.app group, allowing SSH connection via this user
-- `allow_sftp`: (defalt: False) Adds the user to the sftp.app group, allowing SFTP connection via this user
-
-##### Provision/Update:
-- will create the system user if it doesn't exists yet
-- will add/remove the ssh/sftp.app groups
-
-##### Deprovision:
-- deletes the user and group
-
-
-## Install Dir
-
-
-Creates a directory to be used by the app as the installation directory, typically where the app sources and assets are located. The corresponding path is stored in the settings as `install_dir`
+Create a virtual package in apt, depending on the list of specified packages that the app needs. The virtual packages is called `$app-ynh-deps` (with `_` being replaced by `-` in the app name, see `ynh_install_app_dependencies`)
 
 ##### Example:
 ```toml
-[resources.install_dir]
-# (empty - defaults are usually okay)
+[resources.apt]
+packages = "nyancat, lolcat, sl"
+
+# (this part is optional and corresponds to the legacy ynh_install_extra_app_dependencies helper)
+extras.yarn.repo = "deb https://dl.yarnpkg.com/debian/ stable main"
+extras.yarn.key = "https://dl.yarnpkg.com/debian/pubkey.gpg"
+extras.yarn.packages = "yarn"
 ```
 
 ##### Properties:
-- `dir`: (default: `/var/www/__APP__`) The full path of the install dir
-- `owner`: (default: `__APP__:rx`) The owner (and owner permissions) for the install dir
-- `group`: (default: `__APP__:rx`) The group (and group permissions) for the install dir
+- `packages`: Comma-separated list of packages to be installed via `apt`
+- `extras`: A dict of (repo, key, packages) corresponding to "extra" repositories to fetch dependencies from
 
 ##### Provision/Update:
-- during install, the folder will be deleted if it already exists (FIXME: is this what we want?)
-- if the dir path changed and a folder exists at the old location, the folder will be `mv`'ed to the new location
-- otherwise, creates the directory if it doesn't exists yet
-- (re-)apply permissions (only on the folder itself, not recursively)
-- save the value of `dir` as `install_dir` in the app's settings, which can be then used by the app scripts (`$install_dir`) and conf templates (`__INSTALL_DIR__`)
+- The code literally calls the bash helpers `ynh_install_app_dependencies` and `ynh_install_extra_app_dependencies`, similar to what happens in v1.
+- Note that when `packages` contains some phpX.Y-foobar dependencies, this will automagically define a `phpversion` setting equal to `X.Y` which can therefore be used in app scripts ($phpversion) or templates (`__PHPVERSION__`)
 
 ##### Deprovision:
-- recursively deletes the directory if it exists
-
-##### Legacy management:
-- In the past, the setting was called `final_path`. The code will automatically rename it as `install_dir`.
-- As explained in the 'Provision/Update' section, the folder will also be moved if the location changed
-
-
+- The code literally calls the bash helper `ynh_remove_app_dependencies`
 
 ## Data Dir
-
 
 Creates a directory to be used by the app as the data store directory, typically where the app multimedia or large assets added by users are located. The corresponding path is stored in the settings as `data_dir`. This resource behaves very similarly to install_dir.
 
@@ -92,73 +64,65 @@ Creates a directory to be used by the app as the data store directory, typically
 - In the past, the setting may have been called `datadir`. The code will automatically rename it as `data_dir`.
 - As explained in the 'Provision/Update' section, the folder will also be moved if the location changed
 
+## Database
 
+Initialize a database, either using MySQL or Postgresql. Relevant DB infos are stored in settings `$db_name`, `$db_user` and `$db_pwd`.
 
-## Apt
+NB: only one DB can be handled in such a way (is there really an app that would need two completely different DB ?...)
 
-
-Create a virtual package in apt, depending on the list of specified packages that the app needs. The virtual packages is called `$app-ynh-deps` (with `_` being replaced by `-` in the app name, see `ynh_install_app_dependencies`)
+NB2: no automagic migration will happen in an suddenly change `type` from `mysql` to `postgresql` or viceversa in its life
 
 ##### Example:
 ```toml
-[resources.apt]
-packages = "nyancat, lolcat, sl"
-
-# (this part is optional and corresponds to the legacy ynh_install_extra_app_dependencies helper)
-extras.yarn.repo = "deb https://dl.yarnpkg.com/debian/ stable main"
-extras.yarn.key = "https://dl.yarnpkg.com/debian/pubkey.gpg"
-extras.yarn.packages = "yarn"
+[resources.database]
+type = "mysql"   # or : "postgresql". Only these two values are supported
 ```
 
 ##### Properties:
-- `packages`: Comma-separated list of packages to be installed via `apt`
-- `extras`: A dict of (repo, key, packages) corresponding to "extra" repositories to fetch dependencies from
+- `type`: The database type, either `mysql` or `postgresql`
 
 ##### Provision/Update:
-- The code literally calls the bash helpers `ynh_install_app_dependencies` and `ynh_install_extra_app_dependencies`, similar to what happens in v1.
+- (Re)set the `$db_name` and `$db_user` settings with the sanitized app name (replacing `-` and `.` with `_`)
+- If `$db_pwd` doesn't already exists, pick a random database password and store it in that setting
+- If the database doesn't exists yet, create the SQL user and DB using `ynh_mysql_create_db` or `ynh_psql_create_db`.
 
 ##### Deprovision:
-- The code literally calls the bash helper `ynh_remove_app_dependencies`
+- Drop the DB using `ynh_mysql_remove_db` or `ynh_psql_remove_db`
+- Deletes the `db_name`, `db_user` and `db_pwd` settings
 
+##### Legacy management:
+- In the past, the sql passwords may have been named `mysqlpwd` or `psqlpwd`, in which case it will automatically be renamed as `db_pwd`
 
-## Ports
+## Install Dir
 
-
-Book port(s) to be used by the app, typically to be used to the internal reverse-proxy between nginx and the app process.
-
-Note that because multiple ports can be booked, each properties is prefixed by the name of the port. `main` is a special name and will correspond to the setting `$port`, whereas for example `xmpp_client` will correspond to the setting `$port_xmpp_client`.
+Creates a directory to be used by the app as the installation directory, typically where the app sources and assets are located. The corresponding path is stored in the settings as `install_dir`
 
 ##### Example:
 ```toml
-[resources.port]
-# (empty should be fine for most apps ... though you can customize stuff if absolutely needed)
-
-main.default = 12345    # if you really want to specify a prefered value .. but shouldnt matter in the majority of cases
-
-xmpp_client.default = 5222  # if you need another port, pick a name for it (here, "xmpp_client")
-xmpp_client.exposed = "TCP" # here, we're telling that the port needs to be publicly exposed on TCP on the firewall
+[resources.install_dir]
+# (empty - defaults are usually okay)
 ```
 
-##### Properties (for every port name):
-- `default`: The prefered value for the port. If this port is already being used by another process right now, or is booked in another app's setting, the code will increment the value until it finds a free port and store that value as the setting. If no value is specified, a random value between 10000 and 60000 is used.
-- `exposed`: (default: `false`) Wether this port should be opened on the firewall and be publicly reachable. This should be kept to `false` for the majority of apps than only need a port for internal reverse-proxying! Possible values: `false`, `true`(=`Both`), `Both`, `TCP`, `UDP`. This will result in the port being opened on the firewall, and the diagnosis checking that a program answers on that port.
-- `fixed`: (default: `false`) Tells that the app absolutely needs the specific value provided in `default`, typically because it's needed for a specific protocol
+##### Properties:
+- `dir`: (default: `/var/www/__APP__`) The full path of the install dir
+- `owner`: (default: `__APP__:rx`) The owner (and owner permissions) for the install dir
+- `group`: (default: `__APP__:rx`) The group (and group permissions) for the install dir
 
-##### Provision/Update (for every port name):
-- If not already booked, look for a free port, starting with the `default` value (or a random value between 10000 and 60000 if no `default` set)
-- If `exposed` is not `false`, open the port in the firewall accordingly - otherwise make sure it's closed.
-- The value of the port is stored in the `$port` setting for the `main` port, or `$port_NAME` for other `NAME`s
+##### Provision/Update:
+- during install, the folder will be deleted if it already exists (FIXME: is this what we want?)
+- if the dir path changed and a folder exists at the old location, the folder will be `mv`'ed to the new location
+- otherwise, creates the directory if it doesn't exists yet
+- (re-)apply permissions (only on the folder itself, not recursively)
+- save the value of `dir` as `install_dir` in the app's settings, which can be then used by the app scripts (`$install_dir`) and conf templates (`__INSTALL_DIR__`)
 
 ##### Deprovision:
-- Close the ports on the firewall if relevant
-- Deletes all the port settings
+- recursively deletes the directory if it exists
 
 ##### Legacy management:
-- In the past, some settings may have been named `NAME_port` instead of `port_NAME`, in which case the code will automatically rename the old setting.
-
+- In the past, the setting was called `final_path`. The code will automatically rename it as `install_dir`.
+- As explained in the 'Provision/Update' section, the folder will also be moved if the location changed
 
 ## Permissions
-
 
 Configure the SSO permissions/tiles. Typically, webapps are expected to have a 'main' permission mapped to '/', meaning that a tile pointing to the `$domain/$path` will be available in the SSO for users allowed to access that app.
 
@@ -195,33 +159,58 @@ admin.allowed = "admins"   # Assuming the "admins" group exists (cf future devel
 ##### Legacy management:
 - Legacy `is_public` setting will be deleted if it exists
 
+## Ports
 
-## Database
+Book port(s) to be used by the app, typically to be used to the internal reverse-proxy between nginx and the app process.
 
-
-Initialize a database, either using MySQL or Postgresql. Relevant DB infos are stored in settings `$db_name`, `$db_user` and `$db_pwd`.
-
-NB: only one DB can be handled in such a way (is there really an app that would need two completely different DB ?...)
-
-NB2: no automagic migration will happen in an suddenly change `type` from `mysql` to `postgresql` or viceversa in its life
+Note that because multiple ports can be booked, each properties is prefixed by the name of the port. `main` is a special name and will correspond to the setting `$port`, whereas for example `xmpp_client` will correspond to the setting `$port_xmpp_client`.
 
 ##### Example:
 ```toml
-[resources.database]
-type = "mysql"   # or : "postgresql". Only these two values are supported
+[resources.ports]
+# (empty should be fine for most apps... though you can customize stuff if absolutely needed)
+
+
+main.default = 12345    # if you really want to specify a prefered value .. but shouldnt matter in the majority of cases
+
+xmpp_client.default = 5222  # if you need another port, pick a name for it (here, "xmpp_client")
+xmpp_client.exposed = "TCP" # here, we're telling that the port needs to be publicly exposed on TCP on the firewall
+```
+
+##### Properties (for every port name):
+- `default`: The prefered value for the port. If this port is already being used by another process right now, or is booked in another app's setting, the code will increment the value until it finds a free port and store that value as the setting. If no value is specified, a random value between 10000 and 60000 is used.
+- `exposed`: (default: `false`) Wether this port should be opened on the firewall and be publicly reachable. This should be kept to `false` for the majority of apps than only need a port for internal reverse-proxying! Possible values: `false`, `true`(=`Both`), `Both`, `TCP`, `UDP`. This will result in the port being opened on the firewall, and the diagnosis checking that a program answers on that port.
+- `fixed`: (default: `false`) Tells that the app absolutely needs the specific value provided in `default`, typically because it's needed for a specific protocol
+
+##### Provision/Update (for every port name):
+- If not already booked, look for a free port, starting with the `default` value (or a random value between 10000 and 60000 if no `default` set)
+- If `exposed` is not `false`, open the port in the firewall accordingly - otherwise make sure it's closed.
+- The value of the port is stored in the `$port` setting for the `main` port, or `$port_NAME` for other `NAME`s
+
+##### Deprovision:
+- Close the ports on the firewall if relevant
+- Deletes all the port settings
+
+##### Legacy management:
+- In the past, some settings may have been named `NAME_port` instead of `port_NAME`, in which case the code will automatically rename the old setting.
+
+## System User
+
+Provision a system user to be used by the app. The username is exactly equal to the app id
+
+##### Example:
+```toml
+[resources.system_user]
+# (empty - defaults are usually okay)
 ```
 
 ##### Properties:
-- `type`: The database type, either `mysql` or `postgresql`
+- `allow_ssh`: (default: False) Adds the user to the ssh.app group, allowing SSH connection via this user
+- `allow_sftp`: (defalt: False) Adds the user to the sftp.app group, allowing SFTP connection via this user
 
 ##### Provision/Update:
-- (Re)set the `$db_name` and `$db_user` settings with the sanitized app name (replacing `-` and `.` with `_`)
-- If `$db_pwd` doesn't already exists, pick a random database password and store it in that setting
-- If the database doesn't exists yet, create the SQL user and DB using `ynh_mysql_create_db` or `ynh_psql_create_db`.
+- will create the system user if it doesn't exists yet
+- will add/remove the ssh/sftp.app groups
 
 ##### Deprovision:
-- Drop the DB using `ynh_mysql_remove_db` or `ynh_psql_remove_db`
-- Deletes the `db_name`, `db_user` and `db_pwd` settings
-
-##### Legacy management:
-- In the past, the sql passwords may have been named `mysqlpwd` or `psqlpwd`, in which case it will automatically be renamed as `db_pwd`
+- deletes the user and group
