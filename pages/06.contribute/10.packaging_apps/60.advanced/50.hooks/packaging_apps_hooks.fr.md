@@ -6,7 +6,7 @@ taxonomy:
 routes:
   default: '/packaging_apps_hooks'
 ---
-YunoHost comprend un mécanisme de hooks déclenchés lors de nombreuses opérations modifiant le système. Vous pouvez utiliser ce mécanisme afin d'étendre le comportement d'une commande yunohost.
+YunoHost comprend un mécanisme de hooks déclenchés lors de nombreuses opérations modifiant le système. Vous pouvez utiliser ce mécanisme afin d'étendre le comportement d'une commande YunoHost.
 
 Le cas le plus évident est l'ajout d'un utilisateur. Si vous aviez un hook `post_user_create`, ce hook sera déclenché dès qu'un utilisateur sera ajouté.
 
@@ -24,7 +24,7 @@ nano /etc/yunohost/hooks.d/post_user_create/05-add-user-to-samba
 ```
 
 ## Comment ajouter un hook dans un paquetage d'application
-Si vous empaquetez une application, vous ne devez pas mettre vous-même le hook dans `/etc/yunohost/hooks.d mais vous devez créer un répertoire hooks à la racine de votre paquet.
+Si vous empaquetez une application, vous ne devez pas mettre vous-même le hook dans `/etc/yunohost/hooks.d` mais vous devez créer un répertoire hooks à la racine de votre paquet.
 ```
 .
 ├─── conf

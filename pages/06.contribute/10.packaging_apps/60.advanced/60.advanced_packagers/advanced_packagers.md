@@ -201,5 +201,5 @@ With advanced packaging comes [CI_package_check](https://github.com/YunoHost/CI_
 
 When you do several things at the same time, sometimes you don't remember what is the next step for this or that app.
 A good tool to keep your TODO list organized is to use a kaban like apps:
-- [kanboard](https://github.com/YunoHost-Apps/kanboard_ynh)
-- [wekan](https://github.com/YunoHost-Apps/wekan_ynh)
+- [Kanboard](https://github.com/YunoHost-Apps/kanboard_ynh)
+- [Wekan](https://github.com/YunoHost-Apps/wekan_ynh)

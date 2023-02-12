@@ -7,7 +7,7 @@ routes:
   default: '/packaging_apps_hooks'
 ---
 
-YunoHost includes a hook mechanism triggered on a lot of operation changing the system. You can use this mechanism in order to extend the behaviour of a yunohost command.
+YunoHost includes a hook mechanism triggered on a lot of operation changing the system. You can use this mechanism in order to extend the behaviour of a YunoHost command.
 
 The most obvious case is adding a user. If you had a `post_user_create` hook, this hook will be triggered as soon as a user is added.
 

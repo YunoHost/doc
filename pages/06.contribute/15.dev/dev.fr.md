@@ -108,6 +108,6 @@ Il contient essentiellement :
   - Pour une correction de bug : `fix-REDMINETICKET-description-correctif`
   - `ISSUENUMBER` est optionnel et correspond au numéro du ticket sur le bug tracker
 
-- Une fois prêt, ouvrez une Pull Request (PR) sur Github. De préférence, inclure `[fix]` ou `[enh]` au début du titre de la PR.
+- Une fois prêt, ouvrez une Pull Request (PR) sur GitHub. De préférence, inclure `[fix]` ou `[enh]` au début du titre de la PR.
 
 - Après relecture, test et validation par les autres contributeurs, votre branche sera mergée dans `unstable` !

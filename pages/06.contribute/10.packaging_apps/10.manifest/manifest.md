@@ -100,16 +100,16 @@ This section contains questions that should be asked to the admin prior to start
 ```toml
 [install]
     [install.domain]
-    # this is a generic question - ask strings are automatically handled by Yunohost's core
+    # this is a generic question - ask strings are automatically handled by YunoHost's core
     type = "domain"
 
     [install.path]
-    # this is a generic question - ask strings are automatically handled by Yunohost's core
+    # this is a generic question - ask strings are automatically handled by YunoHost's core
     type = "path"
     default = "/helloworld"
 
     [install.init_main_permission]
-    # this is a generic question - ask strings are automatically handled by Yunohost's core
+    # this is a generic question - ask strings are automatically handled by YunoHost's core
     type = "group"
     default = "visitors"
 
