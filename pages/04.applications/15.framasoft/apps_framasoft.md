@@ -1,5 +1,5 @@
 ---
-title: Équivalence avec les applications Framasoft
+title: Equivalent Framasoft applications
 template: docs
 taxonomy:
     category: docs
@@ -7,7 +7,7 @@ routes:
   default: '/apps_framasoft'
 ---
 
-| App Framasoft  | Projet d'origine                                             | Package                                                                                                |
+| Framasoft App  | Original project                                             | Package                                                                                                |
 | :---:          | :---:                                                        | :---:                                                                                                  |
 | Framabag       | [Wallabag           ](https://www.wallabag.it)               | [[fa=git /]](https://github.com/YunoHost-Apps/wallabag2_ynh)       ![](https://ci-apps.yunohost.org/ci/badges/wallabag2.status.svg)       ![](https://dash.yunohost.org/integration/wallabag2.svg) |
 | Framabee       | [Searx              ](https://searx.ir)                      | [[fa=git /]](https://github.com/YunoHost-Apps/searx_ynh)           ![](https://ci-apps.yunohost.org/ci/badges/searx.status.svg)           ![](https://dash.yunohost.org/integration/searx.svg) |
@@ -46,7 +46,7 @@ routes:
 | Framinetest    | [Minetest           ](https://www.minetest.net)              | [[fa=git /]](https://github.com/YunoHost-Apps/minetest_ynh)        ![](https://ci-apps.yunohost.org/ci/badges/minetest.status.svg)        ![](https://dash.yunohost.org/integration/minetest.svg) |
 | MyFrama        | [Shaarli            ](https://github.com/shaarli/Shaarli)    | [[fa=git /]](https://github.com/YunoHost-Apps/shaarli_ynh)         ![](https://ci-apps.yunohost.org/ci/badges/shaarli.status.svg)         ![](https://dash.yunohost.org/integration/shaarli.svg) |
 
-### Voir aussi
+### See also
 
-- [Liste complète des applications packagées](/apps)
-- [La roadmap 'Dégooglisons'](https://github.com/YunoHost/issues/milestone/13)
+- [Complete list of packaged applications](/apps)
+- [The roadmap 'Dégooglisons'](https://github.com/YunoHost/issues/milestone/13)
