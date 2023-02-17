@@ -152,8 +152,8 @@ sudo su
 
 groupadd multimedia
 
-usermord nextcloud -a -G multimedia
-usermord jellyfin -a -G multimedia
+usermod nextcloud -a -G multimedia
+usermod jellyfin -a -G multimedia
 
 chown nextcloud:multimedia -R /media/data/jellyfin
 ```
