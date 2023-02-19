@@ -40,6 +40,25 @@ Package check interfaces with your app's `tests.toml` which allows to control a 
 
 More info about the syntax here are also available [in the README](https://github.com/YunoHost/package_check#teststoml-syntax)
 
+### Application quality levels
+
+Package check will compute a quality level ranging from 0 to 8.
+
+Apps with level equal or lower than 4 are considered "bad quality" and YunoHost will discourage people from installing such apps.
+
+While this definition may vary with time, the current definition as of February 2023 is roughly:
+
+- level 0 (« Broken ») : the application doesn't work at all or doesn't pass level 1 criterias
+- level 1 (« Installable in at least one scenario ») : At least one install succeeded, and there's no critical issue reported in the linter
+- level 2 (« Installable in all scenarios ») : All install scenarios tested (typically install on full domain, domain+subpath, multi-instance, private/public) succeeded
+- level 3 (« Can be upgraded ») : All upgrades tests from the current commit succeeded
+- level 4 (« Can be backuped/restored ») : All backup/restore tests succeeded
+- level 5 (« No linter error ») : No red errors reported by the linter
+- level 6 (« App is in a community-operated git org ») : The app is hosted on YunoHost-Apps organization. (From a maintenance / security point of view, we want to avoid the catalog being filled with apps that are privately-hosted and that the initial maintainer will ultimately abandon and that can't be maintained easily by the community)
+- level 7 (« All tests succeeded + No linter warning ») : Pass all test (including for example upgrade from past commits) and no warning reported by the linter
+- level 8 (« Maintained and long-term good quality ») : The app is not flagged as not-maintained / alpha / deprecated / obsolete in the catalog, and has been at least level 5 during the past ~year
+
+
 ## Continous integration (CI)
 
 The YunoHost project also developed an interface called [`yunorunner`](https://github.com/YunoHost/yunorunner) which interfaces with `package_check`, handles a job queue, and automatically add jobs to the queue using some triggers.
