@@ -80,6 +80,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Dynette | Dynette is a dyndns server | [Upstream](https://github.com/YunoHost/dynette) | [Package Draft](https://github.com/YunoHost-Apps/dynette_ynh) |
 | DrakonHub | Online editor for Drakon diagrams | [Upstream](https://github.com/stepan-mitkin/drakonhub) | |
 | [Drawpile](https://drawpile.net) | Collaborative drawing program that allows multiple users to sketch on the same canvas simultaneously | [Upstream](https://github.com/drawpile/Drawpile) | |
+| [Earthstar-Project Server](https://earthstar-project.org/tutorials/run-a-server) | Run and configure an Earthstar server capable of syncing with other peers | [Upstream](https://github.com/earthstar-project/earthstar) | |
 | [Element Call](https://element.io/blog/element-call-beta-2-encryption-spatial-audio-walkie-talkie-mode-and-more/) | Showcase for full mesh video chat powered by Matrix | [Upstream](https://github.com/vector-im/element-call) |  |
 | [Elk](https://elk.zone) | A nimble Mastodon web client. It also works with other Fediverse servers like Pleroma or GotoSocial | [upstream](https://github.com/elk-zone/elk) |  |
 | Endlessh | SSH Tarpit | [upstream](https://github.com/skeeto/endlessh) |  |
