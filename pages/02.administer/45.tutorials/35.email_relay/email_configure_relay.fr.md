@@ -39,7 +39,9 @@ Habituellement les fournisseurs ont une documentation à ce sujet.
 ! [fa=exclamation-triangle /] Attention une fois la zone DNS enregistrée, le relais SMTP peut envoyer des e-mails à votre nom sans que vous ne le sachiez
 
 ## Étape 3 :Configurer YunoHost correctement
+Il est possible de configurer via l'admin web ou en *command line*.
 
+[ui-tabs position="top-left" active="0" theme="lite"] [ui-tab title="Configuration en CLI"]
 Pour que YunoHost soit capable d'utiliser le relais, il faut paramétrer 4 choses.
 1. Votre url de relais SMTP (on utilisera `smtprelay.tld`).
 2.  Le port sur lequel on accède au relais (on utilisera le port 2525 ci-dessous) 
@@ -64,6 +66,18 @@ sudo yunohost settings set smtp.relay.password -v password
 ```
 
 C'est une bonne idée de confirmer les informations en faisant `sudo yunohost settings list`
+
+[/ui-tab] [ui-tab title="Configuration en Web Admin"]
+Depuis l'interface d'administration, dans la section `Outils` > `Paramètres de YunoHost`, et l'onglet `Email`.
+Il suffit d'activer l'option, et de renseigner les champs nécessaire :
+- **Adresse du relais SMTP** : L'url pour le serveur SMTP.
+- **Port du relais SMTP** : Le port utilisé sur le serveur renseigné.
+- **Utilisateur du relais SMTP** : Login ou mail d'identification pour le serveur.
+- **Mot de passe du relais SMTP** : Tout simplement le mot de passe.
+
+![Option-Relais-Smtp](https://user-images.githubusercontent.com/3066684/220140535-6040f42a-0cb1-483c-9ab3-d0b8b50c95a2.jpg)
+
+[/ui-tab] [/ui-tabs]
 
 Votre relais SMTP est maintenant configuré !
 
