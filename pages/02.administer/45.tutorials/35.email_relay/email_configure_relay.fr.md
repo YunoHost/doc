@@ -70,7 +70,7 @@ C'est une bonne idée de confirmer les informations en faisant `sudo yunohost se
 [/ui-tab] [ui-tab title="Configuration en Web Admin"]
 Depuis l'interface d'administration, dans la section `Outils` > `Paramètres de YunoHost`, et l'onglet `Email`.
 Il suffit d'activer l'option, et de renseigner les champs nécessaire :
-- **Adresse du relais SMTP** : L'url pour le serveur SMTP.
+- **Adresse du relais SMTP** : L'URL pour le serveur SMTP.
 - **Port du relais SMTP** : Le port utilisé sur le serveur renseigné.
 - **Utilisateur du relais SMTP** : Login ou mail d'identification pour le serveur.
 - **Mot de passe du relais SMTP** : Tout simplement le mot de passe.
