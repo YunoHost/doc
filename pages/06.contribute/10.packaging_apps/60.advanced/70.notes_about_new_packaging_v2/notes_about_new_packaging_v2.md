@@ -42,6 +42,7 @@ This will edit the file in place and you should then carefully review and iterat
 - **All settings are now automatically loaded in app script environments** (so e.g. directly define `$domain`, etc.)
 - **Auto-enable `set -eu`** a.k.a. `ynh_abort_if_errors` in appropriate scripts
 - **The safety-backup-before-upgrade is now automatically handled by the core**
+- **Simplify writing change-url scripts**: old the `new`/`old`/`change` `domain`/`path` are now automatically available in the context and a new helper `ynh_change_url_nginx_config` takes care of tweaking the nginx conf. Your script should essentially just call that helper and possibly tweak the app's conf and possibly restart the app's service
 - **Introduce a new `resource` mechanism**
     - Resources are declared in the `manifest.toml`. 
     - They are meant to formalize recurring app needs that are to be provisioned/deprovisioned by the core. 

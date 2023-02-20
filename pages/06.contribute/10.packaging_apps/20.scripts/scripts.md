@@ -68,6 +68,8 @@ Special variables are automatically defined in the context of a script:
 - During install, answers to install questions are automatically available as bash variables. For example, the `$domain` setting corresponds to the `domain` question, same for `$prefered_pet`, etc... Note that - apart from special questions such as `init_main_permission` or user-provided passwords - they are also automatically saved as settings (cf next section).
 - During other scripts, all app settings are also loaded and automatically available.
 - Note that some settings are automatically created/updated by app ressources. For example, the `install_dir` setting will automatically be available too and corresponds to typically `/var/www/$app`
+- In the `change_url` context, variables called `new_domain`, `new_path`, `old_domain`, `old_path` will be available, as well as `change_domain` and `change_path` equal to `0` (false) or `1` (true) depending if the domain / path changed
+
 
 ## Setting system
 
