@@ -115,7 +115,7 @@ Creates a directory to be used by the app as the installation directory, typical
 
 ##### Properties:
 - `dir`: (default: `/var/www/__APP__`) The full path of the install dir
-- `owner`: (default: `__APP__:rx`) The owner (and owner permissions) for the install dir
+- `owner`: (default: `__APP__:rwx`) The owner (and owner permissions) for the install dir
 - `group`: (default: `__APP__:rx`) The group (and group permissions) for the install dir
 
 ##### Provision/Update:
