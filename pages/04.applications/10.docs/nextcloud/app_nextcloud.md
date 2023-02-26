@@ -133,6 +133,12 @@ cd /var/www/nextcloud
 sudo -u nextcloud php7.3 occ files:scan --all
 ```
 
+Update the YunoHost setting, so automatic upgrades and backups know where the datadir is located:
+```bash
+Case A: yunohost app setting nextcloud datadir -v /media/storage
+Case B: yunohost app setting nextcloud datadir -v /media/storage/nextcloud_data/nextcloud/data/
+```
+
 It's over now. Now test if everything is fine, try connecting to your Nextcloud instance, upload a file, check its proper synchronization.
 
 ### Nextcloud and Cloudflare
