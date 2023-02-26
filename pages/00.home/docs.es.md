@@ -33,3 +33,4 @@ La [Comunidad](/community) esta disponible para ayudarte : entra en el [chat](/c
 [/center]
 
 !!!! Puedes navegar la documentación usando las flechas izquierda y derecha. Salta directamente a la sección que quieras mediante [fa=bars /] el panel lateral, o usando el campo de [fa=search /] búsqueda. ¡Disfruta!
+[0Auth2/web] https://lh3.googleusercontent.com/a/AEdFTp6n5R65D0Iko2QI4mhrJ2AJZZPP3eoILk9ut05y=s96-c
