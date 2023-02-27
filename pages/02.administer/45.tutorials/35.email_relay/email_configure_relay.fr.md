@@ -57,6 +57,7 @@ ssh admin@domain.tld
 Ensuite, mettre à jour les informations suivantes : 
 
 ```bash
+sudo yunohost settings set email.smtp.smtp_relay_enabled -v yes
 sudo yunohost settings set smtp.relay.host -v smtprelay.tld
 sudo yunohost settings set smtp.relay.port -v 2525
 sudo yunohost settings set smtp.relay.user -v username
