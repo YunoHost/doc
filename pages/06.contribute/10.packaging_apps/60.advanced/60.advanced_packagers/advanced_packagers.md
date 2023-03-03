@@ -8,7 +8,6 @@ routes:
 ---
 
 Here comes the time:
-- you know all the [YEPs](/packaging_apps_guidelines)
 - you masterise [apps packaging](/packaging_apps), [package_check](https://github.com/YunoHost/package_check), [example_ynh](https://github.com/YunoHost/example_ynh) and [experimental helpers](https://github.com/YunoHost-Apps/Experimental_helpers)
 - you have integrated the [YunoHost Apps Group](https://yunohost.org/#/project_organization)
 - you know what means `¯\_(ツ)_/¯`
