@@ -330,7 +330,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [ultrasonics](https://github.com/XDGFX/ultrasonics) | Sync music playlists between all your music services: Spotify, Deezer, Apple Music, Plex, etc. | [Upstream](https://github.com/XDGFX/ultrasonics) |  |
 | [umap](https://umap.openstreetmap.fr/) | Cartography software |  | [Package Draft](https://github.com/YunoHost-Apps/umap_ynh) |
 | [unbound](https://nlnetlabs.nl/projects/unbound/about/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/unbound_ynh) |
-| [upmpdcli](https://www.lesbonscomptes.com/upmpdcli/) |  | [Upstream](https://framagit.org/medoc92/upmpdcli) |  |
+| [upmpdcli](https://www.lesbonscomptes.com/upmpdcli/) | UPNP-server and -renderer. Serves local files, internet-radio (radio-browser.info), BBC-Radio, Deezer, HighresAudio, Qobuz, Spotify and Tidal | [Upstream](https://framagit.org/medoc92/upmpdcli) |  |
 | [Uwazi](https://www.uwazi.io/) |  | [Upstream](https://github.com/huridocs/uwazi) |  |
 | [Volumio](https://volumio.org) |  | [Upstream](https://github.com/volumio) |  |
 | [vpnserver](https://openvpn.net) | Create/provide VPNs from your server |  | [Package Draft](https://github.com/YunoHost-Apps/vpnserver_ynh) |
