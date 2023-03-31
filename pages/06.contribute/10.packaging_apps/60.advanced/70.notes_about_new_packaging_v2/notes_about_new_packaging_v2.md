@@ -31,8 +31,9 @@ Usage: `python3 convert_app_to_packaging_v2.py /path/yo/your/app`
 
 This will edit the file in place and you should then carefully review and iterate over what the script did for you.
 
-
 ### Highlights of the new format
+
+The [example repo](https://github.com/YunoHost/example_ynh) illustrates the below.
 
 - **The manifest is now written as toml (`manifest.toml`)** instead of json (`manifest.json`). The structure of the manifest itself has been reworked and now include:
    - The `upstream` section (now mandatory)
