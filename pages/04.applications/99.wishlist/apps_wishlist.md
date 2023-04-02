@@ -137,6 +137,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [HistoPad](https://github.com/24eme/histopad) | Web application for logging pads (etherpad) and archiving them in a git repository. | [Upstream](https://github.com/24eme/histopad) |  |
 | Hometown | A Mastodon fork with local-only posting, support for more content types, and other features and tweaks. | [Upstream](https://github.com/hometown-fork/hometown) |  |
 | [htpc-manager](https://htpc.io) | Manage your HTPC from anywhere |  | [Package Draft](https://github.com/scith/htpc-manager_ynh) |
+| [Hypothes.is](https://hypothes.is) | Web Annotation server (and client) to crate and share highlights and notes | [Hypothes.is server](https://github.com/hypothesis/h) | |
 | [Icecast 2](https://www.icecast.org) |  | [Upstream](https://gitlab.xiph.org/xiph/icecast-server/) |  |
 | [ikiwiki](https://ikiwiki.info) |  |  |  |
 | [Inventaire](https://inventaire.io) | a libre collaborative resource mapper powered by open-knowledge, starting with books! 📚 | [Upstream](https://github.com/inventaire/inventaire) |  |
