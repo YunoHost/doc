@@ -5,6 +5,8 @@ taxonomy:
     category: docs
 routes:
   default: '/packaging_testing'
+  aliases:
+    - '/packaging_apps_levels'
 ---
 
 Once you're done writing you app package, you'll want to check that everything works correctly. At first, you can manually try to install your app on some test server of your own, but testing everything manually often becomes tedious ;).
