@@ -305,6 +305,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Tahoe-LAFS](https://tahoe-lafs.org/) | Decentralized cloud storage system | [Upstream](https://github.com/tahoe-lafs/tahoe-lafs) |  |
 | [Taiga](https://taiga.io) |  | [Upstream](https://github.com/taigaio/) |  |
 | [Tailscale](https://tailscale.com/) | [Wireguard](https://www.wireguard.com/)-based Mesh-VPN | [Upstream](https://github.com/tailscale/tailscale) |  |
+| [Takahē](https://jointakahe.org) | An efficient ActivityPub Server, for small installs with multiple domains | [Upstream](https://github.com/jointakahe/takahe) |  |
 | [Taskwarrior](https://taskwarrior.org) |  | [Upstream](https://github.com/GothenburgBitFactory/taskwarrior) |  |
 | [Technitium DNS](https://technitium.com/dns/) |  | [Upstream](https://github.com/TechnitiumSoftware/DnsServer) |  |
 | [Teddy.io](https://teedy.io/) | Document manager | [Upstream](https://github.com/sismics/docs) |  |
