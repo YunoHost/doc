@@ -60,3 +60,20 @@ You can now connect without a password, with `sftp -b`, `lftp` or other SFTP cli
 
 >NB: The port number to use for the SFTP connection is the one used for SSH, and configured in `/etc/ssh/sshd_config`.
 This trick allows you to automatically update your site. For example, the Makefile for the Pelican tool allows you to use `make ftp_upload`.
+
+
+INSTRUCTION FOR Filezilla : 
+
+Go to File > Site Manager > ADD new Site
+
+in General : 
+
+ protocol > Sftp
+host : ip of the server 
+port (22 or any custom port you choose)
+logon : normal
+user : my_webapp
+password : (empty)
+
+Click on CONNECT
+
