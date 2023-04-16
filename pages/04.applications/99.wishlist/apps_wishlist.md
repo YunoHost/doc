@@ -39,6 +39,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Bitmessage](https://bitmessage.org/) | P2P communication protocol used to send encrypted messages | [Upstream](https://github.com/Bitmessage/PyBitmessage) |  |
 | Blynk |  | [Upstream](https://github.com/blynkkk/blynk-library) |  |
 | [Bolt](https://bolt.cm/) | Content Management Tool |  | [Package Draft](https://github.com/realitygaps/bolt_ynh) |
+| [BorgWarehouse](https://borgwarehouse.com/) | A fast and modern WebUI for a BorgBackup's central repository server. |   [Upstream](https://github.com/ravinou/borgwarehouse) | |
 | [Budibase](https://budibase.com/) | Low code platform for creating internal apps, workflows, and admin panels in minutes. | [Upstream](https://github.com/Budibase/budibase) |  |
 | [BTCPay Server](https://btcpayserver.org) | BTCPay Server is a free and open-source Bitcoin payment processor | [Upstream](https://github.com/btcpayserver/btcpayserver) |  |
 | [Cactus Comments](https://cactus.chat/) | Federated comment system, to embed into your webpages, based on the Matrix protocol. | [Upstream](https://gitlab.com/cactus-comments) | [Package Draft](https://github.com/h3ndrik/cactus-comments_ynh) |
@@ -280,6 +281,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [shadowsocks](https://shadowsocks.org) | A SOCKS5 proxy to protect your Internet traffic |  | [Package Draft](https://github.com/YunoHost-Apps/shadowsocks_ynh) |
 | shinken | A flexible and scalable monitoring framework | [Upstream](https://github.com/naparuba/shinken) | [Package Draft](https://github.com/YunoHost-apps/shinken_ynh) |
 | sickbeard | Automatic TV show downloader |  | [Package Draft](https://github.com/YunoHost-Apps/sickbeard_ynh) |
+| Semaphore | A fediverse (Mastodon-API compatible) accessible, simple and fast web client  client |   [Upstream](https://github.com/NickColley/semaphore) | |
 | [sickrage](https://sickchill.github.io/) | Automatic TV shows downloader |  | [Package Draft](https://github.com/YunoHost-Apps/sickrage_ynh) |
 | [Signal Proxy](https://signal.org/blog/help-iran-reconnect/) | Fight censorship and bypass traffic securely to the Signal service | [Upstream](https://github.com/signalapp/Signal-TLS-Proxy) | |
 | simpad | Simple markdown editor | [Upstream](https://github.com/beli3ver/SiMPad) | [Package Draft](https://github.com/YunoHost-Apps/simpad_ynh) |
