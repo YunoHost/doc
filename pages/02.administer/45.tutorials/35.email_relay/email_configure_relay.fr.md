@@ -11,16 +11,18 @@ routes:
 
 Si votre fournisseur d'accès à Internet bloque le port 25, ou si vous rencontrez un problème d’utilisation du serveur SMTP natif de YunoHost, vous pouvez configurer votre serveur YunoHost pour utiliser un relais SMTP.
 
-## Qu'est ce qu'un relais SMTP
+## Qu'est-ce qu'un relais SMTP
 
 C'est un serveur SMTP tiers qui va envoyer les e-mails aux destinataires à la place de votre propre serveur SMTP.
-Une fois correctement installé, le fonctionnement est transparent pour l’utilisateur. Vos correspondants verront vos e-mails comme s’ils venaient de votre propre serveur, mais ils seront passés par le relais SMTP que vous aurez choisi et configuré.
+Une fois correctement installé, le fonctionnement est transparent pour l’utilisateur. Vos correspondants verront vos 
+e-mails comme s’ils venaient de votre propre serveur, mais ils seront passés par le relais SMTP que vous aurez 
+choisis et configurés.
 
 ## [fa=exclamation-triangle /] Inconvénients des relais SMTP
 
-Il est important de noter que dans le monde de l'auto-hébergement, utiliser un relais SMTP est un énorme compromis ! En effet, le relais SMTP sera non seulement capable d'envoyer les e-mails de votre part, mais il a également accès au contenu intégral de vos e-mails et peut éventuellement les modifier (Par exemple, par défaut, MailJet réécrit les hyperliens html contenus dans vos mails, afin de traquer l'activité de vos correspondants). Il faut également savoir qu'une fois mis en place, tout le trafic e-mail sortant de votre serveur passera par ce relais; il n'est pas possible de choisir de l'utiliser ou pas selon l'expéditeur ou la destination.
+Il est important de noter que dans le monde de l'auto-hébergement, utiliser un relais SMTP est un énorme compromis ! En effet, le relais SMTP sera non seulement capable d'envoyer les e-mails de votre part, mais il a également accès au contenu intégral de vos e-mails et peut éventuellement les modifier (Par exemple, par défaut, MailJet réécrit les hyperliens html contenus dans vos mails, afin de traquer l'activité de vos correspondants). Il faut également savoir qu'une fois mis en place, tout le trafic e-mail sortant de votre serveur passera par ce relais ; il n'est pas possible de choisir de l'utiliser ou pas selon l'expéditeur ou la destination.
 
-Au delà des considérations de confidentialité ci-dessus, un relais SMTP peut imposer des limitations techniques que l'on n'aurait pas si le port 25 était ouvert. Par exemple, avec la plupart des relais, si un utilisateur de votre serveur YunoHost déclare **une "adresse de transfert" extérieure** dans le but de transférer automatiquement les messages reçus sur votre serveur YunoHost vers une autre boîte mail, **ce transfert ne fonctionnera pas** pour les courriels venant de l'extérieur de votre serveur, sans qu'il soit en averti. En effet, les relais exigent généralement que les messages qu'ils transmettent aient un adresse d'expéditeur de votre domaine (pour lutter contre le spam et présever la réputation de leurs services), ce qui n'est pas le cas pour un "forward automatique" où l'expéditeur originel du mail est conservé; le message est alors bloqué par le relais (qui, normalement, prévient votre admin YunoHost, mais seulement après coup).
+Au-delà des considérations de confidentialité ci-dessus, un relais SMTP peut imposer des limitations techniques que l'on n'aurait pas si le port 25 était ouvert. Par exemple, avec la plupart des relais, si un utilisateur de votre serveur YunoHost déclare **une "adresse de transfert" extérieure** dans le but de transférer automatiquement les messages reçus sur votre serveur YunoHost vers une autre boîte mail, **ce transfert ne fonctionnera pas** pour les courriels venant de l'extérieur de votre serveur, sans qu'il soit en averti. En effet, les relais exigent généralement que les messages qu'ils transmettent aient une adresse d'expéditeur de votre domaine (pour lutter contre le spam et préserver la réputation de leurs services), ce qui n'est pas le cas pour un "forward automatique" où l'expéditeur originel du mail est conservé ; le message est alors bloqué par le relais (qui, normalement, prévient votre admin YunoHost, mais seulement après coup).
 
 ## Comment utiliser un relais SMTP avec YunoHost ?
 
@@ -28,7 +30,7 @@ YunoHost supporte depuis la version 4.1 la configuration d'un relais SMTP. Pour 
 
 ### Étape 1 : S'inscrire chez un fournisseur de relais SMTP
 
-Beaucoup de fournisseurs existent dans ce domaine. Certains sont gratuits et d'autres proposent des services payants contre différentes options. Comme écrit plus haut vous devez être sûr de pouvoir lui faire confiance, mais cela reste à votre entier égard.
+Beaucoup de fournisseurs existent dans ce domaine. Certains sont gratuits et d'autres proposent des services payants contre différentes options. Comme écrit plus haut, vous devez être sûr de pouvoir lui faire confiance, mais cela reste à votre entier égard.
 
 ### Étape 2 : Paramétrer sa zone DNS correctement
 
