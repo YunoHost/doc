@@ -77,7 +77,7 @@ Il suffit d'activer l'option, et de renseigner les champs nécessaires :
 - **Utilisateur du relais SMTP** : Login ou mail d'identification pour le serveur.
 - **Mot de passe du relais SMTP** : Tout simplement le mot de passe.
 
-![Option-Relais-Smtp](https://user-images.githubusercontent.com/3066684/220140535-6040f42a-0cb1-483c-9ab3-d0b8b50c95a2.jpg)
+![Option-Relais-Smtp](image://relay_smtp_option_webadmin_en.png?resize=800)
 
 [/ui-tab] [/ui-tabs]
 
