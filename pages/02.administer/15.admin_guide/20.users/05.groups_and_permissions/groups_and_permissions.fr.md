@@ -15,9 +15,9 @@ Vous pouvez accéder à l'interface de gestion des *groupes et des permissions* 
 
 Le mécanisme de groupe peut être utilisé pour définir des groupes d'utilisateurs qui peuvent ensuite être utilisés pour restreindre les autorisations pour les applications et autres services (tels que l'email ou XMPP). Notez qu'il n'est *pas* obligatoire de créer un groupe pour ce faire : vous pouvez également restreindre l'accès à une application ou à un service de manière individuelle.
 
-L'utilisation de groupes est cependant utile pour la sémantique, par exemple si vous hébergez plusieurs groupes d'amis, des associations ou des entreprises sur votre serveur, vous pouvez créer des groupes comme "association1" et "association2" et ajouter les membres de chaque association au groupe concerné.
+L'utilisation de groupes est cependant utile pour la sémantique, par exemple si vous hébergez plusieurs groupes d'amis, des associations ou des entreprises sur votre serveur, vous pouvez créer des groupes comme `association1` et `association2` et ajouter les membres de chaque association au groupe concerné.
 
-Les groupes permettent aussi l'utilisation de *group list* pour les emails, il est possible de générer des alias de mail pour joindre plusieurs utilisateurs en même temps. Cette features n'est actuellement que disponible en CLI.
+Les groupes d'utilisateurs permettent aussi l'utilisation de *group list* pour les emails, il est ainsi possible de générer des alias de mail pour joindre plusieurs utilisateurs en même temps. Cette features n'est actuellement que disponible en CLI.
 Ainsi, pour avoir toutes les informations en ligne de commande pour chaque groupe :
 ```shell
 yunohost user group info group_name
@@ -38,7 +38,7 @@ Vous ne pouvez pas changer le contenu de ces groupes, seulement les permissions 
 [ui-tab title="À partir de l'interface web"]
 Les groupes existants sont listés en haut de la page *groupes et autorisations*.
 
-![](image://groups_default-groups.png)
+![](image://groups_default-groups_fr.png)
 
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
