@@ -73,7 +73,13 @@ It may be a good idea to double confirm your settings by doing:
 sudo yunohost settings list
 ```
 
-Your SMTP relay is now configured!
+Your SMTP relay is now configured! 
+
+Finally, you have to restart the Postifx service: 
+
+```bash
+sudo /sbin/service postfix restart
+```
 
 ! [fa=exclamation-triangle /] From now on, a non trusty SMTP relay provider could read or use the data of all the emails you send without telling you (but still won't be able to read nor to use the data from emails you receive).
 
