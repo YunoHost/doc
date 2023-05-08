@@ -109,6 +109,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [freeboard](https://freeboard.io/) | A real-time dashboard builder for IOT |  | [Package Draft](https://github.com/YunoHost-Apps/freeboard_ynh) |
 | [freepbx](https://freepbx.org) | VOIP |  | [Package Draft](https://github.com/YunoHost-Apps/freepbx_ynh) |
 | [Freescout](https://freescout.net/) |  Helpdesk & Shared Mailbox | [Upstream](https://github.com/freescout-helpdesk/freescout) |  |
+| [Froxlor](https://froxlor.org/) | The lightweight server management software for your needs | [Upstream](https://github.com/Froxlor/Froxlor/) |  |
 | [ftssolr](https://wiki.dovecot.org/Plugins/FTS/Solr) | Full-text search via IMAP through a Solr indexing server |  | [Package Draft](https://github.com/YunoHost-Apps/ftssolr_ynh) |
 | [Gancio](https://gancio.org/) |  | [Upstream](https://framagit.org/les/gancio) |  |
 | [Garage](https://garagehq.deuxfleurs.fr) | A self-hostable distributed storage service (S3 compatible) | [Upstream](https://git.deuxfleurs.fr/Deuxfleurs/garage) |  |
@@ -161,6 +162,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Koozip](https://koozic.net) |  | [Upstream](https://github.com/DocMarty84/koozic) |  |
 | L'atelier |  |  [Upstream](https://github.com/jbl2024/latelier) |  |
 | [LBCAlerte](https://alerte.ilatumi.org/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/LBCAlerte_ynh) |
+| [Leantime](https://leantime.io/) | Project Management for the non-project manager | [Upstream](https://github.com/Leantime/leantime) |  |
 | lektor | A static website generator |  | [Package Draft](https://github.com/YunoHost-Apps/lektor_ynh) |
 | [LessPass](https://www.lesspass.com/) |  | [Upstream](https://github.com/lesspass/lesspass) |  |
 | [Lessy](https://lessy.io) |  | [Upstream](https://github.com/lessy-community/lessy) |  |
