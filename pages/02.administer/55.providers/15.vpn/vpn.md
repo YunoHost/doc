@@ -33,7 +33,7 @@ Below, you can find a list of providers compatible for self-hosting and especial
 ¹ [Pay what you want](https://en.wikipedia.org/wiki/Pay_what_you_want)
 
 !!! If you try an other VPN provider that include **public dedicated ipv4 and port forwarding**, feel free to contribute to this documentation. We need people to test specific offers of those commercial providers:
-!!! * [VPN area](https://vpnarea.com/front/home/dedicated-ip)
+!!! * [VPN area](https://vpnarea.com/front/home/dedicated-ip) ✘ does not allow forwarding port 80. Running a webserver is against their TOS.
 !!! * [Trust zone](https://trust.zone/fr/order?p=25)
 !!! * [PureVPN](https://www.purevpn.fr/ip-vpn-dedie)
 !!! * [RapidVPN](https://www.rapidvpn.com/vpn)
