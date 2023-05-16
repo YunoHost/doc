@@ -578,10 +578,11 @@ This hooks is run at the end of the command `yunohost firewall reload` or equiva
 
 ##### Examples
 
-###### Forbid completely the outgoing 25 port
+###### Forbid completely the outgoing 25 port except for postfix user
 ```bash
 #!/bin/bash
-iptables -A OUTPUT -p tcp -m tcp --dport 25 -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 25 -m owner --uid-owner postfix -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 25 -m tcp -j REJECT --reject-with icmp-port-unreachable
 ```
 [/details]
 
