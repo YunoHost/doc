@@ -17,7 +17,7 @@ yunohost settings set ssowat.panel_overlay.enabled -v 0
 
 ## Using a theme
 
-Since YunoHost 3.5, you can change the theme of the user portal - though for now it requires tweaking via the command line.
+You can change the theme of the user portal in the admin panel, under Tools > YunoHost settings > Other > User portal.
 
 You can list the available themes with: 
 
