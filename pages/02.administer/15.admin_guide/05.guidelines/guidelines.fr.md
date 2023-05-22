@@ -39,7 +39,7 @@ Ne faites pas ça. La réinstallation est une opération lourde et n'est pas une
 
 ## Faites des sauvegardes
 
-Si vous hébergez des services et des données qui sont importants pour vos utilisateurs, il est important que vous mettiez en place une politique de sauvegarde. Les sauvegardes peuvent être facilement créées à partir de la webadmin - bien qu'elles ne puissent actuellement pas être téléchargées à partir de celle-ci (mais elles peuvent être téléchargées par d'autres moyens). Vous devez effectuer régulièrement des sauvegardes et les conserver dans un endroit sûr et physiquement différent de votre serveur. Plus d'infos dans [la documentation des sauvegardes](/backup).
+Si vous hébergez des services et des données qui sont importants pour vos utilisateurs, il est important que vous mettiez en place une politique de sauvegarde. Les sauvegardes peuvent être facilement créées à partir de la webadmin - et les archives peuvent être téléchargées depuis la webadmin, depuis un client FTP comme FileZilla, ou depuis un terminal avec `scp`. Vous devez effectuer régulièrement des sauvegardes et les conserver dans un endroit sûr et physiquement différent de votre serveur. Plus d'infos dans [la documentation des sauvegardes](/backup).
 
 ## Lisez les emails envoyés à root
 
