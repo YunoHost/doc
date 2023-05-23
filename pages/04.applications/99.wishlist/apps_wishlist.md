@@ -32,7 +32,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Azuracast](https://azuracast.com/) | A Simple, Self-Hosted Web Radio Management Suite |[Upstream](https://github.com/AzuraCast/AzuraCast)|  |
 | [Backstage.io](https://backstage.io/) | Open source Enterprise Developer Portal with Eco-System | [Upstream](https://github.com/backstage/backstage) |  |
 | [Baserow](https://baserow.io/) | Open source no-code database tool and Airtable alternative. | [Upstream](https://gitlab.com/bramw/baserow) |  |
-| [Beatbump](https://beatbump.ml/home) | An alternative frontend for YouTube Music | [Upstream](https://github.com/snuffyDev/Beatbump) |  |
+| [Beatbump](https://beatbump.io/home) | An alternative frontend for YouTube Music | [Upstream](https://github.com/snuffyDev/Beatbump) |  |
 | [Beeper](https://www.beeper.com/) | A unified inbox for 15 chat networks. | [Upstream](https://gitlab.com/beeper) |  |
 | [BigBlueButton](https://bigbluebutton.org) | Web conferencing system | [Upstream](https://github.com/bigbluebutton/bigbluebutton) |  |
 | [BitcartCC](https://bitcartcc.com) | BitcartCC is a self-hosted, open-source cryptocurrency all-in-one solution | [Upstream](https://github.com/bitcartcc/bitcart)  |  |
