@@ -9,9 +9,9 @@ routes:
     - '/packaging_apps_levels'
 ---
 
-Once you're done writing you app package, you'll want to check that everything works correctly. At first, you can manually try to install your app on some test server of your own, but testing everything manually often becomes tedious ;).
+Once you're done writing you app package, you'll want to check that everything works correctly. At first, you can manually try to install your app on some test server of your own : `sudo yunohost app install ./path/to/mycustomapp_ynh`
 
-The YunoHost maintains several tools to automatically and somewhat "objectively" analyze and tests our 400+ apps catalog.
+Testing everything manually often becomes tedious ;). The YunoHost maintains several tools to automatically and somewhat "objectively" analyze and tests our 400+ apps catalog.
 
 ## Package linter
 
