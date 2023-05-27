@@ -140,6 +140,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Hypothes.is](https://hypothes.is) | Web Annotation server (and client) to crate and share highlights and notes | [Hypothes.is server](https://github.com/hypothesis/h) | |
 | [Icecast 2](https://www.icecast.org) |  | [Upstream](https://gitlab.xiph.org/xiph/icecast-server/) |  |
 | [ikiwiki](https://ikiwiki.info) |  |  |  |
+| [Immich](https://immich.app/) | Backup solution for photos and videos on your mobile device | [Upstream](https://github.com/immich-app/immich) | |
 | [InfCloud](https://inf-it.com/open-source/clients/infcloud/) | A contacts, calendar and tasks web client for CalDAV and CardDAV | [Upstream](https://inf-it.com/open-source/download/InfCloud_0.13.1.zip) | |
 | [Inventaire](https://inventaire.io) | a libre collaborative resource mapper powered by open-knowledge, starting with books! 📚 | [Upstream](https://github.com/inventaire/inventaire) |  |
 | [InvoicePlane](https://invoiceplane.com) |  | [Upstream](https://github.com/InvoicePlane/InvoicePlane) |  |
