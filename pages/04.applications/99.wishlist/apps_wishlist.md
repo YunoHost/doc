@@ -55,6 +55,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Checkmk](https://checkmk.com/) | Checkmk provides powerful monitoring of networks, servers, clouds, containers and applications | [Upstream](https://github.com/tribe29/checkmk) | |
 | [Citadel-suite](https://www.citadel.org) | Groupware platform |  |  |
 | [CKAN](https://ckan.org/) | A tool for making open data websites | [Upstream](https://github.com/ckan/ckan) |  |
+| [Cloudlog](https://www.magicbug.co.uk/cloudlog/) | Cloudlog amateur radio logging application | [Upstream](https://github.com/magicbug/Cloudlog) |  |
 | [CloudTube](https://tube.cadence.moe/) | CloudTube front-end for YouTube | [Upstream](https://git.sr.ht/~cadence/cloudtube) |  |
 | [Commafeed](https://www.commafeed.com/) | Self-hosted RSS reader  | [Upstream](https://github.com/Athou/commafeed) |  |
 | [Conduit](https://conduit.rs/) |  Conduit is a lightweight open-source server implementation of the Matrix Specification with a focus on easy setup and low system requirements.  | [Upstream](https://gitlab.com/famedly/conduit) | [Package Draft](https://github.com/YunoHost-Apps/conduit_ynh) |
