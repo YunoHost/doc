@@ -718,7 +718,7 @@ This will be the domain used by your server's users to access the **authenticati
 
 * If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/dns_config).
 
-!!! Yes, you *have to* configure a domain name. If you don't have any domain name and don't want a **.nohost.me** / **.noho.st** / **.ynh.fr** either, you can set up a dummy domain such as `yolo.test` and tweak your `/etc/hosts` file such that this dummy domain points to the appropriate IP, as explained [here](/dns_local_network)).
+!!! Yes, you *have to* configure a domain name. If you don't have any domain name and don't want a **.nohost.me** / **.noho.st** / **.ynh.fr** either, you can set up a dummy domain such as `yolo.test` and tweak your **local** `/etc/hosts` file such that this dummy domain [points to the appropriate IP, as explained here](/dns_local_network).
 
 {% else %}
 
