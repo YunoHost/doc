@@ -31,7 +31,7 @@ Die empfohlene Konfiguration sieht typischerweise so aus:
 
 ```bash
 #
-# Enregistrements IPv4/IPv6 basiques
+# Basis IPv4/IPv6 Einträge
 #
 @ 3600 IN A 111.222.33.44
 * 3600 IN A 111.222.33.44
@@ -64,19 +64,19 @@ dargestellt wird:
 
 | Type    | Nom                    | Valeur                                                 |
 | :-----: | :--------------------: | :----------------------------------------------------: |
-|  **A**  |   **@**                |  `111.222.333.444` (votre IPv4)                        |
-|    A    |   *                    |  `111.222.333.444` (votre IPv4)                        |
-|  AAAA   |   @                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (votre IPv6) |
-|  AAAA   |   *                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (votre IPv6) |
-| **SRV** | **_xmpp-client._tcp**  |  `0 5 5222 votre.domaine.tld.`                         |
-| **SRV** | **_xmpp-server._tcp**  |  `0 5 5269 votre.domaine.tld.`                         |
+|  **A**  |   **@**                |  `111.222.333.444` (deine IPv4)                        |
+|    A    |   *                    |  `111.222.333.444` (deine IPv4)                        |
+|  AAAA   |   @                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (deine IPv6) |
+|  AAAA   |   *                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (deine IPv6) |
+| **SRV** | **_xmpp-client._tcp**  |  `0 5 5222 deine.domaine.tld.`                         |
+| **SRV** | **_xmpp-server._tcp**  |  `0 5 5269 deine.domaine.tld.`                         |
 |  CNAME  |   muc                  |  `@`                                                   |
 |  CNAME  |   pubsub               |  `@`                                                   |
 |  CNAME  |   vjud                 |  `@`                                                   |
 |  CNAME  |   xmpp-upload          |  `@`                                                   |
-| **MX**  | **@**                  |  `votre.domaine.tld.`     (et priorité: 10)            |
+| **MX**  | **@**                  |  `deine.domaine.tld.`     (und prioriät: 10)           |
 |   TXT   |   @                    |  `"v=spf1 a mx ip4:111.222.33.44 -all"`                |
-|   TXT   |  mail._domainkey       |  `"v=DKIM1; k=rsa; p=uneGrannnndeClef"`                |
+|   TXT   |  mail._domainkey       |  `"v=DKIM1; k=rsa; p=irgendeingrooßerSchlüssel"`       |
 |   TXT   |  _dmarc                |  `"v=DMARC1; p=none"`                                  |
 
 #### Einige Hinweise zu dieser Tabelle

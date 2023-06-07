@@ -9,7 +9,7 @@ routes:
 
 ## Utiliser un thème
 
-Depuis YunoHost 3.5, il est possible de changer le thème du portail utilisateur - bien que pour l'instant il faille encore faire cette opération via la ligne de commande.
+Vous pouvez changer le thème du portail utilisateur depuis l'interface administrateur, dans l'onglet Outils > Paramètres de YunoHost > Other > Thème du portail.
 
 Vous pouvez lister les thèmes disponibles avec : 
 
