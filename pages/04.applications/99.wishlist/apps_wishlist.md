@@ -173,7 +173,8 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [MaidSafe](https://maidsafe.net) |  | [Upstream](https://github.com/maidsafe) |  |
 | [Mailpile](https://www.mailpile.is) |  | [Upstream](https://github.com/mailpile/Mailpile) |  |
 | [Mailtrain](https://mailtrain.org/) |  | [Upstream](https://github.com/Mailtrain-org/mailtrain) |  |
-| [Maloja](https://maloja.krateng.ch) | Self-hosted music scrobble database, alternative to Last.fm | [Upstream](https://github.com/krateng/maloja) |  |
+| [Maloja](https://maloja.krateng.ch) | Self-hosted music scrobble database, alternative to Last.fm | [Upstream](https://github.com/krateng/maloja) | |
+| [mautrix-discord](https://github.com/mautrix/discord) | Matrix bridge for discord | [Upstream](https://github.com/mautrix/discord) | [Package Draft](https://github.com/YunoHost-Apps/mautrix_whatsapp_ynh) |
 | [Tileserver-GL](https://maps.earth/) | Tile server light SVG for map service  | [Upstream](https://github.com/maptiler/tileserver-gl) |  |
 | [Mealie](https://hay-kot.github.io/mealie/) | Recipe manager and meal planner  | [Upstream](https://github.com/hay-kot/mealie/) |  |
 | [Mediagoblin](https://mediagoblin.org/) | Video streaming platform | [Upstream](https://savannah.gnu.org/projects/mediagoblin) | [Package Draft](https://github.com/YunoHost-Apps/mediagoblin_ynh) |
