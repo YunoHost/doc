@@ -287,7 +287,7 @@ The script will rely on the code repo specified in the upstream section of the m
 `autoupdate.strategy` is expected to be one of :
 - `latest_github_tag` : look for the latest tag (by sorting tags and finding the "largest" version). Then using the corresponding tar.gz url. Tags containing `rc`, `beta`, `alpha`, `start` are ignored, and actually any tag which doesn't look like `x.y.z` or `vx.y.z`
 - `latest_github_release` : similar to `latest_github_tags`, but starting from the list of releases. Pre- or draft releases are ignored. Releases may have assets attached to them, in which case you can define:
-- `autoupdate.asset = "some regex"` (when there's only one asset to use). The regex is used to find the appropriate asset among the list of all assets
+- `autoupdate.asset = "some regex"` (when there's only one asset to use). The regex is used to find the appropriate asset among the list of all assets. Note that the regex must follow [Python's regex implementation](https://docs.python.org/3/howto/regex.html#regex-howto) (for instance a double backslash is to be used as escape character).
 - or several `autoupdate.asset.$arch = "some_regex"` (when the asset is arch-specific). The regex is used to find the appropriate asset for the specific arch among the list of assets
 - `latest_github_commit` : will use the latest commit on github, and the corresponding tarball. If this is used for the 'main' source, it will also assume that the version is YYYY.MM.DD corresponding to the date of the commit.
 
