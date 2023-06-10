@@ -88,7 +88,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [ERPnext](https://erpnext.com/) |  | [Upstream](https://github.com/frappe/erpnext) |  |
 | [EteSync](https://www.etesync.com/) |  | [Upstream](https://github.com/etesync) |  |
 | [Excalibur](https://excalibur-py.readthedocs.io/en/master/) | A web interface to extract tabular data from PDFs (based on Camelot) | [Upstream](https://github.com/camelot-dev/excalibur) | |
-| [Fab Manager](https://www.fab-manager.com/) | Simplify the daily management of your Third place/Fablab and boost your community | [Upstream](https://github.com/sleede/fab-manager) | |
 | [Farside](https://farside.link/) | A redirecting service for FOSS alternative frontends | [Updtream](https://github.com/benbusby/farside) |  |
 | [Federated wiki](http://fed.wiki.org/view/welcome-visitors/view/federated-wiki) | Farm for fedwiki sites | [Upstream](https://github.com/fedwiki) |  |
 | [Ferdi server](https://getferdi.com) | Messaging aggregation | [Upstream](https://github.com/getferdi/server) |  |
@@ -165,10 +164,8 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [LessPass](https://www.lesspass.com/) |  | [Upstream](https://github.com/lesspass/lesspass) |  |
 | [Lessy](https://lessy.io) |  | [Upstream](https://github.com/lessy-community/lessy) |  |
 | [Librarian](https://lbry.bcow.xyz/) | An alternative frontend for LBRY/Odysee | [Upstream](https://codeberg.org/librarian/librarian) |  |
-| [LibreTranslate](https://libretranslate.com/) | Translation API | [Upstream](https://github.com/uav4geo/LibreTranslate) | [Package Draft](https://github.com/YunoHost-Apps/libretranslate_ynh) |
 | Lichen | Gemtext to HTML translator | [Upstream](https://git.sensorstation.co/lichen.git) |  |
 | [Lila](https://lichess.org/) | Online chess game server | [Upstream](https://github.com/ornicar/lila) |  |
-| [Lingva Translate](https://lingva.ml/) | Alternative front-end for Google Translate | [Upstream](https://github.com/TheDavidDelta/lingva-translate) |  |
 | [LiquidSoap](https://www.liquidsoap.info/) | Audio and video streaming language | [Upstream](https://github.com/savonet/liquidsoap) |  |
 | LocomotiveCMS |  | [Upstream](https://github.com/locomotivecms/engine) |  |
 | [Logitech Media Server](https://en.wikipedia.org/wiki/Logitech_Media_Server) | (formerly SlimServer, SqueezeCenter and Squeezebox Server) is a streaming audio server | [Debian package](http://mysqueezebox.com/download) [Source](https://github.com/Logitech/slimserver) | [Package Draft](https://github.com/lunarok/squeezebox_ynh) |
@@ -176,7 +173,8 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [MaidSafe](https://maidsafe.net) |  | [Upstream](https://github.com/maidsafe) |  |
 | [Mailpile](https://www.mailpile.is) |  | [Upstream](https://github.com/mailpile/Mailpile) |  |
 | [Mailtrain](https://mailtrain.org/) |  | [Upstream](https://github.com/Mailtrain-org/mailtrain) |  |
-| [Maloja](https://maloja.krateng.ch) | Self-hosted music scrobble database, alternative to Last.fm | [Upstream](https://github.com/krateng/maloja) |  |
+| [Maloja](https://maloja.krateng.ch) | Self-hosted music scrobble database, alternative to Last.fm | [Upstream](https://github.com/krateng/maloja) | |
+| [mautrix-discord](https://github.com/mautrix/discord) | Matrix bridge for discord | [Upstream](https://github.com/mautrix/discord) | [Package Draft](https://github.com/YunoHost-Apps/mautrix_whatsapp_ynh) |
 | [Tileserver-GL](https://maps.earth/) | Tile server light SVG for map service  | [Upstream](https://github.com/maptiler/tileserver-gl) |  |
 | [Mealie](https://hay-kot.github.io/mealie/) | Recipe manager and meal planner  | [Upstream](https://github.com/hay-kot/mealie/) |  |
 | [Mediagoblin](https://mediagoblin.org/) | Video streaming platform | [Upstream](https://savannah.gnu.org/projects/mediagoblin) | [Package Draft](https://github.com/YunoHost-Apps/mediagoblin_ynh) |
@@ -247,7 +245,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [pterodactyl](https://pterodactyl.io/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/pterodactyl_ynh) |
 | Pump.io | File sharing and synchronization | [Upstream](https://github.com/pump-io/pump.io) |  |
 | [qBit MatUI](https://qbit-material-webui-demo.herokuapp.com/) | A WebUI for qBittorrent | [Upstream](https://github.com/bill-ahmed/qbit-matUI) |  |
-| [qBittorrent](https://www.qbittorrent.org/) |  | [Upstream](https://github.com/qbittorrent/qBittorrent) |  |
 | [QGis server](https://qgis.org/fr/site/) | QGis server allows to publish QGis desktop projets and maps as OGC-compliant services, that can be used in openlayers, leaflet etc. | [Upstream](https://github.com/qgis/QGIS) | |  
 | [QWC2](https://github.com/qgis/qwc2) | QWC (Qgis Web Client) is a react and openlayers-based web UI to publish and display qgis desktop projects. | [Upstream](https://github.com/qgis/qwc2) | |  
 | [racktables](https://racktables.org) |  | [Upstream](https://github.com/RackTables/racktables) |  |
