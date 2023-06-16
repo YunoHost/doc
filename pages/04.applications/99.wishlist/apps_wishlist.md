@@ -223,7 +223,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Pelias |  | [Upstream](https://github.com/pelias/pelias) |  |
 | [Penpot](https://penpot.app/) | Design Freedom for Teams |  [Upstream](https://github.com/penpot) |  |
 | personal-management-system | Your web application for managing personal data. | [Upstream](https://github.com/Volmarg/personal-management-system) |  |
-| [Photoprism](https://photoprism.org/) |  | [Upstream](https://github.com/photoprism/photoprism) |  |
 | [PHPList](https://www.phplist.com) |  | [Upstream](https://github.com/phpList) |  |
 | [Phraseanet](https://docs.phraseanet.com/3.8/fr/index.html#) |  | [Upstream](https://github.com/alchemy-fr/Phraseanet-Docs) |  |
 | [pia](https://github.com/LINCnil/pia) | A tool to help carrying out Privacy Impact Assessments |  | [Package Draft](https://github.com/YunoHost-Apps/pia_ynh) |
