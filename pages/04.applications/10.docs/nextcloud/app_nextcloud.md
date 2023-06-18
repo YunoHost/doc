@@ -130,7 +130,7 @@ Run a scan of the new directory by Nextcloud:
 
 ```bash
 cd /var/www/nextcloud
-sudo -u nextcloud php7.3 occ files:scan --all
+sudo -u nextcloud php8.1 --define apc.enable_cli=1 files:scan --all
 ```
 
 Update the YunoHost setting, so automatic upgrades and backups know where the datadir is located:
@@ -195,7 +195,7 @@ Save the file (**CTRL** + **o**) and exit nano (**CTRL** + **c**).
 Then run a scan by executing next command as root:
 
 ```bash
-sudo -u nextcloud php /var/www/nextcloud/occ files:scan --all
+sudo -u nextcloud php8.1 --define apc.enable_cli=1 files:scan --all
 ```
 
 Now the problem is fixed.
