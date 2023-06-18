@@ -16,7 +16,8 @@ Nom d'usuària: demo
 Contrasenya: demo
 
 [[fa=cog /] Interfície d'administració](https://demo.yunohost.org/yunohost/admin/?target=_blank&classes=btn,btn-lg,btn-primary)  
-Contrasenya: demo
+Nom d'usuària: demo  
+Contrasenya: demodemo
 
 [/columns]
 [/center]
