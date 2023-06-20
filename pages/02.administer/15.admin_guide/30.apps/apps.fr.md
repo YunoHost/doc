@@ -43,6 +43,15 @@ Les applications web peuvent fournir des tuiles disponibles depuis le portail ut
 
 L'accès aux applications peut être limité à certains utilisateurs seulement. Ceci peut être configuré via la webadmin sur la page [Groupes et permissions](/groups_and_permissions), ou de la même manière via la sous-catégorie de commandes `yunohost user permission`.
 
+## Éxécuter des commandes au sein d'une app
+
+À partir de YunoHost v11.1.21.4, si vous avez besoin d'exécuter des commandes avec le binaire de l'application, ou des commandes PHP, etc., vous pouvez exécuter la commande `yunohost app shell <app>`.
+Cela aura pour effet de :
+- ouvrir un nouveau shell Bash en tant qu'utilisateur système de l'application
+- ouvrir le répertoire de travail de l'application (par exemple `/var/www/<app>`)
+- précharger l'environnement avec des variables provenant du service de l'application, s'il existe
+- remplacer `php`, pour qu'il pointe vers la version de PHP utilisée par l'application
+
 ## Packaging d'applications
 
 Si vous voulez apprendre ou contribuer à l'empaquetage des applications, veuillez consulter la [documentation des contributeurs](/contributordoc).
