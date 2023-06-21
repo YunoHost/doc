@@ -17,11 +17,7 @@ Le mécanisme de groupe peut être utilisé pour définir des groupes d'utilisat
 
 L'utilisation de groupes est cependant utile pour la sémantique, par exemple si vous hébergez plusieurs groupes d'amis, des associations ou des entreprises sur votre serveur, vous pouvez créer des groupes comme `association1` et `association2` et ajouter les membres de chaque association au groupe concerné.
 
-Les groupes d'utilisateurs permettent aussi l'utilisation de *group list* pour les emails, il est ainsi possible de générer des alias de mail pour joindre plusieurs utilisateurs en même temps. Cette features n'est actuellement que disponible en CLI.
-Ainsi, pour avoir toutes les informations en ligne de commande pour chaque groupe :
-```shell
-yunohost user group info group_name
-```
+Il est également possible de définir des alias mail pour un groupe, afin que les mails envoyés à `groupe@domain.tld` soient redirigés vers tous les membres du groupe.
 
 
 ### Groupes par défaut
@@ -244,22 +240,24 @@ $ yunohost user permission update wordpress.admin --show_tile True
 
 
 ### Gérer les alias des groupes
-Chaque groupe peut utiliser des alias de mail. Par défaut, le groupe admin dispose ainsi de `admins@domain.tld`, `root@domain.tld`... l'utilisation de la command `info` permet de toutes les lister.
+Chaque groupe peut utiliser des alias de mail, bien que leur configuration se fasse actuellement uniquement depuis la CLI. Par défaut, le groupe `admins` dispose ainsi de `admins@domain.tld`, `root@domain.tld` ... : les messages envoyés à ces adresses sont redirigés vers tous les membres du groupe `admins`. 
+
+L'utilisation de la commande `yunohost user group info` permet de lister tous les alias pour le groupe renseigné.
 
 ```shell
 $ yunohost user group info admins
   [...]
   mail-aliases:
-    - root
-    - admin
-    - admins
-    - webmaster
-    - postmaster
-    - abuse
+    - root@maindomain.tld
+    - admin@maindomain.tld
+    - admins@maindomain.tld
+    - webmaster@maindomain.tld
+    - postmaster@maindomain.tld
+    - abuse@maindomain.tld
   [...]
 ```
 
-Il est possible de les ajouter avec l'argument `add-mailalias` ou de les enlever `remove-mailalias`.
+Il est possible de les ajouter avec l'action `add-mailalias` ou de les enlever avec `remove-mailalias`.
 ```shell
-$ yunohost user group add-mailalias <group> alias@<maindomain>
+$ yunohost user group add-mailalias <groupe> <adresse@domaine.tld>
 ```

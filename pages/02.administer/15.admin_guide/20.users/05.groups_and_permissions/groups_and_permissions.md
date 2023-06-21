@@ -18,12 +18,7 @@ The group mechanism can be used to define groups of users which then can be used
 
 Using groups is however useful for semantics, for example if you host multiple groups of friends, associations or businesses on your server, you might want to create groups like `association1` and `association2` and add members of each association to the relevant group.
 
-
-The user group can use a *group list* to send mails to multiple user. This feature is only available with the cli.
-To show all information and mailing alias about a specific group : 
-```shell
-yunohost user group info group_name
-```
+It's also possible to define mail aliases for a group, such that mails sent to `groupe@domain.tld` will be dispatched to all members of the group.
 
 
 ### Default groups
@@ -245,22 +240,24 @@ $ yunohost user permission update wordpress.admin --show_tile True
 
 
 ### Config alias group
-Each group can use any mail alias. By default, the admin groups have any alias `admins@domain.tld`, `root@domain.tld`... to show all alias set, user the command `info`.
+Each group can use mail aliases, but their configuration is only available from the CLI so far. For example, the `admins` group is configured with aliases such as `admins@domain.tld`, `root@domain.tld` ... : mail sent to these addresses will be dispatched to all members of the `admins` group.
+
+The command `yunohost user group info` will list them.
 
 ```shell
 $ yunohost user group info admins
   [...]
   mail-aliases:
-    - root
-    - admin
-    - admins
-    - webmaster
-    - postmaster
-    - abuse
+    - root@maindomain.tld
+    - admin@maindomain.tld
+    - admins@maindomain.tld
+    - webmaster@maindomain.tld
+    - postmaster@maindomain.tld
+    - abuse@maindomain.tld
   [...]
 ```
 
-To add a new mail, user the arguments `add-mailalias` or to delete it `remove-mailalias`.
+To add a new mail, use the action `add-mailalias` or `remove-mailalias` to delete it.
 ```shell
-$ yunohost user group add-mailalias <group> alias@<maindomain>
+$ yunohost user group add-mailalias <group> <address@domaine.tld>
 ```
