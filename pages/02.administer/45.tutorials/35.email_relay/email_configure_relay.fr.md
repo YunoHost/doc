@@ -41,7 +41,8 @@ Habituellement les fournisseurs ont une documentation à ce sujet.
 ## Étape 3 :Configurer YunoHost correctement
 Il est possible de configurer soit via la webadmin ou en ligne de commande.
 
-[ui-tabs position="top-left" active="0" theme="lite"] [ui-tab title="Depuis la webadmin"]
+[ui-tabs position="top-left" active="0" theme="lite"] 
+[ui-tab title="Depuis la webadmin"]
 Depuis l'interface d'administration, dans la section `Outils` > `Paramètres de YunoHost`, et l'onglet `Email`.
 Il suffit d'activer l'option, et de renseigner les champs nécessaires :
 - **Adresse du relais SMTP** : L'url pour le serveur SMTP.
@@ -51,7 +52,8 @@ Il suffit d'activer l'option, et de renseigner les champs nécessaires :
 
 ![Option-Relais-Smtp](image://relay_smtp_option_webadmin_en.png?resize=800)
 
-[/ui-tab] [ui-tab title="En ligne de commande"]
+[/ui-tab] 
+[ui-tab title="En ligne de commande"]
 Pour que YunoHost soit capable d'utiliser le relais, il faut paramétrer 4 choses.
 1. Votre url de relais SMTP (on utilisera `smtprelay.tld`).
 2.  Le port sur lequel on accède au relais (on utilisera le port 2525 ci-dessous) 
