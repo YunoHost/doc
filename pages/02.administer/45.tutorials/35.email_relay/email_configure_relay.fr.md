@@ -14,9 +14,7 @@ Si votre fournisseur d'accès à Internet bloque le port 25, ou si vous rencontr
 ## Qu'est-ce qu'un relais SMTP
 
 C'est un serveur SMTP tiers qui va envoyer les e-mails aux destinataires à la place de votre propre serveur SMTP.
-Une fois correctement installé, le fonctionnement est transparent pour l’utilisateur. Vos correspondants verront vos 
-e-mails comme s’ils venaient de votre propre serveur, mais ils seront passés par le relais SMTP que vous aurez 
-choisis et configurés.
+Une fois correctement installé, le fonctionnement est transparent pour l’utilisateur. Vos correspondants verront vos e-mails comme s’ils venaient de votre propre serveur, mais ils seront passés par le relais SMTP que vous aurez choisis et configurés.
 
 ## [fa=exclamation-triangle /] Inconvénients des relais SMTP
 
@@ -41,9 +39,19 @@ Habituellement les fournisseurs ont une documentation à ce sujet.
 ! [fa=exclamation-triangle /] Attention une fois la zone DNS enregistrée, le relais SMTP peut envoyer des e-mails à votre nom sans que vous ne le sachiez
 
 ## Étape 3 :Configurer YunoHost correctement
-Il est possible de configurer via l'admin web ou en *command line*.
+Il est possible de configurer soit via la webadmin ou en ligne de commande.
 
-[ui-tabs position="top-left" active="0" theme="lite"] [ui-tab title="Configuration en CLI"]
+[ui-tabs position="top-left" active="0" theme="lite"] [ui-tab title="Depuis la webadmin"]
+Depuis l'interface d'administration, dans la section `Outils` > `Paramètres de YunoHost`, et l'onglet `Email`.
+Il suffit d'activer l'option, et de renseigner les champs nécessaires :
+- **Adresse du relais SMTP** : L'url pour le serveur SMTP.
+- **Port du relais SMTP** : Le port utilisé sur le serveur renseigné.
+- **Utilisateur du relais SMTP** : Login ou mail d'identification pour le serveur.
+- **Mot de passe du relais SMTP** : Tout simplement le mot de passe.
+
+![Option-Relais-Smtp](image://relay_smtp_option_webadmin_en.png?resize=800)
+
+[/ui-tab] [ui-tab title="En ligne de commande"]
 Pour que YunoHost soit capable d'utiliser le relais, il faut paramétrer 4 choses.
 1. Votre url de relais SMTP (on utilisera `smtprelay.tld`).
 2.  Le port sur lequel on accède au relais (on utilisera le port 2525 ci-dessous) 
@@ -68,16 +76,6 @@ sudo yunohost settings set smtp.relay.password -v password
 ```
 
 C'est une bonne idée de confirmer les informations en faisant `sudo yunohost settings list`
-
-[/ui-tab] [ui-tab title="Configuration en Web Admin"]
-Depuis l'interface d'administration, dans la section `Outils` > `Paramètres de YunoHost`, et l'onglet `Email`.
-Il suffit d'activer l'option, et de renseigner les champs nécessaires :
-- **Adresse du relais SMTP** : L'url pour le serveur SMTP.
-- **Port du relais SMTP** : Le port utilisé sur le serveur renseigné.
-- **Utilisateur du relais SMTP** : Login ou mail d'identification pour le serveur.
-- **Mot de passe du relais SMTP** : Tout simplement le mot de passe.
-
-![Option-Relais-Smtp](image://relay_smtp_option_webadmin_en.png?resize=800)
 
 [/ui-tab] [/ui-tabs]
 
