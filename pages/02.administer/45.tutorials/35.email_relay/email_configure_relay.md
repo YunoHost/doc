@@ -43,9 +43,21 @@ Please note that modifying your DNS records could sometimes take over 24h to tak
 ! [fa=exclamation-triangle /] From now on, a non trusty SMTP relay provider could send emails from your main domain without telling you.
 
 ### Step 3: Setup YunoHost correctly
-You can configure with your webadmin or in *cli*.
+It can be configured either from the webadmin or the command line.
 
-[ui-tabs position="top-left" active="0" theme="lite"] [ui-tab title="Config en CLI"]
+[ui-tabs position="top-left" active="0" theme="lite"] 
+[ui-tab title="From the webadmin"]
+Go to your web admin, in `Tools` > `Yunohost Settings` and `Email`.
+Now set all options requests :
+- **SMTP relay host** : SMTP server url.
+- **SMTP relay port** : Port use with the distant server.
+- **SMTP relay user** : Login or identification mail server.
+- **SMTP relay password** : Your SMTP relay password.
+
+![Option-Relais-Smtp](image://relay_smtp_option_webadmin_en.png?resize=800)
+
+[/ui-tab] 
+[ui-tab title="From the command line"]
 In order to setup your YunoHost to use your SMTP relay, you will have to configure four things:
 1. Your SMTP relay URL (for this tutorial we will use `smtprelay.tld`)
 2. The port on which you access the relay (for this tutorial we will use port 2525 below)
@@ -73,18 +85,9 @@ It may be a good idea to double confirm your settings by doing:
 ```bash
 sudo yunohost settings list
 ```
-[/ui-tab] [ui-tab title="Config on Web Admin"]
-Go to your web admin, in `Tools` > `Yunohost Settings` and `Email`.
-Now set all options requests :
-- **SMTP relay host** : SMTP server url.
-- **SMTP relay port** : Port use with the distant server.
-- **SMTP relay user** : Login or identification mail server.
-- **SMTP relay password** : Your server access password.
 
-![Option-Relais-Smtp]()
-![](image://relay_smtp_option_webadmin_en.png?resize=800)
-
-[/ui-tab] [/ui-tabs]
+[/ui-tab]
+[/ui-tabs]
 
 Your SMTP relay is now configured!
 
