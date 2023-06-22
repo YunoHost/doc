@@ -240,6 +240,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Privoxy](https://www.privoxy.org) |  |  |  |
 | [ProcessMaker](https://www.processmaker.com) |  |  |  |
 | proftpd |  |  | [Package Draft](https://github.com/abeudin/proftpd_ynh) |
+| [Projeqtor](https://www.projeqtor.org) | Quality Based Open Source Project Organizer |
 | ProtonMail’s WebClient |  | [Upstream](https://github.com/ProtonMail/WebClient) |  |
 | [Psono](https://psono.com/) | Password Manager for Teams | [Upstream](https://gitlab.com/psono/psono-server) |  |
 | [pterodactyl](https://pterodactyl.io/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/pterodactyl_ynh) |
