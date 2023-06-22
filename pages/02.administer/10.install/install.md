@@ -14,7 +14,6 @@ page-toc:
 routes:
   default: '/install'
   aliases: 
-    - '/docker'
     - '/install_iso'
     - '/install_on_vps'
     - '/install_manually'
@@ -29,7 +28,7 @@ routes:
     - '/hardware'
 ---
 {% set image_type = 'YunoHost' %}
-{% set arm, at_home, regular, rpi2plus, rpi1, rpi0, show_legacy_arm_menu, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, wsl, internetcube, docker = false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
+{% set arm, at_home, regular, rpi2plus, rpi1, rpi0, show_legacy_arm_menu, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, wsl, internetcube = false, false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
 {% set hardware = uri.param('hardware')  %}
 
 {% if hardware == 'regular' %}
@@ -60,8 +59,6 @@ routes:
   {% set vps, vps_ynh = true, true %}
 {% elseif hardware == 'virtualbox' %}
   {% set at_home, virtualbox = true, true %}
-{% elseif hardware == 'docker' %}
-  {% set docker = true %}
 {% elseif hardware == 'wsl' %}
   {% set wsl = true %}
 {% endif %}
@@ -145,22 +142,6 @@ Select the hardware on which you want install YunoHost :
 {% if wsl %}
 !! This setup is mainly meant for local testing by advanced users. Due to limitations on WSL's side (changing IP address, notably), selfhosting from it can be tricky and will not be described here.
 {% endif %}
-
-{% if docker %}
-!! **YunoHost doesn’t support Docker officially since issues with versions 2.4+. In question, YunoHost 2.4+ doesn’t work anymore on Docker because YunoHost requires systemd and Docker has chosen to not support it natively (and there are other problems link to the firewall and services).**
-!!
-!! **We strongly discourage you to run YunoHost on docker with those images**
-
-## Community images
-
-However, community images exist and are available on Docker Hub:
-
-  * [AMD64 (classic) (YunoHost 4.x)](https://hub.docker.com/r/domainelibre/yunohost/)
-  * [I386 (old computers) (YunoHost 4.x)](https://hub.docker.com/r/domainelibre/yunohost-i386/)
-  * [ARM64V8 (Raspberry Pi 4) (YunoHost 4.x)](https://hub.docker.com/r/cms0/yunohost/)
-  * [ARMV7 (Raspberry Pi 2/3 ...) (YunoHost 4.x)](https://hub.docker.com/r/domainelibre/yunohost-arm/)
-  * [ARMV6 (Raspberry Pi 1) (old yunoHost version)](https://hub.docker.com/r/tuxalex/yunohost-armv6/)
-{% else %}
 
 
 ## [fa=list-alt /] Pre-requisites
@@ -833,7 +814,6 @@ yunohost domain cert install
 ```
 [/ui-tab]
 [/ui-tabs]
-{% endif %}
 
 ## ![](image://tada.png?resize=32&classes=inline) Congratz!
 
