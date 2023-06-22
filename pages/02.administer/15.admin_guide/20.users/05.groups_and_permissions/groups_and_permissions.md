@@ -18,6 +18,9 @@ The group mechanism can be used to define groups of users which then can be used
 
 Using groups is however useful for semantics, for example if you host multiple groups of friends, associations or businesses on your server, you might want to create groups like `association1` and `association2` and add members of each association to the relevant group.
 
+It's also possible to define mail aliases for a group, such that mails sent to `groupe@domain.tld` will be dispatched to all members of the group.
+
+
 ### Default groups
 
 By default, two special groups are created:
@@ -234,3 +237,27 @@ $ yunohost user permission update wordpress.admin --show_tile True
 ```
 [/ui-tab]
 [/ui-tabs]
+
+
+### Config alias group
+Each group can use mail aliases, but their configuration is only available from the CLI so far. For example, the `admins` group is configured with aliases such as `admins@domain.tld`, `root@domain.tld` ... : mail sent to these addresses will be dispatched to all members of the `admins` group.
+
+The command `yunohost user group info` will list them.
+
+```shell
+$ yunohost user group info admins
+  [...]
+  mail-aliases:
+    - root@maindomain.tld
+    - admin@maindomain.tld
+    - admins@maindomain.tld
+    - webmaster@maindomain.tld
+    - postmaster@maindomain.tld
+    - abuse@maindomain.tld
+  [...]
+```
+
+To add a new mail, use the action `add-mailalias` or `remove-mailalias` to delete it.
+```shell
+$ yunohost user group add-mailalias <group> <address@domaine.tld>
+```

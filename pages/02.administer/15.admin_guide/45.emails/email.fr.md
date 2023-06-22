@@ -33,6 +33,8 @@ Des alias de messagerie et des redirections peuvent être configurés pour chaqu
 
 Une autre fonctionnalité méconnue est l'utilisation de suffixes commencant par "+". Par exemple, les emails envoyés à `johndoe+sncf@votre.domaine.tld` atteriront dans le dossier 'sncf' de la boîte mail de John Doe (ou bien directement dans la boîte mail si ce dossier n'existe pas). C'est une technique pratique pour, par exemple, fournir une adresse mail à un site puis facilement trier (via des filtres automatiques) les courriers venant de ce site.
 
+Les groupes aussi peuvent utiliser des alias, par défaut le groupe `admins` dispose de `root@<domain.tld>` ou encore `webmaster@<domain.tld>`. [Plus d'information dans la page dédiée](/groups_and_permissions#&eacute;érer-les-alias-des-groupes).
+
 ## Que se passe-t-il si mon serveur devient indisponible ?
 
 Si votre serveur devient indisponible, les courriels envoyés à votre serveur resteront dans une file d'attente du côté de l'expéditeur pendant environ 5 jours. L'hébergeur de l'expéditeur tentera régulièrement de renvoyer le courrier, jusqu'à ce qu'il le jette s'il n'a pas pu l'envoyer.

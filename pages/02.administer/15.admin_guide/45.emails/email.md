@@ -33,6 +33,8 @@ Mail aliases and forwards can be configured for each users. For instance, the fi
 
 Another feature which few people know about is the use of suffixes beginning with "+". For example, emails sent to `johndoe+booking@the.domain.tld` will automatically land in the `booking` dir (lowercase) of John Doe's mailbox or in John Doe's inbox if `booking` directory doesn't exist . It is a practical technique for example to provide an e-mail address to a website, then easily sort (via automatic filters) the mail coming from this website.
 
+Groups also can use alias features, by default the group `admins` have `root@<domain.tld>` or `webmaster@<domain.tld>`. [More information to use-it with the dedicated page](/groups_and_permissions#config-alias-group).
+
 ## What happens if my server becomes unavailable?
 
 If your server becomes unavailable, emails sent to your server will stay in a pending queue on the sender's side for as long as ~5 days. The sender's hoster will regularly try to resend the email, until it drops it if it was unable to send it.
