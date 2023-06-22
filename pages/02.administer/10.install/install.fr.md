@@ -29,7 +29,7 @@ routes:
     - '/hardware'
 ---
 {% set image_type = 'YunoHost' %}
-{% set arm, at_home, regular, rpi2plus, rpi1, rpi0, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, internetcube, docker = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
+{% set arm, at_home, regular, rpi2plus, rpi1, rpi0, show_legacy_arm_menu, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, internetcube, docker = false, false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
 {% set hardware = uri.param('hardware')  %}
 
 {% if hardware == 'regular' %}
@@ -37,6 +37,7 @@ routes:
 {% elseif hardware == 'internetcube' %}
   {% set arm, arm_sup, internetcube = true, true, true %}
   {% set image_type = 'La Brique Internet' %}
+  {% set show_legacy_arm_menu = true %}
 {% elseif hardware == 'rpi2plus' %}
   {% set arm, rpi2plus = true, true %}
 {% elseif hardware == 'rpi1' %}
@@ -45,8 +46,13 @@ routes:
   {% set arm, rpi0 = true, true %}
 {% elseif hardware == 'arm_sup' %}
   {% set arm, arm_sup = true, true %}
+  {% set show_legacy_arm_menu = true %}
+{% elseif hardware == 'arm' %}
+  {% set arm, arm_unsup = true, true %}
+  {% set image_type = 'Armbian' %}
 {% elseif hardware == 'arm_unsup' %}
   {% set arm, arm_unsup = true, true %}
+  {% set show_legacy_arm_menu = true %}
   {% set image_type = 'Armbian' %}
 {% elseif hardware == 'vps_debian' %}
   {% set vps, vps_debian = true, true %}
@@ -74,7 +80,7 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 [/div]
 
 [div class="flex-child hardware{%if arm_sup or arm_unsup or internetcube %} active{% endif %}"]
-[[figure caption="Carte ARM"]![](image://olinuxino.jpg?height=75)[/figure]](/install/hardware:arm_sup)
+[[figure caption="Carte ARM"]![](image://olinuxino.jpg?height=75)[/figure]](/install/hardware:arm)
 [/div]
 
 [div class="flex-child hardware{%if regular %} active{% endif %}"]
@@ -100,7 +106,7 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 [div class="flex-child hardware{%if rpi0 %} active{% endif %}"]
 [[figure caption="Raspberry Pi zero"]![](image://rpi0.jpg?height=50)[/figure]](/install/hardware:rpi0)
 [/div]
-{% elseif arm_sup or arm_unsup or internetcube %}
+{% elseif show_legacy_arm_menu %}
 
 [div class="flex-child hardware{%if internetcube %} active{% endif %}"]
 [[figure caption="La Brique Internet avec un VPN"]![](image://internetcube.png?height=50)[/figure]](/install/hardware:internetcube)
