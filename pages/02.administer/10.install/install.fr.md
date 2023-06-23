@@ -169,7 +169,7 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 {% endif %}
 
 {% if virtualbox %}
-! N.B. : Installer YunoHost dans une VirtualBox est utile pour tester la distribution. Pour réellement s'autohéberger sur le long terme, il vous faudra probablement une machine physique (vieil ordinateur, carte ARM...) ou un serveur en ligne.
+! N.B. : Installer YunoHost dans une VirtualBox est généralement destiné à tester la distribution ou pour développer. VirtualBox n'est pas pratique pour faire tourner un 'vrai' serveur sur le long terme car la machine surlaquelle il est installé ne sera sans doute pas allumé 24h/24, et parce que Virtualbox rajoute une couche de complexité supplémentaire pour ce qui est d'exposer la machine sur Internet.
 {% endif %}
 
 
@@ -567,43 +567,19 @@ C’est le nom de domaine qui permettra l’accès à votre serveur ainsi qu’a
 
 !!! Oui, vous *devez* configurer un nom de domaine. Si vous n'avez pas de nom de domaine et que vous n'en voulez pas en **.nohost.me**, **.noho.st** ou **.ynh.fr**, vous pouvez utilisez un « faux » domaine comme par exemple `yolo.test` et [modifier votre fichier `/etc/hosts` **sur votre ordinateur local** pour que ce domaine pointe vers l'IP de votre serveur, comme expliqué ici](/dns_local_network).
 
-##### [fa=key /] Mot de passe d’administration
-C’est le mot de passe qui vous permettra d’accéder à l’interface d’administration de votre serveur. Vous pourrez également l’utiliser pour vous connecter à distance [via SSH](/ssh), ou [en SFTP](/filezilla) pour transférer des fichiers. De manière générale, c’est la **clé d’entrée à votre système**, pensez donc à la choisir attentivement.
+##### [fa=key /] Premier compte utilisateur
 
-## [fa=user /] Créer un premier utilisateur
-
-Une fois la configuration initiale faite, vous devriez être capable de vous connecter à la webadmin en utilisant le mot de passe d'administration.
-
-Bien que votre serveur dispose maintenant d'un utilisateur `admin`, cet utilisateur `admin` n'est pas un utilisateur « standard » et ne peut pas se connecter sur le [portail utilisateur](/users).
-
-Par conséquent, vous devriez ajouter un premier utilisateur « standard ».
-
-!!! Le premier utilisateur que vous créez est un peu spécial : il recevra les emails envoyés à `root@votredomaine.tld` et `admin@votredomaine.tld`. Ces emails peuvent être utilisés pour envoyer des informations ou des alertes techniques.
-
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="À partir de l'interface web"]
-
-Allez dans `Utilisateurs > Nouvel utilisateur`.
-
-[figure class="nomargin" caption="Aperçu de l'interface de création utilisateur"]
-![Création d'un utilisateur](image://create-first-user.png?resize=100%&class=inline)
-[/figure]
-
-[/ui-tab]
-[ui-tab title="À partir de la ligne de commande"]
-```
-yunohost user create johndoe
-```
-
-[figure class="nomargin" caption="Aperçu de l'interface de création utilisateur en ligne de commande"]
-![Création d'un utilisateur en ligne de commande](image://create-first-user-cli.png?resize=100%&class=inline)
-[/figure]
-
-[/ui-tab]
-[/ui-tabs]
-{% endif %}
+[Depuis YunoHost 11.1](https://forum.yunohost.org/t/yunohost-11-1-release-sortie-de-yunohost-11-1/23378), le premier compte utilisateur est créé à cette étape. Il vous faudra choisir un nom d'utilisateur et un mot de passe raisonablement complexe. (Nous ne pouvons que souligner l'importance du choix d'un mot de passe **robuste** !) Ce compte utilisateur sera ajouté au groupe Admins, et pourra se connecter au portail utilisateur, à la webadmin, et se connecter [via **SSH**](/ssh) ou [**SFTP**](/filezilla). Les admins recevront aussi les mails envoyés à `root@votredomaine.tld` et `admin@votredomaine.tld` : ces emails peuvent être utilisés pour envoyer des informations ou des alertes techniques. Vous pourrez plus tard ajouter d'autres comptes utilisateur supplémentaire, qu'il est aussi possible d'ajouter au groupe Admins.
+ 
+Ce compte remplace l'ancien compte `admin`, qui est peut être toujours mentionné dans certaines pages de documentation. Dans ce cas, remplacez simplement `admin` par votre identifiant.
 
 ## [fa=stethoscope /] Lancer le diagnostic
+
+Une fois la postinstall terminée, vous devriez pouvoir vous connecter à la webadmin en utilisant les identiants du premier compte utilisateur que vous venez de créer.
+
+{% if virtualbox %}
+! Rappel : YunoHost dans VirtualBox ne sera sans doute pas accessible depuis l'extérieur sans une configuration supplémentaire dans les paramètres de Virtualbox. Le diagnostique se plaindra sans doute de cela.
+{% endif %}
 
 Le système de diagnostic est conçu pour fournir un moyen facile de valider que tous les aspects critiques de votre serveur sont proprement configurés et pour vous guider dans la résolution des problèmes soulevés. Le diagnostic se lance deux fois par jour et envoie une alerte si un dysfonctionnement est détecté.
 

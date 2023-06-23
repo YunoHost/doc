@@ -186,7 +186,7 @@ Select the hardware on which you want install YunoHost :
 {% endif %}
 
 {% if virtualbox %}
-! N.B. : Installing YunoHost in a VirtualBox is usually intended for testing. To run an actual server on the long-term, you usually need a dedicated physical machine (old computer, ARM board...) or a server online.
+! N.B. : Installing YunoHost in a VirtualBox is usually intended for testing or development. It is not convenient to run an actual server on the long-term, because the machine it's installed on probably won't be up 24/7, and because Virtualbox adds an additional layer of complexity in exposing the machine to the Internet.
 {% endif %}
 
 {% if wsl %}
@@ -719,47 +719,22 @@ If you want to create subdomains, do not forget to add them in the `hosts` file 
 
 {% endif %}
 
-##### [fa=key /] Administration password
+##### [fa=key /] First user
 
-This password will be used to access to your server's administration interface. You will also use it to connect [via **SSH**](/ssh) or [**SFTP**](/filezilla). In general terms, this is your **system's key**, choose it carefully!
+[Since YunoHost 11.1](https://forum.yunohost.org/t/yunohost-11-1-release-sortie-de-yunohost-11-1/23378), the first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/ssh) or [**SFTP**](/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld` : these emails may be used to send technical informations or alerts. You can later add additional users, which you can also add to the Admins group.
 
-## [fa=user /] Create a first user
+This user replaces the old `admin` user, which some old documentation page may still refer to. In which case : just replace `admin` with your username.
 
-Once the postinstall is done, you should be able to actually log in the web admin interface using the administration password.
-
-So far, your server now has an `admin` user - but `admin` is not a "regular" user and *can't* be used to log on [the user portal](/users).
-
-Let's therefore add a first "regular" user.
-
-!!! The first user you create is a bit special : it will receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld`. These emails may be used to send technical informations or alerts.
-
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="From the web interface"]
-
-Go in Users > Click on "+ New User" button
-
-[figure class="nomargin" caption="Preview of the user creation UI"]
-![User creation](image://create-first-user.png?resize=100%&class=inline)
-[/figure]
-
-[/ui-tab]
-[ui-tab title="From the command line"]
-```
-yunohost user create johndoe
-```
-
-[figure class="nomargin" caption="Preview of the user creation CLI"]
-![User creation CLI](image://create-first-user-cli.png?resize=100%&class=inline)
-[/figure]
-
-[/ui-tab]
-[/ui-tabs]
-{% endif %}
 
 ## [fa=stethoscope /] Run the initial diagnosis
 
+Once the postinstall is done, you should be able to actually log in the web admin interface using the credentials of the first user you just created.
+
 {% if wsl %}
 ! Reminder: YunoHost in WSL will likely not be reachable from outside, and real domains and certificates won't be able to be assigned to it.
+{% endif %}
+{% if virtualbox %}
+! Reminder: YunoHost in VirtualBox will likely not be reachable from outside without further network configuration in Virtualbox's settings. The diagnosis will probably complain about this.
 {% endif %}
 
 The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured - and guide you in how to fix issues. The diagnosis will run twice a day and send an alert if issues are detected.
