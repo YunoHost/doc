@@ -72,11 +72,11 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 [/div]
 
 [div class="flex-child hardware{%if rpi34 or rpi012 %} active{% endif %}"]
-[[figure caption="Raspberry Pi"]![](image://raspberrypi.jpg?height=75)[/figure]](/install/hardware:rpi34)
+[[figure caption="Raspberry Pi"]![](image://raspberrypi.png?height=75)[/figure]](/install/hardware:rpi34)
 [/div]
 
 [div class="flex-child hardware{%if arm_sup or arm_unsup or internetcube %} active{% endif %}"]
-[[figure caption="Carte ARM"]![](image://olinuxino.jpg?height=75)[/figure]](/install/hardware:arm)
+[[figure caption="Carte ARM"]![](image://olinuxino.png?height=75)[/figure]](/install/hardware:arm)
 [/div]
 
 [div class="flex-child hardware{%if regular %} active{% endif %}"]
@@ -92,11 +92,11 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 
 {% if rpi34 or rpi012 %}
 [div class="flex-child hardware{%if rpi34 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 3 ou 4"]![](image://raspberrypi.jpg?height=50)[/figure]](/install/hardware:rpi34)
+[[figure caption="Raspberry Pi 3 ou 4"]![](image://raspberrypi.png?height=50)[/figure]](/install/hardware:rpi34)
 [/div]
 
 [div class="flex-child hardware{%if rpi012 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 0, 1 or 2"]![](image://rpi012.jpg?height=50)[/figure]](/install/hardware:rpi012)
+[[figure caption="Raspberry Pi 0, 1 or 2"]![](image://rpi1.png?height=50)[/figure]](/install/hardware:rpi012)
 [/div]
 
 {% elseif show_legacy_arm_menu %}
@@ -106,7 +106,7 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 [/div]
 
 [div class="flex-child hardware{%if arm_sup and not internetcube %} active{% endif %}"]
-[[figure caption="Olinuxino lime1&2 ou Orange Pi PC+"]![](image://olinuxino.jpg?height=50)[/figure]](/install/hardware:arm_sup)
+[[figure caption="Olinuxino lime1&2 ou Orange Pi PC+"]![](image://olinuxino.png?height=50)[/figure]](/install/hardware:arm_sup)
 [/div]
 
 [div class="flex-child hardware{%if arm_unsup %} active{% endif %}"]
