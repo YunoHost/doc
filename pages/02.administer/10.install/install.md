@@ -311,7 +311,7 @@ wsl --import YunoHost .\WSL\YunoHost .\WSL\YunoHost.tar.gz --version 2
 
 
 {% if vps_ynh %}
-## Fournisseurs de VPS YunoHost
+## YunoHost VPS providers
 
 Here are some VPS providers supporting YunoHost natively :
 
