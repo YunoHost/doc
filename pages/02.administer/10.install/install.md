@@ -650,8 +650,6 @@ curl https://install.yunohost.org | bash
 
 !!! If you are in the process of restoring a server using a YunoHost backup, you should skip this step and instead [restore the backup instead of the postinstall step](/backup#restoring-during-the-postinstall).
 
-{% if not wsl %}
-
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
 {%if at_home %}
@@ -660,8 +658,6 @@ In an internet browser, type **{% if internetcube %}`https://internetcube.local`
 !!! If this doesn't work, you can [look for the the local IP address of your server](/finding_the_local_ip). The address typically looks like `192.168.x.y`, and you should therefore type `https://192.168.x.y` in your browser's address bar.
 {% else %}
 You can perform the initial configuration with the web interface by typing in the adress bar of your web browser **the public IP address of your server**. Typically, your VPS provider should have provided you with the IP of the server.
-{% endif %}
-
 {% endif %}
 
 ! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. {% if not wsl %}You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). {% endif %} For now, you should add a security exception to accept the current certificate. (Though, PLEASE, do not take the habit of blindly accepting this kind of security alert!)
