@@ -309,8 +309,10 @@ wsl --import YunoHost .\WSL\YunoHost .\WSL\YunoHost.tar.gz --version 2
 ```
 {% endif %}
 
+
 {% if vps_ynh %}
-## YunoHost VPS providers
+## Fournisseurs de VPS YunoHost
+
 Here are some VPS providers supporting YunoHost natively :
 
 [div class="flex-container"]
@@ -318,7 +320,12 @@ Here are some VPS providers supporting YunoHost natively :
 [div class="flex-child"]
 [[figure caption="Alsace Réseau Neutre - FR"]![](image://vps_ynh_arn.png?height=50)[/figure]](https://vps.arn-fai.net)
 [/div]
-
+[div class="flex-child"]
+[[figure caption="FAImaison - FR"]![](image://vps_ynh_faimaison.svg?height=50)[/figure]](https://www.faimaison.net/services/vm.html)
+[/div]
+[div class="flex-child"]
+[[figure caption="Association ECOWAN - FR"]![](image://vps_ynh_ecowan.png?height=50)[/figure]](https://www.ecowan.fr/vps-linux)
+[/div]
 [/div]
 {% endif %}
 
