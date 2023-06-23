@@ -77,7 +77,7 @@ Select the hardware on which you want install YunoHost :
 [[figure caption="Raspberry Pi"]![](image://raspberrypi.png?height=75)[/figure]](/install/hardware:rpi34)
 [/div]
 
-[div class="flex-child hardware{%if arm_sup or arm_unsup or internetcube %} active{% endif %}"]
+[div class="flex-child hardware{%if arm_sup or (arm_unsup and not rpi012) or internetcube %} active{% endif %}"]
 [[figure caption="ARM board"]![](image://olinuxino.png?height=75)[/figure]](/install/hardware:arm)
 [/div]
 
@@ -339,7 +339,7 @@ Here are some VPS providers supporting YunoHost natively :
 
 {% if virtualbox or regular %}
 !!! If your host OS is 32 bits, be sure to download the 32-bit image.
-{% elseif arm_unsup %}
+{% elseif arm_unsup and not rpi012 %}
 <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12" style="background: none;">[fa=external-link] Download the image for your board on Armbian's website</a>
 
 !!! N.B.: you should download the image Armbian Bullseye.
