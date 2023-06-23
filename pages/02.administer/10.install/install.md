@@ -28,7 +28,7 @@ routes:
     - '/hardware'
 ---
 {% set image_type = 'YunoHost' %}
-{% set arm, at_home, regular, rpi2plus, rpi1, rpi0, show_legacy_arm_menu, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, wsl, internetcube = false, false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
+{% set arm, at_home, regular, rpi34, rpi012, show_legacy_arm_menu, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, wsl, internetcube = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
 {% set hardware = uri.param('hardware')  %}
 
 {% if hardware == 'regular' %}
@@ -37,12 +37,11 @@ routes:
   {% set arm, arm_sup, internetcube = true, true, true %}
   {% set image_type = 'Internet Cube' %}
   {% set show_legacy_arm_menu = true %}
-{% elseif hardware == 'rpi2plus' %}
-  {% set arm, rpi2plus = true, true %}
-{% elseif hardware == 'rpi1' %}
-  {% set arm, rpi1 = true, true %}
-{% elseif hardware == 'rpi0' %}
-  {% set arm, rpi0 = true, true %}
+{% elseif hardware == 'rpi34' %}
+  {% set arm, rpi34 = true, true %}
+{% elseif hardware == 'rpi012' %}
+  {% set arm, arm_unsup, rpi012 = true, true, true %}
+  {% set image_type = 'Raspberry Pi OS Lite (32-bit, Bullseye)' %}
 {% elseif hardware == 'arm_sup' %}
   {% set arm, arm_sup = true, true %}
   {% set show_legacy_arm_menu = true %}
@@ -74,8 +73,8 @@ Select the hardware on which you want install YunoHost :
 [[figure caption="VirtualBox"]![](image://virtualbox.png?height=75)[/figure]](/install/hardware:virtualbox)
 [/div]
 
-[div class="flex-child hardware{%if rpi2plus or rpi1 or rpi0 %} active{% endif %}"]
-[[figure caption="Raspberry Pi"]![](image://raspberrypi.jpg?height=75)[/figure]](/install/hardware:rpi2plus)
+[div class="flex-child hardware{%if rpi012 or rpi34 %} active{% endif %}"]
+[[figure caption="Raspberry Pi"]![](image://raspberrypi.jpg?height=75)[/figure]](/install/hardware:rpi34)
 [/div]
 
 [div class="flex-child hardware{%if arm_sup or arm_unsup or internetcube %} active{% endif %}"]
@@ -97,18 +96,15 @@ Select the hardware on which you want install YunoHost :
 [/div]
 [div class="flex-container pt-2"]
 
-{% if rpi2plus or rpi1 or rpi0 %}
-[div class="flex-child hardware{%if rpi2plus %} active{% endif %}"]
-[[figure caption="Raspberry Pi 2, 3 or 4"]![](image://raspberrypi.jpg?height=50)[/figure]](/install/hardware:rpi2plus)
+{% if rpi012 or rpi34 %}
+[div class="flex-child hardware{%if rpi34 %} active{% endif %}"]
+[[figure caption="Raspberry Pi 3 or 4"]![](image://raspberrypi.jpg?height=50)[/figure]](/install/hardware:rpi34)
 [/div]
 
-[div class="flex-child hardware{%if rpi1 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 1"]![](image://rpi1.jpg?height=50)[/figure]](/install/hardware:rpi1)
+[div class="flex-child hardware{%if rpi012 %} active{% endif %}"]
+[[figure caption="Raspberry Pi 0, 1 or 2"]![](image://rpi1.jpg?height=50)[/figure]](/install/hardware:rpi012)
 [/div]
 
-[div class="flex-child hardware{%if rpi0 %} active{% endif %}"]
-[[figure caption="Raspberry Pi zero"]![](image://rpi0.jpg?height=50)[/figure]](/install/hardware:rpi0)
-[/div]
 {% elseif show_legacy_arm_menu %}
 
 [div class="flex-child hardware{%if internetcube %} active{% endif %}"]
@@ -148,12 +144,10 @@ Select the hardware on which you want install YunoHost :
 
 {% if regular %}
 * A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop with 512MB RAM and 16GB capacity (at least)
-{% elseif rpi2plus %}
-* A Raspberry Pi 2, 3 or 4
-{% elseif rpi1 %}
-* A Raspberry Pi 1 with at least 512MB RAM
-{% elseif rpi0 %}
-* A Raspberry Pi zero
+{% elseif rpi34 %}
+* A Raspberry Pi 3 or 4
+{% elseif rpi012 %}
+* A Raspberry Pi 0, 1 or 2 with at least 512MB RAM 
 {% elseif internetcube %}
 * An Orange Pi PC+ or an Olinuxino Lime 1 or 2
 * A VPN with a dedicated public IP and a `.cube` file
@@ -183,14 +177,11 @@ Select the hardware on which you want install YunoHost :
 {% endif %}
 {% if at_home %}
 * A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
-{% if rpi0 %}
-* An usb OTG or a wifi dongle to connect your Raspberry Pi Zero
-{% elseif not virtualbox %}
-* An ethernet cable (RJ-45) to connect your server to your router.
+{% if not virtualbox %}
+* An ethernet cable (RJ-45) to connect your server to your router. {% if rpi012 %} (Or, for Rasperry Pi Zero : and USB OTG or a wifi Dongle) {% endif %}
 {% endif %}
 * A computer to read this guide, flash the image and access your server.
-{% endif %}
-{% if not at_home %}
+{% else %}
 * A computer or a smartphone to read this guide and access your server.
 {% endif %}
 
@@ -335,12 +326,14 @@ Here are some VPS providers supporting YunoHost natively :
 {% if at_home %}
 ## [fa=download /] Download the {{image_type}} image
 
-! The links to the images are currently broken. While we resolve the issue, you can find them directly on [https://build.yunohost.org/](https://build.yunohost.org/)
+{% if rpi012 %}
+! Support for Rasperry Pi 0, 1 and 2 is unfortunately slowly dropping : building fresh images is complex, and RPi 0, 1 and 2 are ARM-32bit systems which will get more and more deprecated over time. Our pre-installed images are quite old. We recommend instead to [download the official Rasperry Pi OS Lite (**32-bit**, **Bullseye**)](https://downloads.raspberrypi.org/raspios_lite_armhf/images/?C=M;O=D) and installing YunoHost on top [using similar instructions as for other ARM boards](/install/hardware:arm)
+{% endif %}
 
 {% if virtualbox or regular %}
 !!! If your host OS is 32 bits, be sure to download the 32-bit image.
 {% elseif arm_unsup %}
-<a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=external-link] Download the image for your board on Armbian's website</a>
+<a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12" style="background: none;">[fa=external-link] Download the image for your board on Armbian's website</a>
 
 !!! N.B.: you should download the image Armbian Bullseye.
 {% endif %}
@@ -594,7 +587,7 @@ Keep in mind that:
 {% endif %}
 
 
-{% if rpi1 or rpi0 %}
+{% if rpi012 %}
 ## [fa=bug /] Connect to the board and hotfix the image
 Raspberry Pi 1 and 0 are not totally supported due to [compilation issues for this architecture](https://github.com/YunoHost/issues/issues/1423).
 

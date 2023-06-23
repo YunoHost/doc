@@ -28,7 +28,7 @@ routes:
     - '/hardware'
 ---
 {% set image_type = 'YunoHost' %}
-{% set arm, at_home, regular, rpi2plus, rpi1, rpi0, show_legacy_arm_menu, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, internetcube = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
+{% set arm, at_home, regular, rpi34, rpi012, show_legacy_arm_menu, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, internetcube = false, false, false, false, false, false, false, false, false, false, false, false, false %}
 {% set hardware = uri.param('hardware')  %}
 
 {% if hardware == 'regular' %}
@@ -37,12 +37,11 @@ routes:
   {% set arm, arm_sup, internetcube = true, true, true %}
   {% set image_type = 'La Brique Internet' %}
   {% set show_legacy_arm_menu = true %}
-{% elseif hardware == 'rpi2plus' %}
-  {% set arm, rpi2plus = true, true %}
-{% elseif hardware == 'rpi1' %}
-  {% set arm, rpi1 = true, true %}
-{% elseif hardware == 'rpi0' %}
-  {% set arm, rpi0 = true, true %}
+{% elseif hardware == 'rpi34' %}
+  {% set arm, rpi34 = true, true %}
+{% elseif hardware == 'rpi012' %}
+  {% set arm, arm_unsup, rpi012 = true, true, true %}
+  {% set image_type = 'Raspberry Pi OS Lite (32-bit, Bullseye)' %}
 {% elseif hardware == 'arm_sup' %}
   {% set arm, arm_sup = true, true %}
   {% set show_legacy_arm_menu = true %}
@@ -72,8 +71,8 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 [[figure caption="VirtualBox"]![](image://virtualbox.png?height=75)[/figure]](/install/hardware:virtualbox)
 [/div]
 
-[div class="flex-child hardware{%if rpi2plus or rpi1 or rpi0 %} active{% endif %}"]
-[[figure caption="Raspberry Pi"]![](image://raspberrypi.jpg?height=75)[/figure]](/install/hardware:rpi2plus)
+[div class="flex-child hardware{%if rpi34 or rpi012 %} active{% endif %}"]
+[[figure caption="Raspberry Pi"]![](image://raspberrypi.jpg?height=75)[/figure]](/install/hardware:rpi34)
 [/div]
 
 [div class="flex-child hardware{%if arm_sup or arm_unsup or internetcube %} active{% endif %}"]
@@ -91,18 +90,15 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 [/div]
 [div class="flex-container pt-2"]
 
-{% if rpi2plus or rpi1 or rpi0 %}
-[div class="flex-child hardware{%if rpi2plus %} active{% endif %}"]
-[[figure caption="Raspberry Pi 2, 3 ou 4"]![](image://raspberrypi.jpg?height=50)[/figure]](/install/hardware:rpi2plus)
+{% if rpi34 or rpi012 %}
+[div class="flex-child hardware{%if rpi34 %} active{% endif %}"]
+[[figure caption="Raspberry Pi 3 ou 4"]![](image://raspberrypi.jpg?height=50)[/figure]](/install/hardware:rpi34)
 [/div]
 
-[div class="flex-child hardware{%if rpi1 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 1"]![](image://rpi1.jpg?height=50)[/figure]](/install/hardware:rpi1)
+[div class="flex-child hardware{%if rpi012 %} active{% endif %}"]
+[[figure caption="Raspberry Pi 0, 1 or 2"]![](image://rpi012.jpg?height=50)[/figure]](/install/hardware:rpi012)
 [/div]
 
-[div class="flex-child hardware{%if rpi0 %} active{% endif %}"]
-[[figure caption="Raspberry Pi zero"]![](image://rpi0.jpg?height=50)[/figure]](/install/hardware:rpi0)
-[/div]
 {% elseif show_legacy_arm_menu %}
 
 [div class="flex-child hardware{%if internetcube %} active{% endif %}"]
@@ -137,12 +133,10 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 
 {% if regular %}
 * Un matériel compatible x86 dédié à YunoHost : portable, netbook, ordinateur avec 512Mo de RAM et 16Go de capacité de stockage (au moins) ;
-{% elseif rpi2plus %}
-* Un Raspberry Pi 2, 3 ou 4 ;
-{% elseif rpi1 %}
-* Un Raspberry Pi 1 avec au moins 512Mo de RAM ;
-{% elseif rpi0 %}
-* Un Raspberry Pi Zero ;
+{% elseif rpi34 %}
+* Un Raspberry Pi 3 ou 4 ;
+{% elseif rpi012 %}
+* Un Raspberry Pi 0, 1 ou 2 avec au moins 512Mo de RAM ;
 {% elseif internetcube %}
 * Un Orange Pi PC+ ou une Olinuxino Lime 1 ou 2 ;
 * Un VPN avec une IP publique dédiée et un fichier `.cube` ;
@@ -166,14 +160,11 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 {% endif %}
 {% if at_home %}
 * Un [fournisseur d'accès à Internet correct](/isp), de préférence avec une bonne vitesse d’upload ;
-{% if rpi0 %}
-* Un câble OTG ou un adaptateur Wifi USB pour connecter votre Raspberry Pi Zero ;
-{% elseif not virtualbox %}
-* Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet ;
+{% if not virtualbox %}
+* Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet {% if rpi012 %} (Ou pour Rasperry Pi Zero : Un câble OTG ou un adaptateur Wifi USB) {% endif %} ;
 {% endif %}
 * Un ordinateur pour lire ce guide, flasher l'image et accéder à votre serveur.
-{% endif %}
-{% if not at_home %}
+{% else %}
 * Un ordinateur ou un smartphone pour lire ce guide et accéder à votre serveur.
 {% endif %}
 
@@ -207,12 +198,14 @@ Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 {% if at_home %}
 ## [fa=download /] Télécharger l'image {{image_type}}
 
-! Les liens vers les images sont actuellement cassés. Pendant que nous travaillons sur le problème, trouvez-les directement à l'adresse [https://build.yunohost.org/](https://build.yunohost.org/)
+{% if rpi012 %}
+! Le support des Rasperry Pi 0, 1 et 2 est malheureusement sur la pente descendante : construire des images à jour est complexe, et les cartes RPi 0, 1 et 2 sont des systèmes ARM 32 bit qui vont être de plus en plus déprécié au fur et à mesure du temps. Nos images pré-installées sont vieilles. Nous recommendons à la place de [télécharger l'image officielle Rasperry Pi OS Lite (**32-bit**, **Bullseye**)](https://downloads.raspberrypi.org/raspios_lite_armhf/images/?C=M;O=D) et d'installer YunoHost par dessus, [de manière similaire à ce qui est proposé pour les autres cartes ARM](/install/hardware:arm)
+{% endif %}
 
 {% if virtualbox or regular %}
 !!! Si votre hôte est en 32 bits, faites bien attention à télécharger l'image 32 bits.
 {% elseif arm_unsup %}
-<a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=external-link] Télécharger l'image pour votre carte sur le site d'Armbian</a>
+<a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12" style="background:none;">[fa=external-link] Télécharger l'image pour votre carte sur le site d'Armbian</a>
 
 !!! N.B.: il vous faut télécharger l'image Armbian Bullseye.
 {% endif %}
@@ -467,7 +460,7 @@ Ne perdez pas de vue que:
 {% endif %}
 
 
-{% if rpi1 or rpi0 %}
+{% if rpi012 %}
 ## [fa=bug /] Se connecter à la carte et corriger l'image
 Les Raspberry Pi 1 et Zero ne sont pas totalement supportés à cause de [problèmes de compilation pour cette architecture](https://github.com/YunoHost/issues/issues/1423).
 
