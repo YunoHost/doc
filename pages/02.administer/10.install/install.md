@@ -791,3 +791,4 @@ yunohost domain cert install
 You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](/apps). Don't forget to [plan backups](/backup) !
 
 {% endif %}
+{% endif %}
