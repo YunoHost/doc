@@ -14,7 +14,6 @@ page-toc:
 routes:
   default: '/install'
   aliases: 
-    - '/docker'
     - '/install_iso'
     - '/install_on_vps'
     - '/install_manually'
@@ -29,7 +28,7 @@ routes:
     - '/hardware'
 ---
 {% set image_type = 'YunoHost' %}
-{% set arm, at_home, regular, rpi2plus, rpi1, rpi0, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, wsl, internetcube, docker = false, false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
+{% set arm, at_home, regular, rpi34, rpi012, show_legacy_arm_menu, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, wsl, internetcube = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
 {% set hardware = uri.param('hardware')  %}
 
 {% if hardware == 'regular' %}
@@ -37,16 +36,21 @@ routes:
 {% elseif hardware == 'internetcube' %}
   {% set arm, arm_sup, internetcube = true, true, true %}
   {% set image_type = 'Internet Cube' %}
-{% elseif hardware == 'rpi2plus' %}
-  {% set arm, rpi2plus = true, true %}
-{% elseif hardware == 'rpi1' %}
-  {% set arm, rpi1 = true, true %}
-{% elseif hardware == 'rpi0' %}
-  {% set arm, rpi0 = true, true %}
+  {% set show_legacy_arm_menu = true %}
+{% elseif hardware == 'rpi34' %}
+  {% set arm, rpi34 = true, true %}
+{% elseif hardware == 'rpi012' %}
+  {% set arm, arm_unsup, rpi012 = true, true, true %}
+  {% set image_type = 'Raspberry Pi OS Lite (32-bit, Bullseye)' %}
 {% elseif hardware == 'arm_sup' %}
   {% set arm, arm_sup = true, true %}
+  {% set show_legacy_arm_menu = true %}
+{% elseif hardware == 'arm' %}
+  {% set arm, arm_unsup = true, true %}
+  {% set image_type = 'Armbian' %}
 {% elseif hardware == 'arm_unsup' %}
   {% set arm, arm_unsup = true, true %}
+  {% set show_legacy_arm_menu = true %}
   {% set image_type = 'Armbian' %}
 {% elseif hardware == 'vps_debian' %}
   {% set vps, vps_debian = true, true %}
@@ -54,8 +58,6 @@ routes:
   {% set vps, vps_ynh = true, true %}
 {% elseif hardware == 'virtualbox' %}
   {% set at_home, virtualbox = true, true %}
-{% elseif hardware == 'docker' %}
-  {% set docker = true %}
 {% elseif hardware == 'wsl' %}
   {% set wsl = true %}
 {% endif %}
@@ -71,12 +73,12 @@ Select the hardware on which you want install YunoHost :
 [[figure caption="VirtualBox"]![](image://virtualbox.png?height=75)[/figure]](/install/hardware:virtualbox)
 [/div]
 
-[div class="flex-child hardware{%if rpi2plus or rpi1 or rpi0 %} active{% endif %}"]
-[[figure caption="Raspberry Pi"]![](image://raspberrypi.jpg?height=75)[/figure]](/install/hardware:rpi2plus)
+[div class="flex-child hardware{%if rpi012 or rpi34 %} active{% endif %}"]
+[[figure caption="Raspberry Pi"]![](image://raspberrypi.png?height=75)[/figure]](/install/hardware:rpi34)
 [/div]
 
-[div class="flex-child hardware{%if arm_sup or arm_unsup or internetcube %} active{% endif %}"]
-[[figure caption="ARM board"]![](image://olinuxino.jpg?height=75)[/figure]](/install/hardware:arm_sup)
+[div class="flex-child hardware{%if arm_sup or (arm_unsup and not rpi012) or internetcube %} active{% endif %}"]
+[[figure caption="ARM board"]![](image://olinuxino.png?height=75)[/figure]](/install/hardware:arm)
 [/div]
 
 [div class="flex-child hardware{%if regular %} active{% endif %}"]
@@ -94,26 +96,23 @@ Select the hardware on which you want install YunoHost :
 [/div]
 [div class="flex-container pt-2"]
 
-{% if rpi2plus or rpi1 or rpi0 %}
-[div class="flex-child hardware{%if rpi2plus %} active{% endif %}"]
-[[figure caption="Raspberry Pi 2, 3 or 4"]![](image://raspberrypi.jpg?height=50)[/figure]](/install/hardware:rpi2plus)
+{% if rpi012 or rpi34 %}
+[div class="flex-child hardware{%if rpi34 %} active{% endif %}"]
+[[figure caption="Raspberry Pi 3 or 4"]![](image://raspberrypi.png?height=50)[/figure]](/install/hardware:rpi34)
 [/div]
 
-[div class="flex-child hardware{%if rpi1 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 1"]![](image://rpi1.jpg?height=50)[/figure]](/install/hardware:rpi1)
+[div class="flex-child hardware{%if rpi012 %} active{% endif %}"]
+[[figure caption="Raspberry Pi 0, 1 or 2"]![](image://rpi1.png?height=50)[/figure]](/install/hardware:rpi012)
 [/div]
 
-[div class="flex-child hardware{%if rpi0 %} active{% endif %}"]
-[[figure caption="Raspberry Pi zero"]![](image://rpi0.jpg?height=50)[/figure]](/install/hardware:rpi0)
-[/div]
-{% elseif arm_sup or arm_unsup or internetcube %}
+{% elseif show_legacy_arm_menu %}
 
 [div class="flex-child hardware{%if internetcube %} active{% endif %}"]
 [[figure caption="Internet cube With VPN"]![](image://internetcube.png?height=50)[/figure]](/install/hardware:internetcube)
 [/div]
 
 [div class="flex-child hardware{%if arm_sup and not internetcube %} active{% endif %}"]
-[[figure caption="Olinuxino lime1&2 or Orange Pi PC+"]![](image://olinuxino.jpg?height=50)[/figure]](/install/hardware:arm_sup)
+[[figure caption="Olinuxino lime1&2 or Orange Pi PC+"]![](image://olinuxino.png?height=50)[/figure]](/install/hardware:arm_sup)
 [/div]
 
 [div class="flex-child hardware{%if arm_unsup %} active{% endif %}"]
@@ -140,33 +139,15 @@ Select the hardware on which you want install YunoHost :
 !! This setup is mainly meant for local testing by advanced users. Due to limitations on WSL's side (changing IP address, notably), selfhosting from it can be tricky and will not be described here.
 {% endif %}
 
-{% if docker %}
-!! **YunoHost doesn’t support Docker officially since issues with versions 2.4+. In question, YunoHost 2.4+ doesn’t work anymore on Docker because YunoHost requires systemd and Docker has chosen to not support it natively (and there are other problems link to the firewall and services).**
-!!
-!! **We strongly discourage you to run YunoHost on docker with those images**
-
-## Community images
-
-However, community images exist and are available on Docker Hub:
-
-  * [AMD64 (classic) (YunoHost 4.x)](https://hub.docker.com/r/domainelibre/yunohost/)
-  * [I386 (old computers) (YunoHost 4.x)](https://hub.docker.com/r/domainelibre/yunohost-i386/)
-  * [ARM64V8 (Raspberry Pi 4) (YunoHost 4.x)](https://hub.docker.com/r/cms0/yunohost/)
-  * [ARMV7 (Raspberry Pi 2/3 ...) (YunoHost 4.x)](https://hub.docker.com/r/domainelibre/yunohost-arm/)
-  * [ARMV6 (Raspberry Pi 1) (old yunoHost version)](https://hub.docker.com/r/tuxalex/yunohost-armv6/)
-{% else %}
-
 
 ## [fa=list-alt /] Pre-requisites
 
 {% if regular %}
 * A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop with 512MB RAM and 16GB capacity (at least)
-{% elseif rpi2plus %}
-* A Raspberry Pi 2, 3 or 4
-{% elseif rpi1 %}
-* A Raspberry Pi 1 with at least 512MB RAM
-{% elseif rpi0 %}
-* A Raspberry Pi zero
+{% elseif rpi34 %}
+* A Raspberry Pi 3 or 4
+{% elseif rpi012 %}
+* A Raspberry Pi 0, 1 or 2 with at least 512MB RAM 
 {% elseif internetcube %}
 * An Orange Pi PC+ or an Olinuxino Lime 1 or 2
 * A VPN with a dedicated public IP and a `.cube` file
@@ -196,19 +177,16 @@ However, community images exist and are available on Docker Hub:
 {% endif %}
 {% if at_home %}
 * A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
-{% if rpi0 %}
-* An usb OTG or a wifi dongle to connect your Raspberry Pi Zero
-{% elseif not virtualbox %}
-* An ethernet cable (RJ-45) to connect your server to your router.
+{% if not virtualbox %}
+* An ethernet cable (RJ-45) to connect your server to your router. {% if rpi012 %} (Or, for Rasperry Pi Zero : and USB OTG or a wifi Dongle) {% endif %}
 {% endif %}
 * A computer to read this guide, flash the image and access your server.
-{% endif %}
-{% if not at_home %}
+{% else %}
 * A computer or a smartphone to read this guide and access your server.
 {% endif %}
 
 {% if virtualbox %}
-! N.B. : Installing YunoHost in a VirtualBox is usually intended for testing. To run an actual server on the long-term, you usually need a dedicated physical machine (old computer, ARM board...) or a server online.
+! N.B. : Installing YunoHost in a VirtualBox is usually intended for testing or development. It is not convenient to run an actual server on the long-term, because the machine it's installed on probably won't be up 24/7, and because Virtualbox adds an additional layer of complexity in exposing the machine to the Internet.
 {% endif %}
 
 {% if wsl %}
@@ -331,8 +309,10 @@ wsl --import YunoHost .\WSL\YunoHost .\WSL\YunoHost.tar.gz --version 2
 ```
 {% endif %}
 
+
 {% if vps_ynh %}
 ## YunoHost VPS providers
+
 Here are some VPS providers supporting YunoHost natively :
 
 [div class="flex-container"]
@@ -340,7 +320,12 @@ Here are some VPS providers supporting YunoHost natively :
 [div class="flex-child"]
 [[figure caption="Alsace Réseau Neutre - FR"]![](image://vps_ynh_arn.png?height=50)[/figure]](https://vps.arn-fai.net)
 [/div]
-
+[div class="flex-child"]
+[[figure caption="FAImaison - FR"]![](image://vps_ynh_faimaison.svg?height=50)[/figure]](https://www.faimaison.net/services/vm.html)
+[/div]
+[div class="flex-child"]
+[[figure caption="Association ECOWAN - FR"]![](image://vps_ynh_ecowan.png?height=50)[/figure]](https://www.ecowan.fr/vps-linux)
+[/div]
 [/div]
 {% endif %}
 
@@ -348,12 +333,14 @@ Here are some VPS providers supporting YunoHost natively :
 {% if at_home %}
 ## [fa=download /] Download the {{image_type}} image
 
-! The links to the images are currently broken. While we resolve the issue, you can find them directly on https://build.yunohost.org/
+{% if rpi012 %}
+! Support for Rasperry Pi 0, 1 and 2 is unfortunately slowly dropping : building fresh images is complex, and RPi 0, 1 and 2 are ARM-32bit systems which will get more and more deprecated over time. Our pre-installed images are quite old. We recommend instead to [download the official Rasperry Pi OS Lite (**32-bit**, **Bullseye**)](https://downloads.raspberrypi.org/raspios_lite_armhf/images/?C=M;O=D) and installing YunoHost on top [using similar instructions as for other ARM boards](/install/hardware:arm)
+{% endif %}
 
 {% if virtualbox or regular %}
 !!! If your host OS is 32 bits, be sure to download the 32-bit image.
-{% elseif arm_unsup %}
-<a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12">[fa=external-link] Download the image for your board on Armbian's website</a>
+{% elseif arm_unsup and not rpi012 %}
+<a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12" style="background: none;">[fa=external-link] Download the image for your board on Armbian's website</a>
 
 !!! N.B.: you should download the image Armbian Bullseye.
 {% endif %}
@@ -399,6 +386,7 @@ $(document).ready(function () {
     console.log("in load");
     $.getJSON('https://build.yunohost.org/images.json', function (images) {
         $.each(images, function(k, infos) {
+            if (infos.hide == true) { return; }
             if (infos.tuto.indexOf(hardware) == -1) return;
             // Fill the template
             html = $('#image-template').html()
@@ -607,7 +595,7 @@ Keep in mind that:
 {% endif %}
 
 
-{% if rpi1 or rpi0 %}
+{% if rpi012 %}
 ## [fa=bug /] Connect to the board and hotfix the image
 Raspberry Pi 1 and 0 are not totally supported due to [compilation issues for this architecture](https://github.com/YunoHost/issues/issues/1423).
 
@@ -670,8 +658,6 @@ curl https://install.yunohost.org | bash
 
 !!! If you are in the process of restoring a server using a YunoHost backup, you should skip this step and instead [restore the backup instead of the postinstall step](/backup#restoring-during-the-postinstall).
 
-{% if not wsl %}
-
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
 {%if at_home %}
@@ -680,8 +666,6 @@ In an internet browser, type **{% if internetcube %}`https://internetcube.local`
 !!! If this doesn't work, you can [look for the the local IP address of your server](/finding_the_local_ip). The address typically looks like `192.168.x.y`, and you should therefore type `https://192.168.x.y` in your browser's address bar.
 {% else %}
 You can perform the initial configuration with the web interface by typing in the adress bar of your web browser **the public IP address of your server**. Typically, your VPS provider should have provided you with the IP of the server.
-{% endif %}
-
 {% endif %}
 
 ! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. {% if not wsl %}You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). {% endif %} For now, you should add a security exception to accept the current certificate. (Though, PLEASE, do not take the habit of blindly accepting this kind of security alert!)
@@ -739,47 +723,22 @@ If you want to create subdomains, do not forget to add them in the `hosts` file 
 
 {% endif %}
 
-##### [fa=key /] Administration password
+##### [fa=key /] First user
 
-This password will be used to access to your server's administration interface. You will also use it to connect [via **SSH**](/ssh) or [**SFTP**](/filezilla). In general terms, this is your **system's key**, choose it carefully!
+[Since YunoHost 11.1](https://forum.yunohost.org/t/yunohost-11-1-release-sortie-de-yunohost-11-1/23378), the first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/ssh) or [**SFTP**](/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld` : these emails may be used to send technical informations or alerts. You can later add additional users, which you can also add to the Admins group.
 
-## [fa=user /] Create a first user
+This user replaces the old `admin` user, which some old documentation page may still refer to. In which case : just replace `admin` with your username.
 
-Once the postinstall is done, you should be able to actually log in the web admin interface using the administration password.
-
-So far, your server now has an `admin` user - but `admin` is not a "regular" user and *can't* be used to log on [the user portal](/users).
-
-Let's therefore add a first "regular" user.
-
-!!! The first user you create is a bit special : it will receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld`. These emails may be used to send technical informations or alerts.
-
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="From the web interface"]
-
-Go in Users > Click on "+ New User" button
-
-[figure class="nomargin" caption="Preview of the user creation UI"]
-![User creation](image://create-first-user.png?resize=100%&class=inline)
-[/figure]
-
-[/ui-tab]
-[ui-tab title="From the command line"]
-```
-yunohost user create johndoe
-```
-
-[figure class="nomargin" caption="Preview of the user creation CLI"]
-![User creation CLI](image://create-first-user-cli.png?resize=100%&class=inline)
-[/figure]
-
-[/ui-tab]
-[/ui-tabs]
-{% endif %}
 
 ## [fa=stethoscope /] Run the initial diagnosis
 
+Once the postinstall is done, you should be able to actually log in the web admin interface using the credentials of the first user you just created.
+
 {% if wsl %}
 ! Reminder: YunoHost in WSL will likely not be reachable from outside, and real domains and certificates won't be able to be assigned to it.
+{% endif %}
+{% if virtualbox %}
+! Reminder: YunoHost in VirtualBox will likely not be reachable from outside without further network configuration in Virtualbox's settings. The diagnosis will probably complain about this.
 {% endif %}
 
 The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured - and guide you in how to fix issues. The diagnosis will run twice a day and send an alert if issues are detected.
@@ -827,10 +786,10 @@ yunohost domain cert install
 ```
 [/ui-tab]
 [/ui-tabs]
-{% endif %}
 
 ## ![](image://tada.png?resize=32&classes=inline) Congratz!
 
 You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](/apps). Don't forget to [plan backups](/backup) !
 
+{% endif %}
 {% endif %}

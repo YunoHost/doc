@@ -143,6 +143,7 @@ The full list of question types is : `string`, `text`, `select`, `tags`, `email`
 
 `password`-type questions have special behavior and are NOT automatically saved as setting (user-chosen password should ideally not be stored, at least not hashed...)
 
+Every install question is not necessarily mandatory (e.g. a question to propose to add an api key for a better user experience, although the app still works without). To make those questions optional, just write `optional = true`.
 
 ## Resource system
 

@@ -157,6 +157,14 @@ The `<key>` is the setting name, for example `main.sftp.with_sftp` from above.
 [/ui-tab]
 [/ui-tabs]
 
+## Execute commands within the app
+
+Starting YunoHost v11.1.21.4, if you need to execute commands with the app's binary, or PHP commands, etc., you can execute the command `yunohost app shell <app>`.
+It will:
+- open a new Bash shell as the app's system user
+- open the app's working directory (e.g. `/var/www/<app>`)
+- preload the environment with variables taken from the app's service, if it exists
+- override `php`, so that it points to the PHP version used by the app
 
 ## Applications packaging
 

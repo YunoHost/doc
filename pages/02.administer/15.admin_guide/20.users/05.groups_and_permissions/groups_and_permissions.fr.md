@@ -7,31 +7,34 @@ routes:
   default: '/groups_and_permissions'
 ---
 
-Vous pouvez accéder à l'interface de gestion des *groupes et des permissions* depuis la webadmin
-en allant dans la section "Utilisateurs" et en cliquant sur le bouton correspondant :
+Vous pouvez accéder à l'interface de gestion des *groupes et des permissions* depuis l'admin web en allant dans la section "Utilisateurs" et en cliquant sur le bouton correspondant :
 
-![](image://button_to_go_to_permission_interface_fr.png)
+![](image://button_to_go_to_permission_interface_fr.png?resize=800)
 
 ## Gestion des groupes
 
 Le mécanisme de groupe peut être utilisé pour définir des groupes d'utilisateurs qui peuvent ensuite être utilisés pour restreindre les autorisations pour les applications et autres services (tels que l'email ou XMPP). Notez qu'il n'est *pas* obligatoire de créer un groupe pour ce faire : vous pouvez également restreindre l'accès à une application ou à un service de manière individuelle.
 
-L'utilisation de groupes est cependant utile pour la sémantique, par exemple si vous hébergez plusieurs groupes d'amis, des associations ou des entreprises sur votre serveur, vous pouvez créer des groupes comme "association1" et "association2" et ajouter les membres de chaque association au groupe concerné.
+L'utilisation de groupes est cependant utile pour la sémantique, par exemple si vous hébergez plusieurs groupes d'amis, des associations ou des entreprises sur votre serveur, vous pouvez créer des groupes comme `association1` et `association2` et ajouter les membres de chaque association au groupe concerné.
+
+Il est également possible de définir des alias mail pour un groupe, afin que les mails envoyés à `groupe@domain.tld` soient redirigés vers tous les membres du groupe.
 
 
 ### Groupes par défaut
 Par défaut, deux groupes spéciaux sont créés :
 - `all_users`, qui contient tous les utilisateurs enregistrés sur YunoHost,
 - `visitors`, c'est-à-dire les personnes qui consultent le serveur sans être connectées. 
+- `admins`, apparut depuis Yunohost 11.1, ce groupe permet de gérer les administrateurs de la machine, chaque utilisateur aura alors (selon la configuration du serveur) accès en SSH ainsi que la webadmin.
 
 Vous ne pouvez pas changer le contenu de ces groupes, seulement les permissions qui leur sont accordées.
+
  
 ### Lister les groupes existants
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="À partir de l'interface web"]
 Les groupes existants sont listés en haut de la page *groupes et autorisations*.
 
-![](image://groups_default-groups.png)
+![](image://groups_default-groups_fr.png)
 
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
@@ -234,3 +237,27 @@ $ yunohost user permission update wordpress.admin --show_tile True
 ```
 [/ui-tab]
 [/ui-tabs]
+
+
+### Gérer les alias des groupes
+Chaque groupe peut utiliser des alias de mail, bien que leur configuration se fasse actuellement uniquement depuis la CLI. Par défaut, le groupe `admins` dispose ainsi de `admins@domain.tld`, `root@domain.tld` ... : les messages envoyés à ces adresses sont redirigés vers tous les membres du groupe `admins`. 
+
+L'utilisation de la commande `yunohost user group info` permet de lister tous les alias pour le groupe renseigné.
+
+```shell
+$ yunohost user group info admins
+  [...]
+  mail-aliases:
+    - root@maindomain.tld
+    - admin@maindomain.tld
+    - admins@maindomain.tld
+    - webmaster@maindomain.tld
+    - postmaster@maindomain.tld
+    - abuse@maindomain.tld
+  [...]
+```
+
+Il est possible de les ajouter avec l'action `add-mailalias` ou de les enlever avec `remove-mailalias`.
+```shell
+$ yunohost user group add-mailalias <groupe> <adresse@domaine.tld>
+```

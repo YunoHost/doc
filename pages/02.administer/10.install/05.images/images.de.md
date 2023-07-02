@@ -51,6 +51,7 @@ $(document).ready(function () {
     console.log("in load");
     $.getJSON('https://build.yunohost.org/images.json', function (images) {
         $.each(images, function(k, infos) {
+            if (infos.hide == true) { return; }
             // Fill the template
             html = $('#image-template').html()
              .replace('{id}', infos.id)

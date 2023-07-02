@@ -20,6 +20,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | adhocserver | An ad hoc server for the Sony PSP |  | [Package Draft](https://github.com/matlink/adhocserver_ynh) |
 | [Ajenti](https://ajenti.org) | Ajenti is a Linux & BSD modular server admin panel | [Upstream](https://github.com/ajenti/ajenti/) |  |
 | Akaunting | Manage payments/invoices/expenses | [Upstream](https://github.com/akaunting/akaunting) |  |
+| [Amara](https://amara.org/) | Collaborative translation of subtitles for videos. | [Upstream](https://gitlab.com/hanklank/amara-archive) |  |
 | Anki Sync Server | a personal Anki server |[Upstream](https://github.com/ankicommunity/anki-sync-server) |  |
 | [AnonAddy](https://anonaddy.com/) | Anonymous email forwarding - Create Unlimited Email Aliases For Free | [Upstream](https://github.com/anonaddy/anonaddy) |  |
 | [Ansible Matrix Docker Deploy](https://github.com/spantaleev/matrix-docker-ansible-deploy) | Full Featured Matrix Server Setup with All Bridges and Integrations | [Upstream](https://github.com/spantaleev/matrix-docker-ansible-deploy) |  |
@@ -223,7 +224,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Pelias |  | [Upstream](https://github.com/pelias/pelias) |  |
 | [Penpot](https://penpot.app/) | Design Freedom for Teams |  [Upstream](https://github.com/penpot) |  |
 | personal-management-system | Your web application for managing personal data. | [Upstream](https://github.com/Volmarg/personal-management-system) |  |
-| [Photoprism](https://photoprism.org/) |  | [Upstream](https://github.com/photoprism/photoprism) |  |
 | [PHPList](https://www.phplist.com) |  | [Upstream](https://github.com/phpList) |  |
 | [Phraseanet](https://docs.phraseanet.com/3.8/fr/index.html#) |  | [Upstream](https://github.com/alchemy-fr/Phraseanet-Docs) |  |
 | [pia](https://github.com/LINCnil/pia) | A tool to help carrying out Privacy Impact Assessments |  | [Package Draft](https://github.com/YunoHost-Apps/pia_ynh) |
@@ -338,7 +338,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [vpnserver](https://openvpn.net) | Create/provide VPNs from your server |  | [Package Draft](https://github.com/YunoHost-Apps/vpnserver_ynh) |
 | [Webhook.site](https://docs.webhook.site/) |  | [Upstream](https://github.com/fredsted/webhook.site) |  |
 | [WebODF](https://webodf.org) |  | [Upstream](https://github.com/webodf/WebODF) |  |
-| webogram | Webogram - a new era of messaging | [Upstream](https://github.com/zhukov/webogram) | [Package Draft](https://github.com/YunoHost-Apps/webogram_ynh) |
 | Webterminal | A web-based Jump Host / Bastion, supports VNC, SSH, RDP, Telnet, SFTP... | [Upstream](https://github.com/jimmy201602/webterminal/) |  |
 | [WebThings Gateway](https://iot.mozilla.org/gateway/) |  | [Upstream](https://github.com/mozilla-iot/) |  |
 | [wg-access-server](https://github.com/freifunkMUC/wg-access-server) | VPN Server OIDC ipv4 ipv6 | [Upstream](https://github.com/freifunkMUC/wg-access-server) |  |
