@@ -13,7 +13,7 @@ This tutorial aim to get around dynamic IP issue which is: when the IP public ad
 
 After setting up the solution proposed in this tutorial, the redirection from your domain name to the actual IP address of your server will not be lost anymore.
 
-The method proposed here consists of automatizing the fact the box annonces its global IP adress change to the dynamic DNS, so that the DNS zone will automatically be updated.
+The method proposed here consists of automatizing the fact the box announces its global IP address change to the dynamic DNS, so that the DNS zone will automatically be updated.
 
 ### Registrars
 
