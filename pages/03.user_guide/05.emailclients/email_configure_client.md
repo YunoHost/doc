@@ -50,7 +50,7 @@ Follow the following steps. (As for Thunderbird, you might need to accept certif
 
 The first time you can simply choose "Add account". If you already have an account configured, tap the hamburger menu then tap the gear, choose Mail, Accounts and press the '+'-symbol.
 
-Then you choose IMAP. Fill in the fields and press Next. Now Dekko will look for the configuration. Check that all fields are correct. Make sure you have your yunohost username, NOT your mailadress and choose "Allow untrusted certificates". Do this for IMAP and SMTP and press Next. Dekko will now synchronise the account after which you are done. Congratz!
+Then you choose IMAP. Fill in the fields and press Next. Now Dekko will look for the configuration. Check that all fields are correct. Make sure you have your yunohost username, NOT your email address and choose "Allow untrusted certificates". Do this for IMAP and SMTP and press Next. Dekko will now synchronise the account after which you are done. Congratz!
 
 ![](image://dekko_config_1.png?resize=280&classes=inline)
 ![](image://dekko_config_2.png?resize=280&classes=inline)

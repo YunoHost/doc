@@ -22,7 +22,7 @@ In order to do so, go to Actions -> Configuration -> feed tab -> OPML section ->
 You can read your feeds on Android using ttrss-reader application: **[ttrss-reader](https://f-droid.org/packages/org.ttrssreader/)**
 
 To use it, you need to go to Actions -> Configuration, in Tiny Tiny RSS web interface and select "Activate API".
-Then, in your android ttrss-reader, fill the Tiny Tiny RSS server adress: https://yourdomain.org/ttrss, username, password (no need to use HTTP authentification).
+Then, in your android ttrss-reader, fill the Tiny Tiny RSS server address: https://yourdomain.org/ttrss, username, password (no need to use HTTP authentication).
 
 **Note**: you may need to uninstall and reinstall the Tiny Tiny RSS application through the YunoHost admin panel in order to be able to connect.
 
