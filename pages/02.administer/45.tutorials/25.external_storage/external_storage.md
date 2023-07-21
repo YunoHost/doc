@@ -146,7 +146,7 @@ Then, ideally, we switch to maintenance mode the applications that might be writ
 Example, for nextcloud:
 
 ```bash
-sudo -u nextcloud /var/www/occ maintenance:mode --on
+sudo -u nextcloud /var/www/nextcloud/occ maintenance:mode --on
 ```
 
 Example, for mail:
@@ -197,7 +197,7 @@ ls -la /var/mail/
 From here you can stop maintenance mode, the command below is to be adapted depending on the services you have stopped.
 
 ```bash
-sudo -u nextcloud /var/www/occ maintenance:mode --off
+sudo -u nextcloud /var/www/nextcloud/occ maintenance:mode --off
 systemctl start postfix
 systemctl start dovecot
 ```
