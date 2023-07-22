@@ -29,7 +29,7 @@ Desktop and mobile clients have the advantage of copying your emails to the devi
 
 ## Configuring email aliases and auto-forwards
 
-Mail aliases and forwards can be configured for each users. For instance, the first user created on the server automatically has an alias `root@the.domain.tld` configured - meaning that an email sent to this adress will end in the inbox of the first user. Automatic forwards may be configured, for instance if an user doesn't want to configure an additional email account and just wants to receive emails from the server on, say, his/her gmail address.
+Mail aliases and forwards can be configured for each users. For instance, the first user created on the server automatically has an alias `root@the.domain.tld` configured - meaning that an email sent to this address will end in the inbox of the first user. Automatic forwards may be configured, for instance if an user doesn't want to configure an additional email account and just wants to receive emails from the server on, say, his/her gmail address.
 
 Another feature which few people know about is the use of suffixes beginning with "+". For example, emails sent to `johndoe+booking@the.domain.tld` will automatically land in the `booking` dir (lowercase) of John Doe's mailbox or in John Doe's inbox if `booking` directory doesn't exist . It is a practical technique for example to provide an e-mail address to a website, then easily sort (via automatic filters) the mail coming from this website.
 
@@ -37,12 +37,12 @@ Groups also can use alias features, by default the group `admins` have `root@<do
 
 ## What happens if my server becomes unavailable?
 
-If your server becomes unavailable, emails sent to your server will stay in a pending queue on the sender's side for as long as ~5 days. The sender's hoster will regularly try to resend the email, until it drops it if it was unable to send it.
+If your server becomes unavailable, emails sent to your server will stay in a pending queue on the sender's side for as long as ~5 days. The sender's host will regularly try to resend the email, until it drops it if it was unable to send it.
 
 ## Forms to remove its IP address from the blacklist
-It is possible that the sent emails from your YunoHost instance are considered as spam by the big email services.
+It is possible that the emails sent from your YunoHost instance are considered as spam by the big email services.
 Is it possible that the IP address from your server have been previously been used to sent spam or that these email services consider your server as a spam sender.
-To ensure that your servers’ IP address isn’t into this blacklists and to remove it from them, follow this [link](/blacklist_forms).
+To ensure that your servers’ IP address isn't on these blacklists and to remove it from them, follow this [link](/blacklist_forms).
 
 ## Migrating email from an email provider to a YunoHost instance
 

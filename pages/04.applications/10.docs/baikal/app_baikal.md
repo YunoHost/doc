@@ -62,7 +62,7 @@ Make sure it is filled with:
 
 Save.
 
-Now, the adressbook is accessible.
+Now, the address book is accessible.
 
 ## Useful links
 
