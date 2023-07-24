@@ -265,6 +265,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [RustDesk](https://rustdesk.com/server 'RustDesk Server') | [TeamViewer](https://teamviewer.com) alternative | [Upstream](https://github.com/rustdesk/rustdesk-server 'RustDesk Server on GitHub') and [easy install script](https://github.com/dinger1986/rustdeskinstall) |  |
 | rutorrent | Torrent client |  | [Package Draft](https://github.com/CotzaDev/rutorrent_ynh) |
 | rwtxt | Minimalist CMS | [Upstream](https://github.com/schollz/rwtxt) |  |
+| [SABnzbd](https://sabnzbd.org/) | The automated Usenet download tool | [Upstream](https://github.com/sabnzbd/sabnzbd) |  |
 | [sat](https://salut-a-toi.org) | An all-in-one tool to manage all your communications |  | [Package Draft](https://github.com/YunoHost-Apps/sat_ynh) |
 | [satdress] | Federated Lightning addresses server |  | [Upstream](https://github.com/nbd-wtf/satdress) |
 | [ScenariChain-server](https://download.scenari.software/SCENARIchain-server/) |  |  |  |
