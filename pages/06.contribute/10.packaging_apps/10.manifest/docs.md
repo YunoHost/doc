@@ -160,4 +160,6 @@ In this example:
 - `permissions`: an SSOwat `$app.main` permission will be initialized such that the SSO allows access to the app's endpoint according to the chosen `init_main_permission` question. The `main.url = "/"` is here to tell that the main endpoint is the "root" of the app, that is `https://domain.tld/helloworld/` if the app is installed with `domain=domain.tld` and `path=/helloworld`
 - `apt`: the packages `nyancat`, `lolcat`, `sl` will be installed with `apt`. These are just dummy apt dependencies to illustrate the syntax.
 
-The full documentation on resources is available [here](/packaging_apps_resources)
+### List of app resources
+
+The full documentation on resources is available [here](/packaging_apps_resources).
