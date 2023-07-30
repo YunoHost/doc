@@ -60,9 +60,9 @@ However, [**a future v3 format** has yet to come](https://github.com/YunoHost/is
 ## 4. General overview of a YunoHost app structure
 
 A YunoHost app consists in a Git repository. We encourage you to have a look at those code repository to get familiar witch app repository structures:
-- the [`helloworld_ynh`](https://github.com/YunoHost-Apps/helloworld_ynh) app 
-- the [`example_ynh`](https://github.com/YunoHost/example_ynh) app which illustrates all common features and recommended formatting
-- your favourite "real-life" app in the [YunoHost-Apps organization](https://github.com/orgs/YunoHost-Apps/repositories))
+- [the `helloworld_ynh` app](https://github.com/YunoHost-Apps/helloworld_ynh)
+- [the `example_ynh` app](https://github.com/YunoHost/example_ynh) which illustrates all common features and recommended formatting
+- your favourite "real-life" app in the [YunoHost-Apps organization](https://github.com/orgs/YunoHost-Apps/repositories)
 
 Among the file contained in a package, the most important ones are: 
 
