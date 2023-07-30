@@ -1,5 +1,5 @@
 ---
-title: App resources
+title: App manifest resources
 template: docs
 taxonomy:
     category: docs
@@ -323,4 +323,3 @@ Provision a system user to be used by the app. The username is exactly equal to 
 
 ##### Deprovision
 - deletes the user and group
-
