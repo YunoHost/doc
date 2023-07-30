@@ -12,6 +12,7 @@ The app's `manifest.toml` can be seen as the ID card of the app. It declares var
 
 In this page, the data are described according to a somewhat dummy app called `helloworld`
 
+!!! If you want to convert an application from the packaging v1 to v2 format, [please see here](/packaging_v2)!
 
 ## General information
 
