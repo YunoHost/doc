@@ -25,9 +25,11 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [AnonAddy](https://anonaddy.com/) | Anonymous email forwarding - Create Unlimited Email Aliases For Free | [Upstream](https://github.com/anonaddy/anonaddy) |  |
 | [Ansible Matrix Docker Deploy](https://github.com/spantaleev/matrix-docker-ansible-deploy) | Full Featured Matrix Server Setup with All Bridges and Integrations | [Upstream](https://github.com/spantaleev/matrix-docker-ansible-deploy) |  |
 | [Apache Superset](https://superset.apache.org/) | Apache Superset is a Data Visualization and Data Exploration Platform | [Upstream](https://github.com/apache/superset) |  |
+| [Appflowy.IO](https://appflowy.io/) | Open-source alternative to Notion | [Upstream](https://github.com/AppFlowy-IO/appflowy) | |
 | [askbot](https://askbot.com/) | Questions and answers |  | [Package Draft](https://github.com/zamentur/askbot_ynh) |
 | [Archivematica](https://www.archivematica.org/) | Mature digital preservation system designed to maintain standards-based, long-term access to collections of digital objects. | [Upstream](https://github.com/artefactual/archivematica) |  |
 | [ArchivesSpace](https://archivesspace.org/) | Archives information management application for managing and providing Web access to archives, manuscripts and digital objects. | [Upstream](https://github.com/archivesspace/archivesspace) |  |
+| [Asqatasun.org](https://asqatasun.org/) | website analyser for web accessibility and SEO | [Upstream](https://gitlab.com/asqatasun/Asqatasun) | |
 | [ass](https://github.com/tycrek/ass) | ass is a self-hosted ShareX upload server written in Node.js. |[Upstream](https://github.com/tycrek/ass)|  |
 | [Astral](https://astralapp.com/) | Organize Your GitHub Stars With Ease |[Upstream](https://github.com/astralapp/astral)|  |
 | [Azuracast](https://azuracast.com/) | A Simple, Self-Hosted Web Radio Management Suite |[Upstream](https://github.com/AzuraCast/AzuraCast)|  |
@@ -153,6 +155,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Kenoma | Pleroma frontend | [Upstream](https://git.pleroma.social/lambadalambda/kenoma) | |
 | Keyoxide | Keyoxide is a privacy-friendly tool to create and verify decentralized online identities. | [Upstream](https://codeberg.org/keyoxide) | |
 | [Kill the newsletter](https://kill-the-newsletter.com/) | Convert email newsletters to RSS feeds | [Upstream](https://github.com/leafac/kill-the-newsletter.com) | |
+| [Kitchenowl](https://kitchenowl.org/) | grocery list and recipe manager | [Upstream](https://github.com/TomBursch/kitchenowl) | |
 | [Klaxon](https://newsklaxon.org) | Easily create alerts for changes on the web  | [Upstream](https://github.com/themarshallproject/klaxon) |  |
 | [Known](https://withknown.com) |  | [Upstream](https://github.com/idno/known) |  |
 | [Koel](https://koel.phanan.net) |  | [Upstream](https://github.com/phanan/koel) |  |
@@ -265,6 +268,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [RustDesk](https://rustdesk.com/server 'RustDesk Server') | [TeamViewer](https://teamviewer.com) alternative | [Upstream](https://github.com/rustdesk/rustdesk-server 'RustDesk Server on GitHub') and [easy install script](https://github.com/dinger1986/rustdeskinstall) |  |
 | rutorrent | Torrent client |  | [Package Draft](https://github.com/CotzaDev/rutorrent_ynh) |
 | rwtxt | Minimalist CMS | [Upstream](https://github.com/schollz/rwtxt) |  |
+| [SABnzbd](https://sabnzbd.org/) | The automated Usenet download tool | [Upstream](https://github.com/sabnzbd/sabnzbd) |  |
 | [sat](https://salut-a-toi.org) | An all-in-one tool to manage all your communications |  | [Package Draft](https://github.com/YunoHost-Apps/sat_ynh) |
 | [satdress] | Federated Lightning addresses server |  | [Upstream](https://github.com/nbd-wtf/satdress) |
 | [ScenariChain-server](https://download.scenari.software/SCENARIchain-server/) |  |  |  |

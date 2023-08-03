@@ -1,46 +1,38 @@
 ---
-title: Writing app manifest
+title: 'Writing the app manifest'
 template: docs
 taxonomy:
-    category: docs
+    category:
+        - docs
 routes:
-  default: '/packaging_manifest'
+    default: /packaging_manifest
 ---
 
 The app's `manifest.toml` can be seen as the ID card of the app. It declares various basic metadata such as the id, name, description of the app, its version, install questions to be asked to the admin prior to installation, etc.
 
 In this page, the data are described according to a somewhat dummy app called `helloworld`
 
+!!! If you want to convert an application from the packaging v1 to v2 format, [please see here](/packaging_v2)!
 
 ## General information
 
 ```toml
 packaging_format = 2
-```
-
-- `packaging_format` (`int`) is the packaging version format used to package this app. Newly packaged apps are strongly encouraged to use the new "v2" format (starting with YunoHost 11.1) while older apps may still be in "v1" format.
-
-```toml
 id = "helloworld"
 name = "Hello World"
 description.en = "A dummy basic app to illustrate YunoHost's app packaging."
 description.fr = "Une app simple et bidon pour illustrer comme le packaging d'app de YunoHost fonctionne"
-```
 
-- `id` (`str`) is expected to be lower-case alphanumeric (and possibly `-`). This is what will be used for instance in the syntax `yunohost app install <app_id>`. This will also be the name of various folder or conf files such as `/etc/yunohost/apps/<app_id>` or `/etc/nginx/conf.d/<domain>.d/<app_id>.conf` (if applicable), and a dedicated system user.
-- `name` (`str`) is the display name of the app, shown for example in the webadmin UI or user portal. It is limited to 22 chars <small>(though not sure why this number?)</small>.
-- `description` (`dict` of `lang code`->`str`) contains *short*, *concise* descriptions of the app in different languages (at least `en`). It is limited to 150 chars. It will be displayed on the app catalog and should allow people to understand what this app is about at a glance. A more extensive description of the app can be provided in `doc/DESCRIPTION.md`.
-
-```toml
 version = "0.1~ynh1"
-```
 
-- `version` (`str`) is composed of the *upstream* version of the app shipped, and an `~ynhX` suffix. Changing this version is what effectively triggers an available upgrade for YunoHost instances which installed this package (hence no upgrade will be displayed as available if you forget to change it). The point of the `~ynhX` suffix is to have a way to increment the version when commiting changes unrelated to the upstream but still trigger an upgrade.
-
-```toml
 maintainers = ["alexAubin"]
 ```
 
+- `packaging_format` (`int`) is the packaging version format used to package this app. Newly packaged apps are strongly encouraged to use the new "v2" format (starting with YunoHost 11.1) while older apps may still be in "v1" format.
+- `id` (`str`) is expected to be lower-case alphanumeric (and possibly `-`). This is what will be used for instance in the syntax `yunohost app install <app_id>`. This will also be the name of various folder or conf files such as `/etc/yunohost/apps/<app_id>` or `/etc/nginx/conf.d/<domain>.d/<app_id>.conf` (if applicable), and a dedicated system user.
+- `name` (`str`) is the display name of the app, shown for example in the webadmin UI or user portal. It is limited to 22 chars <small>(though not sure why this number?)</small>.
+- `description` (`dict` of `lang code`->`str`) contains *short*, *concise* descriptions of the app in different languages (at least `en`). It is limited to 150 chars. It will be displayed on the app catalog and should allow people to understand what this app is about at a glance. A more extensive description of the app can be provided in `doc/DESCRIPTION.md`.
+- `version` (`str`) is composed of the *upstream* version of the app shipped, and an `~ynhX` suffix. Changing this version is what effectively triggers an available upgrade for YunoHost instances which installed this package (hence no upgrade will be displayed as available if you forget to change it). The point of the `~ynhX` suffix is to have a way to increment the version when commiting changes unrelated to the upstream but still trigger an upgrade.
 - `maintainers` (`list` or `str`) may allow to declare which person should be the referring person for this package (though packages are often maintained collectively and not really used in practice). This should contain a list of easily identifiable persons (eg your Github or Matrix username)
 
 ## Upstream section
@@ -168,4 +160,6 @@ In this example:
 - `permissions`: an SSOwat `$app.main` permission will be initialized such that the SSO allows access to the app's endpoint according to the chosen `init_main_permission` question. The `main.url = "/"` is here to tell that the main endpoint is the "root" of the app, that is `https://domain.tld/helloworld/` if the app is installed with `domain=domain.tld` and `path=/helloworld`
 - `apt`: the packages `nyancat`, `lolcat`, `sl` will be installed with `apt`. These are just dummy apt dependencies to illustrate the syntax.
 
-The full documentation on resources is available [here](/packaging_apps_resources)
+### List of app resources
+
+The full documentation on resources is available [here](/packaging_apps_resources).

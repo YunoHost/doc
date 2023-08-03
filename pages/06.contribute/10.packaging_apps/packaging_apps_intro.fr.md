@@ -60,9 +60,9 @@ Cependant, [**un futur format v3** est encore à venir] (https://github.com/Yuno
 ## 4. Aperçu général de la structure d'une application YunoHost
 
 Une application YunoHost est construite dans un dépôt Git. Nous vous encourageons à jeter un coup d'oeil à ces dépôts de code pour vous familiariser avec les structures des dépôts d'applications :
-- l'application [`helloworld_ynh`](https://github.com/YunoHost-Apps/helloworld_ynh) 
-- l'application [`example_ynh`](https://github.com/YunoHost/example_ynh) which illustrates all common features and recommended formatting
-- votre application "réelle" préférée dans la liste des dépots [YunoHost-Apps].(https://github.com/orgs/YunoHost-Apps/repositories))
+- [l'application `helloworld_ynh`](https://github.com/YunoHost-Apps/helloworld_ynh) 
+- [l'application `example_ynh`](https://github.com/YunoHost/example_ynh) qui contient toutes les fonctionnalités générales et le formattage recommandé
+- votre application "réelle" préférée dans la liste des dépots [YunoHost-Apps](https://github.com/orgs/YunoHost-Apps/repositories)
 
 Parmi les fichiers contenus dans un paquet, les plus importants sont les suivants :
 
