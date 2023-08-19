@@ -217,6 +217,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [openHAB](https://www.openhab.org/) | Smart home platform | [Upstream](https://github.com/openhab) |  |
 | openid-simplesamlphp | OpenID provider based on SimpleSAMLphp |  | [Package Draft](https://github.com/julienmalik/openid-simplesamlphp_ynh) |
 | OpenSourceBilling |  | [Upstream](https://github.com/vteams/open-source-billing) |  |
+| OpenWRT (https://openwrt.org/) | RouterOS | (Upstream) (https://git.openwrt.org) |  |
 | [osmw](https://www.openstreetmap.org/) | Cartography software |  | [Package Draft](https://github.com/YunoHost-Apps/osmw_ynh) |
 | OSRM |  | [Upstream](https://github.com/Project-OSRM/osrm-backend) |  |
 | [OX Open-Xchange](https://www.open-xchange.com) | Linux groupware solution | [Upstream](https://github.com/open-xchange/) |  |
