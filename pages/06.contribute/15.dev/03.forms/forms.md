@@ -18,18 +18,18 @@ YunoHost uses a lot of forms. You can found here information on supported types 
 
 | Property | Scope        | Description | Example |
 |----------|--------------|-------------|---------|
-| `type`   | Everywhere   | Specify the type of the question (see bellow for the list) | |
+| `type`   | Everywhere   | Specify the type of the question (see bellow for the list) | `type = "string"` |
 | `ask`    | Everywhere   | The title of the question            | `ask.en = "Cats or dogs ?"` | 
 | `help`    | Everywhere  | An help message            | `help.en = "Think carefully!"` |
 | `optional`| Everywhere  | Set true if the question is not mandatory  | `optional = true` |
 | `readonly`| Everywhere  | Avoid user to be able to change the value | `readonly = true` |
-| `example` | Everywhere  | Give an example to help to understand the format of the answer||
-| `pattern.regexp` | Everywhere  | Regex to validate the new value||
-| `pattern.error` | Everywhere  | Error to display if the pattern doesn't match ||
+| `example` | Everywhere  | Give an example to help to understand the format of the answer| `example = "camille@example.com"` |
+| `pattern.regexp` | Everywhere  | Regex to validate the new value| `pattern.regexp = "^.+@.+$"` |
+| `pattern.error` | Everywhere  | Error to display if the pattern doesn't match | |
 | `redact` | Everywhere  | Avoid a confidential value to be logged | `redact = true` |
 | `default` | Install     | A default value for the question            | |
 | `visible` | ConfigPanel | A simple js expression based on other short keys questions to hide or display dynamically the question| `visible = "login && ! private_key"` |
-| `bind` | AppConfigPanel | See [App configuration panel doc](/packaging_config_panels) |
+| `bind` | AppConfigPanel | See [App configuration panel doc](/packaging_config_panels) | `bind = "__INSTALL_DIR__/config.yml"` |
 
  * `help`, `optional`, `readonly` and `visible` are also available on panels and sections entities.
  *  Long help messages could not to be correctly displayed for user using yunohost CLI
@@ -110,6 +110,7 @@ By default it ask for a web URL but you can change the `pattern` if you want to.
 
 ### `file`
 File question
+
 | Property | Description  | Example |
 |----------|--------------|---------|
 | `accept`    | Same format than HTML file input |         |
@@ -117,11 +118,15 @@ File question
 ! This file type is not made for big files transfer, it's just for small logo, or config files.
 
 ### `select`
+Dropdown
+
 | Property | Description  | Example |
 |----------|--------------|---------|
 | `choices`  | list or dictionary of choices |         |
 
 ### `tags`
+Multi choices selection.
+
 | Property | Description  | Example |
 |----------|--------------|---------|
 | `choices` | List or dictionary of choices |        |
