@@ -14,14 +14,14 @@ Those panels could aslo be used as interface generator to extend quickly capabil
 
 ! Please: Keep in mind the YunoHost spirit, and try to build your panels in such a way as to expose only really useful parameters, and if there are many of them, to relegate those corresponding to rarer use cases to "Advanced" sub-sections.
 
-## How does config_panel.toml work
+## How does `config_panel.toml` work
 
 Basically, configuration panels for apps uses at least a `config_panel.toml` at the root of your package. For advanced usecases, this TOML file could also be paired with a `config` script inside the scripts directory of your package.
 
 The `config_panel.toml` file describes one or several panels, containing some sections, containing some questions generally binded to a params in a configuration file.
 
 We supposed we have an upstream app with this simple config.yml file:
-```
+```yaml
 title: 'My dummy apps'
 theme: 'white'
 max_rate: 10
@@ -29,7 +29,7 @@ max_age: 365
 ```
 
 We could for example create a simple configuration panel for it like this one, by following the syntax `\[PANEL.SECTION.QUESTION\]`:
-```
+```toml
 version = "1.0"
 [main]
 
@@ -63,7 +63,7 @@ Here we have created one `main` panel, containing the `main` and `limits` sectio
 For performance reasons, questions short keys should be unique in all the `config_panel.toml` file, not just inside its panel or its section.
 
 So you can't have
-```
+```toml
 [manual.vpn.server_ip]
 [advanced.dns.server_ip]
 ```
@@ -87,12 +87,12 @@ If you have not defined a specific getter/setter (see bellow), and without `bind
 
 If you want to read and save the value into a variable (called like the option name) of a file (json, yaml, ini, php, py ...) you can do:
 
-```
+```toml
 bind = ":__INSTALL_DIR__/config.yml"
 ```
 
 If you want to read and save the value into an other variable than the `config_panel.toml` question short key (email in the example) of a file (json, yaml, ini, php, py ...) you can do:
-```
+```toml
 bind = "email:__FINALPATH__/config.yml"
 ```
 
@@ -100,14 +100,14 @@ bind = "email:__FINALPATH__/config.yml"
 
 Sometimes, you want to read and save a value in a variable name that appears several time in the configuration file (for example variables called `max`). The `bind` property allows you to change the value on the variable following a regex in a the file:
 
-```
+```toml
 bind = "importExportRateLimiting>max:__INSTALL_DIR__/conf.json"
 ```
 
 #### Read / write an entire file
 
 If you have a question of type file or text you could want to save the content into a specific path on the system.
-```
+```toml
 bind = "__INSTALL_DIR__/img/logo.png"
 ```
 
@@ -125,6 +125,19 @@ For all of those use cases, there are the specific getter or setter mechanism fo
 
 To create specific getter / setter, you first need to create a `config` script inside the `scripts` directory
 
+scripts/config
+```bash
+#!/bin/bash
+source /usr/share/yunohost/helpers
+
+ynh_abort_if_errors
+
+# Put your getter, setter and validator here
+
+# Keep this last line
+ynh_app_config_run $1
+```
+
 #### Getter
 
 A getter is a bash function called `getter_QUESTION_SHORT_KEY()` which returns data through stdout. 
@@ -135,7 +148,7 @@ Returns could have 2 formats:
 
 [details summary="<i>Basic example : Get the login inside the first line of a file </i>" class="helper-card-subtitle text-muted"]
 scripts/config
-```
+```bash
 get__login_user() {
     if [ -s /etc/openvpn/keys/credentials ]
     then
@@ -147,7 +160,7 @@ get__login_user() {
 ```
 
 config_panel.toml
-```
+```toml
 [main.auth.login_user]
 ask = "Username"
 type = "string"
@@ -156,14 +169,14 @@ type = "string"
 
 [details summary="<i>Advanced example 1 : Display a list of available plugins</i>" class="helper-card-subtitle text-muted"]
 scripts/config
-```
+```bash
 get__plugins() {
     echo "choices: [$(ls $install_dir/plugins/ | tr '\n' ',')]"
 }
 ```
 
 config_panel.toml
-```
+```toml
         [main.plugins.plugins]
         ask = "Plugin to activate"
         type = "tags"
@@ -173,7 +186,7 @@ config_panel.toml
 
 [details summary="<i>Example 2 : Display the status of a VPN</i>" class="helper-card-subtitle text-muted"]
 scripts/config
-```
+```bash
 get__status() {
     if [ -f "/sys/class/net/tun0/operstate" ] && [ "$(cat /sys/class/net/tun0/operstate)" == "up" ]
     then
@@ -193,7 +206,7 @@ EOF
 ```
 
 config_panel.toml
-```
+```toml
         [main.cube.status]
         ask = "Custom getter alert"
         type = "alert"
@@ -210,7 +223,7 @@ You probably should use `ynh_print_info` in order to display info for user about
 
 [details summary="<i>Basic example : Set the login into the first line of a file </i>" class="helper-card-subtitle text-muted"]
 scripts/config
-```
+```bash
 set__login_user() {
     if [ -z "${login_user}" ]
     then
@@ -221,7 +234,7 @@ set__login_user() {
 ```
 
 config_panel.toml
-```
+```toml
 [main.auth.login_user]
 ask = "Username"
 type = "string"
@@ -232,13 +245,13 @@ type = "string"
 You will often need to validate data answered by the user before to save it somewhere.
 
 Validation can be made with regex through `pattern` argument
-```
+```toml
         pattern.regexp = '^.+@.+$'
         pattern.error = 'An email is required for this field'
 ```
 
 You can also restrict several types with a choices list.
-```
+```toml
         choices.option1 = "Plop1"
         choices.option2 = "Plop2"
         choices.option3 = "Plop3"
@@ -249,11 +262,10 @@ Some other type specific argument exist like
 | -----  | --------------------------- |
 | `number`, `range` | `min`, `max`, `step` |
 | `file` | `accept` |
-| `tags` | `limit` |
 | `boolean` | `yes` `no` |
 
 Finally, if you need specific or multi variable validation, you can use custom validators function:
-```
+```bash
 validate__login_user() {
     if [[ "${#login_user}" -lt 4 ]]; then echo 'Too short user login'; fi
 }
@@ -265,7 +277,7 @@ validate__login_user() {
 
 You can use the services key to specify which service need to be reloaded or restarted
 
-```
+```toml
 services = [ 'nginx', '__APP__' ]
 ```
 
@@ -275,7 +287,7 @@ This argument could be on panel, section, or question.
 
 All main configuration helpers are overwritable, example:
 
-```
+```bash
 ynh_app_config_apply() {
 
     # Stop vpn client
