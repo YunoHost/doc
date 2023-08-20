@@ -111,9 +111,9 @@ Réponse moyenne : Par le passé, les apps étaient gérées via des .deb. C’
 <p>Si vous restez persuadé que l’on peut néanmoins bricoler les paquets .deb pour gérer tout cela, voir les réponses précédentes.</p>
 </div>
 
-#### Quance est-ce [cette fonctionlité] sera ajoutée ? Pourquoi [cette app] n'a pas encore été packagée ? Je n'en reviens pas que vous ne fassiez pas encore [cela] !
+#### Quance est-ce que *cette fonctionlité* sera ajoutée ? Pourquoi *cette app* n'a pas encore été packagée ? Je n'en reviens pas que vous ne fassiez pas encore *cela* !
 
-Nous ne donnons pas calendrier.
+Nous ne donnons pas de calendrier.
 
 Nous sommes une poignée de volontaires travaillant sur notre temps libre pour maintenir et développer YunoHost. Nous n'avons pas de responsable produit ou de chef de projet, nous ne sommes pas une entreprise. Nous faisons ce que nous pouvons, parce que nous aimons ce logiciel, quand nous le pouvons.
 
