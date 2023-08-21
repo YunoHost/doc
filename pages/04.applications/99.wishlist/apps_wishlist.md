@@ -143,6 +143,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Icecast 2](https://www.icecast.org) |  | [Upstream](https://gitlab.xiph.org/xiph/icecast-server/) |  |
 | [ikiwiki](https://ikiwiki.info) |  |  |  |
 | [InfCloud](https://inf-it.com/open-source/clients/infcloud/) | A contacts, calendar and tasks web client for CalDAV and CardDAV | [Upstream](https://inf-it.com/open-source/download/InfCloud_0.13.1.zip) | |
+| [Inginious](https://inginious.org) | Secure and automated exercises assessment platform using your own tests, also providing a pluggable interface with your existing LMS. | [Upstream](https://github.com/UCL-INGI/INGInious) ||
 | [Inventaire](https://inventaire.io) | a libre collaborative resource mapper powered by open-knowledge, starting with books! 📚 | [Upstream](https://github.com/inventaire/inventaire) |  |
 | [InvoicePlane](https://invoiceplane.com) |  | [Upstream](https://github.com/InvoicePlane/InvoicePlane) |  |
 | [IPFS](https://ipfs.io) |  | [Upstream](https://github.com/ipfs/ipfs) | [Package Draft](https://github.com/YunoHost-Apps/ipfs_ynh) |
