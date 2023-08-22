@@ -19,19 +19,16 @@ You should create a directory with the name of the hooks into `/etc/yunohost/hoo
 mkdir -p /etc/yunohost/hooks.d/post_user_create
 ```
 
-After creating the directory check the permissions:
-```
-stat -c "%a" /etc/yunohost/hooks.d/post_user_create
-```
-
-The directory needs to have `777` permissions. Otherwise the hooks inside the directory won't be executed. If the command above doesn't print `777` modify permissions:
-```
-chmod 777 /etc/yunohost/hooks.d/post_user_create
-```
 
 Next create a bash script inside this directory prefixed by 2 numbers and a dash:
 ```bash
 nano /etc/yunohost/hooks.d/post_user_create/05-add-user-to-samba
+```
+
+By default, the directory must be readable and traversable by root, but if you notice your hook is not run at all by YunoHost, you can check permissions with `ls -l /etc/yunohost/hooks.d/` and apply these commands if needed:
+```
+chown root:root /etc/yunohost/hooks.d/post_user_create
+chmod u+rx /etc/yunohost/hooks.d/post_user_create
 ```
 
 ## How to add a hook in an app package
