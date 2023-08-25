@@ -111,7 +111,7 @@ Réponse moyenne : Par le passé, les apps étaient gérées via des .deb. C’
 <p>Si vous restez persuadé que l’on peut néanmoins bricoler les paquets .deb pour gérer tout cela, voir les réponses précédentes.</p>
 </div>
 
-#### Quance est-ce que *cette fonctionlité* sera ajoutée ? Pourquoi *cette app* n'a pas encore été packagée ? Je n'en reviens pas que vous ne fassiez pas encore *cela* !
+#### Quand est-ce que *cette fonctionnalité* sera ajoutée ? Pourquoi *cette app* n'a pas encore été packagée ? Je n'en reviens pas que vous ne fassiez pas encore *cela* !
 
 Nous ne donnons pas de calendrier.
 
