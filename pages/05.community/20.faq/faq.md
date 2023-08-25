@@ -111,7 +111,7 @@ Medium answer: Apps were packaged in .deb in the past. It was a nightmare. We're
 <p>If you still think it's possible to handle everything by fiddling with .deb packages, see previous answers.</p>
 </div>
 
-#### When will [this feature] be implemented? Why has not [that app] been packaged yet? I cannot believe you do not do [that] yet!
+#### When will *this feature* be implemented? Why *that app* has not been packaged yet? I cannot believe you do not do *that* yet!
 
 We do not give timelines.
 
