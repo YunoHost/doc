@@ -118,3 +118,12 @@ We do not give timelines.
 We are a bunch of volunteers working on our free time to maintain and develop YunoHost. We have no product owner or project manager handling resources, we are not a business. We do what we can, because we love this software, when we can.
 
 If you really want to have a feature implemented or documented, or an app packaged, [consider contributing yourself](/contribute)! We would love helping you get started.
+
+### Why won't you include [feature X] ?
+
+YunoHost is primarily designed for not-so-tech-savvy users and aims to remain relatively simple in terms of UI/UX. At the same time, the project has limited time and energy available to be maintained and developed. Therefore we may lower the priority of features, or refuse entirely the inclusion of features, based on the criteria that they :
+- would only meaningful for advanced / power-users stuff which is out of the scope of the project ;
+- would introduce too much UI/UX bloat ; 
+- would only cover unrealistic thread models ;
+- would be there only to satisfy purists ;
+- or overall would not be worth it in terms of development/maintenance time/energy for what it brings to the project.
