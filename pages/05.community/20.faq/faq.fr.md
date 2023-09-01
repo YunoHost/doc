@@ -82,34 +82,19 @@ Il est décrit dans [ce document](/project_organization) :).
 
 #### Pouvez-vous porter YunoHost sur [ma distro préférée] ?
 
-Réponse courte : non. L’équipe n’a pas l’énergie et ce n’est pas pertinent pour le but recherché par YunoHost.
+Si vous vous préoccupez des guéguerres de distro, ou pensez que « Debian c’est sale », vous n’êtes pas le public de YunoHost.
 
-<a data-toggle="collapse" data-target="#willyouportyunohost" href="#">Réponse longue</a>
-<div id="willyouportyunohost" class="collapse">
-<p>Si vous vous préoccupez des guéguerres de distro, ou pensez que « Debian c’est sale », vous n’êtes pas le public de YunoHost.</p>
+YunoHost vise un public de non-technophiles ou de bidouilleurs qui veulent simplement que le serveur fonctionne sans devoir investir des semaines entières. Debian a probablement des défauts, mais c’est une (la ?) distribution la plus connue et utilisée pour gérer des serveurs. C’est une distribution stable. La plupart des services auto-hébergeables sont compatibles d’une manière ou d’une autre avec Debian. Elle est facilement bidouillable par quelqu’un qui a déjà utilisé la ligne de commande sur son ordinateur personnel. Il n’y a pas de « killer feature » particulière dans les autres distributions qui rendrait pertinent de porter YunoHost dessus.
 
-<p>YunoHost vise un public de non-technophiles ou de bidouilleurs qui veulent simplement que le serveur fonctionne sans devoir investir des semaines entières. Debian a probablement des défauts, mais c’est une (la ?) distribution la plus connue et utilisée pour gérer des serveurs. C’est une distribution stable. La plupart des services auto-hébergeables sont compatibles d’une manière ou d’une autre avec Debian. Elle est facilement bidouillable par quelqu’un qui a déjà utilisé la ligne de commande sur son ordinateur personnel. Il n’y a pas de « killer feature » particulière dans les autres distributions qui rendrait pertinent de porter YunoHost dessus.</p>
-
-<p>Si cela ne vous convient pas, il existe d’autres projets sous d’autres distributions ou avec d’autres philosophies.</p>
-</div>
+Si cela ne vous convient pas, il existe d’autres projets sous d’autres distributions ou avec d’autres philosophies.
 
 #### J’ai regardé comment le packaging des apps fonctionne. Pourquoi réinventez-vous [mon format de paquet préféré] ?
 
-Réponse courte : ce n’est pas ce que nous faisons.
+YunoHost cherche à garder un système de packaging simple. L’idée depuis le départ était que « si tu sais installer l’app à la main, alors tu peux facilement créer un package basique en copiant-collant les étapes, sans besoin de connaissances particulières ».
 
-Réponse moyenne : Par le passé, les apps étaient gérées via des .deb. C’était cauchemardesque. Nous sommes heureux maintenant ;).
+Des personnes ont été tentées de comparer le système de packaging de YunoHost aux `.deb` de Debian. Pourtant, l’objectif des paquets d’application YunoHost est de celui des paquets traditionnels (comme les .deb de Debian) qui remplissent le rôle d’installer des éléments bas-niveau tels que des fichiers, commandes, programmes ou services sur le système. Il est à la charge de l’administrateur de les configurer ensuite proprement, simplement parce qu’il n’existe pas d’environnement standard. Typiquement, les applications web requièrent beaucoup de configuration car elles ont besoin de s’interfacer avec un serveur web et une base de données (et le système de connexion unique / SSO).
 
-<a data-toggle="collapse" data-target="#whyareyoureinventingpackaging" href="#">Longue réponse</a>
-<div id="whyareyoureinventingpackaging" class="collapse">
-
-<p>YunoHost cherche à garder un système de packaging simple. L’idée depuis le départ était que « si tu sais installer l’app à la main, alors tu peux facilement créer un package basique en copiant-collant les étapes, sans besoin de connaissances particulières ». Ce n’est pas le cas des paquets Debian.</p>
-
-<p>Il se trouve que l’objectif des paquets d’application YunoHost est subtilement différent de celui des paquets traditionnels (comme les .deb de Debian) qui remplissent le rôle d’installer des éléments bas-niveau tels que des fichiers, commandes, programmes ou services sur le système. Il est à la charge de l’administrateur de les configurer ensuite proprement, simplement parce qu’il n’existe pas d’environnement standard. Typiquement, les applications web requièrent beaucoup de configuration car elles ont besoin de s’interfacer avec un serveur web et une base de données (et le système de connexion unique / SSO).</p>
-
-<p>YunoHost manipule des abstractions haut-niveau (apps, domaines, utilisateurs…) et définit un environnement standard (NGINX, Postfix, Metronome, SSOwat...) et, grâce à cela, peut gérer la configuration à la place de l’administrateur.</p>
-
-<p>Si vous restez persuadé que l’on peut néanmoins bricoler les paquets .deb pour gérer tout cela, voir les réponses précédentes.</p>
-</div>
+YunoHost manipule des abstractions haut-niveau (apps, domaines, utilisateurs…) et définit un environnement standard (NGINX, Postfix, Metronome, SSOwat...) et, grâce à cela, peut gérer la configuration à la place de l’administrateur.
 
 #### Quand est-ce que *cette fonctionnalité* sera ajoutée ? Pourquoi *cette app* n'a pas encore été packagée ? Je n'en reviens pas que vous ne fassiez pas encore *cela* !
 

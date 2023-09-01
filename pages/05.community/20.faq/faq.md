@@ -81,35 +81,20 @@ It is described in [this document](/project_organization) :).
 
 #### Will you port YunoHost to [insert favorite distro]?
 
-Short answer: No. We don't have the energy for it and this is irrelevant.
+If you care about distrowars, or think 'Debian is dirty', then YunoHost is not for you.
 
-<a data-toggle="collapse" data-target="#willyouportyunohost" href="#">Long answer</a>
-<div id="willyouportyunohost" class="collapse">
-<p>If you care about distrowars, or think 'Debian is dirty', then YunoHost is not for you.</p>
+YunoHost is aimed at non-tech people who just want their server to work. Debian has its flaws, but it's (one of?) the most widely known and used distribution for servers. It's stable. Most self-hosted software are one way or another compatible with Debian. It's easily hackable by anybody who's been doing a bit of CLI on their personal Ubuntu/Mint computer. There is no killer feature in other distributions that makes it relevant for YunoHost to switch or port to it.
 
-<p>YunoHost is aimed at non-tech people who just want their server to work. Debian has its flaws, but it's (one of?) the most widely known and used distribution for servers. It's stable. Most self-hosted software are one way or another compatible with Debian. It's easily hackable by anybody who's been doing a bit of CLI on their personal Ubuntu/Mint computer. There is no killer feature in other distributions that makes it relevant for YunoHost to switch or port to it.</p>
-
-<p>If this does not convince you, there are other projects running on other distributions or with different philosophies.</p>
-</div>
+If this does not convince you, there are other projects running on other distributions or with different philosophies.
 
 
 #### I checked how apps packaging work. Why are you reinventing [insert favorite package format]?
 
-Short answer: We are not.
+YunoHost aims to make packaging easy. The idea from the beginning was to keep it as simple as « if you can install the app manually, then you can easily copy/paste steps into a basic install/remove package with no particular training ».
 
-Medium answer: Apps were packaged in .deb in the past. It was a nightmare. We're happy now ;).
+People have been tempted to compare YunoHost packages to traditional package managers (such as Debian's `.deb`), which hold a different purpose. Traditional package managers are meant to install low-level purpose of installing files, commands, programs and services on the system. It is often your duty to configure them properly, simply because there is no standard server setup. Typically, web apps requires a lot of configuration because they rely on a web server and a database (and the single sign-on).
 
-<a data-toggle="collapse" data-target="#whyareyoureinventingpackaging" href="#">Long answer</a>
-<div id="whyareyoureinventingpackaging" class="collapse">
-
-<p>YunoHost aims to make packaging easy. The idea from the beginning was to keep it as simple as « if you can install the app manually, then you can easily copy/paste steps into a basic install/remove package with no particular training ». This is not the case with Debian packages.</p>
-
-<p>Turns out, YunoHost apps packaging holds a subtly different purpose than traditional packaging like .deb. Debian packages fulfill the low-level purpose of installing files, commands, programs and services on the system. It is often your duty to configure them properly, simply because there is no standard server setup. Typically, web apps requires a lot of configuration because they rely on a web server and a database (and the single sign-on).</p>
-
-<p>YunoHost manipulates high-level abstractions (apps, domains, users...) and defines a standard setup (NGINX, Postfix, Metronome, SSOwat...) and, because of this, can handle the configuration for the user.</p>
-
-<p>If you still think it's possible to handle everything by fiddling with .deb packages, see previous answers.</p>
-</div>
+YunoHost manipulates high-level abstractions (apps, domains, users...) and defines a standard setup (NGINX, Postfix, Metronome, SSOwat...) and, because of this, can handle the configuration for the user.
 
 #### When will *this feature* be implemented? Why *that app* has not been packaged yet? I cannot believe you do not do *that* yet!
 
