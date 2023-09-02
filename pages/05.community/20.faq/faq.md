@@ -134,3 +134,5 @@ While we believe free software principles are an essential footstep towards [Yun
 The project therefore allows the inclusion inside the official app catalog, ***on a case-by-case basis***, of apps which does not qualify as "free software", yet considered to be ethical and worthy of interest for [YunoHost's goal](#what-s-yunohost-goal). Such apps are tagged in the catalog, such that an explicit message displayed before their installation.
 
 If you notice an app is missing such a tag/disclaimer, feel free to open a discussion or pull requet on [the app catalog](https://github.com/YunoHost/apps/).
+
+If you run YunoHost for your business, you are responsible for doing your due diligence by checking the licenses of the software you want to install on your server.
