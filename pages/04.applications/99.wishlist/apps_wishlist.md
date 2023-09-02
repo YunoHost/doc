@@ -98,7 +98,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Firefly-III Data Importer](https://docs.firefly-iii.org/data-importer) | Import data from banks to Firefly | [Upstream](https://github.com/firefly-iii/data-importer) | [Draft Package](https://github.com/marcoil/firefly-iii-di_ynh) |
 | [Filestash](https://www.filestash.app/) |  | [Upstream](https://github.com/mickael-kerjean/filestash) |  |
 | [fishnet](https://lichess.org/get-fishnet) | Distributed Stockfish analysis for lichess.org | [Upstream](https://github.com/niklasf/fishnet) |  |
-| FitTrackee |  | [Upstream](https://github.com/SamR1/FitTrackee) |  |
 | FlareSolverr | Proxy server to bypass Cloudflare protection | [Upstream](https://github.com/FlareSolverr/FlareSolverr) | |
 | Flask | Skeleton for flask apps |  | [Package Draft](https://github.com/YunoHost-Apps/flask_ynh) |
 | [foodsoft](https://foodcoops.github.io/foodsoft-hosting/) | Manage a non-profit food cooperative |  | [Package Draft](https://github.com/YunoHost-Apps/foodsoft_ynh) |
@@ -139,10 +138,12 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [HistoPad](https://github.com/24eme/histopad) | Web application for logging pads (etherpad) and archiving them in a git repository. | [Upstream](https://github.com/24eme/histopad) |  |
 | Hometown | A Mastodon fork with local-only posting, support for more content types, and other features and tweaks. | [Upstream](https://github.com/hometown-fork/hometown) |  |
 | [htpc-manager](https://htpc.io) | Manage your HTPC from anywhere |  | [Package Draft](https://github.com/scith/htpc-manager_ynh) |
+| [hyperion](https://docs.hyperion-project.org/) | Ambient lightning software | [Upstream](https://github.com/hyperion-project/hyperion.ng) |  |
 | [Hypothes.is](https://hypothes.is) | Web Annotation server (and client) to crate and share highlights and notes | [Hypothes.is server](https://github.com/hypothesis/h) | |
 | [Icecast 2](https://www.icecast.org) |  | [Upstream](https://gitlab.xiph.org/xiph/icecast-server/) |  |
 | [ikiwiki](https://ikiwiki.info) |  |  |  |
 | [InfCloud](https://inf-it.com/open-source/clients/infcloud/) | A contacts, calendar and tasks web client for CalDAV and CardDAV | [Upstream](https://inf-it.com/open-source/download/InfCloud_0.13.1.zip) | |
+| [Inginious](https://inginious.org) | Secure and automated exercises assessment platform using your own tests, also providing a pluggable interface with your existing LMS. | [Upstream](https://github.com/UCL-INGI/INGInious) ||
 | [Inventaire](https://inventaire.io) | a libre collaborative resource mapper powered by open-knowledge, starting with books! 📚 | [Upstream](https://github.com/inventaire/inventaire) |  |
 | [InvoicePlane](https://invoiceplane.com) |  | [Upstream](https://github.com/InvoicePlane/InvoicePlane) |  |
 | [IPFS](https://ipfs.io) |  | [Upstream](https://github.com/ipfs/ipfs) | [Package Draft](https://github.com/YunoHost-Apps/ipfs_ynh) |
@@ -256,6 +257,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Raspap](https://raspap.com/) | | [Upstream](https://github.com/RaspAP/raspap-webgui) | |
 | Redash | Connect to any data source, easily visualize, dashboard and share your data. | [Upstream](https://github.com/getredash/redash) | |
 | remoteStorage | A remoteStorage server implementation written in PHP | [Upstream](https://github.com/fkooman/php-remote-storage) | [Package Draft](https://github.com/YunoHost-Apps/RemoteStorage_ynh) |
+| [Renovate](https://www.mend.io/renovate/) | Bot for automating dependency updates on Gitlab / Gitea / Forgejo | [Upstream](https://github.com/renovatebot/renovate)
 | [Request Tracker](https://bestpractical.com) |  | [Upstream](https://github.com/bestpractical/rt) |  |
 | [Restya](https://restya.com) |  | [Upstream](https://github.com/RestyaPlatform/board/) |  |
 | [Retroshare](https://retroshare.cc/) |  | [Upstream](https://github.com/RetroShare/RetroShare) |  |

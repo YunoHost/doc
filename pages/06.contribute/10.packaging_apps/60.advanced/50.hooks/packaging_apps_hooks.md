@@ -12,16 +12,23 @@ YunoHost includes a hook mechanism triggered on a lot of operation changing the 
 The most obvious case is adding a user. If you had a `post_user_create` hook, this hook will be triggered as soon as a user is added.
 
 ## How to add a custom hook on a specific instance
-!!! Bellow we imagine we want to run a command after each user creation to add the user to samba user.
+!!! Below we imagine we want to run a command after each user creation to add the user to samba user.
 
 You should create a directory with the name of the hooks into `/etc/yunohost/hooks.d/`:
 ```
 mkdir -p /etc/yunohost/hooks.d/post_user_create
 ```
 
+
 Next create a bash script inside this directory prefixed by 2 numbers and a dash:
 ```bash
 nano /etc/yunohost/hooks.d/post_user_create/05-add-user-to-samba
+```
+
+By default, the directory must be readable and traversable by root, but if you notice your hook is not run at all by YunoHost, you can check permissions with `ls -l /etc/yunohost/hooks.d/` and apply these commands if needed:
+```
+chown root:root /etc/yunohost/hooks.d/post_user_create
+chmod u+rx /etc/yunohost/hooks.d/post_user_create
 ```
 
 ## How to add a hook in an app package
@@ -40,7 +47,7 @@ In the hooks dir, create a bash script called with the type of hook you want to 
 #### post_user_create
 [details summary="<i>Triggered after user creation</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run at the end of the command `yunohost user create` or equivalent action in webadmin.
+This hook is run at the end of the command `yunohost user create` or equivalent action in webadmin.
 
 ##### Environment variables
 
@@ -80,7 +87,7 @@ echo $message | mail -s "Welcome on $domain !" $YNH_USER_MAIL
 #### post_user_delete
 [details summary="<i>Triggered at the end of user deletion</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run at the end of the command `yunohost user delete` or equivalent action in webadmin.
+This hook is run at the end of the command `yunohost user delete` or equivalent action in webadmin.
 
 ##### No environment variables
 
@@ -104,7 +111,7 @@ This hooks is run at the end of the command `yunohost user delete` or equivalent
 ### post_user_update
 [details summary="<i>Triggered at the end of the user update</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run at the end of the command `yunohost user update` or equivalent action in webadmin.
+This hook is run at the end of the command `yunohost user update` or equivalent action in webadmin.
 
 ##### Environment variables
 
@@ -143,7 +150,7 @@ echo $message | mail -s "Your password has been changed on $domain !" $YNH_USER_
 ### post_app_addaccess
 [details summary="<i>Triggered after adding a permission to users or groups </i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run at the end of the command `yunohost user permission add` or equivalent action in webadmin.
+This hook is run at the end of the command `yunohost user permission add` or equivalent action in webadmin.
 
 ##### No environment variables
 
@@ -164,7 +171,7 @@ This hooks is run at the end of the command `yunohost user permission add` or eq
 ### post_app_removeaccess
 [details summary="<i>Triggered after removing a pemission to users or groups</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run at the end of the command `yunohost user permission remove` or equivalent action in webadmin.
+This hook is run at the end of the command `yunohost user permission remove` or equivalent action in webadmin.
 
 ##### No environment variables
 
@@ -190,7 +197,7 @@ This hooks is run at the end of the command `yunohost user permission remove` or
 ### post_domain_add
 [details summary="<i>Triggered at the end of the domain add operation</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run at the end of the command `yunohost domain add` or equivalent action in webadmin.
+This hook is run at the end of the command `yunohost domain add` or equivalent action in webadmin.
 
 ##### No environment variable
 
@@ -214,7 +221,7 @@ This hooks is run at the end of the command `yunohost domain add` or equivalent 
 ### post_domain_remove
 [details summary="<i>Triggered after removing the domain</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run at the end of the command `yunohost domain remove` or equivalent action in webadmin.
+This hook is run at the end of the command `yunohost domain remove` or equivalent action in webadmin.
 
 ##### No environment variable
 
@@ -233,7 +240,7 @@ This hooks is run at the end of the command `yunohost domain remove` or equivale
 ### post_cert_update
 [details summary="<i>Triggered after Let's encrypt certificate update</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run at the end of the command `yunohost domain cert update` or equivalent action in webadmin.
+This hook is run at the end of the command `yunohost domain cert update` or equivalent action in webadmin.
 
 ##### No environment variable
 
@@ -258,9 +265,9 @@ systemctl restart gemserv
 ### custom_dns_rules
 [details summary="<i>Customized your DNS rules for your domains</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run at the end of the command `yunohost domain dns suggest` or equivalent action in webadmin.
+This hook is run at the end of the command `yunohost domain dns suggest` or equivalent action in webadmin.
 
-Thanks to this hooks you can customize 
+Thanks to This hook you can customize 
 
 ##### No environment variable
 
@@ -309,7 +316,7 @@ fi
 ### post_app_change_url
 [details summary="<i>Triggered after an app has changed of URL</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run at the end of the command `yunohost app change-url` or equivalent action in webadmin.
+This hook is run at the end of the command `yunohost app change-url` or equivalent action in webadmin.
 
 ##### Environment variables
 
@@ -328,7 +335,7 @@ This hooks is run at the end of the command `yunohost app change-url` or equival
 ### post_app_upgrade
 [details summary="<i>Triggered on app upgrade</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run at the end of the command `yunohost app upgrade` or equivalent action in webadmin.
+This hook is run at the end of the command `yunohost app upgrade` or equivalent action in webadmin.
 
 ##### Environment variables
 
@@ -366,7 +373,7 @@ fi
 ### post_app_install
 [details summary="<i>Triggered at the end of an app installation</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run at the end of the command `yunohost app install` or equivalent action in webadmin.
+This hook is run at the end of the command `yunohost app install` or equivalent action in webadmin.
 
 ##### Environment variables
 
@@ -388,7 +395,7 @@ This hooks is run at the end of the command `yunohost app install` or equivalent
 ### post_app_remove
 [details summary="<i>Triggered after removing an app</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run at the end of the command `yunohost app remove` or equivalent action in webadmin.
+This hook is run at the end of the command `yunohost app remove` or equivalent action in webadmin.
 
 ##### Environment variables
 
@@ -410,7 +417,7 @@ This hooks is run at the end of the command `yunohost app remove` or equivalent 
 ### backup
 [details summary="<i>Add some files to backup</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run at the end of the command `yunohost backup create` or equivalent action in webadmin.
+This hook is run at the end of the command `yunohost backup create` or equivalent action in webadmin.
 
 ##### Environment variables
 
@@ -455,7 +462,7 @@ ynh_backup "/etc/yunohost/hooks.d/restore/99-conf_custom"
 ### restore
 [details summary="<i>Restore some files</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run at the end of the command `yunohost backup restore` or equivalent action in webadmin.
+This hook is run at the end of the command `yunohost backup restore` or equivalent action in webadmin.
 
 ##### Environment variables
 
@@ -500,7 +507,7 @@ ynh_restore_file "/etc/yunohost/hooks.d/restore/99-conf_custom"
 ### backup_method
 [details summary="<i>Define a new way to backup and restore files</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run during the command `yunohost backup create` or equivalent action in webadmin.
+This hook is run during the command `yunohost backup create` or equivalent action in webadmin.
 
 This hook is called several times with different action keywords.
 
@@ -564,7 +571,7 @@ exit 0
 ### post_iptable_rules
 [details summary="<i>Triggered after reloaded the firewall rules</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run at the end of the command `yunohost firewall reload` or equivalent action in webadmin.
+This hook is run at the end of the command `yunohost firewall reload` or equivalent action in webadmin.
 
 ##### No environment variables
 
@@ -589,7 +596,7 @@ iptables -A OUTPUT -p tcp --dport 25 -m tcp -j REJECT --reject-with icmp-port-un
 ### conf_regen
 [details summary="<i>Change configuration suggested as default config in regen-conf mechanism</i>" class="helper-card-subtitle text-muted"]
 
-This hooks is run during the command `yunohost tools regen-conf` or equivalent action in webadmin.
+This hook is run during the command `yunohost tools regen-conf` or equivalent action in webadmin.
 
 This hook is called several times with different actions keywords (pre and post operations).
 

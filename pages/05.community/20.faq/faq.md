@@ -110,3 +110,11 @@ Medium answer: Apps were packaged in .deb in the past. It was a nightmare. We're
 
 <p>If you still think it's possible to handle everything by fiddling with .deb packages, see previous answers.</p>
 </div>
+
+#### When will *this feature* be implemented? Why *that app* has not been packaged yet? I cannot believe you do not do *that* yet!
+
+We do not give timelines.
+
+We are a bunch of volunteers working on our free time to maintain and develop YunoHost. We have no product owner or project manager handling resources, we are not a business. We do what we can, because we love this software, when we can.
+
+If you really want to have a feature implemented or documented, or an app packaged, [consider contributing yourself](/contribute)! We would love helping you get started.

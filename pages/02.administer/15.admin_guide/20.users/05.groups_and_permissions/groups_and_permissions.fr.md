@@ -87,10 +87,10 @@ Pour supprimer un utilisateur, cliquez sur la croix à côté de son nom d'utili
 En ligne de commande, utilisez la commande suivante pour ajouter `charlie` et `delphine` au groupe `yolo_crew` :
 
 ```shell
-$ yunohost user group update yolo_crew --add charlie delphine
+$ yunohost user group add yolo_crew charlie delphine
 ```
 
-(De même, `--remove` peut être utilisé pour retirer des membres d'un groupe.)
+(De même, `remove` peut être utilisé pour retirer des membres d'un groupe.)
 
 Dans la liste des groupes, nous devrions voir :
 

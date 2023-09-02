@@ -22,7 +22,7 @@ routes:
 
 ## Useful links
 
-+ Website: [homeassistant.eu (en)](https://homeassistant.eu/site/)
++ Website: [home-assistant.io (en)](https://www.home-assistant.io/)
 + Demonstration: [Demo](https://demo.home-assistant.io/#/lovelace/0)
 + Application software repository: [github.com - YunoHost-Apps/homeassistant](https://github.com/YunoHost-Apps/homeassistant_ynh)
 + Fix a bug or an improvement by creating a ticket (issue): [github.com - YunoHost-Apps/homeassistant/issues](https://github.com/YunoHost-Apps/homeassistant_ynh/issues)
