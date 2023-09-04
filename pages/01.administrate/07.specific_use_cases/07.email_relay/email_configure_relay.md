@@ -43,6 +43,8 @@ In order to setup your YunoHost to use your SMTP relay, you will have to configu
 2. Your SMTP relay username (for this tutorial we will use `username`)
 3. Your SMTP relay password (for this tutorial we will use `password`) Note: To be saved: use a ASCII only password.
 
+! [fa=exclamation-triangle /] To be saved: use a password without `#` char (it's possible other chars are forbidden, don't hesitate to report it to update this doc).
+
 Your SMTP relay will obviously provide you with these three things, that should be available in your control panel or whatsoever.
 
 You can log into your YunoHost server using SSH:
