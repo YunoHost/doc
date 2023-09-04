@@ -53,6 +53,8 @@ Now set all options requests :
 - **SMTP relay port** : Port use with the distant server.
 - **SMTP relay user** : Login or identification mail server.
 - **SMTP relay password** : Your SMTP relay password.
+- 
+! [fa=exclamation-triangle /] Password with `#` char won't works properly due to postfix limitation (it's possible other chars are forbidden, don't hesitate to report it to update this doc).
 
 ![Option-Relais-Smtp](image://relay_smtp_option_webadmin_en.png?resize=800)
 
@@ -63,6 +65,8 @@ In order to setup your YunoHost to use your SMTP relay, you will have to configu
 2. The port on which you access the relay (for this tutorial we will use port 2525 below)
 3. Your SMTP relay username (for this tutorial we will use `username`)
 4. Your SMTP relay password (for this tutorial we will use `password`)
+
+! [fa=exclamation-triangle /] Password with `#` char won't works properly due to postfix limitation (it's possible other chars are forbidden, don't hesitate to report it to update this doc).
 
 Your SMTP relay will obviously provide you with these four things, that should be available in your control panel or whatsoever.
 
