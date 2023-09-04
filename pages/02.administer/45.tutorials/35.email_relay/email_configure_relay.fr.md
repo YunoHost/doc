@@ -50,6 +50,8 @@ Il suffit d'activer l'option, et de renseigner les champs nécessaires :
 - **Utilisateur du relais SMTP** : Login ou mail d'identification pour le serveur.
 - **Mot de passe du relais SMTP** : Tout simplement le mot de passe.
 
+! [fa=exclamation-triangle /] Les mots de passe avec le caractère `#` ne fonctionneront pas proprement à cause d'une limitation de postfix (d'autres caractères sont peut-être interdit, n'hésitez pas à rapporter ce genre de cas pour la mise à jour de cette doc).
+
 ![Option-Relais-Smtp](image://relay_smtp_option_webadmin_en.png?resize=800)
 
 [/ui-tab] 
@@ -59,6 +61,8 @@ Pour que YunoHost soit capable d'utiliser le relais, il faut paramétrer 4 chose
 2.  Le port sur lequel on accède au relais (on utilisera le port 2525 ci-dessous) 
 3. Votre nom d'utilisateur SMTP (on utilisera `username`).
 4. Votre mot de passe SMTP (on utilisera `password`).
+
+! [fa=exclamation-triangle /] Les mots de passe avec le caractère `#` ne fonctionneront pas proprement à cause d'une limitation de postfix (d'autres caractères sont peut-être interdit, n'hésitez pas à rapporter ce genre de cas pour la mise à jour de cette doc).
 
 Le fournisseur SMTP vous fournit ces trois informations.
 
