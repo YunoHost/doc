@@ -67,7 +67,7 @@ For performance reasons, questions short keys have to be unique in all the `conf
 ```
 In which two questions have "real variable name" `is server_ip` and therefore conflict with each other.
 
-! Some short key are forbidden cause it can interfer with config scripts (`old`, `file_hash`, `types`, `binds`, `formats`, `changed`) and you probably should avoid to use common settings name to avoid to bind your question to this settings (e.g. `id`, `install_time`, `mysql_pwd`, `path`, `domain`, `port`, `db_name`, `current_revision`, `admin`)
+! Some short keys are forbidden cause it can interfer with config scripts (`old`, `file_hash`, `types`, `binds`, `formats`, `changed`) and you probably should avoid to use common settings name to avoid to bind your question to this settings (e.g. `id`, `install_time`, `mysql_pwd`, `path`, `domain`, `port`, `db_name`, `current_revision`, `admin`)
 
 ### Supported questions types and properties
 
