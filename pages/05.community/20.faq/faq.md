@@ -121,9 +121,9 @@ If you really want to have a feature implemented or documented, or an app packag
 
 ### Why won't you include [feature X] ?
 
-YunoHost is primarily designed for not-so-tech-savvy users and aims to remain relatively simple in terms of UI/UX. At the same time, the project has limited time and energy available to be maintained and developed. Therefore we may lower the priority of features, or refuse entirely the inclusion of features, based on the criteria that they :
-- would only meaningful for advanced / power-users stuff which is out of the scope of the project ;
+YunoHost is primarily designed for not-so-tech-savvy users and aims to remain relatively simple in terms of UI/UX. At the same time, the project has limited time and energy available to be maintained and developed. Therefore we may lower the priority of features, or refuse entirely the inclusion of features, based on the criteria that they:
+- would only be meaningful for advanced / power-users stuff which is out of the scope of the project ;
 - would introduce too much UI/UX bloat ; 
-- would only cover unrealistic thread models ;
+- would only cover unrealistic threat models ;
 - would be there only to satisfy purists ;
 - or overall would not be worth it in terms of development/maintenance time/energy for what it brings to the project.
