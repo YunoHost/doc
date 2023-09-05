@@ -49,9 +49,9 @@ The [SSO](https://github.com/Kloadut/SSOwat/) (single sign-on) cannot properly a
 
 #### What's YunoHost's business model?
 
-YunoHost is maintained by volunteers working on their free time. The project regularly receives donations which pay the servers' bills and stickers. The project received (or continues to receive) grants from organization like [NLnet](https://nlnet.nl/) or [CodeLutin](https://www.codelutin.com/) to fund specific developments
+YunoHost is maintained by volunteers working on their free time. The project regularly receives donations which pay for the servers' bills and stickers. The project received (or continues to receive) grants from organization like [NLnet](https://nlnet.nl/) or [CodeLutin](https://www.codelutin.com/) to fund specific developments
 
-Donations to the projets are increasing, and we are in the process of defining the way we redistribute this money to main contributors and therefore help make the project sustainable. Additionally, some contributors do have professional activities based (at least partially) on YunoHost.
+Donations to the project are increasing, and we are in the process of defining the way we redistribute this money to main contributors and therefore help make the project sustainable. Additionally, some contributors do have professional activities based (at least partially) on YunoHost.
 
 #### Can I donate to the project?
 
