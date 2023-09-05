@@ -69,6 +69,7 @@ Parmi les fichiers contenus dans un paquet, les plus importants sont les suivant
 - le **manifeste de l'application** `manifest.toml` <small>(ou `.json` dans le passé)</small>
     - Il peut être considéré comme la carte d'identité de l'application, contenant diverses métadonnées. 
     - Il contient également les questions posées lors de l'installation de l'application.
+    - ainsi qu'un ensemble de "ressource" à initialiser, telles que les sources de l'app à télécharger ou les dépendances apt à installer
 - **scripts/** contient un ensemble de scripts bash correspondant aux actions exposées dans YunoHost
    - `_common.sh`: common variables or custom functions included in other scripts
     - `install`/`remove` : la procédure d'installation et de suppression
@@ -76,7 +77,6 @@ Parmi les fichiers contenus dans un paquet, les plus importants sont les suivant
    - `backup`/`restore` : les procédures de sauvegarde/restauration 
    - (`change_url`) : changer l'endroit où l'application est installée en termes de son url d'accès web
 - **conf/** contient un ensemble de modèles de configuration utilisés lors de l'installation de l'application. Voici quelques exemples de fichiers couramment trouvés :
-    - `app.src` : contient l'URL et la somme de contrôle pour télécharger les sources de l'application
    - `nginx.conf` : le modèle de configuration de NGINX (=serveur web) pour cette application
    - `systemd.service` : le modèle de configuration du service systemd pour cette application
    - `config.json/yaml/???` : le modèle de configuration de l'application
@@ -108,6 +108,8 @@ Grosso modo, l'installation proprement dite se compose généralement des opéra
 ## 5. Créer votre tout premier paquet YunoHost
 
 A moins que vous ne souhaitiez vraiment partir de zéro ou de [`example_ynh`] (https://github.com/YunoHost/example_ynh), une pratique courante consiste à identifier une application similaire à celle que vous essayez d'empaqueter - typiquement parce qu'elle repose sur les mêmes technologies - à cloner le dépôt de code correspondant, et à adapter les différents fichiers.
+
+TODO/FIXME : here we should list a bunch of well-knowh apps for classic technologies
 
 - Applications PHP :
 - Applications NodeJS :

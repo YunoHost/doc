@@ -130,21 +130,19 @@ location __PATH__/ {
 
 ## App sources
 
-App scripts will often need to download the upsteam app sources to be deployed in the install dir, via `ynh_setup_source`.
+App sources were historically defined in `conf/app.src` files containing the URL + checksum of assets to download.
 
-The `ynh_setup_source` is coupled to another conf file, usually `conf/app.src` which describes where to download the sources, how to check integrity, and how to extract the source.
+This is now integrated in `manifest.toml` using the `sources` resource, which pre-download the assets prior to entering the install or upgrade scripts. The sources can then be effectively deployed using `ynh_setup_source`.
 
-For example, this is an `app.src` for wordpress:
+For example, for YesWiki, the sources are defined in `manifest.toml` using:
 
-```text
-SOURCE_URL=https://downloads.wordpress.org/release/wordpress-6.1.1.zip  # The url of the sources
-SOURCE_SUM=088280b34aebc7331693e729d8e6b05eb8b9998c....                 # The sha256 checksum
-SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=zip                                                       # The format is zip
-SOURCE_IN_SUBDIR=true                                                   # This is wether or not the sources are directly in the install root
-SOURCE_EXTRACT=true                                                     # (yes, we want to extract the zip)
+```toml
+[resources.sources.main]
+url = "https://github.com/YesWiki/yeswiki/archive/refs/tags/v4.4.0.tar.gz"
+sha256 = "5ceb12d225c20de2ba3cb4ce483348ed1a8ad5b1789d4f4f8f89dc4871524007"
 ```
 
+More infos on the `source` resource in [the resource system documentation](/packaging_apps_resources).
 
 ## Common operations (TODO/FIXME)
 
