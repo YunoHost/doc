@@ -371,7 +371,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Zoneminder |  | [Upstream](https://github.com/ZoneMinder/zoneminder) |  |
 | [Zulip](https://zulipchat.com/) |  | [Upstream](https://github.com/zulip/zulip) |  |
 | Zusam | A truly private space for you and your friends | [Upstream](https://github.com/zusam/zusam) | [Package Draft](https://github.com/zusam/zusam_ynh) |
-| [XBackBone](https://xbackbone.app) | XBackBone is a simple and lightweight PHP file manager that support the instant sharing tool ShareX and NIX systems. | [Upstream](https://github.com/SergiX44/XBackBone) | |
 
 
 ### Other references listing self-hosted applications
