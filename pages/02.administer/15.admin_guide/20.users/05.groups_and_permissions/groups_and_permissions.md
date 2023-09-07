@@ -90,10 +90,10 @@ To remove a user, click on the cross next to their username, in the group panel.
 In CLI, use the following command to add `charlie` and `delphine`to the `yolo_crew` group:
 
 ```shell
-$ yunohost user group update yolo_crew --add charlie delphine
+$ yunohost user group add yolo_crew charlie delphine
 ```
 
-(similarly, `--remove` can be used to remove members from a group)
+(similarly, `remove` can be used to remove members from a group)
 
 Now in the group list we should see:
 
