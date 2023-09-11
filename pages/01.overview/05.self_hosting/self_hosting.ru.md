@@ -1,5 +1,5 @@
 ---
-title: Self-hosting
+title: Самостоятельная развёртка
 template: docs
 taxonomy:
     category: docs

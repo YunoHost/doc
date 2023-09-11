@@ -1,5 +1,5 @@
 ---
-title: DNS zone configuration
+title: Конфигурация зоны DNS
 template: docs
 taxonomy:
     category: docs

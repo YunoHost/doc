@@ -1,5 +1,5 @@
 
-title: Выберите метод selfhosting и провайдера
+title: Выберите метод самостоятельной развёртки и провайдера
 template: docs
 taxonomy:
     category: docs

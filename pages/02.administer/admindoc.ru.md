@@ -1,5 +1,5 @@
 ---
-title: Гайд для администраторов
+title: Руководство для администраторов
 template: chapter
 taxonomy:
     category: docs
