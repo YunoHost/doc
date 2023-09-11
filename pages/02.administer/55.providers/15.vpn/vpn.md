@@ -24,8 +24,7 @@ Below, you can find a list of providers compatible for self-hosting and especial
 
 ------------------
 
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="English speaking-site"]
+## English speaking-site
 
 | VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |
 | ------------ | ----------------------- | ---- | --------- | --------- | ----- | -------------- |
@@ -37,8 +36,8 @@ Below, you can find a list of providers compatible for self-hosting and especial
 !!! * [Trust zone](https://trust.zone/fr/order?p=25)
 !!! * [PureVPN](https://www.purevpn.fr/ip-vpn-dedie)
 !!! * [RapidVPN](https://www.rapidvpn.com/vpn)
-[/ui-tab]
-[ui-tab title="French speaking-site"]
+
+## French speaking-site
 
 | Fournisseurs | Compatibilité [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) | IPv6 | rDNS IPv4 | rDNS IPv6 | Prix | Adhésion | Neutralité du net |
 | ------------ | ----------------------- | ---- | --------- | --------- | ----- | -------------- |
@@ -62,14 +61,11 @@ Below, you can find a list of providers compatible for self-hosting and especial
 
 ¹ Prix libre
 
-[/ui-tab]
-[ui-tab title="German speaking-site"]
+## German speaking-site
+
 | VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |
 | ------------ | ----------------------- | ---- | --------- | --------- | ----- | -------------- |
 | [In-Berlin](https://in-vpn.de/provider/vpn.html)    | ✔ (manuelle)               | ✔    | ✔         | ✔         | 9 or 14€ / month | 20€ / an | <span class="label label-success label-as-badge">Non Profit</span> |
-
-[/ui-tab]
-[/ui-tabs]
 
 <style>
 .ffdn {
