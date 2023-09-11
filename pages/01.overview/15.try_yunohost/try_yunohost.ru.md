@@ -11,7 +11,7 @@ routes:
 
 [center]
 [columns]
-[[fa=user /] User interface](https://demo.yunohost.org/?target=_blank&classes=btn,btn-lg,btn-success)  
+[[fa=user /] Пользовательский интерфейс](https://demo.yunohost.org/?target=_blank&classes=btn,btn-lg,btn-success)  
 Логин: demo  
 Пароль: demo
 
