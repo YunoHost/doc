@@ -1,5 +1,5 @@
 
-title: Choose your selfhosting method and providers
+title: Выберите метод selfhosting и провайдера
 template: docs
 taxonomy:
     category: docs
@@ -60,30 +60,30 @@ VPN - это зашифрованный туннель между двумя к�
       </tr>
       <tr>
         <td style="text-align:center;">Ручное управление<br>портами необходимо</td>
-        <td style="text-align:center;" class="warning">Yes</td>
-        <td style="text-align:center;" class="success">No</td>
-        <td style="text-align:center;" class="success">No</td>
+        <td style="text-align:center;" class="warning">Да</td>
+        <td style="text-align:center;" class="success">Нет</td>
+        <td style="text-align:center;" class="success">Нет</td>
       </tr>
       <tr>
-        <td style="text-align:center;">Possible ISP limitations</td>
-        <td style="text-align:center;" class="danger">Yes <br><small>(see <a href="/isp">here</a>)</small></td>
-        <td style="text-align:center;" class="success">Bypassed by VPN</td>
-        <td style="text-align:center;" class="success">Typically no</td>
+        <td style="text-align:center;">Возможные ограничения провайдера</td>
+        <td style="text-align:center;" class="danger">Да <br><small>(подробнее <a href="/isp">здесь</a>)</small></td>
+        <td style="text-align:center;" class="success">Обходится с помощью VPN</td>
+        <td style="text-align:center;" class="success">Обычно нет</td>
       </tr>
       <tr>
         <td style="text-align:center;">ЦП</td>
-        <td style="text-align:center;" class="warning" colspan="2">Typically ~1 GHz</td>
-        <td style="text-align:center;" class="success">~2 GHz <br><small>(Digital Ocean droplet)</small></td>
+        <td style="text-align:center;" class="warning" colspan="2">Около ~1 GHz</td>
+        <td style="text-align:center;" class="success">~2 GHz <br><small>(Сервер от Digital Ocean)</small></td>
       </tr>
       <tr>
         <td style="text-align:center;">ОЗУ</td>
-        <td style="text-align:center;" class="warning" colspan="2">Typically 500 Mb or 1 Gb</td>
+        <td style="text-align:center;" class="warning" colspan="2">Обычно 500 Мб или 1 Гб</td>
         <td style="text-align:center;" class="warning">Related to server cost</td>
       </tr>
       <tr>
-        <td style="text-align:center;">Internet connectivity</td>
-        <td style="text-align:center;" class="warning" colspan="2">Depends on home connectivity</td>
-        <td style="text-align:center;" class="success">Typically pretty good</td>
+        <td style="text-align:center;">Интернет соединенре</td>
+        <td style="text-align:center;" class="warning" colspan="2">Зависит от домашнего подключения</td>
+        <td style="text-align:center;" class="success">Обычно достаточно хррошее</td>
       </tr>
     </tbody>
 </table>
