@@ -2286,7 +2286,7 @@ Requires YunoHost version 2.6.4 or higher.
 **Arguments**:
 - `-d`, `--dest_dir=`: Directory where to setup sources
 - `-s`, `--source_id=`: Name of the source, defaults to `main` (when the sources resource exists in manifest.toml) or (legacy) `app` otherwise
-- `-k`, `--keep=`: Space-separated list of files/folders that will be backup/restored in $dest_dir, such as a config file you don't want to overwrite. For example 'conf.json secrets.json logs/'
+- `-k`, `--keep=`: Space-separated list of files/folders that will be backup/restored in $dest_dir, such as a config file you don't want to overwrite. For example 'conf.json secrets.json logs' (no trailing `/` for folders)
 - `-r`, `--full_replace=`: Remove previous sources before installing new sources
 
 **Details**:<br/>
