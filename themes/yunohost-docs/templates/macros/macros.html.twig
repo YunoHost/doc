@@ -1,0 +1,35 @@
+{% macro loop(page, parent_loop) %}
+  {% import _self as macros %}
+  {% if parent_loop|length > 0 %}
+    {% set data_level = parent_loop %}
+  {% else %}
+    {% set data_level = 0 %}
+  {% endif %}
+  {% for p in page.children.visible %}
+    {% set parent_page = p.activeChild ? ' parent' : '' %}
+    {% set current_page = p.active ? ' active' : '' %}
+    <li class="dd-item{{ parent_page }}{{ current_page }}" data-nav-id="{{ p.route }}">
+      <a href="{{ p.url }}" {% if p.header.class %}class="{{ p.header.class }}"{% endif %}>
+        <i class="fa fa-check-square read-icon"></i>
+        <span><b>{% if data_level == 0 %}{{ loop.index }}. {% endif %}</b>{{ p.menu }}</span>
+      </a>
+      {% if p.children.count > 0 %}
+        <ul>
+          {{ macros.loop(p, parent_loop|default(0)+loop.index) }}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+{% endmacro %}
+
+{% macro version(p) %}
+  {% set parent_page = p.activeChild ? ' parent' : '' %}
+  {% set current_page = p.active ? ' active' : '' %}
+  <h5 class="{{ parent_page }}{{ current_page }}">
+    {% if p.activeChild or p.active %}
+      <a href="{{ p.url }}"><i class="fa fa-chevron-down fa-fw"></i>{{ p.menu }}</a>
+    {% else %}
+      <a href="{{ p.url }}"><i class="fa fa-plus fa-fw"></i>{{ p.menu }}</a>
+    {% endif %}
+  </h5>
+{% endmacro %}
