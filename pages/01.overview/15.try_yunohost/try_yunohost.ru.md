@@ -7,18 +7,18 @@ routes:
   default: '/try'
 ---
 
-! This demo server could be down from time to time, but at least you can test and that's really cool :)
+! ThisЭтот демонстрационный сервер может время от времени отключаться, но, по крайней мере, вы можете протестировать, и это действительно круто :)
 
 [center]
 [columns]
 [[fa=user /] User interface](https://demo.yunohost.org/?target=_blank&classes=btn,btn-lg,btn-success)  
-Username: demo  
-Password: demo
+Логин: demo  
+Пароль: demo
 
-[[fa=cog /] Administration interface](https://demo.yunohost.org/yunohost/admin/?target=_blank&classes=btn,btn-lg,btn-primary)  
-Password: demo
+[[fa=cog /] Администрация interface](https://demo.yunohost.org/yunohost/admin/?target=_blank&classes=btn,btn-lg,btn-primary)  
+Пароль: demo
 
 [/columns]
 [/center]
 
-!!!! **Demo server gracefully provided by [Gitoyen](https://www.gitoyen.net?target=_blank) [fa=heart /]**
+!!!! **Демонстрационный сервер, любезно предоставленный [Gitoyen](https://www.gitoyen.net?target=_blank) [fa=heart /]**
