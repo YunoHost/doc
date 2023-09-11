@@ -7,30 +7,29 @@ routes:
   default: '/howtohostyourself'
 ---
 
-You can host yourself at home (on a small computer), or on a remote server. Each solution has their pros and cons:
+Вы можете разместить его у себя дома (на небольшом компьютере) или на удаленном сервере. У каждого решения есть свои плюсы и минусы:
 
-### At home, for instance on an ARM board or an old computer
+### Дома, например, на плате ARM или старом компьютере
 
-You can host yourself at home with an ARM board or a re-purposed regular computer, connected to your home router/box. 
+Вы можете разместить себя дома с помощью платы ARM или переоборудованного обычного компьютера, подключенного к вашему домашнему роутеру.
+- **Плюсы** : у вас будет физический контроль над машиной, и вам нужно будет только купить оборудование;
+- **Минусы** : вам придется [вручную настроить свой интернет-бокс](/isp_box_config) и [может быть ограничено вашим провайдером](/isp).
 
-- **Pros**  : you will have physical control of the machine and only need to buy the hardware;
-- **Cons**  : you will have to [manually configure your internet box](/isp_box_config) and [might be limited by your ISP](/isp).
+### Дома, используя VPN
 
-### At home, behind a VPN
+VPN - это зашифрованный туннель между двумя компьютерами. На практике это делает все "как если бы" вы были напрямую, локально, подключены к своему серверному компьютеру, но на самом деле откуда-то еще в Интернете. Это позволяет вам по-прежнему принимать гостей у себя дома, обходя возможные ограничения вашего интернет-провайдера. Смотрите также [проект Internet Cube](https://internetcu.be /) и [FFDN](https://www.ffdn.org /).
 
-A VPN is an encrypted tunnel between two machines. In practice, it makes it "as if" you were directly, locally, connected to your server machine, but actually from somewhere else on the Internet. This allows you to still host yourself at home, while bypassing possible limitations of your ISP. See also [the Internet Cube project](https://internetcu.be/) and [the FFDN](https://www.ffdn.org/).
+- **Плюсы** : у вас будет физический контроль над машиной, а VPN скрывает ваш трафик от вашего интернет-провайдера и позволяет вам обойти его ограничения;
+- **Минусы** : вам придется оплатить ежемесячную подписку на VPN.
+- 
+### На удалённом сервере (VPS или выделенный)
 
-- **Pros** : you will have physical control of the machine, and the VPN hides your traffic from your ISP and allows you to bypass its limitations;
-- **Cons** : you will have to pay a monthly subscription for the VPN.
+Вы можете арендовать виртуальный частный сервер или выделенную машину у [associative](https://db.ffdn.org /) или [коммерческие] (/провайдеры/сервер) облачные провайдеры.
 
-### On a remote server (VPS or dedicated server)
+- **Плюсы** : ваш сервер и его подключение к Интернету будут быстрыми;
+- **Минусы** : вам придется оплачивать ежемесячную подписку, и у вас не будет физического контроля над вашим сервером.
 
-You can rent a virtual private server or a dedicated machine from [associative](https://db.ffdn.org/) or [commercial](/providers/server) "Cloud" providers.
-
-- **Pros** : your server and its internet connectivity will be fast;
-- **Cons** : you will have to pay a monthly subscription and won't have physical control of your server.
-
-### Summary
+### Итого
 
 <table>
     <thead>
@@ -54,13 +53,13 @@ You can rent a virtual private server or a dedicated machine from [associative](
         <td style="text-align:center;" class="warning">около 3€ <br><small>(VPS)</small></td>
       </tr>
       <tr>
-        <td style="text-align:center;">Физический контроль<br>of the machine</td>
+        <td style="text-align:center;">Физический контроль<br>к компьютеру</td>
         <td style="text-align:center;" class="success">Да</td>
         <td style="text-align:center;" class="success">Да</td>
         <td style="text-align:center;" class="danger">Нет</td>
       </tr>
       <tr>
-        <td style="text-align:center;">Manual port <br>routing required</td>
+        <td style="text-align:center;">Ручное управление<br>портами необходимо</td>
         <td style="text-align:center;" class="warning">Yes</td>
         <td style="text-align:center;" class="success">No</td>
         <td style="text-align:center;" class="success">No</td>
