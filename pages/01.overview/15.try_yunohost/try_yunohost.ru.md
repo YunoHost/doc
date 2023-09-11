@@ -7,7 +7,7 @@ routes:
   default: '/try'
 ---
 
-! ThisЭтот демонстрационный сервер может время от времени отключаться, но, по крайней мере, вы можете протестировать, и это действительно круто :)
+! Этот демонстрационный сервер может время от времени отключаться, но, по крайней мере, вы можете протестировать, и это действительно круто :)
 
 [center]
 [columns]
@@ -15,7 +15,7 @@ routes:
 Логин: demo  
 Пароль: demo
 
-[[fa=cog /] Администрация interface](https://demo.yunohost.org/yunohost/admin/?target=_blank&classes=btn,btn-lg,btn-primary)  
+[[fa=cog /] Панель администратора](https://demo.yunohost.org/yunohost/admin/?target=_blank&classes=btn,btn-lg,btn-primary)  
 Пароль: demo
 
 [/columns]
