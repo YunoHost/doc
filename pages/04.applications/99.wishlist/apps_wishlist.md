@@ -323,6 +323,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [tes3mp](https://tes3mp.com/) |  |  | [Package Draft](https://github.com/YunoHost-Apps/tes3mp_ynh) |
 | [Theia-IDE](https://theia-ide.org/) | VS Code-like cloud IDE |[Upstream](https://hub.docker.com/r/theiaide/theia-full)| |
 | Thredded |  | [Upstream](https://github.com/thredded/thredded) |  |
+| [Timetagger](https://timetagger.app/) | An open source time-tracker with an interactive user experience and powerful reporting. |[Upstream](https://github.com/almarklein/timetagger/)| |
 | Tinylist |  | [Upstream](https://github.com/baggachipz/tinylist) |  |
 | [TMate](https://tmate.io/) |  | [Upstream](https://github.com/tmate-io/tmate) |  |
 | torrelay |  |  | [Package Draft](https://github.com/matlink/torrelay_ynh) |
