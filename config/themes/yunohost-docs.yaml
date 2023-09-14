@@ -10,8 +10,8 @@ grid-size: grid-xl
 github:
   note: false
   link: true
-  tree: 'https://github.com/yunohost/doc/blob/grav/'
-  commits: 'https://github.com/yunohost/doc/commits/grav/'
+  tree: 'https://github.com/yunohost/doc/blob/master/'
+  commits: 'https://github.com/yunohost/doc/commits/master/'
 spectre:
   exp: false
   icons: false
