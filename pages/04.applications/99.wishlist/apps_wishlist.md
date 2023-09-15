@@ -256,6 +256,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Race for the galaxy | | [Upstream](https://github.com/bnordli/rftg) | |
 | [Raindrop](https://raindrop.io) | All-in-one bookmark manager | [Upstream](https://github.com/raindropio/app) | |
 | [Raspap](https://raspap.com/) | | [Upstream](https://github.com/RaspAP/raspap-webgui) | |
+| Readarr | Book Manager and Automation (Sonarr for Ebooks)  | [Upstream](https://github.com/Readarr/Readarr) | |
 | Redash | Connect to any data source, easily visualize, dashboard and share your data. | [Upstream](https://github.com/getredash/redash) | |
 | remoteStorage | A remoteStorage server implementation written in PHP | [Upstream](https://github.com/fkooman/php-remote-storage) | [Package Draft](https://github.com/YunoHost-Apps/RemoteStorage_ynh) |
 | [Renovate](https://www.mend.io/renovate/) | Bot for automating dependency updates on Gitlab / Gitea / Forgejo | [Upstream](https://github.com/renovatebot/renovate) |  |
@@ -349,6 +350,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Webterminal | A web-based Jump Host / Bastion, supports VNC, SSH, RDP, Telnet, SFTP... | [Upstream](https://github.com/jimmy201602/webterminal/) |  |
 | [WebThings Gateway](https://iot.mozilla.org/gateway/) |  | [Upstream](https://github.com/mozilla-iot/) |  |
 | [wg-access-server](https://github.com/freifunkMUC/wg-access-server) | VPN Server OIDC ipv4 ipv6 | [Upstream](https://github.com/freifunkMUC/wg-access-server) |  |
+| Whisparr | Adult movie collection manager for Usenet and BitTorrent users  | [Upstream](https://github.com/Whisparr/Whisparr) | |
 | Whoogle | A metasearch engine | [Upstream](https://github.com/benbusby/whoogle-search) |  |
 | [Wikiless](https://wikiless.org/) | A free open source alternative Wikipedia front-end focused on privacy. | [Upstream](https://codeberg.org/orenom/wikiless) |  |
 | [WikiSuite](https://wikisuite.org/Software) | The most comprehensive and integrated Open Source enterprise solution. | [Upstream](https://gitlab.com/wikisuite) |  |
