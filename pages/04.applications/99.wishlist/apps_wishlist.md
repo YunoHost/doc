@@ -60,7 +60,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [CKAN](https://ckan.org/) | A tool for making open data websites | [Upstream](https://github.com/ckan/ckan) |  |
 | [CloudTube](https://tube.cadence.moe/) | CloudTube front-end for YouTube | [Upstream](https://git.sr.ht/~cadence/cloudtube) |  |
 | [Commafeed](https://www.commafeed.com/) | Self-hosted RSS reader  | [Upstream](https://github.com/Athou/commafeed) |  |
-| [Conduit](https://conduit.rs/) |  Conduit is a lightweight open-source server implementation of the Matrix Specification with a focus on easy setup and low system requirements.  | [Upstream](https://gitlab.com/famedly/conduit) | [Package Draft](https://github.com/YunoHost-Apps/conduit_ynh) |
 | cops | Calibre OPDS |  | [Package Draft](https://github.com/YunoHost-Apps/cops_ynh) |
 | [Coquelicot](https://coquelicot.potager.org/) | A “one-click” file sharing web application |  | [Package Draft](https://github.com/YunoHost-Apps/coquelicot_ynh) |
 | [Cozy](https://cozy.io/en/) |  |  |  |
@@ -71,7 +70,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [DavMail](http://davmail.sourceforge.net/) | Gateway from OWA and O365 to IMAP, POP, and CalDav for email and calendars | [Upstream](https://github.com/mguessan/davmail) |  |
 | [democracyOS](https://democracyos.org/) | Vote / make decisions in a collective |  | [Package Draft](https://github.com/YunoHost-Apps/democracyos_ynh) |
 | [diasporadocker](https://diasporafoundation.org/) | A open and powerfull social network |  | [Package Draft](https://github.com/aymhce/diasporadocker_ynh) |
-| DirectoryLister |  | [Upstream](https://github.com/DirectoryLister/DirectoryLister) |  |
 | Django_app | Skeleton for django apps |  | [Package Draft](https://github.com/Jojo144/django_app_ynh) |
 | Docker_container | Deploy applications with Docker |  | [Package Draft](https://github.com/scith/docker_container_ynh) |
 | Docker_rstudio | A web development environment for statistics with R |  | [Package Draft](https://github.com/scith/docker_rstudio_ynh) |
@@ -80,7 +78,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | Docspell | Simple document organizer | [Upstream](https://github.com/eikek/docspell) |  |
 | Docusaurus | Static site generator/SPA to build documentations | [Upstream](https://github.com/facebook/docusaurus) |  |
 | [DomainMOD](https://domainmod.org) | Domain portfolio management application | | |
-| Dynette | Dynette is a dyndns server | [Upstream](https://github.com/YunoHost/dynette) | [Package Draft](https://github.com/YunoHost-Apps/dynette_ynh) |
 | DrakonHub | Online editor for Drakon diagrams | [Upstream](https://github.com/stepan-mitkin/drakonhub) | |
 | [Drawpile](https://drawpile.net) | Collaborative drawing program that allows multiple users to sketch on the same canvas simultaneously | [Upstream](https://github.com/drawpile/Drawpile) | |
 | [Earthstar-Project Server](https://earthstar-project.org/tutorials/run-a-server) | Run and configure an Earthstar server capable of syncing with other peers | [Upstream](https://github.com/earthstar-project/earthstar) | |
@@ -132,7 +129,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Grist](https://www.getgrist.com/) | The evolution of spreadsheets | [Upstream](https://github.com/gristlabs/grist-core/) | [Package Draft](https://github.com/ketsapiwiq/grist_ynh) |
 | [Habitica](https://habitica.com/) |  | [Upstream](https://github.com/HabitRPG/habitica) |  |
 | [Hashbase](https://github.com/beakerbrowser/hashbase/tree/master/docs) | A public peer service for Dat archives, provides a HTTP-accessible interface for creating an account and uploading Dats. | [Upstream](https://github.com/beakerbrowser/hashbase) |  |
-| [Headscale](https://github.com/juanfont/headscale) | An open source, self-hosted implementation of the Tailscale Mesh-VPN control server | [Upstream Daemon](https://github.com/juanfont/headscale) [Upstream UI](https://github.com/gurucomputing/headscale-ui)  |   |
 | Helpy |  | [Upstream](https://github.com/helpyio/helpy) |  |
 | [Hexo](https://hexo.io/) |  | [Upstream](https://github.com/hexojs/hexo) |  |
 | [HistoPad](https://github.com/24eme/histopad) | Web application for logging pads (etherpad) and archiving them in a git repository. | [Upstream](https://github.com/24eme/histopad) |  |
@@ -147,7 +143,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Inventaire](https://inventaire.io) | a libre collaborative resource mapper powered by open-knowledge, starting with books! 📚 | [Upstream](https://github.com/inventaire/inventaire) |  |
 | [InvoicePlane](https://invoiceplane.com) |  | [Upstream](https://github.com/InvoicePlane/InvoicePlane) |  |
 | [IPFS](https://ipfs.io) |  | [Upstream](https://github.com/ipfs/ipfs) | [Package Draft](https://github.com/YunoHost-Apps/ipfs_ynh) |
-| [Isso](https://posativ.org/isso) | Comment server | [Upstream](https://github.com/posativ/isso) |  |
 | jappix_mini | Jappix Mini XMPP chat website integration |  | [Package Draft](https://github.com/YunoHost-Apps/jappix_mini_ynh) |
 | [Joplin](https://joplin.cozic.net/) |  | [Upstream](https://github.com/laurent22/joplin) |  |
 | Joplin-web |  | [Upstream](https://github.com/foxmask/joplin-web) |  |
@@ -294,7 +289,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [SimplyTranslate-Web](https://simplytranslate.org/) | This is a simple web interface for SimplyTranslate | [Upstream](https://codeberg.org/SimpleWeb/SimplyTranslate-Web) |  |
 | [smokeping](https://oss.oetiker.ch/smokeping/) |  | [Upstream](https://github.com/oetiker/SmokePing) |  |
 | [SocialHome](https://socialhome.network) | A federated personal profile | [Upstream](https://github.com/jaywink/socialhome) |  |
-| [sonerezh](https://www.sonerezh.bzh) | Stream music from everywhere |  | [Package Draft](https://github.com/YunoHost-Apps/sonerezh_ynh) |
 | [SparkleShare (Dazzle)](https://www.sparkleshare.org/) | SparkleShare host  | [Upstream](https://github.com/hbons/Dazzle) |  |
 | sphinx |  | [Upstream](https://github.com/sphinx-doc/sphinx) | [Package Draft](https://github.com/YunoHost-Apps/sphinx_ynh) |
 | Spreed standalone signaling server (Nextcloud Talk HPB) |  | [Upstream](https://github.com/strukturag/nextcloud-spreed-signaling) |  | 
@@ -344,7 +338,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [upmpdcli](https://www.lesbonscomptes.com/upmpdcli/) | UPNP-server and -renderer. Serves local files, internet-radio (radio-browser.info), BBC-Radio, Deezer, HighresAudio, Qobuz, Spotify and Tidal | [Upstream](https://framagit.org/medoc92/upmpdcli) |  |
 | [Uwazi](https://www.uwazi.io/) |  | [Upstream](https://github.com/huridocs/uwazi) |  |
 | [Volumio](https://volumio.org) |  | [Upstream](https://github.com/volumio) |  |
-| [vpnserver](https://openvpn.net) | Create/provide VPNs from your server |  | [Package Draft](https://github.com/YunoHost-Apps/vpnserver_ynh) |
 | [Webhook.site](https://docs.webhook.site/) |  | [Upstream](https://github.com/fredsted/webhook.site) |  |
 | [WebODF](https://webodf.org) |  | [Upstream](https://github.com/webodf/WebODF) |  |
 | Webterminal | A web-based Jump Host / Bastion, supports VNC, SSH, RDP, Telnet, SFTP... | [Upstream](https://github.com/jimmy201602/webterminal/) |  |
@@ -373,7 +366,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | zomburl | An URL shortening service |  | [Package Draft](https://github.com/courgette/zomburl_ynh) |
 | Zoneminder |  | [Upstream](https://github.com/ZoneMinder/zoneminder) |  |
 | [Zulip](https://zulipchat.com/) |  | [Upstream](https://github.com/zulip/zulip) |  |
-| Zusam | A truly private space for you and your friends | [Upstream](https://github.com/zusam/zusam) | [Package Draft](https://github.com/zusam/zusam_ynh) |
 
 
 ### Other references listing self-hosted applications
