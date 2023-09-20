@@ -14,7 +14,13 @@ routes:
 ### Index
 
 - [Configuration](#configuration)
+  - [CardDAV](#carddav)
+  - [Domains](#domains)
+  - [PGP Keys](#pgp-keys)
+  - [Upgrade](#upgrade)
 - [Useful links](#useful-links)
+
+! **Note:** RainLoopis no longer maintained, you're encouraged to switch to RainLoop's community maintained fork - [SnappyMail](/app_snappymail)
 
 Rainloop is a lightweight webmail.
 
