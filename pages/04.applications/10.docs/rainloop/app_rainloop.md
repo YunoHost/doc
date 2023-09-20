@@ -20,7 +20,7 @@ routes:
   - [Upgrade](#upgrade)
 - [Useful links](#useful-links)
 
-! **Note:** RainLoopis no longer maintained, you're encouraged to switch to RainLoop's community maintained fork - [SnappyMail](/app_snappymail)
+! **Note:** RainLoop is no longer maintained, you're encouraged to switch to RainLoop's community maintained fork - [SnappyMail](/app_snappymail)
 
 Rainloop is a lightweight webmail.
 
