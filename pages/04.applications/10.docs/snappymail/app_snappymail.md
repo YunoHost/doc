@@ -25,7 +25,7 @@ SnappyMail is a lightweight webmail, a fork of RainLoop.
 To configure it, go to http://DOMAIN.TLD/snappymail/app/?admin
 
 - The default login is: admin
-- The default password is stored in a file located at `/var/www/snappymail/data/_data_/_default_/admin_password.txt
+- The default password is stored in a file located at `/var/www/snappymail/data/_data_/_default_/admin_password.txt`.
 
 ### Domains
 Users can use SnappyMail to access mailboxes other than the one provided by YunoHost (e.g. gmail.com or live.com). The option is available through the "account -> add an account" button.
