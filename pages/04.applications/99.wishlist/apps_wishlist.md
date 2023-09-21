@@ -366,7 +366,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | youtube-dl-webui | Web interface for youtube-dl |  | [Package Draft](https://github.com/YunoHost-Apps/youtube-dl-webui_ynh) |
 | yunofav | A page of favorite links |  | [Package Draft](https://github.com/YunoHost-Apps/yunofav_ynh) |
 | [yunohost](https://yunohost.org) | YunoHost in YunoHost, crazy :D ! |  | [Package Draft](https://github.com/aymhce/yunohost_ynh) |
-| Zammad |  | [Upstream](https://github.com/zammad/zammad) |  |
+| [Zammad](https://zammad.org) | Zammad is a web-based, open source user support/ticketing solution | [Upstream](https://github.com/zammad/zammad) |  |
 | [zigbee2mqtt.io](https://www.zigbee2mqtt.io/) | [Zigbee](https://en.wikipedia.org/wiki/Zigbee)-to-[MQTT](https://en.wikipedia.org/wiki/MQTT) software-bridge supporting [more than 1000 Zigbee devices](https://www.zigbee2mqtt.io/information/supported_devices.html) | [Upstream](https://github.com/koenkk/zigbee2mqtt) |  |
 | [Zola](https://www.getzola.org/) | Static site generator |  |  |
 | zomburl | An URL shortening service |  | [Package Draft](https://github.com/courgette/zomburl_ynh) |
