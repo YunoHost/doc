@@ -16,6 +16,7 @@ Nome utente: demo
 Password: demo
 
 [[fa=cog /] Interfaccia amministrazione](https://demo.yunohost.org/yunohost/admin/?target=_blank&classes=btn,btn-lg,btn-primary)  
+Nome utente: demo  
 Password: demo
 
 [/columns]

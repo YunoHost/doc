@@ -16,6 +16,7 @@ routes:
 كلمة السر : demo
 
 [[fa=cog /] واجهة الإدارة](https://demo.yunohost.org/yunohost/admin/?target=_blank&classes=btn,btn-lg,btn-primary)  
+إسم المستخدم : demo  
 كلمة السر : demo
 
 [/columns]

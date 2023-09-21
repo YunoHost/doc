@@ -37,6 +37,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Baserow](https://baserow.io/) | Open source no-code database tool and Airtable alternative. | [Upstream](https://gitlab.com/bramw/baserow) |  |
 | [Beatbump](https://beatbump.ml/home) | An alternative frontend for YouTube Music | [Upstream](https://github.com/snuffyDev/Beatbump) |  |
 | [Beeper](https://www.beeper.com/) | A unified inbox for 15 chat networks. | [Upstream](https://gitlab.com/beeper) |  |
+| [Belenios Voting](https://www.belenios.org/) | Verifiable, lean, trustable online voting system | [Upstream](https://github.com/glondu/belenios/) |  |
 | [BigBlueButton](https://bigbluebutton.org) | Web conferencing system | [Upstream](https://github.com/bigbluebutton/bigbluebutton) |  |
 | [BitcartCC](https://bitcartcc.com) | BitcartCC is a self-hosted, open-source cryptocurrency all-in-one solution | [Upstream](https://github.com/bitcartcc/bitcart)  |  |
 | [Bitmessage](https://bitmessage.org/) | P2P communication protocol used to send encrypted messages | [Upstream](https://github.com/Bitmessage/PyBitmessage) |  |
@@ -60,6 +61,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [CKAN](https://ckan.org/) | A tool for making open data websites | [Upstream](https://github.com/ckan/ckan) |  |
 | [CloudTube](https://tube.cadence.moe/) | CloudTube front-end for YouTube | [Upstream](https://git.sr.ht/~cadence/cloudtube) |  |
 | [Commafeed](https://www.commafeed.com/) | Self-hosted RSS reader  | [Upstream](https://github.com/Athou/commafeed) |  |
+| [Congressus](https://congressus.partipirate.org/about.php) | A meeting management tool with decision-making based on a voting pool. | [upstream](https://github.com/PartiPirate/congressus) | |
 | cops | Calibre OPDS |  | [Package Draft](https://github.com/YunoHost-Apps/cops_ynh) |
 | [Coquelicot](https://coquelicot.potager.org/) | A “one-click” file sharing web application |  | [Package Draft](https://github.com/YunoHost-Apps/coquelicot_ynh) |
 | [Cozy](https://cozy.io/en/) |  |  |  |
@@ -154,7 +156,6 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | [Kitchenowl](https://kitchenowl.org/) | grocery list and recipe manager | [Upstream](https://github.com/TomBursch/kitchenowl) | |
 | [Klaxon](https://newsklaxon.org) | Easily create alerts for changes on the web  | [Upstream](https://github.com/themarshallproject/klaxon) |  |
 | [Known](https://withknown.com) |  | [Upstream](https://github.com/idno/known) |  |
-| [Koel](https://koel.phanan.net) |  | [Upstream](https://github.com/phanan/koel) |  |
 | [Koha](https://koha-community.org/) | The world's first free and open source library system | [Upstream](https://git.koha-community.org/Koha-community/Koha) | |
 | Kontalk |  | [Upstream](https://github.com/kontalk) |  |
 | [Koozip](https://koozic.net) |  | [Upstream](https://github.com/DocMarty84/koozic) |  |
@@ -360,7 +361,7 @@ You can [contribute to this list by adding something you'd like to be packaged](
 | youtube-dl-webui | Web interface for youtube-dl |  | [Package Draft](https://github.com/YunoHost-Apps/youtube-dl-webui_ynh) |
 | yunofav | A page of favorite links |  | [Package Draft](https://github.com/YunoHost-Apps/yunofav_ynh) |
 | [yunohost](https://yunohost.org) | YunoHost in YunoHost, crazy :D ! |  | [Package Draft](https://github.com/aymhce/yunohost_ynh) |
-| Zammad |  | [Upstream](https://github.com/zammad/zammad) |  |
+| [Zammad](https://zammad.org) | Zammad is a web-based, open source user support/ticketing solution | [Upstream](https://github.com/zammad/zammad) |  |
 | [zigbee2mqtt.io](https://www.zigbee2mqtt.io/) | [Zigbee](https://en.wikipedia.org/wiki/Zigbee)-to-[MQTT](https://en.wikipedia.org/wiki/MQTT) software-bridge supporting [more than 1000 Zigbee devices](https://www.zigbee2mqtt.io/information/supported_devices.html) | [Upstream](https://github.com/koenkk/zigbee2mqtt) |  |
 | [Zola](https://www.getzola.org/) | Static site generator |  |  |
 | zomburl | An URL shortening service |  | [Package Draft](https://github.com/courgette/zomburl_ynh) |
