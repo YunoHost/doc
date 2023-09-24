@@ -84,6 +84,26 @@ ram.runtime = "1M"
 - `ram.build` (size) : an *estimate* minimum ram requirement when building the app (this may be way different than `ram.runtime` because some apps have a peak 1~2G RAM when building sometimes...). For example: 50M, 400M, 1G, ...
 - `ram.runtime` (size) : an *estimate* minimum ram requirement when the app is active and running. For example: 50M, 400M, 1G, ...
 
+## Antifeatures
+
+This section is completely optional and, for most apps, doesn't exist at all.
+
+Some applications have limitations, they might be due to non-free dependencies, arbitrary limitations, etc. Yunohost provides UI in the catalog to show such antifeatures.
+
+The declaration of antifeatures is a 3-steps process:
+
+- Find the relevant antifeature in [the list of supported antifeatures](https://github.com/YunoHost/apps/blob/master/antifeatures.toml)
+- Declare the app's antifeature in the [app catalog](https://github.com/YunoHost/apps/blob/master/apps.toml)
+- Describe the app's antifeature in its `manifest.toml`:
+  
+  ```toml
+  [antifeatures]
+  arbitrary-limitations.en = "Some description about the specific limitations of this app."
+  ```
+
+The format of this section is a `dict` where keys are antifeature IDs, and the values
+are translated strings (`dict` of `lang code`->`str`).
+
 
 ## Install questions
 
