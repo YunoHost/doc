@@ -190,33 +190,33 @@ Wähle die Hardware, auf der du YunoHost installieren willst :
 {% endif %}
 
 {% if wsl %}
-## Introduction
-WSL is a nice feature of Windows 10, making Linux pseudo-distributions available through command line. Let's say pseudo, because even though they are not really like virtual machines, they rely on virtualization capacities that make their integration with Windows almost seamless.
-Docker for Windows can now rely on WSL instead of Hyper-V, for example.
+## Vorstellung
+WSL ist ein cooles Windows 10 Feature, das Linux pseudo-Distributionen durch die Kommandozeile verfügbar macht. Lass es uns pseudo nennen, weil auch obwohl sie nicht wirklich wie virtuelle Maschinen sind, sind sie auf Virtualisierungskapazitäten angewiesen, die deren Integration mit Windows fast nahtlos machen.
+So kann z.B. Docker für Windows jetzt auf WSL bauen, anstatt auf Hyper-V.
 
-! Bear in mind, this setup itself is *not* a container of any kind. If something breaks, there is no rollback capability.
-! You may need to delete the Debian distro altogether and restore it whole.
+! Beachte, dass dieses Setup selbst *kein* Container jeglicher Art ist. Falls etwas bricht, gibt es keine Rollback Möglichkeit.
+! Vielleicht musst du die Debian Distro vollkommen löschen und ganz wiederherstellen.
 
-## Install Debian 11
+## Installation in Debian 11
 
-Let's install YunoHost into its own distro, not altering the default one. In a PowerShell terminal:
+Lass uns YunoHost in einem PowerShell Terminal in seine eigene Distro installieren und nicht die default Distro verändern:
 
 ```bash
-# Let's go in your home directory and prepare the working directories
+# Geh in dein home Verzeichnis und bereite die Arbeitsverzeichnisse vor
 cd ~
 mkdir -p WSL\YunoHost
-# Download the Debian appx package and unzip it
+# Lade das Debian appx Paket herunter und entpacke es (unzip)
 curl.exe -L -o debian.zip https://aka.ms/wsl-debian-gnulinux
 Expand-Archive .\debian.zip -DestinationPath .\debian
-# Import the Debian base into a new distro
+# Importiere Debian als Grundlage in eine neue Distro
 wsl --import YunoHost ~\WSL\YunoHost ~\debian\install.tar.gz --version 2
-# Cleanup
+# Aufräumen
 rmdir .\debian -R
 ```
 
-You can now access it: run `wsl.exe -d YunoHost`
+Nun kannst du darauf zugreifen: Führe `wsl.exe -d YunoHost` aus.
 
-It is under Debian 9 Stretch, so let's upgrade it: 
+Da es Debian 9 Stretch ist, lass uns ein Upgrade auf Debian 11 Bullseye machen: 
 
 ```bash
 # In WSL
@@ -225,9 +225,9 @@ sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade
 ```
-## Prevent WSL from tweaking configuration files
+## Verhindern, dass WSL an Konfigurationsdateien herumfeilt
 
-Edit `/etc/wsl.conf` and put the following code in it:
+Bearbeite `/etc/wsl.conf` und füge den folgenden Code darin ein:
 
 ```
 [network]
@@ -235,10 +235,10 @@ generateHosts = false
 generateResolvConf = false
 ```
 
-## Force the use of iptables-legacy
+## Erzwinge die Verwendung von iptables-legacy
 
-Somehow the YunoHost post-installation does not like `nf_tables`, the new software replacing `iptables`.
-We can still explicitely use the good ol' `iptables` though:
+Irgendwie mag die YunoHost Post-Installation `nf_tables` nicht, die neue Software ersetzt `iptables`.
+Wir können trotzdem immer noch explizit die guten alten `iptables` benutzen:
 
 ```bash
 # In WSL
@@ -246,12 +246,12 @@ sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
 sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
 ```
 
-## Install Systemd
+## Systemd installieren
 
-Debian on WSL does not have `systemd`, a service configuration software.
-This is a key element for YunoHost, and for any decent Debian distro (seriously MS, what the heck). Let's install it:
+Unter WSL fehlt Debian `systemd`, eine Service-Konfigurations-Software.
+Diese ist ein Schlüsselelement für YunoHost, und für jede anständige Debian Distro (also ernsthaft Microsoft, was zum Henker). Lass es uns installieren:
 
-1. Install dotNET runtime:
+1. Installation der dotNET Runtime:
 ```bash
 # In WSL
 wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -262,45 +262,45 @@ sudo apt update
 sudo apt install -y dotnet-sdk-3.1
 ```
 
-2. Install [Genie](https://github.com/arkane-systems/genie):
+2. Installation von [Genie](https://github.com/arkane-systems/genie):
 ```bash
 # In WSL
-# Add their repository
+# Das repository hinzufügen
 echo "deb [trusted=yes] https://wsl-translinux.arkane-systems.net/apt/ /" > /etc/apt/sources.list.d/wsl-translinux.list
-# Install Genie
+# Genie installieren
 sudo apt update
 sudo apt install -y systemd-genie
 ```
 
-## Install YunoHost
+## YunoHost Installation
 
 ```bash
 # In WSL
-# Let's switch to the root user, if you were not already
+# zum root user wechseln, wenn you das nicht schon bist
 sudo su
-# Initialize the Genie bottle to have systemd running
+# Die Genie Flasche initialisiern, um systemd am Laufen zu haben 
 genie -s
-# Your hostname should have been appended with "-wsl"
-# Install YunoHost
+# Dein hostname sollte mit "-wsl" enden
+# Installiere YunoHost
 curl https://install.yunohost.org | bash -s -- -a
 ```
 
-### Access the command line
+### Öffne die Kommandozeile
 
-Always call `genie -s` while starting your distro.
+Rufe `genie -s` immer während des Startes deiner Distro auf.
 
 `wsl -d YunoHost -e genie -s`
 
-## Backup and restore the distro 
-### Make your first distro backup
-As said before, there is no rollback capability. So let's export your fresh distro. In PowerShell:
+## Backup und Wiederherstellung der Distro 
+### Mache dein erstes Distro Backup
+Wie zuvor gesagt, gibt es keine Rollback Möglichkeit. Lass uns deshal deine frische Distro exportieren. In PowerShell:
 
 ```
 cd ~
 wsl --export YunoHost .\WSL\YunoHost.tar.gz
 ```
 
-### In case of crash, delete and restore the whole distro
+### Im Falle eines Crash, lösche und stelle die gesamte Distro wieder her
 
 ```
 cd ~
