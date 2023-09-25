@@ -12,10 +12,11 @@ routes:
 [center]
 [columns]
 [[fa=user /] User interface](https://demo.yunohost.org/?target=_blank&classes=btn,btn-lg,btn-success)  
-Username: demo  
+Username: demo
 Password: demo
 
 [[fa=cog /] Administration interface](https://demo.yunohost.org/yunohost/admin/?target=_blank&classes=btn,btn-lg,btn-primary)  
+Username: demo
 Password: demo
 
 [/columns]
