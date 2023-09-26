@@ -311,9 +311,9 @@ wsl --import YunoHost .\WSL\YunoHost .\WSL\YunoHost.tar.gz --version 2
 
 
 {% if vps_ynh %}
-## YunoHost VPS providers
+## YunoHost VPS Provider
 
-Here are some VPS providers supporting YunoHost natively :
+Hier sind ein paar VPS Provider, die YunoHost nativ unterstützen :
 
 [div class="flex-container"]
 
@@ -331,25 +331,25 @@ Here are some VPS providers supporting YunoHost natively :
 
 
 {% if at_home %}
-## [fa=download /] Download the {{image_type}} image
+## [fa=download /] Lade das {{image_type}} Image herunter
 
 {% if rpi012 %}
-! Support for Rasperry Pi 0, 1 and 2 is unfortunately slowly dropping : building fresh images is complex, and RPi 0, 1 and 2 are ARM-32bit systems which will get more and more deprecated over time. Our pre-installed images are quite old. We recommend instead to [download the official Rasperry Pi OS Lite (**32-bit**, **Bullseye**)](https://downloads.raspberrypi.org/raspios_lite_armhf/images/?C=M;O=D) and installing YunoHost on top [using similar instructions as for other ARM boards](/install/hardware:arm)
+! Leider wird der Support für Rasperry Pi 0, 1 und 2 so langsam eingestellt : Das Bauen neuer Images ist komplex und RPi 0, 1 und 2 sind ARM-32bit Systeme, die über die Zeit mehr und mehr veralten (deprecated) werden. Da unsere vorinstallierten Images ziemlich alt sind, empfehlen wir stattdessen das [offizielle Rasperry Pi OS Lite (**32-bit**, **Bullseye**)](https://downloads.raspberrypi.org/raspios_lite_armhf/images/?C=M;O=D) zu downloaden und YunoHost [unter Verwendung ähnlicher Instruktionen wie für andere ARM Boards](/install/hardware:arm) oben drauf zu installieren.
 {% endif %}
 
 {% if virtualbox or regular %}
-!!! If your host OS is 32 bits, be sure to download the 32-bit image.
+!!! Achte darauf, dass du das 32-bit Image herunterlädst, wenn dein Host ein 32 Bit System ist.
 {% elseif arm_unsup and not rpi012 %}
-<a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12" style="background: none;">[fa=external-link] Download the image for your board on Armbian's website</a>
+<a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12" style="background: none;">[fa=external-link] Lade das Image für dein Board auf der Armbian Website herunter.</a>
 
-!!! N.B.: you should download the image Armbian Bullseye.
+!!! Anmerkung: Du solltest das Image Armbian Bullseye downloaden.
 {% endif %}
 
-!!! If you wish to check the validity of our signed images, you can [download our public key](https://forge.yunohost.org/yunohost.asc).
+!!! Wenn du die Validität deiner signierten Images prüfen will, kannst du [unseren public key downloaden](https://forge.yunohost.org/yunohost.asc).
 
 {% if internetcube or arm_sup %}
-! Current images are from Debian Buster (YunoHost v4.x) and will require that you perform a manual apt update command in SSH or CLI to continue updating.
-! Answer Yes to the warning about switching from stable to oldstable.
+! Aktuelle Images stammen von Debian Buster (YunoHost v4.x) und erfordern, dass du einen manuellen apt update Befehl per SSH oder CLI durchführst, um weiter zu aktualisieren.
+! Antworte mit Ja auf die Warnung über den Wechsel von stable zu oldstable.
 {% endif %}
 
 <div class="hardware-image">
