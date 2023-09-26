@@ -421,73 +421,73 @@ $(document).ready(function () {
 {% if not virtualbox %}
 
 {% if arm %}
-## ![microSD card with adapter](image://sdcard_with_adapter.png?resize=100,75&class=inline) Flash the {{image_type}} image
+## ![microSD Karte mit Adapter](image://sdcard_with_adapter.png?resize=100,75&class=inline) Flash das {{image_type}} Image
 {% else %}
-## ![USB drive](image://usb_key.png?resize=100,100&class=inline) Flash the YunoHost image
+## ![USB Stick](image://usb_key.png?resize=100,100&class=inline) Flash das YunoHost Image
 {% endif %}
 
-Now that you downloaded the image of {{image_type}}, you should flash it on {% if arm %}a microSD card{% else %}a USB stick or a CD/DVD.{% endif %}
+Jetzt wo du das Image von {{image_type}} heruntergeladen hast, solltest du es auf {% if arm %}einer microSD Karte{% else %}einem USB stick oder einer CD/DVD flashen.{% endif %}
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="(Recommended) With Etcher"]
+[ui-tab title="(Empfohlen) Mit Etcher"]
 
-Download <a href="https://www.balena.io/etcher/" target="_blank">Etcher</a> for your operating system and install it.
+Lade <a href="https://www.balena.io/etcher/" target="_blank">Etcher</a> für dein Betriebssystem herunter und installiere es.
 
-Plug your {% if arm %}SD card{% else %}USB stick{% endif %}, select your image and click "Flash"
+Steck {% if arm %}die SD Karte{% else %}den USB Stick{% endif %} an, wähle dein Image und klicke "Flash".
 
 ![Etcher](image://etcher.gif?resize=700&class=inline)
 
 [/ui-tab]
-[ui-tab title="With USBimager"]
+[ui-tab title="Mit USBimager"]
 
-Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.
+Lade [USBimager](https://bztsrc.gitlab.io/usbimager/) für dein Betriebssystem herunter und installiere es.
 
-Plug your {% if arm %}SD card{% else %}USB stick{% endif %}, select your image and click "Write"
+Steck {% if arm %}die SD Karte{% else %}den USB Stick{% endif %} an, wähle dein Image und klicke "Write".
 
 ![USBimager](image://usbimager.png?resize=700&class=inline)
 
 [/ui-tab]
-[ui-tab title="With dd"]
+[ui-tab title="Mit dd Befehl"]
 
-If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.
+Wenn du mit GNU/Linux / macOS arbeitest und dich mit der Kommandozeile auskennst, kannst du deinen USB Stick oder deine SD Karte auch mit `dd` flashen. Du kannst mit `fdisk -l` oder `lsblk` feststellen welches Device deinem USB stick oder deiner SD Karte entspricht. Ein typischer SD Karten Name ist sowas wie `/dev/mmcblk0`. SEI VORSICHTIG und stelle sicher, dass du den richtigen Namen hast.
 
-Then run :
+Führe dann Folgendes aus :
 
 ```bash
-# Replace /dev/mmcblk0 if the name of your device is different...
+# Ersetze /dev/mmcblk0 durch das richtige Device, wenn der Name deines Device anders ist...
 dd if=/path/to/yunohost.img of=/dev/mmcblk0
 ```
 [/ui-tab]
 {% if regular %}
-[ui-tab title="Burning a CD/DVD"]
-For older devices, you might want to burn a CD/DVD. The software to use depends on your operating system.
+[ui-tab title="Eine CD/DVD brennen"]
+Für ältere Geräte könntest du eine CD/DVD brennen wollen. Die zu verwendende Software hängt von deinem Betriebssystem ab.
 
-* On Windows, use [ImgBurn](http://www.imgburn.com/) to write the image file on the disc
+* Auf Windows, benutze [ImgBurn](http://www.imgburn.com/), um die Image Datei auf die Disc zu schreiben.
 
-* On macOS, use [Disk Utility](http://support.apple.com/kb/ph7025)
+* Auf macOS, benutze [Disk Utility](http://support.apple.com/kb/ph7025)
 
-* On GNU/Linux, you have plenty of choices, like [Brasero](https://wiki.gnome.org/Apps/Brasero) or [K3b](http://www.k3b.org/)
+* Auf GNU/Linux hat man eine große Auswahl, wie [Brasero](https://wiki.gnome.org/Apps/Brasero) oder [K3b](http://www.k3b.org/)
 [/ui-tab]
 {% endif %}
 [/ui-tabs]
 
 {% else %}
 
-## Create a new virtual machine
+## Erzeuge eine neue virtuelle Maschine
 
 ![](image://virtualbox_1.png?class=inline)
 
-! It's okay if you can only have 32-bit versions, just be sure that you downloaded the 32-bit image previously.
+! Es ist in Ordnung, wenn du nur 32-bit Versionen haben kannst. Sei einfach sicher, dass du zuvor das 32-bit Image heruntergeladen hast.
 
-## Tweak network settings
+## Netzwerk Einstellungen justieren
 
-! This step is important to properly expose the virtual machine on the network
+! Dieser Schritt ist wichtig, um die virtuelle Maschine ordnungsgemäß im Netzwerk zugänglich zu machen.
 
-Go to **Settings** > **Network**:
+Gehe zu **Settings** > **Network**:
 
-* Select `Bridged adapter`
-* Select your interface's name:
-    **wlan0** if you are connected wirelessly, or **eth0** otherwise.
+* Wähle `Bridged adapter`
+* Wähle den Namen deines Interface:
+    **wlan0**, wenn du kabellos verbunden bist, oder andernfalls **eth0**.
 
 ![](image://virtualbox_2.png?class=inline)
 
