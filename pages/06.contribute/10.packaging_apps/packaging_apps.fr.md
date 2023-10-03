@@ -1,12 +1,12 @@
 ---
-title: Introduction au packaging
+title: Packaging d'applications
 template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/packaging_apps_intro'
+  default: '/packaging_apps'
   aliases:
-    - '/packaging_apps'
+    - '/packaging_apps_intro'
 ---
 
 Cette documentation a pour but de fournir tous les concepts de base et le vocabulaire nécessaire pour comprendre le packaging d'applications.
