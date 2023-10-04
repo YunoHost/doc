@@ -45,12 +45,11 @@ Do not write "it does not work", "it does not want", "it does not load", ["compu
 
 Explain what is wrong, and how it is displayed onscreen. There is, for example, an important difference between a completely blank page and a blank page with a minimalistic error code.
 
-## Directly ask your question
+## Do not beat about the bush
 
 No need to ask if you can ask. It is a support chat/forum, therefore yes, you can ask your question.
 
 Do not ask your question like a poll, as in "Did anyone managed to get app XY working?". If it is not working for you, then explain directly what issue you got, explain the context, share the logs.
-
 
 ## Do not be an asshole
 Access to the forum or the chatrooms is a courtesy that can be revoked.
