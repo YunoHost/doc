@@ -502,33 +502,33 @@ Gehe zu **Settings** > **Network**:
 
 
 {% if arm %}
-## [fa=plug /] Power up the board
+## [fa=plug /] Das Board einschalten
 
-* Plug the ethernet cable (one side on your main router, the other on your board).
-    * For advanced users willing to configure the board to connect to WiFi instead, see for example [here](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
-* Plug the SD card in your board
-* (Optional) You can connect a screen+keyboard directly on your board if you want to troubleshoot the boot process or if you're more comfortable to "see what happens" or want a direct access to the board.
-* Power up the board
-* Wait a couple minutes while the board autoconfigure itself during the first boot
-* Make sure that your computer (desktop/laptop) is connected to the same local network (i.e. same internet box) as your server.
+* Schließe das Ethernet Kabel an (ein Ende an deinem Router, das andere an deinem Board).
+    * Fortgeschrittene Nutzer, die das Board konfigurieren möchten, um sich stattdessen per WiFi zu verbinden, können bspw. [hier](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md) nachlesen.
+* Stecke die SD Karte in dein Board.
+* (Optional) Du kannst Bildschirm+Tastatur direkt an deinem Board anschließen, wenn du Fehler am Boot Prozess beheben willst oder wenn du dich wohler fühlst zu "sehen was passiert" oder du direkten Zugriff auf das Board haben willst.
+* Schalte das Board ein.
+* Warte ein paar Minuten während sich das Board beim ersten Boot automatisch selbst konfiguriert.
+* Stelle sicher, dass dein Computer (Desktop/Laptop) mit dem selben lokalen Netzwerk verbunden ist (z.B. mit der selben Internet Box) wie dein Server.
 
 {% elseif virtualbox %}
-## [fa=plug /] Boot up the virtual machine
+## [fa=plug /] Die virtuelle Maschine hochfahren
 
-Start the virtual machine after selecting the YunoHost image.
+Starte die virtuelle Maschine nach der Auswahl des YunoHost Image.
 
 ![](image://virtualbox_2.1.png?class=inline)
 
-! If you encounter the error "VT-x is not available", you probably need to enable Virtualization in the BIOS of your computer.
+! Wenn du an den Fehler "VT-x ist nicht erreichbar" gerätst, musst du wahrscheinlich Virtualisierung im BIOS deines Computers einschalten.
 
 
 {% else %}
-## [fa=plug /] Boot the machine on your USB stick
+## [fa=plug /] Die Maschine von deinem USB Stick booten
 
-* Plug the ethernet cable (one side on your main router, the other on your server).
-* Boot up your server with the USB stick or a CD-ROM inserted, and select it as **bootable device** by pressing one of the following keys (hardware specific):
-`<ESC>`, `<F9>`, `<F10>`, `<F11>`, `<F12>` or `<DEL>`.
-    * N.B. : if the server was previously installed with a recent version of Windows (8+), you first need to tell Windows, to "actually reboot". This can be done somewhere in "Advanced startup options".
+* Schließe das Ethernet Kabel an (ein Ende an deinem Router, das andere an deinem Board).
+* Fahre deinen Server mit dem USB Stick oder einer eingesteckten CD-ROM hoch und wähle es durch Drücken einer der folgenden (Hardware spezifischen) Tasten als **bootable device** aus:
+`<ESC>`, `<F9>`, `<F10>`, `<F11>`, `<F12>` oder `<DEL>`.
+    * Anmerkung: Wenn auf dem Server zuvor eine aktuelle Windows Version (8+) installiert war, musst du Windows zuerst "actually reboot" sagen. Das kann irgendwo in "Advanced startup options" gemacht werden.
 {% endif %}
 
 {% if regular or virtualbox %}
