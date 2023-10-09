@@ -1,5 +1,5 @@
 ---
-title: Install YunoHost
+title: Установка YunoHost
 template: docs
 taxonomy:
     category: docs
@@ -66,7 +66,7 @@ routes:
   {% set at_home = true %}
 {% endif %}
 
-Select the hardware on which you want install YunoHost :
+Выберите оборудование, на которое вы хотите установить YunoHost :
 [div class="flex-container"]
 
 [div class="flex-child hardware{%if virtualbox %} active{% endif %}"]
@@ -78,11 +78,11 @@ Select the hardware on which you want install YunoHost :
 [/div]
 
 [div class="flex-child hardware{%if arm_sup or (arm_unsup and not rpi012) or internetcube %} active{% endif %}"]
-[[figure caption="ARM board"]![](image://olinuxino.png?height=75)[/figure]](/install/hardware:arm)
+[[figure caption="ARM платы"]![](image://olinuxino.png?height=75)[/figure]](/install/hardware:arm)
 [/div]
 
 [div class="flex-child hardware{%if regular %} active{% endif %}"]
-[[figure caption="Regular computer"]![](image://computer.png?height=75)[/figure]](/install/hardware:regular)
+[[figure caption="Обычный компьютер"]![](image://computer.png?height=75)[/figure]](/install/hardware:regular)
 [/div]
 
 [div class="flex-child hardware{%if wsl %} active{% endif %}"]
@@ -90,7 +90,7 @@ Select the hardware on which you want install YunoHost :
 [/div]
 
 [div class="flex-child hardware{%if vps_debian or vps_ynh %} active{% endif %}"]
-[[figure caption="Remote server"]![](image://vps.png?height=75)[/figure]](/install/hardware:vps_debian)
+[[figure caption="Удалённый сервер"]![](image://vps.png?height=75)[/figure]](/install/hardware:vps_debian)
 [/div]
 
 [/div]
@@ -98,34 +98,34 @@ Select the hardware on which you want install YunoHost :
 
 {% if rpi012 or rpi34 %}
 [div class="flex-child hardware{%if rpi34 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 3 or 4"]![](image://raspberrypi.png?height=50)[/figure]](/install/hardware:rpi34)
+[[figure caption="Raspberry Pi 3 или 4"]![](image://raspberrypi.png?height=50)[/figure]](/install/hardware:rpi34)
 [/div]
 
 [div class="flex-child hardware{%if rpi012 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 0, 1 or 2"]![](image://rpi1.png?height=50)[/figure]](/install/hardware:rpi012)
+[[figure caption="Raspberry Pi 0, 1 или 2"]![](image://rpi1.png?height=50)[/figure]](/install/hardware:rpi012)
 [/div]
 
 {% elseif show_legacy_arm_menu %}
 
 [div class="flex-child hardware{%if internetcube %} active{% endif %}"]
-[[figure caption="Internet cube With VPN"]![](image://internetcube.png?height=50)[/figure]](/install/hardware:internetcube)
+[[figure caption="Internet cube с VPN"]![](image://internetcube.png?height=50)[/figure]](/install/hardware:internetcube)
 [/div]
 
 [div class="flex-child hardware{%if arm_sup and not internetcube %} active{% endif %}"]
-[[figure caption="Olinuxino lime1&2 or Orange Pi PC+"]![](image://olinuxino.png?height=50)[/figure]](/install/hardware:arm_sup)
+[[figure caption="Olinuxino lime1&2 или Orange Pi PC+"]![](image://olinuxino.png?height=50)[/figure]](/install/hardware:arm_sup)
 [/div]
 
 [div class="flex-child hardware{%if arm_unsup %} active{% endif %}"]
-[[figure caption="Others boards"]![](image://odroidhc4.png?height=50)[/figure]](/install/hardware:arm_unsup)
+[[figure caption="Другие платы"]![](image://odroidhc4.png?height=50)[/figure]](/install/hardware:arm_unsup)
 [/div]
 {% elseif vps_debian or vps_ynh %}
 
 [div class="flex-child hardware{%if vps_debian %} active{% endif %}"]
-[[figure caption="VPS or dedicated server with Debian 11"]![](image://debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
+[[figure caption="VPS или выделенный сервер с Debian 11"]![](image://debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
 [/div]
 
 [div class="flex-child hardware{%if vps_ynh %} active{% endif %}"]
-[[figure caption="VPS or dedicated server with YunoHost pre-installed"]![](image://logo.png?height=50)[/figure]](/install/hardware:vps_ynh)
+[[figure caption="VPS или выделенный сервер с предустановленным YunoHost"]![](image://logo.png?height=50)[/figure]](/install/hardware:vps_ynh)
 [/div]
 
 {% endif %}
@@ -136,61 +136,61 @@ Select the hardware on which you want install YunoHost :
 {% if hardware != '' %}
 
 {% if wsl %}
-!! This setup is mainly meant for local testing by advanced users. Due to limitations on WSL's side (changing IP address, notably), selfhosting from it can be tricky and will not be described here.
+!! Эта настройка в основном предназначена для локального тестирования продвинутыми пользователями. Из-за ограничений на стороне WSL (в частности, изменение IP-адреса) самостоятельный хостинг с него может быть сложным и здесь описываться не будет.
 {% endif %}
 
 
-## [fa=list-alt /] Pre-requisites
+## [fa=list-alt /] Предварительные условия
 
 {% if regular %}
-* A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop with 512MB RAM and 16GB capacity (at least)
+* x86-совместимое оборудование, предназначенное для YunoHost: ноутбук, неттоп, нетбук, настольный компьютер с 512 МБ оперативной памяти и емкостью 16 ГБ (не менее)
 {% elseif rpi34 %}
-* A Raspberry Pi 3 or 4
+* Raspberry Pi 3 or 4
 {% elseif rpi012 %}
-* A Raspberry Pi 0, 1 or 2 with at least 512MB RAM 
+* Raspberry Pi 0, 1 или 2 с ОЗУ не менее 512 МБ 
 {% elseif internetcube %}
-* An Orange Pi PC+ or an Olinuxino Lime 1 or 2
-* A VPN with a dedicated public IP and a `.cube` file
+* Orange Pi PC+ или Olinuxino Lime 1 или 2
+* VPN с выделенным общедоступным IP-адресом и файлом `.cube`
 {% elseif arm_sup %}
-* An Orange Pi PC+ or an Olinuxino Lime 1 or 2
+* Orange Pi PC+ или Olinuxino Lime 1 или 2
 {% elseif arm_unsup %}
-* An ARM board with at least 512MB RAM
+* Плата ARM с объемом оперативной памяти не менее 512 МБ
 {% elseif vps_debian %}
-* A dedicated or virtual private server with Debian 11 (Bullseye) <small>(with **kernel >= 3.12**)</small> preinstalled, 512MB RAM and 16GB capacity (at least)
+* Выделенный или виртуальный частный сервер с Debian 11 (Bullseye) <small>(с **kernel >= 3.12**)</small> предустановленный, 512 МБ оперативной памяти и емкость 16 ГБ (не менее)
 {% elseif vps_ynh %}
-* A dedicated or virtual private server with yunohost preinstalled, 512MB RAM and 16GB capacity (at least)
+* Выделенный или виртуальный частный сервер с предустановленным YunoHost, 512 МБ оперативной памяти и емкостью не менее 16 ГБ
 {% elseif virtualbox %}
-* An x86 computer with [VirtualBox installed](https://www.virtualbox.org/wiki/Downloads) and enough RAM capacity to be able to run a small virtual machine with 1024MB RAM and 8GB capacity (at least)
+* Компьютер x86 с [установленным VirtualBox](https://www.virtualbox.org/wiki/Downloads) и достаточный объем оперативной памяти, чтобы иметь возможность запускать небольшую виртуальную машину с 1024 МБ оперативной памяти и емкостью 8 ГБ (как минимум).
 {% endif %}
 {% if arm %}
-* A power supply (either an adapter or a MicroUSB cable) for your board;
-* A microSD card: 16GB capacity (at least), [class "A1"](https://en.wikipedia.org/wiki/SD_card#Class) highly recommended (such as [this SanDisk A1 card](https://www.amazon.fr/SanDisk-microSDHC-Adaptateur-homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/));
+*Источник питания (либо адаптер, либо кабель microUSB) для вашей платы;
+* Карта microSD: емкость 16 ГБ (не менее), [класса "A1"](https://club.dns-shop.ru/blog/t-127-kartyi-pamyati/59683-klassyi-skorosti-kart-pamyati-kak-razobratsya-i-chto-brat/#sub_Klass__skorosti__dlya__rabotyi__s__prilojeniyami) настоятельно рекомендуется (например, [эта SanDisk A1 карта](https://www.dns-shop.ru/product/dd976fc32e66ed20/karta-pamati-sandisk-ultra-microsdxc-64-gb-sdsqua4-064g-gn6mn/));
 {% endif %}
 {% if regular %}
-* A USB stick with at least 1GB capacity OR a standard blank CD
+* USB-накопитель емкостью не менее 1 ГБ или стандартный чистый компакт-диск
 {% endif %}
 {% if wsl %}
-* Windows 10 and above
-* Administration rights
-* Windows Subsystem for Linux, installed from the Optional Features menu of Windows
-* *Recommended:* Windows Terminal (Preview) app, installed from the Microsoft Store. Much better than the standard Terminal, as it offers shortcuts to the WSL distros.
+* Windows 10 и выше
+* Права администратора
+* Подсистема Windows для Linux, устанавливаемая из *Включение или отключение компонентов Windows*
+* *Рекомендуется:* Приложение Windows Terminal (предварительный просмотр), установленное из магазина Microsoft Store. Намного лучше, чем стандартный терминал, поскольку он предлагает быстрые пути к дистрибутивам WSL.
 {% endif %}
 {% if at_home %}
-* A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
+* [хороший Интернет-провайдер](/isp), предпочтительно с хорошей и неограниченной восходящей полосой пропускания
 {% if not virtualbox %}
-* An ethernet cable (RJ-45) to connect your server to your router. {% if rpi012 %} (Or, for Rasperry Pi Zero : and USB OTG or a wifi Dongle) {% endif %}
+* Кабель Ethernet (RJ-45) для подключения вашего сервера к маршрутизатору. {% if rpi012 %} (Или, для Rasperry Pi Zero: и USB OTG или wifi-адаптер) {% endif %}
 {% endif %}
-* A computer to read this guide, flash the image and access your server.
+* Компьютер, чтобы прочитать это руководство, прошейте изображение и получите доступ к вашему серверу.
 {% else %}
-* A computer or a smartphone to read this guide and access your server.
+* Компьютер или смартфон, чтобы прочитать это руководство и получить доступ к вашему серверу.
 {% endif %}
 
 {% if virtualbox %}
-! N.B. : Installing YunoHost in a VirtualBox is usually intended for testing or development. It is not convenient to run an actual server on the long-term, because the machine it's installed on probably won't be up 24/7, and because Virtualbox adds an additional layer of complexity in exposing the machine to the Internet.
+! Примечание: Установка YunoHost в VirtualBox обычно предназначена для тестирования или разработки. Запускать реальный сервер в долгосрочной перспективе неудобно, потому что машина, на которой он установлен, вероятно, не будет работать круглосуточно, а также потому, что Virtualbox добавляет дополнительный уровень сложности при подключении машины к Интернету.
 {% endif %}
 
 {% if wsl %}
-## Introduction
+## Вступление
 WSL is a nice feature of Windows 10, making Linux pseudo-distributions available through command line. Let's say pseudo, because even though they are not really like virtual machines, they rely on virtualization capacities that make their integration with Windows almost seamless.
 Docker for Windows can now rely on WSL instead of Hyper-V, for example.
 
