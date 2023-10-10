@@ -9,6 +9,9 @@ routes:
 
 Bien que les contributeurs de YunoHost essaient continuellement de l'améliorer, YunoHost ou sa documentation ne sont exempts de bugs ou d'erreurs. Pour nous aider à vous aider, vous devez cependant suivre ces instructions.
 
+Le support n'est prodigué que sur [le forum](https://forum.yunohost.org?target=_blank) ou sur [nos salons de discussion](/chat_rooms?target=_blank). 
+Nous sommes présents sur Mastodon, mais nous ne prodiguons pas d'aide sur cette plateforme.
+
 # À faire 
 
 ## Soyez courtois et patient

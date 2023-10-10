@@ -9,6 +9,9 @@ routes:
 
 Even though YunoHost contributors try to continuously perfect it, YunoHost itself or this documentation are not free from bugs or flaw. To let us help you, however, you need to follow these guidelines.
 
+Support is only available on [the forum](https://forum.yunohost.org?target=_blank) or our [chatrooms](/chat_rooms?target=_blank).
+We are also on Mastodon, but we do not offer help on this platform.
+
 # Dos
 
 ## Be courteous and patient
