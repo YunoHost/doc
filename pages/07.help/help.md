@@ -39,7 +39,7 @@ To guide you, on the forum you need to fill in the Support request template.
 # Don'ts
 
 ## Avoid the infamous [XY Problem](https://xyproblem.info/)
-In a nutshell, explain the root cause of your issue. You may share your attempted solution, but *why* you need that potential solution is more important.
+In a nutshell, explain the root cause of your issue. You may share your attempted solution, but explaining ***why*** you need that potential solution is more important.
 
 ## Do not be vague
 Do not assume we understand what you are talking about, do not take shortcuts, do not rephrase, do not simplify, do not trim the error messages.
