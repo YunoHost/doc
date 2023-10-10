@@ -12,6 +12,8 @@ Even though YunoHost contributors try to continuously perfect it, YunoHost itsel
 Support is only available on [the forum](https://forum.yunohost.org?target=_blank) or our [chatrooms](/chat_rooms?target=_blank).
 We are also on Mastodon, but we do not offer help on this platform.
 
+To guide you, on the forum you need to fill in the Support request template.
+
 # Dos
 
 ## Be courteous and patient
@@ -33,8 +35,6 @@ For the latter, YunoHost provides green "Share with YunoPaste" buttons when some
 If your issue is not related to an installation or upgrade process but instead is about an app failing load properly, ideally you can investigate with your browser console (opened with the F12 key): its Network tab can show you HTTP error codes (including the infamous 403, 404, 500...), and its Console can output errors too.
 
 Screenshots are most welcome.
-
-To guide you, on the forum you need to fill in the Support request template.
 
 # Don'ts
 

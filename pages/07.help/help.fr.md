@@ -12,6 +12,8 @@ Bien que les contributeurs de YunoHost essaient continuellement de l'améliorer,
 Le support n'est prodigué que sur [le forum](https://forum.yunohost.org?target=_blank) ou sur [nos salons de discussion](/chat_rooms?target=_blank). 
 Nous sommes présents sur Mastodon, mais nous ne prodiguons pas d'aide sur cette plateforme.
 
+Pour vous guider, sur le forum, vous devez remplir le modèle de demande de support.
+
 # À faire 
 
 ## Soyez courtois et patient
@@ -34,8 +36,6 @@ YunoHost fournit des boutons verts "Partager avec YunoPaste" lorsque quelque cho
 Si votre problème n'est pas lié à un processus d'installation ou de mise à jour, mais plutôt à une application qui ne se charge pas correctement, vous pouvez déjà enquêter avec la console de votre navigateur (s'ouvrant avec la touche F12) : son onglet Réseau peut vous montrer les codes d'erreur HTTP (y compris les bien connus 403, 404, 500...), et sa Console peut également afficher des erreurs.
 
 Les captures d'écran sont les bienvenues.
-
-Pour vous guider, sur le forum, vous devez remplir le modèle de demande de support.
 
 # À ne pas faire
 
