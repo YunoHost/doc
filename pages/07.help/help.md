@@ -12,7 +12,7 @@ Even though YunoHost contributors try to continuously perfect it, YunoHost itsel
 Support is only available on [the forum](https://forum.yunohost.org?target=_blank) or our [chatrooms](/chat_rooms?target=_blank).
 We are also on Mastodon, but we do not offer help on this platform.
 
-To guide you, on the forum you need to fill in the Support request template.
+To allow us to help you on the forum, you absolutely need to fill in the Support request template.
 
 # Dos
 

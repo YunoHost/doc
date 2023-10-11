@@ -12,7 +12,7 @@ Bien que les contributeurs de YunoHost essaient continuellement de l'améliorer,
 Le support n'est prodigué que sur [le forum](https://forum.yunohost.org?target=_blank) ou sur [nos salons de discussion](/chat_rooms?target=_blank). 
 Nous sommes présents sur Mastodon, mais nous ne prodiguons pas d'aide sur cette plateforme.
 
-Pour vous guider, sur le forum, vous devez remplir le modèle de demande de support.
+Pour que nous puissions être en mesure de vous aider sur le forum, vous devez impérativement remplir le modèle de demande de support.
 
 # À faire 
 
