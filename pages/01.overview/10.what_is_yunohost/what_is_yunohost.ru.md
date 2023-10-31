@@ -13,30 +13,30 @@ YunoHost это **операционная система** позволяюща
 
 ## Фичи
 
-- ![](image://icon-debian.png?resize=32&classes=inline) Основан Debian;
+- ![](image://icon-debian.png?resize=32&classes=inline) Основан на Debian;
 - ![](image://icon-tools.png?resize=32&classes=inline) Администрируй свой сервер через **простой веб-интерфейс** ;
 - ![](image://icon-package.png?resize=32&classes=inline) Развертывание **приложение за пару секунд**;
 - ![](image://icon-users.png?resize=32&classes=inline) Редактируй **пользователей** <small>(основано на LDAP)</small>;
 - ![](image://icon-globe.png?resize=32&classes=inline) Управляй **доменными именами**;
-- ![](image://icon-medic.png?resize=32&classes=inline) Создавай и восстанавливай **Бэкапы**;
+- ![](image://icon-medic.png?resize=32&classes=inline) Создавай и восстанавливай **бэкапы**;
 - ![](image://icon-door.png?resize=32&classes=inline) Соединяй все приложения в **пользовательском портале** <small>(NGINX, SSOwat)</small>;
-- ![](image://icon-mail.png?resize=32&classes=inline) Включает **полный стэк электронной почты** <small>(Postfix, Dovecot, Rspamd, DKIM)</small>;
-- ![](image://icon-messaging.png?resize=32&classes=inline)... так-же хорошо как **встроенный сервер сообщений** <small>(XMPP)</small>;
+- ![](image://icon-mail.png?resize=32&classes=inline) Включает **полный набор для работы электронной почты** <small>(Postfix, Dovecot, Rspamd, DKIM)</small>;
+- ![](image://icon-messaging.png?resize=32&classes=inline)... более известный как **встроенный сервер сообщений** <small>(XMPP)</small>;
 - ![](image://icon-lock.png?resize=32&classes=inline) Управляй **SSL сертификатами** <small>(Основано на Let's Encrypt)</small> ;
 - ![](image://icon-shield.png?resize=32&classes=inline)... и **системами безопасности** <small>(Fail2ban, yunohost-firewall)</small>;
 
 ## История
 
-YunoHost был создан в Феврале 2012 после чего-то типа:
+YunoHost был создан в Феврале 2012 после чего-то вроде:
 
 <blockquote><p>"Блин, Я слишком ленив чтобы перенастроить мой почтовый сервер... Beudbeud, как вам удалось запустить свой малеький сервер LDAP?"</p>
 <small>Kload, Февраль 2012</small></blockquote>
 
-Всё что было нужно - админ панель для сервера Beudbeud-а чтобы сделать что-то юзабельное, поэтому Kload решил её разработать. В итоге, после автоматизации нескольких конфигураций и упаковки некоторых Веб-приложений, YunoHost v1 быз завершён.
+Всё что было нужно - админ панель для сервера Beudbeud-а чтобы сделать что-то юзабельное, поэтому Kload решил её разработать. В итоге, после автоматизации нескольких конфигураций и упаковки некоторых Веб-приложений, YunoHost v1 был завершён.
 
 Заметив большое внимание вокруг YunoHost и своими серверами, первоначальные разработчики вместе с новыми помощниками решили начать работу над версией 2. Более универсальной, более мощной, более простой и всё такое.
 
-Название **YunoHost** пришло из жаргонного "Y U NO Host". Этот [интернет мем](https://en.wikipedia.org/wiki/Internet_meme) должен проиллюстрировать это:
+Название **YunoHost** пришло из жаргонного "Y U NO Host". Этот [интернет мем](https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B5%D0%BC) должен проиллюстрировать это:
 ![](image://dude_yunohost.jpg)
 
 ## Чем не является YunoHost?

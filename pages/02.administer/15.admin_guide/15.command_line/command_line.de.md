@@ -47,49 +47,49 @@ Nach dem allerersten Login sollte man das root Passwort ändern. Der Server kön
 
 Wir sind nun bereit, mit der [Postinstallation](/postinstall) zu beginnen.
 
-## After installing YunoHost
+## Nach der Installation von YunoHost
 
-If you installed your server at home and are attempting to connect from outside your local network, make sure port 22 is correctly forwarded to your server. (Reminder : since YunoHost 3.4 you should connect using the `admin` user !)
+Wenn du deinen Server zu Hause installiert hast und versuchst, dich von außerhalb deines lokalen Netzwerks zu verbinden, stell sicher, dass Port 22 korrekt an deinen Server weitergeleitet wird. (Zur Erinnerung: seit YunoHost 3.4 solltest du dich mit dem Benutzer `admin` verbinden).
 
-If you only know the IP address of your server :
+Wenn du nur die IP-Adresse deines Servers kennst :
 
 ```bash
 ssh admin@111.222.333.444
 ```
 
-Then, you need to enter your administrator password created at [post-installation step](/postinstall).
+Dann musst du dein Administratorkennwort eingeben, das du unter [Post-Installationsschritt](/postinstall) erstellt hast.
 
-If you configured your DNS (or tweaked your `/etc/hosts`), you can simply use your domain name :
+Wenn du dein DNS konfiguriert hast (oder deine `/etc/hosts` optimiert hast), kannst du einfach deinen Domainnamen verwenden:
 
 ```bash
 ssh admin@your.domain.tld
 ```
 
-If you changed the SSH port, you need to add `-p <portnumber>` to the command, e.g. :
+Wenn du den SSH-Port geändert hast, musst du `-p <Portnummer>` an den Befehl anhängen, z.B. :
 
 ```bash
 ssh -p 2244 admin@your.domain.tld
 ```
 
-!!! If you are connected as `admin` and would like to become `root` for more comfort (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su`.
+!!! Wenn du als `admin` verbunden bist und aus Bequemlichkeit `root` werden möchtest (z.B. um nicht vor jedem Befehl `sudo` eintippen zu müssen), kannst du mit dem Befehl `sudo su` `root` werden.
 
-## Which users?
+## Welche Benutzer?
 
-By default, only the `admin` user can log in to YunoHost SSH server.
+Standardmäßig kann sich nur der Benutzer `admin` am YunoHost SSH-Server anmelden.
 
-YunoHost's users created via the administration interface are managed by the LDAP directory. By default, they can't connect via SSH for security reasons. If you want some users to have SSH access enabled, use the command:
+Die über die Administrationsoberfläche angelegten Benutzer von YunoHost werden über das LDAP-Verzeichnis verwaltet. Standardmäßig können sie sich aus Sicherheitsgründen nicht über SSH anmelden. Wenn du möchtest, dass einige Benutzer SSH-Zugang haben, verwende den Befehl:
 
 ```bash
 yunohost user permission add ssh.main <username>
 ```
 
-It is also possible to remove SSH access using the following:
+Es ist auch möglich, den SSH-Zugang wie folgt zu entfernen:
 
 ```bash
 yunohost user permission remove ssh.main <username>
 ```
 
-Finally, it is possible to add, delete and list SSH keys, to improve SSH access security, using the commands:
+Schließlich ist es möglich, SSH-Schlüssel hinzuzufügen, zu löschen und aufzulisten, um die Sicherheit des SSH-Zugangs zu verbessern, indem man die Befehle verwendet:
 
 ```bash
 yunohost user ssh add-key <username> <key>
@@ -97,20 +97,20 @@ yunohost user ssh remove-key <username> <key>
 yunohost user ssh list-keys <username>
 ```
 
-## Security and SSH
+## Sicherheit und SSH
 
-N.B. : `fail2ban` will ban your IP for 10 mimutes if you perform 5 failed login attempts. If you need to unban the IP, have a look at the page about [Fail2Ban](/fail2ban)
+N.B.: `fail2ban` sperrt deine IP für 10 Minuten, wenn du 5 fehlgeschlagene Login-Versuche durchführst. Wenn du die IP-Sperre aufheben willst, schau dir die Seite über [Fail2Ban](/fail2ban) an.
 
-A more extensive discussion about security & SSH can be found on the [dedicated page](/security).
+Eine ausführlichere Diskussion über Sicherheit & SSH findest du auf der [dedicated page](/security).
 
 
-## YunoHost command line
+## YunoHost Kommandozeile
 
-!!! Providing a full tutorial about the command line is quite beyond the scope of the YunoHost documentation : for this, consider reading a dedicated tutorial such as [this one](https://ryanstutorials.net/linuxtutorial/) or [this one](http://linuxcommand.org/). But be reassured that you don't need to be a CLI expert to start using it !
+!!! Ein vollständiges Tutorial über die Kommandozeile würde den Rahmen der YunoHost-Dokumentation sprengen: Lies dazu am besten ein spezielles Tutorial wie [dieses](https://ryanstutorials.net/linuxtutorial/) oder [dieses](http://linuxcommand.org/). Aber sei versichert, dass du kein CLI-Experte sein musst, um es zu benutzen!
 
-The `yunohost` command can be used to administer your server and perform the various actions similarly to what you do on the webadmin. The command must be launched either from the `root` user or from the `admin` user by preceeding them with `sudo`. (ProTip™ : you can become `root` with the command `sudo su` as `admin`).
+Der Befehl "yunohost" kann zur Verwaltung deines Servers verwendet werden und führt verschiedene Aktionen aus, die denen des Webadmin ähneln. Der Befehl muss entweder vom `root`-Benutzer oder vom `admin`-Benutzer durch Voranstellen von `sudo` gestartet werden. (ProTip™ : Du kannst `root` mit dem Befehl `sudo su` als `admin` werden).
 
-YunoHost commands usually have this kind of structure : 
+YunoHost-Befehle haben normalerweise diese Art von Struktur: 
 
 ```bash
 yunohost app install wordpress --label Webmail
@@ -119,7 +119,7 @@ yunohost app install wordpress --label Webmail
     category  action  argument      options
 ```
 
-Don't hesitate to browse and ask for more information about a given category or action using the the `--help` option. For instance, those commands : 
+Zögere nicht, nach weiteren Informationen zu einer bestimmten Kategorie oder Aktion zu fragen, indem du die Option `--help` verwendest. Zum Beispiel listen diese Befehle : 
 
 ```bash
 yunohost --help
@@ -127,4 +127,4 @@ yunohost user --help
 yunohost user create --help
 ```
 
-will successively list all the categories available, then the actions available in the `user` category, then the usage of the action `user create`. You might notice that the YunoHost command tree is built with a structure similar to the YunoHost admin pages.
+nacheinander alle verfügbaren Kategorien auf, dann die in der Kategorie `Benutzer` verfügbaren Aktionen, dann die Verwendung der Aktion `Benutzer erstellen`. Du wirst feststellen, dass der YunoHost-Befehlsbaum eine ähnliche Struktur aufweist wie die YunoHost-Admin-Seiten.

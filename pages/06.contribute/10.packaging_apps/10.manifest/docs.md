@@ -84,6 +84,26 @@ ram.runtime = "1M"
 - `ram.build` (size) : an *estimate* minimum ram requirement when building the app (this may be way different than `ram.runtime` because some apps have a peak 1~2G RAM when building sometimes...). For example: 50M, 400M, 1G, ...
 - `ram.runtime` (size) : an *estimate* minimum ram requirement when the app is active and running. For example: 50M, 400M, 1G, ...
 
+## Antifeatures
+
+This section is completely optional and, for most apps, doesn't exist at all.
+
+Some applications have limitations, they might be due to non-free dependencies, arbitrary limitations, etc. Yunohost provides UI in the catalog to show such antifeatures.
+
+The declaration of antifeatures is a 3-steps process:
+
+- Find the relevant antifeature in [the list of supported antifeatures](https://github.com/YunoHost/apps/blob/master/antifeatures.toml)
+- Declare the app's antifeature in the [app catalog](https://github.com/YunoHost/apps/blob/master/apps.toml)
+- Describe the app's antifeature in its `manifest.toml`:
+  
+  ```toml
+  [antifeatures]
+  arbitrary-limitations.en = "Some description about the specific limitations of this app."
+  ```
+
+The format of this section is a `dict` where keys are antifeature IDs, and the values
+are translated strings (`dict` of `lang code`->`str`).
+
 
 ## Install questions
 
@@ -139,10 +159,15 @@ Every install question is not necessarily mandatory (e.g. a question to propose 
 
 ## Resource system
 
-The resource section corresponds to recurring app needs that are to be provisioned/deprovisioned by the core of YunoHost. They include for example: system user, apt dependencies, install dir, data dir, port, permissions, SQL database... Each resource is to be provisioned *before* running the install script, deprovisioned *after* the remove script, and automatically upgraded if needed before running the upgrade script (or provisionned if introduced in the new app version, or deprovisioned if removed w.r.t. the previous app version)
+The resource section corresponds to recurring app needs that are to be provisioned/deprovisioned by the core of YunoHost. They include for example: downloading the app's sources, creating a system user, installing apt dependencies, creating the install dir, creating the data dir, finding an available internal port, configuring permissions, initializing an SQL database... Each resource is to be provisioned *before* running the install script, deprovisioned *after* the remove script, and automatically upgraded if needed before running the upgrade script (or provisionned if introduced in the new app version, or deprovisioned if removed w.r.t. the previous app version)
 
 ```toml
 [resources]
+```toml
+    [resources.sources.main]
+    url = "https://some.domain/url/where/to/download/the/app/sources.tar.gz"
+    sha256 = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+
     [resources.system_user]
 
     [resources.install_dir]
@@ -155,6 +180,7 @@ The resource section corresponds to recurring app needs that are to be provision
 ```
 
 In this example:
+- `sources.main`: the URL+checksum from which the app sources will be downloaded + validated
 - `system_user`: a system (unix) user will be created for this app, using the app id as username.
 - `install_dir`: an install dir will be initialized, named `/var/www/$app` by default. Additional `owner` and `group` property allow to change the owner/group and r/w/x permissions on the created folder.
 - `permissions`: an SSOwat `$app.main` permission will be initialized such that the SSO allows access to the app's endpoint according to the chosen `init_main_permission` question. The `main.url = "/"` is here to tell that the main endpoint is the "root" of the app, that is `https://domain.tld/helloworld/` if the app is installed with `domain=domain.tld` and `path=/helloworld`

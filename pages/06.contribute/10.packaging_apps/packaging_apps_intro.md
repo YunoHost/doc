@@ -69,6 +69,7 @@ Among the file contained in a package, the most important ones are:
 - the **app manifest** `manifest.toml` <small>(or `.json` in the past)</small>
     - this can be seen as the ID card of the application, containing various metadatas. 
     - it also contains the questions asked during the installation of the app.
+    - and a bunch of "resources" to initialize, such as sources to download or apt dependencies to install
 - **scripts/** contains a bunch of bash scripts corresponding to actions exposed in YunoHost
    - `_common.sh`: common variables or custom functions included in other scripts
    - `install`/`remove`: the install and remove procedure
@@ -76,7 +77,6 @@ Among the file contained in a package, the most important ones are:
    - `backup`/`restore`: the backup/restore procedures 
    - (`change_url`): changing where the app is installed in terms of web access url
 - **conf/** contains a bunch of configuration templates used when installing the app. Here are some example of commonly found files:
-   - `app.src`: contains the URL and checksum to downlowd the application sources
    - `nginx.conf`: the NGINX (=web server) configuration template for this app
    - `systemd.service`: the systemd service configuration template for this app
    - `config.json/yaml/???`: the app's configuration template
@@ -108,6 +108,8 @@ Roughly speaking, the install itself generally consists of the following operati
 ## 5. Creating your very first YunoHost package
 
 Unless you really want to start from scratch or from [`example_ynh`](https://github.com/YunoHost/example_ynh), one common practice is to identify an app similar to the one you're trying to package - typically because it relies on the same technologies - clone the corresponding code repository, and adapt the various files. 
+
+TODO/FIXME : here we should list a bunch of well-knowh apps for classic technologies
 
 - PHP apps:
 - NodeJS apps:
