@@ -10,6 +10,7 @@ page-toc:
   depth: 3
 ---
 
+!! This application is currently broken! To help fix this application please checkout [https://github.com/YunoHost-Apps/archivist_ynh](https://github.com/YunoHost-Apps/archivist_ynh)
 
 ## Functionality
 This application is based on rsync and GPG, it offers:
