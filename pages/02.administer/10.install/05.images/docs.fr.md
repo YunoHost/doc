@@ -1,21 +1,26 @@
 ---
-title: Pre-installed images
+title: Images
 template: docs
 taxonomy:
-    category: docs
+    category:
+        - docs
 routes:
-  default: '/images'
+    default: /images
 ---
 
 <span class="javascriptDisclaimer">
-This page requires Javascript enabled to display properly :s.
+Cette page requiert que Javascript soit activé pour s'afficher correctement :s.
 <br/>
 <br/>
 </span>
 
-!!! Even if the image does not correspond to the latest version of YunoHost, you can still use it and do a regular system upgrade after setting up!
+!!!! Même si l'image ne correspond pas à la dernière version de YunoHost, vous pouvez tout de même l'utiliser puis faire une mise à jour du système après l'installation !
 
-!!! If you wish to check the validity of our signed images, you can [download our public key](https://forge.yunohost.org/yunohost.asc).
+!!! Si vous souhaitez vérifier la validité de nos images signées, vous pouvez [télécharger notre clé publique](https://forge.yunohost.org/yunohost.asc).
+
+! Certaines images sont encore basées sur Debian Buster (YunoHost v4.x) et nécessitent que vous fassiez la commande `apt update` en SSH ou ligne de commande pour continuer les mises à jour.
+! Répondez Oui à l'avertissement à propos du changement de `stable` vers `oldstable`.
+! Cette opération n'est pas nécessaire pour YunoHost 11.x (images Bullseye)
 
 <div class="hardware-image">
 <div id="cards-list">
@@ -35,7 +40,7 @@ This page requires Javascript enabled to display properly :s.
             <div class="flex-child annotation"><a href="{file}.sig">[fa=tag] Signature</a></div>
         </div>
         <div class="btn-group" role="group">
-            <a href="{file}" target="_BLANK" type="button" class="btn btn-info col-sm-12"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Download <small>{version}</small></a>
+            <a href="{file}" target="_BLANK" type="button" class="btn btn-info col-sm-12"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> Télécharger <small>{version}</small></a>
         </div>
     </div>
 </template>
