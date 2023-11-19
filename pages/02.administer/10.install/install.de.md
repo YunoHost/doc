@@ -765,32 +765,32 @@ yunohost diagnosis show --issues --human-readable
 [/ui-tab]
 [/ui-tabs]
 
-## [fa=lock /] Get a Let's Encrypt certificate
+## [fa=lock /] Ein Let's Encrypt Zertifikat holen
 
-Once you configured DNS records and port forwarding (if needed), you should be able to install a Let's Encrypt certificate. This will get rid of the spooky security warning from earlier for new visitors.
+Sobald du die DNS-Einträge und die Portweiterleitung (falls erforderlich) konfiguriert hast, solltest du ein Let's Encrypt-Zertifikat einrichten können. Dadurch entfällt für neue Besucher die gruselige Sicherheitswarnung von vorhin.
 
-For more detailed instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/certificate).
+Ausführlichere Anweisungen oder weitere Informationen zu SSL/TLS-Zertifikaten findest du [hier auf der entsprechenden Seite](/certificate).
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="From the web interface"]
+[ui-tab title="Über die Weboberfläche"]
 
-Go in Domains > Click on your domain > SSL Certificate
+Gehe zu Domains > Klicke auf deine Domain > SSL Zertifikat
 
-[figure class="nomargin" caption="Preview of the diagnostic panel"]
+[figure class="nomargin" caption="Vorschau des Diagnosepanels"]
 ![](image://certificate-before-LE.png?resize=100%&class=inline)
 [/figure]
 
 [/ui-tab]
-[ui-tab title="From the command line"]
+[ui-tab title="In der Kommandozeile"]
 ```
 yunohost domain cert install
 ```
 [/ui-tab]
 [/ui-tabs]
 
-## ![](image://tada.png?resize=32&classes=inline) Congratz!
+## ![](image://tada.png?resize=32&classes=inline) Gratulation!
 
-You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](/apps). Don't forget to [plan backups](/backup) !
+Jetzt hast du ein sehr gut konfigurierten Server. Wenn du neu bei YunoHost bist, empfehlen wir dir, einen Blick auf [die geführte Tour](/overview) zu werfen. Du solltest auch in der Lage sein, [deine Lieblingsanwendungen zu installieren](/apps). Vergiss nicht, [Backups zu planen](/backup)!
 
 {% endif %}
 {% endif %}
