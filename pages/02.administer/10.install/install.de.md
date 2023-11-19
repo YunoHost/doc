@@ -532,63 +532,63 @@ Starte die virtuelle Maschine nach der Auswahl des YunoHost Image.
 {% endif %}
 
 {% if regular or virtualbox %}
-## [fa=rocket /] Launch the graphical install
+## [fa=rocket /] Die grafische Installation starten
 
-You should see a screen like this:
+Du solltest einen Bildschirm wie diesen sehen:
 
-[figure class="nomargin" caption="Preview of the ISO menu"]
+[figure class="nomargin" caption="Vorschau des ISO Menüs"]
 ![](image://virtualbox_3.png?class=inline)
 [/figure]
 [ui-tabs position="top-left" active="0" theme="lite"]
 
-[ui-tab title="Installation classique sur un disque entier"]
+[ui-tab title="Klassische Installation auf einer ganzen Festplatte"]
 
-!! N.B.: Once you have validated the keyboard layout, the installation will be launched and will completely erase the data on your hard disk!
+!! Anmerkung: Sobald du das Tastaturlayout bestätigt hast, wird die Installation gestartet und die Daten auf deiner Festplatte werden vollständig gelöscht!
 
-  1. Select `Graphical install`
-  2. Select your language, your location, your keyboard layout, and eventually your timezone.
-  3. The installer will then download and install all required packages.
+  1. Wähle `Graphical install` aus
+  2. Wähle deine Sprache, deinen Standort, dein Tastaturlayout und schließlich deine Zeitzone aus.
+  3. Das Installationsprogramm lädt dann alle erforderlichen Pakete herunter und installiert sie.
 
 [/ui-tab]
-[ui-tab title="Installation in expert mode"]
+[ui-tab title="Installation im Expertenmodus"]
 
-The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.
+Das YunoHost-Projekt hat die klassische Installation so weit wie möglich vereinfacht, damit sich möglichst viele Menschen nicht in zu technischen oder fallbezogenen Fragen verlieren.
 
-With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/external_storage). 
+Mit der Installation im Expertenmodus hast du mehr Möglichkeiten, insbesondere was die genaue Partitionierung deiner Speichermedien betrifft. Du kannst dich auch für den klassischen Modus entscheiden und [deine Festplatten anschließend hinzufügen](/external_storage). 
 
-### Summary of the steps in expert mode:
-  1. Select `Expert graphical install`.
-  2. Select your language, location, keyboard layout and possibly your timezone.
-  3. Partition your disks. This is where you can set up a RAID or encrypt all or part of the server.
-  4. Specify a possible HTTP proxy to use for the installation of the packages
-  5. Specify on which volumes grub should be installed
+### Zusammenfassung der Schritte im Expertenmodus:
+  1. Wähle `Expert graphical install` aus.
+  2. Wähle deine Sprache, deinen Standort, dein Tastaturlayout und möglicherweise deine Zeitzone aus.
+  3. Partitioniere deine Festplatten. Hier kanst du ein RAID einrichten oder den Server ganz oder teilweise verschlüsseln.
+  4. Gib einen möglichen HTTP-Proxy an, der für die Installation der Pakete verwendet werden soll.
+  5. Gib an, auf welchen Volumes Grub installiert werden soll.
 
-### Regarding partitioning
+### Bezüglich der Partitionierung
 
-In general, we recommend against partitioning `/var`, `/opt`, `/usr`, `/bin`, `/etc`, `/lib`, `/tmp` and `/root` on separate partitions. This will prevent you from having to worry about full partitions that could crash your machine, cause app installations to fail, or even corrupt your databases.
+Im Allgemeinen raten wir davon ab, „/var“, „/opt“, „/usr“, „/bin“, „/etc“, „/lib“, „/tmp“ und „/root“ auf separaten Partitionen zu partitionieren. Dadurch musst du dir keine Sorgen über volle Partitionen machen, die deinen Computer zum Absturz bringen, zum Scheitern von App-Installationen führen oder sogar deine Datenbanken beschädigen könnten.
 
-For performance reasons, it is recommended to mount your fastest storage (SSD) on the root `/`.
+Aus Performance Gründen wird empfohlen, den schnellsten Speicher (SSD) als root `/` zu mounten.
 
-If you have one or more hard drives to store data, you can choose to mount it on one of these folders depending on your usage.
+Wenn du über eine oder mehrere Festplatten zum Speichern von Daten verfügst, kannst du diese je nach Nutzung in einem dieser Ordner bereitstellen:
 
 | Path | Contents |
 |--------|---|
-| `/home` | User folders accessible via SFTP |
-| `/home/yunohost.backup/archives` | YunoHost backups to be placed ideally elsewhere than on the disks that manage the data |
-| `/home/yunohost.app` | Heavy data from YunoHost applications (nextcloud, matrix...) |
-| `/home/yunohost.multimedia` | Heavy data shared between several applications |
+| `/home` | Benutzerordner, auf die über SFTP zugegriffen werden kann |
+| `/home/yunohost.backup/archives` | YunoHost-Backups, die idealerweise an anderer Stelle als auf den Datenträgern platziert werden, auf denen die Daten verwaltet werden |
+| `/home/yunohost.app` | Umfangreiche Datenmengen aus YunoHost Apps (nextcloud, matrix...) |
+| `/home/yunohost.multimedia` | Große Datenmenge, die von mehreren Anwendungen gemeinsam genutzt wird |
 | `/var/mail` | User mail
 
-If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/external_storage).
+Wenn du Flexibilität haben möchtest und die Größe von Partitionen nicht (verändern) möchtest, kannst du dich auch dafür entscheiden, auf `/mnt/hdd` zu mounten und dieser [Anleitung zum Mounten aller dieser Ordner mit `mount --bind`](/external_storage) zu folgen.
 
-### About encryption
-Be aware that if you encrypt all or part of your disks, you will have to type the passphrase every time you restart your server, which can be a problem if you are not on site. There are however solutions (quite difficult to implement) that allow you to type the passphrase via SSH or via a web page (search for "dropbear encrypted disk").
+### Über Verschlüsselung
+Beachte: Wenn du deine Festplatten ganz oder teilweise verschlüsselst, musst du bei jedem Neustart deines Servers die Passphrase eingeben. Das kann ein Problem darstellen, wenn du nicht vor Ort bist. Es gibt jedoch (ziemlich schwierig zu implementierende) Lösungen, die es dir ermöglichen, die Passphrase über SSH oder über eine Webseite einzugeben (suche nach "Dropbear Encrypted Disk").
 
-### About RAID
-Keep in mind that:
- * the disks in your RAIDs must be of different brands, wear and tear or batches (especially if they are SSDs)
- * a RAID 1 (even without a spare) is more reliable than a RAID 5 from a probability point of view
- * hardware raids are dependent on the raid card, if the card fails you will need a replacement to read and rebuild the array
+### Über RAID
+Denk daran, dass:
+ * die Festplatten in deinen RAIDs von unterschiedlichen Marken, Abnutzungserscheinungen oder Chargen sein müssen (insbesondere, wenn es sich um SSDs handelt).
+ * ein RAID 1 (auch ohne Ersatz) aus Wahrscheinlichkeitssicht zuverlässiger als ein RAID 5 ist.
+ * und Hardware-Raids von der Raid-Karte abhängen. Wenn die Karte ausfällt, benötigst du einen Ersatz, um das Array zu lesen und neu aufzubauen.
 
 [/ui-tab]
 [/ui-tabs]
