@@ -596,18 +596,18 @@ Denk daran, dass:
 
 
 {% if rpi012 %}
-## [fa=bug /] Connect to the board and hotfix the image
-Raspberry Pi 1 and 0 are not totally supported due to [compilation issues for this architecture](https://github.com/YunoHost/issues/issues/1423).
+## [fa=bug /] Mit dem Board verbinden und das Image per Hotfix reparieren
+Raspberry Pi 1 und 0 werden aufgrund von [Kompilierungsproblemen für diese Architektur](https://github.com/YunoHost/issues/issues/1423) nicht vollständig unterstützt.
 
-However, it is possible to fix by yourself the image before to run the initial configuration.
+Es ist jedoch möglich, das Image selbst zu reparieren, bevor du die Erstkonfiguration ausführst.
 
-To achieve this, you need to connect on your raspberry pi as root user [via SSH](/ssh) with the temporary password `yunohost`:
+Um das zu erreichen, musst du dich auf deinem Raspberry Pi als Root-Benutzer [über SSH](/ssh) mit dem temporären Passwort „yunohost“ verbinden:
 ```
 ssh root@yunohost.local
 ```
-(or `yunohost-2.local`, and so on if multiple YunoHost servers are on your network)
+(oder „yunohost-2.local“ usw., wenn sich mehrere YunoHost-Server in deinem Netzwerk befinden)
 
-Then run the following commands to work around the metronome issue:
+Führe dann die folgenden Befehle aus, um das Metronomproblem zu umgehen:
 ```
 mv /usr/bin/metronome{,.bkp}   
 mv /usr/bin/metronomectl{,.bkp} 
@@ -615,17 +615,17 @@ ln -s /usr/bin/true /usr/bin/metronome
 ln -s /usr/bin/true /usr/bin/metronomectl
 ```
 
-And this one to work around the upnpc issue:
+Und diesen hier, um das UpnPC-Problem zu umgehen:
 ```
 sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/firewall.py
 ```
 
-! This last command need to be run after each yunohost upgrade :/
+! Der letzte Befehl muss nach jedem Yunohost-Upgrade ausgeführt werden :/
 
 {% elseif arm_unsup %}
-## [fa=terminal /] Connect to the board
+## [fa=terminal /] Verbindung zum Board
 
-Next you need to [find the local IP address of your server](/finding_the_local_ip) to connect as root user [via SSH](/ssh) with the temporary password `1234`.
+Als nächstes musst du [die lokale IP-Adresse deines Servers finden](/finding_the_local_ip), um dich als Root-Benutzer [über SSH](/ssh) mit dem temporären Passwort `1234` zu verbinden.
 
 ```
 ssh root@192.168.x.xxx
