@@ -637,53 +637,53 @@ ssh root@192.168.x.xxx
 
 
 {% if vps_debian or arm_unsup %}
-## [fa=rocket /] Run the install script
+## [fa=rocket /] Das Installationsskript ausführen
 
-- Open a command line prompt on your server (either directly or [through SSH](/ssh))
-- Make sure you are root (or type `sudo -i` to become root)
-- Run the following command:
+- Öffne eine Kommandozeile auf deinem Server (entweder direkt oder [über SSH](/ssh))
+- Stelle sicher, dass du Root bist (oder gib „sudo -i“ ein, um Root zu werden)
+- Führe den folgenden Befehl aus:
 
 ```bash
 curl https://install.yunohost.org | bash
 ```
 
-!!! If `curl` is not installed on your system, you might need to install it with `apt install curl`.
-!!! Otherwise, if the command does not do anything, you might want to `apt install ca-certificates`
+!!! Falls `curl` nicht auf deinem System installiert ist, kann es sein, dass du es mit `apt install curl` installieren musst.
+!!! Falls der Befehl nichts bewirkt, kann es sein, dass du möglicherweise `apt install ca-certificates` ausführen musst.
 
-!!! **Note for advanced users concerned with the `curl|bash` approach:** consider reading ["Is curl|bash insecure?"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) on Sandstom's blog, and possibly [this discussion on Hacker News](https://news.ycombinator.com/item?id=12766350&noprocess).
+!!! **Hinweis für fortgeschrittene Benutzer, die sich mit dem `curl|bash`-Ansatz befassen approach:** Ziehe das Lesen von ["Ist curl|bash unsicher?"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) auf Sandstoms Blog und möglicherweise [diese Diskussion auf Hacker News](https://news.ycombinator.com/item?id=12766350&noprocess) in Erwägung.
 
 {% endif %}
 
-## [fa=cog /] Proceed with the initial configuration
+## [fa=cog /] Mit der Erstkonfiguration fortfahren
 
-!!! If you are in the process of restoring a server using a YunoHost backup, you should skip this step and instead [restore the backup instead of the postinstall step](/backup#restoring-during-the-postinstall).
+!!! Wenn du dabei bist, einen Server mithilfe eines YunoHost-Backups wiederherzustellen, solltest du diesen Schritt überspringen und [anstelle des Postinstallationsschritts das Backup wiederherstellen](/backup#restoring-during-the-postinstall).
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="From the web interface"]
+[ui-tab title="Über die Weboberfläche"]
 {%if at_home %}
-In an internet browser, type **{% if internetcube %}`https://internetcube.local`{% else %}`https://yunohost.local` (or `yunohost-2.local`, and so on if multiple YunoHost servers are on your network){% endif %}**.
+Gib in einem Internet Browser **{% if internetcube %}`https://internetcube.local`{% else %}`https://yunohost.local` (oder `yunohost-2.local` usw., wenn mehrere YunoHost Server in deinem Netzwerk sind){% endif %}** ein.
 
-!!! If this doesn't work, you can [look for the the local IP address of your server](/finding_the_local_ip). The address typically looks like `192.168.x.y`, and you should therefore type `https://192.168.x.y` in your browser's address bar.
+!!! Wenn das nicht funktioniert, kannst du [nach der lokalen IP-Adresse deines Servers suchen](/finding_the_local_ip). Die Adresse sieht normalerweise wie `192.168.x.y` aus und du solltest daher `https://192.168.x.y` in die Adressleiste deines Browsers eingeben.
 {% else %}
-You can perform the initial configuration with the web interface by typing in the address bar of your web browser **the public IP address of your server**. Typically, your VPS provider should have provided you with the IP of the server.
+Du kannst die Erstkonfiguration mit der Weboberfläche durchführen, indem du in die Adresszeile deines Webbrowsers **die öffentliche IP-Adresse deines Servers** eingibst. Normalerweise sollte dir dein VPS-Anbieter die IP des Servers mitgeteilt haben.
 {% endif %}
 
-! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. {% if not wsl %}You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). {% endif %} For now, you should add a security exception to accept the current certificate. (Though, PLEASE, do not take the habit of blindly accepting this kind of security alert!)
+! Beim ersten Besuch wirst du höchstwahrscheinlich auf eine Sicherheitswarnung bezüglich des vom Server verwendeten Zertifikats stoßen. Im Moment verwendet dein Server ein selbstsigniertes Zertifikat. {% if not wsl %}Später kannst du ein von Webbrowsern automatisch erkanntes Zertifikat hinzufügen, wie in der [Zertifikatdokumentation](/certificate) beschrieben ist. {% endif %} Zunächst solltest du eine Sicherheitsausnahme hinzufügen, um das aktuelle Zertifikat zu akzeptieren. (Aber BITTE gewöhne dir nicht an, diese Art von Sicherheitswarnung blind zu akzeptieren!)
 
 {% if not internetcube %}
-You should then land on this page :
+Dann solltest du auf dieser Seite landen:
 
-[figure class="nomargin" caption="Preview of the Web initial configuration page"]
+[figure class="nomargin" caption="Vorschau der Web-Erstkonfigurationsseite"]
 ![Initial configuration page](image://postinstall_web.png?resize=100%&class=inline)
 [/figure]
 
 {% endif %}
 [/ui-tab]
-[ui-tab title="From the command line"]
+[ui-tab title="Mit der Kommandozeile"]
 
-You can also perform the postinstallation with the command `yunohost tools postinstall` directly on the server, or [via SSH](/ssh).
+Du kannst die Post-Installation auch mit dem Befehl `yunohost tools postinstall` direkt auf dem Server oder [über SSH](/ssh) durchführen.
 
-[figure class="nomargin" caption="Preview of the command-line post-installation"]
+[figure class="nomargin" caption="Vorschau der Kommandozeile nach der Post-Installation"]
 ![Initial configuration with CLI](image://postinstall_cli.png?resize=100%&class=inline)
 [/figure]
 
@@ -692,30 +692,30 @@ You can also perform the postinstallation with the command `yunohost tools posti
 
 {% if not internetcube %}
 
-##### [fa=globe /] Main domain
+##### [fa=globe /] Haupt-Domain
 
-This will be the domain used by your server's users to access the **authentication portal**. You can later add other domains, and change which one is the main domain if needed.
+Dies ist die Domäne, über die die Benutzer deines Servers auf das **Authentifizierungsportal** zugreifen. Du kannst später weitere Domains hinzufügen und bei Bedarf ändern, welche Domain die Haupt-Domain ist.
 
 {% if not wsl %}
 
-* If you're new to self-hosting and do not already have a domain name, we recommend using a **.nohost.me** / **.noho.st** / **.ynh.fr** (e.g. `homersimpson.nohost.me`). Provided that it's not already taken, the domain will be configured automatically and you won't need any further configuration step. Please note that the downside is that you won't have full-control over the DNS configuration.
+* Wenn du neu im Self-Hosting bist und noch keinen Domain-Namen hast, empfehlen wir die Verwendung eines **.nohost.me** / **.noho.st** / **.ynh.fr** (z.B. `homersimpson.nohost.me`). Sofern die Domain noch nicht vergeben ist, wird sie automatisch konfiguriert und du benötigst keinen weiteren Konfigurationsschritt. Bitte beachte, dass der Nachteil darin besteht, dass du nicht die vollständige Kontrolle über die DNS-Konfiguration hast.
 
-* If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/dns_config).
+* Wenn du bereits einen Domain-Namen besitzt, möchtest du ihn wahrscheinlich hier verwenden. Später musst du DNS-Einträge konfigurieren, so wie [hier](/dns_config) beschrieben.
 
-!!! Yes, you *have to* configure a domain name. If you don't have any domain name and don't want a **.nohost.me** / **.noho.st** / **.ynh.fr** either, you can set up a dummy domain such as `yolo.test` and tweak your **local** `/etc/hosts` file such that this dummy domain [points to the appropriate IP, as explained here](/dns_local_network).
+!!! Ja, du *musst* eine Domain-Namen konfigurieren. Wenn du keinen Domain-Namen hast und auch keine **.nohost.me** / **.noho.st** / **.ynh.fr** möchtest, kannst du eine Dummy-Domain einrichten wie `yolo.test` und passt deine **lokale** `/etc/hosts` Datei so an, dass diese Dummy-Domain [auf die entsprechende IP verweist, wie hier erklärt](/dns_local_network).
 
 {% else %}
 
-You will have to choose a fake domain, since it will not be accessible from outside.
-For example, `ynh.wsl`. The tricky part is advertising this domain to your host.
+Du musst eine Fake-Domain wählen, da diese von außen nicht zugänglich ist.
+Zum Beispiel `ynh.wsl`. Der schwierige Teil besteht darin, diese Domain bei deinem Host zu bekannt zu machen.
 
-Alter your `C:\Windows\System32\drivers\etc\hosts` file. You should have a line starting by `::1`, update it or add it if needed to get:
+Ändere deine `C:\Windows\System32\drivers\etc\hosts` Datei. Du solltest eine Zeile haben, die mit `::1` beginnt. Aktualisiere sie oder füge sie bei Bedarf hinzu, um Folgendes zu erhalten:
 
 ```
 ::1    ynh.wsl localhost
 ```
 
-If you want to create subdomains, do not forget to add them in the `hosts` file too:
+Wenn du Subdomains erstellen möchtest, denk daran, diese auch in der Datei `hosts` hinzuzufügen:
 
 ```
 ::1    ynh.wsl subdomain.ynh.wsl localhost
@@ -723,11 +723,11 @@ If you want to create subdomains, do not forget to add them in the `hosts` file 
 
 {% endif %}
 
-##### [fa=key /] First user
+##### [fa=key /] Der erste Benutzer
 
-[Since YunoHost 11.1](https://forum.yunohost.org/t/yunohost-11-1-release-sortie-de-yunohost-11-1/23378), the first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/ssh) or [**SFTP**](/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld` : these emails may be used to send technical informations or alerts. You can later add additional users, which you can also add to the Admins group.
+[Seit YunoHost 11.1](https://forum.yunohost.org/t/yunohost-11-1-release-sortie-de-yunohost-11-1/23378) wird in dieser Phase der erste Benutzer erstellt. Du solltest einen Benutzernamen und ein einigermaßen komplexes Passwort wählen. (Wir können nicht genug betonen, dass das Passwort **robust** sein sollte!) Dieser Benutzer wird der Administratoren-Gruppe hinzugefügt und kann daher auf das Benutzerportal und die Webadministrationsoberfläche zugreifen und eine Verbindung  [über **SSH**](/ssh) oder [**SFTP**](/filezilla) herstellen. Administratoren erhalten außerdem E-Mails an `root@yourdomain.tld` und `admin@yourdomain.tld`: Diese E-Mails können zum Versenden technischer Informationen oder Warnungen verwendet werden. Du kannst später weitere Benutzer hinzufügen, die du auch zur Administratoren-Gruppe hinzufügen kannst.
 
-This user replaces the old `admin` user, which some old documentation page may still refer to. In which case : just replace `admin` with your username.
+Dieser Benutzer ersetzt den alten `admin` Benutzer, auf den sich einige alte Dokumentationsseiten möglicherweise noch beziehen. In diesem Fall: Ersetzen Sie einfach `admin` durch Ihren Benutzernamen.
 
 
 ## [fa=stethoscope /] Run the initial diagnosis
