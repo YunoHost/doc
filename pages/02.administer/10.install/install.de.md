@@ -730,33 +730,34 @@ Wenn du Subdomains erstellen möchtest, denk daran, diese auch in der Datei `hos
 Dieser Benutzer ersetzt den alten `admin` Benutzer, auf den sich einige alte Dokumentationsseiten möglicherweise noch beziehen. In diesem Fall: Ersetzen Sie einfach `admin` durch Ihren Benutzernamen.
 
 
-## [fa=stethoscope /] Run the initial diagnosis
+## [fa=stethoscope /] Die Erstdiagnose durchführen
 
-Once the postinstall is done, you should be able to actually log in the web admin interface using the credentials of the first user you just created.
+Sobald die Post-Installation abgeschlossen ist, solltest du dich tatsächlich mit den Credentials des ersten Benutzers, den du gerade erstellt hast, bei der Webadministrationsoberfläche anmelden können.
 
 {% if wsl %}
-! Reminder: YunoHost in WSL will likely not be reachable from outside, and real domains and certificates won't be able to be assigned to it.
+! Erinngerung: YunoHost wird in der WSL von außen wahrscheinlich nicht erreichbar sein und ihr können keine echten Domains und Zertifikate zugewiesen werden.
 {% endif %}
 {% if virtualbox %}
-! Reminder: YunoHost in VirtualBox will likely not be reachable from outside without further network configuration in Virtualbox's settings. The diagnosis will probably complain about this.
+! Erinnerung: YunoHost wird in VirtualBox ohne weitere Netzwerkkonfiguration in den Virtualbox-Einstellungen wahrscheinlich nicht von außen erreichbar sein. Die Diagnose wird sich darüber wahrscheinlich beschweren.
 {% endif %}
 
-The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured - and guide you in how to fix issues. The diagnosis will run twice a day and send an alert if issues are detected.
+Das Diagnosesystem soll eine einfache Möglichkeit bieten, zu überprüfen, ob alle kritischen Aspekte deines Servers ordnungsgemäß konfiguriert sind – und dich bei der Behebung von Problemen unterstützen. Die Diagnose wird zweimal täglich ausgeführt und sendet eine Warnung, wenn Probleme erkannt werden.
 
-!!! N.B. : **don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/dns_config) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain), add a swapfile if not enough ram {% if at_home %} and/or [port forwarding](/isp_box_config){% endif %}.
+!!! Anmerkung : **Lauf nicht davon** ! Wenn du die Diagnose zum ersten Mal ausführst, ist es durchaus zu erwarten, dass eine Reihe gelber/roter Warnungen angezeigt werden, da du normalerweise [DNS-Einträge konfigurieren](/dns_config) musst (wenn du keine `.nohost.me`/`noho.st`/`ynh.fr` Domain verwendest). Lege ein Swapfile an, wenn nicht genügend RAM vorhanden ist {% if at_home %} und/oder richte [Portweiterleitung](/isp_box_config) ein.{% endif %}
 
-!!! If an alert is not relevant (for example because you don't intend on using a specific feature), it is perfectly fine to flag the issue as 'ignored' by going in the webadmin > Diagnosis, and clicking the ignore button for this specifc issue.
+!!! Ist eine Warnung für dich nicht relevant (z.B. weil du nicht vor hast, eine bestimmte Funktion zu verwenden), ist es völlig in Ordnung, das Problem als 'ignoriert' zu markieren, indem du im Webadmin > Diagnose auf den "Ignorieren" Button (für diese bestimmte Funktion) klickst.
+
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="(Recommended) From the web interface"]
-To run a diagnosis, go on Web Admin in the Diagnosis section. Click Run initial diagnosis and you should get a screen like this :
+[ui-tab title="(Empfohlen) Über die Weboberfläche"]
+Um eine Diagnose auszuführen, gehe im Web Admin auf den Abschnitt "Diagnose". Klicke auf "Erstdiagnose ausführen". Du solltest nun einen Bildschirm wie diesen erhalten:
 
-[figure class="nomargin" caption="Preview of the diagnostic panel"]
+[figure class="nomargin" caption="Vorschau des Diagnosepanels"]
 ![](image://diagnostic.png?resize=100%&class=inline)
 [/figure]
 
 [/ui-tab]
-[ui-tab title="From the command line"]
+[ui-tab title="In der Kommandozeile"]
 ```
 yunohost diagnosis run
 yunohost diagnosis show --issues --human-readable
