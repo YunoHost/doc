@@ -214,9 +214,7 @@ If your tests are successful, you should keep the mount points, otherwise you sh
 To begin with, let's find the UUID (universal identifier) of our disk with :
 
 ```bash
-blkid | grep "/dev/YOUR_DISK1:"
-# Returns something like :
-# /dev/sda1:UUID="cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7" TYPE="ext4" PARTUUID="34e4b02c-02"
+lsblk -f
 ```
 
 Let's add a line to the `/etc/fstab` file that handles the mounting of disks at boot time. So we open the file with `nano` :
