@@ -55,12 +55,12 @@ app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ss
 Si on est dans le cas d'une migration ou d'une réinstallation, il faut réinstaller borg de la même façon. Si le repo est distant il faut changer la clé publique.
 
 Lister les archives disponibles
-```
+```bash
 app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg list "$(yunohost app setting $app repository)"
 ```
 
 Créer les archives tar (une archive par app et partie de système)
-```
+```bash
 app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg export-tar "$(yunohost app setting $app repository)::ARCHIVE" /home/yunohost.backup/archives/ARCHIVE.tar
 ```
 
@@ -70,12 +70,12 @@ Puis restaurer l'archive de façon classique.
 Si l'espace disponible est inférieur au poids de votre archive, des données décompressées et des dépendances, vous devrez restaurer partie par partie, app par app.
 
 Si restaurer app par app ne suffit pas OU si une archive est trop grosse, il peut être judicieux de générer une archive tar sans les "grosses" données d'une app comme si elle avait été générée avec l'[option BACKUP_CORE_ONLY](/backup/include_exclude_files#ne-pas-sauvegarder-les-grosses-quantites-de-donnees). Exemple avec Nextcloud:
-```
+```bash
 app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg export-tar -e apps/nextcloud/backup/home/yunohost.app "$(yunohost app setting $app repository)::ARCHIVE" /home/yunohost/archives/ARCHIVE.tar
 ```
 
 Il faudra ensuite extraire ces données directement avec borg
-```
+```bash
 cd /home/yunohost.app/
 app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg extract "$(yunohost app setting $app repository)::ARCHIVE" apps/nextcloud/backup/home/yunohost.app/
 mv apps/nextcloud/backup/home/yunohost.app/nextcloud ./
@@ -83,3 +83,13 @@ rm -r apps
 ```
 
 Puis restaurer de façon classique
+
+### Restauration partielle
+Il est aussi possible, si la sauvegarde est complète mais que vous désirez en enlever une partie, de créer l’archive en excluant certains dossiers (le dossier de données de NextCloud par exemple, si vous n’avez besoin de ne restaurer que l’application) : 
+```bash
+app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg export-tar -e apps/nextcloud/backup/home/yunohost.app --exclude CHEMIN/A/EXCLURE "$(yunohost app setting $app repository)::_ARCHIVE" /home/yunohost.backup/archives/ARCHIVE.tar
+```
+Puis restauration de l’application seule :
+```bash
+yunohost backup restore ARCHIVE --apps nextcloud
+```
