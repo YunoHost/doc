@@ -24,5 +24,5 @@ Then go to Tools > Change administration password.
 
 
 ```bash
-yunohost tools adminpw
+yunohost tools rootpw
 ```
