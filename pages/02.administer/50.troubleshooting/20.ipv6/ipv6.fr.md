@@ -25,7 +25,7 @@ Sur le panneau de gestion d'OVH, vous aller récupérer 3 informations :
 - l'adresse passerelle IPv6 
 - le préfixe IPv6. Les offres VPS SSD d'OVH ne fournissent qu'**une** seule adresse IPV6, le préfixe est donc `/128`
 
-Sur votre VPS, vous aller créer une sauvegarde de votre fichier de configuration des interfaces réseau dans votre répertoire home avec la commande : `cp /etc/network/interfaces ~/interfaces`.
+Sur votre VPS, vous allez créer une sauvegarde de votre fichier de configuration des interfaces réseau dans votre répertoire home avec la commande : `cp /etc/network/interfaces ~/interfaces`.
 
 2 possibilités pour inscrire vos données ipv6 :
 1/ vous pouvez modifier le fichier de configuration `/etc/network/interfaces` 
