@@ -84,7 +84,7 @@ The `bind` property allows to define where read and write the value bind to the 
 
 #### Default behaviour
 
-If you did not define a specific getter/setter (see below), and no `bind` argument was defined, YunoHost will read/write the value from/to the app's `/etc/yunohost/$app/settings.yml` file.
+If you did not define a specific getter/setter (see below), and no `bind` argument was defined, YunoHost will read/write the value from/to the app's `/etc/yunohost/app/$app/settings.yml` file.
 
 #### Read / write into a var of an actual configuration file
 
