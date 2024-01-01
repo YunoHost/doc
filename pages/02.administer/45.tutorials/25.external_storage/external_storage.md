@@ -238,7 +238,7 @@ Use Ctrl+X then `y` to save.
 You can then try rebooting the system to check if the disk and subfolders are mounted automatically.
 
 ## 7. Clean up old data
-Once your new setup is validated, you can proceed to delete the old data from step 6.3:
+Once your new setup is validated, you can proceed to delete the old data from step 5.3:
 
 ```bash
 rm -Rf /home/yunohost.app.bkp
