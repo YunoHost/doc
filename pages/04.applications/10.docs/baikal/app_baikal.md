@@ -38,13 +38,13 @@ Also note that the admin interface of Baïkal is always available only to logged
 
 ### Connecting Thunderbird with Lightning
 
-Open the Calendar view, select "New Calendar...".
-Choose "On the Network", click "Next".
-Type in your YNH username in the "Username" input field and your server's "https://domain.tld" in the "Location" input field.
-(You only need to enter the domain, Baïkal configures the webserver to forward CalDAV and CardDAV requests to Baïkal.)
-Click "Find Calendars" and enter your YNH user's password.
-If this is the first time your YNH user logs in to Baïkal, a "Default Calendar" is automatically created for you.
-Select the calendar you want to add to Thunderbird and click "Subscribe".
+- Open the Calendar view, select "New Calendar...".
+- Choose "On the Network", click "Next".
+- Type in your YNH username in the "Username" input field and your server's "https://domain.tld" in the "Location" input field.
+- (You only need to enter the domain, Baïkal configures the webserver to forward CalDAV and CardDAV requests to Baïkal.)
+- Click "Find Calendars" and enter your YNH user's password.
+- If this is the first time your YNH user logs in to Baïkal, a "Default Calendar" is automatically created for you.
+- Select the calendar you want to add to Thunderbird and click "Subscribe".
 
 ### Connecting to AgenDAV
 
