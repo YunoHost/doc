@@ -34,6 +34,7 @@ Pour configurer manuellement un nouveau compte dans Thunderbird commencez par re
 * [GÃ©rer les alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
 
 [/ui-tab]
+
 [ui-tab title="K-9 Mail"]
 ##### ![](image://k9mail.png?resize=50&classes=inline) Configurer K-9 Mail (sur Android)
 
@@ -45,6 +46,7 @@ Suivez les instructions suivantes (comme pour Thunderbird, il vous faudra peut-Ã
 ![](image://k9mail_config_4.png?resize=280&classes=inline)
 
 [/ui-tab]
+
 [ui-tab title="Dekko"]
 ##### ![](image://dekko-app.png?resize=50&classes=inline) Configurer Dekko (sur Ubuntu Touch)
 
