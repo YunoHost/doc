@@ -19,7 +19,7 @@ Rendez-vous sur la [console d'administration du site de free](https://subscribe.
 
 ##### Freebox v6 (Revolution / Mini4k)
 
-Allez à l’adresse : [mafreebox.free.fr](http://mafreebox.free.fr/) puis authentifiez-vous.
+Allez à l’adresse : [mafreebox.freebox.fr](http://mafreebox.freebox.fr) puis authentifiez-vous.
 
 #### Ouverture des ports
 

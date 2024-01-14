@@ -541,7 +541,7 @@ You should see a screen like this:
 [/figure]
 [ui-tabs position="top-left" active="0" theme="lite"]
 
-[ui-tab title="Installation classique sur un disque entier"]
+[ui-tab title="Classic installation on a whole disk"]
 
 !! N.B.: Once you have validated the keyboard layout, the installation will be launched and will completely erase the data on your hard disk!
 
