@@ -11,9 +11,9 @@ routes:
 
 [![Install Baïkal with YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=baikal) [![Integration level](https://dash.yunohost.org/integration/baikal.svg)](https://dash.yunohost.org/appci/app/baikal)
 
-Baïkal is a server for calendars and address books, which uses the CalDav and CardDav protocol. Baïkal can be synced with a lot of clients, like Thunderbird + Lightning.
+Baïkal is a server for calendars and address books, which uses the CalDAV and CardDAV protocol. Baïkal can be synced with a lot of clients, like Thunderbird + Lightning.
 
-**WARNING**: Baïkal will not work if you have installed a **Nextcloud** (the Nextcloud CardDav/CalDav functions conflict).
+**WARNING**: Baïkal will not work if you have installed a **Nextcloud** (the Nextcloud CardDAV/CalDAV functions conflict).
 
 ## Configuration
 
@@ -28,25 +28,31 @@ By default, Baïkal is configured to look for users in YunoHost's LDAP
 directory. YunoHost's users will appear under `User and ressources` menu after their
 first authentication.
 
+### CalDAV/CardDAV access
+
+To be able to connect CalDAV or CardDAV clients to Baïkal, you must allow access to the app for visitors during installation.
+Clients will still need to to authenticate with username and password of an YNH user.
+Also note that the admin interface of Baïkal is always available only to logged-in YNH admin users.
+
 ## CalDAV connection
 
 ### Connecting Thunderbird with Lightning
 
-Add a new agenda with type "Network" and "CalDAV"
-
-The new URL to add is:
-
-https://domain.org/baikal/cal.php/calendars/username/default
-
-Be careful to replace "domain.org" with your own domain and the "username" with your username.
+- Open the Calendar view, select "New Calendar...".
+- Choose "On the Network", click "Next".
+- Type in your YNH username in the "Username" input field and your server's "https://domain.tld" in the "Location" input field.
+- (You only need to enter the domain, Baïkal configures the webserver to forward CalDAV and CardDAV requests to Baïkal.)
+- Click "Find Calendars" and enter your YNH user's password.
+- If this is the first time your YNH user logs in to Baïkal, a "Default Calendar" is automatically created for you.
+- Select the calendar you want to add to Thunderbird and click "Subscribe".
 
 ### Connecting to AgenDAV
 
-AgenDAV is a web client for using your calendars. It's packaged for YunoHost and you can used it after installing Baïkal.
+AgenDAV is a web client for using your calendars. It's packaged for YunoHost and you can use it after installing Baïkal.
 
-AgenDAV is already connected to Baïkal, any other configuration is necessary. If you create a new entry in Thunderbird + Lightning calendar, refresh your AgenDAV page is enough to see your modifications.
+AgenDAV is already connected to Baïkal, no other configuration is necessary. If you create a new entry in Thunderbird + Lightning calendar, refreshing your AgenDAV page is enough to see your modifications.
 
-AgenDAV also allows you to create a new calendars very easily.
+AgenDAV also allows you to create new calendars very easily.
 
 ## CardDAV Connection
 
