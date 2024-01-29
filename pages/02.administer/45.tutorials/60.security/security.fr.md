@@ -85,11 +85,13 @@ La configuration TLS par défaut des services tend à offrir une bonne compatibi
 Changer le niveau de compatibilité n'est pas définitif et il est possible de rechanger le paramètre si vous concluez qu'il faut revenir en arrière.
 
 **Sur votre serveur**, modifiez la politique pour NGINX :
+
 ```bash
 sudo yunohost settings set security.nginx.compatibility -v modern
 ```
 
 **Sur votre serveur**, modifiez la politique pour SSH :
+
 ```bash
 sudo yunohost settings set security.ssh.compatibility -v modern
 ```
