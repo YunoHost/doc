@@ -51,12 +51,14 @@ Type your admnistration password and your key will be copied onto your server.
 ```bash
 sudo yunohost settings set security.ssh.password_authentication -v no
 ```
+
 ---
 
 ### Modify the SSH port
 
 To prevent SSH connection attempts by robots that scan the internet for any server with SSH enabled, you can change the SSH port.
-This is handled by a system setting, which takes care of updating the SSH and Fail2Ban configuration.
+This is handled by a system setting, which takes care of updating the SSH and Fail2Ban configuration.  
+There's no need to change this port if you've disabled password authentication.
 
 ! If you modify anything in the `/etc/ssh/sshd_config` file, even if only the port, YunoHost will no longer manage this file. For this reason, always use the YunoHost admin tools to make changes to the systems configuration files!
 
@@ -81,11 +83,13 @@ The default TLS configuration for services tends to offer good compatibility to 
 Changing the compatibility level is not definitive and can be reverted if it doesn't fit with your environment.
 
 **On your server**, change the policy for NGINX
+
 ```bash
 sudo yunohost settings set security.nginx.compatibility -v modern
 ```
 
 **On your server**, change the policy for SSH
+
 ```bash
 sudo yunohost settings set security.ssh.compatibility -v modern
 ```
