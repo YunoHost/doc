@@ -61,7 +61,8 @@ sudo yunohost settings set security.ssh.password_authentication -v no
 ### Modifier le port SSH
 
 Pour éviter des tentatives de connexion SSH par des robots qui scannent tout Internet pour tenter des connexions SSH avec tout serveur accessible, on peut modifier le port SSH.
-C'est géré par un paramètre système, qui se charge de configurer les services SSH et Fail2Ban.
+C'est géré par un paramètre système, qui se charge de configurer les services SSH et Fail2Ban.  
+Il n'est pas utile de modifier ce port si vous avez désactivé l'authentification par mot de passe.
 
 ```bash
 sudo yunohost settings set security.ssh.port -v <votre_numero_de_port_ssh>
@@ -84,11 +85,13 @@ La configuration TLS par défaut des services tend à offrir une bonne compatibi
 Changer le niveau de compatibilité n'est pas définitif et il est possible de rechanger le paramètre si vous concluez qu'il faut revenir en arrière.
 
 **Sur votre serveur**, modifiez la politique pour NGINX :
+
 ```bash
 sudo yunohost settings set security.nginx.compatibility -v modern
 ```
 
 **Sur votre serveur**, modifiez la politique pour SSH :
+
 ```bash
 sudo yunohost settings set security.ssh.compatibility -v modern
 ```
