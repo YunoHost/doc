@@ -505,7 +505,7 @@ Go to **Settings** > **Network**:
 ## [fa=plug /] Power up the board
 
 * Plug the ethernet cable (one side on your main router, the other on your board).
-    * For advanced users willing to configure the board to connect to WiFi instead, see for example [here](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
+    * For advanced users willing to configure the board to connect to WiFi instead, see for example [here](https://www.raspberrypi.com/documentation/computers/configuration.html#connect-to-a-wireless-network) ([or here prior to YunoHost12/bookworm](https://www.raspberryme.com/configurer-le-wifi-sur-un-pi-manuellement-a-laide-de-wpa_supplicant-conf/).
 * Plug the SD card in your board
 * (Optional) You can connect a screen+keyboard directly on your board if you want to troubleshoot the boot process or if you're more comfortable to "see what happens" or want a direct access to the board.
 * Power up the board
