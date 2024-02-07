@@ -372,7 +372,7 @@ Allez dans **Réglages** > **Réseau** :
 ## [fa=plug /] Démarrer la carte
 
 * Branchez le câble Ethernet (un côté sur votre box, l'autre côté à votre carte).
-    * Pour les utilisateurs et utilisatrices souhaitant configurer la carte pour la connecter via le WiFi à la place, voir [cet exemple](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
+    * Pour les utilisateurs et utilisatrices souhaitant configurer la carte pour la connecter via le WiFi à la place, voir [cet exemple](https://www.raspberrypi.com/documentation/computers/configuration.html#connect-to-a-wireless-network) ([ou là avant YunoHost12/bookworm](https://www.raspberryme.com/configurer-le-wifi-sur-un-pi-manuellement-a-laide-de-wpa_supplicant-conf/).
 * Mettez la carte SD dans le serveur.
 * (Facultatif) Il est possible de brancher un écran et un clavier sur votre serveur en cas de soucis, pour vérifier que le processus de démarrage (boot) se passe bien, ou encore pour avoir un accès direct en console.
 * Branchez l'alimentation.
