@@ -31,4 +31,4 @@ Prosody, an alternative XMPP server, is packaged for YunoHost.
 
 It is notably used by Peertube's chat feature, and Jitsi for video conferences. Installing these apps will install Prosody, which needs to disable Metronome to work properly.
 
-! In summary, installing Prosody or an app relying on it will disable the XMPP server.
+! In summary, installing Prosody or an app relying on it will disable the built-in Metronome XMPP server and replace it with Prosody.
