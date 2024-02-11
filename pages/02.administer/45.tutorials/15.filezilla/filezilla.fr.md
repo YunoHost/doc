@@ -68,9 +68,10 @@ Sources
 
 Depuis n'importe quel GNU/Linux récent, vous devriez pouvoir utiliser le gestionnaire de fichiers pour accéder à votre serveur.
 
-Nautilus de Gnome3 intègre de base des fonctionnalités similaires à FileZilla :
+Nautilus de Gnome3 et Dolphin de KDE intègrent de base des fonctionnalités similaires à FileZilla :
 
 * <https://help.gnome.org/users/gnome-help/stable/nautilus-connect.html.en>
+* <https://docs.kde.org/stable5/en/dolphin/dolphin/location-bar.html#location-bar-editable-kioslaves>
 * <https://www.techrepublic.com/article/how-to-use-linux-file-manager-to-connect-to-an-sftp-server/>
 
 ### Sous Windows
