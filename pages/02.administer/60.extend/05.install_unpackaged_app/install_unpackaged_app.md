@@ -20,4 +20,4 @@ To expose the app on the web through nginx and be able to manage access permissi
 
 !!! You should use the proxy mode of the redirect app and not HTTP redirections mode.
 
-You probably should create custom backup and restore hooks to integrate your app to your YunoHost backup/restore process. See [Backup and restore hooks](https://yunohost.org/en/packaging_apps_hooks#backup-restore)
+You probably should create custom backup and restore hooks to integrate your app to your YunoHost backup/restore process. See [Backup and restore hooks](/packaging_apps_hooks#backup-restore)
