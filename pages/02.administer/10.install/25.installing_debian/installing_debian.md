@@ -50,5 +50,6 @@ The installer will ask about which **desktop environment** you want. You should 
 1. Remove the installation media (unplug the USB stick) 
 2. Reboot
 3. Login as `root` with the long complex password you created earlier.
-4. Proceed to install Yunohost on Debian using these instructions: https://yunohost.org/en/install/hardware:vps_debian
-
+4. Install curl by typing `apt install curl`
+5. Proceed to install Yunohost on Debian using these instructions: https://yunohost.org/en/install/hardware:vps_debian
+   - The installer will ask for permission to overwrite some configuration files. Select Yes.
