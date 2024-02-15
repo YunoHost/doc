@@ -335,6 +335,17 @@ Pour les anciens matériels, il vous faut peut-être utiliser un CD/DVD. Le logi
 * Sur GNU/Linux, vous avez plusieurs choix, tels que [Brasero](https://wiki.gnome.org/Apps/Brasero) ou [K3b](http://www.k3b.org/)
 
 [/ui-tab]
+[ui-tab title="Utiliser Ventoy"]
+Ventoy sera utile si vous n'arrivez pas à démarrer l'image de Yunohost en utilisant les autres méthodes
+
+[Ventoy](https://www.ventoy.net/) est un outil pratique qui permet de mettre plusieurs images Linux sur une même clé USB et démarrer ces images sans devoir re-flasher la clé USB à chaque fois. C'est aussi pratique pour démarer une image qui refuse de démarrer: Ventoy réussi habituellement à tout démarrer!
+1. Installer [Ventoy](https://www.ventoy.net/) sur la clé USB. Référez-vous aux [instructions d'installation](https://www.ventoy.net/en/doc_start.html).
+    - Cela va créer 2 partition sur la clé USB.
+3. En utilisant votre application de fichiers préférée, copiez l'image Yunohost sur la grande partition "Ventoy (pas celle "VTOYEFI")
+    - N'utilisez pas *Balena Etcher*, USBImager ou `dd` pour faire ça!
+
+Insérez cette clé USB dans l'ordinateur et démarrez en utisant celle-ci. Ventoy va apparaitre et lister toutes les images qui sont sur la clé USB. Sélectionnez l'image de Yunohost. Sélectionnez ensuite "GRUB2" comme option de démarrage (ou utilisez n'importe laquelle qui fonctionnera sur votre ordinateur 😉)
+[/ui-tab]
 {% endif %}
 [/ui-tabs]
 
@@ -393,8 +404,10 @@ Démarrez votre machine virtuelle après avoir sélectionné l'image YunoHost.
 
 * Branchez le câble Ethernet (un côté à votre box, de l'autre côté à votre carte).
 * Démarrez votre serveur avec la clé USB ou le CD-ROM inséré, et sélectionnez-le comme **périphérique de démarrage (bootable device)** en pressant l’une des touches suivantes (dépendant de votre ordinateur) :
-`<ESC>`, `<F9>`, `<F10>`, `<F11>`, `<F12>` or `<DEL>`.
+`<F9>`, `<F10>`, `<F11>`, `<F12>`, `<DEL>`, `<ESC>` ou <Alt>.
     * N.B. : si le serveur était précédemment installé avec une version récente de Windows (8+), vous devez d'abord demander à Windows de « redémarrer réellement ». Vous pouvez le faire dans une option du menu « Options de démarrage avancées ».
+ 
+!!! Si vous n'arrivez pas à démarrer l'image Yunohost, essayez d'utiliser Ventoy (sélectionnez "Ventoy" dans la section "Flasher l'image YunoHost" ci-dessus).
 {% endif %}
 
 {% if regular or virtualbox %}
@@ -458,6 +471,7 @@ Ne perdez pas de vue que:
 [/ui-tab]
 [/ui-tabs]
 
+!!! Si l'installation de Yunohost échoue sur votre machine et que vous n'arrivez pas à résoudre le problème, sachez qu'il est aussi possible d'installer Debian et ensuite d'installer Yunohost dessus. Pour les instructions, au sommet de cette page, sélectionnez "Serveur distant" puis "VPS ou serveur dédié avec Debian".
 {% endif %}
 
 
