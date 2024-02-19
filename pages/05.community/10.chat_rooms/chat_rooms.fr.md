@@ -14,6 +14,7 @@ Vous pouvez rejoindre ces salons avec :
 - un [Client XMPP](https://fr.wikipedia.org/wiki/Clients_XMPP)
 - un [Client Matrix](https://linuxfr.org/news/matrix-pour-decentraliser-skype-whatsapp-signal-slack-et-discord)
 
+**NB : Actuellement, le pont IRC ([grace à Matrix](https://libera.chat/guides/faq#are-bridges-allowed)) est désactivé. Ainsi, alors que les canaux XMPP et Matrix sont pontés, le canal IRC ne l'est pas**.
 
 #### Salon d'entraide et de support
 Le salon d’[entraide](/help) est là pour permettre aux utilisateurs de YunoHost de s'aider mutuellement.
