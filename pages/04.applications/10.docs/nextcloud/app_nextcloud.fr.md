@@ -129,8 +129,7 @@ Sauvegardez avec `ctrl+x` puis `y` ou `o` (dépend de la locale de votre serveur
 Lancez un scan du nouveau répertoire par Nextcloud:
 
 ```bash
-cd /var/www/nextcloud
-sudo -u nextcloud php8.1 --define apc.enable_cli=1 files:scan --all
+sudo -u nextcloud php8.2 --define apc.enable_cli=1 /var/www/nextcloud/occ files:scan --all
 ```
 
 C'est terminé. À présent testez si tout va bien, essayez de vous connecter à votre instance Nextcloud, envoyer un fichier, vérifiez sa bonne synchronisation.
@@ -274,7 +273,7 @@ Enregistrer le fichier (**CTRL** + **o**) et quitter nano (**CTRL** + **c**).
 Ensuite lancer un scan en tant que root :
 
 ```bash
-sudo -u nextcloud php8.1 --define apc.enable_cli=1 files:scan --all
+sudo -u nextcloud php8.2 --define apc.enable_cli=1 /var/www/nextcloud/occ files:scan --all
 ```
 
 À présent, le problème est corrigé.
