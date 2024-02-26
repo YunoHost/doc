@@ -141,6 +141,24 @@ Case B: yunohost app setting nextcloud datadir -v /media/storage/nextcloud_data/
 
 It's over now. Now test if everything is fine, try connecting to your Nextcloud instance, upload a file, check its proper synchronization.
 
+##### Configure Fail2ban
+Modify fail2ban configuration 
+```bash
+nano /etc/fail2ban/jail.d/nextcloud.conf
+```
+
+That you modify:
+```bash
+Case A : logpath = /media/storage/nextcloud/data/nextcloud.log
+Case B : logpath = /media/storage/nextcloud_data/nextcloud/data/nextcloud.log
+```
+Save it with `ctrl+x` then `y` or `o` (depending on your server locale).
+
+Restart fail2ban
+```bash
+systemctl restart fail2ban
+```
+
 ### Nextcloud and Cloudflare
 
 If you use Cloudflare for your DNS, *which may be useful if you have a dynamic IP*, you will most likely have authentication problems with the Nextcloud application. On the Internet many people propose to create a rule that disables all options related to security and Cloudflare speed for the URL pointing to your Nextcloud instance. Although it works, it is not the optimal solution. I propose, certainly to create a rule for the URL pointing to your Nextcloud instance but to disable only 2 options. So here's how:

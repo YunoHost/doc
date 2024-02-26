@@ -135,6 +135,23 @@ sudo -u nextcloud php8.1 --define apc.enable_cli=1 files:scan --all
 
 C'est terminé. À présent testez si tout va bien, essayez de vous connecter à votre instance Nextcloud, envoyer un fichier, vérifiez sa bonne synchronisation.
 
+##### Configurer Fail2ban
+Modifiez la configuration de fail2ban
+```bash
+nano /etc/fail2ban/jail.d/nextcloud.conf
+```
+Que vous modifiez:
+```bash
+CAS A : logpath = /media/stockage/nextcloud/data/nextcloud.log
+CAS B : logpath = /media/stockage/nextcloud_data/nextcloud/data/nextcloud.log
+```
+Sauvegardez avec `ctrl+x` puis `y` ou `o` (dépend de la locale de votre serveur).
+
+Redémarrez fail2ban
+```bash
+systemctl restart fail2ban
+```
+
 ### Partager un dossier entre Nextcloud et une application
 Il est relativement simple de monter des dossiers accessibles depuis Nextcloud en lecture/écriture et de les 
 partager avec d'autres applications (par exemple [Jellyfin](app_jellyfin), [Funkwhale](app_funkwhale), [Transmission](app_transmission), ...)
