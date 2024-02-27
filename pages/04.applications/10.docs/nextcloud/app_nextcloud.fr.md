@@ -134,6 +134,38 @@ sudo -u nextcloud php8.2 --define apc.enable_cli=1 /var/www/nextcloud/occ files:
 
 C'est terminé. À présent testez si tout va bien, essayez de vous connecter à votre instance Nextcloud, envoyer un fichier, vérifiez sa bonne synchronisation.
 
+#### Changement de la configuration fail2ban
+Pour éviter de faire planter le service fail2ban il faut changer sa configuration pour indiquer l'emplacement du fichier log.
+
+Dans le fichier `/etc/fail2ban/jail.d/nextcloud.conf`
+
+```bash
+nano /etc/fail2ban/jail.d/nextcloud.conf
+```
+Changer la ligne suivante :
+```bash
+CAS A : logpath = /home/yunohost.app/nextcloud/data/nextcloud.log => logpath = /media/stcokage/data/nextcloud.log
+CAS B : logpath = /home/yunohost.app/nextcloud/data/nextcloud.log => logpath = /media/stcokage/nextcloud_data/nextcloud/data/nextcloud.log
+```
+
+Relancer le service fail2ban
+```bash
+systemctl restart fail2ban.service
+```
+
+Vérifier que le service est activé :
+```bash
+systemctl status fail2ban.service
+```
+Vous devriez avoir noté `active` dans la réponse.
+
+#### Supression du dossier d'origine
+Après vérification que tout fonctionne correctement vous pouvez supprimer le dossier d'origine :
+
+```bash
+rm -r /home/yunohost.app/nextcloud
+```
+
 ### Partager un dossier entre Nextcloud et une application
 Il est relativement simple de monter des dossiers accessibles depuis Nextcloud en lecture/écriture et de les 
 partager avec d'autres applications (par exemple [Jellyfin](app_jellyfin), [Funkwhale](app_funkwhale), [Transmission](app_transmission), ...)
