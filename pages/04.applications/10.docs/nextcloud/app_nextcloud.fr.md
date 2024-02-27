@@ -11,19 +11,19 @@ routes:
 
 Nextcloud est un service d'hébergement de fichiers. De nombreuses applications peuvent être installées afin d'offrir à Nextcloud de nouvelles fonctionnalités telles qu'un agenda, un répertoire de contacts, des notes et plein d'autres possibles (vous pouvez trouver quelques applications dans la section [applications tierces](#applications-tierces), il en existe une multitude suivant vos besoins).
 
-
 ## Découverte de l'environnement de Nextcloud
+
 Du fait de la constitution de Nextcloud, une base avec des applications tierces à installer, ce chapitre ne concernera que la base de Nextcloud sans applications ajoutés. Plus d'informations sur les applications dans la partie dédiée ou sur le catalogue d'application de Nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com).  
 Nextcloud est avant tout un service de cloud (comme Seafile et d'autres logiciels), il permet une synchronisation et le partage de fichiers sur internet et entre plusieurs terminaux (ordinateurs, smartphone) mais aussi avec plusieurs personnes.
 
-
 ## Logiciels clients
-Il existe des logiciels clients pour de nombreux terminaux. Vous pouvez les retrouver sur le site de Nextcloud : [nextcloud.com/install/#install-clients](https://nextcloud.com/install/#install-clients)
 
+Il existe des logiciels clients pour de nombreux terminaux. Vous pouvez les retrouver sur le site de Nextcloud : [nextcloud.com/install/#install-clients](https://nextcloud.com/install/#install-clients)
 
 ## Manipulations utiles & problèmes rencontrés
 
 ### Ajouter de l'espace à Nextcloud
+
 La solution I. permet d'ajouter un lien vers un dossier local ou distant.  
 La solution II. permet de déplacer l'espace de stockage principal de Nextcloud.
 
@@ -44,6 +44,7 @@ Enfin cliquer sur la coche pour valider le dossier.
 **Remarque** : Remplacez `nextcloud` par le nom de son instance, si vous avez plusieurs apps Nextcloud installées.
 
 Commencez par éteindre le serveur web avec la commande :
+
 ```bash
 systemctl stop nginx  
 ```
@@ -118,15 +119,17 @@ systemctl start nginx
 ```
 
 Ajouter le fichier .ocdata
+
 ```bash
 CAS A : nano /media/stockage/.ocdata
 CAS B : nano /media/stockage/nextcloud_data/nextcloud/data/.ocdata
 ```
+
 Ajouter un espace au fichier pour pouvoir le sauvegarder
 
 Sauvegardez avec `ctrl+x` puis `y` ou `o` (dépend de la locale de votre serveur).
 
-Lancez un scan du nouveau répertoire par Nextcloud:
+Lancez un scan du nouveau répertoire par Nextcloud :
 
 ```bash
 sudo -u nextcloud php8.2 --define apc.enable_cli=1 /var/www/nextcloud/occ files:scan --all
@@ -134,32 +137,47 @@ sudo -u nextcloud php8.2 --define apc.enable_cli=1 /var/www/nextcloud/occ files:
 
 C'est terminé. À présent testez si tout va bien, essayez de vous connecter à votre instance Nextcloud, envoyer un fichier, vérifiez sa bonne synchronisation.
 
-#### Changement de la configuration fail2ban
-Pour éviter de faire planter le service fail2ban il faut changer sa configuration pour indiquer l'emplacement du fichier log.
+#### Changement de la configuration Fail2ban
+
+Pour éviter de faire planter le service Fail2ban il faut changer sa configuration pour indiquer l'emplacement du fichier log.
 
 Dans le fichier `/etc/fail2ban/jail.d/nextcloud.conf`
 
 ```bash
 nano /etc/fail2ban/jail.d/nextcloud.conf
 ```
-Changer la ligne suivante :
+
+Cherchez la ligne :
+
+```bash
+logpath = /home/yunohost.app/nextcloud/data/nextcloud.log
+```
+
+Que vous modifiez :
+
 ```bash
 CAS A : logpath = /home/yunohost.app/nextcloud/data/nextcloud.log => logpath = /media/stcokage/data/nextcloud.log
 CAS B : logpath = /home/yunohost.app/nextcloud/data/nextcloud.log => logpath = /media/stcokage/nextcloud_data/nextcloud/data/nextcloud.log
 ```
 
-Relancer le service fail2ban
+Sauvegardez avec `ctrl+x` puis `y` ou `o` (dépend de la locale de votre serveur).
+
+Relancer le service Fail2ban
+
 ```bash
 systemctl restart fail2ban.service
 ```
 
 Vérifier que le service est activé :
+
 ```bash
 systemctl status fail2ban.service
 ```
+
 Vous devriez avoir noté `active` dans la réponse.
 
 #### Supression du dossier d'origine
+
 Après vérification que tout fonctionne correctement vous pouvez supprimer le dossier d'origine :
 
 ```bash
@@ -167,17 +185,20 @@ rm -r /home/yunohost.app/nextcloud
 ```
 
 ### Partager un dossier entre Nextcloud et une application
-Il est relativement simple de monter des dossiers accessibles depuis Nextcloud en lecture/écriture et de les 
+
+Il est relativement simple de monter des dossiers accessibles depuis Nextcloud en lecture/écriture et de les
 partager avec d'autres applications (par exemple [Jellyfin](app_jellyfin), [Funkwhale](app_funkwhale), [Transmission](app_transmission), ...)
 
-Il vous faut commencer par monter un dossier qui sera disponible pour votre application (je prends jellyfin dans mon 
+Il vous faut commencer par monter un dossier qui sera disponible pour votre application (je prends jellyfin dans mon
 exemple). Je commence donc par créer un nouveau dossier.
+
 ```bash
 mkdir /media/data/jellyfin
 ```
 
-Il nous faut maintenant créer un groupe qui pourra faire la liaison entre les applications. Ici mon groupe se nomme 
+Il nous faut maintenant créer un groupe qui pourra faire la liaison entre les applications. Ici mon groupe se nomme
 `multimedia`
+
 ```bash
 sudo su
 
@@ -189,7 +210,7 @@ usermod jellyfin -a -G multimedia
 chown nextcloud:multimedia -R /media/data/jellyfin
 ```
 
-Dans l'interface de vos applications vous pouvez ajouter ce chemin, il sera accessible pour les 2 applications, dans 
+Dans l'interface de vos applications vous pouvez ajouter ce chemin, il sera accessible pour les 2 applications, dans
 `Nextcloud` > `Paramètres` > `Administration` > `Stockage externe`
 
 ### Nextcloud et Cloudflare
@@ -199,11 +220,12 @@ Si vous utilisez Cloudflare pour vos DNS, *ce qui peut-être pratique si vous av
 #### Cloudflare Page Rules
 
 Dans le panneau de contrôle de Cloudflare, choisissez votre domaine et trouvez Page Rules
-l'URL dans votre barre d'adresse ressemblera à : https://dash.cloudflare.com/*/domain.tld/page-rules
+l'URL dans votre barre d'adresse ressemblera à : <https://dash.cloudflare.com/*/domain.tld/page-rules>
 
 #### Ajouter une règle
 
 La règle à ajouter doit s'appliquer pour l'URL de votre instance Nextcloud soit :
+
 - `https://nextcloud.domain.tld/*` si vous utilisez un sous-domaine
 - `https://domain.tld/nextcloud/*` si vous avez déployé Nextcloud dans un répertoire
 
@@ -215,6 +237,7 @@ Les options à désactiver (Off) sont :
 Sauvegarder et nettoyer vos caches (Cloudflare, navigateur...) et le tour est joué.
 
 # Applications Tierces
+
 Certaines applications sont disponibles directement depuis Nextcloud.
 ![image](image://nextcloud_menu_parameter.jpg)
 
@@ -262,6 +285,7 @@ cd /etc/nginx/conf.d/[nextcloud.votredomaine.com].d
 ```bash
 sudo nano nextcloud.conf
 ```
+
 Dans le fichier, repérer la ligne comportant "richdocumentscode", puis ajouter "_arm64" juste après, enregistrer (Ctrl+S) et sortir (Ctrl+X).
 
 Puis redémarrer NGINX (par exemple en redémarrant le serveur depuis l'interface d'aministration de YunoHost).
@@ -269,7 +293,6 @@ Puis redémarrer NGINX (par exemple en redémarrant le serveur depuis l'interfac
 #### 3. Télécharger et activer l'application Nextcloud Collabora, sous le nom de "Nextcloud Office"
 
 Dès lors, on peut télécharger l'application "Nextcloud Office" dans Nextcloud, et normalement le serveur CODE est choisi par défaut (sinon voir les paramètres de Nextcloud).
-
 
 ## À propos de Keeweb
 
@@ -312,5 +335,5 @@ sudo -u nextcloud php8.2 --define apc.enable_cli=1 /var/www/nextcloud/occ files:
 
 ## Quelques liens utiles<a name="liensutiles" href=""></a>
 
-+ Site officiel : [nextcloud.com (en)](https://nextcloud.com/)
-+ Catalogue d'application pour Nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com/)
+- Site officiel : [nextcloud.com (en)](https://nextcloud.com/)
+- Catalogue d'application pour Nextcloud : [apps.nextcloud.com](https://apps.nextcloud.com/)
