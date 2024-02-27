@@ -69,7 +69,7 @@ Then restore the archive in the usual way.
 ### Restore large archives
 If the available space is less than the weight of your archive, decompressed data and dependencies, you will have to restore part by part, app by app.
 
-If restoring app by app is not enough OR if an archive is too big, it may be a good idea to generate a tarball without the "big" data of an app as if it had been generated with the [BACKUP_CORE_ONLY option] (/backup/include_exclude_files#don't-save-large-quantities-of-data). Example with Nextcloud:
+If restoring app by app is not enough OR if an archive is too big, it may be a good idea to generate a tarball without the "big" data of an app as if it had been generated with the [BACKUP_CORE_ONLY option](/backup/include_exclude_files#don't-save-large-quantities-of-data). Example with Nextcloud:
 ```
 app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg export-tar -e apps/nextcloud/backup/home/yunohost.app "$(yunohost app setting $app repository)::ARCHIVE" /home/yunohost.backup/archives/ARCHIVE.tar
 ```

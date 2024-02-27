@@ -52,9 +52,9 @@ Divers outils ont été mis en place pour tester l'application et normaliser son
 
 Après un certain temps, un ensemble de pratiques et de conventions communes a émergé et est en quelque sorte reflété et maintenu dans l'application modèle `example_ynh`. Bien qu'il soit tentant pour les développeurs de changer les schémas de nommage des variables ou de refactoriser la structure des scripts, il s'avère qu'il est encore plus important de s'en tenir à l'ensemble des pratiques communes (même si elles sont arbitraires et peu élégantes) pour faciliter la maintenance de toutes les applications par n'importe quel membre de la communauté du packaging à travers tous les dépôts !
 
-Néanmoins, même si les aides existaient, la structure inhérente des applications était difficile et ennuyeuse à maintenir avec trop de morceaux de code redondants ou remplis de conventions historiques bizarres. **Un nouveau format v2** [a été conçu et ajouté à YunoHost 11.1 début 2023] (https://github.com/YunoHost/yunohost/pull/1289) dans l'espoir de moderniser et de simplifier l'emballage des applications et d'améliorer l'UI/UX de YunoHost.
+Néanmoins, même si les aides existaient, la structure inhérente des applications était difficile et ennuyeuse à maintenir avec trop de morceaux de code redondants ou remplis de conventions historiques bizarres. **Un nouveau format v2** [a été conçu et ajouté à YunoHost 11.1 début 2023](https://github.com/YunoHost/yunohost/pull/1289) dans l'espoir de moderniser et de simplifier l'emballage des applications et d'améliorer l'UI/UX de YunoHost.
 
-Cependant, [**un futur format v3** est encore à venir] (https://github.com/YunoHost/issues/issues/2136) pour simplifier davantage l'empaquetage des applications (comme la prise en charge des configurations NGINX/systemd/..., l'élimination du besoin d'écrire manuellement des scripts de suppression/sauvegarde/restauration, etc.)
+Cependant, [**un futur format v3** est encore à venir](https://github.com/YunoHost/issues/issues/2136) pour simplifier davantage l'empaquetage des applications (comme la prise en charge des configurations NGINX/systemd/..., l'élimination du besoin d'écrire manuellement des scripts de suppression/sauvegarde/restauration, etc.)
 
 
 ## 4. Aperçu général de la structure d'une application YunoHost
@@ -107,7 +107,7 @@ Grosso modo, l'installation proprement dite se compose généralement des opéra
 
 ## 5. Créer votre tout premier paquet YunoHost
 
-A moins que vous ne souhaitiez vraiment partir de zéro ou de [`example_ynh`] (https://github.com/YunoHost/example_ynh), une pratique courante consiste à identifier une application similaire à celle que vous essayez d'empaqueter - typiquement parce qu'elle repose sur les mêmes technologies - à cloner le dépôt de code correspondant, et à adapter les différents fichiers.
+A moins que vous ne souhaitiez vraiment partir de zéro ou de [`example_ynh`](https://github.com/YunoHost/example_ynh), une pratique courante consiste à identifier une application similaire à celle que vous essayez d'empaqueter - typiquement parce qu'elle repose sur les mêmes technologies - à cloner le dépôt de code correspondant, et à adapter les différents fichiers.
 
 TODO/FIXME : here we should list a bunch of well-knowh apps for classic technologies
 

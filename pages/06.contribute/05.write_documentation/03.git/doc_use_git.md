@@ -39,7 +39,7 @@ When you've already create a Pull Request (PR), changes to your development bran
 YunoHost has a specific Git repository to collect issues: [github.com/YunoHost/issues](https://github.com/YunoHost/issues)
 An issue, also called a ticket, is an identified problem or a development wish; in this case for documentation, but it is valid for any software repository. Within the framework of the YunoHost documentation it will be mainly proposed issues for the development of the documentation, the identified problems being easily correctable.
 
-## Going further with Git and working on his workstation
+## Going further with Git and working on your workstation
 Using the power of Git to work on your personal computer means you don't have to create a `commit` each time you save modified documentation pages. It also allows you to use tools and software that make it easier to distinguish between tags used in a documentation page.
 
 - Online resource: [docs.microsoft.com - Setting up a Git repository locally for documentation](https://docs.microsoft.com/fr-fr/contribute/get-started-setup-local)
