@@ -14,11 +14,11 @@ Nextcloud is a file hosting service, many applications can be installed to offer
 ## Discovering the Nextcloud environment <a name="EnvironmentNextcloud" href=""></a>
 
 Due to the creation of Nextcloud, a database with third-party applications to install, this chapter will only concern the nextcloud database without added applications. More information on applications in the dedicated section or in the nextcloud application catalogue: [apps.nextcloud.com](https://apps.nextcloud.com).  
-Nextcloud is first and foremost a cloud service (like Seafile and others), it allows synchronization and file sharing on the Internet and between several terminals (computers, smartphone) but also with several people. 
+Nextcloud is first and foremost a cloud service (like Seafile and others), it allows synchronization and file sharing on the Internet and between several terminals (computers, smartphone) but also with several people.
 
 ## Mobile and computer client software <a name="ClientSoftware" href=""></a>
 
-There are client software for all platforms. You can find them on the official nextcloud website: https://nextcloud.com/install/#install-clients
+There are client software for all platforms. You can find them on the official nextcloud website: <https://nextcloud.com/install/#install-clients>
 
 ## Useful Manipulations & Problems Encountered <a name="UtileManipulations" href=""></a>
 
@@ -44,6 +44,7 @@ Finally click on the check mark to validate the folder.
 **Note**: Replace `nextcloud` with the name of its instance, if you have several Nextcloud apps installed.
 
 First turn off the web server with the command:
+
 ```bash
 systemctl stop nginx  
 ```
@@ -118,10 +119,12 @@ systemctl start nginx
 ```
 
 Add the.ocdata file
+
 ```bash
 CASE A: nano /media/storage/.ocdata
 CASE B: nano /media/storage/nextcloud_data/nextcloud/data/.ocdata
 ```
+
 Add a space to the file to be able to save it
 
 Back up with `ctrl+x` then `y` or `o` (depending on your server locale).
@@ -134,12 +137,60 @@ sudo -u nextcloud php8.1 --define apc.enable_cli=1 files:scan --all
 ```
 
 Update the YunoHost setting, so automatic upgrades and backups know where the datadir is located:
+
 ```bash
 Case A: yunohost app setting nextcloud datadir -v /media/storage
 Case B: yunohost app setting nextcloud datadir -v /media/storage/nextcloud_data/nextcloud/data/
 ```
 
-It's over now. Now test if everything is fine, try connecting to your Nextcloud instance, upload a file, check its proper synchronization.
+Now test if everything is fine, try connecting to your Nextcloud instance, upload a file, check its proper synchronization.
+
+#### Change Fail2ban configuration
+
+To avoid crashing the Fail2ban service, we need to change its configuration to indicate the location of the log file.
+
+In the `/etc/fail2ban/jail.d/nextcloud.conf` file
+
+```bash
+nano /etc/fail2ban/jail.d/nextcloud.conf
+```
+
+Look for the line :
+
+```bash
+logpath = /home/yunohost.app/nextcloud/data/nextcloud.log
+```
+
+Which you modify:
+
+```bash
+CASE A : logpath = /home/yunohost.app/nextcloud/data/nextcloud.log => logpath = /media/storage/data/nextcloud.log
+CASE B : logpath = /home/yunohost.app/nextcloud/data/nextcloud.log => logpath = /media/storage/nextcloud_data/nextcloud/data/nextcloud.log
+```
+
+Save with `ctrl+x` then `y` or `o` (depending on your server locale).
+
+Restart Fail2ban service
+
+```bash
+systemctl restart fail2ban.service
+```
+
+Check that the service is enabled:
+
+```bash
+systemctl status fail2ban.service
+```
+
+You should have noted `active` in the response.
+
+#### Deleting the original folder
+
+After checking that everything is working correctly, you can delete the original folder:
+
+```bash
+rm -r /home/yunohost.app/nextcloud
+```
 
 ### Nextcloud and Cloudflare
 
@@ -148,7 +199,7 @@ If you use Cloudflare for your DNS, *which may be useful if you have a dynamic I
 #### Cloudflare Page Rules
 
 In the Cloudflare control panel select your domain and find Page Rules
-the URL in your address bar will look like this: https://dash.cloudflare.com/*/domain.tld/page-rules  
+the URL in your address bar will look like this: <https://dash.cloudflare.com/*/domain.tld/page-rules>  
 
 ##### Add a rule
 
@@ -202,5 +253,5 @@ Now the problem is fixed.
 
 ## Useful links <a name="UsefulLinks" href=""></a>
 
- - Official website: [nextcloud.com](https://nextcloud.com/)  
- - Application catalogue for Nextcloud: [apps.nextcloud.com](https://apps.nextcloud.com/)  
+- Official website: [nextcloud.com](https://nextcloud.com/)  
+- Application catalogue for Nextcloud: [apps.nextcloud.com](https://apps.nextcloud.com/)  
