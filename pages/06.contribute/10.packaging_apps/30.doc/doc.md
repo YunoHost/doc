@@ -7,7 +7,8 @@ routes:
   default: '/packaging_app_doc'
 ---
 
-Properly documenting your app is important for user experience ;). YunoHost provides several mechanism to display information to users.
+Properly documenting your app is important for user experience ;).  
+YunoHost provides several mechanism to display information to users.
 
 ## Extensive description : `doc/DESCRIPTION.md` and `doc/screenshots/`
 
@@ -34,11 +35,12 @@ These notes will be available in the app info page in the webadmin after the app
 ## Pre/post-install notes, pre/post-upgrade notes
 
 Sometimes, you may want to display important information to the admin at key points in the app's life cycle. You can do so by providing special markdown files:
+
 - `doc/PRE_INSTALL.md`: displayed right before the installation (for example to warn that « This app install is expected to take around 30 minutes, be patient! » or « This app will automatically add 1GB swap to your system »)
-    - NB: try to not overlap with the anti-feature tags from the catalog (cf Publishing your app in the catalog) which can be used to warn that the app's upstream is alpha-stage or deprecated among other things.
+  - NB: try to not overlap with the anti-feature tags from the catalog (cf Publishing your app in the catalog) which can be used to warn that the app's upstream is alpha-stage or deprecated among other things.
 - `doc/POST_INSTALL.md`: displayed in a popup after the installation AND a dismissable note in the webadmin app info view.
 - `doc/PRE_UPGRADE.md`: displayed right before any upgrade of this app (NB: the pre-upgrade note from the NEW version will be used, not the one from the installed version)
-    - You can also create `doc/PRE_UPGRADE.d/{version}.md` to have a note displayed before upgrading to a version equal or higher than `{version}`
+  - You can also create `doc/PRE_UPGRADE.d/{version}.md` to have a note displayed before upgrading to a version equal or higher than `{version}`
 - `doc/POST_UPGRADE.md`: displayed in a popup after the upgrade AND a dismissable note in the webadmin app info view.
 
 Same as `ADMIN.md` and others: in these files, you can use the `__FOOBAR__` syntax which will automatically be replaced with the `foobar` setting.
