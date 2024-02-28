@@ -15,7 +15,7 @@ Dopo aver applicato le configurazioni proposte in questo tutorial la redirezione
 
 La configurazione che adotteremo consiste nel rendere automatica la comunicazione del router al servizio di DNS dinamico la variazione dell'indirizzo IP pubblico e che la zona DNS può essere aggiornata.
 
-### Registrar
+### Registrars
 
 Di seguito un elenco, non esaustivo, dei registrar. Qui potere acquistare il vostro dominio:
 * [OVH](http://ovh.com/)
@@ -33,7 +33,8 @@ Di seguito un elenco, non esaustivo, di offerte dei servizi DynDNS:
 * [DNSexit](https://www.dnsexit.com/Direct.sv?cmd=dynDns)
 * [No-IP](https://www.noip.com/remote-access)
 * [ChangeIP](https://changeip.com/)
-* [DynDNS (in italiano)](https://dyndns.it/)
+* [DynDNS.it (in italiano, a pagamento)](https://dyndns.it/)
+* [DynDNS con il suo nome di dominio](https://github.com/opi/DynDNS-with-HE.NET)
 * [Duck DNS](https://www.duckdns.org/)
 * [ydns.io](https://ydns.io/)
 
