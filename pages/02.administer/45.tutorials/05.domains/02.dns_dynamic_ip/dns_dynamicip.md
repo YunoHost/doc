@@ -31,9 +31,10 @@ Here are sites which offer a DynDNS service free of charge:
 * [DNSexit](https://www.dnsexit.com/Direct.sv?cmd=dynDns)
 * [No-IP](https://www.noip.com/remote-access)
 * [ChangeIP](https://changeip.com)
-* [DynDNS (in italian)](https://dyndns.it)
-* [DynDNS with your own domain](https://github.com/jodumont/DynDNS-with-HE.NET)
+* [DynDNS.it (in italian, paid plan)](https://dyndns.it)
+* [DynDNS with your own domain](https://github.com/opi/DynDNS-with-HE.NET)
 * [Duck DNS](https://www.duckdns.org/)
+* [ydns.io](https://ydns.io/)
 
 Register to one of them. It should provide you with one (or more) IP address to reach the service, and a login (that you may be able to self-define).
 
