@@ -20,6 +20,9 @@ Nextcloud is first and foremost a cloud service (like Seafile and others), it al
 
 There are client software for all platforms. You can find them on the official nextcloud website: https://nextcloud.com/install/#install-clients
 
+!! Nextcloud and nextcloud api must be allowed to visitors to be able to use apps
+!! In the webadmin of yunohost : Users > Manage groups and permissions > Visitors > Add nextcloud to the list of permissions for the visitors group
+
 ## Useful Manipulations & Problems Encountered <a name="UtileManipulations" href=""></a>
 
 ### Add storage space <a name="AddSpace" href=""></a>
