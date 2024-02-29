@@ -195,7 +195,7 @@ Save the file (**CTRL** + **o**) and exit nano (**CTRL** + **c**).
 Then run a scan by executing next command as root:
 
 ```bash
-sudo -u nextcloud php8.1 --define apc.enable_cli=1 files:scan --all
+sudo -u nextcloud php8.1 --define apc.enable_cli=1 occ files:scan --all
 ```
 
 Now the problem is fixed.
