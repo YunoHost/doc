@@ -46,6 +46,7 @@ Lorsque l'organisation à but non lucratif est prête à franchir le pas.
 ## Où
 
 Le serveur YunoHost peut être hébergé à différents endroits :
+
 * Hébergement en propre sur un serveur, un ordinateur ou Raspberry derrière ADSL, SDSL ou Fibre
 * [Chatons](https://chatons.org), [librehosters](https://framagit.org/librehosters/awesome-librehosters)
 * Services d'hébergement commercial fournissant une machine virtuelle Debian
@@ -63,6 +64,7 @@ YunoHost est une distribution basée sur Debian GNU/Linux qui automatise l’ins
 ![](https://upload.wikimedia.org/wikipedia/commons/0/07/Yunohost_user_portal.png)
 
 YunoHost fournit immédiatement:
+
 * Un système d'application
 * Une interface Web
 * Une interface de ligne de commande (CLI) : Moulinette
@@ -88,6 +90,7 @@ YunoHost fournit par défaut un système de messagerie disponible en utilisant P
 Les comptes de messagerie seront gérés à l'aide de l'interface Web ou de la ligne de commande. Les comptes créés sont stockés dans OpenLDAP.
 
 Des packages supplémentaires peuvent être installés pour fournir davantage de fonctionnalités au système de messagerie YunoHost :
+
 * un webmail en utilisant [Roundcube](https://github.com/YunoHost-Apps/roundcube_ynh), [Rainloop](https://github.com/YunoHost-Apps/rainloop_ynh)
 * ActiveSync utilisant [Z-Push](https://github.com/YunoHost-Apps/z-push_ynh)
 * Groupe de distribution interne en utilisant [Mailman](https://github.com/YunoHost-Apps/mailman_ynh)
@@ -95,12 +98,14 @@ Des packages supplémentaires peuvent être installés pour fournir davantage de
 ### Calendrier
 
 Pour fournir des calendriers personnels ou partagés, vous devrez installer :
+
 * [Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh)
 * [Baïkal](https://github.com/YunoHost-Apps/baikal_ynh)
 
 ### Contact
 
 Pour fournir un système de contact personnel, vous devrez installer :
+
 * [Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh)
 * [Baïkal](https://github.com/YunoHost-Apps/baikal_ynh)
 
@@ -114,28 +119,33 @@ Les fichiers seront disponibles à partir d'une interface Web ou à l'aide d'un 
 Par défaut, YunoHost fournit immédiatement un serveur XMPP pour lequel vous pouvez installer un client Web : [Jappix](https://github.com/YunoHost-Apps/jappix_ynh)
 
 Vous pouvez également installer un serveur Matrix :
+
 * Le serveur : [Synapse](https://github.com/YunoHost-Apps/synapse_ynh)
 * Un client Web : [Element](https://github.com/YunoHost-Apps/element_ynh)
 
 ### Intranet
 
 Pour une organisation à but non lucratif, un bon moyen de mettre en œuvre un intranet est de fournir un wiki permettant aux utilisateurs internes de lire, éditer et ajouter du contenu. Voici quelques paquets pour implémenter un wiki :
+
 * [DokuWiki](https://github.com/YunoHost-Apps/docuwiki_ynh) utilisant une syntaxe wiki
 * [Wiki.js](https://github.com/YunoHost-Apps/wikijs_ynh) utilisant une syntaxe Markdown
 
 ### ERP / Comptabilité
 
 À un moment donné, une organisation à but non lucratif pourrait avoir besoin d’un système de Comptabilité / ERP, voici deux propositions :
+
 * [OpenERP/Odoo](https://github.com/YunoHost-Apps/libreerp_ynh)
 * [Dolibarr](https://github.com/YunoHost-Apps/dolibarr_ynh)
 
 ### Site Web Public
 
 Il existe plusieurs façons d'implémenter un site Web public :
+
 * Un simple site HTML, CSS, etc. en utilisant : [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh)
 * Utiliser un CMS (système de gestion de contenu) comme  [WordPress](https://github.com/YunoHost-Apps/_ynh), [Drupal](https://github.com/YunoHost-Apps/drupal_ynh), [Grav](https://github.com/YunoHost-Apps/grav_ynh), [PluXml](https://github.com/YunoHost-Apps/pluxml_ynh)
 
 Mais nous proposerons quelque chose de plus puissant : [CiviCRM on Drupal 7](https://github.com/YunoHost-Apps/civicrm_drupal7_ynh) :
+
 * Drupal qui est un puissant framework de gestion de contenu
 * avec CiviCRM qui est un CRM open source à destination des organisations à but non lucratif
 
@@ -161,6 +171,7 @@ YunoHost fournit son propre système de sauvegarde. Avant toute mise à niveau d
 Les sauvegardes YunoHost sont stockées localement dans `/home/yunohost.backup/archives`.
 
 Mais pour la production, la sauvegarde stockée localement ne suffit pas, vous devez donc mettre en œuvre des stratégies de sauvegarde supplémentaires :
+
 * Sauvegarde de la machine virtuelle si fournie par le système d'hébergement.
 * [Archivist](https://github.com/YunoHost-Apps/archivist_ynh) est un système de sauvegarde automatique de votre serveur. Vos sauvegardes peuvent être envoyées à de nombreux autres endroits, locaux ou distants.
 * [Borg](https://github.com/YunoHost-Apps/borg_ynh) and [Borg Server](https://github.com/YunoHost-Apps/borgserver_ynh) permettent d'externaliser les sauvegardes.

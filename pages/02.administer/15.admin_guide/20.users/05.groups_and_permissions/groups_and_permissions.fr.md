@@ -19,17 +19,18 @@ L'utilisation de groupes est cependant utile pour la sémantique, par exemple si
 
 Il est également possible de définir des alias mail pour un groupe, afin que les mails envoyés à `groupe@domain.tld` soient redirigés vers tous les membres du groupe.
 
-
 ### Groupes par défaut
+
 Par défaut, deux groupes spéciaux sont créés :
+
 - `all_users`, qui contient tous les utilisateurs enregistrés sur YunoHost,
-- `visitors`, c'est-à-dire les personnes qui consultent le serveur sans être connectées. 
+- `visitors`, c'est-à-dire les personnes qui consultent le serveur sans être connectées.
 - `admins`, apparut depuis Yunohost 11.1, ce groupe permet de gérer les administrateurs de la machine, chaque utilisateur aura alors (selon la configuration du serveur) accès en SSH ainsi que la webadmin.
 
 Vous ne pouvez pas changer le contenu de ces groupes, seulement les permissions qui leur sont accordées.
 
- 
 ### Lister les groupes existants
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="À partir de l'interface web"]
 Les groupes existants sont listés en haut de la page *groupes et autorisations*.
@@ -39,7 +40,6 @@ Les groupes existants sont listés en haut de la page *groupes et autorisations*
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
 Pour obtenir la liste des groupes existants en ligne de commande :
-
 
 ```shell
 $ yunohost user group list
@@ -51,10 +51,12 @@ groups:
       - charlie
       - delphine
 ```
+
 [/ui-tab]
 [/ui-tabs]
 
 ### Créer un nouveau groupe
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="À partir de l'interface web"]
 Pour créer un nouveau groupe, il suffit de cliquer sur le bouton "Nouveau groupe" en haut de la page. Vous ne pouvez choisir qu'un nom formé de lettres (majuscules et minuscules) et d'espaces. Le groupe est créé vide et sans aucune permission.
@@ -66,12 +68,14 @@ Pour créer un nouveau groupe, il suffit de cliquer sur le bouton "Nouveau group
 Dans la ligne de commande, pour créer un nouveau groupe appelé `yolo_crew`, il faut utiliser
 
 ```shell
-$ yunohost user group create yolo_crew
+yunohost user group create yolo_crew
 ```
+
 [/ui-tab]
 [/ui-tabs]
 
 ### Mettre à jour un groupe
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="À partir de l'interface web"]
 Ajoutons un premier utilisateur à ce groupe : dans le panneau du groupe, cliquez sur le bouton "Ajouter un utilisateur" et faites défiler jusqu'à l'utilisateur souhaité, puis cliquez dessus.
@@ -87,7 +91,7 @@ Pour supprimer un utilisateur, cliquez sur la croix à côté de son nom d'utili
 En ligne de commande, utilisez la commande suivante pour ajouter `charlie` et `delphine` au groupe `yolo_crew` :
 
 ```shell
-$ yunohost user group add yolo_crew charlie delphine
+yunohost user group add yolo_crew charlie delphine
 ```
 
 (De même, `remove` peut être utilisé pour retirer des membres d'un groupe.)
@@ -108,6 +112,7 @@ groups:
       - charlie
       - delphine
 ```
+
 [/ui-tab]
 [/ui-tabs]
 
@@ -125,8 +130,9 @@ Pour supprimer un groupe, cliquez sur la croix rouge en haut à droite du pannea
 Pour supprimer le groupe `yolo_crew` en ligne de commande, vous pouvez exécuter :
 
 ```shell
-$ yunohost user group delete yolo_crew
+yunohost user group delete yolo_crew
 ```
+
 [/ui-tab]
 [/ui-tabs]
 
@@ -145,6 +151,7 @@ La page des groupes liste les permissions données à chaque groupe, y compris l
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
 Pour répertorier les permissions et les accès correspondants en ligne de commande :
+
 ```shell
 $ yunohost user permission list
 permissions:
@@ -157,6 +164,7 @@ permissions:
   xmpp.main:
     allowed: all_users
 ```
+
 Ici, nous constatons que tous les utilisateurs enregistrés peuvent utiliser le mail, XMPP, et accéder au blog WordPress. Cependant, personne ne peut accéder à l'interface d'administration de WordPress.
 
 Plus de détails peuvent être affichés en ajoutant l'option `--full` qui affichera la liste des utilisateurs correspondant aux groupes autorisés, ainsi que les adresses web associées à une permission (pertinent pour les applications web).
@@ -182,13 +190,13 @@ Notez que, par exemple, si nous voulons restreindre la permission pour le mail a
 Pour permettre à un groupe d'accéder à l'interface d'administration de WordPress via la ligne de commande :
 
 ```shell
-$ yunohost user permission update wordpress.admin --add yolo_crew
+yunohost user permission update wordpress.admin --add yolo_crew
 ```
 
 Vous pouvez également autoriser un seul utilisateur :
 
 ```shell
-$ yunohost user permission update wordpress.admin --add alice
+yunohost user permission update wordpress.admin --add alice
 ```
 
 Et maintenant, nous pouvons voir que YoloCrew et Alice ont tous deux accès à l'interface d'administration de WordPress :
@@ -206,7 +214,7 @@ $ yunohost user permission list
 Pour permettre seulement à Bob d'accéder aux emails en ligne de commande :
 
 ```shell
-$ yunohost user permission update mail --remove all_users --add bob
+yunohost user permission update mail --remove all_users --add bob
 ```
 
 [/ui-tab]
@@ -235,12 +243,13 @@ En ligne de commande, le même genre de chose peut être fait avec :
 # Activer la tuile pour l'interface d'admin de WordPress
 $ yunohost user permission update wordpress.admin --show_tile True
 ```
+
 [/ui-tab]
 [/ui-tabs]
 
-
 ### Gérer les alias des groupes
-Chaque groupe peut utiliser des alias de mail, bien que leur configuration se fasse actuellement uniquement depuis la CLI. Par défaut, le groupe `admins` dispose ainsi de `admins@domain.tld`, `root@domain.tld` ... : les messages envoyés à ces adresses sont redirigés vers tous les membres du groupe `admins`. 
+
+Chaque groupe peut utiliser des alias de mail, bien que leur configuration se fasse actuellement uniquement depuis la CLI. Par défaut, le groupe `admins` dispose ainsi de `admins@domain.tld`, `root@domain.tld` ... : les messages envoyés à ces adresses sont redirigés vers tous les membres du groupe `admins`.
 
 L'utilisation de la commande `yunohost user group info` permet de lister tous les alias pour le groupe renseigné.
 
@@ -258,6 +267,7 @@ $ yunohost user group info admins
 ```
 
 Il est possible de les ajouter avec l'action `add-mailalias` ou de les enlever avec `remove-mailalias`.
+
 ```shell
-$ yunohost user group add-mailalias <groupe> <adresse@domaine.tld>
+yunohost user group add-mailalias <groupe> <adresse@domaine.tld>
 ```

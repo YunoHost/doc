@@ -13,7 +13,6 @@ Cette documentation a pour but de fournir tous les concepts de base et le vocabu
 
 Nous détaillerons ce qu'est un paquet d'applications YunoHost, comment il fonctionne, comment créer votre propre paquet et comment trouver de l'aide si vous en avez besoin.
 
-
 ## 1. La Philosophie du Packaging
 
 La possibilité d'installer facilement des applications à partir d'un catalogue est une caractéristique clé de YunoHost. Alors que vous vous plongez dans le processus de packaging d'applications de YunoHost, vous devez vous souvenir de ces principes clés :
@@ -25,7 +24,6 @@ La possibilité d'installer facilement des applications à partir d'un catalogue
 - **Les choses doivent être opérationnelles dès le départ** : par exemple, l'administrateur ne doit pas avoir à terminer manuellement le processus d'installation en remplissant manuellement les informations d'identification de la base de données;
 
 - Le packaging d'une application YunoHost **ne se limite pas à l'installation** des sources et des dépendances : il concerne également la maintenance (mise à jour, sauvegarde...) et l'intégration de l'application dans l'écosystème YunoHost (NGINX, SSO/LDAP, Fail2Ban, catalogue d'applications, UI/UX...).
-
 
 ## 2. Prérequis
 
@@ -56,30 +54,30 @@ Néanmoins, même si les aides existaient, la structure inhérente des applicati
 
 Cependant, [**un futur format v3** est encore à venir](https://github.com/YunoHost/issues/issues/2136) pour simplifier davantage l'empaquetage des applications (comme la prise en charge des configurations NGINX/systemd/..., l'élimination du besoin d'écrire manuellement des scripts de suppression/sauvegarde/restauration, etc.)
 
-
 ## 4. Aperçu général de la structure d'une application YunoHost
 
 Une application YunoHost est construite dans un dépôt Git. Nous vous encourageons à jeter un coup d'oeil à ces dépôts de code pour vous familiariser avec les structures des dépôts d'applications :
-- [l'application `helloworld_ynh`](https://github.com/YunoHost-Apps/helloworld_ynh) 
+
+- [l'application `helloworld_ynh`](https://github.com/YunoHost-Apps/helloworld_ynh)
 - [l'application `example_ynh`](https://github.com/YunoHost/example_ynh) qui contient toutes les fonctionnalités générales et le formattage recommandé
 - votre application "réelle" préférée dans la liste des dépots [YunoHost-Apps](https://github.com/orgs/YunoHost-Apps/repositories)
 
 Parmi les fichiers contenus dans un paquet, les plus importants sont les suivants :
 
 - le **manifeste de l'application** `manifest.toml` <small>(ou `.json` dans le passé)</small>
-    - Il peut être considéré comme la carte d'identité de l'application, contenant diverses métadonnées. 
-    - Il contient également les questions posées lors de l'installation de l'application.
-    - ainsi qu'un ensemble de "ressource" à initialiser, telles que les sources de l'app à télécharger ou les dépendances apt à installer
+  - Il peut être considéré comme la carte d'identité de l'application, contenant diverses métadonnées.
+  - Il contient également les questions posées lors de l'installation de l'application.
+  - ainsi qu'un ensemble de "ressource" à initialiser, telles que les sources de l'app à télécharger ou les dépendances apt à installer
 - **scripts/** contient un ensemble de scripts bash correspondant aux actions exposées dans YunoHost
-   - `_common.sh`: common variables or custom functions included in other scripts
-    - `install`/`remove` : la procédure d'installation et de suppression
-   - `upgrade` : la procédure de mise à niveau
-   - `backup`/`restore` : les procédures de sauvegarde/restauration 
-   - (`change_url`) : changer l'endroit où l'application est installée en termes de son url d'accès web
+  - `_common.sh`: common variables or custom functions included in other scripts
+  - `install`/`remove` : la procédure d'installation et de suppression
+  - `upgrade` : la procédure de mise à niveau
+  - `backup`/`restore` : les procédures de sauvegarde/restauration
+  - (`change_url`) : changer l'endroit où l'application est installée en termes de son url d'accès web
 - **conf/** contient un ensemble de modèles de configuration utilisés lors de l'installation de l'application. Voici quelques exemples de fichiers couramment trouvés :
-   - `nginx.conf` : le modèle de configuration de NGINX (=serveur web) pour cette application
-   - `systemd.service` : le modèle de configuration du service systemd pour cette application
-   - `config.json/yaml/???` : le modèle de configuration de l'application
+  - `nginx.conf` : le modèle de configuration de NGINX (=serveur web) pour cette application
+  - `systemd.service` : le modèle de configuration du service systemd pour cette application
+  - `config.json/yaml/???` : le modèle de configuration de l'application
 
 Grosso modo, l'installation proprement dite se compose généralement des opérations suivantes (qui peuvent toutefois varier en fonction de la complexité et des technologies utilisées par l'application) - pas nécessairement dans cet ordre exact :
 
@@ -103,7 +101,6 @@ Grosso modo, l'installation proprement dite se compose généralement des opéra
     - divers réglages de finalisation
 6. ???
 7. L'application est prête à l'emploi !
-
 
 ## 5. Créer votre tout premier paquet YunoHost
 

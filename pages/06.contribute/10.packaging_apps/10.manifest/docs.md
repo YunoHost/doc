@@ -104,7 +104,6 @@ The declaration of antifeatures is a 3-steps process:
 The format of this section is a `dict` where keys are antifeature IDs, and the values
 are translated strings (`dict` of `lang code`->`str`).
 
-
 ## Install questions
 
 This section contains questions that should be asked to the admin prior to starting the actual install
@@ -135,17 +134,17 @@ This section contains questions that should be asked to the admin prior to start
 ```
 
 - `domain` and `path` (with `type = "domain"/"path"`) are classic questions to allow the admin to choose where the app is installed (in terms of web url endpoint)
-   - e.g. if the admin answers `domain.tld` and `/foobar`, the app will be available under `domain.tld/foobar`
-   - some webapp do require a full dedicated domain and do not support the "subpath" install scheme. In that case, you typically want to remove the `path` question entirely
-   - these questions are part of YunoHost's generic app questions and therefore you do not need to define the `ask.en` strings that contain the actual question displayed in the UI along the line of "Choose a domain to install this app on"
+  - e.g. if the admin answers `domain.tld` and `/foobar`, the app will be available under `domain.tld/foobar`
+  - some webapp do require a full dedicated domain and do not support the "subpath" install scheme. In that case, you typically want to remove the `path` question entirely
+  - these questions are part of YunoHost's generic app questions and therefore you do not need to define the `ask.en` strings that contain the actual question displayed in the UI along the line of "Choose a domain to install this app on"
 - `init_main_permission` is also a classic question <small>(similar to `is_public` in v1 packaging)</small> and define what user group will be able to access the app after it is installed. Typical answer are : `visitors` (= everybody including anonymous users, the app is "public"), `all_users` (= only people with a YunoHost account, the app is "private"), or any custom user group that may have been defined by the YunoHost admins prior to the install.
 - `prefered_pet` is a custom question:
-   - `ask.en` defines the human-readable question to be asked (at least the english version)
-   - `help.en` is an optional additional message to provide further info about this question
-   - `type` is the type of question, in this case `string`
-   - in this example, we don't want a free user input but choosing between `cat`, `dog` or `both` (with proper human-readable versions of these choices)
-   - this will later automatically create a yunohost app setting named `prefered_pet`
-   - .. and in the bash install script, the bash variable will automatically be available `$prefered_pet` with the chosen value
+  - `ask.en` defines the human-readable question to be asked (at least the english version)
+  - `help.en` is an optional additional message to provide further info about this question
+  - `type` is the type of question, in this case `string`
+  - in this example, we don't want a free user input but choosing between `cat`, `dog` or `both` (with proper human-readable versions of these choices)
+  - this will later automatically create a yunohost app setting named `prefered_pet`
+  - .. and in the bash install script, the bash variable will automatically be available `$prefered_pet` with the chosen value
 
 ### Regarding install question types
 
@@ -180,6 +179,7 @@ The resource section corresponds to recurring app needs that are to be provision
 ```
 
 In this example:
+
 - `sources.main`: the URL+checksum from which the app sources will be downloaded + validated
 - `system_user`: a system (unix) user will be created for this app, using the app id as username.
 - `install_dir`: an install dir will be initialized, named `/var/www/$app` by default. Additional `owner` and `group` property allow to change the owner/group and r/w/x permissions on the created folder.

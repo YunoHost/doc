@@ -34,7 +34,7 @@ S'il vous plaît, changez votre pseudo, nous avons des légions de `ynhuser`s.
 !!! - IRC (`#yunohost` on libera.chat, [en utilisant Kiwiirc](https://web.libera.chat/#yunohost))
 !!! - XMPP (`support@conference.yunohost.org`)
 
-## ... ou demandez sur le forum !
+## ... ou demandez sur le forum
 
 S'il vous plaît, suivez le canevas des messages de la section Support. Cela aide tout le monde à comprendre le contexte de votre demande.
 

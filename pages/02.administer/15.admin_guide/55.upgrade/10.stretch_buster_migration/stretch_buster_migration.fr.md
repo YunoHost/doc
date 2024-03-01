@@ -19,13 +19,13 @@ L'objectif cette page est de décrire le processus de migration d'une instance e
 
 ## Procédure de migration
 
-#### Depuis la webadmin
+### Depuis la webadmin
 
 Après avoir mis à jour vers la version en 3.8.5.x, allez dans Outils > Migrations pour accéder à l'interface de migration. Il vous faudra ensuite lire l'avertissement attentivement et l'accepter pour lancer la migration.
 
-#### Depuis la ligne de commande
+### Depuis la ligne de commande
 
-Après avoir mis à jour vers la version 3.8.5.x, lancez : 
+Après avoir mis à jour vers la version 3.8.5.x, lancez :
 
 ```bash
 sudo yunohost tools migrations migrate
@@ -37,25 +37,25 @@ puis lisez attentivement l'avertissement et les instructions.
 
 En fonction de votre matériel et des paquets installés, la migration peut prendre jusqu'à une ou deux heures.
 
-Les logs seront affichés dans la barre de message en haut (vous pouvez approcher la souris dessus pour voir l'historique en entier). Ils seront également consultable après coup (comme les autres opérations) dans Outils > Journaux. 
+Les logs seront affichés dans la barre de message en haut (vous pouvez approcher la souris dessus pour voir l'historique en entier). Ils seront également consultable après coup (comme les autres opérations) dans Outils > Journaux.
 
 Notez que même si vous fermez la page d'admin, la migration continuera (par contre l'interface d'admin sera partiellement indisponible).
 
-#### Si la migration a crashé / échoué à un moment.
+### Si la migration a crashé / échoué à un moment
 
 Si la migration a échoué a un moment donné, la première chose à faire est de tenter de la relancer. Si cela ne fonctionne toujours pas, il vous faut [trouver de l'aide](/help) (prière de fournir le/les messages correspondants ou tout élément qui vous fait penser que ça n'a pas marché).
 
 ## Choses à vérifier après la migration
 
-#### Vérifiez que vous êtes véritablement sous Debian Buster / YunoHost 4.x
+### Vérifiez que vous êtes véritablement sous Debian Buster / YunoHost 4.x
 
 Pour cela, vous pouvez aller dans la partie Diagnostic (section Système de base). (Vous pouvez aussi regarder ce qui est affiché à droite dans le pied de page de la webadmin). En ligne de commande, vous pouvez aussi utiliser `lsb_release -a` et `yunohost --version`.
 
-#### Vérifiez que le diagnostic ne rapporte pas de problème particulier
+### Vérifiez que le diagnostic ne rapporte pas de problème particulier
 
 Également dans la section Diagnostic de la webadmin, vérifiez qu'il n'y a pas de problème apparu suite à la migration (par exemple un service qui ne tournerais plus...)
 
-#### Vérifiez que les applications fonctionnent
+### Vérifiez que les applications fonctionnent
 
 Vérifiez que vos applications installées fonctionnent... Si elles ne fonctionnent pas, il est recommandé de tenter de les mettre à jour. (ou bien de manière générale, il est recommandé de les mettre à jour même si elles fonctionnent !).
 

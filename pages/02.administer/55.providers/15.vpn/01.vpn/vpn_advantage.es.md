@@ -9,7 +9,7 @@ routes:
 
 Dado que la instalación de un servidor en casa es una práctica poco habitual, la mayoría de las conexiones a Internet que se proporcionan a los particulares no son adecuadas para este fin. Una VPN de red neutra que proporcione una dirección IPv4 fija y direcciones IPv6 puede ayudar a superar algunas limitaciones o dificultades.
 
-! <b>Advertencia</b>: no todos los proveedores de VPN existentes cumplen estos requisitos, asegúrese de que el que elija los cumpla. 
+! **Advertencia**: no todos los proveedores de VPN existentes cumplen estos requisitos, asegúrese de que el que elija los cumpla.
 
 ## Ventajas
 
@@ -45,7 +45,9 @@ Para superar esto, el uso de una VPN que respete estos puntos puede ser una alte
 Por último, si no quiere que el contenido de las comunicaciones de su servidor sea espiable por los equipos presentes en la red de su proveedor de servicios de Internet, puede utilizar una VPN para cifrar sus comunicaciones y deportar su confianza a un proveedor de VPN. A modo de recordatorio, desde 2015, el gobierno despliega oficialmente cajas negras en los principales operadores de red cuyo objetivo es espiar todas las comunicaciones digitales francesas para, entre otras cosas, preservar los intereses científicos, económicos e industriales de Francia.
 
 ## Desvenjajas
+
 ### Coste
+
 Una VPN neutra tiene un coste, ya que el operador que la proporciona debe gestionar un servidor y utilizar el ancho de banda. Los precios de las VPN asociadas a FFDN rondan los 6 euros al mes.
 
 ### Enrutamiento de paquetes

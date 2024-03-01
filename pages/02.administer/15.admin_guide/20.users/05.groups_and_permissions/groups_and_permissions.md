@@ -20,12 +20,12 @@ Using groups is however useful for semantics, for example if you host multiple g
 
 It's also possible to define mail aliases for a group, such that mails sent to `groupe@domain.tld` will be dispatched to all members of the group.
 
-
 ### Default groups
 
 By default, two special groups are created:
+
 - `all_users`, that contain all users registered on YunoHost,
-- `visitors`, that applies to people viewing the server while not logged in. 
+- `visitors`, that applies to people viewing the server while not logged in.
 
 The content of those groups cannot be changed, only the permissions given to them.
 
@@ -52,6 +52,7 @@ groups:
       - charlie
       - delphine
 ```
+
 [/ui-tab]
 [/ui-tabs]
 
@@ -68,8 +69,9 @@ To create a new group, simply click on the "New Group" button at the top of the 
 In CLI, to create a new group called `yolo_crew`
 
 ```shell
-$ yunohost user group create yolo_crew
+yunohost user group create yolo_crew
 ```
+
 [/ui-tab]
 [/ui-tabs]
 
@@ -90,7 +92,7 @@ To remove a user, click on the cross next to their username, in the group panel.
 In CLI, use the following command to add `charlie` and `delphine`to the `yolo_crew` group:
 
 ```shell
-$ yunohost user group add yolo_crew charlie delphine
+yunohost user group add yolo_crew charlie delphine
 ```
 
 (similarly, `remove` can be used to remove members from a group)
@@ -111,6 +113,7 @@ groups:
       - charlie
       - delphine
 ```
+
 [/ui-tab]
 [/ui-tabs]
 
@@ -127,8 +130,9 @@ To delete a group, click on the red cross on the top right of the group panel. Y
 To delete the group `yolo_crew` in CLI, you may run
 
 ```shell
-$ yunohost user group delete yolo_crew
+yunohost user group delete yolo_crew
 ```
+
 [/ui-tab]
 [/ui-tabs]
 
@@ -184,13 +188,13 @@ Note that you can also allow a single user, by using the specific panel at the b
 To allow a group to access the WordPress admin interface in CLI:
 
 ```shell
-$ yunohost user permission update wordpress.admin --add yolo_crew
+yunohost user permission update wordpress.admin --add yolo_crew
 ```
 
 Note that you can also allow a single user, by using the specific panel at the bottom of the page.
 
 ```shell
-$ yunohost user permission update wordpress.admin --add alice
+yunohost user permission update wordpress.admin --add alice
 ```
 
 And now we may see that both the YoloCrew and Alice have access to the WordPress admin interface:
@@ -208,8 +212,9 @@ $ yunohost user permission list
 Note that, for example, if we want to restrict permission for email so that only Bob is allowed to email, we should also remove `all_users` from the permission, by deleting it from the `all_users` group panel, or in CLI:
 
 ```shell
-$ yunohost user permission update mail --remove all_users --add bob
+yunohost user permission update mail --remove all_users --add bob
 ```
+
 [/ui-tab]
 [/ui-tabs]
 
@@ -224,7 +229,7 @@ The webadmin will issue a warning if you set a permission that is superseded by 
 Since YunoHost 4.1, you can choose to hide/display specific tiles in the SSO.
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
-In the webadmin, you can do so by going in the corresponding app view, go in `Manage label and tiles` and check/uncheck the option `Display the tile in the user portal` for the corresponding permission. 
+In the webadmin, you can do so by going in the corresponding app view, go in `Manage label and tiles` and check/uncheck the option `Display the tile in the user portal` for the corresponding permission.
 
 [/ui-tab]
 [ui-tab title="From the command line"]
@@ -235,11 +240,12 @@ In command line, this may be done with:
 # Enable the tile for the WordPress admin interface
 $ yunohost user permission update wordpress.admin --show_tile True
 ```
+
 [/ui-tab]
 [/ui-tabs]
 
-
 ### Config alias group
+
 Each group can use mail aliases, but their configuration is only available from the CLI so far. For example, the `admins` group is configured with aliases such as `admins@domain.tld`, `root@domain.tld` ... : mail sent to these addresses will be dispatched to all members of the `admins` group.
 
 The command `yunohost user group info` will list them.
@@ -258,6 +264,7 @@ $ yunohost user group info admins
 ```
 
 To add a new mail, use the action `add-mailalias` or `remove-mailalias` to delete it.
+
 ```shell
-$ yunohost user group add-mailalias <group> <address@domaine.tld>
+yunohost user group add-mailalias <group> <address@domaine.tld>
 ```
