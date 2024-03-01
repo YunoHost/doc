@@ -11,7 +11,6 @@ Variables exists for the current shell and its children only.
 Another script executed from the script is not a child, it's another shell which herited only the environment variables from its caller script, not its globals or locals variables.
 
 When a script is called, it isn't started in the current shell, but in a new instance of bash which herite environment variables from its parent.
-
 ```bash
 var1=value1
 export var2=value2
@@ -30,33 +29,30 @@ chmod +x other_script.sh
 # Here, var1 doesn't exist, only var2 still exists.
 # Because it's an environment variable.
 ```
-
 In your current shell, where you launch this script, try
-
 ```bash
 echo $var1 - $var2
 ```
-
 None of this 2 variables exists, because their scope is limited to the script itself. Never its parent.
+
 
 ### Functions inside a script
 
 Use a function would not change the scope of variables.
-
 ```bash
 var1=value1
 export var2=value2
 
 set_variable () {
- var3=value3
- export var4=value4
+	var3=value3
+	export var4=value4
 
- echo "$var1"
- echo "$var2"
- echo "$var3"
- echo "$var4"
- # All variables exists here
- # Because the function inherite its variables from the script.
+	echo "$var1"
+	echo "$var2"
+	echo "$var3"
+	echo "$var4"
+	# All variables exists here
+	# Because the function inherite its variables from the script.
 }
 
 set_variable
@@ -84,23 +80,22 @@ chmod +x other_script.sh
 ### The usage of locales variables
 
 Locales variables are limited to the function and its children.
-
 ```bash
 var1=value1
 export var2=value2
 
 set_variable () {
- var3=value3
- export var4=value4
- local var5=value5
+	var3=value3
+	export var4=value4
+	local var5=value5
 
- echo "$var1"
- echo "$var2"
- echo "$var3"
- echo "$var4"
- echo "$var5"
- # All variables exists here
- # Because the function inherite its variables from the script.
+	echo "$var1"
+	echo "$var2"
+	echo "$var3"
+	echo "$var4"
+	echo "$var5"
+	# All variables exists here
+	# Because the function inherite its variables from the script.
 }
 
 set_variable
@@ -132,26 +127,25 @@ chmod +x other_script.sh
 
 Using a local variable is usefull for limit it scope to the function only. And not bother the script in its globality with useless variables.  
 But there's also another advantage with local variable, do not modify the content of a global variable.
-
 ```bash
 var1=value1
 var2=value2
 var3=value3
 
 set_variable () {
- echo "$var1"
- echo "$var2"
- echo "$var3"
+	echo "$var1"
+	echo "$var2"
+	echo "$var3"
 
- echo "-"
+	echo "-"
 
- var2=new_value2
- local var3=new_value3
+	var2=new_value2
+	local var3=new_value3
 
- echo "$var1"
- echo "$var2"
- echo "$var3"
- # Values of var2 and var3 are modified in the function.
+	echo "$var1"
+	echo "$var2"
+	echo "$var3"
+	# Values of var2 and var3 are modified in the function.
 }
 
 set_variable
@@ -169,43 +163,42 @@ echo "$var3"
 
 As seen previously, modified or created variables in a function can affect the main script because the function is executed in the same shell.  
 But, the things are different if the function is executed in a sub shell, the function become a child which only inherite from its parent.
-
 ```bash
 var1=value1
 var2=value2
 var3=value3
 
 fonction2 () {
- echo "-"
- echo "var1=$var1"
- echo "var2=$var2"
- echo "var3=$var3"
- echo "var4=$var4"
- echo "var5=$var5"
- # Even var3, which is local, is inherited from the parent function.
+	echo "-"
+	echo "var1=$var1"
+	echo "var2=$var2"
+	echo "var3=$var3"
+	echo "var4=$var4"
+	echo "var5=$var5"
+	# Even var3, which is local, is inherited from the parent function.
 }
 
 set_variable () {
- echo "var1=$var1"
- echo "var2=$var2"
- echo "var3=$var3"
- # Variables are inherited from the parent.
+	echo "var1=$var1"
+	echo "var2=$var2"
+	echo "var3=$var3"
+	# Variables are inherited from the parent.
 
- echo "-"
+	echo "-"
 
- var2=new_value2
- local var3=new_value3
- var4=new_value4
- export var5=new_value5
+	var2=new_value2
+	local var3=new_value3
+	var4=new_value4
+	export var5=new_value5
 
- echo "var1=$var1"
- echo "var2=$var2"
- echo "var3=$var3"
- echo "var4=$var4"
- echo "var5=$var5"
- # Values of var2 and var3 are modified in the function.
+	echo "var1=$var1"
+	echo "var2=$var2"
+	echo "var3=$var3"
+	echo "var4=$var4"
+	echo "var5=$var5"
+	# Values of var2 and var3 are modified in the function.
 
- (fonction2)
+	(fonction2)
 }
 
 (set_variable)

@@ -54,14 +54,13 @@ Voici une liste plus exhaustive des clients XMPP : [https://fr.wikipedia.org/wi
 ## Chiffrer ses conversations avec OMEMO
 
 Il est possible de rendre les conversations plus sécurisées et privées en les chiffrant à l'aide de [OMEMO](https://xmpp.org/extensions/xep-0384.html), notamment en utilisant Gajim :
-
 - Installez `gajim` et le plugin `gajim-omemo` ;
 - Activez le plugin dans `Outils > Plugins` ;
 - Activez le chiffrement dans une conversation avec un contact disposant de OMEMO.
 
 ## Salon de discussion
 
-Pour créer un salon de discussion (Multi-user chat) sur votre serveur YunoHost, utilisez l’identifiant <nomsalon@muc.domaine.tld> (où domaine.tld est le domaine principal de votre serveur).
+Pour créer un salon de discussion (Multi-user chat) sur votre serveur YunoHost, utilisez l’identifiant nomsalon@muc.domaine.tld (où domaine.tld est le domaine principal de votre serveur).
 
 Si vous utilisez un nom de domaine personnel, il est nécessaire d’[ajouter une redirection de type CNAME pour le sous domaine `muc.`](/dns_config) au niveau de votre serveur DNS.
 

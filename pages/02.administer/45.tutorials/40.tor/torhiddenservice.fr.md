@@ -7,16 +7,14 @@ routes:
   default: '/torhiddenservice'
 ---
 
-! Ce tuto n'est pas complet ! Des données peuvent être récupérées avec cette installation comme le nom de domaine principal de votre yunohost, donc ce n'est pas un "service caché". Voir <https://www.torproject.org/docs/tor-hidden-service.html.en> (anglais)
+! Ce tuto n'est pas complet ! Des données peuvent être récupérées avec cette installation comme le nom de domaine principal de votre yunohost, donc ce n'est pas un "service caché". Voir https://www.torproject.org/docs/tor-hidden-service.html.en (anglais)
 
 ### Installer Tor
-
 ```bash
 apt install tor 
 ```
 
-###  Configurer notre service caché
-
+### Configurer notre service caché
 Éditer le fichier `/etc/tor/torrc`, et ajouter ces lignes :
 
 ```bash
@@ -26,13 +24,11 @@ HiddenServicePort 443 127.0.0.1:443
 ```
 
 ### Redémarrer Tor
-
 ```bash
 systemctl restart tor
 ```
 
 ### Obtenir l’adresse du service caché
-
 ```bash
 cat /var/lib/tor/hidden_service/hostname
 ```
@@ -40,13 +36,11 @@ cat /var/lib/tor/hidden_service/hostname
 Le nom de domaine ressemble à *random123456789.onion*
 
 ### Ajouter le domaine .onion à YunoHost
-
 ```bash
 yunohost domain add random123456789.onion
 ```
 
 ### Éviter la redirection vers le SSO (optionnel)
-
 Si vous voulez éviter d’être redirigé vers le portail à la connexion pour des raisons de traçabilité, vous pouvez désactiver SSOwat pour le domaine, en éditant le fichier `/etc/nginx/conf.d/random123456789.onion.conf` et en commentant la ligne suivante (elle apparaît deux fois dans le fichier) :
 
 ```bash
@@ -54,13 +48,11 @@ Si vous voulez éviter d’être redirigé vers le portail à la connexion pour 
 ```
 
 ### Vérifier que l'on a pas fait d'erreurs dans la configuration de NGINX
-
 ```bash
 nginx -t
 ```
 
 ### Si tout est OK on applique les modifications de la configuration
-
 ```bash
 systemctl reload nginx
 ```

@@ -30,3 +30,5 @@ Praticare il self-hosting non rende il "tuo internet" più sicuro e non fornisce
 - **Con grandi server derivano grandi responsabilità.** Gestire un server implica l'essere responsabile dei dati che ospiti: nessuno potrà recuperare i dati al tuo posto se li perderai. YunoHost offre funzionalità di salvataggio che è raccomandato utilizzare per memorizzare le configurazioni e i dati importanti. Devi tenere controllate le raccomandazioni e le novità riguardo la sicurezza perché il tuo server o i tuoi dati non vengano compromessi.
 
 - **La qualità e le performances probabilmente non saranno le stesse dei servizi premium.** YunoHost (e la maggior parte delle applicazioni che sono predisposte) sono programmi liberi e open-source, sviluppati da comunità di volontari. Non c'è la garanzia assoluta che i programmi funzionino in tutte le possibili situazioni. Le performance del tuo server self-hosting sono legate anche al processore, alla memoria RAM e alla connessione internet.
+
+

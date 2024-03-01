@@ -18,8 +18,11 @@ SSH (à partir de votre réseau local ! ou en utilisant un mode rescure si vous 
 1. Connectez-vous à l'interface web d'administration.
 2. Allez dans la section Outis > Changer le mot de passe d’administration.
 
+
 ## En ligne de commande
 
+
 ```bash
-yunohost tools rootpw
+yunohost tools adminpw
 ```
+

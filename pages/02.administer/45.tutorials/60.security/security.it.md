@@ -15,7 +15,7 @@ Rimangono due punti importanti da notare:
 
 * Poiché YunoHost è un software molto conosciuto ed usato aumenta le possibilità di un attacco. Se viene scoperto un problema potrebbe essere usato contemporaneamente contro tutte le istanze. Mantenete **aggiornato** il vostro sistema per aumentare la sicurezza. Gli aggiornamenti possono essere automatizzati installando l'[applicazione "Unattended_upgrades"](https://install-app.yunohost.org/?app=unattended_upgrades).
 
-!!!! Se avete bisogno di aiuto non esitate a [chiedere](/help).
+!!!! Se avete bisogno di aiuto non esitate a [chiedere](/help). 
 
 !! [fa=shield /] Per discutere di problemi di sicurezza contattate il [team YunoHost security](/security_team).
 
@@ -27,11 +27,11 @@ Se il vostro server YunoHost è usato in situazioni critiche di produzione oppur
 
 ! **ATTENZIONE:** Per seguire queste istruzioni è necessario essere in possesso di conoscenze avanzate di amministrazione di sistema.
 
-!!!! **SUGGERIMENTO** Non chiudete mai la connessione SSH in uso prima di aver controllato che le modifiche fatte siano corrette. Provate la nuova configurazione aprendo un nuovo terminale o una nuova finestra cosicché possiate eliminare le modifiche se c'è qualcosa di sbagliato.
+!!!! **SUGGERIMENTO** Non chiudete mai la connessione SSH in uso prima di aver controllato che le modifiche fatte siano corrette. Provate la nuova configurazione aprendo un nuovo terminale o una nuova finestra cosicché possiate eliminare le modifiche se c'è qualcosa di sbagliato. 
 
 ### Autenticazione SSH con la chiave
 
-Di default l'autenticazione SSH chiede la password dell'amministratore. È consigliato disattivare questo tipo di autenticazione per sostituirlo con il sistema basato sulle chiavi.
+Di default l'autenticazione SSH chiede la password dell'amministratore. È consigliato disattivare questo tipo di autenticazione per sostituirlo con il sistema basato sulle chiavi. 
 
 **Sul client**:
 
@@ -40,7 +40,7 @@ ssh-keygen
 ssh-copy-id -i ~/.ssh/id_rsa.pub <username@your_yunohost_server>
 ```
 
-!!! Se incontrate problemi di permessi impostate `username` come proprietario della directory `~/.ssh` con il comando `chown`. Fate attenzione al fatto che, per ragiorni di sicurezza questa directory deve essere con il modo `700`.
+!!! Se incontrate problemi di permessi impostate `username` come proprietario della directory `~/.ssh` con il comando `chown`. Fate attenzione al fatto che, per ragiorni di sicurezza questa directory deve essere con il modo `700`. 
 
 !!! Se state usando Ubuntu 16.04 dovete avviare `ssh-add` per avviare l'agente SSH.
 
@@ -51,7 +51,6 @@ Digitate la password di amministrazione e la chiave verrà copiata nel vostro se
 ```bash
 sudo yunohost settings set security.ssh.password_authentication -v no
 ```
-
 ---
 
 ### Modificare la porta SSH
@@ -59,7 +58,7 @@ sudo yunohost settings set security.ssh.password_authentication -v no
 Per prevenire i tentativi di connessione dei robot che fanno scan di internet alla ricerca di server con SSH attivato è possibile cambiare la porta SSH.
 Questa impostazione è gestita da un'impostazione di sistema che aggiorna le configurazioni di SSH e di fail2ban.
 
-! Se modificate una qualsiasi impostazione nel file `/etc/ssh/sshd_config`, anche solo la porta di ascolto, YunoHost non gestirà più il file. Per questa ragione è necessario usare sempre gli strumenti di amministrazione per fare modifiche ai file di configurazione del sistema.
+! Se modificate una qualsiasi impostazione nel file `/etc/ssh/sshd_config`, anche solo la porta di ascolto, YunoHost non gestirà più il file. Per questa ragione è necessario usare sempre gli strumenti di amministrazione per fare modifiche ai file di configurazione del sistema. 
 
 ```bash
 sudo yunohost settings set security.ssh.port -v <new_ssh_port_number>
@@ -82,13 +81,11 @@ La configurazione TLS di default per i servizi è pensata per offrire una buona 
 Il cambio di livello di compatibilità non è definitivo e può essere ripristinato nel caso in cui non si adatti alle vostre necessità.
 
 **Sul vostro server**, cambio della policy per NGINX
-
 ```bash
 sudo yunohost settings set security.nginx.compatibility -v modern
 ```
 
 **Sul vostro server**, cambio della policy per SSH
-
 ```bash
 sudo yunohost settings set security.ssh.compatibility -v modern
 ```

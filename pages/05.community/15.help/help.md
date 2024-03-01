@@ -34,7 +34,7 @@ Please change your username, as we got legions of `ynhuser`s.
 !!! - IRC (`#yunohost` on libera.chat, [using kiwiirc](https://web.libera.chat/#yunohost))
 !!! - XMPP (`support@conference.yunohost.org`)
 
-## ... or ask on the forum
+## ... or ask on the forum !
 
 Please follow the Support section post template. It helps everyone understand the context of your request.
 

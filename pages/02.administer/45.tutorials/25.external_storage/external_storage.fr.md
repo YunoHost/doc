@@ -35,7 +35,7 @@ Ci-dessous, vous trouverez des explications pour parvenir à déplacer vos donn�
 
 ## 1. Identifier les dossiers à déplacer
 
-La commande `ncdu /` vous permet de naviguer dans les dossiers de votre serveur afin de constater leurs tailles.
+La commande `ncdu /` vous permet de naviguer dans les dossiers de votre serveur afin de constater leurs tailles. 
 
 Ci-dessous, une explication de certains chemins qui peuvent prendre du poids avec quelques commentaires pour vous aider à réduire leur poids ou à choisir de les déplacer.
 
@@ -107,14 +107,13 @@ mkfs.ext4 /dev/VOTRE_DISQUE1
 
 Remplacez `VOTRE_DISQUE1` par le nom de la première partition sur le disque par exemple `sda1`.
 
-!!! Il est possible d'adapter cette étape, pour par exemple créer un volume raid 1 (disques en miroir) ou chiffrer le dossier.
+!!! Il est possible d'adapter cette étape, pour par exemple créer un volume raid 1 (disques en miroir) ou chiffrer le dossier. 
 
 ## 4. Monter le disque
 
 Contrairement à Windows où les disques sont accessibles avec des lettres (C:/), sous linux, les disques sont rendus accessibles via l'arborescence. "Monter" un disque signifie le rendre effectivement accessible dans l'arborescence des fichiers. Nous allons choisir arbitrairement de monter le disque dans `/mnt/hdd` mais vous pouvez le nommer différemment (par exemple `/mnt/disque` ...).
 
 Commençons par créer le répertoire :
-
 ```bash
 mkdir /mnt/hdd
 ```
@@ -127,12 +126,12 @@ mount /dev/VOTRE_DISQUE1 /mnt/hdd
 
 (Ici, `/dev/VOTRE_DISQUE1` correspond à la première partition sur le disque)
 
+
 ## 5. Monter un dossier de /mnt/hdd sur un des dossiers dont on veut déplacer les données
 
 Ici on va considérer que vous souhaitez déplacer les grosses données des applications qui se trouvent dans `/home/yunohost.app` ainsi que les mails sur votre disque dur.
 
 ### 5.1 Création des sous-dossiers sur le disque
-
 Pour commencer, on crée un dossier dans le disque dur
 
 ```bash
@@ -141,7 +140,6 @@ mkdir -p /mnt/hdd/var/mail
 ```
 
 ### 5.2 Passage en mode maintenance
-
 Puis, idéalement on passe en maintenance les applications qui pourraient être en train d'écrire des données.
 
 Exemple, pour nextcloud:
@@ -207,6 +205,7 @@ A partir de cette étape, vos services tournent avec leurs données sur le disqu
 
 ## 6. Monter automatiquement au démarrage
 
+
 Jusqu'ici, nous avons monté manuellement le disque et les sous-dossiers. Cependant, il est nécessaire de configurer le système pour qu'il monte automatiquement le disque après un démarrage.
 
 Si vos tests sont concluants, il faut pérenniser les points de montages, sinon dépêchez-vous de faire machine arrière en commençant par remettre en maintenance.
@@ -240,7 +239,6 @@ Utiliser Ctrl+X puis `o` pour sauvegarder.
 Vous pouvez ensuite tester de redémarrer le système pour vérifier si le disque et les sous-dossiers sont montés automatiquement.
 
 ## 7. Nettoyer les anciennes données
-
 Dès que votre nouveau setup est validé, vous pouvez procéder à la suppression des anciennes données issues de l'étape 6.3:
 
 ```bash
@@ -248,6 +246,6 @@ rm -Rf /home/yunohost.app.bkp
 rm -Rf /var/mail.bkp
 ```
 
-## ![](image://tada.png?resize=32&classes=inline) Félicitations
+## ![](image://tada.png?resize=32&classes=inline) Félicitations !
 
 Si vous êtes arrivé jusqu'ici sans dommage, vous avez désormais un serveur qui tire parti d'un ou de plusieurs disques de stockage.

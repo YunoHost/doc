@@ -15,6 +15,7 @@ YunoHost is based on Debian, so on Debian's components' licenses.
 
 Applications and applications packages have their own licenses.
 
+
 #### What's YunoHost goal?
 
 We believe that decentralizing the Internet, and empowering people to take control and responsibility back over their own data and services, is a crucial issue to guarantee a free and democratic society.
@@ -22,6 +23,7 @@ We believe that decentralizing the Internet, and empowering people to take contr
 The YunoHost project aims to democratize self-hosting.
 
 It provides a software that aims to make it easy for people to run and administer their own server, with minimal knowledge and required time.
+
 
 #### But what does YunoHost exactly *do*?
 
@@ -39,9 +41,11 @@ Yes! Have a look at the [Custom Web app](https://github.com/YunoHost-Apps/my_web
 
 Yes! YunoHost is multi-user and multi-domain. Some applications like *WordPress* or *My webapp*, are multi-instances, which means that the application can be installed many times.
 
+
 #### Why can't I access applications via the IP address?
 
 The [SSO](https://github.com/Kloadut/SSOwat/) (single sign-on) cannot properly authenticate users when they access your server with only its IP. If you really can't properly configure the DNS, you can temporarily work around it by [modifying the `hosts` file (last §)](/dns_local_network) on your computer.
+
 
 #### What's YunoHost's business model?
 
@@ -65,9 +69,11 @@ Don't hesitate to come talk to us about your ideas!
 
 A common misconception for newcomers in free software projects is to think that they are "not skilled enough". In practice, nobody is "skilled" :). What really matter is: [liking what you do](https://www.youtube.com/watch?v=zIbR5TAz2xQ&t=113s), being friendly with other human beings, being patient and stubborn with machines, and having some free time. Other than that, just doing what you can is already awesome!
 
+
 #### How is the YunoHost project organized?
 
 It is described in [this document](/project_organization) :).
+
 
 #### Will you port YunoHost to [insert favorite distro]?
 
@@ -77,13 +83,14 @@ YunoHost is aimed at non-tech people who just want their server to work. Debian 
 
 If this does not convince you, there are other projects running on other distributions or with different philosophies.
 
+
 #### I checked how apps packaging work. Why are you reinventing [insert favorite package format]?
 
 People have been tempted to compare YunoHost packages to traditional package managers (such as Debian's `.deb`), which hold a different purpose. Traditional package managers are meant to install low-level purpose of installing files, commands, programs and services on the system. It is often your duty to configure them properly, simply because there is no standard server setup. Typically, web apps requires a lot of configuration because they rely on a web server and a database (and the single sign-on).
 
 YunoHost manages high-level abstractions (apps, domains, users...) and defines a standard setup (NGINX, Postfix, Metronome, SSOwat...) and, because of this, can handle the configuration for the user.
 
-#### When will [this feature] be implemented? Why isn't [that app] packaged yet? I cannot believe you do not do [this] yet
+#### When will [this feature] be implemented? Why isn't [that app] packaged yet? I cannot believe you do not do [this] yet!
 
 We do not give timelines.
 
@@ -96,10 +103,9 @@ If you really want to have a feature implemented or documented, or an app packag
 The rule of thumb is that we only include software licensed under a free-software license in the official app catalog.
 
 However, as YunoHost evolved, some gray-cases appeared with softwares that would be relevant for YunoHost's goal and match its spirit, while not being strictly-speaking free-software. Situations such as:
-
 - software promoting the use of centralized services, though precisely to avoid their direct usage ;
 - software relying on non-free dependencies or assets ;
-- "new" post-open-source / ethical-yet-not-free licenses such as the [ACSL](https://anticapitalist.software/), the [HL3](https://firstdonoharm.dev/) or the [CoopCycle License](https://github.com/coopcycle/coopcycle-web/blob/master/LICENSE) ;
+- "new" post-open-source / ethical-yet-not-free licenses such as the [ACSL](https://anticapitalist.software/), the [HL3](https://firstdonoharm.dev/) or the [CoopCycle License](https://github.com/coopcycle/coopcycle-web/blob/master/LICENSE) ; 
 - "open-core" models, trademark clauses, or business-related license clauses (such as the BSL) which are meant to ensure the project's sustainability while still remaining ethical.
 
 While we believe free software principles are an essential footstep towards [YunoHost's goal](#what-s-yunohost-goal), we believe they are a means and not an end. We reject the purist vision according to which software is either free or proprietary, and the flawed premise that technology is fundamentally neutral. We believe that ethical software and technology can and should exist beyond the definition of free software layed 40 years ago (see also: [Freedom isn't Free](https://logicmag.io/failure/freedom-isnt-free/) and [Post-Open Source](https://www.boringcactus.com/2020/08/13/post-open-source.html)).
@@ -113,9 +119,8 @@ If you run YunoHost for your business, you are responsible for doing your due di
 ### Why won't you include [feature X] ?
 
 YunoHost is primarily designed for not-so-tech-savvy users and aims to remain relatively simple in terms of UI/UX. At the same time, the project has limited time and energy available to be maintained and developed. Therefore we may lower the priority of features, or refuse entirely the inclusion of features, based on the criteria that they:
-
 - would only be meaningful for advanced / power-users stuff which is out of the scope of the project ;
-- would introduce too much UI/UX bloat ;
+- would introduce too much UI/UX bloat ; 
 - would only cover unrealistic threat models ;
 - would be there only to satisfy purists ;
 - or overall would not be worth it in terms of development/maintenance time/energy for what it brings to the project.

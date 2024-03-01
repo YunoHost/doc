@@ -19,7 +19,7 @@ Beachten Sie abschließend, dass es im Kontext von YunoHost keine Hierarchie zwi
 
 ## Nicht-lateinische Zeichen
 
-Wenn Ihre Domain spezielle, nicht-lateinische Zeichen enthält, müssen Sie ihre [internationalisierte Version](https://de.wikipedia.org/wiki/Internationalisierter_Domainname) über [Punycode](https://de.wikipedia.org/wiki/Punycode) verwenden. Sie können [diesen Konverter](https://www.charset.org/punycode) verwenden und den konvertierten Domainnamen in Ihrer YunoHost-Konfiguration verwenden.
+Wenn Ihre Domain spezielle, nicht-lateinische Zeichen enthält, müssen Sie ihre [internationalisierte Version](https://de.wikipedia.org/wiki/Internationalisierter_Domainname) über [Punycode](https://de.wikipedia.org/wiki/Punycode) verwenden. Sie können [diesen Konverter](https://www.charset.org/punycode) verwenden und den konvertierten Domainnamen in Ihrer YunoHost-Konfiguration verwenden. 
 
 ## Subdomains
 
@@ -28,7 +28,7 @@ Wenn Ihre Domain spezielle, nicht-lateinische Zeichen enthält, müssen Sie ihre
 
 ## DNS-Konfiguration
 
-DNS (Domain Name System) ist ein System, das es Computern auf der ganzen Welt ermöglicht, von Menschen lesbare Domain-Namen (wie z.B. `yolo.com`) in maschinenverständliche Adressen, sogenannte IP-Adressen (wie z.B. `11.22.33.44`), zu übersetzen. Damit diese Übersetzung (und andere Funktionen) funktioniert, müssen Sie DNS-Einträge sorgfältig konfigurieren.
+DNS (Domain Name System) ist ein System, das es Computern auf der ganzen Welt ermöglicht, von Menschen lesbare Domain-Namen (wie z.B. `yolo.com`) in maschinenverständliche Adressen, sogenannte IP-Adressen (wie z.B. `11.22.33.44`), zu übersetzen. Damit diese Übersetzung (und andere Funktionen) funktioniert, müssen Sie DNS-Einträge sorgfältig konfigurieren. 
 
 YunoHost kann eine empfohlene DNS-Konfiguration für jede Domain generieren, einschließlich der für Mail und XMPP benötigten Elemente. Die empfohlene DNS-Konfiguration ist im Webadmin über Domain > (die Domain) > DNS-Konfiguration oder mit dem Befehl `yunohost domain dns-conf the.domain.tld` verfügbar.
 
@@ -40,7 +40,7 @@ Ein weiterer wichtiger Aspekt der Domain-Konfiguration ist das SSL/HTTPS-Zertifi
 
 !!!! Section to be moved to a translated /apps_overview page
 
-Im Zusammenhang mit YunoHost ist es durchaus üblich, eine einzige (oder einige wenige) Domains zu haben, auf denen mehrere Anwendungen in "Unterpfaden" installiert sind, so dass man am Ende etwas wie dieses erhält:
+Im Zusammenhang mit YunoHost ist es durchaus üblich, eine einzige (oder einige wenige) Domains zu haben, auf denen mehrere Anwendungen in "Unterpfaden" installiert sind, so dass man am Ende etwas wie dieses erhält: 
 
 ```bash
 yolo.com

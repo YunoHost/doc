@@ -13,21 +13,19 @@ This page lists some advice and guidelines which every YunoHost administrator sh
 
 To put it another way: your server is either a production server (meant to work) or a test server on which you allow yourself to experiment.
 
-If your goal is to run a production server:
-
+If your goal is to run a production server: 
 - be aware that servers are fragile system. Stay cautious, methodical and patient;
 - limit experimentations and customizations (for instance of config file);
 - do not install dozens of apps just to see how they look;
 - use non-official apps with caution, and do not use apps that are still 'in progress', 'not working' or level 0;
 - if something gets broken, think twice about fixing it by yourself if you don't know what you are doing. <small>(For instance, do not attempt to recreate yourself the admin user just because it mysteriously disappeared...)</small>
 
-## Keep it simple
+## Keep it simple!
 
-YunoHost is designed to work with general and simple use cases in mind. Deviating from those conditions will make things harder and you will need technical knowledge to make it work. For instance,
-
-- do not try to run YunoHost in a context where you cannot have control over ports 80 and 443 (or no internet at all);
-- do not try to host five servers behind the same internet connection if you are not already an advanced user;
-- do not fall into nerd whims such as willing to replace NGINX with Apache (or run both at the same time);
+YunoHost is designed to work with general and simple use cases in mind. Deviating from those conditions will make things harder and you will need technical knowledge to make it work. For instance, 
+- do not try to run YunoHost in a context where you cannot have control over ports 80 and 443 (or no internet at all); 
+- do not try to host five servers behind the same internet connection if you are not already an advanced user; 
+- do not fall into nerd whims such as willing to replace NGINX with Apache (or run both at the same time); 
 - do not try to use custom SSL certificates if you don't really need them;
 - ...
 
@@ -47,7 +45,7 @@ If you host services and data that are important for your users, it is important
 
 As an administrator, you should configure an email client to check emails sent to `root@your.domain.tld` (which should be an alias to the first user your added) or otherwise forward them to another address that you actively check. Those mails may contain information on what is happening on your server such as automated periodic tasks.
 
-## YunoHost is free software, maintained by volunteers
+## YunoHost is free software, maintained by volunteers 
 
 Finally, keep in mind that YunoHost is a free software maintained by volunteers - and that the goal of YunoHost (to democratize self-hosting) is not an easy one! It is provided without any warranty. The team of volunteers does its best to maintain and provide the best possible experience - yet features, applications and YunoHost as a whole are far from being perfect and you will experience small and big shortcomings at some points. When this happens, kindly [reach for help on the chat or forum, or report the issue](/help)! :)
 

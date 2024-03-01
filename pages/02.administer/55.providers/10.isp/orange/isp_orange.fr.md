@@ -47,7 +47,6 @@ Si vous avez une erreur "Authentification requise", la solution est la suivante 
 ```bash
 sudo nano /etc/postfix/main.cf
 ```
-
 puis, rajouter à la ligne :
 
 ```bash
@@ -69,7 +68,6 @@ ajouter
 # mdp_fai.conf
 [smtp.orange.fr]:25  adresseemail@chez.orange:son-mot-de-passe
 ```
-
 avec votre mot de passe du compte d'orange.
 
 Intégrer le mot de passe à Postfix :
@@ -94,8 +92,7 @@ Si ils ne sont pas présents, installez-les :
 apt install libsasl2-modules sasl2-bin
 ```
 
-Il est possible que postfix ne prenne pas en compte tout de suite vos modifications. Pour le forcer à le faire, exécutez
-
+Il est possible que postfix ne prenne pas en compte tout de suite vos modifications. Pour le forcer à le faire, exécutez 
 ```bash
 systemctl restart postfix
 ```

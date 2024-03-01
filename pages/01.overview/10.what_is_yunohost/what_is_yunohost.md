@@ -29,8 +29,8 @@ YunoHost is an **operating system** aiming for the simplest administration of a 
 
 YunoHost was created in February 2012 after something like this:
 
-> "Shit, I'm too lazy to reconfigure my mail server... Beudbeud, how were you able to get your little server running with LDAP?"
-> <small>Kload, February 2012</small>
+<blockquote><p>"Shit, I'm too lazy to reconfigure my mail server... Beudbeud, how were you able to get your little server running with LDAP?"</p>
+<small>Kload, February 2012</small></blockquote>
 
 All that was needed was an admin interface for Beudbeud's server to make something usable, so Kload decided to develop one. Finally, after automating several configs and packaging in some web apps, YunoHost v1 was finished.
 

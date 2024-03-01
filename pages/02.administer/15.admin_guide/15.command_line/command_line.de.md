@@ -19,10 +19,9 @@ page-toc:
 
 #### Finde deine IP
 
-Solltest du auf einem VPS installieren, dann hat der VPS Provider die IP-Adresse, die du bei ihm erfragen solltest.
+Solltest du auf einem VPS installieren, dann hat der VPS Provider die IP-Adresse, die du bei ihm erfragen solltest. 
 
 Wenn du Zuhause installierst (z.B. auf einem Raspberry Pi oder OLinuXino), dann musst du herausfinden, welche IP-Adresse dein Router dem System zugewiesen hat. Hierfür existieren mehrere Wege:
-
 - Öffne ein Terminal und tippe `sudo arp-scan --local` ein, um eine Liste der aktiven IP-Adressen deines lokalen Netzwerks anzuzeigen;
 - wenn dir der arp-scan eine zu unübersichtliche Zahl an Adressen anzeigt, versuche mit `nmap -p 22 192.168.**x**.0/24` nur die anzuzeigen, deren SSH-Port 22 offen ist. (passe das **x** deinem Netzwerk an);
 - Prüfe die angezeigten Geräte in der Benutzeroberfläche deines Routers, ob du das Gerät findest;
@@ -40,11 +39,11 @@ Es wird nach einem Passwort gefragt. Handelt es sich um einen VPS, sollte der VP
 
 ! Seit YunoHost 3.4 kann man sich nach dem Ausführen der Postinstallation nicht mehr als `root` anmelden. **Stattdessen sollte man sich mit dem `admin` Benutzer anmelden!** Für den Fall, dass der LDAP-Server defekt und der `admin` Benutzer nicht verwendbar ist, kann man sich eventuell trotzdem noch mit `root` über das lokale Netzwerk anmelden.
 
-#### Ändere das Passwort
+#### Ändere das Passwort!
 
 Nach dem allerersten Login sollte man das root Passwort ändern. Der Server könnte dazu automatisch auffordern. Falls nicht, ist der Befehl `passwd` zu benutzen. Es ist wichtig, ein einigermaßen starkes Passwort zu wählen. Beachte, dass das root Passwort durch das admin Passwort überschrieben wird, wenn man die Postinstallation durchführt.
 
-#### Auf ans Konfigurieren
+#### Auf ans Konfigurieren!
 
 Wir sind nun bereit, mit der [Postinstallation](/postinstall) zu beginnen.
 
@@ -104,13 +103,14 @@ N.B.: `fail2ban` sperrt deine IP für 10 Minuten, wenn du 5 fehlgeschlagene Logi
 
 Eine ausführlichere Diskussion über Sicherheit & SSH findest du auf der [dedicated page](/security).
 
+
 ## YunoHost Kommandozeile
 
 !!! Ein vollständiges Tutorial über die Kommandozeile würde den Rahmen der YunoHost-Dokumentation sprengen: Lies dazu am besten ein spezielles Tutorial wie [dieses](https://ryanstutorials.net/linuxtutorial/) oder [dieses](http://linuxcommand.org/). Aber sei versichert, dass du kein CLI-Experte sein musst, um es zu benutzen!
 
 Der Befehl "yunohost" kann zur Verwaltung deines Servers verwendet werden und führt verschiedene Aktionen aus, die denen des Webadmin ähneln. Der Befehl muss entweder vom `root`-Benutzer oder vom `admin`-Benutzer durch Voranstellen von `sudo` gestartet werden. (ProTip™ : Du kannst `root` mit dem Befehl `sudo su` als `admin` werden).
 
-YunoHost-Befehle haben normalerweise diese Art von Struktur:
+YunoHost-Befehle haben normalerweise diese Art von Struktur: 
 
 ```bash
 yunohost app install wordpress --label Webmail
@@ -119,7 +119,7 @@ yunohost app install wordpress --label Webmail
     category  action  argument      options
 ```
 
-Zögere nicht, nach weiteren Informationen zu einer bestimmten Kategorie oder Aktion zu fragen, indem du die Option `--help` verwendest. Zum Beispiel listen diese Befehle :
+Zögere nicht, nach weiteren Informationen zu einer bestimmten Kategorie oder Aktion zu fragen, indem du die Option `--help` verwendest. Zum Beispiel listen diese Befehle : 
 
 ```bash
 yunohost --help

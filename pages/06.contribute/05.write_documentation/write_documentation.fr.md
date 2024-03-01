@@ -80,7 +80,6 @@ Vous pouvez utiliser la syntaxe Markdown, consultez la page de [documentation d�
 ! Notez qu'il ne faut pas préciser le code de langue au début des liens vers d'autres pages de la documentation : `/fr`, `/en`, etc. sont superflus.
 
 Pour étendre les fonctionnalités de Markdown, des extensions ont été ajoutées à Grav. Vous pouvez consulter leur propre documentation sur GitHub pour découvrir comment vous en servir.
-
 ```text
 anchors
 external_links
@@ -110,7 +109,6 @@ Quelques pages de la documentation sont générées automatiquement ou dynamique
 0. *Fork* le dépôt de la documentation YunoHost sur GitHub
 1. Installez l'app Grav pour YunoHost : `yunohost app install grav`
 2. Installez les extensions suivantes via l'admin ou la ligne de commande de Grav :
-
 ```text
 anchors
 breadcrumbs
@@ -127,7 +125,6 @@ presentation-deckset
 shortcode-core
 tntsearch
 ```
-
 3. Paramétrez l'extension Git Sync.
    1. Choisissez `GitHub` et vos identifiants GitHub
    2. Entrez l'adresse de votre *fork*, par exemple `https://github.com/username/doc`
@@ -139,9 +136,9 @@ tntsearch
    8. "Advanced settings" > "remote branch" : `master`  
 (vous pouvez changer `master` en une autre branche si vous le souhaitez, mais n'oubliez pas de la créer au préalable sur GitHub)
    9. "Advanced settings" > "Committer Name" : votre nom d'utilisateur sur GitHub
-10. "Advanced settings" > "Committer Email" : votre email renseigné sur GitHub
-11. Enregistrez et cliquez sur "Reset Local Copy"
-12. Renseignez les adresses dans les clés `commits` et `tree` dans `config/themes/yunohost-docs.yaml` pour quelles pointent vers l'adresse de votre *fork* sur GitHub
+  10. "Advanced settings" > "Committer Email" : votre email renseigné sur GitHub
+  11. Enregistrez et cliquez sur "Reset Local Copy"
+  12. Renseignez les adresses dans les clés `commits` et `tree` dans `config/themes/yunohost-docs.yaml` pour quelles pointent vers l'adresse de votre *fork* sur GitHub
 4. Assurez-vous que les dossiers `user/pages/01.home` et `user/pages/02.typography` sont supprimés.
 5. Dans l'administration de Grav, dans "Configuration" > "System" :
    1. "Language" > "Supported" : `en` `fr` `de` `es` `ar`

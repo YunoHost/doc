@@ -16,23 +16,23 @@ Here's a summary of how to do this the application wordpress. Here, is is assume
 
 #### 1. Move the entire wordpress folder to an external hard drive
 
-```bash
+```shell
 mv /var/www/wordpress /media/externalharddrive/
 ```
 
-#### 2. Create a symbolic link
+#### 2. Create a symbolic link 
 
 So that programs looking for files in /var/www/wordpress will actually take them from the harddrive
 
-```bash
+```shell
 ln -s /media/externalharddrive/wordpress /var/www/wordpress
 ```
 
 #### 3. Tweak permissions (maybe?)
 
 After this, note that you may need to tweak the permissions of `/media/externalharddrive` so that `www-data` (or the user corresponding to the app) is able to read through the folder... Something like :
-
-```bash
+ 
+```shell
 chgrp www-data /media/externalharddrive
 chmod g+rx /media/externalharddrive
 
@@ -42,3 +42,4 @@ chmod g+rx /media/externalharddrive
 out what to do exactly)
 
 !!! If you want to do it with *NextCloud*, see [this Tutorial](/app_nextcloud).
+

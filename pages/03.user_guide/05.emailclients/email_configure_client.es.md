@@ -19,6 +19,7 @@ A continuación puedes encontrar los elementos a configurar en el cliente de cor
 | IMAP     | 993  | SSL/TLS    | Normal password | `nombre_de_usuario` (sin `@domain.tld`) |
 | SMTP     | 587  | STARTTLS   | Normal password | `nombre_de_usuario` (sin `@domain.tld`) |
 
+
 ### ![](image://thunderbird.png?resize=50&classes=inline) Configurar Mozilla Thunderbird (en un ordenador)
 
 Para configurar manualmente un nuevo cuenta en Thunderbird, añadir las informaciones de la cuenta, y después seleccionar el puerto 993 con SSL/TLS para IMAP, y puerto 587 con STARTTLS para SMTP. Después seleccionar 'Normal Password' para Autenticación y haz click en el botón 'Advanced Config'. Se puede que tendrás que aceptar los certificados para que todo funciona normalmente.

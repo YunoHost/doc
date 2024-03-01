@@ -15,6 +15,7 @@ YunoHost est basé sur Debian, donc sur les licences des éléments sur lesquels
 
 Les applications et leurs paquets ont leurs licences respectives.
 
+
 #### Quel est l’objectif de YunoHost ?
 
 Nous pensons que la décentralisation d’Internet, et la reprise du contrôle et de la responsabilité des données et services par les personnes est un enjeu crucial pour garantir une société libre et démocratique.
@@ -22,6 +23,7 @@ Nous pensons que la décentralisation d’Internet, et la reprise du contrôle e
 Le projet YunoHost cherche à démocratiser l’auto-hébergement.
 
 Nous fournissons un logiciel qui cherche à rendre simple le fait de gérer et d’administrer un serveur soi-même, en minimisant les compétences et le temps requis.
+
 
 #### Mais qu’est-ce que ça fait *vraiment* ?
 
@@ -31,10 +33,12 @@ Par exemple, pour installer un WordPress à la main, il vous faudrait taper tout
 
 Plus d’informations sur [cette page](/whatsyunohost) !
 
+
 #### Puis-je gérer mon propre site web avec YunoHost ?
 
 Oui ! Il faut regarder du côté de [cette app](https://github.com/YunoHost-Apps/my_webapp_ynh).
 Elle fournit une « coquille vide » : après l’installation, il suffit d’envoyer vos fichiers (via SSH/SCP ou SFTP) au bon endroit. Il est aussi possible d’avoir du PHP et une base de donnée SQL si besoin.
+
 
 #### Peut-on héberger plusieurs sites indépendants avec des noms de domaines différents ?
 
@@ -44,11 +48,13 @@ On peut tout à fait héberger plusieurs sites web car YunoHost est multi-domain
 
 Pour des raisons techniques, le [SSO](https://github.com/YunoHost/SSOwat/) ne permet pas aux utilisateurs de se connecter à l’espace utilisateur lorsque l’on accède au serveur uniquement avec l’IP. Si vous ne pouvez réellement pas configurer un nom de domaine, une solution temporaire peut être de modifier le [fichier `hosts` (dernier §)](/dns_local_network) de son ordinateur.
 
+
 #### Quel est le modèle économique de YunoHost ?
 
 YunoHost est maintenu par une équipe de bénévoles travaillant pendant leur temps libre. Le projet reçoit régulièrement des dons qui financent principalement des frais de serveurs et de communication (stickers ;P). Le projet a reçu dans le passé (ou continue de recevoir) des subventions de la part d'organismes comme [NLnet](https://nlnet.nl/) ou [CodeLutin](https://www.codelutin.com/) pour financer des développements précis.
 
 Les dons au projet étant de plus en plus important, des initiatives sont en cours pour tenter de redistribuer l'argent aux contributeur·ice·s principales et ainsi aider à pérenniser le projet. Des contributeur·ice·s mènent par ailleurs des activités professionnelles basées partiellement sur YunoHost.
+
 
 #### Puis-je faire un don au projet ?
 
@@ -57,6 +63,7 @@ Oui, c'est possible ! YunoHost a besoin de payer des serveurs et noms de domaine
 Pour faire un don ça se passe via [notre interface de don](https://donate.yunohost.org)
 
 Si vous le pouvez, vous pouvez aussi faire des contributions en nature (une partie de notre infrastructure vient d'associations qui nous fournissent des serveurs).
+
 
 #### Comment puis-je contribuer au projet ?
 
@@ -69,6 +76,7 @@ Le syndrome de l'imposteur (ne pas se sentir « assez compétent·e ») est asse
 #### Quelle est l'organisation politique du projet YunoHost ?
 
 Elle est décrite dans [ce document](/project_organization) :).
+
 
 #### Pouvez-vous porter YunoHost sur [ma distro préférée] ?
 
@@ -84,7 +92,7 @@ Des personnes ont été tentées de comparer le système de packaging de YunoHos
 
 YunoHost manipule des abstractions haut-niveau (apps, domaines, utilisateurs…) et définit un environnement standard (NGINX, Postfix, Metronome, SSOwat...) et, grâce à cela, peut gérer la configuration à la place de l’administrateur.
 
-#### Quand est-ce que [cette fonctionnalité] sera ajoutée ? Pourquoi [cette app] n'a pas encore été packagée ? Je n'en reviens pas que vous ne fassiez pas encore [cela]
+#### Quand est-ce que [cette fonctionnalité] sera ajoutée ? Pourquoi [cette app] n'a pas encore été packagée ? Je n'en reviens pas que vous ne fassiez pas encore [cela] !
 
 Nous ne donnons pas de calendrier.
 

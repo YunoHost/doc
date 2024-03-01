@@ -11,20 +11,19 @@ There are several reasons that could lead to one administrator's access being pa
 
 This page will help you diagnose the issue, get back access, and if needed repair your system. Most common causes are listed first, so follow the tutorial from top to bottom.
 
-## You have access to the server with its local IP address, but not its domain name
+## You have access to the server with its local IP address, but not its domain name.
 
 #### If you are self-hosted at home: fix ports forwarding
 
 Check that you are getting access to the server by using its public IP (you can find at [https://ip.yunohost.org](https://ip.yunohost.org). If this does not work:
-
-- Make sure you have [set up forwarding](/isp_box_config)
-- Some ISP routers do not support *hairpinning*, which prevents you from reaching your server by its domain name from within your local network. If so, you can use a cellular connection, or tweak your `hosts` file on your computer to make it bind your domain name to the local IP address instead of the public one.
+   - Make sure you have [set up forwarding](/isp_box_config)
+   - Some ISP routers do not support *hairpinning*, which prevents you from reaching your server by its domain name from within your local network. If so, you can use a cellular connection, or tweak your `hosts` file on your computer to make it bind your domain name to the local IP address instead of the public one.
 
 #### Configure DNS records
 
 ! This is not a problem if you are using a domain from `nohost.me`, `noho.st` or `ynh.fr`)
 
-You have to configure your [DNS records](/dns_config) (at least `A` records, and `AAAA` if you have an IPv6 connection).
+You have to configure your [DNS records](/dns_config) (at least `A` records, and `AAAA` if you have an IPv6 connection). 
 
 You can check that the DNS records are correct by comparing the results given by [this service](https://www.whatsmydns.net/) with the [IP given by our service](https://ip.yunohost.org).
 
@@ -42,7 +41,7 @@ You can check that the DNS records are correct by comparing the results given by
 
 ## You have access via SSH but not via the webadmin, or inversely
 
-#### You are trying to log in with SSH as `root` instead of `admin` user
+#### You are trying to log in with SSH as `root` instead of `admin` user.
 
 By default, SSH connection has to be made as `admin`. It possible to log into the server as `root` *only from the local network of the server*. If your server is a VPS, the web console or VNC provided by VPS providers may work.
 
@@ -83,7 +82,7 @@ If one of the two is working, use it to connect by SSH or the webadmin.
 
 If none are working, you need to resolv your connection issue. In some cases, an update of your router may have enabled IPv6 and DNS configuration may be disrupted.
 
-## Webadmin is working, but some web apps are returning 502 errors
+## Webadmin is working, but some web apps are returning 502 errors.
 
 It is highly probable that the underlying service for these apps is failing (e.g. PHP apps requiring `php7.0-fpm` or `php7.3-fpm`). You can then try to restart the services, and/or ask for [help](/help)
 
@@ -92,7 +91,6 @@ It is highly probable that the underlying service for these apps is failing (e.g
 If you can reach the webadmin login page (force reload with `CTRL + F5` to be sure), and you cannot log in, your password is probably wrong.
 
 If yoy are sure of your passord, it may be due to the `slapd` service failing. If that's the case, log into the server by SSH as `root`.
-
 - If your server is at home, you most likely have access to the local network. From this network, you can follow the [SSH instructions](/ssh)`.
 - If your server is a VPS, your provider may offer a web console.
 
@@ -109,7 +107,6 @@ If you have a VPN with fixed IP, maybe it has expired, or the provider's infrast
 In that case, contact your VPN provider to renew it and update the parameters of the VPN Client app.
 
 Meanwhile, try reaching your server if it is at home, by:
-
 - its local IP, retrievable from your router configuration panel or `sudo arp-scan --local`
 - reaching it at `yunohost.local`, or `yunohost-2.local`, etc. depending on how many YunoHost servers are on your network.
 

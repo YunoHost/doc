@@ -20,7 +20,7 @@ Nous parlerons ici de VirtualBox, pour son approche graphique facile à utiliser
 
 ## Installer VirtualBox
 
-Depuis un système GNU/Linux, installer simplement le paquet `virtualbox-qt`.
+Depuis un système GNU/Linux, installer simplement le paquet `virtualbox-qt`. 
 Depuis un système Windows ou macOS, il faudra se référer à la page de [téléchargement de VirtualBox](https://www.virtualbox.org/wiki/Downloads) pour récupérer le fichier d'installation adéquat. Le paquet virtualbox est déprécié depuis Debian 9, un fichier d'installation `.deb` est disponible sur la même page.
 
 Quel que soit votre système, il ne devrait pas être nécessaire d'installer l'extension pack ou les additions invités.
@@ -83,7 +83,6 @@ On se connecte à la machine virtuelle comme à n'importe quel serveur YunoHost,
 ```bash
 ssh admin@mon.domain
 ```
-
 Ou, si le domaine n'a pas été ajouté dans le hosts, en utilisant son ip.
 
 ```bash
