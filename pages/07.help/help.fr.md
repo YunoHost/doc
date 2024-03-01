@@ -18,7 +18,7 @@ Pour que nous puissions être en mesure de vous aider sur le forum, vous devez i
 
 ## Patience et courtoisie
 
-L'aide dans les salons de discussion ou sur le forum est apportée par des personnes entièrement bénévoles. Peut-être que vous-vous sentez sous pression, épuisé·e par des essais infructueux ou encore submergé·e par de mauvaises émotions... Faites une pause, buvez une gorgée de votre boisson apaisante préférée, soufflez, et une fois votre contenance revenue, poursuivez votre lecture. Nous avons besoin de vous dans un bon état d'esprit pour vous aider.
+L'aide dans les salons de discussion ou sur le forum est apportée par des personnes entièrement bénévoles. Peut-être que vous-vous sentez sous pression, que les essais infructueux vous épuisent ou encore que de mauvaises émotions vous submergent... Faites une pause, buvez une gorgée de votre boisson apaisante préférée, soufflez, et une fois votre contenance revenue, poursuivez votre lecture. Nous avons besoin de vous dans un bon état d'esprit pour vous aider.
 
 ## Expliquez le contexte
 
