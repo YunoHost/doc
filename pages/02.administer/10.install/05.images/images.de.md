@@ -39,7 +39,6 @@ N B : Auch wenn das Image nicht der neuesten Version von YunoHost entspricht, k√
     </div>
 </template>
 
-
 <script>
 /*
 ###############################################################################
@@ -69,10 +68,9 @@ $(document).ready(function () {
                 var $html = $(html);
                 $html.find(".annotations").html("&nbsp;");
                 html = $html[0];
-            } 
+            }
             $('#cards-list').append(html);
         });
     });
 });
 </script>
-

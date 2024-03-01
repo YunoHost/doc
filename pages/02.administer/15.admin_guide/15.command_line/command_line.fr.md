@@ -18,6 +18,7 @@ page-toc:
 L'interface en ligne de commande (CLI) est, en informatique, la manière originale (et plus technique) d'interagir avec un ordinateur, comparée aux interfaces graphiques. La ligne de commande est généralement considérée comme plus complète, puissante et efficace que les interfaces graphiques, bien que plus difficile à apprendre.
 
 ## Comment se connecter ?
+
 ### Identifiant à utiliser
 
 [ui-tabs position="top-left" active="0" theme="lite"]
@@ -38,9 +39,10 @@ Durant la post-installation, vous avez défini un mot de passe d'administration.
 ### Adresse à utiliser
 
 Si vous hébergez votre serveur **à la maison** (par ex. Raspberry Pi ou OLinuXino ou vieil ordinateur)
-   - vous devriez pouvoir vous connecter à la machine en utilisant `yunohost.local` (ou `yunohost-2.local`, selon le nombre de serveurs sur le réseau). 
-   - si `yunohost.local` et consorts ne fonctionnent pas, il vous faut [trouver l'IP locale de votre serveur](/finding_the_local_ip).
-   - si vous avez installé votre serveur à la maison mais essayez d'y accéder depuis l'extérieur du réseau local, assurez-vous d'avoir bien configuré une redirection de port pour le port 22.
+
+- vous devriez pouvoir vous connecter à la machine en utilisant `yunohost.local` (ou `yunohost-2.local`, selon le nombre de serveurs sur le réseau).
+- si `yunohost.local` et consorts ne fonctionnent pas, il vous faut [trouver l'IP locale de votre serveur](/finding_the_local_ip).
+- si vous avez installé votre serveur à la maison mais essayez d'y accéder depuis l'extérieur du réseau local, assurez-vous d'avoir bien configuré une redirection de port pour le port 22.
 
 S'il s'agit d'une machine distante (VPS), votre fournisseur devrait vous avoir communiqué l'IP de votre machine.
 
@@ -87,6 +89,7 @@ Si vous souhaitez ajouter une clé publique SSH à l'utilisateur, vous devez le 
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
 Pour autoriser un utilisateur ou un groupe à accéder en SFTP ou en SSH :
+
 ```bash
 # SFTP
 yunohost user permission add sftp <username>
@@ -95,6 +98,7 @@ yunohost user permission add ssh <username>
 ```
 
 Pour enlever la permission :
+
 ```bash
 # SFTP
 yunohost user permission remove sftp <username>
@@ -103,11 +107,13 @@ yunohost user permission remove ssh <username>
 ```
 
 Enfin, il est possible d'ajouter, de supprimer et de lister des clés SSH, pour améliorer la sécurité de l'accès SSH, avec les commandes :
+
 ```bash
 yunohost user ssh add-key <username> <key>
 yunohost user ssh remove-key <username> <key>
 yunohost user ssh list-keys <username>
 ```
+
 [/ui-tab]
 [/ui-tabs]
 
@@ -143,25 +149,31 @@ yunohost user create --help
 vont successivement lister toutes les catégories disponibles, puis les actions de la catégorie `user`, puis expliquer comment utiliser l'action `user create`. Vous devriez remarquer que l'arbre des commandes YunoHost suit une structure similaire aux pages de la webadmin.
 
 ### La commande `yunopaste`
+
 Cette commande est utile lorsque vous voulez communiquer à une autre personne le retour d'une commande.
 
 Exemple :
+
 ```bash
 yunohost tools diagnosis | yunopaste
 ```
+
 ### Quelques commandes utiles
 
 Si votre interface web d'administration indique que l'API est injoignable, essayez de démarrer `yunohost-api` :
+
 ```bash
 systemctl start yunohost-api
 ```
 
 Si vous ne parvenez plus à vous connecter avec l'utilisateur `admin` via SSH et via l'interface web, le service `slapd` est peut-être éteint, essayez de le redémarrer :
+
 ```bash
 systemctl restart slapd
 ```
 
 Si vous avez des configurations modifiées manuellement et souhaitez connaître les modifications :
+
 ```bash
 yunohost tools regen-conf --with-diff --dry-run
 ```

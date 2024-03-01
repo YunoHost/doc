@@ -82,6 +82,7 @@ Virtual machine connection is similar to any YunoHost server connection, that is
 ```bash
 ssh admin@my.domain
 ```
+
 Or, if the domain has not been added to the `hosts` file, via its IP address.
 
 ```bash

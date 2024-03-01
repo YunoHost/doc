@@ -102,12 +102,12 @@ scp -P ssh_port admin@your.domain.tld:/home/yunohost.backup/archives/<archive_na
 
 ! Don't forget to store your backup in a different place to your server.
 
-
 !!! If you want, you can connect an external disk to your server so that the archives arrive directly on it. See this guide to [Adding external storage to your server](/external_storage)
 
 ### Testing
 
 You should regularly test your backups by at least listing the contents of the archives and checking the size of the associated data. It is best to practice restoring regularly.
+
 ```bash
 # List the files
 tar -tvf /home/yunohost.backup/archives/ARCHIVE.tar | less
@@ -120,9 +120,11 @@ ls -lh /home/yunohost.backup/archives/ARCHIVE.tar
 ```
 
 ### Restoring backups
+
 !!! SPOILER: The larger your data volume and the more applications you have, the more complex your recovery will be.
 
 #### Simple case: little data, archive already present
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the webadmin"]
 
@@ -173,17 +175,15 @@ scp -P ssh_port /path/to/your/<archive_name>.tar admin@your.domain.tld:/home/yun
 
 There are 3 YunoHost applications that offer to extend YunoHost with an automated backup method.
 
- * [BorgBackup](/backup/borgbackup)
- * [Restic](/backup/restic)
- * [Archivist](/backup/archivist)
+- [BorgBackup](/backup/borgbackup)
+- [Restic](/backup/restic)
+- [Archivist](/backup/archivist)
 
 ## Go further
 
- * [Evaluate the quality of your backup](/backup/strategies)
- * [Clone your file system](/backup/clone_filesystem)
- * [Avoid a hardware failure](/backup/avoid_hardware_failure)
- * [Include/exclude files](/backup/include_exclude_files)
- * [Custom methods](/backup/custom_backup_methods)
- * [Migrate or merge servers](/backup/migrate_or_merge_servers)
-
-
+- [Evaluate the quality of your backup](/backup/strategies)
+- [Clone your file system](/backup/clone_filesystem)
+- [Avoid a hardware failure](/backup/avoid_hardware_failure)
+- [Include/exclude files](/backup/include_exclude_files)
+- [Custom methods](/backup/custom_backup_methods)
+- [Migrate or merge servers](/backup/migrate_or_merge_servers)
