@@ -5,14 +5,18 @@
 
 Please report [issues on YunoHost bugtracker](https://github.com/YunoHost/issues/issues).
 
+## Note about package documentation
+
+Package documentation should be done in the package repository itself, under the `/doc` folder.  
+You can learn about it here: <https://yunohost.org/packaging_app_doc>
+
 # Contributing
 
-This repo use a **submodule** to provide the theme. So when you clone use: 
+This repo use a **submodule** to provide the theme. So when you clone use:
 
 ```shell
 git clone --recursive https://github.com/YunoHost/doc.git
 ```
-
 
 You can refer to the page on [writing documentation](https://yunohost.org/write_documentation).
 
@@ -35,5 +39,4 @@ Finally you can rebuild the CSS with (You can replace `expanded` by `compressed`
 ```
 
 Source:
-https://sass-lang.com/guide
-
+<https://sass-lang.com/guide>
