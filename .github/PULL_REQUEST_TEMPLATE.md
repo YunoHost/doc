@@ -4,7 +4,7 @@
 
 ## Solution
 
-- *And how do you fix relevantly that problem*
+- *And how do you relevantly fix that problem*
 
 ## PR checklist
 
