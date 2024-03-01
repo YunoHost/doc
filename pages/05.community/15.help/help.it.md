@@ -59,3 +59,4 @@ document.getElementById("goDevroom").onclick = function() {
     window.location.href = "https://web.libera.chat/#yunohost-dev";
 }
 </script>
+

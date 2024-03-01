@@ -17,7 +17,7 @@ E-Mail ist ein kompliziertes Ökosystem und eine ganze Reihe von Details können
 
 Um Ihre Einstellungen zu validieren:
 
-- Wenn Sie zu Hause selbst hosten und kein VPN verwenden, stellen Sie sicher das [Ihr ISP den Port 25 nicht blockiert](https://yunohost.org/#/isp);
+- Wenn Sie zu Hause selbst hosten und kein VPN verwenden, stellen Sie sicher das [Ihr ISP den Port 25 nicht blockiert](https://yunohost.org/#/isp); 
 - leiten Sie Ports weiter, wie in [dieser Dokumentation](https://yunohost.org/#/isp_box_config) beschrieben;
 - Mail-DNS-Einträge nach [dieser Dokumentation](https://yunohost.org/#/dns_config) sorgfältig konfigurieren;
 - testen Sie Ihre Konfiguration mit [Mail-tester.com](https://mail-tester.com/) (Vorsicht : nur 3 Tests pro Domain und Tag sind erlaubt) ;
@@ -47,3 +47,4 @@ Es ist möglich, dass die von Ihrer YunoHost-Instanz gesendeten E-Mails von den 
 ## Eine Migration von E-Mails von einem E-Mail-Provider zu einer YunoHost-Instanz
 
 Siehe [diese Seite](https://yunohost.org/#/email_migration).
+

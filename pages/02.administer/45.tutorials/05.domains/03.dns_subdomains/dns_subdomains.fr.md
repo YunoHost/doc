@@ -15,8 +15,7 @@ YunoHost permet l’usage de sous-domaine. Il faut avoir un nom de domaine par e
 
 Dans la configuration de son DNS, on aura donc une entrée A avec l’adresse IPv4, une entrée AAAA avec l’adresse IPv6 et ensuite différents CNAME pour les sous-domaines que l’on souhaite créer.
 Nom Type Valeur
-
-```text
+```bash
 @         A         XYZ.XYZ.XYZ.XYZ
 @         AAAA      1234:1234:1234:FFAA:FFAA:FFAA:FFAA:AAFF
 *         CNAME     mondomaine.fr.
@@ -24,7 +23,6 @@ agenda    CNAME     mondomaine.fr.
 blog      CNAME     mondomaine.fr.
 rss       CNAME     mondomaine.fr.
 ```
-
 permet d’avoir un `agenda.mondomaine.fr`, un `blog.mondomaine.fr` etc.
 
 ### Installer une application sur un sous-domaine

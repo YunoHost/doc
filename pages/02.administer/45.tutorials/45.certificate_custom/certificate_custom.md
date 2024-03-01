@@ -57,26 +57,22 @@ sudo mv *.pem *.cnf yunohost_self_signed/
 Depending on the registration authority, intermediate and root certificates must be obtained.
 
 > **StartSSL**
->
 > ```bash
 > sudo wget http://www.startssl.com/certs/ca.pem -O ae_certs/ca.pem
 > sudo wget http://www.startssl.com/certs/sub.class1.server.ca.pem -O ae_certs/intermediate_ca.pem
 >```
 
 > **Gandi**
->
 > ```bash
 > sudo wget https://www.gandi.net/static/CAs/GandiStandardSSLCA2.pem -O ae_certs/intermediate_ca.pem
 >```
 
 > **RapidSSL**
->
 > ```bash
 > sudo wget https://knowledge.rapidssl.com/library/VERISIGN/INTERNATIONAL_AFFILIATES/RapidSSL/AR1548/RapidSSLCABundle.txt -O ae_certs/intermediate_ca.pem
 >```
 
 > **Cacert**
->
 > ```bash
 > sudo wget http://www.cacert.org/certs/root.crt -O ae_certs/ca.pem
 > sudo wget http://www.cacert.org/certs/class3.crt -O ae_certs/intermediate_ca.pem
@@ -141,4 +137,5 @@ Reload NGINX configuration to take into account the new certificate.
 sudo service nginx reload
 ```
 
-Your certificate is ready. However, you can ensure that it is in place by testing the certificate using the <a href="https://www.geocerts.com/ssl_checker" target="_blank">geocerts</a>.
+Your certificate is ready. However, you can ensure that it is in place by testing the certificate using the <a href="https://www.geocerts.com/ssl_checker" target="_blank">geocerts</a>. 
+

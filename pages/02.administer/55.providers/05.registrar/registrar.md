@@ -22,6 +22,7 @@ Not all registrars are supported. So far, the community tested and validated the
 
 The list below can help you to choose a registrar if you plan to buy a domain name to use it with YunoHost.
 
+
 | Registrar | Compatibility | Easy to obtain an API key | Howto |
 | --------- | ------------- | ------------------ |
 | [Gandi](https://www.gandi.net)     | ✔ (tested)    | ✔ |  [Obtain an API key](/providers/registrar/gandi/autodns)                |

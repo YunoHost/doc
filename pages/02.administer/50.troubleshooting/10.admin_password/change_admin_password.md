@@ -19,7 +19,9 @@ First, connect to your web administration.
 
 Then go to Tools > Change administration password.
 
+
 ## Using the command line interface
+
 
 ```bash
 yunohost tools rootpw

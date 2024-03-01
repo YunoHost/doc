@@ -9,7 +9,7 @@ routes:
 
 ![](image://XMPP_logo.png?resize=100)
 
-L'installazione di YunoHost comprende il server di messaggistica istantanea Metronome che supporta il [protocollo XMPP](https://it.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol) (precedentemente conosciuto come Jabber).
+L'installazione di YunoHost comprende il server di messaggistica istantanea Metronome che supporta il [protocollo XMPP](https://it.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol) (precedentemente conosciuto come Jabber). 
 
 Questo protocollo utilizzato da milioni di persone nel mondo è un protocollo aperto.
 Tutte le applicazioni basate su XMPP sono tra di loro compatibili: quando utilizzate un client XMPP potete interagire con chiunque possieda un account XMPP.
@@ -20,7 +20,7 @@ XMPP è un protocollo espandibile: ciò significa che gli utenti possono configu
 
 Per utilizzare XMPP è necessario disporre di un account che rispetti questa sintassi come identificativo: `utente@mio.dominio.tld` e di una password.
 
-In YunoHost un account XMPP è creato automaticamente per ogni utente.
+In YunoHost un account XMPP è creato automaticamente per ogni utente. 
 L'identificativo XMPP corrisponde all'indirizzo mail principale di ogni utente e relativa password.
 
 ## Collegarsi al proprio account XMPP YunoHost
@@ -56,7 +56,6 @@ Qui un elenco completo dei client XMPP [Qui](https://fr.wikipedia.org/wiki/Liste
 ## Cifrare le conversazioni con OMEMO
 
 È possibile proteggere e cifrare le conversazioni con l'uso di [OMEMO encryption](https://xmpp.org/extensions/xep-0384.html), ben supportato in Gajim:
-
 - Installate `gajim` e il plugim `gajim-omemo`.
 - Attivate il plugin nel menù `Strumenti > Plugins`.
 - Attivate la cifratura in una conversazione con un contatto che adotta OMEMO

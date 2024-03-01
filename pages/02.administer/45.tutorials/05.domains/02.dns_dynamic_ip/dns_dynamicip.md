@@ -18,35 +18,30 @@ The method proposed here consists of automatizing the fact the box announces its
 ### Registrars
 
 Here are some examples of registrars, companies where you can buy domain names:
-
-- [OVH](http://ovh.com/)
-- [GoDaddy](https://godaddy.com/)
-- [Gandi](http://gandi.net/)
-- [Namecheap](https://www.namecheap.com/)
-- [BookMyName](https://www.bookmyname.com/)
+* [OVH](http://ovh.com/)
+* [GoDaddy](https://godaddy.com/)
+* [Gandi](http://gandi.net/)
+* [Namecheap](https://www.namecheap.com/)
+* [BookMyName](https://www.bookmyname.com/)
 
 If you own a domain name at **OVH**, you may go to step 4 and follow this [tutorial](/OVH), given that OVH proposes a DynDNS service.
 
 #### 1. Create an account to a Dynamic DNS service
-
 Here are sites which offer a DynDNS service free of charge:
-
-- [DNSexit](https://www.dnsexit.com/Direct.sv?cmd=dynDns)
-- [No-IP](https://www.noip.com/remote-access)
-- [ChangeIP](https://changeip.com)
-- [DynDNS.it (in italian, paid plan)](https://dyndns.it)
-- [DynDNS with your own domain](https://github.com/opi/DynDNS-with-HE.NET)
-- [Duck DNS](https://www.duckdns.org/)
-- [ydns.io](https://ydns.io/)
+* [DNSexit](https://www.dnsexit.com/Direct.sv?cmd=dynDns)
+* [No-IP](https://www.noip.com/remote-access)
+* [ChangeIP](https://changeip.com)
+* [DynDNS.it (in italian, paid plan)](https://dyndns.it)
+* [DynDNS with your own domain](https://github.com/opi/DynDNS-with-HE.NET)
+* [Duck DNS](https://www.duckdns.org/)
+* [ydns.io](https://ydns.io/)
 
 Register to one of them. It should provide you with one (or more) IP address to reach the service, and a login (that you may be able to self-define).
 
 #### 2. Move the DNS zones
-
 Copy the [DNS zones](/dns_config), except for the NS fields, from the [registrar](#registrar) where you bought your domain name from to the dynamic DNS service you registrer at in step 1.
 
 #### 3. Switch the management of your domain name to the dynamic DNS server
-
 This step consists in declaring to your [registrar](#registrar) that the DNS service will now be managed by the DynDNS service provider.
 
 For this, first declare in the NS field(s) the IP address provided by the DynDNS service.
@@ -54,7 +49,6 @@ For this, first declare in the NS field(s) the IP address provided by the DynDNS
 Then, remove any other item in the [DNS zones](/dns_config) (except the previous NS fields), from the [registrar](#registrar).
 
 #### 4. Configure the client
-
 This client could be your ISP-box, or a package installed on your server, such as `ddclient`.
 Here, we will use the client provided by the box, which is the more easy way.
 

@@ -11,9 +11,9 @@ routes:
 
 YunoHost está instalado con un servidor de mensajería instantánea Metronome que implementa el [protocolo XMPP](https://es.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol).
 
-XMPP es un protocolo abierto y extensible que también permite crear salones de discusión, compartir status y datos, echar llamadas en VoIP y hacer videoconferencias.
+XMPP es un protocolo abierto y extensible que también permite crear salones de discusión, compartir status y datos, echar llamadas en VoIP y hacer videoconferencias. 
 
-Todas las aplicaciones basadas en XMPP son compatibles entre ellas : cuando utilizas un cliente XMPP puedes discutir con cualquier persona que tenga una cuenta XMPP/Jabber. Este protocolo ya es utilizado por millones de personas en el mundo.
+Todas las aplicaciones basadas en XMPP son compatibles entre ellas : cuando utilizas un cliente XMPP puedes discutir con cualquier persona que tenga una cuenta XMPP/Jabber. Este protocolo ya es utilizado por millones de personas en el mundo. 
 
 ## Cuenta XMPP/Jabber
 

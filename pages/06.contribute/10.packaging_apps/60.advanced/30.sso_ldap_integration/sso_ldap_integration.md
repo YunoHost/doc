@@ -10,7 +10,6 @@ routes:
 One powerful aspect of YunoHost is that apps are meant to be integrated with the SSO/LDAP stack, such that users logged in on YunoHost's user portal can be directly logged in each app without having to create an account in each of them nor having to re-log in each app every time.
 
 It should be stressed that there are two different aspects here:
-
 - the LDAP integration, meaning that the user accounts in the app are directly mapped to YunoHost user accounts
 - the SSO integration, meaning that a user logged in on the YunoHost user portal is automatically logged in on the app as well.
 
@@ -45,7 +44,9 @@ fastcgi_param REMOTE_USER     $remote_user;
 
 `$remote_user` being a special variable in NGINX that maps to the user provided in the HTTP Basic Auth headers. The PHP application will then use the `HTTP_REMOTE_USER` info in its code.
 
+
 TODO/FIXME: moar explanations of how this is done for non-PHP apps?
+
 
 ## Configuring SSOwat permissions for the app
 
@@ -67,6 +68,7 @@ admin.allowed = "admins"   # Initialize the access for the "admins" group ... Yo
 ```
 
 See the page about app resources for the full description of behavior and properties.
+
 
 ## Logging out on the app vs. Logging out of YunoHost
 

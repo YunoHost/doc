@@ -70,27 +70,27 @@ Wähle die Hardware, auf der du YunoHost installieren willst :
 [div class="flex-container"]
 
 [div class="flex-child hardware{%if virtualbox %} active{% endif %}"]
-[[figure caption="VirtualBox"]![][image://virtualbox.png?height=75](/figure)](/install/hardware:virtualbox)
+[[figure caption="VirtualBox"]![](image://virtualbox.png?height=75)[/figure]](/install/hardware:virtualbox)
 [/div]
 
 [div class="flex-child hardware{%if rpi012 or rpi34 %} active{% endif %}"]
-[[figure caption="Raspberry Pi"]![][image://raspberrypi.png?height=75](/figure)](/install/hardware:rpi34)
+[[figure caption="Raspberry Pi"]![](image://raspberrypi.png?height=75)[/figure]](/install/hardware:rpi34)
 [/div]
 
 [div class="flex-child hardware{%if arm_sup or (arm_unsup and not rpi012) or internetcube %} active{% endif %}"]
-[[figure caption="ARM Board"]![][image://olinuxino.png?height=75](/figure)](/install/hardware:arm)
+[[figure caption="ARM Board"]![](image://olinuxino.png?height=75)[/figure]](/install/hardware:arm)
 [/div]
 
 [div class="flex-child hardware{%if regular %} active{% endif %}"]
-[[figure caption="Normaler Computer"]![][image://computer.png?height=75](/figure)](/install/hardware:regular)
+[[figure caption="Normaler Computer"]![](image://computer.png?height=75)[/figure]](/install/hardware:regular)
 [/div]
 
 [div class="flex-child hardware{%if wsl %} active{% endif %}"]
-[[figure caption="WSL"]![][image://wsl.png?height=75](/figure)](/install/hardware:wsl)
+[[figure caption="WSL"]![](image://wsl.png?height=75)[/figure]](/install/hardware:wsl)
 [/div]
 
 [div class="flex-child hardware{%if vps_debian or vps_ynh %} active{% endif %}"]
-[[figure caption="Remote Server"]![][image://vps.png?height=75](/figure)](/install/hardware:vps_debian)
+[[figure caption="Remote Server"]![](image://vps.png?height=75)[/figure]](/install/hardware:vps_debian)
 [/div]
 
 [/div]
@@ -98,39 +98,40 @@ Wähle die Hardware, auf der du YunoHost installieren willst :
 
 {% if rpi012 or rpi34 %}
 [div class="flex-child hardware{%if rpi34 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 3 oder 4"]![][image://raspberrypi.png?height=50](/figure)](/install/hardware:rpi34)
+[[figure caption="Raspberry Pi 3 oder 4"]![](image://raspberrypi.png?height=50)[/figure]](/install/hardware:rpi34)
 [/div]
 
 [div class="flex-child hardware{%if rpi012 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 0, 1 oder 2"]![][image://rpi1.png?height=50](/figure)](/install/hardware:rpi012)
+[[figure caption="Raspberry Pi 0, 1 oder 2"]![](image://rpi1.png?height=50)[/figure]](/install/hardware:rpi012)
 [/div]
 
 {% elseif show_legacy_arm_menu %}
 
 [div class="flex-child hardware{%if internetcube %} active{% endif %}"]
-[[figure caption="Internet cube mit VPN"]![][image://internetcube.png?height=50](/figure)](/install/hardware:internetcube)
+[[figure caption="Internet cube mit VPN"]![](image://internetcube.png?height=50)[/figure]](/install/hardware:internetcube)
 [/div]
 
 [div class="flex-child hardware{%if arm_sup and not internetcube %} active{% endif %}"]
-[[figure caption="Olinuxino lime1&2 oder Orange Pi PC+"]![][image://olinuxino.png?height=50](/figure)](/install/hardware:arm_sup)
+[[figure caption="Olinuxino lime1&2 oder Orange Pi PC+"]![](image://olinuxino.png?height=50)[/figure]](/install/hardware:arm_sup)
 [/div]
 
 [div class="flex-child hardware{%if arm_unsup %} active{% endif %}"]
-[[figure caption="Andere Boards"]![][image://odroidhc4.png?height=50](/figure)](/install/hardware:arm_unsup)
+[[figure caption="Andere Boards"]![](image://odroidhc4.png?height=50)[/figure]](/install/hardware:arm_unsup)
 [/div]
 {% elseif vps_debian or vps_ynh %}
 
 [div class="flex-child hardware{%if vps_debian %} active{% endif %}"]
-[[figure caption="VPS oder dedizierter Server mit Debian 11"]![][image://debian-logo.png?height=50](/figure)](/install/hardware:vps_debian)
+[[figure caption="VPS oder dedizierter Server mit Debian 11"]![](image://debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
 [/div]
 
 [div class="flex-child hardware{%if vps_ynh %} active{% endif %}"]
-[[figure caption="VPS oder dedizierter Server mit YunoHost vorinstalliert"]![][image://logo.png?height=50](/figure)](/install/hardware:vps_ynh)
+[[figure caption="VPS oder dedizierter Server mit YunoHost vorinstalliert"]![](image://logo.png?height=50)[/figure]](/install/hardware:vps_ynh)
 [/div]
 
 {% endif %}
 
 [/div]
+
 
 {% if hardware != '' %}
 
@@ -138,15 +139,15 @@ Wähle die Hardware, auf der du YunoHost installieren willst :
 !! Dieses Setup ist vorwiegend für lokales Testing durch fortgeschrittene Benutzer gedacht. Aufgrund Limitierungen auf WSL Seite (insbesondere veränderliche IP Adresse), selfhosting kann damit knifflig sein und wird hier nicht weiter beschrieben.
 {% endif %}
 
+
 ## [fa=list-alt /] Pre-requisites
 
 {% if regular %}
-
 * Eine x86-kompatible für YunoHost bestimmte (dedizierte) Hardware: Laptop, Nettop, Netbook, Desktop mit 512MB RAM und 16GB Speicherkapazität (Minimum)
 {% elseif rpi34 %}
 * Ein Raspberry Pi 3 oder 4
 {% elseif rpi012 %}
-* Ein Raspberry Pi 0, 1 oder 2 mit mindestens 512MB RAM
+* Ein Raspberry Pi 0, 1 oder 2 mit mindestens 512MB RAM 
 {% elseif internetcube %}
 * Ein Orange Pi PC+ oder ein Olinuxino Lime 1 oder 2
 * Ein VPN mit einer festen öffentlichen IP Adresse und einer `.cube` Datei
@@ -189,9 +190,7 @@ Wähle die Hardware, auf der du YunoHost installieren willst :
 {% endif %}
 
 {% if wsl %}
-
 ## Vorstellung
-
 WSL ist ein cooles Windows 10 Feature, das Linux pseudo-Distributionen durch die Kommandozeile verfügbar macht. Lass es uns pseudo nennen, weil auch obwohl sie nicht wirklich wie virtuelle Maschinen sind, sind sie auf Virtualisierungskapazitäten angewiesen, die deren Integration mit Windows fast nahtlos machen.
 So kann z.B. Docker für Windows jetzt auf WSL bauen, anstatt auf Hyper-V.
 
@@ -217,7 +216,7 @@ rmdir .\debian -R
 
 Nun kannst du darauf zugreifen: Führe `wsl.exe -d YunoHost` aus.
 
-Da es Debian 9 Stretch ist, lass uns ein Upgrade auf Debian 11 Bullseye machen:
+Da es Debian 9 Stretch ist, lass uns ein Upgrade auf Debian 11 Bullseye machen: 
 
 ```bash
 # In WSL
@@ -226,7 +225,6 @@ sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade
 ```
-
 ## Verhindern, dass WSL an Konfigurationsdateien herumfeilt
 
 Bearbeite `/etc/wsl.conf` und füge den folgenden Code darin ein:
@@ -254,7 +252,6 @@ Unter WSL fehlt Debian `systemd`, eine Service-Konfigurations-Software.
 Diese ist ein Schlüsselelement für YunoHost, und für jede anständige Debian Distro (also ernsthaft Microsoft, was zum Henker). Lass es uns installieren:
 
 1. Installation der dotNET Runtime:
-
 ```bash
 # In WSL
 wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -266,7 +263,6 @@ sudo apt install -y dotnet-sdk-3.1
 ```
 
 2. Installation von [Genie](https://github.com/arkane-systems/genie):
-
 ```bash
 # In WSL
 # Das repository hinzufügen
@@ -295,10 +291,8 @@ Rufe `genie -s` immer während des Startes deiner Distro auf.
 
 `wsl -d YunoHost -e genie -s`
 
-## Backup und Wiederherstellung der Distro
-
+## Backup und Wiederherstellung der Distro 
 ### Mache dein erstes Distro Backup
-
 Wie zuvor gesagt, gibt es keine Rollback Möglichkeit. Lass uns deshal deine frische Distro exportieren. In PowerShell:
 
 ```
@@ -313,11 +307,10 @@ cd ~
 wsl --unregister YunoHost
 wsl --import YunoHost .\WSL\YunoHost .\WSL\YunoHost.tar.gz --version 2
 ```
-
 {% endif %}
 
-{% if vps_ynh %}
 
+{% if vps_ynh %}
 ## YunoHost VPS Provider
 
 Hier sind ein paar VPS Provider, die YunoHost nativ unterstützen :
@@ -325,19 +318,19 @@ Hier sind ein paar VPS Provider, die YunoHost nativ unterstützen :
 [div class="flex-container"]
 
 [div class="flex-child"]
-[[figure caption="Alsace Réseau Neutre - FR"]![][image://vps_ynh_arn.png?height=50](/figure)](https://vps.arn-fai.net)
+[[figure caption="Alsace Réseau Neutre - FR"]![](image://vps_ynh_arn.png?height=50)[/figure]](https://vps.arn-fai.net)
 [/div]
 [div class="flex-child"]
-[[figure caption="FAImaison - FR"]![][image://vps_ynh_faimaison.svg?height=50](/figure)](https://www.faimaison.net/services/vm.html)
+[[figure caption="FAImaison - FR"]![](image://vps_ynh_faimaison.svg?height=50)[/figure]](https://www.faimaison.net/services/vm.html)
 [/div]
 [div class="flex-child"]
-[[figure caption="Association ECOWAN - FR"]![][image://vps_ynh_ecowan.png?height=50](/figure)](https://www.ecowan.fr/vps-linux)
+[[figure caption="Association ECOWAN - FR"]![](image://vps_ynh_ecowan.png?height=50)[/figure]](https://www.ecowan.fr/vps-linux)
 [/div]
 [/div]
 {% endif %}
 
-{% if at_home %}
 
+{% if at_home %}
 ## [fa=download /] Lade das {{image_type}} Image herunter
 
 {% if rpi012 %}
@@ -403,7 +396,7 @@ $(document).ready(function () {
              .replace('%7Bimage%7D', infos.image)
              .replace('{image}', infos.image)
              .replace('{version}', infos.version);
-
+ 
             if (!infos.file.startsWith("http"))
                 infos.file="https://build.yunohost.org/"+infos.file;
             html = html.replace(/%7Bfile%7D/g, infos.file).replace(/{file}/g, infos.file);
@@ -420,16 +413,17 @@ $(document).ready(function () {
 });
 </script>
 
+
+
+
+
+
 {% if not virtualbox %}
 
 {% if arm %}
-
 ## ![microSD Karte mit Adapter](image://sdcard_with_adapter.png?resize=100,75&class=inline) Flash das {{image_type}} Image
-
 {% else %}
-
 ## ![USB Stick](image://usb_key.png?resize=100,100&class=inline) Flash das YunoHost Image
-
 {% endif %}
 
 Jetzt wo du das Image von {{image_type}} heruntergeladen hast, solltest du es auf {% if arm %}einer microSD Karte{% else %}einem USB stick oder einer CD/DVD flashen.{% endif %}
@@ -463,7 +457,6 @@ Führe dann Folgendes aus :
 # Ersetze /dev/mmcblk0 durch das richtige Device, wenn der Name deines Device anders ist...
 dd if=/path/to/yunohost.img of=/dev/mmcblk0
 ```
-
 [/ui-tab]
 {% if regular %}
 [ui-tab title="Eine CD/DVD brennen"]
@@ -500,12 +493,19 @@ Gehe zu **Settings** > **Network**:
 
 {% endif %}
 
-{% if arm %}
 
+
+
+
+
+
+
+
+{% if arm %}
 ## [fa=plug /] Das Board einschalten
 
 * Schließe das Ethernet Kabel an (ein Ende an deinem Router, das andere an deinem Board).
-  * Fortgeschrittene Nutzer, die das Board konfigurieren möchten, um sich stattdessen per WiFi zu verbinden, können bspw. [hier](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md) nachlesen.
+    * Fortgeschrittene Nutzer, die das Board konfigurieren möchten, um sich stattdessen per WiFi zu verbinden, können bspw. [hier](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md) nachlesen.
 * Stecke die SD Karte in dein Board.
 * (Optional) Du kannst Bildschirm+Tastatur direkt an deinem Board anschließen, wenn du Fehler am Boot Prozess beheben willst oder wenn du dich wohler fühlst zu "sehen was passiert" oder du direkten Zugriff auf das Board haben willst.
 * Schalte das Board ein.
@@ -513,7 +513,6 @@ Gehe zu **Settings** > **Network**:
 * Stelle sicher, dass dein Computer (Desktop/Laptop) mit dem selben lokalen Netzwerk verbunden ist (z.B. mit der selben Internet Box) wie dein Server.
 
 {% elseif virtualbox %}
-
 ## [fa=plug /] Die virtuelle Maschine hochfahren
 
 Starte die virtuelle Maschine nach der Auswahl des YunoHost Image.
@@ -522,18 +521,17 @@ Starte die virtuelle Maschine nach der Auswahl des YunoHost Image.
 
 ! Wenn du an den Fehler "VT-x ist nicht erreichbar" gerätst, musst du wahrscheinlich Virtualisierung im BIOS deines Computers einschalten.
 
-{% else %}
 
+{% else %}
 ## [fa=plug /] Die Maschine von deinem USB Stick booten
 
 * Schließe das Ethernet Kabel an (ein Ende an deinem Router, das andere an deinem Board).
 * Fahre deinen Server mit dem USB Stick oder einer eingesteckten CD-ROM hoch und wähle es durch Drücken einer der folgenden (Hardware spezifischen) Tasten als **bootable device** aus:
 `<ESC>`, `<F9>`, `<F10>`, `<F11>`, `<F12>` oder `<DEL>`.
-  * Anmerkung: Wenn auf dem Server zuvor eine aktuelle Windows Version (8+) installiert war, musst du Windows zuerst "actually reboot" sagen. Das kann irgendwo in "Advanced startup options" gemacht werden.
+    * Anmerkung: Wenn auf dem Server zuvor eine aktuelle Windows Version (8+) installiert war, musst du Windows zuerst "actually reboot" sagen. Das kann irgendwo in "Advanced startup options" gemacht werden.
 {% endif %}
 
 {% if regular or virtualbox %}
-
 ## [fa=rocket /] Die grafische Installation starten
 
 Du solltest einen Bildschirm wie diesen sehen:
@@ -556,10 +554,9 @@ Du solltest einen Bildschirm wie diesen sehen:
 
 Das YunoHost-Projekt hat die klassische Installation so weit wie möglich vereinfacht, damit sich möglichst viele Menschen nicht in zu technischen oder fallbezogenen Fragen verlieren.
 
-Mit der Installation im Expertenmodus hast du mehr Möglichkeiten, insbesondere was die genaue Partitionierung deiner Speichermedien betrifft. Du kannst dich auch für den klassischen Modus entscheiden und [deine Festplatten anschließend hinzufügen](/external_storage).
+Mit der Installation im Expertenmodus hast du mehr Möglichkeiten, insbesondere was die genaue Partitionierung deiner Speichermedien betrifft. Du kannst dich auch für den klassischen Modus entscheiden und [deine Festplatten anschließend hinzufügen](/external_storage). 
 
-### Zusammenfassung der Schritte im Expertenmodus
-
+### Zusammenfassung der Schritte im Expertenmodus:
   1. Wähle `Expert graphical install` aus.
   2. Wähle deine Sprache, deinen Standort, dein Tastaturlayout und möglicherweise deine Zeitzone aus.
   3. Partitioniere deine Festplatten. Hier kanst du ein RAID einrichten oder den Server ganz oder teilweise verschlüsseln.
@@ -585,39 +582,32 @@ Wenn du über eine oder mehrere Festplatten zum Speichern von Daten verfügst, k
 Wenn du Flexibilität haben möchtest und die Größe von Partitionen nicht (verändern) möchtest, kannst du dich auch dafür entscheiden, auf `/mnt/hdd` zu mounten und dieser [Anleitung zum Mounten aller dieser Ordner mit `mount --bind`](/external_storage) zu folgen.
 
 ### Über Verschlüsselung
-
 Beachte: Wenn du deine Festplatten ganz oder teilweise verschlüsselst, musst du bei jedem Neustart deines Servers die Passphrase eingeben. Das kann ein Problem darstellen, wenn du nicht vor Ort bist. Es gibt jedoch (ziemlich schwierig zu implementierende) Lösungen, die es dir ermöglichen, die Passphrase über SSH oder über eine Webseite einzugeben (suche nach "Dropbear Encrypted Disk").
 
 ### Über RAID
-
 Denk daran, dass:
-
-* die Festplatten in deinen RAIDs von unterschiedlichen Marken, Abnutzungserscheinungen oder Chargen sein müssen (insbesondere, wenn es sich um SSDs handelt).
-* ein RAID 1 (auch ohne Ersatz) aus Wahrscheinlichkeitssicht zuverlässiger als ein RAID 5 ist.
-* und Hardware-Raids von der Raid-Karte abhängen. Wenn die Karte ausfällt, benötigst du einen Ersatz, um das Array zu lesen und neu aufzubauen.
+ * die Festplatten in deinen RAIDs von unterschiedlichen Marken, Abnutzungserscheinungen oder Chargen sein müssen (insbesondere, wenn es sich um SSDs handelt).
+ * ein RAID 1 (auch ohne Ersatz) aus Wahrscheinlichkeitssicht zuverlässiger als ein RAID 5 ist.
+ * und Hardware-Raids von der Raid-Karte abhängen. Wenn die Karte ausfällt, benötigst du einen Ersatz, um das Array zu lesen und neu aufzubauen.
 
 [/ui-tab]
 [/ui-tabs]
 {% endif %}
 
+
 {% if rpi012 %}
-
 ## [fa=bug /] Mit dem Board verbinden und das Image per Hotfix reparieren
-
 Raspberry Pi 1 und 0 werden aufgrund von [Kompilierungsproblemen für diese Architektur](https://github.com/YunoHost/issues/issues/1423) nicht vollständig unterstützt.
 
 Es ist jedoch möglich, das Image selbst zu reparieren, bevor du die Erstkonfiguration ausführst.
 
 Um das zu erreichen, musst du dich auf deinem Raspberry Pi als Root-Benutzer [über SSH](/ssh) mit dem temporären Passwort „yunohost“ verbinden:
-
 ```
 ssh root@yunohost.local
 ```
-
 (oder „yunohost-2.local“ usw., wenn sich mehrere YunoHost-Server in deinem Netzwerk befinden)
 
 Führe dann die folgenden Befehle aus, um das Metronomproblem zu umgehen:
-
 ```
 mv /usr/bin/metronome{,.bkp}   
 mv /usr/bin/metronomectl{,.bkp} 
@@ -626,7 +616,6 @@ ln -s /usr/bin/true /usr/bin/metronomectl
 ```
 
 Und diesen hier, um das UpnPC-Problem zu umgehen:
-
 ```
 sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/firewall.py
 ```
@@ -634,7 +623,6 @@ sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/fir
 ! Der letzte Befehl muss nach jedem Yunohost-Upgrade ausgeführt werden :/
 
 {% elseif arm_unsup %}
-
 ## [fa=terminal /] Verbindung zum Board
 
 Als nächstes musst du [die lokale IP-Adresse deines Servers finden](/finding_the_local_ip), um dich als Root-Benutzer [über SSH](/ssh) mit dem temporären Passwort `1234` zu verbinden.
@@ -647,13 +635,13 @@ ssh root@192.168.x.xxx
 
 {% endif %}
 
-{% if vps_debian or arm_unsup %}
 
+{% if vps_debian or arm_unsup %}
 ## [fa=rocket /] Das Installationsskript ausführen
 
-* Öffne eine Kommandozeile auf deinem Server (entweder direkt oder [über SSH](/ssh))
-* Stelle sicher, dass du Root bist (oder gib „sudo -i“ ein, um Root zu werden)
-* Führe den folgenden Befehl aus:
+- Öffne eine Kommandozeile auf deinem Server (entweder direkt oder [über SSH](/ssh))
+- Stelle sicher, dass du Root bist (oder gib „sudo -i“ ein, um Root zu werden)
+- Führe den folgenden Befehl aus:
 
 ```bash
 curl https://install.yunohost.org | bash
@@ -741,6 +729,7 @@ Wenn du Subdomains erstellen möchtest, denk daran, diese auch in der Datei `hos
 
 Dieser Benutzer ersetzt den alten `admin` Benutzer, auf den sich einige alte Dokumentationsseiten möglicherweise noch beziehen. In diesem Fall: Ersetzen Sie einfach `admin` durch Ihren Benutzernamen.
 
+
 ## [fa=stethoscope /] Die Erstdiagnose durchführen
 
 Sobald die Post-Installation abgeschlossen ist, solltest du dich tatsächlich mit den Credentials des ersten Benutzers, den du gerade erstellt hast, bei der Webadministrationsoberfläche anmelden können.
@@ -758,6 +747,7 @@ Das Diagnosesystem soll eine einfache Möglichkeit bieten, zu überprüfen, ob a
 
 !!! Ist eine Warnung für dich nicht relevant (z.B. weil du nicht vor hast, eine bestimmte Funktion zu verwenden), ist es völlig in Ordnung, das Problem als 'ignoriert' zu markieren, indem du im Webadmin > Diagnose auf den "Ignorieren" Button (für diese bestimmte Funktion) klickst.
 
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Empfohlen) Über die Weboberfläche"]
 Um eine Diagnose auszuführen, gehe im Web Admin auf den Abschnitt "Diagnose". Klicke auf "Erstdiagnose ausführen". Du solltest nun einen Bildschirm wie diesen erhalten:
@@ -768,12 +758,10 @@ Um eine Diagnose auszuführen, gehe im Web Admin auf den Abschnitt "Diagnose". K
 
 [/ui-tab]
 [ui-tab title="In der Kommandozeile"]
-
 ```
 yunohost diagnosis run
 yunohost diagnosis show --issues --human-readable
 ```
-
 [/ui-tab]
 [/ui-tabs]
 
@@ -794,15 +782,13 @@ Gehe zu Domains > Klicke auf deine Domain > SSL Zertifikat
 
 [/ui-tab]
 [ui-tab title="In der Kommandozeile"]
-
 ```
 yunohost domain cert install
 ```
-
 [/ui-tab]
 [/ui-tabs]
 
-## ![](image://tada.png?resize=32&classes=inline) Gratulation
+## ![](image://tada.png?resize=32&classes=inline) Gratulation!
 
 Jetzt hast du ein sehr gut konfigurierten Server. Wenn du neu bei YunoHost bist, empfehlen wir dir, einen Blick auf [die geführte Tour](/overview) zu werfen. Du solltest auch in der Lage sein, [deine Lieblingsanwendungen zu installieren](/apps). Vergiss nicht, [Backups zu planen](/backup)!
 

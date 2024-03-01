@@ -18,8 +18,8 @@ Potete scaricare FileZilla [da questa pagina](https://filezilla-project.org/down
 Installate e lanciate *FileZilla*
 
 ## Configurazione
-
-1. Cliccate sull'icona in alto a sinistra *Site Manager*.
+    
+1. Cliccate sull'icona in alto a sinistra *Site Manager*. 
 
    ![Pagina principale di Filezilla](image://filezilla_1.png)
 
@@ -27,7 +27,7 @@ Installate e lanciate *FileZilla*
 
    ![Schermata del site manager](image://filezilla_2.png)
 
-3. Apparirà un avviso poiché vi state collegando per la prima volta al server. *Se è la prima connessione, potete ignorarlo*
+3. Apparirà un avviso poiché vi state collegando per la prima volta al server. *Se è la prima connessione, potete ignorarlo* 
 
    ![Avviso per la fingerprint del server sconosciuta](image://filezilla_3.png)
 
@@ -35,9 +35,9 @@ Installate e lanciate *FileZilla*
 
    ![schermata per la richiesta della password](image://filezilla_4.png)
 
-5. Una volta salvato nei segnalibri, il server verrà salvato e vedrete questa schermata.
+5. Una volta salvato nei segnalibri, il server verrà salvato e vedrete questa schermata. 
 
-   ![Schermata del "site manager" con il server appena aggiunto](image://filezilla_5.png)
+   ![Schermata del "site manager" con il server appena aggiunto](image://filezilla_5.png) 
 
 ## Utilizzo
 
@@ -79,4 +79,4 @@ Nautilus di Gnome3 integra delle funzionalità simili a FileZilla:
 
 ### MacOS
 
-* [Cyberduck](https://cyberduck.io/) un programma libero per macOS
+* [Cyberduck](https://cyberduck.io/) un programma libero per macOS 

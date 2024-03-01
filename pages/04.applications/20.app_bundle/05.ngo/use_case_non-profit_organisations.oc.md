@@ -46,7 +46,6 @@ Quand l'organizacion sens tòca lucrativa es prèsta a passar lo pas.
 ## Ont
 
 Lo servidor YunoHost pòt èsser albergat a diferents endreches :
-
 * Albergament en pròpri sus un servidor, un ordenador o Raspberry darrièr una connexion ADSL, SDSL o Fibra
 * [Chatons](https://chatons.org), [librehosters](https://framagit.org/librehosters/awesome-librehosters)
 * Servicis d'albergament comercial que fornís una maquina virtuala Debian
@@ -64,7 +63,6 @@ YunoHost es una distribucion basada sus Debian GNU/Linux qu’automatiza l’ins
 ![](https://upload.wikimedia.org/wikipedia/commons/0/07/Yunohost_user_portal.png)
 
 YunoHost provesís sul pic:
-
 * Un sistèma d'aplicacion
 * Una interfàcia web
 * Una interfàcia en linha de comanda (CLI) : Moulinette
@@ -90,7 +88,6 @@ A la prima installacion YunoHost fornís un sistèma de messatjariá disponible 
 Los comptes de messatjariá seràn gerits amb l'interfàcia Web o en linha de comanda. Los comptes creats seràn gardats dins l’OpenLDAP.
 
 De paquets suplementaris pòdon èsser installats per provesir mai de foncionalitats al sistèma de messatjariá YunoHost :
-
 * un webmail en utilizant [Roundcube](https://github.com/YunoHost-Apps/roundcube_ynh), [Rainloop](https://github.com/YunoHost-Apps/rainloop_ynh)
 * ActiveSync utilizant [Z-Push](https://github.com/YunoHost-Apps/z-push_ynh)
 * Grop de distribucion intèrne en utilizant [Mailman](https://github.com/YunoHost-Apps/mailman_ynh)
@@ -98,14 +95,12 @@ De paquets suplementaris pòdon èsser installats per provesir mai de foncionali
 ### Calendièr
 
 Per fornir de calendièrs personals o partejats, vos calrà installar :
-
 * [Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh)
 * [Baïkal](https://github.com/YunoHost-Apps/baikal_ynh)
 
 ### Contacte
 
 Per fornir un sistèma de contacte personal, vos caldrà installar :
-
 * [Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh)
 * [Baikal](https://github.com/YunoHost-Apps/baikal_ynh)
 
@@ -119,33 +114,28 @@ Las fichièrs seràn disponibles d’una interfàcia web estant o amb un client 
 Tras l’installacion YunoHost fornís sul pic un servidor XMPP per lo qual podètz installar un client Web :  [Jappix](https://github.com/YunoHost-Apps/jappix_ynh)
 
 Podètz tanben installar un servidor Matrix :
-
 * Lo servidor: [Synapse](https://github.com/YunoHost-Apps/synapse_ynh)
 * Un client web: [Riot](https://github.com/YunoHost-Apps/riot_ynh)
 
 ### Intranet
 
 Per una organizacion sens tòca lucrativa, un bon biais de metre en plaça un intranet es de fornir un wiki que permet als utilizaires intèrne de legir, modificar e ajustar de contengut. Vaquí unes paquets per installar un wiki :
-
 * [DokuWiki](https://github.com/YunoHost-Apps/docuwiki_ynh) utiliza la sintaxi wiki
 * [Wiki.js](https://github.com/YunoHost-Apps/wikijs_ynh) utiliza la sintaxi markdown
 
 ### ERP / Comptabilitat
 
 Arriba un moment ont a l’organizacion sens tòca lucrativa li pòsca far besonh un sistèma de comptabilitat / ERP, vaquí doas proposicions :
-
 * [OpenERP/Odoo](https://github.com/YunoHost-Apps/libreerp_ynh)
 * [Dolibarr](https://github.com/YunoHost-Apps/dolibarr_ynh)
 
 ### Site Web Public
 
 Existís mantuns biaisses de construire un site Web public :
-
 * Un simple site HTML, CSS, etc. en utilizant : [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh)
 * Utilizar un CMS (sistèma de gestion de contengut) coma  [Wordpress](https://github.com/YunoHost-Apps/_ynh), [Drupal](https://github.com/YunoHost-Apps/drupal_ynh), [Grav](https://github.com/YunoHost-Apps/grav_ynh), [PluXml](https://github.com/YunoHost-Apps/pluxml_ynh)
 
 Mas prepausam quicòm de mai potent : [CiviCRM on Drupal 7](https://github.com/YunoHost-Apps/civicrm_drupal7_ynh) :
-
 * Drupal qu’es un framework potent de gestion de contengut
 * amb CiviCRM qu’es un CRM OpenSource a destinacion de las organizacions sens tòca lucrativa
 
@@ -171,7 +161,6 @@ YunoHost fornís son pròpri sistèma de salvagarda. Abans tota mesa a nivèl de
 Las salvagardas YunoHost son gardadas localament dins `/home/yunohost.backup/archives`.
 
 Mas per la produccion, la salvagarda gardada localament basta pas, vos cal emplegar d’estrategias de salvagarda suplementàrias :
-
 * Salvagarda de la maquina virtuala se fornida pel sistèma d’albergament.
 * [Archivist](https://github.com/YunoHost-Apps/archivist_ynh) es un sistèma de salvagarda automatic de vòstre servidor. Vòstras salvagardas pòdon èsser enviadas a mantun endreches, locals o alonhats.
 * [Borg](https://github.com/YunoHost-Apps/borg_ynh) e [Borg Server](https://github.com/YunoHost-Apps/borgserver_ynh) permeton d’externalizar las salvagardas.

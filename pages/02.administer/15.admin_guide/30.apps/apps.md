@@ -21,7 +21,9 @@ The application catalog and its categories can be browsed directly from the weba
 
 <center><a href="/apps" style="background: orange; border-color: orange;" class="btn btn-lg btn-error"><i class="fa fa-cubes"></i> Applications catalog</a></center>
 
+
 ! Be careful and stay reasonable on the number of installed applications. Each additional installation increases the attack surface and the risk of failure. Ideally, if you want to test, do it with another instance for example in [a virtual machine](/install/hardware:virtualbox).
+
 
 ## Installing an app
 
@@ -44,7 +46,7 @@ Let's say you want to install a *Custom Webapp*. Before actually running the ins
 
 Among specific questions, forms usually ask you to choose a domain and a path onto which the app will be accessible.
 
-In the context of YunoHost, it is quite common to have a single (or a few) domains on which several apps are installed in "subpaths", so that you end up with something like this:
+In the context of YunoHost, it is quite common to have a single (or a few) domains on which several apps are installed in "subpaths", so that you end up with something like this: 
 
 ```bash
 yolo.com
@@ -135,7 +137,7 @@ The configuration panels are accessible in the webadmin in their operations page
 
 From the command line, you can list the configuration panel settings with the following command: `yunohost app config get <app>`
 
-```bash
+```
 $ yunohost app config get my_webapp
 main.php_fpm_config.phpversion:
   ask: PHP version
@@ -159,20 +161,20 @@ The `<key>` is the setting name, for example `main.sftp.with_sftp` from above.
 
 Starting YunoHost v11.1.21.4, if you need to execute commands with the app's binary, or PHP commands, etc., you can execute the command `yunohost app shell <app>`.
 It will:
-
-* open a new Bash shell as the app's system user
-* open the app's working directory (e.g. `/var/www/<app>`)
-* preload the environment with variables taken from the app's service, if it exists
-* override `php`, so that it points to the PHP version used by the app
+- open a new Bash shell as the app's system user
+- open the app's working directory (e.g. `/var/www/<app>`)
+- preload the environment with variables taken from the app's service, if it exists
+- override `php`, so that it points to the PHP version used by the app
 
 ## Applications packaging
 
 Applications must be packaged manually by application packagers/maintainers. Apps can be integrated with YunoHost to support upgrades, backup/restore and LDAP/SSO integration among other things.
 
-If you want to learn or contribute to app packaging, please check the [contributor documentation](/contributordoc).
+If you want to learn or contribute to app packaging, please check the [contributor documentation](/contributordoc). 
 
 ### Integration and quality levels
 
 Automated tests are being run regularly to test the integration and quality of all apps who were declared to be `working` by packagers. The result is a level between 0 and 8, whose meaning is detailed on [this page](/packaging_apps_levels). Some tests results may also be available [on this dashboard](https://dash.yunohost.org/appci/branch/stable).
 
 By default, only applications of sufficient quality are offered. When the quality of an application drops and until the problem is reolved, the app is hidden from the catalog to prevent its installation and its upgrades are put on hold.
+

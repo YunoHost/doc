@@ -37,7 +37,7 @@ Wurde der Domain-Name vor kurzem hinzugefügt, so steht ein selbst-signiertes Ze
 
 ![](image://certificate-before-LE.png)
 
-Wenn die Domain korrekt konfiguriert ist, dann ist es möglich
+Wenn die Domain korrekt konfiguriert ist, dann ist es möglich 
 mit dem grünen Knopf ein Let's Encrypt-Zertifikat einzusetzen.
 
 ![](image://certificate-after-LE.png)
@@ -52,7 +52,7 @@ von Let's Encrypt zu überprüfen. Das digitale Zertifikat wird automatisch etwa
 
 SSH-Zugang auf Ihrem Server herstellen.
 
-So können Sie den aktuellen Status des digitalen Zertifikats überprüfen
+So können Sie den aktuellen Status des digitalen Zertifikats überprüfen 
 
 ```bash
 yunohost domain cert-status Ihre.domain.tld
@@ -91,3 +91,5 @@ manschmal die Einstellungen verweigern. In diesem Fall ist es notwendig :
 
 - die Parameter `127.0.0.1 Ihre.domain.tld` auf der Datei `/etc/hosts` des Webserver hinzufügen.
 Wenn es immer noch nicht funktionsfähig ist, also die Überprüfungen deaktivieren mit `--no-checks` nach dem Befehl `cert-install`.
+
+

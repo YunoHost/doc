@@ -40,6 +40,7 @@ Cette page requiert que Javascript soit activé pour s'afficher correctement :s.
     </div>
 </template>
 
+
 <script>
 /*
 ###############################################################################
@@ -69,9 +70,10 @@ $(document).ready(function () {
                 var $html = $(html);
                 $html.find(".annotations").html("&nbsp;");
                 html = $html[0];
-            }
+            } 
             $('#cards-list').append(html);
         });
     });
 });
 </script>
+

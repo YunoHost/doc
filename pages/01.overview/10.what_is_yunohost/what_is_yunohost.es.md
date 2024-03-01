@@ -29,14 +29,14 @@ YunoHost es un **sistema operativo** que persigue simplificar la administración
 
 YunoHost se creó en Febrero de 2012 tras algo así:
 
-> "¡Mierda, soy muy vago para reconfigurar mi servidor de correo!… Beudbeud, ¿Cómo  hiciste para conectar tu pequeño servidor a LDAP?"
-> <small>Kload, Febrero de 2012</small>
+ <blockquote><p>"¡Mierda, soy muy vago para reconfigurar mi servidor de correo!… Beudbeud, ¿Cómo  hiciste para conectar tu pequeño servidor a LDAP?"</p>
+<small>Kload, Febrero de 2012</small></blockquote>
 
 Lo único que necesitaba era un interfaz de administración para el servidor de Beudbeud para tener algo usable, así que Kload decidió desarrollar uno. Finalmente, tras automatizar varias configuraciones y empaquetar algunas aplicaciones web, YunoHost v1 quedó terminado.
 
 Notando un entusiasmo creciente alrededor de YunoHost y del autoalojamiento en general, los desarrolladores originales junto con nuevas personas contribuyentes decidieron comenzar a trabajar en la versión 2, una versión más extensible, más potente, más fácil de usar, y ya de paso, una que prepare ricas tazas de café de comercio justo para los elfos de Laponia.
 
-El nombre **YunoHost** viene de la jerga "Y U NO Host". El [meme de Internet](https://en.wikipedia.org/wiki/Internet_meme) debería ilustrarlo:
+El nombre **YunoHost** viene de la jerga "Y U NO Host". El [meme de Internet ](https://en.wikipedia.org/wiki/Internet_meme) debería ilustrarlo:
 ![](image://dude_yunohost.jpg)
 
 ## ¿Qué no es YunoHost?

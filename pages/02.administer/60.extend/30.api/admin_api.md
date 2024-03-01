@@ -7,10 +7,9 @@ routes:
   default: '/admin_api'
 ---
 
-All command line actions can also be ran from the web API. The API is available at <https://your.server/yunohost/api>.
+All command line actions can also be ran from the web API. The API is available at https://your.server/yunohost/api.
 
 ## Test with curl
-
 You must first retrieve a login cookie thanks to the /login route to perform the other actions.
 
 ```bash
@@ -35,7 +34,7 @@ curl -k -i -H "Accept: application/json" \
 
 <div id="swagger-ui"></div>
 <style>
-# swagger-ui .topbar {
+#swagger-ui .topbar {
     display: none;
 }
 </style>
@@ -65,3 +64,4 @@ curl -k -i -H "Accept: application/json" \
 };
 
 </script>
+

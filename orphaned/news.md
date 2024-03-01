@@ -33,7 +33,7 @@ $(document).ready(function() {
         $(data).find("item").each(function(_, item) {
             var description = $(item).find("description");
             // yes this is a NIGHTMARE
-            var blockquote_content = $("<div>" + description[0].textContent + "</div>").find["blockquote"](0).innerHTML
+            var blockquote_content = $("<div>" + description[0].textContent + "</div>").find("blockquote")[0].innerHTML
             // blockquote_content = blockquote_content.replace("<h1", "<h4");
 
             html = $('#news-template').html()

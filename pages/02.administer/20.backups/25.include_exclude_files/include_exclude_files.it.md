@@ -18,8 +18,8 @@ YunoHost tiene traccia delle modifiche effettuate utilizzando gli strumenti di d
 
 Potete creare un hook di backup e un hook di ripristino per aggiungere i file da salvare. Esempio:
 
-`/etc/yunohost/hooks.d/backup/99-conf_custom`
 
+/etc/yunohost/hooks.d/backup/99-conf_custom
 ```bash
 #!/bin/bash
 
@@ -59,8 +59,7 @@ ynh_backup "/etc/yunohost/hooks.d/backup/99-conf_custom"
 ynh_backup "/etc/yunohost/hooks.d/restore/99-conf_custom"
 ```
 
-`/etc/yunohost/hooks.d/restore/99-conf_custom`
-
+/etc/yunohost/hooks.d/restore/99-conf_custom
 ```bash
 #!/bin/bash
 
@@ -106,12 +105,12 @@ ynh_restore_file "/etc/yunohost/hooks.d/backup/99-conf_custom"
 ynh_restore_file "/etc/yunohost/hooks.d/restore/99-conf_custom"
 ```
 
-## Escludere file
 
+
+## Escludere file
 Esistono solo due metodi per escludere file dal backup di YunoHost:
 
 ### Escludere alcune cartelle presenti in `/home`
-
 Se necessario potete specificare quali cartelle nella `home` di un utente non siano da includere nel comando `yunohost backup`, creando al loro interno un file vuoto con l'estensione `.nobackup`.
 
 Attenzione: questo metodo funziona solo con la **prima sottodirectory di `/home`** ad esempio `/home/user1` o `/home/yunohost.multimedia`. Al contrario non funzionerà per altre sottodirectory come `/home/user1/miacartella`.
@@ -121,8 +120,8 @@ Attenzione: questo metodo funziona solo con la **prima sottodirectory di `/home`
 Alcuni programmi come Nextcloud sono potenzialmente accompagnati da grandi quantità di dati. In questi casi viene fatto il backup solo del programma stesso (il "core").  
 Generalmente negli aggiornamenti dei programmi che contengono grandi quantità di dati, questi vengono esclusi dal backup.
 
-Per disattivare temporaneamente, nei programmi che supportano tale procedura, il backup di file di grandi dimensioni potete definire la variabile `BACKUP_CORE_ONLY`. La variabile deve essere definita prima di eseguire il comando di backup:
 
+Per disattivare temporaneamente, nei programmi che supportano tale procedura, il backup di file di grandi dimensioni potete definire la variabile `BACKUP_CORE_ONLY`. La variabile deve essere definita prima di eseguire il comando di backup:
 ```bash
 BACKUP_CORE_ONLY=1 yunohost backup create --apps nextcloud
 ```
@@ -130,7 +129,6 @@ BACKUP_CORE_ONLY=1 yunohost backup create --apps nextcloud
 Attenzione: dovrete procedere fare  backup dei dati degli utenti Nextcloud separatamente.
 
 Se volete rendere permanente l'impostazione:
-
 ```bash
 yunohost app setting nextcloud do_not_backup_data -v 1
 ```

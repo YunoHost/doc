@@ -83,3 +83,4 @@ If YunoHost thinks that your domain is badly configured despite the fact that yo
 
 - add a line `127.0.0.1 your.domain.tld` to the file `/etc/hosts` on your server;
 - if the certificate installation still doesn't work, you can disable the checks with `--no-checks` after the `cert-install` command.
+
