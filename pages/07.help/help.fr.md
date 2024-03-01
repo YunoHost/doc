@@ -9,16 +9,23 @@ routes:
 
 Bien que les personnes contribuant à YunoHost essaient continuellement de l'améliorer, YunoHost ou sa documentation ne sont exempts de bugs ou d'erreurs. Pour nous aider à vous aider, vous devez cependant suivre ces instructions.
 
-Le support n'est prodigué que sur [le forum](https://forum.yunohost.org?target=_blank) ou sur [nos salons de discussion](/chat_rooms?target=_blank).  
-Nous avons un compte Mastodon, mais nous ne prodiguons pas d'aide sur cette plateforme.
-
-Pour que nous puissions être en mesure de vous aider sur le forum, vous devez impérativement remplir le modèle de demande de support qui s'affichera lors de la création du message.
-
 # À faire
 
 ## Patience et courtoisie
 
 L'aide dans les salons de discussion ou sur le forum est apportée par des personnes entièrement bénévoles. Peut-être que vous-vous sentez sous pression, que les essais infructueux vous épuisent ou encore que de mauvaises émotions vous submergent... Faites une pause, buvez une gorgée de votre boisson apaisante préférée, soufflez, et une fois votre contenance revenue, poursuivez votre lecture. Nous avons besoin de vous dans un bon état d'esprit pour vous aider.
+
+## Demandez au bon endroit
+
+Le support n'est prodigué que sur [le forum](https://forum.yunohost.org?target=_blank) ou sur [nos salons de discussion](/chat_rooms?target=_blank).  
+Nous avons un compte Mastodon, mais nous ne prodiguons pas d'aide sur cette plateforme.
+
+Sur le forum, assurez-vous d'ouvrir votre demande dans la bonne catégorie, afin de maximiser vos chances de recevoir l'aide appropriée :
+
+- [Support](https://forum.yunohost.org/c/support/6?target=_blank) pour les problèmes lors de l'installation ou de l'utilisation de YunoHost en soit ;
+- [Support apps](https://forum.yunohost.org/c/apps/11?target=_blank) pour les problèmes lors de la configuration ou de l'utilisation d'applications.
+
+Pour que nous puissions être en mesure de vous aider sur le forum, vous devez impérativement remplir le modèle de demande de support qui s'affichera lors de la création du message.
 
 ## Expliquez le contexte
 
@@ -33,7 +40,7 @@ YunoHost fournit des boutons verts "Partager avec YunoPaste" lorsque quelque cho
 
 Il est recommandé de partager ces logs dans leur intégralité à l'aide du lien généré par YunoPaste.  
 Évitez les extraits de logs, une information déterminante est peut-être ailleurs.  
-Évitez aussi de les copier-coller de manière brutte dans le forum, car c'est désagréable de les parcourir comme ça, partagez le lien de YunoPaste.
+Évitez aussi de les copier-coller de manière brute dans le forum, car c'est désagréable de les parcourir comme ça, partagez le lien de YunoPaste.
 
 ![Bouton YunoPaste](image://yunopaste.png)
 
