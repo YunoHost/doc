@@ -83,7 +83,7 @@ Pero puede ser un poco más fácil entenderla viéndola de esta manera :
 - ¡ Los valores mostrados son ejemplos ! Refiérete a la configuración generada por tu servidor qué valores utilizar.
 - Recomendamos un [TTL](https://en.wikipedia.org/wiki/Time_to_live) de 3600 (1 hora). Pero puedes utilizar otro valor si sabes lo que estás haciendo ;
 - ¡ No pongas registros IPv6 si no estás seguro que el IPv6 funcione en tu servidor ! Tendrás problemas con Let's Encrypt si no es el caso :-)
-- If you're using the domain provider Namecheap the SRV DNS entries are formatted as **Service**: _xmpp-client **Protocol**:_tcp **Priority**: 0 **Weight**: 5 **Port**: 5222 **Target**: your.domain.tld
+- If you're using the domain provider Namecheap the SRV DNS entries are formatted as **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `your.domain.tld`
 
 ### IP Dinámica
 
