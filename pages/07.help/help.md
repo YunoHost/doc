@@ -9,16 +9,23 @@ routes:
 
 Even though YunoHost contributors try to continuously perfect it, YunoHost itself or this documentation are not free from bugs or flaw. To let us help you, however, you need to follow these guidelines.
 
-Support is only available on [the forum](https://forum.yunohost.org?target=_blank) or our [chatrooms](/chat_rooms?target=_blank).  
-We are also on Mastodon, but we do not offer help on this platform.
-
-To allow us to help you on the forum, you absolutely need to fill in the Support request template, it will be displayed on message creation.
-
 # Dos
 
 ## Be courteous and patient
 
 Help in the chatrooms or on the forum is given by our users and contributors, all volunteers. You may be in a hurry, you may be exhausted by fruitless trials or overwhelmed by unpleasant emotions... Have a break, have a sip of your preferred soothing beverage, breathe and once you've recovered your composure continue reading. We need you in a good mindset to help you.
+
+## Ask in the right place
+
+Support is only available on [the forum](https://forum.yunohost.org?target=_blank) or our [chatrooms](/chat_rooms?target=_blank).  
+We are also on Mastodon, but we do not offer help on this platform.
+
+On the forum, make sure you open your request in the proper category, to maximize your chances of receiving appropriate help:
+
+- [Support](https://forum.yunohost.org/c/support/6?target=_blank) for issues when setting up or using YunoHost itself;
+- [Support apps](https://forum.yunohost.org/c/apps/11?target=_blank) for issues when setting up or using apps.
+
+To allow us to help you on the forum, you absolutely need to fill in the Support request template, it will be displayed on message creation.
 
 ## Explain the context
 
