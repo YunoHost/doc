@@ -16,14 +16,15 @@ Normalement, votre client email devrait recevoir la configuration automatiquemen
 Voici les éléments que vous devrez entrer pour configurer manuellement votre client email (`votre.domaine.tld` fait référence à ce qui est après le @ dans votre adresse email, et `nom_utilisateur` ce qui est avant @).
 
 | Protocole | Port | Chiffrement | Authentification    | Login                                         |
-| :--:      | :-:  | :--:        | :--:                | :--:                                          | 
+| :--:      | :-:  | :--:        | :--:                | :--:                                          |
 | IMAP      | 993  | SSL/TLS     | Mot de passe normal | `nom_utilisateur` (sans `@votre.domaine.tld`) |
 | SMTP      | 587  | STARTTLS    | Mot de passe normal | `nom_utilisateur` (sans `@votre.domaine.tld`) |
 
-
 ### Client par client
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Mozilla Thunderbird"]
+
 ##### ![](image://thunderbird.png?resize=50&classes=inline) Configurer Mozilla Thunderbird
 
 Pour configurer manuellement un nouveau compte dans Thunderbird commencez par remplir les informations de base (nom, adresse et mot de passe), cliquez sur Continuer puis Configuration Manuelle. Enlevez le `.` avant le nom de domaine. Sélectionnez le port 993 avec SSL/TLS pour IMAP, et le port 587 avec STARTTLS pour SMTP. Sélectionnez 'Mot de passe normal' pour l'authentification. Testez la configuration puis validez (il vous faudra ensuite peut-être accepter des certificats pour que tout fonctionne correctement).
@@ -36,6 +37,7 @@ Pour configurer manuellement un nouveau compte dans Thunderbird commencez par re
 [/ui-tab]
 
 [ui-tab title="K-9 Mail"]
+
 ##### ![](image://k9mail.png?resize=50&classes=inline) Configurer K-9 Mail (sur Android)
 
 Suivez les instructions suivantes (comme pour Thunderbird, il vous faudra peut-être accepter des certificats à un moment).
@@ -48,6 +50,7 @@ Suivez les instructions suivantes (comme pour Thunderbird, il vous faudra peut-�
 [/ui-tab]
 
 [ui-tab title="Dekko"]
+
 ##### ![](image://dekko-app.png?resize=50&classes=inline) Configurer Dekko (sur Ubuntu Touch)
 
 La première fois, vous pouvez simplement choisir « Ajouter un compte ». Si vous avez déjà un compte configuré, appuyez sur le menu hamburger puis sur le rouage, choisissez Courrier, Comptes et appuyez sur le symbole '+'.

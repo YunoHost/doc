@@ -1,4 +1,4 @@
-<div class="teasing-part">                                                                      
+<div class="teasing-part">
 
   <div class="home-logo">
     <img src="/images/ynh_logo_white_300dpi.png" width="100"/>
@@ -22,9 +22,9 @@
   </div>
 
   <div class="main-links hidden-xs">
-    <a href="/whatsyunohost">A proposito</a> <span class="colored-bar">•</span> 
-    <a href="https://forum.yunohost.org/c/announcement" target="_blank">Ultime notizie</a> <span class="colored-bar">•</span> 
-    <a href="/docs">Documentazione</a> <span class="colored-bar">•</span> 
+    <a href="/whatsyunohost">A proposito</a> <span class="colored-bar">•</span>
+    <a href="https://forum.yunohost.org/c/announcement" target="_blank">Ultime notizie</a> <span class="colored-bar">•</span>
+    <a href="/docs">Documentazione</a> <span class="colored-bar">•</span>
     <a href="https://donate.yunohost.org/">Donare</a>
   </div>
 
@@ -135,7 +135,6 @@
     </div>
   </div>
 
-
 </div><!-- boring-part -->
 
 <script type="text/javascript">
@@ -171,4 +170,3 @@
     });
 
 </script>
-

@@ -20,4 +20,4 @@ uid                  YunoHost Security <security@yunohost.org>
 sub   4096R/446838AF 2016-07-01
 ```
 
-Voyez https://gist.github.com/opi/4496024dc3ff29ab2e068fd57092ab7c et https://twitter.com/yunohost/status/748975105393459200 pour d'autres empreintes de confiance
+Voyez <https://gist.github.com/opi/4496024dc3ff29ab2e068fd57092ab7c> et <https://twitter.com/yunohost/status/748975105393459200> pour d'autres empreintes de confiance

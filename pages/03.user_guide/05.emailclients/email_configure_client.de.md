@@ -16,13 +16,15 @@ Moderne Mail-Clients sollten in der Lage sein, sich automatisch zu konfigurieren
 Hier sind die Elemente, die Sie eingeben sollten, um Ihren Mail-Client manuell zu konfigurieren (`domain.tld` bezieht sich auf das, was nach dem @ in Ihrer E-Mail Adresse steht, und `Benutzername` auf das, was vor dem @ steht).
 
 | Protokoll | Port | Verschlüsselung | Authentifizierung | Benutzername |
-| :--:     | :-:  | :--:       | :--:            | :--:                                   | 
+| :--:     | :-:  | :--:       | :--:            | :--:                                   |
 | IMAP | 993 | SSL/TLS | Normales Passwort | `Benutzername` (ohne die `@domain.tld`) |
 | SMTP | 587 | STARTTLS | Normales Passwort | `Benutzername` (ohne die `@domain.tld`) |
 
 ### Client für Client
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Mozilla Thunderbird"]
+
 ##### ![](image://thunderbird.png?resize=50&classes=inline) Mozilla Thunderbird konfigurieren (auf einem Desktop-Computer)
 
 Um ein neues Konto in Thunderbird manuell zu konfigurieren, fügen Sie die Kontoinformationen hinzu und wählen dann Port 993 mit SSL/TLS für IMAP und Port 587 mit STARTTLS für SMTP. Wählen Sie anschließend "Normales Passwort" für die Authentifizierung und klicken Sie auf "Erweiterte Konfiguration". Möglicherweise müssen Sie die Zertifikatsausnahmen für das Abrufen von E-Mails und nach dem Senden Ihrer ersten E-Mail akzeptieren. Vergessen Sie nicht, den Punkt vor dem Domainnamen zu entfernen.
@@ -34,6 +36,7 @@ Um ein neues Konto in Thunderbird manuell zu konfigurieren, fügen Sie die Konto
 
 [/ui-tab]
 [ui-tab title="K-9 Mail"]
+
 ##### ![](image://k9mail.png?resize=50&classes=inline) K-9 Mail konfigurieren (auf Android)
 
 Führen Sie die folgenden Schritte aus. (Wie bei Thunderbird müssen Sie möglicherweise an einigen Stellen Zertifikate akzeptieren)
@@ -43,9 +46,9 @@ Führen Sie die folgenden Schritte aus. (Wie bei Thunderbird müssen Sie möglic
 ![](image://k9mail_config_3.png?resize=280&classes=inline)
 ![](image://k9mail_config_4.png?resize=280&classes=inline)
 
-
 [/ui-tab]
 [ui-tab title="Dekko"]
+
 ##### ![](image://dekko-app.png?resize=50&classes=inline) Dekko konfigurieren (auf Ubuntu Touch)
 
 Beim ersten Mal können Sie einfach "Konto hinzufügen" wählen. Wenn Sie bereits ein Konto eingerichtet haben, tippen Sie auf das Hamburger-Menü, dann auf das Zahnrad, wählen Sie Mail, Konten und drücken Sie das '+'-Symbol.

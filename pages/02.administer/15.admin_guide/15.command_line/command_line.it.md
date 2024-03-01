@@ -22,6 +22,7 @@ page-toc:
 Se stai installando su un VPS allora il provider dovrebbe averti indicato il tuo indirizzo IP.
 
 Se stai installando su un computer casalingo (ad esempio un Raspberry Pi o un OLinuXino) devi individuare l'indirizzo IP che è stato attribuito al computer dopo averlo collegato al router. Questi sono alcuni sistemi:
+
 - avvia un terminale e dai il comando `sudo arp-scan --local` per elencare gli indirizzi IP sulla rete locale;
 - usa l'interfaccia del router per vedere la lista dei computer collegati o controllane i log;
 - collega un monitor al tuo server YunoHost, fai login e digita `hostname --all-ip-address`.
@@ -104,7 +105,7 @@ Una discussione più approfondita relativa a sicurezza & SSH è su [questa pagin
 
 The `yunohost` command can be used to administrate your server and perform the various actions similarly to what you do on the webadmin. The command must be launched either from the `root` user or from the `admin` user by preceeding them with `sudo`. (ProTip™ : you can become `root` with the command `sudo su` as `admin`).
 
-YunoHost commands usually have this kind of structure : 
+YunoHost commands usually have this kind of structure :
 
 ```bash
 yunohost app install wordpress --label Webmail
@@ -113,7 +114,7 @@ yunohost app install wordpress --label Webmail
     category  action  argument      options
 ```
 
-Don't hesitate to browse and ask for more information about a given category or action using the the `--help` option. For instance, those commands : 
+Don't hesitate to browse and ask for more information about a given category or action using the the `--help` option. For instance, those commands :
 
 ```bash
 yunohost --help

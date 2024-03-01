@@ -46,6 +46,7 @@ When ready to move forward.
 ## Where
 
 You YunoHost for non profit can be hosted in several places:
+
 * Own hosting on a server, computer or Raspberry behind ASDL, SDSL or Fiber
 * [Chatons](https://chatons.org), [librehosters](https://framagit.org/librehosters/awesome-librehosters) hosting services
 * Commercial hosting services providing Debian virtual machine
@@ -64,6 +65,7 @@ YunoHost is a Debian GNU/Linux based distribution packaged with free software th
 ![](https://upload.wikimedia.org/wikipedia/commons/0/07/Yunohost_user_portal.png)
 
 Out of the box YunoHost provide:
+
 * A system of application
 * A web interface
 * A command-line interface (CLI): Moulinette
@@ -89,6 +91,7 @@ From scratch, YunoHost provide mail system available using POP/IMAP/SMTP.
 Mails accounts will be managed using the web interface or the command line. Created accounts are stored in OpenLDAP.
 
 Additional package can be installed to provide more functionality to the YunoHost mail system:
+
 * Webmail using [Roundcube](https://github.com/YunoHost-Apps/roundcube_ynh), [Rainloop](https://github.com/YunoHost-Apps/rainloop_ynh)
 * ActiveSync using [Z-Push](https://github.com/YunoHost-Apps/z-push_ynh)
 * Internal distribution group using [Mailman](https://github.com/YunoHost-Apps/mailman_ynh)
@@ -96,12 +99,14 @@ Additional package can be installed to provide more functionality to the YunoHos
 ### Calendar
 
 To provide personal or shared calendars you will need to install:
+
 * [Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh)
 * [Baïkal](https://github.com/YunoHost-Apps/baikal_ynh)
 
 ### Contact
 
 To provide personal contact system you will need to install:
+
 * [Nextcloud](https://github.com/YunoHost-Apps/nextcloud_ynh)
 * [Baïkal](https://github.com/YunoHost-Apps/baikal_ynh)
 
@@ -115,30 +120,35 @@ Files will be available from a web interface or using a synchronization client.
 Out of the box, YunoHost provide an XMPP server, for which you can install a web client: [Jappix](https://github.com/YunoHost-Apps/jappix_ynh).
 
 You can also install a matrix server:
+
 * The server: [Synapse](https://github.com/YunoHost-Apps/synapse_ynh)
 * A web client: [Element](https://github.com/YunoHost-Apps/element_ynh)
 
 ### Intranet
 
 For an non-profit organization a good way to implement an intranet is to provide a wiki to let internal users read, edit and add content. Here are some packages to implement a wiki:
+
 * [DokuWiki](https://github.com/YunoHost-Apps/docuwiki_ynh) using wiki syntax
 * [Wiki.js](https://github.com/YunoHost-Apps/wikijs_ynh) using Markdown syntax
 
 ### ERP / Accounting
 
 At some time a non-profit organization could need an accounting/erp system, here are two propositions:
+
 * [OpenERP/Odoo](https://github.com/YunoHost-Apps/libreerp_ynh)
 * [Dolibarr](https://github.com/YunoHost-Apps/dolibarr_ynh)
 
 ### Public Web Site
 
 There are several way to implement a Public Web Site:
+
 * Simple HTML, CSS, etc. Website using: [Custom Webapp](https://github.com/YunoHost-Apps/my_webapp_ynh)
 * Using a CMS (Content Management System) like [WordPress](https://github.com/YunoHost-Apps/_ynh), [Drupal](https://github.com/YunoHost-Apps/drupal_ynh), [Grav](https://github.com/YunoHost-Apps/grav_ynh), [PluXml](https://github.com/YunoHost-Apps/pluxml_ynh)
 
 But we will propose something more powerful: [CiviCRM on Drupal 7](https://github.com/YunoHost-Apps/civicrm_drupal7_ynh):
+
 * Drupal that is a powerful open source content management framework
-* with CiviCRM that is an open source constituent relationship management for non-profits 
+* with CiviCRM that is an open source constituent relationship management for non-profits
 
 #### Membership
 
@@ -162,6 +172,7 @@ YunoHost provide is own backup system. Before any package upgrade, YunoHost back
 YunoHost backup are stored localy in `/home/yunohost.backup/archives`.
 
 But for production, localy stored backup are not enough, so you will need to implement aditional backup strategies:
+
 * Backup of the the Virtual Machine if provided by the hosting system.
 * [Archivist](https://github.com/YunoHost-Apps/archivist_ynh) is an automatic backup system for your server. Your backups can be send to many other places, local or distant.
 * [Borg](https://github.com/YunoHost-Apps/borg_ynh) and [Borg Server](https://github.com/YunoHost-Apps/borgserver_ynh) allow to externalize backups.

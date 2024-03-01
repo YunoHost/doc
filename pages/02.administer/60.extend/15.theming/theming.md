@@ -11,7 +11,7 @@ routes:
 
 You can disable the overlay by changing the dedicated settings:
 
-```
+```bash
 yunohost settings set ssowat.panel_overlay.enabled -v 0
 ```
 
@@ -19,10 +19,10 @@ yunohost settings set ssowat.panel_overlay.enabled -v 0
 
 You can change the theme of the user portal in the admin panel, under Tools > YunoHost settings > Other > User portal.
 
-You can list the available themes with: 
+You can list the available themes with:
 
 ```bash
-$ ls /usr/share/ssowat/portal/assets/themes/
+ls /usr/share/ssowat/portal/assets/themes/
 ```
 
 Then you can use `nano /etc/ssowat/conf.json.persistent` to enable the theme you choose like this:
@@ -46,13 +46,13 @@ There are a handful of themes listed [on Github](https://github.com/yunohost-the
 
 ## Creating your own theme
 
-You can create your own theme by copying the existing theme of your choice. For instance starting from the light theme: 
+You can create your own theme by copying the existing theme of your choice. For instance starting from the light theme:
 
 ```bash
 cp -r /usr/share/ssowat/portal/assets/themes/{light,your_own_theme}
 ```
 
-Then, edit the files the CSS and JS files in `/usr/share/ssowat/portal/assets/themes/your_own_theme` according to what you want to do: 
+Then, edit the files the CSS and JS files in `/usr/share/ssowat/portal/assets/themes/your_own_theme` according to what you want to do:
 
 - `custom_portal.css` can be used to add custom CSS rules to the user portal;
 - `custom_overlay.css` can be used to customize the small YunoHost button overlay, displayed on apps page which includes it;
@@ -60,13 +60,13 @@ Then, edit the files the CSS and JS files in `/usr/share/ssowat/portal/assets/th
 
 You can also add your own images and assets which can then be used by the CSS and JS files.
 
-!!! Share your custom theme with the community! https://github.com/yunohost-themes
+!!! Share your custom theme with the community! <https://github.com/yunohost-themes>
 
 ### Example : customizing the logo
 
 You may create your own theme simply to change the "branding" of the YunoHost user portal and replace the YunoHost logo with you own!
 
-To do so, upload your logo to `/usr/share/ssowat/portal/assets/themes/your_own_theme/`, and use the following CSS rules: 
+To do so, upload your logo to `/usr/share/ssowat/portal/assets/themes/your_own_theme/`, and use the following CSS rules:
 
 ```css
 /* Inside custom_portal.css */

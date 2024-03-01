@@ -19,7 +19,7 @@ Il browser fondamentalmente ci chiede **«Potete fidarvi del server che ospita q
 
 Per evitare questa situazione è possibile ottenere un certificato riconosciuto dai browser e firmato da un'autorità conosciuta come **Let's Encrypt**, **Gandi**, **RapidSSL**, **StartSSL**, **Cacert**.
 
-In particolare **Let's Encrypt** offre i certificati gratuitamente. Dalla versione 2.5 YunoHost permette di installare il certificato direttamente dall'interfaccia di amministrazione web o da linea di comando. Di seguito troverete la documentazione per l'installazione e la gestione di un certificato. È comunque possibile [installare ugualmente un certificato di un'autorità diversa da Let's Encrypt](/certificate_custom). 
+In particolare **Let's Encrypt** offre i certificati gratuitamente. Dalla versione 2.5 YunoHost permette di installare il certificato direttamente dall'interfaccia di amministrazione web o da linea di comando. Di seguito troverete la documentazione per l'installazione e la gestione di un certificato. È comunque possibile [installare ugualmente un certificato di un'autorità diversa da Let's Encrypt](/certificate_custom).
 
 ### Installare un certificato Let's Encrypt
 
@@ -34,7 +34,6 @@ IP del vostro server) e che il vostro sito sia accessibile in HTTP dall'esterno
 Recatevi nella sezione 'Domini' dell'interfaccia di amministrazione, scegliete la sezione del vostro dominio, qui troverete un pulsante 'Certificato SSL'
 
 ![](image://domain-certificate-button.png)
-
 
 Nella sezione 'Certificati SSL' potere visualizzare lo stato attuale del
 certificato. Se avete appena creato il dominio, esso disporrà di un certificato

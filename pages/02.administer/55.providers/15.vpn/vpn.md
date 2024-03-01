@@ -14,13 +14,12 @@ routes:
 
 Since setting up a server at home is an uncommon practice, most Internet connections provided to individuals are unsuitable for this purpose especially if you desire to send mail. A net neutral VPN providing a dedicated fixed public IPv4 address and IPv6 addresses [can help to circumvent some limitations or difficulties](/vpn_advantage).
 
-
 Below, you can find a list of providers compatible for self-hosting and especially those providing .cube format for VPNClient apps and those providing [internetcube](https://internetcu.be).
 
 !!! By **compatible for self-hosting** we means VPN offers with at least:
-!!! * a fixed dedicated public IPv4
-!!! * port forwarding or opened features
-!!! * net neutrality: no traffic analysis, no user data resale, no alteration of traffic (without legal obligations)...
+!!! - a fixed dedicated public IPv4
+!!! - port forwarding or opened features
+!!! - net neutrality: no traffic analysis, no user data resale, no alteration of traffic (without legal obligations)...
 
 ------------------
 
@@ -32,10 +31,10 @@ Below, you can find a list of providers compatible for self-hosting and especial
 ¹ [Pay what you want](https://en.wikipedia.org/wiki/Pay_what_you_want)
 
 !!! If you try an other VPN provider that include **public dedicated ipv4 and port forwarding**, feel free to contribute to this documentation. We need people to test specific offers of those commercial providers:
-!!! * [VPN area](https://vpnarea.com/front/home/dedicated-ip) ✘ does not allow forwarding port 80. Running a webserver is against their TOS.
-!!! * [Trust zone](https://trust.zone/fr/order?p=25)
-!!! * [PureVPN](https://www.purevpn.fr/ip-vpn-dedie)
-!!! * [RapidVPN](https://www.rapidvpn.com/vpn)
+!!! *[VPN area](https://vpnarea.com/front/home/dedicated-ip) ✘ does not allow forwarding port 80. Running a webserver is against their TOS.
+!!!* [Trust zone](https://trust.zone/fr/order?p=25)
+!!! *[PureVPN](https://www.purevpn.fr/ip-vpn-dedie)
+!!!* [RapidVPN](https://www.rapidvpn.com/vpn)
 
 ## French speaking-site
 

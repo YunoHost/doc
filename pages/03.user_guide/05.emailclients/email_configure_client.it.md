@@ -16,13 +16,15 @@ Normalmente, il vostro client email si configura automaticamente quando aggiunge
 Ecco i valori da immettere per la configurazione manuale del vostro client mail (`vostro.dominio.tld` si riferisce a quello che appare dopo la @ nel vostro indirizzo mail, `nome utente` è riferito a quello che appare prima della @).
 
 |Protocollo | Porta | Sicurezza della connessione | Metodo di autenticazione | Nome utente
-| :--:     | :-:  | :--:       | :--:            | :--:                                   | 
+| :--:     | :-:  | :--:       | :--:            | :--:                                   |
 | IMAP | 993 | SSL/TLS | Password normale | nome utente (senza `@vostro.domino.tld`) |
 | SMTP | 587 | STARTTLS | Password normale| nome utente (senza `@vostro.domino.tld`) |
 
 ### Esempio di alcuni client
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Mozilla Thunderbird"]
+
 ##### ![](image://thunderbird.png?resize=50&classes=inline)  Configurazione di Mozilla Thunderbird (su computer desktop)
 
 Per configurare manualmente un nuovo account in Thunderbird, iniziate ad inserire le informazioni iniziali (nome, indirizzo e password), cliccate su Continua e poi su Configurazione Manuale selezionando la porta 993 con SSL/TLS per IMAP e la porta 587 con STARTTLS per SMTP. Selezionate 'Password normale' come autenticazione e poi cliccate su 'Configurazione avanzata'. Può darsi che dobbiate accettare l'eccezione per il certificato prima di riuscire a scaricare l'email e prima di riuscire ad inviare la prima email. Non dimenticate di togliere il punto prima del nome del dominio.
@@ -34,6 +36,7 @@ Per configurare manualmente un nuovo account in Thunderbird, iniziate ad inserir
 
 [/ui-tab]
 [ui-tab title="K-9 Mail"]
+
 ##### ![](image://k9mail.png?resize=50&classes=inline) Configurazione di K-9 Mail (per Android)
 
 Seguite le istruzioni seguenti (come per dovrete forse accettare i certificati affinché tutto funzioni correttamente):
@@ -43,9 +46,9 @@ Seguite le istruzioni seguenti (come per dovrete forse accettare i certificati a
 ![](image://k9mail_config_3.png?resize=280&classes=inline)
 ![](image://k9mail_config_4.png?resize=280&classes=inline)
 
-
 [/ui-tab]
 [ui-tab title="Dekko"]
+
 ##### ![](image://dekko-app.png?resize=50&classes=inline) Configurazione di Dekko (per Ubuntu Touch)
 
 Se nessun account è già configurato, potete semplicemente scegliere "Aggiungi account". Se un account è già presente, premete sul menù a panino e in seguito sugli ingranaggi, scegliete Mail, Accounts e il simbolo '+'.
@@ -58,4 +61,3 @@ Selezionate IMAP. Compilate i campi e premete Successivo. Dekko cercherà la con
 ![](image://dekko_config_4.png?resize=280&classes=inline)
 [/ui-tab]
 [/ui-tabs]
-

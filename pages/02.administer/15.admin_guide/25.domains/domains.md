@@ -26,6 +26,7 @@ Domains can be managed in the 'Domain' section of the webadmin, or through the `
 In order to make self-hosting as accessible as possible, the YunoHost Project provides a *free* and *automatically configured* domain name service. By using this service, you won't have to [configure DNS records](/dns_config) yourself, which can be tedious and technical.
 
 The following (sub)domains are offered:
+
 - `whateveryouwant.nohost.me`;
 - `whateveryouwant.noho.st`;
 - `whateveryouwant.ynh.fr`.
@@ -46,18 +47,16 @@ To get one of this domain you simply need to choose `I don't have a domaine name
 [ui-tab title="Your own domains"]
 Having your own domain brings several advantages:
 
- * more control and autonomy
- * simpler domain name (for example directly in .net or .org)
+- more control and autonomy
+- simpler domain name (for example directly in .net or .org)
 
 However, you have to pay for it each year (about 15€/year) and you have to do some extra configuration to [setup a correct DNS zone](/dns_config). Our diagnosis tool can trigger alert to help you to do this configuration.
 
-If you already have your own domain, you can simply click "I already have a domain name…". If you don't, in order to simplify and automate the DNS configuration, we suggest you to buy it from a [registrar whose API is supported by YunoHost](/providers/registrar). 
+If you already have your own domain, you can simply click "I already have a domain name…". If you don't, in order to simplify and automate the DNS configuration, we suggest you to buy it from a [registrar whose API is supported by YunoHost](/providers/registrar).
 
 ![Here a screenshot of the "Add domain" page where you can choose "I already have a domain name"](image://webadmin_domain_owndomain.png)
 
-
 [Know more on DNS zone configuration](/dns_config)
-
 
 [/ui-tab]
 [ui-tab title="Local domains (only reachable in your local network)"]
@@ -80,11 +79,11 @@ The number may change depending on which server starts first, so do not rely on 
 ! Unfortunately, Android devices before version 12 (released in 2021) do not seem to be listening to mDNS protocol.
 ! To be able to reach `.local` domains on your Android devices, you will have to add in their DNS settings your YunoHost server's local IP address.
 
-
 [/ui-tab]
 [/ui-tabs]
 
 ## The main domain
+
 The domain chosen during the initial configuration (post-install) is defined as the main (or default) domain of the server : this is where [the user portal (SSO)](/users) will be available. The main domain can later be changed through the web admin in Domains > (the domain) > Set default, or with the command line `yunohost tools maindomain`.
 
 More technically, the main domain is also used as hostname by SMTP protocol to send email (EHLO) and determine which value should be configured in the reverse DNS bind to your public IP. If this 2 values are mis-configured, the diagnosis tool will trigger you an alert.
@@ -97,7 +96,6 @@ More technically, the main domain is also used as hostname by SMTP protocol to s
 ## About Non-latin characters
 
 If your domain has special, non-latin characters, it will be transformed by YunoHost into its [internationalized version](https://en.wikipedia.org/wiki/Internationalized_domain_name) through [Punycode](https://en.wikipedia.org/wiki/Punycode). So when you use the command line, you have to use the punycode format return for example by `yunohost domain list`.
-
 
 ## SSL/HTTPS certificates
 
