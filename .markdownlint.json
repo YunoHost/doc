@@ -1,4 +1,5 @@
 {
+    "extends": "markdownlint-rules-grav-pages",
     "code-block-style": {
         "style": "fenced"
     },
