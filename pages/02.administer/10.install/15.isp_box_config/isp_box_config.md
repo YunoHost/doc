@@ -24,8 +24,7 @@ Your box/router admin interface is usually reachable via [http://192.168.0.1](ht
 
 ### 2. Find the local IP of your server
 
-Identify what is thei *local* IP of your server, either :
-
+Identify the *local* IP of your server, either :
 - from your box/router interface, which might list devices connected
 - from the YunoHost webadmin, in 'Diagnosis', section 'Internet connectivity', click on 'Details' on the IPv4 report.
 - from the command line in your server, by running `hostname -I`
