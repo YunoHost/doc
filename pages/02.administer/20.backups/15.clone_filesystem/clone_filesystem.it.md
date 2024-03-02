@@ -60,19 +60,19 @@ Nell'esempio seguente `/pool/volume` è il volume da salvare.
 
 Creare uno snapshot in sola lettura
 
-```
+```bash
 btrfs subvolume snapshot /pool/volume /pool/volume/$(date +"%Y-%m-%d_%H:%M")
 ```
 
 Elencare gli snapshots
 
-```
+```bash
 btrfs subvolume show /pool/volume
 ```
 
 Ripristinare uno snapshots
 
-```
+```bash
 btrfs sub del /pool/volume
 btrfs sub snap /pool/volume/2021-07-22_16:12 /pool/volume
 btrfs sub del /pool/volume/2021-07-22_16:12
@@ -80,7 +80,7 @@ btrfs sub del /pool/volume/2021-07-22_16:12
 
 Cancellare uno snapshot
 
-```
+```bash
 btrfs subvolume delete /pool/volume/2021-07-22_16:12
 ```
 
@@ -93,25 +93,25 @@ Nell'esempio seguente `pool/volume` è il volume che vogliamo salvare
 
 Creare uno snapshots
 
-```
+```bash
 rbd snap create pool/volume@$(date +"%Y-%m-%d_%H:%M")
 ```
 
 Elencare gli snapshot
 
-```
+```bash
 rbd snap ls pool/volume
 ```
 
 Ripristinare uno snapshot
 
-```
+```bash
 rbd snap rollback pool/volume@2021-07-22_16:22
 ```
 
 Cancellare uno snapshot
 
-```
+```bash
 rbd snap rm pool/volume@2021-07-22_16:12
 ```
 
@@ -121,25 +121,25 @@ Nell'esempio seguente `pool/volume` è il volume che vogliamo salvare.
 
 Creare uno snapshot
 
-```
+```bash
 zfs snapshot pool/volume@$(date +"%Y-%m-%d_%H:%M")
 ```
 
 Elencare gli snapshots
 
-```
+```bash
 zfs list -t snapshot -o name,creation
 ```
 
 Ripristinare uno snapshot
 
-```
+```bash
 zfs rollback pool/volume@2021-07-22_16:22
 ```
 
 Cancellare uno snapshot
 
-```
+```bash
 zfs destroy pool/volume@2021-07-22_16:12
 ```
 

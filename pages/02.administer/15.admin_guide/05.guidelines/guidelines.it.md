@@ -23,7 +23,7 @@ Se il tuo obiettivo è avere un server in produzione:
 
 ## Keep it simple
 
-YunoHost è progettato per funzionare in casi d'uso generici e semplici. Deviare da queste condizioni renderà le cose più difficili e avrai bisogno di conoscenze tecniche perché tutto funzioni. Per esempio,
+YunoHost è progettato per funzionare in casi d'uso generici e semplici. Deviare da queste condizioni renderà le cose più difficili e avrai bisogno di conoscenze tecniche perché tutto funzioni. Per esempio:
 
 - non provare ad eseguire YunoHost in un contesto dove non puoi controllare le porte 80 e 443 (o senza Internet del tutto);
 - non provare a hostare cinque server dietro la stessa connessione Internet se non sei un utente esperto;

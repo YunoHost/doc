@@ -70,14 +70,14 @@ sudo mount -t cifs //mafreebox.freebox.fr/Disque\ dur/ /home/monlogin/freebox -o
 
 Une ligne à ajouter à la fin du `/etc/fstab` :
 
-```bash
+```text
 //mafreebox.freebox.fr/Disque\040dur/ /home/monlogin/freebox cifs _netdev,guest,uid=monlogin,gid=users,iocharset=utf8 0 0
 ```
 
 Le `_netdev` signale que c'est un périphérique réseau, afin que le système ne le monte que s'il a accès au réseau.  
 `guest` est le mode d'identification à la Freebox : pour une connexion authentifiée, placez vos identifiants dans un fichier sous la forme
 
-```bash
+```text
 username=your_user
 password=your_pass
 domain=FREEBOX

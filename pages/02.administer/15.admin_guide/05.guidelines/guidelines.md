@@ -23,7 +23,7 @@ If your goal is to run a production server:
 
 ## Keep it simple
 
-YunoHost is designed to work with general and simple use cases in mind. Deviating from those conditions will make things harder and you will need technical knowledge to make it work. For instance,
+YunoHost is designed to work with general and simple use cases in mind. Deviating from those conditions will make things harder and you will need technical knowledge to make it work. For instance:
 
 - do not try to run YunoHost in a context where you cannot have control over ports 80 and 443 (or no internet at all);
 - do not try to host five servers behind the same internet connection if you are not already an advanced user;

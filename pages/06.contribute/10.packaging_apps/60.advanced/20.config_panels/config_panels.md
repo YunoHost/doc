@@ -144,13 +144,13 @@ bind = "__INSTALL_DIR__/img/logo.png"
 
 Sometimes the `bind` mechanism is not enough:
 
-* the config file format is not supported (e.g. xml, csv)
-* the data is not contained in a config file (e.g. database, directory, web resources...)
-* the data should be written but not read (e.g. password)
-* the data should be read but not written (e.g. fetching status information)
-* we want to change other things than the value (e.g. the choices list of a select)
-* the question answer contains several values to dispatch in several places
-* and so on
+- the config file format is not supported (e.g. xml, csv)
+- the data is not contained in a config file (e.g. database, directory, web resources...)
+- the data should be written but not read (e.g. password)
+- the data should be read but not written (e.g. fetching status information)
+- we want to change other things than the value (e.g. the choices list of a select)
+- the question answer contains several values to dispatch in several places
+- and so on
 
 You can create specific getter/setters functions inside the `scripts/config` of your app to customize how the information is read/written.
 
@@ -346,10 +346,10 @@ ynh_app_config_apply() {
 
 List of main configuration helpers
 
-* `ynh_app_config_get`
-* `ynh_app_config_show`
-* `ynh_app_config_validate`
-* `ynh_app_config_apply`
-* `ynh_app_config_run`
+- `ynh_app_config_get`
+- `ynh_app_config_show`
+- `ynh_app_config_validate`
+- `ynh_app_config_apply`
+- `ynh_app_config_run`
 
 More info on this can be found by reading [vpnclient_ynh config script](https://github.com/YunoHost-Apps/vpnclient_ynh/blob/master/scripts/config)

@@ -19,4 +19,4 @@ Cette application se base sur rsync et GPG, elle propose:
 
 Le paquet permet aussi de définir finement la fréquence et le type de données à sauvegarder et intègre un système d'alerte mail en cas de défaut de sauvegarde.
 
-Pour plus d'information : [https://forum.yunohost.org/t/new-app-archivist/3747](https://forum.yunohost.org/t/new-app-archivist/3747)
+Pour plus d'information : <https://forum.yunohost.org/t/new-app-archivist/3747>

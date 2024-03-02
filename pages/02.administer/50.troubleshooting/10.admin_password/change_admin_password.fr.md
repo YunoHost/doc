@@ -9,7 +9,7 @@ routes:
 
 Vous voudrez peut-être changer votre mot de passe d'administrateur pour des raisons de sécurité ou parce que vous l'avez oublié.
 
-Si vous avez oublié votre mot de passe ou si vous ne pouvez pas vous connecter en utilisant l'utilisateur `admin`, vous
+Si vous avez oublié votre mot de passe ou si vous ne pouvez pas vous connecter en utilisant l'utilisateur `root`, vous
 pouvez peut-être encore changer le mot de passe en vous connectant en tant que "root" sur
 SSH (à partir de votre réseau local ! ou en utilisant un mode rescure si vous êtes sur un VPS...)
 

@@ -19,4 +19,4 @@ This application is based on rsync and GPG, it offers:
 
 The package also allows you to finely define the frequency and type of data to be backed up and integrates an email alert system in case of backup failure.
 
-For more information: [https://forum.yunohost.org/t/new-app-archivist/3747](https://forum.yunohost.org/t/new-app-archivist/3747)
+For more information: <https://forum.yunohost.org/t/new-app-archivist/3747>

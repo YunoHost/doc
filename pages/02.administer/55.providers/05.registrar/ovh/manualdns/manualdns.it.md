@@ -23,7 +23,7 @@ Ora dovrete aggiungere la redirezione del DNS così come specificato nella [conf
 
 Cliccate su "Modifica in modalità testo", lasciando invariate le prime 4 righe:
 
-```bash
+```text
 $TTL 3600
 @ IN SOA dns104.ovh.net. tech.ovh.net. (2020083101 86400 3600 3600000 60)
                          IN NS     dns104.ovh.net.

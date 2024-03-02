@@ -13,7 +13,7 @@ Diese Seite listet einige Tipps und Richtlinien auf, die jeder YunoHost-Administ
 
 Das heißt : Entweder ist der Server für den Betreib vorgesehen, oder ein Testserver, auf dem Sie sich erlauben, zu experimentieren.
 
-Ist Ihr Ziel, einen Prsoduktionserver zu benutzen, so beachten Sie folgendes :
+Ist Ihr Ziel, einen Produktionserver zu benutzen, so beachten Sie folgendes :
 
 - ein Server ist ein empfindliches System : Seien Sie vorsichtig, methodisch und geduldig ;
 - experimentieren und Anpassen einschränken - insbesondere von Konfigurationsdateien ;

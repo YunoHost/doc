@@ -34,7 +34,6 @@ Après tout ça, il est possible que vous ayez à modifier les permissions de `/
 ```bash
 chgrp www-data /media/externalharddrive
 chmod g+rx /media/externalharddrive
-
 ```
 
 (À préciser par un expert)

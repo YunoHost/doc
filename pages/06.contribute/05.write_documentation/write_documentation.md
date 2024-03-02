@@ -24,7 +24,7 @@ Under the hood, the documentation is served by the [Grav CMS](https://getgrav.or
 
 The structure of the repository is described below:
 
-```bash
+```text
 +-- config
    +-- site.yaml
    +-- system.yaml
@@ -57,7 +57,7 @@ The structure of the repository is described below:
 
 Each page starts with a header that gives instructions to Grav on how to process them. Let us have a look into the header of this page:
 
-```
+```text
 ---
 title: Write documentation
 template: docs

@@ -50,7 +50,7 @@ sudo nano /etc/postfix/main.cf
 
 puis, rajouter à la ligne :
 
-```bash
+```text
 smtp_sasl_password_maps = hash:/etc/postfix/sasl/mdp_fai.conf
 smtp_sasl_auth_enable = yes
 smtp_sasl_security_options = noanonymous
@@ -65,7 +65,7 @@ sudo nano /etc/postfix/sasl/mdp_fai.conf
 
 ajouter
 
-```bash
+```text
 # mdp_fai.conf
 [smtp.orange.fr]:25  adresseemail@chez.orange:son-mot-de-passe
 ```

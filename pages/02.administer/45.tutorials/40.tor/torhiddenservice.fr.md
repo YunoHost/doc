@@ -49,7 +49,7 @@ yunohost domain add random123456789.onion
 
 Si vous voulez éviter d’être redirigé vers le portail à la connexion pour des raisons de traçabilité, vous pouvez désactiver SSOwat pour le domaine, en éditant le fichier `/etc/nginx/conf.d/random123456789.onion.conf` et en commentant la ligne suivante (elle apparaît deux fois dans le fichier) :
 
-```bash
+```text
 #access_by_lua_file /usr/share/ssowat/access.lua;
 ```
 

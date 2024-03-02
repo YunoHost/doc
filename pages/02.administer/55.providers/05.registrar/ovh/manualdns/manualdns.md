@@ -23,7 +23,7 @@ Now you need to add the DNS redirections as specified by the [standard DNS zone 
 
 Click on "Change in text format", keep the first four lines:
 
-```bash
+```text
 $TTL 3600
 @ IN SOA dns104.ovh.net. tech.ovh.net. (2020083101 86400 3600 3600000 60)
                          IN NS     dns104.ovh.net.

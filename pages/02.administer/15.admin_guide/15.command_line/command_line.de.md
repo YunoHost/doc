@@ -112,7 +112,7 @@ Der Befehl "yunohost" kann zur Verwaltung deines Servers verwendet werden und f√
 
 YunoHost-Befehle haben normalerweise diese Art von Struktur:
 
-```bash
+```test
 yunohost app install wordpress --label Webmail
           ^    ^        ^             ^
           |    |        |             |

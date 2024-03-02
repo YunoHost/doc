@@ -35,7 +35,6 @@ After this, note that you may need to tweak the permissions of `/media/externalh
 ```bash
 chgrp www-data /media/externalharddrive
 chmod g+rx /media/externalharddrive
-
 ```
 
 (but it depends on your exact setup... Please update this doc page if you figure

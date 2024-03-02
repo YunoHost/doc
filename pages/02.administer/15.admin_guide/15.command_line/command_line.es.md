@@ -109,7 +109,7 @@ El comando `yunohost` puede ser utilizado para administrar tu servidor o realiza
 
 Los comandos YunoHost tienen este tipo de estructura :
 
-```bash
+```text
 yunohost app install wordpress --label Webmail
           ^    ^        ^             ^
           |    |        |             |

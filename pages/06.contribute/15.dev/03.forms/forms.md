@@ -32,9 +32,9 @@ YunoHost uses a lot of forms. You can found here information on supported types 
 | `visible` | ConfigPanel | A simple js expression based on other short keys questions to hide or display dynamically the question| `visible = "login && ! private_key"` |
 | `bind` | AppConfigPanel | See [App configuration panel doc](/packaging_config_panels) | `bind = "__INSTALL_DIR__/config.yml"` |
 
-* `help`, `optional`, `readonly` and `visible` are also available on panels and sections entities.
-* Long help messages could not to be correctly displayed for user using yunohost CLI
-* For the moment `default` properties are not supported in app config panel and you have to initialize the value by yourself in config file or settings.
+- `help`, `optional`, `readonly` and `visible` are also available on panels and sections entities.
+- Long help messages could not to be correctly displayed for user using yunohost CLI
+- For the moment `default` properties are not supported in app config panel and you have to initialize the value by yourself in config file or settings.
 
 ### `display_text` (readonly)
 

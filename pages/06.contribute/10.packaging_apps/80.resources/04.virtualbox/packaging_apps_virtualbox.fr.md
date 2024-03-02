@@ -84,7 +84,7 @@ On se connecte à la machine virtuelle comme à n'importe quel serveur YunoHost,
 ssh admin@mon.domain
 ```
 
-Ou, si le domaine n'a pas été ajouté dans le hosts, en utilisant son ip.
+Ou, si le domaine n'a pas été ajouté dans le hosts, en utilisant son IP.
 
 ```bash
 ssh admin@11.22.33.44

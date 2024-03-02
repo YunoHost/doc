@@ -15,7 +15,7 @@ It is possible to create your own backup method and link it to YunoHost's backup
 
 This operation is done with a hook and will allow you to launch a backup this way:
 
-```
+```bash
 yunohost backup create --method custom
 ```
 

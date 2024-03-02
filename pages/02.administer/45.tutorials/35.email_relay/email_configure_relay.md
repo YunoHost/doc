@@ -55,7 +55,6 @@ Now set all options requests :
 - **SMTP relay port** : Port use with the distant server.
 - **SMTP relay user** : Login or identification mail server.
 - **SMTP relay password** : Your SMTP relay password.
--
 
 ! [fa=exclamation-triangle /] Password with `#` char won't works properly due to postfix limitation (it's possible other chars are forbidden, don't hesitate to report it to update this doc).
 

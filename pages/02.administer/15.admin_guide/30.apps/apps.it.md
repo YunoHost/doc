@@ -164,10 +164,10 @@ La parola `<key>` è il nome dell'impostazione come nell'esempio sopra `main.sft
 Dalla versione di YunoHost v11.1.21.4 è possibile eseguire un comando con il binario dell'applicazione o comandi PHP con il comando `yunohost app shell <app>`.
 In questo modo:
 
-* verrà avviata una shell Bash come l'utente di sistema dell'applicazione
-* verrà aperta la directory di lavoro dell'applicazione (ad esempio `/var/www/<app>`)
-* carico di tutte le variabili d'ambiente come da file service dell'applicazione se queste esistono
-* verrà il usata la versione di `php` usata dall'applicazione
+- verrà avviata una shell Bash come l'utente di sistema dell'applicazione
+- verrà aperta la directory di lavoro dell'applicazione (ad esempio `/var/www/<app>`)
+- carico di tutte le variabili d'ambiente come da file service dell'applicazione se queste esistono
+- verrà il usata la versione di `php` usata dall'applicazione
 
 ## Packaging delle applicazioni
 

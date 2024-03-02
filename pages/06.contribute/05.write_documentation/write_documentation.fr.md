@@ -23,7 +23,7 @@ Sous le capot, la documentation est déployée avec le [CMS Grav](https://getgra
 
 La structure du dépôt est décrite ici:
 
-```bash
+```text
 +-- config
    +-- site.yaml
    +-- system.yaml
@@ -56,7 +56,7 @@ La structure du dépôt est décrite ici:
 
 Chaque page commence par un en-tête qui donne les instructions à Grav sur comment la traiter. Regardons l'en-tête de cette page :
 
-```
+```text
 ---
 title: Rédaction de la documentation
 template: docs

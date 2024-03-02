@@ -59,8 +59,8 @@ Installate e lanciate *FileZilla*
 
 Link a fonti esterne:
 
-* [Documentazione ufficiale](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en))
-* [Tutorial generale su FileZilla](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)
+- [Documentazione ufficiale](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en))
+- [Tutorial generale su FileZilla](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)
 
 ## Alternative a FileZilla
 
@@ -75,8 +75,8 @@ Nautilus di Gnome3 integra delle funzionalità simili a FileZilla:
 
 ### Windows
 
-* [WinSCP](https://winscp.net/) è un ottimo programma per Windows
+- [WinSCP](https://winscp.net/) è un ottimo programma per Windows
 
 ### MacOS
 
-* [Cyberduck](https://cyberduck.io/) un programma libero per macOS
+- [Cyberduck](https://cyberduck.io/) un programma libero per macOS

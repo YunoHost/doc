@@ -97,10 +97,10 @@ Wenn Ihr ISP oder Host dies zulässt, empfehlen wir Ihnen, eine
  [Reverse-DNS-Konfiguration](https://de.wikipedia.org/wiki/Reverse_DNS)
 für Ihre öffentlichen IPv4- und/oder IPv6-Adressen. Dadurch wird verhindert, dass Sie als Spammer von den Anti-Spam-Filtersystemen markiert werden.
 
-**N.B. : Die Reverse-DNS-Konfiguration erfolgt bei Ihrem Internet Service Provider bzw. VPS-Host. Es betrifft _nicht_ den Registrar Ihres Domainnamens.**
+**N.B. : Die Reverse-DNS-Konfiguration erfolgt bei Ihrem Internet Service Provider bzw. VPS-Host. Es betrifft *nicht* den Registrar Ihres Domainnamens.**
 
-Das heißt, wenn Ihre öffentliche IPv4-Adresse `111.222.333.444`ist  und Ihr
-Domänename `domain.tld`ist, sollten Sie mit dem Befehl
+Das heißt, wenn Ihre öffentliche IPv4-Adresse `111.222.333.444` ist und Ihr
+Domänename `domain.tld` ist, sollten Sie mit dem Befehl
 `nslookup` das folgende Ergebnis erhalten :
 
 ```shell

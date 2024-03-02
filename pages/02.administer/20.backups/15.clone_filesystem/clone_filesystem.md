@@ -60,19 +60,19 @@ Below we consider that `/pool/volume` is the volume to snapshot.
 
 Create a read-only snapshot
 
-```
+```bash
 btrfs subvolume snapshot /pool/volume /pool/volume/$(date +"%Y-%m-%d_%H:%M")
 ```
 
 List snapshots
 
-```
+```bash
 btrfs subvolume show /pool/volume
 ```
 
 Restore a snapshot
 
-```
+```bash
 btrfs sub del /pool/volume
 btrfs sub snap /pool/volume/2021-07-22_16:12 /pool/volume
 btrfs sub del /pool/volume/2021-07-22_16:12
@@ -80,7 +80,7 @@ btrfs sub del /pool/volume/2021-07-22_16:12
 
 Delete a snapshot
 
-```
+```bash
 btrfs subvolume delete /pool/volume/2021-07-22_16:12
 ```
 
@@ -93,25 +93,25 @@ Below we consider that `pool/volume` is the volume to snapshot.
 
 Create a snapshot
 
-```
+```bash
 rbd snap create pool/volume@$(date +"%Y-%m-%d_%H:%M")
 ```
 
 List snapshots
 
-```
+```bash
 rbd snap ls pool/volume
 ```
 
 Restore a snapshot
 
-```
+```bash
 rbd snap rollback pool/volume@2021-07-22_16:22
 ```
 
 Delete a snapshot
 
-```
+```bash
 rbd snap rm pool/volume@2021-07-22_16:12
 ```
 
@@ -121,25 +121,25 @@ Below we consider that `pool/volume` is the volume to snapshot.
 
 Create a snapshot
 
-```
+```bash
 zfs snapshot pool/volume@$(date +"%Y-%m-%d_%H:%M")
 ```
 
 List snapshots
 
-```
+```bash
 zfs list -t snapshot -o name,creation
 ```
 
 Restore a snapshot
 
-```
+```bash
 zfs rollback pool/volume@2021-07-22_16:22
 ```
 
 Delete a snapshot
 
-```
+```bash
 zfs destroy pool/volume@2021-07-22_16:12
 ```
 

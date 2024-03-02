@@ -23,7 +23,7 @@ Unter der Haube wird die Dokumentation vom [Grav CMS](https://getgrav.org/?targe
 
 Die Struktur des Repositorys wird nachfolgend beschrieben:
 
-```bash
+```text
 + -- config
    + -- site.yaml
    + -- system.yaml 
@@ -56,7 +56,7 @@ Die Struktur des Repositorys wird nachfolgend beschrieben:
 
 Jede Seite beginnt mit einem Header, der Grav Anweisungen zur Verarbeitung gibt. Werfen wir einen Blick in die Kopfzeile dieser Seite:
 
-```
+```text
 --- 
 title: Dokumentation schreiben 
 template: docs 
@@ -80,7 +80,7 @@ Sie können die Markdown-Syntax verwenden. Weitere Informationen finden Sie in d
 
 Um die Markdown-Funktionen zu verbessern, werden zusätzliche Plugins in Grav installiert. In der eigenen Dokumentation auf GitHub erfahren Sie, wie Sie sie verwenden.
 
-```
+```text
 anchors
 external_links
 flex-objects
@@ -110,7 +110,7 @@ Einige Seiten der Dokumentation werden automatisch oder dynamisch generiert.
 1. Installieren Sie das YunoHost-Paket Grav : `yunohost app install grav`
 2. Installieren Sie die folgenden Plugins durch das Grav Admin-Panel oder CLI:
 
-```
+```text
 anchors
 breadcrumbs
 external_links

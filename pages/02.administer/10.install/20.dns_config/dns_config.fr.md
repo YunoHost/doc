@@ -104,7 +104,7 @@ inverse](https://fr.wikipedia.org/wiki/Domain_Name_System#R%C3%A9solution_invers
 pour vos adresses publiques IPv4 et/ou IPv6. Ceci vous évitera d'être marqué
 comme spammeur par les systèmes de filtrage anti-spams.
 
-**N.B. : la configuration du DNS inverse se passe au niveau de votre fournisseur d'accès à Internet, ou de votre hébergeur de VPS. Elle ne se fait _pas_ sur le registrar de votre nom de domaine.**
+**N.B. : la configuration du DNS inverse se passe au niveau de votre fournisseur d'accès à Internet, ou de votre hébergeur de VPS. Elle ne se fait *pas* sur le registrar de votre nom de domaine.**
 
 Cela signifie que si votre adresse IPv4 publique est `111.222.333.444` et que
 votre nom de domaine est `domain.tld`, vous devez obtenir le résultat suivant

@@ -46,7 +46,6 @@ YunoHost is only able to test generic blacklist using the DNS RBL mechanism. How
 ### Gmail
 
 - No way to test easily IP reputation
-
 - [Google guide for postmaster](https://support.google.com/a/topic/1354753)
 - [Information about SMTP return code from Google](https://support.google.com/a/answer/3726730)
 - Reputation Management tools : [Google Postmaster Tools](https://postmaster.google.com)
@@ -55,7 +54,6 @@ YunoHost is only able to test generic blacklist using the DNS RBL mechanism. How
 ### Yahoo
 
 - No way to test easily IP reputation
-
 - [Yahoo guide for postmaster](https://senders.yahooinc.com/best-practices)
 - [Information about SMTP return code from Yahoo](https://senders.yahooinc.com/smtp-error-codes)
 - Reputation Management tools : [Complaint Feedback Loop](https://io.help.yahoo.com/contact/index?page=contactform&locale=en_US&token=Zh%2FBBVqXzLHlIbokbUqVWTUbuuQeXGkGnZzhKR2JQ4O6mMQdy9JSWdtWFXvjthcYCRj9bUIFfycOfG%2B4GOHPHoOGa8HwDO2%2B0kYRtTcdR8Nja5P9HWkKh3VWfS3pyu4UdjhvwG%2BBCvnYFl5dToDK%2Fw%3D%3D&selectedChannel=email-icon)

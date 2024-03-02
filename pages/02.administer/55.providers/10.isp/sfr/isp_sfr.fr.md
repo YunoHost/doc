@@ -13,7 +13,7 @@ routes:
 
 #### Accès à l’administration de la box
 
-* Allez à cette adresse : <http://192.168.1.1>.
+* Allez à cette adresse : <http://192.168.1.1>
 * Authentifiez-vous, soit en appuyant sur le bouton de la box pendant 5 secondes soit avec les identifiants d’administration.
 
 ![](image://sfr-authentification.png?resize=900)

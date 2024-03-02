@@ -21,7 +21,7 @@ Cliquez sur l'onglet **Zone DNS**, puis sur **Ajouter une entrée** :
 
 Cliquer sur "Modifier en mode textuel", garder les 4 premières lignes :
 
-```bash
+```text
 $TTL 3600
 @ IN SOA dns104.ovh.net. tech.ovh.net. (2020083101 86400 3600 3600000 60)
                          IN NS     dns104.ovh.net.

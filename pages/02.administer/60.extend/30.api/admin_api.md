@@ -35,7 +35,7 @@ curl -k -i -H "Accept: application/json" \
 
 <div id="swagger-ui"></div>
 <style>
-# swagger-ui .topbar {
+#swagger-ui .topbar {
     display: none;
 }
 </style>

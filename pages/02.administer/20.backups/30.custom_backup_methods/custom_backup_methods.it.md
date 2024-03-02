@@ -15,7 +15,7 @@ page-toc:
 
 Dovrete creare un hook che lancerà il backup utilizzando il metodo personalizzato con questo comando:
 
-```
+```bash
 yunohost backup create --method custom
 ```
 

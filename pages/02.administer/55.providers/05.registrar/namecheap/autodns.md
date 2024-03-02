@@ -1,3 +1,14 @@
+---
+title: Obtaining an API key from Namecheap
+template: docs
+taxonomy:
+    category: docs
+routes:
+  default: '/providers/registrar/namecheap/autodns'
+  aliases:
+    - '/registar_api_namecheap'
+---
+
 [API Documentation](https://www.namecheap.com/support/api/intro/)
 
 > 1. Login to your Namecheap account.

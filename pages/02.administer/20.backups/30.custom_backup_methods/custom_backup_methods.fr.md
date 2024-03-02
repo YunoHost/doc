@@ -14,7 +14,7 @@ Il est possible de créer votre propre méthode de sauvegarde et de la lier au s
 
 Cette opération se fait à l'aide d'un hook et vous permettra de lancer une sauvegarde de cette façon:
 
-```
+```bash
 yunohost backup create --method custom
 ```
 
