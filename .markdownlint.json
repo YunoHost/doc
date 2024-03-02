@@ -1,5 +1,6 @@
 {
-    "extends": "markdownlint-rules-grav-pages",
+    "extends": "markdownlint-rules-grav-pages/rules/frontmatter.schema.json",
+    "default": true,
     "code-block-style": {
         "style": "fenced"
     },
@@ -15,6 +16,9 @@
     "ul-style": {
         "style": "dash"
     },
+    "ul-indent": {
+        "indent": 2
+    },
     "heading-style": {
         "style": "atx"
     },
@@ -27,6 +31,10 @@
     "ol-prefix": {
         "style": "ordered"
     },
+    "no-trailing-punctuation": {
+        "punctuation": ".,;:"
+    },
+    "no-inline-html": false,
     "fenced-code-language": {
         "allowed_languages": [
             "bash",
@@ -50,7 +58,5 @@
             "GitHub"
         ]
     },
-    "line-length": {
-        "line_length": 180
-    }
+    "line-length": false
 }
