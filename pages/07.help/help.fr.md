@@ -22,7 +22,7 @@ Nous avons un compte Mastodon, mais nous ne prodiguons pas d'aide sur cette plat
 
 Sur le forum, assurez-vous d'ouvrir votre demande dans la bonne catégorie, afin de maximiser vos chances de recevoir l'aide appropriée :
 
-- [Support](https://forum.yunohost.org/c/support/6?target=_blank) pour les problèmes lors de l'installation ou de l'utilisation de YunoHost en soit ;
+- [Support](https://forum.yunohost.org/c/support/6?target=_blank) pour les problèmes lors de l'installation ou de l'utilisation de YunoHost en soi ;
 - [Support apps](https://forum.yunohost.org/c/apps/11?target=_blank) pour les problèmes lors de la configuration ou de l'utilisation d'applications.
 
 Pour que nous puissions être en mesure de vous aider sur le forum, vous devez impérativement remplir le modèle de demande de support qui s'affichera lors de la création du message.
