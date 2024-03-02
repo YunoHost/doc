@@ -9,13 +9,13 @@ routes:
 
 Even though YunoHost contributors try to continuously perfect it, YunoHost itself or this documentation are not free from bugs or flaw. To let us help you, however, you need to follow these guidelines.
 
-# Dos
+## Dos
 
-## Be courteous and patient
+### Be courteous and patient
 
 Help in the chatrooms or on the forum is given by our users and contributors, all volunteers. You may be in a hurry, you may be exhausted by fruitless trials or overwhelmed by unpleasant emotions... Have a break, have a sip of your preferred soothing beverage, breathe and once you've recovered your composure continue reading. We need you in a good mindset to help you.
 
-## Ask in the right place
+### Ask in the right place
 
 Support is only available on [the forum](https://forum.yunohost.org?target=_blank) or our [chatrooms](/chat_rooms?target=_blank).  
 We are also on Mastodon, but we do not offer help on this platform.
@@ -27,12 +27,12 @@ On the forum, make sure you open your request in the proper category, to maximiz
 
 To allow us to help you on the forum, you absolutely need to fill in the Support request template, it will be displayed upon message creation.
 
-## Explain the context
+### Explain the context
 
 Your request needs to be stated in a complete but concise way. Explain plainly what you want to achieve and in what manner it is not working for you.  
 Don't hesitate to provide any information that may be relevant, even things that may seem obvious, as the person(s) who will be trying to help you may need this information.
 
-## Show errors and logs
+### Show errors and logs
 
 This is absolutely paramount if YunoHost or a command fails. It always explains why, through a single error code or a full wall of seemingly illegible text.
 
@@ -51,13 +51,13 @@ If your issue is not related to an installation or upgrade process but instead i
 
 Screenshots are most welcome.
 
-# Don'ts
+## Don'ts
 
-## Avoid the infamous [XY Problem](https://xyproblem.info/)
+### Avoid the infamous [XY Problem](https://xyproblem.info/)
 
 In a nutshell, explain the root cause of your issue. You may share your attempted solution, but explaining ***why*** you need that potential solution is more important.
 
-## Do not be vague
+### Do not be vague
 
 Do not assume we understand what you are talking about, do not take shortcuts, do not rephrase, do not simplify, do not trim the error messages.
 
@@ -66,12 +66,12 @@ Do not write "it does not work", "it does not want", "it does not load", ["compu
 Explain what is wrong, and how it is displayed onscreen.  
 There is, for example, an important difference between a completely blank page and a blank page with a minimalistic error code.
 
-## Do not beat about the bush
+### Do not beat about the bush
 
 No need to ask if you can ask. It is a support chat/forum, therefore yes, you can ask your question.
 
 Do not ask your question like a poll, as in "Did anyone managed to get app XY working?". If it is not working for you, then explain directly what issue you got, explain the context, share the logs.
 
-## Do not be an asshole
+### Do not be an asshole
 
 Access to the forum or the chatrooms is a courtesy that can be revoked.
