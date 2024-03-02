@@ -23,7 +23,7 @@ YunoHost est un **système d’exploitation** qui vise à simplifier autant que 
 - ![](image://icon-mail.png?resize=32&classes=inline) fourni avec un **serveur mail complet** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
 - ![](image://icon-messaging.png?resize=32&classes=inline) ... ainsi qu'un **serveur de messagerie instantanée** <small>(XMPP)</small> ;
 - ![](image://icon-lock.png?resize=32&classes=inline) gère les **certificats SSL** <small>(basé sur Let's Encrypt)</small> ;
-- ![](image://icon-shield.png?resize=32&classes=inline) ... et des **systèmes de sécurité** <small>(Fail2Ban, yunohost-firewall)</small> ;
+- ![](image://icon-shield.png?resize=32&classes=inline) ... et des **systèmes de sécurité** <small>(`fail2ban`, `yunohost-firewall`)</small> ;
 
 ## Origine
 

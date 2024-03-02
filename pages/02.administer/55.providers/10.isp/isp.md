@@ -133,7 +133,7 @@ Tous les fournisseurs d’accès à Internet [membres de la Fédération French 
 | **[UPnP](https://fr.wikipedia.org/wiki/Universal_Plug_and_Play)** | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 | **[Port 25 ouvrable](/email)**<br> (fermé par défaut) | ✔ | ✔ | ✔ | ✘ | ✔ | ✔ |
 | **[Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning)** | ✔ | ✔ | ✔/✘ | ✔ (depuis la Livebox 4) | ✔ | ✔ |
-| **[Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup)<br>personnalisable ** | ✔ | ✔ (sauf IPv6, pas de support, et buggué sur certaines plages d'adresses ipv4) | … | ✘ (XXX.pro.dns-orange.fr disponible sur les abonnements orange pro) | ✘ | ✘ |
+| **[Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup)<br>personnalisable** | ✔ | ✔ (sauf IPv6, pas de support, et buggué sur certaines plages d'adresses ipv4) | … | ✘ (XXX.pro.dns-orange.fr disponible sur les abonnements orange pro) | ✘ | ✘ |
 | **[IP fixe](/dns_dynamicip)** | ✔ | ✔ | ✔/✘ | ✘ (en option depuis la Livebox 3 et sur les abonnements orange pro) | ✔ | ✔ |
 | **[IPv6](https://fr.wikipedia.org/wiki/IPv6)** | ✔ | ✔ | ✔ | ✔ | … | … |
 | **[Non listé sur le DUL](https://en.wikipedia.org/wiki/Dialup_Users_List)** | … | ✘ | … | … | … | … |

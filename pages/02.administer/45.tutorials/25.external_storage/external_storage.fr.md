@@ -23,15 +23,15 @@ Ci-dessous, vous trouverez des explications pour parvenir à déplacer vos donn�
 
 ## [fa=list-alt /] Pré-requis
 
-* Avoir un peu de temps à un moment où les utilisateurs de votre serveur peuvent accepter un arrêt des services. Les étapes à réaliser, même si elles sont relativement simples, peuvent parfois paraître techniques et nécessitent dans tous les cas **de prendre son temps**.
+- Avoir un peu de temps à un moment où les utilisateurs de votre serveur peuvent accepter un arrêt des services. Les étapes à réaliser, même si elles sont relativement simples, peuvent parfois paraître techniques et nécessitent dans tous les cas **de prendre son temps**.
 
-* Savoir se connecter en root sur votre système, par exemple via [SSH](/ssh). (Note : en étant connecté en tant qu'utilisateur `admin`, vous pouvez passer root avec `sudo su`)
+- Savoir se connecter en root sur votre système, par exemple via [SSH](/ssh). (Note : en étant connecté en tant qu'utilisateur `admin`, vous pouvez passer root avec `sudo su`)
 
-* Connaître les commandes basiques `cd`, `ls`, `mkdir`, `rm`
+- Connaître les commandes basiques `cd`, `ls`, `mkdir`, `rm`
 
-* Avoir une sauvegarde au cas où ça ne se passe pas comme prévu
+- Avoir une sauvegarde au cas où ça ne se passe pas comme prévu
 
-* Disposer d'un stockage supplémentaire (disque SSD, disque dur, clé USB) branché à votre serveur en USB ou en SATA
+- Disposer d'un stockage supplémentaire (disque SSD, disque dur, clé USB) branché à votre serveur en USB ou en SATA
 
 ## 1. Identifier les dossiers à déplacer
 
@@ -43,7 +43,7 @@ Ci-dessous, une explication de certains chemins qui peuvent prendre du poids ave
 |--------|---|---|
 | `/home`                       | Dossiers utilisateurs accessibles via SFTP | Déplaçable sur un disque dur  |
 | `/home/yunohost.backup`       | Sauvegardes YunoHost  | Selon votre stratégie de sauvegarde, il peut être préférable de placer ce dossier sur un disque distinct de celui où se trouvent vos données ou vos bases de données |
-| `/home/yunohost.app`          | Données lourdes des applications yunohost (nextcloud, matrix...) | Déplaçable sur un disque dur |
+| `/home/yunohost.app`          | Données lourdes des applications YunoHost (nextcloud, matrix...) | Déplaçable sur un disque dur |
 | `/home/yunohost.multimedia`   | Données lourdes partagées entre plusieurs applications | Déplaçable sur un disque dur |
 | `/var/lib/mysql`              | Base de données utilisées par les applications | A laisser idéalement sur le SSD pour des raisons de performances |
 | `/var/lib/postgresql`         | Base de données utilisées par les applications | A laisser idéalement sur le SSD pour des raisons de performances  |

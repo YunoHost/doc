@@ -7,7 +7,7 @@ routes:
   default: '/dns_dynamicip'
 ---
 
-! Prima di continuare, assicuratevi che il vostro indirizzo IP pubblico sia dinamico utilizzando: [ip.yunohost.org](http://ip.yunohost.org/). L'indirizzo IP del vostro router cambia quasi ogni giorno.
+! Prima di continuare, assicuratevi che il vostro indirizzo IP pubblico sia dinamico utilizzando: [`ip.yunohost.org`](http://ip.yunohost.org/). L'indirizzo IP del vostro router cambia quasi ogni giorno.
 
 Questo tutorial cerca di risolvere il problema con gli IP dinamici: quando l'IP pubblico del vostro router cambia, la zona DNS non viene aggiornata per riflettere il nuovo indirizzo IP e di conseguenza il vostro server non è più raggiungibile con il nome di dominio.
 

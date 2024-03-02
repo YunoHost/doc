@@ -23,7 +23,7 @@ To use this service, you simply have to choose such a domain during the post-ins
 
 The `nohost.me`, `noho.st` and `ynh.fr` domain service allows the creation of subdomains.
 
-YunoHost allows the installation of applications on subdomains (for example, having the Nextcloud application accessible from the `cloud.mydomain.org` address), this feature is also allowed with the `nohost.me`, `noho.st` and `ynh.fr` domains and so it is possible to have a subdomain such as `my.application.mydomain.nohost.me`. To create a subdomain on `nohost.me`, `noho.st` and `ynh.fr`, you just have to add the subdomain to yunohost like any other domains.
+YunoHost allows the installation of applications on subdomains (for example, having the Nextcloud application accessible from the `cloud.mydomain.org` address), this feature is also allowed with the `nohost.me`, `noho.st` and `ynh.fr` domains and so it is possible to have a subdomain such as `my.application.mydomain.nohost.me`. To create a subdomain on `nohost.me`, `noho.st` and `ynh.fr`, you just have to add the subdomain to YunoHost like any other domains.
 
 ### Adding a nohost.me, noho.st or ynh.fr domain after the post-installation
 

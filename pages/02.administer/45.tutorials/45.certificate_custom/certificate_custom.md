@@ -11,8 +11,8 @@ routes:
 
 Some changes have taken place which impact the procedures indicated below:
 
-* Metronome group is no longer used directly but ssl-cert.
-* A `/etc/yunohost/certs/DOMAIN.LTD-history/stamp` directory is used to keep each configuration created and a symlink is created.
+- Metronome group is no longer used directly but ssl-cert.
+- A `/etc/yunohost/certs/DOMAIN.LTD-history/stamp` directory is used to keep each configuration created and a symlink is created.
 
 ### Adding a signed certificate by an authority (other than Let's Encrypt)
 
@@ -141,4 +141,4 @@ Reload NGINX configuration to take into account the new certificate.
 sudo service nginx reload
 ```
 
-Your certificate is ready. However, you can ensure that it is in place by testing the certificate using the <a href="https://www.geocerts.com/ssl_checker" target="_blank"geocerts</a.
+Your certificate is ready. However, you can ensure that it is in place by testing the certificate using the <a href="<https://www.geocerts.com/ssl_checker>" target="_blank"geocerts</a.

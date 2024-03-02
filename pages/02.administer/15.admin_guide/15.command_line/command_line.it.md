@@ -17,7 +17,7 @@ page-toc:
 
 ## Durante l'installazione di YunoHost
 
-#### Individuare il proprio IP
+### Individuare il proprio IP
 
 Se stai installando su un VPS allora il provider dovrebbe averti indicato il tuo indirizzo IP.
 
@@ -27,7 +27,7 @@ Se stai installando su un computer casalingo (ad esempio un Raspberry Pi o un OL
 - usa l'interfaccia del router per vedere la lista dei computer collegati o controllane i log;
 - collega un monitor al tuo server YunoHost, fai login e digita `hostname --all-ip-address`.
 
-#### Collegamento
+### Collegamento
 
 Se come esempio il tuo indirizzo IP è `111.222.333.444` avvia un terminale e digita:
 
@@ -39,7 +39,7 @@ Ti verrà richiesta una password. Nel caso tu stia utilizzando un VPS questa ti 
 
 ! Dalla versione 3.4 di YunoHost, dopo aver completato il processo di post installazione, non sarà più possibile fare login da `root`: invece **sarà necessario fare login usando l'utente `admin`!**. Nel caso in cui il server LDAP non stia funzionando e l'utente `admin` sia inutilizzabile sarà sempre possibile fare login da `root` solo dalla rete locale.
 
-#### Cambio della password
+### Cambio della password
 
 Dopo esserci loggati per la prima volta è necessario cambiare la password di root e ti dovrebbe essere richiesto dal server stesso; nel caso in cui questo non accada usa il comando `passwd`. È importante scegliere una password ragionevolmente robusta. Nota che la password di root verrà sovrascritta dalla password di admin dal processo di postinstallazione.
 

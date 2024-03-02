@@ -107,8 +107,8 @@ You can also delete the application from this page.
 
 From the command line, you can change:
 
-* the app's label in the SSO: `yunohost app change-label <app> <new_label>`
-* the app's url: `yunohost app change-url app [-d <DOMAIN>] [-p <PATH>]`
+- the app's label in the SSO: `yunohost app change-label <app> <new_label>`
+- the app's url: `yunohost app change-url app [-d <DOMAIN>] [-p <PATH>]`
 
 You can also delete the app: `yunohost app remove <app>`
 

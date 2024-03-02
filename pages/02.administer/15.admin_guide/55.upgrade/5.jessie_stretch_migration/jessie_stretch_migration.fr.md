@@ -55,7 +55,7 @@ Pour cela, allez dans Outils > Diagnostique. (Vous pouvez aussi regarder ce qui 
 
 ### Vérifiez que Fail2Ban et le pare-feu sont actifs
 
-Vous devriez voir que Fail2Ban et le firewall sont actifs. Depuis la webadmin, dans Services (chercher 'fail2ban' et 'yunohost-firewall'). Depuis la ligne de commande, faites  `yunohost service status fail2ban yunohost-firewall` : les deux devraient être en `active: active`.
+Vous devriez voir que Fail2Ban et le firewall sont actifs. Depuis la webadmin, dans Services (chercher `fail2ban` et `yunohost-firewall`). Depuis la ligne de commande, faites  `yunohost service status fail2ban yunohost-firewall` : les deux devraient être en `active: active`.
 
 ### Vérifiez que les applications fonctionnent
 

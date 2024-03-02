@@ -23,7 +23,7 @@ YunoHost это **операционная система** позволяюща
 - ![](image://icon-mail.png?resize=32&classes=inline) Включает **полный набор для работы электронной почты** <small>(Postfix, Dovecot, Rspamd, DKIM)</small>;
 - ![](image://icon-messaging.png?resize=32&classes=inline)... более известный как **встроенный сервер сообщений** <small>(XMPP)</small>;
 - ![](image://icon-lock.png?resize=32&classes=inline) Управляй **SSL сертификатами** <small>(Основано на Let's Encrypt)</small> ;
-- ![](image://icon-shield.png?resize=32&classes=inline)... и **системами безопасности** <small>(Fail2ban, yunohost-firewall)</small>;
+- ![](image://icon-shield.png?resize=32&classes=inline)... и **системами безопасности** <small>(`fail2ban`, `yunohost-firewall`)</small>;
 
 ## История
 

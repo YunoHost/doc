@@ -206,23 +206,23 @@ As such:
 
 This will read:
 
-+ List 1
-+ List 2
-+ list 3
-  + List 3a
-  + List 3b
-    + List 3b1
-    + List 3b2
-    + List 3b3
-      + List 1
-      + List 2
-      + list 3
+- List 1
+- List 2
+- list 3
+  - List 3a
+  - List 3b
+    - List 3b1
+    - List 3b2
+    - List 3b3
+      - List 1
+      - List 2
+      - list 3
 
 - List 4
 
-* List 5
+- List 5
 
-+ list 6
+- list 6
 
 ## Tables
 
@@ -273,9 +273,9 @@ At least three low pitched accents at the opening and closing of the block and t
 
 ## Useful links
 
-+ The documentation of the original Markdown language: [daringfireball.net/projects/markdown](https://daringfireball.net/projects/markdown/)
-+ Markdown Tutorial on [markdowntutorial.com](https://markdowntutorial.com)
+- The documentation of the original Markdown language: [daringfireball.net/projects/markdown](https://daringfireball.net/projects/markdown/)
+- Markdown Tutorial on [markdowntutorial.com](https://markdowntutorial.com)
 
 ## Going further
 
-In a more general way, to understand how a text is formatted just inspect the source document with a note application. This does not mean that the YunoHost wiki will be able to exploit it. There are many other possibilities to use markdown syntax, feel free to add missing features. If you've noticed some missing features and/or have questions, please contact us on [the forum](https://forum.yunohost.org) or by direct message on the IRC room: **#yunohost** on [libera.chat](https://libera.chat).
+In a more general way, to understand how a text is formatted just inspect the source document with a note application. This does not mean that the YunoHost wiki will be able to exploit it. There are many other possibilities to use markdown syntax, feel free to add missing features. If you've noticed some missing features and/or have questions, please contact us on [the forum](https://forum.yunohost.org) or by direct message on the IRC room: **#YunoHost** on [libera.chat](https://libera.chat).

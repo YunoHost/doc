@@ -357,7 +357,7 @@ This hook is run at the end of the command `yunohost app upgrade` or equivalent 
 - YNH_ARCH: The arch as returned by `dpkg --print-architecture`
 - YNH_APP_UPGRADE_TYPE: The type of upgrade (UPGRADE_PACKAGE, UPGRADE_APP, UPGRADE_FULL)
 - YNH_APP_MANIFEST_VERSION: The version number
-- YNH_APP_CURRENT_VERSION: The version number of the app (in the yunohost format)
+- YNH_APP_CURRENT_VERSION: The version number of the app (in the YunoHost format)
 - NO_BACKUP_UPGRADE: 1 if we don't want to backup else 0
 
 ##### No positionnal arguments

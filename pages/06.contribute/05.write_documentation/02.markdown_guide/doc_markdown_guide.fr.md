@@ -206,23 +206,23 @@ Comme tel :
 
 Ce qui affichera :
 
-+ Liste 1
-+ Liste 2
-+ liste 3
-  + Liste 3a
-  + Liste 3b
-    + Liste 3b1
-    + Liste 3b2
-    + Liste 3b3
-      + Liste 1
-      + Liste 2
-      + liste 3
+- Liste 1
+- Liste 2
+- liste 3
+  - Liste 3a
+  - Liste 3b
+    - Liste 3b1
+    - Liste 3b2
+    - Liste 3b3
+      - Liste 1
+      - Liste 2
+      - liste 3
 
 - Liste 4
 
-* Liste 5
+- Liste 5
 
-+ liste 6
+- liste 6
 
 ## Les tableaux
 
@@ -273,9 +273,9 @@ Minimum trois accents graves en ouverture et fermeture de bloc et deux accents g
 
 ## Liens utiles
 
-+ La documentation du langage originel Markdown : [daringfireball.net/projects/markdown (en)](https://daringfireball.net/projects/markdown/)
-+ Tutoriel Markdown sur [markdowntutorial.com](https://markdowntutorial.com)
+- La documentation du langage originel Markdown : [daringfireball.net/projects/markdown (en)](https://daringfireball.net/projects/markdown/)
+- Tutoriel Markdown sur [markdowntutorial.com](https://markdowntutorial.com)
 
 ## Aller plus loin
 
-De manière plus générale, pour comprendre comment est formaté un texte il suffit juste d'inspecter le document source avec une application note. Ce n'est pas pour autant que le wiki de YunoHost pourra l'exploiter. Il existe bien d'autres possibilités d'utiliser la syntaxe markdown, n'hésitez pas à ajouter des fonctionnalités manquantes. Si vous avez observé des manques et/ou que vous avez des questions, contactez-nous sur [le forum](https://forum.yunohost.org) ou par message direct sur le salon IRC : **#yunohost** sur [libera.chat](https://libera.chat).
+De manière plus générale, pour comprendre comment est formaté un texte il suffit juste d'inspecter le document source avec une application note. Ce n'est pas pour autant que le wiki de YunoHost pourra l'exploiter. Il existe bien d'autres possibilités d'utiliser la syntaxe markdown, n'hésitez pas à ajouter des fonctionnalités manquantes. Si vous avez observé des manques et/ou que vous avez des questions, contactez-nous sur [le forum](https://forum.yunohost.org) ou par message direct sur le salon IRC : **#YunoHost** sur [libera.chat](https://libera.chat).

@@ -21,7 +21,7 @@ yunohost backup create --method custom
 
 Di seguito un esempio, semplificato, che esegue il backup con rotazione dei dischi, che vengono sostituiti ogni settimana.
 
-/etc/yunohost/hooks.d/backup_method/05-custom
+`/etc/yunohost/hooks.d/backup_method/05-custom`
 
 ```bash
 #!/bin/bash

@@ -55,7 +55,7 @@ You should be able to see this from the webadmin Tools > Diagnosis, and also in 
 
 ### Check that Fail2Ban and the firewall are active
 
-You should be able to see that Fail2Ban and the firewall are active. From the webadmin in Services (look for 'fail2ban' and 'yunohost-firewall'). From the command line, run `yunohost service status fail2ban yunohost-firewall`. They should both have `active: active`.
+You should be able to see that Fail2Ban and the firewall are active. From the webadmin in Services (look for `fail2ban` and `yunohost-firewall`). From the command line, run `yunohost service status fail2ban yunohost-firewall`. They should both have `active: active`.
 
 ### Check that your applications are working
 

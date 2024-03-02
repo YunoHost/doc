@@ -48,8 +48,8 @@ Branchez un écran sur votre serveur, loggez-vous et tapez `hostname --all-ip-ad
 
 Les identifiants par défaut (avant la post-installation!) sont :
 
-- login : root
-- mot de passe : yunohost
+- login : `root`
+- mot de passe : `yunohost`
 
 (Si vous utilisez une image Armbian brute plutôt que les images YunoHost pré-installées, les identifiants sont root / 1234)
 

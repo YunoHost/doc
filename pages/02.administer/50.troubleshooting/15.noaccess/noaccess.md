@@ -13,14 +13,14 @@ This page will help you diagnose the issue, get back access, and if needed repai
 
 ## You have access to the server with its local IP address, but not its domain name
 
-#### If you are self-hosted at home: fix ports forwarding
+### If you are self-hosted at home: fix ports forwarding
 
 Check that you are getting access to the server by using its public IP (you can find at [https://ip.yunohost.org](https://ip.yunohost.org). If this does not work:
 
 - Make sure you have [set up forwarding](/isp_box_config)
 - Some ISP routers do not support *hairpinning*, which prevents you from reaching your server by its domain name from within your local network. If so, you can use a cellular connection, or tweak your `hosts` file on your computer to make it bind your domain name to the local IP address instead of the public one.
 
-#### Configure DNS records
+### Configure DNS records
 
 ! This is not a problem if you are using a domain from `nohost.me`, `noho.st` or `ynh.fr`)
 
@@ -28,7 +28,7 @@ You have to configure your [DNS records](/dns_config) (at least `A` records, and
 
 You can check that the DNS records are correct by comparing the results given by [this service](https://www.whatsmydns.net/) with the [IP given by our service](https://ip.yunohost.org).
 
-#### Other probable causes
+### Other probable causes
 
 - You domain `noho.st`, `nohost.me`, or `ynh.fr` is unreachable following a failure on YunoHost's infrastructure. Check the [forum](https://forum.yunohost.org/) for announcements or people posting about the same issue.
 - Your domain name may be expired. Check that on your registrar's client panel, or by using the command `whois yourdomain.tld`.
@@ -42,13 +42,13 @@ You can check that the DNS records are correct by comparing the results given by
 
 ## You have access via SSH but not via the webadmin, or inversely
 
-#### You are trying to log in with SSH as `root` instead of `admin` user
+### You are trying to log in with SSH as `root` instead of `admin` user
 
 By default, SSH connection has to be made as `admin`. It possible to log into the server as `root` *only from the local network of the server*. If your server is a VPS, the web console or VNC provided by VPS providers may work.
 
 If you are running `yunohost` commands in the CLI as `admin`, you have to call them with `sudo` before (for example `sudo yunohost user list`). You can also become `root` by running `sudo su`.
 
-#### You have been temporarily banned
+### You have been temporarily banned
 
 Your YunoHost server includes a service, Fail2ban, which automatically bans IPs that fail several times in a row to log in. In some cases it can be software (e.g. Nextcloud client) that are confifured with an old password, or a user who has the same IP as you have.
 
@@ -60,7 +60,7 @@ See also : [unban an IP on Fail2Ban](/fail2ban)
 
 !!!! Ban are usually 10 to 12-minute-long, and on IPv4 only.
 
-#### NGINX web server is broken
+### NGINX web server is broken
 
 Maybe the NGINX web server is out of order. You can check that [trough SSH](/ssh) with the command `yunohost service status nginx`. If it is failing, check that its configuration is correct by running `nginx -t`. If it is indeed broken, it may be due to the installation or removal of a low-quality app... If you need support, [ask for it](/help).
 
@@ -70,7 +70,7 @@ The NGINX or SSH servers may have been killed due to a lack of storage space, RA
 - You can check used storage with `df -h`. If one of your partitions is full, you need to identify what fills it and make room. You can use `ncdu` command (install it with `apt install ncdu` to browse from the root directory: `ncdu /`
 - You can check RAM and swap usage with `free -h`. Depending on the result, it may be necessary to optimize your server to use less RAM (removal of heavy or unused apps...), add more RAM or add a swap file.
 
-#### Your server is reachable by IPv6, but not IPv4, or inversely
+### Your server is reachable by IPv6, but not IPv4, or inversely
 
 You can check that by `ping`ing it:
 

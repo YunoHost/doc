@@ -51,11 +51,11 @@ Toutefois, ces techniques de grappes de disques ne devraient pas être considér
 
 Quelques exemples de situations connues des administrateurs systèmes professionnels:
 
-* les disques d'une grappe montée avec des disques de la même marque peuvent tomber en panne quasiment en même temps en moins de quelques heures
-* sans monitoring de la santé des disques, il y a de fortes chances que l'on ne remarque la panne d'un disque de la grappe que lorsqu'un deuxième tombe en panne (><)
-* si on n'a pas de disque de rechange, le délai d'achat peut aboutir à un crash de l'autre disque
-* un disque à moitié fonctionnel qui produit des erreurs peut propager son erreur à travers la grappe
-* les connectiques des disques ou le contrôleur RAID peuvent produire des erreurs aussi ou tomber en panne
-* plus on complexifie l'architecture avec de nombreux composants, plus il y a de chances que l'un d'eux tombe en panne
+- les disques d'une grappe montée avec des disques de la même marque peuvent tomber en panne quasiment en même temps en moins de quelques heures
+- sans monitoring de la santé des disques, il y a de fortes chances que l'on ne remarque la panne d'un disque de la grappe que lorsqu'un deuxième tombe en panne (><)
+- si on n'a pas de disque de rechange, le délai d'achat peut aboutir à un crash de l'autre disque
+- un disque à moitié fonctionnel qui produit des erreurs peut propager son erreur à travers la grappe
+- les connectiques des disques ou le contrôleur RAID peuvent produire des erreurs aussi ou tomber en panne
+- plus on complexifie l'architecture avec de nombreux composants, plus il y a de chances que l'un d'eux tombe en panne
 
 !!! Si vous souhaitez mettre en place une grappe RAID ou utiliser btrfs, le plus simple est de le faire à l'installation avec l'iso YunoHost en mode expert (lors du partitionnement du système).

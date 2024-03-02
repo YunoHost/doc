@@ -11,9 +11,9 @@ YunoHost è stato sviluppato per la migliore sicurezza senza troppe complicazion
 
 Rimangono due punti importanti da notare:
 
-* L'installazione di applicazioni addizionali può **aumentare significativamente** il numero di potenziali problemi di sicurezza. È importante chiedere informazioni relative a problemi di sicurezza **prima di installare un'applicazione** e provare ad installare solo le applicazioni necessarie.
+- L'installazione di applicazioni addizionali può **aumentare significativamente** il numero di potenziali problemi di sicurezza. È importante chiedere informazioni relative a problemi di sicurezza **prima di installare un'applicazione** e provare ad installare solo le applicazioni necessarie.
 
-* Poiché YunoHost è un software molto conosciuto ed usato aumenta le possibilità di un attacco. Se viene scoperto un problema potrebbe essere usato contemporaneamente contro tutte le istanze. Mantenete **aggiornato** il vostro sistema per aumentare la sicurezza. Gli aggiornamenti possono essere automatizzati installando l'[applicazione "Unattended_upgrades"](https://install-app.yunohost.org/?app=unattended_upgrades).
+- Poiché YunoHost è un software molto conosciuto ed usato aumenta le possibilità di un attacco. Se viene scoperto un problema potrebbe essere usato contemporaneamente contro tutte le istanze. Mantenete **aggiornato** il vostro sistema per aumentare la sicurezza. Gli aggiornamenti possono essere automatizzati installando l'[applicazione "Unattended_upgrades"](https://install-app.yunohost.org/?app=unattended_upgrades).
 
 !!!! Se avete bisogno di aiuto non esitate a [chiedere](/help).
 

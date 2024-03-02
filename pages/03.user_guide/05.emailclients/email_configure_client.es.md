@@ -26,7 +26,7 @@ Para configurar manualmente un nuevo cuenta en Thunderbird, añadir las informac
 ![](image://thunderbird_config_1.png?resize=900)
 ![](image://thunderbird_config_2.png?resize=900)
 
-* [Gestionar un alias para una dirección de correo electrónico](https://support.mozilla.org/es/kb/configurar-un-alias-para-una-direccin-de-correo-el)
+- [Gestionar un alias para una dirección de correo electrónico](https://support.mozilla.org/es/kb/configurar-un-alias-para-una-direccin-de-correo-el)
 
 ### ![](image://k9mail.png?resize=50&classes=inline) Configurar K-9 Mail (en Android)
 

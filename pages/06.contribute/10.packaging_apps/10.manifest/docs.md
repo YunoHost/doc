@@ -33,7 +33,7 @@ maintainers = ["alexAubin"]
 - `name` (`str`) is the display name of the app, shown for example in the webadmin UI or user portal. It is limited to 22 chars <small>(though not sure why this number?)</small>.
 - `description` (`dict` of `lang code`->`str`) contains *short*, *concise* descriptions of the app in different languages (at least `en`). It is limited to 150 chars. It will be displayed on the app catalog and should allow people to understand what this app is about at a glance. A more extensive description of the app can be provided in `doc/DESCRIPTION.md`.
 - `version` (`str`) is composed of the *upstream* version of the app shipped, and an `~ynhX` suffix. Changing this version is what effectively triggers an available upgrade for YunoHost instances which installed this package (hence no upgrade will be displayed as available if you forget to change it). The point of the `~ynhX` suffix is to have a way to increment the version when commiting changes unrelated to the upstream but still trigger an upgrade.
-- `maintainers` (`list` or `str`) may allow to declare which person should be the referring person for this package (though packages are often maintained collectively and not really used in practice). This should contain a list of easily identifiable persons (eg your Github or Matrix username)
+- `maintainers` (`list` or `str`) may allow to declare which person should be the referring person for this package (though packages are often maintained collectively and not really used in practice). This should contain a list of easily identifiable persons (eg your GitHub or Matrix username)
 
 ## Upstream section
 
@@ -88,7 +88,7 @@ ram.runtime = "1M"
 
 This section is completely optional and, for most apps, doesn't exist at all.
 
-Some applications have limitations, they might be due to non-free dependencies, arbitrary limitations, etc. Yunohost provides UI in the catalog to show such antifeatures.
+Some applications have limitations, they might be due to non-free dependencies, arbitrary limitations, etc. YunoHost provides UI in the catalog to show such antifeatures.
 
 The declaration of antifeatures is a 3-steps process:
 
@@ -143,7 +143,7 @@ This section contains questions that should be asked to the admin prior to start
   - `help.en` is an optional additional message to provide further info about this question
   - `type` is the type of question, in this case `string`
   - in this example, we don't want a free user input but choosing between `cat`, `dog` or `both` (with proper human-readable versions of these choices)
-  - this will later automatically create a yunohost app setting named `prefered_pet`
+  - this will later automatically create a YunoHost app setting named `prefered_pet`
   - .. and in the bash install script, the bash variable will automatically be available `$prefered_pet` with the chosen value
 
 ### Regarding install question types

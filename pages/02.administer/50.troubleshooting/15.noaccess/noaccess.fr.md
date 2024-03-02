@@ -13,7 +13,7 @@ Cette page va vous aider à diagnostiquer, obtenir un accès et si besoin répar
 
 ## Vous avez accès au serveur via l'adresse IP, mais pas avec le nom de domaine ?
 
-#### Si vous êtes auto-hébergé à la maison : il faut configurer les redirection de ports
+### Si vous êtes auto-hébergé à la maison : il faut configurer les redirection de ports
 
 Vérifier que vous arrivez à accéder au serveur en utilisant son IP globale (que vous pouvez trouver sur <https://ip.yunohost.org>). Si cela ne fonctionne pas:
 
@@ -21,9 +21,9 @@ Vérifier que vous arrivez à accéder au serveur en utilisant son IP globale (q
 - Certaines box de FAI ne supportent pas le hairpinning et vous ne pouvez pas accéder à votre serveur depuis l'intérieur du réseau local (sauf à passer par l'IP locale). Pour contourner le problème, vous pouvez utiliser un des moyens suivants:
   - utiliser une connexion cellulaire (4/5G)
   - modifier le fichier /etc/hosts sur vos équipements
-  - déclarer l'ip locale de yunohost comme resolveur DNS dans votre routeur (partie DHCP) et ouvrir le port 53 UDP sur votre yunohost en faisant attention de ne pas activer l'upnp sur le port 53. Surtout, n'ouvrez pas le port 53 de votre routeur.
+  - déclarer l'ip locale de YunoHost comme resolveur DNS dans votre routeur (partie DHCP) et ouvrir le port 53 UDP sur votre YunoHost en faisant attention de ne pas activer l'upnp sur le port 53. Surtout, n'ouvrez pas le port 53 de votre routeur.
 
-#### Il faut configurer vos enregistrement DNS
+### Il faut configurer vos enregistrement DNS
 
 (N.B.: ce n'est pas nécessaire si vous utilisez un domaine de type nohost.me, noho.st ou ynh.fr)
 
@@ -31,7 +31,7 @@ Il vous faut configurer vos enregistrement DNS comme expliqué sur [cette page](
 
 Vous pouvez valider que les enregistrements DNS sont corrects en comparant le résultat de <https://www.whatsmydns.net/> avec l'IP globale de votre serveur (si vous êtes hébergé à la maison, vous pouvez obtenir cette IP sur <https://ip.yunohost.org>)
 
-#### Autres causes possibles
+### Autres causes possibles
 
 - Votre nom de domaine noho.st, nohost.me ou ynh.fr est inaccessible suite à une panne de l'infra YunoHost. Vérifiez sur le forum si d'autre personnes signalent le même problème.
 - Votre nom de domaine est peut-être expiré. Vous pouvez vérifier que votre nom de domaine a expiré en vous connectant sur l'interface de votre registrar ou en utilisant le whois par exemple via la commande `whois NOM_DE_DOMAINE`.
@@ -45,13 +45,13 @@ Une erreur de certificat peut également être affichée dans certain cas où vo
 
 ## Vous avez accès en SSH mais pas à la Web admin ou inversement
 
-#### Vous essayez de vous connecter en SSH avec `root` plutôt qu'avec `admin`
+### Vous essayez de vous connecter en SSH avec `root` plutôt qu'avec `admin`
 
 Par défaut, la connexion en SSH doit s'effectuer avec l'utilisateur `admin`. Il est possible de se connecter à la machine avec l'utilisateur `root` *seulement depuis le réseau local* sur lequel se situe le serveur (ou bien via la console web / VNC pour des VPS).
 
 Lorsque vous exécutez des commandes `yunohost` en tant qu'admin, il faut les précéder de la commande `sudo` (par exemple `sudo yunohost user list`). Vous pouvez également devenir `root` en tapant `sudo su`.
 
-#### Vous avez été banni temporairement
+### Vous avez été banni temporairement
 
 Votre serveur YunoHost inclut un mécanisme (Fail2Ban) qui banni automatiquement les IPs qui échouent plusieurs fois à s'authentifier. Dans certains cas, il peut s'agir d'un programme (par exemple un client Nextcloud) qui est configuré avec un ancien mot de passe ou d'un utilisateur qui utilise la même IP que vous.
 
@@ -63,7 +63,7 @@ Voir aussi : [débannir une IP sur Fail2Ban](/fail2ban)
 
 NB : le bannissement dure en général 10 à 12 minutes. Le bannissement n'est actif qu'en IPv4.
 
-#### Le serveur web NGINX est cassé
+### Le serveur web NGINX est cassé
 
 Peut-être que le serveur web NGINX est en panne. Vous pouvez vérifier cela [en ssh](/ssh) avec `yunohost service status nginx`. Si il est en panne, vérifiez que la configuration ne comporte pas d'erreur avec `nginx -t`. Si la configuration est cassée, ceci est peut-être du à une l'installation ou désinstallation d'une application de mauvaise qualité... Si vous êtes perdu, [demandez de l'aide](/help).
 
@@ -73,7 +73,7 @@ Il se peut également que le serveur web (NGINX) ou le serveur ssh aient été t
 - Vous pouvez contrôler l'espace disque utilisé avec `df -h`. Si une de vos partitions est remplie à 100%, il faut identifier ce qui prend de la place sur votre système et faire de la place. Il est possible d'installer l'utilitaire `ncdu` avec `apt install ncdu` puis de faire `ncdu /` pour analyser la taille des dossiers de toute l'arborescence.
 - Vous pouvez contrôler l'utilisation de la RAM / swap avec `free -h`. En fonction des résultats, il peut être nécessaire d'optimiser votre serveur pour qu'il utilise moins de RAM (suppression d'app lourdes et inutiles...), d'ajouter de la RAM ou d'ajouter un fichier de swap.
 
-#### Votre serveur est accessible en IPv6 mais pas en IPv4 ou inversement
+### Votre serveur est accessible en IPv6 mais pas en IPv4 ou inversement
 
 Vous pouvez le vérifier en tentant de faire des ping sur votre serveur en IPv4 et en IPv6.
 

@@ -21,13 +21,13 @@ routes:
   - VPS Scaleway: 20.33-12: 243.96€/year
   - VPS Digital O. (forum): 172.80€/year
 - Domain names: ~150€
-  - nohost.me: 11.99€HT/year
-  - ynh.fr: 6.99€HT/year (to be confirmed with frju?)
-  - noho.st: ~35€ TTC/year
-  - YunoHost.org: 13.99€HT/year
-  - YunoHost.com: 9.99€HT/year
-  - labriqueinter.net: 12.49€HT/year
-  - internetcu.be: 17.99€HT/year
+  - `nohost.me`: 11.99€HT/year
+  - `ynh.fr`: 6.99€HT/year (to be confirmed with frju?)
+  - `noho.st`: ~35€ TTC/year
+  - `yunohost.org`: 13.99€HT/year
+  - `yunohost.com`: 9.99€HT/year
+  - `labriqueinter.net`: 12.49€HT/year
+  - `internetcu.be`: 17.99€HT/year
 - Communication: ~400€
 - Travel (e.g. to go to conferences): ~700€
   - AG FFDN 2020: 225€ (en tout)

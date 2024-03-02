@@ -50,6 +50,7 @@ Aquí tienes una lista más exhaustiva de clientes XMPP (en) : <https://xmpp.org
 ### Cifrar tu conversaciones con OMEMO
 
 Es posible cifrar tu conversaciones XMPP con la ayuda de [OMEMO](https://xmpp.org/extensions/xep-0384.html), por ejemplo utilizando Gajim :
+
 - Instalar `gajim` y el plugin `gajim-omemo`
 - Activar el plugin en `Tools > Plugins`
 - Activar el cifrado en una conversación con un contacto que también tiene OMEMO activado.

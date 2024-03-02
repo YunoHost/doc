@@ -15,7 +15,7 @@ Si utilizas un [dominio automático](/dns_nohost_me) provecho por el Proyecto Yu
 
 ## Configuración DNS recomendada
 
-_Nota: los ejemplos utilizan el marcador `tu.dominio.tld`, debe ser reemplazado por su propio dominio, como `www.yunohost.org`._
+*Nota: los ejemplos utilizan el marcador `tu.dominio.tld`, debe ser reemplazado por su propio dominio, como `www.yunohost.org`.*
 
 YunoHost provee una configuración DNS recomendada, accesible vía :
 
@@ -75,7 +75,7 @@ Pero puede ser un poco más fácil entenderla viéndola de esta manera :
 |   TXT   |  mail._domainkey       |  `"v=DKIM1; k=rsa; p=uneGrannnndeClef"`                |
 |   TXT   |  _dmarc                |  `"v=DMARC1; p=none"`                                  |
 
-#### Algunas notas a propósito de esta tabla
+### Algunas notas a propósito de esta tabla
 
 - Todos los registros no son necesarios. Para una instalación mínima, solos los registros en negrita son necesarios.
 - El punto al final de `tu.dominio.tld.` es importante ;) ;

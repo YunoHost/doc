@@ -52,11 +52,11 @@ Comunque i sistemi RAID non vanno considerati come metodi di backup. Un RAID dev
 
 Alcune situazioni ben conosciute dagli amministratori di sistema.
 
-* i dischi di un cluster creato con dischi della stessa marca possono guastarsi quasi contemporaneamente nel giro di poche ore
-* se non monitoriamo lo stato di salute dei nostri dischi, probabilmente ci accorgeremo di un problema ai dischi della  configurazione RAID solo quando si guasterà un secondo disco (><)
-* se non abbiamo un HD di scorta, nell'attesa che arrivi il disco nuovo per sostituire quello danneggiato, si guasterà anche l'altro
-* un disco che non funziona correttamente può provocare errori in tutta la catena
-* anche i controller RAID o i connettori possono guastarsi o dare errori
-* più complessa è la nostra catena, maggiori sono le possibilità di un guasto
+- i dischi di un cluster creato con dischi della stessa marca possono guastarsi quasi contemporaneamente nel giro di poche ore
+- se non monitoriamo lo stato di salute dei nostri dischi, probabilmente ci accorgeremo di un problema ai dischi della  configurazione RAID solo quando si guasterà un secondo disco (><)
+- se non abbiamo un HD di scorta, nell'attesa che arrivi il disco nuovo per sostituire quello danneggiato, si guasterà anche l'altro
+- un disco che non funziona correttamente può provocare errori in tutta la catena
+- anche i controller RAID o i connettori possono guastarsi o dare errori
+- più complessa è la nostra catena, maggiori sono le possibilità di un guasto
 
 !!! Se pianificate di creare una catena RAID o utilizzare il filesystem btrfs, la procedura più semplice è quella di installare YunoHost in modalità esperto (nella parte relativa alle partizioni del disco).

@@ -96,7 +96,7 @@ yunohost app upgrade --force APP_NAME
 
 ### Can't run the migration due to `libc6-dev : Breaks: libgcc-8-dev issue`
 
-Note: This issue should be resolved in yunohost_version: 4.4.2.13
+Note: This issue should be resolved in `yunohost_version`: `4.4.2.13`
 You have an app that depends on the `build-essential` package.
 
 See this [solution](https://forum.yunohost.org/t/migration-to-11-wont-start-libc6-dev-breaks-libgcc-8-dev/20617/42) to fix it manually

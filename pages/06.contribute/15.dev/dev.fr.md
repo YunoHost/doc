@@ -19,9 +19,9 @@ Si vous cherchez quelque chose à implémenter ou un bug à réparer, le bug tra
 
 - **Implémentez et testez votre fonctionnalité**. Suivant ce sur quoi vous
   voulez travailler :
-   - **Cœur Python/ligne de commande** : allez dans `/ynh-dev/yunohost/`
-   - **Webadmin** : allez dans `/ynh-dev/yunohost-admin/`
-   - Vous pouvez aussi travailler sur les autres projets liés sur lesquels s'appuie YunoHost (SSOwat, Moulinette) de façon similaire.
+  - **Cœur Python/ligne de commande** : allez dans `/ynh-dev/yunohost/`
+  - **Webadmin** : allez dans `/ynh-dev/yunohost-admin/`
+  - Vous pouvez aussi travailler sur les autres projets liés sur lesquels s'appuie YunoHost (SSOwat, Moulinette) de façon similaire.
 
 ### Vue d'ensemble des 4 morceaux principaux de YunoHost
 
@@ -36,6 +36,7 @@ Moulinette dispose de sa propre documentation [ici](https://moulinette.readthedo
 ##### YunoHost
 
 C'est le cœur même de YunoHost. Il contient :
+
 - [le code Python](https://github.com/YunoHost/yunohost/tree/dev/src) qui gère les utilisateurs, domaines, applications, services et autres
 - des [helpers bash](https://github.com/YunoHost/yunohost/tree/dev/helpers) principalement utilisés par les packageurs d'applications dans les scripts de ces applications
 - des [hooks](https://github.com/YunoHost/yunohost/tree/dev/hooks) et [templates](https://github.com/YunoHost/yunohost/tree/dev/conf) qui sont utilisés pour configurer les différents éléments de l'écosystème tels que NGINX, Postfix...
@@ -45,6 +46,7 @@ C'est le cœur même de YunoHost. Il contient :
 ##### SSOwat
 
 C'est le système de connexion unique (single sign-on) de YunoHost. Il contient principalement :
+
 - [du code LUA](https://github.com/YunoHost/ssowat) interfacé directement avec NGINX et qui gère tous les aspects "techniques" de l'authentification et de la gestion des accès aux ressources.
 - le [portail web utilisateur](https://github.com/YunoHost/SSOwat/tree/dev/portal) qui est l'interface finale visible par les utilisateurs de YunoHost.
 
@@ -55,6 +57,7 @@ SSOwat est configuré via `/etc/ssowat/conf.json` qui est généré par YunoHost
 C'est une dépendance *optionnelle* de YunoHost et correspond à une interface pour l'API web créée par YunoHost et Moulinette (service `yunohost-api`).
 
 Il contient essentiellement :
+
 - [des templates pour les vues](https://github.com/YunoHost/yunohost-admin/tree/dev/app/src/views)
 - les [contrôleurs JavaScript](https://github.com/YunoHost/yunohost-admin/tree/dev/src/js/yunohost/controllers) correspondants, qui interagissent avec l'API YunoHost
 - et ses [chaînes internationalisées](https://github.com/YunoHost/yunohost-admin/tree/dev/app/src/i18n/locales)
@@ -100,8 +103,7 @@ Il contient essentiellement :
 
 - Il faudra peut-être régulièrement forcer le rafraîchissement du cache navigateur pour propager correctement le JavaScript et/ou HTML (à chaque fois que l'on change quelque chose dans `js` ou `views`, donc).
 
-
-### Votre fonctionnalité est prête et vous souhaitez qu'elle soit intégrée dans YunoHost 
+### Votre fonctionnalité est prête et vous souhaitez qu'elle soit intégrée dans YunoHost
 
 - Forkez le dépôt correspondant sur GitHub, et commitez vos changements dans une nouvelle branche. Il est recommandé de nommer la branche avec la convention suivante :
   - Pour une nouvelle fonctionnalité ou amélioration : `enh-ISSUENUMBER-description-fonctionnalité`

@@ -11,8 +11,8 @@ routes:
 
 Quelques changements ont eu lieu qui impactent les procédures indiquées ci-dessous :
 
-* Le groupe metronome n'est plus utilisé directement mais ssl-cert.
-* Un repertoire `/etc/yunohost/certs/DOMAIN.LTD-history/stamp` est utilisé pour conserver chaque configuration créée et un lien symbolique est créé dessus.
+- Le groupe metronome n'est plus utilisé directement mais ssl-cert.
+- Un repertoire `/etc/yunohost/certs/DOMAIN.LTD-history/stamp` est utilisé pour conserver chaque configuration créée et un lien symbolique est créé dessus.
 
 ### Ajout d’un certificat signé par une autorité (autre que Let's Encrypt)
 
@@ -103,7 +103,7 @@ cat crt.pem key.pem
 
 Les certificats et la clé privée doivent ressembler à cela :
 
-```plaintext
+```text
 -----BEGIN CERTIFICATE-----
 MIICVDCCAb0CAQEwDQYJKoZIhvcNAQEEBQAwdDELMAkGA1UEBhMCRlIxFTATBgNV
 BAgTDENvcnNlIGR1IFN1ZDEQMA4GA1UEBxMHQWphY2NpbzEMMAoGA1UEChMDTExC
@@ -142,4 +142,4 @@ Rechargez la configuration de NGINX pour prendre en compte le nouveau certificat
 sudo service nginx reload
 ```
 
-Votre certificat est prêt à servir. Vous pouvez toutefois vous assurer de sa mise en place en testant le certificat à l’aide du service de <a href="https://www.geocerts.com/ssl_checker" target="_blank"geocerts</a.
+Votre certificat est prêt à servir. Vous pouvez toutefois vous assurer de sa mise en place en testant le certificat à l’aide du service de <a href="<https://www.geocerts.com/ssl_checker>" target="_blank"geocerts</a.

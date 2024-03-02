@@ -23,15 +23,15 @@ Below you will find explanations on how to move your data to a hard disk in a co
 
 ## [fa=list-alt /] Prerequisites
 
-* Have some time at a moment when your server users can accept a shutdown. The steps to be performed, even if they are relatively simple, can sometimes seem technical and require in any case **to take your time**.
+- Have some time at a moment when your server users can accept a shutdown. The steps to be performed, even if they are relatively simple, can sometimes seem technical and require in any case **to take your time**.
 
-* Know how to connect as root on your system, for example via [SSH](/ssh). (Note: while logged in as `admin`, you can root with `sudo su`)
+- Know how to connect as root on your system, for example via [SSH](/ssh). (Note: while logged in as `admin`, you can root with `sudo su`)
 
-* Know the basic commands `cd`, `ls`, `mkdir`, `rm`.
+- Know the basic commands `cd`, `ls`, `mkdir`, `rm`.
 
-* Have a backup in case things don't work out as planned
+- Have a backup in case things don't work out as planned
 
-* Have extra storage (SSD, hard drive, USB stick) connected to your server via USB or SATA
+- Have extra storage (SSD, hard drive, USB stick) connected to your server via USB or SATA
 
 ## 1. Identify directories to be moved
 
@@ -43,7 +43,7 @@ Below is an explanation of some of the paths that can take up weight with some c
 |--------|---|---|
 | `/home` | User folders accessible via SFTP | Moveable to a hard disk |
 | `/home/yunohost.backup`       | YunoHost's backups  | Depending on your backup strategy, you may want to place this folder on a separate drive from your data or databases.
-| `/home/yunohost.app`          |Heavy data from yunohost applications (nextcloud, matrix...)|Moveable to a hard disk
+| `/home/yunohost.app`          |Heavy data from YunoHost applications (nextcloud, matrix...)|Moveable to a hard disk
 | `/home/yunohost.multimedia` | Heavy data shared between several applications | Moveable to a hard disk |
 | `/var/lib/mysql` | Database used by applications | Ideally leave on SSD for performance reasons |
 | `/var/lib/postgresql` | Database used by applications | Ideally leave on SSD for performance reasons |
@@ -127,9 +127,9 @@ mount /dev/YOUR_DISK1 /mnt/hdd
 
 (Here, `/dev/YOUR_DISK1` corresponds to the first partition on the disk)
 
-## 5. Mount a /mnt/hdd folder on one of the folders you want to move data from
+## 5. Mount a `/mnt/hdd` folder on one of the folders you want to move data from
 
-Here we will consider that you want to move the big data of the applications which are in /home/yunohost.app and the mails on your hard disk.
+Here we will consider that you want to move the big data of the applications which are in `/home/yunohost.app` and the mails on your hard disk.
 
 ### 5.1 Creating subfolders on the disk
 

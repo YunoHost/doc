@@ -23,15 +23,15 @@ Troverete qui le istruzioni per riuscire a spostare i vostri dati su un disco es
 
 ## [fa=list-alt /] Prerequisiti
 
-* Prevedere un periodo temporale nel quale gli utenti del vostro server possono sopportare una interruzione dei servizi. I passaggi da compiere, anche se relativamente semplici, sono tecnicamente complessi e necessitano di un lasso di tempo **da dedicare in modo esclusivo**.
+- Prevedere un periodo temporale nel quale gli utenti del vostro server possono sopportare una interruzione dei servizi. I passaggi da compiere, anche se relativamente semplici, sono tecnicamente complessi e necessitano di un lasso di tempo **da dedicare in modo esclusivo**.
 
-* Conoscenza della connessione come root sul server anche via [SSH](/ssh). (Nota bene: se siete connessi come utente `admin`, potete passare root con il comando `sudo su`)
+- Conoscenza della connessione come root sul server anche via [SSH](/ssh). (Nota bene: se siete connessi come utente `admin`, potete passare root con il comando `sudo su`)
 
-* Conoscere i comandi `cd`, `ls`, `mkdir`, `rm`.
+- Conoscere i comandi `cd`, `ls`, `mkdir`, `rm`.
 
-* Disporre di un backup nel caso le cose non vadano come previsto
+- Disporre di un backup nel caso le cose non vadano come previsto
 
-* Disporre di un disco aggiuntivo (SSD, hard disk, chiavetta USB) collegato al server via USB o SATA
+- Disporre di un disco aggiuntivo (SSD, hard disk, chiavetta USB) collegato al server via USB o SATA
 
 ## 1. Identificare le cartelle da spostare
 

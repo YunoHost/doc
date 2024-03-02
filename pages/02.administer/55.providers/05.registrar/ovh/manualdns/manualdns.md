@@ -47,7 +47,7 @@ ddclient will take care of telling OVH that the IP has changed. Then OVH will up
 
 You need to add in the configuration file:
 
-* your login and password DynHost
-* your domain name
+- your login and password DynHost
+- your domain name
 
 You should also check out [OVH's guide on DynHost](https://www.ovh.co.uk/g2024.hosting_dynhost).

@@ -42,7 +42,7 @@ You may add themes created by other people by downloading and extracting the cor
 
 ! **Beware** that adding third-party themes from random strangers on the internet **is a security risk**. It is equivalent to running someone's else code on your machine, which can be used for malicious purpose such as stealing credentials!
 
-There are a handful of themes listed [on Github](https://github.com/yunohost-themes).
+There are a handful of themes listed [on GitHub](https://github.com/yunohost-themes).
 
 ## Creating your own theme
 

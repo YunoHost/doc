@@ -21,7 +21,7 @@ Below, you can find a list of providers compatible for self-hosting and especial
 !!! - port forwarding or opened features
 !!! - net neutrality: no traffic analysis, no user data resale, no alteration of traffic (without legal obligations)...
 
-------------------
+---
 
 ## English speaking-site
 

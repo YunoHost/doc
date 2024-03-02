@@ -83,7 +83,7 @@ Though it might be easier to understand it if displayed like this:
 |   TXT   |  mail._domainkey       |  `"v=DKIM1; k=rsa; p=someHuuuuuuugeKey"`              |
 |   TXT   |  _dmarc                |  `"v=DMARC1; p=none"`                                 |
 
-#### A few notes about this table
+### A few notes about this table
 
 - Not all these lines are absolutely necessary. For a minimal setup, you only need the records in bold.
 - The dot at the end of `your.domain.tld.` is important ;);
@@ -106,8 +106,8 @@ If your public IPv4 address is `111.222.333.444` and your DNS
 domain is `domain.tld`, you should get following answer when using `nslookup`
 command tool:
 
-```shell
-$ nslookup 111.222.333.444
+```bash
+nslookup 111.222.333.444
 444.333.222.111.in-addr.arpa    name = domain.tld.
 ```
 

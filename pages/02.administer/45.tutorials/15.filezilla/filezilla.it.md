@@ -55,7 +55,7 @@ Installate e lanciate *FileZilla*
 
 ![Copia dei backup da YunoHost ad un computer locale](image://filezilla_8.png)
 
-----
+---
 
 Link a fonti esterne:
 
@@ -70,8 +70,8 @@ Qualsiasi distribuzione recente di GNU/Linux dovrebbe permettere di accedere al 
 
 Nautilus di Gnome3 integra delle funzionalità simili a FileZilla:
 
-* <https://help.gnome.org/users/gnome-help/stable/nautilus-connect.html.en>
-* <https://www.techrepublic.com/article/how-to-use-linux-file-manager-to-connect-to-an-sftp-server/>
+- <https://help.gnome.org/users/gnome-help/stable/nautilus-connect.html.en>
+- <https://www.techrepublic.com/article/how-to-use-linux-file-manager-to-connect-to-an-sftp-server/>
 
 ### Windows
 

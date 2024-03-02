@@ -11,21 +11,21 @@ routes:
 
 *Trouvez la liste d’autres fournisseurs d’accès à Internet **[ici](/isp)**.*
 
-#### Accès à l’administration de la box (v5/v6)
+## Accès à l’administration de la box (v5/v6)
 
-##### Freebox ≤ v5
+### Freebox ≤ v5
 
 Rendez-vous sur la [console d'administration du site de free](https://subscribe.free.fr/login/).
 
-##### Freebox v6 (Revolution / Mini4k)
+### Freebox v6 (Revolution / Mini4k)
 
 Allez à l’adresse : [mafreebox.freebox.fr](http://mafreebox.freebox.fr) puis authentifiez-vous.
 
-#### Ouverture des ports
+## Ouverture des ports
 
 [Liste des ports à ouvrir](/isp_box_config).
 
-##### Freebox ≤ v5
+### Freebox ≤ v5
 
 Cela se passe dans la section *Ma Freebox / Configurer mon routeur*. Il faut :
 
@@ -34,11 +34,11 @@ Cela se passe dans la section *Ma Freebox / Configurer mon routeur*. Il faut :
 
 La présence conjointe de ces deux règles permettent d'accéder à votre serveur de l'extérieur comme de l'intérieur de votre réseau local.
 
-##### Freebox v6
+### Freebox v6
 
 [Tutoriel d’ouverture des ports sur Freebox](http://www.astuces-pratiques.fr/informatique/ouvrir-un-port-sur-la-freebox-revolution)
 
-#### Déblocage de l’envoi de courriel
+## Déblocage de l’envoi de courriel
 
 Pour pouvoir envoyer des mails, le déblocage se fait dans la [partie client](https://subscribe.free.fr/login/).
 
@@ -46,7 +46,7 @@ Depuis le menu Ma freebox allez sur « Blocage SMTP sortant ».
 
 Pour pouvoir envoyer des mails, passez le blocage en « inactif ».
 
-#### Fonction NAS de la Freebox
+## Fonction NAS de la Freebox
 
 Il faut installer le paquet `cifs-utils`
 
@@ -66,7 +66,7 @@ On monte le répertoire NAS par défaut avec les droits de lecture / écriture p
 sudo mount -t cifs //mafreebox.freebox.fr/Disque\ dur/ /home/monlogin/freebox -o guest,iocharset=utf8,file_mode=0777,dir_mode=0777
 ```
 
-##### Automatiser le montage  
+### Automatiser le montage  
 
 Une ligne à ajouter à la fin du `/etc/fstab` :
 

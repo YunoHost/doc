@@ -32,7 +32,7 @@ Per configurare manualmente un nuovo account in Thunderbird, iniziate ad inserir
 ![](image://thunderbird_config_1.png?resize=900)
 ![](image://thunderbird_config_2.png?resize=900)
 
-* [Gestione alias email](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
+- [Gestione alias email](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
 
 [/ui-tab]
 [ui-tab title="K-9 Mail"]

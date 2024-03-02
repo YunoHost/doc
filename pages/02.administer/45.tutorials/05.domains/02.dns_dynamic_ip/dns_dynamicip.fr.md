@@ -7,7 +7,7 @@ routes:
   default: '/dns_dynamicip'
 ---
 
-! Avant d’aller plus loin, assurez-vous que votre adresse IP publique est dynamique à l’aide de : [ip.yunohost.org](http://ip.yunohost.org/). L’adresse IP publique de votre box change à peu près tous les jours.
+! Avant d’aller plus loin, assurez-vous que votre adresse IP publique est dynamique à l’aide de : [`ip.yunohost.org`](http://ip.yunohost.org/). L’adresse IP publique de votre box change à peu près tous les jours.
 
 Ce tutoriel a pour but de contourner le problème d’IP dynamique qui est le suivant : lorsque l’adresse IP publique de la box change, la zone DNS n’est pas mise à jour pour pointer vers la nouvelle adresse IP.
 

@@ -21,7 +21,7 @@ Domains can be managed in the 'Domain' section of the webadmin, or through the `
 ## 3 types of domains
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="Yunohost's domains (the free and easy way)"]
+[ui-tab title="YunoHost's domains (the free and easy way)"]
 
 In order to make self-hosting as accessible as possible, the YunoHost Project provides a *free* and *automatically configured* domain name service. By using this service, you won't have to [configure DNS records](/dns_config) yourself, which can be tedious and technical.
 

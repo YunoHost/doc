@@ -32,7 +32,7 @@ Pour configurer manuellement un nouveau compte dans Thunderbird commencez par re
 ![](image://thunderbird_config_1.png?resize=900)
 ![](image://thunderbird_config_2.png?resize=900)
 
-* [Gérer les alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
+- [Gérer les alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
 
 [/ui-tab]
 

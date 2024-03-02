@@ -111,8 +111,8 @@ Da questa pagina è anche possibile eliminare l'applicazione.
 
 Dalla riga di comando è possibile cambiare:
 
-* l'etichetta dell'applicazione nel sistema SSO: `yunohost app change-label <app> <new_label>`
-* l'url di connessione: `yunohost app change-url <app> [-d <DOMAIN>] [-p <PATH>]`
+- l'etichetta dell'applicazione nel sistema SSO: `yunohost app change-label <app> <new_label>`
+- l'url di connessione: `yunohost app change-url <app> [-d <DOMAIN>] [-p <PATH>]`
 
 È anche possibile eliminare l'applicazione: `yunohost app remove <app>`
 

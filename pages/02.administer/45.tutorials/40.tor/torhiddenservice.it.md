@@ -7,7 +7,7 @@ routes:
   default: '/torhiddenservice'
 ---
 
-! Questo tutorial non è completo! Con queste impostazioni alcuni dati possono essere rivelati come ad esempio il dominio principale del tuo yunohost, di conseguenza non può essere considerato un reale "Hidden service". Vedi <https://www.torproject.org/docs/tor-hidden-service.html>
+! Questo tutorial non è completo! Con queste impostazioni alcuni dati possono essere rivelati come ad esempio il dominio principale del tuo YunoHost, di conseguenza non può essere considerato un reale "Hidden service". Vedi <https://www.torproject.org/docs/tor-hidden-service.html>
 
 ### Installare Tor
 

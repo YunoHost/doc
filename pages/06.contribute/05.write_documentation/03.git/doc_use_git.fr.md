@@ -7,9 +7,9 @@ routes:
   default: '/doc_use_git'
 ---
 
-Il est bien sûr possible de contribuer directement sur la documentation de YunoHost, mais ce n’est pas la manière la plus pratique de le faire tant pour le·la contributeur·rice que pour la personne qui va injecter votre contribution dans la documentation. Voici un tutoriel pour comprendre et créer une contribution à la documentation de YunoHost en utilisant l’outil [Git (en)](https://git-scm.com/) et [github.com](http://github.com/) qui est le service de forge Git qui héberge et stocke le code source de YunoHost ainsi que sa documentation.
+Il est bien sûr possible de contribuer directement sur la documentation de YunoHost, mais ce n’est pas la manière la plus pratique de le faire tant pour le·la contributeur·rice que pour la personne qui va injecter votre contribution dans la documentation. Voici un tutoriel pour comprendre et créer une contribution à la documentation de YunoHost en utilisant l’outil [Git (en)](https://git-scm.com/) et [GitHub.com](http://github.com/) qui est le service de forge Git qui héberge et stocke le code source de YunoHost ainsi que sa documentation.
 
-## Création d’un compte sur github.com
+## Création d’un compte sur GitHub.com
 
 Pour pouvoir envoyer vos contributions via GitHub, il est nécessaire d’avoir un compte sur GitHub. Pour créer le compte vous aurez besoin d’une adresse e-mail valide à laquelle vous avez accès. GitHub est un outil puissant qui propose de nombreuses fonctionnalités, l’interface peut être un peu effrayante au début.
 Vous n’êtes pas obligé·e de donner vos noms et prénoms, vous pouvez utiliser un pseudonyme (lors de l’inscription `Username`).
@@ -44,7 +44,7 @@ Lorsque vous avez déjà fait une PR (Pull Request), les modifications de votre 
 
 ## Faire remonter des erreurs et des souhaits par des issues
 
-YunoHost dispose d’un dépôt Git spécifique pour le recueil des issues : [github.com/YunoHost/issues](https://github.com/YunoHost/issues)
+YunoHost dispose d’un dépôt Git spécifique pour le recueil des issues : [GitHub.com/YunoHost/issues](https://github.com/YunoHost/issues)
 Une issue aussi appelé ticket, est un problème identifié ou alors un souhait de développement ; dans le cas présent pour la documentation, mais c’est valable pour tout dépôt logiciel. Dans le cadre de la documentation de YunoHost il sera surtout proposé des issues pour le développement de la documentation, les problèmes identifiés étant facilement corrigeables.
 
 ## Aller plus loin avec Git et travailler sur son poste de travail

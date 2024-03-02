@@ -11,7 +11,7 @@ routes:
 
 *Trouvez la liste d’autres fournisseurs d’accès à Internet **[ici](/isp)**.*
 
-#### Le courrier électronique
+## Le courrier électronique
 
 La box d’Orange bloque le port 25 pour limiter l’envoi de spam.
 
@@ -38,7 +38,7 @@ redémarrez Postfix :
 sudo service postfix restart
 ```
 
-##### Problèmes
+### Problèmes
 
 Si vous avez une erreur "Authentification requise", la solution est la suivante : **[source](http://viruslocker.free.fr/?page_id=1749)**.
 

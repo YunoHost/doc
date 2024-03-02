@@ -7,9 +7,9 @@ routes:
   default: '/doc_use_git'
 ---
 
-It is of course possible to contribute directly to the YunoHost documentation, but this is not the most convenient way to do so for both the contributor and the person who will inject your contribution into the documentation. Here is a tutorial to understand and create a contribution to the YunoHost documentation using [Git](https://git-scm.com/) and [github.com](http://github.com/) which is the Git forge service that hosts and stores the YunoHost source code and documentation.
+It is of course possible to contribute directly to the YunoHost documentation, but this is not the most convenient way to do so for both the contributor and the person who will inject your contribution into the documentation. Here is a tutorial to understand and create a contribution to the YunoHost documentation using [Git](https://git-scm.com/) and [GitHub.com](http://github.com/) which is the Git forge service that hosts and stores the YunoHost source code and documentation.
 
-## Create an account on github.com
+## Create an account on GitHub.com
 
 To be able to send your contributions via GitHub, you need to have an account on GitHub, to create the account you will need a valid email address that you have access to. GitHub is a powerful tool with many features, the interface can be a little scary at first.
 You don't have to give your first and last names, you can use a nickname (when you register `Username`).
@@ -24,7 +24,7 @@ In the title of the new repository, you will see where the repository comes from
 ![Screenshots title and subtitle of the repository](image://github_fork_title.png)
 
 > **Point of vigilance !**
-> If you forge the repository of another contributor than yunohost, you'll get the same files. Except that when you send your changes, they will be sent to the contributor and not to the yunohost repository. The advantage is that it allows you to develop another branch created by the contributor and work with another person on an improvement before submitting it to the main repository.
+> If you forge the repository of another contributor than YunoHost, you'll get the same files. Except that when you send your changes, they will be sent to the contributor and not to the YunoHost repository. The advantage is that it allows you to develop another branch created by the contributor and work with another person on an improvement before submitting it to the main repository.
 > It is not possible to have a fork from a contributor's repository and the original repository fork at the same time in your own account.
 
 ## Modify and add your contribution
@@ -42,7 +42,7 @@ When you've already create a Pull Request (PR), changes to your development bran
 
 ## Bringing up mistakes and wishes through issues
 
-YunoHost has a specific Git repository to collect issues: [github.com/YunoHost/issues](https://github.com/YunoHost/issues)
+YunoHost has a specific Git repository to collect issues: [GitHub.com/YunoHost/issues](https://github.com/YunoHost/issues)
 An issue, also called a ticket, is an identified problem or a development wish; in this case for documentation, but it is valid for any software repository. Within the framework of the YunoHost documentation it will be mainly proposed issues for the development of the documentation, the identified problems being easily correctable.
 
 ## Going further with Git and working on your workstation

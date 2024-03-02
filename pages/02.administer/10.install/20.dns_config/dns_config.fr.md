@@ -23,7 +23,7 @@ domaine via l'interface de votre registrar.
 
 ## Configuration DNS recommandée
 
-_NB : les exemples utilisent ici le texte `votre.domaine.tld`, à remplacer par votre propre domaine (par exemple `www.yunohost.org`)._
+*NB : les exemples utilisent ici le texte `votre.domaine.tld`, à remplacer par votre propre domaine (par exemple `www.yunohost.org`).*
 
 YunoHost fournit une configuration DNS recommandée, accessible via :
 
@@ -86,7 +86,7 @@ suivante :
 |   TXT   |  mail._domainkey       |  `"v=DKIM1; k=rsa; p=uneGrannnndeClef"`                |
 |   TXT   |  _dmarc                |  `"v=DMARC1; p=none"`                                  |
 
-#### Quelques notes à propos de cette table
+### Quelques notes à propos de cette table
 
 - Tous ces enregistrements ne sont pas nécessaires. Pour une installation minimale, seuls les enregistrements en gras sont nécessaires ;
 - Le point à la fin de `votre.domaine.tld.` est important ;) ;
@@ -110,8 +110,8 @@ Cela signifie que si votre adresse IPv4 publique est `111.222.333.444` et que
 votre nom de domaine est `domain.tld`, vous devez obtenir le résultat suivant
 en utilisant la commande `nslookup` :
 
-```shell
-$ nslookup 111.222.333.444
+```bash
+nslookup 111.222.333.444
 444.333.222.111.in-addr.arpa    name = domain.tld.
 ```
 

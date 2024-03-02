@@ -7,7 +7,7 @@ routes:
   default: '/domains'
 ---
 
-Yunohost permette l'installazione e la gestione di più domini sullo stesso server. Potrete quindi ospitare, ad esempio, un blog e una istanza Nextcloud sul dominio primario yolo.com, e un altro servizio su un secondo dominio swag.nohost.me. Ogni dominio viene automaticamente configurato affinché possa gestire i servizi web, le mail, e un servizio di chat XMPP.
+YunoHost permette l'installazione e la gestione di più domini sullo stesso server. Potrete quindi ospitare, ad esempio, un blog e una istanza Nextcloud sul dominio primario yolo.com, e un altro servizio su un secondo dominio swag.nohost.me. Ogni dominio viene automaticamente configurato affinché possa gestire i servizi web, le mail, e un servizio di chat XMPP.
 
 I domini possono essere configurati a partire dalla sezione 'Domini' della pagina di amministrazione web, o attraverso la sezione `yunohost domain` da linea di comando.
 

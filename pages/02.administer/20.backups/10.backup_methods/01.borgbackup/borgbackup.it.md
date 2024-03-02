@@ -22,7 +22,7 @@ con BorgBackup potrete:
 - definire i tipi di dati da copiare e la frequenza di backup
 - ricevere una mail di allerta in caso di fallimento del backup
 
-Oltre ai [fornitori terzi di repository](https://www.borgbackup.org/support/commercial.html), vi è la possibilità di hostare il proprio repository su una differente installazione yunohost con installata l'[applicazione borgserver](https://github.com/YunoHost-Apps/borgserver_ynh).
+Oltre ai [fornitori terzi di repository](https://www.borgbackup.org/support/commercial.html), vi è la possibilità di hostare il proprio repository su una differente installazione YunoHost con installata l'[applicazione borgserver](https://github.com/YunoHost-Apps/borgserver_ynh).
 
 Il futuro metodo di backup integrato in YunoHost sarà basato su BorgBackup
 

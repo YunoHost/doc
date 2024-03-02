@@ -19,7 +19,7 @@ La interfaz de línea de comandos (CLI) es, en informática, la manera original 
 
 ## Durante la instalación de YunoHost
 
-#### Encontrar su IP
+### Encontrar su IP
 
 Si instalas YunoHost en un VPS, tu proveedor debería haberte comunicado la dirección IP de tu servidor.
 
@@ -29,7 +29,7 @@ Si instalas un servidor en tu casa (por ejemplo en Raspberry Pi u OLinuXino), ti
 - utiliza la interfaz de tu router caja internet para listar las máquinas conectadas, o mira los los ;
 - conecta una pantalla en tu servidor, inicia una sesión y escribe `hostname --all-ip-address`.
 
-#### Conectarse
+### Conectarse
 
 Suponiendo que tu dirección IP sea `111.222.333.444`, abre una terminal y escribe :
 
@@ -41,7 +41,7 @@ Ahora te piden una contraseña. Si es un VPS, tu proveedor ya te hará comunicad
 
 ! Desde YunoHost 3.4, después de la post-instalación ya no es posible conectarse con el usuario `root`. En lugar de eso, hace falta **conectarse con el usuario `admin`**. Incluso si el servidor LDAP fuera quebrado (haciendo que el usuario `admin` ya no fuera utilizable) todavía deberías poder conectarte con el usuario `root` desde la red local.
 
-#### ¡ Cambiar la contraseña root
+### ¡ Cambiar la contraseña root
 
 Después de haberte conectado por primera vez, tienes que cambiar la contraseña `root`. Tal vez el servidor te pida automáticamente que lo hagas. Si no es el caso, hay que utilizar el comando `passwd`. Es muy importante que elijas una contraseña bastante complicada. Nota que esta contraseña luego estará reemplazada por la contraseña admin elegida durante la post-instalación.
 

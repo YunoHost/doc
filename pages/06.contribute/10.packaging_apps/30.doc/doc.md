@@ -20,7 +20,7 @@ This description and screenshot will be shown when the admin open the catalog pa
 
 You can also add translated versions of the `.md` file in, for example, `doc/DESCRIPTION_fr.md`, `_es.md`, `_it.md`, etc.
 
-If your app repository is part of the YunoHost-Apps org, the provided description will be used to auto-regenerate the README.md of your github repo via `yunohost-bot`.
+If your app repository is part of the YunoHost-Apps org, the provided description will be used to auto-regenerate the README.md of your GitHub repo via `yunohost-bot`.
 
 ## Specific notes for admins : `doc/ADMIN.md`, `doc/<whatever>.md`
 

@@ -32,7 +32,7 @@ Um ein neues Konto in Thunderbird manuell zu konfigurieren, fügen Sie die Konto
 ![](image://thunderbird_config_1.png?resize=900)
 ![](image://thunderbird_config_2.png?resize=900)
 
-* [Alias-Mails verwalten](https://support.mozilla.org/de/kb/configuring-email-aliases)
+- [Alias-Mails verwalten](https://support.mozilla.org/de/kb/configuring-email-aliases)
 
 [/ui-tab]
 [ui-tab title="K-9 Mail"]
@@ -53,7 +53,7 @@ Führen Sie die folgenden Schritte aus. (Wie bei Thunderbird müssen Sie möglic
 
 Beim ersten Mal können Sie einfach "Konto hinzufügen" wählen. Wenn Sie bereits ein Konto eingerichtet haben, tippen Sie auf das Hamburger-Menü, dann auf das Zahnrad, wählen Sie Mail, Konten und drücken Sie das '+'-Symbol.
 
-Dann wählen Sie IMAP. Füllen Sie die Felder aus und drücken Sie auf Weiter. Jetzt sucht Dekko nach der Konfiguration. Überprüfen Sie, ob alle Felder korrekt ausgefüllt sind. Vergewissern Sie sich, dass Sie Ihren yunohost-Benutzernamen und NICHT Ihre Mailadresse eingeben und wählen Sie "Nicht vertrauenswürdige Zertifikate zulassen". Tun Sie dies für IMAP und SMTP und drücken Sie auf Weiter. Dekko wird nun das Konto synchronisieren, danach sind Sie fertig. Herzlichen Glückwunsch!
+Dann wählen Sie IMAP. Füllen Sie die Felder aus und drücken Sie auf Weiter. Jetzt sucht Dekko nach der Konfiguration. Überprüfen Sie, ob alle Felder korrekt ausgefüllt sind. Vergewissern Sie sich, dass Sie Ihren YunoHost-Benutzernamen und NICHT Ihre Mailadresse eingeben und wählen Sie "Nicht vertrauenswürdige Zertifikate zulassen". Tun Sie dies für IMAP und SMTP und drücken Sie auf Weiter. Dekko wird nun das Konto synchronisieren, danach sind Sie fertig. Herzlichen Glückwunsch!
 
 ![](image://dekko_config_1.png?resize=280&classes=inline)
 ![](image://dekko_config_2.png?resize=280&classes=inline)

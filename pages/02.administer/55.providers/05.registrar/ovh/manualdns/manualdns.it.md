@@ -47,7 +47,7 @@ ddclient si occuperà di avvisare OVH quando il vostro IP cambierà e OVH adatte
 
 Nel file di configurazione di ddclient dovrete aggiungere:
 
-* il vostro user e la vostra password DynHost
-* il nome del vostro dominio
+- il vostro user e la vostra password DynHost
+- il nome del vostro dominio
 
 Seguite anche questa [guida creata da OVH](https://docs.ovh.com/fr/fr/web/domains/utilisation-dynhost/).

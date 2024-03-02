@@ -12,7 +12,7 @@ page-toc:
 
 !! Images are missing on this page
 
-Lo strumento di backup di Yunohost salva solamente i files utili e si basa su degli script di ripristino per reinstallare le dipendenze dei vostri programmi installati. In altre parole, il ripristino di YunoHost prevede in un primo tempo la reinstallazione del sistema e in seguito il ripristino dei dati.
+Lo strumento di backup di YunoHost salva solamente i files utili e si basa su degli script di ripristino per reinstallare le dipendenze dei vostri programmi installati. In altre parole, il ripristino di YunoHost prevede in un primo tempo la reinstallazione del sistema e in seguito il ripristino dei dati.
 
 Realizzare un'immagine completa può essere un metodo, complementare o alternativo, per un backup del vostro server. Il vantaggio sta nel fatto che il vostro server può essere ripristinato nella stessa configurazione presente al momento del backup.
 

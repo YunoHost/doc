@@ -7,7 +7,7 @@ routes:
   default: '/faq'
 ---
 
-#### Con quale licenza è rilasciato Yunohost?
+#### Con quale licenza è rilasciato YunoHost?
 
 I pacchetti che si trovano in YunoHost sono rilasciati con licenza GNU AGPL v.3.
 

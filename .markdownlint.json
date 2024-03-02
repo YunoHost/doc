@@ -54,9 +54,10 @@
         "code_blocks": false,
         "names": [
             "YunoHost",
-            "Debian",
             "GitHub"
         ]
     },
-    "line-length": false
+    "line-length": false,
+    "no-reversed-links": false,
+    "no-missing-space-atx": false
 }

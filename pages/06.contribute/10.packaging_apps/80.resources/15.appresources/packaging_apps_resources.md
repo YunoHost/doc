@@ -30,7 +30,7 @@ extras.yarn.packages = ["yarn"]
 ##### Properties
 
 - `packages`: List of packages to be installed via `apt`
-- `packages_from_raw_bash`: A multi-line bash snippet (using triple quotes as open/close) which should echo additional packages to be installed. Meant to be used for packages to be conditionally installed depending on architecture, debian version, install questions, or other logic.
+- `packages_from_raw_bash`: A multi-line bash snippet (using triple quotes as open/close) which should echo additional packages to be installed. Meant to be used for packages to be conditionally installed depending on architecture, Debian version, install questions, or other logic.
 - `extras`: A dict of (repo, key, packages) corresponding to "extra" repositories to fetch dependencies from
 
 ##### Provision/Update
@@ -306,7 +306,7 @@ Or more complex examples with several element, including one with asset that dep
 
 ###### Regarding `autoupdate`
 
-Strictly speaking, this has nothing to do with the actual app install. `autoupdate` is expected to contain metadata for automatic maintenance / update of the app sources info in the manifest. It is meant to be a simpler replacement for "autoupdate" Github workflow mechanism.
+Strictly speaking, this has nothing to do with the actual app install. `autoupdate` is expected to contain metadata for automatic maintenance / update of the app sources info in the manifest. It is meant to be a simpler replacement for "autoupdate" GitHub workflow mechanism.
 
 The infos are used by this script : <https://github.com/YunoHost/apps/blob/master/tools/autoupdate_app_sources/autoupdate_app_sources.py> which is ran by the YunoHost infrastructure periodically and will create the corresponding pull request automatically.
 
@@ -326,7 +326,7 @@ And choose one strategy in the following ones:
   - `autoupdate.asset = "some regex"` (when there's only one asset to use). The regex is used to find the appropriate asset among the list of all assets
   - or several `autoupdate.asset.$arch = "some_regex"` (when the asset is arch-specific). The regex is used to find the appropriate asset for the specific arch among the list of assets
 - `latest_<gitforge>_tag` : look for the latest tag (by sorting tags and finding the "largest" version). Then using the corresponding tar.gz url. Tags containing `rc`, `beta`, `alpha`, `start` are ignored, and actually any tag which doesn't look like `x.y.z` or `vx.y.z`
-- `latest_<gitforge>_commit` : will use the latest commit on github, and the corresponding tarball. If this is used for the 'main' source, it will also assume that the version is YYYY.MM.DD corresponding to the date of the commit.
+- `latest_<gitforge>_commit` : will use the latest commit on GitHub, and the corresponding tarball. If this is used for the 'main' source, it will also assume that the version is YYYY.MM.DD corresponding to the date of the commit.
 
 It is also possible to define `autoupdate.upstream` to use a different Git repository instead of the code repository from the upstream section of the manifest. This can be useful when, for example, the app uses other assets such as plugin from a different repository.
 
