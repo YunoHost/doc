@@ -70,27 +70,27 @@ Select the hardware on which you want install YunoHost :
 [div class="flex-container"]
 
 [div class="flex-child hardware{%if virtualbox %} active{% endif %}"]
-[[figure caption="VirtualBox"]![][image://virtualbox.png?height=75](/figure)](/install/hardware:virtualbox)
+[[figure caption="VirtualBox"]![](image://virtualbox.png?height=75)[/figure]](/install/hardware:virtualbox)
 [/div]
 
 [div class="flex-child hardware{%if rpi012 or rpi34 %} active{% endif %}"]
-[[figure caption="Raspberry Pi"]![][image://raspberrypi.png?height=75](/figure)](/install/hardware:rpi34)
+[[figure caption="Raspberry Pi"]![](image://raspberrypi.png?height=75)[/figure]](/install/hardware:rpi34)
 [/div]
 
 [div class="flex-child hardware{%if arm_sup or (arm_unsup and not rpi012) or internetcube %} active{% endif %}"]
-[[figure caption="ARM board"]![][image://olinuxino.png?height=75](/figure)](/install/hardware:arm)
+[[figure caption="ARM board"]![](image://olinuxino.png?height=75)[/figure]](/install/hardware:arm)
 [/div]
 
 [div class="flex-child hardware{%if regular %} active{% endif %}"]
-[[figure caption="Regular computer"]![][image://computer.png?height=75](/figure)](/install/hardware:regular)
+[[figure caption="Regular computer"]![](image://computer.png?height=75)[/figure]](/install/hardware:regular)
 [/div]
 
 [div class="flex-child hardware{%if wsl %} active{% endif %}"]
-[[figure caption="WSL"]![][image://wsl.png?height=75](/figure)](/install/hardware:wsl)
+[[figure caption="WSL"]![](image://wsl.png?height=75)[/figure]](/install/hardware:wsl)
 [/div]
 
 [div class="flex-child hardware{%if vps_debian or vps_ynh %} active{% endif %}"]
-[[figure caption="Remote server"]![][image://vps.png?height=75](/figure)](/install/hardware:vps_debian)
+[[figure caption="Remote server"]![](image://vps.png?height=75)[/figure]](/install/hardware:vps_debian)
 [/div]
 
 [/div]
@@ -98,34 +98,34 @@ Select the hardware on which you want install YunoHost :
 
 {% if rpi012 or rpi34 %}
 [div class="flex-child hardware{%if rpi34 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 3 or 4"]![][image://raspberrypi.png?height=50](/figure)](/install/hardware:rpi34)
+[[figure caption="Raspberry Pi 3 or 4"]![](image://raspberrypi.png?height=50)[/figure]](/install/hardware:rpi34)
 [/div]
 
 [div class="flex-child hardware{%if rpi012 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 0, 1 or 2"]![][image://rpi1.png?height=50](/figure)](/install/hardware:rpi012)
+[[figure caption="Raspberry Pi 0, 1 or 2"]![](image://rpi1.png?height=50)[/figure]](/install/hardware:rpi012)
 [/div]
 
 {% elseif show_legacy_arm_menu %}
 
 [div class="flex-child hardware{%if internetcube %} active{% endif %}"]
-[[figure caption="Internet cube With VPN"]![][image://internetcube.png?height=50](/figure)](/install/hardware:internetcube)
+[[figure caption="Internet cube With VPN"]![](image://internetcube.png?height=50)[/figure]](/install/hardware:internetcube)
 [/div]
 
 [div class="flex-child hardware{%if arm_sup and not internetcube %} active{% endif %}"]
-[[figure caption="Olinuxino lime1&2 or Orange Pi PC+"]![][image://olinuxino.png?height=50](/figure)](/install/hardware:arm_sup)
+[[figure caption="Olinuxino lime1&2 or Orange Pi PC+"]![](image://olinuxino.png?height=50)[/figure]](/install/hardware:arm_sup)
 [/div]
 
 [div class="flex-child hardware{%if arm_unsup %} active{% endif %}"]
-[[figure caption="Others boards"]![][image://odroidhc4.png?height=50](/figure)](/install/hardware:arm_unsup)
+[[figure caption="Others boards"]![](image://odroidhc4.png?height=50)[/figure]](/install/hardware:arm_unsup)
 [/div]
 {% elseif vps_debian or vps_ynh %}
 
 [div class="flex-child hardware{%if vps_debian %} active{% endif %}"]
-[[figure caption="VPS or dedicated server with Debian 11"]![][image://debian-logo.png?height=50](/figure)](/install/hardware:vps_debian)
+[[figure caption="VPS or dedicated server with Debian 11"]![](image://debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
 [/div]
 
 [div class="flex-child hardware{%if vps_ynh %} active{% endif %}"]
-[[figure caption="VPS or dedicated server with YunoHost pre-installed"]![][image://logo.png?height=50](/figure)](/install/hardware:vps_ynh)
+[[figure caption="VPS or dedicated server with YunoHost pre-installed"]![](image://logo.png?height=50)[/figure]](/install/hardware:vps_ynh)
 [/div]
 
 {% endif %}
