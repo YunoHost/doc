@@ -27,7 +27,7 @@ After upgrading to 4.4.x, go to Tools > Migrations to access the migrations inte
 
 ### From the command line
 
-After upgrading to 4.4.x, run :
+After upgrading to 4.4.x, run:
 
 ```bash
 sudo yunohost tools migrations run

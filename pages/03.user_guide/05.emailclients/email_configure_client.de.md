@@ -25,7 +25,7 @@ Hier sind die Elemente, die Sie eingeben sollten, um Ihren Mail-Client manuell z
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Mozilla Thunderbird"]
 
-##### ![](image://thunderbird.png?resize=50&classes=inline) Mozilla Thunderbird konfigurieren (auf einem Desktop-Computer)
+#### ![](image://thunderbird.png?resize=50&classes=inline) Mozilla Thunderbird konfigurieren (auf einem Desktop-Computer)
 
 Um ein neues Konto in Thunderbird manuell zu konfigurieren, fügen Sie die Kontoinformationen hinzu und wählen dann Port 993 mit SSL/TLS für IMAP und Port 587 mit STARTTLS für SMTP. Wählen Sie anschließend "Normales Passwort" für die Authentifizierung und klicken Sie auf "Erweiterte Konfiguration". Möglicherweise müssen Sie die Zertifikatsausnahmen für das Abrufen von E-Mails und nach dem Senden Ihrer ersten E-Mail akzeptieren. Vergessen Sie nicht, den Punkt vor dem Domainnamen zu entfernen.
 
@@ -37,7 +37,7 @@ Um ein neues Konto in Thunderbird manuell zu konfigurieren, fügen Sie die Konto
 [/ui-tab]
 [ui-tab title="K-9 Mail"]
 
-##### ![](image://k9mail.png?resize=50&classes=inline) K-9 Mail konfigurieren (auf Android)
+#### ![](image://k9mail.png?resize=50&classes=inline) K-9 Mail konfigurieren (auf Android)
 
 Führen Sie die folgenden Schritte aus. (Wie bei Thunderbird müssen Sie möglicherweise an einigen Stellen Zertifikate akzeptieren)
 
@@ -49,7 +49,7 @@ Führen Sie die folgenden Schritte aus. (Wie bei Thunderbird müssen Sie möglic
 [/ui-tab]
 [ui-tab title="Dekko"]
 
-##### ![](image://dekko-app.png?resize=50&classes=inline) Dekko konfigurieren (auf Ubuntu Touch)
+#### ![](image://dekko-app.png?resize=50&classes=inline) Dekko konfigurieren (auf Ubuntu Touch)
 
 Beim ersten Mal können Sie einfach "Konto hinzufügen" wählen. Wenn Sie bereits ein Konto eingerichtet haben, tippen Sie auf das Hamburger-Menü, dann auf das Zahnrad, wählen Sie Mail, Konten und drücken Sie das '+'-Symbol.
 

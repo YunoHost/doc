@@ -38,7 +38,7 @@ L’application est alors accessible via `blog.mondomaine.fr` (et non via `mondo
 ### Déplacer une application sur un sous-domaine ?
 
 Que se passe-t-il si on a déjà installé l’application ? On veut par exemple passer de `mondomaine.fr/wordpress` à `blog.mondomaine.fr`.
-Pour l’instant il n’y a pas de façon simple (via l’interface graphique de l’administration de YunoHost) pour déplacer une application sur un sous-domaine.
+Pour l’instant il n’y a pas de façon simple (via l’interface graphique de l’administration de YunoHost : Applications > nom_de_lapp > Modifier l’URL) pour déplacer une application sur un sous-domaine.
 
 Solution : réinstaller l’application
 

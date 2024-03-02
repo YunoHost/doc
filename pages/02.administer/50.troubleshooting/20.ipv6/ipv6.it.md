@@ -31,7 +31,7 @@ Poi puoi modificare il file di configurazione (`/etc/network/interfaces`) come i
 
 ! In questo esempio si assume che il nome della tua interfaccia di rete sia `eth0`. Nel caso invece che sia differente (controlla con il comando `ip a`) devi adattare di conseguenza l'esempio qui sotto.
 
-```plaintext
+```text
 iface eth0 inet6 static
 address <your IPv6 address>
 netmask <your IPv6 prefix>

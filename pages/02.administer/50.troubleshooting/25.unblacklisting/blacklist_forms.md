@@ -67,6 +67,6 @@ You can find a tool to test your IP, advices, explanation of error code and a wa
 
 If you use your own domains and think that some mails are sent by unauthorized servers (so without SPF/DKIM), you  get report about this mail with.
 
-```dns
+```text
 _dmarc.DOMAIN 3600 IN TXT "v=DMARC1; p=none; fo=1; rua=mailto:example@domain.tld!10m"
 ```

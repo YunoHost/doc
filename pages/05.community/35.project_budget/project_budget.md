@@ -18,7 +18,7 @@ routes:
 
 - Development: 20K€
 - Server renting: 500€
-  - VPS Scaleway: 20.33-12: 243.96€/year
+  - VPS Scaleway: 20.33*12: 243.96€/year
   - VPS Digital O. (forum): 172.80€/year
 - Domain names: ~150€
   - `nohost.me`: 11.99€HT/year
@@ -36,4 +36,4 @@ routes:
 - Bank account fees: 7x12€ => ~100€
 - Brique Camp: 500€
 
---Balance 2020-2021--: +650€
+**Balance 2020-2021**: +650€

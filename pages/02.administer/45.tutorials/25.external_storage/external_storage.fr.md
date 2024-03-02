@@ -127,7 +127,7 @@ mount /dev/VOTRE_DISQUE1 /mnt/hdd
 
 (Ici, `/dev/VOTRE_DISQUE1` correspond à la première partition sur le disque)
 
-## 5. Monter un dossier de /mnt/hdd sur un des dossiers dont on veut déplacer les données
+## 5. Monter un dossier de `/mnt/hdd` sur un des dossiers dont on veut déplacer les données
 
 Ici on va considérer que vous souhaitez déplacer les grosses données des applications qui se trouvent dans `/home/yunohost.app` ainsi que les mails sur votre disque dur.
 
@@ -248,6 +248,6 @@ rm -Rf /home/yunohost.app.bkp
 rm -Rf /var/mail.bkp
 ```
 
-## ![](image://tada.png?resize=32&classes=inline) Félicitations
+## ![](image://tada.png?resize=32&classes=inline) Félicitations !
 
 Si vous êtes arrivé jusqu'ici sans dommage, vous avez désormais un serveur qui tire parti d'un ou de plusieurs disques de stockage.

@@ -141,6 +141,7 @@ Select the hardware on which you want install YunoHost :
 ## [fa=list-alt /] Pre-requisites
 
 {% if regular %}
+
 - A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop with 512MB RAM and 16GB capacity (at least)
 {% elseif rpi34 %}
 - A Raspberry Pi 3 or 4
@@ -230,7 +231,7 @@ sudo apt dist-upgrade
 
 Edit `/etc/wsl.conf` and put the following code in it:
 
-```
+```text
 [network]
 generateHosts = false
 generateResolvConf = false
@@ -300,14 +301,14 @@ Always call `genie -s` while starting your distro.
 
 As said before, there is no rollback capability. So let's export your fresh distro. In PowerShell:
 
-```
+```bash
 cd ~
 wsl --export YunoHost .\WSL\YunoHost.tar.gz
 ```
 
 ### In case of crash, delete and restore the whole distro
 
-```
+```bash
 cd ~
 wsl --unregister YunoHost
 wsl --import YunoHost .\WSL\YunoHost .\WSL\YunoHost.tar.gz --version 2
@@ -481,7 +482,7 @@ Ventoy will be useful if you can't sucessfully boot the YunoHost image using the
 
 1. Install [Ventoy](https://www.ventoy.net/) on the USB stick. Refer to the [install instructions](https://www.ventoy.net/en/doc_start.html).
     - This will create 2 partitions on the stick.
-3. Using your favorite file explorer app, copy the YunoHost image file on the big `Ventoy` partition (not "VTOYEFI")
+2. Using your favorite file explorer app, copy the YunoHost image file on the big `Ventoy` partition (not "VTOYEFI")
     - Don't use *Balena Etcher*, USBImager or `dd` for this!
 
 Later, when you'll boot the computer using this usb stick, Ventoy will appear and will list the images on the USB stick. Select the YunoHost image, then select GRUB2 launch option (or use whichever works for your computer 😉)
@@ -593,7 +594,7 @@ If you have one or more hard drives to store data, you can choose to mount it on
 | `/home/yunohost.backup/archives` | YunoHost backups to be placed ideally elsewhere than on the disks that manage the data |
 | `/home/yunohost.app` | Heavy data from YunoHost applications (nextcloud, matrix...) |
 | `/home/yunohost.multimedia` | Heavy data shared between several applications |
-| `/var/mail` | User mail
+| `/var/mail` | User mail |
 
 If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/external_storage).
 
@@ -625,7 +626,7 @@ However, it is possible to fix by yourself the image before to run the initial c
 
 To achieve this, you need to connect on your raspberry pi as root user [via SSH](/ssh) with the temporary password `yunohost`:
 
-```
+```bash
 ssh root@yunohost.local
 ```
 
@@ -633,7 +634,7 @@ ssh root@yunohost.local
 
 Then run the following commands to work around the metronome issue:
 
-```
+```bash
 mv /usr/bin/metronome{,.bkp}   
 mv /usr/bin/metronomectl{,.bkp} 
 ln -s /usr/bin/true /usr/bin/metronome
@@ -642,7 +643,7 @@ ln -s /usr/bin/true /usr/bin/metronomectl
 
 And this one to work around the upnpc issue:
 
-```
+```bash
 sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/firewall.py
 ```
 
@@ -654,7 +655,7 @@ sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/fir
 
 Next you need to [find the local IP address of your server](/finding_the_local_ip) to connect as root user [via SSH](/ssh) with the temporary password `1234`.
 
-```
+```bash
 ssh root@192.168.x.xxx
 ```
 
@@ -738,13 +739,13 @@ For example, `ynh.wsl`. The tricky part is advertising this domain to your host.
 
 Alter your `C:\Windows\System32\drivers\etc\hosts` file. You should have a line starting by `::1`, update it or add it if needed to get:
 
-```
+```text
 ::1    ynh.wsl localhost
 ```
 
 If you want to create subdomains, do not forget to add them in the `hosts` file too:
 
-```
+```text
 ::1    ynh.wsl subdomain.ynh.wsl localhost
 ```
 
@@ -784,7 +785,7 @@ To run a diagnosis, go on Web Admin in the Diagnosis section. Click Run initial 
 [/ui-tab]
 [ui-tab title="From the command line"]
 
-```
+```bash
 yunohost diagnosis run
 yunohost diagnosis show --issues --human-readable
 ```
@@ -810,7 +811,7 @@ Go in Domains > Click on your domain > SSL Certificate
 [/ui-tab]
 [ui-tab title="From the command line"]
 
-```
+```bash
 yunohost domain cert install
 ```
 

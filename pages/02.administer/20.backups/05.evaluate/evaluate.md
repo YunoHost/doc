@@ -14,13 +14,13 @@ In the context of self-hosting, backups are an important element to compensate f
 
 ## What is a good backup ?
 
-A good backup consists of at least **3 copies of the data**- (including the original data), on at least **2 separate storages**, in at least **2 separate locations** - (far enough apart) and ideally with 2 separate methods. If your backups are encrypted **these rules also apply to the decryption phrase/key**.
+A good backup consists of at least **3 copies of the data** (including the original data), on at least **2 separate storages**, in at least **2 separate locations** (far enough apart) and ideally with 2 separate methods. If your backups are encrypted **these rules also apply to the decryption phrase/key**.
 
-A good backup is also in many cases, a recent backup, so it takes either a lot of rigor or to **automate*- the process.
+A good backup is also in many cases, a recent backup, so it takes either a lot of rigor or to **automate** the process.
 
 A good backup is checked regularly to ensure the effectiveness and integrity of the data.
 
-Finally, a good backup is one that is **restorable within an acceptable timeframe*- for you. Remember to document your restoration method and to estimate the transfer time of a copy, especially if the Internet connections involved are not symmetrical.
+Finally, a good backup is one that is **restorable within an acceptable timeframe** for you. Remember to document your restoration method and to estimate the transfer time of a copy, especially if the Internet connections involved are not symmetrical.
 
 !!! Example of **a robust and comfortable combination**:
 

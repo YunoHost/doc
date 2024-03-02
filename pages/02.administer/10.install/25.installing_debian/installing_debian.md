@@ -27,7 +27,7 @@ This guide won't go into details on how to boot the Debian installer. You can us
 
 In general, you can simply follow the instructions on screen and use the suggested defaults.
 
-Debian installer will ask for a **hostname** and a **domain name**. You can use “YunoHost” and “YunoHost.local”. It’s not really important since the YunoHost Installer will overwrite those anyway.
+Debian installer will ask for a **hostname** and a **domain name**. You can use `yunohost` and `yunohost.local`. It’s not really important since the YunoHost Installer will overwrite those anyway.
 
 Debian will ask for a **root password**. Make sure you pick a **really long and complex** one and save it to your password manager of choice (Bitwarden, Firefox, etc…) or write it somewhere safe. Remember that this is a server that  will be available on the internet, making it vulnerable to possible attacks so you should be extra safe here!
 
@@ -36,7 +36,7 @@ The installer will also ask for a **user account** and another password. **Impor
 When the install asks about where to install and how to **create disk partitions**, select the option to use the whole disk, unless you know what you're doing.
 
 - Don’t separate the /home, /var or /tmp partitions. Use the option to “keep all files in one partition”.
-- Don’t encrypt any partitions, [as recommended](https://yunohost.org/en/administer/install/hardware:regular#about-encryption))
+- Don’t encrypt any partitions, [as recommended](https://yunohost.org/en/administer/install/hardware:regular#about-encryption)
 
 The installer will ask about **mirrors**. Select a country and server close to your location, or use the default options.
 

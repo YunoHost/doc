@@ -24,10 +24,9 @@ Forker un projet sur GitHub est extrêmement simple, il suffit de cliquer sur le
 Dans le titre du nouveau dépôt, vous verrez de quelle provenance vient le dépôt, dans le cas présent `YunoHost/doc`
 ![Capture d’écran titre et sous-titre du dépot](image://github_fork_title.png)
 
-> **Point de vigilance !**
-
-> Si vous forkez le dépôt d’un·e autre contributeur·rice que YunoHost, vous aurez les mêmes fichiers. Sauf que quand vous enverrez vos modifications, elles seront envoyées au contributeur et non au dépôt YunoHost. L’avantage est que ça vous permet de développer une autre branche créée par le·la contributeur·rice et ainsi travailler avec une autre personne à une amélioration avant proposition au dépôt principal.
-> Il n’est pas possible d’avoir un fork du dépot d’un·e contributeur·rice et le fork dépôt d’origine au même moment dans votre propre dépôt.
+! **Point de vigilance !**
+! Si vous forkez le dépôt d’un·e autre contributeur·rice que YunoHost, vous aurez les mêmes fichiers. Sauf que quand vous enverrez vos modifications, elles seront envoyées au contributeur et non au dépôt YunoHost. L’avantage est que ça vous permet de développer une autre branche créée par le·la contributeur·rice et ainsi travailler avec une autre personne à une amélioration avant proposition au dépôt principal.
+! Il n’est pas possible d’avoir un fork du dépot d’un·e contributeur·rice et le fork dépôt d’origine au même moment dans votre propre dépôt.
 
 ## Modifier et ajouter votre contribution
 

@@ -25,7 +25,7 @@ Here are the element you should enter to manually configure your mail client (`d
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Mozilla Thunderbird"]
 
-##### ![](image://thunderbird.png?resize=50&classes=inline) Configure Mozilla Thunderbird (on a desktop computer)
+#### ![](image://thunderbird.png?resize=50&classes=inline) Configure Mozilla Thunderbird (on a desktop computer)
 
 To manually configure a new account in Thunderbird, add the account information, then select port 993 with SSL/TLS for IMAP, and port 587 with STARTTLS for SMTP. Afterwards select 'Normal Password' for Authentication and click on 'Advanced Config'. You may need to accept the certificate exceptions for fetching mails and after you send your first mail. Don't forget to remove the dot before the domain name.
 
@@ -37,7 +37,7 @@ To manually configure a new account in Thunderbird, add the account information,
 [/ui-tab]
 [ui-tab title="K-9 Mail"]
 
-##### ![](image://k9mail.png?resize=50&classes=inline) Configure K-9 Mail (on Android)
+#### ![](image://k9mail.png?resize=50&classes=inline) Configure K-9 Mail (on Android)
 
 Follow the following steps. (As for Thunderbird, you might need to accept certificates at some points)
 
@@ -49,7 +49,7 @@ Follow the following steps. (As for Thunderbird, you might need to accept certif
 [/ui-tab]
 [ui-tab title="Dekko"]
 
-##### ![](image://dekko-app.png?resize=50&classes=inline) Configure Dekko (on Ubuntu Touch)
+#### ![](image://dekko-app.png?resize=50&classes=inline) Configure Dekko (on Ubuntu Touch)
 
 The first time you can simply choose "Add account". If you already have an account configured, tap the hamburger menu then tap the gear, choose Mail, Accounts and press the '+'-symbol.
 

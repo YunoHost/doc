@@ -127,7 +127,7 @@ mount /dev/miodisco /mnt/hdd
 
 (In questo caso, `/dev/miodisco` corrisponde alla prima partizione del disco)
 
-## 5. Montare una cartella /mnt/hdd nella cartella che contiene i dati da spostare
+## 5. Montare una cartella `/mnt/hdd` nella cartella che contiene i dati da spostare
 
 Ipotizzeremo, di seguito, lo spostamento delle mail e di una notevole quantità di dati delle applicazioni, che si trovano in `/home/yunohost.app`.
 
@@ -248,6 +248,6 @@ rm -Rf /home/yunohost.app.bkp
 rm -Rf /var/mail.bkp
 ```
 
-### ![](image://tada.png?resize=32&classes=inline) Complimenti
+### ![](image://tada.png?resize=32&classes=inline) Complimenti!!!
 
 Se siete giunti fino qui senza incidenti, avete configurato un server che sfrutta uno o più dischi per il salvataggio dei dati.

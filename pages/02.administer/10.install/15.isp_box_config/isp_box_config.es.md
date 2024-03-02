@@ -44,10 +44,10 @@ En la interfaz de administración de tu router/caja/box, tienes que encontrar un
 
 Luego tienes que redirigir cada uno de los puertos listados a continuación hacia la IP local de tu router para que los varios servicios de YunoHost funcionen. Para cada uno de ellos, una redirección 'TCP' es necesaria. En algunas interfaces, tal vez encontrarás referencias a un puerto 'externo' y un puerto 'interno' : en nuestro caso, se trata del mismo número de puerto, que sea interno o externo.
 
-- Web: 80 <small>(HTTP)</small>, 443 <small>(HTTPS)</small>
-- [SSH](/ssh): 22
-- [XMPP](/XMPP): 5222 <small>(clients)</small>, 5269 <small>(servers)</small>
-- [Email](/email): 25, 587 <small>(SMTP)</small>, 993 <small>(IMAP)</small>
+- Web: `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>
+- [SSH](/ssh): `22`
+- [XMPP](/XMPP): `5222` <small>(clients)</small>, `5269` <small>(servers)</small>
+- [Email](/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>
 
 ! [fa=exclamation-triangle /] Algunos proveedores de acceso a Internet bloquean el puerto 25 (mail SMTP) por defecto para luchar con el spam. Otros (más escasos) no permiten utilizar libremente los puertos 80/443. Dependiendo de tu proveedor, puede ser posible de abrir estos puertos en la interfaz... Ver [esta página](/isp) por más informaciones.
 

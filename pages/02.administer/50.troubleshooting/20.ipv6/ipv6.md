@@ -31,7 +31,7 @@ Then, you can edit the configuration file (`/etc/network/interfaces`) with the f
 
 ! In this example, it is assumed that your network interface is `eth0`. If it's different (check with `ip a`) you need to adapt the example below.
 
-```plaintext
+```text
 iface eth0 inet6 static
 address <your IPv6 address>
 netmask <your IPv6 prefix>

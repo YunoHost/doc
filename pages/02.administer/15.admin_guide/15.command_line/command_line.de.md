@@ -40,11 +40,11 @@ Es wird nach einem Passwort gefragt. Handelt es sich um einen VPS, sollte der VP
 
 ! Seit YunoHost 3.4 kann man sich nach dem Ausführen der Postinstallation nicht mehr als `root` anmelden. **Stattdessen sollte man sich mit dem `admin` Benutzer anmelden!** Für den Fall, dass der LDAP-Server defekt und der `admin` Benutzer nicht verwendbar ist, kann man sich eventuell trotzdem noch mit `root` über das lokale Netzwerk anmelden.
 
-### Ändere das Passwort
+### Ändere das Passwort!
 
 Nach dem allerersten Login sollte man das root Passwort ändern. Der Server könnte dazu automatisch auffordern. Falls nicht, ist der Befehl `passwd` zu benutzen. Es ist wichtig, ein einigermaßen starkes Passwort zu wählen. Beachte, dass das root Passwort durch das admin Passwort überschrieben wird, wenn man die Postinstallation durchführt.
 
-### Auf ans Konfigurieren
+### Auf ans Konfigurieren!
 
 Wir sind nun bereit, mit der [Postinstallation](/postinstall) zu beginnen.
 
@@ -108,7 +108,7 @@ Eine ausführlichere Diskussion über Sicherheit & SSH findest du auf der [dedic
 
 !!! Ein vollständiges Tutorial über die Kommandozeile würde den Rahmen der YunoHost-Dokumentation sprengen: Lies dazu am besten ein spezielles Tutorial wie [dieses](https://ryanstutorials.net/linuxtutorial/) oder [dieses](http://linuxcommand.org/). Aber sei versichert, dass du kein CLI-Experte sein musst, um es zu benutzen!
 
-Der Befehl "YunoHost" kann zur Verwaltung deines Servers verwendet werden und führt verschiedene Aktionen aus, die denen des Webadmin ähneln. Der Befehl muss entweder vom `root`-Benutzer oder vom `admin`-Benutzer durch Voranstellen von `sudo` gestartet werden. (ProTip™ : Du kannst `root` mit dem Befehl `sudo su` als `admin` werden).
+Der Befehl `yunohost` kann zur Verwaltung deines Servers verwendet werden und führt verschiedene Aktionen aus, die denen des Webadmin ähneln. Der Befehl muss entweder vom `root`-Benutzer oder vom `admin`-Benutzer durch Voranstellen von `sudo` gestartet werden. (ProTip™ : Du kannst `root` mit dem Befehl `sudo su` als `admin` werden).
 
 YunoHost-Befehle haben normalerweise diese Art von Struktur:
 

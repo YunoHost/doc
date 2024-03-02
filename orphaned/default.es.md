@@ -4,7 +4,7 @@ Esta página todavía no existe, puedes editarla tecleando ```<Escap>``` en tu t
 
 **Nota :** Necesitarás una dirección email para validar tu propuesta.
 
-### Sintaxis
+## Sintaxis
 
 Esta página utiliza la sintaxis Markdown, refiérete a la documentación para más informaciones :
 

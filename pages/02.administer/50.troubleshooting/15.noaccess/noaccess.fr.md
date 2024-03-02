@@ -20,8 +20,8 @@ Vérifier que vous arrivez à accéder au serveur en utilisant son IP globale (q
 - Assurez-vous d'avoir [configuré les redirections de ports](/isp_box_config)
 - Certaines box de FAI ne supportent pas le hairpinning et vous ne pouvez pas accéder à votre serveur depuis l'intérieur du réseau local (sauf à passer par l'IP locale). Pour contourner le problème, vous pouvez utiliser un des moyens suivants:
   - utiliser une connexion cellulaire (4/5G)
-  - modifier le fichier /etc/hosts sur vos équipements
-  - déclarer l'ip locale de YunoHost comme resolveur DNS dans votre routeur (partie DHCP) et ouvrir le port 53 UDP sur votre YunoHost en faisant attention de ne pas activer l'upnp sur le port 53. Surtout, n'ouvrez pas le port 53 de votre routeur.
+  - modifier le fichier `/etc/hosts` sur vos équipements
+  - déclarer l'ip locale de YunoHost comme resolveur DNS dans votre routeur (partie DHCP) et ouvrir le port `53` UDP sur votre YunoHost en faisant attention de ne pas activer l'upnp sur le port `53`. Surtout, n'ouvrez pas le port `53` de votre routeur.
 
 ### Il faut configurer vos enregistrement DNS
 
@@ -85,7 +85,7 @@ Dans certains, cas une mise à jour de votre box a activé l'IPv6, entraînant d
 
 ## La webadmin fonctionne, mais certaines applications web me renvoient une erreur 502
 
-Il est fort probablement que le service correspondant à ces applications soit en panne (typiquement pour les applications PHP, il s'agit de php7.0-fpm ou php7.3-fpm). Vous pouvez alors tenter de relancer le service, et si cela ne fonctionne pas, regarder les logs du service correspondant et/ou [demander de l'aide](/help).
+Il est fort probablement que le service correspondant à ces applications soit en panne (typiquement pour les applications PHP, il s'agit de `php7.0-fpm` ou `php7.3-fpm`). Vous pouvez alors tenter de relancer le service, et si cela ne fonctionne pas, regarder les logs du service correspondant et/ou [demander de l'aide](/help).
 
 ## Vous avez perdu votre mot de passe administrateur ? (ou bien le mot de passe est refusé)
 

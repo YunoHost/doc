@@ -93,7 +93,7 @@ It essentially contains:
   `domain_add(domainName)` in `domain.py`, with the argument `domainName` equal
   to `"some.domain.tld"`.
 
-##### Helpers / coding style
+#### Helpers / coding style
 
 - To handle exceptions, you should raise some `YunohostError()`
 
@@ -141,7 +141,7 @@ It essentially contains:
   string in `locales/en.json`. Don't edit other locales files,
   this will be done using [Weblate](https://translate.yunohost.org/)!
 
-##### Don't forget
+#### Don't forget
 
 - Each time you edit the actionsmap or the Python code, you should restart the YunoHost api:
   `systemctl restart yunohost-api`

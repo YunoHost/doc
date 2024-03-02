@@ -25,7 +25,7 @@ Si vous cherchez quelque chose à implémenter ou un bug à réparer, le bug tra
 
 ### Vue d'ensemble des 4 morceaux principaux de YunoHost
 
-##### Moulinette
+#### Moulinette
 
 C'est un petit framework "fait maison". [Son rôle principal](https://moulinette.readthedocs.io/en/latest/actionsmap.html) est de permettre de construire une API Web et une API en ligne de commande à partir d'un même code Python et d'un schéma YAML que nous appelons [l'actionmap](https://github.com/YunoHost/yunohost/blob/dev/share/actionsmap.yml).
 
@@ -33,7 +33,7 @@ Il prend en charge d'autres mécanismes tels que l'authentification, l'internati
 
 Moulinette dispose de sa propre documentation [ici](https://moulinette.readthedocs.io/en/latest/).
 
-##### YunoHost
+#### YunoHost
 
 C'est le cœur même de YunoHost. Il contient :
 
@@ -43,7 +43,7 @@ C'est le cœur même de YunoHost. Il contient :
 - des [chaînes internationalisées](https://github.com/YunoHost/yunohost/tree/dev/locales)
 - des [tests](https://github.com/YunoHost/yunohost/tree/dev/tests)
 
-##### SSOwat
+#### SSOwat
 
 C'est le système de connexion unique (single sign-on) de YunoHost. Il contient principalement :
 
@@ -52,7 +52,7 @@ C'est le système de connexion unique (single sign-on) de YunoHost. Il contient 
 
 SSOwat est configuré via `/etc/ssowat/conf.json` qui est généré par YunoHost.
 
-##### YunoHost-admin
+#### YunoHost-admin
 
 C'est une dépendance *optionnelle* de YunoHost et correspond à une interface pour l'API web créée par YunoHost et Moulinette (service `yunohost-api`).
 
@@ -72,7 +72,7 @@ Il contient essentiellement :
 
 - Moulinette va automatiquement faire le lien entre les commandes de l'actionsmap et les fonctions Python (ainsi que leurs arguments) dans `src/yunohost/`. Par exemple, `yunohost domain add some.domain.tld` déclenchera un appel de `domain_add(domainName)` dans `domain.py`, avec l'argument  `domainName` qui vaudra `"some.domain.tld"`.
 
-##### Helpers / style de code
+#### Helpers / style de code
 
 - Pour gérer les exceptions, il existe un type `YunohostError()`
 
@@ -97,7 +97,7 @@ Il contient essentiellement :
 
 - Pour l'internationalisation des messages, utilisez `y18n.t('some-string-code')`  dans le JavaScript, ou `{{t 'some-string-code'}}` dans le template HTML, et mettez votre message dans `locales/en.json`. Ne modifiez pas de fichiers de locales autres que `en.json`, la traduction sera faite avec [Weblate](https://translate.yunohost.org/) !
 
-##### N'oubliez pas
+#### N'oubliez pas
 
 - À chaque modification de l'actionsmap, il faut redémarrer l'API YunoHost : `service yunohost-api restart` (Il faudra retaper le mot de passe administrateur dans l'interface web)
 

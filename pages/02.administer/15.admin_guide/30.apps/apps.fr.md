@@ -61,7 +61,7 @@ Si vous voulez apprendre ou contribuer à l'empaquetage des applications, veuill
 
 Dans le contexte de YunoHost, il est assez courant d'avoir un seul (ou quelques) domaines sur lesquels plusieurs applications sont installées dans des "sous-chemins", de sorte que l'on se retrouve avec quelque chose comme ceci :
 
-```bash
+```text
 yolo.com
      ├─── /blog  : Wordpress (un blog)
      ├─── /cloud : Nextcloud (un service de cloud)

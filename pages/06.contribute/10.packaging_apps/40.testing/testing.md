@@ -72,7 +72,7 @@ The two major ones are:
 
 Members of the YunoHost-Apps organization can trigger jobs on the dev CI directly from a pull request simply by commenting something like `!testme` (cf for example [here](https://github.com/YunoHost-Apps/nextcloud_ynh/pull/532#issuecomment-1402751409)). A .png summary of the tests will be automatically displayed once the job completes (and you can click the link to see the entire job execution and debug it).
 
-#### Why create `package_check` + `yunorunner` rather than using well-known solutions like Gitlab-CI ?
+### Why create `package_check` + `yunorunner` rather than using well-known solutions like Gitlab-CI ?
 
 Constrain 1 : Gitlab-CI or other similar solutions are mostly based around Docker, while we use LXC. In particular, we do want to reuse LXC snapshots of successful install during other tests (upgrade, backup/restore, ..) rather than reinstalling the app from scratch everytime, which drastically reduces the test time. We could do so using Gitlab artifacts, but such artifacts are automatically made public which is not convenient because they contain a full filesystem and their only use it to speed up the test process. Moreover, in the Gitlab-CI paradigm, jobs are not running on the same machine and they would need to download the snapshot which can be lengthy. The other mechanism, caching, is explicitly advertised as not reliable in Gitlab's-CI doc. What would be helpful would be some non-public artifact system (see similar discussion [here](https://gitlab.com/gitlab-org/gitlab-runner/-/issues/336))
 

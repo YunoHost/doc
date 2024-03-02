@@ -141,6 +141,7 @@ Wähle die Hardware, auf der du YunoHost installieren willst :
 ## [fa=list-alt /] Pre-requisites
 
 {% if regular %}
+
 - Eine x86-kompatible für YunoHost bestimmte (dedizierte) Hardware: Laptop, Nettop, Netbook, Desktop mit 512MB RAM und 16GB Speicherkapazität (Minimum)
 {% elseif rpi34 %}
 - Ein Raspberry Pi 3 oder 4
@@ -230,7 +231,7 @@ sudo apt dist-upgrade
 
 Bearbeite `/etc/wsl.conf` und füge den folgenden Code darin ein:
 
-```
+```text
 [network]
 generateHosts = false
 generateResolvConf = false
@@ -300,14 +301,14 @@ Rufe `genie -s` immer während des Startes deiner Distro auf.
 
 Wie zuvor gesagt, gibt es keine Rollback Möglichkeit. Lass uns deshal deine frische Distro exportieren. In PowerShell:
 
-```
+```bash
 cd ~
 wsl --export YunoHost .\WSL\YunoHost.tar.gz
 ```
 
 ### Im Falle eines Crash, lösche und stelle die gesamte Distro wieder her
 
-```
+```bash
 cd ~
 wsl --unregister YunoHost
 wsl --import YunoHost .\WSL\YunoHost .\WSL\YunoHost.tar.gz --version 2
@@ -579,7 +580,7 @@ Wenn du über eine oder mehrere Festplatten zum Speichern von Daten verfügst, k
 | `/home/yunohost.backup/archives` | YunoHost-Backups, die idealerweise an anderer Stelle als auf den Datenträgern platziert werden, auf denen die Daten verwaltet werden |
 | `/home/yunohost.app` | Umfangreiche Datenmengen aus YunoHost Apps (nextcloud, matrix...) |
 | `/home/yunohost.multimedia` | Große Datenmenge, die von mehreren Anwendungen gemeinsam genutzt wird |
-| `/var/mail` | User mail
+| `/var/mail` | User mail |
 
 Wenn du Flexibilität haben möchtest und die Größe von Partitionen nicht (verändern) möchtest, kannst du dich auch dafür entscheiden, auf `/mnt/hdd` zu mounten und dieser [Anleitung zum Mounten aller dieser Ordner mit `mount --bind`](/external_storage) zu folgen.
 
@@ -607,17 +608,17 @@ Raspberry Pi 1 und 0 werden aufgrund von [Kompilierungsproblemen für diese Arch
 
 Es ist jedoch möglich, das Image selbst zu reparieren, bevor du die Erstkonfiguration ausführst.
 
-Um das zu erreichen, musst du dich auf deinem Raspberry Pi als Root-Benutzer [über SSH](/ssh) mit dem temporären Passwort „YunoHost“ verbinden:
+Um das zu erreichen, musst du dich auf deinem Raspberry Pi als Root-Benutzer [über SSH](/ssh) mit dem temporären Passwort `yunohost` verbinden:
 
-```
+```bash
 ssh root@yunohost.local
 ```
 
-(oder „YunoHost-2.local“ usw., wenn sich mehrere YunoHost-Server in deinem Netzwerk befinden)
+(oder `yunohost-2.local` usw., wenn sich mehrere YunoHost-Server in deinem Netzwerk befinden)
 
 Führe dann die folgenden Befehle aus, um das Metronomproblem zu umgehen:
 
-```
+```bash
 mv /usr/bin/metronome{,.bkp}   
 mv /usr/bin/metronomectl{,.bkp} 
 ln -s /usr/bin/true /usr/bin/metronome
@@ -626,7 +627,7 @@ ln -s /usr/bin/true /usr/bin/metronomectl
 
 Und diesen hier, um das UpnPC-Problem zu umgehen:
 
-```
+```bash
 sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/firewall.py
 ```
 
@@ -638,7 +639,7 @@ sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/fir
 
 Als nächstes musst du [die lokale IP-Adresse deines Servers finden](/finding_the_local_ip), um dich als Root-Benutzer [über SSH](/ssh) mit dem temporären Passwort `1234` zu verbinden.
 
-```
+```bash
 ssh root@192.168.x.xxx
 ```
 
@@ -722,13 +723,13 @@ Zum Beispiel `ynh.wsl`. Der schwierige Teil besteht darin, diese Domain bei dein
 
 Ändere deine `C:\Windows\System32\drivers\etc\hosts` Datei. Du solltest eine Zeile haben, die mit `::1` beginnt. Aktualisiere sie oder füge sie bei Bedarf hinzu, um Folgendes zu erhalten:
 
-```
+```text
 ::1    ynh.wsl localhost
 ```
 
 Wenn du Subdomains erstellen möchtest, denk daran, diese auch in der Datei `hosts` hinzuzufügen:
 
-```
+```text
 ::1    ynh.wsl subdomain.ynh.wsl localhost
 ```
 
@@ -768,7 +769,7 @@ Um eine Diagnose auszuführen, gehe im Web Admin auf den Abschnitt "Diagnose". K
 [/ui-tab]
 [ui-tab title="In der Kommandozeile"]
 
-```
+```bash
 yunohost diagnosis run
 yunohost diagnosis show --issues --human-readable
 ```

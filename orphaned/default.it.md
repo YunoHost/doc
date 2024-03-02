@@ -4,7 +4,7 @@ Questa pagina non è ancora stata creata, puoi modificarla premendo ```<ESC>``` 
 
 **Nota:** Devi fornire un indirizzo email per confermare le tue modifiche.
 
-### Sintassi
+## Sintassi
 
 Questa pagina usa la sintassi markdown, per favore fai riferimento alla documentazione per ulteriori informazioni:
 

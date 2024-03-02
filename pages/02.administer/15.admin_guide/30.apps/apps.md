@@ -46,7 +46,7 @@ Among specific questions, forms usually ask you to choose a domain and a path on
 
 In the context of YunoHost, it is quite common to have a single (or a few) domains on which several apps are installed in "subpaths", so that you end up with something like this:
 
-```bash
+```text
 yolo.com
      ├── /blog  : Wordpress (a blog)
      ├── /cloud : Nextcloud (a cloud service)

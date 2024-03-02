@@ -25,7 +25,7 @@ After upgrading to 3.8.5.x, go to Tools > Migrations to access the migrations in
 
 ### From the command line
 
-After upgrading to 3.8.5.x, run :
+After upgrading to 3.8.5.x, run:
 
 ```bash
 sudo yunohost tools migrations migrate

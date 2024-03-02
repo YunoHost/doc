@@ -131,6 +131,7 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 ## [fa=list-alt /] Pré-requis
 
 {% if regular %}
+
 - Un matériel compatible x86 dédié à YunoHost : portable, netbook, ordinateur avec 512Mo de RAM et 16Go de capacité de stockage (au moins) ;
 {% elseif rpi34 %}
 - Un Raspberry Pi 3 ou 4 ;
@@ -338,7 +339,7 @@ Ventoy sera utile si vous n'arrivez pas à démarrer l'image de YunoHost en util
 
 1. Installer [Ventoy](https://www.ventoy.net/) sur la clé USB. Référez-vous aux [instructions d'installation](https://www.ventoy.net/en/doc_start.html).
     - Cela va créer 2 partition sur la clé USB.
-3. En utilisant votre application de fichiers préférée, copiez l'image YunoHost sur la grande partition "Ventoy (pas celle "VTOYEFI")
+2. En utilisant votre application de fichiers préférée, copiez l'image YunoHost sur la grande partition "Ventoy (pas celle "VTOYEFI")
     - N'utilisez pas *Balena Etcher*, USBImager ou `dd` pour faire ça!
 
 Insérez cette clé USB dans l'ordinateur et démarrez en utisant celle-ci. Ventoy va apparaitre et lister toutes les images qui sont sur la clé USB. Sélectionnez l'image de YunoHost. Sélectionnez ensuite "GRUB2" comme option de démarrage (ou utilisez n'importe laquelle qui fonctionnera sur votre ordinateur 😉)
@@ -480,7 +481,7 @@ Cependant, il est possible de corriger l'image par vous-même avant de lancer la
 
 Pour y parvenir, vous devez vous connecter à votre Raspberry Pi en tant que root [via SSH](/ssh) avec le mot de passe temporaire `yunohost`:
 
-```
+```bash
 ssh root@yunohost.local
 ```
 
@@ -488,7 +489,7 @@ ssh root@yunohost.local
 
 Ensuite, lancez les commandes suivantes pour contourner le dysfonctionnement de Metronome :
 
-```
+```bash
 mv /usr/bin/metronome{,.bkp}
 mv /usr/bin/metronomectl{,.bkp}
 ln -s /usr/bin/true /usr/bin/metronome
@@ -497,7 +498,7 @@ ln -s /usr/bin/true /usr/bin/metronomectl
 
 Et celle-ci pour contourner celui de upnpc :
 
-```
+```bash
 sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/firewall.py
 ```
 
@@ -509,7 +510,7 @@ sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/fir
 
 Ensuite, il vous faut [trouver l'adresse IP locale de votre serveur](/finding_the_local_ip) pour vous connecter en tant que root [via SSH](/ssh) avec le mot de passe temporaire `1234`.
 
-```
+```bash
 ssh root@192.168.x.xxx
 ```
 
@@ -615,7 +616,7 @@ Pour lancer le diagnostic, allez dans l'Administration Web dans la partie Diagno
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
 
-```
+```bash
 yunohost diagnosis run
 yunohost diagnosis show --issues --human-readable
 ```
@@ -639,7 +640,7 @@ Pour plus d'instructions détaillées, ou pour en savoir plus à propos des cert
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
 
-```
+```bash
 yunohost domain cert install
 ```
 

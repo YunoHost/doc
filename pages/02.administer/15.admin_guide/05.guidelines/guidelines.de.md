@@ -21,7 +21,7 @@ Ist Ihr Ziel, einen Produktionserver zu benutzen, so beachten Sie folgendes :
 - Vorsicht mit inoffiziellen Anwendungen, und verzichten auf solche, die noch "in Bearbeitung" sind, oder einen Level 0 haben ;
 - wenn etwas kaputt geht, überlegen Sie richtig, bevor Sie versuchen, es selbst zu reparieren, wenn Sie nicht wissen, was Sie tun. <small>(z. B., den Admin-Benutzer nicht selbst versuchen neu anzulegen, falls er komischerweise verschwunden ist.)</small>
 
-## Keep it simple
+## Keep it simple !
 
 YunoHost ist für allgemeine und einfache Anwendungsfälle konzipiert. Wenn Sie von diesen Bedingungen abweichen, wird es schwieriger, und Sie benötigen technisches Wissen, um sie zu erfüllen. Zum Beispiel:
 

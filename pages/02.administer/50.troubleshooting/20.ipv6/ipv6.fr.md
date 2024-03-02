@@ -35,7 +35,7 @@ Sur votre VPS, vous allez créer une sauvegarde de votre fichier de configuratio
 ! Découvrir et vérifier avec la commande `ip a` l'interface utilisée sur votre VPS ( généralement du type ENS3 chez OVH)
 ! Dans cet exemple, nous considérons que votre interface réseau est `eth0`. Vous devez adapter l'exemple pour correspondre à votre situation.
 
-```plaintext
+```text
 iface eth0 inet6 static
 address <votre adresse IPv6>
 netmask <votre préfixe IPv6>

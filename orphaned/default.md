@@ -4,7 +4,7 @@ This page is not created yet, you can edit it by pressing ```<ESC>``` on your ke
 
 **Note:** You will need to provide an email address to validate your submission.
 
-### Syntax
+## Syntax
 
 This page use the markdown syntax, please refer to the documentation for further informations:
 

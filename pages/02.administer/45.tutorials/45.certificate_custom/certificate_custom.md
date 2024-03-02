@@ -17,7 +17,7 @@ Some changes have taken place which impact the procedures indicated below:
 ### Adding a signed certificate by an authority (other than Let's Encrypt)
 
 After the certificate creation with your registration authority, you must have a private key, the key file, and a public certificate, the crt file.
-Note that the key file is very sensitive, it is strictly personal and must be very well secured.
+! Note that the key file is very sensitive, it is strictly personal and must be very well secured.
 
 These two files should be copied to the server, if they are not already there.
 
@@ -56,26 +56,26 @@ sudo mv *.pem *.cnf yunohost_self_signed/
 
 Depending on the registration authority, intermediate and root certificates must be obtained.
 
-**StartSSL**
+#### StartSSL
 
 ```bash
 sudo wget http://www.startssl.com/certs/ca.pem -O ae_certs/ca.pem
 sudo wget http://www.startssl.com/certs/sub.class1.server.ca.pem -O ae_certs/intermediate_ca.pem
 ```
 
-**Gandi**
+#### Gandi
 
 ```bash
 sudo wget https://www.gandi.net/static/CAs/GandiStandardSSLCA2.pem -O ae_certs/intermediate_ca.pem
 ```
 
-**RapidSSL**
+#### RapidSSL
 
 ```bash
 sudo wget https://knowledge.rapidssl.com/library/VERISIGN/INTERNATIONAL_AFFILIATES/RapidSSL/AR1548/RapidSSLCABundle.txt -O ae_certs/intermediate_ca.pem
 ```
 
-**Cacert**
+#### Cacert
 
 ```bash
 sudo wget http://www.cacert.org/certs/root.crt -O ae_certs/ca.pem
@@ -141,4 +141,4 @@ Reload NGINX configuration to take into account the new certificate.
 sudo service nginx reload
 ```
 
-Your certificate is ready. However, you can ensure that it is in place by testing the certificate using the <a href="<https://www.geocerts.com/ssl_checker>" target="_blank"geocerts</a.
+Your certificate is ready. However, you can ensure that it is in place by testing the certificate using the <a href="https://www.geocerts.com/ssl_checker" target="_blank">geocerts</a>.

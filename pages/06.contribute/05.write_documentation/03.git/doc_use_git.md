@@ -23,9 +23,9 @@ Forking a project on GitHub is extremely simple, just click on the Fork button, 
 In the title of the new repository, you will see where the repository comes from, in this case `YunoHost/doc`.
 ![Screenshots title and subtitle of the repository](image://github_fork_title.png)
 
-> **Point of vigilance !**
-> If you forge the repository of another contributor than YunoHost, you'll get the same files. Except that when you send your changes, they will be sent to the contributor and not to the YunoHost repository. The advantage is that it allows you to develop another branch created by the contributor and work with another person on an improvement before submitting it to the main repository.
-> It is not possible to have a fork from a contributor's repository and the original repository fork at the same time in your own account.
+! **Point of vigilance !**
+! If you forge the repository of another contributor than YunoHost, you'll get the same files. Except that when you send your changes, they will be sent to the contributor and not to the YunoHost repository. The advantage is that it allows you to develop another branch created by the contributor and work with another person on an improvement before submitting it to the main repository.
+! It is not possible to have a fork from a contributor's repository and the original repository fork at the same time in your own account.
 
 ## Modify and add your contribution
 

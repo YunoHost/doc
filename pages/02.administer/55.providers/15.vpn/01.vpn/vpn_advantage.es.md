@@ -31,10 +31,10 @@ El correo es uno de los protocolos más complejos de autoalojar, normalmente es 
 
 Para evitarlo, necesitas, entre otras cosas:
 
-    -configurar el DNS inverso de la conexión a Internet del servidor (o VPN)
-    -una IPv4 fija
-    -que esta IPv4 sea eliminada de todas las listas negras (en particular, la IP no debe estar en el DUL)
-    -poder abrir el puerto 25 (así como otros puertos SMTP)
+- configurar el DNS inverso de la conexión a Internet del servidor (o VPN)
+- una IPv4 fija
+- que esta IPv4 sea eliminada de todas las listas negras (en particular, la IP no debe estar en el DUL)
+- poder abrir el puerto 25 (así como otros puertos SMTP)
 
 Desgraciadamente, ninguno de los ISP franceses más habituales respeta todos estos puntos.
 
@@ -56,5 +56,5 @@ Cuando se establece una VPN en el servidor, si no se establece una configuració
 
 Para superar este punto, hay dos soluciones:
 
-    -transformando su servidor en un router y conectando su equipo doméstico a él, este equipo se beneficiará también de la confidencialidad de la VPN.
-    -utilizar el servidor de YunoHost como resolvedor de DNS cuando estés en casa, para redirigir los nombres de dominio del servidor a la ip local en lugar de la ip pública. Esta operación puede realizarse en cada dispositivo o en el router (si éste lo permite).
+- transformando su servidor en un router y conectando su equipo doméstico a él, este equipo se beneficiará también de la confidencialidad de la VPN.
+- utilizar el servidor de YunoHost como resolvedor de DNS cuando estés en casa, para redirigir los nombres de dominio del servidor a la ip local en lugar de la ip pública. Esta operación puede realizarse en cada dispositivo o en el router (si éste lo permite).

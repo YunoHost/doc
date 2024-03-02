@@ -84,7 +84,7 @@ Des personnes ont été tentées de comparer le système de packaging de YunoHos
 
 YunoHost manipule des abstractions haut-niveau (apps, domaines, utilisateurs…) et définit un environnement standard (NGINX, Postfix, Metronome, SSOwat...) et, grâce à cela, peut gérer la configuration à la place de l’administrateur.
 
-#### Quand est-ce que [cette fonctionnalité] sera ajoutée ? Pourquoi [cette app] n'a pas encore été packagée ? Je n'en reviens pas que vous ne fassiez pas encore [cela]
+#### Quand est-ce que [cette fonctionnalité] sera ajoutée ? Pourquoi [cette app] n'a pas encore été packagée ? Je n'en reviens pas que vous ne fassiez pas encore [cela] !
 
 Nous ne donnons pas de calendrier.
 

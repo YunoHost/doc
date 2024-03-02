@@ -41,7 +41,7 @@ Ahora te piden una contraseña. Si es un VPS, tu proveedor ya te hará comunicad
 
 ! Desde YunoHost 3.4, después de la post-instalación ya no es posible conectarse con el usuario `root`. En lugar de eso, hace falta **conectarse con el usuario `admin`**. Incluso si el servidor LDAP fuera quebrado (haciendo que el usuario `admin` ya no fuera utilizable) todavía deberías poder conectarte con el usuario `root` desde la red local.
 
-### ¡ Cambiar la contraseña root
+### ¡ Cambiar la contraseña root !
 
 Después de haberte conectado por primera vez, tienes que cambiar la contraseña `root`. Tal vez el servidor te pida automáticamente que lo hagas. Si no es el caso, hay que utilizar el comando `passwd`. Es muy importante que elijas una contraseña bastante complicada. Nota que esta contraseña luego estará reemplazada por la contraseña admin elegida durante la post-instalación.
 

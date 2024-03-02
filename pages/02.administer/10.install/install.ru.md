@@ -301,14 +301,14 @@ Always call `genie -s` while starting your distro.
 
 As said before, there is no rollback capability. So let's export your fresh distro. In PowerShell:
 
-```
+```bash
 cd ~
 wsl --export YunoHost .\WSL\YunoHost.tar.gz
 ```
 
 ### In case of crash, delete and restore the whole distro
 
-```
+```bash
 cd ~
 wsl --unregister YunoHost
 wsl --import YunoHost .\WSL\YunoHost .\WSL\YunoHost.tar.gz --version 2
@@ -580,7 +580,7 @@ If you have one or more hard drives to store data, you can choose to mount it on
 | `/home/yunohost.backup/archives` | YunoHost backups to be placed ideally elsewhere than on the disks that manage the data |
 | `/home/yunohost.app` | Heavy data from YunoHost applications (nextcloud, matrix...) |
 | `/home/yunohost.multimedia` | Heavy data shared between several applications |
-| `/var/mail` | User mail
+| `/var/mail` | User mail |
 
 If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/external_storage).
 
@@ -610,7 +610,7 @@ However, it is possible to fix by yourself the image before to run the initial c
 
 To achieve this, you need to connect on your raspberry pi as root user [via SSH](/ssh) with the temporary password `yunohost`:
 
-```
+```bash
 ssh root@yunohost.local
 ```
 
@@ -618,7 +618,7 @@ ssh root@yunohost.local
 
 Then run the following commands to work around the metronome issue:
 
-```
+```bash
 mv /usr/bin/metronome{,.bkp}   
 mv /usr/bin/metronomectl{,.bkp} 
 ln -s /usr/bin/true /usr/bin/metronome
@@ -627,7 +627,7 @@ ln -s /usr/bin/true /usr/bin/metronomectl
 
 And this one to work around the upnpc issue:
 
-```
+```bash
 sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/firewall.py
 ```
 
@@ -639,7 +639,7 @@ sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/fir
 
 Next you need to [find the local IP address of your server](/finding_the_local_ip) to connect as root user [via SSH](/ssh) with the temporary password `1234`.
 
-```
+```bash
 ssh root@192.168.x.xxx
 ```
 
@@ -723,13 +723,13 @@ For example, `ynh.wsl`. The tricky part is advertising this domain to your host.
 
 Alter your `C:\Windows\System32\drivers\etc\hosts` file. You should have a line starting by `::1`, update it or add it if needed to get:
 
-```
+```text
 ::1    ynh.wsl localhost
 ```
 
 If you want to create subdomains, do not forget to add them in the `hosts` file too:
 
-```
+```text
 ::1    ynh.wsl subdomain.ynh.wsl localhost
 ```
 
@@ -769,7 +769,7 @@ To run a diagnosis, go on Web Admin in the Diagnosis section. Click Run initial 
 [/ui-tab]
 [ui-tab title="From the command line"]
 
-```
+```bash
 yunohost diagnosis run
 yunohost diagnosis show --issues --human-readable
 ```
@@ -795,7 +795,7 @@ Go in Domains > Click on your domain > SSL Certificate
 [/ui-tab]
 [ui-tab title="From the command line"]
 
-```
+```bash
 yunohost domain cert install
 ```
 

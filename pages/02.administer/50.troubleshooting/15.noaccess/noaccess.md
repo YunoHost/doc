@@ -67,7 +67,7 @@ Maybe the NGINX web server is out of order. You can check that [trough SSH](/ssh
 The NGINX or SSH servers may have been killed due to a lack of storage space, RAM, or swap.
 
 - Try restarting the service with `systemctl restart nginx`.
-- You can check used storage with `df -h`. If one of your partitions is full, you need to identify what fills it and make room. You can use `ncdu` command (install it with `apt install ncdu` to browse from the root directory: `ncdu /`
+- You can check used storage with `df -h`. If one of your partitions is full, you need to identify what fills it and make room. You can use `ncdu` command (install it with `apt install ncdu`) to browse from the root directory: `ncdu /`
 - You can check RAM and swap usage with `free -h`. Depending on the result, it may be necessary to optimize your server to use less RAM (removal of heavy or unused apps...), add more RAM or add a swap file.
 
 ### Your server is reachable by IPv6, but not IPv4, or inversely

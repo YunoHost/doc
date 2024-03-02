@@ -83,7 +83,7 @@ Qualcuno ha cercato di paragonare il sistema di packaging di YunoHost con altri 
 
 YunoHost esegue delle astrazioni di alto livello (applicazioni, domini, utenti...) e configura un ambiente standard (NGINX, Metronome, SSOwat...) e, grazie a questo, può gestire la configurazione  invece che delegarla all'amministratore.
 
-#### Quando implementerete [il programma che mi piacerebbe]? Perché [la mia app preferita] non è stata compilata? Trovo incredibile che non abbiate ancora implementato [la mia app preferita]
+#### Quando implementerete [il programma che mi piacerebbe]? Perché [la mia app preferita] non è stata compilata? Trovo incredibile che non abbiate ancora implementato [la mia app preferita]!
 
 Noi non fissiamo un calendario.
 

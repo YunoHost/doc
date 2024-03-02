@@ -40,10 +40,10 @@ Suchen Sie in der Verwaltungsoberfläche Ihres Routers nach etwas wie "Router-Ko
 
 Das Öffnen der unten aufgeführten Ports ist notwendig, damit die verschiedenen in YunoHost verfügbaren Dienste funktionieren. Für jeden von ihnen wird die 'TCP'-Weiterleitung benötigt. Einige Schnittstellen beziehen sich auf 'externe' und 'interne' Ports : diese sind in unserem Fall gleich.
 
-- Web: 80 <small>(HTTP)</small>, 443 <small>(HTTPS)</small>
-- [SSH](/ssh): 22
-- [XMPP](/XMPP): 5222 <small>(clients)</small>, 5269 <small>(servers)</small>
-- [Email](/email): 25, 587 <small>(SMTP)</small>, 993 <small>(IMAP)</small>
+- Web: `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>
+- [SSH](/ssh): `22`
+- [XMPP](/XMPP): `5222` <small>(clients)</small>, `5269` <small>(servers)</small>
+- [Email](/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>
 
 Wenn Sie sowohl ein Modem als auch einen Router verwenden, dann müssen Sie Folgendes tun:
 

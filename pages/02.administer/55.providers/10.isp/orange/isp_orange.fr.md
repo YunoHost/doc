@@ -28,7 +28,7 @@ sudo nano /etc/postfix/main.cf
 
 puis, rajouter à la ligne le relai SMTP d’Orange :
 
-```bash
+```text
 relayhost = smtp.orange.fr
 ```
 

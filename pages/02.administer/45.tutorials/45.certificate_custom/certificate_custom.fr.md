@@ -17,7 +17,7 @@ Quelques changements ont eu lieu qui impactent les procédures indiquées ci-des
 ### Ajout d’un certificat signé par une autorité (autre que Let's Encrypt)
 
 Après création du certificat auprès de votre autorité d’enregistrement, vous devez être en possession d’une clé privée, le fichier *key* et d’un certificat public, le fichier *crt*.
-Attention, le fichier *key* est très sensible, il est strictement personnel et doit être très bien sécurisé.
+! Attention, le fichier *key* est très sensible, il est strictement personnel et doit être très bien sécurisé.
 
 Ces deux fichiers doivent être copiés sur le serveur, s’ils ne s’y trouvent pas déjà.
 
@@ -57,26 +57,26 @@ sudo mv *.pem *.cnf yunohost_self_signed/
 
 En fonction de l’autorité d’enregistrement, des certificats intermédiaires et racines doivent être obtenus.
 
-**StartSSL**
+#### StartSSL
 
 ```bash
 sudo wget http://www.startssl.com/certs/ca.pem -O ae_certs/ca.pem
 sudo wget http://www.startssl.com/certs/sub.class1.server.ca.pem -O ae_certs/intermediate_ca.pem
 ```
 
-**Gandi**
+#### Gandi
 
 ```bash
 sudo wget https://www.gandi.net/static/CAs/GandiStandardSSLCA2.pem -O ae_certs/intermediate_ca.pem
 ```
 
-**RapidSSL**
+#### RapidSSL
 
 ```bash
 sudo wget https://knowledge.rapidssl.com/library/VERISIGN/INTERNATIONAL_AFFILIATES/RapidSSL/AR1548/RapidSSLCABundle.txt -O ae_certs/intermediate_ca.pem
 ```
 
-**Cacert**
+#### Cacert
 
 ```bash
 sudo wget http://www.cacert.org/certs/root.crt -O ae_certs/ca.pem
@@ -142,4 +142,4 @@ Rechargez la configuration de NGINX pour prendre en compte le nouveau certificat
 sudo service nginx reload
 ```
 
-Votre certificat est prêt à servir. Vous pouvez toutefois vous assurer de sa mise en place en testant le certificat à l’aide du service de <a href="<https://www.geocerts.com/ssl_checker>" target="_blank"geocerts</a.
+Votre certificat est prêt à servir. Vous pouvez toutefois vous assurer de sa mise en place en testant le certificat à l’aide du service de <a href="https://www.geocerts.com/ssl_checker" target="_blank">geocerts</a>.

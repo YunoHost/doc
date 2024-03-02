@@ -905,14 +905,14 @@ Requires YunoHost version 4.2 or higher.
 
 #### ynh_multimedia_addfolder
 
-[details summary="<i>Add a directory in yunohost.multimedia</i>" class="helper-card-subtitle text-muted"]
+[details summary="<i>Add a directory in YunoHost.multimedia</i>" class="helper-card-subtitle text-muted"]
 
 **Usage**: `ynh_multimedia_addfolder --source_dir="source_dir" --dest_dir="dest_dir"`
 
 **Arguments**:
 
 - `-s`, `--source_dir=`: Source directory - The real directory which contains your medias.
-- `-d`, `--dest_dir=`: Destination directory - The name and the place of the symbolic link, relative to "/home/yunohost.multimedia"
+- `-d`, `--dest_dir=`: Destination directory - The name and the place of the symbolic link, relative to "/home/YunoHost.multimedia"
 
 **Details**:<br/>
 This "directory" will be a symbolic link to a existing directory.
@@ -2611,7 +2611,7 @@ Requires YunoHost version 3.5.0 or higher.
 **Arguments**:
 
 - `--comparison`: Comparison type. Could be : `lt` (lower than), `le` (lower or equal), `eq` (equal), `ne` (not equal), `ge` (greater or equal), `gt` (greater than)
-- `--version`: The version to compare. Need to be a version in the yunohost package version type (like `2.3.1~ynh4`)
+- `--version`: The version to compare. Need to be a version in the YunoHost package version type (like `2.3.1~ynh4`)
 
 **Returns**: 0 if the evaluation is true, 1 if false.
 

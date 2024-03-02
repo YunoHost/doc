@@ -4,7 +4,7 @@ Cette page n’existe pas encore, vous pouvez l’éditer en appuyant sur la tou
 
 **Note :** Vous aurez besoin d'une adresse email pour valider votre proposition.
 
-### Syntaxe
+## Syntaxe
 
 Cette page utilise la syntaxe Markdown, veuillez vous référer à la documentation pour plus d’informations :
 

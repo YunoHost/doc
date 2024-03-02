@@ -10,7 +10,6 @@ page-toc:
   depth: 3
 ---
 
-
 È possibile creare un proprio metodo di backup e includerlo nel sistema di raccolta file di backup di YunoHost. Questo può essere utilizzato ad esempio, nel caso utilizziate un particolare programma di backup o vogliate effettuare delle operazioni di montaggio o smontaggio sui vostri HD.
 
 Dovrete creare un hook che lancerà il backup utilizzando il metodo personalizzato con questo comando:

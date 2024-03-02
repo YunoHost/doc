@@ -83,7 +83,7 @@ People have been tempted to compare YunoHost packages to traditional package man
 
 YunoHost manages high-level abstractions (apps, domains, users...) and defines a standard setup (NGINX, Postfix, Metronome, SSOwat...) and, because of this, can handle the configuration for the user.
 
-#### When will [this feature] be implemented? Why isn't [that app] packaged yet? I cannot believe you do not do [this] yet
+#### When will [this feature] be implemented? Why isn't [that app] packaged yet? I cannot believe you do not do [this] yet!
 
 We do not give timelines.
 

@@ -21,7 +21,7 @@ Si votre but est d'avoir un serveur de production :
 - utilisez les applications non-officielles avec prudence, et interdisez-vous d'utiliser celles marquées 'in progress', 'not working' ou qui sont en niveau 0 ;
 - si quelque chose casse, réfléchissez à deux fois avant de tenter de le réparer vous-même si vous ne savez pas ce que vous faites. <small>(Par exemple, n'essayez pas de recréer vous-même l'utilisateur admin juste parce qu'il a mystérieusement disparu...)</small>
 
-## Keep it simple
+## Restez simple !
 
 YunoHost est conçu pour fonctionner avec des cas d'utilisation généraux et simples. S'écarter de ces conditions rendra les choses plus difficiles et vous aurez besoin de connaissances techniques pour les faire fonctionner. Par exemple :
 

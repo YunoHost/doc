@@ -64,7 +64,7 @@ Questo può sembrare più facile per gli utenti finali ma è considerato più co
 
 Se le applicazioni dell'esempio precedente fossero state installate su un dominio separato questo potrebbe essere il risultato:
 
-```bash
+```text
 blog.yolo.com  : Wordpress (a blog)
 cloud.yolo.com : Nextcloud (a cloud service)
 rss.yolo.com   : TinyTiny RSS (a RSS reader)
