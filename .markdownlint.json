@@ -1,0 +1,54 @@
+{
+    "code-block-style": {
+        "style": "fenced"
+    },
+    "code-fence-style": {
+        "style": "backtick"
+    },
+    "emphasis-style": {
+        "style": "asterisk"
+    },
+    "strong-style": {
+        "style": "asterisk"
+    },
+    "ul-style": {
+        "style": "dash"
+    },
+    "heading-style": {
+        "style": "atx"
+    },
+    "no-duplicate-heading": {
+        "siblings_only": true
+    },
+    "hr-style": {
+        "style": "---"
+    },
+    "ol-prefix": {
+        "style": "ordered"
+    },
+    "fenced-code-language": {
+        "allowed_languages": [
+            "bash",
+            "html",
+            "css",
+            "javascript",
+            "json",
+            "yaml",
+            "toml",
+            "markdown",
+            "text"
+        ],
+        "language_only": true
+    },
+    "proper-names": {
+        "code_blocks": false,
+        "names": [
+            "YunoHost",
+            "Debian",
+            "GitHub"
+        ]
+    },
+    "line-length": {
+        "line_length": 180
+    }
+}
