@@ -5,3 +5,4 @@
 !/Dockerfile
 !/docker-compose.yml
 !/dev/plugins
+!/markdownlint-rules-grav-pages
