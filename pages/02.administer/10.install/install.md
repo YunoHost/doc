@@ -132,21 +132,22 @@ Select the hardware on which you want install YunoHost :
 
 [/div]
 
+
 {% if hardware != '' %}
 
 {% if wsl %}
 !! This setup is mainly meant for local testing by advanced users. Due to limitations on WSL's side (changing IP address, notably), selfhosting from it can be tricky and will not be described here.
 {% endif %}
 
+
 ## [fa=list-alt /] Pre-requisites
 
 {% if regular %}
-
 * A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop with 512MB RAM and 16GB capacity (at least)
 {% elseif rpi34 %}
 * A Raspberry Pi 3 or 4
 {% elseif rpi012 %}
-* A Raspberry Pi 0, 1 or 2 with at least 512MB RAM
+* A Raspberry Pi 0, 1 or 2 with at least 512MB RAM 
 {% elseif internetcube %}
 * An Orange Pi PC+ or an Olinuxino Lime 1 or 2
 * A VPN with a dedicated public IP and a `.cube` file
@@ -189,9 +190,7 @@ Select the hardware on which you want install YunoHost :
 {% endif %}
 
 {% if wsl %}
-
 ## Introduction
-
 WSL is a nice feature of Windows 10, making Linux pseudo-distributions available through command line. Let's say pseudo, because even though they are not really like virtual machines, they rely on virtualization capacities that make their integration with Windows almost seamless.
 Docker for Windows can now rely on WSL instead of Hyper-V, for example.
 
@@ -217,7 +216,7 @@ rmdir .\debian -R
 
 You can now access it: run `wsl.exe -d YunoHost`
 
-It is under Debian 9 Stretch, so let's upgrade it:
+It is under Debian 9 Stretch, so let's upgrade it: 
 
 ```bash
 # In WSL
@@ -226,7 +225,6 @@ sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade
 ```
-
 ## Prevent WSL from tweaking configuration files
 
 Edit `/etc/wsl.conf` and put the following code in it:
@@ -254,7 +252,6 @@ Debian on WSL does not have `systemd`, a service configuration software.
 This is a key element for YunoHost, and for any decent Debian distro (seriously MS, what the heck). Let's install it:
 
 1. Install dotNET runtime:
-
 ```bash
 # In WSL
 wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -266,7 +263,6 @@ sudo apt install -y dotnet-sdk-3.1
 ```
 
 2. Install [Genie](https://github.com/arkane-systems/genie):
-
 ```bash
 # In WSL
 # Add their repository
@@ -295,10 +291,8 @@ Always call `genie -s` while starting your distro.
 
 `wsl -d YunoHost -e genie -s`
 
-## Backup and restore the distro
-
+## Backup and restore the distro 
 ### Make your first distro backup
-
 As said before, there is no rollback capability. So let's export your fresh distro. In PowerShell:
 
 ```
@@ -313,11 +307,10 @@ cd ~
 wsl --unregister YunoHost
 wsl --import YunoHost .\WSL\YunoHost .\WSL\YunoHost.tar.gz --version 2
 ```
-
 {% endif %}
 
-{% if vps_ynh %}
 
+{% if vps_ynh %}
 ## YunoHost VPS providers
 
 Here are some VPS providers supporting YunoHost natively :
@@ -325,19 +318,19 @@ Here are some VPS providers supporting YunoHost natively :
 [div class="flex-container"]
 
 [div class="flex-child"]
-[[figure caption="Alsace Réseau Neutre - FR"]![][image://vps_ynh_arn.png?height=50](/figure)](<https://vps.arn-fai.net>)
+[[figure caption="Alsace Réseau Neutre - FR"]![](image://vps_ynh_arn.png?height=50)[/figure]](https://vps.arn-fai.net)
 [/div]
 [div class="flex-child"]
-[[figure caption="FAImaison - FR"]![][image://vps_ynh_faimaison.svg?height=50](/figure)](<https://www.faimaison.net/services/vm.html>)
+[[figure caption="FAImaison - FR"]![](image://vps_ynh_faimaison.svg?height=50)[/figure]](https://www.faimaison.net/services/vm.html)
 [/div]
 [div class="flex-child"]
-[[figure caption="ECOWAN - FR"]![][image://vps_ynh_ecowan.png?height=50](/figure)](<https://www.ecowan.fr/vps-linux>)
+[[figure caption="ECOWAN - FR"]![](image://vps_ynh_ecowan.png?height=50)[/figure]](https://www.ecowan.fr/vps-linux)
 [/div]
 [/div]
 {% endif %}
 
-{% if at_home %}
 
+{% if at_home %}
 ## [fa=download /] Download the {{image_type}} image
 
 {% if rpi012 %}
@@ -403,7 +396,7 @@ $(document).ready(function () {
              .replace('%7Bimage%7D', infos.image)
              .replace('{image}', infos.image)
              .replace('{version}', infos.version);
-
+ 
             if (!infos.file.startsWith("http"))
                 infos.file="https://build.yunohost.org/"+infos.file;
             html = html.replace(/%7Bfile%7D/g, infos.file).replace(/{file}/g, infos.file);
@@ -420,16 +413,17 @@ $(document).ready(function () {
 });
 </script>
 
+
+
+
+
+
 {% if not virtualbox %}
 
 {% if arm %}
-
 ## ![microSD card with adapter](image://sdcard_with_adapter.png?resize=100,75&class=inline) Flash the {{image_type}} image
-
 {% else %}
-
 ## ![USB drive](image://usb_key.png?resize=100,100&class=inline) Flash the YunoHost image
-
 {% endif %}
 
 Now that you downloaded the image of {{image_type}}, you should flash it on {% if arm %}a microSD card{% else %}a USB stick or a CD/DVD.{% endif %}
@@ -463,7 +457,6 @@ Then run :
 # Replace /dev/mmcblk0 if the name of your device is different...
 dd if=/path/to/yunohost.img of=/dev/mmcblk0
 ```
-
 [/ui-tab]
 {% if regular %}
 [ui-tab title="Burning a CD/DVD"]
@@ -479,11 +472,10 @@ For older devices, you might want to burn a CD/DVD. The software to use depends 
 Ventoy will be useful if you can't sucessfully boot the Yunohost image using the other methods.
 
 [Ventoy](https://www.ventoy.net/) is a nice tool that makes it really easy to put multiple linux images on a USB stick. When the computer refuses to boot from an image on a usb stick, Ventoy will usually be able to boot it anyway!
-
 1. Install [Ventoy](https://www.ventoy.net/) on the USB stick. Refer to the [install instructions](https://www.ventoy.net/en/doc_start.html).
-    * This will create 2 partitions on the stick.
+    - This will create 2 partitions on the stick.
 3. Using your favorite file explorer app, copy the Yunohost image file on the big `Ventoy` partition (not "VTOYEFI")
-    * Don't use *Balena Etcher*, USBImager or `dd` for this!
+    - Don't use *Balena Etcher*, USBImager or `dd` for this!
 
 Later, when you'll boot the computer using this usb stick, Ventoy will appear and will list the images on the USB stick. Select the Yunohost image, then select GRUB2 launch option (or use whichever works for your computer 😉)
 [/ui-tab]
@@ -512,12 +504,19 @@ Go to **Settings** > **Network**:
 
 {% endif %}
 
-{% if arm %}
 
+
+
+
+
+
+
+
+{% if arm %}
 ## [fa=plug /] Power up the board
 
 * Plug the ethernet cable (one side on your main router, the other on your board).
-  * For advanced users willing to configure the board to connect to WiFi instead, see for example [here](https://www.raspberrypi.com/documentation/computers/configuration.html#connect-to-a-wireless-network) ([or here prior to YunoHost12/bookworm](https://www.raspberryme.com/configurer-le-wifi-sur-un-pi-manuellement-a-laide-de-wpa_supplicant-conf/).
+    * For advanced users willing to configure the board to connect to WiFi instead, see for example [here](https://www.raspberrypi.com/documentation/computers/configuration.html#connect-to-a-wireless-network) ([or here prior to YunoHost12/bookworm](https://www.raspberryme.com/configurer-le-wifi-sur-un-pi-manuellement-a-laide-de-wpa_supplicant-conf/).
 * Plug the SD card in your board
 * (Optional) You can connect a screen+keyboard directly on your board if you want to troubleshoot the boot process or if you're more comfortable to "see what happens" or want a direct access to the board.
 * Power up the board
@@ -525,7 +524,6 @@ Go to **Settings** > **Network**:
 * Make sure that your computer (desktop/laptop) is connected to the same local network (i.e. same internet box) as your server.
 
 {% elseif virtualbox %}
-
 ## [fa=plug /] Boot up the virtual machine
 
 Start the virtual machine after selecting the YunoHost image.
@@ -534,20 +532,19 @@ Start the virtual machine after selecting the YunoHost image.
 
 ! If you encounter the error "VT-x is not available", you probably need to enable Virtualization in the BIOS of your computer.
 
-{% else %}
 
+{% else %}
 ## [fa=plug /] Boot the machine on your USB stick
 
 * Plug the ethernet cable (one side on your main router, the other on your server).
 * Boot up your server with the USB stick or a CD-ROM inserted, and select it as **bootable device**. Depending on your hardware, you will need to press one of the following keys:
 `<F9>`, `<F10>`, `<F11>`, `<F12>`, `<DEL>`, `<ESC>` or `<Alt>`.
-  * N.B. : if the server was previously installed with a recent version of Windows (8+), you first need to tell Windows, to "actually reboot". This can be done somewhere in "Advanced startup options".
+    * N.B. : if the server was previously installed with a recent version of Windows (8+), you first need to tell Windows, to "actually reboot". This can be done somewhere in "Advanced startup options".
 
 !!! If you can't boot the Yunohost image, try using Ventoy (select "Ventoy" in the section "Flash the YunoHost image" above).
 {% endif %}
 
 {% if regular or virtualbox %}
-
 ## [fa=rocket /] Launch the graphical install
 
 You should see a screen like this:
@@ -570,10 +567,9 @@ You should see a screen like this:
 
 The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.
 
-With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/external_storage).
+With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/external_storage). 
 
-### Summary of the steps in expert mode
-
+### Summary of the steps in expert mode:
   1. Select `Expert graphical install`.
   2. Select your language, location, keyboard layout and possibly your timezone.
   3. Partition your disks. This is where you can set up a RAID or encrypt all or part of the server.
@@ -599,16 +595,13 @@ If you have one or more hard drives to store data, you can choose to mount it on
 If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/external_storage).
 
 ### About encryption
-
 Be aware that if you encrypt all or part of your disks, you will have to type the passphrase every time you restart your server, which can be a problem if you are not on site. There are however solutions (quite difficult to implement) that allow you to type the passphrase via SSH or via a web page (search for "dropbear encrypted disk").
 
 ### About RAID
-
 Keep in mind that:
-
-* the disks in your RAIDs must be of different brands, wear and tear or batches (especially if they are SSDs)
-* a RAID 1 (even without a spare) is more reliable than a RAID 5 from a probability point of view
-* hardware raids are dependent on the raid card, if the card fails you will need a replacement to read and rebuild the array
+ * the disks in your RAIDs must be of different brands, wear and tear or batches (especially if they are SSDs)
+ * a RAID 1 (even without a spare) is more reliable than a RAID 5 from a probability point of view
+ * hardware raids are dependent on the raid card, if the card fails you will need a replacement to read and rebuild the array
 
 [/ui-tab]
 [/ui-tabs]
@@ -616,24 +609,20 @@ Keep in mind that:
 !!! If the Yunohost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install Yunohost on top. For instructions, at the top of this page, select "Remote server", then "VPS or dedicated server with Debian".
 {% endif %}
 
+
 {% if rpi012 %}
-
 ## [fa=bug /] Connect to the board and hotfix the image
-
 Raspberry Pi 1 and 0 are not totally supported due to [compilation issues for this architecture](https://github.com/YunoHost/issues/issues/1423).
 
 However, it is possible to fix by yourself the image before to run the initial configuration.
 
 To achieve this, you need to connect on your raspberry pi as root user [via SSH](/ssh) with the temporary password `yunohost`:
-
 ```
 ssh root@yunohost.local
 ```
-
 (or `yunohost-2.local`, and so on if multiple YunoHost servers are on your network)
 
 Then run the following commands to work around the metronome issue:
-
 ```
 mv /usr/bin/metronome{,.bkp}   
 mv /usr/bin/metronomectl{,.bkp} 
@@ -642,7 +631,6 @@ ln -s /usr/bin/true /usr/bin/metronomectl
 ```
 
 And this one to work around the upnpc issue:
-
 ```
 sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/firewall.py
 ```
@@ -650,7 +638,6 @@ sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/fir
 ! This last command need to be run after each yunohost upgrade :/
 
 {% elseif arm_unsup %}
-
 ## [fa=terminal /] Connect to the board
 
 Next you need to [find the local IP address of your server](/finding_the_local_ip) to connect as root user [via SSH](/ssh) with the temporary password `1234`.
@@ -663,13 +650,13 @@ ssh root@192.168.x.xxx
 
 {% endif %}
 
-{% if vps_debian or arm_unsup %}
 
+{% if vps_debian or arm_unsup %}
 ## [fa=rocket /] Run the install script
 
-* Open a command line prompt on your server (either directly or [through SSH](/ssh))
-* Make sure you are root (or type `sudo -i` to become root)
-* Run the following command:
+- Open a command line prompt on your server (either directly or [through SSH](/ssh))
+- Make sure you are root (or type `sudo -i` to become root)
+- Run the following command:
 
 ```bash
 curl https://install.yunohost.org | bash
@@ -757,6 +744,7 @@ If you want to create subdomains, do not forget to add them in the `hosts` file 
 
 This user replaces the old `admin` user, which some old documentation page may still refer to. In which case : just replace `admin` with your username.
 
+
 ## [fa=stethoscope /] Run the initial diagnosis
 
 Once the postinstall is done, you should be able to actually log in the web admin interface using the credentials of the first user you just created.
@@ -784,12 +772,10 @@ To run a diagnosis, go on Web Admin in the Diagnosis section. Click Run initial 
 
 [/ui-tab]
 [ui-tab title="From the command line"]
-
 ```
 yunohost diagnosis run
 yunohost diagnosis show --issues --human-readable
 ```
-
 [/ui-tab]
 [/ui-tabs]
 
@@ -810,15 +796,13 @@ Go in Domains > Click on your domain > SSL Certificate
 
 [/ui-tab]
 [ui-tab title="From the command line"]
-
 ```
 yunohost domain cert install
 ```
-
 [/ui-tab]
 [/ui-tabs]
 
-## ![](image://tada.png?resize=32&classes=inline) Congratz
+## ![](image://tada.png?resize=32&classes=inline) Congratz!
 
 You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](/apps). Don't forget to [plan backups](/backup) !
 
