@@ -9,30 +9,30 @@ routes:
 
 Bien que les personnes contribuant à YunoHost essaient continuellement de l'améliorer, YunoHost ou sa documentation ne sont exempts de bugs ou d'erreurs. Pour nous aider à vous aider, vous devez cependant suivre ces instructions.
 
-# À faire
+## À faire
 
-## Patience et courtoisie
+### Patience et courtoisie
 
 L'aide dans les salons de discussion ou sur le forum est apportée par des personnes entièrement bénévoles. Peut-être que vous-vous sentez sous pression, que les essais infructueux vous épuisent ou encore que de mauvaises émotions vous submergent... Faites une pause, buvez une gorgée de votre boisson apaisante préférée, soufflez, et une fois votre contenance revenue, poursuivez votre lecture. Nous avons besoin de vous dans un bon état d'esprit pour vous aider.
 
-## Demandez au bon endroit
+### Demandez au bon endroit
 
 Le support n'est prodigué que sur [le forum](https://forum.yunohost.org?target=_blank) ou sur [nos salons de discussion](/chat_rooms?target=_blank).  
 Nous avons un compte Mastodon, mais nous ne prodiguons pas d'aide sur cette plateforme.
 
 Sur le forum, assurez-vous d'ouvrir votre demande dans la bonne catégorie, afin de maximiser vos chances de recevoir l'aide appropriée :
 
-- [Support](https://forum.yunohost.org/c/support/6?target=_blank) pour les problèmes lors de l'installation ou de l'utilisation de YunoHost en soit ;
+- [Support](https://forum.yunohost.org/c/support/6?target=_blank) pour les problèmes lors de l'installation ou de l'utilisation de YunoHost en soi ;
 - [Support apps](https://forum.yunohost.org/c/apps/11?target=_blank) pour les problèmes lors de la configuration ou de l'utilisation d'applications.
 
 Pour que nous puissions être en mesure de vous aider sur le forum, vous devez impérativement remplir le modèle de demande de support qui s'affichera lors de la création du message.
 
-## Expliquez le contexte
+### Expliquez le contexte
 
 Votre demande doit être formulée de manière complète mais concise. Expliquez clairement ce que vous voulez obtenir et en quoi cela ne fonctionne pas pour vous.  
 N'hésitez pas à fournir toute information qui peut être pertinente, même des choses qui peuvent sembler être une évidence, la ou les personnes qui vont essayer de vous aider auront peut-être besoin de ces informations.
 
-## Montrez les erreurs et les journaux
+### Montrez les erreurs et les journaux
 
 Ceci est absolument primordial si YunoHost ou une commande échoue. YunoHost explique toujours pourquoi, que ce soit par un simple code d'erreur ou par un pavé de texte apparemment incompréhensible.
 
@@ -51,13 +51,13 @@ Si votre problème n'est pas lié à un processus d'installation ou de mise à j
 
 Les captures d'écran sont les bienvenues.
 
-# À ne pas faire
+## À ne pas faire
 
-## Évitez le [problème XY](https://xyproblem.info/)
+### Évitez le [problème XY](https://xyproblem.info/)
 
 En résumé, expliquez la cause de votre problème. Vous pouvez faire part de votre tentative de solution, mais le *pourquoi* vous avez besoin de cette solution potentielle est le plus important.
 
-## Ne soyez pas vague
+### Ne soyez pas vague
 
 Ne supposez pas que nous comprenons ce dont vous parlez, ne prenez pas de raccourcis, ne reformulez pas, ne simplifiez pas, n'éditorialisez pas les messages d'erreur.
 
@@ -66,12 +66,12 @@ N'écrivez pas "ça ne marche pas", "ça ne veut pas", "ça ne se charge pas", o
 Expliquez ce qui ne va pas et comment cela apparaît à l'écran.  
 Il y a, par exemple, une différence importante entre une page complètement blanche et une page blanche avec un code d'erreur, même minimaliste.
 
-## Ne tournez pas autour du pot
+### Ne tournez pas autour du pot
 
 Il n'est pas nécessaire de demander l'autorisation pour demander de l'aide. Il s'agit d'un chat/forum d'assistance, donc oui, vous pouvez poser votre question.
 
 Ne posez pas votre question comme un sondage, comme dans "Est-ce que quelqu'un a réussi à faire fonctionner l'application XY ?" Si cela ne fonctionne pas pour vous, expliquez directement le problème que vous avez rencontré, expliquez le contexte, partagez les logs.
 
-## Ne soyez pas un trou du cul
+### Ne soyez pas un trou du cul
 
 L'accès au forum ou aux salons de discussion est un privilège qui peut être révoqué.
