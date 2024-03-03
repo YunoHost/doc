@@ -7,7 +7,7 @@ routes:
   default: '/help-me'
 ---
 
-Bien que les personnes contribuant à YunoHost essaient continuellement de l'améliorer, YunoHost ou sa documentation ne sont exempts de bugs ou d'erreurs. Pour nous aider à vous aider, vous devez cependant suivre ces instructions.
+Bien que les personnes contribuant à YunoHost essaient continuellement de l'améliorer, YunoHost, ses packages ou sa documentation ne sont exempts de bugs ou d'erreurs. Pour nous aider à vous aider, vous devez cependant suivre ces instructions.
 
 # À faire
 
