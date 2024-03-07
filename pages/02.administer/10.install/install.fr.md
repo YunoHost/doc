@@ -575,7 +575,7 @@ Vous pouvez aussi lancer la post-installation avec la commande `yunohost tools p
 
 {% if not internetcube %}
 
-##### [fa=globe /] Domaine principal
+### [fa=globe /] Domaine principal
 
 C’est le nom de domaine qui permettra l’accès à votre serveur ainsi qu’au **portail d’authentification** des utilisateurs. Vous pourrez ensuite ajouter d'autres domaines, et changer celui qui sera le domaine principal si besoin.
 
@@ -585,7 +585,7 @@ C’est le nom de domaine qui permettra l’accès à votre serveur ainsi qu’a
 
 !!! Oui, vous *devez* configurer un nom de domaine. Si vous n'avez pas de nom de domaine et que vous n'en voulez pas en **.nohost.me**, **.noho.st** ou **.ynh.fr**, vous pouvez utilisez un « faux » domaine comme par exemple `yolo.test` et [modifier votre fichier `/etc/hosts` **sur votre ordinateur local** pour que ce domaine pointe vers l'IP de votre serveur, comme expliqué ici](/dns_local_network).
 
-##### [fa=key /] Premier compte utilisateur
+### [fa=key /] Premier compte utilisateur
 
 [Depuis YunoHost 11.1](https://forum.yunohost.org/t/yunohost-11-1-release-sortie-de-yunohost-11-1/23378), le premier compte utilisateur est créé à cette étape. Il vous faudra choisir un nom d'utilisateur et un mot de passe raisonablement complexe. (Nous ne pouvons que souligner l'importance du choix d'un mot de passe **robuste** !) Ce compte utilisateur sera ajouté au groupe Admins, et pourra se connecter au portail utilisateur, à la webadmin, et se connecter [via **SSH**](/ssh) ou [**SFTP**](/filezilla). Les admins recevront aussi les mails envoyés à `root@votredomaine.tld` et `admin@votredomaine.tld` : ces emails peuvent être utilisés pour envoyer des informations ou des alertes techniques. Vous pourrez plus tard ajouter d'autres comptes utilisateur supplémentaire, qu'il est aussi possible d'ajouter au groupe Admins.
 

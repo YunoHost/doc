@@ -73,7 +73,7 @@ Alternativement, on peut choisir d'installer chaque application (ou certaines) s
 
 Si toutes les applications de l'exemple précédent étaient installées sur un domaine séparé, cela donnerait quelque chose comme ceci :
 
-```bash
+```text
 blog.yolo.com  : Wordpress (un blog)
 cloud.yolo.com : Nextcloud (un service de cloud)
 rss.yolo.com   : TinyTiny RSS (un lecteur RSS)

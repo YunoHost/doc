@@ -42,7 +42,7 @@ Ein weiterer wichtiger Aspekt der Domain-Konfiguration ist das SSL/HTTPS-Zertifi
 
 Im Zusammenhang mit YunoHost ist es durchaus üblich, eine einzige (oder einige wenige) Domains zu haben, auf denen mehrere Anwendungen in "Unterpfaden" installiert sind, so dass man am Ende etwas wie dieses erhält:
 
-```bash
+```text
 yolo.com
      ├── /blog : Wordpress (ein Blog)
      ├─── /cloud : Nextcloud (ein Cloud-Dienst)
@@ -56,7 +56,7 @@ Dies mag für Endbenutzer hübscher aussehen, wird aber im Allgemeinen als kompl
 
 Wenn alle Anwendungen aus dem vorherigen Beispiel auf einer separaten Domain installiert wären, würde dies etwa so aussehen:
 
-```bash
+```text
 blog.yolo.com : Wordpress (ein Blog)
 cloud.yolo.com : Nextcloud (ein Cloud-Dienst)
 rss.yolo.com : TinyTiny RSS (ein RSS-Reader)

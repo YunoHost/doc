@@ -1,11 +1,11 @@
 ---
-Titel: Einführung in die Paketierung
-Template: docs
-Taxonomie:
-    Kategorie: docs
-Routen:
-  Standard: '/packaging_apps_intro'
-  Aliases:
+title: Einführung in die Paketierung
+template: docs
+taxonomy:
+    category: docs
+routes:
+  default: '/packaging_apps_intro'
+  aliases:
     - '/packaging_apps'
 ---
 

@@ -142,4 +142,4 @@ Rechargez la configuration de NGINX pour prendre en compte le nouveau certificat
 sudo service nginx reload
 ```
 
-Votre certificat est prêt à servir. Vous pouvez toutefois vous assurer de sa mise en place en testant le certificat à l’aide du service de <a href="https://www.geocerts.com/ssl_checker" target="_blank">geocerts</a>.
+Votre certificat est prêt à servir. Vous pouvez toutefois vous assurer de sa mise en place en testant le certificat à l’aide du service de [geocerts](https://www.geocerts.com/ssl_checker).

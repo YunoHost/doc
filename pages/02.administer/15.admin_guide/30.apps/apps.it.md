@@ -47,7 +47,7 @@ Fra le domande specifiche i form normalmente chiedono di scegliere un dominio ed
 
 In un'installazione normale di YunoHost è normale avere un dominio singolo (o al limite un piccolo numero di domini) per tutte le applicazioni installate si "sotto-directory" con una configurazione di questo tipo:
 
-```bash
+```text
 yolo.com
      ├── /blog  : Wordpress (a blog)
      ├── /cloud : Nextcloud (a cloud service)

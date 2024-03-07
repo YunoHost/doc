@@ -45,15 +45,15 @@ Create un account presso il fornitore scelto. Dovrebbe comunicarvi uno (o più) 
 
 #### 2. Configurate la zona DNS
 
-Copiate la [zona DNS](/dns_config), tranne il record NS, del vostro [registrar](#registrar) verso il DNS dinamico del servizio DynDNS che avete scelto al punto 1 del tutorial.
+Copiate la [zona DNS](/dns_config), tranne il record NS, del vostro [registrar](#registrars) verso il DNS dinamico del servizio DynDNS che avete scelto al punto 1 del tutorial.
 
 #### 3. Reindirizzate la gestione del vostro dominio verso il server DNS dinamico
 
-In questo passaggio informeremo il [registrar](#registrar) che il servizio DNS sarà affidato al servizio DyDNS.
+In questo passaggio informeremo il [registrar](#registrars) che il servizio DNS sarà affidato al servizio DyDNS.
 
 Reindirizzate il campo NS verso l'indirizzo IP fornito dal servizio DyDNS.
 
-In seguito cancellate la [zona DNS](/dns_config) (eccetto il precedente campo NS) nel vostro [registrar](#registrar).
+In seguito cancellate la [zona DNS](/dns_config) (eccetto il precedente campo NS) nel vostro [registrar](#registrars).
 
 ## 4. Configurazione del router/client
 

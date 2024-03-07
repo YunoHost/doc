@@ -704,7 +704,7 @@ Du kannst die Post-Installation auch mit dem Befehl `yunohost tools postinstall`
 
 {% if not internetcube %}
 
-##### [fa=globe /] Haupt-Domain
+### [fa=globe /] Haupt-Domain
 
 Dies ist die Domäne, über die die Benutzer deines Servers auf das **Authentifizierungsportal** zugreifen. Du kannst später weitere Domains hinzufügen und bei Bedarf ändern, welche Domain die Haupt-Domain ist.
 
@@ -735,7 +735,7 @@ Wenn du Subdomains erstellen möchtest, denk daran, diese auch in der Datei `hos
 
 {% endif %}
 
-##### [fa=key /] Der erste Benutzer
+### [fa=key /] Der erste Benutzer
 
 [Seit YunoHost 11.1](https://forum.yunohost.org/t/yunohost-11-1-release-sortie-de-yunohost-11-1/23378) wird in dieser Phase der erste Benutzer erstellt. Du solltest einen Benutzernamen und ein einigermaßen komplexes Passwort wählen. (Wir können nicht genug betonen, dass das Passwort **robust** sein sollte!) Dieser Benutzer wird der Administratoren-Gruppe hinzugefügt und kann daher auf das Benutzerportal und die Webadministrationsoberfläche zugreifen und eine Verbindung  [über **SSH**](/ssh) oder [**SFTP**](/filezilla) herstellen. Administratoren erhalten außerdem E-Mails an `root@yourdomain.tld` und `admin@yourdomain.tld`: Diese E-Mails können zum Versenden technischer Informationen oder Warnungen verwendet werden. Du kannst später weitere Benutzer hinzufügen, die du auch zur Administratoren-Gruppe hinzufügen kannst.
 

@@ -7,7 +7,6 @@ routes:
   default: '/install_unpackaged_apps'
 ---
 
-
 ## PHP or HTML/JS apps
 
 If your app is a PHP or HTML/JS app, you probably should use the `Custom Webapp`, also know as `my_webapp`, in order to configure nginx, php, mysql, YunoHost permission and backup for you.

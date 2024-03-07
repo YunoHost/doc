@@ -60,7 +60,7 @@ This might look prettier for end users, but is generally considered more complic
 
 If all apps from the previous example were installed on a separate domain, this would give something like this:
 
-```bash
+```text
 blog.yolo.com  : Wordpress (a blog)
 cloud.yolo.com : Nextcloud (a cloud service)
 rss.yolo.com   : TinyTiny RSS (a RSS reader)

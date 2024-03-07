@@ -41,7 +41,7 @@ Votre serveur virtuel est à présent installé. Avant de commencer à l'utilise
 VirtualBox prend tout son intérêt avec l'usage des instantanés, qui permettent d'enregistrer l'état de la machine à un moment donné et d'y revenir rapidement.  
 Nous verrons également par la suite comment utiliser plusieurs branches d'instantanés pour travailler sur des apps différentes sur une même machine.
 
-#### Tout d'abord, créons un premier instantané
+### Tout d'abord, créons un premier instantané
 
 Avant de commencer à jouer avec la machine virtuelle, il convient de faire un premier instantané, pour ne pas avoir à recommencer le processus d'installation à chaque fois.  
 Arrêtez la machine virtuelle avant tout.
@@ -60,7 +60,7 @@ Dans cet exemple, on pourra facilement revenir en arrière, après avoir testé 
 Et lorsque le package sera pleinement fonctionnel, il suffira de supprimer les instantanés liés à ce package pour revenir à l'état initial de la machine virtuelle.  
 Nous disposerons ainsi d'un serveur YunoHost vierge de toute installation d'application pour notre prochain test.
 
-#### Utiliser plusieurs branches d'instantanés
+### Utiliser plusieurs branches d'instantanés
 
 En plus de l'usage d'instantanés successifs, il est également possible de dériver un nouvel état actuel et de nouveaux instantanés depuis un instantané plus ancien que le dernier.
 

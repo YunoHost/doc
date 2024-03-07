@@ -21,7 +21,7 @@ El esquema aquí abajo intenta explicar brevemente el rol de la redirección de 
 
 Una vez que tienes la redirección configurada, deberías poder comprobar que los puertos están bien abiertos con esta herramienta :
 
-<a class="btn btn-default" href="http://ports.YunoHost.org">Comprobar la redirección de los puertos</a>
+<a class="btn btn-default" href="http://ports.yunohost.org">Comprobar la redirección de los puertos</a>
 
 ### 1. Acceder a la interfaz de administración de tu router/caja/box
 

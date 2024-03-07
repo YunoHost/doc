@@ -43,15 +43,15 @@ Register to one of them. It should provide you with one (or more) IP address to 
 
 #### 2. Move the DNS zones
 
-Copy the [DNS zones](/dns_config), except for the NS fields, from the [registrar](#registrar) where you bought your domain name from to the dynamic DNS service you registrer at in step 1.
+Copy the [DNS zones](/dns_config), except for the NS fields, from the [registrar](#registrars) where you bought your domain name from to the dynamic DNS service you registrer at in step 1.
 
 #### 3. Switch the management of your domain name to the dynamic DNS server
 
-This step consists in declaring to your [registrar](#registrar) that the DNS service will now be managed by the DynDNS service provider.
+This step consists in declaring to your [registrar](#registrars) that the DNS service will now be managed by the DynDNS service provider.
 
 For this, first declare in the NS field(s) the IP address provided by the DynDNS service.
 
-Then, remove any other item in the [DNS zones](/dns_config) (except the previous NS fields), from the [registrar](#registrar).
+Then, remove any other item in the [DNS zones](/dns_config) (except the previous NS fields), from the [registrar](#registrars).
 
 #### 4. Configure the client
 

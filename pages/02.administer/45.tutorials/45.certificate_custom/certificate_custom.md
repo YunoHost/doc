@@ -102,7 +102,7 @@ cat crt.pem key.pem
 
 The certificates and private key should look like this:
 
-```plaintext
+```text
 -----BEGIN CERTIFICATE-----
 MIICVDCCAb0CAQEwDQYJKoZIhvcNAQEEBQAwdDELMAkGA1UEBhMCRlIxFTATBgNV
 BAgTDENvcnNlIGR1IFN1ZDEQMA4GA1UEBxMHQWphY2NpbzEMMAoGA1UEChMDTExC
@@ -141,4 +141,4 @@ Reload NGINX configuration to take into account the new certificate.
 sudo service nginx reload
 ```
 
-Your certificate is ready. However, you can ensure that it is in place by testing the certificate using the <a href="https://www.geocerts.com/ssl_checker" target="_blank">geocerts</a>.
+Your certificate is ready. However, you can ensure that it is in place by testing the certificate using the [geocerts](https://www.geocerts.com/ssl_checker).
