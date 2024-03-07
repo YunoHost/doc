@@ -52,6 +52,7 @@
     },
     "proper-names": {
         "code_blocks": false,
+        "html_elements": false,
         "names": [
             "YunoHost",
             "GitHub"
