@@ -9,9 +9,9 @@ routes:
     - '/communication'
 ---
 
-! TODO: Add logo and kakemono file
-! TODO: Add kakemono photo <https://matrix-client.matrix.org/_matrix/media/r0/download/pijean.ovh/TqtyOjqllOeSXYziawxeGzIP>
-! TODO: Add "About YunoHost" section
+! TODO: Add logo and kakemono file  
+! TODO: Add kakemono photo https://matrix-client.matrix.org/_matrix/media/r0/download/pijean.ovh/TqtyOjqllOeSXYziawxeGzIP  
+! TODO: Add "About YunoHost" section  
 ! TODO: Add email contact
 
 ## Talks / conf
@@ -26,7 +26,7 @@ routes:
 - (FR) [Université de technologie de compiègne 2017 – Agir pour un internet éthique – LJF](http://webtv.utc.fr/watch_video.php?v=O34AA7RBR1AH)
 - (EN) [FOSDEM 2017 – Internet Cube – kload](https://archive.fosdem.org/2017/schedule/event/internet_cube/)
 - (EN) [FOSDEM 2017 – YunoHost – Bram](https://archive.fosdem.org/2017/schedule/event/yunohost/)
-- (FR) [Capitole du libre 2016 – 1 an et ½ de Brique Internet – Bram](http://videos2016.capitoledulibre.org/communaute-du-libre/bram-1-an-et-demi-de-brique-internet.mp4)
+- (FR) [Capitole du libre 2016 – 1 an et ½ de Brique Internet – Bram](https://toulibre.org/pub/2016-11-19-capitole-du-libre/videos/communaute-du-libre/bram-1-an-et-demi-de-brique-internet.mp4)
 - (FR) [PSES 2015 - La Brique Internet](http://www.youtube.com/watch?v=NCRn0yRfkIE)
 - (FR) [THSF 2015 – beudbeud](https://vimeo.com/128055751)
 - (FR) [RMLL 2014 - Hébergez-vous ! – kload & beudbeud]()
