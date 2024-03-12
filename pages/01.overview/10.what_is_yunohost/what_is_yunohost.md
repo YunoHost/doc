@@ -36,8 +36,8 @@ All that was needed was an admin interface for Beudbeud's server to make somethi
 
 Noting the growing enthusiasm around YunoHost and around self-hosting in general, the original developers along with new contributors decided to start work on version 2, a more extensible, more powerful, more easy-to-use, and at that, one that makes a nice cup of fair-trade coffee for the elves of Lapland.
 
-The name **YunoHost** comes from the jargon "Y U NO Host". The [Internet meme](https://en.wikipedia.org/wiki/Internet_meme) should illustrate it:
-!["Dude Y U no host" meme](image://dude_yunohost.jpg)
+The name **YunoHost** comes from the jargon "[Y U NO](https://knowyourmeme.com/memes/y-u-no-guy) Host". The [Internet meme](https://en.wikipedia.org/wiki/Internet_meme) should illustrate it:
+![The meme in question, showing a guy with a face bent in frustration and questioning "Y U NO Host"](image://dude_yunohost.jpg)
 
 ## What YunoHost is not?
 
