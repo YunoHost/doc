@@ -15,7 +15,7 @@ YunoHost est un **système d’exploitation** qui vise à simplifier autant que 
 
 - ![](image://icon-debian.png?resize=32&classes=inline) basé sur Debian ;
 - ![](image://icon-tools.png?resize=32&classes=inline) administration via une **interface web simple et claire** ;
-- ![](image://icon-package.png?resize=32&classes=inline) déployez des **applications en quelques clics** ;
+- ![](image://icon-package.png?resize=32&classes=inline) déployez des **applications en quelques clics**, parmi [notre catalogue](https://apps.yunohost.org) de plus de 500 ! ;
 - ![](image://icon-users.png?resize=32&classes=inline) ajoutez des **utilisateurs** <small>(gérés via un annuaire LDAP)</small> ;
 - ![](image://icon-globe.png?resize=32&classes=inline) gérez des **noms de domaine** ;
 - ![](image://icon-medic.png?resize=32&classes=inline) créez et restaurez des **sauvegardes** ;
@@ -23,7 +23,7 @@ YunoHost est un **système d’exploitation** qui vise à simplifier autant que 
 - ![](image://icon-mail.png?resize=32&classes=inline) fourni avec un **serveur mail complet** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
 - ![](image://icon-messaging.png?resize=32&classes=inline) ... ainsi qu'un **serveur de messagerie instantanée** <small>(XMPP)</small> ;
 - ![](image://icon-lock.png?resize=32&classes=inline) gère les **certificats SSL** <small>(basé sur Let's Encrypt)</small> ;
-- ![](image://icon-shield.png?resize=32&classes=inline) ... et des **systèmes de sécurité** <small>(Fail2Ban, yunohost-firewall)</small> ;
+- ![](image://icon-shield.png?resize=32&classes=inline) ... et des **systèmes de sécurité** <small>(Fail2Ban, yunohost-firewall)</small>.
 
 ## Origine
 

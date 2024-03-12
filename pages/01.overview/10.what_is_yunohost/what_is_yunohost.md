@@ -14,16 +14,16 @@ YunoHost is an **operating system** aiming to simplify **server administration**
 ## Features
 
 - ![](image://icon-debian.png?resize=32&classes=inline) Based on Debian;
-- ![](image://icon-tools.png?resize=32&classes=inline) Administer your server through a **friendly web interface** ;
-- ![](image://icon-package.png?resize=32&classes=inline) Deploy **apps in just a few clicks**;
+- ![](image://icon-tools.png?resize=32&classes=inline) Administer your server through a **friendly web interface**;
+- ![](image://icon-package.png?resize=32&classes=inline) Deploy **apps in just a few clicks** from [our more than 500 apps catalog](https://apps.yunohost.org)!;
 - ![](image://icon-users.png?resize=32&classes=inline) Manage **users** <small>(based on LDAP)</small>;
 - ![](image://icon-globe.png?resize=32&classes=inline) Manage **domain names**;
 - ![](image://icon-medic.png?resize=32&classes=inline) Create and restore **backups**;
 - ![](image://icon-door.png?resize=32&classes=inline) Connect to all apps simultaneously through the **user portal** <small>(NGINX, SSOwat)</small>;
 - ![](image://icon-mail.png?resize=32&classes=inline) Includes a **full e-mail stack** <small>(Postfix, Dovecot, Rspamd, DKIM)</small>;
 - ![](image://icon-messaging.png?resize=32&classes=inline)... as well as **an instant messaging server** <small>(XMPP)</small>;
-- ![](image://icon-lock.png?resize=32&classes=inline) Manages **SSL certificates** <small>(based on Let's Encrypt)</small> ;
-- ![](image://icon-shield.png?resize=32&classes=inline)... and **security systems** <small>(Fail2ban, yunohost-firewall)</small>;
+- ![](image://icon-lock.png?resize=32&classes=inline) Manages **SSL certificates** <small>(based on Let's Encrypt)</small>;
+- ![](image://icon-shield.png?resize=32&classes=inline)... and **security systems** <small>(Fail2ban, yunohost-firewall)</small>.
 
 ## Origin
 
