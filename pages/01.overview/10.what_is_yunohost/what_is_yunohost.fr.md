@@ -13,8 +13,8 @@ YunoHost est un **système d’exploitation** qui vise à simplifier autant que 
 
 ## Fonctionnalités
 
-- ![](image://icon-debian.png?resize=32&classes=inline) basé sur Debian ;
-- ![](image://icon-tools.png?resize=32&classes=inline) administration via une **interface web simple et claire** ;
+- ![](image://icon-debian.png?resize=32&classes=inline) basé sur Debian, pour une base de confiance et familière ;
+- ![](image://icon-tools.png?resize=32&classes=inline) administration via une **interface web simple et claire** ou en ligne de commande ;
 - ![](image://icon-package.png?resize=32&classes=inline) déployez des **applications en quelques clics**, parmi [notre catalogue](https://apps.yunohost.org) de plus de 500 ! ;
 - ![](image://icon-users.png?resize=32&classes=inline) ajoutez des **utilisateurs** <small>(gérés via un annuaire LDAP)</small> ;
 - ![](image://icon-globe.png?resize=32&classes=inline) gérez des **noms de domaine** ;
