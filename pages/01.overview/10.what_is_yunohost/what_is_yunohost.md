@@ -9,7 +9,7 @@ routes:
 
 ![YunoHost logo](image://YunoHost_logo_vertical.png?resize=400&id=ynhlogo)
 
-YunoHost is an **operating system** aiming for the simplest administration of a **server**, and therefore democratize [self-hosting](/selfhosting), while making sure it stays reliable, secure, ethical and lightweight. It is a copylefted libre software project maintained exclusively by volunteers. Technically, it can be seen as a distribution based on [Debian GNU/Linux](https://debian.org) and can be installed on [many kinds of hardware](/install).
+YunoHost is an **operating system** aiming to simplify **server administration** and therefore democratize [self-hosting](/selfhosting) while making sure it stays reliable, secure, ethical and lightweight. It is a copylefted libre software project maintained exclusively by volunteers. Technically, it can be seen as a distribution based on [Debian GNU/Linux](https://debian.org) and can be installed on [many kinds of hardware](/install).
 
 ## Features
 
@@ -37,7 +37,7 @@ All that was needed was an admin interface for Beudbeud's server to make somethi
 Noting the growing enthusiasm around YunoHost and around self-hosting in general, the original developers along with new contributors decided to start work on version 2, a more extensible, more powerful, more easy-to-use, and at that, one that makes a nice cup of fair-trade coffee for the elves of Lapland.
 
 The name **YunoHost** comes from the jargon "Y U NO Host". The [Internet meme](https://en.wikipedia.org/wiki/Internet_meme) should illustrate it:
-![](image://dude_yunohost.jpg)
+!["Dude Y U no host" meme](image://dude_yunohost.jpg)
 
 ## What YunoHost is not?
 
@@ -51,7 +51,7 @@ You can host your friends, your family and your company safely and with ease, bu
 
 Black and white YunoHost PNG logo by ToZz (400 × 400 px):
 
-![](image://ynh_logo_black_300dpi.png?resize=220)
-![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)
+![Black logo](image://ynh_logo_black_300dpi.png?resize=220)
+![White logo](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)
 
 Licence: CC-BY-SA 4.0
