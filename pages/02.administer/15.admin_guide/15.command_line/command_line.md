@@ -46,7 +46,7 @@ If you are **installing at home** (e.g. on a Raspberry Pi or OLinuXino or old co
 
 If your server is a remote server (VPS), your provider should have communicated you the IP address of the machine
 
-In any cases, if you already configured a domain name pointing to the appropriate IP, it's much better to use `yourdomain.tld` instead of the IP address.
+In any cases, if you already configured a domain name pointing to the appropriate IP, it's much better to use `your.domain.tld` instead of the IP address.
 
 
 ### Connecting
@@ -58,25 +58,23 @@ The SSH command typically looks like:
 ssh root@11.22.33.44
 
 # or after the postinstall:
-ssh admin@11.22.33.44
+ssh username@11.22.33.44
 
 # using the domain name instead of the IP (more convenient)
-ssh admin@votre.domaine.tld
+ssh username@your.domain.tld
 
 # using the local domain name instead of the IP (for local access)
-ssh admin@yunohost.local
+ssh username@yunohost.local
 
 # if you changed the SSH port
-ssh -p 2244 admin@votre.domaine.tld
+ssh -p 2244 username@your.domain.tld
 ```
 
 N.B. : `fail2ban` will ban your IP for 10 minutes if you perform 10 failed login attempts. If you need to unban the IP, have a look at the page about [Fail2Ban](/fail2ban)
 
 ## Which other users may connect to the server?
 
-By default, only the `admin` user can log in to YunoHost SSH server.
-
-YunoHost's users created via the administration interface are managed by the LDAP directory. By default, they can't connect via SSH for security reasons. Via the permissions system it is possible to allow the connection in SFTP or if it is really necessary in SSH. 
+By default, only YunoHost users in the `admins` group can log in to YunoHost's SSH and SFTP servers. Non-admin YunoHost users can't connect via SSH for security reasons. Via the permissions system it is possible to specifically grant SFTP or even SSH access to non-admin users. 
 
 ! Be careful who you give SSH access to. This increases even more the attack surface available to a malicious user.
 
