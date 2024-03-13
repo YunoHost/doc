@@ -1,0 +1,406 @@
+/* Box sizing FTW (http://www.paulirish.com/2012/box-sizing-border-box-ftw/) */
+*, *:before, *:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* micro clearfix (http://nicolasgallagher.com/micro-clearfix-hack/) */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+
+/** *************************************************** **/
+/** HTML ELEMENTS **/
+/** *************************************************** **/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2, h3 {
+    margin-top: 40px;
+}
+
+h1 {
+    margin: 30px 0;
+}
+
+pre {
+    padding: 0;
+}
+
+pre code {
+    font-family: 'CosmicSansNeueMono', monospace;
+}
+
+p {
+    margin: 18px 0 13px;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media all and (max-width: 640px) {
+    body {
+        font-size: 1.6em;
+    }
+    h1 { font-size: 200%; }
+    h2 { font-size: 160%; }
+    h3 { font-size: 120%; }
+    h4 { font-size: 100%; }
+}
+
+/* Fix glyphicons vertical alignement */
+.glyphicon {
+    top: 2px;
+}
+
+/* loader */
+.loader-content {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    padding-top: 10%;
+}
+.loader-content img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+
+/** *************************************************** **/
+/** MAIN CONTENT **/
+/** *************************************************** **/
+
+#wrapper {
+    max-width: 920px;
+    padding: 10px 20px 50px;
+    margin: 0 auto;
+}
+
+#wrapper #win,
+#wrapper #fail {
+    z-index: 1000;
+    position: absolute;
+    width: 880px;
+    top: 23px;
+}
+
+@media all and (min-width: 640px) {
+    #content {
+        /*text-align: justify;*/
+    }
+}
+
+#content img
+{
+	max-width:100%;
+}
+
+
+
+/** *************************************************** **/
+/** HEADER **/
+/** *************************************************** **/
+
+#logo {
+    position: relative;
+    float: right;
+    margin: 15px;
+}
+
+#logo img {
+    width: 80px;
+}
+
+#logo a {
+    opacity: 0.2;
+}
+
+#logo a:hover {
+    opacity: 0.4;
+}
+
+/* Back button (top left) */
+#previous {
+    color: #999;
+    font-size: 65%;
+    padding-right: 10px;
+}
+#previous:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/** *************************************************** **/
+/** HOMEPAGE **/
+/** *************************************************** **/
+.teasing-part {
+    display: none;
+    background: #222;
+    color: #eee; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.45);
+    z-index: 1000;
+    overflow: hidden
+}
+
+    .home-logo {
+        position: absolute;
+        top: 7%;
+        width: 100%;
+        text-align: center;  
+    }
+
+    .punchline {
+        position: absolute; 
+        top: 27%; 
+        width: 100%; 
+        text-align: center; 
+        font-weight: bold; 
+        margin: 50px auto 0  
+    }
+    .punchline p {
+        font-size: 3em;
+        margin-bottom: 4%
+    }
+
+    .yolobtn {
+        min-width: 200px; 
+        width: 20%; 
+        margin: 0 auto;
+        color: #222;
+        font-size: 1.6em
+    }
+
+    .main-links {
+        width: 100%;
+        position: absolute; 
+        top: 90%;
+        text-align: center;
+    }
+    .main-links a {
+        color: #777;
+    }
+
+.boring-part {}
+
+    .github-ribbon img {
+        position: fixed;
+        top: 0;
+        right: 0;
+        border: 0;
+    }
+
+    .home-panel {
+        width: 100%; 
+        max-height: 300px; 
+        overflow: hidden; 
+        border-radius: 5px; 
+        border: 1px solid rgba(0,0,0,0.15); 
+        box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+    }
+    .home-panel img {
+        width: 100%;
+        min-width: 580px;
+    }
+    .home-panel + .call-to-action {
+        width: auto; 
+        text-align: center;
+        min-width: 150px; 
+        margin: 40px auto 0;
+    }
+    .home-panel + .call-to-action .btn {
+        min-width: 150px;
+        font-size: 1.5em;
+        margin-bottom:0.5em;
+    }
+
+    .feature-pic {
+        width: 100%; 
+        max-height: 290px; 
+        overflow: hidden; 
+        border-radius: 5px; 
+        border: 1px solid rgba(0,0,0,0.15); 
+        box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+    }
+    .feature-pic img {
+        width: 100%;
+        min-width: 320px;
+        max-width: 635px
+    }
+
+    .button-list {}
+    .button-list .btn {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+    }
+    .button-list .btn.btn-support {background-color:#C6F;border-color:#C6F;}
+
+
+
+/** *************************************************** **/
+/** ONLINE EDITION FORM **/
+/** *************************************************** **/
+
+#form {
+    position: absolute;
+    top: 2%;
+    margin-left: -20px;
+    padding: 20px;
+    height: 88%;
+    width: 100%;
+    max-width: 920px;
+    z-index: 1;
+    border: 1px solid #eee;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(200, 200, 200, 0.25);
+}
+
+#form textarea {
+    font-family: 'CosmicSansNeueMono', monospace;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+#form textarea:focus {
+    border: none;
+}
+
+
+
+
+
+/** *************************************************** **/
+/** ONLINE EDITION ACTIONS **/
+/** *************************************************** **/
+.actions {
+    position: fixed;
+    bottom: 5px;
+    right: 15px;
+    /*width: 120px;*/
+    text-align: right;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .15s ease;
+}
+
+.actions.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.actions a,
+.actions button {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 10px;
+    display: none;
+}
+.actions.view #edit {display: block;}
+.actions.preview #send,
+.actions.preview #edit,
+.actions.preview #back {display: block;}
+.actions.edit #preview,
+.actions.edit #send,
+.actions.edit #back {display: block;}
+
+
+
+
+/* Paste to github */
+#gitarea {
+    width: 100%;
+    border-color: #CCC;
+    height: 5em;
+    color: #666;
+    font-size: 0.7em;
+    font-family: 'CosmicSansNeueMono', monospace;
+}
+
+
+
+/** *************************************************** **/
+/** LANGUAGE SWITCHER **/
+/** *************************************************** **/
+
+.languages {
+    position: fixed;
+    bottom: 5px;
+    left: 15px;
+    /*width: 120px;*/
+    text-align: left;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .15s ease;
+}
+
+.languages.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.languages.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.languages button,
+.languages a {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+
+
+
+/** *************************************************** **/
+/** FOOTER **/
+/** *************************************************** **/
+body > footer {
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 2em;
+    border-top: 1px solid #eee;
+    font-size: 75%;
+    color: #999;
+}
+body > footer a,
+body > footer a:link,
+body > footer a:visited {
+    color: #999;
+}
+

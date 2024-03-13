@@ -1,0 +1,32 @@
+name: Yunohost Home
+slug: yunohost-home
+type: theme
+version: 0.1.0
+description: YunoHost homepage
+icon: rebel
+author:
+  name: YunoHost contributors
+  email: yunohost@yunohost.org
+homepage: https://github.com/yuno-host-contributors/grav-theme-yunohost-home
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/yuno-host-contributors/grav-theme-yunohost-home/issues
+readme: https://github.com/yuno-host-contributors/grav-theme-yunohost-home/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in Menu
+        highlight: 1
+        default: 1
+        options:
+          1: PLUGIN_ADMIN.ENABLED
+          0: PLUGIN_ADMIN.DISABLED
+        validate:
+          type: bool
