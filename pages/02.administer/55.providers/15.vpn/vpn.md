@@ -14,6 +14,10 @@ routes:
 
 Since setting up a server at home is an uncommon practice, most Internet connections provided to individuals are unsuitable for this purpose especially if you desire to send mail. A net neutral VPN providing a dedicated fixed public IPv4 address and IPv6 addresses [can help to circumvent some limitations or difficulties](/vpn_advantage).
 
+! Note that except if you have a <a href="https://en.wikipedia.org/wiki/Threat_model">threat model</a> that implies to really be hidden, you don't need to hide your home IP address using a VPN. It's really not big deal to expose your IP address, don't trust the big commercial VPN company who tries to sell you a product by inducing fear.
+! And if you have such a threat model, especially against state threats, most of the providers listed below will not be of any help to you, since they will have to comply with police and judicial demands.
+! However, a VPN can help you to bypass port-forwarding limitation or to counter dynamic IP address and this page will help you for that!
+
 
 Below, you can find a list of providers compatible for self-hosting and especially those providing .cube format for VPNClient apps and those providing [internetcube](https://internetcu.be).
 
