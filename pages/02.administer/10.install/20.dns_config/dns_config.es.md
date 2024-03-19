@@ -65,7 +65,7 @@ Pero puede ser un poco más fácil entenderla viéndola de esta manera :
 |  AAAA   |   @                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (tu IPv6)    |
 |  AAAA   |   *                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (tu IPv6)    |
 | **SRV** | **_xmpp-client._tcp**  |  `0 5 5222 tu.dominio.tld.`                            |
-| **SRV** | **_xmpp-server._tcp**  |  `0 5 5269 tu.dominio.tld.`       |
+| **SRV** | **_xmpp-server._tcp**  |  `0 5 5269 tu.dominio.tld.`                            |
 |  CNAME  |   muc                  |  `@`                                                   |
 |  CNAME  |   pubsub               |  `@`                                                   |
 |  CNAME  |   vjud                 |  `@`                                                   |
