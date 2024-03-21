@@ -32,7 +32,7 @@ Here is a non-comprehensive list of internet service providers by country, which
  * [South Korea](/isp/country:kor)
 
 [/ui-tab]
-[ui-tab title="Europa"]
+[ui-tab title="Europe"]
 
  * [Belgium (nl)](/isp/country:belnl)
  * [Belgium (fr)](/isp/country:belfr)

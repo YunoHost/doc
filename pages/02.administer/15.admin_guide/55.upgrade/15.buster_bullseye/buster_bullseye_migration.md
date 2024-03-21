@@ -120,5 +120,5 @@ If you can't restore your app but your system has been restored, you probably sh
 yunohost tools regenconf nginx --force
 ```
 
-After that you should be able to restore your apps. Don't forget to force upgrade theme if you have 502 errors.
+After that you should be able to restore your apps. Don't forget to force upgrade them if you have 502 errors.
 

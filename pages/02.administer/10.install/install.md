@@ -468,6 +468,17 @@ For older devices, you might want to burn a CD/DVD. The software to use depends 
 
 * On GNU/Linux, you have plenty of choices, like [Brasero](https://wiki.gnome.org/Apps/Brasero) or [K3b](http://www.k3b.org/)
 [/ui-tab]
+[ui-tab title="Using Ventoy"]
+Ventoy will be useful if you can't sucessfully boot the Yunohost image using the other methods.
+
+[Ventoy](https://www.ventoy.net/) is a nice tool that makes it really easy to put multiple linux images on a USB stick. When the computer refuses to boot from an image on a usb stick, Ventoy will usually be able to boot it anyway!
+1. Install [Ventoy](https://www.ventoy.net/) on the USB stick. Refer to the [install instructions](https://www.ventoy.net/en/doc_start.html).
+    - This will create 2 partitions on the stick.
+3. Using your favorite file explorer app, copy the Yunohost image file on the big `Ventoy` partition (not "VTOYEFI")
+    - Don't use *Balena Etcher*, USBImager or `dd` for this!
+
+Later, when you'll boot the computer using this usb stick, Ventoy will appear and will list the images on the USB stick. Select the Yunohost image, then select GRUB2 launch option (or use whichever works for your computer 😉)
+[/ui-tab]
 {% endif %}
 [/ui-tabs]
 
@@ -505,7 +516,7 @@ Go to **Settings** > **Network**:
 ## [fa=plug /] Power up the board
 
 * Plug the ethernet cable (one side on your main router, the other on your board).
-    * For advanced users willing to configure the board to connect to WiFi instead, see for example [here](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
+    * For advanced users willing to configure the board to connect to WiFi instead, see for example [here](https://www.raspberrypi.com/documentation/computers/configuration.html#connect-to-a-wireless-network) ([or here prior to YunoHost12/bookworm](https://www.raspberryme.com/configurer-le-wifi-sur-un-pi-manuellement-a-laide-de-wpa_supplicant-conf/).
 * Plug the SD card in your board
 * (Optional) You can connect a screen+keyboard directly on your board if you want to troubleshoot the boot process or if you're more comfortable to "see what happens" or want a direct access to the board.
 * Power up the board
@@ -526,9 +537,11 @@ Start the virtual machine after selecting the YunoHost image.
 ## [fa=plug /] Boot the machine on your USB stick
 
 * Plug the ethernet cable (one side on your main router, the other on your server).
-* Boot up your server with the USB stick or a CD-ROM inserted, and select it as **bootable device** by pressing one of the following keys (hardware specific):
-`<ESC>`, `<F9>`, `<F10>`, `<F11>`, `<F12>` or `<DEL>`.
+* Boot up your server with the USB stick or a CD-ROM inserted, and select it as **bootable device**. Depending on your hardware, you will need to press one of the following keys:
+`<F9>`, `<F10>`, `<F11>`, `<F12>`, `<DEL>`, `<ESC>` or `<Alt>`.
     * N.B. : if the server was previously installed with a recent version of Windows (8+), you first need to tell Windows, to "actually reboot". This can be done somewhere in "Advanced startup options".
+
+!!! If you can't boot the Yunohost image, try using Ventoy (select "Ventoy" in the section "Flash the YunoHost image" above).
 {% endif %}
 
 {% if regular or virtualbox %}
@@ -592,6 +605,8 @@ Keep in mind that:
 
 [/ui-tab]
 [/ui-tabs]
+
+!!! If the Yunohost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install Yunohost on top. For instructions, at the top of this page, select "Remote server", then "VPS or dedicated server with Debian".
 {% endif %}
 
 
