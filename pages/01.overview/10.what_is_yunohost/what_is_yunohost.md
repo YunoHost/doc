@@ -23,14 +23,14 @@ YunoHost is an **operating system** aiming to simplify **server administration**
 - ![](image://icon-mail.png?resize=32&classes=inline) Includes a **full e-mail stack** <small>(Postfix, Dovecot, Rspamd, DKIM)</small>;
 - ![](image://icon-messaging.png?resize=32&classes=inline)... as well as **an instant messaging server** <small>(XMPP)</small>;
 - ![](image://icon-lock.png?resize=32&classes=inline) Manages **SSL certificates** <small>(based on Let's Encrypt)</small>;
-- ![](image://icon-shield.png?resize=32&classes=inline)... and **security systems** <small>(Fail2ban, yunohost-firewall)</small>.
+- ![](image://icon-shield.png?resize=32&classes=inline)... and **security systems** <small>(`fail2ban`, `yunohost-firewall`)</small>.
 
 ## Origin
 
 YunoHost was created in February 2012 after something like this:
 
-<blockquote><p>"Shit, I'm too lazy to reconfigure my mail server... Beudbeud, how were you able to get your little server running with LDAP?"</p>
-<small>Kload, February 2012</small></blockquote>
+> "Shit, I'm too lazy to reconfigure my mail server... Beudbeud, how were you able to get your little server running with LDAP?"
+> <small>Kload, February 2012</small>
 
 All that was needed was an admin interface for Beudbeud's server to make something usable, so Kload decided to develop one. Finally, after automating several configs and packaging in some web apps, YunoHost v1 was finished.
 

@@ -51,11 +51,12 @@ You can connect to your YunoHost XMPP account in different ways.
 - [Siskin IM](https://siskin.im/) (iOS)
 - [Kaidan](https://www.kaidan.im/) (Ubuntu Touch / Plasma Mobile)
 
-Here is an exhaustive list of XMPP clients: https://xmpp.org/software/clients.html
+Here is an exhaustive list of XMPP clients: <https://xmpp.org/software/clients.html>
 
 ## Encrypt conversations with OMEMO
 
 XMPP chats can be made secure and private using [OMEMO encryption](https://xmpp.org/extensions/xep-0384.html), for instance using Gajim:
+
 - Install `gajim` and the plugin `gajim-omemo`.
 - Turn on the plugin in `Tools > Plugins`.
 - Turn on the encryption in the chat with somebody who also has OMEMO.

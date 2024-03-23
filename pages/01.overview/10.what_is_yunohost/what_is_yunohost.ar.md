@@ -29,11 +29,10 @@ routes:
 
 ### أصل فكرة المشروع
 
-
 تعود نشأة فكرة مشروع واي يونوهوست YunoHost إلى شهر فيفري مِن عام 2012 بعد محادثة بدأت على هذا الشكل تقريبًا :
 
- <blockquote>« تبًا، لقد سئِمتُ مِن إعادة إعداد خادم البريد الإلكتروني ... Beudbeud، كيف قُمتَ بإعداد خادومك الجميل حول LDAP ؟ »
-<small>Kload، فيفري 2012</small></blockquote>
+> « تبًا، لقد سئِمتُ مِن إعادة إعداد خادم البريد الإلكتروني ... Beudbeud، كيف قُمتَ بإعداد خادومك الجميل حول LDAP ؟ »
+> <small>Kload، فيفري 2012</small>
 
 Il ne manquait en fait qu’une interface d’administration au serveur de Beudbeud pour en faire quelque chose d’exploitable, alors Kload a décidé de la développer. Finalement, après l’automatisation de quelques configurations et le packaging de quelques applications web, la première version de YunoHost était sortie.
 
@@ -43,7 +42,7 @@ Constatant l’engouement croissant autour de YunoHost et de l’auto-hébergeme
 
 ### الهدف
 
-يهدف واي يونوهوست YunoHost إلى تسهيل عملية تنصيب و تثبيت و إدارة أي خادمٍ لأكبر عدد ممكن مِن الناس و ذلك دون المساس بجودة و موثوقية البرمجيات. 
+يهدف واي يونوهوست YunoHost إلى تسهيل عملية تنصيب و تثبيت و إدارة أي خادمٍ لأكبر عدد ممكن مِن الناس و ذلك دون المساس بجودة و موثوقية البرمجيات.
 
 لم يُدَّخر أي جهد لتسهيل عملية التنصيب و الإنبساط وذلك على أكبر عدد ممكن مِن الأجهزة مهما اختلفت مميزات كل جهاز (في المنزل أو على خادوم إستضافة أو على خادوم شخصي إفتراضي)
 
@@ -79,4 +78,3 @@ Même si YunoHost est multi-domaine et multi-utilisateur, il reste **inappropri�
 Premièrement parce que le logiciel est trop jeune, donc non-testé et non-optimisé pour être mis en production pour des centaines d’utilisateurs en même temps. Et quand bien même, ce n’est pas le chemin que l’on souhaite faire suivre à YunoHost. La virtualisation se démocratise, et c’est une façon bien plus étanche et sécurisée de faire de la mutualisation.
 
 Vous pouvez héberger vos amis, votre famille ou votre entreprise sans problème, mais vous devez **avoir confiance** en vos utilisateurs, et ils doivent de la même façon avoir confiance en vous. Si vous souhaitez tout de même fournir des services YunoHost à des inconnus, **un VPS entier par utilisateur** sera la meilleure solution.
-

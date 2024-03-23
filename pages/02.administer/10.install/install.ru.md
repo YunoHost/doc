@@ -132,57 +132,56 @@ routes:
 
 [/div]
 
-
 {% if hardware != '' %}
 
 {% if wsl %}
 !! Эта настройка в основном предназначена для локального тестирования продвинутыми пользователями. Из-за ограничений на стороне WSL (в частности, изменение IP-адреса) самостоятельный хостинг с него может быть сложным и здесь описываться не будет.
 {% endif %}
 
-
 ## [fa=list-alt /] Предварительные условия
 
 {% if regular %}
-* x86-совместимое оборудование, предназначенное для YunoHost: ноутбук, неттоп, нетбук, настольный компьютер с 512 МБ оперативной памяти и емкостью 16 ГБ (не менее)
+
+- x86-совместимое оборудование, предназначенное для YunoHost: ноутбук, неттоп, нетбук, настольный компьютер с 512 МБ оперативной памяти и емкостью 16 ГБ (не менее)
 {% elseif rpi34 %}
-* Raspberry Pi 3 or 4
+- Raspberry Pi 3 or 4
 {% elseif rpi012 %}
-* Raspberry Pi 0, 1 или 2 с ОЗУ не менее 512 МБ 
+- Raspberry Pi 0, 1 или 2 с ОЗУ не менее 512 МБ
 {% elseif internetcube %}
-* Orange Pi PC+ или Olinuxino Lime 1 или 2
-* VPN с выделенным общедоступным IP-адресом и файлом `.cube`
+- Orange Pi PC+ или Olinuxino Lime 1 или 2
+- VPN с выделенным общедоступным IP-адресом и файлом `.cube`
 {% elseif arm_sup %}
-* Orange Pi PC+ или Olinuxino Lime 1 или 2
+- Orange Pi PC+ или Olinuxino Lime 1 или 2
 {% elseif arm_unsup %}
-* Плата ARM с объемом оперативной памяти не менее 512 МБ
+- Плата ARM с объемом оперативной памяти не менее 512 МБ
 {% elseif vps_debian %}
-* Выделенный или виртуальный частный сервер с Debian 11 (Bullseye) <small>(с **kernel >= 3.12**)</small> предустановленный, 512 МБ оперативной памяти и емкость 16 ГБ (не менее)
+- Выделенный или виртуальный частный сервер с Debian 11 (Bullseye) <small>(с **kernel >= 3.12**)</small> предустановленный, 512 МБ оперативной памяти и емкость 16 ГБ (не менее)
 {% elseif vps_ynh %}
-* Выделенный или виртуальный частный сервер с предустановленным YunoHost, 512 МБ оперативной памяти и емкостью не менее 16 ГБ
+- Выделенный или виртуальный частный сервер с предустановленным YunoHost, 512 МБ оперативной памяти и емкостью не менее 16 ГБ
 {% elseif virtualbox %}
-* Компьютер x86 с [установленным VirtualBox](https://www.virtualbox.org/wiki/Downloads) и достаточный объем оперативной памяти, чтобы иметь возможность запускать небольшую виртуальную машину с 1024 МБ оперативной памяти и емкостью 8 ГБ (как минимум).
+- Компьютер x86 с [установленным VirtualBox](https://www.virtualbox.org/wiki/Downloads) и достаточный объем оперативной памяти, чтобы иметь возможность запускать небольшую виртуальную машину с 1024 МБ оперативной памяти и емкостью 8 ГБ (как минимум).
 {% endif %}
 {% if arm %}
 *Источник питания (либо адаптер, либо кабель microUSB) для вашей платы;
-* Карта microSD: емкость 16 ГБ (не менее), [класса "A1"](https://club.dns-shop.ru/blog/t-127-kartyi-pamyati/59683-klassyi-skorosti-kart-pamyati-kak-razobratsya-i-chto-brat/#sub_Klass__skorosti__dlya__rabotyi__s__prilojeniyami) настоятельно рекомендуется (например, [эта SanDisk A1 карта](https://www.dns-shop.ru/product/dd976fc32e66ed20/karta-pamati-sandisk-ultra-microsdxc-64-gb-sdsqua4-064g-gn6mn/));
+- Карта microSD: емкость 16 ГБ (не менее), [класса "A1"](https://club.dns-shop.ru/blog/t-127-kartyi-pamyati/59683-klassyi-skorosti-kart-pamyati-kak-razobratsya-i-chto-brat/#sub_Klass__skorosti__dlya__rabotyi__s__prilojeniyami) настоятельно рекомендуется (например, [эта SanDisk A1 карта](https://www.dns-shop.ru/product/dd976fc32e66ed20/karta-pamati-sandisk-ultra-microsdxc-64-gb-sdsqua4-064g-gn6mn/));
 {% endif %}
 {% if regular %}
-* USB-накопитель емкостью не менее 1 ГБ или стандартный чистый компакт-диск
+- USB-накопитель емкостью не менее 1 ГБ или стандартный чистый компакт-диск
 {% endif %}
 {% if wsl %}
-* Windows 10 и выше
-* Права администратора
-* Подсистема Windows для Linux, устанавливаемая из *Включение или отключение компонентов Windows*
-* *Рекомендуется:* Приложение Windows Terminal (предварительный просмотр), установленное из магазина Microsoft Store. Намного лучше, чем стандартный терминал, поскольку он предлагает быстрые пути к дистрибутивам WSL.
+- Windows 10 и выше
+- Права администратора
+- Подсистема Windows для Linux, устанавливаемая из *Включение или отключение компонентов Windows*
+- *Рекомендуется:* Приложение Windows Terminal (предварительный просмотр), установленное из магазина Microsoft Store. Намного лучше, чем стандартный терминал, поскольку он предлагает быстрые пути к дистрибутивам WSL.
 {% endif %}
 {% if at_home %}
-* [хороший Интернет-провайдер](/isp), предпочтительно с хорошей и неограниченной восходящей полосой пропускания
+- [хороший Интернет-провайдер](/isp), предпочтительно с хорошей и неограниченной восходящей полосой пропускания
 {% if not virtualbox %}
-* Кабель Ethernet (RJ-45) для подключения вашего сервера к маршрутизатору. {% if rpi012 %} (Или, для Rasperry Pi Zero: и USB OTG или wifi-адаптер) {% endif %}
+- Кабель Ethernet (RJ-45) для подключения вашего сервера к маршрутизатору. {% if rpi012 %} (Или, для Rasperry Pi Zero: и USB OTG или wifi-адаптер) {% endif %}
 {% endif %}
-* Компьютер, чтобы прочитать это руководство, прошейте изображение и получите доступ к вашему серверу.
+- Компьютер, чтобы прочитать это руководство, прошейте изображение и получите доступ к вашему серверу.
 {% else %}
-* Компьютер или смартфон, чтобы прочитать это руководство и получить доступ к вашему серверу.
+- Компьютер или смартфон, чтобы прочитать это руководство и получить доступ к вашему серверу.
 {% endif %}
 
 {% if virtualbox %}
@@ -190,7 +189,9 @@ routes:
 {% endif %}
 
 {% if wsl %}
+
 ## Вступление
+
 WSL is a nice feature of Windows 10, making Linux pseudo-distributions available through command line. Let's say pseudo, because even though they are not really like virtual machines, they rely on virtualization capacities that make their integration with Windows almost seamless.
 Docker for Windows can now rely on WSL instead of Hyper-V, for example.
 
@@ -216,7 +217,7 @@ rmdir .\debian -R
 
 You can now access it: run `wsl.exe -d YunoHost`
 
-It is under Debian 9 Stretch, so let's upgrade it: 
+It is under Debian 9 Stretch, so let's upgrade it:
 
 ```bash
 # In WSL
@@ -225,6 +226,7 @@ sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade
 ```
+
 ## Prevent WSL from tweaking configuration files
 
 Edit `/etc/wsl.conf` and put the following code in it:
@@ -252,6 +254,7 @@ Debian on WSL does not have `systemd`, a service configuration software.
 This is a key element for YunoHost, and for any decent Debian distro (seriously MS, what the heck). Let's install it:
 
 1. Install dotNET runtime:
+
 ```bash
 # In WSL
 wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -263,6 +266,7 @@ sudo apt install -y dotnet-sdk-3.1
 ```
 
 2. Install [Genie](https://github.com/arkane-systems/genie):
+
 ```bash
 # In WSL
 # Add their repository
@@ -291,26 +295,29 @@ Always call `genie -s` while starting your distro.
 
 `wsl -d YunoHost -e genie -s`
 
-## Backup and restore the distro 
+## Backup and restore the distro
+
 ### Make your first distro backup
+
 As said before, there is no rollback capability. So let's export your fresh distro. In PowerShell:
 
-```
+```bash
 cd ~
 wsl --export YunoHost .\WSL\YunoHost.tar.gz
 ```
 
 ### In case of crash, delete and restore the whole distro
 
-```
+```bash
 cd ~
 wsl --unregister YunoHost
 wsl --import YunoHost .\WSL\YunoHost .\WSL\YunoHost.tar.gz --version 2
 ```
+
 {% endif %}
 
-
 {% if vps_ynh %}
+
 ## YunoHost VPS providers
 
 Here are some VPS providers supporting YunoHost natively :
@@ -329,8 +336,8 @@ Here are some VPS providers supporting YunoHost natively :
 [/div]
 {% endif %}
 
-
 {% if at_home %}
+
 ## [fa=download /] Download the {{image_type}} image
 
 {% if rpi012 %}
@@ -396,7 +403,7 @@ $(document).ready(function () {
              .replace('%7Bimage%7D', infos.image)
              .replace('{image}', infos.image)
              .replace('{version}', infos.version);
- 
+
             if (!infos.file.startsWith("http"))
                 infos.file="https://build.yunohost.org/"+infos.file;
             html = html.replace(/%7Bfile%7D/g, infos.file).replace(/{file}/g, infos.file);
@@ -413,17 +420,16 @@ $(document).ready(function () {
 });
 </script>
 
-
-
-
-
-
 {% if not virtualbox %}
 
 {% if arm %}
+
 ## ![microSD card with adapter](image://sdcard_with_adapter.png?resize=100,75&class=inline) Flash the {{image_type}} image
+
 {% else %}
+
 ## ![USB drive](image://usb_key.png?resize=100,100&class=inline) Flash the YunoHost image
+
 {% endif %}
 
 Now that you downloaded the image of {{image_type}}, you should flash it on {% if arm %}a microSD card{% else %}a USB stick or a CD/DVD.{% endif %}
@@ -457,16 +463,17 @@ Then run :
 # Replace /dev/mmcblk0 if the name of your device is different...
 dd if=/path/to/yunohost.img of=/dev/mmcblk0
 ```
+
 [/ui-tab]
 {% if regular %}
 [ui-tab title="Burning a CD/DVD"]
 For older devices, you might want to burn a CD/DVD. The software to use depends on your operating system.
 
-* On Windows, use [ImgBurn](http://www.imgburn.com/) to write the image file on the disc
+- On Windows, use [ImgBurn](http://www.imgburn.com/) to write the image file on the disc
 
-* On macOS, use [Disk Utility](http://support.apple.com/kb/ph7025)
+- On macOS, use [Disk Utility](http://support.apple.com/kb/ph7025)
 
-* On GNU/Linux, you have plenty of choices, like [Brasero](https://wiki.gnome.org/Apps/Brasero) or [K3b](http://www.k3b.org/)
+- On GNU/Linux, you have plenty of choices, like [Brasero](https://wiki.gnome.org/Apps/Brasero) or [K3b](http://www.k3b.org/)
 [/ui-tab]
 {% endif %}
 [/ui-tabs]
@@ -485,34 +492,28 @@ For older devices, you might want to burn a CD/DVD. The software to use depends 
 
 Go to **Settings** > **Network**:
 
-* Select `Bridged adapter`
-* Select your interface's name:
+- Select `Bridged adapter`
+- Select your interface's name:
     **wlan0** if you are connected wirelessly, or **eth0** otherwise.
 
 ![](image://virtualbox_2.png?class=inline)
 
 {% endif %}
 
-
-
-
-
-
-
-
-
 {% if arm %}
+
 ## [fa=plug /] Power up the board
 
-* Plug the ethernet cable (one side on your main router, the other on your board).
-    * For advanced users willing to configure the board to connect to WiFi instead, see for example [here](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
-* Plug the SD card in your board
-* (Optional) You can connect a screen+keyboard directly on your board if you want to troubleshoot the boot process or if you're more comfortable to "see what happens" or want a direct access to the board.
-* Power up the board
-* Wait a couple minutes while the board autoconfigure itself during the first boot
-* Make sure that your computer (desktop/laptop) is connected to the same local network (i.e. same internet box) as your server.
+- Plug the ethernet cable (one side on your main router, the other on your board).
+  - For advanced users willing to configure the board to connect to WiFi instead, see for example [here](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md).
+- Plug the SD card in your board
+- (Optional) You can connect a screen+keyboard directly on your board if you want to troubleshoot the boot process or if you're more comfortable to "see what happens" or want a direct access to the board.
+- Power up the board
+- Wait a couple minutes while the board autoconfigure itself during the first boot
+- Make sure that your computer (desktop/laptop) is connected to the same local network (i.e. same internet box) as your server.
 
 {% elseif virtualbox %}
+
 ## [fa=plug /] Boot up the virtual machine
 
 Start the virtual machine after selecting the YunoHost image.
@@ -521,17 +522,18 @@ Start the virtual machine after selecting the YunoHost image.
 
 ! If you encounter the error "VT-x is not available", you probably need to enable Virtualization in the BIOS of your computer.
 
-
 {% else %}
+
 ## [fa=plug /] Boot the machine on your USB stick
 
-* Plug the ethernet cable (one side on your main router, the other on your server).
-* Boot up your server with the USB stick or a CD-ROM inserted, and select it as **bootable device** by pressing one of the following keys (hardware specific):
+- Plug the ethernet cable (one side on your main router, the other on your server).
+- Boot up your server with the USB stick or a CD-ROM inserted, and select it as **bootable device** by pressing one of the following keys (hardware specific):
 `<ESC>`, `<F9>`, `<F10>`, `<F11>`, `<F12>` or `<DEL>`.
-    * N.B. : if the server was previously installed with a recent version of Windows (8+), you first need to tell Windows, to "actually reboot". This can be done somewhere in "Advanced startup options".
+  - N.B. : if the server was previously installed with a recent version of Windows (8+), you first need to tell Windows, to "actually reboot". This can be done somewhere in "Advanced startup options".
 {% endif %}
 
 {% if regular or virtualbox %}
+
 ## [fa=rocket /] Launch the graphical install
 
 You should see a screen like this:
@@ -554,9 +556,10 @@ You should see a screen like this:
 
 The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.
 
-With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/external_storage). 
+With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/external_storage).
 
-### Summary of the steps in expert mode:
+### Summary of the steps in expert mode
+
   1. Select `Expert graphical install`.
   2. Select your language, location, keyboard layout and possibly your timezone.
   3. Partition your disks. This is where you can set up a RAID or encrypt all or part of the server.
@@ -577,38 +580,45 @@ If you have one or more hard drives to store data, you can choose to mount it on
 | `/home/yunohost.backup/archives` | YunoHost backups to be placed ideally elsewhere than on the disks that manage the data |
 | `/home/yunohost.app` | Heavy data from YunoHost applications (nextcloud, matrix...) |
 | `/home/yunohost.multimedia` | Heavy data shared between several applications |
-| `/var/mail` | User mail
+| `/var/mail` | User mail |
 
 If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/external_storage).
 
 ### About encryption
+
 Be aware that if you encrypt all or part of your disks, you will have to type the passphrase every time you restart your server, which can be a problem if you are not on site. There are however solutions (quite difficult to implement) that allow you to type the passphrase via SSH or via a web page (search for "dropbear encrypted disk").
 
 ### About RAID
+
 Keep in mind that:
- * the disks in your RAIDs must be of different brands, wear and tear or batches (especially if they are SSDs)
- * a RAID 1 (even without a spare) is more reliable than a RAID 5 from a probability point of view
- * hardware raids are dependent on the raid card, if the card fails you will need a replacement to read and rebuild the array
+
+- the disks in your RAIDs must be of different brands, wear and tear or batches (especially if they are SSDs)
+- a RAID 1 (even without a spare) is more reliable than a RAID 5 from a probability point of view
+- hardware raids are dependent on the raid card, if the card fails you will need a replacement to read and rebuild the array
 
 [/ui-tab]
 [/ui-tabs]
 {% endif %}
 
-
 {% if rpi012 %}
+
 ## [fa=bug /] Connect to the board and hotfix the image
+
 Raspberry Pi 1 and 0 are not totally supported due to [compilation issues for this architecture](https://github.com/YunoHost/issues/issues/1423).
 
 However, it is possible to fix by yourself the image before to run the initial configuration.
 
 To achieve this, you need to connect on your raspberry pi as root user [via SSH](/ssh) with the temporary password `yunohost`:
-```
+
+```bash
 ssh root@yunohost.local
 ```
+
 (or `yunohost-2.local`, and so on if multiple YunoHost servers are on your network)
 
 Then run the following commands to work around the metronome issue:
-```
+
+```bash
 mv /usr/bin/metronome{,.bkp}   
 mv /usr/bin/metronomectl{,.bkp} 
 ln -s /usr/bin/true /usr/bin/metronome
@@ -616,18 +626,20 @@ ln -s /usr/bin/true /usr/bin/metronomectl
 ```
 
 And this one to work around the upnpc issue:
-```
+
+```bash
 sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/firewall.py
 ```
 
-! This last command need to be run after each yunohost upgrade :/
+! This last command need to be run after each YunoHost upgrade :/
 
 {% elseif arm_unsup %}
+
 ## [fa=terminal /] Connect to the board
 
 Next you need to [find the local IP address of your server](/finding_the_local_ip) to connect as root user [via SSH](/ssh) with the temporary password `1234`.
 
-```
+```bash
 ssh root@192.168.x.xxx
 ```
 
@@ -635,8 +647,8 @@ ssh root@192.168.x.xxx
 
 {% endif %}
 
-
 {% if vps_debian or arm_unsup %}
+
 ## [fa=rocket /] Run the install script
 
 - Open a command line prompt on your server (either directly or [through SSH](/ssh))
@@ -692,15 +704,15 @@ You can also perform the postinstallation with the command `yunohost tools posti
 
 {% if not internetcube %}
 
-##### [fa=globe /] Main domain
+### [fa=globe /] Main domain
 
 This will be the domain used by your server's users to access the **authentication portal**. You can later add other domains, and change which one is the main domain if needed.
 
 {% if not wsl %}
 
-* If you're new to self-hosting and do not already have a domain name, we recommend using a **.nohost.me** / **.noho.st** / **.ynh.fr** (e.g. `homersimpson.nohost.me`). Provided that it's not already taken, the domain will be configured automatically and you won't need any further configuration step. Please note that the downside is that you won't have full-control over the DNS configuration.
+- If you're new to self-hosting and do not already have a domain name, we recommend using a **.nohost.me** / **.noho.st** / **.ynh.fr** (e.g. `homersimpson.nohost.me`). Provided that it's not already taken, the domain will be configured automatically and you won't need any further configuration step. Please note that the downside is that you won't have full-control over the DNS configuration.
 
-* If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/dns_config).
+- If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/dns_config).
 
 !!! Yes, you *have to* configure a domain name. If you don't have any domain name and don't want a **.nohost.me** / **.noho.st** / **.ynh.fr** either, you can set up a dummy domain such as `yolo.test` and tweak your **local** `/etc/hosts` file such that this dummy domain [points to the appropriate IP, as explained here](/dns_local_network).
 
@@ -711,24 +723,23 @@ For example, `ynh.wsl`. The tricky part is advertising this domain to your host.
 
 Alter your `C:\Windows\System32\drivers\etc\hosts` file. You should have a line starting by `::1`, update it or add it if needed to get:
 
-```
+```text
 ::1    ynh.wsl localhost
 ```
 
 If you want to create subdomains, do not forget to add them in the `hosts` file too:
 
-```
+```text
 ::1    ynh.wsl subdomain.ynh.wsl localhost
 ```
 
 {% endif %}
 
-##### [fa=key /] First user
+### [fa=key /] First user
 
 [Since YunoHost 11.1](https://forum.yunohost.org/t/yunohost-11-1-release-sortie-de-yunohost-11-1/23378), the first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/ssh) or [**SFTP**](/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld` : these emails may be used to send technical informations or alerts. You can later add additional users, which you can also add to the Admins group.
 
 This user replaces the old `admin` user, which some old documentation page may still refer to. In which case : just replace `admin` with your username.
-
 
 ## [fa=stethoscope /] Run the initial diagnosis
 
@@ -757,10 +768,12 @@ To run a diagnosis, go on Web Admin in the Diagnosis section. Click Run initial 
 
 [/ui-tab]
 [ui-tab title="From the command line"]
-```
+
+```bash
 yunohost diagnosis run
 yunohost diagnosis show --issues --human-readable
 ```
+
 [/ui-tab]
 [/ui-tabs]
 
@@ -781,9 +794,11 @@ Go in Domains > Click on your domain > SSL Certificate
 
 [/ui-tab]
 [ui-tab title="From the command line"]
-```
+
+```bash
 yunohost domain cert install
 ```
+
 [/ui-tab]
 [/ui-tabs]
 

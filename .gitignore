@@ -1,7 +1,9 @@
 /*
+!.github
 !/pages
 !/images
 !/themes
 !/Dockerfile
 !/docker-compose.yml
 !/dev/plugins
+!/markdownlint-rules-grav-pages

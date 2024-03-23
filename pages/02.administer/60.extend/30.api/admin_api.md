@@ -7,9 +7,10 @@ routes:
   default: '/admin_api'
 ---
 
-All command line actions can also be ran from the web API. The API is available at https://your.server/yunohost/api.
+All command line actions can also be ran from the web API. The API is available at <https://your.server/yunohost/api>.
 
 ## Test with curl
+
 You must first retrieve a login cookie thanks to the /login route to perform the other actions.
 
 ```bash
@@ -29,7 +30,7 @@ curl -k -i -H "Accept: application/json" \
 
 ## Test with our swagger doc
 
- 1. Login on the [Webadmin of demo.yunohost.org](https://demo.yunohost.org/yunohost/admin/)
+ 1. Login on the [Webadmin of `demo.yunohost.org`](https://demo.yunohost.org/yunohost/admin/)
  2. Use the `Try it out` button on the API endpoint you want to test
 
 <div id="swagger-ui"></div>
@@ -38,10 +39,10 @@ curl -k -i -H "Accept: application/json" \
     display: none;
 }
 </style>
-<link rel="stylesheet" type="text/css" href="/user/themes/yunohost-docs/css/swagger-ui.css" />
-<script src="/user/themes/yunohost-docs/js/swagger-ui-bundle.js" charset="UTF-8"> </script>
-<script src="/user/themes/yunohost-docs/js/swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
-<script src="/user/themes/yunohost-docs/js/openapi.js" type="text/javascript" language="javascript"></script>
+<link rel="stylesheet" type="text/css" href="/user/themes/YunoHost-docs/css/swagger-ui.css" />
+<script src="/user/themes/YunoHost-docs/js/swagger-ui-bundle.js" charset="UTF-8"> </script>
+<script src="/user/themes/YunoHost-docs/js/swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
+<script src="/user/themes/YunoHost-docs/js/openapi.js" type="text/javascript" language="javascript"></script>
 <script>
     window.onload = function() {
   //<editor-fold desc="Changeable Configuration Block">
@@ -64,4 +65,3 @@ curl -k -i -H "Accept: application/json" \
 };
 
 </script>
-

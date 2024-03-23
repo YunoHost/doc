@@ -11,28 +11,27 @@ routes:
 
 ## Introduzione
 
-
 Oltre al monitoraggio delle dimensioni delle partizioni (che controlla che non siano troppo piccole), YunoHost non si occupa, al momento, dell'organizzazione delle partizioni dei vostri dischi.
 
 Se la vostra configurazione è basata su una board ARM con scheda SD, oppure il server dispone di un disco SSD di piccole dimensioni, potreste, per motivi di spazio o di sicurezza, voler aggiungere uno o più dischi al vostro server.
 
 ! Se avete esaurito lo spazio sul disco del vostro server, potete provare con il comando `apt clean` per tentare di recuperarne un po' e avere modo di seguire le istruzioni di seguito riportate.
- 
+
 Troverete qui le istruzioni per riuscire a spostare i vostri dati su un disco esterno in modo corretto e con un impatto minimo sul funzionamento di YunoHost. Potete eseguire lo spostamento durante l'installazione o in un secondo momento, quando si presenterà la necessità di più spazio o temete per l'affidabilità della scheda SD.
 
 !!! Il procedimento presentato qui inizia montando l'unica partizione del disco, in seguito utilizza una o più sotto-cartelle per creare diversi punti di montaggio sull'albero del file system del pc. Questo metodo è preferibile rispetto al utilizzo di link simbolici poiché questi possono entrare in conflitto con alcune applicazioni, tra le quali il sistema di backup di YunoHost. Potreste scegliere di montare le partizioni invece che le sotto-cartelle, ma sorge la difficoltà di prevedere la stima della dimensione della cartella.
 
 ## [fa=list-alt /] Prerequisiti
 
-* Prevedere un periodo temporale nel quale gli utenti del vostro server possono sopportare una interruzione dei servizi. I passaggi da compiere, anche se relativamente semplici, sono tecnicamente complessi e necessitano di un lasso di tempo **da dedicare in modo esclusivo**.
+- Prevedere un periodo temporale nel quale gli utenti del vostro server possono sopportare una interruzione dei servizi. I passaggi da compiere, anche se relativamente semplici, sono tecnicamente complessi e necessitano di un lasso di tempo **da dedicare in modo esclusivo**.
 
-* Conoscenza della connessione come root sul server anche via [SSH](/ssh). (Nota bene: se siete connessi come utente `admin`, potete passare root con il comando `sudo su`)
+- Conoscenza della connessione come root sul server anche via [SSH](/ssh). (Nota bene: se siete connessi come utente `admin`, potete passare root con il comando `sudo su`)
 
-* Conoscere i comandi `cd`, `ls`, `mkdir`, `rm`.
-    
-* Disporre di un backup nel caso le cose non vadano come previsto
+- Conoscere i comandi `cd`, `ls`, `mkdir`, `rm`.
 
-* Disporre di un disco aggiuntivo (SSD, hard disk, chiavetta USB) collegato al server via USB o SATA
+- Disporre di un backup nel caso le cose non vadano come previsto
+
+- Disporre di un disco aggiuntivo (SSD, hard disk, chiavetta USB) collegato al server via USB o SATA
 
 ## 1. Identificare le cartelle da spostare
 
@@ -53,7 +52,6 @@ Di seguito, alcuni esempi di percorsi che possono essere di notevoli dimensioni 
 | `/var/log`                  | Log degli eventi (messaggi di errore, connessioni...)                                        | Questa cartella dovrebbe essere di dimensioni ridotte, in caso contrario potrebbe esserci un errore nella rotazione dei log che deve essere risolto.                  |
 | `/opt`                      | Programmi e dipendenze di alcune applicazioni YunoHost                                       | Per motivi di velocità è consigliato lasciare sul disco principale. Per le applicazioni nodejs è possibile recuperare dello spazio cancellando le versioni non in uso |
 | `/boot`                     | Kernel e file di avvio                                                                       | Non spostare se non perfettamente a conoscenza delle possibili conseguenze. Si possono eliminare vecchi kernel non in uso                                             |
-
 
 ## 2. Collegare e identificare il disco
 
@@ -116,6 +114,7 @@ Sostituite `miodisco` con il nome della prima partizione del disco di destinazio
 Contrariamente a Windows, dove i dischi sono contraddistinti da lette (C:/), in linux i dischi sono accessibili dall'albero del gestore dei file. "Montare" un disco significa renderlo accessibile nell'albero dei file. Sceglieremo di montare il disco in `/mnt/hdd` ma possiamo anche assegnare un nome di fantasia. (Ad esempio `/mnt/disco` ...).
 
 Iniziamo creando la directory:
+
 ```bash
 mkdir /mnt/hdd
 ```
@@ -128,11 +127,12 @@ mount /dev/miodisco /mnt/hdd
 
 (In questo caso, `/dev/miodisco` corrisponde alla prima partizione del disco)
 
-## 5. Montare una cartella /mnt/hdd nella cartella che contiene i dati da spostare
+## 5. Montare una cartella `/mnt/hdd` nella cartella che contiene i dati da spostare
 
 Ipotizzeremo, di seguito, lo spostamento delle mail e di una notevole quantità di dati delle applicazioni, che si trovano in `/home/yunohost.app`.
 
 ### 5.1 Creazione delle sotto cartelle sul disco
+
 Iniziamo creando due cartelle nel disco di destinazione.
 
 ```bash
@@ -141,6 +141,7 @@ mkdir -p /mnt/hdd/var/mail
 ```
 
 ### 5.2 Passaggio alla modalità manutenzione
+
 Precauzionalmente portiamo nello stato di manutenzione le applicazioni che potrebbero scrivere dei dati nella cartella che vogliamo spostare.
 
 Ad esempio, per nextcloud:
@@ -206,10 +207,9 @@ Dopo aver impartito i comandi di avvio, le applicazioni e i servizi sfrutteranno
 
 ## 6. Automatizzare il montaggio all'avvio
 
-
 Fino ad ora, abbiamo montato manualmente il disco e le sotto cartelle. È però necessario  configurare il sistema affinché il disco esterno venga montato in automatico ad ogni avvio.
 
-Se i test di velocità sono soddisfacenti, bisogna rendere definitivo il punto di montaggio. In caso contrario affrettatevi a fare dietro front iniziando a ripristinare la modalità di manutenzione. 
+Se i test di velocità sono soddisfacenti, bisogna rendere definitivo il punto di montaggio. In caso contrario affrettatevi a fare dietro front iniziando a ripristinare la modalità di manutenzione.
 
 Iniziamo cercando l'UUID (universal identifier, identificatore universale) del nostro disco:
 
@@ -240,6 +240,7 @@ Salvate le modifiche con CTRL+x e `o`.
 Riavviate il server per assicurarvi che il disco e le sotto cartelle vengano montate in automatico.
 
 ## 7. Cancellare i dati precedenti
+
 Quando siete sicuri che la configurazione sia corretta, potete procedere alla cancellazione della configurazione creata nel punto 5.3:
 
 ```bash
@@ -250,4 +251,3 @@ rm -Rf /var/mail.bkp
 ### ![](image://tada.png?resize=32&classes=inline) Complimenti!!!
 
 Se siete giunti fino qui senza incidenti, avete configurato un server che sfrutta uno o più dischi per il salvataggio dei dati.
-

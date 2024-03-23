@@ -7,9 +7,9 @@ routes:
   default: '/domains'
 ---
 
-Yunohost permette l'installazione e la gestione di più domini sullo stesso server. Potrete quindi ospitare, ad esempio, un blog e una istanza Nextcloud sul dominio primario yolo.com, e un altro servizio su un secondo dominio swag.nohost.me. Ogni dominio viene automaticamente configurato affinché possa gestire i servizi web, le mail, e un servizio di chat XMPP.
+YunoHost permette l'installazione e la gestione di più domini sullo stesso server. Potrete quindi ospitare, ad esempio, un blog e una istanza Nextcloud sul dominio primario yolo.com, e un altro servizio su un secondo dominio swag.nohost.me. Ogni dominio viene automaticamente configurato affinché possa gestire i servizi web, le mail, e un servizio di chat XMPP.
 
-I domini possono essere configurati a partire dalla sezione 'Domini' della pagina di amministrazione web, o attraverso la sezione `yunohost domain` da linea di comando. 
+I domini possono essere configurati a partire dalla sezione 'Domini' della pagina di amministrazione web, o attraverso la sezione `yunohost domain` da linea di comando.
 
 Ogni volta che aggiungete un dominio, sia esso vostro o del quale abbiate facoltà di gestione, dovete averne il pieno controllo per la poter effettuare la sua [configurazione DNS](/dns_config). Fanno eccezione i [domini in .nohost.me, .noho.st et ynh.fr](/dns_nohost_me) offerti dal progetto YunoHost, che possono essere direttamente integrati nel vostro server YunoHost grazie alla configurazione automatica di un servizio DynDns. Al fine di impedire abusi e limitare i costi, una instanza YunoHost può essere configurata con un solo dominio offerto, tuttavia potete aggiungere tutti i suoi sotto domini che desiderate. Ad esempio, se scegliete il dominio `exemple.ynh.fr` potrete in un secondo tempo aggiungere i domini `video.exemple.ynh.fr` o `www.exemple.ynh.fr` o qualsiasi altro sottodominio che possa servirvi.
 
@@ -49,10 +49,3 @@ YunoHost può generare una configurazione DNS raccomandata per ogni dominio che 
 ## Certificati SSL/HTTPS
 
 Un altro importante aspetto della configurazione dei domini è quello riguardante il certificato SSL/HTTPS. YuhoHost integra Let's Encrypt, potete installare il certificato e impostare il rinnovo automatico. La documentazione relativa e altre informazioni si trovano alla pagina [certificati](/certificate).
-
-
-
-
-
-
-

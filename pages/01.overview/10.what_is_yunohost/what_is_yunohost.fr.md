@@ -23,14 +23,14 @@ YunoHost est un **système d’exploitation** qui vise à simplifier autant que 
 - ![](image://icon-mail.png?resize=32&classes=inline) fourni avec un **serveur mail complet** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
 - ![](image://icon-messaging.png?resize=32&classes=inline) ... ainsi qu'un **serveur de messagerie instantanée** <small>(XMPP)</small> ;
 - ![](image://icon-lock.png?resize=32&classes=inline) gère les **certificats SSL** <small>(basé sur Let's Encrypt)</small> ;
-- ![](image://icon-shield.png?resize=32&classes=inline) ... et des **systèmes de sécurité** <small>(Fail2Ban, yunohost-firewall)</small>.
+- ![](image://icon-shield.png?resize=32&classes=inline) ... et des **systèmes de sécurité** <small>(`fail2ban`, `yunohost-firewall`)</small>.
 
 ## Origine
 
 YunoHost est un projet né en février 2012 à la suite d’à peu près ça :
 
- <blockquote><p>« Merde, j’ai la flemme de me reconfigurer un serveur mail... Beudbeud, comment t’as fait pour configurer ton joli serveur sous LDAP ? »</p>
-<small>Kload, février 2012</small></blockquote>
+> « Merde, j’ai la flemme de me reconfigurer un serveur mail... Beudbeud, comment t’as fait pour configurer ton joli serveur sous LDAP ? »
+> <small>Kload, février 2012</small>
 
 Il ne manquait en fait qu’une interface d’administration au serveur de Beudbeud pour en faire quelque chose d’exploitable, alors Kload a décidé de la développer. Finalement, après l’automatisation de quelques configurations et le packaging de quelques applications web, la première version de YunoHost était sortie.
 

@@ -18,8 +18,8 @@ Potete scaricare FileZilla [da questa pagina](https://filezilla-project.org/down
 Installate e lanciate *FileZilla*
 
 ## Configurazione
-    
-1. Cliccate sull'icona in alto a sinistra *Site Manager*. 
+
+1. Cliccate sull'icona in alto a sinistra *Site Manager*.
 
    ![Pagina principale di Filezilla](image://filezilla_1.png)
 
@@ -27,7 +27,7 @@ Installate e lanciate *FileZilla*
 
    ![Schermata del site manager](image://filezilla_2.png)
 
-3. Apparirà un avviso poiché vi state collegando per la prima volta al server. *Se è la prima connessione, potete ignorarlo* 
+3. Apparirà un avviso poiché vi state collegando per la prima volta al server. *Se è la prima connessione, potete ignorarlo*
 
    ![Avviso per la fingerprint del server sconosciuta](image://filezilla_3.png)
 
@@ -35,9 +35,9 @@ Installate e lanciate *FileZilla*
 
    ![schermata per la richiesta della password](image://filezilla_4.png)
 
-5. Una volta salvato nei segnalibri, il server verrà salvato e vedrete questa schermata. 
+5. Una volta salvato nei segnalibri, il server verrà salvato e vedrete questa schermata.
 
-   ![Schermata del "site manager" con il server appena aggiunto](image://filezilla_5.png) 
+   ![Schermata del "site manager" con il server appena aggiunto](image://filezilla_5.png)
 
 ## Utilizzo
 
@@ -55,12 +55,12 @@ Installate e lanciate *FileZilla*
 
 ![Copia dei backup da YunoHost ad un computer locale](image://filezilla_8.png)
 
-----
+---
 
 Link a fonti esterne:
 
-* [Documentazione ufficiale](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en))
-* [Tutorial generale su FileZilla](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)
+- [Documentazione ufficiale](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en))
+- [Tutorial generale su FileZilla](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)
 
 ## Alternative a FileZilla
 
@@ -70,13 +70,13 @@ Qualsiasi distribuzione recente di GNU/Linux dovrebbe permettere di accedere al 
 
 Nautilus di Gnome3 integra delle funzionalità simili a FileZilla:
 
-* <https://help.gnome.org/users/gnome-help/stable/nautilus-connect.html.en>
-* <https://www.techrepublic.com/article/how-to-use-linux-file-manager-to-connect-to-an-sftp-server/>
+- <https://help.gnome.org/users/gnome-help/stable/nautilus-connect.html.en>
+- <https://www.techrepublic.com/article/how-to-use-linux-file-manager-to-connect-to-an-sftp-server/>
 
 ### Windows
 
-* [WinSCP](https://winscp.net/) è un ottimo programma per Windows
+- [WinSCP](https://winscp.net/) è un ottimo programma per Windows
 
 ### MacOS
 
-* [Cyberduck](https://cyberduck.io/) un programma libero per macOS 
+- [Cyberduck](https://cyberduck.io/) un programma libero per macOS
