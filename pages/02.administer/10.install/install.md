@@ -177,7 +177,7 @@ Select the hardware on which you want install YunoHost :
 {% if at_home %}
 - A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
 {% if not virtualbox %}
-- An ethernet cable (RJ-45) to connect your server to your router. {% if rpi012 %} (Or, for Rasperry Pi Zero : and USB OTG or a wifi Dongle) {% endif %}
+- An ethernet cable (RJ-45) to connect your server to your router. {% if rpi012 %} (Or, for Raspberry Pi Zero : and USB OTG or a wifi Dongle) {% endif %}
 {% endif %}
 - A computer to read this guide, flash the image and access your server.
 {% else %}
@@ -341,7 +341,7 @@ Here are some VPS providers supporting YunoHost natively :
 ## [fa=download /] Download the {{image_type}} image
 
 {% if rpi012 %}
-! Support for Rasperry Pi 0, 1 and 2 is unfortunately slowly dropping : building fresh images is complex, and RPi 0, 1 and 2 are ARM-32bit systems which will get more and more deprecated over time. Our pre-installed images are quite old. We recommend instead to [download the official Rasperry Pi OS Lite (**32-bit**, **Bullseye**)](https://downloads.raspberrypi.org/raspios_lite_armhf/images/?C=M;O=D) and installing YunoHost on top [using similar instructions as for other ARM boards](/install/hardware:arm)
+! Support for Raspberry Pi 0, 1 and 2 is unfortunately slowly dropping : building fresh images is complex, and RPi 0, 1 and 2 are ARM-32bit systems which will get more and more deprecated over time. Our pre-installed images are quite old. We recommend instead to [download the official Raspberry Pi OS Lite (**32-bit**, **Bullseye**)](https://downloads.raspberrypi.org/raspios_lite_armhf/images/?C=M;O=D) and installing YunoHost on top [using similar instructions as for other ARM boards](/install/hardware:arm)
 {% endif %}
 
 {% if virtualbox or regular %}
