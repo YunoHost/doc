@@ -27,7 +27,6 @@ The [Community](/community) is here for you if you need some help : come [chat](
 
 [/center]
 
-
 [center]
 <a href="/" class="btn btn-lg inline"><i class="fa fa-fw fa-arrow-left"></i> Go back to the homepage</a>
 [/center]

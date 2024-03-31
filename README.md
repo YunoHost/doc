@@ -1,20 +1,20 @@
 # YunoHost Documentation
 
-* [Web Site](https://yunohost.org)
-* Based on [Grav](https://getgrav.org/)
+- [Web Site](https://yunohost.org)
+- Based on [Grav](https://getgrav.org/)
 
 Please report [issues on YunoHost bugtracker](https://github.com/YunoHost/issues/issues).
 
-## Note about package documentation
+## Note on package documentation
 
 Package documentation should be done in the package repository itself, under the `/doc` folder.  
 You can learn about it here: <https://yunohost.org/packaging_app_doc>
 
-# Contributing
+## Contributing
 
 This repo use a **submodule** to provide the theme. So when you clone use:
 
-```shell
+```bash
 git clone --recursive https://github.com/YunoHost/doc.git
 ```
 
@@ -22,11 +22,11 @@ You can refer to the page on [writing documentation](https://yunohost.org/write_
 
 If you know docker, you can run:
 
-```
+```bash
 docker-compose up
 ```
 
-## Regenerate the CSS
+### Regenerate the CSS
 
 We use scss to manage the CSS. If you want to change it, you must rebuild it.
 

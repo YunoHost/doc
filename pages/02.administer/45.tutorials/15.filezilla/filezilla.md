@@ -55,12 +55,12 @@ Install the program and run *Filezilla*.
 
 ![Copy backups from YunoHost to local computer](image://filezilla_8.png)
 
-----
+---
 
 Sources
 
-* [Official documentation](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en))
-* [General tutorial about using FileZilla](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)
+- [Official documentation](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en))
+- [General tutorial about using FileZilla](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)
 
 ## Alternatives to Filezilla
 
@@ -70,14 +70,14 @@ From any recent GNU/Linux, you should be able to use the `file manager` to reach
 
 Nautilus from Gnome3 and Dolphin from KDE have features similar to FileZilla, out of the box.
 
-* <https://help.gnome.org/users/gnome-help/stable/nautilus-connect.html.en>
-* <https://docs.kde.org/stable5/en/dolphin/dolphin/location-bar.html#location-bar-editable-kioslaves>
-* <https://www.techrepublic.com/article/how-to-use-linux-file-manager-to-connect-to-an-sftp-server/>
+- <https://help.gnome.org/users/gnome-help/stable/nautilus-connect.html.en>
+- <https://docs.kde.org/stable5/en/dolphin/dolphin/location-bar.html#location-bar-editable-kioslaves>
+- <https://www.techrepublic.com/article/how-to-use-linux-file-manager-to-connect-to-an-sftp-server/>
 
 ### Windows
 
-* [WinSCP](https://winscp.net/) is also a nice candidate for Windows
+- [WinSCP](https://winscp.net/) is also a nice candidate for Windows
 
 ### macOS
 
-* [Cyberduck](https://cyberduck.io/) is a free software available on macOS
+- [Cyberduck](https://cyberduck.io/) is a free software available on macOS

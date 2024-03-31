@@ -23,13 +23,13 @@ This page is dedicated to help you migrating an instance from YunoHost 2.7.x (ru
 
 ## Migration procedure
 
-#### From the webadmin
+### From the webadmin
 
 After upgrading to 2.7.14, go to Tools > Migrations to access the migrations interface. You will have to read carefully and accept the disclaimer then launch the migration. The logs will be shown in the message bar (you can hover it to see the whole history).
 
-#### From the command line
+### From the command line
 
-After upgrading to 2.7.14, run: 
+After upgrading to 2.7.14, run:
 
 ```bash
 sudo yunohost tools migrations migrate
@@ -39,28 +39,28 @@ then read carefully and accept the disclaimer.
 
 ## During the migration
 
-Depending on your hardware and packages installed, the migration might take up to a few hours. 
+Depending on your hardware and packages installed, the migration might take up to a few hours.
 
 Note that it is expected to see some errors (in particular about Fail2Ban) during the migration, so don't worry too much about them.
 
-#### If the migration crashed / failed at some point.
+### If the migration crashed / failed at some point
 
 If the migration failed at some point, it should be possible to relaunch it. If it still doesn't work, you can try to [get help](/help) (please provide the corresponding messages or whatever makes you tell that it's not working).
 
 ## What to do after the upgrade
 
-#### Check that you actually are on Debian Stretch and YunoHost 3.0
+### Check that you actually are on Debian Stretch and YunoHost 3.0
 
 You should be able to see this from the webadmin Tools > Diagnosis, and also in the footer of the page. On the command line, you can use `lsb_release -a` and `yunohost --version`.
 
-#### Check that Fail2Ban and the firewall are active
+### Check that Fail2Ban and the firewall are active
 
-You should be able to see that Fail2Ban and the firewall are active. From the webadmin in Services (look for 'fail2ban' and 'yunohost-firewall'). From the command line, run `yunohost service status fail2ban yunohost-firewall`. They should both have `active: active`.
+You should be able to see that Fail2Ban and the firewall are active. From the webadmin in Services (look for `fail2ban` and `yunohost-firewall`). From the command line, run `yunohost service status fail2ban yunohost-firewall`. They should both have `active: active`.
 
-#### Check that your applications are working
+### Check that your applications are working
 
 Test that your applications are working. If they aren't, you should try to upgrade them (it is also a good idea to upgrade them even if they are working anyway).
 
-#### Mail users: check your mail score
+### Mail users: check your mail score
 
 If you are using mails (especially sending them), check that your score is still good by using [mail-tester](https://www.mail-tester.com/) for example.

@@ -14,7 +14,6 @@ routes:
 YunoHost dépend entièrement de la participation de gens comme vous.
 </p>
 
-
 <hr style="margin-bottom: 30px;">
 
 [columns]
@@ -39,7 +38,7 @@ Parlez de logiciel libre, d’[auto-hébergement](/selfhosting), de YunoHost à 
 [/center]
 
 [center]
-Notre support est communautaire et s’appuie sur des contributeurices comme vous. Venez simplement sur le [salon d'aide](/help), ou tentez de répondre aux questions du <a href="https://forum.yunohost.org/" target="_blank">Forum</a>. 
+Notre support est communautaire et s’appuie sur des contributeurices comme vous. Venez simplement sur le [salon d'aide](/help), ou tentez de répondre aux questions du [Forum](https://forum.yunohost.org/).
 [/center]
 [/columns]
 
@@ -67,7 +66,7 @@ Améliorez cette documentation en [proposant de nouvelles pages](/write_document
 [/center]
 
 [center]
-Participez en rendant les interfaces de YunoHost disponibles dans votre langue. <a href="https://translate.yunohost.org/" target="_blank">Lancez-vous</a> !
+Participez en rendant les interfaces de YunoHost disponibles dans votre langue. [Lancez-vous](https://translate.yunohost.org/)!
 [/center]
 [/columns]
 
@@ -81,7 +80,7 @@ Participez en rendant les interfaces de YunoHost disponibles dans votre langue. 
 [/center]
 
 [center]
-Nous avons besoin de tester YunoHost profondément. Si vous trouvez un bug, essayez de l’identifier, puis reportez-le sur notre <a href="https://github.com/YunoHost/issues/issues/new" target="_blank">bug tracker</a>.
+Nous avons besoin de tester YunoHost profondément. Si vous trouvez un bug, essayez de l’identifier, puis reportez-le sur notre [bug tracker](https://github.com/YunoHost/issues/issues/new).
 [/center]
 [/columns]
 
@@ -109,12 +108,14 @@ Nous avons besoin de tester YunoHost profondément. Si vous trouvez un bug, essa
 [/center]
 
 [center]
-Vous pouvez vous impliquer dans le développement de YunoHost peu importe votre niveau. Administrateurs système, développeurs web, designers et pythonistes <a href="https://github.com/YunoHost" target="_blank">sont les bienvenus</a>. Découvrez [comment contribuer](/dev), et rejoignez-nous sur le [salon de discussion](xmpp:dev@conference.yunohost.org?join) !
+Vous pouvez vous impliquer dans le développement de YunoHost peu importe votre niveau. Administrateurs système, développeurs web, designers et pythonistes [sont les bienvenus](https://github.com/YunoHost). Découvrez [comment contribuer](/dev), et rejoignez-nous sur le [salon de discussion](xmpp:dev@conference.yunohost.org?join) !
 [/center]
 [/columns]
 
 ---
 
 [center]
+
 ### Dans tous les cas, venez discuter avec nous sur [le salon de développement](/chat_rooms) :-)
+
 [/center]

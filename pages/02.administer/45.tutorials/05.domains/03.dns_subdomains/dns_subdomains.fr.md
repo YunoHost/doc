@@ -15,7 +15,8 @@ YunoHost permet l’usage de sous-domaine. Il faut avoir un nom de domaine par e
 
 Dans la configuration de son DNS, on aura donc une entrée A avec l’adresse IPv4, une entrée AAAA avec l’adresse IPv6 et ensuite différents CNAME pour les sous-domaines que l’on souhaite créer.
 Nom Type Valeur
-```bash
+
+```text
 @         A         XYZ.XYZ.XYZ.XYZ
 @         AAAA      1234:1234:1234:FFAA:FFAA:FFAA:FFAA:AAFF
 *         CNAME     mondomaine.fr.
@@ -23,6 +24,7 @@ agenda    CNAME     mondomaine.fr.
 blog      CNAME     mondomaine.fr.
 rss       CNAME     mondomaine.fr.
 ```
+
 permet d’avoir un `agenda.mondomaine.fr`, un `blog.mondomaine.fr` etc.
 
 ### Installer une application sur un sous-domaine
@@ -36,7 +38,7 @@ L’application est alors accessible via `blog.mondomaine.fr` (et non via `mondo
 ### Déplacer une application sur un sous-domaine ?
 
 Que se passe-t-il si on a déjà installé l’application ? On veut par exemple passer de `mondomaine.fr/wordpress` à `blog.mondomaine.fr`.
-Pour l’instant il n’y a pas de façon simple (via l’interface graphique de l’administration de YunoHost) pour déplacer une application sur un sous-domaine.
+Pour l’instant il n’y a pas de façon simple (via l’interface graphique de l’administration de YunoHost : Applications > nom_de_lapp > Modifier l’URL) pour déplacer une application sur un sous-domaine.
 
 Solution : réinstaller l’application
 
