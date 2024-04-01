@@ -209,7 +209,10 @@ mkdir -p WSL\YunoHost
 # Download the Debian appx package and unzip it
 curl.exe -L -o debian.zip https://aka.ms/wsl-debian-gnulinux
 Expand-Archive .\debian.zip -DestinationPath .\debian
-# Import the Debian base into a new distro
+# Import the Debian base into a new distro - optional -
+# depending on your powershell version you may need to run the installer manually from debian folder
+# which will result ext4.vhdx being stored in AppData\Local\Packages\DebianProject(full-name)\LocalState
+# instead of YunoHost directory (so it's a part of MStore - nothing unorthodox)
 wsl --import YunoHost ~\WSL\YunoHost ~\debian\install.tar.gz --version 2
 # Cleanup
 rmdir .\debian -R
@@ -223,8 +226,11 @@ It is under Debian 9 Stretch, so let's upgrade it:
 # In WSL
 sudo sed -i 's/stretch/bullseye/g' /etc/apt/sources.list`
 sudo apt update
-sudo apt upgrade
+sudo apt upgrade -y
+# optional
 sudo apt dist-upgrade
+# wget needed for later setup
+sudo apt install wget -y
 ```
 
 ## Prevent WSL from tweaking configuration files
