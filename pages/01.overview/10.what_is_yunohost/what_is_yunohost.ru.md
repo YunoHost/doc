@@ -23,14 +23,14 @@ YunoHost это **операционная система** позволяюща
 - ![](image://icon-mail.png?resize=32&classes=inline) Включает **полный набор для работы электронной почты** <small>(Postfix, Dovecot, Rspamd, DKIM)</small>;
 - ![](image://icon-messaging.png?resize=32&classes=inline)... более известный как **встроенный сервер сообщений** <small>(XMPP)</small>;
 - ![](image://icon-lock.png?resize=32&classes=inline) Управляй **SSL сертификатами** <small>(Основано на Let's Encrypt)</small> ;
-- ![](image://icon-shield.png?resize=32&classes=inline)... и **системами безопасности** <small>(Fail2ban, yunohost-firewall)</small>;
+- ![](image://icon-shield.png?resize=32&classes=inline)... и **системами безопасности** <small>(`fail2ban`, `yunohost-firewall`)</small>;
 
 ## История
 
 YunoHost был создан в Феврале 2012 после чего-то вроде:
 
-<blockquote><p>"Блин, Я слишком ленив чтобы перенастроить мой почтовый сервер... Beudbeud, как вам удалось запустить свой малеький сервер LDAP?"</p>
-<small>Kload, Февраль 2012</small></blockquote>
+> "Блин, Я слишком ленив чтобы перенастроить мой почтовый сервер... Beudbeud, как вам удалось запустить свой малеький сервер LDAP?"
+> <small>Kload, Февраль 2012</small>
 
 Всё что было нужно - админ панель для сервера Beudbeud-а чтобы сделать что-то юзабельное, поэтому Kload решил её разработать. В итоге, после автоматизации нескольких конфигураций и упаковки некоторых Веб-приложений, YunoHost v1 был завершён.
 

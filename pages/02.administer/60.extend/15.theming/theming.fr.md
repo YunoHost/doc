@@ -11,7 +11,7 @@ routes:
 
 Vous pouvez changer le thème du portail utilisateur depuis l'interface administrateur, dans l'onglet Outils > Paramètres de YunoHost > Other > Thème du portail.
 
-Vous pouvez lister les thèmes disponibles avec : 
+Vous pouvez lister les thèmes disponibles avec :
 
 ```bash
 ls /usr/share/ssowat/portal/assets/themes/
@@ -38,13 +38,13 @@ Quelques thèmes sont listés sur [GitHub](https://github.com/yunohost-themes).
 
 ## Créer votre propre thème
 
-Vous pouvez créer votre propre thème en copiant le thème existant de votre choix. Par exemple à partir du thème `light` : 
+Vous pouvez créer votre propre thème en copiant le thème existant de votre choix. Par exemple à partir du thème `light` :
 
 ```bash
 cp -r /usr/share/ssowat/portal/assets/themes/{light,votre_theme}
 ```
 
-Ensuite, éditez les fichiers CSS et JS dans `/usr/share/ssowat/portal/assets/themes/votre_theme` selon ce que vous voulez faire : 
+Ensuite, éditez les fichiers CSS et JS dans `/usr/share/ssowat/portal/assets/themes/votre_theme` selon ce que vous voulez faire :
 
 - `custom_portal.css` peut être utilisé pour ajouter des règles CSS personnalisées au portail utilisateur ;
 - `custom_overlay.css` peut être utilisé pour personnaliser le petit bouton YunoHost, présent sur les apps qui l'intègrent ;
@@ -52,13 +52,13 @@ Ensuite, éditez les fichiers CSS et JS dans `/usr/share/ssowat/portal/assets/th
 
 Vous pouvez également ajouter vos propres images et ressources qui peuvent ensuite être utilisées par les fichiers CSS et JS.
 
-!!! Partagez vos thèmes personnalisés avec la communauté ! https://github.com/yunohost-themes
+!!! Partagez vos thèmes personnalisés avec la communauté ! <https://github.com/yunohost-themes>
 
 ### Exemple : personnaliser le logo
 
 Vous pouvez créer votre propre thème simplement pour changer le "branding" du portail utilisateur YunoHost et remplacer le logo YunoHost par votre propre logo !
 
-Pour ce faire, téléversez votre logo dans `/usr/share/ssowat/portal/assets/themes/votre_theme/`, et ajoutez les règles CSS suivantes : 
+Pour ce faire, téléversez votre logo dans `/usr/share/ssowat/portal/assets/themes/votre_theme/`, et ajoutez les règles CSS suivantes :
 
 ```css
 /* Dans custom_portal.css */

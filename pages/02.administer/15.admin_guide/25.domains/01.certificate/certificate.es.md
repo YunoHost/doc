@@ -47,7 +47,7 @@ Una vez la instalación terminada, puedes ir a tu dominio vía tu navegador, en 
 
 Conectate en tu servidor en SSH.
 
-Puedes comprobar el estatus corriente de tu certificado vía 
+Puedes comprobar el estatus corriente de tu certificado vía
 
 ```bash
 yunohost domain cert-status tu.dominio.tld

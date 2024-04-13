@@ -11,9 +11,9 @@ YunoHost has been developed to provide the best security without too much compli
 
 Two things remain important to note:
 
-* Installing additional apps can **significantly increase** the number of potential security flaws. Do not hesitate to get information about security flaws **before installing an app**, and try to only install apps which will suit your needs.
+- Installing additional apps can **significantly increase** the number of potential security flaws. Do not hesitate to get information about security flaws **before installing an app**, and try to only install apps which will suit your needs.
 
-* The fact that YunoHost is a well-known and used piece of software increases the chances of an attack. If a flaw is discovered, it could potentially affect all YunoHost instances at once. Keep your system **up-to-date** to remain safe. Updates can be automated by installing the ["Unattended_upgrades" app](https://install-app.yunohost.org/?app=unattended_upgrades).
+- The fact that YunoHost is a well-known and used piece of software increases the chances of an attack. If a flaw is discovered, it could potentially affect all YunoHost instances at once. Keep your system **up-to-date** to remain safe. Updates can be automated by installing the ["Unattended_upgrades" app](https://install-app.yunohost.org/?app=unattended_upgrades).
 
 !!!! If you need advice, do not hesitate to [ask us](/help).
 

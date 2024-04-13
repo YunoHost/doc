@@ -10,14 +10,17 @@ routes:
 Dans le cas d'une installation à la maison, votre serveur devrait typiquement être accessible (depuis son réseau local) avec le domaine `yunohost.local`. Si pour une raison quelconque cela ne fonctionne pas, il vous faut peut-être trouver l'IP locale de votre serveur.
 
 ## Qu'est ce qu'une IP locale ?
+
 L'IP locale d'une machine est utilisée pour y faire référence à l'intérieur d'un réseau local (typiquement le réseau dans une maison) où plusieurs appareils se connectent à un même routeur (votre box internet). Une adresse IP locale ressemble généralement à `192.168.x.y` (ou parfois `10.0.x.y` ou `172.16.x.y`)
 
 ## Comment la trouver ?
+
 L'une de ces astuces devrait permettre de trouver l'IP locale de votre serveur :
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommandé) Avec AngryIP"]
 
 Vous pouvez utiliser le logiciel [AngryIP](https://angryip.org/download/) pour y parvenir. Vous devez juste scanner ces plages d'IP dans cet ordre jusqu'à trouver l'IP correspondante à votre serveur :
+
 - `192.168.0.0` -> `192.168.0.255`
 - `192.168.1.0` -> `192.168.1.255`
 - `192.168.2.0` -> `192.168.255.255`
@@ -44,8 +47,9 @@ Si la commande `arp-scan` vous affiche beaucoup de machines, vous pouvez vérifi
 Branchez un écran sur votre serveur, loggez-vous et tapez `hostname --all-ip-address`.
 
 Les identifiants par défaut (avant la post-installation!) sont :
-- login : root
-- mot de passe : yunohost
+
+- login : `root`
+- mot de passe : `yunohost`
 
 (Si vous utilisez une image Armbian brute plutôt que les images YunoHost pré-installées, les identifiants sont root / 1234)
 
@@ -53,6 +57,7 @@ Les identifiants par défaut (avant la post-installation!) sont :
 [/ui-tabs]
 
 ## Je ne trouve toujours pas mon IP locale
+
 Si vous n'êtes pas capable de trouver votre serveur avec les méthodes précédentes, alors peut-être que votre serveur n'a pas démarré correctement.
 
 - Assurez-vous que le serveur est correctement branché ;

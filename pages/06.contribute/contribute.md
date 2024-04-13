@@ -37,7 +37,7 @@ Talk about software freedom, [self-hosting](/selfhosting) and YunoHost to your r
 [/center]
 
 [center]
-Our support relies on contributors like you. Just come to [the support chatroom](/help) and help new users getting started, or pick a question on the <a href="https://forum.yunohost.org/" target="_blank">Forum</a>.
+Our support relies on contributors like you. Just come to [the support chatroom](/help) and help new users getting started, or pick a question on the [Forum](https://forum.yunohost.org/).
 [/center]
 [/columns]
 
@@ -66,7 +66,7 @@ Improve this documentation by [writing new pages](/write_documentation) or trans
 
 [center]
 Get involved by making YunoHost interfaces available in your language
-<a href="https://translate.yunohost.org/" target="_blank">Get started</a>!
+[Get started](https://translate.yunohost.org/)!
 [/center]
 [/columns]
 
@@ -80,7 +80,7 @@ Get involved by making YunoHost interfaces available in your language
 [/center]
 
 [center]
-We need people able to test YunoHost deeply. If you find a bug, try to identify it, and report it on our <a href="https://github.com/YunoHost/issues/issues" target="_blank">bug tracker</a>.
+We need people able to test YunoHost deeply. If you find a bug, try to identify it, and report it on our [bug tracker](https://github.com/YunoHost/issues/issues).
 [/center]
 [/columns]
 
@@ -110,14 +110,15 @@ Have a look of [what has been done yet](/apps)!
 
 [center]
 You can involve in the YunoHost's development regardless of your skill.
-Sysadmins, web developers, designers and pythonists <a href="https://github.com/YunoHost" target="_blank">are welcome</a>!
+Sysadmins, web developers, designers and pythonists [are welcome](https://github.com/YunoHost)!
 Learn [how to contribute](/dev), and join us on the [development chat room](xmpp:dev@conference.yunohost.org?join).
 [/center]
 [/columns]
 
-
 ---
 
 [center]
+
 ### In any case, please come chat with us on [the dev chatroom](/chat_rooms) :-)
+
 [/center]

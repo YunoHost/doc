@@ -14,13 +14,16 @@ YunoHost provides several mechanism to display information to users.
 
 You are encouraged to add a `doc/DESCRIPTION.md` which should contain a more extensive description than the short description contained in `manifest.toml`. This usually corresponds to listing the key features of the app.
 
-You are also encouraged to add a `.png` or `.jpg` screenshot of what the app looks like in `doc/screenshots/`. There is no constrain on the exact filename, but the file weight should be kept below 512kb.
+You are also encouraged to add a `.png` or `.jpg` screenshot of what the app looks like in `doc/screenshots/`.  
+The filename is arbitrary but must not start with a dot. Also the file weight should be kept below 512kb.  
 
 This description and screenshot will be shown when the admin open the catalog page for this app and the app info page in the webadmin after the admin installs this app.
 
+You can add subfolders such as `doc/screenshots/subfolder` to add pictures in your documentation without showing them on the app info page.
+
 You can also add translated versions of the `.md` file in, for example, `doc/DESCRIPTION_fr.md`, `_es.md`, `_it.md`, etc.
 
-If your app repository is part of the YunoHost-Apps org, the provided description will be used to auto-regenerate the README.md of your github repo via `yunohost-bot`.
+If your app repository is part of the YunoHost-Apps org, the provided description will be used to auto-regenerate the README.md of your GitHub repo via `yunohost-bot`.
 
 ## Specific notes for admins : `doc/ADMIN.md`, `doc/<whatever>.md`
 

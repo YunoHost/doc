@@ -19,7 +19,7 @@ Click on green upgrade buttons to upgrade the system and applications.
 
 Here are some example of corresponding command lines:
 
-``` bash
+```bash
 # Fetch available updates
 yunohost tools update
 

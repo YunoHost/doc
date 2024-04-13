@@ -20,7 +20,7 @@ Nous parlerons ici de VirtualBox, pour son approche graphique facile à utiliser
 
 ## Installer VirtualBox
 
-Depuis un système GNU/Linux, installer simplement le paquet `virtualbox-qt`. 
+Depuis un système GNU/Linux, installer simplement le paquet `virtualbox-qt`.
 Depuis un système Windows ou macOS, il faudra se référer à la page de [téléchargement de VirtualBox](https://www.virtualbox.org/wiki/Downloads) pour récupérer le fichier d'installation adéquat. Le paquet virtualbox est déprécié depuis Debian 9, un fichier d'installation `.deb` est disponible sur la même page.
 
 Quel que soit votre système, il ne devrait pas être nécessaire d'installer l'extension pack ou les additions invités.
@@ -41,7 +41,7 @@ Votre serveur virtuel est à présent installé. Avant de commencer à l'utilise
 VirtualBox prend tout son intérêt avec l'usage des instantanés, qui permettent d'enregistrer l'état de la machine à un moment donné et d'y revenir rapidement.  
 Nous verrons également par la suite comment utiliser plusieurs branches d'instantanés pour travailler sur des apps différentes sur une même machine.
 
-#### Tout d'abord, créons un premier instantané
+### Tout d'abord, créons un premier instantané
 
 Avant de commencer à jouer avec la machine virtuelle, il convient de faire un premier instantané, pour ne pas avoir à recommencer le processus d'installation à chaque fois.  
 Arrêtez la machine virtuelle avant tout.
@@ -60,7 +60,7 @@ Dans cet exemple, on pourra facilement revenir en arrière, après avoir testé 
 Et lorsque le package sera pleinement fonctionnel, il suffira de supprimer les instantanés liés à ce package pour revenir à l'état initial de la machine virtuelle.  
 Nous disposerons ainsi d'un serveur YunoHost vierge de toute installation d'application pour notre prochain test.
 
-#### Utiliser plusieurs branches d'instantanés
+### Utiliser plusieurs branches d'instantanés
 
 En plus de l'usage d'instantanés successifs, il est également possible de dériver un nouvel état actuel et de nouveaux instantanés depuis un instantané plus ancien que le dernier.
 
@@ -83,7 +83,8 @@ On se connecte à la machine virtuelle comme à n'importe quel serveur YunoHost,
 ```bash
 ssh admin@mon.domain
 ```
-Ou, si le domaine n'a pas été ajouté dans le hosts, en utilisant son ip.
+
+Ou, si le domaine n'a pas été ajouté dans le hosts, en utilisant son IP.
 
 ```bash
 ssh admin@11.22.33.44

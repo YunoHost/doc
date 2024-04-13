@@ -6,9 +6,9 @@ La configuration des DNS est une étape cruciale pour que votre serveur soit acc
 
 ### Qu’est-ce que c’est ?
 
-**N’hésitez pas à regarder la très bonne conférence de Stéphane Bortzmeyer :**   
+**N’hésitez pas à regarder la très bonne conférence de Stéphane Bortzmeyer :**
 
-https://www.iletaitunefoisinternet.fr/post/1-dns-bortzmeyer/
+<https://www.iletaitunefoisinternet.fr/post/1-dns-bortzmeyer/>
 
 DNS signifie « Domain Name Server » en anglais, et est souvent employé pour désigner la configuration de vos noms de domaine. Vos noms de domaines doivent en effet pointer vers quelque chose (en général une adresse IP).
 
@@ -22,7 +22,6 @@ Si `yunohost.org` renvoie vers `88.191.153.110`, ça ne signifie pas que `backu
 Il existe également des **types** d’enregistrement DNS, ce qui veut dire qu’un domaine peut renvoyer vers autre chose qu’une adresse IP.
 
 **Par exemple** : `www.yunohost.org` renvoie vers `yunohost.org`
-
 
 ### Comment (bien) faire la configuration ?
 
