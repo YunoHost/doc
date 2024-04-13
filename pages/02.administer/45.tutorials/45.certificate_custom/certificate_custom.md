@@ -123,7 +123,7 @@ kSK6OOauBHItgiGI7C87u4EJaHDvGIUxHxQQGsUM0SCIIVGK7Lwm+8e9I2X0G2GP
 Finally, secure your certificate files.
 
 ```bash
-sudo chown root:metronome crt.pem key.pem
+sudo chown root:ssl-cert crt.pem key.pem
 sudo chmod 640 crt.pem key.pem
 sudo chown root:root -R ae_certs
 sudo chmod 600 -R ae_certs
