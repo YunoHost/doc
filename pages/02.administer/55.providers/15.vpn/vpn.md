@@ -27,7 +27,7 @@ Below, you can find a list of providers compatible for self-hosting and especial
 
 | VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |
 | ------------ | ----------------------- | ---- | --------- | --------- | ----- | -------------- |
-| [Neutrinet](https://neutrinet.be/en/vpn)    | ✔ (.cube + [internetcube](https://internetcu.be))               | ✔    | ✔         | ✔         | ~10 €¹ / mois | 10€ ou 30€ / an | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
+| [Neutrinet](https://neutrinet.be/en/vpn)    | ✔ (.cube + [internetcube](https://internetcu.be))               | ✔    | ✔         | ✔         | ~10 €¹ / month | 10€ or 30€ / year | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
 ¹ [Pay what you want](https://en.wikipedia.org/wiki/Pay_what_you_want)
 
 !!! If you try an other VPN provider that include **public dedicated ipv4 and port forwarding**, feel free to contribute to this documentation. We need people to test specific offers of those commercial providers:
