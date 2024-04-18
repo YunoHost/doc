@@ -113,6 +113,6 @@ Unless you really want to start from scratch or from [`example_ynh`](https://git
 TODO/FIXME : here we should list a bunch of well-knowh apps for classic technologies
 
 - PHP apps:
-- NodeJS apps:
+- NodeJS apps: [cryptpad](https://apps.yunohost.org/app/cryptpad)
 - Python apps:
 - ???
