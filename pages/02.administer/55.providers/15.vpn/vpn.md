@@ -27,7 +27,7 @@ Below, you can find a list of providers compatible for self-hosting and especial
 
 | VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |
 | ------------ | ----------------------- | ---- | --------- | --------- | ----- | -------------- |
-| [Neutrinet](https://neutrinet.be/en/vpn)    | ✔ (.cube + [internetcube](https://internetcu.be))               | ✔    | ✔         | ?         | ~8 €¹ / month | included | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
+| [Neutrinet](https://neutrinet.be/en/vpn)    | ✔ (.cube + [internetcube](https://internetcu.be))               | ✔    | ✔         | ✔         | ~10 €¹ / month | 10€ or 30€ / year | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
 ¹ [Pay what you want](https://en.wikipedia.org/wiki/Pay_what_you_want)
 
 !!! If you try an other VPN provider that include **public dedicated ipv4 and port forwarding**, feel free to contribute to this documentation. We need people to test specific offers of those commercial providers:
@@ -52,7 +52,7 @@ Below, you can find a list of providers compatible for self-hosting and especial
 | [ILOTH](https://iloth.net/vpn/)    | ✔ (.cube)               | ✘   | ✔         | ✘        | 80€ / an | 5 à 100€ / an | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
 | [Milkywan](https://milkywan.fr/prices#popupTunnel)    | ✔ (manuelle)               | ✔    | ✔         |  ✔        | 5 € / mois | incluse | <span class="label label-success label-as-badge">Non Profit</span> |
 | [Mycélium](https://mycelium-fai.org/wiki/documentation/services/vpn)    | ✔ (manuelle)               | ✘    | ✘         | ✘         | Prix libre | incluse<br>Réservé aux nordistes(FR 59) | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
-| [Neutrinet](https://neutrinet.be/en/vpn)    | ✔ (.cube + [internetcube](https://internetcu.be))               | ✔    | ✔         | ?         | ~8 €¹ / mois | incluse | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
+| [Neutrinet](https://neutrinet.be/en/vpn)    | ✔ (.cube + [internetcube](https://internetcu.be))               | ✔    | ✔         | ✔         | ~10 €¹ / mois | 10 € ou 30 € / an | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
 | [Rézine](https://www.rezine.org/acces_internet/tunnels_chiffr%C3%A9s/)    | ✔ (manuelle)               | ✔   | ✔         | ✔        | 5 à 10€ / mois | Prix libre | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
 | [Swiss Neutral Network](https://www.swissneutral.net/?page_id=31)    | ✔ (.cube)               | ✔    |  ✔        | ✔         | 30.- CHF/mois | 50.- CHF / an<br>Réservé aux suisses | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
 | [Tetaneutral](https://tetaneutral.net/adherer/)    | ✘ (wireguard)               | ?    | ?         | ?         | 5€¹ / mois | 5 à 100€¹ / an | <span class="ffdn">FFDN</span> <span class="label label-success label-as-badge">Non Profit</span> |
