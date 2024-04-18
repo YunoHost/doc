@@ -112,7 +112,7 @@ A moins que vous ne souhaitiez vraiment partir de zéro ou de [`example_ynh`](ht
 
 TODO/FIXME : here we should list a bunch of well-knowh apps for classic technologies
 
-- Applications PHP :
+- Applications PHP : [my_webapp](https://github.com/YunoHost-Apps/my_webapp_ynh/)
 - Applications NodeJS :
-- Applications Python :
+- Applications Python : [FastAPI](https://github.com/YunoHost-Apps/FastAPI_ynh/)
 - ???
