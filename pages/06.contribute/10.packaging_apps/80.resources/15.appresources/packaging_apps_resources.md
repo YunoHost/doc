@@ -269,11 +269,14 @@ Or more complex examples with several element, including one with asset that dep
 - `format` : The "format" of the asset. It is typically automatically guessed from the extension of the URL (or the mention of "tarball", "zipball" in the URL), but can be set explicitly:
     - `tar.gz`, `tar.xz`, `tar.bz2` : will use `tar` to extract the archive
     - `zip` : will use `unzip` to extract the archive
+    - `gz` : will use `gunzip` to extract the archive
+    - `bzip2` : will use `bunzip2` to extract the archive
+    - `xz` : will use `xz -d` to extract the archive
     - `docker` : useful to extract files from an already-built docker image (instead of rebuilding them locally). Will use `docker-image-extract`
     - `whatever`: whatever arbitrary value, not really meaningful except to imply that the file won't be extracted (eg because it's a .deb to be manually installed with dpkg/apt, or a script, or ...)
 - `in_subdir`: `true` (default) or `false`, depending on if there's an intermediate subdir in the archive before accessing the actual files. Can also be `N` (an integer) to handle special cases where there's `N` level of subdir to get rid of to actually access the files
-- `extract` : `true` or `false`. Defaults to `true` for archives such as `zip`, `tar.gz`, `tar.bz2`, ... Or defaults to `false` when `format` is not something that should be extracted. When `extract = false`, the file will only be `mv`ed to the location, possibly renamed using the `rename` value
-- `rename`: some string like `whatever_your_want`, to be used for convenience when `extract` is `false` and the default name of the file is not practical
+- `extract` : `true` or `false`. Defaults to `true` for archives such as `zip`, `tar.gz`, `tar.bz2`, `gz`, ... Or defaults to `false` when `format` is not something that should be extracted. When `extract = false`, the file will only be `mv`ed to the location, possibly renamed using the `rename` value
+- `rename`: some string like `whatever_your_want`, to be used for convenience when `extract` is `false` and the default name of the file is not practical. This parameter is also used for single file archives (gz, bz2, xz) to rename the extracted file (default : the source id, or the app name for main source)
 - `platform`: for example `linux/amd64` (defaults to `linux/$YNH_ARCH`) to be used in conjonction with `format = "docker"` to specify which architecture to extract for
 
 #### Regarding `autoupdate`

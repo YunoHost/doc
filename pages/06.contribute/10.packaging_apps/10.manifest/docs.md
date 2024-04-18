@@ -96,10 +96,10 @@ The declaration of antifeatures is a 3-steps process:
 - Declare the app's antifeature in the [app catalog](https://github.com/YunoHost/apps/blob/master/apps.toml)
 - Describe the app's antifeature in its `manifest.toml`:
   
-  ```toml
-  [antifeatures]
-  arbitrary-limitations.en = "Some description about the specific limitations of this app."
-  ```
+```toml
+[antifeatures]
+arbitrary-limitations.en = "Some description about the specific limitations of this app."
+```
 
 The format of this section is a `dict` where keys are antifeature IDs, and the values
 are translated strings (`dict` of `lang code`->`str`).
@@ -162,7 +162,6 @@ The resource section corresponds to recurring app needs that are to be provision
 
 ```toml
 [resources]
-```toml
     [resources.sources.main]
     url = "https://some.domain/url/where/to/download/the/app/sources.tar.gz"
     sha256 = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
