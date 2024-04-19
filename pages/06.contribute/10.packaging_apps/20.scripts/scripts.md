@@ -85,7 +85,7 @@ ynh_app_setting_set --app=$app --key=db_name --value=$db_name
 
 ## Helper system
 
-We call helpers a set of custom bash function created by the YunoHost project to standardize common operations accross all apps. They are all prefixed with `ynh_`. The full list and documentation of these helpers is available on [this page](/packaging_apps_helpers). Some of these helpers are now partially obsolete as they are now handled by the core via app resources.
+We call helpers a set of custom bash function created by the YunoHost project to standardize common operations accross all apps. They are all prefixed with `ynh_`. The full list and documentation of these helpers is available on [this page](/packaging_apps_scripts_helpers). Some of these helpers are now partially obsolete as they are now handled by the core via app resources.
 
 Here is the list of the major ones:
 
