@@ -111,7 +111,7 @@ Sostituite `miodisco` con il nome della prima partizione del disco di destinazio
 
 ## 4. Montare il disco
 
-Contrariamente a Windows, dove i dischi sono contraddistinti da lette (C:/), in linux i dischi sono accessibili dall'albero del gestore dei file. "Montare" un disco significa renderlo accessibile nell'albero dei file. Sceglieremo di montare il disco in `/mnt/hdd` ma possiamo anche assegnare un nome di fantasia. (Ad esempio `/mnt/disco` ...).
+Contrariamente a Windows, dove i dischi sono contraddistinti da lettere (C:\), in linux i dischi sono accessibili dall'albero del gestore dei file. "Montare" un disco significa renderlo accessibile nell'albero dei file. Sceglieremo di montare il disco in `/mnt/hdd` ma possiamo anche assegnare un nome di fantasia. (Ad esempio `/mnt/disco` ...).
 
 Iniziamo creando la directory:
 
