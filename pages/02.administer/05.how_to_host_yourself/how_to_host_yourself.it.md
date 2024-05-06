@@ -1,5 +1,5 @@
 ---
-title: Scegliere il tuo metodo e provider de self-hosting
+title: Scegliere il tuo metodo e provider di self-hosting
 template: docs
 taxonomy:
     category: docs
