@@ -148,10 +148,10 @@ Selezionate l'hardware sul quale vuoi installare YunoHost:
 {% elseif rpi012 %}
 - Un Raspberry Pi 0, 1 or 2 con almeno 512 MB di RAM
 {% elseif internetcube %}
-- Un Orange Pi PC+ o un Olinuxino Lime 1 o 2 
+- Un Orange Pi PC+ o un Olinuxino Lime 1 o 2
 - Una VPN con un IP pubblico dedicato e un file `.cube`
 {% elseif arm_sup %}
-- Un Orange Pi PC+ o un Olinuxino Lime 1 o 2 
+- Un Orange Pi PC+ o un Olinuxino Lime 1 o 2
 {% elseif arm_unsup %}
 - Una scheda ARM con almeno 512 MB di RAM
 {% elseif vps_debian %}
@@ -170,7 +170,7 @@ Selezionate l'hardware sul quale vuoi installare YunoHost:
 {% endif %}
 {% if wsl %}
 - Windows 10 o superiore
--  Diritti di amministratore
+- Diritti di amministratore
 - Windows Subsystem per Linux
 - *Raccomandato:* Windows Terminal (Preview) app, installato dal Microsoft Store. Assolutamente migliore del terminale standard poiché offre scorciatoie per le distribuzioni WSL.
 {% endif %}
@@ -179,7 +179,7 @@ Selezionate l'hardware sul quale vuoi installare YunoHost:
 {% if not virtualbox %}
 - Un cavo ethernet (RJ-45) per collegare il vostro server al router. {% if rpi012 %} (Oppure per un Rasperry Pi Zero: un cavo USB OTG o una chiavetta wifi) {% endif %}
 {% endif %}
--  Un computer per leggere questa guida, copiare l'immagine e accedere al vostro server.
+- Un computer per leggere questa guida, copiare l'immagine e accedere al vostro server.
 {% else %}
 - Un computer o uno smartphone per leggere questa guida e accedere al vostro server.
 {% endif %}
@@ -192,7 +192,7 @@ Selezionate l'hardware sul quale vuoi installare YunoHost:
 
 ## Introduzione
 
-WSL è un'interessante caratteristica di Windows 10 che rende disponibili alcune pseudo-distribuzioni Linux dalla linea di comando. Diciamo pseudo perché, pur non essendo vere macchine virtuali, si basano su capacità di virtualizzazione che rendono molto semplice l'integrazione con Windows. 
+WSL è un'interessante caratteristica di Windows 10 che rende disponibili alcune pseudo-distribuzioni Linux dalla linea di comando. Diciamo pseudo perché, pur non essendo vere macchine virtuali, si basano su capacità di virtualizzazione che rendono molto semplice l'integrazione con Windows.
 Ad esempio Docker può usare WSL invece di Hyper-V.
 
 ! Tenete presente che questa configurazione *non* è un assolutamente un container: se qualcosa smette di funzionare non ci sono possibilità di usare dei rollback.
@@ -231,7 +231,7 @@ sudo apt dist-upgrade
 
 Editate `/etc/wsl.conf` con le seguenti configurazioni:
 
-```
+```text
 [network]
 generateHosts = false
 generateResolvConf = false
@@ -301,14 +301,14 @@ Avviate sempre il comando `genie -s` mentre avviate la vostra distribuzione.
 
 Come detto sopra, non c'è la possibilità di usare dei rollback. Onde per cui è necessario esportare la vostra distribuzione appena installata. Comandi PowerShell:
 
-```
+```bash
 cd ~
 wsl --export YunoHost .\WSL\YunoHost.tar.gz
 ```
 
 ### In caso di crash cancellate e ripristinate la distribuzione intera
 
-```
+```bash
 cd ~
 wsl --unregister YunoHost
 wsl --import YunoHost .\WSL\YunoHost .\WSL\YunoHost.tar.gz --version 2
@@ -403,7 +403,7 @@ $(document).ready(function () {
              .replace('%7Bimage%7D', infos.image)
              .replace('{image}', infos.image)
              .replace('{version}', infos.version);
- 
+
             if (!infos.file.startsWith("http"))
                 infos.file="https://build.yunohost.org/"+infos.file;
             html = html.replace(/%7Bfile%7D/g, infos.file).replace(/{file}/g, infos.file);
@@ -484,7 +484,7 @@ Ventoy può risultare utile nel caso in cui non riusciate ad avviare l'immagine 
      - Verranno create due partizioni sulla chiavetta.
 2. Con il vostro file manager preferito copiate l'immagine YunoHost sulla partizione più grande `Ventoy` (non "VTOYEFI")
      - Non usate °Balena Etcher, USBImager o `dd` per fare la copia!
-     
+
 Quando avvierete il computer dalla chiavetta USB apparirà Ventoy con ò'elenco delle immagini che avete copiato sulla chiavetta; selezionate l'immagine di YunoHost e poi selezionate l'opzione di avvio GRUB2 (oppure qualsiasi opzione che funzioni 😉)
 [/ui-tab]
 {% endif %}
@@ -507,7 +507,7 @@ Selezionate **Settings** > **Network**:
 - Selezionate `Bridged adapter`
 - Selezionate il nome dell'interfaccia di rete:
    **wlan0** se siete connessi con il wifi altrimenti **eth0**.
-   
+
 ![](image://virtualbox_2.png?class=inline)
 
 {% endif %}
@@ -597,7 +597,7 @@ Se avete uno o più dischi per salvare i dati potete scegliere di montarli nelle
 | `/var/mail` | Posta elettronica degli utenti |
 
 Se volete godere di una maggiore flessibilità senza dover cambiare dimensione alle partizioni potete decidere di montarli su `/mnt/hdd` e seguire questo [tutorial per montare tutte queste cartelle con `mount --bind`](/external_storage).
- 
+
 ### A proposito della cifratura
 
 Ponete attenzione al fatto che se cifrate parti o tutto il vostro disco dovrete inserire la passphrase ogni volta che il server verrà riavviato, cosa che potrebbe creare problemi nel caso in cui non siate presenti. Ci sono delle soluzioni (anche piuttosto difficili da realizzare) che permettono l'inserimento della passphrase via SSH o una pagina web (cercate "dropbear encrypted disk").
