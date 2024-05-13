@@ -231,7 +231,7 @@ sudo apt dist-upgrade
 
 Edit `/etc/wsl.conf` and put the following code in it:
 
-```
+```text
 [network]
 generateHosts = false
 generateResolvConf = false
