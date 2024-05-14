@@ -55,13 +55,13 @@ SSH-Zugang auf Ihrem Server herstellen.
 So können Sie den aktuellen Status des digitalen Zertifikats überprüfen
 
 ```bash
-yunohost domain cert-status Ihre.domain.tld
+yunohost domain cert status Ihre.domain.tld
 ```
 
 Dann Let's Encrypt-Zertifikat installieren
 
 ```bash
-yunohost domain cert-install Ihre.domain.tld
+yunohost domain cert install Ihre.domain.tld
 ```
 
 Ergebnis sollte so aussehen :
@@ -82,7 +82,7 @@ Wenn das Zertifikat aufgrund einer schlechten Handhabung nicht funktionsfähig i
 ein selbst-signiertes Zertifikat zu regenerieren :
 
 ```bash
-yunohost domain cert-install Ihre.domain.tld --self-signed --force
+yunohost domain cert install Ihre.domain.tld --self-signed --force
 ```
 
 Trotz einer sorgfältigen Überprüfung der DNS-Konfiguration und auch von außen
@@ -90,4 +90,4 @@ die Möglichkeit mit HTTP-Modus Zugriff auf den Webserver besteht, kann YunoHost
 manschmal die Einstellungen verweigern. In diesem Fall ist es notwendig :
 
 - die Parameter `127.0.0.1 Ihre.domain.tld` auf der Datei `/etc/hosts` des Webserver hinzufügen.
-Wenn es immer noch nicht funktionsfähig ist, also die Überprüfungen deaktivieren mit `--no-checks` nach dem Befehl `cert-install`.
+Wenn es immer noch nicht funktionsfähig ist, also die Überprüfungen deaktivieren mit `--no-checks` nach dem Befehl `cert install`.
