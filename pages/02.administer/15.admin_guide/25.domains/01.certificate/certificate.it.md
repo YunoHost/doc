@@ -57,13 +57,13 @@ Collegatevi al server con SSH.
 Potete controllare lo stato del certificato in uso con il comando:
 
 ```bash
-yunohost domain cert-status your.domain.tld
+yunohost domain cert status your.domain.tld
 ```
 
 Installate il certificato Let's Encrypt con il comando:
 
 ```bash
-yunohost domain cert-install your.domain.tld
+yunohost domain cert install your.domain.tld
 ```
 
 Che dovrebbe dare come risultato:
@@ -83,10 +83,10 @@ Una volta installato il certificato potete verificarne il corretto funzionamento
 Se il vostro certificato risultasse non funzionante a causa di qualche errore (ad esempio lo avete perso oppure non siete in grado di leggere i file) potete ripulire la situazione rigenerando un certificato autofirmato con questo comando:
 
 ```bash
-yunohost domain cert-install your.domain.tld --self-signed --force
+yunohost domain cert install your.domain.tld --self-signed --force
 ```
 
 Se YunoHost pensa che il vostro dominio non è configurato correttamente nonstante abbiate controllato la configurazione del DNS e riuscite a collegarvi in HTTP al vostro server anche dall'esterno della rete locale allora potete:
 
 - aggiungere una linea `127.0.0.1 vostrodominio.tld` nel file `/etc/hosts` sul vostro server;
-- se nonostante questo l'installazione del certificato dovesse ancora fallire potete disabilitare il controllo con l'opzione `--no-checks` dopo il comando `cert-install`.
+- se nonostante questo l'installazione del certificato dovesse ancora fallire potete disabilitare il controllo con l'opzione `--no-checks` dopo il comando `cert install`.
