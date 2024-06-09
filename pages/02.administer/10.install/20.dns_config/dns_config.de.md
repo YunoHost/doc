@@ -64,7 +64,7 @@ _dmarc 3600 IN TXT "v=DMARC1; p=none"
 Aber es ist vielleicht leichter zu verstehen, wenn es auf folgende Weise
 dargestellt wird:
 
-| Type    | Nom                    | Valeur                                                 |
+| Typ     | Name                   | Wert                                                   |
 | :-----: | :--------------------: | :----------------------------------------------------: |
 |  **A**  |   **@**                |  `111.222.333.444` (deine IPv4)                        |
 |    A    |   *                    |  `111.222.333.444` (deine IPv4)                        |
@@ -85,11 +85,11 @@ dargestellt wird:
 
 - Nicht alle dieser Aufzeichnungen sind notwendig. Für eine Minimalinstallation werden nur die fett gedruckten Datensätze benötigt;
 - Der Punkt am Ende `your.domain.tld.` ist wichtig ;) ;
-- `@` entspricht `your.domain.tld`, und z. B.. `muc` entspricht `muc.your.domain.tld` ;
+- `@` entspricht `your.domain.tld`, und z. B.. `muc` entspricht `muc.your.domain.tld`;
 - Die hier gezeigten Werte sind nur Beispiele! Beziehen Sie sich auf die generierte Konfiguration, um herauszufinden, welche Werte zu verwenden sind;
-- Wir empfehlen eine [TTL](https://de.wikipedia.org/wiki/Time_to_Live#Domain_Name_System) von 3600 (1 Stunde). Es ist aber auch möglich einen anderen Wert zu verwenden, wenn Sie wissen, was Sie tun ;
+- Wir empfehlen eine [TTL](https://de.wikipedia.org/wiki/Time_to_Live#Domain_Name_System) von 3600 (1 Stunde). Es ist aber auch möglich einen anderen Wert zu verwenden, wenn Sie wissen, was Sie tun;
 - Legen Sie keinen IPv6-Eintrag an, wenn Sie nicht sicher sind, daß IPv6 auf Ihrem Server funktioniert! Sie werden Probleme mit Let's Encrypt haben, wenn dies nicht der Fall ist.
-- If you're using the domain provider Namecheap the SRV DNS entries are formatted as **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `your.domain.tld`
+- Wenn Sie den Provider "Namecheap" benutzen, werden die SRV DNS Einträge wie folgt formatiert: **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `your.domain.tld`
 
 ### Reverse DNS
 
