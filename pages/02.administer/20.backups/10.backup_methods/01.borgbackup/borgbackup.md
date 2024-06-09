@@ -30,25 +30,36 @@ The future default backup method integrated in YunoHost will be based on this so
 
 !!! To set up, first install the [borg application](https://github.com/YunoHost-Apps/borg_ynh), then optionally the [borgserver application](https://github.com/YunoHost-Apps/borgserver_ynh).
 
+## Finding the borg command
+
+The `borg` command is found inside the installation directory of the app. You should generaly prefer using this executable rather than the one installed by Debian's package, to ensure compatibility.
+
+```bash
+# Get the path to the borg executable
+alias borg="$(yunohost app setting $app install_dir)/venv/bin/borg"
+```
+
+The rest of this documentation assumes this alias is present in your shell, or that you added the venv in your PATH.
+
 ## Test
 
 With the borg apps an email is sent to say if the backup fails or if the remote repo has received nothing. However, you can manually test to make sure everything is fine in a more complete way.
 
 ```bash
 # List files
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg list "$(yunohost app setting $app repository)" | less
+app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " "$borg" list "$(yunohost app setting $app repository)" | less
 
 # List database exports
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg list "$(yunohost app setting $app repository)" | grep "(db|dump)\.sql"
+app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " "$borg" list "$(yunohost app setting $app repository)" | grep "(db|dump)\.sql"
 
 # List files from the archive
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg list "$(yunohost app setting $app repository)::ARCHIVE" | less
+app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " "$borg" list "$(yunohost app setting $app repository)::ARCHIVE" | less
 
 # View archive info
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg info "$(yunohost app setting $app repository)::ARCHIVE"
+app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " "$borg" info "$(yunohost app setting $app repository)::ARCHIVE"
 
 # Verify data integrity
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg check "$(yunohost app setting $app repository)::ARCHIVE" --verify-data
+app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " "$borg" check "$(yunohost app setting $app repository)::ARCHIVE" --verify-data
 ```
 
 ## Restore
@@ -58,13 +69,13 @@ If we are in the case of a migration or a reinstallation, we must reinstall borg
 List the available archives
 
 ```bash
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg list "$(yunohost app setting $app repository)"
+app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " "$borg" list "$(yunohost app setting $app repository)"
 ```
 
 Create tar archives (one archive per app and system part)
 
 ```bash
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg export-tar "$(yunohost app setting $app repository)::ARCHIVE" /home/yunohost/archives/ARCHIVE.tar
+app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " "$borg" export-tar "$(yunohost app setting $app repository)::ARCHIVE" /home/yunohost/archives/ARCHIVE.tar
 ```
 
 Then restore the archive in the usual way.
@@ -76,14 +87,14 @@ If the available space is less than the weight of your archive, decompressed dat
 If restoring app by app is not enough OR if an archive is too big, it may be a good idea to generate a tarball without the "big" data of an app as if it had been generated with the [BACKUP_CORE_ONLY option](/backup/include_exclude_files#don't-save-large-quantities-of-data). Example with Nextcloud:
 
 ```bash
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg export-tar -e apps/nextcloud/backup/home/yunohost.app "$(yunohost app setting $app repository)::ARCHIVE" /home/yunohost.backup/archives/ARCHIVE.tar
+app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " "$borg" export-tar -e apps/nextcloud/backup/home/yunohost.app "$(yunohost app setting $app repository)::ARCHIVE" /home/yunohost.backup/archives/ARCHIVE.tar
 ```
 
 You will then have to extract these data directly with borg
 
 ```bash
 cd /home/yunohost.app/
-app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " borg extract "$(yunohost app setting $app repository)::ARCHIVE" apps/nextcloud/backup/home/yunohost.app/
+app=borg; BORG_PASSPHRASE="$(yunohost app setting $app passphrase)" BORG_RSH="ssh -i /root/.ssh/id_${app}_ed25519 -oStrictHostKeyChecking=yes " "$borg" extract "$(yunohost app setting $app repository)::ARCHIVE" apps/nextcloud/backup/home/yunohost.app/
 mv apps/nextcloud/backup/home/yunohost.app/nextcloud ./
 rm -r apps
 ```
