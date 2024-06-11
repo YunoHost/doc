@@ -9,17 +9,17 @@ routes:
 
 Bei einer Installation zu Hause sollte Ihr Server normalerweise über die Domäne`yunohost.local` erreichbar sein. Wenn dies aus irgendeinem Grund nicht funktioniert, müssen Sie möglicherweise die *lokale* IP-Adresse Ihres Servers ermitteln.
 
-## Was ist ein locales IP ?
+## Was ist eine lokale IP ?
 
-Die lokale IP-Adresse ist die, die verwendet wird, um auf Ihren Server innerhalb des lokalen Netzwerks (typischerweise Ihr Zuhause) zu verweisen, wo mehrere Geräte an einen Router (Ihre Internetbox) angeschlossen sind. Die lokale IP-Adresse sieht typischerweise so aus `192.168.x.y` (oder manchmal `10.0.x.y` oder `172.16.x.y`)
+Die lokale IP-Adresse ist die, die verwendet wird, um auf Ihren Server innerhalb des lokalen Netzwerks (typischerweise Ihr Zuhause) zu verweisen, wo mehrere Geräte an einem Router (Ihre Internetbox) angeschlossen sind. Die lokale IP-Adresse sieht typischerweise so aus `192.168.x.y` (oder manchmal `10.0.x.y` oder `172.16.x.y`)
 
-## Wie findet man es?
+## Wie findet man sie?
 
 Jeder dieser Tricks sollte es Ihnen ermöglichen, die lokale IP-Adresse Ihres Servers zu finden:
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Empfohlen) Mit Angry IP Scanner"]
 
-Verwenden Sie dazu die [AngryIP](https://angryip.org/download/) Software. Sie Brauchen nur diese lokalen IP-Bereiche in dieser Reihenfolge durchsuchen, bis Sie die aktive IP-Adresse finden, die Ihrem Server entspricht:
+Verwenden Sie dazu die [AngryIP](https://angryip.org/download/) Software. Sie brauchen nur diese lokalen IP-Bereiche in dieser Reihenfolge durchsuchen, bis Sie die aktive IP-Adresse finden, die Ihrem Server entspricht:
 
 - `192.168.0.0` -> `192.168.0.255`
 - `192.168.1.0` -> `192.168.1.255`
