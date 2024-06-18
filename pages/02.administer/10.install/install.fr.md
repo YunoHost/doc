@@ -181,7 +181,7 @@ Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 [div class="flex-container"]
 
 [div class="flex-child"]
-[[figure caption="Alsace Réseau Neutre - FR"]![](image://vps_ynh_arn.png?height=50)[/figure]](https://vps.arn-fai.net)
+[[figure caption="Alsace Réseau Neutre - FR"]![](image://vps_ynh_arn.png?height=50)[/figure]](https://arn-fai.net/fr/hébergement-alternatif/vps)
 [/div]
 [div class="flex-child"]
 [[figure caption="FAImaison - FR"]![](image://vps_ynh_faimaison.svg?height=50)[/figure]](https://www.faimaison.net/services/vm.html)
