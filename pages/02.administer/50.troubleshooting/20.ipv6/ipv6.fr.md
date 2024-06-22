@@ -12,29 +12,30 @@ L'IPv6 peut fonctionner directement dans certains cas. Mais dans d'autres, ou ch
 ## Avec un VPS chez OVH
 
 OVH donne une adresse IPv4 et une IPv6 pour ses VPS, mais par défaut, seule l'IPv4 fonctionne.
-La documentation d'OVH à ce sujet est ici : https://docs.ovh.com/fr/vps/configurer-ipv6/
+La documentation d'OVH à ce sujet est ici : <https://docs.ovh.com/fr/vps/configurer-ipv6/>
 
 ### Configurer le serveur DNS
 
-Ici : https://yunohost.org/#/dns_subdomains
+Ici : <https://yunohost.org/#/dns_subdomains>
 
 ### Configurer le serveur
 
 Sur le panneau de gestion d'OVH, vous aller récupérer 3 informations :
+
 - l'adresse IPv6 du serveur
-- l'adresse passerelle IPv6 
+- l'adresse passerelle IPv6
 - le préfixe IPv6. Les offres VPS SSD d'OVH ne fournissent qu'**une** seule adresse IPV6, le préfixe est donc `/128`
 
 Sur votre VPS, vous allez créer une sauvegarde de votre fichier de configuration des interfaces réseau dans votre répertoire home avec la commande : `cp /etc/network/interfaces ~/interfaces`.
 
 2 possibilités pour inscrire vos données ipv6 :
-1/ vous pouvez modifier le fichier de configuration `/etc/network/interfaces` 
+1/ vous pouvez modifier le fichier de configuration `/etc/network/interfaces`
 2/ vous pouvez créer un autre fichier "à part" par la commande `sudo nano /etc/network/interfaces.d/ovh-ipv6.cfg` (ce dernier fichier est pris en compte car appartenant au dossier)
 
-! Découvrir et vérifier avec la commande `ip a` l'interface utilisée sur votre VPS ( généralement du type ENS3 chez OVH) 
+! Découvrir et vérifier avec la commande `ip a` l'interface utilisée sur votre VPS ( généralement du type ENS3 chez OVH)
 ! Dans cet exemple, nous considérons que votre interface réseau est `eth0`. Vous devez adapter l'exemple pour correspondre à votre situation.
 
-```plaintext
+```text
 iface eth0 inet6 static
 address <votre adresse IPv6>
 netmask <votre préfixe IPv6>
@@ -47,6 +48,7 @@ pre-down /sbin/ip -6 route del <la passerelle IPv6> dev eth0
 Maintenant, enregistrez le fichier et redémarrez les services réseau avec : `service networking restart`. (TODO : ideally we should find a way to validate the content of the configuration, otherwise it could fuck up the network stack and get disconnected from the VPS ?)
 
 Vérifiez votre configuration avec les commandes :
+
 - `ip a` pour afficher les adresses IP des interfaces
 - `hostname -I` pour afficher les adresses IP du système
 - essayez de faire un test de `ping` sur un serveur IPv6 (vous pouvez utiliser `ping6 ipv6.yunohost.org`)

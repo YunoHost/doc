@@ -19,7 +19,7 @@ Il browser fondamentalmente ci chiede **«Potete fidarvi del server che ospita q
 
 Per evitare questa situazione è possibile ottenere un certificato riconosciuto dai browser e firmato da un'autorità conosciuta come **Let's Encrypt**, **Gandi**, **RapidSSL**, **StartSSL**, **Cacert**.
 
-In particolare **Let's Encrypt** offre i certificati gratuitamente. Dalla versione 2.5 YunoHost permette di installare il certificato direttamente dall'interfaccia di amministrazione web o da linea di comando. Di seguito troverete la documentazione per l'installazione e la gestione di un certificato. È comunque possibile [installare ugualmente un certificato di un'autorità diversa da Let's Encrypt](/certificate_custom). 
+In particolare **Let's Encrypt** offre i certificati gratuitamente. Dalla versione 2.5 YunoHost permette di installare il certificato direttamente dall'interfaccia di amministrazione web o da linea di comando. Di seguito troverete la documentazione per l'installazione e la gestione di un certificato. È comunque possibile [installare ugualmente un certificato di un'autorità diversa da Let's Encrypt](/certificate_custom).
 
 ### Installare un certificato Let's Encrypt
 
@@ -34,7 +34,6 @@ IP del vostro server) e che il vostro sito sia accessibile in HTTP dall'esterno
 Recatevi nella sezione 'Domini' dell'interfaccia di amministrazione, scegliete la sezione del vostro dominio, qui troverete un pulsante 'Certificato SSL'
 
 ![](image://domain-certificate-button.png)
-
 
 Nella sezione 'Certificati SSL' potere visualizzare lo stato attuale del
 certificato. Se avete appena creato il dominio, esso disporrà di un certificato
@@ -58,13 +57,13 @@ Collegatevi al server con SSH.
 Potete controllare lo stato del certificato in uso con il comando:
 
 ```bash
-yunohost domain cert-status your.domain.tld
+yunohost domain cert status your.domain.tld
 ```
 
 Installate il certificato Let's Encrypt con il comando:
 
 ```bash
-yunohost domain cert-install your.domain.tld
+yunohost domain cert install your.domain.tld
 ```
 
 Che dovrebbe dare come risultato:
@@ -84,10 +83,10 @@ Una volta installato il certificato potete verificarne il corretto funzionamento
 Se il vostro certificato risultasse non funzionante a causa di qualche errore (ad esempio lo avete perso oppure non siete in grado di leggere i file) potete ripulire la situazione rigenerando un certificato autofirmato con questo comando:
 
 ```bash
-yunohost domain cert-install your.domain.tld --self-signed --force
+yunohost domain cert install your.domain.tld --self-signed --force
 ```
 
 Se YunoHost pensa che il vostro dominio non è configurato correttamente nonstante abbiate controllato la configurazione del DNS e riuscite a collegarvi in HTTP al vostro server anche dall'esterno della rete locale allora potete:
 
 - aggiungere una linea `127.0.0.1 vostrodominio.tld` nel file `/etc/hosts` sul vostro server;
-- se nonostante questo l'installazione del certificato dovesse ancora fallire potete disabilitare il controllo con l'opzione `--no-checks` dopo il comando `cert-install`.
+- se nonostante questo l'installazione del certificato dovesse ancora fallire potete disabilitare il controllo con l'opzione `--no-checks` dopo il comando `cert install`.

@@ -29,7 +29,6 @@ La méthode de sauvegarde actuelle consiste à créer des archives `.tar` qui co
 
 Vous pouvez facilement créer des archives depuis la webadmin en allant dans `Sauvegardes > Archives locales` et en cliquant sur `Nouvelle sauvegarde`. Vous pourrez ensuite sélectionner les éléments à sauvegarder (configuration, données "système", applications).
 
-
 ![Image de l'écran de sauvegarde de YunoHost dans la webadmin](image://backup.png)
 
 [/ui-tab]
@@ -38,26 +37,31 @@ Vous pouvez facilement créer des archives depuis la webadmin en allant dans `Sa
 Vous pouvez créer de nouvelles archives depuis la ligne de commande. Voici quelques exemples de commandes et leur comportement correspondant :
 
 - Tout sauvegarder (système et apps) :
+
 ```bash
 yunohost backup create
 ```
 
 - Sauvegarder seulement les apps :
+
 ```bash
 yunohost backup create --apps
 ```
 
 - Sauvegarder seulement deux apps (WordPress et Shaarli) :
+
 ```bash
 yunohost backup create --apps wordpress shaarli
 ```
 
 - Sauvegarder seulement les mails :
+
 ```bash
 yunohost backup create --system data_mail
 ```
 
 - Sauvegarder les mails et WordPress :
+
 ```bash
 yunohost backup create --system data_mail --apps wordpress
 ```
@@ -68,6 +72,7 @@ Pour plus d'informations et d'options sur la création d'archives, consultez `yu
 [/ui-tabs]
 
 #### Télécharger la sauvegarde
+
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="À partir de l'interface web"]
 Après avoir créé des sauvegardes, il est possible de les lister et de les inspecter grâce aux vues correspondantes dans l'interface d'administration web. Un bouton propose de télécharger l'archive. Si l'archive fait plus de 3Go, il peut être préférable de procéder via SFTP.
@@ -101,14 +106,12 @@ scp -P port_ssh admin@votre.domaine.tld:/home/yunohost.backup/archives/<nom_darc
 
 ! N'oubliez pas de stocker votre sauvegarde dans un lieu différents de celui ou se trouve votre serveur.
 
-
 !!! Si vous le souhaitez, vous pouvez connecter un disque externe à votre serveur pour que les archives arrivent directement dessus. Voir ce guide pour [Ajouter un stockage externe à son serveur](/external_storage)
-
-
 
 ### Tester
 
 Vous devriez tester régulièrement vos sauvegardes à minima en listant le contenu des archives et en vérifiant le poids des données associées. Le mieux est de s'entrainer règulièrement à restaurer.
+
 ```bash
 # Lister les fichiers
 tar -tvf /home/yunohost.backup/archives/ARCHIVE.tar | less
@@ -123,6 +126,7 @@ ls -lh /home/yunohost.backup/archives/ARCHIVE.tar
 ### Restaurer
 
 !!! SPOILER: Plus votre volume de données et le nombre d'applications sont important, plus votre restauration sera complexe.
+
 #### Cas simple : peu de données, archive déjà présente
 
 [ui-tabs position="top-left" active="0" theme="lite"]
@@ -131,7 +135,6 @@ ls -lh /home/yunohost.backup/archives/ARCHIVE.tar
 Allez dans `Sauvegardes > Archives locales` et sélectionnez l'archive. Vous pouvez ensuite choisir les différents éléments que vous voulez restaurer puis cliquer sur "Restaurer".
 
 ![](image://restore.png)
-
 
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
@@ -147,6 +150,7 @@ Vous pouvez ensuite exécuter `yunohost backup restore <archivename>` (donc sans
 Pour restaurer une application, le domaine sur laquelle elle est installée doit déjà être configuré (ou il vous faut restaurer en même temps la configuration correspondante). Aussi, il n'est pas possible de restaurer une application déjà installée... ce qui veut dire que pour restaurer une sauvegarde d'une app, il vous faut déjà la désinstaller.
 
 #### Téléverser une archive
+
 Dans de nombreux cas, l'archive n'est pas sur le serveur sur lequel on souhaite la restaurer. Il faut donc la téléverser, ce qui selon son poids peut prend plus ou moins de temps.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
@@ -175,15 +179,15 @@ scp -P port_ssh /path/to/your/<nom_d'archive>.tar admin@your.domain.tld:/home/yu
 
 Il existe 3 applications YunoHost qui proposent d'étendre YunoHost avec une méthode de sauvegarde automatisées.
 
- * [BorgBackup](/backup/borgbackup)
- * [Restic](/backup/restic)
- * [Archivist](/backup/archivist)
+- [BorgBackup](/backup/borgbackup)
+- [Restic](/backup/restic)
+- [Archivist](/backup/archivist)
 
 ## Aller plus loin
 
- * [Évaluer la qualité de sa sauvegarde](/backup/strategies)
- * [Cloner son système de fichier](/backup/clone_filesystem)
- * [Éviter une panne matérielle](/backup/avoid_hardware_failure)
- * [Inclure/exclure des fichiers](/backup/include_exclude_files)
- * [Méthodes personnalisées](/backup/custom_backup_methods)
- * [Migrer ou fusionner des serveurs](/backup/migrate_or_merge_servers)
+- [Évaluer la qualité de sa sauvegarde](/backup/strategies)
+- [Cloner son système de fichier](/backup/clone_filesystem)
+- [Éviter une panne matérielle](/backup/avoid_hardware_failure)
+- [Inclure/exclure des fichiers](/backup/include_exclude_files)
+- [Méthodes personnalisées](/backup/custom_backup_methods)
+- [Migrer ou fusionner des serveurs](/backup/migrate_or_merge_servers)

@@ -10,14 +10,17 @@ routes:
 On an installation at home, your server should typically be accessible using the `yunohost.local` domain. If for any reason this does not work, you may need to find the *local* IP of your server.
 
 ## What is a local IP ?
+
 The local IP is the address used to refer to your server inside the local network (typically your home) where multiple devices are connected to a router (your internet box). The local IP typically looks like `192.168.x.y` (or sometimes `10.0.x.y` or `172.16.x.y`)
 
 ## How to find it ?
+
 Any of these tricks should allow you to find the local IP of your server:
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Recommended) With AngryIP"]
 
 You can use the [AngryIP](https://angryip.org/download/) software to achieve that. You just need to scan these local ip ranges in this order until you find the active IP corresponding to your server:
+
 - `192.168.0.0` -> `192.168.0.255`
 - `192.168.1.0` -> `192.168.1.255`
 - `192.168.2.0` -> `192.168.255.255`
@@ -44,8 +47,9 @@ If the `arp-scan` command displays a confusing number of devices, you can check 
 Plug a screen on your server, log in and type `hostname --all-ip-address`.
 
 The default credentials (before post-installation!) to log in are:
-- login: root
-- password: yunohost
+
+- login: `root`
+- password: `yunohost`
 
 (If you are using a raw Armbian image instead of the pre-installed YunoHost image, the credentials are root / 1234)
 

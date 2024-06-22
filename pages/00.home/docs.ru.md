@@ -27,7 +27,6 @@ visible: false
 
 [/center]
 
-
 [center]
 <a href="/" class="btn btn-lg inline"><i class="fa fa-fw fa-arrow-left"></i> Вернуться на главную</a>
 [/center]

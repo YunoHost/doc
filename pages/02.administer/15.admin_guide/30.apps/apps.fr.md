@@ -47,6 +47,7 @@ L'accès aux applications peut être limité à certains utilisateurs seulement.
 
 À partir de YunoHost v11.1.21.4, si vous avez besoin d'exécuter des commandes avec le binaire de l'application, ou des commandes PHP, etc., vous pouvez exécuter la commande `yunohost app shell <app>`.
 Cela aura pour effet de :
+
 - ouvrir un nouveau shell Bash en tant qu'utilisateur système de l'application
 - ouvrir le répertoire de travail de l'application (par exemple `/var/www/<app>`)
 - précharger l'environnement avec des variables provenant du service de l'application, s'il existe
@@ -58,9 +59,9 @@ Si vous voulez apprendre ou contribuer à l'empaquetage des applications, veuill
 
 ## Sous-chemins vs. domaines individuels par application
 
-Dans le contexte de YunoHost, il est assez courant d'avoir un seul (ou quelques) domaines sur lesquels plusieurs applications sont installées dans des "sous-chemins", de sorte que l'on se retrouve avec quelque chose comme ceci : 
+Dans le contexte de YunoHost, il est assez courant d'avoir un seul (ou quelques) domaines sur lesquels plusieurs applications sont installées dans des "sous-chemins", de sorte que l'on se retrouve avec quelque chose comme ceci :
 
-```bash
+```text
 yolo.com
      ├─── /blog  : Wordpress (un blog)
      ├─── /cloud : Nextcloud (un service de cloud)
@@ -72,7 +73,7 @@ Alternativement, on peut choisir d'installer chaque application (ou certaines) s
 
 Si toutes les applications de l'exemple précédent étaient installées sur un domaine séparé, cela donnerait quelque chose comme ceci :
 
-```bash
+```text
 blog.yolo.com  : Wordpress (un blog)
 cloud.yolo.com : Nextcloud (un service de cloud)
 rss.yolo.com   : TinyTiny RSS (un lecteur RSS)

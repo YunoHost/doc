@@ -59,7 +59,6 @@ ynh_add_nginx_config
 
 Note that the scripts are run with the `set -eu` options (except for the remove script), which means that any failing command or use of non-existing variable will trigger an error and stop the script execution.
 
-
 ## Variables available in a script context
 
 Special variables are automatically defined in the context of a script:
@@ -69,7 +68,6 @@ Special variables are automatically defined in the context of a script:
 - During other scripts, all app settings are also loaded and automatically available.
 - Note that some settings are automatically created/updated by app ressources. For example, the `install_dir` setting will automatically be available too and corresponds to typically `/var/www/$app`
 - In the `change_url` context, variables called `new_domain`, `new_path`, `old_domain`, `old_path` will be available, as well as `change_domain` and `change_path` equal to `0` (false) or `1` (true) depending if the domain / path changed
-
 
 ## Setting system
 
@@ -87,7 +85,7 @@ ynh_app_setting_set --app=$app --key=db_name --value=$db_name
 
 ## Helper system
 
-We call helpers a set of custom bash function created by the YunoHost project to standardize common operations accross all apps. They are all prefixed with `ynh_`. The full list and documentation of these helpers is available on [this page](/packaging_apps_helpers). Some of these helpers are now partially obsolete as they are now handled by the core via app resources.
+We call helpers a set of custom bash function created by the YunoHost project to standardize common operations accross all apps. They are all prefixed with `ynh_`. The full list and documentation of these helpers is available on [this page](/packaging_apps_scripts_helpers). Some of these helpers are now partially obsolete as they are now handled by the core via app resources.
 
 Here is the list of the major ones:
 
@@ -127,7 +125,6 @@ location __PATH__/ {
 }
 ```
 
-
 ## App sources
 
 App sources were historically defined in `conf/app.src` files containing the URL + checksum of assets to download.
@@ -147,10 +144,17 @@ More infos on the `source` resource in [the resource system documentation](/pack
 ## Common operations (TODO/FIXME)
 
 #### installing/upgrading app sources
+
 #### adding configurations
+
 #### adding a systemd service
+
 #### curl / automatizing install forms
+
 #### classic stuff for nodejs apps
+
 #### classic stuff for php apps
+
 #### classic stuff for python apps
+
 #### classic stuff for ??? apps

@@ -10,17 +10,18 @@ page-toc:
   depth: 3
 ---
 
-
 È possibile creare un proprio metodo di backup e includerlo nel sistema di raccolta file di backup di YunoHost. Questo può essere utilizzato ad esempio, nel caso utilizziate un particolare programma di backup o vogliate effettuare delle operazioni di montaggio o smontaggio sui vostri HD.
 
 Dovrete creare un hook che lancerà il backup utilizzando il metodo personalizzato con questo comando:
-```
+
+```bash
 yunohost backup create --method custom
 ```
 
 Di seguito un esempio, semplificato, che esegue il backup con rotazione dei dischi, che vengono sostituiti ogni settimana.
 
-/etc/yunohost/hooks.d/backup_method/05-custom
+`/etc/yunohost/hooks.d/backup_method/05-custom`
+
 ```bash
 #!/bin/bash
 set -euo pipefail

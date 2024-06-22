@@ -27,7 +27,6 @@ La [Comunidad](/community) esta disponible para ayudarte : entra en el [chat](/c
 
 [/center]
 
-
 [center]
 <a href="/" class="btn btn-lg inline"><i class="fa fa-fw fa-arrow-left"></i> Volver a la página principal</a>
 [/center]

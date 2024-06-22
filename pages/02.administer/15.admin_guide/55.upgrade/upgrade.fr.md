@@ -19,7 +19,7 @@ Cliquez sur les boutons verts pour lancer les mises à jour du système et des a
 
 Voici quelques exemples en ligne de commande correspondants :
 
-``` bash
+```bash
 # Aller chercher les mises à jour disponibles
 yunohost tools update
 
