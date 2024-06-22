@@ -28,7 +28,7 @@ Il futuro metodo di backup integrato in YunoHost sarà basato su BorgBackup
 
 ## Pianificazione del backup
 
-!!!Installate l'[applicazione borg](https://github.com/YunoHost-Apps/borg_ynh), ed eventualmente l'[applicazione borgserver](https://github.com/YunoHost-Apps/borgserver_ynh).
+!!! Installate l'[applicazione borg](https://github.com/YunoHost-Apps/borg_ynh), ed eventualmente l'[applicazione borgserver](https://github.com/YunoHost-Apps/borgserver_ynh).
 
 ## Test
 
