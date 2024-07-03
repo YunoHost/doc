@@ -155,7 +155,7 @@ Cette commande est utile lorsque vous voulez communiquer à une autre personne l
 Exemple :
 
 ```bash
-yunohost tools diagnosis | yunopaste
+yunohost diagnosis show | yunopaste
 ```
 
 ### Quelques commandes utiles

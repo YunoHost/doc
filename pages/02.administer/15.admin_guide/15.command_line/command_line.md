@@ -155,7 +155,7 @@ This command allow you to share with an other person the output of a command.
 Example:
 
 ```bash
-yunohost tools diagnosis | yunopaste
+yunohost diagnosis show | yunopaste
 ```
 
 ### The `ynh-vpnclient-loadcubefile.sh` command
