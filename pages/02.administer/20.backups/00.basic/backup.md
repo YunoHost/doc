@@ -1,5 +1,5 @@
 ---
-title: Backing up your server
+title: Basic backups
 template: docs
 taxonomy:
     category: docs
@@ -10,8 +10,6 @@ routes:
 In the context of self-hosting, backups are an important element to compensate for unexpected events (fire, database corruption, loss of access to the server, compromised server...). The backup policy to implement depends on the importance of the services and data you manage. For example, backing up a test server will be of little interest, while you will want to be very careful if you are managing critical data for an association or a company - and in such cases, you will want to store the backups *in a different location or locations*.
 
 ## Manual backup
-
-### Backup
 
 YunoHost comes with a backup system, that allows you to backup (and restore) system configurations and data (e.g. emails) and apps if they support it.
 
@@ -145,7 +143,7 @@ You can then run `yunohost backup restore <archivename>` (hence without its `.ta
 
 To restore an app, the domain on which it was installed should already be configured (or you need to restore the corresponding system configuration). You also cannot restore an app which is already installed... which means that to restore an old version of an app, you must first uninstall it.
 
-#### Upload an archive
+#### Uploading an archive
 
 In many cases, the archive is not on the server on which you want to restore it. So it has to be uploaded, which depending on its size can take more or less time.
 
@@ -170,20 +168,3 @@ scp -P ssh_port /path/to/your/<archive_name>.tar admin@your.domain.tld:/home/yun
 
 [/ui-tab]
 [/ui-tabs]
-
-## Automatic or remote backup
-
-There are 3 YunoHost applications that offer to extend YunoHost with an automated backup method.
-
-- [BorgBackup](/backup/borgbackup)
-- [Restic](/backup/restic)
-- [Archivist](/backup/archivist)
-
-## Go further
-
-- [Evaluate the quality of your backup](/backup/strategies)
-- [Clone your file system](/backup/clone_filesystem)
-- [Avoid a hardware failure](/backup/avoid_hardware_failure)
-- [Include/exclude files](/backup/include_exclude_files)
-- [Custom methods](/backup/custom_backup_methods)
-- [Migrate or merge servers](/backup/migrate_or_merge_servers)

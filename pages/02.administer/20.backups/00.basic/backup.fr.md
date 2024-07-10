@@ -1,5 +1,5 @@
 ---
-title: Sauvegarder son serveur
+title: Sauvegardes basiques
 template: docs
 taxonomy:
     category: docs
@@ -174,20 +174,3 @@ scp -P port_ssh /path/to/your/<nom_d'archive>.tar admin@your.domain.tld:/home/yu
 
 [/ui-tab]
 [/ui-tabs]
-
-## Sauvegarde automatique ou distante
-
-Il existe 3 applications YunoHost qui proposent d'étendre YunoHost avec une méthode de sauvegarde automatisées.
-
-- [BorgBackup](/backup/borgbackup)
-- [Restic](/backup/restic)
-- [Archivist](/backup/archivist)
-
-## Aller plus loin
-
-- [Évaluer la qualité de sa sauvegarde](/backup/strategies)
-- [Cloner son système de fichier](/backup/clone_filesystem)
-- [Éviter une panne matérielle](/backup/avoid_hardware_failure)
-- [Inclure/exclure des fichiers](/backup/include_exclude_files)
-- [Méthodes personnalisées](/backup/custom_backup_methods)
-- [Migrer ou fusionner des serveurs](/backup/migrate_or_merge_servers)

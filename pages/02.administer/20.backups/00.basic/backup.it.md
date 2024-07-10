@@ -1,5 +1,5 @@
 ---
-title: Eseguire il backup del vostro server e delle app
+title: Basic backups
 template: docs
 taxonomy:
     category: docs
