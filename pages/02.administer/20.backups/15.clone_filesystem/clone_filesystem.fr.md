@@ -1,5 +1,5 @@
 ---
-title: Créer une image du système
+title: Créer une image complète du système de fichier
 template: docs
 taxonomy:
     category: docs
@@ -9,8 +9,6 @@ page-toc:
   active: true
   depth: 3
 ---
-
-!! Les images de cette page sont manquantes
 
 L'outil de sauvegarde de YunoHost ne sauvegarde que les fichiers utiles et se base sur des scripts de restauration pour réinstaller les dépendances de vos applications. Autrement dit, le mécanisme de YunoHost revient à réinstaller, puis réincorporer les données.
 
@@ -38,6 +36,9 @@ Ci-dessous, quelques documentations pour les fournisseurs les plus connus:
 - [Scaleway (EN)](https://www.scaleway.com/en/docs/backup-your-data-with-snapshots/)
 [/ui-tab]
 [ui-tab title="VirtualBox"]
+
+!! FIXME: Les images sont manquantes dans cet onglet
+
 Sélectionner la machine virtuelle et cliquer sur `Snapshots`, puis spécifier le nom du snapshot et cliquer sur `OK`.
 ![Le bouton snapshot se trouve en haut à droite](image://virtualbox-snapshot2.webp)
 

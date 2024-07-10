@@ -1,5 +1,5 @@
 ---
-title: Create a filesystem image
+title: Snapshotting the entire filesystem
 template: docs
 taxonomy:
     category: docs
@@ -9,8 +9,6 @@ page-toc:
   active: true
   depth: 3
 ---
-
-!! Images are missing on this page
 
 Lo strumento di backup di YunoHost salva solamente i files utili e si basa su degli script di ripristino per reinstallare le dipendenze dei vostri programmi installati. In altre parole, il ripristino di YunoHost prevede in un primo tempo la reinstallazione del sistema e in seguito il ripristino dei dati.
 
@@ -38,6 +36,9 @@ Sotto la documentazione per i provider più conosciuti:
 - [Scaleway (EN)](https://www.scaleway.com/en/docs/backup-your-data-with-snapshots/)
 [/ui-tab]
 [ui-tab title="VirtualBox"]
+
+!! FIXME: Images are missing in this section
+
 Seleziona la macchina virtuale e clicca su `Snapshot`, poi indica il nome dello snapshot e clicca `OK`.
 ![Il bottone per gli snapshot button si trova in alto a destra](image://virtualbox-snapshot2.webp)
 
