@@ -1,10 +1,10 @@
 ---
-title: Aidez-moi
+title: Demander de l'aide efficacement
 template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/help-me'
+  default: '/asking_for_help_efficiently'
 ---
 
 Bien que les personnes contribuant à YunoHost essaient continuellement de l'améliorer, YunoHost, ses packages ou sa documentation ne sont exempts de bugs ou d'erreurs. Pour nous aider à vous aider, vous devez cependant suivre ces instructions.

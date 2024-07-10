@@ -1,10 +1,10 @@
 ---
-title: Help me
+title: Asking for help efficiently
 template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/help-me'
+  default: '/asking_for_help_efficiently'
 ---
 
 Even though YunoHost contributors try to continuously perfect it, YunoHost itself, its packages or this documentation are not free from bugs or flaw. To let us help you, however, you need to follow these guidelines.
