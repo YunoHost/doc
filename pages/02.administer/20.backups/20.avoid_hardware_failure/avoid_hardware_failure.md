@@ -1,10 +1,10 @@
 ---
-title: Avoid hardware failure
+title: Prevent hardware failures
 template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/backup/avoid_hardware_failure'
+  default: '/backup/prevent_hardware_failure'
 page-toc:
   active: true
   depth: 3
@@ -17,13 +17,13 @@ Very often people who self-host don't have proper storage for their system. Leav
 
 ## Secure your hard drives
 
-Ideally, your hard disks should be fixed to avoid vibrations which can accelerate the wear of the equipment or even reduce its performance, especially if there is another disk next to it.
+Ideally, your hard disks should be fixed to prevent vibrations which can accelerate the wear of the equipment or even reduce its performance, especially if there is another disk next to it.
 
 ## Reduce swapiness for SD cards and SSDs
 
 If you use a swap file with an SSD or SD card with too much swapiness, your storage media could give up the ghost prematurely due to too many writes.
 
-To avoid this:
+To prevent this:
 
 ```bash
 cat /proc/sys/vm/swappiness
@@ -48,7 +48,7 @@ In order to limit hardware failures of storage media, it can be relevant to set 
 
 There are also more advanced clusters that maximize fault tolerance (failure of 2 disks like RAID6) or storage (see RAID 5).
 
-However, these disk clustering techniques should not be considered as backups. A RAID array should be considered as a single storage medium. Indeed, if this technique avoids having to reinstall in case of a probable disk crash, it is far from zero risk.
+However, these disk clustering techniques should not be considered as backups. A RAID array should be considered as a single storage medium. Indeed, if this technique prevents having to reinstall in case of a probable disk crash, it is far from zero risk.
 
 Some examples of situations known to professional system administrators:
 
