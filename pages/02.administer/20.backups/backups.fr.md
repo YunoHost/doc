@@ -1,5 +1,5 @@
 ---
-title: Sauvegardes basiques
+title: Sauvegardes
 template: docs
 taxonomy:
     category: docs

@@ -1,5 +1,5 @@
 ---
-title: Basic backups
+title: Backups
 template: docs
 taxonomy:
     category: docs
