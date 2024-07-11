@@ -36,9 +36,6 @@ Sotto la documentazione per i provider più conosciuti:
 - [Scaleway (EN)](https://www.scaleway.com/en/docs/backup-your-data-with-snapshots/)
 [/ui-tab]
 [ui-tab title="VirtualBox"]
-
-!! FIXME: Images are missing in this section
-
 Seleziona la macchina virtuale e clicca su `Snapshot`, poi indica il nome dello snapshot e clicca `OK`.
 ![Il bottone per gli snapshot button si trova in alto a destra](image://virtualbox-snapshot2.webp)
 
