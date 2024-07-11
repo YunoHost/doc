@@ -8,5 +8,4 @@
 
 ## PR checklist
 
-- [ ] I'm not doing a PR for an application, I promise, I know that this kind of changes must go directly into the app packages themselves
 - [ ] PR finished and ready to be reviewed
