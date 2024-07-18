@@ -21,7 +21,7 @@ This page is dedicated to help you migrating an instance from YunoHost 11.x (run
 
 ## Migration procedure
 
-You first need to ensure your system is up to date. The migration is available starting with the version 11.2.FIXME:.
+You first need to ensure your system is up to date. The migration is available starting with the version 11.3.
 
 It is recommended to run the migration from the command line, but it can still be done from the webadmin.
 

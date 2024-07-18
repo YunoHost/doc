@@ -19,7 +19,7 @@ L'objectif cette page est de décrire le processus de migration d'une instance e
 
 ## Procédure de migration
 
-Vous devez d'abord vous assurer que votre système est à jour. La migration est disponible à partir de la version 11.2.FIXME:.
+Vous devez d'abord vous assurer que votre système est à jour. La migration est disponible à partir de la version 11.3.
 
 Il est recommendé de lancer la migration depuis la ligne de commande, mais elle peut très bien être effectuée depuis la webadmin.
 
