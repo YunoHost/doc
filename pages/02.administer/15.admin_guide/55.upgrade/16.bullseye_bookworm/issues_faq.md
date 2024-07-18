@@ -9,6 +9,8 @@ routes:
 
 This page lists all the known issues encountered after a migration from YunoHost 11 to 12.
 
+If the suggested solutions don't work, please [ask for help](/help).
+
 ## Python apps
 
 After upgrading, your python apps should be unavailable because their virtual environment (venv) needs to be rebuilt.
@@ -22,6 +24,14 @@ Apps which won't be automatically repaired and need a force upgrade:
 TODO: list those apps
 
 FIXME:??!!! If needed, you can disable the automatic rebuild for a specific python app, by removing the dedicated file ending with `.requirements_backup_for_bullseye_upgrade.txt` before applying the migration. You can find this file near the venv (Python virtual environment) of your app inside `/var/www`.
+
+## Error 500 everywhere
+
+The web server, nginx, might need a restart before being fully operational. Please run this command:
+
+```
+sudo systemctl restart nginx
+```
 
 
 <!-- ### Can't run the migration due to `libc6-dev : Breaks: libgcc-8-dev issue`
