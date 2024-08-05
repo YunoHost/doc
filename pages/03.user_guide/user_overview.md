@@ -1,11 +1,10 @@
 ---
 title: User guide
-menu: User guide
-template: docs
+template: chapter
 taxonomy:
     category: docs
 routes:
   default: '/user_guide'
 ---
 
-!! This section is being worked on. 
+# User guide

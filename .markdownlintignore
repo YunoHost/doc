@@ -1,0 +1,11 @@
+config
+images
+tests
+themes
+.*
+Dockerfile
+docker-compose.yml
+
+# auto-generated pages
+pages/06.contribute/10.packaging_apps/80.resources/11.helpers/packaging_apps_helpers.md
+pages/06.contribute/10.packaging_apps/80.resources/15.appresources/packaging_apps_resources.md

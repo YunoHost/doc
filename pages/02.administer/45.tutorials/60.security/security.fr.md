@@ -13,9 +13,9 @@ Tous les protocoles que YunoHost utilise sont **chiffrés**, les mots de passe n
 
 Deux points sont néanmoins importants à noter :
 
-* L’installation d’applications supplémentaires **augmente le nombre de failles** potentielles. Il est donc conseillé de se renseigner sur chacune d’elle **avant l’installation**, d’en comprendre le fonctionnement et juger ainsi l’impact que provoquerait une potentielle attaque. N’installez **que** les applications qui semblent importantes pour votre usage.
+- L’installation d’applications supplémentaires **augmente le nombre de failles** potentielles. Il est donc conseillé de se renseigner sur chacune d’elle **avant l’installation**, d’en comprendre le fonctionnement et juger ainsi l’impact que provoquerait une potentielle attaque. N’installez **que** les applications qui semblent importantes pour votre usage.
 
-* Le fait que YunoHost soit un logiciel répandu augmente les chances de subir une attaque. Si une faille est découverte, elle peut potentiellement **toucher toutes les instances YunoHost** à un temps donné. Nous nous efforçons de corriger ces failles le plus rapidement possible, pensez donc à **mettre à jour régulièrement** votre système.
+- Le fait que YunoHost soit un logiciel répandu augmente les chances de subir une attaque. Si une faille est découverte, elle peut potentiellement **toucher toutes les instances YunoHost** à un temps donné. Nous nous efforçons de corriger ces failles le plus rapidement possible, pensez donc à **mettre à jour régulièrement** votre système.
 
 !!!! Si vous avez besoin de conseil, n’hésitez pas à [nous demander](/help).
 
@@ -61,7 +61,8 @@ sudo yunohost settings set security.ssh.password_authentication -v no
 ### Modifier le port SSH
 
 Pour éviter des tentatives de connexion SSH par des robots qui scannent tout Internet pour tenter des connexions SSH avec tout serveur accessible, on peut modifier le port SSH.
-C'est géré par un paramètre système, qui se charge de configurer les services SSH et Fail2Ban.
+C'est géré par un paramètre système, qui se charge de configurer les services SSH et Fail2Ban.  
+Il n'est pas utile de modifier ce port si vous avez désactivé l'authentification par mot de passe.
 
 ```bash
 sudo yunohost settings set security.ssh.port -v <votre_numero_de_port_ssh>
@@ -84,11 +85,13 @@ La configuration TLS par défaut des services tend à offrir une bonne compatibi
 Changer le niveau de compatibilité n'est pas définitif et il est possible de rechanger le paramètre si vous concluez qu'il faut revenir en arrière.
 
 **Sur votre serveur**, modifiez la politique pour NGINX :
+
 ```bash
 sudo yunohost settings set security.nginx.compatibility -v modern
 ```
 
 **Sur votre serveur**, modifiez la politique pour SSH :
+
 ```bash
 sudo yunohost settings set security.ssh.compatibility -v modern
 ```

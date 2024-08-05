@@ -9,15 +9,18 @@ routes:
 
 Bei einer Installation zu Hause sollte Ihr Server normalerweise über die Domäne`yunohost.local` erreichbar sein. Wenn dies aus irgendeinem Grund nicht funktioniert, müssen Sie möglicherweise die *lokale* IP-Adresse Ihres Servers ermitteln.
 
-## Was ist ein locales IP ?
-Die lokale IP-Adresse ist die, die verwendet wird, um auf Ihren Server innerhalb des lokalen Netzwerks (typischerweise Ihr Zuhause) zu verweisen, wo mehrere Geräte an einen Router (Ihre Internetbox) angeschlossen sind. Die lokale IP-Adresse sieht typischerweise so aus `192.168.x.y` (oder manchmal `10.0.x.y` oder `172.16.x.y`)
+## Was ist eine lokale IP ?
 
-## Wie findet man es?
+Die lokale IP-Adresse ist die, die verwendet wird, um auf Ihren Server innerhalb des lokalen Netzwerks (typischerweise Ihr Zuhause) zu verweisen, wo mehrere Geräte an einem Router (Ihre Internetbox) angeschlossen sind. Die lokale IP-Adresse sieht typischerweise so aus `192.168.x.y` (oder manchmal `10.0.x.y` oder `172.16.x.y`)
+
+## Wie findet man sie?
+
 Jeder dieser Tricks sollte es Ihnen ermöglichen, die lokale IP-Adresse Ihres Servers zu finden:
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="(Empfohlen) Mit Angry IP Scanner"]
 
-Verwenden Sie dazu die [AngryIP](https://angryip.org/download/) Software. Sie Brauchen nur diese lokalen IP-Bereiche in dieser Reihenfolge durchsuchen, bis Sie die aktive IP-Adresse finden, die Ihrem Server entspricht:
+Verwenden Sie dazu die [AngryIP](https://angryip.org/download/) Software. Sie brauchen nur diese lokalen IP-Bereiche in dieser Reihenfolge durchsuchen, bis Sie die aktive IP-Adresse finden, die Ihrem Server entspricht:
+
 - `192.168.0.0` -> `192.168.0.255`
 - `192.168.1.0` -> `192.168.1.255`
 - `192.168.2.0` -> `192.168.255.255`
@@ -44,8 +47,9 @@ Wenn der Befehl `arp-scan` viele Geräte anzeigt, können Sie dann mit dem Befeh
 Bildschirm auf den Server anschliessen, sich einloggen und diesen Befehl eingeben`hostname --all-ip-address`.
 
 Die Standard-Anmeldedaten (vor der Nachinstallation!) zum Einloggen sind:
-- login: root
-- password: yunohost
+
+- login: `root`
+- password: `yunohost`
 
 (Wenn Sie ein rohes Armbian-Image anstelle des vorinstallierten YunoHost-Images verwenden, lauten die Anmeldedatenen root / 1234)
 

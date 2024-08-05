@@ -14,15 +14,13 @@ routes:
 
 ## Pre-installed YunoHost Offers
 
- * [Alsace Réseau Neutre](https://arn-fai.net) (VPS) <span class="ffdn">FFDN</span> <span class="chatons">CHATONS</span>
-
- * [Association ECOWAN](https://ecowan.fr) (VPS)
-
- * [Scaleway Dedibox](https://www.scaleway.com/en/dedibox/operating-systems/) (dedicated server)
+- [Alsace Réseau Neutre](https://arn-fai.net) (VPS) <span class="ffdn">FFDN</span> <span class="chatons">CHATONS</span>
+- [Association ECOWAN](https://ecowan.fr) (VPS)
+- [Scaleway Dedibox](https://www.scaleway.com/en/dedibox/operating-systems/) (dedicated server)
 
 ## YunoHost IT outsourcing
 
- * [ReflexLibre](https://reflexlibre.net) (France only) <span class="chatons">CHATONS</span>
+- [ReflexLibre](https://reflexlibre.net) (France only) <span class="chatons">CHATONS</span>
 
 <style>
 .ffdn {

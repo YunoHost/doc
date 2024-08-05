@@ -17,10 +17,8 @@ Innanzitutto collegati all'interfaccia web d'amministrazione.
 
 Poi vai su Strumenti > Cambia password amministrazione.
 
-
 ## Usando l'interfaccia a linea di comando
 
-
 ```bash
-yunohost tools adminpw
+yunohost tools rootpw
 ```

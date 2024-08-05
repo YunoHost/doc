@@ -16,6 +16,7 @@ Cet écosystème comprend un serveur SMTP (postfix), un serveur IMAP (Dovecot), 
 Les emails sont un écosystème compliqué et un grand nombre de détails peuvent les empêcher de fonctionner correctement.
 
 Pour valider que votre configuration est correcte :
+
 - si vous vous hébergez chez vous et n'utilisez pas de VPN, assurez-vous que [votre FAI ne bloque pas le port 25](/isp) ;
 - routez les ports selon [cette documentation](/isp_box_config) ;
 - configurez soigneusement les enregistrements DNS du courrier électronique selon [cette documentation](/dns_config) ;

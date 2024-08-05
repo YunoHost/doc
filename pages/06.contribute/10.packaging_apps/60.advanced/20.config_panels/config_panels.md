@@ -28,6 +28,7 @@ From an app packager perspective, config panels are defined in `config_panel.tom
 The `config_panel.toml` describes one or several panels, containing sections, each containing questions generally binded to a params in the app's actual configuration files.
 
 Let's imagine that the upstream app is configured using this simple `config.yml` file stored in the app's install directory (typically `/var/www/$app/config.yml`):
+
 ```yaml
 title: 'My dummy app'
 theme: 'white'
@@ -183,11 +184,13 @@ get__timezone() {
     echo "$(cat /etc/timezone)"
 }
 ```
+
 [/details]
 
 [details summary="<i>Basic example with yaml-formated stdout : Display a list of available plugins</i>" class="helper-card-subtitle text-muted"]
 
 `config_panel.toml`
+
 ```toml
 [main.plugins.plugins]
 ask = "Plugin to activate"
@@ -236,6 +239,7 @@ EOF
     fi
 }
 ```
+
 [/details]
 
 
@@ -264,6 +268,7 @@ set__timezone() {
     ynh_print_info "The timezone has been changed to $timezone"
 }
 ```
+
 [/details]
 
 
@@ -442,11 +447,12 @@ ynh_app_config_apply() {
 ```
 
 List of main configuration helpers:
- * `ynh_app_config_get`
- * `ynh_app_config_show`
- * `ynh_app_config_validate`
- * `ynh_app_config_apply`
- * `ynh_app_config_run`
+
+- `ynh_app_config_get`
+- `ynh_app_config_show`
+- `ynh_app_config_validate`
+- `ynh_app_config_apply`
+- `ynh_app_config_run`
 
 More info on this can be found by reading [vpnclient_ynh config script](https://github.com/YunoHost-Apps/vpnclient_ynh/blob/master/scripts/config)
 
