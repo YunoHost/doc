@@ -613,7 +613,7 @@ Keep in mind that:
 [/ui-tab]
 [/ui-tabs]
 
-!!! If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. For instructions, at the top of this page, select "Remote server", then "VPS or dedicated server with Debian".
+!!! If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See these instructions: https://yunohost.org/en/installing_debian
 {% endif %}
 
 {% if rpi012 %}
