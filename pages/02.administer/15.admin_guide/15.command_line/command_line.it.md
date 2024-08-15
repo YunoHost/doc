@@ -29,6 +29,8 @@ Se stai installando su un computer casalingo (ad esempio un Raspberry Pi o un OL
 
 ### Collegamento
 
+! Questa sezione deve essere riscritta, ora l'utente `admin` non esiste più ed è sostituito dal gruppo `admins`.
+
 Se come esempio il tuo indirizzo IP è `111.222.333.444` avvia un terminale e digita:
 
 ```bash
@@ -50,7 +52,7 @@ Se hai installato il server a casa e stai provando a collegarti dall'esterno del
 Se conosci esclusivamente l'indirizzo IP del tuo server:
 
 ```bash
-ssh admin@111.222.333.444
+ssh username@111.222.333.444
 ```
 
 Dopo di che dovrai inserire la password di amministratore creata nella [procedura di postinstallazione](/postinstall).
@@ -58,13 +60,13 @@ Dopo di che dovrai inserire la password di amministratore creata nella [procedur
 Se invece hai configurato il DNS (o hai modificato il file `/etc/hosts`), puoi semplicemente usare il tuo nome di dominio:
 
 ```bash
-ssh admin@your.domain.tld
+ssh username@your.domain.tld
 ```
 
 Se hai modificato la porta in ascolto per SSH devi aggiungere l'opzione `-p <portnumber>` al comando, cioè:
 
 ```bash
-ssh -p 2244 admin@your.domain.tld
+ssh -p 2244 username@your.domain.tld
 ```
 
 !!! Se sei loggato come `admin` ma vuoi usare l'utente `root` per maggiore comodità (ad esempio per evitare di scrivere `sudo` prima di ogni comando) puoi usare il comando `sudo su`.
