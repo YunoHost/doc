@@ -31,6 +31,8 @@ Si instalas un servidor en tu casa (por ejemplo en Raspberry Pi u OLinuXino), ti
 
 ### Conectarse
 
+! Esta parte necesita ser reescrita, ahora el usuario `admin` ya no existe y es reemplazado por el grupo `admins`
+
 Suponiendo que tu dirección IP sea `111.222.333.444`, abre una terminal y escribe :
 
 ```bash
@@ -52,7 +54,7 @@ Si instalaste tu servidor en casa y que quieres conectarte desde fuera de la red
 Si sólo conoces el IP de tu servidor :
 
 ```bash
-ssh admin@111.222.333.444
+ssh username@111.222.333.444
 ```
 
 Luego, entra la contraseña de administración que has elegido durante la post-instalación [post-installation](/postinstall).
@@ -60,22 +62,20 @@ Luego, entra la contraseña de administración que has elegido durante la post-i
 Si has configurado tus DNS (o modificar tu `/etc/hosts`), puedes utilizar tu nombre de dominio :
 
 ```bash
-ssh admin@votre.domaine.tld
+ssh username@tu.dominio.tld
 ```
 
 Si cambiaste el puerto SSH, hay que añadir `-p <numerodelpuerto>` al comando, por ej. :
 
 ```bash
-ssh -p 2244 admin@tu.dominio.tld
+ssh -p 2244 username@tu.dominio.tld
 ```
 
 !!! Si estás conectado como `admin` y quieres ser `root` para tener más confort (por ejemplo, para no teclear `sudo` con cada comando), puedes convertirte en `root` tecleando `sudo su`.
 
 ## ¿ Qué usuarios ?
 
-Por defecto, sólo el usuario `admin` puede conectarse en SSH en una instancia YunoHost.
-
-Los usuarios YunoHost creados vea la interfaz de administración están administrados por la base de datos LDAP. Por defecto, no pueden conectarse en SSH por razones de seguridad. Si necesitas absolutamente que uno de estos usuarios disponga de un acceso SSH, puedes utilizar el comando :
+Sólo cuentas en el grupo `admins` puede conectarse en SSH en una instancia YunoHost. Cuentas fuera de este grupo no pueden conectarse en SSH por razones de seguridad. Si necesitas absolutamente que uno de estos usuarios disponga de un acceso SSH, puedes utilizar el comando :
 
 ```bash
 yunohost user permission add ssh.main <username>

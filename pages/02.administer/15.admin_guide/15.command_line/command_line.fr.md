@@ -57,25 +57,23 @@ Ci-dessous quelques exemples de commande SSH typiques :
 ssh root@11.22.33.44
 
 # après la postinstall:
-ssh admin@11.22.33.44
+ssh username@11.22.33.44
 
 # avec le nom de domaine plutôt que l'IP (plus pratique):
-ssh admin@votre.domaine.tld
+ssh username@votre.domaine.tld
 
 # avec le nom de domaine spécial yunohost.local:
-ssh admin@yunohost.local
+ssh username@yunohost.local
 
 # si vous avez changé le numéro de port pour SSH 
-ssh -p 2244 admin@votre.domaine.tld
+ssh -p 2244 username@votre.domaine.tld
 ```
 
 !!! `fail2ban` bannira votre IP pendant 10 minutes si vous échouez plus de 10 fois à vous identifier. Pour débannir une IP, vous pouvez regarder la page sur [Fail2Ban](/fail2ban).
 
 ## Autoriser un utilisateur YunoHost standard
 
-Par défaut, seul l'utilisateur `admin` peut se logger en SSH sur une instance YunoHost.
-
-Les utilisateurs YunoHost créés via l'interface d'administration sont gérés par la base de données LDAP. Par défaut, ils ne peuvent pas se connecter en SSH pour des raisons de sécurité. Via le système des permissions il est possible d'autoriser la connexion en SFTP ou si c'est vraiment nécessaire en SSH.
+Par défaut, seuls les comptes dans le groupe `admins` peuvent se connecter en SSH et SFTP sur une instance YunoHost. Les comptes hors de ce groupe ne peuvent se connecter pour des raisons de sécurité. Avec le système de permissions il est possible d'autoriser la connexion en SFTP ou si c'est vraiment nécessaire en SSH.
 
 ! Faites attention à qui vous donnez accès à SSH. Cela augmente encore plus la surface d'attaque disponible pour un utilisateur malveillant.
 
@@ -155,7 +153,7 @@ Cette commande est utile lorsque vous voulez communiquer à une autre personne l
 Exemple :
 
 ```bash
-yunohost tools diagnosis | yunopaste
+yunohost diagnosis show | yunopaste
 ```
 
 ### Quelques commandes utiles

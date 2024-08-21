@@ -325,7 +325,7 @@ Questi sono alcuni provider di VPS che supportano nativamente YunHost:
 [div class="flex-container"]
 
 [div class="flex-child"]
-[[figure caption="Alsace Réseau Neutre - FR"]![](image://vps_ynh_arn.png?height=50)[/figure]](https://vps.arn-fai.net)
+[[figure caption="Alsace Réseau Neutre - FR"]![](image://vps_ynh_arn.png?height=50)[/figure]](https://arn-fai.net/en/h%C3%A9bergement-alternatif/vps)
 [/div]
 [div class="flex-child"]
 [[figure caption="FAImaison - FR"]![](image://vps_ynh_faimaison.svg?height=50)[/figure]](https://www.faimaison.net/services/vm.html)

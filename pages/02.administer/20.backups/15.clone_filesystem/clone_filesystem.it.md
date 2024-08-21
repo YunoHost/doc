@@ -1,5 +1,5 @@
 ---
-title: Create a filesystem image
+title: Snapshotting the entire filesystem
 template: docs
 taxonomy:
     category: docs
@@ -9,8 +9,6 @@ page-toc:
   active: true
   depth: 3
 ---
-
-!! Images are missing on this page
 
 Lo strumento di backup di YunoHost salva solamente i files utili e si basa su degli script di ripristino per reinstallare le dipendenze dei vostri programmi installati. In altre parole, il ripristino di YunoHost prevede in un primo tempo la reinstallazione del sistema e in seguito il ripristino dei dati.
 
