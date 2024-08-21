@@ -165,22 +165,22 @@ Potete seguire questo tutorial sul forum per impostare Borg fra due server: <htt
 
 Alternativamente, la app Archivist permette di impostare un sistema simile: <https://forum.yunohost.org/t/new-app-archivist/3747>
 
-#### For ARM boards: full backup with USBimager or `dd`
+#### Per le schede ARM: backup completo usando USBimager o `dd` 
 
-If you are using an ARM board, another method for doing a full backup can be to create an image of the SD card.
+Se state usando una scheda ARM un altro sistema per fare backup completi può essere la creazione di un'immagine della card SD.
 
-This can be done easily using [USBimager](https://bztsrc.gitlab.io/usbimager/) (N.B. be sure to get the Read-Write version! Not the write-only version!). The process is basically the *reverse* of flashing the SD card.
+Questo può essere fare facilmente usando [USBimager](https://bztsrc.gitlab.io/usbimager/) (N.B.: accertatevi di usare la versione Read-Write! Non la versione write-only!) Il processo è fondamentalmente il *contrario* della copia sulla card SD.
 
-- Poweroff your server
-- Get the SD card and plug it into your computer
-- Using USBimager, click the *Read* button to create an image (snapshot) of the sd card. You can use it later to restore the entire system.
+- Spegnete il vostro server
+- Prendete la card SD ed inseritela nel vostro computer
+- Usande USBimager, cliccate sul bottone *Read* per creare un'immagine (snapshot) della card SD. Potete usarla poi più tardi per recuperare l'intero sistema.
 
-More details [in the USBimager doc](https://gitlab.com/bztsrc/usbimager/#creating-backup-image-file-from-device)
+Maggiori dettagli [nella documentazione di USBimager](https://gitlab.com/bztsrc/usbimager/#creating-backup-image-file-from-device)
 
-Alternatively you can use `dd` if you're comfortable with the command line with something like:
+Alternativamente potete usare `dd` se vi trovate bene ad usare la riga di comando come:
 
 ```bash
 dd if=/dev/mmcblk0 | gzip > ./my_snapshot.gz
 ```
 
-(replace `/dev/mmcblk0` with the actual device of your SD card)
+(rimpiazzate `/dev/mmcblk0` con il device reale della vostra card SD)
