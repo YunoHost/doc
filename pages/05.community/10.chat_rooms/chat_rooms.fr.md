@@ -10,11 +10,10 @@ routes:
 Parmi d’autres outils, le projet YunoHost se sert de salons de discussions pour communiquer.
 
 Vous pouvez rejoindre ces salons avec :
-- un [Client Matrix](https://linuxfr.org/news/matrix-pour-decentraliser-skype-whatsapp-signal-slack-et-discord)
+
+- un [Client Matrix](https://matrix.org/ecosystem/clients/)
 - un [Client XMPP](https://fr.wikipedia.org/wiki/Clients_XMPP)
 - un [Client IRC](https://fr.wikipedia.org/wiki/Liste_de_clients_IRC) par exemple [KiwiIRC](https://web.libera.chat/#yunohost) (attention, le salon IRC est déprécié, préférez Matrix)
-
-
 
 #### Salon d'entraide et de support
 
