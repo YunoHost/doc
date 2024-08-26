@@ -468,7 +468,7 @@ Ne perdez pas de vue que:
 [/ui-tab]
 [/ui-tabs]
 
-!!! Si l'installation de YunoHost échoue sur votre machine et que vous n'arrivez pas à résoudre le problème, sachez qu'il est aussi possible d'installer Debian et ensuite d'installer YunoHost dessus. Pour les instructions, au sommet de cette page, sélectionnez "Serveur distant" puis "VPS ou serveur dédié avec Debian".
+!!! Si l'installation de YunoHost échoue sur votre machine et que vous n'arrivez pas à résoudre le problème, sachez qu'il est aussi possible d'installer Debian et ensuite d'installer YunoHost dessus. Voir ces instructions: https://yunohost.org/fr/administer/install/installing_debian
 {% endif %}
 
 {% if rpi012 %}

@@ -30,6 +30,8 @@ Wenn du Zuhause installierst (z.B. auf einem Raspberry Pi oder OLinuXino), dann 
 
 ### Verbinden
 
+! Dieser Abschnitt muss neu geschrieben werden, jetzt gibt es den Benutzer `admin` nicht mehr und er wird durch die Gruppe `admins` ersetzt
+
 Angenommen deine IP Addresse ist `111.222.333.444`, öffne einen Terminal und gib Folgendes ein:
 
 ```bash
@@ -55,7 +57,7 @@ Wenn du deinen Server zu Hause installiert hast und versuchst, dich von außerha
 Wenn du nur die IP-Adresse deines Servers kennst :
 
 ```bash
-ssh admin@111.222.333.444
+ssh username@111.222.333.444
 ```
 
 Dann musst du dein Administratorkennwort eingeben, das du unter [Post-Installationsschritt](/postinstall) erstellt hast.
@@ -63,13 +65,13 @@ Dann musst du dein Administratorkennwort eingeben, das du unter [Post-Installati
 Wenn du dein DNS konfiguriert hast (oder deine `/etc/hosts` optimiert hast), kannst du einfach deinen Domainnamen verwenden:
 
 ```bash
-ssh admin@your.domain.tld
+ssh username@your.domain.tld
 ```
 
 Wenn du den SSH-Port geändert hast, musst du `-p <Portnummer>` an den Befehl anhängen, z.B. :
 
 ```bash
-ssh -p 2244 admin@your.domain.tld
+ssh -p 2244 username@your.domain.tld
 ```
 
 !!! Wenn du als `admin` verbunden bist und aus Bequemlichkeit `root` werden möchtest (z.B. um nicht vor jedem Befehl `sudo` eintippen zu müssen), kannst du mit dem Befehl `sudo su` `root` werden.

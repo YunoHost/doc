@@ -1,5 +1,5 @@
 ---
-title: Create a filesystem image
+title: Snapshotting the entire filesystem
 template: docs
 taxonomy:
     category: docs
@@ -10,15 +10,13 @@ page-toc:
   depth: 3
 ---
 
-!! Images are missing on this page
-
 YunoHost's backup tool only backs up useful files and relies on restore scripts to reinstall the dependencies of your applications. In other words, YunoHost's mechanism amounts to reinstalling and then reincorporating the data.
 
 Making full system images can be a complementary or alternative way to backup your machine. The advantage is that your system can be restored to the exact state it was in at the time of the backup.
 
 Depending on your type of installation, you can either create a snapshot or clone the storage medium by removing it from your server (turned off).
 
-## Trigger a snapshot
+## Creating a snapshot
 
 A snapshot allows you to freeze an image of the file system. Snapshots are very useful when doing an update or testing, because they allow you to easily go back in case of a glitch. On the other hand, apart from some very high availability clusters, snapshots do not really protect you against hardware failures or disasters (cf. OVH fire in Strasbourg in 2021).
 
