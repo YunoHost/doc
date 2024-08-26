@@ -15,6 +15,7 @@ Vous pouvez rejoindre ces salons avec :
 - un [Client IRC](https://fr.wikipedia.org/wiki/Liste_de_clients_IRC) par exemple [KiwiIRC](https://web.libera.chat/#yunohost) (attention, le salon IRC est déprécié, préférez Matrix)
 
 
+**NB : Actuellement, le pont IRC ([grace à Matrix](https://libera.chat/guides/faq#are-bridges-allowed)) est désactivé. Ainsi, alors que les canaux XMPP et Matrix sont pontés, le canal IRC ne l'est pas**.
 
 #### Salon d'entraide et de support
 
