@@ -11,7 +11,7 @@ Il progetto YunoHost si avvale, oltre ad altri strumenti, delle chat di aiuto.
 
 Potete accedere alle chat utilizzando:
 
-- un [Client Matrix](https://matrix.org/docs/guides/faq.html#what-clients-are-available%3F)
+- un [Client Matrix](https://matrix.org/ecosystem/clients/)
 - un [Client XMPP](https://en.wikipedia.org/wiki/Comparison_of_instant_messaging_clients)
 - un [Client IRC](https://en.wikipedia.org/wiki/Comparison_of_Internet_Relay_Chat_clients) come ad esempio [KiwiIRC](https://web.libera.chat/#yunohost) (notate però che la stanza IRC è ormai deprecata, è preferibile usare matrix)
 
