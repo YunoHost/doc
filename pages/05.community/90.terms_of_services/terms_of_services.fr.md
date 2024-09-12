@@ -278,11 +278,11 @@ Il s'agit du service utilisé si vous demandez un nom de domaine terminant par `
 
 Ce service est proposé dans la limite d'un seul domaine par serveur YunoHost (bien qu'il soit possible de configurer des sous-domaine de ce domaine). Si des abus sont constatés (par exemple création de trop nombreux domaines depuis la même machine ou IP, ou création automatisée à large échelle), le projet se réserve le droit de supprimer les domaines concernés sans prévenir.
 
-### Suppression automatique
+#### Suppression automatique
 
 Le projet YunoHost se réserve le droit de supprimer le domaine si aucun serveur ne semble y être associé et que l'adresse IP n'a pas été mise à jour depuis 1 an.
 
-### Résiliation
+#### Résiliation
 
 Vous pouvez supprimer votre domaine à l'aide du mot de passe choisi lors de sa création.
 
