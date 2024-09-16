@@ -130,7 +130,7 @@ File question
 
 | Property | Description  | Example |
 |----------|--------------|---------|
-| `accept`    | Same format than HTML file input |         |
+| `accept`    | Accepted MIME types, as in [HTML implementation](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept) | `["image/png"]` or `["image/*"]` or `["image/png", "image/jpeg"]` |
 
 ! This file type is not made for big files transfer, it's just for small logo, or config files.
 
