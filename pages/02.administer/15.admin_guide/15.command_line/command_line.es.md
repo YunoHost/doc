@@ -19,9 +19,9 @@ La interfaz de línea de comandos (CLI) es, en informática, la manera original 
 
 ## Durante la instalación de YunoHost
 
-#### Encontrar su IP
+### Encontrar su IP
 
-Si instalas YunoHost en un VPS, tu proveedor debería haberte comunicado la dirección IP de tu servidor. 
+Si instalas YunoHost en un VPS, tu proveedor debería haberte comunicado la dirección IP de tu servidor.
 
 Si instalas un servidor en tu casa (por ejemplo en Raspberry Pi u OLinuXino), tienes que encontrar el IP que fue atribuido a tu tarjeta cuando la conectaste a tu router / caja Internet. Hay varias maneras de hacerlo :
 
@@ -29,7 +29,9 @@ Si instalas un servidor en tu casa (por ejemplo en Raspberry Pi u OLinuXino), ti
 - utiliza la interfaz de tu router caja internet para listar las máquinas conectadas, o mira los los ;
 - conecta una pantalla en tu servidor, inicia una sesión y escribe `hostname --all-ip-address`.
 
-#### Conectarse
+### Conectarse
+
+! Esta parte necesita ser reescrita, ahora el usuario `admin` ya no existe y es reemplazado por el grupo `admins`
 
 Suponiendo que tu dirección IP sea `111.222.333.444`, abre una terminal y escribe :
 
@@ -41,10 +43,9 @@ Ahora te piden una contraseña. Si es un VPS, tu proveedor ya te hará comunicad
 
 ! Desde YunoHost 3.4, después de la post-instalación ya no es posible conectarse con el usuario `root`. En lugar de eso, hace falta **conectarse con el usuario `admin`**. Incluso si el servidor LDAP fuera quebrado (haciendo que el usuario `admin` ya no fuera utilizable) todavía deberías poder conectarte con el usuario `root` desde la red local.
 
-#### ¡ Cambiar la contraseña root !
+### ¡ Cambiar la contraseña root !
 
 Después de haberte conectado por primera vez, tienes que cambiar la contraseña `root`. Tal vez el servidor te pida automáticamente que lo hagas. Si no es el caso, hay que utilizar el comando `passwd`. Es muy importante que elijas una contraseña bastante complicada. Nota que esta contraseña luego estará reemplazada por la contraseña admin elegida durante la post-instalación.
-
 
 ## En una instancia que ya está instalada
 
@@ -53,7 +54,7 @@ Si instalaste tu servidor en casa y que quieres conectarte desde fuera de la red
 Si sólo conoces el IP de tu servidor :
 
 ```bash
-ssh admin@111.222.333.444
+ssh username@111.222.333.444
 ```
 
 Luego, entra la contraseña de administración que has elegido durante la post-instalación [post-installation](/postinstall).
@@ -61,32 +62,33 @@ Luego, entra la contraseña de administración que has elegido durante la post-i
 Si has configurado tus DNS (o modificar tu `/etc/hosts`), puedes utilizar tu nombre de dominio :
 
 ```bash
-ssh admin@votre.domaine.tld
+ssh username@tu.dominio.tld
 ```
 
 Si cambiaste el puerto SSH, hay que añadir `-p <numerodelpuerto>` al comando, por ej. :
 
 ```bash
-ssh -p 2244 admin@tu.dominio.tld
+ssh -p 2244 username@tu.dominio.tld
 ```
 
 !!! Si estás conectado como `admin` y quieres ser `root` para tener más confort (por ejemplo, para no teclear `sudo` con cada comando), puedes convertirte en `root` tecleando `sudo su`.
 
 ## ¿ Qué usuarios ?
 
-Por defecto, sólo el usuario `admin` puede conectarse en SSH en una instancia YunoHost.
+Sólo cuentas en el grupo `admins` puede conectarse en SSH en una instancia YunoHost. Cuentas fuera de este grupo no pueden conectarse en SSH por razones de seguridad. Si necesitas absolutamente que uno de estos usuarios disponga de un acceso SSH, puedes utilizar el comando :
 
-Los usuarios YunoHost creados vea la interfaz de administración están administrados por la base de datos LDAP. Por defecto, no pueden conectarse en SSH por razones de seguridad. Si necesitas absolutamente que uno de estos usuarios disponga de un acceso SSH, puedes utilizar el comando :
 ```bash
 yunohost user permission add ssh.main <username>
 ```
 
 Del mismo modo, es posible cancelar el acceso SSH de un usuario con el comando :
+
 ```bash
 yunohost user permission remove ssh.main <username>
 ```
 
 Finalmente, es posible añadir, suprimir y listar llaves SSH, para mejorar la seguridad del acceso SSH, con estos comandos :
+
 ```bash
 yunohost user ssh add-key <username> <key>
 yunohost user ssh remove-key <username> <key>
@@ -107,7 +109,7 @@ El comando `yunohost` puede ser utilizado para administrar tu servidor o realiza
 
 Los comandos YunoHost tienen este tipo de estructura :
 
-```bash
+```text
 yunohost app install wordpress --label Webmail
           ^    ^        ^             ^
           |    |        |             |

@@ -16,6 +16,7 @@ Este ecosistema comprende un servidor SMTP (postfix), un servidor IMAP (Dovecot)
 Los emails son un ecosistema complicado y una multitud de detalles puedes impedir que funcionen correctamente.
 
 Para validar que tu configuración es correcta :
+
 - si te alojas en casa y que no tienes VPN, asegúrate de que [tu proveedor de Internet no esté bloqueando el puerto 25](/isp) ;
 - redirige los puertos siguiendo [esta documentación](/isp_box_config) ;
 - configura con cuidado los registros DNS del correo electrónico siguiendo [esta documentación](/dns_config) ;
@@ -23,13 +24,13 @@ Para validar que tu configuración es correcta :
 
 Una nota de al menos 8~9/10 es un objetivo razonable.
 
-## Clientes de mensajería 
+## Clientes de mensajería
 
-Para interactuar con el servidor de mail, o sea leer y mandar emails, puedes instalar un cliente web como Roundcube o Rainloop en tu servidor - o configurar un cliente de Desktop o móvil como descrito en [esta página][cette page](/email_configure_client).
+Para interactuar con el servidor de mail, o sea leer y mandar emails, puedes instalar un cliente web como Roundcube o Rainloop en tu servidor - o configurar un cliente de Desktop o móvil como descrito en [esta página](/email_configure_client).
 
 Los clientes Desktop o móvil tienen la ventaja de copiar tu emails en el equipo, así permitiendo la consulta desconectada de tus mensajes, y cierta protección frente a la posibilidad de un servidor averiado.
 
-## Configuration de los aliases de mensajeras y de las redirecciones automáticas 
+## Configuration de los aliases de mensajeras y de las redirecciones automáticas
 
 Aliases de mensajeras y redirecciones pueden ser configurados por cada usuario. Por ejemplo, el primer usuario creado en el servidor automáticamente dispone de un alias `root@tu.dominio.tld` - lo que significa que un email mandado hacia esta dirección se encontrará en el buzón de entrada de este usuario. Las redirecciones automáticas pueden ser configuradas, por ejemplo si un usuario no quiere configurar una cuenta de correo adicional y simplemente desea recibir correos del servidor en - por ejemplo - su dirección gmail.
 
@@ -37,7 +38,7 @@ Otra función desconocida es el uso del sufijo "+". Por ejemplo, email mandados 
 
 ## ¿ Qué ocurre si mi servidor se pone indisponible ?
 
-Si tu servidor se pone indisponible, los correos electrónicos mandados a tu servir se quedarán en una fila de espera por el lado del expedidor durante aproximadamente 5 días. El proveedor de hosting del expedidor intentará mandarte regularmente el correo, hasta que lo tire si no lo puede enviar. 
+Si tu servidor se pone indisponible, los correos electrónicos mandados a tu servir se quedarán en una fila de espera por el lado del expedidor durante aproximadamente 5 días. El proveedor de hosting del expedidor intentará mandarte regularmente el correo, hasta que lo tire si no lo puede enviar.
 
 ## Más información
 

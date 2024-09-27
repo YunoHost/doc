@@ -16,10 +16,11 @@ The mail stack includes a SMTP server (postfix), an IMAP server (Dovecot), an an
 Email is a complicated ecosystem and quite a few details can prevent it from working properly.
 
 To validate your setup:
+
 - if you are self-hosting at home and not using a VPN, ensure [your ISP won't block port 25](/isp) ;
 - route ports according to [this documentation](/isp_box_config) ;
 - carefully configure mail DNS records according to [this documentation](/dns_config) ;
-- test your configuration using the diagnostic features (`Webadmin > Diagnosis > Email`). You can also use [mail-tester.com](https://mail-tester.com), a score of at least 8~9/10 is a reasonnable goal <small>(be careful : only 3 tests per domain per day are allowed)</small> 
+- test your configuration using the diagnostic features (`Webadmin > Diagnosis > Email`). You can also use [mail-tester.com](https://mail-tester.com), a score of at least 8~9/10 is a reasonnable goal <small>(be careful : only 3 tests per domain per day are allowed)</small>
 
 ## Email clients
 
@@ -40,6 +41,7 @@ Groups also can use alias features, by default the group `admins` have `root@<do
 If your server becomes unavailable, emails sent to your server will stay in a pending queue on the sender's side for as long as ~5 days. The sender's host will regularly try to resend the email, until it drops it if it was unable to send it.
 
 ## Forms to remove its IP address from the blacklist
+
 It is possible that the emails sent from your YunoHost instance are considered as spam by the big email services.
 Is it possible that the IP address from your server have been previously been used to sent spam or that these email services consider your server as a spam sender.
 To ensure that your servers’ IP address isn't on these blacklists and to remove it from them, follow this [link](/blacklist_forms).

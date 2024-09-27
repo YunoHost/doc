@@ -10,7 +10,6 @@ routes:
 ---
 
 ## Introduction
- 
 
 Apart from the monitoring system that ensures that your system's partitions are not too small, YunoHost does not currently deal with the organisation of your partitions and disks.
 
@@ -24,36 +23,35 @@ Below you will find explanations on how to move your data to a hard disk in a co
 
 ## [fa=list-alt /] Prerequisites
 
-* Have some time at a moment when your server users can accept a shutdown. The steps to be performed, even if they are relatively simple, can sometimes seem technical and require in any case **to take your time**.
+- Have some time at a moment when your server users can accept a shutdown. The steps to be performed, even if they are relatively simple, can sometimes seem technical and require in any case **to take your time**.
 
-* Know how to connect as root on your system, for example via [SSH](/ssh). (Note: while logged in as `admin`, you can root with `sudo su`)
+- Know how to connect as root on your system, for example via [SSH](/ssh). (Note: while logged in as `admin`, you can root with `sudo su`)
 
-* Know the basic commands `cd`, `ls`, `mkdir`, `rm`.
+- Know the basic commands `cd`, `ls`, `mkdir`, `rm`.
 
-* Have a backup in case things don't work out as planned
+- Have a backup in case things don't work out as planned
 
-* Have extra storage (SSD, hard drive, USB stick) connected to your server via USB or SATA
+- Have extra storage (SSD, hard drive, USB stick) connected to your server via USB or SATA
 
 ## 1. Identify directories to be moved
 
-The `ncdu /` command allows you to browse the folders on your server to see how big they are. 
+The `ncdu /` command allows you to browse the folders on your server to see how big they are.
 
 Below is an explanation of some of the paths that can take up weight with some comments to help you reduce their weight or choose to move them.
 
 | Paths | Contents | Tips |
 |--------|---|---|
 | `/home` | User folders accessible via SFTP | Moveable to a hard disk |
-| `/home/yunohost.backup`       | YunoHost's backups  | Depending on your backup strategy, you may want to place this folder on a separate drive from your data or databases.
-| `/home/yunohost.app`          |Heavy data from yunohost applications (nextcloud, matrix...)|Moveable to a hard disk
+| `/home/yunohost.backup`       | YunoHost's backups  | Depending on your backup strategy, you may want to place this folder on a separate drive from your data or databases. |
+| `/home/yunohost.app`          |Heavy data from YunoHost applications (nextcloud, matrix...)|Moveable to a hard disk |
 | `/home/yunohost.multimedia` | Heavy data shared between several applications | Moveable to a hard disk |
 | `/var/lib/mysql` | Database used by applications | Ideally leave on SSD for performance reasons |
 | `/var/lib/postgresql` | Database used by applications | Ideally leave on SSD for performance reasons |
 | `/var/mail` | User e-mails | Movable to a hard disk |
 | `/var/www` | Program of installed web applications | Ideally leave on SSD for performance reasons |
-| `/var/log` | Event logs (pages consulted, connection attempts, hardware errors...). | This directory should not take up too much space, if it grows quickly, it may be a looping error that should be resolved.
-| `/opt` | Program and dependency of some YunoHost applications. | Ideally leave it on the SSD for performance reasons. For nodejs applications it is possible to do some cleanup of unused versions.
-| `/boot` | Kernels and boot files | Do not move unless you know what you are doing. It can happen that too many kernels are kept, it is possible to do some cleanup.
-
+| `/var/log` | Event logs (pages consulted, connection attempts, hardware errors...). | This directory should not take up too much space, if it grows quickly, it may be a looping error that should be resolved. |
+| `/opt` | Program and dependency of some YunoHost applications. | Ideally leave it on the SSD for performance reasons. For nodejs applications it is possible to do some cleanup of unused versions. |
+| `/boot` | Kernels and boot files | Do not move unless you know what you are doing. It can happen that too many kernels are kept, it is possible to do some cleanup. |
 
 ## 2. Connect and identify the disk
 
@@ -109,13 +107,14 @@ mkfs.ext4 /dev/YOUR_DISK1
 
 Replace `YOUR_DISK1` with the name of the first partition on the disk e.g. `sda1`.
 
-!!! It is possible to adapt this step, for example to create a raid 1 volume (mirrored disks) or encrypt the folder. 
+!!! It is possible to adapt this step, for example to create a raid 1 volume (mirrored disks) or encrypt the folder.
 
 ## 4. Mount the disk
 
 Unlike Windows where disks are accessed with letters (C:/), under Linux, disks are made accessible via the file tree. "Mounting" a disk means making it effectively accessible in the file tree. We will arbitrarily choose to mount the disk in `/mnt/hdd` but you can name it differently (e.g. `/mnt/disk` ...).
 
 Let's start by creating the directory :
+
 ```bash
 mkdir /mnt/hdd
 ```
@@ -128,11 +127,12 @@ mount /dev/YOUR_DISK1 /mnt/hdd
 
 (Here, `/dev/YOUR_DISK1` corresponds to the first partition on the disk)
 
-## 5. Mount a /mnt/hdd folder on one of the folders you want to move data from
+## 5. Mount a `/mnt/hdd` folder on one of the folders you want to move data from
 
-Here we will consider that you want to move the big data of the applications which are in /home/yunohost.app and the mails on your hard disk.
+Here we will consider that you want to move the big data of the applications which are in `/home/yunohost.app` and the mails on your hard disk.
 
 ### 5.1 Creating subfolders on the disk
+
 To begin with, we create a folder on the hard drive
 
 ```bash
@@ -141,6 +141,7 @@ mkdir -p /mnt/hdd/var/mail
 ```
 
 ### 5.2 Switching to maintenance mode
+
 Then, ideally, we switch to maintenance mode the applications that might be writing data.
 
 Example, for nextcloud:
@@ -206,7 +207,6 @@ From this point on, your services are running with their data on disk, so it's t
 
 ## 6. Automatically mount on boot
 
-
 So far we have manually mounted the disk and subfolders. However, it is necessary to configure the system to automatically mount the disk after a boot.
 
 If your tests are successful, you should keep the mount points, otherwise you should hurry up and go back to maintenance first.
@@ -238,6 +238,7 @@ Use Ctrl+X then `y` to save.
 You can then try rebooting the system to check if the disk and subfolders are mounted automatically.
 
 ## 7. Clean up old data
+
 Once your new setup is validated, you can proceed to delete the old data from step 5.3:
 
 ```bash
