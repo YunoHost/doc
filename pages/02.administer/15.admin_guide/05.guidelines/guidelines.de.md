@@ -27,7 +27,7 @@ YunoHost ist für allgemeine und einfache Anwendungsfälle konzipiert. Wenn Sie 
 
 - Versuchen Sie nicht, YunoHost in einem Kontext auszuführen, in dem Sie keine Kontrolle über die Ports 80 und 443 haben (oder überhaupt kein Internet);
 - Versuchen Sie nicht, fünf Server über dieselbe Internetverbindung zu hosten, wenn Sie nicht bereits ein fortgeschrittener Benutzer sind;
-- Reiben Sie sich nicht an dem Versuch auf, NGINX durch Apache zu ersetzen (oder beides gleichzeitig laufen zu lassen);
+- Auf keinen Fall sollten Sie versuchen, NGINX durch Apache zu ersetzen (oder beides gleichzeitig laufen zu lassen);
 - Versuchen Sie nicht, benutzerdefinierte SSL-Zertifikate zu verwenden, wenn Sie diese nicht wirklich benötigen;
 - ...
 
