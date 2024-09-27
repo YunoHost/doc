@@ -259,6 +259,19 @@ Or more complex examples with several element, including one with asset that dep
 
 ```
 
+Or when using commit-based autoupdate strategy, target the source file associated with the last existing commit (that way new commits can be tested by maintainers before users use them) 
+
+```toml
+[resources.sources]
+
+    [resources.sources.main]
+    url = "https://github.com/foo/bar/archive/3c592fd667e0a086cae9d66813d7aea815d2f489.tar.gz" 
+    sha256 = "da53469b596116ee7ea9e33914dac19b16aa7f94c5131523bd6dafddbfdbc105"
+
+    autoupdate.upstream = "https://github.com/foo/bar/"
+    autoupdate.strategy = "latest_github_commit"
+```
+
 ### Properties (for each source)
 
 - `prefetch` : `true` (default) or `false`, wether or not to pre-fetch this asset during the provisioning phase of the resource. If several arch-dependent url are provided, YunoHost will only prefetch the one for the current system architecture.
