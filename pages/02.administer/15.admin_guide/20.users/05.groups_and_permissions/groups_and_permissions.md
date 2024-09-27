@@ -7,18 +7,18 @@ routes:
   default: '/groups_and_permissions'
 ---
 
-You can access the *groups and permissions* management interface from the webadmin
-by going into the 'Users' section and clicking the corresponding button:
+Sie haben die Möglichkeit, auf die "Gruppen und Berechtigungen" zuzugreifen, 
+indem Sie im Bereich "Users" den entsprechenden Button anklicken.
 
 ![](image://button_to_go_to_permission_interface.png)
 
-## Managing groups
+## Verwalten von Gruppen
 
-The group mechanism can be used to define groups of users which then can be used to restrict permissions for applications and other services (such as mail or XMPP). Note that it is *not* mandatory to create a group to do so: you can also restrict access to an app or service on a user-per-user basis.
+Die Gruppe "Mechanismus" dient dazu, Benutzergruppen zu definieren, die anschließend zur Einschränkung der Berechtigungen für Anwendungen und andere Dienste (wie E-Mail oder XMPP) verwendet werden können. Es ist wichtig zu beachten, dass es nicht zwingend erforderlich ist, eine Gruppe zu erstellen, um diese Einschränkungen vorzunehmen: Sie haben auch die Möglichkeit, den Zugriff auf eine App oder einen Dienst auf individueller Basis für jeden Benutzer zu beschränken.
 
-Using groups is however useful for semantics, for example if you host multiple groups of friends, associations or businesses on your server, you might want to create groups like `association1` and `association2` and add members of each association to the relevant group.
+Die Verwendung von Gruppen ist jedoch hilfreich für die Semantik. Wenn Ihr Host mehrere Gruppen von Freunden, Vereinen oder Unternehmen auf Ihrem Server hat, möchten Sie möglicherweise Gruppen wie "Verein1" und "Verein2" erstellen und die Mitglieder jedes Vereins der entsprechenden Gruppe hinzufügen.
 
-It's also possible to define mail aliases for a group, such that mails sent to `groupe@domain.tld` will be dispatched to all members of the group.
+Es ist ebenfalls möglich, E-Mail-Aliase für eine Gruppe zu definieren, sodass E-Mails an gruppe@domain.tld an alle Mitglieder der Gruppe gesendet werden.
 
 ### Default groups
 
