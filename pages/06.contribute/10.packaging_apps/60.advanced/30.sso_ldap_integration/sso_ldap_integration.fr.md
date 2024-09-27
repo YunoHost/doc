@@ -55,7 +55,7 @@ TO-DO/FIX-ME: Plus d'explications sur la façon dont cela se fait pour les appli
 
 Les autorisations SSOwat sont configurées à l'aide de la ressource « autorisation » dans le fichier manifest.toml de votre application.
 
-Le cas échéant, vous pouvez créer des autorisations « secondaires » pour votre application, par exemple pour autoriser uniquement un groupe spécifique de personnes à accéder à l'interface utilisateur d'administration de l'application. Par exemple:
+Le cas échéant, vous pouvez créer des autorisations « secondaires » pour votre application, par exemple pour autoriser uniquement un groupe spécifique de personnes à accéder à l'interface utilisateur d'administration de l'application. Par exemple :
 
 ```toml
 [resources.permissions]
