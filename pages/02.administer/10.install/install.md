@@ -269,8 +269,7 @@ sudo apt install -y dotnet-sdk-3.1
 
 ```bash
 # In WSL
-# Add their repository
-echo "deb [trusted=yes] https://wsl-translinux.arkane-systems.net/apt/ /" > /etc/apt/sources.list.d/wsl-translinux.list
+echo "deb [trusted=yes] https://arkane-systems.github.io/wsl-transdebian/apt/ $(lsb_release -cs) main
 # Install Genie
 sudo apt update
 sudo apt install -y systemd-genie
