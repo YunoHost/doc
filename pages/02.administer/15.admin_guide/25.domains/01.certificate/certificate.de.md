@@ -87,7 +87,7 @@ yunohost domain cert install Ihre.domain.tld --self-signed --force
 
 Trotz einer sorgfältigen Überprüfung der DNS-Konfiguration und auch von außen
 die Möglichkeit mit HTTP-Modus Zugriff auf den Webserver besteht, kann YunoHost
-manschmal die Einstellungen verweigern. In diesem Fall ist es notwendig :
+manchmal die Einstellungen verweigern. In diesem Fall ist es notwendig :
 
 - die Parameter `127.0.0.1 Ihre.domain.tld` auf der Datei `/etc/hosts` des Webserver hinzufügen.
 Wenn es immer noch nicht funktionsfähig ist, also die Überprüfungen deaktivieren mit `--no-checks` nach dem Befehl `cert install`.
