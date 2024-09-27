@@ -17,7 +17,7 @@ Ist Ihr Ziel, einen Produktionserver zu benutzen, so beachten Sie folgendes :
 
 - ein Server ist ein empfindliches System : Seien Sie vorsichtig, methodisch und geduldig ;
 - experimentieren und Anpassen einschränken - insbesondere von Konfigurationsdateien ;
-- nicht Dutzende von Anwendungen installieren, bloß zum sehen, wie sie aussehen ;
+- Nicht zahlreiche Anwendungen installieren, nur um zu sehen, wie sie aussehen ;
 - Vorsicht mit inoffiziellen Anwendungen, und verzichten auf solche, die noch "in Bearbeitung" sind, oder einen Level 0 haben ;
 - wenn etwas kaputt geht, überlegen Sie richtig, bevor Sie versuchen, es selbst zu reparieren, wenn Sie nicht wissen, was Sie tun. <small>(z. B., den Admin-Benutzer nicht selbst versuchen neu anzulegen, falls er komischerweise verschwunden ist.)</small>
 
