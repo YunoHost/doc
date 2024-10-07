@@ -325,6 +325,26 @@ autoupdate.version_regex = "^release-v(.*)$"
 
 And the autoupdater will use the matched group (here: `4.1`) as the version.
 
+You can make sure that your autoupdate strategy is working well immediately (without waiting for the next check on the infra) by doing the following:
+1. Clone this repo: https://github.com/YunoHost/apps_tools
+2. In `apps_tools` open a terminal to run the following commands: 
+  ```sh
+  # Create test branch
+  git checkout -b localtest
+
+  # Create a Python virtual environment
+  python -m venv venv
+  source venv/bin/activate
+
+  # Install dependencies (if you don't have pip already installed on your system, check https://pip.pypa.io/en/stable/installation)
+  pip install -r requirements.txt
+  
+  # Run autoupdate script - replace '/path/to/myapp_ynh' with your actual local app path
+  ./autoupdate_app_sources/autoupdate_app_sources.py '/path/to/myapp_ynh'
+  ```
+3. If the autoupdate ran successfully, the return output will include `Apps udpated`. Also note that it will automatically make local changes in your app's `manifest.toml` (which can be discarded as they will be made automatically later online by the YNH infra). If it failed, it will include `Apps failed` together with some debug info.
+ 
+
 ### Provision/Update
 - For elements with `prefetch = true`, will download the asset (for the appropriate architecture) and store them in `/var/cache/yunohost/download/$app/$source_id`, to be later picked up by `ynh_setup_source`. (NB: this only happens during install and upgrade, not restore)
 
