@@ -47,7 +47,7 @@ sudo gem install larch
 Transfer emails from one server to another:
 
 ```bash
-larch -a -f imaps://serveur_d'origine.org -t imaps://serveur_de_destination.org
+larch -a -f imaps://server_of_origin.org -t imaps://server_of_destination.org
 ```
 
 For other types of transfer refer to [Larch documentation](https://github.com/rgrove/larch#label-Usage).
