@@ -1,0 +1,5 @@
+{% set edit_link = 
+    page.header.custom_edit_link is defined and page.header.custom_edit_link is not empty ? page.header.custom_edit_link :
+    github_config.tree ~  ('/'~page.filePathClean)|replace({'/user/':''})
+%}
+<a class="github-link tooltip tooltip-bottom" href="{{ edit_link }}" data-tooltip="Edit this page on GitHub"><i class="fa fa-pencil-square"></i> {{ 'THEME_LEARN4_GITHUB_EDIT'|t }}</a>
