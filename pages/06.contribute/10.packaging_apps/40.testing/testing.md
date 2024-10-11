@@ -15,7 +15,7 @@ Note that `./path/to/mycustomapp_ynh` can be a local path or an external git rep
    
 You may also be interested in specifying the following parameters for `yunohost app install` command:
 - `--debug` : prints detailed log information
-- `--no-remove-on-failure` : will leave files 
+- `--no-remove-on-failure` : won't remove the app if the install fails - therefore you can analyze and manually run/debug stuff, typically in `/var/www/$app`
 - `--force` : so that you are not asked confirmation if the app is not safe to use (low quality, experimental or 3rd party), or when the app displays a post-install notification. 
 - `-a "&domain=sub.domain.tld&path=/my_app&init_main_permission=all_users"` : can be used to preconfigure the answers to the install questions that are asked otherwise after entering the command. i.e.
 	- `domain=sub.domain.tld` : the domain/subdomain on which to install the app
