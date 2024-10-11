@@ -11,7 +11,7 @@ routes:
 
 Once you're done writing you app package, you'll want to check that everything works correctly. At first, you can manually try to install your app on some test server of your own : `sudo yunohost app install ./path/to/mycustomapp_ynh`
 
-Note that `./path/to/mycustomapp_ynh` can be a local path or an external git repository URL (basically anything compatible with `git clone`).
+Note that `./path/to/mycustomapp_ynh` can be a local path or an external git repository https URL (basically anything compatible with `git clone`).
    
 You may also be interested in specifying the following parameters for `yunohost app install` command:
 - `--debug` : prints detailed log information
