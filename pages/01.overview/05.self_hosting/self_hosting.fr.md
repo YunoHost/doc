@@ -7,9 +7,11 @@ routes:
   default: '/selfhosting'
 ---
 
-L'auto-hébergement est le fait d'avoir et d'administrer son propre serveur, typiquement chez soi, pour héberger soi-même ses données personnelles et des services plutôt que de se reposer exclusivement sur des tiers. Par exemple, il est possible d'auto-héberger son blog de sorte qu'il "vive" dans une machine que vous contrôlez, au lieu qu'il soit sur l'ordinateur de quelqu'un d'autre (a.k.a. le Cloud) en échange d'argent, de publicités ou de données privées.
+L'auto-hébergement est le fait d'avoir et d'administrer son propre serveur, typiquement chez soi, pour **héberger soi-même ses données personnelles et des services** plutôt que de se reposer exclusivement sur des tiers. Par exemple, il est possible d'auto-héberger son blog de sorte qu'il "vive" dans une machine que vous contrôlez, au lieu qu'il soit sur l'ordinateur de quelqu'un d'autre (a.k.a. le Cloud) en échange d'argent, de publicités ou de données privées.
 
-L'auto-hébergement implique de disposer d'un serveur. Un serveur est un ordinateur qui est destiné à être accessible sur le réseau en permanence, et n'a généralement pas d'écran ni de clavier puisqu'il est administré à distance. Contrairement à une croyance répandue, les serveurs ne sont pas nécessairement des machines énormes et extrêmement puissantes : aujourd'hui, une petite carte ARM à ~30€ est adéquate pour de l'auto-hébergement.
+L'auto-hébergement implique de disposer d'un serveur. **Un serveur est un ordinateur qui est destiné à être accessible sur le réseau en permanence**, et n'a généralement pas d'écran ni de clavier puisqu'il est administré à distance. Contrairement à une croyance répandue, les serveurs ne sont pas nécessairement des machines énormes et extrêmement puissantes : aujourd'hui, une petite carte ARM à ~30€ est adéquate pour de l'auto-hébergement.
+
+![](image://internet_topologies_fr.png)
 
 Pratiquer l'auto-hébergement ne rend pas "votre internet" plus sécurisé et ne fournit pas d'anonymat en tant que tel. L'objectif est généralement de pouvoir être autonome et au contrôle de ses services et de ses données - ce qui implique aussi d'en être responsable.
 
