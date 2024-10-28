@@ -18,10 +18,6 @@ Cette page requiert que Javascript soit activé pour s'afficher correctement :s.
 
 !!! Si vous souhaitez vérifier la validité de nos images signées, vous pouvez [télécharger notre clé publique](https://forge.yunohost.org/yunohost.asc).
 
-! Certaines images sont encore basées sur Debian Buster (YunoHost v4.x) et nécessitent que vous fassiez la commande `apt update` en SSH ou ligne de commande pour continuer les mises à jour.
-! Répondez Oui à l'avertissement à propos du changement de `stable` vers `oldstable`.
-! Cette opération n'est pas nécessaire pour YunoHost 11.x (images Bullseye)
-
 <div class="hardware-image">
 <div id="cards-list">
 </div>
