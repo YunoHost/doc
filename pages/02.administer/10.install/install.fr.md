@@ -115,7 +115,7 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 {% elseif vps_debian or vps_ynh %}
 
 [div class="flex-child hardware{%if vps_debian %} active{% endif %}"]
-[[figure caption="VPS ou serveur dédié avec Debian 11"]![](image://debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
+[[figure caption="VPS ou serveur dédié avec Debian 12"]![](image://debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
 [/div]
 
 [div class="flex-child hardware{%if vps_ynh %} active{% endif %}"]
@@ -147,7 +147,7 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 {% elseif arm_unsup %}
 - Une carte ARM avec au moins 512Mo de RAM ;
 {% elseif vps_debian %}
-- Un serveur dédié ou virtuel avec Debian 11 (Bullseye) pré-installé <small>(avec un **kernel >= 3.12**)</small>, avec au moins 512Mo de RAM et 16Go de capacité de stockage ;
+- Un serveur dédié ou virtuel avec Debian 12 (Bookworm) pré-installé <small>(avec un **kernel >= 6.1**)</small>, avec au moins 512Mo de RAM et 16Go de capacité de stockage ;
 {% elseif vps_ynh %}
 - Un serveur dédié ou virtuel avec YunoHost pré-installé, avec au moins 512Mo de RAM et 16Go de capacité de stockage ;
 {% elseif virtualbox %}
@@ -203,7 +203,7 @@ Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 {% elseif arm_unsup %}
 <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12" style="background:none;">[fa=external-link] Télécharger l'image pour votre carte sur le site d'Armbian</a>
 
-!!! N.B.: il vous faut télécharger l'image Armbian Bullseye.
+!!! N.B.: il vous faut télécharger l'image Armbian Bookworm.
 {% endif %}
 
 !!! Si vous souhaitez vérifier la validité de nos images signées, vous pouvez [télécharger notre clé publique](https://forge.yunohost.org/yunohost.asc).
@@ -552,7 +552,7 @@ C’est le nom de domaine qui permettra l’accès à votre serveur ainsi qu’a
 
 ### [fa=key /] Premier compte utilisateur
 
-[Depuis YunoHost 11.1](https://forum.yunohost.org/t/yunohost-11-1-release-sortie-de-yunohost-11-1/23378), le premier compte utilisateur est créé à cette étape. Il vous faudra choisir un nom d'utilisateur et un mot de passe raisonablement complexe. (Nous ne pouvons que souligner l'importance du choix d'un mot de passe **robuste** !) Ce compte utilisateur sera ajouté au groupe Admins, et pourra se connecter au portail utilisateur, à la webadmin, et se connecter [via **SSH**](/ssh) ou [**SFTP**](/filezilla). Les admins recevront aussi les mails envoyés à `root@votredomaine.tld` et `admin@votredomaine.tld` : ces emails peuvent être utilisés pour envoyer des informations ou des alertes techniques. Vous pourrez plus tard ajouter d'autres comptes utilisateur supplémentaire, qu'il est aussi possible d'ajouter au groupe Admins.
+Le premier compte utilisateur est créé à cette étape. Il vous faudra choisir un nom d'utilisateur et un mot de passe raisonablement complexe. (Nous ne pouvons que souligner l'importance du choix d'un mot de passe **robuste** !) Ce compte utilisateur sera ajouté au groupe Admins, et pourra se connecter au portail utilisateur, à la webadmin, et se connecter [via **SSH**](/ssh) ou [**SFTP**](/filezilla). Les admins recevront aussi les mails envoyés à `root@votredomaine.tld` et `admin@votredomaine.tld` : ces emails peuvent être utilisés pour envoyer des informations ou des alertes techniques. Vous pourrez plus tard ajouter d'autres comptes utilisateur supplémentaire, qu'il est aussi possible d'ajouter au groupe Admins.
 
 Ce compte remplace l'ancien compte `admin`, qui est peut être toujours mentionné dans certaines pages de documentation. Dans ce cas, remplacez simplement `admin` par votre identifiant.
 

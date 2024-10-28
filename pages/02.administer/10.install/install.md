@@ -121,7 +121,7 @@ Select the hardware on which you want install YunoHost :
 {% elseif vps_debian or vps_ynh %}
 
 [div class="flex-child hardware{%if vps_debian %} active{% endif %}"]
-[[figure caption="VPS or dedicated server with Debian 11"]![](image://debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
+[[figure caption="VPS or dedicated server with Debian 12"]![](image://debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
 [/div]
 
 [div class="flex-child hardware{%if vps_ynh %} active{% endif %}"]
@@ -157,7 +157,7 @@ Select the hardware on which you want install YunoHost :
 {% elseif arm_unsup %}
 - An ARM board with at least 512MB RAM
 {% elseif vps_debian %}
-- A dedicated or virtual private server with Debian 11 (Bullseye) <small>(with **kernel >= 3.12**)</small> preinstalled, 512MB RAM and 16GB capacity (at least)
+- A dedicated or virtual private server with Debian 12 (Bookworm) <small>(with **kernel >= 6.1**)</small> preinstalled, 512MB RAM and 16GB capacity (at least)
 {% elseif vps_ynh %}
 - A dedicated or virtual private server with YunoHost preinstalled, 512MB RAM and 16GB capacity (at least)
 {% elseif virtualbox %}
@@ -200,7 +200,7 @@ Docker for Windows can now rely on WSL instead of Hyper-V, for example.
 ! Bear in mind, this setup itself is *not* a container of any kind. If something breaks, there is no rollback capability.
 ! You may need to delete the Debian distro altogether and restore it whole.
 
-## Install Debian 11
+## Install Debian 12
 
 Let's install YunoHost into its own distro, not altering the default one. In a PowerShell terminal:
 
@@ -223,7 +223,7 @@ It is under Debian 9 Stretch, so let's upgrade it:
 
 ```bash
 # In WSL
-sudo sed -i 's/stretch/bullseye/g' /etc/apt/sources.list`
+sudo sed -i 's/stretch/bookworm/g' /etc/apt/sources.list`
 sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade
@@ -259,7 +259,7 @@ This is a key element for YunoHost, and for any decent Debian distro (seriously 
 
 ```bash
 # In WSL
-wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt update
 sudo apt install -y apt-transport-https
@@ -347,7 +347,7 @@ Here are some VPS providers supporting YunoHost natively :
 {% elseif arm_unsup %}
 <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12" style="background: none;">[fa=external-link] Download the image for your board on Armbian's website</a>
 
-!!! N.B.: you should download the image Armbian Bullseye.
+!!! N.B.: you should download the image Armbian Bookworm.
 {% endif %}
 
 !!! If you wish to check the validity of our signed images, you can [download our public key](https://forge.yunohost.org/yunohost.asc).
@@ -718,7 +718,7 @@ If you want to create subdomains, do not forget to add them in the `hosts` file 
 
 ### [fa=key /] First user
 
-[Since YunoHost 11.1](https://forum.yunohost.org/t/yunohost-11-1-release-sortie-de-yunohost-11-1/23378), the first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/ssh) or [**SFTP**](/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld` : these emails may be used to send technical informations or alerts. You can later add additional users, which you can also add to the Admins group.
+The first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/ssh) or [**SFTP**](/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld` : these emails may be used to send technical informations or alerts. You can later add additional users, which you can also add to the Admins group.
 
 This user replaces the old `admin` user, which some old documentation page may still refer to. In which case : just replace `admin` with your username.
 

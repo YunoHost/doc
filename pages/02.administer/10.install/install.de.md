@@ -121,7 +121,7 @@ Wähle die Hardware, auf der du YunoHost installieren willst :
 {% elseif vps_debian or vps_ynh %}
 
 [div class="flex-child hardware{%if vps_debian %} active{% endif %}"]
-[[figure caption="VPS oder dedizierter Server mit Debian 11"]![](image://debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
+[[figure caption="VPS oder dedizierter Server mit Debian 12"]![](image://debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
 [/div]
 
 [div class="flex-child hardware{%if vps_ynh %} active{% endif %}"]
@@ -157,7 +157,7 @@ Wähle die Hardware, auf der du YunoHost installieren willst :
 {% elseif arm_unsup %}
 - Ein ARM Board mit mindestens 512MB RAM
 {% elseif vps_debian %}
-- Ein dedizierter oder Virtual Private Server mit Debian 11 (Bullseye) <small>(mit **kernel >= 3.12**)</small> vorinstalliert, 512MB RAM und 16GB Speicherkapazität (Minimum)
+- Ein dedizierter oder Virtual Private Server mit Debian 12 (Bookworm) <small>(mit **kernel >= 6.1**)</small> vorinstalliert, 512MB RAM und 16GB Speicherkapazität (Minimum)
 {% elseif vps_ynh %}
 - Ein dedizierter oder Virtual Private Server mit YunoHost vorinstalliert, 512MB RAM und 16GB Speicherkapazität (Minimum)
 {% elseif virtualbox %}
@@ -200,7 +200,7 @@ So kann z.B. Docker für Windows jetzt auf WSL bauen, anstatt auf Hyper-V.
 ! Beachte, dass dieses Setup selbst *kein* Container jeglicher Art ist. Falls etwas bricht, gibt es keine Rollback Möglichkeit.
 ! Vielleicht musst du die Debian Distro vollkommen löschen und ganz wiederherstellen.
 
-## Installation in Debian 11
+## Installation in Debian 12
 
 Lass uns YunoHost in einem PowerShell Terminal in seine eigene Distro installieren und nicht die default Distro verändern:
 
@@ -219,11 +219,11 @@ rmdir .\debian -R
 
 Nun kannst du darauf zugreifen: Führe `wsl.exe -d YunoHost` aus.
 
-Da es Debian 9 Stretch ist, lass uns ein Upgrade auf Debian 11 Bullseye machen:
+Da es Debian 9 Stretch ist, lass uns ein Upgrade auf Debian 12 Bookworm machen:
 
 ```bash
 # In WSL
-sudo sed -i 's/stretch/bullseye/g' /etc/apt/sources.list`
+sudo sed -i 's/stretch/bookworm/g' /etc/apt/sources.list`
 sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade
@@ -259,7 +259,7 @@ Diese ist ein Schlüsselelement für YunoHost, und für jede anständige Debian 
 
 ```bash
 # In WSL
-wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt update
 sudo apt install -y apt-transport-https
@@ -347,7 +347,7 @@ Hier sind ein paar VPS Provider, die YunoHost nativ unterstützen :
 {% elseif arm_unsup %}
 <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12" style="background: none;">[fa=external-link] Lade das Image für dein Board auf der Armbian Website herunter.</a>
 
-!!! Anmerkung: Du solltest das Image Armbian Bullseye downloaden.
+!!! Anmerkung: Du solltest das Image Armbian Bookworm downloaden.
 {% endif %}
 
 !!! Wenn du die Validität deiner signierten Images prüfen will, kannst du [unseren public key downloaden](https://forge.yunohost.org/yunohost.asc).
@@ -702,7 +702,7 @@ Wenn du Subdomains erstellen möchtest, denk daran, diese auch in der Datei `hos
 
 ### [fa=key /] Der erste Benutzer
 
-[Seit YunoHost 11.1](https://forum.yunohost.org/t/yunohost-11-1-release-sortie-de-yunohost-11-1/23378) wird in dieser Phase der erste Benutzer erstellt. Du solltest einen Benutzernamen und ein einigermaßen komplexes Passwort wählen. (Wir können nicht genug betonen, dass das Passwort **robust** sein sollte!) Dieser Benutzer wird der Administratoren-Gruppe hinzugefügt und kann daher auf das Benutzerportal und die Webadministrationsoberfläche zugreifen und eine Verbindung  [über **SSH**](/ssh) oder [**SFTP**](/filezilla) herstellen. Administratoren erhalten außerdem E-Mails an `root@yourdomain.tld` und `admin@yourdomain.tld`: Diese E-Mails können zum Versenden technischer Informationen oder Warnungen verwendet werden. Du kannst später weitere Benutzer hinzufügen, die du auch zur Administratoren-Gruppe hinzufügen kannst.
+In dieser Phase wird der erste Benutzer erstellt. Du solltest einen Benutzernamen und ein einigermaßen komplexes Passwort wählen. (Wir können nicht genug betonen, dass das Passwort **robust** sein sollte!) Dieser Benutzer wird der Administratoren-Gruppe hinzugefügt und kann daher auf das Benutzerportal und die Webadministrationsoberfläche zugreifen und eine Verbindung  [über **SSH**](/ssh) oder [**SFTP**](/filezilla) herstellen. Administratoren erhalten außerdem E-Mails an `root@yourdomain.tld` und `admin@yourdomain.tld`: Diese E-Mails können zum Versenden technischer Informationen oder Warnungen verwendet werden. Du kannst später weitere Benutzer hinzufügen, die du auch zur Administratoren-Gruppe hinzufügen kannst.
 
 Dieser Benutzer ersetzt den alten `admin` Benutzer, auf den sich einige alte Dokumentationsseiten möglicherweise noch beziehen. In diesem Fall: Ersetzen Sie einfach `admin` durch Ihren Benutzernamen.
 

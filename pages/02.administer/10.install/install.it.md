@@ -121,7 +121,7 @@ Selezionate l'hardware sul quale vuoi installare YunoHost:
 {% elseif vps_debian or vps_ynh %}
 
 [div class="flex-child hardware{%if vps_debian %} active{% endif %}"]
-[[figure caption="VPS or dedicated server with Debian 11"]![](image://debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
+[[figure caption="VPS or dedicated server with Debian 12"]![](image://debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
 [/div]
 
 [div class="flex-child hardware{%if vps_ynh %} active{% endif %}"]
@@ -157,7 +157,7 @@ Selezionate l'hardware sul quale vuoi installare YunoHost:
 {% elseif arm_unsup %}
 - Una scheda ARM con almeno 512 MB di RAM
 {% elseif vps_debian %}
-- Un virtual private server dedicato con Debian 11 <small>(con un **kernel >= 3.12**)</small> preinstallato, almeno 512 MB di RAM e 16 GB disponibili
+- Un virtual private server dedicato con Debian 12 <small>(con un **kernel >= 6.1**)</small> preinstallato, almeno 512 MB di RAM e 16 GB disponibili
 {% elseif vps_ynh %}
 - Un virtual private server dedicato con YunoHost preinstallato, almeno 512 MB di RAM e 16 GB disponibili
 {% elseif virtualbox %}
@@ -200,7 +200,7 @@ Ad esempio Docker può usare WSL invece di Hyper-V.
 ! Tenete presente che questa configurazione *non* è un assolutamente un container: se qualcosa smette di funzionare non ci sono possibilità di usare dei rollback.
 ! Potrebbe essere necessario eliminare la distribuzione Debian e reinstallare tutto da capo.
 
-## Installazione Debian 11
+## Installazione Debian 12
 
 Installiamo YunoHost all'interno di una distribuzione dedicata senza alterare quella di default. In un terminale PowerShell:
 
@@ -223,7 +223,7 @@ La versione è Debian 9 Stretch che può essere aggiornata:
 
 ```bash
 # In WSL
-sudo sed -i 's/stretch/bullseye/g' /etc/apt/sources.list`
+sudo sed -i 's/stretch/bookworm/g' /etc/apt/sources.list`
 sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade
@@ -259,7 +259,7 @@ Questo è un elemento chiave per YunHost nonché per qualsiasi distribuzione Deb
 
 ```bash
 # In WSL
-wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt update
 sudo apt install -y apt-transport-https
@@ -347,7 +347,7 @@ Questi sono alcuni provider di VPS che supportano nativamente YunHost:
 {% elseif arm_unsup %}
 <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12" style="background: none;">[fa=external-link] Scaricate l'immagine per la vostra sceda da sito di Armbian</a>
 
-!!! N.B.: dovete scaricare la versione Bullseye di Armbian.
+!!! N.B.: dovete scaricare la versione Bookworm di Armbian.
 {% endif %}
 
 !!! Se volete controllare la validità delle nostre immagini firmate potete [scaricare la nostra chiave pubblica](https://forge.yunohost.org/yunohost.asc).
@@ -718,7 +718,7 @@ Se volete creare dei sottodomini non dimenticate di aggiungerli anche nel file `
 
 ### [fa=key /] Primo utente
 
-[Fin dalla versione 11.1 di YunHost](https://forum.yunohost.org/t/yunohost-11-1-release-sortie-de-yunohost-11-1/23378) il primo utente viene creato a questo passo. Dovreste scegliere un nome utente e una password ragionevolmente complessa. (Non ci stancheremo mai di raccomandare che la password deve essere **robusta**!). Questo utente verrà aggiunto al gruppo Admins e quindi potrà accedere al portale utente, alla pagina web di amministrazione e connettersi [via **SSH**](/ssh) o [**SFTP**](/filezilla). Gli utenti del gruppo Admins riceveranno inoltre le email inviate a `root@yourdomain.tld` e `admin@yourdomain.tld`: questi messaggi potrebbero essere usate per mandare informazioni tecniche o allarmi. È possibile aggiungere successivamente ulteriori utenti che possono essere aggiunti al gruppo Admins.
+Il primo utente viene creato a questo passo. Dovreste scegliere un nome utente e una password ragionevolmente complessa. (Non ci stancheremo mai di raccomandare che la password deve essere **robusta**!). Questo utente verrà aggiunto al gruppo Admins e quindi potrà accedere al portale utente, alla pagina web di amministrazione e connettersi [via **SSH**](/ssh) o [**SFTP**](/filezilla). Gli utenti del gruppo Admins riceveranno inoltre le email inviate a `root@yourdomain.tld` e `admin@yourdomain.tld`: questi messaggi potrebbero essere usate per mandare informazioni tecniche o allarmi. È possibile aggiungere successivamente ulteriori utenti che possono essere aggiunti al gruppo Admins.
 
 Questo utente rimpiazza il precedente utente `admin` al quale potrebbero far riferimento alcune vecchie pagina della documentazione. Nel caso è sufficiente sostituire `admin` con il vostro nome utente.
 
