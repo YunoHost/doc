@@ -391,7 +391,7 @@ var hardware = "{{ hardware|escape('js') }}";
 */
 $(document).ready(function () {
     console.log("in load");
-    $.getJSON('https://repo.yunohost.org//imagesimages.json', function (images) {
+    $.getJSON('https://repo.yunohost.org/images/images.json', function (images) {
         $.each(images, function(k, infos) {
             if (infos.hide == true) { return; }
             if (infos.tuto.indexOf(hardware) == -1) return;
