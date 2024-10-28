@@ -244,7 +244,7 @@ Vous utilisez ce service dans 2 situations:
 
 #### Adresse du service
 
-`build.yunohost.org`
+`repo.yunohost.org`
 
 #### Données personnelles
 

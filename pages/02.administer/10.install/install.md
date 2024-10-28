@@ -391,7 +391,7 @@ var hardware = "{{ hardware|escape('js') }}";
 */
 $(document).ready(function () {
     console.log("in load");
-    $.getJSON('https://build.yunohost.org/images.json', function (images) {
+    $.getJSON('https://repo.yunohost.org//imagesimages.json', function (images) {
         $.each(images, function(k, infos) {
             if (infos.hide == true) { return; }
             if (infos.tuto.indexOf(hardware) == -1) return;
@@ -405,7 +405,7 @@ $(document).ready(function () {
              .replace('{version}', infos.version);
 
             if (!infos.file.startsWith("http"))
-                infos.file="https://build.yunohost.org/"+infos.file;
+                infos.file="https://repo.yunohost.org/images/"+infos.file;
             html = html.replace(/%7Bfile%7D/g, infos.file).replace(/{file}/g, infos.file);
    
             if ((typeof(infos.has_sig_and_sums) !== 'undefined') && infos.has_sig_and_sums == false)
