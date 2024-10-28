@@ -41,7 +41,7 @@ routes:
   {% set arm, rpi34 = true, true %}
 {% elseif hardware == 'rpi012' %}
   {% set arm, arm_unsup, rpi012 = true, true, true %}
-  {% set image_type = 'Raspberry Pi OS Lite (32-bit, Bullseye)' %}
+  {% set hardware = '' %}
 {% elseif hardware == 'arm_sup' %}
   {% set arm, arm_sup = true, true %}
   {% set show_legacy_arm_menu = true %}
@@ -126,6 +126,10 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 
 [/div]
 
+{% if rpi012 %}
+!! La prise en charge des Raspberry Pi 0, 1 et 2 a malheureusement été abandonnée depuis Debian 12 Bookworm. Nous vous suggérons de migrer vers un modèle de Raspberry Pi plus moderne, pris en charge par Bookworm.
+{% endif %}
+
 {% if hardware != '' %}
 
 ## [fa=list-alt /] Pré-requis
@@ -135,8 +139,6 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 - Un matériel compatible x86 dédié à YunoHost : portable, netbook, ordinateur avec 512Mo de RAM et 16Go de capacité de stockage (au moins) ;
 {% elseif rpi34 %}
 - Un Raspberry Pi 3 ou 4 ;
-{% elseif rpi012 %}
-- Un Raspberry Pi 0, 1 ou 2 avec au moins 512Mo de RAM ;
 {% elseif internetcube %}
 - Un Orange Pi PC+ ou une Olinuxino Lime 1 ou 2 ;
 - Un VPN avec une IP publique dédiée et un fichier `.cube` ;
@@ -161,7 +163,7 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 {% if at_home %}
 - Un [fournisseur d'accès à Internet correct](/isp), de préférence avec une bonne vitesse d’upload ;
 {% if not virtualbox %}
-- Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet {% if rpi012 %} (Ou pour Rasperry Pi Zero : Un câble OTG ou un adaptateur Wifi USB) {% endif %} ;
+- Un câble ethernet/RJ-45 pour brancher la carte à votre routeur/box internet ;
 {% endif %}
 - Un ordinateur pour lire ce guide, flasher l'image et accéder à votre serveur.
 {% else %}
@@ -196,13 +198,9 @@ Ci-dessous une liste de fournisseurs de VPS supportant nativement YunoHost :
 
 ## [fa=download /] Télécharger l'image {{image_type}}
 
-{% if rpi012 %}
-! Le support des Rasperry Pi 0, 1 et 2 est malheureusement sur la pente descendante : construire des images à jour est complexe, et les cartes RPi 0, 1 et 2 sont des systèmes ARM 32 bit qui vont être de plus en plus déprécié au fur et à mesure du temps. Nos images pré-installées sont vieilles. Nous recommendons à la place de [télécharger l'image officielle Rasperry Pi OS Lite (**32-bit**, **Bullseye**)](https://downloads.raspberrypi.org/raspios_lite_armhf/images/?C=M;O=D) et d'installer YunoHost par dessus, [de manière similaire à ce qui est proposé pour les autres cartes ARM](/install/hardware:arm)
-{% endif %}
-
 {% if virtualbox or regular %}
 !!! Si votre hôte est en 32 bits, faites bien attention à télécharger l'image 32 bits.
-{% elseif arm_unsup and not rpi012 %}
+{% elseif arm_unsup %}
 <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12" style="background:none;">[fa=external-link] Télécharger l'image pour votre carte sur le site d'Armbian</a>
 
 !!! N.B.: il vous faut télécharger l'image Armbian Bullseye.
@@ -471,40 +469,7 @@ Ne perdez pas de vue que:
 !!! Si l'installation de YunoHost échoue sur votre machine et que vous n'arrivez pas à résoudre le problème, sachez qu'il est aussi possible d'installer Debian et ensuite d'installer YunoHost dessus. Voir ces instructions: https://yunohost.org/fr/administer/install/installing_debian
 {% endif %}
 
-{% if rpi012 %}
-
-## [fa=bug /] Se connecter à la carte et corriger l'image
-
-Les Raspberry Pi 1 et Zero ne sont pas totalement supportés à cause de [problèmes de compilation pour cette architecture](https://github.com/YunoHost/issues/issues/1423).
-
-Cependant, il est possible de corriger l'image par vous-même avant de lancer la configuration initiale.
-
-Pour y parvenir, vous devez vous connecter à votre Raspberry Pi en tant que root [via SSH](/ssh) avec le mot de passe temporaire `yunohost`:
-
-```bash
-ssh root@yunohost.local
-```
-
-(utilisez `yunohost-2.local`, etc. s'il y a plusieurs serveurs YunoHost sur le réseau)
-
-Ensuite, lancez les commandes suivantes pour contourner le dysfonctionnement de Metronome :
-
-```bash
-mv /usr/bin/metronome{,.bkp}
-mv /usr/bin/metronomectl{,.bkp}
-ln -s /usr/bin/true /usr/bin/metronome
-ln -s /usr/bin/true /usr/bin/metronomectl
-```
-
-Et celle-ci pour contourner celui de upnpc :
-
-```bash
-sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/firewall.py
-```
-
-! Cette dernière commande nécessite d'être lancée après chaque mise à jour de YunoHost :/
-
-{% elseif arm_unsup %}
+{% if arm_unsup %}
 
 ## [fa=terminal /] Se connecter à la carte
 

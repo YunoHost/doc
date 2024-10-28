@@ -41,7 +41,7 @@ routes:
   {% set arm, rpi34 = true, true %}
 {% elseif hardware == 'rpi012' %}
   {% set arm, arm_unsup, rpi012 = true, true, true %}
-  {% set image_type = 'Raspberry Pi OS Lite (32-bit, Bullseye)' %}
+  {% set hardware = '' %}
 {% elseif hardware == 'arm_sup' %}
   {% set arm, arm_sup = true, true %}
   {% set show_legacy_arm_menu = true %}
@@ -132,6 +132,10 @@ Select the hardware on which you want install YunoHost :
 
 [/div]
 
+{% if rpi012 %}
+!! Support for Raspberry Pi 0, 1 and 2 was unfortunately dropped since Debian 12 Bookworm. We suggest you migrate to a more modern Raspberry Pi model, supported by Bookworm.
+{% endif %}
+
 {% if hardware != '' %}
 
 {% if wsl %}
@@ -145,8 +149,6 @@ Select the hardware on which you want install YunoHost :
 - A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop with 512MB RAM and 16GB capacity (at least)
 {% elseif rpi34 %}
 - A Raspberry Pi 3 or 4
-{% elseif rpi012 %}
-- A Raspberry Pi 0, 1 or 2 with at least 512MB RAM
 {% elseif internetcube %}
 - An Orange Pi PC+ or an Olinuxino Lime 1 or 2
 - A VPN with a dedicated public IP and a `.cube` file
@@ -177,7 +179,7 @@ Select the hardware on which you want install YunoHost :
 {% if at_home %}
 - A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
 {% if not virtualbox %}
-- An ethernet cable (RJ-45) to connect your server to your router. {% if rpi012 %} (Or, for Raspberry Pi Zero : and USB OTG or a wifi Dongle) {% endif %}
+- An ethernet cable (RJ-45) to connect your server to your router.
 {% endif %}
 - A computer to read this guide, flash the image and access your server.
 {% else %}
@@ -340,13 +342,9 @@ Here are some VPS providers supporting YunoHost natively :
 
 ## [fa=download /] Download the {{image_type}} image
 
-{% if rpi012 %}
-! Support for Raspberry Pi 0, 1 and 2 is unfortunately slowly dropping : building fresh images is complex, and RPi 0, 1 and 2 are ARM-32bit systems which will get more and more deprecated over time. Our pre-installed images are quite old. We recommend instead to [download the official Raspberry Pi OS Lite (**32-bit**, **Bullseye**)](https://downloads.raspberrypi.org/raspios_lite_armhf/images/?C=M;O=D) and installing YunoHost on top [using similar instructions as for other ARM boards](/install/hardware:arm)
-{% endif %}
-
 {% if virtualbox or regular %}
 !!! If your host OS is 32 bits, be sure to download the 32-bit image.
-{% elseif arm_unsup and not rpi012 %}
+{% elseif arm_unsup %}
 <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12" style="background: none;">[fa=external-link] Download the image for your board on Armbian's website</a>
 
 !!! N.B.: you should download the image Armbian Bullseye.
@@ -616,40 +614,7 @@ Keep in mind that:
 !!! If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See these instructions: https://yunohost.org/en/installing_debian
 {% endif %}
 
-{% if rpi012 %}
-
-## [fa=bug /] Connect to the board and hotfix the image
-
-Raspberry Pi 1 and 0 are not totally supported due to [compilation issues for this architecture](https://github.com/YunoHost/issues/issues/1423).
-
-However, it is possible to fix by yourself the image before to run the initial configuration.
-
-To achieve this, you need to connect on your raspberry pi as root user [via SSH](/ssh) with the temporary password `yunohost`:
-
-```bash
-ssh root@yunohost.local
-```
-
-(or `yunohost-2.local`, and so on if multiple YunoHost servers are on your network)
-
-Then run the following commands to work around the metronome issue:
-
-```bash
-mv /usr/bin/metronome{,.bkp}   
-mv /usr/bin/metronomectl{,.bkp} 
-ln -s /usr/bin/true /usr/bin/metronome
-ln -s /usr/bin/true /usr/bin/metronomectl
-```
-
-And this one to work around the upnpc issue:
-
-```bash
-sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/firewall.py
-```
-
-! This last command need to be run after each YunoHost upgrade :/
-
-{% elseif arm_unsup %}
+{% if arm_unsup %}
 
 ## [fa=terminal /] Connect to the board
 

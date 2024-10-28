@@ -41,7 +41,7 @@ routes:
   {% set arm, rpi34 = true, true %}
 {% elseif hardware == 'rpi012' %}
   {% set arm, arm_unsup, rpi012 = true, true, true %}
-  {% set image_type = 'Raspberry Pi OS Lite (32-bit, Bullseye)' %}
+  {% set hardware = '' %}
 {% elseif hardware == 'arm_sup' %}
   {% set arm, arm_sup = true, true %}
   {% set show_legacy_arm_menu = true %}
@@ -132,6 +132,10 @@ Wähle die Hardware, auf der du YunoHost installieren willst :
 
 [/div]
 
+{% if rpi012 %}
+!! Die Unterstützung für Raspberry Pi 0, 1 und 2 wurde leider seit Debian 12 Bookworm eingestellt. Wir empfehlen Ihnen, auf ein moderneres Raspberry Pi-Modell umzusteigen, das von Bookworm unterstützt wird.
+{% endif %}
+
 {% if hardware != '' %}
 
 {% if wsl %}
@@ -145,8 +149,6 @@ Wähle die Hardware, auf der du YunoHost installieren willst :
 - Eine x86-kompatible für YunoHost bestimmte (dedizierte) Hardware: Laptop, Nettop, Netbook, Desktop mit 512MB RAM und 16GB Speicherkapazität (Minimum)
 {% elseif rpi34 %}
 - Ein Raspberry Pi 3 oder 4
-{% elseif rpi012 %}
-- Ein Raspberry Pi 0, 1 oder 2 mit mindestens 512MB RAM
 {% elseif internetcube %}
 - Ein Orange Pi PC+ oder ein Olinuxino Lime 1 oder 2
 - Ein VPN mit einer festen öffentlichen IP Adresse und einer `.cube` Datei
@@ -177,7 +179,7 @@ Wähle die Hardware, auf der du YunoHost installieren willst :
 {% if at_home %}
 - Ein [vernünftiger ISP](/isp), vorzugsweise mit einer guten und unbegrenzten Upstream Bandbreite
 {% if not virtualbox %}
-- Ein Ethernet Kabel (RJ-45), um deinen Server mit deinem Router zu verbinden. {% if rpi012 %} (Oder, für Rasperry Pi Zero : und USB OTG oder ein Wifi Dongle) {% endif %}
+- Ein Ethernet Kabel (RJ-45), um deinen Server mit deinem Router zu verbinden.
 {% endif %}
 - Ein Computer, um diese Anleitung zu lesen, das Image zu flashen und auf deinen Server zuzugreifen.
 {% else %}
@@ -340,13 +342,9 @@ Hier sind ein paar VPS Provider, die YunoHost nativ unterstützen :
 
 ## [fa=download /] Lade das {{image_type}} Image herunter
 
-{% if rpi012 %}
-! Leider wird der Support für Rasperry Pi 0, 1 und 2 so langsam eingestellt : Das Bauen neuer Images ist komplex und RPi 0, 1 und 2 sind ARM-32bit Systeme, die über die Zeit mehr und mehr veralten (deprecated) werden. Da unsere vorinstallierten Images ziemlich alt sind, empfehlen wir stattdessen das [offizielle Rasperry Pi OS Lite (**32-bit**, **Bullseye**)](https://downloads.raspberrypi.org/raspios_lite_armhf/images/?C=M;O=D) zu downloaden und YunoHost [unter Verwendung ähnlicher Instruktionen wie für andere ARM Boards](/install/hardware:arm) oben drauf zu installieren.
-{% endif %}
-
 {% if virtualbox or regular %}
 !!! Achte darauf, dass du das 32-bit Image herunterlädst, wenn dein Host ein 32 Bit System ist.
-{% elseif arm_unsup and not rpi012 %}
+{% elseif arm_unsup %}
 <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12" style="background: none;">[fa=external-link] Lade das Image für dein Board auf der Armbian Website herunter.</a>
 
 !!! Anmerkung: Du solltest das Image Armbian Bullseye downloaden.
@@ -600,40 +598,7 @@ Denk daran, dass:
 [/ui-tabs]
 {% endif %}
 
-{% if rpi012 %}
-
-## [fa=bug /] Mit dem Board verbinden und das Image per Hotfix reparieren
-
-Raspberry Pi 1 und 0 werden aufgrund von [Kompilierungsproblemen für diese Architektur](https://github.com/YunoHost/issues/issues/1423) nicht vollständig unterstützt.
-
-Es ist jedoch möglich, das Image selbst zu reparieren, bevor du die Erstkonfiguration ausführst.
-
-Um das zu erreichen, musst du dich auf deinem Raspberry Pi als Root-Benutzer [über SSH](/ssh) mit dem temporären Passwort `yunohost` verbinden:
-
-```bash
-ssh root@yunohost.local
-```
-
-(oder `yunohost-2.local` usw., wenn sich mehrere YunoHost-Server in deinem Netzwerk befinden)
-
-Führe dann die folgenden Befehle aus, um das Metronomproblem zu umgehen:
-
-```bash
-mv /usr/bin/metronome{,.bkp}   
-mv /usr/bin/metronomectl{,.bkp} 
-ln -s /usr/bin/true /usr/bin/metronome
-ln -s /usr/bin/true /usr/bin/metronomectl
-```
-
-Und diesen hier, um das UpnPC-Problem zu umgehen:
-
-```bash
-sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/firewall.py
-```
-
-! Der letzte Befehl muss nach jedem YunoHost-Upgrade ausgeführt werden :/
-
-{% elseif arm_unsup %}
+{% if arm_unsup %}
 
 ## [fa=terminal /] Verbindung zum Board
 

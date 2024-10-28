@@ -41,7 +41,7 @@ routes:
   {% set arm, rpi34 = true, true %}
 {% elseif hardware == 'rpi012' %}
   {% set arm, arm_unsup, rpi012 = true, true, true %}
-  {% set image_type = 'Raspberry Pi OS Lite (32-bit, Bullseye)' %}
+  {% set hardware = '' %}
 {% elseif hardware == 'arm_sup' %}
   {% set arm, arm_sup = true, true %}
   {% set show_legacy_arm_menu = true %}
@@ -132,6 +132,10 @@ Selezionate l'hardware sul quale vuoi installare YunoHost:
 
 [/div]
 
+{% if rpi012 %}
+!! Il supporto per Raspberry Pi 0, 1 e 2 è stato purtroppo abbandonato da Debian 12 Bookworm. Si consiglia di migrare a un modello di Raspberry Pi più moderno, supportato da Bookworm.
+{% endif %}
+
 {% if hardware != '' %}
 
 {% if wsl %}
@@ -145,8 +149,6 @@ Selezionate l'hardware sul quale vuoi installare YunoHost:
 - Un computer compatibile x86 dedicato a YunoHost: un laptop, nettop, netbook o desktop con almeno 512 MB di RAM e un disco di 16 GB
 {% elseif rpi34 %}
 - Un Raspberry Pi 3 o 4
-{% elseif rpi012 %}
-- Un Raspberry Pi 0, 1 or 2 con almeno 512 MB di RAM
 {% elseif internetcube %}
 - Un Orange Pi PC+ o un Olinuxino Lime 1 o 2
 - Una VPN con un IP pubblico dedicato e un file `.cube`
@@ -177,7 +179,7 @@ Selezionate l'hardware sul quale vuoi installare YunoHost:
 {% if at_home %}
 - Un [ISP ragionevole](/isp), preferibilmente con una banda in uscita buona senza limiti
 {% if not virtualbox %}
-- Un cavo ethernet (RJ-45) per collegare il vostro server al router. {% if rpi012 %} (Oppure per un Rasperry Pi Zero: un cavo USB OTG o una chiavetta wifi) {% endif %}
+- Un cavo ethernet (RJ-45) per collegare il vostro server al router.
 {% endif %}
 - Un computer per leggere questa guida, copiare l'immagine e accedere al vostro server.
 {% else %}
@@ -340,13 +342,9 @@ Questi sono alcuni provider di VPS che supportano nativamente YunHost:
 
 ## [fa=download /] Scaricate l'immagine {{image_type}}
 
-{% if rpi012 %}
-! Il supporto per i Raspberry Pi 0, 1 e 2 purtroppo sta lentamente scomparendo: realizzare nuove immagini è complesso e i RPi 0, 1 e 2 sono sistemi ARM-32bit che stanno venendo deprecati sempre più e così le nostre immagini da installare sono particolarmente datate. Noi raccomandiamo di [scaricare il sistema operativo ufficiale Rasperry Pi OS Lite (**32-bit**, **Bullseye**)](https://downloads.raspberrypi.org/raspios_lite_armhf/images/?C=M;O=D) e usarlo per installare YunoHost [seguendo le istruzioni simili per le altre schede ARM](/install/hardware:arm)
-{% endif %}
-
 {% if virtualbox or regular %}
 !!! Se il vostro computer è a 32 bit assicuratevi di scaricare l'immagine a 32 bit.
-{% elseif arm_unsup and not rpi012 %}
+{% elseif arm_unsup %}
 <a href="https://www.armbian.com/download/" target="_BLANK" type="button" class="btn btn-info col-sm-12" style="background: none;">[fa=external-link] Scaricate l'immagine per la vostra sceda da sito di Armbian</a>
 
 !!! N.B.: dovete scaricare la versione Bullseye di Armbian.
@@ -616,40 +614,7 @@ Tenete presente che:
 !!! Se l'installer di YunoHost fallisce e non siete in grado di risolvere il problema è possibile anche installare Debian e poi successivamente YunoHost. Per le istruzioni, in alto in questa pagina selezionate "Server remoto e poi "virtual private server o server dedicato con Debian".
 {% endif %}
 
-{% if rpi012 %}
-
-## [fa=bug /] Connettete la scheda e poi correggete l'immagine
-
-Raspberry Pi 1 e 0 non sono completamente supportate a causa di [problemi nella compilazione per queste architetture](https://github.com/YunoHost/issues/issues/1423).
-
-È comunque possibile correggere autonomamente l'immagine prima di iniziare la configurazione iniziale.
-
-Per fare ciò dovete collegarvi al vostro raspberry pi come root [usando ssh](/ssh) con la password temporanea `yunohost`:
-
-```bash
-ssh root@yunohost.local
-```
-
-(oppure `yunohost-2.local` e via così a seconda di quanti server YunoHost sono presenti nella vostra rete)
-
-Poi date i seguenti comandi per risolvere il problema di metronome:
-
-```bash
-mv /usr/bin/metronome{,.bkp}   
-mv /usr/bin/metronomectl{,.bkp} 
-ln -s /usr/bin/true /usr/bin/metronome
-ln -s /usr/bin/true /usr/bin/metronomectl
-```
-
-E questi per risolvere il problema di upnpc:
-
-```bash
-sed -i 's/import miniupnpc/#import miniupnpc/g' /usr/lib/moulinette/yunohost/firewall.py
-```
-
-! Questo comando deve essere ripetuto dopo agni aggiornamento di YunoHost ;/
-
-{% elseif arm_unsup %}
+{% if arm_unsup %}
 
 ## [fa=terminal /] Connessione alla scheda
 
