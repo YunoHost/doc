@@ -21,7 +21,6 @@ YunoHost ist ein **Betriebssystem**, das auf die einfachste Verwaltung eines **S
 - ![](image://icon-medic.png?resize=32&classes=inline) Erstellen und Wiederherstellen von **Backups** ;
 - ![](image://icon-door.png?resize=32&classes=inline) Stellen Sie über das **Benutzerportal** <small>(NGINX, SSOwat)</small> gleichzeitig eine Verbindung zu allen Apps her ;
 - ![](image://icon-mail.png?resize=32&classes=inline) Enthält einen **vollständigen E-Mail-Stack** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
-- ![](image://icon-messaging.png?resize=32&classes=inline) … sowie **einen Instant Messaging Server** <small>(XMPP)</small> ;
 - ![](image://icon-lock.png?resize=32&classes=inline) Verwaltet **SSL-Zertifikate** <small>(basierend auf Let's Encrypt)</small> ;
 - ![](image://icon-shield.png?resize=32&classes=inline) … und **Sicherheitssysteme** <small>(`fail2ban`, `yunohost-firewall`)</small> ;
 

@@ -7,7 +7,7 @@ routes:
   default: '/domains'
 ---
 
-YunoHost ermöglicht es Ihnen, mehrere Domains auf demselben Server zu verwalten und zu bedienen. Zum Beispiel können Sie einen Blog und Nextcloud auf einer ersten Domain `yolo.com` hosten, und einen Web-Mail-Client auf einer zweiten Domain `swag.nohost.me`. Jede Domain wird automatisch so konfiguriert, dass sie Web-, Mail- und XMPP-Dienste nutzen kann.
+YunoHost ermöglicht es Ihnen, mehrere Domains auf demselben Server zu verwalten und zu bedienen. Zum Beispiel können Sie einen Blog und Nextcloud auf einer ersten Domain `yolo.com` hosten, und einen Web-Mail-Client auf einer zweiten Domain `swag.nohost.me`. Jede Domain wird automatisch so konfiguriert, dass sie Web- und Mail-Dienste nutzen kann.
 
 Domains können im Abschnitt 'Domain' des Webadmin verwaltet werden, oder über die Kategorie `yunohost domain` in der Kommandozeile.
 
@@ -30,7 +30,7 @@ Wenn Ihre Domain spezielle, nicht-lateinische Zeichen enthält, müssen Sie ihre
 
 DNS (Domain Name System) ist ein System, das es Computern auf der ganzen Welt ermöglicht, von Menschen lesbare Domain-Namen (wie z.B. `yolo.com`) in maschinenverständliche Adressen, sogenannte IP-Adressen (wie z.B. `11.22.33.44`), zu übersetzen. Damit diese Übersetzung (und andere Funktionen) funktioniert, müssen Sie DNS-Einträge sorgfältig konfigurieren.
 
-YunoHost kann eine empfohlene DNS-Konfiguration für jede Domain generieren, einschließlich der für Mail und XMPP benötigten Elemente. Die empfohlene DNS-Konfiguration ist im Webadmin über Domain > (die Domain) > DNS-Konfiguration oder mit dem Befehl `yunohost domain dns-conf the.domain.tld` verfügbar.
+YunoHost kann eine empfohlene DNS-Konfiguration für jede Domain generieren, einschließlich der für Mail. Die empfohlene DNS-Konfiguration ist im Webadmin über Domain > (die Domain) > DNS-Konfiguration oder mit dem Befehl `yunohost domain dns-conf the.domain.tld` verfügbar.
 
 ## SSL/HTTPS-Zertifikate
 
