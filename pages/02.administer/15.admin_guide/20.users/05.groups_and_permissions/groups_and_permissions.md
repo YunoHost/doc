@@ -1,5 +1,5 @@
 ---
-title: Der Benutzer, Gruppen und Berechtigungen
+title: The users, groups and permissions
 template: docs
 taxonomy:
     category: docs
