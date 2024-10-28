@@ -245,7 +245,7 @@ You use this service in 2 situations:
 
 #### Service address
 
-`build.yunohost.org`
+`repo.yunohost.org`
 
 #### Personal data
 
