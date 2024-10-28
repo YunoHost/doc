@@ -25,7 +25,7 @@ Par défaut, deux groupes spéciaux sont créés :
 
 - `all_users`, qui contient tous les utilisateurs enregistrés sur YunoHost,
 - `visitors`, c'est-à-dire les personnes qui consultent le serveur sans être connectées.
-- `admins`, apparut depuis YunoHost 11.1, ce groupe permet de gérer les administrateurs de la machine, chaque utilisateur aura alors (selon la configuration du serveur) accès en SSH ainsi que la webadmin.
+- `admins`, ce groupe permet de gérer les administrateurs de la machine, chaque utilisateur aura alors (selon la configuration du serveur) accès en SSH ainsi que la webadmin.
 
 Vous ne pouvez pas changer le contenu de ces groupes, seulement les permissions qui leur sont accordées.
 
