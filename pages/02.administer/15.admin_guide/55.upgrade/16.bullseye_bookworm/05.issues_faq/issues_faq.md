@@ -11,16 +11,6 @@ This page lists all the known issues encountered after a migration from YunoHost
 
 If the suggested solutions don't work, please [ask for help](/help).
 
-## 'Regenerate system configurations 'nsswitch'' could not be completed
-
-You might see this issue during the migration:
-```
-Info: The operation 'Regenerate system configurations 'nsswitch'' could not be completed. Please share the full log of this operation using the command 'yunohost log share 20241031-163408-regen_conf-nsswitch' to get help
-Error: Migration 0027_migrate_to_bookworm did not complete, aborting. Error: No module named '_ldap'
-```
-Just re-start the migration. This might be due to the sequencing of Python modules installation.
-
-
 ## Python apps
 
 After upgrading, your python apps should be unavailable because their virtual environment (venv) needs to be rebuilt.
