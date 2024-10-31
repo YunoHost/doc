@@ -9,7 +9,7 @@ routes:
 
 ## Utenti
 
-Gli utenti sono gli esseri umani che hanno l'accesso alle applicazione e agli altri servizi sul tuo server. L'amministratore può aggiungere e gestire degli utenti tramite l'amministrazione web (nella categoria Utenti) o con la linea di comando (vedi `yunohost user --help`). Dopo queste operazioni, gli utenti avranno un indirizzo mail personale (scelto dall'amministratore), un account XMPP, e potranno connettersi al portale dell'utente (SSO) per accedere alle applicazioni di cui hanno i permessi e configurare altri parametri.
+Gli utenti sono gli esseri umani che hanno l'accesso alle applicazione e agli altri servizi sul tuo server. L'amministratore può aggiungere e gestire degli utenti tramite l'amministrazione web (nella categoria Utenti) o con la linea di comando (vedi `yunohost user --help`). Dopo queste operazioni, gli utenti avranno un indirizzo mail personale (scelto dall'amministratore), e potranno connettersi al portale dell'utente (SSO) per accedere alle applicazioni di cui hanno i permessi e configurare altri parametri.
 
 Il primo utente creato avrà automaticamente l'alias mail `root@main.domani.tld` e `admin@main.domani.tld`, in modo che le mail inviate a quegli indirizzi saranno ricevute nella casella mail di questo utente.
 

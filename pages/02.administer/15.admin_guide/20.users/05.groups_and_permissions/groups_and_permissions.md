@@ -1,5 +1,5 @@
 ---
-title: Der Benutzer, Gruppen und Berechtigungen
+title: The users, groups and permissions
 template: docs
 taxonomy:
     category: docs
@@ -26,6 +26,7 @@ By default, two special groups are created:
 
 - `all_users`, that contain all users registered on YunoHost,
 - `visitors`, that applies to people viewing the server while not logged in.
+- `admins`, that contains YunoHost administrators, who will have SSH access as well as to the webadmin.
 
 The content of those groups cannot be changed, only the permissions given to them.
 

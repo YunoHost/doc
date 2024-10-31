@@ -11,7 +11,7 @@ If you can't install YunoHost successfully, there's always the option to install
 
 ## Which Debian version
 
-At the time of writing, only Debian 11 is supported by YunoHost. Don't use Debian 12.
+YunoHost is based on Debian 12 (Bookworm).
 
 ## Before you start
 

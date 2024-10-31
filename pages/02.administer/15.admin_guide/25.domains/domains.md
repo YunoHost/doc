@@ -12,7 +12,7 @@ shortcode-ui:
 
 DNS (Domain Name System) is a system that allows computers from around the world to translate human-readable domain names (such as `yolo.com`) to machine-understandable addresses called IP addresses (such as `11.22.33.44`). For this translation (and other features) to work, you must carefully configure DNS records.
 
-YunoHost allows you to manage and serve several domains on the same server with the same public ip. For instance, you can host a blog and Nextcloud on a first domain `yolo.com`, and a web mail client on a second domain `swag.nohost.me`. Each domain is automatically configured to handle web services, mail services and XMPP services.
+YunoHost allows you to manage and serve several domains on the same server with the same public ip. For instance, you can host a blog and Nextcloud on a first domain `yolo.com`, and a web mail client on a second domain `swag.nohost.me`. Each domain is automatically configured to handle web services and mail services.
 
 Domains can be managed in the 'Domain' section of the webadmin, or through the `yunohost domain` category of the command line.
 

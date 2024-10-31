@@ -7,7 +7,7 @@ routes:
   default: '/domains'
 ---
 
-YunoHost permet de gérer et de servir plusieurs domaines sur un même serveur. Vous pouvez donc héberger, par exemple, un blog et un Nextcloud sur un premier domaine `yolo.com`, et un client de messagerie web sur un second domaine `swag.nohost.me`. Chaque domaine est automatiquement configuré pour pouvoir gérer des services web, des courriels et une messagerie instantanée XMPP.
+YunoHost permet de gérer et de servir plusieurs domaines sur un même serveur. Vous pouvez donc héberger, par exemple, un blog et un Nextcloud sur un premier domaine `yolo.com`, et un client de messagerie web sur un second domaine `swag.nohost.me`. Chaque domaine est automatiquement configuré pour pouvoir gérer des services web et des courriels.
 
 Les domaines peuvent être gérés dans la section 'Domaines' de la webadmin, ou via la catégorie `yunohost domain` de la ligne de commande.
 
@@ -44,7 +44,7 @@ Le chiffre risque de changer selon quel serveur démarre en premier, donc ne com
 
 DNS (Domain Name System) est un système qui permet aux ordinateurs du monde entier de traduire les noms de domaine lisibles par l'homme (comme `yolo.com`) en adresses IP compréhensibles par les machines (comme `11.22.33.44`). Pour que cette traduction (et d'autres fonctionnalités) fonctionne, il faut configurer soigneusement les enregistrements DNS.
 
-YunoHost peut générer une configuration DNS recommandée pour chaque domaine, y compris les enregistrements nécessaires pour les parties emails et XMPP. La configuration DNS recommandée est disponible dans l'administrateur web via Domaines > (le domaine) > configuration DNS, ou avec la commande `yunohost domain dns-conf the.domain.tld`.
+YunoHost peut générer une configuration DNS recommandée pour chaque domaine, y compris les enregistrements nécessaires pour les emails. La configuration DNS recommandée est disponible dans l'administrateur web via Domaines > (le domaine) > configuration DNS, ou avec la commande `yunohost domain dns-conf the.domain.tld`.
 
 ## Certificats SSL/HTTPS
 

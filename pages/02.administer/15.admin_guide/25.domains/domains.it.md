@@ -7,7 +7,7 @@ routes:
   default: '/domains'
 ---
 
-YunoHost permette l'installazione e la gestione di più domini sullo stesso server. Potrete quindi ospitare, ad esempio, un blog e una istanza Nextcloud sul dominio primario yolo.com, e un altro servizio su un secondo dominio swag.nohost.me. Ogni dominio viene automaticamente configurato affinché possa gestire i servizi web, le mail, e un servizio di chat XMPP.
+YunoHost permette l'installazione e la gestione di più domini sullo stesso server. Potrete quindi ospitare, ad esempio, un blog e una istanza Nextcloud sul dominio primario yolo.com, e un altro servizio su un secondo dominio swag.nohost.me. Ogni dominio viene automaticamente configurato affinché possa gestire i servizi web e le mail.
 
 I domini possono essere configurati a partire dalla sezione 'Domini' della pagina di amministrazione web, o attraverso la sezione `yunohost domain` da linea di comando.
 
@@ -44,7 +44,7 @@ Purtroppo il numero rischia di cambiare in base all'ordine di avvio dei server, 
 
 DNS (Domain Name System) è il sistema che permette, ai computer di tutto il mondo di tradurre i nomi di dominio leggibili dall'uomo (es. `yolo.com`), in un indirizzo IP comprensibile dal computer (es `11.22.33.44`). Affinché questa traduzione (e altre funzionalità) avvenga, bisogna configurare con estrema cura i record DNS.
 
-YunoHost può generare una configurazione DNS raccomandata per ogni dominio che comprende le configurazioni necessarie per le componenti email e XMPP. La configurazione DNS raccomandata è disponibile nella pagina di amministrazione web all'indirizzo Domini > (il dominio) > configurazione DNS oppure con il comando `yunohost domain dns-conf the.domain.tld`.
+YunoHost può generare una configurazione DNS raccomandata per ogni dominio che comprende le configurazioni necessarie per le componenti email. La configurazione DNS raccomandata è disponibile nella pagina di amministrazione web all'indirizzo Domini > (il dominio) > configurazione DNS oppure con il comando `yunohost domain dns-conf the.domain.tld`.
 
 ## Certificati SSL/HTTPS
 
