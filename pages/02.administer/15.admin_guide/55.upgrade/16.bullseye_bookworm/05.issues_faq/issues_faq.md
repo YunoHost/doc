@@ -11,7 +11,7 @@ This page lists all the known issues encountered after a migration from YunoHost
 
 If the suggested solutions don't work, please [ask for help](/help).
 
-## `'Regenerate system configurations 'nsswitch'' could not be completed`
+## 'Regenerate system configurations 'nsswitch'' could not be completed
 
 You might see this issue during the migration:
 ```
