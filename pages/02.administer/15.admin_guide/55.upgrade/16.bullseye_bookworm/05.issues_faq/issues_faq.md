@@ -20,6 +20,7 @@ To do that you can run the pending migrations in `Webadmin > Update`.
 The apps below won't be automatically repaired, you need to force-upgrade them manually instead with `yunohost app upgrade -F APP`.
 
 Apps which won't be automatically repaired and need a force upgrade:
+- borgserver and all its instances (eg. borgserver__2, borgserver__3, ...)
 
 TODO: list those apps
 
