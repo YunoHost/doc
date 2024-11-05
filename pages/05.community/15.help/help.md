@@ -32,7 +32,7 @@ Please change your username, as we got legions of `ynhuser`s.
 !!! **Note:** this room is available via
 !!! - Matrix (`#yunohost:matrix.org` [using Element](https://riot.im/app/#/room/#yunohost:matrix.org?target=_blank))
 !!! - IRC (`#yunohost` on libera.chat, [using kiwiirc](https://web.libera.chat/#yunohost))
-!!! - XMPP (`support@conference.yunohost.org`)
+!!! - XMPP (`xmpp:support@conference.yunohost.org?join`)
 
 ## ... or ask on the forum!
 
