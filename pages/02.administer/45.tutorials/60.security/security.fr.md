@@ -53,7 +53,7 @@ Entrez le mot de passe d’administration et votre clé publique devrait être c
 **Sur votre serveur**, l'édition du fichier de configuration SSH pour désactiver l’authentification par mot de passe est gérée par un paramètre système :
 
 ```bash
-sudo yunohost settings set security.ssh.password_authentication -v no
+sudo yunohost settings set security.ssh.ssh_password_authentication -v no
 ```
 
 ---
@@ -64,8 +64,10 @@ Pour éviter des tentatives de connexion SSH par des robots qui scannent tout In
 C'est géré par un paramètre système, qui se charge de configurer les services SSH et Fail2Ban.  
 Il n'est pas utile de modifier ce port si vous avez désactivé l'authentification par mot de passe.
 
+! Si vous modifiez quoi que ce soit dans le fichier `/etc/ssh/sshd_config`, même si ce n'est que le port, YunoHost ne gérera plus ce fichier. Pour cette raison, utilisez toujours les outils d'administration de YunoHost pour effectuer des changements dans les fichiers de configuration du système !
+
 ```bash
-sudo yunohost settings set security.ssh.port -v <votre_numero_de_port_ssh>
+sudo yunohost settings set security.ssh.ssh_port -v <votre_numero_de_port_ssh>
 ```
 
 **Lors de la prochaine connexion SSH**, vous devrez ajouter le paramètre `-p` suivi du port SSH.

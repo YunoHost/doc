@@ -49,7 +49,7 @@ Type your admnistration password and your key will be copied onto your server.
 **On your server**, editing the SSH configuration file to deactivate password authentication is handled by a system setting:
 
 ```bash
-sudo yunohost settings set security.ssh.password_authentication -v no
+sudo yunohost settings set security.ssh.ssh_password_authentication -v no
 ```
 
 ---
@@ -63,7 +63,7 @@ There's no need to change this port if you've disabled password authentication.
 ! If you modify anything in the `/etc/ssh/sshd_config` file, even if only the port, YunoHost will no longer manage this file. For this reason, always use the YunoHost admin tools to make changes to the systems configuration files!
 
 ```bash
-sudo yunohost settings set security.ssh.port -v <new_ssh_port_number>
+sudo yunohost settings set security.ssh.ssh_port -v <new_ssh_port_number>
 ```
 
 **For subsequent SSH connections**, you need to add the `-p` option followed by the SSH port number.
