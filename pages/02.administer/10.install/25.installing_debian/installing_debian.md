@@ -21,7 +21,7 @@ The Debian installer isn't the easiest Linux installer, especially for beginners
 
 ### Booting the installer
 
-This guide won't go into details on how to boot the Debian installer. You can use Debian's own documentation for that. The short version is you'll need to flash a USB stick with the Debian 11 image, like you would flash the YunoHost image.
+This guide won't go into details on how to boot the Debian installer. You can use Debian's own documentation for that. The short version is you'll need to flash a USB stick with the Debian 12 image, like you would flash the YunoHost image.
 
 ### Installing
 
