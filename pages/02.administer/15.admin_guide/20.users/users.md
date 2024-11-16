@@ -20,7 +20,7 @@ The first user created also automatically gets email aliases `root@main.domain.t
 ## The user portal, or SSO
 
 [center]
-![](image://user_panel.png)
+![](image://user_panel.jpg)
 [/center]
 
 The user portal, also called the SSO for 'Single Sign On' allows user to browse easily between the different apps they have access to. In particular, the term 'Single Sign On' comes from the fact that user only need to log in the portal to automatically be logged to all apps that require authentication (or at least those who are integrated with the SSO/LDAP, since this is sometimes technically complicated or not possible at all).

@@ -18,7 +18,7 @@ Le premier utilisateur créé reçoit aussi automatiquement les alias email `roo
 ## Le portail utilisateur, ou SSO
 
 [center]
-![](image://user_panel.png)
+![](image://user_panel.jpg)
 [/center]
 
 Le portail utilisateur, également appelé SSO pour 'Single Sign On', permet à l'utilisateur de naviguer facilement entre les différentes applications auxquelles il a accès. En particulier, le terme 'Single Sign On' vient du fait que l'utilisateur n'a qu'à se connecter au portail pour être automatiquement connecté à toutes les applications qui nécessitent une authentification (ou du moins celles qui sont intégrées avec le SSO/LDAP, car cela est parfois techniquement compliqué ou pas possible du tout).
