@@ -1,5 +1,5 @@
 ---
-title: Advantage of a VPN for self-hosting
+title: Advantages of a VPN for self-hosting
 template: docs
 taxonomy:
     category: docs
@@ -7,7 +7,7 @@ routes:
   default: '/vpn_advantage'
 ---
 
-Since setting up a server at home is an uncommon practice, most Internet connections provided to individuals are unsuitable for this purpose. A net neutral VPN providing a fixed IPv4 address and IPv6 addresses can help to circumvent some limitations or difficulties.
+Since setting up a server at home is an uncommon practice, most Internet connections provided to individuals are unsuitable for this purpose. A net neutral VPN providing a static IPv4 address and IPv6 addresses can help to circumvent some limitations or difficulties.
 
 ! **Beware**: not all existing VPN providers meet these conditions, make sure the one you choose meets them.
 
@@ -44,7 +44,7 @@ To overcome this, the use of a VPN respecting these points can be an alternative
 
 Finally, if you do not want the content of your server's communications to be spied on by equipment present on your ISP's network, you can use a VPN to encrypt your communications and deport your trust to a VPN provider. Remember, since 2015, the government officially deploys black boxes at the large network operators whose objective is to tap all French digital communications to preserve the scientific, economic and industrial interests of France.
 
-## Disadvantage
+## Disadvantages
 
 ### Cost
 
