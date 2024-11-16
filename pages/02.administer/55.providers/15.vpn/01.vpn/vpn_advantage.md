@@ -9,7 +9,7 @@ routes:
 
 Since setting up a server at home is an uncommon practice, most Internet connections provided to individuals are unsuitable for this purpose. A net neutral VPN providing a static IPv4 address and IPv6 addresses can help to circumvent some limitations or difficulties.
 
-! **Beware**: not all existing VPN providers meet these conditions, make sure the one you choose meets them.
+! **Beware**: not all existing [VPN providers](/providers/vpn) meet these conditions, make sure the one you choose meets them.
 
 ## Advantages
 
