@@ -28,7 +28,7 @@ routes:
     - '/hardware'
 ---
 {% set image_type = 'YunoHost' %}
-{% set arm, at_home, regular, rpi34, rpi012, show_legacy_arm_menu, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, wsl, internetcube = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
+{% set arm, at_home, regular, rpi345, rpi012, show_legacy_arm_menu, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, wsl, internetcube = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
 {% set hardware = uri.param('hardware')  %}
 
 {% if hardware == 'regular' %}
@@ -37,8 +37,8 @@ routes:
   {% set arm, arm_sup, internetcube = true, true, true %}
   {% set image_type = 'Internet Cube' %}
   {% set show_legacy_arm_menu = true %}
-{% elseif hardware == 'rpi34' %}
-  {% set arm, rpi34 = true, true %}
+{% elseif hardware == 'rpi345' %}
+  {% set arm, rpi345 = true, true %}
 {% elseif hardware == 'rpi012' %}
   {% set arm, arm_unsup, rpi012 = true, true, true %}
   {% set hardware = '' %}
@@ -73,8 +73,8 @@ Wähle die Hardware, auf der du YunoHost installieren willst :
 [[figure caption="VirtualBox"]![](image://virtualbox.png?height=75)[/figure]](/install/hardware:virtualbox)
 [/div]
 
-[div class="flex-child hardware{%if rpi012 or rpi34 %} active{% endif %}"]
-[[figure caption="Raspberry Pi"]![](image://raspberrypi.png?height=75)[/figure]](/install/hardware:rpi34)
+[div class="flex-child hardware{%if rpi012 or rpi345 %} active{% endif %}"]
+[[figure caption="Raspberry Pi"]![](image://raspberrypi.png?height=75)[/figure]](/install/hardware:rpi345)
 [/div]
 
 [div class="flex-child hardware{%if arm_sup or (arm_unsup and not rpi012) or internetcube %} active{% endif %}"]
@@ -96,9 +96,9 @@ Wähle die Hardware, auf der du YunoHost installieren willst :
 [/div]
 [div class="flex-container pt-2"]
 
-{% if rpi012 or rpi34 %}
-[div class="flex-child hardware{%if rpi34 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 3 oder 4"]![](image://raspberrypi.png?height=50)[/figure]](/install/hardware:rpi34)
+{% if rpi012 or rpi345 %}
+[div class="flex-child hardware{%if rpi345 %} active{% endif %}"]
+[[figure caption="Raspberry Pi 3, 4 oder 5"]![](image://raspberrypi.png?height=50)[/figure]](/install/hardware:rpi345)
 [/div]
 
 [div class="flex-child hardware{%if rpi012 %} active{% endif %}"]
@@ -147,8 +147,8 @@ Wähle die Hardware, auf der du YunoHost installieren willst :
 {% if regular %}
 
 - Eine x86-kompatible für YunoHost bestimmte (dedizierte) Hardware: Laptop, Nettop, Netbook, Desktop mit 512MB RAM und 16GB Speicherkapazität (Minimum)
-{% elseif rpi34 %}
-- Ein Raspberry Pi 3 oder 4
+{% elseif rpi345 %}
+- Ein Raspberry Pi 3, 4 oder 5
 {% elseif internetcube %}
 - Ein Orange Pi PC+ oder ein Olinuxino Lime 1 oder 2
 - Ein VPN mit einer festen öffentlichen IP Adresse und einer `.cube` Datei

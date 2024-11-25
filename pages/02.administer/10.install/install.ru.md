@@ -28,7 +28,7 @@ routes:
     - '/hardware'
 ---
 {% set image_type = 'YunoHost' %}
-{% set arm, at_home, regular, rpi34, rpi012, show_legacy_arm_menu, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, wsl, internetcube = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
+{% set arm, at_home, regular, rpi345, rpi012, show_legacy_arm_menu, arm_sup, arm_unsup, vps, vps_debian, vps_ynh, virtualbox, wsl, internetcube = false, false, false, false, false, false, false, false, false, false, false, false, false, false %}
 {% set hardware = uri.param('hardware')  %}
 
 {% if hardware == 'regular' %}
@@ -37,8 +37,8 @@ routes:
   {% set arm, arm_sup, internetcube = true, true, true %}
   {% set image_type = 'Internet Cube' %}
   {% set show_legacy_arm_menu = true %}
-{% elseif hardware == 'rpi34' %}
-  {% set arm, rpi34 = true, true %}
+{% elseif hardware == 'rpi345' %}
+  {% set arm, rpi345 = true, true %}
 {% elseif hardware == 'rpi012' %}
   {% set arm, arm_unsup, rpi012 = true, true, true %}
   {% set hardware = '' %}
@@ -73,8 +73,8 @@ routes:
 [[figure caption="VirtualBox"]![](image://virtualbox.png?height=75)[/figure]](/install/hardware:virtualbox)
 [/div]
 
-[div class="flex-child hardware{%if rpi012 or rpi34 %} active{% endif %}"]
-[[figure caption="Raspberry Pi"]![](image://raspberrypi.png?height=75)[/figure]](/install/hardware:rpi34)
+[div class="flex-child hardware{%if rpi012 or rpi345 %} active{% endif %}"]
+[[figure caption="Raspberry Pi"]![](image://raspberrypi.png?height=75)[/figure]](/install/hardware:rpi345)
 [/div]
 
 [div class="flex-child hardware{%if arm_sup or (arm_unsup and not rpi012) or internetcube %} active{% endif %}"]
@@ -96,9 +96,9 @@ routes:
 [/div]
 [div class="flex-container pt-2"]
 
-{% if rpi012 or rpi34 %}
-[div class="flex-child hardware{%if rpi34 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 3 или 4"]![](image://raspberrypi.png?height=50)[/figure]](/install/hardware:rpi34)
+{% if rpi012 or rpi345 %}
+[div class="flex-child hardware{%if rpi345 %} active{% endif %}"]
+[[figure caption="Raspberry Pi 3, 4 или 5"]![](image://raspberrypi.png?height=50)[/figure]](/install/hardware:rpi345)
 [/div]
 
 [div class="flex-child hardware{%if rpi012 %} active{% endif %}"]
@@ -147,8 +147,8 @@ routes:
 {% if regular %}
 
 - x86-совместимое оборудование, предназначенное для YunoHost: ноутбук, неттоп, нетбук, настольный компьютер с 512 МБ оперативной памяти и емкостью 16 ГБ (не менее)
-{% elseif rpi34 %}
-- Raspberry Pi 3 or 4
+{% elseif rpi345 %}
+- Raspberry Pi 3, 4 or 5
 {% elseif internetcube %}
 - Orange Pi PC+ или Olinuxino Lime 1 или 2
 - VPN с выделенным общедоступным IP-адресом и файлом `.cube`
