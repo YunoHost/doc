@@ -48,9 +48,6 @@ Sie können Ihre Freunde, Ihre Familie und Ihr Unternehmen sicher und problemlos
 
 ## Artworks
 
-Schwarz und Weiss YunoHost PNG logo by ToZz (400 × 400 px):
+Schwarz und Weiss YunoHost PNG logo by ToZz (400 × 400 px). Licence: CC-BY-SA 4.0. Logos and other artwork are available in <https://github.com/YunoHost/yunohost-artwork>
 
-![](image://ynh_logo_black_300dpi.png?resize=220)
-![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)
-
-Licence: CC-BY-SA 4.0
+![](image://ynh_logo_black_300dpi.png?resize=220) ![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)

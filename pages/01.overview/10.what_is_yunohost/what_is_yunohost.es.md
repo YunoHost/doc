@@ -48,9 +48,6 @@ Puedes alojar a tus amistades, tu familia y a tu compañía sin problema, pero d
 
 ## Logo
 
-Logo YunoHost en blanco y negro por ToZz (400 × 400 px):
+Logo YunoHost en blanco y negro por ToZz (400 × 400 px). Licence: CC-BY-SA 4.0. Logos and other artwork are available in <https://github.com/YunoHost/yunohost-artwork>
 
-![](image://ynh_logo_black_300dpi.png?resize=220)
-![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)
-
-Licencia: CC-BY-SA 4.0
+![](image://ynh_logo_black_300dpi.png?resize=220) ![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)

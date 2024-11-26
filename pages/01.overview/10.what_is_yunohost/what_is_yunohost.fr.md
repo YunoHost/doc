@@ -48,9 +48,6 @@ Vous pouvez héberger vos amis, votre famille, votre association ou votre entrep
 
 ## Logo
 
-Logo YunoHost noir et blanc réalisé par ToZz (400 × 400 px) :
+Logo YunoHost noir et blanc réalisé par ToZz (400 × 400 px). Licence: CC-BY-SA 4.0. Les logos et autres artwork sont disponibles sur <https://github.com/YunoHost/yunohost-artwork>.
 
-[![Logo au texte noir](image://ynh_logo_black_300dpi.png?resize=220)](image://ynh_logo_black_300dpi.png)
-[![Logo au texte blanc](image://ynh_logo_white_300dpi.png?resize=220)](image://ynh_logo_white_300dpi.png)
-
-Licence: CC-BY-SA 4.0
+[![Logo au texte noir](image://ynh_logo_black_300dpi.png?resize=220)](image://ynh_logo_black_300dpi.png) [![Logo au texte blanc](image://ynh_logo_white_300dpi.png?resize=220)](image://ynh_logo_white_300dpi.png)

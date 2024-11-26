@@ -48,9 +48,6 @@ Potete ospitare i vostri amici, la vostra famiglia e la vostra azienda in tutta 
 
 ## Logo
 
-Il logo PNG di YunoHost in bianco e nero di ToZz (400 × 400 px):
+Il logo PNG di YunoHost in bianco e nero di ToZz (400 × 400 px). Licence: CC-BY-SA 4.0. Logos and other artwork are available in <https://github.com/YunoHost/yunohost-artwork>
 
-![](image://ynh_logo_black_300dpi.png?resize=220)
-![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)
-
-Licenza: CC-BY-SA 4.0
+![](image://ynh_logo_black_300dpi.png?resize=220) ![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)

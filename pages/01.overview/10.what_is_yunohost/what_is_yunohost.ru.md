@@ -48,7 +48,6 @@ YunoHost был создан в Феврале 2012 после чего-то в�
 
 ## Логотипы
 
-Чёрный и Белый логотипы YunoHost от ToZz (400 × 400 px):
+Чёрный и Белый логотипы YunoHost от ToZz (400 × 400 px). Licence: CC-BY-SA 4.0. Logos and other artwork are available in <https://github.com/YunoHost/yunohost-artwork>
 
-![](image://ynh_logo_black_300dpi.png?resize=220)
-![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)
+![](image://ynh_logo_black_300dpi.png?resize=220) ![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)
