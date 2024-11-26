@@ -28,7 +28,7 @@ La [Comunidad](/community) esta disponible para ayudarte : entra en el [chat](/c
 [/center]
 
 [center]
-<a href="/" class="btn btn-lg inline"><i class="fa fa-fw fa-arrow-left"></i> Volver a la página principal</a>
+<a href="https://yunohost.org/" class="btn btn-lg inline"><i class="fa fa-fw fa-arrow-left"></i> Volver a la página principal</a>
 [/center]
 
 !!!! Puedes navegar la documentación usando las flechas izquierda y derecha. Salta directamente a la sección que quieras mediante [fa=bars /] el panel lateral, o usando el campo de [fa=search /] búsqueda. ¡Disfruta!

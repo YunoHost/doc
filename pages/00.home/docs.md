@@ -28,7 +28,7 @@ The [Community](/community) is here for you if you need some help : come [chat](
 [/center]
 
 [center]
-<a href="/" class="btn btn-lg inline"><i class="fa fa-fw fa-arrow-left"></i> Go back to the homepage</a>
+<a href="https://yunohost.org/" class="btn btn-lg inline"><i class="fa fa-fw fa-arrow-left"></i> Go back to the homepage</a>
 [/center]
 
 !!!! To navigate this documentation, you can use your left and right arrow keys. Browse directly to the section you want with the [fa=bars /] side panel, or using the [fa=search /] search box. Enjoy!

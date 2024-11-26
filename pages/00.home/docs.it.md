@@ -26,7 +26,7 @@ La [comunità](/community) è disponibile se avete bisogno di aiuto: potete veni
 <a href="/contribute" style="background: orange; border-color: orange;" class="btn btn-lg btn-error"><i class="fa fa-heart"></i> Contribuire</a>
 
 [center]
-<a href="/" class="btn btn-lg inline"><i class="fa fa-fw fa-arrow-left"></i> Torna alla home del sito</a>
+<a href="https://yunohost.org/" class="btn btn-lg inline"><i class="fa fa-fw fa-arrow-left"></i> Torna alla home del sito</a>
 [/center]
 
 !!!! Per navigare in questa documentazione potete utilizzare i tasti freccia destra e sinistra. Navigate direttamente nella sezione che vi interessa con il [fa=bars /] pannello laterale o utilizzate il [fa=search /] box di ricerca. Enjoy!
