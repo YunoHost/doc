@@ -10,9 +10,11 @@ shortcode-ui:
     tabs: lite
 ---
 
-DNS (Domain Name System) is a system that allows computers from around the world to translate human-readable domain names (such as `yolo.com`) to machine-understandable addresses called IP addresses (such as `11.22.33.44`). For this translation (and other features) to work, you must carefully configure DNS records.
+YunoHost lets you manage and serve multiple domains on a single server. So you can host, for example, a blog and Nextcloud on a first domain `yolo.com`, and a webmail client on a second domain `swag.nohost.me`. Each domain is automatically configured to handle web services and e-mail.
 
-YunoHost allows you to manage and serve several domains on the same server with the same public ip. For instance, you can host a blog and Nextcloud on a first domain `yolo.com`, and a web mail client on a second domain `swag.nohost.me`. Each domain is automatically configured to handle web services and mail services.
+Domains can be managed in the 'Domains' section of the webadmin, or via the `yunohost domain` category of the command line.
+
+Whenever you add a domain, it is assumed that you have purchased (or at least control) the domain, so that you can manage its [DNS configuration](/dns_config). An exception is [domains in `.nohost.me`, `.noho.st` and `ynh.fr`](/dns_nohost_me) which are offered by the YunoHost Project, and can be directly integrated with YunoHost through automatic DynDNS configuration. To limit abuse and costs, an instance can only have one domain offered at a time, but you can add as many sub-domains to it as you like. For example, if you choose `example.ynh.co.uk` you can then add the domains `video.example.ynh.co.uk` or `www.exemple.ynh.fr` or any other sub-domain you may require.
 
 Domains can be managed in the 'Domain' section of the webadmin, or through the `yunohost domain` category of the command line.
 
@@ -39,8 +41,6 @@ To get one of this domain you simply need to choose `I don't have a domaine name
 
 ! To limit resources costs and abuses, each instance may only have one of these domains setup at any given time, however you can add as many sub-domains of it as you wish. For example, if you choose `example.noho.st` you can later add the domains `video.example.noho.st` or `www.example.ynh.noho.st` or any other sub-domain you may need. In this case you need to select `I already have a domain name`.
 
-!! You have to keep a backup archive of the config file of your server if you want to be able to restore your server with this domain name without [asking help of YunoHost team to recover access on it](https://forum.yunohost.org/t/nohost-domain-recovery-suppression-de-domaine-en-nohost-me-noho-st-et-ynh-fr/442).
-
 [More information on this domains](/dns_nohost_me)
 
 [/ui-tab]
@@ -50,7 +50,7 @@ Having your own domain brings several advantages:
 - more control and autonomy
 - simpler domain name (for example directly in .net or .org)
 
-However, you have to pay for it each year (about 15€/year) and you have to do some extra configuration to [setup a correct DNS zone](/dns_config). Our diagnosis tool can trigger alert to help you to do this configuration.
+However, you have to pay for it each year (about 15€/year ... depending on the TLD) and you have to do some extra configuration to [setup a correct DNS zone](/dns_config). Our diagnosis tool can trigger alert to help you to do this configuration.
 
 If you already have your own domain, you can simply click "I already have a domain name…". If you don't, in order to simplify and automate the DNS configuration, we suggest you to buy it from a [registrar whose API is supported by YunoHost](/providers/registrar).
 
@@ -82,16 +82,11 @@ The number may change depending on which server starts first, so do not rely on 
 [/ui-tab]
 [/ui-tabs]
 
-## The main domain
+## DNS configuration
 
-The domain chosen during the initial configuration (post-install) is defined as the main (or default) domain of the server : this is where [the user portal (SSO)](/users) will be available. The main domain can later be changed through the web admin in Domains > (the domain) > Set default, or with the command line `yunohost tools maindomain`.
+DNS (Domain Name System) is a system that enables computers worldwide to translate human-readable domain names (such as `yolo.com`) into machine-readable IP addresses (such as `11.22.33.44`). For this translation (and other features) to work, DNS records need to be carefully configured.
 
-More technically, the main domain is also used as hostname by SMTP protocol to send email (EHLO) and determine which value should be configured in the reverse DNS bind to your public IP. If this 2 values are mis-configured, the diagnosis tool will trigger you an alert.
-
-## Subdomains
-
-! Bear in mind, YunoHost considers domains and their subdomains independently.
-! You **need** to register all the domains and subdomains you want to use.
+YunoHost can generate a recommended DNS configuration for each domain, including the records required for e-mail. The recommended DNS configuration is available in the web administrator via Domains > (the domain) > DNS configuration, or with the command `yunohost domain dns-conf the.domain.tld`.
 
 ## About Non-latin characters
 
