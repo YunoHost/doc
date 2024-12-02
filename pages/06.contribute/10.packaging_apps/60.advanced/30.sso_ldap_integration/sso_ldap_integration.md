@@ -54,7 +54,7 @@ For many application, like django, you will need configure the `YNH_USER` header
 
 And for some app which need the auth basic header, you generally don't need to set the header name as the `Authorization` header name is normalized.
 
-### Sepcific case
+### Specific case
 
 #### App wich reuse the auth basic header to authenticate to an internal service
 
