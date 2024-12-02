@@ -66,7 +66,7 @@ Some app, like Nextcloud or SOGo provide an service like Caldav, Cardav or Webda
 ```bash
 ynh_app_setting_set --key=protect_against_basic_auth_spoofing --value=false
 ```
-This will say to yunohost that for this app we can safely transmit auth basic header from the client to the application.
+This will say to YunoHost that for this app we can safely transmit auth basic header from the client to the application.
 
 ## Configuring SSOwat permissions for the app
 
