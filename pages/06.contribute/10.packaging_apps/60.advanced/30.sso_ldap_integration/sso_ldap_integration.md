@@ -58,7 +58,7 @@ And for some app which need the auth basic header, you generally don't need to s
 
 #### App wich reuse the auth basic header to authenticate to an internal service
 
-Currently you don't need any specific setup on Yunohost side. Since Yunohost provide the header needed, the application should be able to use it correclty. Depending of the application, some configuration could be needed.
+Currently you don't need any specific setup on YunoHost side. Since Yunohost provide the header needed, the application should be able to use it correclty. Depending of the application, some configuration could be needed.
 
 #### Application wich provide an API
 
