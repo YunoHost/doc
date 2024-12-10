@@ -7,7 +7,7 @@ routes:
   default: '/email_configure_client'
 ---
 
-You can fetch and send emails using your YunoHost instance from desktop email clients such as Mozilla Thunderbird or on your smartphone with applications like K-9 Mail.
+You can fetch and send emails using your YunoHost instance from desktop email clients such as Thunderbird or on your smartphone with applications like K-9 Mail.
 
 Modern mail clients should be able to configure themselves automatically. If autoconfiguration fails, you can do it manually following the instructions below. (If the autoconfiguration fails though, it should be understood as a bug in YunoHost, and we would be glad to read your feedback to try to reproduce the issue on our side!)
 
@@ -25,7 +25,7 @@ Here are the element you should enter to manually configure your mail client (`d
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Thunderbird Desktop"]
 
-#### ![](image://thunderbird.png?resize=50&classes=inline) Configure Mozilla Thunderbird (on a desktop computer)
+#### ![](image://thunderbird.png?resize=50&classes=inline) Configure Thunderbird (on a desktop computer)
 
 To manually configure a new account in Thunderbird, add the account information, then select port 993 with SSL/TLS for IMAP, and port 587 with STARTTLS for SMTP. Afterwards select 'Normal Password' for Authentication and click on 'Advanced Config'. You may need to accept the certificate exceptions for fetching mails and after you send your first mail. Don't forget to remove the dot before the domain name.
 
