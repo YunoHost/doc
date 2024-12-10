@@ -313,6 +313,8 @@ autoupdate.version_regex = "^release-v(.*)$"
 
 And the autoupdater will use the matched group (here: `4.1`) as the version.
 
+Note that the autoupdate-related regex must follow [Python's regex implementation](https://docs.python.org/3/howto/regex.html#regex-howto) (for instance a double backslash is to be used as escape character).
+
 You can make sure that your autoupdate strategy is working well immediately (without waiting for the next check on the infra) by doing the following:
 1. Clone this repo: https://github.com/YunoHost/apps_tools
 2. In `apps_tools` open a terminal to run the following commands:
