@@ -7,7 +7,7 @@ routes:
   default: '/email_configure_client'
 ---
 
-Sie können E-Mails über Ihre YunoHost-Instanz von Desktop-E-Mail-Clients wie Mozilla Thunderbird oder auf Ihrem Smartphone mit Anwendungen wie K-9 Mail abrufen und versenden.
+Sie können E-Mails über Ihre YunoHost-Instanz von Desktop-E-Mail-Clients wie Thunderbird Desktop oder auf Ihrem Smartphone mit Anwendungen wie K-9 Mail abrufen und versenden.
 
 Moderne Mail-Clients sollten in der Lage sein, sich automatisch zu konfigurieren. Wenn die Autokonfiguration fehlschlägt, können Sie sie manuell vornehmen, indem Sie die folgenden Anweisungen befolgen. (Wenn die Autokonfiguration fehlschlägt, sollte dies als ein Fehler in YunoHost verstanden werden, und wir würden uns freuen, Ihr Feedback zu lesen, um das Problem auf unserer Seite zu reproduzieren).
 
@@ -23,11 +23,11 @@ Hier sind die Elemente, die Sie eingeben sollten, um Ihren Mail-Client manuell z
 ### Client für Client
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="Mozilla Thunderbird"]
+[ui-tab title="Thunderbird Desktop"]
 
-#### ![](image://thunderbird.png?resize=50&classes=inline) Mozilla Thunderbird konfigurieren (auf einem Desktop-Computer)
+#### ![](image://thunderbird.png?resize=50&classes=inline) Thunderbird Desktop konfigurieren (auf einem Desktop-Computer)
 
-Um ein neues Konto in Thunderbird manuell zu konfigurieren, fügen Sie die Kontoinformationen hinzu und wählen dann Port 993 mit SSL/TLS für IMAP und Port 587 mit STARTTLS für SMTP. Wählen Sie anschließend "Normales Passwort" für die Authentifizierung und klicken Sie auf "Erweiterte Konfiguration". Möglicherweise müssen Sie die Zertifikatsausnahmen für das Abrufen von E-Mails und nach dem Senden Ihrer ersten E-Mail akzeptieren. Vergessen Sie nicht, den Punkt vor dem Domainnamen zu entfernen.
+Um ein neues Konto in Thunderbird Desktop manuell zu konfigurieren, fügen Sie die Kontoinformationen hinzu und wählen dann Port 993 mit SSL/TLS für IMAP und Port 587 mit STARTTLS für SMTP. Wählen Sie anschließend "Normales Passwort" für die Authentifizierung und klicken Sie auf "Erweiterte Konfiguration". Möglicherweise müssen Sie die Zertifikatsausnahmen für das Abrufen von E-Mails und nach dem Senden Ihrer ersten E-Mail akzeptieren. Vergessen Sie nicht, den Punkt vor dem Domainnamen zu entfernen.
 
 ![](image://thunderbird_config_1.png?resize=900)
 ![](image://thunderbird_config_2.png?resize=900)
@@ -35,16 +35,15 @@ Um ein neues Konto in Thunderbird manuell zu konfigurieren, fügen Sie die Konto
 - [Alias-Mails verwalten](https://support.mozilla.org/de/kb/configuring-email-aliases)
 
 [/ui-tab]
-[ui-tab title="K-9 Mail"]
+[ui-tab title="K-9 Mail / Thunderbird Mobile"]
 
-#### ![](image://k9mail.png?resize=50&classes=inline) K-9 Mail konfigurieren (auf Android)
+#### ![](image://k9mail.png?resize=50&classes=inline) K-9 Mail / Thunderbird Mobile konfigurieren (auf Android)
 
-Führen Sie die folgenden Schritte aus. (Wie bei Thunderbird müssen Sie möglicherweise an einigen Stellen Zertifikate akzeptieren)
+Führen Sie die folgenden Schritte aus. (Wie bei Thunderbird Desktop müssen Sie möglicherweise an einigen Stellen Zertifikate akzeptieren)
 
-![](image://k9mail_config_1.png?resize=280&classes=inline)
-![](image://k9mail_config_2.png?resize=280&classes=inline)
-![](image://k9mail_config_3.png?resize=280&classes=inline)
-![](image://k9mail_config_4.png?resize=280&classes=inline)
+![](image://thunderbird_mobile_config_1.png?resize=280&classes=inline)
+![](image://thunderbird_mobile_config_2.png?resize=280&classes=inline)
+![](image:/thunderbird_mobile_config_3.png?resize=280&classes=inline)
 
 [/ui-tab]
 [ui-tab title="Dekko"]

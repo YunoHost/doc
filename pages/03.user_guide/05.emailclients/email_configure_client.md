@@ -7,7 +7,7 @@ routes:
   default: '/email_configure_client'
 ---
 
-You can fetch and send emails using your YunoHost instance from desktop email clients such as Mozilla Thunderbird or on your smartphone with applications like K-9 Mail.
+You can fetch and send emails using your YunoHost instance from desktop email clients such as Thunderbird Desktop or on your smartphone with applications like K-9 Mail.
 
 Modern mail clients should be able to configure themselves automatically. If autoconfiguration fails, you can do it manually following the instructions below. (If the autoconfiguration fails though, it should be understood as a bug in YunoHost, and we would be glad to read your feedback to try to reproduce the issue on our side!)
 
@@ -23,11 +23,11 @@ Here are the element you should enter to manually configure your mail client (`d
 ### Client by client
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="Mozilla Thunderbird"]
+[ui-tab title="Thunderbird Desktop"]
 
-#### ![](image://thunderbird.png?resize=50&classes=inline) Configure Mozilla Thunderbird (on a desktop computer)
+#### ![](image://thunderbird.png?resize=50&classes=inline) Configure Thunderbird Desktop (on a desktop computer)
 
-To manually configure a new account in Thunderbird, add the account information, then select port 993 with SSL/TLS for IMAP, and port 587 with STARTTLS for SMTP. Afterwards select 'Normal Password' for Authentication and click on 'Advanced Config'. You may need to accept the certificate exceptions for fetching mails and after you send your first mail. Don't forget to remove the dot before the domain name.
+To manually configure a new account in Thunderbird Desktop, add the account information, then click on 'Configure manually'. For the incoming server, use IMAP with port 993 and SSL/TLS. For outgoing server, use port 587 with STARTTLS. Select 'Normal Password' for the the authentication method of both. You may need to accept the certificate exceptions for fetching mails and after you send your first mail. Don't forget to remove the dot before the domain name.
 
 ![](image://thunderbird_config_1.png?resize=900)
 ![](image://thunderbird_config_2.png?resize=900)
@@ -35,16 +35,15 @@ To manually configure a new account in Thunderbird, add the account information,
 - [Manage alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
 
 [/ui-tab]
-[ui-tab title="K-9 Mail"]
+[ui-tab title="K-9 Mail / Thunderbird Mobile"]
 
-#### ![](image://k9mail.png?resize=50&classes=inline) Configure K-9 Mail (on Android)
+#### ![](image://k9mail.png?resize=50&classes=inline) Configure K-9 Mail / Thunderbird Mobile (on Android)
 
-Follow the following steps. (As for Thunderbird, you might need to accept certificates at some points)
+Follow the following steps. (As for Thunderbird Desktop, you might need to accept certificates at some points)
 
-![](image://k9mail_config_1.png?resize=280&classes=inline)
-![](image://k9mail_config_2.png?resize=280&classes=inline)
-![](image://k9mail_config_3.png?resize=280&classes=inline)
-![](image://k9mail_config_4.png?resize=280&classes=inline)
+![Enter your email address then click "Next"](image://thunderbird_mobile_config_1.png?resize=280&classes=inline)
+![Enter your domain name in the "Server" field, fill the "Security" and "Port" fields as per the IMAP row in the table above, then enter your password in the "Password" field and click "Next"](image://thunderbird_mobile_config_2.png?resize=280&classes=inline)
+![Again, your domain name in the "Server" field, but fill the "Security" and "Port" fields as per the SMTP row in the table above, then enter your password in the "Password" field and click "Next"](image://thunderbird_mobile_config_3.png?resize=280&classes=inline)
 
 [/ui-tab]
 [ui-tab title="Dekko"]
