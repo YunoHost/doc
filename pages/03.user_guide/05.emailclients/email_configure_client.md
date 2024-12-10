@@ -7,7 +7,7 @@ routes:
   default: '/email_configure_client'
 ---
 
-You can fetch and send emails using your YunoHost instance from desktop email clients such as Thunderbird or on your smartphone with applications like K-9 Mail.
+You can fetch and send emails using your YunoHost instance from desktop email clients such as Thunderbird Desktop or on your smartphone with applications like K-9 Mail.
 
 Modern mail clients should be able to configure themselves automatically. If autoconfiguration fails, you can do it manually following the instructions below. (If the autoconfiguration fails though, it should be understood as a bug in YunoHost, and we would be glad to read your feedback to try to reproduce the issue on our side!)
 
@@ -25,9 +25,9 @@ Here are the element you should enter to manually configure your mail client (`d
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Thunderbird Desktop"]
 
-#### ![](image://thunderbird.png?resize=50&classes=inline) Configure Thunderbird (on a desktop computer)
+#### ![](image://thunderbird.png?resize=50&classes=inline) Configure Thunderbird Desktop (on a desktop computer)
 
-To manually configure a new account in Thunderbird, add the account information, then click on 'Configure manually'. For the incoming server, use IMAP with port 993 and SSL/TLS. For outgoing server, use port 587 with STARTTLS. Select 'Normal Password' for the the authentication method of both. You may need to accept the certificate exceptions for fetching mails and after you send your first mail. Don't forget to remove the dot before the domain name.
+To manually configure a new account in Thunderbird Desktop, add the account information, then click on 'Configure manually'. For the incoming server, use IMAP with port 993 and SSL/TLS. For outgoing server, use port 587 with STARTTLS. Select 'Normal Password' for the the authentication method of both. You may need to accept the certificate exceptions for fetching mails and after you send your first mail. Don't forget to remove the dot before the domain name.
 
 ![](image://thunderbird_config_1.png?resize=900)
 ![](image://thunderbird_config_2.png?resize=900)
