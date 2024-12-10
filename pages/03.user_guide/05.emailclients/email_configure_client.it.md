@@ -7,7 +7,7 @@ routes:
   default: '/email_configure_client'
 ---
 
-Con la vostra istanza YunoHost potete inviare e ricevere email grazie a programmi come Mozilla Thunderbird sul pc o K-9 Mail sul vostro smartphone.
+Con la vostra istanza YunoHost potete inviare e ricevere email grazie a programmi come Thunderbird Desktop sul pc o K-9 Mail sul vostro smartphone.
 
 Normalmente, il vostro client email si configura automaticamente quando aggiungete un account. Nel caso la configurazione automatica non funzionasse, è possibile configurare manualmente il client, seguendo i passaggi successivi. (la mancata configurazione automatica del client, è da considerarsi come un bug di YunoHost, sarebbe gentile da parte vostra farci pervenire una segnalazione, potremmo così cercare di correggere il problema!)
 
@@ -23,11 +23,11 @@ Ecco i valori da immettere per la configurazione manuale del vostro client mail 
 ### Esempio di alcuni client
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="Mozilla Thunderbird"]
+[ui-tab title="Thunderbird Desktop"]
 
-#### ![](image://thunderbird.png?resize=50&classes=inline)  Configurazione di Mozilla Thunderbird (su computer desktop)
+#### ![](image://thunderbird.png?resize=50&classes=inline)  Configurazione di Thunderbird Desktop (su computer desktop)
 
-Per configurare manualmente un nuovo account in Thunderbird, iniziate ad inserire le informazioni iniziali (nome, indirizzo e password), cliccate su Continua e poi su Configurazione Manuale selezionando la porta 993 con SSL/TLS per IMAP e la porta 587 con STARTTLS per SMTP. Selezionate 'Password normale' come autenticazione e poi cliccate su 'Configurazione avanzata'. Può darsi che dobbiate accettare l'eccezione per il certificato prima di riuscire a scaricare l'email e prima di riuscire ad inviare la prima email. Non dimenticate di togliere il punto prima del nome del dominio.
+Per configurare manualmente un nuovo account in Thunderbird Desktop, iniziate ad inserire le informazioni iniziali (nome, indirizzo e password), cliccate su Continua e poi su Configurazione Manuale selezionando la porta 993 con SSL/TLS per IMAP e la porta 587 con STARTTLS per SMTP. Selezionate 'Password normale' come autenticazione e poi cliccate su 'Configurazione avanzata'. Può darsi che dobbiate accettare l'eccezione per il certificato prima di riuscire a scaricare l'email e prima di riuscire ad inviare la prima email. Non dimenticate di togliere il punto prima del nome del dominio.
 
 ![](image://thunderbird_config_1.png?resize=900)
 ![](image://thunderbird_config_2.png?resize=900)
@@ -35,16 +35,15 @@ Per configurare manualmente un nuovo account in Thunderbird, iniziate ad inserir
 - [Gestione alias email](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
 
 [/ui-tab]
-[ui-tab title="K-9 Mail"]
+[ui-tab title="K-9 Mail / Thunderbird Mobile"]
 
-#### ![](image://k9mail.png?resize=50&classes=inline) Configurazione di K-9 Mail (per Android)
+#### ![](image://k9mail.png?resize=50&classes=inline) Configurazione di K-9 Mail / Thunderbird Mobile (per Android)
 
 Seguite le istruzioni seguenti (come per dovrete forse accettare i certificati affinché tutto funzioni correttamente):
 
-![](image://k9mail_config_1.png?resize=280&classes=inline)
-![](image://k9mail_config_2.png?resize=280&classes=inline)
-![](image://k9mail_config_3.png?resize=280&classes=inline)
-![](image://k9mail_config_4.png?resize=280&classes=inline)
+![](image://thunderbird_mobile_config_1.png?resize=280&classes=inline)
+![](image://thunderbird_mobile_config_2.png?resize=280&classes=inline)
+![](image:/thunderbird_mobile_config_3.png?resize=280&classes=inline)
 
 [/ui-tab]
 [ui-tab title="Dekko"]
