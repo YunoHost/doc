@@ -39,7 +39,7 @@ To manually configure a new account in Thunderbird Desktop, add the account info
 
 #### ![](image://k9mail.png?resize=50&classes=inline) Configure K-9 Mail / Thunderbird Mobile (on Android)
 
-Follow the following steps. (As for Thunderbird, you might need to accept certificates at some points)
+Follow the following steps. (As for Thunderbird Desktop, you might need to accept certificates at some points)
 
 ![Enter your email address then click "Next"](image://thunderbird_mobile_config_1.png?resize=280&classes=inline)
 ![Enter your domain name in the "Server" field, fill the "Security" and "Port" fields as per the IMAP row in the table above, then enter your password in the "Password" field and click "Next"](image://thunderbird_mobile_config_2.png?resize=280&classes=inline)
