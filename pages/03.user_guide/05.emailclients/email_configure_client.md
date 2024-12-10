@@ -23,7 +23,7 @@ Here are the element you should enter to manually configure your mail client (`d
 ### Client by client
 
 [ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="Mozilla Thunderbird"]
+[ui-tab title="Thunderbird Desktop"]
 
 #### ![](image://thunderbird.png?resize=50&classes=inline) Configure Mozilla Thunderbird (on a desktop computer)
 
@@ -35,16 +35,15 @@ To manually configure a new account in Thunderbird, add the account information,
 - [Manage alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
 
 [/ui-tab]
-[ui-tab title="K-9 Mail"]
+[ui-tab title="K-9 Mail / Thunderbird Mobile"]
 
-#### ![](image://k9mail.png?resize=50&classes=inline) Configure K-9 Mail (on Android)
+#### ![](image://k9mail.png?resize=50&classes=inline) Configure K-9 Mail / Thunderbird Mobile (on Android)
 
 Follow the following steps. (As for Thunderbird, you might need to accept certificates at some points)
 
-![](image://k9mail_config_1.png?resize=280&classes=inline)
-![](image://k9mail_config_2.png?resize=280&classes=inline)
-![](image://k9mail_config_3.png?resize=280&classes=inline)
-![](image://k9mail_config_4.png?resize=280&classes=inline)
+![Enter your email address then click "Next"](image://thunderbird_mobile_config_1.png?resize=280&classes=inline)
+![Enter your domain name in the "Server" field, fill the "Security" and "Port" fields as per the IMAP row in the table above, then enter your password in the "Password" field and click "Next"](image://thunderbird_mobile_config_2.png?resize=280&classes=inline)
+![Again, your domain name in the "Server" field, but fill the "Security" and "Port" fields as per the SMTP row in the table above, then enter your password in the "Password" field and click "Next"](image://thunderbird_mobile_config_3.png?resize=280&classes=inline)
 
 [/ui-tab]
 [ui-tab title="Dekko"]
