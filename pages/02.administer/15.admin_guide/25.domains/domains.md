@@ -86,7 +86,7 @@ The number may change depending on which server starts first, so do not rely on 
 
 DNS (Domain Name System) is a system that enables computers worldwide to translate human-readable domain names (such as `yolo.com`) into machine-readable IP addresses (such as `11.22.33.44`). For this translation (and other features) to work, DNS records need to be carefully configured.
 
-YunoHost can generate a recommended DNS configuration for each domain, including the records required for e-mail. The recommended DNS configuration is available in the web administrator via Domains > (the domain) > DNS configuration, or with the command `yunohost domain dns-conf the.domain.tld`.
+YunoHost can generate a recommended DNS configuration for each domain, including the records required for e-mail. The recommended DNS configuration is available in the web administrator via Domains > (the domain) > DNS configuration, or with the command ` yunohost domain dns suggest the.domain.tld`.
 
 ## About Non-latin characters
 
