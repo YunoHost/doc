@@ -141,7 +141,7 @@ default = "This is the default content"
 More complex use-case may appear, such as:
 - you want to expose some "dynamic" information in the config panel, such as computed health status, computed disk usage, dynamic list of options, ...
 - password handling, where the data may be written but can't be read
-- the config file format is not supposed (e.g. xml, csv, ...)
+- the config file format is not supported (e.g. xml, csv, ...)
 - ...
 
 You can create specific getter/setters functions inside the `config` script of the app to customize how the information is read/written. The basic structure of the script is:
