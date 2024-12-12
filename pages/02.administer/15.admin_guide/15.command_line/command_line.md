@@ -30,9 +30,9 @@ The command line interface (CLI) is, in the computer world, the original (and mo
 [/ui-tab]
 [ui-tab title="After"]
 
-During the postinstall, you've been asked to choose an administration password. This password becomes the new password for the `root` and `admin` users. Additionally, **the `root` SSH login becomes disabled after the postinstall and you should log in using the `admin` user !**. The only exception is that you may still be able to login using `root` *from the local network - or from a direct console on the server* (this is to cover the event where the LDAP server is broken and the `admin` user is unusable).
+During the postinstall, you've been asked to choose an user and an administration password. This user account allows you to connect to the server through SSH. The password becomes also the new password for the `root` user. Additionally, **the `root` SSH login becomes disabled after the postinstall and you should log in using the user account created during postinstall !**. The only exception is that you may still be able to login using `root` *from the local network - or from a direct console on the server* (this is to cover the event where the LDAP server is broken and the `admin` user is unusable).
 
-!!! If you connected as `admin` and would like to become `root` for convenience (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su` or `sudo -i`.
+!!! If you connected with the administration account and would like to become `root` for convenience (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su` or `sudo -i`.
 [/ui-tab]
 [/ui-tabs]
 

@@ -30,9 +30,9 @@ L'interface en ligne de commande (CLI) est, en informatique, la manière origina
 [/ui-tab]
 [ui-tab title="Après"]
 
-Durant la post-installation, vous avez défini un mot de passe d'administration. C'est ce mot de passe qui devient le nouveau mot de passe pour les utilisateurs `root` et `admin`. De plus, **la connexion en SSH avec l'utilisateur `root` est désactivée et il vous faut utiliser l'utilisateur `admin` !**. L'exception à cette règle est qu'il reste possible de se logger en root *depuis le réseau local - ou depuis une console en direct sur la machine* (ce qui peut être utile dans l'éventualité où le serveur LDAP est inactif et l'utilisateur admin ne fonctionne plus).
+Durant la post-installation, vous avez défini un compte et un mot de passe d'administration. Le compte défini lors de la post-installation vous permet de vous connecter en SSH. De plus, le mot de passe défini dans la post-installation devient le nouveau mot de passe pour l'utilisateur `root`. Enfin, **la connexion en SSH avec l'utilisateur `root` est désactivée et il vous faut utiliser le compte défini durant la post-installation !**. L'exception à cette règle est qu'il reste possible de se logger en root *depuis le réseau local - ou depuis une console en direct sur la machine* (ce qui peut être utile dans l'éventualité où le serveur LDAP est inactif et l'utilisateur admin ne fonctionne plus).
 
-!!! Si vous êtes connecté en tant qu'`admin` et souhaitez devenir `root` pour plus de confort (par exemple, ne pas avoir à taper `sudo` à chaque commande), vous pouvez devenir `root` en tapant `sudo su` ou `sudo -i`.
+!!! Si vous êtes connecté en tant avec le compte d'administration et souhaitez devenir `root` pour plus de confort (par exemple, ne pas avoir à taper `sudo` à chaque commande), vous pouvez devenir `root` en tapant `sudo su` ou `sudo -i`.
 [/ui-tab]
 [/ui-tabs]
 
