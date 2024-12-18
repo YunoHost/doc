@@ -313,6 +313,8 @@ autoupdate.version_regex = "^release-v(.*)$"
 
 And the autoupdater will use the matched group (here: `4.1`) as the version.
 
+The autoupdater script is currently run every day and it can be monitored on the [status page of the infra (Apps Sources Autoupdate)](https://status.yunohost.org/status/yunohost#:~:text=Apps%20Sources%20Autoupdate). Note that if you have set a package with `latest_<gitforge>_commit` stragegy, it will get updated only on Mondays to limit the number of PR to deal with as far as the package maintenance is concerned. 
+
 You can make sure that your autoupdate strategy is working well immediately (without waiting for the next check on the infra) by doing the following:
 1. Clone this repo: https://github.com/YunoHost/apps_tools
 2. In `apps_tools` open a terminal to run the following commands:
