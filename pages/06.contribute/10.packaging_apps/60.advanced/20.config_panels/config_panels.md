@@ -162,10 +162,10 @@ ynh_app_config_run $1
 
 A question's getter is the function used to read the current value/state. Custom getters are defined using bash functions called `getter__QUESTION_SHORT_KEY()` which returns data through stdout.
 
-Stdout can generated using one of those formats:
- 1) either just the raw value,
- 2) or a yaml, containing the value and other metadata and properties (for example the `style` of an `alert`, the list of available `choices` of a `select`, etc.)
-
+Stdout can be generated using one of those formats:
+  1. either just the raw value,
+  2. or a yaml, containing the value and other metadata and properties (for example the `style` of an `alert`, the list of available `choices` of a `select`, etc.)
+Note that in the first case, if the raw value contains any yaml-senstive character (e.g. `#` which is interpreted as a comment in yaml), make sure it is returned between escaped quotes (cf. dedicated example below) as it will be [converted to yaml](https://github.com/YunoHost/issues/issues/2501) by Yunohost core in the end.
 
 [details summary="<i>Basic example with raw stdout: get the timezone on the system</i>" class="helper-card-subtitle text-muted"]
 
@@ -182,6 +182,28 @@ type = "string"
 ```bash
 get__timezone() {
     echo "$(cat /etc/timezone)"
+}
+```
+
+[/details]
+
+[details summary="<i>Basic example with raw stdout containing a yaml-sensitive character: return a HTML color code matched in a file</i>" class="helper-card-subtitle text-muted"]
+
+`config_panel.toml`
+
+```toml
+[main.default_colors.background]
+ask = "Default background color"
+type = "color"
+default = "#cccccc"
+```
+
+`scripts/config`
+
+```bash
+get__background() {
+    current_color=$(grep 'id="backgroundColorPicker' "$install_dir/index.html" | grep -oP 'value="\K[^"]*') # e.g. #2B748B
+    echo "\"$current_color\""
 }
 ```
 
