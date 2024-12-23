@@ -659,7 +659,7 @@ In an internet browser, type **{% if internetcube %}`https://internetcube.local`
 !!! Se non dovesse funzionare potete [cercare il vostro indirizzo IP locale del vostro server](/finding_the_local_ip). L'indirizzo normalmente è del tipo `192.168.x.y` e quindi dovrete scrivere `https://192.168.x.y` nella barra degli indirizzi del vostro browser.
 {% else %}
 È possibile eseguire la configurazione iniziale dall'interfaccia web digitando nella barra degli indirizzi del vostro browser **l'indirizzo IP locale del vostro server**. Normalmente il provider della vostra VPS vi dovrebbe aver comunicato l'indirizzo IP del server.
-{% else %}
+{% endif %}
 
 ! Al momento della prima visita molto probabilmente troverete un allarme di sicurezza relativo al certificato usato dal server. Per adesso il vostro server sta usando un certificato auto-firmato. {% if not wsl %}Potrete installare successivamente un certificato automaticamente riconosciuto dai browser web come descritto nella [documentazione sul certificato](/certificate). {% endif %} Per adesso potete aggiungere un'eccezione di sicurezza per accettare il certificato corrente. (Però, PER FAVORE, non prendete l'abitudine di accettare ciecamente questo tipo di allarme di sicurezza!)
 
