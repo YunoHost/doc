@@ -350,7 +350,7 @@ Questi sono alcuni provider di VPS che supportano nativamente YunHost:
 !!! N.B.: dovete scaricare la versione Bookworm di Armbian.
 {% endif %}
 
-!!! Se volete controllare la validità delle nostre immagini firmate potete [scaricare la nostra chiave pubblica](https://forge.yunohost.org/yunohost.asc).
+!!! Se volete controllare la validità delle nostre immagini firmate potete [scaricare la nostra chiave pubblica](https://forge.yunohost.org/keys/yunohost_bookworm.asc).
 
 {% if internetcube or arm_sup %}
 ! Le immagini attuali sono basate su Debian Buster (YunoHost v4.x) e così dovrete usare il comando da linea di comando apt update in una connessione SSH o direttamente dal terminale per continuare l'aggiornamento.
