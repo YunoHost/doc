@@ -24,7 +24,7 @@ There are [remote borg repository providers](https://www.borgbackup.org/support/
 
 ## [Restic](https://restic.net/) (cf the [Restic app](https://apps.yunohost.org/app/restic))
 
-- backup of data to remote storage (support for different types of storage, inclusing S3 and SFTP)
+- backup of data to remote storage (support for different types of storage: currently SFTP, S3 is planned)
 - deduplication and compression of files, which makes it possible to keep many previous copies without too much storage overhead
 - data encryption, which allows to store data at a third party
 - to define the frequency and type of data to be backed up
