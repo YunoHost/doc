@@ -30,6 +30,7 @@ Here is a non-comprehensive list of internet service providers by country, which
 [ui-tab title="Asia"]
 
 - [South Korea](/isp/country:kor)
+- [Taiwan](/isp/country:twn)
 
 [/ui-tab]
 [ui-tab title="Europe"]
@@ -206,6 +207,14 @@ Most of non business IP provided by ISP are blacklisted.
 | SKT (SK Broadband) | Multiple | Yes | Yes | No | - | Partial |
 
 {% elseif country == 'gbr' %}
+
+### Taiwan
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| CHT (Chunghwa Telecom) | Multiple | Yes | Yes | Yes (Need hidden settings) | No | Partial |
+
+{% elseif country == 'twn' %}
 
 ### UK
 
