@@ -84,13 +84,13 @@ Il cambio di livello di compatibilità non è definitivo e può essere ripristin
 **Sul vostro server**, cambio della policy per NGINX
 
 ```bash
-sudo yunohost settings set security.nginx.compatibility -v modern
+sudo yunohost settings set security.nginx.nginx_compatibility -v modern
 ```
 
 **Sul vostro server**, cambio della policy per SSH
 
 ```bash
-sudo yunohost settings set security.ssh.compatibility -v modern
+sudo yunohost settings set security.ssh.ssh_compatibility -v modern
 ```
 
 ### Disabilitare le API di YunoHost
