@@ -26,7 +26,7 @@ routes:
 <em>ملاحظة : يمكن الإتصال كذلك بغرفة المحادثة باستخدام تطبيق XMPP الخاص بك على العنوان التالي </br>
 support@conference.yunohost.org </br>
 <a target="_blank" href="https://web.libera.chat/#yunohost">kiwiirc</a>  باستخدام   libera.chat على #yunohost IRC أو </br>
-<a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">Riot</a> باستخدام Matrix أو </br>
+<a target="_blank" href="https://matrix.to/#/#yunohost:matrix.org">Matrix أو</a> باستخدام Matrix أو </br>
 </em>
 </center>
 
