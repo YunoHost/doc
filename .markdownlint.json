@@ -59,5 +59,6 @@
     },
     "line-length": false,
     "no-reversed-links": false,
-    "no-missing-space-atx": false
+    "no-missing-space-atx": false,
+    "first-line-heading": false
 }
