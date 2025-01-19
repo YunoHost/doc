@@ -1,5 +1,4 @@
 {
-    "extends": "markdownlint-rules-grav-pages/rules/frontmatter.schema.json",
     "default": true,
     "code-block-style": {
         "style": "fenced"

@@ -1,5 +1,0 @@
----
-title: My Page
----
-
-## Content
