@@ -19,7 +19,7 @@ Si vous vous hébergez sur une carte ARM avec une carte SD ou sur un serveur ave
 
 Ci-dessous, vous trouverez des explications pour parvenir à déplacer vos données sur un disque dur de façon correcte avec un minimum d'impact vis-à-vis du fonctionnement de YunoHost. Cette opération peut se faire lors de l'installation ou, a posteriori, lorsque vos besoins de stockage ont augmenté ou lorsque vous n'avez plus confiance dans votre carte SD.
 
-!!! La méthode présentée ici va d'abord monter l'unique partition du disque dur, puis utiliser un ou des sous-dossiers de ce disque pour créer différents points de montage sur l'arborescence de votre système. Cette méthode est préférable à l'usage de liens symboliques, car ces derniers peuvent perturber certaines applications dont le système de sauvegarde de YunoHost. On pourrait aussi choisir de monter des partitions plutôt que des sous-dossiers, mais il est parfois difficile d'estimer à l'avance l'évolution du poids d'un dossier à l'avance.
+!!! La méthode présentée ici va d'abord monter l'unique partition du disque dur, puis utiliser un ou des sous-dossiers de ce disque pour créer différents points de montage sur l'arborescence de votre système. Cette méthode est préférable à l'usage de liens symboliques, car ces derniers peuvent perturber certaines applications dont le système de sauvegarde de YunoHost. On pourrait aussi choisir de monter des partitions plutôt que des sous-dossiers (voir bas de la page), mais il est parfois difficile d'estimer à l'avance l'évolution du poids d'un dossier à l'avance.
 
 ## [fa=list-alt /] Pré-requis
 
@@ -251,3 +251,13 @@ rm -Rf /var/mail.bkp
 ## ![](image://tada.png?resize=32&classes=inline) Félicitations !
 
 Si vous êtes arrivé jusqu'ici sans dommage, vous avez désormais un serveur qui tire parti d'un ou de plusieurs disques de stockage.
+
+### Variante: monter directement des partitions
+
+Les 3 premières étapes sont toujours valables.
+à la quatrième, après avoir mis vos applications en mode maintenance, vous devrez simplement taper la commande `mount /dev/sdaX /home` (remplacez le X par le numéro de la partition que vous voulez monter). Dans cet exemple, votre dossier `/home` sera déplacé sur votre support externe.
+Il ne vous reste plus qu'à modifier fstab en conséquence en ajoutant la ligne suivante (bien sûr en l'adaptant enfonction de vos choix):
+
+```bash
+PARTUUID=UUID de votre disque /home ext4 defaults 0 2
+```
