@@ -1,0 +1,17 @@
+name: Check for dead links
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Check for dead links
+      run: tests/dead_links.sh

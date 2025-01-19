@@ -1,4 +1,0 @@
-language: bash
-
-script:
-    - bash tests/dead_links.sh
