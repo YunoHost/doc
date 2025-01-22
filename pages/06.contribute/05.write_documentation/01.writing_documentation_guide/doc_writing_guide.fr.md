@@ -18,23 +18,6 @@ Classement des applications disponibles par tags (genre, Git, gestion associatio
 - Lorsqu'un lien renvoie vers une page qui n'est pas dans la langue de la page d'origine, il est d'usage d'ajouter `(en)`(Pour un lien qui pointe vers une page en anglais).
 - renommer les images dans l'ordre suivant : `nomapplication_descriptif.ext`
 
-### Trame générale documentation applications
-
- 1. Logo (dimension 80 pixels de hauteur) + titre de niveau 1.
- 2. Bouton installer en un clic, Niveau d'intégration pour chaque type de processeur.
- 3. Un index en tête de documentation avec renvoi vers l'ensemble des chapitres de la documentation.
- 4. Une présentation générale de l'application et de sa fonction.
- 5. Une partie configuration de l'application.
- 6. Une partie administration de l'application.
- 7. Une partie sur les limitations liées à YunoHost.
- 8. Une partie sur les clients desktop (s'il en existe). Lien vers différentes applications tierces s'il en existe plusieurs (lien possible avec le catalogue d'applications [framalibre.org](https://framalibre.org)) ou un lien vers la page concernant les applications desktop si des applications officielles sont fournies.
- 9. Une partie avec :
-    - le lien vers le site officiel
-    - le lien vers la documentation officielle
-    - les liens vers le package de YunoHost et issues
-
-Trame pour la rédaction des pages de documentations : [ici](/app_writing_guide)
-
 ## Feuille de route
 
 1. Documenter les applications.

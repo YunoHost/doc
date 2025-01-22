@@ -17,23 +17,6 @@ Classification of available applications by tags (genre, Git, association manage
 
 - rename the images in the following order:`description_application.ext`.
 
-### General frame application documentation
-
- 1. Logo (dimension 80 pixels high) + level 1 title.
- 2. One-click install button, Integration level for each type of processor.
- 3. An index at the top of the documentation with cross-references to all the chapters of the documentation.
- 4. A general presentation of the application and its function.
- 5. A configuration part of the application.
- 6. An administration part of the application.
- 7. A part on limitations related to YunoHost.
- 8. A part on desktop clients (if any). A link to different third-party applications if there are several (possible link to the applications catalgue [framalibre.org](https://framalibre.org)) or a link to the page about desktop applications if official applications are provided.
- 9. A part with:
-    - the link to the official site
-    - the link to the documentation
-    - Links to the YunoHost package and issues
-
-Screen for writing documentation pages: [here](/app_writing_guide)
-
 ## Roadmap
 
 1. Document applications.
