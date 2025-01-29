@@ -350,7 +350,7 @@ Here are some VPS providers supporting YunoHost natively :
 !!! N.B.: you should download the image Armbian Bookworm.
 {% endif %}
 
-!!! If you wish to check the validity of our signed images, you can [download our public key](https://forge.yunohost.org/yunohost.asc).
+!!! If you wish to check the validity of our signed images, you can [download our public key](https://forge.yunohost.org/keys/yunohost_bookworm.asc).
 
 {% if internetcube or arm_sup %}
 ! Current images are from Debian Buster (YunoHost v4.x) and will require that you perform a manual apt update command in SSH or CLI to continue updating.
