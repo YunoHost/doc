@@ -34,6 +34,9 @@ The web server, nginx, might need a restart before being fully operational. Plea
 sudo systemctl restart nginx
 ```
 
+## Mailman3 failed in diagnostics
+
+A manual change in a configuration file is needed for Mailman3 to work : https://github.com/YunoHost-Apps/mailman3_ynh/issues/48#issuecomment-2536194377
 
 <!-- ### Can't run the migration due to `libc6-dev : Breaks: libgcc-8-dev issue`
 
