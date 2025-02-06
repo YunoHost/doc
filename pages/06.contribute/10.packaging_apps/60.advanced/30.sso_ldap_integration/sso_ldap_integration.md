@@ -72,7 +72,7 @@ If you need to change this behavior after the application installation, you can 
 ```bash
 sudo yunohost app setting <my_app> protect_against_basic_auth_spoofing -v false
 ```
-Then you must regenerate the ssowat configuration with:
+Then you must regenerate the SSOwat configuration with:
 ```bash
 sudo yunohost app ssowatconf
 ```
