@@ -76,7 +76,7 @@ Then you must regenerate the SSOwat configuration with:
 ```bash
 sudo yunohost app ssowatconf
 ```
-And, finally, you need to reload nginx configuration with:
+And, finally, you need to reload NGINX configuration with:
 ```bash
 sudo systemctl reload nginx.service
 ```
