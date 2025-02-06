@@ -68,6 +68,19 @@ ynh_app_setting_set --key=protect_against_basic_auth_spoofing --value=false
 ```
 This will say to YunoHost that for this app we can safely transmit auth basic header from the client to the application.
 
+If you need to change this behavior after the application installation, you can set the option with:
+```bash
+sudo yunohost app setting <my_app> protect_against_basic_auth_spoofing -v false
+```
+Then you must regenerate the ssowat configuration with:
+```bash
+sudo yunohost app ssowatconf
+```
+And, finally, you need to reload nginx configuration with:
+```bash
+sudo systemctl reload nginx.service
+```
+
 ## Configuring SSOwat permissions for the app
 
 SSOwat permissions are configured using the 'permission' resource in your app's manifest.toml
