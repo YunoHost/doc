@@ -1,0 +1,34 @@
+---
+title: Aggiornamenti
+template: docs
+taxonomy:
+    category: docs
+routes:
+  default: '/update'
+  aliases:
+    - '/upgrade'
+---
+
+## Dalla pagina webadmin
+
+Nella sezione amministrazione, scegliere Aggiorna il sistema. Yunohost aggiornerà il catalogo dei pacchetti di sistema e il catalogo delle applicazioni installate e visualizzerà gli aggiornamenti disponibili.
+
+Premete i pulsanti verdi per avviare gli aggiornamenti.
+
+## Da linea di comando
+
+Ecco alcuni esempi da linea di comando:
+
+```bash
+# Visualizzare gli aggiornamenti disponibili
+yunohost tools update
+
+# Aggiornare il sistema
+yunohost tools upgrade system
+
+# Aggiornare tutte le applicazioni installate
+yunohost tools upgrade apps
+
+# Aggiornare una specifica applicazione
+yunohost app upgrade wordpress
+```
