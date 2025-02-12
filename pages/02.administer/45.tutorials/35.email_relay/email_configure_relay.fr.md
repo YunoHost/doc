@@ -90,7 +90,8 @@ Votre relais SMTP est maintenant configuré !
 
 ! [fa=exclamation-triangle /] Maintenant le relais SMTP est capable de lire et d'utiliser toutes les informations contenues dans les emails que vous envoyez sans votre accord. Mais il ne sera pas capable de lire les informations des emails que vous recevez.
 
-### Relayer tous les emails même ceux des noms de domaines gérés par Yunohost
+#### Relayer tous les emails même ceux des noms de domaines gérés par Yunohost
+
 Si vous avez une grande confiance dans votre relais SMTP, que vous avez un second serveur IMAP que vous souhaitez ou êtes contraint d'utiliser en lieu et place de celui de Yunohost, vous pouvez choisir de relayer tous les emails même ceux des noms de domaines gérés par Yunohost en commentant les deux ligne suivantes dans `/etc/postfix/main.cf` :
 ```
 #virtual_mailbox_domains = ldap:/etc/postfix/ldap-domains.cf
