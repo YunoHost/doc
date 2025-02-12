@@ -1,4 +1,4 @@
-<div dir="auto" class="teasing-part">                                                                      
+<div dir="auto" class="teasing-part">
 
   <div class="home-logo">
     <img src="/images/ynh_logo_white_300dpi.png" width="100"/>
@@ -18,9 +18,9 @@
   </div>
 
   <div dir="auto" class="main-links hidden-xs">
-    <a href="/whatsyunohost">عن واي يونوهوست</a> <span class="colored-bar">•</span> 
-    <a href="https://forum.yunohost.org/c/announcement" target="_blank">آخر المستجدات</a> <span class="colored-bar">•</span> 
-    <a href="/docs">المستندات</a> <span class="colored-bar">•</span> 
+    <a href="/whatsyunohost">عن واي يونوهوست</a> <span class="colored-bar">•</span>
+    <a href="https://forum.yunohost.org/c/announcement" target="_blank">آخر المستجدات</a> <span class="colored-bar">•</span>
+    <a href="/docs">المستندات</a> <span class="colored-bar">•</span>
     <a href="https://donate.yunohost.org/">تبرع/a>
   </div>
 
@@ -107,7 +107,6 @@
   <div dir="auto" class="text-center">
     <h1>تذكروا ! نحن بشر !<br /><small> إن كان عندكم تساؤل أو واجهتكم مشكلة أو ربما يهمُّكُم المشروع فقط، انضموا إلينا عبر غرفة المحادثة الخاصة بنا لتبليغنا التحية بالنقر على الزر أدناه &nbsp;<span class="glyphicon glyphicon-share-alt"></span> </small></h1>
 
-
 <p class="liberapay">
       <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Donation button" title="Liberapay" /></a>
     </p>
@@ -135,7 +134,6 @@
     </p>
     </div>
   </div>
-
 
 </div><!-- boring-part -->
 

@@ -13,31 +13,27 @@ Lorsqu'un dossier d'application devient trop volumineux il peut être intéressa
 
 Partant du principe que [le stockage externe est déjà monté](/external_storage), voici un guide pour déplacer le dossier de l'application wordpress :
 
-
 #### 1. Déplacer le dossier wordpress et tout son contenu vers le stockage externe
 
-```shell
+```bash
 mv /var/www/wordpress /media/externalharddrive/
 ```
-___
 
-#### 2. Créer un lien symbolique 
+#### 2. Créer un lien symbolique
 
 Le programme qui va chercher des informations dans le dossier /var/www/wordpress sera redirigé vers le stockage externe.
 
-```shell
+```bash
 ln -s /media/externalharddrive/wordpress /var/www/wordpress
 ```
-___
 
 #### 3. (peut être) bidouiller les permissions
 
 Après tout ça, il est possible que vous ayez à modifier les permissions de `/media/externalharddrive` pour que `www-data` (ou l'utilisateur de l'app) puisse y accéder. Quelque chose comme :
- 
-```shell
+
+```bash
 chgrp www-data /media/externalharddrive
 chmod g+rx /media/externalharddrive
-
 ```
 
 (À préciser par un expert)

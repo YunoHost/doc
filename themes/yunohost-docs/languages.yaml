@@ -16,7 +16,7 @@ cs:
     THEME_LEARN4_BUILT_WITH_GRAV: Postaveno na <a href="http://getgrav.org">Grav</a> - Moderní správce obsahu pomocí souborů prostých textů
     THEME_LEARN4_SEARCH_DOCUMENTATION: Vyhledat v dokumentaci
 de:
-    THEME_LEARN4_GITHUB_NOTE: "Fehler gefunden? Möchten Sie diese Seite verbessern? Simply click the <strong><i class=\"fa fa-pencil-square\"></i> Edit</strong> link at the top of the page, and then the <strong><i class=\"fa fa-pencil\"></i></strong> icon on Github to suggest changes."
+    THEME_LEARN4_GITHUB_NOTE: "Fehler gefunden? Möchten Sie diese Seite verbessern? Einfach dem <strong><i class=\"fa fa-pencil-square\"></i> Edit</strong> Link am Anfang der Seite folgen und dann auf das <strong><i class=\"fa fa-pencil\"></i></strong> Symbol auf Github clicken um Änderungen vorzuschlagen."
     THEME_LEARN4_CLEAR_HISTORY: Verlauf löschen
     THEME_LEARN4_BUILT_WITH_GRAV: Seite erstellt mit <a href="http://getgrav.org">Grav</a> - The Modern Flat File CMS
     THEME_LEARN4_SEARCH_DOCUMENTATION: Dokumentation durchsuchen

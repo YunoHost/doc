@@ -7,6 +7,6 @@ routes:
     default: /admindoc
 ---
 
-### Administrar
+# Admin guide
 
-# Descubre el auto-hospedaje, cómo instalar y usar tu YunoHost
+### Descubre el auto-hospedaje, cómo instalar y usar tu YunoHost

@@ -27,9 +27,8 @@ visible: false
 
 [/center]
 
-
 [center]
-<a href="/" class="btn btn-lg inline"><i class="fa fa-fw fa-arrow-left"></i> Вернуться на главную</a>
+<a href="https://yunohost.org/" class="btn btn-lg inline"><i class="fa fa-fw fa-arrow-left"></i> Вернуться на главную</a>
 [/center]
 
 !!!! Для навигации по этой документации вы можете использовать клавиши со стрелками влево и вправо. Перейдите непосредственно к нужному разделу с помощью боковой панели [fa=bars /] или с помощью окна поиска [fa=search /]. Наслаждайтесь!

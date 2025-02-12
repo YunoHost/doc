@@ -47,16 +47,16 @@ Una vez la instalación terminada, puedes ir a tu dominio vía tu navegador, en 
 
 Conectate en tu servidor en SSH.
 
-Puedes comprobar el estatus corriente de tu certificado vía 
+Puedes comprobar el estatus corriente de tu certificado vía
 
 ```bash
-yunohost domain cert-status tu.dominio.tld
+yunohost domain cert status tu.dominio.tld
 ```
 
 Instala el certificado Let's Encrypt vía
 
 ```bash
-yunohost domain cert-install tu.dominio.tld
+yunohost domain cert install tu.dominio.tld
 ```
 
 Este comando debe devolverte :
@@ -73,10 +73,10 @@ Una vez que la instalación está terminada, puedes dirigirte a tu dominio vía 
 Si, después de una manipulación incorrecta, un certificado se encuentra en una mala situación (e.g. pérdida del certificado o imposibilidad de leerlo), es posible regenerar un certificado autofirmado :
 
 ```bash
-yunohost domain cert-install tu.dominio.tld --self-signed --force
+yunohost domain cert install tu.dominio.tld --self-signed --force
 ```
 
 Si YunoHost te dice que tu dominio está mal configurado mientras que has verificado tu configuración DNS y que tienes acceso a tu servidor en HTTP desde afuera, puedes intentar :
 
 - de añadir una línea `127.0.0.1 tu.dominio.tld` al archivo `/etc/hosts` en tu servidor ;
-- si la instalación todavía no funciona, desactiva las verificaciones añadiendo `--no-checks` al comando `cert-install`.
+- si la instalación todavía no funciona, desactiva las verificaciones añadiendo `--no-checks` al comando `cert install`.

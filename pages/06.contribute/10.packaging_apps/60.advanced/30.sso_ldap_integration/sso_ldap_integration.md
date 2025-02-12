@@ -10,6 +10,7 @@ routes:
 One powerful aspect of YunoHost is that apps are meant to be integrated with the SSO/LDAP stack, such that users logged in on YunoHost's user portal can be directly logged in each app without having to create an account in each of them nor having to re-log in each app every time.
 
 It should be stressed that there are two different aspects here:
+
 - the LDAP integration, meaning that the user accounts in the app are directly mapped to YunoHost user accounts
 - the SSO integration, meaning that a user logged in on the YunoHost user portal is automatically logged in on the app as well.
 
@@ -36,17 +37,49 @@ TODO/FIXME: moar explanations? What is missing?
 
 ## SSO integration
 
-Internally, SSOwat will on-the-fly inject [HTTP Basic Auth Headers](https://en.wikipedia.org/wiki/Basic_access_authentication) like `Authorization: Basic <base64credentials>`. Some applications may include Basic Auth support out of the box... PHP apps do often require this line in the NGINX config:
+This documentation apply to Yunohost >=12. On Yunohost <12 the header was a bit different but the idea was the same.
 
-```text
-fastcgi_param REMOTE_USER     $remote_user;
+Internally, SSOwat will on-the-fly inject theses different headers:
+
+|Name|Description|Protected over header injection from clients (a client try with a request to override the header and be logged in with a different user)|Header name for app which provide HTTP server and nginx transfert the request|How to get with php App|
+|----|----|----|----|----|
+|The username|the username of the authenticated user|Yes|`YNH_USER`|with `getallheaders()["Ynh-User"]` or `$_SERVER["HTTP_YNH_USER"]`|
+|User email|the email of the authenticated user. Could be usefull for some app wich require an email for the username. Can be also used by some apps which populate all user infomration from the HTTP header instead of LDAP.|Yes|`YNH_USER_EMAIL`|with `getallheaders()["Ynh-User-Email"]` or `$_SERVER["HTTP_YNH_USER_EMAIL"]`|
+|User full name|The full name of the user. The full name of the user. Which is mostly used by some apps which populate all user infomration from the HTTP header instead of LDAP.|Yes|`YNH_USER_FULLNAME`|with `getallheaders()["Ynh-User-Fullname"]` or `$_SERVER["HTTP_YNH_USER_FULLNAME"]`|
+|The [HTTP Basic Auth Headers](https://en.wikipedia.org/wiki/Basic_access_authentication)|Like `Authorization: Basic <base64credentials>`. If used we should be sure that the app check the credential (user and password) before to validate the authentication. It's mainly used by apps which need the credential to authenticate to a internal service. By example most of webmail need the credential to pass the correct credential to the mail server.|No. A client can send a header and will be passed to the application. It's why the application must check the credential to be sure that the passed passord are correct.|`Authorization`|with `getallheaders()["Authorization"]` or `$_SERVER["HTTP_AUTHORIZATION"]`|
+
+### Usage
+
+For many application, like django, you will need configure the `YNH_USER` header, as the header to trust, to authenticate the user. For php apps it will be most of case the header `Ynh-User`.
+
+And for some app which need the auth basic header, you generally don't need to set the header name as the `Authorization` header name is normalized.
+
+### Specific case
+
+#### App wich reuse the auth basic header to authenticate to an internal service
+
+Currently you don't need any specific setup on YunoHost side. Since Yunohost provide the header needed, the application should be able to use it correclty. Depending of the application, some configuration could be needed.
+
+#### Application wich provide an API
+
+Some app, like Nextcloud or SOGo provide an service like Caldav, Cardav or Webdav, the client will need to send the basic authentication and the nginx must transmit this authentication header to the serivice which will validate the authentication. Currently to make it working correctly you need to set a following app settings this way:
+```bash
+ynh_app_setting_set --key=protect_against_basic_auth_spoofing --value=false
 ```
+This will say to YunoHost that for this app we can safely transmit auth basic header from the client to the application.
 
-`$remote_user` being a special variable in NGINX that maps to the user provided in the HTTP Basic Auth headers. The PHP application will then use the `HTTP_REMOTE_USER` info in its code.
-
-
-TODO/FIXME: moar explanations of how this is done for non-PHP apps?
-
+If you need to change this behavior after the application installation, you can set the option with:
+```bash
+sudo yunohost app setting <my_app> protect_against_basic_auth_spoofing -v false
+```
+Then you must regenerate the SSOwat configuration with:
+```bash
+sudo yunohost app ssowatconf
+```
+And, finally, you need to reload NGINX configuration with:
+```bash
+sudo systemctl reload nginx.service
+```
 
 ## Configuring SSOwat permissions for the app
 
@@ -68,7 +101,6 @@ admin.allowed = "admins"   # Initialize the access for the "admins" group ... Yo
 ```
 
 See the page about app resources for the full description of behavior and properties.
-
 
 ## Logging out on the app vs. Logging out of YunoHost
 

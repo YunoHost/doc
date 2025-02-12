@@ -16,7 +16,6 @@ Weitere Informationen zum Selbsthosting, zur Installation deines eigenen YunoHos
 
 Du kannst in den [Anwendungskatalog](/apps) schauen, um die Apps anzusehen, die auf deinem Server installiert werden können (Natürlich geht das auch direkt über deine Administrationsoberfläche!).
 
-
 Wenn du Hilfe benötigst, ist die [Community](/community) für dich da: [Chatte](/chat_rooms) mit uns oder schau in das [Forum](/community/forum)!
 
 [center]
@@ -28,9 +27,8 @@ Wenn du Hilfe benötigst, ist die [Community](/community) für dich da: [Chatte]
 
 [/center]
 
-
 [center]
-<a href="/" class="btn btn-lg inline"><i class="fa fa-fw fa-arrow-left"></i> Zurück zur Homepage</a>
+<a href="https://yunohost.org/" class="btn btn-lg inline"><i class="fa fa-fw fa-arrow-left"></i> Zurück zur Homepage</a>
 [/center]
 
 !!!! Um in diesem Dokument zu navigieren, kannst du die linke und rechte Pfeiltaste verwenden. Navigiere mit dem [fa=bars /] Seitenbereich oder über das [fa=search /] Suchfeld direkt zu dem gewünschten Abschnitt. Viel Spaß!

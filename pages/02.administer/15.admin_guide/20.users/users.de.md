@@ -9,7 +9,7 @@ routes:
 
 ## Benutzer
 
-Benutzer sind Menschen, die Zugang zu Anwendungen und anderen Diensten auf Ihrem Server haben. Der Administrator kann Benutzer über die Webadministration (in der Kategorie Benutzer) oder über die Kommandozeile (siehe `yunohost user --help`) hinzufügen und verwalten. Danach erhalten die Benutzer eine persönliche E-Mail-Adresse (vom Administrator ausgewählt), ein XMPP-Konto und können sich im Benutzerportal anmelden, um auf Anwendungen zuzugreifen, für die sie Berechtigungen haben, und andere Parameter zu konfigurieren.
+Benutzer sind Menschen, die Zugang zu Anwendungen und anderen Diensten auf Ihrem Server haben. Der Administrator kann Benutzer über die Webadministration (in der Kategorie Benutzer) oder über die Kommandozeile (siehe `yunohost user --help`) hinzufügen und verwalten. Danach erhalten die Benutzer eine persönliche E-Mail-Adresse (vom Administrator ausgewählt), und können sich im Benutzerportal anmelden, um auf Anwendungen zuzugreifen, für die sie Berechtigungen haben, und andere Parameter zu konfigurieren.
 
 Der erste Benutzer, der angelegt wird, erhält auch automatisch die E-Mail-Aliase `root@main.domain.tld` und `admin@main.domain.tld`, so dass E-Mails, die an diese Adressen geschickt werden, im Postfach des ersten Benutzers landen.
 
@@ -18,7 +18,7 @@ Der erste Benutzer, der angelegt wird, erhält auch automatisch die E-Mail-Alias
 ## Das Benutzerportal oder SSO
 
 [center]
-![](image://user_panel.png)
+![](image://user_panel.jpg)
 [/center]
 
 Das Benutzerportal, auch SSO für 'Single Sign On' genannt, ermöglicht es den Benutzern, einfach zwischen den verschiedenen Anwendungen, auf die sie Zugriff haben, zu wechseln. Der Begriff "Single Sign On" kommt daher, dass der Benutzer sich nur im Portal anmelden muss, um automatisch bei allen Anwendungen angemeldet zu werden, die eine Authentifizierung erfordern (oder zumindest bei denen, die mit SSO/LDAP integriert sind, da dies manchmal technisch kompliziert oder gar nicht möglich ist).

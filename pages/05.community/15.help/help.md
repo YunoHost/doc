@@ -30,11 +30,11 @@ Please change your username, as we got legions of `ynhuser`s.
 [/center]
 
 !!! **Note:** this room is available via
-!!! - Matrix (`#yunohost:matrix.org` [using Element](https://riot.im/app/#/room/#yunohost:matrix.org?target=_blank))
+!!! - Matrix (`#yunohost:matrix.org` [using any Matrix client](https://matrix.to/#/#yunohost:matrix.org))
 !!! - IRC (`#yunohost` on libera.chat, [using kiwiirc](https://web.libera.chat/#yunohost))
-!!! - XMPP (`support@conference.yunohost.org`)
+!!! - XMPP (`xmpp:support@conference.yunohost.org?join`)
 
-## ... or ask on the forum !
+## ... or ask on the forum!
 
 Please follow the Support section post template. It helps everyone understand the context of your request.
 
@@ -42,7 +42,7 @@ Please follow the Support section post template. It helps everyone understand th
 [[fa=comment /] Go to the forum](https://forum.yunohost.org/?target=_blank&classes=btn,btn-lg,btn-success)
 [/center]
 
-## You've found a bug ?
+## You've found a bug?
 
 !!!! Please report bugs on our bugtrackers or contact the developers
 

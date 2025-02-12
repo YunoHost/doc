@@ -9,23 +9,25 @@ routes:
 
 Diese Seite listet einige Tipps und Richtlinien auf, die jeder YunoHost-Administrator kennen sollte, um sich um seinen Server zu kümmern :).
 
-## YunoHost nicht kaputt machen
+## YunoHost nicht beschädigen 
 
-Das heißt : Entweder ist der Server für den Betreib vorgesehen, oder ein Testserver, auf dem Sie sich erlauben, zu experimentieren.
+Das heißt : Entweder ist der Server für den tatsächlichen Betrieb gedacht, oder es handelt sich um einen Testserver, auf dem Sie experimentieren dürfen.
 
 Ist Ihr Ziel, einen Produktionserver zu benutzen, so beachten Sie folgendes :
+
 - ein Server ist ein empfindliches System : Seien Sie vorsichtig, methodisch und geduldig ;
 - experimentieren und Anpassen einschränken - insbesondere von Konfigurationsdateien ;
-- nicht Dutzende von Anwendungen installieren, bloß zum sehen, wie sie aussehen ;
+- Nicht zahlreiche Anwendungen installieren, nur um zu sehen, wie sie aussehen ;
 - Vorsicht mit inoffiziellen Anwendungen, und verzichten auf solche, die noch "in Bearbeitung" sind, oder einen Level 0 haben ;
 - wenn etwas kaputt geht, überlegen Sie richtig, bevor Sie versuchen, es selbst zu reparieren, wenn Sie nicht wissen, was Sie tun. <small>(z. B., den Admin-Benutzer nicht selbst versuchen neu anzulegen, falls er komischerweise verschwunden ist.)</small>
 
 ## Keep it simple !
 
 YunoHost ist für allgemeine und einfache Anwendungsfälle konzipiert. Wenn Sie von diesen Bedingungen abweichen, wird es schwieriger, und Sie benötigen technisches Wissen, um sie zu erfüllen. Zum Beispiel:
+
 - Versuchen Sie nicht, YunoHost in einem Kontext auszuführen, in dem Sie keine Kontrolle über die Ports 80 und 443 haben (oder überhaupt kein Internet);
 - Versuchen Sie nicht, fünf Server über dieselbe Internetverbindung zu hosten, wenn Sie nicht bereits ein fortgeschrittener Benutzer sind;
-- Reiben Sie sich nicht an dem Versuch auf, NGINX durch Apache zu ersetzen (oder beides gleichzeitig laufen zu lassen);
+- Auf keinen Fall sollten Sie versuchen, NGINX durch Apache zu ersetzen (oder beides gleichzeitig laufen zu lassen);
 - Versuchen Sie nicht, benutzerdefinierte SSL-Zertifikate zu verwenden, wenn Sie diese nicht wirklich benötigen;
 - ...
 
@@ -45,7 +47,7 @@ Wenn Sie Dienste und Daten hosten, die für Ihre Benutzer wichtig sind, ist es w
 
 Als Administrator sollten Sie einen E-Mail-Client so einrichten, dass er E-Mails prüft, die an `root@your.domain.tld` (das muss ein Alias für den ersten von Ihnen hinzugefügten Benutzer sein) gesendet werden, oder sie an eine andere Adresse weiterleitet, die Sie aktiv prüfen. Diese E-Mails können Informationen darüber enthalten, was auf Ihrem Server passiert, wie z. B. periodische automatisierte Aufgaben.
 
-## YunoHost ist freie Software, die von Freiwilligen instand gehalten wird.
+## YunoHost ist freie Software, die von Freiwilligen instand gehalten wird
 
 Schließlich sollten Sie bedenken, dass YunoHost eine freie Software ist, die von Freiwilligen gepflegt wird - und dass das Ziel von YunoHost (die Demokratisierung des Selbst-Hostings) nicht einfach ist! Die Software wird ohne jegliche Garantie zur Verfügung gestellt. Das YunoHost Team tut sein Bestes, um das bestmögliche Erlebnis zu erhalten und zu bieten - dennoch sind die Funktionen, Anwendungen und YunoHost als Ganzes weit davon entfernt, perfekt zu sein, und Sie werden früher oder später auf kleine oder große Probleme stoßen. Wenn das passiert, kommen Sie bitte [in den Chat oder das Forum und bitten um Hilfe, oder melden das Problem](/help) :)!
 

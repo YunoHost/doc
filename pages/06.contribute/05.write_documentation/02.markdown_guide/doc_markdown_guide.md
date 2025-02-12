@@ -14,6 +14,7 @@ Markdown allows text to be formatted using tags, it allows *human* reading of th
 ## The different levels of titles
 
 By writing titles as follows:
+
 ```markdown
 # Level 1 title
 ## Level 2 title
@@ -24,11 +25,17 @@ By writing titles as follows:
 ```
 
 They appear like this:
+
 # Level 1 title
+
 ## Level 2 title
+
 ### Level 3 title
+
 #### Level 4 title
+
 ##### Level 5 title
+
 ###### Level 6 title
 
 ## Formatting in paragraphs
@@ -61,6 +68,7 @@ will be displayed as such:
 [Text to display](https://lelien.tld)
 
 It is the same for the documentation pages, except that the link is internal. The page name is its default route, as defined in its page header:
+
 ```markdown
 [Wiki Page](/write_documentation)
 ```
@@ -71,6 +79,7 @@ The link will return to the page with the correct language setting if the page e
 ! Note that language codes are thus not to be included at the beginning of the links to other documentation pages: `/en`, `/fr`, etc. are superfluous.
 
 ### Create anchors
+
 An anchor allows you to make a link to a specific point in a page, that's how the indexes at the top of the page work. To create an anchor, you need to insert code at the anchor location in the following form :
 
 ```markdown
@@ -98,13 +107,15 @@ To display images, the principle is the same as for links, except that a `!` is 
 ```markdown
 ![YunoHost Logo](image://logo.png)
 ```
+
 ![YunoHost Logo](image://logo.png)
 
-
 It is possible to make a link with an image, for example:
+
 ```markdown
 [![YunoHost Logo](image://logo.png)](/write_documentation)
 ```
+
 [![YunoHost Logo](image://logo.png)](/write_documentation)
 
 The insert of *text to be displayed if the image cannot be loaded* between the brackets in the image link is not mandatory but strongly recommended.
@@ -120,6 +131,7 @@ Quotes are used to highlight a statement made by another person, the wiki itself
 >> And a second quote
 >> with double rafters
 ```
+
 Will be displayed:
 
 >First level quotation text
@@ -174,6 +186,7 @@ You get:
 
 To create an unordered list, use the symbols `*`, `+` or `*`. This will not change the appearance of the marker in the text output. It is the incrementing of the list that will define the visual. For a better reading of the plain text, it may be good to use the different symbols to mark the increment, but it is the three spaces before the sub-list that will indicate the increment.
 As such:
+
 ```markdown
 + List 1
 + List 2
@@ -192,20 +205,24 @@ As such:
 ```
 
 This will read:
-+ List 1
-+ List 2
-+ list 3
-   - List 3a
-   - List 3b
-      * List 3b1
-      * List 3b2
-      * List 3b3
-         + List 1
-         + List 2
-         + list 3
+
+- List 1
+- List 2
+- list 3
+  - List 3a
+  - List 3b
+    - List 3b1
+    - List 3b2
+    - List 3b3
+      - List 1
+      - List 2
+      - list 3
+
 - List 4
-* List 5
-+ list 6
+
+- List 5
+
+- list 6
 
 ## Tables
 
@@ -221,6 +238,7 @@ To create an array, use the vertical bar `|` and dashes `--`. It is mandatory to
 | | And formatted line | | And bold text | | Or *italic* |
 | More lines | |![An image](image://cd.jpg) | [Or a link](/contributordoc) |
 ```
+
 Which would say this:
 
 | **One table** | One column | One second | As many as you want |
@@ -230,7 +248,7 @@ Which would say this:
 
 ## Code block
 
-To display plain text, `blocks of code' can be created using the grave accent `Alt Gr + è` :
+To display plain text, `blocks of code' can be created using the grave accent`Alt Gr + è` :
 
 ```markdown
 Either inline, for example to highlight a key like `Ctrl`.
@@ -244,18 +262,20 @@ Which will give the rendering:
 
 Either inline, for example to highlight a key like `Ctrl`.
 &#39;&#39;&#39;
+
 ```markdown
 or directly as a block.
 The only difference is in the amount of bass accents:
 At least three low pitched accents at the opening and closing of the block and two low pitched accents that frame the piece of text to be formatted in a line.
 ```
+
 &#39;&#39;&#39;
 
 ## Useful links
 
- + The documentation of the original Markdown language: [daringfireball.net/projects/markdown](https://daringfireball.net/projects/markdown/)
- + Markdown Tutorial on [markdowntutorial.com](https://markdowntutorial.com)
+- The documentation of the original Markdown language: [daringfireball.net/projects/markdown](https://daringfireball.net/projects/markdown/)
+- Markdown Tutorial on [markdowntutorial.com](https://markdowntutorial.com)
 
 ## Going further
 
-In a more general way, to understand how a text is formatted just inspect the source document with a note application. This does not mean that the YunoHost wiki will be able to exploit it. There are many other possibilities to use markdown syntax, feel free to add missing features. If you've noticed some missing features and/or have questions, please contact us on [the forum](https://forum.yunohost.org) or by direct message on the IRC room: **#yunohost** on [libera.chat](https://libera.chat).
+In a more general way, to understand how a text is formatted just inspect the source document with a note application. This does not mean that the YunoHost wiki will be able to exploit it. There are many other possibilities to use markdown syntax, feel free to add missing features. If you've noticed some missing features and/or have questions, please contact us on [the forum](https://forum.yunohost.org) or by direct message on the IRC room: **#YunoHost** on [libera.chat](https://libera.chat).

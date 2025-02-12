@@ -13,7 +13,7 @@ This page is meant to guide you in obtaining an API key from OVH in order to con
 
 ! NB. : **DO NOT share your API tokens with anybody!** A malicious attacker obtaining your tokens could take over your domain, and possibly your server!
 
-1. Go to https://eu.api.ovh.com/createToken/
+1. Go to <https://eu.api.ovh.com/createToken/>
 
 2. Fill the form with the required informations as shown below:
 
@@ -23,10 +23,10 @@ This page is meant to guide you in obtaining an API key from OVH in order to con
 - Script description: for example `YunoHost Auto DNS`
 - Validity: `Unlimited`
 - Rights: use the `+` button to add the following lines
-    - `GET` : `/domain/zone/*`
-    - `POST` : `/domain/zone/*`
-    - `PUT` : `/domain/zone/*`
-    - `DELETE` : `/domain/zone/*`
+  - `GET` : `/domain/zone/*`
+  - `POST` : `/domain/zone/*`
+  - `PUT` : `/domain/zone/*`
+  - `DELETE` : `/domain/zone/*`
 
 ![](image://registrar_api_ovh_1.png?resize=800)
 

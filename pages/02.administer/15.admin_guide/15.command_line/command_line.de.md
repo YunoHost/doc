@@ -17,17 +17,20 @@ page-toc:
 
 ## Während der YunoHost Installation
 
-#### Finde deine IP
+### Finde deine IP
 
-Solltest du auf einem VPS installieren, dann hat der VPS Provider die IP-Adresse, die du bei ihm erfragen solltest. 
+Solltest du auf einem VPS installieren, dann hat der VPS Provider die IP-Adresse, die du bei ihm erfragen solltest.
 
 Wenn du Zuhause installierst (z.B. auf einem Raspberry Pi oder OLinuXino), dann musst du herausfinden, welche IP-Adresse dein Router dem System zugewiesen hat. Hierfür existieren mehrere Wege:
+
 - Öffne ein Terminal und tippe `sudo arp-scan --local` ein, um eine Liste der aktiven IP-Adressen deines lokalen Netzwerks anzuzeigen;
 - wenn dir der arp-scan eine zu unübersichtliche Zahl an Adressen anzeigt, versuche mit `nmap -p 22 192.168.**x**.0/24` nur die anzuzeigen, deren SSH-Port 22 offen ist. (passe das **x** deinem Netzwerk an);
 - Prüfe die angezeigten Geräte in der Benutzeroberfläche deines Routers, ob du das Gerät findest;
 - Schließe einen Bildschirm und Tastatur an deinen Server, logge dich ein und tippe `hostname --all-ip-address`.
 
-#### Verbinden
+### Verbinden
+
+! Dieser Abschnitt muss neu geschrieben werden, jetzt gibt es den Benutzer `admin` nicht mehr und er wird durch die Gruppe `admins` ersetzt
 
 Angenommen deine IP Addresse ist `111.222.333.444`, öffne einen Terminal und gib Folgendes ein:
 
@@ -39,11 +42,11 @@ Es wird nach einem Passwort gefragt. Handelt es sich um einen VPS, sollte der VP
 
 ! Seit YunoHost 3.4 kann man sich nach dem Ausführen der Postinstallation nicht mehr als `root` anmelden. **Stattdessen sollte man sich mit dem `admin` Benutzer anmelden!** Für den Fall, dass der LDAP-Server defekt und der `admin` Benutzer nicht verwendbar ist, kann man sich eventuell trotzdem noch mit `root` über das lokale Netzwerk anmelden.
 
-#### Ändere das Passwort!
+### Ändere das Passwort!
 
 Nach dem allerersten Login sollte man das root Passwort ändern. Der Server könnte dazu automatisch auffordern. Falls nicht, ist der Befehl `passwd` zu benutzen. Es ist wichtig, ein einigermaßen starkes Passwort zu wählen. Beachte, dass das root Passwort durch das admin Passwort überschrieben wird, wenn man die Postinstallation durchführt.
 
-#### Auf ans Konfigurieren!
+### Auf ans Konfigurieren!
 
 Wir sind nun bereit, mit der [Postinstallation](/postinstall) zu beginnen.
 
@@ -54,7 +57,7 @@ Wenn du deinen Server zu Hause installiert hast und versuchst, dich von außerha
 Wenn du nur die IP-Adresse deines Servers kennst :
 
 ```bash
-ssh admin@111.222.333.444
+ssh username@111.222.333.444
 ```
 
 Dann musst du dein Administratorkennwort eingeben, das du unter [Post-Installationsschritt](/postinstall) erstellt hast.
@@ -62,13 +65,13 @@ Dann musst du dein Administratorkennwort eingeben, das du unter [Post-Installati
 Wenn du dein DNS konfiguriert hast (oder deine `/etc/hosts` optimiert hast), kannst du einfach deinen Domainnamen verwenden:
 
 ```bash
-ssh admin@your.domain.tld
+ssh username@your.domain.tld
 ```
 
 Wenn du den SSH-Port geändert hast, musst du `-p <Portnummer>` an den Befehl anhängen, z.B. :
 
 ```bash
-ssh -p 2244 admin@your.domain.tld
+ssh -p 2244 username@your.domain.tld
 ```
 
 !!! Wenn du als `admin` verbunden bist und aus Bequemlichkeit `root` werden möchtest (z.B. um nicht vor jedem Befehl `sudo` eintippen zu müssen), kannst du mit dem Befehl `sudo su` `root` werden.
@@ -103,23 +106,22 @@ N.B.: `fail2ban` sperrt deine IP für 10 Minuten, wenn du 5 fehlgeschlagene Logi
 
 Eine ausführlichere Diskussion über Sicherheit & SSH findest du auf der [dedicated page](/security).
 
-
 ## YunoHost Kommandozeile
 
 !!! Ein vollständiges Tutorial über die Kommandozeile würde den Rahmen der YunoHost-Dokumentation sprengen: Lies dazu am besten ein spezielles Tutorial wie [dieses](https://ryanstutorials.net/linuxtutorial/) oder [dieses](http://linuxcommand.org/). Aber sei versichert, dass du kein CLI-Experte sein musst, um es zu benutzen!
 
-Der Befehl "yunohost" kann zur Verwaltung deines Servers verwendet werden und führt verschiedene Aktionen aus, die denen des Webadmin ähneln. Der Befehl muss entweder vom `root`-Benutzer oder vom `admin`-Benutzer durch Voranstellen von `sudo` gestartet werden. (ProTip™ : Du kannst `root` mit dem Befehl `sudo su` als `admin` werden).
+Der Befehl `yunohost` kann zur Verwaltung deines Servers verwendet werden und führt verschiedene Aktionen aus, die denen des Webadmin ähneln. Der Befehl muss entweder vom `root`-Benutzer oder vom `admin`-Benutzer durch Voranstellen von `sudo` gestartet werden. (ProTip™ : Du kannst `root` mit dem Befehl `sudo su` als `admin` werden).
 
-YunoHost-Befehle haben normalerweise diese Art von Struktur: 
+YunoHost-Befehle haben normalerweise diese Art von Struktur:
 
-```bash
+```text
 yunohost app install wordpress --label Webmail
           ^    ^        ^             ^
           |    |        |             |
     category  action  argument      options
 ```
 
-Zögere nicht, nach weiteren Informationen zu einer bestimmten Kategorie oder Aktion zu fragen, indem du die Option `--help` verwendest. Zum Beispiel listen diese Befehle : 
+Zögere nicht, nach weiteren Informationen zu einer bestimmten Kategorie oder Aktion zu fragen, indem du die Option `--help` verwendest. Zum Beispiel listen diese Befehle :
 
 ```bash
 yunohost --help

@@ -19,7 +19,7 @@ routes:
 
 </br>
 </br>
-<em>Nota : questa stanza e disponibile via IRC (#yunohost su libera.chat - <a href="https://web.libera.chat/#yunohost">usando kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, o Matrix <small>(#yunohost:matrix.org - <a target="_blank" href="https://riot.im/app/#/room/#yunohost:matrix.org">usando Element</a>)</small></em>
+<em>Nota : questa stanza e disponibile via IRC (#yunohost su libera.chat - <a href="https://web.libera.chat/#yunohost">usando kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, o Matrix <small>(#yunohost:matrix.org - <a target="_blank" href="https://matrix.to/#/#yunohost:matrix.org">Element using Matrix.to</a>)</small></em>
 </center>
 
 <h3>... o chiedi nel forum !</h3>
@@ -59,4 +59,3 @@ document.getElementById("goDevroom").onclick = function() {
     window.location.href = "https://web.libera.chat/#yunohost-dev";
 }
 </script>
-

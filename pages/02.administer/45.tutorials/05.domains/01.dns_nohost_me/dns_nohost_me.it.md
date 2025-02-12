@@ -8,8 +8,9 @@ routes:
 ---
 
 Al fine di rendere il self-hosting accessibile al maggior numero di persone, il progetto YunoHost fornisce un servizio *gratuito* di nomi di dominio *configurati automaticamente*. Utilizzando questo servizio non dovrete [configurare i record DNS](/dns_config), in generale un'operazione abbastanza complessa.
- 
+
 Potete scegliere tra i (sotto-) domini seguenti:
+
 - `miosito.nohost.me`;
 - `miosito.noho.st`;
 - `miosito.ynh.fr`.
@@ -24,9 +25,9 @@ Il servizio di domini `nohost.me`, `noho.st` e `ynh.fr` permette la creazione di
 
 YunoHost permette l'installazione di applicazioni in sotto domini (ad esempio avere l'applicazione NextCloud accessibile dall'indirizzo `cloud.miosito.org`), e questa funzionalità è permessa anche con i domini `nohost.me`, `noho.st` e `ynh.fr.` e quindi è possibile avere un sotto-sotto dominio com ad esempio `cloud.miosito.nohost.me`. Per creare un sotto dominio in un dominio `nohost.me`, `noho.st` e `ynh.fr` è sufficiente aggiungere quest'ultimo a YunoHost, con la stessa procedura di un qualsiasi altro nome di dominio.
 
-### Aggiungere un dominio nohost.me, noho.st e ynh.fr dopo la post-installazione.
+### Aggiungere un dominio nohost.me, noho.st e ynh.fr dopo la post-installazione
 
-Se avete già effettuato la post-installazione e desiderate aggiungere un dominio del tipo nohost.me, potere utilizzare la sezione "Domini" dall'interfaccia web di amministrazione, 
+Se avete già effettuato la post-installazione e desiderate aggiungere un dominio del tipo nohost.me, potere utilizzare la sezione "Domini" dall'interfaccia web di amministrazione,
 scegliendo l'opzione "Non ho un nome di dominio.."
 
 Potete compiere la stessa operazione da shell con i seguenti comandi.
@@ -50,7 +51,6 @@ yunohost domain main-domain -n miosito.nohost.me
 ### Ripristinare un dominio nohost.me, noho.st, ynh.fr
 
 Se dovete reinstallare il vostro server e volete utilizzare un dominio offerto da YunoHost ma già utilizzato precedentemente, dovete chiedere la reinizializzazione del dominio [nella specifica sezione del forum](https://forum.yunohost.org/t/nohost-domain-recovery/442).
-
 
 ### Cambiare uno dominio nohost.me, noho.st, ynh.fr
 

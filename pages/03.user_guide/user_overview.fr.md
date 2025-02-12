@@ -1,11 +1,10 @@
 ---
 title: Guide de l'utilisateur
-menu: Guide de l'utilisateur
-template: docs
+template: chapter
 taxonomy:
     category: docs
 routes:
   default: '/user_guide'
 ---
 
-!! Cette section est en cours d'élaboration.
+# Guide de l'utilisateur

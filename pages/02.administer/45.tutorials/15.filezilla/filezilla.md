@@ -23,7 +23,7 @@ Install the program and run *Filezilla*.
 
    ![Main screen of Filezilla](image://filezilla_1.png)
 
-2. Click **New Site** and give a name the server you will be using : *Family* here. Fill the settings as on the screenshot (replace the server address with your own), and click on **Connect**. (N.B. : if you want to interact with the [custom webapp](https://github.com/YunoHost-Apps/my_webapp_ynh) files, you should use a different user than `admin`. Refer to the custom webapp documentation.)
+2. Click **New Site** and give a name the server you will be using : *Family* here. Fill the settings as on the screenshot (replace the server address with your own and leave the port field empty unless you changed your SSH port number, in which case use this port number), and click on **Connect**. (N.B. : if you want to interact with the [custom webapp](https://github.com/YunoHost-Apps/my_webapp_ynh) files, you should use a different user than `admin`. Refer to the custom webapp documentation.)
 
    ![Site manager screen](image://filezilla_2.png)
 
@@ -55,12 +55,12 @@ Install the program and run *Filezilla*.
 
 ![Copy backups from YunoHost to local computer](image://filezilla_8.png)
 
-----
+---
 
 Sources
 
-* [Official documentation](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en))
-* [General tutorial about using FileZilla](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)
+- [Official documentation](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en))
+- [General tutorial about using FileZilla](https://www.rc.fas.harvard.edu/resources/documentation/sftp-file-transfer/)
 
 ## Alternatives to Filezilla
 
@@ -68,15 +68,16 @@ Sources
 
 From any recent GNU/Linux, you should be able to use the `file manager` to reach your server.
 
-Nautilus from Gnome3 has features similar to FileZilla, out of the box.
+Nautilus from Gnome3 and Dolphin from KDE have features similar to FileZilla, out of the box.
 
-* <https://help.gnome.org/users/gnome-help/stable/nautilus-connect.html.en>
-* <https://www.techrepublic.com/article/how-to-use-linux-file-manager-to-connect-to-an-sftp-server/>
+- <https://help.gnome.org/users/gnome-help/stable/nautilus-connect.html.en>
+- <https://docs.kde.org/stable5/en/dolphin/dolphin/location-bar.html#location-bar-editable-kioslaves>
+- <https://www.techrepublic.com/article/how-to-use-linux-file-manager-to-connect-to-an-sftp-server/>
 
 ### Windows
 
-* [WinSCP](https://winscp.net/) is also a nice candidate for Windows
+- [WinSCP](https://winscp.net/) is also a nice candidate for Windows
 
 ### macOS
 
-* [Cyberduck](https://cyberduck.io/) is a free software available on macOS
+- [Cyberduck](https://cyberduck.io/) is a free software available on macOS

@@ -11,13 +11,13 @@ routes:
 
 Some changes have taken place which impact the procedures indicated below:
 
-* Metronome group is no longer used directly but ssl-cert.
-* A `/etc/yunohost/certs/DOMAIN.LTD-history/stamp` directory is used to keep each configuration created and a symlink is created.
+- Metronome group is no longer used directly but ssl-cert.
+- A `/etc/yunohost/certs/DOMAIN.LTD-history/stamp` directory is used to keep each configuration created and a symlink is created.
 
 ### Adding a signed certificate by an authority (other than Let's Encrypt)
 
 After the certificate creation with your registration authority, you must have a private key, the key file, and a public certificate, the crt file.
-> Note that the key file is very sensitive, it is strictly personal and must be very well secured.
+! Note that the key file is very sensitive, it is strictly personal and must be very well secured.
 
 These two files should be copied to the server, if they are not already there.
 
@@ -56,27 +56,31 @@ sudo mv *.pem *.cnf yunohost_self_signed/
 
 Depending on the registration authority, intermediate and root certificates must be obtained.
 
-> **StartSSL**
-> ```bash
-> sudo wget http://www.startssl.com/certs/ca.pem -O ae_certs/ca.pem
-> sudo wget http://www.startssl.com/certs/sub.class1.server.ca.pem -O ae_certs/intermediate_ca.pem
->```
+#### StartSSL
 
-> **Gandi**
-> ```bash
-> sudo wget https://www.gandi.net/static/CAs/GandiStandardSSLCA2.pem -O ae_certs/intermediate_ca.pem
->```
+```bash
+sudo wget http://www.startssl.com/certs/ca.pem -O ae_certs/ca.pem
+sudo wget http://www.startssl.com/certs/sub.class1.server.ca.pem -O ae_certs/intermediate_ca.pem
+```
 
-> **RapidSSL**
-> ```bash
-> sudo wget https://knowledge.rapidssl.com/library/VERISIGN/INTERNATIONAL_AFFILIATES/RapidSSL/AR1548/RapidSSLCABundle.txt -O ae_certs/intermediate_ca.pem
->```
+#### Gandi
 
-> **Cacert**
-> ```bash
-> sudo wget http://www.cacert.org/certs/root.crt -O ae_certs/ca.pem
-> sudo wget http://www.cacert.org/certs/class3.crt -O ae_certs/intermediate_ca.pem
->```
+```bash
+sudo wget https://www.gandi.net/static/CAs/GandiStandardSSLCA2.pem -O ae_certs/intermediate_ca.pem
+```
+
+#### RapidSSL
+
+```bash
+sudo wget https://knowledge.rapidssl.com/library/VERISIGN/INTERNATIONAL_AFFILIATES/RapidSSL/AR1548/RapidSSLCABundle.txt -O ae_certs/intermediate_ca.pem
+```
+
+#### Cacert
+
+```bash
+sudo wget http://www.cacert.org/certs/root.crt -O ae_certs/ca.pem
+sudo wget http://www.cacert.org/certs/class3.crt -O ae_certs/intermediate_ca.pem
+```
 
 Intermediate and root certificates must be combined with the obtained certificate to create a unified certificate chain.
 
@@ -98,7 +102,7 @@ cat crt.pem key.pem
 
 The certificates and private key should look like this:
 
-```plaintext
+```text
 -----BEGIN CERTIFICATE-----
 MIICVDCCAb0CAQEwDQYJKoZIhvcNAQEEBQAwdDELMAkGA1UEBhMCRlIxFTATBgNV
 BAgTDENvcnNlIGR1IFN1ZDEQMA4GA1UEBxMHQWphY2NpbzEMMAoGA1UEChMDTExC
@@ -119,7 +123,7 @@ kSK6OOauBHItgiGI7C87u4EJaHDvGIUxHxQQGsUM0SCIIVGK7Lwm+8e9I2X0G2GP
 Finally, secure your certificate files.
 
 ```bash
-sudo chown root:metronome crt.pem key.pem
+sudo chown root:ssl-cert crt.pem key.pem
 sudo chmod 640 crt.pem key.pem
 sudo chown root:root -R ae_certs
 sudo chmod 600 -R ae_certs
@@ -137,5 +141,4 @@ Reload NGINX configuration to take into account the new certificate.
 sudo service nginx reload
 ```
 
-Your certificate is ready. However, you can ensure that it is in place by testing the certificate using the <a href="https://www.geocerts.com/ssl_checker" target="_blank">geocerts</a>. 
-
+Your certificate is ready. However, you can ensure that it is in place by testing the certificate using the [geocerts](https://www.geocerts.com/ssl_checker).

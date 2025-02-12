@@ -1,4 +1,4 @@
-<div class="teasing-part">                                                                      
+<div class="teasing-part">
 
   <div class="home-logo">
     <img src="/images/ynh_logo_white_300dpi.png" width="100"/>
@@ -17,8 +17,8 @@
   </div>
 
   <div class="main-links hidden-xs">
-    <a href="/whatsyunohost">A prepaus</a> <span class="colored-bar">•</span> 
-    <a href="https://forum.yunohost.org/c/announcement" target="_blank">Darrièras novèlas</a> <span class="colored-bar">•</span> 
+    <a href="/whatsyunohost">A prepaus</a> <span class="colored-bar">•</span>
+    <a href="https://forum.yunohost.org/c/announcement" target="_blank">Darrièras novèlas</a> <span class="colored-bar">•</span>
     <a href="/docs">Documentacion</a>
   </div>
 
@@ -108,7 +108,7 @@
 <p class="liberapay">
       <a href="https://liberapay.com/YunoHost" target="_blank"><img src="/images/liberapay_logo.svg" alt="Donation button" title="Liberapay" /></a>
     </p>
-    
+
   </div>
 
   <hr />
@@ -132,7 +132,6 @@
     </p>
     </div>
   </div>
-
 
 </div><!-- boring-part -->
 
@@ -169,4 +168,3 @@
     });
 
 </script>
-

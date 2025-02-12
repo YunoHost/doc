@@ -14,6 +14,7 @@ Questa pagina elenca qualche consiglio e delle linee guida che tutti gli amminis
 In altre parole: il tuo server può essere un "server in produzione" (destinato a funzionare), oppure un server di test che ti permette di sperimentare.
 
 Se il tuo obiettivo è avere un server in produzione:
+
 - sii consapevole che i server sono sistemi fragili: sii prudente, metodico e paziente;
 - limita gli esperimenti e le personalizzazioni (per le istanze il file config)
 - non installare dozzine di installazioni solo per vedere come sono;
@@ -22,7 +23,8 @@ Se il tuo obiettivo è avere un server in produzione:
 
 ## Keep it simple !
 
-YunoHost è progettato per funzionare in casi d'uso generici e semplici. Deviare da queste condizioni renderà le cose più difficili e avrai bisogno di conoscenze tecniche perché tutto funzioni. Per esempio,
+YunoHost è progettato per funzionare in casi d'uso generici e semplici. Deviare da queste condizioni renderà le cose più difficili e avrai bisogno di conoscenze tecniche perché tutto funzioni. Per esempio:
+
 - non provare ad eseguire YunoHost in un contesto dove non puoi controllare le porte 80 e 443 (o senza Internet del tutto);
 - non provare a hostare cinque server dietro la stessa connessione Internet se non sei un utente esperto;
 - non cadere nei capricci dei nerd che vogliono sostituire NGINX con Apache (o farli girare tutti e due insieme);
@@ -45,7 +47,7 @@ Se ospiti dei servizi e dei dati che sono importanti per i tuoi utenti, è impor
 
 Come amministratore, dovrai configurare un client di posta per controllare le mail inviate a `root@your.domani.tld` (che dovrà essere un alias per il primo utente che aggiungerai) o trasferitele ad un altro indirizzo mail che controlli attivamente. Queste mail possono contenere informazioni riguardo quello che avviene sul tuo server, come i compiti periodici automatici.
 
-## YunoHost è software libero, mantenuto da volontari.
+## YunoHost è software libero, mantenuto da volontari
 
 Infine, tieni presente che YunoHost è software libero mantenuto da volontari - e che l'obiettivo di YunoHost (democratizzare il self-hosting) non è semplice! Il software è fornito senza nessuna garanzia. Il team di volontari fa del suo meglio per mantenere e fornire la migliore esperienza possibile - quindi le funzionalità, le applicazioni e YunoHost nel suo insieme sono lontani dall'essere perfetti e presto o tardi incontrerai piccoli o grossi problemi. Quando accadrà potrai [chiedere aiuto sulla chat o nel forum, o segnalare il problema](/help) :)!
 

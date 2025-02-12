@@ -23,7 +23,7 @@ YunoHost hängt ausschließlich von der Beteiligung von Leuten wie dir ab.
 [/center]
 
 [center]
-Sprich mit Freunden, Verwandten und bei der Arbeit über Softwarefreiheit, [Selbsthosting](/selfhosting) und YunoHost. Wir verlassen uns auf Evangelisten der Datenfreiheit wie dich. <3 
+Sprich mit Freunden, Verwandten und bei der Arbeit über Softwarefreiheit, [Selbsthosting](/selfhosting) und YunoHost. Wir verlassen uns auf Evangelisten der Datenfreiheit wie dich. <3
 [/center]
 [/columns]
 
@@ -37,7 +37,7 @@ Sprich mit Freunden, Verwandten und bei der Arbeit über Softwarefreiheit, [Selb
 [/center]
 
 [center]
-Unsere Unterstützung basiert auf Mitwirkenden wie dir. Besuche einfach [den Support-Chatroom](/help) und hilf neuen Benutzern beim Einstieg oder suche dir eine Frage im <a href="https://forum.yunohost.org/" target="_blank">Forum, bei der du helfen kannst.</a>.
+Unsere Unterstützung basiert auf Mitwirkenden wie dir. Besuche einfach [den Support-Chatroom](/help) und hilf neuen Benutzern beim Einstieg oder suche dir eine Frage im [Forum](https://forum.yunohost.org), bei der du helfen kannst.</a>.
 [/center]
 [/columns]
 
@@ -51,7 +51,7 @@ Unsere Unterstützung basiert auf Mitwirkenden wie dir. Besuche einfach [den Sup
 [/center]
 
 [center]
-Verbessere die Dokumentation, indem du [neue Seiten schreibst](/write_documentation) oder vorhandene in deine Sprache übersetzt. 
+Verbessere die Dokumentation, indem du [neue Seiten schreibst](/write_documentation) oder vorhandene in deine Sprache übersetzt.
 [/center]
 [/columns]
 
@@ -66,7 +66,7 @@ Verbessere die Dokumentation, indem du [neue Seiten schreibst](/write_documentat
 
 [center]
 Mach mit, indem du YunoHost-Schnittstellen in deiner Sprache verfügbar machst.
-<a href="https://translate.yunohost.org/" target="_blank">Leg los!</a>!
+[Leg los!](https://translate.yunohost.org/)!
 [/center]
 [/columns]
 
@@ -81,7 +81,7 @@ Mach mit, indem du YunoHost-Schnittstellen in deiner Sprache verfügbar machst.
 
 [center]
 
-Wir brauchen Leute, die YunoHost gründlich testen. Wenn du einen Fehler findest, versuche ihn zu identifizieren und melde ihn in unserem <a href="https://github.com/YunoHost/issues/issues" target="_blank">bug tracker</a>.
+Wir brauchen Leute, die YunoHost gründlich testen. Wenn du einen Fehler findest, versuche ihn zu identifizieren und melde ihn in unserem [bug tracker](https://github.com/YunoHost/issues/issues).
 [/center]
 [/columns]
 
@@ -96,7 +96,7 @@ Wir brauchen Leute, die YunoHost gründlich testen. Wenn du einen Fehler findest
 
 [center]
 Erweitere den Funktionsumfang von YunoHost, indem du neue [Dienste und Webanwendungen in neue Pakete packst](/packaging_apps).
-Schaue dir an, [was schon getan wurde](/apps)! 
+Schaue dir an, [was schon getan wurde](/apps)!
 [/center]
 [/columns]
 
@@ -112,15 +112,16 @@ Schaue dir an, [was schon getan wurde](/apps)!
 [center]
 
 Du kannst dich, unabhängig von deinen Fähigkeiten, an der Entwicklung des YunoHost beteiligen.
-Sysadmins, Webentwickler, Designer und Pythonisten <a href="https://github.com/YunoHost" target="_blank">sind herzlich willkommen</a>!
+Sysadmins, Webentwickler, Designer und Pythonisten [sind herzlich willkommen](https://github.com/YunoHost)!
 <br>
-Erfahre im [Entwickler-Chatroom](xmpp:dev@conference.yunohost.org?join), wie du zum, Projekt [beitragen](/dev) kannst. 
+Erfahre im [Entwickler-Chatroom](xmpp:dev@conference.yunohost.org?join), wie du zum, Projekt [beitragen](/dev) kannst.
 [/center]
 [/columns]
-
 
 ---
 
 [center]
+
 ### Bitte komm auf jeden Fall mit uns in den [Entwickler-Chatroom](/chat_rooms) :-)
+
 [/center]

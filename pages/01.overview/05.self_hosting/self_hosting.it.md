@@ -11,6 +11,8 @@ Il self-hosting permette di avere e di amministrare un tuo server, generalmente 
 
 Il self-hosting implica di avere a disposizione un server. Un server è un computer che è destinato ad essere accessibile in rete in modo permanente, e generalmente non ha un desktop o una tastiera perché è amministrato a distanza. Al contrario di quello che si crede, i server non sono necessariamente delle macchine enormi ed estremamente potenti: oggi una piccola scheda ARM a ~30 € è sufficiente per il self-hosting.
 
+![](image://internet_topologies.png)
+
 Praticare il self-hosting non rende il "tuo internet" più sicuro e non fornisce un sufficiente anonimato. L'obiettivo è generalmente quello dell'autonomia e del controllo dei propri servizi e dei propri dati, che implica anche l'esserne responsabili.
 
 ## Perché fare self-hosting?
@@ -30,5 +32,3 @@ Praticare il self-hosting non rende il "tuo internet" più sicuro e non fornisce
 - **Con grandi server derivano grandi responsabilità.** Gestire un server implica l'essere responsabile dei dati che ospiti: nessuno potrà recuperare i dati al tuo posto se li perderai. YunoHost offre funzionalità di salvataggio che è raccomandato utilizzare per memorizzare le configurazioni e i dati importanti. Devi tenere controllate le raccomandazioni e le novità riguardo la sicurezza perché il tuo server o i tuoi dati non vengano compromessi.
 
 - **La qualità e le performances probabilmente non saranno le stesse dei servizi premium.** YunoHost (e la maggior parte delle applicazioni che sono predisposte) sono programmi liberi e open-source, sviluppati da comunità di volontari. Non c'è la garanzia assoluta che i programmi funzionino in tutte le possibili situazioni. Le performance del tuo server self-hosting sono legate anche al processore, alla memoria RAM e alla connessione internet.
-
-

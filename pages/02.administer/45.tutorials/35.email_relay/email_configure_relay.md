@@ -36,7 +36,7 @@ Once registered, the SMTP relay provider will usually ask you to modify your DNS
 Standard procedure is to add a DKIM key and a SPF key to your DNS records.
 The way to modify these records and the value of the keys you'll have to add depend both on your domain name provider and SMTP relay provider.
 
-Usually, the SMTP relay provider will provide you with a guide on how to modify these records, together with an automatic check tool that will tell you when your DNS have been setup correctly. That step is mandatory to prove "the world" that you, owner of your domain name, did explicitly authorize your SMTP relay provider to send emails on your behalf. 
+Usually, the SMTP relay provider will provide you with a guide on how to modify these records, together with an automatic check tool that will tell you when your DNS have been setup correctly. That step is mandatory to prove "the world" that you, owner of your domain name, did explicitly authorize your SMTP relay provider to send emails on your behalf.
 
 Please note that modifying your DNS records could sometimes take over 24h to take effect, so be patient!
 
@@ -46,22 +46,24 @@ Please note that modifying your DNS records could sometimes take over 24h to tak
 
 It can be configured either from the webadmin or the command line.
 
-[ui-tabs position="top-left" active="0" theme="lite"] 
+[ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the webadmin"]
 Go to your web admin, in `Tools` > `Yunohost Settings` and `Email`.
 Now set all options requests :
+
 - **SMTP relay host** : SMTP server url.
 - **SMTP relay port** : Port use with the distant server.
 - **SMTP relay user** : Login or identification mail server.
 - **SMTP relay password** : Your SMTP relay password.
-- 
+
 ! [fa=exclamation-triangle /] Password with `#` char won't works properly due to postfix limitation (it's possible other chars are forbidden, don't hesitate to report it to update this doc).
 
 ![Option-Relais-Smtp](image://relay_smtp_option_webadmin_en.png?resize=800)
 
-[/ui-tab] 
+[/ui-tab]
 [ui-tab title="From the command line"]
 In order to setup your YunoHost to use your SMTP relay, you will have to configure four things:
+
 1. Your SMTP relay URL (for this tutorial we will use `smtprelay.tld`)
 2. The port on which you access the relay (for this tutorial we will use port 2525 below)
 3. Your SMTP relay username (for this tutorial we will use `username`)
@@ -72,6 +74,7 @@ In order to setup your YunoHost to use your SMTP relay, you will have to configu
 Your SMTP relay will obviously provide you with these four things, that should be available in your control panel or whatsoever.
 
 You can log into your YunoHost server using SSH:
+
 ```bash
 ssh admin@yourdomain.tld
 ```

@@ -15,7 +15,6 @@ YunoHost basiert auf Debian, also auch auf Lizenzen von Debian Bestandteilen.
 
 Die Anwendungen und Applikations-Pakete stehen unter ihren jeweiligen, eigenen Lizenzen.
 
-
 #### Was ist das Ziel von YunoHost ?
 
 Wir glauben, dass Dezentralisierung sowie Kontrolle und Verantwortung über die eigenen Daten und Dienste ein wichtiger Bestandteil einer freien und demokratischen Gesellschaft ist.
@@ -23,7 +22,6 @@ Wir glauben, dass Dezentralisierung sowie Kontrolle und Verantwortung über die 
 Das YunoHost Projekt zielt darauf ab, eigenverantwortliches Hosting zu demokratisieren.
 
 Wir bieten eine Software an, die es für jeden möglichst einfach machen soll, einen eigenen Server zu betreiben und zu verwalten - mit einem minimalen Aufwand an Wissen und Zeit.
-
 
 #### Aber was *macht* YunoHost überhaupt ?
 
@@ -33,22 +31,18 @@ Zum Beispiel, wenn Sie Wordpress installieren möchten, müssten Sie einige Befe
 
 Mehr Informationen finden Sie [hier](/whatsyunohost) !
 
-
 #### Kann ich meine eigene, persönliche Internetseite mit YunoHost betreiben ?
 
 Ja ! Werfen Sie einen Blick auf die [Custom Web app](https://github.com/YunoHost-Apps/my_webapp_ynh).
 Dort erhalten Sie ein "leeres Gefäß" : nach der Installation, laden Sie einfach Ihre Dateien and den jeweiligen Ort hoch (via SSH/SCP or SFTP). PHP und eine SQL Datenbank steht Ihnen bei Bedarf zur Verfügung.
 
-
 #### Kann ich viele voneinander unabhängige Internetseiten mit unterschiedlichen Domain-Namen betreiben ?
 
 Ja ! YunoHost ermöglicht das Anlegen mehrerer Benutzer und Domain-Namen. Manche Apllikationen wie *WordPress* oder *Web App Multi Custom* sind mehrinstanzenfähig und können mehrmals installiert werden.
 
-
 #### Wieso kann ich Anwendungen nicht über die IP-Adresse erreichen ?
 
 Die [SSO](https://github.com/Kloadut/SSOwat/) (Single Sign-on) Technik kann Benutzer nicht richtig authentifizieren, wenn sie auf den Server nur über die IP zugreifen. Wenn Sie keine Möglichkeit haben, die DNS korrekt zu konfigurieren, können Sie als temporäre Notlösung [die `Hosts` Datei (letztes §)](/dns_local_network) auf Ihrem Computer modifizieren.
-
 
 #### Was ist das Geschäftsmodell von YunoHost ?
 
@@ -58,7 +52,6 @@ Vor dem Hintergrund, dass einige Mitwirkende sehr viel zeit in das Projekt inves
 
 Dies könnte durch Spenden oder öffentliche Gelder erricht werden. Einige Mitwirkenden arbeiten an professionellen Angeboten in Zusammenhang mit YunoHost.
 
-
 #### Kann ich für das Projekt spenden ?
 
 Ja, das können Sie ! YunoHost braucht Geld, um die Server und Domain-Namen zu bezahlen. Wir möchten außerdem erreichen, dass die Mitwirkenden weiterhin zum Projekt beitragen können und sich nicht nach anderen Jobs umschauen müssen.
@@ -66,7 +59,6 @@ Ja, das können Sie ! YunoHost braucht Geld, um die Server und Domain-Namen zu b
 Sie können [auf Liberapay spenden](https://liberapay.com/yunohost).
 
 Wenn Ihnen das möglich ist, können Sie auch gerne Sachspenden leisten (ein Teil unserer Infrastruktur ist auf Server von Dritten angewiesen).
-
 
 #### Wie kann ich zum Projekt beitragen ?
 
@@ -76,11 +68,9 @@ Zögern Sie nicht, mit uns über Ihre Ideen zu sprechen!
 
 Es ist ein weit verbreitetes Missverständnis, dass Neulinge bei offenen Softwareprojekten nicht "ausreichend qualifiziert" sind. Wer ist das schon :) ? Was wirklich zählt, ist, [dass Sie mögen, was Sie tun](https://www.youtube.com/watch?v=zIbR5TAz2xQ&t=113s), nett zu anderen Menschen, geduldig und starrköpfig gegenüber Maschinen sind und etwas freie Zeit haben. Abgesehen davon ist einfach alles was Sie tun können, schon mehr als genug!
 
-
 #### Was sind YunoHost organisatorische Grundsätze ?
 
 Das beschreiben wir in [diesem Dokument](/project_organization) :).
-
 
 #### Werdet ihr YunoHosts für [Lieblingsdistribution hier einfügen] portieren ?
 
@@ -94,7 +84,6 @@ Die kurze Antwort: Nein. Wir haben nicht die Energie dafür und es ist eh irrele
 
 <p>Sollte Sie das nicht überzeugen, gibt es ausreichend andere Projekte für andere Distributionen mit einer anderen Philosophie dahinter.</p>
 </div>
-
 
 #### Ich hab gesehen, wie das Packen von Apps funktioniert? Warum erfindet ihr das Rad neu und benutzt nicht [hier bevorzugtes Paketformat einfügen] ?
 

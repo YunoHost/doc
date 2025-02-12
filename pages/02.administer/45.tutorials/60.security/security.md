@@ -11,9 +11,9 @@ YunoHost has been developed to provide the best security without too much compli
 
 Two things remain important to note:
 
-* Installing additional apps can **significantly increase** the number of potential security flaws. Do not hesitate to get information about security flaws **before installing an app**, and try to only install apps which will suit your needs.
+- Installing additional apps can **significantly increase** the number of potential security flaws. Do not hesitate to get information about security flaws **before installing an app**, and try to only install apps which will suit your needs.
 
-* The fact that YunoHost is a well-known and used piece of software increases the chances of an attack. If a flaw is discovered, it could potentially affect all YunoHost instances at once. Keep your system **up-to-date** to remain safe. Updates can be automated by installing the ["Unattended_upgrades" app](https://install-app.yunohost.org/?app=unattended_upgrades).
+- The fact that YunoHost is a well-known and used piece of software increases the chances of an attack. If a flaw is discovered, it could potentially affect all YunoHost instances at once. Keep your system **up-to-date** to remain safe. Updates can be automated by installing the ["Unattended_upgrades" app](https://install-app.yunohost.org/?app=unattended_upgrades).
 
 !!!! If you need advice, do not hesitate to [ask us](/help).
 
@@ -49,19 +49,21 @@ Type your admnistration password and your key will be copied onto your server.
 **On your server**, editing the SSH configuration file to deactivate password authentication is handled by a system setting:
 
 ```bash
-sudo yunohost settings set security.ssh.password_authentication -v no
+sudo yunohost settings set security.ssh.ssh_password_authentication -v no
 ```
+
 ---
 
 ### Modify the SSH port
 
 To prevent SSH connection attempts by robots that scan the internet for any server with SSH enabled, you can change the SSH port.
-This is handled by a system setting, which takes care of updating the SSH and Fail2Ban configuration.
+This is handled by a system setting, which takes care of updating the SSH and Fail2Ban configuration.  
+There's no need to change this port if you've disabled password authentication.
 
 ! If you modify anything in the `/etc/ssh/sshd_config` file, even if only the port, YunoHost will no longer manage this file. For this reason, always use the YunoHost admin tools to make changes to the systems configuration files!
 
 ```bash
-sudo yunohost settings set security.ssh.port -v <new_ssh_port_number>
+sudo yunohost settings set security.ssh.ssh_port -v <new_ssh_port_number>
 ```
 
 **For subsequent SSH connections**, you need to add the `-p` option followed by the SSH port number.
@@ -81,13 +83,15 @@ The default TLS configuration for services tends to offer good compatibility to 
 Changing the compatibility level is not definitive and can be reverted if it doesn't fit with your environment.
 
 **On your server**, change the policy for NGINX
+
 ```bash
-sudo yunohost settings set security.nginx.compatibility -v modern
+sudo yunohost settings set security.nginx.nginx_compatibility -v modern
 ```
 
 **On your server**, change the policy for SSH
+
 ```bash
-sudo yunohost settings set security.ssh.compatibility -v modern
+sudo yunohost settings set security.ssh.ssh_compatibility -v modern
 ```
 
 ### Disable the YunoHost API

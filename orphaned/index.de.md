@@ -1,4 +1,4 @@
-<div class="teasing-part">                                                                      
+<div class="teasing-part">
 
   <div class="home-logo">
     <img src="/images/ynh_logo_white_300dpi.png" width="100"/>
@@ -22,9 +22,9 @@
   </div>
 
   <div class="main-links hidden-xs">
-    <a href="/whatsyunohost">Über YunoHost</a> <span class="colored-bar">•</span> 
-    <a href="https://forum.yunohost.org/c/announcement" target="_blank">Letzte Nachrichten</a> <span class="colored-bar">•</span> 
-    <a href="/docs">Dokumentation</a> <span class="colored-bar">•</span> 
+    <a href="/whatsyunohost">Über YunoHost</a> <span class="colored-bar">•</span>
+    <a href="https://forum.yunohost.org/c/announcement" target="_blank">Letzte Nachrichten</a> <span class="colored-bar">•</span>
+    <a href="/docs">Dokumentation</a> <span class="colored-bar">•</span>
     <a href="https://donate.yunohost.org/">Spenden</a>
   </div>
   </div><!-- teasing-part -->
@@ -135,7 +135,6 @@ Self-Hosting für alle ermöglicht.</small></h1>
     </div>
   </div>
 
-
 </div><!-- boring-part -->
 
 <script type="text/javascript">
@@ -171,4 +170,3 @@ Self-Hosting für alle ermöglicht.</small></h1>
     });
 
 </script>
-

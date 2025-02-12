@@ -41,7 +41,7 @@ Your virtual server is now installed. Before starting to use it, we'll see how t
 VirtualBox becomes even more interesting with its snapshotting feature, which allow to store the virtualized machine state and restore it quickly.
 We'll also see how to use multiple snapshot branches to work on different apps on the same machine.
 
-#### Now, let's create a first snapshot
+### Now, let's create a first snapshot
 
 Before starting to play with the virtual machine, now is a good time to take a first snapshot, so that we don't have to redo the full install process every time.
 First, stop the virtual machine.
@@ -60,7 +60,7 @@ In this example, after having validated our particular package removal works fin
 Once the package will be fully functional, it will just be a matter of deleting the snaphots associated with this package work to get the virtual machine back to its initial state.
 For our next test, we will then be back to a freshly installed YunoHost serveur, without any trace of package installation.
 
-#### Using multiple snapshot branches
+### Using multiple snapshot branches
 
 In addition to successive snapshots, it is also possible to create a new machine state and additional snapshots from an older machine snapshot/state.
 
@@ -82,6 +82,7 @@ Virtual machine connection is similar to any YunoHost server connection, that is
 ```bash
 ssh admin@my.domain
 ```
+
 Or, if the domain has not been added to the `hosts` file, via its IP address.
 
 ```bash

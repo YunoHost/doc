@@ -18,8 +18,8 @@ By default, if configurations tracked by YunoHost are changed, they will be back
 
 You can create a backup hook and a restore hook to add data to backup. Here is an example:
 
+`/etc/yunohost/hooks.d/backup/99-conf_custom`
 
-/etc/yunohost/hooks.d/backup/99-conf_custom
 ```bash
 #!/bin/bash
 
@@ -59,7 +59,8 @@ ynh_backup "/etc/yunohost/hooks.d/backup/99-conf_custom"
 ynh_backup "/etc/yunohost/hooks.d/restore/99-conf_custom"
 ```
 
-/etc/yunohost/hooks.d/restore/99-conf_custom
+`/etc/yunohost/hooks.d/restore/99-conf_custom`
+
 ```bash
 #!/bin/bash
 
@@ -105,12 +106,12 @@ ynh_restore_file "/etc/yunohost/hooks.d/backup/99-conf_custom"
 ynh_restore_file "/etc/yunohost/hooks.d/restore/99-conf_custom"
 ```
 
-
-
 ## Exclude files
+
 There is no mechanism to exclude specific files from a YunoHost backup, other than the 2 options presented below:
 
 ### Avoid backing up certain `/home` folders
+
 If needed, you can specify that certain user `home` folders not be backed up by the `yunohost backup` command, by creating an empty file named `.nobackup` inside.
 
 Caution: this setup only works with **first-level subfolders of `/home`**, such as `/home/user1` or `/home/yunohost.multimedia`. It does not work for other levels of subfolders, like `/home/user1/bigfolder/`.
@@ -120,8 +121,8 @@ Caution: this setup only works with **first-level subfolders of `/home`**, such 
 Some apps like Nextcloud are potentially attached to large amounts of data. It is possible to not backup them by default. In this case, the app is said to "backup only the core" (of the app).  
 During an update, apps containing a large amount of data usually make a backup without these data.
 
+To temporarily disable backup of large data, for applications that implement this feature, you can set the `BACKUP_CORE_ONLY` variable. To do this, the variable must be set before the backup command:
 
-To temporarily disable backup of large data, for applications that implement this feature, you can set the `BACKUP_CORE_ONLY` variable. To do this, the variable must be set before the backup command: 
 ```bash
 BACKUP_CORE_ONLY=1 yunohost backup create --apps nextcloud
 ```
@@ -129,7 +130,7 @@ BACKUP_CORE_ONLY=1 yunohost backup create --apps nextcloud
 Be careful: you will have to backup Nextcloud users' data yourself.
 
 If you want this behavior to be permanent:
+
 ```bash
 yunohost app setting nextcloud do_not_backup_data -v 1
 ```
-

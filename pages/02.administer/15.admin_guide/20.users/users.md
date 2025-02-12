@@ -11,7 +11,7 @@ routes:
 
 ## Users
 
-Users are human being who have access to applications and other services on your server. The administrator can add and manage users through the web administration (in the User category) or through the command line (see `yunohost user --help`). After that, users obtain a personal email address (chosen by the admin), an XMPP account, and can log in the user portal to access applications they have permissions over and configure other parameters.
+Users are human being who have access to applications and other services on your server. The administrator can add and manage users through the web administration (in the User category) or through the command line (see `yunohost user --help`). After that, users obtain a personal email address (chosen by the admin), and can log in the user portal to access applications they have permissions over and configure other parameters.
 
 The first user created also automatically gets email aliases `root@main.domain.tld` and `admin@main.domain.tld`, such that mail sent to these addresses will end up in the first user's mailbox.
 
@@ -20,7 +20,7 @@ The first user created also automatically gets email aliases `root@main.domain.t
 ## The user portal, or SSO
 
 [center]
-![](image://user_panel.png)
+![](image://user_panel.jpg)
 [/center]
 
 The user portal, also called the SSO for 'Single Sign On' allows user to browse easily between the different apps they have access to. In particular, the term 'Single Sign On' comes from the fact that user only need to log in the portal to automatically be logged to all apps that require authentication (or at least those who are integrated with the SSO/LDAP, since this is sometimes technically complicated or not possible at all).
@@ -33,7 +33,7 @@ In the portal, users can also click on the avatar in the top-left to configure s
 
 Only the administrator can create new users. From the webadmin, open the `Users` menu and click on the `+ New user` main button. Fill in all the whole form.
 
-Users are created with an associated email address (and XMPP account) with the format `username@domain.tld`. Additional email aliases and email forwards can later be added by the admin and the user.
+Users are created with an associated email address with the format `username@domain.tld`. Additional email aliases and email forwards can later be added by the admin and the user.
 
 The password should be at least 8 characters - though it is good practice to use longer password (i.e. a passphrase) and/or to use various kind of characters (uppercase, lowercase, digits and special characters).
 

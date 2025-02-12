@@ -11,7 +11,7 @@ routes:
 
 Una delle caratteristiche principali di YunoHost è la possibilità di installare facilmente applicazioni che saranno immediatamente utilizzabili. Ad esempio possiamo installare un blog, un "cloud" (per salvare e sincronizzare file), un sito web, un lettore RSS...
 
-Le applicazioni possono essere installate e gestite tramite l'interfaccia di amministrazione web nella sezione `[fa=cubes /] Applicazioni`, oppure utilizzando i comandi della categoria `yunohost app`. 
+Le applicazioni possono essere installate e gestite tramite l'interfaccia di amministrazione web nella sezione `[fa=cubes /] Applicazioni`, oppure utilizzando i comandi della categoria `yunohost app`.
 
 [center]
 ![Apps list](image://apps_list.png?resize=512&classes=caption "Lista di applicazioni nella pagina webadmin con il relativo bottone Installa.")
@@ -20,7 +20,6 @@ Le applicazioni possono essere installate e gestite tramite l'interfaccia di amm
 È possibile consultare il catalogo delle applicazioni nella pagina di amministrazione cliccando sul bottone `[fa=plus /] Installa` oppure dalla documentazione relativa all'applicazione stessa.
 
 <center><a href="/apps" style="background: orange; border-color: orange;" class="btn btn-lg btn-error"><i class="fa fa-cubes"></i>Lista applicazioni</a></center>
-
 
 ! Siate ragionevoli sul numero di programmi che installate. Ogni programma aumenta le possibilità
 di errori e attacchi dall'esterno. È preferibile, se desiderate effettuare dei test, utilizzare una [macchina virtuale](https://yunohost.org/en/install/hardware:virtualbox) con un'altra istanza.
@@ -48,7 +47,7 @@ Fra le domande specifiche i form normalmente chiedono di scegliere un dominio ed
 
 In un'installazione normale di YunoHost è normale avere un dominio singolo (o al limite un piccolo numero di domini) per tutte le applicazioni installate si "sotto-directory" con una configurazione di questo tipo:
 
-```bash
+```text
 yolo.com
      ├── /blog  : Wordpress (a blog)
      ├── /cloud : Nextcloud (a cloud service)
@@ -65,13 +64,12 @@ Questo può sembrare più facile per gli utenti finali ma è considerato più co
 
 Se le applicazioni dell'esempio precedente fossero state installate su un dominio separato questo potrebbe essere il risultato:
 
-```bash
+```text
 blog.yolo.com  : Wordpress (a blog)
 cloud.yolo.com : Nextcloud (a cloud service)
 rss.yolo.com   : TinyTiny RSS (a RSS reader)
 wiki.yolo.com  : DokuWiki (a wiki)
 ```
-
 
 !!! Molte applicazioni integrano una caratteristica che permette di cambiare l'URL dell'applicazione. La scelta fra sotto-directory e sotto-dominio in alcuni casi può essere cambiata con una semplice modifica nell'interfaccia di amministrazione.
 
@@ -113,8 +111,8 @@ Da questa pagina è anche possibile eliminare l'applicazione.
 
 Dalla riga di comando è possibile cambiare:
 
-* l'etichetta dell'applicazione nel sistema SSO: `yunohost app change-label <app> <new_label>`
-* l'url di connessione: `yunohost app change-url <app> [-d <DOMAIN>] [-p <PATH>]`
+- l'etichetta dell'applicazione nel sistema SSO: `yunohost app change-label <app> <new_label>`
+- l'url di connessione: `yunohost app change-url <app> [-d <DOMAIN>] [-p <PATH>]`
 
 È anche possibile eliminare l'applicazione: `yunohost app remove <app>`
 
@@ -141,7 +139,7 @@ Alcune applicazioni includono un *pannello di configurazione* che contiene azion
 
 Dalla riga di comando è possibile elencare le impostazione del pannello di configurazione con il comando `yunohost app config get <app>`
 
-```
+```bash
 $ yunohost app config get my_webapp
 main.php_fpm_config.phpversion:
   ask: PHP version
@@ -165,6 +163,7 @@ La parola `<key>` è il nome dell'impostazione come nell'esempio sopra `main.sft
 
 Dalla versione di YunoHost v11.1.21.4 è possibile eseguire un comando con il binario dell'applicazione o comandi PHP con il comando `yunohost app shell <app>`.
 In questo modo:
+
 - verrà avviata una shell Bash come l'utente di sistema dell'applicazione
 - verrà aperta la directory di lavoro dell'applicazione (ad esempio `/var/www/<app>`)
 - carico di tutte le variabili d'ambiente come da file service dell'applicazione se queste esistono
@@ -172,7 +171,7 @@ In questo modo:
 
 ## Packaging delle applicazioni
 
-Le applicazioni devono essere preparate (packaging) manualmente dai programmatori (packagers)/manutentori. Le applicazioni possono essere integrate con YunoHost perché supportino gli upgrade, i backup e restore e l'integrazione con LDAP/SSO fra le altre cose. 
+Le applicazioni devono essere preparate (packaging) manualmente dai programmatori (packagers)/manutentori. Le applicazioni possono essere integrate con YunoHost perché supportino gli upgrade, i backup e restore e l'integrazione con LDAP/SSO fra le altre cose.
 
 ## Integrazione e qualità
 
@@ -180,6 +179,4 @@ Test automatici sono regolarmente eseguiti per controllare l'integrazione e la q
 
 Alcuni risultati sono disponibili su [questa pagina](https://dash.yunohost.org/appci/branch/stable).
 
-
 Solo i programmi con una qualità sufficiente sono inseriti nell'elenco delle applicazioni installabili. Nel caso i test dovessero segnalare una diminuzione dell'indice di qualità, gli aggiornamenti saranno sospesi e le nuove installazioni non saranno possibili fino alla soluzione del problema che ha causato l'abbassamento dell'indice.
-

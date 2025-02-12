@@ -22,13 +22,14 @@ YunoHost 3.8 vous permettra de vérifier si les ports sont correctement exposés
 
 ### 2. Accéder à l'interface d'administration de votre box/routeur
 
-L'interface d'administration est généralement accessible via http://192.168.0.1 ou http://192.168.1.1.
+L'interface d'administration est généralement accessible via <http://192.168.0.1> ou <http://192.168.1.1>.
 Ensuite, il vous faudra peut-être vous authentifier avec les identifiants
 fournis par votre fournisseur d'accès à Internet (FAI).
 
 ### 3. Trouver l'IP locale de votre serveur
 
 Identifiez quelle est l'IP locale de votre serveur, soit :
+
 - depuis l'interface de votre routeur/box, qui liste peut-être les dispositifs
   connectés;
 - depuis la webadmin de YunoHost, dans 'Diagnostic', section 'Connectivité Internet', cliquer sur 'Détails' à côté de la ligne sur IPv4.
@@ -44,10 +45,10 @@ nom diffère suivant le type / marque de la box...
 
 Il vous faut ensuite rediriger chacun des ports listés ci-dessous vers l'IP locale de votre serveur pour que les différents services de YunoHost fonctionnent. Pour chacun d'eux, une redirection 'TCP' est nécessaire. Certaines interfaces font référence à un port « externe » et un port « interne » : dans notre cas il s'agit du même.
 
-* Web: 80 <small>(HTTP)</small>, 443 <small>(HTTPS)</small>
-* [SSH](/ssh): 22
-* [XMPP](/XMPP): 5222 <small>(clients)</small>, 5269 <small>(serveurs)</small>
-* [Email](/email): 25, 587 <small>(SMTP)</small>, 993 <small>(IMAP)</small>
+- Web : `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>
+- [SSH](/ssh) : `22`
+- [XMPP](/XMPP) : `5222` <small>(clients)</small>, `5269` <small>(serveurs)</small>
+- [Email](/email) : `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>
 
 ! [fa=exclamation-triangle /] Certains fournisseurs d'accès à Internet bloquent le port 25 (mail SMTP) par défaut pour combattre le spam. D'autres (plus rares) ne permettent pas d'utiliser librement les ports 80/443. En fonction de votre FAI, il peut être possible d'ouvrir ces ports dans l'interface... Voir [cette page](/isp) pour plus d'informations.
 

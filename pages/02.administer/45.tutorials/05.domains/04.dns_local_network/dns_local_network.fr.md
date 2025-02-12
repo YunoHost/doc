@@ -10,12 +10,14 @@ routes:
 Après installation de votre serveur, il est possible que votre nom de domaine ne soit pas accessible depuis le réseau local où se trouve le serveur. Ceci est un problème connu sous le nom de [hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) - une fonctionnalité mal supportée par certaines box internet.
 
 Pour résoudre ce problème:
-- il est nécessaire de configurer le DNS de votre routeur 
+
+- il est nécessaire de configurer le DNS de votre routeur
 - à défaut, il est possible de modifier le ou les fichiers /etc/hosts de vos ordinateurs clients.
 
 ### Trouver l’adresse IP locale du serveur
 
 Tout d'abord il vous faut trouver l'adresse IP locale du serveur
+
 - soit en utilisant l'une de astuces expliquées [ici](/finding_the_local_ip)
 - ou en utilisant la webadmin, dans l'écran Diagnostic, section Connexion Internet, IPv4, cliquer sur 'Détails' et vous devriez trouver une entrée pour 'IP locale'.
 - ou en ligne de commande sur le serveur: `hostname -I`
@@ -31,6 +33,7 @@ Si vous ne disposez toujours pas de l’adresse IP privée de votre serveur, vou
 <img src="/images/ip_serveur.png" width=800>
 
 #### Configurer le DNS de la box SFR
+
 Rendez-vous dans l’onglet Réseau puis DNS pour ajouter votre nom de domaine au DNS de la box.
 <img src="/images/dns_9box.png" width=800>
 
@@ -48,5 +51,5 @@ La modification du fichier hosts devrait être effectuée seulement si vous ne p
 Ajoutez simplement à la fin du fichier hosts une ligne contenant l’adresse IP privée du serveur suivi de votre nom de domaine
 
 ```bash
-192.168.1.62	domain.tld
+192.168.1.62 domain.tld
 ```

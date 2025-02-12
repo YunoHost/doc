@@ -38,13 +38,14 @@ Habituellement les fournisseurs ont une documentation à ce sujet.
 
 ! [fa=exclamation-triangle /] Attention une fois la zone DNS enregistrée, le relais SMTP peut envoyer des e-mails à votre nom sans que vous ne le sachiez
 
-### Étape 3 :Configurer YunoHost correctement
+### Étape 3 : Configurer YunoHost correctement
 Il est possible de configurer soit via la webadmin ou en ligne de commande.
 
-[ui-tabs position="top-left" active="0" theme="lite"] 
+[ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Depuis la webadmin"]
 Depuis l'interface d'administration, dans la section `Outils` > `Paramètres de YunoHost`, et l'onglet `Email`.
 Il suffit d'activer l'option, et de renseigner les champs nécessaires :
+
 - **Adresse du relais SMTP** : L'url pour le serveur SMTP.
 - **Port du relais SMTP** : Le port utilisé sur le serveur renseigné.
 - **Utilisateur du relais SMTP** : Login ou mail d'identification pour le serveur.
@@ -54,11 +55,12 @@ Il suffit d'activer l'option, et de renseigner les champs nécessaires :
 
 ![Option-Relais-Smtp](image://relay_smtp_option_webadmin_en.png?resize=800)
 
-[/ui-tab] 
+[/ui-tab]
 [ui-tab title="En ligne de commande"]
 Pour que YunoHost soit capable d'utiliser le relais, il faut paramétrer 4 choses.
+
 1. Votre url de relais SMTP (on utilisera `smtprelay.tld`).
-2.  Le port sur lequel on accède au relais (on utilisera le port 2525 ci-dessous) 
+2. Le port sur lequel on accède au relais (on utilisera le port 2525 ci-dessous)
 3. Votre nom d'utilisateur SMTP (on utilisera `username`).
 4. Votre mot de passe SMTP (on utilisera `password`).
 
@@ -66,13 +68,13 @@ Pour que YunoHost soit capable d'utiliser le relais, il faut paramétrer 4 chose
 
 Le fournisseur SMTP vous fournit ces trois informations.
 
-Premièrement se connecter sur son serveur en SSH avec la commande : 
+Premièrement se connecter sur son serveur en SSH avec la commande :
 
 ```bash
 ssh admin@domain.tld
 ```
 
-Ensuite, mettre à jour les informations suivantes : 
+Ensuite, mettre à jour les informations suivantes :
 
 ```bash
 sudo yunohost settings set email.smtp.smtp_relay_enabled -v yes
@@ -98,6 +100,6 @@ Si vous avez une grande confiance dans votre relais SMTP, que vous avez un secon
 #virtual_alias_maps = ldap:/etc/postfix/ldap-aliases.cf,ldap:/etc/postfix/ldap-groups.cf
 ```
 
-## Vérifier la configuration
+### Étape 4 : Vérifier la configuration
 
 Vous pouvez vérifier vos paramètres en envoyant un mail et voir si cela fonctionne. Certains relais SMTP vous confirment l'e-mail envoyé. Bien sur vous pouvez vérifier sur mail-tester.com pour prendre connaissance d’éventuelles problèmes.

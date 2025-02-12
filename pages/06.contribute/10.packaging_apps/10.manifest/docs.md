@@ -30,10 +30,10 @@ maintainers = ["alexAubin"]
 
 - `packaging_format` (`int`) is the packaging version format used to package this app. Newly packaged apps are strongly encouraged to use the new "v2" format (starting with YunoHost 11.1) while older apps may still be in "v1" format.
 - `id` (`str`) is expected to be lower-case alphanumeric (and possibly `-`). This is what will be used for instance in the syntax `yunohost app install <app_id>`. This will also be the name of various folder or conf files such as `/etc/yunohost/apps/<app_id>` or `/etc/nginx/conf.d/<domain>.d/<app_id>.conf` (if applicable), and a dedicated system user.
-- `name` (`str`) is the display name of the app, shown for example in the webadmin UI or user portal. It is limited to 22 chars <small>(though not sure why this number?)</small>.
+- `name` (`str`) is the display name of the app, shown for example in the webadmin UI or user portal. It is limited to 23 chars <small>(though not sure why this number?)</small>.
 - `description` (`dict` of `lang code`->`str`) contains *short*, *concise* descriptions of the app in different languages (at least `en`). It is limited to 150 chars. It will be displayed on the app catalog and should allow people to understand what this app is about at a glance. A more extensive description of the app can be provided in `doc/DESCRIPTION.md`.
 - `version` (`str`) is composed of the *upstream* version of the app shipped, and an `~ynhX` suffix. Changing this version is what effectively triggers an available upgrade for YunoHost instances which installed this package (hence no upgrade will be displayed as available if you forget to change it). The point of the `~ynhX` suffix is to have a way to increment the version when commiting changes unrelated to the upstream but still trigger an upgrade.
-- `maintainers` (`list` or `str`) may allow to declare which person should be the referring person for this package (though packages are often maintained collectively and not really used in practice). This should contain a list of easily identifiable persons (eg your Github or Matrix username)
+- `maintainers` (`list` or `str`) may allow to declare which person should be the referring person for this package (though packages are often maintained collectively and not really used in practice). This should contain a list of easily identifiable persons (eg your GitHub or Matrix username)
 
 ## Upstream section
 
@@ -66,6 +66,7 @@ This section is meant to contain info related to the relation between the app an
 ```toml
 [integration]
 yunohost = ">= 11.1"
+helpers_version = "2.1"
 architectures = "all"
 multi_instance = false
 ldap = "not_relevant"
@@ -76,6 +77,7 @@ ram.runtime = "1M"
 ```
 
 - `yunohost` (`str`) contains the minimum YunoHost version required for this app to work.
+- `helpers_version` (`str`) contains the version of the package helpers used by the application; supported versions are [2.0](https://yunohost.org/fr/packaging_apps_helpers) and [2.1](https://yunohost.org/fr/packaging_apps_helpers_v2.1)
 - `architectures` : `"all"` OR a list of supported archs using the `dpkg --print-architecture` nomenclature, i.e. among : `amd64` (= x86 64bit), `i386` (= x86 32bit), `armhf` (= ARM 32bit), `arm64` (= ARM 64bit)
 - `multi_instance` (`bool`) : wether or not the app supports being installed multiple time <small>(in which case, during installation, the actual app id is not just the `id` of the manifest, but something like `hellowold__2`, `helloworld__3`, etc. for subsequent installs)</small>
 - `ldap` (`bool` OR `"not_relevant"`) :  not to confused with the `sso` key : this corresponds to wether or not the app is configured to use YunoHost's LDAP DB as the user account DB. This should be set to `"not_relevant"` if and only if there is no notion of user account for this app (for example, Hextris). LDAP integration is often a prerequisite for the SSO to work.
@@ -88,7 +90,7 @@ ram.runtime = "1M"
 
 This section is completely optional and, for most apps, doesn't exist at all.
 
-Some applications have limitations, they might be due to non-free dependencies, arbitrary limitations, etc. Yunohost provides UI in the catalog to show such antifeatures.
+Some applications have limitations, they might be due to non-free dependencies, arbitrary limitations, etc. YunoHost provides UI in the catalog to show such antifeatures.
 
 The declaration of antifeatures is a 3-steps process:
 
@@ -103,7 +105,6 @@ The declaration of antifeatures is a 3-steps process:
 
 The format of this section is a `dict` where keys are antifeature IDs, and the values
 are translated strings (`dict` of `lang code`->`str`).
-
 
 ## Install questions
 
@@ -135,17 +136,17 @@ This section contains questions that should be asked to the admin prior to start
 ```
 
 - `domain` and `path` (with `type = "domain"/"path"`) are classic questions to allow the admin to choose where the app is installed (in terms of web url endpoint)
-   - e.g. if the admin answers `domain.tld` and `/foobar`, the app will be available under `domain.tld/foobar`
-   - some webapp do require a full dedicated domain and do not support the "subpath" install scheme. In that case, you typically want to remove the `path` question entirely
-   - these questions are part of YunoHost's generic app questions and therefore you do not need to define the `ask.en` strings that contain the actual question displayed in the UI along the line of "Choose a domain to install this app on"
+  - e.g. if the admin answers `domain.tld` and `/foobar`, the app will be available under `domain.tld/foobar`
+  - some webapp do require a full dedicated domain and do not support the "subpath" install scheme. In that case, you typically want to remove the `path` question entirely
+  - these questions are part of YunoHost's generic app questions and therefore you do not need to define the `ask.en` strings that contain the actual question displayed in the UI along the line of "Choose a domain to install this app on"
 - `init_main_permission` is also a classic question <small>(similar to `is_public` in v1 packaging)</small> and define what user group will be able to access the app after it is installed. Typical answer are : `visitors` (= everybody including anonymous users, the app is "public"), `all_users` (= only people with a YunoHost account, the app is "private"), or any custom user group that may have been defined by the YunoHost admins prior to the install.
 - `prefered_pet` is a custom question:
-   - `ask.en` defines the human-readable question to be asked (at least the english version)
-   - `help.en` is an optional additional message to provide further info about this question
-   - `type` is the type of question, in this case `string`
-   - in this example, we don't want a free user input but choosing between `cat`, `dog` or `both` (with proper human-readable versions of these choices)
-   - this will later automatically create a yunohost app setting named `prefered_pet`
-   - .. and in the bash install script, the bash variable will automatically be available `$prefered_pet` with the chosen value
+  - `ask.en` defines the human-readable question to be asked (at least the english version)
+  - `help.en` is an optional additional message to provide further info about this question
+  - `type` is the type of question, in this case `string`
+  - in this example, we don't want a free user input but choosing between `cat`, `dog` or `both` (with proper human-readable versions of these choices)
+  - this will later automatically create a YunoHost app setting named `prefered_pet`
+  - .. and in the bash install script, the bash variable will automatically be available `$prefered_pet` with the chosen value
 
 ### Regarding install question types
 
@@ -180,6 +181,7 @@ The resource section corresponds to recurring app needs that are to be provision
 ```
 
 In this example:
+
 - `sources.main`: the URL+checksum from which the app sources will be downloaded + validated
 - `system_user`: a system (unix) user will be created for this app, using the app id as username.
 - `install_dir`: an install dir will be initialized, named `/var/www/$app` by default. Additional `owner` and `group` property allow to change the owner/group and r/w/x permissions on the created folder.

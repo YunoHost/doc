@@ -22,9 +22,11 @@ la configuration devrait être faite automatiquement. Si vous utilisez votre pro
 domaine via l'interface de votre registrar.
 
 ## Configuration DNS recommandée
-_NB : les exemples utilisent ici le texte `votre.domaine.tld`, à remplacer par votre propre domaine (par exemple `www.yunohost.org`)._
+
+*NB : les exemples utilisent ici le texte `votre.domaine.tld`, à remplacer par votre propre domaine (par exemple `www.yunohost.org`).*
 
 YunoHost fournit une configuration DNS recommandée, accessible via :
+
 - la webadmin, dans Domaines > votre.domain.tld > Configuration DNS ;
 - ou la ligne de commande, `yunohost domain dns-conf votre.domaine.tld`
 
@@ -84,7 +86,7 @@ suivante :
 |   TXT   |  mail._domainkey       |  `"v=DKIM1; k=rsa; p=uneGrannnndeClef"`                |
 |   TXT   |  _dmarc                |  `"v=DMARC1; p=none"`                                  |
 
-#### Quelques notes à propos de cette table
+### Quelques notes à propos de cette table
 
 - Tous ces enregistrements ne sont pas nécessaires. Pour une installation minimale, seuls les enregistrements en gras sont nécessaires ;
 - Le point à la fin de `votre.domaine.tld.` est important ;) ;
@@ -92,7 +94,7 @@ suivante :
 - Les valeurs montrées ici sont des valeurs d'exemple ! Référez-vous à la configuration générée chez vous pour savoir quelles valeurs utiliser ;
 - Nous recommandons un [TTL](https://fr.wikipedia.org/wiki/Time_to_Live#Le_Time_to_Live_dans_le_DNS) de 3600 (1 heure). Mais vous pouvez utiliser une autre valeur si vous savez ce que vous faîtes ;
 - Ne mettez pas d'enregistrement IPv6 si vous n'êtes pas certain que l'IPv6 fonctionne sur votre serveur ! Vous aurez des problèmes avec Let's Encrypt si ce n'est pas le cas.
-- Si vous utilisez le registrar Namecheap, les entrées SRV sont formattées comme **Service**: _xmpp-client **Protocol**: _tcp **Priority**: 0 **Weight**: 5 **Port**: 5222 **Target**: votre.domaine.tld
+- Si vous utilisez le registrar Namecheap, les entrées SRV sont formattées comme **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `votre.domaine.tld`
 
 ### Résolution DNS inverse
 
@@ -108,8 +110,8 @@ Cela signifie que si votre adresse IPv4 publique est `111.222.333.444` et que
 votre nom de domaine est `domain.tld`, vous devez obtenir le résultat suivant
 en utilisant la commande `nslookup` :
 
-```shell
-$ nslookup 111.222.333.444
+```bash
+nslookup 111.222.333.444
 444.333.222.111.in-addr.arpa    name = domain.tld.
 ```
 

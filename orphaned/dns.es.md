@@ -20,7 +20,6 @@ También existen **tipos** de registros DNS, lo que significa que un dominio pue
 
 **Por ejemplo** : `www.yunohost.org` apunta hacia `yunohost.org`
 
-
 ### ¿ Cómo (bien) hacer la configuración ?
 
 Tienes varias opciones. Nota que puedes cumular estas soluciones si posees varios dominios : por ejemplo, puedes tener `mi-servidor.nohost.me` utilizando la solución **1.**, et `mi-servidor.org` utilizando la solución **2.**, redirigiéndolos hacia el mismo servidor YunoHost.

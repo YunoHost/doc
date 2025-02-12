@@ -17,16 +17,16 @@ E-Mail ist ein kompliziertes Ökosystem und eine ganze Reihe von Details können
 
 Um Ihre Einstellungen zu validieren:
 
-- Wenn Sie zu Hause selbst hosten und kein VPN verwenden, stellen Sie sicher das [Ihr ISP den Port 25 nicht blockiert](https://yunohost.org/#/isp); 
-- leiten Sie Ports weiter, wie in [dieser Dokumentation](https://yunohost.org/#/isp_box_config) beschrieben;
-- Mail-DNS-Einträge nach [dieser Dokumentation](https://yunohost.org/#/dns_config) sorgfältig konfigurieren;
+- Wenn Sie zu Hause selbst hosten und kein VPN verwenden, stellen Sie sicher das [Ihr ISP den Port 25 nicht blockiert](/isp);
+- leiten Sie Ports weiter, wie in [dieser Dokumentation](/isp_box_config) beschrieben;
+- Mail-DNS-Einträge nach [dieser Dokumentation](/dns_config) sorgfältig konfigurieren;
 - testen Sie Ihre Konfiguration mit [Mail-tester.com](https://mail-tester.com/) (Vorsicht : nur 3 Tests pro Domain und Tag sind erlaubt) ;
 
 Eine Punktzahl von mindestens 8~9/10 ist ein angemessenes Ziel.
 
 ## E-Mail-Programme
 
-Um mit dem E-Mail-Server zu interagieren (E-Mails lesen und senden), können Sie entweder einen Webclient wie Roundcube oder Rainloop auf Ihrem Server installieren - oder einen Desktop-/Mobil-Client, wie auf [dieser Seite](https://yunohost.org/#/email_configure_client) beschrieben, konfigurieren.
+Um mit dem E-Mail-Server zu interagieren (E-Mails lesen und senden), können Sie entweder einen Webclient wie Roundcube oder Rainloop auf Ihrem Server installieren - oder einen Desktop-/Mobil-Client, wie auf [dieser Seite](/email_configure_client) beschrieben, konfigurieren.
 
 Desktop- und Mobil-Clients haben den Vorteil, dass sie Ihre E-Mails auf das Gerät kopieren, was eine Offline-Anzeige und einen relativen Schutz gegen mögliche Hardware-Ausfälle Ihres Servers ermöglicht.
 
@@ -42,9 +42,8 @@ Wenn Ihr Server nicht mehr verfügbar ist, bleiben die an Ihren Server gesendete
 
 ## Formulare zum Entfernen seiner IP-Adresse von der schwarzen Liste
 
-Es ist möglich, dass die von Ihrer YunoHost-Instanz gesendeten E-Mails von den großen E-Mail-Diensten als Spam betrachtet werden. Ist es möglich, dass die IP-Adresse von Ihrem Server bereits früher zum Versenden von Spam verwendet wurde oder dass diese E-Mail-Dienste Ihren Server als Spam-Versender betrachten? Um sicherzustellen, dass die IP-Adresse Ihrer Server nicht in diese schwarzen Listen aufgenommen wird und um sie aus diesen zu entfernen, folgen Sie [diesem Link](https://yunohost.org/#/blacklist_forms).
+Es ist möglich, dass die von Ihrer YunoHost-Instanz gesendeten E-Mails von den großen E-Mail-Diensten als Spam betrachtet werden. Ist es möglich, dass die IP-Adresse von Ihrem Server bereits früher zum Versenden von Spam verwendet wurde oder dass diese E-Mail-Dienste Ihren Server als Spam-Versender betrachten? Um sicherzustellen, dass die IP-Adresse Ihrer Server nicht in diese schwarzen Listen aufgenommen wird und um sie aus diesen zu entfernen, folgen Sie [diesem Link](/blacklist_forms).
 
 ## Eine Migration von E-Mails von einem E-Mail-Provider zu einer YunoHost-Instanz
 
-Siehe [diese Seite](https://yunohost.org/#/email_migration).
-
+Siehe [diese Seite](/email_migration).

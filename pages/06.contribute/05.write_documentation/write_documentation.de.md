@@ -23,7 +23,7 @@ Unter der Haube wird die Dokumentation vom [Grav CMS](https://getgrav.org/?targe
 
 Die Struktur des Repositorys wird nachfolgend beschrieben:
 
-```bash
+```text
 + -- config
    + -- site.yaml
    + -- system.yaml 
@@ -48,15 +48,15 @@ Die Struktur des Repositorys wird nachfolgend beschrieben:
     # Enthält die Anweisungen, keine sensiblen 
     # oder nutzlosen Dateien an das Git-Repository zu senden 
 + -- README.md 
-``` 
+```
 
-!!!! Weitere Informationen zu den Funktionen von Grav finden Sie in der [Dokumentation](https://learn.getgrav.org?target=_blank). Der Rest dieser Seite zeigt Ihnen einige spezifische Anweisungen, die Sie zur Dokumentation von YunoHost beachten sollten.. 
+!!!! Weitere Informationen zu den Funktionen von Grav finden Sie in der [Dokumentation](https://learn.getgrav.org?target=_blank). Der Rest dieser Seite zeigt Ihnen einige spezifische Anweisungen, die Sie zur Dokumentation von YunoHost beachten sollten..
 
-## Grav-Header 
+## Grav-Header
 
-Jede Seite beginnt mit einem Header, der Grav Anweisungen zur Verarbeitung gibt. Werfen wir einen Blick in die Kopfzeile dieser Seite: 
+Jede Seite beginnt mit einem Header, der Grav Anweisungen zur Verarbeitung gibt. Werfen wir einen Blick in die Kopfzeile dieser Seite:
 
-``` 
+```text
 --- 
 title: Dokumentation schreiben 
 template: docs 
@@ -65,20 +65,22 @@ taxonomie:
 routes: 
   default: '/write_documentation' 
 --- 
-``` 
+```
+
 1. Die Kopfzeile beginnt und endet mit einer Zeile, die `---` enthält
 2. Der `title:` verwaltet die erste Titel-Überschrift der Seite, ihren Namen im Navigationsmenü links und den Namen des Browser-Tab`s
-3. Die Punkte `template` und `taxonomie` sollten immer unverändert bleiben. Sie weisen Grav an, das richtige Theme zu verwenden und die Seiten richtig auf zu bauen. 
-4. Die Schlüssel `routes` und `default` machen die Seite standardmäßig unter `https://yunohost.org/docs/write_documentation` verfügbar, um sie nicht unter `https://yunohost.org/docs/contribute/write_documentation` aufrufen zu müssen, wo sie in der Verzeichnishierarchie gespeichert ist. 
+3. Die Punkte `template` und `taxonomie` sollten immer unverändert bleiben. Sie weisen Grav an, das richtige Theme zu verwenden und die Seiten richtig auf zu bauen.
+4. Die Schlüssel `routes` und `default` machen die Seite standardmäßig unter `https://yunohost.org/docs/write_documentation` verfügbar, um sie nicht unter `https://yunohost.org/docs/contribute/write_documentation` aufrufen zu müssen, wo sie in der Verzeichnishierarchie gespeichert ist.
 
-## Syntax 
+## Syntax
 
 Sie können die Markdown-Syntax verwenden. Weitere Informationen finden Sie in der [Dokumentation](/doc_markdown_guide).
 
-! Beachten Sie, dass Sprachcodes nicht am Anfang der Links zu anderen Dokumentationsseiten stehen dürfen: `/en`,` /fr` usw. sind überflüssig. 
+! Beachten Sie, dass Sprachcodes nicht am Anfang der Links zu anderen Dokumentationsseiten stehen dürfen: `/en`,`/fr` usw. sind überflüssig.
 
-Um die Markdown-Funktionen zu verbessern, werden zusätzliche Plugins in Grav installiert. In der eigenen Dokumentation auf GitHub erfahren Sie, wie Sie sie verwenden. 
-```
+Um die Markdown-Funktionen zu verbessern, werden zusätzliche Plugins in Grav installiert. In der eigenen Dokumentation auf GitHub erfahren Sie, wie Sie sie verwenden.
+
+```text
 anchors
 external_links
 flex-objects
@@ -88,26 +90,27 @@ markdown-notices
 presentation
 presentation-deckset
 shortcode-core
-``` 
+```
 
-## Sonderseiten 
+## Sonderseiten
 
-Einige Seiten der Dokumentation werden automatisch oder dynamisch generiert. 
+Einige Seiten der Dokumentation werden automatisch oder dynamisch generiert.
 
-| Seite | Pfad | Anmerkungen | 
+| Seite | Pfad | Anmerkungen |
 | --------------- | ------- | ------- |
-| Apps-Katalog | `/pages/02.applications/01.catalog/apps.md` | Ruft [app.json](https://github.com/YunoHost/apps/blob/master/apps.json?target=_blank) ab und verarbeitet sie | 
-| Apps-Helfer | `pages/04.contribute/04.packaging_apps/11.helpers/package_apps_helpers.md` | Erstellt von diesem [Skript](https://github.com/YunoHost/yunohost/blob/dev/doc/generate_helper_doc.py?target=_blank) aus dieser [Vorlage](https://github.com/YunoHost/yunohost/blob/dev/doc/helper_doc_template.md?target=_blank) | 
-| Pro-App-Dokumentation | `pages/02.applications/02.docs/docs.md` | Listet die Unterseiten im selben Verzeichnis auf, deren Header `taxonomy.category: docs, apps` enthält 
+| Apps-Katalog | `/pages/02.applications/01.catalog/apps.md` | Ruft [app.json](https://github.com/YunoHost/apps/blob/master/apps.json?target=_blank) ab und verarbeitet sie |
+| Apps-Helfer | `pages/04.contribute/04.packaging_apps/11.helpers/package_apps_helpers.md` | Erstellt von diesem [Skript](https://github.com/YunoHost/yunohost/blob/dev/doc/generate_helper_doc.py?target=_blank) aus dieser [Vorlage](https://github.com/YunoHost/yunohost/blob/dev/doc/helper_doc_template.md?target=_blank) |
+| Pro-App-Dokumentation | `pages/02.applications/02.docs/docs.md` | Listet die Unterseiten im selben Verzeichnis auf, deren Header `taxonomy.category: docs, apps` enthält |
 
 ## Hosten Sie Ihre eigene Testdokumentation
 
-! Diese Anweisungen müssen noch vollständig getestet werden. Bitte helfen Sie uns, indem Sie Probleme melden, die Sie möglicherweise mit ihnen haben. 
+! Diese Anweisungen müssen noch vollständig getestet werden. Bitte helfen Sie uns, indem Sie Probleme melden, die Sie möglicherweise mit ihnen haben.
 
-0. Forken Sie das YunoHost Dokumentations Repository 
-1. Installieren Sie das YunoHost-Paket Grav : `yunohost app install grav` 
-2. Installieren Sie die folgenden Plugins durch das Grav Admin-Panel oder CLI: 
-``` 
+0. Forken Sie das YunoHost Dokumentations Repository
+1. Installieren Sie das YunoHost-Paket Grav : `yunohost app install grav`
+2. Installieren Sie die folgenden Plugins durch das Grav Admin-Panel oder CLI:
+
+```text
 anchors
 breadcrumbs
 external_links
@@ -122,27 +125,28 @@ presentation
 presentation-deckset
 shortcode-core
 tntsearch 
-``` 
-3. Git Sync Plugin einrichten. 
+```
+
+3. Git Sync Plugin einrichten.
    1. Melden Sie sich mit Ihren Anmeldeinformationen auf GitHub an
-   2. Legen Sie das Repo fest, z. B. `https://github.com/username/doc`. 
-   3. Kopieren Sie die URL des Webhooks, z. B. `https://grav.example/_git-sync-ca25c111f0de`. 
-   4. Grundeinstellungen> Ordner im Sync: `pages`` images` `themes` 
-   5. Git Repo-Einstellungen> Benutzer nicht erforderlich: Aktiviert 
-   6. Git Repo-Einstellungen> Web Hooks-Geheimnis: Aktiviert 
-   7. Erweiterte Einstellungen> Lokaler Branch:`master` 
+   2. Legen Sie das Repo fest, z. B. `https://github.com/username/doc`.
+   3. Kopieren Sie die URL des Webhooks, z. B. `https://grav.example/_git-sync-ca25c111f0de`.
+   4. Grundeinstellungen> Ordner im Sync: `pages`` images` `themes`
+   5. Git Repo-Einstellungen> Benutzer nicht erforderlich: Aktiviert
+   6. Git Repo-Einstellungen> Web Hooks-Geheimnis: Aktiviert
+   7. Erweiterte Einstellungen> Lokaler Branch:`master`
    8. Erweiterte Einstellungen> Remote Branch: `master`  
-      (Sie können` master` ändern, wenn Sie an einem anderen Zweig arbeiten möchten, aber vergessen Sie nicht, ihn zuerst auf GitHub zu erstellen.) 
+      (Sie können`master` ändern, wenn Sie an einem anderen Zweig arbeiten möchten, aber vergessen Sie nicht, ihn zuerst auf GitHub zu erstellen.)
    9. Erweiterte Einstellungen> Committer-Name: Ihr GitHub-Benutzername
-   10. Erweiterte Einstellungen> Committer-E-Mail : Ihre E-Mail auf GitHub 
+   10. Erweiterte Einstellungen> Committer-E-Mail : Ihre E-Mail auf GitHub
 4. Lokale Kopie speichern und zurücksetzen
-5. Konfigurieren Sie `commits` und `tree` in `config/theme/yunohost-docs.yaml`, so das sie auf Ihren Fork des Repositorys verweisen. 
-6. Stellen Sie sicher, dass die Verzeichnisse `user/pages/01.home` und `user/pages/02.typography` gelöscht werden. 
-7. Konfiguration> System: 
-   1. Sprache> Unterstützt: `en` `fr` `de` `es` `ar` 
-   2. Sprache> Standardsprache überschreiben:` en` 
-   3. Sprache> Sprache vom Browser einstellen: `Ja` 
-   4. HTTP-Header> Etag: `Ja` 
-   5. Erweitert> Blueprint-Kompatibilität:` Ja` 
-   6. Erweitert> YAML-Kompatibilität: `Ja` 
-   7. Erweitert> Twig-Kompatibilität:` Ja`
+5. Konfigurieren Sie `commits` und `tree` in `config/theme/yunohost-docs.yaml`, so das sie auf Ihren Fork des Repositorys verweisen.
+6. Stellen Sie sicher, dass die Verzeichnisse `user/pages/01.home` und `user/pages/02.typography` gelöscht werden.
+7. Konfiguration> System:
+   1. Sprache> Unterstützt: `en` `fr` `de` `es` `ar`
+   2. Sprache> Standardsprache überschreiben:`en`
+   3. Sprache> Sprache vom Browser einstellen: `Ja`
+   4. HTTP-Header> Etag: `Ja`
+   5. Erweitert> Blueprint-Kompatibilität:`Ja`
+   6. Erweitert> YAML-Kompatibilität: `Ja`
+   7. Erweitert> Twig-Kompatibilität:`Ja`

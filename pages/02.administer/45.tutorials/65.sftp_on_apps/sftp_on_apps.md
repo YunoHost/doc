@@ -29,5 +29,3 @@ setfacl -m u:wordpress:r-- /var/www/wordpress/wp-config.php
 setfacl -R -m u:USER:rwX /var/www/wordpress
 setfacl -R -d -m u:USER:rwX /var/www/wordpress
 ```
-
-

@@ -24,7 +24,7 @@ Under the hood, the documentation is served by the [Grav CMS](https://getgrav.or
 
 The structure of the repository is described below:
 
-```bash
+```text
 +-- config
    +-- site.yaml
    +-- system.yaml
@@ -57,7 +57,7 @@ The structure of the repository is described below:
 
 Each page starts with a header that gives instructions to Grav on how to process them. Let us have a look into the header of this page:
 
-```
+```text
 ---
 title: Write documentation
 template: docs
@@ -81,6 +81,7 @@ You can use Markdown syntax, refer to the [documentation](/doc_markdown_guide) f
 ! Note that language codes are not to be included at the beginning of the links to other documentation pages: `/en`, `/fr`, etc. are superfluous.
 
 To improve Markdown capabilities, additional plugins are installed in Grav. You can refer to their own documentation on GitHub to see how to use them.
+
 ```text
 anchors
 external_links
@@ -110,6 +111,7 @@ Some pages of the documentation are automatically or dynamically generated.
 0. Fork YunoHost documentation repository
 1. Install Grav's YunoHost package: `yunohost app install grav`
 2. Install the following plugins through Grav's admin panel or CLI:
+
 ```text
 anchors
 breadcrumbs
@@ -126,6 +128,7 @@ presentation-deckset
 shortcode-core
 tntsearch
 ```
+
 3. Set-up Git Sync plugin.
    1. Choose GitHub and your credentials on GitHub
    2. Set the repo, e.g. `https://github.com/username/doc`
@@ -137,9 +140,9 @@ tntsearch
    8. Advanced settings > remote branch: `master`  
 (you can change `master` if you want to work on another branch, but do not forget to create it on GitHub first)
    9. Advanced settings > Committer Name: your GitHub username
-  10. Advanced settings > Committer Email: your email saved on GitHub
-  11. Save and Reset Local Copy
-  12. Set `commits` and `tree` keys in `config/themes/yunohost-docs.yaml` to point to your fork's repository
+10. Advanced settings > Committer Email: your email saved on GitHub
+11. Save and Reset Local Copy
+12. Set `commits` and `tree` keys in `config/themes/yunohost-docs.yaml` to point to your fork's repository
 4. Make sure `user/pages/01.home` and `user/pages/02.typography` directories are deleted.
 5. Configuration > System:
    1. Language > Supported: `en` `fr` `de` `es` `ar`

@@ -11,7 +11,18 @@ routes:
 
 Once you're done writing you app package, you'll want to check that everything works correctly. At first, you can manually try to install your app on some test server of your own : `sudo yunohost app install ./path/to/mycustomapp_ynh`
 
-Testing everything manually often becomes tedious ;). The YunoHost maintains several tools to automatically and somewhat "objectively" analyze and tests our 400+ apps catalog.
+Note that `./path/to/mycustomapp_ynh` can be a local path or an external git repository https URL (basically anything compatible with `git clone`).
+   
+You may also be interested in specifying the following parameters for `yunohost app install` command:
+- `--debug` : prints detailed log information
+- `--no-remove-on-failure` : won't remove the app if the install fails - therefore you can analyze and manually run/debug stuff, typically in `/var/www/$app`
+- `--force` : so that you are not asked confirmation if the app is not safe to use (low quality, experimental or 3rd party), or when the app displays a post-install notification. 
+- `-a "&domain=sub.domain.tld&path=/my_app&init_main_permission=all_users"` : can be used to preconfigure the answers to the install questions that are asked otherwise after entering the command. i.e.
+	- `domain=sub.domain.tld` : the domain/subdomain on which to install the app
+	- `path=/my_app` : the path to which the app will be accessible, e.g. https://(sub.)domain.tld/my_app
+	- `init_main_permission=all_users` : permission group associated to the app (can be `all_users`, `visitors`, etc.)
+
+Testing everything manually often becomes tedious ;). The YunoHost project maintains several tools to automatically and somewhat "objectively" analyze and tests our 400+ apps catalog.
 
 ## Package linter
 
@@ -22,11 +33,12 @@ It is pretty straightforward to run considering that you should only need Python
 ## Package check
 
 [Package check](https://github.com/YunoHost/package_check) is a more elaborate software that will tests many scenarios for you app such as:
+
 - installing, removing and reinstalling your app + validating that the app can indeed be accessed on its URL endpoint (with no 404/502 error)
-   - when installing on a root domain (`domain.tld/`)
-   - when installing in a domain subpatch (`domain.tld/foobar`)
-   - installing in private mode
-   - installing multiple instances
+  - when installing on a root domain (`domain.tld/`)
+  - when installing in a domain subpatch (`domain.tld/foobar`)
+  - installing in private mode
+  - installing multiple instances
 - upgrading from the same version
 - upgrading from older versions
 - backup/restore
@@ -60,19 +72,18 @@ While this definition may vary with time, the current definition as of February 
 - level 7 (« All tests succeeded + No linter warning ») : Pass all test (including for example upgrade from past commits) and no warning reported by the linter
 - level 8 (« Maintained and long-term good quality ») : The app is not flagged as not-maintained / alpha / deprecated / obsolete in the catalog, and has been at least level 5 during the past ~year
 
-
 ## Continous integration (CI)
 
 The YunoHost project also developed an interface called [`yunorunner`](https://github.com/YunoHost/yunorunner) which interfaces with `package_check`, handles a job queue, and automatically add jobs to the queue using some triggers.
 
 The two major ones are:
+
 - [The "official" CI](https://ci-apps.yunohost.org/ci): This where the "official" quality level of each app comes from. Jobs are triggered after each commit on the repo's master branch.
 - [The "dev" CI](https://ci-apps-dev.yunohost.org/ci/): This is where people validate their pull request which is often more convenient than running `package_check` yourself, and has the advantage of the results being automatically public, which facilitates collective debugging.
 
 Members of the YunoHost-Apps organization can trigger jobs on the dev CI directly from a pull request simply by commenting something like `!testme` (cf for example [here](https://github.com/YunoHost-Apps/nextcloud_ynh/pull/532#issuecomment-1402751409)). A .png summary of the tests will be automatically displayed once the job completes (and you can click the link to see the entire job execution and debug it).
 
-
-#### Why create `package_check` + `yunorunner` rather than using well-known solutions like Gitlab-CI ?
+### Why create `package_check` + `yunorunner` rather than using well-known solutions like Gitlab-CI ?
 
 Constrain 1 : Gitlab-CI or other similar solutions are mostly based around Docker, while we use LXC. In particular, we do want to reuse LXC snapshots of successful install during other tests (upgrade, backup/restore, ..) rather than reinstalling the app from scratch everytime, which drastically reduces the test time. We could do so using Gitlab artifacts, but such artifacts are automatically made public which is not convenient because they contain a full filesystem and their only use it to speed up the test process. Moreover, in the Gitlab-CI paradigm, jobs are not running on the same machine and they would need to download the snapshot which can be lengthy. The other mechanism, caching, is explicitly advertised as not reliable in Gitlab's-CI doc. What would be helpful would be some non-public artifact system (see similar discussion [here](https://gitlab.com/gitlab-org/gitlab-runner/-/issues/336))
 

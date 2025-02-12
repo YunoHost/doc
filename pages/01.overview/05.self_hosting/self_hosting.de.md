@@ -12,13 +12,15 @@ Ihren eigenen Server zu Hause zu haben und zu verwalten, um Ihre persönlichen D
 
 Self-Hosting bedeutet, einen Server zu besitzen. Ein Server ist ein Computer, auf den in der Regel rund um die Uhr im Netzwerk zugegriffen werden kann und der normalerweise keinen Bildschirm oder keine Tastatur hat (stattdessen wird er ferngesteuert). Entgegen der landläufigen Meinung ist ein Server nicht unbedingt ein riesiger und besonders leistungsfähiger Computer: Heutzutage ist ein kleines Board (Einplatinencomputer) mit ~ 40 € für das Self-Hosting ausreichend.
 
+![](image://internet_topologies.png)
+
 Beim Self-Hosting geht es nicht darum, "Ihr Internet" sicherer zu machen, und es bietet auch keine Anonymität an sich. Stattdessen geht es darum, autonom zu sein und Ihre Dienste und Daten zu kontrollieren - was auch bedeutet, dafür verantwortlich zu sein.
 
 ## Warum sollten Sie selbst hosten?
 
 - **Sie glauben an ein freies, offenes und dezentrales Internet.** In einem zentralisierten Internet können private Unternehmen und Behörden Personen ausspähen, analysieren und beeinflussen, indem sie diktieren, wie Sie sich miteinander verbinden, und indem sie Inhalte filtern. YunoHost wird von einer Community entwickelt, die an ein offenes und dezentrales Internet glaubt, und wir hoffen, dass Sie dies auch tun!
 
-- **Sie möchten die Kontrolle über Ihre Daten und Dienste haben.** Ihre Bilder, Chatnachrichten, der Browserverlauf und der Text, den Sie für die Schule schreiben, haben auf dem Server eines anderen Benutzers (a.k.a. The Cloud) nichts zu suchen. Sie sind Teil Ihres Privatlebens, aber auch Teil des Lebens Ihrer Familie, Ihres Partners und so weiter. Diese Daten sollten von * Ihnen * verwaltet werden, nicht von einem zufälligen Unternehmen in den USA, dass Ihre Daten analysieren und die Ergebnisse verkaufen möchte.
+- **Sie möchten die Kontrolle über Ihre Daten und Dienste haben.** Ihre Bilder, Chatnachrichten, der Browserverlauf und der Text, den Sie für die Schule schreiben, haben auf dem Server eines anderen Benutzers (a.k.a. The Cloud) nichts zu suchen. Sie sind Teil Ihres Privatlebens, aber auch Teil des Lebens Ihrer Familie, Ihres Partners und so weiter. Diese Daten sollten von *Ihnen* verwaltet werden, nicht von einem zufälligen Unternehmen in den USA, dass Ihre Daten analysieren und die Ergebnisse verkaufen möchte.
 
 - **Sie möchten lernen, wie Computer und das Internet funktionieren.** Der Betrieb eines eigenen Servers ist ein guter Kontext, um die grundlegenden Mechanismen von Betriebssystemen und dem Internet zu verstehen. Möglicherweise müssen Sie sich mit der Befehlszeilenschnittstelle, der Netzwerkarchitektur, der DNS-Konfiguration und mit SSH usw. befassen.
 

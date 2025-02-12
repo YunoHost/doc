@@ -19,13 +19,13 @@ Si vous cherchez quelque chose à implémenter ou un bug à réparer, le bug tra
 
 - **Implémentez et testez votre fonctionnalité**. Suivant ce sur quoi vous
   voulez travailler :
-   - **Cœur Python/ligne de commande** : allez dans `/ynh-dev/yunohost/`
-   - **Webadmin** : allez dans `/ynh-dev/yunohost-admin/`
-   - Vous pouvez aussi travailler sur les autres projets liés sur lesquels s'appuie YunoHost (SSOwat, Moulinette) de façon similaire.
+  - **Cœur Python/ligne de commande** : allez dans `/ynh-dev/yunohost/`
+  - **Webadmin** : allez dans `/ynh-dev/yunohost-admin/`
+  - Vous pouvez aussi travailler sur les autres projets liés sur lesquels s'appuie YunoHost (SSOwat, Moulinette) de façon similaire.
 
 ### Vue d'ensemble des 4 morceaux principaux de YunoHost
 
-##### Moulinette
+#### Moulinette
 
 C'est un petit framework "fait maison". [Son rôle principal](https://moulinette.readthedocs.io/en/latest/actionsmap.html) est de permettre de construire une API Web et une API en ligne de commande à partir d'un même code Python et d'un schéma YAML que nous appelons [l'actionmap](https://github.com/YunoHost/yunohost/blob/dev/share/actionsmap.yml).
 
@@ -33,28 +33,31 @@ Il prend en charge d'autres mécanismes tels que l'authentification, l'internati
 
 Moulinette dispose de sa propre documentation [ici](https://moulinette.readthedocs.io/en/latest/).
 
-##### YunoHost
+#### YunoHost
 
 C'est le cœur même de YunoHost. Il contient :
+
 - [le code Python](https://github.com/YunoHost/yunohost/tree/dev/src) qui gère les utilisateurs, domaines, applications, services et autres
 - des [helpers bash](https://github.com/YunoHost/yunohost/tree/dev/helpers) principalement utilisés par les packageurs d'applications dans les scripts de ces applications
 - des [hooks](https://github.com/YunoHost/yunohost/tree/dev/hooks) et [templates](https://github.com/YunoHost/yunohost/tree/dev/conf) qui sont utilisés pour configurer les différents éléments de l'écosystème tels que NGINX, Postfix...
 - des [chaînes internationalisées](https://github.com/YunoHost/yunohost/tree/dev/locales)
 - des [tests](https://github.com/YunoHost/yunohost/tree/dev/tests)
 
-##### SSOwat
+#### SSOwat
 
 C'est le système de connexion unique (single sign-on) de YunoHost. Il contient principalement :
+
 - [du code LUA](https://github.com/YunoHost/ssowat) interfacé directement avec NGINX et qui gère tous les aspects "techniques" de l'authentification et de la gestion des accès aux ressources.
 - le [portail web utilisateur](https://github.com/YunoHost/SSOwat/tree/dev/portal) qui est l'interface finale visible par les utilisateurs de YunoHost.
 
 SSOwat est configuré via `/etc/ssowat/conf.json` qui est généré par YunoHost.
 
-##### YunoHost-admin
+#### YunoHost-admin
 
 C'est une dépendance *optionnelle* de YunoHost et correspond à une interface pour l'API web créée par YunoHost et Moulinette (service `yunohost-api`).
 
 Il contient essentiellement :
+
 - [des templates pour les vues](https://github.com/YunoHost/yunohost-admin/tree/dev/app/src/views)
 - les [contrôleurs JavaScript](https://github.com/YunoHost/yunohost-admin/tree/dev/src/js/yunohost/controllers) correspondants, qui interagissent avec l'API YunoHost
 - et ses [chaînes internationalisées](https://github.com/YunoHost/yunohost-admin/tree/dev/app/src/i18n/locales)
@@ -69,7 +72,7 @@ Il contient essentiellement :
 
 - Moulinette va automatiquement faire le lien entre les commandes de l'actionsmap et les fonctions Python (ainsi que leurs arguments) dans `src/yunohost/`. Par exemple, `yunohost domain add some.domain.tld` déclenchera un appel de `domain_add(domainName)` dans `domain.py`, avec l'argument  `domainName` qui vaudra `"some.domain.tld"`.
 
-##### Helpers / style de code
+#### Helpers / style de code
 
 - Pour gérer les exceptions, il existe un type `YunohostError()`
 
@@ -94,14 +97,13 @@ Il contient essentiellement :
 
 - Pour l'internationalisation des messages, utilisez `y18n.t('some-string-code')`  dans le JavaScript, ou `{{t 'some-string-code'}}` dans le template HTML, et mettez votre message dans `locales/en.json`. Ne modifiez pas de fichiers de locales autres que `en.json`, la traduction sera faite avec [Weblate](https://translate.yunohost.org/) !
 
-##### N'oubliez pas
+#### N'oubliez pas
 
 - À chaque modification de l'actionsmap, il faut redémarrer l'API YunoHost : `service yunohost-api restart` (Il faudra retaper le mot de passe administrateur dans l'interface web)
 
 - Il faudra peut-être régulièrement forcer le rafraîchissement du cache navigateur pour propager correctement le JavaScript et/ou HTML (à chaque fois que l'on change quelque chose dans `js` ou `views`, donc).
 
-
-### Votre fonctionnalité est prête et vous souhaitez qu'elle soit intégrée dans YunoHost 
+### Votre fonctionnalité est prête et vous souhaitez qu'elle soit intégrée dans YunoHost
 
 - Forkez le dépôt correspondant sur GitHub, et commitez vos changements dans une nouvelle branche. Il est recommandé de nommer la branche avec la convention suivante :
   - Pour une nouvelle fonctionnalité ou amélioration : `enh-ISSUENUMBER-description-fonctionnalité`

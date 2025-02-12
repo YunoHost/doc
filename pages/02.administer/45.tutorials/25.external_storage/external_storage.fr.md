@@ -23,19 +23,19 @@ Ci-dessous, vous trouverez des explications pour parvenir à déplacer vos donn�
 
 ## [fa=list-alt /] Pré-requis
 
-* Avoir un peu de temps à un moment où les utilisateurs de votre serveur peuvent accepter un arrêt des services. Les étapes à réaliser, même si elles sont relativement simples, peuvent parfois paraître techniques et nécessitent dans tous les cas **de prendre son temps**.
+- Avoir un peu de temps à un moment où les utilisateurs de votre serveur peuvent accepter un arrêt des services. Les étapes à réaliser, même si elles sont relativement simples, peuvent parfois paraître techniques et nécessitent dans tous les cas **de prendre son temps**.
 
-* Savoir se connecter en root sur votre système, par exemple via [SSH](/ssh). (Note : en étant connecté en tant qu'utilisateur `admin`, vous pouvez passer root avec `sudo su`)
+- Savoir se connecter en root sur votre système, par exemple via [SSH](/ssh). (Note : en étant connecté en tant qu'utilisateur `admin`, vous pouvez passer root avec `sudo su`)
 
-* Connaître les commandes basiques `cd`, `ls`, `mkdir`, `rm`
+- Connaître les commandes basiques `cd`, `ls`, `mkdir`, `rm`
 
-* Avoir une sauvegarde au cas où ça ne se passe pas comme prévu
+- Avoir une sauvegarde au cas où ça ne se passe pas comme prévu
 
-* Disposer d'un stockage supplémentaire (disque SSD, disque dur, clé USB) branché à votre serveur en USB ou en SATA
+- Disposer d'un stockage supplémentaire (disque SSD, disque dur, clé USB) branché à votre serveur en USB ou en SATA
 
 ## 1. Identifier les dossiers à déplacer
 
-La commande `ncdu /` vous permet de naviguer dans les dossiers de votre serveur afin de constater leurs tailles. 
+La commande `ncdu /` vous permet de naviguer dans les dossiers de votre serveur afin de constater leurs tailles.
 
 Ci-dessous, une explication de certains chemins qui peuvent prendre du poids avec quelques commentaires pour vous aider à réduire leur poids ou à choisir de les déplacer.
 
@@ -43,7 +43,7 @@ Ci-dessous, une explication de certains chemins qui peuvent prendre du poids ave
 |--------|---|---|
 | `/home`                       | Dossiers utilisateurs accessibles via SFTP | Déplaçable sur un disque dur  |
 | `/home/yunohost.backup`       | Sauvegardes YunoHost  | Selon votre stratégie de sauvegarde, il peut être préférable de placer ce dossier sur un disque distinct de celui où se trouvent vos données ou vos bases de données |
-| `/home/yunohost.app`          | Données lourdes des applications yunohost (nextcloud, matrix...) | Déplaçable sur un disque dur |
+| `/home/yunohost.app`          | Données lourdes des applications YunoHost (nextcloud, matrix...) | Déplaçable sur un disque dur |
 | `/home/yunohost.multimedia`   | Données lourdes partagées entre plusieurs applications | Déplaçable sur un disque dur |
 | `/var/lib/mysql`              | Base de données utilisées par les applications | A laisser idéalement sur le SSD pour des raisons de performances |
 | `/var/lib/postgresql`         | Base de données utilisées par les applications | A laisser idéalement sur le SSD pour des raisons de performances  |
@@ -107,13 +107,14 @@ mkfs.ext4 /dev/VOTRE_DISQUE1
 
 Remplacez `VOTRE_DISQUE1` par le nom de la première partition sur le disque par exemple `sda1`.
 
-!!! Il est possible d'adapter cette étape, pour par exemple créer un volume raid 1 (disques en miroir) ou chiffrer le dossier. 
+!!! Il est possible d'adapter cette étape, pour par exemple créer un volume raid 1 (disques en miroir) ou chiffrer le dossier.
 
 ## 4. Monter le disque
 
 Contrairement à Windows où les disques sont accessibles avec des lettres (C:/), sous linux, les disques sont rendus accessibles via l'arborescence. "Monter" un disque signifie le rendre effectivement accessible dans l'arborescence des fichiers. Nous allons choisir arbitrairement de monter le disque dans `/mnt/hdd` mais vous pouvez le nommer différemment (par exemple `/mnt/disque` ...).
 
 Commençons par créer le répertoire :
+
 ```bash
 mkdir /mnt/hdd
 ```
@@ -126,12 +127,12 @@ mount /dev/VOTRE_DISQUE1 /mnt/hdd
 
 (Ici, `/dev/VOTRE_DISQUE1` correspond à la première partition sur le disque)
 
-
-## 5. Monter un dossier de /mnt/hdd sur un des dossiers dont on veut déplacer les données
+## 5. Monter un dossier de `/mnt/hdd` sur un des dossiers dont on veut déplacer les données
 
 Ici on va considérer que vous souhaitez déplacer les grosses données des applications qui se trouvent dans `/home/yunohost.app` ainsi que les mails sur votre disque dur.
 
 ### 5.1 Création des sous-dossiers sur le disque
+
 Pour commencer, on crée un dossier dans le disque dur
 
 ```bash
@@ -140,6 +141,7 @@ mkdir -p /mnt/hdd/var/mail
 ```
 
 ### 5.2 Passage en mode maintenance
+
 Puis, idéalement on passe en maintenance les applications qui pourraient être en train d'écrire des données.
 
 Exemple, pour nextcloud:
@@ -205,7 +207,6 @@ A partir de cette étape, vos services tournent avec leurs données sur le disqu
 
 ## 6. Monter automatiquement au démarrage
 
-
 Jusqu'ici, nous avons monté manuellement le disque et les sous-dossiers. Cependant, il est nécessaire de configurer le système pour qu'il monte automatiquement le disque après un démarrage.
 
 Si vos tests sont concluants, il faut pérenniser les points de montages, sinon dépêchez-vous de faire machine arrière en commençant par remettre en maintenance.
@@ -239,6 +240,7 @@ Utiliser Ctrl+X puis `o` pour sauvegarder.
 Vous pouvez ensuite tester de redémarrer le système pour vérifier si le disque et les sous-dossiers sont montés automatiquement.
 
 ## 7. Nettoyer les anciennes données
+
 Dès que votre nouveau setup est validé, vous pouvez procéder à la suppression des anciennes données issues de l'étape 6.3:
 
 ```bash

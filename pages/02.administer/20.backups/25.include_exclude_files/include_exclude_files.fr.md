@@ -18,7 +18,8 @@ Par défaut, si des configurations suivies par YunoHost sont modifiées, elles s
 
 Vous pouvez créer un hook de sauvegarde et un hook de restauration pour ajouter des données à sauvegarder. Ci-dessous un exemple:
 
-/etc/yunohost/hooks.d/backup/99-conf_custom
+`/etc/yunohost/hooks.d/backup/99-conf_custom`
+
 ```bash
 #!/bin/bash
 
@@ -58,7 +59,8 @@ ynh_backup "/etc/yunohost/hooks.d/backup/99-conf_custom"
 ynh_backup "/etc/yunohost/hooks.d/restore/99-conf_custom"
 ```
 
-/etc/yunohost/hooks.d/restore/99-conf_custom
+`/etc/yunohost/hooks.d/restore/99-conf_custom`
+
 ```bash
 #!/bin/bash
 
@@ -105,9 +107,11 @@ ynh_restore_file "/etc/yunohost/hooks.d/restore/99-conf_custom"
 ```
 
 ## Exclure des fichiers
+
 Il n'existe pas de mécanisme pour exclure d'une sauvegarde au format YunoHost des fichiers spécifiques, en dehors des 2 options présentées ci-dessous:
 
 ### Éviter de sauvegarder certains dossiers du `/home`
+
 Si besoin, vous pouvez spécifier que certains dossiers `home` d'utilisateurs ou utilisatrices ne soient pas sauvegardés par la commande `yunohost backup`, en créant un fichier vide nommé `.nobackup` à l'intérieur.
 
 Attention ce mécanisme ne fonctionne que pour les **sous-dossiers de premier niveau** du `/home`, comme par exemple `/home/user1` ou `/home/yunohost.multimedia` . Cela ne fonctionne pas pour les autres dossiers ou sous-dossiers, comme par exemple `/home/user1/grosdossier`.
@@ -117,7 +121,8 @@ Attention ce mécanisme ne fonctionne que pour les **sous-dossiers de premier ni
 Certaines apps comme Nextcloud sont potentiellement rattachées à des quantités importantes de données. Il est possible de ne pas les sauvegarder par défaut. Dans ce cas, on dit que l'app "sauvegarde uniquement le core" (de l'app).  
 Lors d'une mise à jour, les apps contenant une grande quantité de données effectuent généralement une sauvegarde sans ces données.
 
-Pour désactiver temporairement la sauvegarde des données volumineuses, pour les applications qui implémentent cette fonctionnalité, vous pouvez définir la variable `BACKUP_CORE_ONLY`. Pour ce faire, la variable doit être définie avant la commande de backup : 
+Pour désactiver temporairement la sauvegarde des données volumineuses, pour les applications qui implémentent cette fonctionnalité, vous pouvez définir la variable `BACKUP_CORE_ONLY`. Pour ce faire, la variable doit être définie avant la commande de backup :
+
 ```bash
 BACKUP_CORE_ONLY=1 yunohost backup create --apps nextcloud
 ```
@@ -125,7 +130,7 @@ BACKUP_CORE_ONLY=1 yunohost backup create --apps nextcloud
 Faites montre de prudence : il vous faudra alors sauvegarder vous-même les données des utilisateurs et utilisatrices de Nextcloud.
 
 Si vous souhaitez que ce comportement soit permanent:
+
 ```bash
 yunohost app setting nextcloud do_not_backup_data -v 1
 ```
-

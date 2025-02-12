@@ -10,17 +10,18 @@ page-toc:
   depth: 3
 ---
 
-
 It is possible to create your own backup method and link it to YunoHost's backup file collection system. This can be useful if you want to use your own backup software or conduct disk mount/dismount operations for example.
 
 This operation is done with a hook and will allow you to launch a backup this way:
-```
+
+```bash
 yunohost backup create --method custom
 ```
 
 Below is a simplistic example that can be used to set up a rotational backup with different disks that are changed every week:
 
-/etc/yunohost/hooks.d/backup_method/05-custom
+`/etc/yunohost/hooks.d/backup_method/05-custom`
+
 ```bash
 #!/bin/bash
 set -euo pipefail

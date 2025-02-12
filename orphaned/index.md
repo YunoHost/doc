@@ -1,4 +1,4 @@
-<div class="teasing-part">                                                                      
+<div class="teasing-part">
 
   <div class="home-logo">
     <img src="/images/ynh_logo_white_300dpi.png" width="100"/>
@@ -22,9 +22,9 @@
   </div>
 
   <div class="main-links hidden-xs">
-    <a href="/whatsyunohost">About</a> <span class="colored-bar">•</span> 
-    <a href="https://forum.yunohost.org/c/announcement" target="_blank">Latest news</a> <span class="colored-bar">•</span> 
-    <a href="/docs">Documentation</a> <span class="colored-bar">•</span> 
+    <a href="/whatsyunohost">About</a> <span class="colored-bar">•</span>
+    <a href="https://forum.yunohost.org/c/announcement" target="_blank">Latest news</a> <span class="colored-bar">•</span>
+    <a href="/docs">Documentation</a> <span class="colored-bar">•</span>
     <a href="https://donate.yunohost.org/">Donate</a>
   </div>
 
@@ -43,7 +43,6 @@
     <a class="btn btn-success btn-lg" href="/install">Get started</a>
     <h2 style="margin-top: 0"><small><a href="https://forum.yunohost.org/c/announcement">Latest news</a></small></h2>
   </div>
-
 
   <div class="row cf">
     <div class="col-md-7 text-right">

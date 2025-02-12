@@ -17,16 +17,19 @@ page-toc:
 
 ## Durante l'installazione di YunoHost
 
-#### Individuare il proprio IP
+### Individuare il proprio IP
 
 Se stai installando su un VPS allora il provider dovrebbe averti indicato il tuo indirizzo IP.
 
 Se stai installando su un computer casalingo (ad esempio un Raspberry Pi o un OLinuXino) devi individuare l'indirizzo IP che è stato attribuito al computer dopo averlo collegato al router. Questi sono alcuni sistemi:
+
 - avvia un terminale e dai il comando `sudo arp-scan --local` per elencare gli indirizzi IP sulla rete locale;
 - usa l'interfaccia del router per vedere la lista dei computer collegati o controllane i log;
 - collega un monitor al tuo server YunoHost, fai login e digita `hostname --all-ip-address`.
 
-#### Collegamento
+### Collegamento
+
+! Questa sezione deve essere riscritta, ora l'utente `admin` non esiste più ed è sostituito dal gruppo `admins`.
 
 Se come esempio il tuo indirizzo IP è `111.222.333.444` avvia un terminale e digita:
 
@@ -38,7 +41,7 @@ Ti verrà richiesta una password. Nel caso tu stia utilizzando un VPS questa ti 
 
 ! Dalla versione 3.4 di YunoHost, dopo aver completato il processo di post installazione, non sarà più possibile fare login da `root`: invece **sarà necessario fare login usando l'utente `admin`!**. Nel caso in cui il server LDAP non stia funzionando e l'utente `admin` sia inutilizzabile sarà sempre possibile fare login da `root` solo dalla rete locale.
 
-#### Cambio della password
+### Cambio della password
 
 Dopo esserci loggati per la prima volta è necessario cambiare la password di root e ti dovrebbe essere richiesto dal server stesso; nel caso in cui questo non accada usa il comando `passwd`. È importante scegliere una password ragionevolmente robusta. Nota che la password di root verrà sovrascritta dalla password di admin dal processo di postinstallazione.
 
@@ -49,7 +52,7 @@ Se hai installato il server a casa e stai provando a collegarti dall'esterno del
 Se conosci esclusivamente l'indirizzo IP del tuo server:
 
 ```bash
-ssh admin@111.222.333.444
+ssh username@111.222.333.444
 ```
 
 Dopo di che dovrai inserire la password di amministratore creata nella [procedura di postinstallazione](/postinstall).
@@ -57,13 +60,13 @@ Dopo di che dovrai inserire la password di amministratore creata nella [procedur
 Se invece hai configurato il DNS (o hai modificato il file `/etc/hosts`), puoi semplicemente usare il tuo nome di dominio:
 
 ```bash
-ssh admin@your.domain.tld
+ssh username@your.domain.tld
 ```
 
 Se hai modificato la porta in ascolto per SSH devi aggiungere l'opzione `-p <portnumber>` al comando, cioè:
 
 ```bash
-ssh -p 2244 admin@your.domain.tld
+ssh -p 2244 username@your.domain.tld
 ```
 
 !!! Se sei loggato come `admin` ma vuoi usare l'utente `root` per maggiore comodità (ad esempio per evitare di scrivere `sudo` prima di ogni comando) puoi usare il comando `sudo su`.
@@ -104,16 +107,16 @@ Una discussione più approfondita relativa a sicurezza & SSH è su [questa pagin
 
 The `yunohost` command can be used to administrate your server and perform the various actions similarly to what you do on the webadmin. The command must be launched either from the `root` user or from the `admin` user by preceeding them with `sudo`. (ProTip™ : you can become `root` with the command `sudo su` as `admin`).
 
-YunoHost commands usually have this kind of structure : 
+YunoHost commands usually have this kind of structure :
 
-```bash
+```text
 yunohost app install wordpress --label Webmail
           ^    ^        ^             ^
           |    |        |             |
     category  action  argument      options
 ```
 
-Don't hesitate to browse and ask for more information about a given category or action using the the `--help` option. For instance, those commands : 
+Don't hesitate to browse and ask for more information about a given category or action using the the `--help` option. For instance, those commands :
 
 ```bash
 yunohost --help

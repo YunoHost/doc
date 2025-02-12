@@ -7,6 +7,6 @@ routes:
   default: '/admindoc'
 ---
 
-### Administer
+# Administration guide
 
-# Learn about self-hosting, how to install and use YunoHost
+### Learn about self-hosting, how to install and use YunoHost

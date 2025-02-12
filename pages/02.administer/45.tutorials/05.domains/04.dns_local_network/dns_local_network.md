@@ -10,12 +10,14 @@ routes:
 After completing your server installation, it is possible that your domain will not be accessible through the local network. This is an issue known as [hairpinning](http://en.wikipedia.org/wiki/Hairpinning) - a feature that is not well supported by some internet routers.
 
 To solve this issue you can:
+
 - configure your router's DNS
 - or alternatively -  your /etc/hosts files on your clients workstation
 
 ### Find the local IP address of your server
 
 First you need to find out the local IP of your server
+
 - either using the tricks lister [here](/finding_the_local_ip)
 - or if in the webadmin, in the Diagnosis section, under Internet Connectivity, IPv4, click on 'Details' and you should find an entry for 'Local IP'
 - or using the command line on the server : `hostname -I`
@@ -25,6 +27,7 @@ First you need to find out the local IP of your server
 The goal here is to create a network wide redirection handled by your router. The idea is to create a DNS redirection to your server's IP. You should access your router's configuration and look for DNS configuration, then add a redirection to your server's IP (e.g. redirect `yunohost.local` to `192.168.1.21`).
 
 ### SFR Box
+
 If you haven't found your server private IP, you may find it using the SFR box admin panel:  
     Go to Network tab > General
 <img src="/user/images/ip_serveur.png" width=800>
@@ -48,5 +51,5 @@ Modifying hosts file should be done only if you cannot alter your box's DNS or r
 Add a line at the end of the file containing your server private IP followed by a space and your domain name
 
 ```bash
-192.168.1.62	domain.tld
+192.168.1.62 domain.tld
 ```

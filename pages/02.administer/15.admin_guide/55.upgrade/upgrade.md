@@ -19,7 +19,7 @@ Click on green upgrade buttons to upgrade the system and applications.
 
 Here are some example of corresponding command lines:
 
-``` bash
+```bash
 # Fetch available updates
 yunohost tools update
 
@@ -32,7 +32,3 @@ yunohost tools upgrade apps
 # Upgrade a specific application
 yunohost app upgrade wordpress
 ```
-
-!! If you are upgrading from YunoHost below v4.2.2, `system` and `apps` were flags of the command. Add `--` before them:
-!! `yunohost tools upgrade --system`
-!! `yunohost tools upgrade --apps`

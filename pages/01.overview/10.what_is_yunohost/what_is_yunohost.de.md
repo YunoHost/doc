@@ -21,15 +21,15 @@ YunoHost ist ein **Betriebssystem**, das auf die einfachste Verwaltung eines **S
 - ![](image://icon-medic.png?resize=32&classes=inline) Erstellen und Wiederherstellen von **Backups** ;
 - ![](image://icon-door.png?resize=32&classes=inline) Stellen Sie über das **Benutzerportal** <small>(NGINX, SSOwat)</small> gleichzeitig eine Verbindung zu allen Apps her ;
 - ![](image://icon-mail.png?resize=32&classes=inline) Enthält einen **vollständigen E-Mail-Stack** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
-- ![](image://icon-messaging.png?resize=32&classes=inline) … sowie **einen Instant Messaging Server** <small>(XMPP)</small> ;
 - ![](image://icon-lock.png?resize=32&classes=inline) Verwaltet **SSL-Zertifikate** <small>(basierend auf Let's Encrypt)</small> ;
-- ![](image://icon-shield.png?resize=32&classes=inline) … und **Sicherheitssysteme** <small>(fail2ban, yunohost-firewall)</small> ;
+- ![](image://icon-shield.png?resize=32&classes=inline) … und **Sicherheitssysteme** <small>(`fail2ban`, `yunohost-firewall`)</small> ;
 
 ## Ursprung
 
 YunoHost wurde im Februar 2012 aus folgender Situation heraus erstellt:
 
- <blockquote><p>"Scheiße, ich bin zu faul, um meinen Mailserver neu zu konfigurieren ... Beudbeud, wie hast Du deinen kleinen Server mit LDAP zum Laufen gebracht?"</p><small> Kload, Februar 2012</small></blockquote>
+> "Scheiße, ich bin zu faul, um meinen Mailserver neu zu konfigurieren ... Beudbeud, wie hast Du deinen kleinen Server mit LDAP zum Laufen gebracht?"
+> <small> Kload, Februar 2012</small>
 
 Alles, was benötigt wurde, war eine Administrationsoberfläche für Beudbeud's Server, um etwas nutzbar zu machen, also entschied sich Kload, eine zu entwickeln. Schließlich wurde YunoHost v1, nach der Automatisierung mehrerer Konfigurationen und der Paketierung in einigen Webanwendungen, fertiggestellt.
 
@@ -48,9 +48,6 @@ Sie können Ihre Freunde, Ihre Familie und Ihr Unternehmen sicher und problemlos
 
 ## Artworks
 
-Schwarz und Weiss YunoHost PNG logo by ToZz (400 × 400 px):
+Schwarz und Weiss YunoHost PNG logo by ToZz (400 × 400 px). Licence: CC-BY-SA 4.0. Logos and other artwork are available in <https://github.com/YunoHost/yunohost-artwork>
 
-![](image://ynh_logo_black_300dpi.png?resize=220)
-![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)
-
-Licence: CC-BY-SA 4.0
+![](image://ynh_logo_black_300dpi.png?resize=220) ![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)
