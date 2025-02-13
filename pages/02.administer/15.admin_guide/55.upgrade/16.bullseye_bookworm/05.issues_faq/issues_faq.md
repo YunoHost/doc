@@ -13,14 +13,15 @@ If the suggested solutions don't work, please [ask for help](/help).
 
 ## Python apps
 
-After upgrading, your python apps should be unavailable because their virtual environment (venv) needs to be rebuilt.
+After upgrading, some python apps should be unavailable because their virtual environment (venv) needs to be rebuilt.
 
 To do that you can run the pending migrations in `Webadmin > Update`. 
 
-The apps below won't be automatically repaired, you need to force-upgrade them manually instead with `yunohost app upgrade -F APP`.
+In addition, the apps below won't be automatically repaired, you need to force-upgrade them manually instead, with `yunohost app upgrade -F APP`.
 
 Apps which won't be automatically repaired and need a force upgrade:
-- borgserver and all its instances (eg. borgserver__2, borgserver__3, ...)
+- __borgserver__ and all its instances (eg. `borgserver__2`, `borgserver__3`, ...)
+- __borg__ (https://apps.yunohost.org/app/borg) : rebuilt using `yunohost app upgrade -F borg` (otherwise, will sent emails notifying that "The backup miserably failed to backup", with error `ModuleNotFoundError: No module named 'borg'`)
 
 TODO: list those apps
 
@@ -34,6 +35,9 @@ The web server, nginx, might need a restart before being fully operational. Plea
 sudo systemctl restart nginx
 ```
 
+## Mailman3 failed in diagnostics
+
+A manual change in a configuration file is needed for Mailman3 to work : https://github.com/YunoHost-Apps/mailman3_ynh/issues/48#issuecomment-2536194377
 
 <!-- ### Can't run the migration due to `libc6-dev : Breaks: libgcc-8-dev issue`
 
