@@ -44,7 +44,7 @@ Installate `gem`, e in seguito installate `larch` sul pc client :
 sudo gem install larch
 ```
 
-Spostate le mail dal vecchio al nuovo server :
+Spostate le mail dal vecchio al nuovo server:
 
 ```bash
 larch -a -f imaps://server_di_origine.org -t imaps://server_di_destinazione.org
