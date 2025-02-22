@@ -1,0 +1,53 @@
+---
+title: Spostare le proprie mail da un server terzo a YunoHost
+template: docs
+taxonomy:
+    category: docs
+routes:
+  default: '/email_migration'
+---
+
+*[Documentazione integrativa del paragrafo relativo alle email di YunoHost](/email)*.
+
+La migrazione delle proprie mail verso il proprio server YunoHost, può avvenire attraverso l'utilizzo di due programmi appositi : ImapSync o Larch.
+
+Questi programmi dovranno essere installati su un pc che funge da client. La procedura di migrazione rispecchia lo schema seguente:
+
+**`Attuale server email −> pc client con installati ImapSync o Larch −> nuovo server email (YunoHost)`**
+
+### ImapSync
+
+[Sito web di ImapSync](http://imapsync.lamiral.info/)
+
+Installate ImapSync sul pc client seguendo questa [guida](http://imapsync.lamiral.info/INSTALL) :
+
+```bash
+sudo dnf install imapsync # Per Fedora
+```
+
+Spostate le mail dal vecchio al nuovo server:
+
+```bash
+imapsync --host1 <dominio/IP> --port1 993 --ssl1 --user1 <utente> --password1 <password> \
+--host2 <dominio/IP> --port2 993 --ssl2 --user2 <utente> --password2 <password>
+```
+
+I parametri di migrazione `--port 993` e `--ssl` sono specifici di un server mail YunoHost.
+
+### Larch
+
+[Sito web di Larch](https://github.com/rgrove/larch/)
+
+Installate `gem`, e in seguito installate `larch` sul pc client :
+
+```bash
+sudo gem install larch
+```
+
+Spostate le mail dal vecchio al nuovo server :
+
+```bash
+larch -a -f imaps://server_di_origine.org -t imaps://server_di_destinazione.org
+```
+
+Per altre tipologie di migrazione, fate riferimento alla [guida di Larch](https://github.com/rgrove/larch#label-Usage).
