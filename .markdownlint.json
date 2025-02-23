@@ -1,5 +1,4 @@
 {
-    "extends": "markdownlint-rules-grav-pages/rules/frontmatter.schema.json",
     "default": true,
     "code-block-style": {
         "style": "fenced"
@@ -60,5 +59,6 @@
     },
     "line-length": false,
     "no-reversed-links": false,
-    "no-missing-space-atx": false
+    "no-missing-space-atx": false,
+    "first-line-heading": false
 }
