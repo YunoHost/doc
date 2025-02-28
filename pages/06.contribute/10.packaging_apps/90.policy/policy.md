@@ -28,14 +28,14 @@ If you run YunoHost for your business, you are responsible for doing your due di
 
 ### Nature of the app
 
-In addition, the YunoHost team decided to not including apps in the official catalog if they:
+In addition, the YunoHost team decided to not include apps in the official catalog if they:
 - are overly complex to deploy or resource-hungry compared to their features ; 
 - only apply to super niche use cases ;
 - promote cryptocurrencies ;
-- promote AI for purposes deemed gadgety compared to the ecological cost involved behind the scenes ;
+- promote AI for purposes deemed futile compared to the ecological cost involved behind the scenes ;
 - promote shady activities such as tracking/stalking people.
 
-The team may make exceptions to these criterias on a case-by-case basis. The team may also amend this list with other criterias in the future.
+The team may make exceptions to these criteria on a case-by-case basis. The team may also amend this list with other criteria in the future.
 
 ### What to do if you're not happy with these criterias
 
