@@ -91,3 +91,17 @@ Nous ne donnons pas de calendrier.
 Nous sommes une poignée de volontaires travaillant sur notre temps libre pour maintenir et développer YunoHost. Nous n'avons pas de responsable produit ou de chef de projet, nous ne sommes pas une entreprise. Nous faisons ce que nous pouvons, parce que nous aimons ce logiciel, quand nous le pouvons.
 
 Si vous souhaitez vraiment voir une fonctionnalité codée ou documentée, ou une application packagée, [envisagez de contributer](/contribute)! Nous adorerions vous aider à vous mettre en selle.
+
+### What is YunoHost's policy regarding the apps included in the official catalog ?
+
+See [this page](/packaging_policy)
+
+### Why won't you include [feature X] ?
+
+YunoHost is primarily designed for not-so-tech-savvy users and aims to remain relatively simple in terms of UI/UX. At the same time, the project has limited time and energy available to be maintained and developed. Therefore we may lower the priority of features, or refuse entirely the inclusion of features, based on the criteria that they:
+
+- would only be meaningful for advanced / power-users stuff which is out of the scope of the project ;
+- would introduce too much UI/UX bloat ;
+- would only cover unrealistic threat models ;
+- would be there only to satisfy purists ;
+- or overall would not be worth it in terms of development/maintenance time/energy for what it brings to the project.
