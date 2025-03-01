@@ -32,7 +32,7 @@ In addition, the YunoHost team decided to not include apps in the official catal
 - are overly complex to deploy or resource-hungry compared to their features ; 
 - only apply to super niche use cases ;
 - promote cryptocurrencies ;
-- promote AI for purposes deemed futile compared to the ecological cost involved behind the scenes ;
+- promote AI for purposes deemed futile compared to the ecological and sociological costs involved behind the scenes ;
 - promote shady activities such as tracking/stalking people.
 
 The team may make exceptions to these criteria on a case-by-case basis, on its own volition. Debates and nitpicking may most likely not be welcomed. The team may also amend this list with other criteria in the future.
