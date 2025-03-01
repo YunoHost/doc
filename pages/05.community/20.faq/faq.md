@@ -93,22 +93,7 @@ If you really want to have a feature implemented or documented, or an app packag
 
 ### What is YunoHost's policy regarding the apps included in the official catalog ?
 
-The rule of thumb is that we only include software licensed under a free-software license in the official app catalog.
-
-However, as YunoHost evolved, some gray-cases appeared with softwares that would be relevant for YunoHost's goal and match its spirit, while not being strictly-speaking free-software. Situations such as:
-
-- software promoting the use of centralized services, though precisely to avoid their direct usage ;
-- software relying on non-free dependencies or assets ;
-- "new" post-open-source / ethical-yet-not-free licenses such as the [ACSL](https://anticapitalist.software/), the [HL3](https://firstdonoharm.dev/) or the [CoopCycle License](https://github.com/coopcycle/coopcycle-web/blob/master/LICENSE) ;
-- "open-core" models, trademark clauses, or business-related license clauses (such as the BSL) which are meant to ensure the project's sustainability while still remaining ethical.
-
-While we believe free software principles are an essential footstep towards [YunoHost's goal](#what-s-yunohost-goal), we believe they are a means and not an end. We reject the purist vision according to which software is either free or proprietary, and the flawed premise that technology is fundamentally neutral. We believe that ethical software and technology can and should exist beyond the definition of free software layed 40 years ago (see also: [Freedom isn't Free](https://logicmag.io/failure/freedom-isnt-free/) and [Post-Open Source](https://www.boringcactus.com/2020/08/13/post-open-source.html)).
-
-The project therefore allows the inclusion inside the official app catalog, ***on a case-by-case basis***, of apps which does not qualify as "free software", yet considered to be ethical and worthy of interest for [YunoHost's goal](#what-s-yunohost-goal). Such apps are tagged in the catalog, such that an explicit message displayed before their installation.
-
-If you notice an app is missing such a tag/disclaimer, feel free to open a discussion or pull requet on [the app catalog](https://github.com/YunoHost/apps/).
-
-If you run YunoHost for your business, you are responsible for doing your due diligence by checking the licenses of the software you want to install on your server.
+See [this page](/packaging_policy)
 
 ### Why won't you include [feature X] ?
 
