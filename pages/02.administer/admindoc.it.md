@@ -10,4 +10,4 @@ routes:
 
 # Guida di amministrazione
 
-### Scoprire il self-hosting, come installare e utilizzare YunoHost
+## Scoprire il self-hosting, come installare e utilizzare YunoHost

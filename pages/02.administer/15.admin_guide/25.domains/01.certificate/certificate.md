@@ -71,7 +71,7 @@ Once this is done, you can check that the certificate is live via your browser b
 [/ui-tab]
 [/ui-tabs]
 
-##### Troubleshooting
+#### Troubleshooting
 
 If due to some bad tweaking, your certificate ends up in a bad state (e.g. lost the certificate or unable to read the files), you should be able to clean the situation by regenerating a self-signed certificate:
 

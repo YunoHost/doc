@@ -102,11 +102,11 @@ Your SMTP relay is now configured!
 
 ! [fa=exclamation-triangle /] From now on, a non trusty SMTP relay provider could read or use the data of all the emails you send without telling you (but still won't be able to read nor to use the data from emails you receive).
 
-#### Relay all emails, even those from domains managed by Yunohost
+#### Relay all emails, even those from domains managed by YunoHost
 
-If you have plenty of trust in your SMTP relay, have a second IMAP server that you wish or are forced to use instead of the Yunohost one, you can choose to relay all emails even those from domain names managed by Yunohost by commenting the following two lines in `/etc/postfix/main.cf` :
+If you have plenty of trust in your SMTP relay, have a second IMAP server that you wish or are forced to use instead of the YunoHost one, you can choose to relay all emails even those from domain names managed by YunoHost by commenting the following two lines in `/etc/postfix/main.cf` :
 
-```
+```text
 #virtual_mailbox_domains = ldap:/etc/postfix/ldap-domains.cf
 #virtual_alias_maps = ldap:/etc/postfix/ldap-aliases.cf,ldap:/etc/postfix/ldap-groups.cf
 ```

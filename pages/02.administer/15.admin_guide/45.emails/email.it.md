@@ -43,7 +43,7 @@ Se il vostro server diventa non più raggiungibile le mail inviate al vostro ser
 ## Cancellare il proprio IP dalle black lists
 
 Può succedere che le mail inviate dal vostro server YunoHost siano considerate come spam dai grandi provider di posta elettronica.
-A volte il vostro indirizzo IP viene considerato come dannoso o come fonte di spam perché è stato usato in precedenza per tale scopo da altri. 
+A volte il vostro indirizzo IP viene considerato come dannoso o come fonte di spam perché è stato usato in precedenza per tale scopo da altri.
 Per accertarsi che il vostro indirizzo IP non sia presente nell'elenco degli indirizzi ritenuti dannosi, e nel caso rimuoverlo, potete seguire questo [link](/blacklist_forms).
 
 ## Migrazione delle vostre mail da un fornitore terzo al vostro server YunoHost
@@ -56,4 +56,4 @@ Consultate [questa pagina](/email_configure_relay).
 
 ## Per saperne di più
 
-Per migliorare la comprensione del sistema mail e dei suoi protocolli questa è un'[esaustiva presentazione ](https://www.octopuce.fr/conference-lemail-vaste-sujet-par-benjamin-sonntag/) (in francese).
+Per migliorare la comprensione del sistema mail e dei suoi protocolli questa è un'[esaustiva presentazione](https://www.octopuce.fr/conference-lemail-vaste-sujet-par-benjamin-sonntag/) (in francese).

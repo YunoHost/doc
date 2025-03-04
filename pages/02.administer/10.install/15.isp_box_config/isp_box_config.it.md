@@ -25,10 +25,11 @@ L'interfaccia di amministrazione del vostro router è, quasi sempre, raggiungibi
 ### 2. Trovare l'IP del server sulla vostra rete locale
 
 Cercate l'IP *locale* del vostro server così:
+
 - dalla pagina di amministrazione del vostro router, che potrebbe elencarvi i dispositivi connessi
 - dalla pagina webadmin di YunoHost, sezione 'Diagnostica' 'Connettività internet', scegliete 'Dettagli' nella riga IPv4.
 - dalla linea di comando del vostro server con il comando `hostname -I`
-    
+
 Un indirizzo IP locale assomiglia, normalmente, a `192.168.xx.yy` oppure `10.0.xx.yy`.
 
 L'indirizzo IP locale deve essere necessariamente statico di modo che il reindirizzamento che state configurando nei prossimi passi raggiungerà sempre il vostro server. Per fare ciò dovrete configurare il router in modo che l'indirizzo del vostro server sia definito statico anziché dinamico.
@@ -41,13 +42,13 @@ Dovete reindirizzare ognuna delle porte elencate di seguito, verso l'IP locale d
 
 - Web: `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>
 - [SSH](/ssh): `22`
-- [XMPP](/XMPP): `5222` <small>(client)</small>, `5269` <small>(server)</small>
+- [XMPP](https://wikipedia.org/wiki/XMPP): `5222` <small>(client)</small>, `5269` <small>(server)</small>
 - [Email](/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>
 
 Se utilizzate modem e router separati, dovete:
 
 1. prima sul modem (l'apparecchio più vicino ad internet) dovrete creare delle regole per reindirizzare le porte di cui sopra al router;
-2. Successivamente sul router (l'apparecchio che sta in mezzo fra il modem e gli altri apparecchi della rete locale) Reindirizzare le porte dal router all'indirizzo statico del vostro server. 
+2. Successivamente sul router (l'apparecchio che sta in mezzo fra il modem e gli altri apparecchi della rete locale) Reindirizzare le porte dal router all'indirizzo statico del vostro server.
 
 ! [fa=exclamation-triangle /] Alcuni internet provider bloccano l'apertura della porta 25 (mail SMTP) per combattere lo spam. Altri, più raramente, non permettono l'uso delle porte 80/443. A seconda dell'ISP è possibile aprirle nella configurazione del router... Controllate [questa pagina](/isp) per maggiori informazioni.
 
@@ -60,7 +61,3 @@ sudo yunohost firewall reload
 ```
 
 le porte del router dovrebbero essere automaticamente reindirizzate verso il server.
-
-
-
-

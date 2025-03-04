@@ -85,7 +85,7 @@ ynh_app_setting_set --app=$app --key=db_name --value=$db_name
 
 ## Helper system
 
-We call helpers a set of custom bash function created by the YunoHost project to standardize common operations accross all apps. They are all prefixed with `ynh_`. The full list and documentation of these helpers is available on [this page](/packaging_apps_scripts_helpers). Some of these helpers are now partially obsolete as they are now handled by the core via app resources.
+We call helpers a set of custom bash function created by the YunoHost project to standardize common operations accross all apps. They are all prefixed with `ynh_`. The full list and documentation of these helpers is available on [this page](/packaging_apps_helpers). Some of these helpers are now partially obsolete as they are now handled by the core via app resources.
 
 Here is the list of the major ones:
 
@@ -143,18 +143,18 @@ More infos on the `source` resource in [the resource system documentation](/pack
 
 ## Common operations (TODO/FIXME)
 
-#### installing/upgrading app sources
+### installing/upgrading app sources
 
-#### adding configurations
+### adding configurations
 
-#### adding a systemd service
+### adding a systemd service
 
-#### curl / automatizing install forms
+### curl / automatizing install forms
 
-#### classic stuff for nodejs apps
+### classic stuff for nodejs apps
 
-#### classic stuff for php apps
+### classic stuff for php apps
 
-#### classic stuff for python apps
+### classic stuff for python apps
 
-#### classic stuff for ??? apps
+### classic stuff for ??? apps

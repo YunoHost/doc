@@ -37,7 +37,7 @@ TODO/FIXME: moar explanations? What is missing?
 
 ## SSO integration
 
-This documentation apply to Yunohost >=12. On Yunohost <12 the header was a bit different but the idea was the same.
+This documentation apply to YunoHost >=12. On YunoHost <12 the header was a bit different but the idea was the same.
 
 Internally, SSOwat will on-the-fly inject theses different headers:
 
@@ -58,25 +58,32 @@ And for some app which need the auth basic header, you generally don't need to s
 
 #### App wich reuse the auth basic header to authenticate to an internal service
 
-Currently you don't need any specific setup on YunoHost side. Since Yunohost provide the header needed, the application should be able to use it correclty. Depending of the application, some configuration could be needed.
+Currently you don't need any specific setup on YunoHost side. Since YunoHost provide the header needed, the application should be able to use it correclty. Depending of the application, some configuration could be needed.
 
 #### Application wich provide an API
 
 Some app, like Nextcloud or SOGo provide an service like Caldav, Cardav or Webdav, the client will need to send the basic authentication and the nginx must transmit this authentication header to the serivice which will validate the authentication. Currently to make it working correctly you need to set a following app settings this way:
+
 ```bash
 ynh_app_setting_set --key=protect_against_basic_auth_spoofing --value=false
 ```
+
 This will say to YunoHost that for this app we can safely transmit auth basic header from the client to the application.
 
 If you need to change this behavior after the application installation, you can set the option with:
+
 ```bash
 sudo yunohost app setting <my_app> protect_against_basic_auth_spoofing -v false
 ```
+
 Then you must regenerate the SSOwat configuration with:
+
 ```bash
 sudo yunohost app ssowatconf
 ```
+
 And, finally, you need to reload NGINX configuration with:
+
 ```bash
 sudo systemctl reload nginx.service
 ```

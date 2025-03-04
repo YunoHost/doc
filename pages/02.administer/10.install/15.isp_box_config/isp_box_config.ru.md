@@ -41,7 +41,7 @@ routes:
 
 - Веб: 80 <small>(HTTP)</small>, 443 <small>(HTTPS)</small>
 - [SSH](/ssh): 22
-- [XMPP](/XMPP): 5222 <small>(клиенты)</small>, 5269 <small>(серверы)</small>
+- [XMPP](https://wikipedia.org/wiki/XMPP): 5222 <small>(клиенты)</small>, 5269 <small>(серверы)</small>
 - [Почтовые](/email): 25, 587 <small>(SMTP)</small>, 993 <small>(IMAP)</small>
 
 Если вы используете и модем, и маршрутизатор, то вам необходимо выполнить следующее:

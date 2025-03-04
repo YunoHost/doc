@@ -165,7 +165,7 @@ Potete seguire questo tutorial sul forum per impostare Borg fra due server: <htt
 
 Alternativamente, la app Archivist permette di impostare un sistema simile: <https://forum.yunohost.org/t/new-app-archivist/3747>
 
-#### Per le schede ARM: backup completo usando USBimager o `dd` 
+#### Per le schede ARM: backup completo usando USBimager o `dd`
 
 Se state usando una scheda ARM un altro sistema per fare backup completi può essere la creazione di un'immagine della card SD.
 

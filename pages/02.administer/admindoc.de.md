@@ -9,4 +9,4 @@ routes:
 
 # Administratorhandbuch
 
-### Entdecke das Selbsthosten und lerne, wie YunoHost installiert und benutzt wird
+## Entdecke das Selbsthosten und lerne, wie YunoHost installiert und benutzt wird

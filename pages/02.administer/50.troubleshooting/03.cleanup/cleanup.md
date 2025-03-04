@@ -14,4 +14,4 @@ These are a few guidelines on how to perform some cleanup on the server, for ins
 One may use the following command, to perform basic space cleanup (apt, journalctl, logs, ...) :
 `sudo yunohost tools basic-space-cleanup`
 
-Additional steps may be needed, to address current shortcomings : see https://github.com/YunoHost/issues/issues/2329 for instance.
+Additional steps may be needed, to address current shortcomings : see <https://github.com/YunoHost/issues/issues/2329> for instance.

@@ -17,7 +17,7 @@ You can manage backups either from the command line (`yunohost backup --help`) o
 
 The current default method consists in creating a `.tar` archive containing all relevant files.
 
-#### Creating backups
+### Creating backups
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the webadmin"]
@@ -65,7 +65,7 @@ For more information and options about backup creation, consult `yunohost backup
 [/ui-tab]
 [/ui-tabs]
 
-#### Downloading backups
+### Downloading backups
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the webadmin"]

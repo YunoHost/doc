@@ -15,7 +15,7 @@ YunoHost è basato sulla distribuzione Debian, quindi rispetta le licenze degli 
 
 I programmi e i pacchetti hanno la loro propria licenza.
 
-#### Quale obbiettivo si prefigge YunoHost?
+#### Quale obbiettivo si prefigge YunoHost? {#quale-obbiettivo-si-prefi}
 
 Siamo convinti che la decentralizzazione di Internet, e il riappropriarsi della responsabilità e del controllo dei nostri dati e servizi, sia una questione essenziale per garantire una società libera e democratica.
 
@@ -102,9 +102,9 @@ Tuttavia nello sviluppo di YunoHost sono apparsi alcuni casi dubbi a causa di pr
 - "nuove" licenze post-open-source / etiche-ma-non-libere come ad esempio [ACSL](https://anticapitalist.software/), the [HL3](https://firstdonoharm.dev/) o [CoopCycle License](https://github.com/coopcycle/coopcycle-web/blob/master/LICENSE);
 - modelli "open-core", clausole di protezione di marchi o su licenze "business-related" (come ad esempio BSL) pensate per mantenere i progetti pur rimanendo eticamente accettabili.
 
-Pur rimanendo convinti che i principi del software libero siano un passi essenziali per quelli che sono [gli obbiettivi di YunoHost](#what-s-yunohost-goal) pensiamo anche che questi siano mezzi e non fini. Rifiutiamo la visione purista secondo la quale il software è libero o proprietario e la premessa erronea che la tecnologia sia fondamentalmente neutrale. Crediamo che i programmi e la tecnologia possano e debbano esistere oltre la definizione di software libero pensata 40 anni fa (vedi anche: [Freedom isn't Free](https://logicmag.io/failure/freedom-isnt-free/) e [Post-Open Source](https://www.boringcactus.com/2020/08/13/post-open-source.html)).
+Pur rimanendo convinti che i principi del software libero siano un passi essenziali per quelli che sono [gli obbiettivi di YunoHost](#quale-obbiettivo-si-prefi) pensiamo anche che questi siano mezzi e non fini. Rifiutiamo la visione purista secondo la quale il software è libero o proprietario e la premessa erronea che la tecnologia sia fondamentalmente neutrale. Crediamo che i programmi e la tecnologia possano e debbano esistere oltre la definizione di software libero pensata 40 anni fa (vedi anche: [Freedom isn't Free](https://logicmag.io/failure/freedom-isnt-free/) e [Post-Open Source](https://www.boringcactus.com/2020/08/13/post-open-source.html)).
 
-Di conseguenza il progetto permette l'inclusione nel catalogo ufficiale ***caso per caso*** di applicazioni che non si definiscono "software libero" ma considerati etici e degni di interesse per [gli obbiettivi di YunoHost](#what-s-yunohost-goal). Queste applicazioni sono segnalate nel catalogo e un messaggio apposito viene mostrato prima dell'installazione.
+Di conseguenza il progetto permette l'inclusione nel catalogo ufficiale ***caso per caso*** di applicazioni che non si definiscono "software libero" ma considerati etici e degni di interesse per [gli obbiettivi di YunoHost](#quale-obbiettivo-si-prefi). Queste applicazioni sono segnalate nel catalogo e un messaggio apposito viene mostrato prima dell'installazione.
 
 Se trovate un'applicazione mancante di tale segnalazione potete parire una discussione o aprire una pull request sul [catalogo della applicazioni](https://github.com/YunoHost/apps/).
 

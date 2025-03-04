@@ -16,7 +16,6 @@ Il convient de souligner qu’il y a ici deux aspects différents :
 
 Parfois, l'intégration LDAP est possible, mais pas l'intégration SSO (même si l'inverse serait vraiment étrange car l'intégration LDAP est quelque peu requise pour que le SSO fonctionne)
 
-
 Le système SSO est géré par [SSOwat](https://github.com/YunoHost/ssowat) et gère également le système de « permissions » qui définit si un utilisateur (ou un visiteur anonyme) peut ou non accéder à l'application.
 
 ## LDAP integration
@@ -24,7 +23,6 @@ Le système SSO est géré par [SSOwat](https://github.com/YunoHost/ssowat) et g
 LDAP est un standard de facto lorsqu'il s'agit de partager une base de données de comptes d'utilisateurs commune entre plusieurs applications, d'où son utilisation dans le contexte de YunoHost.
 
 Cependant, chaque application implémente la prise en charge LDAP à sa manière (ou non) et doit être dotée de paramètres pour communiquer réellement avec la base de données LDAP de YunoHost, généralement via son fichier de configuration. Il est conseillé de rechercher des exemples concrets d'applications les mettant en œuvre (telles que Nextcloud, Wekan...), mais vous devrez généralement fournir :
-
 
 - LDAP host: `localhost` / `127.0.0.1`
 - LDAP port: `389`
@@ -39,10 +37,10 @@ TO-DO/FIX-ME: plus d'explications ? Que manque-t-il?
 
 ## SSO integration
 
-En interne, SSOwat injectera à la volée [HTTP Basic Auth Headers](https://en.wikipedia.org/wiki/Basic_access_authentication) tel que `Authorization: Basic <base64credentials>`. 
+En interne, SSOwat injectera à la volée [HTTP Basic Auth Headers](https://en.wikipedia.org/wiki/Basic_access_authentication) tel que `Authorization: Basic <base64credentials>`.
 Certaines applications peuvent inclure la prise en charge de l'authentification de base prête à l'emploi... Les applications PHP nécessitent souvent cette ligne dans la configuration NGINX :
 
-```
+```nginx
 fastcgi_param REMOTE_USER     $remote_user;
 ```
 

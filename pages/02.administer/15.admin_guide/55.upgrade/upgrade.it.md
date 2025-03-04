@@ -11,7 +11,7 @@ routes:
 
 ## Dalla pagina webadmin
 
-Nella sezione amministrazione, scegliere Aggiorna il sistema. Yunohost aggiornerà il catalogo dei pacchetti di sistema e il catalogo delle applicazioni installate e visualizzerà gli aggiornamenti disponibili.
+Nella sezione amministrazione, scegliere Aggiorna il sistema. YunoHost aggiornerà il catalogo dei pacchetti di sistema e il catalogo delle applicazioni installate e visualizzerà gli aggiornamenti disponibili.
 
 Premete i pulsanti verdi per avviare gli aggiornamenti.
 
