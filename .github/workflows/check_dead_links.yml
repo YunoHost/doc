@@ -3,7 +3,7 @@ name: Check for dead links
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [main, master]
 
 jobs:
   build:
