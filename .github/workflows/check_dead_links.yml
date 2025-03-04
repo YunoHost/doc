@@ -12,6 +12,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+    - run: pip install python-frontmatter
     - name: Check for dead links
-      run: tests/dead_links.sh
+      run: tests/dead_links.py
