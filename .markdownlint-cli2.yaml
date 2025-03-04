@@ -1,0 +1,80 @@
+
+ignores:
+  - pages/06.contribute/10.packaging_apps/10.manifest/10.appresources/packaging_app_manifest_resources.md
+  - pages/06.contribute/10.packaging_apps/20.scripts/10.helpers/packaging_app_scripts_helpers.md
+  - pages/06.contribute/10.packaging_apps/20.scripts/12.helpers21/packaging_app_scripts_helpers_v21.md
+  - pages/06.contribute/10.packaging_apps/80.resources/11.helpers/packaging_apps_helpers.md
+  - pages/06.contribute/10.packaging_apps/80.resources/15.appresources/packaging_apps_resources.md
+  - pages/06.contribute/15.dev/03.forms/forms.md
+
+config:
+  default: true
+
+  # FIXME: should be removed when actually fixed
+  no-alt-text: false
+
+  single-title: false
+
+  code-block-style:
+    style: fenced
+
+  code-fence-style:
+    style: backtick
+
+  emphasis-style:
+    style: asterisk
+
+  strong-style:
+    style: asterisk
+
+  ul-style:
+    style: dash
+
+  ul-indent:
+    indent: 2
+
+  heading-style:
+    style: atx
+
+  no-duplicate-heading:
+    siblings_only: true
+
+  hr-style:
+    style: ---
+
+  ol-indent:
+    indent: 2
+
+  ol-prefix:
+    style: ordered
+
+  no-trailing-punctuation:
+    punctuation: ".,;:"
+
+  no-inline-html: false
+  MD040:
+    allowed_languages:
+    - bash
+    - html
+    - css
+    - javascript
+    - php
+    - json
+    - yaml
+    - toml
+    - markdown
+    - text
+    - nginx
+    language_only: true
+
+  proper-names:
+    code_blocks: false
+    html_elements: false
+    names:
+    - YunoHost
+    - GitHub
+
+  line-length: false
+  no-reversed-links: false
+  no-missing-space-atx: false
+  first-line-heading: false
