@@ -35,7 +35,7 @@ In addition, the YunoHost team decided to not include apps in the official catal
 - promote AI for purposes deemed futile compared to the ecological and sociological costs involved behind the scenes ;
 - promote shady activities such as tracking/stalking people.
 
-The team may make exceptions to these criteria on a case-by-case basis, on its own volition. Debates and nitpicking may most likely not be welcomed. The team may also amend this list with other criteria in the future.
+The team may make exceptions to these criteria on a case-by-case basis, on its own volition. The team may also amend this list with other criteria in the future.
 
 ### What to do if you're not happy with these criterias
 
