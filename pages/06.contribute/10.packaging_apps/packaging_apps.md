@@ -86,22 +86,22 @@ Roughly speaking, the install itself generally consists of the following operati
 3. The admin fills the form and starts the install
 4. YunoHost provisions a bunch of technical prerequisites (called 'resources') such as:
 
-- initializes the app'skey/value store `settings.yml` with the admin's answers to the install form
-- creates a UNIX system user for this app
-- install apt dependencies needed for this app
-- picks up a port for internal reverse-proxying
-- initializes an empty SQL database
-- configures SSOwat permissions
-- ...
+    - initializes the app'skey/value store `settings.yml` with the admin's answers to the install form
+    - creates a UNIX system user for this app
+    - install apt dependencies needed for this app
+    - picks up a port for internal reverse-proxying
+    - initializes an empty SQL database
+    - configures SSOwat permissions
+    - ...
 
 5. The actual app's `install` script is ran and typically does:
 
-- fetch and deploy the app sources
-- configure the app (typically DB credentials, internal reverse-proxy port...)
-- add the NGINX configuration
-- add the systemd configuration the app's daemon
-- starts the app daemon
-- various finialization tweaks
+    - fetch and deploy the app sources
+    - configure the app (typically DB credentials, internal reverse-proxy port...)
+    - add the NGINX configuration
+    - add the systemd configuration the app's daemon
+    - starts the app daemon
+    - various finialization tweaks
 
 6. ???
 7. Application is ready to use!

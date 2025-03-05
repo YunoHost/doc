@@ -86,22 +86,22 @@ Grosso modo, l'installation proprement dite se compose généralement des opéra
 3. L'administrateur remplit le formulaire et démarre l'installation.
 4. YunoHost fournit un ensemble de pré-requis techniques (appelés 'ressources') tels que :
 
-- initialise le magasin de clés/valeurs de l'application `settings.yml` avec les réponses de l'administrateur au formulaire d'installation
-- crée un utilisateur UNIX pour cette application
-- installe les dépendances apt nécessaires à cette application
-- choisit un port pour le reverse-proxying interne
-- initialise une base de données SQL vide
-- configure les permissions SSOwat
-- ...
+    - initialise le magasin de clés/valeurs de l'application `settings.yml` avec les réponses de l'administrateur au formulaire d'installation
+    - crée un utilisateur UNIX pour cette application
+    - installe les dépendances apt nécessaires à cette application
+    - choisit un port pour le reverse-proxying interne
+    - initialise une base de données SQL vide
+    - configure les permissions SSOwat
+    - ...
 
 5. Le script `install` de l'application est exécuté et ses fonctions typiques sont de :
 
-- récupérer et déployer les sources de l'application
-- configurer l'application (typiquement les identifiants de la base de données, le port interne du reverse-proxy...)
-- ajouter la configuration de NGINX
-- ajoute la configuration systemd du daemon de l'application
-- démarre le daemon de l'application
-- divers réglages de finalisation
+    - récupérer et déployer les sources de l'application
+    - configurer l'application (typiquement les identifiants de la base de données, le port interne du reverse-proxy...)
+    - ajouter la configuration de NGINX
+    - ajoute la configuration systemd du daemon de l'application
+    - démarre le daemon de l'application
+    - divers réglages de finalisation
 
 6. ???
 7. L'application est prête à l'emploi !

@@ -59,8 +59,8 @@ Pour cela allez dans l'outil de diagnostics ou regardez en bas de la page de la 
 
 Après la mise à niveau, de nouvelles migrations sont apparues :
 
-* La recréation des virtualenvs de vos applis Python
-* La migration de PostgreSQL 13 à 15
+- La recréation des virtualenvs de vos applis Python
+- La migration de PostgreSQL 13 à 15
 
 Vous devez les lances le plus tôt possible pour garantir le bon fonctionnement de vos applis.
 

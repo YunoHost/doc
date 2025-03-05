@@ -17,17 +17,17 @@ Cette page a pour but de vous guider dans l'obtention d'une clé API d'OVH afin 
 
 2. Remplissez le formulaire avec les informations requises comme indiqué ci-dessous :
 
-- ID du compte ou adresse e-mail : Il s'agit de votre identifiant OVH habituel
-- Mot de passe : Il s'agit de votre mot de passe OVH habituel
-- Nom du script : par exemple `YunoHost Auto DNS`
-- Description du script : par exemple `YunoHost Auto DNS`
-- Validité : `Unlimited`
-- Droits : utilisez le bouton `+` pour ajouter les lignes suivantes
-  - `GET` : `/domain/zone/*`
-  - `POST` : `/domain/zone/*`
-  - `PUT` : `/domain/zone/*`
-  - `DELETE` : `/domain/zone/*`
+    - ID du compte ou adresse e-mail : Il s'agit de votre identifiant OVH habituel
+    - Mot de passe : Il s'agit de votre mot de passe OVH habituel
+    - Nom du script : par exemple `YunoHost Auto DNS`
+    - Description du script : par exemple `YunoHost Auto DNS`
+    - Validité : `Unlimited`
+    - Droits : utilisez le bouton `+` pour ajouter les lignes suivantes
+      - `GET` : `/domain/zone/*`
+      - `POST` : `/domain/zone/*`
+      - `PUT` : `/domain/zone/*`
+      - `DELETE` : `/domain/zone/*`
 
-![](image://registrar_api_ovh_1.png?resize=800)
+    ![](image://registrar_api_ovh_1.png?resize=800)
 
 3. Vous obtiendrez trois jetons (une clé d'application, une clé d'application secrète, et une clé de consommateur) qui doivent être utilisés dans la configuration de YunoHost
