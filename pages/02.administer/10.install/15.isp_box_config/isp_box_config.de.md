@@ -42,7 +42,7 @@ Das Öffnen der unten aufgeführten Ports ist notwendig, damit die verschiedenen
 
 - Web: `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>
 - [SSH](/ssh): `22`
-- [XMPP](/XMPP): `5222` <small>(clients)</small>, `5269` <small>(servers)</small>
+- [XMPP](https://wikipedia.org/wiki/XMPP): `5222` <small>(clients)</small>, `5269` <small>(servers)</small>
 - [Email](/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>
 
 Wenn Sie sowohl ein Modem als auch einen Router verwenden, dann müssen Sie Folgendes tun:

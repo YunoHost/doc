@@ -25,6 +25,7 @@ Your box/router admin interface is usually reachable via [http://192.168.0.1](ht
 ### 2. Find the local IP of your server
 
 Identify the *local* IP of your server, either :
+
 - from your box/router interface, which might list devices connected
 - from the YunoHost webadmin, in 'Diagnosis', section 'Internet connectivity', click on 'Details' on the IPv4 report.
 - from the command line in your server, by running `hostname -I`
@@ -41,7 +42,7 @@ Opening the ports listed below is necessary for the various services available i
 
 - Web: `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>
 - [SSH](/ssh): `22`
-- [XMPP](/XMPP): `5222` <small>(clients)</small>, `5269` <small>(servers)</small>
+- [XMPP](https://wikipedia.org/wiki/XMPP): `5222` <small>(clients)</small>, `5269` <small>(servers)</small>
 - [Email](/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>
 
 If you use both a modem and a router, then you need to do the following:

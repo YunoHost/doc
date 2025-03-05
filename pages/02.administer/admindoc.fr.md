@@ -9,4 +9,4 @@ routes:
 
 # Guide d'administration
 
-### Découvrez l'auto-hébergement, comment installer et utiliser YunoHost
+## Découvrez l'auto-hébergement, comment installer et utiliser YunoHost

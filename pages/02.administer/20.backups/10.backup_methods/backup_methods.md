@@ -30,7 +30,6 @@ There are [remote borg repository providers](https://www.borgbackup.org/support/
 - to define the frequency and type of data to be backed up
 - a mail alert system in case of backup failure.
 
-
 ## [Archivist](https://apps.yunohost.org/app/archivist)
 
 !! This application is currently broken!

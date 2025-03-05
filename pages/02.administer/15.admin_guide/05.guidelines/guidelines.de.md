@@ -9,7 +9,7 @@ routes:
 
 Diese Seite listet einige Tipps und Richtlinien auf, die jeder YunoHost-Administrator kennen sollte, um sich um seinen Server zu kümmern :).
 
-## YunoHost nicht beschädigen 
+## YunoHost nicht beschädigen
 
 Das heißt : Entweder ist der Server für den tatsächlichen Betrieb gedacht, oder es handelt sich um einen Testserver, auf dem Sie experimentieren dürfen.
 

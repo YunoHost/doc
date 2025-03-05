@@ -7,10 +7,10 @@ routes:
   default: '/finding_the_local_ip'
 ---
 
-Nel caso di un'installazione su un server casalingo, questi dovrebbe essere normalmente accessibile (dalla LAN) digitando l'indirizzo yunohost.local. Se per una qualsiasi ragione il server non è raggiungibile, dovrete trovare l'indirizzo IP *locale* del vostro server.
+Nel caso di un'installazione su un server casalingo, questi dovrebbe essere normalmente accessibile (dalla LAN) digitando l'indirizzo `yunohost.local`. Se per una qualsiasi ragione il server non è raggiungibile, dovrete trovare l'indirizzo IP *locale* del vostro server.
 
 ## Cos'è l'indirizzo IP locale?
- 
+
 L'IP locale è l'indirizzo che permette al server di essere raggiunto all'interno di una rete locale (ad esempio in una rete domestica) dove molti apparecchi si collegano allo stesso router . Un indirizzo IP locale è normalmente rappresentato con una sequenza di cifre del tipo `192.168.x.y` (o più raramente `10.0.x.y` oppure `172.16.x.y`)
 
 ## Come trovare l'indirizzo IP
@@ -56,7 +56,7 @@ Le credenziali di default (prima della post installazione!) sono:
 [/ui-tab]
 [/ui-tabs]
 
-## Se nonostante tutto non trovo l'indirizzo...
+## Se nonostante tutto non trovo l'indirizzo
 
 Se non riuscite a trovare il vostro server con le istruzioni precedenti, forse il server non si è avviato correttamente:
 

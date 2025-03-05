@@ -129,25 +129,25 @@ tntsearch
 ```
 
 3. Paramétrez l'extension Git Sync.
-   1. Choisissez `GitHub` et vos identifiants GitHub
-   2. Entrez l'adresse de votre *fork*, par exemple `https://github.com/username/doc`
-   3. Copiez l'URL du webhook, par exemple `https://grav.example/_git-sync-ca25c111f0de`
-   4. "Basic settings" > "Folders to Sync" : `pages` `images` `themes`
-   5. "Git Repo Settings" > "User not required" : Enabled
-   6. "Git Repo Settings" > "Web Hooks secret" : Enabled
-   7. "Advanced settings" > "local branch" : `master`
-   8. "Advanced settings" > "remote branch" : `master`  
-(vous pouvez changer `master` en une autre branche si vous le souhaitez, mais n'oubliez pas de la créer au préalable sur GitHub)
-   9. "Advanced settings" > "Committer Name" : votre nom d'utilisateur sur GitHub
-10. "Advanced settings" > "Committer Email" : votre email renseigné sur GitHub
-11. Enregistrez et cliquez sur "Reset Local Copy"
-12. Renseignez les adresses dans les clés `commits` et `tree` dans `config/themes/yunohost-docs.yaml` pour quelles pointent vers l'adresse de votre *fork* sur GitHub
+    1. Choisissez `GitHub` et vos identifiants GitHub
+    2. Entrez l'adresse de votre *fork*, par exemple `https://github.com/username/doc`
+    3. Copiez l'URL du webhook, par exemple `https://grav.example/_git-sync-ca25c111f0de`
+    4. "Basic settings" > "Folders to Sync" : `pages` `images` `themes`
+    5. "Git Repo Settings" > "User not required" : Enabled
+    6. "Git Repo Settings" > "Web Hooks secret" : Enabled
+    7. "Advanced settings" > "local branch" : `master`
+    8. "Advanced settings" > "remote branch" : `master`  
+      (vous pouvez changer `master` en une autre branche si vous le souhaitez, mais n'oubliez pas de la créer au préalable sur GitHub)
+    9. "Advanced settings" > "Committer Name" : votre nom d'utilisateur sur GitHub
+    10. "Advanced settings" > "Committer Email" : votre email renseigné sur GitHub
+    11. Enregistrez et cliquez sur "Reset Local Copy"
+    12. Renseignez les adresses dans les clés `commits` et `tree` dans `config/themes/yunohost-docs.yaml` pour quelles pointent vers l'adresse de votre *fork* sur GitHub
 4. Assurez-vous que les dossiers `user/pages/01.home` et `user/pages/02.typography` sont supprimés.
 5. Dans l'administration de Grav, dans "Configuration" > "System" :
-   1. "Language" > "Supported" : `en` `fr` `de` `es` `ar`
-   2. "Language" > "Override Default Language" : `en`
-   3. "Language" > "Set language from browser" : `Yes`
-   4. "HTTP Headers" > "Etag" : `Yes`
-   5. "Advanced" > "Blueprint Compatibility" : `Yes`
-   6. "Advanced" > "YAML Compatibility" : `Yes`
-   7. "Advanced" > "Twig Compatibility" : `Yes`
+    1. "Language" > "Supported" : `en` `fr` `de` `es` `ar`
+    2. "Language" > "Override Default Language" : `en`
+    3. "Language" > "Set language from browser" : `Yes`
+    4. "HTTP Headers" > "Etag" : `Yes`
+    5. "Advanced" > "Blueprint Compatibility" : `Yes`
+    6. "Advanced" > "YAML Compatibility" : `Yes`
+    7. "Advanced" > "Twig Compatibility" : `Yes`

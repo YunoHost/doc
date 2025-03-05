@@ -8,7 +8,7 @@ routes:
 ---
 
 <span class="javascriptDisclaimer">
-Questa pagina richiede l'abilitazione di Javascript per essere visualizzata correttamente :s. 
+Questa pagina richiede l'abilitazione di Javascript per essere visualizzata correttamente :s.
 <br/>
 <br/>
 </span>

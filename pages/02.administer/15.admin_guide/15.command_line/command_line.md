@@ -73,7 +73,7 @@ N.B. : `fail2ban` will ban your IP for 10 minutes if you perform 10 failed login
 
 ## Which other users may connect to the server?
 
-By default, only YunoHost users in the `admins` group can log in to YunoHost's SSH and SFTP servers. Non-admin YunoHost users can't connect via SSH for security reasons. With the permissions system it is possible to specifically grant SFTP or even SSH access to non-admin users. 
+By default, only YunoHost users in the `admins` group can log in to YunoHost's SSH and SFTP servers. Non-admin YunoHost users can't connect via SSH for security reasons. With the permissions system it is possible to specifically grant SFTP or even SSH access to non-admin users.
 
 ! Be careful who you give SSH access to. This increases even more the attack surface available to a malicious user.
 

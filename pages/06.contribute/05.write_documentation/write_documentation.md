@@ -130,25 +130,25 @@ tntsearch
 ```
 
 3. Set-up Git Sync plugin.
-   1. Choose GitHub and your credentials on GitHub
-   2. Set the repo, e.g. `https://github.com/username/doc`
-   3. Copy the Webhook's URL, e.g. `https://grav.example/_git-sync-ca25c111f0de`
-   4. Basic settings > Folders to Sync: `pages` `images` `themes`
-   5. Git Repo Settings > User not required: Enabled
-   6. Git Repo Settings > Web Hooks secret: Enabled
-   7. Advanced settings > local branch: `master`
-   8. Advanced settings > remote branch: `master`  
-(you can change `master` if you want to work on another branch, but do not forget to create it on GitHub first)
-   9. Advanced settings > Committer Name: your GitHub username
-10. Advanced settings > Committer Email: your email saved on GitHub
-11. Save and Reset Local Copy
-12. Set `commits` and `tree` keys in `config/themes/yunohost-docs.yaml` to point to your fork's repository
+    1. Choose GitHub and your credentials on GitHub
+    2. Set the repo, e.g. `https://github.com/username/doc`
+    3. Copy the Webhook's URL, e.g. `https://grav.example/_git-sync-ca25c111f0de`
+    4. Basic settings > Folders to Sync: `pages` `images` `themes`
+    5. Git Repo Settings > User not required: Enabled
+    6. Git Repo Settings > Web Hooks secret: Enabled
+    7. Advanced settings > local branch: `master`
+    8. Advanced settings > remote branch: `master`  
+      (you can change `master` if you want to work on another branch, but do not forget to create it on GitHub first)
+    9. Advanced settings > Committer Name: your GitHub username
+    10. Advanced settings > Committer Email: your email saved on GitHub
+    11. Save and Reset Local Copy
+    12. Set `commits` and `tree` keys in `config/themes/yunohost-docs.yaml` to point to your fork's repository
 4. Make sure `user/pages/01.home` and `user/pages/02.typography` directories are deleted.
 5. Configuration > System:
-   1. Language > Supported: `en` `fr` `de` `es` `ar`
-   2. Language > Override Default Language: `en`
-   3. Language > Set language from browser: `Yes`
-   4. HTTP Headers > Etag: `Yes`
-   5. Advanced > Blueprint Compatibility: `Yes`
-   6. Advanced > YAML Compatibility: `Yes`
-   7. Advanced > Twig Compatibility: `Yes`
+    1. Language > Supported: `en` `fr` `de` `es` `ar`
+    2. Language > Override Default Language: `en`
+    3. Language > Set language from browser: `Yes`
+    4. HTTP Headers > Etag: `Yes`
+    5. Advanced > Blueprint Compatibility: `Yes`
+    6. Advanced > YAML Compatibility: `Yes`
+    7. Advanced > Twig Compatibility: `Yes`

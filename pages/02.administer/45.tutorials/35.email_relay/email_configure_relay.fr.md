@@ -39,6 +39,7 @@ Habituellement les fournisseurs ont une documentation à ce sujet.
 ! [fa=exclamation-triangle /] Attention une fois la zone DNS enregistrée, le relais SMTP peut envoyer des e-mails à votre nom sans que vous ne le sachiez
 
 ### Étape 3 : Configurer YunoHost correctement
+
 Il est possible de configurer soit via la webadmin ou en ligne de commande.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
@@ -92,10 +93,11 @@ Votre relais SMTP est maintenant configuré !
 
 ! [fa=exclamation-triangle /] Maintenant le relais SMTP est capable de lire et d'utiliser toutes les informations contenues dans les emails que vous envoyez sans votre accord. Mais il ne sera pas capable de lire les informations des emails que vous recevez.
 
-#### Relayer tous les emails même ceux des noms de domaines gérés par Yunohost
+#### Relayer tous les emails même ceux des noms de domaines gérés par YunoHost
 
-Si vous avez une grande confiance dans votre relais SMTP, que vous avez un second serveur IMAP que vous souhaitez ou êtes contraint d'utiliser en lieu et place de celui de Yunohost, vous pouvez choisir de relayer tous les emails même ceux des noms de domaines gérés par Yunohost en commentant les deux ligne suivantes dans `/etc/postfix/main.cf` :
-```
+Si vous avez une grande confiance dans votre relais SMTP, que vous avez un second serveur IMAP que vous souhaitez ou êtes contraint d'utiliser en lieu et place de celui de YunoHost, vous pouvez choisir de relayer tous les emails même ceux des noms de domaines gérés par YunoHost en commentant les deux ligne suivantes dans `/etc/postfix/main.cf` :
+
+```text
 #virtual_mailbox_domains = ldap:/etc/postfix/ldap-domains.cf
 #virtual_alias_maps = ldap:/etc/postfix/ldap-aliases.cf,ldap:/etc/postfix/ldap-groups.cf
 ```

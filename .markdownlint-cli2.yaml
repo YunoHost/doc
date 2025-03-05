@@ -1,9 +1,12 @@
 
 ignores:
+  # This page contains markdown issues on purpose
+  - pages/06.contribute/05.write_documentation/02.markdown_guide/doc_markdown_guide*
+
+  # Those pages are auto-generated, issues found there should be fixed upstream
   - pages/06.contribute/10.packaging_apps/10.manifest/10.appresources/packaging_app_manifest_resources.md
   - pages/06.contribute/10.packaging_apps/20.scripts/10.helpers/packaging_app_scripts_helpers.md
   - pages/06.contribute/10.packaging_apps/20.scripts/12.helpers21/packaging_app_scripts_helpers_v21.md
-  - pages/06.contribute/10.packaging_apps/80.resources/11.helpers/packaging_apps_helpers.md
   - pages/06.contribute/10.packaging_apps/80.resources/15.appresources/packaging_apps_resources.md
   - pages/06.contribute/15.dev/03.forms/forms.md
 

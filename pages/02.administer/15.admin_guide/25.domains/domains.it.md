@@ -10,7 +10,7 @@ shortcode-ui:
     tabs: lite
 ---
 
-Yunohost permette l'installazione e la gestione di più domini sullo stesso server. Potrete quindi ospitare, ad esempio, un blog e un'istanza Nextcloud su un primo dominio `yolo.com`, e un client webmail su un secondo dominio `swag.nohost.me`. Ogni dominio viene automaticamente configurato affinché possa gestire i servizi web e l'email.
+YunoHost permette l'installazione e la gestione di più domini sullo stesso server. Potrete quindi ospitare, ad esempio, un blog e un'istanza Nextcloud su un primo dominio `yolo.com`, e un client webmail su un secondo dominio `swag.nohost.me`. Ogni dominio viene automaticamente configurato affinché possa gestire i servizi web e l'email.
 
 I domini possono essere configurati a partire dalla sezione 'Domini' della pagina webadmin, o attraverso la sezione `yunohost domain` da linea di comando.
 
@@ -25,7 +25,7 @@ I domini possono essere configurati a partire dalla sezione 'Domini' della pagin
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Domini gestiti dal progetto YunoHost (semplice e gratuito)"]]
 
-Al fine di facillitare la gestione di un server, il progetto YunoHost fornisce un servizio di nomi di dominio *gratuiti* e *automaticamente configurati*. Utilizzando questo servizio, non dovrete [configurare i record DNS](/dns.config) operazione delicata e tecnica. Prendete atto del fatto che non sarete i veri proprietari del dominio scelto. 
+Al fine di facillitare la gestione di un server, il progetto YunoHost fornisce un servizio di nomi di dominio *gratuiti* e *automaticamente configurati*. Utilizzando questo servizio, non dovrete [configurare i record DNS](/dns.config) operazione delicata e tecnica. Prendete atto del fatto che non sarete i veri proprietari del dominio scelto.
 
 Sono disponibili i seguenti (sotto) domini:
 

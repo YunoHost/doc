@@ -10,7 +10,7 @@ routes:
 ---
 
 ! TODO: Add logo and kakemono file  
-! TODO: Add kakemono photo https://matrix-client.matrix.org/_matrix/media/r0/download/pijean.ovh/TqtyOjqllOeSXYziawxeGzIP  
+! TODO: Add kakemono photo <https://matrix-client.matrix.org/_matrix/media/r0/download/pijean.ovh/TqtyOjqllOeSXYziawxeGzIP>  
 ! TODO: Add "About YunoHost" section  
 ! TODO: Add email contact
 
@@ -29,7 +29,7 @@ routes:
 - (FR) [Capitole du libre 2016 – 1 an et ½ de Brique Internet – Bram](https://toulibre.org/pub/2016-11-19-capitole-du-libre/videos/communaute-du-libre/bram-1-an-et-demi-de-brique-internet.mp4)
 - (FR) [PSES 2015 - La Brique Internet](http://www.youtube.com/watch?v=NCRn0yRfkIE)
 - (FR) [THSF 2015 – beudbeud](https://vimeo.com/128055751)
-- (FR) [RMLL 2014 - Hébergez-vous ! – kload & beudbeud]()
+- (FR) [RMLL 2014 - Hébergez-vous ! – kload & beudbeud](https://rmll.ubicast.tv/videos/hebergez-vous/)
 - (FR) [Capitole du libre 2013 - L’auto-hébergement pour tous avec YunoHost - beudbeud](http://2013.capitoledulibre.org/conferences/internet-libre/lauto-hebergement-pour-tous-avec-yunohost.html)
 - (EN) [FOSDEM 2013 — kload](https://www.youtube.com/watch?v=siN1OLAgGJk)
 

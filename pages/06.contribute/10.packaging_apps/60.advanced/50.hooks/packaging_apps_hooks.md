@@ -123,7 +123,7 @@ This hook is run at the end of the command `yunohost user delete` or equivalent 
 
 This hook is run at the end of the command `yunohost user update` or equivalent action in webadmin.
 
-##### Environment variables
+#### Environment variables
 
 ! Only arguments given to the cli/api are given as environment variable.
 
@@ -135,13 +135,13 @@ This hook is run at the end of the command `yunohost user update` or equivalent 
 - YNH_USER_MAILFORWARDS: The list of forward mails of the updated user separated by comma
 - YNH_USER_MAILQUOTA: The quota of the updated user (could be 0 or a number following by one of this unit: b, k, M, G or T)
 
-##### No positionnal arguments
+#### No positionnal arguments
 
-##### No waited return
+#### No waited return
 
-##### Examples
+#### Examples
 
-###### Send a mail on password changing
+##### Send a mail on password changing
 
 ```bash
 #!/bin/bash
@@ -164,18 +164,18 @@ echo $message | mail -s "Your password has been changed on $domain !" $YNH_USER_
 
 This hook is run at the end of the command `yunohost user permission add` or equivalent action in webadmin.
 
-##### No environment variables
+#### No environment variables
 
-##### Positionnal arguments (deprecated)
+#### Positionnal arguments (deprecated)
 
 - $1: The app name
 - $2: The list of users added separated by comma
 - $3: The name of the sub permission (`main`, `admin`, etc.)
 - $4: The list of groups added separated by comma
 
-##### No waited return
+#### No waited return
 
-##### Examples
+#### Examples
 
 [/details]
 
@@ -185,18 +185,18 @@ This hook is run at the end of the command `yunohost user permission add` or equ
 
 This hook is run at the end of the command `yunohost user permission remove` or equivalent action in webadmin.
 
-##### No environment variables
+#### No environment variables
 
-##### Positionnal arguments (deprecated)
+#### Positionnal arguments (deprecated)
 
 - $1: The app name
 - $2: The list of users removed from the permission separated by comma
 - $3: The name of the sub permission (`main`, `admin`, etc.)
 - $4: The list of groups removed from the permission separated by comma
 
-##### No waited return
+#### No waited return
 
-##### Examples
+#### Examples
 
 [/details]
 
@@ -208,17 +208,17 @@ This hook is run at the end of the command `yunohost user permission remove` or 
 
 This hook is run at the end of the command `yunohost domain add` or equivalent action in webadmin.
 
-##### No environment variable
+#### No environment variable
 
-##### Positionnal arguments (deprecated)
+#### Positionnal arguments (deprecated)
 
 - $1: The domain added
 
-##### No waited return
+#### No waited return
 
-##### Examples
+#### Examples
 
-######
+#####
 
 ```bash
 
@@ -232,15 +232,15 @@ This hook is run at the end of the command `yunohost domain add` or equivalent a
 
 This hook is run at the end of the command `yunohost domain remove` or equivalent action in webadmin.
 
-##### No environment variable
+#### No environment variable
 
-##### Positionnal arguments (deprecated)
+#### Positionnal arguments (deprecated)
 
 - $1: The domain removed
 
-##### No waited return
+#### No waited return
 
-##### Examples
+#### Examples
 
 [/details]
 
@@ -250,17 +250,17 @@ This hook is run at the end of the command `yunohost domain remove` or equivalen
 
 This hook is run at the end of the command `yunohost domain cert update` or equivalent action in webadmin.
 
-##### No environment variable
+#### No environment variable
 
-##### Positionnal arguments
+#### Positionnal arguments
 
 - $1: The domain for which we have updated the certificate
 
-##### No waited return
+#### No waited return
 
-##### Examples
+#### Examples
 
-###### Restart a service after cert renewal
+##### Restart a service after cert renewal
 
 ```bash
 #!/bin/bash
@@ -277,13 +277,13 @@ This hook is run at the end of the command `yunohost domain dns suggest` or equi
 
 Thanks to This hook you can customize
 
-##### No environment variable
+#### No environment variable
 
-##### Positionnal arguments
+#### Positionnal arguments
 
 - $1: The base domain for which we want to build a DNS suggestion
 
-##### Waited return
+#### Waited return
 
 The script should return a JSON array with dictionnary in this format:
 
@@ -298,9 +298,9 @@ The script should return a JSON array with dictionnary in this format:
 ]
 ```
 
-##### Examples
+#### Examples
 
-###### Validate Let's Encrypt DNS challenge with a YunoHost DynDNS domain
+##### Validate Let's Encrypt DNS challenge with a YunoHost DynDNS domain
 
 ```bash
 #!/bin/bash
@@ -327,18 +327,18 @@ fi
 
 This hook is run at the end of the command `yunohost app change-url` or equivalent action in webadmin.
 
-##### Environment variables
+#### Environment variables
 
 - YNH_APP_OLD_DOMAIN: The old domain of the app
 - YNH_APP_OLD_PATH: The old path of the app
 - YNH_APP_NEW_DOMAIN: The new domain of the app
 - YNH_APP_NEW_PATH: The new path of the app
 
-##### No positionnal arguments
+#### No positionnal arguments
 
-##### No waited return
+#### No waited return
 
-##### Examples
+#### Examples
 
 [/details]
 
@@ -348,7 +348,7 @@ This hook is run at the end of the command `yunohost app change-url` or equivale
 
 This hook is run at the end of the command `yunohost app upgrade` or equivalent action in webadmin.
 
-##### Environment variables
+#### Environment variables
 
 - YNH_APP_ID: The app id (for example nextcloud)
 - YNH_APP_INSTANCE_NAME: The app instance name (for example nextcloud__2)
@@ -360,13 +360,13 @@ This hook is run at the end of the command `yunohost app upgrade` or equivalent 
 - YNH_APP_CURRENT_VERSION: The version number of the app (in the YunoHost format)
 - NO_BACKUP_UPGRADE: 1 if we don't want to backup else 0
 
-##### No positionnal arguments
+#### No positionnal arguments
 
-##### No waited return
+#### No waited return
 
-##### Examples
+#### Examples
 
-###### Change a settings in an app config file (unmanaged by config panel)
+##### Change a settings in an app config file (unmanaged by config panel)
 
 ```bash
 #!/bin/bash
@@ -389,7 +389,7 @@ fi
 
 This hook is run at the end of the command `yunohost app install` or equivalent action in webadmin.
 
-##### Environment variables
+#### Environment variables
 
 - YNH_APP_ID: The app id (for example nextcloud)
 - YNH_APP_INSTANCE_NAME: The app instance name (for example nextcloud__2)
@@ -398,11 +398,11 @@ This hook is run at the end of the command `yunohost app install` or equivalent 
 - YNH_ARCH: The arch as returned by `dpkg --print-architecture`
 - YNH_APP_ARG_XXXXXXX: The argument of the manifest
 
-##### No positionnal arguments
+#### No positionnal arguments
 
-##### No waited return
+#### No waited return
 
-##### Examples
+#### Examples
 
 [/details]
 
@@ -412,7 +412,7 @@ This hook is run at the end of the command `yunohost app install` or equivalent 
 
 This hook is run at the end of the command `yunohost app remove` or equivalent action in webadmin.
 
-##### Environment variables
+#### Environment variables
 
 - YNH_APP_ID: The app id (for example nextcloud)
 - YNH_APP_INSTANCE_NAME: The app instance name (for example nextcloud__2)
@@ -421,11 +421,11 @@ This hook is run at the end of the command `yunohost app remove` or equivalent a
 - YNH_ARCH: The arch as returned by `dpkg --print-architecture`
 - YNH_APP_PURGE: 1 if the --purge option has been activated
 
-##### No positionnal arguments
+#### No positionnal arguments
 
-##### No waited return
+#### No waited return
 
-##### Examples
+#### Examples
 
 [/details]
 
@@ -437,21 +437,21 @@ This hook is run at the end of the command `yunohost app remove` or equivalent a
 
 This hook is run at the end of the command `yunohost backup create` or equivalent action in webadmin.
 
-##### Environment variables
+#### Environment variables
 
 - YNH_BACKUP_DIR: The work dir in which we can store temporary data to backup like database dump
 - YNH_BACKUP_CSV: The CSV in which we add the things to backup. Don't use this directly and use ynh_backup helper instead.
 - YNH_APP_BACKUP_DIR: To document
 
-##### Positionnal arguments
+#### Positionnal arguments
 
 - $1: The work dir in which we can store temporary data to backup like database dump
 
-##### No waited return
+#### No waited return
 
-##### Examples
+#### Examples
 
-###### Backup some files in more (for example your custom hooks)
+##### Backup some files in more (for example your custom hooks)
 
 ```bash
 #!/bin/bash
@@ -486,20 +486,20 @@ ynh_backup "/etc/yunohost/hooks.d/restore/99-conf_custom"
 
 This hook is run at the end of the command `yunohost backup restore` or equivalent action in webadmin.
 
-##### Environment variables
+#### Environment variables
 
 - YNH_BACKUP_DIR: The work dir in which we can store temporary data to backup like database dump
 - YNH_BACKUP_CSV: The CSV in which we add the things to backup. Don't use this directly and use ynh_backup helper instead.
 
-##### Positionnal arguments
+#### Positionnal arguments
 
 - $1: The work dir in which we can store temporary data to backup like database dump
 
-##### No waited return
+#### No waited return
 
-##### Examples
+#### Examples
 
-###### restore custom files
+##### restore custom files
 
 ```bash
 #!/bin/bash
@@ -536,9 +536,9 @@ This hook is run during the command `yunohost backup create` or equivalent actio
 
 This hook is called several times with different action keywords.
 
-##### No environment variables
+#### No environment variables
 
-##### Positionnal arguments
+#### Positionnal arguments
 
 - $1: The action ("need_mount", "backup", "mount")
 - $2: The work dir
@@ -547,11 +547,11 @@ This hook is called several times with different action keywords.
 - $5: An estimation size of the files to backup
 - $6: A description of the archive
 
-##### No waited return
+#### No waited return
 
-##### Examples
+#### Examples
 
-###### A very simple backup on rotationnal disks
+##### A very simple backup on rotationnal disks
 
 ```bash
 #!/bin/bash
@@ -600,18 +600,18 @@ exit 0
 
 This hook is run at the end of the command `yunohost firewall reload` or equivalent action in webadmin.
 
-##### No environment variables
+#### No environment variables
 
-##### Positionnal arguments
+#### Positionnal arguments
 
 - $1: True if upnp has succeeded
 - $2: True if ipv6 is available
 
-##### No waited return
+#### No waited return
 
-##### Examples
+#### Examples
 
-###### Forbid completely the outgoing 25 port except for postfix user
+##### Forbid completely the outgoing 25 port except for postfix user
 
 ```bash
 #!/bin/bash
@@ -629,23 +629,23 @@ This hook is run during the command `yunohost tools regen-conf` or equivalent ac
 
 This hook is called several times with different actions keywords (pre and post operations).
 
-##### Environment variables
+#### Environment variables
 
 - YNH_DOMAINS: The list of domains managed by YunoHost separated by comma
 - YNH_MAIN_DOMAINS: The list of main domains separated by comma
 
-##### Positionnal arguments
+#### Positionnal arguments
 
 - $1: The pre or post action
 - $2: Empty string due to legacy
 - $3: Empty string due to legacy
 - $4: In post mode the list of file which should be modified. In pre mode the dir in which we store pending configuration
 
-##### No waited return
+#### No waited return
 
-##### Examples
+#### Examples
 
-###### Fix the warning about postfix compatibility mode in postfix logs
+##### Fix the warning about postfix compatibility mode in postfix logs
 
 ```bash
 #!/bin/bash

@@ -19,7 +19,6 @@ Les domaines peuvent être gérés dans la section "Domaine" de la webadmin, ou 
 
 ## Domaines locaux
 
-
 ## 3 types de domaines
 
 [ui-tabs position="top-left" active="0" theme="lite"]
@@ -28,6 +27,7 @@ Les domaines peuvent être gérés dans la section "Domaine" de la webadmin, ou 
 Afin de rendre l'auto-hébergement aussi accessible que possible, le projet YunoHost fournit un service de nom de domaine *gratuit* et *configuré automatiquement*. En utilisant ce service, vous n'aurez pas à [configurer les enregistrements DNS](/dns_config) vous-même, ce qui peut être fastidieux et technique. Néanmoins, soyez conscient que vous n'êtes pas réellement propriétaire du domaine choisi...
 
 Les (sous-)domaines suivants sont proposés :
+
 - `whateveryouwant.nohost.me` ;
 - `whateveryouwant.noho.st` ;
 - `whateveryouwant.ynh.fr`.
@@ -90,7 +90,7 @@ YunoHost peut générer une configuration DNS recommandée pour chaque domaine, 
 
 ## A propos des caractères non-latins
 
-Si votre domaine comporte des caractères spéciaux non-latins, il sera transformé par YunoHost en [version internationalisée](https://en.wikipedia.org/wiki/Internationalized_domain_name) ou en [Punycode] (https://en.wikipedia.org/wiki/Punycode). Ainsi, lorsque vous utilisez la ligne de commande, vous devez utiliser le format punycode renvoyé par exemple par `yunohost domain list`.
+Si votre domaine comporte des caractères spéciaux non-latins, il sera transformé par YunoHost en [version internationalisée](https://en.wikipedia.org/wiki/Internationalized_domain_name) ou en [Punycode] (<https://en.wikipedia.org/wiki/Punycode>). Ainsi, lorsque vous utilisez la ligne de commande, vous devez utiliser le format punycode renvoyé par exemple par `yunohost domain list`.
 
 ## Certificats SSL/HTTPS
 
