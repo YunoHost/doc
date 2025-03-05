@@ -19,7 +19,7 @@ routes:
 
 </br>
 </br>
-<em>Nota : questa stanza e disponibile via IRC (#yunohost su libera.chat - <a href="https://web.libera.chat/#yunohost">usando kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, o Matrix <small>(#yunohost:matrix.org - <a target="_blank" href="https://matrix.to/#/#yunohost:matrix.org">Element using Matrix.to</a>)</small></em>
+<em>Nota : questa stanza e disponibile via IRC (#YunoHost su libera.chat - <a href="https://web.libera.chat/#yunohost">usando kiwiirc</a>), via XMPP <small>(support@conference.yunohost.org)</small>, o Matrix <small>(#YunoHost:matrix.org - <a target="_blank" href="https://matrix.to/#/#yunohost:matrix.org">Element using Matrix.to</a>)</small></em>
 </center>
 
 <h3>... o chiedi nel forum !</h3>
