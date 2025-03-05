@@ -110,22 +110,22 @@ Einige Seiten der Dokumentation werden automatisch oder dynamisch generiert.
 1. Installieren Sie das YunoHost-Paket Grav : `yunohost app install grav`
 2. Installieren Sie die folgenden Plugins durch das Grav Admin-Panel oder CLI:
 
-```text
-anchors
-breadcrumbs
-external_links
-feed
-flex-objects
-git-sync
-highlight
-image-captions
-langswitcher
-markdown-notices
-presentation
-presentation-deckset
-shortcode-core
-tntsearch 
-```
+    ```text
+    anchors
+    breadcrumbs
+    external_links
+    feed
+    flex-objects
+    git-sync
+    highlight
+    image-captions
+    langswitcher
+    markdown-notices
+    presentation
+    presentation-deckset
+    shortcode-core
+    tntsearch 
+    ```
 
 3. Git Sync Plugin einrichten.
     1. Melden Sie sich mit Ihren Anmeldeinformationen auf GitHub an

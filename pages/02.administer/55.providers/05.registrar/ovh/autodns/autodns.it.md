@@ -17,17 +17,17 @@ Questa parte ha lo scopo di guidarvi nella procedura necessaria all'ottenimento 
 
 2. Compilate il formulario con le informazioni richieste, come nell'esempio seguente:
 
-- ID dell'account o indirizzo mail: il vostro User OVH
-- Password: la vostra password OVH
-- Date un nome allo script: es. `YunoHost Auto DNS`
-- Date una sommaria descrizione: es. `YunoHost Auto DNS`
-- Validità: `Unlimited`
-- Rights: utilizzate il pulsante `+` per aggiungere le seguenti linee
-  - `GET` : `/domain/zone/*`
-  - `POST` : `/domain/zone/*`
-  - `PUT` : `/domain/zone/*`
-  - `DELETE` : `/domain/zone/*`
+    - ID dell'account o indirizzo mail: il vostro User OVH
+    - Password: la vostra password OVH
+    - Date un nome allo script: es. `YunoHost Auto DNS`
+    - Date una sommaria descrizione: es. `YunoHost Auto DNS`
+    - Validità: `Unlimited`
+    - Rights: utilizzate il pulsante `+` per aggiungere le seguenti linee
+      - `GET` : `/domain/zone/*`
+      - `POST` : `/domain/zone/*`
+      - `PUT` : `/domain/zone/*`
+      - `DELETE` : `/domain/zone/*`
 
-![](image://registrar_api_ovh_1.png?resize=800)
+    ![](image://registrar_api_ovh_1.png?resize=800)
 
 3. Otterrete tre tokens (una chiave segreta, una chiave pubblica, e una chiave consumer) che dovranno essere utilizzate nella configurazione di YunoHost

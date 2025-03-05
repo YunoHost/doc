@@ -257,26 +257,26 @@ Questo è un elemento chiave per YunHost nonché per qualsiasi distribuzione Deb
 
 1. Installazione di dotNET runtime:
 
-```bash
-# In WSL
-wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-sudo apt update
-sudo apt install -y apt-transport-https
-sudo apt update
-sudo apt install -y dotnet-sdk-3.1
-```
+    ```bash
+    # In WSL
+    wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+    sudo dpkg -i packages-microsoft-prod.deb
+    sudo apt update
+    sudo apt install -y apt-transport-https
+    sudo apt update
+    sudo apt install -y dotnet-sdk-3.1
+    ```
 
 2. Installazione di [Genie](https://github.com/arkane-systems/genie):
 
-```bash
-# In WSL
-# Add their repository
-echo "deb [trusted=yes] https://wsl-translinux.arkane-systems.net/apt/ /" > /etc/apt/sources.list.d/wsl-translinux.list
-# Install Genie
-sudo apt update
-sudo apt install -y systemd-genie
-```
+    ```bash
+    # In WSL
+    # Add their repository
+    echo "deb [trusted=yes] https://wsl-translinux.arkane-systems.net/apt/ /" > /etc/apt/sources.list.d/wsl-translinux.list
+    # Install Genie
+    sudo apt update
+    sudo apt install -y systemd-genie
+    ```
 
 ## Installazione di YunoHost
 

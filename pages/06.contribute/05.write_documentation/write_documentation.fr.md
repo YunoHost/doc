@@ -111,22 +111,22 @@ Quelques pages de la documentation sont générées automatiquement ou dynamique
 1. Installez l'app Grav pour YunoHost : `yunohost app install grav`
 2. Installez les extensions suivantes via l'admin ou la ligne de commande de Grav :
 
-```text
-anchors
-breadcrumbs
-external_links
-feed
-flex-objects
-git-sync
-highlight
-image-captions
-langswitcher
-markdown-notices
-presentation
-presentation-deckset
-shortcode-core
-tntsearch
-```
+    ```text
+    anchors
+    breadcrumbs
+    external_links
+    feed
+    flex-objects
+    git-sync
+    highlight
+    image-captions
+    langswitcher
+    markdown-notices
+    presentation
+    presentation-deckset
+    shortcode-core
+    tntsearch
+    ```
 
 3. Paramétrez l'extension Git Sync.
     1. Choisissez `GitHub` et vos identifiants GitHub
