@@ -106,7 +106,6 @@ YunoHost is primarily designed for not-so-tech-savvy users and aims to remain re
 - would be there only to satisfy purists ;
 - or overall would not be worth it in terms of development/maintenance time/energy for what it brings to the project.
 
-
 #### Pourquoi n'incluez-vous pas [fonctionnalité X] ?
 
 YunoHost est principalement conçu pour un public peu technicien et vise à rester relativement simple en termes d'UI/UX. En même temps, le projet dispose d'un temps et d'une énergie limités pour sa maintenance et son développement. C'est pourquoi nous pouvons réduire la priorité de certaines fonctionnalités, ou refuser complètement de les inclure, au titre des critères suivants :
