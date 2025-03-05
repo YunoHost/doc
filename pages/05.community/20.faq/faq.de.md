@@ -72,33 +72,38 @@ Es ist ein weit verbreitetes Missverständnis, dass Neulinge bei offenen Softwar
 
 Das beschreiben wir in [diesem Dokument](/project_organization) :).
 
-#### Werdet ihr YunoHosts für [Lieblingsdistribution hier einfügen] portieren ?
+#### Will you port YunoHost to [insert favorite distro]?
 
-Die kurze Antwort: Nein. Wir haben nicht die Energie dafür und es ist eh irrelevant.
+If you care about distrowars, or think 'Debian is dirty', then YunoHost is not for you.
 
-<a data-toggle="collapse" data-target="#willyouportyunohost" href="#">Die lange Antwort</a>
-<div id="willyouportyunohost" class="collapse">
-<p>Wer sich auf Distrowars einlässt oder denkt, dass Dabian "schmutzig" sei, ist nicht die Zielgruppe von YunoHost.</p>
+YunoHost is aimed at non-tech people who just want their server to work. Debian has its flaws, but it's (one of?) the most widely known and used distribution for servers. It's stable. Most self-hosted software are one way or another compatible with Debian. It's easily hackable by anybody who's been doing a bit of CLI on their personal Ubuntu/Mint computer. There is no killer feature in other distributions that makes it relevant for YunoHost to switch or port to it.
 
-<p>YunoHost soll nicht-technikversierte Leute ansprechen, die einfach nur wollen, dass ihr Server funktioniert. Debian hat seine Macken, aber es ist eine bekannte und verbreitete Distributionen für Server. Es ist stabil. Die meiste self-hosted Software ist auf die eine oder andere Weise kompatibel mit Debian. Wer ein bisschen CLI auf seinem eigenen Ubuntu/Mint Computer betreibt, kann sich selbst etwas zusammenhacken. Es gibt kein Killer-Feature in anderen Distributionen, das es notwendig macht, dass YunoHost wechselt oder portiert wird.</p>
+If this does not convince you, there are other projects running on other distributions or with different philosophies.
 
-<p>Sollte Sie das nicht überzeugen, gibt es ausreichend andere Projekte für andere Distributionen mit einer anderen Philosophie dahinter.</p>
-</div>
+#### I checked how apps packaging work. Why are you reinventing [insert favorite package format]?
 
-#### Ich hab gesehen, wie das Packen von Apps funktioniert? Warum erfindet ihr das Rad neu und benutzt nicht [hier bevorzugtes Paketformat einfügen] ?
+People have been tempted to compare YunoHost packages to traditional package managers (such as Debian's `.deb`), which hold a different purpose. Traditional package managers are meant to install low-level purpose of installing files, commands, programs and services on the system. It is often your duty to configure them properly, simply because there is no standard server setup. Typically, web apps requires a lot of configuration because they rely on a web server and a database (and the single sign-on).
 
-Kurze Antwort: Machen wir nicht.
+YunoHost manages high-level abstractions (apps, domains, users...) and defines a standard setup (NGINX, Postfix, Metronome, SSOwat...) and, because of this, can handle the configuration for the user.
 
-Mittellange Antwort: Früher wurden die Apps in .deb gepackt. Was für ein Albtraum. Wir sind jetzt glücklicher ;).
+#### When will [this feature] be implemented? Why isn't [that app] packaged yet? I cannot believe you do not do [this] yet!
 
-<a data-toggle="collapse" data-target="#whyareyoureinventingpackaging" href="#">Die lange Antwort</a>
-<div id="whyareyoureinventingpackaging" class="collapse">
+We do not give timelines.
 
-<p>Das Ziel von YunoHost ist es das Packen einfacher zu machen. Von Anfang an wollten wir es so simple wie möglich gestalten, nach dem Motto: « wer die App manuell installieren kann, sollte die Schritte für die Installation und Deinstallation der Pakete ohne besonderes Training kopieren und einfügen können ». Bei Debian Paketen ist das nicht der Fall.</p>
+We are a bunch of volunteers working on our free time to maintain and develop YunoHost. We have no product owner or project manager handling resources, we are not a business. We do what we can, because we love this software, when we can.
 
-<p>Es hat sich herausgestellt, dass das Packen für YunoHost einen leicht anderen Zweck erfüllt als das Erstellen klassischer Pakete wie .deb. Debian Pakete haben nur den Anspruch Dateien, Befehle, Programme und Dienste auf dem System zu installieren. Es bleibt oft an Ihnen diese richtig zu konfigurieren, weil es einfach keinen standardisierte Server-Konfiguration gibt. Typischerweise erfordern Web-Apps einen sehr hohen Konfigurationsaufwand, weil sie auf dem Webserver und einer Datenbank (und dem single sign-on) aufbauen.</p>
+If you really want to have a feature implemented or documented, or an app packaged, [consider contributing yourself](/contribute)! We would love helping you get started.
 
-<p>YunoHost richtet Konzepte auf höchster Ebene ein (Apps, Domain-Namen, Benutzer...) und definiert eine standardmäßige Einrichtung (NGINX, Postfix, Metronome, SSOwat...) und kann deshalb die Konfiguration für den Anwender übernehmen.</p>
+#### What is YunoHost's policy regarding the apps included in the official catalog ?
 
-<p>Wer trotzdem glaubt, man könne deb Pakete dazu bringen, all dies zu leisten, möge sich die vorherige Antwort anschauen.</p>
-</div>
+See [this page](/packaging_policy)
+
+#### Why won't you include [feature X] ?
+
+YunoHost is primarily designed for not-so-tech-savvy users and aims to remain relatively simple in terms of UI/UX. At the same time, the project has limited time and energy available to be maintained and developed. Therefore we may lower the priority of features, or refuse entirely the inclusion of features, based on the criteria that they:
+
+- would only be meaningful for advanced / power-users stuff which is out of the scope of the project ;
+- would introduce too much UI/UX bloat ;
+- would only cover unrealistic threat models ;
+- would be there only to satisfy purists ;
+- or overall would not be worth it in terms of development/maintenance time/energy for what it brings to the project.

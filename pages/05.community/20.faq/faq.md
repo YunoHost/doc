@@ -91,11 +91,11 @@ We are a bunch of volunteers working on our free time to maintain and develop Yu
 
 If you really want to have a feature implemented or documented, or an app packaged, [consider contributing yourself](/contribute)! We would love helping you get started.
 
-### What is YunoHost's policy regarding the apps included in the official catalog ?
+#### What is YunoHost's policy regarding the apps included in the official catalog ?
 
 See [this page](/packaging_policy)
 
-### Why won't you include [feature X] ?
+#### Why won't you include [feature X] ?
 
 YunoHost is primarily designed for not-so-tech-savvy users and aims to remain relatively simple in terms of UI/UX. At the same time, the project has limited time and energy available to be maintained and developed. Therefore we may lower the priority of features, or refuse entirely the inclusion of features, based on the criteria that they:
 

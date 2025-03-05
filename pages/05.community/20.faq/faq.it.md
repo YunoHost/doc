@@ -91,26 +91,11 @@ Siamo una manciata di volontari che impiegano il loro tempo libero per sviluppar
 
 Se desiderate che la vostra app preferita sia implementata e documentata [aiutateci](/contribute)! Non vediamo l'ora di aiutarvi a mettervi al lavoro.
 
-### Qual'è la policy a riguardo delle applicazioni incluse nel catalogo ufficiale?
+#### What is YunoHost's policy regarding the apps included in the official catalog ?
 
-La regola principale è includere nel catalogo ufficiale solo programmi distribuiti con una licenza di software libero.
+See [this page](/packaging_policy)
 
-Tuttavia nello sviluppo di YunoHost sono apparsi alcuni casi dubbi a causa di programmi che potrebbero essere importanti per gli scopi e che coincidono con il suo spirito pur non essendo precisamente software libero. Sono situazioni come:
-
-- programmi che promuovono l'uso di servizi centralizzati pensato proprio per evitarne l'uso diretto;
-- programmi che hanno dipendenze o altro non liberi;
-- "nuove" licenze post-open-source / etiche-ma-non-libere come ad esempio [ACSL](https://anticapitalist.software/), the [HL3](https://firstdonoharm.dev/) o [CoopCycle License](https://github.com/coopcycle/coopcycle-web/blob/master/LICENSE);
-- modelli "open-core", clausole di protezione di marchi o su licenze "business-related" (come ad esempio BSL) pensate per mantenere i progetti pur rimanendo eticamente accettabili.
-
-Pur rimanendo convinti che i principi del software libero siano un passi essenziali per quelli che sono [gli obbiettivi di YunoHost](#quale-obbiettivo-si-prefi) pensiamo anche che questi siano mezzi e non fini. Rifiutiamo la visione purista secondo la quale il software è libero o proprietario e la premessa erronea che la tecnologia sia fondamentalmente neutrale. Crediamo che i programmi e la tecnologia possano e debbano esistere oltre la definizione di software libero pensata 40 anni fa (vedi anche: [Freedom isn't Free](https://logicmag.io/failure/freedom-isnt-free/) e [Post-Open Source](https://www.boringcactus.com/2020/08/13/post-open-source.html)).
-
-Di conseguenza il progetto permette l'inclusione nel catalogo ufficiale ***caso per caso*** di applicazioni che non si definiscono "software libero" ma considerati etici e degni di interesse per [gli obbiettivi di YunoHost](#quale-obbiettivo-si-prefi). Queste applicazioni sono segnalate nel catalogo e un messaggio apposito viene mostrato prima dell'installazione.
-
-Se trovate un'applicazione mancante di tale segnalazione potete parire una discussione o aprire una pull request sul [catalogo della applicazioni](https://github.com/YunoHost/apps/).
-
-Se usate YunoHost per la vostra iniziativa commerciale è vostra responsabilità controllare la licenza dei programmi che volete installare sul vostro server.
-
-### Perché non includete la [caratteristica X]?
+#### Perché non includete la [caratteristica X]?
 
 YunoHost è pensata per utenti non particolarmente capaci tecnicamente e cerca di rimanere semplice nell'interfaccia. Allo stesso tempo, il progetto è tempi ed energie limitate per la manutenzione e lo sviluppo. Di conseguenza dobbiamo abbassare la priorità delle richieste di caratteristiche o anche di rifiutarle completamente basandosi sui seguenti criteri:
 

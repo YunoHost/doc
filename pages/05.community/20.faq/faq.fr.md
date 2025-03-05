@@ -92,11 +92,11 @@ Nous sommes une poignée de volontaires travaillant sur notre temps libre pour m
 
 Si vous souhaitez vraiment voir une fonctionnalité codée ou documentée, ou une application packagée, [envisagez de contributer](/contribute)! Nous adorerions vous aider à vous mettre en selle.
 
-### What is YunoHost's policy regarding the apps included in the official catalog ?
+#### Quelle est la politique d'inclusion des apps dans le catalogue officiel ?
 
-See [this page](/packaging_policy)
+Voir [cette page](/packaging_policy)
 
-### Why won't you include [feature X] ?
+#### Why won't you include [feature X] ?
 
 YunoHost is primarily designed for not-so-tech-savvy users and aims to remain relatively simple in terms of UI/UX. At the same time, the project has limited time and energy available to be maintained and developed. Therefore we may lower the priority of features, or refuse entirely the inclusion of features, based on the criteria that they:
 
@@ -105,3 +105,14 @@ YunoHost is primarily designed for not-so-tech-savvy users and aims to remain re
 - would only cover unrealistic threat models ;
 - would be there only to satisfy purists ;
 - or overall would not be worth it in terms of development/maintenance time/energy for what it brings to the project.
+
+
+#### Pourquoi n'incluez-vous pas [fonctionnalité X] ?
+
+YunoHost est principalement conçu pour un public peu technicien et vise à rester relativement simple en termes d'UI/UX. En même temps, le projet dispose d'un temps et d'une énergie limités pour sa maintenance et son développement. C'est pourquoi nous pouvons réduire la priorité de certaines fonctionnalités, ou refuser complètement de les inclure, au titre des critères suivants :
+
+- ne seraient utiles qu'à des personnes expérimentées/avancées et vont au dela du périmètre visé par le projet ;
+- introduiraient trop de bloat dans l'UI/UX ;
+- ne couvriraient que des modèles de menace irréalistes ;
+- ne seraient là que pour satisfaire les puristes ;
+- ou globalement ne vaudrait pas la peine en termes de temps de développement/maintenance/énergie pour ce qu'elles apportent au projet.
