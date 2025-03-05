@@ -12,15 +12,16 @@ routes:
 Once you're done writing you app package, you'll want to check that everything works correctly. At first, you can manually try to install your app on some test server of your own : `sudo yunohost app install ./path/to/mycustomapp_ynh`
 
 Note that `./path/to/mycustomapp_ynh` can be a local path or an external git repository https URL (basically anything compatible with `git clone`).
-   
+
 You may also be interested in specifying the following parameters for `yunohost app install` command:
+
 - `--debug` : prints detailed log information
 - `--no-remove-on-failure` : won't remove the app if the install fails - therefore you can analyze and manually run/debug stuff, typically in `/var/www/$app`
-- `--force` : so that you are not asked confirmation if the app is not safe to use (low quality, experimental or 3rd party), or when the app displays a post-install notification. 
+- `--force` : so that you are not asked confirmation if the app is not safe to use (low quality, experimental or 3rd party), or when the app displays a post-install notification.
 - `-a "&domain=sub.domain.tld&path=/my_app&init_main_permission=all_users"` : can be used to preconfigure the answers to the install questions that are asked otherwise after entering the command. i.e.
-	- `domain=sub.domain.tld` : the domain/subdomain on which to install the app
-	- `path=/my_app` : the path to which the app will be accessible, e.g. https://(sub.)domain.tld/my_app
-	- `init_main_permission=all_users` : permission group associated to the app (can be `all_users`, `visitors`, etc.)
+  - `domain=sub.domain.tld` : the domain/subdomain on which to install the app
+  - `path=/my_app` : the path to which the app will be accessible, e.g. https://(sub.)domain.tld/my_app
+  - `init_main_permission=all_users` : permission group associated to the app (can be `all_users`, `visitors`, etc.)
 
 Testing everything manually often becomes tedious ;). The YunoHost project maintains several tools to automatically and somewhat "objectively" analyze and tests our 400+ apps catalog.
 

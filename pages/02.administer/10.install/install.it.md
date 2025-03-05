@@ -401,17 +401,15 @@ $(document).ready(function () {
              .replace('%7Bimage%7D', infos.image)
              .replace('{image}', infos.image)
              .replace('{version}', infos.version);
-
             if (!infos.file.startsWith("http"))
                 infos.file="https://repo.yunohost.org/images/"+infos.file;
             html = html.replace(/%7Bfile%7D/g, infos.file).replace(/{file}/g, infos.file);
-   
             if ((typeof(infos.has_sig_and_sums) !== 'undefined') && infos.has_sig_and_sums == false)
             {
                 var $html = $(html);
                 $html.find(".annotations").html("&nbsp;");
                 html = $html[0];
-            } 
+            }
             $('#cards-list').append(html);
         });
     });

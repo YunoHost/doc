@@ -20,7 +20,6 @@ Technically speaking, config panels are used both for apps packaging and also co
 - [Check config panels of other apps](https://grep.app/search?q=version&filter[repo.pattern][0]=YunoHost-Apps&filter[lang][0]=TOML)
 - [Check `scripts/config` of other apps](https://grep.app/search?q=ynh_app_config_apply&filter[repo.pattern][0]=YunoHost-Apps&filter[lang][0]=Shell)
 
-
 ## Overview
 
 From an app packager perspective, config panels are defined in `config_panel.toml` at the root of the app repository. It is coupled to the `scripts/config` script, which may be used to define custom getters/setters/validations/actions. However, most use cases should be covered automagically by the core, thus it may not be necessary to define such a `config` script at all!
@@ -37,6 +36,7 @@ max_age: 365
 ```
 
 A simple configuration panel can be created with this syntax:
+
 ```toml
 version = "1.0"
 [main]
@@ -71,7 +71,6 @@ Here, a `main` panel is created, containing the `main` and `limits` sections, co
 
 You can learn more about the full list of option types and their properties in [their dedicated page](/dev/forms).
 
-
 ## The "`bind`" statement
 
 Without any `bind` statement attached to a config panel property, values are only read/written from/to the app's settings file (`/etc/yunohost/$app/settings.yml`). This is usually not very useful in practice.
@@ -97,6 +96,7 @@ bind = "css_theme:__FINALPATH__/config.yml"
 ```
 
 You may also encounter situations such as:
+
 ```json
 {
     "foo": {
@@ -135,10 +135,10 @@ bind = "__INSTALL_DIR__/config.ini"
 default = "This is the default content"
 ```
 
-
 ### Custom getters/setters/validators (a.k.a `bind=null`)
 
 More complex use-case may appear, such as:
+
 - you want to expose some "dynamic" information in the config panel, such as computed health status, computed disk usage, dynamic list of options, ...
 - password handling, where the data may be written but can't be read
 - the config file format is not supported (e.g. xml, csv, ...)
@@ -163,6 +163,7 @@ ynh_app_config_run $1
 A question's getter is the function used to read the current value/state. Custom getters are defined using bash functions called `getter__QUESTION_SHORT_KEY()` which returns data through stdout.
 
 Stdout can be generated using one of those formats:
+
   1. either just the raw value,
   2. or a yaml, containing the value and other metadata and properties (for example the `style` of an `alert`, the list of available `choices` of a `select`, etc.)
 Note that in the first case, if the raw value contains any yaml-senstive character (e.g. `#` which is interpreted as a comment in yaml), make sure it is returned between escaped quotes (cf. dedicated example below) as it will be [converted to yaml](https://github.com/YunoHost/issues/issues/2501) by YunoHost core in the end.
@@ -243,6 +244,7 @@ bind = "null" # no behaviour on
 ```
 
 `scripts/config`
+
 ```bash
 get__status() {
     if [ -f "/sys/class/net/tun0/operstate" ] && [ "$(cat /sys/class/net/tun0/operstate)" == "up" ]
@@ -264,13 +266,11 @@ EOF
 
 [/details]
 
-
 #### Custom setters
 
 A question's setter is the function used to set new value/state. Custom setters are defined using bash functions called `setter__QUESTION_SHORT_KEY()`. In the context of the setter function, variables named with the various quetion's short keys are avaible ... for example the user-specified date for question `[main.main.theme]` is available as `$theme`.
 
 When doing non-trivial operations to set a value, you may want to use `ynh_print_info` to inform the admin about what's going on.
-
 
 [details summary="<i>Basic example : Set the system timezone</i>" class="helper-card-subtitle text-muted"]
 
@@ -293,19 +293,19 @@ set__timezone() {
 
 [/details]
 
-
-
 ## User input validations
 
 You will sometimes need to validate data provided by the user before saving it.
 
 Simple validation can be achieved using a regex pattern:
+
 ```toml
 pattern.regexp = '^.+@.+$'
 pattern.error = 'An email is required for this field'
 ```
 
 You can also restrict the accepted values using a choices list.
+
 ```toml
 choices.foo = "Foo (some explanation)"
 choices.bar = "Bar (moar explanation)"
@@ -313,6 +313,7 @@ choices.loremipsum = "Lorem Ipsum Dolor Sit Amet"
 ```
 
 Some other type specific argument exist like
+
 | type | validation arguments |
 | -----  | --------------------------- |
 | `number`, `range` | `min`, `max`, `step` |
@@ -325,7 +326,6 @@ See also : custom validators
 
 In addition to the "simple" validation mechanism (see the 'option' doc), custom validators can be defined in a similar fashion as custom getters/setters:
 
-
 ```bash
 validate__login_user() {
     if [[ "${#login_user}" -lt 4 ]]
@@ -334,11 +334,6 @@ validate__login_user() {
     fi
 }
 ```
-
-
-
-
-
 
 ## `visible` & `enabled` expression evaluation
 
@@ -352,7 +347,7 @@ The expression has to be written in javascript (this has been designed for the w
 
 Available operators are: `==`, `!=`, `>`, `>=`, `<`, `<=`, `!`, `&&`, `||`, `+`, `-`, `*`, `/`, `%` and `match()`.
 
-#### Examples
+### Examples
 
 ```toml
 # simple "my_option_id" is thruthy/falsy
@@ -366,7 +361,7 @@ visible = "!!my_value || my_other_value"
 
 For a more complete set of examples, [check the tests at the end of the file](https://github.com/YunoHost/yunohost/blob/dev/src/tests/test_questions.py).
 
-#### match()
+### match()
 
 For more complex evaluation we can use regex matching.
 
@@ -393,10 +388,10 @@ visible = "my_file && match(my_file, '^Lorem [ia]psumE?')"
 ```
 
 with a file with content like:
-```txt
+
+```text
 Lorem ipsum dolor et si qua met!
 ```
-
 
 ## Actions
 
@@ -412,6 +407,7 @@ ask = "Run action"
 ```
 
 And then defining the controller, prefixed by `run__` inside the app's `config` script:
+
 ```bash
 run__my_action() {
     ynh_print_info "Running 'my_action'..."
@@ -478,17 +474,17 @@ List of main configuration helpers:
 
 More info on this can be found by reading [vpnclient_ynh config script](https://github.com/YunoHost-Apps/vpnclient_ynh/blob/master/scripts/config)
 
-
-
 ## Important technical notes
 
 ### Options short keys have to be unique
 
 For performance reasons, questions short keys have to be unique in all the `config_panel.toml` file, not just inside its panel or its section. Hence it's not possible to have:
+
 ```toml
 [manual.vpn.server_ip]
 [advanced.dns.server_ip]
 ```
+
 In which two questions have "real variable name" `is server_ip` and therefore conflict with each other.
 
 ! Some short keys are forbidden cause it can interfer with config scripts (`old`, `file_hash`, `types`, `binds`, `formats`, `changed`) and you probably should avoid to use common settings name to avoid to bind your question to this settings (e.g. `id`, `install_time`, `mysql_pwd`, `path`, `domain`, `port`, `db_name`, `current_revision`, `admin`)
@@ -496,4 +492,4 @@ In which two questions have "real variable name" `is server_ip` and therefore co
 ### `bind` versus app settings
 
 ! IMPORTANT: with the exception of `bind = "null"` options, options ids should almost **always** correspond to an app setting initialized/reused during install/upgrade.
-Not doing so may result in inconsistencies between the config panel mechanism and the use of ynh_add_config. See also discussions in https://github.com/YunoHost/issues/issues/1973
+Not doing so may result in inconsistencies between the config panel mechanism and the use of ynh_add_config. See also discussions in <https://github.com/YunoHost/issues/issues/1973>
