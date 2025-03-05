@@ -16,7 +16,11 @@ config:
   # FIXME: should be removed when actually fixed
   no-alt-text: false
 
+  # Title pages have first-level headings duplicated with the markdown header
   single-title: false
+
+  # Github and grav don't have the same heading link fragment algorithm, headings with `'` are broken
+  link-fragments: false
 
   code-block-style:
     style: fenced

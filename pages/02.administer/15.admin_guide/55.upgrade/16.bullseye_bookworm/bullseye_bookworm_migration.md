@@ -61,8 +61,8 @@ For this, go to Diagnosis (category Base system) or look at the footer of the we
 
 Some more migrations appeared after the upgrade:
 
-* Rebuilding the virtualenvs of your Python apps
-* Migrate from PostgreSQL 13 to 15
+- Rebuilding the virtualenvs of your Python apps
+- Migrate from PostgreSQL 13 to 15
 
 You should run those as soon as possible to ensure your apps work properly.
 
