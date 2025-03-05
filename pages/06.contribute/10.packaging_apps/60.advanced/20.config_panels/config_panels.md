@@ -15,7 +15,6 @@ Technically speaking, config panels are used both for apps packaging and also co
 
 ## Community examples
 
-- [Check the basic example at the end of this doc](#basic-example)
 - [Check the example_ynh app toml](https://github.com/YunoHost/example_ynh/blob/master/config_panel.toml.example) and the [basic `scripts/config` example](https://github.com/YunoHost/example_ynh/blob/master/scripts/config)
 - [Check config panels of other apps](https://grep.app/search?q=version&filter[repo.pattern][0]=YunoHost-Apps&filter[lang][0]=TOML)
 - [Check `scripts/config` of other apps](https://grep.app/search?q=ynh_app_config_apply&filter[repo.pattern][0]=YunoHost-Apps&filter[lang][0]=Shell)
