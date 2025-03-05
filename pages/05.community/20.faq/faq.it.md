@@ -15,7 +15,7 @@ YunoHost è basato sulla distribuzione Debian, quindi rispetta le licenze degli 
 
 I programmi e i pacchetti hanno la loro propria licenza.
 
-#### Quale obbiettivo si prefigge YunoHost? {#quale-obbiettivo-si-prefi}
+#### Quale obbiettivo si prefigge YunoHost?
 
 Siamo convinti che la decentralizzazione di Internet, e il riappropriarsi della responsabilità e del controllo dei nostri dati e servizi, sia una questione essenziale per garantire una società libera e democratica.
 

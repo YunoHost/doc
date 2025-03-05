@@ -15,7 +15,7 @@ Après avoir mis en place la solution proposée dans ce tutoriel, la redirection
 
 La méthode qui sera mise en place consiste à rendre automatique le fait que la box annonce au DNS dynamique qu’elle a changé d’adresse IP publique, et qu’ensuite la zone DNS soit automatiquement changée.
 
-### Bureaux d'enregistrement {#bureaux-d-enregistrement}
+### Bureaux d'enregistrement
 
 Voici quelques bureaux d'enregistrement, qui permettent d'acheter des noms de domaine :
 
