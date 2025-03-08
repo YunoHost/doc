@@ -22,7 +22,7 @@ It's also possible to define mail aliases for a group, such that mails sent to `
 
 ### Default groups
 
-By default, two special groups are created:
+By default, these special groups are created:
 
 - `all_users`, that contain all users registered on YunoHost,
 - `visitors`, that applies to people viewing the server while not logged in.
