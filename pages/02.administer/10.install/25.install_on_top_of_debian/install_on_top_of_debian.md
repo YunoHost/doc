@@ -29,7 +29,7 @@ The installer will also ask for a **user account** and another password. **IMPOR
 
 When the install asks where to install and how to **create disk partitions**, select the option to use the whole disk, unless you know what you're doing.
 
-- We recommend to no separate the `/home`, `/var` or `/tmp` partitions. Use the option to “keep all files in one partition”.
+- We recommend not to separate the `/home`, `/var` or `/tmp` partitions. Use the option to “keep all files in one partition”.
 - We discourage the encryption of any partitions (Edit by Aleks: there's no explanation why though...)
 
 The installer will ask about **mirrors**. Select a country and server close to your location, or use the default options.
