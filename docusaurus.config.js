@@ -46,8 +46,6 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: '/',
-          // TODO: Use the default value "docs"
-          path: 'pages',
           // TODO: Update this when merging the PR
           editUrl: 'https://github.com/YunoHost/doc/tree/docusaurus',
         },
@@ -91,7 +89,7 @@ const config = {
         hideOnScroll: true,
         logo: {
           alt: 'Yunohost Logo',
-          src: 'img/yunohost_logo_horizontal.png',
+          src: 'img/YunoHost_logo_vertical.png',
         },
         items: [
           // {to: '/docs', label: 'Docs', position: 'left'},
