@@ -1,0 +1,172 @@
+// @ts-check
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
+
+import {themes as prismThemes} from 'prism-react-renderer';
+
+// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  title: 'Yunohost',
+  tagline: 'Why you no host?',
+  favicon: 'img/yunohost_favicon.png',
+
+  // Set the production url of your site here
+  url: 'https://doc.yunohost.org/',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: '/',
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'YunoHost', // Usually your GitHub org/user name.
+  projectName: 'doc', // Usually your repo name.
+
+  // TODO: Set them to "throw" when finished
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
+  onDuplicateRoutes: 'warn',
+
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['ar', 'ca', 'de', 'en', 'es', 'fr', 'it', 'oc', 'ru'],
+  },
+
+  presets: [
+    [
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        docs: {
+          sidebarPath: './sidebars.js',
+          routeBasePath: '/',
+          // TODO: Use the default value "docs"
+          path: 'pages',
+          // TODO: Update this when merging the PR
+          editUrl: 'https://github.com/YunoHost/doc/tree/docusaurus',
+        },
+        // blog: {
+        //   showReadingTime: true,
+        //   feedOptions: {
+        //     type: ['rss', 'atom'],
+        //     xslt: true,
+        //   },
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        //   // Useful options to enforce blogging best practices
+        //   onInlineTags: 'warn',
+        //   onInlineAuthors: 'warn',
+        //   onUntruncatedBlogPosts: 'warn',
+        // },
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+      }),
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      require('./redirects.js'),
+    ],
+    require.resolve('docusaurus-lunr-search'),
+  ],
+
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      // Replace with your project's social card
+      image: 'img/docusaurus-social-card.jpg',
+      navbar: {
+        title: 'Docs',
+        hideOnScroll: true,
+        logo: {
+          alt: 'Yunohost Logo',
+          src: 'img/yunohost_logo_horizontal.png',
+        },
+        items: [
+          // {to: '/docs', label: 'Docs', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: "search",
+            position: "right"
+          },
+          {
+            href: 'https://github.com/yunohost/doc',
+            label: 'GitHub',
+            position: 'right',
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+        ],
+      },
+      footer: {
+        style: 'dark',
+        links: [
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: 'Tutorial',
+                to: '/docs/intro',
+              },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/facebook/docusaurus',
+              },
+            ],
+          },
+        ],
+        copyright: `Build with Docusaurus for YunoHost`,
+      },
+      prism: {
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
+      },
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+        }
+      }
+    }),
+};
+
+export default config;

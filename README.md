@@ -1,32 +1,58 @@
 # YunoHost Documentation
 
-- [Web Site](https://yunohost.org)
-- Based on [Grav](https://getgrav.org/)
+This repository contains the code for [the YunoHost documentation](https://doc.yunohost.org).
 
-Please report [issues on YunoHost bugtracker](https://github.com/YunoHost/issues/issues).
+It is built using [Docusaurus 2](https://docusaurus.io), a modern static website generator.
 
-## Note on package documentation
+Please report issues on [the YunoHost bugtracker](https://github.com/YunoHost/issues/issues).
 
-Package documentation should be done in the package repository itself, under the `/doc` folder.  
-You can learn about it here: <https://yunohost.org/packaging_app_doc>
+> [!WARNING]  
+> Package documentation should be done in the package repository itself, under the `/doc` folder.  
+> You can learn about it here: <https://doc.yunohost.org/packaging_app_doc>
 
-## Contributing
+## Usage
 
-This repo use a **submodule** to provide the theme. So when you clone use:
-
-```bash
-git clone --recursive https://github.com/YunoHost/doc.git
-```
-
-You can refer to the page on [writing documentation](https://yunohost.org/write_documentation).
-
-If you know docker, you can run:
+### Installation
 
 ```bash
-docker-compose up
+$ yarn
 ```
+
+### Local Development
+
+```bash
+$ yarn start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+### Build
+
+```bash
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```bash
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```bash
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
 
 ### Regenerate the CSS
+
+FIXME: not relevant for docusaurus? But it can use scss
 
 We use scss to manage the CSS. If you want to change it, you must rebuild it.
 
@@ -40,3 +66,7 @@ Finally you can rebuild the CSS with (You can replace `expanded` by `compressed`
 
 Source:
 <https://sass-lang.com/guide>
+
+## Contributing
+
+You can refer to the page on [writing documentation](https://doc.yunohost.org/write_documentation).
