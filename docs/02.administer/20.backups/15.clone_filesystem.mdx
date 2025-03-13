@@ -1,14 +1,9 @@
 ---
 title: Snapshotting the entire filesystem
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/backup/clone_filesystem'
-page-toc:
-  active: true
-  depth: 3
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 YunoHost's backup tool only backs up useful files and relies on restore scripts to reinstall the dependencies of your applications. In other words, YunoHost's mechanism amounts to reinstalling and then reincorporating the data.
 
@@ -22,38 +17,46 @@ A snapshot allows you to freeze an image of the file system. Snapshots are very 
 
 In general, snapshots are quite disk space saving, the principle is that your file system will store the differences that occurred since your snapshot. Thus, only the modifications consume space.
 
-! Remember to delete the old snapshots to avoid wasting your storage space by storing all the differences since that date!
+:::info
+Remember to delete the old snapshots to avoid wasting your storage space by storing all the differences since that date!
+:::
 
 You can use this method with most VPS (often paying), virtual machine managers or if you have installed YunoHost with an advanced filesystem like btrfs, ceph or ZFS, you can also create snapshots via the command line
 
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="VPS"]
+<Tabs>
+<TabItem value="vps" label="VPS">
+
 Below, some documentation for the most known suppliers:
 
 - [DigitalOcean (EN)](https://docs.digitalocean.com/products/images/snapshots/)
 - [Gandi](https://docs.gandi.net/fr/simple_hosting/operations_courantes/snapshots.html)
 - [OVH](https://docs.ovh.com/fr/vps/snapshot-vps/)
 - [Scaleway (EN)](https://www.scaleway.com/en/docs/backup-your-data-with-snapshots/)
-[/ui-tab]
-[ui-tab title="VirtualBox"]
+
+</TabItem>
+<TabItem value="virtualbox" label="VirtualBox">
+
 Select the virtual machine and click `Snapshots`, then specify the snapshot name and click `OK`.
-![The snapshot button is located at the top right](image://virtualbox-snapshot2.webp)
+![The snapshot button is located at the top right](/img/virtualbox-snapshot2.webp)
 
 To restore, select the virtual machine, click on `Snapshots` then `Restore Snapshot option`.
-![](image://virtualbox-snapshot3.webp)
+![](/img/virtualbox-snapshot3.webp)
 
 Then click on `Restore Snapshot`.
-![](image://virtualbox-snapshot4.webp)
-[/ui-tab]
-[ui-tab title="Proxmox"]
+![](/img/virtualbox-snapshot4.webp)
+
+</TabItem>
+<TabItem value="proxmox" label="Proxmox">
 
 - Select the virtual machine
 - Go to the `Backup` tab
 - Click on `Backup now`.
 - Choose `Snapshot` mode
 - Validate
-[/ui-tab]
-[ui-tab title="BTRFS"]
+
+</TabItem>
+<TabItem value="btrfs" label="BTRFS">
+
 Below we consider that `/pool/volume` is the volume to snapshot.
 
 Create a read-only snapshot
@@ -82,11 +85,17 @@ Delete a snapshot
 btrfs subvolume delete /pool/volume/2021-07-22_16:12
 ```
 
-!! Be careful not to delete the original volume
+:::caution
+  Be careful not to delete the original volume
+:::
 
-!!! See [this tutorial](https://www.linux.com/training-tutorials/how-create-and-manage-btrfs-snapshots-and-rollbacks-linux-part-2/) for more info
-[/ui-tab]
-[ui-tab title="CEPH"]
+:::tip
+  See [this tutorial](https://www.linux.com/training-tutorials/how-create-and-manage-btrfs-snapshots-and-rollbacks-linux-part-2/) for more info
+:::
+
+</TabItem>
+<TabItem value="ceph" label="CEPH">
+
 Below we consider that `pool/volume` is the volume to snapshot.
 
 Create a snapshot
@@ -113,8 +122,9 @@ Delete a snapshot
 rbd snap rm pool/volume@2021-07-22_16:12
 ```
 
-[/ui-tab]
-[ui-tab title="ZFS"]
+</TabItem>
+<TabItem value="zfs" label="ZFS">
+
 Below we consider that `pool/volume` is the volume to snapshot.
 
 Create a snapshot
@@ -141,17 +151,18 @@ Delete a snapshot
 zfs destroy pool/volume@2021-07-22_16:12
 ```
 
-[/ui-tab]
-[/ui-tabs]
+</TabItem>
+</Tabs>
 
-## Create a cold image of the file system
+## Create a cold image of the file system 
 
 You can clone your media (SD card, ssd disk, VPS volume...) to create a disk image. This image before compression will be the exact size of your media, that's why this method applies rather to machines of less than 64GB.
 
 Unless you can read a snapshot, this method requires you to stop the server while you create the image. With a VPS, you have to restart in rescue mode from your provider's interface.
 
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="With USBimager"]
+<Tabs>
+<TabItem value="usbimage" label="With USBimager">
+
 This can be done with [USBimager](https://bztsrc.gitlab.io/usbimager/) (Note: make sure you download the 'Read-write' version! Not the 'Write-only' version!). The process then consists of the "reverse" of the SD card flashing process:
 
 - Turn off your server
@@ -159,8 +170,8 @@ This can be done with [USBimager](https://bztsrc.gitlab.io/usbimager/) (Note: ma
 - In USBimager, click on "Read" to create an image ("photograph") of the SD card. You can use the resulting file to restore the whole system later.
 
 More details in [USBimager documentation](https://gitlab.com/bztsrc/usbimager/#creating-backup-image-file-from-device)
-[/ui-tab]
-[ui-tab title="In command line with dd"]
+</TabItem>
+<TabItem value="dd" label="In command line with dd">
 
 It is possible to achieve the same thing with `dd` if you are comfortable with the command line:
 
@@ -170,5 +181,5 @@ dd if=/dev/mmcblk0 | gzip > ./my_snapshot.gz
 
 (replace `/dev/mmcblk0` with the real name of your SD card or hard drive)
 
-[/ui-tab]
-[/ui-tabs]
+</TabItem>
+</Tabs>

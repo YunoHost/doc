@@ -1,13 +1,5 @@
 ---
 title: Backup methods
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/backup/backup_methods'
-page-toc:
-  active: true
-  depth: 3
 ---
 
 YunoHost currently has three apps integrating backup solutions offering more features than the simple ".tar" mechanism shipped in YunoHost, in particular automatic and remote backups.
@@ -32,7 +24,9 @@ There are [remote borg repository providers](https://www.borgbackup.org/support/
 
 ## [Archivist](https://apps.yunohost.org/app/archivist)
 
-!! This application is currently broken!
+:::warning
+This application is currently broken!
+:::
 
 - based on rsync and GPG
 - backup of data on a remote storage (support for different types of storage)
@@ -40,4 +34,4 @@ There are [remote borg repository providers](https://www.borgbackup.org/support/
 
 The package also allows you to finely define the frequency and type of data to be backed up and integrates an email alert system in case of backup failure.
 
-More info: <https://forum.yunohost.org/t/new-app-archivist/3747>
+More info [on the forum](https://forum.yunohost.org/t/new-app-archivist/3747).
