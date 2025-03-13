@@ -1,11 +1,9 @@
 ---
 title: Certificate
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/certificate'
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 Certificates are used to guarantee the confidentiality and authenticity of the communication between a web browser and your server. In particular, they protect against attackers trying to impersonate your server.
 
@@ -13,7 +11,7 @@ YunoHost provides a **self-signed** certificate, it means that your server guara
 
 In practice, visitors will see a screen list this:
 
-![](image://postinstall_error.png)
+![](/img/postinstall_error.png)
 
 Which basically asks the visitor : **"Do you trust the server hosting this website?"**. This can rightfully frighten a lot of people.
 
@@ -23,27 +21,27 @@ To avoid this confusion, it's possible to get a certificate signed a known autho
 
 Before attempting to install a Let's Encrypt certificate, you should make sure that your DNS is correctly configured (your.domain.tld should point to your server's IP) and that your domain is accessible through HTTP from outside your local network (i.e. at least port 80 should be forwarded to your server).
 
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="From the web interface"]
+<Tabs groupId="admin-commands">
+<TabItem value="web" label="From the web interface">
 
 Go to the 'Domain' part of the admin interface, then in the section dedicated to your.domain.tld. You should find a 'SSL certificate' button:
 
-![](image://domain-certificate-button.png)
+![](/img/domain-certificate-button.png)
 
 In the 'SSL certificate' section, you can see the status of the current certificate. If you just added the domain, it should be a self-signed certificate.
 
-![](image://certificate-before-LE.png)
+![](/img/certificate-before-LE.png)
 
 If your domain is correctly configured, it is then possible to install the Let's Encrypt certificate via the green button.
 
-![](image://certificate-after-LE.png)
+![](/img/certificate-after-LE.png)
 
 Once the install is made, you can check that the certificate is live via your browser by going to your domain in HTTPS. The certificate will automatically be renewed every three months.
 
-![](image://certificate-signed-by-LE.png)
+![](/img/certificate-signed-by-LE.png)
 
-[/ui-tab]
-[ui-tab title="From the command line"]
+</TabItem>
+<TabItem value="cli" label="From the command line">
 
 Connect to your server through SSH.
 
@@ -68,8 +66,8 @@ Success! Successfully installed Let's Encrypt certificate for domain DOMAIN.TLD!
 
 Once this is done, you can check that the certificate is live via your browser by going to your domain in HTTPS. The certificate will automatically be renewed every three months.
 
-[/ui-tab]
-[/ui-tabs]
+</TabItem>
+</Tabs>
 
 #### Troubleshooting
 

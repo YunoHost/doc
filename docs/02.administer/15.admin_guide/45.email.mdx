@@ -1,11 +1,9 @@
 ---
 title: Emails
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/email'
 ---
+
+import Highlight from '@site/src/components/Highlight';
+import {HighlightWebAdmin, HighlightDiagnosis, HighlightApplications, HighlightAppInstall} from '@site/src/components/Highlight';
 
 YunoHost comes with a complete mail stack allowing you to host your own email server, and therefore to have your own email addresses in `something@your.domain.tld`.
 
@@ -20,7 +18,7 @@ To validate your setup:
 - if you are self-hosting at home and not using a VPN, ensure [your ISP won't block port 25](/isp) ;
 - route ports according to [this documentation](/isp_box_config) ;
 - carefully configure mail DNS records according to [this documentation](/dns_config) ;
-- test your configuration using the diagnostic features (`Webadmin > Diagnosis > Email`). You can also use [mail-tester.com](https://mail-tester.com), a score of at least 8~9/10 is a reasonnable goal <small>(be careful : only 3 tests per domain per day are allowed)</small>
+- test your configuration using the diagnostic features (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon="fa-envelope"/> Email</Highlight> ). You can also use [mail-tester.com](https://mail-tester.com), a score of at least 8~9/10 is a reasonnable goal <small>(be careful : only 3 tests per domain per day are allowed)</small>
 
 ## Email clients
 

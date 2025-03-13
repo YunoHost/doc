@@ -1,44 +1,42 @@
 ---
 title: Applications
-template: docs
-taxonomy:
-    category: docs
-page-toc:
-  active: true
-routes:
-  default: '/apps_overview'
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Figure from '@site/src/components/Figures';
+import Highlight from '@site/src/components/Highlight';
+import {HighlightApplications, HighlightAppInstall} from '@site/src/components/Highlight';
+import LinkButton from '@site/src/components/LinkButton';
 
 One of the key feature of YunoHost is the ability to easily install applications which are then immediately usable. Example of applications include a blog system, a "cloud" (to host and sync files), a website, an RSS reader...
 
-Applications can be installed and managed through the webadmin interface in `[fa=cubes /] Applications` or through commands of the `yunohost app` category.
+Applications can be installed and managed through the webadmin interface in <HighlightApplications/> or through commands of the `yunohost app` category.
 
-[center]
-![Apps list](image://apps_list.png?resize=512&classes=caption "Apps list in the webadmin, with its Install button.")
-[/center]
+<Figure alt="Apps list" caption="Apps list in the webadmin, with its Install button." src="/img/apps_list.png"/>
 
-The application catalog and its categories can be browsed directly from the webadmin by clicking on the `[fa=plus /] Install` button in the apps list, or from this documentation.
+The application catalog and its categories can be browsed directly from the webadmin by clicking on the <HighlightAppInstall/> button in the apps list, or from this documentation.
 
-<center><a href="/apps" style="background: orange; border-color: orange;" class="btn btn-lg btn-error"><i class="fa fa-cubes"></i> Applications catalog</a></center>
+<div class="text--center">
+<LinkButton url="https://apps.yunohost.org" color="orange"><FAIcon icon='fa-cubes'/> Applications Catalog</LinkButton>
+</div>
 
-! Be careful and stay reasonable on the number of installed applications. Each additional installation increases the attack surface and the risk of failure. Ideally, if you want to test, do it with another instance for example in [a virtual machine](/install/hardware:virtualbox).
+:::caution
+Be careful and stay reasonable on the number of installed applications. Each additional installation increases the attack surface and the risk of failure. Ideally, if you want to test, do it with another instance for example in [a virtual machine](/install/hardware:virtualbox).
+:::
 
 ## Installing an app
 
 Let's say you want to install a *Custom Webapp*. Before actually running the installation steps, YunoHost will usually have you fill in a form to properly set it up for you.
 
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="From the webadmin"]
-
-![Custom Webapp install form](image://app_install_form.png?resize=512&classes=caption "Pre-installation form of the Custom Webapp")
-
-[/ui-tab]
-[ui-tab title="From the command line"]
-
-![Custom Webapp install form in CLI](image://app_install_form_cli.png?resize=512&classes=caption "Pre-installation form of the Custom Webapp in CLI")
-
-[/ui-tab]
-[/ui-tabs]
+<Tabs groupId="admin-commands">
+  <TabItem value="web" label="From the web interface">
+    <Figure alt="Custom Webapp install form" src="/img/app_install_form.png" caption="Pre-installation form of the Custom Webapp"/>
+  </TabItem>
+  <TabItem value="cli" label="From the command line">
+    <Figure alt="Custom Webapp install form in CLI" src="/img/app_install_form_cli.png" caption="Pre-installation form of the Custom Webapp in CLI"/>
+  </TabItem>
+</Tabs>
 
 ### Subpaths vs. individual domains per apps
 
@@ -67,13 +65,17 @@ rss.yolo.com   : TinyTiny RSS (a RSS reader)
 wiki.yolo.com  : DokuWiki (a wiki)
 ```
 
-!!! Many applications integrate a feature that allows you to change the URL of your application. This choice between subpath and subdomain can be reversed in some cases via a simple manipulation in the administration interface.
+:::info
+Many applications integrate a feature that allows you to change the URL of your application. This choice between subpath and subdomain can be reversed in some cases via a simple manipulation in the administration interface.
+:::
 
 ### User access management and public apps
 
 The installation form usually asks whether or not the app should be publically accessible. If you choose to not make it public, only users logged in YunoHost will be able to reach it.
 
-!!!! After installation, this can be configured via the webadmin in the [Groups and permissions panel](/groups_and_permissions), or similarly via the command-line subcategory `yunohost user permission`.
+:::tip
+After installation, this can be configured via the webadmin in the [Groups and permissions panel](/groups_and_permissions), or similarly via the command-line subcategory `yunohost user permission`.
+:::
 
 ### Instructions after installation
 
@@ -81,7 +83,7 @@ Some applications need to give you instructions, URLs or credentials once they a
 
 ### Multi-instance applications
 
-Some applications support the ability to be installed several times (at different locations) ! To do so, just go another time in `Applications > [fa=plus /] Install`, and select again the application to install.
+Some applications support the ability to be installed several times (at different locations) ! To do so, just go another time in <HighlightApplications/> → <HighlightAppInstall/>, and select again the application to install.
 
 ## LDAP / SSO integration
 
@@ -93,17 +95,17 @@ However, some applications do not support this as it can be either not implement
 
 After installation, some settings handled by YunoHost can be tweaked, such as user and group permissions, application's tile and label in the SSO page, or its access URL.
 
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="From the webadmin"]
+<Tabs groupId="admin-commands">
+  <TabItem value="web" label="From the web interface">
 
 You can access the app's operations page by clicking its name in the applications list.
 
-![Application operations page](image://app_config_operations.png?resize=768&classes=caption "Application operations page in the webadmin")
+<Figure alt="Application operations page" src="/img/app_config_operations.png" caption="Application operations page in the webadmin"/>
 
 You can also delete the application from this page.
 
-[/ui-tab]
-[ui-tab title="From the command line"]
+  </TabItem>
+  <TabItem value="cli" label="From the command line">
 
 From the command line, you can change:
 
@@ -114,24 +116,26 @@ You can also delete the app: `yunohost app remove <app>`
 
 `<app>` is to be replaced with the app's ID. If this is the first instance of the app, like Nextcloud, the ID is `nextcloud`. If this is the second, then it's `nextcloud__2` and so on. To list all your apps and check their ID, you can run `yunohost app info`.
 
-[/ui-tab]
-[/ui-tabs]
+  </TabItem>
+</Tabs>
 
 ### Configuration panels
 
 Some apps include a *configuration panel*, which features actions and settings specific for each app that they usually do not handle themselves. They can also spare you the need for altering configuration files by hand.
 
-!!!! Configuration panels are *not* meant to tweak every aspects of the apps. You will surely use their own administration panels more often than YunoHost's configuration panels.
+:::info
+Configuration panels are *not* meant to tweak every aspects of the apps. You will surely use their own administration panels more often than YunoHost's configuration panels.
+:::
 
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="From the webadmin"]
+<Tabs groupId="admin-commands">
+  <TabItem value="web" label="From the web interface">
 
-The configuration panels are accessible in the webadmin in their operations page, trough the `[fa=cogs /] Config panel` button.
+The configuration panels are accessible in the webadmin in their operations page, trough the <Highlight no_break={true} color='darkblue'><FAIcon icon="fa-cogs"/> Config panel</Highlight> button.
 
-![My Webapp configuration panel](image://app_config_panel.png?resize=768&classes=caption "Configuration panel for My Webapp")
+<Figure alt="My Webapp configuration panel" src="/img/app_config_panel.png" caption="Configuration panel for My Webapp"/>
 
-[/ui-tab]
-[ui-tab title="From the command line"]
+  </TabItem>
+  <TabItem value="cli" label="From the command line">
 
 From the command line, you can list the configuration panel settings with the following command: `yunohost app config get <app>`
 
@@ -152,8 +156,8 @@ To change a setting, either use `yunohost app config set <app>` to get prompted 
 
 The `<key>` is the setting name, for example `main.sftp.with_sftp` from above.
 
-[/ui-tab]
-[/ui-tabs]
+  </TabItem>
+</Tabs>
 
 ## Execute commands within the app
 

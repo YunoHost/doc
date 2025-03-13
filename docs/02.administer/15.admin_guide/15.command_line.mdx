@@ -1,15 +1,9 @@
 ---
 title: SSH and command line
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/ssh'
-  aliases:
-    - '/commandline'
-page-toc:
-  active: true
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 ## What's SSH?
 
@@ -18,23 +12,26 @@ page-toc:
 The command line interface (CLI) is, in the computer world, the original (and more technical) way of interacting with a computer compared to graphical interface. Command line interfaces are generally said to be more complete, powerful or efficient than a graphical interface, though also more difficult to learn.
 
 ## How to connect
-
 ### Login credentials
 
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="Before running the initial configuration (post-installation)"]
+<Tabs>
+<TabItem value="before-postinstall" label="Before running the initial configuration (post-installation)" default>
 
 - If you are **installing at home**, the default credentials are login: `root` and password: `yunohost` (or `1234` if you flashed an armbian image)
 - If you are **installing a remote server (VPS)**, your provider should have communicated you the login and password (or allowed you to configure an SSH key)
 
-[/ui-tab]
-[ui-tab title="After"]
+</TabItem>
+<TabItem value="after-postinstall" label="After running the post-installation" default>
+
 
 During the postinstall, you've been asked to choose an user and an administration password. This user account allows you to connect to the server through SSH. The password becomes also the new password for the `root` user. Additionally, **the `root` SSH login becomes disabled after the postinstall and you should log in using the user account created during postinstall !**. The only exception is that you may still be able to login using `root` *from the local network - or from a direct console on the server* (this is to cover the event where the LDAP server is broken and the `admin` user is unusable).
 
-!!! If you connected with the administration account and would like to become `root` for convenience (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su` or `sudo -i`.
-[/ui-tab]
-[/ui-tabs]
+:::tip
+If you connected with the administration account and would like to become `root` for convenience (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su` or `sudo -i`.
+:::
+
+</TabItem>
+</Tabs>
 
 ### Address to use
 
@@ -68,24 +65,30 @@ ssh username@yunohost.local
 # if you changed the SSH port
 ssh -p 2244 username@your.domain.tld
 ```
-
-N.B. : `fail2ban` will ban your IP for 10 minutes if you perform 10 failed login attempts. If you need to unban the IP, have a look at the page about [Fail2Ban](/fail2ban)
+:::note
+`fail2ban` will ban your IP for 10 minutes if you perform 10 failed login attempts. If you need to unban the IP, have a look at the page about [Fail2Ban](/fail2ban)
+:::
 
 ## Which other users may connect to the server?
 
 By default, only YunoHost users in the `admins` group can log in to YunoHost's SSH and SFTP servers. Non-admin YunoHost users can't connect via SSH for security reasons. With the permissions system it is possible to specifically grant SFTP or even SSH access to non-admin users.
 
-! Be careful who you give SSH access to. This increases even more the attack surface available to a malicious user.
+:::caution
+Be careful who you give SSH access to. This increases even more the attack surface available to a malicious user.
+:::
 
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="From the web interface"]
+<Tabs>
+<TabItem value="web" label="From the web interface">
+
 Go to `Users > Manage groups and permissions`.
 
 From here, you can add SFTP or SSH permissions to any user or group.
 
 If you want to add an SSH public key to the user, you have to do it from the command line, as the web interface does not yet offer this feature.
-[/ui-tab]
-[ui-tab title="From the command line"]
+
+</TabItem>
+<TabItem value="cli" label="From the command line">
+
 To allow a user or group to access via SFTP or SSH:
 
 ```bash
@@ -112,8 +115,8 @@ yunohost user ssh remove-key <username> <key>
 yunohost user ssh list-keys <username>
 ```
 
-[/ui-tab]
-[/ui-tabs]
+</TabItem>
+</Tabs>
 
 ## Security and SSH
 
@@ -121,7 +124,9 @@ A more extensive discussion about security & SSH can be found on the [dedicated 
 
 ## The command line
 
-!!! Providing a full tutorial about the command line is quite beyond the scope of the YunoHost documentation : for this, consider reading a dedicated tutorial such as [this one](https://ryanstutorials.net/linuxtutorial/) or [this one](http://linuxcommand.org/). But be reassured that you don't need to be a CLI expert to start using it !
+:::info
+Providing a full tutorial about the command line is quite beyond the scope of the YunoHost documentation : for this, consider reading a dedicated tutorial such as [this one](https://ryanstutorials.net/linuxtutorial/) or [this one](http://linuxcommand.org/). But be reassured that you don't need to be a CLI expert to start using it !
+:::
 
 ### The `yunohost` command
 
