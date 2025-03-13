@@ -1,23 +1,17 @@
 ---
+sidebar_label: OVH manual DNS config
 title: DNS Configuration with OVH
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/providers/registrar/ovh/manualdns'
-  aliases:
-    - '/OVH'
 ---
 
 Let's see how to properly set the DNS redirections with [OVH](http://www.ovh.com).
 
 Once you bought your domain name, got to the Web Control Panel, and click on you domain name on the left side:
 
-![](image://ovh_control_panel.png?resize=800)
+![OVH website screenshot](/img/ovh_control_panel.png?resize=800)
 
 Click on the **DNS Zone** tab, then on **Add an entry**:
 
-![](image://ovh_dns_zone.png?resize=800)
+![OVH website screenshot](/img/ovh_dns_zone.png?resize=800)
 
 Now you need to add the DNS redirections as specified by the [standard DNS zone configuration](/dns_config)
 
