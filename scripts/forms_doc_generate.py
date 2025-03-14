@@ -135,22 +135,18 @@ def main() -> None:
     parser.add_argument("--output", "-o", type=Path, required=True)
     args = parser.parse_args()
 
-    config_panel = list_config_panel(args.input)
-    options = list_form_options(args.input)
-    version = get_changelog_version(args.input)
-    commit = get_current_commit(Path(__file__).parent)
+    template_data = {
+        "configpanel": list_config_panel(args.input),
+        "options": list_form_options(args.input),
+        "date": datetime.datetime.now().strftime("%d/%m/%Y"),
+        "version": get_changelog_version(args.input),
+        "doc_commit": get_current_commit(Path(__file__).parent),
+        "src_commit": get_current_commit(args.input),
+    }
 
     template = Template(TEMPLATE_FILE.read_text())
     template.globals["now"] = datetime.datetime.utcnow
-
-    result = template.render(
-        configpanel=config_panel,
-        options=options,
-        date=datetime.datetime.now().strftime("%d/%m/%Y"),
-        version=version,
-        current_commit=commit,
-    )
-
+    result = template.render(**template_data)
     args.output.write_text(result)
 
 

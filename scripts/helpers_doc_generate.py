@@ -281,20 +281,18 @@ def main() -> None:
 
             section["helpers"][subsection] = p.blocks  # type: ignore
 
-    version = get_changelog_version(args.input)
-    commit = get_current_commit(Path(__file__).parent)
+    template_data = {
+        "tree": TREE,
+        "helpers_version": args.version,
+        "date": datetime.datetime.now().strftime("%d/%m/%Y"),
+        "version": get_changelog_version(args.input),
+        "doc_commit": get_current_commit(Path(__file__).parent),
+        "src_commit": get_current_commit(args.input),
+    }
 
     template = Template(TEMPLATE_FILE.read_text())
     template.globals["now"] = datetime.datetime.utcnow
-
-    result = template.render(
-        tree=TREE,
-        date=datetime.datetime.now().strftime("%d/%m/%Y"),
-        version=version,
-        helpers_version=args.version,
-        current_commit=commit,
-    )
-
+    result = template.render(**template_data)
     output.write_text(result)
 
 

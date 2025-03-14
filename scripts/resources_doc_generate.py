@@ -82,21 +82,17 @@ def main() -> None:
     parser.add_argument("--output", "-o", type=Path, required=True)
     args = parser.parse_args()
 
-    resources = list_resources(args.input)
-
-    version = get_changelog_version(args.input)
-    commit = get_current_commit(Path(__file__).parent)
+    template_data = {
+        "resources": list_resources(args.input),
+        "date": datetime.datetime.now().strftime("%d/%m/%Y"),
+        "version": get_changelog_version(args.input),
+        "doc_commit": get_current_commit(Path(__file__).parent),
+        "src_commit": get_current_commit(args.input),
+    }
 
     template = Template(TEMPLATE_FILE.read_text())
     template.globals["now"] = datetime.datetime.utcnow
-
-    result = template.render(
-        resources=resources,
-        date=datetime.datetime.now().strftime("%d/%m/%Y"),
-        version=version,
-        current_commit=commit,
-    )
-
+    result = template.render(**template_data)
     args.output.write_text(result)
 
 
