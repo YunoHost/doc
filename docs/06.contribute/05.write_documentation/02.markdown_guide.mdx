@@ -1,10 +1,5 @@
 ---
-title: Guide Markdown
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/doc_markdown_guide'
+title: Markdown Guide
 ---
 
 Markdown is a markup language created in 2004, many add-ons developing the possibilities of this language exist. The objective of this guide is to aim for the exhaustiveness of the possibilities of this formatting language within the framework of the YunoHost documentation and not Markdown languages in general.
@@ -76,7 +71,9 @@ It is the same for the documentation pages, except that the link is internal. Th
 The link will return to the page with the correct language setting if the page exists, or defaults to the next available language (French, usually):
 [Wiki page](/write_documentation)
 
-! Note that language codes are thus not to be included at the beginning of the links to other documentation pages: `/en`, `/fr`, etc. are superfluous.
+:::tip
+Note that language codes are thus not to be included at the beginning of the links to other documentation pages: `/en`, `/fr`, etc. are superfluous.
+:::
 
 ### Create anchors
 
@@ -87,6 +84,7 @@ Text that will be doesn't even know it has an anchor.
 ```
 
 What's displayed is:
+
 Text that will be doesn't even know it has an anchor.
 
 It is also possible to return an anchor directly to the title, noting the link in lower case with `-`s instead of spaces.
@@ -98,6 +96,7 @@ All that remains is to designate the anchor to the text you want to make interac
 ```
 
 [My Anchor Returns to Lists](#anchorame)
+
 [My Anchor that refers to the title of the tables](#tables)
 
 ## Displaying images
@@ -105,18 +104,18 @@ All that remains is to designate the anchor to the text you want to make interac
 To display images, the principle is the same as for links, except that a `!` is added before the text to be displayed, which is considered here as the text to be displayed if the image cannot be loaded. A description of the image is appropriate.
 
 ```markdown
-![YunoHost Logo](image://logo.png)
+![YunoHost Logo](/img/logo.png)
 ```
 
-![YunoHost Logo](image://logo.png)
+![YunoHost Logo](/img/logo.png)
 
 It is possible to make a link with an image, for example:
 
 ```markdown
-[![YunoHost Logo](image://logo.png)](/write_documentation)
+[![YunoHost Logo](/img/logo.png)](/write_documentation)
 ```
 
-[![YunoHost Logo](image://logo.png)](/write_documentation)
+[![YunoHost Logo](/img/logo.png)](/write_documentation)
 
 The insert of *text to be displayed if the image cannot be loaded* between the brackets in the image link is not mandatory but strongly recommended.
 
@@ -236,7 +235,7 @@ To create an array, use the vertical bar `|` and dashes `--`. It is mandatory to
 | **One table** | One column | One second | As many as you want |
 |:-------------:|:----------:|:----------:|:-------------------:|
 | | And formatted line | | And bold text | | Or *italic* |
-| More lines | |![An image](image://cd.jpg) | [Or a link](/contributordoc) |
+| More lines | |![An image](/img/cd.jpg) | [Or a link](/contributordoc) |
 ```
 
 Which would say this:
@@ -244,7 +243,7 @@ Which would say this:
 | **One table** | One column | One second | As many as you want |
 |:-------------:|:----------:|:----------:|:-------------------:|
 | | And formatted line | | And bold text | | Or *italic* |
-| More lines | |![An image](image://cd.jpg) | [Or a link](/contributordoc) |
+| More lines | |![An image](/img/cd.jpg) | [Or a link](/contributordoc) |
 
 ## Code block
 

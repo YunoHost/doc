@@ -1,12 +1,8 @@
 ---
 title: Write documentation
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/write_documentation'
 ---
 
+{/* TODO: migrate this doc to docusaurus */}
 
 ## Via GitHub
 
@@ -51,7 +47,9 @@ The structure of the repository is described below:
 +-- README.md
 ```
 
-!!!! To learn more about Grav's features, you can head over to its [documentation](https://learn.getgrav.org?target=_blank). The remainder of this page will show you some specific instructions to contribute to YunoHost's documentation.
+:::tip
+To learn more about Grav's features, you can head over to its [documentation](https://learn.getgrav.org?target=_blank). The remainder of this page will show you some specific instructions to contribute to YunoHost's documentation.
+:::
 
 ## Grav header
 
@@ -78,7 +76,9 @@ routes:
 
 You can use Markdown syntax, refer to the [documentation](/doc_markdown_guide) for further information.
 
-! Note that language codes are not to be included at the beginning of the links to other documentation pages: `/en`, `/fr`, etc. are superfluous.
+:::note
+Note that language codes are not to be included at the beginning of the links to other documentation pages: `/en`, `/fr`, etc. are superfluous.
+:::
 
 To improve Markdown capabilities, additional plugins are installed in Grav. You can refer to their own documentation on GitHub to see how to use them.
 
@@ -106,7 +106,9 @@ Some pages of the documentation are automatically or dynamically generated.
 
 ## Host your own testing documentation
 
-! These instructions are yet to be fully tested. Please help us by reporting any issue you may have with them.
+:::note
+These instructions are yet to be fully tested. Please help us by reporting any issue you may have with them.
+:::
 
 0. Fork YunoHost documentation repository
 1. Install Grav's YunoHost package: `yunohost app install grav`

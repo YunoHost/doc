@@ -1,10 +1,5 @@
 ---
-title: Propel a contribution with GitHub
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/doc_use_git'
+title: Contribute via Github
 ---
 
 It is of course possible to contribute directly to the YunoHost documentation, but this is not the most convenient way to do so for both the contributor and the person who will inject your contribution into the documentation. Here is a tutorial to understand and create a contribution to the YunoHost documentation using [Git](https://git-scm.com/) and [GitHub.com](http://github.com/) which is the Git forge service that hosts and stores the YunoHost source code and documentation.
@@ -19,13 +14,16 @@ You don't have to give your first and last names, you can use a nickname (when y
 To fork the source code allows you to create a new branch of development of a software source code or in this case the source code of the documentation. By creating a new branch, this allows you to modify the code and add your contributions without altering the code of the `master` branch, which is the public release of the documentation. This allows you not to have to write down everything at once, but to do it in several steps. (Especially for contributions that require more time).
 
 Forking a project on GitHub is extremely simple, just click on the Fork button, this will create a new repository on your GitHub account.
-![Screenshot GitHub fork button screenshot](image://github_fork_button.png)
-In the title of the new repository, you will see where the repository comes from, in this case `YunoHost/doc`.
-![Screenshots title and subtitle of the repository](image://github_fork_title.png)
+![Screenshot GitHub fork button screenshot](/img/github_fork_button.png)
 
-! **Point of vigilance !**
-! If you forge the repository of another contributor than YunoHost, you'll get the same files. Except that when you send your changes, they will be sent to the contributor and not to the YunoHost repository. The advantage is that it allows you to develop another branch created by the contributor and work with another person on an improvement before submitting it to the main repository.
-! It is not possible to have a fork from a contributor's repository and the original repository fork at the same time in your own account.
+In the title of the new repository, you will see where the repository comes from, in this case `YunoHost/doc`.
+![Screenshots title and subtitle of the repository](/img/github_fork_title.png)
+
+:::warning
+If you forge the repository of another contributor than YunoHost, you'll get the same files. Except that when you send your changes, they will be sent to the contributor and not to the YunoHost repository. The advantage is that it allows you to develop another branch created by the contributor and work with another person on an improvement before submitting it to the main repository.
+
+It is not possible to have a fork from a contributor's repository and the original repository fork at the same time in your own account.
+:::
 
 ## Modify and add your contribution
 
