@@ -1,17 +1,14 @@
 ---
 title: Config Panels
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/packaging_config_panels'
 ---
 
 From a practical point of view, one of the main purpose of config panel is to "expose" settings from the app's configuration files to YunoHost's admins which are therefore able to manipulate them from a nice web ui. This is especially relevant for apps which do not provide any sort of admin UI and expect admins to manually edit the configuration files.
 
 Technically speaking, config panels are used both for apps packaging and also core features (domain configuration, global settings)
 
-! Please: Keep in mind the YunoHost spirit, and try to build your panels in such a way as to expose only really useful, "high-level" parameters, and if there are many of them, to relegate those corresponding to rarer use cases to "Advanced" sub-sections. Keep it simple, focus on common needs, don't expect the admins to have 3 PhDs in computer science.
+:::warning
+Please: Keep in mind the YunoHost spirit, and try to build your panels in such a way as to expose only really useful, "high-level" parameters, and if there are many of them, to relegate those corresponding to rarer use cases to "Advanced" sub-sections. Keep it simple, focus on common needs, don't expect the admins to have 3 PhDs in computer science.
+:::
 
 ## Community examples
 
@@ -74,7 +71,7 @@ You can learn more about the full list of option types and their properties in [
 
 Without any `bind` statement attached to a config panel property, values are only read/written from/to the app's settings file (`/etc/yunohost/$app/settings.yml`). This is usually not very useful in practice.
 
-Using `bind = ":/some/config/file"`, one declares that the actual truth used by the app lives in `/some/config/file`. The config panel will read/write the value from/to this file. YunoHost will automagically adapt to classic formats such as YAML, TOML, JSON, INI, PHP, `.env`-like and `.py`. (At least, assuming we're dealing with simple key<->value mappings)
+Using `bind = ":/some/config/file"`, one declares that the actual truth used by the app lives in `/some/config/file`. The config panel will read/write the value from/to this file. YunoHost will automagically adapt to classic formats such as YAML, TOML, JSON, INI, PHP, `.env`-like and `.py`. (At least, assuming we're dealing with simple key\<-\>value mappings)
 
 A simple real-life example looks like:
 
@@ -167,7 +164,8 @@ Stdout can be generated using one of those formats:
   2. or a yaml, containing the value and other metadata and properties (for example the `style` of an `alert`, the list of available `choices` of a `select`, etc.)
 Note that in the first case, if the raw value contains any yaml-senstive character (e.g. `#` which is interpreted as a comment in yaml), make sure it is returned between escaped quotes (cf. dedicated example below) as it will be [converted to yaml](https://github.com/YunoHost/issues/issues/2501) by YunoHost core in the end.
 
-[details summary="<i>Basic example with raw stdout: get the timezone on the system</i>" class="helper-card-subtitle text-muted"]
+<details>
+<summary><i>Basic example with raw stdout: get the timezone on the system</i></summary>
 
 `config_panel.toml`
 
@@ -185,9 +183,10 @@ get__timezone() {
 }
 ```
 
-[/details]
+</details>
 
-[details summary="<i>Basic example with raw stdout containing a yaml-sensitive character: return a HTML color code matched in a file</i>" class="helper-card-subtitle text-muted"]
+<details>
+<summary><i>Basic example with raw stdout containing a yaml-sensitive character: return a HTML color code matched in a file</i></summary>
 
 `config_panel.toml`
 
@@ -207,9 +206,10 @@ get__background() {
 }
 ```
 
-[/details]
+</details>
 
-[details summary="<i>Basic example with yaml-formated stdout : Display a list of available plugins</i>" class="helper-card-subtitle text-muted"]
+<details>
+<summary><i>Basic example with yaml-formated stdout : Display a list of available plugins</i></summary>
 
 `config_panel.toml`
 
@@ -228,9 +228,10 @@ get__plugins() {
 }
 ```
 
-[/details]
+</details>
 
-[details summary="<i>Advanced example with yaml-formated stdout : Display the status of a VPN</i>" class="helper-card-subtitle text-muted"]
+<details>
+<summary><i>Advanced example with yaml-formated stdout : Display the status of a VPN</i></summary>
 
 `config_panel.toml`
 
@@ -263,7 +264,7 @@ EOF
 }
 ```
 
-[/details]
+</details>
 
 #### Custom setters
 
@@ -271,7 +272,8 @@ A question's setter is the function used to set new value/state. Custom setters 
 
 When doing non-trivial operations to set a value, you may want to use `ynh_print_info` to inform the admin about what's going on.
 
-[details summary="<i>Basic example : Set the system timezone</i>" class="helper-card-subtitle text-muted"]
+<details>
+<summary><i>Basic example : Set the system timezone</i></summary>
 
 `config_panel.toml`
 
@@ -290,7 +292,7 @@ set__timezone() {
 }
 ```
 
-[/details]
+</details>
 
 ## User input validations
 
@@ -486,9 +488,14 @@ For performance reasons, questions short keys have to be unique in all the `conf
 
 In which two questions have "real variable name" `is server_ip` and therefore conflict with each other.
 
-! Some short keys are forbidden cause it can interfer with config scripts (`old`, `file_hash`, `types`, `binds`, `formats`, `changed`) and you probably should avoid to use common settings name to avoid to bind your question to this settings (e.g. `id`, `install_time`, `mysql_pwd`, `path`, `domain`, `port`, `db_name`, `current_revision`, `admin`)
+:::warning
+Some short keys are forbidden cause it can interfer with config scripts (`old`, `file_hash`, `types`, `binds`, `formats`, `changed`) and you probably should avoid to use common settings name to avoid to bind your question to this settings (e.g. `id`, `install_time`, `mysql_pwd`, `path`, `domain`, `port`, `db_name`, `current_revision`, `admin`)
+:::
 
 ### `bind` versus app settings
 
-! IMPORTANT: with the exception of `bind = "null"` options, options ids should almost **always** correspond to an app setting initialized/reused during install/upgrade.
-Not doing so may result in inconsistencies between the config panel mechanism and the use of ynh_add_config. See also discussions in <https://github.com/YunoHost/issues/issues/1973>
+:::warning
+IMPORTANT: with the exception of `bind = "null"` options, options ids should almost **always** correspond to an app setting initialized/reused during install/upgrade.
+:::
+
+Not doing so may result in inconsistencies between the config panel mechanism and the use of ynh_add_config. See also [the relevant issue](https://github.com/YunoHost/issues/issues/1973).

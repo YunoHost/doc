@@ -1,12 +1,6 @@
 ---
 title: Writing app scripts
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/packaging_scripts'
 ---
-
 
 App scripts are the essential logic defining what happens when an app is `install`ed, `remove`d, `upgrade`d, `backup`ed, or `restore`d. They are written in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) which is the same stuff you type in interactive mode in a terminal, though we added a bunch of custom YunoHost functions that we call `helpers` to standardize many common operations - for example adding the nginx configuration.
 
@@ -16,14 +10,18 @@ In the `scripts` folder of an app, you can expect to find:
 
 ```text
 manifest.toml
-scripts/
-   - _common.sh   # Some "common" definition, typically custom helpers or global variables used accross all scripts
-   - install      # The install procedure
-   - remove       # The remove procedure
-   - upgrade      # The upgrade procedure
-   - backup       # The backup procedure - in fact it only "declares" what should be backup / no actual real backup happens at this point except dumping SQL databases
-   - restore      # The restore procedure
-   - change_url   # Some apps do also provide a change url script, which corresponds to changing the URL endpoint of the app, which may be as simple as changing the nginx conf, or may involve significant changes in the app DB
+scripts
+├── _common.sh  # Some "common" definition, typically custom helpers 
+│               # or global variables used accross all scripts
+├── install     # The install procedure
+├── remove      # The remove procedure
+├── backup      # The backup procedure - in fact it only "declares" what should be backed up.
+│               # No actual real backup happens at this point except dumping SQL databases
+├── restore     # The restore procedure
+├── change_url  # Some apps do also provide a change url script, which corresponds to changing
+│               # the URL endpoint of the app, which may be as simple as changing
+│               # the nginx conf, or may involve significant changes in the app DB
+└── upgrade     # The upgrade procedure
 ```
 
 Here is an example of the simple install script for the `helloworld` app:
