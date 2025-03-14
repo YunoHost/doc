@@ -15,7 +15,7 @@ routes:
 ## Pre-installed YunoHost Offers
 
 - [Alsace Réseau Neutre](https://arn-fai.net) (VPS) <span class="ffdn">FFDN</span> <span class="chatons">CHATONS</span>
-- [Association ECOWAN](https://ecowan.fr) (VPS)
+- [ECOWAN](https://ecowan.fr) (VPS + Dédiée)
 - [Scaleway Dedibox](https://www.scaleway.com/en/dedibox/operating-systems/) (dedicated server)
 
 ## YunoHost IT outsourcing
