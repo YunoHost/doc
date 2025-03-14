@@ -14,7 +14,7 @@ Vous pouvez vous auto-héberger à la maison (sur un petit ordinateur), ou sur u
 Vous pouvez vous héberger chez vous, sur une carte ARM ou un vieil ordinateur, connecté à votre box internet.
 
 - **Avantages** : vous aurez un contrôle physique sur la machine et avez seulement besoin d'acheter le matériel initial ;
-- **Inconvénients** : il vous faudra [configurer manuellement votre box internet](/isp_box_config) et serez possiblement [limité par certains aspects de votre fournisseur d'accès à Internet](/isp).
+- **Inconvénients** : il vous faudra [configurer manuellement votre box internet](/install/post_install/isp_box_config) et serez possiblement [limité par certains aspects de votre fournisseur d'accès à Internet](/install/providers/isp/).
 
 ### À la maison, derrière un VPN
 

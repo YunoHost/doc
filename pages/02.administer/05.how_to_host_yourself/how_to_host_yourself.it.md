@@ -14,7 +14,7 @@ Puoi fare self-hosting in casa (su un piccolo computer), o su un server remoto. 
 Puoi fare self-hosting in proprio, con una scheda ARM o con un vecchio computer, connesso con il tuo router.
 
 - **Pro**: avrai un controllo fisico sulla macchina e avrai bisogno solo di acquistare il materiale per iniziare;
-- **Contro**: dovrai [configurare manualmente il router](/isp_box_config) e probabilmente ci saranno dei [limiti rispetto al tuo fornitore di accesso a internet](/isp)
+- **Contro**: dovrai [configurare manualmente il router](/install/post_install/isp_box_config) e probabilmente ci saranno dei [limiti rispetto al tuo fornitore di accesso a internet](/install/providers/isp/)
 
 ### In casa, dietro una VPN
 

@@ -11,7 +11,7 @@ There are mostly two reasons why one should prefer a virtual server rather than 
 - You can freely torture a virtual server without any risk of breaking it, since you can always restore it to a former working state. It would really be a pity to break your own real server!
 - In a typical workflow, a virtual server state would be restored from a known snapshot before starting any work on it, so as to always keep a clean system, without any residues of a former installation. This allows to always be as close a possible to a user first installation.
 
-We will discuss VirtualBox in this guide, as it comes with an easy to use GUI. If you prefer a pure commandline approach to handling your virtual machine, you should use [ynh-dev](/dev) instead.
+We will discuss VirtualBox in this guide, as it comes with an easy to use GUI. If you prefer a pure commandline approach to handling your virtual machine, you should use [ynh-dev](/contribute/dev/) instead.
 
 ## Installing VirtualBox
 
@@ -22,7 +22,7 @@ Whatever your system, there should be no need to install the extension pack or t
 
 ## Installing YunoHost on VirtualBox
 
-Simply follow the appropriate documentation for [installing on VirtualBox](/install_on_virtualbox) then the [post-installation](/postinstall) guide.
+Simply follow the appropriate documentation for [installing on VirtualBox](/contribute/packaging_apps/resources/packaging_apps_virtualbox) then the [post-installation](/category/after-installation) guide.
 
 During post-install, there is no need to use an actual domain name in `.nohost.me` or `.noho.st`, as your virtual server won't be reachable from outside your local network.
 We prefer using a fake domain name which will remain associated with your local network, for instance `yunohost.packaging`.

@@ -7,7 +7,7 @@ routes:
   default: '/email_migration'
 ---
 
-*[Documentation en rapport avec l’email de YunoHost](/email)*.
+*[Documentation en rapport avec l’email de YunoHost](/administer/admin_guide/email)*.
 
 La migration des emails d’un serveur à un autre peut se faire via deux outils recommandés : ImapSync ou Larch.
 

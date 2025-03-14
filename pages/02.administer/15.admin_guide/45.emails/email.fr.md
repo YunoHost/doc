@@ -17,9 +17,9 @@ Les emails sont un écosystème compliqué et un grand nombre de détails peuven
 
 Pour valider que votre configuration est correcte :
 
-- si vous vous hébergez chez vous et n'utilisez pas de VPN, assurez-vous que [votre FAI ne bloque pas le port 25](/isp) ;
-- routez les ports selon [cette documentation](/isp_box_config) ;
-- configurez soigneusement les enregistrements DNS du courrier électronique selon [cette documentation](/dns_config) ;
+- si vous vous hébergez chez vous et n'utilisez pas de VPN, assurez-vous que [votre FAI ne bloque pas le port 25](/install/providers/isp/) ;
+- routez les ports selon [cette documentation](/install/post_install/isp_box_config) ;
+- configurez soigneusement les enregistrements DNS du courrier électronique selon [cette documentation](/install/post_install/dns_config) ;
 - Testez votre configuration en utilisant les fonctionnalités de diagnostic (`Webadmin > Diagnostic > Email`). Vous pouvez également utiliser le service [mail-tester.com](https://mail-tester.com), un score d'au moins 8~9/10 est un but raisonnable <small>(attention : seuls 3 tests par domaine et par jour sont autorisés)</small> ;
 
 ## Clients de messagerie

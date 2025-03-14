@@ -11,7 +11,7 @@ L'une des fonctionnalités principales de YunoHost est la possibilité d'install
 
 Les applications peuvent être installées et gérées via l'interface d'administration web dans la partie 'Applications', ou via les commandes de la catégorie `yunohost app`.
 
-Il est possible de naviguer dans le catalogue d'application dans la webadmin (dans `Applications > Installer`) ou bien [ici](/apps).
+Il est possible de naviguer dans le catalogue d'application dans la webadmin (dans `Applications > Installer`) ou bien [ici](https://apps.yunohost.org).
 
 ! Attention à rester raisonnable sur le nombre d'applications installées. Chaque installation supplémentaire augmente la surface d'attaque et les risques de panne. Idéalement, si vous souhaitez faire des tests, faites-le avec une autre instance par exemple dans [une machine virtuelle](/install/hardware:virtualbox).
 
@@ -23,7 +23,7 @@ Certaines applications ont besoin de vous communiquer des instructions, des URL 
 
 ## Niveaux d'intégration et de qualité
 
-Des tests automatisés sont exécutés régulièrement pour tester l'intégration et la qualité de toutes les applications qui ont été déclarées "working" par leur packageurs. Le résultat est un niveau entre 0 et 8, dont la signification est détaillée sur [cette page](/packaging_apps_levels). Certains résultats de tests peuvent également être disponibles sur [ce tableau de bord](https://dash.yunohost.org/appci/branch/stable).
+Des tests automatisés sont exécutés régulièrement pour tester l'intégration et la qualité de toutes les applications qui ont été déclarées "working" par leur packageurs. Le résultat est un niveau entre 0 et 8, dont la signification est détaillée sur [cette page]((/contribute/packaging_apps/testing)). Certains résultats de tests peuvent également être disponibles sur [ce tableau de bord](https://dash.yunohost.org/appci/branch/stable).
 
 Par défaut, seules les applications d'une qualité suffisante vous sont proposées. Lorsque la qualité d'une application chute, les mises à jour sont mises en attente et l'installation n'est plus possible, le temps que le problème soit résolu.
 
