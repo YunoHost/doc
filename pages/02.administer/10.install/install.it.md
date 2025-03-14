@@ -333,7 +333,7 @@ Questi sono alcuni provider di VPS che supportano nativamente YunHost:
 [[figure caption="FAImaison - FR"]![](image://vps_ynh_faimaison.svg?height=50)[/figure]](https://www.faimaison.net/services/vm.html)
 [/div]
 [div class="flex-child"]
-[[figure caption="ECOWAN - FR"]![](image://vps_ynh_ecowan.png?height=50)[/figure]](https://www.ecowan.fr/vps-linux)
+[[figure caption="ECOWAN - FR"]![](image://vps_ynh_ecowan.png?height=50)[/figure]](https://www.ecowan.fr/vps-linux?from-yunohost)
 [/div]
 [/div]
 {% endif %}
