@@ -91,7 +91,6 @@ def main() -> None:
     }
 
     template = Template(TEMPLATE_FILE.read_text())
-    template.globals["now"] = datetime.datetime.utcnow
     result = template.render(**template_data)
     args.output.write_text(result)
 
