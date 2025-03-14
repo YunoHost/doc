@@ -1,10 +1,5 @@
 ---
 title: Nohost.me domains
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/dns_nohost_me'
 ---
 
 In order to make self-hosting as accessible as possible, the YunoHost Project provides a *free* and *automatically configured* domain name service. By using this service, you won't have to [configure DNS records](/dns_config) yourself, which can be tedious and technical.
@@ -17,7 +12,9 @@ The following (sub)domains are offered:
 
 To use this service, you simply have to choose such a domain during the post-installation set up. It will then be automatically configured by YunoHost!
 
-!!! As a fairness measure, each instance may only have **one such domain** setup at any given time.
+:::tip
+As a fairness measure, each instance may only have **one such domain** setup at any given time.
+:::
 
 ### Subdomains
 

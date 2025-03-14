@@ -1,13 +1,9 @@
 ---
 title: Configure SMTP relay
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/email_configure_relay'
-  aliases: 
-    - '/smtp_relay'
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 If your ISP blocks port 25, if you can't set a reverseDNS on your server, or if you have any other troubles using the built-in SMTP server on YunoHost, you may want to setup your YunoHost server to use an SMTP relay.
 
@@ -16,7 +12,7 @@ If your ISP blocks port 25, if you can't set a reverseDNS on your server, or if 
 An SMTP relay is basically a third party hosted SMTP server that will send emails on behalf of your own SMTP server (Postfix service on YunoHost).
 Once setup correctly on YunoHost, its operation is transparent, both for you and for your correspondents: they will see emails as coming from your YunoHost main URL, but all the sending will be delegated to the SMTP relay you have chosen and configured.
 
-## [fa=exclamation-triangle /] Disadvantages of SMTP relays
+## <FAIcon icon="fa-exclamation-triangle"/> Disadvantages of SMTP relays
 
 It's important to note that using an SMTP relay has to be seen as a (big) compromise in the world of self-hosting. Indeed, when using an SMTP relay, not only a third party sends emails on your behalf, but it has full access to the content of all the emails you'll send and can also possibly modify them (For example, by default, MailJet rewrites the html hyperlinks contained in your emails, in order to track the activity of your correspondents). Be also aware that an SMTP relay is setup for your whole YunoHost server: you can't choose which emails or which users go through it because all future emails will.
 
@@ -40,14 +36,17 @@ Usually, the SMTP relay provider will provide you with a guide on how to modify 
 
 Please note that modifying your DNS records could sometimes take over 24h to take effect, so be patient!
 
-! [fa=exclamation-triangle /] From now on, a non trusty SMTP relay provider could send emails from your main domain without telling you.
+:::warning
+<FAIcon icon="fa-exclamation-triangle"/> From now on, a non trusty SMTP relay provider could send emails from your main domain without telling you.
+:::
 
 ### Step 3: Setup YunoHost correctly
 
 It can be configured either from the webadmin or the command line.
 
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="From the webadmin"]
+<Tabs groupId="admin-commands">
+  <TabItem value="web" label="From the web interface">
+
 Go to your web admin, in `Tools` > `Yunohost Settings` and `Email`.
 Now set all options requests :
 
@@ -56,12 +55,14 @@ Now set all options requests :
 - **SMTP relay user** : Login or identification mail server.
 - **SMTP relay password** : Your SMTP relay password.
 
-! [fa=exclamation-triangle /] Password with `#` char won't works properly due to postfix limitation (it's possible other chars are forbidden, don't hesitate to report it to update this doc).
+:::warning
+<FAIcon icon="fa-exclamation-triangle"/> Password with `#` char won't works properly due to postfix limitation (it's possible other chars are forbidden, don't hesitate to report it to update this doc).
+:::
 
-![Option-Relais-Smtp](image://relay_smtp_option_webadmin_en.png?resize=800)
+![Option-Relais-Smtp](/img/relay_smtp_option_webadmin_en.png)
 
-[/ui-tab]
-[ui-tab title="From the command line"]
+    </TabItem>
+  <TabItem value="cli" label="From the command line">
 In order to setup your YunoHost to use your SMTP relay, you will have to configure four things:
 
 1. Your SMTP relay URL (for this tutorial we will use `smtprelay.tld`)
@@ -69,7 +70,9 @@ In order to setup your YunoHost to use your SMTP relay, you will have to configu
 3. Your SMTP relay username (for this tutorial we will use `username`)
 4. Your SMTP relay password (for this tutorial we will use `password`)
 
-! [fa=exclamation-triangle /] Password with `#` char won't works properly due to postfix limitation (it's possible other chars are forbidden, don't hesitate to report it to update this doc).
+:::warning
+<FAIcon icon="fa-exclamation-triangle"/> Password with `#` char won't works properly due to postfix limitation (it's possible other chars are forbidden, don't hesitate to report it to update this doc).
+:::
 
 Your SMTP relay will obviously provide you with these four things, that should be available in your control panel or whatsoever.
 
@@ -95,12 +98,14 @@ It may be a good idea to double confirm your settings by doing:
 sudo yunohost settings list
 ```
 
-[/ui-tab]
-[/ui-tabs]
+  </TabItem>
+</Tabs>
 
 Your SMTP relay is now configured!
 
-! [fa=exclamation-triangle /] From now on, a non trusty SMTP relay provider could read or use the data of all the emails you send without telling you (but still won't be able to read nor to use the data from emails you receive).
+:::warning
+<FAIcon icon="fa-exclamation-triangle"/> From now on, a non trusty SMTP relay provider could read or use the data of all the emails you send without telling you (but still won't be able to read nor to use the data from emails you receive).
+:::
 
 #### Relay all emails, even those from domains managed by YunoHost
 

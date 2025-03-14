@@ -1,12 +1,6 @@
 ---
+sidebar_label: Add external storage
 title: Adding an external storage to your server
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/external_storage'
-  aliases:
-    - '/moving_app_folder'
 ---
 
 ## Introduction
@@ -15,13 +9,17 @@ Apart from the monitoring system that ensures that your system's partitions are 
 
 If you are hosting on an ARM card with an SD card or on a server with a small SSD drive, you may, for reasons of reliability or lack of space, want to add a drive or drives to your server.
 
-! If you have no space left on your server at all, you can now type `apt clean` to try and save some space while you clean up or follow the steps below.
+:::warning
+If you have no space left on your server at all, you can now type `apt clean` to try and save some space while you clean up or follow the steps below.
+:::
 
 Below you will find explanations on how to move your data to a hard disk in a correct way with a minimum of impact on the functioning of YunoHost. This operation can be done during installation or, afterwards, when your storage needs have increased or when you no longer trust your SD card.
 
-!!! The method presented here will first mount the single partition of the hard disk, then use one or more sub-folders of this disk to create different mount points on your system tree. This method is preferable to the use of symbolic links, as the latter may interfere with some applications including the YunoHost backup system. You could also choose to mount partitions rather than subfolders, but it is sometimes difficult to estimate the weight of a folder in advance.
+:::tip
+The method presented here will first mount the single partition of the hard disk, then use one or more sub-folders of this disk to create different mount points on your system tree. This method is preferable to the use of symbolic links, as the latter may interfere with some applications including the YunoHost backup system. You could also choose to mount partitions rather than subfolders, but it is sometimes difficult to estimate the weight of a folder in advance.
+:::
 
-## [fa=list-alt /] Prerequisites
+## <FAIcon icon="fa-list-alt"/> Prerequisites
 
 - Have some time at a moment when your server users can accept a shutdown. The steps to be performed, even if they are relatively simple, can sometimes seem technical and require in any case **to take your time**.
 
@@ -76,9 +74,13 @@ mmcblk0     179:0    0  14.9G  0 disk
 
 Here, `mmcblk0` corresponds to a 16GB SD card (you can see that the `mmcblk0p1` and `mmcblk0p2` partitions correspond to the `/boot` partition and the `/` system partition). The hard drive connected corresponds to `sda` which is about 1TB, and contains a single `sda1` partition which is not mounted (no "MOUNTPOINT").
 
-! [fa=exclamation-triangle /] On another system, it may be that your system is installed on `sda` and your disk is then `sdb` for example.
+:::warning
+<FAIcon icon="fa-exclamation-triangle"/> On another system, it may be that your system is installed on `sda` and your disk is then `sdb` for example.
+:::
 
-!!! Tip: if the size of the disk is not enough for you to recognise it, you can unplug the disk, run the `lsblk` command, then plug the disk back in, run `lsblk` and deduce the differences.
+:::tip
+If the size of the disk is not enough for you to recognise it, you can unplug the disk, run the `lsblk` command, then plug the disk back in, run `lsblk` and deduce the differences.
+:::
 
 ## 3. (Optional) Format the disk
 
@@ -96,7 +98,9 @@ Check with `lsblk` that you have your disk containing a single partition.
 
 Before you can use your disk, it must be formatted.
 
-! [fa=exclamation-triangle /] **Formatting a disk means deleting all the data on it! Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already "clean", you can skip this step.
+:::warning
+<FAIcon icon="fa-exclamation-triangle"/> **Formatting a disk means deleting all the data on it! Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already "clean", you can skip this step.
+:::
 
 To format the :
 
@@ -107,7 +111,9 @@ mkfs.ext4 /dev/YOUR_DISK1
 
 Replace `YOUR_DISK1` with the name of the first partition on the disk e.g. `sda1`.
 
-!!! It is possible to adapt this step, for example to create a raid 1 volume (mirrored disks) or encrypt the folder.
+:::tip
+It is possible to adapt this step, for example to create a raid 1 volume (mirrored disks) or encrypt the folder.
+:::
 
 ## 4. Mount the disk
 
@@ -157,7 +163,9 @@ systemctl stop postfix
 systemctl stop dovecot
 ```
 
-! If you wish to move databases such as mariadb (mysql), it is imperative that you stop the services for these databases otherwise it is almost certain that your data will be corrupted.
+:::warning
+If you wish to move databases such as mariadb (mysql), it is imperative that you stop the services for these databases otherwise it is almost certain that your data will be corrupted.
+:::
 
 ### 5.3 Creating the mount points
 
@@ -246,6 +254,6 @@ rm -Rf /home/yunohost.app.bkp
 rm -Rf /var/mail.bkp
 ```
 
-## ![](image://tada.png?resize=32&classes=inline) Congratulations!
+## <img src="/img/tada.png" height="32rem"/> Congratulations!
 
 If you have made it this far without damage, you now have a server that takes advantage of one or more storage disks.

@@ -1,10 +1,5 @@
 ---
 title: DNS and subdomains for the applications
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/dns_subdomains'
 ---
 
 ### Subdomains

@@ -1,13 +1,10 @@
 ---
 title: DNS with a dynamic IP
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/dns_dynamicip'
 ---
 
-! Before going further, make sure your global IP address is dynamic with: [`ip.yunohost.org`](http://ip.yunohost.org/). The global IP address of your box changes almost every day.
+:::warning
+Before going further, make sure your global IP address is dynamic with: [`ip.yunohost.org`](http://ip.yunohost.org/). The global IP address of your box changes almost every day.
+:::
 
 This tutorial aim to get around dynamic IP issue which is: when the IP public address of your (Internet Service Provider-) box changes, the DNS zone is not updated to point towards the new IP address, and consequently your server is no more reachable via its domain name
 
@@ -60,6 +57,6 @@ Here, we will use the client provided by the box, which is the more easy way.
 
 Enter the login of the dynamic DNS and its public IP address in your box (interface details may vary by ISP).
 
-![](image://dns_dynamic-ip_box_conf.png?resize=600)
+![](/img/dns_dynamic-ip_box_conf.png)
 
 You're good to go !
