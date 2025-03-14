@@ -19,7 +19,7 @@ Your box/router admin interface is usually reachable via [http://192.168.0.1](ht
 
 ### 2. Find the local IP of your server
 
-Identify the *local* IP of your server, either :
+Identify the *local* IP of your server, either:
 
 - from your box/router interface, which might list devices connected
 - from the YunoHost webadmin, in 'Diagnosis', section 'Internet connectivity', click on 'Details' on the IPv4 report.
@@ -33,7 +33,7 @@ The local IP address needs to be static, so that the port forwards that you are 
 
 In your router admin interface, look for something like 'router configuration' or 'port forwarding'. The naming differs among the various kinds of boxes.
 
-Opening the ports listed below is necessary for the various services available in YunoHost to work. For each of them, the 'TCP' forwarding is needed. Some interfaces refer to 'external' and 'internal' ports : these are the same in our case.
+Opening the ports listed below is necessary for the various services available in YunoHost to work. For each of them, the 'TCP' forwarding is needed. Some interfaces refer to 'external' and 'internal' ports: these are the same in our case.
 
 - Web: `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>
 - [SSH](/ssh): `22`
@@ -45,11 +45,13 @@ If you use both a modem and a router, then you need to do the following:
 1. first on the modem (the box closest to the internet) create rules to forward the above ports to your router;
 2. then on the router (the box between the modem and your devices) create rules to forward the above ports to the static IP address for your server.
 
-! [fa=exclamation-triangle /] Some internet service providers block port 25 (mail SMTP) by default to fight spam. Some other ISP don't allow to use port 80/443 (web) freely, though it's less likely. Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/isp) for more info.
+:::warning
+<FAIcon icon="fa-exclamation-triangle"/> Some internet service providers block port 25 (mail SMTP) by default to fight spam. Some other ISP don't allow to use port 80/443 (web) freely, though it's less likely. Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/isp) for more info.
+:::
 
 ## Automatic port forwarding / UPnP
 
-A technology called UPnP is available on some internet boxes / routers and allows to automatically forward ports by the machine who needs them. If UPnP is enabled in your local network, then running this command should automatically open the port for you :
+A technology called UPnP is available on some internet boxes / routers and allows to automatically forward ports by the machine who needs them. If UPnP is enabled in your local network, then running this command should automatically open the port for you:
 
 ```bash
 sudo yunohost firewall reload
