@@ -18,7 +18,7 @@ import Link from '@docusaurus/Link';
 
 - A x86-compatible hardware dedicated to YunoHost: laptop, nettop, netbook, desktop with 512MB RAM and 16GB capacity (at least)
 - A USB stick with at least 1GB capacity OR a standard blank CD
-- A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
+- A [reasonable ISP](/install/providers/isp/), preferably with a good and unlimited upstream bandwidth
 - An ethernet cable (RJ-45) to connect your server to your router.
 - A computer to read this guide, flash the image and access your server.
 
@@ -119,7 +119,7 @@ You should see a screen like this:
 
 The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.
 
-With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/external_storage).
+With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/administer/tutorials/external_storage).
 
 ### Summary of the steps in expert mode
 
@@ -145,7 +145,7 @@ If you have one or more hard drives to store data, you can choose to mount it on
 | `/home/yunohost.multimedia` | Heavy data shared between several applications |
 | `/var/mail` | User mail |
 
-If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/external_storage).
+If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/administer/tutorials/external_storage).
 
 ### About encryption
 
@@ -163,5 +163,5 @@ Keep in mind that:
 </Tabs>
 
 :::tip
-If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See [the specific instructions](/installing_debian).
+If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See [the specific instructions](/install/install_on/on_top_of_debian).
 :::
