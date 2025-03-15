@@ -1,6 +1,6 @@
 ---
-sidebar_label: OVH DNS config via API
-title: Obtaining an API key from OVH
+sidebar_label: Configuration DNS OVH via l’API
+title: Obtenir une clef API de OVH
 ---
 
 This page is meant to guide you in obtaining an API key from OVH in order to configure YunoHost's automatic DNS configuration mecanism
