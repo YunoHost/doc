@@ -1,0 +1,19 @@
+---
+title: Registrars
+link:
+  description: The guys that provide the domain name
+---
+
+Since version 4.3, YunoHost includes a mechanism to interface your server with your DNS registrar API, with the purpose of simplifying and automatizing DNS records registration and maintenance.
+
+The procedure requires an initial configuration where you need to generate an API key on your registrar's interface.
+
+Not all registrars are supported. So far, the community tested and validated the interface with [Gandi](https://gandi.net) and [OVH](https://ovh.com), which are recommended. The interface with other registrars may work, but is still considered experimental until we gather feedback from the community.
+
+The list below can help you to choose a registrar if you plan to buy a domain name to use it with YunoHost.
+
+| Registrar                           | Compatibility               | Easy to obtain an API key | Howto |
+|-------------------------------------|-----------------------------|---------------------------|-------|
+| [Gandi](https://www.gandi.net)      | ✘ (broken)                  | ✘   | [Obtain an API key](/install/providers/registrar/gandi) <br/> [See bug here](https://github.com/YunoHost/issues/issues/2419) |
+| [OVH](https://ovh.com/domaines)     | ✔ (tested)                  | ✘   | [Obtain an API key](/install/providers/registrar/ovh/autodns) <br/> [Configure manually](/install/providers/registrar/ovh/manualdns) |
+| [Namecheap](https://namecheap.com)  | ✘ (in lexicon but untested) | ✘✘✘ API not available without 50$ on the account | [Obtain an API key](/install/providers/registrar/namecheap) |
