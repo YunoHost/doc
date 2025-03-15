@@ -25,7 +25,7 @@ Das Benutzerportal, auch SSO für 'Single Sign On' genannt, ermöglicht es den B
 
 Im Portal können Benutzer auch auf den Avatar oben links klicken, um einige andere Einstellungen zu konfigurieren, z. B. ihre Identität, E-Mail-Aliase, automatische E-Mail-Weiterleitungen oder ihr Passwort zu ändern.
 
-!!! Sie sollten sich bewusst sein, dass das SSO nur über den tatsächlichen Domänennamen (z.B. `https://the.domain.tld/yunohost/sso`) erreicht werden kann, und NICHT über die IP des Servers (z.B. `https://11.22.33.44/yunohost/sso`), im Gegensatz zum Webadmin! Dies ist ein wenig verwirrend, aber aus technischen Gründen notwendig. Wenn Sie sich in einer Situation befinden, in der Sie auf das SSO zugreifen müssen, ohne dass Ihr DNS richtig konfiguriert ist, könnten Sie in Erwägung ziehen, Ihre `/etc/hosts` wie in [dieser Seite](/dns_local_network) beschrieben zu verändern.
+!!! Sie sollten sich bewusst sein, dass das SSO nur über den tatsächlichen Domänennamen (z.B. `https://the.domain.tld/yunohost/sso`) erreicht werden kann, und NICHT über die IP des Servers (z.B. `https://11.22.33.44/yunohost/sso`), im Gegensatz zum Webadmin! Dies ist ein wenig verwirrend, aber aus technischen Gründen notwendig. Wenn Sie sich in einer Situation befinden, in der Sie auf das SSO zugreifen müssen, ohne dass Ihr DNS richtig konfiguriert ist, könnten Sie in Erwägung ziehen, Ihre `/etc/hosts` wie in [dieser Seite](/administer/tutorials/domains/dns_local_network) beschrieben zu verändern.
 
 ## Benutzergruppen und Berechtigungen
 
@@ -33,4 +33,4 @@ Siehe [diese spezielle Seite](/groups_and_permissions).
 
 ## SSH-Zugang
 
-Siehe [diese spezielle Seite](/ssh).
+Siehe [diese spezielle Seite](/administer/admin_guide/command_line).

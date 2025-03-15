@@ -96,7 +96,7 @@ Wir brauchen Leute, die YunoHost gründlich testen. Wenn du einen Fehler findest
 
 [center]
 Erweitere den Funktionsumfang von YunoHost, indem du neue [Dienste und Webanwendungen in neue Pakete packst](/packaging_apps).
-Schaue dir an, [was schon getan wurde](/apps)!
+Schaue dir an, [was schon getan wurde](https://apps.yunohost.org)!
 [/center]
 [/columns]
 
