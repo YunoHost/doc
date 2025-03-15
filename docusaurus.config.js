@@ -79,6 +79,10 @@ const config = {
     require.resolve('docusaurus-lunr-search'),
   ],
 
+  clientModules: [
+    require.resolve("./src/YunoHostImagesListScript.js")
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
