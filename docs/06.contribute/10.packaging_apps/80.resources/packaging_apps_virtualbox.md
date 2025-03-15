@@ -27,7 +27,7 @@ Simply follow the appropriate documentation for [installing on VirtualBox](/inst
 During post-install, there is no need to use an actual domain name in `.nohost.me` or `.noho.st`, as your virtual server won't be reachable from outside your local network.
 We prefer using a fake domain name which will remain associated with your local network, for instance `yunohost.packaging`.
 
-This domain name, not being registered with any DNS server, will be stored in the `hosts` file of the computer which will need to access it. Please refer to the documentation about [using a local DNS](/dns_local_network) for more information.
+This domain name, not being registered with any DNS server, will be stored in the `hosts` file of the computer which will need to access it. Please refer to the documentation about [using a local DNS](/tutorials/domains/dns_local_network) for more information.
 
 Your virtual server is now installed. Before starting to use it, we'll see how to create a first snapshot and how to use that feature.
 

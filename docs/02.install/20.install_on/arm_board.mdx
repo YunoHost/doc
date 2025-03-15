@@ -19,7 +19,7 @@ import Link from '@docusaurus/Link';
 - An ARM board with at least 512MB RAM
 - A power supply (either an adapter or a MicroUSB cable) for your board;
 - A microSD card: 16GB capacity (at least), [class "A1"](https://en.wikipedia.org/wiki/SD_card#Class) highly recommended (such as [this SanDisk A1 card](https://www.amazon.fr/SanDisk-microSDHC-Adaptateur-homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/));
-- A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
+- A [reasonable ISP](/install/providers/isp), preferably with a good and unlimited upstream bandwidth
 - An ethernet cable (RJ-45) to connect your server to your router.
 - A computer to read this guide, flash the image and access your server.
 
@@ -82,7 +82,7 @@ Now that you downloaded the image of Armbian, you should flash it on a microSD c
 
 ## <FAIcon icon="fa-terminal"/> Connect to the board
 
-Next you need to [find the local IP address of your server](/finding_the_local_ip) to connect as root user [via SSH](/ssh) with the temporary password `1234`.
+Next you need to [find the local IP address of your server](/finding_the_local_ip) to connect as root user [via SSH](/administer/admin_guide/command_line) with the temporary password `1234`.
 
 ```bash
 ssh root@192.168.x.xxx
@@ -90,7 +90,7 @@ ssh root@192.168.x.xxx
 
 ## <FAIcon icon="fa-rocket"/> Run the install script
 
-- Open a command line prompt on your server (either directly or [through SSH](/ssh))
+- Open a command line prompt on your server (either directly or [through SSH](/administer/admin_guide/command_line))
 - Make sure you are root (or type `sudo -i` to become root)
 - Run the following command:
 
