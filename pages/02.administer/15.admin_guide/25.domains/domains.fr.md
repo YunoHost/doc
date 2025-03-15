@@ -11,7 +11,7 @@ YunoHost permet de gérer et de servir plusieurs domaines sur un même serveur. 
 
 Les domaines peuvent être gérés dans la section 'Domaines' de la webadmin, ou via la catégorie `yunohost domain` de la ligne de commande.
 
-Chaque fois que vous ajoutez un domaine, il est supposé que vous avez acheté (ou en tout cas que vous contrôlez) le domaine, de sorte que vous puissiez gérer la [configuration DNS](/dns_config) de celui-ci. Une exception concerne les [domaines en `.nohost.me`, `.noho.st` et `ynh.fr`](/dns_nohost_me) qui sont offerts par le Projet YunoHost, et peuvent être directement intégrés avec YunoHost grâce à une configuration DynDNS automatique. Pour limiter les abus et les coûts, une instance ne peut avoir qu'un seul domaine offert à la fois, toutefois vous pouvez ajouter autant de sous-domaines de celui-ci que vous le souhaitez. Par exemple, ci vous choisissez `exemple.ynh.fr` vous pourrez par la suite ajouter les domaines `video.exemple.ynh.fr` ou `www.exemple.ynh.fr` ou tout autre sous-domaine dont vous pourriez avoir l'utilité.
+Chaque fois que vous ajoutez un domaine, il est supposé que vous avez acheté (ou en tout cas que vous contrôlez) le domaine, de sorte que vous puissiez gérer la [configuration DNS](/install/post_install/dns_config) de celui-ci. Une exception concerne les [domaines en `.nohost.me`, `.noho.st` et `ynh.fr`](/administer/tutorials/domains/dns_nohost_me) qui sont offerts par le Projet YunoHost, et peuvent être directement intégrés avec YunoHost grâce à une configuration DynDNS automatique. Pour limiter les abus et les coûts, une instance ne peut avoir qu'un seul domaine offert à la fois, toutefois vous pouvez ajouter autant de sous-domaines de celui-ci que vous le souhaitez. Par exemple, ci vous choisissez `exemple.ynh.fr` vous pourrez par la suite ajouter les domaines `video.exemple.ynh.fr` ou `www.exemple.ynh.fr` ou tout autre sous-domaine dont vous pourriez avoir l'utilité.
 
 Les domaines peuvent être gérés dans la section "Domaine" de la webadmin, ou via la ligne de commande (voir `yunohost domain --help`)
 
@@ -24,7 +24,7 @@ Les domaines peuvent être gérés dans la section "Domaine" de la webadmin, ou 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Domaines gérés par le projet YunoHost (simple et gratuits)"]]
 
-Afin de rendre l'auto-hébergement aussi accessible que possible, le projet YunoHost fournit un service de nom de domaine *gratuit* et *configuré automatiquement*. En utilisant ce service, vous n'aurez pas à [configurer les enregistrements DNS](/dns_config) vous-même, ce qui peut être fastidieux et technique. Néanmoins, soyez conscient que vous n'êtes pas réellement propriétaire du domaine choisi...
+Afin de rendre l'auto-hébergement aussi accessible que possible, le projet YunoHost fournit un service de nom de domaine *gratuit* et *configuré automatiquement*. En utilisant ce service, vous n'aurez pas à [configurer les enregistrements DNS](/install/post_install/dns_config) vous-même, ce qui peut être fastidieux et technique. Néanmoins, soyez conscient que vous n'êtes pas réellement propriétaire du domaine choisi...
 
 Les (sous-)domaines suivants sont proposés :
 
@@ -40,7 +40,7 @@ Pour obtenir un de ces domaines, il vous suffit de choisir `Je n'ai pas de nom d
 
 ! Pour limiter les coûts de ressources et les abus, chaque instance ne peut avoir qu'un seul de ces domaines à la fois, mais vous pouvez ajouter autant de sous-domaines que vous le souhaitez. Par exemple, si vous choisissez `example.noho.st` vous pouvez plus tard ajouter les domaines `video.example.noho.st` ou `www.example.ynh.noho.st` ou tout autre sous-domaine dont vous pourriez avoir besoin. Dans ce cas, vous devez sélectionner « J'ai déjà un nom de domaine ».
 
-[Plus d'informations sur ces domaines](/dns_nohost_me)
+[Plus d'informations sur ces domaines](/administer/tutorials/domains/dns_nohost_me)
 
 [/ui-tab]
 [ui-tab title="Vos propres domaines"]]
@@ -50,13 +50,13 @@ Avoir son propre domaine apporte plusieurs avantages :
 - plus de contrôle et d'autonomie
 - un nom de domaine plus simple (par exemple directement en .net ou .org)
 
-Cependant, vous devez payer pour cela chaque année (environ 15€/an ... en fonction du TLD) et vous devez faire quelques configurations supplémentaires pour [mettre en place une zone DNS correcte](/dns_config). L'outil de diagnostic peut vous aider à effectuer cette configuration.
+Cependant, vous devez payer pour cela chaque année (environ 15€/an ... en fonction du TLD) et vous devez faire quelques configurations supplémentaires pour [mettre en place une zone DNS correcte](/install/post_install/dns_config). L'outil de diagnostic peut vous aider à effectuer cette configuration.
 
 Si vous avez déjà votre propre domaine, vous pouvez simplement cliquer sur « J'ai déjà un nom de domaine... ». Dans le cas contraire, afin de simplifier et d'automatiser la configuration DNS, nous vous suggérons de l'acheter auprès d'un [registrar dont l'API est supportée par YunoHost] (/providers/registrar).
 
 [Cpture d'écran de la page « Ajouter un domaine » où vous pouvez choisir « J'ai déjà un nom de domaine »](image://webadmin_domain_owndomain.png)
 
-[En savoir plus sur la configuration de la zone DNS](/dns_config)
+[En savoir plus sur la configuration de la zone DNS](/install/post_install/dns_config)
 
 [/ui-tab]
 [ui-tab title="Domaines locaux (uniquement accessibles dans votre réseau local)"]]
@@ -94,4 +94,4 @@ Si votre domaine comporte des caractères spéciaux non-latins, il sera transfor
 
 ## Certificats SSL/HTTPS
 
-Un autre aspect important de la configuration des domaines est le certificat SSL/HTTPS. YunoHost est intégré avec Let's Encrypt, de sorte qu'une fois que votre serveur est correctement accessible depuis n'importe qui sur Internet via le nom de domaine, l'administrateur peut demander l'installation d'un certificat Let's Encrypt. Voir la documentation sur les [certificats](/certificate) pour plus d'informations.
+Un autre aspect important de la configuration des domaines est le certificat SSL/HTTPS. YunoHost est intégré avec Let's Encrypt, de sorte qu'une fois que votre serveur est correctement accessible depuis n'importe qui sur Internet via le nom de domaine, l'administrateur peut demander l'installation d'un certificat Let's Encrypt. Voir la documentation sur les [certificats](/administer/admin_guide/domains/certificate) pour plus d'informations.

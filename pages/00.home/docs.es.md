@@ -14,7 +14,7 @@ Estás en la documentación de [YunoHost, un sistema operativo libre con el obje
 
 Como proxima administradora de tu servidor, visita la [Guía de administración](/admindoc) para aprender más del auto-hospedaje web, Como instalar tu servidor YunoHost y añadirle las primeras apps.
 
-Échale un ojo al [catálogo de aplicaciones](/apps) para navegar las aplicaciones disponibles (¡aunque también puedes verlas directamente en la interfaz de administración!)
+Échale un ojo al [catálogo de aplicaciones](https://apps.yunohost.org) para navegar las aplicaciones disponibles (¡aunque también puedes verlas directamente en la interfaz de administración!)
 
 La [Comunidad](/community) esta disponible para ayudarte : entra en el [chat](/chat_rooms) o contáctanos por el [foro](/community/forum) !
 

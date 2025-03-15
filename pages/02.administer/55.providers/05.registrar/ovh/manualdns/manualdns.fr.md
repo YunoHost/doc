@@ -28,15 +28,15 @@ $TTL 3600
                          IN NS     ns104.ovh.net.
 ```
 
-puis effacer tout ce qu'il y a en-dessous, et le remplacer par la configuration donnée par votre serveur, comme indiqué dans la [configuration DNS standard](/dns_config).
+puis effacer tout ce qu'il y a en-dessous, et le remplacer par la configuration donnée par votre serveur, comme indiqué dans la [configuration DNS standard](/install/post_install/dns_config).
 
 ### IP dynamique
 
-[Tutoriel plus général sur l’IP dynamique](/dns_dynamicip).
+[Tutoriel plus général sur l’IP dynamique](/administer/tutorials/domains/dns_dynamicip).
 
 Cette partie est à suivre, que si votre IP est dynamique.
 
-Pour savoir si votre fournisseur d’accès à Internet vous fournit une IP dynamique [voir ici](/isp).
+Pour savoir si votre fournisseur d’accès à Internet vous fournit une IP dynamique [voir ici](/install/providers/isp/).
 
 Commencez par créer un identifiant DynHost.
 

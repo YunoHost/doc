@@ -41,16 +41,16 @@ Suchen Sie in der Verwaltungsoberfläche Ihres Routers nach etwas wie "Router-Ko
 Das Öffnen der unten aufgeführten Ports ist notwendig, damit die verschiedenen in YunoHost verfügbaren Dienste funktionieren. Für jeden von ihnen wird die 'TCP'-Weiterleitung benötigt. Einige Schnittstellen beziehen sich auf 'externe' und 'interne' Ports : diese sind in unserem Fall gleich.
 
 - Web: `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>
-- [SSH](/ssh): `22`
+- [SSH](/administer/admin_guide/command_line): `22`
 - [XMPP](https://wikipedia.org/wiki/XMPP): `5222` <small>(clients)</small>, `5269` <small>(servers)</small>
-- [Email](/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>
+- [Email](/administer/admin_guide/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>
 
 Wenn Sie sowohl ein Modem als auch einen Router verwenden, dann müssen Sie Folgendes tun:
 
 1. zuerst auf dem Modem (der Box, die dem Internet am nächsten ist) Regeln erstellen, um die oben genannten Ports an Ihren Router weiterzuleiten;
 2. dann auf dem Router (der Box zwischen dem Modem und Ihren Geräten) Regeln erstellen, um die oben genannten Ports an die statische IP-Adresse für Ihren Server weiterzuleiten.
 
-! [fa=exclamation-triangle /] Einige ISPs blockieren standardmäßig den Port 25 (Mail-SMTP), um Spam zu bekämpfen. Andere (seltener) erlauben keine freie Nutzung der Ports 80/443. Abhängig von Ihrem ISP kann es möglich sein, diese Ports in der Schnittstelle zu öffnen... Siehe [diese Seite](/isp) für weitere Informationen.
+! [fa=exclamation-triangle /] Einige ISPs blockieren standardmäßig den Port 25 (Mail-SMTP), um Spam zu bekämpfen. Andere (seltener) erlauben keine freie Nutzung der Ports 80/443. Abhängig von Ihrem ISP kann es möglich sein, diese Ports in der Schnittstelle zu öffnen... Siehe [diese Seite](/install/providers/isp/) für weitere Informationen.
 
 ## Automatische Weiterleitung / UPnP
 

@@ -41,7 +41,7 @@ Durant la post-installation, vous avez défini un compte et un mot de passe d'ad
 Si vous hébergez votre serveur **à la maison** (par ex. Raspberry Pi ou OLinuXino ou vieil ordinateur)
 
 - vous devriez pouvoir vous connecter à la machine en utilisant `yunohost.local` (ou `yunohost-2.local`, selon le nombre de serveurs sur le réseau).
-- si `yunohost.local` et consorts ne fonctionnent pas, il vous faut [trouver l'IP locale de votre serveur](/finding_the_local_ip).
+- si `yunohost.local` et consorts ne fonctionnent pas, il vous faut [trouver l'IP locale de votre serveur](/install/post_install/finding_the_local_ip).
 - si vous avez installé votre serveur à la maison mais essayez d'y accéder depuis l'extérieur du réseau local, assurez-vous d'avoir bien configuré une redirection de port pour le port 22.
 
 S'il s'agit d'une machine distante (VPS), votre fournisseur devrait vous avoir communiqué l'IP de votre machine.

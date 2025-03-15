@@ -14,7 +14,7 @@ Ce site contient la documentation de [YunoHost, un système d'exploitation libre
 
 En tant que futur jardinier de votre propre serveur, commencez par visiter le [guide de l'administrateur](/admindoc) pour en savoir plus sur l'autohébergement, comment installer votre serveur, et installer vos premières applications.
 
-Vous pouvez explorer le [catalogue d'application](/apps) installable sur votre serveur (bien qu'il soit aussi consultable directement depuis votre interface d'administration !)
+Vous pouvez explorer le [catalogue d'application](https://apps.yunohost.org) installable sur votre serveur (bien qu'il soit aussi consultable directement depuis votre interface d'administration !)
 
 La [communauté](/community) est là si vous avez besoin d'aide : venez discuter sur les [salons de discussions](/chat_rooms) ou posez vos questions sur le [forum](/community/forum) !
 

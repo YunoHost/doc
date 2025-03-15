@@ -175,7 +175,7 @@ Le applicazioni devono essere preparate (packaging) manualmente dai programmator
 
 ## Integrazione e qualità
 
-Test automatici sono regolarmente eseguiti per controllare l'integrazione e la qualità dei programmi che sono stati dichiarati "working" dai packagers. I risultati vengono classificati con una scala da 0 a 8, il significato dei valori è spiegato su [questa pagina](https://yunohost.org/en/packaging_apps_levels)
+Test automatici sono regolarmente eseguiti per controllare l'integrazione e la qualità dei programmi che sono stati dichiarati "working" dai packagers. I risultati vengono classificati con una scala da 0 a 8, il significato dei valori è spiegato su [questa pagina](https://yunohost.org/en(/contribute/packaging_apps/testing))
 
 Alcuni risultati sono disponibili su [questa pagina](https://dash.yunohost.org/appci/branch/stable).
 

@@ -17,9 +17,9 @@ Los emails son un ecosistema complicado y una multitud de detalles puedes impedi
 
 Para validar que tu configuración es correcta :
 
-- si te alojas en casa y que no tienes VPN, asegúrate de que [tu proveedor de Internet no esté bloqueando el puerto 25](/isp) ;
-- redirige los puertos siguiendo [esta documentación](/isp_box_config) ;
-- configura con cuidado los registros DNS del correo electrónico siguiendo [esta documentación](/dns_config) ;
+- si te alojas en casa y que no tienes VPN, asegúrate de que [tu proveedor de Internet no esté bloqueando el puerto 25](/install/providers/isp/) ;
+- redirige los puertos siguiendo [esta documentación](/install/post_install/isp_box_config) ;
+- configura con cuidado los registros DNS del correo electrónico siguiendo [esta documentación](/install/post_install/dns_config) ;
 - testa tu configuración utilizando [Mail-tester.com](https://mail-tester.com) <small>(cuidado : sólo 3 tests por dominio y por día están autorizados)</small> ;
 
 Una nota de al menos 8~9/10 es un objetivo razonable.
