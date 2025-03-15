@@ -1,6 +1,6 @@
 ---
-sidebar_label: OVH manual DNS config
-title: DNS Configuration with OVH
+sidebar_label: Configuration DNS manuelle poun OVH
+title: Configuration DNS avec OVH
 ---
 
 Let's see how to properly set the DNS redirections with [OVH](http://www.ovh.com).
