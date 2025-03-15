@@ -63,12 +63,12 @@ This will be the domain used by your server's users to access the **authenticati
 - If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/install/post_install/dns_config).
 
 :::tip
-Yes, you *have to* configure a domain name. If you don't have any domain name and don't want a **.nohost.me** / **.noho.st** / **.ynh.fr** either, you can set up a dummy domain such as `yolo.test` and tweak your **local** `/etc/hosts` file such that this dummy domain [points to the appropriate IP, as explained here](/tutorials/domains/dns_local_network).
+Yes, you *have to* configure a domain name. If you don't have any domain name and don't want a **.nohost.me** / **.noho.st** / **.ynh.fr** either, you can set up a dummy domain such as `yolo.test` and tweak your **local** `/etc/hosts` file such that this dummy domain [points to the appropriate IP, as explained here](/administer/tutorials/domains/dns_local_network).
 :::
 
 ### <FAIcon icon="fa-key"/> First user
 
-The first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/administer/admin_guide/command_line) or [**SFTP**](/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld`: these emails may be used to send technical informations or alerts. You can later add additional users, which you can also add to the Admins group.
+The first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/administer/admin_guide/command_line) or [**SFTP**](/administer/tutorials/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld`: these emails may be used to send technical informations or alerts. You can later add additional users, which you can also add to the Admins group.
 
 This user replaces the old `admin` user, which some old documentation page may still refer to. In which case: just replace `admin` with your username.
 
@@ -127,4 +127,4 @@ For more detailed instructions, or to lean more about SSL/TLS certificates, see 
 
 ## <img src="/img/tada.png" height="30"/> Congratz!
 
-You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](/apps). Don't forget to [plan backups](/category/backups) !
+You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview/self_hosting). You should also be able to [install your favourite applications](https://apps.yunohost.org). Don't forget to [plan backups](/category/backups) !

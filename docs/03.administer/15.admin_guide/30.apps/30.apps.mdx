@@ -22,7 +22,7 @@ The application catalog and its categories can be browsed directly from the weba
 </div>
 
 :::caution
-Be careful and stay reasonable on the number of installed applications. Each additional installation increases the attack surface and the risk of failure. Ideally, if you want to test, do it with another instance for example in [a virtual machine](/install/hardware:virtualbox).
+Be careful and stay reasonable on the number of installed applications. Each additional installation increases the attack surface and the risk of failure. Ideally, if you want to test, do it with another instance for example in [a virtual machine](/install/install_on/virtualbox).
 :::
 
 ## Installing an app
@@ -74,7 +74,7 @@ Many applications integrate a feature that allows you to change the URL of your 
 The installation form usually asks whether or not the app should be publically accessible. If you choose to not make it public, only users logged in YunoHost will be able to reach it.
 
 :::tip
-After installation, this can be configured via the webadmin in the [Groups and permissions panel](/groups_and_permissions), or similarly via the command-line subcategory `yunohost user permission`.
+After installation, this can be configured via the webadmin in the [Groups and permissions panel](/administer/admin_guide/users/groups_and_permissions), or similarly via the command-line subcategory `yunohost user permission`.
 :::
 
 ### Instructions after installation
@@ -173,10 +173,10 @@ It will:
 
 Applications must be packaged manually by application packagers/maintainers. Apps can be integrated with YunoHost to support upgrades, backup/restore and LDAP/SSO integration among other things.
 
-If you want to learn or contribute to app packaging, please check the [contributor documentation](/contributordoc).
+If you want to learn or contribute to app packaging, please check the [contributor documentation](/contribute).
 
 ### Integration and quality levels
 
-Automated tests are being run regularly to test the integration and quality of all apps who were declared to be `working` by packagers. The result is a level between 0 and 8, whose meaning is detailed on [this page](/packaging_apps_levels). Some tests results may also be available [on this dashboard](https://dash.yunohost.org/appci/branch/stable).
+Automated tests are being run regularly to test the integration and quality of all apps who were declared to be `working` by packagers. The result is a level between 0 and 8, whose meaning is detailed on [this page](/contribute/packaging_apps/testing). Some tests results may also be available [on this dashboard](https://dash.yunohost.org/appci/branch/stable).
 
 By default, only applications of sufficient quality are offered. When the quality of an application drops and until the problem is reolved, the app is hidden from the catalog to prevent its installation and its upgrades are put on hold.
