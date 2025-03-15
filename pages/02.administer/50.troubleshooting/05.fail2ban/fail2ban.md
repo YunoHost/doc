@@ -57,16 +57,75 @@ When updating the **Fail2Ban** software, the original `/etc/fail2ban/jail.conf` 
 
 3. Paste the following content into the file and adapt the IP address `XXX.XXX.XXX.XXX`:
 
+    ! Keep the `127.0.0.1/8`, it corresponds to the server [internal communication system](https://en.wikipedia.org/wiki/Localhost)
+
     ```bash
     [DEFAULT]
 
-    ignoreip = 127.0.0.1/8 XXX.XXX.XXX.XXX #<= the IP address (you can put more than one, separated by a space) that you want to whitelist
+    ignoreip = 127.0.0.1/8 XXX.XXX.XXX.XXX
+    #                      ^ Add your IP address or DNS host here
+    #                        you can put more than one, separated by a space
     ```
 
-4. Save the file and reload the Fail2Ban configuration:
+4. You should get end up with something like this if you have added two ip addresses (ipv4 and [ipv6](/ipv6))
+
+    ```bash
+    [DEFAULT]
+
+    ignoreip = 127.0.0.1/8 203.0.113.4 2001:DB8::1
+    ```
+
+5. **Save** the file and **reload** the Fail2Ban configuration:
 
     ```bash
     sudo fail2ban-client reload
     ```
+
+6. **Check** that the configuration has been applied as expected:
+
+    1. You should have this result
+
+        ```bash
+        root@sambain:/etc/nginx# fail2ban-client get sshd ignoreip
+        These IP addresses/networks are ignored:
+        |- 127.0.0.0/8
+        |- 2001:db8::1
+        |- XXX.XXX.XXX.XXX
+        `- 203.0.113.4
+        ```
+
+    2. If there is an **error** with your change, you could end up with something like this:
+
+        ```bash
+        sudo fail2ban-client get sshd ignoreip
+        These IP addresses/networks are ignored:
+        |- 127.0.0.0/8
+        |- #<=
+        |- the
+        |- IP
+        |- address
+        |- (you
+        |- can
+        |- put
+        |- more
+        |- than
+        |- one
+        |- separated
+        |- by
+        |- a
+        |- space)
+        |- that
+        |- you
+        |- want
+        |- to
+        |- whitelist
+        |- 203.0.113.4
+        |- XXX.XXX.XXX.XXX
+        `- 2001:db8::1
+        ```
+
+        And you will need to fix it or revert your changes as Fail2ban could fail
+
+        > For the curious, it was because of a [comment ;](https://github.com/fail2ban/fail2ban/blob/master/config/jail.conf#L30)
 
 Congratulations, no more risks of banning yourself from your own YunoHost server!
