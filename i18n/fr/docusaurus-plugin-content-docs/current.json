@@ -2,6 +2,7 @@
   "version.label": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "message": "Prochaine version",
 =======
     "message": "Suivant",
@@ -29,6 +30,29 @@
   },
   "sidebar.docsSidebar.category.Providers.link.generated-index.title": {
     "message": "Fournisseurs",
+=======
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Overview": {
+    "message": "Overview",
+    "description": "The label for category Overview in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Overview.link.generated-index.title": {
+    "message": "Overview",
+    "description": "The generated-index page title for category Overview in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Install": {
+    "message": "Install",
+    "description": "The label for category Install in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Providers": {
+    "message": "Providers",
+    "description": "The label for category Providers in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Providers.link.generated-index.title": {
+    "message": "Providers",
+>>>>>>> 0f286959 (init translations)
     "description": "The generated-index page title for category Providers in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Registrars": {
@@ -40,6 +64,7 @@
     "description": "The label for category OVH in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.VPN providers": {
+<<<<<<< HEAD
     "message": "Fournisseurs VPN",
     "description": "The label for category VPN providers in sidebar docsSidebar"
   },
@@ -73,6 +98,41 @@
   },
   "sidebar.docsSidebar.category.Domains": {
     "message": "Domaines",
+=======
+    "message": "VPN providers",
+    "description": "The label for category VPN providers in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.After installation": {
+    "message": "After installation",
+    "description": "The label for category After installation in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.After installation.link.generated-index.description": {
+    "message": "Configure your network to access your server",
+    "description": "The generated-index page description for category After installation in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Administration guide": {
+    "message": "Administration guide",
+    "description": "The label for category Administration guide in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Administration guide.link.generated-index.title": {
+    "message": "Administration guide",
+    "description": "The generated-index page title for category Administration guide in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Administration guide.link.generated-index.description": {
+    "message": "Learn about self-hosting, how to install and use YunoHost",
+    "description": "The generated-index page description for category Administration guide in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Guided tour for the admin": {
+    "message": "Guided tour for the admin",
+    "description": "The label for category Guided tour for the admin in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Users and the SSO": {
+    "message": "Users and the SSO",
+    "description": "The label for category Users and the SSO in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Domains": {
+    "message": "Domains",
+>>>>>>> 0f286959 (init translations)
     "description": "The label for category Domains in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Applications": {
@@ -80,11 +140,19 @@
     "description": "The label for category Applications in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Upgrades": {
+<<<<<<< HEAD
     "message": "Mises à jour",
     "description": "The label for category Upgrades in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Migrating from 11.x to 12.x": {
     "message": "Mettre à jour de 11.x à 12.x",
+=======
+    "message": "Upgrades",
+    "description": "The label for category Upgrades in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Migrating from 11.x to 12.x": {
+    "message": "Migrating from 11.x to 12.x",
+>>>>>>> 0f286959 (init translations)
     "description": "The label for category Migrating from 11.x to 12.x in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Backups": {
@@ -96,6 +164,7 @@
     "description": "The generated-index page title for category Backups in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Tutorials": {
+<<<<<<< HEAD
     "message": "Tutoriels",
     "description": "The label for category Tutorials in sidebar docsSidebar"
   },
@@ -161,6 +230,73 @@
   },
   "sidebar.docsSidebar.category.Contributing to the core": {
     "message": "Contribuer au noyau",
+=======
+    "message": "Tutorials",
+    "description": "The label for category Tutorials in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Tutorials.link.generated-index.title": {
+    "message": "Tutorials",
+    "description": "The generated-index page title for category Tutorials in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Domains.link.generated-index.title": {
+    "message": "Domains",
+    "description": "The generated-index page title for category Domains in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Troubleshooting": {
+    "message": "Troubleshooting",
+    "description": "The label for category Troubleshooting in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.User Guide": {
+    "message": "User Guide",
+    "description": "The label for category User Guide in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Community": {
+    "message": "Community",
+    "description": "The label for category Community in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Community.link.generated-index.title": {
+    "message": "Community",
+    "description": "The generated-index page title for category Community in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Contribute": {
+    "message": "Contribute",
+    "description": "The label for category Contribute in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Write documentation": {
+    "message": "Write documentation",
+    "description": "The label for category Write documentation in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Packaging applications": {
+    "message": "Packaging applications",
+    "description": "The label for category Packaging applications in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Writing the app manifest": {
+    "message": "Writing the app manifest",
+    "description": "The label for category Writing the app manifest in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Writing app scripts": {
+    "message": "Writing app scripts",
+    "description": "The label for category Writing app scripts in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Advanced": {
+    "message": "Advanced",
+    "description": "The label for category Advanced in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Advanced.link.generated-index.title": {
+    "message": "Advanced",
+    "description": "The generated-index page title for category Advanced in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Misc resources": {
+    "message": "Misc resources",
+    "description": "The label for category Misc resources in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Misc resources.link.generated-index.title": {
+    "message": "Misc resources",
+    "description": "The generated-index page title for category Misc resources in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Contributing to the core": {
+    "message": "Contributing to the core",
+>>>>>>> 0f286959 (init translations)
     "description": "The label for category Contributing to the core in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.link.Applications": {
@@ -170,6 +306,7 @@
   "sidebar.docsSidebar.link.Forum": {
     "message": "Forum",
     "description": "The label for link Forum in sidebar docsSidebar, linking to https://forum.yunohost.org"
+<<<<<<< HEAD
   },
   "sidebar.docsSidebar.category.Fournisseurs VPN": {
     "message": "Fournisseurs VPN",
@@ -178,5 +315,7 @@
   "sidebar.docsSidebar.category.Install on...": {
     "message": "Install on...",
     "description": "The label for category Install on... in sidebar docsSidebar"
+=======
+>>>>>>> 0f286959 (init translations)
   }
 }
