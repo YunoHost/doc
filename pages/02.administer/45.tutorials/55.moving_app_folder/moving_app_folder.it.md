@@ -13,8 +13,7 @@ Quando la cartella di una applicazione diventa molto voluminosa, potrebbe essere
 
 Di seguito la guida per spostare la cartelle del programma wordpress. Si presuppone che il [dispositivo esterno sia già montato](/external_storage)
 
-
-#### 1. Spostare la cartella wordpress e tutto il suo contenuto nella destinazione finale 
+#### 1. Spostare la cartella wordpress e tutto il suo contenuto nella destinazione finale
 
 ```bash
 mv /var/www/wordpress /media/externalharddrive/

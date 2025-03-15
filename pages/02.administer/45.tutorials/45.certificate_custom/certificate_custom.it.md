@@ -14,7 +14,7 @@ Nel corso delle versioni, sono state introdotte delle modifiche che possono impa
 - Il gruppo metronome non è più utilizzato direttamente ma viene usato ssl-cert.
 - La directory `/etc/yunohost/certs/DOMAIN.LTD-history/stamp` viene utilizzata per salvare le configurazioni create e viene creato un link simbolico.
 
-### Installazione di un certificato firmato da un'autorità diversa da Let's Encrypt 
+### Installazione di un certificato firmato da un'autorità diversa da Let's Encrypt
 
 Dopo aver creato il certificato presso l'autorità di certificazione scelta, sarete in possesso di una chiave privata, il file key e di un certificato pubblico, il file crt.
 ! Attenzione! il file key contiene dati sensibili, è strettamente personale e deve essere conservato in un luogo sicuro.
@@ -35,7 +35,6 @@ pscp -P 22 KEY.key admin@DOMAIN.TLD:ssl.key
 
 Una volta copiati i file, i passi successivi si faranno sul server via [ssh](/ssh) o in locale.
 Per prima cosa create una directory per salvare i certificati in vostro possesso.
-
 
 ```bash
 sudo mkdir /etc/yunohost/certs/DOMAIN.TLD/ae_certs
