@@ -12,10 +12,7 @@ import styles from './styles.module.css'
 
 function CardContainer({ href, children }) {
   return (
-    <Link
-      href={href}
-      className={clsx('card padding--lg', styles.cardContainer)}
-    >
+    <Link href={href} className={clsx('card padding--lg', styles.cardContainer)}>
       {children}
     </Link>
   )
