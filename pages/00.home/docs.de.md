@@ -14,7 +14,7 @@ Dies ist die Dokumentation von [YunoHost, einem freien Betriebssystem, das die S
 
 Weitere Informationen zum Selbsthosting, zur Installation deines eigenen YunoHost-Servers und zur Installation der ersten Apps findest du im  [Administratorhandbuch](/admindoc).
 
-Du kannst in den [Anwendungskatalog](/apps) schauen, um die Apps anzusehen, die auf deinem Server installiert werden können (Natürlich geht das auch direkt über deine Administrationsoberfläche!).
+Du kannst in den [Anwendungskatalog](https://apps.yunohost.org) schauen, um die Apps anzusehen, die auf deinem Server installiert werden können (Natürlich geht das auch direkt über deine Administrationsoberfläche!).
 
 Wenn du Hilfe benötigst, ist die [Community](/community) für dich da: [Chatte](/chat_rooms) mit uns oder schau in das [Forum](/community/forum)!
 

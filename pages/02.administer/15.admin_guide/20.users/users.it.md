@@ -25,7 +25,7 @@ Il portale dell'utente, chiamato anche SSO per 'Single Sign On', permette all'ut
 
 Nel portale, gli utilizzatori possono anche cliccare sull'avatar in alto a sinistra per configurare altri parametri come il loro nome, l'alias per le mail, l'inoltro automatico delle mail, o per cambiare la propria password.
 
-!!! Devi essere consapevole che il SSO può essere caricato solo dal nome di dominio (per esempio `https://the.domani.tld/yunohost/sso`), e non con l'indirizzo IP del server (per esempio `https://11.22.33.44/yunohost/sso`), al contrario dell'amministratore web! Può creare confusione, ma è necessario per ragioni tecniche. Se sei in una situazione dove è necessario accedere a SSO senza avere i DNS configurati correttamente per diverse ragioni, puoi avere la possibilità di modificare il tuo `/etc/hosts` come descritto in [questa pagina](/dns_local_network).
+!!! Devi essere consapevole che il SSO può essere caricato solo dal nome di dominio (per esempio `https://the.domani.tld/yunohost/sso`), e non con l'indirizzo IP del server (per esempio `https://11.22.33.44/yunohost/sso`), al contrario dell'amministratore web! Può creare confusione, ma è necessario per ragioni tecniche. Se sei in una situazione dove è necessario accedere a SSO senza avere i DNS configurati correttamente per diverse ragioni, puoi avere la possibilità di modificare il tuo `/etc/hosts` come descritto in [questa pagina](/administer/tutorials/domains/dns_local_network).
 
 ## Gestione di gruppi di utenti e permessi
 

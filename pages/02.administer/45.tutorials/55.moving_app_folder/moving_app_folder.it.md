@@ -11,7 +11,7 @@ Le cartelle dei programmi si trovano (*normalmente*) in `/var/www/$nome_programm
 
 Quando la cartella di una applicazione diventa molto voluminosa, potrebbe essere utile spostarla in una diversa collocazione (HD esterno, scheda sd, ecc).
 
-Di seguito la guida per spostare la cartelle del programma wordpress. Si presuppone che il [dispositivo esterno sia già montato](/external_storage)
+Di seguito la guida per spostare la cartelle del programma wordpress. Si presuppone che il [dispositivo esterno sia già montato](/administer/tutorials/external_storage)
 
 #### 1. Spostare la cartella wordpress e tutto il suo contenuto nella destinazione finale
 

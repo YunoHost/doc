@@ -24,10 +24,10 @@ También existen **tipos** de registros DNS, lo que significa que un dominio pue
 
 Tienes varias opciones. Nota que puedes cumular estas soluciones si posees varios dominios : por ejemplo, puedes tener `mi-servidor.nohost.me` utilizando la solución **1.**, et `mi-servidor.org` utilizando la solución **2.**, redirigiéndolos hacia el mismo servidor YunoHost.
 
-1. Puedes utilizar [el servicio DNS de YunoHost](/dns_nohost_me), que configurará él mismo los DNS de tu instancia YunoHost. Pero en este caso, tienes que elegir un dominio terminando por `.nohost.me`, `.noho.st` o `.ynh.fr`, lo que puede tener inconvenientes (tendrás direcciones email tales como `juan@mi-servidor.noho.st`).
+1. Puedes utilizar [el servicio DNS de YunoHost](/administer/tutorials/domains/dns_nohost_me), que configurará él mismo los DNS de tu instancia YunoHost. Pero en este caso, tienes que elegir un dominio terminando por `.nohost.me`, `.noho.st` o `.ynh.fr`, lo que puede tener inconvenientes (tendrás direcciones email tales como `juan@mi-servidor.noho.st`).
 **Es el método recomendado si estás debutando.**
 
-2. Puedes utilizar el servicio de DNS de tu  **registrar** (Gandi, OVH, BookMyName u otro) para configurar tus nombres de dominio. Ésta es la [configuración DNS estándar](/dns_config). También es posible utilizar una redirección DNS local, más información sobre cómo [Acceder a su servidor desde la red local](/dns_local_network).
+2. Puedes utilizar el servicio de DNS de tu  **registrar** (Gandi, OVH, BookMyName u otro) para configurar tus nombres de dominio. Ésta es la [configuración DNS estándar](/install/post_install/dns_config). También es posible utilizar una redirección DNS local, más información sobre cómo [Acceder a su servidor desde la red local](/administer/tutorials/domains/dns_local_network).
 También puedes consultar las documentaciones específicas a estas varias [oficinas de registro](/registrar) : [Gandi](http://gandi.net), [OVH](/OVH) o [BookMyName](http://bookmyname.com).
 
 **Atención** : Si eliges este modo de funcionamiento, tendrás más flexibilidad, pero nada será automático. Por ejemplo si quieres utilizar `webmail.mi-servidor.org`, tendrás que añadirlo manualmente en la interfaz de tu registrar.
