@@ -75,7 +75,7 @@ After creating backups, it is possible to list and inspect them using the corres
 
 [/ui-tab]
 [ui-tab title="With a SFTP client"]
-Currently, the most accessible way to download big archives is to use the program FileZilla as explained in [this page](/filezilla).
+Currently, the most accessible way to download big archives is to use the program FileZilla as explained in [this page](/administer/tutorials/filezilla).
 
 By default, backups are stored in `/home/yunohost.backup/archives/`.
 
@@ -83,7 +83,7 @@ By default, backups are stored in `/home/yunohost.backup/archives/`.
 [ui-tab title="From the command line"]
 The `yunohost backup list` and `yunohost backup info <archive_name>` commands provide information about the names and sizes of backups.
 
-It is possible to use `scp` (a program based on [`ssh`](/ssh)) to copy files between two machines via the command line. So, from a GNU/Linux machine, you can use the following command to download an archive:
+It is possible to use `scp` (a program based on [`ssh`](/administer/admin_guide/command_line)) to copy files between two machines via the command line. So, from a GNU/Linux machine, you can use the following command to download an archive:
 
 ```bash
 scp admin@your.domain.tld:/home/yunohost.backup/archives/<archive_name>.tar ./
@@ -100,7 +100,7 @@ scp -P ssh_port admin@your.domain.tld:/home/yunohost.backup/archives/<archive_na
 
 ! Don't forget to store your backup in a different place to your server.
 
-!!! If you want, you can connect an external disk to your server so that the archives arrive directly on it. See this guide to [Adding external storage to your server](/external_storage)
+!!! If you want, you can connect an external disk to your server so that the archives arrive directly on it. See this guide to [Adding external storage to your server](/administer/tutorials/external_storage)
 
 ### Testing
 
@@ -149,7 +149,7 @@ In many cases, the archive is not on the server on which you want to restore it.
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="With an SFTP client"]
-Currently, the most accessible solution for uploading backups is to use the FileZilla program as explained in [this page](/filezilla).
+Currently, the most accessible solution for uploading backups is to use the FileZilla program as explained in [this page](/administer/tutorials/filezilla).
 
 By default, backups are to be placed in `/home/yunohost.backup/archives/`.
 [/ui-tab]

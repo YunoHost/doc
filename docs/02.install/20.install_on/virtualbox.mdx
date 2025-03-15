@@ -15,7 +15,7 @@ import YunoHostImagesList from '@site/src/components/YunoHostImagesList';
 ## <FAIcon icon="fa-list-alt"/> Pre-requisites
 
 - An x86 computer with [VirtualBox installed](https://www.virtualbox.org/wiki/Downloads) and enough RAM capacity to be able to run a small virtual machine with 1024MB RAM and 8GB capacity (at least)
-- A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
+- A [reasonable ISP](/install/post_install/isp_box_config), preferably with a good and unlimited upstream bandwidth
 - A computer to read this guide, flash the image and access your server.
 
 :::warning
@@ -86,7 +86,7 @@ You should see a screen like this:
 
     The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.
 
-    With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/external_storage).
+    With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/administer/tutorials/external_storage).
 
     ### Summary of the steps in expert mode
 
@@ -112,7 +112,7 @@ You should see a screen like this:
     | `/home/yunohost.multimedia` | Heavy data shared between several applications |
     | `/var/mail` | User mail |
 
-    If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/external_storage).
+    If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/administer/tutorials/external_storage).
 
     ### About encryption
 

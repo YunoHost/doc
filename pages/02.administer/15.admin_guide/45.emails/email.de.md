@@ -17,9 +17,9 @@ E-Mail ist ein kompliziertes Ökosystem und eine ganze Reihe von Details können
 
 Um Ihre Einstellungen zu validieren:
 
-- Wenn Sie zu Hause selbst hosten und kein VPN verwenden, stellen Sie sicher das [Ihr ISP den Port 25 nicht blockiert](/isp);
-- leiten Sie Ports weiter, wie in [dieser Dokumentation](/isp_box_config) beschrieben;
-- Mail-DNS-Einträge nach [dieser Dokumentation](/dns_config) sorgfältig konfigurieren;
+- Wenn Sie zu Hause selbst hosten und kein VPN verwenden, stellen Sie sicher das [Ihr ISP den Port 25 nicht blockiert](/install/providers/isp/);
+- leiten Sie Ports weiter, wie in [dieser Dokumentation](/install/post_install/isp_box_config) beschrieben;
+- Mail-DNS-Einträge nach [dieser Dokumentation](/install/post_install/dns_config) sorgfältig konfigurieren;
 - testen Sie Ihre Konfiguration mit [Mail-tester.com](https://mail-tester.com/) (Vorsicht : nur 3 Tests pro Domain und Tag sind erlaubt) ;
 
 Eine Punktzahl von mindestens 8~9/10 ist ein angemessenes Ziel.

@@ -94,7 +94,7 @@ Nous avons besoin de tester YunoHost profondément. Si vous trouvez un bug, essa
 [/center]
 
 [center]
-Étendez les capacités de YunoHost en [packageant de nouveaux services et applications web](/packaging_apps). Jetez un œil à [ce qui a déjà été fait](/apps) !
+Étendez les capacités de YunoHost en [packageant de nouveaux services et applications web](/packaging_apps). Jetez un œil à [ce qui a déjà été fait](https://apps.yunohost.org) !
 [/center]
 [/columns]
 

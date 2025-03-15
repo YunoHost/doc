@@ -14,7 +14,7 @@ YunoHost permette l'installazione e la gestione di più domini sullo stesso serv
 
 I domini possono essere configurati a partire dalla sezione 'Domini' della pagina webadmin, o attraverso la sezione `yunohost domain` da linea di comando.
 
-Ogni volta che aggiungete un dominio, sia esso vostro o del quale abbiate facoltà di gestione, dovete averne il pieno controllo per la poter effettuare la [configurazione del DNS](/dns_config). Fanno eccezione i [domini in .nohost.me, .noho.st et ynh.fr](/dns_nohost_me) offerti dal progetto YunoHost, che possono essere direttamente integrati nel vostro server YunoHost grazie alla configurazione automatica di un servizio DynDns. Al fine di impedire abusi e limitare i costi, un'istanza YunoHost può essere configurata con un solo dominio offerto, tuttavia potete aggiungere tutti i suoi sottodomini che desiderate. Ad esempio, se scegliete il dominio `exemple.ynh.fr` potrete in un secondo tempo aggiungere i domini `video.exemple.ynh.fr` o `www.exemple.ynh.fr` o qualsiasi altro sottodominio che possa servirvi.
+Ogni volta che aggiungete un dominio, sia esso vostro o del quale abbiate facoltà di gestione, dovete averne il pieno controllo per la poter effettuare la [configurazione del DNS](/install/post_install/dns_config). Fanno eccezione i [domini in .nohost.me, .noho.st et ynh.fr](/administer/tutorials/domains/dns_nohost_me) offerti dal progetto YunoHost, che possono essere direttamente integrati nel vostro server YunoHost grazie alla configurazione automatica di un servizio DynDns. Al fine di impedire abusi e limitare i costi, un'istanza YunoHost può essere configurata con un solo dominio offerto, tuttavia potete aggiungere tutti i suoi sottodomini che desiderate. Ad esempio, se scegliete il dominio `exemple.ynh.fr` potrete in un secondo tempo aggiungere i domini `video.exemple.ynh.fr` o `www.exemple.ynh.fr` o qualsiasi altro sottodominio che possa servirvi.
 
 I domini possono essere configurati a partire dalla sezione 'Domini' della pagina webadmin, o attraverso la sezione `yunohost domain` da linea di comando.
 
@@ -41,7 +41,7 @@ Per ottenere un dominio tra quelli proposti, sarà sufficiente scegliere `Non ho
 
 ! Al fine di impedire abusi e limitare i costi, una istanza YunoHost può essere configurata con un solo dominio offerto, tuttavia potete aggiungere tutti i suoi sotto domini che desiderate. Ad esempio, se scegliete il dominio `exemple.ynh.fr` potrete in un secondo tempo aggiungere i domini `video.exemple.ynh.fr` o `www.exemple.ynh.fr` o qualsiasi altro sottodominio che possa servirvi. In questo caso dovete scegliere `Possiedo un nome di dominio`.
 
-[Per maggiori informazioni sui domini offerti dal progetto YunoHost](/dns_nohost_me)
+[Per maggiori informazioni sui domini offerti dal progetto YunoHost](/administer/tutorials/domains/dns_nohost_me)
 
 [/ui-tab]
 [ui-tab title="Il vostro dominio"]]
@@ -56,7 +56,7 @@ Se già possedete un nome di dominio, dovete semplicemente scegliere "Ho già un
 
 [Pagina "Aggiungere un dominio" dove potere scegliere "Ho già un nome di dominio"](image://webadmin_domain_owndomain.png)
 
-[Ulteriori informazioni sulla zona DNS](/dns_config)
+[Ulteriori informazioni sulla zona DNS](/install/post_install/dns_config)
 
 [/ui-tab]
 [ui-tab title="Domini locali (raggiungibili solo all'interno della LAN)"]]
@@ -94,4 +94,4 @@ Se il vostro dominio include caratteri speciali non latini, essi verranno conver
 
 ## Certificati SSL/HTTPS
 
-Un altro aspetto importante nella configurazioni dei domini è il certificato SSL/HTTPS. In YunoHost viene integrato il servizio Let's Encrypt, e quindi, al fine di rendere raggiungibile il vostro server da tutto l'internet tramite il nome  di dominio, l'amministratore può richiedere l'installazione del certificato Let's Encrypt. Vedi la documentazione sui [certificati](/certificate) per ulteriori informazioni.
+Un altro aspetto importante nella configurazioni dei domini è il certificato SSL/HTTPS. In YunoHost viene integrato il servizio Let's Encrypt, e quindi, al fine di rendere raggiungibile il vostro server da tutto l'internet tramite il nome  di dominio, l'amministratore può richiedere l'installazione del certificato Let's Encrypt. Vedi la documentazione sui [certificati](/administer/admin_guide/domains/certificate) per ulteriori informazioni.

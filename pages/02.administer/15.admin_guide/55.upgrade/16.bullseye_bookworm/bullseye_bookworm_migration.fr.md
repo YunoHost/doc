@@ -80,4 +80,4 @@ yunohost app upgrade --force NOM_APP
 
 ## Soucis connus après la migration
 
-Veuillez consulter [la FAQ des problèmes de migration](/bookworm_migration_issues_faq) (en anglais).
+Veuillez consulter [la FAQ des problèmes de migration](/administer/admin_guide/upgrade/bullseye_bookworm/issues_faq/) (en anglais).

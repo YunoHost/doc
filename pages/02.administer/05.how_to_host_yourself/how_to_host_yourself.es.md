@@ -14,7 +14,7 @@ Puedes autohospedarte desde tu casa (desde un pequeño ordenador), o desde un se
 Puedes autoalojarte en casa, desde una tarjeta ARM o un viejo ordenador conectado a tu internet.
 
 - **Ventajas**: Tienes el control físico de la máquina y solo tienes que conseguir el hardware inicial.
-- **Desventajas**: Probablemente necesitas [configurer manualmente tu router](/isp_box_config) y puede que [tu operador de internet te limite](/isp).
+- **Desventajas**: Probablemente necesitas [configurer manualmente tu router](/install/post_install/isp_box_config) y puede que [tu operador de internet te limite](/install/providers/isp/).
 
 ### En casa, pasando por una VPN
 

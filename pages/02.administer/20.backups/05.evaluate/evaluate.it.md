@@ -34,7 +34,7 @@ Per ultimo, un buon backup **deve essere facilmente e velocemente accessibile**.
 
 - [creare un file di backup e salvarlo manualmente (scelta di default per YunoHost)](/backup#manual-backup)
 - [backup automatizzato (scelta consigliata)](/backup#automatic-or-remote-backup)
-- [backup su disco esterno](/external_storage)
+- [backup su disco esterno](/administer/tutorials/external_storage)
 - [creazione di un'immagine o snapshot](/backup/clone_filesystem)
 - [salvataggio dei dati con metodo personalizzato](/backup/custom_backup_methods)
 

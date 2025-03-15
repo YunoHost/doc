@@ -41,16 +41,16 @@ Nella pagina di amministrazione del vostro router cercate la sezione 'port forwa
 Dovete reindirizzare ognuna delle porte elencate di seguito, verso l'IP locale del vostro server, al fine di permettere il funzionamento dei servizi di YunoHost. Ogni servizio necessita di un reindirizzamento 'TCP'. Alcuni router nominano le porte in 'esterne' e 'interne', si tratta comunque della stessa porta.
 
 - Web: `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>
-- [SSH](/ssh): `22`
+- [SSH](/administer/admin_guide/command_line): `22`
 - [XMPP](https://wikipedia.org/wiki/XMPP): `5222` <small>(client)</small>, `5269` <small>(server)</small>
-- [Email](/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>
+- [Email](/administer/admin_guide/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>
 
 Se utilizzate modem e router separati, dovete:
 
 1. prima sul modem (l'apparecchio più vicino ad internet) dovrete creare delle regole per reindirizzare le porte di cui sopra al router;
 2. Successivamente sul router (l'apparecchio che sta in mezzo fra il modem e gli altri apparecchi della rete locale) Reindirizzare le porte dal router all'indirizzo statico del vostro server.
 
-! [fa=exclamation-triangle /] Alcuni internet provider bloccano l'apertura della porta 25 (mail SMTP) per combattere lo spam. Altri, più raramente, non permettono l'uso delle porte 80/443. A seconda dell'ISP è possibile aprirle nella configurazione del router... Controllate [questa pagina](/isp) per maggiori informazioni.
+! [fa=exclamation-triangle /] Alcuni internet provider bloccano l'apertura della porta 25 (mail SMTP) per combattere lo spam. Altri, più raramente, non permettono l'uso delle porte 80/443. A seconda dell'ISP è possibile aprirle nella configurazione del router... Controllate [questa pagina](/install/providers/isp/) per maggiori informazioni.
 
 ## Reindirizzamento automatico / UPnP
 

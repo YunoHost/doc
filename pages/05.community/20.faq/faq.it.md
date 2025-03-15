@@ -41,7 +41,7 @@ Si è possibile ospitare più siti con domini diversi in quanto YunoHost accetta
 
 #### Perché non posso accedere alle mie applicazioni con l'indirizzo  IP del server?
 
-Per motivi tecnici il [SSO](https://github.com/YunoHost/SSOwat/) (Single Sign On) non permette agli utilizzatori di connettersi alla propria dashboard quando si accede al server con il suo indirizzo IP. Se non potete configurare il DNS, una soluzione temporanea è quella di modificare il [file 'hosts' (ultimo §)](/dns_local_network) del proprio computer.
+Per motivi tecnici il [SSO](https://github.com/YunoHost/SSOwat/) (Single Sign On) non permette agli utilizzatori di connettersi alla propria dashboard quando si accede al server con il suo indirizzo IP. Se non potete configurare il DNS, una soluzione temporanea è quella di modificare il [file 'hosts' (ultimo §)](/administer/tutorials/domains/dns_local_network) del proprio computer.
 
 #### Su quale modello economico si basa YunoHost ?
 
@@ -93,7 +93,7 @@ Se desiderate che la vostra app preferita sia implementata e documentata [aiutat
 
 #### What is YunoHost's policy regarding the apps included in the official catalog ?
 
-See [this page](/packaging_policy)
+See [this page]((/contribute/packaging_apps/policy))
 
 #### Perché non includete la [caratteristica X]?
 
