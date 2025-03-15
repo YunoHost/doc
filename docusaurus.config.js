@@ -36,6 +36,11 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['ar', 'ca', 'de', 'en', 'es', 'fr', 'it', 'oc', 'ru'],
+    localeConfigs: {
+      ar: {
+        direction: 'rtl',
+      },
+    },
   },
 
   presets: [
