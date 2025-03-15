@@ -75,7 +75,7 @@ When creating a pull request from a fork, to ease the work of the reviewers, **d
 
 ### YunoHost-Apps organization
 
-Following the [guide for packaging application within YunoHost](/packaging_apps_intro), your app has to be into the YunoHost-Apps organization, but if you have never contributed to an app before or never had any app into this organization you may not have the permission.
+Following the [guide for packaging application within YunoHost](/contribute/packaging_apps/), your app has to be into the YunoHost-Apps organization, but if you have never contributed to an app before or never had any app into this organization you may not have the permission.
 
 First, you need the permission to write into the organization, to do so, ask to the Apps group on the Apps XMPP room.
 
