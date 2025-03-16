@@ -1,40 +1,40 @@
 ---
-title: VPN providers
-description: The guys that provide a private tunnel (and a public IP)
+title: Fournisseurs VPN
+description: Ceux qui fournissent un tunnel privé (et une IP publique)
 ---
 
 import {HighlightFFDN, HighlightNonProfit} from '@site/src/components/Highlight';
 
-Since setting up a server at home is an uncommon practice, most Internet connections provided to individuals are unsuitable for this purpose especially if you desire to send mail. A net neutral VPN providing a dedicated fixed public IPv4 address and IPv6 addresses [can help to circumvent some limitations or difficulties](/install/providers/vpn/vpn_advantage).
+Étant donné que la mise en place d'un serveur à domicile est une pratique peu courante, la plupart des connexions internet fournies aux particuliers ne sont pas adaptées à cette fin, en particulier si vous souhaitez envoyer des courriels. Un VPN neutre fournissant une adresse IPv4 publique fixe dédiée et des adresses IPv6 [peut aider à contourner certaines limitations ou difficultés](/install/providers/vpn/vpn_advantage).
 
-Below, you can find a list of providers compatible for self-hosting and especially those providing .cube format for VPNClient apps and those providing [internetcube](https://internetcu.be).
+Ci-dessous, vous trouverez une liste de fournisseurs compatibles avec l'auto-hébergement et en particulier ceux qui fournissent le format .cube pour les applications VPNClient et ceux qui fournissent [internetcube](https://internetcu.be).
 
 :::info
-By **compatible for self-hosting** we means VPN offers with at least:
-
-- a fixed dedicated public IPv4
-- port forwarding or opened features
-- net neutrality: no traffic analysis, no user data resale, no alteration of traffic (without legal obligations)...
+Par **compatible pour l'auto-hébergement**, nous entendons des offres VPN avec au moins :
+- un IPv4 public dédié fixe
+- des fonctionnalités de redirection de port ou d'ouverture
+- neutralité du réseau : pas d'analyse du trafic, pas de revente des données des utilisateurs, pas d'altération du trafic (sans obligations légales)...
 :::
 
-## English-speaking sites
 
-| VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |
+## Sites anglophones
+
+| Fournisseur VPN | Compatibilité [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) | IPv6 | rDNS IPv4 | rDNS IPv6 | Prix | Adhésion | Neutralité du net |
 | ------------ | ---------------------------------------------------------------------------- | ---- | --------- | --------- | ----- | ---------- | -------------- |
-| [Neutrinet](https://neutrinet.be/en/vpn) | ✔ (.cube + [internetcube](https://internetcu.be)) | ✔   | ✔         | ✔         | ~10€¹/month or 30€/year | included | <HighlightFFDN/> <HighlightNonProfit/> |
+| [Neutrinet](https://neutrinet.be/en/vpn) | ✔ (.cube + [internetcube](https://internetcu.be)) | ✔   | ✔         | ✔         | ~10€¹/mois ou 30€/an | Inclus | <HighlightFFDN/> <HighlightNonProfit/> |
 
-¹ [Pay what you want](https://en.wikipedia.org/wiki/Pay_what_you_want)
+¹ [Payez ce que vous voulez](https://en.wikipedia.org/wiki/Pay_what_you_want)
 
 :::info
-If you try an other VPN provider that include **public dedicated ipv4 and port forwarding**, feel free to contribute to this documentation. We need people to test specific offers of those commercial providers:
+Si vous essayez un autre fournisseur de VPN qui inclut **l'ipv4 public dédié et la redirection de port**, n'hésitez pas à contribuer à cette documentation. Nous avons besoin de personnes pour tester les offres spécifiques de ces fournisseurs commerciaux :
 
-- ✘ [VPN area](https://vpnarea.com/front/home/dedicated-ip) does not allow forwarding port 80. Running a webserver is against their TOS.
+- ✘ [VPN area](https://vpnarea.com/front/home/dedicated-ip) n'autorise pas la redirection du port 80. L'exécution d'un serveur web est contraire à leurs conditions d'utilisation.
 - [Trust zone](https://trust.zone/fr/order?p=25)
 - [PureVPN](https://www.purevpn.fr/ip-vpn-dedie)
 - [RapidVPN](https://www.rapidvpn.com/vpn)
 :::
 
-## French-speaking sites
+## Sites francophones
 
 | Fournisseurs | Compatibilité [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) | IPv6 | rDNS IPv4 | rDNS IPv6 | Prix | Adhésion | Neutralité du net |
 | ------------ | ----------------------- | ---- | --------- | --------- | ----- | -------------- | -- |
@@ -58,8 +58,8 @@ If you try an other VPN provider that include **public dedicated ipv4 and port f
 
 ¹ Prix libre
 
-## German-speaking sites
+## Sites germanophones
 
-| VPN provider | [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) compatibility | IPv6 | rDNS IPv4 | rDNS IPv6 | Price | Membership | Net Neutrality |
+| Fournisseur VPN | Compatibilité [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) | IPv6 | rDNS IPv4 | rDNS IPv6 | Prix | Adhésion | Neutralité du net |
 | ------------ | ----------------------- | ---- | --------- | --------- | ----- | -------------- | --- |
-| [In-Berlin](https://in-vpn.de/provider/vpn.html)    | ✔ (manuelle)               | ✔    | ✔         | ✔         | 9 or 14€ / month | 20€ / an | <HighlightNonProfit/> |
+| [In-Berlin](https://in-vpn.de/provider/vpn.html)    | ✔ (manuelle)               | ✔    | ✔         | ✔         | 9 ou 14€ / mois | 20€ / an | <HighlightNonProfit/> |
