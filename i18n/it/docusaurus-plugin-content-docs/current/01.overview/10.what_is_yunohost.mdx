@@ -5,9 +5,9 @@ description: " "
 
 <img src={require('/img/YunoHost_logo_vertical.png').default} alt="YunoHost logo" id="ynhlogo" style={{display: "block", textAlign: "center", margin: "auto"}}/>
 
-YunoHost is an **operating system** aiming to simplify **server administration** and therefore democratize [self-hosting](/overview/self_hosting) while making sure it stays reliable, secure, ethical and lightweight. It is a copylefted libre software project maintained exclusively by volunteers. Technically, it can be seen as a distribution based on [Debian GNU/Linux](https://debian.org) and can be installed on [many kinds of hardware](/install).
+YunoHost è un **sistema operativo** che mira a rendere il più semplice possibile l'amministrazione di un **server**  e quindi a permettere ad un numero sempre maggiore di persone di avvicinarsi al [self-hosting](/selfhosting), assicurandosi che la gestione del server rimanga affidabile, sicura ed etica. Si tratta di un progetto basato su software libero e copyleft gestito esclusivamente da volontari. Tecnicamente YunoHost può essere vista come una distribuzione basata su [Debian GNU/Linux](https://debian.org) che può essere installata su [diverse tipologie di hardware](/install).
 
-## Features
+## Caratteristiche
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 export function SmallInline({url, alt}) {
@@ -26,34 +26,34 @@ export function SmallInline({url, alt}) {
 - &#8203;<SmallInline url='/img/icon-lock.png' alt="lock logo"/> Manages **SSL certificates** <small>(based on Let's Encrypt)</small>;
 - &#8203;<SmallInline url='/img/icon-shield.png' alt="shield logo"/>... and **security systems** <small>(`fail2ban`, `yunohost-firewall`)</small>.
 
-## Origin
+## Origine
 
-YunoHost was created in February 2012 after something like this:
+YunoHost è stata creata nel febbraio 2012 dopo qualcosa del genere:
 
-> "Shit, I'm too lazy to reconfigure my mail server... Beudbeud, how were you able to get your little server running with LDAP?"
-> <small>*Kload, February 2012*</small>
+> "Merda, sono troppo pigro per riconfigurare il mio server di posta... Beudbeud, come sei riuscito a far funzionare il tuo piccolo server con LDAP?"
+> <small>Kload, Febbraio 2012</small>
 
-All that was needed was an admin interface for Beudbeud's server to make something usable, so Kload decided to develop one. Finally, after automating several configs and packaging in some web apps, YunoHost v1 was finished.
+Tutto ciò che serviva era un'interfaccia di amministrazione per il server di Beudbeud per creare qualcosa di utilizzabile, così Kload ha deciso di svilupparne una. Alla fine, dopo aver automatizzato diverse configurazioni e aver inserito alcune applicazioni web, YunoHost versione 1 è stato completato.
 
-Noting the growing enthusiasm around YunoHost and around self-hosting in general, the original developers along with new contributors decided to start work on version 2, a more extensible, more powerful, more easy-to-use, and at that, one that makes a nice cup of fair-trade coffee for the elves of Lapland.
+Notando il crescente entusiasmo intorno a YunoHost e al self-hosting in generale, gli sviluppatori originari e i nuovi collaboratori hanno deciso di iniziare a lavorare alla versione 2, una versione più estensibile, più potente, più facile da usare e che prepara una bella tazza di caffè equo-solidale per gli elfi della Lapponia.
 
-The name **YunoHost** comes from the jargon "[Y U NO](https://knowyourmeme.com/memes/y-u-no-guy) Host". The [Internet meme](https://en.wikipedia.org/wiki/Internet_meme) should illustrate it:
+Il nome **YunoHost** deriva dal gergo "Y U NO Host". Il [meme Internet](https://en.wikipedia.org/wiki/Internet_meme) dovrebbe illustrarlo:
 
 <center>
 ![The meme in question, showing a guy with a face bent in frustration and questioning "Y U NO Host"](/img/dude_yunohost.jpg)
 </center>
 
-## What YunoHost is not?
+## Cosa non è YunoHost?
 
-Even if YunoHost can handle multiple domains and multiple users, it is **not meant to be a mutualized system**.
+Anche se YunoHost è in grado di gestire più domini e più utenti, **non è pensato per essere un sistema mutualizzato.**.
 
-First, the software is too young, not tested at scale and thus probably not optimized well enough for hundreds of users at the same time. With that said, we do not want to lead the software in that direction. Virtualization democratizes, and its usage is recommended since it is a more watertight way to achieve mutualization than a "full-stack" system like YunoHost.
+In primo luogo, il software è troppo giovane, non è stato testato su larga scala e quindi probabilmente non è sufficientemente ottimizzato per centinaia di utenti contemporaneamente. Detto questo, non vogliamo sviluppare il software in quella direzione. La virtualizzazione è sempre più diffusa e il suo utilizzo è consigliato in quanto è un modo più sicuro per ottenere la mutualizzazione rispetto a un sistema "full-stack" come YunoHost.
 
-You can host your friends, your family and your company safely and with ease, but you must **trust your users**, and they must trust you above all. If you want to provide YunoHost services for unknown persons anyway, a full VPS per user will be just fine, and we believe a better way to go.
+Potete ospitare i vostri amici, la vostra famiglia e la vostra azienda in tutta sicurezza e facilità, ma dovete **fidarvi dei vostri utenti**, e soprattutto loro devono fidarsi di voi. Se volete comunque fornire i servizi YunoHost a persone sconosciute, un VPS completo per utente andrà benissimo e riteniamo che sia una soluzione migliore.
 
-## Artworks
+## Logo
 
-Black and white YunoHost PNG logo by ToZz (400 × 400 px). Licence: CC-BY-SA 4.0. Logos and other artwork are available in [the Artworks repository](https://github.com/YunoHost/yunohost-artwork).
+Il logo PNG di YunoHost in bianco e nero di ToZz (400 × 400 px). Licence: CC-BY-SA 4.0. Logos and other artwork are available in [the Artworks repository](https://github.com/YunoHost/yunohost-artwork).
 
 <img src={require('/img/ynh_logo_black_300dpi.png').default} width="220" id="darklogo" style={{padding: "1rem"}}/>
 <img src={require('/img/ynh_logo_white_300dpi.png').default} width="220" id="whitelogo" style={{padding: "1rem"}}/>
