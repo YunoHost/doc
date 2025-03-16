@@ -13,7 +13,7 @@ Les applications peuvent être installées et gérées via l'interface d'adminis
 
 Il est possible de naviguer dans le catalogue d'application dans la webadmin (dans `Applications > Installer`) ou bien [ici](https://apps.yunohost.org).
 
-! Attention à rester raisonnable sur le nombre d'applications installées. Chaque installation supplémentaire augmente la surface d'attaque et les risques de panne. Idéalement, si vous souhaitez faire des tests, faites-le avec une autre instance par exemple dans [une machine virtuelle](/install/hardware:virtualbox).
+! Attention à rester raisonnable sur le nombre d'applications installées. Chaque installation supplémentaire augmente la surface d'attaque et les risques de panne. Idéalement, si vous souhaitez faire des tests, faites-le avec une autre instance par exemple dans [une machine virtuelle](/install/install_on/virtualbox).
 
 Les applications doivent être packagées manuellement par les packageurs/mainteneurs d'applications. Les applications peuvent être intégrées avec YunoHost pour gérer les mises à jour, la sauvegarde/restauration et l'intégration LDAP/SSO, entre autres.
 
