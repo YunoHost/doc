@@ -1,58 +1,58 @@
 ---
 sidebar_label: Advantages
-title: Advantage of a VPN for self-hosting
+title: Ventajas de una VPN para el autoalojamiento
 ---
 
-Since setting up a server at home is an uncommon practice, most Internet connections provided to individuals are unsuitable for this purpose. A net neutral VPN providing a static IPv4 address and IPv6 addresses can help to circumvent some limitations or difficulties.
+Dado que la instalación de un servidor en casa es una práctica poco habitual, la mayoría de las conexiones a Internet que se proporcionan a los particulares no son adecuadas para este fin. Una VPN de red neutra que proporcione una dirección IPv4 fija y direcciones IPv6 puede ayudar a superar algunas limitaciones o dificultades.
 
 :::caution
-Not all existing [VPN providers](/install/providers/vpn/) meet these conditions, make sure the one you choose meets them.
+No todos los proveedores de [VPN existentes](/install/providers/vpn/) cumplen estos requisitos, asegúrese de que el que elija los cumpla.
 :::
 
-## Advantages
+## Ventajas
 
 ### Plug & Play
 
-By setting up a VPN on your server, you'll be able to make it accessible to the rest of the Internet without having to change the configuration of the router you connect it to. This can be really handy if you are going on vacation, moving or have an Internet disconnection, as you will be able to easily connect it to someone you trust without having to configure the router of the person who is helping you.
+Configurando una VPN en tu servidor, podrás hacerlo accesible al resto de Internet sin tener que cambiar la configuración del router al que lo conectas. Esto puede ser realmente útil si te vas de vacaciones, te mudas de casa o si tienes un corte de Internet, porque podrás conectarlo fácilmente a una persona de confianza sin tener que configurar el router de la persona que te ayuda.
 
-In the same way, you save yourself the trouble of opening your router's ports and bypassing hairpinning.
+De la misma manera, te ahorrarás abrir los puertos de tu router, así como evitar el hairpinning.
 
-### No micro DNS outages
+### Sin microcortes DNS
 
-If your Internet connection does not have a fixed public IP, you will be forced to set up a dynamic domain name (Dynamic DNS). This solution may be acceptable, but the DNS will only be updated at regular intervals (every two minutes if it is a `noho.st` or `nohost.me` domain name). So there is a chance that this will cause some display errors in the browser from time to time, or even that another site will be displayed (the risks are however reduced because the practice of self-hosting is not widespread).
+Si su conexión a Internet no tiene una IP pública fija, se verá obligado a configurar un nombre de dominio dinámico (DNS dinámico). Esto puede ser aceptable, pero el DNS sólo se actualizará a intervalos regulares (cada dos minutos si es un nombre de dominio noho.st o nohost.me). Por lo tanto, existe la posibilidad de que ocasionalmente se produzcan errores de visualización en el navegador, o incluso que se muestre otro sitio (los riesgos se reducen, sin embargo, porque la práctica del autoalojamiento no está muy extendida).
 
-With a neutral VPN, this problem is circumvented because the VPN can be compared to a Virtual Internet connection, which has its own fixed IPv4 address, so no need to update the domain name.
+Con una VPN neutra, este problema se sortea porque la VPN puede compararse con una Conexión Virtual a Internet, que tiene su propia dirección IPv4 fija, por lo que no es necesario actualizar el nombre de dominio.
 
-### The case of email
+### El caso del correo electrónico
 
-Email is one of the most complex protocols to self-host, usually it is what a user self-hosts last. Indeed, it is very easy to find yourself in a situation where emails sent by the server are refused by the recipient SMTP servers.
+El correo es uno de los protocolos más complejos de autoalojar, normalmente es lo último que autoaloja un usuario. De hecho, es muy fácil encontrarse en una situación en la que los correos electrónicos enviados por el servidor son rechazados por los servidores SMTP de los destinatarios.
 
-To avoid this you need to:
+Para evitarlo, necesitas, entre otras cosas:
 
-- configure the reverse DNS of the server's Internet connection (or VPN)
-- a fixed IPv4
-- that this IPv4 is removable from all blacklists (notably the IP must not be on the DUL)
-- to be able to open port 25 (as well as the other SMTP ports)
+- configurar el DNS inverso de la conexión a Internet del servidor (o VPN)
+- una IPv4 fija
+- que esta IPv4 sea eliminada de todas las listas negras (en particular, la IP no debe estar en el DUL)
+- poder abrir el puerto 25 (así como otros puertos SMTP)
 
-Unfortunately, none of the most common French ISPs respect all these points.
+Desgraciadamente, ninguno de los ISP franceses más habituales respeta todos estos puntos.
 
-To overcome this, the use of a VPN respecting these points can be an alternative.
+Para superar esto, el uso de una VPN que respete estos puntos puede ser una alternativa.
 
-### Trust
+### Confianza
 
-Finally, if you do not want the content of your server's communications to be spied on by equipment present on your ISP's network, you can use a VPN to encrypt your communications and deport your trust to a VPN provider. Remember, since 2015, the government officially deploys black boxes at the large network operators whose objective is to tap all French digital communications to preserve the scientific, economic and industrial interests of France.
+Por último, si no quiere que el contenido de las comunicaciones de su servidor sea espiable por los equipos presentes en la red de su proveedor de servicios de Internet, puede utilizar una VPN para cifrar sus comunicaciones y deportar su confianza a un proveedor de VPN. A modo de recordatorio, desde 2015, el gobierno despliega oficialmente cajas negras en los principales operadores de red cuyo objetivo es espiar todas las comunicaciones digitales francesas para, entre otras cosas, preservar los intereses científicos, económicos e industriales de Francia.
 
-## Disadvantages
+## Desvenjajas
 
-### Cost
+### Coste
 
-A neutral VPN has a cost since the operator who provides it must run a server and use bandwidth. The prices of the FFDN's associative VPNs are around 6 € per month.
+Una VPN neutra tiene un coste, ya que el operador que la proporciona debe gestionar un servidor y utilizar el ancho de banda. Los precios de las VPN asociadas a FFDN rondan los 6 euros al mes.
 
-### Packet path
+### Enrutamiento de paquetes
 
-When you set up a VPN on your server, if you don't set up any particular configuration, the transfer of a file from a computer on the local network to the server using the VPN, will go through the end of the VPN i.e. through the server of the VPN provider.
+Cuando se establece una VPN en el servidor, si no se establece una configuración particular, la transferencia de un archivo desde un ordenador de la red local al servidor que utiliza la VPN, pasará por el extremo de la VPN, es decir, por el servidor del proveedor de la VPN.
 
-To solve this problem, there are two solutions:
+Para superar este punto, hay dos soluciones:
 
-- transform the server into a router and connect the home equipments to it, these equipments will then benefit from the VPN confidentiality too.
-- use the YunoHost server as a DNS resolver when you are at home, in order to redirect the server's domain names to the local IP rather than the public IP. This operation can be done either on each equipment or on the router (if the latter allows it).
+- transformando su servidor en un router y conectando su equipo doméstico a él, este equipo se beneficiará también de la confidencialidad de la VPN.
+- utilizar el servidor de YunoHost como resolvedor de DNS cuando estés en casa, para redirigir los nombres de dominio del servidor a la ip local en lugar de la ip pública. Esta operación puede realizarse en cada dispositivo o en el router (si éste lo permite).
