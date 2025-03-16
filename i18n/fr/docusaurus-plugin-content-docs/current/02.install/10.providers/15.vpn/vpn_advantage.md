@@ -1,58 +1,58 @@
 ---
-sidebar_label: Advantages
-title: Advantage of a VPN for self-hosting
+sidebar_label: Avantages
+title: Avantages d’un VPN pour l’auto-hébergement
 ---
 
-Since setting up a server at home is an uncommon practice, most Internet connections provided to individuals are unsuitable for this purpose. A net neutral VPN providing a static IPv4 address and IPv6 addresses can help to circumvent some limitations or difficulties.
+L'installation d'un serveur chez soi étant une pratique peu courante, la plupart des connexions Internet fournies aux particuliers sont inadaptées à sa mise en pratique. Un VPN respectant la neutralité du net et fournissant une adresse IPv4 fixe et des adresses IPv6 peut permettre de contourner certaines limitations ou certaines difficultés.
 
 :::caution
-Not all existing [VPN providers](/install/providers/vpn/) meet these conditions, make sure the one you choose meets them.
+Tous les [fournisseurs VPN](/install/providers/vpn/) existants ne remplissent pas ces conditions, assurez-vous bien que celui que vous choisissez les remplit.
 :::
 
-## Advantages
+## Avantages
 
 ### Plug & Play
 
-By setting up a VPN on your server, you'll be able to make it accessible to the rest of the Internet without having to change the configuration of the router you connect it to. This can be really handy if you are going on vacation, moving or have an Internet disconnection, as you will be able to easily connect it to someone you trust without having to configure the router of the person who is helping you.
+En configurant un VPN sur votre serveur, vous serez en mesure de le rendre accessible au reste d'Internet sans avoir à modifier la configuration du routeur auquel vous le branchez. Ce point peut être vraiment pratique si vous partez en vacances, que vous déménagez ou si vous avez une coupure d'Internet, car vous serez en mesure de le brancher facilement chez une personne de confiance sans avoir besoin de configurer le routeur de la personne qui vous aide.
 
-In the same way, you save yourself the trouble of opening your router's ports and bypassing hairpinning.
+De la même façon, vous vous économisez l'ouverture des ports de votre routeur ainsi que le contournement du hairpinning.
 
-### No micro DNS outages
+### Pas de micro-coupure DNS
 
-If your Internet connection does not have a fixed public IP, you will be forced to set up a dynamic domain name (Dynamic DNS). This solution may be acceptable, but the DNS will only be updated at regular intervals (every two minutes if it is a `noho.st` or `nohost.me` domain name). So there is a chance that this will cause some display errors in the browser from time to time, or even that another site will be displayed (the risks are however reduced because the practice of self-hosting is not widespread).
+Si votre connexion Internet n'a pas d'IP publique fixe, vous serez obligé de mettre en place un nom de domaine dynamique (Dynamique DNS). Cette solution peut être acceptable, mais la mise à jour du DNS ne se fera qu'à intervalle régulier (Toutes les deux minutes si c'est un nom de domaine en `noho.st` ou `nohost.me`). Il y a donc une chance que cela provoque de temps en temps des erreurs d'affichage dans le navigateur, voir même qu'un autre site s'affiche (les risques sont toutefois réduits car la pratique de l'auto-hébergement n'est pas répandue).
 
-With a neutral VPN, this problem is circumvented because the VPN can be compared to a Virtual Internet connection, which has its own fixed IPv4 address, so no need to update the domain name.
+Avec un VPN neutre, ce problème est contourné car le VPN peut être comparé à une connexion Internet Virtuelle, qui a sa propre adresse IPv4 fixe, dès lors plus besoin de mettre à jour le nom de domaine.
 
-### The case of email
+### Le cas du mail
 
-Email is one of the most complex protocols to self-host, usually it is what a user self-hosts last. Indeed, it is very easy to find yourself in a situation where emails sent by the server are refused by the recipient SMTP servers.
+Le mail est un des protocoles les plus complexes à auto-héberger, en général c'est ce qu'un utilisateur auto-héberge en dernier. En effet, il est très facile de se retrouver dans une situation où les emails envoyés par le serveur sont refusés par les serveurs SMTP destinataires.
 
-To avoid this you need to:
+Pour éviter ça il faut entre autre :
 
-- configure the reverse DNS of the server's Internet connection (or VPN)
-- a fixed IPv4
-- that this IPv4 is removable from all blacklists (notably the IP must not be on the DUL)
-- to be able to open port 25 (as well as the other SMTP ports)
+- configurer le reverse DNS de la connexion Internet (ou du VPN) du serveur
+- une IPv4 fixe
+- que cette IPv4 soit enlevable de toutes les listes noires (notamment l'IP ne doit pas être sur le DUL)
+- pouvoir ouvrir le port 25 (ainsi que les autres ports SMTP)
 
-Unfortunately, none of the most common French ISPs respect all these points.
+Malheureusement, aucun des FAI français les plus courants ne respecte la totalité de ces points.
 
-To overcome this, the use of a VPN respecting these points can be an alternative.
+Pour pallier cela, l'usage d'un VPN respectant ces points peut être une alternative.
 
-### Trust
+### Confiance
 
-Finally, if you do not want the content of your server's communications to be spied on by equipment present on your ISP's network, you can use a VPN to encrypt your communications and deport your trust to a VPN provider. Remember, since 2015, the government officially deploys black boxes at the large network operators whose objective is to tap all French digital communications to preserve the scientific, economic and industrial interests of France.
+Enfin, si vous ne souhaitez pas que le contenu des communications de votre serveur soit espionnable par des équipements présents sur le réseau de votre fournisseur d'accès à Internet, vous pouvez utiliser un VPN pour chiffrer vos communications et déporter votre confiance sur un fournisseur de VPN. Rappel, depuis 2015, le gouvernement déploie officiellement des boîtes noires chez les gros opérateurs réseau qui ont pour objectif de mettre sur écoute l'ensemble des communications numériques françaises entre autre pour préserver les intérêts scientifiques, économiques et industrielles de la France.
 
-## Disadvantages
+## Inconvénient
 
-### Cost
+### Coût
 
-A neutral VPN has a cost since the operator who provides it must run a server and use bandwidth. The prices of the FFDN's associative VPNs are around 6 € per month.
+Un VPN neutre a un coût puisque l'opérateur qui le fournit doit faire fonctionner un serveur et utiliser de la bande passante. Les prix des VPN associatifs de la FFDN sont autour de 6 € par mois.
 
-### Packet path
+### Trajet des paquets
 
-When you set up a VPN on your server, if you don't set up any particular configuration, the transfer of a file from a computer on the local network to the server using the VPN, will go through the end of the VPN i.e. through the server of the VPN provider.
+Lorsque l'on met en place un VPN sur son serveur, si on ne met pas en place de configuration particulière, le transfert d'un fichier d'un ordinateur du réseau local vers le serveur utilisant le VPN, passera par le bout du VPN c'est-à-dire par le serveur du fournisseur de VPN.
 
-To solve this problem, there are two solutions:
+Pour pallier ce point, il y a deux solutions :
 
-- transform the server into a router and connect the home equipments to it, these equipments will then benefit from the VPN confidentiality too.
-- use the YunoHost server as a DNS resolver when you are at home, in order to redirect the server's domain names to the local IP rather than the public IP. This operation can be done either on each equipment or on the router (if the latter allows it).
+- transformer son serveur en routeur et connecter les équipements de la maison à ce dernier, ces équipements bénéficieront alors de la confidentialité du VPN également.
+- utiliser le serveur YunoHost comme résolveur DNS lorsque l'on est chez soi, de façon à rediriger les noms de domaines du serveur l'IP locale plutôt que l'IP publique. Cette opération peut se faire soit sur chaque équipement, soit sur le routeur (si ce dernier le permet).
