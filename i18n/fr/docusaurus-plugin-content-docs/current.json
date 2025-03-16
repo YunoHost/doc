@@ -162,5 +162,13 @@
   "sidebar.docsSidebar.link.Forum": {
     "message": "Forum",
     "description": "The label for link Forum in sidebar docsSidebar, linking to https://forum.yunohost.org"
+  },
+  "sidebar.docsSidebar.category.Fournisseurs VPN": {
+    "message": "Fournisseurs VPN",
+    "description": "The label for category Fournisseurs VPN in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Install on...": {
+    "message": "Install on...",
+    "description": "The label for category Install on... in sidebar docsSidebar"
   }
 }
