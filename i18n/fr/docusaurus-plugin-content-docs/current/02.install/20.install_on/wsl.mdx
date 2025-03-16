@@ -1,0 +1,150 @@
+---
+title: On WSL
+description: Experimental, for testing purposes
+# pagination_next: administration-guide/initial-setup/index
+sidebar_position: 6
+sidebar_custom_props:
+  doc_card_image: /img/wsl.png
+---
+
+import Figure from '@site/src/components/Figures';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+:::danger
+This setup is mainly meant for local testing by advanced users. Due to limitations on WSL's side (changing IP address, notably), selfhosting from it can be tricky and will not be described here.
+:::
+
+## <FAIcon icon="fa-list-alt"/> Pre-requisites
+
+- Windows 10 and above
+- Administration rights
+- Windows Subsystem for Linux, installed from the Optional Features menu of Windows
+- *Recommended:* Windows Terminal (Preview) app, installed from the Microsoft Store. Much better than the standard Terminal, as it offers shortcuts to the WSL distros.
+- A computer or a smartphone to read this guide and access your server.
+
+## Introduction
+
+WSL is a nice feature of Windows 10, making Linux pseudo-distributions available through command line. Let's say pseudo, because even though they are not really like virtual machines, they rely on virtualization capacities that make their integration with Windows almost seamless.
+Docker for Windows can now rely on WSL instead of Hyper-V, for example.
+
+:::warning
+Bear in mind, this setup itself is *not* a container of any kind. If something breaks, there is no rollback capability.  
+You may need to delete the Debian distro altogether and restore it whole.
+:::
+
+## Install Debian 12
+
+Let's install YunoHost into its own distro, not altering the default one. In a PowerShell terminal:
+
+```bash
+# Let's go in your home directory and prepare the working directories
+cd ~
+mkdir -p WSL\YunoHost
+# Download the Debian appx package and unzip it
+curl.exe -L -o debian.zip https://aka.ms/wsl-debian-gnulinux
+Expand-Archive .\debian.zip -DestinationPath .\debian
+# Import the Debian base into a new distro
+wsl --import YunoHost ~\WSL\YunoHost ~\debian\install.tar.gz --version 2
+# Cleanup
+rmdir .\debian -R
+```
+
+You can now access it: run `wsl.exe -d YunoHost`
+
+It is under Debian 9 Stretch, so let's upgrade it:
+
+```bash
+# In WSL
+sudo sed -i 's/stretch/bookworm/g' /etc/apt/sources.list`
+sudo apt update
+sudo apt upgrade
+sudo apt dist-upgrade
+```
+
+## Prevent WSL from tweaking configuration files
+
+Edit `/etc/wsl.conf` and put the following code in it:
+
+```text
+[network]
+generateHosts = false
+generateResolvConf = false
+```
+
+## Force the use of iptables-legacy
+
+Somehow the YunoHost post-installation does not like `nf_tables`, the new software replacing `iptables`.
+We can still explicitely use the good ol' `iptables` though:
+
+```bash
+# In WSL
+sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
+sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy
+```
+
+## Install Systemd
+
+Debian on WSL does not have `systemd`, a service configuration software.
+This is a key element for YunoHost, and for any decent Debian distro (seriously MS, what the heck). Let's install it:
+
+1. Install dotNET runtime:
+
+    ```bash
+    # In WSL
+    wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+    sudo dpkg -i packages-microsoft-prod.deb
+    sudo apt update
+    sudo apt install -y apt-transport-https
+    sudo apt update
+    sudo apt install -y dotnet-sdk-3.1
+    ```
+
+2. Install [Genie](https://github.com/arkane-systems/genie):
+
+    ```bash
+    # In WSL
+    # Add their repository
+    echo "deb [trusted=yes] https://wsl-translinux.arkane-systems.net/apt/ /" > /etc/apt/sources.list.d/wsl-translinux.list
+    # Install Genie
+    sudo apt update
+    sudo apt install -y systemd-genie
+    ```
+
+## Install YunoHost
+
+```bash
+# In WSL
+# Let's switch to the root user, if you were not already
+sudo su
+# Initialize the Genie bottle to have systemd running
+genie -s
+# Your hostname should have been appended with "-wsl"
+# Install YunoHost
+curl https://install.yunohost.org | bash -s -- -a
+```
+
+### Access the command line
+
+Always call `genie -s` while starting your distro.
+
+`wsl -d YunoHost -e genie -s`
+
+## Backup and restore the distro
+
+### Make your first distro backup
+
+As said before, there is no rollback capability. So let's export your fresh distro. In PowerShell:
+
+```bash
+cd ~
+wsl --export YunoHost .\WSL\YunoHost.tar.gz
+```
+
+### In case of crash, delete and restore the whole distro
+
+```bash
+cd ~
+wsl --unregister YunoHost
+wsl --import YunoHost .\WSL\YunoHost .\WSL\YunoHost.tar.gz --version 2
+```
