@@ -1,40 +1,40 @@
 ---
-title: DNS zone configuration
+title: Конфигурация зоны DNS
 ---
 
-DNS (domain name system) is a system that converts human-readable addresses
-(domain names) into machine-understandable addresses (IP). For your server to be
-easily accessible by human beings, and for some services like mail to work
-properly, DNS must be configured.
+DNS (система доменных имен) - это система, которая преобразует удобочитаемые адреса
+(доменные имена) в адреса, понятные машине (IP). Чтобы ваш сервер был
+легко доступен людям, а некоторые службы, такие как почта, работали
+должным образом, необходимо настроить DNS.
 
-If you're using an [automatic domain](/administer/tutorials/domains/dns_nohost_me) provided by the YunoHost Project, the configuration should be
-performed automatically. If you're using your own domain name (e.g. bought via
-a registrar), you should manually configure your domain on your registrar's
-interface.
+Если вы используете [автоматический домен](/administer/tutorials/domains/dns_nohost_me), предоставляемый проектом YunoHost, настройка должна
+выполняться автоматически. Если вы используете свое собственное доменное имя (например, купленное через
+регистратора), вам следует вручную настроить свой домен в
+интерфейсе вашего регистратора.
 
-## Recommended DNS configuration
+## Рекомендуемая конфигурация DNS
 
-NB: Examples here use the placeholder `your.domain.tld`, you have to replace it with your real domain, such as `www.yunohost.org`.
+ПРИМЕЧАНИЕ: В примерах здесь используется заполнитель `your.domain.tld`, вы должны заменить его своим реальным доменом, например `www.yunohost.org`.
 
-YunoHost provides a recommended DNS configuration, available via:
+YunoHost предоставляет рекомендуемую конфигурацию DNS, доступную через:
 
-- the webadmin, in Domain > your.domain.tld > DNS configuration;
-- or the command line, `yunohost domain dns-conf your.domain.tld`
+- веб-администратор, Домены > `your.domain.tld` > DNS;
+- или в командной строке: `yunohost domain dns-conf your.domain.tld`
 
-For specific needs or specific setups, and if you know what you're doing, you
-might want or have to tweak these, or add additional ones (e.g. to handle
-subdomains).
+Для конкретных нужд или конкретных настроек, и если вы знаете, что делаете, вы
+можете захотеть или быть вынуждены изменить их или добавить дополнительные (например, для обработки
+поддоменов).
 
-The recommended configuration typically looks like this:
+Рекомендуемая конфигурация обычно выглядит следующим образом:
 
 ```bash
 #
-# Basic ipv4/ipv6 records
+# Базовые ipv4/ipv6 записи
 #
 @ 3600 IN A 111.222.33.44
 * 3600 IN A 111.222.33.44
 
-# (If your server is IPv6 capable, there are some AAAA records)
+# (Если ваш сервер поддерживает IPv6, есть несколько записей AAAA)
 @ 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
 * 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
 
@@ -49,7 +49,7 @@ vjud 3600 IN CNAME @
 xmpp-upload 3600 IN CNAME @
 
 #
-# Mail (MX, SPF, DKIM and DMARC)
+# Почтовые (MX, SPF, DKIM and DMARC)
 #
 @ 3600 IN MX 10 your.domain.tld.
 @ 3600 IN TXT "v=spf1 a mx -all"
@@ -57,55 +57,55 @@ mail._domainkey 3600 IN TXT "v=DKIM1; k=rsa; p=someHuuuuuuugeKey"
 _dmarc 3600 IN TXT "v=DMARC1; p=none"
 ```
 
-Though it might be easier to understand it if displayed like this:
+Хотя, возможно, было бы легче понять это, если бы оно отображалось следующим образом:
 
-| Type    | Name                   | Value                                                 |
+| Тип    | Название                   | Значение                                                 |
 | :-----: | :--------------------: | :--------------------------------------------------:  |
-|  **A**  |   **@**                |  `111.222.333.444` (your IPv4)                        |
-|    A    |   *                    |  `111.222.333.444` (your IPv4)                        |
-|  AAAA   |   @                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (your IPv6) |
-|  AAAA   |   *                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (your IPv6) |
+|  **A**  |   **@**                |  `111.222.333.444` (ваш IPv4)                        |
+|    A    |   *                    |  `111.222.333.444` (ваш IPv4)                        |
+|  AAAA   |   @                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (ваш IPv6) |
+|  AAAA   |   *                    |  `2222:444:8888:3333:bbbb:5555:3333:1111` (ваш IPv6) |
 | **SRV** | **_xmpp-client._tcp**  |  `0 5 5222 your.domain.tld.`                          |
 | **SRV** | **_xmpp-server._tcp**  |  `0 5 5269 your.domain.tld.`                          |
 |  CNAME  |   muc                  |  `@`                                                  |
 |  CNAME  |   pubsub               |  `@`                                                  |
 |  CNAME  |   vjud                 |  `@`                                                  |
 |  CNAME  |   xmpp-upload          |  `@`                                                  |
-| **MX**  | **@**                  |  `your.domain.tld.`     (and priority: 10)            |
+| **MX**  | **@**                  |  `your.domain.tld.`     (с приоритетом: 10)            |
 |   TXT   |   @                    |  `"v=spf1 a mx -all"`               |
 |   TXT   |  mail._domainkey       |  `"v=DKIM1; k=rsa; p=someHuuuuuuugeKey"`              |
 |   TXT   |  _dmarc                |  `"v=DMARC1; p=none"`                                 |
 
-### A few notes about this table
+### Несколько замечаний по поводу этой таблицы
 
-- Not all these lines are absolutely necessary. For a minimal setup, you only need the records in bold.
-- The dot at the end of `your.domain.tld.` is important ;);
-- `@` corresponds to `your.domain.tld`, and e.g. `muc` corresponds to `muc.your.domain.tld`;
-- These are example values ! See your generated conf for the actual values you should use;
-- We recommend a [TTL](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) of 3600 (1 hour). But you can use something else if you know what you're doing;
-- Don't put an IPv6 record if you're not sure IPv6 really works on your server! You might have issues with Let's Encrypt if it doesn't.
-- If you're using the domain provider Namecheap the SRV DNS entries are formatted as **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `your.domain.tld`
+- Не все эти строки абсолютно необходимы. Для минимальной настройки вам понадобятся только записи, выделенные жирным шрифтом.
+- Точка в конце `ваш.домен.tld.` важна ;);
+- `@` соответствует `your.domain.tld`, и, например, `muc` соответствует `muc.your.domain.tld`;
+- Это примерные значения! Смотрите сгенерированный вами conf для получения фактических значений, которые вы должны использовать;
+- Мы рекомендуем использовать [TTL](https://en.wikipedia.org/wiki/Time_to_live#DNS_records ) 3600 (1 час). Но вы можете использовать что-то еще, если знаете, что делаете;
+- Не размещайте запись IPv6, если вы не уверены, что IPv6 действительно работает на вашем сервере! У вас могут возникнуть проблемы с Let's Encrypt, если это не так.
+- Если вы используете Namecheap поставщика домена, записи SRV DNS форматируются как **Сервис**: `_xmpp-client` **Протокол**: `_tcp` **Приоритет**: `0` **Вес**: `5` **Порт**: `5222` **Цель**: `your.domain.tld`
 
-### Reverse DNS
+### Обратный DNS
 
-If your ISP or VPS provider let you define a [Reverse DNS
-lookup](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) for your public IPv4
-and/or IPv6 addresses, you must configure it. It will prevent you to be marked as
-spam by anti-spam filters.
+Если ваш интернет-провайдер или VPS-провайдер позволяет вам определить [обратный
+поиск DNS](https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80_DNS) для ваших общедоступных IPv4
+и/или IPv6-адресов вы должны настроить его. Это предотвратит пометку вас
+антиспам-фильтрами как нежелательные письма.
 
-**N.B.: the reverse DNS configuration happens on your Internet Service Provider or VPS provider. It is *not* handled by your domain's registrar.**
+**Примечание: обратная настройка DNS выполняется у вашего интернет-провайдера или VPS-провайдера. Это *не* обрабатывается регистратором вашего домена.**
 
-If your public IPv4 address is `111.222.333.444` and your DNS
-domain is `domain.tld`, you should get following answer when using `nslookup`
-command tool:
+Если ваш общедоступный IPv4-адрес `111.222.333.444`, а ваш DNS
+-домен - `domain.tld`, вы должны получить следующий ответ при использовании
+командной строки `nslookup`:
 
 ```bash
 nslookup 111.222.333.444
 444.333.222.111.in-addr.arpa    name = domain.tld.
 ```
 
-The diagnosis system available in the webadmin performs this checks automatically (in section Email).
+Система диагностики, доступная в webadmin, выполняет эту проверку автоматически (в разделе Электронная почта).
 
-### Dynamic IP
+### Динамический IP-адрес
 
-If your global IP address is constantly changing, follow this [tutorial](/administer/tutorials/domains/dns_dynamicip).
+Если ваш глобальный IP-адрес постоянно меняется, следуйте этому [руководству](/administer/tutorials/domains/dns_dynamicip).
