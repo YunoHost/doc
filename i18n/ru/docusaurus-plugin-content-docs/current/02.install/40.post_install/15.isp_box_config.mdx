@@ -4,54 +4,53 @@ title: Configure port-forwarding
 
 import Figure from '@site/src/components/Figures';
 
-If you are self-hosting at home and without a VPN, you need to forward ports on your home router ("Internet box"). The sketch below tries to briefly summarize the role and necessity of port forwarding when setting up a server at home.
+Если вы самостоятельно размещаетесь дома и у вас нет VPN, вам необходимо перенаправить порты на вашем домашнем маршрутизаторе. В приведенном ниже наброске предпринята попытка кратко описать роль и необходимость переадресации портов при настройке сервера дома.
 
 <Figure caption="Illustration of the importance of port-forwarding" src="/img/portForwarding_en.png" />
 
-### 0. Diagnose ports opened
+### 0. Диагностировать открытые порты
 
-The new diagnosis tool introduced in 3.8 can be used to diagnose that ports are
-correctly exposed.
+Новый инструмент диагностики, представленный в версии 3.8, можно использовать для диагностики правильности открытия портов.
 
-### 1. Access your box/router administration interface
+### 1. Получите доступ к интерфейсу администрирования вашего маршрутизатора
 
-Your box/router admin interface is usually reachable via [http://192.168.0.1](http://192.168.0.1) or [http://192.168.1.1](http://192.168.1.1). Then, you will probably need to authenticate yourself the credentials given by your internet server provider.
+Интерфейс администратора вашего маршрутизатора обычно доступен через [http://192.168.0.1](http://192.168.0.1) или [http://192.168.1.1](http://192.168.1.1). Затем вам, вероятно, потребуется ввести логин и пароль к панели роутера, предоставленных вашим провайдером. (P.S. возможно данные указаны на задней стороне роутера)
 
-### 2. Find the local IP of your server
+### 2. Найдите локальный IP-адрес вашего сервера
 
-Identify the *local* IP of your server, either:
+Определите, каков *локальный* IP вашего сервера, либо :
 
-- from your box/router interface, which might list devices connected
-- from the YunoHost webadmin, in 'Diagnosis', section 'Internet connectivity', click on 'Details' on the IPv4 report.
-- from the command line in your server, by running `hostname -I`
+- из вашего интерфейса box / router, в котором может быть список подключенных устройств
+- в веб-администраторе YunoHost, в разделе "Диагностика", "Подключение к Интернету", нажмите "Подробности" в отчете IPv4.
+- из командной строки на вашем сервере, запустив `hostname -I`
 
-A local IP address typically looks like `192.168.xx.yy`, or `10.0.xx.yy`.
+Локальный IP-адрес обычно выглядит как `192.168.xx.yy` или `10.0.xx.yy`
 
-The local IP address needs to be static, so that the port forwards that you are going to configure in the next step will always reach your server. You should go into your box/router and make sure that the local IP address of your server is static instead of dynamic.
+Локальный IP-адрес должен быть статичным, чтобы переадресация портов, которую вы собираетесь настроить на следующем шаге, всегда достигала вашего сервера. Вы должны зайти в свой маршрутизатор и убедиться, что локальный IP-адрес вашего сервера является статическим, а не динамическим.
 
-### 3. Forwarding ports
+### 3. Переадресация портов
 
-In your router admin interface, look for something like 'router configuration' or 'port forwarding'. The naming differs among the various kinds of boxes.
+В интерфейсе администратора вашего маршрутизатора найдите что-то вроде "конфигурация маршрутизатора" или "переадресация портов". Названия различных типов коробок различаются.
 
-Opening the ports listed below is necessary for the various services available in YunoHost to work. For each of them, the 'TCP' forwarding is needed. Some interfaces refer to 'external' and 'internal' ports: these are the same in our case.
+Открытие перечисленных ниже портов необходимо для работы различных сервисов, доступных в YunoHost. Для каждого из них необходима переадресация "TCP". Некоторые интерфейсы относятся к "внешним" и "внутренним" портам: в нашем случае это одно и то же.
 
-- Web: `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>
-- [SSH](/administer/admin_guide/command_line): `22`
-- [XMPP](https://wikipedia.org/wiki/XMPP): `5222` <small>(clients)</small>, `5269` <small>(servers)</small>
-- [Email](/administer/admin_guide/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>
+- Веб: 80 <small>(HTTP)</small>, 443 <small>(HTTPS)</small>
+- [SSH](/administer/admin_guide/command_line): 22
+- [XMPP](https://wikipedia.org/wiki/XMPP): 5222 <small>(клиенты)</small>, 5269 <small>(серверы)</small>
+- [Почтовые](/administer/admin_guide/email): 25, 587 <small>(SMTP)</small>, 993 <small>(IMAP)</small>
 
-If you use both a modem and a router, then you need to do the following:
+Если вы используете и модем, и маршрутизатор, то вам необходимо выполнить следующее:
 
-1. first on the modem (the box closest to the internet) create rules to forward the above ports to your router;
-2. then on the router (the box between the modem and your devices) create rules to forward the above ports to the static IP address for your server.
+1. сначала на модеме (поле, расположенном ближе всего к Интернету) создайте правила для перенаправления вышеуказанных портов на ваш маршрутизатор;
+2. затем на маршрутизаторе (поле между модемом и вашими устройствами) создайте правила для пересылки вышеуказанных портов на статический IP-адрес вашего сервера.
 
 :::warning
-<FAIcon icon="fa-exclamation-triangle"/> Some internet service providers block port 25 (mail SMTP) by default to fight spam. Some other ISP don't allow to use port 80/443 (web) freely, though it's less likely. Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/install/providers/isp/) for more info.
+<FAIcon icon="fa-exclamation-triangle"/> Некоторые интернет-провайдеры по умолчанию блокируют порт 25 (почтовый SMTP) для борьбы со спамом. Некоторые другие интернет-провайдеры не позволяют свободно использовать порт 80/443 (веб), хотя это менее вероятно. В зависимости от провайдера, возможно, удастся открыть их в интерфейсе администратора... Проверьте [this page](/install/providers/isp/) для получения дополнительной информации.
 :::
 
-## Automatic port forwarding / UPnP
+## Автоматическая переадресация портов / UPnP
 
-A technology called UPnP is available on some internet boxes / routers and allows to automatically forward ports by the machine who needs them. If UPnP is enabled in your local network, then running this command should automatically open the port for you:
+Технология, называемая UPnP, доступна на некоторых интернет-блоках / маршрутизаторах и позволяет автоматически перенаправлять порты тому компьютеру, который в них нуждается. Если UPnP включен в вашей локальной сети, то выполнение этой команды должно автоматически открыть порт для вас :
 
 ```bash
 sudo yunohost firewall reload
