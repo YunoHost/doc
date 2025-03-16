@@ -4,16 +4,16 @@ link:
   description: The guys that provide the domain name
 ---
 
-Since version 4.3, YunoHost includes a mechanism to interface your server with your DNS registrar API, with the purpose of simplifying and automatizing DNS records registration and maintenance.
+Dalla versione 4.3 YunoHost include un meccanismo per interfacciare il vostro server con le API del vostro registrar del DNS di modo da rendere più semplice ed automatica la registrazione e la manutenzione dei record DNS.
 
-The procedure requires an initial configuration where you need to generate an API key on your registrar's interface.
+La procedura richiede una configurazione iniziale che richiede di generare una chiave API dall'interfaccia del vostro registrar.
 
-Not all registrars are supported. So far, the community tested and validated the interface with [Gandi](https://gandi.net) and [OVH](https://ovh.com), which are recommended. The interface with other registrars may work, but is still considered experimental until we gather feedback from the community.
+Non sono supportati tutti i registrar. Fino ad ora la comunità ha testato e validato l'interfaccia con [Gandi](https://gandi.net) e [OVH](https://ovh.com), che sono i registrar raccomandati. L'interfaccia con altri potrebbe funzionare ma è ancora considerata sperimentale fino a quando non avremo raccolto sufficiente feedback dalla comunità.
 
-The list below can help you to choose a registrar if you plan to buy a domain name to use it with YunoHost.
+Questa lista può aiutarti a scegliere un registrar se conti di acquistare un nome a dominio da usare con YunoHost.
 
-| Registrar                           | Compatibility               | Easy to obtain an API key | Howto |
-|-------------------------------------|-----------------------------|---------------------------|-------|
-| [Gandi](https://www.gandi.net)      | ✘ (broken)                  | ✘   | [Obtain an API key](/install/providers/registrar/gandi) <br/> [See bug here](https://github.com/YunoHost/issues/issues/2419) |
-| [OVH](https://ovh.com/domaines)     | ✔ (tested)                  | ✘   | [Obtain an API key](/install/providers/registrar/ovh/autodns) <br/> [Configure manually](/install/providers/registrar/ovh/manualdns) |
-| [Namecheap](https://namecheap.com)  | ✘ (in lexicon but untested) | ✘✘✘ API not available without 50$ on the account | [Obtain an API key](/install/providers/registrar/namecheap) |
+| Registrar | Compatibilità | Facilità per ottenere una chiave API | Howto |
+| --------- | ------------- | ------------------ |
+| [Gandi](https://www.gandi.net)     | ✔ (testato)    | ✔ |  [Obtain an API key](/providers/registrar/gandi/autodns)                |
+| [OVH](https://www.ovh.com/domaines/)       | ✔ (testato)    | ✘ | [Obtain an API key](/providers/registrar/ovh/autodns) <br> [Configure manually](/providers/registrar/ovh/manualdns) |
+| [Namecheap](https://www.namecheap.com/) | ✘ (in lexicon ma non testato)    | ✘✘✘ API non disponibile senza 50$ nell'account  | |
