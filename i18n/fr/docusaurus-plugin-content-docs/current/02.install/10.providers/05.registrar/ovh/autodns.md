@@ -5,14 +5,11 @@ title: Obtenir une clef API de OVH
 
 Cette page a pour but de vous guider dans l'obtention d'une clé API auprès d'OVH afin de configurer le mécanisme de configuration automatique des DNS de YunoHost.
 
-
-:::info
-
-**Un attaquant malveillant qui obtiendrait vos jetons pourrait prendre le contrôle de votre domaine, et éventuellement de votre serveur !
+:::caution
+**NE partagez vos cléfs API avec PERSONNE !** Un attaquant malveillant qui obtiendrait vos jetons pourrait prendre le contrôle de votre domaine, et éventuellement de votre serveur !
 :::
 
-
-1. Allez sur [la page de demande de jeton OVH] (https://eu.api.ovh.com/createToken/)
+1. Allez sur [la page de demande de jeton OVH](https://eu.api.ovh.com/createToken/)
 
 
 2. Remplissez le formulaire avec les informations requises comme indiqué ci-dessous :
