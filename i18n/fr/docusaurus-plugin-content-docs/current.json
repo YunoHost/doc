@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "message": "Prochaine version",
 =======
     "message": "Suivant",
@@ -11,6 +12,9 @@
 =======
     "message": "Prochaine version",
 >>>>>>> 645e0dca (fixes from en templates to other languages)
+=======
+    "message": "Prochaine version",
+>>>>>>> a43cf740 (fixes from en templates to other languages)
     "description": "The label for version current"
   },
   "sidebar.docsSidebar.category.Overview": {
