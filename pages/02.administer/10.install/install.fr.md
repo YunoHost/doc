@@ -612,7 +612,7 @@ yunohost domain cert install
 
 ## ![](image://tada.png?resize=32&classes=inline) Félicitations !
 
-Vous avez maintenant un serveur plutôt bien configuré. Si vous découvrez YunoHost, nous vous recommandons de jeter un œil à [la visite guidée](/overview). Vous devriez aussi être en mesure d'[installer vos applications favorites](https://apps.yunohost.org). N'oubliez pas de [prévoir des sauvegardes](/backup) !
+Vous avez maintenant un serveur plutôt bien configuré. Si vous découvrez YunoHost, nous vous recommandons de jeter un œil à [la visite guidée](/category/overview). Vous devriez aussi être en mesure d'[installer vos applications favorites](https://apps.yunohost.org). N'oubliez pas de [prévoir des sauvegardes](/backup) !
 
 {% endif %}
 {% endif %}

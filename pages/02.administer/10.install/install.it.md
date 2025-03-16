@@ -783,7 +783,7 @@ yunohost domain cert install
 
 ## ![](image://tada.png?resize=32&classes=inline) Congratulazioni
 
-Adesso avete un server ben configurato. Se siete alle prime esperienze di YunoHost è consigliabile guardare [il tour guidato](/overview). Dovreste essere in grado di [installare le vostre applicazioni preferite](https://apps.yunohost.org). Non dimenticate di [programmare i backup](/backup)!
+Adesso avete un server ben configurato. Se siete alle prime esperienze di YunoHost è consigliabile guardare [il tour guidato](/category/overview). Dovreste essere in grado di [installare le vostre applicazioni preferite](https://apps.yunohost.org). Non dimenticate di [programmare i backup](/backup)!
 
 {% endif %}
 {% endif %}
