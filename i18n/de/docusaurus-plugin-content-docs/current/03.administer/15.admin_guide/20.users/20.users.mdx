@@ -1,28 +1,28 @@
 ---
-title: Users and the SSO
+title: Benutzer und das SSO
 ---
 
 import Figure from '@site/src/components/Figures';
 
-## Users
+## Benutzer
 
-Users are human being who have access to applications and other services on your server. The administrator can add and manage users through the web administration (in the User category) or through the command line (see `yunohost user --help`). After that, users obtain a personal email address (chosen by the admin), and can log in the user portal to access applications they have permissions over and configure other parameters.
+Benutzer sind Menschen, die Zugang zu Anwendungen und anderen Diensten auf Ihrem Server haben. Der Administrator kann Benutzer über die Webadministration (in der Kategorie Benutzer) oder über die Kommandozeile (siehe `yunohost user --help`) hinzufügen und verwalten. Danach erhalten die Benutzer eine persönliche E-Mail-Adresse (vom Administrator ausgewählt), und können sich im Benutzerportal anmelden, um auf Anwendungen zuzugreifen, für die sie Berechtigungen haben, und andere Parameter zu konfigurieren.
 
-The first user created also automatically gets email aliases `root@main.domain.tld` and `admin@main.domain.tld`, such that mail sent to these addresses will end up in the first user's mailbox.
+Der erste Benutzer, der angelegt wird, erhält auch automatisch die E-Mail-Aliase `root@main.domain.tld` und `admin@main.domain.tld`, so dass E-Mails, die an diese Adressen geschickt werden, im Postfach des ersten Benutzers landen.
 
 :::caution
-You should be careful about who you give your server access to. In terms of security, this largely increase the attack surface for someone who wants to mess with the server one way or another.
+Sie sollten vorsichtig sein, wem Sie Zugang zu Ihrem Server gewähren. Im Hinblick auf die Sicherheit vergrößert sich dadurch die Angriffsfläche für jemanden, der sich auf die eine oder andere Weise am Server zu schaffen machen will.
 :::
 
-## The user portal, or SSO
+## Das Benutzerportal oder SSO
 
 ![User panel screenshot](/img/user_panel.jpg)
-The user portal, also called the SSO for 'Single Sign On' allows user to browse easily between the different apps they have access to. In particular, the term 'Single Sign On' comes from the fact that user only need to log in the portal to automatically be logged to all apps that require authentication (or at least those who are integrated with the SSO/LDAP, since this is sometimes technically complicated or not possible at all).
+Das Benutzerportal, auch SSO für 'Single Sign On' genannt, ermöglicht es den Benutzern, einfach zwischen den verschiedenen Anwendungen, auf die sie Zugriff haben, zu wechseln. Der Begriff "Single Sign On" kommt daher, dass der Benutzer sich nur im Portal anmelden muss, um automatisch bei allen Anwendungen angemeldet zu werden, die eine Authentifizierung erfordern (oder zumindest bei denen, die mit SSO/LDAP integriert sind, da dies manchmal technisch kompliziert oder gar nicht möglich ist).
 
-In the portal, users can also click on the avatar in the top-left to configure some other settings such as their identify, mail aliases, automatic mail forwards, or change their password.
+Im Portal können Benutzer auch auf den Avatar oben links klicken, um einige andere Einstellungen zu konfigurieren, z. B. ihre Identität, E-Mail-Aliase, automatische E-Mail-Weiterleitungen oder ihr Passwort zu ändern.
 
 :::info
-You should be aware that the SSO can only be reached through the actual domain name (i.e. `https://the.domain.tld/yunohost/sso`), and NOT by just using the IP of the server (i.e. `https://11.22.33.44/yunohost/sso`), contrarily to the webadmin ! This is a bit confusing but is necessary for technical reason. If you are in a situation where you need to access the SSO without having your DNS properly configured for some reason, you might consider tweaking your `/etc/hosts` as described in [this page](/administer/tutorials/domains/dns_local_network).
+Sie sollten sich bewusst sein, dass das SSO nur über den tatsächlichen Domänennamen (z.B. `https://the.domain.tld/yunohost/sso`) erreicht werden kann, und NICHT über die IP des Servers (z.B. `https://11.22.33.44/yunohost/sso`), im Gegensatz zum Webadmin! Dies ist ein wenig verwirrend, aber aus technischen Gründen notwendig. Wenn Sie sich in einer Situation befinden, in der Sie auf das SSO zugreifen müssen, ohne dass Ihr DNS richtig konfiguriert ist, könnten Sie in Erwägung ziehen, Ihre `/etc/hosts` wie in [dieser Seite](/administer/tutorials/domains/dns_local_network) beschrieben zu verändern.
 :::
 
 ## Creating new users
@@ -43,6 +43,6 @@ Finalize the user creation by clicking on the `Save` button.
 
 See [this dedicated page](/administer/admin_guide/users/groups_and_permissions).
 
-## SSH access
+## SSH-Zugang
 
-See [this dedicated page](/administer/admin_guide/command_line).
+Siehe [diese spezielle Seite](/administer/admin_guide/command_line).
