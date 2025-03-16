@@ -1,24 +1,24 @@
 ---
 sidebar_label: OVH DNS config via API
-title: Obtaining an API key from OVH
+title: Ottenere una chiave API da OVH
 ---
 
-This page is meant to guide you in obtaining an API key from OVH in order to configure YunoHost's automatic DNS configuration mecanism
+Questa parte ha lo scopo di guidarvi nella procedura necessaria all'ottenimento di una chiave API di OVH, necessaria per impostare la procedura di configurazione automatica dei DNS di YunoHost.
 
 :::info
-**DO NOT share your API tokens with anybody!** A malicious attacker obtaining your tokens could take over your domain, and possibly your server!
+**Non divulgate MAI i vostri token API !** Un attaccante maligno con i vostri token potrebbe prendere il controllo del vostro dominio ed anche eventualmente del vostro server!
 :::
 
-1. Go to [the OVH token request page](https://eu.api.ovh.com/createToken/)
+1. Recatevi su [the OVH token request page](https://eu.api.ovh.com/createToken/)
 
-2. Fill the form with the required informations as shown below:
+2. Compilate il formulario con le informazioni richieste, come nell'esempio seguente:
 
-    - Account ID or email address: This is your usual OVH login
-    - Password: This is your usual OVH password
-    - Script Name: for example `YunoHost Auto DNS`
-    - Script description: for example `YunoHost Auto DNS`
-    - Validity: `Unlimited`
-    - Rights: use the `+` button to add the following lines
+    - ID dell'account o indirizzo mail: il vostro User OVH
+    - Password: la vostra password OVH
+    - Date un nome allo script: es. `YunoHost Auto DNS`
+    - Date una sommaria descrizione: es. `YunoHost Auto DNS`
+    - Validità: `Unlimited`
+    - Rights: utilizzate il pulsante `+` per aggiungere le seguenti linee
       - `GET` : `/domain/zone/*`
       - `POST` : `/domain/zone/*`
       - `PUT` : `/domain/zone/*`
@@ -26,4 +26,4 @@ This page is meant to guide you in obtaining an API key from OVH in order to con
 
     ![](/img/registrar_api_ovh_1.png)
 
-3. You will obtain three tokens (an application key, a secret application key, and a consumer key) which should be used in YunoHost's configuration
+3. Otterrete tre tokens (una chiave segreta, una chiave pubblica, e una chiave consumer) che dovranno essere utilizzate nella configurazione di YunoHost
