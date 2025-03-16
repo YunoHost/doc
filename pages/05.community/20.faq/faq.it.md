@@ -29,7 +29,7 @@ YunoHost è contemporaneamente una distribuzione, cioè una versione di GNU/Linu
 
 Ad esempio, per installare una istanza WordPress manualmente si devono eseguire una serie complessa di comandi per creare gli utenti, installare un server web,  un server SQL, scaricare l'archivio di WordPress, decomprimerlo, configurare il sever web e il server SQL ed infine configurare WordPress. YunoHost effettua tutte queste operazioni al vostro posto, affinché possiate concentrarvi su cose più importanti.
 
-Maggiori informazioni le potete trovare [qui](/whatsyunohost) !
+Maggiori informazioni le potete trovare [qui](/overview/what_is_yunohost) !
 
 #### Posso ospitare un sito internet in YunoHost?
 

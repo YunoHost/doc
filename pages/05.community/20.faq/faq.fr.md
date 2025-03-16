@@ -29,7 +29,7 @@ YunoHost est à la fois une distribution, dans le sens où c'est une version de 
 
 Par exemple, pour installer un WordPress à la main, il vous faudrait taper toute une série de commandes pour créer des utilisateurs, mettre en place un serveur web, mettre en place un serveur SQL, télécharger l’archive de WordPress, la décompresser, configurer le serveur web, configurer la base de données SQL, et finalement configurer WordPress. YunoHost gère toute cette partie technique et « tape les commandes à votre place », pour que vous puissiez vous concentrer sur ce qui compte vraiment.
 
-Plus d’informations sur [cette page](/whatsyunohost) !
+Plus d’informations sur [cette page](/overview/what_is_yunohost) !
 
 #### Puis-je gérer mon propre site web avec YunoHost ?
 

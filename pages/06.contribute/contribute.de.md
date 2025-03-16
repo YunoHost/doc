@@ -23,7 +23,7 @@ YunoHost hängt ausschließlich von der Beteiligung von Leuten wie dir ab.
 [/center]
 
 [center]
-Sprich mit Freunden, Verwandten und bei der Arbeit über Softwarefreiheit, [Selbsthosting](/selfhosting) und YunoHost. Wir verlassen uns auf Evangelisten der Datenfreiheit wie dich. <3
+Sprich mit Freunden, Verwandten und bei der Arbeit über Softwarefreiheit, [Selbsthosting](/overview/self_hosting) und YunoHost. Wir verlassen uns auf Evangelisten der Datenfreiheit wie dich. <3
 [/center]
 [/columns]
 
