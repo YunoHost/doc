@@ -4,54 +4,54 @@ title: Configure port-forwarding
 
 import Figure from '@site/src/components/Figures';
 
-If you are self-hosting at home and without a VPN, you need to forward ports on your home router ("Internet box"). The sketch below tries to briefly summarize the role and necessity of port forwarding when setting up a server at home.
+Wenn Sie zu Hause selbst hosten und kein VPN nutzen, müssen Sie die Ports Ihres Routers umleiten ("Internet box"). Das folgende Schema versucht, die Rolle der Portweiterleitung beim Einrichten eines Servers zu Hause kurz zu erklären.
 
 <Figure caption="Illustration of the importance of port-forwarding" src="/img/portForwarding_en.png" />
+### 0. Offene Ports diagnostizieren
 
-### 0. Diagnose ports opened
+Sobald die Umleitungen konfiguriert sind, können Sie mit dem in YunoHost 3.8 eingeführten Diagnosewerkzeug überprüfen, ob
+die Ports korrekt freigegeben sind.
 
-The new diagnosis tool introduced in 3.8 can be used to diagnose that ports are
-correctly exposed.
+### 1. Auf die Administrationsoberfläche Ihrer Box/Ihres Routers zugreifen
 
-### 1. Access your box/router administration interface
+Ihre Box/Router-Administrationsoberfläche ist in der Regel erreichbar über [http://192.168.0.1](http://192.168.0.1) oder [http://192.168.1.1](http://192.168.1.1). Als Nächstes müssen Sie sich möglicherweise mit den von Ihrem Internetdienstanbieter (ISP) bereitgestellten Anmeldedaten authentifizieren.
 
-Your box/router admin interface is usually reachable via [http://192.168.0.1](http://192.168.0.1) or [http://192.168.1.1](http://192.168.1.1). Then, you will probably need to authenticate yourself the credentials given by your internet server provider.
+### 2. Die lokale IP Ihres Servers finden
 
-### 2. Find the local IP of your server
+Identifizieren Sie die lokale IP Ihres Servers, entweder :
 
-Identify the *local* IP of your server, either:
 
-- from your box/router interface, which might list devices connected
-- from the YunoHost webadmin, in 'Diagnosis', section 'Internet connectivity', click on 'Details' on the IPv4 report.
-- from the command line in your server, by running `hostname -I`
+- von Ihrer Box/Router-Schnittstelle, die möglicherweise angeschlossene Geräte auflistet
+- über die YunoHost-Schnittstelle, Abschnitt "Internetkonnektivität", dann auf "Details" im IPv4-Bericht klicken.
+- von der Befehlszeile Ihres Servers aus, indem Sie `hostname -I` ausführen
 
-A local IP address typically looks like `192.168.xx.yy`, or `10.0.xx.yy`.
+Eine lokale IP-Adresse sieht typischerweise so aus:`192.168.xx.yy`, oder `10.0.xx.yy`.
 
-The local IP address needs to be static, so that the port forwards that you are going to configure in the next step will always reach your server. You should go into your box/router and make sure that the local IP address of your server is static instead of dynamic.
+Die lokale IP-Adresse muss statisch sein, damit die Port-Weiterleitungen, die Sie im nächsten Schritt konfigurieren werden, Ihren Server immer erreichen. Sie sollten in Ihren Rechner/Router gehen und sicherstellen, dass die lokale IP-Adresse Ihres Servers statisch und nicht dynamisch ist.
 
-### 3. Forwarding ports
+### 3. Ports weiterleiten
 
-In your router admin interface, look for something like 'router configuration' or 'port forwarding'. The naming differs among the various kinds of boxes.
+Suchen Sie in der Verwaltungsoberfläche Ihres Routers nach etwas wie "Router-Konfiguration" oder "Port-Weiterleitung". Die Benennung unterscheidet sich bei den verschiedenen Arten von Boxen.
 
-Opening the ports listed below is necessary for the various services available in YunoHost to work. For each of them, the 'TCP' forwarding is needed. Some interfaces refer to 'external' and 'internal' ports: these are the same in our case.
+Das Öffnen der unten aufgeführten Ports ist notwendig, damit die verschiedenen in YunoHost verfügbaren Dienste funktionieren. Für jeden von ihnen wird die 'TCP'-Weiterleitung benötigt. Einige Schnittstellen beziehen sich auf 'externe' und 'interne' Ports : diese sind in unserem Fall gleich.
 
 - Web: `80` <small>(HTTP)</small>, `443` <small>(HTTPS)</small>
 - [SSH](/administer/admin_guide/command_line): `22`
 - [XMPP](https://wikipedia.org/wiki/XMPP): `5222` <small>(clients)</small>, `5269` <small>(servers)</small>
 - [Email](/administer/admin_guide/email): `25`, `587` <small>(SMTP)</small>, `993` <small>(IMAP)</small>
 
-If you use both a modem and a router, then you need to do the following:
+Wenn Sie sowohl ein Modem als auch einen Router verwenden, dann müssen Sie Folgendes tun:
 
-1. first on the modem (the box closest to the internet) create rules to forward the above ports to your router;
-2. then on the router (the box between the modem and your devices) create rules to forward the above ports to the static IP address for your server.
+1. zuerst auf dem Modem (der Box, die dem Internet am nächsten ist) Regeln erstellen, um die oben genannten Ports an Ihren Router weiterzuleiten;
+2. dann auf dem Router (der Box zwischen dem Modem und Ihren Geräten) Regeln erstellen, um die oben genannten Ports an die statische IP-Adresse für Ihren Server weiterzuleiten.
 
 :::warning
-<FAIcon icon="fa-exclamation-triangle"/> Some internet service providers block port 25 (mail SMTP) by default to fight spam. Some other ISP don't allow to use port 80/443 (web) freely, though it's less likely. Depending on the ISP, it might be possible to open them in the admin interface... Check [this page](/install/providers/isp/) for more info.
+<FAIcon icon="fa-exclamation-triangle"/> Einige ISPs blockieren standardmäßig den Port 25 (Mail-SMTP), um Spam zu bekämpfen. Andere (seltener) erlauben keine freie Nutzung der Ports 80/443. Abhängig von Ihrem ISP kann es möglich sein, diese Ports in der Schnittstelle zu öffnen... Siehe [diese Seite](/install/providers/isp/) für weitere Informationen.
 :::
 
-## Automatic port forwarding / UPnP
+## Automatische Weiterleitung / UPnP
 
-A technology called UPnP is available on some internet boxes / routers and allows to automatically forward ports by the machine who needs them. If UPnP is enabled in your local network, then running this command should automatically open the port for you:
+Eine Technologie namens UPnP ist auf einigen Internet-Boxen / Routern verfügbar und erlaubt Ports automatisch an den Rechner weiterzuleiten, der sie benötigt. Ist UPnP in Ihrem lokalen Netzwerk aktiviert, so sollte die Ausführung dieses Befehls den Port automatisch öffnen:
 
 ```bash
 sudo yunohost firewall reload
