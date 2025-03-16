@@ -3,7 +3,7 @@ sidebar_label: Configuration DNS manuelle poun OVH
 title: Configuration DNS avec OVH
 ---
 
-Voyons comment paramétrer correctement les redirections DNS avec [OVH] (http://www.ovh.com).
+Voyons comment paramétrer correctement les redirections DNS avec [OVH](http://www.ovh.com).
 
 Une fois que vous avez acheté votre nom de domaine, allez dans le panneau de contrôle Web, et cliquez sur votre nom de domaine sur le côté gauche :
 
@@ -44,4 +44,4 @@ Vous devez ajouter dans le fichier de configuration :
 - votre login et mot de passe DynHost
 - votre nom de domaine
 
-Vous pouvez également consulter le [Guide OVH sur DynHost] (https://www.ovh.co.uk/g2024.hosting_dynhost).
+Vous pouvez également consulter le [Guide OVH sur DynHost](https://www.ovh.co.uk/g2024.hosting_dynhost).
