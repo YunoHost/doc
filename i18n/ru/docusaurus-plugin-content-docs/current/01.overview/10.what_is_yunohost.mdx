@@ -5,9 +5,9 @@ description: " "
 
 <img src={require('/img/YunoHost_logo_vertical.png').default} alt="YunoHost logo" id="ynhlogo" style={{display: "block", textAlign: "center", margin: "auto"}}/>
 
-YunoHost is an **operating system** aiming to simplify **server administration** and therefore democratize [self-hosting](/overview/self_hosting) while making sure it stays reliable, secure, ethical and lightweight. It is a copylefted libre software project maintained exclusively by volunteers. Technically, it can be seen as a distribution based on [Debian GNU/Linux](https://debian.org) and can be installed on [many kinds of hardware](/install).
+YunoHost это **операционная система** позволяющая легко администрировать **сервера**, и следовательно позволяет сделать [self-hosting](/overview/self_hosting) надёжным, безопасным, этическим и лёгким. Это свободнораспространяемая библиотека которая поддерживается исключительно волонтёрами. Технически, это дистрибутив основанный на [Debian GNU/Linux](https://debian.org) и может быть установлен на [большое количество систем](/install).
 
-## Features
+## Фичи
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
 export function SmallInline({url, alt}) {
@@ -26,34 +26,34 @@ export function SmallInline({url, alt}) {
 - &#8203;<SmallInline url='/img/icon-lock.png' alt="lock logo"/> Manages **SSL certificates** <small>(based on Let's Encrypt)</small>;
 - &#8203;<SmallInline url='/img/icon-shield.png' alt="shield logo"/>... and **security systems** <small>(`fail2ban`, `yunohost-firewall`)</small>.
 
-## Origin
+## История
 
-YunoHost was created in February 2012 after something like this:
+YunoHost был создан в Феврале 2012 после чего-то вроде:
 
-> "Shit, I'm too lazy to reconfigure my mail server... Beudbeud, how were you able to get your little server running with LDAP?"
-> <small>*Kload, February 2012*</small>
+> "Блин, Я слишком ленив чтобы перенастроить мой почтовый сервер... Beudbeud, как вам удалось запустить свой малеький сервер LDAP?"
+> <small>Kload, Февраль 2012</small>
 
-All that was needed was an admin interface for Beudbeud's server to make something usable, so Kload decided to develop one. Finally, after automating several configs and packaging in some web apps, YunoHost v1 was finished.
+Всё что было нужно - админ панель для сервера Beudbeud-а чтобы сделать что-то юзабельное, поэтому Kload решил её разработать. В итоге, после автоматизации нескольких конфигураций и упаковки некоторых Веб-приложений, YunoHost v1 был завершён.
 
-Noting the growing enthusiasm around YunoHost and around self-hosting in general, the original developers along with new contributors decided to start work on version 2, a more extensible, more powerful, more easy-to-use, and at that, one that makes a nice cup of fair-trade coffee for the elves of Lapland.
+Заметив большое внимание вокруг YunoHost и своими серверами, первоначальные разработчики вместе с новыми помощниками решили начать работу над версией 2. Более универсальной, более мощной, более простой и всё такое.
 
-The name **YunoHost** comes from the jargon "[Y U NO](https://knowyourmeme.com/memes/y-u-no-guy) Host". The [Internet meme](https://en.wikipedia.org/wiki/Internet_meme) should illustrate it:
+Название **YunoHost** пришло из жаргонного "Y U NO Host". Этот [интернет мем](https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B5%D0%BC) должен проиллюстрировать это:
 
 <center>
 ![The meme in question, showing a guy with a face bent in frustration and questioning "Y U NO Host"](/img/dude_yunohost.jpg)
 </center>
 
-## What YunoHost is not?
+## Чем не является YunoHost?
 
-Even if YunoHost can handle multiple domains and multiple users, it is **not meant to be a mutualized system**.
+Не смотря на то, что YunoHost поддерживает управление несколькими доменами, это **не значит что он может их обьеденять**.
 
-First, the software is too young, not tested at scale and thus probably not optimized well enough for hundreds of users at the same time. With that said, we do not want to lead the software in that direction. Virtualization democratizes, and its usage is recommended since it is a more watertight way to achieve mutualization than a "full-stack" system like YunoHost.
+Во первых, код ещё очень молод, не протестирован и не оптимизирован для большого количества пользователей. Однако, мы не хотиим делать весь упор разработки на это.
 
-You can host your friends, your family and your company safely and with ease, but you must **trust your users**, and they must trust you above all. If you want to provide YunoHost services for unknown persons anyway, a full VPS per user will be just fine, and we believe a better way to go.
+Вы можете хостить для друзей, семьи и компании легко и просто, но **вы должны доверять ползователям**, и они должны доверять вам превыше всего. Если вы всё-таки хотите предоставлять услуги YunoHost незнакомым людям, полный VPS на каждого пользователя будет достаточно, и мы уверены что есть лучший вариант.
 
-## Artworks
+## Логотипы
 
-Black and white YunoHost PNG logo by ToZz (400 × 400 px). Licence: CC-BY-SA 4.0. Logos and other artwork are available in [the Artworks repository](https://github.com/YunoHost/yunohost-artwork).
+Чёрный и Белый логотипы YunoHost от ToZz (400 × 400 px). Licence: CC-BY-SA 4.0. Logos and other artwork are available in [the Artworks repository](https://github.com/YunoHost/yunohost-artwork).
 
 <img src={require('/img/ynh_logo_black_300dpi.png').default} width="220" id="darklogo" style={{padding: "1rem"}}/>
 <img src={require('/img/ynh_logo_white_300dpi.png').default} width="220" id="whitelogo" style={{padding: "1rem"}}/>
