@@ -1,10 +1,14 @@
 {
   "version.label": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "message": "Prochaine version",
 =======
     "message": "Suivant",
 >>>>>>> 6a20b15d (some French translations)
+=======
+    "message": "Prochaine version",
+>>>>>>> 645e0dca (fixes from en templates to other languages)
     "description": "The label for version current"
   },
   "sidebar.docsSidebar.category.Overview": {
