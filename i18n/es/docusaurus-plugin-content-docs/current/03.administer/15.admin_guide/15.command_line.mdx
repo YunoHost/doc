@@ -5,29 +5,31 @@ title: SSH and command line
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## What's SSH?
+## ¿ Qué es SSH ?
 
-**SSH** stands for Secure Shell, and refers to a protocol that allows to remotely control and administer a machine using the command line interface (CLI). It is available by default in any terminal on GNU/Linux and macOS. On Windows, you may want to use [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (after launching it, click on Session then SSH).
 
-The command line interface (CLI) is, in the computer world, the original (and more technical) way of interacting with a computer compared to graphical interface. Command line interfaces are generally said to be more complete, powerful or efficient than a graphical interface, though also more difficult to learn.
+**SSH** est un acrónimo por Secure Shell, y representa un protocolo que permite controlar remotamente una máquina vía la línea de comandos (CLI). También es un comando básico disponible en los terminales de GNU/Linux y macOS. En Windows, hace falta utilizar el programa [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) (después de haberlo iniciado, clicar sobre Session y luego SSH).
 
-## How to connect
-### Login credentials
+La interfaz de línea de comandos (CLI) es, en informática, la manera original (y más técnica) de interactuar con un ordenador. Está generalmente considera como más completa, más potente y eficaz que las interfaces gráficas, aunque sea más difícil de aprenderla.
+
+## Durante la instalación de YunoHost
+
+### Encontrar su IP
 
 <Tabs>
 <TabItem value="before-postinstall" label="Before running the initial configuration (post-installation)" default>
 
-- If you are **installing at home**, the default credentials are login: `root` and password: `yunohost` (or `1234` if you flashed an armbian image)
-- If you are **installing a remote server (VPS)**, your provider should have communicated you the login and password (or allowed you to configure an SSH key)
+Si instalas YunoHost en un VPS, tu proveedor debería haberte comunicado la dirección IP de tu servidor.
+
+Si instalas un servidor en tu casa (por ejemplo en Raspberry Pi u OLinuXino), tienes que encontrar el IP que fue atribuido a tu tarjeta cuando la conectaste a tu router / caja Internet. Hay varias maneras de hacerlo :
 
 </TabItem>
 <TabItem value="after-postinstall" label="After running the post-installation" default>
 
-
-During the postinstall, you've been asked to choose an user and an administration password. This user account allows you to connect to the server through SSH. The password becomes also the new password for the `root` user. Additionally, **the `root` SSH login becomes disabled after the postinstall and you should log in using the user account created during postinstall !**. The only exception is that you may still be able to login using `root` *from the local network - or from a direct console on the server* (this is to cover the event where the LDAP server is broken and the `admin` user is unusable).
+### Conectarse
 
 :::tip
-If you connected with the administration account and would like to become `root` for convenience (e.g. to avoid typing `sudo` in front of every command), you can become `root` using the command `sudo su` or `sudo -i`.
+Esta parte necesita ser reescrita, ahora el usuario `admin` ya no existe y es reemplazado por el grupo `admins`
 :::
 
 </TabItem>
