@@ -343,6 +343,9 @@
     "message": "Forum",
     "description": "The label for link Forum in sidebar docsSidebar, linking to https://forum.yunohost.org"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0292e59c (yarn write-translations)
   },
   "sidebar.docsSidebar.category.Fournisseurs VPN": {
     "message": "Fournisseurs VPN",
@@ -351,7 +354,10 @@
   "sidebar.docsSidebar.category.Install on...": {
     "message": "Install on...",
     "description": "The label for category Install on... in sidebar docsSidebar"
+<<<<<<< HEAD
 =======
 >>>>>>> 0f286959 (init translations)
+=======
+>>>>>>> 0292e59c (yarn write-translations)
   }
 }
