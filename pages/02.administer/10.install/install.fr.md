@@ -68,11 +68,11 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 [div class="flex-container"]
 
 [div class="flex-child hardware{%if virtualbox %} active{% endif %}"]
-[[figure caption="VirtualBox"]![](image://virtualbox.png?height=75)[/figure]](/install/hardware:virtualbox)
+[[figure caption="VirtualBox"]![](image://virtualbox.png?height=75)[/figure]](/install/install_on/virtualbox)
 [/div]
 
 [div class="flex-child hardware{%if rpi345 or rpi012 %} active{% endif %}"]
-[[figure caption="Raspberry Pi"]![](image://raspberrypi.png?height=75)[/figure]](/install/hardware:rpi345)
+[[figure caption="Raspberry Pi"]![](image://raspberrypi.png?height=75)[/figure]](/install/install_on/raspberry_pi)
 [/div]
 
 [div class="flex-child hardware{%if arm_sup or (arm_unsup and not rpi012) or internetcube %} active{% endif %}"]
@@ -92,7 +92,7 @@ Sélectionnez le matériel sur lequel vous souhaitez installer YunoHost :
 
 {% if rpi345 or rpi012 %}
 [div class="flex-child hardware{%if rpi345 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 3, 4 ou 5"]![](image://raspberrypi.png?height=50)[/figure]](/install/hardware:rpi345)
+[[figure caption="Raspberry Pi 3, 4 ou 5"]![](image://raspberrypi.png?height=50)[/figure]](/install/install_on/raspberry_pi)
 [/div]
 
 [div class="flex-child hardware{%if rpi012 %} active{% endif %}"]

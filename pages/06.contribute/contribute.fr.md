@@ -24,7 +24,7 @@ YunoHost dépend entièrement de la participation de gens comme vous.
 [/center]
 
 [center]
-Parlez de logiciel libre, d’[auto-hébergement](/selfhosting), de YunoHost à vos proches et à votre travail. Nous comptons sur des évangélistes du Datalove comme vous <3
+Parlez de logiciel libre, d’[auto-hébergement](/overview/self_hosting), de YunoHost à vos proches et à votre travail. Nous comptons sur des évangélistes du Datalove comme vous <3
 [/center]
 [/columns]
 
