@@ -1,3 +1,5 @@
+import Link from '@docusaurus/Link';
+
 # Choose your selfhosting method and providers
 
 You can host yourself at home (on a small computer), or on a remote server. Each solution has their pros and cons:
@@ -13,15 +15,15 @@ You can host yourself at home with an ARM board or a re-purposed regular compute
 
 A VPN is an encrypted tunnel between two machines. In practice, it makes it "as if" you were directly, locally, connected to your server machine, but actually from somewhere else on the Internet. This allows you to still host yourself at home, while bypassing possible limitations of your ISP. See also [the Internet Cube project](https://internetcu.be/) and [the FFDN](https://www.ffdn.org/).
 
-- **Pros** : you will have physical control of the machine, and the VPN hides your traffic from your ISP and allows you to bypass its limitations;
-- **Cons** : you will have to pay a monthly subscription for the VPN.
+- **Pros**: you will have physical control of the machine, and the VPN hides your traffic from your ISP and allows you to bypass its limitations;
+- **Cons**: you will have to pay a monthly subscription for the VPN.
 
 ## On a remote server (VPS or dedicated server)
 
 You can rent a virtual private server or a dedicated machine from [associative](https://db.ffdn.org/) or [commercial](/install/providers/servers) "Cloud" providers.
 
-- **Pros** : your server and its internet connectivity will be fast;
-- **Cons** : you will have to pay a monthly subscription and won't have physical control of your server.
+- **Pros**: your server and its internet connectivity will be fast;
+- **Cons**: you will have to pay a monthly subscription and won't have physical control of your server.
 
 ## Summary
 
@@ -76,7 +78,7 @@ export const styleDanger = {
     </tr>
     <tr>
       <td style={styleNone}>Possible ISP limitations</td>
-      <td style={styleDanger}>Yes<br/><small>(see <a href="./providers/isps">here</a>)</small></td>
+      <td style={styleDanger}>Yes<br/><small>(see <Link to="./providers/isps">here</Link>)</small></td>
       <td style={styleGood}>Bypassed by VPN</td>
       <td style={styleGood}>Typically no</td>
     </tr>
