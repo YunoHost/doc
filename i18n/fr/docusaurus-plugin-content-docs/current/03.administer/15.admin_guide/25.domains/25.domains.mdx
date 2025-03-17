@@ -1,99 +1,101 @@
 ---
-title: Domains
+title: Domaines
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-YunoHost lets you manage and serve multiple domains on a single server. So you can host, for example, a blog and Nextcloud on a first domain `yolo.com`, and a webmail client on a second domain `swag.nohost.me`. Each domain is automatically configured to handle web services and e-mail.
+YunoHost permet de gérer et de servir plusieurs domaines sur un même serveur. Vous pouvez donc héberger, par exemple, un blog et un Nextcloud sur un premier domaine `yolo.com`, et un client de messagerie web sur un second domaine `swag.nohost.me`. Chaque domaine est automatiquement configuré pour pouvoir gérer des services web et des courriels.
 
-Domains can be managed in the 'Domains' section of the webadmin, or via the `yunohost domain` category of the command line.
+Les domaines peuvent être gérés dans la section 'Domaines' de la webadmin, ou via la catégorie `yunohost domain` de la ligne de commande.
 
-Whenever you add a domain, it is assumed that you have purchased (or at least control) the domain, so that you can manage its [DNS configuration](/install/post_install/dns_config). An exception is [domains in `.nohost.me`, `.noho.st` and `ynh.fr`](/administer/tutorials/domains/dns_nohost_me) which are offered by the YunoHost Project, and can be directly integrated with YunoHost through automatic DynDNS configuration. To limit abuse and costs, an instance can only have one domain offered at a time, but you can add as many sub-domains to it as you like. For example, if you choose `example.ynh.co.uk` you can then add the domains `video.example.ynh.co.uk` or `www.exemple.ynh.fr` or any other sub-domain you may require.
+Chaque fois que vous ajoutez un domaine, il est supposé que vous avez acheté (ou en tout cas que vous contrôlez) le domaine, de sorte que vous puissiez gérer la [configuration DNS](/install/post_install/dns_config) de celui-ci. Une exception concerne les [domaines en `.nohost.me`, `.noho.st` et `ynh.fr`](/administer/tutorials/domains/dns_nohost_me) qui sont offerts par le Projet YunoHost, et peuvent être directement intégrés avec YunoHost grâce à une configuration DynDNS automatique. Pour limiter les abus et les coûts, une instance ne peut avoir qu'un seul domaine offert à la fois, toutefois vous pouvez ajouter autant de sous-domaines de celui-ci que vous le souhaitez. Par exemple, ci vous choisissez `exemple.ynh.fr` vous pourrez par la suite ajouter les domaines `video.exemple.ynh.fr` ou `www.exemple.ynh.fr` ou tout autre sous-domaine dont vous pourriez avoir l'utilité.
 
-Domains can be managed in the 'Domain' section of the webadmin, or through the `yunohost domain` category of the command line.
+Les domaines peuvent être gérés dans la section "Domaine" de la webadmin, ou via la ligne de commande (voir `yunohost domain --help`)
 
-![A screenshot of the webadmin domain interface with an "Add domain" button and a list of domains](/img/webadmin_domain.png)
+![Une capture d'écran de l'interface de gestion des domaines dans la webadmin avec un bouton "Ajouter un domain" et la liste des domaines](/img/webadmin_domain.png)
 
-## 3 types of domains
+## Domaines locaux
+
+## 3 types de domaines
 
 <Tabs>
 <TabItem value="nohost" label="Yunohost's domains (the free and easy way)">
 
-In order to make self-hosting as accessible as possible, the YunoHost Project provides a *free* and *automatically configured* domain name service. By using this service, you won't have to [configure DNS records](/install/post_install/dns_config) yourself, which can be tedious and technical.
+Afin de rendre l'auto-hébergement aussi accessible que possible, le projet YunoHost fournit un service de nom de domaine *gratuit* et *configuré automatiquement*. En utilisant ce service, vous n'aurez pas à [configurer les enregistrements DNS](/install/post_install/dns_config) vous-même, ce qui peut être fastidieux et technique. Néanmoins, soyez conscient que vous n'êtes pas réellement propriétaire du domaine choisi...
 
-The following (sub)domains are offered:
+Les (sous-)domaines suivants sont proposés :
 
-- `whateveryouwant.nohost.me`;
-- `whateveryouwant.noho.st`;
+- `whateveryouwant.nohost.me` ;
+- `whateveryouwant.noho.st` ;
 - `whateveryouwant.ynh.fr`.
 
-In more, YunoHost uses an integrated dynamic DNS mechanism, so your server can stay reachable even if your public IP change.
+De plus, YunoHost utilise un mécanisme de DNS dynamique intégré, de sorte que votre serveur reste accessible même si votre IP publique change.
 
-To get one of this domain you simply need to choose `I don't have a domaine name…` during the initial configuration (postinstall) or on the `Add domain` page.
+Pour obtenir un de ces domaines, il vous suffit de choisir `Je n'ai pas de nom de domaine...` lors de la configuration initiale (post-installation) ou sur la page `Ajouter un domaine`.
 
-![Here a screenshot of the "Add domain" page where you can choose "I don't have a domain name"](/img/webadmin_dyndns.png)
+![Capture d'écran de la page « Ajouter un domaine » où vous pouvez choisir « Je n'ai pas de nom de domaine »](/img/webadmin_dyndns.png)
 
 :::info
-To limit resources costs and abuses, each instance may only have one of these domains setup at any given time, however you can add as many sub-domains of it as you wish. For example, if you choose `example.noho.st` you can later add the domains `video.example.noho.st` or `www.example.ynh.noho.st` or any other sub-domain you may need. In this case you need to select `I already have a domain name`.
+Pour limiter les coûts de ressources et les abus, chaque instance ne peut avoir qu'un seul de ces domaines à la fois, mais vous pouvez ajouter autant de sous-domaines que vous le souhaitez. Par exemple, si vous choisissez `example.noho.st` vous pouvez plus tard ajouter les domaines `video.example.noho.st` ou `www.example.ynh.noho.st` ou tout autre sous-domaine dont vous pourriez avoir besoin. Dans ce cas, vous devez sélectionner « J'ai déjà un nom de domaine ».
 :::
 
-[More information on this domains](/administer/tutorials/domains/dns_nohost_me)
+[Plus d'informations sur ces domaines](/administer/tutorials/domains/dns_nohost_me)
 
 </TabItem>
 <TabItem value="own" label="Your own domains">
 
-Having your own domain brings several advantages:
+Avoir son propre domaine apporte plusieurs avantages :
 
-- more control and autonomy
-- simpler domain name (for example directly in .net or .org)
+- plus de contrôle et d'autonomie
+- un nom de domaine plus simple (par exemple directement en .net ou .org)
 
-However, you have to pay for it each year (about 15€/year ... depending on the TLD) and you have to do some extra configuration to [setup a correct DNS zone](/install/post_install/dns_config). Our diagnosis tool can trigger alert to help you to do this configuration.
+Cependant, vous devez payer pour cela chaque année (environ 15€/an ... en fonction du TLD) et vous devez faire quelques configurations supplémentaires pour [mettre en place une zone DNS correcte](/install/post_install/dns_config). L'outil de diagnostic peut vous aider à effectuer cette configuration.
 
-If you already have your own domain, you can simply click "I already have a domain name…". If you don't, in order to simplify and automate the DNS configuration, we suggest you to buy it from a [registrar whose API is supported by YunoHost](/install/providers/registrar/).
+Si vous avez déjà votre propre domaine, vous pouvez simplement cliquer sur « J'ai déjà un nom de domaine... ». Dans le cas contraire, afin de simplifier et d'automatiser la configuration DNS, nous vous suggérons de l'acheter auprès d'un [registrar dont l'API est supportée par YunoHost] (/providers/registrar).
 
-![Here a screenshot of the "Add domain" page where you can choose "I already have a domain name"](/img/webadmin_domain_owndomain.png)
+[Cpture d'écran de la page « Ajouter un domaine » où vous pouvez choisir « J'ai déjà un nom de domaine »](image://webadmin_domain_owndomain.png)
 
-[Know more on DNS zone configuration](/install/post_install/dns_config)
+[En savoir plus sur la configuration de la zone DNS](/install/post_install/dns_config)
 
 </TabItem>
 <TabItem value="local" label="Local domains (only reachable in your local network)">
 
-Starting from YunoHost v4.3, domains ending by `.local` are fully supported, in addition to the default `yunohost.local`.
-They do not use the DNS protocol, but the mDNS one (also known as Zeroconf, Bonjour), which allows them to be published with no specific configuration but exclusively on your local network or VPN.
-Their use is this especially suitable when you do not need your apps to be available on the Internet.
+À partir de YunoHost v4.3, les domaines finissant par `.local` sont pleinement supportés, en plus du `yunohost.local` par défaut.
+Ils n'utilisent pas le protocole DNS mais mDNS (appelé aussi Zeroconf, Bonjour), qui permet leur diffusion sans configuration particulière mais exclusivement sur votre réseau local, ou votre VPN.
+Leur utilisation est donc parfaitement adaptée si vous ne prévoyez pas de rendre une de vos apps disponible sur l'Internet.
 
-![Here a screenshot of the "Add domain" page where you can choose "I already have a domain name" and setup your domain ending by .local](/img/webadmin_domain_local.png)
+[Capture d'écran de la page « Ajouter un domaine » où vous pouvez choisir « J'ai déjà un nom de domaine » et configurer votre domaine se terminant par .local](/img/webadmin_domain_local.png)
 
 :::info
-mDNS protocol does not allow for subdomains to be created. So `domain.local` will work, while `sub.domain.local` is not possible.
+Le protocole mDNS ne permet pas d'ajouter des sous-domaines. Ainsi `domaine.local` est valide, `sous.domain.local` ne l'est pas.
 :::
 
-`Yunomdns` service takes care of publishing your `.local` domains on your network.
-It has a configuration file, `/etc/yunohost/mdns.yml`, which allows you to choose which domains are published, and on which network interfaces.
-This file is automatically regenerated whenever you add or delete a `.local` domain.
+C'est le service `yunomdns` qui se charge de diffuser l'existence de vos domaines `.local` sur votre réseau.
+Il possède un fichier de configuration, `/etc/yunohost/mdns.yml`, qui permet de choisir quels domaines sont diffusés, et sur quelles interfaces réseau.
+Ce fichier est régénéré automatiquement dès que vous ajoutez ou supprimez un domaine `.local`.
 
-The service will always try to publish `yunohost.local`. If you have multiple YunoHost servers on your network, try `yunohost-2.local`, and so on.
-The number may change depending on which server starts first, so do not rely on it to use actual apps and create your own domains.
+Le service cherchera toujours à diffuser le domaine `yunohost.local`. Si vous avez plusieurs serveurs YunoHost sur votre réseau, alors tentez `yunohost-2.local`, etc.
+Le chiffre risque de changer selon quel serveur démarre en premier, donc ne comptez pas dessus pour y installer des apps : créez vos propres domaines locaux.
 
 :::caution
-Unfortunately, Android devices before version 12 (released in 2021) do not seem to be listening to mDNS protocol.
-To be able to reach `.local` domains on your Android devices, you will have to add in their DNS settings your YunoHost server's local IP address.
+Malheureusement, les appareils Android avant la version 12 (sortie en 2021) ne semblent pas écouter le protocole mDNS.
+Pour profiter des domaines `.local` sur vos appareils Android, vous devez entrer l'adresse IP locale de votre serveur YunoHost dans leur paramètre DNS.
 :::
 
 </TabItem>
 </Tabs>
 
-## DNS configuration
+## Configuration DNS
 
-DNS (Domain Name System) is a system that enables computers worldwide to translate human-readable domain names (such as `yolo.com`) into machine-readable IP addresses (such as `11.22.33.44`). For this translation (and other features) to work, DNS records need to be carefully configured.
+DNS (Domain Name System) est un système qui permet aux ordinateurs du monde entier de traduire les noms de domaine lisibles par les humains (comme `yolo.com`) en adresses IP compréhensibles par les machines (comme `11.22.33.44`). Pour que cette traduction (et d'autres fonctionnalités) fonctionne, il faut configurer soigneusement les enregistrements DNS.
 
-YunoHost can generate a recommended DNS configuration for each domain, including the records required for e-mail. The recommended DNS configuration is available in the web administrator via Domains > (the domain) > DNS configuration, or with the command `yunohost domain dns suggest the.domain.tld`.
+YunoHost peut générer une configuration DNS recommandée pour chaque domaine, y compris les enregistrements nécessaires pour les emails. La configuration DNS recommandée est disponible dans l'administrateur web via Domaines > (le domaine) > configuration DNS, ou avec la commande `yunohost domain dns-conf the.domain.tld`.
 
-## About Non-latin characters
+## A propos des caractères non-latins
 
-If your domain has special, non-latin characters, it will be transformed by YunoHost into its [internationalized version](https://en.wikipedia.org/wiki/Internationalized_domain_name) through [Punycode](https://en.wikipedia.org/wiki/Punycode). So when you use the command line, you have to use the punycode format return for example by `yunohost domain list`.
+Si votre domaine comporte des caractères spéciaux non-latins, il sera transformé par YunoHost en [version internationalisée](https://en.wikipedia.org/wiki/Internationalized_domain_name) ou en [Punycode](https://en.wikipedia.org/wiki/Punycode). Ainsi, lorsque vous utilisez la ligne de commande, vous devez utiliser le format punycode renvoyé par exemple par `yunohost domain list`.
 
-## SSL/HTTPS certificates
+## Certificats SSL/HTTPS
 
-Another important aspect of domain configuration is the SSL/HTTPS certificate. YunoHost is integrated with Let's Encrypt, so once your server is correctly reachable from anybody on the internet through the domain name, the administrator can request a Let's Encrypt certificate. See the documentation about [certificates](/administer/admin_guide/domains/certificate) for more information.
+Un autre aspect important de la configuration des domaines est le certificat SSL/HTTPS. YunoHost est intégré avec Let's Encrypt, de sorte qu'une fois que votre serveur est correctement accessible depuis n'importe qui sur Internet via le nom de domaine, l'administrateur peut demander l'installation d'un certificat Let's Encrypt. Voir la documentation sur les [certificats](/administer/admin_guide/domains/certificate) pour plus d'informations.

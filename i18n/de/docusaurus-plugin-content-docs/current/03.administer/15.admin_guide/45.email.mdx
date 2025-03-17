@@ -5,48 +5,45 @@ title: Emails
 import Highlight from '@site/src/components/Highlight';
 import {HighlightWebAdmin, HighlightDiagnosis, HighlightApplications, HighlightAppInstall} from '@site/src/components/Highlight';
 
-YunoHost comes with a complete mail stack allowing you to host your own email server, and therefore to have your own email addresses in `something@your.domain.tld`.
+YunoHost wird mit einem kompletten Mail-Stack geliefert, der es Ihnen ermöglicht, Ihren eigenen E-Mail-Server zu hosten und somit Ihre eigenen E-Mail-Adressen in ```irgendjemand@deine.domain.tld``` zu haben.
 
-The mail stack includes a SMTP server (postfix), an IMAP server (Dovecot), an antispam (rspamd) and DKIM configuration.
+Der Mail-Stack enthält einen SMTP-Server (Postfix), einen IMAP-Server (Dovecot), einen Antispam-Server (rspamd) und eine DKIM-Konfiguration.
 
-## Making sure your setup is right
+## Sicherstellen dass Ihre Einrichtungen richtig sind
 
-Email is a complicated ecosystem and quite a few details can prevent it from working properly.
+E-Mail ist ein kompliziertes Ökosystem und eine ganze Reihe von Details können sein ordnungsgemäßes Funktionieren verhindern.
 
-To validate your setup:
+Um Ihre Einstellungen zu validieren:
 
-- if you are self-hosting at home and not using a VPN, ensure [your ISP won't block port 25](/install/providers/isp/) ;
-- route ports according to [this documentation](/install/post_install/isp_box_config) ;
-- carefully configure mail DNS records according to [this documentation](/install/post_install/dns_config) ;
+- Wenn Sie zu Hause selbst hosten und kein VPN verwenden, stellen Sie sicher das [Ihr ISP den Port 25 nicht blockiert](/install/providers/isp/);
+- leiten Sie Ports weiter, wie in [dieser Dokumentation](/install/post_install/isp_box_config) beschrieben;
+- Mail-DNS-Einträge nach [dieser Dokumentation](/install/post_install/dns_config) sorgfältig konfigurieren;
 - test your configuration using the diagnostic features (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon="fa-envelope"/> Email</Highlight> ). You can also use [mail-tester.com](https://mail-tester.com), a score of at least 8~9/10 is a reasonnable goal <small>(be careful : only 3 tests per domain per day are allowed)</small>
 
-## Email clients
+## E-Mail-Programme
 
-To interact with the email sever (read and send emails), you can either install a webclient such as Roundcube or Rainloop on your server - or configure a desktop/mobile client as described in [this page](/user_guide/email_configure_client).
+Um mit dem E-Mail-Server zu interagieren (E-Mails lesen und senden), können Sie entweder einen Webclient wie Roundcube oder Rainloop auf Ihrem Server installieren - oder einen Desktop-/Mobil-Client, wie auf [dieser Seite](/user_guide/email_configure_client) beschrieben, konfigurieren.
 
-Desktop and mobile clients have the advantage of copying your emails to the device, allowing offline viewing and relative protection against possible hardware failures of your server.
+Desktop- und Mobil-Clients haben den Vorteil, dass sie Ihre E-Mails auf das Gerät kopieren, was eine Offline-Anzeige und einen relativen Schutz gegen mögliche Hardware-Ausfälle Ihres Servers ermöglicht.
 
-## Configuring email aliases and auto-forwards
+## Konfigurieren von E-Mail-Aliasen und automatische Weiterleitungen
 
-Mail aliases and forwards can be configured for each users. For instance, the first user created on the server automatically has an alias `root@the.domain.tld` configured - meaning that an email sent to this address will end in the inbox of the first user. Automatic forwards may be configured, for instance if an user doesn't want to configure an additional email account and just wants to receive emails from the server on, say, his/her gmail address.
+Mail-Aliase und Weiterleitungen können für jeden Benutzer konfiguriert werden. Beispielsweise wird für den ersten,  auf dem Server angelegten Benutzer automatisch ein Alias ```root@the.domain.tld``` konfiguriert.  Das bedeutet das eine an diese Adresse gesendete E-Mail im Posteingang des ersten Benutzers endet. Automatische Weiterleitungen können konfiguriert werden, z.B. wenn ein Benutzer kein zusätzliches E-Mail-Konto einrichten möchte und nur E-Mails vom Server, z.B. auf seine E-Mail-Adresse, empfangen möchte.
 
-Another feature which few people know about is the use of suffixes beginning with "+". For example, emails sent to `johndoe+booking@the.domain.tld` will automatically land in the `booking` dir (lowercase) of John Doe's mailbox or in John Doe's inbox if `booking` directory doesn't exist . It is a practical technique for example to provide an e-mail address to a website, then easily sort (via automatic filters) the mail coming from this website.
+Eine weitere Funktion, die nur wenigen Leuten bekannt ist, ist die Verwendung von Suffixen, die mit "+" beginnen. Zum Beispiel landen E-Mails, die an ```johndoe+buchung@die.domain.tld``` gesendet werden, automatisch im Ordner ```buchung``` (Kleinbuchstaben) der Mailbox von John Doe oder im Posteingang von John Doe, wenn der Ordner ```buchung``` nicht existiert. Es ist eine praktische Technik, z.B. eine E-Mail-Adresse auf einer Website anzugeben und dann die von dieser Website kommende E-Mail einfach (über automatische Filter) zu sortieren.
 
-Groups also can use alias features, by default the group `admins` have `root@<domain.tld>` or `webmaster@<domain.tld>`. [More information to use-it with the dedicated page](/administer/admin_guide/users/groups_and_permissions#config-alias-group).
+## Was passiert wenn mein Server nicht erreichbar ist?
 
-## What happens if my server becomes unavailable?
+Wenn Ihr Server nicht mehr verfügbar ist, bleiben die an Ihren Server gesendeten E-Mails bis zu ~5 Tage lang in einer Warteschlange auf der Seite des Absenders. Der Hoster des Absenders wird regelmäßig versuchen, die E-Mail erneut zu senden, bis er sie verwirft, falls er sie nicht versenden konnte.
 
-If your server becomes unavailable, emails sent to your server will stay in a pending queue on the sender's side for as long as ~5 days. The sender's host will regularly try to resend the email, until it drops it if it was unable to send it.
-
-## Forms to remove its IP address from the blacklist
+## Formulare zum Entfernen seiner IP-Adresse von der schwarzen Liste
 
 It is possible that the emails sent from your YunoHost instance are considered as spam by the big email services.
 Is it possible that the IP address from your server have been previously been used to sent spam or that these email services consider your server as a spam sender.
 To ensure that your servers’ IP address isn't on these blacklists and to remove it from them, follow this [link](/administer/troubleshooting/blacklist_forms).
+## Eine Migration von E-Mails von einem E-Mail-Provider zu einer YunoHost-Instanz
 
-## Migrating email from an email provider to a YunoHost instance
-
-See [this page](/user_guide/email_migration).
+Siehe [diese Seite](/user_guide/email_migration).
 
 ## Configuring SMTP relay
 
