@@ -2,6 +2,8 @@
 title: Markdown Guide
 ---
 
+import useBrokenLinks from '@docusaurus/useBrokenLinks';
+
 Markdown is a markup language created in 2004, many add-ons developing the possibilities of this language exist. The objective of this guide is to aim for the exhaustiveness of the possibilities of this formatting language within the framework of the YunoHost documentation and not Markdown languages in general.
 
 Markdown allows text to be formatted using tags, it allows *human* reading of the text; even with formatting. Even if only one notepad is needed there are many markdowns software (Markdown on [framalibre.org (fr)](https://framalibre.org/recherche-par-crit-res?keys=markdown)). It is relatively easy to use.
@@ -181,6 +183,7 @@ You get:
 3. List 5
 4. list 6
 
+{useBrokenLinks().collectAnchor("anchorname")}
 ### <span id="anchorname">Unordered lists</span>
 
 To create an unordered list, use the symbols `*`, `+` or `*`. This will not change the appearance of the marker in the text output. It is the incrementing of the list that will define the visual. For a better reading of the plain text, it may be good to use the different symbols to mark the increment, but it is the three spaces before the sub-list that will indicate the increment.
