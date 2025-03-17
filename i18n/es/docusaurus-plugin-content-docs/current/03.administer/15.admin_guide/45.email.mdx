@@ -5,38 +5,38 @@ title: Emails
 import Highlight from '@site/src/components/Highlight';
 import {HighlightWebAdmin, HighlightDiagnosis, HighlightApplications, HighlightAppInstall} from '@site/src/components/Highlight';
 
-YunoHost comes with a complete mail stack allowing you to host your own email server, and therefore to have your own email addresses in `something@your.domain.tld`.
+YunoHost integra un ecosistema completo de servidor mail, permitiéndote de alojar tu propia mensajería electrónica, y pues de tener tus propias direcciones email en `algo@tu.dominio.tld`.
 
-The mail stack includes a SMTP server (postfix), an IMAP server (Dovecot), an antispam (rspamd) and DKIM configuration.
+Este ecosistema comprende un servidor SMTP (postfix), un servidor IMAP (Dovecot), un antispam (rspamd) y una configuración DKIM.
 
-## Making sure your setup is right
+## Asegurarse de que la configuración esté correcta
 
-Email is a complicated ecosystem and quite a few details can prevent it from working properly.
+Los emails son un ecosistema complicado y una multitud de detalles puedes impedir que funcionen correctamente.
 
-To validate your setup:
+Para validar que tu configuración es correcta :
 
-- if you are self-hosting at home and not using a VPN, ensure [your ISP won't block port 25](/install/providers/isp/) ;
-- route ports according to [this documentation](/install/post_install/isp_box_config) ;
-- carefully configure mail DNS records according to [this documentation](/install/post_install/dns_config) ;
+- si te alojas en casa y que no tienes VPN, asegúrate de que [tu proveedor de Internet no esté bloqueando el puerto 25](/install/providers/isp/) ;
+- redirige los puertos siguiendo [esta documentación](/install/post_install/isp_box_config) ;
+- configura con cuidado los registros DNS del correo electrónico siguiendo [esta documentación](/install/post_install/dns_config) ;
 - test your configuration using the diagnostic features (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon="fa-envelope"/> Email</Highlight> ). You can also use [mail-tester.com](https://mail-tester.com), a score of at least 8~9/10 is a reasonnable goal <small>(be careful : only 3 tests per domain per day are allowed)</small>
 
-## Email clients
+Una nota de al menos 8~9/10 es un objetivo razonable.
 
-To interact with the email sever (read and send emails), you can either install a webclient such as Roundcube or Rainloop on your server - or configure a desktop/mobile client as described in [this page](/user_guide/email_configure_client).
+## Clientes de mensajería
 
-Desktop and mobile clients have the advantage of copying your emails to the device, allowing offline viewing and relative protection against possible hardware failures of your server.
+Para interactuar con el servidor de mail, o sea leer y mandar emails, puedes instalar un cliente web como Roundcube o Rainloop en tu servidor - o configurar un cliente de Desktop o móvil como descrito en [esta página](/user_guide/email_configure_client).
 
-## Configuring email aliases and auto-forwards
+Los clientes Desktop o móvil tienen la ventaja de copiar tu emails en el equipo, así permitiendo la consulta desconectada de tus mensajes, y cierta protección frente a la posibilidad de un servidor averiado.
 
-Mail aliases and forwards can be configured for each users. For instance, the first user created on the server automatically has an alias `root@the.domain.tld` configured - meaning that an email sent to this address will end in the inbox of the first user. Automatic forwards may be configured, for instance if an user doesn't want to configure an additional email account and just wants to receive emails from the server on, say, his/her gmail address.
+## Configuration de los aliases de mensajeras y de las redirecciones automáticas
 
-Another feature which few people know about is the use of suffixes beginning with "+". For example, emails sent to `johndoe+booking@the.domain.tld` will automatically land in the `booking` dir (lowercase) of John Doe's mailbox or in John Doe's inbox if `booking` directory doesn't exist . It is a practical technique for example to provide an e-mail address to a website, then easily sort (via automatic filters) the mail coming from this website.
+Aliases de mensajeras y redirecciones pueden ser configurados por cada usuario. Por ejemplo, el primer usuario creado en el servidor automáticamente dispone de un alias `root@tu.dominio.tld` - lo que significa que un email mandado hacia esta dirección se encontrará en el buzón de entrada de este usuario. Las redirecciones automáticas pueden ser configuradas, por ejemplo si un usuario no quiere configurar una cuenta de correo adicional y simplemente desea recibir correos del servidor en - por ejemplo - su dirección gmail.
 
-Groups also can use alias features, by default the group `admins` have `root@<domain.tld>` or `webmaster@<domain.tld>`. [More information to use-it with the dedicated page](/administer/admin_guide/users/groups_and_permissions#config-alias-group).
+Otra función desconocida es el uso del sufijo "+". Por ejemplo, email mandados a `johndoe+sncf@tu.dominio.tld` llegarán en el directorio 'sncf' del buzón de correo de John Dos (o directamente en el buzón si este directorio no existe). Es una técnica práctica que permite proveer una dirección de mail a un sitio y automatizar la clasificación de los correos que te mandará este sitio.
 
-## What happens if my server becomes unavailable?
+## ¿ Qué ocurre si mi servidor se pone indisponible ?
 
-If your server becomes unavailable, emails sent to your server will stay in a pending queue on the sender's side for as long as ~5 days. The sender's host will regularly try to resend the email, until it drops it if it was unable to send it.
+Si tu servidor se pone indisponible, los correos electrónicos mandados a tu servir se quedarán en una fila de espera por el lado del expedidor durante aproximadamente 5 días. El proveedor de hosting del expedidor intentará mandarte regularmente el correo, hasta que lo tire si no lo puede enviar.
 
 ## Forms to remove its IP address from the blacklist
 
