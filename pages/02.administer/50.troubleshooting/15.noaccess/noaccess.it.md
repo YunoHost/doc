@@ -17,14 +17,14 @@ Questa pagina cercherà di trovare il problema, riottenere l'accesso ed eventual
 
 Controlla di riuscire ad accedere al server usando l'IP pubblico (lo puoi trovare su [https://ip.yunohost.org](https://ip.yunohost.org)). Se questo non funziona:
 
-- Assicurati di aver [impostato il forwarding](/isp_box_config).
+- Assicurati di aver [impostato il forwarding](/install/post_install/isp_box_config).
 - Alcuni ISP non supportano l'*hairpinning*, cosa che ti impedirà di raggiungere il tuo server dal nome di dominio dalla rete locale. Nel caso puoi usare una connessione cellulare o modificare il file `hosts` del tuo computer in modo da associare il nome di dominio all'indirizzo IP locale invece che a quello pubblico.
 
 ### Configura i record DNS
 
 ! Questo non è un problema se stai usando un dominio fornito da `nohost.me`, `noho.st` or `ynh.fr`
 
-Devi configurare i tuoi [record DNS](/dns_config) (come minimo i record `A` e `AAAA` se usi una connessione IPv6).
+Devi configurare i tuoi [record DNS](/install/post_install/dns_config) (come minimo i record `A` e `AAAA` se usi una connessione IPv6).
 
 Puoi verificare la correttezza dei record DNS confrontando i risultati dati da [questo servizio](https://www.whatsmydns.net/) con l'[IP restituito dal nostro servizio](https://ip.yunohost.org).
 
@@ -32,13 +32,13 @@ Puoi verificare la correttezza dei record DNS confrontando i risultati dati da [
 
 - Il tuo dominio `noho.st`, `nohost.me` o `ynh.fr` non è raggiungibile a causa di un problema nell'infrastruttura di YunoHost. Controlla il [forum](https://forum.yunohost.org/) per annunci o post di persone relativi allo stesso problema.
 - Il tuo nome di dominio potrebbe essere scaduto. Controlla la pagina del registrar usato per la registrazione oppure usa il comando `whois yourdomain.tld`.
-- Stai usando un indirizzo IP dinamico. In questo caso è necessario impostare uno script o usare un client appositi per aggiornare con regolarità questo indirizzo. Leggi la pagina [DNS with a dynamic IP](/dns_dynamicip) per vedere come. Puoi usare anche un dominio `nohost.me`, `noho.st` o `ynh.fr` che comprende queste opzioni.
+- Stai usando un indirizzo IP dinamico. In questo caso è necessario impostare uno script o usare un client appositi per aggiornare con regolarità questo indirizzo. Leggi la pagina [DNS with a dynamic IP](/administer/tutorials/domains/dns_dynamicip) per vedere come. Puoi usare anche un dominio `nohost.me`, `noho.st` o `ynh.fr` che comprende queste opzioni.
 
 ## Stai ricevendo un errore sul certificato che non ti permette di raggiungere la pagina di amministrazione
 
 - Un errore sul certificato può essere visualizzato nel caso in cui hai scritto male l'indirizzo nella barra del browser.
 
-- Sei hai appena installato il tuo server o un nuovo dominio stai usando un certificato auto-firmato. In questo caso è possibile e comprensibile aggiungere una eccezione di sicurezza *temporanea* in modo che sia possibile [installare un certificato Let's Encrypt](/certificate), ammesso che tu abbian una connessione Internet sicura.
+- Sei hai appena installato il tuo server o un nuovo dominio stai usando un certificato auto-firmato. In questo caso è possibile e comprensibile aggiungere una eccezione di sicurezza *temporanea* in modo che sia possibile [installare un certificato Let's Encrypt](/administer/admin_guide/domains/certificate), ammesso che tu abbian una connessione Internet sicura.
 
 ## Puoi accedere via SSH ma non dalla pagina di amministrazione o l'inverso
 
@@ -64,7 +64,7 @@ Vedi anche: [togliere il ban ad un indirizzo](/fail2ban)
 
 Può essere che il server web NGINX non stia funzionando.
 
-Maybe the NGINX web server is out of order. You can check that [trough SSH](/ssh) with the command `yunohost service status ssh`. If it is failinf, check that its configuration is correct by running `nginx -t`. If it is indeed broken, it may be due to the installation or removal of a low-quality app... If you need support, [ask for it](/help).
+Maybe the NGINX web server is out of order. You can check that [trough SSH](/administer/admin_guide/command_line) with the command `yunohost service status ssh`. If it is failinf, check that its configuration is correct by running `nginx -t`. If it is indeed broken, it may be due to the installation or removal of a low-quality app... If you need support, [ask for it](/help).
 
 The NGINX or SSH servers may have been killed due to a lack of storage space, RAM, or swap.
 
@@ -95,7 +95,7 @@ If you can reach the webadmin login page (force reload with `CTRL + F5` to be su
 
 If yoy are sure of your passord, it may be due to the `slapd` service failing. If that's the case, log into the server by SSH as `root`.
 
-- If your server is at home, you most likely have access to the local network. From this network, you can follow the [SSH instructions](/ssh)`.
+- If your server is at home, you most likely have access to the local network. From this network, you can follow the [SSH instructions](/administer/admin_guide/command_line)`.
 - If your server is a VPS, your provider may offer a web console.
 
 Once logged in, you have to check the state of the service with `yunohost service status slapd` and/or reset your admin password with `yunohost tools adminpw`.

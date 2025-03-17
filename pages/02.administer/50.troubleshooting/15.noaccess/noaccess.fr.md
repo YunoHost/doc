@@ -17,7 +17,7 @@ Cette page va vous aider à diagnostiquer, obtenir un accès et si besoin répar
 
 Vérifier que vous arrivez à accéder au serveur en utilisant son IP globale (que vous pouvez trouver sur <https://ip.yunohost.org>). Si cela ne fonctionne pas:
 
-- Assurez-vous d'avoir [configuré les redirections de ports](/isp_box_config)
+- Assurez-vous d'avoir [configuré les redirections de ports](/install/post_install/isp_box_config)
 - Certaines box de FAI ne supportent pas le hairpinning et vous ne pouvez pas accéder à votre serveur depuis l'intérieur du réseau local (sauf à passer par l'IP locale). Pour contourner le problème, vous pouvez utiliser un des moyens suivants:
   - utiliser une connexion cellulaire (4/5G)
   - modifier le fichier `/etc/hosts` sur vos équipements
@@ -27,7 +27,7 @@ Vérifier que vous arrivez à accéder au serveur en utilisant son IP globale (q
 
 (N.B.: ce n'est pas nécessaire si vous utilisez un domaine de type nohost.me, noho.st ou ynh.fr)
 
-Il vous faut configurer vos enregistrement DNS comme expliqué sur [cette page](/dns_config) (à minima l'enregistrement A, et AAAA si vous avez de l'IPv6).
+Il vous faut configurer vos enregistrement DNS comme expliqué sur [cette page](/install/post_install/dns_config) (à minima l'enregistrement A, et AAAA si vous avez de l'IPv6).
 
 Vous pouvez valider que les enregistrements DNS sont corrects en comparant le résultat de <https://www.whatsmydns.net/> avec l'IP globale de votre serveur (si vous êtes hébergé à la maison, vous pouvez obtenir cette IP sur <https://ip.yunohost.org>)
 
@@ -39,7 +39,7 @@ Vous pouvez valider que les enregistrements DNS sont corrects en comparant le r�
 
 ## Vous êtes face à une erreur de certificat qui vous empêche d’accéder à la webadmin
 
-Si vous venez d'installer votre serveur ou d'ajouter un nouveau domaine, il utilise pour le moment un certificat auto-signé. Dans ce cas, il devrait être possible et légitime d'ajouter *exceptionnellement* une exception de sécurité le temps d'[installer un certificat Let's Encrypt](/certificate) à condition d'être sur une connexion internet sûre (pas avec Tor Browser par exemple).
+Si vous venez d'installer votre serveur ou d'ajouter un nouveau domaine, il utilise pour le moment un certificat auto-signé. Dans ce cas, il devrait être possible et légitime d'ajouter *exceptionnellement* une exception de sécurité le temps d'[installer un certificat Let's Encrypt](/administer/admin_guide/domains/certificate) à condition d'être sur une connexion internet sûre (pas avec Tor Browser par exemple).
 
 Une erreur de certificat peut également être affichée dans certain cas où vous avez fait une faute de frappe dans la barre d'adresse de votre navigateur.
 
@@ -65,7 +65,7 @@ NB : le bannissement dure en général 10 à 12 minutes. Le bannissement n'est a
 
 ### Le serveur web NGINX est cassé
 
-Peut-être que le serveur web NGINX est en panne. Vous pouvez vérifier cela [en ssh](/ssh) avec `yunohost service status nginx`. Si il est en panne, vérifiez que la configuration ne comporte pas d'erreur avec `nginx -t`. Si la configuration est cassée, ceci est peut-être du à une l'installation ou désinstallation d'une application de mauvaise qualité... Si vous êtes perdu, [demandez de l'aide](/help).
+Peut-être que le serveur web NGINX est en panne. Vous pouvez vérifier cela [en ssh](/administer/admin_guide/command_line) avec `yunohost service status nginx`. Si il est en panne, vérifiez que la configuration ne comporte pas d'erreur avec `nginx -t`. Si la configuration est cassée, ceci est peut-être du à une l'installation ou désinstallation d'une application de mauvaise qualité... Si vous êtes perdu, [demandez de l'aide](/help).
 
 Il se peut également que le serveur web (NGINX) ou le serveur ssh aient été tués suite à un manque d'espace disque ou de RAM / swap.
 
@@ -93,7 +93,7 @@ Si vous arrivez à afficher la page web d'administration (forcez le rafraîchiss
 
 Si vous êtes certain du mot de passe, il est possible que le service SLAPD qui gère l'authentification soit en panne. Si c'est le cas, il vous faut vous connecter en `root`.
 
-- Si votre serveur est chez vous, vous avez sans doute accès au réseau local du serveur. Depuis ce réseau, vous pouvez vous connecter [en SSH](/ssh) avec l'utilisateur `root`.
+- Si votre serveur est chez vous, vous avez sans doute accès au réseau local du serveur. Depuis ce réseau, vous pouvez vous connecter [en SSH](/administer/admin_guide/command_line) avec l'utilisateur `root`.
 - Si vous êtes sur un VPS, votre hébergeur vous fournit peut-être la possibilité d'avoir une console sur votre serveur depuis le navigateur web.
 Une fois connecté, il vous faut regarder l'état du service avec la commande `yunohost service status slapd` et/ou tenter de réinitialiser votre mot de passe avec la commande `yunohost tools adminpw`.
 

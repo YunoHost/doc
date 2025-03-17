@@ -9,7 +9,7 @@ routes:
     - '/isp_orange'
 ---
 
-*Trouvez la liste d’autres fournisseurs d’accès à Internet **[ici](/isp)**.*
+*Trouvez la liste d’autres fournisseurs d’accès à Internet **[ici](/install/providers/isp/)**.*
 
 ## Le courrier électronique
 

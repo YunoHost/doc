@@ -23,7 +23,7 @@ For a VPS, please use the public IP address instead of the local domain or addre
   <TabItem value="web" label="From the web interface">
 
     :::warning
-    During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate).  For now, you should add a security exception to accept the current certificate. (Though, PLEASE, do not take the habit of blindly accepting this kind of security alert!)
+    During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/administer/admin_guide/domains/certificate).  For now, you should add a security exception to accept the current certificate. (Though, PLEASE, do not take the habit of blindly accepting this kind of security alert!)
     :::
 
     You should then land on this page:
@@ -110,7 +110,7 @@ Especially, installations on WSL or virtual machines will likely not be reachabl
 
 Once you configured DNS records and port forwarding (if needed), you should be able to install a Let's Encrypt certificate. This will get rid of the spooky security warning from earlier for new visitors.
 
-For more detailed instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/certificate).
+For more detailed instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/administer/admin_guide/domains/certificate).
 
 <Tabs groupId="admin-commands">
   <TabItem value="web" label="From the web interface">
@@ -127,4 +127,5 @@ For more detailed instructions, or to lean more about SSL/TLS certificates, see 
 
 ## <img src="/img/tada.png" height="30"/> Congratz!
 
-You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview/self_hosting). You should also be able to [install your favourite applications](https://apps.yunohost.org). Don't forget to [plan backups](/category/backups) !
+You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/category/overview). You should also be able to [install your favourite applications](https://apps.yunohost.org/). Don't forget to [plan backups](/category/backups) !
+
