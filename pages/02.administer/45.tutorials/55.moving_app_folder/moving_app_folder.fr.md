@@ -11,7 +11,7 @@ Les dossiers d'application se trouvent (*habituellement*) dans `/var/www/$nom_ap
 
 Lorsqu'un dossier d'application devient trop volumineux il peut être intéressant de le déplacer vers un autre espace de stockage (comme un disque dur externe, une carte sd, etc.)
 
-Partant du principe que [le stockage externe est déjà monté](/external_storage), voici un guide pour déplacer le dossier de l'application wordpress :
+Partant du principe que [le stockage externe est déjà monté](/administer/tutorials/external_storage), voici un guide pour déplacer le dossier de l'application wordpress :
 
 #### 1. Déplacer le dossier wordpress et tout son contenu vers le stockage externe
 

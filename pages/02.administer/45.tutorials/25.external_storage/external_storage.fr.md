@@ -25,7 +25,7 @@ Ci-dessous, vous trouverez des explications pour parvenir à déplacer vos donn�
 
 - Avoir un peu de temps à un moment où les utilisateurs de votre serveur peuvent accepter un arrêt des services. Les étapes à réaliser, même si elles sont relativement simples, peuvent parfois paraître techniques et nécessitent dans tous les cas **de prendre son temps**.
 
-- Savoir se connecter en root sur votre système, par exemple via [SSH](/ssh). (Note : en étant connecté en tant qu'utilisateur `admin`, vous pouvez passer root avec `sudo su`)
+- Savoir se connecter en root sur votre système, par exemple via [SSH](/administer/admin_guide/command_line). (Note : en étant connecté en tant qu'utilisateur `admin`, vous pouvez passer root avec `sudo su`)
 
 - Connaître les commandes basiques `cd`, `ls`, `mkdir`, `rm`
 

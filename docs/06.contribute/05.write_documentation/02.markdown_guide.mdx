@@ -65,11 +65,11 @@ will be displayed as such:
 It is the same for the documentation pages, except that the link is internal. The page name is its default route, as defined in its page header:
 
 ```markdown
-[Wiki Page](/write_documentation)
+[Wiki Page](/contribute/write_documentation/)
 ```
 
 The link will return to the page with the correct language setting if the page exists, or defaults to the next available language (French, usually):
-[Wiki page](/write_documentation)
+[Wiki page](/contribute/write_documentation/)
 
 :::tip
 Note that language codes are thus not to be included at the beginning of the links to other documentation pages: `/en`, `/fr`, etc. are superfluous.
@@ -95,7 +95,7 @@ All that remains is to designate the anchor to the text you want to make interac
 [My Anchor that refers to the title of the tables](#tables)
 ```
 
-[My Anchor Returns to Lists](#anchorname)
+[My Anchor Returns to Lists](#lists)
 
 [My Anchor that refers to the title of the tables](#tables)
 
@@ -112,10 +112,10 @@ To display images, the principle is the same as for links, except that a `!` is 
 It is possible to make a link with an image, for example:
 
 ```markdown
-[![YunoHost Logo](/img/logo.png)](/write_documentation)
+[![YunoHost Logo](/img/logo.png)](/contribute/write_documentation/)
 ```
 
-[![YunoHost Logo](/img/logo.png)](/write_documentation)
+[![YunoHost Logo](/img/logo.png)](/contribute/write_documentation/)
 
 The insert of *text to be displayed if the image cannot be loaded* between the brackets in the image link is not mandatory but strongly recommended.
 
@@ -141,7 +141,7 @@ Will be displayed:
 
 ## Lists
 
-Lists allow to display a series of texts in an easy presentation, this is how indexes such as the [contributing documentation](/contributordoc) page are written.
+Lists allow to display a series of texts in an easy presentation, this is how indexes such as the [contributing documentation](/contribute/) page are written.
 
 ### Ordered lists
 
@@ -235,7 +235,7 @@ To create an array, use the vertical bar `|` and dashes `--`. It is mandatory to
 | **One table** | One column | One second | As many as you want |
 |:-------------:|:----------:|:----------:|:-------------------:|
 | | And formatted line | | And bold text | | Or *italic* |
-| More lines | |![An image](/img/cd.jpg) | [Or a link](/contributordoc) |
+| More lines | |![An image](/img/cd.jpg) | [Or a link](/contribute/) |
 ```
 
 Which would say this:
@@ -243,7 +243,7 @@ Which would say this:
 | **One table** | One column | One second | As many as you want |
 |:-------------:|:----------:|:----------:|:-------------------:|
 | | And formatted line | | And bold text | | Or *italic* |
-| More lines | |![An image](/img/cd.jpg) | [Or a link](/contributordoc) |
+| More lines | |![An image](/img/cd.jpg) | [Or a link](/contribute/) |
 
 ## Code block
 

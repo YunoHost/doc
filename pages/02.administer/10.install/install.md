@@ -177,7 +177,7 @@ Select the hardware on which you want install YunoHost :
 - *Recommended:* Windows Terminal (Preview) app, installed from the Microsoft Store. Much better than the standard Terminal, as it offers shortcuts to the WSL distros.
 {% endif %}
 {% if at_home %}
-- A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
+- A [reasonable ISP](/install/providers/isp/), preferably with a good and unlimited upstream bandwidth
 {% if not virtualbox %}
 - An ethernet cable (RJ-45) to connect your server to your router.
 {% endif %}
@@ -566,7 +566,7 @@ You should see a screen like this:
 
 The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.
 
-With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/external_storage).
+With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/administer/tutorials/external_storage).
 
 ### Summary of the steps in expert mode
 
@@ -592,7 +592,7 @@ If you have one or more hard drives to store data, you can choose to mount it on
 | `/home/yunohost.multimedia` | Heavy data shared between several applications |
 | `/var/mail` | User mail |
 
-If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/external_storage).
+If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/administer/tutorials/external_storage).
 
 ### About encryption
 
@@ -616,7 +616,7 @@ Keep in mind that:
 
 ## [fa=terminal /] Connect to the board
 
-Next you need to [find the local IP address of your server](/finding_the_local_ip) to connect as root user [via SSH](/ssh) with the temporary password `1234`.
+Next you need to [find the local IP address of your server](/install/post_install/finding_the_local_ip) to connect as root user [via SSH](/administer/admin_guide/command_line) with the temporary password `1234`.
 
 ```bash
 ssh root@192.168.x.xxx
@@ -630,7 +630,7 @@ ssh root@192.168.x.xxx
 
 ## [fa=rocket /] Run the install script
 
-- Open a command line prompt on your server (either directly or [through SSH](/ssh))
+- Open a command line prompt on your server (either directly or [through SSH](/administer/admin_guide/command_line))
 - Make sure you are root (or type `sudo -i` to become root)
 - Run the following command:
 
@@ -654,12 +654,12 @@ curl https://install.yunohost.org | bash
 {%if at_home %}
 In an internet browser, type **{% if internetcube %}`https://internetcube.local`{% else %}`https://yunohost.local` (or `yunohost-2.local`, and so on if multiple YunoHost servers are on your network){% endif %}**.
 
-!!! If this doesn't work, you can [look for the the local IP address of your server](/finding_the_local_ip). The address typically looks like `192.168.x.y`, and you should therefore type `https://192.168.x.y` in your browser's address bar.
+!!! If this doesn't work, you can [look for the the local IP address of your server](/install/post_install/finding_the_local_ip). The address typically looks like `192.168.x.y`, and you should therefore type `https://192.168.x.y` in your browser's address bar.
 {% else %}
 You can perform the initial configuration with the web interface by typing in the address bar of your web browser **the public IP address of your server**. Typically, your VPS provider should have provided you with the IP of the server.
 {% endif %}
 
-! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. {% if not wsl %}You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). {% endif %} For now, you should add a security exception to accept the current certificate. (Though, PLEASE, do not take the habit of blindly accepting this kind of security alert!)
+! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. {% if not wsl %}You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/administer/admin_guide/domains/certificate). {% endif %} For now, you should add a security exception to accept the current certificate. (Though, PLEASE, do not take the habit of blindly accepting this kind of security alert!)
 
 {% if not internetcube %}
 You should then land on this page :
@@ -672,7 +672,7 @@ You should then land on this page :
 [/ui-tab]
 [ui-tab title="From the command line"]
 
-You can also perform the postinstallation with the command `yunohost tools postinstall` directly on the server, or [via SSH](/ssh).
+You can also perform the postinstallation with the command `yunohost tools postinstall` directly on the server, or [via SSH](/administer/admin_guide/command_line).
 
 [figure class="nomargin" caption="Preview of the command-line post-installation"]
 ![Initial configuration with CLI](image://postinstall_cli.png?resize=100%&class=inline)
@@ -691,9 +691,9 @@ This will be the domain used by your server's users to access the **authenticati
 
 - If you're new to self-hosting and do not already have a domain name, we recommend using a **.nohost.me** / **.noho.st** / **.ynh.fr** (e.g. `homersimpson.nohost.me`). Provided that it's not already taken, the domain will be configured automatically and you won't need any further configuration step. Please note that the downside is that you won't have full-control over the DNS configuration.
 
-- If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/dns_config).
+- If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/install/post_install/dns_config).
 
-!!! Yes, you *have to* configure a domain name. If you don't have any domain name and don't want a **.nohost.me** / **.noho.st** / **.ynh.fr** either, you can set up a dummy domain such as `yolo.test` and tweak your **local** `/etc/hosts` file such that this dummy domain [points to the appropriate IP, as explained here](/dns_local_network).
+!!! Yes, you *have to* configure a domain name. If you don't have any domain name and don't want a **.nohost.me** / **.noho.st** / **.ynh.fr** either, you can set up a dummy domain such as `yolo.test` and tweak your **local** `/etc/hosts` file such that this dummy domain [points to the appropriate IP, as explained here](/administer/tutorials/domains/dns_local_network).
 
 {% else %}
 
@@ -716,7 +716,7 @@ If you want to create subdomains, do not forget to add them in the `hosts` file 
 
 ### [fa=key /] First user
 
-The first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/ssh) or [**SFTP**](/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld` : these emails may be used to send technical informations or alerts. You can later add additional users, which you can also add to the Admins group.
+The first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/administer/admin_guide/command_line) or [**SFTP**](/administer/tutorials/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld` : these emails may be used to send technical informations or alerts. You can later add additional users, which you can also add to the Admins group.
 
 This user replaces the old `admin` user, which some old documentation page may still refer to. In which case : just replace `admin` with your username.
 
@@ -733,7 +733,7 @@ Once the postinstall is done, you should be able to actually log in the web admi
 
 The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured - and guide you in how to fix issues. The diagnosis will run twice a day and send an alert if issues are detected.
 
-!!! N.B. : **don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/dns_config) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain), add a swapfile if not enough ram {% if at_home %} and/or [port forwarding](/isp_box_config){% endif %}.
+!!! N.B. : **don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/install/post_install/dns_config) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain), add a swapfile if not enough ram {% if at_home %} and/or [port forwarding](/install/post_install/isp_box_config){% endif %}.
 
 !!! If an alert is not relevant (for example because you don't intend on using a specific feature), it is perfectly fine to flag the issue as 'ignored' by going in the webadmin > Diagnosis, and clicking the ignore button for this specifc issue.
 
@@ -760,7 +760,7 @@ yunohost diagnosis show --issues --human-readable
 
 Once you configured DNS records and port forwarding (if needed), you should be able to install a Let's Encrypt certificate. This will get rid of the spooky security warning from earlier for new visitors.
 
-For more detailed instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/certificate).
+For more detailed instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/administer/admin_guide/domains/certificate).
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
@@ -783,7 +783,7 @@ yunohost domain cert install
 
 ## ![](image://tada.png?resize=32&classes=inline) Congratz!
 
-You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](/apps). Don't forget to [plan backups](/backup) !
+You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](https://apps.yunohost.org). Don't forget to [plan backups](/backup) !
 
 {% endif %}
 {% endif %}

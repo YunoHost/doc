@@ -19,7 +19,7 @@ Scegliete la sezione **Zona DNS**, e poi **Aggiungere un record**:
 
 ![](image://ovh_dns_zone.png?resize=800)
 
-Ora dovrete aggiungere la redirezione del DNS così come specificato nella [configurazione standard delle zone del DNS](/dns_config)
+Ora dovrete aggiungere la redirezione del DNS così come specificato nella [configurazione standard delle zone del DNS](/install/post_install/dns_config)
 
 Cliccate su "Modifica in modalità testo", lasciando invariate le prime 4 righe:
 
@@ -34,11 +34,11 @@ cancellate tutto il resto e sostituitelo con la configurazione necessaria per ra
 
 ### IP dinamico
 
-[Istruzioni generiche per l'IP dinamico](/dns_dynamicip).
+[Istruzioni generiche per l'IP dinamico](/administer/tutorials/domains/dns_dynamicip).
 
 Seguite queste istruzioni se il vostro IP è dinamico.
 
-Per sapere se la vostra connessione è del tipo con IP dinamico [vedi](/isp).
+Per sapere se la vostra connessione è del tipo con IP dinamico [vedi](/install/providers/isp/).
 
 Create un account DynHost.
 
