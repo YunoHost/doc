@@ -1,32 +1,32 @@
 ---
-title: Snapshotting the entire filesystem
+title: Créer une image complète du système de fichier
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-YunoHost's backup tool only backs up useful files and relies on restore scripts to reinstall the dependencies of your applications. In other words, YunoHost's mechanism amounts to reinstalling and then reincorporating the data.
+L'outil de sauvegarde de YunoHost ne sauvegarde que les fichiers utiles et se base sur des scripts de restauration pour réinstaller les dépendances de vos applications. Autrement dit, le mécanisme de YunoHost revient à réinstaller, puis réincorporer les données.
 
-Making full system images can be a complementary or alternative way to backup your machine. The advantage is that your system can be restored to the exact state it was in at the time of the backup.
+Réaliser des images complètes du système peut être un moyen complémentaire ou alternatif de sauvegarder votre machine. L'intérêt est que votre système pourra être restauré dans l'état exact du moment de la sauvegarde.
 
-Depending on your type of installation, you can either create a snapshot or clone the storage medium by removing it from your server (turned off).
+Selon votre type d'installation, vous pouvez soit créer un snapshot, soit cloner le support de stockage en le retirant de votre serveur (éteint).
 
-## Creating a snapshot
+## Déclencher un snapshot
 
-A snapshot allows you to freeze an image of the file system. Snapshots are very useful when doing an update or testing, because they allow you to easily go back in case of a glitch. On the other hand, apart from some very high availability clusters, snapshots do not really protect you against hardware failures or disasters (cf. OVH fire in Strasbourg in 2021).
+Un snapshot permet de figer une image du système de fichiers. Les snapshots sont très pratiques lorsque l'on fait une mise à jour ou des essais, car ils vous permettent de revenir facilement en arrière en cas de pépin. En revanche, en dehors de quelques clusters de très haute disponibilité, les snapshots ne vous protègent pas vraiment face à des pannes matérielles ou des catastrophes (cf. incendie d'OVH à Strasbourg en 2021).
 
-In general, snapshots are quite disk space saving, the principle is that your file system will store the differences that occurred since your snapshot. Thus, only the modifications consume space.
+En général, les snapshots sont assez économes en espace disque, le principe est que votre système de fichier va stocker les différences survenues depuis votre snapshot. Ainsi, seules les modifications consomment de l'espace.
 
 :::info
-Remember to delete the old snapshots to avoid wasting your storage space by storing all the differences since that date!
+Pensez à supprimer les anciens snapshots pour éviter de gâcher votre espace de stockage en stockant toutes les différences depuis cette date !
 :::
 
-You can use this method with most VPS (often paying), virtual machine managers or if you have installed YunoHost with an advanced filesystem like btrfs, ceph or ZFS, you can also create snapshots via the command line
+Vous pouvez utiliser cette méthode avec la plupart des VPS (souvent payant), des gestionnaires de machines virtuelles ou si vous avez installé YunoHost avec un filesystem avancé comme btrfs, ceph ou ZFS, vous pouvez aussi créer des snapshots via la ligne de commande
 
 <Tabs>
 <TabItem value="vps" label="VPS">
 
-Below, some documentation for the most known suppliers:
+Ci-dessous, quelques documentations pour les fournisseurs les plus connus:
 
 - [DigitalOcean (EN)](https://docs.digitalocean.com/products/images/snapshots/)
 - [Gandi](https://docs.gandi.net/fr/simple_hosting/operations_courantes/snapshots.html)
@@ -36,42 +36,42 @@ Below, some documentation for the most known suppliers:
 </TabItem>
 <TabItem value="virtualbox" label="VirtualBox">
 
-Select the virtual machine and click `Snapshots`, then specify the snapshot name and click `OK`.
-![The snapshot button is located at the top right](/img/virtualbox-snapshot2.webp)
+Sélectionner la machine virtuelle et cliquer sur `Snapshots`, puis spécifier le nom du snapshot et cliquer sur `OK`.
+![Le bouton snapshot se trouve en haut à droite](/img/virtualbox-snapshot2.webp)
 
-To restore, select the virtual machine, click on `Snapshots` then `Restore Snapshot option`.
+Pour restaurer, sélectionner la machine virtuelle, cliquer sur `Snapshots` puis `Restore Snapshot option`.
 ![](/img/virtualbox-snapshot3.webp)
 
-Then click on `Restore Snapshot`.
+Ensuite cliquer sur `Restore Snapshot`.
 ![](/img/virtualbox-snapshot4.webp)
 
 </TabItem>
 <TabItem value="proxmox" label="Proxmox">
 
-- Select the virtual machine
-- Go to the `Backup` tab
-- Click on `Backup now`.
-- Choose `Snapshot` mode
-- Validate
+- Sélectionner la machine virtuelle
+- Aller dans l'onglet `Backup`
+- Cliquer sur `Backup now`
+- Choisir le mode `Snapshot`
+- Valider
 
 </TabItem>
 <TabItem value="btrfs" label="BTRFS">
 
-Below we consider that `/pool/volume` is the volume to snapshot.
+Ci-dessous on considère que `/pool/volume` est le volume à snapshoter.
 
-Create a read-only snapshot
+Créer un snapshot en lecture seule
 
 ```bash
 btrfs subvolume snapshot /pool/volume /pool/volume/$(date +"%Y-%m-%d_%H:%M")
 ```
 
-List snapshots
+Lister les snapshots
 
 ```bash
 btrfs subvolume show /pool/volume
 ```
 
-Restore a snapshot
+Restaurer un snapshot
 
 ```bash
 btrfs sub del /pool/volume
@@ -79,44 +79,44 @@ btrfs sub snap /pool/volume/2021-07-22_16:12 /pool/volume
 btrfs sub del /pool/volume/2021-07-22_16:12
 ```
 
-Delete a snapshot
+Supprimer un snapshot
 
 ```bash
 btrfs subvolume delete /pool/volume/2021-07-22_16:12
 ```
 
 :::caution
-  Be careful not to delete the original volume
+Attention de ne pas supprimer le volume original
 :::
 
 :::tip
-  See [this tutorial](https://www.linux.com/training-tutorials/how-create-and-manage-btrfs-snapshots-and-rollbacks-linux-part-2/) for more info
+Voir [ce tutoriel](https://www.linux.com/training-tutorials/how-create-and-manage-btrfs-snapshots-and-rollbacks-linux-part-2/) pour plus d'info
 :::
 
 </TabItem>
 <TabItem value="ceph" label="CEPH">
 
-Below we consider that `pool/volume` is the volume to snapshot.
+Ci-dessous on considère que `pool/volume` est le volume à snapshoter.
 
-Create a snapshot
+Créer un snapshot
 
 ```bash
 rbd snap create pool/volume@$(date +"%Y-%m-%d_%H:%M")
 ```
 
-List snapshots
+Lister les snapshots
 
 ```bash
 rbd snap ls pool/volume
 ```
 
-Restore a snapshot
+Restaurer un snapshot
 
 ```bash
 rbd snap rollback pool/volume@2021-07-22_16:22
 ```
 
-Delete a snapshot
+Supprimer un snapshot
 
 ```bash
 rbd snap rm pool/volume@2021-07-22_16:12
@@ -125,27 +125,27 @@ rbd snap rm pool/volume@2021-07-22_16:12
 </TabItem>
 <TabItem value="zfs" label="ZFS">
 
-Below we consider that `pool/volume` is the volume to snapshot.
+Ci-dessous on considère que `pool/volume` est le volume à snapshoter.
 
-Create a snapshot
+Créer un snapshot
 
 ```bash
 zfs snapshot pool/volume@$(date +"%Y-%m-%d_%H:%M")
 ```
 
-List snapshots
+Lister les snapshots
 
 ```bash
 zfs list -t snapshot -o name,creation
 ```
 
-Restore a snapshot
+Restaurer un snapshot
 
 ```bash
 zfs rollback pool/volume@2021-07-22_16:22
 ```
 
-Delete a snapshot
+Supprimer un snapshot
 
 ```bash
 zfs destroy pool/volume@2021-07-22_16:12
@@ -154,32 +154,32 @@ zfs destroy pool/volume@2021-07-22_16:12
 </TabItem>
 </Tabs>
 
-## Create a cold image of the file system 
+## Créer une image du système de fichier à froid
 
-You can clone your media (SD card, ssd disk, VPS volume...) to create a disk image. This image before compression will be the exact size of your media, that's why this method applies rather to machines of less than 64GB.
+Vous pouvez cloner votre support (carte SD, disque ssd, volume de VPS...) pour créer une image disque. Cette image avant compression sera de la taille exacte de votre support, c'est pourquoi cette méthode s'applique plutôt aux machines de moins de 64Go.
 
-Unless you can read a snapshot, this method requires you to stop the server while you create the image. With a VPS, you have to restart in rescue mode from your provider's interface.
+À moins de pouvoir lire un snapshot, cette méthode nécessite d'arrêter le serveur le temps de créer l'image. Avec un VPS, il faut redémarrer en mode rescue depuis l'interface de votre fournisseur.
 
 <Tabs>
 <TabItem value="usbimage" label="With USBimager">
 
-This can be done with [USBimager](https://bztsrc.gitlab.io/usbimager/) (Note: make sure you download the 'Read-write' version! Not the 'Write-only' version!). The process then consists of the "reverse" of the SD card flashing process:
+Ceci peut être effectué avec [USBimager](https://bztsrc.gitlab.io/usbimager/) (N.B. : assurez-vous de télécharger la version 'Read-write' ! Pas la version 'Write-only' !). Le processus consiste ensuite à "l'inverse" du processus de flashage de la carte SD:
 
-- Turn off your server
-- Retrieve the SD card and plug it into your computer
-- In USBimager, click on "Read" to create an image ("photograph") of the SD card. You can use the resulting file to restore the whole system later.
+- Éteignez votre serveur
+- Récupérez la carte SD et branchez-la dans votre ordinateur
+- Dans USBimager, cliquez sur "Read" pour créer une image ("photographie") de la carte SD. Vous pouvez utiliser le fichier obtenu pour plus tard restaurer le système en entier.
 
-More details in [USBimager documentation](https://gitlab.com/bztsrc/usbimager/#creating-backup-image-file-from-device)
+Plus de détails dans [la doc d'USBimager](https://gitlab.com/bztsrc/usbimager/#creating-backup-image-file-from-device)
 </TabItem>
 <TabItem value="dd" label="In command line with dd">
 
-It is possible to achieve the same thing with `dd` if you are comfortable with the command line:
+Il est possible d'obtenir la même chose avec `dd` si vous êtes à l'aise avec la ligne de commande:
 
 ```bash
 dd if=/dev/mmcblk0 | gzip > ./my_snapshot.gz
 ```
 
-(replace `/dev/mmcblk0` with the real name of your SD card or hard drive)
+(remplacez `/dev/mmcblk0` par le vrai nom de votre carte SD ou disque dur)
 
 </TabItem>
 </Tabs>
