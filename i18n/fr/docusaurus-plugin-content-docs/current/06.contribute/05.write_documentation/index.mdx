@@ -1,24 +1,24 @@
 ---
-title: Write documentation
+title: Rédaction de la documentation
 ---
 
-{/* TODO: migrate this doc to docusaurus */}
+{/* TODO: Migrer cette documentation pour Docusaurus */}
 
 ## Via GitHub
 
-The YunoHost documentation is managed through a [Git repository](https://github.com/YunoHost/doc).
+La documentation de YunoHost est gérée sur un [dépôt Git](https://github.com/YunoHost/doc).
 
-If you are not familiar with GitHub, there is an "Edit" button at the top of each page that will redirect you to the GitHub online editor that will help you make change proposals (Pull Requests, PR).
+Si vous n'êtes pas familier avec GitHub, il y a un bouton "Éditer" en haut de chaque page qui vous redirigera vers l'éditeur en ligne de GitHub et qui vous aidera à proposer vos modifications (appelées *Pull Requests*, PR).
 
-However, if you are on an editing spree, you should fork the repository. You can then make all the commits (changes) you want on your forked repository, and submit them all at once in the same pull requests. GitHub's etiquette would advise you to gather in the same PR all related commits.
+Cependant, si vous êtes lancé sur une série de contributions, vous devriez faire un *fork* du dépôt sur GitHub. Vous pouvez ensuite faire toutes les modifications (*commits*) que vous voulez sur votre dépôt, et les soumettre tous ensemble dans la même PR. L'étiquette sur GitHub vous encouragerait à rassembler dans une même PR tous les *commits* d'une même thématique.
 
-Because the online editor doesn't support uploading files, using Git is the prefered way if you need to upload media (e.g. images).
+Puisque l'éditeur en ligne ne permet pas d'ajouter des fichiers, utiliser Git par la ligne de commande est la méthode recommandée si vous voulez ajouter des médias (comme des images).
 
 ## Grav
 
-Under the hood, the documentation is served by the [Grav CMS](https://getgrav.org/?target=_blank).
+Sous le capot, la documentation est déployée avec le [CMS Grav](https://getgrav.org/?target=_blank).
 
-The structure of the repository is described below:
+La structure du dépôt est décrite ici:
 
 ```text
 +-- config
@@ -26,38 +26,36 @@ The structure of the repository is described below:
    +-- system.yaml
    +-- themes
        +-- yunohost-docs.yaml
-          # Some settings for the documentation theme
+          # Quelques paramètres pour le thème de la documentation
 +-- images
    # Contains the images used in the documentation pages.
 +-- pages
    # The directory containing the documentation pages.
    # The pages hierarchy is reflected by the directory hierarchy.
    +-- 00.home
-   +-- 01.administer
+   +-- 01.administrate
    +-- 02.applications
    +-- 03.community
    +-- 04.contribute
 +-- themes
     +-- learn4
     +-- yunohost-docs
-       # Contains the theme's code, which extends Learn4 theme's code
+       # Contient le code du thème, qui est une extension du thème Learn4
 +-- .gitignore
-    # Contains the instructions to not send sensitive
-    # or useless files over to the Git repository
+    # Contient les instructions pour ne pas envoyer de fichier
+    # sensible ou inutile vers le dépôt Git
 +-- README.md
 ```
 
-:::tip
-To learn more about Grav's features, you can head over to its [documentation](https://learn.getgrav.org?target=_blank). The remainder of this page will show you some specific instructions to contribute to YunoHost's documentation.
-:::
+!!!! Pour en apprendre plus sur les fonctionnalités de Grav, vous pouvez consulter sa [documentation](https://learn.getgrav.org?target=_blank) (en anglais). Le reste de cette page donne quelques consignes spécifiques pour contribuer à la documentation de YunoHost.
 
-## Grav header
+## L'en-tête des pages Grav
 
-Each page starts with a header that gives instructions to Grav on how to process them. Let us have a look into the header of this page:
+Chaque page commence par un en-tête qui donne les instructions à Grav sur comment la traiter. Regardons l'en-tête de cette page :
 
 ```text
 ---
-title: Write documentation
+title: Rédaction de la documentation
 template: docs
 taxonomy:
     category: docs
@@ -67,20 +65,18 @@ routes:
 
 ```
 
-1. The header starts and ends with a line containing `---`
-2. The `title` key manages the first heading title of the page, its name in the navigation menu on the left, and its name in the browser tab
-3. `template` and `taxonomy` keys should always be left as is. They instruct Grav to use the proper theme and order the pages properly.
-4. `routes`' `default` key makes the page available by default on `https://yunohost.org/docs/write_documentation` instead of needing to reaching it on `https://yunohost.org/docs/contribute/write_documentation`, which is where it is stored in the directory hierarchy.
+1. L'en-tête commence et finit par une ligne contenant `---` ;
+2. La clé `title` gère le premier titre de la page, son nom dans le menu de navigation à gauche, et son nom dans l'onglet du navigateur ;
+3. Les clés `template` et `taxonomy` doivent toujours être inclues et laissées telles quelles. Elles informent Grav sur quel thème appliquer aux pages, et permettent de les ordonner correctement.
+4. La clé `routes` et son enfant `default` font que la page est accessible par défaut à l'adresse `https://yunohost.org/docs/write_documentation` au lieu de devoir la chercher à l'adresse `https://yunohost.org/docs/contribute/write_documentation`, qui correspond à son emplacement réel dans la hiérarchie des dossiers.
 
-## Syntax
+## Syntaxe
 
-You can use Markdown syntax, refer to the [documentation](/contribute/write_documentation/markdown_guide) for further information.
+Vous pouvez utiliser la syntaxe Markdown, consultez la page de [documentation dédiée](/contribute/write_documentation/markdown_guide) pour plus d'information.
 
-:::note
-Note that language codes are not to be included at the beginning of the links to other documentation pages: `/en`, `/fr`, etc. are superfluous.
-:::
+! Notez qu'il ne faut pas préciser le code de langue au début des liens vers d'autres pages de la documentation : `/fr`, `/en`, etc. sont superflus.
 
-To improve Markdown capabilities, additional plugins are installed in Grav. You can refer to their own documentation on GitHub to see how to use them.
+Pour étendre les fonctionnalités de Markdown, des extensions ont été ajoutées à Grav. Vous pouvez consulter leur propre documentation sur GitHub pour découvrir comment vous en servir.
 
 ```text
 anchors
@@ -94,25 +90,23 @@ presentation-deckset
 shortcode-core
 ```
 
-## Special pages
+## Pages spéciales
 
-Some pages of the documentation are automatically or dynamically generated.
+Quelques pages de la documentation sont générées automatiquement ou dynamiquement.
 
-| Page          | Path  | Notes |
-|---------------|-------|-------|
-| Apps catalog  | `/pages/02.applications/01.catalog/apps.md` | Retrieves and processes [app.json](https://github.com/YunoHost/apps/blob/master/apps.json?target=_blank) |
-| Apps helpers  | `pages/04.contribute/04.packaging_apps/11.helpers/packaging_apps_helpers.md` | Generated by this [script](https://github.com/YunoHost/yunohost/blob/dev/doc/generate_helper_doc.py?target=_blank), from this [template](https://github.com/YunoHost/yunohost/blob/dev/doc/helper_doc_template.md?target=_blank) |
-| Per-app documentation | `pages/02.applications/02.docs/docs.md` | Lists the subpages in the same directory which have `taxonomy.category: docs, apps` in its header |
+| Page          | Chemin | Notes |
+|---------------|--------|-------|
+| Catalogue d'applications  | `/pages/02.applications/01.catalog/apps.md` | Récupère et traite le fichier [app.json](https://github.com/YunoHost/apps/blob/master/apps.json?target=_blank) |
+| Apps helpers  | `pages/04.contribute/04.packaging_apps/11.helpers/packaging_apps_helpers.md` | Générée par ce [script](https://github.com/YunoHost/yunohost/blob/dev/doc/generate_helper_doc.py?target=_blank), à partir de ce [canevas](https://github.com/YunoHost/yunohost/blob/dev/doc/helper_doc_template.md?target=_blank) |
+| Documentation des apps | `pages/02.applications/02.docs/docs.md` | Liste les sous-pages du même dossier qui ont les clés `taxonomy.category: docs, apps` dans leur en-tête |
 
-## Host your own testing documentation
+## Hébergez votre propre documentation de test
 
-:::note
-These instructions are yet to be fully tested. Please help us by reporting any issue you may have with them.
-:::
+! Ces instructions ne sont pas encore complètement testées. Aidez-nous en nous rapportant tout problème que vous rencontriez.
 
-0. Fork YunoHost documentation repository
-1. Install Grav's YunoHost package: `yunohost app install grav`
-2. Install the following plugins through Grav's admin panel or CLI:
+0. *Fork* le dépôt de la documentation YunoHost sur GitHub
+1. Installez l'app Grav pour YunoHost : `yunohost app install grav`
+2. Installez les extensions suivantes via l'admin ou la ligne de commande de Grav :
 
     ```text
     anchors
@@ -131,26 +125,26 @@ These instructions are yet to be fully tested. Please help us by reporting any i
     tntsearch
     ```
 
-3. Set-up Git Sync plugin.
-    1. Choose GitHub and your credentials on GitHub
-    2. Set the repo, e.g. `https://github.com/username/doc`
-    3. Copy the Webhook's URL, e.g. `https://grav.example/_git-sync-ca25c111f0de`
-    4. Basic settings > Folders to Sync: `pages` `images` `themes`
-    5. Git Repo Settings > User not required: Enabled
-    6. Git Repo Settings > Web Hooks secret: Enabled
-    7. Advanced settings > local branch: `master`
-    8. Advanced settings > remote branch: `master`  
-      (you can change `master` if you want to work on another branch, but do not forget to create it on GitHub first)
-    9. Advanced settings > Committer Name: your GitHub username
-    10. Advanced settings > Committer Email: your email saved on GitHub
-    11. Save and Reset Local Copy
-    12. Set `commits` and `tree` keys in `config/themes/yunohost-docs.yaml` to point to your fork's repository
-4. Make sure `user/pages/01.home` and `user/pages/02.typography` directories are deleted.
-5. Configuration > System:
-    1. Language > Supported: `en` `fr` `de` `es` `ar`
-    2. Language > Override Default Language: `en`
-    3. Language > Set language from browser: `Yes`
-    4. HTTP Headers > Etag: `Yes`
-    5. Advanced > Blueprint Compatibility: `Yes`
-    6. Advanced > YAML Compatibility: `Yes`
-    7. Advanced > Twig Compatibility: `Yes`
+3. Paramétrez l'extension Git Sync.
+    1. Choisissez `GitHub` et vos identifiants GitHub
+    2. Entrez l'adresse de votre *fork*, par exemple `https://github.com/username/doc`
+    3. Copiez l'URL du webhook, par exemple `https://grav.example/_git-sync-ca25c111f0de`
+    4. "Basic settings" > "Folders to Sync" : `pages` `images` `themes`
+    5. "Git Repo Settings" > "User not required" : Enabled
+    6. "Git Repo Settings" > "Web Hooks secret" : Enabled
+    7. "Advanced settings" > "local branch" : `master`
+    8. "Advanced settings" > "remote branch" : `master`  
+      (vous pouvez changer `master` en une autre branche si vous le souhaitez, mais n'oubliez pas de la créer au préalable sur GitHub)
+    9. "Advanced settings" > "Committer Name" : votre nom d'utilisateur sur GitHub
+    10. "Advanced settings" > "Committer Email" : votre email renseigné sur GitHub
+    11. Enregistrez et cliquez sur "Reset Local Copy"
+    12. Renseignez les adresses dans les clés `commits` et `tree` dans `config/themes/yunohost-docs.yaml` pour quelles pointent vers l'adresse de votre *fork* sur GitHub
+4. Assurez-vous que les dossiers `user/pages/01.home` et `user/pages/02.typography` sont supprimés.
+5. Dans l'administration de Grav, dans "Configuration" > "System" :
+    1. "Language" > "Supported" : `en` `fr` `de` `es` `ar`
+    2. "Language" > "Override Default Language" : `en`
+    3. "Language" > "Set language from browser" : `Yes`
+    4. "HTTP Headers" > "Etag" : `Yes`
+    5. "Advanced" > "Blueprint Compatibility" : `Yes`
+    6. "Advanced" > "YAML Compatibility" : `Yes`
+    7. "Advanced" > "Twig Compatibility" : `Yes`
