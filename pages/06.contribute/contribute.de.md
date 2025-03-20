@@ -114,7 +114,7 @@ Schaue dir an, [was schon getan wurde](https://apps.yunohost.org)!
 Du kannst dich, unabhängig von deinen Fähigkeiten, an der Entwicklung des YunoHost beteiligen.
 Sysadmins, Webentwickler, Designer und Pythonisten [sind herzlich willkommen](https://github.com/YunoHost)!
 <br>
-Erfahre im [Entwickler-Chatroom](xmpp:dev@conference.yunohost.org?join), wie du zum, Projekt [beitragen](/dev) kannst.
+Erfahre im [Entwickler-Chatroom](xmpp:dev@conference.yunohost.org?join), wie du zum, Projekt [beitragen](/contribute/dev/) kannst.
 [/center]
 [/columns]
 
