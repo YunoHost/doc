@@ -1,0 +1,53 @@
+---
+title: Emails
+---
+
+import Highlight from '@site/src/components/Highlight';
+import {HighlightWebAdmin, HighlightDiagnosis, HighlightApplications, HighlightAppInstall} from '@site/src/components/Highlight';
+
+YunoHost integra un ecosistema completo de servidor mail, permitiéndote de alojar tu propia mensajería electrónica, y pues de tener tus propias direcciones email en `algo@tu.dominio.tld`.
+
+Este ecosistema comprende un servidor SMTP (postfix), un servidor IMAP (Dovecot), un antispam (rspamd) y una configuración DKIM.
+
+## Asegurarse de que la configuración esté correcta
+
+Los emails son un ecosistema complicado y una multitud de detalles puedes impedir que funcionen correctamente.
+
+Para validar que tu configuración es correcta :
+
+- si te alojas en casa y que no tienes VPN, asegúrate de que [tu proveedor de Internet no esté bloqueando el puerto 25](/install/providers/isp/) ;
+- redirige los puertos siguiendo [esta documentación](/install/post_install/isp_box_config) ;
+- configura con cuidado los registros DNS del correo electrónico siguiendo [esta documentación](/install/post_install/dns_config) ;
+- test your configuration using the diagnostic features (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon="fa-envelope"/> Email</Highlight> ). You can also use [mail-tester.com](https://mail-tester.com), a score of at least 8~9/10 is a reasonnable goal <small>(be careful : only 3 tests per domain per day are allowed)</small>
+
+Una nota de al menos 8~9/10 es un objetivo razonable.
+
+## Clientes de mensajería
+
+Para interactuar con el servidor de mail, o sea leer y mandar emails, puedes instalar un cliente web como Roundcube o Rainloop en tu servidor - o configurar un cliente de Desktop o móvil como descrito en [esta página](/user_guide/email_configure_client).
+
+Los clientes Desktop o móvil tienen la ventaja de copiar tu emails en el equipo, así permitiendo la consulta desconectada de tus mensajes, y cierta protección frente a la posibilidad de un servidor averiado.
+
+## Configuration de los aliases de mensajeras y de las redirecciones automáticas
+
+Aliases de mensajeras y redirecciones pueden ser configurados por cada usuario. Por ejemplo, el primer usuario creado en el servidor automáticamente dispone de un alias `root@tu.dominio.tld` - lo que significa que un email mandado hacia esta dirección se encontrará en el buzón de entrada de este usuario. Las redirecciones automáticas pueden ser configuradas, por ejemplo si un usuario no quiere configurar una cuenta de correo adicional y simplemente desea recibir correos del servidor en - por ejemplo - su dirección gmail.
+
+Otra función desconocida es el uso del sufijo "+". Por ejemplo, email mandados a `johndoe+sncf@tu.dominio.tld` llegarán en el directorio 'sncf' del buzón de correo de John Dos (o directamente en el buzón si este directorio no existe). Es una técnica práctica que permite proveer una dirección de mail a un sitio y automatizar la clasificación de los correos que te mandará este sitio.
+
+## ¿ Qué ocurre si mi servidor se pone indisponible ?
+
+Si tu servidor se pone indisponible, los correos electrónicos mandados a tu servir se quedarán en una fila de espera por el lado del expedidor durante aproximadamente 5 días. El proveedor de hosting del expedidor intentará mandarte regularmente el correo, hasta que lo tire si no lo puede enviar.
+
+## Forms to remove its IP address from the blacklist
+
+It is possible that the emails sent from your YunoHost instance are considered as spam by the big email services.
+Is it possible that the IP address from your server have been previously been used to sent spam or that these email services consider your server as a spam sender.
+To ensure that your servers’ IP address isn't on these blacklists and to remove it from them, follow this [link](/administer/troubleshooting/blacklist_forms).
+
+## Migrating email from an email provider to a YunoHost instance
+
+See [this page](/user_guide/email_migration).
+
+## Configuring SMTP relay
+
+See [this page](/administer/tutorials/email_configure_relay).

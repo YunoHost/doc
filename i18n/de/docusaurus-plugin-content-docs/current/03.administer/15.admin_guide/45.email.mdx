@@ -1,0 +1,50 @@
+---
+title: Emails
+---
+
+import Highlight from '@site/src/components/Highlight';
+import {HighlightWebAdmin, HighlightDiagnosis, HighlightApplications, HighlightAppInstall} from '@site/src/components/Highlight';
+
+YunoHost wird mit einem kompletten Mail-Stack geliefert, der es Ihnen ermöglicht, Ihren eigenen E-Mail-Server zu hosten und somit Ihre eigenen E-Mail-Adressen in ```irgendjemand@deine.domain.tld``` zu haben.
+
+Der Mail-Stack enthält einen SMTP-Server (Postfix), einen IMAP-Server (Dovecot), einen Antispam-Server (rspamd) und eine DKIM-Konfiguration.
+
+## Sicherstellen dass Ihre Einrichtungen richtig sind
+
+E-Mail ist ein kompliziertes Ökosystem und eine ganze Reihe von Details können sein ordnungsgemäßes Funktionieren verhindern.
+
+Um Ihre Einstellungen zu validieren:
+
+- Wenn Sie zu Hause selbst hosten und kein VPN verwenden, stellen Sie sicher das [Ihr ISP den Port 25 nicht blockiert](/install/providers/isp/);
+- leiten Sie Ports weiter, wie in [dieser Dokumentation](/install/post_install/isp_box_config) beschrieben;
+- Mail-DNS-Einträge nach [dieser Dokumentation](/install/post_install/dns_config) sorgfältig konfigurieren;
+- test your configuration using the diagnostic features (<HighlightWebAdmin/> → <HighlightDiagnosis/> → <Highlight no_break={true} color='grey'><FAIcon icon="fa-envelope"/> Email</Highlight> ). You can also use [mail-tester.com](https://mail-tester.com), a score of at least 8~9/10 is a reasonnable goal <small>(be careful : only 3 tests per domain per day are allowed)</small>
+
+## E-Mail-Programme
+
+Um mit dem E-Mail-Server zu interagieren (E-Mails lesen und senden), können Sie entweder einen Webclient wie Roundcube oder Rainloop auf Ihrem Server installieren - oder einen Desktop-/Mobil-Client, wie auf [dieser Seite](/user_guide/email_configure_client) beschrieben, konfigurieren.
+
+Desktop- und Mobil-Clients haben den Vorteil, dass sie Ihre E-Mails auf das Gerät kopieren, was eine Offline-Anzeige und einen relativen Schutz gegen mögliche Hardware-Ausfälle Ihres Servers ermöglicht.
+
+## Konfigurieren von E-Mail-Aliasen und automatische Weiterleitungen
+
+Mail-Aliase und Weiterleitungen können für jeden Benutzer konfiguriert werden. Beispielsweise wird für den ersten,  auf dem Server angelegten Benutzer automatisch ein Alias ```root@the.domain.tld``` konfiguriert.  Das bedeutet das eine an diese Adresse gesendete E-Mail im Posteingang des ersten Benutzers endet. Automatische Weiterleitungen können konfiguriert werden, z.B. wenn ein Benutzer kein zusätzliches E-Mail-Konto einrichten möchte und nur E-Mails vom Server, z.B. auf seine E-Mail-Adresse, empfangen möchte.
+
+Eine weitere Funktion, die nur wenigen Leuten bekannt ist, ist die Verwendung von Suffixen, die mit "+" beginnen. Zum Beispiel landen E-Mails, die an ```johndoe+buchung@die.domain.tld``` gesendet werden, automatisch im Ordner ```buchung``` (Kleinbuchstaben) der Mailbox von John Doe oder im Posteingang von John Doe, wenn der Ordner ```buchung``` nicht existiert. Es ist eine praktische Technik, z.B. eine E-Mail-Adresse auf einer Website anzugeben und dann die von dieser Website kommende E-Mail einfach (über automatische Filter) zu sortieren.
+
+## Was passiert wenn mein Server nicht erreichbar ist?
+
+Wenn Ihr Server nicht mehr verfügbar ist, bleiben die an Ihren Server gesendeten E-Mails bis zu ~5 Tage lang in einer Warteschlange auf der Seite des Absenders. Der Hoster des Absenders wird regelmäßig versuchen, die E-Mail erneut zu senden, bis er sie verwirft, falls er sie nicht versenden konnte.
+
+## Formulare zum Entfernen seiner IP-Adresse von der schwarzen Liste
+
+It is possible that the emails sent from your YunoHost instance are considered as spam by the big email services.
+Is it possible that the IP address from your server have been previously been used to sent spam or that these email services consider your server as a spam sender.
+To ensure that your servers’ IP address isn't on these blacklists and to remove it from them, follow this [link](/administer/troubleshooting/blacklist_forms).
+## Eine Migration von E-Mails von einem E-Mail-Provider zu einer YunoHost-Instanz
+
+Siehe [diese Seite](/user_guide/email_migration).
+
+## Configuring SMTP relay
+
+See [this page](/administer/tutorials/email_configure_relay).
