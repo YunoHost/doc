@@ -1,5 +1,5 @@
 ---
-title: Configure email clients
+title: Configurar un cliente de correo electrónico
 ---
 
 import Tabs from '@theme/Tabs';
@@ -10,25 +10,26 @@ export function SmallInline({url, alt}) {
   return (<img src={useBaseUrl(url)} width="60" style={{verticalAlign: "middle", margin: "5px"}} alt={alt}/>);
 }
 
-You can fetch and send emails using your YunoHost instance from desktop email clients such as Thunderbird Desktop or on your smartphone with applications like K-9 Mail.
+Es posible de consultar y enviar correos de tu YunoHost con un cliente de correo electrónico como Thunderbird Desktop o K-9 Mail en el teléfono.
+Normalmente, al añadir tu cuenta en el cliente de correo se va a configurar automáticamente, pero por si acaso no funciona, puedes configurarlo manualmente.
 
-Modern mail clients should be able to configure themselves automatically. If autoconfiguration fails, you can do it manually following the instructions below. (If the autoconfiguration fails though, it should be understood as a bug in YunoHost, and we would be glad to read your feedback to try to reproduce the issue on our side!)
+### Configuración general
 
-### Generic settings
+A continuación puedes encontrar los elementos a configurar en el cliente de correo (`domain.tld` es todo lo que es después de @ en tu dirección de correo, y `nombre_de_usuario` es lo que es antes del @).
 
-Here are the element you should enter to manually configure your mail client (`domain.tld` refers to what's after the @ in your email address, and `username` what's before @).
-
-| Protocol | Port | Encryption | Authentication  | Username                               |
+| Protocolo | Puerto | Seguridad | Autenticación  | Nombre de usuario                               |
 | :--:     | :-:  | :--:       | :--:            | :--:                                   |
-| IMAP     | 993  | SSL/TLS    | Normal password | `username` (without the `@domain.tld`) |
-| SMTP     | 587  | STARTTLS   | Normal password | `username` (without the `@domain.tld`) |
+| IMAP     | 993  | SSL/TLS    | Normal password | `nombre_de_usuario` (sin `@domain.tld`) |
+| SMTP     | 587  | STARTTLS   | Normal password | `nombre_de_usuario` (sin `@domain.tld`) |
 
 ### Client by client
 
 <Tabs>
 <TabItem value="thunderbird" label="Mozilla Thunderbird">
 
-##### <SmallInline url='/img/thunderbird.png'/> Configure Thunderbird Desktop (on a desktop computer)
+##### <SmallInline url='/img/thunderbird.png'/> Configurar Thunderbird Desktop (en un ordenador)
+
+Para configurar manualmente un nuevo cuenta en Thunderbird Desktop, añadir las informaciones de la cuenta, y después seleccionar el puerto 993 con SSL/TLS para IMAP, y puerto 587 con STARTTLS para SMTP. Después seleccionar 'Normal Password' para Autenticación y haz click en el botón 'Advanced Config'. Se puede que tendrás que aceptar los certificados para que todo funciona normalmente.
 
 To manually configure a new account in Thunderbird Desktop, add the account information, then click on 'Configure manually'.
 
@@ -41,7 +42,7 @@ You may need to accept the certificate exceptions for fetching mails and after y
 ![](/img/thunderbird_config_1.png)
 ![](/img/thunderbird_config_2.png)
 
-- [Manage alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
+- [Gestionar un alias para una dirección de correo electrónico](https://support.mozilla.org/es/kb/configurar-un-alias-para-una-direccin-de-correo-el)
 
 </TabItem>
 <TabItem value="k9" label="K-9 Mail (Thunderbird Mobile)">

@@ -1,48 +1,48 @@
 ---
-title: Migrating email from an email provider to a YunoHost instance
+title: Spostare le proprie mail da un server terzo a YunoHost
 ---
 
-*[Documentation linked to YunoHost email](/administer/admin_guide/email)*.
+*[Documentazione integrativa del paragrafo relativo alle email di YunoHost](/administer/admin_guide/email)*.
 
-Migration of emails from one server to another can be done with two recommended tools: ImapSync or Larch.
+La migrazione delle proprie mail verso il proprio server YunoHost, può avvenire attraverso l'utilizzo di due programmi appositi : ImapSync o Larch.
 
-This tool must be installed on your desktop computer. The transfer method looks at this schema:
+Questi programmi dovranno essere installati su un pc che funge da client. La procedura di migrazione rispecchia lo schema seguente:
 
-**`Old email server −> desktop computer with ImapSync or Larch −> new email server`**
+**`Attuale server email −> pc client con installati ImapSync o Larch −> nuovo server email (YunoHost)`**
 
 ### ImapSync
 
-[ImapSync site](http://imapsync.lamiral.info/)
+[Sito web di ImapSync](http://imapsync.lamiral.info/)
 
-Install ImapSync on your client computer by following this [guide](http://imapsync.lamiral.info/INSTALL):
-
-```bash
-sudo dnf install imapsync # Under Fedora
-```
-
-Transfer emails from one server to another:
+Installate ImapSync sul pc client seguendo questa [guida](http://imapsync.lamiral.info/INSTALL) :
 
 ```bash
-imapsync --host1 <domain/IP> --port1 993 --ssl1 --user1 <user> --password1 <password> \
---host2 <domain/IP> --port2 993 --ssl2 --user2 <user> --password2 <password>
+sudo dnf install imapsync # Per Fedora
 ```
 
-Note that transfer settings `--port 993` and `--ssl` are specific to YunoHost email server.
+Spostate le mail dal vecchio al nuovo server:
+
+```bash
+imapsync --host1 <dominio/IP> --port1 993 --ssl1 --user1 <utente> --password1 <password> \
+--host2 <dominio/IP> --port2 993 --ssl2 --user2 <utente> --password2 <password>
+```
+
+I parametri di migrazione `--port 993` e `--ssl` sono specifici di un server mail YunoHost.
 
 ### Larch
 
-[Larch site](https://github.com/rgrove/larch/)
+[Sito web di Larch](https://github.com/rgrove/larch/)
 
-After beforehand installed `gem`, install `larch` on your client computer:
+Installate `gem`, e in seguito installate `larch` sul pc client :
 
 ```bash
 sudo gem install larch
 ```
 
-Transfer emails from one server to another:
+Spostate le mail dal vecchio al nuovo server:
 
 ```bash
-larch -a -f imaps://server_of_origin.org -t imaps://server_of_destination.org
+larch -a -f imaps://server_di_origine.org -t imaps://server_di_destinazione.org
 ```
 
-For other types of transfer refer to [Larch documentation](https://github.com/rgrove/larch#label-Usage).
+Per altre tipologie di migrazione, fate riferimento alla [guida di Larch](https://github.com/rgrove/larch#label-Usage).

@@ -1,5 +1,6 @@
 ---
-title: Configure email clients
+title: Configurer les clients courriels
+
 ---
 
 import Tabs from '@theme/Tabs';
@@ -10,25 +11,25 @@ export function SmallInline({url, alt}) {
   return (<img src={useBaseUrl(url)} width="60" style={{verticalAlign: "middle", margin: "5px"}} alt={alt}/>);
 }
 
-You can fetch and send emails using your YunoHost instance from desktop email clients such as Thunderbird Desktop or on your smartphone with applications like K-9 Mail.
+Vous pouvez récupérer et envoyer des emails avec votre instance YunoHost grâce à des logiciels comme Thunderbird Desktop, ou sur votre smartphone grâce à des applications comme K-9 Mail.
 
-Modern mail clients should be able to configure themselves automatically. If autoconfiguration fails, you can do it manually following the instructions below. (If the autoconfiguration fails though, it should be understood as a bug in YunoHost, and we would be glad to read your feedback to try to reproduce the issue on our side!)
+Normalement, votre client email devrait recevoir la configuration automatiquement lorsque vous ajoutez un compte. Si cela ne fonctionne pas, il est possible de le faire manuellement en suivant les quelques étapes suivantes. (Cependant, cela devrait être compris comme étant un bug dans YunoHost, et le cas échéant, c'est cool si vous nous notifiez du problème pour que nous puissions tenter de le reproduire et corriger !)
 
-### Generic settings
+### Réglages génériques
 
-Here are the element you should enter to manually configure your mail client (`domain.tld` refers to what's after the @ in your email address, and `username` what's before @).
+Voici les éléments que vous devrez entrer pour configurer manuellement votre client email (`votre.domaine.tld` fait référence à ce qui est après le @ dans votre adresse email, et `nom_utilisateur` ce qui est avant @).
 
-| Protocol | Port | Encryption | Authentication  | Username                               |
-| :--:     | :-:  | :--:       | :--:            | :--:                                   |
-| IMAP     | 993  | SSL/TLS    | Normal password | `username` (without the `@domain.tld`) |
-| SMTP     | 587  | STARTTLS   | Normal password | `username` (without the `@domain.tld`) |
+| Protocole | Port | Chiffrement | Authentification    | Login                                         |
+| :--:      | :-:  | :--:        | :--:                | :--:                                          |
+| IMAP      | 993  | SSL/TLS     | Mot de passe normal | `nom_utilisateur` (sans `@votre.domaine.tld`) |
+| SMTP      | 587  | STARTTLS    | Mot de passe normal | `nom_utilisateur` (sans `@votre.domaine.tld`) |
 
-### Client by client
+### Client par client
 
 <Tabs>
 <TabItem value="thunderbird" label="Mozilla Thunderbird">
 
-##### <SmallInline url='/img/thunderbird.png'/> Configure Thunderbird Desktop (on a desktop computer)
+#### <SmallInline url='/img/thunderbird.png'/> Configurer Thunderbird Desktop
 
 To manually configure a new account in Thunderbird Desktop, add the account information, then click on 'Configure manually'.
 
@@ -41,21 +42,21 @@ You may need to accept the certificate exceptions for fetching mails and after y
 ![](/img/thunderbird_config_1.png)
 ![](/img/thunderbird_config_2.png)
 
-- [Manage alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
+- [Gérer les alias mails](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
 
 </TabItem>
 <TabItem value="k9" label="K-9 Mail (Thunderbird Mobile)">
 
-##### <SmallInline url='/img/k9mail.png'/> Configure K-9 Mail / Thunderbird Mobile (on Android)
+#### <SmallInline url='/img/k9mail.png'/> Configurer K-9 Mail / Thunderbird Mobile (sur Android)
 
-Follow the following steps. (As for Thunderbird Desktop, you might need to accept certificates at some points)
+Suivez les instructions suivantes (comme pour Thunderbird Desktop, il vous faudra peut-être accepter des certificats à un moment).
 
 - Enter your email address then click "Next"
 
-  <img src="/img/thunderbird_mobile_config_1.png" alt='' width="280"/>
+<img src="/img/thunderbird_mobile_config_1.png" alt='' width="280"/>
 - Enter your domain name in the "Server" field, fill the "Security" and "Port" fields as per the IMAP row in the table above, then enter your password in the "Password" field and click "Next"
 
-  <img src="/img/thunderbird_mobile_config_2.png" alt='' width="280"/>
+<img src="/img/thunderbird_mobile_config_2.png" alt='' width="280"/>
 - Again, your domain name in the "Server" field, but fill the "Security" and "Port" fields as per the SMTP row in the table above, then enter your password in the "Password" field and click "Next"
 
   <img src="/img/thunderbird_mobile_config_3.png" alt='' width="280"/>
@@ -63,16 +64,15 @@ Follow the following steps. (As for Thunderbird Desktop, you might need to accep
 </TabItem>
 <TabItem value="dekko" label="Dekko">
 
-##### <SmallInline url='/img/dekko-app.png'/> Configure Dekko (on Ubuntu Touch)
+#### <SmallInline url='/img/dekko-app.png'/> Configurer Dekko (sur Ubuntu Touch)
 
-The first time you can simply choose "Add account". If you already have an account configured, tap the hamburger menu then tap the gear, choose Mail, Accounts and press the '+'-symbol.
+La première fois, vous pouvez simplement choisir « Ajouter un compte ». Si vous avez déjà un compte configuré, appuyez sur le menu hamburger puis sur le rouage, choisissez Courrier, Comptes et appuyez sur le symbole '+'.
 
-Then you choose IMAP. Fill in the fields and press Next. Now Dekko will look for the configuration. Check that all fields are correct. Make sure you have your YunoHost username, NOT your email address and choose "Allow untrusted certificates". Do this for IMAP and SMTP and press Next. Dekko will now synchronise the account after which you are done. Congratz!
+Sélectionnez ensuite IMAP. Remplissez les champs et appuyez sur Suivant. Dekko va ensuite chercher la configuration. Vérifiez que tous les champs sont corrects. Assurez-vous d'avoir votre nom d'utilisateur YunoHost, PAS votre adresse email, et choisissez « Autoriser les certificats non fiables ». Faites ceci pour IMAP et SMTP et appuyez sur Suivant. Dekko va ensuite synchroniser le compte, après quoi vous aurez terminé. Félicitations !
 
 <img src="/img/dekko_config_1.png" width="280"/>
 <img src="/img/dekko_config_2.png" width="280"/>
 <img src="/img/dekko_config_3.png" width="280"/>
 <img src="/img/dekko_config_4.png" width="280"/>
-
-</TabItem>
+  </TabItem>
 </Tabs>

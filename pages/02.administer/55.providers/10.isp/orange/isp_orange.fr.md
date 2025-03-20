@@ -18,7 +18,7 @@ La box d’Orange bloque le port 25 pour limiter l’envoi de spam.
 La solution restante pour héberger son courrier chez soi consiste à le faire passer par les serveurs SMTP d’Orange.
 
 ! YunoHost intègre depuis la version 4.1 une intégration de la configuration des relais SMTP
-! Cette section devrait donc être retravaillée (voire supprimée) au profit de [cette page](/email_configure_relay)
+! Cette section devrait donc être retravaillée (voire supprimée) au profit de [cette page]administer/tutorials/email_configure_relay
 
 Pour cela, il faut éditer le fichier de configuration de postfix avec la commande :
 
