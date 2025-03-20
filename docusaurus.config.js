@@ -40,6 +40,11 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['ar', 'ca', 'de', 'en', 'es', 'fr', 'it', 'oc', 'ru'],
+    localeConfigs: {
+      ar: {
+        direction: 'rtl',
+      },
+    },
   },
 
   presets: [
@@ -49,6 +54,8 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          // To enable the editing of the *localized* files
+          editLocalizedFiles : true,
           routeBasePath: '/',
           // TODO: Update this when merging the PR
           editUrl: 'https://github.com/YunoHost/doc/tree/docusaurus',
