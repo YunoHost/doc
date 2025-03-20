@@ -5,6 +5,11 @@ title: Configurare un programma per mail
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+export function SmallInline({url, alt}) {
+  return (<img src={useBaseUrl(url)} width="60" style={{verticalAlign: "middle", margin: "5px"}} alt={alt}/>);
+}
+
 Con la vostra istanza YunoHost potete inviare e ricevere email grazie a programmi come Thunderbird Desktop sul pc o K-9 Mail sul vostro smartphone.
 
 Normalmente, il vostro client email si configura automaticamente quando aggiungete un account. Nel caso la configurazione automatica non funzionasse, è possibile configurare manualmente il client, seguendo i passaggi successivi. (la mancata configurazione automatica del client, è da considerarsi come un bug di YunoHost, sarebbe gentile da parte vostra farci pervenire una segnalazione, potremmo così cercare di correggere il problema!)
