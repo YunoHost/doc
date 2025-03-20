@@ -1,210 +1,210 @@
 ---
-title: Use Git to package apps
+title: Utiliser Git pour packager les applications
 ---
 
-Git... Our dear beloved Git, which can be described also as "Goddamn Idiotic Truckload of sh\*t", according to Linus.  
-Be sure if you don't know Git yet that you will soon agree with that description.
+Git... Notre cher Git bien-aimé, que l'on peut aussi décrire comme "Goddamn Idiotic Truckload of sh\*t"  (Un stupide putain gros tas de m\*rde), selon Linus.  
+Si vous ne connaissez pas encore Git, soyez sûr que vous serez bientôt d'accord avec cette description.
 
-YunoHost and all our apps are on the Git forge GitHub. Which means that if you want to work on an app, sooner or later you're going to have to deal with Git.  
-So let's see how to work with Git to be able to contribute in the context of YunoHost.
+YunoHost et toutes nos applications sont sur la forge Git GitHub. Ce qui veut dire que si vous voulez travailler sur une application, tôt ou tard vous allez devoir faire face à Git.  
+Alors voyons comment travailler avec Git pour pouvoir contribuer dans le contexte de YunoHost.
 
-## Working with GitHub
+## Travailler avec GitHub
 
-Let's go first for the easy part, GitHub comes with an "easy" web interface to deal with.
+Commençons par la partie facile, GitHub est livré avec une interface web "facile" à utiliser.
 
-*First things first, unfortunately there's no way around, you need an account on GitHub.*
+*Tout d'abord et malheureusement, il n'y a pas moyen de contourner ça, vous devez avoir un compte sur GitHub.*
 
 ### Branches
 
-Then, probably one of the most important thing, **do not work directly on the master branch**.  
-Sorry, it has to be said !
+Ensuite, et c'est probablement l'une des choses les plus importantes, **ne travaillez pas directement sur la branche master**.  
+Désolé, il fallait que ce soit dit !
 
-Branches are, as GitHub explains, "*a parallel version of a repository. It is contained within the repository, but does not affect the other branches. Allowing you to work freely without disrupting the "live" version.*"
+Les branches sont, comme l'explique GitHub, "*une version parallèle d'un dépôt. Elle est contenue dans le dépôt, mais n'affecte pas les autres branches. Elle vous permet de travailler librement sans perturber la version "live".*"
 
-The master branch is the branch that contains the version of the app users will actually install and use.  
-The usual thing to do is to work from the testing branch, and when everything is settled and tested, you can merge the testing branch in master, so users will enjoy the new release of your package.
+La branche master est la branche qui contient la version de l'application que les utilisateurs installeront et utiliseront effectivement.  
+La bonne habitude à prendre est de travailler à partir de la branche testing, et lorsque tout est réglé et testé, vous pouvez fusionner la branche testing dans master, afin que les utilisateurs puissent profiter de la nouvelle version de votre package.
 
-To see and change the current branch, use this button:  
+Pour voir et modifier la branche actuelle, utilisez ce bouton :  
 ![](/img/github_branch.png)
 
-### Edit a file
+### Modifier un fichier
 
-Now that you're on the right branch, let's see how to edit a file on GitHub.
+Maintenant que vous êtes sur la bonne branche, voyons comment éditer un fichier sur GitHub.
 
-You can edit any file by using the small pencil icon:  
+Vous pouvez éditer n'importe quel fichier en utilisant l'icône du petit crayon :  
 ![](/img/github_edit.png)
 
-If you don't have the permission to write on the repository, you will see (as on the picture) that you're going to create a fork (we'll see below what a fork is).  
-If you have the permission to write, you will just edit the file, without forking.
+Si vous n'avez pas la permission d'écrire sur le dépôt, vous verrez (comme sur l'image) que vous allez créer un fork (nous verrons plus loin ce qu'est un fork).  
+Si vous avez la permission d'écrire, vous allez simplement modifier le fichier, sans forker.
 
-### Commit your changes
+### Validez vos modifications
 
-When you're done with your modification on the file, you can commit your changes.  
-Behind that word, the idea is quite simple, you're just going to save your changes...  
+Lorsque vous avez fini de modifier le fichier, vous pouvez faire un commit de vos modifications.  
+Derrière ce mot, l'idée est assez simple, vous allez juste enregistrer vos modifications...  
 ![](/img/github_commit.png)
 
-The first field is the name of your commit, a very short sentence to explain why you did this modification.  
-The second field is a large one for a more complete explanation, if you need it.
+Le premier champ est le nom de votre commit, une phrase très courte pour expliquer pourquoi vous avez fait cette modification.  
+Le deuxième champ est un champ plus grand pour une explication plus complète, si vous en avez besoin.
 
-Finally, if you're editing a repository on which you have permission to write, you can either commit directly to the current branch or create a new branch.  
-It's usually better to create a new branch, that way you keep your modifications on a *parallel* version of the repository. Your modifications will be discussed in a pull request (explained below) then finally merged into the original branch.
+Enfin, si vous modifiez un dépôt sur lequel vous avez la permission d'écrire, vous pouvez soit faire un commit directement sur la branche en cours, soit créer une nouvelle branche.  
+Il est généralement préférable de créer une nouvelle branche, de cette façon vous gardez vos modifications sur une version *parallèle* du dépôt. Vos modifications seront discutées dans une pull request (expliquée ci-dessous) puis finalement fusionnées dans la branche d'origine.
 
-### To fork or not to fork
+### Forker ou ne pas forker
 
-A fork is a copy of a repository into your own account.  
-We have seen before that if you don't have permission to write into a repository, editing a file will automatically create a fork.  
-Because the fork is on your account, you always have the permission to write on it.  
-But even if a fork is not the real repository, but just a copy, a fork is always linked to its parent. We'll see later that to create a fork is really useful when opening a pull request.
+Un fork est une copie d'un dépôt sur votre propre compte.  
+Nous avons déjà vu que si vous n'avez pas l'autorisation d'écrire dans un dépôt, la modification d'un fichier créera automatiquement un fork.  
+Comme le fork est sur votre compte, vous avez toujours la permission d'écrire dessus.  
+Mais même si un fork n'est pas le véritable dépôt, mais juste une copie, un fork est toujours lié à son parent. Nous verrons plus tard que la création d'un fork est vraiment utile lors de l'ouverture d'une pull request.
 
-When you create a new package, it's common to use the [example app](https://github.com/YunoHost/example_ynh) as a base.  
-But, because you don't want to keep that link to the example app, you should not fork the example app. You will rather clone the app.  
-Unfortunately, to clone an app is a little bit trickier on GitHub. We will see later how to clone to a local repository instead.
+Lorsque vous créez un nouveau package, il est courant d'utiliser l'[application exemple](https://github.com/YunoHost/example_ynh) comme base.  
+Mais, comme vous ne voulez pas garder ce lien vers l'application d'exemple, vous ne devez pas forker l'application d'exemple. Vous la clonerez plutôt.  
+Malheureusement, cloner une application est un peu plus compliqué sur GitHub. Nous verrons plus tard comment cloner vers un dépôt local à la place.
 
-We have seen how to edit a file, and how this could fork the app.  
-But, when you want to edit multiple files, the GitHub interface isn't really the best way. In such situation, you would rather clone the repository and work on a local repository.  
-You may still need to fork on your own account to be able to save your modifications if you don't have the permission on the distant repository.
+Nous avons vu comment éditer un fichier, et comment cela peut forker l'application.  
+Mais, lorsque vous voulez éditer plusieurs fichiers, l'interface GitHub n'est pas vraiment la meilleure solution. Dans une telle situation, vous préférerez cloner le dépôt et travailler sur un dépôt local.  
+Il se peut que vous deviez tout de même forker sur votre propre compte pour pouvoir enregistrer vos modifications si vous n'avez pas les autorisations sur le dépôt distant.
 
 ### Pull request
 
-After you have committed your changes, whether on a branch or a fork, you want to propose your modifications to be integrated into the main repository, or the original branch.  
-To do so, you're going to *create a pull request*. GitHub usually ask you directly if you want to do so.  
-Otherwise, you'll find the button to create a pull request just here:  
+Après avoir effectué vos commits, que ce soit sur une branche ou un fork, vous souhaitez proposer vos modifications pour qu'elles soient intégrées dans le dépôt principal, ou dans la branche d'origine.  
+Pour ce faire, vous allez créer une pull request. GitHub vous demande généralement directement si vous souhaitez le faire.
+Sinon, vous trouverez le bouton de création d'une pull request juste ici :  
 ![](/img/github_pull_request.png)
 
-When creating a pull request from a fork, to ease the work of the reviewers, **do never** uncheck the checkbox *Allow edits from maintainers*. That option simply allow the maintainers of the original repository to edit directly your work.
+Lors de la création d'une pull request à partir d'un fork, pour faciliter le travail de révision du code, **ne jamais** décocher la case *Allow edits from maintainers*. Cette option permet simplement aux mainteneurs du dépôt d'origine de modifier directement votre travail.
 
-### YunoHost-Apps organization
+### Organisation YunoHost-Apps
 
-Following the [guide for packaging application within YunoHost](/contribute/packaging_apps/), your app has to be into the YunoHost-Apps organization, but if you have never contributed to an app before or never had any app into this organization you may not have the permission.
+Conformément au [guide de création d'applications dans YunoHost](/contribute/packaging_apps/), votre application doit être intégrée à l'organisation YunoHost-Apps, mais si vous n'avez jamais contribué à une application auparavant ou si vous n'avez jamais eu d'application dans cette organisation, vous n'en aurez peut-être pas l'autorisation.
 
-First, you need the permission to write into the organization, to do so, ask to the Apps group on the Apps XMPP room.
+Tout d'abord, vous devez avoir la permission d'écrire dans l'organisation, pour ce faire, demandez au groupe Apps sur le salon XMPP Apps.
 
-To transfer your app to the YunoHost-Apps organization, go to your repository and to *Settings* tab.  
-At the bottom of the page, you will find *Transfer ownership*.  
-Into the field *New owner’s GitHub username or organization name*, type *YunoHost-Apps*.  
-Your repo will be moved into the organization, you don't have to remove the original repository.
+Pour transférer votre application sur l'organisation YunoHost-Apps, allez dans votre dépôt et dans l'onglet *Settings*.  
+En bas de la page, vous trouverez *Transfer ownership*.  
+Dans le champ *New owner’s GitHub username or organization name*, tapez *YunoHost-Apps*.  
+Votre dépôt sera déplacé dans l'organisation, vous n'avez pas besoin de supprimer le dépôt d'origine.
 
-## Working with Git locally
+## Travailler avec Git en local
 
-As we have seen, you can do a lot of things directly on GitHub.  
-But when you need to edit multiple files, or when you need to work on your code on your own, it's better to work directly on your computer.
+Comme nous l'avons vu, vous pouvez faire beaucoup de choses directement sur GitHub.  
+Mais lorsque vous devez modifier plusieurs fichiers, ou lorsque vous devez travailler sur votre code de votre côté, il est préférable de travailler directement sur votre ordinateur.
 
-Before going to the hellish part of Git, let's see two different ways to start working with Git.
+Avant d'aller dans la partie infernale de Git, voyons 2 façons différentes de commencer à travailler avec Git.
 
-### First case: Creating a new package
+### Premier cas : Créer un nouveau package
 
-You have shockingly discovered that the wonderful app you love to use everyday does not yet have its YunoHost package. And because you're nice, you decided to create yourself the package, so everyone will enjoy that app the way you do.  
-What a good idea!
+Vous avez découvert, choqué, que la merveilleuse application que vous aimez utiliser tous les jours n'a pas encore son package YunoHost. Et parce que vous êtes sympa, vous avez décidé de créer vous-même le package, pour que tout le monde puisse apprécier cette application.  
+Quelle bonne idée !
 
-The best is to start from the [example app](https://github.com/YunoHost/example_ynh). But as we have explained before, you don't want to fork, because if you do so, you're going to keep that link to the example app and it's really annoying.  
-So, you're going to do it differently. You're going to clone!
+Le mieux est de commencer par l'[application d'exemple](https://github.com/YunoHost/example_ynh). Mais comme nous l'avons déjà expliqué, vous ne voulez pas forker, parce que si vous le faites, vous allez garder ce lien vers l'application d'exemple et c'est vraiment ennuyeux.  
+Donc, vous allez le faire différemment. Vous allez cloner !
 
-#### git clone
+#### `git clone`
 
-To clone, you're going to do:
+Pour cloner, vous allez faire :
 
 ```bash
 git clone https://github.com/YunoHost/example_ynh
 ```
 
-`git clone` will download a copy of the repository. You will have the complete repository, with its branches, commits, and everything (into that apparently little `.git` directory).
+`git clone` téléchargera une copie du dépôt. Vous aurez le dépôt complet, avec ses branches, ses commits, et tout le reste (dans cet apparent petit répertoire `.git`).
 
-To git clone is usually the starting point of any local work with Git.
+git clone est généralement le point de départ de tout travail local avec Git.
 
-*A side note though, if you expect to send your modifications back to the distant repository on GitHub, be sure to have the permission to write on this repository. Otherwise, fork before and clone your fork, on which you do have the permission.*
+*Toutefois, si vous comptez envoyer vos modifications sur le dépôt distant sur GitHub, assurez-vous d'avoir les droits d'écriture sur ce dépôt. Sinon, forkez avant et clonez votre fork, pour lequel vous avez la permission.*
 
-#### My brand new package, continued
+#### Mon nouveau package, suite
 
-In the context of a new package, you will also need to create a repository on GitHub to nest your package.
-Which is as simple as a big green *New* button.  
-Don't bother with README, .gitignore or license. Just create the repository itself.  
-you can now git clone that new repository.  
+Dans le contexte d'un nouveau package, vous devrez également créer un dépôt sur GitHub pour y mettre votre package.  
+Ce qui n'est pas plus compliqué qu'un gros bouton vert *New*.  
+Ne vous embêtez pas avec des README, .gitignore ou licence. Créez simplement le dépôt lui-même.  
+vous pouvez maintenant cloner ce nouveau dépôt avec Git.  
 ![](/img/github_create_new_repo.png)
 
-You now have 2 repositories cloned on your computer.  
-Copy all the files from the example_ynh app, **except the .git directory** (You just want the files themselves) to your new package.  
+Vous disposez maintenant de 2 dépôts clonés sur votre ordinateur.  
+Copiez tous les fichiers de l'application example_ynh, **excepté le répertoire .git** (vous voulez juste les fichiers eux-mêmes) dans votre nouveau package.
 
-*If you want, you can remove the example_ynh app. We don't need it anymore.*
+*Si vous le souhaitez, vous pouvez supprimer l'application example_ynh. Nous n'en avons plus besoin.*
 
-You're ready to work on your new package !
+Vous êtes prêt à travailler sur votre nouveau package !
 
-### Second case: Working locally on a repository
+### Deuxième cas : Travailler localement sur un dépôt
 
-You already have a repository, but what you want is just to work locally, so you can modify multiple files.  
-Simply clone the repository, the .git directory is the link to the distant repository. Nothing else to do than a `git clone`.
+Vous disposez déjà d'un dépôt, mais ce que vous voulez, c'est travailler localement, de sorte que vous puissiez modifier plusieurs fichiers.  
+Il vous suffit de cloner le dépôt, le répertoire .git est le lien vers le dépôt distant. Rien d'autre à faire qu'un `git clone`.
 
 ### Branches
 
-You do have your local copy of the repository, but because you have read carefully this documentation until then, you know that you should be sure to be on the testing branch before starting to work.
+Vous avez bien votre copie local du dépôt, mais comme vous avez lu attentivement cette documentation jusque-là, vous savez que vous devez vous assurer d'être sur la branche testing avant de commencer à travailler.
 
-To see the branches, and to know on which you actually are, while into the directory of your repository, type `git branch`.  
-The current branch is highlighted and preceded by a `*`.
+Pour voir les branches, et savoir sur quelle branche vous êtes réellement, alors que vous êtes dans le répertoire de votre dépôt, tapez `git branch`.  
+La branche courante est mise en évidence et précédée d'un "\*".
 
 ### `git checkout`
 
-If it appears that you're not on the branch you wanted to be, or you're actually on master (which is bad !), you can move to another branch with `git checkout`
+S'il apparaît que vous n'êtes pas sur la branche où vous vouliez être, ou que vous êtes en fait sur master (ce qui est mal !), vous pouvez passer à une autre branche avec `git checkout`.
 
 ```bash
 git checkout testing
 ```
 
-*Read carefully what Git says when you validate a command, do never forget that Git is sneaky...*
+*Lisez attentivement ce que Git dit quand vous validez une commande, n'oubliez jamais que Git est sournois...*
 
-### `git pull` before anything else
+### `git pull` avant tout
 
-You're finally on the right branch, and ready to work.  
-**Wait ! A nasty trap is waiting for you...**  
-Before ending up in an inextricable situation. Start with a `git pull` to update your branch to the latest change from the distant repository.
+Vous êtes enfin dans la bonne branche, et prêt à travailler.  
+**Attendez ! Un vilain piège vous attend...**  
+Avant de vous retrouver dans une situation inextricable. Commencez par un `git pull` pour mettre à jour votre branche avec les derniers changements du dépôt distant.
 
-*Sometimes, you will encounter an impossible situation where Git is saying that you can't pull because you have local changes. But you don't care of those local modifications, you just want to get the last version of the distant branch. But Git don't care about what YOU want...*  
-*I have to admit that my only solution is as highly efficient as dirty... A good old `rm -r` of the repository and a `git clone`*
+*Parfois, vous rencontrerez une situation impossible où Git vous dira que vous ne pouvez pas pull parce que vous avez des changements locaux. Mais vous ne vous souciez pas de ces modifications locales, vous voulez juste obtenir la dernière version de la branche distante. Mais Git ne se soucie pas de ce que VOUS voulez...*  
+*Je dois admettre que ma seule solution est aussi efficace que sale... Un bon vieux `rm -r` du dépôt et un `git clone`*
 
-### Let's work
+### Il est temps de travailler
 
-Eventually, you can work on your code.  
-When you are finally ok with what you have done, it's time to validate your work.
+Vous pouvez finalement travailler sur votre code.  
+Lorsque vous êtes enfin d'accord avec ce que vous avez fait, il est temps de valider votre travail.
 
-The first step is to inform Git about which file(s) to validate. To do so, we'll use `git add`
+La première étape consiste à informer Git sur le(s) fichier(s) à valider. Pour ce faire, nous utiliserons `git add`.
 
 ```bash
-git add my_file
-git add my_other_file and_also_this_one
+git add mon_fichier
+ajouter mon_autre_fichier et_aussi_celui_ci
 ```
 
-If you want to validate all your work, you can also simply do
+Si vous souhaitez valider l'ensemble de votre travail, vous pouvez aussi simplement faire
 
 ```bash
 git add --all
 ```
 
-To check the current status of your validation, you can use `git status`. It will show you which files will be included into your commit, and which files are modified, but not yet included.  
-`git status -v` will show also which part of the files are modified. A good way to be sure that you didn't make a mistake before committing.
+Pour vérifier l'état actuel de votre validation, vous pouvez utiliser `git status`. Il vous montrera quels fichiers seront inclus dans votre commit, et quels fichiers sont modifiés, mais pas encore inclus.  
+`git status -v` vous indiquera également quelle partie des fichiers est modifiée. Une bonne façon de s'assurer que vous n'avez pas fait d'erreur avant de faire un commit.
 
 ### `git checkout -b`
 
-Before committing, or after, or before starting to work. Whenever you feel like it !  
-You should consider adding your work to a separate branch, that way, it will be easy to create a pull request to merge into the testing branch and discuss with the other packagers what you suggest to change.
+Avant de faire un commit, ou après, ou avant de commencer à travailler. Quand vous en avez envie !  
+Vous devriez envisager d'ajouter votre travail à une branche séparée, de cette façon, il sera facile de créer une pull request dans la branche testing et de discuter avec les autres packagers de ce que vous suggérez de changer.
 
-To create a new branch and move to this branch, you can use `git checkout -b my_new_branch`.
+Pour créer une nouvelle branche et passer à cette branche, vous pouvez utiliser `git checkout -b my_new_branch`.
 
 ### `git commit`
 
-To commit is simply to validate your work in Git. As you can do in GitHub.  
-To have the same fields that you had on GitHub, with the name of the commit, and a longer explanation. You can simply use `git commit`.  
-The first line, before the comments, is for the name of the commit.  
-After all the comments, you can add an explanation if you want to.
+Faire un commit, c'est simplement valider son travail dans Git. Comme vous pouvez le faire dans GitHub.  
+Pour avoir les mêmes champs que vous aviez sur GitHub, avec le nom du commit, et une explication plus longue. Vous pouvez simplement utiliser `git commit`.  
+La première ligne, avant les commentaires, est pour le nom du commit.  
+Après tous les commentaires, vous pouvez ajouter une explication si vous le souhaitez.
 
-If you want to commit with only a name for your commit, you can use a simple command:
+Si vous voulez faire un commit avec seulement un nom pour votre commit, vous pouvez utiliser une simple commande :
 
 ```bash
 git commit -m "My commit name"
 ```
 
-### Push to the distant repository
+### `git push` vers le dépôt distant
 
-Your changes are validated, but only on your local clone of the repository. Now, you have to send those modifications back to the distant repository on GitHub.  
-In order to do that, you need to know what is your current branch. (If you don't know, `git branch` will give you that info).  
-Then you can git push
+Vos modifications sont validées, mais uniquement sur votre clone local du dépôt. Maintenant, vous devez renvoyer ces modifications sur le dépôt distant sur GitHub.  
+Pour ce faire, vous devez savoir quelle est votre branche actuelle. (Si vous ne le savez pas, `git branch` vous donnera cette information).  
+Ensuite, vous pouvez git push
 
 ```bash
 git push -u origin BRANCH_NAME

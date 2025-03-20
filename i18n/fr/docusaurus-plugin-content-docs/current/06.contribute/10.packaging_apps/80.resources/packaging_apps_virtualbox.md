@@ -1,94 +1,95 @@
 ---
-title: Create a development environment with VirtualBox
+title: Créer un environnement de développement avec VirtualBox
 ---
 
-This documentation page aims at explaining how to setup a YunoHost virtual server, using VirtualBox, to work on application packaging.
+Cette page de documentation va vous expliquer comment mettre en place un serveur YunoHost virtuel, avec VirtualBox, pour travailler sur le packaging d'application.
 
-## Why use VirtualBox rather than an actual YunoHost production server to package an application?
+## Pourquoi utiliser VirtualBox plutôt qu’un serveur YunoHost de production pour packager une application ?
 
-There are mostly two reasons why one should prefer a virtual server rather than their own server:
+Il y a principalement deux raisons pour préférer l'usage d'un serveur virtuel plutôt que votre propre serveur :
 
-- You can freely torture a virtual server without any risk of breaking it, since you can always restore it to a former working state. It would really be a pity to break your own real server!
-- In a typical workflow, a virtual server state would be restored from a known snapshot before starting any work on it, so as to always keep a clean system, without any residues of a former installation. This allows to always be as close a possible to a user first installation.
+- Vous pouvez torturer à loisir un serveur virtuel sans courir le risque de le casser, puisque vous pourrez toujours restaurer un état précédent. Alors qu'il serait dommage de casser son propre serveur !
+- Un serveur virtuel sera restauré avant de travailler dessus, pour garder en permanence un système sans résidus d'une précédente installation. Cela permet de se rapprocher au plus près d'une première installation par un utilisateur.
 
-We will discuss VirtualBox in this guide, as it comes with an easy to use GUI. If you prefer a pure commandline approach to handling your virtual machine, you should use [ynh-dev](/contribute/dev/) instead.
+Nous parlerons ici de VirtualBox, pour son approche graphique facile à utiliser. Si vous préférez une interface en ligne de commande pour la gestion de la machine virtuelle, tournez-vous de préférence vers [ynh-dev](/contribute/dev/).
 
-## Installing VirtualBox
+## Installer VirtualBox
 
-From a GNU/Linux system, simply install the `virtualbox-qt` package.
-From a Windows or macOS machine, you'd have to refer to the [VirtualBox download page](https://www.virtualbox.org/wiki/Downloads) to fetch the appropriate installation package. The virtualbox package is deprecated since Debian 9, a `.deb` installation package is available on the abovementioned referenced page.
+Depuis un système GNU/Linux, installer simplement le paquet `virtualbox-qt`.
+Depuis un système Windows ou macOS, il faudra se référer à la page de [téléchargement de VirtualBox](https://www.virtualbox.org/wiki/Downloads) pour récupérer le fichier d'installation adéquat. Le paquet virtualbox est déprécié depuis Debian 9, un fichier d'installation `.deb` est disponible sur la même page.
 
-Whatever your system, there should be no need to install the extension pack or the guest addons.
+Quel que soit votre système, il ne devrait pas être nécessaire d'installer l'extension pack ou les additions invités.
 
-## Installing YunoHost on VirtualBox
+## Installer YunoHost sur VirtualBox
 
-Simply follow the appropriate documentation for [installing on VirtualBox](/contribute/packaging_apps/resources/packaging_apps_virtualbox) then the [post-installation](/category/after-installation) guide.
+Suivez simplement la documentation idoine pour l'[installation sur VirtualBox](/contribute/packaging_apps/resources/packaging_apps_virtualbox) puis la documentation sur la [post-installation](/category/after-installation).
 
-During post-install, there is no need to use an actual domain name in `.nohost.me` or `.noho.st`, as your virtual server won't be reachable from outside your local network.
-We prefer using a fake domain name which will remain associated with your local network, for instance `yunohost.packaging`.
+Lors de la post-installation, il est inutile d'utiliser un nom de domaine en `.nohost.me` ou `.noho.st`, votre serveur virtuel ne sera pas accessible depuis l'extérieur de votre réseau local.  
+Nous préférerons l'usage d'un faux nom de domaine qui restera cantonné au réseau local. Par exemple, `yunohost.packaging`.
 
-This domain name, not being registered with any DNS server, will be stored in the `hosts` file of the computer which will need to access it. Please refer to the documentation about [using a local DNS](/administer/tutorials/domains/dns_local_network) for more information.
+Ce nom de domaine n'étant enregistré dans aucun serveur DNS, on l'enregistrera dans le fichier `hosts` de l'ordinateur qui y accédera. Voir la documentation sur le [DNS local](/administer/tutorials/domains/dns_local_network).
 
-Your virtual server is now installed. Before starting to use it, we'll see how to create a first snapshot and how to use that feature.
+Votre serveur virtuel est à présent installé. Avant de commencer à l'utiliser, nous allons voir comment créer un premier instantané et comment les utiliser.
 
-## Using snapshots
+## Utiliser les instantanés
 
-VirtualBox becomes even more interesting with its snapshotting feature, which allow to store the virtualized machine state and restore it quickly.
-We'll also see how to use multiple snapshot branches to work on different apps on the same machine.
+VirtualBox prend tout son intérêt avec l'usage des instantanés, qui permettent d'enregistrer l'état de la machine à un moment donné et d'y revenir rapidement.  
+Nous verrons également par la suite comment utiliser plusieurs branches d'instantanés pour travailler sur des apps différentes sur une même machine.
 
-### Now, let's create a first snapshot
+### Tout d'abord, créons un premier instantané
 
-Before starting to play with the virtual machine, now is a good time to take a first snapshot, so that we don't have to redo the full install process every time.
-First, stop the virtual machine.
+Avant de commencer à jouer avec la machine virtuelle, il convient de faire un premier instantané, pour ne pas avoir à recommencer le processus d'installation à chaque fois.  
+Arrêtez la machine virtuelle avant tout.
 
-Managing snapshots is done in the 'Snapshots' tab
-![](/img/virtualbox_packaging1-en.png)
+La gestion des instantanés se fait dans l'onglet "Instantanés"  
+![](/img/virtualbox_packaging1-fr.jpg)
 
-Here, we're creating a first snapshot
-![](/img/virtualbox_packaging2-en.png)
+Et on crée un premier instantané  
+![](/img/virtualbox_packaging2-fr.jpg)
 
-We can now start to work on the virtual machine and create as many snapshots as desired for each milestone of our modifications.
+À présent on peut commencer à travailler sur la machine virtuelle et créer autant d'instantanés que souhaité pour jalonner le travail.
 
-![](/img/virtualbox_packaging3-en.png)
+![](/img/virtualbox_packaging3-fr.jpg)
 
-In this example, after having validated our particular package removal works fine, we can easily get back in time by restoring the virtual machine to its previous state with the package still installed.
-Once the package will be fully functional, it will just be a matter of deleting the snaphots associated with this package work to get the virtual machine back to its initial state.
-For our next test, we will then be back to a freshly installed YunoHost serveur, without any trace of package installation.
+Dans cet exemple, on pourra facilement revenir en arrière, après avoir testé la suppression du package par exemple et restaurer la machine virtuelle dans l'état précédent avec le package encore installé avec succès.  
+Et lorsque le package sera pleinement fonctionnel, il suffira de supprimer les instantanés liés à ce package pour revenir à l'état initial de la machine virtuelle.  
+Nous disposerons ainsi d'un serveur YunoHost vierge de toute installation d'application pour notre prochain test.
 
-### Using multiple snapshot branches
+### Utiliser plusieurs branches d'instantanés
 
-In addition to successive snapshots, it is also possible to create a new machine state and additional snapshots from an older machine snapshot/state.
+En plus de l'usage d'instantanés successifs, il est également possible de dériver un nouvel état actuel et de nouveaux instantanés depuis un instantané plus ancien que le dernier.
 
-![](/img/virtualbox_packaging4-en.png)
+![](/img/virtualbox_packaging4-fr.jpg)
 
-In this example, I have created two branches since my successful package installation, so as to independently test just the application removal, upgrade and backup/restore steps.
-I eventually got back to the virtual machine base state to start a new test on another package, without dropping my former test whatsoever.
-At any time, it is possible to get back to a previous snapshot simply by restoring it.
-The machine always start on the "Current state" state.
+Dans cet exemple, j'ai dérivé deux branches depuis mon installation réussie du package, pour tester indépendamment la suppression simple de l'application, l'upgrade et le backup/restore.  
+Finalement je suis reparti de la base de la machine virtuelle pour démarrer un nouveau test sur un autre package, sans pour autant abandonner le précédent test.  
+À tout moment, il est possible de revenir sur un instantané précédent en le restaurant.  
+La machine démarrera toujours sur l'"État actuel".
 
-![](/img/virtualbox_packaging5-en.png)
+![](/img/virtualbox_packaging5-fr.jpg)
 
-> It is always possible to create a new snapshot, whether the machine is stopped or not. To restore a snapshot however, the machine cannot be running.
+> Il est toujours possible de créer un nouvel instantané, que la machine soit à l'arrêt ou non.  
+Mais pour restaurer un instantané, la machine ne doit pas être en cours d'exécution.
 
-## How do we connect to the virtual machine?
+## Comment se connecter à la machine virtuelle ?
 
-Virtual machine connection is similar to any YunoHost server connection, that is by using SSH.
+On se connecte à la machine virtuelle comme à n'importe quel serveur YunoHost, en utilisant SSH.
 
 ```bash
-ssh admin@my.domain
+ssh admin@mon.domain
 ```
 
-Or, if the domain has not been added to the `hosts` file, via its IP address.
+Ou, si le domaine n'a pas été ajouté dans le hosts, en utilisant son IP.
 
 ```bash
 ssh admin@11.22.33.44
 ```
 
-We can now work on the virtual machine using the commandline.
+À présent, on peut travailler sur la machine virtuelle en CLI.
 
-To easily copy the package files or use a graphical text editor, one can also connect via SFTP using a file explorer.
+Pour copier facilement les fichiers du package ou utiliser un éditeur de texte graphique, on peut également se connecter en SFTP avec un explorateur de fichier.
 
-It's a simple matter of using the `sftp://admin@my.domain/` address.
+Il suffit de se connecter à l'adresse `sftp://admin@mon.domain/` avec l'explorateur.  
 ![](/img/virtualbox_packaging6.jpg)
 
-> Note: on Windows or macOS, the file explorer does not natively support the SFTP protocol...
+> Sur Windows ou macOS, l'explorateur de fichier ne supporte pas nativement le protocole SFTP...
