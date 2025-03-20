@@ -35,6 +35,10 @@
     "message": "VPN providers",
     "description": "The label for category VPN providers in sidebar docsSidebar"
   },
+  "sidebar.docsSidebar.category.Install on...": {
+    "message": "Install on...",
+    "description": "The label for category Install on... in sidebar docsSidebar"
+  },
   "sidebar.docsSidebar.category.After installation": {
     "message": "After installation",
     "description": "The label for category After installation in sidebar docsSidebar"
@@ -55,13 +59,13 @@
     "message": "Learn about self-hosting, how to install and use YunoHost",
     "description": "The generated-index page description for category Administration guide in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Guided tour for the admin": {
-    "message": "Guided tour for the admin",
-    "description": "The label for category Guided tour for the admin in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Geführte Tour für den Admin": {
+    "message": "Geführte Tour für den Admin",
+    "description": "The label for category Geführte Tour für den Admin in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Users and the SSO": {
-    "message": "Users and the SSO",
-    "description": "The label for category Users and the SSO in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Benutzer und das SSO": {
+    "message": "Benutzer und das SSO",
+    "description": "The label for category Benutzer und das SSO in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Domains": {
     "message": "Domains",
@@ -115,17 +119,17 @@
     "message": "Community",
     "description": "The generated-index page title for category Community in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Contribute": {
-    "message": "Contribute",
-    "description": "The label for category Contribute in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Beteilige dich!": {
+    "message": "Beteilige dich!",
+    "description": "The label for category Beteilige dich! in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Write documentation": {
-    "message": "Write documentation",
-    "description": "The label for category Write documentation in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Dokumentation schreiben": {
+    "message": "Dokumentation schreiben",
+    "description": "The label for category Dokumentation schreiben in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Packaging applications": {
-    "message": "Packaging applications",
-    "description": "The label for category Packaging applications in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Einführung in die Paketierung": {
+    "message": "Einführung in die Paketierung",
+    "description": "The label for category Einführung in die Paketierung in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Writing the app manifest": {
     "message": "Writing the app manifest",
@@ -162,9 +166,5 @@
   "sidebar.docsSidebar.link.Forum": {
     "message": "Forum",
     "description": "The label for link Forum in sidebar docsSidebar, linking to https://forum.yunohost.org"
-  },
-  "sidebar.docsSidebar.category.Install on...": {
-    "message": "Install on...",
-    "description": "The label for category Install on... in sidebar docsSidebar"
   }
 }

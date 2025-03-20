@@ -107,9 +107,9 @@
     "message": "Domains",
     "description": "The generated-index page title for category Domains in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Troubleshooting": {
-    "message": "Troubleshooting",
-    "description": "The label for category Troubleshooting in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Dépannage": {
+    "message": "Dépannage",
+    "description": "The label for category Dépannage in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.User Guide": {
     "message": "User Guide",
@@ -123,17 +123,17 @@
     "message": "Community",
     "description": "The generated-index page title for category Community in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Contribute": {
-    "message": "Contribute",
-    "description": "The label for category Contribute in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Contribuer": {
+    "message": "Contribuer",
+    "description": "The label for category Contribuer in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Write documentation": {
-    "message": "Write documentation",
-    "description": "The label for category Write documentation in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Rédaction de la documentation": {
+    "message": "Rédaction de la documentation",
+    "description": "The label for category Rédaction de la documentation in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Packaging applications": {
-    "message": "Packaging applications",
-    "description": "The label for category Packaging applications in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Empaquetage d’applications": {
+    "message": "Empaquetage d’applications",
+    "description": "The label for category Empaquetage d’applications in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Writing the app manifest": {
     "message": "Writing the app manifest",
@@ -159,9 +159,9 @@
     "message": "Misc resources",
     "description": "The generated-index page title for category Misc resources in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Contributing to the core": {
-    "message": "Contributing to the core",
-    "description": "The label for category Contributing to the core in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Contribuer au cœur de YunoHost": {
+    "message": "Contribuer au cœur de YunoHost",
+    "description": "The label for category Contribuer au cœur de YunoHost in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.link.Applications": {
     "message": "Applications",

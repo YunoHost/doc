@@ -35,6 +35,10 @@
     "message": "VPN providers",
     "description": "The label for category VPN providers in sidebar docsSidebar"
   },
+  "sidebar.docsSidebar.category.Install on...": {
+    "message": "Install on...",
+    "description": "The label for category Install on... in sidebar docsSidebar"
+  },
   "sidebar.docsSidebar.category.After installation": {
     "message": "After installation",
     "description": "The label for category After installation in sidebar docsSidebar"
@@ -55,29 +59,29 @@
     "message": "Learn about self-hosting, how to install and use YunoHost",
     "description": "The generated-index page description for category Administration guide in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Guided tour for the admin": {
-    "message": "Guided tour for the admin",
-    "description": "The label for category Guided tour for the admin in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Tour guidato per l'amministratore": {
+    "message": "Tour guidato per l'amministratore",
+    "description": "The label for category Tour guidato per l'amministratore in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Users and the SSO": {
-    "message": "Users and the SSO",
-    "description": "The label for category Users and the SSO in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Gli utenti e il SSO": {
+    "message": "Gli utenti e il SSO",
+    "description": "The label for category Gli utenti e il SSO in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Domains": {
-    "message": "Domains",
-    "description": "The label for category Domains in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Domini": {
+    "message": "Domini",
+    "description": "The label for category Domini in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Applications": {
     "message": "Applications",
     "description": "The label for category Applications in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Upgrades": {
-    "message": "Upgrades",
-    "description": "The label for category Upgrades in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Aggiornamenti": {
+    "message": "Aggiornamenti",
+    "description": "The label for category Aggiornamenti in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Migrating from 11.x to 12.x": {
-    "message": "Migrating from 11.x to 12.x",
-    "description": "The label for category Migrating from 11.x to 12.x in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Migrer de 11.x vers 12.x": {
+    "message": "Migrer de 11.x vers 12.x",
+    "description": "The label for category Migrer de 11.x vers 12.x in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Backups": {
     "message": "Backups",
@@ -94,6 +98,10 @@
   "sidebar.docsSidebar.category.Tutorials.link.generated-index.title": {
     "message": "Tutorials",
     "description": "The generated-index page title for category Tutorials in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Domains": {
+    "message": "Domains",
+    "description": "The label for category Domains in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Domains.link.generated-index.title": {
     "message": "Domains",
@@ -162,9 +170,5 @@
   "sidebar.docsSidebar.link.Forum": {
     "message": "Forum",
     "description": "The label for link Forum in sidebar docsSidebar, linking to https://forum.yunohost.org"
-  },
-  "sidebar.docsSidebar.category.Install on...": {
-    "message": "Install on...",
-    "description": "The label for category Install on... in sidebar docsSidebar"
   }
 }

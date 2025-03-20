@@ -63,13 +63,13 @@
     "message": "الوضع الفاتح",
     "description": "The name for the light color mode"
   },
-  "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} مواد",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
-  },
   "theme.docs.breadcrumbs.navAriaLabel": {
     "message": "التنقل التفصيلي",
     "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "{count} مواد",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
     "message": "صفحة التوثيق",
@@ -83,9 +83,6 @@
     "message": "التالي",
     "description": "The label used to navigate to the next doc"
   },
-  "theme.docs.versionBadge.label": {
-    "message": "الأصدار: {versionLabel}"
-  },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
     "message": "مستند موسوم واحد|{count} مستندات موسومة",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
@@ -93,6 +90,9 @@
   "theme.docs.tagDocListPageTitle": {
     "message": "{nDocsTagged} مستند موسوم بـ \"{tagName}\"",
     "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "الأصدار: {versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
     "message": "هذه وثائق لم يتم طرحها للإصدار {siteTitle} {versionLabel}.",
@@ -210,10 +210,6 @@
     "message": "محتويات هذه الصفحة",
     "description": "The label used by the button on the collapsible TOC component"
   },
-  "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "اللغات",
-    "description": "The label for the mobile language switcher dropdown"
-  },
   "theme.blog.post.readMore": {
     "message": "اقرأ المزيد",
     "description": "The label used in blog post item excerpts to link to full blog posts"
@@ -229,6 +225,10 @@
   "theme.docs.breadcrumbs.home": {
     "message": "الرئيسية",
     "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "اللغات",
+    "description": "The label for the mobile language switcher dropdown"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
     "message": "طي الشريط الجانبي",

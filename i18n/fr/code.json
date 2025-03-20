@@ -114,6 +114,10 @@
     "message": "Éditer cette page",
     "description": "The link label to edit the current page"
   },
+  "theme.common.headingLinkTitle": {
+    "message": "Lien direct vers {heading}",
+    "description": "Title for link to heading"
+  },
   "theme.lastUpdated.atDate": {
     "message": " le {date}",
     "description": "The words used to describe on which date a page has been last updated"
@@ -126,10 +130,6 @@
     "message": "Dernière mise à jour{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
-  "theme.common.headingLinkTitle": {
-    "message": "Lien direct vers {heading}",
-    "description": "Title for link to heading"
-  },
   "theme.navbar.mobileVersionsDropdown.label": {
     "message": "Versions",
     "description": "The label for the navbar versions dropdown on mobile view"
@@ -137,10 +137,6 @@
   "theme.tags.tagsListLabel": {
     "message": "Tags :",
     "description": "The label alongside a tag list"
-  },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Fermer",
-    "description": "The ARIA label for close button of announcement bar"
   },
   "theme.admonition.caution": {
     "message": "attention",
@@ -165,6 +161,10 @@
   "theme.admonition.warning": {
     "message": "attention",
     "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Fermer",
+    "description": "The ARIA label for close button of announcement bar"
   },
   "theme.blog.sidebar.navAriaLabel": {
     "message": "Navigation article de blog récent",
@@ -194,13 +194,13 @@
     "message": "Réduire la catégorie '{label}' de la barre latérale",
     "description": "The ARIA label to collapse the sidebar category"
   },
-  "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Langues",
-    "description": "The label for the mobile language switcher dropdown"
-  },
   "theme.NavBar.navAriaLabel": {
     "message": "Main",
     "description": "The ARIA label for the main navigation"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Langues",
+    "description": "The label for the mobile language switcher dropdown"
   },
   "theme.NotFound.p1": {
     "message": "Nous n'avons pas trouvé ce que vous recherchez.",

@@ -138,10 +138,6 @@
     "message": "Tags:",
     "description": "The label alongside a tag list"
   },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Schließen",
-    "description": "The ARIA label for close button of announcement bar"
-  },
   "theme.admonition.caution": {
     "message": "vorsicht",
     "description": "The default label used for the Caution admonition (:::caution)"
@@ -165,6 +161,10 @@
   "theme.admonition.warning": {
     "message": "warnung",
     "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Schließen",
+    "description": "The ARIA label for close button of announcement bar"
   },
   "theme.blog.sidebar.navAriaLabel": {
     "message": "Navigation der letzten Beiträge im Blog",
