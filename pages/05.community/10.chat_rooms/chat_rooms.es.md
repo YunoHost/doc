@@ -17,7 +17,7 @@ Puede unirse a una sala de chat utilizando :
 
 #### Sala de chat de ayuda y soporte
 
-Existen salas publicas de chat de [soporte](/help) y ayuda para YunoHost:
+Existen salas publicas de chat de [soporte](/community/help) y ayuda para YunoHost:
 
 - Matrix: **[`#yunohost:matrix.org`](https://matrix.to/#/#yunohost:matrix.org)** ;
 - XMPP: **[`support@conference.yunohost.org`](xmpp:support@conference.yunohost.org?join)**

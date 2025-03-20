@@ -34,7 +34,7 @@ In dieser Dokumentation wird vorausgesetzt, dass:
 3. Du bist einigermaßen vertraut mit Git (oder bereit, es zu lernen);
 4. Du hast Spaß am Basteln und am Debuggen von Computerkram im Allgemeinen.
 
-Du bist auch eingeladen, dem [app packaging chatroom](/chat_rooms) beizutreten, um alle Fragen zu stellen, die du vielleicht hast!
+Du bist auch eingeladen, dem [app packaging chatroom](/community/chat_rooms) beizutreten, um alle Fragen zu stellen, die du vielleicht hast!
 
 Irgendwann wirst du auch eine Entwicklungs-/Testumgebung haben wollen, entweder mit [VirtualBox](/packaging_apps_virtualbox) oder [LXC/ynh-dev](https://github.com/yunohost/ynh-dev), das für den Kern gedacht ist, aber durchaus auch für die Entwicklung von Anwendungen verwendet werden kann. Du kannst auch einen Dev/Test-VPS bei deinem bevorzugten Hosting-Anbieter einrichten oder sogar auf deinem Prod entwickeln, wenn du gerne gefährlich lebst ;).
 

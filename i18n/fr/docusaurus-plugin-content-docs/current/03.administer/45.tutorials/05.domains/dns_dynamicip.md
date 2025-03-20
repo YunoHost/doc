@@ -1,5 +1,5 @@
 ---
-title: DNS with a dynamic IP
+title: DNS avec une IP dynamique
 ---
 
 :::warning

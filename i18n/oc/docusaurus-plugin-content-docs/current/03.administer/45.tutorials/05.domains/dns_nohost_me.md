@@ -22,7 +22,7 @@ The `nohost.me`, `noho.st` and `ynh.fr` domain service allows the creation of su
 
 YunoHost allows the installation of applications on subdomains (for example, having the Nextcloud application accessible from the `cloud.mydomain.org` address), this feature is also allowed with the `nohost.me`, `noho.st` and `ynh.fr` domains and so it is possible to have a subdomain such as `my.application.mydomain.nohost.me`. To create a subdomain on `nohost.me`, `noho.st` and `ynh.fr`, you just have to add the subdomain to YunoHost like any other domains.
 
-### Adding a nohost.me, noho.st or ynh.fr domain after the post-installation
+### Adding a `nohost.me`, `noho.st` or `ynh.fr` domain after the post-installation
 
 If you already did the postinstall and want to add an automatic domain, you may do so from the "Domains" web interface, selecting the option "I don't have a domain name..."
 
@@ -44,11 +44,11 @@ yunohost dyndns update
 yunohost domain main-domain -n whateveryouwant.nohost.me
 ```
 
-### Retrieve a nohost.me, noho.st or ynh.fr domain
+### Retrieve a `nohost.me`, `noho.st` or `ynh.fr` domain
 
 If you reinstall your server and want to use a domain already used previously, you must request a domain reset on the forum [in the dedicated thread](https://forum.yunohost.org/t/nohost-domain-recovery/442).
 
-### Change a nohost.me, noho.st or ynh.fr domain
+### Change a `nohost.me`, `noho.st` or `ynh.fr` domain
 
 If you wish to use a different automatic domain, you first have to remove your present domain registration. This is done in 3 steps:
 

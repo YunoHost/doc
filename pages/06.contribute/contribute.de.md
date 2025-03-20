@@ -37,7 +37,7 @@ Sprich mit Freunden, Verwandten und bei der Arbeit über Softwarefreiheit, [Selb
 [/center]
 
 [center]
-Unsere Unterstützung basiert auf Mitwirkenden wie dir. Besuche einfach [den Support-Chatroom](/help) und hilf neuen Benutzern beim Einstieg oder suche dir eine Frage im [Forum](https://forum.yunohost.org), bei der du helfen kannst.</a>.
+Unsere Unterstützung basiert auf Mitwirkenden wie dir. Besuche einfach [den Support-Chatroom](/community/help) und hilf neuen Benutzern beim Einstieg oder suche dir eine Frage im [Forum](https://forum.yunohost.org), bei der du helfen kannst.</a>.
 [/center]
 [/columns]
 
@@ -122,6 +122,6 @@ Erfahre im [Entwickler-Chatroom](xmpp:dev@conference.yunohost.org?join), wie du 
 
 [center]
 
-### Bitte komm auf jeden Fall mit uns in den [Entwickler-Chatroom](/chat_rooms) :-)
+### Bitte komm auf jeden Fall mit uns in den [Entwickler-Chatroom](/community/chat_rooms) :-)
 
 [/center]

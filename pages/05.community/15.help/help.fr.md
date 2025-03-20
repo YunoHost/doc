@@ -54,4 +54,4 @@ S'il vous plaît, suivez le canevas des messages de la section Support. Cela aid
 
 [/center]
 
-!!! Note : vous pouvez aussi vous connecter aux salons de discussions dev et apps, voir [la page correspondante](/chat_rooms)
+!!! Note : vous pouvez aussi vous connecter aux salons de discussions dev et apps, voir [la page correspondante](/community/chat_rooms)

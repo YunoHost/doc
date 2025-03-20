@@ -17,7 +17,7 @@ Vous pouvez rejoindre ces salons avec :
 
 #### Salon d'entraide et de support
 
-Le salon d’[entraide](/help) est là pour permettre aux utilisateurs de YunoHost de s'aider mutuellement.
+Le salon d’[entraide](/community/help) est là pour permettre aux utilisateurs de YunoHost de s'aider mutuellement.
 
 - Matrix : **[`#yunohost:matrix.org`](https://matrix.to/#/#yunohost:matrix.org)**
 - XMPP : **[`support@conference.yunohost.org`](xmpp:support@conference.yunohost.org?join)**

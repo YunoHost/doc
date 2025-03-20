@@ -38,7 +38,7 @@ Parlez de logiciel libre, d’[auto-hébergement](/overview/self_hosting), de Yu
 [/center]
 
 [center]
-Notre support est communautaire et s’appuie sur des contributeurices comme vous. Venez simplement sur le [salon d'aide](/help), ou tentez de répondre aux questions du [Forum](https://forum.yunohost.org/).
+Notre support est communautaire et s’appuie sur des contributeurices comme vous. Venez simplement sur le [salon d'aide](/community/help), ou tentez de répondre aux questions du [Forum](https://forum.yunohost.org/).
 [/center]
 [/columns]
 
@@ -116,6 +116,6 @@ Vous pouvez vous impliquer dans le développement de YunoHost peu importe votre 
 
 [center]
 
-### Dans tous les cas, venez discuter avec nous sur [le salon de développement](/chat_rooms) :-)
+### Dans tous les cas, venez discuter avec nous sur [le salon de développement](/community/chat_rooms) :-)
 
 [/center]

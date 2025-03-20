@@ -11,7 +11,7 @@ Vous souhaitez ajouter une nouvelle fonctionnalité au cœur de YunoHost, mais n
 
 Si vous cherchez quelque chose à implémenter ou un bug à réparer, le bug tracker est [ici](https://github.com/yunohost/issues/issues) !
 
-**Venez dire coucou sur le [salon de dev](/chat_rooms)** !
+**Venez dire coucou sur le [salon de dev](/community/chat_rooms)** !
 
 ### Mettre en place un environnement de développement
 

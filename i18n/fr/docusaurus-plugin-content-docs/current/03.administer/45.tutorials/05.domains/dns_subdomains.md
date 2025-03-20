@@ -1,5 +1,5 @@
 ---
-title: DNS and subdomains for the applications
+title: DNS et sous-domaines pour les applications
 ---
 
 ### Subdomains

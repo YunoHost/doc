@@ -34,7 +34,7 @@ Avant d'entrer dans le vif du sujet, cette documentation part du principe que :
 3. Vous êtes familier avec Git (ou vous êtes prêt à l'apprendre) ;
 4. Vous êtes à l'aise avec le bricolage et le débogage de matériel informatique en général.
 
-Nous vous encourageons également à rejoindre le [salon de discussion sur le packaging](/chat_rooms) pour poser toutes les questions que vous pourriez avoir !
+Nous vous encourageons également à rejoindre le [salon de discussion sur le packaging](/community/chat_rooms) pour poser toutes les questions que vous pourriez avoir !
 
 À un moment donné, vous voudrez aussi avoir un environnement de développement/test, soit en utilisant [VirtualBox](/packaging_apps_virtualbox) ou [LXC/ynh-dev](https://github.com/yunohost/ynh-dev) qui est destiné au noyau mais peut tout à fait être utilisé pour le développement d'applications. Vous pouvez également mettre en place un VPS de développement/test sur votre hébergeur préféré, ou même développer sur votre prod si vous aimez vivre dangereusement ;).
 
