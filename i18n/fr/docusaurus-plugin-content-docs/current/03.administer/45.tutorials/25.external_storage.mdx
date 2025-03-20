@@ -1,67 +1,67 @@
 ---
 sidebar_label: Add external storage
-title: Adding an external storage to your server
+title: Ajouter un stockage externe à son serveur
 ---
 
 ## Introduction
 
-Apart from the monitoring system that ensures that your system's partitions are not too small, YunoHost does not currently deal with the organisation of your partitions and disks.
+En dehors du système de monitoring qui s'assure que les partitions de votre système ne sont pas trop petites, YunoHost ne s'occupe pour l'instant pas de l'organisation de vos partitions et de vos disques.
 
-If you are hosting on an ARM card with an SD card or on a server with a small SSD drive, you may, for reasons of reliability or lack of space, want to add a drive or drives to your server.
+Si vous vous hébergez sur une carte ARM avec une carte SD ou sur un serveur avec un petit disque SSD, vous pourriez, pour des raisons de fiabilité ou de manque de place, vouloir ajouter un ou des disques à votre serveur.
 
 :::warning
-If you have no space left on your server at all, you can now type `apt clean` to try and save some space while you clean up or follow the steps below.
+Si vous n'avez plus du tout de place sur votre serveur, vous pouvez dès à présent taper `apt clean` pour essayer d'en gagner un peu le temps de faire le ménage ou suivre les opérations qui vont suivre.
 :::
 
-Below you will find explanations on how to move your data to a hard disk in a correct way with a minimum of impact on the functioning of YunoHost. This operation can be done during installation or, afterwards, when your storage needs have increased or when you no longer trust your SD card.
+Ci-dessous, vous trouverez des explications pour parvenir à déplacer vos données sur un disque dur de façon correcte avec un minimum d'impact vis-à-vis du fonctionnement de YunoHost. Cette opération peut se faire lors de l'installation ou, a posteriori, lorsque vos besoins de stockage ont augmenté ou lorsque vous n'avez plus confiance dans votre carte SD.
 
 :::tip
-The method presented here will first mount the single partition of the hard disk, then use one or more sub-folders of this disk to create different mount points on your system tree. This method is preferable to the use of symbolic links, as the latter may interfere with some applications including the YunoHost backup system. You could also choose to mount partitions rather than subfolders, but it is sometimes difficult to estimate the weight of a folder in advance.
+La méthode présentée ici va d'abord monter l'unique partition du disque dur, puis utiliser un ou des sous-dossiers de ce disque pour créer différents points de montage sur l'arborescence de votre système. Cette méthode est préférable à l'usage de liens symboliques, car ces derniers peuvent perturber certaines applications dont le système de sauvegarde de YunoHost. On pourrait aussi choisir de monter des partitions plutôt que des sous-dossiers, mais il est parfois difficile d'estimer à l'avance l'évolution du poids d'un dossier à l'avance.
 :::
 
-## <FAIcon icon="fa-list-alt"/> Prerequisites
+## <FAIcon icon="fa-list-alt"/> Pré-requis
 
-- Have some time at a moment when your server users can accept a shutdown. The steps to be performed, even if they are relatively simple, can sometimes seem technical and require in any case **to take your time**.
+- Avoir un peu de temps à un moment où les utilisateurs de votre serveur peuvent accepter un arrêt des services. Les étapes à réaliser, même si elles sont relativement simples, peuvent parfois paraître techniques et nécessitent dans tous les cas **de prendre son temps**.
 
-- Know how to connect as root on your system, for example via [SSH](/administer/admin_guide/command_line). (Note: while logged in as `admin`, you can root with `sudo su`)
+- Savoir se connecter en root sur votre système, par exemple via [SSH](/administer/admin_guide/command_line). (Note : en étant connecté en tant qu'utilisateur `admin`, vous pouvez passer root avec `sudo su`)
 
-- Know the basic commands `cd`, `ls`, `mkdir`, `rm`.
+- Connaître les commandes basiques `cd`, `ls`, `mkdir`, `rm`
 
-- Have a backup in case things don't work out as planned
+- Avoir une sauvegarde au cas où ça ne se passe pas comme prévu
 
-- Have extra storage (SSD, hard drive, USB stick) connected to your server via USB or SATA
+- Disposer d'un stockage supplémentaire (disque SSD, disque dur, clé USB) branché à votre serveur en USB ou en SATA
 
-## 1. Identify directories to be moved
+## 1. Identifier les dossiers à déplacer
 
-The `ncdu /` command allows you to browse the folders on your server to see how big they are.
+La commande `ncdu /` vous permet de naviguer dans les dossiers de votre serveur afin de constater leurs tailles.
 
-Below is an explanation of some of the paths that can take up weight with some comments to help you reduce their weight or choose to move them.
+Ci-dessous, une explication de certains chemins qui peuvent prendre du poids avec quelques commentaires pour vous aider à réduire leur poids ou à choisir de les déplacer.
 
-| Paths | Contents | Tips |
+| Chemin | Contenu  | Conseils |
 |--------|---|---|
-| `/home` | User folders accessible via SFTP | Moveable to a hard disk |
-| `/home/yunohost.backup`       | YunoHost's backups  | Depending on your backup strategy, you may want to place this folder on a separate drive from your data or databases. |
-| `/home/yunohost.app`          |Heavy data from YunoHost applications (nextcloud, matrix...)|Moveable to a hard disk |
-| `/home/yunohost.multimedia` | Heavy data shared between several applications | Moveable to a hard disk |
-| `/var/lib/mysql` | Database used by applications | Ideally leave on SSD for performance reasons |
-| `/var/lib/postgresql` | Database used by applications | Ideally leave on SSD for performance reasons |
-| `/var/mail` | User e-mails | Movable to a hard disk |
-| `/var/www` | Program of installed web applications | Ideally leave on SSD for performance reasons |
-| `/var/log` | Event logs (pages consulted, connection attempts, hardware errors...). | This directory should not take up too much space, if it grows quickly, it may be a looping error that should be resolved. |
-| `/opt` | Program and dependency of some YunoHost applications. | Ideally leave it on the SSD for performance reasons. For nodejs applications it is possible to do some cleanup of unused versions. |
-| `/boot` | Kernels and boot files | Do not move unless you know what you are doing. It can happen that too many kernels are kept, it is possible to do some cleanup. |
+| `/home`                       | Dossiers utilisateurs accessibles via SFTP | Déplaçable sur un disque dur  |
+| `/home/yunohost.backup`       | Sauvegardes YunoHost  | Selon votre stratégie de sauvegarde, il peut être préférable de placer ce dossier sur un disque distinct de celui où se trouvent vos données ou vos bases de données |
+| `/home/yunohost.app`          | Données lourdes des applications YunoHost (nextcloud, matrix...) | Déplaçable sur un disque dur |
+| `/home/yunohost.multimedia`   | Données lourdes partagées entre plusieurs applications | Déplaçable sur un disque dur |
+| `/var/lib/mysql`              | Base de données utilisées par les applications | A laisser idéalement sur le SSD pour des raisons de performances |
+| `/var/lib/postgresql`         | Base de données utilisées par les applications | A laisser idéalement sur le SSD pour des raisons de performances  |
+| `/var/mail`                   | Mails des usagers  | Déplaçable sur un disque dur |
+| `/var/www`                    | Programme des applications web installées  | A laisser idéalement sur le SSD pour des raisons de performances |
+| `/var/log`                    | Journaux des évènements (pages consultées, tentative de connexion, erreurs matériels...). | Ce dossier ne devrait pas prendre trop de place, si il gonfle rapidement, il peut s'agir d'une erreur inscrite en boucle qu'il est préférable de résoudre  |
+| `/opt`                        | Programme et dépendance de certaines applications YunoHost. | A laisser idéalement sur le SSD pour des raisons de performances. Pour les applications nodejs il est possible de faire un peu de nettoyage des versions non utilisées.  |
+| `/boot`                       | Noyaux et fichiers de démarrage | Ne pas déplacer sauf si vous savez ce que vous faites. Il peut arriver que trop de noyaux soient conservés, il est possible de faire du nettoyage. |
 
-## 2. Connect and identify the disk
+## 2. Connecter et identifier le disque
 
-Start by connecting your disk to your system. You must then identify the name under which the disk is designated by the system.
+Commencez par brancher votre disque à votre système. Il faut ensuite identifier sous quel nom est désigné le disque par le système.
 
-To do this, use the command :
+Pour cela, utilisez la commande :
 
 ```bash
 lsblk
 ```
 
-It may return something like :
+Elle peut renvoyer quelque chose comme :
 
 ```bash
 NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
@@ -72,91 +72,91 @@ mmcblk0     179:0    0  14.9G  0 disk
 └─mmcblk0p2 179:2    0  14.8G  0 part /
 ```
 
-Here, `mmcblk0` corresponds to a 16GB SD card (you can see that the `mmcblk0p1` and `mmcblk0p2` partitions correspond to the `/boot` partition and the `/` system partition). The hard drive connected corresponds to `sda` which is about 1TB, and contains a single `sda1` partition which is not mounted (no "MOUNTPOINT").
+Ici, `mmcblk0` correspond à une carte SD de 16Go (on voit que les partitions `mmcblk0p1` et `mmcblk0p2` correspondent à la partition de démarrage `/boot` et à la partition système `/`). Le disque dur branché correspond à `sda` qui fait environ 1To, et contient une seule partition `sda1` qui n'est pas monté (pas de "MOUNTPOINT").
 
 :::warning
-<FAIcon icon="fa-exclamation-triangle"/> On another system, it may be that your system is installed on `sda` and your disk is then `sdb` for example.
+<FAIcon icon="fa-exclamation-triangle"/>  Sur un autre système, il se peut que votre système soit installé sur `sda` et que votre disque soit alors `sdb` par exemple.
 :::
 
 :::tip
-If the size of the disk is not enough for you to recognise it, you can unplug the disk, run the `lsblk` command, then plug the disk back in, run `lsblk` and deduce the differences.
+Astuce: si la taille du disque ne vous suffit pas pour le reconnaître, vous pouvez débrancher le disque lancer la commande `lsblk`, puis rebrancher le disque, lancer `lsblk` et en déduire les différences.
 :::
 
-## 3. (Optional) Format the disk
+## 3. (Optionnel) Formater le disque
 
-This operation is optional if your disk is already formatted with a file system supported by linux (so not NTFS or FAT32).
+Cette opération est optionnelle si votre disque est déjà formaté avec un système de fichiers supportés par linux (donc pas NTFS ou FAT32).
 
-Let's create a partition on the disk:
+Créons une partition sur le disque :
 
 ```bash
-fdisk /dev/YOUR_DISK
+fdisk /dev/VOTRE_DISQUE
 ```
 
-then enter `n`, `p`, `1`, `Enter`, `Enter`, and `w` successively to create a new partition.
+puis entrez successivement `n`, `p`, `1`, `Entrée`, `Entrée`, et `w` pour créer une nouvelle partition.
 
-Check with `lsblk` that you have your disk containing a single partition.
+Vérifiez avec `lsblk` que vous avez bien votre disque contenant une seule partition.
 
-Before you can use your disk, it must be formatted.
+Avant de pouvoir utiliser votre disque, il doit être formaté.
 
 :::warning
-<FAIcon icon="fa-exclamation-triangle"/> **Formatting a disk means deleting all the data on it! Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already "clean", you can skip this step.
+<FAIcon icon="fa-exclamation-triangle"/>  **Formater un disque implique de supprimer toutes les données inscrites dessus !**. Attention à ne pas vous tromper de nom, car cela peut avoir pour conséquence de formater un autre disque que celui voulu ! Dans l'exemple donné précédemment, il s'agissait de `/dev/sda`. Si votre disque est déjà "propre", vous pouvez passer cette étape.
 :::
 
-To format the :
+Pour formater la partition :
 
 ```bash
-mkfs.ext4 /dev/YOUR_DISK1
-# then 'y' to validate
+mkfs.ext4 /dev/VOTRE_DISQUE1
+# puis 'y' pour valider
 ```
 
-Replace `YOUR_DISK1` with the name of the first partition on the disk e.g. `sda1`.
+Remplacez `VOTRE_DISQUE1` par le nom de la première partition sur le disque par exemple `sda1`.
 
 :::tip
-It is possible to adapt this step, for example to create a raid 1 volume (mirrored disks) or encrypt the folder.
+Il est possible d'adapter cette étape, pour par exemple créer un volume raid 1 (disques en miroir) ou chiffrer le dossier.
 :::
 
-## 4. Mount the disk
+## 4. Monter le disque
 
-Unlike Windows where disks are accessed with letters (C:/), under Linux, disks are made accessible via the file tree. "Mounting" a disk means making it effectively accessible in the file tree. We will arbitrarily choose to mount the disk in `/mnt/hdd` but you can name it differently (e.g. `/mnt/disk` ...).
+Contrairement à Windows où les disques sont accessibles avec des lettres (C:/), sous linux, les disques sont rendus accessibles via l'arborescence. "Monter" un disque signifie le rendre effectivement accessible dans l'arborescence des fichiers. Nous allons choisir arbitrairement de monter le disque dans `/mnt/hdd` mais vous pouvez le nommer différemment (par exemple `/mnt/disque` ...).
 
-Let's start by creating the directory :
+Commençons par créer le répertoire :
 
 ```bash
 mkdir /mnt/hdd
 ```
 
-Then we can mount the disk manually with :
+Puis nous pouvons monter le disque manuellement avec :
 
 ```bash
-mount /dev/YOUR_DISK1 /mnt/hdd
+mount /dev/VOTRE_DISQUE1 /mnt/hdd
 ```
 
-(Here, `/dev/YOUR_DISK1` corresponds to the first partition on the disk)
+(Ici, `/dev/VOTRE_DISQUE1` correspond à la première partition sur le disque)
 
-## 5. Mount a `/mnt/hdd` folder on one of the folders you want to move data from
+## 5. Monter un dossier de `/mnt/hdd` sur un des dossiers dont on veut déplacer les données
 
-Here we will consider that you want to move the big data of the applications which are in `/home/yunohost.app` and the mails on your hard disk.
+Ici on va considérer que vous souhaitez déplacer les grosses données des applications qui se trouvent dans `/home/yunohost.app` ainsi que les mails sur votre disque dur.
 
-### 5.1 Creating subfolders on the disk
+### 5.1 Création des sous-dossiers sur le disque
 
-To begin with, we create a folder on the hard drive
+Pour commencer, on crée un dossier dans le disque dur
 
 ```bash
 mkdir -p /mnt/hdd/home/yunohost.app
 mkdir -p /mnt/hdd/var/mail
 ```
 
-### 5.2 Switching to maintenance mode
+### 5.2 Passage en mode maintenance
 
-Then, ideally, we switch to maintenance mode the applications that might be writing data.
+Puis, idéalement on passe en maintenance les applications qui pourraient être en train d'écrire des données.
 
-Example, for nextcloud:
+Exemple, pour nextcloud:
 
 ```bash
 sudo -u nextcloud /var/www/nextcloud/occ maintenance:mode --on
 ```
 
-Example, for mail:
+Exemple, pour le mail:
 
 ```bash
 systemctl stop postfix
@@ -164,12 +164,12 @@ systemctl stop dovecot
 ```
 
 :::warning
-If you wish to move databases such as mariadb (mysql), it is imperative that you stop the services for these databases otherwise it is almost certain that your data will be corrupted.
+Si vous souhaitez déplacer les base de données comme mariadb (mysql), il est impératif de stopper les services de ces bases de données sans quoi il est presque sûr que vos données seront corrompues.
 :::
 
-### 5.3 Creating the mount points
+### 5.3 Création des points de montages
 
-Next, we will rename the original folder and create an empty eponymous folder.
+Ensuite, on va renommer le dossier d'origine et créer un dossier vide éponyme.
 
 ```bash
 mv /home/yunohost.app /home/yunohost.app.bkp
@@ -178,32 +178,32 @@ mv /var/mail /var/mail.bkp
 mkdir /var/mail
 ```
 
-We can then use the `mount --bind` command to mount the folder on our hard drive to the new empty location in the tree.
+On peut alors grâce à la commande `mount --bind` monter le dossier de notre disque dur sur le nouvel emplacement vide de l'arborescence.
 
 ```bash
 mount --bind /mnt/hdd/home/yunohost.app /home/yunohost.app
 mount --bind /mnt/hdd/var/mail /var/mail
 ```
 
-### 5.4 Copying the data
+### 5.4 Copie des données
 
-Next, we copy the data, keeping all the folder and file properties. This operation can take a little time, with another terminal, you can control the evolution by observing the weight associated with the mount point with `df -h`
+Puis, on copie les données en conservant toutes les propriétés des dossiers et des fichiers. Cette opération peut prendre un peu de temps, avec un autre terminal, vous pourrez controler l'évolution en observant le poids associé au point de montage avec `df -h`
 
 ```bash
 cp -a /home/yunohost.app.bkp/. /home/yunohost.app/
 cp -a /var/mail.bkp/. /var/mail/
 ```
 
-Once this is done, check with `ls` that the contents are there:
+Une fois que c'est fini, vérifiez avec `ls` que le contenu est bien là:
 
 ```bash
 ls -la /home/yunohost.app/
 ls -la /var/mail/
 ```
 
-### 5.5 Exiting maintenance mode
+### 5.5 Sortir du mode maintenance
 
-From here you can stop maintenance mode, the command below is to be adapted depending on the services you have stopped.
+A partir de là vous pouvez arréter le mode maintenance, la commande ci-dessous est à adapter selon les services que vous avez arrétés.
 
 ```bash
 sudo -u nextcloud /var/www/nextcloud/occ maintenance:mode --off
@@ -211,27 +211,29 @@ systemctl start postfix
 systemctl start dovecot
 ```
 
-From this point on, your services are running with their data on disk, so it's time to test to see how much of an impact this has on performance (especially if you are using USB 2.0).
+A partir de cette étape, vos services tournent avec leurs données sur le disque, il est donc temps de tester pour voir dans quelle mesure il y a un impact sur les performances (notamment si vus utilisez de l'USB 2.0).
 
-## 6. Automatically mount on boot
+## 6. Monter automatiquement au démarrage
 
-So far we have manually mounted the disk and subfolders. However, it is necessary to configure the system to automatically mount the disk after a boot.
+Jusqu'ici, nous avons monté manuellement le disque et les sous-dossiers. Cependant, il est nécessaire de configurer le système pour qu'il monte automatiquement le disque après un démarrage.
 
-If your tests are successful, you should keep the mount points, otherwise you should hurry up and go back to maintenance first.
+Si vos tests sont concluants, il faut pérenniser les points de montages, sinon dépêchez-vous de faire machine arrière en commençant par remettre en maintenance.
 
-To begin with, let's find the UUID (universal identifier) of our disk with :
+Pour commencer, trouvons l'UUID (identifiant universel) de notre disque avec :
 
 ```bash
-lsblk -f
+blkid | grep "/dev/VOTRE_DISQUE1:"
+# Retourne quelque chose comme :
+# /dev/sda1:UUID="cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7" TYPE="ext4" PARTUUID="34e4b02c-02"
 ```
 
-Let's add a line to the `/etc/fstab` file that handles the mounting of disks at boot time. So we open the file with `nano` :
+Ajoutons alors une ligne au fichier `/etc/fstab` qui gère le montage des disques au démarrage. On ouvre donc le fichier avec `nano` :
 
 ```bash
 nano /etc/fstab
 ```
 
-Then add these lines to the end of the file:
+Puis on ajoute ces lignes à la fin du fichier :
 
 ```bash
 UUID="cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7" /mnt/hdd ext4 defaults,nofail 0 0
@@ -239,21 +241,21 @@ UUID="cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7" /mnt/hdd ext4 defaults,nofail 0 0
 /mnt/hdd/var/mail /var/mail none defaults,bind 0 0
 ```
 
-(this line must be adapted according to the previous information and choices)
+(il faut adapter cette ligne en fonction des informations et choix précédents)
 
-Use Ctrl+X then `y` to save.
+Utiliser Ctrl+X puis `o` pour sauvegarder.
 
-You can then try rebooting the system to check if the disk and subfolders are mounted automatically.
+Vous pouvez ensuite tester de redémarrer le système pour vérifier si le disque et les sous-dossiers sont montés automatiquement.
 
-## 7. Clean up old data
+## 7. Nettoyer les anciennes données
 
-Once your new setup is validated, you can proceed to delete the old data from step 5.3:
+Dès que votre nouveau setup est validé, vous pouvez procéder à la suppression des anciennes données issues de l'étape 6.3:
 
 ```bash
 rm -Rf /home/yunohost.app.bkp
 rm -Rf /var/mail.bkp
 ```
 
-## <img src="/img/tada.png" height="32rem"/> Congratulations!
+## img src="/img/tada.png" height="32rem"/> Félicitations !
 
-If you have made it this far without damage, you now have a server that takes advantage of one or more storage disks.
+Si vous êtes arrivé jusqu'ici sans dommage, vous avez désormais un serveur qui tire parti d'un ou de plusieurs disques de stockage.

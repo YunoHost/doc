@@ -60,5 +60,5 @@ Sélectionnez ensuite IMAP. Remplissez les champs et appuyez sur Suivant. Dekko 
 ![](/img/dekko_config_2.png?resize=280&classes=inline)
 ![](/img/dekko_config_3.png?resize=280&classes=inline)
 ![](/img/dekko_config_4.png?resize=280&classes=inline)
-[/ui-tab]
-[/ui-tabs]
+  </TabItem>
+</Tabs>
