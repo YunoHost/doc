@@ -51,11 +51,8 @@ jobs:
       - name: list
         run: ls -lah
 
+      - name: install tools
+        run: apt install sshpass rsync
+
       - name: Deploy
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: nextdoc.yunohost.org
-          username: my_webapp
-          password: ${{ secrets.DOC_SFTP_PWD }}
-          source: docs
-          target: ~/www/
+        run: sshpass -p ${{ secrets.DOC_SFTP_PWD }} rsync -avz --delete docs/ my_webapp@nextdoc.yunohost.org:~/www/
