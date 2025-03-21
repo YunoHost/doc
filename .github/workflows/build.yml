@@ -52,7 +52,7 @@ jobs:
         run: ls -lah
 
       - name: install tools
-        run: apt install sshpass rsync
+        run: sudo apt install sshpass rsync
 
       - name: Deploy
         run: sshpass -p ${{ secrets.DOC_SFTP_PWD }} rsync -avz --delete docs/ my_webapp@nextdoc.yunohost.org:~/www/
