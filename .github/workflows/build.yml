@@ -57,7 +57,7 @@ jobs:
 
 
       - name: Deploy
-        run: sshpass -p ${{ secrets.DOC_SFTP_PWD }} \
-          rsync -avz --delete \
-          -e "ssh -o StrictHostKeyChecking=no" \
+        run: sshpass -p ${{ secrets.DOC_SFTP_PWD }}
+          rsync -avz --delete
+          -e "ssh -o StrictHostKeyChecking=no"
           docs/ my_webapp@nextdoc.yunohost.org:~/www/
