@@ -1,0 +1,37 @@
+name: Build Docusaurus doc
+
+on:
+  push:
+    branches:
+      - main
+      - docusaurus-v**
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build Docs
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: yarn
+      - name: Installation
+        run: yarn
+
+      - name: Build docs
+        run: yarn build
+
+      - name: Archive the docs
+        uses: actions/upload-artifact@v4
+        with:
+          name: docs
+          path: build/
