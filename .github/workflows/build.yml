@@ -38,6 +38,7 @@ jobs:
 
   deploy:
     name: Deploy the new doc
+    needs: build
     if: github.ref == 'refs/heads/docusaurus'
     runs-on: ubuntu-latest
     steps:
