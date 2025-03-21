@@ -35,3 +35,22 @@ jobs:
         with:
           name: docs
           path: build/
+
+  deploy:
+    name: Deploy the new doc
+    if: github.ref == 'refs/heads/docusaurus'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download the built docs artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: docs
+
+      - name: Deploy
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: nextdoc.yunohost.org
+          username: my_webapp
+          password: ${{ secrets.DOC_SFTP_PWD }}
+          source: docs
+          target: ~/www/
