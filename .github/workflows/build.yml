@@ -46,6 +46,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: docs
+          path: docs
 
       - name: list
         run: ls -lah
