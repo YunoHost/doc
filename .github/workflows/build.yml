@@ -47,6 +47,9 @@ jobs:
         with:
           name: docs
 
+      - name: list
+        run: ls -lah
+
       - name: Deploy
         uses: appleboy/scp-action@v0.1.7
         with:
