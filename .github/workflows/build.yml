@@ -54,10 +54,10 @@ jobs:
       - name: Install tools
         run: |
           sudo apt install sshpass rsync
-          mkdir .ssh;             chmod 700 .ssh
-          touch .ssh/known_hosts  chmod 600 .ssh/known_hosts
-          ssh-keyscan nextdoc.yunohost.org >> .ssh/known_hosts
 
 
       - name: Deploy
-        run: sshpass -p ${{ secrets.DOC_SFTP_PWD }} rsync -avz --delete docs/ my_webapp@nextdoc.yunohost.org:~/www/
+        run: sshpass -p ${{ secrets.DOC_SFTP_PWD }} \
+          rsync -avz --delete \
+          -e "ssh -o StrictHostKeyChecking=no" \
+          docs/ my_webapp@nextdoc.yunohost.org:~/www/
