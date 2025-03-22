@@ -13,4 +13,4 @@ YunoHost ha un'interfaccia web di amministrazione. L'altro metodo è quello di u
 
 L'interfaccia di amministrazione è accessibile all'indirizzo <https://example.org/yunohost/admin> (sostituisci `example.org` con il tuo dominio)
 
-![](image://webadmin.jpg)
+![](/img/webadmin.jpg)

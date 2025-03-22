@@ -7,22 +7,22 @@ routes:
   default: '/whatsyunohost'
 ---
 
-![](image://YunoHost_logo_vertical.png?resize=400&id=ynhlogo)
+![](/img/YunoHost_logo_vertical.png?resize=400&id=ynhlogo)
 
 YunoHost es un **sistema operativo** que persigue simplificar la administración de un **servidor** para democratizar el [autoalojamiento](/selfhosting), asegurando que se mantiene fiable, seguro, ético y ligero. Es un proyecto de software libre mantenido exclusivamente por voluntariado. Técnicamente se le puede considerar como una distribución basada en [Debian GNU/Linux](https://debian.org) y que puede ser instalado en [muchos tipos de material](/install).
 
 ## Características
 
-- ![](image://icon-debian.png?resize=32&classes=inline) Basado en Debian ;
-- ![](image://icon-tools.png?resize=32&classes=inline) Administración mediante un **interfaz web simple y conciso** ;
-- ![](image://icon-package.png?resize=32&classes=inline) Despliega las **aplicaciones en unos pocos clics** ;
-- ![](image://icon-users.png?resize=32&classes=inline) añade **cuentas de usuario** <small>(gestionados por una agenda LDAP)</small>;
-- ![](image://icon-globe.png?resize=32&classes=inline) Administra los **nombres de dominio** ;
-- ![](image://icon-medic.png?resize=32&classes=inline) Crea y restaura las **copias de seguridad** ;
-- ![](image://icon-door.png?resize=32&classes=inline) Conecta simultáneamente a todas las aplicaciones mediante un **portal de usuario** <small>(NGINX, SSOwat)</small> ;
-- ![](image://icon-mail.png?resize=32&classes=inline) Incluye un **servidor de correo electrónico completo** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
-- ![](image://icon-lock.png?resize=32&classes=inline) Administra **certificados SSL** <small>(generados por Let's Encrypt)</small> ;
-- ![](image://icon-shield.png?resize=32&classes=inline) … y los **sistemas de seguridad** <small>(`fail2ban`, `yunohost-firewall`)</small> ;
+- ![](/img/icon-debian.png?resize=32&classes=inline) Basado en Debian ;
+- ![](/img/icon-tools.png?resize=32&classes=inline) Administración mediante un **interfaz web simple y conciso** ;
+- ![](/img/icon-package.png?resize=32&classes=inline) Despliega las **aplicaciones en unos pocos clics** ;
+- ![](/img/icon-users.png?resize=32&classes=inline) añade **cuentas de usuario** <small>(gestionados por una agenda LDAP)</small>;
+- ![](/img/icon-globe.png?resize=32&classes=inline) Administra los **nombres de dominio** ;
+- ![](/img/icon-medic.png?resize=32&classes=inline) Crea y restaura las **copias de seguridad** ;
+- ![](/img/icon-door.png?resize=32&classes=inline) Conecta simultáneamente a todas las aplicaciones mediante un **portal de usuario** <small>(NGINX, SSOwat)</small> ;
+- ![](/img/icon-mail.png?resize=32&classes=inline) Incluye un **servidor de correo electrónico completo** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
+- ![](/img/icon-lock.png?resize=32&classes=inline) Administra **certificados SSL** <small>(generados por Let's Encrypt)</small> ;
+- ![](/img/icon-shield.png?resize=32&classes=inline) … y los **sistemas de seguridad** <small>(`fail2ban`, `yunohost-firewall`)</small> ;
 
 ## Origen
 
@@ -36,7 +36,7 @@ Lo único que necesitaba era un interfaz de administración para el servidor de 
 Notando un entusiasmo creciente alrededor de YunoHost y del autoalojamiento en general, los desarrolladores originales junto con nuevas personas contribuyentes decidieron comenzar a trabajar en la versión 2, una versión más extensible, más potente, más fácil de usar, y ya de paso, una que prepare ricas tazas de café de comercio justo para los elfos de Laponia.
 
 El nombre **YunoHost** viene de la jerga "Y U NO Host". El [meme de Internet](https://en.wikipedia.org/wiki/Internet_meme) debería ilustrarlo:
-![](image://dude_yunohost.jpg)
+![](/img/dude_yunohost.jpg)
 
 ## ¿Qué no es YunoHost?
 
@@ -50,4 +50,4 @@ Puedes alojar a tus amistades, tu familia y a tu compañía sin problema, pero d
 
 Logo YunoHost en blanco y negro por ToZz (400 × 400 px). Licence: CC-BY-SA 4.0. Logos and other artwork are available in <https://github.com/YunoHost/yunohost-artwork>
 
-![](image://ynh_logo_black_300dpi.png?resize=220) ![](image://ynh_logo_white_300dpi.png?resize=220&id=whitelogo)
+![](/img/ynh_logo_black_300dpi.png?resize=220) ![](/img/ynh_logo_white_300dpi.png?resize=220&id=whitelogo)

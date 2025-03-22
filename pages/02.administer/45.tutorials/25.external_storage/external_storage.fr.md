@@ -248,6 +248,6 @@ rm -Rf /home/yunohost.app.bkp
 rm -Rf /var/mail.bkp
 ```
 
-## ![](image://tada.png?resize=32&classes=inline) Félicitations !
+## ![](/img/tada.png?resize=32&classes=inline) Félicitations !
 
 Si vous êtes arrivé jusqu'ici sans dommage, vous avez désormais un serveur qui tire parti d'un ou de plusieurs disques de stockage.

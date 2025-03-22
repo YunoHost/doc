@@ -14,7 +14,7 @@ Una delle caratteristiche principali di YunoHost è la possibilità di installar
 Le applicazioni possono essere installate e gestite tramite l'interfaccia di amministrazione web nella sezione `[fa=cubes /] Applicazioni`, oppure utilizzando i comandi della categoria `yunohost app`.
 
 [center]
-![Apps list](image://apps_list.png?resize=512&classes=caption "Lista di applicazioni nella pagina webadmin con il relativo bottone Installa.")
+![Apps list](/img/apps_list.png?resize=512&classes=caption "Lista di applicazioni nella pagina webadmin con il relativo bottone Installa.")
 [/center]
 
 È possibile consultare il catalogo delle applicazioni nella pagina di amministrazione cliccando sul bottone `[fa=plus /] Installa` oppure dalla documentazione relativa all'applicazione stessa.
@@ -31,12 +31,12 @@ Diciamo che volete installare una *Custom Webapp*. Prima di avviare i passi dell
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Dalla pagina di amministrazione"]
 
-![Form di installazione di Custom Webapp](image://app_install_form.png?resize=512&classes=caption "Form di pre-installazione di Custom Webapp")
+![Form di installazione di Custom Webapp](/img/app_install_form.png?resize=512&classes=caption "Form di pre-installazione di Custom Webapp")
 
 [/ui-tab]
 [ui-tab title="Dalla riga di comando"]
 
-![Form di installazione di Custom Webapp con la CLI](image://app_install_form_cli.png?resize=512&classes=caption "Form di pre-installazione con la CLI")
+![Form di installazione di Custom Webapp con la CLI](/img/app_install_form_cli.png?resize=512&classes=caption "Form di pre-installazione con la CLI")
 
 [/ui-tab]
 [/ui-tabs]
@@ -102,7 +102,7 @@ Alcune impostazioni possono essere gestite da YunoHost dopo l'installazione come
 
 È possibile accedere alla pagina relative alle operazioni dell'applicazione cliccando sul nome nella lista delle applicazioni.
 
-![Pagina con le operazioni per le applicazioni](image://app_config_operations.png?resize=768&classes=caption "Pagina con le operazioni dell'applicazione nella pagina di amministrazione")
+![Pagina con le operazioni per le applicazioni](/img/app_config_operations.png?resize=768&classes=caption "Pagina con le operazioni dell'applicazione nella pagina di amministrazione")
 
 Da questa pagina è anche possibile eliminare l'applicazione.
 
@@ -132,7 +132,7 @@ Alcune applicazioni includono un *pannello di configurazione* che contiene azion
 
 È possibile accedere alla pagina relative alle operazioni dell'applicazione cliccando sul bottone `[fa=cogs /] Configurazione`.
 
-![Pannello di configurazione di My Webapp](image://app_config_panel.png?resize=768&classes=caption "Pannello di configurazione di MyWebapp")
+![Pannello di configurazione di My Webapp](/img/app_config_panel.png?resize=768&classes=caption "Pannello di configurazione di MyWebapp")
 
 [/ui-tab]
 [ui-tab title="Dalla riga di comando"]

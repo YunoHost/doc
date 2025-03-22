@@ -25,38 +25,38 @@ Ecco i valori da immettere per la configurazione manuale del vostro client mail 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Thunderbird Desktop"]
 
-#### ![](image://thunderbird.png?resize=50&classes=inline)  Configurazione di Thunderbird Desktop (su computer desktop)
+#### ![](/img/thunderbird.png?resize=50&classes=inline)  Configurazione di Thunderbird Desktop (su computer desktop)
 
 Per configurare manualmente un nuovo account in Thunderbird Desktop, iniziate ad inserire le informazioni iniziali (nome, indirizzo e password), cliccate su Continua e poi su Configurazione Manuale selezionando la porta 993 con SSL/TLS per IMAP e la porta 587 con STARTTLS per SMTP. Selezionate 'Password normale' come autenticazione e poi cliccate su 'Configurazione avanzata'. Può darsi che dobbiate accettare l'eccezione per il certificato prima di riuscire a scaricare l'email e prima di riuscire ad inviare la prima email. Non dimenticate di togliere il punto prima del nome del dominio.
 
-![](image://thunderbird_config_1.png?resize=900)
-![](image://thunderbird_config_2.png?resize=900)
+![](/img/thunderbird_config_1.png?resize=900)
+![](/img/thunderbird_config_2.png?resize=900)
 
 - [Gestione alias email](https://support.mozilla.org/en-US/kb/configuring-email-aliases)
 
 [/ui-tab]
 [ui-tab title="K-9 Mail / Thunderbird Mobile"]
 
-#### ![](image://k9mail.png?resize=50&classes=inline) Configurazione di K-9 Mail / Thunderbird Mobile (per Android)
+#### ![](/img/k9mail.png?resize=50&classes=inline) Configurazione di K-9 Mail / Thunderbird Mobile (per Android)
 
 Seguite le istruzioni seguenti (come per dovrete forse accettare i certificati affinché tutto funzioni correttamente):
 
-![](image://thunderbird_mobile_config_1.png?resize=280&classes=inline)
-![](image://thunderbird_mobile_config_2.png?resize=280&classes=inline)
+![](/img/thunderbird_mobile_config_1.png?resize=280&classes=inline)
+![](/img/thunderbird_mobile_config_2.png?resize=280&classes=inline)
 ![](image:/thunderbird_mobile_config_3.png?resize=280&classes=inline)
 
 [/ui-tab]
 [ui-tab title="Dekko"]
 
-#### ![](image://dekko-app.png?resize=50&classes=inline) Configurazione di Dekko (per Ubuntu Touch)
+#### ![](/img/dekko-app.png?resize=50&classes=inline) Configurazione di Dekko (per Ubuntu Touch)
 
 Se nessun account è già configurato, potete semplicemente scegliere "Aggiungi account". Se un account è già presente, premete sul menù a panino e in seguito sugli ingranaggi, scegliete Mail, Accounts e il simbolo '+'.
 
 Selezionate IMAP. Compilate i campi e premete Successivo. Dekko cercherà la configurazione necessaria. Controllate che tutti i campi siano corretti. Assicuratevi di aver inserito come nome utente il nome utente di YunoHost e NON il vostro indirizzo mail, scegliete "Autorizza certificati non firmati". Effettuate queste operazioni per IMAP e per SMTP e premete Successivo. Aspettate che Dekko termini la sincronizzazione dell'account. Avete finito! Complimenti!
 
-![](image://dekko_config_1.png?resize=280&classes=inline)
-![](image://dekko_config_2.png?resize=280&classes=inline)
-![](image://dekko_config_3.png?resize=280&classes=inline)
-![](image://dekko_config_4.png?resize=280&classes=inline)
+![](/img/dekko_config_1.png?resize=280&classes=inline)
+![](/img/dekko_config_2.png?resize=280&classes=inline)
+![](/img/dekko_config_3.png?resize=280&classes=inline)
+![](/img/dekko_config_4.png?resize=280&classes=inline)
 [/ui-tab]
 [/ui-tabs]

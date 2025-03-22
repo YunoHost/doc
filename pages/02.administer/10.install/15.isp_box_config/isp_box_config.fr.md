@@ -11,7 +11,7 @@ routes:
 
 Si vous vous auto-hébergez à la maison et sans VPN, il vous faut rediriger les ports de votre routeur ("machin-box"). Le schéma ci-dessous tente d'expliquer brièvement le rôle de la redirection des ports lors de la mise en place d'un serveur à la maison.
 
-[figure caption="Illustration de l'importance de la redirection des ports"]![](image://portForwarding_fr.png)[/figure]
+[figure caption="Illustration de l'importance de la redirection des ports"]![](/img/portForwarding_fr.png)[/figure]
 
 [Cette page](https://craym.eu/tutoriels/utilitaires/ouvrir_les_ports_de_sa_box.html) propose également des explications détaillées sur le fonctionnement des ports, et les étapes de configuration pour différents routeurs.
 

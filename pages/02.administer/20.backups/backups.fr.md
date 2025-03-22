@@ -29,7 +29,7 @@ La méthode de sauvegarde actuelle consiste à créer des archives `.tar` qui co
 
 Vous pouvez facilement créer des archives depuis la webadmin en allant dans `Sauvegardes > Archives locales` et en cliquant sur `Nouvelle sauvegarde`. Vous pourrez ensuite sélectionner les éléments à sauvegarder (configuration, données "système", applications).
 
-![Image de l'écran de sauvegarde de YunoHost dans la webadmin](image://backup.png)
+![Image de l'écran de sauvegarde de YunoHost dans la webadmin](/img/backup.png)
 
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
@@ -134,7 +134,7 @@ ls -lh /home/yunohost.backup/archives/ARCHIVE.tar
 
 Allez dans `Sauvegardes > Archives locales` et sélectionnez l'archive. Vous pouvez ensuite choisir les différents éléments que vous voulez restaurer puis cliquer sur "Restaurer".
 
-![](image://restore.png)
+![](/img/restore.png)
 
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]

@@ -58,7 +58,7 @@ Attivate l'opzione e compilate i campi necessari:
 
 ! [fa=exclamation-triangle /] Le password contenenti il carattere `#` non funzioneranno correttamente a causa di una regola di postfix (altri caratteri potrebbero non essere riconosciuti, se li scoprite comunicatelo agli sviluppatori di YunoHost affiché possano aggiornare questa guida).
 
-![Option-Relais-Smtp](image://relay_smtp_option_webadmin_en.png?resize=800)
+![Option-Relais-Smtp](/img/relay_smtp_option_webadmin_en.png?resize=800)
 
 [/ui-tab]
 [ui-tab title="Da linea di comando"]

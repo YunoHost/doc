@@ -13,11 +13,11 @@ Nous allons voir comment configurer le DNS avec [OVH](http://www.ovh.com).
 
 Après achat de votre nom de domaine, rendez-vous dans l'espace client pour retrouver le panneau de configuration d'OVH, et cliquez sur votre domaine à gauche :
 
-![](image://ovh_control_panel.png?resize=800)
+![](/img/ovh_control_panel.png?resize=800)
 
 Cliquez sur l'onglet **Zone DNS**, puis sur **Ajouter une entrée** :
 
-![](image://ovh_dns_zone.png?resize=800)
+![](/img/ovh_dns_zone.png?resize=800)
 
 Cliquer sur "Modifier en mode textuel", garder les 4 premières lignes :
 

@@ -32,7 +32,7 @@ Vous pouvez utiliser le logiciel [AngryIP](https://angryip.org/download/) pour y
 !!! - votre serveur devrait être monté comme écoutant sur les ports 80 et 443
 !!! - en cas de doute, tapez directement dans votre navigateur `https://192.168.x.y` pour voir si c'est un YunoHost ou non.
 
-![](image://angryip.png?class=inline)
+![](/img/angryip.png?class=inline)
 
 [/ui-tab]
 [ui-tab title="Avec votre box internet"]

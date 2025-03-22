@@ -136,21 +136,33 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Website',
+                href: 'https://yunohost.org/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Forum',
+                href: 'https://forum.yunohost.org/',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Contribute',
             items: [
               {
-                label: 'GitHub',
+                label: 'Donate',
+                href: 'https://donate.yunohost.org/',
+              },
+              {
+                label: 'GitHub (core)',
                 href: 'https://github.com/YunoHost',
+              },
+              {
+                label: 'GitHub (apps)',
+                href: 'https://github.com/YunoHost-Apps',
+              },
+              {
+                label: 'Translate',
+                href: 'https://translate.yunohost.org/',
               },
             ],
           },
