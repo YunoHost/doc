@@ -58,7 +58,8 @@ html[data-theme='dark'] .footer {
 }
 
 [data-theme='dark'] #ynhlogo,
-[data-theme='dark'] .navbar__logo {
+[data-theme='dark'] .navbar__logo,
+[data-theme='dark'] .sidebarLogo_isFc > img {
   filter: invert(1);
 }
 
