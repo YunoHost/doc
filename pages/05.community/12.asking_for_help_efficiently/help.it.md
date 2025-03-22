@@ -30,10 +30,10 @@ Di fondamentale importanza nelle richieste di aiuto è fornire log e messaggi di
 
 Quando qualcosa non va come dovrebbe, trovate dei pulsanti di colore verde "Condividere con YunoPaste" nella pagina dei Servizi nella pagina webadmin. Cliccando sul pulsante si aprirà una pagina web della quale dovrete condividere l'URL.
 
-![Bottone YunoPaste](image://yunopaste.png)
+![Bottone YunoPaste](/img/yunopaste.png)
 
-![YunoPaste da un errore di installazione](image://yunopaste_install.mp4?loop=1&controls=0&autoplay=1&muted)
-![YunoPaste da service](image://yunopaste_service.mp4?loop=1&controls=0&autoplay=1&muted)
+![YunoPaste da un errore di installazione](/img/yunopaste_install.mp4?loop=1&controls=0&autoplay=1&muted)
+![YunoPaste da service](/img/yunopaste_service.mp4?loop=1&controls=0&autoplay=1&muted)
 
 Se  il vostro problema non è dovuto ad un processo di installazione o di aggiornamento, ma più probabilmente ad una app che non parte correttamente, potete iniziare ad indagare tramite la console del vostro browser (tasto F12): la scheda Rete riporterà i codici di errore HTTP (compresi e i ben noti 403, 404, 500...) e anche la Console riporterà gli errori.
 

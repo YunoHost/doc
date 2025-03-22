@@ -11,7 +11,7 @@ routes:
 
 Wenn Sie zu Hause selbst hosten und kein VPN nutzen, müssen Sie die Ports Ihres Routers umleiten ("Internet box"). Das folgende Schema versucht, die Rolle der Portweiterleitung beim Einrichten eines Servers zu Hause kurz zu erklären.
 
-[figure caption="Abbildung der Wichtigkeit von Port-Weiterleitung"]![](image://portForwarding_en.png)[/figure]
+[figure caption="Abbildung der Wichtigkeit von Port-Weiterleitung"]![](/img/portForwarding_en.png)[/figure]
 
 ### 0. Offene Ports diagnostizieren
 

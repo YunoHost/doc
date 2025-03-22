@@ -11,7 +11,7 @@ routes:
 
 Se il vostro server è ospitato in casa e non avete configurato una VPN, dovrete configurare le porte del vostro router ("machin-box"). Lo schema qui sotto, cerca di spiegare, brevemente, il ruolo del reindirizzamento delle porte nella configurazione di un server casalingo.
 
-[figure caption="Immagine dell'importanza del reindirizzamento delle porte."]![](image://portForwarding_en.png)[/figure]
+[figure caption="Immagine dell'importanza del reindirizzamento delle porte."]![](/img/portForwarding_en.png)[/figure]
 
 ### 0. Visualizzare le porte aperte
 

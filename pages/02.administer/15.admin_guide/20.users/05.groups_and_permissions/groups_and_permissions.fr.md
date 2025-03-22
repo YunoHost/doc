@@ -9,7 +9,7 @@ routes:
 
 Vous pouvez accéder à l'interface de gestion des *groupes et des permissions* depuis l'admin web en allant dans la section "Utilisateurs" et en cliquant sur le bouton correspondant :
 
-![](image://button_to_go_to_permission_interface_fr.png?resize=800)
+![](/img/button_to_go_to_permission_interface_fr.png?resize=800)
 
 ## Gestion des groupes
 
@@ -35,7 +35,7 @@ Vous ne pouvez pas changer le contenu de ces groupes, seulement les permissions 
 [ui-tab title="À partir de l'interface web"]
 Les groupes existants sont listés en haut de la page *groupes et autorisations*.
 
-![](image://groups_default-groups_fr.png)
+![](/img/groups_default-groups_fr.png)
 
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
@@ -61,7 +61,7 @@ groups:
 [ui-tab title="À partir de l'interface web"]
 Pour créer un nouveau groupe, il suffit de cliquer sur le bouton "Nouveau groupe" en haut de la page. Vous ne pouvez choisir qu'un nom formé de lettres (majuscules et minuscules) et d'espaces. Le groupe est créé vide et sans aucune permission.
 
-![](image://groups_button-new-group.png)
+![](/img/groups_button-new-group.png)
 
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
@@ -80,11 +80,11 @@ yunohost user group create yolo_crew
 [ui-tab title="À partir de l'interface web"]
 Ajoutons un premier utilisateur à ce groupe : dans le panneau du groupe, cliquez sur le bouton "Ajouter un utilisateur" et faites défiler jusqu'à l'utilisateur souhaité, puis cliquez dessus.
 
-![](image://groups_button-add-user.png)
+![](/img/groups_button-add-user.png)
 
 Pour supprimer un utilisateur, cliquez sur la croix à côté de son nom d'utilisateur, dans le panneau du groupe.
 
-![](image://groups_button-remove-user.png)
+![](/img/groups_button-remove-user.png)
 
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
@@ -122,7 +122,7 @@ groups:
 [ui-tab title="À partir de l'interface web"]
 Pour supprimer un groupe, cliquez sur la croix rouge en haut à droite du panneau du groupes. Une confirmation vous sera demandée.
 
-![](image://groups_button-delete-group.png)
+![](/img/groups_button-delete-group.png)
 
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
@@ -146,7 +146,7 @@ Le mécanisme de permissions permet de restreindre l'accès aux services (par ex
 [ui-tab title="À partir de l'interface web"]
 La page des groupes liste les permissions données à chaque groupe, y compris les groupes spéciaux `all_users` et `visitors`.
 
-![](image://groups_default-with-permissions.png)
+![](/img/groups_default-with-permissions.png)
 
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
@@ -177,11 +177,11 @@ Plus de détails peuvent être affichés en ajoutant l'option `--full` qui affic
 [ui-tab title="À partir de l'interface web"]
 Pour ajouter une permission à un groupe, il suffit de cliquer sur le bouton "+" dans le panneau du groupe, de faire défiler jusqu'à la permission souhaitée, puis de cliquer dessus.
 
-![](image://groups_add-permission-group.png)
+![](/img/groups_add-permission-group.png)
 
 Notez que vous pouvez également autoriser un seul utilisateur, en utilisant le panneau spécifique en bas de la page.
 
-![](image://groups_add-permission-user.png)
+![](/img/groups_add-permission-user.png)
 
 Notez que, par exemple, si nous voulons restreindre la permission pour le mail afin que seul Bob soit autorisé à envoyer des courriels, nous devons également supprimer la permission du panneau de groupe 'Tous les utilisateurs'.
 
@@ -223,7 +223,7 @@ Notez que certaines permissions peuvent être « protégées », ce qui signifie
 
 La webadmin émettra un avertissement si vous définissez une permission qui est remplacée par une permission plus large.
 
-![](image://groups_alerte-permission.png)
+![](/img/groups_alerte-permission.png)
 
 ### Montrer/cacher les tuiles dans le portail utilisateur
 

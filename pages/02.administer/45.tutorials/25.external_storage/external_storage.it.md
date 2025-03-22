@@ -248,6 +248,6 @@ rm -Rf /home/yunohost.app.bkp
 rm -Rf /var/mail.bkp
 ```
 
-### ![](image://tada.png?resize=32&classes=inline) Complimenti!!!
+### ![](/img/tada.png?resize=32&classes=inline) Complimenti!!!
 
 Se siete giunti fino qui senza incidenti, avete configurato un server che sfrutta uno o più dischi per il salvataggio dei dati.

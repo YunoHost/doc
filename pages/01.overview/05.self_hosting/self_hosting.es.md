@@ -12,7 +12,7 @@ El auto-alojamiento se refiere al hecho de tener y administrar tú tu propio ser
 
 Auto-alojar implica disponer de un servidor. Un servidor es un ordenador destinado a ser accesible en la red las 24 horas del día y que normalmente no tiene ni pantalla ni teclado, ya que se controla a distancia. Contrariamente a una creencia extendida, los servidores no son necesariamente máquinas enormes y muy potentes: en la actualidad, una pequeña placa ARM de unos ~30€/$ es suficiente para el auto-hospedaje.
 
-![](image://internet_topologies.png)
+![](/img/internet_topologies.png)
 
 La práctica del auto-alojamiento no convierte "tu internet" más segura y tampoco proporciona anonimato por si mismo. El objetivo es generalmente generar autonomía y control de tus servicios y tus datos - lo que también implica una responsabilidad.
 

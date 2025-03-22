@@ -70,27 +70,27 @@ Wähle die Hardware, auf der du YunoHost installieren willst :
 [div class="flex-container"]
 
 [div class="flex-child hardware{%if virtualbox %} active{% endif %}"]
-[[figure caption="VirtualBox"]![](image://virtualbox.png?height=75)[/figure]](/install/hardware:virtualbox)
+[[figure caption="VirtualBox"]![](/img/virtualbox.png?height=75)[/figure]](/install/hardware:virtualbox)
 [/div]
 
 [div class="flex-child hardware{%if rpi012 or rpi345 %} active{% endif %}"]
-[[figure caption="Raspberry Pi"]![](image://raspberrypi.png?height=75)[/figure]](/install/hardware:rpi345)
+[[figure caption="Raspberry Pi"]![](/img/raspberrypi.png?height=75)[/figure]](/install/hardware:rpi345)
 [/div]
 
 [div class="flex-child hardware{%if arm_sup or (arm_unsup and not rpi012) or internetcube %} active{% endif %}"]
-[[figure caption="ARM Board"]![](image://olinuxino.png?height=75)[/figure]](/install/hardware:arm)
+[[figure caption="ARM Board"]![](/img/olinuxino.png?height=75)[/figure]](/install/hardware:arm)
 [/div]
 
 [div class="flex-child hardware{%if regular %} active{% endif %}"]
-[[figure caption="Normaler Computer"]![](image://computer.png?height=75)[/figure]](/install/hardware:regular)
+[[figure caption="Normaler Computer"]![](/img/computer.png?height=75)[/figure]](/install/hardware:regular)
 [/div]
 
 [div class="flex-child hardware{%if wsl %} active{% endif %}"]
-[[figure caption="WSL"]![](image://wsl.png?height=75)[/figure]](/install/hardware:wsl)
+[[figure caption="WSL"]![](/img/wsl.png?height=75)[/figure]](/install/hardware:wsl)
 [/div]
 
 [div class="flex-child hardware{%if vps_debian or vps_ynh %} active{% endif %}"]
-[[figure caption="Remote Server"]![](image://vps.png?height=75)[/figure]](/install/hardware:vps_debian)
+[[figure caption="Remote Server"]![](/img/vps.png?height=75)[/figure]](/install/hardware:vps_debian)
 [/div]
 
 [/div]
@@ -98,34 +98,34 @@ Wähle die Hardware, auf der du YunoHost installieren willst :
 
 {% if rpi012 or rpi345 %}
 [div class="flex-child hardware{%if rpi345 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 3, 4 oder 5"]![](image://raspberrypi.png?height=50)[/figure]](/install/hardware:rpi345)
+[[figure caption="Raspberry Pi 3, 4 oder 5"]![](/img/raspberrypi.png?height=50)[/figure]](/install/hardware:rpi345)
 [/div]
 
 [div class="flex-child hardware{%if rpi012 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 0, 1 oder 2"]![](image://rpi1.png?height=50)[/figure]](/install/hardware:rpi012)
+[[figure caption="Raspberry Pi 0, 1 oder 2"]![](/img/rpi1.png?height=50)[/figure]](/install/hardware:rpi012)
 [/div]
 
 {% elseif show_legacy_arm_menu %}
 
 [div class="flex-child hardware{%if internetcube %} active{% endif %}"]
-[[figure caption="Internet cube mit VPN"]![](image://internetcube.png?height=50)[/figure]](/install/hardware:internetcube)
+[[figure caption="Internet cube mit VPN"]![](/img/internetcube.png?height=50)[/figure]](/install/hardware:internetcube)
 [/div]
 
 [div class="flex-child hardware{%if arm_sup and not internetcube %} active{% endif %}"]
-[[figure caption="Olinuxino lime1&2 oder Orange Pi PC+"]![](image://olinuxino.png?height=50)[/figure]](/install/hardware:arm_sup)
+[[figure caption="Olinuxino lime1&2 oder Orange Pi PC+"]![](/img/olinuxino.png?height=50)[/figure]](/install/hardware:arm_sup)
 [/div]
 
 [div class="flex-child hardware{%if arm_unsup %} active{% endif %}"]
-[[figure caption="Andere Boards"]![](image://odroidhc4.png?height=50)[/figure]](/install/hardware:arm_unsup)
+[[figure caption="Andere Boards"]![](/img/odroidhc4.png?height=50)[/figure]](/install/hardware:arm_unsup)
 [/div]
 {% elseif vps_debian or vps_ynh %}
 
 [div class="flex-child hardware{%if vps_debian %} active{% endif %}"]
-[[figure caption="VPS oder dedizierter Server mit Debian 12"]![](image://debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
+[[figure caption="VPS oder dedizierter Server mit Debian 12"]![](/img/debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
 [/div]
 
 [div class="flex-child hardware{%if vps_ynh %} active{% endif %}"]
-[[figure caption="VPS oder dedizierter Server mit YunoHost vorinstalliert"]![](image://logo.png?height=50)[/figure]](/install/hardware:vps_ynh)
+[[figure caption="VPS oder dedizierter Server mit YunoHost vorinstalliert"]![](/img/logo.png?height=50)[/figure]](/install/hardware:vps_ynh)
 [/div]
 
 {% endif %}
@@ -327,13 +327,13 @@ Hier sind ein paar VPS Provider, die YunoHost nativ unterstützen :
 [div class="flex-container"]
 
 [div class="flex-child"]
-[[figure caption="Alsace Réseau Neutre - FR"]![](image://vps_ynh_arn.png?height=50)[/figure]](https://arn-fai.net/en/h%C3%A9bergement-alternatif/vps)
+[[figure caption="Alsace Réseau Neutre - FR"]![](/img/vps_ynh_arn.png?height=50)[/figure]](https://arn-fai.net/en/h%C3%A9bergement-alternatif/vps)
 [/div]
 [div class="flex-child"]
-[[figure caption="FAImaison - FR"]![](image://vps_ynh_faimaison.svg?height=50)[/figure]](https://www.faimaison.net/services/vm.html)
+[[figure caption="FAImaison - FR"]![](/img/vps_ynh_faimaison.svg?height=50)[/figure]](https://www.faimaison.net/services/vm.html)
 [/div]
 [div class="flex-child"]
-[[figure caption="ECOWAN - FR"]![](image://vps_ynh_ecowan.png?height=50)[/figure]](https://www.ecowan.fr/vps-linux?from-yunohost)
+[[figure caption="ECOWAN - FR"]![](/img/vps_ynh_ecowan.png?height=50)[/figure]](https://www.ecowan.fr/vps-linux?from-yunohost)
 [/div]
 [/div]
 {% endif %}
@@ -420,11 +420,11 @@ $(document).ready(function () {
 
 {% if arm %}
 
-## ![microSD Karte mit Adapter](image://sdcard_with_adapter.png?resize=100,75&class=inline) Flash das {{image_type}} Image
+## ![microSD Karte mit Adapter](/img/sdcard_with_adapter.png?resize=100,75&class=inline) Flash das {{image_type}} Image
 
 {% else %}
 
-## ![USB Stick](image://usb_key.png?resize=100,100&class=inline) Flash das YunoHost Image
+## ![USB Stick](/img/usb_key.png?resize=100,100&class=inline) Flash das YunoHost Image
 
 {% endif %}
 
@@ -437,7 +437,7 @@ Lade <a href="https://www.balena.io/etcher/" target="_blank">Etcher</a> für dei
 
 Steck {% if arm %}die SD Karte{% else %}den USB Stick{% endif %} an, wähle dein Image und klicke "Flash".
 
-![Etcher](image://etcher.gif?resize=700&class=inline)
+![Etcher](/img/etcher.gif?resize=700&class=inline)
 
 [/ui-tab]
 [ui-tab title="Mit USBimager"]
@@ -446,7 +446,7 @@ Lade [USBimager](https://bztsrc.gitlab.io/usbimager/) für dein Betriebssystem h
 
 Steck {% if arm %}die SD Karte{% else %}den USB Stick{% endif %} an, wähle dein Image und klicke "Write".
 
-![USBimager](image://usbimager.png?resize=700&class=inline)
+![USBimager](/img/usbimager.png?resize=700&class=inline)
 
 [/ui-tab]
 [ui-tab title="Mit dd Befehl"]
@@ -478,7 +478,7 @@ Für ältere Geräte könntest du eine CD/DVD brennen wollen. Die zu verwendende
 
 ## Erzeuge eine neue virtuelle Maschine
 
-![](image://virtualbox_1.png?class=inline)
+![](/img/virtualbox_1.png?class=inline)
 
 ! Es ist in Ordnung, wenn du nur 32-bit Versionen haben kannst. Sei einfach sicher, dass du zuvor das 32-bit Image heruntergeladen hast.
 
@@ -492,7 +492,7 @@ Gehe zu **Settings** > **Network**:
 - Wähle den Namen deines Interface:
     **wlan0**, wenn du kabellos verbunden bist, oder andernfalls **eth0**.
 
-![](image://virtualbox_2.png?class=inline)
+![](/img/virtualbox_2.png?class=inline)
 
 {% endif %}
 
@@ -514,7 +514,7 @@ Gehe zu **Settings** > **Network**:
 
 Starte die virtuelle Maschine nach der Auswahl des YunoHost Image.
 
-![](image://virtualbox_2.1.png?class=inline)
+![](/img/virtualbox_2.1.png?class=inline)
 
 ! Wenn du an den Fehler "VT-x ist nicht erreichbar" gerätst, musst du wahrscheinlich Virtualisierung im BIOS deines Computers einschalten.
 
@@ -535,7 +535,7 @@ Starte die virtuelle Maschine nach der Auswahl des YunoHost Image.
 Du solltest einen Bildschirm wie diesen sehen:
 
 [figure class="nomargin" caption="Vorschau des ISO Menüs"]
-![](image://virtualbox_3.png?class=inline)
+![](/img/virtualbox_3.png?class=inline)
 [/figure]
 [ui-tabs position="top-left" active="0" theme="lite"]
 
@@ -649,7 +649,7 @@ Du kannst die Erstkonfiguration mit der Weboberfläche durchführen, indem du in
 Dann solltest du auf dieser Seite landen:
 
 [figure class="nomargin" caption="Vorschau der Web-Erstkonfigurationsseite"]
-![Initial configuration page](image://postinstall_web.png?resize=100%&class=inline)
+![Initial configuration page](/img/postinstall_web.png?resize=100%&class=inline)
 [/figure]
 
 {% endif %}
@@ -659,7 +659,7 @@ Dann solltest du auf dieser Seite landen:
 Du kannst die Post-Installation auch mit dem Befehl `yunohost tools postinstall` direkt auf dem Server oder [über SSH](/administer/admin_guide/command_line) durchführen.
 
 [figure class="nomargin" caption="Vorschau der Kommandozeile nach der Post-Installation"]
-![Initial configuration with CLI](image://postinstall_cli.png?resize=100%&class=inline)
+![Initial configuration with CLI](/img/postinstall_cli.png?resize=100%&class=inline)
 [/figure]
 
 [/ui-tab]
@@ -726,7 +726,7 @@ Das Diagnosesystem soll eine einfache Möglichkeit bieten, zu überprüfen, ob a
 Um eine Diagnose auszuführen, gehe im Web Admin auf den Abschnitt "Diagnose". Klicke auf "Erstdiagnose ausführen". Du solltest nun einen Bildschirm wie diesen erhalten:
 
 [figure class="nomargin" caption="Vorschau des Diagnosepanels"]
-![](image://diagnostic.png?resize=100%&class=inline)
+![](/img/diagnostic.png?resize=100%&class=inline)
 [/figure]
 
 [/ui-tab]
@@ -752,7 +752,7 @@ Ausführlichere Anweisungen oder weitere Informationen zu SSL/TLS-Zertifikaten f
 Gehe zu Domains > Klicke auf deine Domain > SSL Zertifikat
 
 [figure class="nomargin" caption="Vorschau des Diagnosepanels"]
-![](image://certificate-before-LE.png?resize=100%&class=inline)
+![](/img/certificate-before-LE.png?resize=100%&class=inline)
 [/figure]
 
 [/ui-tab]
@@ -765,7 +765,7 @@ yunohost domain cert install
 [/ui-tab]
 [/ui-tabs]
 
-## ![](image://tada.png?resize=32&classes=inline) Gratulation!
+## ![](/img/tada.png?resize=32&classes=inline) Gratulation!
 
 Jetzt hast du ein sehr gut konfigurierten Server. Wenn du neu bei YunoHost bist, empfehlen wir dir, einen Blick auf [die geführte Tour](/overview) zu werfen. Du solltest auch in der Lage sein, [deine Lieblingsanwendungen zu installieren](https://apps.yunohost.org). Vergiss nicht, [Backups zu planen](/backup)!
 

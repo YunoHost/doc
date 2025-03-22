@@ -18,7 +18,7 @@ Der erste Benutzer, der angelegt wird, erhält auch automatisch die E-Mail-Alias
 ## Das Benutzerportal oder SSO
 
 [center]
-![](image://user_panel.jpg)
+![](/img/user_panel.jpg)
 [/center]
 
 Das Benutzerportal, auch SSO für 'Single Sign On' genannt, ermöglicht es den Benutzern, einfach zwischen den verschiedenen Anwendungen, auf die sie Zugriff haben, zu wechseln. Der Begriff "Single Sign On" kommt daher, dass der Benutzer sich nur im Portal anmelden muss, um automatisch bei allen Anwendungen angemeldet zu werden, die eine Authentifizierung erfordern (oder zumindest bei denen, die mit SSO/LDAP integriert sind, da dies manchmal technisch kompliziert oder gar nicht möglich ist).

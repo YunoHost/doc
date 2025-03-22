@@ -24,7 +24,7 @@ The current default method consists in creating a `.tar` archive containing all 
 
 You can easily create backup archives from the webadmin by going to `Backups > Local storage` and clicking on `New backup`. You will then be asked to select which configuration, data and apps you want to backup.
 
-![picture of YunoHost's backup pannel](image://backup.png)
+![picture of YunoHost's backup pannel](/img/backup.png)
 
 [/ui-tab]
 [ui-tab title="From the command line"]
@@ -128,7 +128,7 @@ ls -lh /home/yunohost.backup/archives/ARCHIVE.tar
 
 Go in `Backup > Local storage` and select your archive. You can then select which items you want to restore, then click on 'Restore'.
 
-![picture of YunoHost's restore pannel](image://restore.png)
+![picture of YunoHost's restore pannel](/img/restore.png)
 
 [/ui-tab]
 [ui-tab title="From the command line"]

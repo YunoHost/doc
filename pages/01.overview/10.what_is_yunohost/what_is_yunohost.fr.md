@@ -7,22 +7,22 @@ routes:
   default: '/whatsyunohost'
 ---
 
-![YunoHost logo](image://YunoHost_logo_vertical.png?resize=400&id=ynhlogo)
+![YunoHost logo](/img/YunoHost_logo_vertical.png?resize=400&id=ynhlogo)
 
 YunoHost est un **système d’exploitation** qui vise à simplifier autant que possible **l'administration d'un serveur** pour ainsi démocratiser [l’auto-hébergement](/selfhosting) tout en restant fiable, sécurisé, éthique et léger. C'est un projet de logiciel libre maintenu exclusivement par des bénévoles. Techniquement, il peut être vu comme une distribution basée sur [Debian GNU/Linux](https://debian.org) et peut s'installer sur [de nombreux types de matériel](/install).
 
 ## Fonctionnalités
 
-- ![](image://icon-debian.png?resize=32&classes=inline) basé sur Debian, pour une base de confiance et familière ;
-- ![](image://icon-tools.png?resize=32&classes=inline) administration via une **interface web simple et claire** ou en ligne de commande ;
-- ![](image://icon-package.png?resize=32&classes=inline) déployez des **applications en quelques clics**, parmi [un catalogue de plus de 500](https://apps.yunohost.org) ! ;
-- ![](image://icon-users.png?resize=32&classes=inline) ajoutez des **utilisateurs** <small>(gérés via un annuaire LDAP)</small> ;
-- ![](image://icon-globe.png?resize=32&classes=inline) gérez des **noms de domaine** ;
-- ![](image://icon-medic.png?resize=32&classes=inline) créez et restaurez des **sauvegardes** ;
-- ![](image://icon-door.png?resize=32&classes=inline) connexion simultanée à toutes les apps via un **portail utilisateur** <small>(nginx, SSOwat)</small> ;
-- ![](image://icon-mail.png?resize=32&classes=inline) fourni avec un **serveur mail complet** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
-- ![](image://icon-lock.png?resize=32&classes=inline) gère les **certificats SSL** <small>(basé sur Let's Encrypt)</small> ;
-- ![](image://icon-shield.png?resize=32&classes=inline) ... et des **systèmes de sécurité** <small>(`fail2ban`, `yunohost-firewall`)</small>.
+- ![](/img/icon-debian.png?resize=32&classes=inline) basé sur Debian, pour une base de confiance et familière ;
+- ![](/img/icon-tools.png?resize=32&classes=inline) administration via une **interface web simple et claire** ou en ligne de commande ;
+- ![](/img/icon-package.png?resize=32&classes=inline) déployez des **applications en quelques clics**, parmi [un catalogue de plus de 500](https://apps.yunohost.org) ! ;
+- ![](/img/icon-users.png?resize=32&classes=inline) ajoutez des **utilisateurs** <small>(gérés via un annuaire LDAP)</small> ;
+- ![](/img/icon-globe.png?resize=32&classes=inline) gérez des **noms de domaine** ;
+- ![](/img/icon-medic.png?resize=32&classes=inline) créez et restaurez des **sauvegardes** ;
+- ![](/img/icon-door.png?resize=32&classes=inline) connexion simultanée à toutes les apps via un **portail utilisateur** <small>(nginx, SSOwat)</small> ;
+- ![](/img/icon-mail.png?resize=32&classes=inline) fourni avec un **serveur mail complet** <small>(Postfix, Dovecot, Rspamd, DKIM)</small> ;
+- ![](/img/icon-lock.png?resize=32&classes=inline) gère les **certificats SSL** <small>(basé sur Let's Encrypt)</small> ;
+- ![](/img/icon-shield.png?resize=32&classes=inline) ... et des **systèmes de sécurité** <small>(`fail2ban`, `yunohost-firewall`)</small>.
 
 ## Origine
 
@@ -36,7 +36,7 @@ Il ne manquait en fait qu’une interface d’administration au serveur de Beudb
 Constatant l’engouement croissant autour de YunoHost et de l’auto-hébergement en général, les développeurs et les nouveaux contributeurs ont alors décidé de prendre le cap d’une version 2, plus accessible, plus extensible, plus puissante, et qui prépare du bon café commerce équitable pour les lutins de Laponie.
 
 Le nom **YunoHost** vient de l’argot Internet anglais « [Y U NO](https://knowyourmeme.com/memes/y-u-no-guy) Host » signifiant approximativement « Pourquoi toi ne pas héberger ». Le [mème Internet](http://fr.wikipedia.org/wiki/M%C3%A8me_Internet) qui l’illustre est à peu près celui-ci :
-![Le mème en question, montrant un bonhomme au visage déformé par la frustation et questionnant « Y U NO Host »](image://dude_yunohost.jpg)
+![Le mème en question, montrant un bonhomme au visage déformé par la frustation et questionnant « Y U NO Host »](/img/dude_yunohost.jpg)
 
 ## Qu’est-ce que YunoHost n’est pas ?
 
@@ -50,4 +50,4 @@ Vous pouvez héberger vos amis, votre famille, votre association ou votre entrep
 
 Logo YunoHost noir et blanc réalisé par ToZz (400 × 400 px). Licence: CC-BY-SA 4.0. Les logos et autres artwork sont disponibles sur <https://github.com/YunoHost/yunohost-artwork>.
 
-[![Logo au texte noir](image://ynh_logo_black_300dpi.png?resize=220)](image://ynh_logo_black_300dpi.png) [![Logo au texte blanc](image://ynh_logo_white_300dpi.png?resize=220)](image://ynh_logo_white_300dpi.png)
+[![Logo au texte noir](/img/ynh_logo_black_300dpi.png?resize=220)](/img/ynh_logo_black_300dpi.png) [![Logo au texte blanc](/img/ynh_logo_white_300dpi.png?resize=220)](/img/ynh_logo_white_300dpi.png)

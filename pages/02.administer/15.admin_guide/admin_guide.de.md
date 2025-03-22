@@ -10,7 +10,7 @@ routes:
 
 Diese Seite bietet eine Übersicht über das Ökosystem eines YunoHost-Servers. Diese Übersicht macht mehrere Vereinfachungen und zielt wesentlich darauf ab, ein globales Bild zu vermitteln, bevor tiefer auf die verschiedenen Aspekte eingegangen wird.
 
-![](image://ecosystem.png)
+![](/img/ecosystem.png)
 
 Alles beginnt mit dem speziellen **admin** Benutzer. Dies ist der Administrator des Computers, der Dinge auf dem Server über die Webverwaltungsoberfläche oder über SSH und die Befehlszeilenschnittstelle installieren, konfigurieren und verwalten kann. *(Wenn du bereits mit GNU / Linux vertraut bist, ist dies root ziemlich ähnlich. YunoHost hat diesen zusätzlichen 'Admin'-Benutzer aus verschiedenen technischen Gründen.)*
 

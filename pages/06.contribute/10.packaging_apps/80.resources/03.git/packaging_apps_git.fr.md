@@ -30,14 +30,14 @@ La branche master est la branche qui contient la version de l'application que le
 La bonne habitude à prendre est de travailler à partir de la branche testing, et lorsque tout est réglé et testé, vous pouvez fusionner la branche testing dans master, afin que les utilisateurs puissent profiter de la nouvelle version de votre package.
 
 Pour voir et modifier la branche actuelle, utilisez ce bouton :  
-![](image://github_branch.png)
+![](/img/github_branch.png)
 
 ### Modifier un fichier
 
 Maintenant que vous êtes sur la bonne branche, voyons comment éditer un fichier sur GitHub.
 
 Vous pouvez éditer n'importe quel fichier en utilisant l'icône du petit crayon :  
-![](image://github_edit.png)
+![](/img/github_edit.png)
 
 Si vous n'avez pas la permission d'écrire sur le dépôt, vous verrez (comme sur l'image) que vous allez créer un fork (nous verrons plus loin ce qu'est un fork).  
 Si vous avez la permission d'écrire, vous allez simplement modifier le fichier, sans forker.
@@ -46,7 +46,7 @@ Si vous avez la permission d'écrire, vous allez simplement modifier le fichier,
 
 Lorsque vous avez fini de modifier le fichier, vous pouvez faire un commit de vos modifications.  
 Derrière ce mot, l'idée est assez simple, vous allez juste enregistrer vos modifications...  
-![](image://github_commit.png)
+![](/img/github_commit.png)
 
 Le premier champ est le nom de votre commit, une phrase très courte pour expliquer pourquoi vous avez fait cette modification.  
 Le deuxième champ est un champ plus grand pour une explication plus complète, si vous en avez besoin.
@@ -74,7 +74,7 @@ Il se peut que vous deviez tout de même forker sur votre propre compte pour pou
 Après avoir effectué vos commits, que ce soit sur une branche ou un fork, vous souhaitez proposer vos modifications pour qu'elles soient intégrées dans le dépôt principal, ou dans la branche d'origine.  
 Pour ce faire, vous allez créer une pull request. GitHub vous demande généralement directement si vous souhaitez le faire.
 Sinon, vous trouverez le bouton de création d'une pull request juste ici :  
-![](image://github_pull_request.png)
+![](/img/github_pull_request.png)
 
 Lors de la création d'une pull request à partir d'un fork, pour faciliter le travail de révision du code, **ne jamais** décocher la case *Allow edits from maintainers*. Cette option permet simplement aux mainteneurs du dépôt d'origine de modifier directement votre travail.
 
@@ -124,7 +124,7 @@ Dans le contexte d'un nouveau package, vous devrez également créer un dépôt 
 Ce qui n'est pas plus compliqué qu'un gros bouton vert *New*.  
 Ne vous embêtez pas avec des README, .gitignore ou licence. Créez simplement le dépôt lui-même.  
 vous pouvez maintenant cloner ce nouveau dépôt avec Git.  
-![](image://github_create_new_repo.png)
+![](/img/github_create_new_repo.png)
 
 Vous disposez maintenant de 2 dépôts clonés sur votre ordinateur.  
 Copiez tous les fichiers de l'application example_ynh, **excepté le répertoire .git** (vous voulez juste les fichiers eux-mêmes) dans votre nouveau package.

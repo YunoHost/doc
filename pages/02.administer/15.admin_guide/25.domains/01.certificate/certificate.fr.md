@@ -12,7 +12,7 @@ Les certificats sont utilisés pour garantir la confidentialité et l'authentici
 YunoHost fournit par défaut un certificat **auto-signé**, ce qui veut dire que c’est votre serveur qui garantit la validité du certificat. C’est suffisant **pour un usage personnel**, car vous pouvez avoir confiance en votre serveur, en revanche cela posera problème si vous comptez ouvrir l’accès à votre serveur à des anonymes, par exemple pour héberger un site web.
 En effet, les utilisateurs devront passer par un écran de ce type :
 
-![](image://postinstall_error.png)
+![](/img/postinstall_error.png)
 
 Cet écran revient à demander **« Avez-vous confiance au serveur qui héberge ce site ? »**.
 Cela peut effrayer vos utilisateurs (à juste titre).
@@ -33,24 +33,24 @@ de votre serveur) et que votre site est accessible en HTTP depuis l'extérieur
 Rendez-vous dans la partie 'Domaines' de l'interface d'administration, puis dans
 la section dédiée à votre domaine. Vous trouverez un bouton 'Certificat SSL'.
 
-![](image://domain-certificate-button-fr.png)
+![](/img/domain-certificate-button-fr.png)
 
 Dans la section 'Certificat SSL', vous pourrez voir l'état actuel du certificat.
 Si vous venez d'ajouter le domaine, il dispose d'un certificat auto-signé.
 
-![](image://certificate-before-LE-fr.png)
+![](/img/certificate-before-LE-fr.png)
 
 Si votre domaine est correctement configuré, il vous est alors possible de
 passer à un certificat Let's Encrypt via le bouton vert.
 
-![](image://certificate-after-LE-fr.png)
+![](/img/certificate-after-LE-fr.png)
 
 Une fois l'installation effectuée, vous pouvez vous rendre sur votre domaine
 via votre navigateur, en HTTPS, pour vérifier que votre certificat est bien
 signé par Let's Encrypt. Le certificat sera renouvelé automatiquement tous les
 trois mois environ.
 
-![](image://certificate-signed-by-LE.png)
+![](/img/certificate-signed-by-LE.png)
 
 #### Via la ligne de commande
 
