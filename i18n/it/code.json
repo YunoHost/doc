@@ -3,10 +3,6 @@
     "message": "Pagina non trovata",
     "description": "The title of the 404 page"
   },
-  "theme.NotFound.p2.editLinkText": {
-    "message": "editing it",
-    "description": "The label for the edit page link"
-  },
   "theme.ErrorPageContent.title": {
     "message": "Questa pagina è andata in crash.",
     "description": "The title of the fallback page when the page crashed"

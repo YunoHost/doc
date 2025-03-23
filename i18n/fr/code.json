@@ -3,10 +3,6 @@
     "message": "Page introuvable",
     "description": "The title of the 404 page"
   },
-  "theme.NotFound.p2.editLinkText": {
-    "message": "Éditer",
-    "description": "The label for the edit page link"
-  },
   "theme.ErrorPageContent.title": {
     "message": "Cette page a planté.",
     "description": "The title of the fallback page when the page crashed"

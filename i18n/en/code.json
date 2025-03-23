@@ -15,10 +15,6 @@
     "message": "{heartIcon} You can contribute to the documentation by {editButton}!",
     "description": "The 2nd paragraph of the 404 page"
   },
-  "theme.NotFound.p2.editLinkText": {
-    "message": "editing it",
-    "description": "The label for the edit page link"
-  },
   "theme.admonition.note": {
     "message": "note",
     "description": "The default label used for the Note admonition (:::note)"
@@ -102,10 +98,6 @@
   "theme.docs.breadcrumbs.navAriaLabel": {
     "message": "Breadcrumbs",
     "description": "The ARIA label for the breadcrumbs"
-  },
-  "theme.docs.DocCard.categoryDescription": {
-    "message": "{count} items",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.paginator.navAriaLabel": {
     "message": "Docs pages",
@@ -198,10 +190,6 @@
     "message": "Toggle word wrap",
     "description": "The title attribute for toggle word wrapping button of code block lines"
   },
-  "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
-    "message": "Toggle the collapsible sidebar category '{label}'",
-    "description": "The ARIA label to toggle the collapsible sidebar category"
-  },
   "theme.NavBar.navAriaLabel": {
     "message": "Main",
     "description": "The ARIA label for the main navigation"
@@ -262,26 +250,6 @@
     "message": "Expand sidebar",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
-  "cmfcmf/d-s-l.searchBar.placeholder": {
-    "message": "Search...",
-    "description": "Placeholder shown in the searchbar"
-  },
-  "cmfcmf/d-s-l.searchBar.clearButtonTitle": {
-    "message": "Clear",
-    "description": "Title of the button to clear the current search input"
-  },
-  "cmfcmf/d-s-l.searchBar.detachedCancelButtonText": {
-    "message": "Cancel",
-    "description": "Text of the button to close the detached search window"
-  },
-  "cmfcmf/d-s-l.searchBar.submitButtonTitle": {
-    "message": "Submit",
-    "description": "Title of the button to submit a new search"
-  },
-  "cmfcmf/d-s-l.searchBar.noResults": {
-    "message": "No results found.",
-    "description": "message shown if no results are found"
-  },
   "theme.ErrorPageContent.tryAgain": {
     "message": "Try again",
     "description": "The label of the button to try again rendering when the React error boundary captures an error"
@@ -293,10 +261,6 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
-  },
-  "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "1 item|{count} items",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.admonition.warning": {
     "message": "warning",
@@ -341,5 +305,9 @@
   "theme.contentVisibility.draftBanner.message": {
     "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
     "description": "The draft content banner message"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 item|{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
   }
 }

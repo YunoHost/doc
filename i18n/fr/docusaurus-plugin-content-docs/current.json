@@ -170,5 +170,13 @@
   "sidebar.docsSidebar.link.Forum": {
     "message": "Forum",
     "description": "The label for link Forum in sidebar docsSidebar, linking to https://forum.yunohost.org"
+  },
+  "sidebar.docsSidebar.category.Fournisseurs d’accès à Internet": {
+    "message": "Fournisseurs d’accès à Internet",
+    "description": "The label for category Fournisseurs d’accès à Internet in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Guided tour for the admin": {
+    "message": "Guided tour for the admin",
+    "description": "The label for category Guided tour for the admin in sidebar docsSidebar"
   }
 }

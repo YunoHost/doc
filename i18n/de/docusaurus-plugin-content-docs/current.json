@@ -127,10 +127,6 @@
     "message": "Dokumentation schreiben",
     "description": "The label for category Dokumentation schreiben in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Einführung in die Paketierung": {
-    "message": "Einführung in die Paketierung",
-    "description": "The label for category Einführung in die Paketierung in sidebar docsSidebar"
-  },
   "sidebar.docsSidebar.category.Writing the app manifest": {
     "message": "Writing the app manifest",
     "description": "The label for category Writing the app manifest in sidebar docsSidebar"
@@ -166,5 +162,17 @@
   "sidebar.docsSidebar.link.Forum": {
     "message": "Forum",
     "description": "The label for link Forum in sidebar docsSidebar, linking to https://forum.yunohost.org"
+  },
+  "sidebar.docsSidebar.category.Internet service providers": {
+    "message": "Internet service providers",
+    "description": "The label for category Internet service providers in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Domains, DNS conf und Zertifikat": {
+    "message": "Domains, DNS conf und Zertifikat",
+    "description": "The label for category Domains, DNS conf und Zertifikat in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.index": {
+    "message": "index",
+    "description": "The label for category index in sidebar docsSidebar"
   }
 }

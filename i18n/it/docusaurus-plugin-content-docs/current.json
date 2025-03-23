@@ -79,10 +79,6 @@
     "message": "Aggiornamenti",
     "description": "The label for category Aggiornamenti in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Migrer de 11.x vers 12.x": {
-    "message": "Migrer de 11.x vers 12.x",
-    "description": "The label for category Migrer de 11.x vers 12.x in sidebar docsSidebar"
-  },
   "sidebar.docsSidebar.category.Backups": {
     "message": "Backups",
     "description": "The label for category Backups in sidebar docsSidebar"
@@ -170,5 +166,13 @@
   "sidebar.docsSidebar.link.Forum": {
     "message": "Forum",
     "description": "The label for link Forum in sidebar docsSidebar, linking to https://forum.yunohost.org"
+  },
+  "sidebar.docsSidebar.category.Internet service providers": {
+    "message": "Internet service providers",
+    "description": "The label for category Internet service providers in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Migrating from 11.x to 12.x": {
+    "message": "Migrating from 11.x to 12.x",
+    "description": "The label for category Migrating from 11.x to 12.x in sidebar docsSidebar"
   }
 }
