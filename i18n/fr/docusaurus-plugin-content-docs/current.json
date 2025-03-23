@@ -48,24 +48,20 @@
     "description": "The generated-index page description for category After installation in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Administration guide": {
-    "message": "Administration guide",
+    "message": "Guide d'administration",
     "description": "The label for category Administration guide in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Administration guide.link.generated-index.title": {
-    "message": "Administration guide",
+    "message": "Guide d'administration",
     "description": "The generated-index page title for category Administration guide in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Administration guide.link.generated-index.description": {
-    "message": "Learn about self-hosting, how to install and use YunoHost",
+    "message": "Découvrez l'auto-hébergement, comment installer et utiliser YunoHost",
     "description": "The generated-index page description for category Administration guide in sidebar docsSidebar"
   },
-  "sidebar.docsSidebar.category.Visite guidée pour l’administrateur": {
-    "message": "Visite guidée pour l’administrateur",
-    "description": "The label for category Visite guidée pour l’administrateur in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Les utilisateusr et le SSO": {
-    "message": "Les utilisateusr et le SSO",
-    "description": "The label for category Les utilisateusr et le SSO in sidebar docsSidebar"
+  "sidebar.docsSidebar.category.Les utilisateurs et le SSO": {
+    "message": "Les utilisateurs et le SSO",
+    "description": "The label for category Les utilisateurs et le SSO in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Domaines": {
     "message": "Domaines",
@@ -84,19 +80,19 @@
     "description": "The label for category Migrer de 11.x vers 12.x in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Backups": {
-    "message": "Backups",
+    "message": "Sauvegardes",
     "description": "The label for category Backups in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Backups.link.generated-index.title": {
-    "message": "Backups",
+    "message": "Sauvegardes",
     "description": "The generated-index page title for category Backups in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Tutorials": {
-    "message": "Tutorials",
+    "message": "Tutoriels",
     "description": "The label for category Tutorials in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Tutorials.link.generated-index.title": {
-    "message": "Tutorials",
+    "message": "Tutoriels",
     "description": "The generated-index page title for category Tutorials in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Domains": {
@@ -112,15 +108,15 @@
     "description": "The label for category Dépannage in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.User Guide": {
-    "message": "User Guide",
+    "message": "Guide utilisateur",
     "description": "The label for category User Guide in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Community": {
-    "message": "Community",
+    "message": "Communauté",
     "description": "The label for category Community in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Community.link.generated-index.title": {
-    "message": "Community",
+    "message": "Communauté",
     "description": "The generated-index page title for category Community in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Contribuer": {
@@ -136,27 +132,27 @@
     "description": "The label for category Empaquetage d’applications in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Writing the app manifest": {
-    "message": "Writing the app manifest",
+    "message": "Rédaction du manifest",
     "description": "The label for category Writing the app manifest in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Writing app scripts": {
-    "message": "Writing app scripts",
+    "message": "Rédaction des scripts",
     "description": "The label for category Writing app scripts in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Advanced": {
-    "message": "Advanced",
+    "message": "Avancé",
     "description": "The label for category Advanced in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Advanced.link.generated-index.title": {
-    "message": "Advanced",
+    "message": "Avancé",
     "description": "The generated-index page title for category Advanced in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Misc resources": {
-    "message": "Misc resources",
+    "message": "Ressources",
     "description": "The label for category Misc resources in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Misc resources.link.generated-index.title": {
-    "message": "Misc resources",
+    "message": "Ressources",
     "description": "The generated-index page title for category Misc resources in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Contribuer au cœur de YunoHost": {
