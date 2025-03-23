@@ -40,11 +40,11 @@
     "description": "The label for category Installer sur... in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.After installation": {
-    "message": "After installation",
+    "message": "Après installation",
     "description": "The label for category After installation in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.After installation.link.generated-index.description": {
-    "message": "Configure your network to access your server",
+    "message": "Configurez votre réseau pour accéder à votre serveur",
     "description": "The generated-index page description for category After installation in sidebar docsSidebar"
   },
   "sidebar.docsSidebar.category.Administration guide": {
