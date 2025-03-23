@@ -6,11 +6,6 @@ title: Configurer les clients courriels
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
-export function SmallInline({url, alt}) {
-  return (<img src={useBaseUrl(url)} width="60" style={{verticalAlign: "middle", margin: "5px"}} alt={alt}/>);
-}
-
 Vous pouvez récupérer et envoyer des emails avec votre instance YunoHost grâce à des logiciels comme Thunderbird Desktop, ou sur votre smartphone grâce à des applications comme K-9 Mail.
 
 Normalement, votre client email devrait recevoir la configuration automatiquement lorsque vous ajoutez un compte. Si cela ne fonctionne pas, il est possible de le faire manuellement en suivant les quelques étapes suivantes. (Cependant, cela devrait être compris comme étant un bug dans YunoHost, et le cas échéant, c'est cool si vous nous notifiez du problème pour que nous puissions tenter de le reproduire et corriger !)

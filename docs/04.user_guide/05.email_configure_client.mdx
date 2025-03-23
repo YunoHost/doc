@@ -5,11 +5,6 @@ title: Configure email clients
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import useBaseUrl from '@docusaurus/useBaseUrl'
-export function SmallInline({url, alt}) {
-  return (<img src={useBaseUrl(url)} width="60" style={{verticalAlign: "middle", margin: "5px"}} alt={alt}/>);
-}
-
 You can fetch and send emails using your YunoHost instance from desktop email clients such as Thunderbird Desktop or on your smartphone with applications like K-9 Mail.
 
 Modern mail clients should be able to configure themselves automatically. If autoconfiguration fails, you can do it manually following the instructions below. (If the autoconfiguration fails though, it should be understood as a bug in YunoHost, and we would be glad to read your feedback to try to reproduce the issue on our side!)
