@@ -25,10 +25,10 @@ const config = {
   organizationName: 'YunoHost', // Usually your GitHub org/user name.
   projectName: 'doc', // Usually your repo name.
 
-  // TODO: Set them to "throw" when finished
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
-  onDuplicateRoutes: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
+  onBrokenAnchors: 'throw',
+  onDuplicateRoutes: 'throw',
 
   future: {
     experimental_faster: true,
