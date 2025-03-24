@@ -27,55 +27,61 @@ from jinja2 import Template
 
 TEMPLATE_FILE = Path(__file__).resolve().parent / "helpers_doc_template.md.j2"
 
-TREE = {
-    "sources": {
-        "title": "Sources",
-        "notes": "This is coupled to the 'sources' resource in the manifest.toml",
-        "subsections": ["sources"],
-        "helpers": {},
-    },
-    "tech": {
-        "title": "App technologies",
-        "notes": "These allow to install specific version of the technology required to run some apps",
-        "subsections": ["nodejs", "ruby", "go", "composer"],
-        "helpers": {},
-    },
-    "db": {
-        "title": "Databases",
-        "notes": "This is coupled to the 'database' resource in the manifest.toml - at least for mysql/postgresql. Mongodb/redis may have better integration in the future.",
-        "subsections": ["mysql", "postgresql", "mongodb", "redis"],
-        "helpers": {},
-    },
-    "conf": {
-        "title": "Configurations / templating",
-        "subsections": [
-            "templating",
-            "nginx",
-            "php",
-            "systemd",
-            "fail2ban",
-            "logrotate",
-        ],
-        "helpers": {},
-    },
-    "misc": {
-        "title": "Misc tools",
-        "subsections": [
-            "utils",
-            "setting",
-            "string",
-            "backup",
-            "logging",
-            "multimedia",
-        ],
-        "helpers": {},
-    },
-    "meh": {
-        "title": "Deprecated or handled by the core / app resources since v2",
-        "subsections": ["permission", "apt", "systemuser"],
-        "helpers": {},
-    },
-}
+
+def get_helpers_tree(helpers_version: str) -> dict[str, dict]:
+    tree = {
+        "sources": {
+            "title": "Sources",
+            "notes": "This is coupled to the 'sources' resource in the manifest.toml",
+            "subsections": ["sources"],
+            "helpers": {},
+        },
+        "tech": {
+            "title": "App technologies",
+            "notes": "These allow to install specific version of the technology required to run some apps",
+            "subsections": ["nodejs", "ruby", "go", "composer"],
+            "helpers": {},
+        },
+        "db": {
+            "title": "Databases",
+            "notes": "This is coupled to the 'database' resource in the manifest.toml - at least for mysql/postgresql. Mongodb/redis may have better integration in the future.",
+            "subsections": ["mysql", "postgresql", "mongodb", "redis"],
+            "helpers": {},
+        },
+        "conf": {
+            "title": "Configurations / templating",
+            "subsections": [
+                "templating",
+                "nginx",
+                "php",
+                "systemd",
+                "fail2ban",
+                "logrotate",
+            ],
+            "helpers": {},
+        },
+        "misc": {
+            "title": "Misc tools",
+            "subsections": [
+                "utils",
+                "setting",
+                "string",
+                "backup",
+                "logging",
+                "multimedia",
+            ],
+            "helpers": {},
+        },
+        "meh": {
+            "title": "Deprecated or handled by the core / app resources since v2",
+            "subsections": ["permission", "apt", "systemuser"],
+            "helpers": {},
+        },
+    }
+    if helpers_version == "2.1":
+        tree["misc"]["subsections"][0] = "_utils"  # type: ignore
+
+    return tree
 
 
 def get_current_commit(docdir: Path) -> str:
@@ -269,11 +275,14 @@ def main() -> None:
     output = args.output if args.output else Path(f"helpers.v{args.version}.md")
     helpers_dir = args.input / "helpers" / f"helpers.v{args.version}.d"
 
-    for section in TREE.values():
+    tree = get_helpers_tree(args.version)
+    for section in tree.values():
         for subsection in section["subsections"]:
-            print(f"Parsing {subsection} ...")
+            print(f"Parsing {subsection}...")
             helper_file = helpers_dir / subsection
-            assert helper_file.is_file(), f"Uhoh, {helper_file} doesn't exists?"
+            if not helper_file.is_file():
+                print(f"Uhoh, {helper_file} doesn't exists? Maybe for another helper version.")
+                continue
             p = Parser(helper_file)
             p.parse_blocks()
             for b in p.blocks:
@@ -282,7 +291,7 @@ def main() -> None:
             section["helpers"][subsection] = p.blocks  # type: ignore
 
     template_data = {
-        "tree": TREE,
+        "tree": tree,
         "helpers_version": args.version,
         "date": datetime.datetime.now().strftime("%d/%m/%Y"),
         "version": get_changelog_version(args.input),
