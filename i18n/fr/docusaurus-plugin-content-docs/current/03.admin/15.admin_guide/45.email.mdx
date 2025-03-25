@@ -22,7 +22,7 @@ Pour valider que votre configuration est correcte :
 
 ## Clients de messagerie
 
-Pour interagir avec le serveur de mail, c'est-à-dire lire et envoyer des emails, vous pouvez soit installer un client web comme Roundcube ou Rainloop sur votre serveur, soit configurer un client de bureau ou mobile comme décrit dans [cette page](/user_guide/email_configure_client).
+Pour interagir avec le serveur de mail, c'est-à-dire lire et envoyer des emails, vous pouvez soit installer un client web comme Roundcube ou Rainloop sur votre serveur, soit configurer un client de bureau ou mobile comme décrit dans [cette page](/user/email_configure_client).
 
 Les clients de bureau ou mobile ont l'avantage de copier vos emails sur l'équipement permettant ainsi la consultation hors ligne et une protection relative face à d'éventuelles pannes matérielles de votre serveur.
 
@@ -32,7 +32,7 @@ Des alias de messagerie et des redirections peuvent être configurés pour chaqu
 
 Une autre fonctionnalité méconnue est l'utilisation de suffixes commencant par "+". Par exemple, les emails envoyés à `johndoe+sncf@votre.domaine.tld` atteriront dans le dossier 'sncf' de la boîte mail de John Doe (ou bien directement dans la boîte mail si ce dossier n'existe pas). C'est une technique pratique pour, par exemple, fournir une adresse mail à un site puis facilement trier (via des filtres automatiques) les courriers venant de ce site.
 
-Les groupes aussi peuvent utiliser des alias, par défaut le groupe `admins` dispose de `root@<domain.tld>` ou encore `webmaster@<domain.tld>`. [Plus d'information dans la page dédiée](/administer/admin_guide/users/groups_and_permissions#gérer-les-alias-des-groupes).
+Les groupes aussi peuvent utiliser des alias, par défaut le groupe `admins` dispose de `root@<domain.tld>` ou encore `webmaster@<domain.tld>`. [Plus d'information dans la page dédiée](/admin/admin_guide/users/groups_and_permissions#gérer-les-alias-des-groupes).
 
 ## Que se passe-t-il si mon serveur devient indisponible ?
 
@@ -42,12 +42,12 @@ Si votre serveur devient indisponible, les courriels envoyés à votre serveur r
 
 Il est possible que les emails envoyés depuis votre instance YunoHost soient considérés comme du spam par les grands services de mails.
 Il est possible que l’adresse IP de votre serveur ait, autrefois, été utilisée pour envoyer du spam ou que ces services de mails considèrent votre serveur comme émetteur de spams.
-Pour s’assurer que l’adresse IP de votre serveur n’est pas dans ces listes et pour l’enlever dans le cas échéant suivez ce [lien](/administer/troubleshooting/blacklist_forms).
+Pour s’assurer que l’adresse IP de votre serveur n’est pas dans ces listes et pour l’enlever dans le cas échéant suivez ce [lien](/admin/troubleshooting/blacklist_forms).
 
 ## Migration des emails d'un fournisseur d'emails vers une instance de YunoHost
 
-Voir [cette page](/user_guide/email_migration).
+Voir [cette page](/user/email_migration).
 
 ## Configuration du relais SMTP
 
-Voir [cette page](/administer/tutorials/email_configure_relay).
+Voir [cette page](/admin/tutorials/email_configure_relay).

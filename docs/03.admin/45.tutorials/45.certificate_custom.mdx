@@ -3,7 +3,7 @@ title: Custom certificates
 ---
 
 :::warning
-Since version 2.5, YunoHost integrates Let's Encrypt certificates automated management. You can easily and freely [install a Let's Encrypt certificate](/administer/admin_guide/domains/certificate). The following document describes the steps for installing a paid certificate from a certification authority (**Gandi**, **RapidSSL**, **StartSSL**, **Cacert**).
+Since version 2.5, YunoHost integrates Let's Encrypt certificates automated management. You can easily and freely [install a Let's Encrypt certificate](/admin/admin_guide/domains/certificate). The following document describes the steps for installing a paid certificate from a certification authority (**Gandi**, **RapidSSL**, **StartSSL**, **Cacert**).
 :::
 
 Some changes have taken place which impact the procedures indicated below:
@@ -33,7 +33,7 @@ pscp -P 22 CERTIFICATE.crt admin@DOMAIN.TLD:ssl.crt
 pscp -P 22 KEY.key admin@DOMAIN.TLD:ssl.key
 ```
 
-As soon as the files are on the server, the rest of the work will be done on it. In [ssh](/administer/admin_guide/command_line) or locally.
+As soon as the files are on the server, the rest of the work will be done on it. In [ssh](/admin/admin_guide/command_line) or locally.
 First, create a folder to store the obtained certificates.
 
 ```bash

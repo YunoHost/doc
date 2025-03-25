@@ -78,7 +78,7 @@ Après avoir créé des sauvegardes, il est possible de les lister et de les ins
   </TabItem>
   <TabItem value="sftp" label="With a SFTP client">
 
-À l'heure actuelle, la solution la plus accessible pour récupérer les sauvegardes de grosse taille est d'utiliser le programme FileZilla comme expliqué dans [cette page](/administer/tutorials/filezilla).
+À l'heure actuelle, la solution la plus accessible pour récupérer les sauvegardes de grosse taille est d'utiliser le programme FileZilla comme expliqué dans [cette page](/admin/tutorials/filezilla).
 
 Par défaut, les sauvegardes sont stockées dans `/home/yunohost.backup/archives/`.
 
@@ -87,7 +87,7 @@ Par défaut, les sauvegardes sont stockées dans `/home/yunohost.backup/archives
 
 Les commandes `yunohost backup list` et `yunohost backup info <nom_d'archive>` permettent d'obtenir des infiormations sur les noms et tailles des sauvegardes.
 
-Il est possible d'utiliser `scp` (un programme basé sur [`ssh`](/administer/admin_guide/command_line)) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous GNU/Linux, vous pouvez utiliser la commande suivante pour télécharger une archive :
+Il est possible d'utiliser `scp` (un programme basé sur [`ssh`](/admin/admin_guide/command_line)) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous GNU/Linux, vous pouvez utiliser la commande suivante pour télécharger une archive :
 
 ```bash
 scp admin@votre.domaine.tld:/home/yunohost.backup/archives/<nom_darchive>.tar ./
@@ -107,7 +107,7 @@ N'oubliez pas de stocker votre sauvegarde dans un lieu différents de celui ou s
 :::
 
 :::info
-Si vous le souhaitez, vous pouvez connecter un disque externe à votre serveur pour que les archives arrivent directement dessus. Voir ce guide pour [Ajouter un stockage externe à son serveur](/administer/tutorials/external_storage)
+Si vous le souhaitez, vous pouvez connecter un disque externe à votre serveur pour que les archives arrivent directement dessus. Voir ce guide pour [Ajouter un stockage externe à son serveur](/admin/tutorials/external_storage)
 :::
 
 ### Tester
@@ -162,7 +162,7 @@ Dans de nombreux cas, l'archive n'est pas sur le serveur sur lequel on souhaite 
 
 <Tabs groupId="admin-commands">
   <TabItem value="sftp" label="With a SFTP client">
-À l'heure actuelle, la solution la plus accessible pour téléverser les sauvegardes est d'utiliser le programme FileZilla comme expliqué dans [cette page](/administer/tutorials/filezilla).
+À l'heure actuelle, la solution la plus accessible pour téléverser les sauvegardes est d'utiliser le programme FileZilla comme expliqué dans [cette page](/admin/tutorials/filezilla).
 
 Par défaut, les sauvegardes sont à placer dans `/home/yunohost.backup/archives/`.
 

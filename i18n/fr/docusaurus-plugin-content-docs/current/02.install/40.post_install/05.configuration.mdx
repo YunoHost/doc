@@ -9,7 +9,7 @@ import TabItem from '@theme/TabItem';
 ## <FAIcon icon="fa-cog"/> Lancer la configuration initiale
 
 :::tip
-Si vous êtes en train de restaurer une sauvegarde YunoHost, vous devez sauter cette étape et vous référer à la section [Restaurer durant la post-installation à la place de cette étape de configuration initiale](/administer/backups#restaurer).
+Si vous êtes en train de restaurer une sauvegarde YunoHost, vous devez sauter cette étape et vous référer à la section [Restaurer durant la post-installation à la place de cette étape de configuration initiale](/admin/backups#restaurer).
 :::
 
 :::note
@@ -23,14 +23,14 @@ Pour un VPS, utilisez l'adresse IP publique au lieu du domaine ou adresse locale
   <TabItem value="web" label="Depuis l'interface web">
 
     :::warning
-    Lors de la première visite, vous rencontrerez très probablement un avertissement de sécurité lié au certificat utilisé. Pour le moment, votre serveur utilise un certificat auto-signé. Vous pourrez plus tard ajouter un certificat automatiquement reconnu par les navigateurs comme décrit dans [la page sur les certificats](/administer/admin_guide/domains/certificate). En attendant, ajoutez une exception de sécurité pour accepter le certificat actuel. Toutefois, **s'il vous plaît**, ne prenez pas l'habitude d'accepter ce genre d'alerte de sécurité !
+    Lors de la première visite, vous rencontrerez très probablement un avertissement de sécurité lié au certificat utilisé. Pour le moment, votre serveur utilise un certificat auto-signé. Vous pourrez plus tard ajouter un certificat automatiquement reconnu par les navigateurs comme décrit dans [la page sur les certificats](/admin/admin_guide/domains/certificate). En attendant, ajoutez une exception de sécurité pour accepter le certificat actuel. Toutefois, **s'il vous plaît**, ne prenez pas l'habitude d'accepter ce genre d'alerte de sécurité !
     :::
 
     Vous devriez ensuite obtenir cette page :
     <Figure caption="Capture d'écran de la page de configuration initiale" src="/img/postinstall_web.png"/>
   </TabItem>
   <TabItem value="cli" label="Depuis la ligne de commande">
-    Vous pouvez aussi lancer la post-installation avec la commande `yunohost tools postinstall` directement sur le serveur ou [via SSH](/administer/admin_guide/command_line).
+    Vous pouvez aussi lancer la post-installation avec la commande `yunohost tools postinstall` directement sur le serveur ou [via SSH](/admin/admin_guide/command_line).
 
     <Figure caption="Capture d'écran de la configuration initiale en ligne de commande" src="/img/postinstall_cli.png"/>
   </TabItem>
@@ -64,12 +64,12 @@ C’est le nom de domaine qui permettra l’accès à votre serveur ainsi qu’a
 - Si en revanche vous avez déjà votre propre nom de domaine, vous souhaitez probablement l'utiliser. Vous aurez donc besoin ensuite de configurer les enregistrements DNS comme expliqué [ici](/install/post_install/dns_config).
 
 :::tip
-Oui, vous *devez* configurer un nom de domaine. Si vous n'avez pas de nom de domaine et que vous n'en voulez pas en **.nohost.me**, **.noho.st** ou **.ynh.fr**, vous pouvez utilisez un « faux » domaine comme par exemple `yolo.test` et [modifier votre fichier `/etc/hosts` **sur votre ordinateur local** pour que ce domaine pointe vers l'IP de votre serveur, comme expliqué ici](/administer/tutorials/domains/dns_local_network).
+Oui, vous *devez* configurer un nom de domaine. Si vous n'avez pas de nom de domaine et que vous n'en voulez pas en **.nohost.me**, **.noho.st** ou **.ynh.fr**, vous pouvez utilisez un « faux » domaine comme par exemple `yolo.test` et [modifier votre fichier `/etc/hosts` **sur votre ordinateur local** pour que ce domaine pointe vers l'IP de votre serveur, comme expliqué ici](/admin/tutorials/domains/dns_local_network).
 :::
 
 ### <FAIcon icon="fa-key"/> Premier compte utilisateur
 
-Le premier compte utilisateur est créé à cette étape. Il vous faudra choisir un nom d'utilisateur et un mot de passe raisonablement complexe. (Nous ne pouvons que souligner l'importance du choix d'un mot de passe **robuste** !) Ce compte utilisateur sera ajouté au groupe Admins, et pourra se connecter au portail utilisateur, à la webadmin, et se connecter [via **SSH**](/administer/admin_guide/command_line) ou [**SFTP**](/administer/tutorials/filezilla). Les admins recevront aussi les mails envoyés à `root@votredomaine.tld` et `admin@votredomaine.tld` : ces emails peuvent être utilisés pour envoyer des informations ou des alertes techniques. Vous pourrez plus tard ajouter d'autres comptes utilisateur supplémentaire, qu'il est aussi possible d'ajouter au groupe Admins.
+Le premier compte utilisateur est créé à cette étape. Il vous faudra choisir un nom d'utilisateur et un mot de passe raisonablement complexe. (Nous ne pouvons que souligner l'importance du choix d'un mot de passe **robuste** !) Ce compte utilisateur sera ajouté au groupe Admins, et pourra se connecter au portail utilisateur, à la webadmin, et se connecter [via **SSH**](/admin/admin_guide/command_line) ou [**SFTP**](/admin/tutorials/filezilla). Les admins recevront aussi les mails envoyés à `root@votredomaine.tld` et `admin@votredomaine.tld` : ces emails peuvent être utilisés pour envoyer des informations ou des alertes techniques. Vous pourrez plus tard ajouter d'autres comptes utilisateur supplémentaire, qu'il est aussi possible d'ajouter au groupe Admins.
 
 Ce compte remplace l'ancien compte `admin`, qui est peut être toujours mentionné dans certaines pages de documentation. Dans ce cas, remplacez simplement `admin` par votre identifiant.
 
@@ -109,7 +109,7 @@ Notamment, les installations WSL ou sur machines virtuelles ne seront générale
 
 Une fois que vous avez configuré, si nécessaire, les enregistrements DNS et la redirection de ports, vous devriez être en mesure d'installer un certificat Let's Encrypt. Ceci permettra de supprimer l'étrange alerte de sécurité vue plus tôt.
 
-Pour plus d'instructions détaillées, ou pour en savoir plus à propos des certificats SSL/TLS, voir [la page correspondante ici](/administer/admin_guide/domains/certificate).
+Pour plus d'instructions détaillées, ou pour en savoir plus à propos des certificats SSL/TLS, voir [la page correspondante ici](/admin/admin_guide/domains/certificate).
 
 <Tabs groupId="admin-commands">
   <TabItem value="web" label="Depuis l'interface web">
