@@ -104,7 +104,7 @@ const redirects_from_grav = [
     { from: '/selfhosting',                             to: '/overview/self_hosting', },
     { from: '/try',                                     to: '/overview/try_yunohost', },
     { from: '/whatsyunohost',                           to: '/overview/what_is_yunohost', },
-    { from: '/email_configure_client',                  to: '/user/email_configure_client', },
+    { from: '/email_configure_client',                  to: '/user/email_clients', },
     { from: '/email_migration',                         to: '/user/email_migration', },
 ]
 
