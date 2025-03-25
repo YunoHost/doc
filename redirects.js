@@ -4,8 +4,8 @@
 
 
 const redirects_from_grav = [
-    { from: '/admin_guide',                             to: '/admin/admin', },
-    { from: '/admin_interface',                         to: '/admin/', },
+    { from: '/admin_guide',                             to: '/admin/', },
+    { from: '/admin_interface',                         to: '/admin/webadmin', },
     { from: '/apps_overview',                           to: '/admin/apps/', },
     { from: '/custom_apps',                             to: '/admin/apps/custom_apps', },
     { from: '/ssh',                                     to: '/admin/command_line', },
