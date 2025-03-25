@@ -38,7 +38,7 @@ Vous pouvez valider que les enregistrements DNS sont corrects en comparant le r�
 
 - A certificate error may be displayed if you have made a typo in the address bar of your browser.
 
-Si vous venez d'installer votre serveur ou d'ajouter un nouveau domaine, il utilise pour le moment un certificat auto-signé. Dans ce cas, il devrait être possible et légitime d'ajouter *exceptionnellement* une exception de sécurité le temps d'[installer un certificat Let's Encrypt](/admin/admin_guide/domains/certificate) à condition d'être sur une connexion internet sûre (pas avec Tor Browser par exemple).
+Si vous venez d'installer votre serveur ou d'ajouter un nouveau domaine, il utilise pour le moment un certificat auto-signé. Dans ce cas, il devrait être possible et légitime d'ajouter *exceptionnellement* une exception de sécurité le temps d'[installer un certificat Let's Encrypt](/admin/domains/certificate) à condition d'être sur une connexion internet sûre (pas avec Tor Browser par exemple).
 
 Une erreur de certificat peut également être affichée dans certain cas où vous avez fait une faute de frappe dans la barre d'adresse de votre navigateur.
 
@@ -66,7 +66,7 @@ Le bannissement dure en général 10 à 12 minutes. Le bannissement n'est actif 
 
 ### Le serveur web NGINX est cassé
 
-Peut-être que le serveur web NGINX est en panne. Vous pouvez vérifier cela [en ssh](/admin/admin_guide/command_line) avec `yunohost service status nginx`. Si il est en panne, vérifiez que la configuration ne comporte pas d'erreur avec `nginx -t`. Si la configuration est cassée, ceci est peut-être du à une l'installation ou désinstallation d'une application de mauvaise qualité... Si vous êtes perdu, [demandez de l'aide](/community/help).
+Peut-être que le serveur web NGINX est en panne. Vous pouvez vérifier cela [en ssh](/admin/command_line) avec `yunohost service status nginx`. Si il est en panne, vérifiez que la configuration ne comporte pas d'erreur avec `nginx -t`. Si la configuration est cassée, ceci est peut-être du à une l'installation ou désinstallation d'une application de mauvaise qualité... Si vous êtes perdu, [demandez de l'aide](/community/help).
 
 Il se peut également que le serveur web (NGINX) ou le serveur ssh aient été tués suite à un manque d'espace disque ou de RAM / swap.
 
@@ -100,7 +100,7 @@ Si vous arrivez à afficher la page web d'administration (forcez le rafraîchiss
 
 Si vous êtes certain du mot de passe, il est possible que le service SLAPD qui gère l'authentification soit en panne. Si c'est le cas, il vous faut vous connecter en `root`.
 
-- Si votre serveur est chez vous, vous avez sans doute accès au réseau local du serveur. Depuis ce réseau, vous pouvez vous connecter [en SSH](/admin/admin_guide/command_line) avec l'utilisateur `root`.
+- Si votre serveur est chez vous, vous avez sans doute accès au réseau local du serveur. Depuis ce réseau, vous pouvez vous connecter [en SSH](/admin/command_line) avec l'utilisateur `root`.
 - Si vous êtes sur un VPS, votre hébergeur vous fournit peut-être la possibilité d'avoir une console sur votre serveur depuis le navigateur web.
 Une fois connecté, il vous faut regarder l'état du service avec la commande `yunohost service status slapd` et/ou tenter de réinitialiser votre mot de passe avec la commande `yunohost tools adminpw`.
 

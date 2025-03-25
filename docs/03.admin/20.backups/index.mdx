@@ -87,7 +87,7 @@ By default, backups are stored in `/home/yunohost.backup/archives/`.
 
 The `yunohost backup list` and `yunohost backup info <archive_name>` commands provide information about the names and sizes of backups.
 
-It is possible to use `scp` (a program based on [`ssh`](/admin/admin_guide/command_line)) to copy files between two machines via the command line. So, from a GNU/Linux machine, you can use the following command to download an archive:
+It is possible to use `scp` (a program based on [`ssh`](/admin/command_line)) to copy files between two machines via the command line. So, from a GNU/Linux machine, you can use the following command to download an archive:
 
 ```bash
 scp admin@your.domain.tld:/home/yunohost.backup/archives/<archive_name>.tar ./

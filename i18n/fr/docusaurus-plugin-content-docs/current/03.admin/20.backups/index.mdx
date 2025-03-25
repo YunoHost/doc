@@ -87,7 +87,7 @@ Par défaut, les sauvegardes sont stockées dans `/home/yunohost.backup/archives
 
 Les commandes `yunohost backup list` et `yunohost backup info <nom_d'archive>` permettent d'obtenir des infiormations sur les noms et tailles des sauvegardes.
 
-Il est possible d'utiliser `scp` (un programme basé sur [`ssh`](/admin/admin_guide/command_line)) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous GNU/Linux, vous pouvez utiliser la commande suivante pour télécharger une archive :
+Il est possible d'utiliser `scp` (un programme basé sur [`ssh`](/admin/command_line)) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous GNU/Linux, vous pouvez utiliser la commande suivante pour télécharger une archive :
 
 ```bash
 scp admin@votre.domaine.tld:/home/yunohost.backup/archives/<nom_darchive>.tar ./
