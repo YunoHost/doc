@@ -60,7 +60,7 @@ template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/write_documentation'
+  default: '/doc'
 ---
 
 ```
@@ -68,11 +68,11 @@ routes:
 1. L'en-tête commence et finit par une ligne contenant `---` ;
 2. La clé `title` gère le premier titre de la page, son nom dans le menu de navigation à gauche, et son nom dans l'onglet du navigateur ;
 3. Les clés `template` et `taxonomy` doivent toujours être inclues et laissées telles quelles. Elles informent Grav sur quel thème appliquer aux pages, et permettent de les ordonner correctement.
-4. La clé `routes` et son enfant `default` font que la page est accessible par défaut à l'adresse `https://yunohost.org/docs/write_documentation` au lieu de devoir la chercher à l'adresse `https://yunohost.org/docs/contribute/write_documentation`, qui correspond à son emplacement réel dans la hiérarchie des dossiers.
+4. La clé `routes` et son enfant `default` font que la page est accessible par défaut à l'adresse `https://yunohost.org/docs/doc` au lieu de devoir la chercher à l'adresse `https://yunohost.org/docs/contribute/doc`, qui correspond à son emplacement réel dans la hiérarchie des dossiers.
 
 ## Syntaxe
 
-Vous pouvez utiliser la syntaxe Markdown, consultez la page de [documentation dédiée](/contribute/write_documentation/markdown_guide) pour plus d'information.
+Vous pouvez utiliser la syntaxe Markdown, consultez la page de [documentation dédiée](/contribute/doc/markdown_guide) pour plus d'information.
 
 ! Notez qu'il ne faut pas préciser le code de langue au début des liens vers d'autres pages de la documentation : `/fr`, `/en`, etc. sont superflus.
 

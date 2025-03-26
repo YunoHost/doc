@@ -62,7 +62,7 @@ template: docs
 taxonomy:
     category: docs
 routes:
-  default: '/write_documentation'
+  default: '/doc'
 ---
 
 ```
@@ -70,11 +70,11 @@ routes:
 1. The header starts and ends with a line containing `---`
 2. The `title` key manages the first heading title of the page, its name in the navigation menu on the left, and its name in the browser tab
 3. `template` and `taxonomy` keys should always be left as is. They instruct Grav to use the proper theme and order the pages properly.
-4. `routes`' `default` key makes the page available by default on `https://yunohost.org/docs/write_documentation` instead of needing to reaching it on `https://yunohost.org/docs/contribute/write_documentation`, which is where it is stored in the directory hierarchy.
+4. `routes`' `default` key makes the page available by default on `https://yunohost.org/docs/doc` instead of needing to reaching it on `https://yunohost.org/docs/contribute/doc`, which is where it is stored in the directory hierarchy.
 
 ## Syntax
 
-You can use Markdown syntax, refer to the [documentation](/contribute/write_documentation/markdown_guide) for further information.
+You can use Markdown syntax, refer to the [documentation](/contribute/doc/markdown_guide) for further information.
 
 :::note
 Note that language codes are not to be included at the beginning of the links to other documentation pages: `/en`, `/fr`, etc. are superfluous.

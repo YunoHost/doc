@@ -69,4 +69,4 @@ Source:
 
 ## Contributing
 
-You can refer to the page on [writing documentation](https://doc.yunohost.org/write_documentation).
+You can refer to the page on [writing documentation](https://doc.yunohost.org/doc).
