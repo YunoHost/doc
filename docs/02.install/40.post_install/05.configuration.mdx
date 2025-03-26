@@ -14,7 +14,7 @@ If you are in the process of restoring a server using a YunoHost backup, you sho
 
 :::note
 This documentation assumes you're on the same local network as your YunoHost installation.
-[Find out its IP address](/install/post_install/finding_the_local_ip) before continuing.
+[Find out its IP address](/install/post_install/find_ip) before continuing.
 
 For a VPS, please use the public IP address instead of the local domain or address.
 :::
@@ -79,7 +79,7 @@ Once the postinstall is done, you should be able to actually log in the web admi
 The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured - and guide you in how to fix issues. The diagnosis will run twice a day and send an alert if issues are detected.
 
 :::tip
-**Don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/install/post_install/dns_config) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain), add a swapfile if not enough ram as well as [port forwarding](/install/post_install/isp_box_config) on your home's router.
+**Don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/install/post_install/dns_config) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain), add a swapfile if not enough ram as well as [port forwarding](/install/post_install/port_forwarding) on your home's router.
 :::
 
 :::tip
