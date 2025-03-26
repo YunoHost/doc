@@ -35,7 +35,7 @@
 [data-theme='light'] .footer {
   --ifm-footer-background-color: rgb(240, 240, 245);
   --ifm-footer-title-color: inherit;
-  --ifm-footer-link-color: inherit;
+  --ifm-footer-link-color: var(--ifm-color-primary);
   --ifm-footer-color: inherit;
 }
 
