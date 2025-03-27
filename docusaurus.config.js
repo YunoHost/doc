@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Yunohost',
   tagline: 'Why you no host?',
-  favicon: 'img/yunohost_favicon.png',
+  favicon: 'img/favicon.png',
 
   // Set the production url of your site here
   url: 'https://doc.yunohost.org/',
