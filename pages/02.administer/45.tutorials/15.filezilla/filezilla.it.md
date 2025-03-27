@@ -21,23 +21,23 @@ Installate e lanciate *FileZilla*
 
 1. Cliccate sull'icona in alto a sinistra *Site Manager*.
 
-   ![Pagina principale di Filezilla](image://filezilla_1.png)
+   ![Pagina principale di Filezilla](/img/filezilla_1.png)
 
 2. Cliccate su **New Site** e assegnate un nome al server che volete connettere: in questo esempio *Family*. Completate i parametri come nell'immagine (con i vostri dati) e cliccate su **Connect** (N.B. : se volete editare i file dell'applicazione [custom webapp](https://github.com/YunoHost-Apps/my_webapp_ynh), dovrete utilizzare un utente diverso da `admin`. Fate riferimento alla documentazione di custom webapp).
 
-   ![Schermata del site manager](image://filezilla_2.png)
+   ![Schermata del site manager](/img/filezilla_2.png)
 
 3. Apparirà un avviso poiché vi state collegando per la prima volta al server. *Se è la prima connessione, potete ignorarlo*
 
-   ![Avviso per la fingerprint del server sconosciuta](image://filezilla_3.png)
+   ![Avviso per la fingerprint del server sconosciuta](/img/filezilla_3.png)
 
 4. Filezilla vi chiederà la password di `admin` del server.
 
-   ![schermata per la richiesta della password](image://filezilla_4.png)
+   ![schermata per la richiesta della password](/img/filezilla_4.png)
 
 5. Una volta salvato nei segnalibri, il server verrà salvato e vedrete questa schermata.
 
-   ![Schermata del "site manager" con il server appena aggiunto](image://filezilla_5.png)
+   ![Schermata del "site manager" con il server appena aggiunto](/img/filezilla_5.png)
 
 ## Utilizzo
 
@@ -45,15 +45,15 @@ Installate e lanciate *FileZilla*
 
    La parte sinistra della finestra del programma si riferisce al vostro pc. La parte destra corrisponde al server YunoHost remoto. Potete navigare tra file e cartelle e effettuare drag-and-drop tra i due computer.
 
-   ![vista della connessione al server remoto](image://filezilla_6.png)
+   ![vista della connessione al server remoto](/img/filezilla_6.png)
 
 2. Nel pannello di destra, raggiungete `/home/yunohost.backup/archives` dove si trovano gli [archivi di backup](https://yunohost.org/it/backup)
 
-   ![la directory dove si trovano i backup di YunoHost](image://filezilla_7.png)
+   ![la directory dove si trovano i backup di YunoHost](/img/filezilla_7.png)
 
 ! [fa=cloud-download /] Assicuratevi di scaricare i file `.tar.gz` e `.json`
 
-![Copia dei backup da YunoHost ad un computer locale](image://filezilla_8.png)
+![Copia dei backup da YunoHost ad un computer locale](/img/filezilla_8.png)
 
 ---
 

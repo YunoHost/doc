@@ -23,7 +23,7 @@ Il metodo di default attuale crea degli archivi `.tar.gz` contenenti tutti i fil
 
 Potete creare gli archivi di backup dalla pagina web di amministrazione andando in Backup > Archivi locali e cliccare su "Nuovo backup". Vi verrà chiesto di selezionare quale configurazione, dati e di quale app volete fare il backup.
 
-![picture of YunoHost's backup pannel](image://backup.png)
+![picture of YunoHost's backup pannel](/img/backup.png)
 
 ### Dalla riga di comando
 
@@ -72,11 +72,11 @@ Per disabilitare esplicitamente il backup di grandi quantità di dati, per le ap
 
 Dopo aver creato gli archivi di backup è possibile elencarli e ispezionarli sia dalla pagina web di amministrazione relativa sia dalla riga di comando con i comandi `yunohost backup list` e `yunohost backup info <archivename>`. Di default i backup sono copiati nella directory `/home/yunohost.backup/archives/`.
 
-Attualmente il modo più semplice per scaricare gli archivi è usando il programma FileZilla (vedi [questa pagina](/filezilla)).
+Attualmente il modo più semplice per scaricare gli archivi è usando il programma FileZilla (vedi [questa pagina](/administer/tutorials/filezilla)).
 
 Una soluzione alternativa è quella di installare Nextcloud o un'applicazione simile e configurarle per accedere ai file contenuti in `/home/yunohost.backup/archives/` da un browser.
 
-Un'altra soluzione è quella di usare `scp` (un programma che si basa su [`ssh`](/ssh)) per copiare i file fra due computer usando la riga di comando. In questo modo usando un computer con GNU/Linux potete copiare uno specifico backup con questo comando:
+Un'altra soluzione è quella di usare `scp` (un programma che si basa su [`ssh`](/administer/admin_guide/command_line)) per copiare i file fra due computer usando la riga di comando. In questo modo usando un computer con GNU/Linux potete copiare uno specifico backup con questo comando:
 
 ```bash
 scp admin@your.domain.tld:/home/yunohost.backup/archives/<archivename>.tar ./
@@ -106,7 +106,7 @@ scp -P porta_ssh /path/to/your/<archivename>.tar admin@your.domain.tld:/home/yun
 
 Dovete andare in Backup > Archivi locali e selezionare il vostro archivio. È possibile selezionare ciò che volete ripristinare e poi cliccare su 'Ripristina'.
 
-![picture of YunoHost's restore pannel](image://restore.png)
+![picture of YunoHost's restore pannel](/img/restore.png)
 
 ### Dalla riga di comando
 

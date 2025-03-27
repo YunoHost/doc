@@ -28,6 +28,6 @@ Cette page a pour but de vous guider dans l'obtention d'une clé API d'OVH afin 
       - `PUT` : `/domain/zone/*`
       - `DELETE` : `/domain/zone/*`
 
-    ![](image://registrar_api_ovh_1.png?resize=800)
+    ![](/img/registrar_api_ovh_1.png?resize=800)
 
 3. Vous obtiendrez trois jetons (une clé d'application, une clé d'application secrète, et une clé de consommateur) qui doivent être utilisés dans la configuration de YunoHost

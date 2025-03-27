@@ -32,7 +32,7 @@ Suivez simplement la documentation idoine pour l'[installation sur VirtualBox](/
 Lors de la post-installation, il est inutile d'utiliser un nom de domaine en `.nohost.me` ou `.noho.st`, votre serveur virtuel ne sera pas accessible depuis l'extérieur de votre réseau local.  
 Nous préférerons l'usage d'un faux nom de domaine qui restera cantonné au réseau local. Par exemple, `yunohost.packaging`.
 
-Ce nom de domaine n'étant enregistré dans aucun serveur DNS, on l'enregistrera dans le fichier `hosts` de l'ordinateur qui y accédera. Voir la documentation sur le [DNS local](/dns_local_network).
+Ce nom de domaine n'étant enregistré dans aucun serveur DNS, on l'enregistrera dans le fichier `hosts` de l'ordinateur qui y accédera. Voir la documentation sur le [DNS local](/administer/tutorials/domains/dns_local_network).
 
 Votre serveur virtuel est à présent installé. Avant de commencer à l'utiliser, nous allons voir comment créer un premier instantané et comment les utiliser.
 
@@ -47,14 +47,14 @@ Avant de commencer à jouer avec la machine virtuelle, il convient de faire un p
 Arrêtez la machine virtuelle avant tout.
 
 La gestion des instantanés se fait dans l'onglet "Instantanés"  
-![](image://virtualbox_packaging1-fr.jpg)
+![](/img/virtualbox_packaging1-fr.jpg)
 
 Et on crée un premier instantané  
-![](image://virtualbox_packaging2-fr.jpg)
+![](/img/virtualbox_packaging2-fr.jpg)
 
 À présent on peut commencer à travailler sur la machine virtuelle et créer autant d'instantanés que souhaité pour jalonner le travail.
 
-![](image://virtualbox_packaging3-fr.jpg)
+![](/img/virtualbox_packaging3-fr.jpg)
 
 Dans cet exemple, on pourra facilement revenir en arrière, après avoir testé la suppression du package par exemple et restaurer la machine virtuelle dans l'état précédent avec le package encore installé avec succès.  
 Et lorsque le package sera pleinement fonctionnel, il suffira de supprimer les instantanés liés à ce package pour revenir à l'état initial de la machine virtuelle.  
@@ -64,14 +64,14 @@ Nous disposerons ainsi d'un serveur YunoHost vierge de toute installation d'appl
 
 En plus de l'usage d'instantanés successifs, il est également possible de dériver un nouvel état actuel et de nouveaux instantanés depuis un instantané plus ancien que le dernier.
 
-![](image://virtualbox_packaging4-fr.jpg)
+![](/img/virtualbox_packaging4-fr.jpg)
 
 Dans cet exemple, j'ai dérivé deux branches depuis mon installation réussie du package, pour tester indépendamment la suppression simple de l'application, l'upgrade et le backup/restore.  
 Finalement je suis reparti de la base de la machine virtuelle pour démarrer un nouveau test sur un autre package, sans pour autant abandonner le précédent test.  
 À tout moment, il est possible de revenir sur un instantané précédent en le restaurant.  
 La machine démarrera toujours sur l'"État actuel".
 
-![](image://virtualbox_packaging5-fr.jpg)
+![](/img/virtualbox_packaging5-fr.jpg)
 
 > Il est toujours possible de créer un nouvel instantané, que la machine soit à l'arrêt ou non.  
 Mais pour restaurer un instantané, la machine ne doit pas être en cours d'exécution.
@@ -95,6 +95,6 @@ ssh admin@11.22.33.44
 Pour copier facilement les fichiers du package ou utiliser un éditeur de texte graphique, on peut également se connecter en SFTP avec un explorateur de fichier.
 
 Il suffit de se connecter à l'adresse `sftp://admin@mon.domain/` avec l'explorateur.  
-![](image://virtualbox_packaging6.jpg)
+![](/img/virtualbox_packaging6.jpg)
 
 > Sur Windows ou macOS, l'explorateur de fichier ne supporte pas nativement le protocole SFTP...

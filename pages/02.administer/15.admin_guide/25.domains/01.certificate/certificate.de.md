@@ -12,7 +12,7 @@ Digitale Zertifikate werden verwendet, um die Vertraulichkeit und Echtheit der K
 YunoHost bietet ein **selbstsigniertes-Zertifikat**. Es bedeutet, dass Ihr Server die Gültigkeit des Zertifikats garantiert. Es genügt **für eine persönliche Verwendung**, weil Sie Ihrem eigenen Server vertrauen. Dies könnte jedoch ein Problem sein, wenn Sie den Zugriff auf einem Fremden, wie Webbenutzer, für eine Website öffnen möchten.
 Und zwar, werden die Benutzer eine solche Warnung auf dem Bildschirm sehen:
 
-![](image://postinstall_error_de.png)
+![](/img/postinstall_error_de.png)
 
 Was im Wesentlichen den Besucher fragt: **"Vertrauen Sie dem Server, der diese Website hostet?"**.
 Dies kann viele Menschen selbstverständlich erschrecken.
@@ -30,23 +30,23 @@ Bevor Sie ein Let's Encrypt-Zertifikat installieren, vergewissern Sie sich, dass
 Gehen Sie zu dem Abschnitt "Domaine" der Administrationsoberfläche. Dann
 zu dem Abschnitt, der Ihrer Domain entspricht. Da steht einen Knopf 'Certificat SSL'.
 
-![](image://domain-certificate-button.png)
+![](/img/domain-certificate-button.png)
 
 Im Abschnitt 'Certificat SSL', wird der aktuelle Status angegeben.
 Wurde der Domain-Name vor kurzem hinzugefügt, so steht ein selbst-signiertes Zertifikat zur verfügung.
 
-![](image://certificate-before-LE.png)
+![](/img/certificate-before-LE.png)
 
 Wenn die Domain korrekt konfiguriert ist, dann ist es möglich
 mit dem grünen Knopf ein Let's Encrypt-Zertifikat einzusetzen.
 
-![](image://certificate-after-LE.png)
+![](/img/certificate-after-LE.png)
 
 Nach Abschluss der Installation, die ensprechende Domain mit Webbrowser
 in HTTPS-Modus besuchen um die Berücksichtigung des digitalen Zertifikats
 von Let's Encrypt zu überprüfen. Das digitale Zertifikat wird automatisch etwa alle drei Monate erneuert.
 
-![](image://certificate-signed-by-LE.png)
+![](/img/certificate-signed-by-LE.png)
 
 #### Mit Shell-Zugang
 

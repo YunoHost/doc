@@ -1,0 +1,44 @@
+---
+title: Try YunoHost
+description: A demo server
+routes:
+  default: '/try'
+---
+
+import YunoHostDocsCard from '@site/src/components/YunoHostDocsCard';
+import YunoHostDocsCardHeading from '@site/src/components/YunoHostDocsCard/YunoHostDocsCardHeading';
+
+
+
+# Try YunoHost on a demo server
+
+:::caution
+This demo server could be down from time to time, but at least you can test and that's really cool :)
+:::
+
+<div style={{display: "flex"}} >
+<YunoHostDocsCard>
+  <YunoHostDocsCardHeading url="https://demo.yunohost.org/?target=_blank&classes=btn,btn-lg,btn-success" color="#30ae40"> {
+  } <FAIcon icon='fa-user'/> User interface {
+  } </YunoHostDocsCardHeading>
+
+  username: `demo`
+
+  password: `demo`
+</YunoHostDocsCard>
+
+<YunoHostDocsCard>
+  <YunoHostDocsCardHeading url="https://demo.yunohost.org/yunohost/admin/?target=_blank&classes=btn,btn-lg,btn-primary" color="#1267da"> {
+  } <FAIcon icon='fa-cog'/> Administration interface {
+  } </YunoHostDocsCardHeading>
+
+  username: `demo`
+
+  password: `demo`
+
+</YunoHostDocsCard>
+</div>
+
+:::info
+**El servidor de demostración es ofrecido generosamente por [Gitoyen](https://www.gitoyen.net?target=_blank) <FAIcon icon="fa-heart" style={{color: "green"}}/>**
+:::

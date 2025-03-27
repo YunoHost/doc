@@ -19,10 +19,10 @@ Vous n’êtes pas obligé·e de donner vos noms et prénoms, vous pouvez utilis
 Forker le code source permet de créer une nouvelle branche de développement d’un code source de logiciel ou dans le cas présent, le code source de la documentation. En créant une nouvelle branche, cela vous permet de modifier le code et d’ajouter vos contributions sans altérer le code de la branche `master` qui est le rendu public de la documentation. Ce qui vous permet de ne pas devoir tout marquer mais le faire en plusieurs étapes. (Notamment pour les contributions demandant plus de temps de travail).
 
 Forker un projet sur GitHub est extrêmement simple, il suffit de cliquer sur le bouton Fork, cela créera un nouveau dépôt sur votre espace de GitHub.
-![Capture d’écran bouton fork GitHub](image://github_fork_button.png)
+![Capture d’écran bouton fork GitHub](/img/github_fork_button.png)
 
 Dans le titre du nouveau dépôt, vous verrez de quelle provenance vient le dépôt, dans le cas présent `YunoHost/doc`
-![Capture d’écran titre et sous-titre du dépot](image://github_fork_title.png)
+![Capture d’écran titre et sous-titre du dépot](/img/github_fork_title.png)
 
 ! **Point de vigilance !**
 ! Si vous forkez le dépôt d’un·e autre contributeur·rice que YunoHost, vous aurez les mêmes fichiers. Sauf que quand vous enverrez vos modifications, elles seront envoyées au contributeur et non au dépôt YunoHost. L’avantage est que ça vous permet de développer une autre branche créée par le·la contributeur·rice et ainsi travailler avec une autre personne à une amélioration avant proposition au dépôt principal.

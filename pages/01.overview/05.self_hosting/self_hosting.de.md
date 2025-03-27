@@ -12,7 +12,7 @@ Ihren eigenen Server zu Hause zu haben und zu verwalten, um Ihre persönlichen D
 
 Self-Hosting bedeutet, einen Server zu besitzen. Ein Server ist ein Computer, auf den in der Regel rund um die Uhr im Netzwerk zugegriffen werden kann und der normalerweise keinen Bildschirm oder keine Tastatur hat (stattdessen wird er ferngesteuert). Entgegen der landläufigen Meinung ist ein Server nicht unbedingt ein riesiger und besonders leistungsfähiger Computer: Heutzutage ist ein kleines Board (Einplatinencomputer) mit ~ 40 € für das Self-Hosting ausreichend.
 
-![](image://internet_topologies.png)
+![](/img/internet_topologies.png)
 
 Beim Self-Hosting geht es nicht darum, "Ihr Internet" sicherer zu machen, und es bietet auch keine Anonymität an sich. Stattdessen geht es darum, autonom zu sein und Ihre Dienste und Daten zu kontrollieren - was auch bedeutet, dafür verantwortlich zu sein.
 

@@ -105,18 +105,18 @@ Il ne reste plus qu'à désigner l'ancre au texte que l'on souhaite rendre inter
 Pour afficher des images, le principe est identique aux liens, excepté l'ajout d'un `!` avant le texte à afficher qui est ici considéré comme le texte à afficher en cas d'impossibilité de chargement de l'image. Une description de l'image convient.
 
 ```markdown
-![Logo YunoHost](image://logo.png)
+![Logo YunoHost](/img/logo.png)
 ```
 
-![Logo YunoHost](image://logo.png)
+![Logo YunoHost](/img/logo.png)
 
 Il est possible de faire un lien avec une image, exemple :
 
 ```markdown
-[![Logo YunoHost](image://logo.png)](/write_documentation)
+[![Logo YunoHost](/img/logo.png)](/write_documentation)
 ```
 
-[![Logo YunoHost](image://logo.png)](/write_documentation)
+[![Logo YunoHost](/img/logo.png)](/write_documentation)
 
 L'encart de *texte à afficher en cas d'impossibilité de chargement de l'image* entre les crochets dans le lien de l'image n'est pas obligatoire mais fortement recommandé.
 
@@ -236,7 +236,7 @@ Pour créer un tableau, il faut utiliser la barre verticale `|` (appelé 'pipe')
 | **Un tableau** | Une colonne | Une seconde | Autant que l'on veut |
 |:--------------:|:-----------:|:-----------:|:--------------------:|
 | Une ligne formatée | | Et du **texte en gras** | Ou en *italique* |
-| D'autres lignes | |![une image](image://cd.jpg) | [Ou un lien](/contributordoc) |
+| D'autres lignes | |![une image](/img/cd.jpg) | [Ou un lien](/contributordoc) |
 ```
 
 Ce qui affichera ça :
@@ -244,7 +244,7 @@ Ce qui affichera ça :
 | **Un tableau** | Une colonne | Une seconde | Autant que l'on veut |
 |:--------------:|:-----------:|:-----------:|:--------------------:|
 | Une ligne formatée | | Et du **texte en gras** | Ou en *italique* |
-| D'autres lignes | |![une image](image://cd.jpg) | [Ou un lien](/contributordoc) |
+| D'autres lignes | |![une image](/img/cd.jpg) | [Ou un lien](/contributordoc) |
 
 ## Bloc de codes
 

@@ -19,19 +19,19 @@ A continuación puedes encontrar los elementos a configurar en el cliente de cor
 | IMAP     | 993  | SSL/TLS    | Normal password | `nombre_de_usuario` (sin `@domain.tld`) |
 | SMTP     | 587  | STARTTLS   | Normal password | `nombre_de_usuario` (sin `@domain.tld`) |
 
-### ![](image://thunderbird.png?resize=50&classes=inline) Configurar Thunderbird Desktop (en un ordenador)
+### ![](/img/thunderbird.png?resize=50&classes=inline) Configurar Thunderbird Desktop (en un ordenador)
 
 Para configurar manualmente un nuevo cuenta en Thunderbird Desktop, añadir las informaciones de la cuenta, y después seleccionar el puerto 993 con SSL/TLS para IMAP, y puerto 587 con STARTTLS para SMTP. Después seleccionar 'Normal Password' para Autenticación y haz click en el botón 'Advanced Config'. Se puede que tendrás que aceptar los certificados para que todo funciona normalmente.
 
-![](image://thunderbird_config_1.png?resize=900)
-![](image://thunderbird_config_2.png?resize=900)
+![](/img/thunderbird_config_1.png?resize=900)
+![](/img/thunderbird_config_2.png?resize=900)
 
 - [Gestionar un alias para una dirección de correo electrónico](https://support.mozilla.org/es/kb/configurar-un-alias-para-una-direccin-de-correo-el)
 
-### ![](image://k9mail.png?resize=50&classes=inline) Configurar K-9 Mail / Thunderbird Mobile (en Android)
+### ![](/img/k9mail.png?resize=50&classes=inline) Configurar K-9 Mail / Thunderbird Mobile (en Android)
 
 Seguir los pasos a continuación. (Como para Thunderbird Desktop, se puede que tendrás que aceptar los certificados para que funciona normalmente.)
 
-![](image://thunderbird_mobile_config_1.png?resize=280&classes=inline)
-![](image://thunderbird_mobile_config_2.png?resize=280&classes=inline)
+![](/img/thunderbird_mobile_config_1.png?resize=280&classes=inline)
+![](/img/thunderbird_mobile_config_2.png?resize=280&classes=inline)
 ![](image:/thunderbird_mobile_config_3.png?resize=280&classes=inline)

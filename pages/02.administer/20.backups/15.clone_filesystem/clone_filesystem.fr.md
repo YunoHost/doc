@@ -37,13 +37,13 @@ Ci-dessous, quelques documentations pour les fournisseurs les plus connus:
 [/ui-tab]
 [ui-tab title="VirtualBox"]
 Sélectionner la machine virtuelle et cliquer sur `Snapshots`, puis spécifier le nom du snapshot et cliquer sur `OK`.
-![Le bouton snapshot se trouve en haut à droite](image://virtualbox-snapshot2.webp)
+![Le bouton snapshot se trouve en haut à droite](/img/virtualbox-snapshot2.webp)
 
 Pour restaurer, sélectionner la machine virtuelle, cliquer sur `Snapshots` puis `Restore Snapshot option`.
-![](image://virtualbox-snapshot3.webp)
+![](/img/virtualbox-snapshot3.webp)
 
 Ensuite cliquer sur `Restore Snapshot`.
-![](image://virtualbox-snapshot4.webp)
+![](/img/virtualbox-snapshot4.webp)
 [/ui-tab]
 [ui-tab title="Proxmox"]
 

@@ -13,11 +13,11 @@ Nous allons voir comment configurer le DNS avec [OVH](http://www.ovh.com).
 
 Après achat de votre nom de domaine, rendez-vous dans l'espace client pour retrouver le panneau de configuration d'OVH, et cliquez sur votre domaine à gauche :
 
-![](image://ovh_control_panel.png?resize=800)
+![](/img/ovh_control_panel.png?resize=800)
 
 Cliquez sur l'onglet **Zone DNS**, puis sur **Ajouter une entrée** :
 
-![](image://ovh_dns_zone.png?resize=800)
+![](/img/ovh_dns_zone.png?resize=800)
 
 Cliquer sur "Modifier en mode textuel", garder les 4 premières lignes :
 
@@ -28,15 +28,15 @@ $TTL 3600
                          IN NS     ns104.ovh.net.
 ```
 
-puis effacer tout ce qu'il y a en-dessous, et le remplacer par la configuration donnée par votre serveur, comme indiqué dans la [configuration DNS standard](/dns_config).
+puis effacer tout ce qu'il y a en-dessous, et le remplacer par la configuration donnée par votre serveur, comme indiqué dans la [configuration DNS standard](/install/post_install/dns_config).
 
 ### IP dynamique
 
-[Tutoriel plus général sur l’IP dynamique](/dns_dynamicip).
+[Tutoriel plus général sur l’IP dynamique](/administer/tutorials/domains/dns_dynamicip).
 
 Cette partie est à suivre, que si votre IP est dynamique.
 
-Pour savoir si votre fournisseur d’accès à Internet vous fournit une IP dynamique [voir ici](/isp).
+Pour savoir si votre fournisseur d’accès à Internet vous fournit une IP dynamique [voir ici](/install/providers/isp/).
 
 Commencez par créer un identifiant DynHost.
 

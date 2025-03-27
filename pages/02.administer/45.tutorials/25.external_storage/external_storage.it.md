@@ -25,7 +25,7 @@ Troverete qui le istruzioni per riuscire a spostare i vostri dati su un disco es
 
 - Prevedere un periodo temporale nel quale gli utenti del vostro server possono sopportare una interruzione dei servizi. I passaggi da compiere, anche se relativamente semplici, sono tecnicamente complessi e necessitano di un lasso di tempo **da dedicare in modo esclusivo**.
 
-- Conoscenza della connessione come root sul server anche via [SSH](/ssh). (Nota bene: se siete connessi come utente `admin`, potete passare root con il comando `sudo su`)
+- Conoscenza della connessione come root sul server anche via [SSH](/administer/admin_guide/command_line). (Nota bene: se siete connessi come utente `admin`, potete passare root con il comando `sudo su`)
 
 - Conoscere i comandi `cd`, `ls`, `mkdir`, `rm`.
 
@@ -248,6 +248,6 @@ rm -Rf /home/yunohost.app.bkp
 rm -Rf /var/mail.bkp
 ```
 
-### ![](image://tada.png?resize=32&classes=inline) Complimenti!!!
+### ![](/img/tada.png?resize=32&classes=inline) Complimenti!!!
 
 Se siete giunti fino qui senza incidenti, avete configurato un server che sfrutta uno o più dischi per il salvataggio dei dati.

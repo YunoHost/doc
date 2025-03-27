@@ -29,7 +29,7 @@ La méthode de sauvegarde actuelle consiste à créer des archives `.tar` qui co
 
 Vous pouvez facilement créer des archives depuis la webadmin en allant dans `Sauvegardes > Archives locales` et en cliquant sur `Nouvelle sauvegarde`. Vous pourrez ensuite sélectionner les éléments à sauvegarder (configuration, données "système", applications).
 
-![Image de l'écran de sauvegarde de YunoHost dans la webadmin](image://backup.png)
+![Image de l'écran de sauvegarde de YunoHost dans la webadmin](/img/backup.png)
 
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
@@ -81,7 +81,7 @@ Après avoir créé des sauvegardes, il est possible de les lister et de les ins
 
 [/ui-tab]
 [ui-tab title="Via un client SFTP"]
-À l'heure actuelle, la solution la plus accessible pour récupérer les sauvegardes de grosse taille est d'utiliser le programme FileZilla comme expliqué dans [cette page](/filezilla).
+À l'heure actuelle, la solution la plus accessible pour récupérer les sauvegardes de grosse taille est d'utiliser le programme FileZilla comme expliqué dans [cette page](/administer/tutorials/filezilla).
 
 Par défaut, les sauvegardes sont stockées dans `/home/yunohost.backup/archives/`.
 
@@ -89,7 +89,7 @@ Par défaut, les sauvegardes sont stockées dans `/home/yunohost.backup/archives
 [ui-tab title="À partir de la ligne de commande"]
 Les commandes `yunohost backup list` et `yunohost backup info <nom_d'archive>` permettent d'obtenir des infiormations sur les noms et tailles des sauvegardes.
 
-Il est possible d'utiliser `scp` (un programme basé sur [`ssh`](/ssh)) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous GNU/Linux, vous pouvez utiliser la commande suivante pour télécharger une archive :
+Il est possible d'utiliser `scp` (un programme basé sur [`ssh`](/administer/admin_guide/command_line)) pour copier des fichiers entre deux machines grâce à la ligne de commande. Ainsi, depuis une machine sous GNU/Linux, vous pouvez utiliser la commande suivante pour télécharger une archive :
 
 ```bash
 scp admin@votre.domaine.tld:/home/yunohost.backup/archives/<nom_darchive>.tar ./
@@ -106,7 +106,7 @@ scp -P port_ssh admin@votre.domaine.tld:/home/yunohost.backup/archives/<nom_darc
 
 ! N'oubliez pas de stocker votre sauvegarde dans un lieu différents de celui ou se trouve votre serveur.
 
-!!! Si vous le souhaitez, vous pouvez connecter un disque externe à votre serveur pour que les archives arrivent directement dessus. Voir ce guide pour [Ajouter un stockage externe à son serveur](/external_storage)
+!!! Si vous le souhaitez, vous pouvez connecter un disque externe à votre serveur pour que les archives arrivent directement dessus. Voir ce guide pour [Ajouter un stockage externe à son serveur](/administer/tutorials/external_storage)
 
 ### Tester
 
@@ -134,7 +134,7 @@ ls -lh /home/yunohost.backup/archives/ARCHIVE.tar
 
 Allez dans `Sauvegardes > Archives locales` et sélectionnez l'archive. Vous pouvez ensuite choisir les différents éléments que vous voulez restaurer puis cliquer sur "Restaurer".
 
-![](image://restore.png)
+![](/img/restore.png)
 
 [/ui-tab]
 [ui-tab title="À partir de la ligne de commande"]
@@ -155,7 +155,7 @@ Dans de nombreux cas, l'archive n'est pas sur le serveur sur lequel on souhaite 
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="Via un client SFTP"]
-À l'heure actuelle, la solution la plus accessible pour téléverser les sauvegardes est d'utiliser le programme FileZilla comme expliqué dans [cette page](/filezilla).
+À l'heure actuelle, la solution la plus accessible pour téléverser les sauvegardes est d'utiliser le programme FileZilla comme expliqué dans [cette page](/administer/tutorials/filezilla).
 
 Par défaut, les sauvegardes sont à placer dans `/home/yunohost.backup/archives/`.
 [/ui-tab]

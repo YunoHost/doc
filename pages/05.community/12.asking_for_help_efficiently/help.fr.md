@@ -42,10 +42,10 @@ Il est recommandé de partager ces logs dans leur intégralité à l'aide du lie
 Évitez les extraits de logs, une information déterminante est peut-être ailleurs.  
 Évitez aussi de les copier-coller de manière brute dans le forum, car c'est désagréable de les parcourir comme ça, partagez le lien de YunoPaste.
 
-![Bouton YunoPaste](image://yunopaste.png)
+![Bouton YunoPaste](/img/yunopaste.png)
 
-![Vidéo indiquant qu'on peut trouver le bouton YunoPaste en bas à droite des pages de logs sur la web admin](image://yunopaste_install.mp4?loop=1&controls=0&autoplay=1&muted)
-![Vidéo montrant qu'on peut partager un log depuis la web admin en allant dans Outils puis Services puis en sélectionnant le services dont on veut partager les logs](image://yunopaste_service.mp4?loop=1&controls=0&autoplay=1&muted)
+![Vidéo indiquant qu'on peut trouver le bouton YunoPaste en bas à droite des pages de logs sur la web admin](/img/yunopaste_install.mp4?loop=1&controls=0&autoplay=1&muted)
+![Vidéo montrant qu'on peut partager un log depuis la web admin en allant dans Outils puis Services puis en sélectionnant le services dont on veut partager les logs](/img/yunopaste_service.mp4?loop=1&controls=0&autoplay=1&muted)
 
 Si votre problème n'est pas lié à un processus d'installation ou de mise à jour, mais plutôt à une application qui ne se charge pas correctement, vous pouvez déjà enquêter avec la console de votre navigateur (s'ouvrant avec la touche F12) : son onglet Réseau peut vous montrer les codes d'erreur HTTP (y compris les bien connus 403, 404, 500...), et sa Console peut également afficher des erreurs.
 

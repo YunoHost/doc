@@ -32,7 +32,7 @@ Potete utilizzare il programma [AngryIP](https://angryip.org/download/). Eseguit
 !!! - il vostro server dovrebbe essere visualizzato come in ascolto sulle porte 80 e 443
 !!! - nel dubbio digitate in un browser `https://192.168.x.y` per verificare che abbiate raggiunto davvero il server YunoHost.
 
-![](image://angryip.png?class=inline)
+![](/img/angryip.png?class=inline)
 
 [/ui-tab]
 [ui-tab title="Dal vostro modem/router"]

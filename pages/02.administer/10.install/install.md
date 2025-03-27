@@ -70,27 +70,27 @@ Select the hardware on which you want install YunoHost :
 [div class="flex-container"]
 
 [div class="flex-child hardware{%if virtualbox %} active{% endif %}"]
-[[figure caption="VirtualBox"]![](image://virtualbox.png?height=75)[/figure]](/install/hardware:virtualbox)
+[[figure caption="VirtualBox"]![](/img/virtualbox.png?height=75)[/figure]](/install/hardware:virtualbox)
 [/div]
 
 [div class="flex-child hardware{%if rpi012 or rpi345 %} active{% endif %}"]
-[[figure caption="Raspberry Pi"]![](image://raspberrypi.png?height=75)[/figure]](/install/hardware:rpi345)
+[[figure caption="Raspberry Pi"]![](/img/raspberrypi.png?height=75)[/figure]](/install/hardware:rpi345)
 [/div]
 
 [div class="flex-child hardware{%if arm_sup or (arm_unsup and not rpi012) or internetcube %} active{% endif %}"]
-[[figure caption="ARM board"]![](image://olinuxino.png?height=75)[/figure]](/install/hardware:arm)
+[[figure caption="ARM board"]![](/img/olinuxino.png?height=75)[/figure]](/install/hardware:arm)
 [/div]
 
 [div class="flex-child hardware{%if regular %} active{% endif %}"]
-[[figure caption="Regular computer"]![](image://computer.png?height=75)[/figure]](/install/hardware:regular)
+[[figure caption="Regular computer"]![](/img/computer.png?height=75)[/figure]](/install/hardware:regular)
 [/div]
 
 [div class="flex-child hardware{%if wsl %} active{% endif %}"]
-[[figure caption="WSL"]![](image://wsl.png?height=75)[/figure]](/install/hardware:wsl)
+[[figure caption="WSL"]![](/img/wsl.png?height=75)[/figure]](/install/hardware:wsl)
 [/div]
 
 [div class="flex-child hardware{%if vps_debian or vps_ynh %} active{% endif %}"]
-[[figure caption="Remote server"]![](image://vps.png?height=75)[/figure]](/install/hardware:vps_debian)
+[[figure caption="Remote server"]![](/img/vps.png?height=75)[/figure]](/install/hardware:vps_debian)
 [/div]
 
 [/div]
@@ -98,34 +98,34 @@ Select the hardware on which you want install YunoHost :
 
 {% if rpi012 or rpi345 %}
 [div class="flex-child hardware{%if rpi345 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 3, 4 or 5"]![](image://raspberrypi.png?height=50)[/figure]](/install/hardware:rpi345)
+[[figure caption="Raspberry Pi 3, 4 or 5"]![](/img/raspberrypi.png?height=50)[/figure]](/install/hardware:rpi345)
 [/div]
 
 [div class="flex-child hardware{%if rpi012 %} active{% endif %}"]
-[[figure caption="Raspberry Pi 0, 1 or 2"]![](image://rpi1.png?height=50)[/figure]](/install/hardware:rpi012)
+[[figure caption="Raspberry Pi 0, 1 or 2"]![](/img/rpi1.png?height=50)[/figure]](/install/hardware:rpi012)
 [/div]
 
 {% elseif show_legacy_arm_menu %}
 
 [div class="flex-child hardware{%if internetcube %} active{% endif %}"]
-[[figure caption="Internet cube With VPN"]![](image://internetcube.png?height=50)[/figure]](/install/hardware:internetcube)
+[[figure caption="Internet cube With VPN"]![](/img/internetcube.png?height=50)[/figure]](/install/hardware:internetcube)
 [/div]
 
 [div class="flex-child hardware{%if arm_sup and not internetcube %} active{% endif %}"]
-[[figure caption="Olinuxino lime1&2 or Orange Pi PC+"]![](image://olinuxino.png?height=50)[/figure]](/install/hardware:arm_sup)
+[[figure caption="Olinuxino lime1&2 or Orange Pi PC+"]![](/img/olinuxino.png?height=50)[/figure]](/install/hardware:arm_sup)
 [/div]
 
 [div class="flex-child hardware{%if arm_unsup %} active{% endif %}"]
-[[figure caption="Others boards"]![](image://odroidhc4.png?height=50)[/figure]](/install/hardware:arm_unsup)
+[[figure caption="Others boards"]![](/img/odroidhc4.png?height=50)[/figure]](/install/hardware:arm_unsup)
 [/div]
 {% elseif vps_debian or vps_ynh %}
 
 [div class="flex-child hardware{%if vps_debian %} active{% endif %}"]
-[[figure caption="VPS or dedicated server with Debian 12"]![](image://debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
+[[figure caption="VPS or dedicated server with Debian 12"]![](/img/debian-logo.png?height=50)[/figure]](/install/hardware:vps_debian)
 [/div]
 
 [div class="flex-child hardware{%if vps_ynh %} active{% endif %}"]
-[[figure caption="VPS or dedicated server with YunoHost pre-installed"]![](image://logo.png?height=50)[/figure]](/install/hardware:vps_ynh)
+[[figure caption="VPS or dedicated server with YunoHost pre-installed"]![](/img/logo.png?height=50)[/figure]](/install/hardware:vps_ynh)
 [/div]
 
 {% endif %}
@@ -177,7 +177,7 @@ Select the hardware on which you want install YunoHost :
 - *Recommended:* Windows Terminal (Preview) app, installed from the Microsoft Store. Much better than the standard Terminal, as it offers shortcuts to the WSL distros.
 {% endif %}
 {% if at_home %}
-- A [reasonable ISP](/isp), preferably with a good and unlimited upstream bandwidth
+- A [reasonable ISP](/install/providers/isp/), preferably with a good and unlimited upstream bandwidth
 {% if not virtualbox %}
 - An ethernet cable (RJ-45) to connect your server to your router.
 {% endif %}
@@ -327,13 +327,13 @@ Here are some VPS providers supporting YunoHost natively :
 [div class="flex-container"]
 
 [div class="flex-child"]
-[[figure caption="Alsace Réseau Neutre - FR"]![](image://vps_ynh_arn.png?height=50)[/figure]](https://arn-fai.net/en/h%C3%A9bergement-alternatif/vps)
+[[figure caption="Alsace Réseau Neutre - FR"]![](/img/vps_ynh_arn.png?height=50)[/figure]](https://arn-fai.net/en/h%C3%A9bergement-alternatif/vps)
 [/div]
 [div class="flex-child"]
-[[figure caption="FAImaison - FR"]![](image://vps_ynh_faimaison.svg?height=50)[/figure]](https://www.faimaison.net/services/vm.html)
+[[figure caption="FAImaison - FR"]![](/img/vps_ynh_faimaison.svg?height=50)[/figure]](https://www.faimaison.net/services/vm.html)
 [/div]
 [div class="flex-child"]
-[[figure caption="ECOWAN - FR"]![](image://vps_ynh_ecowan.png?height=50)[/figure]](https://www.ecowan.fr/vps-linux?from-yunohost)
+[[figure caption="ECOWAN - FR"]![](/img/vps_ynh_ecowan.png?height=50)[/figure]](https://www.ecowan.fr/vps-linux?from-yunohost)
 [/div]
 [/div]
 {% endif %}
@@ -420,11 +420,11 @@ $(document).ready(function () {
 
 {% if arm %}
 
-## ![microSD card with adapter](image://sdcard_with_adapter.png?resize=100,75&class=inline) Flash the {{image_type}} image
+## ![microSD card with adapter](/img/sdcard_with_adapter.png?resize=100,75&class=inline) Flash the {{image_type}} image
 
 {% else %}
 
-## ![USB drive](image://usb_key.png?resize=100,100&class=inline) Flash the YunoHost image
+## ![USB drive](/img/usb_key.png?resize=100,100&class=inline) Flash the YunoHost image
 
 {% endif %}
 
@@ -437,7 +437,7 @@ Download <a href="https://www.balena.io/etcher/" target="_blank">Etcher</a> for 
 
 Plug your {% if arm %}SD card{% else %}USB stick{% endif %}, select your image and click "Flash"
 
-![Etcher](image://etcher.gif?resize=700&class=inline)
+![Etcher](/img/etcher.gif?resize=700&class=inline)
 
 [/ui-tab]
 [ui-tab title="With USBimager"]
@@ -446,7 +446,7 @@ Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating sys
 
 Plug your {% if arm %}SD card{% else %}USB stick{% endif %}, select your image and click "Write"
 
-![USBimager](image://usbimager.png?resize=700&class=inline)
+![USBimager](/img/usbimager.png?resize=700&class=inline)
 
 [/ui-tab]
 [ui-tab title="With dd"]
@@ -490,7 +490,7 @@ Later, when you'll boot the computer using this usb stick, Ventoy will appear an
 
 ## Create a new virtual machine
 
-![](image://virtualbox_1.png?class=inline)
+![](/img/virtualbox_1.png?class=inline)
 
 ! It's okay if you can only have 32-bit versions, just be sure that you downloaded the 32-bit image previously.
 
@@ -504,7 +504,7 @@ Go to **Settings** > **Network**:
 - Select your interface's name:
     **wlan0** if you are connected wirelessly, or **eth0** otherwise.
 
-![](image://virtualbox_2.png?class=inline)
+![](/img/virtualbox_2.png?class=inline)
 
 {% endif %}
 
@@ -526,7 +526,7 @@ Go to **Settings** > **Network**:
 
 Start the virtual machine after selecting the YunoHost image.
 
-![](image://virtualbox_2.1.png?class=inline)
+![](/img/virtualbox_2.1.png?class=inline)
 
 ! If you encounter the error "VT-x is not available", you probably need to enable Virtualization in the BIOS of your computer.
 
@@ -549,7 +549,7 @@ Start the virtual machine after selecting the YunoHost image.
 You should see a screen like this:
 
 [figure class="nomargin" caption="Preview of the ISO menu"]
-![](image://virtualbox_3.png?class=inline)
+![](/img/virtualbox_3.png?class=inline)
 [/figure]
 [ui-tabs position="top-left" active="0" theme="lite"]
 
@@ -566,7 +566,7 @@ You should see a screen like this:
 
 The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.
 
-With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/external_storage).
+With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/administer/tutorials/external_storage).
 
 ### Summary of the steps in expert mode
 
@@ -592,7 +592,7 @@ If you have one or more hard drives to store data, you can choose to mount it on
 | `/home/yunohost.multimedia` | Heavy data shared between several applications |
 | `/var/mail` | User mail |
 
-If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/external_storage).
+If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/administer/tutorials/external_storage).
 
 ### About encryption
 
@@ -616,7 +616,7 @@ Keep in mind that:
 
 ## [fa=terminal /] Connect to the board
 
-Next you need to [find the local IP address of your server](/finding_the_local_ip) to connect as root user [via SSH](/ssh) with the temporary password `1234`.
+Next you need to [find the local IP address of your server](/install/post_install/finding_the_local_ip) to connect as root user [via SSH](/administer/admin_guide/command_line) with the temporary password `1234`.
 
 ```bash
 ssh root@192.168.x.xxx
@@ -630,7 +630,7 @@ ssh root@192.168.x.xxx
 
 ## [fa=rocket /] Run the install script
 
-- Open a command line prompt on your server (either directly or [through SSH](/ssh))
+- Open a command line prompt on your server (either directly or [through SSH](/administer/admin_guide/command_line))
 - Make sure you are root (or type `sudo -i` to become root)
 - Run the following command:
 
@@ -654,28 +654,28 @@ curl https://install.yunohost.org | bash
 {%if at_home %}
 In an internet browser, type **{% if internetcube %}`https://internetcube.local`{% else %}`https://yunohost.local` (or `yunohost-2.local`, and so on if multiple YunoHost servers are on your network){% endif %}**.
 
-!!! If this doesn't work, you can [look for the the local IP address of your server](/finding_the_local_ip). The address typically looks like `192.168.x.y`, and you should therefore type `https://192.168.x.y` in your browser's address bar.
+!!! If this doesn't work, you can [look for the the local IP address of your server](/install/post_install/finding_the_local_ip). The address typically looks like `192.168.x.y`, and you should therefore type `https://192.168.x.y` in your browser's address bar.
 {% else %}
 You can perform the initial configuration with the web interface by typing in the address bar of your web browser **the public IP address of your server**. Typically, your VPS provider should have provided you with the IP of the server.
 {% endif %}
 
-! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. {% if not wsl %}You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/certificate). {% endif %} For now, you should add a security exception to accept the current certificate. (Though, PLEASE, do not take the habit of blindly accepting this kind of security alert!)
+! During the first visit, you will very likely encounter a security warning related to the certificate used by the server. For now, your server uses a self-signed certificate. {% if not wsl %}You will later be able to add a certificate automatically recognized by web browsers as described in the [certificate documentation](/administer/admin_guide/domains/certificate). {% endif %} For now, you should add a security exception to accept the current certificate. (Though, PLEASE, do not take the habit of blindly accepting this kind of security alert!)
 
 {% if not internetcube %}
 You should then land on this page :
 
 [figure class="nomargin" caption="Preview of the Web initial configuration page"]
-![Initial configuration page](image://postinstall_web.png?resize=100%&class=inline)
+![Initial configuration page](/img/postinstall_web.png?resize=100%&class=inline)
 [/figure]
 
 {% endif %}
 [/ui-tab]
 [ui-tab title="From the command line"]
 
-You can also perform the postinstallation with the command `yunohost tools postinstall` directly on the server, or [via SSH](/ssh).
+You can also perform the postinstallation with the command `yunohost tools postinstall` directly on the server, or [via SSH](/administer/admin_guide/command_line).
 
 [figure class="nomargin" caption="Preview of the command-line post-installation"]
-![Initial configuration with CLI](image://postinstall_cli.png?resize=100%&class=inline)
+![Initial configuration with CLI](/img/postinstall_cli.png?resize=100%&class=inline)
 [/figure]
 
 [/ui-tab]
@@ -691,9 +691,9 @@ This will be the domain used by your server's users to access the **authenticati
 
 - If you're new to self-hosting and do not already have a domain name, we recommend using a **.nohost.me** / **.noho.st** / **.ynh.fr** (e.g. `homersimpson.nohost.me`). Provided that it's not already taken, the domain will be configured automatically and you won't need any further configuration step. Please note that the downside is that you won't have full-control over the DNS configuration.
 
-- If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/dns_config).
+- If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/install/post_install/dns_config).
 
-!!! Yes, you *have to* configure a domain name. If you don't have any domain name and don't want a **.nohost.me** / **.noho.st** / **.ynh.fr** either, you can set up a dummy domain such as `yolo.test` and tweak your **local** `/etc/hosts` file such that this dummy domain [points to the appropriate IP, as explained here](/dns_local_network).
+!!! Yes, you *have to* configure a domain name. If you don't have any domain name and don't want a **.nohost.me** / **.noho.st** / **.ynh.fr** either, you can set up a dummy domain such as `yolo.test` and tweak your **local** `/etc/hosts` file such that this dummy domain [points to the appropriate IP, as explained here](/administer/tutorials/domains/dns_local_network).
 
 {% else %}
 
@@ -716,7 +716,7 @@ If you want to create subdomains, do not forget to add them in the `hosts` file 
 
 ### [fa=key /] First user
 
-The first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/ssh) or [**SFTP**](/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld` : these emails may be used to send technical informations or alerts. You can later add additional users, which you can also add to the Admins group.
+The first user is now created at this stage. You should pick a username and a reasonably complex password. (We cannot stress enough that the password should be **robust**!) This user will be added to the Admins group, and will therefore be able to access the user portal, the web admin interface, and connect [via **SSH**](/administer/admin_guide/command_line) or [**SFTP**](/administer/tutorials/filezilla). Admins will also receive emails sent to `root@yourdomain.tld` and `admin@yourdomain.tld` : these emails may be used to send technical informations or alerts. You can later add additional users, which you can also add to the Admins group.
 
 This user replaces the old `admin` user, which some old documentation page may still refer to. In which case : just replace `admin` with your username.
 
@@ -733,7 +733,7 @@ Once the postinstall is done, you should be able to actually log in the web admi
 
 The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured - and guide you in how to fix issues. The diagnosis will run twice a day and send an alert if issues are detected.
 
-!!! N.B. : **don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/dns_config) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain), add a swapfile if not enough ram {% if at_home %} and/or [port forwarding](/isp_box_config){% endif %}.
+!!! N.B. : **don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/install/post_install/dns_config) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain), add a swapfile if not enough ram {% if at_home %} and/or [port forwarding](/install/post_install/isp_box_config){% endif %}.
 
 !!! If an alert is not relevant (for example because you don't intend on using a specific feature), it is perfectly fine to flag the issue as 'ignored' by going in the webadmin > Diagnosis, and clicking the ignore button for this specifc issue.
 
@@ -742,7 +742,7 @@ The diagnosis system is meant to provide an easy way to validate that all critic
 To run a diagnosis, go on Web Admin in the Diagnosis section. Click Run initial diagnosis and you should get a screen like this :
 
 [figure class="nomargin" caption="Preview of the diagnostic panel"]
-![](image://diagnostic.png?resize=100%&class=inline)
+![](/img/diagnostic.png?resize=100%&class=inline)
 [/figure]
 
 [/ui-tab]
@@ -760,7 +760,7 @@ yunohost diagnosis show --issues --human-readable
 
 Once you configured DNS records and port forwarding (if needed), you should be able to install a Let's Encrypt certificate. This will get rid of the spooky security warning from earlier for new visitors.
 
-For more detailed instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/certificate).
+For more detailed instructions, or to lean more about SSL/TLS certificates, see [the corresponding page here](/administer/admin_guide/domains/certificate).
 
 [ui-tabs position="top-left" active="0" theme="lite"]
 [ui-tab title="From the web interface"]
@@ -768,7 +768,7 @@ For more detailed instructions, or to lean more about SSL/TLS certificates, see 
 Go in Domains > Click on your domain > SSL Certificate
 
 [figure class="nomargin" caption="Preview of the diagnostic panel"]
-![](image://certificate-before-LE.png?resize=100%&class=inline)
+![](/img/certificate-before-LE.png?resize=100%&class=inline)
 [/figure]
 
 [/ui-tab]
@@ -781,9 +781,9 @@ yunohost domain cert install
 [/ui-tab]
 [/ui-tabs]
 
-## ![](image://tada.png?resize=32&classes=inline) Congratz!
+## ![](/img/tada.png?resize=32&classes=inline) Congratz!
 
-You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](/apps). Don't forget to [plan backups](/backup) !
+You now have a pretty well configured server. If you're new to YunoHost, we recommend to have a look at [the guided tour](/overview). You should also be able to [install your favourite applications](https://apps.yunohost.org). Don't forget to [plan backups](/backup) !
 
 {% endif %}
 {% endif %}

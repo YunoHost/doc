@@ -15,6 +15,6 @@ Questa pagina indica come ottenere una chiave API con Gandi di modo da configura
 
 1. Connettiti a <https://account.gandi.net/>
 2. Dovresti vedere questa pagina e quindi clicca su 'Security'
-  ![](image://registrar_api_gandi_1.png?resize=800)
+  ![](/img/registrar_api_gandi_1.png?resize=800)
 3. Nella pagina successiva clicca su '(re)Generate the API key'.
-  ![](image://registrar_api_gandi_2.png?resize=800)
+  ![](/img/registrar_api_gandi_2.png?resize=800)

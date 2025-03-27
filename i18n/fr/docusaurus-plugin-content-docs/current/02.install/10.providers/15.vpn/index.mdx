@@ -1,0 +1,65 @@
+---
+title: Fournisseurs VPN
+description: Ceux qui fournissent un tunnel privé (et une IP publique)
+---
+
+import {HighlightFFDN, HighlightNonProfit} from '@site/src/components/Highlight';
+
+Étant donné que la mise en place d'un serveur à domicile est une pratique peu courante, la plupart des connexions internet fournies aux particuliers ne sont pas adaptées à cette fin, en particulier si vous souhaitez envoyer des courriels. Un VPN neutre fournissant une adresse IPv4 publique fixe dédiée et des adresses IPv6 [peut aider à contourner certaines limitations ou difficultés](/install/providers/vpn/vpn_advantage).
+
+Ci-dessous, vous trouverez une liste de fournisseurs compatibles avec l'auto-hébergement et en particulier ceux qui fournissent le format .cube pour les applications VPNClient et ceux qui fournissent [internetcube](https://internetcu.be).
+
+:::info
+Par **compatible pour l'auto-hébergement**, nous entendons des offres VPN avec au moins :
+- un IPv4 public dédié fixe
+- des fonctionnalités de redirection de port ou d'ouverture
+- neutralité du réseau : pas d'analyse du trafic, pas de revente des données des utilisateurs, pas d'altération du trafic (sans obligations légales)...
+:::
+
+
+## Sites anglophones
+
+| Fournisseur VPN | Compatibilité [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) | IPv6 | rDNS IPv4 | rDNS IPv6 | Prix | Adhésion | Neutralité du net |
+| ------------ | ---------------------------------------------------------------------------- | ---- | --------- | --------- | ----- | ---------- | -------------- |
+| [Neutrinet](https://neutrinet.be/en/vpn) | ✔ (.cube + [internetcube](https://internetcu.be)) | ✔   | ✔         | ✔         | ~10€¹/mois ou 30€/an | Inclus | <HighlightFFDN/> <HighlightNonProfit/> |
+
+¹ [Payez ce que vous voulez](https://en.wikipedia.org/wiki/Pay_what_you_want)
+
+:::info
+Si vous essayez un autre fournisseur de VPN qui inclut **l'ipv4 public dédié et la redirection de port**, n'hésitez pas à contribuer à cette documentation. Nous avons besoin de personnes pour tester les offres spécifiques de ces fournisseurs commerciaux :
+
+- ✘ [VPN area](https://vpnarea.com/front/home/dedicated-ip) n'autorise pas la redirection du port 80. L'exécution d'un serveur web est contraire à leurs conditions d'utilisation.
+- [Trust zone](https://trust.zone/fr/order?p=25)
+- [PureVPN](https://www.purevpn.fr/ip-vpn-dedie)
+- [RapidVPN](https://www.rapidvpn.com/vpn)
+:::
+
+## Sites francophones
+
+| Fournisseurs | Compatibilité [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) | IPv6 | rDNS IPv4 | rDNS IPv6 | Prix | Adhésion | Neutralité du net |
+| ------------ | ----------------------- | ---- | --------- | --------- | ----- | -------------- | -- |
+| [Aquilenet](https://www.aquilenet.fr/vpn/)    | ✔ (.cube)               | ✔    | ✔         | ✔         | 3 à 5 / mois | ~15€¹ /an | <HighlightFFDN/> <HighlightNonProfit/> |
+| [Alsace Réseau Neutre](https://arn-fai.net/vpn)    | ✔ (.cube + [internetcube](https://internetcu.be))               | ✔    | ✔         | ✔         | 4 € (ou [Ğ1](https://duniter.org/fr/monnaie-libre-g1/)) / mois | 15€ / an | <HighlightFFDN/> <HighlightNonProfit/> |
+| [Baionet](https://www.baionet.fr/nos-services/vpn/)    | ✘ (wireguard)               | ?    | ?         | ?         | 2,5 € ou 5 € / mois | 5€ ou 40€ / an | <HighlightFFDN/> <HighlightNonProfit/> |
+| [FAImaison](https://www.faimaison.net/services/vpn.html)    | ✔ (.cube)               | ✘   | ✔         | ✘        | Prix libre | 8 ou 16€ / an | <HighlightFFDN/> <HighlightNonProfit/> |
+| [French Data Network](https://www.fdn.fr/services/vpn/)    | ✔ (.cube)               | ✔   | ✔         | ✔        | 6,5€ à 23€ / mois | 15 ou 30€ / an | <HighlightFFDN/> <HighlightNonProfit/> |
+| [Franciliens](https://www.franciliens.net/acces-internet/vpn/)    | ✔ (.cube + [internetcube](https://internetcu.be))               | ✔   | ✔         | ✔        | 6,5€ à 23€ / mois | 15 ou 30€ / an | <HighlightFFDN/> <HighlightNonProfit/> |
+| [Grifon](https://grifon.fr/services/vpn/)    | ✔ (manuelle) + L2TP/IPSec               | ✔   | ✔         | ✔        | 5€ / mois | 15€ / an | <HighlightFFDN/> <HighlightNonProfit/> |
+| [Igwan.net](https://igwan.net)    | ✘ (L2TP/IPSec)               | ?    | ?         | ?         | 4 ou 8€ / mois | ? / an | <HighlightFFDN/> <HighlightNonProfit/> |
+| [Illyse](https://www.illyse.net/acces-internet-par-vpn/)    | ✔ (manuelle)               | ✔    | ✔         | ✔         | 6 ou 8€ / mois | 20€ / an | <HighlightFFDN/> <HighlightNonProfit/> |
+| [ILOTH](https://iloth.net/vpn/)    | ✔ (.cube)               | ✘   | ✔         | ✘        | 80€ / an | 5 à 100€ / an | <HighlightFFDN/> <HighlightNonProfit/> |
+| [Milkywan](https://milkywan.fr/prices#popupTunnel)    | ✔ (manuelle)               | ✔    | ✔         |  ✔        | 5 € / mois | incluse | |
+| [Mycélium](https://mycelium-fai.org/wiki/documentation/services/vpn)    | ✔ (manuelle)               | ✘    | ✘         | ✘         | Prix libre | incluse<br/>Réservé aux nordistes(FR 59) | <HighlightFFDN/> <HighlightNonProfit/> |
+| [Neutrinet](https://neutrinet.be/en/vpn)    | ✔ (.cube + [internetcube](https://internetcu.be))               | ✔    | ✔         | ?         | ~8 €¹ / mois | incluse | <HighlightFFDN/> <HighlightNonProfit/> |
+| [Rézine](https://www.rezine.org/acces_internet/tunnels_chiffr%C3%A9s/)    | ✔ (manuelle)               | ✔   | ✔         | ✔        | 5 à 10€ / mois | Prix libre | <HighlightFFDN/> <HighlightNonProfit/> |
+| [Swiss Neutral Network](https://www.swissneutral.net/?page_id=31)    | ✔ (.cube)               | ✔    |  ✔        | ✔         | 30.- CHF/mois | 50.- CHF / an<br/>Réservé aux suisses | <HighlightFFDN/> <HighlightNonProfit/> |
+| [Tetaneutral](https://tetaneutral.net/adherer/)    | ✘ (wireguard)               | ?    | ?         | ?         | 5€¹ / mois | 5 à 100€¹ / an | <HighlightFFDN/> <HighlightNonProfit/> |
+| [Touraine Data Network](https://tdn-fai.net/)    | ✔ (.cube + [internetcube](https://internetcu.be))               | ✔    | ?         | ?         | 5€ / mois | 10 à 20€ / an | <HighlightFFDN/> <HighlightNonProfit/> |
+
+¹ Prix libre
+
+## Sites germanophones
+
+| Fournisseur VPN | Compatibilité [VPNClient](https://github.com/labriqueinternet/vpnclient_ynh) | IPv6 | rDNS IPv4 | rDNS IPv6 | Prix | Adhésion | Neutralité du net |
+| ------------ | ----------------------- | ---- | --------- | --------- | ----- | -------------- | --- |
+| [In-Berlin](https://in-vpn.de/provider/vpn.html)    | ✔ (manuelle)               | ✔    | ✔         | ✔         | 9 ou 14€ / mois | 20€ / an | <HighlightNonProfit/> |

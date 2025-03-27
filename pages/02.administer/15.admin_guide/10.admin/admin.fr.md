@@ -13,4 +13,4 @@ YunoHost est fourni avec une interface graphique d’administration (aussi appel
 
 L’interface d'administration web est accessible depuis votre instance YunoHost à l’adresse <https://exemple.org/yunohost/admin> (remplacez `exemple.org` par la bonne valeur)
 
-![](image://webadmin.jpg)
+![](/img/webadmin.jpg)

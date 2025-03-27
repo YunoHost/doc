@@ -1,0 +1,212 @@
+---
+title: Internet service providers
+description: The guys that provide the internet line and router
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+defaultValue="europe"
+values={[
+{label: 'Africa', value: 'africa'},
+{label: 'Asia', value: 'asia'},
+{label: 'Europe', value: 'europe'},
+{label: 'North America', value: 'northamerica'},
+{label: 'South America', value: 'southamerica'},
+{label: 'Oceania', value: 'oceania'},
+]}>
+
+<TabItem value="africa">
+<Tabs>
+<TabItem value="ivory" label="Côte d'Ivoire" default>
+
+| Fournisseur d’accès | Box/ routeur | uPnP activable | [Port 25 ouvrable](/admin/email)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | IP fixe |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Orange** | Livebox2 | oui (activé) | non | **non** | **non** | **non** |
+| **Moov** |  | oui (activé) |  |  |  |  |
+| **MTN** |  | oui (activé) |  |  |  | |
+
+</TabItem>
+</Tabs>
+</TabItem>
+
+<TabItem value="asia">
+<Tabs>
+<TabItem value="southko" label="South Korea" default>
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| LG U+ (HelloVision) | Multiple | Yes | Yes (Without ISP Router) | No | - | Partial |
+| KT(SkyLife, Qook&Show) | Multiple | Yes | Yes | No | - | Partial |
+| SKT (SK Broadband) | Multiple | Yes | Yes | No | - | Partial |
+
+</TabItem>
+<TabItem value="twn" label="Taïwan">
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| CHT (Chunghwa Telecom) | Multiple | Yes | Yes | Yes (Need hidden settings) | No | Partial |
+
+</TabItem>
+</Tabs>
+</TabItem>
+
+<TabItem value="europe">
+<Tabs>
+<TabItem value="belnl" label="Belgium (nl)">
+
+| Service provider | Box/ router | uPnP beschikbaar | [Poort 25 openen mogelijk](/admin/email)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | vaste IP |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Proximus** | BBox2 | ja (geactiveerd) | ja | **nee** | **nee** | **nee** |
+| | BBox3 | ja (geactiveerd) | ja | **nee** | **nee** | **nee** |
+| **Scarlet** | BBox2 | ja (geactiveerd) | ja | **nee** | **nee** | **nee** |
+
+:::caution
+**Proximus** zou niet openstaan voor self-hosting. Het openen van de poorten zou moeilijker zijn om SPAM te voorkomen. Het loont de moeite om een vpn te gebruiken.
+:::
+
+</TabItem>
+<TabItem value="belfr" label="Belgium (fr)">
+
+| Fournisseur d’accès | Box/ routeur | uPnP activable | [Port 25 ouvrable](/admin/email)| [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) | IP fixe |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Proximus** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
+| | BBox3 | oui (activé) | oui | **non** | **non** | **non** |
+| **Scarlet** | BBox2 | oui (activé) | oui | **non** | **non** | **non** |
+
+:::caution
+**Proximus** ne serait pas ouvert à l’auto-hébergement. L’ouverture des ports serait plus difficile afin d’éviter tout SPAM. Il serait préférable de passer par [Neutrinet](http://neutrinet.be), un des [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres).
+:::
+
+</TabItem>
+<TabItem value="fin" label="Finland">
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| DNA | Multiple | Yes | No | Yes | No | No. Only for business. |
+| Elisa | Multiple | Yes | No | Yes | Not available for consumers | No. Only for Business. |
+| Telia | Multiple | Yes | No | Yes | Not available for consumers | No. Only for Business. |
+
+:::caution
+Regulations in Finland prohibit the use of Port 25 for consumers.
+:::
+
+</TabItem>
+<TabItem value="fra" label="France">
+
+:::tip
+Tous les fournisseurs d’accès à Internet [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres) ont une politique favorable à l’auto-hébergement.
+:::
+
+| Fournisseur d’accès   | Box/routeur          | [UPnP](https://fr.wikipedia.org/wiki/Universal_Plug_and_Play) | [Port 25 ouvrable](/admin/email) | [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) personnalisable | [IP fixe](/admin/tutorials/domains/dns_dynamicip)                                       | [Non listé sur le DUL](https://en.wikipedia.org/wiki/Dialup_Users_List) |
+|-----------------------|--------------------------|-------------------------------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| OVH                   | Personnel<br/>ou Box OVH | ✔                                                                 | ✔                                   | ✔                                                           | ✔                                                                                        | ✔                                                                   | …                                                                           |
+| [Free](./free)        | Freebox                  | ✔                                                                 | ✔                                   | ✔                                                           | ✔ (sauf IPv6, pas de support, et buggué sur certaines plages d'adresses ipv4)            | ✔                                                                   | ✘                                                                           |
+| [SFR](./sfr)          | Neufbox                  | ✔                                                                 | ✔                                   | ✔/✘                                                         | …                                                                                        | ✔/✘                                                                 | …                                                                           |
+| [Orange](./orange)    | Livebox                  | ✔                                                                 | ✘                                   | ✔ (depuis la Livebox 4)                                     | ✘ (XXX.pro.dns-orange.fr disponible sur les abonnements orange pro)                      | ✘ (en option depuis la Livebox 3 et sur les abonnements orange pro) | …                                                                           |
+| Bouygues<br/>Télécom  | Bbox                     | ✔                                                                 | ✔                                   | ✔                                                           | ✘                                                                                        | …                                              | …                                                                           |
+| Darty                 | Dartybox                 | ✔                                                                 | ✔                                   | ✔                                                           | ✘                                                                                        | …                                              | …                                                                           |
+
+
+
+Pour une liste plus complète et précise, référez-vous à la très bonne documentation de [wiki.auto-hebergement.fr](http://wiki.auto-hebergement.fr/fournisseurs/fai#d%C3%A9tail_des_fai).
+
+:::tip
+[FDN](http://www.fdn.fr) fournit des [VPN](http://www.fdn.fr/-VPN-.html) permettant de rapatrier une (ou plusieurs sur demande) IPv4 fixe et un /48 en IPv6 et ainsi « nettoyer » votre connexion si vous êtes chez l’un des FAI *limitants* du tableau ci-dessus.
+:::
+
+</TabItem>
+<TabItem value="hun" label="Hungary">
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| DIGI Távközlési és Szolgáltató Kft. | Yes | Yes | No. Business only. | No | No. Business only | No. Business only |
+| Telekom Magyarország | Yes | Yes | No | No | No | No |
+
+:::tip
+DIGI allows non-business users to subscribe to their business plan, for roughly the same price as the regular plan. Fix IP is an additional subscription for business plan users.
+:::
+
+</TabItem>
+<TabItem value="irl" label="Ireland">
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| Whizzy Internet | Multiple | Yes | Yes| Yes | Yes | Yes |
+
+</TabItem>
+<TabItem value="swe" label="Sweden">
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| Telia | Multiple | Yes | No. Business only. | Yes | No. Business only. | No. Business only. |
+| Bredbandsbolaget | Multiple | Yes | No. Business only. | Yes | No. Business only. | No. Business only. |
+| Ownit | Multiple | Yes | Yes | N/A? | ? | Yes |
+
+Ownit reserves port 3 and 4 of their router to TV. With a simple call to their hotline, explaining that you want to selfhost, they can reassign one of the ports to be in bridge mode. It means that your server will have its own public fixed IP address, in addition to the modem's.
+
+</TabItem>
+<TabItem value="che" label="Switzerland">
+
+Most of non business IP provided by ISP are blacklisted.
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| Sunrise | Multiple | No | Yes | No | - | - |
+| Swisscom | Multiple | No | Yes | No | No | No |
+| VTX | Multiple | No | Yes | No | - | - |
+
+</TabItem>
+<TabItem value="gbr" label="UK">
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| BT Internet | Yes | - | Yes| - | - | No |
+| Virgin Media | Yes | - | - | - | No | No |
+| ZEN Internet | Yes | - | Yes | - | Yes | Yes |
+| PlusNet | Yes | Yes | Yes | No | Yes, if you raise a ticket | Small one off Charge |
+
+</TabItem>
+</Tabs>
+</TabItem>
+
+<TabItem value="northamerica">
+<Tabs>
+<TabItem value="canada" label="Canada" default>
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| Telus | Multiple | - | No. Extra charge | - | - | No. Extra charge |
+| TekSavvy | Multiple | - | Yes | No | - | No. Extra charge |
+
+</TabItem>
+<TabItem value="usa" label="USA" default>
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| Cox | Multiple | Yes | No. Only for business class customer. | No | No | Yes, as a business class customer |
+| Charter | Multiple | Yes | No. Only for business class customer. | No | No | Yes, as a business class customer |
+| DSLExtreme | Multiple | Yes | Yes | No | No | Yes, extra charge. |
+| AT&T| Multiple | Yes | No. Only for business class customer. | unknown. | unknown. | unknown. |
+| Xfinity (Comcast)| Multiple | Yes | No. Only for business class customer. | unknown. | unknown. |  Yes, as a business class customer|
+
+</TabItem>
+</Tabs>
+</TabItem>
+
+<TabItem value="southamerica">
+<Tabs>
+<TabItem value="brazil" label="Brazil" default>
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| Global Village Telecom | Multiple | Yes | No. Only for Fix IP| No | No | Yes, extra charge. |
+
+</TabItem>
+</Tabs>
+</TabItem>
+
+<TabItem value="oceania">
+</TabItem>
+</Tabs>

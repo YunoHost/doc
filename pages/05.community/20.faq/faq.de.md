@@ -42,7 +42,7 @@ Ja ! YunoHost ermöglicht das Anlegen mehrerer Benutzer und Domain-Namen. Manche
 
 #### Wieso kann ich Anwendungen nicht über die IP-Adresse erreichen ?
 
-Die [SSO](https://github.com/Kloadut/SSOwat/) (Single Sign-on) Technik kann Benutzer nicht richtig authentifizieren, wenn sie auf den Server nur über die IP zugreifen. Wenn Sie keine Möglichkeit haben, die DNS korrekt zu konfigurieren, können Sie als temporäre Notlösung [die `Hosts` Datei (letztes §)](/dns_local_network) auf Ihrem Computer modifizieren.
+Die [SSO](https://github.com/Kloadut/SSOwat/) (Single Sign-on) Technik kann Benutzer nicht richtig authentifizieren, wenn sie auf den Server nur über die IP zugreifen. Wenn Sie keine Möglichkeit haben, die DNS korrekt zu konfigurieren, können Sie als temporäre Notlösung [die `Hosts` Datei (letztes §)](/administer/tutorials/domains/dns_local_network) auf Ihrem Computer modifizieren.
 
 #### Was ist das Geschäftsmodell von YunoHost ?
 
@@ -96,7 +96,7 @@ If you really want to have a feature implemented or documented, or an app packag
 
 #### What is YunoHost's policy regarding the apps included in the official catalog ?
 
-See [this page](/packaging_policy)
+See [this page]((/contribute/packaging_apps/policy))
 
 #### Why won't you include [feature X] ?
 

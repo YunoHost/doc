@@ -32,7 +32,7 @@ Verwenden Sie dazu die [AngryIP](https://angryip.org/download/) Software. Sie br
 !!! - Ihr Server sollte normalerweise auf Port 80 und 443 als lauschend angezeigt werden
 !!! - im Zweifelsfall, einfach `https://192.168.x.y` in Ihrem Browser eingeben, um zu prüfen, ob es sich um YunoHost handelt.
 
-![](image://angryip.png?class=inline)
+![](/img/angryip.png?class=inline)
 
 [/ui-tab]
 [ui-tab title="Mit Ihrem internet-Router / box"]

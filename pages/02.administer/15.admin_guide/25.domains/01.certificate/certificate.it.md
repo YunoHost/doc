@@ -13,7 +13,7 @@ YunoHost fornisce di default un certificato **auto firmato**, cioè il vostro se
 
 Con questa configurazioni chi accede al vostro sito vedrà una schermata del tipo:
 
-![](image://postinstall_error.png)
+![](/img/postinstall_error.png)
 
 Il browser fondamentalmente ci chiede **«Potete fidarvi del server che ospita questo sito?»** e giustamente molti visitatori possono preoccuparsi davanti a tale domanda.
 
@@ -33,21 +33,21 @@ IP del vostro server) e che il vostro sito sia accessibile in HTTP dall'esterno
 
 Recatevi nella sezione 'Domini' dell'interfaccia di amministrazione, scegliete la sezione del vostro dominio, qui troverete un pulsante 'Certificato SSL'
 
-![](image://domain-certificate-button.png)
+![](/img/domain-certificate-button.png)
 
 Nella sezione 'Certificati SSL' potere visualizzare lo stato attuale del
 certificato. Se avete appena creato il dominio, esso disporrà di un certificato
 auto firmato.
 
-![](image://certificate-before-LE.png)
+![](/img/certificate-before-LE.png)
 
 Se il vostro dominio è correttamente configurato è possibile installare il certificato Let's Encrypt con il bottone verde.
 
-![](image://certificate-after-LE.png)
+![](/img/certificate-after-LE.png)
 
 Una volta installato il certificato potete verificarne il corretto funzionamento collegandovi con il vostro browser al dominio in HTTPS. Il certificato verrà automaticamente rinnovato ogni tre mesi.
 
-![](image://certificate-signed-by-LE.png)
+![](/img/certificate-signed-by-LE.png)
 
 [/ui-tab]
 [ui-tab title="Dalla riga di comando"]

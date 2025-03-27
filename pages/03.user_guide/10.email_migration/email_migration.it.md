@@ -7,7 +7,7 @@ routes:
   default: '/email_migration'
 ---
 
-*[Documentazione integrativa del paragrafo relativo alle email di YunoHost](/email)*.
+*[Documentazione integrativa del paragrafo relativo alle email di YunoHost](/administer/admin_guide/email)*.
 
 La migrazione delle proprie mail verso il proprio server YunoHost, può avvenire attraverso l'utilizzo di due programmi appositi : ImapSync o Larch.
 

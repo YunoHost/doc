@@ -7,7 +7,7 @@ routes:
   default: '/XMPP'
 ---
 
-![](image://XMPP_logo.png?resize=100)
+![](/img/XMPP_logo.png?resize=100)
 
 По умолчанию YunoHost поставляется с сервером обмена мгновенными сообщениями Metronome, который реализует [XMPP protocol](https://en.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol) (ранее известный как Jabber).
 
@@ -64,7 +64,7 @@ XMPP-чаты можно сделать безопасными и приватн
 
 Чтобы создать чат-комнату (многопользовательский чат) на вашем сервере YunoHost, используйте идентификатор `chatroomname@muc.yourdomain.tld`.
 
-Чтобы это сработало, вам нужно [добавить соответствующий `muc.` DNS записи](/dns_config) в конфигурации DNS.
+Чтобы это сработало, вам нужно [добавить соответствующий `muc.` DNS записи](/install/post_install/dns_config) в конфигурации DNS.
 
 ## VoIP и видеоконференции
 

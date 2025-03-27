@@ -13,4 +13,4 @@ YunoHost hat ein Administrator-Webinterface. Die andere Möglichkeit, Ihre YunoH
 
 Sie können auf Ihr Administrator-Webinterface unter folgender Adresse zugreifen: <https://example.org/yunohost/admin> (ersetzen Sie `example.org` durch Ihren eigenen Domainnamen)
 
-![](image://webadmin.jpg)
+![](/img/webadmin.jpg)

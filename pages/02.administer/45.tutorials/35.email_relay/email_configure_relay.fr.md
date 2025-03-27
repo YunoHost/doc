@@ -54,7 +54,7 @@ Il suffit d'activer l'option, et de renseigner les champs nécessaires :
 
 ! [fa=exclamation-triangle /] Les mots de passe avec le caractère `#` ne fonctionneront pas proprement à cause d'une limitation de postfix (d'autres caractères sont peut-être interdit, n'hésitez pas à rapporter ce genre de cas pour la mise à jour de cette doc).
 
-![Option-Relais-Smtp](image://relay_smtp_option_webadmin_en.png?resize=800)
+![Option-Relais-Smtp](/img/relay_smtp_option_webadmin_en.png?resize=800)
 
 [/ui-tab]
 [ui-tab title="En ligne de commande"]

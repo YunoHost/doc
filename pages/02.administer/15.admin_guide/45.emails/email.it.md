@@ -17,9 +17,9 @@ La posta elettronica è un ecosistema complesso con un numero elevato di dettagl
 
 Per assicurarsi una configurazione corretta:
 
-- se installate il server a casa e non utilizzate una VPN, assicuratevi che  [il vostro internet provider non blocchi la porta 25](/isp) ;
-- reindirizzate le porte [seguendo questa documentazione](/isp_box_config) ;
-- configurate con cura i record DNS riguardanti il servizio mail seguendo [questa documentazione](/dns_config) ;
+- se installate il server a casa e non utilizzate una VPN, assicuratevi che  [il vostro internet provider non blocchi la porta 25](/install/providers/isp/) ;
+- reindirizzate le porte [seguendo questa documentazione](/install/post_install/isp_box_config) ;
+- configurate con cura i record DNS riguardanti il servizio mail seguendo [questa documentazione](/install/post_install/dns_config) ;
 - provate la configurazione utilizzando gli strumenti di diagnostica (`Webadmin > Diagnostic > Email`). Utilizzate il servizio di [mail-tester.com](https://mail-tester.com), un punteggio di 8~9/10 è un risultato ragionevole.  <small>(attenzione : sono concessi solo 3 test per dominio al giorno)</small>
 
 ## Programmi (client) per la posta elettronica
