@@ -172,6 +172,20 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        additionalLanguages: [
+          'bash',
+          'c',
+          'css',
+          'markup-templating',
+          'django',
+          'lua',
+          'nginx',
+          'php',
+          'ruby',
+          'shell-session',
+          'toml',
+          'yaml'
+        ],
       },
       colorMode: {
         respectPrefersColorScheme: true,
