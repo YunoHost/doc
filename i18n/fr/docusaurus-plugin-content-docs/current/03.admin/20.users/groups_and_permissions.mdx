@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem';
 
 Vous pouvez accéder à l'interface de gestion des *groupes et des permissions* depuis l'admin web en allant dans la section "Utilisateurs" et en cliquant sur le bouton correspondant :
 
-![screenshot of users permission button](/img/button_to_go_to_permission_interface.png)
+![screenshot of users permission button](/img/webadmin/button_to_go_to_permission_interface.png)
 
 ## Gestion des groupes
 
@@ -33,7 +33,7 @@ Vous ne pouvez pas changer le contenu de ces groupes, seulement les permissions 
 <TabItem value="web" label="From the web interface">
 Les groupes existants sont listés en haut de la page *groupes et autorisations*.
 
-![](/img/groups_default-groups.png)
+![](/img/webadmin/groups_default-groups.png)
 
 </TabItem>
 <TabItem value="cli" label="From the command line">
@@ -60,7 +60,7 @@ groups:
 <TabItem value="web" label="From the web interface">
 Pour créer un nouveau groupe, il suffit de cliquer sur le bouton "Nouveau groupe" en haut de la page. Vous ne pouvez choisir qu'un nom formé de lettres (majuscules et minuscules) et d'espaces. Le groupe est créé vide et sans aucune permission.
 
-![screenshot of new group button](/img/groups_button-new-group.png)
+![screenshot of new group button](/img/webadmin/groups_button-new-group.png)
 
 </TabItem>
 <TabItem value="cli" label="From the command line">
@@ -80,11 +80,11 @@ yunohost user group create yolo_crew
 
 Ajoutons un premier utilisateur à ce groupe : dans le panneau du groupe, cliquez sur le bouton "Ajouter un utilisateur" et faites défiler jusqu'à l'utilisateur souhaité, puis cliquez dessus.
 
-![](/img/groups_button-add-user.png)
+![](/img/webadmin/groups_button-add-user.png)
 
 Pour supprimer un utilisateur, cliquez sur la croix à côté de son nom d'utilisateur, dans le panneau du groupe.
 
-![](/img/groups_button-remove-user.png)
+![](/img/webadmin/groups_button-remove-user.png)
 
 </TabItem>
 <TabItem value="cli" label="From the command line">
@@ -124,7 +124,7 @@ groups:
 
 Pour supprimer un groupe, cliquez sur la croix rouge en haut à droite du panneau du groupes. Une confirmation vous sera demandée.
 
-![](/img/groups_button-delete-group.png)
+![](/img/webadmin/groups_button-delete-group.png)
 
 </TabItem>
 <TabItem value="cli" label="From the command line">
@@ -149,7 +149,7 @@ Le mécanisme de permissions permet de restreindre l'accès aux services (par ex
 
 La page des groupes liste les permissions données à chaque groupe, y compris les groupes spéciaux `all_users` et `visitors`.
 
-![](/img/groups_default-with-permissions.png)
+![](/img/webadmin/groups_default-with-permissions.png)
 
 </TabItem>
 <TabItem value="cli" label="From the command line">
@@ -183,11 +183,11 @@ Plus de détails peuvent être affichés en ajoutant l'option `--full` qui affic
 
 Pour ajouter une permission à un groupe, il suffit de cliquer sur le bouton "+" dans le panneau du groupe, de faire défiler jusqu'à la permission souhaitée, puis de cliquer dessus.
 
-![](/img/groups_add-permission-group.png)
+![](/img/webadmin/groups_add-permission-group.png)
 
 Notez que vous pouvez également autoriser un seul utilisateur, en utilisant le panneau spécifique en bas de la page.
 
-![](/img/groups_add-permission-user.png)
+![](/img/webadmin/groups_add-permission-user.png)
 
 </TabItem>
 <TabItem value="cli" label="From the command line">
@@ -229,7 +229,7 @@ Notez que certaines permissions peuvent être « protégées », ce qui signifie
 
 La webadmin émettra un avertissement si vous définissez une permission qui est remplacée par une permission plus large.
 
-![](/img/groups_alerte-permission.png)
+![](/img/webadmin/groups_alerte-permission.png)
 
 ### Montrer/cacher les tuiles dans le portail utilisateur
 

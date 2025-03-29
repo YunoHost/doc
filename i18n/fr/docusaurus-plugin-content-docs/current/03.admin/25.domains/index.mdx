@@ -13,7 +13,7 @@ Chaque fois que vous ajoutez un domaine, il est supposé que vous avez acheté (
 
 Les domaines peuvent être gérés dans la section "Domaine" de la webadmin, ou via la ligne de commande (voir `yunohost domain --help`)
 
-![Une capture d'écran de l'interface de gestion des domaines dans la webadmin avec un bouton "Ajouter un domain" et la liste des domaines](/img/webadmin_domain.png)
+![Une capture d'écran de l'interface de gestion des domaines dans la webadmin avec un bouton "Ajouter un domain" et la liste des domaines](/img/webadmin/webadmin_domain.png)
 
 ## Domaines locaux
 
@@ -34,7 +34,7 @@ De plus, YunoHost utilise un mécanisme de DNS dynamique intégré, de sorte que
 
 Pour obtenir un de ces domaines, il vous suffit de choisir `Je n'ai pas de nom de domaine...` lors de la configuration initiale (post-installation) ou sur la page `Ajouter un domaine`.
 
-![Capture d'écran de la page « Ajouter un domaine » où vous pouvez choisir « Je n'ai pas de nom de domaine »](/img/webadmin_dyndns.png)
+![Capture d'écran de la page « Ajouter un domaine » où vous pouvez choisir « Je n'ai pas de nom de domaine »](/img/webadmin/webadmin_dyndns.png)
 
 :::info
 Pour limiter les coûts de ressources et les abus, chaque instance ne peut avoir qu'un seul de ces domaines à la fois, mais vous pouvez ajouter autant de sous-domaines que vous le souhaitez. Par exemple, si vous choisissez `example.noho.st` vous pouvez plus tard ajouter les domaines `video.example.noho.st` ou `www.example.ynh.noho.st` ou tout autre sous-domaine dont vous pourriez avoir besoin. Dans ce cas, vous devez sélectionner « J'ai déjà un nom de domaine ».
@@ -54,7 +54,7 @@ Cependant, vous devez payer pour cela chaque année (environ 15€/an ... en fon
 
 Si vous avez déjà votre propre domaine, vous pouvez simplement cliquer sur « J'ai déjà un nom de domaine... ». Dans le cas contraire, afin de simplifier et d'automatiser la configuration DNS, nous vous suggérons de l'acheter auprès d'un [registrar dont l'API est supportée par YunoHost] (/install/providers/registrar/).
 
-[Cpture d'écran de la page « Ajouter un domaine » où vous pouvez choisir « J'ai déjà un nom de domaine »](/img/webadmin_domain_owndomain.png)
+[Cpture d'écran de la page « Ajouter un domaine » où vous pouvez choisir « J'ai déjà un nom de domaine »](/img/webadmin/webadmin_domain_owndomain.png)
 
 [En savoir plus sur la configuration de la zone DNS](/install/post_install/dns_config)
 
@@ -65,7 +65,7 @@ Si vous avez déjà votre propre domaine, vous pouvez simplement cliquer sur « 
 Ils n'utilisent pas le protocole DNS mais mDNS (appelé aussi Zeroconf, Bonjour), qui permet leur diffusion sans configuration particulière mais exclusivement sur votre réseau local, ou votre VPN.
 Leur utilisation est donc parfaitement adaptée si vous ne prévoyez pas de rendre une de vos apps disponible sur l'Internet.
 
-[Capture d'écran de la page « Ajouter un domaine » où vous pouvez choisir « J'ai déjà un nom de domaine » et configurer votre domaine se terminant par .local](/img/webadmin_domain_local.png)
+[Capture d'écran de la page « Ajouter un domaine » où vous pouvez choisir « J'ai déjà un nom de domaine » et configurer votre domaine se terminant par .local](/img/webadmin/webadmin_domain_local.png)
 
 :::info
 Le protocole mDNS ne permet pas d'ajouter des sous-domaines. Ainsi `domaine.local` est valide, `sous.domain.local` ne l'est pas.

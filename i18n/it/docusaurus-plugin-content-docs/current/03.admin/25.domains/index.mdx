@@ -13,7 +13,7 @@ Ogni volta che aggiungete un dominio, sia esso vostro o del quale abbiate facolt
 
 I domini possono essere configurati a partire dalla sezione 'Domini' della pagina webadmin, o attraverso la sezione `yunohost domain` da linea di comando.
 
-![L'interfaccia webadmin di gestione dei domini, con il pulsante "Aggiungere un dominio" e l'elenco dei domini](/img/webadmin_domain.png)
+![L'interfaccia webadmin di gestione dei domini, con il pulsante "Aggiungere un dominio" e l'elenco dei domini](/img/webadmin/webadmin_domain.png)
 
 ## 3 tipologie di domini
 
@@ -32,7 +32,7 @@ YunoHost utilizza un sistema di DNS dinamico, assicurando al vostro server di es
 
 Per ottenere un dominio tra quelli proposti, sarà sufficiente scegliere `Non ho ancora un nome di dominio...` durante la configurazione post installazione o in un secondo tempo nella sezione `Aggiungere un dominio` della webadmin/domini.
 
-![Pagina webadmin, sezione domini « Aggiungere un dominio » dove potete scegliere « Non ho ancora un nome di dominio »](/img/webadmin_dyndns.png)
+![Pagina webadmin, sezione domini « Aggiungere un dominio » dove potete scegliere « Non ho ancora un nome di dominio »](/img/webadmin/webadmin_dyndns.png)
 
 :::info
 Al fine di impedire abusi e limitare i costi, una istanza YunoHost può essere configurata con un solo dominio offerto, tuttavia potete aggiungere tutti i suoi sotto domini che desiderate. Ad esempio, se scegliete il dominio `exemple.ynh.fr` potrete in un secondo tempo aggiungere i domini `video.exemple.ynh.fr` o `www.exemple.ynh.fr` o qualsiasi altro sottodominio che possa servirvi. In questo caso dovete scegliere `Possiedo un nome di dominio`.
@@ -52,7 +52,7 @@ Avere un proprio dominio implica però dei costi (a partire da circa 15€ per a
 
 Se già possedete un nome di dominio, dovete semplicemente scegliere "Ho già un nome di dominio…". Nel caso non abbiate ancora un vostro dominio, vi suggeriamo di acquistarlo presso un registrar con [API supportate da YunoHost](/install/providers/registrar/) semplificando così la configurazione del DNS.
 
-![Pagina "Aggiungere un dominio" dove potere scegliere "Ho già un nome di dominio"](/img/webadmin_domain_owndomain.png)
+![Pagina "Aggiungere un dominio" dove potere scegliere "Ho già un nome di dominio"](/img/webadmin/webadmin_domain_owndomain.png)
 
 [Ulteriori informazioni sulla zona DNS](/install/post_install/dns_config)
 
@@ -63,7 +63,7 @@ Dalla versione v4.3 di YunoHost, i domini che terminano con `.local` sono pienam
 Questi non utilizzano il protocollo DNS ma il protocollo mDNS (chiamato anche Zeroconf, Bonjour), che permette la loro diffusione senza particolari configurazioni ma esclusivamente sulla LAN o sulla vostra VPN.
 Sono quindi perfettamente utilizzabili se non dovete esporre le vostre app in internet.
 
-![Pagina "Aggiungere un dominio" dove potete scegliere "Ho già un nome di dominio" e configurare un dominio che termina con .local](/img/webadmin_domain_local.png)
+![Pagina "Aggiungere un dominio" dove potete scegliere "Ho già un nome di dominio" e configurare un dominio che termina con .local](/img/webadmin/webadmin_domain_local.png)
 
 :::info
 Il protocollo mDNS non permette l'aggiunta di sotto domini. Quindi `miodominio.local` sarà valido, `sotto.miodominio.local` non lo sarà.

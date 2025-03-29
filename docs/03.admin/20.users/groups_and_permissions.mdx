@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 You can access the *groups and permissions* management interface from the webadmin
 by going into the 'Users' section and clicking the corresponding button:
 
-![screenshot of users permission button](/img/button_to_go_to_permission_interface.png)
+![screenshot of users permission button](/img/webadmin/button_to_go_to_permission_interface.png)
 
 ## Managing groups
 
@@ -34,7 +34,7 @@ The content of those groups cannot be changed, only the permissions given to the
 <TabItem value="web" label="From the web interface">
 The existing groups are listed at the top of the *groups and permissions* page.
 
-![](/img/groups_default-groups.png)
+![](/img/webadmin/groups_default-groups.png)
 
 </TabItem>
 <TabItem value="cli" label="From the command line">
@@ -62,7 +62,7 @@ groups:
 
 To create a new group, simply click on the "New Group" button at the top of the page. You may only choose a name formed with letters (uper- and lowercase) and spaces. The group is created empty and without any permission.
 
-![screenshot of new group button](/img/groups_button-new-group.png)
+![screenshot of new group button](/img/webadmin/groups_button-new-group.png)
 
 </TabItem>
 <TabItem value="cli" label="From the command line">
@@ -83,11 +83,11 @@ yunohost user group create yolo_crew
 
 Let's add a first to this group: in the group panel, click the button "add a user" and scroll to the desired user, then click on it.
 
-![](/img/groups_button-add-user.png)
+![](/img/webadmin/groups_button-add-user.png)
 
 To remove a user, click on the cross next to their username, in the group panel.
 
-![](/img/groups_button-remove-user.png)
+![](/img/webadmin/groups_button-remove-user.png)
 
 </TabItem>
 <TabItem value="cli" label="From the command line">
@@ -127,7 +127,7 @@ groups:
 
 To delete a group, click on the red cross on the top right of the group panel. You will be asked for confirmation.
 
-![](/img/groups_button-delete-group.png)
+![](/img/webadmin/groups_button-delete-group.png)
 
 </TabItem>
 <TabItem value="cli" label="From the command line">
@@ -152,7 +152,7 @@ The permission mechanism allow to restrict access to services (for example mail,
 
 The groups page lists the permissions given to each group, including the special groups `all_users` and `visitors`.
 
-![](/img/groups_default-with-permissions.png)
+![](/img/webadmin/groups_default-with-permissions.png)
 
 </TabItem>
 <TabItem value="cli" label="From the command line">
@@ -186,11 +186,11 @@ More details can be displayed by adding the `--full` option which will display t
 
 To add a permission to a group, simply click the "+" button in the group panel, scroll to the desired permission, then click on it.
 
-![](/img/groups_add-permission-group.png)
+![](/img/webadmin/groups_add-permission-group.png)
 
 Note that you can also allow a single user, by using the specific panel at the bottom of the page.
 
-![](/img/groups_add-permission-user.png)
+![](/img/webadmin/groups_add-permission-user.png)
 
 </TabItem>
 <TabItem value="cli" label="From the command line">
@@ -232,7 +232,7 @@ Note that some permissions may be "protected", meaning that you won't be able to
 
 The webadmin will issue a warning if you set a permission that is superseded by a wider permission.
 
-![](/img/groups_alerte-permission.png)
+![](/img/webadmin/groups_alerte-permission.png)
 
 ### Hide/display specific tiles in the user portal
 
