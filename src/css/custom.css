@@ -25,11 +25,11 @@
 }
 
 [data-theme='light'] ::selection {
-  background-color: color-mix(in hsl, var(--ifm-color-primary), white 70%);
+  background-color: color-mix(in srgb, var(--ifm-color-primary), white 60%);
 }
 
 [data-theme='dark'] ::selection {
-  background-color: color-mix(in hsl, var(--ifm-color-primary), black 70%);
+  background-color: color-mix(in hsl, var(--ifm-color-primary), black 50%);
 }
 
 [data-theme='light'] .footer {
