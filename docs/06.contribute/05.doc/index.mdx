@@ -52,78 +52,45 @@ You can serve those files locally using `yarn serve`
 
 You can either copy the built files to a static file server (using [My Webapp](https://apps.yunohost.org/app/my_webapp)) or [deploy the site to Github Pages](https://docusaurus.io/docs/deployment#deploying-to-github-pages).
 
-## Contribute
+## Contents of the repository
 
-The structure of the repository is described below:
+We are following the standard Docusaurus structure:
 
-```text
-+-- config
-   +-- site.yaml
-   +-- system.yaml
-   +-- themes
-       +-- yunohost-docs.yaml
-          # Some settings for the documentation theme
-+-- images
-   # Contains the images used in the documentation pages.
-+-- pages
-   # The directory containing the documentation pages.
-   # The pages hierarchy is reflected by the directory hierarchy.
-   +-- 00.home
-   +-- 01.administer
-   +-- 02.applications
-   +-- 03.community
-   +-- 04.contribute
-+-- themes
-    +-- learn4
-    +-- yunohost-docs
-       # Contains the theme's code, which extends Learn4 theme's code
-+-- .gitignore
-    # Contains the instructions to not send sensitive
-    # or useless files over to the Git repository
-+-- README.md
-```
-
-## Grav header
-
-Each page starts with a header that gives instructions to Grav on how to process them. Let us have a look into the header of this page:
-
-```text
----
-title: Write documentation
-template: docs
-taxonomy:
-    category: docs
-routes:
-  default: '/doc'
----
-
-```
-
-1. The header starts and ends with a line containing `---`
-2. The `title` key manages the first heading title of the page, its name in the navigation menu on the left, and its name in the browser tab
-3. `template` and `taxonomy` keys should always be left as is. They instruct Grav to use the proper theme and order the pages properly.
-4. `routes`' `default` key makes the page available by default on `https://yunohost.org/docs/doc` instead of needing to reaching it on `https://yunohost.org/docs/contribute/doc`, which is where it is stored in the directory hierarchy.
-
-## Syntax
-
-You can use Markdown syntax, refer to the [documentation](/contribute/doc/markdown_guide) for further information.
-
-:::note
-Note that language codes are not to be included at the beginning of the links to other documentation pages: `/en`, `/fr`, etc. are superfluous.
-:::
-
-To improve Markdown capabilities, additional plugins are installed in Grav. You can refer to their own documentation on GitHub to see how to use them.
-
-```text
-anchors
-external_links
-flex-objects
-highlight
-image-captions
-markdown-notices
-presentation
-presentation-deckset
-shortcode-core
+```bash
+│   # The main docs
+├── docs/
+│
+│   # The translations
+├── i18n
+│   ╰── *
+│       ├── code.json
+│       ├── docusaurus-theme-classic
+│       │   ├── footer.json
+│       │   ╰── navbar.json
+│       ╰── docusaurus-plugin-content-docs
+│           │   # The same content as docs/
+│           ├── current/
+│           ╰── current.json
+│
+│   # The configuration files
+├── docusaurus.config.js
+├── package.json
+├── redirects.js
+├── sidebars.js
+├── yarn.lock
+│
+│   # Autogeneration scripts and templates
+├── scripts
+│   ╰── generate_docs.sh
+│
+│   # Custom Docusaurus code and theming
+├── src
+│   ├── components/
+│   ├── css/
+│   ╰── theme/
+│
+│   # Images, etc
+╰── static/
 ```
 
 ## Special pages
