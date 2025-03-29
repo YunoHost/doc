@@ -5,7 +5,7 @@ title: Emails
 import Highlight from '@site/src/components/Highlight';
 import {HighlightWebAdmin, HighlightDiagnosis, HighlightApplications, HighlightAppInstall} from '@site/src/components/Highlight';
 
-YunoHost wird mit einem kompletten Mail-Stack geliefert, der es Ihnen ermöglicht, Ihren eigenen E-Mail-Server zu hosten und somit Ihre eigenen E-Mail-Adressen in ```irgendjemand@deine.domain.tld``` zu haben.
+YunoHost wird mit einem kompletten Mail-Stack geliefert, der es Ihnen ermöglicht, Ihren eigenen E-Mail-Server zu hosten und somit Ihre eigenen E-Mail-Adressen in `irgendjemand@deine.domain.tld` zu haben.
 
 Der Mail-Stack enthält einen SMTP-Server (Postfix), einen IMAP-Server (Dovecot), einen Antispam-Server (rspamd) und eine DKIM-Konfiguration.
 
@@ -28,9 +28,9 @@ Desktop- und Mobil-Clients haben den Vorteil, dass sie Ihre E-Mails auf das Ger�
 
 ## Konfigurieren von E-Mail-Aliasen und automatische Weiterleitungen
 
-Mail-Aliase und Weiterleitungen können für jeden Benutzer konfiguriert werden. Beispielsweise wird für den ersten,  auf dem Server angelegten Benutzer automatisch ein Alias ```root@the.domain.tld``` konfiguriert.  Das bedeutet das eine an diese Adresse gesendete E-Mail im Posteingang des ersten Benutzers endet. Automatische Weiterleitungen können konfiguriert werden, z.B. wenn ein Benutzer kein zusätzliches E-Mail-Konto einrichten möchte und nur E-Mails vom Server, z.B. auf seine E-Mail-Adresse, empfangen möchte.
+Mail-Aliase und Weiterleitungen können für jeden Benutzer konfiguriert werden. Beispielsweise wird für den ersten,  auf dem Server angelegten Benutzer automatisch ein Alias `root@the.domain.tld` konfiguriert.  Das bedeutet das eine an diese Adresse gesendete E-Mail im Posteingang des ersten Benutzers endet. Automatische Weiterleitungen können konfiguriert werden, z.B. wenn ein Benutzer kein zusätzliches E-Mail-Konto einrichten möchte und nur E-Mails vom Server, z.B. auf seine E-Mail-Adresse, empfangen möchte.
 
-Eine weitere Funktion, die nur wenigen Leuten bekannt ist, ist die Verwendung von Suffixen, die mit "+" beginnen. Zum Beispiel landen E-Mails, die an ```johndoe+buchung@die.domain.tld``` gesendet werden, automatisch im Ordner ```buchung``` (Kleinbuchstaben) der Mailbox von John Doe oder im Posteingang von John Doe, wenn der Ordner ```buchung``` nicht existiert. Es ist eine praktische Technik, z.B. eine E-Mail-Adresse auf einer Website anzugeben und dann die von dieser Website kommende E-Mail einfach (über automatische Filter) zu sortieren.
+Eine weitere Funktion, die nur wenigen Leuten bekannt ist, ist die Verwendung von Suffixen, die mit "+" beginnen. Zum Beispiel landen E-Mails, die an `johndoe+buchung@die.domain.tld` gesendet werden, automatisch im Ordner `buchung` (Kleinbuchstaben) der Mailbox von John Doe oder im Posteingang von John Doe, wenn der Ordner `buchung` nicht existiert. Es ist eine praktische Technik, z.B. eine E-Mail-Adresse auf einer Website anzugeben und dann die von dieser Website kommende E-Mail einfach (über automatische Filter) zu sortieren.
 
 ## Was passiert wenn mein Server nicht erreichbar ist?
 
