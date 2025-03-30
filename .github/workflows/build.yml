@@ -39,7 +39,7 @@ jobs:
   deploy:
     name: Deploy the new doc
     needs: build
-    if: github.ref == 'refs/heads/docusaurus'
+    if: ${{ github.ref == 'refs/heads/docusaurus' || github.ref == 'refs/heads/next' }}
     runs-on: ubuntu-latest
     steps:
       - name: Download the built docs artifact
@@ -48,13 +48,9 @@ jobs:
           name: docs
           path: docs
 
-      - name: list
-        run: ls -lah
-
       - name: Install tools
         run: |
           sudo apt install sshpass rsync
-
 
       - name: Deploy
         run: sshpass -p ${{ secrets.DOC_SFTP_PWD }}
