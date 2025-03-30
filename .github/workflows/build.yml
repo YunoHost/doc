@@ -28,7 +28,7 @@ jobs:
         run: yarn
 
       - name: Build docs
-        run: yarn build
+        run: NEXT=yes yarn build
 
       - name: Archive the docs
         uses: actions/upload-artifact@v4

@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here
-  url: 'https://doc.yunohost.org/',
+  url: process.env.NEXT ? 'https://nextdoc.yunohost.org/' : 'https://doc.yunohost.org/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -104,7 +104,7 @@ const config = {
         hideOnScroll: true,
         logo: {
           alt: 'Yunohost Logo',
-          src: 'img/YunoHost_logo_vertical.png',
+          src: 'img/icons/logo-ynh_horizontal.png',
         },
         items: [
           // {to: '/docs', label: 'Docs', position: 'left'},
