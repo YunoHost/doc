@@ -100,8 +100,9 @@ const config = {
       respectPrefersColorScheme: true,
     },
     announcementBar: {
-      id: 'beta-doc',
-      content: '🛠️ This doc is in beta, please report any issues!'
+      id: 'beta-docusaurus',
+      content: '🛠️ This doc is in beta, please report any issues!',
+      backgroundColor: 'darkOrange'
     },
     navbar: {
       title: 'Docs',
