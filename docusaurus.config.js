@@ -16,14 +16,7 @@ const config = {
 
   // Set the production url of your site here
   url: process.env.NEXT ? 'https://nextdoc.yunohost.org/' : 'https://doc.yunohost.org/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'YunoHost', // Usually your GitHub org/user name.
-  projectName: 'doc', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
@@ -94,108 +87,107 @@ const config = {
     require.resolve("./src/YunoHostImagesListScript.js")
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: 'Docs',
-        hideOnScroll: true,
-        logo: {
-          alt: 'Yunohost Logo',
-          src: 'img/icons/logo-ynh_horizontal.png',
-        },
-        items: [
-          // {to: '/docs', label: 'Docs', position: 'left'},
-          // {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            type: "search",
-            position: "right"
-          },
-          {
-            href: 'https://github.com/yunohost/doc',
-            label: 'GitHub',
-            position: 'right',
-          },
-          {
-            type: 'docsVersionDropdown',
-            position: 'right',
-
-          },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Website',
-                href: 'https://yunohost.org/',
-              },
-              {
-                label: 'Forum',
-                href: 'https://forum.yunohost.org/',
-              },
-            ],
-          },
-          {
-            title: 'Contribute',
-            items: [
-              {
-                label: 'Donate',
-                href: 'https://donate.yunohost.org/',
-              },
-              {
-                label: 'GitHub (core)',
-                href: 'https://github.com/YunoHost',
-              },
-              {
-                label: 'GitHub (apps)',
-                href: 'https://github.com/YunoHost-Apps',
-              },
-              {
-                label: 'Translate',
-                href: 'https://translate.yunohost.org/',
-              },
-            ],
-          },
-        ],
-        copyright: `Build with Docusaurus for YunoHost`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-        additionalLanguages: [
-          'bash',
-          'c',
-          'css',
-          'markup-templating',
-          'django',
-          'lua',
-          'nginx',
-          'php',
-          'ruby',
-          'shell-session',
-          'toml',
-          'yaml'
-        ],
-      },
-      colorMode: {
-        respectPrefersColorScheme: true,
-      },
-      docs: {
-        sidebar: {
-          autoCollapseCategories: true,
-        }
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+  themeConfig: {
+    // Replace with your project's social card
+    image: 'img/docusaurus-social-card.jpg',
+    docs: {
+      sidebar: {
+        autoCollapseCategories: true,
       }
-    }),
+    },
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
+    navbar: {
+      title: 'Docs',
+      hideOnScroll: true,
+      logo: {
+        alt: 'Yunohost Logo',
+        src: 'img/icons/logo-ynh_horizontal.png',
+      },
+      items: [
+        // {to: '/docs', label: 'Docs', position: 'left'},
+        // {to: '/blog', label: 'Blog', position: 'left'},
+        {
+          type: "search",
+          position: "right"
+        },
+        {
+          href: 'https://github.com/yunohost/doc',
+          label: 'GitHub',
+          position: 'right',
+        },
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Website',
+              href: 'https://yunohost.org/',
+            },
+            {
+              label: 'Forum',
+              href: 'https://forum.yunohost.org/',
+            },
+          ],
+        },
+        {
+          title: 'Contribute',
+          items: [
+            {
+              label: 'Donate',
+              href: 'https://donate.yunohost.org/',
+            },
+            {
+              label: 'GitHub (core)',
+              href: 'https://github.com/YunoHost',
+            },
+            {
+              label: 'GitHub (apps)',
+              href: 'https://github.com/YunoHost-Apps',
+            },
+            {
+              label: 'Translate',
+              href: 'https://translate.yunohost.org/',
+            },
+          ],
+        },
+      ],
+      copyright: `Build with Docusaurus for YunoHost`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+      additionalLanguages: [
+        'bash',
+        'c',
+        'css',
+        'markup-templating',
+        'django',
+        'lua',
+        'nginx',
+        'php',
+        'ruby',
+        'shell-session',
+        'toml',
+        'yaml'
+      ],
+    },
+  },
 };
 
 export default config;
