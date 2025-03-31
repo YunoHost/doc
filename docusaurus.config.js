@@ -99,6 +99,10 @@ const config = {
     colorMode: {
       respectPrefersColorScheme: true,
     },
+    announcementBar: {
+      id: 'beta-doc',
+      content: '🛠️ This doc is in beta, please report any issues!'
+    },
     navbar: {
       title: 'Docs',
       hideOnScroll: true,
