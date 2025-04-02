@@ -1,0 +1,6 @@
+label: Administration guide
+link:
+  type: generated-index
+  title: Administration guide
+  slug: admin
+  description: Learn about self-hosting, how to install and use YunoHost

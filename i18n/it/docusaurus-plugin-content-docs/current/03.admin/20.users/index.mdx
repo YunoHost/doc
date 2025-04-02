@@ -1,0 +1,48 @@
+---
+title:  Gli utenti e il SSO
+---
+
+import Figure from '@site/src/components/Figures';
+
+## Utenti
+
+Gli utenti sono gli esseri umani che hanno l'accesso alle applicazione e agli altri servizi sul tuo server. L'amministratore può aggiungere e gestire degli utenti tramite l'amministrazione web (nella categoria Utenti) o con la linea di comando (vedi `yunohost user --help`). Dopo queste operazioni, gli utenti avranno un indirizzo mail personale (scelto dall'amministratore), e potranno connettersi al portale dell'utente (SSO) per accedere alle applicazioni di cui hanno i permessi e configurare altri parametri.
+
+Il primo utente creato avrà automaticamente l'alias mail `root@main.domani.tld` e `admin@main.domani.tld`, in modo che le mail inviate a quegli indirizzi saranno ricevute nella casella mail di questo utente.
+
+:::caution
+Fai attenzione a chi dai l'accesso al tuo server. In termini di sicurezza ciò aumenta considerevolmente la superficie di attacco di chi vorrebbe compromettere il server in un modo o nell'altro.
+:::
+
+## Il portale dell'utente, o SSO
+
+![User panel screenshot](/img/user_panel.jpg)
+Il portale dell'utente, chiamato anche SSO per 'Single Sign On', permette all'utente di navigare facilmente tra le diverse applicazioni a cui può accedere. In particolare, il termine 'Single Sign On' in pratica fa sì che l'utente debba connettersi al portale per essere automaticamente connesso a tutte le applicazioni che hanno bisogno di un'autenticazione (a comunque quelle che sono integrate con SSO/LDAP, dove ciò non sia tecnicamente complicato o non fosse possibile del tutto).
+
+Nel portale, gli utilizzatori possono anche cliccare sull'avatar in alto a sinistra per configurare altri parametri come il loro nome, l'alias per le mail, l'inoltro automatico delle mail, o per cambiare la propria password.
+
+:::info
+Devi essere consapevole che il SSO può essere caricato solo dal nome di dominio (per esempio `https://the.domani.tld/yunohost/sso`), e non con l'indirizzo IP del server (per esempio `https://11.22.33.44/yunohost/sso`), al contrario dell'amministratore web! Può creare confusione, ma è necessario per ragioni tecniche. Se sei in una situazione dove è necessario accedere a SSO senza avere i DNS configurati correttamente per diverse ragioni, puoi avere la possibilità di modificare il tuo `/etc/hosts` come descritto in [questa pagina](/admin/tutorials/domains/dns_local_network).
+:::
+
+## Creating new users
+
+Only the administrator can create new users. From the webadmin, open the `Users` menu and click on the `+ New user` main button. Fill in all the whole form.
+
+Users are created with an associated email address with the format `username@domain.tld`. Additional email aliases and email forwards can later be added by the admin and the user.
+
+The password should be at least 8 characters - though it is good practice to use longer password (i.e. a passphrase) and/or to use various kind of characters (uppercase, lowercase, digits and special characters).
+
+Finalize the user creation by clicking on the `Save` button.
+
+<Figure caption="From the main menu of the webadmin, open `Users`." alt="Main menu" src="/img/create_user_1.png"/>
+<Figure caption="From the top of the users list, click on `+ New user`." alt="Users list" src="/img/create_user_2.png"/>
+<Figure caption="Fill in the form." alt="User creation form" src="/img/create_user_3.png"/>
+
+## User groups and permissions
+
+See [this dedicated page](/admin/users/groups_and_permissions).
+
+## Accesso SSH
+
+See [this dedicated page](/admin/command_line).

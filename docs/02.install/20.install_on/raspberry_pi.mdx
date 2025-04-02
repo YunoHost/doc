@@ -1,0 +1,74 @@
+---
+title: On a Raspberry Pi
+description: Our preferred baked boards
+# pagination_next: administration-guide/initial-setup/index
+sidebar_position: 1
+sidebar_custom_props:
+  doc_card_image: /img/icons/raspberrypi.png
+---
+
+import Figure from '@site/src/components/Figures';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import YunoHostImagesList from '@site/src/components/YunoHostImagesList';
+import Link from '@docusaurus/Link';
+
+## <FAIcon icon="fa-list-alt"/> Pre-requisites
+
+- A Raspberry Pi 3, 4 or 5
+  - A power supply (either an adapter or a MicroUSB cable) for your board;
+  - A microSD card: 16GB capacity (at least), [class "A1"](https://en.wikipedia.org/wiki/SD_card#Class) highly recommended (such as [this SanDisk A1 card](https://www.amazon.fr/SanDisk-microSDHC-Adaptateur-homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/));
+  - An ethernet cable (RJ-45) to connect your server to your router.
+- A [reasonable ISP](/install/providers/isp/), preferably with a good and unlimited upstream bandwidth
+- A computer to read this guide, flash the image and access your server.
+
+## <FAIcon icon="fa-download" /> Download the YunoHost image
+
+:::tip
+If you wish to check the validity of our signed images, you can [download our public key](https://forge.yunohost.org/keys/yunohost_bookworm.asc).
+:::
+
+<YunoHostImagesList hardware="rpi345"/>
+
+## <FAIcon icon="fa-sim-card"/> Flash the YunoHost image
+
+Now that you downloaded the image of YunoHost, you should flash it on a microSD card
+
+<Tabs>
+  <TabItem value="etcher" label="With Ether (recommended)">
+    Download <Link to="https://www.balena.io/etcher/" target="_blank">Etcher</Link> for your operating system and install it.
+
+    Plug your SD card, select your image and click "Flash"
+
+    ![Etcher](/img/softwares/etcher.gif)
+  </TabItem>
+  <TabItem value="usbimager" label="With USBimager">
+    Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.
+
+    Plug your SD card, select your image and click "Write"
+
+    ![USBimager](/img/softwares/usbimager.png)
+  </TabItem>
+  <TabItem value="dd" label="With dd">
+    If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.
+
+    Then run:
+
+    ```bash
+    # Replace /dev/mmcblk0 if the name of your device is different...
+    dd if=/path/to/yunohost.img of=/dev/mmcblk0
+    ```
+  </TabItem>
+</Tabs>
+
+## <FAIcon icon="fa-plug"/> Power up the board
+
+- Plug the ethernet cable (one side on your main router, the other on your board).
+  - For advanced users willing to configure the board to connect to WiFi instead, see
+  for example [here](https://www.raspberrypi.com/documentation/computers/configuration.html#connect-to-a-wireless-network)
+  ([or here prior to YunoHost12/bookworm](https://www.raspberryme.com/configurer-le-wifi-sur-un-pi-manuellement-a-laide-de-wpa_supplicant-conf/).
+- Plug the SD card in your board
+- (Optional) You can connect a screen+keyboard directly on your board if you want to troubleshoot the boot process or if you're more comfortable to "see what happens" or want a direct access to the board.
+- Power up the board
+- Wait a couple minutes while the board autoconfigure itself during the first boot
+- Make sure that your computer (desktop/laptop) is connected to the same local network (i.e. same internet box) as your server.

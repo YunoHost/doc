@@ -1,8 +1,0 @@
-streams:
- schemes:
-   theme:
-     type: ReadOnlyStream
-     prefixes:
-       '':
-         - user/themes/yunohost-docs
-         - user/themes/learn4
