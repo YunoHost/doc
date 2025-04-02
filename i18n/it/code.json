@@ -309,5 +309,8 @@
   "theme.tags.tagsPageTitle": {
     "message": "Etichette",
     "description": "The title of the tag list page"
+  },
+  "You will be redirected soon to {description}. If that doesn't work, please go to: ": {
+    "message": "You will be redirected soon to {description}. If that doesn't work, please go to: "
   }
 }
