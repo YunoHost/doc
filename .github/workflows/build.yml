@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - docusaurus
+      - next
   pull_request:
 
 concurrency:
@@ -13,6 +13,10 @@ concurrency:
 
 jobs:
   build:
+    env:
+      # This variable allow to build for either doc.yunohost.org or nextdoc.yunohost.org
+      BUILD_FOR: ${{ github.ref == 'refs/heads/main' && 'main' || 'next' }}
+
     name: Build Docs
     timeout-minutes: 30
     runs-on: ubuntu-latest
@@ -28,7 +32,7 @@ jobs:
         run: yarn
 
       - name: Build docs
-        run: NEXT=yes yarn build
+        run: yarn build
 
       - name: Archive the docs
         uses: actions/upload-artifact@v4
@@ -39,8 +43,12 @@ jobs:
   deploy:
     name: Deploy the new doc
     needs: build
-    if: ${{ github.ref == 'refs/heads/docusaurus' || github.ref == 'refs/heads/next' }}
     runs-on: ubuntu-latest
+
+    if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/next' }}
+    env:
+      APP: ${{ github.ref == 'refs/heads/main' && 'my_webapp' || 'my_webapp__4' }}
+
     steps:
       - name: Download the built docs artifact
         uses: actions/download-artifact@v4
@@ -56,4 +64,4 @@ jobs:
         run: sshpass -p ${{ secrets.DOC_SFTP_PWD }}
           rsync -avz --delete
           -e "ssh -o StrictHostKeyChecking=no"
-          docs/ my_webapp@nextdoc.yunohost.org:~/www/
+          docs/ ${APP}@apicius.yunohost.org:~/www/

@@ -8,6 +8,12 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+
+function getUrl() {
+  const isMain = process.env.BUILD_FOR === 'main';
+  return isMain ? 'https://doc.yunohost.org/' : 'https://nextdoc.yunohost.org/';
+}
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Yunohost',
@@ -15,7 +21,7 @@ const config = {
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here
-  url: process.env.NEXT ? 'https://nextdoc.yunohost.org/' : 'https://doc.yunohost.org/',
+  url: getUrl(),
   baseUrl: '/',
 
   onBrokenLinks: 'throw',
