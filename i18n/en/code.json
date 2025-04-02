@@ -4,15 +4,15 @@
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.NotFound.title": {
-    "message": "Error 404",
+    "message": "Page Not Found",
     "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
-    "message": "Woops. Looks like this page doesn't exist... yet!",
+    "message": "We could not find what you were looking for.",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "{heartIcon} You can contribute to the documentation by {editButton}!",
+    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.admonition.note": {
@@ -309,5 +309,8 @@
   "theme.docs.DocCard.categoryDescription.plurals": {
     "message": "1 item|{count} items",
     "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "You will be redirected soon to {description}. If that doesn't work, please go to: ": {
+    "message": "You will be redirected soon to {description}. If that doesn't work, please go to: "
   }
 }
