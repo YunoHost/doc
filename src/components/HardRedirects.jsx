@@ -3,7 +3,6 @@ import Layout from '@theme/Layout';
 import Head from '@docusaurus/Head';
 import {useDoc} from '@docusaurus/plugin-content-docs/client';
 import Translate, {translate} from '@docusaurus/Translate';
-import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 
 export default function HardRedirect({url}) {
