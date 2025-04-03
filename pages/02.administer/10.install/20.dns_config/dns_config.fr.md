@@ -28,7 +28,7 @@ domaine via l'interface de votre registrar.
 YunoHost fournit une configuration DNS recommandée, accessible via :
 
 - la webadmin, dans Domaines > votre.domain.tld > Configuration DNS ;
-- ou la ligne de commande, `yunohost domain dns-conf votre.domaine.tld`
+- ou la ligne de commande, `yunohost domain dns suggest votre.domaine.tld`
 
 Pour certains besoins ou installations particulières, et si vous savez ce que
 vous faites, il vous faudra peut-être modifier cette recommandation ou ajouter

@@ -20,7 +20,7 @@ Si utilizas un [dominio automático](/dns_nohost_me) provecho por el Proyecto Yu
 YunoHost provee una configuración DNS recomendada, accesible vía :
 
 - la webadmin, en Dominios > tu.dominio.tld > Configuración DNS ;
-- o la linea de comando, `yunohost domain dns-conf tu.dominio.tld`
+- o la linea de comando, `yunohost domain dns suggest tu.dominio.tld`
 
 Para algunas necesidades o instalaciones particulares, y si sabes lo que estás haciendo, a lo mejor tendrás que modificar esa recomendación o añadir otros registros (e.g. para administrar subdominios).
 
@@ -28,7 +28,7 @@ La configuración recomendada típicamente se parece a :
 
 ```bash
 #
-# Registros IPv4/IPv6 básicos 
+# Registros IPv4/IPv6 básicos
 #
 @ 3600 IN A 111.222.33.44
 * 3600 IN A 111.222.33.44
