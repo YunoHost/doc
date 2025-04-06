@@ -1,26 +1,20 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 
-function getUrl() {
+function getUrl() : str {
   const isMain = process.env.BUILD_FOR === 'main';
   return isMain ? 'https://doc.yunohost.org/' : 'https://nextdoc.yunohost.org/';
 }
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
+const config: Config = {
   title: 'Yunohost',
   tagline: 'Why you no host?',
   favicon: 'img/favicon.png',
 
-  // Set the production url of your site here
   url: getUrl(),
   baseUrl: '/',
 
@@ -33,9 +27,6 @@ const config = {
     experimental_faster: true,
   },
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['ar', 'ca', 'de', 'en', 'es', 'fr', 'it', 'oc', 'ru'],
@@ -49,35 +40,17 @@ const config = {
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
-          sidebarPath: './sidebars.js',
-          // To enable the editing of the *localized* files
-          editLocalizedFiles : true,
+          sidebarPath: './sidebars.ts',
+          editLocalizedFiles: true,
           routeBasePath: '/',
-          // TODO: Update this when merging the PR
           editUrl: 'https://github.com/YunoHost/doc/tree/docusaurus',
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   feedOptions: {
-        //     type: ['rss', 'atom'],
-        //     xslt: true,
-        //   },
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        //   // Useful options to enforce blogging best practices
-        //   onInlineTags: 'warn',
-        //   onInlineAuthors: 'warn',
-        //   onUntruncatedBlogPosts: 'warn',
-        // },
         theme: {
           customCss: './src/css/custom.css',
         },
-      }),
+      } satisfies Preset.Options,
     ],
   ],
 
@@ -93,22 +66,16 @@ const config = {
     require.resolve("./src/YunoHostImagesListScript.js")
   ],
 
-  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
     // Replace with your project's social card
     image: 'https://yunohost.org/assets/img/portal_simple_dark.jpg',
-    docs: {
-      sidebar: {
-        autoCollapseCategories: true,
-      }
-    },
     colorMode: {
       respectPrefersColorScheme: true,
     },
     announcementBar: {
       id: 'beta-docusaurus',
       content: '🛠️ This doc is in beta, please report any issues!',
-      backgroundColor: 'darkOrange'
+      backgroundColor: 'darkOrange',
     },
     navbar: {
       title: 'Docs',
@@ -122,7 +89,7 @@ const config = {
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
           type: "search",
-          position: "right"
+          position: "right",
         },
         {
           href: 'https://github.com/yunohost/doc',
@@ -132,7 +99,6 @@ const config = {
         {
           type: 'docsVersionDropdown',
           position: 'right',
-
         },
         {
           type: 'localeDropdown',
@@ -195,10 +161,10 @@ const config = {
         'ruby',
         'shell-session',
         'toml',
-        'yaml'
+        'yaml',
       ],
     },
-  },
+  } satisfies Preset.ThemeConfig,
 };
 
 export default config;

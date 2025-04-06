@@ -1,9 +1,8 @@
-// @ts-check
+import { Options } from '@docusaurus/plugin-client-redirects';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-
-const redirects_from_grav = [
+const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/admindoc',                                to: '/admin', },
     { from: '/admin_guide',                             to: '/admin/intro', },
     { from: '/admin_interface',                         to: '/admin/webadmin', },
@@ -105,13 +104,10 @@ const redirects_from_grav = [
     { from: '/whatsyunohost',                           to: '/overview/what_is_yunohost', },
     { from: '/email_configure_client',                  to: '/user/email_clients', },
     { from: '/email_migration',                         to: '/user/email_migration', },
-]
+];
 
-
-/** @type {import('@docusaurus/plugin-client-redirects').Options} */
-
-const redirects = {
-    redirects: redirects_from_grav.concat([]),
+const redirects: Options = {
+    redirects: [...redirects_from_grav],
 };
 
 export default redirects;
