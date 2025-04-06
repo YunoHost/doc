@@ -13,7 +13,7 @@ Cliquez sur l'onglet **Zone DNS**, puis sur **Ajouter une entrée** :
 
 ![OVH website screenshot](/img/providers/ovh_dns_zone.png?resize=800)
 
-Il faut maintenant ajouter les redirections DNS telles que spécifiées par la [configuration standard de la zone DNS](/install/post_install/dns_config)
+Il faut maintenant ajouter les redirections DNS telles que spécifiées par la [configuration standard de la zone DNS](/admin/install/post_install/dns_config)
 
 Cliquez sur « Change in text format », conservez les quatre premières lignes :
 
@@ -24,7 +24,7 @@ $TTL 3600
                          IN NS     ns104.ovh.net.
 ```
 
-puis effacez tout ce qui suit, et remplacez-le par la configuration générée par YunoHost comme expliqué dans [cette page] (/install/post_install/dns_config).
+puis effacez tout ce qui suit, et remplacez-le par la configuration générée par YunoHost comme expliqué dans [cette page] (/admin/install/post_install/dns_config).
 
 ### IP dynamique
 
@@ -32,7 +32,7 @@ puis effacez tout ce qui suit, et remplacez-le par la configuration générée p
 
 Vous devez suivre cette partie si vous avez une IP dynamique.
 
-Vérifiez si votre FAI vous fournit une adresse IP dynamique [ici](/install/providers/isp/).
+Vérifiez si votre FAI vous fournit une adresse IP dynamique [ici](/admin/install/providers/isp/).
 
 Créons un identifiant DynHost.
 

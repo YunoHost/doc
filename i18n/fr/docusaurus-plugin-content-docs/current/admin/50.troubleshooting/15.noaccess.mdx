@@ -12,7 +12,7 @@ Cette page va vous aider à diagnostiquer, obtenir un accès et si besoin répar
 
 Vérifier que vous arrivez à accéder au serveur en utilisant son IP globale (que vous pouvez trouver sur [https://ip.yunohost.org](https://ip.yunohost.org)). Si cela ne fonctionne pas:
 
-- Assurez-vous d'avoir [configuré les redirections de ports](/install/post_install/port_forwarding)
+- Assurez-vous d'avoir [configuré les redirections de ports](/admin/install/post_install/port_forwarding)
 - Certaines box de FAI ne supportent pas le hairpinning et vous ne pouvez pas accéder à votre serveur depuis l'intérieur du réseau local (sauf à passer par l'IP locale). Pour contourner le problème, vous pouvez utiliser un des moyens suivants:
   - utiliser une connexion cellulaire (4/5G)
   - modifier le fichier `/etc/hosts` sur vos équipements
@@ -24,7 +24,7 @@ Vérifier que vous arrivez à accéder au serveur en utilisant son IP globale (q
 Ce n'est pas nécessaire si vous utilisez un domaine de type `nohost.me`, `noho.st` ou `ynh.fr`)
 :::
 
-Il vous faut configurer vos enregistrement DNS comme expliqué sur [cette page](/install/post_install/dns_config) (à minima l'enregistrement A, et AAAA si vous avez de l'IPv6).
+Il vous faut configurer vos enregistrement DNS comme expliqué sur [cette page](/admin/install/post_install/dns_config) (à minima l'enregistrement A, et AAAA si vous avez de l'IPv6).
 
 Vous pouvez valider que les enregistrements DNS sont corrects en comparant le résultat de[this service](https://www.whatsmydns.net/) avec l'IP globale de votre serveur (si vous êtes hébergé à la maison, vous pouvez obtenir cette IP sur [IP given by our service](https://ip.yunohost.org).
 
