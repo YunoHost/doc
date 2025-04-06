@@ -85,8 +85,12 @@ const config: Config = {
         src: 'img/icons/logo-ynh_horizontal.png',
       },
       items: [
-        // {to: '/docs', label: 'Docs', position: 'left'},
-        // {to: '/blog', label: 'Blog', position: 'left'},
+        {type: 'docSidebar', sidebarId: 'user', label: 'User guide'},
+        {type: 'docSidebar', sidebarId: 'community', label: 'Community'},
+        {type: 'docSidebar', sidebarId: 'admin', label: 'Administration'},
+        {type: 'docSidebar', sidebarId: 'dev', label: 'Development'},
+        {type: 'docSidebar', sidebarId: 'packaging', label: 'Packaging'},
+
         {
           type: "search",
           position: "right",
