@@ -22,6 +22,8 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
   --ifm-navbar-background-color: rgb(240, 240, 245);
+
+  --ifm-hero-background-color: oklch(0.243535 0 0);
 }
 
 [data-theme='light'] ::selection {
@@ -59,6 +61,10 @@ html[data-theme='dark'] .footer {
   --ifm-footer-title-color: inherit;
   --ifm-footer-link-color: var(--ifm-color-primary);
   --ifm-footer-color: inherit;
+}
+
+html[data-theme='dark'] .hero {
+  --ifm-hero-background-color: oklch(0.243535 0 0);
 }
 
 /* Allows dynamic images based on light/dark mode */
