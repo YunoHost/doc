@@ -429,6 +429,8 @@ Strictly speaking, this has nothing to do with the actual app install. `autoupda
 
 The infos are used by [this script](https://github.com/YunoHost/apps_tools/blob/main/autoupdate_app_sources/autoupdate_app_sources.py) which is ran by the YunoHost infrastructure periodically and will create the corresponding pull request automatically.
 
+`autoupdate` property is meant to be associated to the `main` ressource (i.e. the source declared under `[resources.sources.main]`). Failing to do so will result in incorrect versioning in manifest's autoupdate - only the YunoHost package version (the number after `~`) will [get incremented](https://github.com/YunoHost/apps_tools/blob/7603de396b02b8f154870c7fef484c31d9cb69cb/autoupdate_app_sources/autoupdate_app_sources.py#L245).
+
 The script will rely on the code repo specified in `code` in the upstream section of the manifest.
 
 The `autoupdate.strategy` is expected to be constructed like this: `latest_<gitforge>_<strategy>`
