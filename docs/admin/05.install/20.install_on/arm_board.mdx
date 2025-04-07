@@ -1,0 +1,87 @@
+---
+title: On an ARM board
+description: Looks like a Raspberry Pi, isn't quite one
+sidebar_position: 2
+sidebar_custom_props:
+  doc_card_image: /img/icons/icon-olinuxino.png
+pagination_next: admin/install/install_on/on_top_of_debian
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import YunoHostImagesList from '@site/src/components/YunoHostImagesList';
+
+## <FAIcon icon="fa-list-alt"/> Pre-requisites
+
+- An ARM board with at least 512MB RAM
+- A power supply (either an adapter or a USB cable) for your board;
+- A microSD card: 16GB capacity (at least), [class "A1"](https://en.wikipedia.org/wiki/SD_card#Class) highly recommended (such as [this SanDisk A1 card](https://www.amazon.fr/SanDisk-microSDHC-Adaptateur-homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/));
+- A [reasonable ISP](/admin/install/providers/isp/), preferably with a good and unlimited upstream bandwidth
+- An ethernet cable (RJ-45) to connect your server to your router.
+- A computer to read this guide, flash the image and access your server.
+
+:::warning
+Each ARM board is different and there might be specific instructions for your board.
+
+Please follow the Armbian documentation first!
+:::
+
+## <FAIcon icon="fa-download" /> Download the Armbian image
+
+You should download the Armbian **Bookworm** (Debian 12) image from your vendor's or Armbian's website. 
+
+<div class="text--center">
+  <Button url="https://www.armbian.com/download" color="lightblue"><SmallInline url="/img/icons/logo-armbian.png" alt="armbian logo"/> Armbian Download page</Button>
+</div>
+
+<YunoHostImagesList hardware="arm"/>
+
+## <FAIcon icon="sim-card"/> Flash the Armbian image
+
+Now that you downloaded the image of Armbian, you should flash it on a microSD card
+
+<Tabs>
+  <TabItem value="etcher" label="With Ether (recommended)">
+
+    Download <Link to="https://www.balena.io/etcher/" target="_blank">Etcher</Link> for your operating system and install it.
+
+    Plug your SD card, select your image and click "Flash"
+
+    ![Etcher](/img/softwares/etcher.gif)
+  </TabItem>
+  <TabItem value="usbimager" label="With USBimager">
+    Download [USBimager](https://bztsrc.gitlab.io/usbimager/) for your operating system and install it.
+
+    Plug your SD card, select your image and click "Write"
+
+    ![USBimager](/img/softwares/usbimager.png)
+  </TabItem>
+  <TabItem value="dd" label="With dd">
+    If you are on GNU/Linux / macOS and know your way around command line, you may also flash your USB stick or SD card with `dd`. You can identify which device corresponds to your USB stick or SD card with `fdisk -l` or `lsblk`. A typical SD card name is something like `/dev/mmcblk0`. BE CAREFUL and make sure you got the right name.
+
+    Then run:
+
+    ```bash
+    # Replace /dev/mmcblk0 if the name of your device is different...
+    dd if=/path/to/armbian.img of=/dev/mmcblk0 status=progress ; sync
+    ```
+  </TabItem>
+</Tabs>
+
+## <FAIcon icon="fa-plug"/> Power up the board
+
+- Put the SD card in your board
+- Connect your board to your home router via Ethernet
+  - For advanced users requiring WiFi instead, please follow [the official documentation](https://docs.armbian.com/User-Guide_Autoconfig/#sample-config-file).
+- If you want to follow the initial boot, connect a screen and keyboard on your board.
+- Power up the board
+
+## <FAIcon icon="fa-terminal"/> Connect to the board
+
+Next you need to [find the local IP address of your server](/admin/install/post_install/find_ip) to connect as root user [via SSH](/admin/command_line) with the temporary password `1234` (see [the Armbian doc](https://docs.armbian.com/User-Guide_Getting-Started/#how-to-login)).
+
+```bash
+ssh root@192.168.x.xxx
+```
+
+Now you can follow the generic instructions to [install YunoHost on Debian](/admin/install/install_on/on_top_of_debian#-run-the-install-script).

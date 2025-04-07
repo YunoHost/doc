@@ -74,7 +74,7 @@ ram.runtime = "1M"
 ```
 
 - `yunohost` (`str`) contains the minimum YunoHost version required for this app to work.
-- `helpers_version` (`str`) contains the version of the package helpers used by the application; supported versions are [2.0](https://yunohost.org/fr/packaging_apps_helpers) and [2.1](https://yunohost.org/fr/packaging_apps_helpers_v2.1)
+- `helpers_version` (`str`) contains the version of the package helpers used by the application; supported versions are [2.0](/packaging/scripts/helpers_v2.0) and [2.1](/packaging/scripts/helpers_v2.1)
 - `architectures` : `"all"` OR a list of supported archs using the `dpkg --print-architecture` nomenclature, i.e. among : `amd64` (= x86 64bit), `i386` (= x86 32bit), `armhf` (= ARM 32bit), `arm64` (= ARM 64bit)
 - `multi_instance` (`bool`) : wether or not the app supports being installed multiple time <small>(in which case, during installation, the actual app id is not just the `id` of the manifest, but something like `hellowold__2`, `helloworld__3`, etc. for subsequent installs)</small>
 - `ldap` (`bool` OR `"not_relevant"`) :  not to confused with the `sso` key : this corresponds to wether or not the app is configured to use YunoHost's LDAP DB as the user account DB. This should be set to `"not_relevant"` if and only if there is no notion of user account for this app (for example, Hextris). LDAP integration is often a prerequisite for the SSO to work.

@@ -1,13 +1,12 @@
 ---
 title: On WSL
 description: Experimental, for testing purposes
-# pagination_next: administration-guide/initial-setup/index
-sidebar_position: 6
+sidebar_position: 8
 sidebar_custom_props:
   doc_card_image: /img/icons/logo-wsl.png
+pagination_next: admin/install/post_install/configuration
 ---
 
-import Figure from '@site/src/components/Figures';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -21,7 +20,6 @@ This setup is mainly meant for local testing by advanced users. Due to limitatio
 - Administration rights
 - Windows Subsystem for Linux, installed from the Optional Features menu of Windows
 - *Recommended:* Windows Terminal (Preview) app, installed from the Microsoft Store. Much better than the standard Terminal, as it offers shortcuts to the WSL distros.
-- A computer or a smartphone to read this guide and access your server.
 
 ## Introduction
 
@@ -33,7 +31,7 @@ Bear in mind, this setup itself is *not* a container of any kind. If something b
 You may need to delete the Debian distro altogether and restore it whole.
 :::
 
-## Install Debian 12
+## Install Debian
 
 Let's install YunoHost into its own distro, not altering the default one. In a PowerShell terminal:
 
@@ -73,6 +71,10 @@ generateResolvConf = false
 ```
 
 ## Force the use of iptables-legacy
+
+:::warning[FIXME]
+YunoHost now uses nftables, these instructions might be out of date.
+:::
 
 Somehow the YunoHost post-installation does not like `nf_tables`, the new software replacing `iptables`.
 We can still explicitely use the good ol' `iptables` though:
@@ -117,18 +119,21 @@ This is a key element for YunoHost, and for any decent Debian distro (seriously 
 # In WSL
 # Let's switch to the root user, if you were not already
 sudo su
+
 # Initialize the Genie bottle to have systemd running
 genie -s
 # Your hostname should have been appended with "-wsl"
-# Install YunoHost
-curl https://install.yunohost.org | bash -s -- -a
 ```
+
+Now you can follow the generic instructions to [install YunoHost on Debian](/admin/install/install_on/on_top_of_debian#-run-the-install-script) inside the WSL shell.
 
 ### Access the command line
 
 Always call `genie -s` while starting your distro.
 
-`wsl -d YunoHost -e genie -s`
+```bash
+wsl -d YunoHost -e genie -s
+```
 
 ## Backup and restore the distro
 

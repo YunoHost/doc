@@ -1,22 +1,20 @@
 ---
 title: On a Raspberry Pi
 description: Our preferred baked boards
-# pagination_next: administration-guide/initial-setup/index
 sidebar_position: 1
 sidebar_custom_props:
-  doc_card_image: /img/icons/raspberrypi.png
+  doc_card_image: /img/icons/icon-raspberrypi.png
+pagination_next: admin/install/post_install/configuration
 ---
 
-import Figure from '@site/src/components/Figures';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import YunoHostImagesList from '@site/src/components/YunoHostImagesList';
-import Link from '@docusaurus/Link';
 
 ## <FAIcon icon="fa-list-alt"/> Pre-requisites
 
 - A Raspberry Pi 3, 4 or 5
-  - A power supply (either an adapter or a MicroUSB cable) for your board;
+  - A power supply (either an adapter or a USB cable) for your board;
   - A microSD card: 16GB capacity (at least), [class "A1"](https://en.wikipedia.org/wiki/SD_card#Class) highly recommended (such as [this SanDisk A1 card](https://www.amazon.fr/SanDisk-microSDHC-Adaptateur-homologu%C3%A9e-Nouvelle/dp/B073JWXGNT/));
   - An ethernet cable (RJ-45) to connect your server to your router.
 - A [reasonable ISP](/admin/install/providers/isp/), preferably with a good and unlimited upstream bandwidth
@@ -24,7 +22,7 @@ import Link from '@docusaurus/Link';
 
 ## <FAIcon icon="fa-download" /> Download the YunoHost image
 
-:::tip
+:::note
 If you wish to check the validity of our signed images, you can [download our public key](https://forge.yunohost.org/keys/yunohost_bookworm.asc).
 :::
 
@@ -56,19 +54,17 @@ Now that you downloaded the image of YunoHost, you should flash it on a microSD 
 
     ```bash
     # Replace /dev/mmcblk0 if the name of your device is different...
-    dd if=/path/to/yunohost.img of=/dev/mmcblk0
+    dd if=/path/to/yunohost.img of=/dev/mmcblk0 status=progress ; sync
     ```
   </TabItem>
 </Tabs>
 
 ## <FAIcon icon="fa-plug"/> Power up the board
 
-- Plug the ethernet cable (one side on your main router, the other on your board).
-  - For advanced users willing to configure the board to connect to WiFi instead, see
-  for example [here](https://www.raspberrypi.com/documentation/computers/configuration.html#connect-to-a-wireless-network)
-  ([or here prior to YunoHost12/bookworm](https://www.raspberryme.com/configurer-le-wifi-sur-un-pi-manuellement-a-laide-de-wpa_supplicant-conf/).
-- Plug the SD card in your board
-- (Optional) You can connect a screen+keyboard directly on your board if you want to troubleshoot the boot process or if you're more comfortable to "see what happens" or want a direct access to the board.
+- Put the SD card in your board
+- Connect your board to your home router via Ethernet
+  - For advanced users requiring WiFi instead, please follow [the official documentation](https://www.raspberrypi.com/documentation/computers/configuration.html#connect-to-a-wireless-network).
+- If you want to follow the initial boot, connect a screen and keyboard on your board.
 - Power up the board
-- Wait a couple minutes while the board autoconfigure itself during the first boot
-- Make sure that your computer (desktop/laptop) is connected to the same local network (i.e. same internet box) as your server.
+
+You can now go through [the initial post-install configuration](/admin/install/post_install/configuration).

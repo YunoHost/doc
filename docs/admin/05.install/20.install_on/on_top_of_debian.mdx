@@ -1,0 +1,84 @@
+---
+title: On top of Debian
+description: If you can't use preinstalled images
+sidebar_position: 6
+sidebar_custom_props:
+  doc_card_image: /img/icons/logo-debian.png
+pagination_next: admin/install/post_install/configuration
+---
+
+YunoHost is easily installable on Debian !
+
+This can be useful if you already have a Debian machine or can't use the recommended methods. 
+
+## <FAIcon icon="fa-download" /> Get Debian
+
+You should download the version **Bookworm** (Debian 12) and select the architecture for your PC.
+
+When in doubt, select `amd64`, or `i386` for a pre-2010 PC.
+
+<div class="text--center">
+  <Button url="https://www.debian.org/distrib/netinst" color="lightblue"><SmallInline url="/img/icons/logo-debian.png" alt="armbian logo"/> Debian Download page</Button>
+</div>
+
+Alternatively, you can browse the [Debian archive](https://cdimage.debian.org/mirror/cdimage/archive) for the latest 12.x version, select your architecture, the select `iso-cd` and download the `netinst` iso.
+
+<!-- <YunoHostImagesList hardware="arm"/> -->
+
+#### Installation
+
+You might want to **wipe the hard drive** before starting the Debian installer.
+
+Burn the iso to your USB key, for example using [Etcher](https://www.balena.io/etcher/).
+
+Debian installer will ask for a **hostname** and a **domain name**. You can use `yunohost` and `yunohost.local`. It is not that important since the YunoHost Installer will overwrite those anyway.
+
+Debian will ask for a **root password**, which should be reaonably complex as it is your primary defense to possible attacks.
+
+The installer will also ask for a **user account** and another password.
+:::warning
+**IMPORTANT:** this username should be DIFFERENT from the first YunoHost user which you will choose during YunoHost's posinstall… For example, you can name it `debian`. Be sure to also use a long complex password.
+:::
+
+When the install asks where to install and how to **create disk partitions**, select the option to **use the whole disk**, unless you know what you're doing.
+
+- We recommend not to separate the `/home`, `/var` or `/tmp` partitions. Use the option to “keep all files in one partition”.
+- If you don't know what you're doing, don't encrypt the disk (Decryption at power-on will be an issue)
+
+The installer will ask about **mirrors**. Select a country and server close to your location, or use the default options.
+
+The installer will ask which **desktop environment** you want. This is generally useless and might waste resources.
+- Unselect all desktop environment
+- Keep “standard system utilities” checked
+
+#### After installing Debian
+
+1. Remove the installation media (unplug the USB stick)
+2. Reboot
+3. Login as `root`
+4. Install curl by typing `apt install curl`
+
+## <FAIcon icon="fa-rocket"/> Run the install script
+
+- Open a command line prompt on your server (either directly or [through SSH](/admin/command_line))
+- Make sure you are root (or type `sudo -i` to become root)
+- Run the following command:
+
+```bash
+curl https://install.yunohost.org | bash
+```
+
+:::warning
+You might need to first install `curl` and `ca-certificates` by running:
+```bash
+apt install curl ca-certificates
+```
+:::
+
+:::danger
+Always ensure there's an `s` at the end of `https`.
+:::
+
+:::note
+**For advanced users concerned with the `curl | bash` approach:** consider reading ["Is curl|bash insecure?"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) on Sandstom's blog, and possibly [this discussion on Hacker News](https://news.ycombinator.com/item?id=12766350&noprocess).
+:::

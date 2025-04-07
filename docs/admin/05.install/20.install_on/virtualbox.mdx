@@ -1,30 +1,27 @@
 ---
 title: In a virtual machine
-description: Mostly for testing and debugging purposes
-# pagination_next: administration-guide/initial-setup/index
+description: For testing and debugging purposes
 sidebar_position: 5
 sidebar_custom_props:
-  doc_card_image: /img/icons/logo-virtualbox.png
+  doc_card_image: /img/icons/icon-virtualbox.png
+pagination_next: admin/install/post_install/configuration
 ---
 
-import Figure from '@site/src/components/Figures';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import YunoHostImagesList from '@site/src/components/YunoHostImagesList';
-
-## <FAIcon icon="fa-list-alt"/> Pre-requisites
-
-- An x86 computer with [VirtualBox installed](https://www.virtualbox.org/wiki/Downloads) and enough RAM capacity to be able to run a small virtual machine with 1024MB RAM and 8GB capacity (at least)
-- A [reasonable ISP](/admin/install/post_install/port_forwarding), preferably with a good and unlimited upstream bandwidth
-- A computer to read this guide, flash the image and access your server.
 
 :::warning
 Installing YunoHost in a VirtualBox is usually intended for testing or development. It is not convenient to run an actual server on the long-term, because the machine it's installed on probably won't be up 24/7, and because Virtualbox adds an additional layer of complexity in exposing the machine to the Internet.
 :::
 
+## <FAIcon icon="fa-list-alt"/> Pre-requisites
+
+- An x86 computer with [VirtualBox installed](https://www.virtualbox.org/wiki/Downloads) and enough RAM capacity to be able to run a small virtual machine with 1024MB RAM and 8GB capacity (at least)
+
 ## <FAIcon icon="fa-download"/> Download the YunoHost image
 
-:::note
+:::warning
 If your host OS is 32 bits, be sure to download the 32-bit image.
 :::
 
@@ -130,5 +127,7 @@ You should see a screen like this:
 </Tabs>
 
 :::tip
-If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See [these instructions](https://yunohost.org/en/installing_debian).
+If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See [these instructions](/admin/install/install_on/on_top_of_debian#-run-the-install-script).
 :::
+
+Now that YunoHost is installed, you can now go through [the initial post-install configuration](/admin/install/post_install/configuration).

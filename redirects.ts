@@ -47,7 +47,7 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/sftp_on_apps',                            to: '/admin/tutorials/sftp_on_apps', },
     { from: '/theming',                                 to: '/admin/tutorials/theming', },
     { from: '/torhiddenservice',                        to: '/admin/tutorials/torhiddenservice', },
-    { from: '/asking_for_help_efficiently',             to: '/community/ask_for_help', },
+    { from: '/asking_for_help_efficiently',             to: '/community/help', },
     { from: '/chat_rooms',                              to: '/community/chat_rooms', },
     { from: '/faq',                                     to: '/community/faq', },
     { from: '/help',                                    to: '/community/help', },
