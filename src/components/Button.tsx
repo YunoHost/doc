@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { ReactNode, CSSProperties } from 'react';
+import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import Heading from '@theme/Heading';
 
-export default function LinkButton({children, url, color}) {
+export default function Button({children, url, color}) {
   return (
     <Link to={url}>
         <div style={{
@@ -10,6 +10,8 @@ export default function LinkButton({children, url, color}) {
             backgroundColor: color,
             borderRadius: '4px',
             padding: '0.6rem',
+            paddingLeft: '1rem',
+            paddingRight: '1rem',
             width: 'auto',
             display: 'inline-block',
             textAlign: 'center',
