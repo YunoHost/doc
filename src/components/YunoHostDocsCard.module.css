@@ -1,0 +1,10 @@
+.ynhCardContainer {
+  --ifm-link-hover-decoration: none;
+
+  box-shadow: 0 1.5px 3px 0 rgb(0 0 0 / 30%);
+  /* border: 1px solid var(--ifm-color-emphasis-200); */
+  transition: all var(--ifm-transition-fast) ease;
+  transition-property: border, box-shadow;
+
+  text-align: center;
+}
