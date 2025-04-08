@@ -174,5 +174,137 @@
   "sidebar.docsSidebar.category.Migrating from 11.x to 12.x": {
     "message": "Migrating from 11.x to 12.x",
     "description": "The label for category Migrating from 11.x to 12.x in sidebar docsSidebar"
+  },
+  "sidebar.user.link.Applications": {
+    "message": "Applications",
+    "description": "The label for link Applications in sidebar user, linking to https://apps.yunohost.org"
+  },
+  "sidebar.admin.category.What is YunoHost?": {
+    "message": "What is YunoHost?",
+    "description": "The label for category What is YunoHost? in sidebar admin"
+  },
+  "sidebar.admin.category.Self-hosting": {
+    "message": "Self-hosting",
+    "description": "The label for category Self-hosting in sidebar admin"
+  },
+  "sidebar.admin.category.Providers": {
+    "message": "Providers",
+    "description": "The label for category Providers in sidebar admin"
+  },
+  "sidebar.admin.category.Providers.link.generated-index.title": {
+    "message": "Providers",
+    "description": "The generated-index page title for category Providers in sidebar admin"
+  },
+  "sidebar.admin.category.Registrars": {
+    "message": "Registrars",
+    "description": "The label for category Registrars in sidebar admin"
+  },
+  "sidebar.admin.category.OVH": {
+    "message": "OVH",
+    "description": "The label for category OVH in sidebar admin"
+  },
+  "sidebar.admin.category.Internet service providers": {
+    "message": "Internet service providers",
+    "description": "The label for category Internet service providers in sidebar admin"
+  },
+  "sidebar.admin.category.VPN providers": {
+    "message": "VPN providers",
+    "description": "The label for category VPN providers in sidebar admin"
+  },
+  "sidebar.admin.category.Install": {
+    "message": "Install",
+    "description": "The label for category Install in sidebar admin"
+  },
+  "sidebar.admin.category.Install on...": {
+    "message": "Install on...",
+    "description": "The label for category Install on... in sidebar admin"
+  },
+  "sidebar.admin.category.After installation": {
+    "message": "After installation",
+    "description": "The label for category After installation in sidebar admin"
+  },
+  "sidebar.admin.category.After installation.link.generated-index.description": {
+    "message": "Configure your network to access your server",
+    "description": "The generated-index page description for category After installation in sidebar admin"
+  },
+  "sidebar.admin.category.Gli utenti e il SSO": {
+    "message": "Gli utenti e il SSO",
+    "description": "The label for category Gli utenti e il SSO in sidebar admin"
+  },
+  "sidebar.admin.category.Domini": {
+    "message": "Domini",
+    "description": "The label for category Domini in sidebar admin"
+  },
+  "sidebar.admin.category.Applications": {
+    "message": "Applications",
+    "description": "The label for category Applications in sidebar admin"
+  },
+  "sidebar.admin.category.Backups": {
+    "message": "Backups",
+    "description": "The label for category Backups in sidebar admin"
+  },
+  "sidebar.admin.category.Backups.link.generated-index.title": {
+    "message": "Backups",
+    "description": "The generated-index page title for category Backups in sidebar admin"
+  },
+  "sidebar.admin.category.Tutorials": {
+    "message": "Tutorials",
+    "description": "The label for category Tutorials in sidebar admin"
+  },
+  "sidebar.admin.category.Tutorials.link.generated-index.title": {
+    "message": "Tutorials",
+    "description": "The generated-index page title for category Tutorials in sidebar admin"
+  },
+  "sidebar.admin.category.Domains": {
+    "message": "Domains",
+    "description": "The label for category Domains in sidebar admin"
+  },
+  "sidebar.admin.category.Domains.link.generated-index.title": {
+    "message": "Domains",
+    "description": "The generated-index page title for category Domains in sidebar admin"
+  },
+  "sidebar.admin.category.Troubleshooting": {
+    "message": "Troubleshooting",
+    "description": "The label for category Troubleshooting in sidebar admin"
+  },
+  "sidebar.admin.category.Aggiornamenti": {
+    "message": "Aggiornamenti",
+    "description": "The label for category Aggiornamenti in sidebar admin"
+  },
+  "sidebar.admin.category.Migrating from 11.x to 12.x": {
+    "message": "Migrating from 11.x to 12.x",
+    "description": "The label for category Migrating from 11.x to 12.x in sidebar admin"
+  },
+  "sidebar.dev.category.Write documentation": {
+    "message": "Write documentation",
+    "description": "The label for category Write documentation in sidebar dev"
+  },
+  "sidebar.dev.category.Contributing to the core": {
+    "message": "Contributing to the core",
+    "description": "The label for category Contributing to the core in sidebar dev"
+  },
+  "sidebar.packaging.category.Writing the app manifest": {
+    "message": "Writing the app manifest",
+    "description": "The label for category Writing the app manifest in sidebar packaging"
+  },
+  "sidebar.packaging.category.Writing app scripts": {
+    "message": "Writing app scripts",
+    "description": "The label for category Writing app scripts in sidebar packaging"
+  },
+  "sidebar.packaging.category.Advanced": {
+    "message": "Advanced",
+    "description": "The label for category Advanced in sidebar packaging"
+  },
+  "sidebar.packaging.category.Advanced.link.generated-index.title": {
+    "message": "Advanced",
+    "description": "The generated-index page title for category Advanced in sidebar packaging"
+  },
+  "sidebar.packaging.category.Misc resources": {
+    "message": "Misc resources",
+    "description": "The label for category Misc resources in sidebar packaging"
+  },
+  "sidebar.packaging.category.Misc resources.link.generated-index.title": {
+    "message": "Misc resources",
+    "description": "The generated-index page title for category Misc resources in sidebar packaging"
   }
 }

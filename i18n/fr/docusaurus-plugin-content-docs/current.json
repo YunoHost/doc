@@ -1,6 +1,6 @@
 {
   "version.label": {
-    "message": "Prochaine version",
+    "message": "Next",
     "description": "The label for version current"
   },
   "sidebar.docsSidebar.category.Overview": {
@@ -174,5 +174,137 @@
   "sidebar.docsSidebar.category.Guided tour for the admin": {
     "message": "Guided tour for the admin",
     "description": "The label for category Guided tour for the admin in sidebar docsSidebar"
+  },
+  "sidebar.user.link.Applications": {
+    "message": "Applications",
+    "description": "The label for link Applications in sidebar user, linking to https://apps.yunohost.org"
+  },
+  "sidebar.admin.category.What is YunoHost?": {
+    "message": "What is YunoHost?",
+    "description": "The label for category What is YunoHost? in sidebar admin"
+  },
+  "sidebar.admin.category.Self-hosting": {
+    "message": "Self-hosting",
+    "description": "The label for category Self-hosting in sidebar admin"
+  },
+  "sidebar.admin.category.Providers": {
+    "message": "Providers",
+    "description": "The label for category Providers in sidebar admin"
+  },
+  "sidebar.admin.category.Providers.link.generated-index.title": {
+    "message": "Providers",
+    "description": "The generated-index page title for category Providers in sidebar admin"
+  },
+  "sidebar.admin.category.Registrars": {
+    "message": "Registrars",
+    "description": "The label for category Registrars in sidebar admin"
+  },
+  "sidebar.admin.category.OVH": {
+    "message": "OVH",
+    "description": "The label for category OVH in sidebar admin"
+  },
+  "sidebar.admin.category.Internet service providers": {
+    "message": "Internet service providers",
+    "description": "The label for category Internet service providers in sidebar admin"
+  },
+  "sidebar.admin.category.VPN providers": {
+    "message": "VPN providers",
+    "description": "The label for category VPN providers in sidebar admin"
+  },
+  "sidebar.admin.category.Install": {
+    "message": "Install",
+    "description": "The label for category Install in sidebar admin"
+  },
+  "sidebar.admin.category.Installer sur...": {
+    "message": "Installer sur...",
+    "description": "The label for category Installer sur... in sidebar admin"
+  },
+  "sidebar.admin.category.After installation": {
+    "message": "After installation",
+    "description": "The label for category After installation in sidebar admin"
+  },
+  "sidebar.admin.category.After installation.link.generated-index.description": {
+    "message": "Configure your network to access your server",
+    "description": "The generated-index page description for category After installation in sidebar admin"
+  },
+  "sidebar.admin.category.Les utilisateurs et le SSO": {
+    "message": "Les utilisateurs et le SSO",
+    "description": "The label for category Les utilisateurs et le SSO in sidebar admin"
+  },
+  "sidebar.admin.category.Domaines": {
+    "message": "Domaines",
+    "description": "The label for category Domaines in sidebar admin"
+  },
+  "sidebar.admin.category.Les applications": {
+    "message": "Les applications",
+    "description": "The label for category Les applications in sidebar admin"
+  },
+  "sidebar.admin.category.Backups": {
+    "message": "Backups",
+    "description": "The label for category Backups in sidebar admin"
+  },
+  "sidebar.admin.category.Backups.link.generated-index.title": {
+    "message": "Backups",
+    "description": "The generated-index page title for category Backups in sidebar admin"
+  },
+  "sidebar.admin.category.Tutorials": {
+    "message": "Tutorials",
+    "description": "The label for category Tutorials in sidebar admin"
+  },
+  "sidebar.admin.category.Tutorials.link.generated-index.title": {
+    "message": "Tutorials",
+    "description": "The generated-index page title for category Tutorials in sidebar admin"
+  },
+  "sidebar.admin.category.Domains": {
+    "message": "Domains",
+    "description": "The label for category Domains in sidebar admin"
+  },
+  "sidebar.admin.category.Domains.link.generated-index.title": {
+    "message": "Domains",
+    "description": "The generated-index page title for category Domains in sidebar admin"
+  },
+  "sidebar.admin.category.Dépannage": {
+    "message": "Dépannage",
+    "description": "The label for category Dépannage in sidebar admin"
+  },
+  "sidebar.admin.category.Mises à jour": {
+    "message": "Mises à jour",
+    "description": "The label for category Mises à jour in sidebar admin"
+  },
+  "sidebar.admin.category.Migrer de 11.x vers 12.x": {
+    "message": "Migrer de 11.x vers 12.x",
+    "description": "The label for category Migrer de 11.x vers 12.x in sidebar admin"
+  },
+  "sidebar.dev.category.Rédaction de la documentation": {
+    "message": "Rédaction de la documentation",
+    "description": "The label for category Rédaction de la documentation in sidebar dev"
+  },
+  "sidebar.dev.category.Contribuer au cœur de YunoHost": {
+    "message": "Contribuer au cœur de YunoHost",
+    "description": "The label for category Contribuer au cœur de YunoHost in sidebar dev"
+  },
+  "sidebar.packaging.category.Writing the app manifest": {
+    "message": "Writing the app manifest",
+    "description": "The label for category Writing the app manifest in sidebar packaging"
+  },
+  "sidebar.packaging.category.Writing app scripts": {
+    "message": "Writing app scripts",
+    "description": "The label for category Writing app scripts in sidebar packaging"
+  },
+  "sidebar.packaging.category.Advanced": {
+    "message": "Advanced",
+    "description": "The label for category Advanced in sidebar packaging"
+  },
+  "sidebar.packaging.category.Advanced.link.generated-index.title": {
+    "message": "Advanced",
+    "description": "The generated-index page title for category Advanced in sidebar packaging"
+  },
+  "sidebar.packaging.category.Misc resources": {
+    "message": "Misc resources",
+    "description": "The label for category Misc resources in sidebar packaging"
+  },
+  "sidebar.packaging.category.Misc resources.link.generated-index.title": {
+    "message": "Misc resources",
+    "description": "The generated-index page title for category Misc resources in sidebar packaging"
   }
 }

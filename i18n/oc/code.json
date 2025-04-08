@@ -312,5 +312,25 @@
   },
   "You will be redirected soon to {description}. If that doesn't work, please go to: ": {
     "message": "You will be redirected soon to {description}. If that doesn't work, please go to: "
+  },
+  "homepage.link.item.label.Install Documentation": {
+    "message": "Install !",
+    "description": "The label for the link to Install documentation"
+  },
+  "homepage.link.item.label.User Documentation": {
+    "message": "User Documentation",
+    "description": "The label for the link to user documentation"
+  },
+  "homepage.link.item.label.Admin Documentation": {
+    "message": "Admin Documentation",
+    "description": "The label for the link to admin documentation"
+  },
+  "homepage.link.item.label.Developer Documentation": {
+    "message": "Developer Documentation",
+    "description": "The label for the link to developer documentation"
+  },
+  "homepage.link.item.label.Packaging Documentation": {
+    "message": "Packaging Documentation",
+    "description": "The label for the link to Packaging documentation"
   }
 }

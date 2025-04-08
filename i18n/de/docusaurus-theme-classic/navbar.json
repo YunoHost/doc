@@ -10,5 +10,25 @@
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
+  },
+  "item.label.User guide": {
+    "message": "User guide",
+    "description": "Navbar item with label User guide"
+  },
+  "item.label.Administration": {
+    "message": "Administration",
+    "description": "Navbar item with label Administration"
+  },
+  "item.label.Community": {
+    "message": "Community",
+    "description": "Navbar item with label Community"
+  },
+  "item.label.Development": {
+    "message": "Development",
+    "description": "Navbar item with label Development"
+  },
+  "item.label.Packaging": {
+    "message": "Packaging",
+    "description": "Navbar item with label Packaging"
   }
 }
