@@ -10,6 +10,8 @@ pagination_next: admin/install/post_install/configuration
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+import InstallScript from "./_install_script.mdx";
+
 :::danger
 This setup is mainly meant for local testing by advanced users. Due to limitations on WSL's side (changing IP address, notably), selfhosting from it can be tricky and will not be described here.
 :::
@@ -125,7 +127,7 @@ genie -s
 # Your hostname should have been appended with "-wsl"
 ```
 
-Now you can follow the generic instructions to [install YunoHost on Debian](/admin/install/install_on/on_top_of_debian#-run-the-install-script) inside the WSL shell.
+<InstallScript />
 
 ### Access the command line
 

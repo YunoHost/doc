@@ -7,6 +7,8 @@ sidebar_custom_props:
 pagination_next: admin/install/post_install/configuration
 ---
 
+import InstallScript from "./_install_script.mdx";
+
 YunoHost is easily installable on Debian !
 
 This can be useful if you already have a Debian machine or can't use the recommended methods. 
@@ -58,27 +60,4 @@ The installer will ask which **desktop environment** you want. This is generally
 3. Login as `root`
 4. Install curl by typing `apt install curl`
 
-## <FAIcon icon="fa-rocket"/> Run the install script
-
-- Open a command line prompt on your server (either directly or [through SSH](/admin/command_line))
-- Make sure you are root (or type `sudo -i` to become root)
-- Run the following command:
-
-```bash
-curl https://install.yunohost.org | bash
-```
-
-:::warning
-You might need to first install `curl` and `ca-certificates` by running:
-```bash
-apt install curl ca-certificates
-```
-:::
-
-:::danger
-Always ensure there's an `s` at the end of `https`.
-:::
-
-:::note
-**For advanced users concerned with the `curl | bash` approach:** consider reading ["Is curl|bash insecure?"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) on Sandstom's blog, and possibly [this discussion on Hacker News](https://news.ycombinator.com/item?id=12766350&noprocess).
-:::
+<InstallScript />

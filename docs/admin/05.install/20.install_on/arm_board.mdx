@@ -11,6 +11,8 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import YunoHostImagesList from '@site/src/components/YunoHostImagesList';
 
+import InstallScript from "./_install_script.mdx";
+
 ## <FAIcon icon="fa-list-alt"/> Pre-requisites
 
 - An ARM board with at least 512MB RAM
@@ -84,4 +86,4 @@ Next you need to [find the local IP address of your server](/admin/install/post_
 ssh root@192.168.x.xxx
 ```
 
-Now you can follow the generic instructions to [install YunoHost on Debian](/admin/install/install_on/on_top_of_debian#-run-the-install-script).
+<InstallScript />
