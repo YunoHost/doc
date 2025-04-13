@@ -3,17 +3,16 @@ title: Packaging applications
 sidebar_position: 0
 ---
 
-This documentation is here to provide all the basic concepts and vocabulary needed to understand app packaging.
+YunoHost relies on applications, and so, on their packagers. This documentation
+is here to help you package and maintain apps.
 
-We will detail what a YunoHost application package is, how it works, how to make your own package and how to find help if you need it.
+## Packaging philosophy
 
-## 1. Packaging philosophy
-
-The ability to easily install applications from a catalog is a key feature of YunoHost. While you dive in the process of YunoHost application packaging, you should remember these key principles:
+The simplicity of using apps is a key feature of YunoHost. As a packager, you should remember these principles:
 
 - **The admin should not have a PhD in computer science to be able to install, configure and use your application**: try to assume that the admin doesn't know about advanced computer concepts;
 
-- **Less is more**, **Keep it simple!**: don't overcrowd the admin with a dozens technical questions;
+- **Less is more**, **Keep it simple**: don't overcrowd the admin with a dozens technical questions;
 
 - **Things should work out of the box**: for example, the admin should not have to manually finish the installation process by manually filling in database credentials;
 
@@ -47,66 +46,3 @@ After a while, a set of common practices and conventions emerged and is somewhat
 Nevertheless, even though helpers existed, the inherent structure of apps was hard and boring to maintain with too many redundant pieces of code or filled with funky historical conventions. **A new v2 format** [has been designed and added to YunoHost 11.1 in early 2023](https://github.com/YunoHost/yunohost/pull/1289) in the hope to modernize and simplify app packaging and improve the UI/UX of YunoHost.
 
 However, [**a future v3 format** has yet to come](https://github.com/YunoHost/issues/issues/2136) to further simplify app packaging (such as taking care of NGINX/systemd/... configurations, removing the need to manually write remove/backup/restore scripts, etc.)
-
-## 4. General overview of a YunoHost app structure
-
-A YunoHost app consists in a Git repository. We encourage you to have a look at those code repository to get familiar witch app repository structures:
-
-- [the `helloworld_ynh` app](https://github.com/YunoHost-Apps/helloworld_ynh)
-- [the `example_ynh` app](https://github.com/YunoHost/example_ynh) which illustrates all common features and recommended formatting
-- your favourite "real-life" app in the [YunoHost-Apps organization](https://github.com/orgs/YunoHost-Apps/repositories)
-
-Among the file contained in a package, the most important ones are:
-
-- the **app manifest** `manifest.toml` <small>(or `.json` in the past)</small>
-  - this can be seen as the ID card of the application, containing various metadatas.
-  - it also contains the questions asked during the installation of the app.
-  - and a bunch of "resources" to initialize, such as sources to download or apt dependencies to install
-- **scripts/** contains a bunch of bash scripts corresponding to actions exposed in YunoHost
-  - `_common.sh`: common variables or custom functions included in other scripts
-  - `install`/`remove`: the install and remove procedure
-  - `upgrade`: the upgrade procedure
-  - `backup`/`restore`: the backup/restore procedures
-  - (`change_url`): changing where the app is installed in terms of web access url
-- **conf/** contains a bunch of configuration templates used when installing the app. Here are some example of commonly found files:
-  - `nginx.conf`: the NGINX (=web server) configuration template for this app
-  - `systemd.service`: the systemd service configuration template for this app
-  - `config.json/yaml/???`: the app's configuration template
-
-Roughly speaking, the install itself generally consists of the following operations (though these may vary depending on the complexity and technologies used by the app) - not necessarily in that exact order:
-
-1. YunoHost fetches the package's Git repository
-2. YunoHost asks to the admin the install questions defined in `manifest.toml`
-3. The admin fills the form and starts the install
-4. YunoHost provisions a bunch of technical prerequisites (called 'resources') such as:
-
-    - initializes the app'skey/value store `settings.yml` with the admin's answers to the install form
-    - creates a UNIX system user for this app
-    - install apt dependencies needed for this app
-    - picks up a port for internal reverse-proxying
-    - initializes an empty SQL database
-    - configures SSOwat permissions
-    - ...
-
-5. The actual app's `install` script is ran and typically does:
-
-    - fetch and deploy the app sources
-    - configure the app (typically DB credentials, internal reverse-proxy port...)
-    - add the NGINX configuration
-    - add the systemd configuration the app's daemon
-    - starts the app daemon
-    - various finialization tweaks
-
-6. ???
-7. Application is ready to use!
-
-## 5. Creating your very first YunoHost package
-
-Unless you really want to start from scratch or from [`example_ynh`](https://github.com/YunoHost/example_ynh), one common practice is to identify an app similar to the one you're trying to package - typically because it relies on the same technologies - clone the corresponding code repository, and adapt the various files.
-
-TODO/FIXME : here we should list a bunch of well-knowh apps for classic technologies
-
-- PHP apps:
-- NodeJS apps:
-- Python apps:
-- ???

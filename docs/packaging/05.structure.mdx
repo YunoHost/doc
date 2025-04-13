@@ -1,0 +1,42 @@
+---
+title: App structure
+sidebar_position: 1
+---
+
+A Yunohost app package is a Git repository with such a structure:
+
+```bash
+myapp_ynh
+├── manifest.toml   # The manifest
+├── scripts         # The scripts
+│   ├── _common.sh
+│   ├── install
+│   ├── remove
+│   ├── backup
+│   ├── restore
+│   ├── change_url
+│   └── upgrade
+├── conf            # The configuration files to install
+│   ├── cinny.json
+│   └── nginx.conf
+├── doc             # The documentation
+│   ├── DESCRIPTION.md
+│   ├── DESCRIPTION_fr.md
+│   ├── PRE_INSTALL.md
+│   └── screenshots
+│       └── screenshot.png
+├── patches         # Optional patches
+├── tests.toml      # The tests manifest
+├── LICENSE
+└── README.md
+```
+
+The [manifest](./manifest) contains upstream information, sources, version, installation questions and resources to initialize. 
+
+The [scripts](./scripts) are called by YunoHost when operations are started by the admin.
+
+The configuration files are templates that are filled and installed by the scripts, for example `nginx` or `systemd` or specific configs.
+
+[Patches](./patches) are applied when downloading the upstream sources.
+
+The [documentation](./doc) is used to show messages before / after install, upgrade, and in the webadmin.
