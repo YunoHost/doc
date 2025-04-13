@@ -82,6 +82,19 @@ html[data-theme='dark'] .hero {
   filter: invert(1);
 }
 
+.navbar__brand > .navbar__logo {
+  transition: var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+/* This needs to be adapted to --ifm-navbar-link-hover-color */
+[data-theme='light'] .navbar__brand:hover > .navbar__logo {
+  filter: invert(1) brightness(35%) sepia(100) saturate(400%) hue-rotate(174deg);
+}
+
+[data-theme='dark'] .navbar__brand:hover > .navbar__logo {
+  filter: invert(1) brightness(55%) sepia(100) saturate(300%) hue-rotate(174deg);
+}
+
 [data-theme='light'] img#whitelogo {
   background-color: darkgray;
 }
