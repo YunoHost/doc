@@ -22,7 +22,23 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
   --ifm-navbar-background-color: rgb(240, 240, 245);
+  --ifm-hero-background-color: oklch(0.243535 0 0);
+}
 
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+html[data-theme='dark'] {
+  --ifm-color-primary: rgb(114, 182, 236);
+  --ifm-color-primary-dark: rgb(83, 166, 232);
+  --ifm-color-primary-darker: rgb(68, 158, 230);
+  --ifm-color-primary-darkest: rgb(29, 133, 216);
+  --ifm-color-primary-light: rgb(145, 198, 240);
+  --ifm-color-primary-lighter: rgb(160, 206, 242);
+  --ifm-color-primary-lightest: rgb(207, 230, 248);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* --ifm-navbar-background-color: rgb(17, 20, 24); */
+  --ifm-navbar-background-color: hsl(0, 0%, 10%);
+  --ifm-background-color: hsl(0, 0%, 13%);
   --ifm-hero-background-color: oklch(0.243535 0 0);
 }
 
@@ -41,30 +57,11 @@
   --ifm-footer-color: inherit;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-html[data-theme='dark'] {
-  --ifm-color-primary: rgb(114, 182, 236);
-  --ifm-color-primary-dark: rgb(83, 166, 232);
-  --ifm-color-primary-darker: rgb(68, 158, 230);
-  --ifm-color-primary-darkest: rgb(29, 133, 216);
-  --ifm-color-primary-light: rgb(145, 198, 240);
-  --ifm-color-primary-lighter: rgb(160, 206, 242);
-  --ifm-color-primary-lightest: rgb(207, 230, 248);
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-
-  --ifm-background-color: rgb(23, 27, 33);
-  --ifm-navbar-background-color: rgb(17, 20, 24);
-}
-
-html[data-theme='dark'] .footer {
+[data-theme='dark'] .footer {
   --ifm-footer-background-color: rgb(17, 20, 24);
   --ifm-footer-title-color: inherit;
   --ifm-footer-link-color: var(--ifm-color-primary);
   --ifm-footer-color: inherit;
-}
-
-html[data-theme='dark'] .hero {
-  --ifm-hero-background-color: oklch(0.243535 0 0);
 }
 
 /* Allows dynamic images based on light/dark mode */
