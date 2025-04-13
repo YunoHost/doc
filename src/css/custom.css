@@ -51,14 +51,14 @@ html[data-theme='dark'] {
 }
 
 [data-theme='light'] .footer {
-  --ifm-footer-background-color: rgb(240, 240, 245);
+  --ifm-footer-background-color: var(--ifm-navbar-background-color);
   --ifm-footer-title-color: inherit;
   --ifm-footer-link-color: var(--ifm-color-primary);
   --ifm-footer-color: inherit;
 }
 
 [data-theme='dark'] .footer {
-  --ifm-footer-background-color: rgb(17, 20, 24);
+  --ifm-footer-background-color: var(--ifm-navbar-background-color);
   --ifm-footer-title-color: inherit;
   --ifm-footer-link-color: var(--ifm-color-primary);
   --ifm-footer-color: inherit;
