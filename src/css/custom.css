@@ -22,23 +22,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
   --ifm-navbar-background-color: rgb(240, 240, 245);
-
   --ifm-hero-background-color: oklch(0.243535 0 0);
-}
-
-[data-theme='light'] ::selection {
-  background-color: color-mix(in srgb, var(--ifm-color-primary), white 60%);
-}
-
-[data-theme='dark'] ::selection {
-  background-color: color-mix(in hsl, var(--ifm-color-primary), black 50%);
-}
-
-[data-theme='light'] .footer {
-  --ifm-footer-background-color: rgb(240, 240, 245);
-  --ifm-footer-title-color: inherit;
-  --ifm-footer-link-color: var(--ifm-color-primary);
-  --ifm-footer-color: inherit;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -52,19 +36,32 @@ html[data-theme='dark'] {
   --ifm-color-primary-lightest: rgb(207, 230, 248);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
-  --ifm-background-color: rgb(23, 27, 33);
-  --ifm-navbar-background-color: rgb(17, 20, 24);
+  /* --ifm-navbar-background-color: rgb(17, 20, 24); */
+  --ifm-navbar-background-color: hsl(0, 0%, 10%);
+  --ifm-background-color: hsl(0, 0%, 13%);
+  --ifm-hero-background-color: oklch(0.243535 0 0);
 }
 
-html[data-theme='dark'] .footer {
-  --ifm-footer-background-color: rgb(17, 20, 24);
+[data-theme='light'] ::selection {
+  background-color: color-mix(in srgb, var(--ifm-color-primary), white 60%);
+}
+
+[data-theme='dark'] ::selection {
+  background-color: color-mix(in hsl, var(--ifm-color-primary), black 50%);
+}
+
+[data-theme='light'] .footer {
+  --ifm-footer-background-color: var(--ifm-navbar-background-color);
   --ifm-footer-title-color: inherit;
   --ifm-footer-link-color: var(--ifm-color-primary);
   --ifm-footer-color: inherit;
 }
 
-html[data-theme='dark'] .hero {
-  --ifm-hero-background-color: oklch(0.243535 0 0);
+[data-theme='dark'] .footer {
+  --ifm-footer-background-color: var(--ifm-navbar-background-color);
+  --ifm-footer-title-color: inherit;
+  --ifm-footer-link-color: var(--ifm-color-primary);
+  --ifm-footer-color: inherit;
 }
 
 /* Allows dynamic images based on light/dark mode */
@@ -80,6 +77,19 @@ html[data-theme='dark'] .hero {
 [data-theme='dark'] .navbar__logo,
 [data-theme='dark'] .sidebarLogo_isFc > img {
   filter: invert(1);
+}
+
+.navbar__brand > .navbar__logo {
+  transition: var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+/* This needs to be adapted to --ifm-navbar-link-hover-color */
+[data-theme='light'] .navbar__brand:hover > .navbar__logo {
+  filter: invert(1) brightness(35%) sepia(100) saturate(400%) hue-rotate(174deg);
+}
+
+[data-theme='dark'] .navbar__brand:hover > .navbar__logo {
+  filter: invert(1) brightness(55%) sepia(100) saturate(300%) hue-rotate(174deg);
 }
 
 [data-theme='light'] img#whitelogo {

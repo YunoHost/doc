@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 
-function getUrl() : str {
+function getUrl() : string {
   const isMain = process.env.BUILD_FOR === 'main';
   return isMain ? 'https://doc.yunohost.org/' : 'https://nextdoc.yunohost.org/';
 }
@@ -86,8 +86,8 @@ const config: Config = {
       },
       items: [
         {type: 'docSidebar', sidebarId: 'user', label: 'User guide'},
-        {type: 'docSidebar', sidebarId: 'community', label: 'Community'},
         {type: 'docSidebar', sidebarId: 'admin', label: 'Administration'},
+        {type: 'docSidebar', sidebarId: 'community', label: 'Community'},
         {type: 'docSidebar', sidebarId: 'dev', label: 'Development'},
         {type: 'docSidebar', sidebarId: 'packaging', label: 'Packaging'},
 

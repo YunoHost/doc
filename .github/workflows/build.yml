@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
@@ -30,6 +32,9 @@ jobs:
           cache: yarn
       - name: Installation
         run: yarn
+
+      - name: Check translations pages consistency
+        run: python3 ./scripts/check_i18n_consistency.py
 
       - name: Build docs
         run: yarn build
@@ -45,7 +50,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
 
-    if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/next' }}
+    if: ${{github.event_name == 'push' && ( github.ref == 'refs/heads/main' || github.ref == 'refs/heads/next' ) }}
     env:
       APP: ${{ github.ref == 'refs/heads/main' && 'my_webapp' || 'my_webapp__4' }}
 

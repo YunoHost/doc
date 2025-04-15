@@ -14,14 +14,9 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <center>
-      <br/><br/>
-
-      <img src={require('/img/icons/logo-ynh_horizontal.png').default}
-        alt="YunoHost logo" id="ynhlogo" style={{ width: 400 }}/>
-
-      {/* <Heading as="h1" className="hero__title">
-        <Translate id="homepage.title">Documentation</Translate>
-      </Heading> */}
+      <br/>
+      <img src={require('!!url-loader!/img/icons/logo-ynh.svg').default}
+        alt="YunoHost logo" id="ynhlogo" style={{ width: "9rem" }}/>
 
       <p className="hero__subtitle">{siteConfig.tagline}</p>
 

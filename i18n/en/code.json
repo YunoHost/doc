@@ -52,11 +52,11 @@
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Newer Entries",
+    "message": "Newer entries",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Older Entries",
+    "message": "Older entries",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
@@ -64,11 +64,11 @@
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Newer Post",
+    "message": "Newer post",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Older Post",
+    "message": "Older post",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.post.plurals": {
@@ -80,7 +80,7 @@
     "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "View All Tags",
+    "message": "View all tags",
     "description": "The label of the link targeting the tag list page"
   },
   "theme.colorToggle.ariaLabel": {
@@ -203,7 +203,7 @@
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.blog.post.readMore": {
-    "message": "Read More",
+    "message": "Read more",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.readMoreLabel": {
@@ -312,5 +312,25 @@
   },
   "You will be redirected soon to {description}. If that doesn't work, please go to: ": {
     "message": "You will be redirected soon to {description}. If that doesn't work, please go to: "
+  },
+  "homepage.link.item.label.Install Documentation": {
+    "message": "Install !",
+    "description": "The label for the link to Install documentation"
+  },
+  "homepage.link.item.label.User Documentation": {
+    "message": "User Documentation",
+    "description": "The label for the link to user documentation"
+  },
+  "homepage.link.item.label.Admin Documentation": {
+    "message": "Admin Documentation",
+    "description": "The label for the link to admin documentation"
+  },
+  "homepage.link.item.label.Developer Documentation": {
+    "message": "Developer Documentation",
+    "description": "The label for the link to developer documentation"
+  },
+  "homepage.link.item.label.Packaging Documentation": {
+    "message": "Packaging Documentation",
+    "description": "The label for the link to Packaging documentation"
   }
 }

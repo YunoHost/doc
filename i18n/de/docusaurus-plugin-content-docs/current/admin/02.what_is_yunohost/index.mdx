@@ -1,0 +1,53 @@
+---
+title: What is YunoHost?
+description: " "
+---
+
+<img src={require('/img/icons/logo-ynh_horizontal.png').default} alt="YunoHost logo" id="ynhlogo" style={{display: "block", textAlign: "center", margin: "auto"}}/>
+
+YunoHost ist ein **Betriebssystem**, das auf die einfachste Verwaltung eines **Servers** abzielt und daher das [Self-Hosting](/admin/self_hosting) demokratisiert, wobei sichergestellt wird, dass es zuverlässig, sicher, ethisch einwandfrei und leichtgewichtig bleibt. Es ist ein Copylefted-Libre-Softwareprojekt, das ausschließlich von Freiwilligen betrieben wird. Technisch gesehen kann es als eine Distribution angesehen werden, die auf [Debian GNU/Linux](https://debian.org) basiert und auf [vielen Arten von Hardware](/admin/install installiert werden kann.
+## Features
+
+- &#8203;<SmallInline url='/img/icon-debian.png' alt="debian logo"/> Based on Debian, for a trustworthy & familiar base;
+- &#8203;<SmallInline url='/img/icon-tools.png' alt="tools logo"/> Administer your server through a **friendly web interface** as well as a handy CLI;
+- &#8203;<SmallInline url='/img/icon-package.png' alt="package logo"/> Deploy **apps in just a few clicks** from [our more than 500 apps catalog](https://apps.yunohost.org)!;
+- &#8203;<SmallInline url='/img/icon-users.png' alt="users logo"/> Manage **users** <small>(based on LDAP)</small>;
+- &#8203;<SmallInline url='/img/icon-globe.png' alt="globe logo"/> Manage **domain names**;
+- &#8203;<SmallInline url='/img/icon-medic.png' alt="medic logo"/> Create and restore **backups**;
+- &#8203;<SmallInline url='/img/icon-door.png' alt="door logo"/> Connect to all apps simultaneously through the **user portal** <small>(NGINX, SSOwat)</small>;
+- &#8203;<SmallInline url='/img/icon-mail.png' alt="mail logo"/> Includes a **full e-mail stack** <small>(Postfix, Dovecot, Rspamd, DKIM)</small>;
+- &#8203;<SmallInline url='/img/icon-messaging.png' alt="messaging logo"/>... as well as **an instant messaging server** <small>(XMPP)</small>
+- &#8203;<SmallInline url='/img/icon-lock.png' alt="lock logo"/> Manages **SSL certificates** <small>(based on Let's Encrypt)</small>;
+- &#8203;<SmallInline url='/img/icon-shield.png' alt="shield logo"/>... and **security systems** <small>(`fail2ban`, `yunohost-firewall`)</small>.
+
+## Ursprung
+
+YunoHost wurde im Februar 2012 aus folgender Situation heraus erstellt:
+
+> "Scheiße, ich bin zu faul, um meinen Mailserver neu zu konfigurieren ... Beudbeud, wie hast Du deinen kleinen Server mit LDAP zum Laufen gebracht?"
+> <small> Kload, Februar 2012</small>
+
+Alles, was benötigt wurde, war eine Administrationsoberfläche für Beudbeud's Server, um etwas nutzbar zu machen, also entschied sich Kload, eine zu entwickeln. Schließlich wurde YunoHost v1, nach der Automatisierung mehrerer Konfigurationen und der Paketierung in einigen Webanwendungen, fertiggestellt.
+
+Angesichts der wachsenden Begeisterung für YunoHost und für das Selbst-Hosting im Allgemeinen beschlossen die ursprünglichen Entwickler zusammen mit neuen Mitarbeitern, mit der Arbeit an Version 2 zu beginnen, einer erweiterbaren, leistungsfähigeren, benutzerfreundlicheren und damit einfacheren Version eine schöne Tasse Fairtrade-Kaffee für die Elfen von Lappland.
+
+Der Name **YunoHost** stammt aus dem Jargon "Y U NO Host". 
+
+<center>
+![The meme in question, showing a guy with a face bent in frustration and questioning "Y U NO Host"](/img/dude_yunohost.jpg)
+</center>
+
+## Was YunoHost nicht ist?
+
+Selbst wenn YunoHost mehrere Domains und mehrere Benutzer verwalten kann, ist es **nicht als ein mutualisiertes System gedacht**.
+
+Erstens ist die Software noch sehr jung, nicht auf ihre Skalierbarkeit getestet und daher wahrscheinlich nicht gut genug optimiert für Hunderte von Benutzern gleichzeitig. Vor diesem Hintergrund möchten wir die Software nicht in diese Richtung lenken. Die Virtualisierung demokratisiert sich und ihre Verwendung wird empfohlen, da sie eine wasserdichtere Methode zur Erzielung von Gegenseitigkeit darstellt als ein "Full-Stack"-System wie YunoHost.
+
+Sie können Ihre Freunde, Ihre Familie und Ihr Unternehmen sicher und problemlos aufnehmen, aber Sie müssen **Ihren Benutzern vertrauen**, und diese müssen vor allem Ihnen vertrauen. Wenn Sie ohnehin YunoHost-Dienste für unbekannte Personen bereitstellen möchten, ist ein vollständiger VPS pro Benutzer in Ordnung, und wir glauben, dass dies ein besserer Weg ist.
+
+## Artworks
+
+Schwarz und Weiss YunoHost PNG logo by ToZz (400 × 400 px). Licence: CC-BY-SA 4.0. Logos and other artwork are available in [the Artworks repository](https://github.com/YunoHost/yunohost-artwork).
+
+<img src="https://raw.githubusercontent.com/YunoHost/yunohost-artwork/refs/heads/main/logos/png/yunohost-logo_black.png" width="220" id="darklogo"/>
+<img src="https://raw.githubusercontent.com/YunoHost/yunohost-artwork/refs/heads/main/logos/png/yunohost-logo_white.png" width="220" id="whitelogo"/>

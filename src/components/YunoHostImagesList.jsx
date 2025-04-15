@@ -16,10 +16,8 @@ import Link from '@docusaurus/Link';
 
 export default function YunoHostImagesList({hardware}) {
   return (
-    <div>
-      <div id="cards-list" className={hardware}>
-        <div className="row">
-        </div>
+    <div id="cards-list" className={hardware}>
+      <div className="row">
       </div>
     </div>
   )

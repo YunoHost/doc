@@ -1,0 +1,25 @@
+
+## <FAIcon icon="fa-rocket"/> Run the install script
+
+- Open a command line prompt on your server (either directly or [through SSH](/admin/command_line))
+- Make sure you are root (or type `sudo -i` to become root)
+- Run the following command:
+
+```bash
+curl https://install.yunohost.org | bash
+```
+
+:::warning
+You might need to first install `curl` and `ca-certificates` by running:
+```bash
+apt install curl ca-certificates
+```
+:::
+
+:::danger
+Always ensure there's an `s` at the end of `https`.
+:::
+
+:::note
+**For advanced users concerned with the `curl | bash` approach:** consider reading ["Is curl|bash insecure?"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) on Sandstom's blog, and possibly [this discussion on Hacker News](https://news.ycombinator.com/item?id=12766350&noprocess).
+:::

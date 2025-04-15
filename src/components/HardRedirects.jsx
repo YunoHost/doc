@@ -25,8 +25,12 @@ export function DocumentedHardRedirect({url, description}) {
   )
 }
 
-export function LangRedirect({lang}) {
+export function LangUrl({lang}) {
   const location = useDoc().metadata.id;
   const newLocation = `/${lang}/${location}`;
-  return <HardRedirect url={newLocation}/>
+  return newLocation;
+}
+
+export function LangRedirect({lang}) {
+  return <HardRedirect url={LangUrl({lang})}/>
 }

@@ -11,6 +11,7 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
+    "write-all-translations": "scripts/write_all_translations.sh",
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
