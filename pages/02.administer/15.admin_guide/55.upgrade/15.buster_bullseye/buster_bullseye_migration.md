@@ -7,7 +7,7 @@ routes:
   default: '/buster_bullseye_migration'
 ---
 
-This page is dedicated to help you migrating an instance from YunoHost 4.4.x (running on Debian Buster/10.x) to YunoHost 11.x (running on Debian Bullseye/11.x). Note: we decided to skip the version numbers from 5 to 10 to follow the Debian version numbers.
+This page is dedicated to help you migrating an instance from YunoHost 4.4.x (running on Debian Buster/10.x) to YunoHost 11.x (running on Debian Bullseye/11.x). The Yunohost tools will migrate both the Debian system from Bullseye to Bookworm AND the Yunohost packages. Do not use the Debian tools for that (unless you know what you do). Note: we decided to skip the version numbers from 5 to 10 to follow the Debian version numbers.
 
 ## Important notes
 
