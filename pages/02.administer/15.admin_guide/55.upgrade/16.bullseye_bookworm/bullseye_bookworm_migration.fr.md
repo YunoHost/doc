@@ -7,7 +7,7 @@ routes:
   default: '/bullseye_bookworm_migration'
 ---
 
-L'objectif cette page est de décrire le processus de migration d'une instance en YunoHost 11.x (tournant sous Debian Bullseye) vers YunoHost 12.x (tournant sous Debian Bookworm).
+L'objectif cette page est de décrire le processus de migration d'une instance en YunoHost 11.x (tournant sous Debian Bullseye) vers YunoHost 12.x (tournant sous Debian Bookworm). Les outils Yunohost se chargent de la migration du système Debian ET des paquetages Yunohost. N'utilisez pas les outils de migration Debian (sauf à savoir ce que vous faites).
 
 ## Notes importantes
 
