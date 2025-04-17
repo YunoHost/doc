@@ -9,6 +9,10 @@ routes:
     - '/upgrade'
 ---
 
+## Utilisez les outils Yunohost
+
+À moins de savoir ce que vous faites, vous devriez utiliser les outils Yunohost plutôt que les outils Debian (apt, apt-get ou aptitude).
+
 ## Depuis la webadmin
 
 Dans la partie administration, choisir Mettre à jour le système. YunoHost va mettre à jour le catalogue des paquets système et le catalogue des applications, et afficher les mise à jour disponibles.
