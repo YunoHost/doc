@@ -9,6 +9,10 @@ routes:
     - '/upgrade'
 ---
 
+## Use the Yunohost tools
+
+Unless you know what you do, you should use the Yunohost tools to upgrade, not the Debian ones (apt, apt-get or aptitude).
+
 ## From the webadmin
 
 On the administraton panel, click on Upgrade the system. YunoHost will refresh the system package catalog as well as the application catalog, and display available upgrades.
