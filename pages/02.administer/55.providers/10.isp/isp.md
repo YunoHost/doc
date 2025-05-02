@@ -206,7 +206,7 @@ Most of non business IP provided by ISP are blacklisted.
 | KT(SkyLife, Qook&Show) | Multiple | Yes | Yes | No | - | Partial |
 | SKT (SK Broadband) | Multiple | Yes | Yes | No | - | Partial |
 
-{% elseif country == 'gbr' %}
+{% elseif country == 'twn' %}
 
 ### Taiwan
 
@@ -214,7 +214,7 @@ Most of non business IP provided by ISP are blacklisted.
 | --- | --- | --- | --- | --- | --- | --- |
 | CHT (Chunghwa Telecom) | Multiple | Yes | Yes | Yes (Need hidden settings) | No | Partial |
 
-{% elseif country == 'twn' %}
+{% elseif country == 'gbr' %}
 
 ### UK
 
