@@ -3,190 +3,6 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.docsSidebar.category.Overview": {
-    "message": "Aperçu général",
-    "description": "The label for category Overview in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Overview.link.generated-index.title": {
-    "message": "Aperçu général",
-    "description": "The generated-index page title for category Overview in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Install": {
-    "message": "Installation",
-    "description": "The label for category Install in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Providers": {
-    "message": "Fournisseurs",
-    "description": "The label for category Providers in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Providers.link.generated-index.title": {
-    "message": "Fournisseurs",
-    "description": "The generated-index page title for category Providers in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Registrars": {
-    "message": "Registrars",
-    "description": "The label for category Registrars in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.OVH": {
-    "message": "OVH",
-    "description": "The label for category OVH in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Fournisseurs VPN": {
-    "message": "Fournisseurs VPN",
-    "description": "The label for category Fournisseurs VPN in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Installer sur...": {
-    "message": "Installer sur...",
-    "description": "The label for category Installer sur... in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.After installation": {
-    "message": "Après installation",
-    "description": "The label for category After installation in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.After installation.link.generated-index.description": {
-    "message": "Configurez votre réseau pour accéder à votre serveur",
-    "description": "The generated-index page description for category After installation in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Administration guide": {
-    "message": "Guide d'administration",
-    "description": "The label for category Administration guide in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Administration guide.link.generated-index.title": {
-    "message": "Guide d'administration",
-    "description": "The generated-index page title for category Administration guide in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Administration guide.link.generated-index.description": {
-    "message": "Découvrez l'auto-hébergement, comment installer et utiliser YunoHost",
-    "description": "The generated-index page description for category Administration guide in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Les utilisateurs et le SSO": {
-    "message": "Les utilisateurs et le SSO",
-    "description": "The label for category Les utilisateurs et le SSO in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Domaines": {
-    "message": "Domaines",
-    "description": "The label for category Domaines in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Les applications": {
-    "message": "Les applications",
-    "description": "The label for category Les applications in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Mises à jour": {
-    "message": "Mises à jour",
-    "description": "The label for category Mises à jour in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Migrer de 11.x vers 12.x": {
-    "message": "Migrer de 11.x vers 12.x",
-    "description": "The label for category Migrer de 11.x vers 12.x in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Backups": {
-    "message": "Sauvegardes",
-    "description": "The label for category Backups in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Backups.link.generated-index.title": {
-    "message": "Sauvegardes",
-    "description": "The generated-index page title for category Backups in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Tutorials": {
-    "message": "Tutoriels",
-    "description": "The label for category Tutorials in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Tutorials.link.generated-index.title": {
-    "message": "Tutoriels",
-    "description": "The generated-index page title for category Tutorials in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Domains": {
-    "message": "Domains",
-    "description": "The label for category Domains in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Domains.link.generated-index.title": {
-    "message": "Domains",
-    "description": "The generated-index page title for category Domains in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Dépannage": {
-    "message": "Dépannage",
-    "description": "The label for category Dépannage in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.User Guide": {
-    "message": "Guide utilisateur",
-    "description": "The label for category User Guide in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Community": {
-    "message": "Communauté",
-    "description": "The label for category Community in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Community.link.generated-index.title": {
-    "message": "Communauté",
-    "description": "The generated-index page title for category Community in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Contribuer": {
-    "message": "Contribuer",
-    "description": "The label for category Contribuer in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Rédaction de la documentation": {
-    "message": "Rédaction de la documentation",
-    "description": "The label for category Rédaction de la documentation in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Empaquetage d’applications": {
-    "message": "Empaquetage d’applications",
-    "description": "The label for category Empaquetage d’applications in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Writing the app manifest": {
-    "message": "Rédaction du manifest",
-    "description": "The label for category Writing the app manifest in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Writing app scripts": {
-    "message": "Rédaction des scripts",
-    "description": "The label for category Writing app scripts in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Advanced": {
-    "message": "Avancé",
-    "description": "The label for category Advanced in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Advanced.link.generated-index.title": {
-    "message": "Avancé",
-    "description": "The generated-index page title for category Advanced in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Misc resources": {
-    "message": "Ressources",
-    "description": "The label for category Misc resources in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Misc resources.link.generated-index.title": {
-    "message": "Ressources",
-    "description": "The generated-index page title for category Misc resources in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Contribuer au cœur de YunoHost": {
-    "message": "Contribuer au cœur de YunoHost",
-    "description": "The label for category Contribuer au cœur de YunoHost in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.link.Applications": {
-    "message": "Applications",
-    "description": "The label for link Applications in sidebar docsSidebar, linking to https://apps.yunohost.org"
-  },
-  "sidebar.docsSidebar.link.Forum": {
-    "message": "Forum",
-    "description": "The label for link Forum in sidebar docsSidebar, linking to https://forum.yunohost.org"
-  },
-  "sidebar.docsSidebar.category.Fournisseurs d’accès à Internet": {
-    "message": "Fournisseurs d’accès à Internet",
-    "description": "The label for category Fournisseurs d’accès à Internet in sidebar docsSidebar"
-  },
-  "sidebar.docsSidebar.category.Guided tour for the admin": {
-    "message": "Guided tour for the admin",
-    "description": "The label for category Guided tour for the admin in sidebar docsSidebar"
-  },
-  "sidebar.user.link.Applications": {
-    "message": "Applications",
-    "description": "The label for link Applications in sidebar user, linking to https://apps.yunohost.org"
-  },
-  "sidebar.admin.category.What is YunoHost?": {
-    "message": "What is YunoHost?",
-    "description": "The label for category What is YunoHost? in sidebar admin"
-  },
-  "sidebar.admin.category.Self-hosting": {
-    "message": "Self-hosting",
-    "description": "The label for category Self-hosting in sidebar admin"
-  },
   "sidebar.admin.category.Providers": {
     "message": "Providers",
     "description": "The label for category Providers in sidebar admin"
@@ -202,14 +18,6 @@
   "sidebar.admin.category.OVH": {
     "message": "OVH",
     "description": "The label for category OVH in sidebar admin"
-  },
-  "sidebar.admin.category.Internet service providers": {
-    "message": "Internet service providers",
-    "description": "The label for category Internet service providers in sidebar admin"
-  },
-  "sidebar.admin.category.VPN providers": {
-    "message": "VPN providers",
-    "description": "The label for category VPN providers in sidebar admin"
   },
   "sidebar.admin.category.Install": {
     "message": "Install",
@@ -283,14 +91,6 @@
     "message": "Contribuer au cœur de YunoHost",
     "description": "The label for category Contribuer au cœur de YunoHost in sidebar dev"
   },
-  "sidebar.packaging.category.Writing the app manifest": {
-    "message": "Writing the app manifest",
-    "description": "The label for category Writing the app manifest in sidebar packaging"
-  },
-  "sidebar.packaging.category.Writing app scripts": {
-    "message": "Writing app scripts",
-    "description": "The label for category Writing app scripts in sidebar packaging"
-  },
   "sidebar.packaging.category.Advanced": {
     "message": "Advanced",
     "description": "The label for category Advanced in sidebar packaging"
@@ -306,5 +106,37 @@
   "sidebar.packaging.category.Misc resources.link.generated-index.title": {
     "message": "Misc resources",
     "description": "The generated-index page title for category Misc resources in sidebar packaging"
+  },
+  "sidebar.user.link.App Store": {
+    "message": "App Store",
+    "description": "The label for link App Store in sidebar user, linking to https://apps.yunohost.org"
+  },
+  "sidebar.admin.category.Qu’est-ce que YunoHost?": {
+    "message": "Qu’est-ce que YunoHost?",
+    "description": "The label for category Qu’est-ce que YunoHost? in sidebar admin"
+  },
+  "sidebar.admin.category.L’auto-hébergement": {
+    "message": "L’auto-hébergement",
+    "description": "The label for category L’auto-hébergement in sidebar admin"
+  },
+  "sidebar.admin.category.Fournisseurs d’accès à Internet": {
+    "message": "Fournisseurs d’accès à Internet",
+    "description": "The label for category Fournisseurs d’accès à Internet in sidebar admin"
+  },
+  "sidebar.admin.category.Fournisseurs VPN": {
+    "message": "Fournisseurs VPN",
+    "description": "The label for category Fournisseurs VPN in sidebar admin"
+  },
+  "sidebar.admin.link.App Store": {
+    "message": "App Store",
+    "description": "The label for link App Store in sidebar admin, linking to https://apps.yunohost.org"
+  },
+  "sidebar.packaging.category.The manifest": {
+    "message": "The manifest",
+    "description": "The label for category The manifest in sidebar packaging"
+  },
+  "sidebar.packaging.category.The scripts": {
+    "message": "The scripts",
+    "description": "The label for category The scripts in sidebar packaging"
   }
 }
