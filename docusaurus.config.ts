@@ -59,7 +59,12 @@ const config: Config = {
       '@docusaurus/plugin-client-redirects',
       require('./redirects.js'),
     ],
-    require.resolve('docusaurus-lunr-search'),
+    [
+      require.resolve('docusaurus-lunr-search'),
+      {
+        languages: ['ar', 'de', 'en', 'es', 'fr', 'it', 'ru'],
+      }
+    ],
   ],
 
   clientModules: [
