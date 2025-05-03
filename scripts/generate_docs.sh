@@ -14,6 +14,6 @@ DOCDIR=$(dirname "$SCRIPT_DIR")
 "$SCRIPT_DIR/forms_doc_generate.py"         -i "$SRCDIR" -o "$DOCDIR/docs/dev/15.core/forms.mdx"
 
 # Fixups until the sources are updated
-sed -i 's|/packaging_config_panels|/contribute/apps/advanced/config_panels|' "$DOCDIR/docs/dev/15.core/forms.mdx"
-sed -i 's|#read-and-write-values-the|/contribute/apps/advanced/config_panels#the-bind-statement|' "$DOCDIR/docs/dev/15.core/forms.mdx"
-sed -i 's|(#actions)|(/contribute/apps/advanced/config_panels#actions)|' "$DOCDIR/docs/dev/15.core/forms.mdx"
+sed -i 's|/packaging_config_panels|/packaging/advanced/config_panels|' "$DOCDIR/docs/dev/15.core/forms.mdx"
+sed -i 's|#read-and-write-values-the|/packaging/advanced/config_panels#the-bind-statement|' "$DOCDIR/docs/dev/15.core/forms.mdx"
+sed -i 's|(#actions)|(/packaging/advanced/config_panels#actions)|' "$DOCDIR/docs/dev/15.core/forms.mdx"
