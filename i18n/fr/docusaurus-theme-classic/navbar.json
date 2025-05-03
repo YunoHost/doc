@@ -4,7 +4,7 @@
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "Logo Yunohost",
+    "message": "Yunohost Logo",
     "description": "The alt text of navbar logo"
   },
   "item.label.GitHub": {
@@ -12,7 +12,7 @@
     "description": "Navbar item with label GitHub"
   },
   "item.label.User guide": {
-    "message": "Utilisateur",
+    "message": "User guide",
     "description": "Navbar item with label User guide"
   },
   "item.label.Administration": {
@@ -20,11 +20,11 @@
     "description": "Navbar item with label Administration"
   },
   "item.label.Community": {
-    "message": "Communauté",
+    "message": "Community",
     "description": "Navbar item with label Community"
   },
   "item.label.Development": {
-    "message": "Développement",
+    "message": "Development",
     "description": "Navbar item with label Development"
   },
   "item.label.Packaging": {

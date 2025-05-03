@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
-import Translate from '@docusaurus/Translate';
+import Translate, {translate} from '@docusaurus/Translate';
 
 import styles from './index.module.css';
 
@@ -16,9 +16,9 @@ function HomepageHeader() {
     <center>
       <br/>
       <img src={require('!!url-loader!/img/icons/logo-ynh.svg').default}
-        alt="YunoHost logo" id="ynhlogo" style={{ width: "9rem" }}/>
+        alt={translate({ message: "YunoHost logo" })} id="ynhlogo" style={{ width: "9rem" }}/>
 
-      <p className="hero__subtitle">{siteConfig.tagline}</p>
+      <p className="hero__subtitle">{translate({ message: "Learn how to self-host!" })}</p>
 
       <div className={styles.buttons}><br/>
           <Link
@@ -28,7 +28,7 @@ function HomepageHeader() {
               <Translate
                   id="homepage.link.item.label.Install Documentation"
                   description="The label for the link to Install documentation">
-                  Install !
+                  Install YunoHost !
               </Translate>
           </Link>
       </div>

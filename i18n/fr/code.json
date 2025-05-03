@@ -314,7 +314,7 @@
     "message": "You will be redirected soon to {description}. If that doesn't work, please go to: "
   },
   "homepage.link.item.label.Install Documentation": {
-    "message": "Install !",
+    "message": "Install YunoHost !",
     "description": "The label for the link to Install documentation"
   },
   "homepage.link.item.label.User Documentation": {
@@ -332,5 +332,11 @@
   "homepage.link.item.label.Packaging Documentation": {
     "message": "Packaging Documentation",
     "description": "The label for the link to Packaging documentation"
+  },
+  "YunoHost logo": {
+    "message": "Logo YunoHost"
+  },
+  "Learn how to self-host!": {
+    "message": "Apprenez à vous auto-héberger !"
   }
 }
