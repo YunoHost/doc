@@ -34,11 +34,28 @@ These notes will be available in the app info page in the webadmin after the app
 
 Sometimes, you may want to display important information to the admin at key points in the app's life cycle. You can do so by providing special markdown files:
 
-- `doc/PRE_INSTALL.md`: displayed right before the installation (for example to warn that « This app install is expected to take around 30 minutes, be patient! » or « This app will automatically add 1GB swap to your system »)
-  - NB: try to not overlap with the anti-feature tags from the catalog (cf Publishing your app in the catalog) which can be used to warn that the app's upstream is alpha-stage or deprecated among other things.
+- `doc/PRE_INSTALL.md`: displayed right before the installation (for example to warn that « This app install is expected to take around 30 minutes, be patient! » or « This app will automatically add 1GB swap to your system »).
+  - NB: try to not overlap with the anti-feature tags from the catalog (cf. Publishing your app in the catalog) which can be used to warn that the app's upstream is alpha-stage or deprecated among other things.
 - `doc/POST_INSTALL.md`: displayed in a popup after the installation AND a dismissable note in the webadmin app info view.
-- `doc/PRE_UPGRADE.md`: displayed right before any upgrade of this app (NB: the pre-upgrade note from the NEW version will be used, not the one from the installed version)
-  - You can also create `doc/PRE_UPGRADE.d/{version}.md` to have a note displayed before upgrading to a version equal or higher than `{version}`
+- `doc/PRE_UPGRADE.md`: displayed right before any upgrade of this app.
+  - NB: the pre-upgrade note from the NEW version will be used, not the one from the installed version.
 - `doc/POST_UPGRADE.md`: displayed in a popup after the upgrade AND a dismissable note in the webadmin app info view.
 
-Same as `ADMIN.md` and others: in these files, you can use the `__FOOBAR__` syntax which will automatically be replaced with the `foobar` setting.
+In these files you can use the `__FOOBAR__` syntax which will automatically be replaced with the `foobar` setting.
+
+These notes are displayed both in WebUI and CLI contexts. In the CLI context, admin is prompted to press a key to dismiss the note and continue the install/upgrade process.
+
+### Display notes only for a specific version
+
+To display such note only for a specific version, you can create a markdown file named after the version inside a folder named after the targeted hook as such: `doc/{hook}.d/{version}.md`, where:
+- `{hook}` corresponds to one of the four available hooks (`PRE_INSTALL`, `POST_INSTALL`, etc.).
+- `{version}` corresponds to the version defined in the manifest.
+Example: `doc/PRE_UPGRADE.d/1.2.1~ynh1.md`.
+
+### Localization
+
+All notes' markdown file can optionally be localized using via a filename suffix with the following format: `doc/{hook}_{locale}.md` or `doc/{hook}.d/{version}_{locale}.md`.
+Without locale suffix, a file will be considered to be the English locale (i.e. `doc/PRE_UPGRADE.md` is equivalent to `doc/PRE_UPGRADE_en.md`).
+Examples:
+- `doc/POST_INSTALL_fr.md` will be displayed after each install of the given app where the Yunohost instance's language is set to French.
+- `doc/POST_UPGRADE.d/2025.04.02~ynh1_es.md` will be displayed after upgrade to version `2025.04.02~ynh1` of the given app where the Yunohost instance's language is set to Spanish.
