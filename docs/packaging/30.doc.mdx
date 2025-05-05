@@ -50,12 +50,14 @@ These notes are displayed both in WebUI and CLI contexts. In the CLI context, ad
 To display such note only for a specific version, you can create a markdown file named after the version inside a folder named after the targeted hook as such: `doc/{hook}.d/{version}.md`, where:
 - `{hook}` corresponds to one of the four available hooks (`PRE_INSTALL`, `POST_INSTALL`, etc.).
 - `{version}` corresponds to the version defined in the manifest.
+
 Example: `doc/PRE_UPGRADE.d/1.2.1~ynh1.md`.
 
 ### Localization
 
 All notes' markdown file can optionally be localized using via a filename suffix with the following format: `doc/{hook}_{locale}.md` or `doc/{hook}.d/{version}_{locale}.md`.
 Without locale suffix, a file will be considered to be the English locale (i.e. `doc/PRE_UPGRADE.md` is equivalent to `doc/PRE_UPGRADE_en.md`).
+
 Examples:
 - `doc/POST_INSTALL_fr.md` will be displayed after each install of the given app where the Yunohost instance's language is set to French.
 - `doc/POST_UPGRADE.d/2025.04.02~ynh1_es.md` will be displayed after upgrade to version `2025.04.02~ynh1` of the given app where the Yunohost instance's language is set to Spanish.
