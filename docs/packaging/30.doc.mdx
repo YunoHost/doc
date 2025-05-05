@@ -48,7 +48,7 @@ These notes are displayed both in WebUI and CLI contexts. In the CLI context, ad
 ### Display notes only for a specific version
 
 To display such note only for a specific version, you can create a markdown file named after the version inside a folder named after the targeted hook as such: `doc/{hook}.d/{version}.md`, where:
-- `{hook}` corresponds to one of the four available hooks (`PRE_INSTALL`, `POST_INSTALL`, etc.).
+- `{hook}` corresponds to `PRE_UPGRADE` or `POST_UPGRADE`
 - `{version}` corresponds to the version defined in the manifest.
 
 Example: `doc/PRE_UPGRADE.d/1.2.1~ynh1.md`.
