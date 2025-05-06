@@ -92,7 +92,7 @@ const config: Config = {
         src: 'img/icons/logo-ynh_horizontal.png',
       },
       items: [
-        {type: 'docSidebar', sidebarId: 'user', label: 'User guide'},
+        // {type: 'docSidebar', sidebarId: 'user', label: 'User guide'},
         {type: 'docSidebar', sidebarId: 'admin', label: 'Administration'},
         {type: 'docSidebar', sidebarId: 'community', label: 'Community'},
         {type: 'docSidebar', sidebarId: 'dev', label: 'Development'},

@@ -36,18 +36,6 @@ function HomepageHeader() {
       <div className={styles.buttons}>
           <Link
               className="button button--secondary button--lg"
-              to="/user">
-              <Translate
-                  id="homepage.link.item.label.User Documentation"
-                  description="The label for the link to user documentation">
-                  User Documentation
-              </Translate>
-          </Link>
-      </div>
-      <br/>
-      <div className={styles.buttons}>
-          <Link
-              className="button button--secondary button--lg"
               to="/admin">
               <Translate
                   id="homepage.link.item.label.Admin Documentation"
