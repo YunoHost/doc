@@ -49,21 +49,9 @@ function HomepageHeader() {
               className="button button--secondary button--lg"
               to="/dev/">
               <Translate
-                  id="homepage.link.item.label.Developer Documentation"
-                  description="The label for the link to developer documentation">
-                  Developer Documentation
-              </Translate>
-          </Link>
-      </div>
-      <br/>
-      <div className={styles.buttons}>
-          <Link
-              className="button button--secondary button--lg"
-              to="/dev/">
-              <Translate
-                  id="homepage.link.item.label.Packaging Documentation"
-                  description="The label for the link to Packaging documentation">
-                  Packaging Documentation
+                  id="homepage.link.item.label.Development and packaging Documentation"
+                  description="The label for the link to development and packaging documentation">
+                  Development & packaging
               </Translate>
           </Link>
       </div>
