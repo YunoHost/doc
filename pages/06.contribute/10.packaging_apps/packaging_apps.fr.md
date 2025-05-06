@@ -69,7 +69,7 @@ Parmi les fichiers contenus dans un paquet, les plus importants sont les suivant
   - Il contient également les questions posées lors de l'installation de l'application.
   - ainsi qu'un ensemble de "ressource" à initialiser, telles que les sources de l'app à télécharger ou les dépendances apt à installer
 - **scripts/** contient un ensemble de scripts bash correspondant aux actions exposées dans YunoHost
-  - `_common.sh`: common variables or custom functions included in other scripts
+  - `_common.sh`: variables communes ou fonctions spécifiques incluses dans d'autres scripts
   - `install`/`remove` : la procédure d'installation et de suppression
   - `upgrade` : la procédure de mise à niveau
   - `backup`/`restore` : les procédures de sauvegarde/restauration
