@@ -1,18 +1,72 @@
 import { MultiColumnFooter, } from '@docusaurus/theme-common';
 
 const footer: MultiColumnFooter = {
+  logo: {
+    alt: 'Yunohost Logo',
+    src: 'img/icons/ynh_logo_roundcorner.png',
+  },
   style: 'dark',
   links: [
     {
-      title: 'Commauieunity',
+      title: 'Legal',
       items: [
         {
-          label: 'Website',
-          href: 'https://yunohost.org/',
+          label: 'License',
+          href: 'https://github.com/YunoHost/yunohost/blob/dev/LICENSE',
+        },
+        {
+          label: 'CGUs',
+          href: 'https://doc.yunohost.org/terms_of_services'
+        },
+        {
+          label: 'Organization',
+          href: 'https://github.com/YunoHost/project-organization',
+        },
+      ],
+    },
+    {
+      title: 'Follow us',
+      items: [
+        {
+          label: 'Blog',
+          href: 'https://forum.yunohost.org/c/announcement/8/none',
+        },
+        {
+          label: 'Mastodon',
+          href: 'https://toot.aquilenet.fr/@yunohost'
+        },
+        {
+          label: 'Peertube',
+          href: 'https://videos.globenet.org/a/yunohost/videos?s=1',
+        },
+      ],
+    },
+    {
+      title: 'Use',
+      items: [
+        {
+          label: 'Documentation',
+          href: 'https://doc.yunohost.org/',
+        },
+        {
+          label: 'Apps catalog',
+          href: 'https://apps.yunohost.org/'
         },
         {
           label: 'Forum',
           href: 'https://forum.yunohost.org/',
+        },
+        {
+          label: 'Ask for help',
+          href: 'https://doc.yunohost.org/help',
+        },
+        {
+          label: 'Service status',
+          href: 'https://status.yunohost.org/',
+        },
+        {
+          label: 'Changelog',
+          href: 'https://github.com/YunoHost/yunohost/blob/dev/debian/changelog',
         },
       ],
     },
@@ -22,6 +76,10 @@ const footer: MultiColumnFooter = {
         {
           label: 'Donate',
           href: 'https://donate.yunohost.org/',
+        },
+        {
+          label: 'Issues',
+          href: 'https://github.com/YunoHost/issues/issues',
         },
         {
           label: 'GitHub (core)',
