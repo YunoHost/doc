@@ -26,7 +26,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-html[data-theme='dark'] {
+html[data-theme="dark"] {
   --ifm-color-primary: rgb(114, 182, 236);
   --ifm-color-primary-dark: rgb(83, 166, 232);
   --ifm-color-primary-darker: rgb(68, 158, 230);
@@ -42,22 +42,22 @@ html[data-theme='dark'] {
   --ifm-hero-background-color: oklch(0.243535 0 0);
 }
 
-[data-theme='light'] ::selection {
+[data-theme="light"] ::selection {
   background-color: color-mix(in srgb, var(--ifm-color-primary), white 60%);
 }
 
-[data-theme='dark'] ::selection {
+[data-theme="dark"] ::selection {
   background-color: color-mix(in hsl, var(--ifm-color-primary), black 50%);
 }
 
-[data-theme='light'] .footer {
+[data-theme="light"] .footer {
   --ifm-footer-background-color: var(--ifm-navbar-background-color);
   --ifm-footer-title-color: inherit;
   --ifm-footer-link-color: var(--ifm-color-primary);
   --ifm-footer-color: inherit;
 }
 
-[data-theme='dark'] .footer {
+[data-theme="dark"] .footer {
   --ifm-footer-background-color: var(--ifm-navbar-background-color);
   --ifm-footer-title-color: inherit;
   --ifm-footer-link-color: var(--ifm-color-primary);
@@ -66,16 +66,16 @@ html[data-theme='dark'] {
 
 /* Allows dynamic images based on light/dark mode */
 /* https://docusaurus.io/docs/markdown-features/assets#github-style-themed-images */
-[data-theme='light'] img[src$='#gh-dark-mode-only'],
-[data-theme='dark'] img[src$='#gh-light-mode-only'],
-[data-theme='light'] img.gh-dark-mode-only,
-[data-theme='dark'] img.gh-light-mode-only {
+[data-theme="light"] img[src$="#gh-dark-mode-only"],
+[data-theme="dark"] img[src$="#gh-light-mode-only"],
+[data-theme="light"] img.gh-dark-mode-only,
+[data-theme="dark"] img.gh-light-mode-only {
   display: none;
 }
 
-[data-theme='dark'] #ynhlogo,
-[data-theme='dark'] .navbar__logo,
-[data-theme='dark'] .sidebarLogo_isFc > img {
+[data-theme="dark"] #ynhlogo,
+[data-theme="dark"] .navbar__logo,
+[data-theme="dark"] .sidebarLogo_isFc > img {
   filter: invert(1);
 }
 
@@ -84,18 +84,28 @@ html[data-theme='dark'] {
 }
 
 /* This needs to be adapted to --ifm-navbar-link-hover-color */
-[data-theme='light'] .navbar__brand:hover > .navbar__logo {
+[data-theme="light"] .navbar__brand:hover > .navbar__logo {
   filter: invert(1) brightness(35%) sepia(100) saturate(400%) hue-rotate(174deg);
 }
 
-[data-theme='dark'] .navbar__brand:hover > .navbar__logo {
+[data-theme="dark"] .navbar__brand:hover > .navbar__logo {
   filter: invert(1) brightness(55%) sepia(100) saturate(300%) hue-rotate(174deg);
 }
 
-[data-theme='light'] img#whitelogo {
+[data-theme="light"] img#whitelogo {
   background-color: darkgray;
 }
 
-[data-theme='dark'] img#darklogo {
+[data-theme="dark"] img#darklogo {
   background-color: lightgray;
+}
+
+.navbar__title {
+  margin-top: 12px;
+  margin-left: -5px;
+  font-size: 1.3em;
+}
+
+.footer__logo {
+  max-width: 7em;
 }
