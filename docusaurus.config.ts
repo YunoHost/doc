@@ -9,7 +9,7 @@ import Footer from './footer.ts';
 
 function getUrl() : string {
   const isMain = process.env.BUILD_FOR === 'main';
-  return isMain ? 'https://doc.yunohost.org/' : 'https://nextdoc.yunohost.org/';
+  return isMain ? 'https://doc.yunohost.org/' : 'https://doc.next.yunohost.org/';
 }
 
 const config: Config = {
@@ -81,7 +81,7 @@ const config: Config = {
     },
     announcementBar: {
       id: 'beta-docusaurus',
-      content: '🛠️ This doc is in beta, please report any issues!',
+      content: '🛠️ This doc is in beta, please report any issues! The old doc <a target="_blank" href="https://doc.old.yunohost.org">is still accessible</a>. 🛠️',
       backgroundColor: 'darkOrange',
     },
     navbar: {
