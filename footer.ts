@@ -16,7 +16,7 @@ const footer: MultiColumnFooter = {
         },
         {
           label: 'CGUs',
-          href: 'https://doc.yunohost.org/terms_of_services'
+          href: '/community/terms_of_services'
         },
         {
           label: 'Organization',
@@ -46,7 +46,7 @@ const footer: MultiColumnFooter = {
       items: [
         {
           label: 'Documentation',
-          href: 'https://doc.yunohost.org/',
+          href: '/',
         },
         {
           label: 'Apps catalog',
@@ -58,7 +58,7 @@ const footer: MultiColumnFooter = {
         },
         {
           label: 'Ask for help',
-          href: 'https://doc.yunohost.org/help',
+          href: '/community/help',
         },
         {
           label: 'Service status',
