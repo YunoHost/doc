@@ -57,7 +57,7 @@ const config: Config = {
   plugins: [
     [
       '@docusaurus/plugin-client-redirects',
-      require('./redirects.js'),
+      require('./redirects.ts'),
     ],
     [
       require.resolve('docusaurus-lunr-search'),
