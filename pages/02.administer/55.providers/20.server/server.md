@@ -17,6 +17,7 @@ routes:
 - [Alsace Réseau Neutre](https://arn-fai.net) (VPS) <span class="ffdn">FFDN</span> <span class="chatons">CHATONS</span>
 - [ECOWAN](https://ecowan.fr) (VPS + Dédiée)
 - [Scaleway Dedibox](https://www.scaleway.com/en/dedibox/operating-systems/) (dedicated server)
+- [Numericoop](https://numericoop.fr/solution-sur-mesure/) (VPS) <span class="chatons">CHATONS</span>
 
 ## YunoHost IT outsourcing
 
