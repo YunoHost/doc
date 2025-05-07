@@ -68,6 +68,18 @@ function HomepageHeader() {
               </Translate>
           </Link>
       </div>
+      <br/>
+      <div className={styles.buttons}>
+          <Link
+              className="button button--secondary button--lg"
+              to="/dev/">
+              <Translate
+                  id="homepage.link.item.label.Community Documentation"
+                  description="The label for the link to Community documentation">
+                  Community
+              </Translate>
+          </Link>
+      </div>
     </center>
   );
 }

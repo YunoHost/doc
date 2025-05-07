@@ -94,18 +94,13 @@ const config: Config = {
       items: [
         // {type: 'docSidebar', sidebarId: 'user', label: 'User guide'},
         {type: 'docSidebar', sidebarId: 'admin', label: 'Administration'},
-        {type: 'docSidebar', sidebarId: 'community', label: 'Community'},
         {type: 'docSidebar', sidebarId: 'dev', label: 'Development'},
         {type: 'docSidebar', sidebarId: 'packaging', label: 'Packaging'},
+        {type: 'docSidebar', sidebarId: 'community', label: 'Community'},
 
         {
           type: "search",
           position: "right",
-        },
-        {
-          href: 'https://github.com/yunohost/doc',
-          label: 'GitHub',
-          position: 'right',
         },
         {
           type: 'docsVersionDropdown',
