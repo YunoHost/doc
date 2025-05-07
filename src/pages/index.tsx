@@ -13,8 +13,7 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <center>
-      <br/>
+    <div className={styles.heroBanner}>
       <img src={require('!!url-loader!/img/icons/logo-ynh.svg').default}
         alt={translate({ message: "YunoHost logo" })} id="ynhlogo" style={{ width: "9rem" }}/>
 
@@ -74,13 +73,13 @@ function HomepageHeader() {
               className="button button--secondary button--lg"
               to="/dev/">
               <Translate
-                  id="homepage.link.item.label.Community Documentation"
-                  description="The label for the link to Community documentation">
+                  id="homepage.link.item.label.Community"
+                  description="The label for the link to Community">
                   Community
               </Translate>
           </Link>
       </div>
-    </center>
+    </div>
   );
 }
 
