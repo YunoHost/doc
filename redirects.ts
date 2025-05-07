@@ -3,9 +3,6 @@ import { Options } from '@docusaurus/plugin-client-redirects';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const redirects_from_grav: Array<{ from: string; to: string }> = [
-    { from: '/email_configure_client',                  to: '/user/email_clients', },
-    { from: '/email_migration',                         to: '/user/email_migration', },
-
     { from: '/admindoc',                                to: '/admin', },
     { from: '/admin_interface',                         to: '/admin/webadmin', },
     { from: '/apps_overview',                           to: '/admin/apps/', },
@@ -14,6 +11,8 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/domains',                                 to: '/admin/domains/', },
     { from: '/certificate',                             to: '/admin/domains/certificate', },
     { from: '/email',                                   to: '/admin/email', },
+    { from: '/email_configure_client',                  to: '/admin/email/email_clients', },
+    { from: '/email_migration',                         to: '/admin/email/email_migration', },
     { from: '/guidelines',                              to: '/admin/guidelines', },
     { from: '/update',                                  to: '/admin/upgrade/', },
     { from: '/buster_bullseye_migration',               to: '/admin/upgrade/11.0-bullseye', },
