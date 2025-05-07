@@ -102,10 +102,10 @@ const config: Config = {
           type: "search",
           position: "right",
         },
-        {
-          type: 'docsVersionDropdown',
-          position: 'right',
-        },
+        // {
+        //   type: 'docsVersionDropdown',
+        //   position: 'right',
+        // },
         {
           type: 'localeDropdown',
           position: 'right',
