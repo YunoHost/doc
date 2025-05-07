@@ -138,5 +138,45 @@
   "sidebar.packaging.category.The scripts": {
     "message": "The scripts",
     "description": "The label for category The scripts in sidebar packaging"
+  },
+  "sidebar.admin.category.Emails": {
+    "message": "Emails",
+    "description": "The label for category Emails in sidebar admin"
+  },
+  "sidebar.devpackaging.category.Write documentation": {
+    "message": "Write documentation",
+    "description": "The label for category Write documentation in sidebar devpackaging"
+  },
+  "sidebar.devpackaging.category.Contribute to the core": {
+    "message": "Contribute to the core",
+    "description": "The label for category Contribute to the core in sidebar devpackaging"
+  },
+  "sidebar.devpackaging.category.Packaging applications": {
+    "message": "Packaging applications",
+    "description": "The label for category Packaging applications in sidebar devpackaging"
+  },
+  "sidebar.devpackaging.category.The manifest": {
+    "message": "The manifest",
+    "description": "The label for category The manifest in sidebar devpackaging"
+  },
+  "sidebar.devpackaging.category.The scripts": {
+    "message": "The scripts",
+    "description": "The label for category The scripts in sidebar devpackaging"
+  },
+  "sidebar.devpackaging.category.Advanced": {
+    "message": "Advanced",
+    "description": "The label for category Advanced in sidebar devpackaging"
+  },
+  "sidebar.devpackaging.category.Advanced.link.generated-index.title": {
+    "message": "Advanced",
+    "description": "The generated-index page title for category Advanced in sidebar devpackaging"
+  },
+  "sidebar.devpackaging.category.Misc resources": {
+    "message": "Misc resources",
+    "description": "The label for category Misc resources in sidebar devpackaging"
+  },
+  "sidebar.devpackaging.category.Misc resources.link.generated-index.title": {
+    "message": "Misc resources",
+    "description": "The generated-index page title for category Misc resources in sidebar devpackaging"
   }
 }

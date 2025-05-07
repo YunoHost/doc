@@ -235,7 +235,7 @@
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "Docs sidebar",
+    "message": "Barre latérale",
     "description": "The ARIA label for the sidebar navigation"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
@@ -314,29 +314,25 @@
     "message": "You will be redirected soon to {description}. If that doesn't work, please go to: "
   },
   "homepage.link.item.label.Install Documentation": {
-    "message": "Install YunoHost !",
+    "message": "Installer YunoHost !",
     "description": "The label for the link to Install documentation"
   },
-  "homepage.link.item.label.User Documentation": {
-    "message": "User Documentation",
-    "description": "The label for the link to user documentation"
-  },
   "homepage.link.item.label.Admin Documentation": {
-    "message": "Admin Documentation",
+    "message": "Documentation Administrateur",
     "description": "The label for the link to admin documentation"
-  },
-  "homepage.link.item.label.Developer Documentation": {
-    "message": "Developer Documentation",
-    "description": "The label for the link to developer documentation"
-  },
-  "homepage.link.item.label.Packaging Documentation": {
-    "message": "Packaging Documentation",
-    "description": "The label for the link to Packaging documentation"
   },
   "YunoHost logo": {
     "message": "Logo YunoHost"
   },
   "Learn how to self-host!": {
     "message": "Apprenez à vous auto-héberger !"
+  },
+  "homepage.link.item.label.Development and packaging Documentation": {
+    "message": "Développement et packaging",
+    "description": "The label for the link to development and packaging documentation"
+  },
+  "homepage.link.item.label.Community": {
+    "message": "Communauté",
+    "description": "The label for the link to Community"
   }
 }

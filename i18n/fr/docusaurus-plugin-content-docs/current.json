@@ -4,11 +4,11 @@
     "description": "The label for version current"
   },
   "sidebar.admin.category.Providers": {
-    "message": "Providers",
+    "message": "Fournisseurs",
     "description": "The label for category Providers in sidebar admin"
   },
   "sidebar.admin.category.Providers.link.generated-index.title": {
-    "message": "Providers",
+    "message": "Fournisseurs",
     "description": "The generated-index page title for category Providers in sidebar admin"
   },
   "sidebar.admin.category.Registrars": {
@@ -20,7 +20,7 @@
     "description": "The label for category OVH in sidebar admin"
   },
   "sidebar.admin.category.Install": {
-    "message": "Install",
+    "message": "Installer",
     "description": "The label for category Install in sidebar admin"
   },
   "sidebar.admin.category.Installer sur...": {
@@ -28,11 +28,11 @@
     "description": "The label for category Installer sur... in sidebar admin"
   },
   "sidebar.admin.category.After installation": {
-    "message": "After installation",
+    "message": "Après l'installation",
     "description": "The label for category After installation in sidebar admin"
   },
   "sidebar.admin.category.After installation.link.generated-index.description": {
-    "message": "Configure your network to access your server",
+    "message": "Configurer l'accès réseau de votre serveur",
     "description": "The generated-index page description for category After installation in sidebar admin"
   },
   "sidebar.admin.category.Les utilisateurs et le SSO": {
@@ -48,27 +48,27 @@
     "description": "The label for category Les applications in sidebar admin"
   },
   "sidebar.admin.category.Backups": {
-    "message": "Backups",
+    "message": "Sauvegardes",
     "description": "The label for category Backups in sidebar admin"
   },
   "sidebar.admin.category.Backups.link.generated-index.title": {
-    "message": "Backups",
+    "message": "Sauvegardes",
     "description": "The generated-index page title for category Backups in sidebar admin"
   },
   "sidebar.admin.category.Tutorials": {
-    "message": "Tutorials",
+    "message": "Tutoriels",
     "description": "The label for category Tutorials in sidebar admin"
   },
   "sidebar.admin.category.Tutorials.link.generated-index.title": {
-    "message": "Tutorials",
+    "message": "Tutoriels",
     "description": "The generated-index page title for category Tutorials in sidebar admin"
   },
   "sidebar.admin.category.Domains": {
-    "message": "Domains",
+    "message": "Domaines",
     "description": "The label for category Domains in sidebar admin"
   },
   "sidebar.admin.category.Domains.link.generated-index.title": {
-    "message": "Domains",
+    "message": "Domaines",
     "description": "The generated-index page title for category Domains in sidebar admin"
   },
   "sidebar.admin.category.Dépannage": {
@@ -92,19 +92,19 @@
     "description": "The label for category Contribuer au cœur de YunoHost in sidebar dev"
   },
   "sidebar.packaging.category.Advanced": {
-    "message": "Advanced",
+    "message": "Avancé",
     "description": "The label for category Advanced in sidebar packaging"
   },
   "sidebar.packaging.category.Advanced.link.generated-index.title": {
-    "message": "Advanced",
+    "message": "Avancé",
     "description": "The generated-index page title for category Advanced in sidebar packaging"
   },
   "sidebar.packaging.category.Misc resources": {
-    "message": "Misc resources",
+    "message": "Resources",
     "description": "The label for category Misc resources in sidebar packaging"
   },
   "sidebar.packaging.category.Misc resources.link.generated-index.title": {
-    "message": "Misc resources",
+    "message": "Resources",
     "description": "The generated-index page title for category Misc resources in sidebar packaging"
   },
   "sidebar.user.link.App Store": {
@@ -132,11 +132,51 @@
     "description": "The label for link App Store in sidebar admin, linking to https://apps.yunohost.org"
   },
   "sidebar.packaging.category.The manifest": {
-    "message": "The manifest",
+    "message": "Le manifeste",
     "description": "The label for category The manifest in sidebar packaging"
   },
   "sidebar.packaging.category.The scripts": {
-    "message": "The scripts",
+    "message": "Les scripts",
     "description": "The label for category The scripts in sidebar packaging"
+  },
+  "sidebar.admin.category.Courriels": {
+    "message": "Courriels",
+    "description": "The label for category Courriels in sidebar admin"
+  },
+  "sidebar.devpackaging.category.Rédaction de la documentation": {
+    "message": "Rédaction de la documentation",
+    "description": "The label for category Rédaction de la documentation in sidebar devpackaging"
+  },
+  "sidebar.devpackaging.category.Contribuer au cœur de YunoHost": {
+    "message": "Contribuer au cœur de YunoHost",
+    "description": "The label for category Contribuer au cœur de YunoHost in sidebar devpackaging"
+  },
+  "sidebar.devpackaging.category.Packaging applications": {
+    "message": "Packager des applis",
+    "description": "The label for category Packaging applications in sidebar devpackaging"
+  },
+  "sidebar.devpackaging.category.The manifest": {
+    "message": "Le manifeste",
+    "description": "The label for category The manifest in sidebar devpackaging"
+  },
+  "sidebar.devpackaging.category.The scripts": {
+    "message": "Les scripts",
+    "description": "The label for category The scripts in sidebar devpackaging"
+  },
+  "sidebar.devpackaging.category.Advanced": {
+    "message": "Avancé",
+    "description": "The label for category Advanced in sidebar devpackaging"
+  },
+  "sidebar.devpackaging.category.Advanced.link.generated-index.title": {
+    "message": "Avancé",
+    "description": "The generated-index page title for category Advanced in sidebar devpackaging"
+  },
+  "sidebar.devpackaging.category.Misc resources": {
+    "message": "Divers",
+    "description": "The label for category Misc resources in sidebar devpackaging"
+  },
+  "sidebar.devpackaging.category.Misc resources.link.generated-index.title": {
+    "message": "Divers",
+    "description": "The generated-index page title for category Misc resources in sidebar devpackaging"
   }
 }

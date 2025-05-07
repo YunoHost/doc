@@ -1,26 +1,18 @@
 {
-  "link.title.Community": {
-    "message": "Community",
-    "description": "The title of the footer links column with title=Community in the footer"
-  },
   "copyright": {
-    "message": "Build with Docusaurus for YunoHost",
+    "message": "Créé avec Docusaurus pour YunoHost",
     "description": "The footer copyright"
   },
   "link.title.Contribute": {
-    "message": "Contribute",
+    "message": "Contribuer",
     "description": "The title of the footer links column with title=Contribute in the footer"
-  },
-  "link.item.label.Website": {
-    "message": "Website",
-    "description": "The label of footer link with label=Website linking to https://yunohost.org/"
   },
   "link.item.label.Forum": {
     "message": "Forum",
     "description": "The label of footer link with label=Forum linking to https://forum.yunohost.org/"
   },
   "link.item.label.Donate": {
-    "message": "Donate",
+    "message": "Donner",
     "description": "The label of footer link with label=Donate linking to https://donate.yunohost.org/"
   },
   "link.item.label.GitHub (core)": {
@@ -32,7 +24,71 @@
     "description": "The label of footer link with label=GitHub (apps) linking to https://github.com/YunoHost-Apps"
   },
   "link.item.label.Translate": {
-    "message": "Translate",
+    "message": "Traduire",
     "description": "The label of footer link with label=Translate linking to https://translate.yunohost.org/"
+  },
+  "link.title.Legal": {
+    "message": "Infos Légales",
+    "description": "The title of the footer links column with title=Legal in the footer"
+  },
+  "link.title.Follow us": {
+    "message": "Nous suivre",
+    "description": "The title of the footer links column with title=Follow us in the footer"
+  },
+  "link.title.Use": {
+    "message": "Utiliser",
+    "description": "The title of the footer links column with title=Use in the footer"
+  },
+  "link.item.label.License": {
+    "message": "Licenses",
+    "description": "The label of footer link with label=License linking to https://github.com/YunoHost/yunohost/blob/dev/LICENSE"
+  },
+  "link.item.label.CGUs": {
+    "message": "CGUs",
+    "description": "The label of footer link with label=CGUs linking to https://doc.yunohost.org/terms_of_services"
+  },
+  "link.item.label.Organization": {
+    "message": "Organisation",
+    "description": "The label of footer link with label=Organization linking to https://github.com/YunoHost/project-organization"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to https://forum.yunohost.org/c/announcement/8/none"
+  },
+  "link.item.label.Mastodon": {
+    "message": "Mastodon",
+    "description": "The label of footer link with label=Mastodon linking to https://toot.aquilenet.fr/@yunohost"
+  },
+  "link.item.label.Peertube": {
+    "message": "Peertube",
+    "description": "The label of footer link with label=Peertube linking to https://videos.globenet.org/a/yunohost/videos?s=1"
+  },
+  "link.item.label.Documentation": {
+    "message": "Documentation",
+    "description": "The label of footer link with label=Documentation linking to https://doc.yunohost.org/"
+  },
+  "link.item.label.Apps catalog": {
+    "message": "Catalogue des applis",
+    "description": "The label of footer link with label=Apps catalog linking to https://apps.yunohost.org/"
+  },
+  "link.item.label.Ask for help": {
+    "message": "Demander de l'aide",
+    "description": "The label of footer link with label=Ask for help linking to https://doc.yunohost.org/help"
+  },
+  "link.item.label.Service status": {
+    "message": "Statut des services",
+    "description": "The label of footer link with label=Service status linking to https://status.yunohost.org/"
+  },
+  "link.item.label.Changelog": {
+    "message": "Historique des changements",
+    "description": "The label of footer link with label=Changelog linking to https://github.com/YunoHost/yunohost/blob/dev/debian/changelog"
+  },
+  "link.item.label.Issues": {
+    "message": "Tickets",
+    "description": "The label of footer link with label=Issues linking to https://github.com/YunoHost/issues/issues"
+  },
+  "logo.alt": {
+    "message": "Yunohost Logo",
+    "description": "The alt text of footer logo"
   }
 }
