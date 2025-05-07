@@ -75,8 +75,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title}`}
-      description="Semalibre SCOP <head />">
+      title={siteConfig.title}
+      description={siteConfig.tagline}>
       <HomepageHeader />
       {/* <main>
         <HomepageFeatures />
