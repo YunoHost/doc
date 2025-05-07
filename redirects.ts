@@ -108,8 +108,12 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/packaging_testing',                       to: '/packaging/test', },
 ];
 
+const en_redirects_from_grav: Array<{ from: string; to: string }> = redirects_from_grav.map(
+  item => ({ from: '/en' + item.from, to: item.to})
+);
+
 const redirects: Options = {
-    redirects: [...redirects_from_grav],
+    redirects: [...redirects_from_grav, ...en_redirects_from_grav],
 };
 
 export default redirects;
