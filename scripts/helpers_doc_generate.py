@@ -79,7 +79,7 @@ def get_helpers_tree(helpers_version: str) -> dict[str, dict]:
         },
     }
     if helpers_version == "2.1":
-        tree["misc"]["subsections"][0] = "_utils"  # type: ignore
+        tree["misc"]["subsections"][0] = "0-utils"  # type: ignore
 
     return tree
 
