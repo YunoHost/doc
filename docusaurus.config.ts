@@ -81,7 +81,7 @@ const config: Config = {
     },
     announcementBar: {
       id: 'beta-docusaurus',
-      content: '🛠️ This doc is in beta, please report any issues! The old doc <a target="_blank" href="https://doc.old.yunohost.org">is still accessible</a>. 🛠️',
+      content: '🛠️ This doc is very new, please report any issues! The old doc <a target="_blank" href="https://doc.old.yunohost.org">is still accessible</a>. 🛠️',
       backgroundColor: 'darkOrange',
     },
     navbar: {
