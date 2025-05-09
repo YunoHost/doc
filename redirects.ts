@@ -49,6 +49,7 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/theming',                                 to: '/admin/tutorials/theming', },
     { from: '/torhiddenservice',                        to: '/admin/tutorials/torhiddenservice', },
     { from: '/howtohostyourself',                       to: '/admin/install/', },
+    { from: '/install',                                 to: '/admin/install/', },
     { from: '/install_on_top_of_debian',                to: '/admin/install/install_on/on_top_of_debian', },
     { from: '/dns_config',                              to: '/admin/install/post_install/dns_config', },
     { from: '/finding_the_local_ip',                    to: '/admin/install/post_install/find_ip', },
