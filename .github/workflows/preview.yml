@@ -1,0 +1,78 @@
+name: Docs Preview (PR)
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  pull-requests: write
+
+concurrency:
+  group: pr-${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build Docs
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: yarn
+
+      - name: Installation
+        run: yarn
+
+      - name: Check translations pages consistency
+        run: python3 ./scripts/check_i18n_consistency.py
+
+      - name: Build docs
+        run: |
+          echo "Using baseUrl=$BASE_URL"
+          yarn build
+        env:
+          BASE_URL: /${{ github.event.repository.name }}/
+
+      - name: Move built docs to PR-specific folder
+        run: |
+          mkdir -p pr-${{ github.event.pull_request.number }}
+          mv build/* pr-${{ github.event.pull_request.number }}/
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: pr-${{ github.event.pull_request.number }}/
+
+  deploy:
+    name: Deploy preview to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: preview
+      
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+
+      - name: Comment on PR with preview link
+        uses: thollander/actions-comment-pull-request@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          pr-number: ${{ github.event.pull_request.number }}
+          comment-tag: gh-pages-preview
+          mode: recreate
+          message: |
+            ✅ Preview deployed for this PR!  
+            🌍 [View the documentation preview](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/)
