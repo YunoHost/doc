@@ -2,7 +2,7 @@
 
 This repository contains the code for [the YunoHost documentation](https://doc.yunohost.org).
 
-It is built using [Docusaurus 2](https://docusaurus.io), a modern static website generator.
+It is built using [Docusaurus 3](https://docusaurus.io), a modern static website generator.
 
 Please report issues on [the YunoHost bugtracker](https://github.com/YunoHost/issues/issues).
 
