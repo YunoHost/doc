@@ -47,7 +47,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editLocalizedFiles: true,
           routeBasePath: '/',
-          editUrl: 'https://github.com/YunoHost/doc/tree/docusaurus',
+          editUrl: 'https://github.com/YunoHost/doc/tree/main',
         },
         theme: {
           customCss: './src/css/custom.css',
