@@ -10,5 +10,5 @@ Please report issues on [the YunoHost bugtracker](https://github.com/YunoHost/is
 > Package documentation should be done in the package repository itself, under the `/doc` folder.  
 > You can learn about it here: <https://doc.yunohost.org/contribute/apps/doc>
 
-The how-to of this repository is [available online](https://doc.yunohost.org/contribute/doc)
-and also [in this repository](./docs/06.contribute/05.doc/index.mdx).
+The how-to of this repository is [available online](https://doc.yunohost.org/dev/doc/)
+and also [in this repository](./docs/dev/05.doc/index.mdx).
