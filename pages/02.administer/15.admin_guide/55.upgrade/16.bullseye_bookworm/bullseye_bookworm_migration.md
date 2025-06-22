@@ -7,7 +7,7 @@ routes:
   default: '/bullseye_bookworm_migration'
 ---
 
-This page is dedicated to help you migrating an instance from YunoHost 11.x (running on Debian Bullseye) to YunoHost 12 (running on Debian Bookworm).
+This page is dedicated to help you migrating an instance from YunoHost 11.x (running on Debian Bullseye) to YunoHost 12 (running on Debian Bookworm). The Yunohost tools will migrate both the Debian system from Bullseye to Bookworm AND the Yunohost packages. Do not use the Debian tools for that (unless you know what you do).
 
 ## Important notes
 
