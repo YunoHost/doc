@@ -12,6 +12,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 import InstallScript from "./_install_script.mdx";
+import InitialConfiguration from "./_configuration.mdx";
 
 :::danger
 This setup is mainly meant for local testing by advanced users. Due to limitations on WSL's side (changing IP address, notably), selfhosting from it can be tricky and will not be described here.
@@ -156,3 +157,5 @@ cd ~
 wsl --unregister YunoHost
 wsl --import YunoHost .\WSL\YunoHost .\WSL\YunoHost.tar.gz --version 2
 ```
+
+<InitialConfiguration />
