@@ -109,3 +109,12 @@ html[data-theme="dark"] {
 .footer__logo {
   max-width: 7em;
 }
+
+.hidden {
+  display: none !important;
+}
+
+.hidden_menu_caret button.menu__caret {
+	display: none !important;
+}
+
