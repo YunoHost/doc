@@ -3,9 +3,13 @@ title: What is YunoHost?
 description: " "
 ---
 
-<img src={require('/img/icons/logo-ynh_horizontal.png').default} alt="YunoHost logo" id="ynhlogo" style={{display: "block", textAlign: "center", margin: "auto"}}/>
+<img src={require('/img/icons/logo-ynh_horizontal.png').default} alt="YunoHost logo" id="ynhlogo" style={{display: "block", textAlign: "center", margin: "auto", max-width: "300px", margin-bottom: "1.5em"}}/>
 
-YunoHost is an **operating system** aiming to simplify **server administration** and therefore democratize [self-hosting](/admin/self_hosting) while making sure it stays reliable, secure, ethical and lightweight. It is a copylefted libre software project maintained exclusively by volunteers. Technically, it can be seen as a distribution based on [Debian GNU/Linux](https://debian.org) and can be installed on [many kinds of hardware](/admin/install/install_on).
+YunoHost is an **operating system** aiming to simplify **server administration** and therefore democratize [self-hosting](/admin/self_hosting) while making sure it stays reliable, secure, ethical and lightweight. It is a copylefted libre software project maintained by volunteers. Technically, it can be seen as a server distribution based on [Debian GNU/Linux](https://debian.org).
+
+YunoHost can be installed on [many kinds of hardware](/admin/install/install_on), either at home or on a remote server (VPS).
+
+![General representation of a YunoHost server installation](/img/internet_topologies_with_ynh.png?resize=600)
 
 ## Features
 
@@ -17,7 +21,6 @@ YunoHost is an **operating system** aiming to simplify **server administration**
 - <SmallInline url='/img/icons/icon-medic.png' alt="medic logo"/> Create and restore **backups**;
 - <SmallInline url='/img/icons/icon-door.png' alt="door logo"/> Connect to all apps simultaneously through the **user portal** <small>(NGINX, SSOwat)</small>;
 - <SmallInline url='/img/icons/icon-mail.png' alt="mail logo"/> Includes a **full e-mail stack** <small>(Postfix, Dovecot, Rspamd, DKIM)</small>;
-- <SmallInline url='/img/icons/icon-messaging.png' alt="messaging logo"/>... as well as **an instant messaging server** <small>(XMPP)</small>
 - <SmallInline url='/img/icons/icon-lock.png' alt="lock logo"/> Manages **SSL certificates** <small>(based on Let's Encrypt)</small>;
 - <SmallInline url='/img/icons/icon-shield.png' alt="shield logo"/>... and **security systems** <small>(`fail2ban`, `yunohost-firewall`)</small>.
 
@@ -48,7 +51,7 @@ You can host your friends, your family and your company safely and with ease, bu
 
 ## Artworks
 
-Black and white YunoHost PNG logo by ToZz (400 × 400 px). Licence: CC-BY-SA 4.0. Logos and other artwork are available in [the Artworks repository](https://github.com/YunoHost/yunohost-artwork).
+Black and white YunoHost by ToZz. Licence: CC-BY-SA 4.0. Logos and other artwork are available in [the Artworks repository](https://github.com/YunoHost/yunohost-artwork).
 
 <img src="https://raw.githubusercontent.com/YunoHost/yunohost-artwork/refs/heads/main/logos/png/yunohost-logo_black.png" width="220" id="darklogo"/>
 <img src="https://raw.githubusercontent.com/YunoHost/yunohost-artwork/refs/heads/main/logos/png/yunohost-logo_white.png" width="220" id="whitelogo"/>

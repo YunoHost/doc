@@ -3,16 +3,15 @@ title: What is YunoHost?
 description: " "
 ---
 
-<img src={require('/img/icons/logo-ynh_horizontal.png').default} alt="YunoHost logo" id="ynhlogo" style={{display: "block", textAlign: "center", margin: "auto"}}/>
+<img src={require('/img/icons/logo-ynh_horizontal.png').default} alt="YunoHost logo" id="ynhlogo" style={{display: "block", textAlign: "center", margin: "auto", max-width: "300px", margin-bottom: "1.5em"}}/>
 
-YunoHost è un **sistema operativo** che mira a rendere il più semplice possibile l'amministrazione di un **server**  e quindi a permettere ad un numero sempre maggiore di persone di avvicinarsi al [self-hosting](/admin/self_hosting), assicurandosi che la gestione del server rimanga affidabile, sicura ed etica. Si tratta di un progetto basato su software libero e copyleft gestito esclusivamente da volontari. Tecnicamente YunoHost può essere vista come una distribuzione basata su [Debian GNU/Linux](https://debian.org) che può essere installata su [diverse tipologie di hardware](/admin/install.
+YunoHost è un **sistema operativo** che mira a rendere il più semplice possibile l'amministrazione di un **server**  e quindi a permettere ad un numero sempre maggiore di persone di avvicinarsi al [self-hosting](/admin/self_hosting), assicurandosi che la gestione del server rimanga affidabile, sicura ed etica. Si tratta di un progetto basato su software libero e copyleft gestito esclusivamente da volontari. Tecnicamente YunoHost può essere vista come una distribuzione basata su [Debian GNU/Linux](https://debian.org).
+
+YunoHost can be installed on [many kinds of hardware](/admin/install/install_on), either at home or on a remote server (VPS).
+
+![General representation of a YunoHost server installation](/img/internet_topologies_with_ynh.png?resize=600)
 
 ## Caratteristiche
-
-import useBaseUrl from '@docusaurus/useBaseUrl'
-export function SmallInline({url, alt}) {
-  return (<img src={useBaseUrl(url)} width="32" style={{verticalAlign: "middle", margin: "5px"}} alt={alt}/>);
-}
 
 - <SmallInline url='/img/icons/logo-debian.png' alt="debian logo"/> Based on Debian, for a trustworthy & familiar base;
 - <SmallInline url='/img/icons/icon-tools.png' alt="tools logo"/> Administer your server through a **friendly web interface** as well as a handy CLI;
@@ -22,7 +21,6 @@ export function SmallInline({url, alt}) {
 - <SmallInline url='/img/icons/icon-medic.png' alt="medic logo"/> Create and restore **backups**;
 - <SmallInline url='/img/icons/icon-door.png' alt="door logo"/> Connect to all apps simultaneously through the **user portal** <small>(NGINX, SSOwat)</small>;
 - <SmallInline url='/img/icons/icon-mail.png' alt="mail logo"/> Includes a **full e-mail stack** <small>(Postfix, Dovecot, Rspamd, DKIM)</small>;
-- <SmallInline url='/img/icons/icon-messaging.png' alt="messaging logo"/>... as well as **an instant messaging server** <small>(XMPP)</small>
 - <SmallInline url='/img/icons/icon-lock.png' alt="lock logo"/> Manages **SSL certificates** <small>(based on Let's Encrypt)</small>;
 - <SmallInline url='/img/icons/icon-shield.png' alt="shield logo"/>... and **security systems** <small>(`fail2ban`, `yunohost-firewall`)</small>.
 
@@ -53,7 +51,7 @@ Potete ospitare i vostri amici, la vostra famiglia e la vostra azienda in tutta 
 
 ## Logo
 
-Il logo PNG di YunoHost in bianco e nero di ToZz (400 × 400 px). Licence: CC-BY-SA 4.0. Logos and other artwork are available in [the Artworks repository](https://github.com/YunoHost/yunohost-artwork).
+Il logo di YunoHost in bianco e nero di ToZz. Licence: CC-BY-SA 4.0. Logos and other artwork are available in [the Artworks repository](https://github.com/YunoHost/yunohost-artwork).
 
 <img src="https://raw.githubusercontent.com/YunoHost/yunohost-artwork/refs/heads/main/logos/png/yunohost-logo_black.png" width="220" id="darklogo"/>
 <img src="https://raw.githubusercontent.com/YunoHost/yunohost-artwork/refs/heads/main/logos/png/yunohost-logo_white.png" width="220" id="whitelogo"/>
