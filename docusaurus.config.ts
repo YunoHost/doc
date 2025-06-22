@@ -96,6 +96,7 @@ const config: Config = {
         {type: 'docSidebar', sidebarId: 'admin', label: 'Administration'},
         {type: 'docSidebar', sidebarId: 'devpackaging', label: 'Development and packaging'},
         {type: 'docSidebar', sidebarId: 'community', label: 'Community'},
+        {label: 'Apps catalog', href: 'https://apps.yunohost.org/'},
 
         {
           type: "search",
