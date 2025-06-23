@@ -28,7 +28,7 @@ function HomepageHeader() {
         <br />
         <Link
           className="button button--secondary button--lg"
-          to="/admin/install"
+          to="/admin/get_started/install_on"
           style={{ backgroundColor: `rgb(76, 195, 74)` }}
         >
           <Translate
