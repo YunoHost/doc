@@ -12,7 +12,7 @@ Questa pagina cercherà di trovare il problema, riottenere l'accesso ed eventual
 
 Controlla di riuscire ad accedere al server usando l'IP pubblico (lo puoi trovare su [https://ip.yunohost.org](https://ip.yunohost.org)). Se questo non funziona:
 
-- Assicurati di aver [impostato il forwarding](/admin/install/post_install/port_forwarding).
+- Assicurati di aver [impostato il forwarding](/admin/get_started/post_install/port_forwarding).
 - Alcuni ISP non supportano l'*hairpinning*, cosa che ti impedirà di raggiungere il tuo server dal nome di dominio dalla rete locale. Nel caso puoi usare una connessione cellulare o modificare il file `hosts` del tuo computer in modo da associare il nome di dominio all'indirizzo IP locale invece che a quello pubblico.
 
 ### Configura i record DNS
@@ -21,7 +21,7 @@ Controlla di riuscire ad accedere al server usando l'IP pubblico (lo puoi trovar
 Questo non è un problema se stai usando un dominio fornito da `nohost.me`, `noho.st` or `ynh.fr`
 :::
 
-Devi configurare i tuoi [record DNS](/admin/install/post_install/dns_config) (come minimo i record `A` e `AAAA` se usi una connessione IPv6).
+Devi configurare i tuoi [record DNS](/admin/get_started/post_install/dns_config) (come minimo i record `A` e `AAAA` se usi una connessione IPv6).
 
 Puoi verificare la correttezza dei record DNS confrontando i risultati dati da [questo servizio](https://www.whatsmydns.net/) con l'[IP restituito dal nostro servizio](https://ip.yunohost.org).
 

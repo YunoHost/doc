@@ -9,7 +9,7 @@ YunoHost permette l'installazione e la gestione di più domini sullo stesso serv
 
 I domini possono essere configurati a partire dalla sezione 'Domini' della pagina webadmin, o attraverso la sezione `yunohost domain` da linea di comando.
 
-Ogni volta che aggiungete un dominio, sia esso vostro o del quale abbiate facoltà di gestione, dovete averne il pieno controllo per la poter effettuare la [configurazione del DNS](/admin/install/post_install/dns_config). Fanno eccezione i [domini in .nohost.me, .noho.st et ynh.fr](/admin/tutorials/domains/dns_nohost_me) offerti dal progetto YunoHost, che possono essere direttamente integrati nel vostro server YunoHost grazie alla configurazione automatica di un servizio DynDns. Al fine di impedire abusi e limitare i costi, un'istanza YunoHost può essere configurata con un solo dominio offerto, tuttavia potete aggiungere tutti i suoi sottodomini che desiderate. Ad esempio, se scegliete il dominio `exemple.ynh.fr` potrete in un secondo tempo aggiungere i domini `video.exemple.ynh.fr` o `www.exemple.ynh.fr` o qualsiasi altro sottodominio che possa servirvi.
+Ogni volta che aggiungete un dominio, sia esso vostro o del quale abbiate facoltà di gestione, dovete averne il pieno controllo per la poter effettuare la [configurazione del DNS](/admin/get_started/post_install/dns_config). Fanno eccezione i [domini in .nohost.me, .noho.st et ynh.fr](/admin/tutorials/domains/dns_nohost_me) offerti dal progetto YunoHost, che possono essere direttamente integrati nel vostro server YunoHost grazie alla configurazione automatica di un servizio DynDns. Al fine di impedire abusi e limitare i costi, un'istanza YunoHost può essere configurata con un solo dominio offerto, tuttavia potete aggiungere tutti i suoi sottodomini che desiderate. Ad esempio, se scegliete il dominio `exemple.ynh.fr` potrete in un secondo tempo aggiungere i domini `video.exemple.ynh.fr` o `www.exemple.ynh.fr` o qualsiasi altro sottodominio che possa servirvi.
 
 I domini possono essere configurati a partire dalla sezione 'Domini' della pagina webadmin, o attraverso la sezione `yunohost domain` da linea di comando.
 
@@ -20,7 +20,7 @@ I domini possono essere configurati a partire dalla sezione 'Domini' della pagin
 <Tabs>
 <TabItem value="nohost" label="Yunohost's domains (the free and easy way)">
 
-Al fine di facillitare la gestione di un server, il progetto YunoHost fornisce un servizio di nomi di dominio *gratuiti* e *automaticamente configurati*. Utilizzando questo servizio, non dovrete [configurare i record DNS](/admin/install/post_install/dns_config) operazione delicata e tecnica. Prendete atto del fatto che non sarete i veri proprietari del dominio scelto.
+Al fine di facillitare la gestione di un server, il progetto YunoHost fornisce un servizio di nomi di dominio *gratuiti* e *automaticamente configurati*. Utilizzando questo servizio, non dovrete [configurare i record DNS](/admin/get_started/post_install/dns_config) operazione delicata e tecnica. Prendete atto del fatto che non sarete i veri proprietari del dominio scelto.
 
 Sono disponibili i seguenti (sotto) domini:
 
@@ -48,13 +48,13 @@ Possedere un proprio dominio comporta molti vantaggi:
 - maggiore controllo e maggiore autonomia
 - un nome più semplice e più chiaro (con il solo .net, .org, ecc dopo il nome del dominio).
 
-Avere un proprio dominio implica però dei costi (a partire da circa 15€ per anno...) e dovrete effettuare alcune [configurazioni sulla zona DNS](/admin/install/post_install/dns_config). Lo strumento di diagnostica integrato in YunoHost, può esservi di aiuto nella configurazione dei record DNS.
+Avere un proprio dominio implica però dei costi (a partire da circa 15€ per anno...) e dovrete effettuare alcune [configurazioni sulla zona DNS](/admin/get_started/post_install/dns_config). Lo strumento di diagnostica integrato in YunoHost, può esservi di aiuto nella configurazione dei record DNS.
 
 Se già possedete un nome di dominio, dovete semplicemente scegliere "Ho già un nome di dominio…". Nel caso non abbiate ancora un vostro dominio, vi suggeriamo di acquistarlo presso un registrar con [API supportate da YunoHost](/admin/self_hosting/providers/registrar/) semplificando così la configurazione del DNS.
 
 ![Pagina "Aggiungere un dominio" dove potere scegliere "Ho già un nome di dominio"](/img/webadmin/webadmin_domain_owndomain.png)
 
-[Ulteriori informazioni sulla zona DNS](/admin/install/post_install/dns_config)
+[Ulteriori informazioni sulla zona DNS](/admin/get_started/post_install/dns_config)
 
 </TabItem>
 <TabItem value="local" label="Local domains (only reachable in your local network)">
