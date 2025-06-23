@@ -23,6 +23,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Check image paths consistency
+        run: scripts/check_missing_or_bad_image_path.sh
+
       - name: Set up Python
         uses: actions/setup-python@v5
       - name: Set up Node
