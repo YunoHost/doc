@@ -28,13 +28,35 @@ Note that even if you close the webadmin page for some reason, the migration wil
 
 ### From the command line
 
-Just run :
+Run :
 
 ```bash
 sudo yunohost tools migrations run
 ```
 
 then read carefully and accept the disclaimer.
+
+#### Checking the update 
+
+Run one or more of the following commands to check the system actually updated. Sometimes some parts of the migration/upgrade don't happen.
+
+```lsb_release -a```
+
+```cat /etc/debian_version```
+
+```yunohost --version```
+
+#### Forcing part of the update to run
+Several people have received alerts that the upgrade process successfully completed, but their system still shows they are running Debian Bullseye (11). If this happens to you, you can run:
+```yunohost 
+tools migrations run 0027_migrate_to_bookworm --force-rerun --accept-disclaimer
+```
+
+#### Agreeing to the new Terms of Service via command line
+The process 0027 has a section where you have to manually agree to the new Terms of Service in Yunohost 12. This is what you type: 
+```yunohost 
+tools migrations run 0031_terms_of_services --accept-disclaimer
+```
 
 ## During the migration
 
