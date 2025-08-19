@@ -55,7 +55,7 @@ If you want to create subdomains, do not forget to add them in the `hosts` file 
 This will be the domain used by your server's users to access the **authentication portal**. You can later add other domains, and change which one is the main domain if needed.
 
 - If you're new to self-hosting and do not already have a domain name, we recommend using a **.nohost.me** / **.noho.st** / **.ynh.fr** (e.g. `homersimpson.nohost.me`). Provided that it's not already taken, the domain will be configured automatically and you won't need any further configuration step. Please note that the downside is that you won't have full-control over the DNS configuration.
-- If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/admin/get_started/post_install/dns_config).
+- If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/dns).
 
 :::tip
 Yes, you *have to* configure a domain name. If you don't have any domain name and don't want a **.nohost.me** / **.noho.st** / **.ynh.fr** either, you can set up a dummy domain such as `yolo.test` and tweak your **local** `/etc/hosts` file such that this dummy domain [points to the appropriate IP, as explained here](/admin/tutorials/domains/dns_local_network).
@@ -74,7 +74,7 @@ Once the postinstall is done, you should be able to actually log in the web admi
 The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured - and guide you in how to fix issues. The diagnosis will run twice a day and send an alert if issues are detected.
 
 :::tip
-**Don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/admin/get_started/post_install/dns_config) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain), add a swapfile if not enough ram as well as [port forwarding](/admin/get_started/post_install/port_forwarding) on your home's router.
+**Don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/dns) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain), add a swapfile if not enough ram as well as [port forwarding](/admin/install/post_install/port_forwarding) on your home's router.
 :::
 
 :::tip
