@@ -67,7 +67,7 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/providers/registrar/ovh/manualdns',       to: '/admin/get_started/providers/registrar/ovh/manualdns', },
 
     { from: '/registar_api_ovh',                        to: '/admin/get_started/providers/registrar/ovh/autodns', }, 
-    { from: '/registar_api_gandi',                      to: '/admin/get_started/providers/registrar/gandis', }, 
+    { from: '/registar_api_gandi',                      to: '/admin/get_started/providers/registrar/gandi', }, 
     { from: '/registar_api_namecheap',                  to: '/admin/get_started/providers/registrar/namecheap', }, 
 
     { from: '/providers/server',                        to: '/admin/get_started/providers/servers', },
