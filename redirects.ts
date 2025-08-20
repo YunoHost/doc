@@ -95,7 +95,7 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/doc_writing_guide',                       to: '/dev/doc/apps_documentation', },
     { from: '/doc_use_git',                             to: '/dev/doc/git', },
     { from: '/doc_markdown_guide',                      to: '/dev/doc/markdown_guide', },
-    { from: '/docs',                                     to: '/', },
+    { from: '/docs',                                    to: '/', },
 
     { from: '/packaging_apps',                          to: '/packaging/', },
     { from: '/advanced_packagers',                      to: '/packaging/advanced', },
