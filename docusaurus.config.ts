@@ -74,6 +74,24 @@ const config: Config = {
     require.resolve("./src/YunoHostImagesListScript.js")
   ],
 
+  scripts: [
+    {
+     src: '/js/language-detect.js',
+     async: true,
+      "data-language-redirect": JSON.stringify({
+      ar: '/ar/',
+      ca: '/ca/',
+      de: '/de/',
+      en: '/en/',
+      es: '/es/',
+      fr: '/fr/',
+      it: '/it/',
+      oc: '/oc/',
+      ru: '/ru/',
+    }),
+    },
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'https://yunohost.org/assets/img/portal_simple_dark.jpg',
