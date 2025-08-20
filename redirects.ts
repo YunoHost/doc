@@ -88,6 +88,7 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/terms_of_services',                       to: '/community/terms_of_services', },
 
     { from: '/contributordoc',                          to: '/dev/', },
+    { from: '/contribute',                              to: '/dev/', },    
     { from: '/dev/forms',                               to: '/dev/core/forms', },
     { from: '/dev/maindomain',                          to: '/dev/core/maindomain', },
     { from: '/write_documentation',                     to: '/dev/doc/', },
