@@ -66,12 +66,12 @@ You should be presented with 3 options (reviewed [in details here](/admin/domain
   Provided that it's not already taken, the domain will be configured automatically and you won't need any further configuration step
   (but as a downside you won't have full-control over its DNS configuration).
 
-  [more details on YunoHost's free domains](/admin/tutorials/domains/dns_nohost_me)
+  [more details on YunoHost's free domains](/admin/domains/dns_nohost_me)
 
   </TabItem>
   <TabItem value="own-domain" label="Your own domain">
 
-  If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/admin/get_started/post_install/dns_config).
+  If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/admin/domains/dns_configuration).
 
   You can also configure a [subdomain](https://en.wikipedia.org/wiki/Subdomain) if your
   main domain is already in use for other services.
@@ -103,7 +103,7 @@ Once the postinstall is done, you should be able to actually log in the web admi
 The diagnosis system is meant to provide an easy way to validate that all critical aspects of your server are properly configured - and guide you in how to fix issues. The diagnosis will run twice a day and send an alert if issues are detected.
 
 :::tip
-**Don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/admin/get_started/post_install/dns_config) (if not using a `.nohost.me`/`noho.st`/`ynh.fr` domain), add a swapfile if not enough ram as well as [port forwarding](/admin/get_started/post_install/port_forwarding) on your home's router.
+**Don't run away** ! The first time you run the diagnosis, it is quite expected to see a bunch of yellow/red alerts because you typically need to [configure DNS records](/admin/get_started/post_install/dns_config), add a swapfile if not enough ram as well as [port forwarding](/admin/get_started/post_install/port_forwarding) on your home's router.
 :::
 
 :::tip

@@ -1,0 +1,91 @@
+---
+title: YunoHost's free domains
+---
+
+In order to make self-hosting as accessible as possible, the YunoHost Project provides 
+a *free* and *automatically configured* domain name service. By using this service, 
+you won't have to [configure DNS records](/admin/domains/dns_configuration) yourself, 
+which can be tedious and technical.
+
+This service is offered during the post-installation set-up, but check the 
+[Creating a domain after the post-installation](#creating-a-domain-after-the-post-installation)
+section below for usage afterwards.
+
+During creation of the domain you are prompted to choose a *base domain* and an unique *subdomain* you want to use. 
+The following *base domains* are offered:
+
+- `nohost.me`
+- `noho.st`
+- `ynh.fr`
+
+> For example you may choose to end up with the `frogenjoyer.nohost.me` subdomain.
+
+
+:::info
+To limit resources costs and abuses, each instance may only have one of these domains 
+setup at any given time.
+:::
+
+### Creating additional subdomains
+
+Even after creating your subdomain, you can prepend more subdomain to it, allowing
+your applications to each have an unique subdomains if desired (which is also
+a workaround for the one free domain per instance).
+
+> For example you picked the `frogenjoyer.ynh.fr` subdomain. For a blog application you
+>  can create an additional `blog.frogenjoyer.ynh.fr` subdomain. 
+>  There's no limit so you could also create a `pond.place.frogenjoyer.ynh.fr` subdomain !
+
+### Creating a free domain after the post-installation
+
+If you already did the postinstall and want to add a free domain, you may do so 
+from the *Domains* web interface, selecting the option "I don't have a domain name...".
+
+Alternatively, the following commands can be used.
+
+```bash
+# Add the domain
+yunohost domain add frogenjoyer.nohost.me
+
+# Subscribe/register to the dyndns service
+yunohost dyndns subscribe -d frogenjoyer.nohost.me
+
+# [ wait ~ 30 seconds ]
+
+# Update the DNS conf
+yunohost dyndns update
+
+# (optional) Set it as the main domain
+yunohost domain main-domain -n frogenjoyer.nohost.me
+```
+
+### Retrieving an existing free domain
+
+If you reinstall your server and want to use a domain already used previously, follow the
+creation process as you would if it was new (so use the same subdomain label). However
+in the password field, enter the password you have defined when creating the
+domain in the past.
+
+If you forgot your password you may need to [request a manual domain reset]((https://forum.yunohost.org/t/nohost-domain-recovery/442)).
+
+:::note
+The password feature is available since YunoHost 11.2, previously you would need to 
+use the [dedicated forum thread](https://forum.yunohost.org/t/nohost-domain-recovery/442).
+:::
+
+### Changing your free domain
+
+If you wish to use a different free domain, you first have to remove your present domain registration:
+
+- using the web interface > `Domains` > `{yourdomain.tld}` > `delete` button
+
+:::note
+You can check the "Also unregister" option to permanently free the domain; otherwise
+you can still re-use it with the password set on creation.
+:::
+
+![A screenshot of the delete dialog for automatic domains](/img/webadmin/webadmin_domain_remove_dyndns.png)
+
+- from the command line using `yunohost domain remove`
+
+You may then add a new domain.
