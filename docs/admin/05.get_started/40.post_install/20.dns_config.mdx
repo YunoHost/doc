@@ -13,9 +13,43 @@ performed automatically. If you're using your own domain name (e.g. bought via
 a registrar), you should manually configure your domain on your registrar's
 interface.
 
+## A brief explication of domain names 
+
+Because understanding domains can be tricky it might be worth detailing how they work.
+
+A domain is an human readable address made out of *labels* concatenated by dots.
+
+So if you take the domain name `www.yunohost.org` the usual convention is to break it down as:
+
+| domain             | description            |
+| :---------------:  | :--------------------: |
+| `.org`             | top-level domain       |
+| `yunohost.org`     | apex/root/bare domain  |
+| `www.yunohost.org` | subdomain              |
+
+However from [Wikipedia](https://en.wikipedia.org/wiki/Domain_name) we can learn:
+
+> *Domain names are organized in subordinate levels (subdomains) of the DNS root domain, which is nameless.*
+
+So in theory `yunohost.org` is a subdomain of `.org` but for convenience we usually
+talk about *subdomain* for any domain that have 2 levels after the top-level domain.
+This become even more confusing if you consider that some top-level domains have 2 labels
+(e.g. `.gouv.fr` or `.co.uk`).
+
+The wikipedia quote also mention the "DNS root domain" which is usually omitted but
+when not, is represented by a single dot at the end. This form is referred as 
+"fully qualified domain name" (FQDN). With our previous example, `www.yunohost.org.` would be a FQDN. 
+This is good to remember because you usually need to specify a FQDN in your DNS records.
+
+And still for DNS records, the `@` name will denote the current origin which should be
+you apex domain as FQDN (with our previous example `@` = `yunohost.org.`).
+
+
 ## Recommended DNS configuration
 
-NB: Examples here use the placeholder `your.domain.tld`, you have to replace it with your real domain, such as `www.yunohost.org`.
+:::note
+For example purposes we use the placeholder domain `your.domain.tld`, you have to replace it with your real domain, such as `yunohost.org`.
+:::
 
 YunoHost provides a recommended DNS configuration, available via:
 
@@ -58,7 +92,7 @@ mail._domainkey 3600 IN TXT "v=DKIM1; k=rsa; p=someHuuuuuuugeKey"
 _dmarc 3600 IN TXT "v=DMARC1; p=none"
 ```
 
-Though it might be easier to understand it if displayed like this:
+Though it might be easier to understand if displayed as a table instead:
 
 | Type    | Name                   | Value                                                 |
 | :-----: | :--------------------: | :--------------------------------------------------:  |
@@ -87,6 +121,11 @@ Though it might be easier to understand it if displayed like this:
 - Don't put an IPv6 record if you're not sure IPv6 really works on your server! You might have issues with Let's Encrypt if it doesn't.
 - If you're using the domain provider Namecheap the SRV DNS entries are formatted as **Service**: `_xmpp-client` **Protocol**: `_tcp` **Priority**: `0` **Weight**: `5` **Port**: `5222` **Target**: `your.domain.tld`
 
+### Subdomain
+
+If you are looking to configure a subdomain, [follow this tutorial](/admin/tutorials/domains/dns_subdomains).
+
+
 ### Reverse DNS
 
 If your ISP or VPS provider let you define a [Reverse DNS
@@ -94,7 +133,9 @@ lookup](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) for your public IPv4
 and/or IPv6 addresses, you must configure it. It will prevent you to be marked as
 spam by anti-spam filters.
 
-**N.B.: the reverse DNS configuration happens on your Internet Service Provider or VPS provider. It is *not* handled by your domain's registrar.**
+:::note
+The reverse DNS configuration happens on your Internet Service Provider or VPS provider. It is *not* handled by your domain's registrar.
+:::
 
 If your public IPv4 address is `111.222.333.444` and your DNS
 domain is `domain.tld`, you should get following answer when using `nslookup`
@@ -109,4 +150,4 @@ The diagnosis system available in the webadmin performs this checks automaticall
 
 ### Dynamic IP
 
-If your global IP address is constantly changing, follow this [tutorial](/admin/tutorials/domains/dns_dynamicip).
+If your global IP address is constantly changing, [follow this tutorial](/admin/tutorials/domains/dns_dynamicip).
