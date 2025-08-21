@@ -26,16 +26,21 @@ const config: Config = {
   onDuplicateRoutes: 'throw',
 
   future: {
+    v4: true,
     experimental_faster: true,
   },
 
   i18n: {
-    defaultLocale: 'en',
+    // en-GB to make possible to have english in the dropdown which redirect to /en (as it’s a workaround, we don’t want to have it en-GB in the dropdown - Docusaurus will warn about it)
+    defaultLocale: 'en-GB',
     locales: ['ar', 'ca', 'de', 'en', 'es', 'fr', 'it', 'oc', 'ru'],
     localeConfigs: {
       ar: {
         direction: 'rtl',
       },
+      en: {
+        path: 'en',
+      }
     },
   },
 
@@ -71,6 +76,24 @@ const config: Config = {
 
   clientModules: [
     require.resolve("./src/YunoHostImagesListScript.js")
+  ],
+
+  scripts: [
+    {
+     src: '/js/language-detect.js',
+     async: true,
+      "data-language-redirect": JSON.stringify({
+      ar: '/ar/',
+      ca: '/ca/',
+      de: '/de/',
+      en: '/en/',
+      es: '/es/',
+      fr: '/fr/',
+      it: '/it/',
+      oc: '/oc/',
+      ru: '/ru/',
+    }),
+    },
   ],
 
   themeConfig: {
@@ -109,6 +132,7 @@ const config: Config = {
         {
           type: 'localeDropdown',
           position: 'right',
+          queryString: '?persistLocale=true',
         },
       ],
     },
