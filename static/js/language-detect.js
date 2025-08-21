@@ -1,5 +1,5 @@
 /*
-Taken from https://github.com/lullaby6/language-redirect under the MIT license (many thanks to them!)
+Most of this file is taken from https://github.com/lullaby6/language-redirect under the MIT license (many thanks to them!)
  */
 
 window.languageRedirect = redirects => {
@@ -7,6 +7,13 @@ window.languageRedirect = redirects => {
         acc[key.toLowerCase()] = redirects[key];
         return acc;
     }, {});
+
+    const currentPath = window.location.pathname;
+
+    // if the doc is already on a locale path, do not redirect
+    if (Object.keys(redirects).some(locale => currentPath.startsWith(`/${locale}`))) {
+        return;
+    }
 
     const data = {
         user_language: navigator.language || navigator.userLanguage,
