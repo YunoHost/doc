@@ -9,36 +9,24 @@ YunoHost lets you manage and serve multiple domains on a single server. So you c
 
 Domains can be managed in the 'Domains' section of the webadmin, or via the `yunohost domain` category of the command line.
 
-Whenever you add a domain, it is assumed that you have purchased (or at least control) the domain, so that you can manage its [DNS configuration](/admin/get_started/post_install/dns_config). An exception is [domains in `.nohost.me`, `.noho.st` and `ynh.fr`](/admin/tutorials/domains/dns_nohost_me) which are offered by the YunoHost Project, and can be directly integrated with YunoHost through automatic DynDNS configuration. To limit abuse and costs, an instance can only have one domain offered at a time, but you can add as many sub-domains to it as you like. For example, if you choose `example.ynh.co.uk` you can then add the domains `video.example.ynh.co.uk` or `www.exemple.ynh.fr` or any other sub-domain you may require.
-
-Domains can be managed in the 'Domain' section of the webadmin, or through the `yunohost domain` category of the command line.
-
 ![A screenshot of the webadmin domain interface with an "Add domain" button and a list of domains](/img/webadmin/webadmin_domain.png)
 
-## 3 types of domains
+## Adding a new domain
+
+When registering domains on your instance, you are being presented with 4 options:
 
 <Tabs>
-<TabItem value="nohost" label="Yunohost's domains (the free and easy way)">
+<TabItem value="nohost" label="Yunohost's free domains (the easy way)">
 
-In order to make self-hosting as accessible as possible, the YunoHost Project provides a *free* and *automatically configured* domain name service. By using this service, you won't have to [configure DNS records](/admin/get_started/post_install/dns_config) yourself, which can be tedious and technical.
+In order to make self-hosting as accessible as possible, the YunoHost Project provides a *free* and *automatically configured* domain name service. By using this service, you won't have to configure DNS records yourself, which can be tedious and technical.
 
-The following (sub)domains are offered:
+The following base domains are offered: `nohost.me`, `noho.st`, `ynh.fr`.
 
-- `whateveryouwant.nohost.me`;
-- `whateveryouwant.noho.st`;
-- `whateveryouwant.ynh.fr`.
+[Learn more about YunoHost's free domain here](/admin/domains/dns_nohost_me).
 
-In more, YunoHost uses an integrated dynamic DNS mechanism, so your server can stay reachable even if your public IP change.
+To get one of this domain you simply need to choose `I don't own a domaine name…` option.
 
-To get one of this domain you simply need to choose `I don't have a domaine name…` during the initial configuration (postinstall) or on the `Add domain` page.
-
-![Here a screenshot of the "Add domain" page where you can choose "I don't have a domain name"](/img/webadmin/webadmin_dyndns.png)
-
-:::info
-To limit resources costs and abuses, each instance may only have one of these domains setup at any given time, however you can add as many sub-domains of it as you wish. For example, if you choose `example.noho.st` you can later add the domains `video.example.noho.st` or `www.example.ynh.noho.st` or any other sub-domain you may need. In this case you need to select `I already have a domain name`.
-:::
-
-[More information on this domains](/admin/tutorials/domains/dns_nohost_me)
+![A screenshot of the "Add domain" page where you can choose "I don't own a domain, I want to register/use a free DynDNS domain provided by the YunoHost project"](/img/webadmin/webadmin_dyndns.png)
 
 </TabItem>
 <TabItem value="own" label="Your own domains">
@@ -48,22 +36,38 @@ Having your own domain brings several advantages:
 - more control and autonomy
 - simpler domain name (for example directly in .net or .org)
 
-However, you have to pay for it each year (about 15€/year ... depending on the TLD) and you have to do some extra configuration to [setup a correct DNS zone](/admin/get_started/post_install/dns_config). Our diagnosis tool can trigger alert to help you to do this configuration.
+However, you have to pay for it each year (about 15€/year ... depending on the TLD) and you have to do some extra configuration to [setup a correct DNS zone](/admin/domains/dns_configuration). Our diagnosis tool can trigger alert to help you to do this configuration.
 
 If you already have your own domain, you can simply click "I already have a domain name…". If you don't, in order to simplify and automate the DNS configuration, we suggest you to buy it from a [registrar whose API is supported by YunoHost](/admin/get_started/providers/registrar/).
 
-![Here a screenshot of the "Add domain" page where you can choose "I already have a domain name"](/img/webadmin/webadmin_domain_owndomain.png)
+[Learn more about DNS configuration here](/admin/domains/dns_configuration)
 
-[Know more on DNS zone configuration](/admin/get_started/post_install/dns_config)
+This option corresponds to the `I want to add a domain I own` option in the web interface:
+
+![A screenshot of the "Add domain" page where you can choose "I want to add a domain I own"](/img/webadmin/webadmin_domain_owndomain.png)
 
 </TabItem>
-<TabItem value="local" label="Local domains (only reachable in your local network)">
+<TabItem value="subdomain" label="A subdomain of an added domain">
+
+A subdomain allow you to prepend multiple labels to existing domains you own. This
+is especially convenient for applications, as you can define an unique subdomain for 
+each of them.
+
+> Example, you previously added the custom domain `bonjour.fr`; you can create 
+> multiple subdomain at `blog.bonjour.fr`, `cloud.bonjour.fr`, and so on.
+
+[Learn more about subdomains here](/admin/domains/dns_configuration/#a-brief-explication-of-domain-names).
+
+This option corresponds to the `I want to add a subdomain of an already added domain` option in the web interface:
+
+![A screenshot of the "Add domain" page where you can choose "I want to add a subdomain of an already added domain"](/img/webadmin/webadmin_domain_subdomain.png)
+
+</TabItem>
+<TabItem value="local" label="Local domains">
 
 Starting from YunoHost v4.3, domains ending by `.local` are fully supported, in addition to the default `yunohost.local`.
 They do not use the DNS protocol, but the mDNS one (also known as Zeroconf, Bonjour), which allows them to be published with no specific configuration but exclusively on your local network or VPN.
 Their use is this especially suitable when you do not need your apps to be available on the Internet.
-
-![Here a screenshot of the "Add domain" page where you can choose "I already have a domain name" and setup your domain ending by .local](/img/webadmin/webadmin_domain_local.png)
 
 :::info
 mDNS protocol does not allow for subdomains to be created. So `domain.local` will work, while `sub.domain.local` is not possible.
@@ -81,14 +85,58 @@ Unfortunately, Android devices before version 12 (released in 2021) do not seem 
 To be able to reach `.local` domains on your Android devices, you will have to add in their DNS settings your YunoHost server's local IP address.
 :::
 
+This option corresponds to the `I want a domain for local usage / test only` option in the web interface:
+
+![Here a screenshot of the "Add domain" page where you can choose "I want a domain for local usage / test only"](/img/webadmin/webadmin_domain_local.png)
+
+
 </TabItem>
 </Tabs>
 
+
+## Installing an application on a domain
+
+During the installation of an application, you are being prompted to which domain the
+application must be configured to.
+
+Even if you can change the domain after, it is recommended you register the domain in 
+your instance before installing the application.
+
+:::tip
+It is common to install the application on a subdomain, but this is personal preferences.
+
+> Example: `blog.mydomain.tld` instead of using `mydomain.tld` or `mydomain.tld/blog`
+:::
+
+
+## Changing an application assigned domain.
+
+You can change the application domain:
+
+- through the web interface > `Applications` > `{app name}` > `Operations`
+- through the command line with `yunohost app change-url`
+
+Some applications doesn't allow domain change. The best solution is to reinstall the application:
+
+- backup the application data (`yunohost backup create --apps ...`)
+- uninstall the application
+- reinstall the application to the desired domain
+- restore the backup 
+
+
 ## DNS configuration
 
-DNS (Domain Name System) is a system that enables computers worldwide to translate human-readable domain names (such as `yolo.com`) into machine-readable IP addresses (such as `11.22.33.44`). For this translation (and other features) to work, DNS records need to be carefully configured.
+Once a domain is added you may need to manage its DNS configuration.
 
-YunoHost can generate a recommended DNS configuration for each domain, including the records required for e-mail. The recommended DNS configuration is available in the web administrator via Domains > (the domain) > DNS configuration, or with the command `yunohost domain dns suggest the.domain.tld`.
+[Learn more about DNS configuration here](/admin/domains/dns_configuration).
+
+YunoHost can help you managing the DNS configuration by generating or automatically
+setting it depending on your registrar.
+
+- in the web interface via `Domains` > `{yourdomain.tld}` > `DNS`.
+- with the command `yunohost domain dns suggest yourdomain.tld`.
+
+For automatic DNS configuration, check the [Registrars page](/admin/get_started/providers/registrar/).
 
 ## About Non-latin characters
 
