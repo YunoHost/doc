@@ -2,13 +2,15 @@
 title: DNS and subdomains for the applications
 ---
 
-### Subdomains
+YunoHost allows the use of subdomains. If you rent a domain name `mydomain.com`,
+you can create a subdomain `blog.mydomain.com`.
 
-YunoHost allows the use of subdomains. If one owns a domain name `mydomain.com`, one first needs to create the subdomains in the DNS configuration (with one's registrar like Gandi).
+The subdomains are created in the DNS configuration thats is managed by your [registrar](/admin/get_started/providers/registrar/).
 
-### Configuration example with Gandi
+## Configuration example
 
-The DNS configuration needs an A record with an IPv4 address, an AAAA record with an IPv6 address, and various CNAME records, one for each desired subdomain.
+The DNS configuration needs an `A` record with an IPv4 address, an optional `AAAA` record with an 
+IPv6 address, and various `CNAME` records, one for each desired subdomain.
 
 If your DNS configuration looks like:
 
@@ -21,7 +23,20 @@ blog      CNAME        mydomain.com.
 rss       CNAME        mydomain.com.
 ```
 
-then you can access `agenda.mydomain.com`, `blog.mydomain.com` and `rss.mydomain.com` subdomains.
+Then you can access `agenda.mydomain.com`, `blog.mydomain.com` and `rss.mydomain.com` subdomains.
+
+However you might be in the position where your apex domain is already in use for another service
+(the `@   A` record is already in use).
+In that case you might want to have this DNS configuration instead:
+
+```
+agenda    A        XYZ.XYZ.XYZ.XYZ
+agenda    AAAA     1234:1234:1234:FFAA:FFAA:FFAA:FFAA:AAFF
+blog      A        XYZ.XYZ.XYZ.XYZ
+blog      AAAA     1234:1234:1234:FFAA:FFAA:FFAA:FFAA:AAFF
+rss       A        XYZ.XYZ.XYZ.XYZ
+rss       AAAA     1234:1234:1234:FFAA:FFAA:FFAA:FFAA:AAFF
+```
 
 ### Install an application on a subdomain
 
