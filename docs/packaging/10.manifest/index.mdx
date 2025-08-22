@@ -76,11 +76,22 @@ ram.runtime = "1M"
 - `helpers_version` (`str`) contains the version of the package helpers used by the application; supported versions are [2.0](/packaging/scripts/helpers_v2.0) and [2.1](/packaging/scripts/helpers_v2.1)
 - `architectures` : `"all"` OR a list of supported archs using the `dpkg --print-architecture` nomenclature, i.e. among : `amd64` (= x86 64bit), `i386` (= x86 32bit), `armhf` (= ARM 32bit), `arm64` (= ARM 64bit)
 - `multi_instance` (`bool`) : wether or not the app supports being installed multiple time <small>(in which case, during installation, the actual app id is not just the `id` of the manifest, but something like `hellowold__2`, `helloworld__3`, etc. for subsequent installs)</small>
-- `ldap` (`bool` OR `"not_relevant"`):  not to confused with the `sso` key: this corresponds to whether or not the app is configured to use YunoHost's LDAP DB as the user account DB. This should be set to `"not_relevant"` if and only if there is no notion of user account for this app (for example, Hextris). LDAP integration is often a prerequisite for the SSO to work. Setting it to `true` should mean that your app queries the Yunohost LDAP to retrieve accounts and/or groups, otherwise set it to either `false` or `"not_relevant"`.
-- `sso` (`bool` OR `"not_relevant"`): not to be confused with the `ldap` key. This corresponds to whether or not a user is *automatically authenticated* on the app when logged-in on the YunoHost portal. This should be set to `"not_relevant"` if and only if there is no notion of user account for this app (for example, Hextris). When set to `true`, this could cover different cases. For the apps which provision the user account information only from the HTTP header (and not from LDAP), you should set `sso = true` and `ldap = false`. When the app is only a web client related to an account (for instance [Element](https://github.com/YunoHost-Apps/element_ynh) or [Agendav](https://github.com/YunoHost-Apps/agendav_ynh)), in this case if the client support the SSO feature (when you have a button like SSO on login page) this should be set to `true`, even when it does not require any configuration to work with the SSO. When the server supports the SSO (like [Synapse](https://github.com/YunoHost-Apps/synapse_ynh)), consider setting `sso = true` for both the client and the server.
+- `ldap` (`bool` OR `"not_relevant"`): see [LDAP and SSO section](#LDAP-and-SSO) for more details.
+- `sso` (multiple values supported): see [LDAP and SSO section](#LDAP-and-SSO) for more details.
 - `disk` (size) : an *estimate* minimum disk requirement. For example: 20M, 400M, 1G, ...
 - `ram.build` (size) : an *estimate* minimum ram requirement when building the app (this may be way different than `ram.runtime` because some apps have a peak 1~2G RAM when building sometimes...). For example: 50M, 400M, 1G, ...
 - `ram.runtime` (size) : an *estimate* minimum ram requirement when the app is active and running. For example: 50M, 400M, 1G, ...
+
+### LDAP and SSO
+
+For the `ldap` parameter, not to confused with the `sso` key: this corresponds to whether or not the app is configured to use YunoHost's LDAP DB as the user account DB. This should be set to `"not_relevant"` if and only if there is no notion of user account for this app (for example, Hextris). LDAP integration is often a prerequisite for the SSO to work. Setting it to `true` should mean that your app queries the Yunohost LDAP to retrieve accounts and/or groups, otherwise set it to either `false` or `"not_relevant"`.
+
+For the `sso` parameter, not to be confused with the `ldap` key. This corresponds to whether or not a user is *automatically authenticated* on the app when logged-in on the YunoHost portal. Here are the values supported for this parameter:
+- `false`: SSO not supported at all.
+- `"not_relevant"`: if and only if there is no notion of user account for this app (for example, Hextris).
+- `http_headers`: for the account provisioned by the HTTP Header: `Ynh-User`, `Ynh-User-Email`, `Ynh-User-Fullname` headers. For PHP apps it could be also provided by the standard `REMOTE_USER` parameter.
+- `auth_basic`: for apps which use the auth basic authentication to handle the authentication.
+- `client_sso`: for the client apps which support a SSO but the usage depends if the server support it. This is the case for instance with [Element](https://github.com/YunoHost-Apps/element_ynh) or [Agendav](https://github.com/YunoHost-Apps/agendav_ynh).
 
 ## Antifeatures
 
