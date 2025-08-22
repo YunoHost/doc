@@ -9,16 +9,16 @@ properly, DNS must be configured.
 
 If you're using an [automatic domain](/admin/domains/dns_nohost_me) provided by the YunoHost Project, the configuration should be
 performed automatically. If you're using your own domain name (e.g. bought via
-a registrar) this page should explain how to manually configure your domain on your 
+a registrar), this page should explain how to manually configure your domain on your 
 registrar's interface.
 
-Note YunoHost supports the [automatic configuration of DNS record](/admin/domains/#dns-configuration) for some registrar.
+Note YunoHost supports the [automatic configuration of DNS records](/admin/domains/#dns-configuration) for some registrar.
 
-## A brief explication of domain names 
+## A brief explanation of domain names 
 
-Because understanding domains can be tricky it might be worth detailing how they work.
+Because understanding domains can be tricky, it might be worth detailing how they work.
 
-A domain is an human readable address made out of *labels* concatenated by dots.
+A domain is a human-readable address made out of *labels* concatenated by dots.
 
 So if you take the domain name `www.yunohost.org` the usual convention is to break it down as:
 
@@ -33,16 +33,16 @@ However from [Wikipedia](https://en.wikipedia.org/wiki/Domain_name) we can learn
 > *Domain names are organized in subordinate levels (subdomains) of the DNS root domain, which is nameless.*
 
 So in theory `yunohost.org` is a subdomain of `.org` but for convenience we usually
-talk about *subdomain* for any domain that have 2 levels after the top-level domain.
+talk about *subdomain* for any domain that has 2 levels after the top-level domain.
 This become even more confusing if you consider that some top-level domains have 2 labels
 (e.g. `.gouv.fr` or `.co.uk`).
 
 The wikipedia quote also mention the "DNS root domain" which is usually omitted but
-when not, is represented by a single dot at the end. This form is referred as 
-"fully qualified domain name" (FQDN). With our previous example, `www.yunohost.org.` would be a FQDN. 
-This is good to remember because you usually need to specify a FQDN in your DNS records.
+when not, is represented by a single dot at the end. This form is referred to as 
+"fully qualified domain name" (FQDN). With our previous example, `www.yunohost.org.` would be an FQDN. 
+This is good to remember because you usually need to specify an FQDN in your DNS records.
 
-## A brief explication of DNS records.
+## A brief explanation of DNS records.
 
 :::info
 DNS records must be managed through your registrar's interface (the vendor you rent your custom domain from).
@@ -61,11 +61,11 @@ It's also good to be aware of the following:
 - We recommend a [TTL](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) of 3600s (1 hour). But you can use something else if you know what you're doing.
 - Don't put an IPv6 record if you're not sure IPv6 really works on your server ! You might have issues with *Let's Encrypt* if it doesn't.
 - The `@` name corresponds to the origin, which is your apex domain name (like `mydomain.tld`)
-- Reminder that a domain specified in the data of the record **need to ends with a dot** (to be a FQDN as explained previously).
+- Reminder that a domain specified in the data of the record **needs to end with a dot** (to be an FQDN as explained previously).
 
 ## Minimal DNS configuration
 
-When registering a custom domain name through YunoHost interface, this is the minimal
+When registering a custom domain name through the YunoHost interface, this is the minimal
 required configuration to have it working.
 
 ```autohotkey
@@ -76,7 +76,7 @@ required configuration to have it working.
 @ 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
 ```
 
-However this doesn't allow all features to work and you will notice warnings and errors
+However, this doesn't allow all features to work and you will notice warnings and errors
 when running the *Diagnosis* in the web interface.
 
 
@@ -84,8 +84,8 @@ when running the *Diagnosis* in the web interface.
 
 YunoHost provides a recommended DNS configuration, available via:
 
-- the webadmin, in Domain > your.domain.tld > DNS configuration;
-- or the command line, `yunohost domain dns suggest your.domain.tld`
+- the webadmin, in `Domains` > `{yourdomain.tld}` > `DNS`;
+- or the command line, `yunohost domain dns suggest yourdomain.tld`
 
 For specific needs or specific setups, and if you know what you're doing, you
 might want or have to tweak these, or add additional ones (e.g. to handle

@@ -7,11 +7,11 @@ a *free* and *automatically configured* domain name service. By using this servi
 you won't have to [configure DNS records](/admin/domains/dns_configuration) yourself, 
 which can be tedious and technical.
 
-This service is offered during the post-installation set-up, but check the 
-[Creating a domain after the post-installation](#creating-a-domain-after-the-post-installation)
+This service is offered during the post-installation setup, but check the 
+[Creating a domain after the post-installation](#creating-a-free-domain-after-the-post-installation)
 section below for usage afterwards.
 
-During creation of the domain you are prompted to choose a *base domain* and an unique *subdomain* you want to use. 
+During creation of the domain you are prompted to choose a *base domain* and a unique *subdomain* you want to use. 
 The following *base domains* are offered:
 
 - `nohost.me`
@@ -22,23 +22,23 @@ The following *base domains* are offered:
 
 
 :::info
-To limit resources costs and abuses, each instance may only have one of these domains 
+To limit resources costs and abuses, each instance may only have one of these domain
 setup at any given time.
 :::
 
 ### Creating additional subdomains
 
 Even after creating your subdomain, you can prepend more subdomain to it, allowing
-your applications to each have an unique subdomains if desired (which is also
+your applications to each have an unique subdomain if desired (which is also
 a workaround for the one free domain per instance).
 
-> For example you picked the `frogenjoyer.ynh.fr` subdomain. For a blog application you
+> For example you picked the `frogenjoyer.ynh.fr` subdomain. For a blog application, you
 >  can create an additional `blog.frogenjoyer.ynh.fr` subdomain. 
 >  There's no limit so you could also create a `pond.place.frogenjoyer.ynh.fr` subdomain !
 
 ### Creating a free domain after the post-installation
 
-If you already did the postinstall and want to add a free domain, you may do so 
+If you already did the post-install and want to add a free domain, you may do so 
 from the *Domains* web interface, selecting the option "I don't have a domain name...".
 
 Alternatively, the following commands can be used.
@@ -62,11 +62,11 @@ yunohost domain main-domain -n frogenjoyer.nohost.me
 ### Retrieving an existing free domain
 
 If you reinstall your server and want to use a domain already used previously, follow the
-creation process as you would if it was new (so use the same subdomain label). However
-in the password field, enter the password you have defined when creating the
+creation process as you would if it was new (so use the same subdomain label). However,
+in the password field enter the password you have defined when creating the
 domain in the past.
 
-If you forgot your password you may need to [request a manual domain reset]((https://forum.yunohost.org/t/nohost-domain-recovery/442)).
+If you forgot your password you may need to [request a manual domain reset](https://forum.yunohost.org/t/nohost-domain-recovery/442).
 
 :::note
 The password feature is available since YunoHost 11.2, previously you would need to 

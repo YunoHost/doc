@@ -37,8 +37,7 @@ Having your own domain brings several advantages:
 - simpler domain name (for example directly in .net or .org)
 
 However, you have to pay for it each year (about 15€/year ... depending on the TLD) and you have to do some extra configuration to [setup a correct DNS zone](/admin/domains/dns_configuration). Our diagnosis tool can trigger alert to help you to do this configuration.
-
-If you already have your own domain, you can simply click "I already have a domain name…". If you don't, in order to simplify and automate the DNS configuration, we suggest you to buy it from a [registrar whose API is supported by YunoHost](/admin/get_started/providers/registrar/).
+If you don't have a custom domain yet, we suggest you to buy it from a [registrar whose API is supported by YunoHost](/admin/get_started/providers/registrar/) to simplify and automate the DNS configuration.
 
 [Learn more about DNS configuration here](/admin/domains/dns_configuration)
 
@@ -56,7 +55,7 @@ each of them.
 > Example, you previously added the custom domain `bonjour.fr`; you can create 
 > multiple subdomain at `blog.bonjour.fr`, `cloud.bonjour.fr`, and so on.
 
-[Learn more about subdomains here](/admin/domains/dns_configuration/#a-brief-explication-of-domain-names).
+[Learn more about subdomains here](/admin/domains/dns_configuration/#a-brief-explanation-of-domain-names).
 
 This option corresponds to the `I want to add a subdomain of an already added domain` option in the web interface:
 
@@ -67,7 +66,7 @@ This option corresponds to the `I want to add a subdomain of an already added do
 
 Starting from YunoHost v4.3, domains ending by `.local` are fully supported, in addition to the default `yunohost.local`.
 They do not use the DNS protocol, but the mDNS one (also known as Zeroconf, Bonjour), which allows them to be published with no specific configuration but exclusively on your local network or VPN.
-Their use is this especially suitable when you do not need your apps to be available on the Internet.
+Their use is especially suitable when you do not need your apps to be available on the Internet.
 
 :::info
 mDNS protocol does not allow for subdomains to be created. So `domain.local` will work, while `sub.domain.local` is not possible.
@@ -99,7 +98,7 @@ This option corresponds to the `I want a domain for local usage / test only` opt
 During the installation of an application, you are being prompted to which domain the
 application must be configured to.
 
-Even if you can change the domain after, it is recommended you register the domain in 
+Even if you teh domain can be later changed, it is recommended you register the domain in 
 your instance before installing the application.
 
 :::tip
@@ -116,7 +115,7 @@ You can change the application domain:
 - through the web interface > `Applications` > `{app name}` > `Operations`
 - through the command line with `yunohost app change-url`
 
-Some applications doesn't allow domain change. The best solution is to reinstall the application:
+Some applications don't allow domain change. The best solution is to reinstall the application:
 
 - backup the application data (`yunohost backup create --apps ...`)
 - uninstall the application
@@ -126,11 +125,11 @@ Some applications doesn't allow domain change. The best solution is to reinstall
 
 ## DNS configuration
 
-Once a domain is added you may need to manage its DNS configuration.
+Once a domain is added, you may need to manage its DNS configuration.
 
 [Learn more about DNS configuration here](/admin/domains/dns_configuration).
 
-YunoHost can help you managing the DNS configuration by generating or automatically
+YunoHost can help you manage the DNS configuration by generating or automatically
 setting it depending on your registrar.
 
 - in the web interface via `Domains` > `{yourdomain.tld}` > `DNS`.
