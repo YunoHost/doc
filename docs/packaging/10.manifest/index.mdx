@@ -90,7 +90,7 @@ For the `sso` parameter, not to be confused with the `ldap` key. This correspond
 - `false`: SSO not supported at all.
 - `"not_relevant"`: if and only if there is no notion of user account for this app (for example, Hextris).
 - `"http_headers"`: for the account provisioned by the HTTP Header: `Ynh-User`, `Ynh-User-Email`, `Ynh-User-Fullname` headers. For PHP apps it could be also provided by the standard `REMOTE_USER` parameter.
-- `"auth_basic"`: for apps which use the auth basic authentication to handle the authentication.
+- `"auth_basic"`: for apps which takes advantage of the basic authentication ([RFC 7617](https://datatracker.ietf.org/doc/html/rfc7617)).
 - `"client_sso"`: for the client apps for which the usage depends on whether the server supports it or not. This is the case for instance with [Element](https://github.com/YunoHost-Apps/element_ynh) or [Agendav](https://github.com/YunoHost-Apps/agendav_ynh).
 
 ## Antifeatures
