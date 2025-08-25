@@ -91,7 +91,10 @@ For the `sso` parameter, not to be confused with the `ldap` key. This correspond
 - `"not_relevant"`: if and only if there is no notion of user account for this app (for example, Hextris).
 - `"http_headers"`: for the account provisioned by the HTTP Header: `Ynh-User`, `Ynh-User-Email`, `Ynh-User-Fullname` headers. For PHP apps it could be also provided by the standard `REMOTE_USER` parameter.
 - `"auth_basic"`: for apps which takes advantage of the basic authentication ([RFC 7617](https://datatracker.ietf.org/doc/html/rfc7617)).
-- `"client_sso"`: for the client apps for which the usage depends on whether the server supports it or not. This is the case for instance with [Element](https://github.com/YunoHost-Apps/element_ynh) or [Agendav](https://github.com/YunoHost-Apps/agendav_ynh).
+- `"client_sso"`: for the client apps for which the usage depends on whether the server supports it or not. This is the case for instance with [Element](https://github.com/YunoHost-Apps/element_ynh) or [Agendav](https://github.com/YunoHost-Apps/agendav_ynh). Note this only intended for app fully written in Javascript. If your app have some server side code, you should not use this value.
+- `"oidc"`: for apps which use OIDC for authentication. Note for now code don't provide OIDC (until [#676](https://github.com/YunoHost/issues/issues/676) is fixed). For now the apps which use OIDC generally use [the dex_ynh app](https://github.com/YunoHost-Apps/dex_ynh).
+
+Note we intentionally didn't added an `other` value. In case you don't find a value which match your use case, please [create a issue](https://github.com/YunoHost/issues/issues) to discuss to add a new value corresponding to your usage.
 
 ## Antifeatures
 
