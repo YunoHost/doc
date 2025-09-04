@@ -80,8 +80,8 @@ const config: Config = {
 
   scripts: [
     {
-     src: '/js/language-detect.js',
-     async: true,
+      src: '/js/language-detect.js',
+      async: true,
       "data-language-redirect": JSON.stringify({
       ar: '/ar/',
       ca: '/ca/',
