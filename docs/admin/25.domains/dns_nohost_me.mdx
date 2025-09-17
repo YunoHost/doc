@@ -38,26 +38,26 @@ a workaround for the one free domain per instance).
 
 ### Creating a free domain after the post-installation
 
+<Tabs groupId="admin-commands">
+  <TabItem value="web" label="From the web interface">
 If you already did the post-install and want to add a free domain, you may do so 
 from the *Domains* web interface, selecting the option "I don't have a domain name...".
-
+  </TabItem>
+  <TabItem value="cli" label="From the command line">
 Alternatively, the following commands can be used.
 
+Add the domain
 ```bash
-# Add the domain
 yunohost domain add frogenjoyer.nohost.me
+```
+At this step, you should be prompted for a DynDNS recovery password, this password could be used to reset your dyndns free domain in order to register it again on an other yunohost, or during a reinstallation.
 
-# Subscribe/register to the dyndns service
-yunohost dyndns subscribe -d frogenjoyer.nohost.me
-
-# [ wait ~ 30 seconds ]
-
-# Update the DNS conf
-yunohost dyndns update
-
-# (optional) Set it as the main domain
+(optional) Set it as the main domain
+```
 yunohost domain main-domain -n frogenjoyer.nohost.me
 ```
+</TabItem>
+</Tabs>
 
 ### Retrieving an existing free domain
 
