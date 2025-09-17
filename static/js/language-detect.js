@@ -11,7 +11,7 @@ window.languageRedirect = redirects => {
     const currentPath = window.location.pathname;
 
     // if the doc is already on a locale path, do not redirect
-    if (Object.keys(redirects).some(locale => currentPath.startsWith(`/${locale}`))) {
+    if (Object.keys(redirects).some(locale => currentPath.startsWith(`/${locale}/`))) {
         return;
     }
 
@@ -30,7 +30,8 @@ window.languageRedirect = redirects => {
             redirect === window.location.href
         ) return
 
-        window.location.replace(redirect)
+        redirectnoslash = redirect.replace(/\/$/, "");
+        window.location.replace(`${redirectnoslash}${window.location.pathname}`)
     })
 
     return data
