@@ -492,16 +492,20 @@ To help handling complex data Jinja engine are executed with theses additional f
 - to_toml: serialize to string an object to Toml
 
 So by example, if you want to convert a json string `$my_json` to Toml, you can to this way:
-{{ my_json | from_json | to_toml }}
+`{{ my_json | from_json | to_toml }}`
 Or you can iterate on a Json list `my_list='["a", "b", "c"]'` this way:
+```
 {% for i in my_list | from_json %}
  value {{ i }}
 {% endfor }}
+```
 
 which will result:
+```
 value a
 value b
 value c
+```
 
 ##### Keeping track of manual changes by the admin
 
