@@ -115,13 +115,9 @@ You can change the application domain:
 - through the web interface > `Applications` > `{app name}` > `Operations`
 - through the command line with `yunohost app change-url`
 
-Some applications don't allow domain change. The best solution is to reinstall the application:
-
-- backup the application data (`yunohost backup create --apps ...`)
-- uninstall the application
-- reinstall the application to the desired domain
-- restore the backup 
-
+:::note
+Some applications do not allow you to change domains. In general, it is still possible to make the change manually, but this operation requires a variety of system administration skills.
+:::
 
 ## DNS configuration
 
