@@ -102,14 +102,6 @@ The recommended configuration typically looks like this:
 @ 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
 * 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
 
-;; XMPP
-_xmpp-client._tcp 3600 IN SRV   0 5 5222 mydomain.tld.
-_xmpp-server._tcp 3600 IN SRV   0 5 5269 mydomain.tld.
-muc               3600 IN CNAME @
-pubsub            3600 IN CNAME @
-vjud              3600 IN CNAME @
-xmpp-upload       3600 IN CNAME @
-
 ;; Mail (MX, SPF, DKIM and DMARC)
 @               3600 IN MX  10 mydomain.tld.
 @               3600 IN TXT "v=spf1 a mx -all"
