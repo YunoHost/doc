@@ -56,8 +56,8 @@ This will be the domain used by your server's users to access the **authenticati
 
 You should be presented with 3 options (reviewed [in details here](/admin/domains)):
 
-<Tabs groupId="domain-choice">
-  <TabItem value="yunohost-domains" label="YunoHost's free domains">
+<details>
+  <summary>YunoHost's free domains</summary>
 
   If you're new to self-hosting and do not already have a domain name, we recommend using the free domain provided by YunoHost.
   You get multiple base domain choices:  `.nohost.me` / `.noho.st` / `.ynh.fr` for
@@ -67,23 +67,23 @@ You should be presented with 3 options (reviewed [in details here](/admin/domain
   (but as a downside you won't have full control over its DNS configuration).
 
   [more details on YunoHost's free domains](/admin/domains/dns_nohost_me)
+</details>
 
-  </TabItem>
-  <TabItem value="own-domain" label="Your own domain">
+<details>
+  <summary>Your own domain</summary>
 
   If you already own a domain name, you probably want to use it here. You will later need to configure DNS records as explained [here](/admin/domains/dns_configuration).
 
   You can also configure a [subdomain](https://en.wikipedia.org/wiki/Subdomain) if your
   main domain is already in use for other services.
+</details>
 
-  </TabItem>
-  <TabItem value="local-domain" label="Local domains">
-  
+<details>
+  <summary>Local domains</summary>
+
   Because yes, you *have to* configure a domain name. And if none of the above options are
   satisfying, you can set up a dummy domain such as `yolo.test` and tweak your **local** `/etc/hosts` file such that this dummy domain [points to the appropriate IP, as explained here](/admin/tutorials/domains/dns_local_network).
-
-  </TabItem>
-</Tabs>
+</details>
 
 :::tip
 This choice can be modified later, by adding other domains, changing which one is the main domain,
