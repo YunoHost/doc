@@ -31,8 +31,7 @@ const config: Config = {
   },
 
   i18n: {
-    // en-GB to make possible to have english in the dropdown which redirect to /en (as it’s a workaround, we don’t want to have it en-GB in the dropdown - Docusaurus will warn about it)
-    defaultLocale: 'en-GB',
+    defaultLocale: 'en',
     locales: ['ar', 'ca', 'de', 'en', 'es', 'fr', 'it', 'oc', 'ru'],
     localeConfigs: {
       ar: {
