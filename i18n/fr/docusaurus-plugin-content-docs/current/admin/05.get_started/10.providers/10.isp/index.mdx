@@ -6,8 +6,6 @@ description: Ceux qui fournissent vos ligne internet et router
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-{/* TODO: Update from grav */}
-
 <Tabs
 defaultValue="europe"
 values={[
@@ -42,6 +40,13 @@ values={[
 | LG U+ (HelloVision) | Multiple | Yes | Yes (Without ISP Router) | No | - | Partial |
 | KT(SkyLife, Qook&Show) | Multiple | Yes | Yes | No | - | Partial |
 | SKT (SK Broadband) | Multiple | Yes | Yes | No | - | Partial |
+
+</TabItem>
+<TabItem value="twn" label="Taïwan">
+
+| Service provider | Box (modem/router) | uPnP available | Port 25 openable | [Hairpinning](http://en.wikipedia.org/wiki/Hairpinning) | Customizable reverse DNS | Fix IP |
+| --- | --- | --- | --- | --- | --- | --- |
+| CHT (Chunghwa Telecom) | Multiple | Yes | Yes | Yes (Need hidden settings) | No | Partial |
 
 </TabItem>
 </Tabs>
@@ -94,14 +99,14 @@ Regulations in Finland prohibit the use of Port 25 for consumers.
 Tous les fournisseurs d’accès à Internet [membres de la Fédération French Data Network](http://www.ffdn.org/fr/membres) ont une politique favorable à l’auto-hébergement.
 :::
 
-| Fournisseur d’accès   | **Box/routeur**          | **[UPnP](https://fr.wikipedia.org/wiki/Universal_Plug_and_Play)** | **[Port 25 ouvrable](/admin/email)**<br/> | **[Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning)** | **[Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup)<br/>personnalisable ** | **[IP fixe](/admin/tutorials/domains/dns_dynamicip)**                                       | **[IPv6](https://fr.wikipedia.org/wiki/IPv6)** | **[Non listé sur le DUL](https://en.wikipedia.org/wiki/Dialup_Users_List)** |
-|-----------------------|--------------------------|-------------------------------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------|------------------------------------------------|-----------------------------------------------------------------------------|
-| OVH                   | Personnel<br/>ou Box OVH | ✔                                                                 | ✔                                   | ✔                                                           | ✔                                                                                        | ✔                                                                   | ✔                                              | …                                                                           |
-| [Free](./free)        | Freebox                  | ✔                                                                 | ✔                                   | ✔                                                           | ✔ (sauf IPv6, pas de support, et buggué sur certaines plages d'adresses ipv4)            | ✔                                                                   | ✔                                              | ✘                                                                           |
-| [SFR](./sfr)          | Neufbox                  | ✔                                                                 | ✔                                   | ✔/✘                                                         | …                                                                                        | ✔/✘                                                                 | ✔                                              | …                                                                           |
-| [Orange](./orange)    | Livebox                  | ✔                                                                 | ✘                                   | ✔ (depuis la Livebox 4)                                     | ✘ (XXX.pro.dns-orange.fr disponible sur les abonnements orange pro)                      | ✘ (en option depuis la Livebox 3 et sur les abonnements orange pro) | ✔                                              | …                                                                           |
-| Bouygues<br/>Télécom  | Bbox                     | ✔                                                                 | ✔                                   | ✔                                                           | ✘                                                                                        | ✔                                                                   | …                                              | …                                                                           |
-| Darty                 | Dartybox                 | ✔                                                                 | ✔                                   | ✔                                                           | ✘                                                                                        | ✔                                                                   | …                                              | …                                                                           |
+| Fournisseur d’accès   | Box/routeur          | [UPnP](https://fr.wikipedia.org/wiki/Universal_Plug_and_Play) | [Port 25 ouvrable](/admin/email) | [Hairpinning](http://fr.wikipedia.org/wiki/Hairpinning) | [Reverse DNS](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) personnalisable | [IP fixe](/admin/tutorials/domains/dns_dynamicip)                                       | [Non listé sur le DUL](https://en.wikipedia.org/wiki/Dialup_Users_List) |
+|-----------------------|--------------------------|-------------------------------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| OVH                   | Personnel<br/>ou Box OVH | ✔                                                                 | ✔                                   | ✔                                                           | ✔                                                                                        | ✔                                                                   | …                                                                           |
+| [Free](./free)        | Freebox                  | ✔                                                                 | ✔                                   | ✔                                                           | ✔ (sauf IPv6, pas de support, et buggué sur certaines plages d'adresses ipv4)            | ✔                                                                   | ✘                                                                           |
+| [SFR](./sfr)          | Neufbox                  | ✔                                                                 | ✔                                   | ✔/✘                                                         | …                                                                                        | ✔/✘                                                                 | …                                                                           |
+| [Orange](./orange)    | Livebox                  | ✔                                                                 | ✘                                   | ✔ (depuis la Livebox 4)                                     | ✘ (XXX.pro.dns-orange.fr disponible sur les abonnements orange pro)                      | ✘ (en option depuis la Livebox 3 et sur les abonnements orange pro) | …                                                                           |
+| Bouygues<br/>Télécom  | Bbox                     | ✔                                                                 | ✔                                   | ✔                                                           | ✘                                                                                        | …                                              | …                                                                           |
+| Darty                 | Dartybox                 | ✔                                                                 | ✔                                   | ✔                                                           | ✘                                                                                        | …                                              | …                                                                           |
 
 
 
