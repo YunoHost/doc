@@ -1,0 +1,33 @@
+---
+title: La webadmin
+---
+
+# Travailler sur la webadmin
+
+Avec `ynh-dev`, lancez dans le conteneur:
+
+```
+./ynh-dev use-git yunohost-admin
+```
+
+Ceci lance gulp, de sorte qu'à chaque fois que vous modifiez les sources, il
+recompilera le code (JS) et vous pourrez voir les changements dans le navigateur
+web (Ctrl+F5).
+
+Pour stopper la commande, faites simplement Ctrl+C.
+
+:::warning
+Il faudra peut-être régulièrement forcer le rafraîchissement du cache navigateur
+pour propager correctement le JavaScript et/ou HTML (à chaque fois que l'on 
+change quelque chose dans `js` ou `views`, donc).
+:::
+
+
+L'interface web utilise une API pour communiquer avec YunoHost. Les commandes/requêtes de l'API sont également définies dans l'actionsmap. Par exemple, accéder à la page `https://domain.tld/yunohost/api/users` correspond à une requête `GET /users` vers l'API YunoHost. Cette requête est mappée sur `user_list()`. Accéder à cette URL devrait afficher le JSON retourné par cette fonction. Les requêtes 'GET' sont typiquement destinées à demander de l'information au serveur, tandis que les requêtes 'POST' sont destinées à demander au serveur de modifier/changer des informations ou de réaliser des actions.
+
+- `js/yunohost/controllers` contient les parties JavaScript, et définit quelles requêtes faire à l'API pendant le chargement d'une page donnée de l'interface, et comment traiter les données récupérées pour générer la page, en utilisant des templates.
+
+- `views` contient les templates des pages de l'interface. Dans le template, les données venant du JavaScript peuvent être utilisées avec la syntaxe `{{some-variable}}`, qui sera remplacée pendant la construction de la page. Il est également possible d'avoir des conditions avec la syntaxe d'[handlebars.js](http://handlebarsjs.com) : `{{#if
+  some-variable}}<p>du HTML conditionnel ici !</p>{{/if}}`
+
+- Pour l'internationalisation des messages, utilisez `y18n.t('some-string-code')`  dans le JavaScript, ou `{{t 'some-string-code'}}` dans le template HTML, et mettez votre message dans `locales/en.json`. Ne modifiez pas de fichiers de locales autres que `en.json`, la traduction sera faite avec [Weblate](https://translate.yunohost.org/) !

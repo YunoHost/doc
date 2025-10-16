@@ -1,0 +1,60 @@
+---
+title: The server and command line
+---
+
+# Working on the server and CLI
+
+When using `ynh-dev`, run in the container:
+
+```
+./ynh-dev use-git yunohost
+```
+
+If you work on Moulinette too:
+
+```
+./ynh-dev use-git moulinette
+```
+
+
+## The actionsmap
+
+The actionsmap file (`data/actionsmap/yunohost.yml`) defines the command line *and*
+the API structure. It is structured as "categories", "actions", and "arguments".
+
+For example for the command line `yunohost domain add some.domain.tld`, the
+category is `domain`, the action is `add`, and `some.domain.tld` is an argument.
+
+
+Moulinette will automatically map commands in the actionsmap to Python functions
+(and their arguments) located in `src/yunohost/`. For example, typing
+`yunohost domain add some.domain.tld` will call the function `domain_add(domainName)`
+in `domain.py`, with the argument `domainName` equal to `"some.domain.tld"`.
+
+
+:::warning
+Each time you edit the actionsmap or the Python code, you should restart the YunoHost
+api with:
+```
+systemctl restart yunohost-api
+```
+You'll need to retype your admin and password in the web interface.
+:::
+
+## Coding style
+
+Please follow the standard PEP8 rules, add [Python typing](https://docs.python.org/3/library/typing.html),
+and run the usual linting tools for Python and Bash.
+
+Github Actions will run the linting tools and report errors.
+
+### YunoHost specific rules
+
+- To handle exceptions, you should raise some `YunohostError()`
+
+- To help with internationalizing the messages, use `m18n.n('some-message-id')`
+  and put your string in `locales/en.json`. You can also put arguments and use
+  them in the string with `{{some-argument:s}}`. Don't edit other locales files,
+  this will be done using [weblate](https://translate.yunohost.org/) !
+
+- Name of "private" functions should start with a `_`

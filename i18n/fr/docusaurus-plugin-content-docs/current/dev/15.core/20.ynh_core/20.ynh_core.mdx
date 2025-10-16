@@ -1,0 +1,50 @@
+---
+title: Le serveur et la ligne de commande
+---
+
+# Travailler sur le serveur et la ligne de commande
+
+Avec `ynh-dev`, lancez dans le conteneur :
+
+```
+./ynh-dev use-git yunohost
+```
+
+Si vous travaillez aussi sur Moulinette :
+
+```
+./ynh-dev use-git moulinette
+```
+
+## L'actionsmap
+
+Le fichier actionsmap (`data/actionsmap/yunohost.yml`) définit la ligne de
+commande *et* la structure de l'API. Il est structuré en "catégories",
+"actions" et "arguments".
+
+Par exemple, dans `yunohost domain add some.domain.tld`, la catégorie est `domain`, l'action est `add` et `some.domain.tld` est un argument.
+
+Moulinette va automatiquement faire le lien entre les commandes de l'actionsmap et les fonctions Python (ainsi que leurs arguments) dans `src/yunohost/`. Par exemple, `yunohost domain add some.domain.tld` déclenchera un appel de `domain_add(domainName)` dans `domain.py`, avec l'argument  `domainName` qui vaudra `"some.domain.tld"`.
+
+:::warning
+À chaque modification de l'actionsmap, il faut redémarrer l'API YunoHost : 
+```
+systemctl restart yunohost-api```
+Il faudra retaper le mot de passe administrateur dans l'interface web.
+:::
+
+
+## Style de code
+
+Veuillez suivre les règles standard PEP8, ajouter du [typage Python](https://docs.python.org/3/library/typing.html),
+et lancer les outils habituels de linting pour Python et Bash.
+
+Les Actions Github lanceront les outils de linting et reporteront les erreurs.
+
+### Règles spécifiques YunoHost
+
+- Pour gérer les exceptions, il existe un type `YunohostError()`
+
+- Pour aider avec l'internationalisation des messages, utilisez `m18n.n('some-message-id')` et mettez le message correspondant dans `locales/en.json`. Vous pouvez aussi utiliser des arguments pour construire les messages, avec `{{some-argument:s}}`. Ne modifiez pas de fichiers de locales autres que `en.json`, la traduction sera faite avec [Weblate](https://translate.yunohost.org/) !
+
+- Mettre un `_` devant les noms des fonctions "privées".

@@ -39,7 +39,7 @@ def get_helpers_tree(helpers_version: str) -> dict[str, dict]:
         "tech": {
             "title": "App technologies",
             "notes": "These allow to install specific version of the technology required to run some apps",
-            "subsections": ["nodejs", "ruby", "go", "composer"],
+            "subsections": ,
             "helpers": {},
         },
         "db": {
@@ -80,6 +80,8 @@ def get_helpers_tree(helpers_version: str) -> dict[str, dict]:
     }
     if helpers_version == "2.1":
         tree["misc"]["subsections"][0] = "0-utils"  # type: ignore
+        del tree["tech"]
+        tree["meh"]["subsections"] += ["nodejs", "ruby", "go", "composer"]
 
     return tree
 

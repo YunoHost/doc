@@ -1,0 +1,89 @@
+---
+title: Development environment
+---
+
+The recommended development tool is `ynh-dev`, and is based on Incus.
+
+This page gives an introduction to both tools.
+
+## Incus
+
+The recommended testing and development environment is based on [Incus](https://linuxcontainers.org/incus/),
+a system container manager.
+
+Its usage is very similar to Docker and Podman, but its main difference is its ability to run full
+operating systems, with their own network interfaces and `init` system. There is no virtualization here.
+
+The YunoHost project provides Incus images on [the Incus repository](https://repo.yunohost.org/incus/).
+
+For each Debian release and for each branch (`stable`, `testing`, `unstable`) are provided multiple images:
+* `before-install`: tools and dependencies are installed but *not* Yunohost
+* `dev`: YunoHost is installed but the post-install step was not run
+* `appci`: YunoHost is installed, post-install was run and you can install apps
+* `core-tests`: YunoHost is installed and post-installed, and development and testing tools are installed.
+
+The `appci` and `core-tests` images are used by the project's testing infrastructure.
+
+The Incus images are built by our [incus_builder](https://github.com/YunoHost/incus_builder/) tool, but **not automatically**, so please feel free to ask us to regenerate images.
+
+### Install and configure Incus
+
+Incus can be installed on Debian with:
+
+```
+apt install incus
+```
+
+Then you need to add users to the `incus-admin` group:
+
+```
+sudo usermod -a -G incus-admin $(whoami)
+newgrp incus-admin
+```
+
+and initialize Incus:
+
+```
+incus admin init
+```
+
+You will want to add the YunoHost repository (do NOT run this as root but as your user):
+
+```
+incus remote add yunohost https://repo.yunohost.org/incus --protocol simplestreams --public
+```
+
+and to download an image:
+
+```
+incus image copy yunohost:yunohost/bookworm-stable/dev local: --copy-aliases --auto-update
+```
+
+## Install a custom YunoHost version
+
+When testing an unreleased YunoHost version, or installation script, you might want to
+run the installation script from [its Git repository](https://github.com/YunoHost/install_script) on a freshly installed Debian.
+
+For example to install the unreleased Debian 13 Trixie version:
+
+```
+curl https://raw.githubusercontent.com/YunoHost/install_script/main/trixie | bash
+```
+
+You might also want to pass arguments to the script:
+
+```
+curl https://raw.githubusercontent.com/YunoHost/install_script/main/trixie | bash -s -- -d unstable
+```
+
+## `ynh-dev`
+
+[`ynh-dev`](https://github.com/YunoHost/ynh-dev) is the *recommended tool* that automates:
+* downloading Incus images
+* download YunoHost's projects source code
+* Install and symlink YunoHost stuff inside the container
+
+That way, you will be able to edit files, test your changes in real time, commit
+and push/pull your changes directly from your development environment.
+
+Please see [the `ynh-dev` README](https://github.com/YunoHost/ynh-dev/?tab=readme-ov-file) for installation and usage instructions.
