@@ -293,6 +293,53 @@ set__timezone() {
 }
 ```
 
+### "`Bind`" statement with custom setters
+
+You may also want to use custom setters to edit the same file that is bound to some config panel entries via the `bind` statement. This can be useful for instance if a portion of the bound config file is not of the format supported by the `bind` statement and thus need to be edited with a custom setter.
+In such cases, bear in mind that when pressing the "Save" button in the config panel, custom setters will be run first, and then the entries with the `bind` property will be saved. Due to this, you will have to run [`ynh_store_file_checksum()`](https://doc.yunohost.org/en/packaging/scripts/helpers_v2.1#backup) in the last setter to be executed before the bind operations start, or the latter [will warn you that the file was changed manually](https://github.com/YunoHost/yunohost/blob/81075f81e9ed527698387d9f23e73eb00dfab54c/helpers/helpers.v2.1.d/config#L96).
+
+<details>
+<summary><i>Basic example : a mixed format config file</i></summary>
+
+`__INSTALL_DIR__/js/config.js`
+
+```js
+const servers = [];
+
+const customPrefs = {
+  "lang": "en",
+  "theme": "auto",
+  "sortAsc": true,
+  "pageSize": 12
+}
+```
+
+`config_panel.toml`
+
+```toml
+[main.server_mode.archives_paths]
+ask.en = "Mastodon archive(s) to display"
+type = "text"
+bind = "null"
+
+[main.default_config.lang]
+ask.en = "UI Language"
+type = "select"
+choices = ["en", "fr", "auto"]
+bind = "lang:__INSTALL_DIR__/js/config.js"
+```
+`scripts/config`
+
+```bash
+set__archives_paths() {
+    # Convert multiline string into one comma-separated line
+    local comma_separated_archives_paths="${archives_paths//[[:space:]]/,}"
+    local comma_separated_archives_paths_quoted="\"${archives_paths//[[:space:]]/\",\"}\""
+
+    ynh_replace --match="^const servers.*" --replace="const servers = [$comma_separated_archives_paths_quoted];" --file="$config_file"
+    ynh_store_file_checksum "$config_file"
+}
+```
 </details>
 
 ## User input validations
