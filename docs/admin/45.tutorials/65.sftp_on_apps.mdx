@@ -31,7 +31,7 @@ setfacl -m u:wordpress:r-- /var/www/wordpress/wp-config.php
 setfacl -R -m u:USER:rwX /var/www/wordpress
 setfacl -R -d -m u:USER:rwX /var/www/wordpress
 ```
-some command explanation :
+quick commands explaination :
 - `mkdir -p /PATH`create a folder in the specified PATH
 - `touch`create an empty file
 - `mount --bind` makes the contents of the source file or directory available at the target location without actually moving or copying the data.
