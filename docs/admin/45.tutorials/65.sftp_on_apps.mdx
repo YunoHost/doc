@@ -5,11 +5,17 @@ title: Give SFTP permission to edit an app
 
 In YunoHost permission management web admin interface, you can specify which user can access your system through SFTP.
 
+Go to : 
+- Groups and permissions > Individual user permissions. 
+- Click on add a permission and select SFTP
+
 However, those user are chrooted in their home directory for security reasons.
 
 If you want to give access to a specific apps through SFTP, here are additional steps to do after giving the SFTP permission in the web interface.
 
-In instructions below, USER is the user to whom you wish to give permission to edit wordpress files.
+In instructions below, 
+- USER is the user to whom you wish to give permission to edit wordpress files.
+- `/var/www/wordpress/wp-config.php`  must be remplaced by the path your app config file. eg : for yeswiki (/var/www/yeswiki/wakka.config.php)
 
 ```bash
 mkdir -p /home/USER/apps/wordpress
@@ -25,3 +31,8 @@ setfacl -m u:wordpress:r-- /var/www/wordpress/wp-config.php
 setfacl -R -m u:USER:rwX /var/www/wordpress
 setfacl -R -d -m u:USER:rwX /var/www/wordpress
 ```
+some command explanation :
+- `mkdir -p /PATH`create a folder in the specified PATH
+- `touch`create an empty file
+- `mount --bind` makes the contents of the source file or directory available at the target location without actually moving or copying the data.
+- `setfacl` set the file permission
