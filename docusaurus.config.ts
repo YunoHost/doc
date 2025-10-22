@@ -57,7 +57,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editLocalizedFiles: true,
+          editLocalizedFiles: false,
           routeBasePath: '/',
           editUrl: 'https://github.com/YunoHost/doc/tree/main',
         },
