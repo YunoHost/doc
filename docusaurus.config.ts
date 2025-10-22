@@ -30,6 +30,7 @@ const config: Config = {
   },
 
   i18n: {
+    // https://docusaurus.io/docs/api/docusaurus-config#i18n
     // en-GB to make possible to have english in the dropdown which redirect to /en
     // (as it’s a workaround, we don’t want to have it en-GB in the dropdown - Docusaurus will warn about it)
     defaultLocale: 'en-GB',
@@ -70,10 +71,12 @@ const config: Config = {
 
   plugins: [
     [
+      // https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-client-redirects/
       '@docusaurus/plugin-client-redirects',
       require('./redirects.ts'),
     ],
     [
+      // https://github.com/praveenn77/docusaurus-lunr-search
       require.resolve('docusaurus-lunr-search'),
       {
         languages: ['ar', 'de', 'en', 'es', 'fr', 'it', 'ru'],
