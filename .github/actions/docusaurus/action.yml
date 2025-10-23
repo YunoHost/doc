@@ -1,0 +1,39 @@
+name: Check and build Docusaurus doc
+
+inputs:
+  base_url:
+    description: Base URL to pass to Docusaurus
+    required: true
+    default: /
+
+runs:
+  using: "composite"
+  steps:
+  - name: Set up Python
+    uses: actions/setup-python@v5
+
+  - name: Set up Node
+    uses: actions/setup-node@v4
+    with:
+      node-version: lts/*
+      cache: yarn
+
+  - name: Installation
+    shell: bash
+    run: yarn
+
+  - name: Check image paths consistency
+    shell: bash
+    run: bash scripts/check_missing_or_bad_image_path.sh
+
+  - name: Check translations pages consistency
+    shell: bash
+    run: python3 ./scripts/check_i18n_consistency.py
+
+  - name: Build docs
+    env:
+      BASE_URL: "${{ inputs.base_url }}"
+    shell: bash
+    run: |
+      echo "Using baseUrl=$BASE_URL"
+      yarn build

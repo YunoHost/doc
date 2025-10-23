@@ -5,7 +5,6 @@ on:
     branches:
       - main
       - next
-  pull_request:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
@@ -13,35 +12,20 @@ concurrency:
 
 jobs:
   build:
+    name: Build Docs
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+
     env:
       # This variable allow to build for either doc.yunohost.org or nextdoc.yunohost.org
       BUILD_FOR: ${{ github.ref == 'refs/heads/main' && 'main' || 'next' }}
 
-    name: Build Docs
-    timeout-minutes: 30
-    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Check image paths consistency
-        run: bash scripts/check_missing_or_bad_image_path.sh
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-          cache: yarn
-      - name: Installation
-        run: yarn
-
-      - name: Check translations pages consistency
-        run: python3 ./scripts/check_i18n_consistency.py
-
-      - name: Build docs
-        run: yarn build
+      - name: Check and build doc
+        uses: ./.github/actions/docusaurus
 
       - name: Archive the docs
         uses: actions/upload-artifact@v4
