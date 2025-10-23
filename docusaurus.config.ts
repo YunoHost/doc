@@ -18,24 +18,36 @@ const config: Config = {
   favicon: 'img/favicon.png',
 
   url: getUrl(),
-  baseUrl: '/',
+  baseUrl: process.env.BASE_URL || '/',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
   onBrokenAnchors: 'throw',
   onDuplicateRoutes: 'throw',
 
   future: {
+    v4: true,
     experimental_faster: true,
   },
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['ar', 'ca', 'de', 'en', 'es', 'fr', 'it', 'oc', 'ru'],
+    // en-GB to make possible to have english in the dropdown which redirect to /en
+    // (as it’s a workaround, we don’t want to have it en-GB in the dropdown - Docusaurus will warn about it)
+    defaultLocale: 'en-GB',
+    locales: ['ar', 'ca', 'de', 'en', 'es', 'fr', 'it', 'oc', 'ru', 'en-GB'],
     localeConfigs: {
       ar: {
         direction: 'rtl',
       },
+      en: {
+        path: 'en',
+      },
+    },
+  },
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'throw',
+      onBrokenMarkdownImages: 'throw',
     },
   },
 
@@ -73,17 +85,35 @@ const config: Config = {
     require.resolve("./src/YunoHostImagesListScript.js")
   ],
 
+  scripts: [
+    {
+      src: '/js/language-detect.js',
+      async: true,
+      "data-language-redirect": JSON.stringify({
+        ar: '/ar/',
+        ca: '/ca/',
+        de: '/de/',
+        en: '/en/',
+        es: '/es/',
+        fr: '/fr/',
+        it: '/it/',
+        oc: '/oc/',
+        ru: '/ru/',
+      }),
+    },
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'https://yunohost.org/assets/img/portal_simple_dark.jpg',
     colorMode: {
       respectPrefersColorScheme: true,
     },
-    announcementBar: {
-      id: 'beta-docusaurus',
-      content: '🛠️ This doc is very new, please report any issues! The old doc <a target="_blank" href="https://doc.old.yunohost.org">is still accessible</a>. 🛠️',
-      backgroundColor: 'darkOrange',
-    },
+    // announcementBar: {
+    //   id: 'beta-docusaurus',
+    //   content: '🛠️ This doc is very new, please report any issues! The old doc <a target="_blank" href="https://doc.old.yunohost.org">is still accessible</a>. 🛠️',
+    //   backgroundColor: 'darkOrange',
+    // },
     navbar: {
       title: 'Docs',
       hideOnScroll: true,
@@ -109,6 +139,7 @@ const config: Config = {
         {
           type: 'localeDropdown',
           position: 'right',
+          queryString: '?persistLocale=true',
         },
       ],
     },

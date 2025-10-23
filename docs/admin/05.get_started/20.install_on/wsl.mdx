@@ -61,7 +61,10 @@ It is under Debian 9 Stretch, so let's upgrade it:
 sudo sed -i 's/stretch/bookworm/g' /etc/apt/sources.list`
 sudo apt update
 sudo apt upgrade
-sudo apt dist-upgrade
+# optional
+sudo apt full-upgrade
+# wget needed for later setup
+sudo apt install wget -y
 ```
 
 ## Prevent WSL from tweaking configuration files

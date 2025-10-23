@@ -285,7 +285,10 @@ This hook is run at the end of the command `yunohost domain dns suggest` or equi
 
 Thanks to This hook you can customize
 
-#### No environment variable
+#### Environment variables
+
+- `base_domain`: the top-level part of the domain
+- `suffix`: the subdomain part of the domain
 
 #### Positionnal arguments
 
@@ -645,6 +648,13 @@ iptables -A OUTPUT -p tcp --dport 25 -m tcp -j REJECT --reject-with icmp-port-un
 This hook is run during the command `yunohost tools regen-conf` or equivalent action in webadmin.
 
 This hook is called several times with different actions keywords (pre and post operations).
+
+In order to be taken into account, the conf_regen hooks must:
+1. be present in the folder `/etc/yunohost/hooks.d/conf_regen`
+2. follow the naming convention `dd-sss_xxx`.
+`dd` are 2 digits and should be higher than the ones from the default hook (present in `/usr/share/yunohost/hooks/conf_regen`).
+`sss` is a string that defines the kind of hook (eg. `ssh` or `postfix`).
+`xxx` is a free field to help remind what is inside that hook.
 
 #### Environment variables
 

@@ -12,3 +12,14 @@ Please report issues on [the YunoHost bugtracker](https://github.com/YunoHost/is
 
 The how-to of this repository is [available online](https://doc.yunohost.org/dev/doc/)
 and also [in this repository](./docs/dev/05.doc/index.mdx).
+
+# Run locally
+
+Requirements: npm, yarn
+
+```bash
+# clone the doc repository, go in the doc repository folder, then:
+npm install
+npm run build
+npm run serve
+```

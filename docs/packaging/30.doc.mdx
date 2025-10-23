@@ -53,6 +53,8 @@ To display such note only for a specific version, you can create a markdown file
 
 Example: `doc/PRE_UPGRADE.d/1.2.1~ynh1.md`.
 
+With the above example, the user will be notified with the content of this markdown file when they upgrade from a lower version of `1.2.1~ynh1` to this latter version or higher.
+
 ### Localization
 
 All notes' markdown file can optionally be localized using via a filename suffix with the following format: `doc/{hook}_{locale}.md` or `doc/{hook}.d/{version}_{locale}.md`.
@@ -60,4 +62,4 @@ Without locale suffix, a file will be considered to be the English locale (i.e. 
 
 Examples:
 - `doc/POST_INSTALL_fr.md` will be displayed after each install of the given app where the Yunohost instance's language is set to French.
-- `doc/POST_UPGRADE.d/2025.04.02~ynh1_es.md` will be displayed after upgrade to version `2025.04.02~ynh1` of the given app where the Yunohost instance's language is set to Spanish.
+- `doc/POST_UPGRADE.d/2025.04.02~ynh1_es.md` will be displayed after upgrading to version `2025.04.02~ynh1` or newer of the given app where the Yunohost instance's language is set to Spanish.

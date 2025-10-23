@@ -52,6 +52,7 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/install',                                 to: '/admin/get_started/install_on', },
     { from: '/install_on_top_of_debian',                to: '/admin/get_started/install_on/on_top_of_debian', },
     { from: '/dns_config',                              to: '/admin/get_started/post_install/dns_config', },
+    { from: '/dns',                                     to: '/admin/get_started/post_install/dns_config', },
     { from: '/finding_the_local_ip',                    to: '/admin/get_started/post_install/find_ip', },
     { from: '/isp_box_config',                          to: '/admin/get_started/post_install/port_forwarding', },
     { from: '/selfhosting',                             to: '/admin/about_self_hosting', },
@@ -64,6 +65,11 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/providers/registrar/namecheap/autodns',   to: '/admin/get_started/providers/registrar/namecheap', },
     { from: '/providers/registrar/ovh/autodns',         to: '/admin/get_started/providers/registrar/ovh/autodns', },
     { from: '/providers/registrar/ovh/manualdns',       to: '/admin/get_started/providers/registrar/ovh/manualdns', },
+
+    { from: '/registar_api_ovh',                        to: '/admin/get_started/providers/registrar/ovh/autodns', },
+    { from: '/registar_api_gandi',                      to: '/admin/get_started/providers/registrar/gandi', },
+    { from: '/registar_api_namecheap',                  to: '/admin/get_started/providers/registrar/namecheap', },
+
     { from: '/providers/server',                        to: '/admin/get_started/providers/servers', },
     { from: '/providers/vpn',                           to: '/admin/get_started/providers/vpn/', },
     { from: '/vpn_advantage',                           to: '/admin/get_started/providers/vpn/vpn_advantage', },
@@ -82,12 +88,14 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/terms_of_services',                       to: '/community/terms_of_services', },
 
     { from: '/contributordoc',                          to: '/dev/', },
-    { from: '/dev/forms',                               to: '/dev/core/forms', },
+    { from: '/contribute',                              to: '/dev/', },
+    { from: '/dev/forms',                               to: '/dev/core/ynh_core/forms', },
     { from: '/dev/maindomain',                          to: '/dev/core/maindomain', },
     { from: '/write_documentation',                     to: '/dev/doc/', },
     { from: '/doc_writing_guide',                       to: '/dev/doc/apps_documentation', },
     { from: '/doc_use_git',                             to: '/dev/doc/git', },
     { from: '/doc_markdown_guide',                      to: '/dev/doc/markdown_guide', },
+    { from: '/docs',                                    to: '/', },
 
     { from: '/packaging_apps',                          to: '/packaging/', },
     { from: '/advanced_packagers',                      to: '/packaging/advanced', },
