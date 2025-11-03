@@ -10,6 +10,8 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/ssh',                                     to: '/admin/command_line', },
     { from: '/domains',                                 to: '/admin/domains/', },
     { from: '/certificate',                             to: '/admin/domains/certificate', },
+    { from: '/dns_nohost_me',                           to: '/admin/domains/dns_nohost_me', },
+    { from: '/dns_subdomains',                          to: '/admin/domains/dns_configuration', },
     { from: '/email',                                   to: '/admin/email', },
     { from: '/email_configure_client',                  to: '/admin/email/clients', },
     { from: '/email_migration',                         to: '/admin/email/migration', },
@@ -38,8 +40,6 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/certificate_custom',                      to: '/admin/tutorials/certificate_custom', },
     { from: '/dns_dynamicip',                           to: '/admin/tutorials/domains/dns_dynamicip', },
     { from: '/dns_local_network',                       to: '/admin/tutorials/domains/dns_local_network', },
-    { from: '/dns_nohost_me',                           to: '/admin/tutorials/domains/dns_nohost_me', },
-    { from: '/dns_subdomains',                          to: '/admin/tutorials/domains/dns_subdomains', },
     { from: '/email_configure_relay',                   to: '/admin/tutorials/email_configure_relay', },
     { from: '/external_storage',                        to: '/admin/tutorials/external_storage', },
     { from: '/filezilla',                               to: '/admin/tutorials/filezilla', },
@@ -115,6 +115,9 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
     { from: '/packaging_apps_helpers_v2.1',             to: '/packaging/scripts/helpers_v2.1', },
     { from: '/shell_variables_scope',                   to: '/packaging/scripts/shell_variables_scope', },
     { from: '/packaging_testing',                       to: '/packaging/test', },
+
+    { from: '/admin/tutorials/domains/dns_nohost_me',   to: '/admin/domains/dns_nohost_me', },
+    { from: '/admin/tutorials/domains/dns_subdomains',  to: '/admin/domains/dns_configuration', },
 ];
 
 const en_redirects_from_grav: Array<{ from: string; to: string }> = redirects_from_grav.map(

@@ -148,6 +148,7 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
       additionalLanguages: [
+        'autohotkey',
         'bash',
         'c',
         'css',

@@ -1,0 +1,167 @@
+---
+title: DNS Configuration
+---
+
+DNS (domain name system) is a system that converts human-readable addresses
+(domain names) into machine-understandable addresses (IP). For your server to be
+easily accessible by human beings, and for some services like mail to work
+properly, DNS must be configured.
+
+If you're using an [automatic domain](/admin/domains/dns_nohost_me) provided by the YunoHost Project, the configuration should be
+performed automatically. If you're using your own domain name (e.g. bought via
+a registrar), this page should explain how to manually configure your domain on your 
+registrar's interface.
+
+Note YunoHost supports the [automatic configuration of DNS records](/admin/domains/#dns-configuration) for some registrar.
+
+## A brief explanation of domain names 
+
+Because understanding domains can be tricky, it might be worth detailing how they work.
+
+A domain is a human-readable address made out of *labels* concatenated by dots.
+
+So if you take the domain name `www.yunohost.org` the usual convention is to break it down as:
+
+| domain             | description            |
+| :---------------:  | :--------------------: |
+| `.org`             | top-level domain       |
+| `yunohost.org`     | apex/root/bare domain  |
+| `www.yunohost.org` | subdomain              |
+
+However from [Wikipedia](https://en.wikipedia.org/wiki/Domain_name) we can learn:
+
+> *Domain names are organized in subordinate levels (subdomains) of the DNS root domain, which is nameless.*
+
+So in theory `yunohost.org` is a subdomain of `.org` but for convenience we usually
+talk about *subdomain* for any domain that has 2 levels after the top-level domain.
+This become even more confusing if you consider that some top-level domains have 2 labels
+(e.g. `.gouv.fr` or `.co.uk`).
+
+The wikipedia quote also mention the "DNS root domain" which is usually omitted but
+when not, is represented by a single dot at the end. This form is referred to as 
+"fully qualified domain name" (FQDN). With our previous example, `www.yunohost.org.` would be an FQDN. 
+This is good to remember because you usually need to specify an FQDN in your DNS records.
+
+## A brief explanation of DNS records.
+
+:::info
+DNS records must be managed through your registrar's interface (the vendor you rent your custom domain from).
+:::
+
+In the following explanations you can assume the examples in code blocks use the
+DNS [zone file](https://en.wikipedia.org/wiki/Zone_file) syntax. The lines we use
+have 5 columns separated by a whitespace. Those columns represent the different record's fields:
+
+| name | ttl | record class | record type | record data |
+| ---- | --- | ------------ | ----------- | ----------- |
+
+It's also good to be aware of the following:
+
+- We use placeholder values in the examples ! replace with the appropriate ones for your case.
+- We recommend a [TTL](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) of 3600s (1 hour). But you can use something else if you know what you're doing.
+- Don't put an IPv6 record if you're not sure IPv6 really works on your server ! You might have issues with *Let's Encrypt* if it doesn't.
+- The `@` name corresponds to the origin, which is your apex domain name (like `mydomain.tld`)
+- Reminder that a domain specified in the data of the record **needs to end with a dot** (to be an FQDN as explained previously).
+
+## Minimal DNS configuration
+
+When registering a custom domain name through the YunoHost interface, this is the minimal
+required configuration to have it working.
+
+```autohotkey
+;; standard IPv4 record
+@ 3600 IN A 111.222.33.44
+
+;; if your server is IPv6 capable you can add an AAAA record
+@ 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
+```
+
+However, this doesn't allow all features to work and you will notice warnings and errors
+when running the *Diagnosis* in the web interface.
+
+
+## Recommended DNS configuration
+
+YunoHost provides a recommended DNS configuration, available via:
+
+- the webadmin, in `Domains` > `{yourdomain.tld}` > `DNS`;
+- or the command line, `yunohost domain dns suggest yourdomain.tld`
+
+For specific needs or specific setups, and if you know what you're doing, you
+might want or have to tweak these, or add additional ones (e.g. to handle
+subdomains).
+
+The recommended configuration typically looks like this:
+
+```autohotkey
+;; standard IPv4 records
+@ 3600 IN A 111.222.33.44
+* 3600 IN A 111.222.33.44
+
+;; if your server is IPv6 capable you can add AAAA records
+@ 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
+* 3600 IN AAAA 2222:444:8888:3333:bbbb:5555:3333:1111
+
+;; Mail (MX, SPF, DKIM and DMARC)
+@               3600 IN MX  10 mydomain.tld.
+@               3600 IN TXT "v=spf1 a mx -all"
+mail._domainkey 3600 IN TXT "v=DKIM1; k=rsa; p=someHuuuuuuugeKey"
+_dmarc          3600 IN TXT "v=DMARC1; p=none"
+```
+
+
+## Subdomains
+
+YunoHost allows the use of subdomains. If you rent a domain name `mydomain.com`,
+you can create a subdomain `blog.mydomain.com`.
+
+```autohotkey
+@      3600 IN A     111.222.33.44
+@      3600 IN AAAA  2222:444:8888:3333:bbbb:5555:3333:1111
+*      3600 IN CNAME mydomain.com.
+agenda 3600 IN CNAME mydomain.com.
+blog   3600 IN CNAME mydomain.com.
+rss    3600 IN CNAME mydomain.com.
+```
+
+The above allow you to access `agenda.mydomain.com`, `blog.mydomain.com` and `rss.mydomain.com` subdomains.
+
+However you might be in the position where your apex domain is already in use for another service
+(the `@ A` record is already in use).
+In that case you might want to have this DNS configuration instead:
+
+```autohotkey
+agenda 3600 IN A    XYZ.XYZ.XYZ.XYZ
+agenda 3600 IN AAAA 1234:1234:1234:FFAA:FFAA:FFAA:FFAA:AAFF
+blog   3600 IN A    XYZ.XYZ.XYZ.XYZ
+blog   3600 IN AAAA 1234:1234:1234:FFAA:FFAA:FFAA:FFAA:AAFF
+rss    3600 IN A    XYZ.XYZ.XYZ.XYZ
+rss    3600 IN AAAA 1234:1234:1234:FFAA:FFAA:FFAA:FFAA:AAFF
+```
+
+## Reverse DNS
+
+If your ISP or VPS provider let you define a [Reverse DNS
+lookup](https://en.wikipedia.org/wiki/Reverse_DNS_lookup) for your public IPv4
+and/or IPv6 addresses, you must configure it. It will prevent you to be marked as
+spam by anti-spam filters.
+
+:::note
+The reverse DNS configuration happens on your Internet Service Provider or VPS provider. It is NOT handled by your domain's registrar.
+:::
+
+If your public IPv4 address is `111.222.333.444` and your DNS
+domain is `mydomain.tld`, you should get following answer when using `nslookup`
+command tool:
+
+```bash
+nslookup 111.222.333.444
+444.333.222.111.in-addr.arpa    name = mydomain.tld.
+```
+
+From the web interface, you can run the *Diagnosis* and check in the *Email* section
+if reverse DNS is configured, and if not to which value it must be set to.
+
+## Dynamic IP
+
+If your global IP address is constantly changing, [follow this tutorial](/admin/tutorials/domains/dns_dynamicip).
