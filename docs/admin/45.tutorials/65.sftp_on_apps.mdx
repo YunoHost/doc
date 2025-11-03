@@ -15,7 +15,7 @@ If you want to give access to a specific apps through SFTP, here are additional 
 
 In instructions below, 
 - USER is the user to whom you wish to give permission to edit wordpress files.
-- `/var/www/wordpress/wp-config.php`  must be remplaced by the path your app config file. eg : for yeswiki (/var/www/yeswiki/wakka.config.php)
+- `/var/www/wordpress/wp-config.php` must be replaced by the path your app config file. For example, for yeswiki (`/var/www/yeswiki/wakka.config.php`)
 
 ```bash
 mkdir -p /home/USER/apps/wordpress
@@ -31,8 +31,8 @@ setfacl -m u:wordpress:r-- /var/www/wordpress/wp-config.php
 setfacl -R -m u:USER:rwX /var/www/wordpress
 setfacl -R -d -m u:USER:rwX /var/www/wordpress
 ```
-quick commands explaination :
-- `mkdir -p /PATH`create a folder in the specified PATH
-- `touch`create an empty file
+Quick commands explanation :
+- `mkdir -p /PATH` creates a folder in the specified PATH
+- `touch` creates an empty file
 - `mount --bind` makes the contents of the source file or directory available at the target location without actually moving or copying the data.
-- `setfacl` set the file permission
+- `setfacl` set the file permissions
