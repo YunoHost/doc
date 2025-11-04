@@ -97,7 +97,6 @@ const redirects_from_grav: Array<{ from: string; to: string }> = [
 
     { from: '/packaging',                               to: '/dev/packaging/', },
     { from: '/packaging_apps',                          to: '/dev/packaging/', },
-    { from: '/advanced_packagers',                      to: '/dev/packaging/advanced', },
     { from: '/packaging_config_panels',                 to: '/dev/packaging/advanced/config_panels', },
     { from: '/packaging_apps_hooks',                    to: '/dev/packaging/advanced/hooks', },
     { from: '/packaging_v2',                            to: '/dev/packaging/advanced/packaging_v2', },
