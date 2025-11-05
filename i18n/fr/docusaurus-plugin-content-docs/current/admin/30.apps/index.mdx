@@ -9,21 +9,21 @@ import {HighlightApplications, HighlightAppInstall} from '@site/src/components/H
 
 L'une des fonctionnalités principales de YunoHost est la possibilité d'installer facilement des applications immédiatement utilisables. Pour donner des exemples d'application, il est possible d'installer un système de blog, un "cloud" (pour héberger et synchroniser des fichiers), un site web, un lecteur RSS...
 
-Applications can be installed and managed through the webadmin interface in <HighlightApplications/> or through commands of the `yunohost app` category.
+Les applications peuvent être installées et gérées au travers de l'interface web d'administration <HighlightApplications/> ou bien avec les commandes de la catégorie `yunohost app`.
 
-<Figure alt="Apps list" caption="Apps list in the webadmin, with its Install button." src="/img/webadmin/apps_list.png"/>
+<Figure alt="Liste des applications" caption="Liste d'applications dans l'interface web d'administration, avec le bouton Installer." src="/img/webadmin/apps_list.png"/>
 
-The application catalog and its categories can be browsed directly from the webadmin by clicking on the <HighlightAppInstall/> button in the apps list, or from this documentation.
+Le catalogue des applications et leurs catégories peut être parcouru depuis l'interface web d'administration en cliquant sur le bouton <HighlightAppInstall/> dans la liste des applications, ou depuis cette documentation.
 
 <div class="text--center">
-<Button url="https://apps.yunohost.org" color="orange"><FAIcon icon='fa-cubes'/> Applications Catalog</Button>
+<Button url="https://apps.yunohost.org" color="orange"><FAIcon icon='fa-cubes'/> Catalogue d'applications </Button>
 </div>
 
 :::caution
 Attention à rester raisonnable sur le nombre d'applications installées. Chaque installation supplémentaire augmente la surface d'attaque et les risques de panne. Idéalement, si vous souhaitez faire des tests, faites-le avec une autre instance par exemple dans [une machine virtuelle](/admin/get_started/install_on/virtualbox).
 :::
 
-## Installing an app
+## Installer une application
 
 Let's say you want to install a *Custom Webapp*. Before actually running the installation steps, YunoHost will usually have you fill in a form to properly set it up for you.
 
@@ -175,6 +175,6 @@ If you want to learn or contribute to app packaging, please check the [contribut
 
 ### Integration and quality levels
 
-Automated tests are being run regularly to test the integration and quality of all apps who were declared to be `working` by packagers. The result is a level between 0 and 8, whose meaning is detailed on [this page](/packaging/test). Some tests results may also be available [on this dashboard](https://dash.yunohost.org/appci/branch/stable).
+Automated tests are being run regularly to test the integration and quality of all apps who were declared to be `working` by packagers. The result is a level between 0 and 8, whose meaning is detailed on [this page](/dev/packaging/test). Some tests results may also be available [on this dashboard](https://dash.yunohost.org/appci/branch/stable).
 
 By default, only applications of sufficient quality are offered. When the quality of an application drops and until the problem is reolved, the app is hidden from the catalog to prevent its installation and its upgrades are put on hold.

@@ -19,3 +19,15 @@ and also [in this repository](./docs/dev/05.doc/index.mdx).
 > This system may require you to restart some of your translation from scratch.  
 > We suggest you to wait for this system unless your changes are small.  
 > You may refer to [the internationalization readme](./README-I18N.md) to learn more about it.
+=======
+
+# Run locally
+
+Requirements: npm, yarn
+
+```bash
+# clone the doc repository, go in the doc repository folder, then:
+npm install
+npm run build
+npm run serve
+```

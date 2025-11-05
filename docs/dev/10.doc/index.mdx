@@ -1,0 +1,66 @@
+---
+title: 📝 Working on the documentation
+---
+
+The YunoHost documentation is managed through [this Git repository](https://github.com/YunoHost/doc) and is powered by [Docusaurus](https://docusaurus.io/).
+
+**You do not need Git expertise just to improve an existing page** (you will need an account on the platform, though): there is an "Edit" button at the bottom of each page that will redirect you to the GitHub online editor where you make easily make change proposals (a.k.a Pull Request, PR).
+
+However, if you are on an editing spree, you probably want to work locally and submit a set of changes (a.k.a. a Pull Request, PR). In which case, refer to the section "Working locally on th documentation" below.
+
+## Markdown
+
+The YunoHost project extensively uses Markdown for its documentation and other things. Documenting how Markdown works is beyond the scope of this documentation, but we can recommend [this guide](https://www.markdownguide.org/basic-syntax/) to get familiar with its syntax.
+
+Note that Docusaurus has some additional, special syntax (hence why the files are `.mdx` and not just `.md`).
+
+## Applications documentation
+
+The apps documentation (description, special admin instructions, ..) lives in each app's repository. Check [the corresponding section in the packaging documentation](/dev/packaging/doc).
+
+## Working locally on the documentation
+
+Using Git, you can clone the documentation locally, edit several pages, add new ones or add new images, and then propose your changes using a Pull Request.
+
+To get started, you will need to clone the repo
+
+```
+git clone https://github.com/yunohost/doc
+cd doc
+```
+
+If you want to preview your changes, you will need to install npm/nodejs to build the doc. The documentation is built using [Docusaurus](https://docusaurus.io). It generates static pages that can be served by a simple server which can be deployed in production using for example [My Webapp](https://apps.yunohost.org/app/my_webapp) or [Github Pages](https://docusaurus.io/docs/deployment#deploying-to-github-pages). Check the [official Docusaurus doc](https://docusaurus.io/docs/docs-introduction) for more info.
+
+Here, we'll only build locally and checkout the result using a local dev server.
+
+```
+# Clone "n" which will be used to fetch a recent version of nodejs
+git clone https://github.com/tj/n --single-branch --depth 1
+
+# Install the latest node/npm
+export N_PREFIX="$PWD"
+n/bin/n install latest
+
+# Make sure to use the nodejs/npm we installed
+NODE_BIN_PATH=$(dirname $(n/bin/n which latest))
+export PATH="$NODE_BIN_PATH:$PATH"
+
+# Then inside your "doc" clone:
+npm install
+npm run start
+
+# Open http://localhost:3000 while the dev server is running
+```
+
+## Contents of the repository
+
+- The **actual documentation content** is inside the `docs/` folder, for example `docs/admin/02.what_is_yunohost/index.mdx` is the "What is YunoHost" page.
+- **Images** are in `static/img`
+- **Translations** are inside `i18n` folders, for example the "What is YunoHost" page translated to french is in `i18n/fr/docusaurus-plugin-content-docs/current/admin/02.what_is_yunohost/index.mdx`
+
+
+## Special pages
+
+Some pages of the documentation are automatically or dynamically generated. Please do not try to edit them manually...
+
+See the [generation script](https://github.com/YunoHost/doc/blob/docusaurus/scripts/generate_docs.sh).

@@ -84,7 +84,7 @@
     "description": "The label of footer link with label=Translate linking to https://translate.yunohost.org/"
   },
   "copyright": {
-    "message": "Build with Docusaurus for YunoHost",
+    "message": "This documentation is powered by <a href='https://docusaurus.io/'>Docusaurus</a>",
     "description": "The footer copyright"
   },
   "logo.alt": {

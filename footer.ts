@@ -96,7 +96,7 @@ const footer: MultiColumnFooter = {
       ],
     },
   ],
-  copyright: `Build with Docusaurus for YunoHost`,
+  copyright: `This documentation is powered by <a href='https://docusaurus.io/'>Docusaurus</a>`,
 }
 
 export default footer;

@@ -1,0 +1,34 @@
+---
+title: ⚙️ Core development
+---
+
+You have found a bug or want to work on a new feature in the Yunohost core?
+Well, thanks!
+
+If you're looking for stuff to implement or fix, please see [the project's issue tracker](https://github.com/YunoHost/issues/issues).
+
+We recommend to **not** develop on your own machine where you might store important
+data. Instead, most of the testing can be done in [Incus containers](./devenv#incus).
+
+Here are the suggested steps to work on the core:
+* Identify the components you want to work on (see [the Core architecture](architecture))
+* Install and configure [Incus](./devenv#incus)
+* Install and use [ynh-dev](./devenv#ynh-dev)
+* Contribute your changes
+
+**And come say hi in the [dev chat room](/community/chat_rooms)**!
+
+
+## Contribution workflow
+
+When you want to contribute your changes, you need to:
+* Fork the relevant(s) repo(s) on GitHub
+* Push your changes to a new branch, with a well-chosen name, for example:
+  * For an enhancement or new feature: `enh-ISSUENUMBER-name-of-feature`
+  * For a bugfix `fix-ISSUENUMBER-description-of-fix`
+  * `ISSUENUMBER` is optional and is the id of a corresponding ticket on the bug tracker.
+* Once you're ready, open a Pull Request (PR) on GitHub. Please include `[fix]` or
+  `[enh]` at the beginning of the title of your PR.
+  You can open a draft PR if you are expecting feedback / comments.
+* After reviewing, testing and validation by other contributors, your branch
+should be merged in `unstable`!
