@@ -33,33 +33,33 @@ You can create a new backup archive from the command line. Here are a few simple
 
 - Backing up everything (all system parts and apps):
 
-  ```bash
-  yunohost backup create
-  ```
+```bash
+yunohost backup create
+```
 
 - Backing up only apps
 
-  ```bash
-  yunohost backup create --apps
-  ```
+```bash
+yunohost backup create --apps
+```
 
 - Backing up only two apps (wordpress and shaarli)
 
-  ```bash
-  yunohost backup create --apps wordpress shaarli
-  ```
+```bash
+yunohost backup create --apps wordpress shaarli
+```
 
 - Backing up only emails
 
-  ```bash
-  yunohost backup create --system data_mail
-  ```
+```bash
+yunohost backup create --system data_mail
+```
 
 - Backing up emails and wordpress
 
-  ```bash
-  yunohost backup create --system data_mail --apps wordpress
-  ```
+```bash
+yunohost backup create --system data_mail --apps wordpress
+```
 
 For more information and options about backup creation, consult `yunohost backup create --help`. You can also list the system parts that can be backed up with `yunohost hook list backup`.
 

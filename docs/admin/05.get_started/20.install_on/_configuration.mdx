@@ -34,7 +34,9 @@ For a VPS, please use the public IP address instead of the local domain or addre
 ### <FAIcon icon="fa-globe"/> Main domain
 
 <details>
-<summary>WSL specific configuration</summary>
+<summary>
+WSL specific configuration
+</summary>
 
 You will have to choose a fake domain, since it will not be accessible from outside.
 For example, `ynh.wsl`. The tricky part is advertising this domain to your host.
@@ -93,10 +95,10 @@ Especially, installations on WSL or virtual machines will likely not be reachabl
     <Figure caption="Preview of the diagnostic panel" src="/img/webadmin/diagnostic.png"/>
   </TabItem>
   <TabItem value="cli" label="From the command line">
-    ```bash
-    yunohost diagnosis run
-    yunohost diagnosis show --issues --human-readable
-    ```
+```bash
+yunohost diagnosis run
+yunohost diagnosis show --issues --human-readable
+```
   </TabItem>
 </Tabs>
 
@@ -114,9 +116,9 @@ For more detailed instructions, or to lean more about SSL/TLS certificates, see 
     <Figure caption="Preview of the diagnostic panel" src="/img/webadmin/certificate-before-LE.png"/>
   </TabItem>
   <TabItem value="cli" label="From the command line">
-    ```bash
-    yunohost domain cert install
-    ```
+```bash
+yunohost domain cert install
+```
   </TabItem>
 </Tabs>
 

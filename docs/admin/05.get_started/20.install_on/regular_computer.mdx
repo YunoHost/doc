@@ -60,10 +60,10 @@ Flash the image on the USB key or CD/DVD.
 
     Then run:
 
-    ```bash
-    # Replace /dev/mmcblk0 if the name of your device is different...
-    dd if=/path/to/armbian.img of=/dev/mmcblk0 status=progress ; sync
-    ```
+```bash
+# Replace /dev/mmcblk0 if the name of your device is different...
+dd if=/path/to/armbian.img of=/dev/mmcblk0 status=progress ; sync
+```
   </TabItem>
 
   <TabItem value="cd_dvd" label="Burning a CD/DVD">
@@ -139,13 +139,13 @@ For performance reasons, it is recommended to mount your fastest storage (SSD) o
 
 If you have one or more hard drives to store data, you can choose to mount it on one of these folders depending on your usage.
 
-| Path | Contents |
-|--------|---|
-| `/home` | User folders accessible via SFTP |
+| Path                             | Contents |
+| -------------------------------- | -------- |
+| `/home`                          | User folders accessible via SFTP |
 | `/home/yunohost.backup/archives` | YunoHost backups to be placed ideally elsewhere than on the disks that manage the data |
-| `/home/yunohost.app` | Heavy data from YunoHost applications (nextcloud, matrix...) |
-| `/home/yunohost.multimedia` | Heavy data shared between several applications |
-| `/var/mail` | User mail |
+| `/home/yunohost.app`             | Heavy data from YunoHost applications (nextcloud, matrix...) |
+| `/home/yunohost.multimedia`      | Heavy data shared between several applications |
+| `/var/mail`                      | User mail |
 
 If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/admin/tutorials/external_storage).
 
