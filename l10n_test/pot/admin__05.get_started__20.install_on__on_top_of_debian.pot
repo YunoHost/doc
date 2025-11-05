@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: pagination_next
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:1
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:1
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:1
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:1
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:1
+#, no-wrap
+msgid "admin/get_started/guidelines"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: sidebar_class_name
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:1
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:1
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:1
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:1
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:1
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:1
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:1
+#, no-wrap
+msgid "hidden"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:16
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:13
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:13
+msgid ""
+"import InstallScript from \"./_install_script.mdx\"; import "
+"InitialConfiguration from \"./_configuration.mdx\";"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:136
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:92
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:66
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:24
+#, no-wrap
+msgid "<InstallScript />\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:164
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:135
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:93
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:171
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:79
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:67
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:25
+#, no-wrap
+msgid "<InitialConfiguration />\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:1
+#, no-wrap
+msgid "If you can't use preinstalled images"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: sidebar_custom_props doc_card_image
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:1
+#, no-wrap
+msgid "/img/icons/logo-debian.png"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: sidebar_position
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:1
+#, no-wrap
+msgid "6"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:1
+#, no-wrap
+msgid "On top of Debian"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:15
+msgid "YunoHost is easily installable on Debian !"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:17
+msgid ""
+"This can be useful if you already have a Debian machine or can't use the "
+"recommended methods."
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:18
+#, no-wrap
+msgid "<FAIcon icon=\"fa-download\" /> Get Debian"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:21
+msgid ""
+"You should download the version **Bookworm** (Debian 12) and select the "
+"architecture for your PC."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:23
+msgid "When in doubt, select `amd64`, or `i386` for a pre-2010 PC."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:27
+#, no-wrap
+msgid ""
+"<div class=\"text--center\">\n"
+"  <Button url=\"https://www.debian.org/distrib/netinst\" color=\"lightblue\"><SmallInline url=\"/img/icons/logo-debian.png\" alt=\"armbian logo\"/> Debian Download page</Button>\n"
+"</div>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:29
+msgid ""
+"Alternatively, you can browse the [Debian archive](https://"
+"cdimage.debian.org/mirror/cdimage/archive) for the latest 12.x version, "
+"select your architecture, the select `iso-cd` and download the `netinst` iso."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:31
+#, no-wrap
+msgid "<!-- <YunoHostImagesList hardware=\"arm\"/> -->\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:32
+#, no-wrap
+msgid "Installation"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:35
+msgid ""
+"You might want to **wipe the hard drive** before starting the Debian "
+"installer."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:37
+msgid ""
+"Burn the iso to your USB key, for example using [Etcher](https://"
+"www.balena.io/etcher/)."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:39
+msgid ""
+"Debian installer will ask for a **hostname** and a **domain name**. You can "
+"use `yunohost` and `yunohost.local`. It is not that important since the "
+"YunoHost Installer will overwrite those anyway."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:41
+msgid ""
+"Debian will ask for a **root password**, which should be reaonably complex "
+"as it is your primary defense to possible attacks."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:43
+msgid ""
+"The installer will also ask for a **user account** and another password."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:43
+#, no-wrap
+msgid "**IMPORTANT:** this username should be DIFFERENT from the first YunoHost user which you will choose during YunoHost's posinstall… For example, you can name it `debian`. Be sure to also use a long complex password.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:48
+msgid ""
+"When the install asks where to install and how to **create disk "
+"partitions**, select the option to **use the whole disk**, unless you know "
+"what you're doing."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:51
+msgid ""
+"We recommend not to separate the `/home`, `/var` or `/tmp` partitions. Use "
+"the option to “keep all files in one partition”."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:51
+msgid ""
+"If you don't know what you're doing, don't encrypt the disk (Decryption at "
+"power-on will be an issue)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:53
+msgid ""
+"The installer will ask about **mirrors**. Select a country and server close "
+"to your location, or use the default options."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:57
+msgid ""
+"The installer will ask which **desktop environment** you want. This is "
+"generally useless and might waste resources.  - Unselect all desktop "
+"environment - Keep “standard system utilities” checked"
+msgstr ""
+
+#. type: Title ####
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:58
+#, no-wrap
+msgid "After installing Debian"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:64
+msgid "Remove the installation media (unplug the USB stick)"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:64
+msgid "Reboot"
+msgstr ""
+
+#. type: Bullet: '3. '
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:64
+msgid "Login as `root`"
+msgstr ""
+
+#. type: Bullet: '4. '
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:64
+msgid "Install curl by typing `apt install curl`"
+msgstr ""

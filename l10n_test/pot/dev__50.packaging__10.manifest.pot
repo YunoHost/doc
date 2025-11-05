@@ -1,0 +1,649 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/50.packaging/10.manifest.mdx:1
+#, no-wrap
+msgid "manifest.toml"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:6
+msgid ""
+"The app's `manifest.toml` can be seen as the ID card of the app. It declares "
+"various basic metadata such as the id, name, description of the app, its "
+"version, install questions to be asked to the admin prior to installation, "
+"etc."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:8
+msgid ""
+"In this page, the data are described according to a somewhat dummy app "
+"called `helloworld`"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/dev/50.packaging/10.manifest.mdx:9
+#, no-wrap
+msgid "If you want to convert an application from the packaging v1 to v2 format, [please see here](/dev/packaging/advanced/packaging_v2)!\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/10.manifest.mdx:13
+#, no-wrap
+msgid "General information"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/10.manifest.mdx:15
+#, no-wrap
+msgid ""
+"packaging_format = 2\n"
+"id = \"helloworld\"\n"
+"name = \"Hello World\"\n"
+"description.en = \"A dummy basic app to illustrate YunoHost's app packaging.\"\n"
+"description.fr = \"Une app simple et bidon pour illustrer comme le packaging d'app de YunoHost fonctionne\"\n"
+"\n"
+"version = \"0.1~ynh1\"\n"
+"\n"
+"maintainers = [\"alexAubin\"]\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:33
+msgid ""
+"`packaging_format` (`int`) is the packaging version format used to package "
+"this app. Newly packaged apps are strongly encouraged to use the new \"v2\" "
+"format (starting with YunoHost 11.1) while older apps may still be in \"v1\" "
+"format."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:33
+msgid ""
+"`id` (`str`) is expected to be lower-case alphanumeric (and possibly `-`). "
+"This is what will be used for instance in the syntax `yunohost app install "
+"<app_id>`. This will also be the name of various folder or conf files such "
+"as `/etc/yunohost/apps/<app_id>` or `/etc/nginx/conf.d/<domain>.d/"
+"<app_id>.conf` (if applicable), and a dedicated system user."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:33
+msgid ""
+"`name` (`str`) is the display name of the app, shown for example in the "
+"webadmin UI or user portal. It is limited to 23 chars <small>(though not "
+"sure why this number?)</small>."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:33
+msgid ""
+"`description` (`dict` of `lang code`->`str`) contains *short*, *concise* "
+"descriptions of the app in different languages (at least `en`). It is "
+"limited to 150 chars. It will be displayed on the app catalog and should "
+"allow people to understand what this app is about at a glance. A more "
+"extensive description of the app can be provided in `doc/DESCRIPTION.md`."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:33
+msgid ""
+"`version` (`str`) is composed of the *upstream* version of the app shipped, "
+"and an `~ynhX` suffix. Changing this version is what effectively triggers an "
+"available upgrade for YunoHost instances which installed this package (hence "
+"no upgrade will be displayed as available if you forget to change it). The "
+"point of the `~ynhX` suffix is to have a way to increment the version when "
+"commiting changes unrelated to the upstream but still trigger an upgrade."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:33
+msgid ""
+"`maintainers` (`list` or `str`) may allow to declare which person should be "
+"the referring person for this package (though packages are often maintained "
+"collectively and not really used in practice). This should contain a list of "
+"easily identifiable persons (eg your GitHub or Matrix username)"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/10.manifest.mdx:34
+#, no-wrap
+msgid "Upstream section"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:37
+msgid ""
+"This section is meant to provide various metadata about the app upstream "
+"such that YunoHost admins can easily obtain further information regarding "
+"this app (or, kinda important, try the upstream's demo before deciding to "
+"install it)."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:39
+msgid ""
+"Apart from the license, all fields are *optional* and should only be "
+"provided if they are relevant (e.g. don't provide `website` if the upstream "
+"project has no website...)"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/10.manifest.mdx:40
+#, no-wrap
+msgid ""
+"[upstream]\n"
+"license = \"WTFPL\"\n"
+"website = \"https://www.hello-world.com/\"\n"
+"code = \"https://github.com/octocat/Hello-World\"\n"
+"demo = ...\n"
+"admindoc = ...\n"
+"userdoc = ...\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:57
+msgid ""
+"`license` (`str`) : the license code of the *upstream* project. (Note that "
+"only apps based on free software will be accepted in the official YunoHost "
+"app catalog.). The license code should be [a valid SPDX identified](https://"
+"spdx.org/licenses/)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:57
+msgid ""
+"(optional) `website` (`url`) : the url of the upstream project's website, if "
+"there is indeed a website (please don't just copypasta the git repo url)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:57
+msgid ""
+"(optional) `demo` (`url`) : an url where people can try out the app before "
+"installing it (ideally maintained by the upstream project)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:57
+msgid ""
+"(optional) `code` (`url`) : the url of the upstream project's code "
+"repository, which is very much expected to exist for free software ... but "
+"may not exist for special \"no upstream\" apps ;)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:57
+msgid ""
+"(optional) `admindoc` (`url`) : the url of the *upstream* project's admin "
+"documentation, which may help YunoHost admins with adminstrating the app "
+"<small>(YunoHost-specific documentation can be provided in `doc/ADMIN.md`)</"
+"small>."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:57
+msgid ""
+"(optional) `userdoc` (`url`) : the url of the *upstream* project's user "
+"documentation, which may help YunoHost end-users with effectively using the "
+"app."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:57
+msgid ""
+"(optional) `cpe` (`str`) corresponds to the [Common Platform Enumerations "
+"code in NIST db](https://nvd.nist.gov/products/cpe). For example for Wekan "
+"this is `cpe:2.3:a:wekan_project:wekan`. Not really used at the moment, but "
+"may be used in the future to check for known vulnerabilities (CVE) in the "
+"app catalog."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/10.manifest.mdx:58
+#, no-wrap
+msgid "Integration section"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:61
+msgid ""
+"This section is meant to contain info related to the relation between the "
+"app and YunoHost, or things like typical resource usage."
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/10.manifest.mdx:62
+#, no-wrap
+msgid ""
+"[integration]\n"
+"yunohost = \">= 11.1\"\n"
+"helpers_version = \"2.1\"\n"
+"architectures = \"all\"\n"
+"multi_instance = false\n"
+"ldap = \"not_relevant\"\n"
+"sso = \"not_relevant\"\n"
+"disk = \"1M\"\n"
+"ram.build = \"1M\"\n"
+"ram.runtime = \"1M\"\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:84
+msgid ""
+"`yunohost` (`str`) contains the minimum YunoHost version required for this "
+"app to work."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:84
+msgid ""
+"`helpers_version` (`str`) contains the version of the package helpers used "
+"by the application; supported versions are [2.0](/dev/packaging/scripts/"
+"helpers_v2.0) and [2.1](/dev/packaging/scripts/helpers_v2.1)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:84
+msgid ""
+"`architectures` : `\"all\"` OR a list of supported archs using the `dpkg --"
+"print-architecture` nomenclature, i.e. among : `amd64` (= x86 64bit), `i386` "
+"(= x86 32bit), `armhf` (= ARM 32bit), `arm64` (= ARM 64bit)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:84
+msgid ""
+"`multi_instance` (`bool`) : wether or not the app supports being installed "
+"multiple time <small>(in which case, during installation, the actual app id "
+"is not just the `id` of the manifest, but something like `hellowold__2`, "
+"`helloworld__3`, etc. for subsequent installs)</small>"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:84
+msgid ""
+"`ldap` (`bool` OR `\"not_relevant\"`) : not to confused with the `sso` key : "
+"this corresponds to wether or not the app is configured to use YunoHost's "
+"LDAP DB as the user account DB. This should be set to `\"not_relevant\"` if "
+"and only if there is no notion of user account for this app (for example, "
+"Hextris). LDAP integration is often a prerequisite for the SSO to work."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:84
+msgid ""
+"`sso` (`bool` OR `\"not_relevant\"`) : not to be confused with the `ldap` "
+"key : this corresponds to wether or not a user is *automatically logged-in* "
+"on the app when logged-in on the YunoHost portal. This should be set to "
+"`\"not_relevant\"` if and only if there is no notion of user account for "
+"this app (for example, Hextris)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:84
+msgid ""
+"`disk` (size) : an *estimate* minimum disk requirement. For example: 20M, "
+"400M, 1G, ..."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:84
+msgid ""
+"`ram.build` (size) : an *estimate* minimum ram requirement when building the "
+"app (this may be way different than `ram.runtime` because some apps have a "
+"peak 1~2G RAM when building sometimes...). For example: 50M, 400M, 1G, ..."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:84
+msgid ""
+"`ram.runtime` (size) : an *estimate* minimum ram requirement when the app is "
+"active and running. For example: 50M, 400M, 1G, ..."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/10.manifest.mdx:85
+#, no-wrap
+msgid "Antifeatures"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:88
+msgid ""
+"This section is completely optional and, for most apps, doesn't exist at all."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:90
+msgid ""
+"Some applications have limitations, they might be due to non-free "
+"dependencies, arbitrary limitations, etc. YunoHost provides UI in the "
+"catalog to show such antifeatures."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:92
+msgid "The declaration of antifeatures is a 3-steps process:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:96
+msgid ""
+"Find the relevant antifeature in [the list of supported antifeatures]"
+"(https://github.com/YunoHost/apps/blob/master/antifeatures.toml)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:96
+msgid ""
+"Declare the app's antifeature in the [app catalog](https://github.com/"
+"YunoHost/apps/blob/master/apps.toml)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:96
+msgid "Describe the app's antifeature in its `manifest.toml`:"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/10.manifest.mdx:97
+#, no-wrap
+msgid ""
+"  [antifeatures]\n"
+"  arbitrary-limitations.en = \"Some description about the specific limitations of this app.\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:104
+#, no-wrap
+msgid ""
+"The format of this section is a `dict` where keys are antifeature IDs, and the values\n"
+"are translated strings (`dict` of `lang code`->`str`).\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/10.manifest.mdx:105
+#, no-wrap
+msgid "Install questions"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:108
+msgid ""
+"This section contains questions that should be asked to the admin prior to "
+"starting the actual install"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/10.manifest.mdx:109
+#, no-wrap
+msgid ""
+"[install]\n"
+"    [install.domain]\n"
+"    # this is a generic question - ask strings are automatically handled by YunoHost's core\n"
+"    type = \"domain\"\n"
+"\n"
+"    [install.path]\n"
+"    # this is a generic question - ask strings are automatically handled by YunoHost's core\n"
+"    type = \"path\"\n"
+"    default = \"/helloworld\"\n"
+"\n"
+"    [install.init_main_permission]\n"
+"    # this is a generic question - ask strings are automatically handled by YunoHost's core\n"
+"    type = \"group\"\n"
+"    default = \"visitors\"\n"
+"\n"
+"    [install.prefered_pet]\n"
+"    ask.en = \"Do you prefer cats or dogs?\"\n"
+"    help.en = \"Think carefully!\"\n"
+"    type = \"string\"\n"
+"    choices.cat = \"Cats :3 !\"\n"
+"    choices.dog = \"Doggos <3\"\n"
+"    choices.both = \"OMG Both ! I can't choose !\"\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:146
+msgid ""
+"`domain` and `path` (with `type = \"domain\"/\"path\"`) are classic "
+"questions to allow the admin to choose where the app is installed (in terms "
+"of web url endpoint)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/10.manifest.mdx:146
+msgid ""
+"e.g. if the admin answers `domain.tld` and `/foobar`, the app will be "
+"available under `domain.tld/foobar`"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/10.manifest.mdx:146
+msgid ""
+"some webapp do require a full dedicated domain and do not support the "
+"\"subpath\" install scheme. In that case, you typically want to remove the "
+"`path` question entirely"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/10.manifest.mdx:146
+msgid ""
+"these questions are part of YunoHost's generic app questions and therefore "
+"you do not need to define the `ask.en` strings that contain the actual "
+"question displayed in the UI along the line of \"Choose a domain to install "
+"this app on\""
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:146
+msgid ""
+"`init_main_permission` is also a classic question <small>(similar to "
+"`is_public` in v1 packaging)</small> and define what user group will be able "
+"to access the app after it is installed. Typical answer are : `visitors` (= "
+"everybody including anonymous users, the app is \"public\"), `all_users` (= "
+"only people with a YunoHost account, the app is \"private\"), or any custom "
+"user group that may have been defined by the YunoHost admins prior to the "
+"install."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:146
+msgid "`prefered_pet` is a custom question:"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/10.manifest.mdx:146
+msgid ""
+"`ask.en` defines the human-readable question to be asked (at least the "
+"english version)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/10.manifest.mdx:146
+msgid ""
+"`help.en` is an optional additional message to provide further info about "
+"this question"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/10.manifest.mdx:146
+msgid "`type` is the type of question, in this case `string`"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/10.manifest.mdx:146
+msgid ""
+"in this example, we don't want a free user input but choosing between `cat`, "
+"`dog` or `both` (with proper human-readable versions of these choices)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/10.manifest.mdx:146
+msgid ""
+"this will later automatically create a YunoHost app setting named "
+"`prefered_pet`"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/10.manifest.mdx:146
+msgid ""
+".. and in the bash install script, the bash variable will automatically be "
+"available `$prefered_pet` with the chosen value"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/10.manifest.mdx:147
+#, no-wrap
+msgid "Regarding install question types"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:150
+msgid ""
+"FIXME : This should be way more documented in a separate section (and is "
+"also related to config panels...)"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:152
+msgid ""
+"The full list of question types is : `string`, `text`, `select`, `tags`, "
+"`email`, `url`, `date`, `time`, `color`, `password`, `path`, `boolean`, "
+"`domain`, `user`, `group`, `number`, `range`, `alert`, `markdown`, `file`, "
+"`app`."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:154
+msgid ""
+"`password`-type questions have special behavior and are NOT automatically "
+"saved as setting (user-chosen password should ideally not be stored, at "
+"least not hashed...)"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:156
+msgid ""
+"Every install question is not necessarily mandatory (e.g. a question to "
+"propose to add an api key for a better user experience, although the app "
+"still works without). To make those questions optional, just write `optional "
+"= true`."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/10.manifest.mdx:157
+#, no-wrap
+msgid "Resource system"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:160
+msgid ""
+"The resource section corresponds to recurring app needs that are to be "
+"provisioned/deprovisioned by the core of YunoHost. They include for example: "
+"downloading the app's sources, creating a system user, installing apt "
+"dependencies, creating the install dir, creating the data dir, finding an "
+"available internal port, configuring permissions, initializing an SQL "
+"database... Each resource is to be provisioned *before* running the install "
+"script, deprovisioned *after* the remove script, and automatically upgraded "
+"if needed before running the upgrade script (or provisionned if introduced "
+"in the new app version, or deprovisioned if removed w.r.t. the previous app "
+"version)"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/10.manifest.mdx:161
+#, no-wrap
+msgid ""
+"[resources]\n"
+"```toml\n"
+"    [resources.sources.main]\n"
+"    url = \"https://some.domain/url/where/to/download/the/app/sources.tar.gz\"\n"
+"    sha256 = \"0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef\"\n"
+"\n"
+"    [resources.system_user]\n"
+"\n"
+"    [resources.install_dir]\n"
+"\n"
+"    [resources.permissions]\n"
+"    main.url = \"/\"\n"
+"    \n"
+"    [resources.apt]\n"
+"    packages = \"nyancat, lolcat, sl\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:180
+msgid "In this example:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:186
+msgid ""
+"`sources.main`: the URL+checksum from which the app sources will be "
+"downloaded + validated"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:186
+msgid ""
+"`system_user`: a system (unix) user will be created for this app, using the "
+"app id as username."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:186
+msgid ""
+"`install_dir`: an install dir will be initialized, named `/var/www/$app` by "
+"default. Additional `owner` and `group` property allow to change the owner/"
+"group and r/w/x permissions on the created folder."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:186
+msgid ""
+"`permissions`: an SSOwat `$app.main` permission will be initialized such "
+"that the SSO allows access to the app's endpoint according to the chosen "
+"`init_main_permission` question. The `main.url = \"/\"` is here to tell that "
+"the main endpoint is the \"root\" of the app, that is `https://domain.tld/"
+"helloworld/` if the app is installed with `domain=domain.tld` and `path=/"
+"helloworld`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/10.manifest.mdx:186
+msgid ""
+"`apt`: the packages `nyancat`, `lolcat`, `sl` will be installed with `apt`. "
+"These are just dummy apt dependencies to illustrate the syntax."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/10.manifest.mdx:187
+#, no-wrap
+msgid "List of app resources"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/10.manifest.mdx:189
+msgid ""
+"The full documentation on resources is available [here](/dev/packaging/"
+"resources)."
+msgstr ""

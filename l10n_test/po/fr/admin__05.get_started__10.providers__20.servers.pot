@@ -1,0 +1,97 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:1
+#, no-wrap
+msgid "The guys that provide someone else's computer"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:1
+#, no-wrap
+msgid "Server providers"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:7
+msgid ""
+"import {HighlightFFDN, HighlightNonProfit, HighlightCHATONS} from '@site/src/"
+"components/Highlight';"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:8
+#, no-wrap
+msgid "Pre-installed YunoHost Offers"
+msgstr ""
+
+#. type: Bullet: '* '
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:15
+msgid ""
+"[Alsace Réseau Neutre](https://arn-fai.net) (VPS) <HighlightFFDN/> "
+"<HighlightCHATONS/>"
+msgstr ""
+
+#. type: Bullet: '* '
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:15
+msgid "[ECOWAN](https://ecowan.fr) (VPS)"
+msgstr ""
+
+#. type: Bullet: '* '
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:15
+msgid "[Hosterfy](https://www.hosterfy.com/en/kvm-vps-hosting) (VPS)"
+msgstr ""
+
+#. type: Bullet: '* '
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:15
+msgid ""
+"[Scaleway Dedibox](https://www.scaleway.com/en/dedibox/operating-systems/) "
+"(dedicated server)"
+msgstr ""
+
+#. type: Bullet: '* '
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:15
+msgid ""
+"[Numericoop](https://numericoop.fr/solution-sur-mesure/) (VPS) "
+"<HighlightCHATONS/>"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:16
+#, no-wrap
+msgid "YunoHost IT outsourcing"
+msgstr ""
+
+#. type: Bullet: '* '
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:20
+msgid ""
+"[ReflexLibre](https://reflexlibre.net) (France only) <HighlightCHATONS/>"
+msgstr ""
+
+#. type: Bullet: '* '
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:20
+msgid ""
+"[Numericoop](https://numericoop.fr/solution-sur-mesure/) (France only) "
+"<HighlightCHATONS/>"
+msgstr ""
+
+#. type: Bullet: '* '
+#: docs/admin/05.get_started/10.providers/20.servers.mdx:20
+msgid "[Librezo](https://librezo.fr/) (France only)"
+msgstr ""

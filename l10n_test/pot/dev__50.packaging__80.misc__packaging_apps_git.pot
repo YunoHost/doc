@@ -1,0 +1,762 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:1
+#, no-wrap
+msgid "Use Git to package apps"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:5
+#, no-wrap
+msgid "Git... Our dear beloved Git, which can be described also as \"Goddamn Idiotic Truckload of sh\\*t\", according to Linus.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:7
+msgid ""
+"Be sure if you don't know Git yet that you will soon agree with that "
+"description."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:8
+#, no-wrap
+msgid "YunoHost and all our apps are on the Git forge GitHub. Which means that if you want to work on an app, sooner or later you're going to have to deal with Git.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:10
+msgid ""
+"So let's see how to work with Git to be able to contribute in the context of "
+"YunoHost."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:11
+#, no-wrap
+msgid "Working with GitHub"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:14
+msgid ""
+"Let's go first for the easy part, GitHub comes with an \"easy\" web "
+"interface to deal with."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:16
+#, no-wrap
+msgid "*First things first, unfortunately there's no way around, you need an account on GitHub.*\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:17
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:136
+#, no-wrap
+msgid "Branches"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:19
+#, no-wrap
+msgid "Then, probably one of the most important thing, **do not work directly on the master branch**.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:21
+msgid "Sorry, it has to be said !"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:23
+msgid ""
+"Branches are, as GitHub explains, \"*a parallel version of a repository. It "
+"is contained within the repository, but does not affect the other branches. "
+"Allowing you to work freely without disrupting the \"live\" version.*\""
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:24
+#, no-wrap
+msgid "The master branch is the branch that contains the version of the app users will actually install and use.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:26
+msgid ""
+"The usual thing to do is to work from the testing branch, and when "
+"everything is settled and tested, you can merge the testing branch in "
+"master, so users will enjoy the new release of your package."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:27
+#, no-wrap
+msgid "To see and change the current branch, use this button:  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:29
+msgid "![](/img/github_branch.png)"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:30
+#, no-wrap
+msgid "Edit a file"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:33
+msgid ""
+"Now that you're on the right branch, let's see how to edit a file on GitHub."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:34
+#, no-wrap
+msgid "You can edit any file by using the small pencil icon:  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:36
+msgid "![](/img/github_edit.png)"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:37
+#, no-wrap
+msgid "If you don't have the permission to write on the repository, you will see (as on the picture) that you're going to create a fork (we'll see below what a fork is).  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:39
+msgid ""
+"If you have the permission to write, you will just edit the file, without "
+"forking."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:40
+#, no-wrap
+msgid "Commit your changes"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:42
+#, no-wrap
+msgid "When you're done with your modification on the file, you can commit your changes.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:43
+#, no-wrap
+msgid "Behind that word, the idea is quite simple, you're just going to save your changes...  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:45
+msgid "![](/img/github_commit.png)"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:46
+#, no-wrap
+msgid "The first field is the name of your commit, a very short sentence to explain why you did this modification.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:48
+msgid ""
+"The second field is a large one for a more complete explanation, if you need "
+"it."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:49
+#, no-wrap
+msgid "Finally, if you're editing a repository on which you have permission to write, you can either commit directly to the current branch or create a new branch.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:51
+msgid ""
+"It's usually better to create a new branch, that way you keep your "
+"modifications on a *parallel* version of the repository. Your modifications "
+"will be discussed in a pull request (explained below) then finally merged "
+"into the original branch."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:52
+#, no-wrap
+msgid "To fork or not to fork"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:54
+#, no-wrap
+msgid "A fork is a copy of a repository into your own account.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:55
+#, no-wrap
+msgid "We have seen before that if you don't have permission to write into a repository, editing a file will automatically create a fork.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:56
+#, no-wrap
+msgid "Because the fork is on your account, you always have the permission to write on it.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:58
+msgid ""
+"But even if a fork is not the real repository, but just a copy, a fork is "
+"always linked to its parent. We'll see later that to create a fork is really "
+"useful when opening a pull request."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:59
+#, no-wrap
+msgid "When you create a new package, it's common to use the [example app](https://github.com/YunoHost/example_ynh) as a base.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:60
+#, no-wrap
+msgid "But, because you don't want to keep that link to the example app, you should not fork the example app. You will rather clone the app.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:62
+msgid ""
+"Unfortunately, to clone an app is a little bit trickier on GitHub. We will "
+"see later how to clone to a local repository instead."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:63
+#, no-wrap
+msgid "We have seen how to edit a file, and how this could fork the app.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:64
+#, no-wrap
+msgid "But, when you want to edit multiple files, the GitHub interface isn't really the best way. In such situation, you would rather clone the repository and work on a local repository.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:66
+msgid ""
+"You may still need to fork on your own account to be able to save your "
+"modifications if you don't have the permission on the distant repository."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:67
+#, no-wrap
+msgid "Pull request"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:69
+#, no-wrap
+msgid "After you have committed your changes, whether on a branch or a fork, you want to propose your modifications to be integrated into the main repository, or the original branch.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:70
+#, no-wrap
+msgid "To do so, you're going to *create a pull request*. GitHub usually ask you directly if you want to do so.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:71
+#, no-wrap
+msgid "Otherwise, you'll find the button to create a pull request just here:  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:73
+msgid "![](/img/github_pull_request.png)"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:75
+msgid ""
+"When creating a pull request from a fork, to ease the work of the reviewers, "
+"**do never** uncheck the checkbox *Allow edits from maintainers*. That "
+"option simply allow the maintainers of the original repository to edit "
+"directly your work."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:76
+#, no-wrap
+msgid "YunoHost-Apps organization"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:79
+msgid ""
+"Following the [guide for packaging application within YunoHost](/dev/"
+"packaging/), your app has to be into the YunoHost-Apps organization, but if "
+"you have never contributed to an app before or never had any app into this "
+"organization you may not have the permission."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:81
+msgid ""
+"First, you need the permission to write into the organization, to do so, ask "
+"to the Apps group on the Apps XMPP room."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:82
+#, no-wrap
+msgid "To transfer your app to the YunoHost-Apps organization, go to your repository and to *Settings* tab.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:83
+#, no-wrap
+msgid "At the bottom of the page, you will find *Transfer ownership*.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:84
+#, no-wrap
+msgid "Into the field *New owner’s GitHub username or organization name*, type *YunoHost-Apps*.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:86
+msgid ""
+"Your repo will be moved into the organization, you don't have to remove the "
+"original repository."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:87
+#, no-wrap
+msgid "Working with Git locally"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:89
+#, no-wrap
+msgid "As we have seen, you can do a lot of things directly on GitHub.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:91
+msgid ""
+"But when you need to edit multiple files, or when you need to work on your "
+"code on your own, it's better to work directly on your computer."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:93
+msgid ""
+"Before going to the hellish part of Git, let's see two different ways to "
+"start working with Git."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:94
+#, no-wrap
+msgid "First case: Creating a new package"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:96
+#, no-wrap
+msgid "You have shockingly discovered that the wonderful app you love to use everyday does not yet have its YunoHost package. And because you're nice, you decided to create yourself the package, so everyone will enjoy that app the way you do.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:98
+msgid "What a good idea!"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:99
+#, no-wrap
+msgid "The best is to start from the [example app](https://github.com/YunoHost/example_ynh). But as we have explained before, you don't want to fork, because if you do so, you're going to keep that link to the example app and it's really annoying.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:101
+msgid "So, you're going to do it differently. You're going to clone!"
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:102
+#, no-wrap
+msgid "git clone"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:105
+msgid "To clone, you're going to do:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:106
+#, no-wrap
+msgid "git clone https://github.com/YunoHost/example_ynh\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:111
+msgid ""
+"`git clone` will download a copy of the repository. You will have the "
+"complete repository, with its branches, commits, and everything (into that "
+"apparently little `.git` directory)."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:113
+msgid "To git clone is usually the starting point of any local work with Git."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:115
+#, no-wrap
+msgid "*A side note though, if you expect to send your modifications back to the distant repository on GitHub, be sure to have the permission to write on this repository. Otherwise, fork before and clone your fork, on which you do have the permission.*\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:116
+#, no-wrap
+msgid "My brand new package, continued"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:119
+#, no-wrap
+msgid ""
+"In the context of a new package, you will also need to create a repository on GitHub to nest your package.\n"
+"Which is as simple as a big green *New* button.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:120
+#, no-wrap
+msgid "Don't bother with README, .gitignore or license. Just create the repository itself.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:121
+#, no-wrap
+msgid "you can now git clone that new repository.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:123
+msgid "![](/img/github_create_new_repo.png)"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:124
+#, no-wrap
+msgid "You now have 2 repositories cloned on your computer.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:125
+#, no-wrap
+msgid "Copy all the files from the example_ynh app, **except the .git directory** (You just want the files themselves) to your new package.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:128
+#, no-wrap
+msgid "*If you want, you can remove the example_ynh app. We don't need it anymore.*\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:130
+msgid "You're ready to work on your new package !"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:131
+#, no-wrap
+msgid "Second case: Working locally on a repository"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:133
+#, no-wrap
+msgid "You already have a repository, but what you want is just to work locally, so you can modify multiple files.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:135
+msgid ""
+"Simply clone the repository, the .git directory is the link to the distant "
+"repository. Nothing else to do than a `git clone`."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:139
+msgid ""
+"You do have your local copy of the repository, but because you have read "
+"carefully this documentation until then, you know that you should be sure to "
+"be on the testing branch before starting to work."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:140
+#, no-wrap
+msgid "To see the branches, and to know on which you actually are, while into the directory of your repository, type `git branch`.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:142
+msgid "The current branch is highlighted and preceded by a `*`."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:143
+#, no-wrap
+msgid "`git checkout`"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:146
+msgid ""
+"If it appears that you're not on the branch you wanted to be, or you're "
+"actually on master (which is bad !), you can move to another branch with "
+"`git checkout`"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:147
+#, no-wrap
+msgid "git checkout testing\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:152
+#, no-wrap
+msgid "*Read carefully what Git says when you validate a command, do never forget that Git is sneaky...*\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:153
+#, no-wrap
+msgid "`git pull` before anything else"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:155
+#, no-wrap
+msgid "You're finally on the right branch, and ready to work.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:156
+#, no-wrap
+msgid "**Wait ! A nasty trap is waiting for you...**  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:158
+msgid ""
+"Before ending up in an inextricable situation. Start with a `git pull` to "
+"update your branch to the latest change from the distant repository."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:159
+#, no-wrap
+msgid "*Sometimes, you will encounter an impossible situation where Git is saying that you can't pull because you have local changes. But you don't care of those local modifications, you just want to get the last version of the distant branch. But Git don't care about what YOU want...*  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:161
+#, no-wrap
+msgid "*I have to admit that my only solution is as highly efficient as dirty... A good old `rm -r` of the repository and a `git clone`*\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:162
+#, no-wrap
+msgid "Let's work"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:164
+#, no-wrap
+msgid "Eventually, you can work on your code.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:166
+msgid ""
+"When you are finally ok with what you have done, it's time to validate your "
+"work."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:168
+msgid ""
+"The first step is to inform Git about which file(s) to validate. To do so, "
+"we'll use `git add`"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:169
+#, no-wrap
+msgid ""
+"git add my_file\n"
+"git add my_other_file and_also_this_one\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:175
+msgid "If you want to validate all your work, you can also simply do"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:176
+#, no-wrap
+msgid "git add --all\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:180
+#, no-wrap
+msgid "To check the current status of your validation, you can use `git status`. It will show you which files will be included into your commit, and which files are modified, but not yet included.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:182
+msgid ""
+"`git status -v` will show also which part of the files are modified. A good "
+"way to be sure that you didn't make a mistake before committing."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:183
+#, no-wrap
+msgid "`git checkout -b`"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:185
+#, no-wrap
+msgid "Before committing, or after, or before starting to work. Whenever you feel like it !  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:187
+msgid ""
+"You should consider adding your work to a separate branch, that way, it will "
+"be easy to create a pull request to merge into the testing branch and "
+"discuss with the other packagers what you suggest to change."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:189
+msgid ""
+"To create a new branch and move to this branch, you can use `git checkout -b "
+"my_new_branch`."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:190
+#, no-wrap
+msgid "`git commit`"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:192
+#, no-wrap
+msgid "To commit is simply to validate your work in Git. As you can do in GitHub.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:193
+#, no-wrap
+msgid "To have the same fields that you had on GitHub, with the name of the commit, and a longer explanation. You can simply use `git commit`.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:194
+#, no-wrap
+msgid "The first line, before the comments, is for the name of the commit.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:196
+msgid "After all the comments, you can add an explanation if you want to."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:198
+msgid ""
+"If you want to commit with only a name for your commit, you can use a simple "
+"command:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:199
+#, no-wrap
+msgid "git commit -m \"My commit name\"\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:203
+#, no-wrap
+msgid "Push to the distant repository"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:205
+#, no-wrap
+msgid "Your changes are validated, but only on your local clone of the repository. Now, you have to send those modifications back to the distant repository on GitHub.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:206
+#, no-wrap
+msgid "In order to do that, you need to know what is your current branch. (If you don't know, `git branch` will give you that info).  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:208
+msgid "Then you can git push"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/80.misc/packaging_apps_git.mdx:209
+#, no-wrap
+msgid "git push -u origin BRANCH_NAME\n"
+msgstr ""

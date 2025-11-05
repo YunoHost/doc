@@ -1,0 +1,83 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/80.core/index.mdx:1
+#, no-wrap
+msgid "⚙️ Core development"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/index.mdx:7
+msgid ""
+"You have found a bug or want to work on a new feature in the Yunohost core? "
+"Well, thanks!"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/index.mdx:9
+msgid ""
+"If you're looking for stuff to implement or fix, please see [the project's "
+"issue tracker](https://github.com/YunoHost/issues/issues)."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/index.mdx:12
+msgid ""
+"We recommend to **not** develop on your own machine where you might store "
+"important data. Instead, most of the testing can be done in [Incus "
+"containers](./devenv#incus)."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/index.mdx:18
+msgid ""
+"Here are the suggested steps to work on the core: * Identify the components "
+"you want to work on (see [the Core architecture](architecture))  * Install "
+"and configure [Incus](./devenv#incus)  * Install and use [ynh-dev](./"
+"devenv#ynh-dev)  * Contribute your changes"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/index.mdx:20
+#, no-wrap
+msgid "**And come say hi in the [dev chat room](/community/chat_rooms)**!\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/80.core/index.mdx:22
+#, no-wrap
+msgid "Contribution workflow"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/index.mdx:34
+#, no-wrap
+msgid ""
+"When you want to contribute your changes, you need to:\n"
+"* Fork the relevant(s) repo(s) on GitHub\n"
+"* Push your changes to a new branch, with a well-chosen name, for example:\n"
+"  * For an enhancement or new feature: `enh-ISSUENUMBER-name-of-feature`\n"
+"  * For a bugfix `fix-ISSUENUMBER-description-of-fix`\n"
+"  * `ISSUENUMBER` is optional and is the id of a corresponding ticket on the bug tracker.\n"
+"* Once you're ready, open a Pull Request (PR) on GitHub. Please include `[fix]` or\n"
+"  `[enh]` at the beginning of the title of your PR.\n"
+"  You can open a draft PR if you are expecting feedback / comments.\n"
+"* After reviewing, testing and validation by other contributors, your branch\n"
+"should be merged in `unstable`!\n"
+msgstr ""

@@ -1,0 +1,459 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:7
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:8
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:13
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:3
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:8
+#: docs/admin/35.email/05.clients.mdx:7
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:7
+#: docs/admin/40.backups/index.mdx:7
+#: docs/admin/40.backups/15.clone_filesystem.mdx:7
+#: docs/admin/25.domains/certificate.mdx:7 docs/admin/25.domains/index.mdx:7
+#: docs/admin/20.users/groups_and_permissions.mdx:7
+msgid "import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:114
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:166
+#: docs/admin/35.email/05.clients.mdx:73
+#: docs/admin/40.backups/15.clone_filesystem.mdx:156
+#: docs/admin/40.backups/15.clone_filesystem.mdx:185
+#: docs/admin/25.domains/certificate.mdx:71 docs/admin/25.domains/index.mdx:86
+#: docs/admin/20.users/groups_and_permissions.mdx:57
+#: docs/admin/20.users/groups_and_permissions.mdx:78
+#: docs/admin/20.users/groups_and_permissions.mdx:122
+#: docs/admin/20.users/groups_and_permissions.mdx:143
+#: docs/admin/20.users/groups_and_permissions.mdx:181
+#: docs/admin/20.users/groups_and_permissions.mdx:230
+#: docs/admin/20.users/groups_and_permissions.mdx:258
+#, no-wrap
+msgid ""
+"</TabItem>\n"
+"</Tabs>\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/40.backups/15.clone_filesystem.mdx:1
+#, no-wrap
+msgid "Snapshotting the entire filesystem"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:9
+msgid ""
+"YunoHost's backup tool only backs up useful files and relies on restore "
+"scripts to reinstall the dependencies of your applications. In other words, "
+"YunoHost's mechanism amounts to reinstalling and then reincorporating the "
+"data."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:11
+msgid ""
+"Making full system images can be a complementary or alternative way to "
+"backup your machine. The advantage is that your system can be restored to "
+"the exact state it was in at the time of the backup."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:13
+msgid ""
+"Depending on your type of installation, you can either create a snapshot or "
+"clone the storage medium by removing it from your server (turned off)."
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/15.clone_filesystem.mdx:14
+#, no-wrap
+msgid "Creating a snapshot"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:17
+msgid ""
+"A snapshot allows you to freeze an image of the file system. Snapshots are "
+"very useful when doing an update or testing, because they allow you to "
+"easily go back in case of a glitch. On the other hand, apart from some very "
+"high availability clusters, snapshots do not really protect you against "
+"hardware failures or disasters (cf. OVH fire in Strasbourg in 2021)."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:19
+msgid ""
+"In general, snapshots are quite disk space saving, the principle is that "
+"your file system will store the differences that occurred since your "
+"snapshot. Thus, only the modifications consume space."
+msgstr ""
+
+#. type: Fenced div block (info)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:20
+#, no-wrap
+msgid "Remember to delete the old snapshots to avoid wasting your storage space by storing all the differences since that date!\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:25
+msgid ""
+"You can use this method with most VPS (often paying), virtual machine "
+"managers or if you have installed YunoHost with an advanced filesystem like "
+"btrfs, ceph or ZFS, you can also create snapshots via the command line"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:28
+#, no-wrap
+msgid ""
+"<Tabs>\n"
+"<TabItem value=\"vps\" label=\"VPS\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:30
+msgid "Below, some documentation for the most known suppliers:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/15.clone_filesystem.mdx:35
+msgid ""
+"[DigitalOcean (EN)](https://docs.digitalocean.com/products/images/snapshots/)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/15.clone_filesystem.mdx:35
+msgid ""
+"[Gandi](https://docs.gandi.net/fr/simple_hosting/operations_courantes/"
+"snapshots.html)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/15.clone_filesystem.mdx:35
+msgid "[OVH](https://docs.ovh.com/fr/vps/snapshot-vps/)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/15.clone_filesystem.mdx:35
+msgid ""
+"[Scaleway (EN)](https://www.scaleway.com/en/docs/backup-your-data-with-"
+"snapshots/)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:38
+#, no-wrap
+msgid ""
+"</TabItem>\n"
+"<TabItem value=\"virtualbox\" label=\"VirtualBox\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:41
+msgid ""
+"Select the virtual machine and click `Snapshots`, then specify the snapshot "
+"name and click `OK`.  ![The snapshot button is located at the top right](/"
+"img/softwares/virtualbox-snapshot2.webp)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:44
+msgid ""
+"To restore, select the virtual machine, click on `Snapshots` then `Restore "
+"Snapshot option`.  ![](/img/softwares/virtualbox-snapshot3.webp)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:47
+msgid ""
+"Then click on `Restore Snapshot`.  ![](/img/softwares/virtualbox-"
+"snapshot4.webp)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:50
+#, no-wrap
+msgid ""
+"</TabItem>\n"
+"<TabItem value=\"proxmox\" label=\"Proxmox\">\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/15.clone_filesystem.mdx:56
+msgid "Select the virtual machine"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/15.clone_filesystem.mdx:56
+msgid "Go to the `Backup` tab"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/15.clone_filesystem.mdx:56
+msgid "Click on `Backup now`."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/15.clone_filesystem.mdx:56
+msgid "Choose `Snapshot` mode"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/15.clone_filesystem.mdx:56
+msgid "Validate"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:59
+#, no-wrap
+msgid ""
+"</TabItem>\n"
+"<TabItem value=\"btrfs\" label=\"BTRFS\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:61
+msgid "Below we consider that `/pool/volume` is the volume to snapshot."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:63
+msgid "Create a read-only snapshot"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:64
+#, no-wrap
+msgid "btrfs subvolume snapshot /pool/volume /pool/volume/$(date +\"%Y-%m-%d_%H:%M\")\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:69
+#: docs/admin/40.backups/15.clone_filesystem.mdx:108
+#: docs/admin/40.backups/15.clone_filesystem.mdx:137
+msgid "List snapshots"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:70
+#, no-wrap
+msgid "btrfs subvolume show /pool/volume\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:75
+#: docs/admin/40.backups/15.clone_filesystem.mdx:114
+#: docs/admin/40.backups/15.clone_filesystem.mdx:143
+msgid "Restore a snapshot"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:76
+#, no-wrap
+msgid ""
+"btrfs sub del /pool/volume\n"
+"btrfs sub snap /pool/volume/2021-07-22_16:12 /pool/volume\n"
+"btrfs sub del /pool/volume/2021-07-22_16:12\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:83
+#: docs/admin/40.backups/15.clone_filesystem.mdx:120
+#: docs/admin/40.backups/15.clone_filesystem.mdx:149
+msgid "Delete a snapshot"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:84
+#, no-wrap
+msgid "btrfs subvolume delete /pool/volume/2021-07-22_16:12\n"
+msgstr ""
+
+#. type: Fenced div block (caution)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:88
+#, no-wrap
+msgid "  Be careful not to delete the original volume\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:92
+#, no-wrap
+msgid "  See [this tutorial](https://www.linux.com/training-tutorials/how-create-and-manage-btrfs-snapshots-and-rollbacks-linux-part-2/) for more info\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:98
+#, no-wrap
+msgid ""
+"</TabItem>\n"
+"<TabItem value=\"ceph\" label=\"CEPH\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:100
+#: docs/admin/40.backups/15.clone_filesystem.mdx:129
+msgid "Below we consider that `pool/volume` is the volume to snapshot."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:102
+#: docs/admin/40.backups/15.clone_filesystem.mdx:131
+msgid "Create a snapshot"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:103
+#, no-wrap
+msgid "rbd snap create pool/volume@$(date +\"%Y-%m-%d_%H:%M\")\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:109
+#, no-wrap
+msgid "rbd snap ls pool/volume\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:115
+#, no-wrap
+msgid "rbd snap rollback pool/volume@2021-07-22_16:22\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:121
+#, no-wrap
+msgid "rbd snap rm pool/volume@2021-07-22_16:12\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:127
+#, no-wrap
+msgid ""
+"</TabItem>\n"
+"<TabItem value=\"zfs\" label=\"ZFS\">\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:132
+#, no-wrap
+msgid "zfs snapshot pool/volume@$(date +\"%Y-%m-%d_%H:%M\")\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:138
+#, no-wrap
+msgid "zfs list -t snapshot -o name,creation\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:144
+#, no-wrap
+msgid "zfs rollback pool/volume@2021-07-22_16:22\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:150
+#, no-wrap
+msgid "zfs destroy pool/volume@2021-07-22_16:12\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/15.clone_filesystem.mdx:157
+#, no-wrap
+msgid "Create a cold image of the file system "
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:160
+msgid ""
+"You can clone your media (SD card, ssd disk, VPS volume...) to create a disk "
+"image. This image before compression will be the exact size of your media, "
+"that's why this method applies rather to machines of less than 64GB."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:162
+msgid ""
+"Unless you can read a snapshot, this method requires you to stop the server "
+"while you create the image. With a VPS, you have to restart in rescue mode "
+"from your provider's interface."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:165
+#, no-wrap
+msgid ""
+"<Tabs>\n"
+"<TabItem value=\"usbimage\" label=\"With USBimager\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:167
+msgid ""
+"This can be done with [USBimager](https://bztsrc.gitlab.io/usbimager/) "
+"(Note: make sure you download the 'Read-write' version! Not the 'Write-only' "
+"version!). The process then consists of the \"reverse\" of the SD card "
+"flashing process:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/15.clone_filesystem.mdx:171
+msgid "Turn off your server"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/15.clone_filesystem.mdx:171
+msgid "Retrieve the SD card and plug it into your computer"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/15.clone_filesystem.mdx:171
+msgid ""
+"In USBimager, click on \"Read\" to create an image (\"photograph\") of the "
+"SD card. You can use the resulting file to restore the whole system later."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:175
+#, no-wrap
+msgid ""
+"More details in [USBimager documentation](https://gitlab.com/bztsrc/usbimager/#creating-backup-image-file-from-device)\n"
+"</TabItem>\n"
+"<TabItem value=\"dd\" label=\"In command line with dd\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:177
+msgid ""
+"It is possible to achieve the same thing with `dd` if you are comfortable "
+"with the command line:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/15.clone_filesystem.mdx:178
+#, no-wrap
+msgid "dd if=/dev/mmcblk0 | gzip > ./my_snapshot.gz\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/15.clone_filesystem.mdx:183
+msgid ""
+"(replace `/dev/mmcblk0` with the real name of your SD card or hard drive)"
+msgstr ""

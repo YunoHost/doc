@@ -1,0 +1,217 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/80.core/10.devenv.mdx:1
+#, no-wrap
+msgid "Development environment"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:6
+msgid "The recommended development tool is `ynh-dev`, and is based on Incus."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:8
+msgid "This page gives an introduction to both tools."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/80.core/10.devenv.mdx:9
+#, no-wrap
+msgid "Incus"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:13
+msgid ""
+"The recommended testing and development environment is based on [Incus]"
+"(https://linuxcontainers.org/incus/), a system container manager."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:16
+msgid ""
+"Its usage is very similar to Docker and Podman, but its main difference is "
+"its ability to run full operating systems, with their own network interfaces "
+"and `init` system. There is no virtualization here."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:18
+msgid ""
+"The YunoHost project provides Incus images on [the Incus repository](https://"
+"repo.yunohost.org/incus/)."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:24
+msgid ""
+"For each Debian release and for each branch (`stable`, `testing`, "
+"`unstable`) are provided multiple images: * `before-install`: tools and "
+"dependencies are installed but *not* Yunohost * `dev`: YunoHost is installed "
+"but the post-install step was not run * `appci`: YunoHost is installed, post-"
+"install was run and you can install apps * `core-tests`: YunoHost is "
+"installed and post-installed, and development and testing tools are "
+"installed."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:26
+msgid ""
+"The `appci` and `core-tests` images are used by the project's testing "
+"infrastructure."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:28
+msgid ""
+"The Incus images are built by our [incus_builder](https://github.com/"
+"YunoHost/incus_builder/) tool, but **not automatically**, so please feel "
+"free to ask us to regenerate images."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/80.core/10.devenv.mdx:29
+#, no-wrap
+msgid "Install and configure Incus"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:32
+msgid "Incus can be installed on Debian with:"
+msgstr ""
+
+#. type: Fenced code block
+#: docs/dev/80.core/10.devenv.mdx:33
+#, no-wrap
+msgid "apt install incus\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:38
+msgid "Then you need to add users to the `incus-admin` group:"
+msgstr ""
+
+#. type: Fenced code block
+#: docs/dev/80.core/10.devenv.mdx:39
+#, no-wrap
+msgid ""
+"sudo usermod -a -G incus-admin $(whoami)\n"
+"newgrp incus-admin\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:45
+msgid "and initialize Incus:"
+msgstr ""
+
+#. type: Fenced code block
+#: docs/dev/80.core/10.devenv.mdx:46
+#, no-wrap
+msgid "incus admin init\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:51
+msgid ""
+"You will want to add the YunoHost repository (do NOT run this as root but as "
+"your user):"
+msgstr ""
+
+#. type: Fenced code block
+#: docs/dev/80.core/10.devenv.mdx:52
+#, no-wrap
+msgid "incus remote add yunohost https://repo.yunohost.org/incus --protocol simplestreams --public\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:57
+msgid "and to download an image:"
+msgstr ""
+
+#. type: Fenced code block
+#: docs/dev/80.core/10.devenv.mdx:58
+#, no-wrap
+msgid "incus image copy yunohost:yunohost/bookworm-stable/dev local: --copy-aliases --auto-update\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/80.core/10.devenv.mdx:62
+#, no-wrap
+msgid "Install a custom YunoHost version"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:66
+msgid ""
+"When testing an unreleased YunoHost version, or installation script, you "
+"might want to run the installation script from [its Git repository](https://"
+"github.com/YunoHost/install_script) on a freshly installed Debian."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:68
+msgid "For example to install the unreleased Debian 13 Trixie version:"
+msgstr ""
+
+#. type: Fenced code block
+#: docs/dev/80.core/10.devenv.mdx:69
+#, no-wrap
+msgid "curl https://raw.githubusercontent.com/YunoHost/install_script/main/trixie | bash\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:74
+msgid "You might also want to pass arguments to the script:"
+msgstr ""
+
+#. type: Fenced code block
+#: docs/dev/80.core/10.devenv.mdx:75
+#, no-wrap
+msgid "curl https://raw.githubusercontent.com/YunoHost/install_script/main/trixie | bash -s -- -d unstable\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/80.core/10.devenv.mdx:79
+#, no-wrap
+msgid "`ynh-dev`"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:85
+msgid ""
+"[`ynh-dev`](https://github.com/YunoHost/ynh-dev) is the *recommended tool* "
+"that automates: * downloading Incus images * download YunoHost's projects "
+"source code * Install and symlink YunoHost stuff inside the container"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:88
+msgid ""
+"That way, you will be able to edit files, test your changes in real time, "
+"commit and push/pull your changes directly from your development environment."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/10.devenv.mdx:89
+msgid ""
+"Please see [the `ynh-dev` README](https://github.com/YunoHost/ynh-dev/?"
+"tab=readme-ov-file) for installation and usage instructions."
+msgstr ""

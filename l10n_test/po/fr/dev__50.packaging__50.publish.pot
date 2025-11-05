@@ -1,0 +1,60 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/50.packaging/50.publish.mdx:1
+#, no-wrap
+msgid "Publishing your app on the catalog"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/50.publish.mdx:7
+msgid ""
+"The official YunoHost's app catalog is maintained [in this repository]"
+"(https://github.com/YunoHost/apps/), in particular [the `apps.toml` file]"
+"(https://github.com/YunoHost/apps/blob/master/apps.toml)."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/50.publish.mdx:11
+msgid ""
+"For your app to be made available to everybody, you should make a pull "
+"request that adds your app inside the `apps.toml` (see the [detailed "
+"instructions in the README](https://github.com/YunoHost/apps/#how-to-add-"
+"your-app-to-the-application-catalog)).  Before doing so, please make sure to "
+"check that your app is compatible with [the official app catalog policy](/"
+"dev/packaging/policy)."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/50.publish.mdx:13
+msgid ""
+"Note that the \"real\" catalog used by YunoHost servers is [https://"
+"app.yunohost.org/default/v3/apps.json](https://app.yunohost.org/default/v3/"
+"apps.json) which is rebuilt every 4 hours."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/50.publish.mdx:14
+msgid ""
+"NB: The `level` key is not to be set manually by maintainers. The `yunohost-"
+"bot` will [automatically create a pull request](https://github.com/YunoHost/"
+"apps/blob/master/tools/update_app_levels/update_app_levels.py) every Friday "
+"evening with results from the official CI, which are then to be manually "
+"reviewed and merged by the community."
+msgstr ""

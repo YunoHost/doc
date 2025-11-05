@@ -1,0 +1,426 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: pagination_next
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:1
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:1
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:1
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:1
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:1
+#, no-wrap
+msgid "admin/get_started/guidelines"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: sidebar_class_name
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:1
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:1
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:1
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:1
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:1
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:1
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:1
+#, no-wrap
+msgid "hidden"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:21
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:20
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:17
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:17
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:14
+#, no-wrap
+msgid "<FAIcon icon=\"fa-list-alt\"/> Pre-requisites"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:164
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:135
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:93
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:171
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:79
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:67
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:25
+#, no-wrap
+msgid "<InitialConfiguration />\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:1
+#, no-wrap
+msgid "For testing and debugging purposes"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: sidebar_custom_props doc_card_image
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:1
+#, no-wrap
+msgid "/img/icons/icon-virtualbox.png"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: sidebar_position
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:1
+#, no-wrap
+msgid "5"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:1
+#, no-wrap
+msgid "In a virtual machine"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:15
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:15
+msgid ""
+"import InitialConfiguration from \"./_configuration.mdx\"; import Tabs from "
+"'@theme/Tabs'; import TabItem from '@theme/TabItem'; import "
+"YunoHostImagesList from '@site/src/components/YunoHostImagesList';"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:16
+#, no-wrap
+msgid "Installing YunoHost in a VirtualBox is usually intended for testing or development. It is not convenient to run an actual server on the long-term, because the machine it's installed on probably won't be up 24/7, and because Virtualbox adds an additional layer of complexity in exposing the machine to the Internet.\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:23
+msgid ""
+"An x86 computer with [VirtualBox installed](https://www.virtualbox.org/wiki/"
+"Downloads) and enough RAM capacity to be able to run a small virtual machine "
+"with 1024MB RAM and 8GB capacity (at least)"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:24
+#, no-wrap
+msgid "<FAIcon icon=\"fa-download\"/> Download the YunoHost image"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:26
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:28
+#, no-wrap
+msgid "If your host OS is 32 bits, be sure to download the 32-bit image.\n"
+msgstr ""
+
+#. type: Fenced div block (note)
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:30
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:32
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:34
+#, no-wrap
+msgid "If you wish to check the validity of our signed images, you can [download our public key](https://forge.yunohost.org/keys/yunohost_bookworm.asc).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:35
+#, no-wrap
+msgid "<YunoHostImagesList hardware=\"virtualbox\"/>\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:36
+#, no-wrap
+msgid "Create a new virtual machine"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:39
+msgid "![](/img/softwares/virtualbox_1.png)"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:40
+#, no-wrap
+msgid "It's okay if you can only have 32-bit versions, just be sure that you downloaded the 32-bit image previously.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:44
+#, no-wrap
+msgid "Tweak network settings"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:46
+#, no-wrap
+msgid "This step is important to properly expose the virtual machine on the network\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:51
+#, no-wrap
+msgid "Go to **Settings** > **Network**:\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:55
+msgid "Select `Bridged adapter`"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:55
+#, no-wrap
+msgid ""
+"- Select your interface's name:\n"
+"    **wlan0** if you are connected wirelessly, or **eth0** otherwise.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:57
+msgid "![](/img/softwares/virtualbox_2.png)"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:58
+#, no-wrap
+msgid "<FAIcon icon=\"fa-plug\"/> Boot up the virtual machine"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:61
+msgid "Start the virtual machine after selecting the YunoHost image."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:63
+msgid "![](/img/softwares/virtualbox_2.1.png)"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:64
+#, no-wrap
+msgid "If you encounter the error \"VT-x is not available\", you probably need to enable Virtualization in the BIOS of your computer.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:68
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:102
+#, no-wrap
+msgid "<FAIcon icon=\"fa-rocket\"/> Launch the graphical install"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:71
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:105
+msgid "You should see a screen like this:"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:73
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:107
+#, no-wrap
+msgid "<Figure caption=\"Preview of the ISO menu\" src=\"/img/softwares/virtualbox_3.png\"/>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:79
+#, no-wrap
+msgid ""
+"<Tabs>\n"
+"  <TabItem value=\"classic\" label=\"Classic installation on a whole disk\">\n"
+"    :::danger\n"
+"    Once you have validated the keyboard layout, the installation will be launched and will completely erase the data on your hard disk!\n"
+"    :::\n"
+msgstr ""
+
+#. type: Bullet: '    1. '
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:85
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:118
+msgid "Select `Graphical install`"
+msgstr ""
+
+#. type: Bullet: '    2. '
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:85
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:118
+msgid ""
+"Select your language, your location, your keyboard layout, and eventually "
+"your timezone."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:85
+#, no-wrap
+msgid ""
+"    3. The installer will then download and install all required packages.\n"
+"  </TabItem>\n"
+"  <TabItem value=\"expert\" label=\"Installation in expert mode\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:87
+#, no-wrap
+msgid "    The YunoHost project simplified the classic installation as much as possible in order to avoid as many people as possible being lost with questions that are too technical or related to specific cases.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:89
+#, no-wrap
+msgid "    With the expert mode installation, you have more possibilities, especially concerning the exact partitioning of your storage media. You can also decide to use the classic mode and [add your disks afterwards](/admin/tutorials/external_storage).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:91
+#, no-wrap
+msgid "    ### Summary of the steps in expert mode\n"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:97
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:133
+msgid "Select `Expert graphical install`."
+msgstr ""
+
+#. type: Bullet: '2. '
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:97
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:133
+msgid ""
+"Select your language, location, keyboard layout and possibly your timezone."
+msgstr ""
+
+#. type: Bullet: '3. '
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:97
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:133
+msgid ""
+"Partition your disks. This is where you can set up a RAID or encrypt all or "
+"part of the server."
+msgstr ""
+
+#. type: Bullet: '4. '
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:97
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:133
+msgid ""
+"Specify a possible HTTP proxy to use for the installation of the packages"
+msgstr ""
+
+#. type: Bullet: '5. '
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:97
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:133
+msgid "Specify on which volumes grub should be installed"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:99
+#, no-wrap
+msgid "    ### Regarding partitioning\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:101
+#, no-wrap
+msgid "    In general, we recommend against partitioning `/var`, `/opt`, `/usr`, `/bin`, `/etc`, `/lib`, `/tmp` and `/root` on separate partitions. This will prevent you from having to worry about full partitions that could crash your machine, cause app installations to fail, or even corrupt your databases.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:103
+#, no-wrap
+msgid "    For performance reasons, it is recommended to mount your fastest storage (SSD) on the root `/`.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:105
+#, no-wrap
+msgid "    If you have one or more hard drives to store data, you can choose to mount it on one of these folders depending on your usage.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:113
+#, no-wrap
+msgid ""
+"    | Path | Contents |\n"
+"    |--------|---|\n"
+"    | `/home` | User folders accessible via SFTP |\n"
+"    | `/home/yunohost.backup/archives` | YunoHost backups to be placed ideally elsewhere than on the disks that manage the data |\n"
+"    | `/home/yunohost.app` | Heavy data from YunoHost applications (nextcloud, matrix...) |\n"
+"    | `/home/yunohost.multimedia` | Heavy data shared between several applications |\n"
+"    | `/var/mail` | User mail |\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:115
+#, no-wrap
+msgid "    If you want flexibility and don't want to (re)size partitions, you can also choose to mount on `/mnt/hdd` and follow this [tutorial to mount all these folders with `mount --bind`](/admin/tutorials/external_storage).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:117
+#, no-wrap
+msgid "    ### About encryption\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:119
+#, no-wrap
+msgid "    Be aware that if you encrypt all or part of your disks, you will have to type the passphrase every time you restart your server, which can be a problem if you are not on site. There are however solutions (quite difficult to implement) that allow you to type the passphrase via SSH or via a web page (search for \"dropbear encrypted disk\").\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:121
+#, no-wrap
+msgid "    ### About RAID\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:123
+#, no-wrap
+msgid "    Keep in mind that:\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:127
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:163
+msgid ""
+"the disks in your RAIDs must be of different brands, wear and tear or "
+"batches (especially if they are SSDs)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:127
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:163
+msgid ""
+"a RAID 1 (even without a spare) is more reliable than a RAID 5 from a "
+"probability point of view"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:127
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:163
+msgid ""
+"hardware raids are dependent on the raid card, if the card fails you will "
+"need a replacement to read and rebuild the array"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:130
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:103
+#: docs/admin/30.apps/index.mdx:121 docs/admin/30.apps/index.mdx:161
+#: docs/admin/40.backups/index.mdx:68 docs/admin/40.backups/index.mdx:104
+#: docs/admin/40.backups/index.mdx:157 docs/admin/40.backups/index.mdx:187
+#, no-wrap
+msgid ""
+"  </TabItem>\n"
+"</Tabs>\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:131
+#, no-wrap
+msgid "If the YunoHost installer fails and you can't solve the issue, know that it's also possible to install Debian and then install YunoHost on top. See [these instructions](/admin/get_started/install_on/on_top_of_debian#-run-the-install-script).\n"
+msgstr ""

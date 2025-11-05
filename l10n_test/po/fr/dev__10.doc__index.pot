@@ -1,0 +1,197 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/10.doc/index.mdx:1
+#, no-wrap
+msgid "📝 Working on the documentation"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/10.doc/index.mdx:6
+msgid ""
+"The YunoHost documentation is managed through [this Git repository](https://"
+"github.com/YunoHost/doc) and is powered by [Docusaurus](https://"
+"docusaurus.io/)."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/10.doc/index.mdx:8
+#, no-wrap
+msgid "**You do not need Git expertise just to improve an existing page** (you will need an account on the platform, though): there is an \"Edit\" button at the bottom of each page that will redirect you to the GitHub online editor where you make easily make change proposals (a.k.a Pull Request, PR).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/10.doc/index.mdx:10
+msgid ""
+"However, if you are on an editing spree, you probably want to work locally "
+"and submit a set of changes (a.k.a. a Pull Request, PR). In which case, "
+"refer to the section \"Working locally on th documentation\" below."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/10.doc/index.mdx:11
+#, no-wrap
+msgid "Markdown"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/10.doc/index.mdx:14
+msgid ""
+"The YunoHost project extensively uses Markdown for its documentation and "
+"other things. Documenting how Markdown works is beyond the scope of this "
+"documentation, but we can recommend [this guide](https://"
+"www.markdownguide.org/basic-syntax/) to get familiar with its syntax."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/10.doc/index.mdx:16
+msgid ""
+"Note that Docusaurus has some additional, special syntax (hence why the "
+"files are `.mdx` and not just `.md`)."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/10.doc/index.mdx:17
+#, no-wrap
+msgid "Applications documentation"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/10.doc/index.mdx:20
+msgid ""
+"The apps documentation (description, special admin instructions, ..) lives "
+"in each app's repository. Check [the corresponding section in the packaging "
+"documentation](/dev/packaging/doc)."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/10.doc/index.mdx:21
+#, no-wrap
+msgid "Working locally on the documentation"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/10.doc/index.mdx:24
+msgid ""
+"Using Git, you can clone the documentation locally, edit several pages, add "
+"new ones or add new images, and then propose your changes using a Pull "
+"Request."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/10.doc/index.mdx:26
+msgid "To get started, you will need to clone the repo"
+msgstr ""
+
+#. type: Fenced code block
+#: docs/dev/10.doc/index.mdx:27
+#, no-wrap
+msgid ""
+"git clone https://github.com/yunohost/doc\n"
+"cd doc\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/10.doc/index.mdx:33
+msgid ""
+"If you want to preview your changes, you will need to install npm/nodejs to "
+"build the doc. The documentation is built using [Docusaurus](https://"
+"docusaurus.io). It generates static pages that can be served by a simple "
+"server which can be deployed in production using for example [My Webapp]"
+"(https://apps.yunohost.org/app/my_webapp) or [Github Pages](https://"
+"docusaurus.io/docs/deployment#deploying-to-github-pages). Check the "
+"[official Docusaurus doc](https://docusaurus.io/docs/docs-introduction) for "
+"more info."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/10.doc/index.mdx:35
+msgid ""
+"Here, we'll only build locally and checkout the result using a local dev "
+"server."
+msgstr ""
+
+#. type: Fenced code block
+#: docs/dev/10.doc/index.mdx:36
+#, no-wrap
+msgid ""
+"# Clone \"n\" which will be used to fetch a recent version of nodejs\n"
+"git clone https://github.com/tj/n --single-branch --depth 1\n"
+"\n"
+"# Install the latest node/npm\n"
+"export N_PREFIX=\"$PWD\"\n"
+"n/bin/n install latest\n"
+"\n"
+"# Make sure to use the nodejs/npm we installed\n"
+"NODE_BIN_PATH=$(dirname $(n/bin/n which latest))\n"
+"export PATH=\"$NODE_BIN_PATH:$PATH\"\n"
+"\n"
+"# Then inside your \"doc\" clone:\n"
+"npm install\n"
+"npm run start\n"
+"\n"
+"# Open http://localhost:3000 while the dev server is running\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/10.doc/index.mdx:55
+#, no-wrap
+msgid "Contents of the repository"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/10.doc/index.mdx:60
+msgid ""
+"The **actual documentation content** is inside the `docs/` folder, for "
+"example `docs/admin/02.what_is_yunohost/index.mdx` is the \"What is "
+"YunoHost\" page."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/10.doc/index.mdx:60
+msgid "**Images** are in `static/img`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/10.doc/index.mdx:60
+msgid ""
+"**Translations** are inside `i18n` folders, for example the \"What is "
+"YunoHost\" page translated to french is in `i18n/fr/docusaurus-plugin-"
+"content-docs/current/admin/02.what_is_yunohost/index.mdx`"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/10.doc/index.mdx:62
+#, no-wrap
+msgid "Special pages"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/10.doc/index.mdx:65
+msgid ""
+"Some pages of the documentation are automatically or dynamically generated. "
+"Please do not try to edit them manually..."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/10.doc/index.mdx:66
+msgid ""
+"See the [generation script](https://github.com/YunoHost/doc/blob/docusaurus/"
+"scripts/generate_docs.sh)."
+msgstr ""

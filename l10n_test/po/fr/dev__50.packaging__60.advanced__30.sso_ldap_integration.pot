@@ -1,0 +1,353 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:1
+#, no-wrap
+msgid "SSO/LDAP integration"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:6
+msgid ""
+"One powerful aspect of YunoHost is that apps are meant to be integrated with "
+"the SSO/LDAP stack, such that users logged in on YunoHost's user portal can "
+"be directly logged in each app without having to create an account in each "
+"of them nor having to re-log in each app every time."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:8
+msgid "It should be stressed that there are two different aspects here:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:11
+msgid ""
+"the LDAP integration, meaning that the user accounts in the app are directly "
+"mapped to YunoHost user accounts"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:11
+msgid ""
+"the SSO integration, meaning that a user logged in on the YunoHost user "
+"portal is automatically logged in on the app as well."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:13
+msgid ""
+"Sometimes, LDAP integration is possible, but not SSO integration (though the "
+"opposite would be really weird as LDAP integration is somewhat required for "
+"the SSO to work)"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:15
+msgid ""
+"The SSO system is handled by [SSOwat](https://github.com/YunoHost/ssowat) "
+"and also handles the \"permission\" system which defines wether or not a "
+"user (or anonymous visitor) can access the app."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:16
+#, no-wrap
+msgid "LDAP integration"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:19
+msgid ""
+"LDAP is a de-facto standard when it comes to sharing a common user account "
+"database between multiple applications, hence its use in the context of "
+"YunoHost."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:21
+msgid ""
+"However, each app does implement LDAP support in its own specific way (or "
+"doesn't), and needs to be provided with parameters to actually talk to "
+"YunoHost's LDAP database, usually via its config file. It is advise to look "
+"for real-life example of apps implementing these (such as Nextcloud, "
+"Wekan...) but you will usually need to provide:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:30
+msgid "LDAP host: `localhost` / `127.0.0.1`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:30
+msgid "LDAP port: `389`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:30
+msgid "Base DN : `dc=yunohost,dc=org`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:30
+msgid "User DN : `ou=users,dc=yunohost,dc=org`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:30
+msgid ""
+"Search filter: `(&(|(objectclass=posixAccount))(uid=%uid)"
+"(permission=cn=__APP__.main,ou=permission,dc=yunohost,dc=org))` (this makes "
+"sure that only people with the appropriate YunoHost/SSowat permission can "
+"access the app)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:30
+msgid "Username attribute: `uid`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:30
+msgid "Display name attribute: `displayname`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:30
+msgid "Email attribute: `mail`"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:32
+msgid "TODO/FIXME: moar explanations? What is missing?"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:33
+#, no-wrap
+msgid "SSO integration"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:36
+#, no-wrap
+msgid "This documentation apply to YunoHost\\>=12. On YunoHost \\<12 the header was a bit different but the idea was the same.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:38
+msgid "Internally, SSOwat will on-the-fly inject theses different headers:"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:40
+#, no-wrap
+msgid "<!-- TODO: better table -->\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:47
+#, no-wrap
+msgid ""
+"|Name|Description|Protected over header injection from clients (a client try with a request to override the header and be logged in with a different user)|Header name for app which provide HTTP server and nginx transfert the request|How to get with php App|\n"
+"|----|----|----|----|----|\n"
+"|The username|the username of the authenticated user|Yes|`YNH_USER`|with `getallheaders()[\"Ynh-User\"]` or `$_SERVER[\"HTTP_YNH_USER\"]`|\n"
+"|User email|the email of the authenticated user. Could be usefull for some app which require an email for the username. Can be also used by some apps which populate all user infomration from the HTTP header instead of LDAP.|Yes|`YNH_USER_EMAIL`|with `getallheaders()[\"Ynh-User-Email\"]` or `$_SERVER[\"HTTP_YNH_USER_EMAIL\"]`|\n"
+"|User full name|The full name of the user. The full name of the user. Which is mostly used by some apps which populate all user infomration from the HTTP header instead of LDAP.|Yes|`YNH_USER_FULLNAME`|with `getallheaders()[\"Ynh-User-Fullname\"]` or `$_SERVER[\"HTTP_YNH_USER_FULLNAME\"]`|\n"
+"|The [HTTP Basic Auth Headers](https://en.wikipedia.org/wiki/Basic_access_authentication)|Like `Authorization: Basic <base64credentials>`. If used we should be sure that the app check the credential (user and password) before to validate the authentication. It's mainly used by apps which need the credential to authenticate to a internal service. By example most of webmail need the credential to pass the correct credential to the mail server.|No. A client can send a header and will be passed to the application. It's why the application must check the credential to be sure that the passed passord are correct.|`Authorization`|with `getallheaders()[\"Authorization\"]` or `$_SERVER[\"HTTP_AUTHORIZATION\"]`|\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:48
+#: docs/admin/45.tutorials/15.filezilla.mdx:38
+#, no-wrap
+msgid "Usage"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:51
+msgid ""
+"For many application, like django, you will need configure the `YNH_USER` "
+"header, as the header to trust, to authenticate the user. For php apps it "
+"will be most of case the header `Ynh-User`."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:53
+msgid ""
+"And for some app which need the auth basic header, you generally don't need "
+"to set the header name as the `Authorization` header name is normalized."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:54
+#, no-wrap
+msgid "Specific case"
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:56
+#, no-wrap
+msgid "App which reuse the auth basic header to authenticate to an internal service"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:59
+msgid ""
+"Currently you don't need any specific setup on YunoHost side. Since YunoHost "
+"provide the header needed, the application should be able to use it "
+"correclty. Depending of the application, some configuration could be needed."
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:60
+#, no-wrap
+msgid "Application which provide an API"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:63
+msgid ""
+"Some app, like Nextcloud or SOGo provide an service like Caldav, Cardav or "
+"Webdav, the client will need to send the basic authentication and the nginx "
+"must transmit this authentication header to the serivice which will validate "
+"the authentication. Currently to make it working correctly you need to set a "
+"following app settings this way:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:64
+#, no-wrap
+msgid "ynh_app_setting_set --key=protect_against_basic_auth_spoofing --value=false\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:69
+msgid ""
+"This will say to YunoHost that for this app we can safely transmit auth "
+"basic header from the client to the application."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:71
+msgid ""
+"If you need to change this behavior after the application installation, you "
+"can set the option with:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:72
+#, no-wrap
+msgid "sudo yunohost app setting <my_app> protect_against_basic_auth_spoofing -v false\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:77
+msgid "Then you must regenerate the SSOwat configuration with:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:78
+#, no-wrap
+msgid "sudo yunohost app ssowatconf\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:83
+msgid "And, finally, you need to reload NGINX configuration with:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:84
+#, no-wrap
+msgid "sudo systemctl reload nginx.service\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:88
+#, no-wrap
+msgid "Configuring SSOwat permissions for the app"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:91
+msgid ""
+"SSOwat permissions are configured using the 'permission' resource in your "
+"app's manifest.toml"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:93
+msgid ""
+"If relevant, you can create \"sub\" permissions for your app, for instance "
+"to only allow a specific group of people to access the admin UI of the app. "
+"For example:"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:94
+#, no-wrap
+msgid ""
+"[resources.permissions]\n"
+"\n"
+"# This configures the main permission, i.e. general access to `https://domain.tld/$app/`\n"
+"# Initial access is defined using the `init_main_permission` install question.\n"
+"main.url = \"/\"\n"
+"\n"
+"# This configures an additional \"admin\" permission regarding access to `https://domain.tld/$app/admin`\n"
+"admin.url = \"/admin\"\n"
+"admin.show_tile = false    # This means that this permission won't correspond to a tile in YunoHost's user portal\n"
+"admin.allowed = \"admins\"   # Initialize the access for the \"admins\" group ... You can also use an install question called `init_admin_permission` to let the server admin choose this.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:108
+msgid ""
+"See the page about app resources for the full description of behavior and "
+"properties."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:109
+#, no-wrap
+msgid "Logging out on the app vs. Logging out of YunoHost"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:112
+msgid ""
+"A common [known issue](https://github.com/YunoHost/issues/issues/501) is "
+"that sometimes, logging out of YunoHost apps will not log people out of "
+"every app. This is for example the case for [Nextcloud](https://github.com/"
+"YunoHost-Apps/nextcloud_ynh/issues/19), because it uses its own "
+"authentication cookies which are not cleared when people log out of "
+"YunoHost. This is not trivial to fix."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/30.sso_ldap_integration.mdx:113
+msgid ""
+"Similarly, logging out of the app doesn't necessarily log people from "
+"YunoHost entirely (which is more acceptable that clicking Log out and... not "
+"being logged out at all because you're still logged-in on the SSO, hence "
+"logged in on the app). Some YunoHost app do integrate custom patches such "
+"that the logout process of the app does automatically redirects to `https://"
+"domain.tld/yunohost/sso/?action=logout` which logs them out."
+msgstr ""

@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/community/30.project_budget.mdx:1
+#, no-wrap
+msgid "How is money handled"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/community/30.project_budget.mdx:1
+#, no-wrap
+msgid "Project budget"
+msgstr ""
+
+#. type: Title #
+#: docs/community/30.project_budget.mdx:6
+#, no-wrap
+msgid "Estimated budget for 2020/2021"
+msgstr ""
+
+#. type: Title ##
+#: docs/community/30.project_budget.mdx:8
+#, no-wrap
+msgid "Expected revenues"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/30.project_budget.mdx:12
+msgid "Donations: 3000€/year"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/30.project_budget.mdx:12
+msgid "Grant from NLNet: 20K€"
+msgstr ""
+
+#. type: Title ##
+#: docs/community/30.project_budget.mdx:13
+#, no-wrap
+msgid "Expected expenses"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/30.project_budget.mdx:34
+msgid "Development: 20K€"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/30.project_budget.mdx:34
+msgid "Server renting: 500€"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/community/30.project_budget.mdx:34
+msgid "VPS Scaleway: 20.33*12: 243.96€/year"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/community/30.project_budget.mdx:34
+msgid "VPS Digital O. (forum): 172.80€/year"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/30.project_budget.mdx:34
+msgid "Domain names: ~150€"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/community/30.project_budget.mdx:34
+msgid "`nohost.me`: 11.99€HT/year"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/community/30.project_budget.mdx:34
+msgid "`ynh.fr`: 6.99€HT/year (to be confirmed with frju?)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/community/30.project_budget.mdx:34
+msgid "`noho.st`: ~35€ TTC/year"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/community/30.project_budget.mdx:34
+msgid "`yunohost.org`: 13.99€HT/year"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/community/30.project_budget.mdx:34
+msgid "`yunohost.com`: 9.99€HT/year"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/community/30.project_budget.mdx:34
+msgid "`labriqueinter.net`: 12.49€HT/year"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/community/30.project_budget.mdx:34
+msgid "`internetcu.be`: 17.99€HT/year"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/30.project_budget.mdx:34
+msgid "Communication: ~400€"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/30.project_budget.mdx:34
+msgid "Travel (e.g. to go to conferences): ~700€"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/community/30.project_budget.mdx:34
+msgid "AG FFDN 2020: 225€ (en tout)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/community/30.project_budget.mdx:34
+msgid "Event colibris: 150€"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/community/30.project_budget.mdx:34
+msgid "FOSDEM ou autre conf: 300€"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/30.project_budget.mdx:34
+msgid "Bank account fees: 7x12€ => ~100€"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/30.project_budget.mdx:34
+msgid "Brique Camp: 500€"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/30.project_budget.mdx:35
+#, no-wrap
+msgid "**Balance 2020-2021**: +650€\n"
+msgstr ""

@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: sidebar_class_name
+#: docs/admin/05.get_started/20.install_on/index.mdx:1
+#, no-wrap
+msgid "hidden_menu_caret"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: slug
+#: docs/admin/05.get_started/20.install_on/index.mdx:1
+#, no-wrap
+msgid "/admin/get_started/install_on"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/20.install_on/index.mdx:1
+#, no-wrap
+msgid "Install on..."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/index.mdx:9
+msgid ""
+"import DocCardList from '@theme/DocCardList' import "
+"{ useCurrentSidebarCategory } from '@docusaurus/theme-common'"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/index.mdx:11
+msgid "Select the hardware on which you want install YunoHost:"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/index.mdx:12
+#, no-wrap
+msgid "<DocCardList items={useCurrentSidebarCategory().items} />\n"
+msgstr ""

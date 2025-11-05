@@ -1,0 +1,59 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/community/35.security_team.mdx:1
+#, no-wrap
+msgid "Did you find a vulnerability?"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/community/35.security_team.mdx:1
+#, no-wrap
+msgid "Security team"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/35.security_team.mdx:7
+msgid "Contact the security team by mail: `security@yunohost.org`."
+msgstr ""
+
+#. type: Plain text
+#: docs/community/35.security_team.mdx:9
+msgid ""
+"We strongly advise you to encrypt your mail with GPG. Our public key is "
+"available on key servers. Below is our fingerprint"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/community/35.security_team.mdx:10
+#, no-wrap
+msgid ""
+"gpg --fingerprint security@yunohost.org\n"
+"pub   4096R/17351899 2016-07-01\n"
+" Empreinte de la clef = 6CBC 45EB A625 FBF3 513D  1227 749D 8972 1735 1899\n"
+"uid                  YunoHost Security <security@yunohost.org>\n"
+"sub   4096R/446838AF 2016-07-01\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/35.security_team.mdx:18
+msgid ""
+"See [a gist on Github](https://gist.github.com/opi/"
+"4496024dc3ff29ab2e068fd57092ab7c) for other trustable fingerprint sources."
+msgstr ""

@@ -1,0 +1,392 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:1
+#, no-wrap
+msgid "Packaging v2"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:6
+msgid ""
+"Packaging v2 is a major improvement for the packaging introduced in YunoHost "
+"11.1"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:7
+#, no-wrap
+msgid "Motivation"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:10
+msgid "The motivations for this new format is:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:15
+msgid ""
+"to get rid of some boring or unecessarily complex or duplicateds stuff such "
+"as saving/loading settings, creating a system user, etc.. during the install/"
+"upgrade/restore script, which are common things accross many apps."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:15
+msgid ""
+"to get rid of funky historical, not-super-semantic stuff such as "
+"`__FINALPATH__` being replaced by `$final_path` (with underscore), or "
+"`__PATH__` being replaced by `$path_url`, etc."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:15
+msgid ""
+"formalize some aspects such as the existence of the install dir, data dir, "
+"apt dependencies, database, etc. which in turn unlock possible future "
+"developments such as computing the space used by an app at one given moment, "
+"auto-upgrading apt dependencies during Debian major migration, etc."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:15
+msgid ""
+"formalize some meta-info such as LDAP/SSO support, architectures supports, "
+"and other pre-install / post-install, pre-upgrade / post-upgrade "
+"notifications (replacing the infamous `ynh_send_readme_to_admin`) for better "
+"UI/UX during the install and upgrade process."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:17
+msgid ""
+"However, this \"v2\" is not the end of the story and should be seen as an "
+"intermediate stage before a \"v3\" packaging. In particular this \"v3\" "
+"packaging should also formalize the handling of the system and app "
+"configurations files and ultimately rework the entire paradigm of the "
+"install/remove/upgrade/backup/restore scripts."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:18
+#, no-wrap
+msgid "Adapting a v1 app to v2"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:21
+msgid ""
+"A script is available in [the apps_tools repository](https://github.com/"
+"YunoHost/apps_tools/tree/main/packaging_v2) and will attempt to convert what "
+"it can from the v1 format to the v2 format, in particular:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:24
+msgid ""
+"initializing a `manifest.toml` and prefilling it with info scrapped from the "
+"various scripts"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:24
+msgid "comment out now-unecessary lines in the various scripts"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:26
+msgid "Usage: `python3 convert_app_to_packaging_v2.py /path/yo/your/app`"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:28
+msgid ""
+"This will edit the file in place and you should then carefully review and "
+"iterate over what the script did for you."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:29
+#, no-wrap
+msgid "Highlights of the new format"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:32
+msgid ""
+"The [example repo](https://github.com/YunoHost/example_ynh) illustrates the "
+"below."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"**The manifest is now written as toml (`manifest.toml`)** instead of json "
+"(`manifest.json`). The structure of the manifest itself has been reworked "
+"and now include:"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid "The `upstream` section (now mandatory)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"An `integration` section meant to formalize what minimum YunoHost version is "
+"required, the list of supported architectures, declare if SSO/LDAP is "
+"supported, typical resource usage. This is meant to be displayed both in the "
+"catalog (similar to app stores) and on the app info page after installing "
+"the app - though this is still work in progress."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid "A `resource` section (detailed below)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"**Install questions are now automatically saved as settings** (except user-"
+"provided password and other specific infos)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"**All settings are now automatically loaded in app script environments** (so "
+"e.g. directly define `$domain`, etc.)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"**Auto-enable `set -eu`** a.k.a. `ynh_abort_if_errors` in appropriate scripts"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"**The safety-backup-before-upgrade is now automatically handled by the core**"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"**Simplify writing change-url scripts**: old the `new`/`old`/`change` "
+"`domain`/`path` are now automatically available in the context and a new "
+"helper `ynh_change_url_nginx_config` takes care of tweaking the nginx conf. "
+"Your script should essentially just call that helper and possibly tweak the "
+"app's conf and possibly restart the app's service"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid "**Introduce a new `resource` mechanism**"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid "Resources are declared in the `manifest.toml`."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"They are meant to formalize recurring app needs that are to be provisioned/"
+"deprovisioned by the core."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"They include for example: system user, apt dependencies, install dir, data "
+"dir, port, permissions, SQL database..."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"Each resource is to be provisioned *before* running the install script, "
+"deprovisioned *after* the remove script, and automatically upgraded if "
+"needed before running the upgrade script (or provisionned if introduced in "
+"the new app version, or deprovisioned if removed w.r.t. the previous app "
+"version)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"More infos about resources and their options and behavior are available in "
+"the dedicated doc page"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"**Permissions are automatically initialized using the answer to the "
+"`init_main_permission` install question** (replacing the `is_public` "
+"question). No need to write a boring `if $is_public ...` in the install "
+"script to add visitors anymore ! There is a similar mechanism to init other "
+"permissions, eg `init_admin_permission` (cf also the doc about the "
+"`permission` resource)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"**The content of the `doc/` folder is now meant to be integrated in the "
+"webadmin** (though this is still WIP as of writing this). In particular:"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"`DESCRIPTION.md` and the `screenshots/` folder are expected to be displayed "
+"prior to the app install form (similar to app stores on mobile)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"`ADMIN.md` is expected to be made available somewhere in the info page and "
+"should contain technical admin notes. Other pages can be defined (just name "
+"it `WHATEVER.md`). Lang codes are also supported following the existing "
+"scheme for the README, eg `README_fr.md` is the French version, hence you "
+"can create `ADMIN_fr.md`, etc."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"Note that the `ADMIN.md` page supports the `__FOOBAR__` notation that will "
+"be automatically replaced with the app's `foobar` setting"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"**Special files called 'notifications' are meant to replace the "
+"`ynh_send_readme_to_admin` mechanics**. They are also to be added to the "
+"`doc` folder:"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"`doc/PRE_INSTALL.md`: a note to be displayed prior to the app install. "
+"Typically to warn of something unusual, such as \"the app install will "
+"automatically add 1GB swap to the system\"."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"`doc/POST_INSTALL.md`: a note to be displayed after the app install. "
+"Typically to explain post-install operations to be performed manually by the "
+"admin and that cannot be automated."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"`doc/PRE_UPGRADE.md`: a note to be displayed prior to any upgrade of this "
+"app."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"`doc/PRE_UPGRADE.d/{version}.md`: a note to be displayed prior to a specific "
+"version upgrade."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"`doc/POST_UPGRADE.md`: a note to be displayed after the app upgrade. For "
+"example in the context of Nextcloud, the fact that you may need to re-enable "
+"custom modules manually?"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"Note that the notifications, like `ADMIN.md`, supports the `__FOOBAR__` "
+"notation that will be automatically replaced with the app's `foobar` setting"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"**Replace some historical names with more sensible ones**, or homogenize "
+"some practices:"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"`final_path` is now `install_dir` (this migration should be automatically "
+"handled by the core and the `convert_app_to_packaging_v2.py` script)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"`datadir` is now `data_dir` to be consistent with `install_dir` (this "
+"migration should be automatically handled by the core and the "
+"`convert_app_to_packaging_v2.py` script)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"`path` is now always loaded as `$path`, no funky `$path_url`-but-it-is-saved-"
+"as-`path` anymore (this migration should be automatically handled by the "
+"core and the `convert_app_to_packaging_v2.py` script)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"`mysqldbpwd` and `psqlpwd` or whatever are now always saved as `db_pwd` (cf "
+"the `database` resource) (this migration should be automatically handled by "
+"the core and the `convert_app_to_packaging_v2.py` script)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"ports settings are now always named either `$port` or `$port_foo_bar` "
+"instead of `$foo_bar_port` (cf the `port` resource) (this migration should "
+"be automatically handled by the core and the "
+"`convert_app_to_packaging_v2.py` script)"
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/60.advanced/70.packaging_v2.mdx:66
+msgid ""
+"the install dir is to be set to `/var/www/$app` by default for web apps (or "
+"can be changed to `/opt/????` for non-webapps). Note that YunoHost will "
+"**automatically move** the old install dir to the new `install_dir` during "
+"the corresponding upgrade."
+msgstr ""

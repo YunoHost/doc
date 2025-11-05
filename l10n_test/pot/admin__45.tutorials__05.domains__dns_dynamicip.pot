@@ -1,0 +1,228 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title ###
+#: docs/admin/05.get_started/10.providers/05.registrar/index.mdx:1
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:15
+#, no-wrap
+msgid "Registrars"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:1
+#, no-wrap
+msgid "DNS with a dynamic IP"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:5
+#, no-wrap
+msgid "Before going further, make sure your global IP address is dynamic with: [`ip.yunohost.org`](http://ip.yunohost.org/). The global IP address of your box changes almost every day.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:10
+msgid ""
+"This tutorial aim to get around dynamic IP issue which is: when the IP "
+"public address of your (Internet Service Provider-) box changes, the DNS "
+"zone is not updated to point towards the new IP address, and consequently "
+"your server is no more reachable via its domain name"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:12
+msgid ""
+"After setting up the solution proposed in this tutorial, the redirection "
+"from your domain name to the actual IP address of your server will not be "
+"lost anymore."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:14
+msgid ""
+"The method proposed here consists of automatizing the fact the box announces "
+"its global IP address change to the dynamic DNS, so that the DNS zone will "
+"automatically be updated."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:18
+msgid ""
+"Here are some examples of registrars, companies where you can buy domain "
+"names:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:24
+msgid "[OVH](http://ovh.com/)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:24
+msgid "[GoDaddy](https://godaddy.com/)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:24
+msgid "[Gandi](http://gandi.net/)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:24
+msgid "[Namecheap](https://www.namecheap.com/)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:24
+msgid "[BookMyName](https://www.bookmyname.com/)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:26
+msgid ""
+"If you own a domain name at **OVH**, you may go to step 4 and follow this "
+"[tutorial](/admin/get_started/providers/registrar/ovh/manualdns), given that "
+"OVH proposes a DynDNS service."
+msgstr ""
+
+#. type: Title ####
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:27
+#, no-wrap
+msgid "1. Create an account to a Dynamic DNS service"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:30
+msgid "Here are sites which offer a DynDNS service free of charge:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:38
+msgid "[DNSexit](https://www.dnsexit.com/Direct.sv?cmd=dynDns)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:38
+msgid "[No-IP](https://www.noip.com/remote-access)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:38
+msgid "[ChangeIP](https://changeip.com)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:38
+msgid "[DynDNS.it (in italian, paid plan)](https://dyndns.it)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:38
+msgid ""
+"[DynDNS with your own domain](https://github.com/opi/DynDNS-with-HE.NET)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:38
+msgid "[Duck DNS](https://www.duckdns.org/)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:38
+msgid "[ydns.io](https://ydns.io/)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:40
+msgid ""
+"Register to one of them. It should provide you with one (or more) IP address "
+"to reach the service, and a login (that you may be able to self-define)."
+msgstr ""
+
+#. type: Title ####
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:41
+#, no-wrap
+msgid "2. Move the DNS zones"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:44
+msgid ""
+"Copy the [DNS zones](/admin/get_started/post_install/dns_config), except for "
+"the NS fields, from the [registrar](#registrars) where you bought your "
+"domain name from to the dynamic DNS service you registrer at in step 1."
+msgstr ""
+
+#. type: Title ####
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:45
+#, no-wrap
+msgid "3. Switch the management of your domain name to the dynamic DNS server"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:48
+msgid ""
+"This step consists in declaring to your [registrar](#registrars) that the "
+"DNS service will now be managed by the DynDNS service provider."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:50
+msgid ""
+"For this, first declare in the NS field(s) the IP address provided by the "
+"DynDNS service."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:52
+msgid ""
+"Then, remove any other item in the [DNS zones](/admin/get_started/"
+"post_install/dns_config) (except the previous NS fields), from the "
+"[registrar](#registrars)."
+msgstr ""
+
+#. type: Title ####
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:53
+#, no-wrap
+msgid "4. Configure the client"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:57
+msgid ""
+"This client could be your ISP-box, or a package installed on your server, "
+"such as `ddclient`.  Here, we will use the client provided by the box, which "
+"is the more easy way."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:59
+msgid ""
+"Enter the login of the dynamic DNS and its public IP address in your box "
+"(interface details may vary by ISP)."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:61
+msgid "![](/img/providers/dns_dynamic-ip_box_conf.png)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_dynamicip.mdx:62
+msgid "You're good to go !"
+msgstr ""

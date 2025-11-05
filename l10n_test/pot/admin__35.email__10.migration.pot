@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/35.email/10.migration.mdx:1
+#, no-wrap
+msgid "Migrate emails to YunoHost"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/10.migration.mdx:6
+#, no-wrap
+msgid "*[Documentation linked to YunoHost email](/admin/email)*.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/10.migration.mdx:8
+msgid ""
+"Migration of emails from one server to another can be done with two "
+"recommended tools: ImapSync or Larch."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/10.migration.mdx:10
+msgid ""
+"This tool must be installed on your desktop computer. The transfer method "
+"looks at this schema:"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/10.migration.mdx:12
+#, no-wrap
+msgid "**`Old email server −> desktop computer with ImapSync or Larch −> new email server`**\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/35.email/10.migration.mdx:13
+#, no-wrap
+msgid "ImapSync"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/10.migration.mdx:16
+msgid "[ImapSync site](http://imapsync.lamiral.info/)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/10.migration.mdx:18
+msgid ""
+"Install ImapSync on your client computer by following this [guide](http://"
+"imapsync.lamiral.info/INSTALL):"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/35.email/10.migration.mdx:19
+#, no-wrap
+msgid "sudo dnf install imapsync # Under Fedora\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/10.migration.mdx:24
+#: docs/admin/35.email/10.migration.mdx:43
+msgid "Transfer emails from one server to another:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/35.email/10.migration.mdx:25
+#, no-wrap
+msgid ""
+"imapsync --host1 <domain/IP> --port1 993 --ssl1 --user1 <user> --password1 <password> \\\n"
+"--host2 <domain/IP> --port2 993 --ssl2 --user2 <user> --password2 <password>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/10.migration.mdx:31
+msgid ""
+"Note that transfer settings `--port 993` and `--ssl` are specific to "
+"YunoHost email server."
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/35.email/10.migration.mdx:32
+#, no-wrap
+msgid "Larch"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/10.migration.mdx:35
+msgid "[Larch site](https://github.com/rgrove/larch/)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/10.migration.mdx:37
+msgid ""
+"After beforehand installed `gem`, install `larch` on your client computer:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/35.email/10.migration.mdx:38
+#, no-wrap
+msgid "sudo gem install larch\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/35.email/10.migration.mdx:44
+#, no-wrap
+msgid "larch -a -f imaps://server_of_origin.org -t imaps://server_of_destination.org\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/35.email/10.migration.mdx:48
+msgid ""
+"For other types of transfer refer to [Larch documentation](https://"
+"github.com/rgrove/larch#label-Usage)."
+msgstr ""

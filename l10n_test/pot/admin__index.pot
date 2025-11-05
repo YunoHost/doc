@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: sidebar_position
+#: docs/dev/index.mdx:1 docs/admin/index.mdx:1
+#, no-wrap
+msgid "0"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/index.mdx:1
+#, no-wrap
+msgid "Welcome"
+msgstr ""
+
+#. type: Title #
+#: docs/admin/index.mdx:6
+#, no-wrap
+msgid "YunoHost admin documentation"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/index.mdx:9
+msgid ""
+"Here, you'll learn [the basics of self-hosting](/admin/about_self_hosting), "
+"how to [install YunoHost](/admin/get_started/install_on) and configure it."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/index.mdx:11
+msgid ""
+"Then you'll be able to [add users](/admin/users), [domains](/admin/domains) "
+"and [apps](/admin/apps), and ensure [backups](/admin/backups) are done "
+"properly."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/index.mdx:12
+msgid ""
+"Don't hesitate to contact the [community](/community) to [ask for help](/"
+"community/help) !"
+msgstr ""

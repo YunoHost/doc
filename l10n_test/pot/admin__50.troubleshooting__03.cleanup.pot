@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:1
+#, no-wrap
+msgid "Cleanup"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:6
+msgid ""
+"These are a few guidelines on how to perform some cleanup on the server, for "
+"instance when storage space becomes a bit short."
+msgstr ""
+
+#. type: Title #
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:7
+#, no-wrap
+msgid "Execute the basic-space-cleanup tool"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:11
+msgid ""
+"One may use the following command, to perform basic space cleanup (apt, "
+"journalctl, logs, ...) : `sudo yunohost tools basic-space-cleanup`"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/50.troubleshooting/03.cleanup.mdx:12
+msgid ""
+"Additional steps may be needed, to address current shortcomings : see [a "
+"logs cleanup issue](https://github.com/YunoHost/issues/issues/2329) for "
+"instance."
+msgstr ""

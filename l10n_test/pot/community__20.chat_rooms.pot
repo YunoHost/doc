@@ -1,0 +1,208 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/community/20.chat_rooms.mdx:1
+#, no-wrap
+msgid "Chat rooms on Matrix for support and development"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/community/20.chat_rooms.mdx:1
+#, no-wrap
+msgid "Chat rooms"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/20.chat_rooms.mdx:7
+msgid ""
+"Among other communication tools, YunoHost project use chat rooms to "
+"communicate."
+msgstr ""
+
+#. type: Plain text
+#: docs/community/20.chat_rooms.mdx:9
+msgid "You could join those chat rooms using:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/20.chat_rooms.mdx:13
+msgid "a [Matrix client](https://matrix.org/ecosystem/clients/)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/20.chat_rooms.mdx:13
+msgid "a [XMPP client](https://xmpp.org/software/)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/20.chat_rooms.mdx:13
+msgid ""
+"an [IRC Client](https://en.wikipedia.org/wiki/"
+"Comparison_of_Internet_Relay_Chat_clients) for example [KiwiIRC](https://"
+"web.libera.chat/#yunohost) (please note that the IRC room is deprecated, "
+"prefer Matrix)"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/20.chat_rooms.mdx:15
+msgid "Please change your username, as we got legions of `ynhuser`s."
+msgstr ""
+
+#. type: Plain text
+#: docs/community/20.chat_rooms.mdx:17
+#, no-wrap
+msgid "**NB: Currently, the IRC bridge ([due to Matrix](https://libera.chat/guides/faq#are-bridges-allowed)) is disabled. So while the XMPP and Matrix are bridged, the IRC channel is not.**\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/community/20.chat_rooms.mdx:18
+#, no-wrap
+msgid "Help and support chat room"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/20.chat_rooms.mdx:21
+msgid ""
+"There is a [support](/community/help) chat room for YunoHost users mutual "
+"support and help."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/20.chat_rooms.mdx:25
+msgid ""
+"Matrix: **[`#yunohost:matrix.org`](https://matrix.to/#/"
+"#yunohost:matrix.org)**"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/20.chat_rooms.mdx:25
+msgid ""
+"XMPP: **[`support@conference.yunohost.org`]"
+"(xmpp:support@conference.yunohost.org?join)**"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/20.chat_rooms.mdx:25
+msgid "IRC: **`#yunohost`** on libera.chat"
+msgstr ""
+
+#. type: Title ####
+#: docs/community/20.chat_rooms.mdx:26
+#, no-wrap
+msgid "Development chat room"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/20.chat_rooms.mdx:29
+msgid "YunoHost core development chat room:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/20.chat_rooms.mdx:33
+msgid ""
+"Matrix: **[`#yunohost-dev:matrix.org`](https://matrix.to/#/#yunohost-"
+"dev:matrix.org)**"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/20.chat_rooms.mdx:33
+msgid ""
+"XMPP: **[`dev@conference.yunohost.org`](xmpp:dev@conference.yunohost.org?"
+"join)**"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/20.chat_rooms.mdx:33
+msgid "IRC: **`#yunohost-dev`** on libera.chat"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/20.chat_rooms.mdx:36
+msgid ""
+"Currently, the main chat room for contributions on YunoHost project.  For "
+"help, please see **`#yunohost`** chat room above."
+msgstr ""
+
+#. type: Title ####
+#: docs/community/20.chat_rooms.mdx:37
+#, no-wrap
+msgid "Applications chat room"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/20.chat_rooms.mdx:41
+msgid ""
+"Application packaging development chat room. It allow packagers to help each "
+"other.  It also allow to discuss packaging evolution, continuous integration "
+"tools:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/20.chat_rooms.mdx:45
+msgid ""
+"Matrix: **[`#yunohost-apps:matrix.org`](https://matrix.to/#/#yunohost-"
+"apps:matrix.org)**"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/20.chat_rooms.mdx:45
+msgid ""
+"XMPP: **[`apps@conference.yunohost.org`](xmpp:apps@conference.yunohost.org?"
+"join)**"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/20.chat_rooms.mdx:45
+msgid "IRC: **`#yunohost-apps`** on libera.chat"
+msgstr ""
+
+#. type: Title ####
+#: docs/community/20.chat_rooms.mdx:46
+#, no-wrap
+msgid "Documentation chat room"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/20.chat_rooms.mdx:51
+msgid ""
+"YunoHost project documentation chat room. It allow people to discuss, "
+"synchronize and maintain an up-to-date documentation on the differents "
+"aspects of the project (backend, frontend, apps, project, community...).  "
+"You may also share here your public communications about YunoHost (videos, "
+"presentations, etc.), to allow proper referencing."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/20.chat_rooms.mdx:54
+msgid ""
+"Matrix: **[`#yunohost-doc:matrix.org`](https://matrix.to/#/#yunohost-"
+"doc:matrix.org)**"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/20.chat_rooms.mdx:54
+msgid ""
+"XMPP: **[`doc@conference.yunohost.org`](xmpp:doc@conference.yunohost.org?"
+"join)**"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/20.chat_rooms.mdx:54
+msgid "IRC: **`#yunohost-doc`** on libera.chat"
+msgstr ""

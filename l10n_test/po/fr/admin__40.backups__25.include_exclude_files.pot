@@ -1,0 +1,237 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/40.backups/25.include_exclude_files.mdx:1
+#, no-wrap
+msgid "Include or exclude files"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/25.include_exclude_files.mdx:5
+#, no-wrap
+msgid "Include files"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:8
+msgid ""
+"YunoHost usually already knows what needs to be backed up. However, if you "
+"have made manual changes, such as installing an app outside of the YunoHost "
+"application system, you may want to extend YunoHost's mechanism to specify "
+"other files to be backed up."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:10
+msgid ""
+"By default, if configurations tracked by YunoHost are changed, they will be "
+"backed up. On the other hand, a database or an app added by hand, changes on "
+"some configurations not tracked, will not be backed up."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:12
+msgid ""
+"You can create a backup hook and a restore hook to add data to backup. Here "
+"is an example:"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:14
+msgid "`/etc/yunohost/hooks.d/backup/99-conf_custom`"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/25.include_exclude_files.mdx:15
+#, no-wrap
+msgid ""
+"#!/bin/bash\n"
+"\n"
+"# Source YNH helpers\n"
+"source /usr/share/yunohost/helpers\n"
+"\n"
+"ynh_backup_dest (){\n"
+"    YNH_CWD=\"${YNH_BACKUP_DIR%/}/$1\"\n"
+"    mkdir -p $YNH_CWD\n"
+"    cd \"$YNH_CWD\"\n"
+"}\n"
+"\n"
+"# Exit hook on subcommand error or unset variable\n"
+"ynh_abort_if_errors\n"
+"\n"
+"# Openvpn\n"
+"ynh_backup_dest \"conf/custom/openvpn\"\n"
+"ynh_backup \"/etc/sysctl.d/openvpn.conf\"\n"
+"ynh_backup \"/etc/openvpn\"\n"
+"ynh_backup \"/etc/fail2ban/jail.d/openvpn.conf\"\n"
+"ynh_backup \"/etc/fail2ban/filter.d/openvpn.conf\"\n"
+"\n"
+"# Samba\n"
+"ynh_backup_dest \"conf/custom/samba\"\n"
+"ynh_backup \"/etc/samba\"\n"
+"ynh_backup \"/var/lib/samba\"\n"
+"ynh_backup \"/etc/yunohost/hooks.d/post_user_create/99-samba\"\n"
+"ynh_backup \"/etc/yunohost/hooks.d/post_user_delete/99-samba\"\n"
+"ynh_backup --src_path=\"/etc/yunohost/hooks.d/post_user_update/99-samba\" --not_mandatory\n"
+"ynh_backup \"/etc/cron.daily/clean-trash\"\n"
+"\n"
+"# MISC\n"
+"ynh_backup_dest \"conf/custom/misc\"\n"
+"ynh_backup \"/etc/sysctl.d/noipv6.conf\"\n"
+"ynh_backup \"/usr/local/bin/\"\n"
+"ynh_backup \"/etc/yunohost/hooks.d/backup/99-conf_custom\"\n"
+"ynh_backup \"/etc/yunohost/hooks.d/restore/99-conf_custom\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:55
+msgid "`/etc/yunohost/hooks.d/restore/99-conf_custom`"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/25.include_exclude_files.mdx:56
+#, no-wrap
+msgid ""
+"#!/bin/bash\n"
+"\n"
+"# Source YNH helpers\n"
+"source /usr/share/yunohost/helpers\n"
+"\n"
+"ynh_restore_dest (){\n"
+"    YNH_CWD=\"${YNH_BACKUP_DIR%/}/$1\"\n"
+"    cd \"$YNH_CWD\"\n"
+"}\n"
+"\n"
+"# Exit hook on subcommand error or unset variable\n"
+"ynh_abort_if_errors\n"
+"\n"
+"# Openvpn\n"
+"app=\"custom_openvpn\" # This variable is important for the following helper\n"
+"ynh_install_app_dependencies \"openvpn openvpn-auth-ldap samba\"\n"
+"\n"
+"ynh_restore_dest \"conf/custom/openvpn\"\n"
+"ynh_restore_file \"/etc/sysctl.d/openvpn.conf\"\n"
+"ynh_restore_file \"/etc/openvpn\"\n"
+"ynh_restore_file \"/etc/fail2ban/jail.d/openvpn.conf\"\n"
+"ynh_restore_file \"/etc/fail2ban/filter.d/openvpn.conf\"\n"
+"\n"
+"# Samba\n"
+"app=\"custom_samba\" # This variable is important for the following helper\n"
+"ynh_install_app_dependencies \"samba\"\n"
+"\n"
+"ynh_restore_dest \"conf/custom/samba\"\n"
+"ynh_restore_file \"/etc/samba\"\n"
+"ynh_restore_file \"/var/lib/samba\"\n"
+"ynh_restore_file \"/etc/yunohost/hooks.d/post_user_create/99-samba\"\n"
+"ynh_restore_file \"/etc/yunohost/hooks.d/post_user_delete/99-samba\"\n"
+"ynh_restore_file --src_path=\"/etc/yunohost/hooks.d/post_user_update/99-samba\" --not_mandatory\n"
+"ynh_restore_file \"/etc/cron.daily/clean-trash\"\n"
+"chown -R openvpn:openvpn /etc/openvpn\n"
+"\n"
+"# MISC\n"
+"ynh_restore_dest \"conf/custom/misc\"\n"
+"ynh_restore_file \"/etc/sysctl.d/noipv6.conf\"\n"
+"ynh_restore_file \"/usr/local/bin/\"\n"
+"ynh_restore_file \"/etc/yunohost/hooks.d/backup/99-conf_custom\"\n"
+"ynh_restore_file \"/etc/yunohost/hooks.d/restore/99-conf_custom\"\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/25.include_exclude_files.mdx:101
+#, no-wrap
+msgid "Exclude files"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:104
+msgid ""
+"There is no mechanism to exclude specific files from a YunoHost backup, "
+"other than the 2 options presented below:"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/40.backups/25.include_exclude_files.mdx:105
+#, no-wrap
+msgid "Avoid backing up certain `/home` folders"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:108
+msgid ""
+"If needed, you can specify that certain user `home` folders not be backed up "
+"by the `yunohost backup` command, by creating an empty file named "
+"`.nobackup` inside."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:110
+msgid ""
+"Caution: this setup only works with **first-level subfolders of `/home`**, "
+"such as `/home/user1` or `/home/yunohost.multimedia`. It does not work for "
+"other levels of subfolders, like `/home/user1/bigfolder/`."
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/40.backups/25.include_exclude_files.mdx:111
+#, no-wrap
+msgid "Do not backup large amounts of data"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:113
+#, no-wrap
+msgid "Some apps like Nextcloud are potentially attached to large amounts of data. It is possible to not backup them by default. In this case, the app is said to \"backup only the core\" (of the app).  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:115
+msgid ""
+"During an update, apps containing a large amount of data usually make a "
+"backup without these data."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:117
+msgid ""
+"To temporarily disable backup of large data, for applications that implement "
+"this feature, you can set the `BACKUP_CORE_ONLY` variable. To do this, the "
+"variable must be set before the backup command:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/25.include_exclude_files.mdx:118
+#, no-wrap
+msgid "BACKUP_CORE_ONLY=1 yunohost backup create --apps nextcloud\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:123
+msgid "Be careful: you will have to backup Nextcloud users' data yourself."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/25.include_exclude_files.mdx:125
+msgid "If you want this behavior to be permanent:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/25.include_exclude_files.mdx:126
+#, no-wrap
+msgid "yunohost app setting nextcloud do_not_backup_data -v 1\n"
+msgstr ""

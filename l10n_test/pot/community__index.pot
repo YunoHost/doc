@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: sidebar_position
+#: docs/dev/50.packaging/05.structure.mdx:1
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:1
+#: docs/community/index.mdx:1
+#, no-wrap
+msgid "1"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/community/index.mdx:1
+#, no-wrap
+msgid "YunoHost community description"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/community/index.mdx:1
+#, no-wrap
+msgid "Community"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/index.mdx:8
+msgid ""
+"import SidebarDocCardList from '@site/src/components/SidebarDocCardList';"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/index.mdx:11
+msgid ""
+"The YunoHost community is centered around [Github](https://github.com/"
+"yunohost), the [forum](https://forum.yunohost.org) and chat rooms on [Matrix]"
+"(https://matrix.org)."
+msgstr ""
+
+#. type: Plain text
+#: docs/community/index.mdx:13
+#, no-wrap
+msgid "<SidebarDocCardList />\n"
+msgstr ""

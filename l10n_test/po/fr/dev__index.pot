@@ -1,0 +1,185 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Yaml Front Matter Hash Value: sidebar_position
+#: docs/dev/index.mdx:1 docs/admin/index.mdx:1
+#, no-wrap
+msgid "0"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/index.mdx:1
+#, no-wrap
+msgid "Contributing to YunoHost"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/index.mdx:7
+msgid "Let's go through the different ways to contribute to the project!"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/index.mdx:8
+#, no-wrap
+msgid "📢 Spread the word"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/index.mdx:11
+#, no-wrap
+msgid "Talk about software freedom, [self-hosting](/admin/about_self_hosting) and YunoHost around you! \\<3\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/index.mdx:12
+#, no-wrap
+msgid "💰 Donate"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/index.mdx:15
+msgid ""
+"YunoHost is a volunteer-driven, non-profit community project. Donations help "
+"us stay afloat and dedicate more time to the project. Checkout [our donation "
+"page](https://yunohost.org/donate.html)!"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/index.mdx:16
+#, no-wrap
+msgid "🛟 Help others"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/index.mdx:19
+msgid ""
+"Our support relies on contributors like you. Join [the support chatroom](/"
+"community/chat_rooms) to assist new users, or see if you can [help someone "
+"on the forum](https://forum.yunohost.org/)!"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/index.mdx:20
+#, no-wrap
+msgid "📝 Improve documentation"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/index.mdx:23
+msgid ""
+"Great projects require great documentation! You can [contribute to this "
+"documentation](/dev/doc/) by improving existing pages or adding new ones!"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/index.mdx:24
+#, no-wrap
+msgid "🌐 Translate"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/index.mdx:27
+msgid ""
+"Help make YunoHost accessible to more people by translating its interface "
+"into your language on [our translation platform](https://"
+"translate.yunohost.org/)!"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/index.mdx:28
+#, no-wrap
+msgid "💡 Help us with design"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/index.mdx:31
+msgid ""
+"As a tech project, it's easy for us to get caught up in the technical "
+"details and forget about making everything intuitive and accessible for non-"
+"tech-savvy users. If you have skills in communication, visual identity, "
+"design, UX, or just general feedback on the website, documentation, "
+"installation process, or everyday use of YunoHost, we’d love to hear from "
+"you! Gget in touch with us on [the forum](https://forum.yunohost.org/), [the "
+"chat rooms](/community/chat_rooms) or [the issue tracker](https://github.com/"
+"YunoHost/issues/issues)!"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/index.mdx:32
+#, no-wrap
+msgid "⚗️  Participate in testings"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/index.mdx:35
+msgid ""
+"We regularly need testers for new versions of YunoHost or app updates. "
+"Checkout [the project announcements on the forum](https://forum.yunohost.org/"
+"c/announcement/8), or if there is a [pending testing for your favourite apps "
+"on the packaging dashboard](https://apps.yunohost.org/dash?filter=testings)."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/index.mdx:36
+#, no-wrap
+msgid "🏷️ Refine the app catalog"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/index.mdx:39
+msgid ""
+"The app catalog is an important aspect of YunoHost. We always need help to "
+"improve the app catalog experience, for example ensuring that apps are in "
+"the appropriate category, with an appropriate logo and screenshot, that "
+"their description is relevant and accurate, that they do provide relevant "
+"information in the context of YunoHost, etc. Checkout for example [this "
+"issue](https://github.com/YunoHost/issues/issues/2676) with guidelines on "
+"how to contribute on this. We're also open to feedback regarding how the "
+"whole design of the catalog could be improved!"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/index.mdx:40
+#, no-wrap
+msgid "📦 Package applications"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/index.mdx:43
+msgid ""
+"You can extend YunoHost capabilities by packaging new applications. Have a "
+"look at [the current catalog](https://apps.yunohost.org/), the [packaging "
+"documentation](/dev/packaging/), and join us on the [app packaging chat room]"
+"(/community/chat_rooms)!"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/index.mdx:44
+#, no-wrap
+msgid "⚙️ Develop"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/index.mdx:46
+msgid ""
+"YunoHost is built mainly using Python, Bash, and VueJS. Checkout the "
+"[developer documentation](/dev/core/), and join us on the [development chat "
+"room](/community/chat_rooms)! You can also [look for good first issues on "
+"our issue tracker](https://github.com/YunoHost/issues/issues?"
+"q=sort%3Aupdated-desc+label%3A%22Good+first+issue%22+state%3Aopen)!"
+msgstr ""
