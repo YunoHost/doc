@@ -55,6 +55,14 @@ Example: `doc/PRE_UPGRADE.d/1.2.1~ynh1.md`.
 
 With the above example, the user will be notified with the content of this markdown file when they upgrade from a lower version of `1.2.1~ynh1` to this latter version or higher.
 
+:::tip
+You can easily increase the package version directly from a comment in a Pull Request on Github by posting `!bump`. The YunoHost bot will automatically add 1 to the package version (`~ynh1` to `~ynh2`, for instance).
+:::
+
+:::tip
+You can add a PRE_UPGRADE message directly from a comment in a Pull Request on Github by posting `!changelog <text>`, `!pre_upgrade <text>`, or `!preupgrade <text>`. The YunoHost bot will automatically create the appropriate file with the `<text>` you wrote.
+:::
+
 ### Localization
 
 All notes' markdown file can optionally be localized using via a filename suffix with the following format: `doc/{hook}_{locale}.md` or `doc/{hook}.d/{version}_{locale}.md`.
