@@ -68,4 +68,4 @@ jobs:
           mode: recreate
           message: |
             ✅ Preview deployed for this PR!
-            🌍 [View the documentation preview](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.event.pull_request.number }})
+            🌍 [View the documentation preview](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ env.install_subdir }})
