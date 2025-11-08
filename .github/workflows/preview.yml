@@ -52,6 +52,11 @@ jobs:
           name: docs
           path: docs
 
+      - run: |
+          ls -lah .
+          ls -lah doc
+          ls -lah docs
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
