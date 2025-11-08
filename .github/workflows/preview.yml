@@ -56,7 +56,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/${{ github.event.repository.name }}/${{ env.install_subdir }}
+          publish_dir: ./docs/${{ env.install_subdir }}
           destination_dir: "${{ env.install_subdir }}"
 
       - name: Comment on PR with preview link
