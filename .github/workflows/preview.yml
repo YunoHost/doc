@@ -54,7 +54,6 @@ jobs:
 
       - run: |
           ls -lah .
-          ls -lah doc
           ls -lah docs
 
       - name: Deploy
