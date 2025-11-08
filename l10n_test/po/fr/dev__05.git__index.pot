@@ -1,0 +1,56 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/05.git/index.mdx:1
+#, no-wrap
+msgid "🛠️ Working with Git / Github"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/05.git/index.mdx:6
+msgid ""
+"The YunoHost project extensively uses Git and GitHub (though we hope to move "
+"to a different platform oneday™)"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/05.git/index.mdx:10
+msgid ""
+"In particular: - [the `YunoHost` organization](https://github.com/YunoHost/) "
+"hosts the \"core\" of YunoHost, along with tools that are transversal to the "
+"project such that [the app store](https://github.com/YunoHost/appstore), "
+"[this very documentation](https://github.com/YunoHost/doc), etc.  - [the "
+"`YunoHost-Apps` organization](https://github.com/YunoHost-Apps/) hosts the "
+"repo corresponding to the different apps"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/05.git/index.mdx:15
+msgid ""
+"Explaining how Git and GitHub works is beyond the scope of this "
+"documentation, but we can recommend: - [this super quick intro](https://"
+"rogerdudler.github.io/git-guide/)  - [this Youtube tutorial](https://"
+"www.youtube.com/watch?v=RGOj5yH7evk)  - [this guide, on how to make you very "
+"first Pull Request in GitHub](https://github.com/firstcontributions/first-"
+"contributions/blob/main/README.md) - also available in other languages - "
+"c.f. the flags at the top, for example [in french](https://github.com/"
+"firstcontributions/first-contributions/blob/main/docs/translations/"
+"README.fr.md)! - There are plenty of tutorials about Git and GitHub on the "
+"internets, find one that works for you, and come talk with other folks!"
+msgstr ""

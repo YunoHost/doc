@@ -1,0 +1,187 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:1
+#, no-wrap
+msgid "Avoid hardware failure"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:5
+#, no-wrap
+msgid "Physically secure your server"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:8
+msgid ""
+"Very often people who self-host don't have proper storage for their system. "
+"Leaving the server in several parts, in a high traffic area, accessible to "
+"children or pets, or in a poorly ventilated area can quickly turn into a "
+"disaster."
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:9
+#, no-wrap
+msgid "Secure your hard drives"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:12
+msgid ""
+"Ideally, your hard disks should be fixed to prevent vibrations which can "
+"accelerate the wear of the equipment or even reduce its performance, "
+"especially if there is another disk next to it."
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:13
+#, no-wrap
+msgid "Reduce swapiness for SD cards and SSDs"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:16
+msgid ""
+"If you use a swap file with an SSD or SD card with too much swapiness, your "
+"storage media could give up the ghost prematurely due to too many writes."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:18
+msgid "To prevent this:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:19
+#, no-wrap
+msgid "cat /proc/sys/vm/swappiness\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:24
+msgid "If it is above 10:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:25
+#, no-wrap
+msgid ""
+"sysctl vm.swappiness=10\n"
+"nano /etc/sysctl.conf\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:31
+msgid ""
+"If present, change the vm.swappiness value to 10. Otherwise add the line:"
+msgstr ""
+
+#. type: Fenced code block (text)
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:32
+#, no-wrap
+msgid "vm.swappiness = 10\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:36
+#, no-wrap
+msgid "Storage redundancy"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:39
+msgid ""
+"In order to limit hardware failures of storage media, it can be relevant to "
+"set up a cluster of mirrored disks (RAID, ZFS). The idea here is that "
+"everything that is written to one disk will be written to the other. This "
+"way, if one fails, the other continues to work and the server is still fully "
+"functional."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:41
+msgid ""
+"There are also more advanced clusters that maximize fault tolerance (failure "
+"of 2 disks like RAID6) or storage (see RAID 5)."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:43
+msgid ""
+"However, these disk clustering techniques should not be considered as "
+"backups. A RAID array should be considered as a single storage medium. "
+"Indeed, if this technique prevents having to reinstall in case of a probable "
+"disk crash, it is far from zero risk."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:45
+msgid ""
+"Some examples of situations known to professional system administrators:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:52
+msgid ""
+"the disks of a cluster mounted with disks of the same brand can fail almost "
+"at the same time within a few hours"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:52
+msgid ""
+"without monitoring the health of the disks, there is a good chance that the "
+"failure of one disk in the cluster will only be noticed when a second one "
+"fails (\\>\\<)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:52
+msgid ""
+"if you don't have a spare disk, the delay in purchasing one may result in "
+"the other disk crashing"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:52
+msgid ""
+"a half-functional disk that produces errors can propagate its error through "
+"the cluster"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:52
+msgid ""
+"the disk connectors or the RAID controller can also produce errors or fail"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:52
+msgid ""
+"the more complex you make the architecture with many components, the more "
+"likely it is that one of them will fail"
+msgstr ""
+
+#. type: Fenced div block (info)
+#: docs/admin/40.backups/20.avoid_hardware_failure.mdx:53
+#, no-wrap
+msgid "If you want to set up a RAID array or use btrfs, the easiest way is to do it at installation with the YunoHost iso in expert mode (when partitioning the system).\n"
+msgstr ""

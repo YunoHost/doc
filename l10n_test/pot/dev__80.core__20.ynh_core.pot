@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/80.core/20.ynh_core.mdx:1
+#, no-wrap
+msgid "Working on the API and CLI"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/20.ynh_core.mdx:7 docs/dev/80.core/25.ynh_admin.mdx:6
+msgid "When using `ynh-dev`, run in the container:"
+msgstr ""
+
+#. type: Fenced code block
+#: docs/dev/80.core/20.ynh_core.mdx:8
+#, no-wrap
+msgid "./ynh-dev use-git yunohost\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/20.ynh_core.mdx:13
+msgid "If you work on Moulinette too:"
+msgstr ""
+
+#. type: Fenced code block
+#: docs/dev/80.core/20.ynh_core.mdx:14
+#, no-wrap
+msgid "./ynh-dev use-git moulinette\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/80.core/20.ynh_core.mdx:19
+#, no-wrap
+msgid "The actionsmap"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/20.ynh_core.mdx:23
+msgid ""
+"The actionsmap file (`data/actionsmap/yunohost.yml`) defines the command "
+"line *and* the API structure. It is structured as \"categories\", "
+"\"actions\", and \"arguments\"."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/20.ynh_core.mdx:26
+msgid ""
+"For example for the command line `yunohost domain add some.domain.tld`, the "
+"category is `domain`, the action is `add`, and `some.domain.tld` is an "
+"argument."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/20.ynh_core.mdx:32
+msgid ""
+"Moulinette will automatically map commands in the actionsmap to Python "
+"functions (and their arguments) located in `src/yunohost/`. For example, "
+"typing `yunohost domain add some.domain.tld` will call the function "
+"`domain_add(domainName)` in `domain.py`, with the argument `domainName` "
+"equal to `\"some.domain.tld\"`."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/dev/80.core/20.ynh_core.mdx:34
+#, no-wrap
+msgid ""
+"Each time you edit the actionsmap or the Python code, you should restart the YunoHost\n"
+"api with:\n"
+"```\n"
+"systemctl restart yunohost-api\n"
+"```\n"
+"You'll need to retype your admin and password in the web interface.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/80.core/20.ynh_core.mdx:43
+#, no-wrap
+msgid "Coding style"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/20.ynh_core.mdx:47
+msgid ""
+"Please follow the standard PEP8 rules, add [Python typing](https://"
+"docs.python.org/3/library/typing.html), and run the usual linting tools for "
+"Python and Bash."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/20.ynh_core.mdx:49
+msgid "Github Actions will run the linting tools and report errors."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/80.core/20.ynh_core.mdx:50
+#, no-wrap
+msgid "YunoHost specific rules"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/80.core/20.ynh_core.mdx:53
+msgid "To handle exceptions, you should raise some `YunohostError()`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/80.core/20.ynh_core.mdx:58
+msgid ""
+"To help with internationalizing the messages, use `m18n.n('some-message-"
+"id')` and put your string in `locales/en.json`. You can also put arguments "
+"and use them in the string with `{{some-argument:s}}`. Don't edit other "
+"locales files, this will be done using [weblate](https://"
+"translate.yunohost.org/) !"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/80.core/20.ynh_core.mdx:59
+msgid "Name of \"private\" functions should start with a `_`"
+msgstr ""

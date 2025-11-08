@@ -1,0 +1,287 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:7
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:8
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:13
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:3
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:8
+#: docs/admin/35.email/05.clients.mdx:7
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:7
+#: docs/admin/40.backups/index.mdx:7
+#: docs/admin/40.backups/15.clone_filesystem.mdx:7
+#: docs/admin/25.domains/certificate.mdx:7 docs/admin/25.domains/index.mdx:7
+#: docs/admin/20.users/groups_and_permissions.mdx:7
+msgid "import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:85 docs/admin/25.domains/certificate.mdx:45
+#: docs/admin/20.users/groups_and_permissions.mdx:41
+#: docs/admin/20.users/groups_and_permissions.mdx:69
+#: docs/admin/20.users/groups_and_permissions.mdx:94
+#: docs/admin/20.users/groups_and_permissions.mdx:134
+#: docs/admin/20.users/groups_and_permissions.mdx:159
+#: docs/admin/20.users/groups_and_permissions.mdx:197
+#: docs/admin/20.users/groups_and_permissions.mdx:248
+#, no-wrap
+msgid ""
+"</TabItem>\n"
+"<TabItem value=\"cli\" label=\"From the command line\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:114
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:166
+#: docs/admin/35.email/05.clients.mdx:73
+#: docs/admin/40.backups/15.clone_filesystem.mdx:156
+#: docs/admin/40.backups/15.clone_filesystem.mdx:185
+#: docs/admin/25.domains/certificate.mdx:71 docs/admin/25.domains/index.mdx:86
+#: docs/admin/20.users/groups_and_permissions.mdx:57
+#: docs/admin/20.users/groups_and_permissions.mdx:78
+#: docs/admin/20.users/groups_and_permissions.mdx:122
+#: docs/admin/20.users/groups_and_permissions.mdx:143
+#: docs/admin/20.users/groups_and_permissions.mdx:181
+#: docs/admin/20.users/groups_and_permissions.mdx:230
+#: docs/admin/20.users/groups_and_permissions.mdx:258
+#, no-wrap
+msgid ""
+"</TabItem>\n"
+"</Tabs>\n"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/25.domains/certificate.mdx:1
+#, no-wrap
+msgid "Certificate"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:9
+msgid ""
+"Certificates are used to guarantee the confidentiality and authenticity of "
+"the communication between a web browser and your server. In particular, they "
+"protect against attackers trying to impersonate your server."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:11
+msgid ""
+"YunoHost provides a **self-signed** certificate, it means that your server "
+"guaranties the certificate validity. It's enough **for personal usage**, "
+"because you trust your own server. But this could be a problem if you want "
+"to open access to anonymous like web user for a website."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:13
+msgid "In practice, visitors will see a screen list this:"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:15
+msgid "![](/img/postinstall_error.png)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:17
+msgid ""
+"Which basically asks the visitor : **\"Do you trust the server hosting this "
+"website?\"**. This can rightfully frighten a lot of people."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:19
+msgid ""
+"To avoid this confusion, it's possible to get a certificate signed a known "
+"authority named **Let's Encrypt** which provide free certificates directly "
+"recognized by browsers. YunoHost allows to directly install this certificate "
+"from the web administration interface or from the command line."
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/25.domains/certificate.mdx:20
+#, no-wrap
+msgid "Install a Let's Encrypt certificate"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:23
+msgid ""
+"Before attempting to install a Let's Encrypt certificate, you should make "
+"sure that your DNS is correctly configured (your.domain.tld should point to "
+"your server's IP) and that your domain is accessible through HTTP from "
+"outside your local network (i.e. at least port 80 should be forwarded to "
+"your server)."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:26
+#: docs/admin/20.users/groups_and_permissions.mdx:62
+#: docs/admin/20.users/groups_and_permissions.mdx:83
+#: docs/admin/20.users/groups_and_permissions.mdx:127
+#: docs/admin/20.users/groups_and_permissions.mdx:152
+#: docs/admin/20.users/groups_and_permissions.mdx:186
+#: docs/admin/20.users/groups_and_permissions.mdx:243
+#, no-wrap
+msgid ""
+"<Tabs groupId=\"admin-commands\">\n"
+"<TabItem value=\"web\" label=\"From the web interface\">\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:28
+msgid ""
+"Go to the 'Domain' part of the admin interface, then in the section "
+"dedicated to your.domain.tld. You should find a 'SSL certificate' button:"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:30
+msgid "![](/img/webadmin/domain-certificate-button.png)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:32
+msgid ""
+"In the 'SSL certificate' section, you can see the status of the current "
+"certificate. If you just added the domain, it should be a self-signed "
+"certificate."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:34
+msgid "![](/img/webadmin/certificate-before-LE.png)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:36
+msgid ""
+"If your domain is correctly configured, it is then possible to install the "
+"Let's Encrypt certificate via the green button."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:38
+msgid "![](/img/webadmin/certificate-after-LE.png)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:40
+msgid ""
+"Once the install is made, you can check that the certificate is live via "
+"your browser by going to your domain in HTTPS. The certificate will "
+"automatically be renewed every three months."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:42
+msgid "![](/img/softwares/certificate-signed-by-LE.png)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:47
+msgid "Connect to your server through SSH."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:49
+msgid "You can check the status of your current certificate with:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/25.domains/certificate.mdx:50
+#, no-wrap
+msgid "yunohost domain cert status your.domain.tld\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:55
+msgid "Install a Let's Encrypt certificate with"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/25.domains/certificate.mdx:56
+#, no-wrap
+msgid "yunohost domain cert install your.domain.tld\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:61
+msgid "This should return :"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/25.domains/certificate.mdx:62
+#, no-wrap
+msgid ""
+"Success! The SSOwat configuration has been generated\n"
+"Success! Successfully installed Let's Encrypt certificate for domain DOMAIN.TLD!\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:68
+msgid ""
+"Once this is done, you can check that the certificate is live via your "
+"browser by going to your domain in HTTPS. The certificate will automatically "
+"be renewed every three months."
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/25.domains/certificate.mdx:72
+#: docs/community/90.terms_of_services.mdx:95
+#, no-wrap
+msgid "Troubleshooting"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:75
+msgid ""
+"If due to some bad tweaking, your certificate ends up in a bad state (e.g. "
+"lost the certificate or unable to read the files), you should be able to "
+"clean the situation by regenerating a self-signed certificate:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/25.domains/certificate.mdx:76
+#, no-wrap
+msgid "yunohost domain cert install your.domain.tld --self-signed --force\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/25.domains/certificate.mdx:81
+msgid ""
+"If YunoHost thinks that your domain is badly configured despite the fact "
+"that you checked the DNS configuration and you have access in HTTP to your "
+"server from outside your local network, then you can:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/25.domains/certificate.mdx:83
+msgid ""
+"add a line `127.0.0.1 your.domain.tld` to the file `/etc/hosts` on your "
+"server;"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/25.domains/certificate.mdx:83
+msgid ""
+"if the certificate installation still doesn't work, you can disable the "
+"checks with `--no-checks` after the `cert install` command."
+msgstr ""

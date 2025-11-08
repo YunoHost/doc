@@ -1,0 +1,1364 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:187
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:211
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:233
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:269
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:297
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:92
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:118
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:162
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:184
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:206
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:233
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:252
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:278
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:332
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:356
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:398
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:422
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:446
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:498
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:547
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:612
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:642
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:690
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:54
+#, no-wrap
+msgid "</details>\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:352
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:73
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:109
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:144
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:181
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:203
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:224
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:249
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:268
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:312
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:353
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:380
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:419
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:443
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:468
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:517
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:570
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:631
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:673
+#: docs/dev/80.core/forms.mdx:55 docs/dev/80.core/forms.mdx:76
+#: docs/dev/80.core/forms.mdx:107
+#, no-wrap
+msgid "Examples"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:1
+#, no-wrap
+msgid "Hooks"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:6
+msgid ""
+"YunoHost includes a hook mechanism triggered on a lot of operation changing "
+"the system. You can use this mechanism in order to extend the behaviour of a "
+"YunoHost command."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:8
+msgid ""
+"The most obvious case is adding a user. If you had a `post_user_create` "
+"hook, this hook will be triggered as soon as a user is added."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:9
+#, no-wrap
+msgid "How to add a custom hook on a specific instance"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:11
+#, no-wrap
+msgid "Below we imagine we want to run a command after each user creation to add the user to samba user.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:16
+msgid ""
+"You should create a directory with the name of the hooks into `/etc/yunohost/"
+"hooks.d/`:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:17
+#, no-wrap
+msgid "mkdir -p /etc/yunohost/hooks.d/post_user_create\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:22
+msgid ""
+"Next create a bash script inside this directory prefixed by 2 numbers and a "
+"dash:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:23
+#, no-wrap
+msgid "nano /etc/yunohost/hooks.d/post_user_create/05-add-user-to-samba\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:28
+msgid ""
+"By default, the directory must be readable and traversable by root, but if "
+"you notice your hook is not run at all by YunoHost, you can check "
+"permissions with `ls -l /etc/yunohost/hooks.d/` and apply these commands if "
+"needed:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:29
+#, no-wrap
+msgid ""
+"chown root:root /etc/yunohost/hooks.d/post_user_create\n"
+"chmod u+rx /etc/yunohost/hooks.d/post_user_create\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:34
+#, no-wrap
+msgid "How to add a hook in an app package"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:37
+msgid ""
+"If you are packaging an app, you should not set by yourself the hook into `/"
+"etc/yunohost/hooks.d` instead you should create a hooks dir at the root of "
+"your package."
+msgstr ""
+
+#. type: Fenced code block (text)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:38
+#, no-wrap
+msgid ""
+".\n"
+"├── conf\n"
+"├── hooks\n"
+"├── scripts\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:46
+msgid ""
+"In the hooks dir, create a bash script called with the type of hook you want "
+"to create for example `post_create_user`."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:47
+#, no-wrap
+msgid "Hooks referencies"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:49
+#, no-wrap
+msgid "User and permissions"
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:51
+#, no-wrap
+msgid "post_user_create"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:55
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Triggered after user creation</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:57
+msgid ""
+"This hook is run at the end of the command `yunohost user create` or "
+"equivalent action in webadmin."
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:58
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:126
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:288
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:342
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:364
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:406
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:430
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:456
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:506
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:659
+#, no-wrap
+msgid "Environment variables"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:65
+msgid "YNH_USER_USERNAME: The username of the created user"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:65
+msgid "YNH_USER_MAIL: The mail of the created user"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:65
+msgid "YNH_USER_PASSWORD: The **clear** password of the created user"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:65
+msgid ""
+"YNH_USER_FIRSTNAME: The firstname of the created user ([should be removed in "
+"future](https://github.com/YunoHost/issues/issues/296))"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:65
+msgid ""
+"YNH_USER_LASTNAME: The lastname of the created user ([should be removed in "
+"future](https://github.com/YunoHost/issues/issues/296))"
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:66
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:172
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:194
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:218
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:243
+#, no-wrap
+msgid "Positionnal arguments (deprecated)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:70
+msgid "$1: The username of the created user"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:70
+msgid "$2: The mail of the created user"
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:71
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:107
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:142
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:179
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:201
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:222
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:247
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:266
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:351
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:378
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:417
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:441
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:466
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:515
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:568
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:629
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:671
+#, no-wrap
+msgid "No waited return"
+msgstr ""
+
+#. type: Title ######
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:75
+#, no-wrap
+msgid "Send automatically a mail to new user"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:77
+#, no-wrap
+msgid ""
+"#!/bin/bash\n"
+"domain=$(cat /etc/hostname)\n"
+"\n"
+"message=\"Hello $YNH_USER_FIRSTNAME,\n"
+"Welcome on $domain ! \n"
+"Feel free to <a href='https://$domain/yunohost/sso/edit.html'>change your password</a>.\n"
+"Let me know if you have a problem,\n"
+"The admin of $domain\n"
+"\"\n"
+"\n"
+"echo $message | mail -s \"Welcome on $domain !\" $YNH_USER_MAIL\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:93
+#, no-wrap
+msgid "post_user_delete"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:97
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Triggered at the end of user deletion</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:99
+msgid ""
+"This hook is run at the end of the command `yunohost user delete` or "
+"equivalent action in webadmin."
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:100
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:170
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:192
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:557
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:622
+#, no-wrap
+msgid "No environment variables"
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:102
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:262
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:293
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:462
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:511
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:559
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:624
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:664
+#, no-wrap
+msgid "Positionnal arguments"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:106
+msgid "$1: The username of the user deleted"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:106
+msgid "$2: True if --purge option is used"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:112
+msgid "######"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:113
+#, no-wrap
+msgid "#!/bin/bash\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:119
+#, no-wrap
+msgid "post_user_update"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:123
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Triggered at the end of the user update</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:125
+msgid ""
+"This hook is run at the end of the command `yunohost user update` or "
+"equivalent action in webadmin."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:128
+#, no-wrap
+msgid "Only arguments given to the cli/api are given as environment variable.\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:139
+msgid "YNH_USER_USERNAME: The username of the updated user"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:139
+msgid ""
+"YNH_USER_FIRSTNAME: The firstname of the updated user ([should be removed in "
+"future](https://github.com/YunoHost/issues/issues/296))"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:139
+msgid ""
+"YNH_USER_LASTNAME: The lastname of the updated user ([should be removed in "
+"future](https://github.com/YunoHost/issues/issues/296))"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:139
+msgid "YNH_USER_PASSWORD: The new password of the updated user"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:139
+msgid ""
+"YNH_USER_MAILS: The mail and mail aliases of the updated user seperated by "
+"comma"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:139
+msgid ""
+"YNH_USER_MAILFORWARDS: The list of forward mails of the updated user "
+"separated by comma"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:139
+msgid ""
+"YNH_USER_MAILQUOTA: The quota of the updated user (could be 0 or a number "
+"following by one of this unit: b, k, M, G or T)"
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:140
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:349
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:376
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:415
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:439
+#, no-wrap
+msgid "No positionnal arguments"
+msgstr ""
+
+#. type: Title #####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:146
+#, no-wrap
+msgid "Send a mail on password changing"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:148
+#, no-wrap
+msgid ""
+"#!/bin/bash\n"
+"\"\n"
+"domain=$(cat /etc/hostname)\n"
+"\n"
+"message=\"Hello,\n"
+"Your password has been successfully changed on $domain.\n"
+"If you have not asked for changing your password, you probably should contact the admin of $domain.\n"
+"\"\n"
+"\n"
+"echo $message | mail -s \"Your password has been changed on $domain !\" $YNH_USER_USERNAME\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:163
+#, no-wrap
+msgid "post_app_addaccess"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:167
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Triggered after adding a permission to users or groups </i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:169
+msgid ""
+"This hook is run at the end of the command `yunohost user permission add` or "
+"equivalent action in webadmin."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:178
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:200
+msgid "$1: The app name"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:178
+msgid "$2: The list of users added separated by comma"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:178
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:200
+msgid "$3: The name of the sub permission (`main`, `admin`, etc.)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:178
+msgid "$4: The list of groups added separated by comma"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:185
+#, no-wrap
+msgid "post_app_removeaccess"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:189
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Triggered after removing a pemission to users or groups</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:191
+msgid ""
+"This hook is run at the end of the command `yunohost user permission remove` "
+"or equivalent action in webadmin."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:200
+msgid "$2: The list of users removed from the permission separated by comma"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:200
+msgid "$4: The list of groups removed from the permission separated by comma"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:207
+#, no-wrap
+msgid "Domain, certificates and DNS"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:209
+#, no-wrap
+msgid "post_domain_add"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:213
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Triggered at the end of the domain add operation</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:215
+msgid ""
+"This hook is run at the end of the command `yunohost domain add` or "
+"equivalent action in webadmin."
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:216
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:241
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:260
+#, no-wrap
+msgid "No environment variable"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:221
+msgid "$1: The domain added"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:227
+msgid "#####"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:228
+#, no-wrap
+msgid "\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:234
+#, no-wrap
+msgid "post_domain_remove"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:238
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Triggered after removing the domain</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:240
+msgid ""
+"This hook is run at the end of the command `yunohost domain remove` or "
+"equivalent action in webadmin."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:246
+msgid "$1: The domain removed"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:253
+#, no-wrap
+msgid "post_cert_update"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:257
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Triggered after Let's encrypt certificate update</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:259
+msgid ""
+"This hook is run at the end of the command `yunohost domain cert update` or "
+"equivalent action in webadmin."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:265
+msgid "$1: The domain for which we have updated the certificate"
+msgstr ""
+
+#. type: Title #####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:270
+#, no-wrap
+msgid "Restart a service after cert renewal"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:272
+#, no-wrap
+msgid ""
+"#!/bin/bash\n"
+"systemctl restart gemserv\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:279
+#, no-wrap
+msgid "custom_dns_rules"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:283
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Customized your DNS rules for your domains</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:285
+msgid ""
+"This hook is run at the end of the command `yunohost domain dns suggest` or "
+"equivalent action in webadmin."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:287
+msgid "Thanks to This hook you can customize"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:292
+msgid "`base_domain`: the top-level part of the domain"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:292
+msgid "`suffix`: the subdomain part of the domain"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:296
+msgid "$1: The base domain for which we want to build a DNS suggestion"
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:297
+#, no-wrap
+msgid "Waited return"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:300
+msgid "The script should return a JSON array with dictionnary in this format:"
+msgstr ""
+
+#. type: Fenced code block (json)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:301
+#, no-wrap
+msgid ""
+"[\n"
+"    {\n"
+"        'type': 'SRV',\n"
+"        'name': 'stuff.foo.bar',\n"
+"        'value': 'yoloswag',\n"
+"        'ttl': 3600\n"
+"    }\n"
+"]\n"
+msgstr ""
+
+#. type: Title #####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:314
+#, no-wrap
+msgid "Validate Let's Encrypt DNS challenge with a YunoHost DynDNS domain"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:316
+#, no-wrap
+msgid ""
+"#!/bin/bash\n"
+"if [[ \"$1\" == \"XXXX.nohost.me\" ]] ; then\n"
+"    echo \"[\n"
+"        {\n"
+"            'type': 'TXT',\n"
+"            'name': '_acme-challenge',\n"
+"            'value': 'LETSENCRYPT_VALUE',\n"
+"            'ttl': 3600\n"
+"        }\n"
+"    ]\"\n"
+"fi\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:333
+#, no-wrap
+msgid "Apps"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:335
+#, no-wrap
+msgid "post_app_change_url"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:339
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Triggered after an app has changed of URL</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:341
+msgid ""
+"This hook is run at the end of the command `yunohost app change-url` or "
+"equivalent action in webadmin."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:348
+msgid "YNH_APP_OLD_DOMAIN: The old domain of the app"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:348
+msgid "YNH_APP_OLD_PATH: The old path of the app"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:348
+msgid "YNH_APP_NEW_DOMAIN: The new domain of the app"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:348
+msgid "YNH_APP_NEW_PATH: The new path of the app"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:357
+#, no-wrap
+msgid "post_app_upgrade"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:361
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Triggered on app upgrade</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:363
+msgid ""
+"This hook is run at the end of the command `yunohost app upgrade` or "
+"equivalent action in webadmin."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:375
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:414
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:438
+msgid "YNH_APP_ID: The app id (for example nextcloud)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:375
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:414
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:438
+msgid "YNH_APP_INSTANCE_NAME: The app instance name (for example nextcloud__2)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:375
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:414
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:438
+msgid "YNH_APP_INSTANCE_NUMBER: The app instance number (for example 2)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:375
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:414
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:438
+msgid "YNH_APP_MANIFEST_VERSION: The app manifest version (for example 1 or ?)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:375
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:414
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:438
+msgid "YNH_ARCH: The arch as returned by `dpkg --print-architecture`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:375
+msgid ""
+"YNH_APP_UPGRADE_TYPE: The type of upgrade (UPGRADE_PACKAGE, UPGRADE_APP, "
+"UPGRADE_FULL)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:375
+msgid "YNH_APP_MANIFEST_VERSION: The version number"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:375
+msgid ""
+"YNH_APP_CURRENT_VERSION: The version number of the app (in the YunoHost "
+"format)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:375
+msgid "NO_BACKUP_UPGRADE: 1 if we don't want to backup else 0"
+msgstr ""
+
+#. type: Title #####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:382
+#, no-wrap
+msgid "Change a settings in an app config file (unmanaged by config panel)"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:384
+#, no-wrap
+msgid ""
+"#!/bin/bash\n"
+"\n"
+"source /usr/share/yunohost/helpers\n"
+"app=$YNH_APP_INSTANCE_NAME\n"
+"\n"
+"if [[ \"$app\" == \"etherpad_mypads\" ]]; then\n"
+"  ynh_write_var_in_file --file=/var/www/etherpad_mypads/settings.json --key=max --value=100 --after=importExportRateLimiting\n"
+"  systemctl restart etherpad_mypads\n"
+"fi\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:399
+#, no-wrap
+msgid "post_app_install"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:403
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Triggered at the end of an app installation</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:405
+msgid ""
+"This hook is run at the end of the command `yunohost app install` or "
+"equivalent action in webadmin."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:414
+msgid "YNH_APP_ARG_XXXXXXX: The argument of the manifest"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:423
+#, no-wrap
+msgid "post_app_remove"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:427
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Triggered after removing an app</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:429
+msgid ""
+"This hook is run at the end of the command `yunohost app remove` or "
+"equivalent action in webadmin."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:438
+msgid "YNH_APP_PURGE: 1 if the --purge option has been activated"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:447
+#, no-wrap
+msgid "Backup / Restore"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:449
+#, no-wrap
+msgid "backup"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:453
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Add some files to backup</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:455
+msgid ""
+"This hook is run at the end of the command `yunohost backup create` or "
+"equivalent action in webadmin."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:461
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:510
+msgid ""
+"YNH_BACKUP_DIR: The work dir in which we can store temporary data to backup "
+"like database dump"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:461
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:510
+msgid ""
+"YNH_BACKUP_CSV: The CSV in which we add the things to backup. Don't use this "
+"directly and use ynh_backup helper instead."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:461
+msgid "YNH_APP_BACKUP_DIR: To document"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:465
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:514
+msgid ""
+"$1: The work dir in which we can store temporary data to backup like "
+"database dump"
+msgstr ""
+
+#. type: Title #####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:470
+#, no-wrap
+msgid "Backup some files in more (for example your custom hooks)"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:472
+#, no-wrap
+msgid ""
+"#!/bin/bash\n"
+"\n"
+"# Source YNH helpers\n"
+"source /usr/share/yunohost/helpers\n"
+"\n"
+"ynh_backup_dest (){\n"
+"    YNH_CWD=\"${YNH_BACKUP_DIR%/}/$1\"\n"
+"    mkdir -p $YNH_CWD\n"
+"    cd \"$YNH_CWD\"\n"
+"}\n"
+"\n"
+"# Exit hook on subcommand error or unset variable\n"
+"ynh_abort_if_errors\n"
+"\n"
+"# MISC\n"
+"ynh_backup_dest \"conf/custom/misc\"\n"
+"ynh_backup \"/etc/sysctl.d/noipv6.conf\"\n"
+"ynh_backup \"/usr/local/bin/\"\n"
+"\n"
+"ynh_backup \"/etc/yunohost/hooks.d/backup/99-conf_custom\"\n"
+"ynh_backup \"/etc/yunohost/hooks.d/restore/99-conf_custom\"\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:499
+#, no-wrap
+msgid "restore"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:503
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Restore some files</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:505
+msgid ""
+"This hook is run at the end of the command `yunohost backup restore` or "
+"equivalent action in webadmin."
+msgstr ""
+
+#. type: Title #####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:519
+#, no-wrap
+msgid "restore custom files"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:521
+#, no-wrap
+msgid ""
+"#!/bin/bash\n"
+"\n"
+"# Source YNH helpers\n"
+"source /usr/share/yunohost/helpers\n"
+"\n"
+"ynh_restore_dest (){\n"
+"    YNH_CWD=\"${YNH_BACKUP_DIR%/}/$1\"\n"
+"    cd \"$YNH_CWD\"\n"
+"}\n"
+"\n"
+"# Exit hook on subcommand error or unset variable\n"
+"ynh_abort_if_errors\n"
+"\n"
+"# MISC\n"
+"ynh_restore_dest \"conf/custom/misc\"\n"
+"ynh_restore_file \"/etc/sysctl.d/noipv6.conf\"\n"
+"ynh_restore_file \"/usr/local/bin/\"\n"
+"\n"
+"ynh_restore_file \"/etc/yunohost/hooks.d/backup/99-conf_custom\"\n"
+"ynh_restore_file \"/etc/yunohost/hooks.d/restore/99-conf_custom\"\n"
+"\n"
+"\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:548
+#, no-wrap
+msgid "backup_method"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:552
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Define a new way to backup and restore files</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:554
+msgid ""
+"This hook is run during the command `yunohost backup create` or equivalent "
+"action in webadmin."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:556
+msgid "This hook is called several times with different action keywords."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:567
+msgid "$1: The action (\"need_mount\", \"backup\", \"mount\")"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:567
+msgid "$2: The work dir"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:567
+msgid "$3: The name of the backup"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:567
+msgid "$4: The repository in which the backup should be done"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:567
+msgid "$5: An estimation size of the files to backup"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:567
+msgid "$6: A description of the archive"
+msgstr ""
+
+#. type: Title #####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:572
+#, no-wrap
+msgid "A very simple backup on rotationnal disks"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:574
+#, no-wrap
+msgid ""
+"#!/bin/bash\n"
+"set -euo pipefail\n"
+"\n"
+"work_dir=\"$2\"\n"
+"name=\"$3\"\n"
+"repo=\"$4\"\n"
+"size=\"$5\"\n"
+"description=\"$6\"\n"
+"\n"
+"case \"$1\" in\n"
+"  need_mount)\n"
+"    # Set false if your method can itself put files in good place in your archive\n"
+"    true\n"
+"    ;;\n"
+"  backup)\n"
+"    mount /dev/sda1 /mnt/hdd\n"
+"    if [[ \"$(df /mnt/hdd | tail -n1 | cut -d\" \" -f1)\" != \"/dev/sda1\" ]]\n"
+"    then\n"
+"        exit 1\n"
+"    fi\n"
+"    pushd \"$work_dir\"\n"
+"    current_date=$(date +\"%Y-%m-%d_%H:%M\")\n"
+"    cp -a \"${work_dir}\" \"/mnt/hdd/${current_date}_$name\"\n"
+"    popd\n"
+"    umount /mnt/hdd\n"
+"    ;;\n"
+"  *)\n"
+"    echo \"hook called with unknown argument \\`$1'\" >&2\n"
+"    exit 1\n"
+"    ;;\n"
+"esac\n"
+"\n"
+"exit 0\n"
+"\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:613
+#, no-wrap
+msgid "Configuration and firewall"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:615
+#, no-wrap
+msgid "post_iptable_rules"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:619
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Triggered after reloaded the firewall rules</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:621
+msgid ""
+"This hook is run at the end of the command `yunohost firewall reload` or "
+"equivalent action in webadmin."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:628
+msgid "$1: True if upnp has succeeded"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:628
+msgid "$2: True if ipv6 is available"
+msgstr ""
+
+#. type: Title #####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:633
+#, no-wrap
+msgid "Forbid completely the outgoing 25 port except for postfix user"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:635
+#, no-wrap
+msgid ""
+"#!/bin/bash\n"
+"iptables -A OUTPUT -p tcp --dport 25 -m owner --uid-owner postfix -j ACCEPT\n"
+"iptables -A OUTPUT -p tcp --dport 25 -m tcp -j REJECT --reject-with icmp-port-unreachable\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:643
+#, no-wrap
+msgid "conf_regen"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:647
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Change configuration suggested as default config in regen-conf mechanism</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:649
+msgid ""
+"This hook is run during the command `yunohost tools regen-conf` or "
+"equivalent action in webadmin."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:651
+msgid ""
+"This hook is called several times with different actions keywords (pre and "
+"post operations)."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:658
+msgid ""
+"In order to be taken into account, the conf_regen hooks must: 1. be present "
+"in the folder `/etc/yunohost/hooks.d/conf_regen` 2. follow the naming "
+"convention `dd-sss_xxx`.  `dd` are 2 digits and should be higher than the "
+"ones from the default hook (present in `/usr/share/yunohost/hooks/"
+"conf_regen`).  `sss` is a string that defines the kind of hook (eg. `ssh` or "
+"`postfix`).  `xxx` is a free field to help remind what is inside that hook."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:663
+msgid "YNH_DOMAINS: The list of domains managed by YunoHost separated by comma"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:663
+msgid "YNH_MAIN_DOMAINS: The list of main domains separated by comma"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:670
+msgid "$1: The pre or post action"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:670
+msgid "$2: Empty string due to legacy"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:670
+msgid "$3: Empty string due to legacy"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:670
+msgid ""
+"$4: In post mode the list of file which should be modified. In pre mode the "
+"dir in which we store pending configuration"
+msgstr ""
+
+#. type: Title #####
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:675
+#, no-wrap
+msgid "Fix the warning about postfix compatibility mode in postfix logs"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:677
+#, no-wrap
+msgid ""
+"#!/bin/bash\n"
+"\n"
+"action=$1\n"
+"pending_dir=$4\n"
+"postfix_conf=$pending_dir/../postfix/etc/postfix/main.cf\n"
+"\n"
+"[[ \"$action\" == \"pre\" ]] || exit 0\n"
+"[[ -e $postfix_conf ]] || exit 0\n"
+"echo '\n"
+"compatibility_level = 2' >> $postfix_conf\n"
+msgstr ""

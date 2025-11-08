@@ -1,0 +1,104 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/80.core/maindomain.mdx:1
+#, no-wrap
+msgid "How is used the main domain"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/maindomain.mdx:6
+msgid "Here is a list of situations in which we use the main domain concept:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/80.core/maindomain.mdx:15
+msgid ""
+"to expose the web portal: currently the web portal is only reachable through "
+"the main domain address (could be changed for multi tenant support in future)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/80.core/maindomain.mdx:15
+msgid ""
+"to define the hostname of the machine: we believe we do this to avoid some "
+"sudo errors (may be it's not relvant anymore or could be made in /etc/hosts)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/80.core/maindomain.mdx:15
+msgid ""
+"to TLS encrypt SMTP and dovecot: so user should define the main domain in "
+"their email client to avoid TLS warning"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/80.core/maindomain.mdx:15
+msgid ""
+"To be able to do mail forwarding using the main domain as [Sender Rewriting "
+"Scheme Domain](https://en.wikipedia.org/wiki/Sender_Rewriting_Scheme)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/80.core/maindomain.mdx:15
+msgid ""
+"to define default email as (root@ abuse@) but we probably should do it on "
+"all parent domain instead"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/80.core/maindomain.mdx:15
+msgid ""
+"to define `myhostname` in postfix config, used as EHLO and reverseDNS "
+"(refering to [MX Toolbox](https://mxtoolbox.com/emailhealth) test it should "
+"be a FQDN, so a subdomain)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/80.core/maindomain.mdx:15
+msgid ""
+"to generate the self-signed Local Authority: having just one allow to upload "
+"it in a browser and get an x509 authenticated https connexion."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/80.core/maindomain.mdx:15
+msgid ""
+"to define default xmpp DNS field: dns field are only set on the main domain "
+"by default"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/maindomain.mdx:17
+msgid "Finally we can imagine some apps use the main domain too, see"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/80.core/maindomain.mdx:19
+msgid ""
+"[Refs to `main_domain` in the YunoHost-Apps code](https://github.com/search?"
+"q=org%3AYunoHost-Apps+main_domain&type=code)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/80.core/maindomain.mdx:19
+msgid ""
+"[Refs to `current_host` in the YunoHost-Apps code](https://github.com/search?"
+"q=org%3AYunoHost-Apps+current_host&type=code)"
+msgstr ""

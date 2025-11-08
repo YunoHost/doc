@@ -1,0 +1,376 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/community/10.help.mdx:1
+#, no-wrap
+msgid "Looking for help?"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:6
+msgid "import ReactPlayer from 'react-player'"
+msgstr ""
+
+#. type: Title ##
+#: docs/community/10.help.mdx:7
+#, no-wrap
+msgid "How to ask for help"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:10
+msgid ""
+"Come on [the forum](/community/forum) or the [chat rooms](/community/"
+"chat_rooms)! But first, please follow these guidelines :"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/10.help.mdx:11
+msgid "**[Be courteous and patient](#be-courteous-and-patient)**"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/10.help.mdx:11
+msgid ""
+"**[Explain the context](#explain-the-context)** of your request in a "
+"complete but concise way."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/10.help.mdx:11
+msgid "**[Share the error logs with YunoPaste](#show-errors-and-logs)**"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/10.help.mdx:17
+msgid ""
+"Do not ask about your attempted solution but rather your actual problem (see "
+"[the XY problem](https://xyproblem.info/))."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/10.help.mdx:17
+msgid ""
+"[Avoid phrases like](#do-not-be-vague) \"server does not want\", \"the app "
+"does not load\", or other meaningless sentences."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/10.help.mdx:17
+msgid ""
+"Do not trim error messages, but do not paste a wall of illegible unformatted "
+"code either. (Use [YunoPaste](https://paste.yunohost.org))"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/10.help.mdx:17
+msgid ""
+"Do not ask your question like a poll (\"does anyone else succeeded in...?\")."
+msgstr ""
+
+#. type: Title ##
+#: docs/community/10.help.mdx:24
+#, no-wrap
+msgid "You've found a bug ?"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:27
+msgid "Please report bugs on our bugtrackers or contact the developers:"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:35
+#, no-wrap
+msgid ""
+"<div class=\"text--center\">\n"
+"  <Button url=\"https://github.com/yunohost/issues/issues?target=_blank&classes=btn,btn-lg,btn-warning\" color=\"red\"><FAIcon icon='fa-exclamation-circle'/> Report a bug in YunoHost's core</Button>\n"
+"  {' '}\n"
+"  <Button url=\"https://github.com/YunoHost-Apps?target=_blank&classes=btn,btn-lg,btn-warning\" color=\"orange\"><FAIcon icon='fa-exclamation-circle'/> Report a bug in one of YunoHost's apps</Button>\n"
+"  {' '}\n"
+"  <Button url=\"/community/chat_rooms#development-chat-room\" color=\"lightblue\"><FAIcon icon='fa-comment'/> Contact the developers</Button>\n"
+"</div>\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/community/10.help.mdx:36
+#, no-wrap
+msgid "Do's"
+msgstr ""
+
+#. type: Title ###
+#: docs/community/10.help.mdx:38
+#, no-wrap
+msgid "Be courteous and patient"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:41
+msgid ""
+"Help in the chatrooms or on the forum is given by our users and "
+"contributors, all volunteers. You may be in a hurry, you may be exhausted by "
+"fruitless trials or overwhelmed by unpleasant emotions... Have a break, have "
+"a sip of your preferred soothing beverage, breathe and once you've recovered "
+"your composure continue reading. We need you in a good mindset to help you."
+msgstr ""
+
+#. type: Title ###
+#: docs/community/10.help.mdx:42
+#, no-wrap
+msgid "Ask in the right place"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:44
+#, no-wrap
+msgid "Support is only available on [the forum](https://forum.yunohost.org?target=_blank) or our [chatrooms](/community/chat_rooms).  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:46
+msgid "We are also on Mastodon, but we do not offer help on this platform."
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:48
+msgid ""
+"On the forum, make sure you open your request in the proper category, to "
+"maximize your chances of receiving appropriate help:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/10.help.mdx:51
+msgid ""
+"[Support](https://forum.yunohost.org/c/support/6?target=_blank) for issues "
+"when setting up or using YunoHost itself;"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/10.help.mdx:51
+msgid ""
+"[Support apps](https://forum.yunohost.org/c/apps/11?target=_blank) for "
+"issues when setting up or using apps."
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:53
+msgid ""
+"To allow us to help you on the forum, you absolutely need to fill in the "
+"Support request template, it will be displayed upon message creation."
+msgstr ""
+
+#. type: Title ###
+#: docs/community/10.help.mdx:54
+#, no-wrap
+msgid "Explain the context"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:56
+#, no-wrap
+msgid "Your request needs to be stated in a complete but concise way. Explain plainly what you want to achieve and in what manner it is not working for you.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:58
+msgid ""
+"Don't hesitate to provide any information that may be relevant, even things "
+"that may seem obvious, as the person(s) who will be trying to help you may "
+"need this information."
+msgstr ""
+
+#. type: Title ###
+#: docs/community/10.help.mdx:59
+#, no-wrap
+msgid "Show errors and logs"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:62
+msgid ""
+"This is absolutely paramount if YunoHost or a command fails. It always "
+"explains why, through a single error code or a full wall of seemingly "
+"illegible text."
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:64
+msgid ""
+"For the latter, YunoHost provides green \"Share with YunoPaste\" buttons "
+"when something fails or in the Services page of the webadmin. Click on it, "
+"it will open a new web page, and you can then share its URL."
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:65
+#, no-wrap
+msgid "We recommend that you share these logs in their entirety using the link generated by YunoPaste.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:66
+#, no-wrap
+msgid "Avoid extracts from the logs, as decisive information may be elsewhere.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:68
+msgid ""
+"Also, avoid copying and pasting them into the forum, as it's unpleasant to "
+"go through them like that, share the YunoPaste link."
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:71
+#, no-wrap
+msgid ""
+"<center>\n"
+"![YunoPaste button](/img/yunopaste.png)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:74
+#, no-wrap
+msgid ""
+"<ReactPlayer playing loop muted url='/img/yunopaste_install.mp4'\n"
+"    alt='Video showing that the YunoPaste button can be found in the bottom right-hand side of log pages on web admin' />\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:76
+#, no-wrap
+msgid "<br/>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:79
+#, no-wrap
+msgid ""
+"<ReactPlayer playing loop muted url='/img/yunopaste_service.mp4'\n"
+"    alt='Video showing how to share a log from the web admin by going to Tools then Services then selecting the service whose logs you want to share' />\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:82
+#, no-wrap
+msgid ""
+"<br/>\n"
+"</center>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:85
+msgid ""
+"If your issue is not related to an installation or upgrade process but "
+"instead is about an app failing load properly, ideally you can investigate "
+"with your browser console (opened with the F12 key): its Network tab can "
+"show you HTTP error codes (including the infamous 403, 404, 500...), and its "
+"Console can output errors too."
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:87
+msgid "Screenshots are most welcome."
+msgstr ""
+
+#. type: Title ##
+#: docs/community/10.help.mdx:88
+#, no-wrap
+msgid "Don'ts"
+msgstr ""
+
+#. type: Title ###
+#: docs/community/10.help.mdx:90
+#, no-wrap
+msgid "Avoid the infamous [XY Problem](https://xyproblem.info/)"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:93
+msgid ""
+"In a nutshell, explain the root cause of your issue. You may share your "
+"attempted solution, but explaining ***why*** you need that potential "
+"solution is more important."
+msgstr ""
+
+#. type: Title ###
+#: docs/community/10.help.mdx:94
+#, no-wrap
+msgid "Do not be vague"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:97
+msgid ""
+"Do not assume we understand what you are talking about, do not take "
+"shortcuts, do not rephrase, do not simplify, do not trim the error messages."
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:99
+msgid ""
+"Do not write \"it does not work\", \"it does not want\", \"it does not "
+"load\", [\"computer says no\"](https://en.wikipedia.org/wiki/"
+"Computer_says_no)."
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:100
+#, no-wrap
+msgid "Explain what is wrong, and how it is displayed onscreen.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:102
+msgid ""
+"There is, for example, an important difference between a completely blank "
+"page and a blank page with a minimalistic error code."
+msgstr ""
+
+#. type: Title ###
+#: docs/community/10.help.mdx:103
+#, no-wrap
+msgid "Do not beat about the bush"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:106
+msgid ""
+"No need to ask if you can ask. It is a support chat/forum, therefore yes, "
+"you can ask your question."
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:108
+msgid ""
+"Do not ask your question like a poll, as in \"Did anyone managed to get app "
+"XY working?\". If it is not working for you, then explain directly what "
+"issue you got, explain the context, share the logs."
+msgstr ""
+
+#. type: Title ###
+#: docs/community/10.help.mdx:109
+#, no-wrap
+msgid "Do not be an asshole"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/10.help.mdx:111
+msgid "Access to the forum or the chatrooms is a courtesy that can be revoked."
+msgstr ""

@@ -1,0 +1,431 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/50.packaging/20.scripts/index.mdx:1
+#, no-wrap
+msgid "App scripts"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:6
+msgid ""
+"App scripts are the essential logic defining what happens when an app is "
+"`install`ed, `remove`d, `upgrade`d, `backup`ed, or `restore`d. They are "
+"written in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) which is "
+"the same stuff you type in interactive mode in a terminal, though we added a "
+"bunch of custom YunoHost functions that we call `helpers` to standardize "
+"many common operations - for example adding the nginx configuration."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:8
+msgid ""
+"Note that starting from packaging v2, the logic or what happens when an app "
+"is installed, etc. is also contained partially in the resource configuration "
+"in the `manifest.toml`."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:10
+msgid "In the `scripts` folder of an app, you can expect to find:"
+msgstr ""
+
+#. type: Fenced code block (text)
+#: docs/dev/50.packaging/20.scripts/index.mdx:11
+#, no-wrap
+msgid ""
+"manifest.toml\n"
+"scripts\n"
+"├── _common.sh  # Some \"common\" definition, typically custom helpers \n"
+"│               # or global variables used accross all scripts\n"
+"├── install     # The install procedure\n"
+"├── remove      # The remove procedure\n"
+"├── backup      # The backup procedure - in fact it only \"declares\" what should be backed up.\n"
+"│               # No actual real backup happens at this point except dumping SQL databases\n"
+"├── restore     # The restore procedure\n"
+"├── change_url  # Some apps do also provide a change url script, which corresponds to changing\n"
+"│               # the URL endpoint of the app, which may be as simple as changing\n"
+"│               # the nginx conf, or may involve significant changes in the app DB\n"
+"└── upgrade     # The upgrade procedure\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:28
+msgid ""
+"Here is an example of the simple install script for the `helloworld` app:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/20.scripts/index.mdx:29
+#, no-wrap
+msgid ""
+"#!/bin/bash\n"
+"\n"
+"# This is where we load the official YunoHost helpers\n"
+"source /usr/share/yunohost/helpers\n"
+"\n"
+"#=================================================\n"
+"# DOWNLOAD, CHECK AND UNPACK SOURCE\n"
+"# This is where we would usually fetch the .tar.gz archive \n"
+"# from the upstream and extract it into our local install dir\n"
+"#=================================================\n"
+"# At the beginning of each major operation, we call this helper\n"
+"# that creates a progress bar\n"
+"ynh_script_progression --message=\"Setting up source files...\" --weight=1\n"
+"\n"
+"echo \"Hello world!\" > $install_dir/index.html\n"
+"chown -R www-data: \"$install_dir\"\n"
+"\n"
+"#=================================================\n"
+"# NGINX CONFIGURATION\n"
+"# This is where the nginx conf snippet for the app is created using the\n"
+"# configuration template provided in conf/nginx.conf\n"
+"# and added to /etc/nginx/conf.d/$domain.d/$app.conf\n"
+"#=================================================\n"
+"ynh_script_progression --message=\"Configuring nginx web server...\" --weight=1\n"
+"\n"
+"ynh_add_nginx_config\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:59
+msgid ""
+"Note that the scripts are run with the `set -eu` options (except for the "
+"remove script), which means that any failing command or use of non-existing "
+"variable will trigger an error and stop the script execution."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/20.scripts/index.mdx:60
+#, no-wrap
+msgid "Variables available in a script context"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:63
+msgid "Special variables are automatically defined in the context of a script:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:69
+msgid ""
+"`$app` is the app ID. It will typically be the ID from the app's "
+"manifest.toml, for example `helloworld`, but will be `helloworld__2`, `__3` "
+"etc for multi-instance installs."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:69
+msgid ""
+"During install, answers to install questions are automatically available as "
+"bash variables. Typically, `$domain` and `$path` will contain the answers to "
+"the default install questions assuming they are defined in the "
+"`manifest.toml`. Answer values associated to any custom install questions "
+"will be available the same way, e.g. `$prefered_pet` for the custom question "
+"`[install.prefered_pet]` that would be defined in the manifest. Note that - "
+"apart from special questions such as `init_main_permission` or user-provided "
+"passwords - they are also automatically saved as settings (cf. next section)."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:69
+msgid ""
+"During other scripts, all app settings are also loaded and automatically "
+"available."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:69
+msgid ""
+"Note that some settings are automatically created/updated by app ressources. "
+"For example, the `install_dir` setting will automatically be available too "
+"and corresponds to typically `/var/www/$app`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:69
+msgid ""
+"In the `change_url` context, variables called `new_domain`, `new_path`, "
+"`old_domain`, `old_path` will be available, as well as `change_domain` and "
+"`change_path` equal to `0` (false) or `1` (true) depending if the domain / "
+"path changed"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/20.scripts/index.mdx:70
+#, no-wrap
+msgid "Setting system"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:73
+msgid ""
+"Application often need to store long term information in between scripts "
+"triggered by the admin. For this, YunoHost has a key-value store for each "
+"application called \"setting\" and is stored in `/etc/yunohost/apps/$app/"
+"settings.yml`."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:75
+msgid "Apps can interact with this key value store in this way:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/20.scripts/index.mdx:76
+#, no-wrap
+msgid ""
+"# Retrieve a setting into variable \"db_name\"\n"
+"db_name=$(ynh_app_setting_get --app=$app --key=db_name)\n"
+"\n"
+"# Update a setting\n"
+"ynh_app_setting_set --app=$app --key=db_name --value=$db_name\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/20.scripts/index.mdx:84
+#, no-wrap
+msgid "Helper system"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:87
+msgid ""
+"We call helpers a set of custom bash function created by the YunoHost "
+"project to standardize common operations accross all apps. They are all "
+"prefixed with `ynh_`. The full list and documentation of these helpers is "
+"available on [this page](/dev/packaging/scripts/helpers_v2.1). Some of these "
+"helpers are now partially obsolete as they are now handled by the core via "
+"app resources."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:89
+msgid "Here is the list of the major ones:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:103
+msgid "`ynh_app_setting_get` / `ynh_app_setting_set`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:103
+msgid "`ynh_script_progression`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:103
+msgid "`ynh_setup_source`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:103
+msgid "nginx: `ynh_add_nginx_config` / `ynh_remove_nginx_config`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:103
+msgid "php: `ynh_add_fpm_config` / `ynh_remove_fpm_config`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:103
+msgid "systemd: `ynh_add_systemd_config` / `ynh_remove_systemd_config`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:103
+msgid "fail2ban: `ynh_add_fail2ban_config` / `ynh_remove_fail2ban_config`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:103
+msgid "custom: `ynh_add_config`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:103
+msgid "nodejs: `ynh_install_nodejs` / `ynh_use_nodejs`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:103
+msgid "`ynh_exec_warn_less`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:103
+msgid "`ynh_local_curl`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:103
+msgid "`ynh_secure_remove`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/20.scripts/index.mdx:103
+msgid "`ynh_backup` / `ynh_restore_file`"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/20.scripts/index.mdx:104
+#, no-wrap
+msgid "Configuration/template system"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:107
+msgid "App scripts will often need to create a bunch of configuration files."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:109
+msgid ""
+"Configuration templates are canonically stored provided in the `conf/` "
+"folder of the app, such as `nginx.conf`, `extra_php-fpm.conf`, "
+"`systemd.conf`, or `some-custom-app-conf.env` ..."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:111
+msgid ""
+"In these templates, you can use the syntax `__FOOBAR__` which will "
+"automatically be replaced by the variable `$foobar` during runtime, when the "
+"conf is installed via the `ynh_add_*_config` helpers."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:113
+msgid "For example, an app's NGINX conf snippet may look like:"
+msgstr ""
+
+#. type: Fenced code block (text)
+#: docs/dev/50.packaging/20.scripts/index.mdx:114
+#, no-wrap
+msgid ""
+"# The next line starting with '#sub_path_only' is automatically uncommented only when $path is not /\n"
+"#sub_path_only rewrite ^__PATH__$ __PATH__/ permanent;\n"
+"location __PATH__/ {\n"
+"\n"
+"  alias __INSTALL_DIR__/;\n"
+"\n"
+"  # Some headers and tweaks\n"
+"\n"
+"}\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/20.scripts/index.mdx:126
+#, no-wrap
+msgid "App sources"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:129
+msgid ""
+"App sources were historically defined in `conf/app.src` files containing the "
+"URL + checksum of assets to download."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:131
+msgid ""
+"This is now integrated in `manifest.toml` using the `sources` resource, "
+"which pre-download the assets prior to entering the install or upgrade "
+"scripts. The sources can then be effectively deployed using "
+"`ynh_setup_source`."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:133
+msgid ""
+"For example, for YesWiki, the sources are defined in `manifest.toml` using:"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/20.scripts/index.mdx:134
+#, no-wrap
+msgid ""
+"[resources.sources.main]\n"
+"url = \"https://github.com/YesWiki/yeswiki/archive/refs/tags/v4.4.0.tar.gz\"\n"
+"sha256 = \"5ceb12d225c20de2ba3cb4ce483348ed1a8ad5b1789d4f4f8f89dc4871524007\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/20.scripts/index.mdx:141
+msgid ""
+"More infos on the `source` resource in [the resource system documentation](/"
+"dev/packaging/resources)."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/20.scripts/index.mdx:142
+#, no-wrap
+msgid "Common operations (TODO/FIXME)"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/20.scripts/index.mdx:144
+#, no-wrap
+msgid "installing/upgrading app sources"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/20.scripts/index.mdx:146
+#, no-wrap
+msgid "adding configurations"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/20.scripts/index.mdx:148
+#, no-wrap
+msgid "adding a systemd service"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/20.scripts/index.mdx:150
+#, no-wrap
+msgid "curl / automatizing install forms"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/20.scripts/index.mdx:152
+#, no-wrap
+msgid "classic stuff for nodejs apps"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/20.scripts/index.mdx:154
+#, no-wrap
+msgid "classic stuff for php apps"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/20.scripts/index.mdx:156
+#, no-wrap
+msgid "classic stuff for python apps"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/20.scripts/index.mdx:158
+#, no-wrap
+msgid "classic stuff for ??? apps"
+msgstr ""

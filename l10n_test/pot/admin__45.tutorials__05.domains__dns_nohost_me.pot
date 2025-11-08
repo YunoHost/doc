@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title ###
+#: docs/admin/45.tutorials/05.domains/dns_subdomains.mdx:5
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:19
+#, no-wrap
+msgid "Subdomains"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:1
+#, no-wrap
+msgid "Nohost.me domains"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:6
+#: docs/admin/25.domains/index.mdx:24
+msgid ""
+"In order to make self-hosting as accessible as possible, the YunoHost "
+"Project provides a *free* and *automatically configured* domain name "
+"service. By using this service, you won't have to [configure DNS records](/"
+"admin/get_started/post_install/dns_config) yourself, which can be tedious "
+"and technical."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:8
+#: docs/admin/25.domains/index.mdx:26
+msgid "The following (sub)domains are offered:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:12
+#: docs/admin/25.domains/index.mdx:30
+msgid "`whateveryouwant.nohost.me`;"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:12
+#: docs/admin/25.domains/index.mdx:30
+msgid "`whateveryouwant.noho.st`;"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:12
+#: docs/admin/25.domains/index.mdx:30
+msgid "`whateveryouwant.ynh.fr`."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:14
+msgid ""
+"To use this service, you simply have to choose such a domain during the post-"
+"installation set up. It will then be automatically configured by YunoHost!"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:15
+#, no-wrap
+msgid "As a fairness measure, each instance may only have **one such domain** setup at any given time.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:22
+msgid ""
+"The `nohost.me`, `noho.st` and `ynh.fr` domain service allows the creation "
+"of subdomains."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:24
+msgid ""
+"YunoHost allows the installation of applications on subdomains (for example, "
+"having the Nextcloud application accessible from the `cloud.mydomain.org` "
+"address), this feature is also allowed with the `nohost.me`, `noho.st` and "
+"`ynh.fr` domains and so it is possible to have a subdomain such as "
+"`my.application.mydomain.nohost.me`. To create a subdomain on `nohost.me`, "
+"`noho.st` and `ynh.fr`, you just have to add the subdomain to YunoHost like "
+"any other domains."
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:25
+#, no-wrap
+msgid "Adding a `nohost.me`, `noho.st` or `ynh.fr` domain after the post-installation"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:28
+msgid ""
+"If you already did the postinstall and want to add an automatic domain, you "
+"may do so from the \"Domains\" web interface, selecting the option \"I don't "
+"have a domain name...\""
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:30
+msgid "Alternatively, the following commands can be used."
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:31
+#, no-wrap
+msgid ""
+"# Add the domain\n"
+"yunohost domain add whateveryouwant.nohost.me\n"
+"\n"
+"# Subscribe/register to the dyndns service\n"
+"yunohost dyndns subscribe -d whateveryouwant.nohost.me\n"
+"\n"
+"# [ wait ~ 30 seconds ]\n"
+"\n"
+"# Update the DNS conf\n"
+"yunohost dyndns update\n"
+"\n"
+"# Set it as the main domain\n"
+"yunohost domain main-domain -n whateveryouwant.nohost.me\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:47
+#, no-wrap
+msgid "Retrieve a `nohost.me`, `noho.st` or `ynh.fr` domain"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:50
+msgid ""
+"If you reinstall your server and want to use a domain already used "
+"previously, you must request a domain reset on the forum [in the dedicated "
+"thread](https://forum.yunohost.org/t/nohost-domain-recovery/442)."
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:51
+#, no-wrap
+msgid "Change a `nohost.me`, `noho.st` or `ynh.fr` domain"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:54
+msgid ""
+"If you wish to use a different automatic domain, you first have to remove "
+"your present domain registration. This is done in 3 steps:"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:58
+msgid ""
+"Remove the domain from your instance (via webadmin or the `yunohost domain "
+"remove` in the CLI)."
+msgstr ""
+
+#. type: Bullet: '2. '
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:58
+msgid ""
+"Ask for registration removal [in the dedicated forum thread](https://"
+"forum.yunohost.org/t/nohost-domain-recovery/442)."
+msgstr ""
+
+#. type: Bullet: '3. '
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:58
+msgid ""
+"Remove automatic domain configuration files on your server, via CLI only: "
+"`sudo rm /etc/cron.d/yunohost-dyndns && sudo rm -r /etc/yunohost/dyndns`"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/05.domains/dns_nohost_me.mdx:59
+msgid "You may then add a new domain."
+msgstr ""

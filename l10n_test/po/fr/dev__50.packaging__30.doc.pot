@@ -1,0 +1,251 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/50.packaging/30.doc.mdx:1
+#, no-wrap
+msgid "Documenting apps"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:5
+#, no-wrap
+msgid "Properly documenting your app is important for user experience ;).  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:7
+msgid "YunoHost provides several mechanism to display information to users."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/30.doc.mdx:8
+#, no-wrap
+msgid "Extensive description : `doc/DESCRIPTION.md` and `doc/screenshots/`"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:11
+msgid ""
+"You are encouraged to add a `doc/DESCRIPTION.md` which should contain a more "
+"extensive description than the short description contained in "
+"`manifest.toml`. This usually corresponds to listing the key features of the "
+"app."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:12
+#, no-wrap
+msgid "You are also encouraged to add a `.png` or `.jpg` screenshot of what the app looks like in `doc/screenshots/`.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:13
+#, no-wrap
+msgid "The filename is arbitrary but must not start with a dot. Also the file weight should be kept below 512kb.  \n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:16
+msgid ""
+"This description and screenshot will be shown when the admin open the "
+"catalog page for this app and the app info page in the webadmin after the "
+"admin installs this app."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:18
+msgid ""
+"You can add subfolders such as `doc/screenshots/subfolder` to add pictures "
+"in your documentation without showing them on the app info page."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:20
+msgid ""
+"You can also add translated versions of the `.md` file in, for example, `doc/"
+"DESCRIPTION_fr.md`, `_es.md`, `_it.md`, etc."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:22
+msgid ""
+"If your app repository is part of the YunoHost-Apps org, the provided "
+"description will be used to auto-regenerate the README.md of your GitHub "
+"repo via `yunohost-bot`."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/30.doc.mdx:23
+#, no-wrap
+msgid "Specific notes for admins : `doc/ADMIN.md`, `doc/<whatever>.md`"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:26
+msgid ""
+"Sometimes, you may want to ship YunoHost-specific notes regarding the "
+"administration of this app. For example, integrating OnlyOffice inside "
+"Nextcloud."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:28
+#, no-wrap
+msgid "You can do so by adding a `doc/ADMIN.md` file or even a `doc/<whatever>.md` page for each specific topic - and similarly add `_<lang>` suffix for translations.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:30
+msgid ""
+"Note that you can even use the `__FOOBAR__` syntax which will automatically "
+"be replaced with the `foobar` setting."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:32
+msgid ""
+"These notes will be available in the app info page in the webadmin after the "
+"app installation."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/30.doc.mdx:33
+#, no-wrap
+msgid "Pre/post-install notes, pre/post-upgrade notes"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:36
+msgid ""
+"Sometimes, you may want to display important information to the admin at key "
+"points in the app's life cycle. You can do so by providing special markdown "
+"files:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/30.doc.mdx:43
+msgid ""
+"`doc/PRE_INSTALL.md`: displayed right before the installation (for example "
+"to warn that « This app install is expected to take around 30 minutes, be "
+"patient! » or « This app will automatically add 1GB swap to your system »)."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/30.doc.mdx:43
+msgid ""
+"NB: try to not overlap with the anti-feature tags from the catalog (cf. "
+"Publishing your app in the catalog) which can be used to warn that the app's "
+"upstream is alpha-stage or deprecated among other things."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/30.doc.mdx:43
+msgid ""
+"`doc/POST_INSTALL.md`: displayed in a popup after the installation AND a "
+"dismissable note in the webadmin app info view."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/30.doc.mdx:43
+msgid "`doc/PRE_UPGRADE.md`: displayed right before any upgrade of this app."
+msgstr ""
+
+#. type: Bullet: '  - '
+#: docs/dev/50.packaging/30.doc.mdx:43
+msgid ""
+"NB: the pre-upgrade note from the NEW version will be used, not the one from "
+"the installed version."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/30.doc.mdx:43
+msgid ""
+"`doc/POST_UPGRADE.md`: displayed in a popup after the upgrade AND a "
+"dismissable note in the webadmin app info view."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:45
+msgid ""
+"In these files you can use the `__FOOBAR__` syntax which will automatically "
+"be replaced with the `foobar` setting."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:47
+msgid ""
+"These notes are displayed both in WebUI and CLI contexts. In the CLI "
+"context, admin is prompted to press a key to dismiss the note and continue "
+"the install/upgrade process."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/30.doc.mdx:48
+#, no-wrap
+msgid "Display notes only for a specific version"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:53
+msgid ""
+"To display such note only for a specific version, you can create a markdown "
+"file named after the version inside a folder named after the targeted hook "
+"as such: `doc/{hook}.d/{version}.md`, where: - `{hook}` corresponds to "
+"`PRE_UPGRADE` or `POST_UPGRADE` - `{version}` corresponds to the version "
+"defined in the manifest."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:55
+msgid "Example: `doc/PRE_UPGRADE.d/1.2.1~ynh1.md`."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:57
+msgid ""
+"With the above example, the user will be notified with the content of this "
+"markdown file when they upgrade from a lower version of `1.2.1~ynh1` to this "
+"latter version or higher."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/30.doc.mdx:58
+#, no-wrap
+msgid "Localization"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:62
+msgid ""
+"All notes' markdown file can optionally be localized using via a filename "
+"suffix with the following format: `doc/{hook}_{locale}.md` or `doc/{hook}.d/"
+"{version}_{locale}.md`.  Without locale suffix, a file will be considered to "
+"be the English locale (i.e. `doc/PRE_UPGRADE.md` is equivalent to `doc/"
+"PRE_UPGRADE_en.md`)."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/30.doc.mdx:65
+msgid ""
+"Examples: - `doc/POST_INSTALL_fr.md` will be displayed after each install of "
+"the given app where the Yunohost instance's language is set to French.  - "
+"`doc/POST_UPGRADE.d/2025.04.02~ynh1_es.md` will be displayed after upgrading "
+"to version `2025.04.02~ynh1` or newer of the given app where the Yunohost "
+"instance's language is set to Spanish."
+msgstr ""

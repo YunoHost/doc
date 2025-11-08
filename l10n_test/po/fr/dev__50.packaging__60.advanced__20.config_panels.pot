@@ -1,0 +1,1050 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/40.test.mdx:40
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:142
+#: docs/admin/05.get_started/90.guidelines.mdx:28
+msgid "..."
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:1
+#, no-wrap
+msgid "Config Panels"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:6
+msgid ""
+"From a practical point of view, one of the main purpose of config panel is "
+"to \"expose\" settings from the app's configuration files to YunoHost's "
+"admins which are therefore able to manipulate them from a nice web ui. This "
+"is especially relevant for apps which do not provide any sort of admin UI "
+"and expect admins to manually edit the configuration files."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:8
+msgid ""
+"Technically speaking, config panels are used both for apps packaging and "
+"also core features (domain configuration, global settings)"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:9
+#, no-wrap
+msgid "Please: Keep in mind the YunoHost spirit, and try to build your panels in such a way as to expose only really useful, \"high-level\" parameters, and if there are many of them, to relegate those corresponding to rarer use cases to \"Advanced\" sub-sections. Keep it simple, focus on common needs, don't expect the admins to have 3 PhDs in computer science.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:13
+#, no-wrap
+msgid "Community examples"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:18
+msgid ""
+"[Check the example_ynh app toml](https://github.com/YunoHost/example_ynh/"
+"blob/master/config_panel.toml.example) and the [basic `scripts/config` "
+"example](https://github.com/YunoHost/example_ynh/blob/master/scripts/config)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:18
+msgid ""
+"[Check config panels of other apps](https://grep.app/search?"
+"q=version&filter[repo.pattern][0]=YunoHost-Apps&filter[lang][0]=TOML)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:18
+msgid ""
+"[Check `scripts/config` of other apps](https://grep.app/search?"
+"q=ynh_app_config_apply&filter[repo.pattern][0]=YunoHost-Apps&filter[lang]"
+"[0]=Shell)"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:19
+#, no-wrap
+msgid "Overview"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:22
+msgid ""
+"From an app packager perspective, config panels are defined in "
+"`config_panel.toml` at the root of the app repository. It is coupled to the "
+"`scripts/config` script, which may be used to define custom getters/setters/"
+"validations/actions. However, most use cases should be covered automagically "
+"by the core, thus it may not be necessary to define such a `config` script "
+"at all!"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:24
+msgid ""
+"The `config_panel.toml` describes one or several panels, containing "
+"sections, each containing questions generally binded to a params in the "
+"app's actual configuration files."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:26
+msgid ""
+"Let's imagine that the upstream app is configured using this simple "
+"`config.yml` file stored in the app's install directory (typically `/var/www/"
+"$app/config.yml`):"
+msgstr ""
+
+#. type: Fenced code block (yaml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:27
+#, no-wrap
+msgid ""
+"title: 'My dummy app'\n"
+"theme: 'white'\n"
+"max_rate: 10\n"
+"max_age: 365\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:35
+msgid "A simple configuration panel can be created with this syntax:"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:36
+#, no-wrap
+msgid ""
+"version = \"1.0\"\n"
+"[main]\n"
+"\n"
+"    [main.main]\n"
+"        [main.main.title]\n"
+"        ask.en = \"Title\"\n"
+"        type = \"string\"\n"
+"        bind = \":__INSTALL_DIR__/config.yml\"\n"
+"\n"
+"        [main.main.theme]\n"
+"        ask.en = \"Theme\"\n"
+"        type = \"select\"\n"
+"        choices = [\"white\", \"dark\"]\n"
+"        bind = \":__INSTALL_DIR__/config.yml\"\n"
+"\n"
+"    [main.limits]\n"
+"        [main.limits.max_rate]\n"
+"        ask.en = \"Maximum display rate\"\n"
+"        type = \"number\"\n"
+"        bind = \":__INSTALL_DIR__/config.yml\"\n"
+"\n"
+"        [main.limits.max_age]\n"
+"        ask.en = \"Duration of a dummy\"\n"
+"        type = \"number\"\n"
+"        bind = \":__INSTALL_DIR__/config.yml\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:65
+msgid ""
+"Here, a `main` panel is created, containing the `main` and `limits` "
+"sections, containing questions corresponding to app options in `config.yml` "
+"file. Thanks to the `bind` property, all those questions are read/written to "
+"their values in the actual `config.yml` file."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:66
+#, no-wrap
+msgid "Supported questions types and properties"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:69
+msgid ""
+"You can learn more about the full list of option types and their properties "
+"in [their dedicated page](/dev/core/forms)."
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:70
+#, no-wrap
+msgid "The \"`bind`\" statement"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:73
+msgid ""
+"Without any `bind` statement attached to a config panel property, values are "
+"only read/written from/to the app's settings file (`/etc/yunohost/$app/"
+"settings.yml`). This is usually not very useful in practice."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:75
+#, no-wrap
+msgid "Using `bind = \":/some/config/file\"`, one declares that the actual truth used by the app lives in `/some/config/file`. The config panel will read/write the value from/to this file. YunoHost will automagically adapt to classic formats such as YAML, TOML, JSON, INI, PHP, `.env`-like and `.py`. (At least, assuming we're dealing with simple key\\<-\\>value mappings)\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:77
+msgid "A simple real-life example looks like:"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:78
+#, no-wrap
+msgid ""
+"[main.main.theme]\n"
+"type = \"string\"\n"
+"bind = \":__INSTALL_DIR__/config.yml\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:85
+msgid ""
+"In which case, YunoHost will look for something like a key/value, with the "
+"key being `theme` inside the app's `config.yml`."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:87
+msgid ""
+"If the question id in the config panel (here, `theme`) differs from the key "
+"in the actual conf file (let's say it's not `theme` but `css_theme`), then "
+"the syntax becomes:"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:88
+#, no-wrap
+msgid ""
+"[main.main.theme]\n"
+"type = \"string\"\n"
+"bind = \"css_theme:__FINALPATH__/config.yml\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:95
+msgid "You may also encounter situations such as:"
+msgstr ""
+
+#. type: Fenced code block (json)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:96
+#, no-wrap
+msgid ""
+"{\n"
+"    \"foo\": {\n"
+"        \"max\": 123\n"
+"    },\n"
+"    \"bar\": {\n"
+"        \"max\": 456\n"
+"    }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:108
+msgid ""
+"In which case if we want to interface with foo's `max` value, let's write:"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:109
+#, no-wrap
+msgid "bind = \"foo>max:__INSTALL_DIR__/conf.json\"\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:113
+#, no-wrap
+msgid "\"Binding\" to an entire file"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:116
+msgid ""
+"Useful when using a question `file` or `text` for which you want to save the "
+"raw content directly as a file on the system."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:118
+msgid "For example to be able to manipulate an image:"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:119
+#, no-wrap
+msgid ""
+"[panel.section.logo]\n"
+"type = \"file\"\n"
+"bind = \"__INSTALL_DIR__/assets/logo.png\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:126
+msgid "Or an entire text file:"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:127
+#, no-wrap
+msgid ""
+"[panel.section.config_content]\n"
+"type = \"text\"\n"
+"bind = \"__INSTALL_DIR__/config.ini\"\n"
+"default = \"This is the default content\"\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:134
+#, no-wrap
+msgid "Custom getters/setters/validators (a.k.a `bind=null`)"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:137
+msgid "More complex use-case may appear, such as:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:142
+msgid ""
+"you want to expose some \"dynamic\" information in the config panel, such as "
+"computed health status, computed disk usage, dynamic list of options, ..."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:142
+msgid "password handling, where the data may be written but can't be read"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:142
+msgid "the config file format is not supported (e.g. xml, csv, ...)"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:144
+msgid ""
+"You can create specific getter/setters functions inside the `config` script "
+"of the app to customize how the information is read/written. The basic "
+"structure of the script is:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:145
+#, no-wrap
+msgid ""
+"#!/bin/bash\n"
+"source /usr/share/yunohost/helpers\n"
+"\n"
+"ynh_abort_if_errors\n"
+"\n"
+"# Put your getter, setter, validator or action here\n"
+"\n"
+"# Keep this last line\n"
+"ynh_app_config_run $1\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:157
+#, no-wrap
+msgid "Custom getters"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:160
+msgid ""
+"A question's getter is the function used to read the current value/state. "
+"Custom getters are defined using bash functions called "
+"`getter__QUESTION_SHORT_KEY()` which returns data through stdout."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:162
+msgid "Stdout can be generated into one of those formats:"
+msgstr ""
+
+#. type: Bullet: '  1. '
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:166
+msgid "either just the raw value,"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:166
+#, no-wrap
+msgid ""
+"  2. or a YAML message, containing the value and other metadata and properties (for example the `style` of an `alert`, the list of available `choices` of a `select`, etc.)\n"
+"Note that in the first case, if the raw value contains any yaml-sensitive character (e.g. `#` which is interpreted as a comment in yaml), make sure it is returned between escaped quotes (cf. dedicated example below) as it will be [converted to yaml](https://github.com/YunoHost/issues/issues/2501) by YunoHost core in the end.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:169
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Basic example with raw stdout: get the timezone on the system</i></summary>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:171
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:192
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:216
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:238
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:280
+msgid "`config_panel.toml`"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:172
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:281
+#, no-wrap
+msgid ""
+"[main.main.timezone]\n"
+"ask = \"Timezone\"\n"
+"type = \"string\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:179
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:201
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:225
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:248
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:288
+msgid "`scripts/config`"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:180
+#, no-wrap
+msgid ""
+"get__timezone() {\n"
+"    echo \"$(cat /etc/timezone)\"\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:187
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:211
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:233
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:269
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:297
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:92
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:118
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:162
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:184
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:206
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:233
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:252
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:278
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:332
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:356
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:398
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:422
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:446
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:498
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:547
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:612
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:642
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:690
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:54
+#, no-wrap
+msgid "</details>\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:190
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Basic example with raw stdout containing a yaml-sensitive character: return a HTML color code matched in a file</i></summary>\n"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:193
+#, no-wrap
+msgid ""
+"[main.default_colors.background]\n"
+"ask = \"Default background color\"\n"
+"type = \"color\"\n"
+"default = \"#cccccc\"\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:202
+#, no-wrap
+msgid ""
+"get__background() {\n"
+"    current_color=$(grep 'id=\"backgroundColorPicker' \"$install_dir/index.html\" | grep -oP 'value=\"\\K[^\"]*') # e.g. #2B748B\n"
+"    # explicitely add escaped quotes to protect YAML-sensitive comment char ('#')\n"
+"    echo \"\\\"$current_color\\\"\"\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:214
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Basic example with yaml-formated stdout : Display a list of available plugins</i></summary>\n"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:217
+#, no-wrap
+msgid ""
+"[main.plugins.plugins]\n"
+"ask = \"Plugin to activate\"\n"
+"type = \"tags\"\n"
+"choices = []\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:226
+#, no-wrap
+msgid ""
+"get__plugins() {\n"
+"    echo \"choices: [$(ls $install_dir/plugins/ | tr '\\n' ',')]\"\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:236
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Advanced example with yaml-formated stdout : Display the status of a VPN</i></summary>\n"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:239
+#, no-wrap
+msgid ""
+"[main.cube.status]\n"
+"ask = \"Custom getter alert\"\n"
+"type = \"alert\"\n"
+"style = \"info\"\n"
+"bind = \"null\" # no behaviour on\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:249
+#, no-wrap
+msgid ""
+"get__status() {\n"
+"    if [ -f \"/sys/class/net/tun0/operstate\" ] && [ \"$(cat /sys/class/net/tun0/operstate)\" == \"up\" ]\n"
+"    then\n"
+"        cat << EOF\n"
+"style: success\n"
+"ask:\n"
+"  en: Your VPN is running :)\n"
+"EOF\n"
+"    else\n"
+"        cat << EOF\n"
+"style: danger\n"
+"ask:\n"
+"  en: Your VPN is down\n"
+"EOF\n"
+"    fi\n"
+"}\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:270
+#, no-wrap
+msgid "Custom setters"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:273
+msgid ""
+"A question's setter is the function used to set new value/state. Custom "
+"setters are defined using bash functions called "
+"`setter__QUESTION_SHORT_KEY()`. In the context of the setter function, "
+"variables named with the various quetion's short keys are avaible ... for "
+"example the user-specified date for question `[main.main.theme]` is "
+"available as `$theme`."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:275
+msgid ""
+"When doing non-trivial operations to set a value, you may want to use "
+"`ynh_print_info` to inform the admin about what's going on."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:278
+#, no-wrap
+msgid ""
+"<details>\n"
+"<summary><i>Basic example : Set the system timezone</i></summary>\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:289
+#, no-wrap
+msgid ""
+"set__timezone() {\n"
+"    echo \"$timezone\" > /etc/timezone\n"
+"    ynh_print_info \"The timezone has been changed to $timezone\"\n"
+"}\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:298
+#, no-wrap
+msgid "User input validations"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:301
+msgid ""
+"You will sometimes need to validate data provided by the user before saving "
+"it."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:303
+msgid "Simple validation can be achieved using a regex pattern:"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:304
+#, no-wrap
+msgid ""
+"pattern.regexp = '^.+@.+$'\n"
+"pattern.error = 'An email is required for this field'\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:310
+msgid "You can also restrict the accepted values using a choices list."
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:311
+#, no-wrap
+msgid ""
+"choices.foo = \"Foo (some explanation)\"\n"
+"choices.bar = \"Bar (moar explanation)\"\n"
+"choices.loremipsum = \"Lorem Ipsum Dolor Sit Amet\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:318
+msgid "Some other type specific argument exist like"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:324
+#, no-wrap
+msgid ""
+"| type | validation arguments |\n"
+"| -----  | --------------------------- |\n"
+"| `number`, `range` | `min`, `max`, `step` |\n"
+"| `file` | `accept` |\n"
+"| `boolean` | `yes` `no` |\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:326
+msgid "See also : custom validators"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:327
+#, no-wrap
+msgid "Custom validators"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:330
+msgid ""
+"In addition to the \"simple\" validation mechanism (see the 'option' doc), "
+"custom validators can be defined in a similar fashion as custom getters/"
+"setters:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:331
+#, no-wrap
+msgid ""
+"validate__login_user() {\n"
+"    if [[ \"${#login_user}\" -lt 4 ]]\n"
+"    then\n"
+"        echo 'User login is too short, should be at least 4 chars'\n"
+"    fi\n"
+"}\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:340
+#, no-wrap
+msgid "`visible` & `enabled` expression evaluation"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:344
+msgid ""
+"Sometimes we may want to conditionaly display a message or prompt for a "
+"value, for this we have the `visible` prop.  And we may want to allow a user "
+"to trigger an action only if some condition are met, for this we have the "
+"`enabled` prop."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:347
+msgid ""
+"Expressions are evaluated against a context containing previous values of "
+"the current section's options. This quite limited current design exists "
+"because on the web-admin or on the CLI we cannot guarantee that a value will "
+"be present in the form if the user queried only a single panel/section/"
+"option.  In the case of an action, the user will be shown or asked for each "
+"of the options of the section in which the button is present."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:349
+msgid ""
+"The expression has to be written in javascript (this has been designed for "
+"the web-admin first and is converted to python on the fly on the cli)."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:351
+#, no-wrap
+msgid "Available operators are: `==`, `!=`, `>`, `>=`, `<`, `<=`, `!`, `&&`, `||`, `+`, `-`, `*`, `/`, `%` and `match()`.\n"
+msgstr ""
+
+#. type: Title ####
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:352
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:73
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:109
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:144
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:181
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:203
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:224
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:249
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:268
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:312
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:353
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:380
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:419
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:443
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:468
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:517
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:570
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:631
+#: docs/dev/50.packaging/60.advanced/50.hooks.mdx:673
+#: docs/dev/80.core/forms.mdx:55 docs/dev/80.core/forms.mdx:76
+#: docs/dev/80.core/forms.mdx:107
+#, no-wrap
+msgid "Examples"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:354
+#, no-wrap
+msgid ""
+"# simple \"my_option_id\" is thruthy/falsy\n"
+"visible = \"my_option_id\"\n"
+"visible = \"!my_option_id\"\n"
+"# misc\n"
+"visible = \"my_value >= 10\"\n"
+"visible = \"-(my_value + 1) < 0\"\n"
+"visible = \"!!my_value || my_other_value\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:365
+msgid ""
+"For a more complete set of examples, [check the tests at the end of the file]"
+"(https://github.com/YunoHost/yunohost/blob/dev/src/tests/test_questions.py)."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:366
+#, no-wrap
+msgid "match()"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:369
+msgid "For more complex evaluation we can use regex matching."
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:370
+#, no-wrap
+msgid ""
+"[my_string]\n"
+"default = \"Lorem ipsum dolor et si qua met!\"\n"
+"\n"
+"[my_boolean]\n"
+"type = \"boolean\"\n"
+"visible = \"my_string && match(my_string, '^Lorem [ia]psumE?')\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:380
+msgid "Match the content of a file."
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:381
+#, no-wrap
+msgid ""
+"[my_file]\n"
+"type = \"file\"\n"
+"accept = \".txt\"\n"
+"bind = \"/etc/random/lorem.txt\"\n"
+"\n"
+"[my_boolean]\n"
+"type = \"boolean\"\n"
+"visible = \"my_file && match(my_file, '^Lorem [ia]psumE?')\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:393
+msgid "with a file with content like:"
+msgstr ""
+
+#. type: Fenced code block (text)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:394
+#, no-wrap
+msgid "Lorem ipsum dolor et si qua met!\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:398
+#, no-wrap
+msgid "Actions"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:401
+msgid ""
+"\"Actions\" correspond to config panel buttons triggering specific pieces of "
+"code. For example, one could implement an action to trigger a scan of "
+"Nextcloud files, or install a plugin inside an app that does not already "
+"provide an interface to do so. In core config panels, buttons are for "
+"example used to trigger certificate renewal."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:403
+msgid "The most basic example looks like this, using `type = 'button'`:"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:404
+#, no-wrap
+msgid ""
+"[panel.section.my_action]\n"
+"type = \"button\"\n"
+"ask = \"Run action\"\n"
+"# (NB: no need to set `bind` to \"null\")\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:412
+msgid ""
+"And then defining the controller, prefixed by `run__` inside the app's "
+"`config` script:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:413
+#, no-wrap
+msgid ""
+"run__my_action() {\n"
+"    ynh_print_info \"Running 'my_action'...\"\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:420
+msgid ""
+"You may build more complex actions, where the actions uses other form inputs:"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:421
+#, no-wrap
+msgid ""
+"[panel.my_action_section]\n"
+"name = \"Action section\"\n"
+"    [panel.my_action_section.my_repo]\n"
+"    type = \"url\"\n"
+"    bind = \"null\" # this value won't be saved as a setting, it's ephemeral and only relevant for the action\n"
+"    ask = \"gimme a repo link\"\n"
+"\n"
+"    [panel.my_action_section.my_repo_name]\n"
+"    type = \"string\"\n"
+"    bind = \"null\" # this value won't be saved as a setting, it's ephemeral and only relevant for the action\n"
+"    ask = \"gimme a custom folder name\"\n"
+"\n"
+"    [panel.my_action_section.my_action]\n"
+"    type = \"button\"\n"
+"    ask = \"Clone the repo\"\n"
+"    # the button is clickable only once the previous values are provided\n"
+"    enabled = \"my_repo && my_repo_name\"\n"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:441
+#, no-wrap
+msgid ""
+"run__my_action() {\n"
+"    ynh_print_info \"Cloning '$my_repo'...\"\n"
+"    cd /tmp\n"
+"    git clone \"$my_repo\" \"$my_repo_name\"\n"
+"}\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:449
+#, no-wrap
+msgid "Overwrite config panel mechanism"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:452
+msgid "All main configuration helpers are overwritable, example:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:453
+#, no-wrap
+msgid ""
+"ynh_app_config_apply() {\n"
+"\n"
+"    # Stop vpn client\n"
+"    touch /tmp/.ynh-vpnclient-stopped\n"
+"    systemctl stop ynh-vpnclient\n"
+"\n"
+"    _ynh_app_config_apply\n"
+"\n"
+"    # Start vpn client\n"
+"    systemctl start ynh-vpnclient\n"
+"    rm -f /tmp/.ynh-vpnclient-stopped\n"
+"\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:470
+msgid "List of main configuration helpers:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:476
+msgid "`ynh_app_config_get`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:476
+msgid "`ynh_app_config_show`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:476
+msgid "`ynh_app_config_validate`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:476
+msgid "`ynh_app_config_apply`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:476
+msgid "`ynh_app_config_run`"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:478
+msgid ""
+"More info on this can be found by reading [vpnclient_ynh config script]"
+"(https://github.com/YunoHost-Apps/vpnclient_ynh/blob/master/scripts/config)"
+msgstr ""
+
+#. type: Title ##
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:479
+#, no-wrap
+msgid "Important technical notes"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:481
+#, no-wrap
+msgid "Options short keys have to be unique"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:484
+msgid ""
+"For performance reasons, questions short keys have to be unique in all the "
+"`config_panel.toml` file, not just inside its panel or its section. Hence "
+"it's not possible to have:"
+msgstr ""
+
+#. type: Fenced code block (toml)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:485
+#, no-wrap
+msgid ""
+"[manual.vpn.server_ip]\n"
+"[advanced.dns.server_ip]\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:491
+msgid ""
+"In which two questions have \"real variable name\" `is server_ip` and "
+"therefore conflict with each other."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:492
+#, no-wrap
+msgid "Some short keys are forbidden cause it can interfer with config scripts (`old`, `file_hash`, `types`, `binds`, `formats`, `changed`) and you probably should avoid to use common settings name to avoid to bind your question to this settings (e.g. `id`, `install_time`, `mysql_pwd`, `path`, `domain`, `port`, `db_name`, `current_revision`, `admin`)\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:496
+#, no-wrap
+msgid "`bind` versus app settings"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:498
+#, no-wrap
+msgid "IMPORTANT: with the exception of `bind = \"null\"` options, options ids should almost **always** correspond to an app setting initialized/reused during install/upgrade.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/60.advanced/20.config_panels.mdx:502
+msgid ""
+"Not doing so may result in inconsistencies between the config panel "
+"mechanism and the use of ynh_add_config. See also [the relevant issue]"
+"(https://github.com/YunoHost/issues/issues/1973)."
+msgstr ""

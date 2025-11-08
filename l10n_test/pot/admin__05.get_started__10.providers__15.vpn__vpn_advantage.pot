@@ -1,0 +1,224 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Title ##
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:1
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:12
+#, no-wrap
+msgid "Advantages"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:1
+#, no-wrap
+msgid "Advantage of a VPN for self-hosting"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:7
+msgid ""
+"Since setting up a server at home is an uncommon practice, most Internet "
+"connections provided to individuals are unsuitable for this purpose. A net "
+"neutral VPN providing a static IPv4 address and IPv6 addresses can help to "
+"circumvent some limitations or difficulties."
+msgstr ""
+
+#. type: Fenced div block (caution)
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:8
+#, no-wrap
+msgid "Not all existing [VPN providers](/admin/get_started/providers/vpn/) meet these conditions, make sure the one you choose meets them.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:14
+#, no-wrap
+msgid "Plug & Play"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:17
+msgid ""
+"By setting up a VPN on your server, you'll be able to make it accessible to "
+"the rest of the Internet without having to change the configuration of the "
+"router you connect it to. This can be really handy if you are going on "
+"vacation, moving or have an Internet disconnection, as you will be able to "
+"easily connect it to someone you trust without having to configure the "
+"router of the person who is helping you."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:19
+msgid ""
+"In the same way, you save yourself the trouble of opening your router's "
+"ports and bypassing hairpinning."
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:20
+#, no-wrap
+msgid "No micro DNS outages"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:23
+msgid ""
+"If your Internet connection does not have a fixed public IP, you will be "
+"forced to set up a dynamic domain name (Dynamic DNS). This solution may be "
+"acceptable, but the DNS will only be updated at regular intervals (every two "
+"minutes if it is a `noho.st` or `nohost.me` domain name). So there is a "
+"chance that this will cause some display errors in the browser from time to "
+"time, or even that another site will be displayed (the risks are however "
+"reduced because the practice of self-hosting is not widespread)."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:25
+msgid ""
+"With a neutral VPN, this problem is circumvented because the VPN can be "
+"compared to a Virtual Internet connection, which has its own fixed IPv4 "
+"address, so no need to update the domain name."
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:26
+#, no-wrap
+msgid "The case of email"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:29
+msgid ""
+"Email is one of the most complex protocols to self-host, usually it is what "
+"a user self-hosts last. Indeed, it is very easy to find yourself in a "
+"situation where emails sent by the server are refused by the recipient SMTP "
+"servers."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:31
+msgid "To avoid this you need to:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:36
+msgid "configure the reverse DNS of the server's Internet connection (or VPN)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:36
+msgid "a fixed IPv4"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:36
+msgid ""
+"that this IPv4 is removable from all blacklists (notably the IP must not be "
+"on the DUL)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:36
+msgid "to be able to open port 25 (as well as the other SMTP ports)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:38
+msgid ""
+"Unfortunately, none of the most common French ISPs respect all these points."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:40
+msgid ""
+"To overcome this, the use of a VPN respecting these points can be an "
+"alternative."
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:41
+#, no-wrap
+msgid "Trust"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:44
+msgid ""
+"Finally, if you do not want the content of your server's communications to "
+"be spied on by equipment present on your ISP's network, you can use a VPN to "
+"encrypt your communications and deport your trust to a VPN provider. "
+"Remember, since 2015, the government officially deploys black boxes at the "
+"large network operators whose objective is to tap all French digital "
+"communications to preserve the scientific, economic and industrial interests "
+"of France."
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:45
+#, no-wrap
+msgid "Disadvantages"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:47
+#, no-wrap
+msgid "Cost"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:50
+msgid ""
+"A neutral VPN has a cost since the operator who provides it must run a "
+"server and use bandwidth. The prices of the FFDN's associative VPNs are "
+"around 6 € per month."
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:51
+#, no-wrap
+msgid "Packet path"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:54
+msgid ""
+"When you set up a VPN on your server, if you don't set up any particular "
+"configuration, the transfer of a file from a computer on the local network "
+"to the server using the VPN, will go through the end of the VPN i.e. through "
+"the server of the VPN provider."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:56
+msgid "To solve this problem, there are two solutions:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:58
+msgid ""
+"transform the server into a router and connect the home equipments to it, "
+"these equipments will then benefit from the VPN confidentiality too."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/10.providers/15.vpn/vpn_advantage.mdx:58
+msgid ""
+"use the YunoHost server as a DNS resolver when you are at home, in order to "
+"redirect the server's domain names to the local IP rather than the public "
+"IP. This operation can be done either on each equipment or on the router (if "
+"the latter allows it)."
+msgstr ""

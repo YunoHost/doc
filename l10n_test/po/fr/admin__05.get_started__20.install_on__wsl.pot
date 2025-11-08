@@ -1,0 +1,408 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Plain text
+#: docs/admin/15.command_line.mdx:7
+#: docs/admin/05.get_started/10.providers/10.isp/index.mdx:8
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:13
+#: docs/admin/05.get_started/20.install_on/_configuration.mdx:3
+#: docs/admin/05.get_started/40.post_install/10.find_ip.mdx:8
+#: docs/admin/35.email/05.clients.mdx:7
+#: docs/admin/45.tutorials/35.email_configure_relay.mdx:7
+#: docs/admin/40.backups/index.mdx:7
+#: docs/admin/40.backups/15.clone_filesystem.mdx:7
+#: docs/admin/25.domains/certificate.mdx:7 docs/admin/25.domains/index.mdx:7
+#: docs/admin/20.users/groups_and_permissions.mdx:7
+msgid "import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:1
+#, no-wrap
+msgid "Experimental, for testing purposes"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: pagination_next
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:1
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:1
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:1
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:1
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:1
+#, no-wrap
+msgid "admin/get_started/guidelines"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: sidebar_class_name
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:1
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:1
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:1
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:1
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:1
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:1
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:1
+#, no-wrap
+msgid "hidden"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: sidebar_custom_props doc_card_image
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:1
+#, no-wrap
+msgid "/img/icons/logo-wsl.png"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: sidebar_position
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:1
+#, no-wrap
+msgid "8"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:1
+#, no-wrap
+msgid "On WSL"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:16
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:13
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:13
+msgid ""
+"import InstallScript from \"./_install_script.mdx\"; import "
+"InitialConfiguration from \"./_configuration.mdx\";"
+msgstr ""
+
+#. type: Fenced div block (danger)
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:17
+#, no-wrap
+msgid "This setup is mainly meant for local testing by advanced users. Due to limitations on WSL's side (changing IP address, notably), selfhosting from it can be tricky and will not be described here.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:21
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:20
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:18
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:17
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:17
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:14
+#, no-wrap
+msgid "<FAIcon icon=\"fa-list-alt\"/> Pre-requisites"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:27
+msgid "Windows 10 and above"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:27
+msgid "Administration rights"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:27
+msgid ""
+"Windows Subsystem for Linux, installed from the Optional Features menu of "
+"Windows"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:27
+msgid ""
+"*Recommended:* Windows Terminal (Preview) app, installed from the Microsoft "
+"Store. Much better than the standard Terminal, as it offers shortcuts to the "
+"WSL distros."
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:28
+#: docs/admin/45.tutorials/25.external_storage.mdx:6
+#, no-wrap
+msgid "Introduction"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:32
+msgid ""
+"WSL is a nice feature of Windows 10, making Linux pseudo-distributions "
+"available through command line. Let's say pseudo, because even though they "
+"are not really like virtual machines, they rely on virtualization capacities "
+"that make their integration with Windows almost seamless.  Docker for "
+"Windows can now rely on WSL instead of Hyper-V, for example."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:33
+#, no-wrap
+msgid ""
+"Bear in mind, this setup itself is *not* a container of any kind. If something breaks, there is no rollback capability.  \n"
+"You may need to delete the Debian distro altogether and restore it whole.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:38
+#, no-wrap
+msgid "Install Debian"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:41
+msgid ""
+"Let's install YunoHost into its own distro, not altering the default one. In "
+"a PowerShell terminal:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:42
+#, no-wrap
+msgid ""
+"# Let's go in your home directory and prepare the working directories\n"
+"cd ~\n"
+"mkdir -p WSL\\YunoHost\n"
+"# Download the Debian appx package and unzip it\n"
+"curl.exe -L -o debian.zip https://aka.ms/wsl-debian-gnulinux\n"
+"Expand-Archive .\\debian.zip -DestinationPath .\\debian\n"
+"# Import the Debian base into a new distro\n"
+"wsl --import YunoHost ~\\WSL\\YunoHost ~\\debian\\install.tar.gz --version 2\n"
+"# Cleanup\n"
+"rmdir .\\debian -R\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:56
+msgid "You can now access it: run `wsl.exe -d YunoHost`"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:58
+msgid "It is under Debian 9 Stretch, so let's upgrade it:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:59
+#, no-wrap
+msgid ""
+"# In WSL\n"
+"sudo sed -i 's/stretch/bookworm/g' /etc/apt/sources.list`\n"
+"sudo apt update\n"
+"sudo apt upgrade\n"
+"# optional\n"
+"sudo apt full-upgrade\n"
+"# wget needed for later setup\n"
+"sudo apt install wget -y\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:70
+#, no-wrap
+msgid "Prevent WSL from tweaking configuration files"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:73
+msgid "Edit `/etc/wsl.conf` and put the following code in it:"
+msgstr ""
+
+#. type: Fenced code block (text)
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:74
+#, no-wrap
+msgid ""
+"[network]\n"
+"generateHosts = false\n"
+"generateResolvConf = false\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:80
+#, no-wrap
+msgid "Force the use of iptables-legacy"
+msgstr ""
+
+#. type: Fenced div block (warning[FIXME])
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:82
+#, no-wrap
+msgid "YunoHost now uses nftables, these instructions might be out of date.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:88
+msgid ""
+"Somehow the YunoHost post-installation does not like `nf_tables`, the new "
+"software replacing `iptables`.  We can still explicitely use the good ol' "
+"`iptables` though:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:89
+#, no-wrap
+msgid ""
+"# In WSL\n"
+"sudo update-alternatives --set iptables /usr/sbin/iptables-legacy\n"
+"sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:95
+#, no-wrap
+msgid "Install Systemd"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:99
+msgid ""
+"Debian on WSL does not have `systemd`, a service configuration software.  "
+"This is a key element for YunoHost, and for any decent Debian distro "
+"(seriously MS, what the heck). Let's install it:"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:101
+msgid "Install dotNET runtime:"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:111
+#, no-wrap
+msgid ""
+"    ```bash\n"
+"    # In WSL\n"
+"    wget https://packages.microsoft.com/config/debian/12/packages-microsoft-prod.deb -O packages-microsoft-prod.deb\n"
+"    sudo dpkg -i packages-microsoft-prod.deb\n"
+"    sudo apt update\n"
+"    sudo apt install -y apt-transport-https\n"
+"    sudo apt update\n"
+"    sudo apt install -y dotnet-sdk-3.1\n"
+"    ```\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:113
+msgid "Install [Genie](https://github.com/arkane-systems/genie):"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:122
+#, no-wrap
+msgid ""
+"    ```bash\n"
+"    # In WSL\n"
+"    # Add their repository\n"
+"    echo \"deb [trusted=yes] https://wsl-translinux.arkane-systems.net/apt/ /\" > /etc/apt/sources.list.d/wsl-translinux.list\n"
+"    # Install Genie\n"
+"    sudo apt update\n"
+"    sudo apt install -y systemd-genie\n"
+"    ```\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:123
+#, no-wrap
+msgid "Install YunoHost"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:125
+#, no-wrap
+msgid ""
+"# In WSL\n"
+"# Let's switch to the root user, if you were not already\n"
+"sudo su\n"
+"\n"
+"# Initialize the Genie bottle to have systemd running\n"
+"genie -s\n"
+"# Your hostname should have been appended with \"-wsl\"\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:136
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:92
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:66
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:24
+#, no-wrap
+msgid "<InstallScript />\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:137
+#, no-wrap
+msgid "Access the command line"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:140
+msgid "Always call `genie -s` while starting your distro."
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:141
+#, no-wrap
+msgid "wsl -d YunoHost -e genie -s\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:145
+#, no-wrap
+msgid "Backup and restore the distro"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:147
+#, no-wrap
+msgid "Make your first distro backup"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:150
+msgid ""
+"As said before, there is no rollback capability. So let's export your fresh "
+"distro. In PowerShell:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:151
+#, no-wrap
+msgid ""
+"cd ~\n"
+"wsl --export YunoHost .\\WSL\\YunoHost.tar.gz\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:156
+#, no-wrap
+msgid "In case of crash, delete and restore the whole distro"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:158
+#, no-wrap
+msgid ""
+"cd ~\n"
+"wsl --unregister YunoHost\n"
+"wsl --import YunoHost .\\WSL\\YunoHost .\\WSL\\YunoHost.tar.gz --version 2\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:164
+#: docs/admin/05.get_started/20.install_on/virtualbox.mdx:135
+#: docs/admin/05.get_started/20.install_on/arm_board.mdx:93
+#: docs/admin/05.get_started/20.install_on/regular_computer.mdx:171
+#: docs/admin/05.get_started/20.install_on/raspberry_pi.mdx:79
+#: docs/admin/05.get_started/20.install_on/on_top_of_debian.mdx:67
+#: docs/admin/05.get_started/20.install_on/remote_server.mdx:25
+#, no-wrap
+msgid "<InitialConfiguration />\n"
+msgstr ""

@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: description
+#: docs/community/40.sponsors_partners.mdx:1
+#, no-wrap
+msgid "Friends of YunoHost"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/community/40.sponsors_partners.mdx:1
+#, no-wrap
+msgid "Sponsors and partners"
+msgstr ""
+
+#. type: Plain text
+#: docs/community/40.sponsors_partners.mdx:7
+msgid ""
+"In order to advance and make the project works, in addition to the work of "
+"volunteers and donations, YunoHost benefits from the support of sponsors and "
+"partners."
+msgstr ""
+
+#. type: Plain text
+#: docs/community/40.sponsors_partners.mdx:9
+msgid ""
+"Here is a list of YunoHost sponsors, providing infrastructure and services "
+"to the project:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/40.sponsors_partners.mdx:16
+msgid ""
+"[GITOYEN](https://gitoyen.net): association bringing together several "
+"companies and associations acting as a provider of hosting infrastructure "
+"and Internet access."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/40.sponsors_partners.mdx:16
+msgid ""
+"[GLOBENET](http://www.globenet.org): activist association, at the service of "
+"freedom of expression, offering internet services."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/40.sponsors_partners.mdx:16
+msgid ""
+"[LDN-NET](https://ldn-fai.net/) : association for the defense of a free, "
+"neutral and decentralized Internet whose main means of action is to be an "
+"Internet access provider associative and local."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/40.sponsors_partners.mdx:16
+msgid ""
+"[NBS System](https://www.nbs-system.com/): company specialized in hosting, "
+"securing Clouds, outsourcing (Information Systems, SaaS Applications, Web "
+"Platforms) and managed services."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/40.sponsors_partners.mdx:16
+msgid ""
+"[NLNET](https://nlnet.nl/): The NLnet Foundation supports organizations and "
+"people that contribute to an open information society."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/40.sponsors_partners.mdx:16
+msgid ""
+"[TETANEUTRAL-NET](https://tetaneutral.net/): associative Internet access "
+"provider currently operating a radio network in Toulouse and its "
+"surroundings and a hoster."
+msgstr ""
+
+#. type: Plain text
+#: docs/community/40.sponsors_partners.mdx:18
+msgid "Here is a list of YunoHost partners:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/40.sponsors_partners.mdx:20
+msgid ""
+"[FFDN](https://www.ffdn.org/): The FDN federation gathers associative "
+"Internet Access Providers who recognize themselves in common values: "
+"volunteering, solidarity, democratic functioning and non-profit; defense and "
+"promotion of net neutrality."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/community/40.sponsors_partners.mdx:20
+msgid ""
+"[Framasoft](https://framasoft.org/) : popular education association, a group "
+"of friends convinced that an emancipatory digital world is possible, "
+"convinced that it will happen thanks to concrete actions on the ground and "
+"online with you and for you!"
+msgstr ""

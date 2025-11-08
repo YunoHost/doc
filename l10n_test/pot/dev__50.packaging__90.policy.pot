@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Yaml Front Matter Hash Value: sidebar_label
+#: docs/dev/50.packaging/90.policy.mdx:1
+#, no-wrap
+msgid "Catalog policy"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/50.packaging/90.policy.mdx:1
+#, no-wrap
+msgid "YunoHost's policy regarding the apps included in the official catalog"
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/90.policy.mdx:6
+#, no-wrap
+msgid "License"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/90.policy.mdx:9
+msgid ""
+"The rule of thumb is that we only include software licensed under a free-"
+"software license in the official app catalog."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/90.policy.mdx:11
+msgid ""
+"As YunoHost grew, some gray area cases appeared with software that would be "
+"relevant for [YunoHost's goal](/community/faq#whats-yunohost-goal) and match "
+"its spirit, while not being strictly-speaking free-software. These "
+"applications may be:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/90.policy.mdx:16
+msgid ""
+"promoting the use of centralized services, though precisely to avoid their "
+"direct usage ;"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/90.policy.mdx:16
+msgid "relying on non-free dependencies or assets ;"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/90.policy.mdx:16
+msgid ""
+"released under \"new\" post-open-source or ethical-yet-not-free licenses "
+"such as the [ACSL](https://anticapitalist.software/), the [HL3](https://"
+"firstdonoharm.dev/) or the [CoopCycle License](https://github.com/coopcycle/"
+"coopcycle-web/blob/master/LICENSE) ;"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/90.policy.mdx:16
+msgid ""
+"released under \"open-core\" models, trademark clauses, or business-related "
+"license clauses (such as the BSL) which are meant to ensure the project's "
+"sustainability while remaining ethical."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/90.policy.mdx:18
+msgid ""
+"While we believe free software principles are an essential footstep towards "
+"[YunoHost's goal](/community/faq#whats-yunohost-goal), we believe they are a "
+"means and not an end. We reject the purist vision according to which "
+"software is either free or proprietary, and the flawed premise that "
+"technology is fundamentally neutral. We believe that ethical software and "
+"technology can and should exist beyond the definition of free software layed "
+"40 years ago (see also: [Freedom isn't Free](https://logicmag.io/failure/"
+"freedom-isnt-free/) and [Post-Open Source](https://www.boringcactus.com/"
+"2020/08/13/post-open-source.html))."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/90.policy.mdx:20
+msgid ""
+"The project therefore allows the inclusion inside the official app catalog, "
+"***on a case-by-case basis***, of apps which does not qualify as \"free "
+"software\", yet considered to be ethical and worthy of interest for "
+"[YunoHost's goal](/community/faq#whats-yunohost-goal). Such apps are tagged "
+"in the catalog, such that an explicit message displayed before their "
+"installation."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/90.policy.mdx:22
+msgid ""
+"If you notice an app is missing such a tag/disclaimer, feel free to open a "
+"discussion or pull requet on [the app catalog](https://github.com/YunoHost/"
+"apps/)."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/90.policy.mdx:24
+msgid ""
+"If you run YunoHost for your business, you are responsible for doing your "
+"due diligence by checking the licenses of the software you want to install "
+"on your server."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/90.policy.mdx:25
+#, no-wrap
+msgid "Nature of the app"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/90.policy.mdx:28
+msgid ""
+"In addition, the YunoHost team decided to not include apps in the official "
+"catalog if they:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/90.policy.mdx:34
+msgid ""
+"are overly complex to deploy or resource-hungry compared to their features ;"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/90.policy.mdx:34
+msgid "only apply to super niche use cases ;"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/90.policy.mdx:34
+msgid "promote cryptocurrencies ;"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/90.policy.mdx:34
+msgid ""
+"promote AI for purposes deemed futile compared to the ecological and "
+"sociological costs involved behind the scenes ;"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/90.policy.mdx:34
+msgid "promote shady activities such as tracking/stalking people."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/90.policy.mdx:36
+msgid ""
+"The team may make exceptions to these criteria on a case-by-case basis, on "
+"its own volition. The team may also amend this list with other criteria in "
+"the future."
+msgstr ""
+
+#. type: Title ###
+#: docs/dev/50.packaging/90.policy.mdx:37
+#, no-wrap
+msgid "What to do if you're not happy with these criterias"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/50.packaging/90.policy.mdx:41
+msgid ""
+"These editorial choices do not mean that apps infringing them cannot be "
+"created, merely that they won't be included in the official catalog.  You "
+"are free to:"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/90.policy.mdx:44
+msgid ""
+"[Develop your own application packages](/dev/packaging/) (though support may "
+"be limited due to aforementioned criteria)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/90.policy.mdx:44
+msgid ""
+"Manually install any application by using `yunohost app install "
+"<url_to_git_repo_ynh>`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/50.packaging/90.policy.mdx:44
+msgid ""
+"Create and add a custom catalog source within `/etc/yunohost/"
+"apps_catalog.yml`"
+msgstr ""

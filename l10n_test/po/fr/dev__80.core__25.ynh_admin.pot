@@ -1,0 +1,101 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Plain text
+#: docs/dev/80.core/20.ynh_core.mdx:7 docs/dev/80.core/25.ynh_admin.mdx:6
+msgid "When using `ynh-dev`, run in the container:"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/dev/80.core/25.ynh_admin.mdx:1
+#, no-wrap
+msgid "Working on the YunoHost web admin"
+msgstr ""
+
+#. type: Fenced code block
+#: docs/dev/80.core/25.ynh_admin.mdx:7
+#, no-wrap
+msgid "./ynh-dev use-git yunohost-admin\n"
+msgstr ""
+
+#. type: Fenced div block (danger[FIXME])
+#: docs/dev/80.core/25.ynh_admin.mdx:11
+#, no-wrap
+msgid "The rest of this section is completely outdated and should be rewritten from scratch...\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/25.ynh_admin.mdx:17
+msgid ""
+"It launches gulp, such as each time you modify sources, it recompiles the "
+"code and you can use it by refreshing (Ctrl+F5) your web administration."
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/25.ynh_admin.mdx:19
+msgid "To stop the command, just do Ctrl+C."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/dev/80.core/25.ynh_admin.mdx:20
+#, no-wrap
+msgid ""
+"You might need to force-clear the cache of your browser sometimes to refresh\n"
+"the JavaScript and/or HTML (so each time you edit something in `js` or `views`).\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/dev/80.core/25.ynh_admin.mdx:34
+msgid ""
+"The web interface uses the API to interact with YunoHost. The API commands/"
+"requests are also defined via the actionsmap. For instance, accessing the "
+"page `https://domain.tld/yunohost/api/users` corresponds to a `GET /users` "
+"requests on the YunoHost API. It is mapped to the function `user_list()`. "
+"Accessing the URL should display the JSON returned by this function. 'GET' "
+"requests are typically meant to ask information to the server.  'POST' "
+"requests are meant to ask the server to edit/change some information, or to "
+"execute some actions."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/80.core/25.ynh_admin.mdx:39
+msgid ""
+"`js/yunohost/controllers` contains the JavaScript parts, and define which "
+"requests to make to the API when loading a specific page of the interface, "
+"and how to process the data to generate the page, using templates."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/80.core/25.ynh_admin.mdx:46
+msgid ""
+"`views` contains the various templates for the pages of the interface. In "
+"the template, data coming from the JavaScript part can be used with the "
+"syntax `{{some-variable}}`, which will be replaced when building/accessing "
+"the page.  It is also possible to have conditions using the [handlebars.js]"
+"(http://handlebarsjs.com) syntax: `{{#if some-variable}}<p>Some conditional "
+"HTML code here !</p>{{/if}}`"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/dev/80.core/25.ynh_admin.mdx:50
+msgid ""
+"For internationalized strings, use `y18n.t('some-string-code')` in the "
+"JavaScript, or `{{t 'some-string-code'}}` in the HTML template, and put your "
+"string in `locales/en.json`. Don't edit other locales files, this will be "
+"done using [Weblate](https://translate.yunohost.org/)!"
+msgstr ""

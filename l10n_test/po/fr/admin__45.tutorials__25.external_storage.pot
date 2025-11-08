@@ -1,0 +1,623 @@
+# French translations for PACKAGE package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2025-11-05 06:40+0100\n"
+"PO-Revision-Date: 2025-11-05 06:40+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Title ##
+#: docs/admin/05.get_started/20.install_on/wsl.mdx:28
+#: docs/admin/45.tutorials/25.external_storage.mdx:6
+#, no-wrap
+msgid "Introduction"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: sidebar_label
+#: docs/admin/45.tutorials/25.external_storage.mdx:1
+#, no-wrap
+msgid "Add external storage"
+msgstr ""
+
+#. type: Yaml Front Matter Hash Value: title
+#: docs/admin/45.tutorials/25.external_storage.mdx:1
+#, no-wrap
+msgid "Adding an external storage to your server"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:9
+msgid ""
+"Apart from the monitoring system that ensures that your system's partitions "
+"are not too small, YunoHost does not currently deal with the organisation of "
+"your partitions and disks."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:11
+msgid ""
+"If you are hosting on an ARM card with an SD card or on a server with a "
+"small SSD drive, you may, for reasons of reliability or lack of space, want "
+"to add a drive or drives to your server."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/45.tutorials/25.external_storage.mdx:12
+#, no-wrap
+msgid "If you have no space left on your server at all, you can now type `apt clean` to try and save some space while you clean up or follow the steps below.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:17
+msgid ""
+"Below you will find explanations on how to move your data to a hard disk in "
+"a correct way with a minimum of impact on the functioning of YunoHost. This "
+"operation can be done during installation or, afterwards, when your storage "
+"needs have increased or when you no longer trust your SD card."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/admin/45.tutorials/25.external_storage.mdx:18
+#, no-wrap
+msgid "The method presented here will first mount the single partition of the hard disk, then use one or more sub-folders of this disk to create different mount points on your system tree. This method is preferable to the use of symbolic links, as the latter may interfere with some applications including the YunoHost backup system. You could also choose to mount partitions rather than subfolders, but it is sometimes difficult to estimate the weight of a folder in advance.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/45.tutorials/25.external_storage.mdx:22
+#, no-wrap
+msgid "<FAIcon icon=\"fa-list-alt\"/> Prerequisites"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/25.external_storage.mdx:25
+msgid ""
+"Have some time at a moment when your server users can accept a shutdown. The "
+"steps to be performed, even if they are relatively simple, can sometimes "
+"seem technical and require in any case **to take your time**."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/25.external_storage.mdx:27
+msgid ""
+"Know how to connect as root on your system, for example via [SSH](/admin/"
+"command_line). (Note: while logged in as `admin`, you can root with `sudo "
+"su`)"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/25.external_storage.mdx:29
+msgid "Know the basic commands `cd`, `ls`, `mkdir`, `rm`."
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/25.external_storage.mdx:31
+msgid "Have a backup in case things don't work out as planned"
+msgstr ""
+
+#. type: Bullet: '- '
+#: docs/admin/45.tutorials/25.external_storage.mdx:33
+msgid ""
+"Have extra storage (SSD, hard drive, USB stick) connected to your server via "
+"USB or SATA"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/45.tutorials/25.external_storage.mdx:34
+#, no-wrap
+msgid "1. Identify directories to be moved"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:37
+msgid ""
+"The `ncdu /` command allows you to browse the folders on your server to see "
+"how big they are."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:39
+msgid ""
+"Below is an explanation of some of the paths that can take up weight with "
+"some comments to help you reduce their weight or choose to move them."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:53
+#, no-wrap
+msgid ""
+"| Paths | Contents | Tips |\n"
+"|--------|---|---|\n"
+"| `/home` | User folders accessible via SFTP | Moveable to a hard disk |\n"
+"| `/home/yunohost.backup`       | YunoHost's backups  | Depending on your backup strategy, you may want to place this folder on a separate drive from your data or databases. |\n"
+"| `/home/yunohost.app`          |Heavy data from YunoHost applications (nextcloud, matrix...)|Moveable to a hard disk |\n"
+"| `/home/yunohost.multimedia` | Heavy data shared between several applications | Moveable to a hard disk |\n"
+"| `/var/lib/mysql` | Database used by applications | Ideally leave on SSD for performance reasons |\n"
+"| `/var/lib/postgresql` | Database used by applications | Ideally leave on SSD for performance reasons |\n"
+"| `/var/mail` | User e-mails | Movable to a hard disk |\n"
+"| `/var/www` | Program of installed web applications | Ideally leave on SSD for performance reasons |\n"
+"| `/var/log` | Event logs (pages consulted, connection attempts, hardware errors...). | This directory should not take up too much space, if it grows quickly, it may be a looping error that should be resolved. |\n"
+"| `/opt` | Program and dependency of some YunoHost applications. | Ideally leave it on the SSD for performance reasons. For nodejs applications it is possible to do some cleanup of unused versions. |\n"
+"| `/boot` | Kernels and boot files | Do not move unless you know what you are doing. It can happen that too many kernels are kept, it is possible to do some cleanup. |\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/45.tutorials/25.external_storage.mdx:54
+#, no-wrap
+msgid "2. Connect and identify the disk"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:57
+msgid ""
+"Start by connecting your disk to your system. You must then identify the "
+"name under which the disk is designated by the system."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:59
+msgid "To do this, use the command :"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:60
+#, no-wrap
+msgid "lsblk\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:65
+msgid "It may return something like :"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:66
+#, no-wrap
+msgid ""
+"NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT\n"
+"sda           8:0    0 931.5G  0 disk\n"
+"└─sda1        8:1    0 931.5G  0 part\n"
+"mmcblk0     179:0    0  14.9G  0 disk\n"
+"├─mmcblk0p1 179:1    0  47.7M  0 part /boot\n"
+"└─mmcblk0p2 179:2    0  14.8G  0 part /\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:76
+msgid ""
+"Here, `mmcblk0` corresponds to a 16GB SD card (you can see that the "
+"`mmcblk0p1` and `mmcblk0p2` partitions correspond to the `/boot` partition "
+"and the `/` system partition). The hard drive connected corresponds to `sda` "
+"which is about 1TB, and contains a single `sda1` partition which is not "
+"mounted (no \"MOUNTPOINT\")."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/45.tutorials/25.external_storage.mdx:77
+#, no-wrap
+msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> On another system, it may be that your system is installed on `sda` and your disk is then `sdb` for example.\n"
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/admin/45.tutorials/25.external_storage.mdx:81
+#, no-wrap
+msgid "If the size of the disk is not enough for you to recognise it, you can unplug the disk, run the `lsblk` command, then plug the disk back in, run `lsblk` and deduce the differences.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/45.tutorials/25.external_storage.mdx:85
+#, no-wrap
+msgid "3. (Optional) Format the disk"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:88
+msgid ""
+"This operation is optional if your disk is already formatted with a file "
+"system supported by linux (so not NTFS or FAT32)."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:90
+msgid "Let's create a partition on the disk:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:91
+#, no-wrap
+msgid "fdisk /dev/YOUR_DISK\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:96
+msgid ""
+"then enter `n`, `p`, `1`, `Enter`, `Enter`, and `w` successively to create a "
+"new partition."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:98
+msgid ""
+"Check with `lsblk` that you have your disk containing a single partition."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:100
+msgid "Before you can use your disk, it must be formatted."
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/45.tutorials/25.external_storage.mdx:101
+#, no-wrap
+msgid "<FAIcon icon=\"fa-exclamation-triangle\"/> **Formatting a disk means deleting all the data on it! Be careful not to get the name wrong, as this may result in formatting a different disk than the one you want! In the example given earlier, it was `/dev/sda`. If your disk is already \"clean\", you can skip this step.\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:106
+msgid "To format the :"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:107
+#, no-wrap
+msgid ""
+"mkfs.ext4 /dev/YOUR_DISK1\n"
+"# then 'y' to validate\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:113
+msgid ""
+"Replace `YOUR_DISK1` with the name of the first partition on the disk e.g. "
+"`sda1`."
+msgstr ""
+
+#. type: Fenced div block (tip)
+#: docs/admin/45.tutorials/25.external_storage.mdx:114
+#, no-wrap
+msgid "It is possible to adapt this step, for example to create a raid 1 volume (mirrored disks) or encrypt the folder.\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/45.tutorials/25.external_storage.mdx:118
+#, no-wrap
+msgid "4. Mount the disk"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:121
+msgid ""
+"Unlike Windows where disks are accessed with letters (C:/), under Linux, "
+"disks are made accessible via the file tree. \"Mounting\" a disk means "
+"making it effectively accessible in the file tree. We will arbitrarily "
+"choose to mount the disk in `/mnt/hdd` but you can name it differently (e.g. "
+"`/mnt/disk` ...)."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:123
+msgid "Let's start by creating the directory :"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:124
+#, no-wrap
+msgid "mkdir /mnt/hdd\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:129
+msgid "Then we can mount the disk manually with :"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:130
+#, no-wrap
+msgid "mount /dev/YOUR_DISK1 /mnt/hdd\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:135
+msgid ""
+"(Here, `/dev/YOUR_DISK1` corresponds to the first partition on the disk)"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/45.tutorials/25.external_storage.mdx:136
+#, no-wrap
+msgid "5. Mount a `/mnt/hdd` folder on one of the folders you want to move data from"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:139
+msgid ""
+"Here we will consider that you want to move the big data of the applications "
+"which are in `/home/yunohost.app` and the mails on your hard disk."
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/25.external_storage.mdx:140
+#, no-wrap
+msgid "5.1 Creating subfolders on the disk"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:143
+msgid "To begin with, we create a folder on the hard drive"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:144
+#, no-wrap
+msgid ""
+"mkdir -p /mnt/hdd/home/yunohost.app\n"
+"mkdir -p /mnt/hdd/var/mail\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/25.external_storage.mdx:149
+#, no-wrap
+msgid "5.2 Switching to maintenance mode"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:152
+msgid ""
+"Then, ideally, we switch to maintenance mode the applications that might be "
+"writing data."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:154
+msgid "Example, for nextcloud:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:155
+#, no-wrap
+msgid "sudo -u nextcloud /usr/bin/php /var/www/nextcloud/occ maintenance:mode --on\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:160
+msgid "Example, for mail:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:161
+#, no-wrap
+msgid ""
+"systemctl stop postfix\n"
+"systemctl stop dovecot\n"
+msgstr ""
+
+#. type: Fenced div block (warning)
+#: docs/admin/45.tutorials/25.external_storage.mdx:166
+#, no-wrap
+msgid "If you wish to move databases such as mariadb (mysql), it is imperative that you stop the services for these databases otherwise it is almost certain that your data will be corrupted.\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/25.external_storage.mdx:170
+#, no-wrap
+msgid "5.3 Creating the mount points"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:173
+msgid ""
+"Next, we will rename the original folder and create an empty eponymous "
+"folder."
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:174
+#, no-wrap
+msgid ""
+"mv /home/yunohost.app /home/yunohost.app.bkp\n"
+"mkdir /home/yunohost.app\n"
+"mv /var/mail /var/mail.bkp\n"
+"mkdir /var/mail\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:182
+msgid ""
+"We can then use the `mount --bind` command to mount the folder on our hard "
+"drive to the new empty location in the tree."
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:183
+#, no-wrap
+msgid ""
+"mount --bind /mnt/hdd/home/yunohost.app /home/yunohost.app\n"
+"mount --bind /mnt/hdd/var/mail /var/mail\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/25.external_storage.mdx:188
+#, no-wrap
+msgid "5.4 Copying the data"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:191
+msgid ""
+"Next, we copy the data, keeping all the folder and file properties. This "
+"operation can take a little time, with another terminal, you can control the "
+"evolution by observing the weight associated with the mount point with `df "
+"-h`"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:192
+#, no-wrap
+msgid ""
+"cp -a /home/yunohost.app.bkp/. /home/yunohost.app/\n"
+"cp -a /var/mail.bkp/. /var/mail/\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:198
+msgid "Once this is done, check with `ls` that the contents are there:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:199
+#, no-wrap
+msgid ""
+"ls -la /home/yunohost.app/\n"
+"ls -la /var/mail/\n"
+msgstr ""
+
+#. type: Title ###
+#: docs/admin/45.tutorials/25.external_storage.mdx:204
+#, no-wrap
+msgid "5.5 Exiting maintenance mode"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:207
+msgid ""
+"From here you can stop maintenance mode, the command below is to be adapted "
+"depending on the services you have stopped."
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:208
+#, no-wrap
+msgid ""
+"sudo -u nextcloud /usr/bin/php /var/www/nextcloud/occ maintenance:mode --off\n"
+"systemctl start postfix\n"
+"systemctl start dovecot\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:215
+msgid ""
+"From this point on, your services are running with their data on disk, so "
+"it's time to test to see how much of an impact this has on performance "
+"(especially if you are using USB 2.0)."
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/45.tutorials/25.external_storage.mdx:216
+#, no-wrap
+msgid "6. Automatically mount on boot"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:219
+msgid ""
+"So far we have manually mounted the disk and subfolders. However, it is "
+"necessary to configure the system to automatically mount the disk after a "
+"boot."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:221
+msgid ""
+"If your tests are successful, you should keep the mount points, otherwise "
+"you should hurry up and go back to maintenance first."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:223
+msgid ""
+"To begin with, let's find the UUID (universal identifier) of our disk with :"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:224
+#, no-wrap
+msgid "lsblk -f\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:229
+msgid ""
+"Let's add a line to the `/etc/fstab` file that handles the mounting of disks "
+"at boot time. So we open the file with `nano` :"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:230
+#, no-wrap
+msgid "nano /etc/fstab\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:235
+msgid "Then add these lines to the end of the file:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:236
+#, no-wrap
+msgid ""
+"UUID=\"cea0b7ae-2fbc-4f01-8884-3cb5884c8bb7\" /mnt/hdd ext4 defaults,nofail 0 0\n"
+"/mnt/hdd/home/yunohost.app /home/yunohost.app none defaults,bind 0 0\n"
+"/mnt/hdd/var/mail /var/mail none defaults,bind 0 0\n"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:243
+msgid ""
+"(this line must be adapted according to the previous information and choices)"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:245
+msgid "Use Ctrl+X then `y` to save."
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:247
+msgid ""
+"You can then try rebooting the system to check if the disk and subfolders "
+"are mounted automatically."
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/45.tutorials/25.external_storage.mdx:248
+#, no-wrap
+msgid "7. Clean up old data"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:251
+msgid ""
+"Once your new setup is validated, you can proceed to delete the old data "
+"from step 5.3:"
+msgstr ""
+
+#. type: Fenced code block (bash)
+#: docs/admin/45.tutorials/25.external_storage.mdx:252
+#, no-wrap
+msgid ""
+"rm -Rf /home/yunohost.app.bkp\n"
+"rm -Rf /var/mail.bkp\n"
+msgstr ""
+
+#. type: Title ##
+#: docs/admin/45.tutorials/25.external_storage.mdx:257
+#, no-wrap
+msgid "🎉 Congratulations!"
+msgstr ""
+
+#. type: Plain text
+#: docs/admin/45.tutorials/25.external_storage.mdx:259
+msgid ""
+"If you have made it this far without damage, you now have a server that "
+"takes advantage of one or more storage disks."
+msgstr ""
