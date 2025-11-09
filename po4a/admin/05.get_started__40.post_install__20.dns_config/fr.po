@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 21:01+0100\n"
-"PO-Revision-Date: 2025-11-09 21:16+0000\n"
+"PO-Revision-Date: 2025-11-09 23:48+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/"
 "doc-experimental/05get_started__40post_install__20dns_config/fr/>\n"
@@ -33,19 +33,20 @@ msgstr "Configuration de la zone DNS"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:9
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "DNS (domain name system) is a system that converts human-readable addresses\n"
 "(domain names) into machine-understandable addresses (IP). For your server to be\n"
 "easily accessible by human beings, and for some services like mail to work\n"
 "properly, DNS must be configured.\n"
 msgstr ""
-"DNS (système de nom de domaine) est un élément essentiel d'Internet qui permet\n"
-"de convertir des adresses compréhensibles par les êtres humains (les noms de\n"
-"domaines) en adresses compréhensibles par la machine (les adresses IP). Pour que\n"
-"votre serveur soit facilement accessible par d'autres êtres humains, et pour\n"
-"que certains services comme le mail fonctionnent correctement, il est nécessaire\n"
-"de configurer la zone DNS de votre domaine.\n"
+"Le DNS (système de nom de domaine) est un élément essentiel d'Internet qui "
+"permet de convertir des adresses compréhensibles par les êtres humains\n"
+"(les noms de domaines) en adresses compréhensibles par la machine "
+"(les adresses IP). Pour que votre serveur soit\n"
+"facilement accessible par d'autres êtres humains, et pour que certains "
+"services comme le mail fonctionnent\n"
+"correctement, il est nécessaire de configurer la zone DNS de votre domaine.\n"
 
 #. type: Plain text
 #: docs/admin/05.get_started/40.post_install/20.dns_config.mdx:14
