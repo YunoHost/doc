@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 21:01+0100\n"
-"PO-Revision-Date: 2025-11-09 21:16+0000\n"
+"PO-Revision-Date: 2025-11-09 23:48+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/"
 "doc-experimental/55upgrade__120-bookworm__index/fr/>\n"
@@ -38,12 +38,15 @@ msgstr ""
 #. type: Bullet: '- '
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:14
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:14
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Please don't rush into thinking that you should need to reinstall your system from scratch thinking it would be \"simpler\" (sigh). (A common attitude is to be willing to reinstall a server at the slightest complication...). Instead, if you happen to run into issues, we encourage you to try to investigate and understand what's going on and [reach for help on the chat and the forum](/community/help).\n"
 msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Ne vous précipitez pas à vouloir faire une réinstallation de votre système en pensant que cela serait \"plus simple\" (sigh). (Une attitude qui revient régulièrement est de vouloir réinstaller son système à la moindre complication...). À la place, si vous rencontrez des problèmes, nous vous encourageons à investiguer, chercher à comprendre et [trouver de l'aide sur le chat ou le forum](/community/help).\n"
+"Ne vous précipitez pas à vouloir faire une réinstallation de votre système "
+"en pensant que cela serait \"plus simple\" (sigh). (Une attitude qui revient "
+"régulièrement est de vouloir réinstaller son système à la moindre "
+"complication...). À la place, si vous rencontrez des problèmes, nous vous "
+"encourageons à investiguer, chercher à comprendre et "
+"[trouver de l'aide sur le chat ou le forum](/community/help).\n"
 
 #. type: Bullet: '- '
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:16
@@ -51,19 +54,15 @@ msgstr ""
 #, fuzzy, no-wrap
 msgid "**You should watch the known issues at the bottom of this page, to be sure your migrations will work properly.**\n"
 msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"**You should watch the known issues at the bottom of this page, to be sure your migrations will work properly.**\n"
+"**You should watch the known issues at the bottom of this page, to be sure "
+"your migrations will work properly.**\n"
 
 #. type: Title ##
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:17
 #: docs/admin/55.upgrade/12.0-bookworm/index.mdx:17
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "Migration procedure"
-msgstr ""
-"#-#-#-#-#  fr.po (YunoHost documentation VERSION)  #-#-#-#-#\n"
-"#-#-#-#-#  fr.po (PACKAGE VERSION)  #-#-#-#-#\n"
-"Procédure de migration"
+msgstr "Procédure de migration"
 
 #. type: Title ##
 #: docs/admin/55.upgrade/11.0-bullseye.mdx:19
