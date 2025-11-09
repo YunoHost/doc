@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2025-11-09 21:01+0100\n"
-"PO-Revision-Date: 2025-11-09 21:16+0000\n"
+"PO-Revision-Date: 2025-11-09 23:48+0000\n"
 "Last-Translator: Weblate Admin <yunohost@translate.yunohost.org>\n"
 "Language-Team: French <https://translate.yunohost.org/projects/"
 "doc-experimental/30apps__index/fr/>\n"
@@ -41,7 +41,7 @@ msgstr "  <TabItem value=\"cli\" label=\"Depuis la ligne de commande\">\n"
 
 #. type: Yaml Front Matter Hash Value: title
 #: docs/admin/30.apps/index.mdx:1
-#, fuzzy, no-wrap
+#, no-wrap
 msgid "📦 Applications"
 msgstr "📦 Applications"
 
